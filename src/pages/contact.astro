@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const offices = [
+  {
+    city: 'Shanghai',
+    address: 'Trinity Plaza, 19F\n868 Changshou Road\nPutuo District, Shanghai',
+  },
+  {
+    city: 'Hong Kong',
+    address: "Capitol Centre\n5–19 Jardine's Bazaar\nCauseway Bay, Hong Kong",
+  },
+  {
+    city: 'Paris',
+    address: '12 rue de la Paix\n75002 Paris\nFrance',
+  },
+];
+---
+
+<Layout
+  title="Contact | Beyond Border Group"
+  description="Tell us about your China project. We reply within one working day. Offices in Shanghai, Hong Kong and Paris."
+>
+  <section class="contact">
+    <div class="container contact__inner">
+
+      {/* ---------- LEFT: FORM COLUMN ---------- */}
+      <div class="contact__main">
+        <header class="contact__header">
+          <span class="eyebrow">Contact</span>
+          <h1 class="contact__title">Let's talk about growing your brand in China.</h1>
+          <p class="lead contact__lead">
+            Tell us where you are with China and where you want to go. A senior member
+            of the team will reply within one working day.
+          </p>
+        </header>
+
+        <h2 class="contact__form-title">Tell us about your project</h2>
+
+        <form class="form" id="contact-form" novalidate>
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label class="field__label" for="firstName">First name <span aria-hidden="true">*</span></label>
+              <input class="field__input" type="text" id="firstName" name="firstName" autocomplete="given-name" required />
+            </div>
+            <div class="field">
+              <label class="field__label" for="lastName">Last name <span aria-hidden="true">*</span></label>
+              <input class="field__input" type="text" id="lastName" name="lastName" autocomplete="family-name" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="email">Work email <span aria-hidden="true">*</span></label>
+            <input class="field__input" type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="company">Company <span aria-hidden="true">*</span></label>
+            <input class="field__input" type="text" id="company" name="company" autocomplete="organization" required />
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="website">Website</label>
+            <input class="field__input" type="url" id="website" name="website" autocomplete="url" placeholder="https://" />
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="message">Tell us about your project <span aria-hidden="true">*</span></label>
+            <textarea class="field__input field__input--textarea" id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          {/* honeypot — bots fill this, humans don't see it */}
+          <div class="form__honeypot" aria-hidden="true">
+            <label for="website_url">Leave this field empty</label>
+            <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="form__footer">
+            <button type="submit" class="btn btn--primary form__submit" id="contact-submit">
+              Send message
+            </button>
+            <p class="form__note">
+              By sending this form you agree to be contacted about your enquiry.
+            </p>
+          </div>
+
+          <p class="form__status" id="contact-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      {/* ---------- RIGHT: INFO SIDEBAR ---------- */}
+      <aside class="contact__aside">
+        <div class="contact-card">
+          <span class="eyebrow">Email</span>
+          <a class="contact-card__link" href="mailto:hello@beyondbordergroup.com">
+            hello@beyondbordergroup.com
+          </a>
+          <p class="contact-card__meta">Within 24 hours, Monday to Friday.</p>
+        </div>
+
+        <div class="contact-card">
+          <span class="eyebrow">Offices</span>
+          <ul class="offices">
+            {offices.map(o => (
+              <li class="office">
+                <h3 class="office__city">{o.city}</h3>
+                <address class="office__address">{o.address}</address>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <span class="eyebrow">Who replies</span>
+          <p class="contact-card__meta">
+            A senior member of the team — not an SDR. The same person you meet runs your account.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+</Layout>
+
+<script is:inline>
+  (function () {
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('contact-status');
+    const submit = document.getElementById('contact-submit');
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = '';
+      status.className = 'form__status';
+
+      const data = new FormData(form);
+      if (data.get('website_url')) return; // honeypot tripped — silently drop
+
+      const firstName = String(data.get('firstName') || '').trim();
+      const lastName = String(data.get('lastName') || '').trim();
+      const payload = {
+        name: [firstName, lastName].filter(Boolean).join(' '),
+        email: String(data.get('email') || '').trim(),
+        company: String(data.get('company') || '').trim(),
+        message: String(data.get('message') || '').trim(),
+      };
+
+      if (!payload.name || !payload.email || !payload.message) {
+        status.textContent = 'Please fill in your name, email and message.';
+        status.classList.add('form__status--error');
+        return;
+      }
+
+      submit.disabled = true;
+      submit.textContent = 'Sending…';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const body = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(body.error || 'Something went wrong. Please try again.');
+
+        form.reset();
+        status.textContent = 'Thanks — your message is on its way. We will reply within one working day.';
+        status.classList.add('form__status--success');
+      } catch (err) {
+        status.textContent = err && err.message ? err.message : 'Something went wrong. Please try again.';
+        status.classList.add('form__status--error');
+      } finally {
+        submit.disabled = false;
+        submit.textContent = 'Send message';
+      }
+    });
+  })();
+</script>

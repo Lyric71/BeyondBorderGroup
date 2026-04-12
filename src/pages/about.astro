@@ -1,0 +1,331 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const team = [
+  {
+    name: 'Cyril Drouin',
+    role: 'Founder & CEO',
+    base: 'Shanghai / Paris',
+    bio: '25 years in digital, advertising and commerce. Former CEO of Publicis Commerce and Performance Marketing for China and North Asia. Builds the strategy and runs the operations.',
+  },
+  {
+    name: 'Echo Peng',
+    role: 'Senior Director & Partner',
+    base: 'Shanghai',
+    bio: '18 years running eCommerce and digital for global brands in China. Former operations director at Publicis China. Owns the platforms, the stores, the day-to-day.',
+  },
+  {
+    name: 'Liyan Ye',
+    role: 'Senior Director',
+    base: 'Shanghai',
+    bio: '20 years of marketing experience with Fortune 500 brands in China. Leads brand building, campaigns and the work that turns platform activity into a brand.',
+  },
+];
+
+const principles = [
+  {
+    n: '01',
+    title: 'The senior people do the work',
+    body: 'The person who writes your China plan is the person who runs it. No account handover, no junior team, no hiding behind a project manager.',
+  },
+  {
+    n: '02',
+    title: 'We say no',
+    body: "If your category is not one we know how to grow in China, we will tell you and we will not take the brief. It saves everyone a year.",
+  },
+  {
+    n: '03',
+    title: 'Built for China, not translated into it',
+    body: 'We build inside the Chinese ecosystem — Tmall, JD, Douyin, WeChat, RED — not on top of a global playbook that was never meant to land here.',
+  },
+  {
+    n: '04',
+    title: 'Platform mechanics, not platform slides',
+    body: 'Algorithms, ranking factors, traffic rules, moderation triggers. The stuff that decides whether your store grows or dies, and that decks never cover.',
+  },
+  {
+    n: '05',
+    title: '25 years of relationships',
+    body: 'Platform contacts, distributors, KOL agencies, operational partners. Built over a decade at Publicis and kept warm ever since.',
+  },
+  {
+    n: '06',
+    title: 'We have run the P&L',
+    body: 'Store operations, platform negotiations, margin calls, inventory risk. We have been on your side of the table, so we know what your CFO will ask.',
+  },
+];
+
+const offices = [
+  { city: 'Shanghai', role: 'Operations, eCommerce, media, creative. The engine room.' },
+  { city: 'Hong Kong', role: 'Cross-border, regional clients, finance and legal.' },
+  { city: 'Paris', role: 'European HQs, market entry work, the bridge to China.' },
+];
+
+const metrics = [
+  { value: '15+', label: 'Years building brands in China' },
+  { value: '60+', label: 'Brands grown across eCommerce, media and distribution' },
+  { value: '3', label: 'Offices — Shanghai, Hong Kong, Paris' },
+];
+---
+
+<Layout
+  title="Who We Are | Beyond Border Group"
+  description="Senior people from 4A agencies who build the strategy and run the operations. 15 years growing brands in China from Shanghai, Hong Kong and Paris."
+>
+
+  {/* ---------- HERO ---------- */}
+  <section class="hero about-hero">
+    <div class="container">
+      <span class="eyebrow">Who we are</span>
+      <h1 class="hero__title">We run your China growth. We don't just advise on it.</h1>
+      <p class="hero__lead">
+        15 years building brands in China inside Publicis. Now doing it for yours.
+        The people who write the plan are the people who run the operations.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="/contact">Talk to us</a>
+        <a class="btn btn--secondary" href="/work">See our work</a>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- WHY WE EXIST ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <div class="about-split">
+        <div class="about-split__copy">
+          <span class="eyebrow">Why we exist</span>
+          <h2>Strategy without execution is just an expensive deck.</h2>
+          <p class="lead">
+            We spent 15 years at Publicis watching the same thing happen. Global brands would
+            land in China with a strong strategy, a beautiful presentation, and a team that
+            never touched the operations. A year later the numbers would not move.
+          </p>
+          <p>
+            Beyond Border Group was built to close that gap. We write the plan and we run it.
+            Same senior people, from the first workshop to the monthly P&L review. No hand-off,
+            no translation loss, no one to blame when things get hard.
+          </p>
+        </div>
+
+        <aside class="about-metrics" aria-label="Key numbers">
+          {metrics.map(m => (
+            <div class="about-metrics__item">
+              <span class="about-metrics__value">{m.value}</span>
+              <span class="about-metrics__label">{m.label}</span>
+            </div>
+          ))}
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- LEADERSHIP ---------- */}
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Leadership</span>
+        <h2>The senior people you meet are the senior people on your account.</h2>
+        <p class="lead">
+          Former 4A agency directors. Tmall, JD, Douyin and RED specialists.
+          Brand builders and P&L owners. One team, three cities, one phone number for you.
+        </p>
+      </header>
+
+      <div class="grid grid-3 team-grid">
+        {team.map(t => (
+          <article class="card team-card">
+            <div class="team-card__avatar" aria-hidden="true">
+              <span>{t.name.split(' ').map(n => n[0]).join('')}</span>
+            </div>
+            <h3 class="card__title">{t.name}</h3>
+            <span class="team-card__role">{t.role}</span>
+            <span class="team-card__base">{t.base}</span>
+            <p>{t.bio}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- WHAT MAKES US DIFFERENT ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">What makes us different</span>
+        <h2>Six things we will not change.</h2>
+      </header>
+
+      <div class="grid grid-3 principles">
+        {principles.map(p => (
+          <article class="card principle">
+            <span class="principle__num">{p.n}</span>
+            <h3 class="card__title">{p.title}</h3>
+            <p>{p.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- OFFICES ---------- */}
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Where we are</span>
+        <h2>Three offices, one team.</h2>
+        <p class="lead">
+          Most of our people are in Shanghai, where the market actually happens.
+          Hong Kong handles cross-border and regional work. Paris is the bridge for European HQs.
+        </p>
+      </header>
+
+      <div class="grid grid-3 offices-grid">
+        {offices.map(o => (
+          <article class="office-card">
+            <span class="office-card__pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s-7-7-7-13a7 7 0 1 1 14 0c0 6-7 13-7 13z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+            </span>
+            <h3 class="card__title">{o.city}</h3>
+            <p>{o.role}</p>
+          </article>
+        ))}
+      </div>
+
+      <div class="section__cta">
+        <a href="/contact" class="btn btn--secondary">Find the nearest office</a>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- CLOSING CTA ---------- */}
+  <section class="section section--dark cta">
+    <div class="container text-center">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Thinking about China?</h2>
+      <p class="lead cta__lead">
+        Tell us where you are and where you want to go. A senior member of the team
+        will reply within one working day.
+      </p>
+      <a href="/contact" class="btn btn--primary">Talk to us</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* ---------- About hero ---------- */
+  .about-hero .hero__title { max-width: 920px; }
+
+  /* ---------- Why we exist: split layout ---------- */
+  .about-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: var(--space-7);
+    align-items: start;
+  }
+  .about-split__copy { max-width: 62ch; }
+
+  .about-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    padding: var(--space-6);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--bbg-blue);
+  }
+  .about-metrics__item { display: flex; flex-direction: column; gap: 4px; }
+  .about-metrics__value {
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--bbg-ink);
+    letter-spacing: -0.02em;
+  }
+  .about-metrics__label {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1024px) {
+    .about-split { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Team cards ---------- */
+  .team-grid { gap: var(--space-5); }
+  .team-card { padding: var(--space-6); }
+  .team-card__avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--bbg-blue-light) 0%, var(--bbg-surface) 100%);
+    color: var(--bbg-blue-dark);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+    margin-bottom: var(--space-5);
+    border: 1px solid var(--bbg-border);
+  }
+  .team-card__role {
+    display: block;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--bbg-blue);
+    letter-spacing: 0.02em;
+    margin-bottom: 2px;
+  }
+  .team-card__base {
+    display: block;
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    margin-bottom: var(--space-4);
+  }
+
+  /* ---------- Principles ---------- */
+  .principles { gap: var(--space-5); }
+  .principle { padding: var(--space-6); }
+  .principle__num {
+    display: inline-block;
+    font-size: var(--fs-label);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--bbg-blue);
+    margin-bottom: var(--space-3);
+  }
+
+  /* ---------- Offices grid ---------- */
+  .offices-grid { gap: var(--space-5); }
+  .office-card {
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+    transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+  .office-card:hover {
+    border-color: var(--bbg-blue);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .office-card__pin {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+    margin-bottom: var(--space-4);
+  }
+  .office-card__pin svg { width: 22px; height: 22px; }
+  .office-card p { margin: 0; color: var(--bbg-text); }
+</style>
+</content>

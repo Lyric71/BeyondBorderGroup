@@ -1,21 +1,247 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const pillars = [
+  {
+    title: 'Enter China',
+    href: '/enter-china',
+    body: "You're not selling in China yet. We build the launch plan, pick the model, find the distributor and set up the first stores. The plan we write is the plan we run.",
+  },
+  {
+    title: 'Grow in China',
+    href: '/grow-in-china',
+    body: "You're already in market and you want more. We run your stores on Tmall, JD and Douyin, turn content into sales on WeChat and RED, and sharpen your brand for the Chinese consumer. Operations, media, creative, one team.",
+  },
+  {
+    title: 'Learn China',
+    href: '/learn-china',
+    body: 'You need to understand the market before you bet on it. Masterclasses, learning expeditions on the ground, insights from people who run China operations every day.',
+    platforms: ['Tmall', 'JD', 'Douyin', 'WeChat', 'RED', 'Bilibili'],
+  },
+];
+
+const services = [
+  {
+    n: '01',
+    title: 'Cross-Border eCommerce',
+    body: 'Launch and run your stores on Tmall Global and JD Worldwide without a Chinese entity. Bonded warehouse, customs, store operations, customer service. The fastest way into the Chinese market.',
+    href: '/grow-in-china/cross-border-ecommerce',
+  },
+  {
+    n: '02',
+    title: 'Social Commerce',
+    body: 'Turn Douyin, WeChat and RED into sales channels. Livestream, KOL-driven selling, shop management, content that converts. Where Chinese consumers discover and buy in the same scroll.',
+    href: '/grow-in-china/social-commerce',
+  },
+  {
+    n: '03',
+    title: 'Distribution',
+    body: 'Find the right distributor for your category, or let us be your distributor. B2B into retail chains, B2C and DTC into online and offline. Deep market penetration through partners who already know your shelf.',
+    href: '/grow-in-china/distribution',
+  },
+  {
+    n: '04',
+    title: 'Market Entry Consulting',
+    body: 'The foundation before you launch. Business model, partner selection, category analysis, operational framework. Built by people who have launched brands in China, not by analysts.',
+    href: '/enter-china/market-entry-consulting',
+  },
+];
+
+const secondaryServices = [
+  { label: 'Branding & Localisation', href: '/grow-in-china/branding-localisation' },
+  { label: 'Media', href: '/grow-in-china/media' },
+  { label: 'Website', href: '/grow-in-china/website' },
+  { label: 'Masterclass', href: '/learn-china/masterclass' },
+  { label: 'Learning Expeditions', href: '/learn-china/learning-expeditions' },
+];
+
+const cases = [
+  { brand: 'Pierre Fabre', title: 'China Insights Masterclass: Digital, eCommerce & AIGC', tag: 'Masterclass', href: '/work/pierre-fabre' },
+  { brand: 'Bassetti', title: "WordPress and Elementor behind the firewall: migrating Bassetti's website to China", tag: 'Website', href: '/work/bassetti' },
+  { brand: 'Langnese', title: "Reversing decline in China's honey market", tag: 'Distribution', href: '/work/langnese' },
+  { brand: "Age 20's", title: 'Little Milk Brick Cushion: social media and eCommerce launch campaign', tag: 'Social Commerce', href: '/work/age-20s' },
+  { brand: 'Shiseido RQ Pyology', title: 'Brand launch campaign in China', tag: 'Branding', href: '/work/shiseido-rq-pyology' },
+  { brand: 'Camper', title: 'Building a design-driven community on Chinese social media', tag: 'Social Media', href: '/work/camper' },
+];
+
+const insights = [
+  { title: 'How Foreign Brands Test the Chinese Market. And Why Most Get It Wrong.', tag: 'Market Entry', href: '/insights/how-foreign-brands-test-china' },
+  { title: "Science + Emotion: China's New Brand Playbook", tag: 'Branding', href: '/insights/science-emotion-china-playbook' },
+  { title: 'Douyin Live Commerce in 2025: Why Store-Led Rooms Beat Celebrity Events', tag: 'Social Commerce', href: '/insights/douyin-live-commerce-2025' },
+  { title: 'China Is No Longer One Market: Why Local Bets Beat National Plans', tag: 'Strategy', href: '/insights/china-no-longer-one-market' },
+  { title: "China's 2026 Marketing and eCommerce: Eight Predictions From the Frontlines", tag: 'Predictions', href: '/insights/china-2026-predictions' },
+  { title: 'China E-Commerce 2025: The Platform Map, and Why Retail Is Going Local', tag: 'eCommerce', href: '/insights/china-ecommerce-2025-platform-map' },
+];
 ---
 
-<Layout>
-	<section class="hero">
-		<div class="container">
-			<span class="hero__eyebrow">Beyond Border Group</span>
-			<h1 class="hero__title">Marketing & eCommerce, built for China.</h1>
-			<p class="hero__lead">
-				A cross-border agency with teams in Shanghai, Hong Kong, and Paris,
-				helping international brands grow on Tmall, JD, Douyin, WeChat, and
-				Xiaohongshu.
-			</p>
-			<div class="hero__actions">
-				<a class="btn btn--primary" href="#contact">Start a project</a>
-				<a class="btn btn--ghost" href="#work">See our work</a>
-			</div>
-		</div>
-	</section>
+<Layout
+  title="BeyondBorderGroup | China Market Entry, eCommerce & Distribution"
+  description="We help global brands enter China, grow sales on Tmall, JD, Douyin, WeChat and RED, and find the right distributor. Shanghai, Hong Kong, Paris."
+>
+
+  {/* ---------- HERO ---------- */}
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">China market entry, eCommerce and distribution</span>
+      <h1 class="hero__title">We help global brands sell, grow and win in China</h1>
+      <p class="hero__lead">
+        Senior people from 4A agencies who build the strategy and run the operations.
+        Shanghai, Hong Kong, Paris.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="/contact">Talk to us</a>
+        <a class="btn btn--secondary" href="/work">See our work</a>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- THREE-PILLAR INTRO ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Where to start</span>
+        <h2>Where are you with China?</h2>
+      </header>
+      <div class="grid grid-3">
+        {pillars.map(p => (
+          <article class="card pillar">
+            <h3 class="card__title">{p.title}</h3>
+            <p>{p.body}</p>
+            {p.platforms && (
+              <ul class="pillar__platforms" aria-label={`Platforms covered in ${p.title}`}>
+                {p.platforms.map(name => (
+                  <li>{name}</li>
+                ))}
+              </ul>
+            )}
+            <div class="card__footer">
+              <a href={p.href} class="btn btn--ghost">{p.title}</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- PRIORITY SERVICES ---------- */}
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Services</span>
+        <h2>What we do</h2>
+      </header>
+
+      <div class="grid grid-2 services">
+        {services.map(s => (
+          <article class="card service">
+            <span class="service__num">{s.n}</span>
+            <h3 class="card__title">{s.title}</h3>
+            <p>{s.body}</p>
+            <div class="card__footer">
+              <a href={s.href} class="btn btn--ghost">Learn more</a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <div class="services__secondary">
+        <span class="services__secondary-label">Also:</span>
+        <ul>
+          {secondaryServices.map(s => (
+            <li><a href={s.href}>{s.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- OUR WORK ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Our work</span>
+        <h2>Brands we've built in China</h2>
+      </header>
+
+      <div class="grid grid-3">
+        {cases.map(c => (
+          <a href={c.href} class="card case">
+            <div class="card__image case__image" aria-hidden="true">
+              <span class="case__placeholder">{c.brand}</span>
+            </div>
+            <span class="card__tags">{c.tag}</span>
+            <h3 class="card__title">{c.brand}</h3>
+            <p>{c.title}</p>
+          </a>
+        ))}
+      </div>
+
+      <div class="section__cta">
+        <a href="/work" class="btn btn--secondary">See all case studies</a>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- TEAM ---------- */}
+  <section class="section">
+    <div class="container">
+      <div class="team">
+        <div class="team__copy">
+          <span class="eyebrow">The team</span>
+          <h2>20 years in China, and we're still on the ground</h2>
+          <p class="lead">
+            The senior people you meet are the senior people on your account.
+            We run the strategy and we run the operations, from Shanghai, Hong Kong and Paris.
+          </p>
+          <a href="/about" class="btn btn--secondary">Meet the team</a>
+        </div>
+        <div class="team__visual" aria-hidden="true">
+          <span class="team__visual-label">Team photo coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- INSIGHTS ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Insights</span>
+        <h2>What we think about China</h2>
+      </header>
+
+      <div class="grid grid-3">
+        {insights.map(i => (
+          <a href={i.href} class="card insight">
+            <div class="card__image insight__image" aria-hidden="true">
+              <span class="insight__placeholder">{i.tag}</span>
+            </div>
+            <span class="card__tags">{i.tag}</span>
+            <h3 class="card__title">{i.title}</h3>
+            <div class="card__footer">
+              <span class="btn btn--ghost">Read article</span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="section__cta">
+        <a href="/insights" class="btn btn--secondary">All insights</a>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- CLOSING CTA ---------- */}
+  <section class="section section--dark cta">
+    <div class="container text-center">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Ready to move?</h2>
+      <p class="lead cta__lead">
+        Tell us where you are with China and where you want to go.
+        We'll reply within one working day.
+      </p>
+      <a href="/contact" class="btn btn--primary">Talk to us</a>
+    </div>
+  </section>
+
 </Layout>

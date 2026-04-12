@@ -1,0 +1,103 @@
+---
+const enterChina = [
+  { label: 'Market Entry Consulting', href: '/enter-china/market-entry-consulting' },
+  { label: 'Cross-Border eCommerce Setup', href: '/enter-china/cross-border-setup' },
+  { label: 'Distribution', href: '/enter-china/distribution' },
+];
+
+const growChina = [
+  { label: 'Cross-Border eCommerce', href: '/grow-in-china/cross-border-ecommerce' },
+  { label: 'Social Commerce', href: '/grow-in-china/social-commerce' },
+  { label: 'Distribution', href: '/grow-in-china/distribution' },
+  { label: 'Branding & Localisation', href: '/grow-in-china/branding-localisation' },
+  { label: 'Media', href: '/grow-in-china/media' },
+  { label: 'Website', href: '/grow-in-china/website' },
+];
+
+const learnChina = [
+  { label: 'Masterclass', href: '/learn-china/masterclass' },
+  { label: 'Learning Expeditions', href: '/learn-china/learning-expeditions' },
+  { label: 'Insights', href: '/insights' },
+];
+
+const company = [
+  { label: 'Who We Are', href: '/about' },
+  { label: 'Our Work', href: '/work' },
+  { label: 'Contact', href: '/contact' },
+];
+
+const platforms = ['Tmall', 'JD', 'Douyin', 'WeChat', 'RED', 'WordPress'];
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo" aria-label="Beyond Border Group Home">
+          <img src="/Logo.png" alt="Beyond Border Group" />
+        </a>
+        <p class="footer__pitch">
+          A China market entry, eCommerce and distribution group.
+          We help global brands enter China, grow their sales, and understand the market.
+        </p>
+        <p class="footer__cities">Shanghai · Hong Kong · Paris</p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#wechat" class="footer__wechat">WeChat QR</a>
+        </div>
+      </div>
+
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4>Enter China</h4>
+          <ul>
+            {enterChina.map(item => <li><a href={item.href}>{item.label}</a></li>)}
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Grow in China</h4>
+          <ul>
+            {growChina.map(item => <li><a href={item.href}>{item.label}</a></li>)}
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Learn China</h4>
+          <ul>
+            {learnChina.map(item => <li><a href={item.href}>{item.label}</a></li>)}
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>The Company</h4>
+          <ul>
+            {company.map(item => <li><a href={item.href}>{item.label}</a></li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__platforms">
+      <span class="footer__platforms-label">Platforms we operate on</span>
+      <ul class="footer__platforms-list">
+        {platforms.map(p => <li>{p}</li>)}
+      </ul>
+    </div>
+
+    <div class="footer__sister">
+      <span>Content production by</span>
+      <a href="https://hubstudio.ai" target="_blank" rel="noopener">hubStudio.ai</a>
+      <span class="text-muted-light">our sister AIGC studio.</span>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© Beyond Border Group {year}. All rights reserved.</p>
+      <p>
+        <a href="/legal/terms">Terms of Service</a>
+        <span aria-hidden="true"> · </span>
+        <a href="/legal/privacy">Privacy Policy</a>
+      </p>
+    </div>
+
+  </div>
+</footer>
