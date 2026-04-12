@@ -10,8 +10,8 @@ export interface ContactPayload {
 const FROM_ADDRESS = 'Beyond Border Group <onboarding@resend.dev>';
 
 export async function sendContactEmail(payload: ContactPayload) {
-	const apiKey = process.env.RESEND_API_KEY;
-	const to = process.env.CONTACT_TO_EMAIL;
+	const apiKey = import.meta.env.RESEND_API_KEY ?? process.env.RESEND_API_KEY;
+	const to = import.meta.env.CONTACT_TO_EMAIL ?? process.env.CONTACT_TO_EMAIL;
 
 	if (!apiKey) throw new Error('RESEND_API_KEY is not configured.');
 	if (!to) throw new Error('CONTACT_TO_EMAIL is not configured.');

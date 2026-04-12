@@ -4,7 +4,7 @@ import { generateImage } from '../../lib/wavespeed';
 export const prerender = false;
 
 export const POST: APIRoute = async ({ request }) => {
-	const apiKey = process.env.WAVESPEED_API_KEY;
+	const apiKey = import.meta.env.WAVESPEED_API_KEY ?? process.env.WAVESPEED_API_KEY;
 	if (!apiKey) {
 		return json({ error: 'WAVESPEED_API_KEY is not configured.' }, 500);
 	}
