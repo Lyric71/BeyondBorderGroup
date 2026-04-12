@@ -9,13 +9,17 @@
     "dev": "astro dev --host 127.0.0.1",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "gen": "node generate-image.mjs",
+    "gen:edit": "node generate-image-edit.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",
     "@astrojs/vercel": "^10.0.4",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.5",
+    "dotenv": "^17.4.1",
+    "resend": "^6.10.0",
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {

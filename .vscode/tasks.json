@@ -1,0 +1,54 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "WaveSpeed: Generate image",
+			"type": "shell",
+			"command": "node",
+			"args": ["generate-image.mjs", "${input:prompt}"],
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"clear": true,
+				"focus": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "WaveSpeed: Edit image",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"generate-image-edit.mjs",
+				"${input:outputFilename}",
+				"${input:prompt}",
+				"--",
+				"${input:imagePaths}"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"clear": true,
+				"focus": true
+			},
+			"problemMatcher": []
+		}
+	],
+	"inputs": [
+		{
+			"id": "prompt",
+			"type": "promptString",
+			"description": "Image prompt"
+		},
+		{
+			"id": "outputFilename",
+			"type": "promptString",
+			"description": "Output filename (e.g. result.png)"
+		},
+		{
+			"id": "imagePaths",
+			"type": "promptString",
+			"description": "Reference image path(s), space-separated"
+		}
+	]
+}
