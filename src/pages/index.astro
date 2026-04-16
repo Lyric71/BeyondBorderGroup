@@ -24,25 +24,26 @@ const services = [
   {
     n: '01',
     title: 'Cross-Border eCommerce',
-    body: 'Launch and run your stores on Tmall Global and JD Worldwide without a Chinese entity. Bonded warehouse, customs, store operations, customer service. The fastest way into the Chinese market.',
+    body: 'Launch and run your stores on Tmall Global and JD Worldwide without a Chinese entity. Bonded warehouse, customs, store operations, customer service.',
     href: '/grow-in-china/cross-border-ecommerce',
   },
   {
     n: '02',
     title: 'Social Commerce',
-    body: 'Turn Douyin, WeChat and RED into sales channels. Livestream, KOL-driven selling, shop management, content that converts. Where Chinese consumers discover and buy in the same scroll.',
+    body: 'Turn Douyin, WeChat and RED into sales channels. Livestream, KOL-driven selling, shop management, content that converts.',
     href: '/grow-in-china/social-commerce',
+    highlight: true,
   },
   {
     n: '03',
     title: 'Distribution',
-    body: 'Find the right distributor for your category, or let us be your distributor. B2B into retail chains, B2C and DTC into online and offline. Deep market penetration through partners who already know your shelf.',
+    body: 'Find the right distributor for your category, or let us be your distributor. B2B into retail chains, B2C and DTC into online and offline.',
     href: '/grow-in-china/distribution',
   },
   {
     n: '04',
     title: 'Market Entry Consulting',
-    body: 'The foundation before you launch. Business model, partner selection, category analysis, operational framework. Built by people who have launched brands in China, not by analysts.',
+    body: 'The foundation before you launch. Business model, partner selection, category analysis, operational framework. Built by people who have launched brands in China.',
     href: '/enter-china/market-entry-consulting',
   },
 ];
@@ -67,11 +68,23 @@ const cases = [
 const insights = [
   { title: 'How Foreign Brands Test the Chinese Market. And Why Most Get It Wrong.', tag: 'Market Entry', href: '/insights/how-foreign-brands-test-china' },
   { title: "Science + Emotion: China's New Brand Playbook", tag: 'Branding', href: '/insights/science-emotion-china-playbook' },
-  { title: 'Douyin Live Commerce in 2025: Why Store-Led Rooms Beat Celebrity Events', tag: 'Social Commerce', href: '/insights/douyin-live-commerce-2025' },
-  { title: 'China Is No Longer One Market: Why Local Bets Beat National Plans', tag: 'Strategy', href: '/insights/china-no-longer-one-market' },
-  { title: "China's 2026 Marketing and eCommerce: Eight Predictions From the Frontlines", tag: 'Predictions', href: '/insights/china-2026-predictions' },
-  { title: 'China E-Commerce 2025: The Platform Map, and Why Retail Is Going Local', tag: 'eCommerce', href: '/insights/china-ecommerce-2025-platform-map' },
 ];
+
+const heroStats = [
+  { value: '20+', label: 'Years in China' },
+  { value: '400+', label: 'Brands launched' },
+];
+
+const marqueeItems = ['Enter China', 'Grow in China', 'Learn China', 'Tmall', 'JD', 'Douyin', 'WeChat', 'RED'];
+
+const darkFeatures = [
+  { title: 'Store operations on Tmall, JD, Douyin', body: 'Day-to-day running of your flagship, from listings to customer service.' },
+  { title: 'Content and livestream that sells', body: 'Creative built for Chinese platforms, not translated from Western campaigns.' },
+  { title: 'Media planning and buying', body: 'Douyin, RED, WeChat, Baidu. Bought by people who sit in front of the dashboards every day.' },
+  { title: 'Distribution into retail', body: 'B2B partners we already work with. No introductions, direct routes.' },
+];
+
+const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', 'Camper', 'Clarins', 'Lancôme', 'Fauchon'];
 ---
 
 <Layout
@@ -80,66 +93,61 @@ const insights = [
 >
 
   {/* ---------- HERO ---------- */}
-  <section class="hero">
+  <section class="hero-split">
     <div class="container">
-      <span class="eyebrow">China market entry, eCommerce and distribution</span>
-      <h1 class="hero__title">We help global brands sell, grow and win in China</h1>
-      <p class="hero__lead">
-        Senior people from 4A agencies who build the strategy and run the operations.
-        Shanghai, Hong Kong, Paris.
-      </p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="/contact">Talk to us</a>
-        <a class="btn btn--secondary" href="/work">See our work</a>
-      </div>
-    </div>
-  </section>
+      <div class="hero-split__grid">
+        <div class="hero-split__copy">
+          <span class="eyebrow">China market entry, eCommerce & distribution</span>
+          <h1 class="hero-split__title">We help global brands sell, grow and win in China</h1>
+          <p class="hero-split__lead">
+            Senior people from 4A agencies who build the strategy and run the operations.
+            Shanghai, Hong Kong, Paris.
+          </p>
+          <div class="hero-split__actions">
+            <a class="btn btn--primary" href="/contact">Talk to us</a>
+            <a class="btn btn--secondary" href="/work">See our work</a>
+          </div>
+        </div>
 
-  {/* ---------- THREE-PILLAR INTRO ---------- */}
-  <section class="section section--alt">
-    <div class="container">
-      <header class="section-header">
-        <span class="eyebrow">Where to start</span>
-        <h2>Where are you with China?</h2>
-      </header>
-      <div class="grid grid-3">
-        {pillars.map(p => (
-          <article class="card pillar">
-            <h3 class="card__title">{p.title}</h3>
-            <p>{p.body}</p>
-            {p.platforms && (
-              <ul class="pillar__platforms" aria-label={`Platforms covered in ${p.title}`}>
-                {p.platforms.map(name => (
-                  <li>{name}</li>
-                ))}
-              </ul>
-            )}
-            <div class="card__footer">
-              <a href={p.href} class="btn btn--ghost">{p.title}</a>
+        <div class="hero-split__visual" aria-hidden="true">
+          <div class="hero-split__canvas">
+            <span class="hero-split__canvas-mark">BBG</span>
+          </div>
+          {heroStats.map((s, i) => (
+            <div class={`hero-stat hero-stat--${i + 1}`}>
+              <div class="hero-stat__value">{s.value}</div>
+              <div class="hero-stat__label">{s.label}</div>
             </div>
-          </article>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   </section>
 
-  {/* ---------- PRIORITY SERVICES ---------- */}
+  {/* ---------- MARQUEE ---------- */}
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      {[...marqueeItems, ...marqueeItems].map(item => (
+        <span class="marquee__item">{item}</span>
+      ))}
+    </div>
+  </div>
+
+  {/* ---------- 4 SERVICES GRID ---------- */}
   <section class="section">
     <div class="container">
-      <header class="section-header">
+      <header class="section-header text-center mx-auto">
         <span class="eyebrow">Services</span>
-        <h2>What we do</h2>
+        <h2>4 ways we grow your brand in China</h2>
       </header>
 
-      <div class="grid grid-2 services">
+      <div class="grid grid-2 steps">
         {services.map(s => (
-          <article class="card service">
-            <span class="service__num">{s.n}</span>
-            <h3 class="card__title">{s.title}</h3>
-            <p>{s.body}</p>
-            <div class="card__footer">
-              <a href={s.href} class="btn btn--ghost">Learn more</a>
-            </div>
+          <article class={`step${s.highlight ? ' step--highlight' : ''}`}>
+            <span class="step__num">{s.n}</span>
+            <h3 class="step__title">{s.title}</h3>
+            <p class="step__body">{s.body}</p>
+            <a href={s.href} class="step__link">Learn more →</a>
           </article>
         ))}
       </div>
@@ -151,6 +159,128 @@ const insights = [
             <li><a href={s.href}>{s.label}</a></li>
           ))}
         </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- PILLARS SPLIT ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <div class="split">
+        <div class="split__visual" aria-hidden="true">
+          <div class="device">
+            <div class="device__screen">
+              <span class="device__eyebrow">Where are you</span>
+              <div class="device__bars">
+                <div class="device__bar" style="width: 90%"><span>Enter</span></div>
+                <div class="device__bar" style="width: 75%"><span>Grow</span></div>
+                <div class="device__bar" style="width: 60%"><span>Learn</span></div>
+              </div>
+              <div class="device__chip">Shanghai · HK · Paris</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split__copy">
+          <span class="eyebrow">Where to start</span>
+          <h2>Where are you with China?</h2>
+          <p class="lead">
+            Three starting points. Pick the one that matches the problem in front of you.
+            The team and the approach change accordingly.
+          </p>
+          <ul class="split__list">
+            {pillars.map(p => (
+              <li class="split__item">
+                <h3>{p.title}</h3>
+                <p>{p.body}</p>
+                <a href={p.href} class="btn btn--ghost">{p.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- MARQUEE ---------- */}
+  <div class="marquee marquee--reverse" aria-hidden="true">
+    <div class="marquee__track">
+      {[...marqueeItems, ...marqueeItems].map(item => (
+        <span class="marquee__item">{item}</span>
+      ))}
+    </div>
+  </div>
+
+  {/* ---------- DARK FEATURE SECTION ---------- */}
+  <section class="section section--dark">
+    <div class="container">
+      <div class="split">
+        <div class="split__copy">
+          <span class="eyebrow">What we run</span>
+          <h2>Run your China operations, end to end</h2>
+          <p class="lead">
+            Strategy and execution under one roof. The same senior team that writes
+            the plan runs the stores, buys the media and ships the campaigns.
+          </p>
+          <ul class="feature-list">
+            {darkFeatures.map(f => (
+              <li>
+                <h4>{f.title}</h4>
+                <p>{f.body}</p>
+              </li>
+            ))}
+          </ul>
+          <a href="/services" class="btn btn--primary">See all services</a>
+        </div>
+
+        <div class="split__visual" aria-hidden="true">
+          <div class="device device--dark">
+            <div class="device__screen device__screen--dark">
+              <span class="device__eyebrow">Live on Tmall</span>
+              <div class="device__bars">
+                <div class="device__bar device__bar--dark" style="width: 85%"><span>GMV</span></div>
+                <div class="device__bar device__bar--dark" style="width: 68%"><span>ROAS</span></div>
+                <div class="device__bar device__bar--dark" style="width: 92%"><span>CVR</span></div>
+              </div>
+              <div class="device__chip device__chip--dark">Running now</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- STATS STRIP ---------- */}
+  <section class="section">
+    <div class="container">
+      <div class="stat-strip">
+        <div class="stat-strip__copy">
+          <span class="eyebrow">The team</span>
+          <h2>20 years in China, still on the ground</h2>
+          <p class="lead">
+            The senior people you meet are the senior people on your account.
+            We run the strategy and we run the operations, from Shanghai, Hong Kong and Paris.
+          </p>
+          <a href="/about" class="btn btn--secondary">Meet the team</a>
+        </div>
+        <div class="stat-strip__grid">
+          <div class="stat-strip__item">
+            <div class="stat-strip__value">20+</div>
+            <div class="stat-strip__label">Years in market</div>
+          </div>
+          <div class="stat-strip__item">
+            <div class="stat-strip__value">400+</div>
+            <div class="stat-strip__label">Brands launched</div>
+          </div>
+          <div class="stat-strip__item">
+            <div class="stat-strip__value">3</div>
+            <div class="stat-strip__label">Offices</div>
+          </div>
+          <div class="stat-strip__item">
+            <div class="stat-strip__value">1</div>
+            <div class="stat-strip__label">Senior team</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -182,40 +312,26 @@ const insights = [
     </div>
   </section>
 
-  {/* ---------- TEAM ---------- */}
-  <section class="section">
-    <div class="container">
-      <div class="team">
-        <div class="team__copy">
-          <span class="eyebrow">The team</span>
-          <h2>20 years in China, and we're still on the ground</h2>
-          <p class="lead">
-            The senior people you meet are the senior people on your account.
-            We run the strategy and we run the operations, from Shanghai, Hong Kong and Paris.
-          </p>
-          <a href="/about" class="btn btn--secondary">Meet the team</a>
-        </div>
-        <div class="team__visual" aria-hidden="true">
-          <span class="team__visual-label">Team photo coming soon</span>
-        </div>
-      </div>
+  {/* ---------- LOGO MARQUEE ---------- */}
+  <div class="marquee marquee--logos" aria-hidden="true">
+    <div class="marquee__track">
+      {[...logos, ...logos].map(l => (
+        <span class="marquee__logo">{l}</span>
+      ))}
     </div>
-  </section>
+  </div>
 
   {/* ---------- INSIGHTS ---------- */}
-  <section class="section section--alt">
+  <section class="section">
     <div class="container">
       <header class="section-header">
         <span class="eyebrow">Insights</span>
         <h2>What we think about China</h2>
       </header>
 
-      <div class="grid grid-3">
+      <div class="grid grid-2">
         {insights.map(i => (
-          <a href={i.href} class="card insight">
-            <div class="card__image insight__image" aria-hidden="true">
-              <span class="insight__placeholder">{i.tag}</span>
-            </div>
+          <a href={i.href} class="card insight insight--testimonial">
             <span class="card__tags">{i.tag}</span>
             <h3 class="card__title">{i.title}</h3>
             <div class="card__footer">
@@ -232,15 +348,28 @@ const insights = [
   </section>
 
   {/* ---------- CLOSING CTA ---------- */}
-  <section class="section section--dark cta">
-    <div class="container text-center">
-      <span class="eyebrow">Get in touch</span>
-      <h2>Ready to move?</h2>
-      <p class="lead cta__lead">
-        Tell us where you are with China and where you want to go.
-        We'll reply within one working day.
-      </p>
-      <a href="/contact" class="btn btn--primary">Talk to us</a>
+  <section class="section section--dark cta cta--split">
+    <div class="container">
+      <div class="cta-split">
+        <div class="cta-split__copy">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Ready to move?</h2>
+          <p class="lead cta__lead">
+            Tell us where you are with China and where you want to go.
+            We'll reply within one working day.
+          </p>
+          <a href="/contact" class="btn btn--primary">Talk to us</a>
+        </div>
+        <div class="cta-split__visual" aria-hidden="true">
+          <div class="device">
+            <div class="device__screen">
+              <span class="device__eyebrow">Reply within</span>
+              <div class="cta-split__big">24h</div>
+              <div class="device__chip">One working day</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
