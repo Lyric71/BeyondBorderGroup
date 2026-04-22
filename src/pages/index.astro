@@ -1,59 +1,67 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const pillars = [
-  {
-    title: 'Enter China',
-    href: '/enter-china',
-    body: "You're not selling in China yet. We build the launch plan, pick the model, find the distributor and set up the first stores. The plan we write is the plan we run.",
-  },
-  {
-    title: 'Grow in China',
-    href: '/grow-in-china',
-    body: "You're already in market and you want more. We run your stores on Tmall, JD and Douyin, turn content into sales on WeChat and RED, and sharpen your brand for the Chinese consumer. Operations, media, creative, one team.",
-  },
-  {
-    title: 'Learn China',
-    href: '/learn-china',
-    body: 'You need to understand the market before you bet on it. Masterclasses, learning expeditions on the ground, insights from people who run China operations every day.',
-    platforms: ['Tmall', 'JD', 'Douyin', 'WeChat', 'RED', 'Bilibili'],
-  },
+const heroStats = [
+  { value: '20+', label: 'Years in China' },
+  { value: '400+', label: 'Brands launched' },
 ];
+
+const tickerItems = ['Enter China', 'Grow in China', 'Learn China', 'Tmall', 'JD', 'Douyin', 'WeChat', 'RED'];
 
 const services = [
   {
     n: '01',
     title: 'Cross-Border eCommerce',
-    body: 'Launch and run your stores on Tmall Global and JD Worldwide without a Chinese entity. Bonded warehouse, customs, store operations, customer service.',
+    body: 'Launch and run stores on Tmall Global and JD Worldwide without a Chinese entity. Bonded warehouse, customs, operations, customer service.',
     href: '/grow-in-china/cross-border-ecommerce',
+    icon: 'cart',
+    mock: 'chart',
   },
   {
     n: '02',
     title: 'Social Commerce',
     body: 'Turn Douyin, WeChat and RED into sales channels. Livestream, KOL-driven selling, shop management, content that converts.',
     href: '/grow-in-china/social-commerce',
-    highlight: true,
+    icon: 'chat',
+    mock: 'bars',
   },
   {
     n: '03',
     title: 'Distribution',
-    body: 'Find the right distributor for your category, or let us be your distributor. B2B into retail chains, B2C and DTC into online and offline.',
+    body: 'Find the right distributor for your category, or let us be your distributor. B2B into retail, B2C and DTC into online and offline.',
     href: '/grow-in-china/distribution',
+    icon: 'box',
+    mock: 'chart',
   },
   {
     n: '04',
     title: 'Market Entry Consulting',
-    body: 'The foundation before you launch. Business model, partner selection, category analysis, operational framework. Built by people who have launched brands in China.',
+    body: 'The foundation before you launch. Business model, partner selection, category analysis, operational framework. Senior people who have done it.',
     href: '/enter-china/market-entry-consulting',
+    icon: 'compass',
+    mock: 'bars',
   },
 ];
 
-const secondaryServices = [
-  { label: 'Branding & Localisation', href: '/grow-in-china/branding-localisation' },
-  { label: 'Media', href: '/grow-in-china/media' },
-  { label: 'Website', href: '/grow-in-china/website' },
-  { label: 'Masterclass', href: '/learn-china/masterclass' },
-  { label: 'Learning Expeditions', href: '/learn-china/learning-expeditions' },
+const pillars = [
+  {
+    n: '01',
+    title: 'Enter China',
+    body: "You're not selling in China yet. We build the launch plan, pick the model, find the distributor and set up the first stores.",
+    href: '/enter-china',
+  },
+  {
+    n: '02',
+    title: 'Grow in China',
+    body: "You're already in market and you want more. Tmall, JD, Douyin, WeChat, RED. One senior team runs ops, media and creative.",
+    href: '/grow-in-china',
+  },
+  {
+    n: '03',
+    title: 'Learn China',
+    body: 'Masterclasses and learning expeditions on the ground. Insights from people who run China operations every day.',
+    href: '/learn-china',
+  },
 ];
 
 const cases = [
@@ -65,26 +73,29 @@ const cases = [
   { brand: 'Camper', title: 'Building a design-driven community on Chinese social media', tag: 'Social Media', href: '/work/camper' },
 ];
 
-const insights = [
-  { title: 'How Foreign Brands Test the Chinese Market. And Why Most Get It Wrong.', tag: 'Market Entry', href: '/insights/how-foreign-brands-test-china' },
-  { title: "Science + Emotion: China's New Brand Playbook", tag: 'Branding', href: '/insights/science-emotion-china-playbook' },
+const testimonials = [
+  {
+    quote: 'How foreign brands test the Chinese market. And why most get it wrong.',
+    tag: 'Market Entry',
+    href: '/insights/how-foreign-brands-test-china',
+  },
+  {
+    quote: "Science plus emotion: China's new brand playbook.",
+    tag: 'Branding',
+    href: '/insights/science-emotion-china-playbook',
+  },
 ];
 
-const heroStats = [
-  { value: '20+', label: 'Years in China' },
-  { value: '400+', label: 'Brands launched' },
-];
-
-const marqueeItems = ['Enter China', 'Grow in China', 'Learn China', 'Tmall', 'JD', 'Douyin', 'WeChat', 'RED'];
+const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', 'Camper'];
 
 const darkFeatures = [
   { title: 'Store operations on Tmall, JD, Douyin', body: 'Day-to-day running of your flagship, from listings to customer service.' },
   { title: 'Content and livestream that sells', body: 'Creative built for Chinese platforms, not translated from Western campaigns.' },
-  { title: 'Media planning and buying', body: 'Douyin, RED, WeChat, Baidu. Bought by people who sit in front of the dashboards every day.' },
+  { title: 'Media planning and buying', body: 'Douyin, RED, WeChat, Baidu. Bought by people who sit in front of the dashboards.' },
   { title: 'Distribution into retail', body: 'B2B partners we already work with. No introductions, direct routes.' },
 ];
 
-const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', 'Camper', 'Clarins', 'Lancôme', 'Fauchon'];
+const platforms = ['Tmall', 'JD', 'Douyin', 'WeChat', 'RED', 'Bilibili'];
 ---
 
 <Layout
@@ -107,11 +118,20 @@ const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', '
             <a class="btn btn--primary" href="/contact">Talk to us</a>
             <a class="btn btn--secondary" href="/work">See our work</a>
           </div>
+          <div class="hero-trust">
+            <div class="hero-trust__dots" aria-hidden="true">
+              <span>PF</span><span>BS</span><span>SH</span><span>CM</span>
+            </div>
+            <p class="hero-trust__text">
+              <strong>400+ brands</strong> launched in China since 2004
+            </p>
+          </div>
         </div>
 
         <div class="hero-split__visual" aria-hidden="true">
           <div class="hero-split__canvas">
             <span class="hero-split__canvas-mark">BBG</span>
+            <span class="hero-split__canvas-cities">Shanghai · Hong Kong · Paris</span>
           </div>
           {heroStats.map((s, i) => (
             <div class={`hero-stat hero-stat--${i + 1}`}>
@@ -124,11 +144,14 @@ const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', '
     </div>
   </section>
 
-  {/* ---------- MARQUEE ---------- */}
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      {[...marqueeItems, ...marqueeItems].map(item => (
-        <span class="marquee__item">{item}</span>
+  {/* ---------- DARK TICKER ---------- */}
+  <div class="ticker ticker--dark" aria-hidden="true">
+    <div class="ticker__track">
+      {[...tickerItems, ...tickerItems].map(item => (
+        <>
+          <span class="ticker__item">{item}</span>
+          <span class="ticker__sep">✦</span>
+        </>
       ))}
     </div>
   </div>
@@ -136,51 +159,109 @@ const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', '
   {/* ---------- 4 SERVICES GRID ---------- */}
   <section class="section">
     <div class="container">
-      <header class="section-header text-center mx-auto">
-        <span class="eyebrow">Services</span>
+      <header class="section-header section-header--center">
+        <span class="eyebrow">Our services</span>
         <h2>4 ways we grow your brand in China</h2>
       </header>
 
-      <div class="grid grid-2 steps">
+      <div class="services-grid">
         {services.map(s => (
-          <article class={`step${s.highlight ? ' step--highlight' : ''}`}>
-            <span class="step__num">{s.n}</span>
-            <h3 class="step__title">{s.title}</h3>
-            <p class="step__body">{s.body}</p>
-            <a href={s.href} class="step__link">Learn more →</a>
+          <article class={`service-card${s.n === '02' ? ' service-card--highlight' : ''}`}>
+            <div class="service-card__head">
+              <span class="service-icon" aria-hidden="true">
+                {s.icon === 'cart' && (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                )}
+                {s.icon === 'chat' && (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                )}
+                {s.icon === 'box' && (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                )}
+                {s.icon === 'compass' && (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                )}
+              </span>
+              <div class="service-card__heading">
+                <span class="service-card__num">{s.n}</span>
+                <h3 class="service-card__title">{s.title}</h3>
+              </div>
+            </div>
+            <p class="service-card__body">{s.body}</p>
+
+            <div class="service-mock" aria-hidden="true">
+              {s.mock === 'bars' ? (
+                <div class="service-mock__bars">
+                  <div class="service-mock__bar" style="height: 45%"></div>
+                  <div class="service-mock__bar service-mock__bar--tall" style="height: 85%"></div>
+                  <div class="service-mock__bar" style="height: 62%"></div>
+                  <div class="service-mock__bar service-mock__bar--tall" style="height: 78%"></div>
+                  <div class="service-mock__bar" style="height: 50%"></div>
+                </div>
+              ) : (
+                <div class="service-mock__rows">
+                  <div class="service-mock__row">
+                    <span class="service-mock__dot"></span>
+                    <span class="service-mock__label">Tmall</span>
+                    <span class="service-mock__value">+288</span>
+                  </div>
+                  <div class="service-mock__row">
+                    <span class="service-mock__dot"></span>
+                    <span class="service-mock__label">Douyin</span>
+                    <span class="service-mock__value">+120</span>
+                  </div>
+                  <div class="service-mock__row service-mock__row--muted">
+                    <span class="service-mock__dot"></span>
+                    <span class="service-mock__label">RED</span>
+                    <span class="service-mock__value">+86</span>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <a href={s.href} class="service-card__link">Learn more →</a>
           </article>
         ))}
-      </div>
-
-      <div class="services__secondary">
-        <span class="services__secondary-label">Also:</span>
-        <ul>
-          {secondaryServices.map(s => (
-            <li><a href={s.href}>{s.label}</a></li>
-          ))}
-        </ul>
       </div>
     </div>
   </section>
 
-  {/* ---------- PILLARS SPLIT ---------- */}
+  {/* ---------- BENTO ROW ---------- */}
+  <section class="section section--tight">
+    <div class="container">
+      <div class="bento">
+        <article class="bento__card">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </span>
+          <h3 class="bento__title">We work from anywhere</h3>
+          <div class="bento__pill">
+            <span class="bento__pill-flag">CN</span>
+            <span class="bento__pill-text">Shanghai HQ</span>
+            <span class="bento__pill-arrow" aria-hidden="true">↗</span>
+          </div>
+          <p class="bento__meta">Hong Kong · Paris</p>
+        </article>
+
+        <article class="bento__card bento__card--visual">
+          <h3 class="bento__title">Every Chinese platform</h3>
+          <ul class="bento__tags">
+            {platforms.map(p => <li>{p}</li>)}
+          </ul>
+        </article>
+
+        <article class="bento__card bento__card--cta">
+          <h3 class="bento__title">Explore our other services</h3>
+          <a href="/services" class="btn btn--bento">View more</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- PILLARS: ACCORDION SPLIT ---------- */}
   <section class="section section--alt">
     <div class="container">
       <div class="split">
-        <div class="split__visual" aria-hidden="true">
-          <div class="device">
-            <div class="device__screen">
-              <span class="device__eyebrow">Where are you</span>
-              <div class="device__bars">
-                <div class="device__bar" style="width: 90%"><span>Enter</span></div>
-                <div class="device__bar" style="width: 75%"><span>Grow</span></div>
-                <div class="device__bar" style="width: 60%"><span>Learn</span></div>
-              </div>
-              <div class="device__chip">Shanghai · HK · Paris</div>
-            </div>
-          </div>
-        </div>
-
         <div class="split__copy">
           <span class="eyebrow">Where to start</span>
           <h2>Where are you with China?</h2>
@@ -188,28 +269,54 @@ const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', '
             Three starting points. Pick the one that matches the problem in front of you.
             The team and the approach change accordingly.
           </p>
-          <ul class="split__list">
-            {pillars.map(p => (
-              <li class="split__item">
-                <h3>{p.title}</h3>
-                <p>{p.body}</p>
-                <a href={p.href} class="btn btn--ghost">{p.title}</a>
+          <ul class="pillar-list">
+            {pillars.map((p, i) => (
+              <li class={`pillar-item${i === 0 ? ' is-open' : ''}`}>
+                <div class="pillar-item__head">
+                  <span class="pillar-item__num">{p.n}</span>
+                  <h3 class="pillar-item__title">{p.title}</h3>
+                  <span class="pillar-item__chev" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+                  </span>
+                </div>
+                <div class="pillar-item__body">
+                  <p>{p.body}</p>
+                  <a href={p.href} class="btn btn--ghost">Read more</a>
+                </div>
               </li>
             ))}
           </ul>
         </div>
+
+        <div class="split__visual" aria-hidden="true">
+          <div class="pillar-visual">
+            <div class="pillar-visual__tag">
+              <span class="pillar-visual__dot"></span>
+              Live in China
+            </div>
+            <div class="pillar-visual__mark">BBG</div>
+            <div class="pillar-visual__row">
+              <span class="pillar-visual__avatar">SH</span>
+              <div>
+                <div class="pillar-visual__name">Shanghai HQ</div>
+                <div class="pillar-visual__meta">Senior team · 20+ years</div>
+              </div>
+            </div>
+            <div class="pillar-visual__stats">
+              <div>
+                <div class="pillar-visual__value">400+</div>
+                <div class="pillar-visual__label">Brands</div>
+              </div>
+              <div>
+                <div class="pillar-visual__value">3</div>
+                <div class="pillar-visual__label">Offices</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-  {/* ---------- MARQUEE ---------- */}
-  <div class="marquee marquee--reverse" aria-hidden="true">
-    <div class="marquee__track">
-      {[...marqueeItems, ...marqueeItems].map(item => (
-        <span class="marquee__item">{item}</span>
-      ))}
-    </div>
-  </div>
 
   {/* ---------- DARK FEATURE SECTION ---------- */}
   <section class="section section--dark">
@@ -250,6 +357,18 @@ const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', '
     </div>
   </section>
 
+  {/* ---------- REVERSE DARK TICKER ---------- */}
+  <div class="ticker ticker--dark ticker--reverse" aria-hidden="true">
+    <div class="ticker__track">
+      {[...tickerItems, ...tickerItems].map(item => (
+        <>
+          <span class="ticker__item">{item}</span>
+          <span class="ticker__sep">✦</span>
+        </>
+      ))}
+    </div>
+  </div>
+
   {/* ---------- STATS STRIP ---------- */}
   <section class="section">
     <div class="container">
@@ -259,7 +378,7 @@ const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', '
           <h2>20 years in China, still on the ground</h2>
           <p class="lead">
             The senior people you meet are the senior people on your account.
-            We run the strategy and we run the operations, from Shanghai, Hong Kong and Paris.
+            Strategy and operations, from Shanghai, Hong Kong and Paris.
           </p>
           <a href="/about" class="btn btn--secondary">Meet the team</a>
         </div>
@@ -288,9 +407,12 @@ const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', '
   {/* ---------- OUR WORK ---------- */}
   <section class="section section--alt">
     <div class="container">
-      <header class="section-header">
-        <span class="eyebrow">Our work</span>
-        <h2>Brands we've built in China</h2>
+      <header class="section-header section-header--split">
+        <div>
+          <span class="eyebrow">Our work</span>
+          <h2>Brands we've built in China</h2>
+        </div>
+        <a href="/work" class="btn btn--secondary btn--sm">See all case studies</a>
       </header>
 
       <div class="grid grid-3">
@@ -305,72 +427,86 @@ const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', '
           </a>
         ))}
       </div>
+    </div>
+  </section>
 
-      <div class="section__cta">
-        <a href="/work" class="btn btn--secondary">See all case studies</a>
+  {/* ---------- LOGO STRIP ---------- */}
+  <section class="section section--tight">
+    <div class="container">
+      <div class="logo-strip">
+        {logos.map(l => <span class="logo-strip__item">{l}</span>)}
       </div>
     </div>
   </section>
 
-  {/* ---------- LOGO MARQUEE ---------- */}
-  <div class="marquee marquee--logos" aria-hidden="true">
-    <div class="marquee__track">
-      {[...logos, ...logos].map(l => (
-        <span class="marquee__logo">{l}</span>
-      ))}
-    </div>
-  </div>
-
-  {/* ---------- INSIGHTS ---------- */}
+  {/* ---------- INSIGHTS / TESTIMONIALS ---------- */}
   <section class="section">
     <div class="container">
-      <header class="section-header">
+      <header class="section-header section-header--center">
         <span class="eyebrow">Insights</span>
         <h2>What we think about China</h2>
       </header>
 
       <div class="grid grid-2">
-        {insights.map(i => (
-          <a href={i.href} class="card insight insight--testimonial">
-            <span class="card__tags">{i.tag}</span>
-            <h3 class="card__title">{i.title}</h3>
-            <div class="card__footer">
+        {testimonials.map(t => (
+          <a href={t.href} class="testimonial">
+            <span class="testimonial__quote" aria-hidden="true">"</span>
+            <p class="testimonial__text">{t.quote}</p>
+            <div class="testimonial__meta">
+              <span class="card__tags">{t.tag}</span>
               <span class="btn btn--ghost">Read article</span>
             </div>
           </a>
         ))}
       </div>
-
-      <div class="section__cta">
-        <a href="/insights" class="btn btn--secondary">All insights</a>
-      </div>
     </div>
   </section>
 
-  {/* ---------- CLOSING CTA ---------- */}
-  <section class="section section--dark cta cta--split">
+  {/* ---------- FINAL DARK CTA CARD ---------- */}
+  <section class="section section--tight">
     <div class="container">
-      <div class="cta-split">
-        <div class="cta-split__copy">
+      <div class="cta-card">
+        <div class="cta-card__copy">
           <span class="eyebrow">Get in touch</span>
           <h2>Ready to move?</h2>
-          <p class="lead cta__lead">
+          <p class="cta-card__lead">
             Tell us where you are with China and where you want to go.
             We'll reply within one working day.
           </p>
-          <a href="/contact" class="btn btn--primary">Talk to us</a>
+          <div class="cta-card__actions">
+            <a href="/contact" class="btn btn--primary">Talk to us</a>
+            <a href="/about" class="btn btn--ghost btn--ghost-light">Meet the team</a>
+          </div>
+          <p class="cta-card__foot">cyril@beyondbordergroup.com</p>
         </div>
-        <div class="cta-split__visual" aria-hidden="true">
-          <div class="device">
-            <div class="device__screen">
-              <span class="device__eyebrow">Reply within</span>
-              <div class="cta-split__big">24h</div>
-              <div class="device__chip">One working day</div>
-            </div>
+
+        <div class="cta-card__visual" aria-hidden="true">
+          <div class="cta-card__tile">
+            <span class="device__eyebrow">Reply within</span>
+            <div class="cta-card__big">24h</div>
+            <span class="device__chip">One working day</span>
+          </div>
+          <div class="cta-card__chip-group">
+            <span class="cta-card__pill">Shanghai</span>
+            <span class="cta-card__pill">Hong Kong</span>
+            <span class="cta-card__pill">Paris</span>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <script is:inline>
+    document.querySelectorAll('.pillar-item__head').forEach((head) => {
+      head.addEventListener('click', () => {
+        const item = head.closest('.pillar-item');
+        const parent = item.parentElement;
+        parent.querySelectorAll('.pillar-item.is-open').forEach((open) => {
+          if (open !== item) open.classList.remove('is-open');
+        });
+        item.classList.toggle('is-open');
+      });
+    });
+  </script>
 
 </Layout>
