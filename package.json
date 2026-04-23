@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "gen": "node generate-image.mjs",
-    "gen:edit": "node generate-image-edit.mjs"
+    "gen:edit": "node generate-image-edit.mjs",
+    "img": "node scripts/optimize-image.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",
