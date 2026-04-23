@@ -1319,17 +1319,45 @@ h4, .h4 { font-size: var(--fs-h4); line-height: 1.3; font-weight: 600; }
   isolation: isolate;
 }
 
-/* Layered context background: glow blobs + faded multilingual greetings */
+/* Layered context background: photo + tint + glows + faded greetings */
 .contact__bg {
   position: absolute;
   inset: 0;
   z-index: -1;
   pointer-events: none;
+  overflow: hidden;
+}
+.contact__bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  opacity: 0.55;
+  filter: saturate(1.1) contrast(1.05);
+}
+.contact__bg-veil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(13, 18, 28, 0.92) 0%,
+      rgba(13, 18, 28, 0.78) 35%,
+      rgba(13, 18, 28, 0.55) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(26, 26, 26, 0.4) 0%,
+      rgba(26, 26, 26, 0.85) 100%
+    );
 }
 .contact__bg-glow {
   position: absolute;
   border-radius: 50%;
   filter: blur(20px);
+  mix-blend-mode: screen;
 }
 .contact__bg-glow--top {
   width: 720px;
