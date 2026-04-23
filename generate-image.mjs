@@ -5,10 +5,17 @@ const API_URL = 'https://api.wavespeed.ai/api/v3';
 const MODEL = 'google/nano-banana-2/text-to-image';
 const API_KEY = process.env.WAVESPEED_API_KEY;
 
-const prompt = process.argv.slice(2).join(' ');
+const args = process.argv.slice(2);
+const sizeFlagIdx = args.findIndex((a) => a === '--size');
+let size = '1:1';
+if (sizeFlagIdx !== -1 && args[sizeFlagIdx + 1]) {
+  size = args[sizeFlagIdx + 1];
+  args.splice(sizeFlagIdx, 2);
+}
+const prompt = args.join(' ');
 
 if (!prompt) {
-  console.error('Usage: node generate-image.mjs <prompt>');
+  console.error('Usage: node generate-image.mjs [--size 16:9] <prompt>');
   process.exit(1);
 }
 
@@ -22,7 +29,7 @@ async function generate() {
       'Authorization': `Bearer ${API_KEY}`,
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ prompt, output_format: 'png', quality: '1K' }),
+    body: JSON.stringify({ prompt, output_format: 'png', quality: '1K', size, aspect_ratio: size }),
   });
 
   const submitData = await submitRes.json();
@@ -33,8 +40,8 @@ async function generate() {
 
   const taskId = submitData.data.id;
 
-  // Poll for result (max 120s)
-  for (let i = 0; i < 120; i++) {
+  // Poll for result (max 300s)
+  for (let i = 0; i < 300; i++) {
     await new Promise((r) => setTimeout(r, 1000));
     process.stdout.write('.');
 

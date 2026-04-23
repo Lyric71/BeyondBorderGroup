@@ -3,10 +3,17 @@ import Layout from '../layouts/Layout.astro';
 
 const heroStats = [
   { value: '20+', label: 'Years in China' },
-  { value: '400+', label: 'Brands launched' },
 ];
 
-const tickerItems = ['Enter China', 'Grow in China', 'Learn China', 'Tmall', 'JD', 'Douyin', 'WeChat', 'RED'];
+const heroPlatforms = [
+  { name: 'Tmall',     zh: '天猫'   },
+  { name: 'Taobao',    zh: '淘宝'   },
+  { name: 'JD',        zh: '京东'   },
+  { name: 'Douyin',    zh: '抖音'   },
+  { name: 'WeChat',    zh: '微信'   },
+  { name: 'RED',       zh: '小红书' },
+  { name: 'Pinduoduo', zh: '拼多多' },
+];
 
 const services = [
   {
@@ -86,8 +93,6 @@ const testimonials = [
   },
 ];
 
-const logos = ['Pierre Fabre', 'Bassetti', 'Langnese', "Age 20's", 'Shiseido', 'Camper'];
-
 const darkFeatures = [
   { title: 'Store operations on Tmall, JD, Douyin', body: 'Day-to-day running of your flagship, from listings to customer service.' },
   { title: 'Content and livestream that sells', body: 'Creative built for Chinese platforms, not translated from Western campaigns.' },
@@ -104,57 +109,99 @@ const platforms = ['Tmall', 'JD', 'Douyin', 'WeChat', 'RED', 'Bilibili'];
 >
 
   {/* ---------- HERO ---------- */}
-  <section class="hero-split">
-    <div class="container">
-      <div class="hero-split__grid">
-        <div class="hero-split__copy">
-          <span class="eyebrow">China market entry, eCommerce & distribution</span>
-          <h1 class="hero-split__title">We help global brands sell, grow and win in China</h1>
-          <p class="hero-split__lead">
-            Senior people from 4A agencies who build the strategy and run the operations.
-            Shanghai, Hong Kong, Paris.
-          </p>
-          <div class="hero-split__actions">
-            <a class="btn btn--primary" href="/contact">Talk to us</a>
-            <a class="btn btn--secondary" href="/work">See our work</a>
-          </div>
-          <div class="hero-trust">
-            <div class="hero-trust__dots" aria-hidden="true">
-              <span>PF</span><span>BS</span><span>SH</span><span>CM</span>
-            </div>
-            <p class="hero-trust__text">
-              <strong>400+ brands</strong> launched in China since 2004
-            </p>
-          </div>
+  <section class="hero-fullbleed">
+    <img
+      src="/hero-livestream.png"
+      alt=""
+      class="hero-fullbleed__image"
+      width="1920"
+      height="1080"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+    />
+    <div class="hero-fullbleed__overlay" aria-hidden="true"></div>
+
+    <div class="container hero-fullbleed__inner">
+      <div class="hero-fullbleed__copy">
+        <span class="eyebrow eyebrow--on-dark">China market entry, eCommerce & distribution</span>
+        <h1 class="hero-fullbleed__title">Sell in China. Grow in China. Understand China.</h1>
+        <p class="hero-fullbleed__lead">
+          Cross-border eCommerce, social commerce, distribution and market entry consulting.
+          One team, three offices.
+        </p>
+        <div class="hero-fullbleed__actions">
+          <a class="btn btn--primary" href="/contact">Talk to us</a>
+          <a class="btn btn--ghost-light" href="/work">See our work</a>
         </div>
 
-        <div class="hero-split__visual" aria-hidden="true">
-          <div class="hero-split__canvas">
-            <span class="hero-split__canvas-mark">BBG</span>
-            <span class="hero-split__canvas-cities">Shanghai · Hong Kong · Paris</span>
-          </div>
-          {heroStats.map((s, i) => (
-            <div class={`hero-stat hero-stat--${i + 1}`}>
-              <div class="hero-stat__value">{s.value}</div>
-              <div class="hero-stat__label">{s.label}</div>
-            </div>
+        <ul class="hero-fullbleed__platforms" aria-label="Platforms we operate on">
+          {heroPlatforms.map((p) => (
+            <li class="platform-chip platform-chip--on-dark">
+              <span class="platform-chip__name">{p.name}</span>
+              <span class="platform-chip__zh">{p.zh}</span>
+            </li>
           ))}
+        </ul>
+      </div>
+
+      {heroStats.map((s) => (
+        <div class="hero-fullbleed__stat">
+          <div class="hero-stat__value">{s.value}</div>
+          <div class="hero-stat__label">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* ---------- PILLARS: ACCORDION SPLIT ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <div class="split">
+        <div class="split__copy">
+          <span class="eyebrow">Where to start</span>
+          <h2>Where are you with China?</h2>
+          <p class="lead">
+            Three starting points. Pick the one that matches the problem in front of you.
+            The team and the approach change accordingly.
+          </p>
+          <ul class="pillar-list">
+            {pillars.map((p, i) => (
+              <li class={`pillar-item${i === 0 ? ' is-open' : ''}`}>
+                <div class="pillar-item__head">
+                  <h3 class="pillar-item__title">{p.title}</h3>
+                  <span class="pillar-item__chev" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+                  </span>
+                </div>
+                <div class="pillar-item__body">
+                  <p>{p.body}</p>
+                  <a href={p.href} class="btn btn--ghost">Read more</a>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="split__visual" aria-hidden="true">
+          <div class="pillar-visual pillar-visual--cloud">
+            <div class="pillar-visual__tag">
+              <span class="pillar-visual__dot"></span>
+              Live in China
+            </div>
+            <div class="hero-platforms">
+              {heroPlatforms.map((p, i) => (
+                <div class={`platform-chip platform-chip--${i + 1}`}>
+                  <span class="platform-chip__name">{p.name}</span>
+                  <span class="platform-chip__zh">{p.zh}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  {/* ---------- DARK TICKER ---------- */}
-  <div class="ticker ticker--dark" aria-hidden="true">
-    <div class="ticker__track">
-      {[...tickerItems, ...tickerItems].map(item => (
-        <>
-          <span class="ticker__item">{item}</span>
-          <span class="ticker__sep">✦</span>
-        </>
-      ))}
-    </div>
-  </div>
 
   {/* ---------- 4 SERVICES GRID ---------- */}
   <section class="section">
@@ -183,7 +230,6 @@ const platforms = ['Tmall', 'JD', 'Douyin', 'WeChat', 'RED', 'Bilibili'];
                 )}
               </span>
               <div class="service-card__heading">
-                <span class="service-card__num">{s.n}</span>
                 <h3 class="service-card__title">{s.title}</h3>
               </div>
             </div>
@@ -258,66 +304,6 @@ const platforms = ['Tmall', 'JD', 'Douyin', 'WeChat', 'RED', 'Bilibili'];
     </div>
   </section>
 
-  {/* ---------- PILLARS: ACCORDION SPLIT ---------- */}
-  <section class="section section--alt">
-    <div class="container">
-      <div class="split">
-        <div class="split__copy">
-          <span class="eyebrow">Where to start</span>
-          <h2>Where are you with China?</h2>
-          <p class="lead">
-            Three starting points. Pick the one that matches the problem in front of you.
-            The team and the approach change accordingly.
-          </p>
-          <ul class="pillar-list">
-            {pillars.map((p, i) => (
-              <li class={`pillar-item${i === 0 ? ' is-open' : ''}`}>
-                <div class="pillar-item__head">
-                  <span class="pillar-item__num">{p.n}</span>
-                  <h3 class="pillar-item__title">{p.title}</h3>
-                  <span class="pillar-item__chev" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
-                  </span>
-                </div>
-                <div class="pillar-item__body">
-                  <p>{p.body}</p>
-                  <a href={p.href} class="btn btn--ghost">Read more</a>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div class="split__visual" aria-hidden="true">
-          <div class="pillar-visual">
-            <div class="pillar-visual__tag">
-              <span class="pillar-visual__dot"></span>
-              Live in China
-            </div>
-            <div class="pillar-visual__mark">BBG</div>
-            <div class="pillar-visual__row">
-              <span class="pillar-visual__avatar">SH</span>
-              <div>
-                <div class="pillar-visual__name">Shanghai HQ</div>
-                <div class="pillar-visual__meta">Senior team · 20+ years</div>
-              </div>
-            </div>
-            <div class="pillar-visual__stats">
-              <div>
-                <div class="pillar-visual__value">400+</div>
-                <div class="pillar-visual__label">Brands</div>
-              </div>
-              <div>
-                <div class="pillar-visual__value">3</div>
-                <div class="pillar-visual__label">Offices</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   {/* ---------- DARK FEATURE SECTION ---------- */}
   <section class="section section--dark">
     <div class="container">
@@ -356,18 +342,6 @@ const platforms = ['Tmall', 'JD', 'Douyin', 'WeChat', 'RED', 'Bilibili'];
       </div>
     </div>
   </section>
-
-  {/* ---------- REVERSE DARK TICKER ---------- */}
-  <div class="ticker ticker--dark ticker--reverse" aria-hidden="true">
-    <div class="ticker__track">
-      {[...tickerItems, ...tickerItems].map(item => (
-        <>
-          <span class="ticker__item">{item}</span>
-          <span class="ticker__sep">✦</span>
-        </>
-      ))}
-    </div>
-  </div>
 
   {/* ---------- STATS STRIP ---------- */}
   <section class="section">
@@ -426,15 +400,6 @@ const platforms = ['Tmall', 'JD', 'Douyin', 'WeChat', 'RED', 'Bilibili'];
             <p>{c.title}</p>
           </a>
         ))}
-      </div>
-    </div>
-  </section>
-
-  {/* ---------- LOGO STRIP ---------- */}
-  <section class="section section--tight">
-    <div class="container">
-      <div class="logo-strip">
-        {logos.map(l => <span class="logo-strip__item">{l}</span>)}
       </div>
     </div>
   </section>
