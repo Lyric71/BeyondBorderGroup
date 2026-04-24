@@ -1,0 +1,1009 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const heroStats = [
+  { value: '10+', label: 'Years training in English, French, Mandarin' },
+  { value: '60+', label: 'Brands and MBA cohorts trained' },
+  { value: '3', label: 'Languages, one team' },
+];
+
+const heroBadges = [
+  'HEC MBA', 'ESCP MBA', 'EU Chamber', 'AmCham', 'Business France', 'SJTU Executive MBA',
+];
+
+const audience = [
+  'Business owners and country managers looking at China',
+  'Marketing and digital teams who need to understand why China is different',
+  'eCommerce teams preparing to sell on Tmall, JD, Douyin or RED',
+  'Entrepreneurs and startups sizing up the opportunity',
+  'International marketing leads expanding their toolkit',
+];
+
+const takeaways = [
+  {
+    h: 'Real case studies',
+    p: 'Brands that grew in China, brands that burned money. Both matter, and we show the numbers behind each.',
+  },
+  {
+    h: 'Current numbers',
+    p: 'Platforms, consumer behaviour, media costs. Refreshed before every session because last quarter is already stale.',
+  },
+  {
+    h: 'Operator trainers',
+    p: 'People who run stores, media budgets and campaigns today. Not ex-consultants reading slides.',
+  },
+  {
+    h: 'Your brief, not ours',
+    p: 'A working session tied to your category, your price point and your team. Not a deck anyone could find online.',
+  },
+  {
+    h: 'Ready-to-use tools',
+    p: 'Frameworks, checklists and templates your team can put to work the following Monday morning.',
+  },
+];
+
+const moduleIcon: Record<string, string> = {
+  compass: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',
+  grid: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>',
+  target: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+};
+
+const modules = [
+  {
+    n: '01',
+    icon: 'compass',
+    title: "China's digital and eCommerce ecosystem",
+    lead: 'The map of the market. Who uses what, how the platforms make money, where your category fits.',
+    topics: [
+      {
+        h: 'Market overview',
+        items: [
+          'Current numbers: internet users, eCommerce penetration, category splits',
+          'Mobile and super-app behaviour',
+          'Chinese consumer profiles by tier, age and income',
+          'Regional differences and why one national plan rarely works',
+        ],
+      },
+      {
+        h: 'Consumer behaviour',
+        items: [
+          'How Chinese consumers actually discover, compare and buy',
+          'The real purchase journey across search, social and eCommerce',
+          'What drives decisions: price, content, trust, recommendation',
+          'The weight of mobile and social in every category',
+        ],
+      },
+      {
+        h: 'Current trends',
+        items: [
+          'Livestreaming, short video and social commerce',
+          'AI, personalisation and the rise of GEO on Chinese search',
+          'What is growing, what is peaking, what is already over',
+        ],
+      },
+    ],
+  },
+  {
+    n: '02',
+    icon: 'grid',
+    title: 'Platforms',
+    lead: 'The rules of each platform, the kind of brand it rewards, and what it actually costs to operate.',
+    topics: [
+      {
+        h: 'WeChat',
+        items: [
+          'Official Accounts: setup, content formats, what works',
+          'Mini Programs for commerce, service and CRM',
+          'WeChat Pay and the basics of WeCom',
+          'Content strategy and paid amplification',
+        ],
+      },
+      {
+        h: 'eCommerce platforms',
+        items: [
+          'Tmall and Tmall Global: model, fees, operations',
+          'JD and JD Worldwide: where it wins and where it does not',
+          'Taobao and the C2C layer underneath Tmall',
+          'Douyin eCommerce and closed-loop social commerce',
+          'Pricing, promotions and the shopping calendar',
+        ],
+      },
+      {
+        h: 'Social platforms',
+        items: [
+          'Weibo: still relevant for PR and seeding',
+          'Douyin: content formats, algorithm, commercial mechanics',
+          'Xiaohongshu (RED): category discovery and KOC marketing',
+          'Zhihu: B2B and high-consideration categories',
+          'Bilibili: Gen Z, long-form video and fandom',
+        ],
+      },
+    ],
+  },
+  {
+    n: '03',
+    icon: 'target',
+    title: 'Best practice and case studies',
+    lead: 'What the good brands actually do. What the failed launches got wrong. A plan you can take back to the office.',
+    topics: [
+      {
+        h: 'Marketing in China',
+        items: [
+          'Influencer and KOL programmes that move the needle',
+          'Multi-platform content strategy',
+          'The Chinese promotional calendar: 618, Double 11, Chinese New Year, 38',
+          'Budget allocation and ROI benchmarks',
+        ],
+      },
+      {
+        h: 'Case studies',
+        items: [
+          'Brands that grew, and why',
+          'Expensive mistakes to avoid',
+          'Local adaptations that changed the outcome',
+          'Campaigns that went viral, broken down step by step',
+        ],
+      },
+      {
+        h: 'Getting things done',
+        items: [
+          'How to structure a China team, in-house or agency',
+          'Selecting the right local partners and distributors',
+          'Customer service and logistics fundamentals',
+          'Regulatory and compliance essentials',
+        ],
+      },
+      {
+        h: 'Your action plan',
+        items: [
+          'Entry strategy workshop tied to your brief',
+          'Budget planning and phasing',
+          'A custom roadmap you leave the room with',
+        ],
+      },
+    ],
+  },
+];
+
+const formatIcon: Record<string, string> = {
+  layers: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
+  pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+  clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+  package: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>',
+  globe: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+  life: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/></svg>',
+};
+
+const format = [
+  { icon: 'layers', label: 'Content', body: 'Customised for your industry. Beauty, food and beverage, tourism, automotive, luxury, services. We rewrite examples and case studies to match the category you actually sell in.' },
+  { icon: 'pin', label: 'Venue', body: 'Our consultants travel. Shanghai, Hong Kong, Paris, your office, your offsite. In person or remote.' },
+  { icon: 'clock', label: 'Duration', body: 'Full day (8 hours), half day (4 hours), or a multi-session format spread across weeks.' },
+  { icon: 'package', label: 'Deliverables', body: 'Complete course materials, the session deck, and access to the trainers for follow-up questions after the workshop.' },
+  { icon: 'globe', label: 'Languages', body: 'English, French and Mandarin. Bilingual sessions are standard, not an upsell.' },
+  { icon: 'life', label: 'Post-training', body: '30 days of follow-up support for in-house training: email Q&A, two video call sessions, and ongoing access to our market updates.' },
+];
+
+const faqs = [
+  { q: 'Do you customise the programme?', a: 'Yes. We start from your goals, your industry and your current level of China exposure, then build the programme around that. A short briefing call before the session is enough to tailor the modules, examples and case studies.' },
+  { q: 'Can we work with you as consultants rather than trainers?', a: 'Yes. We also run strategic and operational consulting: digital audits, market entry strategy, distributor selection, eCommerce setup. The training often becomes the starting point of a longer engagement.' },
+  { q: 'Can we pick specific modules?', a: 'Yes. The programme is modular. Clients often run half-day sessions focused on WeChat, eCommerce platforms, social commerce, or KOL and influencer marketing alone.' },
+  { q: 'Can you go deeper on a specific topic?', a: 'Yes. We can spend a full session on Tmall Global strategy, livestream commerce, Douyin closed-loop, Xiaohongshu for beauty, or any other topic your team needs to dig into.' },
+  { q: 'Do you run in-house corporate training?', a: 'Yes. We come to your office, adapt the content to your internal context, and run the session for your full team. In-house formats unlock the best discussions because everyone is working on the same business.' },
+  { q: 'In which languages do you train?', a: 'English, French and Mandarin. Trainers are bilingual or trilingual, which helps on cultural and commercial nuance.' },
+  { q: 'What support do you offer after the session?', a: 'For in-house training, 30 days of post-session support: email Q&A, two video call sessions for the team, and access to our market updates.' },
+  { q: 'What does a typical training day look like?', a: 'A mix of content modules, live case studies, structured Q&A, working exercises tied to your business, and a closing action plan. We keep the pace high and break regularly.' },
+  { q: 'Any prerequisites?', a: 'No technical prerequisites. A basic familiarity with digital marketing helps. A real project or interest in the Chinese market is the only thing we really need from the room.' },
+  { q: 'How much does it cost?', a: 'Fees depend on format, duration, location and number of participants. Contact us for a tailored quote.' },
+];
+
+const related = [
+  { title: 'Learning Expeditions', desc: 'Fly to China and see the market for yourself. Live stores, platform meetings, livestream floors, brand operators.', href: '/learn-china/learning-expeditions' },
+  { title: 'Platforms', desc: 'Tmall, JD, Douyin, WeChat, RED, Pinduoduo. The map of every major Chinese platform and who it is for.', href: '/learn-china/platforms' },
+  { title: 'Insights', desc: 'Articles and analysis written by the people who run operations in the market every day.', href: '/insights' },
+];
+---
+
+<Layout
+  title="China Digital & eCommerce Masterclass | Beyond Border Group"
+  description="A practitioner-led masterclass on China's digital ecosystem, eCommerce platforms, consumer behaviour and campaign mechanics. Customised for your category and your team."
+>
+
+  {/* ---------- HERO ---------- */}
+  <section class="hero-fullbleed mc-hero">
+    <picture>
+      <img
+        src="/Images/masterclass.jpg"
+        alt="BeyondBorderGroup masterclass on stage at the Shanghai International MCN Conference"
+        class="hero-fullbleed__image"
+        width="1600"
+        height="900"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </picture>
+    <div class="hero-fullbleed__overlay mc-hero__overlay" aria-hidden="true"></div>
+
+    <div class="container hero-fullbleed__inner mc-hero__inner">
+      <div class="hero-fullbleed__copy mc-hero__copy">
+        <span class="eyebrow eyebrow--on-dark">Learn China / Masterclass</span>
+        <h1 class="hero-fullbleed__title">A China masterclass taught by people who run the market every day.</h1>
+        <p class="hero-fullbleed__lead">
+          A concentrated training programme on China's digital and eCommerce
+          ecosystem. Platforms, consumer behaviour, campaign mechanics.
+          Tailored to your industry, delivered by operators with 20 years on the ground.
+        </p>
+        <div class="hero-fullbleed__actions">
+          <a class="btn btn--primary" href="/contact">Book a masterclass</a>
+          <a class="btn btn--ghost-light" href="#curriculum">See the curriculum</a>
+        </div>
+
+        <ul class="mc-hero__badges" aria-label="Where we have trained">
+          {heroBadges.map(b => <li>{b}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- STATS STRIP ---------- */}
+  <section class="mc-stats-strip">
+    <div class="container">
+      <ul class="mc-stats">
+        {heroStats.map(s => (
+          <li class="mc-stat">
+            <span class="mc-stat__value">{s.value}</span>
+            <span class="mc-stat__label">{s.label}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  {/* ---------- WHY / AUDIENCE ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <div class="mc-split">
+        <div class="mc-split__copy">
+          <span class="eyebrow">Why this training</span>
+          <h2>Understand how China really works, not how a report says it works.</h2>
+          <p class="lead">
+            This is a deep dive into how China's digital and online shopping ecosystem
+            operates in practice. You leave with a clear view of the platforms, the
+            consumer behaviour that moves sales, and the mechanics of a campaign that
+            actually converts.
+          </p>
+          <p>
+            No recycled trend slides. No playbook translated from the US. Numbers get
+            refreshed before every session because the market moves fast enough that
+            last quarter's deck is already wrong.
+          </p>
+        </div>
+
+        <aside class="mc-audience" aria-label="Who this training is for">
+          <span class="eyebrow">Who it's for</span>
+          <ul class="mc-audience__list">
+            {audience.map(a => (
+              <li>
+                <span class="mc-audience__check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <span>{a}</span>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- WHAT YOU TAKE AWAY ---------- */}
+  <section class="section">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">What you take away</span>
+        <h2>Training that stays useful after you leave the room.</h2>
+      </header>
+
+      <div class="mc-takeaways">
+        {takeaways.map(t => (
+          <article class="mc-takeaway">
+            <h3 class="mc-takeaway__title">{t.h}</h3>
+            <p>{t.p}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- CURRICULUM ---------- */}
+  <section class="section section--alt" id="curriculum">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Curriculum</span>
+        <h2>Three modules. Your pick of depth, your pick of format.</h2>
+        <p class="lead">
+          Delivered as a full day, split across half-day sessions, or configured
+          into a longer programme. Depth on the topics that matter to your
+          category, summary on the ones that do not.
+        </p>
+      </header>
+
+      <div class="mc-modules">
+        {modules.map(m => (
+          <article class="mc-module">
+            <div class="mc-module__rail">
+              <span class="mc-module__icon" aria-hidden="true" set:html={moduleIcon[m.icon]} />
+            </div>
+
+            <div class="mc-module__content">
+              <header class="mc-module__header">
+                <h3 class="mc-module__title">{m.title}</h3>
+                <p class="mc-module__lead">{m.lead}</p>
+              </header>
+
+              <div class="mc-module__topics">
+                {m.topics.map(t => (
+                  <div class="mc-topic">
+                    <h4 class="mc-topic__title">{t.h}</h4>
+                    <ul class="mc-topic__list">
+                      {t.items.map(i => <li>{i}</li>)}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- TRAINERS ---------- */}
+  <section class="section mc-trainers-section">
+    <div class="container">
+      <div class="mc-trainers">
+        <div class="mc-trainers__copy">
+          <span class="eyebrow">Who teaches it</span>
+          <h2>Operators, not academics.</h2>
+          <p class="lead">
+            Cyril has been training executives on China's digital market in English
+            and French for more than a decade. Liyan runs the same programme for
+            Mandarin-speaking audiences. Together they have trained at HEC MBA,
+            ESCP MBA, the European Chamber of Commerce in China, the American
+            Chamber, Business France and Shanghai Jiaotong Executive MBA.
+          </p>
+          <p>
+            Every trainer in the room runs a store, a media budget or a campaign
+            today. That is the difference. You are being taught by the person who
+            is still getting the WeChat notifications at 11pm.
+          </p>
+          <div class="mc-trainers__actions">
+            <a href="/about" class="btn btn--secondary">Meet the team</a>
+            <a href="/contact" class="btn btn--ghost">Talk to a trainer</a>
+          </div>
+        </div>
+
+        <ul class="mc-trainers__list" aria-label="Lead trainers">
+          <li class="mc-trainer">
+            <span class="mc-trainer__avatar">
+              <img
+                src="/Images/team/cyril-drouin.jpg"
+                alt="Portrait of Cyril Drouin"
+                loading="lazy"
+                decoding="async"
+              />
+            </span>
+            <div class="mc-trainer__body">
+              <span class="mc-trainer__name">Cyril Drouin</span>
+              <span class="mc-trainer__role">Founder & CEO</span>
+              <span class="mc-trainer__meta">Shanghai / Paris</span>
+              <span class="mc-trainer__langs">English · French</span>
+            </div>
+          </li>
+          <li class="mc-trainer">
+            <span class="mc-trainer__avatar">
+              <img
+                src="/Images/team/liyan-ye.jpg"
+                alt="Portrait of Liyan Ye"
+                loading="lazy"
+                decoding="async"
+              />
+            </span>
+            <div class="mc-trainer__body">
+              <span class="mc-trainer__name">Liyan Ye</span>
+              <span class="mc-trainer__role">Senior Director</span>
+              <span class="mc-trainer__meta">Shanghai</span>
+              <span class="mc-trainer__langs">Mandarin · English</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- FORMAT / PRACTICAL ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Format and logistics</span>
+        <h2>Built around your team's schedule.</h2>
+      </header>
+
+      <div class="mc-format">
+        {format.map(f => (
+          <article class="mc-format__item">
+            <span class="mc-format__icon" aria-hidden="true" set:html={formatIcon[f.icon]} />
+            <span class="mc-format__label">{f.label}</span>
+            <p>{f.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- FAQ ---------- */}
+  <section class="section">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">FAQ</span>
+        <h2>Common questions about the masterclass.</h2>
+      </header>
+
+      <div class="mc-faq">
+        {faqs.map(f => (
+          <details class="mc-faq__item">
+            <summary class="mc-faq__q">
+              <span>{f.q}</span>
+              <span class="mc-faq__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </summary>
+            <p class="mc-faq__a">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- RELATED ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <header class="section-header section-header--split">
+        <div>
+          <span class="eyebrow">Keep going</span>
+          <h2>More ways to learn the market.</h2>
+        </div>
+        <a href="/learn-china" class="btn btn--secondary btn--sm">All Learn China programmes</a>
+      </header>
+
+      <div class="grid grid-3">
+        {related.map(r => (
+          <a href={r.href} class="card mc-related">
+            <h3 class="card__title">{r.title}</h3>
+            <p>{r.desc}</p>
+            <span class="mc-related__link">Learn more →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- CLOSING CTA ---------- */}
+  <section class="mc-closing">
+    <img
+      class="mc-closing__bg"
+      src="/Images/CyrilMasterclass.jpg"
+      alt=""
+      loading="lazy"
+      decoding="async"
+    />
+    <div class="mc-closing__overlay" aria-hidden="true"></div>
+
+    <div class="container mc-closing__inner">
+      <span class="eyebrow eyebrow--on-dark">Get in touch</span>
+      <h2 class="mc-closing__title">Thinking about a China masterclass for your team?</h2>
+      <p class="mc-closing__lead">
+        Tell us about your team, your category and what you want to walk away with.
+        We will come back within one business day with a tailored programme.
+      </p>
+      <a href="/contact" class="btn btn--primary">Book a masterclass</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* ---------- Hero ---------- */
+  .mc-hero { min-height: clamp(560px, 80vh, 720px); }
+  .mc-hero__overlay {
+    background: linear-gradient(
+      105deg,
+      rgba(10, 18, 28, 0.88) 0%,
+      rgba(10, 18, 28, 0.72) 45%,
+      rgba(10, 18, 28, 0.35) 100%
+    );
+  }
+  .mc-hero__inner {
+    padding-top: clamp(128px, 17vh, 200px);
+    padding-bottom: clamp(128px, 17vh, 200px);
+    align-items: center;
+  }
+  .mc-hero__copy { max-width: 760px; }
+  .mc-hero__copy .hero-fullbleed__title { max-width: 760px; }
+  .mc-hero__copy .hero-fullbleed__lead { max-width: 640px; }
+
+  .mc-hero__badges {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-6) 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-3);
+  }
+  .mc-hero__badges li {
+    font-size: var(--fs-small);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 6px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  /* ---------- Stats strip ---------- */
+  .mc-stats-strip {
+    background: var(--bbg-ink);
+    color: var(--bbg-white);
+    padding: var(--space-6) 0;
+  }
+  .mc-stats {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
+  .mc-stat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: 0 var(--space-5);
+    border-left: 2px solid var(--bbg-blue);
+  }
+  .mc-stat:first-child { padding-left: 0; border-left: 0; }
+  .mc-stat__value {
+    font-size: clamp(2.25rem, 3.5vw + 0.5rem, 3.5rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--bbg-white);
+  }
+  .mc-stat__label {
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+  }
+  @media (max-width: 768px) {
+    .mc-stats { grid-template-columns: 1fr; gap: var(--space-4); }
+    .mc-stat { padding-left: var(--space-4); border-left: 2px solid var(--bbg-blue); }
+    .mc-stat:first-child { padding-left: var(--space-4); border-left: 2px solid var(--bbg-blue); }
+  }
+
+  /* ---------- Why / Audience split ---------- */
+  .mc-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: var(--space-7);
+    align-items: start;
+  }
+  .mc-split__copy { max-width: 62ch; }
+  .mc-split__copy p + p { margin-top: var(--space-4); }
+
+  .mc-audience {
+    padding: var(--space-6);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+  }
+  .mc-audience::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--bbg-blue), var(--bbg-blue-dark));
+  }
+  .mc-audience .eyebrow { display: block; margin-bottom: var(--space-4); }
+  .mc-audience__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-3); }
+  .mc-audience__list li {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: var(--space-3);
+    align-items: start;
+    font-size: var(--fs-body);
+    color: var(--bbg-text);
+    line-height: 1.55;
+  }
+  .mc-audience__check {
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue-dark);
+    display: inline-grid;
+    place-items: center;
+    margin-top: 2px;
+  }
+  .mc-audience__check svg { width: 14px; height: 14px; }
+
+  @media (max-width: 1024px) {
+    .mc-split { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Takeaways ---------- */
+  .mc-takeaways {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-5);
+  }
+  .mc-takeaway {
+    position: relative;
+    padding: var(--space-6);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  }
+  .mc-takeaway:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--bbg-blue);
+  }
+  .mc-takeaway__title {
+    font-size: var(--fs-h4);
+    margin: 0 0 var(--space-2);
+    color: var(--bbg-ink);
+    position: relative;
+    padding-top: var(--space-3);
+  }
+  .mc-takeaway__title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 3px;
+    background: var(--bbg-blue);
+    border-radius: 2px;
+  }
+  .mc-takeaway p { margin: 0; color: var(--bbg-text); line-height: 1.55; }
+  @media (max-width: 1024px) { .mc-takeaways { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px)  { .mc-takeaways { grid-template-columns: 1fr; } }
+
+  /* ---------- Modules ---------- */
+  .mc-modules {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+  .mc-module {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: var(--space-6);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+  .mc-module:hover { border-color: var(--bbg-blue); box-shadow: var(--shadow-md); }
+
+  .mc-module__rail {
+    background: linear-gradient(160deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+    color: var(--bbg-white);
+    padding: var(--space-6) var(--space-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+  }
+  .mc-module__icon {
+    display: inline-grid;
+    place-items: center;
+    width: 72px;
+    height: 72px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .mc-module__icon svg { width: 36px; height: 36px; }
+
+  .mc-module__content { padding: var(--space-6) var(--space-6) var(--space-6) 0; }
+  .mc-module__header {
+    padding-bottom: var(--space-5);
+    border-bottom: 1px solid var(--bbg-border);
+    margin-bottom: var(--space-5);
+  }
+  .mc-module__title { margin: 0 0 var(--space-2); font-size: var(--fs-h3); }
+  .mc-module__lead { margin: 0; color: var(--bbg-text); line-height: 1.55; max-width: 70ch; }
+
+  .mc-module__topics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-5);
+  }
+  .mc-topic__title {
+    font-size: var(--fs-h4);
+    margin: 0 0 var(--space-3);
+    color: var(--bbg-ink);
+  }
+  .mc-topic__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .mc-topic__list li {
+    position: relative;
+    padding-left: 18px;
+    font-size: var(--fs-small);
+    color: var(--bbg-text);
+    line-height: 1.55;
+  }
+  .mc-topic__list li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 9px;
+    width: 8px; height: 1px;
+    background: var(--bbg-blue);
+  }
+  @media (max-width: 1024px) {
+    .mc-module__topics { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .mc-module { grid-template-columns: 1fr; }
+    .mc-module__rail {
+      min-height: 0;
+      padding: var(--space-4) var(--space-5);
+    }
+    .mc-module__icon { width: 56px; height: 56px; }
+    .mc-module__icon svg { width: 28px; height: 28px; }
+    .mc-module__content { padding: var(--space-5); }
+    .mc-module__topics { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Trainers ---------- */
+  .mc-trainers-section {
+    position: relative;
+    overflow: hidden;
+  }
+  .mc-trainers-section::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, var(--bbg-blue-light), transparent);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .mc-trainers {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    gap: var(--space-7);
+    align-items: start;
+  }
+  .mc-trainers__copy p + p { margin-top: var(--space-4); }
+  .mc-trainers__actions {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    margin-top: var(--space-5);
+  }
+
+  .mc-trainers__list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-4); }
+  .mc-trainer {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: var(--space-5);
+    align-items: center;
+    padding: var(--space-5) var(--space-6);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  }
+  .mc-trainer:hover { border-color: var(--bbg-blue); transform: translateX(4px); }
+  .mc-trainer__avatar {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--bbg-blue-light);
+    border: 2px solid var(--bbg-white);
+    box-shadow: 0 0 0 1px var(--bbg-border);
+    flex-shrink: 0;
+  }
+  .mc-trainer__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    display: block;
+  }
+  .mc-trainer__body { display: flex; flex-direction: column; gap: 2px; }
+  .mc-trainer__name { font-weight: 600; color: var(--bbg-ink); font-size: 1.125rem; }
+  .mc-trainer__role { font-size: var(--fs-small); color: var(--bbg-blue); font-weight: 600; }
+  .mc-trainer__meta { font-size: var(--fs-small); color: var(--bbg-text-muted); }
+  .mc-trainer__langs {
+    font-size: 0.75rem;
+    color: var(--bbg-text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  @media (max-width: 1024px) {
+    .mc-trainers { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Format grid ---------- */
+  .mc-format {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-5);
+  }
+  .mc-format__item {
+    position: relative;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  }
+  .mc-format__item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--bbg-blue);
+  }
+  .mc-format__icon {
+    display: inline-grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+    margin-bottom: var(--space-4);
+  }
+  .mc-format__icon svg { width: 24px; height: 24px; }
+  .mc-format__label {
+    display: block;
+    font-size: var(--fs-h4);
+    font-weight: 600;
+    color: var(--bbg-ink);
+    margin-bottom: var(--space-2);
+  }
+  .mc-format__item p { margin: 0; color: var(--bbg-text); line-height: 1.55; }
+  @media (max-width: 1024px) { .mc-format { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px)  { .mc-format { grid-template-columns: 1fr; } }
+
+  /* ---------- FAQ ---------- */
+  .mc-faq {
+    max-width: 820px;
+    margin: 0 auto;
+    border-top: 1px solid var(--bbg-border);
+  }
+  .mc-faq__item { border-bottom: 1px solid var(--bbg-border); }
+  .mc-faq__q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-5) 0;
+    cursor: pointer;
+    font-size: var(--fs-h4);
+    font-weight: 600;
+    color: var(--bbg-ink);
+    list-style: none;
+    transition: color var(--dur) var(--ease);
+  }
+  .mc-faq__q:hover { color: var(--bbg-blue); }
+  .mc-faq__q::-webkit-details-marker { display: none; }
+  .mc-faq__icon {
+    display: inline-grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--bbg-border);
+    color: var(--bbg-blue);
+    flex-shrink: 0;
+    transition: transform var(--dur) var(--ease), background var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  }
+  .mc-faq__icon svg { width: 16px; height: 16px; }
+  .mc-faq__item[open] .mc-faq__icon {
+    transform: rotate(180deg);
+    background: var(--bbg-blue);
+    border-color: var(--bbg-blue);
+    color: var(--bbg-white);
+  }
+  .mc-faq__a {
+    margin: 0;
+    padding: 0 0 var(--space-5);
+    color: var(--bbg-text);
+    line-height: 1.65;
+    max-width: 72ch;
+  }
+
+  /* ---------- Related cards ---------- */
+  .mc-related { padding: var(--space-6); display: flex; flex-direction: column; }
+  .mc-related p { color: var(--bbg-text); margin-bottom: var(--space-4); flex: 1; }
+  .mc-related__link {
+    color: var(--bbg-blue);
+    font-weight: 600;
+    font-size: var(--fs-small);
+    letter-spacing: 0.02em;
+  }
+  .mc-related:hover .mc-related__link { color: var(--bbg-blue-dark); }
+
+  /* ---------- Closing CTA ---------- */
+  .mc-closing {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: clamp(96px, 16vh, 180px) 0;
+    color: var(--bbg-white);
+  }
+  .mc-closing__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 40%;
+    z-index: -2;
+  }
+  .mc-closing__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(10, 18, 28, 0.55) 0%,
+        rgba(10, 18, 28, 0.72) 60%,
+        rgba(10, 18, 28, 0.82) 100%
+      );
+  }
+  .mc-closing__inner {
+    max-width: 760px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+  }
+  .mc-closing__title {
+    color: var(--bbg-white);
+    margin: 0;
+    max-width: 20ch;
+  }
+  .mc-closing__lead {
+    font-size: var(--fs-lead);
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 var(--space-3);
+    max-width: 56ch;
+  }
+</style>

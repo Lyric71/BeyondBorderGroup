@@ -1,0 +1,376 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('insights', ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const {
+  title,
+  description,
+  heroImage,
+  heroImageAlt,
+  pubDate,
+  updatedDate,
+  category,
+  tags,
+  author,
+} = post.data;
+
+function formatDate(d?: Date) {
+  if (!d) return '';
+  return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+function readingTime(body: string | undefined) {
+  if (!body) return '';
+  const words = body.trim().split(/\s+/).length;
+  const minutes = Math.max(1, Math.round(words / 200));
+  return `${minutes} min read`;
+}
+
+const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+const related = allInsights
+  .filter((p) => p.id !== post.id && p.data.category === category)
+  .slice(0, 3);
+---
+
+<Layout title={`${title} | Beyond Border Group`} description={description}>
+  <article class="insight-article">
+    <header class="insight-article__header">
+      <div class="container container--narrow">
+        <nav class="insight-article__crumbs" aria-label="Breadcrumb">
+          <a href="/insights">← All insights</a>
+        </nav>
+        <span class="eyebrow">{category}</span>
+        <h1 class="insight-article__title">{title}</h1>
+        <p class="insight-article__lead">{description}</p>
+        <div class="insight-article__meta">
+          <span>{author}</span>
+          {pubDate && (
+            <>
+              <span aria-hidden="true">·</span>
+              <span>{formatDate(pubDate)}</span>
+            </>
+          )}
+          <span aria-hidden="true">·</span>
+          <span>{readingTime(post.body)}</span>
+        </div>
+      </div>
+    </header>
+
+    {heroImage && (
+      <div class="insight-article__hero">
+        <div class="container">
+          <img
+            src={heroImage}
+            alt={heroImageAlt}
+            width="1200"
+            height="675"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+    )}
+
+    <div class="insight-article__body">
+      <div class="container container--narrow">
+        <div class="prose">
+          <Content />
+        </div>
+
+        {tags && tags.length > 0 && (
+          <div class="insight-article__tags">
+            <span class="eyebrow">Tags</span>
+            <ul>
+              {tags.map((t) => <li>{t}</li>)}
+            </ul>
+          </div>
+        )}
+
+        {updatedDate && (
+          <p class="insight-article__updated">
+            Updated {formatDate(updatedDate)}
+          </p>
+        )}
+
+        <div class="insight-article__cta">
+          <h2>Thinking about China? Let's have a coffee.</h2>
+          <p>Tell us where you are today and where you'd like to be.</p>
+          <div class="insight-article__cta-actions">
+            <a href="/contact" class="btn btn--primary">Start the conversation</a>
+            <a href="/insights" class="btn btn--secondary">More insights</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {related.length > 0 && (
+      <section class="section section--alt">
+        <div class="container">
+          <header class="section-header section-header--split">
+            <div>
+              <span class="eyebrow">Keep reading</span>
+              <h2>More on {category}</h2>
+            </div>
+            <a href="/insights" class="btn btn--secondary btn--sm">All insights</a>
+          </header>
+
+          <div class="grid grid-3">
+            {related.map((p) => (
+              <a href={`/insights/${p.id}`} class="insight-card">
+                <div class="insight-card__image">
+                  {p.data.heroImage && (
+                    <img src={p.data.heroImage} alt={p.data.heroImageAlt} loading="lazy" decoding="async" width="600" height="400" />
+                  )}
+                </div>
+                <div class="insight-card__body">
+                  <span class="insight-card__tag">{p.data.category}</span>
+                  <h3 class="insight-card__title">{p.data.title}</h3>
+                  <div class="insight-card__meta">
+                    <span>{readingTime(p.body)}</span>
+                    {p.data.pubDate && (
+                      <>
+                        <span class="insight-card__meta-sep" aria-hidden="true">|</span>
+                        <span>{formatDate(p.data.pubDate)}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+  </article>
+
+  <style is:global>
+    .container--narrow {
+      max-width: 760px;
+      margin-inline: auto;
+      padding-inline: var(--container-pad);
+    }
+
+    .insight-article__header {
+      padding: var(--space-8) 0 var(--space-6);
+      text-align: center;
+    }
+    .insight-article__crumbs {
+      margin-bottom: var(--space-5);
+      font-size: var(--fs-small);
+    }
+    .insight-article__crumbs a {
+      color: var(--bbg-text-muted);
+      font-weight: 500;
+    }
+    .insight-article__crumbs a:hover { color: var(--bbg-blue); }
+
+    .insight-article__header .eyebrow { margin-bottom: var(--space-4); }
+    .insight-article__title {
+      font-size: clamp(2rem, 3vw + 1rem, 3rem);
+      line-height: 1.15;
+      margin-bottom: var(--space-5);
+    }
+    .insight-article__lead {
+      font-size: var(--fs-lead);
+      line-height: 1.5;
+      color: var(--bbg-text);
+      max-width: 56ch;
+      margin: 0 auto var(--space-5);
+    }
+    .insight-article__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      align-items: center;
+      justify-content: center;
+      color: var(--bbg-text-muted);
+      font-size: var(--fs-small);
+    }
+
+    .insight-article__hero {
+      margin: var(--space-6) 0 var(--space-7);
+    }
+    .insight-article__hero img {
+      width: 100%;
+      max-height: 560px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+    }
+
+    .insight-article__body {
+      padding-bottom: var(--space-8);
+    }
+
+    .prose {
+      font-size: 1.125rem;
+      line-height: 1.75;
+      color: var(--bbg-text);
+    }
+    .prose > * + * { margin-top: 1.25em; }
+    .prose h2 {
+      font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+      line-height: 1.25;
+      margin-top: 2em;
+      margin-bottom: 0.6em;
+      color: var(--bbg-ink);
+      letter-spacing: -0.01em;
+    }
+    .prose h3 {
+      font-size: 1.375rem;
+      line-height: 1.3;
+      margin-top: 1.8em;
+      margin-bottom: 0.5em;
+      color: var(--bbg-ink);
+    }
+    .prose h4 {
+      font-size: 1.125rem;
+      margin-top: 1.6em;
+      margin-bottom: 0.5em;
+      color: var(--bbg-ink);
+    }
+    .prose p { margin: 0 0 1.25em; }
+    .prose a {
+      color: var(--bbg-blue);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .prose a:hover { color: var(--bbg-blue-dark); }
+    .prose strong { color: var(--bbg-ink); font-weight: 700; }
+    .prose ul, .prose ol { padding-left: 1.5rem; margin: 0 0 1.25em; }
+    .prose li { margin-bottom: 0.5em; }
+    .prose li > ul, .prose li > ol { margin-top: 0.5em; }
+    .prose blockquote {
+      margin: 1.75em 0;
+      padding: 0.5em 0 0.5em 1.5em;
+      border-left: 3px solid var(--bbg-blue);
+      font-style: italic;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      color: var(--bbg-ink);
+    }
+    .prose blockquote p { margin: 0; }
+    .prose img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-md);
+      margin: 2em 0;
+    }
+    .prose figure { margin: 2em 0; }
+    .prose figcaption {
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      text-align: center;
+      margin-top: 0.75em;
+    }
+    .prose hr {
+      border: 0;
+      border-top: 1px solid var(--bbg-border);
+      margin: 2.5em 0;
+    }
+    .prose table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.75em 0;
+      font-size: 0.95em;
+    }
+    .prose th, .prose td {
+      padding: 0.75em 1em;
+      border: 1px solid var(--bbg-border);
+      text-align: left;
+      vertical-align: top;
+    }
+    .prose th {
+      background: var(--bbg-surface);
+      font-weight: 600;
+      color: var(--bbg-ink);
+    }
+    .prose code {
+      background: var(--bbg-surface);
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      font-size: 0.9em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    .prose pre {
+      background: #0d1a24;
+      color: #e5e5e5;
+      padding: 1.25em;
+      border-radius: var(--radius-md);
+      overflow-x: auto;
+      font-size: 0.9em;
+    }
+    .prose pre code {
+      background: transparent;
+      padding: 0;
+      color: inherit;
+    }
+
+    .insight-article__tags {
+      margin-top: var(--space-7);
+      padding-top: var(--space-5);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .insight-article__tags .eyebrow { display: block; margin-bottom: var(--space-3); }
+    .insight-article__tags ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      padding: 0;
+      list-style: none;
+    }
+    .insight-article__tags li {
+      padding: 0.35em 0.9em;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue-dark);
+      border-radius: 999px;
+      font-size: var(--fs-small);
+      font-weight: 500;
+    }
+
+    .insight-article__updated {
+      margin-top: var(--space-5);
+      color: var(--bbg-text-muted);
+      font-size: var(--fs-small);
+      font-style: italic;
+    }
+
+    .insight-article__cta {
+      margin-top: var(--space-8);
+      padding: var(--space-7) var(--space-6);
+      background: var(--bbg-surface);
+      border-radius: var(--radius-lg);
+      text-align: center;
+    }
+    .insight-article__cta h2 {
+      font-size: clamp(1.5rem, 1.5vw + 1rem, 1.875rem);
+      margin-bottom: var(--space-3);
+    }
+    .insight-article__cta p {
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-5);
+    }
+    .insight-article__cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+    }
+
+    @media (max-width: 640px) {
+      .insight-article__header { padding-top: var(--space-7); }
+      .insight-article__hero { margin: var(--space-5) 0 var(--space-6); }
+      .prose { font-size: 1.0625rem; line-height: 1.7; }
+    }
+  </style>
+</Layout>

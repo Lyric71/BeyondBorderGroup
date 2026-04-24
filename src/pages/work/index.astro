@@ -1,0 +1,204 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allCases = await getCollection('cases', ({ data }) => !data.draft);
+
+const sorted = allCases.sort((a, b) => {
+  if (a.data.order !== b.data.order) return a.data.order - b.data.order;
+  return a.data.brand.localeCompare(b.data.brand);
+});
+
+const categoryOrder = [
+  'Brand & Design',
+  'Social & Content',
+  'eCommerce',
+  'Website',
+  'Distribution',
+  'Training',
+] as const;
+
+const counts = categoryOrder
+  .map((c) => ({ name: c, count: sorted.filter((x) => x.data.category === c).length }))
+  .filter((c) => c.count > 0);
+---
+
+<Layout
+  title="Our Work | Case Studies of Business Success in China | Beyond Border Group"
+  description="Case studies of the marketing, eCommerce and distribution work we run for international brands in China. Tmall, JD, Douyin, WeChat and RED."
+>
+  <section class="work-intro">
+    <div class="container">
+      <span class="eyebrow">Our work</span>
+      <h1>Case studies of business success and expansion in China</h1>
+      <p class="lead">
+        Client cases from our marketing, communications, media and commerce work
+        in China. Brand launches, eCommerce operations on Tmall and JD, social
+        commerce on Douyin, WeChat and RED, distribution setups, websites
+        behind the Great Firewall and training for teams new to the market.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {counts.length > 1 && (
+        <div class="work-filter" role="tablist" aria-label="Filter by service">
+          <button
+            type="button"
+            class="work-filter__btn is-active"
+            data-category="all"
+            role="tab"
+            aria-selected="true"
+          >
+            All <span class="work-filter__count">{sorted.length}</span>
+          </button>
+          {counts.map((c) => (
+            <button
+              type="button"
+              class="work-filter__btn"
+              data-category={c.name}
+              role="tab"
+              aria-selected="false"
+            >
+              {c.name} <span class="work-filter__count">{c.count}</span>
+            </button>
+          ))}
+        </div>
+      )}
+
+      <div class="grid grid-3 work-grid">
+        {sorted.map((c) => (
+          <a href={`/work/${c.id}`} class="work-card" data-category={c.data.category}>
+            <div class="work-card__image">
+              <img
+                src={c.data.heroImage}
+                alt={c.data.heroImageAlt || `${c.data.brand} case study`}
+                loading="lazy"
+                decoding="async"
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">{c.data.category}</span>
+              <h3 class="work-card__title">{c.data.brand}</h3>
+              <p class="work-card__summary">{c.data.title}</p>
+              {c.data.services.length > 0 && (
+                <ul class="work-card__services" aria-label="Services">
+                  {c.data.services.slice(0, 4).map((s) => <li>{s}</li>)}
+                  {c.data.services.length > 4 && (
+                    <li class="work-card__services-more">+{c.data.services.length - 4}</li>
+                  )}
+                </ul>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+
+      {sorted.length === 0 && (
+        <p class="work-empty">Case studies are being migrated. Check back shortly.</p>
+      )}
+    </div>
+  </section>
+
+  <section class="section section--alt section--tight">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-card__copy">
+          <span class="eyebrow">Say hi</span>
+          <h2>Thinking about your own China case study? Let's have a coffee.</h2>
+          <p class="cta-card__lead">
+            Tell us where you are today and where you'd like to be.
+            Real humans on our side, no sales funnel, no forms that never get read.
+          </p>
+          <div class="cta-card__actions">
+            <a href="/contact" class="btn btn--primary">Start the conversation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    document.querySelectorAll('.work-filter__btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.category;
+        document.querySelectorAll('.work-filter__btn').forEach((b) => {
+          const on = b === btn;
+          b.classList.toggle('is-active', on);
+          b.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        document.querySelectorAll('.work-card').forEach((card) => {
+          const show = cat === 'all' || card.dataset.category === cat;
+          card.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  </script>
+
+  <style>
+    .work-intro {
+      padding: var(--space-8) 0 var(--space-6);
+      text-align: center;
+    }
+    .work-intro .eyebrow { display: inline-block; margin-bottom: var(--space-4); }
+    .work-intro h1 { max-width: 22ch; margin-inline: auto; margin-bottom: var(--space-4); }
+    .work-intro .lead {
+      max-width: 66ch;
+      margin-inline: auto;
+      color: var(--bbg-text);
+    }
+
+    .work-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      justify-content: center;
+      margin-bottom: var(--space-7);
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .work-filter__btn {
+      appearance: none;
+      border: 1px solid var(--bbg-border);
+      background: transparent;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: var(--fs-small);
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+      cursor: pointer;
+      transition: all var(--dur) var(--ease);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .work-filter__btn:hover {
+      border-color: var(--bbg-blue);
+      color: var(--bbg-blue);
+    }
+    .work-filter__btn.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    .work-filter__count {
+      font-size: 0.75rem;
+      font-weight: 600;
+      opacity: 0.7;
+    }
+    .work-filter__btn.is-active .work-filter__count { opacity: 0.9; }
+
+    .work-grid {
+      gap: var(--space-6) var(--space-5);
+    }
+
+    .work-empty {
+      text-align: center;
+      color: var(--bbg-text-muted);
+      padding: var(--space-8) 0;
+    }
+  </style>
+</Layout>

@@ -1,17 +1,60 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
 
 const heroStats = [
   { value: '20+', label: 'Years in China' },
 ];
 
-const heroPlatforms = [
-  { name: 'Tmall',  zh: '天猫'   },
-  { name: 'Taobao', zh: '淘宝'   },
-  { name: 'JD',     zh: '京东'   },
-  { name: 'Douyin', zh: '抖音'   },
-  { name: 'WeChat', zh: '微信'   },
-  { name: 'RED',    zh: '小红书' },
+const dayStops = [
+  {
+    time:   '07:30',
+    moment: 'Morning check-in',
+    name:   'WeChat',
+    zh:     '微信',
+    photo:  '/Images/platforms/wechat.png',
+    logo:   '/Images/platforms/wechat-logo.svg',
+  },
+  {
+    time:   '10:15',
+    moment: 'Mid-morning discovery',
+    name:   'RED',
+    zh:     '小红书',
+    photo:  '/Images/platforms/rednote.png',
+    logo:   '/Images/platforms/rednote-logo.svg',
+  },
+  {
+    time:   '12:40',
+    moment: 'Lunch-break shopping',
+    name:   'Tmall',
+    zh:     '天猫',
+    photo:  '/Images/platforms/tmall-scene.png',
+    logo:   '/Images/platforms/tmall-logo.svg',
+  },
+  {
+    time:   '15:50',
+    moment: 'Afternoon group buy',
+    name:   'Pinduoduo',
+    zh:     '拼多多',
+    photo:  '/Images/platforms/pdd-scene.png',
+    logo:   '/Images/platforms/pdd-logo.svg',
+  },
+  {
+    time:   '19:20',
+    moment: 'Evening delivery',
+    name:   'JD',
+    zh:     '京东',
+    photo:  '/Images/platforms/jd-scene.png',
+    logo:   '/Images/platforms/jd-logo.png',
+  },
+  {
+    time:   '21:45',
+    moment: 'Livestream shopping',
+    name:   'Douyin',
+    zh:     '抖音',
+    photo:  '/Images/platforms/douyin.png',
+    logo:   '/Images/platforms/douyin-logo.svg',
+  },
 ];
 
 const svcIcon: Record<string, string> = {
@@ -263,41 +306,32 @@ const pillars = [
   },
 ];
 
-const cases = [
-  { brand: 'Pierre Fabre', title: 'China Insights Masterclass: Digital, eCommerce & AIGC', tag: 'Masterclass', href: '/work/pierre-fabre' },
-  { brand: 'Bassetti', title: "WordPress and Elementor behind the firewall: migrating Bassetti's website to China", tag: 'Website', href: '/work/bassetti' },
-  { brand: 'Langnese', title: "Reversing decline in China's honey market", tag: 'Distribution', href: '/work/langnese' },
-  { brand: "Age 20's", title: 'Little Milk Brick Cushion: social media and eCommerce launch campaign', tag: 'Social Commerce', href: '/work/age-20s' },
-  { brand: 'Shiseido RQ Pyology', title: 'Brand launch campaign in China', tag: 'Branding', href: '/work/shiseido-rq-pyology' },
-  { brand: 'Camper', title: 'Building a design-driven community on Chinese social media', tag: 'Social Media', href: '/work/camper' },
-];
+const allCases = await getCollection('cases', ({ data }) => !data.draft);
+const featuredCases = allCases
+  .slice()
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 6);
 
-const insights = [
-  {
-    tag: 'Content',
-    title: 'AI content production in China: what brands need to know right now',
-    reading: '5 min of reading',
-    date: 'April 2026',
-    image: '',
-    href: '/insights/ai-content-production-china',
-  },
-  {
-    tag: 'Platforms',
-    title: 'Douyin social commerce: hard to profit, still the best way in',
-    reading: '4 min of reading',
-    date: 'April 2026',
-    image: '',
-    href: '/insights/douyin-social-commerce',
-  },
-  {
-    tag: 'Platforms',
-    title: 'WeCom: what it is, what it does, and why your China strategy needs it',
-    reading: '5 min of reading',
-    date: 'April 2026',
-    image: '',
-    href: '/insights/wecom-china-strategy',
-  },
-];
+const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+const latestInsights = allInsights
+  .slice()
+  .sort((a, b) => {
+    const da = a.data.pubDate?.valueOf() ?? 0;
+    const db = b.data.pubDate?.valueOf() ?? 0;
+    return db - da;
+  })
+  .slice(0, 3);
+
+function readingTime(body: string | undefined) {
+  if (!body) return '';
+  const words = body.trim().split(/\s+/).length;
+  return `${Math.max(1, Math.round(words / 200))} min read`;
+}
+
+function formatInsightDate(d?: Date) {
+  if (!d) return '';
+  return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+}
 
 ---
 
@@ -309,9 +343,9 @@ const insights = [
   {/* ---------- HERO ---------- */}
   <section class="hero-fullbleed">
     <picture>
-      <source srcset="/hero-livestream.webp" type="image/webp" />
+      <source srcset="/Images/hero-livestream.webp" type="image/webp" />
       <img
-        src="/hero-livestream.jpg"
+        src="/Images/hero-livestream.jpg"
         alt=""
         class="hero-fullbleed__image"
         width="1376"
@@ -335,15 +369,6 @@ const insights = [
           <a class="btn btn--primary" href="/contact">Talk to us</a>
           <a class="btn btn--ghost-light" href="/work">See our work</a>
         </div>
-
-        <ul class="hero-fullbleed__platforms" aria-label="Platforms we operate on">
-          {heroPlatforms.map((p) => (
-            <li class="platform-chip platform-chip--on-dark">
-              <span class="platform-chip__name">{p.name}</span>
-              <span class="platform-chip__zh">{p.zh}</span>
-            </li>
-          ))}
-        </ul>
       </div>
 
       {heroStats.map((s) => (
@@ -355,58 +380,81 @@ const insights = [
     </div>
   </section>
 
-  {/* ---------- PILLARS: ACCORDION SPLIT ---------- */}
+  {/* ---------- PILLARS: ACCORDION ---------- */}
   <section class="section section--alt">
     <div class="container">
-      <div class="split">
-        <div class="split__copy">
-          <span class="eyebrow">Where to start</span>
-          <h2>China is not one problem to solve</h2>
-          <ul class="pillar-list">
-            {pillars.map((p) => (
-              <li class="pillar-item">
-                <div class="pillar-item__head">
-                  <h3 class="pillar-item__title">{p.title}</h3>
-                  <span class="pillar-item__chev" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
-                  </span>
-                </div>
-                <div class="pillar-item__body">
-                  <p class="pillar-item__lead">{p.lead}</p>
-                  {p.paragraphs.map((par) => <p class="pillar-item__para">{par}</p>)}
-                  <ul class="pillar-item__tactics">
-                    {p.tactics.map((t) => <li>{t}</li>)}
-                  </ul>
-                  <p class="pillar-item__close">{p.close}</p>
-                  <a href={p.href} class="btn btn--ghost">{p.title}</a>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div class="pillars-intro">
+        <span class="eyebrow">Where to start</span>
+        <h2>China is not one problem to solve</h2>
+        <ul class="pillar-list">
+          {pillars.map((p) => (
+            <li class="pillar-item">
+              <div class="pillar-item__head">
+                <h3 class="pillar-item__title">{p.title}</h3>
+                <span class="pillar-item__chev" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+                </span>
+              </div>
+              <div class="pillar-item__body">
+                <p class="pillar-item__lead">{p.lead}</p>
+                {p.paragraphs.map((par) => <p class="pillar-item__para">{par}</p>)}
+                <ul class="pillar-item__tactics">
+                  {p.tactics.map((t) => <li>{t}</li>)}
+                </ul>
+                <p class="pillar-item__close">{p.close}</p>
+                <a href={p.href} class="btn btn--ghost">{p.title}</a>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <div class="split__visual" aria-hidden="true">
-          <div class="pillar-visual pillar-visual--cloud">
-            <div class="pillar-visual__tag">
-              <span class="pillar-visual__dot"></span>
-              Live in China
+  {/* ---------- DAY IN CHINESE COMMERCE ---------- */}
+  <section class="section day-timeline-section">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">A day in Chinese commerce</span>
+        <h2>Your brand, every moment of the day</h2>
+        <p class="section-header__lead">
+          Chinese consumers move across platforms from morning to night.
+          Each one has its own rules, content formats, and commercial logic.
+        </p>
+      </header>
+
+      <ol class="day-timeline" aria-label="A day with Chinese consumer platforms">
+        {dayStops.map((s) => (
+          <li class="day-stop">
+            <figure class="day-stop__photo">
+              <img src={s.photo} alt="" loading="lazy" decoding="async" />
+            </figure>
+            <div class="day-stop__info">
+              <span class="day-stop__time">{s.time}</span>
+              <span class="day-stop__moment">{s.moment}</span>
+              <span class="day-stop__platform">
+                <img class="day-stop__logo" src={s.logo} alt="" loading="lazy" decoding="async" />
+                <span class="day-stop__platform-text">
+                  <span class="day-stop__name">{s.name}</span>
+                  <span class="day-stop__zh">{s.zh}</span>
+                </span>
+              </span>
             </div>
-            <div class="hero-platforms">
-              {heroPlatforms.map((p, i) => (
-                <div class={`platform-chip platform-chip--${i + 1}`}>
-                  <span class="platform-chip__name">{p.name}</span>
-                  <span class="platform-chip__zh">{p.zh}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+          </li>
+        ))}
+      </ol>
+
+      <div class="day-timeline__cta">
+        <a href="#services" class="btn btn--primary">Discover our services</a>
+        <p class="day-timeline__cta-note">
+          The playbook changes by platform. See how we help brands show up on each one.
+        </p>
       </div>
     </div>
   </section>
 
   {/* ---------- SERVICES BY STAGE (TABBED) ---------- */}
-  <section class="section">
+  <section class="section" id="services">
     <div class="container">
       <header class="section-header section-header--center">
         <span class="eyebrow">Services</span>
@@ -525,7 +573,7 @@ const insights = [
     <div class="container">
       <div class="studio-card">
         <div class="studio-card__bg" aria-hidden="true">
-          <img src="/studio-bg.png" alt="" loading="lazy" decoding="async" />
+          <img src="/Images/studio-bg.png" alt="" loading="lazy" decoding="async" />
         </div>
         <div class="studio-card__overlay" aria-hidden="true"></div>
 
@@ -600,14 +648,23 @@ const insights = [
       </header>
 
       <div class="grid grid-3">
-        {cases.map(c => (
-          <a href={c.href} class="card case">
-            <div class="card__image case__image" aria-hidden="true">
-              <span class="case__placeholder">{c.brand}</span>
+        {featuredCases.map((c) => (
+          <a href={`/work/${c.id}`} class="work-card">
+            <div class="work-card__image">
+              <img
+                src={c.data.heroImage}
+                alt={c.data.heroImageAlt || `${c.data.brand} case study`}
+                loading="lazy"
+                decoding="async"
+                width="600"
+                height="400"
+              />
             </div>
-            <span class="card__tags">{c.tag}</span>
-            <h3 class="card__title">{c.brand}</h3>
-            <p>{c.title}</p>
+            <div class="work-card__body">
+              <span class="work-card__tag">{c.data.category}</span>
+              <h3 class="work-card__title">{c.data.brand}</h3>
+              <p class="work-card__summary">{c.data.title}</p>
+            </div>
           </a>
         ))}
       </div>
@@ -624,18 +681,31 @@ const insights = [
       </header>
 
       <div class="grid grid-3">
-        {insights.map((i) => (
-          <a href={i.href} class="insight-card">
+        {latestInsights.map((post) => (
+          <a href={`/insights/${post.id}`} class="insight-card">
             <div class="insight-card__image">
-              {i.image && <img src={i.image} alt="" loading="lazy" decoding="async" />}
+              {post.data.heroImage && (
+                <img
+                  src={post.data.heroImage}
+                  alt={post.data.heroImageAlt}
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
+                />
+              )}
             </div>
             <div class="insight-card__body">
-              <span class="insight-card__tag">{i.tag}</span>
-              <h3 class="insight-card__title">{i.title}</h3>
+              <span class="insight-card__tag">{post.data.category}</span>
+              <h3 class="insight-card__title">{post.data.title}</h3>
               <div class="insight-card__meta">
-                <span>{i.reading}</span>
-                <span class="insight-card__meta-sep" aria-hidden="true">|</span>
-                <span>{i.date}</span>
+                <span>{readingTime(post.body)}</span>
+                {post.data.pubDate && (
+                  <>
+                    <span class="insight-card__meta-sep" aria-hidden="true">|</span>
+                    <span>{formatInsightDate(post.data.pubDate)}</span>
+                  </>
+                )}
               </div>
             </div>
           </a>

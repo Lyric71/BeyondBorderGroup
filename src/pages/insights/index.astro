@@ -1,0 +1,163 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+
+const sorted = allInsights.sort((a, b) => {
+  const da = a.data.pubDate?.valueOf() ?? 0;
+  const db = b.data.pubDate?.valueOf() ?? 0;
+  if (db !== da) return db - da;
+  return a.data.title.localeCompare(b.data.title);
+});
+
+function readingTime(body: string | undefined) {
+  if (!body) return '';
+  const words = body.trim().split(/\s+/).length;
+  const minutes = Math.max(1, Math.round(words / 200));
+  return `${minutes} min read`;
+}
+
+function formatDate(d?: Date) {
+  if (!d) return '';
+  return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+}
+
+const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort();
+---
+
+<Layout
+  title="Insights | Beyond Border Group"
+  description="Articles, analysis and market commentary on China e-commerce, marketing, branding, and digital platforms from the team operating brands on Tmall, JD, Douyin, WeChat and RED every day."
+>
+  <section class="insights-intro">
+    <div class="container">
+      <span class="eyebrow">Insights</span>
+      <h1>Current thinking from inside the China market.</h1>
+      <p class="lead">
+        Articles, analysis and commentary from the team operating brands on Tmall, JD, Douyin, WeChat and RED every day.
+        Not recycled research. Not trend reports repackaged from last year.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {categories.length > 1 && (
+        <div class="insights-filter" role="tablist" aria-label="Filter by category">
+          <button type="button" class="insights-filter__btn is-active" data-category="all" role="tab" aria-selected="true">All</button>
+          {categories.map((c) => (
+            <button type="button" class="insights-filter__btn" data-category={c} role="tab" aria-selected="false">{c}</button>
+          ))}
+        </div>
+      )}
+
+      <div class="grid grid-3 insights-grid">
+        {sorted.map((post) => (
+          <a
+            href={`/insights/${post.id}`}
+            class="insight-card"
+            data-category={post.data.category}
+          >
+            <div class="insight-card__image">
+              {post.data.heroImage && (
+                <img
+                  src={post.data.heroImage}
+                  alt={post.data.heroImageAlt}
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
+                />
+              )}
+            </div>
+            <div class="insight-card__body">
+              <span class="insight-card__tag">{post.data.category}</span>
+              <h3 class="insight-card__title">{post.data.title}</h3>
+              <div class="insight-card__meta">
+                <span>{readingTime(post.body)}</span>
+                {post.data.pubDate && (
+                  <>
+                    <span class="insight-card__meta-sep" aria-hidden="true">|</span>
+                    <span>{formatDate(post.data.pubDate)}</span>
+                  </>
+                )}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      {sorted.length === 0 && (
+        <p class="insights-empty">New insights are being migrated. Check back shortly.</p>
+      )}
+    </div>
+  </section>
+
+  <script is:inline>
+    document.querySelectorAll('.insights-filter__btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.category;
+        document.querySelectorAll('.insights-filter__btn').forEach((b) => {
+          const on = b === btn;
+          b.classList.toggle('is-active', on);
+          b.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        document.querySelectorAll('.insight-card').forEach((card) => {
+          const show = cat === 'all' || card.dataset.category === cat;
+          card.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  </script>
+
+  <style>
+    .insights-intro {
+      padding: var(--space-8) 0 var(--space-6);
+      text-align: center;
+    }
+    .insights-intro .eyebrow { display: inline-block; margin-bottom: var(--space-4); }
+    .insights-intro h1 { max-width: 18ch; margin-inline: auto; margin-bottom: var(--space-4); }
+    .insights-intro .lead { max-width: 60ch; margin-inline: auto; color: var(--bbg-text); }
+
+    .insights-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      justify-content: center;
+      margin-bottom: var(--space-7);
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .insights-filter__btn {
+      appearance: none;
+      border: 1px solid var(--bbg-border);
+      background: transparent;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: var(--fs-small);
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+      cursor: pointer;
+      transition: all var(--dur) var(--ease);
+    }
+    .insights-filter__btn:hover {
+      border-color: var(--bbg-blue);
+      color: var(--bbg-blue);
+    }
+    .insights-filter__btn.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+
+    .insights-grid {
+      gap: var(--space-6) var(--space-5);
+    }
+    .insights-empty {
+      text-align: center;
+      color: var(--bbg-text-muted);
+      padding: var(--space-8) 0;
+    }
+  </style>
+</Layout>
