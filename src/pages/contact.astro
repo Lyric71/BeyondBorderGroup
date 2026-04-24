@@ -35,7 +35,7 @@ const bgWords = [
     <div class="contact__bg" aria-hidden="true">
       <img
         class="contact__bg-image"
-        src="/contact-bg.jpg"
+        src="/contact-bg.png"
         alt=""
         loading="eager"
         decoding="async"
@@ -123,6 +123,23 @@ const bgWords = [
               <textarea class="field__input field__input--textarea" id="message" name="message" rows="6" required></textarea>
             </div>
 
+            <div class="field field--captcha">
+              <label class="field__label" for="captcha">
+                Quick check: what is <span id="captchaA">?</span> + <span id="captchaB">?</span>?
+                <span aria-hidden="true">*</span>
+              </label>
+              <input
+                class="field__input field__input--captcha"
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                id="captcha"
+                name="captcha"
+                autocomplete="off"
+                required
+              />
+            </div>
+
             {/* honeypot — bots fill this, humans don't see it */}
             <div class="form__honeypot" aria-hidden="true">
               <label for="website_url">Leave this field empty</label>
@@ -152,7 +169,20 @@ const bgWords = [
     const form = document.getElementById('contact-form');
     const status = document.getElementById('contact-status');
     const submit = document.getElementById('contact-submit');
+    const captchaA = document.getElementById('captchaA');
+    const captchaB = document.getElementById('captchaB');
+    const captchaInput = document.getElementById('captcha');
     if (!form) return;
+
+    function rollCaptcha() {
+      const a = Math.floor(Math.random() * 9) + 1;
+      const b = Math.floor(Math.random() * 9) + 1;
+      captchaA.textContent = a;
+      captchaB.textContent = b;
+      form.dataset.captchaSum = String(a + b);
+      if (captchaInput) captchaInput.value = '';
+    }
+    rollCaptcha();
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -169,7 +199,18 @@ const bgWords = [
         email: String(data.get('email') || '').trim(),
         company: String(data.get('company') || '').trim(),
         message: String(data.get('message') || '').trim(),
+        captcha: String(data.get('captcha') || '').trim(),
+        captchaExpected: String(form.dataset.captchaSum || ''),
       };
+
+      const captchaNum = parseInt(payload.captcha, 10);
+      const expectedNum = parseInt(payload.captchaExpected, 10);
+      if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
+        status.textContent = 'The quick check answer is not correct. Please try the new numbers.';
+        status.classList.add('form__status--error');
+        rollCaptcha();
+        return;
+      }
 
       if (!payload.name || !payload.email || !payload.message) {
         status.textContent = 'Please fill in your name, email and message.';
@@ -190,6 +231,7 @@ const bgWords = [
         if (!res.ok) throw new Error(body.error || 'Something went wrong. Please try again.');
 
         form.reset();
+        rollCaptcha();
         status.textContent = 'Thanks. Your message is on its way and we will reply within one business day.';
         status.classList.add('form__status--success');
       } catch (err) {

@@ -17,6 +17,20 @@ export const POST: APIRoute = async ({ request }) => {
 	const email = stringField(body.email);
 	const company = stringField(body.company);
 	const message = stringField(body.message);
+	const captcha = stringField(body.captcha);
+	const captchaExpected = stringField(body.captchaExpected);
+
+	const captchaNum = Number.parseInt(captcha, 10);
+	const expectedNum = Number.parseInt(captchaExpected, 10);
+	if (
+		!Number.isFinite(captchaNum) ||
+		!Number.isFinite(expectedNum) ||
+		expectedNum < 2 ||
+		expectedNum > 18 ||
+		captchaNum !== expectedNum
+	) {
+		return json({ error: 'Quick check failed. Please refresh and try again.' }, 400);
+	}
 
 	if (!name || !email || !message) {
 		return json({ error: 'Name, email, and message are required.' }, 400);
