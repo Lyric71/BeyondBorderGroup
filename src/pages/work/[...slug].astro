@@ -161,11 +161,10 @@ const related = allCases
     /* ---------- HERO ---------- */
     .case-hero {
       position: relative;
-      min-height: 68vh;
       min-height: clamp(520px, 68vh, 760px);
       display: flex;
-      align-items: flex-end;
-      padding: var(--space-8) 0 var(--space-7);
+      align-items: center;
+      padding: clamp(96px, 12vh, 140px) 0 clamp(64px, 10vh, 120px);
       color: var(--bbg-white);
       overflow: hidden;
       isolation: isolate;

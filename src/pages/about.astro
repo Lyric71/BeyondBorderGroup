@@ -430,7 +430,10 @@ const clients = [
     position: relative;
     overflow: hidden;
     isolation: isolate;
-    padding: var(--space-9) 0 var(--space-8);
+    min-height: clamp(520px, 68vh, 720px);
+    display: flex;
+    align-items: center;
+    padding: clamp(96px, 12vh, 140px) 0 clamp(64px, 10vh, 120px);
   }
   .about-hero__bg {
     position: absolute;
@@ -450,7 +453,7 @@ const clients = [
     background:
       linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 55%, rgba(0, 0, 0, 0.8) 100%);
   }
-  .about-hero__inner { position: relative; }
+  .about-hero__inner { position: relative; width: 100%; }
 
   .about-hero .hero__title {
     max-width: 920px;
