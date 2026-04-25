@@ -1,0 +1,1110 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const hurdles = [
+  {
+    title: 'Understanding local consumer behaviour',
+    desc: 'Chinese shoppers discover, research and buy inside social feeds. Trust sits with creators, not brands, and tastes shift faster than in any other market.',
+  },
+  {
+    title: 'Adapting to platform ecosystems',
+    desc: 'Douyin, WeChat and RED each have their own algorithm, content formats, commerce flows and creator economy. A post that works on one flops on the others.',
+  },
+  {
+    title: 'Compliance with local rules',
+    desc: 'Advertising law, livestream rules, data protection (PIPL), product claims. Getting social commerce right means staying inside the guardrails while still moving fast.',
+  },
+];
+
+const promises = [
+  {
+    title: 'Data driven market entry and positioning',
+    desc: 'We use category and platform data to decide where you show up, how you sound, and what you sell first.',
+  },
+  {
+    title: 'Deep read of the influencer ecosystem',
+    desc: 'We know who actually converts in your category, what they cost, and how to brief them so they produce content that sells.',
+  },
+  {
+    title: 'Privileged platform relationships',
+    desc: '15 years working with Douyin, WeChat, RED and their commerce teams. We get traffic, pricing and support most agencies cannot.',
+  },
+];
+
+const services = [
+  {
+    icon: 'chat',
+    title: 'Social commerce management',
+    desc: 'Account setup, content strategy and day-to-day operations on Xiaohongshu, WeChat and Douyin. Targeted ads and paid media layered on creator content.',
+  },
+  {
+    icon: 'network',
+    title: 'KOL and KOC engagement',
+    desc: 'We identify, brief, negotiate and measure creator partnerships. Short video, livestream, soft-landing posts and seeding, with clear ROI tracking.',
+  },
+  {
+    icon: 'truck',
+    title: 'Distribution and logistics',
+    desc: 'Live commerce and content commerce only pay off if fulfilment holds up. We build distribution with local logistics partners and optimise supply chains.',
+  },
+  {
+    icon: 'monitor',
+    title: 'Data analytics and consumer insight',
+    desc: 'Campaign performance, engagement quality, sentiment and category signals. We turn platform data into the next round of decisions, not just reports.',
+  },
+];
+
+const models = [
+  {
+    name: 'Marketing agency',
+    desc: 'You keep control of the China operation, we run the social commerce engine that feeds it.',
+    bullets: [
+      'Design, content and campaigns across social commerce',
+      'Festival pushes for 11.11, 6.18 and category tentpoles',
+      'Media buying optimised for ROAS',
+    ],
+    pricing: 'Agency fees based on service complexity',
+    highlight: false,
+  },
+  {
+    name: 'TP, Trade Partner',
+    desc: 'We operate your social commerce stores on Douyin, WeChat and Tmall under our China licenses.',
+    bullets: [
+      'Store design, content, livestream and merchandising',
+      'Media management, order processing and logistics',
+      'Customer service and after-sales support',
+    ],
+    pricing: 'Monthly fixed fee per store, plus commission on sales',
+    highlight: true,
+  },
+  {
+    name: 'Distributor',
+    desc: 'We act as your master exclusive distributor for China, buying and managing inventory.',
+    bullets: [
+      'Marketing, sales, logistics and inventory management',
+      'Online and offline distribution, direct and indirect',
+      'Single point of accountability for the China P&L',
+    ],
+    pricing: 'Growth margin on products',
+    highlight: false,
+  },
+];
+
+const platforms = [
+  {
+    name: 'Douyin',
+    cn: '抖音',
+    sub: 'Official TikTok and Douyin Marketing Partner. Short video, livestream and in-feed commerce.',
+    logo: '/Images/platforms/douyin-logo.svg',
+    href: '/learn-china/platforms',
+  },
+  {
+    name: 'WeChat',
+    cn: '微信',
+    sub: 'eCommerce and loyalty mini-programs, Channels video, WeCom CRM and private traffic.',
+    logo: '/Images/platforms/wechat-logo.svg',
+    href: '/learn-china/platforms',
+  },
+  {
+    name: 'RED',
+    cn: '小红书',
+    sub: 'Our own private KOL and KOC network. The discovery and decision layer for premium buyers.',
+    logo: '/Images/platforms/rednote-logo.svg',
+    href: '/learn-china/platforms',
+  },
+];
+
+const steps = [
+  {
+    n: '01',
+    title: 'Plan and research',
+    desc: 'We combine your goals, industry expertise and product with our platform data to craft the optimal social commerce strategy.',
+  },
+  {
+    n: '02',
+    title: 'Launch and promote',
+    desc: 'We design your social storefronts, brief creators, and generate traffic through KOL, KOC, paid media and content.',
+  },
+  {
+    n: '03',
+    title: 'Campaign and optimise',
+    desc: 'We run campaigns for 11.11, 6.18 and category events, and continuously refine creative, media and offers against live performance.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'What is social commerce in China?',
+    a: 'Social commerce is buying and selling products directly through social platforms like WeChat, Douyin and Xiaohongshu. Content, community and checkout live in the same app, so discovery, consideration and purchase happen in a single scroll.',
+  },
+  {
+    q: 'Why is social commerce important in China?',
+    a: 'It is the dominant commerce trend, driven by high mobile usage, an influencer-led culture, and deep consumer trust in peer recommendations. For most premium categories, social now drives more incremental growth than traditional marketplaces.',
+  },
+  {
+    q: 'Which platforms are most popular?',
+    a: 'WeChat, Douyin (the Chinese TikTok), Xiaohongshu (RED) and Pinduoduo. Each serves a different shopper and a different stage of the funnel, so your plan usually blends two or three rather than betting on one.',
+  },
+  {
+    q: 'How do KOLs impact social commerce?',
+    a: 'KOLs drive credibility and reach. Their recommendations shape purchase decisions in a way paid media alone cannot, especially in beauty, fashion, food, mother and baby, and consumer tech. KOCs close the loop by turning attention into word-of-mouth.',
+  },
+  {
+    q: 'What are the main challenges for foreign brands?',
+    a: 'Understanding local consumer behaviour, adapting to each platform ecosystem, managing logistics and customer service, and staying compliant with advertising and data rules. Most failures come from copy-pasting global playbooks rather than designing for China.',
+  },
+  {
+    q: 'How is KOL pricing structured?',
+    a: 'Fees are based on follower count, engagement rate, content format and campaign scope. They range from a few thousand RMB for a KOC post to millions of RMB for a top-tier celebrity livestream. We model blended cost per engaged view and cost per acquisition.',
+  },
+  {
+    q: 'How should we price our products for social commerce?',
+    a: 'Competitive pricing is essential. We build localised strategies that factor in Chinese purchasing power, competitor positioning, platform promo mechanics, and what consumers expect to pay for an imported brand in your category.',
+  },
+  {
+    q: 'How do you manage advertising costs?',
+    a: 'Clear objectives, sharp audience targeting, continuous performance monitoring and data-driven optimisation. We separate brand and performance budgets and protect the former from short-term ROAS pressure so the funnel keeps filling.',
+  },
+];
+
+const moreWays = [
+  {
+    tag: 'Grow in China',
+    title: 'Cross-border eCommerce',
+    desc: 'We run your Tmall Global and JD Worldwide stores end-to-end.',
+    href: '/enter-china/cross-border-setup',
+    image: '/Images/enter-china/ecommerce.jpg',
+  },
+  {
+    tag: 'Enter China',
+    title: 'Market entry consulting',
+    desc: 'Strategy, business model and partner selection before you launch.',
+    href: '/enter-china/market-entry-consulting',
+    image: '/Images/enter-china/team.png',
+  },
+  {
+    tag: 'Grow in China',
+    title: 'Websites in China',
+    desc: 'Sites built to load fast inside the Great Firewall and rank on Baidu and Chinese AI search.',
+    href: '/work',
+    image: '/Images/enter-china/website.jpg',
+  },
+];
+
+const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+const highlightedSlugs = [
+  'douyin-live-commerce-2025-store-led-livestream-strategy',
+  'science-emotion-chinas-new-brand-playbook',
+  'china-is-no-longer-one-market-why-local-bets-beat-national-plans',
+];
+const pageInsights = highlightedSlugs
+  .map((slug) => allInsights.find((i) => i.id === slug))
+  .filter((i): i is NonNullable<typeof i> => Boolean(i));
+
+const icons: Record<string, string> = {
+  chat: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-4a8 8 0 1 1 16-4z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg>`,
+  network: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M7 8l4 8M17 8l-4 8"/></svg>`,
+  truck: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>`,
+  monitor: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18"/><circle cx="6" cy="6.5" r=".5" fill="currentColor"/><circle cx="8" cy="6.5" r=".5" fill="currentColor"/><circle cx="10" cy="6.5" r=".5" fill="currentColor"/></svg>`,
+};
+---
+
+<Layout
+  title="Social Commerce in China | Douyin, WeChat, RED, KOL & Livestream | Beyond Border Group"
+  description="We grow your brand through social commerce in China. Douyin, WeChat, RED and Pinduoduo. KOL, KOC and livestream programmes run by a 15-year China team."
+>
+  <article class="scc">
+
+    {/* ---------- HERO ---------- */}
+    <section class="scc-hero">
+      <div class="scc-hero__bg" aria-hidden="true">
+        <img src="/Images/enter-china/social.jpg" alt="" />
+      </div>
+      <div class="scc-hero__overlay" aria-hidden="true"></div>
+
+      <div class="container scc-hero__inner">
+        <nav class="scc-hero__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="/#services">Grow in China</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark">Social commerce</span>
+        <h1 class="scc-hero__title">Grow your business in China through social commerce.</h1>
+        <p class="scc-hero__lead">
+          Douyin, WeChat and RED are where Chinese consumers discover, decide and buy.
+          We build the presence, the creator network and the commerce flows that turn
+          social into your biggest sales channel.
+        </p>
+        <div class="scc-hero__actions">
+          <a href="/contact" class="btn btn--primary">Talk to us</a>
+          <a href="#how-we-work" class="btn btn--ghost-light">See how we work</a>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- HURDLES ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">The challenge</span>
+          <h2>Conquering China's social commerce hurdles</h2>
+          <p class="section-header__lead">
+            Three realities that sink foreign brands before they ever get traction.
+            We help you solve for each one.
+          </p>
+        </header>
+
+        <div class="scc-hurdles">
+          {hurdles.map((h, i) => (
+            <article class="scc-hurdle">
+              <span class="scc-hurdle__n" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+              <h3>{h.title}</h3>
+              <p>{h.desc}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- VALUE + PROMISES ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <div class="scc-value">
+          <div class="scc-value__copy">
+            <span class="eyebrow">What we do</span>
+            <h2>We grow your social commerce presence in China.</h2>
+            <p>
+              With 15 years of expertise, our team has supported global brands and SMEs
+              through the shift from marketplace eCommerce to social-first commerce. We
+              have run creator programmes, livestream studios, WeChat ecosystems and
+              paid social engines. Strong platform relationships and disciplined execution
+              let us deliver tailored strategies that actually move sales.
+            </p>
+            <div class="scc-value__stats">
+              <div>
+                <span class="scc-value__stat-value">15+</span>
+                <span class="scc-value__stat-label">Years of China operations</span>
+              </div>
+              <div>
+                <span class="scc-value__stat-value">3</span>
+                <span class="scc-value__stat-label">Core platforms: Douyin, WeChat, RED</span>
+              </div>
+              <div>
+                <span class="scc-value__stat-value">3</span>
+                <span class="scc-value__stat-label">Offices: Shanghai, HK, Paris</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="scc-promise">
+            <li>
+              <span class="eyebrow">What you can expect</span>
+            </li>
+            {promises.map((p) => (
+              <li class="scc-promise__item">
+                <span class="scc-promise__check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                </span>
+                <div>
+                  <h4>{p.title}</h4>
+                  <p>{p.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- SERVICES ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Our services</span>
+          <h2>Essential services for brands in social commerce</h2>
+          <p class="section-header__lead">
+            Four integrated services that cover content, creators, fulfilment and
+            analytics. You can start with one, we usually recommend all four.
+          </p>
+        </header>
+
+        <div class="scc-services">
+          {services.map((s) => (
+            <article class="scc-service">
+              <span class="scc-service__icon" set:html={icons[s.icon]} />
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- BUSINESS MODELS ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Business models</span>
+          <h2>Three ways to work with us</h2>
+          <p class="section-header__lead">
+            Different brands need different levels of involvement. Pick the engagement
+            that fits your stage, your team and your appetite for risk.
+          </p>
+        </header>
+
+        <div class="scc-models">
+          {models.map((m) => (
+            <article class={`scc-model${m.highlight ? ' scc-model--highlight' : ''}`}>
+              {m.highlight && <span class="scc-model__badge">Most popular</span>}
+              <h3 class="scc-model__title">{m.name}</h3>
+              <p class="scc-model__desc">{m.desc}</p>
+
+              <ul class="scc-model__list">
+                {m.bullets.map((b) => (
+                  <li>{b}</li>
+                ))}
+              </ul>
+
+              <div class="scc-model__pricing">
+                <span class="scc-model__pricing-label">Pricing</span>
+                <span class="scc-model__pricing-value">{m.pricing}</span>
+              </div>
+
+              <a href="/contact" class="btn btn--secondary btn--sm scc-model__cta">Contact us</a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- PLATFORMS ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Platforms</span>
+          <h2>Our social commerce platforms in China</h2>
+          <p class="section-header__lead">
+            Three ecosystems, three different jobs. We run the mix that matches your
+            category and ambition.
+          </p>
+        </header>
+
+        <div class="scc-platforms">
+          {platforms.map((p) => (
+            <a href={p.href} class="scc-platform">
+              <div class="scc-platform__logo">
+                <img src={p.logo} alt={`${p.name} logo`} loading="lazy" decoding="async" />
+              </div>
+              <h3 class="scc-platform__title">
+                {p.name} <span class="scc-platform__cn">{p.cn}</span>
+              </h3>
+              <p class="scc-platform__sub">{p.sub}</p>
+              <span class="scc-platform__cta">Learn more <span aria-hidden="true">→</span></span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- HOW WE WORK ---------- */}
+    <section id="how-we-work" class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">How we work</span>
+          <h2>Navigating social commerce in China</h2>
+          <p class="section-header__lead">
+            From planning to peak shopping festivals, three phases that turn a launch
+            into a real business.
+          </p>
+        </header>
+
+        <ol class="scc-steps">
+          {steps.map((s) => (
+            <li class="scc-step">
+              <span class="scc-step__n">{s.n}</span>
+              <h3 class="scc-step__title">{s.title}</h3>
+              <p class="scc-step__desc">{s.desc}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    {/* ---------- FAQ ---------- */}
+    <section class="section">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions about social commerce in China</h2>
+        </header>
+
+        <div class="scc-faq">
+          {faqs.map((f, i) => (
+            <details class="scc-faq__item" open={i === 0}>
+              <summary class="scc-faq__q">
+                <span>{f.q}</span>
+                <span class="scc-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="scc-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- RELATED SERVICES ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--split">
+          <div>
+            <span class="eyebrow">More ways we can help</span>
+            <h2>Our marketing and eCommerce services in China</h2>
+          </div>
+          <a href="/work" class="btn btn--secondary btn--sm">See our work</a>
+        </header>
+
+        <div class="grid grid-3">
+          {moreWays.map((c) => (
+            <a href={c.href} class="work-card">
+              <div class="work-card__image">
+                <img src={c.image} alt="" loading="lazy" decoding="async" width="600" height="400" />
+              </div>
+              <div class="work-card__body">
+                <span class="work-card__tag">{c.tag}</span>
+                <h3 class="work-card__title">{c.title}</h3>
+                <p class="work-card__summary">{c.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- INSIGHTS ---------- */}
+    {pageInsights.length > 0 && (
+      <section class="section">
+        <div class="container">
+          <header class="section-header section-header--split">
+            <div>
+              <span class="eyebrow">Insights</span>
+              <h2>China marketing insights</h2>
+            </div>
+            <a href="/insights" class="btn btn--secondary btn--sm">See more</a>
+          </header>
+
+          <div class="grid grid-3">
+            {pageInsights.map((post) => (
+              <a href={`/insights/${post.id}`} class="insight-card">
+                <div class="insight-card__image">
+                  {post.data.heroImage && (
+                    <img src={post.data.heroImage} alt={post.data.heroImageAlt} loading="lazy" decoding="async" width="600" height="400" />
+                  )}
+                </div>
+                <div class="insight-card__body">
+                  <span class="insight-card__tag">{post.data.category}</span>
+                  <h3 class="insight-card__title">{post.data.title}</h3>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="scc-cta">
+          <span class="eyebrow eyebrow--on-dark">Let's talk</span>
+          <h2 class="scc-cta__title">Ready to turn Chinese social into a sales channel?</h2>
+          <p class="scc-cta__lead">
+            Tell us where you are today and where you want to be. Real humans on our side,
+            no funnel, no forms that never get read.
+          </p>
+          <div class="scc-cta__actions">
+            <a href="/contact" class="btn scc-cta__btn-primary">Contact us</a>
+            <a href="/work" class="btn scc-cta__btn-ghost">See our case studies</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    /* ---------- Narrow container helper ---------- */
+    .scc .container--narrow { max-width: 880px; }
+
+    /* ---------- HERO ---------- */
+    .scc-hero {
+      position: relative;
+      min-height: clamp(520px, 64vh, 680px);
+      display: flex;
+      align-items: center;
+      padding: clamp(96px, 12vh, 140px) 0 clamp(64px, 10vh, 120px);
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .scc-hero__bg { position: absolute; inset: 0; z-index: -2; }
+    .scc-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .scc-hero__overlay {
+      position: absolute; inset: 0; z-index: -1;
+      background: linear-gradient(110deg,
+        rgba(8, 20, 32, 0.88) 0%,
+        rgba(8, 20, 32, 0.68) 45%,
+        rgba(8, 20, 32, 0.32) 100%);
+    }
+    .scc-hero__inner { max-width: 880px; position: relative; }
+    .scc-hero__crumbs {
+      margin-bottom: var(--space-5);
+      font-size: var(--fs-small);
+      display: flex; gap: 0.5rem; align-items: center;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .scc-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .scc-hero__crumbs a:hover { color: var(--bbg-white); }
+    .scc-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: #9DDBF5;
+    }
+    .scc-hero__title {
+      font-size: clamp(2.25rem, 3.6vw + 1rem, 4rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-5);
+      max-width: 22ch;
+      text-wrap: balance;
+    }
+    .scc-hero__lead {
+      font-size: clamp(1.0625rem, 0.6vw + 1rem, 1.3125rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.92);
+      max-width: 58ch;
+      margin: 0 0 var(--space-6);
+    }
+    .scc-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+
+    /* ---------- HURDLES ---------- */
+    .scc-hurdles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+    }
+    .scc-hurdle {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .scc-hurdle:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .scc-hurdle__n {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--bbg-blue);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-4);
+      font-feature-settings: "tnum";
+    }
+    .scc-hurdle h3 {
+      font-size: 1.25rem;
+      line-height: 1.25;
+      margin: 0 0 var(--space-3);
+      letter-spacing: -0.005em;
+    }
+    .scc-hurdle p {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .scc-hurdles { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- VALUE + PROMISES ---------- */
+    .scc-value {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .scc-value__copy h2 {
+      font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin: var(--space-3) 0 var(--space-4);
+    }
+    .scc-value__copy p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0 0 var(--space-6);
+    }
+    .scc-value__stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+      padding-top: var(--space-5);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .scc-value__stat-value {
+      display: block;
+      font-size: clamp(1.875rem, 1.6vw + 1rem, 2.5rem);
+      font-weight: 700;
+      color: var(--bbg-blue);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      font-feature-settings: "tnum";
+    }
+    .scc-value__stat-label {
+      display: block;
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      line-height: 1.35;
+    }
+    .scc-promise {
+      list-style: none;
+      padding: var(--space-6);
+      margin: 0;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .scc-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .scc-promise__item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+    }
+    .scc-promise__check {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .scc-promise__check svg { width: 16px; height: 16px; }
+    .scc-promise__item h4 {
+      font-size: 1.125rem;
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .scc-promise__item p {
+      font-size: 0.975rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .scc-value { grid-template-columns: 1fr; gap: var(--space-6); }
+      .scc-value__stats { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 540px) {
+      .scc-value__stats { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- SERVICES ---------- */
+    .scc-services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-5);
+    }
+    .scc-service {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .scc-service:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .scc-service__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-4);
+    }
+    .scc-service__icon svg { width: 24px; height: 24px; }
+    .scc-service h3 {
+      font-size: 1.1875rem;
+      line-height: 1.25;
+      margin: 0 0 var(--space-3);
+      letter-spacing: -0.005em;
+    }
+    .scc-service p {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 1024px) { .scc-services { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .scc-services { grid-template-columns: 1fr; } }
+
+    /* ---------- BUSINESS MODELS ---------- */
+    .scc-models {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+      align-items: stretch;
+    }
+    .scc-model {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-7);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .scc-model:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .scc-model--highlight {
+      background: linear-gradient(180deg, var(--bbg-blue-light) 0%, var(--bbg-white) 60%);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .scc-model__badge {
+      position: absolute;
+      top: -12px;
+      left: var(--space-7);
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      font-size: var(--fs-label);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4em 0.9em;
+      border-radius: 999px;
+    }
+    .scc-model__title {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+    .scc-model__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .scc-model__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      border-top: 1px solid var(--bbg-border);
+      border-bottom: 1px solid var(--bbg-border);
+      padding: var(--space-4) 0;
+    }
+    .scc-model__list li {
+      position: relative;
+      padding-left: 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .scc-model__list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+    }
+    .scc-model__pricing { display: flex; flex-direction: column; gap: 0.25rem; }
+    .scc-model__pricing-label {
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+    .scc-model__pricing-value {
+      font-size: 1rem;
+      color: var(--bbg-ink);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .scc-model__cta { align-self: flex-start; margin-top: auto; }
+    @media (max-width: 1024px) {
+      .scc-models { grid-template-columns: 1fr; }
+      .scc-model { padding: var(--space-6); }
+    }
+
+    /* ---------- PLATFORMS ---------- */
+    .scc-platforms {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+    }
+    .scc-platform {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-3);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      color: var(--bbg-ink);
+      transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .scc-platform:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+      color: var(--bbg-ink);
+    }
+    .scc-platform__logo {
+      width: 64px;
+      height: 64px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--bbg-surface);
+      padding: 10px;
+      margin-bottom: var(--space-2);
+    }
+    .scc-platform__logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .scc-platform__title {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin: 0;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+    .scc-platform__cn {
+      font-size: 0.95rem;
+      color: var(--bbg-text-muted);
+      font-weight: 500;
+    }
+    .scc-platform__sub {
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+      flex-grow: 1;
+    }
+    .scc-platform__cta {
+      font-size: var(--fs-small);
+      color: var(--bbg-blue);
+      font-weight: 600;
+      margin-top: var(--space-2);
+    }
+    .scc-platform:hover .scc-platform__cta span { display: inline-block; transform: translateX(4px); transition: transform var(--dur) var(--ease); }
+    @media (max-width: 900px) { .scc-platforms { grid-template-columns: 1fr; } }
+
+    /* ---------- STEPS ---------- */
+    .scc-steps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+      counter-reset: step;
+    }
+    .scc-step {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .scc-step:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .scc-step__n {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--bbg-blue);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-4);
+      font-feature-settings: "tnum";
+    }
+    .scc-step__title {
+      font-size: 1.375rem;
+      line-height: 1.25;
+      margin: 0 0 var(--space-3);
+      letter-spacing: -0.01em;
+    }
+    .scc-step__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 900px) { .scc-steps { grid-template-columns: 1fr; } }
+
+    /* ---------- FAQ ---------- */
+    .scc-faq {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .scc-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color var(--dur) var(--ease);
+    }
+    .scc-faq__item[open] { border-color: var(--bbg-blue); }
+    .scc-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .scc-faq__q::-webkit-details-marker { display: none; }
+    .scc-faq__q::marker { display: none; }
+    .scc-faq__item:hover .scc-faq__q { color: var(--bbg-blue); }
+    .scc-faq__icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bbg-text-muted);
+      transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+    }
+    .scc-faq__item[open] .scc-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-blue);
+    }
+    .scc-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+    .scc-faq__a p { margin: 0; }
+
+    /* ---------- FINAL CTA ---------- */
+    .scc-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .scc-cta::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .scc-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .scc-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .scc-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 52ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .scc-cta__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .scc-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .scc-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .scc-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .scc-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
+</Layout>

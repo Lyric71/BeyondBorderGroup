@@ -174,6 +174,12 @@ export default defineConfig({
       destination: '/work',
     },
 
+    // Market entry consulting service page (WP sales page -> Astro service page)
+    '/china-cross-border-ecommerce-entry-consulting': {
+      status: 301,
+      destination: '/enter-china/market-entry-consulting',
+    },
+
     // All 23 individual case studies: /case-study/<wp-slug> -> /work/<slug>
     ...caseStudyRedirects,
   },

@@ -1,0 +1,938 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const phases = [
+  {
+    n: '01',
+    title: 'Market and regulatory diagnosis',
+    intro:
+      'We evaluate whether your product can legally sell through Cross-Border eCommerce and assess the competitive landscape.',
+    does: [
+      'CBEC eligibility assessment (formulation, packaging, labeling compliance)',
+      'Regulatory environment analysis and compliance requirements',
+      'Competitive landscape mapping and positioning analysis',
+      'Market opportunity sizing with realistic demand projections',
+    ],
+    deliverables: [
+      'Feasibility and compliance checklist',
+      'Competitor benchmark report',
+      'Price positioning analysis',
+      'Opportunity sizing with demand projections',
+    ],
+  },
+  {
+    n: '02',
+    title: 'Channel and consumer model assessment',
+    intro:
+      'We assess platform options and determine which distribution model makes commercial sense for your product.',
+    does: [
+      'Platform evaluation (Tmall Global, JD Worldwide, Douyin, RED)',
+      'Bonded warehouse vs. direct-mail logistics assessment',
+      'Consumer price sensitivity analysis',
+      'Platform-specific requirement mapping',
+    ],
+    deliverables: [
+      'Channel matrix with platform strengths and weaknesses',
+      'Operations flow diagram',
+      'Pricing validation across distribution models',
+      'Consumer insight report based on category research',
+    ],
+  },
+  {
+    n: '03',
+    title: 'Competitor deep-dive',
+    intro:
+      'We analyze how successful brands operate in your category across the dimensions that actually move the needle.',
+    does: [
+      'Portfolio structure analysis (device coverage, SKU breadth)',
+      'Pricing ladder mapping (price points, promotional mechanics)',
+      'Bundling strategy evaluation (AOV tactics)',
+      'Store presence audit (merchandising on Tmall and JD)',
+      'Content and social analysis (proof formats, platform strategies)',
+    ],
+    deliverables: [
+      'Competitor benchmark book (presentation deck)',
+      'Competitor scorecards (1 page each: positioning, hero SKUs, pricing, platform strengths)',
+      'Competitor eComm data tables (Excel annexes)',
+    ],
+  },
+  {
+    n: '04',
+    title: 'Financial model and strategy blueprint',
+    intro:
+      'We build the complete business case with transparent cost structures and a decision-ready recommendation.',
+    does: [
+      'Import cost modeling (COGS and cross-border logistics)',
+      'Platform and payment fee structures',
+      'Distribution model comparison (Sell-in vs. Sell-out economics)',
+      'Marketing budget framework',
+      '12-month roadmap development',
+    ],
+    deliverables: [
+      'Full China Market Entry Blueprint (comprehensive presentation)',
+      'Financial model (Excel with scenario planning)',
+      'Go or No-Go recommendation with supporting analysis',
+    ],
+  },
+  {
+    n: '05',
+    title: 'Distributor sourcing and negotiation',
+    intro:
+      'For brands choosing the distributor partnership model, we identify qualified operators and negotiate on your behalf.',
+    does: [
+      'Distributor longlist development (8 to 12 candidates from our network)',
+      'RFP management and operational due diligence',
+      'Shortlist evaluation (2 to 3 finalists)',
+      'Commercial term negotiation',
+      'Contract structuring and onboarding coordination',
+    ],
+    deliverables: [
+      'Distributor longlist with initial screening',
+      'Finalist scorecards with capability assessment',
+      'Negotiated contract terms',
+      'Partnership governance framework',
+    ],
+  },
+];
+
+const models = [
+  {
+    name: 'Sell in',
+    sub: 'Distributor partnership',
+    desc: 'You sell products to a qualified CBEC distributor at wholesale pricing. They purchase inventory, own operational risk, and manage all in-market operations.',
+    youGet: ['Wholesale revenue', 'Zero inventory risk', 'Immediate cash flow'],
+    they: ['Platform operations', 'Marketing', 'Logistics', 'Customer service'],
+    fit: 'Market validation. Brands without Asia teams. Categories requiring specialized expertise.',
+  },
+  {
+    name: 'Sell out',
+    sub: 'Direct operations',
+    desc: 'Your brand owns the complete China operation. You finance inventory, control all touchpoints, and manage platform and logistics relationships.',
+    youGet: ['Full retail revenue', 'Complete brand control', 'Customer data ownership'],
+    they: ['Inventory financing', 'Platform operations', 'Marketing execution', 'Operational costs'],
+    fit: 'Long-term strategic commitment. Brands wanting complete control.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'What is Cross-Border eCommerce (CBEC)?',
+    a: "CBEC lets you sell in China without full domestic registration. Products ship from bonded warehouses and clear customs at the consumer level. You access online platforms (JD Worldwide, Tmall Global, Douyin, RED) but not offline retail or domestic eCommerce until you complete NMPA or SAMR registration. It's market validation before full infrastructure investment.",
+  },
+  {
+    q: 'Can my product sell through CBEC?',
+    a: 'Depends on your category and claims. Anti-aging cosmetics need NMPA special-use registration. Health supplements with functional ingredients require SAMR approval. Medical devices have strict classifications. We evaluate CBEC eligibility in Phase 1 before you invest time or capital.',
+  },
+  {
+    q: "What if I can't use my home market product claims in China?",
+    a: 'This happens often. "Diabetic wound care" becomes "fragile skin daily care." "Immune support" may need health food registration. We adapt positioning to meet platform requirements without diluting brand value. The key is knowing what platforms approve before you launch.',
+  },
+  {
+    q: 'Which distribution model should I choose?',
+    a: "Start with a distributor partnership if you're testing market fit. They buy inventory upfront, you get immediate cash flow, zero inventory risk. Direct operations make sense once you've proven demand and complete control over customer data, pricing, and brand positioning justifies the higher capital requirements and operational complexity.",
+  },
+  {
+    q: 'How do you source distributors?',
+    a: 'We work with a network across beauty, consumer tech, F&B, and health categories. We evaluate distributors on category expertise, platform track record, and brand fit. You meet finalists. We negotiate terms and structure contracts that protect your interests.',
+  },
+  {
+    q: 'Do I need a legal entity in China?',
+    a: 'Through a distributor: no. The distributor uses their own licenses and assumes regulatory responsibilities. For direct operations: yes, but not necessarily your own company. Chinese regulations require any foreign brand selling directly through cross-border eCommerce to designate a domestic service provider (境内服务商). This registered Chinese entity files with customs, transmits regulatory data, and assumes joint legal liability with your brand. You have two options: establish your own Chinese entity or work with a qualified third-party service provider. We evaluate with you which structure best fits your strategy and control objectives.',
+  },
+  {
+    q: 'What information do you need from us to start?',
+    a: 'Product specifications, packaging details, current pricing, regulatory certifications from your home market, and your China objective (market validation vs. strategic expansion). More detail upfront means faster feasibility assessment.',
+  },
+  {
+    q: 'What does this cost?',
+    a: 'Fees depend on engagement scope and are structured in phases. You can evaluate findings before committing to full market entry. We discuss budget during initial scoping conversations based on your specific situation and objectives.',
+  },
+  {
+    q: 'What if my product was already rejected by a platform?',
+    a: 'We review the rejection reason and evaluate if repositioning solves it or if a different platform or model works better. Sometimes rejection is fixable (claims language), sometimes it is structural (category restrictions). We give you a clear answer either way.',
+  },
+  {
+    q: 'What do I get at the end of the engagement?',
+    a: 'Everything needed for a board-level Go or No-Go decision: regulatory feasibility assessment, competitive analysis, financial model, distribution strategy, and either a qualified distributor partnership or an operational framework for direct operations. You decide if and when to launch.',
+  },
+];
+
+---
+
+<Layout
+  title="China Market Entry Consulting | Cross-Border eCommerce | Beyond Border Group"
+  description="Market entry consulting for brands going to China. Cross-Border eCommerce feasibility, channel strategy, competitor deep-dive, financial modeling, and distributor sourcing."
+>
+  <article class="mec">
+    {/* ---------- HERO ---------- */}
+    <section class="mec-hero">
+      <div class="mec-hero__bg" aria-hidden="true">
+        <img src="/Images/team/team-photo.png" alt="" />
+      </div>
+      <div class="mec-hero__overlay" aria-hidden="true"></div>
+
+      <div class="container mec-hero__inner">
+        <nav class="mec-hero__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="/#services">Enter China</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark">Enter China</span>
+        <h1 class="mec-hero__title">China Cross-Border eCommerce Market Entry</h1>
+        <p class="mec-hero__lead">
+          We build the foundation for your China launch through Cross-Border eCommerce
+          or distributor models. The analysis, the business model, the partners, and the
+          operational framework you need to enter the market.
+        </p>
+        <div class="mec-hero__actions">
+          <a href="/contact" class="btn btn--primary">Talk to us</a>
+          <a href="#how-we-work" class="btn btn--ghost-light">See how we work</a>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- APPROACH INTRO ---------- */}
+    <section class="section">
+      <div class="container">
+        <div class="mec-approach">
+          <div class="mec-approach__card">
+            <span class="eyebrow">Our approach</span>
+            <h2>Strategy that actually gets used.</h2>
+            <p>
+              Most brands approaching China get strategy decks that sit in drawers.
+              We're different. Every recommendation we make is backed by operational
+              experience and tested against the platforms, the regulations and the
+              partners you will actually work with.
+            </p>
+          </div>
+          <div class="mec-approach__card mec-approach__card--alt">
+            <span class="eyebrow">Market entry architects</span>
+            <h2>Blueprints you can build from.</h2>
+            <p>
+              We are consultants who know China because we have run operations there.
+              Think of us as your China market entry architects. We design the
+              blueprint, source the partners, and set up the framework. You decide if
+              and when to build.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- HOW WE WORK / PHASES ---------- */}
+    <section id="how-we-work" class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">How we work</span>
+          <h2>Five phases from question to answer</h2>
+          <p class="section-header__lead">
+            A structured engagement that moves you from "should we enter China" to a
+            decision-ready plan. Each phase ends with deliverables you can act on.
+          </p>
+        </header>
+
+        <ol class="mec-phases">
+          {phases.map((p) => (
+            <li class="mec-phase">
+              <div class="mec-phase__n">
+                <span>{p.n}</span>
+              </div>
+              <div class="mec-phase__body">
+                <h3 class="mec-phase__title">{p.title}</h3>
+                <p class="mec-phase__intro">{p.intro}</p>
+                <div class="mec-phase__grid">
+                  <div>
+                    <span class="mec-phase__label">What we do</span>
+                    <ul class="mec-phase__list">
+                      {p.does.map((x) => <li>{x}</li>)}
+                    </ul>
+                  </div>
+                  <div>
+                    <span class="mec-phase__label mec-phase__label--blue">Deliverables</span>
+                    <ul class="mec-phase__list mec-phase__list--blue">
+                      {p.deliverables.map((x) => <li>{x}</li>)}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    {/* ---------- DISTRIBUTION MODELS ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Decision point</span>
+          <h2>Sell in, or sell out. Two distribution models.</h2>
+          <p class="section-header__lead">
+            Your China market entry strategy hinges on one fundamental decision:
+            partner with a distributor, or build your own operations.
+          </p>
+        </header>
+
+        <div class="mec-models">
+          {models.map((m) => (
+            <article class="mec-model">
+              <header class="mec-model__head">
+                <span class="mec-model__tag">{m.name}</span>
+                <h3 class="mec-model__title">{m.sub}</h3>
+              </header>
+              <p class="mec-model__desc">{m.desc}</p>
+
+              <div class="mec-model__grid">
+                <div>
+                  <span class="mec-model__label">You receive</span>
+                  <ul>{m.youGet.map((x) => <li>{x}</li>)}</ul>
+                </div>
+                <div>
+                  <span class="mec-model__label">{m.name === 'Sell in' ? 'Distributor handles' : 'You manage'}</span>
+                  <ul>{m.they.map((x) => <li>{x}</li>)}</ul>
+                </div>
+              </div>
+
+              <div class="mec-model__fit">
+                <span class="mec-model__label">Best for</span>
+                <p>{m.fit}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <p class="mec-models__close">
+          We help you choose which model fits your commercial objectives and capabilities.
+        </p>
+      </div>
+    </section>
+
+    {/* ---------- WHY BRANDS CHOOSE US ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <div class="mec-why">
+          <div class="mec-why__visual">
+            <img src="/Images/enter-china/team.png" alt="Beyond Border Group consulting team in China" loading="lazy" decoding="async" />
+          </div>
+          <div class="mec-why__copy">
+            <span class="eyebrow">Why brands choose us</span>
+            <h2>Most China consultants haven't actually run operations there. We have.</h2>
+            <p>
+              Our team includes former Publicis Commerce China leadership who built
+              eCommerce practices for GSK, Nestlé, Ferrero and Beiersdorf. We have
+              managed platform relationships, negotiated with distributors, filed
+              compliance documents, and run campaigns across Tmall, JD, Douyin and RED.
+            </p>
+            <blockquote class="mec-why__quote">
+              We consult based on operational experience, not research reports.
+            </blockquote>
+            <p>
+              We know which distributors perform because we have evaluated their
+              operations. We know what platforms require because we have submitted the
+              applications. We know how to position products in regulatory grey zones
+              because we have navigated those situations for global beauty brands,
+              international F&amp;B companies, and medical device manufacturers
+              entering China, to name a few.
+            </p>
+
+            <ul class="mec-why__stats">
+              <li>
+                <span class="mec-why__stat-value">20+</span>
+                <span class="mec-why__stat-label">Years of China operations</span>
+              </li>
+              <li>
+                <span class="mec-why__stat-value">3</span>
+                <span class="mec-why__stat-label">Offices: Shanghai, Hong Kong, Paris</span>
+              </li>
+              <li>
+                <span class="mec-why__stat-value">23</span>
+                <span class="mec-why__stat-label">Case studies published</span>
+              </li>
+            </ul>
+
+            <a href="/about" class="btn btn--ghost">Meet the team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FAQ ---------- */}
+    <section class="section">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions</h2>
+        </header>
+
+        <div class="mec-faq">
+          {faqs.map((f, i) => (
+            <details class="mec-faq__item" open={i === 0}>
+              <summary class="mec-faq__q">
+                <span>{f.q}</span>
+                <span class="mec-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="mec-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="mec-cta">
+          <span class="eyebrow eyebrow--on-dark">Let's talk</span>
+          <h2 class="mec-cta__title">Thinking about expanding your brand to China?</h2>
+          <p class="mec-cta__lead">
+            Tell us where you are today and where you'd like to be.
+            Real humans on our side, no sales funnel, no forms that never get read.
+          </p>
+          <div class="mec-cta__actions">
+            <a href="/contact" class="btn mec-cta__btn-primary">Start the conversation</a>
+            <a href="/work" class="btn mec-cta__btn-ghost">See our case studies</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    /* ---------- HERO ---------- */
+    .mec-hero {
+      position: relative;
+      min-height: clamp(520px, 68vh, 720px);
+      display: flex;
+      align-items: center;
+      padding: clamp(96px, 12vh, 140px) 0 clamp(64px, 10vh, 120px);
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .mec-hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+    }
+    .mec-hero__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .mec-hero__overlay {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(110deg,
+        rgba(8, 20, 32, 0.88) 0%,
+        rgba(8, 20, 32, 0.7) 45%,
+        rgba(8, 20, 32, 0.35) 100%);
+    }
+    .mec-hero__inner {
+      max-width: 880px;
+      position: relative;
+    }
+    .mec-hero__crumbs {
+      margin-bottom: var(--space-5);
+      font-size: var(--fs-small);
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .mec-hero__crumbs a {
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+    }
+    .mec-hero__crumbs a:hover { color: var(--bbg-white); }
+    .mec-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: #9DDBF5;
+    }
+    .mec-hero__title {
+      font-size: clamp(2.5rem, 4vw + 1rem, 4.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-5);
+      max-width: 16ch;
+      text-wrap: balance;
+    }
+    .mec-hero__lead {
+      font-size: clamp(1.125rem, 0.75vw + 1rem, 1.375rem);
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.92);
+      max-width: 58ch;
+      margin: 0 0 var(--space-6);
+      font-weight: 400;
+    }
+    .mec-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
+
+    /* ---------- APPROACH INTRO ---------- */
+    .mec-approach {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-6);
+    }
+    .mec-approach__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-7);
+    }
+    .mec-approach__card--alt {
+      background: var(--bbg-blue-light);
+      border-color: transparent;
+    }
+    .mec-approach__card h2 {
+      font-size: clamp(1.5rem, 1.5vw + 0.875rem, 2rem);
+      line-height: 1.2;
+      margin: var(--space-3) 0 var(--space-4);
+      letter-spacing: -0.01em;
+    }
+    .mec-approach__card p {
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1.0625rem;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .mec-approach { grid-template-columns: 1fr; }
+      .mec-approach__card { padding: var(--space-6); }
+    }
+
+    /* ---------- SECTION HEADER LEAD ---------- */
+    .section-header__lead {
+      max-width: 60ch;
+      margin: var(--space-4) auto 0;
+      color: var(--bbg-text-muted);
+      line-height: 1.6;
+      font-size: 1.0625rem;
+    }
+
+    /* ---------- PHASES ---------- */
+    .mec-phases {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: phase;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .mec-phase {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: var(--space-5);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      align-items: start;
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .mec-phase:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .mec-phase__n {
+      font-size: clamp(3rem, 5vw + 1rem, 5rem);
+      font-weight: 700;
+      line-height: 1;
+      color: var(--bbg-blue);
+      letter-spacing: -0.03em;
+      font-feature-settings: "tnum";
+    }
+    .mec-phase__title {
+      font-size: clamp(1.375rem, 1vw + 1rem, 1.75rem);
+      line-height: 1.2;
+      color: var(--bbg-ink);
+      margin: 0 0 var(--space-3);
+      letter-spacing: -0.01em;
+      font-weight: 700;
+    }
+    .mec-phase__intro {
+      color: var(--bbg-text);
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      margin: 0 0 var(--space-5);
+    }
+    .mec-phase__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-6);
+    }
+    .mec-phase__label {
+      display: block;
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .mec-phase__label--blue { color: var(--bbg-blue); }
+    .mec-phase__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .mec-phase__list li {
+      position: relative;
+      padding-left: 1.5rem;
+      color: var(--bbg-text);
+      line-height: 1.5;
+      font-size: 0.975rem;
+    }
+    .mec-phase__list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+    }
+    .mec-phase__list--blue li::before { background: var(--bbg-blue); }
+
+    @media (max-width: 900px) {
+      .mec-phase {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+        padding: var(--space-5);
+      }
+      .mec-phase__n { font-size: 3rem; }
+      .mec-phase__grid { grid-template-columns: 1fr; gap: var(--space-5); }
+    }
+
+    /* ---------- DISTRIBUTION MODELS ---------- */
+    .mec-models {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    .mec-model {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-7);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .mec-model:nth-child(2) {
+      background: linear-gradient(180deg, var(--bbg-blue-light) 0%, var(--bbg-white) 100%);
+      border-color: var(--bbg-blue);
+    }
+    .mec-model__head {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+    }
+    .mec-model__tag {
+      font-size: var(--fs-label);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-white);
+      padding: 0.3em 0.75em;
+      border-radius: 999px;
+      border: 1px solid var(--bbg-blue);
+    }
+    .mec-model:nth-child(2) .mec-model__tag {
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      border-color: var(--bbg-blue);
+    }
+    .mec-model__title {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      color: var(--bbg-ink);
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+    .mec-model__desc {
+      color: var(--bbg-text);
+      line-height: 1.6;
+      font-size: 1.0625rem;
+      margin: 0;
+    }
+    .mec-model__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-5);
+      padding: var(--space-4) 0;
+      border-top: 1px solid var(--bbg-border);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .mec-model__label {
+      display: block;
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .mec-model__grid ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .mec-model__grid li {
+      padding-left: 1.25rem;
+      position: relative;
+      color: var(--bbg-text);
+      font-size: 0.975rem;
+      line-height: 1.4;
+    }
+    .mec-model__grid li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.45em;
+      width: 12px;
+      height: 2px;
+      background: var(--bbg-blue);
+      border-radius: 2px;
+    }
+    .mec-model__fit p {
+      margin: 0;
+      font-size: 0.975rem;
+      color: var(--bbg-text);
+      line-height: 1.5;
+    }
+    .mec-models__close {
+      text-align: center;
+      margin: var(--space-6) 0 0;
+      color: var(--bbg-text-muted);
+      font-size: 1.0625rem;
+      max-width: 52ch;
+      margin-inline: auto;
+    }
+    @media (max-width: 900px) {
+      .mec-models { grid-template-columns: 1fr; }
+      .mec-model { padding: var(--space-6); }
+      .mec-model__grid { grid-template-columns: 1fr; gap: var(--space-4); }
+    }
+
+    /* ---------- WHY BRANDS CHOOSE US ---------- */
+    .mec-why {
+      display: grid;
+      grid-template-columns: minmax(280px, 1fr) minmax(0, 1.4fr);
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .mec-why__visual {
+      position: sticky;
+      top: 120px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--bbg-border);
+      background: var(--bbg-surface);
+    }
+    .mec-why__visual img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .mec-why__copy h2 {
+      font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin: var(--space-3) 0 var(--space-5);
+    }
+    .mec-why__copy p {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--bbg-text);
+      margin: 0 0 var(--space-4);
+    }
+    .mec-why__quote {
+      margin: var(--space-6) 0;
+      padding: var(--space-4) var(--space-5);
+      border-left: 3px solid var(--bbg-blue);
+      background: var(--bbg-white);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      color: var(--bbg-ink);
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: -0.01em;
+    }
+    .mec-why__stats {
+      list-style: none;
+      padding: var(--space-5) 0;
+      margin: var(--space-5) 0;
+      border-top: 1px solid var(--bbg-border);
+      border-bottom: 1px solid var(--bbg-border);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    .mec-why__stat-value {
+      display: block;
+      font-size: clamp(2rem, 2vw + 1rem, 2.75rem);
+      font-weight: 700;
+      line-height: 1;
+      color: var(--bbg-blue);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      font-feature-settings: "tnum";
+    }
+    .mec-why__stat-label {
+      display: block;
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      line-height: 1.35;
+    }
+    @media (max-width: 900px) {
+      .mec-why { grid-template-columns: 1fr; }
+      .mec-why__visual { position: static; max-width: 480px; margin-bottom: var(--space-5); }
+      .mec-why__stats { grid-template-columns: 1fr; gap: var(--space-4); }
+    }
+
+    /* ---------- FAQ ---------- */
+    .mec-faq {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .mec-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color var(--dur) var(--ease);
+    }
+    .mec-faq__item[open] {
+      border-color: var(--bbg-blue);
+    }
+    .mec-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .mec-faq__q::-webkit-details-marker { display: none; }
+    .mec-faq__q::marker { display: none; }
+    .mec-faq__item:hover .mec-faq__q { color: var(--bbg-blue); }
+    .mec-faq__icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bbg-text-muted);
+      transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+    }
+    .mec-faq__item[open] .mec-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-blue);
+    }
+    .mec-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+    .mec-faq__a p { margin: 0; }
+
+    /* ---------- FINAL CTA ---------- */
+    .mec-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .mec-cta::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .mec-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .mec-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .mec-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 52ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .mec-cta__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .mec-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .mec-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .mec-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .mec-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
+</Layout>

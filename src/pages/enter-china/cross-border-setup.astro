@@ -1,0 +1,1320 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const promises = [
+  {
+    title: 'Data driven market entry',
+    desc: 'Strategy, positioning and pricing built on category data and platform reality, not assumptions.',
+  },
+  {
+    title: 'Real understanding of the local shopper',
+    desc: 'We know how Chinese consumers buy across Tmall, JD, Douyin, RED and WeChat, and what makes them choose one brand over another.',
+  },
+  {
+    title: 'Privileged platform relationships',
+    desc: '15 years of working with platforms and distributors. We open doors faster, and we know who actually delivers.',
+  },
+];
+
+const services = [
+  {
+    icon: 'store',
+    title: 'Marketplace',
+    desc: 'For over 15 years we have managed China eCommerce marketplaces for global brands. A data driven strategy boosts your sales growth and margins on Tmall, Taobao, JD and Pinduoduo.',
+  },
+  {
+    icon: 'bag',
+    title: 'DTC, Direct to Consumers',
+    desc: 'We attract visitors to your DTC store in China through a mix of free, paid and earned traffic. In China, DTC success hinges on WeChat and leverages private traffic.',
+  },
+  {
+    icon: 'truck',
+    title: 'Distribution',
+    desc: 'Our network of online and offline distributors spans every region of China. We find the right distributor for your product and your category.',
+  },
+  {
+    icon: 'broadcast',
+    title: 'Social commerce',
+    desc: 'Social commerce is the primary driver of commerce growth in China. We run large-scale campaigns with KOLs and KOCs on Douyin and TikTok to sell your products.',
+  },
+];
+
+const models = [
+  {
+    name: 'Marketing agency',
+    desc: 'You keep ownership of the China operation, we run the marketing engine that feeds it.',
+    bullets: [
+      'Design and content for marketplaces and social commerce',
+      'eCommerce campaigns for festivals like 11.11 and 6.18',
+      'Media buying optimised for ROI',
+    ],
+    pricing: 'Agency fees based on service complexity',
+    highlight: false,
+  },
+  {
+    name: 'TP, Trade Partner',
+    desc: 'We operate your stores end-to-end on Tmall, JD and Douyin under our China licenses.',
+    bullets: [
+      'Store design, content and merchandising',
+      'Media management, order processing and logistics',
+      'Customer service and after-sales support',
+    ],
+    pricing: 'Monthly fixed fee per store, plus commission on sales',
+    highlight: true,
+  },
+  {
+    name: 'Distributor',
+    desc: 'We act as your master exclusive distributor for China, buying and managing inventory.',
+    bullets: [
+      'Marketing, sales, logistics and inventory management',
+      'Online and offline distribution, direct and indirect',
+      'Single point of accountability for the China P&L',
+    ],
+    pricing: 'Growth margin on products',
+    highlight: false,
+  },
+];
+
+const cases = [
+  {
+    title: 'iGuzzini',
+    sub: 'Luxury lighting in China',
+    desc: 'Tmall and content strategy for an Italian architectural lighting house entering Chinese A&D.',
+    href: '/work',
+  },
+  {
+    title: 'Kerry Food',
+    sub: 'DaVinci gourmet on Tmall',
+    desc: 'Tmall flagship and growth playbook for premium syrups, sauces and smoothies in China.',
+    href: '/work',
+  },
+  {
+    title: 'Viessmann',
+    sub: 'Heating solutions on Tmall',
+    desc: 'Tmall eCommerce build and operations for a German heating and boiling solutions leader.',
+    href: '/work',
+  },
+];
+
+const platforms = [
+  {
+    name: 'Douyin',
+    cn: '抖音',
+    sub: 'Official Tiktok and Douyin Marketing Partner',
+    logo: '/Images/platforms/douyin-logo.svg',
+    href: '/learn-china/platforms',
+  },
+  {
+    name: 'Tmall',
+    cn: '天猫',
+    sub: '15+ years on the platform, certified TP',
+    logo: '/Images/platforms/tmall-logo.svg',
+    href: '/learn-china/platforms',
+  },
+  {
+    name: 'Jing Dong',
+    cn: '京东',
+    sub: 'Marketplace or retail distribution, we manage both',
+    logo: '/Images/platforms/jd-logo.png',
+    href: '/learn-china/platforms',
+  },
+  {
+    name: 'WeChat',
+    cn: '微信',
+    sub: 'eCommerce and loyalty mini-programs',
+    logo: '/Images/platforms/wechat-logo.svg',
+    href: '/learn-china/platforms',
+  },
+];
+
+const steps = [
+  {
+    n: '01',
+    title: 'Plan and research',
+    desc: 'We combine your goals, industry expertise and product with our data insights to craft the optimal eCommerce strategy.',
+  },
+  {
+    n: '02',
+    title: 'Launch and promote',
+    desc: 'We design and open your sales channels in China, then generate traffic through KOL, KOC, paid media and content.',
+  },
+  {
+    n: '03',
+    title: 'Campaign and optimise',
+    desc: 'We run eCommerce campaigns for 11.11, 6.18 and other festivals, and continuously optimise media, operations and sales.',
+  },
+];
+
+const aiBenefits = [
+  {
+    title: 'Better consumer experience',
+    desc: 'AI improves personalisation across the funnel, lifting conversion and shopper satisfaction.',
+  },
+  {
+    title: 'Lower operational cost',
+    desc: 'AI optimises supply chains and logistics, reducing waste and freeing margin.',
+  },
+  {
+    title: 'Digital humans',
+    desc: 'AI-powered virtual hosts run livestreams 24/7 and answer shopper questions in-feed.',
+  },
+  {
+    title: 'AI chatbots',
+    desc: 'Customer service costs drop when chatbots handle routine inquiries, returns and tracking.',
+  },
+  {
+    title: 'AIGC content',
+    desc: 'AI-generated content produces variants for product pages, ads and creator briefs at scale.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'What does it cost to start an eCommerce business in China?',
+    a: 'Costs vary widely with scale and ambition. Initial spend covers store setup, platform deposits, opening inventory, content production and launch media. Plan for ongoing platform fees, logistics, warehousing, customer service and recurring marketing. We give you a transparent budget range during scoping.',
+  },
+  {
+    q: 'How important is social commerce in China?',
+    a: 'It is the engine of growth. Douyin, WeChat and Xiaohongshu integrate shopping with social media so consumers buy inside the app, driven by short video, livestream and KOL recommendations. Most categories now win on social before they win on search.',
+  },
+  {
+    q: 'Can foreign companies sell through cross-border eCommerce without a legal entity in China?',
+    a: 'Yes. Cross-border channels like Tmall Global, JD Worldwide and Douyin Global let foreign companies sell directly to Chinese consumers. Goods ship from bonded warehouses or by direct mail, and platforms handle most of the customs flow.',
+  },
+  {
+    q: 'Is product registration required for cross-border eCommerce?',
+    a: 'For most categories, no. Cross-border channels are exempt from the domestic registration that retail in China requires. Some categories still need NMPA or SAMR approval before they can sell, even cross-border. We assess this in the first phase of every engagement.',
+  },
+  {
+    q: 'What is the latest data on China eCommerce?',
+    a: "China's eCommerce sales are projected to exceed 3 trillion USD in 2024, the largest market in the world by a wide margin. Growth concentrates in social commerce, premium categories and instant retail, while traditional marketplace growth has slowed.",
+  },
+  {
+    q: 'Which categories are growing fastest in China?',
+    a: 'Healthcare, luxury, premium beauty, electronics and fashion lead, supported by rising domestic consumption and a maturing middle class. Functional food, pet care and outdoor are emerging fast in cross-border.',
+  },
+  {
+    q: 'What are the typical operating costs?',
+    a: 'Platform fees, commission, deposit, logistics, warehousing, customer service, content production and ongoing media. Media usually represents the largest variable line. We model the full cost stack so you can compare scenarios.',
+  },
+  {
+    q: 'What is a TP and what does it do?',
+    a: 'A TP, or Tmall Partner, is a certified operator that runs the platform side of your business. The TP manages store operations, marketing, customer service and logistics on your behalf, so you do not need a dedicated China team to launch.',
+  },
+  {
+    q: 'How much does media cost for eCommerce in China?',
+    a: 'Costs depend on platform, category and competitive intensity. Tmall and JD media inflate around 11.11 and 6.18, Douyin and RED move with creator availability. We size budgets against realistic CAC and ROAS targets, not vendor templates.',
+  },
+  {
+    q: 'How do you keep costs under control?',
+    a: 'AI for customer service, AI-driven supply chain analytics, automated creative and disciplined media planning. Technology cuts costs but the bigger lever is choosing the right business model: marketing agency, TP or distributor, depending on your stage and ambition.',
+  },
+];
+
+const moreWays = [
+  {
+    tag: 'Enter China',
+    title: 'Market entry consulting',
+    desc: 'Strategy, business model and partner selection before you launch.',
+    href: '/enter-china/market-entry-consulting',
+    image: '/Images/enter-china/team.png',
+  },
+  {
+    tag: 'Grow in China',
+    title: 'Social commerce',
+    desc: 'Campaigns, KOL partnerships and livestreams that turn social into a revenue channel.',
+    href: '/work',
+    image: '/Images/enter-china/social.jpg',
+  },
+  {
+    tag: 'Grow in China',
+    title: 'Websites in China',
+    desc: 'Sites built to load fast inside the Great Firewall and rank on Baidu and Chinese AI search.',
+    href: '/work',
+    image: '/Images/enter-china/website.jpg',
+  },
+];
+
+const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+const highlightedSlugs = [
+  'foreign-brands-in-china-why-most-market-tests-fail',
+  'science-emotion-chinas-new-brand-playbook',
+  'douyin-live-commerce-2025-store-led-livestream-strategy',
+];
+const pageInsights = highlightedSlugs
+  .map((slug) => allInsights.find((i) => i.id === slug))
+  .filter((i): i is NonNullable<typeof i> => Boolean(i));
+
+const icons: Record<string, string> = {
+  store: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/><path d="M4 9h16"/></svg>`,
+  bag: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>`,
+  truck: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>`,
+  broadcast: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.5 7.5a6 6 0 0 1 0 9M7.5 7.5a6 6 0 0 0 0 9"/><path d="M19.5 4.5a10 10 0 0 1 0 15M4.5 4.5a10 10 0 0 0 0 15"/></svg>`,
+};
+---
+
+<Layout
+  title="Cross-Border eCommerce Setup in China | Tmall Global, JD Worldwide, Douyin | Beyond Border Group"
+  description="We set up and grow your eCommerce in China. Tmall Global, JD Worldwide, Douyin, WeChat and RED, with marketing agency, TP and distributor models. 15 years of operational experience."
+>
+  <article class="cbs">
+
+    {/* ---------- HERO ---------- */}
+    <section class="cbs-hero">
+      <div class="cbs-hero__bg" aria-hidden="true">
+        <img src="/Images/enter-china/ecommerce.jpg" alt="" />
+      </div>
+      <div class="cbs-hero__overlay" aria-hidden="true"></div>
+
+      <div class="container cbs-hero__inner">
+        <nav class="cbs-hero__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="/#services">Enter China</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark">eCommerce in China</span>
+        <h1 class="cbs-hero__title">eCommerce in China, demanding and costly, can become your biggest growth lever.</h1>
+        <p class="cbs-hero__lead">
+          We set up and grow your eCommerce presence in China. Tmall Global, JD Worldwide,
+          Douyin, WeChat and RED. 15 years of operations behind every recommendation.
+        </p>
+        <div class="cbs-hero__actions">
+          <a href="/contact" class="btn btn--primary">Talk to us</a>
+          <a href="#how-we-work" class="btn btn--ghost-light">See how we work</a>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- CONTEXT: LOCALIZATION + COMPETITION ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">eCommerce in China</span>
+          <h2>Two truths to internalise before you launch</h2>
+          <p class="section-header__lead">
+            Most brands enter China with strategies that worked elsewhere. Here is what
+            actually shapes outcomes on the ground.
+          </p>
+        </header>
+
+        <div class="cbs-context">
+          <div class="cbs-context__card">
+            <span class="cbs-context__num" aria-hidden="true">01</span>
+            <h3>eCommerce localization is not translation</h3>
+            <p>
+              To succeed in Chinese eCommerce, localisation has to go beyond translation.
+              You adapt the marketing strategy to local cultural cues and to the way Chinese
+              consumers buy, where social commerce and livestream shopping drive most of
+              the decision. We help brands build a presence on platforms like WeChat and
+              Douyin that feels local, not lifted.
+            </p>
+          </div>
+
+          <div class="cbs-context__card cbs-context__card--alt">
+            <span class="cbs-context__num" aria-hidden="true">02</span>
+            <h3>Local competition is fierce, agile and well-funded</h3>
+            <p>
+              The market is dominated by Alibaba, JD, Douyin and Pinduoduo, and by local
+              brands that move faster than most international teams. New entrants need a
+              partner who can execute marketing strategies that earn visibility against
+              agile local players. Continuous innovation is the price of staying relevant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- VALUE PROPOSITION ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <div class="cbs-value">
+          <div class="cbs-value__copy">
+            <span class="eyebrow">What we do</span>
+            <h2>We set up and grow your eCommerce presence in China.</h2>
+            <p>
+              With 15 years of expertise, our team has supported global brands and SMEs
+              navigating Chinese eCommerce. We have run flagship stores and DTC shops,
+              tackled localisation, built brand trust, and held our ground in an unforgiving
+              market. Strong platform relationships and disciplined media buying let us
+              deliver tailored strategies that actually move sales.
+            </p>
+            <div class="cbs-value__stats">
+              <div>
+                <span class="cbs-value__stat-value">15+</span>
+                <span class="cbs-value__stat-label">Years of China eCommerce</span>
+              </div>
+              <div>
+                <span class="cbs-value__stat-value">3T$</span>
+                <span class="cbs-value__stat-label">2024 China eCommerce GMV</span>
+              </div>
+              <div>
+                <span class="cbs-value__stat-value">3</span>
+                <span class="cbs-value__stat-label">Offices: Shanghai, HK, Paris</span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="cbs-promise">
+            <li>
+              <span class="eyebrow">What you can expect</span>
+            </li>
+            {promises.map((p) => (
+              <li class="cbs-promise__item">
+                <span class="cbs-promise__check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                </span>
+                <div>
+                  <h4>{p.title}</h4>
+                  <p>{p.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- SERVICES ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Our services</span>
+          <h2>Our eCommerce services in China</h2>
+          <p class="section-header__lead">
+            Four levers we use to set up your store, drive traffic, sell at scale, and turn
+            social into revenue.
+          </p>
+        </header>
+
+        <div class="cbs-services">
+          {services.map((s) => (
+            <article class="cbs-service">
+              <span class="cbs-service__icon" set:html={icons[s.icon]} />
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- BUSINESS MODELS ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Business models</span>
+          <h2>Three ways to work with us</h2>
+          <p class="section-header__lead">
+            Every brand has different needs and different appetite for risk. Choose the
+            engagement that fits where you are today.
+          </p>
+        </header>
+
+        <div class="cbs-models">
+          {models.map((m) => (
+            <article class={`cbs-model${m.highlight ? ' cbs-model--highlight' : ''}`}>
+              {m.highlight && <span class="cbs-model__badge">Most popular</span>}
+              <h3 class="cbs-model__title">{m.name}</h3>
+              <p class="cbs-model__desc">{m.desc}</p>
+
+              <ul class="cbs-model__list">
+                {m.bullets.map((b) => (
+                  <li>{b}</li>
+                ))}
+              </ul>
+
+              <div class="cbs-model__pricing">
+                <span class="cbs-model__pricing-label">Pricing</span>
+                <span class="cbs-model__pricing-value">{m.pricing}</span>
+              </div>
+
+              <a href="/contact" class="btn btn--secondary btn--sm cbs-model__cta">Contact us</a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- CASE STUDIES ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--split">
+          <div>
+            <span class="eyebrow">Case studies</span>
+            <h2>Our eCommerce case studies in China</h2>
+          </div>
+          <a href="/work" class="btn btn--secondary btn--sm">See all work</a>
+        </header>
+
+        <div class="grid grid-3">
+          {cases.map((c) => (
+            <a href={c.href} class="cbs-case">
+              <span class="cbs-case__tag">{c.sub}</span>
+              <h3 class="cbs-case__title">{c.title}</h3>
+              <p class="cbs-case__desc">{c.desc}</p>
+              <span class="cbs-case__cta">Read the case <span aria-hidden="true">→</span></span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- PLATFORMS ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Platforms</span>
+          <h2>Our eCommerce platforms in China</h2>
+          <p class="section-header__lead">
+            Certified operator on the platforms that matter. We choose the right mix for
+            your category and ambition, then run them.
+          </p>
+        </header>
+
+        <div class="cbs-platforms">
+          {platforms.map((p) => (
+            <a href={p.href} class="cbs-platform">
+              <div class="cbs-platform__logo">
+                <img src={p.logo} alt={`${p.name} logo`} loading="lazy" decoding="async" />
+              </div>
+              <h3 class="cbs-platform__title">
+                {p.name} <span class="cbs-platform__cn">{p.cn}</span>
+              </h3>
+              <p class="cbs-platform__sub">{p.sub}</p>
+              <span class="cbs-platform__cta">Learn more <span aria-hidden="true">→</span></span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- HOW WE WORK ---------- */}
+    <section id="how-we-work" class="section">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">How we work</span>
+          <h2>How an eCommerce agency in China works</h2>
+          <p class="section-header__lead">
+            From planning to peak shopping festivals, three phases that turn a launch into
+            a real business.
+          </p>
+        </header>
+
+        <ol class="cbs-steps">
+          {steps.map((s) => (
+            <li class="cbs-step">
+              <span class="cbs-step__n">{s.n}</span>
+              <h3 class="cbs-step__title">{s.title}</h3>
+              <p class="cbs-step__desc">{s.desc}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    {/* ---------- AI ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">AI in eCommerce</span>
+          <h2>We supercharge eCommerce in China with AI</h2>
+          <p class="section-header__lead">
+            AI is no longer a side project in China. It is how we cut cost, scale content
+            and personalise the funnel.
+          </p>
+        </header>
+
+        <div class="cbs-ai">
+          {aiBenefits.map((b, i) => (
+            <article class="cbs-ai__card">
+              <span class="cbs-ai__num">{String(i + 1).padStart(2, '0')}</span>
+              <h3>{b.title}</h3>
+              <p>{b.desc}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FAQ ---------- */}
+    <section class="section">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions about eCommerce in China</h2>
+        </header>
+
+        <div class="cbs-faq">
+          {faqs.map((f, i) => (
+            <details class="cbs-faq__item" open={i === 0}>
+              <summary class="cbs-faq__q">
+                <span>{f.q}</span>
+                <span class="cbs-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="cbs-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- RELATED SERVICES ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--split">
+          <div>
+            <span class="eyebrow">More ways we can help</span>
+            <h2>Our marketing and eCommerce services in China</h2>
+          </div>
+          <a href="/work" class="btn btn--secondary btn--sm">See our work</a>
+        </header>
+
+        <div class="grid grid-3">
+          {moreWays.map((c) => (
+            <a href={c.href} class="work-card">
+              <div class="work-card__image">
+                <img src={c.image} alt="" loading="lazy" decoding="async" width="600" height="400" />
+              </div>
+              <div class="work-card__body">
+                <span class="work-card__tag">{c.tag}</span>
+                <h3 class="work-card__title">{c.title}</h3>
+                <p class="work-card__summary">{c.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- INSIGHTS ---------- */}
+    {pageInsights.length > 0 && (
+      <section class="section">
+        <div class="container">
+          <header class="section-header section-header--split">
+            <div>
+              <span class="eyebrow">Insights</span>
+              <h2>China marketing insights</h2>
+            </div>
+            <a href="/insights" class="btn btn--secondary btn--sm">See more</a>
+          </header>
+
+          <div class="grid grid-3">
+            {pageInsights.map((post) => (
+              <a href={`/insights/${post.id}`} class="insight-card">
+                <div class="insight-card__image">
+                  {post.data.heroImage && (
+                    <img src={post.data.heroImage} alt={post.data.heroImageAlt} loading="lazy" decoding="async" width="600" height="400" />
+                  )}
+                </div>
+                <div class="insight-card__body">
+                  <span class="insight-card__tag">{post.data.category}</span>
+                  <h3 class="insight-card__title">{post.data.title}</h3>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="cbs-cta">
+          <span class="eyebrow eyebrow--on-dark">Let's talk</span>
+          <h2 class="cbs-cta__title">Thinking about expanding your brand or business to China?</h2>
+          <p class="cbs-cta__lead">
+            Tell us where you are today and where you want to be. Real humans on our side,
+            no funnel, no forms that never get read.
+          </p>
+          <div class="cbs-cta__actions">
+            <a href="/contact" class="btn cbs-cta__btn-primary">Contact us</a>
+            <a href="/work" class="btn cbs-cta__btn-ghost">See our case studies</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    /* ---------- Container narrow helper (re-used pattern) ---------- */
+    .cbs .container--narrow { max-width: 880px; }
+
+    /* ---------- HERO ---------- */
+    .cbs-hero {
+      position: relative;
+      min-height: clamp(520px, 64vh, 680px);
+      display: flex;
+      align-items: center;
+      padding: clamp(96px, 12vh, 140px) 0 clamp(64px, 10vh, 120px);
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .cbs-hero__bg { position: absolute; inset: 0; z-index: -2; }
+    .cbs-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .cbs-hero__overlay {
+      position: absolute; inset: 0; z-index: -1;
+      background: linear-gradient(110deg,
+        rgba(8, 20, 32, 0.88) 0%,
+        rgba(8, 20, 32, 0.68) 45%,
+        rgba(8, 20, 32, 0.32) 100%);
+    }
+    .cbs-hero__inner { max-width: 880px; position: relative; }
+    .cbs-hero__crumbs {
+      margin-bottom: var(--space-5);
+      font-size: var(--fs-small);
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .cbs-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .cbs-hero__crumbs a:hover { color: var(--bbg-white); }
+    .cbs-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: #9DDBF5;
+    }
+    .cbs-hero__title {
+      font-size: clamp(2.25rem, 3.6vw + 1rem, 4rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-5);
+      max-width: 22ch;
+      text-wrap: balance;
+    }
+    .cbs-hero__lead {
+      font-size: clamp(1.0625rem, 0.6vw + 1rem, 1.3125rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.92);
+      max-width: 58ch;
+      margin: 0 0 var(--space-6);
+    }
+    .cbs-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+
+    /* ---------- CONTEXT (two truths) ---------- */
+    .cbs-context {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    .cbs-context__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-7);
+      position: relative;
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .cbs-context__card:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .cbs-context__card--alt {
+      background: var(--bbg-blue-light);
+      border-color: transparent;
+    }
+    .cbs-context__num {
+      display: block;
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--bbg-blue);
+      line-height: 1;
+      margin-bottom: var(--space-4);
+      letter-spacing: -0.02em;
+      font-feature-settings: "tnum";
+    }
+    .cbs-context__card h3 {
+      font-size: clamp(1.25rem, 1vw + 0.75rem, 1.625rem);
+      line-height: 1.25;
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.01em;
+    }
+    .cbs-context__card p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .cbs-context { grid-template-columns: 1fr; }
+      .cbs-context__card { padding: var(--space-6); }
+    }
+
+    /* ---------- VALUE + PROMISES ---------- */
+    .cbs-value {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .cbs-value__copy h2 {
+      font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin: var(--space-3) 0 var(--space-4);
+    }
+    .cbs-value__copy p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0 0 var(--space-6);
+    }
+    .cbs-value__stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+      padding-top: var(--space-5);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .cbs-value__stat-value {
+      display: block;
+      font-size: clamp(1.875rem, 1.6vw + 1rem, 2.5rem);
+      font-weight: 700;
+      color: var(--bbg-blue);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      font-feature-settings: "tnum";
+    }
+    .cbs-value__stat-label {
+      display: block;
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      line-height: 1.35;
+    }
+    .cbs-promise {
+      list-style: none;
+      padding: var(--space-6);
+      margin: 0;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .cbs-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .cbs-promise__item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+    }
+    .cbs-promise__check {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .cbs-promise__check svg { width: 16px; height: 16px; }
+    .cbs-promise__item h4 {
+      font-size: 1.125rem;
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .cbs-promise__item p {
+      font-size: 0.975rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .cbs-value { grid-template-columns: 1fr; gap: var(--space-6); }
+      .cbs-value__stats { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 540px) {
+      .cbs-value__stats { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- SERVICES ---------- */
+    .cbs-services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-5);
+    }
+    .cbs-service {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .cbs-service:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .cbs-service__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-4);
+    }
+    .cbs-service__icon svg { width: 24px; height: 24px; }
+    .cbs-service h3 {
+      font-size: 1.1875rem;
+      line-height: 1.25;
+      margin: 0 0 var(--space-3);
+      letter-spacing: -0.005em;
+    }
+    .cbs-service p {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 1024px) { .cbs-services { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .cbs-services { grid-template-columns: 1fr; } }
+
+    /* ---------- BUSINESS MODELS ---------- */
+    .cbs-models {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+      align-items: stretch;
+    }
+    .cbs-model {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-7);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .cbs-model:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .cbs-model--highlight {
+      background: linear-gradient(180deg, var(--bbg-blue-light) 0%, var(--bbg-white) 60%);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .cbs-model__badge {
+      position: absolute;
+      top: -12px;
+      left: var(--space-7);
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      font-size: var(--fs-label);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4em 0.9em;
+      border-radius: 999px;
+    }
+    .cbs-model__title {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+    .cbs-model__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .cbs-model__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      border-top: 1px solid var(--bbg-border);
+      border-bottom: 1px solid var(--bbg-border);
+      padding: var(--space-4) 0;
+    }
+    .cbs-model__list li {
+      position: relative;
+      padding-left: 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .cbs-model__list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+    }
+    .cbs-model__pricing { display: flex; flex-direction: column; gap: 0.25rem; }
+    .cbs-model__pricing-label {
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+    .cbs-model__pricing-value {
+      font-size: 1rem;
+      color: var(--bbg-ink);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .cbs-model__cta { align-self: flex-start; margin-top: auto; }
+    @media (max-width: 1024px) {
+      .cbs-models { grid-template-columns: 1fr; }
+      .cbs-model { padding: var(--space-6); }
+    }
+
+    /* ---------- CASE STUDIES ---------- */
+    .cbs-case {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      color: var(--bbg-ink);
+    }
+    .cbs-case:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+      color: var(--bbg-ink);
+    }
+    .cbs-case__tag {
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+    }
+    .cbs-case__title {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      margin: 0;
+      color: var(--bbg-ink);
+      letter-spacing: -0.01em;
+    }
+    .cbs-case__desc {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+      flex-grow: 1;
+    }
+    .cbs-case__cta {
+      font-size: var(--fs-small);
+      color: var(--bbg-blue);
+      font-weight: 600;
+      margin-top: var(--space-2);
+    }
+    .cbs-case:hover .cbs-case__cta span { display: inline-block; transform: translateX(4px); transition: transform var(--dur) var(--ease); }
+
+    /* ---------- PLATFORMS ---------- */
+    .cbs-platforms {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-5);
+    }
+    .cbs-platform {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-3);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      color: var(--bbg-ink);
+      transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .cbs-platform:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+      color: var(--bbg-ink);
+    }
+    .cbs-platform__logo {
+      width: 64px;
+      height: 64px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--bbg-surface);
+      padding: 10px;
+      margin-bottom: var(--space-2);
+    }
+    .cbs-platform__logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .cbs-platform__title {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin: 0;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+    .cbs-platform__cn {
+      font-size: 0.95rem;
+      color: var(--bbg-text-muted);
+      font-weight: 500;
+    }
+    .cbs-platform__sub {
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+      flex-grow: 1;
+    }
+    .cbs-platform__cta {
+      font-size: var(--fs-small);
+      color: var(--bbg-blue);
+      font-weight: 600;
+      margin-top: var(--space-2);
+    }
+    .cbs-platform:hover .cbs-platform__cta span { display: inline-block; transform: translateX(4px); transition: transform var(--dur) var(--ease); }
+    @media (max-width: 1024px) { .cbs-platforms { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .cbs-platforms { grid-template-columns: 1fr; } }
+
+    /* ---------- HOW WE WORK / STEPS ---------- */
+    .cbs-steps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+      counter-reset: step;
+    }
+    .cbs-step {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      position: relative;
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .cbs-step:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .cbs-step__n {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--bbg-blue);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-4);
+      font-feature-settings: "tnum";
+    }
+    .cbs-step__title {
+      font-size: 1.375rem;
+      line-height: 1.25;
+      margin: 0 0 var(--space-3);
+      letter-spacing: -0.01em;
+    }
+    .cbs-step__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 900px) { .cbs-steps { grid-template-columns: 1fr; } }
+
+    /* ---------- AI ---------- */
+    .cbs-ai {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: var(--space-4);
+    }
+    .cbs-ai__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .cbs-ai__card:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .cbs-ai__num {
+      display: inline-block;
+      font-size: var(--fs-label);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 0.3em 0.7em;
+      border-radius: 999px;
+      margin-bottom: var(--space-3);
+    }
+    .cbs-ai__card h3 {
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+    }
+    .cbs-ai__card p {
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .cbs-ai { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .cbs-ai { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- FAQ ---------- */
+    .cbs-faq {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .cbs-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color var(--dur) var(--ease);
+    }
+    .cbs-faq__item[open] { border-color: var(--bbg-blue); }
+    .cbs-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .cbs-faq__q::-webkit-details-marker { display: none; }
+    .cbs-faq__q::marker { display: none; }
+    .cbs-faq__item:hover .cbs-faq__q { color: var(--bbg-blue); }
+    .cbs-faq__icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bbg-text-muted);
+      transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+    }
+    .cbs-faq__item[open] .cbs-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-blue);
+    }
+    .cbs-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+    .cbs-faq__a p { margin: 0; }
+
+    /* ---------- FINAL CTA ---------- */
+    .cbs-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cbs-cta::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .cbs-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .cbs-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .cbs-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 52ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .cbs-cta__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .cbs-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .cbs-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .cbs-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .cbs-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
+</Layout>

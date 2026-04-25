@@ -117,6 +117,12 @@ the same last path segment.
 | `/how-to-localize-a-brand-for-china/` | `/insights/how-to-localize-a-brand-for-china` | 301 |
 | `/a-comparison-between-tmall-and-amazon/` | `/insights/a-comparison-between-tmall-and-amazon` | 301 |
 
+### Service pages
+
+| Old URL (WordPress) | New URL (Astro) | Status |
+|---|---|---|
+| `/china-cross-border-ecommerce-entry-consulting/` | `/enter-china/market-entry-consulting` | 301 |
+
 ### Case studies hub
 
 | Old URL (WordPress) | New URL (Astro) | Status |
