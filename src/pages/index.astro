@@ -270,7 +270,10 @@ const servicesByStage = [
 const pillars = [
   {
     n: '01',
+    key: 'enter',
     title: 'Enter China',
+    image: '/Images/pillars/enter-china.png',
+    imageAlt: 'A brand director in a Shanghai office reviewing packaging samples with a Chinese ecommerce storefront on a laptop',
     lead: "You've got a product that could work in China, but no team there, no entity, no store on any platform.",
     paragraphs: [
       "Most international brands start from exactly this point. And most of them will tell you the same thing afterward: the ones that got traction fast picked the right entry model. The ones that didn't? They burned through six figures with nothing to show.",
@@ -282,7 +285,10 @@ const pillars = [
   },
   {
     n: '02',
+    key: 'grow',
     title: 'Grow in China',
+    image: '/Images/pillars/grow-in-china.png',
+    imageAlt: 'A livestream commerce host in a Shanghai studio with engagement analytics rising on a monitor',
     lead: "You've done the hard part already. You're in the market, you're selling, you've got real customers.",
     paragraphs: [
       "But growth has stalled and you can feel why: four different agencies, none of them talking to each other. Brand copy that reads like a translation, because honestly it is one. Campaigns that drive clicks but not revenue.",
@@ -294,7 +300,10 @@ const pillars = [
   },
   {
     n: '03',
+    key: 'learn',
     title: 'Learn China',
+    image: '/Images/pillars/learn-china.png',
+    imageAlt: 'International executives on a learning expedition walking through a Chinese shopping district',
     lead: "Platform rules keep changing. Consumer habits that looked locked in three years ago are completely different now.",
     paragraphs: [
       "Some new commerce format takes off and suddenly everyone's playbook is outdated. If you're the person making the China call at your company, stale information is probably the most expensive thing on your desk right now.",
@@ -383,30 +392,42 @@ function formatInsightDate(d?: Date) {
   {/* ---------- PILLARS: ACCORDION ---------- */}
   <section class="section section--alt">
     <div class="container">
-      <div class="pillars-intro">
-        <span class="eyebrow">Where to start</span>
-        <h2>China is not one problem to solve</h2>
-        <ul class="pillar-list">
-          {pillars.map((p) => (
-            <li class="pillar-item">
-              <div class="pillar-item__head">
-                <h3 class="pillar-item__title">{p.title}</h3>
-                <span class="pillar-item__chev" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
-                </span>
-              </div>
-              <div class="pillar-item__body">
-                <p class="pillar-item__lead">{p.lead}</p>
-                {p.paragraphs.map((par) => <p class="pillar-item__para">{par}</p>)}
-                <ul class="pillar-item__tactics">
-                  {p.tactics.map((t) => <li>{t}</li>)}
-                </ul>
-                <p class="pillar-item__close">{p.close}</p>
-                <a href={p.href} class="btn btn--ghost">{p.title}</a>
-              </div>
-            </li>
-          ))}
-        </ul>
+      <div class="pillars-split">
+        <div class="pillars-split__main">
+          <span class="eyebrow">Where to start</span>
+          <h2>China is not one problem to solve</h2>
+          <ul class="pillar-list">
+            {pillars.map((p) => (
+              <li class="pillar-item" data-pillar={p.key}>
+                <div class="pillar-item__head">
+                  <h3 class="pillar-item__title">{p.title}</h3>
+                  <span class="pillar-item__chev" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+                  </span>
+                </div>
+                <div class="pillar-item__body">
+                  <p class="pillar-item__lead">{p.lead}</p>
+                  {p.paragraphs.map((par) => <p class="pillar-item__para">{par}</p>)}
+                  <ul class="pillar-item__tactics">
+                    {p.tactics.map((t) => <li>{t}</li>)}
+                  </ul>
+                  <p class="pillar-item__close">{p.close}</p>
+                  <a href={p.href} class="btn btn--ghost">{p.title}</a>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <aside class="pillars-split__aside" aria-hidden="true">
+          <div class="pillar-media">
+            {pillars.map((p, i) => (
+              <figure class={`pillar-media__frame${i === 0 ? ' is-active' : ''}`} data-pillar-media={p.key}>
+                <img src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
+              </figure>
+            ))}
+          </div>
+        </aside>
       </div>
     </div>
   </section>
@@ -782,6 +803,14 @@ function formatInsightDate(d?: Date) {
           if (open !== item) open.classList.remove('is-open');
         });
         item.classList.toggle('is-open');
+
+        const key = item.dataset.pillar;
+        const isOpen = item.classList.contains('is-open');
+        if (key && isOpen) {
+          document.querySelectorAll('[data-pillar-media]').forEach((frame) => {
+            frame.classList.toggle('is-active', frame.dataset.pillarMedia === key);
+          });
+        }
       });
     });
 

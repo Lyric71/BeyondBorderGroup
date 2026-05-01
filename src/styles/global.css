@@ -244,9 +244,73 @@ h4, .h4 { font-size: var(--fs-h4); line-height: 1.3; font-weight: 600; }
   height: 96px;
   display: flex;
   align-items: stretch;
-  transition: box-shadow var(--dur) var(--ease);
+  transition: background var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
 }
 .nav--scrolled { box-shadow: 0 1px 0 var(--bbg-border); }
+
+/* Bleed-hero pages: nav floats over the hero, then turns white on scroll.
+   Scoped via :has() so non-hero pages keep the regular white nav. */
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav {
+  background: transparent;
+  box-shadow: none;
+}
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav__link {
+  color: var(--bbg-white);
+  transition: color var(--dur) var(--ease);
+}
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav__logo img {
+  transition: filter var(--dur) var(--ease);
+}
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav__burger span {
+  background: var(--bbg-white);
+  transition: background var(--dur) var(--ease);
+}
+
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav.nav--scrolled {
+  background: var(--bbg-white);
+  box-shadow: 0 1px 0 var(--bbg-border);
+}
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav.nav--scrolled .nav__link { color: var(--bbg-ink); }
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav.nav--scrolled .nav__logo img { filter: none; }
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav.nav--scrolled .nav__burger span { background: var(--bbg-ink); }
+
+/* When mega menu is open at top, force solid white so the panel attaches cleanly */
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav:has(.nav__item--mega:hover, .nav__item--mega:focus-within) {
+  background: var(--bbg-white);
+  box-shadow: 0 1px 0 var(--bbg-border);
+}
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav:has(.nav__item--mega:hover, .nav__item--mega:focus-within) .nav__link { color: var(--bbg-ink); }
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav:has(.nav__item--mega:hover, .nav__item--mega:focus-within) .nav__logo img { filter: none; }
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav:has(.nav__item--mega:hover, .nav__item--mega:focus-within) .nav__burger span { background: var(--bbg-ink); }
+
+/* Hero sections bleed up under the sticky header */
+.hero-fullbleed,
+.cbs-hero,
+.mec-hero,
+.dist-hero,
+.web-hero,
+.brand-hero {
+  margin-top: -96px;
+}
+@media (max-width: 1024px) {
+  .hero-fullbleed,
+  .cbs-hero,
+  .mec-hero,
+  .dist-hero,
+  .web-hero,
+  .brand-hero { margin-top: -80px; }
+}
+
+/* Restore breathing room below the floating nav.
+   :has() scoping bumps specificity so it beats page-level `padding` shorthands. */
+body:has(.hero-fullbleed) .hero-fullbleed__inner,
+body:has(.cbs-hero) .cbs-hero,
+body:has(.mec-hero) .mec-hero,
+body:has(.dist-hero) .dist-hero,
+body:has(.web-hero) .web-hero,
+body:has(.brand-hero) .brand-hero {
+  padding-top: clamp(260px, 28vh, 340px);
+}
 .nav__inner {
   display: flex;
   align-items: center;
@@ -255,8 +319,25 @@ h4, .h4 { font-size: var(--fs-h4); line-height: 1.3; font-weight: 600; }
   width: 100%;
   height: 100%;
 }
-.nav__logo { display: inline-flex; align-items: center; flex-shrink: 0; }
-.nav__logo img { height: 72px; width: auto; }
+.nav__logo { display: inline-flex; align-items: center; flex-shrink: 0; position: relative; }
+.nav__logo img { height: 32px; width: auto; display: block; }
+.nav__logo .nav__logo-img--light {
+  position: absolute;
+  inset: 0;
+  height: 32px;
+  width: auto;
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease);
+  pointer-events: none;
+}
+/* Over hero with transparent nav: show light variant, hide default */
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav:not(.nav--scrolled):not(:has(.nav__item--mega:hover, .nav__item--mega:focus-within)) .nav__logo-img--default {
+  opacity: 0;
+}
+body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav:not(.nav--scrolled):not(:has(.nav__item--mega:hover, .nav__item--mega:focus-within)) .nav__logo-img--light {
+  opacity: 1;
+}
+.nav__logo-img--default { transition: opacity var(--dur) var(--ease); }
 
 .nav__primary { flex: 1; display: flex; justify-content: center; align-self: stretch; }
 .nav__links {
@@ -429,7 +510,8 @@ h4, .h4 { font-size: var(--fs-h4); line-height: 1.3; font-weight: 600; }
 
 @media (max-width: 1024px) {
   .nav { height: 80px; }
-  .nav__logo img { height: 56px; }
+  .nav__logo img { height: 26px; }
+  .nav__logo .nav__logo-img--light { height: 26px; }
   .nav__primary { display: none; }
   .nav__burger { display: flex; }
   .mega { display: none; }
@@ -476,7 +558,7 @@ h4, .h4 { font-size: var(--fs-h4); line-height: 1.3; font-weight: 600; }
   margin-bottom: var(--space-4);
 }
 .footer__logo img {
-  height: 72px;
+  height: 40px;
   width: auto;
   display: block;
 }
@@ -887,8 +969,8 @@ h4, .h4 { font-size: var(--fs-h4); line-height: 1.3; font-weight: 600; }
   height: 100%;
   display: flex;
   align-items: center;
-  padding-top: clamp(96px, 12vh, 140px);
-  padding-bottom: clamp(64px, 10vh, 120px);
+  padding-top: clamp(140px, 16vh, 200px);
+  padding-bottom: clamp(160px, 20vh, 240px);
 }
 .hero-fullbleed__copy {
   max-width: 620px;
@@ -2355,6 +2437,73 @@ h4, .h4 { font-size: var(--fs-h4); line-height: 1.3; font-weight: 600; }
 }
 .pillars-intro > .eyebrow { display: block; margin-bottom: var(--space-3); }
 .pillars-intro h2 { margin-bottom: var(--space-6); }
+
+/* ---------- Pillars split (accordion + dynamic visual) ---------- */
+.pillars-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  gap: var(--space-8);
+  align-items: start;
+}
+.pillars-split__main > .eyebrow { display: block; margin-bottom: var(--space-3); }
+.pillars-split__main h2 { margin-bottom: var(--space-6); }
+.pillars-split__main .pillar-list { margin-top: var(--space-6); }
+
+.pillars-split__aside {
+  position: sticky;
+  top: calc(var(--space-8) + 64px);
+  align-self: start;
+}
+
+.pillar-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bbg-surface);
+  box-shadow: var(--shadow-lg);
+}
+.pillar-media__frame {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 320ms var(--ease), visibility 0s linear 320ms;
+}
+.pillar-media__frame.is-active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 320ms var(--ease), visibility 0s linear 0s;
+}
+.pillar-media__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .pillars-split {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  .pillars-split__aside {
+    position: static;
+    order: -1;
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .pillar-media { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 640px) {
+  .pillar-media { aspect-ratio: 4 / 3; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pillar-media__frame { transition: none; }
+}
 
 /* Centered section header lead copy */
 .section-header__lead {
