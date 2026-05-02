@@ -1,5 +1,11 @@
 # Beyond Border Group — Project Context for Claude Code
 
+## Copywriting Rule (MANDATORY)
+Before producing ANY user-facing copy (page content, headings, microcopy,
+button labels, marketing text, blog drafts, social posts, alt text), you
+MUST first read `.claude/anti-ai-writing-style.md` and apply its rules.
+This is non-negotiable. Code comments and internal docs are exempt.
+
 ## Project Overview
 Rebuild of beyondbordergroup.com in Astro. The existing site runs on
 WordPress with Elementor. The new site keeps the same brand identity
