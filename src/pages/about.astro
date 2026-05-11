@@ -292,11 +292,10 @@ const clients = [
       </header>
 
       <div class="grid grid-3 principles">
-        {principles.map((p, i) => (
+        {principles.map((p) => (
           <article class="card principle">
             <div class="principle__head">
               <span class="principle__icon" aria-hidden="true" set:html={principleIcon[p.icon]} />
-              <span class="principle__num" aria-hidden="true">0{i + 1}</span>
             </div>
             <h3 class="card__title">{p.title}</h3>
             <p>{p.body}</p>
@@ -673,7 +672,6 @@ const clients = [
   .principle__head {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: var(--space-5);
   }
   .principle__icon {
@@ -694,13 +692,6 @@ const clients = [
   .principle:hover .principle__icon {
     background: var(--bbg-blue);
     color: var(--bbg-white);
-  }
-  .principle__num {
-    font-size: var(--fs-label);
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    color: var(--bbg-text-muted);
-    font-variant-numeric: tabular-nums;
   }
 
   /* ---------- Proof / Clients ---------- */
