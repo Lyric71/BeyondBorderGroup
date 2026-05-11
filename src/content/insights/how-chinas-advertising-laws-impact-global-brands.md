@@ -66,7 +66,7 @@ Digital advertising is at the core of China's eCommerce success, with platforms 
 
 * **Content Moderation and Censorship:** Chinese social media platforms must censor any content that conflicts with public policy or promotes culturally inappropriate themes, such as gambling or superstition. Restrictions also extend to the use of political symbols, government names, or content that could be viewed as socially disruptive. By complying with these guidelines, brands help maintain the integrity of China's social media environment while building positive consumer relationships.
 
-These digital advertising rules are pivotal for foreign brands using social commerce in China, particularly those investing in livestreaming and social media promotions. A professional China eCommerce agency can offer guidance on aligning ads with both national regulations and platform-specific rules, ensuring that campaigns are both effective and compliant.
+These digital advertising rules are central for foreign brands using social commerce in China, particularly those investing in livestreaming and social media promotions. A professional China eCommerce agency can offer guidance on aligning ads with both national regulations and platform-specific rules, ensuring that campaigns are both effective and compliant.
 
 ## Compliance Strategies for Global Brands in China's eCommerce Landscape
 

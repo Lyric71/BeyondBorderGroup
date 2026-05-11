@@ -10,7 +10,7 @@ heroImageAlt: "China e-commerce platform overview illustration"
 legacyUrl: "https://beyondbordergroup.com/china-e-commerce-platforms-2025/"
 ---
 
-## China's e-commerce market keeps setting the reference point, not because it is "bigger," but because it is more integrated.
+## China's e-commerce market keeps setting the reference point. The reason is integration, not size.
 
 The key change for retail is simple: online and offline are converging into one operational loop. Discovery, conversion, fulfilment, and service are increasingly designed as one journey, often inside a single app.
 

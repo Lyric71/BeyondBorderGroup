@@ -62,7 +62,7 @@ Then the game got crowded.
 
 **And with each new mechanic, two things happened:**
 
-* Sellers built for the game, not the shopper.
+* Sellers built for the game and stopped building for the shopper.
   * List prices quietly crept up ahead of the festival, just to be "discounted" back to normal.
   * Marketing budgets inflated to chase GMV headlines and buy placements that looked impressive on internal dashboards.
   * Unit economics became something you checked after the festival, not before.
@@ -113,11 +113,11 @@ Behind closed doors, you hear the same stories:
 
 ## E-Commerce in China
 
-Looking at China from the outside, Double 11 is no longer just a local shopping festival. It is an early view of how commerce behaves when AI is embedded in the stack and shoppers think like operators.
+Looking at China from the outside, Double 11 has outgrown its local-shopping-festival roots. It is an early view of how commerce behaves when AI is embedded in the stack and shoppers think like operators.
 
 Three ideas to carry forward:
 
-* Treat 11.11 as a stress test, not a one-off stunt. If something breaks in November, it was fragile all year.
+* Treat 11.11 as a stress test rather than a one-off stunt. If something breaks in November, it was fragile all year.
 * Build a creative and pricing system that can hold its shape while platforms, formats, and tools keep changing.
 * Assume consumers will compare everything, and be the brand that rewards that intelligence with clear value and honest pricing.
 

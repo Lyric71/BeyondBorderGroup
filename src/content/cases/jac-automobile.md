@@ -32,4 +32,4 @@ We transformed JAC's digital presence by creating a truly interactive community 
 
 ## Results
 
-The digital strategy reached new heights with the Olympic J-Bot campaign. By merging artificial intelligence with the design of the mascot in six Olympic-themed versions, we created viral content that travelled beyond Chinese digital platforms. JAC's international teams spontaneously picked up the assets on Facebook and Instagram, reflecting the relevance of the creative approach and the universality of the message. This synergy between Chinese platforms and international channels strengthened JAC's innovative image and naturally fostered a global community around the brand.
+The digital strategy peaked with the Olympic J-Bot campaign. By pairing AI with a mascot design in six Olympic-themed versions, we produced content that travelled beyond Chinese platforms. JAC's international teams picked up the assets on Facebook and Instagram on their own, a sign that the creative read across regions. The lift on Chinese platforms and the spontaneous reuse abroad strengthened JAC's innovative image and grew a global community around the brand.

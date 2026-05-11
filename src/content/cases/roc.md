@@ -22,7 +22,7 @@ order: 2
 
 ## The brand
 
-ROC Skincare is a renowned French skincare brand, celebrated for scientifically proven and dermatologist-tested products that target multiple skin concerns with key ingredients such as retinol, vitamin C, and hyaluronic acid. As a leader in anti-aging solutions, ROC is committed to high-quality, cruelty-free skincare innovation.
+ROC Skincare is a French skincare brand built on scientifically proven, dermatologist-tested products that target multiple skin concerns with active ingredients such as retinol, vitamin C and hyaluronic acid. The brand is a long-standing reference in anti-aging, and runs a cruelty-free range.
 
 ## The challenge
 
@@ -34,4 +34,4 @@ Our approach leaned on a deep understanding of both French elegance and Chinese 
 
 ## Results
 
-The result is a meticulously localized ROC Skincare presence in China that resonates with local preferences without compromising the brand's foundational values and identity. By blending ROC's French heritage with tailored elements for the Chinese market, we crafted a brand story and visual identity that speak to the sophisticated, health-conscious Chinese consumer. The localization extends across all brand touchpoints, producing a cohesive, immersive brand experience that holds to ROC's global standards of excellence.
+The result is a localised ROC Skincare presence in China that holds the brand's foundational values without losing its French character. ROC's heritage was paired with tailored elements for the Chinese market, producing a brand story and visual identity built for the health-conscious Chinese consumer. The localisation runs across every brand touchpoint and keeps ROC consistent with its global standards.

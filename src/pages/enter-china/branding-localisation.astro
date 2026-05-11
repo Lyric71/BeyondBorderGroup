@@ -30,19 +30,17 @@ const pillarIcon: Record<string, string> = {
 
 const services = [
   {
-    n: '01',
     h: 'Positioning',
-    body: "We map your category in China, find the white space your competitors have left open, and position your brand to own it. The decision that shapes every other decision.",
+    body: "We map your category in China, find the white space your competitors have left open, and position your brand to own it. This is the decision that shapes every decision after it.",
     image: '/Images/branding/positioning.png',
     bullets: [
       'Competitive landscape in your category',
       'White-space and segment opportunity analysis',
       'A clear positioning statement, written for China',
-      'A messaging hierarchy your team can actually use',
+      'A messaging hierarchy your team can use day to day',
     ],
   },
   {
-    n: '02',
     h: 'Naming',
     body: "The right Chinese name unlocks recognition, recall and word of mouth. The wrong one creates friction every time someone tries to say or remember it. We craft brand names that work linguistically, culturally and commercially.",
     image: '/Images/branding/naming.png',
@@ -54,7 +52,6 @@ const services = [
     ],
   },
   {
-    n: '03',
     h: 'Visual Identity',
     body: "Logo, color, typography, layout. We build a coherent visual identity for China and document it in a brand book your team and partners can apply consistently across every touchpoint.",
     image: '/Images/branding/visual-identity.png',
@@ -66,7 +63,6 @@ const services = [
     ],
   },
   {
-    n: '04',
     h: 'Brand Assets',
     body: "Packaging, video, photography, spatial design. The assets your brand needs to show up in China, designed in China for the Chinese market, ready for Tmall, Douyin, RED, retail and PR.",
     image: '/Images/branding/brand-assets.png',
@@ -128,31 +124,32 @@ const faq = [
   description="A China branding agency for positioning, naming, visual identity and brand assets. We build brands that resonate with Chinese consumers, on every platform and at every touchpoint."
 >
 
-  {/* ---------- HERO ---------- */}
-  <section class="hero brand-hero">
-    <div class="brand-hero__bg" aria-hidden="true">
-      <img
-        src="/Images/branding/hero.png"
-        alt=""
-        loading="eager"
-        decoding="async"
-        fetchpriority="high"
-      />
-    </div>
-    <div class="brand-hero__overlay" aria-hidden="true"></div>
-
-    <div class="container brand-hero__inner">
-      <span class="eyebrow eyebrow--on-dark">Branding &amp; Localisation</span>
-      <h1 class="hero__title">A brand built for China, at every touchpoint.</h1>
-      <p class="hero__lead">
-        Positioning, naming, visual identity and brand assets, designed in China for the
-        Chinese consumer. We turn international brands into ones Chinese audiences
-        recognise, trust and choose.
-      </p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="/contact">Talk to us</a>
-        <a class="btn btn--ghost-light" href="#services">See how we work</a>
+  {/* ---------- HERO (Mid Editorial split) ---------- */}
+  <section class="brand-hero-split">
+    <div class="container brand-hero-split__inner">
+      <div class="brand-hero-split__copy">
+        <span class="eyebrow">Branding &amp; Localisation</span>
+        <h1 class="brand-hero-split__title">A brand built for China, at every touchpoint.</h1>
+        <p class="brand-hero-split__lead">
+          Positioning, naming, visual identity and brand assets, designed in China for the
+          Chinese consumer. We turn international brands into ones Chinese audiences
+          recognise, trust and pick off the shelf.
+        </p>
+        <div class="brand-hero-split__actions">
+          <a class="btn btn--primary" href="/contact">Talk to us</a>
+          <a class="btn btn--secondary" href="#services">See how we work</a>
+        </div>
       </div>
+
+      <figure class="brand-hero-split__media">
+        <img
+          src="/Images/branding/hero.png"
+          alt="Brand assets in market: packaging, type and visual identity on display"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </figure>
     </div>
   </section>
 
@@ -160,7 +157,7 @@ const faq = [
   <section class="section section--alt">
     <div class="container">
       <header class="section-header section-header--center">
-        <span class="eyebrow">What it actually takes</span>
+        <span class="eyebrow">What it takes</span>
         <h2>A strong brand in China is built on three things.</h2>
         <p class="lead">
           Insight, name and experience. Get any one of them wrong and the rest will work twice as hard.
@@ -421,6 +418,54 @@ const faq = [
 
 <style>
   /* ---------- Hero ---------- */
+  .brand-hero-split {
+    background: var(--bbg-white);
+    padding: clamp(var(--space-7), 10vh, var(--space-8)) 0;
+  }
+  .brand-hero-split__inner {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: clamp(var(--space-6), 4vw, var(--space-8));
+    align-items: center;
+  }
+  .brand-hero-split__copy { max-width: 620px; }
+  .brand-hero-split__title {
+    font-size: clamp(2.25rem, 3vw + 1rem, 3.75rem);
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: var(--bbg-ink);
+    margin: var(--space-3) 0 var(--space-4);
+  }
+  .brand-hero-split__lead {
+    font-size: clamp(1.0625rem, 0.5vw + 0.95rem, 1.25rem);
+    line-height: 1.55;
+    color: var(--bbg-text);
+    margin: 0 0 var(--space-5);
+    max-width: 56ch;
+  }
+  .brand-hero-split__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+  .brand-hero-split__media {
+    margin: 0;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    background: var(--bbg-surface);
+  }
+  .brand-hero-split__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  @media (max-width: 900px) {
+    .brand-hero-split__inner { grid-template-columns: 1fr; gap: var(--space-6); }
+    .brand-hero-split__media { aspect-ratio: 16 / 11; }
+  }
+
   .brand-hero {
     position: relative;
     overflow: hidden;

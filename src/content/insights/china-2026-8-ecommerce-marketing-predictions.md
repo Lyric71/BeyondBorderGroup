@@ -30,7 +30,7 @@ Tmall (天猫) and JD.com (京东) are racing to build competing infrastructure,
 
 Here's the paradox GenAI creates: as synthetic content floods Xiaohongshu/RED (小红书), Weibo (微博), and Douyin (抖音), authentic human voices become exponentially more valuable.
 
-I'm watching brands scramble to lock in long-term relationships with proven KOLs and KOCs before their rates skyrocket. The economics are straightforward: when every brand can generate thousands of AI influencer posts for pennies, the humans who can actually move purchase intent become strategic assets.
+I'm watching brands scramble to lock in long-term relationships with proven KOLs and KOCs before their rates skyrocket. The economics are straightforward: when every brand can generate thousands of AI influencer posts for pennies, the humans who can move purchase intent become strategic assets.
 
 > Expect KOL fees to increase 30-50% in 2026 for creators who can demonstrate genuine community trust and conversion metrics.
 
@@ -44,7 +44,7 @@ I've already seen pilot campaigns running 50+ creative variants simultaneously a
 
 > In 2026, this becomes standard practice. The technical barrier to entry is low, but the strategic execution complexity is high.
 
-The winning brands will be those who master prompt engineering and creative systematization, not just those with the biggest budgets.
+The winning brands will be the ones that master prompt engineering and creative systematisation. Budget size is no longer the deciding factor.
 
 ## Experiential Marketing Fills the Discount Fatigue Gap
 
@@ -52,7 +52,7 @@ Chinese consumers are exhausted by the endless discount cycle. Price wars, flash
 
 This creates massive opportunity for experiential marketing: pop-up stores with immersive brand storytelling, interactive installations that create shareable moments, community events that build genuine emotional connection, and limited-edition collaborations with local artists.
 
-> The brands that invest in memorable experiences rather than just margin-crushing discounts will build the loyalty that actually matters in 2026.
+> The brands that invest in memorable experiences instead of leaning on margin-crushing discounts will build the loyalty that holds up in 2026.
 
 But here's the reality check: experiential marketing requires upfront investment with harder-to-measure ROI. In a market obsessed with immediate performance metrics, convincing stakeholders will be the bigger challenge than executing the experiences themselves.
 
@@ -84,7 +84,7 @@ I see this connection strengthening throughout the year as both platforms recogn
 
 > The brands that master this handoff will massively outperform those treating social and commerce as separate silos.
 
-The playbook: authentic content on Xiaohongshu builds desire, seamless links enable one-tap purchase on Tmall, post-purchase content creation feeds back into the discovery loop.
+The playbook: authentic content on Xiaohongshu builds desire, smooth links enable one-tap purchase on Tmall, post-purchase content creation feeds back into the discovery loop.
 
 ## Shopping Festivals Lose Their Magic (Except for Launches)
 

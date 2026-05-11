@@ -82,7 +82,7 @@ Social media platforms are crucial for digital marketing in China. Properly usin
 
 ### APIs and Technical Adjustments
 
-The technical backbone of your website must be compatible with China's internet infrastructure. Adapting APIs and replacing restricted services with local alternatives are critical steps to ensure seamless functionality and user satisfaction.
+The technical backbone of your website must be compatible with China's internet infrastructure. Adapting APIs and replacing restricted services with local alternatives are critical steps to ensure smooth functionality and user satisfaction.
 
 * **Replacing Restricted Services:** Many common Western services, such as Google Maps, are blocked in China. Utilizing local services like Baidu Maps instead can enhance functionality and user experience.
 
@@ -110,7 +110,7 @@ Tailor the UX to suit the browsing behaviors prevalent in ecommerce China. Chine
 
 ### Adapting to Local Devices
 
-The vast majority of Chinese internet users access the web via mobile devices. Ensure that your website is not just mobile-friendly but optimized for various screen sizes and mobile operating systems used in China. This includes faster load times, adaptable layouts, and touch-friendly interfaces.
+The vast majority of Chinese internet users access the web via mobile devices. Make sure your website goes beyond mobile-friendly and is optimised for the screen sizes and mobile operating systems used in China. This includes faster load times, adaptable layouts and touch-friendly interfaces.
 
 ### Integration of Visual and Textual Cues
 

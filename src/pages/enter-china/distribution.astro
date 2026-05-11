@@ -21,25 +21,25 @@ const stats = [
 
 const filters = [
   {
-    n: '01',
+    icon: 'shield',
     title: 'Trust is the first filter',
     body:
       'The market is crowded and very uneven. Some candidates bring real warehouse capacity, active retail relationships and a working Tmall team. Others bring a nice pitch and not much behind it. Brands coming in cold through Alibaba listings or trade shows tend to meet more of the second kind than the first. We have spent over 15 years running this filter, in beauty, food and beverage, wellness and premium lifestyle.',
   },
   {
-    n: '02',
+    icon: 'split',
     title: 'Offline, online, or both',
     body:
-      'A distributor in China is not just a retail partner anymore. The ones worth working with run offline and online at the same time. Hema, Yonghui, RT-Mart and Watsons on the shelf side. Tmall, JD, Douyin and Xiaohongshu on the platform side. Category, SKU count, price point and target city tier all decide the profile you need.',
+      'A distributor in China is more than a retail partner now. The ones worth working with run offline and online at the same time. Hema, Yonghui, RT-Mart and Watsons on the shelf side. Tmall, JD, Douyin and Xiaohongshu on the platform side. Category, SKU count, price point and target city tier all decide the profile you need.',
   },
   {
-    n: '03',
+    icon: 'package',
     title: 'Adapting products for the shelf',
     body:
       'Almost every imported product needs work before it ships. Chinese labels on packaging. Local regulatory clearance, which changes by category: NMPA for cosmetics, SAMR for food and supplements, separate regimes for medical devices. Pack sizes that shrink for tier-1 apartment kitchens, or grow for tier-3 family formats. This work happens before the distributor signs, not after.',
   },
   {
-    n: '04',
+    icon: 'horizon',
     title: 'The long game',
     body:
       'Signing a distributor is the beginning, not the finish line. Brands that disappear after the contract get pushed to the back of the shelf within two quarters. We have seen it happen in one. Brands that show up, review the numbers every month and put something behind joint trade marketing tend to stay front of store. We cover this layer when you do not have the headcount in China to do it yourself.',
@@ -159,37 +159,31 @@ const models = [
 
 const steps = [
   {
-    n: '01',
     title: 'Scoping',
     time: '1 week',
     desc: 'Category, positioning, volumes, margins, China objective. We leave this meeting with a clear brief.',
   },
   {
-    n: '02',
     title: 'Longlist',
     time: '2 to 3 weeks',
     desc: '8 to 12 qualified distributors from our network, matched to your category and channel mix.',
   },
   {
-    n: '03',
     title: 'Shortlist and interviews',
     time: '2 weeks',
     desc: 'We narrow to three to five candidates. We run the calls with you, translate where needed, compare offers.',
   },
   {
-    n: '04',
     title: 'Due diligence',
     time: '1 to 2 weeks',
     desc: 'Financials, license check, references, platform track record, warehouse and logistics setup.',
   },
   {
-    n: '05',
     title: 'Negotiation',
     time: 'Variable',
     desc: 'Terms, pricing, territory, exclusivity, marketing contribution, MOQ, payment conditions.',
   },
   {
-    n: '06',
     title: 'Handover',
     time: 'Ongoing',
     desc: 'Once signed, we step back. Or we stay on as your marketing agency or brand guardian. Your call.',
@@ -245,6 +239,9 @@ const icons: Record<string, string> = {
   shield: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>`,
   tag: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V3h9l9 9-9 9-9-9z"/><circle cx="7.5" cy="7.5" r="1.25"/></svg>`,
   chart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><rect x="5" y="12" width="3" height="7"/><rect x="11" y="7" width="3" height="12"/><rect x="17" y="3" width="3" height="16"/></svg>`,
+  split: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h6M5 12h6M5 17h6"/><path d="M19 7h-2M19 12h-2M19 17h-2"/></svg>`,
+  package: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg>`,
+  horizon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20"/><path d="M4 18a8 8 0 0 1 16 0"/><line x1="12" y1="3" x2="12" y2="6"/></svg>`,
 };
 ---
 
@@ -342,7 +339,7 @@ const icons: Record<string, string> = {
         <div class="dist-filters">
           {filters.map((f) => (
             <article class="dist-filter">
-              <span class="dist-filter__n" aria-hidden="true">{f.n}</span>
+              <span class="dist-filter__icon" aria-hidden="true" set:html={icons[f.icon]} />
               <h3 class="dist-filter__title">{f.title}</h3>
               <p class="dist-filter__body">{f.body}</p>
             </article>
@@ -513,7 +510,6 @@ const icons: Record<string, string> = {
               </div>
               <div class="dist-step__body">
                 <div class="dist-step__head">
-                  <span class="dist-step__n">{s.n}</span>
                   <h3 class="dist-step__title">{s.title}</h3>
                   <span class="dist-step__time">{s.time}</span>
                 </div>
@@ -558,8 +554,8 @@ const icons: Record<string, string> = {
           <span class="eyebrow eyebrow--on-dark">Let's talk</span>
           <h2 class="dist-cta__title">Want to talk about your category?</h2>
           <p class="dist-cta__lead">
-            Tell us where you are today and where you want to be. Real humans on our side,
-            no funnel, no forms that never get read.
+            Tell us where you are today and where you want to be. A senior member of the
+            team will reply within one working day. No sales funnel, no auto-responder.
           </p>
           <div class="dist-cta__actions">
             <a href="/contact" class="btn dist-cta__btn-primary">Contact us</a>
@@ -739,16 +735,18 @@ const icons: Record<string, string> = {
       box-shadow: var(--shadow-md);
       transform: translateY(-3px);
     }
-    .dist-filter__n {
-      display: inline-block;
-      font-size: 2rem;
-      font-weight: 700;
+    .dist-filter__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--bbg-blue-light);
       color: var(--bbg-blue);
-      line-height: 1;
-      letter-spacing: -0.02em;
       margin-bottom: var(--space-4);
-      font-feature-settings: "tnum";
     }
+    .dist-filter__icon svg { width: 24px; height: 24px; }
     .dist-filter__title {
       font-size: 1.375rem;
       line-height: 1.25;
@@ -1197,13 +1195,6 @@ const icons: Record<string, string> = {
       gap: var(--space-3);
       flex-wrap: wrap;
       margin-bottom: var(--space-2);
-    }
-    .dist-step__n {
-      font-size: 1.125rem;
-      font-weight: 700;
-      color: var(--bbg-blue);
-      letter-spacing: -0.01em;
-      font-feature-settings: "tnum";
     }
     .dist-step__title {
       font-size: 1.25rem;

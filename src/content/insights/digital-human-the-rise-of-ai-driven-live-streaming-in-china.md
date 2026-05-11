@@ -12,7 +12,7 @@ legacyUrl: "https://beyondbordergroup.com/digital-human-the-rise-of-ai-driven-li
 
 ## Rapid Viewer Engagement
 
-On April 16, 2024, JD.com introduced a groundbreaking digital avatar of its founder, Liu Qiangdong, which attracted massive attention during a livestream. Within the first 30 minutes, over 10 million viewers tuned in, and by the 40-minute mark, the audience grew to 13 million. The event set a new record by drawing nearly 20 million viewers in the first hour, showcasing the vast potential of AI in engaging large audiences effectively.
+On April 16, 2024, JD.com introduced a novel digital avatar of its founder, Liu Qiangdong, which attracted massive attention during a livestream. Within the first 30 minutes, over 10 million viewers tuned in, and by the 40-minute mark, the audience grew to 13 million. The event set a new record by drawing nearly 20 million viewers in the first hour, showcasing the vast potential of AI in engaging large audiences effectively.
 
 ## Lifelike Interaction Increases Viewer Retention
 
@@ -20,7 +20,7 @@ This digital persona, powered by JD's advanced AI technology ChatRhino, not only
 
 ## Enhanced E-Commerce Experience Through AI
 
-JD.com's use of AI like ChatRhino represents a significant shift in e-commerce, where digital avatars can handle complex customer interactions seamlessly. These AI hosts are designed to handle thousands of queries autonomously, improving efficiency and reducing operational costs. By integrating deep learning and real-time data, JD's AI platforms offer personalized shopping experiences and improve customer satisfaction.
+JD.com's use of AI like ChatRhino represents a significant shift in e-commerce, where digital avatars can handle complex customer interactions cleanly. These AI hosts are designed to handle thousands of queries autonomously, improving efficiency and reducing operational costs. By integrating deep learning and real-time data, JD's AI platforms offer personalized shopping experiences and improve customer satisfaction.
 
 ## Setting a New Standard in Digital Marketing
 

@@ -22,7 +22,7 @@ order: 14
 
 ## The brand
 
-Mission Foods prides itself on delivering authentic Mexican products, driven by the pursuit of fresh ingredients, simple recipes, diverse flavors, and wholesome products. In China, the brand extends its expertise beyond tortillas with a selection of corn chips crafted to capture the essence of Mexican cuisine, balancing flavor and crunch for everything from casual snacking to entertaining guests.
+Mission Foods makes authentic Mexican products, built on fresh ingredients and simple recipes. In China, the brand extends beyond tortillas with a range of corn chips that captures Mexican flavour and crunch, working for casual snacking and for entertaining guests.
 
 ## The challenge
 

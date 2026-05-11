@@ -10,7 +10,7 @@ heroImageAlt: "AI-driven e-commerce efficiency for Double 11 shopping festival"
 legacyUrl: "https://beyondbordergroup.com/double-11-2025-ai-ecommerce-efficiency-china/"
 ---
 
-## 11.11's Systems Check: From GMV Theater to AI-Frist Efficiency
+## 11.11's Systems Check: From GMV Theatre to AI-First Efficiency
 
 Double Eleven used to be a craze. In 2025, it's a systems test: can your brand run cleaner operations, serve calmer consumers, and compound brand equity while the whole country is shopping?
 
@@ -22,7 +22,7 @@ Under the surface runs an AI-led operating model. Promotions, ranking, forecasti
 
 ### Architect the Creative OS that make ops convert
 
-11.11 isn't just inventory math. It's the content system that turns operations into outcomes. That's our lane.
+11.11 is more than inventory math. It is the content system that turns operations into outcomes. That is our lane.
 
 * Codify Brand DNA into a Creative OS. HubStudio translates visual codes and audience truths into reusable intelligence like private prompt packs, negative guardrails, and consistency sets for product, people, color, and type.
 

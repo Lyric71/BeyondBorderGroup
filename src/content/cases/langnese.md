@@ -43,4 +43,4 @@ From there we worked with the client and distributor to rebuild the approach: ne
 
 ## Results
 
-The decline was reversed. Brand and distributor agreed on nine growth pillars that became the operating plan for the next phase, and Langnese opened new regional channels where it previously had zero presence. Distributor commitment was restored, and Chinese consumers finally had genuine reasons to choose Langnese over local alternatives, not just a higher price tag.
+The decline was reversed. Brand and distributor agreed on nine growth pillars that became the operating plan for the next phase, and Langnese opened new regional channels where it previously had zero presence. Distributor commitment was restored, and Chinese consumers finally had genuine reasons to choose Langnese over local alternatives, beyond a higher price tag.

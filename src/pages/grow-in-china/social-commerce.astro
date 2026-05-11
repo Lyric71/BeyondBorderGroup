@@ -4,14 +4,17 @@ import { getCollection } from 'astro:content';
 
 const hurdles = [
   {
+    icon: 'user-search',
     title: 'Understanding local consumer behaviour',
     desc: 'Chinese shoppers discover, research and buy inside social feeds. Trust sits with creators, not brands, and tastes shift faster than in any other market.',
   },
   {
+    icon: 'network',
     title: 'Adapting to platform ecosystems',
     desc: 'Douyin, WeChat and RED each have their own algorithm, content formats, commerce flows and creator economy. A post that works on one flops on the others.',
   },
   {
+    icon: 'shield',
     title: 'Compliance with local rules',
     desc: 'Advertising law, livestream rules, data protection (PIPL), product claims. Getting social commerce right means staying inside the guardrails while still moving fast.',
   },
@@ -117,17 +120,17 @@ const platforms = [
 
 const steps = [
   {
-    n: '01',
+    icon: 'compass',
     title: 'Plan and research',
     desc: 'We combine your goals, industry expertise and product with our platform data to craft the optimal social commerce strategy.',
   },
   {
-    n: '02',
+    icon: 'rocket',
     title: 'Launch and promote',
     desc: 'We design your social storefronts, brief creators, and generate traffic through KOL, KOC, paid media and content.',
   },
   {
-    n: '03',
+    icon: 'trend',
     title: 'Campaign and optimise',
     desc: 'We run campaigns for 11.11, 6.18 and category events, and continuously refine creative, media and offers against live performance.',
   },
@@ -207,6 +210,11 @@ const icons: Record<string, string> = {
   network: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M7 8l4 8M17 8l-4 8"/></svg>`,
   truck: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>`,
   monitor: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18"/><circle cx="6" cy="6.5" r=".5" fill="currentColor"/><circle cx="8" cy="6.5" r=".5" fill="currentColor"/><circle cx="10" cy="6.5" r=".5" fill="currentColor"/></svg>`,
+  'user-search': `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="4"/><path d="M2 21c1.5-4 4.5-6 8-6 1.2 0 2.3.2 3.3.6"/><circle cx="17.5" cy="17.5" r="3"/><path d="m22 22-2.5-2.5"/></svg>`,
+  shield: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>`,
+  compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16 8 13 13 8 16 11 11 16 8"/></svg>`,
+  rocket: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4c4 0 6 2 6 6-4 0-6 2-6 6-4 0-6-2-6-6 4 0 6-2 6-6z"/><circle cx="14" cy="10" r="1.5"/><path d="M8 16l-3 3M11 19l-2 2M5 13l-2 2"/></svg>`,
+  trend: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg>`,
 };
 ---
 
@@ -256,9 +264,9 @@ const icons: Record<string, string> = {
         </header>
 
         <div class="scc-hurdles">
-          {hurdles.map((h, i) => (
+          {hurdles.map((h) => (
             <article class="scc-hurdle">
-              <span class="scc-hurdle__n" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+              <span class="scc-hurdle__icon" aria-hidden="true" set:html={icons[h.icon]} />
               <h3>{h.title}</h3>
               <p>{h.desc}</p>
             </article>
@@ -281,20 +289,6 @@ const icons: Record<string, string> = {
               paid social engines. Strong platform relationships and disciplined execution
               let us deliver tailored strategies that actually move sales.
             </p>
-            <div class="scc-value__stats">
-              <div>
-                <span class="scc-value__stat-value">15+</span>
-                <span class="scc-value__stat-label">Years of China operations</span>
-              </div>
-              <div>
-                <span class="scc-value__stat-value">3</span>
-                <span class="scc-value__stat-label">Core platforms: Douyin, WeChat, RED</span>
-              </div>
-              <div>
-                <span class="scc-value__stat-value">3</span>
-                <span class="scc-value__stat-label">Offices: Shanghai, HK, Paris</span>
-              </div>
-            </div>
           </div>
 
           <ul class="scc-promise">
@@ -422,7 +416,7 @@ const icons: Record<string, string> = {
         <ol class="scc-steps">
           {steps.map((s) => (
             <li class="scc-step">
-              <span class="scc-step__n">{s.n}</span>
+              <span class="scc-step__icon" aria-hidden="true" set:html={icons[s.icon]} />
               <h3 class="scc-step__title">{s.title}</h3>
               <p class="scc-step__desc">{s.desc}</p>
             </li>
@@ -608,16 +602,18 @@ const icons: Record<string, string> = {
       border-color: var(--bbg-blue);
       box-shadow: var(--shadow-md);
     }
-    .scc-hurdle__n {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
+    .scc-hurdle__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--bbg-blue-light);
       color: var(--bbg-blue);
-      line-height: 1;
-      letter-spacing: -0.02em;
       margin-bottom: var(--space-4);
-      font-feature-settings: "tnum";
     }
+    .scc-hurdle__icon svg { width: 24px; height: 24px; }
     .scc-hurdle h3 {
       font-size: 1.25rem;
       line-height: 1.25;
@@ -964,16 +960,18 @@ const icons: Record<string, string> = {
       border-color: var(--bbg-blue);
       box-shadow: var(--shadow-md);
     }
-    .scc-step__n {
-      display: block;
-      font-size: 2.5rem;
-      font-weight: 700;
+    .scc-step__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--bbg-blue-light);
       color: var(--bbg-blue);
-      line-height: 1;
-      letter-spacing: -0.02em;
       margin-bottom: var(--space-4);
-      font-feature-settings: "tnum";
     }
+    .scc-step__icon svg { width: 24px; height: 24px; }
     .scc-step__title {
       font-size: 1.375rem;
       line-height: 1.25;

@@ -1,12 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-const heroStats = [
-  { value: '6 to 10', label: 'People per cohort. Small by design.' },
-  { value: '3 to 5', label: 'Days on the ground, typically.' },
-  { value: '20 yrs', label: 'Running operations inside the market.' },
-];
-
 const heroTags = [
   'eCommerce', 'Retail', 'Content', 'AI', 'Distribution', 'Platforms',
 ];
@@ -105,7 +99,6 @@ const trackIcon: Record<string, string> = {
 
 const tracks = [
   {
-    n: '01',
     icon: 'shop',
     title: 'eCommerce and digital',
     lead: 'Four days across Tmall, Douyin, new retail and fulfilment. Platforms, people and unit economics.',
@@ -142,7 +135,6 @@ const tracks = [
     ],
   },
   {
-    n: '02',
     icon: 'cpu',
     title: 'AI and technology',
     lead: 'Four days inside the systems shaping commerce, content, retail and logistics. Working AI, not vendor demos.',
@@ -244,20 +236,6 @@ const related = [
     </div>
   </section>
 
-  {/* ---------- STATS STRIP ---------- */}
-  <section class="le-stats-strip">
-    <div class="container">
-      <ul class="le-stats">
-        {heroStats.map(s => (
-          <li class="le-stat">
-            <span class="le-stat__value">{s.value}</span>
-            <span class="le-stat__label">{s.label}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
-
   {/* ---------- WHAT IT IS ---------- */}
   <section class="section section--alt">
     <div class="container">
@@ -348,9 +326,9 @@ const related = [
       </header>
 
       <div class="le-why">
-        {whyDifferent.map((w, i) => (
+        {whyDifferent.map((w) => (
           <article class="le-why__item">
-            <span class="le-why__num">{String(i + 1).padStart(2, '0')}</span>
+            <span class="le-why__mark" aria-hidden="true"></span>
             <h3 class="le-why__title">{w.h}</h3>
             <p>{w.p}</p>
           </article>
@@ -401,7 +379,6 @@ const related = [
           <article class="le-track">
             <div class="le-track__rail">
               <span class="le-track__icon" aria-hidden="true" set:html={trackIcon[t.icon]} />
-              <span class="le-track__num">{t.n}</span>
             </div>
 
             <div class="le-track__content">
@@ -734,14 +711,13 @@ const related = [
     box-shadow: var(--shadow-md);
     border-color: var(--bbg-blue);
   }
-  .le-why__num {
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--bbg-blue);
-    letter-spacing: -0.02em;
+  .le-why__mark {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background: var(--bbg-blue);
+    border-radius: 999px;
     margin-bottom: var(--space-3);
-    line-height: 1;
   }
   .le-why__title {
     font-size: var(--fs-h4);
@@ -829,12 +805,6 @@ const related = [
     background: rgba(255, 255, 255, 0.14);
   }
   .le-track__icon svg { width: 24px; height: 24px; }
-  .le-track__num {
-    font-size: 2.75rem;
-    font-weight: 700;
-    line-height: 0.9;
-    letter-spacing: -0.03em;
-  }
 
   .le-track__content { padding: var(--space-6) var(--space-6) var(--space-6) 0; }
   .le-track__header {

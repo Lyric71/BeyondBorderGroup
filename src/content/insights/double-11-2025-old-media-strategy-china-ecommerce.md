@@ -48,7 +48,7 @@ On the surface, it looks like a stylistic choice. More shows, more jokes, more l
 
 Early Double 11 felt like a shared countdown. Everyone knew when it started and when it ended. As the festival stretched into weeks of pre-sale and long tail, that sense of we are all here now faded.
 
-Variety style launch nights, live galas, and heavily promoted specials pull focus back to a few big moments. They give platforms a central stage again, not just another slot in the scroll.
+Variety style launch nights, live galas, and heavily promoted specials pull focus back to a few big moments. They give platforms a central stage again, instead of yet another slot in the scroll.
 
 ### Owning the jokes before consumers do
 
@@ -72,7 +72,7 @@ The message is simple. We know you are watching the details. We are willing to p
 
 Under all of this sits one hard truth.
 
-Double 11 did not just create more buyers. It created better operators on the consumer side.
+Double 11 did more than create more buyers. It created better operators on the consumer side.
 
 People have been training for this festival for more than a decade. They know how each platform plays to its strengths, when a claim feels wrong, and how price, quality, service, and cross-border options line up in their category.
 

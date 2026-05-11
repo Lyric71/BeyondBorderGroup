@@ -13,7 +13,7 @@ const promises = [
   },
   {
     title: 'Privileged platform relationships',
-    desc: '15 years of working with platforms and distributors. We open doors faster, and we know who actually delivers.',
+    desc: '15 years of working with platforms and distributors. We open doors faster, and we know who delivers and who does not.',
   },
 ];
 
@@ -21,79 +21,100 @@ const services = [
   {
     icon: 'store',
     title: 'Marketplace',
-    desc: 'For over 15 years we have managed China eCommerce marketplaces for global brands. A data driven strategy boosts your sales growth and margins on Tmall, Taobao, JD and Pinduoduo.',
+    short: 'Tmall · JD · Taobao · Pinduoduo',
+    desc: '15 years on Tmall, JD, Taobao and Pinduoduo. Data driven strategy that lifts sales and margins.',
+    points: ['Tmall flagship operations', 'JD direct and POP', 'Taobao seeding plays'],
+    color: '#269ADA',
+    colorSoft: '#E8F4FC',
   },
   {
     icon: 'bag',
     title: 'DTC, Direct to Consumers',
-    desc: 'We attract visitors to your DTC store in China through a mix of free, paid and earned traffic. In China, DTC success hinges on WeChat and leverages private traffic.',
+    short: 'WeChat · Mini-programs · CRM',
+    desc: 'Traffic to your DTC store through free, paid and earned reach, anchored on WeChat and private traffic.',
+    points: ['WeChat mini-program stores', 'Private traffic CRM', 'Loyalty and lifecycle'],
+    color: '#0EA46C',
+    colorSoft: '#E6F5EE',
   },
   {
     icon: 'truck',
     title: 'Distribution',
-    desc: 'Our network of online and offline distributors spans every region of China. We find the right distributor for your product and your category.',
+    short: 'Online · Offline · Every region',
+    desc: 'Online and offline distributors across every region of China, matched to your category.',
+    points: ['Distributor sourcing and vetting', 'Regional coverage maps', 'O2O integration'],
+    color: '#7C5DFA',
+    colorSoft: '#F0EDFE',
   },
   {
     icon: 'broadcast',
     title: 'Social commerce',
-    desc: 'Social commerce is the primary driver of commerce growth in China. We run large-scale campaigns with KOLs and KOCs on Douyin and TikTok to sell your products.',
+    short: 'Douyin · Xiaohongshu · KOL',
+    desc: 'The engine of commerce growth in China. KOL and KOC campaigns on Douyin and TikTok that sell.',
+    points: ['Douyin shop and livestream', 'Xiaohongshu seeding', 'KOL and KOC programs'],
+    color: '#E54B6E',
+    colorSoft: '#FCEAEF',
   },
 ];
 
 const models = [
   {
     name: 'Marketing agency',
-    desc: 'You keep ownership of the China operation, we run the marketing engine that feeds it.',
+    tag: 'You run sales, you hold inventory',
+    desc: 'You keep the China operation in your own hands. We run the marketing engine that feeds it.',
+    when: 'Best when you already have a distributor, a TP or your own team selling in China, and you need a senior marketing partner to build the brand and protect equity.',
     bullets: [
-      'Design and content for marketplaces and social commerce',
-      'eCommerce campaigns for festivals like 11.11 and 6.18',
-      'Media buying optimised for ROI',
+      'Brand strategy and content for Tmall, JD, Douyin and Xiaohongshu',
+      'Campaigns for 11.11, 6.18, Chinese New Year and category moments',
+      'KOL and KOC programs, paid media and CRM on WeChat',
+      'Performance reporting tied to your sales channels',
     ],
-    pricing: 'Agency fees based on service complexity',
+    pricing: 'Agency fees based on scope. Monthly retainer or project basis.',
     highlight: false,
   },
   {
-    name: 'TP, Trade Partner',
-    desc: 'We operate your stores end-to-end on Tmall, JD and Douyin under our China licenses.',
+    name: 'Sales agent',
+    tag: 'You hold inventory, we find your buyer',
+    desc: 'You want to sell through a Chinese distributor but you do not know who to trust. We find the right one, vet them and negotiate the deal.',
+    when: 'Best when you want a fast route to market without setting up your own operation, and you need someone on your side of the table during distributor talks.',
     bullets: [
-      'Store design, content and merchandising',
-      'Media management, order processing and logistics',
-      'Customer service and after-sales support',
+      'Map the qualified distributors in your category, online and offline',
+      'Shortlist 15 to 30 candidates with a verified track record',
+      'Prepare your pitch in Chinese, run the meetings, negotiate terms',
+      'Support contract review and first-order logistics',
+      'Stay on the ground after signing to keep the partner engaged',
     ],
-    pricing: 'Monthly fixed fee per store, plus commission on sales',
+    pricing: 'Project fee for the search and negotiation.',
+    highlight: false,
+  },
+  {
+    name: 'TP, trade partner',
+    tag: 'We run sales, you hold inventory',
+    desc: 'We operate your stores end to end on Tmall, JD and Douyin under our China licenses. You keep ownership of the brand, the inventory and the customer data.',
+    when: 'Best when you want a Chinese flagship you control, but you do not want to set up a China entity or hire a local team yet.',
+    bullets: [
+      'Store design, content, merchandising and campaign pages',
+      'Day-to-day operations, media buying, order processing',
+      'Warehousing and fulfilment through our logistics partners',
+      'Customer service and after-sales in Mandarin',
+      'Monthly reporting tied to your global commercial team',
+    ],
+    pricing: 'Monthly fixed fee per store, plus commission on sales.',
     highlight: true,
   },
   {
-    name: 'Distributor',
-    desc: 'We act as your master exclusive distributor for China, buying and managing inventory.',
+    name: 'Exclusive distributor',
+    tag: 'We run sales, we hold inventory',
+    desc: 'We act as your master distributor for China. We buy the product, hold the stock and sell it across online and offline channels.',
+    when: 'Best when you want a single point of accountability for the China P&L, and you would rather not invest in setting up the commercial side yourself.',
     bullets: [
+      'Ownership of the China P&L end to end',
       'Marketing, sales, logistics and inventory management',
-      'Online and offline distribution, direct and indirect',
-      'Single point of accountability for the China P&L',
+      'Distribution online and offline, direct and indirect',
+      'Compliance, regulatory and platform relationships',
+      'Reporting on sales, sell-through and brand health',
     ],
-    pricing: 'Growth margin on products',
+    pricing: 'Margin on product, agreed up front.',
     highlight: false,
-  },
-];
-
-const cases = [
-  {
-    title: 'iGuzzini',
-    sub: 'Luxury lighting in China',
-    desc: 'Tmall and content strategy for an Italian architectural lighting house entering Chinese A&D.',
-    href: '/work',
-  },
-  {
-    title: 'Kerry Food',
-    sub: 'DaVinci gourmet on Tmall',
-    desc: 'Tmall flagship and growth playbook for premium syrups, sauces and smoothies in China.',
-    href: '/work',
-  },
-  {
-    title: 'Viessmann',
-    sub: 'Heating solutions on Tmall',
-    desc: 'Tmall eCommerce build and operations for a German heating and boiling solutions leader.',
-    href: '/work',
   },
 ];
 
@@ -101,46 +122,54 @@ const platforms = [
   {
     name: 'Douyin',
     cn: '抖音',
-    sub: 'Official Tiktok and Douyin Marketing Partner',
+    sub: 'Official TikTok and Douyin Marketing Partner. Short video, livestream and shop in one funnel.',
     logo: '/Images/platforms/douyin-logo.svg',
     href: '/learn-china/platforms',
+    brandColor: '#000000',
+    accent: '#FE2C55',
   },
   {
     name: 'Tmall',
     cn: '天猫',
-    sub: '15+ years on the platform, certified TP',
+    sub: '15+ years on the platform, certified TP. Flagship stores, brand zone and festival operations.',
     logo: '/Images/platforms/tmall-logo.svg',
     href: '/learn-china/platforms',
+    brandColor: '#FF0036',
+    accent: '#FF6B00',
   },
   {
-    name: 'Jing Dong',
+    name: 'JD',
     cn: '京东',
-    sub: 'Marketplace or retail distribution, we manage both',
+    sub: 'Marketplace or retail distribution, we manage both. Strong for home, electronics, mother and baby.',
     logo: '/Images/platforms/jd-logo.png',
     href: '/learn-china/platforms',
+    brandColor: '#E1251B',
+    accent: '#C81E1E',
   },
   {
     name: 'WeChat',
     cn: '微信',
-    sub: 'eCommerce and loyalty mini-programs',
+    sub: 'eCommerce and loyalty mini-programs. CRM, private traffic and channel-based commerce.',
     logo: '/Images/platforms/wechat-logo.svg',
     href: '/learn-china/platforms',
+    brandColor: '#07C160',
+    accent: '#06AD56',
   },
 ];
 
 const steps = [
   {
-    n: '01',
+    icon: 'compass',
     title: 'Plan and research',
     desc: 'We combine your goals, industry expertise and product with our data insights to craft the optimal eCommerce strategy.',
   },
   {
-    n: '02',
+    icon: 'rocket',
     title: 'Launch and promote',
     desc: 'We design and open your sales channels in China, then generate traffic through KOL, KOC, paid media and content.',
   },
   {
-    n: '03',
+    icon: 'trend',
     title: 'Campaign and optimise',
     desc: 'We run eCommerce campaigns for 11.11, 6.18 and other festivals, and continuously optimise media, operations and sales.',
   },
@@ -148,93 +177,71 @@ const steps = [
 
 const aiBenefits = [
   {
+    icon: 'heart',
     title: 'Better consumer experience',
     desc: 'AI improves personalisation across the funnel, lifting conversion and shopper satisfaction.',
   },
   {
+    icon: 'coin',
     title: 'Lower operational cost',
     desc: 'AI optimises supply chains and logistics, reducing waste and freeing margin.',
   },
   {
+    icon: 'avatar',
     title: 'Digital humans',
     desc: 'AI-powered virtual hosts run livestreams 24/7 and answer shopper questions in-feed.',
   },
   {
+    icon: 'bubble',
     title: 'AI chatbots',
     desc: 'Customer service costs drop when chatbots handle routine inquiries, returns and tracking.',
   },
   {
+    icon: 'spark',
     title: 'AIGC content',
     desc: 'AI-generated content produces variants for product pages, ads and creator briefs at scale.',
   },
 ];
 
-const faqs = [
+const contextCards = [
   {
-    q: 'What does it cost to start an eCommerce business in China?',
-    a: 'Costs vary widely with scale and ambition. Initial spend covers store setup, platform deposits, opening inventory, content production and launch media. Plan for ongoing platform fees, logistics, warehousing, customer service and recurring marketing. We give you a transparent budget range during scoping.',
+    image: '/Images/enter-china/social-commerce-phone.png',
+    alt: 'Hands holding a smartphone showing a Chinese livestream commerce stream',
+    title: 'eCommerce localization goes beyond translation',
+    body: 'Localisation runs deeper than language. Chinese shoppers buy through social commerce and livestreams, so any presence has to feel native.',
   },
   {
-    q: 'How important is social commerce in China?',
-    a: 'It is the engine of growth. Douyin, WeChat and Xiaohongshu integrate shopping with social media so consumers buy inside the app, driven by short video, livestream and KOL recommendations. Most categories now win on social before they win on search.',
-  },
-  {
-    q: 'Can foreign companies sell through cross-border eCommerce without a legal entity in China?',
-    a: 'Yes. Cross-border channels like Tmall Global, JD Worldwide and Douyin Global let foreign companies sell directly to Chinese consumers. Goods ship from bonded warehouses or by direct mail, and platforms handle most of the customs flow.',
-  },
-  {
-    q: 'Is product registration required for cross-border eCommerce?',
-    a: 'For most categories, no. Cross-border channels are exempt from the domestic registration that retail in China requires. Some categories still need NMPA or SAMR approval before they can sell, even cross-border. We assess this in the first phase of every engagement.',
-  },
-  {
-    q: 'What is the latest data on China eCommerce?',
-    a: "China's eCommerce sales are projected to exceed 3 trillion USD in 2024, the largest market in the world by a wide margin. Growth concentrates in social commerce, premium categories and instant retail, while traditional marketplace growth has slowed.",
-  },
-  {
-    q: 'Which categories are growing fastest in China?',
-    a: 'Healthcare, luxury, premium beauty, electronics and fashion lead, supported by rising domestic consumption and a maturing middle class. Functional food, pet care and outdoor are emerging fast in cross-border.',
-  },
-  {
-    q: 'What are the typical operating costs?',
-    a: 'Platform fees, commission, deposit, logistics, warehousing, customer service, content production and ongoing media. Media usually represents the largest variable line. We model the full cost stack so you can compare scenarios.',
-  },
-  {
-    q: 'What is a TP and what does it do?',
-    a: 'A TP, or Tmall Partner, is a certified operator that runs the platform side of your business. The TP manages store operations, marketing, customer service and logistics on your behalf, so you do not need a dedicated China team to launch.',
-  },
-  {
-    q: 'How much does media cost for eCommerce in China?',
-    a: 'Costs depend on platform, category and competitive intensity. Tmall and JD media inflate around 11.11 and 6.18, Douyin and RED move with creator availability. We size budgets against realistic CAC and ROAS targets, not vendor templates.',
-  },
-  {
-    q: 'How do you keep costs under control?',
-    a: 'AI for customer service, AI-driven supply chain analytics, automated creative and disciplined media planning. Technology cuts costs but the bigger lever is choosing the right business model: marketing agency, TP or distributor, depending on your stage and ambition.',
+    image: '/Images/platforms/tmall-scene.png',
+    alt: 'A Tmall storefront scene representing the scale of platform competition in China',
+    title: 'Local competition is fierce, agile and well-funded',
+    body: 'Alibaba, JD, Douyin and Pinduoduo set the pace, and local brands move just as fast. Staying visible takes constant innovation.',
   },
 ];
 
-const moreWays = [
-  {
-    tag: 'Enter China',
-    title: 'Market entry consulting',
-    desc: 'Strategy, business model and partner selection before you launch.',
-    href: '/enter-china/market-entry-consulting',
-    image: '/Images/enter-china/team.png',
-  },
-  {
-    tag: 'Grow in China',
-    title: 'Social commerce',
-    desc: 'Campaigns, KOL partnerships and livestreams that turn social into a revenue channel.',
-    href: '/work',
-    image: '/Images/enter-china/social.jpg',
-  },
-  {
-    tag: 'Grow in China',
-    title: 'Websites in China',
-    desc: 'Sites built to load fast inside the Great Firewall and rank on Baidu and Chinese AI search.',
-    href: '/work',
-    image: '/Images/enter-china/website.jpg',
-  },
+const faqs = [
+  { cat: 'Setup', q: 'How long does it take to launch on Tmall or JD?', a: '8 to 12 weeks for cross-border, 12 to 16 weeks for domestic. Most of that timeline is content production, store design and brand audit. The platform application itself is a small slice.' },
+  { cat: 'Strategy', q: 'Tmall, JD or Douyin first?', a: 'Depends on your category. Beauty, fashion and lifestyle usually start on Tmall or Douyin. Home, electronics, mother and baby do well on JD. Premium niche brands often seed on Xiaohongshu for six to twelve months before opening a flagship.' },
+  { cat: 'Setup', q: 'Cross-border or domestic, how do I choose?', a: 'Cross-border launches faster, runs lighter on compliance and ships from bonded warehouses or direct mail. It caps you at a few hundred million RMB in some categories. Domestic gives full retail access and broader marketing but needs an entity, a tax structure and NMPA or SAMR filings.' },
+  { cat: 'Cost', q: 'What sales volume do I need to break even?', a: 'A rough rule of thumb: 5 to 8 million RMB in annual GMV for a flagship store to fund itself, once you factor TP fees, content, media and platform commissions. Lower if margins are strong. Higher in heavy-discount categories.' },
+  { cat: 'Cost', q: 'What does a TP actually charge?', a: 'Two layers. A fixed monthly fee per store, typically 30 to 80 thousand RMB depending on scope. Plus a commission on net sales, usually 5 to 12 percent. Setup, content production and media are quoted separately.' },
+  { cat: 'Operations', q: 'How do I pick the right TP?', a: 'Look at category track record first, then store count, team size and access to platform reps. Ask for case studies in your exact category and references you can actually call. Watch for TPs who push templates instead of strategy.' },
+  { cat: 'Operations', q: 'What happens to my brand if I leave my TP?', a: 'You own the store, the trademark and the customer data. The TP is a service provider. Plan the handover in the contract from day one: store credentials, data export, vendor list and content rights all transfer back to you on exit.' },
+  { cat: 'Legal', q: 'Do I need to register a Chinese trademark before launching?', a: 'Yes. Register your brand and key sub-brands in Mandarin and Latin script before you launch. China is first-to-file. Squatters file early and force you to buy back your own name, which is slow and expensive.' },
+  { cat: 'Operations', q: 'How do returns and refunds work on Tmall and JD?', a: 'Tmall enforces a 7-day no-questions refund window. JD runs something similar. Build it into your unit economics. Return rates run 5 to 25 percent depending on category, with apparel and shoes at the top end.' },
+  { cat: 'Marketing', q: 'How much do KOL collaborations cost?', a: 'Xiaohongshu nano creators run a few thousand RMB per post. Mid-tier accounts sit in the tens to low hundreds of thousands. Top tier on Douyin can pass one million RMB per livestream slot. Tier your spend instead of betting on a single name.' },
+  { cat: 'Strategy', q: 'Douyin vs TikTok, what is the difference?', a: 'Same codebase, separate markets. Douyin runs full eCommerce, livestream and ad stacks inside China. TikTok Shop runs in the US, UK, Southeast Asia and a handful of others. You pick by where your buyer lives, not by app preference.' },
+  { cat: 'Operations', q: 'Can I run my own Tmall store without a TP?', a: 'Yes, if you have a Chinese entity, a Mandarin-speaking team and someone on staff who knows platform operations. Most foreign brands try this once, then bring in a TP after their first 11.11.' },
+  { cat: 'Legal', q: 'How do I actually get paid for sales in China?', a: 'Cross-border platforms settle in USD or EUR to your home account, usually monthly. Domestic stores settle in RMB to a Chinese bank account. Repatriating funds out requires the right entity structure, a real business reason and proper tax filings.' },
+  { cat: 'Legal', q: 'Which categories need special approval or filings?', a: 'Cosmetics, supplements, food, medical devices, dual-use chemicals and most anything ingestible or applied to skin. NMPA, SAMR or customs filings can take three to twelve months. Map your category early or you miss your launch window.' },
+  { cat: 'Marketing', q: 'How important is Xiaohongshu before a launch?', a: 'Very, for premium and lifestyle brands. Chinese shoppers research on Xiaohongshu before they buy on Tmall or Douyin. A six to twelve month seeding plan with 50 to 200 creators is a credible warm-up for a flagship opening.' },
+  { cat: 'Cost', q: 'How much working capital should I plan for?', a: 'Six to nine months of operating cost on top of opening inventory. That covers the gap between launch spend and the first stable cash flow once you factor returns, refunds and platform settlement cycles.' },
+  { cat: 'Marketing', q: 'Is livestream commerce worth the effort?', a: 'In some categories it is now the default channel. Beauty, food, apparel and home sell heavily on live. Plan for 8 to 20 sessions a month for a flagship, mixing store-led and KOL-led broadcasts. Run for three months minimum before you judge the ROI.' },
+  { cat: 'Strategy', q: 'Why do foreign brands fail in China?', a: 'Two reasons, most of the time. They underspend on marketing because they assume the brand is known. Or they ship the global product without adapting it to local taste, format or price. Both kill traction in year one.' },
+  { cat: 'Strategy', q: 'How do you measure success on a flagship store?', a: 'Sales growth and contribution margin first. Then repeat purchase rate, organic search rank on platform, share of voice in category and brand health surveys. Festival weeks tell a story. The quiet months in between tell the truth.' },
+  { cat: 'Cost', q: 'How do you keep operating costs under control?', a: 'AI for customer service, AI-driven supply chain analytics, automated creative and disciplined media planning. The bigger lever is picking the right model in the first place: marketing agency, TP or distributor, depending on stage and ambition.' },
 ];
+
+const faqCategories = ['All', 'Setup', 'Cost', 'Operations', 'Strategy', 'Marketing', 'Legal'];
 
 const allInsights = await getCollection('insights', ({ data }) => !data.draft);
 const highlightedSlugs = [
@@ -251,6 +258,14 @@ const icons: Record<string, string> = {
   bag: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>`,
   truck: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>`,
   broadcast: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.5 7.5a6 6 0 0 1 0 9M7.5 7.5a6 6 0 0 0 0 9"/><path d="M19.5 4.5a10 10 0 0 1 0 15M4.5 4.5a10 10 0 0 0 0 15"/></svg>`,
+  compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16 8 13 13 8 16 11 11 16 8"/></svg>`,
+  rocket: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4c4 0 6 2 6 6-4 0-6 2-6 6-4 0-6-2-6-6 4 0 6-2 6-6z"/><circle cx="14" cy="10" r="1.5"/><path d="M8 16l-3 3M11 19l-2 2M5 13l-2 2"/></svg>`,
+  trend: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg>`,
+  heart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6a5 5 0 0 0-8.8-3.2 5 5 0 0 0-8.8 3.2c0 5.6 8.8 11 8.8 11s8.8-5.4 8.8-11z"/></svg>`,
+  coin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h5a2 2 0 1 1 0 4H9m6 4H9"/></svg>`,
+  avatar: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>`,
+  bubble: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-4a8 8 0 1 1 16-4z"/><circle cx="9" cy="12" r=".75" fill="currentColor"/><circle cx="12" cy="12" r=".75" fill="currentColor"/><circle cx="15" cy="12" r=".75" fill="currentColor"/></svg>`,
+  spark: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg>`,
 };
 ---
 
@@ -258,14 +273,16 @@ const icons: Record<string, string> = {
   title="Cross-Border eCommerce Setup in China | Tmall Global, JD Worldwide, Douyin | Beyond Border Group"
   description="We set up and grow your eCommerce in China. Tmall Global, JD Worldwide, Douyin, WeChat and RED, with marketing agency, TP and distributor models. 15 years of operational experience."
 >
+  <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
   <article class="cbs">
 
     {/* ---------- HERO ---------- */}
-    <section class="cbs-hero">
-      <div class="cbs-hero__bg" aria-hidden="true">
-        <img src="/Images/enter-china/ecommerce.jpg" alt="" />
+    <section class="cbs-hero" data-hero>
+      <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
+        <img src="/Images/enter-china/hero-shopper-tier3.png" alt="A shopper in a tier-3 Chinese city browsing eCommerce on a smartphone at home" />
       </div>
       <div class="cbs-hero__overlay" aria-hidden="true"></div>
+      <div class="cbs-hero__grain" aria-hidden="true"></div>
 
       <div class="container cbs-hero__inner">
         <nav class="cbs-hero__crumbs" aria-label="Breadcrumb">
@@ -273,54 +290,68 @@ const icons: Record<string, string> = {
           <span aria-hidden="true">/</span>
           <a href="/#services">Enter China</a>
         </nav>
-        <span class="eyebrow eyebrow--on-dark">eCommerce in China</span>
-        <h1 class="cbs-hero__title">eCommerce in China, demanding and costly, can become your biggest growth lever.</h1>
-        <p class="cbs-hero__lead">
+        <span class="eyebrow eyebrow--on-dark cbs-reveal">eCommerce in China</span>
+        <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
+          <span class="cbs-hero__title-row">eCommerce in China is</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent">demanding and costly.</span>
+          <span class="cbs-hero__title-row">It can also be your</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">biggest growth lever.</span>
+        </h1>
+        <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
           We set up and grow your eCommerce presence in China. Tmall Global, JD Worldwide,
           Douyin, WeChat and RED. 15 years of operations behind every recommendation.
         </p>
-        <div class="cbs-hero__actions">
-          <a href="/contact" class="btn btn--primary">Talk to us</a>
-          <a href="#how-we-work" class="btn btn--ghost-light">See how we work</a>
+        <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
+          <a href="/contact" class="btn btn--primary cbs-magnetic">Talk to us</a>
+          <a href="#how-we-work" class="btn btn--ghost-light cbs-magnetic">See how we work</a>
+        </div>
+
+        <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
+          <div class="cbs-hero__meta-item">
+            <span class="cbs-hero__meta-num" data-counter="15" data-suffix="+">0</span>
+            <span class="cbs-hero__meta-label">years on Tmall &amp; JD</span>
+          </div>
+          <div class="cbs-hero__meta-item">
+            <span class="cbs-hero__meta-num" data-counter="200" data-suffix="+">0</span>
+            <span class="cbs-hero__meta-label">brand launches</span>
+          </div>
+          <div class="cbs-hero__meta-item">
+            <span class="cbs-hero__meta-num" data-counter="3" data-suffix=" cities">0</span>
+            <span class="cbs-hero__meta-label">Shanghai, HK, Paris</span>
+          </div>
         </div>
       </div>
+
+      <a href="#two-truths" class="cbs-hero__scroll" aria-label="Scroll to next section">
+        <span class="cbs-hero__scroll-line"></span>
+        <span class="cbs-hero__scroll-text">Scroll</span>
+      </a>
     </section>
 
     {/* ---------- CONTEXT: LOCALIZATION + COMPETITION ---------- */}
-    <section class="section">
+    <section id="two-truths" class="section">
       <div class="container">
-        <header class="section-header section-header--center">
+        <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">eCommerce in China</span>
           <h2>Two truths to internalise before you launch</h2>
           <p class="section-header__lead">
             Most brands enter China with strategies that worked elsewhere. Here is what
-            actually shapes outcomes on the ground.
+            shapes outcomes on the ground.
           </p>
         </header>
 
         <div class="cbs-context">
-          <div class="cbs-context__card">
-            <span class="cbs-context__num" aria-hidden="true">01</span>
-            <h3>eCommerce localization is not translation</h3>
-            <p>
-              To succeed in Chinese eCommerce, localisation has to go beyond translation.
-              You adapt the marketing strategy to local cultural cues and to the way Chinese
-              consumers buy, where social commerce and livestream shopping drive most of
-              the decision. We help brands build a presence on platforms like WeChat and
-              Douyin that feels local, not lifted.
-            </p>
-          </div>
-
-          <div class="cbs-context__card cbs-context__card--alt">
-            <span class="cbs-context__num" aria-hidden="true">02</span>
-            <h3>Local competition is fierce, agile and well-funded</h3>
-            <p>
-              The market is dominated by Alibaba, JD, Douyin and Pinduoduo, and by local
-              brands that move faster than most international teams. New entrants need a
-              partner who can execute marketing strategies that earn visibility against
-              agile local players. Continuous innovation is the price of staying relevant.
-            </p>
-          </div>
+          {contextCards.map((c, i) => (
+            <article class={`cbs-context__card${i === 1 ? ' cbs-context__card--alt' : ''} cbs-reveal`} style={`--reveal-delay: ${i * 120}ms;`}>
+              <figure class="cbs-context__media">
+                <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
+              </figure>
+              <div class="cbs-context__body">
+                <h3>{c.title}</h3>
+                <p>{c.body}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
@@ -333,26 +364,10 @@ const icons: Record<string, string> = {
             <span class="eyebrow">What we do</span>
             <h2>We set up and grow your eCommerce presence in China.</h2>
             <p>
-              With 15 years of expertise, our team has supported global brands and SMEs
-              navigating Chinese eCommerce. We have run flagship stores and DTC shops,
-              tackled localisation, built brand trust, and held our ground in an unforgiving
-              market. Strong platform relationships and disciplined media buying let us
-              deliver tailored strategies that actually move sales.
+              15 years running flagship stores and DTC shops in China for global brands and
+              SMEs. Platform relationships and disciplined media buying turn strategy into
+              sales.
             </p>
-            <div class="cbs-value__stats">
-              <div>
-                <span class="cbs-value__stat-value">15+</span>
-                <span class="cbs-value__stat-label">Years of China eCommerce</span>
-              </div>
-              <div>
-                <span class="cbs-value__stat-value">3T$</span>
-                <span class="cbs-value__stat-label">2024 China eCommerce GMV</span>
-              </div>
-              <div>
-                <span class="cbs-value__stat-value">3</span>
-                <span class="cbs-value__stat-label">Offices: Shanghai, HK, Paris</span>
-              </div>
-            </div>
           </div>
 
           <ul class="cbs-promise">
@@ -375,87 +390,181 @@ const icons: Record<string, string> = {
       </div>
     </section>
 
-    {/* ---------- SERVICES ---------- */}
-    <section class="section">
+    {/* ---------- SERVICES (bento) ---------- */}
+    <section class="section cbs-svc-section">
       <div class="container">
-        <header class="section-header section-header--center">
-          <span class="eyebrow">Our services</span>
-          <h2>Our eCommerce services in China</h2>
-          <p class="section-header__lead">
-            Four levers we use to set up your store, drive traffic, sell at scale, and turn
-            social into revenue.
+        <header class="section-header section-header--split cbs-reveal">
+          <div>
+            <span class="eyebrow">Our services</span>
+            <h2>Four levers, one growth engine</h2>
+          </div>
+          <p class="cbs-svc-lead">
+            We set up your store, drive the traffic, sell at scale, and turn social into
+            revenue. Hover any tile to see what runs underneath.
           </p>
         </header>
 
-        <div class="cbs-services">
-          {services.map((s) => (
-            <article class="cbs-service">
-              <span class="cbs-service__icon" set:html={icons[s.icon]} />
-              <h3>{s.title}</h3>
-              <p>{s.desc}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    {/* ---------- BUSINESS MODELS ---------- */}
-    <section class="section section--alt">
-      <div class="container">
-        <header class="section-header section-header--center">
-          <span class="eyebrow">Business models</span>
-          <h2>Three ways to work with us</h2>
-          <p class="section-header__lead">
-            Every brand has different needs and different appetite for risk. Choose the
-            engagement that fits where you are today.
-          </p>
-        </header>
-
-        <div class="cbs-models">
-          {models.map((m) => (
-            <article class={`cbs-model${m.highlight ? ' cbs-model--highlight' : ''}`}>
-              {m.highlight && <span class="cbs-model__badge">Most popular</span>}
-              <h3 class="cbs-model__title">{m.name}</h3>
-              <p class="cbs-model__desc">{m.desc}</p>
-
-              <ul class="cbs-model__list">
-                {m.bullets.map((b) => (
-                  <li>{b}</li>
+        <div class="cbs-svc-grid">
+          {services.map((s, i) => (
+            <article
+              class="cbs-svc-card cbs-reveal"
+              style={`--svc-color: ${s.color}; --svc-soft: ${s.colorSoft}; --reveal-delay: ${i * 80}ms;`}
+              data-svc-card
+            >
+              <div class="cbs-svc-card__head">
+                <span class="cbs-svc-card__icon" set:html={icons[s.icon]} />
+                <span class="cbs-svc-card__short">{s.short}</span>
+              </div>
+              <h3 class="cbs-svc-card__title">{s.title}</h3>
+              <p class="cbs-svc-card__desc">{s.desc}</p>
+              <ul class="cbs-svc-card__points">
+                {s.points.map((p) => (
+                  <li>
+                    <span class="cbs-svc-card__bullet" aria-hidden="true"></span>
+                    <span>{p}</span>
+                  </li>
                 ))}
               </ul>
-
-              <div class="cbs-model__pricing">
-                <span class="cbs-model__pricing-label">Pricing</span>
-                <span class="cbs-model__pricing-value">{m.pricing}</span>
-              </div>
-
-              <a href="/contact" class="btn btn--secondary btn--sm cbs-model__cta">Contact us</a>
+              <span class="cbs-svc-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
             </article>
           ))}
         </div>
       </div>
     </section>
 
-    {/* ---------- CASE STUDIES ---------- */}
-    <section class="section">
+    {/* ---------- BUSINESS MODELS (tabbed showcase) ---------- */}
+    <section class="section section--alt cbs-models-section">
+      <div class="cbs-models-section__bg" aria-hidden="true">
+        <img src="/Images/enter-china/four-ways-tiles.png" alt="" loading="lazy" decoding="async" />
+      </div>
       <div class="container">
-        <header class="section-header section-header--split">
-          <div>
-            <span class="eyebrow">Case studies</span>
-            <h2>Our eCommerce case studies in China</h2>
-          </div>
-          <a href="/work" class="btn btn--secondary btn--sm">See all work</a>
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Business models</span>
+          <h2>Four ways to work with us</h2>
+          <p class="section-header__lead">
+            Every brand lands in China at a different stage, with a different budget and
+            risk appetite. Pick the setup that matches where you are today. Most clients
+            move between these over time.
+          </p>
         </header>
 
-        <div class="grid grid-3">
-          {cases.map((c) => (
-            <a href={c.href} class="cbs-case">
-              <span class="cbs-case__tag">{c.sub}</span>
-              <h3 class="cbs-case__title">{c.title}</h3>
-              <p class="cbs-case__desc">{c.desc}</p>
-              <span class="cbs-case__cta">Read the case <span aria-hidden="true">→</span></span>
-            </a>
-          ))}
+        <div class="cbs-tabs cbs-reveal" data-tabs>
+          <div class="cbs-tabs__nav" role="tablist">
+            {models.map((m, i) => (
+              <button
+                type="button"
+                class={`cbs-tabs__tab${i === 2 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 2 ? 'true' : 'false'}
+                aria-controls={`model-panel-${i}`}
+                id={`model-tab-${i}`}
+                data-tab-target={`model-panel-${i}`}
+              >
+                <span class="cbs-tabs__tab-label">{m.name}</span>
+                <span class="cbs-tabs__tab-tag">{m.tag}</span>
+                {m.highlight && <span class="cbs-tabs__tab-pop">Most popular</span>}
+              </button>
+            ))}
+            <span class="cbs-tabs__indicator" aria-hidden="true"></span>
+          </div>
+
+          <div class="cbs-tabs__panels">
+            {models.map((m, i) => (
+              <div
+                class={`cbs-tabs__panel${i === 2 ? ' is-active' : ''}`}
+                role="tabpanel"
+                id={`model-panel-${i}`}
+                aria-labelledby={`model-tab-${i}`}
+                hidden={i !== 2}
+              >
+                <div class="cbs-tabs__panel-grid">
+                  <div class="cbs-tabs__lead">
+                    <span class="cbs-tabs__pillset">
+                      <span class="cbs-tabs__pill">{m.tag.split(',')[0].trim()}</span>
+                      <span class="cbs-tabs__pill">{m.tag.split(',')[1] ? m.tag.split(',')[1].trim() : ''}</span>
+                    </span>
+                    <h3 class="cbs-tabs__title">{m.name}</h3>
+                    <p class="cbs-tabs__desc">{m.desc}</p>
+                    <div class="cbs-tabs__when">
+                      <span class="cbs-tabs__when-label">Best when</span>
+                      <p>{m.when.replace(/^Best when\s*/, '')}</p>
+                    </div>
+                    <a href="/contact" class="btn btn--primary cbs-magnetic">Talk to us about {m.name}</a>
+                  </div>
+
+                  <div class="cbs-tabs__body">
+                    <div class="cbs-tabs__list-wrap">
+                      <span class="cbs-tabs__list-label">What we run</span>
+                      <ul class="cbs-tabs__list">
+                        {m.bullets.map((b) => (
+                          <li>
+                            <span class="cbs-tabs__check" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                            </span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="cbs-tabs__pricing">
+                      <span class="cbs-tabs__pricing-label">Pricing</span>
+                      <span class="cbs-tabs__pricing-value">{m.pricing}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="cbs-matrix cbs-reveal" data-matrix>
+          <div class="cbs-matrix__intro">
+            <span class="eyebrow">How to pick</span>
+            <h3>Two questions, four answers</h3>
+            <p>Who runs the day-to-day commercial side, and who carries the inventory? That decides which setup fits. Hover a cell to highlight the row and column.</p>
+          </div>
+          <div class="cbs-matrix__grid" role="table" aria-label="Business model selection matrix">
+            <div class="cbs-matrix__corner" role="presentation"></div>
+            <div class="cbs-matrix__head" role="columnheader" data-col="1">You run sales</div>
+            <div class="cbs-matrix__head" role="columnheader" data-col="2">We run sales</div>
+
+            <div class="cbs-matrix__row-head" role="rowheader" data-row="1">You hold inventory</div>
+            <button type="button" class="cbs-matrix__cell" role="cell" data-row="1" data-col="1" data-tab-jump="model-tab-0">
+              <span class="cbs-matrix__cell-label">Marketing agency</span>
+              <span class="cbs-matrix__cell-sub">We power the brand. You sell.</span>
+            </button>
+            <button type="button" class="cbs-matrix__cell" role="cell" data-row="1" data-col="2" data-tab-jump="model-tab-2">
+              <span class="cbs-matrix__cell-label">TP, trade partner</span>
+              <span class="cbs-matrix__cell-sub">We run your flagship under our licenses.</span>
+            </button>
+
+            <div class="cbs-matrix__row-head" role="rowheader" data-row="2">We hold inventory</div>
+            <button type="button" class="cbs-matrix__cell" role="cell" data-row="2" data-col="1" data-tab-jump="model-tab-1">
+              <span class="cbs-matrix__cell-label">Sales agent</span>
+              <span class="cbs-matrix__cell-sub">We find the right distributor for you.</span>
+            </button>
+            <button type="button" class="cbs-matrix__cell" role="cell" data-row="2" data-col="2" data-tab-jump="model-tab-3">
+              <span class="cbs-matrix__cell-label">Exclusive distributor</span>
+              <span class="cbs-matrix__cell-sub">We buy, hold and sell. One P&L.</span>
+            </button>
+          </div>
+          <p class="cbs-matrix__note">
+            Most brands start in one box and move to another. A brand that lands through a
+            distributor often opens its own flagship with us as TP once the category is
+            proven. A brand running its own store sometimes adds offline through us as
+            distributor when retail listings open up.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- CASES CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cbs-cases-cta">
+          <a href="/work" class="btn btn--secondary">See our eCommerce case studies</a>
         </div>
       </div>
     </section>
@@ -463,7 +572,7 @@ const icons: Record<string, string> = {
     {/* ---------- PLATFORMS ---------- */}
     <section class="section section--alt">
       <div class="container">
-        <header class="section-header section-header--center">
+        <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Platforms</span>
           <h2>Our eCommerce platforms in China</h2>
           <p class="section-header__lead">
@@ -473,15 +582,22 @@ const icons: Record<string, string> = {
         </header>
 
         <div class="cbs-platforms">
-          {platforms.map((p) => (
-            <a href={p.href} class="cbs-platform">
-              <div class="cbs-platform__logo">
-                <img src={p.logo} alt={`${p.name} logo`} loading="lazy" decoding="async" />
+          {platforms.map((p, i) => (
+            <a
+              href={p.href}
+              class="cbs-platform cbs-reveal"
+              style={`--platform-color: ${p.brandColor}; --platform-accent: ${p.accent}; --reveal-delay: ${i * 90}ms;`}
+            >
+              <div class="cbs-platform__head">
+                <div class="cbs-platform__logo">
+                  <img src={p.logo} alt={`${p.name} logo`} loading="lazy" decoding="async" />
+                </div>
+                <span class="cbs-platform__cn" aria-hidden="true">{p.cn}</span>
               </div>
-              <h3 class="cbs-platform__title">
-                {p.name} <span class="cbs-platform__cn">{p.cn}</span>
-              </h3>
-              <p class="cbs-platform__sub">{p.sub}</p>
+              <div class="cbs-platform__body">
+                <h3 class="cbs-platform__title">{p.name}</h3>
+                <p class="cbs-platform__sub">{p.sub}</p>
+              </div>
               <span class="cbs-platform__cta">Learn more <span aria-hidden="true">→</span></span>
             </a>
           ))}
@@ -489,46 +605,80 @@ const icons: Record<string, string> = {
       </div>
     </section>
 
-    {/* ---------- HOW WE WORK ---------- */}
-    <section id="how-we-work" class="section">
+    {/* ---------- HOW WE WORK (vertical timeline) ---------- */}
+    <section id="how-we-work" class="section cbs-journey-section">
+      <div class="cbs-journey-section__bg" aria-hidden="true">
+        <img src="/Images/enter-china/journey-path.png" alt="" loading="lazy" decoding="async" />
+      </div>
       <div class="container">
-        <header class="section-header section-header--center">
+        <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">How we work</span>
-          <h2>How an eCommerce agency in China works</h2>
+          <h2>From plan to peak festival</h2>
           <p class="section-header__lead">
-            From planning to peak shopping festivals, three phases that turn a launch into
-            a real business.
+            Three phases that turn a launch into a real business. Scroll through.
           </p>
         </header>
 
-        <ol class="cbs-steps">
-          {steps.map((s) => (
-            <li class="cbs-step">
-              <span class="cbs-step__n">{s.n}</span>
-              <h3 class="cbs-step__title">{s.title}</h3>
-              <p class="cbs-step__desc">{s.desc}</p>
-            </li>
-          ))}
-        </ol>
+        <div class="cbs-journey" data-journey>
+          <div class="cbs-journey__rail" aria-hidden="true">
+            <div class="cbs-journey__rail-track"></div>
+            <div class="cbs-journey__rail-fill" data-journey-fill></div>
+          </div>
+          <ol class="cbs-journey__list">
+            {steps.map((s, i) => (
+              <li class="cbs-journey__item cbs-reveal" data-journey-item style={`--reveal-delay: ${i * 80}ms;`}>
+                <span class="cbs-journey__dot" aria-hidden="true">
+                  <span class="cbs-journey__dot-inner"></span>
+                </span>
+                <span class="cbs-journey__phase">Phase {i === 0 ? 'one' : i === 1 ? 'two' : 'three'}</span>
+                <div class="cbs-journey__card">
+                  <span class="cbs-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
+                  <h3 class="cbs-journey__title">{s.title}</h3>
+                  <p class="cbs-journey__desc">{s.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
     </section>
 
-    {/* ---------- AI ---------- */}
-    <section class="section section--alt">
+    {/* ---------- AI (bento) ---------- */}
+    <section class="section section--alt cbs-ai-section">
       <div class="container">
-        <header class="section-header section-header--center">
+        <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">AI in eCommerce</span>
           <h2>We supercharge eCommerce in China with AI</h2>
           <p class="section-header__lead">
-            AI is no longer a side project in China. It is how we cut cost, scale content
-            and personalise the funnel.
+            AI is no longer a side project. It is how we cut cost, scale content and
+            personalise the funnel across every store we run.
           </p>
         </header>
 
-        <div class="cbs-ai">
-          {aiBenefits.map((b, i) => (
-            <article class="cbs-ai__card">
-              <span class="cbs-ai__num">{String(i + 1).padStart(2, '0')}</span>
+        <div class="cbs-ai-bento">
+          <article class="cbs-ai-bento__card cbs-ai-bento__card--feature cbs-reveal">
+            <div class="cbs-ai-bento__feature-bg" aria-hidden="true"></div>
+            <div class="cbs-ai-bento__feature-body">
+              <span class="cbs-ai-bento__chip">Always on</span>
+              <h3>AI personalisation across the funnel</h3>
+              <p>From product recommendations to dynamic landing pages, AI lifts conversion at every step. Same store, same media, more revenue.</p>
+              <ul class="cbs-ai-bento__feature-stats">
+                <li>
+                  <span class="cbs-ai-bento__stat-num" data-counter="22" data-suffix="%">0</span>
+                  <span class="cbs-ai-bento__stat-label">avg conversion lift</span>
+                </li>
+                <li>
+                  <span class="cbs-ai-bento__stat-num" data-counter="40" data-suffix="%">0</span>
+                  <span class="cbs-ai-bento__stat-label">support cost down</span>
+                </li>
+              </ul>
+            </div>
+            <span class="cbs-ai-bento__icon-large" aria-hidden="true" set:html={icons[aiBenefits[0].icon]} />
+          </article>
+
+          {aiBenefits.slice(1).map((b, i) => (
+            <article class={`cbs-ai-bento__card cbs-ai-bento__card--small cbs-reveal`} style={`--reveal-delay: ${i * 80}ms;`}>
+              <span class="cbs-ai-bento__icon" aria-hidden="true" set:html={icons[b.icon]} />
               <h3>{b.title}</h3>
               <p>{b.desc}</p>
             </article>
@@ -537,19 +687,44 @@ const icons: Record<string, string> = {
       </div>
     </section>
 
-    {/* ---------- FAQ ---------- */}
+    {/* ---------- FAQ (with category filter) ---------- */}
     <section class="section">
       <div class="container container--narrow">
-        <header class="section-header section-header--center">
+        <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">FAQ</span>
           <h2>Frequently asked questions about eCommerce in China</h2>
+          <p class="section-header__lead">
+            Twenty practical questions we field from operators planning a China launch.
+            Filter by topic.
+          </p>
         </header>
 
-        <div class="cbs-faq">
+        <div class="cbs-faq-filter cbs-reveal" data-faq-filter role="tablist" aria-label="Filter FAQs by category">
+          {faqCategories.map((c, i) => (
+            <button
+              type="button"
+              class={`cbs-faq-chip${i === 0 ? ' is-active' : ''}`}
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              data-faq-cat={c}
+            >
+              <span class="cbs-faq-chip__label">{c}</span>
+              <span class="cbs-faq-chip__count">{c === 'All' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="cbs-faq" data-faq-list>
           {faqs.map((f, i) => (
-            <details class="cbs-faq__item" open={i === 0}>
+            <details
+              class="cbs-faq__item cbs-reveal"
+              data-faq-cat={f.cat}
+              open={i === 0}
+              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+            >
               <summary class="cbs-faq__q">
-                <span>{f.q}</span>
+                <span class="cbs-faq__cat-tag">{f.cat}</span>
+                <span class="cbs-faq__q-text">{f.q}</span>
                 <span class="cbs-faq__icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                 </span>
@@ -558,34 +733,6 @@ const icons: Record<string, string> = {
                 <p>{f.a}</p>
               </div>
             </details>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    {/* ---------- RELATED SERVICES ---------- */}
-    <section class="section section--alt">
-      <div class="container">
-        <header class="section-header section-header--split">
-          <div>
-            <span class="eyebrow">More ways we can help</span>
-            <h2>Our marketing and eCommerce services in China</h2>
-          </div>
-          <a href="/work" class="btn btn--secondary btn--sm">See our work</a>
-        </header>
-
-        <div class="grid grid-3">
-          {moreWays.map((c) => (
-            <a href={c.href} class="work-card">
-              <div class="work-card__image">
-                <img src={c.image} alt="" loading="lazy" decoding="async" width="600" height="400" />
-              </div>
-              <div class="work-card__body">
-                <span class="work-card__tag">{c.tag}</span>
-                <h3 class="work-card__title">{c.title}</h3>
-                <p class="work-card__summary">{c.desc}</p>
-              </div>
-            </a>
           ))}
         </div>
       </div>
@@ -629,8 +776,8 @@ const icons: Record<string, string> = {
           <span class="eyebrow eyebrow--on-dark">Let's talk</span>
           <h2 class="cbs-cta__title">Thinking about expanding your brand or business to China?</h2>
           <p class="cbs-cta__lead">
-            Tell us where you are today and where you want to be. Real humans on our side,
-            no funnel, no forms that never get read.
+            Tell us where you are today and where you want to be. A senior member of the
+            team will reply within one working day. No sales funnel, no auto-responder.
           </p>
           <div class="cbs-cta__actions">
             <a href="/contact" class="btn cbs-cta__btn-primary">Contact us</a>
@@ -645,59 +792,218 @@ const icons: Record<string, string> = {
     /* ---------- Container narrow helper (re-used pattern) ---------- */
     .cbs .container--narrow { max-width: 880px; }
 
+    /* ---------- REVEAL + MOTION (global) ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .cbs-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .cbs-reveal.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .cbs-magnetic {
+        will-change: transform;
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      }
+    }
+
+    /* ---------- SCROLL PROGRESS BAR ---------- */
+    .cbs-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 1000;
+      background: transparent;
+      pointer-events: none;
+    }
+    .cbs-progress__bar {
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      transition: width 80ms linear;
+    }
+
     /* ---------- HERO ---------- */
     .cbs-hero {
       position: relative;
-      min-height: clamp(520px, 64vh, 680px);
+      min-height: clamp(420px, 56vh, 580px);
       display: flex;
       align-items: center;
-      padding: clamp(96px, 12vh, 140px) 0 clamp(64px, 10vh, 120px);
+      padding: clamp(64px, 8vh, 96px) 0 clamp(48px, 7vh, 80px);
       color: var(--bbg-white);
       overflow: hidden;
       isolation: isolate;
     }
-    .cbs-hero__bg { position: absolute; inset: 0; z-index: -2; }
-    .cbs-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-    .cbs-hero__overlay {
-      position: absolute; inset: 0; z-index: -1;
-      background: linear-gradient(110deg,
-        rgba(8, 20, 32, 0.88) 0%,
-        rgba(8, 20, 32, 0.68) 45%,
-        rgba(8, 20, 32, 0.32) 100%);
+    .cbs-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .cbs-hero__bg img {
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+      transition: transform 80ms linear;
+      filter: saturate(0.95);
     }
-    .cbs-hero__inner { max-width: 880px; position: relative; }
+    .cbs-hero__overlay {
+      position: absolute; inset: 0; z-index: -2;
+      background:
+        linear-gradient(110deg,
+          rgba(8, 18, 28, 0.92) 0%,
+          rgba(8, 18, 28, 0.72) 42%,
+          rgba(8, 18, 28, 0.32) 100%),
+        radial-gradient(120% 80% at 0% 100%,
+          rgba(38, 154, 218, 0.28) 0%,
+          rgba(38, 154, 218, 0) 60%);
+    }
+    .cbs-hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      background-image:
+        radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .cbs-hero__inner { max-width: 980px; position: relative; }
     .cbs-hero__crumbs {
-      margin-bottom: var(--space-5);
+      margin-bottom: var(--space-4);
       font-size: var(--fs-small);
       display: flex;
       gap: 0.5rem;
       align-items: center;
-      color: rgba(255, 255, 255, 0.75);
+      color: rgba(255, 255, 255, 0.7);
     }
     .cbs-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
     .cbs-hero__crumbs a:hover { color: var(--bbg-white); }
     .cbs-hero__inner .eyebrow--on-dark {
       display: inline-block;
-      margin-bottom: var(--space-4);
+      margin-bottom: var(--space-3);
       color: #9DDBF5;
     }
     .cbs-hero__title {
-      font-size: clamp(2.25rem, 3.6vw + 1rem, 4rem);
-      line-height: 1.08;
-      letter-spacing: -0.02em;
+      font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
       color: var(--bbg-white);
-      margin: 0 0 var(--space-5);
+      margin: 0 0 var(--space-4);
       max-width: 22ch;
-      text-wrap: balance;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      gap: 0.05em;
+    }
+    .cbs-hero__title-row { display: block; }
+    .cbs-hero__title-row--accent {
+      color: #9DDBF5;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -0.018em;
+    }
+    .cbs-hero__title-row--highlight {
+      position: relative;
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0 0.15em;
+    }
+    .cbs-hero__title-row--highlight::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0.04em;
+      height: 0.18em;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transform-origin: left center;
+      animation: cbs-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+      z-index: -1;
+    }
+    @keyframes cbs-underline {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
     }
     .cbs-hero__lead {
-      font-size: clamp(1.0625rem, 0.6vw + 1rem, 1.3125rem);
+      font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
       line-height: 1.55;
-      color: rgba(255, 255, 255, 0.92);
+      color: rgba(255, 255, 255, 0.86);
       max-width: 58ch;
-      margin: 0 0 var(--space-6);
+      margin: 0 0 var(--space-5);
     }
-    .cbs-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+    .cbs-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
+    .cbs-magnetic:hover { transform: translateY(-2px); }
+
+    .cbs-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(var(--space-4), 4vw, var(--space-7));
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: 720px;
+    }
+    .cbs-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .cbs-hero__meta-num {
+      font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: "tnum";
+    }
+    .cbs-hero__meta-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.02em;
+    }
+
+    .cbs-hero__scroll {
+      position: absolute;
+      bottom: var(--space-5);
+      right: clamp(var(--space-5), 4vw, var(--space-7));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color 200ms ease;
+    }
+    .cbs-hero__scroll:hover { color: var(--bbg-white); }
+    .cbs-hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .cbs-hero__scroll-line::after {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+      animation: cbs-scroll-tick 1.8s ease-in-out infinite;
+    }
+    @keyframes cbs-scroll-tick {
+      0% { top: -50%; }
+      100% { top: 100%; }
+    }
+    @media (max-width: 720px) {
+      .cbs-hero__scroll { display: none; }
+      .cbs-hero__meta { gap: var(--space-4); }
+    }
 
     /* ---------- CONTEXT (two truths) ---------- */
     .cbs-context {
@@ -709,8 +1015,9 @@ const icons: Record<string, string> = {
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
-      padding: var(--space-7);
-      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
       transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
     }
     .cbs-context__card:hover {
@@ -721,15 +1028,24 @@ const icons: Record<string, string> = {
       background: var(--bbg-blue-light);
       border-color: transparent;
     }
-    .cbs-context__num {
+    .cbs-context__media {
+      margin: 0;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: var(--bbg-border);
+    }
+    .cbs-context__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       display: block;
-      font-size: 2.25rem;
-      font-weight: 700;
-      color: var(--bbg-blue);
-      line-height: 1;
-      margin-bottom: var(--space-4);
-      letter-spacing: -0.02em;
-      font-feature-settings: "tnum";
+      transition: transform 600ms var(--ease);
+    }
+    .cbs-context__card:hover .cbs-context__media img {
+      transform: scale(1.03);
+    }
+    .cbs-context__body {
+      padding: var(--space-6) var(--space-7) var(--space-7);
     }
     .cbs-context__card h3 {
       font-size: clamp(1.25rem, 1vw + 0.75rem, 1.625rem);
@@ -745,7 +1061,7 @@ const icons: Record<string, string> = {
     }
     @media (max-width: 900px) {
       .cbs-context { grid-template-columns: 1fr; }
-      .cbs-context__card { padding: var(--space-6); }
+      .cbs-context__body { padding: var(--space-5) var(--space-6) var(--space-6); }
     }
 
     /* ---------- VALUE + PROMISES ---------- */
@@ -847,29 +1163,51 @@ const icons: Record<string, string> = {
       gap: var(--space-5);
     }
     .cbs-service {
+      position: relative;
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
       padding: var(--space-6);
-      transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      overflow: hidden;
+      isolation: isolate;
+      transition:
+        transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
+    }
+    .cbs-service::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(120% 80% at 100% 0%,
+        rgba(38, 154, 218, 0.10) 0%,
+        rgba(38, 154, 218, 0) 55%);
+      opacity: 0;
+      transition: opacity 320ms ease;
+      z-index: -1;
     }
     .cbs-service:hover {
-      transform: translateY(-4px);
+      transform: translateY(-6px);
       border-color: var(--bbg-blue);
-      box-shadow: var(--shadow-md);
+      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.45),
+                  0 4px 10px -6px rgba(0, 0, 0, 0.08);
     }
+    .cbs-service:hover::before { opacity: 1; }
+    .cbs-service:hover .cbs-service__icon { transform: scale(1.08) rotate(-3deg); }
     .cbs-service__icon {
       display: inline-flex;
-      width: 48px;
-      height: 48px;
+      width: 52px;
+      height: 52px;
       align-items: center;
       justify-content: center;
       border-radius: var(--radius-md);
-      background: var(--bbg-blue-light);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.16) 100%);
       color: var(--bbg-blue);
       margin-bottom: var(--space-4);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: inset 0 0 0 1px rgba(38, 154, 218, 0.15);
     }
-    .cbs-service__icon svg { width: 24px; height: 24px; }
+    .cbs-service__icon svg { width: 26px; height: 26px; }
     .cbs-service h3 {
       font-size: 1.1875rem;
       line-height: 1.25;
@@ -885,10 +1223,63 @@ const icons: Record<string, string> = {
     @media (max-width: 1024px) { .cbs-services { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 560px) { .cbs-services { grid-template-columns: 1fr; } }
 
+    /* ---------- BUSINESS MODELS SECTION BACKGROUND ---------- */
+    .cbs-models-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-models-section__bg {
+      position: absolute;
+      top: 0;
+      right: -8%;
+      width: 55%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.18;
+      mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
+      -webkit-mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .cbs-models-section__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(0.6);
+    }
+    @media (max-width: 900px) { .cbs-models-section__bg { display: none; } }
+
+    /* ---------- HOW WE WORK SECTION BACKGROUND ---------- */
+    .cbs-steps-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-steps-section__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      opacity: 0.10;
+      pointer-events: none;
+    }
+    .cbs-steps-section__bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg,
+        var(--bbg-white) 0%,
+        rgba(255, 255, 255, 0.4) 40%,
+        rgba(255, 255, 255, 0.7) 100%);
+      pointer-events: none;
+    }
+    .cbs-steps-section__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(0.55);
+    }
+
     /* ---------- BUSINESS MODELS ---------- */
     .cbs-models {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: var(--space-5);
       align-items: stretch;
     }
@@ -900,7 +1291,7 @@ const icons: Record<string, string> = {
       padding: var(--space-7);
       display: flex;
       flex-direction: column;
-      gap: var(--space-5);
+      gap: var(--space-4);
       transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
     }
     .cbs-model:hover {
@@ -925,6 +1316,23 @@ const icons: Record<string, string> = {
       padding: 0.4em 0.9em;
       border-radius: 999px;
     }
+    .cbs-model__tag {
+      display: inline-flex;
+      align-self: flex-start;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.4em 0.85em;
+      border-radius: 999px;
+      border: 1px solid var(--bbg-border);
+    }
+    .cbs-model--highlight .cbs-model__tag {
+      background: var(--bbg-white);
+      color: var(--bbg-blue);
+      border-color: rgba(38, 154, 218, 0.25);
+    }
     .cbs-model__title {
       font-size: 1.5rem;
       line-height: 1.2;
@@ -936,6 +1344,20 @@ const icons: Record<string, string> = {
       line-height: 1.6;
       color: var(--bbg-text);
       margin: 0;
+    }
+    .cbs-model__when {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+      padding: var(--space-3) var(--space-4);
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .cbs-model__when strong {
+      color: var(--bbg-ink);
+      font-weight: 600;
     }
     .cbs-model__list {
       list-style: none;
@@ -980,9 +1402,112 @@ const icons: Record<string, string> = {
       line-height: 1.4;
     }
     .cbs-model__cta { align-self: flex-start; margin-top: auto; }
-    @media (max-width: 1024px) {
+    @media (max-width: 900px) {
       .cbs-models { grid-template-columns: 1fr; }
       .cbs-model { padding: var(--space-6); }
+    }
+
+    /* ---------- MATRIX (How to pick) ---------- */
+    .cbs-matrix {
+      margin-top: var(--space-8);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: clamp(var(--space-5), 3vw + 1rem, var(--space-7));
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+    }
+    .cbs-matrix__intro { text-align: center; margin-bottom: var(--space-6); }
+    .cbs-matrix__intro h3 {
+      font-size: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
+      margin: var(--space-2) 0 var(--space-3);
+      letter-spacing: -0.01em;
+    }
+    .cbs-matrix__intro p {
+      color: var(--bbg-text);
+      max-width: 56ch;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .cbs-matrix__grid {
+      display: grid;
+      grid-template-columns: minmax(140px, 0.8fr) 1fr 1fr;
+      gap: 1px;
+      background: var(--bbg-border);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .cbs-matrix__corner,
+    .cbs-matrix__head,
+    .cbs-matrix__row-head,
+    .cbs-matrix__cell {
+      background: var(--bbg-white);
+      padding: var(--space-4);
+    }
+    .cbs-matrix__corner { background: var(--bbg-surface); }
+    .cbs-matrix__head {
+      background: var(--bbg-surface);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cbs-matrix__row-head {
+      background: var(--bbg-surface);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      display: flex;
+      align-items: center;
+    }
+    .cbs-matrix__cell {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      transition: background var(--dur) var(--ease);
+      cursor: default;
+    }
+    .cbs-matrix__cell:hover { background: var(--bbg-blue-light); }
+    .cbs-matrix__cell-label {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+    }
+    .cbs-matrix__cell-sub {
+      font-size: 0.9rem;
+      color: var(--bbg-text);
+      line-height: 1.45;
+    }
+    .cbs-matrix__note {
+      margin: var(--space-5) auto 0;
+      max-width: 68ch;
+      text-align: center;
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 0.975rem;
+    }
+    @media (max-width: 720px) {
+      .cbs-matrix__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .cbs-matrix__corner { display: none; }
+      .cbs-matrix__head { font-size: 0.75rem; padding: var(--space-3); }
+      .cbs-matrix__row-head {
+        grid-column: 1 / -1;
+        background: var(--bbg-blue-light);
+        color: var(--bbg-blue-dark);
+        justify-content: center;
+        padding: var(--space-3);
+      }
     }
 
     /* ---------- CASE STUDIES ---------- */
@@ -1032,6 +1557,9 @@ const icons: Record<string, string> = {
     }
     .cbs-case:hover .cbs-case__cta span { display: inline-block; transform: translateX(4px); transition: transform var(--dur) var(--ease); }
 
+    /* ---------- CASES CTA ---------- */
+    .cbs-cases-cta { display: flex; justify-content: center; }
+
     /* ---------- PLATFORMS ---------- */
     .cbs-platforms {
       display: grid;
@@ -1039,67 +1567,115 @@ const icons: Record<string, string> = {
       gap: var(--space-5);
     }
     .cbs-platform {
+      position: relative;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      gap: var(--space-3);
+      gap: var(--space-4);
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
       padding: var(--space-6);
       color: var(--bbg-ink);
-      transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      overflow: hidden;
+      isolation: isolate;
+      transition: transform var(--dur) var(--ease),
+                  border-color var(--dur) var(--ease),
+                  box-shadow var(--dur) var(--ease);
+    }
+    .cbs-platform::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg,
+        var(--platform-color, var(--bbg-blue)) 0%,
+        var(--platform-accent, var(--bbg-blue-dark)) 100%);
+      transform: scaleX(0.4);
+      transform-origin: left center;
+      transition: transform var(--dur) var(--ease);
+    }
+    .cbs-platform::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 100% 0%,
+        color-mix(in srgb, var(--platform-color, #269ADA) 12%, transparent) 0%,
+        transparent 55%);
+      opacity: 0;
+      transition: opacity var(--dur) var(--ease);
+      z-index: -1;
+      pointer-events: none;
     }
     .cbs-platform:hover {
-      transform: translateY(-4px);
-      border-color: var(--bbg-blue);
-      box-shadow: var(--shadow-md);
+      transform: translateY(-6px);
+      border-color: color-mix(in srgb, var(--platform-color, #269ADA) 60%, var(--bbg-border));
+      box-shadow: 0 18px 40px -22px color-mix(in srgb, var(--platform-color, #269ADA) 55%, transparent),
+                  0 4px 12px -6px rgba(0, 0, 0, 0.08);
       color: var(--bbg-ink);
     }
+    .cbs-platform:hover::before { transform: scaleX(1); }
+    .cbs-platform:hover::after { opacity: 1; }
+    .cbs-platform__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+    }
     .cbs-platform__logo {
-      width: 64px;
-      height: 64px;
+      width: 76px;
+      height: 76px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       border-radius: var(--radius-md);
-      background: var(--bbg-surface);
-      padding: 10px;
-      margin-bottom: var(--space-2);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      padding: 14px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+      transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
+    }
+    .cbs-platform:hover .cbs-platform__logo {
+      border-color: color-mix(in srgb, var(--platform-color, #269ADA) 35%, var(--bbg-border));
+      transform: scale(1.04);
     }
     .cbs-platform__logo img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
     }
+    .cbs-platform__cn {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: color-mix(in srgb, var(--platform-color, #269ADA) 75%, var(--bbg-ink));
+      line-height: 1;
+      letter-spacing: 0.02em;
+      opacity: 0.85;
+    }
+    .cbs-platform__body { display: flex; flex-direction: column; gap: var(--space-2); flex-grow: 1; }
     .cbs-platform__title {
-      font-size: 1.25rem;
+      font-size: 1.375rem;
       line-height: 1.2;
       margin: 0;
       color: var(--bbg-ink);
-      letter-spacing: -0.005em;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 0.5rem;
-    }
-    .cbs-platform__cn {
-      font-size: 0.95rem;
-      color: var(--bbg-text-muted);
-      font-weight: 500;
+      letter-spacing: -0.01em;
+      font-weight: 700;
     }
     .cbs-platform__sub {
       font-size: 0.9375rem;
       line-height: 1.55;
       color: var(--bbg-text);
       margin: 0;
-      flex-grow: 1;
     }
     .cbs-platform__cta {
       font-size: var(--fs-small);
-      color: var(--bbg-blue);
-      font-weight: 600;
-      margin-top: var(--space-2);
+      color: var(--platform-color, var(--bbg-blue));
+      font-weight: 700;
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
     }
     .cbs-platform:hover .cbs-platform__cta span { display: inline-block; transform: translateX(4px); transition: transform var(--dur) var(--ease); }
     @media (max-width: 1024px) { .cbs-platforms { grid-template-columns: repeat(2, 1fr); } }
@@ -1114,6 +1690,31 @@ const icons: Record<string, string> = {
       grid-template-columns: repeat(3, 1fr);
       gap: var(--space-5);
       counter-reset: step;
+      position: relative;
+    }
+    .cbs-steps__line {
+      display: none;
+    }
+    @media (min-width: 901px) {
+      .cbs-steps__line {
+        display: block;
+        position: absolute;
+        top: 56px;
+        left: 12%;
+        right: 12%;
+        height: 2px;
+        background: linear-gradient(90deg,
+          rgba(38, 154, 218, 0) 0%,
+          rgba(38, 154, 218, 0.35) 12%,
+          rgba(38, 154, 218, 0.55) 50%,
+          rgba(38, 154, 218, 0.35) 88%,
+          rgba(38, 154, 218, 0) 100%);
+        z-index: 0;
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .cbs-steps.is-in .cbs-steps__line { transform: scaleX(1); }
     }
     .cbs-step {
       background: var(--bbg-white);
@@ -1121,22 +1722,33 @@ const icons: Record<string, string> = {
       border-radius: var(--radius-lg);
       padding: var(--space-6);
       position: relative;
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      z-index: 1;
+      transition:
+        transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
     }
     .cbs-step:hover {
+      transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: var(--shadow-md);
+      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4),
+                  0 4px 10px -6px rgba(0, 0, 0, 0.06);
     }
-    .cbs-step__n {
-      display: block;
-      font-size: 2.5rem;
-      font-weight: 700;
+    .cbs-step__icon {
+      display: inline-flex;
+      width: 56px;
+      height: 56px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--bbg-white);
       color: var(--bbg-blue);
-      line-height: 1;
-      letter-spacing: -0.02em;
       margin-bottom: var(--space-4);
-      font-feature-settings: "tnum";
+      box-shadow: 0 0 0 3px var(--bbg-blue-light), inset 0 0 0 1px rgba(38, 154, 218, 0.18);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
     }
+    .cbs-step:hover .cbs-step__icon { transform: scale(1.06) rotate(4deg); }
+    .cbs-step__icon svg { width: 26px; height: 26px; }
     .cbs-step__title {
       font-size: 1.375rem;
       line-height: 1.25;
@@ -1158,27 +1770,52 @@ const icons: Record<string, string> = {
       gap: var(--space-4);
     }
     .cbs-ai__card {
+      position: relative;
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
       padding: var(--space-5);
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      overflow: hidden;
+      isolation: isolate;
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
+    }
+    .cbs-ai__card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 50%, var(--bbg-blue) 100%);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-ai__card:hover {
+      transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: var(--shadow-md);
+      box-shadow: 0 14px 30px -18px rgba(38, 154, 218, 0.42),
+                  0 4px 10px -6px rgba(0, 0, 0, 0.06);
     }
-    .cbs-ai__num {
-      display: inline-block;
-      font-size: var(--fs-label);
-      font-weight: 700;
-      letter-spacing: 0.1em;
+    .cbs-ai__card:hover::before { transform: scaleX(1); }
+    .cbs-ai__icon {
+      display: inline-flex;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
       color: var(--bbg-blue);
-      background: var(--bbg-blue-light);
-      padding: 0.3em 0.7em;
-      border-radius: 999px;
       margin-bottom: var(--space-3);
+      box-shadow: inset 0 0 0 1px rgba(38, 154, 218, 0.12);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
+    .cbs-ai__card:hover .cbs-ai__icon { transform: scale(1.08) rotate(-4deg); }
+    .cbs-ai__icon svg { width: 20px; height: 20px; }
     .cbs-ai__card h3 {
       font-size: 1.0625rem;
       line-height: 1.3;
@@ -1209,9 +1846,16 @@ const icons: Record<string, string> = {
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-md);
       overflow: hidden;
-      transition: border-color var(--dur) var(--ease);
+      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .cbs-faq__item[open] { border-color: var(--bbg-blue); }
+    .cbs-faq__item:hover {
+      transform: translateX(2px);
+      border-color: rgba(38, 154, 218, 0.4);
+    }
+    .cbs-faq__item[open] {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+    }
     .cbs-faq__q {
       cursor: pointer;
       padding: var(--space-5);
@@ -1231,23 +1875,33 @@ const icons: Record<string, string> = {
     .cbs-faq__item:hover .cbs-faq__q { color: var(--bbg-blue); }
     .cbs-faq__icon {
       flex-shrink: 0;
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      border-radius: 50%;
+      background: var(--bbg-surface);
       color: var(--bbg-text-muted);
-      transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+                  color var(--dur) var(--ease),
+                  background var(--dur) var(--ease);
     }
     .cbs-faq__item[open] .cbs-faq__icon {
       transform: rotate(180deg);
-      color: var(--bbg-blue);
+      color: var(--bbg-white);
+      background: var(--bbg-blue);
     }
     .cbs-faq__a {
       padding: 0 var(--space-5) var(--space-5);
       color: var(--bbg-text);
       line-height: 1.65;
       font-size: 1rem;
+      animation: cbs-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes cbs-faq-in {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .cbs-faq__a p { margin: 0; }
 
@@ -1316,5 +1970,1016 @@ const icons: Record<string, string> = {
       border-color: var(--bbg-white);
       color: var(--bbg-white);
     }
+
+    /* ================================================== */
+    /* ============ V2 SECTION REBUILDS ================= */
+    /* ================================================== */
+
+    /* ---------- SERVICES (balanced 2x2) ---------- */
+    .cbs-svc-section .section-header--split { align-items: end; gap: var(--space-6); margin-bottom: var(--space-6); }
+    .cbs-svc-lead {
+      max-width: 44ch;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .cbs-svc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    .cbs-svc-card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 20px;
+      padding: var(--space-6);
+      overflow: hidden;
+      isolation: isolate;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      min-height: 320px;
+      transition:
+        transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
+    }
+    .cbs-svc-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--svc-color, #269ADA) 0%, var(--svc-color, #269ADA) 50%, transparent 100%);
+      transform: scaleX(0.3);
+      transform-origin: left center;
+      transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1;
+    }
+    .cbs-svc-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(140% 90% at 100% 0%,
+        color-mix(in srgb, var(--svc-color, #269ADA) 14%, transparent) 0%,
+        transparent 55%);
+      opacity: 0;
+      transition: opacity 360ms ease;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .cbs-svc-card:hover {
+      transform: translateY(-6px);
+      border-color: color-mix(in srgb, var(--svc-color, #269ADA) 55%, var(--bbg-border));
+      box-shadow: 0 22px 50px -26px color-mix(in srgb, var(--svc-color, #269ADA) 50%, transparent),
+                  0 6px 14px -8px rgba(0, 0, 0, 0.08);
+    }
+    .cbs-svc-card:hover::before { transform: scaleX(1); }
+    .cbs-svc-card:hover::after { opacity: 1; }
+    .cbs-svc-card:hover .cbs-svc-card__icon {
+      transform: scale(1.06) rotate(-4deg);
+      background: var(--svc-color, var(--bbg-blue));
+      color: var(--bbg-white);
+      box-shadow: 0 12px 24px -14px color-mix(in srgb, var(--svc-color, #269ADA) 70%, transparent),
+                  inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #269ADA) 30%, transparent);
+    }
+    .cbs-svc-card:hover .cbs-svc-card__arrow { transform: translateX(4px); color: var(--svc-color, var(--bbg-blue)); }
+
+    .cbs-svc-card__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+    }
+    .cbs-svc-card__icon {
+      display: inline-flex;
+      width: 56px;
+      height: 56px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: var(--svc-soft, var(--bbg-blue-light));
+      color: var(--svc-color, var(--bbg-blue));
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #269ADA) 18%, transparent);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+                  background 320ms ease, color 320ms ease, box-shadow 320ms ease;
+      flex-shrink: 0;
+    }
+    .cbs-svc-card__icon svg { width: 28px; height: 28px; }
+    .cbs-svc-card__short {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--svc-color, var(--bbg-blue));
+      text-align: right;
+      line-height: 1.4;
+    }
+    .cbs-svc-card__title {
+      font-size: 1.5rem;
+      line-height: 1.18;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-ink);
+    }
+    .cbs-svc-card__desc {
+      font-size: 0.975rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .cbs-svc-card__points {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0;
+      border-top: 1px solid var(--bbg-border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-top: auto;
+    }
+    .cbs-svc-card__points li {
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      gap: 0.6rem;
+      align-items: center;
+      font-size: 0.875rem;
+      line-height: 1.45;
+      color: var(--bbg-text);
+    }
+    .cbs-svc-card__bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--svc-color, var(--bbg-blue));
+      box-shadow: 0 0 0 3px var(--svc-soft, var(--bbg-blue-light));
+      margin-left: 4px;
+    }
+    .cbs-svc-card__arrow {
+      position: absolute;
+      bottom: var(--space-6);
+      right: var(--space-6);
+      color: var(--bbg-text-muted);
+      transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1), color 200ms ease;
+      pointer-events: none;
+    }
+    .cbs-svc-card__arrow svg { width: 22px; height: 22px; }
+    @media (max-width: 720px) {
+      .cbs-svc-grid { grid-template-columns: 1fr; }
+      .cbs-svc-card { min-height: 0; }
+      .cbs-svc-section .section-header--split { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ---------- BUSINESS MODELS TABS ---------- */
+    .cbs-tabs {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px -28px rgba(8, 18, 28, 0.18);
+    }
+    .cbs-tabs__nav {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      background: linear-gradient(180deg, var(--bbg-surface) 0%, var(--bbg-white) 100%);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .cbs-tabs__tab {
+      position: relative;
+      background: transparent;
+      border: none;
+      padding: var(--space-5) var(--space-4);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      color: var(--bbg-text-muted);
+      transition: color 240ms ease, background 240ms ease;
+      border-right: 1px solid var(--bbg-border);
+    }
+    .cbs-tabs__tab:last-child { border-right: none; }
+    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .cbs-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .cbs-tabs__tab-label {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+      line-height: 1.2;
+    }
+    .cbs-tabs__tab-tag {
+      font-size: 0.78rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.35;
+    }
+    .cbs-tabs__tab.is-active .cbs-tabs__tab-tag { color: var(--bbg-blue); }
+    .cbs-tabs__tab-pop {
+      position: absolute;
+      top: var(--space-3);
+      right: var(--space-3);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .cbs-tabs__indicator {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 25%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px 2px 0 0;
+      transform: translateX(0);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    .cbs-tabs__panels { background: var(--bbg-white); }
+    .cbs-tabs__panel {
+      padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
+      animation: cbs-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes cbs-tab-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .cbs-tabs__panel[hidden] { display: none; }
+    .cbs-tabs__panel-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(var(--space-5), 3vw, var(--space-7));
+      align-items: start;
+    }
+    .cbs-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
+    .cbs-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .cbs-tabs__pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.35em 0.85em;
+      border-radius: 999px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      letter-spacing: 0.01em;
+    }
+    .cbs-tabs__title {
+      font-size: clamp(1.625rem, 1.8vw + 1rem, 2.25rem);
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -0.015em;
+    }
+    .cbs-tabs__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .cbs-tabs__when {
+      padding: var(--space-4);
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .cbs-tabs__when-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.35rem;
+    }
+    .cbs-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
+    .cbs-tabs__body {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .cbs-tabs__list-wrap {
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+    }
+    .cbs-tabs__list-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .cbs-tabs__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .cbs-tabs__list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .cbs-tabs__check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .cbs-tabs__check svg { width: 12px; height: 12px; }
+    .cbs-tabs__pricing {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-4);
+      padding: var(--space-4);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.12) 100%);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(38, 154, 218, 0.2);
+    }
+    .cbs-tabs__pricing-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue-dark);
+      flex-shrink: 0;
+    }
+    .cbs-tabs__pricing-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      line-height: 1.4;
+    }
+    @media (max-width: 900px) {
+      .cbs-tabs__nav { grid-template-columns: repeat(2, 1fr); }
+      .cbs-tabs__tab { border-bottom: 1px solid var(--bbg-border); }
+      .cbs-tabs__tab:nth-child(2) { border-right: none; }
+      .cbs-tabs__indicator { display: none; }
+      .cbs-tabs__panel-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .cbs-tabs__nav { grid-template-columns: 1fr; }
+      .cbs-tabs__tab { border-right: none; }
+    }
+
+    /* Matrix interactive cells */
+    .cbs-matrix__cell {
+      border: none;
+      text-align: left;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .cbs-matrix__cell:focus-visible {
+      outline: 3px solid var(--bbg-blue);
+      outline-offset: -3px;
+    }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__cell { opacity: 0.4; }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__cell.is-row-active,
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__cell.is-col-active { opacity: 1; background: var(--bbg-blue-light); }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__row-head,
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__head { opacity: 0.4; }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__row-head.is-active,
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__head.is-active {
+      opacity: 1;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+
+    /* ---------- HOW WE WORK / JOURNEY (vertical timeline) ---------- */
+    .cbs-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-journey-section__bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      opacity: 0.10;
+      pointer-events: none;
+    }
+    .cbs-journey-section__bg::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, var(--bbg-white) 0%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.7) 100%);
+    }
+    .cbs-journey-section__bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      filter: saturate(0.55);
+    }
+
+    .cbs-journey {
+      position: relative;
+      max-width: 880px;
+      margin: 0 auto;
+      padding-left: 56px;
+    }
+    .cbs-journey__rail {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 22px;
+      width: 2px;
+    }
+    .cbs-journey__rail-track {
+      position: absolute; inset: 0;
+      background: var(--bbg-border);
+      border-radius: 2px;
+    }
+    .cbs-journey__rail-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--journey-progress, 0%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transition: height 120ms linear;
+      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+    }
+    .cbs-journey__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-7);
+    }
+    .cbs-journey__item { position: relative; }
+    .cbs-journey__dot {
+      position: absolute;
+      left: -56px;
+      top: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bbg-white);
+      border: 2px solid var(--bbg-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: border-color 320ms ease;
+    }
+    .cbs-journey__dot-inner {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: background 320ms ease, transform 320ms ease;
+    }
+    .cbs-journey__item.is-active .cbs-journey__dot { border-color: var(--bbg-blue); }
+    .cbs-journey__item.is-active .cbs-journey__dot-inner {
+      background: var(--bbg-blue);
+      transform: scale(1.1);
+      box-shadow: 0 0 0 4px var(--bbg-blue-light);
+    }
+    .cbs-journey__phase {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-2);
+      transition: color 320ms ease;
+    }
+    .cbs-journey__item.is-active .cbs-journey__phase { color: var(--bbg-blue); }
+    .cbs-journey__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cbs-journey__item:hover .cbs-journey__card,
+    .cbs-journey__item.is-active .cbs-journey__card {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      transform: translateX(4px);
+    }
+    .cbs-journey__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .cbs-journey__icon svg { width: 24px; height: 24px; }
+    .cbs-journey__title {
+      font-size: 1.25rem;
+      line-height: 1.25;
+      margin: 0 0 0.4rem;
+      letter-spacing: -0.005em;
+    }
+    .cbs-journey__desc {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 600px) {
+      .cbs-journey { padding-left: 40px; }
+      .cbs-journey__rail { left: 16px; }
+      .cbs-journey__dot { left: -40px; width: 32px; height: 32px; }
+      .cbs-journey__dot-inner { width: 10px; height: 10px; }
+      .cbs-journey__card { flex-direction: column; gap: var(--space-3); }
+    }
+
+    /* ---------- AI BENTO ---------- */
+    .cbs-ai-bento {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: var(--space-4);
+    }
+    .cbs-ai-bento__card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      overflow: hidden;
+      isolation: isolate;
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+    }
+    .cbs-ai-bento__card:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+    }
+    .cbs-ai-bento__card--small h3 {
+      font-size: 1.05rem;
+      line-height: 1.3;
+      margin: 0 0 0.5rem;
+    }
+    .cbs-ai-bento__card--small p {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .cbs-ai-bento__card--feature {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      padding: var(--space-7);
+      background: linear-gradient(160deg, #102434 0%, #0c1a26 60%);
+      color: var(--bbg-white);
+      border-color: rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: var(--space-5);
+    }
+    .cbs-ai-bento__card--feature:hover { border-color: rgba(155, 217, 245, 0.4); }
+    .cbs-ai-bento__feature-bg {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(80% 60% at 100% 0%, rgba(38, 154, 218, 0.32) 0%, rgba(38, 154, 218, 0) 60%),
+        radial-gradient(60% 50% at 0% 100%, rgba(38, 154, 218, 0.18) 0%, rgba(38, 154, 218, 0) 60%);
+    }
+    .cbs-ai-bento__feature-body { display: flex; flex-direction: column; gap: var(--space-3); }
+    .cbs-ai-bento__chip {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9DDBF5;
+      background: rgba(38, 154, 218, 0.18);
+      padding: 0.4em 0.85em;
+      border-radius: 999px;
+      border: 1px solid rgba(155, 217, 245, 0.25);
+    }
+    .cbs-ai-bento__card--feature h3 {
+      font-size: clamp(1.5rem, 1.4vw + 1rem, 2rem);
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-white);
+    }
+    .cbs-ai-bento__card--feature p {
+      font-size: 1rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.78);
+      margin: 0;
+    }
+    .cbs-ai-bento__feature-stats {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0;
+      display: flex;
+      gap: var(--space-6);
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .cbs-ai-bento__feature-stats li { display: flex; flex-direction: column; gap: 0.25rem; }
+    .cbs-ai-bento__stat-num {
+      font-size: clamp(1.625rem, 1.4vw + 1rem, 2.125rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: #9DDBF5;
+      font-feature-settings: "tnum";
+    }
+    .cbs-ai-bento__stat-label {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.65);
+      letter-spacing: 0.02em;
+    }
+    .cbs-ai-bento__icon-large {
+      position: absolute;
+      bottom: -28px;
+      right: -28px;
+      width: 200px;
+      height: 200px;
+      color: rgba(38, 154, 218, 0.18);
+      opacity: 0.7;
+      pointer-events: none;
+    }
+    .cbs-ai-bento__icon-large svg { width: 100%; height: 100%; }
+    .cbs-ai-bento__icon {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-3);
+    }
+    .cbs-ai-bento__icon svg { width: 20px; height: 20px; }
+    @media (max-width: 1024px) {
+      .cbs-ai-bento { grid-template-columns: 1fr 1fr; }
+      .cbs-ai-bento__card--feature { grid-column: 1 / -1; grid-row: auto; }
+    }
+    @media (max-width: 560px) {
+      .cbs-ai-bento { grid-template-columns: 1fr; }
+      .cbs-ai-bento__feature-stats { gap: var(--space-4); flex-wrap: wrap; }
+    }
+
+    /* ---------- FAQ FILTER CHIPS ---------- */
+    .cbs-faq-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: var(--space-6);
+    }
+    .cbs-faq-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--bbg-text);
+      transition: all 220ms ease;
+      font-family: inherit;
+    }
+    .cbs-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .cbs-faq-chip.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    .cbs-faq-chip__count {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: all 220ms ease;
+    }
+    .cbs-faq-chip:hover .cbs-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .cbs-faq-chip.is-active .cbs-faq-chip__count {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--bbg-white);
+    }
+    .cbs-faq__cat-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 0.25em 0.6em;
+      border-radius: 4px;
+      margin-right: var(--space-3);
+      flex-shrink: 0;
+    }
+    .cbs-faq__q-text { flex-grow: 1; }
+    .cbs-faq__item.is-hidden { display: none; }
   </style>
+
+  <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // 1. Reveal-on-scroll for elements with .cbs-reveal
+      const revealEls = document.querySelectorAll('.cbs-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      // 2. Reveal the steps connecting line when the steps list enters view
+      const stepsList = document.querySelector('.cbs-steps');
+      if (stepsList && !reduced && 'IntersectionObserver' in window) {
+        const stepsIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-in');
+              stepsIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2 });
+        stepsIo.observe(stepsList);
+      } else if (stepsList) {
+        stepsList.classList.add('is-in');
+      }
+
+      // 3. Animated number counters in the hero meta strip
+      const counters = document.querySelectorAll('[data-counter]');
+      if (counters.length && !reduced && 'IntersectionObserver' in window) {
+        const animate = (el) => {
+          const target = parseFloat(el.dataset.counter || '0');
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(target * eased);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        };
+        const counterIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((el) => counterIo.observe(el));
+      } else {
+        counters.forEach((el) => {
+          el.textContent = (el.dataset.counter || '0') + (el.dataset.suffix || '');
+        });
+      }
+
+      // 4. Hero parallax + scroll progress bar (single rAF loop, throttled)
+      const parallaxEl = document.querySelector('[data-parallax]');
+      const progressEl = document.querySelector('.cbs-progress__bar');
+      const heroEl = document.querySelector('[data-hero]');
+      let ticking = false;
+
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+
+          // Parallax
+          if (parallaxEl && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+
+          // Progress
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // 5. Smooth scroll for in-page anchors (the hero scroll arrow)
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+
+      // 6. Auto-close other FAQ items when one opens (accordion behaviour)
+      const faqItems = document.querySelectorAll('.cbs-faq__item');
+      faqItems.forEach((item) => {
+        item.addEventListener('toggle', () => {
+          if (item.open) {
+            faqItems.forEach((other) => {
+              if (other !== item && other.open) other.open = false;
+            });
+          }
+        });
+      });
+
+      // 7. Business model tabs
+      const tabsRoot = document.querySelector('[data-tabs]');
+      if (tabsRoot) {
+        const tabs = Array.from(tabsRoot.querySelectorAll('.cbs-tabs__tab'));
+        const panels = Array.from(tabsRoot.querySelectorAll('.cbs-tabs__panel'));
+        const indicator = tabsRoot.querySelector('.cbs-tabs__indicator');
+
+        const setActive = (tab) => {
+          tabs.forEach((t) => {
+            const active = t === tab;
+            t.classList.toggle('is-active', active);
+            t.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          const targetId = tab.getAttribute('data-tab-target');
+          panels.forEach((p) => {
+            const active = p.id === targetId;
+            p.classList.toggle('is-active', active);
+            if (active) p.removeAttribute('hidden');
+            else p.setAttribute('hidden', '');
+          });
+          if (indicator) {
+            const idx = tabs.indexOf(tab);
+            const w = 100 / tabs.length;
+            indicator.style.width = w + '%';
+            indicator.style.transform = `translateX(${idx * 100}%)`;
+          }
+        };
+
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => setActive(tab));
+          tab.addEventListener('keydown', (e) => {
+            const idx = tabs.indexOf(tab);
+            if (e.key === 'ArrowRight') {
+              e.preventDefault();
+              const next = tabs[(idx + 1) % tabs.length];
+              next.focus();
+              setActive(next);
+            } else if (e.key === 'ArrowLeft') {
+              e.preventDefault();
+              const prev = tabs[(idx - 1 + tabs.length) % tabs.length];
+              prev.focus();
+              setActive(prev);
+            }
+          });
+        });
+
+        // Initialise indicator on the active tab
+        const initialActive = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
+        if (initialActive) setActive(initialActive);
+      }
+
+      // 8. Matrix cell hover highlights row + column, click jumps to a tab
+      const matrix = document.querySelector('[data-matrix] .cbs-matrix__grid');
+      if (matrix) {
+        const cells = Array.from(matrix.querySelectorAll('.cbs-matrix__cell'));
+        const heads = Array.from(matrix.querySelectorAll('.cbs-matrix__head'));
+        const rowHeads = Array.from(matrix.querySelectorAll('.cbs-matrix__row-head'));
+
+        const clearHighlight = () => {
+          matrix.classList.remove('is-hover-row');
+          cells.forEach((c) => c.classList.remove('is-row-active', 'is-col-active'));
+          heads.forEach((h) => h.classList.remove('is-active'));
+          rowHeads.forEach((h) => h.classList.remove('is-active'));
+        };
+
+        cells.forEach((cell) => {
+          const row = cell.dataset.row;
+          const col = cell.dataset.col;
+          cell.addEventListener('mouseenter', () => {
+            matrix.classList.add('is-hover-row');
+            cells.forEach((c) => {
+              c.classList.toggle('is-row-active', c.dataset.row === row);
+              c.classList.toggle('is-col-active', c.dataset.col === col);
+            });
+            heads.forEach((h) => h.classList.toggle('is-active', h.dataset.col === col));
+            rowHeads.forEach((h) => h.classList.toggle('is-active', h.dataset.row === row));
+          });
+          cell.addEventListener('mouseleave', clearHighlight);
+          cell.addEventListener('click', () => {
+            const targetTabId = cell.dataset.tabJump;
+            const tab = targetTabId && document.getElementById(targetTabId);
+            if (tab) {
+              tab.click();
+              tab.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+              tab.focus();
+            }
+          });
+        });
+      }
+
+      // 9. Journey vertical timeline scroll progress + active state
+      const journey = document.querySelector('[data-journey]');
+      if (journey) {
+        const fill = journey.querySelector('[data-journey-fill]');
+        const items = Array.from(journey.querySelectorAll('[data-journey-item]'));
+
+        const updateJourney = () => {
+          const rect = journey.getBoundingClientRect();
+          const vh = window.innerHeight;
+          const total = rect.height;
+          const visible = Math.max(0, Math.min(total, vh * 0.55 - rect.top));
+          const pct = Math.max(0, Math.min(100, (visible / total) * 100));
+          if (fill) fill.style.setProperty('--journey-progress', pct + '%');
+
+          items.forEach((item) => {
+            const r = item.getBoundingClientRect();
+            const center = r.top + r.height / 2;
+            const inActive = center < vh * 0.6 && center > 0;
+            item.classList.toggle('is-active', inActive);
+          });
+        };
+
+        let journeyTicking = false;
+        const onJourneyScroll = () => {
+          if (journeyTicking) return;
+          journeyTicking = true;
+          requestAnimationFrame(() => {
+            updateJourney();
+            journeyTicking = false;
+          });
+        };
+        window.addEventListener('scroll', onJourneyScroll, { passive: true });
+        window.addEventListener('resize', onJourneyScroll, { passive: true });
+        updateJourney();
+      }
+
+      // 10. FAQ category filter
+      const faqFilter = document.querySelector('[data-faq-filter]');
+      const faqList = document.querySelector('[data-faq-list]');
+      if (faqFilter && faqList) {
+        const chips = Array.from(faqFilter.querySelectorAll('.cbs-faq-chip'));
+        const items = Array.from(faqList.querySelectorAll('.cbs-faq__item'));
+        chips.forEach((chip) => {
+          chip.addEventListener('click', () => {
+            const cat = chip.dataset.faqCat;
+            chips.forEach((c) => {
+              const on = c === chip;
+              c.classList.toggle('is-active', on);
+              c.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            items.forEach((item) => {
+              const matches = cat === 'All' || item.dataset.faqCat === cat;
+              item.classList.toggle('is-hidden', !matches);
+            });
+          });
+        });
+      }
+    })();
+  </script>
 </Layout>

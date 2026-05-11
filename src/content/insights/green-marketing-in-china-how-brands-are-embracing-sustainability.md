@@ -42,12 +42,12 @@ Beyond Earth Day, brands like Starbucks ensure that their sustainability initiat
 
 Engaging consumers emotionally and visually can significantly enhance a green marketing campaign's impact. Zhao Ri Wei Pin, an organic milk brand, constructed a globe out of milk cartons on Anfu Road in Shanghai. This interactive installation invited users to deposit their milk cartons into a recycling cylinder, symbolizing their support for the environment. This activity not only promotes recycling but also engages consumers in a fun and meaningful way.
 
-## Leveraging Consumer Interest in Sustainability Through Social Marketing in China
+## Tapping Consumer Interest in Sustainability Through Social Marketing in China
 
-According to the 2023 Higher Impact report by Amazon Advertising, "66% of global consumers actively seek out brands that conduct business sustainably, a figure that continues to grow." Brands can tap into this growing interest by maintaining a consistent focus on sustainability throughout the year, not just around Earth Day.
+According to the 2023 Higher Impact report by Amazon Advertising, "66% of global consumers actively seek out brands that conduct business sustainably, a figure that continues to grow." Brands can tap into this growing interest by maintaining a consistent focus on sustainability throughout the year, instead of saving it for Earth Day.
 
 For brands with inherent environmental attributes, such as Purcotton and Zhao Ri Wei Pin, Earth Day campaigns can deepen their eco-friendly image. These campaigns link green issues to their products and services, reinforcing their commitment to sustainability.
 
 For other brands, presenting sustainability in creative and engaging ways, like Proya Cosmetics and Seesaw, can still effectively communicate their dedication to environmental protection. Such initiatives reflect a long-term business philosophy centered on sustainability.
 
-Incorporating sustainability into a brand's core values and marketing strategies is not just a trend but a necessity in today's market. Effective green marketing campaigns not only address environmental issues but also resonate with consumers, fostering loyalty and encouraging sustainable consumer behaviors. As more brands embrace sustainability, these efforts will collectively contribute to a more environmentally conscious society.
+Incorporating sustainability into a brand's core values and marketing strategies has moved from trend to necessity in today's market. Effective green marketing campaigns address environmental issues, resonate with consumers, build loyalty and encourage sustainable consumer behaviours. As more brands embrace sustainability, these efforts will collectively contribute to a more environmentally conscious society.

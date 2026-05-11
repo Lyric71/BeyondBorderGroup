@@ -14,7 +14,7 @@ legacyUrl: "https://beyondbordergroup.com/what-taobao-instant-commerce-means-for
 
 Double 11 used to be about one question: who could stack the biggest discounts.
 
-This year, Alibaba used it for something different. With Taobao Instant Commerce and the rebrand of Ele.me into Taobao Flash Sale, Alibaba is not just chasing festival GMV. It is trying to retrain how people shop in China every day. Instant delivery is no longer a side product inside a food app. It is being woven into the core Taobao experience.
+This year, Alibaba used it for something different. With Taobao Instant Commerce and the rebrand of Ele.me into Taobao Flash Sale, Alibaba is doing more than chasing festival GMV. It is trying to retrain how people shop in China every day. Instant delivery is no longer a side product inside a food app. It is being woven into the core Taobao experience.
 
 For non-Chinese brands, this is less about one campaign and more about planning for a world where Chinese ecommerce behaves a lot more like takeaway.
 
@@ -42,7 +42,7 @@ Instant retail runs on different wiring. It is closer to food delivery:
 * Short decision cycles
 * High frequency, lower ticket orders
 
-By embedding instant delivery into Taobao and rebranding Ele.me as Taobao Flash Sale, Alibaba is trying to merge these two behaviours. The goal is not just to win Double 11. It is to:
+By embedding instant delivery into Taobao and rebranding Ele.me as Taobao Flash Sale, Alibaba is trying to merge these two behaviours. The goal goes beyond Double 11. It is to:
 
 * Create daily touchpoints instead of a few festival spikes
 * Lift purchase frequency per user, not only basket size

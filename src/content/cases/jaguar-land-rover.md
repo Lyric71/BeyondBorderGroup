@@ -22,7 +22,7 @@ order: 16
 
 ## The brand
 
-Jaguar Land Rover is renowned for blending luxury, performance and innovative technology in its iconic vehicles. Committed to sustainability and cutting-edge design, the group continues to set the standard in the automotive industry.
+Jaguar Land Rover blends luxury, performance and innovative technology in its vehicles. The group invests heavily in sustainability and forward design, and remains a benchmark in the automotive industry.
 
 ## The challenge
 

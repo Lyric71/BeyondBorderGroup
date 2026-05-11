@@ -52,7 +52,7 @@ That content served two jobs. It converted first-time buyers. And it seeded the 
 
 > The #MyEmotionalOasis campaign generated over 120,000 UGC posts and 210% search growth on Xiaohongshu.
 
-Most brands underestimate what Xiaohongshu actually does in a purchase funnel. It is not just a mood board. It is where Chinese consumers go to verify a brand before spending real money. Notes about ingredients, routines, before-and-after skin, and honest reviews build the long-tail search foundation that makes paid media more efficient everywhere else.
+Most brands underestimate what Xiaohongshu does in a purchase funnel. Calling it a mood board misses the point. It is where Chinese consumers verify a brand before spending real money. Notes about ingredients, routines, before-and-after skin, and honest reviews build the long-tail search foundation that makes paid media more efficient everywhere else.
 
 Collgene seeded emotional narratives there. Gift sets named "Overtime Rescue Kit" and "Stress-Relief Set." Campaigns built around urban life and skin that reacts when you have not slept. That content drove community before it drove conversion.
 

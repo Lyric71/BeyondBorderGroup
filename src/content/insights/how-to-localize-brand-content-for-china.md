@@ -46,7 +46,7 @@ Understanding the nuances of these platforms is important to localize your marke
 
 Effective localization begins with an in-depth market research. Before entering the Chinese market, it's important to understand local competitors, consumer preferences, and digital trends. This involves both qualitative and quantitative research methods:
 
-* **Competitor Analysis:** You need to examine how local and international brands communicate with Chinese consumers. You also need to identify gaps in their strategies that your brand can leverage.
+* **Competitor Analysis:** You need to examine how local and international brands communicate with Chinese consumers. You also need to identify gaps in their strategies that your brand can use.
 * **Consumer Insights:** You need to develop customer personas based on detailed demographic and psychographic data. This helps in understanding what resonates with different segments, from urban Gen Z consumers to rural families.
 * **Surveys and Focus Groups:** You need to engage directly with potential customers to gain firsthand insights into their needs and preferences.
 
@@ -70,7 +70,7 @@ Baidu dominates the search engine market in China, thus making it crucial to opt
 
 Additionally, platforms like WeChat and Weibo have their own search functionalities, and optimizing your content for these platforms will further increase your brand's visibility. Tapping into the power of China search engines is important to maintain a strong digital presence.
 
-### Leverage Local Digital Platforms for Engagement
+### Use Local Digital Platforms for Engagement
 
 Engaging with Chinese consumers requires a strong presence on the platforms they use daily. Social media and news aggregators play an important role in how brands connect with audiences in China.
 

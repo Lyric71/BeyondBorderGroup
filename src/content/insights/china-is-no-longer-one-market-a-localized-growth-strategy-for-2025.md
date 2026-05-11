@@ -30,8 +30,8 @@ Winning brands no longer ask "How do we win China?" They ask, "Where do we deser
 That means moving away from symbolic localisation and toward structural choices about where and how to show up:
 
 * Choosing specific cities and clusters instead of a single national launch.
-* Building activation plans around real local routines, not just landmarks and clichés.
-* Designing creatives that speak to lived experiences, not generic cultural references.
+* Building activation plans around real local routines, instead of landmarks and clichés.
+* Designing creatives that speak to lived experiences, instead of generic cultural references.
 
 When a luxury house invests in a Chengdu experience built around the city's cultural confidence, or a sports brand refurbishes local courts instead of staging a one-off show, it is making exactly this shift. It is not trying to talk to all of China; it is choosing one place and getting it right.
 

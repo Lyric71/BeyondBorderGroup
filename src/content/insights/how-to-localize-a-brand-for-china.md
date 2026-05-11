@@ -42,7 +42,7 @@ It is important to ensure that your brand complies with Chinese regulations, inc
 
 ### 7. Provide Excellent Customer Service
 
-Providing excellent customer service is key to success in China, as customer experience is highly valued. In China, customers expect quick response times and personal attention, so it is important to invest in a robust customer service infrastructure. Additionally, it is important to be responsive to customer complaints and feedback, as this can have a significant impact on brand reputation.
+Providing excellent customer service is key to success in China, as customer experience is highly valued. In China, customers expect quick response times and personal attention, so it is important to invest in a strong customer service infrastructure. Additionally, it is important to be responsive to customer complaints and feedback, as this can have a significant impact on brand reputation.
 
 ## Conclusion
 

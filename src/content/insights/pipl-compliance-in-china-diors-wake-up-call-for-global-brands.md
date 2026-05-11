@@ -16,7 +16,7 @@ For years, China's Personal Information Protection Law (PIPL) sat at the edge of
 
 Dior's recent prosecution in China changed that. After a data breach at its Shanghai subsidiary, the French luxury house became the first foreign brand formally punished under PIPL. The message from regulators is simple: data protection is no longer theoretical.
 
-If you run CRM, e-commerce, or media in China, this is not just a legal story. It is about how your customer data system is designed.
+If you run CRM, e-commerce, or media in China, treat this as more than a legal story. It is about how your customer data system is designed.
 
 ## From Vague Threat to Real Enforcement
 
@@ -73,4 +73,4 @@ A few concrete steps:
 
 Dior's case is a warning shot and an opportunity. Brands that treat PIPL as a last-minute legal review will stay in firefighting mode, patching gaps whenever a breach or complaint surfaces. Brands that design for clear data flows, transparent consent, and local control will be better placed to earn trust from both Chinese consumers and regulators.
 
-If you are building for the long term in China, PIPL is not just another hurdle. It is part of the market reality, and a chance to build a cleaner, more resilient China business.
+If you are building for the long term in China, PIPL is more than another hurdle. It is part of the market reality, and a chance to build a cleaner, more resilient China business.

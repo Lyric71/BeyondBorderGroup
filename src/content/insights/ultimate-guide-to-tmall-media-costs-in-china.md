@@ -67,7 +67,7 @@ Content marketing on Tmall goes beyond traditional advertisements, with storytel
 * **Localized Content:** Product descriptions, visuals, and brand messaging should be carefully localized, meaning they need to align with cultural expectations and shopping behaviors in China. High-quality visuals and detailed descriptions that convey value are essential for building trust among Chinese consumers.
 * **Influencer Collaborations:** China influencers, also known as Key Opinion Leaders (KOLs), help brands reach target audiences through trusted recommendations. These influencers have established audiences and are particularly effective in bridging the gap between foreign brands and local consumers. While top-tier KOLs charge higher fees, micro-influencers provide a more affordable option for targeted reach.
 
-By tailoring content and leveraging KOL marketing on Tmall, brands can create a shopping experience that feels relevant and engaging to Chinese consumers. Working with a social media agency in China can further enhance content alignment and boost results.
+By tailoring content and using KOL marketing on Tmall, brands can create a shopping experience that feels relevant and engaging to Chinese consumers. Working with a social media agency in China can further enhance content alignment and boost results.
 
 ## Strategic Participation in Tmall's Key Promotional Events
 

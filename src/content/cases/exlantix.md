@@ -32,4 +32,4 @@ The work spanned the full identity system, from emblem to typography, color sche
 
 ## Results
 
-The outcome is a comprehensive visual identity that captures Exlantix's innovative ethos and premium stature. It flows across all brand interactions to create a unified experience and lays a robust foundation for the brand's international unveiling.
+The outcome is a coherent visual identity that captures Exlantix's innovative ethos and premium stature. It flows across all brand interactions to create a unified experience and lays a solid foundation for the brand's international launch.

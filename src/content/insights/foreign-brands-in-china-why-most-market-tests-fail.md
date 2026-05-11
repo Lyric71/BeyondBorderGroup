@@ -48,7 +48,7 @@ This one still comes up in almost every briefing I attend. A brand executive sta
 
 I have heard this pitch dozens of times. I have never seen it work.
 
-You need to understand your actual competition. You need to know what Chinese consumers in your category buy, at what price, on which platforms, and why. You need the right product mix, the right pricing, and branding adapted to this market. Walk in without that homework and failure is not a risk. It is a certainty.
+You need to know who you are up against. What Chinese consumers in your category buy, at what price, on which platforms, and why. You need the right product mix, the right pricing, and branding adapted to this market. Walk in without that homework and failure stops being a risk. It becomes a certainty.
 
 > Market research in China used to cost six figures and take months. With AI tools, we now run competitive studies for our clients in weeks at a fraction of the price. There is no excuse to skip it.
 

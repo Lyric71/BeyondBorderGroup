@@ -26,7 +26,7 @@ For global brands, JD is no longer just a line in a Tmall vs JD media plan. It i
 
 ## Experience-First, Not Display-First
 
-The core principle is "experience-driven sales". JD wants people to use products, not just view them.
+The core principle is "experience-driven sales". JD wants people to use products, not browse them.
 
 Stores are wired for real use: ovens and coffee machines run all day; cleaning devices are tested on real mess; laundry and shoe-care areas use professional equipment, not props.
 
@@ -42,7 +42,7 @@ If you are a global brand, the key question is: what do you want people to actua
 
 ## The 5 km Strategy: Mall as Community Hub
 
-JD describes each mall as serving a 5 km radius. The aim is repeat visits and familiarity, not just one big purchase.
+JD describes each mall as serving a 5 km radius. The aim is repeat visits and familiarity, rather than a single big purchase.
 
 To do this, JD layers retail with neighbourhood services such as cleaning services via mini program, kids' DIY classes using in-store appliances, and weekend lobby events from launches to cosplay.
 
@@ -52,7 +52,7 @@ The result is a destination where people drop by even when they are not actively
 
 The staffing model is also different from a traditional electronics store.
 
-JD employees manage experience zones and overall service. Brand specialists sit in your areas with the brief to educate and guide, not just push volume. Many staff are also encouraged to behave like small KOLs: they run Xiaohongshu accounts with clear personas such as foodie, tech geek, or home organiser, and create short videos and livestream from the store, turning quiet weekdays into "virtual store" days.
+JD employees manage experience zones and overall service. Brand specialists sit in your areas with the brief to educate and guide, rather than push volume. Many staff are also encouraged to behave like small KOLs: they run Xiaohongshu accounts with clear personas such as foodie, tech geek, or home organiser, and create short videos and livestream from the store, turning quiet weekdays into "virtual store" days.
 
 If JD Mall is in your mix, you need to decide how these people talk about your brand, and whether they have the right demos, stories, and content to share.
 
@@ -70,15 +70,15 @@ The most successful brands will treat JD Mall as a testbed where content, mercha
 
 ## If You Are a Global Brand, What Now?
 
-If your category fits JD Mall's focus, this is not just "another offline door".
+If your category fits JD Mall's focus, treat it as more than "another offline door".
 
 A few concrete moves:
 
 * **Define your in-store use cases.** Be clear about the experiences you want to design: a full meal cooked on your appliances, a skincare routine, a home cinema walkthrough.
 * **Align content and staff enablement.** Give JD staff simple, localised stories, checklists, and content that make your products easy to explain and film.
-* **Measure beyond the store.** Work with JD to read the combined impact of mall exposure and online sales, not just POS numbers from one location.
+* **Measure beyond the store.** Work with JD to read the combined impact of mall exposure and online sales, rather than POS numbers from one location.
 
-## Turning JD Mall into a Brand Engine, Not Just a Channel
+## Turning JD Mall into a Brand Engine, Not a Side Channel
 
 At BeyondBorderGroup, we help global brands translate JD's ecosystem into clear decisions mapping where JD Mall fits in your broader China portfolio, which cities and formats to prioritise, and how to structure pilots instead of one-size-fits-all rollouts.
 

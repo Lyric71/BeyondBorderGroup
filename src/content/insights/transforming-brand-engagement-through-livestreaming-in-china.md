@@ -12,7 +12,7 @@ legacyUrl: "https://beyondbordergroup.com/transforming-brand-engagement-through-
 
 ## The Rise of CEO Livestreamers
 
-In China's rapidly evolving digital marketplace, a notable trend is emerging where corporate executives are stepping into the role of livestreaming influencers. This move, reminiscent of tactics employed by global tech celebrities such as Elon Musk, sees CEOs like Lei Jun of Xiaomi and Zhou Hongyi of 360 Company leveraging livestreaming to significantly enhance their brands' visibility and sales. These leaders are not merely presenting products; they are also personalizing their corporate brands, making them relatable and accessible to the digital native consumer base.
+In China's rapidly evolving digital marketplace, a notable trend is emerging where corporate executives are stepping into the role of livestreaming influencers. This move, reminiscent of tactics employed by global tech celebrities such as Elon Musk, sees CEOs like Lei Jun of Xiaomi and Zhou Hongyi of 360 Company using livestreaming to significantly enhance their brands' visibility and sales. These leaders are not merely presenting products; they are also personalizing their corporate brands, making them relatable and accessible to the digital native consumer base.
 
 ## Navigating the Livestreaming Landscape
 

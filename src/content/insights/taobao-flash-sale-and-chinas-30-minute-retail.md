@@ -18,7 +18,7 @@ Now the question is changing.
 
 "What is our plan for Taobao traffic and local fulfilment, in the same flow?"
 
-Alibaba's decision to rebrand Ele.me into Taobao Flash Sale (淘宝闪购) is not just a name change. It is a structural reset that pulls food delivery, instant retail, and in-store services into a unified Taobao experience.
+Alibaba's decision to rebrand Ele.me into Taobao Flash Sale (淘宝闪购) goes beyond a name change. It is a structural reset that pulls food delivery, instant retail, and in-store services into a unified Taobao experience.
 
 China is pushing deeper into online and offline integration, and the platforms are doing it at speed.
 
@@ -65,7 +65,7 @@ Meituan dominates local services. JD is investing heavily in quick commerce. If 
 China's instant retail market is forecast to exceed RMB 2 trillion by 2030. People's Daily Online Food, groceries, pharmacy, convenience, and "anything that can be delivered" are converging into one expectation.
 
 **3) Alibaba wants Taobao to be inside daily life.**
-If Taobao can own more of the everyday rhythm, it strengthens loyalty, increases session frequency, and gives it more leverage in category growth.
+If Taobao can own more of the everyday rhythm, it strengthens loyalty, increases session frequency, and gives it more use in category growth.
 
 ![](https://beyondbordergroup.com/wp-content/uploads/2025/12/TB-flash-3-1024x576.png)
 
@@ -142,7 +142,7 @@ If you are a global brand active in China, ask these five questions now:
 
 * Do we know which SKUs win in "need it now" scenarios?
 * Do we have local inventory close enough to fulfill reliably?
-* Are our Taobao assets built for fast conversion, not just brand storytelling?
+* Are our Taobao assets built for fast conversion as well as brand storytelling?
 * Can our TP and retail partners execute store-level merchandising consistently?
 * Do we have governance for pricing and promotions across Taobao, Meituan, and other channels?
 

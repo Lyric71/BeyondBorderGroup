@@ -1429,26 +1429,6 @@ body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-he
     rgba(13, 18, 28, 0) 70%
   );
 }
-.contact__bg-glow {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(20px);
-  mix-blend-mode: screen;
-}
-.contact__bg-glow--top {
-  width: 720px;
-  height: 720px;
-  top: -260px;
-  right: -180px;
-  background: radial-gradient(circle, rgba(38, 154, 218, 0.28) 0%, transparent 65%);
-}
-.contact__bg-glow--bottom {
-  width: 560px;
-  height: 560px;
-  bottom: -240px;
-  left: -160px;
-  background: radial-gradient(circle, rgba(38, 154, 218, 0.18) 0%, transparent 65%);
-}
 .contact__bg-words {
   position: absolute;
   inset: 0;

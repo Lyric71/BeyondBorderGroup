@@ -26,7 +26,7 @@ A store's live room is controllable. You can standardise claims, service scripts
 
 It is also where Douyin is investing on the product side. The platform has been bringing its performance ad stack closer to e-commerce operations, with tighter integration designed to improve conversion efficiency and reduce "wasted" traffic.
 
-This is why "store-led" is not just a content decision. It is a trading model.
+This is why "store-led" goes beyond content. It is a trading model.
 
 ![](https://beyondbordergroup.com/wp-content/uploads/2026/01/ecommerce-3.png)
 
@@ -76,7 +76,7 @@ Most global brands already know the basics: have a host, run offers, and work wi
 
 This is why store-led rooms keep gaining share. The model is ownable.
 
-**5) Close the loop with retention, not just conversion**
+**5) Close the loop with retention as well as conversion**
 
 * You do not "own" customers on Douyin the way you do in WeChat. But you can still build compounding value through:
   * Fan follow incentives and member perks
