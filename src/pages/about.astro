@@ -108,12 +108,59 @@ const metrics = [
 ];
 
 const clients = [
-  { name: 'Shiseido',     logo: '/Images/clients/shiseido.png' },
-  { name: 'Pierre Fabre', logo: '/Images/clients/pierre-fabre.png' },
-  { name: 'iFlytek',      logo: '/Images/clients/iflytek.png' },
-  { name: 'Camper',       logo: '/Images/clients/camper.png' },
-  { name: 'Into You',     logo: '/Images/clients/into-you.png' },
+  { name: 'Shiseido',       logo: '/Images/Clients%20Logos/shiseiso-black-scaled.png' },
+  { name: 'Pierre Fabre',   logo: '/Images/Clients%20Logos/pierre-black.png' },
+  { name: 'iFlytek',        logo: '/Images/Clients%20Logos/iflytek-black.png' },
+  { name: 'Camper',         logo: '/Images/Clients%20Logos/camper_black.png' },
+  { name: 'Into You',       logo: '/Images/Clients%20Logos/LogoIntoYou.png' },
+  { name: 'Estée Lauder',   logo: '/Images/Clients%20Logos/Estee%20Lauder.png' },
+  { name: 'Gucci',          logo: '/Images/Clients%20Logos/Gucci.png' },
+  { name: 'Huawei',         logo: '/Images/Clients%20Logos/Huawei.png' },
+  { name: 'Honor',          logo: '/Images/Clients%20Logos/Honor.png' },
+  { name: 'P&G',            logo: '/Images/Clients%20Logos/PG.png' },
+  { name: 'Sanofi',         logo: '/Images/Clients%20Logos/Sanofi.png' },
+  { name: 'Danone',         logo: '/Images/Clients%20Logos/Danone.png' },
+  { name: 'Heineken',       logo: '/Images/Clients%20Logos/Heineken.png' },
+  { name: 'Bacardi',        logo: '/Images/Clients%20Logos/Bacardi.png' },
+  { name: 'Martini',        logo: '/Images/Clients%20Logos/martini.png' },
+  { name: 'Lavazza',        logo: '/Images/Clients%20Logos/Lavazza.png' },
+  { name: 'Nescafé',        logo: '/Images/Clients%20Logos/Nescaf%C3%A9.png' },
+  { name: 'Costa Coffee',   logo: '/Images/Clients%20Logos/Costa.png' },
+  { name: 'Ferrero',        logo: '/Images/Clients%20Logos/Ferrero.png' },
+  { name: 'Kraft Heinz',    logo: '/Images/Clients%20Logos/KraftHeinz.png' },
+  { name: 'Maltesers',      logo: '/Images/Clients%20Logos/maltesers.png' },
+  { name: 'Kerry',          logo: '/Images/Clients%20Logos/Kerry.png' },
+  { name: 'Valio',          logo: '/Images/Clients%20Logos/Valio.png' },
+  { name: 'a2 Milk',        logo: '/Images/Clients%20Logos/a2.png' },
+  { name: 'Langnese',       logo: '/Images/Clients%20Logos/Langnese_International_Logo_v2.svg' },
+  { name: 'Marriott',       logo: '/Images/Clients%20Logos/Marriot.png' },
+  { name: 'Cigna',          logo: '/Images/Clients%20Logos/Cigna.png' },
+  { name: 'Electrolux',     logo: '/Images/Clients%20Logos/Electrolux.png' },
+  { name: 'Viessmann',      logo: '/Images/Clients%20Logos/Viessman.png' },
+  { name: 'Chery',          logo: '/Images/Clients%20Logos/Chery.png' },
+  { name: 'JAC Motors',     logo: '/Images/Clients%20Logos/JAC.png' },
+  { name: 'Bowers & Wilkins', logo: '/Images/Clients%20Logos/Bowers.png' },
+  { name: 'iGuzzini',       logo: '/Images/Clients%20Logos/iGuzzini.png' },
+  { name: 'Pigeon',         logo: '/Images/Clients%20Logos/Pigeon.png' },
+  { name: 'Pilot',          logo: '/Images/Clients%20Logos/Pilot.png' },
+  { name: 'Eucerin',        logo: '/Images/Clients%20Logos/Eucerin.png' },
+  { name: 'RoC',            logo: '/Images/Clients%20Logos/Roc.png' },
+  { name: 'Shu Uemura',     logo: '/Images/Clients%20Logos/Shu.png' },
+  { name: 'Age 20’s',  logo: '/Images/Clients%20Logos/Age20.png' },
+  { name: 'Codex Beauty',   logo: '/Images/Clients%20Logos/Codex.png' },
+  { name: 'Skarlett Blue',  logo: '/Images/Clients%20Logos/Skarlett%20Blue.png' },
+  { name: 'Magpie',         logo: '/Images/Clients%20Logos/MagPie.png' },
+  { name: 'Macusee',        logo: '/Images/Clients%20Logos/Logo-Macusee.png' },
+  { name: 'Zeinley',        logo: '/Images/Clients%20Logos/Zeinley.png' },
+  { name: 'Mission',        logo: '/Images/Clients%20Logos/Mission.png' },
+  { name: 'Russell',        logo: '/Images/Clients%20Logos/Russell.png' },
+  { name: 'BO',             logo: '/Images/Clients%20Logos/BO.png' },
+  { name: 'Blue',           logo: '/Images/Clients%20Logos/Blue.png' },
 ];
+
+const halfIndex = Math.ceil(clients.length / 2);
+const clientsRowA = clients.slice(0, halfIndex);
+const clientsRowB = clients.slice(halfIndex);
 ---
 
 <Layout
@@ -323,25 +370,43 @@ const clients = [
           </div>
         ))}
       </div>
+    </div>
 
-      <ul class="client-wall" aria-label="A sample of brands we have worked with">
-        {clients.map((c) => (
-          <li class="client-wall__item">
-            <img
-              src={c.logo}
-              alt={c.name}
-              loading="lazy"
-              decoding="async"
-              width="120"
-              height="120"
-            />
-          </li>
-        ))}
-      </ul>
+    <div class="client-ticker" role="region" aria-label="A sample of brands we have worked with">
+      <div class="client-ticker__row">
+        <div class="client-ticker__track">
+          {clientsRowA.map((c) => (
+            <div class="client-ticker__item">
+              <img src={c.logo} alt={c.name} loading="lazy" decoding="async" />
+            </div>
+          ))}
+          {clientsRowA.map((c) => (
+            <div class="client-ticker__item" aria-hidden="true">
+              <img src={c.logo} alt="" loading="lazy" decoding="async" />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="client-ticker__row client-ticker__row--reverse">
+        <div class="client-ticker__track">
+          {clientsRowB.map((c) => (
+            <div class="client-ticker__item">
+              <img src={c.logo} alt={c.name} loading="lazy" decoding="async" />
+            </div>
+          ))}
+          {clientsRowB.map((c) => (
+            <div class="client-ticker__item" aria-hidden="true">
+              <img src={c.logo} alt="" loading="lazy" decoding="async" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
 
+    <div class="container">
       <p class="proof-note">
-        Shiseido, Pierre Fabre, iFlytek, Camper, Into You and 55+ more international and
-        Chinese brands across beauty, F&amp;B, fashion, automotive and technology.
+        Global and Chinese brands across beauty, F&amp;B, fashion, automotive,
+        and technology.
       </p>
     </div>
   </section>
@@ -725,39 +790,88 @@ const clients = [
     line-height: 1.4;
   }
 
-  .client-wall {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 var(--space-5);
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: var(--space-5);
+  .client-ticker {
+    --ticker-logo-h: 64px;
+    --ticker-logo-w: 200px;
+    --ticker-gap: clamp(36px, 4.5vw, 72px);
+    --ticker-duration: 95s;
+    width: 100%;
+    margin: var(--space-5) 0 var(--space-4);
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%);
+  }
+  .client-ticker__row {
+    overflow: hidden;
+    padding-block: var(--space-3);
+  }
+
+  .client-ticker__track {
+    display: flex;
     align-items: center;
+    width: max-content;
+    gap: var(--ticker-gap);
+    animation: client-ticker-scroll var(--ticker-duration) linear infinite;
+    will-change: transform;
   }
-  .client-wall__item {
-    background: var(--bbg-white);
-    border: 1px solid var(--bbg-border);
-    border-radius: var(--radius-md);
-    padding: var(--space-5);
-    aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
+  .client-ticker__row--reverse .client-ticker__track {
+    animation-direction: reverse;
+    animation-duration: calc(var(--ticker-duration) * 1.2);
   }
-  .client-wall__item:hover {
-    border-color: var(--bbg-blue);
-    transform: translateY(-2px);
+  .client-ticker:hover .client-ticker__track,
+  .client-ticker:focus-within .client-ticker__track {
+    animation-play-state: paused;
   }
-  .client-wall__item img {
-    max-width: 80%;
-    max-height: 80%;
+
+  .client-ticker__item {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .client-ticker .client-ticker__item img {
+    display: block;
     width: auto;
     height: auto;
+    max-height: var(--ticker-logo-h);
+    max-width: var(--ticker-logo-w);
     object-fit: contain;
-    opacity: 0.7;
-    transition: opacity var(--dur) var(--ease);
+    opacity: 0.5;
+    filter: grayscale(1);
+    transition: opacity var(--dur) var(--ease), filter var(--dur) var(--ease);
   }
-  .client-wall__item:hover img { opacity: 1; }
+  .client-ticker .client-ticker__item:hover img {
+    opacity: 1;
+    filter: grayscale(0);
+  }
+
+  @keyframes client-ticker-scroll {
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(calc(-50% - (var(--ticker-gap) / 2)), 0, 0); }
+  }
+
+  @media (max-width: 960px) {
+    .client-ticker {
+      --ticker-logo-h: 52px;
+      --ticker-logo-w: 168px;
+    }
+  }
+  @media (max-width: 520px) {
+    .client-ticker {
+      --ticker-logo-h: 40px;
+      --ticker-logo-w: 132px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .client-ticker__track { animation: none; transform: none !important; }
+    .client-ticker {
+      -webkit-mask-image: none;
+              mask-image: none;
+      overflow-x: auto;
+    }
+  }
 
   .proof-note {
     text-align: center;
@@ -769,10 +883,6 @@ const clients = [
 
   @media (max-width: 960px) {
     .proof-metrics { grid-template-columns: repeat(2, 1fr); }
-    .client-wall { grid-template-columns: repeat(3, 1fr); }
-  }
-  @media (max-width: 520px) {
-    .client-wall { grid-template-columns: repeat(2, 1fr); }
   }
 
   /* ---------- Recognition ---------- */
