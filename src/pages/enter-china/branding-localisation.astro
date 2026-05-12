@@ -6,919 +6,2163 @@ const pillars = [
     h: 'Understand the Chinese consumer',
     body:
       'Chinese consumers are not one audience. Preferences shift by city tier, age and platform. We research the nuances first, then build the brand on top.',
-    icon: 'lens',
+    image: '/Images/branding/positioning.png',
+    alt: 'Research, planning and consumer insight materials for a China brand build',
   },
   {
     h: 'Get the Chinese name right',
     body:
       'Most Chinese consumers do not read foreign languages. The right name is easy to say and carries positive meaning. The wrong one is a permanent ceiling on growth.',
-    icon: 'character',
+    image: '/Images/branding/naming.png',
+    alt: 'Chinese brand naming exploration with characters and notes',
   },
   {
     h: 'Transcreate, do not translate',
     body:
       'Adapting a brand for China is more than language. Story, imagery and experience all need to fit local taste. The result feels native, not imported.',
-    icon: 'palette',
+    image: '/Images/branding/visual-identity.png',
+    alt: 'Visual identity layouts adapted for Chinese platforms and packaging',
   },
 ];
 
-const pillarIcon: Record<string, string> = {
-  lens:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/><circle cx="11" cy="11" r="2.5"/></svg>',
-  character: '<span class="pillar__icon-char" lang="zh-Hans">品牌</span>',
-  palette:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9c0-1.5-1-2-2.5-2H17a2 2 0 0 1-2-2V7a2 2 0 0 0-3-1.7A9 9 0 0 0 12 3z"/><circle cx="7" cy="11" r="1" fill="currentColor"/><circle cx="9.5" cy="7.5" r="1" fill="currentColor"/><circle cx="14.5" cy="7" r="1" fill="currentColor"/></svg>',
-};
+const promises = [
+  {
+    title: 'Insight that actually shapes the brand',
+    desc: 'Category data, consumer research and platform reality drive the strategy. Nothing on the page is a guess.',
+  },
+  {
+    title: 'A Chinese name shoppers can say',
+    desc: 'Phonetic, semantic and cultural shortlists, trademark-cleared and tested in your target city tiers before anything else moves.',
+  },
+  {
+    title: 'Assets ready for every touchpoint',
+    desc: 'Packaging, photography, video, social and retail. Designed in China for Tmall, Douyin, RED, retail and PR, not adapted on the fly.',
+  },
+];
 
 const services = [
   {
-    h: 'Positioning',
-    body: "We map your category in China, find the white space your competitors have left open, and position your brand to own it. This is the decision that shapes every decision after it.",
-    image: '/Images/branding/positioning.png',
-    bullets: [
+    icon: 'target',
+    title: 'Positioning',
+    short: 'Strategy · White space · Messaging',
+    desc: 'We map your category in China, find the white space your competitors have left open, and position your brand to own it. The decision that shapes every decision after it.',
+    points: [
       'Competitive landscape in your category',
       'White-space and segment opportunity analysis',
       'A clear positioning statement, written for China',
       'A messaging hierarchy your team can use day to day',
     ],
+    color: '#269ADA',
+    colorSoft: '#E8F4FC',
   },
   {
-    h: 'Naming',
-    body: "The right Chinese name unlocks recognition, recall and word of mouth. The wrong one creates friction every time someone tries to say or remember it. We craft brand names that work linguistically, culturally and commercially.",
-    image: '/Images/branding/naming.png',
-    bullets: [
+    icon: 'character',
+    title: 'Naming',
+    short: 'Phonetic · Semantic · Trademark',
+    desc: 'The right Chinese name unlocks recognition, recall and word of mouth. The wrong one creates friction every time someone tries to say or remember it. We craft brand names that work linguistically, culturally and commercially.',
+    points: [
       'Phonetic, semantic and cultural name shortlists',
       'Trademark availability checks across categories',
       'Consumer testing in your target city tiers',
       'A final name that travels across packaging, search and voice',
     ],
+    color: '#E54B6E',
+    colorSoft: '#FCEAEF',
   },
   {
-    h: 'Visual Identity',
-    body: "Logo, color, typography, layout. We build a coherent visual identity for China and document it in a brand book your team and partners can apply consistently across every touchpoint.",
-    image: '/Images/branding/visual-identity.png',
-    bullets: [
+    icon: 'palette',
+    title: 'Visual identity',
+    short: 'Logo · Color · Typography · Layout',
+    desc: 'Logo, color, typography, layout. We build a coherent visual identity for China and document it in a brand book your team and partners can apply consistently across every touchpoint.',
+    points: [
       'Logo system designed for Chinese platforms and packaging',
       'Color and typography palettes adapted for local context',
       'A brand book and design standards for partners and agencies',
       'Templates for social, eCommerce and offline use',
     ],
+    color: '#7C5DFA',
+    colorSoft: '#F0EDFE',
   },
   {
-    h: 'Brand Assets',
-    body: "Packaging, video, photography, spatial design. The assets your brand needs to show up in China, designed in China for the Chinese market, ready for Tmall, Douyin, RED, retail and PR.",
-    image: '/Images/branding/brand-assets.png',
-    bullets: [
+    icon: 'cube',
+    title: 'Brand assets',
+    short: 'Packaging · Photo · Video · Spatial',
+    desc: 'Packaging, video, photography, spatial design. The assets your brand needs to show up in China, designed in China for the Chinese market, ready for Tmall, Douyin, RED, retail and PR.',
+    points: [
       'Packaging adapted for Chinese retail and eCommerce',
       'Brand photography and video shot in China',
       'Booth, pop-up and retail spatial design',
       'Social and KOL-ready creative kits',
     ],
+    color: '#0EA46C',
+    colorSoft: '#E6F5EE',
   },
 ];
 
-const faq = [
+const starts = [
   {
-    q: 'Why is it a must to localise a brand for China?',
-    a: 'Chinese consumers have unique preferences, cultural references and buying behaviours that differ significantly from other markets. Localisation makes the brand feel relevant, builds recognition, and earns the kind of trust that drives repeat purchase.',
+    name: 'New launch',
+    tag: 'No China presence yet',
+    desc: 'You are entering China for the first time. The brand has equity elsewhere but no Chinese name, no local assets and no recognition on the ground.',
+    when: 'You have a clear product, a defined budget and a six to twelve month window before launch. We build the brand from the strategy upward, designed for China from day one.',
+    bullets: [
+      'Category and consumer research in your target tiers',
+      'Positioning and messaging written for the Chinese market',
+      'Chinese name shortlist, trademark cleared and consumer tested',
+      'Full visual identity and brand book, China-ready from launch',
+      'Asset kit for packaging, social, Tmall, Douyin and RED',
+    ],
+    pricing: 'Project fee for the build, scoped by category and SKU range.',
+    highlight: false,
   },
   {
-    q: 'What are the specific characteristics of a brand in China?',
-    a: 'Brands that work in China lead with quality, authenticity and cultural relevance. They use auspicious colors, meaningful symbols and local references where it matters, and they live on Chinese social and eCommerce platforms, not on global ones translated into Mandarin.',
+    name: 'Refresh',
+    tag: 'You are already in market',
+    desc: 'You have been in China for years. The brand has shoppers, distribution and a Chinese name that works. The visual system has aged and the assets no longer match the platforms.',
+    when: 'You want to move faster on Douyin and RED, your packaging looks dated next to local competitors, or your Tmall storefront no longer reflects who you are. We update the identity without resetting the equity.',
+    bullets: [
+      'Audit of the current brand against your category in China today',
+      'Refreshed visual system, kept consistent with the global brand',
+      'Updated packaging and storefront assets for current platform norms',
+      'Refreshed brand book and templates for in-market teams',
+      'Rollout plan across online and offline touchpoints',
+    ],
+    pricing: 'Project fee, lighter than a full rebuild.',
+    highlight: true,
   },
   {
-    q: 'How different is brand perception in China compared to the rest of the world?',
-    a: 'Brand perception in China is shaped heavily by social proof, reviews and influencer endorsements. Chinese consumers also value heritage, innovation and personalised experiences, and they reward brands that show genuine understanding of local culture and trends.',
+    name: 'Rebrand',
+    tag: 'Reset after a misstep',
+    desc: 'Something broke. A bad Chinese name, a wrong cultural reference, a soft launch that never landed. The brand needs to start again without losing the SKUs and partnerships that still work.',
+    when: 'You want a clean reset, not a cosmetic fix. We rebuild the brand around what survives and replace what did not, then handle the transition for partners, platforms and shoppers.',
+    bullets: [
+      'Root-cause review of what is holding the brand back',
+      'New positioning and Chinese name where needed, with trademark search',
+      'Visual identity rebuilt to clear the legacy associations',
+      'Transition assets so existing shoppers follow the new brand',
+      'Comms plan for platforms, distributors and PR',
+    ],
+    pricing: 'Project fee, scoped after the audit.',
+    highlight: false,
   },
   {
-    q: 'What is special about a brand logo in China?',
-    a: 'A China-ready logo is simple, memorable and culturally resonant. It often uses positive cultural elements such as red for luck or symbols with auspicious meaning. It must also work cleanly across small avatars on WeChat, product packaging, and physical retail signage.',
-  },
-  {
-    q: 'What makes a good name for a brand in China?',
-    a: 'A good Chinese brand name is easy to pronounce, easy to remember, and carries positive or neutral associations. Ideally it hints at the brand promise. Names that are hard to say, hard to write, or carry an unfortunate meaning are a permanent drag on growth.',
-  },
-  {
-    q: 'How important is cultural relevance in Chinese branding?',
-    a: 'It is the difference between being noticed and being chosen. Brands that integrate local traditions, festivals and references into their campaigns build deeper connections, especially with younger consumers who are drawn to brands that feel current and culturally fluent.',
-  },
-  {
-    q: 'What role do influencers play in branding in China?',
-    a: 'Key Opinion Leaders (KOLs) and Key Opinion Consumers (KOCs) carry brand messages further and faster than paid media in most categories. The right partners build trust, drive consideration and convert directly through livestream and in-feed commerce.',
-  },
-  {
-    q: 'How can brands effectively use Chinese social media platforms?',
-    a: 'Create native content for each platform, ride trending topics, and use platform-specific tools such as WeChat mini-programs, Douyin short video and RED notes. Speed of response and consistency of presence matter as much as the content itself.',
-  },
-  {
-    q: 'What are the challenges of branding in China?',
-    a: 'Regulation, fast-moving consumer preferences, intense competition and reputation management on a hyper-connected social web. Strong brands stay close to the market, refresh their playbook every quarter, and have a team in country who can react in days, not months.',
-  },
-  {
-    q: 'How do Chinese consumers view foreign brands compared to local brands?',
-    a: 'Foreign brands are often associated with quality and prestige, while local brands are credited with cultural fluency and value. The brands that win blend international credibility with deep local adaptation, instead of choosing one over the other.',
+    name: 'Sub-brand',
+    tag: 'New line under existing parent',
+    desc: 'You already have a brand that works in China and you are launching a new line under it. Different category, different audience, different price point, same parent.',
+    when: 'You need a sub-brand that stands on its own but still benefits from the parent brand equity. We define the architecture, name the new line and build the assets it needs to compete.',
+    bullets: [
+      'Brand architecture review and sub-brand strategy',
+      'Naming for the new line, complementary to the parent',
+      'Visual system that signals the family without copying it',
+      'Packaging and launch assets for the new SKU range',
+      'Go-to-market plan with the parent brand team',
+    ],
+    pricing: 'Project fee, scoped by sub-brand ambition.',
+    highlight: false,
   },
 ];
+
+const steps = [
+  {
+    icon: 'compass',
+    title: 'Discover',
+    desc: 'We start by listening. Consumer research, category mapping, competitive teardown and a clear-eyed read of where your brand sits in China today versus where it could.',
+  },
+  {
+    icon: 'hammer',
+    title: 'Build',
+    desc: 'Positioning, Chinese name, visual identity and brand book. The strategic core of the brand, written and designed for the Chinese market and trademark-cleared before delivery.',
+  },
+  {
+    icon: 'rocket',
+    title: 'Activate',
+    desc: 'Packaging, photography, video and platform-ready creative kits. Everything your team and partners need to launch on Tmall, Douyin, RED, retail and PR with one coherent voice.',
+  },
+];
+
+const hubPoints = [
+  'Produce. Image, video, live action, 3D and motion at scale.',
+  'Platform. Brand-trained models on dedicated GPU servers.',
+  'Direct. Strategy, transcreation and team training on AI tools.',
+];
+
+const faqs = [
+  {
+    cat: 'Strategy',
+    q: 'Why localise the brand at all, can we not just translate?',
+    a: 'Translation moves words across. Localisation moves the brand. Chinese shoppers carry their own references, their own visual cues and their own platforms. A brand that lands without those signals reads as foreign in the bad sense, polite but irrelevant. The work is to keep what makes you you, and rebuild what is needed for a Chinese shopper to recognise it as theirs.',
+  },
+  {
+    cat: 'Strategy',
+    q: 'How is brand perception in China actually different?',
+    a: 'Different enough that you should plan for it from day one. Social proof carries more weight than brand-led claims. Reviews, KOL endorsements and what a friend bought last week often beat anything you say about yourself. Heritage matters, innovation matters, and being seen to understand local culture matters a lot.',
+  },
+  {
+    cat: 'Strategy',
+    q: 'Foreign brand or local brand, which side should we lean toward?',
+    a: 'Neither, cleanly. Foreign brands carry a quality and prestige signal. Local brands carry cultural fluency and value. The winners borrow from both. Keep the heritage and quality story, then build the cultural fluency on top so the brand feels local even when the badge is not.',
+  },
+  {
+    cat: 'Strategy',
+    q: 'What does transcreation look like in practice?',
+    a: 'It is the gap between a literal translation and a story a Chinese shopper would tell about you. Same brand truth, rewritten in a register that fits the audience. New metaphors. New examples. Sometimes a different hero benefit, because the one that works in Paris is not the one that wins in Shanghai. Done well, it does not look adapted at all.',
+  },
+  {
+    cat: 'Naming',
+    q: 'What makes a Chinese brand name actually work?',
+    a: 'Easy to say. Easy to remember. A meaning that flatters the product or at least does not embarrass it. If a shopper can read the name out loud after seeing it once, you have a fighting chance. If they cannot, you will spend forever explaining yourself.',
+  },
+  {
+    cat: 'Naming',
+    q: 'What if my brand name simply does not translate?',
+    a: 'That is the normal starting point, not the exception. Most foreign names sound awkward or carry the wrong meaning when forced into Mandarin. The fix is to create a new Chinese name that sits next to the Latin one, with its own logic, sound and story. Apple has 苹果. BMW has 宝马. You can too.',
+  },
+  {
+    cat: 'Naming',
+    q: 'Keep the Latin name, the Chinese name, or both?',
+    a: 'Both, almost always. The Latin name protects the global brand. The Chinese name does the daily work in market. On packaging, signage and search, the Chinese name leads. On global communications and premium positioning cues, the Latin name does the lifting.',
+  },
+  {
+    cat: 'Naming',
+    q: 'How do you test a name before committing?',
+    a: 'Read it out loud in three cities. Get reactions from young, mid and older shoppers in your target tier. Test it on a poorly-lit phone screen, not just a slide. Run a trademark check across the categories you actually sell in, plus the obvious adjacent ones. If anything trips, we redo the round rather than patch it.',
+  },
+  {
+    cat: 'Identity',
+    q: 'What makes a logo work in China, beyond looking nice?',
+    a: 'It has to read at thumbnail size, on a 1.5cm WeChat avatar, on packaging stacked on a tier-3 shelf, and on a Douyin sticker. It has to survive being printed badly. It has to carry meaning when stripped of color. Most foreign logos pass the first test and fail the next three.',
+  },
+  {
+    cat: 'Identity',
+    q: 'Where do foreign brands most often get visual identity wrong?',
+    a: 'They ship the global guidelines untouched. The color palette designed for European retail looks washed out under Chinese supermarket lighting. The typography that breathes in print suffocates on a phone. The hero asset built for billboards does not crop for vertical video. Adapting the system is not optional.',
+  },
+  {
+    cat: 'Identity',
+    q: 'How do I avoid auspicious colors becoming a cliché?',
+    a: 'Use them on purpose, not as a default. Red works when there is a reason for it. Gold works when it earns its place. The lazy version is everything red and gold for New Year. The strong version is a brand that uses one cultural cue with intent and lets the rest of the identity do its own work.',
+  },
+  {
+    cat: 'Assets',
+    q: 'Can my global packaging just travel into China?',
+    a: 'Sometimes the bottle, yes. The artwork rarely. Chinese packaging has its own conventions: front-of-pack claims, ingredient cues, regulatory icons, language hierarchy, retail formats that differ from yours. Adapt the artwork for China before launch. It is the most visible piece of brand a Chinese shopper will ever hold.',
+  },
+  {
+    cat: 'Assets',
+    q: 'How do I keep brand consistency across Tmall, Douyin, RED and offline?',
+    a: 'A China brand book, not a global one. It maps the brand into the formats Chinese platforms actually use, with templates, do-not-do examples and tone notes. Then you give it to every partner who touches your brand: TP, KOL agency, retail designer, PR firm. Consistency is a logistics problem dressed up as a creative one.',
+  },
+  {
+    cat: 'Assets',
+    q: 'Can I reuse my global brand photography?',
+    a: 'Some of it, with editing. Mood and lifestyle shots travel poorly because the cast, the homes, the gestures all read as foreign. Product photography travels well if the lighting and surfaces match the platform standards. Plan for a Shanghai or Shenzhen shoot for at least the hero campaign per year.',
+  },
+  {
+    cat: 'Process',
+    q: 'How long does a full China brand build take?',
+    a: 'Strategy and naming, four to six weeks. Visual identity, six to eight. Brand assets including packaging and key creative, eight to twelve. Allow another month of buffer for trademark checks, consumer testing and revisions. Three to five months end to end is honest. Anyone promising six weeks is selling a template.',
+  },
+  {
+    cat: 'Process',
+    q: 'How often should we refresh the brand?',
+    a: 'Big rebuilds every four to six years, light refreshes every two. The Chinese market moves fast. Visual trends, platform UI and consumer references all shift on shorter cycles than in Europe or the US. Plan a yearly check-in, not just a major reset every five years.',
+  },
+  {
+    cat: 'Process',
+    q: 'Who owns the brand book, my team or the agency?',
+    a: 'You. Always you. The agency builds it, your team owns it. Put that in the contract on day one along with file ownership, working files and font licenses. We have seen brands locked out of their own assets because the contract was vague. Do not be that brand.',
+  },
+  {
+    cat: 'Cost',
+    q: 'What does a full China brand build actually cost?',
+    a: 'A range, not a number. A focused build (strategy, Chinese name, refreshed identity, packaging for one SKU range) typically lands between 30 and 80 thousand USD. A full multi-SKU programme with original photography and video usually doubles that. Anything under 20 thousand is template work in disguise.',
+  },
+  {
+    cat: 'Cost',
+    q: 'What is a fair budget split between strategy, identity and assets?',
+    a: 'Roughly 25 percent strategy and naming, 30 percent identity, 45 percent assets. Most foreign brands underweight assets and end up with a beautiful logo and nothing to put it on. Plan for the assets first, then the identity falls into place around what you will actually produce.',
+  },
+  {
+    cat: 'Pitfalls',
+    q: 'Should I trademark my Chinese name early?',
+    a: 'Yes, the day you settle on it. China is first-to-file. Trademark squatters watch press releases and register names the same week. Buying back your own name costs more than the build itself. Register in Mandarin, in Latin script, in pinyin, across the categories you sell and the obvious adjacent ones.',
+  },
+];
+
+const faqCategories = ['All', 'Strategy', 'Naming', 'Identity', 'Assets', 'Process', 'Cost', 'Pitfalls'];
+
+const icons: Record<string, string> = {
+  target: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>`,
+  character: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M12 7v10M7 12h10M9 9l6 6M15 9l-6 6"/></svg>`,
+  palette: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9c0-1.5-1-2-2.5-2H17a2 2 0 0 1-2-2V7a2 2 0 0 0-3-1.7A9 9 0 0 0 12 3z"/><circle cx="7" cy="11" r="1" fill="currentColor"/><circle cx="9.5" cy="7.5" r="1" fill="currentColor"/><circle cx="14.5" cy="7" r="1" fill="currentColor"/></svg>`,
+  cube: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg>`,
+  compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16 8 13 13 8 16 11 11 16 8"/></svg>`,
+  hammer: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l7 7-3 3-7-7z"/><path d="M11 6 4 13l3 3 7-7"/><path d="M8 16l-4 4"/></svg>`,
+  rocket: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4c4 0 6 2 6 6-4 0-6 2-6 6-4 0-6-2-6-6 4 0 6-2 6-6z"/><circle cx="14" cy="10" r="1.5"/><path d="M8 16l-3 3M11 19l-2 2M5 13l-2 2"/></svg>`,
+};
 ---
 
 <Layout
   title="Branding & Localisation in China | Beyond Border Group"
-  description="A China branding agency for positioning, naming, visual identity and brand assets. We build brands that resonate with Chinese consumers, on every platform and at every touchpoint."
+  description="A China branding agency for positioning, naming, visual identity and brand assets. We build brands Chinese consumers recognise, trust and pick off the shelf."
 >
+  <div class="bl-progress" aria-hidden="true"><div class="bl-progress__bar"></div></div>
+  <article class="bl">
 
-  {/* ---------- HERO (Mid Editorial split) ---------- */}
-  <section class="brand-hero-split">
-    <div class="container brand-hero-split__inner">
-      <div class="brand-hero-split__copy">
-        <span class="eyebrow">Branding &amp; Localisation</span>
-        <h1 class="brand-hero-split__title">A brand built for China, at every touchpoint.</h1>
-        <p class="brand-hero-split__lead">
-          Positioning, naming, visual identity and brand assets, designed in China for the
-          Chinese consumer. We turn international brands into ones Chinese audiences
-          recognise, trust and pick off the shelf.
+    {/* ---------- HERO ---------- */}
+    <section class="bl-hero" data-hero>
+      <div class="bl-hero__bg" aria-hidden="true" data-parallax>
+        <img src="/Images/branding/hero.png" alt="Brand assets in market, packaging and visual identity on display" />
+      </div>
+      <div class="bl-hero__overlay" aria-hidden="true"></div>
+      <div class="bl-hero__grain" aria-hidden="true"></div>
+
+      <div class="container bl-hero__inner">
+        <nav class="bl-hero__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="/#services">Enter China</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark bl-reveal">Branding &amp; Localisation</span>
+        <h1 class="bl-hero__title bl-reveal" style="--reveal-delay: 80ms;">
+          <span class="bl-hero__title-row">A brand built for China,</span>
+          <span class="bl-hero__title-row bl-hero__title-row--accent">at every touchpoint.</span>
+          <span class="bl-hero__title-row">Designed in China, for the</span>
+          <span class="bl-hero__title-row bl-hero__title-row--highlight">Chinese consumer.</span>
+        </h1>
+        <p class="bl-hero__lead bl-reveal" style="--reveal-delay: 200ms;">
+          Positioning, naming, visual identity and brand assets, built for the platforms Chinese
+          shoppers actually use. We turn international brands into ones Chinese audiences recognise,
+          trust and pick off the shelf.
         </p>
-        <div class="brand-hero-split__actions">
-          <a class="btn btn--primary" href="/contact">Talk to us</a>
-          <a class="btn btn--secondary" href="#services">See how we work</a>
+        <div class="bl-hero__actions bl-reveal" style="--reveal-delay: 280ms;">
+          <a href="/contact" class="btn btn--primary bl-magnetic">Talk to us</a>
+          <a href="#services" class="btn btn--ghost-light bl-magnetic">See how we work</a>
+        </div>
+
+        <div class="bl-hero__meta bl-reveal" style="--reveal-delay: 360ms;">
+          <div class="bl-hero__meta-item">
+            <span class="bl-hero__meta-num" data-counter="15" data-suffix="+">0</span>
+            <span class="bl-hero__meta-label">years of branding work in China</span>
+          </div>
+          <div class="bl-hero__meta-item">
+            <span class="bl-hero__meta-num" data-counter="40" data-suffix="+">0</span>
+            <span class="bl-hero__meta-label">brands launched, repositioned or refreshed</span>
+          </div>
+          <div class="bl-hero__meta-item">
+            <span class="bl-hero__meta-num">8</span>
+            <span class="bl-hero__meta-label">categories from beauty to automotive</span>
+          </div>
         </div>
       </div>
 
-      <figure class="brand-hero-split__media">
-        <img
-          src="/Images/branding/hero.png"
-          alt="Brand assets in market: packaging, type and visual identity on display"
-          loading="eager"
-          decoding="async"
-          fetchpriority="high"
-        />
-      </figure>
-    </div>
-  </section>
+      <a href="#three-things" class="bl-hero__scroll" aria-label="Scroll to next section">
+        <span class="bl-hero__scroll-line"></span>
+        <span class="bl-hero__scroll-text">Scroll</span>
+      </a>
+    </section>
 
-  {/* ---------- THREE PILLARS ---------- */}
-  <section class="section section--alt">
-    <div class="container">
-      <header class="section-header section-header--center">
-        <span class="eyebrow">What it takes</span>
-        <h2>A strong brand in China is built on three things.</h2>
-        <p class="lead">
-          Insight, name and experience. Get any one of them wrong and the rest will work twice as hard.
-        </p>
-      </header>
-
-      <div class="pillars">
-        {pillars.map((p) => (
-          <article class="pillar">
-            <span class="pillar__icon" aria-hidden="true" set:html={pillarIcon[p.icon]} />
-            <h3 class="pillar__title">{p.h}</h3>
-            <p>{p.body}</p>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  {/* ---------- WHY IT MATTERS ---------- */}
-  <section class="section">
-    <div class="container">
-      <div class="why-grid">
-        <div class="why-grid__copy">
-          <span class="eyebrow">Why we exist</span>
-          <h2>From idea to identity, shaped for China.</h2>
-          <p class="lead">
-            We turn ideas into brand strategies that travel. Strategy informs every
-            decision that follows: visual identity, packaging, exhibition booths, retail
-            spaces, even the way your team talks about the brand internally. We make sure
-            the experience is consistent and memorable, end to end.
+    {/* ---------- THREE THINGS A CHINA BRAND NEEDS ---------- */}
+    <section id="three-things" class="section">
+      <div class="container">
+        <header class="section-header section-header--center bl-reveal">
+          <span class="eyebrow">What it takes</span>
+          <h2>A strong brand in China is built on three things</h2>
+          <p class="section-header__lead">
+            Insight, name and experience. Get any one of them wrong and the rest will work twice as
+            hard.
           </p>
-          <p>
-            With more than 15 years inside the Chinese market, we have launched and
-            relaunched brands across beauty, F&amp;B, automotive, fashion and tech. We have
-            navigated localisation pitfalls, rebuilt brand trust after a misstep, and
-            created identities that hold up against intense local competition.
-          </p>
-          <div class="why-grid__actions">
-            <a class="btn btn--primary" href="/contact">Contact us</a>
-            <a class="btn btn--ghost" href="/about">Meet the team</a>
-          </div>
+        </header>
+
+        <div class="bl-pillars">
+          {pillars.map((p, i) => (
+            <article class="bl-pillar bl-reveal" style={`--reveal-delay: ${i * 100}ms;`}>
+              <figure class="bl-pillar__media">
+                <img src={p.image} alt={p.alt} loading="lazy" decoding="async" />
+              </figure>
+              <div class="bl-pillar__body">
+                <h3>{p.h}</h3>
+                <p>{p.body}</p>
+              </div>
+            </article>
+          ))}
         </div>
-
-        <aside class="why-grid__stats" aria-label="By the numbers">
-          <div class="why-stat">
-            <span class="why-stat__value" data-counter data-target="15"><span class="why-stat__num">15</span><span class="why-stat__suffix">+</span></span>
-            <span class="why-stat__label">Years of branding work in China</span>
-          </div>
-          <div class="why-stat">
-            <span class="why-stat__value" data-counter data-target="60"><span class="why-stat__num">60</span><span class="why-stat__suffix">+</span></span>
-            <span class="why-stat__label">Brands launched, repositioned or refreshed</span>
-          </div>
-          <div class="why-stat">
-            <span class="why-stat__value" data-counter data-target="8"><span class="why-stat__num">8</span><span class="why-stat__suffix"></span></span>
-            <span class="why-stat__label">Categories from beauty to automotive</span>
-          </div>
-        </aside>
       </div>
-    </div>
-  </section>
+    </section>
 
-  {/* ---------- SERVICES ---------- */}
-  <section id="services" class="section section--alt">
-    <div class="container">
-      <header class="section-header section-header--center">
-        <span class="eyebrow">Our branding services</span>
-        <h2>Four building blocks. One coherent brand.</h2>
-      </header>
+    {/* ---------- VALUE + PROMISES ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <div class="bl-value">
+          <div class="bl-value__copy bl-reveal">
+            <span class="eyebrow">Why we exist</span>
+            <h2>From idea to identity, shaped for China.</h2>
+            <p>
+              Brand strategies that travel. From a phone screen to a Tmall storefront to a popup
+              booth, the brand feels the same.
+            </p>
+            <p>
+              Fifteen years in the Chinese market. Beauty, F&amp;B, automotive, fashion and tech.
+              Launches, relaunches, missteps fixed and identities that hold up against intense
+              local competition.
+            </p>
+          </div>
 
-      <div class="brand-services">
-        {services.map((s, i) => (
-          <article class={`brand-service ${i % 2 === 1 ? 'brand-service--reverse' : ''}`}>
-            <div class="brand-service__visual">
-              <img src={s.image} alt="" loading="lazy" decoding="async" />
-            </div>
-            <div class="brand-service__copy">
-              <h3 class="brand-service__title">{s.h}</h3>
-              <p>{s.body}</p>
-              <ul class="brand-service__bullets">
-                {s.bullets.map((b) => (
+          <ul class="bl-promise bl-reveal" style="--reveal-delay: 100ms;">
+            <li><span class="eyebrow">What you can expect</span></li>
+            {promises.map((p) => (
+              <li class="bl-promise__item">
+                <span class="bl-promise__check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                </span>
+                <div>
+                  <h4>{p.title}</h4>
+                  <p>{p.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- SERVICES (bento 2x2) ---------- */}
+    <section id="services" class="section bl-svc-section">
+      <div class="container">
+        <header class="section-header section-header--split bl-reveal">
+          <div>
+            <span class="eyebrow">Our branding services</span>
+            <h2>Four building blocks. One coherent brand.</h2>
+          </div>
+          <p class="bl-svc-lead">
+            We start with strategy, write the name, design the identity, and produce the assets that
+            carry the brand into market. Hover any tile to see what runs underneath.
+          </p>
+        </header>
+
+        <div class="bl-svc-grid">
+          {services.map((s, i) => (
+            <article
+              class="bl-svc-card bl-reveal"
+              style={`--svc-color: ${s.color}; --svc-soft: ${s.colorSoft}; --reveal-delay: ${i * 80}ms;`}
+            >
+              <div class="bl-svc-card__head">
+                <span class="bl-svc-card__icon" set:html={icons[s.icon]} />
+                <span class="bl-svc-card__short">{s.short}</span>
+              </div>
+              <h3 class="bl-svc-card__title">{s.title}</h3>
+              <p class="bl-svc-card__desc">{s.desc}</p>
+              <ul class="bl-svc-card__points">
+                {s.points.map((b) => (
                   <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
+                    <span class="bl-svc-card__bullet" aria-hidden="true"></span>
                     <span>{b}</span>
                   </li>
                 ))}
               </ul>
-            </div>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  {/* ---------- CONTENT STUDIO TEASER ---------- */}
-  <section class="section section--alt studio-section">
-    <div class="container">
-      <header class="section-header section-header--center studio-section__header">
-        <span class="eyebrow">Content production</span>
-        <h2>Our content studio in China, plugged in.</h2>
-        <p class="lead">
-          Once the brand is built, we keep it alive. Through our Hub Studio we produce
-          every kind of content brands need for the Chinese market: video, photography,
-          social posts, advertising, print, livestreams. AI-augmented to cut turnaround
-          and cost, without losing the visual quality Chinese consumers expect.
-        </p>
-      </header>
-
-      <div class="studio-mosaic" role="list">
-        <figure class="studio-tile studio-tile--mex" role="listitem">
-          <img src="/Images/enter-china/hubstudio/mexicash.png" alt="Mexicash fintech video campaign produced by Hub Studio" loading="lazy" />
-          <figcaption>
-            <span class="studio-tile__brand">Mexicash</span>
-            <span class="studio-tile__type">Fintech, video campaign</span>
-          </figcaption>
-        </figure>
-        <figure class="studio-tile studio-tile--myl" role="listitem">
-          <img src="/Images/enter-china/hubstudio/mylk.webp" alt="Noyz Mylk fragrance product page visual" loading="lazy" />
-          <figcaption>
-            <span class="studio-tile__brand">Noyz Mylk</span>
-            <span class="studio-tile__type">Fragrance, PDP</span>
-          </figcaption>
-        </figure>
-        <figure class="studio-tile studio-tile--eli" role="listitem">
-          <img src="/Images/enter-china/hubstudio/elizabeth-gage.png" alt="Elizabeth Gage British jewellery campaign visual" loading="lazy" />
-          <figcaption>
-            <span class="studio-tile__brand">Elizabeth Gage</span>
-            <span class="studio-tile__type">Jewellery, editorial</span>
-          </figcaption>
-        </figure>
-        <figure class="studio-tile studio-tile--cam" role="listitem">
-          <img src="/Images/enter-china/hubstudio/camper.png" alt="Camper culturally adapted social content for China" loading="lazy" />
-          <figcaption>
-            <span class="studio-tile__brand">Camper</span>
-            <span class="studio-tile__type">Footwear, social</span>
-          </figcaption>
-        </figure>
-        <figure class="studio-tile studio-tile--his" role="listitem">
-          <img src="/Images/enter-china/hubstudio/hisense.png" alt="HiSense electronics global campaign visual" loading="lazy" />
-          <figcaption>
-            <span class="studio-tile__brand">HiSense</span>
-            <span class="studio-tile__type">Electronics, global</span>
-          </figcaption>
-        </figure>
-        <figure class="studio-tile studio-tile--age" role="listitem">
-          <img src="/Images/enter-china/hubstudio/age20.jpg" alt="age20 K-beauty localised campaign visual" loading="lazy" />
-          <figcaption>
-            <span class="studio-tile__brand">age20</span>
-            <span class="studio-tile__type">K-beauty, localisation</span>
-          </figcaption>
-        </figure>
-        <figure class="studio-tile studio-tile--diy" role="listitem">
-          <img src="/Images/enter-china/hubstudio/diy-retailer.jpg" alt="DIY European retailer product contextualisation" loading="lazy" />
-          <figcaption>
-            <span class="studio-tile__brand">European retailer</span>
-            <span class="studio-tile__type">DIY, product context</span>
-          </figcaption>
-        </figure>
-        <figure class="studio-tile studio-tile--gin" role="listitem">
-          <img src="/Images/enter-china/hubstudio/gin-1834.webp" alt="1834 Gin premium spirit brand visual" loading="lazy" />
-          <figcaption>
-            <span class="studio-tile__brand">1834 Gin</span>
-            <span class="studio-tile__type">Spirits, video</span>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="studio-section__cta">
-        <a class="btn btn--primary" href="https://hubstudio.ai" target="_blank" rel="noopener noreferrer">Visit Hub Studio</a>
-      </div>
-    </div>
-  </section>
-
-  {/* ---------- FAQ ---------- */}
-  <section class="section">
-    <div class="container">
-      <header class="section-header section-header--center">
-        <span class="eyebrow">Frequently asked</span>
-        <h2>Branding in China, answered.</h2>
-      </header>
-
-      <div class="faq">
-        {faq.map((item) => (
-          <details class="faq__item">
-            <summary class="faq__summary">
-              <span>{item.q}</span>
-              <span class="faq__chev" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"/>
-                </svg>
+              <span class="bl-svc-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </span>
-            </summary>
-            <div class="faq__body">
-              <p>{item.a}</p>
-            </div>
-          </details>
-        ))}
+            </article>
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  {/* ---------- CLOSING CTA ---------- */}
-  <section class="section section--dark cta cta-team">
-    <div class="cta-team__bg" aria-hidden="true">
-      <img src="/Images/team/team-photo.png" alt="" loading="lazy" decoding="async" />
-    </div>
-    <div class="cta-team__overlay" aria-hidden="true"></div>
+    {/* ---------- STARTING POINTS (tabbed showcase) ---------- */}
+    <section class="section section--alt bl-tabs-section">
+      <div class="container">
+        <header class="section-header section-header--center bl-reveal">
+          <span class="eyebrow">Where brands start</span>
+          <h2>Four common starting points</h2>
+          <p class="section-header__lead">
+            Every brand lands at a different stage. Some come in fresh. Others already have a
+            Chinese name and a Tmall store and want a refresh, not a reset. Pick the one that
+            matches where you are today.
+          </p>
+        </header>
 
-    <div class="container text-center cta-team__inner">
-      <span class="eyebrow">Get in touch</span>
-      <h2>Thinking about expanding your brand to China?</h2>
-      <p class="lead cta__lead">
-        Tell us where you are today and where you want the brand to go.
-        A senior member of the team will reply within one working day.
-      </p>
-      <a href="/contact" class="btn btn--primary">Contact us</a>
-    </div>
-  </section>
+        <div class="bl-tabs bl-reveal" data-tabs>
+          <div class="bl-tabs__nav" role="tablist">
+            {starts.map((m, i) => (
+              <button
+                type="button"
+                class={`bl-tabs__tab${i === 1 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 1 ? 'true' : 'false'}
+                aria-controls={`start-panel-${i}`}
+                id={`start-tab-${i}`}
+                data-tab-target={`start-panel-${i}`}
+              >
+                <span class="bl-tabs__tab-label">{m.name}</span>
+                <span class="bl-tabs__tab-tag">{m.tag}</span>
+                {m.highlight && <span class="bl-tabs__tab-pop">Most common</span>}
+              </button>
+            ))}
+            <span class="bl-tabs__indicator" aria-hidden="true"></span>
+          </div>
+
+          <div class="bl-tabs__panels">
+            {starts.map((m, i) => (
+              <div
+                class={`bl-tabs__panel${i === 1 ? ' is-active' : ''}`}
+                role="tabpanel"
+                id={`start-panel-${i}`}
+                aria-labelledby={`start-tab-${i}`}
+                hidden={i !== 1}
+              >
+                <div class="bl-tabs__panel-grid">
+                  <div class="bl-tabs__lead">
+                    <span class="bl-tabs__pillset">
+                      <span class="bl-tabs__pill">{m.tag}</span>
+                    </span>
+                    <h3 class="bl-tabs__title">{m.name}</h3>
+                    <p class="bl-tabs__desc">{m.desc}</p>
+                    <div class="bl-tabs__when">
+                      <span class="bl-tabs__when-label">Best when</span>
+                      <p>{m.when}</p>
+                    </div>
+                    <a href="/contact" class="btn btn--primary bl-magnetic">Talk to us about {m.name.toLowerCase()}</a>
+                  </div>
+
+                  <div class="bl-tabs__body">
+                    <div class="bl-tabs__list-wrap">
+                      <span class="bl-tabs__list-label">What we deliver</span>
+                      <ul class="bl-tabs__list">
+                        {m.bullets.map((b) => (
+                          <li>
+                            <span class="bl-tabs__check" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                            </span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bl-tabs__pricing">
+                      <span class="bl-tabs__pricing-label">Pricing</span>
+                      <span class="bl-tabs__pricing-value">{m.pricing}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- CONTENT PRODUCTION (hubStudio editorial) ---------- */}
+    <section class="section section--alt bl-trs-section">
+      <div class="container">
+        <div class="bl-trs bl-reveal">
+          <div class="bl-trs__text">
+            <span class="eyebrow"><span class="bl-trs__bar" aria-hidden="true"></span>Content production</span>
+            <h2 class="bl-trs__title">
+              A production house built for what
+              <span class="bl-trs__title-emph">content has become.</span>
+            </h2>
+            <p class="bl-trs__lead">
+              Once the brand is built, we keep it alive. Through hubStudio, our Shanghai production
+              house, we ship image, video and 3D at the volume Chinese platforms now demand.
+              AI-augmented, human-curated, on-brand by design.
+            </p>
+            <p class="bl-trs__lead">
+              Cost per finalized asset, cut in half. Output multiplied by seven. Three-day
+              turnarounds used to be impossible. Now they are the floor we work from.
+            </p>
+            <ul class="bl-trs__list">
+              {hubPoints.map((point) => (
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg>
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+            <div class="bl-trs__actions">
+              <a class="bl-trs__cta" href="https://hubstudio.ai" target="_blank" rel="noopener noreferrer">
+                <span>Visit hubStudio</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <span class="bl-trs__meta">hubStudio · Shanghai</span>
+            </div>
+          </div>
+
+          <aside class="bl-trs__aside" aria-label="hubStudio at a glance">
+            <a class="bl-trs__frame" href="https://hubstudio.ai" target="_blank" rel="noopener noreferrer" aria-label="Open hubStudio in a new tab">
+              <span class="bl-trs__chrome" aria-hidden="true">
+                <span class="bl-trs__dot"></span>
+                <span class="bl-trs__dot"></span>
+                <span class="bl-trs__dot"></span>
+                <span class="bl-trs__url">hubstudio.ai</span>
+              </span>
+              <img
+                src="/Images/branding/hubstudio-preview.png"
+                alt="hubStudio homepage, AI-augmented production house in Shanghai"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <div class="bl-trs__rule" aria-hidden="true"></div>
+            <div class="bl-trs__stat">
+              <span class="bl-trs__stat-label">Output multiplied</span>
+              <div class="bl-trs__stat-value">
+                <span class="bl-trs__stat-num">7</span>
+                <span class="bl-trs__stat-unit">×</span>
+              </div>
+              <p class="bl-trs__stat-note">
+                Cost per finalized asset cut in half. Three-day turnarounds, on-brand by design.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- JOURNEY (vertical timeline) ---------- */}
+    <section class="section bl-journey-section">
+      <div class="container">
+        <header class="section-header section-header--center bl-reveal">
+          <span class="eyebrow">How we work</span>
+          <h2>From discovery to launch</h2>
+          <p class="section-header__lead">
+            Three phases that take a brand from a working strategy to a market-ready system, with
+            in-market testing built in along the way.
+          </p>
+        </header>
+
+        <div class="bl-journey" data-journey>
+          <div class="bl-journey__rail" aria-hidden="true">
+            <div class="bl-journey__rail-track"></div>
+            <div class="bl-journey__rail-fill" data-journey-fill></div>
+          </div>
+          <ol class="bl-journey__list">
+            {steps.map((s, i) => (
+              <li class="bl-journey__item bl-reveal" data-journey-item style={`--reveal-delay: ${i * 80}ms;`}>
+                <span class="bl-journey__dot" aria-hidden="true">
+                  <span class="bl-journey__dot-inner"></span>
+                </span>
+                <span class="bl-journey__phase">Phase {i === 0 ? 'one' : i === 1 ? 'two' : 'three'}</span>
+                <div class="bl-journey__card">
+                  <span class="bl-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
+                  <div>
+                    <h3 class="bl-journey__title">{s.title}</h3>
+                    <p class="bl-journey__desc">{s.desc}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FAQ (with category filter) ---------- */}
+    <section class="section section--alt">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center bl-reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Branding in China, answered</h2>
+          <p class="section-header__lead">
+            Twenty practical questions we field from founders, brand teams and operators planning a
+            China brand build. Filter by topic.
+          </p>
+        </header>
+
+        <div class="bl-faq-filter bl-reveal" data-faq-filter role="tablist" aria-label="Filter FAQs by category">
+          {faqCategories.map((c, i) => (
+            <button
+              type="button"
+              class={`bl-faq-chip${i === 0 ? ' is-active' : ''}`}
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              data-faq-cat={c}
+            >
+              <span class="bl-faq-chip__label">{c}</span>
+              <span class="bl-faq-chip__count">{c === 'All' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="bl-faq" data-faq-list>
+          {faqs.map((f, i) => (
+            <details
+              class="bl-faq__item bl-reveal"
+              data-faq-cat={f.cat}
+              open={i === 0}
+              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+            >
+              <summary class="bl-faq__q">
+                <span class="bl-faq__cat-tag">{f.cat}</span>
+                <span class="bl-faq__q-text">{f.q}</span>
+                <span class="bl-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="bl-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="bl-cta">
+          <span class="eyebrow eyebrow--on-dark">Let's talk</span>
+          <h2 class="bl-cta__title">Thinking about expanding your brand to China?</h2>
+          <p class="bl-cta__lead">
+            Tell us where you are today and where you want the brand to go. A senior member of the
+            team will reply within one working day. No sales funnel, no auto-responder.
+          </p>
+          <div class="bl-cta__actions">
+            <a href="/contact" class="btn bl-cta__btn-primary">Contact us</a>
+            <a href="/work" class="btn bl-cta__btn-ghost">See our case studies</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    .bl .container--narrow { max-width: 880px; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .bl-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .bl-reveal.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .bl-magnetic {
+        will-change: transform;
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      }
+    }
+
+    /* ---------- SCROLL PROGRESS BAR ---------- */
+    .bl-progress {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      z-index: 1000;
+      background: transparent;
+      pointer-events: none;
+    }
+    .bl-progress__bar {
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      transition: width 80ms linear;
+    }
+
+    /* ---------- HERO ---------- */
+    .bl-hero {
+      position: relative;
+      min-height: clamp(360px, 48vh, 500px);
+      display: flex;
+      align-items: flex-start;
+      padding: clamp(8px, 1.25vh, 16px) 0 clamp(48px, 7vh, 80px);
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    body:has(.bl-hero) .bl-hero { padding-top: clamp(112px, 10vh, 144px); }
+    @media (max-width: 1024px) {
+      body:has(.bl-hero) .bl-hero { padding-top: clamp(96px, 9vh, 116px); }
+    }
+    .bl-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .bl-hero__bg img {
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+      transition: transform 80ms linear;
+      filter: saturate(0.95);
+    }
+    .bl-hero__overlay {
+      position: absolute; inset: 0; z-index: -2;
+      background:
+        linear-gradient(110deg,
+          rgba(8, 18, 28, 0.92) 0%,
+          rgba(8, 18, 28, 0.72) 42%,
+          rgba(8, 18, 28, 0.32) 100%),
+        radial-gradient(120% 80% at 0% 100%,
+          rgba(38, 154, 218, 0.28) 0%,
+          rgba(38, 154, 218, 0) 60%);
+    }
+    .bl-hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      background-image:
+        radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .bl-hero__inner { max-width: 980px; position: relative; }
+    .bl-hero__crumbs {
+      margin-bottom: var(--space-4);
+      font-size: var(--fs-small);
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .bl-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .bl-hero__crumbs a:hover { color: var(--bbg-white); }
+    .bl-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-3);
+      color: #9DDBF5;
+    }
+    .bl-hero__title {
+      font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      max-width: 22ch;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      gap: 0.05em;
+    }
+    .bl-hero__title-row { display: block; }
+    .bl-hero__title-row--accent {
+      color: #9DDBF5;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -0.018em;
+    }
+    .bl-hero__title-row--highlight {
+      position: relative;
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0 0.15em;
+    }
+    .bl-hero__title-row--highlight::before {
+      content: "";
+      position: absolute;
+      left: 0; right: 0;
+      bottom: 0.04em;
+      height: 0.18em;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transform-origin: left center;
+      animation: bl-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+      z-index: -1;
+    }
+    @keyframes bl-underline {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    .bl-hero__lead {
+      font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 58ch;
+      margin: 0 0 var(--space-5);
+    }
+    .bl-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
+    .bl-magnetic:hover { transform: translateY(-2px); }
+
+    .bl-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(var(--space-4), 4vw, var(--space-7));
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: 720px;
+    }
+    .bl-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .bl-hero__meta-num {
+      font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: "tnum";
+    }
+    .bl-hero__meta-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.02em;
+    }
+
+    .bl-hero__scroll {
+      position: absolute;
+      bottom: var(--space-5);
+      right: clamp(var(--space-5), 4vw, var(--space-7));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color 200ms ease;
+    }
+    .bl-hero__scroll:hover { color: var(--bbg-white); }
+    .bl-hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .bl-hero__scroll-line::after {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0; right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+      animation: bl-scroll-tick 1.8s ease-in-out infinite;
+    }
+    @keyframes bl-scroll-tick {
+      0% { top: -50%; }
+      100% { top: 100%; }
+    }
+    @media (max-width: 720px) {
+      .bl-hero__scroll { display: none; }
+      .bl-hero__meta { gap: var(--space-4); }
+    }
+
+    /* ---------- THREE THINGS ---------- */
+    .bl-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+    }
+    .bl-pillar {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+    }
+    .bl-pillar:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .bl-pillar__media {
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: var(--bbg-surface);
+    }
+    .bl-pillar__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 600ms var(--ease);
+    }
+    .bl-pillar:hover .bl-pillar__media img { transform: scale(1.04); }
+    .bl-pillar__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+    .bl-pillar__body h3 {
+      font-size: clamp(1.125rem, 0.5vw + 0.9rem, 1.375rem);
+      line-height: 1.25;
+      margin: 0 0 var(--space-3);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .bl-pillar__body p {
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .bl-pillars { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- VALUE + PROMISES ---------- */
+    .bl-value {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .bl-value__copy h2 {
+      font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin: var(--space-3) 0 var(--space-4);
+    }
+    .bl-value__copy p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0 0 var(--space-4);
+    }
+    .bl-promise {
+      list-style: none;
+      padding: var(--space-6);
+      margin: 0;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .bl-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .bl-promise__item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+    }
+    .bl-promise__check {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .bl-promise__check svg { width: 16px; height: 16px; }
+    .bl-promise__item h4 {
+      font-size: 1.125rem;
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .bl-promise__item p {
+      font-size: 0.975rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .bl-value { grid-template-columns: 1fr; gap: var(--space-6); }
+    }
+
+    /* ---------- SERVICES BENTO ---------- */
+    .bl-svc-section .section-header--split { align-items: end; gap: var(--space-6); margin-bottom: var(--space-6); }
+    .bl-svc-lead {
+      max-width: 44ch;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .bl-svc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    .bl-svc-card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 20px;
+      padding: var(--space-6);
+      overflow: hidden;
+      isolation: isolate;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      min-height: 320px;
+      transition:
+        transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
+    }
+    .bl-svc-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--svc-color, #269ADA) 0%, var(--svc-color, #269ADA) 50%, transparent 100%);
+      transform: scaleX(0.3);
+      transform-origin: left center;
+      transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1;
+    }
+    .bl-svc-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(140% 90% at 100% 0%,
+        color-mix(in srgb, var(--svc-color, #269ADA) 14%, transparent) 0%,
+        transparent 55%);
+      opacity: 0;
+      transition: opacity 360ms ease;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .bl-svc-card:hover {
+      transform: translateY(-6px);
+      border-color: color-mix(in srgb, var(--svc-color, #269ADA) 55%, var(--bbg-border));
+      box-shadow: 0 22px 50px -26px color-mix(in srgb, var(--svc-color, #269ADA) 50%, transparent),
+                  0 6px 14px -8px rgba(0, 0, 0, 0.08);
+    }
+    .bl-svc-card:hover::before { transform: scaleX(1); }
+    .bl-svc-card:hover::after { opacity: 1; }
+    .bl-svc-card:hover .bl-svc-card__icon {
+      transform: scale(1.06) rotate(-4deg);
+      background: var(--svc-color, var(--bbg-blue));
+      color: var(--bbg-white);
+      box-shadow: 0 12px 24px -14px color-mix(in srgb, var(--svc-color, #269ADA) 70%, transparent),
+                  inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #269ADA) 30%, transparent);
+    }
+    .bl-svc-card:hover .bl-svc-card__arrow { transform: translateX(4px); color: var(--svc-color, var(--bbg-blue)); }
+    .bl-svc-card__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+    }
+    .bl-svc-card__icon {
+      display: inline-flex;
+      width: 56px;
+      height: 56px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: var(--svc-soft, var(--bbg-blue-light));
+      color: var(--svc-color, var(--bbg-blue));
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #269ADA) 18%, transparent);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+                  background 320ms ease, color 320ms ease, box-shadow 320ms ease;
+      flex-shrink: 0;
+    }
+    .bl-svc-card__icon svg { width: 28px; height: 28px; }
+    .bl-svc-card__short {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--svc-color, var(--bbg-blue));
+      text-align: right;
+      line-height: 1.4;
+    }
+    .bl-svc-card__title {
+      font-size: 1.5rem;
+      line-height: 1.18;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-ink);
+    }
+    .bl-svc-card__desc {
+      font-size: 0.975rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .bl-svc-card__points {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0;
+      border-top: 1px solid var(--bbg-border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-top: auto;
+    }
+    .bl-svc-card__points li {
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      gap: 0.6rem;
+      align-items: center;
+      font-size: 0.875rem;
+      line-height: 1.45;
+      color: var(--bbg-text);
+    }
+    .bl-svc-card__bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--svc-color, var(--bbg-blue));
+      box-shadow: 0 0 0 3px var(--svc-soft, var(--bbg-blue-light));
+      margin-left: 4px;
+    }
+    .bl-svc-card__arrow {
+      position: absolute;
+      bottom: var(--space-6);
+      right: var(--space-6);
+      color: var(--bbg-text-muted);
+      transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1), color 200ms ease;
+      pointer-events: none;
+    }
+    .bl-svc-card__arrow svg { width: 22px; height: 22px; }
+    @media (max-width: 720px) {
+      .bl-svc-grid { grid-template-columns: 1fr; }
+      .bl-svc-card { min-height: 0; }
+      .bl-svc-section .section-header--split { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ---------- STARTING POINTS TABS ---------- */
+    .bl-tabs {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px -28px rgba(8, 18, 28, 0.18);
+    }
+    .bl-tabs__nav {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      background: linear-gradient(180deg, var(--bbg-surface) 0%, var(--bbg-white) 100%);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .bl-tabs__tab {
+      position: relative;
+      background: transparent;
+      border: none;
+      padding: var(--space-5) var(--space-4);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      color: var(--bbg-text-muted);
+      transition: color 240ms ease, background 240ms ease;
+      border-right: 1px solid var(--bbg-border);
+      font-family: inherit;
+    }
+    .bl-tabs__tab:last-child { border-right: none; }
+    .bl-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .bl-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .bl-tabs__tab-label {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+      line-height: 1.2;
+    }
+    .bl-tabs__tab-tag {
+      font-size: 0.78rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.35;
+    }
+    .bl-tabs__tab.is-active .bl-tabs__tab-tag { color: var(--bbg-blue); }
+    .bl-tabs__tab-pop {
+      position: absolute;
+      top: var(--space-3);
+      right: var(--space-3);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .bl-tabs__indicator {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 25%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px 2px 0 0;
+      transform: translateX(0);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    .bl-tabs__panels { background: var(--bbg-white); }
+    .bl-tabs__panel {
+      padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
+      animation: bl-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes bl-tab-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .bl-tabs__panel[hidden] { display: none; }
+    .bl-tabs__panel-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(var(--space-5), 3vw, var(--space-7));
+      align-items: start;
+    }
+    .bl-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
+    .bl-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .bl-tabs__pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.35em 0.85em;
+      border-radius: 999px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      letter-spacing: 0.01em;
+    }
+    .bl-tabs__title {
+      font-size: clamp(1.625rem, 1.8vw + 1rem, 2.25rem);
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -0.015em;
+    }
+    .bl-tabs__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .bl-tabs__when {
+      padding: var(--space-4);
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .bl-tabs__when-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.35rem;
+    }
+    .bl-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
+    .bl-tabs__body {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .bl-tabs__list-wrap {
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+    }
+    .bl-tabs__list-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .bl-tabs__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .bl-tabs__list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .bl-tabs__check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .bl-tabs__check svg { width: 12px; height: 12px; }
+    .bl-tabs__pricing {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-4);
+      padding: var(--space-4);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.12) 100%);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(38, 154, 218, 0.2);
+    }
+    .bl-tabs__pricing-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue-dark);
+      flex-shrink: 0;
+    }
+    .bl-tabs__pricing-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      line-height: 1.4;
+    }
+    @media (max-width: 900px) {
+      .bl-tabs__nav { grid-template-columns: repeat(2, 1fr); }
+      .bl-tabs__tab { border-bottom: 1px solid var(--bbg-border); }
+      .bl-tabs__tab:nth-child(2) { border-right: none; }
+      .bl-tabs__indicator { display: none; }
+      .bl-tabs__panel-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .bl-tabs__nav { grid-template-columns: 1fr; }
+      .bl-tabs__tab { border-right: none; }
+    }
+
+    /* ---------- CASES CTA ---------- */
+    .bl-cases-cta { display: flex; justify-content: center; }
+
+    /* ---------- CONTENT PRODUCTION (TheRedScroll editorial) ---------- */
+    .bl-trs-section { position: relative; isolation: isolate; overflow: hidden; }
+    .bl-trs {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: clamp(var(--space-6), 4vw, var(--space-8));
+      align-items: center;
+    }
+    .bl-trs__text { max-width: 60ch; }
+    .bl-trs__text .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: var(--space-3);
+    }
+    .bl-trs__bar {
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      background: var(--bbg-blue);
+      border-radius: 2px;
+    }
+    .bl-trs__title {
+      font-size: clamp(2rem, 2.6vw + 1rem, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.018em;
+      margin: 0 0 var(--space-4);
+      color: var(--bbg-ink);
+    }
+    .bl-trs__title-emph {
+      display: block;
+      color: var(--bbg-blue);
+      font-style: italic;
+      font-weight: 500;
+    }
+    .bl-trs__lead {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--bbg-text);
+      margin: 0 0 var(--space-4);
+    }
+    .bl-trs__list {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0 0 var(--space-5);
+      border-top: 1px solid var(--bbg-border);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .bl-trs__list li {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .bl-trs__list svg {
+      width: 20px;
+      height: 20px;
+      color: var(--bbg-blue);
+      margin-top: 2px;
+    }
+    .bl-trs__actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-5);
+      flex-wrap: wrap;
+    }
+    .bl-trs__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.85em 1.4em;
+      background: var(--bbg-ink);
+      color: var(--bbg-white);
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+      transition: background 200ms ease, transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .bl-trs__cta:hover {
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      transform: translateY(-2px);
+    }
+    .bl-trs__cta svg { width: 18px; height: 18px; }
+    .bl-trs__cta:hover svg { transform: translateX(2px); transition: transform 200ms ease; }
+    .bl-trs__meta {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+
+    .bl-trs__aside {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .bl-trs__frame {
+      display: block;
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      box-shadow: 0 24px 60px -28px rgba(8, 18, 28, 0.28),
+                  0 6px 18px -10px rgba(8, 18, 28, 0.12);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 320ms ease,
+                  border-color 240ms ease;
+    }
+    .bl-trs__frame:hover {
+      transform: translateY(-4px);
+      border-color: rgba(38, 154, 218, 0.4);
+      box-shadow: 0 32px 70px -28px rgba(38, 154, 218, 0.32),
+                  0 8px 22px -10px rgba(8, 18, 28, 0.14);
+    }
+    .bl-trs__chrome {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 0.8rem;
+      background: linear-gradient(180deg, #F2F4F7 0%, #E9ECF1 100%);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .bl-trs__dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #D6D9DE;
+    }
+    .bl-trs__dot:nth-child(1) { background: #FF5F57; }
+    .bl-trs__dot:nth-child(2) { background: #FEBC2E; }
+    .bl-trs__dot:nth-child(3) { background: #28C840; }
+    .bl-trs__url {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.01em;
+      padding: 0.1em 0.7em;
+      background: var(--bbg-white);
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.04);
+      transform: translateX(-1.5rem);
+    }
+    .bl-trs__frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      object-position: top center;
+      background: var(--bbg-surface);
+    }
+
+    .bl-trs__rule {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, var(--bbg-border) 30%, var(--bbg-border) 70%, transparent 100%);
+    }
+    .bl-trs__stat { display: flex; flex-direction: column; gap: 0.35rem; }
+    .bl-trs__stat-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+    .bl-trs__stat-value {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.15rem;
+      color: var(--bbg-blue);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .bl-trs__stat-num {
+      font-size: clamp(2.5rem, 2.4vw + 1rem, 3.25rem);
+      font-feature-settings: "tnum";
+    }
+    .bl-trs__stat-unit {
+      font-size: clamp(1.5rem, 1.4vw + 0.6rem, 2rem);
+      font-weight: 600;
+    }
+    .bl-trs__stat-note {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+      max-width: 38ch;
+    }
+
+    @media (max-width: 960px) {
+      .bl-trs { grid-template-columns: 1fr; }
+      .bl-trs__aside { order: -1; }
+    }
+    @media (max-width: 540px) {
+      .bl-trs__url { transform: none; margin: 0 auto; }
+    }
+
+    /* ---------- JOURNEY ---------- */
+    .bl-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .bl-journey {
+      position: relative;
+      max-width: 880px;
+      margin: 0 auto;
+      padding-left: 56px;
+    }
+    .bl-journey__rail {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 22px;
+      width: 2px;
+    }
+    .bl-journey__rail-track {
+      position: absolute; inset: 0;
+      background: var(--bbg-border);
+      border-radius: 2px;
+    }
+    .bl-journey__rail-fill {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: var(--journey-progress, 0%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transition: height 120ms linear;
+      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+    }
+    .bl-journey__list {
+      list-style: none;
+      padding: 0; margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-7);
+    }
+    .bl-journey__item { position: relative; }
+    .bl-journey__dot {
+      position: absolute;
+      left: -56px;
+      top: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bbg-white);
+      border: 2px solid var(--bbg-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: border-color 320ms ease;
+    }
+    .bl-journey__dot-inner {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: background 320ms ease, transform 320ms ease;
+    }
+    .bl-journey__item.is-active .bl-journey__dot { border-color: var(--bbg-blue); }
+    .bl-journey__item.is-active .bl-journey__dot-inner {
+      background: var(--bbg-blue);
+      transform: scale(1.1);
+      box-shadow: 0 0 0 4px var(--bbg-blue-light);
+    }
+    .bl-journey__phase {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-2);
+      transition: color 320ms ease;
+    }
+    .bl-journey__item.is-active .bl-journey__phase { color: var(--bbg-blue); }
+    .bl-journey__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bl-journey__item:hover .bl-journey__card,
+    .bl-journey__item.is-active .bl-journey__card {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      transform: translateX(4px);
+    }
+    .bl-journey__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .bl-journey__icon svg { width: 24px; height: 24px; }
+    .bl-journey__title {
+      font-size: 1.25rem;
+      line-height: 1.25;
+      margin: 0 0 0.4rem;
+      letter-spacing: -0.005em;
+    }
+    .bl-journey__desc {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 600px) {
+      .bl-journey { padding-left: 40px; }
+      .bl-journey__rail { left: 16px; }
+      .bl-journey__dot { left: -40px; width: 32px; height: 32px; }
+      .bl-journey__dot-inner { width: 10px; height: 10px; }
+      .bl-journey__card { flex-direction: column; gap: var(--space-3); }
+    }
+
+    /* ---------- FAQ FILTER ---------- */
+    .bl-faq-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: var(--space-6);
+    }
+    .bl-faq-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--bbg-text);
+      transition: all 220ms ease;
+      font-family: inherit;
+    }
+    .bl-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .bl-faq-chip.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    .bl-faq-chip__count {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: all 220ms ease;
+    }
+    .bl-faq-chip:hover .bl-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .bl-faq-chip.is-active .bl-faq-chip__count {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--bbg-white);
+    }
+
+    .bl-faq {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .bl-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bl-faq__item:hover {
+      transform: translateX(2px);
+      border-color: rgba(38, 154, 218, 0.4);
+    }
+    .bl-faq__item[open] {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+    }
+    .bl-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .bl-faq__q::-webkit-details-marker { display: none; }
+    .bl-faq__q::marker { display: none; }
+    .bl-faq__item:hover .bl-faq__q { color: var(--bbg-blue); }
+    .bl-faq__cat-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 0.25em 0.6em;
+      border-radius: 4px;
+      margin-right: var(--space-3);
+      flex-shrink: 0;
+    }
+    .bl-faq__q-text { flex-grow: 1; }
+    .bl-faq__icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+                  color var(--dur) var(--ease),
+                  background var(--dur) var(--ease);
+    }
+    .bl-faq__item[open] .bl-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-white);
+      background: var(--bbg-blue);
+    }
+    .bl-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+      animation: bl-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes bl-faq-in {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .bl-faq__a p { margin: 0; }
+    .bl-faq__item.is-hidden { display: none; }
+
+    /* ---------- FINAL CTA ---------- */
+    .bl-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .bl-cta::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .bl-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .bl-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .bl-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 52ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .bl-cta__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .bl-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .bl-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .bl-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .bl-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
 
   <script is:inline>
-    (function () {
-      const counters = document.querySelectorAll('[data-counter]');
-      if (!counters.length) return;
+    (() => {
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (reduced) return;
 
-      const animate = (numEl, target) => {
-        const duration = 1600;
-        const start = performance.now();
-        const tick = (now) => {
-          const progress = Math.min((now - start) / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          numEl.textContent = Math.round(target * eased).toString();
-          if (progress < 1) requestAnimationFrame(tick);
+      // 1. Reveal-on-scroll
+      const revealEls = document.querySelectorAll('.bl-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      // 2. Animated number counters
+      const counters = document.querySelectorAll('[data-counter]');
+      if (counters.length && !reduced && 'IntersectionObserver' in window) {
+        const animate = (el) => {
+          const target = parseFloat(el.dataset.counter || '0');
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(target * eased);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
         };
-        requestAnimationFrame(tick);
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          const el = entry.target;
-          const target = parseInt(el.dataset.target, 10);
-          const numEl = el.querySelector('.why-stat__num, .proof-metric__num');
-          if (!Number.isFinite(target) || !numEl) return;
-          numEl.textContent = '0';
-          animate(numEl, target);
-          observer.unobserve(el);
+        const counterIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((el) => counterIo.observe(el));
+      } else {
+        counters.forEach((el) => {
+          el.textContent = (el.dataset.counter || '0') + (el.dataset.suffix || '');
         });
-      }, { threshold: 0.35 });
+      }
 
-      counters.forEach((el) => observer.observe(el));
+      // 3. Hero parallax + scroll progress bar
+      const parallaxEl = document.querySelector('[data-parallax]');
+      const progressEl = document.querySelector('.bl-progress__bar');
+      const heroEl = document.querySelector('[data-hero]');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          if (parallaxEl && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // 4. Smooth scroll for in-page anchors
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+
+      // 5. Accordion behaviour for FAQ
+      const faqItems = document.querySelectorAll('.bl-faq__item');
+      faqItems.forEach((item) => {
+        item.addEventListener('toggle', () => {
+          if (item.open) {
+            faqItems.forEach((other) => {
+              if (other !== item && other.open) other.open = false;
+            });
+          }
+        });
+      });
+
+      // 6. Starting-point tabs
+      const tabsRoot = document.querySelector('[data-tabs]');
+      if (tabsRoot) {
+        const tabs = Array.from(tabsRoot.querySelectorAll('.bl-tabs__tab'));
+        const panels = Array.from(tabsRoot.querySelectorAll('.bl-tabs__panel'));
+        const indicator = tabsRoot.querySelector('.bl-tabs__indicator');
+        const setActive = (tab) => {
+          tabs.forEach((t) => {
+            const active = t === tab;
+            t.classList.toggle('is-active', active);
+            t.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          const targetId = tab.getAttribute('data-tab-target');
+          panels.forEach((p) => {
+            const active = p.id === targetId;
+            p.classList.toggle('is-active', active);
+            if (active) p.removeAttribute('hidden');
+            else p.setAttribute('hidden', '');
+          });
+          if (indicator) {
+            const idx = tabs.indexOf(tab);
+            const w = 100 / tabs.length;
+            indicator.style.width = w + '%';
+            indicator.style.transform = `translateX(${idx * 100}%)`;
+          }
+        };
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => setActive(tab));
+          tab.addEventListener('keydown', (e) => {
+            const idx = tabs.indexOf(tab);
+            if (e.key === 'ArrowRight') {
+              e.preventDefault();
+              const next = tabs[(idx + 1) % tabs.length];
+              next.focus();
+              setActive(next);
+            } else if (e.key === 'ArrowLeft') {
+              e.preventDefault();
+              const prev = tabs[(idx - 1 + tabs.length) % tabs.length];
+              prev.focus();
+              setActive(prev);
+            }
+          });
+        });
+        const initialActive = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
+        if (initialActive) setActive(initialActive);
+      }
+
+      // 7. Journey vertical timeline
+      const journey = document.querySelector('[data-journey]');
+      if (journey) {
+        const fill = journey.querySelector('[data-journey-fill]');
+        const items = Array.from(journey.querySelectorAll('[data-journey-item]'));
+        const updateJourney = () => {
+          const rect = journey.getBoundingClientRect();
+          const vh = window.innerHeight;
+          const total = rect.height;
+          const visible = Math.max(0, Math.min(total, vh * 0.55 - rect.top));
+          const pct = Math.max(0, Math.min(100, (visible / total) * 100));
+          if (fill) fill.style.setProperty('--journey-progress', pct + '%');
+          items.forEach((item) => {
+            const r = item.getBoundingClientRect();
+            const center = r.top + r.height / 2;
+            const inActive = center < vh * 0.6 && center > 0;
+            item.classList.toggle('is-active', inActive);
+          });
+        };
+        let journeyTicking = false;
+        const onJourneyScroll = () => {
+          if (journeyTicking) return;
+          journeyTicking = true;
+          requestAnimationFrame(() => {
+            updateJourney();
+            journeyTicking = false;
+          });
+        };
+        window.addEventListener('scroll', onJourneyScroll, { passive: true });
+        window.addEventListener('resize', onJourneyScroll, { passive: true });
+        updateJourney();
+      }
+
+      // 8. FAQ category filter
+      const faqFilter = document.querySelector('[data-faq-filter]');
+      const faqList = document.querySelector('[data-faq-list]');
+      if (faqFilter && faqList) {
+        const chips = Array.from(faqFilter.querySelectorAll('.bl-faq-chip'));
+        const items = Array.from(faqList.querySelectorAll('.bl-faq__item'));
+        chips.forEach((chip) => {
+          chip.addEventListener('click', () => {
+            const cat = chip.dataset.faqCat;
+            chips.forEach((c) => {
+              const on = c === chip;
+              c.classList.toggle('is-active', on);
+              c.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            items.forEach((item) => {
+              const matches = cat === 'All' || item.dataset.faqCat === cat;
+              item.classList.toggle('is-hidden', !matches);
+            });
+          });
+        });
+      }
     })();
   </script>
-
 </Layout>
-
-<style>
-  /* ---------- Hero ---------- */
-  .brand-hero-split {
-    background: var(--bbg-white);
-    padding: clamp(var(--space-7), 10vh, var(--space-8)) 0;
-  }
-  .brand-hero-split__inner {
-    display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    gap: clamp(var(--space-6), 4vw, var(--space-8));
-    align-items: center;
-  }
-  .brand-hero-split__copy { max-width: 620px; }
-  .brand-hero-split__title {
-    font-size: clamp(2.25rem, 3vw + 1rem, 3.75rem);
-    line-height: 1.06;
-    letter-spacing: -0.02em;
-    color: var(--bbg-ink);
-    margin: var(--space-3) 0 var(--space-4);
-  }
-  .brand-hero-split__lead {
-    font-size: clamp(1.0625rem, 0.5vw + 0.95rem, 1.25rem);
-    line-height: 1.55;
-    color: var(--bbg-text);
-    margin: 0 0 var(--space-5);
-    max-width: 56ch;
-  }
-  .brand-hero-split__actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-3);
-  }
-  .brand-hero-split__media {
-    margin: 0;
-    aspect-ratio: 4 / 5;
-    overflow: hidden;
-    border-radius: var(--radius-lg);
-    background: var(--bbg-surface);
-  }
-  .brand-hero-split__media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  @media (max-width: 900px) {
-    .brand-hero-split__inner { grid-template-columns: 1fr; gap: var(--space-6); }
-    .brand-hero-split__media { aspect-ratio: 16 / 11; }
-  }
-
-  .brand-hero {
-    position: relative;
-    overflow: hidden;
-    isolation: isolate;
-    padding: var(--space-9) 0 var(--space-8);
-  }
-  .brand-hero__bg { position: absolute; inset: 0; z-index: -2; }
-  .brand-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-  .brand-hero__overlay {
-    position: absolute; inset: 0; z-index: -1;
-    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.55) 50%, rgba(0,0,0,0.85) 100%);
-  }
-  .brand-hero__inner { position: relative; }
-  .brand-hero .hero__title { color: var(--bbg-white); max-width: 880px; }
-  .brand-hero .hero__lead { color: rgba(255,255,255,0.9); max-width: 720px; }
-
-  /* ---------- Three pillars ---------- */
-  .pillars {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-5);
-    counter-reset: pillar;
-  }
-  .pillar {
-    position: relative;
-    background: var(--bbg-white);
-    border: 1px solid var(--bbg-border);
-    border-radius: var(--radius-md);
-    padding: var(--space-6);
-    display: flex;
-    flex-direction: column;
-    transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
-  }
-  .pillar::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: var(--space-6);
-    right: var(--space-6);
-    height: 3px;
-    background: var(--bbg-blue);
-    border-radius: 0 0 3px 3px;
-    transform: scaleX(0.3);
-    transform-origin: left;
-    transition: transform var(--dur) var(--ease);
-  }
-  .pillar:hover {
-    transform: translateY(-4px);
-    border-color: var(--bbg-blue);
-    box-shadow: var(--shadow-md);
-  }
-  .pillar:hover::before { transform: scaleX(1); }
-  .pillar__icon {
-    display: inline-grid;
-    place-items: center;
-    width: 52px;
-    height: 52px;
-    border-radius: var(--radius-sm);
-    background: var(--bbg-blue-light);
-    color: var(--bbg-blue);
-    margin-bottom: var(--space-5);
-    transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
-  }
-  .pillar__icon svg { width: 26px; height: 26px; display: block; }
-  .pillar__icon-char {
-    font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: 0;
-    color: currentColor;
-  }
-  .pillar:hover .pillar__icon {
-    background: var(--bbg-blue);
-    color: var(--bbg-white);
-  }
-  .pillar__title {
-    font-size: var(--fs-h3);
-    line-height: 1.25;
-    color: var(--bbg-ink);
-    margin-bottom: var(--space-3);
-  }
-  .pillar p {
-    margin: 0;
-    color: var(--bbg-text);
-    line-height: 1.6;
-  }
-  @media (max-width: 1024px) { .pillars { grid-template-columns: 1fr; gap: var(--space-4); } }
-
-  /* ---------- Why grid ---------- */
-  .why-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
-    gap: var(--space-7);
-    align-items: center;
-  }
-  .why-grid__copy { max-width: 62ch; }
-  .why-grid__actions { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-5); }
-  .why-grid__stats {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-5);
-    padding: var(--space-6);
-    background: var(--bbg-white);
-    border: 1px solid var(--bbg-border);
-    border-left: 3px solid var(--bbg-blue);
-    border-radius: var(--radius-md);
-  }
-  .why-stat { display: flex; flex-direction: column; gap: var(--space-2); }
-  .why-stat__value {
-    font-size: clamp(2rem, 2.6vw + 1rem, 3rem);
-    font-weight: 700;
-    line-height: 1;
-    color: var(--bbg-blue);
-    letter-spacing: -0.02em;
-    font-variant-numeric: tabular-nums;
-    display: inline-flex;
-    align-items: baseline;
-  }
-  .why-stat__num { display: inline-block; }
-  .why-stat__suffix { display: inline-block; }
-  .why-stat__label { font-size: var(--fs-small); color: var(--bbg-text-muted); line-height: 1.5; }
-  @media (max-width: 1024px) { .why-grid { grid-template-columns: 1fr; } }
-
-  /* ---------- Brand services ---------- */
-  .brand-services {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-8);
-  }
-  .brand-service {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: var(--space-7);
-    align-items: center;
-  }
-  .brand-service--reverse .brand-service__visual { order: 2; }
-  .brand-service__visual {
-    position: relative;
-    aspect-ratio: 4 / 3;
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    border: 1px solid var(--bbg-border);
-    background: var(--bbg-surface);
-  }
-  .brand-service__visual img {
-    width: 100%; height: 100%; object-fit: cover; display: block;
-    transition: transform 400ms var(--ease);
-  }
-  .brand-service:hover .brand-service__visual img { transform: scale(1.03); }
-  .brand-service__copy { max-width: 56ch; }
-  .brand-service__title {
-    font-size: var(--fs-h2);
-    line-height: 1.15;
-    margin-bottom: var(--space-4);
-  }
-  .brand-service__copy p { margin-bottom: var(--space-5); }
-  .brand-service__bullets {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-3);
-  }
-  .brand-service__bullets li {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: var(--space-3);
-    align-items: start;
-    color: var(--bbg-text);
-    line-height: 1.5;
-  }
-  .brand-service__bullets svg {
-    width: 18px; height: 18px;
-    color: var(--bbg-blue);
-    margin-top: 4px;
-    flex-shrink: 0;
-  }
-  @media (max-width: 1024px) {
-    .brand-service { grid-template-columns: 1fr; gap: var(--space-5); }
-    .brand-service--reverse .brand-service__visual { order: 0; }
-  }
-
-  /* ---------- Studio mosaic ---------- */
-  .studio-section__header { margin-bottom: var(--space-6); }
-  .studio-section__cta { margin-top: var(--space-6); text-align: center; }
-
-  .studio-mosaic {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, minmax(80px, 1fr));
-    grid-template-areas:
-      "mex mex mex myl eli cam"
-      "mex mex mex myl eli cam"
-      "mex mex mex myl eli cam"
-      "his his age diy diy gin"
-      "his his age diy diy gin"
-      "his his age diy diy gin";
-    gap: var(--space-2);
-    border-radius: var(--radius-md);
-  }
-  .studio-tile--mex { grid-area: mex; }
-  .studio-tile--myl { grid-area: myl; }
-  .studio-tile--eli { grid-area: eli; }
-  .studio-tile--cam { grid-area: cam; }
-  .studio-tile--his { grid-area: his; }
-  .studio-tile--age { grid-area: age; }
-  .studio-tile--diy { grid-area: diy; }
-  .studio-tile--gin { grid-area: gin; }
-
-  .studio-tile {
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    border-radius: var(--radius-sm);
-    background: var(--bbg-surface);
-    isolation: isolate;
-  }
-  .studio-tile img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 600ms var(--ease);
-    will-change: transform;
-  }
-  .studio-tile:hover img { transform: scale(1.06); }
-
-  .studio-tile--mex img {
-    animation: studio-kenburns 22s ease-in-out infinite alternate;
-  }
-  .studio-tile--mex:hover img {
-    animation-play-state: paused;
-    transform: scale(1.08);
-  }
-  @keyframes studio-kenburns {
-    0%   { transform: scale(1.04) translate(0, 0); }
-    100% { transform: scale(1.14) translate(-2.5%, -2%); }
-  }
-
-  .studio-tile figcaption {
-    position: absolute;
-    inset: auto 0 0 0;
-    padding: var(--space-3) var(--space-3) calc(var(--space-3) - 2px);
-    color: var(--bbg-white);
-    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.0) 100%);
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    opacity: 0;
-    transform: translateY(8px);
-    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
-    pointer-events: none;
-  }
-  .studio-tile:hover figcaption,
-  .studio-tile:focus-within figcaption {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .studio-tile__brand {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-  }
-  .studio-tile__type {
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--bbg-blue);
-    opacity: 0.95;
-  }
-
-  @media (max-width: 1024px) {
-    .studio-mosaic {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(8, minmax(80px, 1fr));
-      grid-template-areas:
-        "mex mex mex mex"
-        "mex mex mex mex"
-        "myl myl eli eli"
-        "myl myl eli eli"
-        "cam cam age age"
-        "cam cam age age"
-        "his his diy diy"
-        "gin his diy diy";
-    }
-  }
-  @media (max-width: 640px) {
-    .studio-mosaic {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(8, minmax(120px, 1fr));
-      grid-template-areas:
-        "mex mex"
-        "mex mex"
-        "myl eli"
-        "myl eli"
-        "cam age"
-        "cam age"
-        "his diy"
-        "gin diy";
-    }
-    .studio-tile figcaption { opacity: 1; transform: translateY(0); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .studio-tile--mex img,
-    .studio-tile:hover img { animation: none; transform: none; }
-  }
-
-  /* ---------- FAQ ---------- */
-  .faq {
-    max-width: 880px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-3);
-  }
-  .faq__item {
-    background: var(--bbg-white);
-    border: 1px solid var(--bbg-border);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
-  }
-  .faq__item[open] {
-    border-color: var(--bbg-blue);
-    box-shadow: var(--shadow-sm);
-  }
-  .faq__summary {
-    list-style: none;
-    cursor: pointer;
-    padding: var(--space-5) var(--space-6);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-4);
-    font-weight: 600;
-    color: var(--bbg-ink);
-    font-size: var(--fs-h4);
-    transition: color var(--dur) var(--ease);
-  }
-  .faq__summary::-webkit-details-marker { display: none; }
-  .faq__summary:hover { color: var(--bbg-blue); }
-  .faq__chev {
-    flex-shrink: 0;
-    color: var(--bbg-blue);
-    transition: transform var(--dur) var(--ease);
-  }
-  .faq__chev svg { width: 20px; height: 20px; display: block; }
-  .faq__item[open] .faq__chev { transform: rotate(180deg); }
-  .faq__body {
-    padding: 0 var(--space-6) var(--space-5);
-    color: var(--bbg-text);
-    line-height: 1.65;
-  }
-  .faq__body p { margin: 0; }
-
-  /* ---------- Related cards ---------- */
-  .related-card {
-    display: flex;
-    flex-direction: column;
-    background: var(--bbg-white);
-    border: 1px solid var(--bbg-border);
-    border-radius: var(--radius-md);
-    padding: var(--space-6);
-    color: inherit;
-    transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
-  }
-  .related-card:hover {
-    border-color: var(--bbg-blue);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-    color: inherit;
-  }
-  .related-card__title {
-    font-size: var(--fs-h3);
-    color: var(--bbg-ink);
-    margin-bottom: var(--space-3);
-  }
-  .related-card p {
-    color: var(--bbg-text);
-    margin-bottom: var(--space-5);
-    flex: 1;
-  }
-  .related-card__cta {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-2);
-    color: var(--bbg-blue);
-    font-weight: 600;
-    font-size: var(--fs-small);
-    letter-spacing: 0.02em;
-  }
-
-  /* ---------- Insight rows ---------- */
-  .insight-row {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: var(--space-5);
-    align-items: center;
-    background: var(--bbg-white);
-    border: 1px solid var(--bbg-border);
-    border-radius: var(--radius-md);
-    padding: var(--space-5) var(--space-6);
-    color: inherit;
-    transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
-  }
-  .insight-row:hover {
-    border-color: var(--bbg-blue);
-    transform: translateY(-2px);
-    color: inherit;
-  }
-  .insight-row__tag {
-    font-size: var(--fs-label);
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--bbg-blue);
-    background: var(--bbg-blue-light);
-    padding: 4px 10px;
-    border-radius: var(--radius-sm);
-  }
-  .insight-row__title {
-    font-size: var(--fs-h4);
-    color: var(--bbg-ink);
-    margin: 0;
-    font-weight: 600;
-    line-height: 1.35;
-  }
-  .insight-row__cta {
-    color: var(--bbg-blue);
-    font-weight: 600;
-    font-size: var(--fs-small);
-  }
-  @media (max-width: 760px) {
-    .insight-row { grid-template-columns: 1fr; gap: var(--space-3); }
-    .insight-row__tag { justify-self: start; }
-    .insight-row__cta { justify-self: start; }
-  }
-
-  /* ---------- CTA team (shared pattern) ---------- */
-  .cta .eyebrow { color: var(--bbg-blue); }
-  .cta__lead { max-width: 640px; margin-left: auto; margin-right: auto; color: var(--bbg-white); opacity: 0.9; }
-  .text-center { text-align: center; }
-
-  .cta-team { position: relative; overflow: hidden; isolation: isolate; }
-  .cta-team__bg { position: absolute; inset: 0; z-index: -2; }
-  .cta-team__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-  .cta-team__overlay {
-    position: absolute; inset: 0; z-index: -1;
-    background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.8) 100%);
-  }
-  .cta-team__inner { position: relative; }
-</style>
