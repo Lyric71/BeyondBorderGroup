@@ -12,6 +12,7 @@ const growChina = [
   { label: 'Distribution', href: '/grow-in-china/distribution' },
   { label: 'Media', href: '/grow-in-china/media' },
   { label: 'Website', href: '/grow-in-china/website' },
+  { label: 'Production Studio', href: '/grow-in-china/production-studio' },
 ];
 
 const learnChina = [
@@ -27,7 +28,33 @@ const company = [
   { label: 'Contact', href: '/contact' },
 ];
 
-const platforms = ['Tmall', 'JD', 'Douyin', 'WeChat', 'RED', 'WordPress'];
+const network = [
+  {
+    name: 'NuvoraStudio.com',
+    href: 'https://nuvora.studio',
+    logo: '/Images/AgencyLogos/Nuvora%20PNG.webp',
+    desc: 'LinkedIn presence built daily. Content, ads, executive branding.',
+  },
+  {
+    name: 'ChinaWebFoundry.com',
+    href: 'https://chinawebfoundry.com',
+    logo: '/Images/AgencyLogos/Logo-ChinaWebFoundry-transparent.webp',
+    desc: 'Websites built for the Chinese internet. ICP, Baidu SEO, hosting.',
+  },
+  {
+    name: 'BeyondCompass.com',
+    href: 'https://beyondcompass.beyondbordergroup.com',
+    logo: '/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp',
+    desc: 'Vetted distributor and Tmall partner introductions in China.',
+  },
+  {
+    name: 'TheRedScroll.com',
+    href: 'https://theredscroll.com',
+    logo: '/Images/AgencyLogos/TheredScroll%20PNG.webp',
+    desc: 'Daily WeChat, Douyin, RedNote and Weibo operations from the ground.',
+  },
+];
+
 const year = new Date().getFullYear();
 ---
 
@@ -83,18 +110,34 @@ const year = new Date().getFullYear();
       </div>
     </div>
 
-    <div class="footer__platforms">
-      <span class="footer__platforms-label">Platforms we operate on</span>
-      <ul class="footer__platforms-list">
-        {platforms.map(p => <li>{p}</li>)}
-      </ul>
-    </div>
+    <section class="footer__network" aria-label="Our network">
+      <span class="footer__network-label">Our Network</span>
+      <div class="footer__network-grid">
+        {network.map(agency => (
+          <a class="footer__network-card" href={agency.href} target="_blank" rel="noopener">
+            <span class="footer__network-card-logo">
+              <img src={agency.logo} alt={agency.name} loading="lazy" />
+            </span>
+            <span class="footer__network-card-name">{agency.name}</span>
+            <span class="footer__network-card-desc">{agency.desc}</span>
+          </a>
+        ))}
+      </div>
 
-    <div class="footer__sister">
-      <span>Content production by</span>
-      <a href="https://hubstudio.ai" target="_blank" rel="noopener">hubStudio.ai</a>
-      <span class="text-muted-light">our sister AIGC studio.</span>
-    </div>
+      <a class="footer__parent" href="https://www.beyondbordergroup.org/" target="_blank" rel="noopener">
+        <span class="footer__parent-logo">
+          <img src="/Images/AgencyLogos/BBG%20PNG.webp" alt="Beyond Border Group" loading="lazy" />
+        </span>
+        <span class="footer__parent-body">
+          <span class="footer__parent-eyebrow">Parent Group</span>
+          <span class="footer__parent-name">BeyondBorderGroup.org</span>
+          <span class="footer__parent-desc">The umbrella group connecting our specialised China agencies.</span>
+        </span>
+        <span class="footer__parent-cta">
+          Visit <span aria-hidden="true">→</span>
+        </span>
+      </a>
+    </section>
 
     <div class="footer__bottom">
       <p>© Beyond Border Group {year}. All rights reserved.</p>

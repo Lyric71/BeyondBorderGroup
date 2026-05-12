@@ -1,0 +1,1796 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const heroStats = [
+  { value: '1.38B', label: 'WeChat monthly users' },
+  { value: '700M', label: 'Douyin daily users' },
+  { value: '300M', label: 'Xiaohongshu monthly users' },
+];
+
+const bigFive = [
+  {
+    id: 'wechat',
+    name: 'WeChat',
+    cn: '微信',
+    tagline: 'The closest thing China has to an operating system',
+    image: '/Images/learn-china/platforms/wechat.png',
+    imageAlt: 'A smartphone showing the WeChat home screen with chat list, payment QR code and Mini-Program tiles',
+    logo: '/Images/platforms/wechat-logo.svg',
+    color: '#07C160',
+    colorSoft: '#E4F7EB',
+    accent: '#05A050',
+    stat: '1.38 billion monthly active users in early 2025',
+    source: 'Tencent Q1 2025 earnings report',
+    paragraphs: [
+      'Everyone in China uses WeChat. Most people open it dozens of times a day without thinking about it.',
+      'It started as a messaging app. It is now closer to an operating system. People pay for groceries with it, book doctors, split dinner bills, order coffee and message their boss inside the same five-minute window. Cabs take it. Street vendors tape QR codes to a wall.',
+      'For brands, WeChat is closer to a CRM than to social media. Companies use Official Accounts to publish and gather followers. Mini-Programs host the store, the booking page, the member club. Moments ads bring new fans in and push them to those Mini-Programs.',
+      'Starbucks and McDonald\'s both run two of the most-used Mini-Programs in China, mainly for ordering, loyalty and payment. Not really for branding.',
+      'People rarely discover a brand on WeChat. But once they have followed you, that is where the relationship lives.',
+    ],
+    role: 'Retention engine',
+  },
+  {
+    id: 'douyin',
+    name: 'Douyin',
+    cn: '抖音',
+    tagline: 'A storefront disguised as an entertainment app',
+    image: '/Images/learn-china/platforms/douyin.png',
+    imageAlt: 'A smartphone showing a Douyin livestream commerce stream with a shoppable product card overlay',
+    logo: '/Images/platforms/douyin-logo.svg',
+    color: '#FE2C55',
+    colorSoft: '#FEE7EC',
+    accent: '#000000',
+    stat: '700 million daily active users, close to two hours per user per day',
+    source: 'ByteDance disclosures, 2024',
+    paragraphs: [
+      'Douyin is the Chinese sister of TikTok. Same parent, ByteDance. Different app, different rules, different ecosystem. For most Chinese consumers under 35, time on Douyin already beats Netflix and YouTube combined.',
+      'Douyin matters because it sells. People do not just watch videos here, they buy from them. A creator shows a lipstick on screen, taps a tag, and the product lands in the viewer\'s cart in seconds.',
+      'Livestreams run day and night. Hosts sell everything from face cream to SUVs. Beauty groups like Estée Lauder and L\'Oréal often run their biggest single-night sales of the year on Douyin, sometimes outselling a flagship store\'s full month in a few hours.',
+      'For a growing number of brands, Douyin is the single biggest sales channel they have in China.',
+    ],
+    role: 'Social commerce engine',
+  },
+  {
+    id: 'rednote',
+    name: 'Xiaohongshu / RED',
+    cn: '小红书',
+    tagline: 'Where Chinese shoppers research before they buy',
+    image: '/Images/learn-china/platforms/rednote.png',
+    imageAlt: 'A smartphone showing the Xiaohongshu RED grid feed with lifestyle product posts',
+    logo: '/Images/platforms/rednote-logo.svg',
+    color: '#FF2741',
+    colorSoft: '#FFE6EA',
+    accent: '#D81B33',
+    stat: '~300 million monthly active users, mostly women aged 18 to 35 in Tier 1 and Tier 2 cities',
+    source: 'Xiaohongshu corporate disclosures, 2024',
+    paragraphs: [
+      'Xiaohongshu, known in English as RED or RedNote, sits between Instagram, Pinterest and a product review forum. People come here to read what other users actually think before they buy. Skincare, restaurants, travel, baby gear. Anything that takes a little thought.',
+      'The tone is the whole point. A glossy ad usually dies on the platform. A regular user posting an honest experience can sell out a product overnight. Lululemon built its Chinese fanbase on RED long before opening any physical stores.',
+      'Winning here means earning trust, not buying attention. The work splits between paid partnerships with bigger creators (KOLs), a steady drip of smaller voices (KOCs), and useful content posted from the brand\'s own account.',
+    ],
+    role: 'Trust, seeding and in-feed sales',
+  },
+  {
+    id: 'tmall',
+    name: 'Tmall / Taobao',
+    cn: '天猫 / 淘宝',
+    tagline: 'The digital flagship boutique of Chinese commerce',
+    image: '/Images/learn-china/platforms/tmall.png',
+    imageAlt: 'A smartphone showing a Tmall flagship store with a luxury cosmetic banner and category icons',
+    logo: '/Images/platforms/tmall-logo.svg',
+    color: '#FF6B00',
+    colorSoft: '#FFEFE0',
+    accent: '#FF0036',
+    stat: 'Together, Tmall and Taobao move more product per year than Amazon, Walmart and eBay combined',
+    source: 'Alibaba annual disclosures, 2024',
+    paragraphs: [
+      'Tmall and Taobao both belong to Alibaba and run on the same backend. The difference is who is allowed to sell. Taobao is open to anyone. Tmall is reserved for verified brands and authorized distributors. Smaller by transaction count, larger by revenue, and by a wide margin the more credible storefront for any serious brand.',
+      'A Tmall flagship is the closest thing in digital retail to a real-world boutique. The brand controls the visuals, the pages, the promotions, the customer data. Nike, Apple, Nestlé and Dyson all run multi-billion-RMB businesses out of theirs.',
+      'For brands without a Chinese entity, Tmall Global is the cross-border path. Stock ships from a bonded warehouse outside the mainland, tax and customs rules are lighter, sales settle in RMB. Most international brands testing China start here.',
+    ],
+    role: 'Conversion at scale',
+  },
+  {
+    id: 'jd',
+    name: 'JD',
+    cn: '京东',
+    tagline: 'A department store with its own delivery trucks parked out back',
+    image: '/Images/learn-china/platforms/jd.png',
+    imageAlt: 'A smartphone showing a JD product detail page for a sleek laptop with a red price and add-to-cart button',
+    logo: '/Images/platforms/jd-logo.png',
+    color: '#E1251B',
+    colorSoft: '#FCE5E3',
+    accent: '#C81E1E',
+    stat: 'Same-day and next-day delivery from JD-owned warehouses, in most major cities',
+    source: 'JD.com platform disclosures, 2024',
+    paragraphs: [
+      'JD is Alibaba\'s main rival. If Tmall feels like a shopping mall, JD feels more like a department store with its own trucks parked out back. It owns its warehouses, runs its own drivers and ships same-day in most cities. The platform is strict on counterfeits.',
+      'That trust pays off in a few categories: electronics, home appliances, baby products, fresh food, premium wine and spirits. Apple, Samsung, Huawei and Xiaomi all run major operations here, often with stronger numbers than on Tmall.',
+      'JD Worldwide is the cross-border version, similar to Tmall Global. For most brands, the right answer is not Tmall or JD. It is both, with JD doing the heavy lifting wherever shoppers care about speed and authenticity.',
+    ],
+    role: 'Trust-driven categories',
+  },
+];
+
+const restOfLandscape = [
+  {
+    name: 'Pinduoduo',
+    cn: '拼多多',
+    logo: '/Images/platforms/pinduoduo-logo.svg',
+    color: '#E02E24',
+    body: 'Alibaba\'s third real competitor, and in several categories the biggest of the three. Built on group-buying and aggressive pricing in lower-tier cities. Its overseas arm, Temu, is now one of the fastest-growing shopping apps in the United States.',
+    note: 'International brands rarely sell here directly.',
+  },
+  {
+    name: 'Kuaishou',
+    cn: '快手',
+    logo: '/Images/platforms/kuaishou-logo.svg',
+    color: '#FF4906',
+    body: 'Douyin\'s main rival in short video and livestream commerce. Stronger in second and third-tier cities, smaller in Tier 1. A serious channel for value brands and food categories.',
+    note: 'Best paired with Douyin, not instead of.',
+  },
+  {
+    name: 'Bilibili',
+    cn: '哔哩哔哩',
+    logo: '/Images/platforms/bilibili-logo.svg',
+    color: '#00A1D6',
+    body: 'Long-form video, especially anime, gaming and youth culture. Smaller commercial pull than the big five, but close to irreplaceable for brands going after Gen Z.',
+    note: 'Where Gen Z actually spends time.',
+  },
+  {
+    name: 'Weibo',
+    cn: '微博',
+    logo: '/Images/platforms/weibo-logo.svg',
+    color: '#E6162D',
+    body: 'Closer to a Chinese Twitter. Still useful for celebrity campaigns, PR and hashtag trends. Less useful for sustained brand engagement than it once was.',
+    note: 'A PR channel more than a sales one.',
+  },
+];
+
+const sellMechanics = [
+  {
+    name: 'WeChat',
+    cn: '微信',
+    color: '#07C160',
+    colorSoft: '#E4F7EB',
+    icon: 'bubble',
+    image: '/Images/learn-china/platforms/mech-wechat.png',
+    imageAlt: 'A WeChat Mini-Program checkout screen with a green WeChat Pay confirm button',
+    body: 'Sales run through Mini-Programs. The store, the loyalty program and WeChat Pay are wired together inside the app. Traffic comes from Official Account articles, Moments ads, customer-service chats and QR codes printed on packaging or in stores.',
+    points: ['Mini-Program store', 'WeChat Pay native checkout', 'CRM and member tiers'],
+  },
+  {
+    name: 'Douyin',
+    cn: '抖音',
+    color: '#FE2C55',
+    colorSoft: '#FEE7EC',
+    icon: 'broadcast',
+    image: '/Images/learn-china/platforms/mech-douyin.png',
+    imageAlt: 'A Douyin livestream commerce screen with a translucent product card and red Buy Now button',
+    body: 'Three channels work in parallel. Shoppable product tags inside short videos. Livestream rooms hosted by the brand or by KOLs. And the brand\'s own Douyin Store. The algorithm pushes content toward people likely to buy, not just to watch.',
+    points: ['Short video shoppable tags', 'Brand and KOL livestream', 'Douyin Store'],
+  },
+  {
+    name: 'RED',
+    cn: '小红书',
+    color: '#FF2741',
+    colorSoft: '#FFE6EA',
+    icon: 'heart',
+    image: '/Images/learn-china/platforms/mech-red.png',
+    imageAlt: 'A Xiaohongshu RED in-feed shopping post with a Shop Product card inline',
+    body: 'For years, RED drove discovery and Tmall captured the sale. That is changing. Brands can now open a store inside the app and sell directly, with checkout built into the feed. Livestream is smaller than on Douyin, more personal in tone.',
+    points: ['In-feed checkout', 'KOC and KOL seeding', 'Closing the gap with Tmall'],
+  },
+  {
+    name: 'Tmall',
+    cn: '天猫',
+    color: '#FF6B00',
+    colorSoft: '#FFEFE0',
+    icon: 'store',
+    image: '/Images/learn-china/platforms/mech-tmall.png',
+    imageAlt: 'A Tmall 11.11 festival landing page with a red countdown banner and discounted product cards',
+    body: 'A flagship store gives the brand full control over visuals, pages, promotions and customer data. Traffic comes from in-app search, category pages, Alibaba\'s recommendation engine and paid placements via Alimama. June 18 and November 11 can deliver a year of revenue in a week.',
+    points: ['Flagship store', 'Search and category traffic', '6.18 and 11.11 campaigns'],
+  },
+  {
+    name: 'JD',
+    cn: '京东',
+    color: '#E1251B',
+    colorSoft: '#FCE5E3',
+    icon: 'truck',
+    image: '/Images/learn-china/platforms/mech-jd.png',
+    imageAlt: 'A JD product page emphasizing same-day delivery, authenticity and easy returns badges',
+    body: 'Same flagship logic as Tmall, but with the logistics edge. Orders ship from JD\'s own warehouses, often within hours. That makes a real difference in high-ticket and fresh categories. JD also runs major promotions: June 18 is its own invention.',
+    points: ['JD flagship', 'Self-run warehouse and fleet', '6.18 anchor festival'],
+  },
+];
+
+const journey = [
+  {
+    phase: 'Discovery and demand',
+    icon: 'spark',
+    title: 'Douyin and RED build the audience',
+    body: 'Short video, livestream and creator content put the brand in front of people who were not yet looking for it. RED earns the trust that makes them ready to act.',
+    platforms: 'Douyin · RED',
+  },
+  {
+    phase: 'Conversion (social and marketplace)',
+    icon: 'store',
+    title: 'Sales close on every channel, not just on marketplaces',
+    body: 'Tmall and JD remain the home of festivals, category authority and scale. But Douyin livestreams and RED in-feed checkout convert directly inside the social apps. The winning brands let buyers transact wherever they happen to be ready.',
+    platforms: 'Tmall · JD · Douyin Shop · RED Store',
+  },
+  {
+    phase: 'Retention and loyalty',
+    icon: 'bubble',
+    title: 'WeChat keeps them coming back',
+    body: 'Once the first purchase is in, WeChat is where the relationship lives. Mini-Programs, loyalty tiers, WeCom one-to-one chats and Moments ads turn one-off buyers into a repeat audience.',
+    platforms: 'WeChat · WeCom',
+  },
+];
+
+const icons: Record<string, string> = {
+  bubble: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-4a8 8 0 1 1 16-4z"/><circle cx="9" cy="12" r=".75" fill="currentColor"/><circle cx="12" cy="12" r=".75" fill="currentColor"/><circle cx="15" cy="12" r=".75" fill="currentColor"/></svg>`,
+  broadcast: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.5 7.5a6 6 0 0 1 0 9M7.5 7.5a6 6 0 0 0 0 9"/><path d="M19.5 4.5a10 10 0 0 1 0 15M4.5 4.5a10 10 0 0 0 0 15"/></svg>`,
+  heart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6a5 5 0 0 0-8.8-3.2 5 5 0 0 0-8.8 3.2c0 5.6 8.8 11 8.8 11s8.8-5.4 8.8-11z"/></svg>`,
+  store: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/><path d="M4 9h16"/></svg>`,
+  truck: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>`,
+  spark: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg>`,
+  quote: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 17q-2 0-2-2v-3q0-3 3-5l1 1q-2 1-2 3h2v6zM16 17q-2 0-2-2v-3q0-3 3-5l1 1q-2 1-2 3h2v6z"/></svg>`,
+};
+---
+
+<Layout
+  title="China Digital Platforms Explained for Brands | Beyond Border Group"
+  description="WeChat, Douyin, RED, Tmall, JD. A guide to the platforms shaping how brands reach Chinese consumers, and what each one is actually for."
+>
+  <div class="lcp-progress" aria-hidden="true"><div class="lcp-progress__bar"></div></div>
+  <article class="lcp">
+
+    {/* ---------- HERO ---------- */}
+    <section class="lcp-hero" data-hero>
+      <div class="lcp-hero__bg" aria-hidden="true" data-parallax>
+        <img src="/Images/learn-china/hero-livestream-expedition.png" alt="A Chinese livestream studio with hosts demonstrating products live on camera" />
+      </div>
+      <div class="lcp-hero__overlay" aria-hidden="true"></div>
+      <div class="lcp-hero__grain" aria-hidden="true"></div>
+
+      <div class="container lcp-hero__inner">
+        <nav class="lcp-hero__crumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="/learn-china">Learn China</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark lcp-reveal">China platforms</span>
+        <h1 class="lcp-hero__title lcp-reveal" style="--reveal-delay: 80ms;">
+          <span class="lcp-hero__title-row">The apps that run</span>
+          <span class="lcp-hero__title-row lcp-hero__title-row--highlight">China's internet.</span>
+        </h1>
+        <p class="lcp-hero__lead lcp-reveal" style="--reveal-delay: 200ms;">
+          A guide to the five platforms shaping how brands reach Chinese consumers,
+          and what each one is actually for.
+        </p>
+        <div class="lcp-hero__actions lcp-reveal" style="--reveal-delay: 280ms;">
+          <a href="/contact" class="btn btn--primary lcp-magnetic">Talk to us</a>
+          <a href="#big-five" class="btn btn--ghost-light lcp-magnetic">See the big five</a>
+        </div>
+
+        <div class="lcp-hero__meta lcp-reveal" style="--reveal-delay: 360ms;">
+          {heroStats.map((s) => (
+            <div class="lcp-hero__meta-item">
+              <span class="lcp-hero__meta-num">{s.value}</span>
+              <span class="lcp-hero__meta-label">{s.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <a href="#big-five" class="lcp-hero__scroll" aria-label="Scroll to next section">
+        <span class="lcp-hero__scroll-line"></span>
+        <span class="lcp-hero__scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    {/* ---------- BIG FIVE INTRO ---------- */}
+    <section id="big-five" class="section lcp-bigfive-intro">
+      <div class="container">
+        <header class="section-header section-header--center lcp-reveal">
+          <span class="eyebrow">The big five</span>
+          <h2>WeChat, Douyin, RED, Tmall, JD</h2>
+          <p class="section-header__lead">
+            Five platforms cover most of what a brand needs to do in China.
+            Each one solves a different problem. Most working strategies use several at once.
+          </p>
+        </header>
+
+        <div class="lcp-quickbar lcp-reveal">
+          {bigFive.map((p) => (
+            <a href={`#${p.id}`} class="lcp-quickbar__item" style={`--brand: ${p.color}; --brand-soft: ${p.colorSoft};`}>
+              <span class="lcp-quickbar__logo" aria-hidden="true">
+                <img src={p.logo} alt="" loading="lazy" decoding="async" />
+              </span>
+              <div class="lcp-quickbar__text">
+                <span class="lcp-quickbar__name">{p.name}</span>
+                <span class="lcp-quickbar__cn">{p.cn}</span>
+                <span class="lcp-quickbar__role">{p.role}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- PLATFORM DEEP DIVES ---------- */}
+    {bigFive.map((p, i) => (
+      <section
+        id={p.id}
+        class={`section lcp-spot${i % 2 === 1 ? ' lcp-spot--reverse' : ''}${i % 2 === 1 ? ' section--alt' : ''}`}
+        style={`--brand: ${p.color}; --brand-soft: ${p.colorSoft}; --brand-accent: ${p.accent};`}
+      >
+        <div class="container">
+          <div class="lcp-spot__grid">
+            <div class="lcp-spot__media lcp-reveal">
+              <div class="lcp-spot__media-frame">
+                <img class="lcp-spot__media-img" src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
+                <div class="lcp-spot__nameplate" aria-hidden="true">
+                  <div class="lcp-spot__nameplate-logo">
+                    <img src={p.logo} alt="" />
+                  </div>
+                  <div class="lcp-spot__nameplate-text">
+                    <span class="lcp-spot__nameplate-en">{p.name}</span>
+                    <span class="lcp-spot__nameplate-cn">{p.cn}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lcp-spot__body lcp-reveal" style="--reveal-delay: 120ms;">
+              <span class="lcp-spot__eyebrow">
+                <span class="lcp-spot__eyebrow-dot" aria-hidden="true"></span>
+                {p.name} · <span class="lcp-spot__eyebrow-cn">{p.cn}</span>
+              </span>
+              <h2 class="lcp-spot__title">{p.tagline}</h2>
+
+              <div class="lcp-spot__copy">
+                {p.paragraphs.map((para) => (
+                  <p>{para}</p>
+                ))}
+              </div>
+
+              <figure class="lcp-spot__stat">
+                <span class="lcp-spot__stat-icon" aria-hidden="true" set:html={icons.quote} />
+                <div>
+                  <blockquote class="lcp-spot__stat-quote">{p.stat}</blockquote>
+                  <figcaption class="lcp-spot__stat-source">Source: {p.source}.</figcaption>
+                </div>
+              </figure>
+
+              <span class="lcp-spot__tag">Role in your mix: {p.role}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    ))}
+
+    {/* ---------- REST OF THE LANDSCAPE ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center lcp-reveal">
+          <span class="eyebrow">And the rest</span>
+          <h2>Four more that matter, depending on what you sell</h2>
+          <p class="section-header__lead">
+            Five platforms do not quite tell the whole story. A few others can move the needle
+            in specific categories or stages.
+          </p>
+        </header>
+
+        <div class="lcp-rest">
+          {restOfLandscape.map((r, i) => (
+            <article class="lcp-rest__card lcp-reveal" style={`--brand: ${r.color}; --reveal-delay: ${i * 80}ms;`}>
+              <div class="lcp-rest__head">
+                <div class="lcp-rest__logo">
+                  <img src={r.logo} alt={`${r.name} logo`} loading="lazy" decoding="async" />
+                </div>
+                <span class="lcp-rest__cn" aria-hidden="true">{r.cn}</span>
+              </div>
+              <h3 class="lcp-rest__name">{r.name}</h3>
+              <p class="lcp-rest__body">{r.body}</p>
+              <span class="lcp-rest__note">{r.note}</span>
+            </article>
+          ))}
+        </div>
+
+        <p class="lcp-rest__footnote lcp-reveal">
+          For most international brands, the big five above are where the work starts.
+          These four are where it expands later.
+        </p>
+      </div>
+    </section>
+
+    {/* ---------- HOW EACH PLATFORM SELLS ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center lcp-reveal">
+          <span class="eyebrow">Sales mechanics</span>
+          <h2>How each platform actually moves product</h2>
+          <p class="section-header__lead">
+            They all sell. They just do it in completely different ways. The mechanics
+            shape how you plan content, traffic and conversion.
+          </p>
+        </header>
+
+        <div class="lcp-mech">
+          {sellMechanics.map((m, i) => (
+            <article
+              class="lcp-mech__card lcp-reveal"
+              style={`--brand: ${m.color}; --brand-soft: ${m.colorSoft}; --reveal-delay: ${i * 70}ms;`}
+            >
+              <div class="lcp-mech__media">
+                <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" />
+              </div>
+              <div class="lcp-mech__body-wrap">
+                <div class="lcp-mech__head">
+                  <span class="lcp-mech__icon" aria-hidden="true" set:html={icons[m.icon]} />
+                  <div>
+                    <h3 class="lcp-mech__name">{m.name}</h3>
+                    <span class="lcp-mech__cn">{m.cn}</span>
+                  </div>
+                </div>
+                <p class="lcp-mech__body">{m.body}</p>
+                <ul class="lcp-mech__points">
+                  {m.points.map((pt) => (
+                    <li>
+                      <span class="lcp-mech__bullet" aria-hidden="true"></span>
+                      <span>{pt}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- HOW THEY WORK TOGETHER ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center lcp-reveal">
+          <span class="eyebrow">How they work together</span>
+          <h2>No single platform does everything in China</h2>
+          <p class="section-header__lead">
+            Each platform has a centre of gravity, but the lines blur. Douyin and RED both
+            run their own checkout. Tmall and JD still own the festival peaks. WeChat closes
+            the loop on retention. A working strategy uses several at once.
+          </p>
+        </header>
+
+        <div class="lcp-journey" data-journey>
+          <div class="lcp-journey__rail" aria-hidden="true">
+            <div class="lcp-journey__rail-track"></div>
+            <div class="lcp-journey__rail-fill" data-journey-fill></div>
+          </div>
+
+          <ol class="lcp-journey__list">
+            {journey.map((s, i) => (
+              <li class="lcp-journey__item lcp-reveal" data-journey-item style={`--reveal-delay: ${i * 100}ms;`}>
+                <span class="lcp-journey__dot" aria-hidden="true">
+                  <span class="lcp-journey__dot-inner"></span>
+                </span>
+                <span class="lcp-journey__phase">Phase {i === 0 ? 'one' : i === 1 ? 'two' : 'three'} · {s.phase}</span>
+                <div class="lcp-journey__card">
+                  <span class="lcp-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
+                  <div>
+                    <h3 class="lcp-journey__title">{s.title}</h3>
+                    <p class="lcp-journey__desc">{s.body}</p>
+                    <span class="lcp-journey__platforms">{s.platforms}</span>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    {/* ---------- WHERE BRANDS GET STUCK ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <div class="lcp-stuck lcp-reveal">
+          <span class="eyebrow">Where most brands get stuck</span>
+          <h2 class="lcp-stuck__title">Picking the platforms is the easy part. Running them well is where most brands lose ground.</h2>
+
+          <p class="lcp-stuck__body">
+            Most international brands arrive in China with a strategy deck and no team to
+            actually execute it. They hire one agency for Tmall, another for Douyin, a third
+            for content. Strategy and execution end up in different rooms, sometimes in
+            different cities. The result is a fragmented brand on the ground, even when the
+            plan on paper looked airtight.
+          </p>
+
+          <p class="lcp-stuck__body">
+            Knowing China from a slide deck is not the same as opening these apps every
+            morning, which is frankly what most agencies do not do. The algorithms shift
+            weekly. The festival mechanics change quarter by quarter. The creators who moved
+            product six months ago may already have moved on.
+          </p>
+
+          <p class="lcp-stuck__body lcp-stuck__body--bold">
+            That is the gap we close. We consult, and we run what we recommend. The same
+            senior people who design your platform strategy also run your stores, your
+            accounts, your campaigns. No handoff, no translation loss.
+          </p>
+        </div>
+
+        <div class="lcp-trs lcp-reveal">
+          <div class="lcp-trs__badge" aria-hidden="true">
+            <span class="lcp-trs__badge-dot"></span>
+            Studio of Beyond Border Group
+          </div>
+          <h3 class="lcp-trs__title">
+            Meet <span class="lcp-trs__brand">TheRedScroll</span>
+          </h3>
+          <p class="lcp-trs__tagline">
+            Chinese social media specialist. We post on China's platforms. Every day.
+            From the ground.
+          </p>
+          <p class="lcp-trs__body">
+            China runs on its own platforms. WeChat, Douyin, RedNote, Weibo and fourteen
+            others. TheRedScroll is the BBG studio that lives inside those apps, plans the
+            calendars, writes the copy, runs the media and books the creators. One team
+            for strategy and execution.
+          </p>
+
+          <div class="lcp-trs__pillars">
+            <article class="lcp-trs__pillar">
+              <span class="lcp-trs__pillar-label">Plan</span>
+              <h4>Set the strategy, build the foundations</h4>
+              <p>
+                Strategy, competitor research, content calendars and KPIs tied to business
+                goals. Account setup, verification, naming and eCommerce integration with
+                Tmall, JD and Douyin Shop.
+              </p>
+            </article>
+
+            <article class="lcp-trs__pillar lcp-trs__pillar--accent">
+              <span class="lcp-trs__pillar-label">Run</span>
+              <h4>Post, advertise, partner, every day</h4>
+              <p>
+                WeChat, Douyin, RedNote and Weibo at the core. Bilibili, Kuaishou, Zhihu and
+                others as add-ons. Native copy, paid media with no markup on ad spend, and
+                verified influencer engagement.
+              </p>
+            </article>
+
+            <article class="lcp-trs__pillar">
+              <span class="lcp-trs__pillar-label">Sustain</span>
+              <h4>Turn audience into a repeat customer</h4>
+              <p>
+                WeCom and WeChat CRM, private domain, community and customer-service flows.
+                Masterclasses and strategic consulting on every platform we run.
+              </p>
+            </article>
+          </div>
+
+          <div class="lcp-trs__cta">
+            <a href="https://theredscroll.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary lcp-magnetic">
+              Visit TheRedScroll
+              <span aria-hidden="true" class="lcp-trs__cta-arrow">↗</span>
+            </a>
+            <a href="/contact" class="btn btn--secondary lcp-magnetic">Talk to the team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="lcp-cta">
+          <span class="eyebrow eyebrow--on-dark">Let's talk</span>
+          <h2 class="lcp-cta__title">Thinking about China, or already in and not seeing the results you expected?</h2>
+          <p class="lcp-cta__lead">
+            Tell us where you are today and where you want to be. A senior member of the team
+            will reply within one working day. No sales funnel, no auto-responder.
+          </p>
+          <div class="lcp-cta__actions">
+            <a href="/contact" class="btn lcp-cta__btn-primary">Contact us</a>
+            <a href="/work" class="btn lcp-cta__btn-ghost">See our case studies</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    /* ---------- Container narrow helper ---------- */
+    .lcp .container--narrow { max-width: 880px; }
+
+    /* ---------- REVEAL + MOTION ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .lcp-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .lcp-reveal.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .lcp-magnetic {
+        will-change: transform;
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      }
+      .lcp-magnetic:hover { transform: translateY(-2px); }
+    }
+
+    /* ---------- SCROLL PROGRESS BAR ---------- */
+    .lcp-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 1000;
+      background: transparent;
+      pointer-events: none;
+    }
+    .lcp-progress__bar {
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      transition: width 80ms linear;
+    }
+
+    /* ---------- HERO ---------- */
+    .lcp-hero {
+      position: relative;
+      min-height: clamp(360px, 50vh, 520px);
+      display: flex;
+      align-items: flex-start;
+      padding: clamp(8px, 1.25vh, 16px) 0 clamp(48px, 7vh, 80px);
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    body:has(.lcp-hero) .lcp-hero { padding-top: clamp(112px, 10vh, 144px); }
+    @media (max-width: 1024px) {
+      body:has(.lcp-hero) .lcp-hero { padding-top: clamp(96px, 9vh, 116px); }
+    }
+    .lcp-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .lcp-hero__bg img {
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+      transition: transform 80ms linear;
+      filter: saturate(0.95);
+    }
+    .lcp-hero__overlay {
+      position: absolute; inset: 0; z-index: -2;
+      background:
+        linear-gradient(110deg,
+          rgba(8, 18, 28, 0.94) 0%,
+          rgba(8, 18, 28, 0.74) 42%,
+          rgba(8, 18, 28, 0.34) 100%),
+        radial-gradient(120% 80% at 0% 100%,
+          rgba(38, 154, 218, 0.28) 0%,
+          rgba(38, 154, 218, 0) 60%);
+    }
+    .lcp-hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .lcp-hero__inner { max-width: 980px; position: relative; }
+    .lcp-hero__crumbs {
+      margin-bottom: var(--space-4);
+      font-size: var(--fs-small);
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .lcp-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .lcp-hero__crumbs a:hover { color: var(--bbg-white); }
+    .lcp-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-3);
+      color: #9DDBF5;
+    }
+    .lcp-hero__title {
+      font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      max-width: 22ch;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      gap: 0.05em;
+    }
+    .lcp-hero__title-row { display: block; }
+    .lcp-hero__title-row--highlight {
+      position: relative;
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0 0.15em;
+      color: #9DDBF5;
+    }
+    .lcp-hero__title-row--highlight::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0.06em;
+      height: 0.18em;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transform-origin: left center;
+      animation: lcp-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+      z-index: -1;
+    }
+    @keyframes lcp-underline {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    .lcp-hero__lead {
+      font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 58ch;
+      margin: 0 0 var(--space-5);
+    }
+    .lcp-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
+
+    .lcp-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(var(--space-4), 4vw, var(--space-7));
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: 720px;
+    }
+    .lcp-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .lcp-hero__meta-num {
+      font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: "tnum";
+    }
+    .lcp-hero__meta-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.02em;
+    }
+
+    .lcp-hero__scroll {
+      position: absolute;
+      bottom: var(--space-5);
+      right: clamp(var(--space-5), 4vw, var(--space-7));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color 200ms ease;
+    }
+    .lcp-hero__scroll:hover { color: var(--bbg-white); }
+    .lcp-hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .lcp-hero__scroll-line::after {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+      animation: lcp-scroll-tick 1.8s ease-in-out infinite;
+    }
+    @keyframes lcp-scroll-tick {
+      0% { top: -50%; }
+      100% { top: 100%; }
+    }
+    @media (max-width: 720px) {
+      .lcp-hero__scroll { display: none; }
+      .lcp-hero__meta { gap: var(--space-4); }
+    }
+
+    /* ---------- QUICK BAR (anchor links) ---------- */
+    .lcp-bigfive-intro { padding-bottom: var(--space-6); }
+    .lcp-quickbar {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: var(--space-3);
+      margin-top: var(--space-6);
+    }
+    .lcp-quickbar__item {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-4);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--bbg-ink);
+      transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .lcp-quickbar__item:hover {
+      transform: translateY(-3px);
+      border-color: var(--brand, var(--bbg-blue));
+      box-shadow: 0 10px 24px -16px color-mix(in srgb, var(--brand, var(--bbg-blue)) 60%, transparent);
+      color: var(--bbg-ink);
+    }
+    .lcp-quickbar__logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: var(--brand, var(--bbg-blue));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding: 7px;
+      box-shadow: 0 4px 12px -6px color-mix(in srgb, var(--brand, var(--bbg-blue)) 70%, transparent);
+    }
+    .lcp-quickbar__logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+      filter: brightness(0) invert(1);
+    }
+    .lcp-quickbar__text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      min-width: 0;
+    }
+    .lcp-quickbar__name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: -0.005em;
+      line-height: 1.2;
+    }
+    .lcp-quickbar__cn {
+      font-size: 0.72rem;
+      color: var(--brand, var(--bbg-blue));
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+    }
+    .lcp-quickbar__role {
+      font-size: 0.72rem;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.01em;
+      line-height: 1.25;
+      margin-top: 0.1rem;
+    }
+    @media (max-width: 1024px) { .lcp-quickbar { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 640px) { .lcp-quickbar { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 420px) { .lcp-quickbar { grid-template-columns: 1fr; } }
+
+    /* ---------- PLATFORM SPOTLIGHT ---------- */
+    .lcp-spot { scroll-margin-top: 96px; }
+    .lcp-spot__grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: clamp(var(--space-5), 4vw, var(--space-8));
+      align-items: center;
+    }
+    .lcp-spot--reverse .lcp-spot__grid { grid-template-columns: 1.1fr 1fr; }
+    .lcp-spot--reverse .lcp-spot__media { order: 2; }
+    .lcp-spot--reverse .lcp-spot__body { order: 1; }
+
+    .lcp-spot__media {
+      position: relative;
+    }
+    .lcp-spot__media-frame {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background: var(--brand-soft, var(--bbg-blue-light));
+      box-shadow: 0 30px 60px -30px color-mix(in srgb, var(--brand, var(--bbg-blue)) 55%, transparent),
+                  0 10px 20px -12px rgba(0, 0, 0, 0.12);
+      isolation: isolate;
+    }
+    .lcp-spot__media-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .lcp-spot__nameplate {
+      position: absolute;
+      top: var(--space-4);
+      left: var(--space-4);
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.55rem 0.85rem 0.55rem 0.55rem;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 999px;
+      box-shadow: 0 8px 24px -12px rgba(8, 18, 28, 0.25),
+                  0 0 0 1px rgba(255, 255, 255, 0.7) inset;
+      pointer-events: none;
+    }
+    .lcp-spot__nameplate-logo {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--brand, var(--bbg-blue));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      overflow: hidden;
+      padding: 5px;
+    }
+    .lcp-spot__nameplate-logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+      filter: brightness(0) invert(1);
+    }
+    .lcp-spot__nameplate-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.05rem;
+      line-height: 1;
+    }
+    .lcp-spot__nameplate-en {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+    }
+    .lcp-spot__nameplate-cn {
+      font-size: 0.7rem;
+      color: var(--brand, var(--bbg-blue));
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .lcp-spot__body { display: flex; flex-direction: column; gap: var(--space-4); }
+    .lcp-spot__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand, var(--bbg-blue));
+      align-self: flex-start;
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      background: var(--brand-soft, var(--bbg-blue-light));
+    }
+    .lcp-spot__eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand, var(--bbg-blue));
+    }
+    .lcp-spot__eyebrow-cn {
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      opacity: 0.85;
+    }
+    .lcp-spot__title {
+      font-size: clamp(1.625rem, 1.8vw + 1rem, 2.5rem);
+      line-height: 1.12;
+      letter-spacing: -0.018em;
+      margin: 0;
+      color: var(--bbg-ink);
+    }
+    .lcp-spot__copy {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .lcp-spot__copy p {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .lcp-spot__stat {
+      margin: var(--space-3) 0 0;
+      padding: var(--space-5) var(--space-5);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-left: 4px solid var(--brand, var(--bbg-blue));
+      border-radius: var(--radius-md);
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+    }
+    .lcp-spot__stat-icon {
+      width: 32px;
+      height: 32px;
+      color: var(--brand, var(--bbg-blue));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lcp-spot__stat-icon svg { width: 26px; height: 26px; }
+    .lcp-spot__stat-quote {
+      font-size: 1.0625rem;
+      line-height: 1.5;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      margin: 0 0 0.35rem;
+      font-style: normal;
+      letter-spacing: -0.005em;
+    }
+    .lcp-spot__stat-source {
+      font-size: 0.825rem;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.01em;
+    }
+    .lcp-spot__tag {
+      align-self: flex-start;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      border: 1px dashed var(--bbg-border);
+    }
+
+    @media (max-width: 900px) {
+      .lcp-spot__grid,
+      .lcp-spot--reverse .lcp-spot__grid {
+        grid-template-columns: 1fr;
+      }
+      .lcp-spot--reverse .lcp-spot__media { order: 0; }
+      .lcp-spot--reverse .lcp-spot__body { order: 1; }
+      .lcp-spot__media-frame { aspect-ratio: 16 / 11; }
+    }
+
+    /* ---------- REST OF LANDSCAPE ---------- */
+    .lcp-rest {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-5);
+    }
+    .lcp-rest__card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+    }
+    .lcp-rest__card:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 14px 30px -18px rgba(38, 154, 218, 0.4);
+    }
+    .lcp-rest__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+    }
+    .lcp-rest__logo {
+      width: 56px;
+      height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--brand, var(--bbg-blue));
+      padding: 12px;
+      box-shadow: 0 6px 14px -8px color-mix(in srgb, var(--brand, var(--bbg-blue)) 65%, transparent);
+    }
+    .lcp-rest__logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+    .lcp-rest__cn {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.02em;
+      opacity: 0.85;
+    }
+    .lcp-rest__name {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+    .lcp-rest__body {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+      flex-grow: 1;
+    }
+    .lcp-rest__note {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      padding-top: var(--space-3);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .lcp-rest__footnote {
+      margin: var(--space-6) auto 0;
+      max-width: 64ch;
+      text-align: center;
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 0.975rem;
+    }
+    @media (max-width: 1024px) { .lcp-rest { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .lcp-rest { grid-template-columns: 1fr; } }
+
+    /* ---------- SALES MECHANICS ---------- */
+    .lcp-mech {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+    }
+    .lcp-mech__card:nth-child(4),
+    .lcp-mech__card:nth-child(5) {
+      grid-column: span 1;
+    }
+    .lcp-mech__card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 20px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      overflow: hidden;
+      isolation: isolate;
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 280ms ease,
+                  box-shadow 280ms ease;
+    }
+    .lcp-mech__media {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background: var(--brand-soft, var(--bbg-blue-light));
+    }
+    .lcp-mech__media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(8, 18, 28, 0.04) 100%);
+      pointer-events: none;
+    }
+    .lcp-mech__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .lcp-mech__card:hover .lcp-mech__media img { transform: scale(1.04); }
+    .lcp-mech__body-wrap {
+      padding: var(--space-5) var(--space-6) var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      flex-grow: 1;
+    }
+    .lcp-mech__card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--brand, var(--bbg-blue)) 0%, var(--brand, var(--bbg-blue)) 50%, transparent 100%);
+      transform: scaleX(0.3);
+      transform-origin: left center;
+      transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .lcp-mech__card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(140% 90% at 100% 0%,
+        color-mix(in srgb, var(--brand, #269ADA) 12%, transparent) 0%,
+        transparent 55%);
+      opacity: 0;
+      transition: opacity 320ms ease;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .lcp-mech__card:hover {
+      transform: translateY(-6px);
+      border-color: color-mix(in srgb, var(--brand, #269ADA) 55%, var(--bbg-border));
+      box-shadow: 0 22px 50px -26px color-mix(in srgb, var(--brand, #269ADA) 50%, transparent),
+                  0 6px 14px -8px rgba(0, 0, 0, 0.08);
+    }
+    .lcp-mech__card:hover::before { transform: scaleX(1); }
+    .lcp-mech__card:hover::after { opacity: 1; }
+    .lcp-mech__card:hover .lcp-mech__icon {
+      transform: scale(1.06) rotate(-4deg);
+      background: var(--brand, var(--bbg-blue));
+      color: var(--bbg-white);
+    }
+
+    .lcp-mech__head {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    .lcp-mech__icon {
+      display: inline-flex;
+      width: 52px;
+      height: 52px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--brand-soft, var(--bbg-blue-light));
+      color: var(--brand, var(--bbg-blue));
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--brand, #269ADA) 18%, transparent);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+                  background 320ms ease, color 320ms ease;
+      flex-shrink: 0;
+    }
+    .lcp-mech__icon svg { width: 26px; height: 26px; }
+    .lcp-mech__name {
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+    .lcp-mech__cn {
+      font-size: 0.85rem;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.04em;
+    }
+    .lcp-mech__body {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .lcp-mech__points {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0;
+      border-top: 1px solid var(--bbg-border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-top: auto;
+    }
+    .lcp-mech__points li {
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      gap: 0.65rem;
+      align-items: center;
+      font-size: 0.875rem;
+      line-height: 1.45;
+      color: var(--bbg-text);
+    }
+    .lcp-mech__bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--brand, var(--bbg-blue));
+      box-shadow: 0 0 0 3px var(--brand-soft, var(--bbg-blue-light));
+      margin-left: 4px;
+    }
+    @media (max-width: 1024px) { .lcp-mech { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .lcp-mech { grid-template-columns: 1fr; } }
+
+    /* ---------- JOURNEY (vertical timeline) ---------- */
+    .lcp-journey {
+      position: relative;
+      max-width: 880px;
+      margin: 0 auto;
+      padding-left: 56px;
+    }
+    .lcp-journey__rail {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 22px;
+      width: 2px;
+    }
+    .lcp-journey__rail-track {
+      position: absolute; inset: 0;
+      background: var(--bbg-border);
+      border-radius: 2px;
+    }
+    .lcp-journey__rail-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--journey-progress, 0%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transition: height 120ms linear;
+      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+    }
+    .lcp-journey__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-7);
+    }
+    .lcp-journey__item { position: relative; }
+    .lcp-journey__dot {
+      position: absolute;
+      left: -56px;
+      top: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bbg-white);
+      border: 2px solid var(--bbg-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: border-color 320ms ease;
+    }
+    .lcp-journey__dot-inner {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: background 320ms ease, transform 320ms ease;
+    }
+    .lcp-journey__item.is-active .lcp-journey__dot { border-color: var(--bbg-blue); }
+    .lcp-journey__item.is-active .lcp-journey__dot-inner {
+      background: var(--bbg-blue);
+      transform: scale(1.1);
+      box-shadow: 0 0 0 4px var(--bbg-blue-light);
+    }
+    .lcp-journey__phase {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-2);
+      transition: color 320ms ease;
+    }
+    .lcp-journey__item.is-active .lcp-journey__phase { color: var(--bbg-blue); }
+    .lcp-journey__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .lcp-journey__item:hover .lcp-journey__card,
+    .lcp-journey__item.is-active .lcp-journey__card {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      transform: translateX(4px);
+    }
+    .lcp-journey__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .lcp-journey__icon svg { width: 24px; height: 24px; }
+    .lcp-journey__title {
+      font-size: 1.25rem;
+      line-height: 1.25;
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+    }
+    .lcp-journey__desc {
+      font-size: 0.975rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0 0 var(--space-3);
+    }
+    .lcp-journey__platforms {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      padding: 0.35rem 0.7rem;
+      background: var(--bbg-blue-light);
+      border-radius: 999px;
+    }
+    .lcp-journey__note {
+      margin: var(--space-7) auto 0;
+      max-width: 68ch;
+      text-align: center;
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+    @media (max-width: 720px) {
+      .lcp-journey { padding-left: 44px; }
+      .lcp-journey__rail { left: 16px; }
+      .lcp-journey__dot { left: -44px; width: 36px; height: 36px; }
+    }
+
+    /* ---------- WHERE BRANDS GET STUCK ---------- */
+    .lcp-stuck {
+      max-width: 880px;
+      margin: 0 auto var(--space-7);
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8));
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 12px 36px -28px rgba(8, 18, 28, 0.18);
+      text-align: left;
+    }
+    .lcp-stuck .eyebrow { margin-bottom: var(--space-3); }
+    .lcp-stuck__title {
+      font-size: clamp(1.5rem, 1.6vw + 1rem, 2.125rem);
+      line-height: 1.18;
+      letter-spacing: -0.015em;
+      margin: 0 0 var(--space-5);
+      color: var(--bbg-ink);
+    }
+    .lcp-stuck__body {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--bbg-text);
+      margin: 0 0 var(--space-4);
+    }
+    .lcp-stuck__body--bold {
+      padding: var(--space-4) var(--space-5);
+      background: var(--bbg-blue-light);
+      border-left: 3px solid var(--bbg-blue);
+      border-radius: var(--radius-md);
+      color: var(--bbg-ink);
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    /* ---------- THE RED SCROLL ---------- */
+    .lcp-trs {
+      position: relative;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: clamp(var(--space-6), 3vw + 1rem, var(--space-8));
+      border-radius: 24px;
+      background:
+        radial-gradient(110% 80% at 0% 0%, rgba(255, 39, 65, 0.10) 0%, rgba(255, 39, 65, 0) 55%),
+        linear-gradient(160deg, #1a0d10 0%, #2a0e14 60%, #3a0e1a 100%);
+      color: var(--bbg-white);
+      box-shadow: 0 28px 60px -32px rgba(216, 27, 51, 0.55),
+                  0 10px 24px -12px rgba(8, 18, 28, 0.3);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .lcp-trs::before {
+      content: "";
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      width: 460px;
+      height: 460px;
+      background: radial-gradient(circle at center, rgba(255, 39, 65, 0.32) 0%, rgba(255, 39, 65, 0) 65%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .lcp-trs__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.78);
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      margin-bottom: var(--space-4);
+    }
+    .lcp-trs__badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #FF2741;
+      box-shadow: 0 0 0 3px rgba(255, 39, 65, 0.3);
+    }
+    .lcp-trs__title {
+      font-size: clamp(1.75rem, 2vw + 1rem, 2.75rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin: 0 0 var(--space-3);
+      color: var(--bbg-white);
+      font-weight: 700;
+    }
+    .lcp-trs__brand {
+      color: #FF6E84;
+      font-weight: 800;
+      background: linear-gradient(90deg, #FF2741 0%, #FF9AA9 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .lcp-trs__tagline {
+      font-size: clamp(1rem, 0.4vw + 1rem, 1.125rem);
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.86);
+      margin: 0 0 var(--space-3);
+      max-width: 60ch;
+      font-style: italic;
+    }
+    .lcp-trs__body {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.78);
+      margin: 0 0 var(--space-6);
+      max-width: 68ch;
+    }
+    .lcp-trs__pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+      margin-bottom: var(--space-6);
+    }
+    .lcp-trs__pillar {
+      position: relative;
+      padding: var(--space-5);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      transition: border-color 280ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1), background 280ms ease;
+    }
+    .lcp-trs__pillar:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 110, 132, 0.55);
+      background: rgba(255, 255, 255, 0.07);
+    }
+    .lcp-trs__pillar--accent {
+      background: rgba(255, 39, 65, 0.10);
+      border-color: rgba(255, 39, 65, 0.35);
+    }
+    .lcp-trs__pillar-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #FF9AA9;
+      margin-bottom: var(--space-3);
+    }
+    .lcp-trs__pillar h4 {
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+    }
+    .lcp-trs__pillar p {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.72);
+      margin: 0;
+    }
+    .lcp-trs__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
+    .lcp-trs__cta .btn--primary {
+      background: linear-gradient(90deg, #FF2741 0%, #E6162D 100%);
+      border-color: transparent;
+      color: var(--bbg-white);
+      box-shadow: 0 12px 24px -12px rgba(255, 39, 65, 0.55);
+    }
+    .lcp-trs__cta .btn--primary:hover {
+      background: linear-gradient(90deg, #FF3D55 0%, #FF2741 100%);
+      transform: translateY(-2px);
+    }
+    .lcp-trs__cta .btn--secondary {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: var(--bbg-white);
+    }
+    .lcp-trs__cta .btn--secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+    .lcp-trs__cta-arrow { display: inline-block; margin-left: 0.35rem; }
+    @media (max-width: 900px) {
+      .lcp-trs__pillars { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- FINAL CTA ---------- */
+    .lcp-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .lcp-cta::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .lcp-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .lcp-cta__title {
+      font-size: clamp(1.5rem, 1.4vw + 1rem, 2.25rem);
+      line-height: 1.18;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .lcp-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 56ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .lcp-cta__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .lcp-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .lcp-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .lcp-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .lcp-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
+
+  <script>
+    // Scroll progress bar
+    const progressBar = document.querySelector('.lcp-progress__bar') as HTMLElement | null;
+    const onScroll = () => {
+      if (!progressBar) return;
+      const h = document.documentElement;
+      const scrolled = h.scrollTop;
+      const max = h.scrollHeight - h.clientHeight;
+      const pct = max > 0 ? (scrolled / max) * 100 : 0;
+      progressBar.style.setProperty('--progress', `${pct}%`);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Reveal on intersect
+    const reveals = document.querySelectorAll<HTMLElement>('.lcp-reveal');
+    const revealObs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in');
+            revealObs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+    reveals.forEach((el) => revealObs.observe(el));
+
+    // Hero parallax
+    const parallax = document.querySelector<HTMLElement>('[data-parallax]');
+    if (parallax) {
+      const onParallax = () => {
+        const y = window.scrollY * 0.18;
+        parallax.style.setProperty('--parallax-y', `${y}px`);
+      };
+      window.addEventListener('scroll', onParallax, { passive: true });
+      onParallax();
+    }
+
+    // Journey: dot activation + rail fill
+    const journey = document.querySelector<HTMLElement>('[data-journey]');
+    const journeyFill = document.querySelector<HTMLElement>('[data-journey-fill]');
+    const journeyItems = document.querySelectorAll<HTMLElement>('[data-journey-item]');
+    if (journey && journeyFill && journeyItems.length) {
+      const updateJourney = () => {
+        const rect = journey.getBoundingClientRect();
+        const vh = window.innerHeight;
+        const start = rect.top + window.scrollY - vh * 0.6;
+        const end = rect.bottom + window.scrollY - vh * 0.5;
+        const total = end - start;
+        const current = Math.max(0, Math.min(1, (window.scrollY - start) / total));
+        journeyFill.style.setProperty('--journey-progress', `${current * 100}%`);
+
+        journeyItems.forEach((item, idx) => {
+          const trigger = start + (total * idx) / journeyItems.length;
+          if (window.scrollY > trigger) {
+            item.classList.add('is-active');
+          } else {
+            item.classList.remove('is-active');
+          }
+        });
+      };
+      window.addEventListener('scroll', updateJourney, { passive: true });
+      updateJourney();
+    }
+  </script>
+</Layout>

@@ -316,8 +316,8 @@ const icons: Record<string, string> = {
             <span class="cbs-hero__meta-label">brand launches</span>
           </div>
           <div class="cbs-hero__meta-item">
-            <span class="cbs-hero__meta-num" data-counter="3" data-suffix=" cities">0</span>
-            <span class="cbs-hero__meta-label">Shanghai, HK, Paris</span>
+            <span class="cbs-hero__meta-num">Multiple</span>
+            <span class="cbs-hero__meta-label">Shanghai, Shenzhen, Hangzhou, Chengdu, Beijing…</span>
           </div>
         </div>
       </div>
@@ -834,13 +834,19 @@ const icons: Record<string, string> = {
     /* ---------- HERO ---------- */
     .cbs-hero {
       position: relative;
-      min-height: clamp(420px, 56vh, 580px);
+      min-height: clamp(360px, 48vh, 500px);
       display: flex;
-      align-items: center;
-      padding: clamp(64px, 8vh, 96px) 0 clamp(48px, 7vh, 80px);
+      align-items: flex-start;
+      padding: clamp(8px, 1.25vh, 16px) 0 clamp(48px, 7vh, 80px);
       color: var(--bbg-white);
       overflow: hidden;
       isolation: isolate;
+    }
+    /* Tighten the bleed: hero starts right under the sticky nav, content sits closer to the top.
+       Matches the spacing used on /learn-china/learning-expeditions. */
+    body:has(.cbs-hero) .cbs-hero { padding-top: clamp(112px, 10vh, 144px); }
+    @media (max-width: 1024px) {
+      body:has(.cbs-hero) .cbs-hero { padding-top: clamp(96px, 9vh, 116px); }
     }
     .cbs-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
     .cbs-hero__bg img {
