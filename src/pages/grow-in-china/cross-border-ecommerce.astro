@@ -3,117 +3,76 @@ import Layout from '../../layouts/Layout.astro';
 
 const promises = [
   {
-    title: 'Senior operators run the account',
-    desc: 'Strategy and execution by the same people. No junior handoff once the contract is signed.',
+    title: 'Senior operators on your account, every day',
+    desc: 'Cyril or Liyan in your kickoff, your monthly review and your war room. Not just at pitch.',
   },
   {
-    title: 'Phased commitment',
-    desc: 'Start with one platform. Add the next when the first one works. No 12-month all-in deals.',
+    title: 'One team across store, media, content and livestream',
+    desc: 'Not four agencies, four briefs and four invoices. One owner of the P&L.',
   },
   {
-    title: 'Independent creator sourcing',
-    desc: 'We do not take kickbacks from creators or agencies. Your interests on our side of the table.',
-  },
-];
-
-const services = [
-  {
-    icon: 'store',
-    title: 'Platform operations',
-    body: 'We run your stores and accounts on Douyin, RedNote (Xiaohongshu), WeChat and Weibo, plus WeChat Channels and Douyin Mall. Daily posting, content, customer service, ad management.',
-    href: '#decision-point',
-  },
-  {
-    icon: 'creator',
-    title: 'Creator and KOL programs',
-    body: 'A vetted roster across beauty, food and beverage, home, fashion, mother and baby, tech and lifestyle. We negotiate, brief, produce, and measure. And we will tell you when a creator is overpriced.',
-    href: '#kol',
-  },
-  {
-    icon: 'video',
-    title: 'Livestream commerce',
-    body: 'Store-led livestreams on Douyin and Taobao Live, three to seven sessions a week. We staff the room, write the script, design the set, run the ads.',
-    href: '#livestream',
-  },
-  {
-    icon: 'film',
-    title: 'Content production',
-    body: 'Short videos, RedNote notes, livestream sets, product visuals. Shot in our Shanghai studio or on location, in Mandarin, with talent that fits the brand.',
-    href: '/grow-in-china/production-studio',
-  },
-  {
-    icon: 'chart',
-    title: 'Performance and ad operations',
-    body: 'Douyin Qianchuan, RedNote effect ads, WeChat Moments, Weibo. We allocate, test, cut what is not working and put more behind what is. Weekly reports stay simple.',
-    href: '#how-we-work',
-  },
-  {
-    icon: 'clipboard',
-    title: 'Measurement and reporting',
-    body: 'Sales by SKU, by creator, by livestream, by ad. GMV, conversion, repeat rate. The numbers that actually tell you what to do tomorrow.',
-    href: '#measurement',
+    title: 'Transparent fees, no platform kickbacks',
+    desc: 'We are paid by you. Not by Alimama. Not by JD. Not by KOL agencies. Your margin stays your margin.',
   },
 ];
 
 const models = [
   {
-    name: 'DP model',
+    name: 'TP model',
     tag: 'You own the inventory, we run the store',
-    desc: 'You keep the stock on your books and the customer relationship in your name. We act as your DP (Designated Partner) on Douyin EC and RedNote. Content, livestream, paid media, customer service, KOL and KOC programs: all run by us, all under your brand.',
-    when: 'You want the China P&L on your own books, you want to build long-term brand equity on Douyin and RedNote, and you have the working capital to fund inventory plus media spend.',
+    desc: 'You keep the stock on your books and the customer relationship in your name. We act as your Tmall Partner, JD Partner or Douyin EC partner. Operations, content, media, livestream, customer service: all run by us, all under your brand.',
+    when: 'You want the China P&L on your own books, you want to build long-term brand equity in China, and you have the working capital to fund inventory in the bonded warehouse.',
     owns: [
-      { label: 'Inventory', value: 'Yours, in a bonded or domestic warehouse' },
+      { label: 'Inventory', value: 'Yours, in a bonded warehouse' },
       { label: 'Store license', value: 'Yours' },
       { label: 'Customer data', value: 'Yours' },
-      { label: 'Content, accounts, KOL contracts', value: 'Yours' },
-      { label: 'Media and promotion spend', value: '100% funded by you' },
+      { label: 'Content, media, contracts', value: 'Yours' },
+      { label: 'Media spend', value: '100% funded by you' },
       { label: 'Revenue', value: 'Direct-to-consumer GMV, on your books' },
     ],
     yourSide: [
       'Full retail margin on every sale',
       'Direct visibility into customer data and CRM',
-      'Brand control across the storefront, the feed and every livestream',
+      'Brand control across the entire storefront',
       'Monthly P&L review with the senior leads',
     ],
     ourSide: [
-      'Daily store operations, listing updates, short-video calendar',
-      'Livestream production, three to seven sessions a week, set, host and script included',
-      'Paid media across Douyin Qianchuan and RedNote effect ads',
-      'KOL and KOC seeding, negotiation, briefing and reporting',
+      'Daily store operations, merchandising, listing updates',
+      'Paid media across Alimama, JD media and Douyin Qianchuan',
+      'Livestream, KOL and KOC campaigns within the eCommerce platforms',
       'Mandarin customer service and review moderation',
-      'Platform compliance, content vetting, penalty negotiation',
+      'Platform compliance, takedowns and penalty negotiation',
     ],
-    image: '/Images/grow-in-china/social-commerce/route-dp-unboxing.png',
-    imageAlt: 'A young Chinese woman opening a Douyin parcel on the floor of her apartment, the livestream she bought from still playing on her phone',
-    highlight: true,
+    image: '/Images/grow-in-china/decision-tp-unboxing.png',
+    imageAlt: 'A Chinese student in a tier-2 city apartment unboxing a cross-border parcel with imported products on the floor',
   },
   {
     name: 'Distributor model',
     tag: 'We own the inventory, we run the store',
-    desc: 'We buy your product at wholesale and own the stock in China. The Douyin and RedNote stores are run under our license, the inventory sits on our balance sheet, and we carry the commercial risk. You sell to us, we sell to the consumer.',
-    when: 'You are already known in China, want the Douyin and RedNote revenue without the operational complexity, and would rather not tie up cash in inventory. New-to-market brands rarely fit this model.',
+    desc: 'We buy your product at wholesale and own the stock in China. The store is operated under our license, the inventory sits on our balance sheet, and we carry the commercial risk. You sell to us, we sell to the consumer.',
+    when: 'You already have brand awareness in China, you want China revenue without China complexity, you do not want to fund inventory or carry stock risk, and you want a single accountable partner buying your product and selling it through. New-to-market brands rarely fit this model.',
     owns: [
       { label: 'Inventory', value: 'Ours' },
       { label: 'Store license', value: 'Ours' },
       { label: 'Customer data', value: 'Ours' },
-      { label: 'Content, accounts, KOL contracts', value: 'Ours' },
-      { label: 'Media and promotion spend', value: 'Brand budget + BBG co-invest' },
+      { label: 'Content, media, contracts', value: 'Ours' },
+      { label: 'Media spend', value: 'Brand budget + BBG co-invest' },
       { label: 'Revenue', value: 'Wholesale invoice, recognised as B2B' },
     ],
     yourSide: [
       'Wholesale revenue with no inventory risk',
-      'A single B2B invoice instead of a direct-to-consumer P&L',
+      'A single B2B invoice instead of a complex direct-to-consumer P&L',
       'No working capital tied up in China stock',
       'Aggregated performance reporting and category insight',
     ],
     ourSide: [
       'Inventory purchase, financing and warehousing',
-      'Everything in the DP model, plus the commercial risk',
-      'Pricing strategy on Douyin and RedNote within agreed brand guardrails',
+      'Everything in the TP model, plus the commercial risk',
+      'Pricing strategy across platforms within agreed brand guardrails',
       'Returns, refunds, customer service liability',
     ],
-    image: '/Images/grow-in-china/social-commerce/route-distributor-livingroom.png',
-    imageAlt: 'A Chinese mother watching a Douyin livestream on her tablet while her daughter plays nearby on the rug',
+    image: '/Images/grow-in-china/decision-distributor-mother.png',
+    imageAlt: 'A young Chinese mother on a sofa watching a livestream commerce broadcast on her tablet while her daughter plays nearby',
     highlight: false,
   },
 ];
@@ -126,201 +85,173 @@ const compareRows = [
   { label: 'Margin upside', tp: 'Full retail margin', dist: 'Capped at wholesale' },
   { label: 'Risk you carry', tp: 'Stock and demand', dist: 'None on inventory' },
   { label: 'Media and promotion costs', tp: '100% on you', dist: 'Brand budget + BBG co-invest' },
-  { label: 'Brand equity on Douyin and RedNote', tp: 'Yours, fully', dist: 'Yours, built through us' },
-  { label: 'Best for', tp: 'Brands building long-term China social commerce', dist: 'Brands already known in China' },
+  { label: 'Brand equity in China', tp: 'Yours, fully', dist: 'Yours, built through us' },
+  { label: 'Best for', tp: 'Brands building long-term China P&L', dist: 'Brands already known in China' },
 ];
 
-const rhythms = [
+const costCards = [
   {
-    name: 'Daily',
-    tag: 'Content and community',
-    tabId: 'daily',
-    pill: 'Daily',
-    title: 'Content and community',
-    desc: 'Your feed stays alive. The algorithm rewards consistency, and silence costs reach faster than most brands expect.',
-    outcome: 'Your feed stays alive, week after week, with a content rhythm the algorithm actually rewards.',
-    image: '/Images/grow-in-china/social-commerce/cadence-daily-content.png',
-    imageAlt: 'Two Chinese content editors at adjacent desks reviewing short-video edits for a Douyin feed',
-    does: [
-      'Daily short-video posting on Douyin and RedNote',
-      'Comment moderation and DM response in Mandarin',
-      'Trend monitoring and rapid-response content',
-      'UGC and KOC content sourcing',
+    icon: 'wallet',
+    title: 'What you pay us',
+    sections: [
+      {
+        heading: 'TP model',
+        body: 'Monthly retainer starting from $7,500 plus a 10% revenue share on GMV, with movement up or down depending on category and platforms covered. Media and content production billed at pass-through.',
+      },
+      {
+        heading: 'Distributor model',
+        body: 'No retainer, no revenue share. Our margin sits in the retail price. Wholesale terms depend on volume commitment, exclusivity and the campaign calendar.',
+      },
     ],
-    deliverables: [
-      'Weekly content calendar',
-      'Daily community report',
-    ],
+    footer: 'We rarely take on new-to-market brands in the distributor model. The brand-building lift from zero is too costly unless the brand commits a serious launch fund. For most new entrants, TP is the right answer.',
   },
   {
-    name: 'Weekly',
-    tag: 'Livestream',
-    tabId: 'livestream',
-    pill: 'Weekly',
-    title: 'Livestream',
-    desc: 'Store-led livestream is the weekly rhythm that builds a real revenue line. Not a celebrity event once a quarter. A working room, three to seven nights a week.',
-    outcome: 'A predictable revenue line, week after week, not just on festival days.',
-    image: '/Images/grow-in-china/social-commerce/cadence-weekly-livestream.png',
-    imageAlt: 'A livestream control desk during a Douyin session, screens showing sales numbers and viewer counts in real time',
-    does: [
-      'Three to seven Douyin livestream sessions per week',
-      'Script writing, host briefing, set design',
-      'Real-time Qianchuan optimization behind the stream',
-      'Post-livestream sell-through and SKU performance report',
+    icon: 'platform-fee',
+    title: 'What you pay the platforms',
+    sections: [
+      {
+        heading: '',
+        body: 'Platform fees on Tmall Global and JD Worldwide are quoted off the official Chinese-language fee schedule, not estimated. Three buckets to plan for:',
+      },
     ],
-    deliverables: [
-      'Weekly livestream sell-through report',
-      'Monthly host performance review',
+    bullets: [
+      'Annual platform fee. Flagship stores on Tmall Global run a fixed annual fee plus a refundable deposit. JD Worldwide is similar with different brackets.',
+      'Transaction commission. Roughly 2% to 5% on each sale, depending on category. Beauty and supplements sit at the high end. Hard goods at the low end.',
+      'Payment gateway. Alipay and WeChat Pay each take a small percentage on every transaction.',
     ],
+    footer: 'These are the same numbers every brand pays. We do not mark them up.',
   },
   {
-    name: 'Monthly',
-    tag: 'KOL and KOC',
-    tabId: 'kol',
-    pill: 'Monthly',
-    title: 'KOL and KOC campaigns',
-    desc: 'The creator layer. We brief, negotiate and measure across a vetted roster, and we tell you when a quote is inflated. Most of them are at the moment.',
-    outcome: 'Awareness, trust and conversion at scale, without overpaying for it.',
-    image: '/Images/grow-in-china/social-commerce/cadence-monthly-kol.png',
-    imageAlt: 'A Chinese KOL filming a RedNote skincare review by a window in natural afternoon light',
-    does: [
-      'Creator shortlist sourced from our vetted roster',
-      'Brief, content review, negotiation and payment',
-      'Seeding programs with 20 to 40 KOCs a month',
-      'A couple of KOL collaborations a month, sometimes up to five',
+    icon: 'megaphone',
+    title: 'What you put behind the brand',
+    sections: [
+      {
+        heading: '',
+        body: 'The variable line, and usually the biggest one in year one. Who funds it depends on the model.',
+      },
+      {
+        heading: 'TP model',
+        body: 'You fund 100% of media, content and promotion. We execute against your approved budget. Every yuan flows through your platform account, fully visible to you.',
+      },
+      {
+        heading: 'Distributor model',
+        body: 'The brand provides a marketing budget for the year, and we deploy it against a co-agreed plan. BBG often co-invests from retail margin on top, particularly on always-on platform media and promotional mechanics for 618 and 11.11.',
+      },
     ],
-    deliverables: [
-      'Monthly creator performance report',
-      'Cost-per-acquisition by creator',
-    ],
+    footer: 'Typical ranges, regardless of who pays: paid media from $120,000 across the first twelve months. Content production billed at cost plus a small handling fee. KOL and KOC booked through us, invoiced by the talent agency. We do not take referral commissions on KOL spend, ever.',
+  },
+];
+
+const steps = [
+  {
+    icon: 'compass',
+    phase: 'Phase one',
+    duration: '2 to 3 weeks',
+    title: 'Audit and growth diagnosis',
+    desc: 'We pull the store apart and rebuild the picture across traffic, conversion, retention, content and media efficiency. You walk away with three ranked growth levers, the numbers behind them, and a 90-day priority plan.',
   },
   {
-    name: 'Quarterly',
-    tag: 'Festival push',
-    tabId: 'measurement',
-    pill: 'Quarterly',
-    title: 'Festival push and measurement',
-    desc: 'The big moments (11.11, 6.18, Women’s Day, CNY) carry their weight. Festival prep starts six months out, not the week before. Then the report tells you what to change for the next one.',
-    outcome: 'Festivals carry their share of the year. The post-mortem tells you what to change for the next one.',
-    image: '/Images/grow-in-china/social-commerce/cadence-quarterly-festival.png',
-    imageAlt: 'A Douyin store dashboard during the 11.11 festival with the sales counter climbing in red Chinese characters',
-    does: [
-      'Festival plan built six months out',
-      'Inventory, pricing and promotion mechanics',
-      'Pre-festival traffic build, festival day operations, post-festival CRM',
-      'Daily reporting during the festival window',
-    ],
-    deliverables: [
-      'Festival plan deck',
-      'Post-festival report with year-on-year comparison',
-    ],
+    icon: 'palette',
+    phase: 'Phase two',
+    duration: '4 to 6 weeks',
+    title: 'Store and content rebuild',
+    desc: 'New PDPs, new banners, new video, a working livestream room. The store starts looking like it sells in 2026, not 2021, and the content survives platform algorithm changes.',
+  },
+  {
+    icon: 'rocket',
+    phase: 'Phase three',
+    duration: '4 to 8 weeks',
+    title: 'Media and traffic activation',
+    desc: 'Paid search, paid display, paid livestream, KOL and KOC. We turn on the taps across Alimama, JD media and Douyin Qianchuan, with RED seeding feeding the upper funnel. Every yuan tied to conversion.',
+  },
+  {
+    icon: 'trend',
+    phase: 'Phase four',
+    duration: 'Always on, annual reset',
+    title: 'Operations and scale',
+    desc: 'Daily operations, weekly optimisation, monthly business review, quarterly campaign planning. We run the calendar (618, 99, 11.11, Double 12, Chinese New Year) and reset the priority list with a fresh audit every twelve months.',
   },
 ];
 
 const sisterPackages = [
   {
-    title: 'WeChat and Weibo',
-    desc: 'Daily content, community, and KOL seeding on the platforms where considered purchases still live. For brands where trust matters more than impulse buys.',
+    title: 'Always-on social',
+    desc: 'Daily WeChat, RED, Douyin and Weibo run alongside your flagship store. For brands whose store is live and needs constant content fuel.',
   },
   {
-    title: 'RedNote and Douyin content',
-    desc: 'Short videos, notes and creator partnerships, without a storefront behind them. For brands building awareness ahead of a future commerce launch.',
+    title: 'Launch sprint',
+    desc: 'A three-month intensive across all four channels around a Tmall Global or JD Worldwide launch. For the opening wave.',
   },
   {
-    title: 'Always-on social retainer',
-    desc: 'A single monthly fee that covers the four channels. Run by the same operators as your commerce, on a lighter scope.',
+    title: 'Festival drive',
+    desc: 'Campaign-specific social activation for 618, 11.11, Double 12 or Chinese New Year. For brands where the calendar moment matters more than the always-on cadence.',
   },
 ];
 
 const contextCards = [
   {
-    image: '/Images/grow-in-china/social-commerce/truth-content-engine.png',
-    alt: 'A Chinese content producer reviewing short-video drafts on a studio monitor, a notebook of handwritten Chinese notes beside her',
-    title: 'Content is the sales team',
-    body: 'Weak content on Douyin or RedNote means weak sales. If a shopper scrolls past your video in two seconds, the product never gets seen, no matter how good it is. We shoot, edit and ship the content ourselves, in Mandarin, every day.',
+    image: '/Images/grow-in-china/truth-comparing-products.png',
+    alt: 'A Chinese man in his late 30s comparing two imported product boxes while looking at a Chinese eCommerce app in a quiet cafe',
+    title: 'The team that wrote the plan stays on the store',
+    body: 'Most agencies hand strategy to one team and execution to another, then disappear into monthly reporting. We keep strategy, planning and operations under one roof, and the senior who wrote the plan sits in on the weekly ops meeting. The strategy does not drift, and the operations team is not guessing at intent.',
   },
   {
-    image: '/Images/grow-in-china/social-commerce/truth-daily-operation.png',
-    alt: 'A Douyin livestream room mid-session, host on camera in the back, two producers watching the live dashboard in the foreground',
-    title: 'A daily operation, not a campaign',
-    body: 'Douyin stores need daily posts, weekly livestreams and ads behind both. The algorithm punishes silence. We run that rhythm year-round, festival or not.',
+    image: '/Images/enter-china/team.png',
+    alt: 'The Beyond Border Group eCommerce operations team working in an open office',
+    title: 'Operators first, strategists second',
+    body: 'Our senior team ran stores at Publicis Commerce China for global beauty, FMCG and lifestyle brands. They have lost a Double 11 and won the next one. When they tell you what will work in March, it is because they were inside the platform in February.',
   },
 ];
 
 const faqs = [
-  { cat: 'Strategy', q: 'What is the real difference between e-commerce and social commerce in China?', a: 'E-commerce is search behavior. A shopper already knows what she wants and goes to Tmall or JD to find it. Social commerce is discovery behavior. She did not know she wanted it until the feed showed her. Different mindset, different content, different metrics. Most brands need both, but they need to know which one drives the business.' },
-  { cat: 'Platforms', q: 'Which platforms should we be on first?', a: 'Depends on the category. Beauty and lifestyle: RedNote first, Douyin second. FMCG and food: Douyin first. B2B and considered purchases: WeChat. Premium and luxury: RedNote and WeChat. Trying to be on all four platforms in month one is the most common mistake we see. You spread thin and you win nowhere.' },
-  { cat: 'Cost', q: 'How much does it cost to launch on Douyin or RedNote?', a: 'Setup runs roughly 80,000 to 150,000 RMB depending on store complexity and content needs. (We have done one launch for less, but it cut corners we now regret.) Monthly operations run 50,000 to 250,000 RMB depending on content volume, ad management, and livestream frequency. Media spend sits on top of that. Plan for at least 100,000 RMB a month in media for the first six months while you learn what actually works for your category. Add the platform deposits: 30,000 RMB for Douyin and 20,000 RMB for RedNote, both refundable.' },
-  { cat: 'Cost', q: 'What does Tmall Global cost on top of that?', a: 'A 30,000 USD deposit, a 5,000 to 10,000 USD annual service fee depending on category, and a commission of 2% to 5% per transaction, plus a 1% Alipay fee. Cross-border, so no Chinese entity required.' },
-  { cat: 'Strategy', q: 'How long before we see sales?', a: 'On Douyin, first sales come within weeks if you run paid traffic. Profitability takes three to six months. On RedNote, brand build comes first. Sales follow at six to nine months. Anyone promising faster is overselling.' },
-  { cat: 'Operations', q: 'When should we start preparing for 11.11 or 6.18?', a: 'Six months out. The Chinese shopping festival calendar is the single most underestimated planning constraint we see with foreign brands. 11.11 prep starts in May. 6.18 prep starts in December. Brands that walk in three months out get the leftover ad inventory and the leftover KOL slots, both at premium prices.' },
-  { cat: 'Strategy', q: 'Do we need a China-based legal entity?', a: 'Not always. Cross-border models (Douyin Cross-Border, Tmall Global, JD Worldwide) do not require one. Onshore Douyin, Tmall, JD does, or a TP partner who provides one. We can run either. And if you already have a WFOE that was set up for offline trade and now needs to do digital commerce, we will tell you whether to amend the business scope, set up a second entity, or stay cross-border. The wrong setup costs more than the right one ever did.' },
-  { cat: 'Operations', q: 'Can we just use our global content?', a: 'Almost never. Lighting, pacing, voiceover style, on-screen text, color grading, even the way hands are framed on camera. All different. Chinese shoppers spot translated foreign content in two seconds and scroll past. We re-shoot or re-edit for the local platforms.' },
-  { cat: 'Creators', q: 'What is a KOL versus a KOC?', a: 'KOL: Key Opinion Leader. Big follower count, higher fee, awareness driver. KOC: Key Opinion Consumer. Smaller audience, more authentic, conversion driver. Most campaigns need both. KOCs do the volume. KOLs do the credibility.' },
-  { cat: 'Cost', q: 'How much do KOLs actually charge?', a: 'A mid-tier RedNote creator with 100,000 followers runs 15,000 to 40,000 RMB per note. A top-tier Douyin host runs 200,000 to 2 million RMB per livestream slot, plus a commission of 20% to 30% of GMV. Pure-commission deals exist with smaller hosts but margin gets thin fast. We benchmark every quote against the live market, because the rates move month to month.' },
-  { cat: 'Creators', q: 'Is a celebrity livestream worth it?', a: 'Almost never. The big-name livestreams produce a spike followed by silence, and an inflated cost-per-acquisition that looks great in slide three of the campaign report. Store-led livestreams running three to seven sessions a week build a predictable revenue line. We recommend the second, nearly every time.' },
-  { cat: 'Operations', q: 'How do we handle returns and customer service?', a: 'Chinese platforms require fast response, under one minute on Douyin during peak hours, and a high return tolerance. The 7-day no-reason return is standard. We run customer service in Mandarin, on platform, with response-time SLAs. Returns go through our warehouse or yours.' },
-  { cat: 'Operations', q: 'What about content censorship?', a: 'Specific words, claims, and images get flagged or blocked. Health claims. Direct comparisons with competitors. Certain political and cultural references. We vet every piece of content before it goes live. Mistakes cost the account, and sometimes the account does not come back.' },
-  { cat: 'Cost', q: 'How are payments handled?', a: 'WeChat Pay and Alipay dominate. Platforms collect on your behalf and settle on a schedule, usually weekly or every 15 days. Cross-border models settle in USD or EUR to your overseas account. Onshore models settle in RMB to your Chinese entity.' },
-  { cat: 'Strategy', q: 'Can we run a campaign without setting up a Douyin or RedNote store?', a: 'Yes, for awareness. KOL seeding, brand notes, livestreams hosted by creators selling from their own stores. You will not own the customer or the data, but it is a valid way to test demand before opening your own store.' },
-  { cat: 'Platforms', q: 'What does a typical content calendar look like?', a: 'On RedNote: 8 to 15 notes a month from the brand account, 20 to 40 KOC notes, 2 to 5 KOL notes. On Douyin: 15 to 30 short videos a month, 8 to 20 livestream sessions. Volume is not optional. The algorithms punish silence.' },
-  { cat: 'Strategy', q: 'How do we measure ROI?', a: 'Three numbers we track every week: cost per acquisition, GMV per livestream hour, content engagement rate. Three numbers every month: repeat purchase rate, total media ROAS, brand search lift. Everything else is supporting detail.' },
-  { cat: 'Cost', q: 'What goes wrong most often?', a: 'Three things, mostly in this order. Brands underinvest in content production. Brands hire one cheap creator and expect a whole campaign to deliver. And brands stop spending after month two because the results are not there yet, which kills the momentum right before it would have started to compound. We have watched this play out maybe a dozen times in the last two years.' },
-  { cat: 'Platforms', q: 'Do we need to be on WeChat if we are already on Douyin and RedNote?', a: 'For B2C, you can probably skip WeChat in year one if the budget is tight, with one caveat: WeChat Channels has turned into a real social commerce surface over the last 18 months, and the gap with Douyin closes every quarter. For B2B, premium, and any brand selling a considered purchase, WeChat is not optional. That is where high-value customers stay long enough to buy a second and a third time.' },
-  { cat: 'Platforms', q: 'How do we get started with you?', a: 'A 30-minute call with our senior team, no junior intermediary. You tell us the category, the budget range, and the timeline. We tell you what is realistic, what platforms to start with, and what the first 90 days look like. No proposal until both sides agree the project makes sense.' },
+  { cat: 'Operations', q: 'What does running a Tmall Global store actually involve day to day?', a: 'More than people expect. Daily store updates, banner swaps, promotion setup, inventory sync with the bonded warehouse, Mandarin customer service, order checks, returns, review moderation, livestream prep. A flagship store left untouched for a week loses ranking. Leave it untouched for a month and it loses category position. The work is steady, not glamorous, and it is what separates the stores that grow from the ones that just exist.' },
+  { cat: 'Operations', q: 'How fast can you take over an existing store?', a: 'Two to four weeks for an audit and clean handover. Longer if the previous partner is uncooperative (it happens). We pull everything first: backend access, media accounts, customer data, content library, supplier contracts. Then we map what is missing. We run two weeks in parallel before cutting over, so you do not lose a campaign window in the transition.' },
+  { cat: 'Operations', q: 'Do you handle customer service in Mandarin?', a: 'Yes. Native Mandarin team working platform hours (9 a.m. to 11 p.m. local time, longer during 11.11). Tmall Global, JD Worldwide and Douyin EC Global all measure response time and bake it into your store score. We hold response time under 30 seconds and we keep ratings above platform average.' },
+  { cat: 'Operations', q: 'How do you handle logistics and bonded warehouse?', a: 'We coordinate with your existing bonded warehouse provider, or we introduce one if you do not have one. Most Tmall Global brands run through Cainiao bonded warehouses. For JD Worldwide, JD’s own bonded network is usually the faster route. We track stock, file customs, handle returns and chase delays. Logistics is not glamorous. It is just the difference between a 4.9 store rating and a 4.5.' },
+  { cat: 'Operations', q: 'What happens when an SKU sells out mid-campaign?', a: 'We flag it before it happens. Stock reorder triggers are set in the dashboard. If you cannot replenish in time, we shift the campaign weight to a sister SKU, redirect paid media, and protect the store rating with a clear holding page. The worst outcome is a silent stockout, and we make sure that does not happen.' },
+  { cat: 'Operations', q: 'How do you handle returns and fake reviews?', a: 'Returns are managed by the bonded warehouse partner under our coordination. Return rates typically run 8% to 15% in beauty, 15% to 25% in fashion, under 5% in F&B and supplements. Fake reviews and review-bombing attacks happen, especially after a viral moment. We monitor daily, file removal requests with the platform, and seed genuine customer reviews through our KOC network.' },
+  { cat: 'Platforms', q: 'Which platform should I run first?', a: 'Depends on category, brand maturity and content readiness. Tmall Global is the default for beauty, supplements, F&B and lifestyle, where brand trust matters most. JD Worldwide wins on electronics, home, male-skewing categories and consumables that benefit from JD logistics. Douyin EC Global is the right call when content is your strength and you can produce livestream every day. We pick the right one in Phase one, not by default.' },
+  { cat: 'Platforms', q: 'Can we run Tmall Global and JD Worldwide at the same time?', a: 'Yes, and most brands at scale do. Tmall Global usually carries the brand flagship. JD Worldwide picks up logistics-sensitive categories and male shoppers. Be ready for double the operations workload, double the campaign cadence, and a clear pricing strategy across both. We run multi-platform accounts every day.' },
+  { cat: 'Platforms', q: 'What about Douyin EC Global?', a: 'Growing fast. Douyin closed the gap on Tmall Global across beauty, F&B and lifestyle in 2025 and 2026, because livestream is the format where conversion sits highest. The catch is content production: daily livestream, weekly creative refresh, constant short video. Brands without content discipline burn money on Douyin. Brands that have it, win.' },
+  { cat: 'Platforms', q: 'Where does RED (Xiaohongshu) fit?', a: 'Discovery, not transaction. RED is where Chinese consumers research before buying on Tmall Global, JD Worldwide or Douyin EC Global. We use it for KOC seeding, brand reputation and demand creation. In-app commerce on RED is still small for cross-border. The standard play is RED for influence and Tmall Global or JD Worldwide for conversion, though some categories now flip that order.' },
+  { cat: 'Performance', q: 'What growth should I expect in year one?', a: 'Depends on category, starting point and budget. New flagship stores on Tmall Global or JD Worldwide typically land their first full year between $400,000 and the low single-digit millions in GMV, depending on media spend and category. Relaunched stores with an existing baseline tend to grow 30% to 80% in the first twelve months under our operations. Anyone quoting a single number without seeing your category and budget is selling, not advising.' },
+  { cat: 'Performance', q: 'When do we see results?', a: 'First metrics shift in week six (conversion, traffic mix, content engagement). Revenue shifts usually land in month three or four. The first big campaign window after takeover (618, 99, 11.11) is where the real number prints. Cross-border in China rewards patience, not impatience.' },
+  { cat: 'Performance', q: 'How do you report?', a: 'Live dashboard you can open at any time (traffic, GMV, ROAS, conversion, repeat rate). A weekly written summary covering what moved and what is next. A monthly senior business review on video with Cyril or Liyan. A quarterly planning session. No PDFs that arrive a week late. We share the same dashboard we use internally.' },
+  { cat: 'Compliance', q: 'What if my product cannot be sold through cross-border?', a: 'We tell you before we sign. Some products do not qualify (restricted categories, certain medical claims, formulation issues). If yours is one, we say so in week one, and we either help you reposition or recommend a different route to market. We do not run stores for products that will get pulled six months in.' },
+  { cat: 'Compliance', q: 'What about platform takedowns or penalties?', a: 'We handle them. A penalty notice on Tmall Global or JD Worldwide has to be answered within 24 to 72 hours depending on severity. Our ops team handles the response, the rectification plan and the platform negotiation. Penalties happen, even at top brands. What matters is how fast you recover.' },
+  { cat: 'Contract', q: 'What is the minimum engagement length?', a: 'Twelve months for the TP model. Twenty-four months for the distributor model. Cross-border stores need time to ramp, especially through the first major campaign window, and an inventory commitment needs a longer runway to recover. Shorter engagements are possible for project-based work (618 sprint, 11.11 sprint, launch sprint) but not for always-on operations. Anyone promising always-on results inside three months is signing you up for a poor outcome.' },
+  { cat: 'Contract', q: 'Who owns the store license, customer data and content?', a: 'Depends entirely on the model. In the TP model, you own everything: store license, customer data, content library, media accounts and supplier contracts. We run operations under your brand and your assets. Nothing transfers at exit because nothing was ever ours. In the distributor model, we own everything: the store, the inventory, the customer data, the content and the media accounts. You sell to us, we sell to the consumer. Brand IP and trademarks stay yours, naturally, but the China commercial infrastructure sits on our side.' },
+  { cat: 'Team', q: 'Who runs my account day to day?', a: 'A dedicated senior account director, a store operations lead, a content producer and a media buyer. They are full-time on China cross-border, not splitting their hours across five clients. Cyril or Liyan join the monthly review and step in on commercial calls.' },
+  { cat: 'Team', q: 'Where is the team based?', a: 'Native team based in mainland China, working platform hours. Senior leadership splits time between China, Hong Kong and Paris. You get one inbox, one Slack channel, and a working day that overlaps with both China and Europe.' },
+  { cat: 'Team', q: 'Do you work with my global agency or in-house team?', a: 'Yes. We slot into existing brand frameworks and we share what we learn back to your global team. We do not try to wedge ourselves into work that is already covered elsewhere. The brief from week one is to run the China stores, not to redo the global plan.' },
 ];
 
-const faqCategories = ['All', 'Strategy', 'Cost', 'Platforms', 'Operations', 'Creators'];
+const faqCategories = ['All', 'Operations', 'Platforms', 'Performance', 'Compliance', 'Contract', 'Team'];
 
 const icons: Record<string, string> = {
-  store: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9"/><path d="M3 9h18"/><path d="M9 13h6"/></svg>`,
-  creator: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/><path d="M18 3l0.8 1.7 1.8 0.3-1.3 1.3 0.3 1.8L18 7.3 16.4 8.1l0.3-1.8L15.4 5l1.8-0.3z"/></svg>`,
-  video: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="12" rx="2"/><polygon points="17 9 22 6 22 18 17 15"/><circle cx="8" cy="11" r="1.2" fill="currentColor"/></svg>`,
-  film: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="17" y2="20"/><line x1="3" y1="9" x2="7" y2="9"/><line x1="3" y1="15" x2="7" y2="15"/><line x1="17" y1="9" x2="21" y2="9"/><line x1="17" y1="15" x2="21" y2="15"/></svg>`,
-  chart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><rect x="5" y="13" width="3" height="7"/><rect x="11" y="8" width="3" height="12"/><rect x="17" y="4" width="3" height="16"/></svg>`,
-  clipboard: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg>`,
-  scroll: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 7h7M8 11h7M8 15h4"/></svg>`,
-  outcome: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
-  doc: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>`,
-};
-
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
-};
-
-const serviceJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  serviceType: 'Social commerce management',
-  provider: {
-    '@type': 'Organization',
-    name: 'Beyond Border Group',
-    url: 'https://beyondbordergroup.com',
-  },
-  areaServed: { '@type': 'Country', name: 'China' },
+  compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16 8 13 13 8 16 11 11 16 8"/></svg>`,
+  palette: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1 0 2-1 2-2s-1-2-2-2h-1a2 2 0 0 1 0-4h3a5 5 0 0 0 5-5 5 5 0 0 0-5-5z"/><circle cx="7.5" cy="11" r="1"/><circle cx="9.5" cy="7.5" r="1"/><circle cx="14" cy="6.5" r="1"/><circle cx="17.5" cy="9.5" r="1"/></svg>`,
+  rocket: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4c4 0 6 2 6 6-4 0-6 2-6 6-4 0-6-2-6-6 4 0 6-2 6-6z"/><circle cx="14" cy="10" r="1.5"/><path d="M8 16l-3 3M11 19l-2 2M5 13l-2 2"/></svg>`,
+  trend: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg>`,
+  wallet: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M3 7V5a2 2 0 0 1 2-2h11l3 4"/><circle cx="16.5" cy="13.5" r="1.25" fill="currentColor"/></svg>`,
+  'platform-fee': `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/><path d="M14 15h3"/></svg>`,
+  megaphone: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a2 2 0 0 0 2 2h2l8 4V5L7 9H5a2 2 0 0 0-2 2z"/><path d="M19 8a4 4 0 0 1 0 8"/></svg>`,
+  spark: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg>`,
+  scroll: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5z"/><path d="M8 7h7M8 11h7M8 15h4"/></svg>`,
 };
 ---
 
 <Layout
-  title="Social Commerce in China for Foreign Brands"
-  description="Social commerce in China for foreign brands. Douyin, RedNote, WeChat and Weibo stores, KOL programs, weekly livestreams, run by senior operators."
+  title="Cross-Border eCommerce Agency in China | BBG"
+  description="We run Tmall Global, JD Worldwide and Douyin EC Global stores for foreign brands. Daily ops, content, paid media, livestream. One senior team."
 >
-  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} is:inline />
-  <script type="application/ld+json" set:html={JSON.stringify(serviceJsonLd)} is:inline />
-
   <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
   <article class="cbs">
 
     {/* ---------- HERO ---------- */}
     <section class="cbs-hero" data-hero>
       <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/grow-in-china/social-commerce/hero-douyin-livestream.png" alt="A young Chinese livestream host on a Douyin set, ring light glowing, holding a skincare bottle mid-pitch" />
+        <img src="/Images/grow-in-china/hero-livestream-shopper.png" alt="A young Chinese woman scrolling a livestream commerce broadcast on her phone at night during a Chinese shopping festival" />
       </div>
       <div class="cbs-hero__overlay" aria-hidden="true"></div>
       <div class="cbs-hero__grain" aria-hidden="true"></div>
@@ -331,16 +262,15 @@ const serviceJsonLd = {
           <span aria-hidden="true">/</span>
           <a href="/#services">Grow in China</a>
         </nav>
-        <span class="eyebrow eyebrow--on-dark cbs-reveal">Social commerce</span>
+        <span class="eyebrow eyebrow--on-dark cbs-reveal">Cross-Border eCommerce</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
-          <span class="cbs-hero__title-row">In China, people don’t go to the store.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--accent">The store comes to their feed.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">We run that operation.</span>
+          <span class="cbs-hero__title-row">Opening the store takes weeks.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent">Growing it takes years.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">We do the years.</span>
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          Social commerce in China isn’t a layer on top of e-commerce. It’s the primary
-          way most consumer brands sell here now. We run it for Shiseido, Pierre Fabre,
-          Camper, Bassetti, Mous, MacuSee and others. The whole operation, not the deck.
+          Most foreign brands have a Tmall Global or JD Worldwide store. Few have one
+          that grows. We run flagship stores every day, with one senior lead on call.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
           <a href="/contact" class="btn btn--primary cbs-magnetic">Talk to us</a>
@@ -350,15 +280,15 @@ const serviceJsonLd = {
         <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num" data-counter="15" data-suffix="+">0</span>
-            <span class="cbs-hero__meta-label">years running Douyin and RedNote for foreign brands</span>
+            <span class="cbs-hero__meta-label">years running Chinese eCommerce stores</span>
           </div>
           <div class="cbs-hero__meta-item">
-            <span class="cbs-hero__meta-num" data-counter="40" data-suffix="+">0</span>
-            <span class="cbs-hero__meta-label">active social commerce stores and accounts</span>
+            <span class="cbs-hero__meta-num" data-counter="50" data-suffix="+">0</span>
+            <span class="cbs-hero__meta-label">flagship stores operated end to end</span>
           </div>
           <div class="cbs-hero__meta-item">
-            <span class="cbs-hero__meta-num">One team</span>
-            <span class="cbs-hero__meta-label">Strategy, content, livestream and ads end to end</span>
+            <span class="cbs-hero__meta-num">Daily</span>
+            <span class="cbs-hero__meta-label">Store ops, content, media, livestream</span>
           </div>
         </div>
       </div>
@@ -374,10 +304,10 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Our approach</span>
-          <h2>Two things to know before we touch your social commerce</h2>
+          <h2>Two things to know before we touch your store</h2>
           <p class="section-header__lead">
-            Most brands approach Douyin and RedNote the way they approach any new market.
-            They do not reward that approach. Here is what shapes how we work.
+            A cross-border store in China is a daily product, not a quarterly project.
+            Here is how that shapes the way we work.
           </p>
         </header>
 
@@ -397,89 +327,20 @@ const serviceJsonLd = {
       </div>
     </section>
 
-    {/* ---------- WHY BRANDS CHOOSE US ---------- */}
-    <section class="section section--alt">
-      <div class="container">
-        <div class="cbs-value">
-          <div class="cbs-value__copy">
-            <span class="eyebrow">Why brands choose us</span>
-            <h2>Most social commerce agencies have never run a store. We have.</h2>
-            <p>
-              Our team comes from Publicis Commerce China. We have built and run Douyin
-              and RedNote stores for Shiseido, Pierre Fabre, Camper and others. We know
-              which creators convert because we have briefed them. We know what Qianchuan
-              rewards because we have spent against it every day.
-            </p>
-            <blockquote class="cbs-quote cbs-quote--inline">
-              <p>Most of the consultants who talk about Douyin and RedNote have never actually run a store on either one. We have, and that changes what we tell you.</p>
-            </blockquote>
-            <p>
-              We have lost a 11.11 and won the next one. When we tell you what will work
-              in March, it is because we were inside the platform in February.
-            </p>
-            <a href="/about#team" class="btn btn--secondary cbs-magnetic">Meet the team</a>
-          </div>
-
-          <ul class="cbs-promise">
-            <li>
-              <span class="eyebrow">What you can expect</span>
-            </li>
-            {promises.map((p) => (
-              <li class="cbs-promise__item">
-                <span class="cbs-promise__check" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                </span>
-                <div>
-                  <h4>{p.title}</h4>
-                  <p>{p.desc}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    {/* ---------- WHAT WE DO ---------- */}
-    <section class="section">
-      <div class="container">
-        <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">What we do</span>
-          <h2>Six things, run by one team</h2>
-          <p class="section-header__lead">
-            Not four agencies, four briefs and four invoices. One operator across content,
-            commerce, creators and media. The strategy that goes into the deck is the one
-            that runs on the platform on Monday.
-          </p>
-        </header>
-
-        <div class="cbs-services cbs-reveal">
-          {services.map((s, i) => (
-            <a href={s.href} class="cbs-service" style={`--reveal-delay: ${i * 60}ms;`}>
-              <span class="cbs-service__icon" aria-hidden="true" set:html={icons[s.icon]} />
-              <h3 class="cbs-service__title">{s.title}</h3>
-              <p class="cbs-service__body">{s.body}</p>
-              <span class="cbs-service__arrow">
-                Learn more
-                <span class="cbs-service__arrow-icon" aria-hidden="true">→</span>
-              </span>
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
-
     {/* ---------- DECISION POINT (Two models) ---------- */}
-    <section id="decision-point" class="section section--alt cbs-models-section">
+    <section class="section section--alt cbs-models-section">
+      <div class="cbs-models-section__bg" aria-hidden="true">
+        <img src="/Images/enter-china/four-ways-tiles.png" alt="" loading="lazy" decoding="async" />
+      </div>
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Decision point</span>
-          <h2>Who owns the inventory. Two ways we run your social store.</h2>
+          <h2>Who owns the inventory. Two ways we run your store.</h2>
           <p class="section-header__lead">
-            The first commercial question on any Douyin or RedNote store is who owns the
-            stock. That answer shapes the contract, the margin and how you book China
-            revenue. We work in two models. Pick the one that fits how you want China on
-            your books.
+            The first commercial question on any cross-border store is who owns the stock
+            in the bonded warehouse. That answer shapes the contract, the margin and how
+            you book China revenue. We work in two models. Pick the one that fits how you
+            want China on your books.
           </p>
         </header>
 
@@ -512,7 +373,7 @@ const serviceJsonLd = {
                 aria-labelledby={`model-tab-${i}`}
                 hidden={i !== 0}
               >
-                <div class="cbs-tabs__panel-grid">
+                <div class="cbs-tabs__panel-grid cbs-tabs__panel-grid--with-image">
                   <div class="cbs-tabs__lead">
                     <span class="cbs-tabs__pillset">
                       <span class="cbs-tabs__pill">{m.tag}</span>
@@ -583,7 +444,7 @@ const serviceJsonLd = {
           <div class="cbs-compare__intro">
             <span class="eyebrow">How to pick</span>
             <h3>One question, two answers</h3>
-            <p>Do you want to own the customer relationship on Douyin and RedNote, or do you want a clean wholesale exit? That is what decides the model.</p>
+            <p>Do you want to own the customer relationship in China, or do you want a clean wholesale exit? That is what decides the model.</p>
           </div>
           <div class="cbs-compare__table-wrap">
             <table class="cbs-compare__table">
@@ -591,7 +452,7 @@ const serviceJsonLd = {
                 <tr>
                   <th scope="col" class="cbs-compare__row-head-col"></th>
                   <th scope="col" class="cbs-compare__head cbs-compare__head--tp">
-                    <span class="cbs-compare__head-label">DP model</span>
+                    <span class="cbs-compare__head-label">TP model</span>
                     <span class="cbs-compare__head-sub">You own the inventory</span>
                   </th>
                   <th scope="col" class="cbs-compare__head cbs-compare__head--dist">
@@ -612,107 +473,135 @@ const serviceJsonLd = {
             </table>
           </div>
           <p class="cbs-compare__note">
-            The model that fits depends on two things: how big you want China social
-            commerce to be in your global revenue, and how much cash flow you can put behind
-            that ambition. Brands with high ambition and the working capital to fund
-            inventory and media usually pick DP. Brands wanting steady China revenue without
-            tying up cash usually pick distributor. Some brands run both in parallel across
-            different categories. None of this is a maturity ladder.
+            The model that fits depends on two things: how big you want China to be in
+            your global revenue, and how much cash flow you can put behind that ambition.
+            Brands with high ambition and the working capital to fund inventory and media
+            usually pick TP. Brands wanting steady China revenue without tying up cash
+            usually pick distributor. Some brands run both in parallel across different
+            categories. None of this is a maturity ladder.
           </p>
         </div>
       </div>
     </section>
 
-    {/* ---------- HOW WE WORK / CADENCE ---------- */}
-    <section id="how-we-work" class="section">
+    {/* ---------- CATEGORY NOTE ---------- */}
+    <section class="section">
+      <div class="container">
+        <div class="cbs-value">
+          <div class="cbs-value__copy">
+            <span class="eyebrow">Category matters</span>
+            <h2>One country, ten playbooks</h2>
+            <p>
+              Beauty needs RED seeding plus a Tmall Global flagship. Supplements run on
+              JD Worldwide. Premium F&B wins on Douyin livestream. Electronics belong on
+              JD. Each category has its own platform logic.
+            </p>
+            <p>
+              Which model fits depends on what you sell. The cross-border platforms do
+              not reward one playbook.
+            </p>
+          </div>
+
+          <ul class="cbs-promise">
+            <li>
+              <span class="eyebrow">Where each category lands</span>
+            </li>
+            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Beauty</span><span class="cbs-cat-row__home">RED seeding + Tmall Global flagship</span></li>
+            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Supplements</span><span class="cbs-cat-row__home">JD Worldwide for trust signal</span></li>
+            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Premium F&B</span><span class="cbs-cat-row__home">Douyin EC Global livestream</span></li>
+            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Fashion</span><span class="cbs-cat-row__home">Tmall Global + RED influence</span></li>
+            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Electronics</span><span class="cbs-cat-row__home">JD Worldwide</span></li>
+            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Pet, home, lifestyle</span><span class="cbs-cat-row__home">Platform mix per category</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- COST ---------- */}
+    <section class="section section--alt">
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">How we work</span>
-          <h2>Four rhythms that run your social commerce</h2>
+          <span class="eyebrow">What it costs</span>
+          <h2>What you will actually spend</h2>
           <p class="section-header__lead">
-            Once the model is set, the work does not stop, it just changes shape. Four
-            rhythms run in parallel, all year.
+            Three lines on every cross-border P&L: what you pay us, what you pay the
+            platforms, and what you put behind the brand. We show all three before we sign
+            anything.
           </p>
         </header>
 
-        <div class="cbs-tabs cbs-reveal" data-tabs>
-          <div class="cbs-tabs__nav" role="tablist">
-            {rhythms.map((r, i) => (
-              <button
-                type="button"
-                class={`cbs-tabs__tab${i === 0 ? ' is-active' : ''}`}
-                role="tab"
-                aria-selected={i === 0 ? 'true' : 'false'}
-                aria-controls={`rhythm-panel-${i}`}
-                id={`rhythm-tab-${i}`}
-                data-tab-target={`rhythm-panel-${i}`}
-                data-tab-id={r.tabId}
-              >
-                <span class="cbs-tabs__tab-label">{r.name}</span>
-                <span class="cbs-tabs__tab-tag">{r.tag}</span>
-              </button>
-            ))}
-            <span class="cbs-tabs__indicator" aria-hidden="true"></span>
+        <div class="cbs-cost-grid">
+          {costCards.map((c, i) => (
+            <article class="cbs-cost-card cbs-reveal" style={`--reveal-delay: ${i * 80}ms;`}>
+              <span class="cbs-cost-card__icon" aria-hidden="true" set:html={icons[c.icon]} />
+              <h3 class="cbs-cost-card__title">{c.title}</h3>
+              {c.sections.map((s) => (
+                <div class="cbs-cost-card__block">
+                  {s.heading && <span class="cbs-cost-card__sub">{s.heading}</span>}
+                  <p>{s.body}</p>
+                </div>
+              ))}
+              {c.bullets && (
+                <ul class="cbs-cost-card__bullets">
+                  {c.bullets.map((b) => (
+                    <li>
+                      <span class="cbs-cost-card__bullet" aria-hidden="true"></span>
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <p class="cbs-cost-card__footer">{c.footer}</p>
+            </article>
+          ))}
+        </div>
+
+        <blockquote class="cbs-quote cbs-reveal">
+          <p>Your margin stays your margin. We are paid by you (TP) or by the retail price (distributor). Never by Alimama, JD, or KOL agencies.</p>
+        </blockquote>
+
+        <p class="cbs-cost-note">We model the exact numbers and the split for your category in Phase one of the engagement, before any commitment.</p>
+      </div>
+    </section>
+
+    {/* ---------- HOW WE WORK (vertical timeline) ---------- */}
+    <section id="how-we-work" class="section cbs-journey-section">
+      <div class="cbs-journey-section__bg" aria-hidden="true">
+        <img src="/Images/enter-china/journey-path.png" alt="" loading="lazy" decoding="async" />
+      </div>
+      <div class="container">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">How we work</span>
+          <h2>Four phases from store to scale</h2>
+          <p class="section-header__lead">
+            A structured engagement that moves you from "we have a store" to a store that
+            grows month on month. Phases one to three are sequential. Phase four runs on a
+            loop, and we revisit phase one inside it every twelve months.
+          </p>
+        </header>
+
+        <div class="cbs-journey" data-journey>
+          <div class="cbs-journey__rail" aria-hidden="true">
+            <div class="cbs-journey__rail-track"></div>
+            <div class="cbs-journey__rail-fill" data-journey-fill></div>
           </div>
-
-          <div class="cbs-tabs__panels">
-            {rhythms.map((r, i) => (
-              <div
-                class={`cbs-tabs__panel${i === 0 ? ' is-active' : ''}`}
-                role="tabpanel"
-                id={`rhythm-panel-${i}`}
-                aria-labelledby={`rhythm-tab-${i}`}
-                hidden={i !== 0}
-              >
-                <div class="cbs-tabs__panel-grid">
-                  <div class="cbs-tabs__lead">
-                    <span class="cbs-tabs__pillset">
-                      <span class="cbs-tabs__pill">{r.pill}</span>
-                    </span>
-                    <h3 class="cbs-tabs__title">{r.title}</h3>
-                    <p class="cbs-tabs__desc">{r.desc}</p>
-
-                    <div class="cbs-tabs__when">
-                      <span class="cbs-tabs__when-label">Outcome</span>
-                      <p>{r.outcome}</p>
-                    </div>
-
-                    <figure class="cbs-tabs__image">
-                      <img src={r.image} alt={r.imageAlt} loading="lazy" decoding="async" />
-                    </figure>
-                  </div>
-
-                  <div class="cbs-tabs__body">
-                    <div class="cbs-tabs__list-wrap">
-                      <span class="cbs-tabs__list-label">What we do</span>
-                      <ul class="cbs-tabs__list">
-                        {r.does.map((b) => (
-                          <li>
-                            <span class="cbs-tabs__check" aria-hidden="true">
-                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                            </span>
-                            <span>{b}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div class="cbs-tabs__list-wrap cbs-tabs__list-wrap--alt">
-                      <span class="cbs-tabs__list-label">Deliverables</span>
-                      <ul class="cbs-tabs__list">
-                        {r.deliverables.map((d) => (
-                          <li>
-                            <span class="cbs-tabs__check cbs-tabs__check--alt" aria-hidden="true" set:html={icons.doc} />
-                            <span>{d}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+          <ol class="cbs-journey__list">
+            {steps.map((s, i) => (
+              <li class="cbs-journey__item cbs-reveal" data-journey-item style={`--reveal-delay: ${i * 80}ms;`}>
+                <span class="cbs-journey__dot" aria-hidden="true">
+                  <span class="cbs-journey__dot-inner"></span>
+                </span>
+                <span class="cbs-journey__phase">{s.phase} <span class="cbs-journey__duration">({s.duration})</span></span>
+                <div class="cbs-journey__card">
+                  <span class="cbs-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
+                  <div>
+                    <h3 class="cbs-journey__title">{s.title}</h3>
+                    <p class="cbs-journey__desc">{s.desc}</p>
                   </div>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </div>
     </section>
@@ -721,36 +610,33 @@ const serviceJsonLd = {
     <section class="section section--alt">
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">If you want social without commerce</span>
+          <span class="eyebrow">If you want to add social commerce</span>
           <h2>Powered by TheRedScroll</h2>
           <p class="section-header__lead">
-            Some brands want a Chinese social presence (WeChat, Weibo, Douyin content,
-            RedNote notes) without the full commerce operation behind it. TheRedScroll is
-            our sister agency built for exactly that. Daily content, community, KOL seeding,
-            no storefront.
+            Our cross-border stores convert better when content is live across the China
+            social stack. TheRedScroll is our sister agency for daily WeChat, RED, Douyin
+            and Weibo operations. Built to feed your store with attention, not just
+            impressions.
           </p>
         </header>
 
         <div class="cbs-sister cbs-reveal">
           <div class="cbs-sister__hero">
-            <div class="cbs-sister__logo">
-              <img src="/Images/AgencyLogos/TheredScroll%20PNG.webp" alt="TheRedScroll logo" loading="lazy" decoding="async" />
-            </div>
             <span class="cbs-sister__chip">Sister product</span>
-            <h3 class="cbs-sister__title">Off-platform social, run by the same operators.</h3>
+            <h3 class="cbs-sister__title">Run your store and your social on the same rhythm.</h3>
             <p class="cbs-sister__desc">
-              When the store is not the priority but the brand still needs to show up in
-              the feed, TheRedScroll handles the content and the community. Same group,
-              same standards, separate brand, smaller monthly retainer.
+              Cross-border stops working when the content goes quiet. TheRedScroll keeps
+              the off-platform channels active every day, while we run the stores. Same
+              group, same standards, separate brand.
             </p>
             <ul class="cbs-sister__stats">
               <li>
-                <span class="cbs-sister__stat-num">4</span>
-                <span class="cbs-sister__stat-label">channels covered: WeChat, Weibo, Douyin, RedNote</span>
-              </li>
-              <li>
                 <span class="cbs-sister__stat-num">25+</span>
                 <span class="cbs-sister__stat-label">years of Chinese social experience inside the group</span>
+              </li>
+              <li>
+                <span class="cbs-sister__stat-num">4</span>
+                <span class="cbs-sister__stat-label">channels covered: WeChat, RED, Douyin, Weibo</span>
               </li>
               <li>
                 <span class="cbs-sister__stat-num">In-house</span>
@@ -758,11 +644,8 @@ const serviceJsonLd = {
               </li>
             </ul>
             <div class="cbs-sister__actions">
-              <a href="https://theredscroll.com" target="_blank" rel="noopener" class="btn cbs-sister__btn-primary">
-                Visit TheRedScroll
-                <span aria-hidden="true">↗</span>
-              </a>
-              <a href="/contact" class="btn cbs-sister__btn-ghost">Brief us on your social plan</a>
+              <a href="https://theredscroll.com" target="_blank" rel="noopener" class="btn cbs-sister__btn-primary">Visit TheRedScroll</a>
+              <a href="/contact" class="btn cbs-sister__btn-ghost">Brief us on social commerce</a>
             </div>
           </div>
 
@@ -779,15 +662,56 @@ const serviceJsonLd = {
       </div>
     </section>
 
+    {/* ---------- WHY BRANDS CHOOSE US ---------- */}
+    <section class="section">
+      <div class="container">
+        <div class="cbs-value">
+          <div class="cbs-value__copy">
+            <span class="eyebrow">Why brands choose us</span>
+            <h2>Most agencies hand you an account manager. We hand you an operator.</h2>
+            <p>
+              Our team ran eCommerce at Publicis Commerce China for global brands across
+              Tmall, JD, Douyin and RED. We run what we recommend.
+            </p>
+            <blockquote class="cbs-quote cbs-quote--inline">
+              <p>The senior who writes the plan is on the call when the store hits a problem.</p>
+            </blockquote>
+            <p>
+              We test what platforms reward every week. We book the KOLs we recommend.
+              We shoot the content that sells, in our own studio.
+            </p>
+            <a href="/about#team" class="btn btn--secondary cbs-magnetic">Meet the team</a>
+          </div>
+
+          <ul class="cbs-promise">
+            <li>
+              <span class="eyebrow">What you can expect</span>
+            </li>
+            {promises.map((p) => (
+              <li class="cbs-promise__item">
+                <span class="cbs-promise__check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                </span>
+                <div>
+                  <h4>{p.title}</h4>
+                  <p>{p.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
     {/* ---------- FAQ ---------- */}
-    <section id="faq" class="section">
+    <section class="section section--alt">
       <div class="container container--narrow">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">FAQ</span>
           <h2>Twenty questions, answered straight</h2>
           <p class="section-header__lead">
-            The questions we get on the first call, with the answers we give once we know
-            the brand. Filter by topic.
+            The practical questions we field from brand managers, eCommerce directors and
+            founders running cross-border in China. Filter by topic.
           </p>
         </header>
 
@@ -834,13 +758,12 @@ const serviceJsonLd = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">
-          <span class="eyebrow eyebrow--on-dark">Let’s talk</span>
-          <h2 class="cbs-cta__title">Ready to sell where China actually shops?</h2>
+          <span class="eyebrow eyebrow--on-dark">Let's talk</span>
+          <h2 class="cbs-cta__title">Running a store today, or about to open one?</h2>
           <p class="cbs-cta__lead">
-            Tell us the category, the budget range, the platforms you are considering and
-            whether you are aiming at a festival window or a steady-state launch. A senior
-            member of the team replies within one working day. No sales funnel, no
-            auto-responder.
+            Tell us where the store is today and what it needs to be doing six months from
+            now. A senior member of the team replies within one working day. No funnel.
+            No auto-responder.
           </p>
           <div class="cbs-cta__actions">
             <a href="/contact" class="btn cbs-cta__btn-primary">Start the conversation</a>
@@ -1135,93 +1058,50 @@ const serviceJsonLd = {
       color: var(--bbg-text); margin: 0;
     }
 
+    /* Category rows inside promise */
+    .cbs-cat-row {
+      display: grid;
+      grid-template-columns: minmax(100px, auto) 1fr;
+      gap: var(--space-4);
+      padding: var(--space-3) 0;
+      border-bottom: 1px solid var(--bbg-border);
+      align-items: baseline;
+    }
+    .cbs-cat-row:last-child { border-bottom: none; }
+    .cbs-cat-row__cat {
+      font-weight: 700; color: var(--bbg-ink);
+      font-size: 0.95rem;
+    }
+    .cbs-cat-row__home {
+      font-size: 0.95rem;
+      color: var(--bbg-text);
+      line-height: 1.5;
+    }
+
     @media (max-width: 900px) {
       .cbs-value { grid-template-columns: 1fr; gap: var(--space-6); }
     }
 
-    /* ---------- SERVICES (six-card grid) ---------- */
-    .cbs-services {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--space-5);
-    }
-    .cbs-service {
-      position: relative;
-      background: var(--bbg-white);
-      border: 1px solid var(--bbg-border);
-      border-radius: var(--radius-lg);
-      padding: var(--space-6);
-      display: flex; flex-direction: column;
-      gap: var(--space-3);
-      text-decoration: none;
-      color: inherit;
-      transition:
-        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
-        border-color 260ms ease,
-        box-shadow 260ms ease;
-      overflow: hidden;
-    }
-    .cbs-service::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
-      transform: scaleX(0);
-      transform-origin: left center;
-      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .cbs-service:hover {
-      transform: translateY(-4px);
-      border-color: var(--bbg-blue);
-      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
-    }
-    .cbs-service:hover::before { transform: scaleX(1); }
-    .cbs-service__icon {
-      display: inline-flex;
-      width: 44px; height: 44px;
-      align-items: center; justify-content: center;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
-      color: var(--bbg-blue);
-      margin-bottom: var(--space-2);
-    }
-    .cbs-service__icon svg { width: 22px; height: 22px; }
-    .cbs-service__title {
-      font-size: 1.125rem;
-      line-height: 1.25;
-      margin: 0;
-      color: var(--bbg-ink);
-      letter-spacing: -0.005em;
-    }
-    .cbs-service__body {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: var(--bbg-text);
-      margin: 0;
-    }
-    .cbs-service__arrow {
-      margin-top: auto;
-      align-self: flex-start;
-      display: inline-flex;
-      align-items: center; gap: 0.4rem;
-      font-size: 0.85rem; font-weight: 600;
-      color: var(--bbg-blue);
-      letter-spacing: 0.01em;
-      padding-top: var(--space-2);
-    }
-    .cbs-service__arrow-icon {
-      display: inline-block;
-      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
-    }
-    .cbs-service:hover .cbs-service__arrow-icon { transform: translateX(3px); }
-    @media (max-width: 960px) { .cbs-services { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 640px) { .cbs-services { grid-template-columns: 1fr; } }
-
-    /* ---------- MODELS / TABS BG ---------- */
+    /* ---------- BUSINESS MODELS BG ---------- */
     .cbs-models-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-models-section__bg {
+      position: absolute;
+      top: 0; right: -8%;
+      width: 55%; height: 100%;
+      z-index: -1;
+      opacity: 0.18;
+      mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
+      -webkit-mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .cbs-models-section__bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      filter: saturate(0.6);
+    }
+    @media (max-width: 900px) { .cbs-models-section__bg { display: none; } }
 
-    /* ---------- TABS ---------- */
+    /* ---------- BUSINESS MODELS TABS ---------- */
     .cbs-tabs {
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
@@ -1247,7 +1127,6 @@ const serviceJsonLd = {
       color: var(--bbg-text-muted);
       transition: color 240ms ease, background 240ms ease;
       border-right: 1px solid var(--bbg-border);
-      font-family: inherit;
     }
     .cbs-tabs__tab:last-child { border-right: none; }
     .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
@@ -1348,7 +1227,9 @@ const serviceJsonLd = {
       border-radius: var(--radius-md);
       padding: var(--space-5);
     }
-    .cbs-tabs__list-wrap--alt { background: var(--bbg-blue-light); }
+    .cbs-tabs__list-wrap--alt {
+      background: var(--bbg-blue-light);
+    }
     .cbs-tabs__list-label {
       display: block;
       font-size: 0.72rem; font-weight: 700;
@@ -1418,9 +1299,9 @@ const serviceJsonLd = {
     .cbs-owns__val { color: var(--bbg-ink); }
 
     @media (max-width: 900px) {
-      .cbs-tabs__nav { grid-template-columns: 1fr; }
+      .cbs-tabs--two .cbs-tabs__nav { grid-template-columns: 1fr; }
       .cbs-tabs__tab { border-right: none; border-bottom: 1px solid var(--bbg-border); }
-      .cbs-tabs__indicator { display: none; }
+      .cbs-tabs--two .cbs-tabs__indicator { display: none; }
       .cbs-tabs__panel-grid { grid-template-columns: 1fr; }
     }
 
@@ -1493,8 +1374,12 @@ const serviceJsonLd = {
       border-bottom: 1px solid var(--bbg-border);
       vertical-align: top;
     }
-    .cbs-compare__cell--tp { background: rgba(38, 154, 218, 0.04); }
-    .cbs-compare__cell--dist { background: var(--bbg-white); }
+    .cbs-compare__cell--tp {
+      background: rgba(38, 154, 218, 0.04);
+    }
+    .cbs-compare__cell--dist {
+      background: var(--bbg-white);
+    }
     .cbs-compare__table tbody tr:last-child .cbs-compare__row-label,
     .cbs-compare__table tbody tr:last-child .cbs-compare__cell {
       border-bottom: none;
@@ -1508,7 +1393,97 @@ const serviceJsonLd = {
       font-size: 0.975rem;
     }
 
-    /* ---------- QUOTE ---------- */
+    /* ---------- COST GRID ---------- */
+    .cbs-cost-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+    }
+    .cbs-cost-card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 20px;
+      padding: var(--space-6);
+      display: flex; flex-direction: column;
+      gap: var(--space-3);
+      overflow: hidden; isolation: isolate;
+      transition:
+        transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
+    }
+    .cbs-cost-card::before {
+      content: ""; position: absolute;
+      top: 0; left: 0; width: 100%; height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      transform: scaleX(0.35);
+      transform-origin: left center;
+      transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cbs-cost-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+    }
+    .cbs-cost-card:hover::before { transform: scaleX(1); }
+    .cbs-cost-card__icon {
+      display: inline-flex;
+      width: 48px; height: 48px;
+      align-items: center; justify-content: center;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-3);
+    }
+    .cbs-cost-card__icon svg { width: 22px; height: 22px; }
+    .cbs-cost-card__title {
+      font-size: 1.25rem; line-height: 1.2;
+      margin: 0; letter-spacing: -0.005em;
+    }
+    .cbs-cost-card__block { display: flex; flex-direction: column; gap: 0.4rem; }
+    .cbs-cost-card__sub {
+      font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--bbg-blue);
+    }
+    .cbs-cost-card__block p {
+      font-size: 0.95rem; line-height: 1.55;
+      color: var(--bbg-text); margin: 0;
+    }
+    .cbs-cost-card__bullets {
+      list-style: none; padding: var(--space-3) 0;
+      margin: 0;
+      display: flex; flex-direction: column;
+      gap: 0.55rem;
+      border-top: 1px dashed var(--bbg-border);
+      border-bottom: 1px dashed var(--bbg-border);
+    }
+    .cbs-cost-card__bullets li {
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      gap: 0.6rem;
+      align-items: start;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .cbs-cost-card__bullet {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      box-shadow: 0 0 0 3px var(--bbg-blue-light);
+      margin: 6px 0 0 4px;
+    }
+    .cbs-cost-card__footer {
+      font-size: 0.85rem; line-height: 1.55;
+      color: var(--bbg-text-muted);
+      margin: 0;
+      padding-top: var(--space-2);
+    }
+    @media (max-width: 960px) { .cbs-cost-grid { grid-template-columns: 1fr; } }
+
+    /* ---------- QUOTE BLOCK ---------- */
     .cbs-quote {
       margin: var(--space-6) auto 0;
       max-width: 760px;
@@ -1530,8 +1505,146 @@ const serviceJsonLd = {
       max-width: none;
       padding: var(--space-4) var(--space-5);
     }
+    .cbs-cost-note {
+      margin: var(--space-5) auto 0;
+      max-width: 60ch;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.6;
+    }
 
-    /* ---------- SISTER PRODUCT (TheRedScroll) ---------- */
+    /* ---------- JOURNEY (vertical timeline) ---------- */
+    .cbs-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-journey-section__bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -2;
+      opacity: 0.10;
+      pointer-events: none;
+    }
+    .cbs-journey-section__bg::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(180deg, var(--bbg-white) 0%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.7) 100%);
+    }
+    .cbs-journey-section__bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      filter: saturate(0.55);
+    }
+    .cbs-journey {
+      position: relative;
+      max-width: 880px;
+      margin: 0 auto;
+      padding-left: 56px;
+    }
+    .cbs-journey__rail {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 22px; width: 2px;
+    }
+    .cbs-journey__rail-track {
+      position: absolute; inset: 0;
+      background: var(--bbg-border);
+      border-radius: 2px;
+    }
+    .cbs-journey__rail-fill {
+      position: absolute;
+      top: 0; left: 0; width: 100%;
+      height: var(--journey-progress, 0%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transition: height 120ms linear;
+      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+    }
+    .cbs-journey__list {
+      list-style: none; padding: 0; margin: 0;
+      display: flex; flex-direction: column;
+      gap: var(--space-7);
+    }
+    .cbs-journey__item { position: relative; }
+    .cbs-journey__dot {
+      position: absolute;
+      left: -56px; top: 0;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--bbg-white);
+      border: 2px solid var(--bbg-border);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 2;
+      transition: border-color 320ms ease;
+    }
+    .cbs-journey__dot-inner {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: background 320ms ease, transform 320ms ease;
+    }
+    .cbs-journey__item.is-active .cbs-journey__dot { border-color: var(--bbg-blue); }
+    .cbs-journey__item.is-active .cbs-journey__dot-inner {
+      background: var(--bbg-blue);
+      transform: scale(1.1);
+      box-shadow: 0 0 0 4px var(--bbg-blue-light);
+    }
+    .cbs-journey__phase {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-2);
+      transition: color 320ms ease;
+    }
+    .cbs-journey__duration {
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.04em;
+      text-transform: none;
+    }
+    .cbs-journey__item.is-active .cbs-journey__phase { color: var(--bbg-blue); }
+    .cbs-journey__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      display: flex; align-items: flex-start;
+      gap: var(--space-4);
+      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cbs-journey__item:hover .cbs-journey__card,
+    .cbs-journey__item.is-active .cbs-journey__card {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      transform: translateX(4px);
+    }
+    .cbs-journey__icon {
+      display: inline-flex;
+      width: 48px; height: 48px;
+      align-items: center; justify-content: center;
+      border-radius: 14px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .cbs-journey__icon svg { width: 24px; height: 24px; }
+    .cbs-journey__title {
+      font-size: 1.25rem; line-height: 1.25;
+      margin: 0 0 0.4rem;
+      letter-spacing: -0.005em;
+    }
+    .cbs-journey__desc {
+      font-size: 0.95rem; line-height: 1.55;
+      color: var(--bbg-text); margin: 0;
+    }
+    @media (max-width: 600px) {
+      .cbs-journey { padding-left: 40px; }
+      .cbs-journey__rail { left: 16px; }
+      .cbs-journey__dot { left: -40px; width: 32px; height: 32px; }
+      .cbs-journey__dot-inner { width: 10px; height: 10px; }
+      .cbs-journey__card { flex-direction: column; gap: var(--space-3); }
+    }
+
+    /* ---------- SISTER PRODUCT ---------- */
     .cbs-sister {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
@@ -1555,16 +1668,6 @@ const serviceJsonLd = {
       background:
         radial-gradient(60% 80% at 100% 0%, rgba(255, 90, 130, 0.25) 0%, transparent 60%),
         radial-gradient(40% 60% at 0% 100%, rgba(255, 60, 100, 0.18) 0%, transparent 60%);
-    }
-    .cbs-sister__logo {
-      align-self: flex-start;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 10px;
-      padding: 0.55rem 0.9rem;
-      max-width: 180px;
-    }
-    .cbs-sister__logo img {
-      display: block; width: 100%; height: auto;
     }
     .cbs-sister__chip {
       display: inline-block;
@@ -1622,7 +1725,6 @@ const serviceJsonLd = {
       background: var(--bbg-white);
       color: #2a1530;
       border: 1px solid var(--bbg-white);
-      display: inline-flex; align-items: center; gap: 0.4rem;
     }
     .cbs-sister__btn-primary:hover {
       background: #FFC2D1; color: #2a1530;
@@ -1751,7 +1853,6 @@ const serviceJsonLd = {
       display: flex; flex-wrap: wrap;
       gap: 0.5rem; justify-content: center;
       margin-bottom: var(--space-6);
-      overflow-x: auto;
     }
     .cbs-faq-chip {
       display: inline-flex; align-items: center;
@@ -1766,7 +1867,6 @@ const serviceJsonLd = {
       color: var(--bbg-text);
       transition: all 220ms ease;
       font-family: inherit;
-      white-space: nowrap;
     }
     .cbs-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
     .cbs-faq-chip.is-active {
@@ -1885,7 +1985,7 @@ const serviceJsonLd = {
         }
       }
 
-      // 2. Animated counters
+      // 2. Animated number counters in the hero meta strip
       const counters = document.querySelectorAll('[data-counter]');
       if (counters.length && !reduced && 'IntersectionObserver' in window) {
         const animate = (el) => {
@@ -1944,17 +2044,33 @@ const serviceJsonLd = {
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
 
-      // 4. Tabs (handles both 2-tab models and 4-tab cadence)
-      const openTabByHash = () => {
-        const hash = window.location.hash.slice(1);
-        if (!hash) return;
-        document.querySelectorAll('[data-tabs]').forEach((root) => {
-          const matchingTab = root.querySelector(`[data-tab-id="${hash}"]`);
-          if (matchingTab) matchingTab.click();
+      // 4. Smooth scroll for anchors
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
         });
-      };
+      });
 
-      document.querySelectorAll('[data-tabs]').forEach((tabsRoot) => {
+      // 5. FAQ accordion - close others on open
+      const faqItems = document.querySelectorAll('.cbs-faq__item');
+      faqItems.forEach((item) => {
+        item.addEventListener('toggle', () => {
+          if (item.open) {
+            faqItems.forEach((other) => {
+              if (other !== item && other.open) other.open = false;
+            });
+          }
+        });
+      });
+
+      // 6. Business model tabs
+      const tabsRoot = document.querySelector('[data-tabs]');
+      if (tabsRoot) {
         const tabs = Array.from(tabsRoot.querySelectorAll('.cbs-tabs__tab'));
         const panels = Array.from(tabsRoot.querySelectorAll('.cbs-tabs__panel'));
         const indicator = tabsRoot.querySelector('.cbs-tabs__indicator');
@@ -1998,43 +2114,42 @@ const serviceJsonLd = {
 
         const initialActive = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
         if (initialActive) setActive(initialActive);
-      });
+      }
 
-      // Open tab from URL hash on load and on hash change
-      openTabByHash();
-      window.addEventListener('hashchange', openTabByHash);
-
-      // 5. Smooth scroll for anchors (also triggers tab open via hashchange)
-      document.querySelectorAll('a[href^="#"]').forEach((link) => {
-        link.addEventListener('click', (e) => {
-          const id = link.getAttribute('href');
-          if (!id || id === '#') return;
-          const target = document.querySelector(id);
-          if (!target) return;
-          e.preventDefault();
-          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
-          const tabId = id.slice(1);
-          document.querySelectorAll('[data-tabs]').forEach((root) => {
-            const matchingTab = root.querySelector(`[data-tab-id="${tabId}"]`);
-            if (matchingTab) matchingTab.click();
+      // 7. Journey vertical timeline scroll progress + active state
+      const journey = document.querySelector('[data-journey]');
+      if (journey) {
+        const fill = journey.querySelector('[data-journey-fill]');
+        const items = Array.from(journey.querySelectorAll('[data-journey-item]'));
+        const updateJourney = () => {
+          const rect = journey.getBoundingClientRect();
+          const vh = window.innerHeight;
+          const total = rect.height;
+          const visible = Math.max(0, Math.min(total, vh * 0.55 - rect.top));
+          const pct = Math.max(0, Math.min(100, (visible / total) * 100));
+          if (fill) fill.style.setProperty('--journey-progress', pct + '%');
+          items.forEach((item) => {
+            const r = item.getBoundingClientRect();
+            const center = r.top + r.height / 2;
+            const inActive = center < vh * 0.6 && center > 0;
+            item.classList.toggle('is-active', inActive);
           });
-          history.replaceState(null, '', id);
-        });
-      });
+        };
+        let journeyTicking = false;
+        const onJourneyScroll = () => {
+          if (journeyTicking) return;
+          journeyTicking = true;
+          requestAnimationFrame(() => {
+            updateJourney();
+            journeyTicking = false;
+          });
+        };
+        window.addEventListener('scroll', onJourneyScroll, { passive: true });
+        window.addEventListener('resize', onJourneyScroll, { passive: true });
+        updateJourney();
+      }
 
-      // 6. FAQ accordion - close others on open
-      const faqItems = document.querySelectorAll('.cbs-faq__item');
-      faqItems.forEach((item) => {
-        item.addEventListener('toggle', () => {
-          if (item.open) {
-            faqItems.forEach((other) => {
-              if (other !== item && other.open) other.open = false;
-            });
-          }
-        });
-      });
-
-      // 7. FAQ category filter
+      // 8. FAQ category filter
       const faqFilter = document.querySelector('[data-faq-filter]');
       const faqList = document.querySelector('[data-faq-list]');
       if (faqFilter && faqList) {
