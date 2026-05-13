@@ -10,8 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "gen": "node generate-image.mjs",
-    "gen:edit": "node generate-image-edit.mjs",
+    "gen": "node scripts/generate-image.mjs",
+    "gen:edit": "node scripts/generate-image-edit.mjs",
     "img": "node scripts/optimize-image.mjs"
   },
   "dependencies": {

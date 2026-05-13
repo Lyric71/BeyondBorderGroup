@@ -15,7 +15,7 @@ if (sizeFlagIdx !== -1 && args[sizeFlagIdx + 1]) {
 const prompt = args.join(' ');
 
 if (!prompt) {
-  console.error('Usage: node generate-image.mjs [--size 16:9] <prompt>');
+  console.error('Usage: node scripts/generate-image.mjs [--size 16:9] <prompt>');
   process.exit(1);
 }
 

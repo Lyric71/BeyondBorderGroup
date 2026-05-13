@@ -6,14 +6,14 @@ const API_URL = 'https://api.wavespeed.ai/api/v3';
 const MODEL = 'google/nano-banana-2/edit';
 const API_KEY = process.env.WAVESPEED_API_KEY;
 
-// Usage: node generate-image-edit.mjs <output-filename> <prompt> -- <image1> [image2] ...
+// Usage: node scripts/generate-image-edit.mjs <output-filename> <prompt> -- <image1> [image2] ...
 // Images after -- are local file paths that get converted to base64 data URIs
 
 const args = process.argv.slice(2);
 const doubleDashIdx = args.indexOf('--');
 
 if (doubleDashIdx < 2 || doubleDashIdx >= args.length - 1) {
-  console.error('Usage: node generate-image-edit.mjs <output-filename> <prompt> -- <image1> [image2] ...');
+  console.error('Usage: node scripts/generate-image-edit.mjs <output-filename> <prompt> -- <image1> [image2] ...');
   process.exit(1);
 }
 

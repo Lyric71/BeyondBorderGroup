@@ -5,7 +5,7 @@
 			"label": "WaveSpeed: Generate image",
 			"type": "shell",
 			"command": "node",
-			"args": ["generate-image.mjs", "${input:prompt}"],
+			"args": ["scripts/generate-image.mjs", "${input:prompt}"],
 			"presentation": {
 				"reveal": "always",
 				"panel": "dedicated",
@@ -19,7 +19,7 @@
 			"type": "shell",
 			"command": "node",
 			"args": [
-				"generate-image-edit.mjs",
+				"scripts/generate-image-edit.mjs",
 				"${input:outputFilename}",
 				"${input:prompt}",
 				"--",

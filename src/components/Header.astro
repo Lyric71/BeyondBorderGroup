@@ -14,6 +14,8 @@ const icon = {
   bulb: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10c1 1 1.5 2 1.5 3h5c0-1 .5-2 1.5-3a6 6 0 0 0-4-10z"/></svg>`,
   grid: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`,
   camera: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h3l2-3h8l2 3h3v12H3z"/><circle cx="12" cy="13" r="4"/></svg>`,
+  megaphone: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h2l9 5V4L6 9H4a1 1 0 0 0-1 1z"/><path d="M18 9a4 4 0 0 1 0 6"/><path d="M7 15v3a2 2 0 0 0 4 0v-2"/></svg>`,
+  newspaper: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h14v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M18 8h2v11a2 2 0 0 1-2 2"/><path d="M7 9h8M7 13h8M7 17h5"/></svg>`,
 };
 
 const enterChina = [
@@ -23,14 +25,34 @@ const enterChina = [
   { label: 'Branding & Localisation', desc: 'Your brand, sharpened for the Chinese consumer.', href: '/enter-china/branding-localisation', svg: icon.tag },
 ];
 
+const enterChinaFeature = {
+  label: 'BeyondCompass',
+  desc: 'Database of vetted China distributors, Tmall partners and channel operators.',
+  href: 'https://beyondcompass.beyondbordergroup.com',
+  logo: '/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp',
+};
+
 const growChina = [
   { label: 'Cross-Border eCommerce', desc: 'Run your Tmall Global and JD Worldwide stores end-to-end.', href: '/grow-in-china/cross-border-ecommerce', svg: icon.bag },
   { label: 'Social Commerce', desc: 'Sales on Douyin, WeChat and RED. Livestream and KOL.', href: '/grow-in-china/social-commerce', svg: icon.chat },
-  { label: 'Distribution', desc: 'B2B into retail, B2C and DTC into online and offline.', href: '/grow-in-china/distribution', svg: icon.network },
   { label: 'Media', desc: 'Performance and brand media across Chinese platforms.', href: '/grow-in-china/media', svg: icon.broadcast },
-  { label: 'Website', desc: 'Sites built to load fast inside the Great Firewall.', href: '/grow-in-china/website', svg: icon.monitor },
-  { label: 'Production Studio', desc: 'Creative shoots, video and AIGC pipelines, in-studio.', href: '/grow-in-china/production-studio', svg: icon.camera },
+  { label: 'Influencers & KOLs', desc: 'KOL casting and paid campaigns across Douyin, RED and WeChat.', href: '/grow-in-china/influencers-kols', svg: icon.megaphone },
+  { label: 'Press & Public Relations', desc: 'Earned coverage in Chinese trade press and consumer media.', href: '/grow-in-china/press-public-relations', svg: icon.newspaper },
 ];
+
+const growChinaFeature = {
+  label: 'ChinaWebFoundry',
+  desc: 'A website built in Shanghai for China.',
+  href: 'https://chinawebfoundry.com',
+  logo: '/Images/AgencyLogos/Logo-ChinaWebFoundry-transparent.webp',
+};
+
+const growChinaFeatureHub = {
+  label: 'hubStudio',
+  desc: 'The creative production house.',
+  href: 'https://hubstudio.ai',
+  logo: '/Images/AgencyLogos/hubStudio%20(2).webp',
+};
 
 const learnChina = [
   { label: 'Platforms', desc: 'Tmall, JD, Douyin, WeChat, RED, Pinduoduo. How each one works and who it is for.', href: '/learn-china/platforms', svg: icon.grid },
@@ -65,7 +87,7 @@ const sections = [
                   <p class="mega__intro">{section.intro}</p>
                   <a href={section.href} class="btn btn--ghost mega__cta">All {section.label.toLowerCase()} services</a>
                 </div>
-                <div class={`mega__grid ${section.items.length > 3 ? 'mega__grid--6' : 'mega__grid--3'}`}>
+                <div class={`mega__grid ${section.key === 'grow' ? 'mega__grid--grow' : section.items.length > 3 ? 'mega__grid--6' : 'mega__grid--3'}`}>
                   {section.items.map(item => (
                     <a href={item.href} class="mega-item">
                       <span class="mega-item__icon" set:html={item.svg} />
@@ -75,6 +97,30 @@ const sections = [
                       </span>
                     </a>
                   ))}
+                  {section.key === 'enter' && (
+                    <a href={enterChinaFeature.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature" data-spotlight aria-label={`${enterChinaFeature.label} (opens in new tab): ${enterChinaFeature.desc}`}>
+                      <span class="mega-feature__logobox">
+                        <img src={enterChinaFeature.logo} alt={enterChinaFeature.label} loading="lazy" width="320" height="80" />
+                      </span>
+                      <span class="mega-item__desc mega-feature__desc">{enterChinaFeature.desc}</span>
+                    </a>
+                  )}
+                  {section.key === 'grow' && (
+                    <a href={growChinaFeature.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature mega-item--feature-cwf" data-spotlight aria-label={`${growChinaFeature.label} (opens in new tab): ${growChinaFeature.desc}`}>
+                      <span class="mega-feature__logobox">
+                        <img src={growChinaFeature.logo} alt={growChinaFeature.label} loading="lazy" width="320" height="80" />
+                      </span>
+                      <span class="mega-item__desc mega-feature__desc">{growChinaFeature.desc}</span>
+                    </a>
+                  )}
+                  {section.key === 'grow' && (
+                    <a href={growChinaFeatureHub.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature mega-item--feature-hub" data-spotlight aria-label={`${growChinaFeatureHub.label} (opens in new tab): ${growChinaFeatureHub.desc}`}>
+                      <span class="mega-feature__logobox">
+                        <img src={growChinaFeatureHub.logo} alt={growChinaFeatureHub.label} loading="lazy" width="320" height="80" />
+                      </span>
+                      <span class="mega-item__desc mega-feature__desc">{growChinaFeatureHub.desc}</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -110,6 +156,22 @@ const sections = [
     burger?.addEventListener('click', () => {
       const open = nav.classList.toggle('nav--open');
       burger.setAttribute('aria-expanded', String(open));
+    });
+
+    nav.querySelectorAll('[data-spotlight]').forEach((el) => {
+      const onMove = (e) => {
+        const rect = el.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        el.style.setProperty('--mx', x + '%');
+        el.style.setProperty('--my', y + '%');
+      };
+      const onLeave = () => {
+        el.style.setProperty('--mx', '50%');
+        el.style.setProperty('--my', '50%');
+      };
+      el.addEventListener('pointermove', onMove);
+      el.addEventListener('pointerleave', onLeave);
     });
   })();
 </script>

@@ -435,6 +435,11 @@ body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-he
 }
 .mega__grid--3 { grid-template-columns: repeat(3, 1fr); }
 .mega__grid--6 { grid-template-columns: repeat(3, 1fr); }
+.mega__grid--grow { grid-template-columns: repeat(6, 1fr); }
+.mega__grid--grow > * { min-width: 0; }
+.mega__grid--grow > .mega-item { grid-column: span 2; }
+.mega__grid--grow > .mega-item:nth-child(n+4):not(.mega-item--feature) { grid-column: span 3; }
+.mega__grid--grow > .mega-item--feature { grid-column: span 3; }
 
 .mega-item {
   display: flex;
@@ -476,6 +481,97 @@ body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-he
   font-size: var(--fs-small);
   color: var(--bbg-text-muted);
   line-height: 1.45;
+}
+
+/* Featured database card (BeyondCompass) — same outer dimensions as .mega-item, distinct dark treatment */
+.mega-item--feature {
+  --mx: 50%;
+  --my: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: stretch;
+  background: linear-gradient(135deg, #0E1116 0%, #1A1F27 100%);
+  border-color: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  isolation: isolate;
+  text-decoration: none;
+}
+.mega-item--feature::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(260px circle at var(--mx) var(--my), rgba(38, 154, 218, 0.35), transparent 65%);
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease);
+  pointer-events: none;
+}
+.mega-item--feature::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(180px circle at var(--mx) var(--my), #000 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(180px circle at var(--mx) var(--my), #000 0%, transparent 70%);
+  pointer-events: none;
+}
+.mega-item--feature > * { position: relative; z-index: 1; }
+.mega-item--feature:hover {
+  background: linear-gradient(135deg, #0E1116 0%, #1A1F27 100%);
+  border-color: rgba(38, 154, 218, 0.5);
+}
+.mega-item--feature:hover::before { opacity: 1; }
+
+.mega-feature__logobox {
+  display: block;
+  width: 100%;
+  height: 72px;
+  padding: 6px 16px;
+  border-radius: var(--radius-sm);
+  background: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  min-width: 0;
+}
+.mega-feature__logobox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+.mega-feature__desc { color: rgba(255, 255, 255, 0.72) !important; }
+
+/* ChinaWebFoundry variant: warm orange accent instead of brand blue */
+.mega-item--feature-cwf::before {
+  background: radial-gradient(260px circle at var(--mx) var(--my), rgba(242, 107, 42, 0.4), transparent 65%);
+}
+.mega-item--feature-cwf:hover {
+  border-color: rgba(242, 107, 42, 0.55);
+}
+
+/* hubStudio variant: vermilion-blue duotone pulled from the cube logo */
+.mega-item--feature-hub::before {
+  background:
+    radial-gradient(220px circle at var(--mx) var(--my), rgba(233, 78, 27, 0.45), transparent 65%),
+    radial-gradient(320px circle at calc(100% - var(--mx)) calc(100% - var(--my)), rgba(30, 93, 184, 0.28), transparent 70%);
+}
+.mega-item--feature-hub:hover {
+  border-color: rgba(233, 78, 27, 0.55);
+}
+/* Source canvas of hubStudio (2).webp is tightly cropped vs CWF, which sits in a wider canvas with built-in whitespace. Extra padding here pulls the rendered logo down to roughly the same visual height as the CWF mark. */
+.mega-item--feature-hub .mega-feature__logobox {
+  padding: 14px 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mega-item--feature::before,
+  .mega-item--feature::after { transition: none; }
 }
 
 /* Right cluster */
@@ -601,7 +697,7 @@ body:has(.hero-fullbleed, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-he
 }
 .footer__network-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: var(--space-5);
 }
 .footer__network-card {
