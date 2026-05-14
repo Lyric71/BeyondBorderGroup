@@ -79,50 +79,39 @@ const servicesByStage = [
       {
         title: 'Market Entry Consulting',
         icon: 'compass',
+        tagline: 'Strategy & business model',
         desc: 'Before you spend a single yuan on platforms or partners, you need a model that fits your brand, your category and your budget. We build the strategic foundation: where to sell, how to sell, who to sell with.',
-        bullets: [
-          'A business model designed for your category, not a generic framework',
-          'A clear read on the regulatory and compliance picture',
-          'Partner and distributor shortlists built from verified track records',
-          'An operational roadmap your team can execute, not a 200-page deck that sits in a drawer',
-        ],
+        image: '/Images/enter-china/ops-strategy-desk.png',
+        imageAlt: 'A strategy session in a Chinese office, market entry roadmap on the table',
         href: '/enter-china/market-entry-consulting',
-      },
-      {
-        title: 'Branding & Localisation',
-        icon: 'tag',
-        desc: "Your brand was built for Western consumers. Chinese consumers read it differently. Naming, visual identity, packaging, messaging, tone of voice. Localisation rebuilds the emotional connection your brand creates for a completely different cultural context. This work happens before you launch, not after.",
-        bullets: [
-          'A Chinese brand name that works linguistically and culturally',
-          'Visual identity and packaging adapted for Chinese retail and eCommerce',
-          'Brand positioning that resonates with your target segment in China',
-          'Messaging and copy that feels native, not imported',
-        ],
-        href: '/enter-china/branding-localisation',
+        featured: true,
       },
       {
         title: 'Cross-Border eCommerce Setup',
         icon: 'store',
-        desc: 'Start selling in China without registering a local company. Your products ship from a bonded warehouse, clear customs automatically, and land on Tmall Global or JD Worldwide with a fully operational storefront.',
-        bullets: [
-          'A live store earning revenue within months instead of years',
-          'No Chinese entity required, no upfront infrastructure investment',
-          'Customs, logistics and compliance handled from day one',
-          'A live market test with real sales data before you commit to a bigger bet',
-        ],
+        tagline: 'Tmall Global & JD Worldwide',
+        desc: 'Start selling in China without registering a local company. Bonded warehouse, customs clearance, a fully operational storefront on Tmall Global or JD Worldwide.',
+        image: '/Images/enter-china/ecommerce.jpg',
+        imageAlt: 'A Tmall Global storefront on a tablet inside a bonded warehouse',
         href: '/enter-china/cross-border-setup',
       },
       {
         title: 'Distribution',
         icon: 'truck',
-        desc: 'The fastest way to get your products onto shelves and into warehouses across China. We either find the right distributor for your category or act as your distributor directly.',
-        bullets: [
-          'Access to established retail networks, both online and offline',
-          'B2B distribution into chain retailers, department stores, specialty shops',
-          'B2C and DTC distribution for brands that want to control pricing and positioning',
-          'A partner who already has the relationships, the logistics and the regulatory know-how in your sector',
-        ],
+        tagline: 'B2B & DTC channels',
+        desc: 'The fastest way to get your products onto shelves and into warehouses across China. We find the right distributor for your category or act as your distributor ourselves.',
+        image: '/Images/enter-china/dist-hero-warehouse.png',
+        imageAlt: 'A distribution warehouse in China with palletised products ready for retail',
         href: '/enter-china/distribution',
+      },
+      {
+        title: 'Branding & Localisation',
+        icon: 'tag',
+        tagline: 'Name, identity, voice',
+        desc: 'Your brand was built for Western consumers. Chinese consumers read it differently. Naming, visual identity, packaging, tone of voice. This work happens before you launch, not after.',
+        image: '/Images/branding/visual-identity.png',
+        imageAlt: 'Brand identity boards adapted for the Chinese market, type and color samples',
+        href: '/enter-china/branding-localisation',
       },
     ],
   },
@@ -132,77 +121,50 @@ const servicesByStage = [
     intro: "You're already selling. Now make it work harder.",
     services: [
       {
-        title: 'Cross-Border eCommerce Operations',
+        title: 'Cross-Border eCommerce',
         icon: 'bag',
-        desc: 'Running a store on Tmall Global or JD Worldwide is a daily job. Product listings, promotions, customer service, logistics coordination, platform compliance. We handle the operations so your team can focus on the product and the brand.',
-        bullets: [
-          'Day-to-day store management by a team that knows the platform rules inside out',
-          'Optimized product listings, pricing strategy and promotional calendar',
-          'Customer service in Mandarin, handled professionally',
-          'Higher conversion rates from people who have been running these stores for years',
-        ],
+        tagline: 'Stores run end-to-end',
+        desc: 'Listings, promotions, customer service in Mandarin, logistics coordination, platform compliance. We run the daily work so your team can stay on product and brand.',
+        image: '/Images/grow-in-china/social-commerce/team-livestream-control.png',
+        imageAlt: 'An eCommerce operations team in Shanghai working on Tmall storefront updates',
         href: '/grow-in-china/cross-border-ecommerce',
+        featured: true,
       },
       {
         title: 'Social Commerce',
         icon: 'chat',
-        desc: "Douyin, WeChat and RED are the platforms where Chinese consumers discover products and buy them in the same session. Livestream selling, KOL partnerships, in-app shops, content that converts directly into transactions.",
-        bullets: [
-          'Revenue from platforms most Western brands still treat as "brand awareness" channels',
-          'Livestream operations measured on sales, not views',
-          'KOL and KOC partnerships selected for your category, audience and price point',
-          'Shop setup, management and fulfillment on Douyin, WeChat and RED',
-        ],
+        tagline: 'Douyin, WeChat, RED',
+        desc: 'Livestream selling, KOL partnerships, in-app shops. Content that converts in the same session it builds awareness.',
+        image: '/Images/grow-in-china/social-commerce/hero-douyin-livestream.png',
+        imageAlt: 'A Douyin livestream session selling a brand product, host on camera mid-session',
         href: '/grow-in-china/social-commerce',
+      },
+      {
+        title: 'Campaigns',
+        icon: 'tag',
+        tagline: '618, Double 11, CNY',
+        desc: 'The big sales days do a serious chunk of the year. We pick the moments worth fighting for, build the creative, run the warm-up, stay on the peak day hour by hour.',
+        image: '/Images/grow-in-china/campaigns/hero-campaign-warroom.png',
+        imageAlt: 'A campaign war room during a Chinese shopping festival with screens tracking livestream and sales',
+        href: '/grow-in-china/campaigns',
       },
       {
         title: 'Media',
         icon: 'broadcast',
-        desc: 'Paid media in China runs on completely different platforms, different bidding systems, different creative formats. We plan and buy across Douyin, WeChat, RED, Baidu, Tmall, JD and programmatic channels, with everything tied back to eCommerce performance.',
-        bullets: [
-          'Media spend judged on sales rather than vanity metrics',
-          'Campaign planning across every major Chinese platform from one team',
-          "Creative adapted for each platform's format and audience behavior",
-          'Transparent reporting tied to store performance and revenue',
-        ],
+        tagline: 'Paid, planned, attributed',
+        desc: 'Douyin, WeChat, RED, Baidu, Tmall, JD and programmatic. One team planning and buying across every Chinese platform, everything tied back to eCommerce performance.',
+        image: '/Images/grow-in-china/media/hero-media-buying.png',
+        imageAlt: 'A media buying dashboard showing Chinese platform campaigns and live performance data',
         href: '/grow-in-china/media',
       },
       {
-        title: 'Website',
-        icon: 'monitor',
-        desc: "Your website needs to work behind the Great Firewall. That means the right hosting, the right CMS setup, the right performance optimization. We build and maintain WordPress sites that load fast in China, rank on Baidu, and give your brand a credible online presence for Chinese visitors. And with Chinese AI search engines like DeepSeek, Baidu Wenxin and Doubao now pulling answers directly from websites, your China site also needs to be structured for Generative Engine Optimization (GEO) so your brand shows up in AI-generated results, not just traditional search.",
-        bullets: [
-          "A website that actually loads in mainland China (most Western sites don't)",
-          'Hosting and technical setup compliant with Chinese regulations',
-          'Baidu SEO so Chinese consumers can find you when they search',
-          'GEO optimization so your brand appears in Chinese AI-powered search results (DeepSeek, Baidu Wenxin, Doubao)',
-          'A legitimate online presence that supports your eCommerce and distribution efforts',
-        ],
-        href: '/grow-in-china/website',
-      },
-      {
-        title: 'PR and Press Relations',
+        title: 'Influencers & KOLs',
         icon: 'megaphone',
-        desc: "Getting coverage in Chinese media builds the credibility that paid advertising can't buy. We work with journalists, editors, WeChat Channel creators and industry voices to get your brand talked about in the right places.",
-        bullets: [
-          'Press coverage in Chinese media that matters for your category',
-          "Relationships with journalists and editors you couldn't reach on your own",
-          'Press releases written for Chinese media, not translated from English',
-          'Credibility that supports your eCommerce listings and distributor conversations',
-        ],
-        href: '/grow-in-china/pr',
-      },
-      {
-        title: 'Offline Events and Exhibitions',
-        icon: 'calendar',
-        desc: "Product launches, trade shows, pop-up stores, VIP events, conferences. Whether you're introducing your brand to distributors in Shanghai or hosting consumers in Shenzhen, we plan and execute the whole thing on the ground.",
-        bullets: [
-          'Events planned and run entirely in China by a local team',
-          'Venue sourcing, supplier management and guest coordination, all handled',
-          'Brand experiences built for Chinese audiences from the start, instead of Western formats adapted on the fly',
-          'A physical presence that reinforces your digital and eCommerce activity',
-        ],
-        href: '/grow-in-china/events',
+        tagline: 'Casting, briefing, reporting',
+        desc: 'Chinese shoppers research, decide and buy in the same scroll. Casting from our own KOC database, briefs that leave room for the creator, sales tied back creator by creator.',
+        image: '/Images/grow-in-china/influencers-kols/hero-kol-livestream.png',
+        imageAlt: 'A Chinese KOL on a livestream set, brand product on display, audience comments scrolling',
+        href: '/grow-in-china/influencers-kols',
       },
     ],
   },
@@ -214,49 +176,38 @@ const servicesByStage = [
       {
         title: 'Platforms',
         icon: 'grid',
-        desc: 'Tmall, Taobao, JD, Douyin, WeChat, RED. Each platform carries its own audience, its own commercial logic and its own operating rules. Understanding what each one does on the ground is the starting point for any serious China plan.',
-        bullets: [
-          'A clear map of the major Chinese eCommerce and content platforms',
-          'Who uses each platform and what they buy there',
-          'How the commercial model differs from one platform to the next',
-          'Which platforms matter for your category and price point',
-        ],
+        tagline: 'How each one actually works',
+        desc: 'Tmall, JD, Douyin, WeChat, RED. Each platform carries its own audience, its own commercial logic and its own operating rules. A clear map before you commit budget.',
+        image: '/Images/learn-china/platforms/hero.png',
+        imageAlt: 'A grid of Chinese eCommerce and social platforms on phone screens',
         href: '/learn-china/platforms',
+        featured: true,
       },
       {
         title: 'Masterclass',
         icon: 'cap',
-        desc: "A concentrated training program covering China's digital ecosystem, eCommerce platforms, consumer behavior and campaign mechanics. Taught by practitioners who run operations in the market every day, not by academics.",
-        bullets: [
-          "Your team leaves understanding how China's platforms work day-to-day",
-          'Practical knowledge your marketing and commercial teams can use right away',
-          'Training delivered by operators with 20 years of China experience',
-          'Programs built around your industry, your category and your level of China exposure',
-        ],
+        tagline: 'Operators teaching teams',
+        desc: 'A concentrated training programme covering platforms, consumer behaviour and campaign mechanics. Taught by people who run China every day.',
+        image: '/Images/CyrilMasterclass.jpg',
+        imageAlt: 'A masterclass session on China commerce, audience taking notes',
         href: '/learn-china/masterclass',
       },
       {
         title: 'Learning Expeditions',
         icon: 'pin',
-        desc: 'Fly to China and see it for yourself. Visit live eCommerce operations, meet platform teams, watch livestream sessions in real time, talk to brand operators running campaigns right now. Built for executives and decision-makers who need to see the market before they commit.',
-        bullets: [
-          "Firsthand exposure to how China's commerce ecosystem operates day to day",
-          'Meetings with platform teams, brand operators and technology leaders',
-          'A trip built around your business questions instead of a generic tour',
-          "Confidence to make a China investment decision from what you have seen yourself",
-        ],
+        tagline: 'See it on the ground',
+        desc: 'Fly to China. Visit live eCommerce operations, meet platform teams, watch livestream sessions in real time. Built for decision-makers who need to see the market.',
+        image: '/Images/learn-china/hero-livestream-expedition.png',
+        imageAlt: 'International executives on a learning expedition visiting a livestream studio in Shanghai',
         href: '/learn-china/learning-expeditions',
       },
       {
         title: 'Insights',
         icon: 'bulb',
-        desc: 'Articles, analysis and market commentary written by people who work in the Chinese market every day. No recycled research, no trend reports repackaged from last year. Current thinking on eCommerce, platforms, consumer shifts and what it means for international brands.',
-        bullets: [
-          'Regular content that keeps you informed without wasting your time',
-          'Analysis grounded in live operations rather than theoretical frameworks',
-          'Early signals on platform changes, regulatory shifts and consumer trends',
-          'A resource you can share with your leadership team when they ask what is happening in China',
-        ],
+        tagline: 'Current market thinking',
+        desc: 'Articles and analysis written by people who work the Chinese market every day. Live thinking on platforms, consumer shifts and what it means for international brands.',
+        image: '/Images/learn-china/ai-discovery-shenzhen.png',
+        imageAlt: 'A research moment in Shenzhen, analyst reviewing Chinese platform data on a laptop',
         href: '/insights',
       },
     ],
@@ -372,8 +323,8 @@ function formatInsightDate(d?: Date) {
         <span class="home-hero__title-row home-hero__title-row--highlight">Understand China.</span>
       </h1>
       <p class="home-hero__lead home-reveal" style="--reveal-delay: 200ms;">
-        Marketing and eCommerce in China for global brands. Twenty years on the ground,
-        run out of Shanghai, Hong Kong and Paris.
+        We get brands and companies earning revenue in China. Stores on Tmall and JD,
+        social commerce on Douyin and RED, the right distributor for your category.
       </p>
       <div class="home-hero__actions home-reveal" style="--reveal-delay: 280ms;">
         <a class="btn btn--primary home-magnetic" href="/contact">Talk to us</a>
@@ -396,10 +347,52 @@ function formatInsightDate(d?: Date) {
       </div>
     </div>
 
-    <a href="#pillars" class="home-hero__scroll" aria-label="Scroll to next section">
+    <a href="#day-commerce" class="home-hero__scroll" aria-label="Scroll to next section">
       <span class="home-hero__scroll-line"></span>
       <span class="home-hero__scroll-text">Scroll</span>
     </a>
+  </section>
+
+  {/* ---------- DAY IN CHINESE COMMERCE ---------- */}
+  <section id="day-commerce" class="section day-timeline-section">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">A day in Chinese commerce</span>
+        <h2>Your brand, every moment of the day</h2>
+        <p class="section-header__lead">
+          Chinese consumers move across platforms from morning to night.
+          Each one has its own rules, content formats, and commercial logic.
+        </p>
+      </header>
+
+      <ol class="day-timeline" aria-label="A day with Chinese consumer platforms">
+        {dayStops.map((s) => (
+          <li class="day-stop">
+            <figure class="day-stop__photo">
+              <img src={s.photo} alt="" loading="lazy" decoding="async" />
+            </figure>
+            <div class="day-stop__info">
+              <span class="day-stop__time">{s.time}</span>
+              <span class="day-stop__moment">{s.moment}</span>
+              <span class="day-stop__platform">
+                <img class="day-stop__logo" src={s.logo} alt="" loading="lazy" decoding="async" />
+                <span class="day-stop__platform-text">
+                  <span class="day-stop__name">{s.name}</span>
+                  <span class="day-stop__zh">{s.zh}</span>
+                </span>
+              </span>
+            </div>
+          </li>
+        ))}
+      </ol>
+
+      <div class="day-timeline__cta">
+        <a href="#services" class="btn btn--primary">Discover our services</a>
+        <p class="day-timeline__cta-note">
+          The playbook changes by platform. See how we help brands show up on each one.
+        </p>
+      </div>
+    </div>
   </section>
 
   {/* ---------- PILLARS: ACCORDION ---------- */}
@@ -445,70 +438,45 @@ function formatInsightDate(d?: Date) {
     </div>
   </section>
 
-  {/* ---------- DAY IN CHINESE COMMERCE ---------- */}
-  <section class="section day-timeline-section">
-    <div class="container">
-      <header class="section-header section-header--center">
-        <span class="eyebrow">A day in Chinese commerce</span>
-        <h2>Your brand, every moment of the day</h2>
-        <p class="section-header__lead">
-          Chinese consumers move across platforms from morning to night.
-          Each one has its own rules, content formats, and commercial logic.
-        </p>
-      </header>
-
-      <ol class="day-timeline" aria-label="A day with Chinese consumer platforms">
-        {dayStops.map((s) => (
-          <li class="day-stop">
-            <figure class="day-stop__photo">
-              <img src={s.photo} alt="" loading="lazy" decoding="async" />
-            </figure>
-            <div class="day-stop__info">
-              <span class="day-stop__time">{s.time}</span>
-              <span class="day-stop__moment">{s.moment}</span>
-              <span class="day-stop__platform">
-                <img class="day-stop__logo" src={s.logo} alt="" loading="lazy" decoding="async" />
-                <span class="day-stop__platform-text">
-                  <span class="day-stop__name">{s.name}</span>
-                  <span class="day-stop__zh">{s.zh}</span>
-                </span>
-              </span>
-            </div>
-          </li>
-        ))}
-      </ol>
-
-      <div class="day-timeline__cta">
-        <a href="#services" class="btn btn--primary">Discover our services</a>
-        <p class="day-timeline__cta-note">
-          The playbook changes by platform. See how we help brands show up on each one.
-        </p>
-      </div>
-    </div>
-  </section>
-
   {/* ---------- SERVICES BY STAGE (TABBED) ---------- */}
-  <section class="section" id="services">
+  <section class="section svc-section" id="services">
+    <div class="svc-bg-deco" aria-hidden="true">
+      <div class="svc-bg-deco__orb svc-bg-deco__orb--1"></div>
+      <div class="svc-bg-deco__orb svc-bg-deco__orb--2"></div>
+      <div class="svc-bg-deco__grid"></div>
+    </div>
+
     <div class="container">
-      <header class="section-header section-header--center">
+      <header class="section-header section-header--center svc-section__header">
         <span class="eyebrow">Services</span>
         <h2>Every service you need, at every stage</h2>
+        <p class="svc-section__sub">From your first store on Tmall to a brand Chinese consumers can name. Three stages, every service on the same team.</p>
       </header>
 
-      <div class="svc-tabs" role="tablist" aria-label="Services by stage">
-        {servicesByStage.map((stage, i) => (
-          <button
-            type="button"
-            role="tab"
-            class={`svc-tab${i === 0 ? ' is-active' : ''}`}
-            aria-selected={i === 0 ? 'true' : 'false'}
-            aria-controls={`svc-panel-${stage.key}`}
-            data-stage={stage.key}
-            id={`svc-tab-${stage.key}`}
-          >
-            {stage.label}
-          </button>
-        ))}
+      <div class="svc-tabs-wrap" data-svc-sticky>
+        <div class="svc-tabs" role="tablist" aria-label="Services by stage">
+          <span class="svc-tabs__indicator" aria-hidden="true"></span>
+          {servicesByStage.map((stage, i) => (
+            <button
+              type="button"
+              role="tab"
+              class={`svc-tab${i === 0 ? ' is-active' : ''}`}
+              aria-selected={i === 0 ? 'true' : 'false'}
+              aria-controls={`svc-panel-${stage.key}`}
+              data-stage={stage.key}
+              id={`svc-tab-${stage.key}`}
+            >
+              <span class="svc-tab__num" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  {stage.key === 'enter' && <><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></>}
+                  {stage.key === 'grow' && <><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-6"/></>}
+                  {stage.key === 'learn' && <><path d="M2 9 12 5l10 4-10 4z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></>}
+                </svg>
+              </span>
+              <span class="svc-tab__label">{stage.label}</span>
+            </button>
+          ))}
+        </div>
       </div>
 
       {servicesByStage.map((stage, i) => (
@@ -521,30 +489,191 @@ function formatInsightDate(d?: Date) {
         >
           <p class="svc-panel__intro">{stage.intro}</p>
 
-          <div class="services-grid">
-            {stage.services.map((s) => (
-              <article class="service-card">
-                <div class="service-card__head">
-                  <span class="service-icon" aria-hidden="true" set:html={svcIcon[s.icon]} />
-                  <div class="service-card__heading">
-                    <h3 class="service-card__title">{s.title}</h3>
+          <div class="svc-bento" data-svc-bento>
+            {stage.services.map((s, idx) => (
+              <a
+                href={s.href}
+                class={`svc-tile${s.featured ? ' svc-tile--featured' : ''}`}
+                data-svc-tile
+                style={`--svc-delay: ${idx * 70}ms;`}
+              >
+                <div class="svc-tile__media">
+                  <div class="svc-tile__image" data-svc-parallax>
+                    <img src={s.image} alt={s.imageAlt} loading="lazy" decoding="async" />
                   </div>
-                </div>
-                <p class="service-card__body">{s.desc}</p>
-
-                <div class="svc-checklist">
-                  <span class="svc-checklist__title">What you get</span>
-                  <ul>
-                    {s.bullets.map((b) => <li>{b}</li>)}
-                  </ul>
+                  <div class="svc-tile__media-overlay" aria-hidden="true"></div>
+                  <div class="svc-tile__media-grain" aria-hidden="true"></div>
+                  <span class="svc-tile__chip" aria-hidden="true">
+                    <span class="svc-tile__chip-icon" set:html={svcIcon[s.icon]} />
+                  </span>
+                  <span class="svc-tile__tag">{s.tagline}</span>
                 </div>
 
-                <a href={s.href} class="service-card__link">Learn more →</a>
-              </article>
+                <div class="svc-tile__body">
+                  <h3 class="svc-tile__title">
+                    <span class="svc-tile__title-text">{s.title}</span>
+                    <span class="svc-tile__title-underline" aria-hidden="true"></span>
+                  </h3>
+                  <p class="svc-tile__desc">{s.desc}</p>
+
+                  <span class="svc-tile__cta">
+                    <span class="svc-tile__cta-text">Learn more</span>
+                    <span class="svc-tile__cta-arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </span>
+                  </span>
+                </div>
+
+                <span class="svc-tile__spotlight" aria-hidden="true"></span>
+                <span class="svc-tile__corner" aria-hidden="true"></span>
+              </a>
             ))}
           </div>
         </div>
       ))}
+    </div>
+  </section>
+
+  {/* ---------- BEYONDCOMPASS: STANDOUT FEATURE ---------- */}
+  <section class="bc-section" id="beyondcompass" data-bc-section>
+    <div class="bc-bg" aria-hidden="true">
+      <div class="bc-bg__glow bc-bg__glow--1"></div>
+      <div class="bc-bg__glow bc-bg__glow--2"></div>
+      <div class="bc-bg__grid"></div>
+      <div class="bc-bg__scan"></div>
+    </div>
+
+    <div class="container bc-section__inner">
+      <div class="bc-copy">
+        <span class="eyebrow eyebrow--on-dark bc-copy__eyebrow">Our edge</span>
+        <div class="bc-copy__brand">
+          <img
+            src="/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp"
+            alt="BeyondCompass"
+            class="bc-copy__logo"
+            width="420"
+            height="100"
+            loading="lazy"
+          />
+        </div>
+        <h2 class="bc-copy__title">The partner database we built for ourselves.</h2>
+        <p class="bc-copy__lead">
+          Every distributor we've vetted. Every TP and DP we've worked with.
+          Every channel operator we know by name. Twenty years of relationships,
+          turned into a database. Now yours to search.
+        </p>
+
+        <ul class="bc-features">
+          <li class="bc-feature">
+            <span class="bc-feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.16 0 4.13.76 5.68 2.03"/></svg>
+            </span>
+            <div class="bc-feature__text">
+              <h3>Hand-vetted by our team</h3>
+              <p>Every partner cleared before we add them. Track records you can verify, references you can call.</p>
+            </div>
+          </li>
+          <li class="bc-feature">
+            <span class="bc-feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.5V19l4 2v-8.5L22 3z"/></svg>
+            </span>
+            <div class="bc-feature__text">
+              <h3>Filtered the way you search</h3>
+              <p>Category, region, channel, price tier, brand portfolio. The wrong fits drop out before the first call.</p>
+            </div>
+          </li>
+          <li class="bc-feature">
+            <span class="bc-feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </span>
+            <div class="bc-feature__text">
+              <h3>Kept current, quarterly</h3>
+              <p>The team using BeyondCompass on live projects is the same team keeping it current.</p>
+            </div>
+          </li>
+        </ul>
+
+        <a
+          class="bc-cta"
+          href="https://beyondcompass.beyondbordergroup.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="bc-cta__text">Explore BeyondCompass</span>
+          <span class="bc-cta__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+          <span class="bc-cta__ring" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="bc-mock" aria-hidden="true">
+        <div class="bc-mock__floats">
+          <div class="bc-mock__float bc-mock__float--top">
+            <span class="bc-mock__float-dot"></span>
+            <span>Verified partners only</span>
+          </div>
+          <div class="bc-mock__float bc-mock__float--bottom">
+            <strong>20 years</strong>
+            <span>of vetting, in one search</span>
+          </div>
+        </div>
+
+        <div class="bc-mock__window">
+          <div class="bc-mock__chrome">
+            <span class="bc-mock__dot bc-mock__dot--r"></span>
+            <span class="bc-mock__dot bc-mock__dot--y"></span>
+            <span class="bc-mock__dot bc-mock__dot--g"></span>
+            <span class="bc-mock__url">beyondcompass.beyondbordergroup.com</span>
+          </div>
+          <div class="bc-mock__body">
+            <div class="bc-mock__header">
+              <span class="bc-mock__brand">BeyondCompass</span>
+              <span class="bc-mock__count">
+                <span class="bc-mock__count-dot"></span>
+                Live database
+              </span>
+            </div>
+            <div class="bc-mock__search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <span class="bc-mock__search-text">Beauty distributors, Tier 1 cities</span>
+              <span class="bc-mock__search-cursor"></span>
+            </div>
+            <div class="bc-mock__chips">
+              <span class="bc-mock__chip is-on">Beauty</span>
+              <span class="bc-mock__chip is-on">Tier 1</span>
+              <span class="bc-mock__chip">Tmall Global</span>
+              <span class="bc-mock__chip">DTC</span>
+            </div>
+            <ul class="bc-mock__results">
+              <li class="bc-mock__result">
+                <div class="bc-mock__avatar bc-mock__avatar--1">L</div>
+                <div class="bc-mock__result-info">
+                  <span class="bc-mock__result-name">Luxe China Partners</span>
+                  <span class="bc-mock__result-meta">Beauty, premium, Tmall Global</span>
+                </div>
+                <span class="bc-mock__tag bc-mock__tag--ok">Verified</span>
+              </li>
+              <li class="bc-mock__result">
+                <div class="bc-mock__avatar bc-mock__avatar--2">B</div>
+                <div class="bc-mock__result-info">
+                  <span class="bc-mock__result-name">BlueLine Retail Group</span>
+                  <span class="bc-mock__result-meta">FMCG, Tier 1 retail, Shanghai</span>
+                </div>
+                <span class="bc-mock__tag bc-mock__tag--ok">Verified</span>
+              </li>
+              <li class="bc-mock__result">
+                <div class="bc-mock__avatar bc-mock__avatar--3">S</div>
+                <div class="bc-mock__result-info">
+                  <span class="bc-mock__result-name">Shenzhen Trade House</span>
+                  <span class="bc-mock__result-meta">Electronics, JD Worldwide</span>
+                </div>
+                <span class="bc-mock__tag bc-mock__tag--ok">Verified</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1146,19 +1275,148 @@ function formatInsightDate(d?: Date) {
       });
     });
 
-    document.querySelectorAll('.svc-tab').forEach((tab) => {
-      tab.addEventListener('click', () => {
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const tabs = Array.from(document.querySelectorAll('.svc-tab'));
+      const indicator = document.querySelector('.svc-tabs__indicator');
+
+      const moveIndicator = (tab) => {
+        if (!indicator || !tab) return;
+        const parent = tab.parentElement;
+        const pRect = parent.getBoundingClientRect();
+        const tRect = tab.getBoundingClientRect();
+        indicator.style.setProperty('--x', (tRect.left - pRect.left) + 'px');
+        indicator.style.setProperty('--w', tRect.width + 'px');
+      };
+
+      const setActive = (tab) => {
         const stage = tab.dataset.stage;
-        document.querySelectorAll('.svc-tab').forEach((t) => {
+        tabs.forEach((t) => {
           const on = t === tab;
           t.classList.toggle('is-active', on);
           t.setAttribute('aria-selected', on ? 'true' : 'false');
         });
         document.querySelectorAll('.svc-panel').forEach((p) => {
-          p.classList.toggle('is-active', p.dataset.stage === stage);
+          const on = p.dataset.stage === stage;
+          p.classList.toggle('is-active', on);
+          if (on) {
+            const tiles = p.querySelectorAll('[data-svc-tile]');
+            tiles.forEach((tile) => {
+              tile.classList.remove('is-in');
+              void tile.offsetWidth;
+              tile.classList.add('is-in');
+            });
+          }
         });
+        moveIndicator(tab);
+      };
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => setActive(tab));
       });
-    });
+
+      const active = document.querySelector('.svc-tab.is-active');
+      if (active) requestAnimationFrame(() => moveIndicator(active));
+      window.addEventListener('resize', () => {
+        const a = document.querySelector('.svc-tab.is-active');
+        if (a) moveIndicator(a);
+      });
+
+      // Tiles: scroll reveal + mouse spotlight + 3D tilt + image parallax
+      const tiles = document.querySelectorAll('[data-svc-tile]');
+      if (tiles.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          tiles.forEach((t) => t.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+          tiles.forEach((tile) => io.observe(tile));
+        }
+
+        tiles.forEach((tile) => {
+          if (reduced) return;
+          const img = tile.querySelector('[data-svc-parallax] img');
+
+          tile.addEventListener('pointermove', (e) => {
+            const r = tile.getBoundingClientRect();
+            const x = (e.clientX - r.left) / r.width;
+            const y = (e.clientY - r.top) / r.height;
+            tile.style.setProperty('--mx', (x * 100) + '%');
+            tile.style.setProperty('--my', (y * 100) + '%');
+            const rx = (0.5 - y) * 6;
+            const ry = (x - 0.5) * 8;
+            tile.style.setProperty('--rx', rx + 'deg');
+            tile.style.setProperty('--ry', ry + 'deg');
+            if (img) {
+              const px = (x - 0.5) * -10;
+              const py = (y - 0.5) * -10;
+              img.style.setProperty('--px', px + 'px');
+              img.style.setProperty('--py', py + 'px');
+            }
+          });
+          tile.addEventListener('pointerleave', () => {
+            tile.style.setProperty('--mx', '50%');
+            tile.style.setProperty('--my', '50%');
+            tile.style.setProperty('--rx', '0deg');
+            tile.style.setProperty('--ry', '0deg');
+            if (img) {
+              img.style.setProperty('--px', '0px');
+              img.style.setProperty('--py', '0px');
+            }
+          });
+        });
+
+        // Image scroll-parallax inside each tile (subtle)
+        if (!reduced) {
+          const parallaxImgs = document.querySelectorAll('[data-svc-parallax] img');
+          let parallaxTicking = false;
+          const updateParallax = () => {
+            parallaxImgs.forEach((img) => {
+              const frame = img.parentElement;
+              const r = frame.getBoundingClientRect();
+              const vh = window.innerHeight;
+              if (r.bottom < 0 || r.top > vh) return;
+              const center = r.top + r.height / 2;
+              const ratio = (center - vh / 2) / vh;
+              const shift = Math.max(-14, Math.min(14, ratio * -22));
+              img.style.setProperty('--sy', shift + 'px');
+            });
+            parallaxTicking = false;
+          };
+          window.addEventListener('scroll', () => {
+            if (parallaxTicking) return;
+            parallaxTicking = true;
+            requestAnimationFrame(updateParallax);
+          }, { passive: true });
+          updateParallax();
+        }
+      }
+    })();
+
+    // BeyondCompass: trigger stagger animation when section enters viewport
+    (() => {
+      const bc = document.querySelector('[data-bc-section]');
+      if (!bc) return;
+      if (!('IntersectionObserver' in window)) {
+        bc.classList.add('is-in');
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            bc.classList.add('is-in');
+            io.unobserve(bc);
+          }
+        });
+      }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
+      io.observe(bc);
+    })();
   </script>
 
 </Layout>

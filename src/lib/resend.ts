@@ -53,12 +53,15 @@ export async function sendContactEmail(payload: ContactPayload) {
 		from: FROM_ADDRESS,
 		to,
 		replyTo: email,
-		subject: `New enquiry from ${name}${company ? ` — ${company}` : ''}`,
+		subject: `New enquiry from ${name}${company ? ` - ${company}` : ''}`,
 		html,
 		text,
 	});
 
-	if (error) throw new Error(error.message ?? 'Resend send failed.');
+	if (error) {
+		console.error('[resend] send failed', { from: FROM_ADDRESS, to, error });
+		throw new Error(error.message ?? 'Resend send failed.');
+	}
 	return data;
 }
 

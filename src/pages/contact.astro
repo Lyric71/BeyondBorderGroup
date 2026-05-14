@@ -230,8 +230,10 @@ const bgWords = [
 
         form.reset();
         rollCaptcha();
-        status.textContent = 'Thanks. Your message is on its way and we will reply within one business day.';
+        status.textContent = 'Thanks. Redirecting...';
         status.classList.add('form__status--success');
+        window.location.assign('/thank-you');
+        return;
       } catch (err) {
         status.textContent = err && err.message ? err.message : 'Something went wrong. Please try again.';
         status.classList.add('form__status--error');

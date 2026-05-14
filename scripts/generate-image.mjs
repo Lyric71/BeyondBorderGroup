@@ -12,10 +12,16 @@ if (sizeFlagIdx !== -1 && args[sizeFlagIdx + 1]) {
   size = args[sizeFlagIdx + 1];
   args.splice(sizeFlagIdx, 2);
 }
+const outFlagIdx = args.findIndex((a) => a === '--out');
+let outPath = null;
+if (outFlagIdx !== -1 && args[outFlagIdx + 1]) {
+  outPath = args[outFlagIdx + 1];
+  args.splice(outFlagIdx, 2);
+}
 const prompt = args.join(' ');
 
 if (!prompt) {
-  console.error('Usage: node scripts/generate-image.mjs [--size 16:9] <prompt>');
+  console.error('Usage: node scripts/generate-image.mjs [--size 16:9] [--out path/to/file.png] <prompt>');
   process.exit(1);
 }
 
@@ -57,7 +63,11 @@ async function generate() {
       // Download and save
       const imgRes = await fetch(imageUrl);
       const buffer = Buffer.from(await imgRes.arrayBuffer());
-      const filename = `generated-${Date.now()}.png`;
+      const filename = outPath ?? `generated-${Date.now()}.png`;
+      const dir = filename.includes('/') || filename.includes('\\')
+        ? filename.replace(/[\\/][^\\/]*$/, '')
+        : null;
+      if (dir) fs.mkdirSync(dir, { recursive: true });
       fs.writeFileSync(filename, buffer);
 
       console.log(`\nSaved: ${filename}`);

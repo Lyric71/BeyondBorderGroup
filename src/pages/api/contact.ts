@@ -43,6 +43,7 @@ export const POST: APIRoute = async ({ request }) => {
 		await sendContactEmail({ name, email, company, message });
 		return json({ success: true }, 200);
 	} catch (err) {
+		console.error('[api/contact] send failed', err);
 		const m = err instanceof Error ? err.message : 'Unknown error.';
 		return json({ error: m }, 500);
 	}

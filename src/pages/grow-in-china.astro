@@ -1,0 +1,462 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const services = [
+  {
+    eyebrow: 'Stores',
+    title: 'Cross-Border eCommerce',
+    tagline: 'Tmall Global and JD Worldwide. We run them, stock to checkout.',
+    href: '/grow-in-china/cross-border-ecommerce',
+    cta: 'See the store work',
+    image: '/Images/grow-in-china/hero-livestream-shopper.png',
+    alt: 'A Chinese shopper checks out a Tmall Global cart during a livestream broadcast on her phone',
+    accent: '#269ADA',
+    accentSoft: '#E8F4FC',
+    span: 'wide',
+  },
+  {
+    eyebrow: 'Channels',
+    title: 'Social Commerce',
+    tagline: 'Douyin, WeChat, RED. Livestream rooms and daily content.',
+    href: '/grow-in-china/social-commerce',
+    cta: 'See the social work',
+    image: '/Images/grow-in-china/social-commerce/hero-douyin-livestream.png',
+    alt: 'A Douyin livestream room with host on camera and operator at a control desk',
+    accent: '#E54B6E',
+    accentSoft: '#FCEAEF',
+    span: 'narrow',
+  },
+  {
+    eyebrow: 'Moments',
+    title: 'Campaigns',
+    tagline: '618, Singles Day, CNY. The dates that decide the year, run end to end.',
+    href: '/grow-in-china/campaigns',
+    cta: 'See the campaign work',
+    image: '/Images/grow-in-china/campaigns/hero-campaign-warroom.png',
+    alt: 'A campaign control room during a Chinese shopping festival, operators tracking a live GMV dashboard',
+    accent: '#DC2626',
+    accentSoft: '#FEE2E2',
+    span: 'third',
+  },
+  {
+    eyebrow: 'Reach',
+    title: 'Media',
+    tagline: 'Performance and brand buys across Chinese platforms, with reporting your team can read.',
+    href: '/grow-in-china/media',
+    cta: 'See the media work',
+    image: '/Images/grow-in-china/media/hero-media-buying.png',
+    alt: 'A media buyer reviewing a Tencent and ByteDance dashboard in a Shanghai office',
+    accent: '#7C5DFA',
+    accentSoft: '#F0EDFE',
+    span: 'third',
+  },
+  {
+    eyebrow: 'Voices',
+    title: 'Influencers & KOLs',
+    tagline: 'KOL casting and paid drops on the platforms that actually sell.',
+    href: '/grow-in-china/influencers-kols',
+    cta: 'See the KOL work',
+    image: '/Images/grow-in-china/influencers-kols/hero-kol-livestream.png',
+    alt: 'A KOL on Douyin presenting a foreign brand to her audience during a paid livestream',
+    accent: '#F59E0B',
+    accentSoft: '#FFF4E0',
+    span: 'third',
+  },
+];
+
+const studios = [
+  {
+    label: 'ChinaWebFoundry',
+    desc: 'Your website, built in Shanghai for China. ICP, hosting, performance behind the Great Firewall.',
+    href: 'https://chinawebfoundry.com',
+    logo: '/Images/AgencyLogos/Logo-ChinaWebFoundry-transparent.webp',
+  },
+  {
+    label: 'hubStudio',
+    desc: 'The in-house production house. Shoots, edits, post, animation. Made for Chinese platforms.',
+    href: 'https://hubstudio.ai',
+    logo: '/Images/AgencyLogos/hubStudio%20(2).webp',
+  },
+];
+---
+
+<Layout
+  title="Grow in China | BeyondBorderGroup"
+  description="Cross-border eCommerce, social commerce, campaigns, media, KOLs. One Shanghai team running your China business day to day."
+>
+
+  {/* ---------- HERO ---------- */}
+  <section class="hero-fullbleed">
+    <picture>
+      <img
+        src="/Images/grow-in-china/hero-livestream-shopper.png"
+        alt=""
+        class="hero-fullbleed__image"
+        width="1600"
+        height="900"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </picture>
+    <div class="hero-fullbleed__overlay" aria-hidden="true"></div>
+
+    <div class="container hero-fullbleed__inner">
+      <div class="hero-fullbleed__copy">
+        <span class="eyebrow eyebrow--on-dark">Grow in China</span>
+        <h1 class="hero-fullbleed__title">Run China. Every day.</h1>
+        <p class="hero-fullbleed__lead">
+          One Shanghai team operating your stores, your channels and your brand voice. Pick the service you need today.
+        </p>
+        <div class="hero-fullbleed__actions">
+          <a class="btn btn--primary" href="/contact">Talk to us</a>
+          <a class="btn btn--ghost-light" href="#services">See the services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- SERVICES GRID ---------- */}
+  <section class="section" id="services">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">Five services, one team</span>
+        <h2>Pick where you need us this quarter.</h2>
+        <p class="section-header__lead">
+          Some brands need a flagship store run. Some need a livestream rhythm. Some are sitting on a 618 plan with no team to execute. Start where it hurts.
+        </p>
+      </header>
+
+      <div class="grow-grid">
+        {services.map((s) => (
+          <a
+            href={s.href}
+            class={`grow-tile grow-tile--${s.span}`}
+            style={`--accent: ${s.accent}; --accent-soft: ${s.accentSoft};`}
+          >
+            <div class="grow-tile__media">
+              <img src={s.image} alt={s.alt} loading="lazy" decoding="async" />
+              <div class="grow-tile__scrim" aria-hidden="true"></div>
+            </div>
+
+            <div class="grow-tile__body">
+              <span class="grow-tile__eyebrow">{s.eyebrow}</span>
+              <h3 class="grow-tile__title">{s.title}</h3>
+              <p class="grow-tile__tagline">{s.tagline}</p>
+              <span class="grow-tile__cta">
+                {s.cta}
+                <span class="grow-tile__arrow" aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- STUDIOS ---------- */}
+  <section class="section section--tight section--alt" id="studios">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">Studios in the group</span>
+        <h2>Two studios that plug straight in.</h2>
+        <p class="section-header__lead">
+          When the work needs a website behind the Firewall or a full production crew, these two pick it up.
+        </p>
+      </header>
+
+      <div class="studio-grid">
+        {studios.map((st) => (
+          <a
+            href={st.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="studio-card"
+            aria-label={`${st.label} (opens in new tab): ${st.desc}`}
+          >
+            <span class="studio-card__logobox">
+              <img src={st.logo} alt={st.label} loading="lazy" width="320" height="80" />
+            </span>
+            <span class="studio-card__desc">{st.desc}</span>
+            <span class="studio-card__cta">
+              Visit site
+              <span aria-hidden="true">↗</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- FINAL CTA ---------- */}
+  <section class="section section--tight">
+    <div class="container">
+      <div class="grow-cta">
+        <div class="grow-cta__copy">
+          <span class="eyebrow">Not sure where to start?</span>
+          <h2>Send us your last campaign report. We will tell you what is missing.</h2>
+          <p class="grow-cta__lead">
+            A senior operator writes back, never a chatbot. Twenty minutes on the phone usually saves you a quarter.
+          </p>
+        </div>
+        <div class="grow-cta__actions">
+          <a class="btn btn--primary" href="/contact">Start the conversation</a>
+          <a class="btn btn--ghost" href="/work">See our work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* ---------- Bento services grid ---------- */
+  .grow-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+  }
+
+  .grow-tile--wide   { grid-column: span 4; }
+  .grow-tile--narrow { grid-column: span 2; }
+  .grow-tile--third  { grid-column: span 2; }
+
+  .grow-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 380px;
+    padding: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    color: #fff;
+    background: var(--bbg-ink);
+    isolation: isolate;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .grow-tile--wide { min-height: 440px; }
+  .grow-tile--narrow { min-height: 440px; }
+
+  .grow-tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent);
+    z-index: 3;
+  }
+
+  .grow-tile__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .grow-tile__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .grow-tile__scrim {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.3) 45%, rgba(0,0,0,0.85) 100%);
+    z-index: 1;
+    transition: opacity 300ms ease;
+  }
+
+  .grow-tile__body {
+    position: relative;
+    z-index: 2;
+    max-width: 36rem;
+  }
+
+  .grow-tile__eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .grow-tile__title {
+    font-size: clamp(1.4rem, 1.6vw + 0.9rem, 1.85rem);
+    line-height: 1.15;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.55rem;
+    letter-spacing: -0.01em;
+  }
+
+  .grow-tile--wide .grow-tile__title {
+    font-size: clamp(1.6rem, 2.2vw + 1rem, 2.25rem);
+  }
+
+  .grow-tile__tagline {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.92);
+    margin: 0 0 1.15rem;
+    max-width: 28rem;
+  }
+
+  .grow-tile__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    width: fit-content;
+    transition: border-color 200ms ease, color 200ms ease;
+  }
+
+  .grow-tile__arrow {
+    display: inline-block;
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .grow-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+    color: #fff;
+  }
+  .grow-tile:hover .grow-tile__media img { transform: scale(1.05); }
+  .grow-tile:hover .grow-tile__scrim {
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0.9) 100%);
+  }
+  .grow-tile:hover .grow-tile__cta { border-color: #fff; }
+  .grow-tile:hover .grow-tile__arrow { transform: translateX(6px); }
+
+  .grow-tile:focus-visible {
+    outline: 3px solid var(--bbg-blue);
+    outline-offset: 4px;
+  }
+
+  /* ---------- Studios row ---------- */
+  .studio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .studio-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.75rem;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid var(--bbg-border);
+    color: var(--bbg-text);
+    text-decoration: none;
+    transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+  }
+
+  .studio-card__logobox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 56px;
+  }
+  .studio-card__logobox img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .studio-card__desc {
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--bbg-text);
+    margin: 0;
+  }
+
+  .studio-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+    color: var(--bbg-blue);
+    font-size: 0.95rem;
+  }
+
+  .studio-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--bbg-blue);
+    box-shadow: 0 16px 32px rgba(38, 154, 218, 0.1);
+  }
+  .studio-card:focus-visible {
+    outline: 3px solid var(--bbg-blue);
+    outline-offset: 3px;
+  }
+
+  /* ---------- Final CTA ---------- */
+  .grow-cta {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  .grow-cta__copy h2 { margin: 0 0 0.75rem; }
+  .grow-cta__lead {
+    font-size: 1.0625rem;
+    color: var(--bbg-text);
+    margin: 0;
+    max-width: 38rem;
+  }
+  .grow-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: flex-end;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1024px) {
+    .grow-grid { grid-template-columns: repeat(2, 1fr); }
+    .grow-tile--wide,
+    .grow-tile--narrow,
+    .grow-tile--third { grid-column: span 1; }
+    .grow-tile--wide { grid-column: span 2; }
+  }
+
+  @media (max-width: 720px) {
+    .grow-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .grow-tile--wide,
+    .grow-tile--narrow,
+    .grow-tile--third { grid-column: span 1; min-height: 360px; }
+    .studio-grid { grid-template-columns: 1fr; }
+    .grow-cta { grid-template-columns: 1fr; }
+    .grow-cta__actions { justify-content: flex-start; }
+  }
+
+  @media (max-width: 480px) {
+    .grow-tile { min-height: 340px; padding: 1.5rem; }
+    .grow-tile__tagline { font-size: 0.95rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .grow-tile,
+    .grow-tile__media img,
+    .grow-tile__scrim,
+    .grow-tile__cta,
+    .grow-tile__arrow,
+    .studio-card { transition: none !important; }
+  }
+</style>
