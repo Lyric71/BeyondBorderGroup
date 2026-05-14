@@ -12,7 +12,7 @@ const promises = [
   },
   {
     title: 'Independent creator sourcing',
-    desc: 'We do not take kickbacks from creators or agencies. Your interests on our side of the table.',
+    desc: 'We do not take kickbacks from creators or agencies. Your interests sit on our side of the table.',
   },
 ];
 
@@ -200,7 +200,7 @@ const rhythms = [
     tabId: 'measurement',
     pill: 'Quarterly',
     title: 'Festival push and measurement',
-    desc: 'The big moments (11.11, 6.18, Women’s Day, CNY) carry their weight. Festival prep starts six months out, not the week before. Then the report tells you what to change for the next one.',
+    desc: "The big moments (11.11, 6.18, Women's Day, CNY) carry their weight. Festival prep starts six months out, not the week before. Then the report tells you what to change for the next one.",
     outcome: 'Festivals carry their share of the year. The post-mortem tells you what to change for the next one.',
     image: '/Images/grow-in-china/social-commerce/cadence-quarterly-festival.png',
     imageAlt: 'A Douyin store dashboard during the 11.11 festival with the sales counter climbing in red Chinese characters',
@@ -236,14 +236,33 @@ const contextCards = [
   {
     image: '/Images/grow-in-china/social-commerce/truth-content-engine.png',
     alt: 'A Chinese content producer reviewing short-video drafts on a studio monitor, a notebook of handwritten Chinese notes beside her',
+    kicker: 'Content is sales',
     title: 'Content is the sales team',
-    body: 'Weak content on Douyin or RedNote means weak sales. If a shopper scrolls past your video in two seconds, the product never gets seen, no matter how good it is. We shoot, edit and ship the content ourselves, in Mandarin, every day.',
+    body: 'Weak content means weak sales. If a shopper scrolls past in two seconds, the product never gets seen. We shoot it ourselves, in Mandarin, every day.',
+    flow: ['Shoot', 'Edit', 'Ship'],
+    chipLabel: 'Daily content sync',
+    chipSub: 'Producers, editors, host, all in one room',
+    avatars: [
+      { letter: 'M', tone: 'blue' },
+      { letter: 'J', tone: 'dark' },
+      { letter: 'X', tone: 'green' },
+      { letter: 'L', tone: 'amber' },
+    ],
+    extraAvatars: '+4',
+    pinLabel: 'Output',
+    pinValue: '15 to 30 videos a month',
   },
   {
     image: '/Images/grow-in-china/social-commerce/truth-daily-operation.png',
     alt: 'A Douyin livestream room mid-session, host on camera in the back, two producers watching the live dashboard in the foreground',
+    kicker: 'Year-round rhythm',
     title: 'A daily operation, not a campaign',
-    body: 'Douyin stores need daily posts, weekly livestreams and ads behind both. The algorithm punishes silence. We run that rhythm year-round, festival or not.',
+    body: 'Douyin stores need daily posts, weekly livestreams and ads behind both. The algorithm punishes silence.',
+    credentials: ['Posts', 'Livestreams', 'Ads', 'Comments'],
+    chipLabel: 'Live on platform',
+    chipSub: 'Eight to twenty livestreams a month',
+    badge: 'The algorithm punishes silence',
+    badgeSub: 'So we run the rhythm, festival or not.',
   },
 ];
 
@@ -333,12 +352,12 @@ const serviceJsonLd = {
         </nav>
         <span class="eyebrow eyebrow--on-dark cbs-reveal">Social commerce</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
-          <span class="cbs-hero__title-row">In China, people don’t go to the store.</span>
+          <span class="cbs-hero__title-row">In China, people don't go to the store.</span>
           <span class="cbs-hero__title-row cbs-hero__title-row--accent">The store comes to their feed.</span>
           <span class="cbs-hero__title-row cbs-hero__title-row--highlight">We run that operation.</span>
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          Social commerce in China isn’t a layer on top of e-commerce. It’s the primary
+          Social commerce in China isn't a layer on top of e-commerce. It's the primary
           way most consumer brands sell here now. We run it for Shiseido, Pierre Fabre,
           Camper, Bassetti, Mous, MacuSee and others. The whole operation, not the deck.
         </p>
@@ -370,26 +389,137 @@ const serviceJsonLd = {
     </section>
 
     {/* ---------- TWO TRUTHS ---------- */}
-    <section id="two-truths" class="section">
+    <section id="two-truths" class="section cbs-truths-section">
+      <div class="cbs-truths-bg" aria-hidden="true">
+        <div class="cbs-truths-bg__blob cbs-truths-bg__blob--a"></div>
+        <div class="cbs-truths-bg__blob cbs-truths-bg__blob--b"></div>
+        <div class="cbs-truths-bg__grid"></div>
+      </div>
+
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Our approach</span>
           <h2>Two things to know before we touch your social commerce</h2>
           <p class="section-header__lead">
             Most brands approach Douyin and RedNote the way they approach any new market.
-            They do not reward that approach. Here is what shapes how we work.
+            Neither platform rewards that approach. Two things shape how we work instead.
           </p>
         </header>
 
-        <div class="cbs-context">
+        <div class="cbs-truths" data-truths>
           {contextCards.map((c, i) => (
-            <article class={`cbs-context__card${i === 1 ? ' cbs-context__card--alt' : ''} cbs-reveal`} style={`--reveal-delay: ${i * 120}ms;`}>
-              <figure class="cbs-context__media">
-                <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
-              </figure>
-              <div class="cbs-context__body">
-                <h3>{c.title}</h3>
-                <p>{c.body}</p>
+            <article
+              class={`cbs-truth${i === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
+              style={`--reveal-delay: ${i * 140}ms;`}
+              data-truth-tilt
+            >
+              <div class="cbs-truth__inner">
+                <div class="cbs-truth__stage">
+                  <div class="cbs-truth__frame">
+                    <img
+                      src={c.image}
+                      alt={c.alt}
+                      loading="lazy"
+                      decoding="async"
+                      data-truth-parallax
+                    />
+                    <div class="cbs-truth__shade" aria-hidden="true"></div>
+                    <div class="cbs-truth__sheen" aria-hidden="true"></div>
+                  </div>
+
+                  <div class="cbs-truth__kicker" aria-hidden="true">
+                    <span class="cbs-truth__kicker-dot"></span>
+                    {c.kicker}
+                  </div>
+
+                  {i === 0 && (
+                    <div class="cbs-truth__chip cbs-truth__chip--bl" data-float="1">
+                      <div class="cbs-truth__chip-row">
+                        <span class="cbs-truth__pulse" aria-hidden="true"></span>
+                        <span class="cbs-truth__chip-label">{c.chipLabel}</span>
+                      </div>
+                      <p class="cbs-truth__chip-sub">{c.chipSub}</p>
+                      <div class="cbs-truth__avatars">
+                        {c.avatars && c.avatars.map((a) => (
+                          <span class={`cbs-truth__avatar cbs-truth__avatar--${a.tone}`}>{a.letter}</span>
+                        ))}
+                        <span class="cbs-truth__avatar cbs-truth__avatar--more">{c.extraAvatars}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {i === 0 && (
+                    <div class="cbs-truth__pin" data-float="2">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="6" width="14" height="12" rx="2"/>
+                        <polygon points="17 9 22 6 22 18 17 15"/>
+                      </svg>
+                      <div class="cbs-truth__pin-text">
+                        <span class="cbs-truth__pin-label">{c.pinLabel}</span>
+                        <span class="cbs-truth__pin-value">{c.pinValue}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {i === 1 && (
+                    <div class="cbs-truth__chip cbs-truth__chip--tr" data-float="1">
+                      <div class="cbs-truth__chip-row">
+                        <span class="cbs-truth__pulse" aria-hidden="true"></span>
+                        <span class="cbs-truth__chip-label">{c.chipLabel}</span>
+                      </div>
+                      <p class="cbs-truth__chip-sub">{c.chipSub}</p>
+                    </div>
+                  )}
+
+                  {i === 1 && (
+                    <div class="cbs-truth__badge" data-float="2">
+                      <span class="cbs-truth__badge-eyebrow">Why it matters</span>
+                      <span class="cbs-truth__badge-title">{c.badge}</span>
+                      <span class="cbs-truth__badge-sub">{c.badgeSub}</span>
+                    </div>
+                  )}
+                </div>
+
+                <div class="cbs-truth__content">
+                  <h3 class="cbs-truth__title">{c.title}</h3>
+                  <p class="cbs-truth__body">{c.body}</p>
+
+                  {i === 0 && c.flow && (
+                    <ol class="cbs-truth__flow" aria-label="Daily content workflow">
+                      {c.flow.map((step, idx) => (
+                        <>
+                          <li class="cbs-truth__flow-step" style={`--flow-delay: ${idx * 90}ms`}>
+                            <span class="cbs-truth__flow-bubble">
+                              {idx === 0 && (
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="14" height="12" rx="2"/><polygon points="17 9 22 6 22 18 17 15"/></svg>
+                              )}
+                              {idx === 1 && (
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.1 2.1 0 1 1 3 3L12 15l-4 1 1-4z"/></svg>
+                              )}
+                              {idx === 2 && (
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9z"/></svg>
+                              )}
+                            </span>
+                            <span class="cbs-truth__flow-label">{step}</span>
+                          </li>
+                          {idx < c.flow.length - 1 && (
+                            <li class="cbs-truth__flow-arrow" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </li>
+                          )}
+                        </>
+                      ))}
+                    </ol>
+                  )}
+
+                  {i === 1 && c.credentials && (
+                    <ul class="cbs-truth__tags" aria-label="What we run, daily">
+                      {c.credentials.map((tag) => (
+                        <li class="cbs-truth__tag">{tag}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
             </article>
           ))}
@@ -414,7 +544,7 @@ const serviceJsonLd = {
               <p>Most of the consultants who talk about Douyin and RedNote have never actually run a store on either one. We have, and that changes what we tell you.</p>
             </blockquote>
             <p>
-              We have lost a 11.11 and won the next one. When we tell you what will work
+              We have lost an 11.11 and won the next one. When we tell you what works
               in March, it is because we were inside the platform in February.
             </p>
             <a href="/about#team" class="btn btn--secondary cbs-magnetic">Meet the team</a>
@@ -726,8 +856,8 @@ const serviceJsonLd = {
           <p class="section-header__lead">
             Some brands want a Chinese social presence (WeChat, Weibo, Douyin content,
             RedNote notes) without the full commerce operation behind it. TheRedScroll is
-            our sister agency built for exactly that. Daily content, community, KOL seeding,
-            no storefront.
+            our sister agency built for exactly that. Daily content, community and KOL
+            seeding, without a storefront sitting underneath.
           </p>
         </header>
 
@@ -834,13 +964,13 @@ const serviceJsonLd = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">
-          <span class="eyebrow eyebrow--on-dark">Let’s talk</span>
+          <span class="eyebrow eyebrow--on-dark">Let's talk</span>
           <h2 class="cbs-cta__title">Ready to sell where China actually shops?</h2>
           <p class="cbs-cta__lead">
             Tell us the category, the budget range, the platforms you are considering and
             whether you are aiming at a festival window or a steady-state launch. A senior
-            member of the team replies within one working day. No sales funnel, no
-            auto-responder.
+            member of the team replies within one working day. You will not be passed
+            through a sales funnel or an auto-responder.
           </p>
           <div class="cbs-cta__actions">
             <a href="/contact" class="btn cbs-cta__btn-primary">Start the conversation</a>
@@ -1038,52 +1168,6 @@ const serviceJsonLd = {
       .cbs-hero__meta { gap: var(--space-4); }
     }
 
-    /* ---------- CONTEXT (two truths) ---------- */
-    .cbs-context {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: var(--space-5);
-    }
-    .cbs-context__card {
-      background: var(--bbg-white);
-      border: 1px solid var(--bbg-border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      display: flex; flex-direction: column;
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
-    }
-    .cbs-context__card:hover {
-      border-color: var(--bbg-blue);
-      box-shadow: var(--shadow-md);
-    }
-    .cbs-context__card--alt {
-      background: var(--bbg-blue-light);
-      border-color: transparent;
-    }
-    .cbs-context__media {
-      margin: 0; aspect-ratio: 16 / 9;
-      overflow: hidden; background: var(--bbg-border);
-    }
-    .cbs-context__media img {
-      width: 100%; height: 100%;
-      object-fit: cover; display: block;
-      transition: transform 600ms var(--ease);
-    }
-    .cbs-context__card:hover .cbs-context__media img { transform: scale(1.03); }
-    .cbs-context__body { padding: var(--space-6) var(--space-7) var(--space-7); }
-    .cbs-context__card h3 {
-      font-size: clamp(1.25rem, 1vw + 0.75rem, 1.625rem);
-      line-height: 1.25; margin: 0 0 var(--space-4);
-      letter-spacing: -0.01em;
-    }
-    .cbs-context__card p {
-      color: var(--bbg-text); line-height: 1.7;
-      font-size: 1.0625rem; margin: 0;
-    }
-    @media (max-width: 900px) {
-      .cbs-context { grid-template-columns: 1fr; }
-      .cbs-context__body { padding: var(--space-5) var(--space-6) var(--space-6); }
-    }
 
     /* ---------- VALUE + PROMISES ---------- */
     .cbs-value {
@@ -1135,7 +1219,7 @@ const serviceJsonLd = {
       color: var(--bbg-text); margin: 0;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .cbs-value { grid-template-columns: 1fr; gap: var(--space-6); }
     }
 
@@ -1215,7 +1299,7 @@ const serviceJsonLd = {
       transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
     }
     .cbs-service:hover .cbs-service__arrow-icon { transform: translateX(3px); }
-    @media (max-width: 960px) { .cbs-services { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 1024px) { .cbs-services { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 640px) { .cbs-services { grid-template-columns: 1fr; } }
 
     /* ---------- MODELS / TABS BG ---------- */
@@ -1417,7 +1501,7 @@ const serviceJsonLd = {
     .cbs-owns__key { color: var(--bbg-text-muted); font-weight: 600; }
     .cbs-owns__val { color: var(--bbg-ink); }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .cbs-tabs__nav { grid-template-columns: 1fr; }
       .cbs-tabs__tab { border-right: none; border-bottom: 1px solid var(--bbg-border); }
       .cbs-tabs__indicator { display: none; }
@@ -1677,7 +1761,7 @@ const serviceJsonLd = {
       color: var(--bbg-text);
       margin: 0;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .cbs-sister { grid-template-columns: 1fr; }
     }
 
@@ -2022,7 +2106,58 @@ const serviceJsonLd = {
         });
       });
 
-      // 6. FAQ accordion - close others on open
+      // 6. Two-truths: cursor tilt + scroll-driven image parallax
+      const truths = document.querySelectorAll('[data-truth-tilt]');
+      if (truths.length && !reduced) {
+        truths.forEach((card) => {
+          const onMove = (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width;
+            const y = (e.clientY - rect.top) / rect.height;
+            const ry = (x - 0.5) * 5;
+            const rx = (0.5 - y) * 4;
+            card.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+            card.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+            card.setAttribute('data-tilt-active', '');
+          };
+          const onLeave = () => {
+            card.style.setProperty('--ry', '0deg');
+            card.style.setProperty('--rx', '0deg');
+            card.removeAttribute('data-tilt-active');
+          };
+          card.addEventListener('mousemove', onMove);
+          card.addEventListener('mouseleave', onLeave);
+        });
+
+        const parallaxImgs = document.querySelectorAll('[data-truth-parallax]');
+        let truthsTicking = false;
+        const updateTruthParallax = () => {
+          parallaxImgs.forEach((img) => {
+            const frame = img.parentElement;
+            if (!frame) return;
+            const rect = frame.getBoundingClientRect();
+            const vh = window.innerHeight;
+            if (rect.bottom < 0 || rect.top > vh) return;
+            const center = rect.top + rect.height / 2;
+            const offset = (center - vh / 2) / vh;
+            const shift = Math.max(-16, Math.min(16, -offset * 22));
+            img.style.setProperty('--img-y', shift.toFixed(1) + 'px');
+          });
+        };
+        const onTruthsScroll = () => {
+          if (truthsTicking) return;
+          truthsTicking = true;
+          requestAnimationFrame(() => {
+            updateTruthParallax();
+            truthsTicking = false;
+          });
+        };
+        window.addEventListener('scroll', onTruthsScroll, { passive: true });
+        window.addEventListener('resize', onTruthsScroll, { passive: true });
+        updateTruthParallax();
+      }
+
+      // 7. FAQ accordion - close others on open
       const faqItems = document.querySelectorAll('.cbs-faq__item');
       faqItems.forEach((item) => {
         item.addEventListener('toggle', () => {

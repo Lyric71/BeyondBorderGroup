@@ -28,15 +28,15 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
 
 <Layout
   title="Insights | Beyond Border Group"
-  description="Articles, analysis and market commentary on China e-commerce, marketing, branding, and digital platforms from the team operating brands on Tmall, JD, Douyin, WeChat and RED every day."
+  description="Articles and market commentary on China e-commerce, marketing, branding and digital platforms, written by the team running brands on Tmall, JD, Douyin, WeChat and RED."
 >
   <section class="insights-intro">
     <div class="container">
       <span class="eyebrow">Insights</span>
-      <h1>Current thinking from inside the China market.</h1>
+      <h1>Notes from inside the China market.</h1>
       <p class="lead">
-        Articles, analysis and commentary from the team operating brands on Tmall, JD, Douyin, WeChat and RED every day.
-        No recycled research, no trend reports repackaged from last year.
+        Articles and commentary from the team that runs brands on Tmall, JD, Douyin, WeChat and RED.
+        Written by operators, not analysts recycling last year's slides.
       </p>
     </div>
   </section>
@@ -89,7 +89,7 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
       </div>
 
       {sorted.length === 0 && (
-        <p class="insights-empty">New insights are being migrated. Check back shortly.</p>
+        <p class="insights-empty">We're moving older articles over. Check back in a few days.</p>
       )}
     </div>
   </section>

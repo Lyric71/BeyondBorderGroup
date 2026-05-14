@@ -6,7 +6,7 @@ const lastUpdated = '23 April 2026';
 
 <Layout
   title="Cookie Policy | Beyond Border Group"
-  description="How Beyond Border Group uses cookies and similar technologies on its website. Types of cookies, third-party providers, and how to manage them."
+  description="How Beyond Border Group uses cookies on its website: the types we set, third-party providers, and how to manage them."
 >
   <section class="legal-hero">
     <div class="container">
@@ -161,4 +161,11 @@ const lastUpdated = '23 April 2026';
   .prose li { margin-bottom: var(--space-2); }
   .prose a { color: var(--bbg-blue); text-decoration: underline; text-underline-offset: 3px; }
   .prose a:hover { color: var(--bbg-blue-dark); }
+
+  @media (max-width: 640px) {
+    .legal-hero { padding: var(--space-6) 0 var(--space-5); }
+    .legal-body { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+    .prose h2 { margin-top: var(--space-6); font-size: 1.375rem; }
+    .prose h3 { margin-top: var(--space-4); }
+  }
 </style>

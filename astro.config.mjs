@@ -139,6 +139,17 @@ export default defineConfig({
 
   adapter: vercel(),
 
+  // Multilingual setup. English stays at the root (/), French lives under /fr/.
+  // Add new locales to the array as they ship. Keep `prefixDefaultLocale: false`
+  // so existing English URLs and the WP redirect map continue to work as-is.
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'fr'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
+
   // Legacy WordPress URL redirects. 301 to preserve SEO equity.
   // Mirror every entry in docs/redirection-plan.md for submission to Google.
   redirects: {

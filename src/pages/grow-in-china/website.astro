@@ -57,8 +57,8 @@ const techPaths = [
   },
   {
     name: 'Astro',
-    sub: 'Brand showcase, blistering fast',
-    when: 'When the site is a brand and product showcase with only occasional updates. Astro generates pure static HTML, which means it loads under one second even behind the Firewall, costs almost nothing to host, and is much harder to hack.',
+    sub: 'Brand site, blistering fast',
+    when: 'When the site is a brand and product window with only occasional updates. Astro generates pure static HTML, which means it loads under one second even behind the Firewall, costs almost nothing to host, and is much harder to hack.',
     bullets: [
       'Sub-second load times in mainland China',
       'No database, no PHP, minimal server footprint',
@@ -111,7 +111,7 @@ const deliverables = [
   {
     icon: 'server',
     title: 'Hosting that stays up',
-    desc: '99%+ uptime. Two-hour response, 24/7. Security updates handled. Backups automated. PIPL compliant from day one. Monitoring done from inside the Firewall, where it actually matters.',
+    desc: '99%+ uptime, with two-hour response coverage around the clock. We patch the stack, run nightly backups, and keep the site PIPL compliant from day one. Monitoring runs from inside the Firewall, where it actually catches what breaks.',
   },
   {
     icon: 'phone',
@@ -132,7 +132,7 @@ const faqs = [
   },
   {
     q: 'WordPress or Astro, which one?',
-    a: 'WordPress if your team updates content often and wants autonomy. Astro if the site is a showcase with few updates and you want speed, security and low hosting costs.',
+    a: 'WordPress if your team updates content often and wants autonomy. Astro if the site mostly sits still between launches and you want speed, security and low hosting costs.',
   },
   {
     q: 'How much does a China website cost?',
@@ -140,7 +140,7 @@ const faqs = [
   },
   {
     q: 'How long does the whole thing take?',
-    a: '4 to 10 weeks for the build, plus ICP filing on top. Bei’an runs 2 to 4 weeks. Commercial license runs 2 to 3 months, sometimes more. We run design and dev in parallel with the ICP paperwork so nothing sits idle waiting.',
+    a: "4 to 10 weeks for the build, plus ICP filing on top. Bei'an runs 2 to 4 weeks. Commercial license runs 2 to 3 months, sometimes more. We run design and dev in parallel with the ICP paperwork so nothing sits idle waiting.",
   },
   {
     q: 'Who owns the code and the ICP?',
@@ -339,8 +339,8 @@ const icons: Record<string, string> = {
 
         <p class="web-surfaces__note">
           Most brands on our roster run both. The account keeps the relationship warm.
-          The mini-program is where the conversion happens. Website plus mini-program
-          covers the full journey.
+          The mini-program is where the conversion happens. Together they cover discovery
+          through to purchase.
         </p>
       </div>
     </section>
@@ -728,7 +728,7 @@ const icons: Record<string, string> = {
       margin-top: 1px;
     }
     .web-outcomes__check svg { width: 12px; height: 12px; }
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .web-intro { grid-template-columns: 1fr; gap: var(--space-5); }
     }
 
@@ -968,7 +968,7 @@ const icons: Record<string, string> = {
       line-height: 1.6;
       color: var(--bbg-text);
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .web-surfaces { grid-template-columns: 1fr; }
     }
 
@@ -1060,7 +1060,7 @@ const icons: Record<string, string> = {
       color: var(--bbg-ink);
       font-weight: 600;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .web-tech { grid-template-columns: 1fr; }
       .web-tech-card { padding: var(--space-6); }
     }

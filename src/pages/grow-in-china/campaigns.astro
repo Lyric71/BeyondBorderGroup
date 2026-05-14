@@ -9,36 +9,42 @@ const heroStats = [
 
 const channels = [
   {
+    kicker: 'Platform',
     title: 'The eCommerce platform',
     body: 'Store decoration, pricing, coupons, the official festival mechanics, paid traffic (Zhitongche, Wanxiangtai).',
     image: '/Images/grow-in-china/campaigns/channel-platform-storefront.png',
     alt: 'A phone showing a brand’s Tmall festival storefront mid-campaign, held in one hand in a Chinese office',
   },
   {
+    kicker: 'Content',
     title: 'Content and social',
-    body: 'Xiaohongshu, Douyin, WeChat, all seeding interest in the weeks before the date. Plus the photo and video production that feeds them.',
+    body: 'Xiaohongshu, Douyin, WeChat seeding interest in the weeks before the date. Plus the photo and video production that feeds them.',
     image: '/Images/grow-in-china/campaigns/channel-content-shoot.png',
     alt: 'A small studio shooting a festival short video, product on a lit table, phone on a gimbal, Mandarin shot-list taped to the wall',
   },
   {
+    kicker: 'Creators',
     title: 'KOL and KOC',
     body: 'Influencers and everyday reviewers building proof and demand ahead of the peak.',
     image: '/Images/grow-in-china/campaigns/channel-kol-review.png',
     alt: 'A mid-tier Chinese creator filming a product review for a festival push at home by a window, ring light, afternoon light mixing in',
   },
   {
+    kicker: 'Live',
     title: 'Livestream',
     body: 'Your own brand room, or a host’s room. Often the single biggest sales driver on the day itself.',
     image: '/Images/grow-in-china/campaigns/channel-livestream-room.png',
     alt: 'A Douyin livestream room mid-session during a festival, host gesturing at camera, festival countdown graphic on a side monitor',
   },
   {
+    kicker: 'Private',
     title: 'Private traffic',
     body: 'WeChat groups and your member base. People you can reach directly, at no media cost.',
     image: '/Images/grow-in-china/campaigns/channel-wechat-groups.png',
     alt: 'A community manager’s screen showing active WeChat group chats with a festival voucher pinned, phone and laptop side by side',
   },
   {
+    kicker: 'Offline',
     title: 'Offline, when it fits',
     body: 'A pop-up, a retail tie-in, an event. For some categories an offline moment is what makes the whole online campaign believable.',
     image: '/Images/grow-in-china/campaigns/channel-offline-popup.png',
@@ -208,7 +214,13 @@ const serviceJsonLd = {
     </section>
 
     {/* ---------- REALITY ---------- */}
-    <section class="section section--alt">
+    <section class="section section--alt cbs-truths-section">
+      <div class="cbs-truths-bg" aria-hidden="true">
+        <div class="cbs-truths-bg__blob cbs-truths-bg__blob--a"></div>
+        <div class="cbs-truths-bg__blob cbs-truths-bg__blob--b"></div>
+        <div class="cbs-truths-bg__grid"></div>
+      </div>
+
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">The reality</span>
@@ -221,15 +233,36 @@ const serviceJsonLd = {
           </p>
         </header>
 
-        <div class="cbs-context cbs-context--three">
+        <div class="cbs-truths cbs-truths--three">
           {channels.map((c, i) => (
-            <article class="cbs-context__card cbs-reveal" style={`--reveal-delay: ${(i % 3) * 80}ms;`}>
-              <figure class="cbs-context__media">
-                <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
-              </figure>
-              <div class="cbs-context__body">
-                <h3>{c.title}</h3>
-                <p>{c.body}</p>
+            <article
+              class={`cbs-truth cbs-truth--compact${i % 2 === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
+              style={`--reveal-delay: ${(i % 3) * 100}ms;`}
+              data-truth-tilt
+            >
+              <div class="cbs-truth__inner">
+                <div class="cbs-truth__stage">
+                  <div class="cbs-truth__frame">
+                    <img
+                      src={c.image}
+                      alt={c.alt}
+                      loading="lazy"
+                      decoding="async"
+                      data-truth-parallax
+                    />
+                    <div class="cbs-truth__shade" aria-hidden="true"></div>
+                    <div class="cbs-truth__sheen" aria-hidden="true"></div>
+                  </div>
+                  <div class="cbs-truth__kicker" aria-hidden="true">
+                    <span class="cbs-truth__kicker-dot"></span>
+                    {c.kicker}
+                  </div>
+                </div>
+
+                <div class="cbs-truth__content">
+                  <h3 class="cbs-truth__title">{c.title}</h3>
+                  <p class="cbs-truth__body">{c.body}</p>
+                </div>
               </div>
             </article>
           ))}
@@ -641,52 +674,6 @@ const serviceJsonLd = {
       .cbs-basics__cols { grid-template-columns: 1fr; gap: var(--space-4); }
     }
 
-    /* ---------- CONTEXT (cards grid) ---------- */
-    .cbs-context {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: var(--space-5);
-    }
-    .cbs-context--three { grid-template-columns: repeat(3, 1fr); }
-    .cbs-context__card {
-      background: var(--bbg-white);
-      border: 1px solid var(--bbg-border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      display: flex; flex-direction: column;
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
-    }
-    .cbs-context__card:hover {
-      border-color: var(--bbg-blue);
-      box-shadow: var(--shadow-md);
-    }
-    .cbs-context__media {
-      margin: 0; aspect-ratio: 16 / 9;
-      overflow: hidden; background: var(--bbg-border);
-    }
-    .cbs-context__media img {
-      width: 100%; height: 100%;
-      object-fit: cover; display: block;
-      transition: transform 600ms var(--ease);
-    }
-    .cbs-context__card:hover .cbs-context__media img { transform: scale(1.03); }
-    .cbs-context__body { padding: var(--space-5) var(--space-6) var(--space-6); }
-    .cbs-context__card h3 {
-      font-size: clamp(1.125rem, 0.8vw + 0.75rem, 1.375rem);
-      line-height: 1.25; margin: 0 0 var(--space-3);
-      letter-spacing: -0.01em;
-    }
-    .cbs-context__card p {
-      color: var(--bbg-text); line-height: 1.6;
-      font-size: 1rem; margin: 0;
-    }
-    @media (max-width: 1024px) {
-      .cbs-context--three { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 640px) {
-      .cbs-context, .cbs-context--three { grid-template-columns: 1fr; }
-      .cbs-context__body { padding: var(--space-5) var(--space-5) var(--space-5); }
-    }
     .cbs-reality__note {
       margin: var(--space-6) auto 0;
       max-width: 70ch;
@@ -909,7 +896,7 @@ const serviceJsonLd = {
       margin: 0;
     }
     .cbs-fit__card--not p { color: var(--bbg-text); }
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .cbs-fit { grid-template-columns: 1fr; }
     }
 
@@ -1045,6 +1032,57 @@ const serviceJsonLd = {
           history.replaceState(null, '', id);
         });
       });
+
+      // Truth cards: cursor tilt + scroll-driven image parallax
+      const truths = document.querySelectorAll('[data-truth-tilt]');
+      if (truths.length && !reduced) {
+        truths.forEach((card) => {
+          const onMove = (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width;
+            const y = (e.clientY - rect.top) / rect.height;
+            const ry = (x - 0.5) * 5;
+            const rx = (0.5 - y) * 4;
+            card.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+            card.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+            card.setAttribute('data-tilt-active', '');
+          };
+          const onLeave = () => {
+            card.style.setProperty('--ry', '0deg');
+            card.style.setProperty('--rx', '0deg');
+            card.removeAttribute('data-tilt-active');
+          };
+          card.addEventListener('mousemove', onMove);
+          card.addEventListener('mouseleave', onLeave);
+        });
+
+        const parallaxImgs = document.querySelectorAll('[data-truth-parallax]');
+        let truthsTicking = false;
+        const updateTruthParallax = () => {
+          parallaxImgs.forEach((img) => {
+            const frame = img.parentElement;
+            if (!frame) return;
+            const rect = frame.getBoundingClientRect();
+            const vh = window.innerHeight;
+            if (rect.bottom < 0 || rect.top > vh) return;
+            const center = rect.top + rect.height / 2;
+            const offset = (center - vh / 2) / vh;
+            const shift = Math.max(-16, Math.min(16, -offset * 22));
+            img.style.setProperty('--img-y', shift.toFixed(1) + 'px');
+          });
+        };
+        const onTruthsScroll = () => {
+          if (truthsTicking) return;
+          truthsTicking = true;
+          requestAnimationFrame(() => {
+            updateTruthParallax();
+            truthsTicking = false;
+          });
+        };
+        window.addEventListener('scroll', onTruthsScroll, { passive: true });
+        window.addEventListener('resize', onTruthsScroll, { passive: true });
+        updateTruthParallax();
+      }
     })();
   </script>
 </Layout>

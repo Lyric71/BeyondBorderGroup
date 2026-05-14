@@ -1,0 +1,684 @@
+  <style is:global>
+    /* ---------- Home hero: reveal motion ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .home-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .home-reveal.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .home-magnetic {
+        will-change: transform;
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      }
+      .home-magnetic:hover { transform: translateY(-2px); }
+    }
+
+    /* ---------- Scroll progress bar ---------- */
+    .home-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 1000;
+      background: transparent;
+      pointer-events: none;
+    }
+    .home-progress__bar {
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      transition: width 80ms linear;
+    }
+
+    /* ---------- Home hero ---------- */
+    .home-hero {
+      position: relative;
+      min-height: clamp(520px, 78vh, 760px);
+      display: flex;
+      align-items: flex-start;
+      padding: clamp(8px, 1.25vh, 16px) 0 clamp(64px, 9vh, 104px);
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    /* Override the global :has(.home-hero) padding-top with a tighter value */
+    body:has(.home-hero) .home-hero {
+      padding-top: clamp(140px, 14vh, 184px);
+    }
+    @media (max-width: 1024px) {
+      body:has(.home-hero) .home-hero {
+        padding-top: clamp(112px, 12vh, 140px);
+      }
+    }
+    .home-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .home-hero__bg picture,
+    .home-hero__bg img {
+      display: block;
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .home-hero__bg img {
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+      transition: transform 80ms linear;
+      filter: saturate(0.95);
+    }
+    .home-hero__overlay {
+      position: absolute; inset: 0; z-index: -2;
+      background:
+        linear-gradient(110deg,
+          rgba(8, 18, 28, 0.92) 0%,
+          rgba(8, 18, 28, 0.72) 42%,
+          rgba(8, 18, 28, 0.32) 100%),
+        radial-gradient(120% 80% at 0% 100%,
+          rgba(38, 154, 218, 0.28) 0%,
+          rgba(38, 154, 218, 0) 60%);
+    }
+    .home-hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      background-image:
+        radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .home-hero__inner { max-width: 980px; position: relative; }
+    .home-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-3);
+      color: #9DDBF5;
+    }
+    .home-hero__title {
+      font-size: clamp(2.25rem, 4vw + 1rem, 4.25rem);
+      line-height: 1.04;
+      letter-spacing: -0.025em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      max-width: 18ch;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      gap: 0.05em;
+    }
+    .home-hero__title-row { display: block; }
+    .home-hero__title-row--accent {
+      color: #9DDBF5;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -0.018em;
+    }
+    .home-hero__title-row--highlight {
+      position: relative;
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0 0.15em;
+    }
+    .home-hero__title-row--highlight::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0.04em;
+      height: 0.18em;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transform-origin: left center;
+      animation: home-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+      z-index: -1;
+    }
+    @keyframes home-underline {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    .home-hero__lead {
+      font-size: clamp(1.0625rem, 0.5vw + 1rem, 1.25rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 58ch;
+      margin: 0 0 var(--space-5);
+    }
+    .home-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+
+    .home-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(var(--space-4), 4vw, var(--space-7));
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: 760px;
+    }
+    .home-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .home-hero__meta-num {
+      font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: "tnum";
+    }
+    .home-hero__meta-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.02em;
+    }
+
+    .home-hero__scroll {
+      position: absolute;
+      bottom: var(--space-5);
+      right: clamp(var(--space-5), 4vw, var(--space-7));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color 200ms ease;
+    }
+    .home-hero__scroll:hover { color: var(--bbg-white); }
+    .home-hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .home-hero__scroll-line::after {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+      animation: home-scroll-tick 1.8s ease-in-out infinite;
+    }
+    @keyframes home-scroll-tick {
+      0% { top: -50%; }
+      100% { top: 100%; }
+    }
+    @media (max-width: 720px) {
+      .home-hero__scroll { display: none; }
+      .home-hero__meta { gap: var(--space-4); }
+    }
+  </style>
+
+  <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Reveal on scroll
+      const revealEls = document.querySelectorAll('.home-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      // Animated counters in the hero meta strip
+      const counters = document.querySelectorAll('[data-home-counter]');
+      if (counters.length && !reduced && 'IntersectionObserver' in window) {
+        const animate = (el) => {
+          const target = parseFloat(el.dataset.homeCounter || '0');
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(target * eased);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        };
+        const counterIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((el) => counterIo.observe(el));
+      } else {
+        counters.forEach((el) => {
+          el.textContent = (el.dataset.homeCounter || '0') + (el.dataset.suffix || '');
+        });
+      }
+
+      // Hero parallax + scroll progress bar (single rAF loop)
+      const parallaxImg = document.querySelector('[data-home-parallax] img');
+      const progressEl = document.querySelector('.home-progress__bar');
+      const heroEl = document.querySelector('[data-home-hero]');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          if (parallaxImg && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxImg.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Smooth-scroll the hero anchor
+      const scrollLink = document.querySelector('.home-hero__scroll');
+      if (scrollLink) {
+        scrollLink.addEventListener('click', (e) => {
+          const id = scrollLink.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      }
+    })();
+  </script>
+
+  <script is:inline>
+    (() => {
+      const root = document.querySelector('[data-stage-panels]');
+      if (!root) return;
+      const panels = Array.from(root.querySelectorAll('.stage-panel'));
+      if (!panels.length) return;
+
+      const triggers = panels.map((p) => p.querySelector('.stage-panel__hit'));
+
+      const setActive = (key, opts = {}) => {
+        if (!key) return;
+        let activated = null;
+        panels.forEach((panel) => {
+          const isActive = panel.dataset.stage === key;
+          panel.classList.toggle('is-active', isActive);
+          const trig = panel.querySelector('.stage-panel__hit');
+          if (trig) trig.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+          if (isActive) activated = panel;
+        });
+        root.setAttribute('data-active', key);
+        if (opts.focus && activated) {
+          const trig = activated.querySelector('.stage-panel__hit');
+          if (trig) trig.focus();
+        }
+      };
+
+      triggers.forEach((trig, idx) => {
+        if (!trig) return;
+        trig.addEventListener('click', () => {
+          const key = trig.dataset.stageTrigger;
+          if (root.dataset.active === key) return;
+          setActive(key);
+        });
+        trig.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+            e.preventDefault();
+            const next = triggers[(idx + 1) % triggers.length];
+            if (next) setActive(next.dataset.stageTrigger, { focus: true });
+          } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            const prev = triggers[(idx - 1 + triggers.length) % triggers.length];
+            if (prev) setActive(prev.dataset.stageTrigger, { focus: true });
+          } else if (e.key === 'Home') {
+            e.preventDefault();
+            const first = triggers[0];
+            if (first) setActive(first.dataset.stageTrigger, { focus: true });
+          } else if (e.key === 'End') {
+            e.preventDefault();
+            const last = triggers[triggers.length - 1];
+            if (last) setActive(last.dataset.stageTrigger, { focus: true });
+          }
+        });
+      });
+
+      const section = document.getElementById('pillars');
+      if (section && 'IntersectionObserver' in window) {
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!reduced) {
+          section.classList.add('is-pre-reveal');
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                section.classList.remove('is-pre-reveal');
+                section.classList.add('is-revealed');
+                io.disconnect();
+              }
+            });
+          }, { threshold: 0.18 });
+          io.observe(section);
+        }
+      }
+    })();
+
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const tabs = Array.from(document.querySelectorAll('.svc-tab'));
+      const indicator = document.querySelector('.svc-tabs__indicator');
+
+      const moveIndicator = (tab) => {
+        if (!indicator || !tab) return;
+        const parent = tab.parentElement;
+        const pRect = parent.getBoundingClientRect();
+        const tRect = tab.getBoundingClientRect();
+        indicator.style.setProperty('--x', (tRect.left - pRect.left) + 'px');
+        indicator.style.setProperty('--w', tRect.width + 'px');
+      };
+
+      const setActive = (tab) => {
+        const stage = tab.dataset.stage;
+        tabs.forEach((t) => {
+          const on = t === tab;
+          t.classList.toggle('is-active', on);
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        document.querySelectorAll('.svc-panel').forEach((p) => {
+          const on = p.dataset.stage === stage;
+          p.classList.toggle('is-active', on);
+          if (on) {
+            const tiles = p.querySelectorAll('[data-svc-tile]');
+            tiles.forEach((tile) => {
+              tile.classList.remove('is-in');
+              void tile.offsetWidth;
+              tile.classList.add('is-in');
+            });
+          }
+        });
+        moveIndicator(tab);
+      };
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => setActive(tab));
+      });
+
+      // Pillar CTAs ("Explore Enter China" etc.) → scroll to services section
+      // and activate the matching stage tab.
+      document.querySelectorAll('[data-stage-jump]').forEach((cta) => {
+        cta.addEventListener('click', (e) => {
+          const key = cta.dataset.stageJump;
+          const targetTab = tabs.find((t) => t.dataset.stage === key);
+          const section = document.getElementById('services');
+          if (!targetTab || !section) return;
+          e.preventDefault();
+          setActive(targetTab);
+          section.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+
+      const active = document.querySelector('.svc-tab.is-active');
+      if (active) requestAnimationFrame(() => moveIndicator(active));
+      window.addEventListener('resize', () => {
+        const a = document.querySelector('.svc-tab.is-active');
+        if (a) moveIndicator(a);
+      });
+
+      // Tiles: scroll reveal + mouse spotlight + 3D tilt + image parallax
+      const tiles = document.querySelectorAll('[data-svc-tile]');
+      if (tiles.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          tiles.forEach((t) => t.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+          tiles.forEach((tile) => io.observe(tile));
+        }
+
+        tiles.forEach((tile) => {
+          if (reduced) return;
+          const img = tile.querySelector('[data-svc-parallax] img');
+
+          tile.addEventListener('pointermove', (e) => {
+            const r = tile.getBoundingClientRect();
+            const x = (e.clientX - r.left) / r.width;
+            const y = (e.clientY - r.top) / r.height;
+            tile.style.setProperty('--mx', (x * 100) + '%');
+            tile.style.setProperty('--my', (y * 100) + '%');
+            const rx = (0.5 - y) * 6;
+            const ry = (x - 0.5) * 8;
+            tile.style.setProperty('--rx', rx + 'deg');
+            tile.style.setProperty('--ry', ry + 'deg');
+            if (img) {
+              const px = (x - 0.5) * -10;
+              const py = (y - 0.5) * -10;
+              img.style.setProperty('--px', px + 'px');
+              img.style.setProperty('--py', py + 'px');
+            }
+          });
+          tile.addEventListener('pointerleave', () => {
+            tile.style.setProperty('--mx', '50%');
+            tile.style.setProperty('--my', '50%');
+            tile.style.setProperty('--rx', '0deg');
+            tile.style.setProperty('--ry', '0deg');
+            if (img) {
+              img.style.setProperty('--px', '0px');
+              img.style.setProperty('--py', '0px');
+            }
+          });
+        });
+
+        // Image scroll-parallax inside each tile (subtle)
+        if (!reduced) {
+          const parallaxImgs = document.querySelectorAll('[data-svc-parallax] img');
+          let parallaxTicking = false;
+          const updateParallax = () => {
+            parallaxImgs.forEach((img) => {
+              const frame = img.parentElement;
+              const r = frame.getBoundingClientRect();
+              const vh = window.innerHeight;
+              if (r.bottom < 0 || r.top > vh) return;
+              const center = r.top + r.height / 2;
+              const ratio = (center - vh / 2) / vh;
+              const shift = Math.max(-14, Math.min(14, ratio * -22));
+              img.style.setProperty('--sy', shift + 'px');
+            });
+            parallaxTicking = false;
+          };
+          window.addEventListener('scroll', () => {
+            if (parallaxTicking) return;
+            parallaxTicking = true;
+            requestAnimationFrame(updateParallax);
+          }, { passive: true });
+          updateParallax();
+        }
+      }
+    })();
+
+    // BeyondCompass: trigger stagger animation when section enters viewport
+    (() => {
+      const bc = document.querySelector('[data-bc-section]');
+      if (!bc) return;
+      if (!('IntersectionObserver' in window)) {
+        bc.classList.add('is-in');
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            bc.classList.add('is-in');
+            io.unobserve(bc);
+          }
+        });
+      }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
+      io.observe(bc);
+    })();
+
+    // Hub Studio module: reveal on scroll, tabs, mouse parallax, indicator
+    (() => {
+      const studio = document.querySelector('.studio');
+      if (!studio) return;
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Scroll reveal
+      const reveals = studio.querySelectorAll('[data-reveal]');
+      if (reduced || !('IntersectionObserver' in window)) {
+        reveals.forEach((el) => el.classList.add('is-in'));
+      } else {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-in');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        reveals.forEach((el) => io.observe(el));
+      }
+
+      // Tabs
+      const tabs = Array.from(studio.querySelectorAll('.studio__tab'));
+      const panels = Array.from(studio.querySelectorAll('.studio__panel'));
+      const indicator = studio.querySelector('.studio__tabs-indicator');
+      const positionIndicator = (tab) => {
+        if (!indicator || !tab) return;
+        const tabsEl = tab.parentElement;
+        const r = tab.getBoundingClientRect();
+        const pr = tabsEl.getBoundingClientRect();
+        indicator.style.setProperty('--x', (r.left - pr.left) + 'px');
+        indicator.style.setProperty('--w', r.width + 'px');
+      };
+      const activateTab = (key) => {
+        tabs.forEach((t) => {
+          const isActive = t.dataset.tab === key;
+          t.classList.toggle('is-active', isActive);
+          t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          if (isActive) positionIndicator(t);
+        });
+        panels.forEach((p) => {
+          const isActive = p.dataset.panel === key;
+          if (isActive) {
+            p.removeAttribute('hidden');
+            requestAnimationFrame(() => p.classList.add('is-active'));
+          } else {
+            p.classList.remove('is-active');
+            p.setAttribute('hidden', '');
+          }
+        });
+      };
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => activateTab(tab.dataset.tab));
+        tab.addEventListener('keydown', (e) => {
+          const i = tabs.indexOf(tab);
+          if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            const next = tabs[(i + 1) % tabs.length];
+            next.focus();
+            activateTab(next.dataset.tab);
+          } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            const prev = tabs[(i - 1 + tabs.length) % tabs.length];
+            prev.focus();
+            activateTab(prev.dataset.tab);
+          }
+        });
+      });
+      const first = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
+      if (first) {
+        // Wait one frame so layout is stable before positioning indicator
+        requestAnimationFrame(() => positionIndicator(first));
+      }
+      window.addEventListener('resize', () => {
+        const active = tabs.find((t) => t.classList.contains('is-active'));
+        positionIndicator(active);
+      });
+
+      // Mouse parallax on the hero visual
+      if (!reduced) {
+        const visual = studio.querySelector('[data-parallax]');
+        if (visual) {
+          const main = visual.querySelector('.studio__frame--main');
+          const sub = visual.querySelector('.studio__frame--sub');
+          visual.addEventListener('pointermove', (e) => {
+            const r = visual.getBoundingClientRect();
+            const x = (e.clientX - r.left) / r.width - 0.5;
+            const y = (e.clientY - r.top) / r.height - 0.5;
+            if (main) {
+              main.style.setProperty('--px', (x * -14) + 'px');
+              main.style.setProperty('--py', (y * -14) + 'px');
+              main.style.setProperty('--rx', (y * 4) + 'deg');
+              main.style.setProperty('--ry', (x * -6) + 'deg');
+            }
+            if (sub) {
+              sub.style.setProperty('--px', (x * 22) + 'px');
+              sub.style.setProperty('--py', (y * 22) + 'px');
+            }
+          });
+          visual.addEventListener('pointerleave', () => {
+            [main, sub].forEach((el) => {
+              if (!el) return;
+              el.style.setProperty('--px', '0px');
+              el.style.setProperty('--py', '0px');
+              el.style.setProperty('--rx', '0deg');
+              el.style.setProperty('--ry', '0deg');
+            });
+          });
+        }
+
+        // Scroll parallax on backdrop image
+        const atmos = studio.querySelector('.studio__atmos img');
+        if (atmos) {
+          let ticking = false;
+          const update = () => {
+            const r = studio.getBoundingClientRect();
+            const vh = window.innerHeight;
+            if (r.bottom < 0 || r.top > vh) { ticking = false; return; }
+            const center = r.top + r.height / 2;
+            const ratio = (center - vh / 2) / vh;
+            const shift = Math.max(-30, Math.min(30, ratio * -40));
+            atmos.style.setProperty('--sy', shift + 'px');
+            ticking = false;
+          };
+          window.addEventListener('scroll', () => {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(update);
+          }, { passive: true });
+          update();
+        }
+      }
+    })();
+  </script>

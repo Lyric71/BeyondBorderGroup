@@ -89,58 +89,87 @@ const compareRows = [
   { label: 'Best for', tp: 'Brands building long-term China P&L', dist: 'Brands already known in China' },
 ];
 
-const costCards = [
-  {
-    icon: 'wallet',
-    title: 'What you pay us',
-    sections: [
-      {
-        heading: 'TP model',
-        body: 'Monthly retainer starting from $7,500 plus a 10% revenue share on GMV, with movement up or down depending on category and platforms covered. Media and content production billed at pass-through.',
-      },
-      {
-        heading: 'Distributor model',
-        body: 'No retainer, no revenue share. Our margin sits in the retail price. Wholesale terms depend on volume commitment, exclusivity and the campaign calendar.',
-      },
-    ],
-    footer: 'We rarely take on new-to-market brands in the distributor model. The brand-building lift from zero is too costly unless the brand commits a serious launch fund. For most new entrants, TP is the right answer.',
+const costLedger = {
+  tp: {
+    label: 'TP model',
+    sub: 'You own the store. We run it.',
+    agency: {
+      tag: 'Agency line',
+      headlineLead: 'From',
+      headlineNum: 7500,
+      headlinePrefix: '$',
+      headlineSuffix: '',
+      headlineUnit: 'per month',
+      pill: '+ 10% on GMV',
+      body: 'Monthly retainer starting from $7,500 plus a 10% revenue share on GMV, with movement up or down depending on category and platforms covered. Media and content production billed at pass-through.',
+      footer: 'We rarely take new-to-market brands as a distributor. The brand-building lift from zero is too costly unless you commit a serious launch fund. For most new entrants, TP is the right answer.',
+    },
+    brand: {
+      tag: 'Brand budget',
+      headlineNum: 100,
+      headlinePrefix: '',
+      headlineSuffix: '%',
+      headlineUnit: 'on you',
+      pill: 'From $120K in year one',
+      body: 'You fund 100% of media, content and promotion. We execute against your approved budget. Every yuan flows through your platform account, fully visible to you.',
+      footer: 'Typical ranges: paid media from $120,000 across the first twelve months. Content billed at cost plus a small handling fee. KOL and KOC invoiced by the talent agency. We never take referral commissions on KOL spend.',
+    },
   },
-  {
-    icon: 'platform-fee',
-    title: 'What you pay the platforms',
-    sections: [
-      {
-        heading: '',
-        body: 'Platform fees on Tmall Global and JD Worldwide are quoted off the official Chinese-language fee schedule, not estimated. Three buckets to plan for:',
-      },
-    ],
-    bullets: [
-      'Annual platform fee. Flagship stores on Tmall Global run a fixed annual fee plus a refundable deposit. JD Worldwide is similar with different brackets.',
-      'Transaction commission. Roughly 2% to 5% on each sale, depending on category. Beauty and supplements sit at the high end. Hard goods at the low end.',
-      'Payment gateway. Alipay and WeChat Pay each take a small percentage on every transaction.',
-    ],
-    footer: 'These are the same numbers every brand pays. We do not mark them up.',
+  distributor: {
+    label: 'Distributor model',
+    sub: 'We buy. We sell. You ship.',
+    agency: {
+      tag: 'Agency line',
+      headlineLead: '',
+      headlineNum: 0,
+      headlinePrefix: '$',
+      headlineSuffix: '',
+      headlineUnit: 'retainer',
+      pill: 'Margin sits in retail price',
+      body: 'No retainer, no revenue share. Our margin sits in the retail price. Wholesale terms depend on volume commitment, exclusivity and the campaign calendar.',
+      footer: 'Distributor terms suit brands already known in China. New entrants almost always start on TP and graduate later, once awareness justifies the volume commit.',
+    },
+    brand: {
+      tag: 'Brand budget',
+      headlineText: 'Co-funded',
+      headlineUnit: 'brand + BBG',
+      pill: 'Heavy lift on 618 + 11.11',
+      body: 'The brand provides a marketing budget for the year, and we deploy it against a co-agreed plan. BBG often co-invests from retail margin on top, particularly on always-on platform media and promotional mechanics for 618 and 11.11.',
+      footer: 'Co-invest sits inside the wholesale margin we earn. You see the plan, you sign the plan, and we report against it line by line.',
+    },
   },
-  {
-    icon: 'megaphone',
-    title: 'What you put behind the brand',
-    sections: [
-      {
-        heading: '',
-        body: 'The variable line, and usually the biggest one in year one. Who funds it depends on the model.',
-      },
-      {
-        heading: 'TP model',
-        body: 'You fund 100% of media, content and promotion. We execute against your approved budget. Every yuan flows through your platform account, fully visible to you.',
-      },
-      {
-        heading: 'Distributor model',
-        body: 'The brand provides a marketing budget for the year, and we deploy it against a co-agreed plan. BBG often co-invests from retail margin on top, particularly on always-on platform media and promotional mechanics for 618 and 11.11.',
-      },
-    ],
-    footer: 'Typical ranges, regardless of who pays: paid media from $120,000 across the first twelve months. Content production billed at cost plus a small handling fee. KOL and KOC booked through us, invoiced by the talent agency. We do not take referral commissions on KOL spend, ever.',
-  },
-];
+};
+
+const platformLedger = {
+  tag: 'Platform fees',
+  headlineNum: 5,
+  headlinePrefix: '~',
+  headlineSuffix: '%',
+  headlineUnit: 'commission, top end',
+  pill: 'Pass-through, never marked up',
+  body: 'Platform fees on Tmall Global and JD Worldwide come straight off the official Chinese-language fee schedule, not estimated. Three buckets to plan for.',
+  buckets: [
+    {
+      title: 'Annual platform fee',
+      sub: 'Fixed annual fee plus a refundable deposit on Tmall Global. JD Worldwide runs similar brackets.',
+      meter: 'Fixed',
+      meterPct: 35,
+    },
+    {
+      title: 'Transaction commission',
+      sub: 'Roughly 2% to 5% on each sale. Beauty and supplements at the high end. Hard goods at the low end.',
+      meter: '2 to 5%',
+      meterPct: 80,
+    },
+    {
+      title: 'Payment gateway',
+      sub: 'Alipay and WeChat Pay each take a small percentage on every transaction.',
+      meter: 'Per txn',
+      meterPct: 22,
+    },
+  ],
+  footer: 'These are the same numbers every brand pays. We do not mark them up, ever.',
+};
 
 const steps = [
   {
@@ -192,14 +221,33 @@ const contextCards = [
   {
     image: '/Images/grow-in-china/truth-comparing-products.png',
     alt: 'A Chinese man in his late 30s comparing two imported product boxes while looking at a Chinese eCommerce app in a quiet cafe',
+    kicker: 'One roof',
     title: 'The team that wrote the plan stays on the store',
-    body: 'Most agencies hand strategy to one team and execution to another, then disappear into monthly reporting. We keep strategy, planning and operations under one roof, and the senior who wrote the plan sits in on the weekly ops meeting. The strategy does not drift, and the operations team is not guessing at intent.',
+    body: 'Most agencies split strategy from execution. We keep both under one roof. The senior who wrote the plan runs your weekly ops sync.',
+    flow: ['Strategy', 'Planning', 'Operations'],
+    chipLabel: 'Weekly ops sync',
+    chipSub: 'Strategy + ops in the same room',
+    avatars: [
+      { letter: 'L', tone: 'blue' },
+      { letter: 'C', tone: 'dark' },
+      { letter: 'Y', tone: 'green' },
+      { letter: 'M', tone: 'amber' },
+    ],
+    extraAvatars: '+3',
+    pinLabel: 'Live dashboard',
+    pinValue: 'Open at any time',
   },
   {
     image: '/Images/enter-china/team.png',
     alt: 'The Beyond Border Group eCommerce operations team working in an open office',
+    kicker: 'Scars from the platform',
     title: 'Operators first, strategists second',
-    body: 'Our senior team ran stores at Publicis Commerce China for global beauty, FMCG and lifestyle brands. They have lost a Double 11 and won the next one. When they tell you what will work in March, it is because they were inside the platform in February.',
+    body: 'Our senior team ran Tmall and JD stores at Publicis Commerce China. They have lost a Double 11 and won the next one.',
+    credentials: ['Beauty', 'FMCG', 'Lifestyle', 'Supplements'],
+    chipLabel: 'Ex-Publicis Commerce',
+    chipSub: 'Senior leads, ten years on platform',
+    badge: 'Won the next 11.11',
+    badgeSub: 'After losing one. The lesson stuck.',
   },
 ];
 
@@ -283,7 +331,7 @@ const icons: Record<string, string> = {
             <span class="cbs-hero__meta-label">years running Chinese eCommerce stores</span>
           </div>
           <div class="cbs-hero__meta-item">
-            <span class="cbs-hero__meta-num" data-counter="50" data-suffix="+">0</span>
+            <span class="cbs-hero__meta-num" data-counter="15" data-suffix="+">0</span>
             <span class="cbs-hero__meta-label">flagship stores operated end to end</span>
           </div>
           <div class="cbs-hero__meta-item">
@@ -300,7 +348,13 @@ const icons: Record<string, string> = {
     </section>
 
     {/* ---------- TWO TRUTHS ---------- */}
-    <section id="two-truths" class="section">
+    <section id="two-truths" class="section cbs-truths-section">
+      <div class="cbs-truths-bg" aria-hidden="true">
+        <div class="cbs-truths-bg__blob cbs-truths-bg__blob--a"></div>
+        <div class="cbs-truths-bg__blob cbs-truths-bg__blob--b"></div>
+        <div class="cbs-truths-bg__grid"></div>
+      </div>
+
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Our approach</span>
@@ -311,15 +365,122 @@ const icons: Record<string, string> = {
           </p>
         </header>
 
-        <div class="cbs-context">
+        <div class="cbs-truths" data-truths>
           {contextCards.map((c, i) => (
-            <article class={`cbs-context__card${i === 1 ? ' cbs-context__card--alt' : ''} cbs-reveal`} style={`--reveal-delay: ${i * 120}ms;`}>
-              <figure class="cbs-context__media">
-                <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
-              </figure>
-              <div class="cbs-context__body">
-                <h3>{c.title}</h3>
-                <p>{c.body}</p>
+            <article
+              class={`cbs-truth${i === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
+              style={`--reveal-delay: ${i * 140}ms;`}
+              data-truth-tilt
+            >
+              <div class="cbs-truth__inner">
+                <div class="cbs-truth__stage">
+                  <div class="cbs-truth__frame">
+                    <img
+                      src={c.image}
+                      alt={c.alt}
+                      loading="lazy"
+                      decoding="async"
+                      data-truth-parallax
+                    />
+                    <div class="cbs-truth__shade" aria-hidden="true"></div>
+                    <div class="cbs-truth__sheen" aria-hidden="true"></div>
+                  </div>
+
+                  <div class="cbs-truth__kicker" aria-hidden="true">
+                    <span class="cbs-truth__kicker-dot"></span>
+                    {c.kicker}
+                  </div>
+
+                  {i === 0 && (
+                    <div class="cbs-truth__chip cbs-truth__chip--bl" data-float="1">
+                      <div class="cbs-truth__chip-row">
+                        <span class="cbs-truth__pulse" aria-hidden="true"></span>
+                        <span class="cbs-truth__chip-label">{c.chipLabel}</span>
+                      </div>
+                      <p class="cbs-truth__chip-sub">{c.chipSub}</p>
+                      <div class="cbs-truth__avatars">
+                        {c.avatars && c.avatars.map((a) => (
+                          <span class={`cbs-truth__avatar cbs-truth__avatar--${a.tone}`}>{a.letter}</span>
+                        ))}
+                        <span class="cbs-truth__avatar cbs-truth__avatar--more">{c.extraAvatars}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {i === 0 && (
+                    <div class="cbs-truth__pin" data-float="2">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="3 17 9 11 13 15 21 7"></polyline>
+                        <polyline points="15 7 21 7 21 13"></polyline>
+                      </svg>
+                      <div class="cbs-truth__pin-text">
+                        <span class="cbs-truth__pin-label">{c.pinLabel}</span>
+                        <span class="cbs-truth__pin-value">{c.pinValue}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {i === 1 && (
+                    <div class="cbs-truth__chip cbs-truth__chip--tr" data-float="1">
+                      <div class="cbs-truth__chip-row">
+                        <svg class="cbs-truth__chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3L12 16.8 6.5 19.5l1-6.3L3 8.9 9 8z"/>
+                        </svg>
+                        <span class="cbs-truth__chip-label">{c.chipLabel}</span>
+                      </div>
+                      <p class="cbs-truth__chip-sub">{c.chipSub}</p>
+                    </div>
+                  )}
+
+                  {i === 1 && (
+                    <div class="cbs-truth__badge" data-float="2">
+                      <span class="cbs-truth__badge-eyebrow">Track record</span>
+                      <span class="cbs-truth__badge-title">{c.badge}</span>
+                      <span class="cbs-truth__badge-sub">{c.badgeSub}</span>
+                    </div>
+                  )}
+                </div>
+
+                <div class="cbs-truth__content">
+                  <h3 class="cbs-truth__title">{c.title}</h3>
+                  <p class="cbs-truth__body">{c.body}</p>
+
+                  {i === 0 && c.flow && (
+                    <ol class="cbs-truth__flow" aria-label="Strategy, planning and operations under one roof">
+                      {c.flow.map((step, idx) => (
+                        <>
+                          <li class="cbs-truth__flow-step" style={`--flow-delay: ${idx * 90}ms`}>
+                            <span class="cbs-truth__flow-bubble">
+                              {idx === 0 && (
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polygon points="16 8 13 13 8 16 11 11 16 8"/></svg>
+                              )}
+                              {idx === 1 && (
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+                              )}
+                              {idx === 2 && (
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3h0a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8v0a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+                              )}
+                            </span>
+                            <span class="cbs-truth__flow-label">{step}</span>
+                          </li>
+                          {idx < c.flow.length - 1 && (
+                            <li class="cbs-truth__flow-arrow" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </li>
+                          )}
+                        </>
+                      ))}
+                    </ol>
+                  )}
+
+                  {i === 1 && c.credentials && (
+                    <ul class="cbs-truth__tags" aria-label="Categories the team has run on platform">
+                      {c.credentials.map((tag) => (
+                        <li class="cbs-truth__tag">{tag}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
             </article>
           ))}
@@ -518,47 +679,195 @@ const icons: Record<string, string> = {
     </section>
 
     {/* ---------- COST ---------- */}
-    <section class="section section--alt">
+    <section class="section section--alt cbs-cost-section">
+      <div class="cbs-cost-section__bg" aria-hidden="true">
+        <div class="cbs-cost-section__grid"></div>
+        <div class="cbs-cost-section__glow cbs-cost-section__glow--a"></div>
+        <div class="cbs-cost-section__glow cbs-cost-section__glow--b"></div>
+      </div>
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">What it costs</span>
-          <h2>What you will actually spend</h2>
+          <h2>The three lines that hit your P&L</h2>
           <p class="section-header__lead">
-            Three lines on every cross-border P&L: what you pay us, what you pay the
-            platforms, and what you put behind the brand. We show all three before we sign
-            anything.
+            Agency, platform, brand. Every cross-border P&L lives on those three lines. We
+            put real numbers behind all three before you sign anything.
           </p>
         </header>
 
-        <div class="cbs-cost-grid">
-          {costCards.map((c, i) => (
-            <article class="cbs-cost-card cbs-reveal" style={`--reveal-delay: ${i * 80}ms;`}>
-              <span class="cbs-cost-card__icon" aria-hidden="true" set:html={icons[c.icon]} />
-              <h3 class="cbs-cost-card__title">{c.title}</h3>
-              {c.sections.map((s) => (
-                <div class="cbs-cost-card__block">
-                  {s.heading && <span class="cbs-cost-card__sub">{s.heading}</span>}
-                  <p>{s.body}</p>
-                </div>
-              ))}
-              {c.bullets && (
-                <ul class="cbs-cost-card__bullets">
-                  {c.bullets.map((b) => (
-                    <li>
-                      <span class="cbs-cost-card__bullet" aria-hidden="true"></span>
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-              <p class="cbs-cost-card__footer">{c.footer}</p>
+        <div class="cbs-cost cbs-reveal" data-cost>
+          <div class="cbs-cost__switcher" role="tablist" aria-label="Engagement model">
+            <span class="cbs-cost__switcher-pill" data-cost-pill aria-hidden="true"></span>
+            <button
+              type="button"
+              role="tab"
+              class="cbs-cost__switcher-tab is-active"
+              data-cost-tab="tp"
+              aria-selected="true"
+            >
+              <span class="cbs-cost__switcher-dot" aria-hidden="true"></span>
+              <span class="cbs-cost__switcher-label">{costLedger.tp.label}</span>
+              <span class="cbs-cost__switcher-sub">{costLedger.tp.sub}</span>
+            </button>
+            <button
+              type="button"
+              role="tab"
+              class="cbs-cost__switcher-tab"
+              data-cost-tab="distributor"
+              aria-selected="false"
+            >
+              <span class="cbs-cost__switcher-dot" aria-hidden="true"></span>
+              <span class="cbs-cost__switcher-label">{costLedger.distributor.label}</span>
+              <span class="cbs-cost__switcher-sub">{costLedger.distributor.sub}</span>
+            </button>
+          </div>
+
+          <div class="cbs-cost__grid">
+            {/* AGENCY CARD */}
+            <article class="cbs-ledger cbs-ledger--agency" data-tilt data-cost-card="agency">
+              <div class="cbs-ledger__sheen" aria-hidden="true"></div>
+              <span class="cbs-ledger__corner" aria-hidden="true"></span>
+              <header class="cbs-ledger__top">
+                <span class="cbs-ledger__icon" aria-hidden="true" set:html={icons.wallet} />
+                <span class="cbs-ledger__tag" data-cost-field="agency.tag">
+                  {costLedger.tp.agency.tag}
+                </span>
+              </header>
+              <h3 class="cbs-ledger__title">What you pay us</h3>
+              <div class="cbs-ledger__headline" data-cost-field="agency.headline">
+                <span class="cbs-ledger__lead">{costLedger.tp.agency.headlineLead}</span>
+                <span class="cbs-ledger__prefix">{costLedger.tp.agency.headlinePrefix}</span>
+                <span
+                  class="cbs-ledger__num"
+                  data-counter={costLedger.tp.agency.headlineNum}
+                  data-counter-format="comma"
+                >0</span>
+                <span class="cbs-ledger__suffix">{costLedger.tp.agency.headlineSuffix}</span>
+              </div>
+              <p class="cbs-ledger__unit" data-cost-field="agency.unit">{costLedger.tp.agency.headlineUnit}</p>
+              <span class="cbs-ledger__pill" data-cost-field="agency.pill">{costLedger.tp.agency.pill}</span>
+              <p class="cbs-ledger__body" data-cost-field="agency.body">{costLedger.tp.agency.body}</p>
+              <footer class="cbs-ledger__foot">
+                <span class="cbs-ledger__foot-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><circle cx="12" cy="16.5" r="0.6" fill="currentColor"/></svg>
+                </span>
+                <p data-cost-field="agency.footer">{costLedger.tp.agency.footer}</p>
+              </footer>
             </article>
-          ))}
+
+            {/* PLATFORM CARD (universal) */}
+            <article class="cbs-ledger cbs-ledger--platform" data-tilt>
+              <div class="cbs-ledger__sheen" aria-hidden="true"></div>
+              <span class="cbs-ledger__corner" aria-hidden="true"></span>
+              <header class="cbs-ledger__top">
+                <span class="cbs-ledger__icon" aria-hidden="true" set:html={icons['platform-fee']} />
+                <span class="cbs-ledger__tag cbs-ledger__tag--universal">
+                  {platformLedger.tag}
+                  <span class="cbs-ledger__tag-dot" aria-hidden="true"></span>
+                  Universal
+                </span>
+              </header>
+              <h3 class="cbs-ledger__title">What you pay the platforms</h3>
+              <div class="cbs-ledger__headline">
+                <span class="cbs-ledger__prefix">{platformLedger.headlinePrefix}</span>
+                <span
+                  class="cbs-ledger__num"
+                  data-counter={platformLedger.headlineNum}
+                >0</span>
+                <span class="cbs-ledger__suffix">{platformLedger.headlineSuffix}</span>
+              </div>
+              <p class="cbs-ledger__unit">{platformLedger.headlineUnit}</p>
+              <span class="cbs-ledger__pill">{platformLedger.pill}</span>
+              <p class="cbs-ledger__body">{platformLedger.body}</p>
+              <ul class="cbs-ledger__buckets">
+                {platformLedger.buckets.map((b) => (
+                  <li class="cbs-bucket" style={`--meter: ${b.meterPct}%;`}>
+                    <div class="cbs-bucket__row">
+                      <span class="cbs-bucket__title">{b.title}</span>
+                      <span class="cbs-bucket__chip">{b.meter}</span>
+                    </div>
+                    <p class="cbs-bucket__sub">{b.sub}</p>
+                    <span class="cbs-bucket__meter" aria-hidden="true">
+                      <span class="cbs-bucket__meter-fill"></span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <footer class="cbs-ledger__foot">
+                <span class="cbs-ledger__foot-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+                </span>
+                <p>{platformLedger.footer}</p>
+              </footer>
+            </article>
+
+            {/* BRAND CARD */}
+            <article class="cbs-ledger cbs-ledger--brand" data-tilt data-cost-card="brand">
+              <div class="cbs-ledger__sheen" aria-hidden="true"></div>
+              <span class="cbs-ledger__corner" aria-hidden="true"></span>
+              <header class="cbs-ledger__top">
+                <span class="cbs-ledger__icon" aria-hidden="true" set:html={icons.megaphone} />
+                <span class="cbs-ledger__tag" data-cost-field="brand.tag">
+                  {costLedger.tp.brand.tag}
+                </span>
+              </header>
+              <h3 class="cbs-ledger__title">What you put behind the brand</h3>
+              <div class="cbs-ledger__headline" data-cost-field="brand.headline">
+                <span class="cbs-ledger__prefix">{costLedger.tp.brand.headlinePrefix}</span>
+                <span
+                  class="cbs-ledger__num"
+                  data-counter={costLedger.tp.brand.headlineNum}
+                >0</span>
+                <span class="cbs-ledger__suffix">{costLedger.tp.brand.headlineSuffix}</span>
+              </div>
+              <p class="cbs-ledger__unit" data-cost-field="brand.unit">{costLedger.tp.brand.headlineUnit}</p>
+              <span class="cbs-ledger__pill" data-cost-field="brand.pill">{costLedger.tp.brand.pill}</span>
+              <p class="cbs-ledger__body" data-cost-field="brand.body">{costLedger.tp.brand.body}</p>
+              <footer class="cbs-ledger__foot">
+                <span class="cbs-ledger__foot-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14l4-8 4 6 4-4 4 7"/><path d="M3 19h18"/></svg>
+                </span>
+                <p data-cost-field="brand.footer">{costLedger.tp.brand.footer}</p>
+              </footer>
+            </article>
+          </div>
+
+          <div
+            class="cbs-cost__data"
+            data-cost-data
+            data-tp={JSON.stringify(costLedger.tp)}
+            data-distributor={JSON.stringify(costLedger.distributor)}
+          ></div>
         </div>
 
-        <blockquote class="cbs-quote cbs-reveal">
-          <p>Your margin stays your margin. We are paid by you (TP) or by the retail price (distributor). Never by Alimama, JD, or KOL agencies.</p>
-        </blockquote>
+        <div class="cbs-pledge cbs-reveal">
+          <div class="cbs-pledge__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 24" fill="currentColor"><path d="M8 0H0v12c0 6.6 5.4 12 12 12V20c-2.2 0-4-1.8-4-4v-4h4V0H8zm20 0h-8v12c0 6.6 5.4 12 12 12V20c-2.2 0-4-1.8-4-4v-4h4V0h-4z"/></svg>
+          </div>
+          <p class="cbs-pledge__line">
+            Your margin stays your margin. We are paid by you on TP, by the retail price on distributor.
+          </p>
+          <ul class="cbs-pledge__never" aria-label="What we will never accept">
+            <li>
+              <span class="cbs-pledge__x" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6l-12 12"/></svg>
+              </span>
+              <span>Alimama kickbacks</span>
+            </li>
+            <li>
+              <span class="cbs-pledge__x" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6l-12 12"/></svg>
+              </span>
+              <span>JD commissions</span>
+            </li>
+            <li>
+              <span class="cbs-pledge__x" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6l-12 12"/></svg>
+              </span>
+              <span>KOL agency rebates</span>
+            </li>
+          </ul>
+        </div>
 
         <p class="cbs-cost-note">We model the exact numbers and the split for your category in Phase one of the engagement, before any commitment.</p>
       </div>
@@ -961,52 +1270,6 @@ const icons: Record<string, string> = {
       .cbs-hero__meta { gap: var(--space-4); }
     }
 
-    /* ---------- CONTEXT (two truths) ---------- */
-    .cbs-context {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: var(--space-5);
-    }
-    .cbs-context__card {
-      background: var(--bbg-white);
-      border: 1px solid var(--bbg-border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      display: flex; flex-direction: column;
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
-    }
-    .cbs-context__card:hover {
-      border-color: var(--bbg-blue);
-      box-shadow: var(--shadow-md);
-    }
-    .cbs-context__card--alt {
-      background: var(--bbg-blue-light);
-      border-color: transparent;
-    }
-    .cbs-context__media {
-      margin: 0; aspect-ratio: 16 / 9;
-      overflow: hidden; background: var(--bbg-border);
-    }
-    .cbs-context__media img {
-      width: 100%; height: 100%;
-      object-fit: cover; display: block;
-      transition: transform 600ms var(--ease);
-    }
-    .cbs-context__card:hover .cbs-context__media img { transform: scale(1.03); }
-    .cbs-context__body { padding: var(--space-6) var(--space-7) var(--space-7); }
-    .cbs-context__card h3 {
-      font-size: clamp(1.25rem, 1vw + 0.75rem, 1.625rem);
-      line-height: 1.25; margin: 0 0 var(--space-4);
-      letter-spacing: -0.01em;
-    }
-    .cbs-context__card p {
-      color: var(--bbg-text); line-height: 1.7;
-      font-size: 1.0625rem; margin: 0;
-    }
-    @media (max-width: 900px) {
-      .cbs-context { grid-template-columns: 1fr; }
-      .cbs-context__body { padding: var(--space-5) var(--space-6) var(--space-6); }
-    }
 
     /* ---------- VALUE + PROMISES ---------- */
     .cbs-value {
@@ -1078,7 +1341,7 @@ const icons: Record<string, string> = {
       line-height: 1.5;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .cbs-value { grid-template-columns: 1fr; gap: var(--space-6); }
     }
 
@@ -1298,7 +1561,7 @@ const icons: Record<string, string> = {
     .cbs-owns__key { color: var(--bbg-text-muted); font-weight: 600; }
     .cbs-owns__val { color: var(--bbg-ink); }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .cbs-tabs--two .cbs-tabs__nav { grid-template-columns: 1fr; }
       .cbs-tabs__tab { border-right: none; border-bottom: 1px solid var(--bbg-border); }
       .cbs-tabs--two .cbs-tabs__indicator { display: none; }
@@ -1393,118 +1656,616 @@ const icons: Record<string, string> = {
       font-size: 0.975rem;
     }
 
-    /* ---------- COST GRID ---------- */
-    .cbs-cost-grid {
+    /* ---------- COST SECTION (ledger redesign) ---------- */
+    .cbs-cost-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+    .cbs-cost-section__bg {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .cbs-cost-section__grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(38, 154, 218, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(38, 154, 218, 0.07) 1px, transparent 1px);
+      background-size: 48px 48px;
+      background-position: center;
+      mask-image: radial-gradient(ellipse 70% 60% at center, #000 25%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse 70% 60% at center, #000 25%, transparent 75%);
+    }
+    .cbs-cost-section__glow {
+      position: absolute;
+      width: 520px; height: 520px;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.55;
+    }
+    .cbs-cost-section__glow--a {
+      top: -120px; left: -100px;
+      background: radial-gradient(circle, rgba(38, 154, 218, 0.22) 0%, transparent 70%);
+    }
+    .cbs-cost-section__glow--b {
+      bottom: -150px; right: -120px;
+      background: radial-gradient(circle, rgba(91, 194, 240, 0.18) 0%, transparent 70%);
+    }
+
+    .cbs-cost {
+      position: relative;
+    }
+
+    /* Model switcher */
+    .cbs-cost__switcher {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      max-width: 720px;
+      margin: 0 auto var(--space-6);
+      padding: 6px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(38, 154, 218, 0.16);
+      border-radius: 999px;
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.9) inset,
+        0 18px 40px -28px rgba(38, 154, 218, 0.35);
+    }
+    .cbs-cost__switcher-pill {
+      position: absolute;
+      top: 6px; left: 6px;
+      width: calc(50% - 6px);
+      height: calc(100% - 12px);
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, #1E7DB0 100%);
+      box-shadow:
+        0 6px 18px -8px rgba(38, 154, 218, 0.6),
+        0 1px 0 rgba(255, 255, 255, 0.3) inset;
+      transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 0;
+    }
+    .cbs-cost__switcher[data-active="distributor"] .cbs-cost__switcher-pill {
+      transform: translateX(100%);
+    }
+    .cbs-cost__switcher-tab {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 18px;
+      background: none;
+      border: 0;
+      cursor: pointer;
+      color: var(--bbg-text);
+      transition: color 280ms ease;
+      font-family: inherit;
+    }
+    .cbs-cost__switcher-tab.is-active {
+      color: #fff;
+    }
+    .cbs-cost__switcher-dot {
+      display: none;
+    }
+    .cbs-cost__switcher-label {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+    }
+    .cbs-cost__switcher-sub {
+      font-size: 0.78rem;
+      opacity: 0.78;
+      font-weight: 500;
+    }
+    .cbs-cost__switcher-tab:focus-visible {
+      outline: 2px solid var(--bbg-blue);
+      outline-offset: 4px;
+      border-radius: 999px;
+    }
+
+    /* Grid */
+    .cbs-cost__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: var(--space-5);
+      perspective: 1400px;
     }
-    .cbs-cost-card {
+    .cbs-cost__data { display: none; }
+
+    /* Ledger card */
+    .cbs-ledger {
       position: relative;
-      background: var(--bbg-white);
-      border: 1px solid var(--bbg-border);
-      border-radius: 20px;
-      padding: var(--space-6);
-      display: flex; flex-direction: column;
-      gap: var(--space-3);
-      overflow: hidden; isolation: isolate;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      padding: 28px 28px 24px;
+      background:
+        linear-gradient(180deg, #ffffff 0%, #fafdff 100%);
+      border: 1px solid rgba(38, 154, 218, 0.18);
+      border-radius: 22px;
+      overflow: hidden;
+      isolation: isolate;
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.9) inset,
+        0 24px 48px -34px rgba(15, 50, 85, 0.18),
+        0 6px 16px -10px rgba(38, 154, 218, 0.10);
+      transform-style: preserve-3d;
+      transform:
+        perspective(1200px)
+        rotateX(var(--rx, 0deg))
+        rotateY(var(--ry, 0deg))
+        translateY(var(--lift, 0px));
       transition:
-        transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        transform 420ms cubic-bezier(0.16, 1, 0.3, 1),
         border-color 280ms ease,
-        box-shadow 280ms ease;
+        box-shadow 320ms ease;
     }
-    .cbs-cost-card::before {
-      content: ""; position: absolute;
-      top: 0; left: 0; width: 100%; height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
-      transform: scaleX(0.35);
-      transform-origin: left center;
-      transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+    .cbs-ledger::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 50%, var(--bbg-blue) 100%);
+      background-size: 200% 100%;
+      animation: cbs-stripe 6s linear infinite;
+      transform-origin: left;
+      transform: scaleX(0.45);
+      transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .cbs-cost-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--bbg-blue);
-      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+    @keyframes cbs-stripe {
+      from { background-position: 0% 0; }
+      to { background-position: 200% 0; }
     }
-    .cbs-cost-card:hover::before { transform: scaleX(1); }
-    .cbs-cost-card__icon {
+    .cbs-ledger:hover {
+      --lift: -6px;
+      border-color: rgba(38, 154, 218, 0.45);
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.9) inset,
+        0 40px 64px -36px rgba(15, 50, 85, 0.28),
+        0 10px 24px -12px rgba(38, 154, 218, 0.28);
+    }
+    .cbs-ledger:hover::before {
+      transform: scaleX(1);
+    }
+    .cbs-ledger__sheen {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(
+          240px circle at var(--mx, 50%) var(--my, 0%),
+          rgba(38, 154, 218, 0.12) 0%,
+          transparent 60%
+        );
+      opacity: 0;
+      transition: opacity 320ms ease;
+      z-index: 0;
+    }
+    .cbs-ledger[data-tilt-active] .cbs-ledger__sheen {
+      opacity: 1;
+    }
+    .cbs-ledger__corner {
+      position: absolute;
+      top: 14px; right: 14px;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      box-shadow:
+        0 0 0 4px rgba(38, 154, 218, 0.14),
+        0 0 14px rgba(38, 154, 218, 0.4);
+    }
+    .cbs-ledger > * { position: relative; z-index: 1; }
+
+    .cbs-ledger__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.25rem;
+    }
+    .cbs-ledger__icon {
       display: inline-flex;
-      width: 48px; height: 48px;
+      width: 44px; height: 44px;
       align-items: center; justify-content: center;
       border-radius: 14px;
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      background:
+        linear-gradient(135deg, rgba(232, 244, 252, 0.95) 0%, rgba(38, 154, 218, 0.18) 100%);
       color: var(--bbg-blue);
-      margin-bottom: var(--space-3);
+      box-shadow: 0 4px 12px -6px rgba(38, 154, 218, 0.45);
     }
-    .cbs-cost-card__icon svg { width: 22px; height: 22px; }
-    .cbs-cost-card__title {
-      font-size: 1.25rem; line-height: 1.2;
-      margin: 0; letter-spacing: -0.005em;
-    }
-    .cbs-cost-card__block { display: flex; flex-direction: column; gap: 0.4rem; }
-    .cbs-cost-card__sub {
-      font-size: 0.7rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
+    .cbs-ledger__icon svg { width: 20px; height: 20px; }
+    .cbs-ledger__tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 11px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: var(--bbg-blue);
+      background: rgba(232, 244, 252, 0.85);
+      border: 1px solid rgba(38, 154, 218, 0.22);
+      border-radius: 999px;
     }
-    .cbs-cost-card__block p {
-      font-size: 0.95rem; line-height: 1.55;
-      color: var(--bbg-text); margin: 0;
+    .cbs-ledger__tag--universal {
+      color: #1f6f4a;
+      background: rgba(220, 245, 232, 0.9);
+      border-color: rgba(38, 165, 110, 0.25);
     }
-    .cbs-cost-card__bullets {
-      list-style: none; padding: var(--space-3) 0;
+    .cbs-ledger__tag-dot {
+      display: inline-block;
+      width: 4px; height: 4px; border-radius: 50%;
+      background: currentColor;
+      opacity: 0.65;
+    }
+    .cbs-ledger__title {
+      font-size: 1.05rem;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: var(--bbg-text-muted);
+      font-weight: 600;
       margin: 0;
-      display: flex; flex-direction: column;
-      gap: 0.55rem;
-      border-top: 1px dashed var(--bbg-border);
-      border-bottom: 1px dashed var(--bbg-border);
     }
-    .cbs-cost-card__bullets li {
-      display: grid;
-      grid-template-columns: 14px 1fr;
-      gap: 0.6rem;
-      align-items: start;
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: var(--bbg-text);
+    .cbs-ledger__headline {
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+      font-size: clamp(2.4rem, 4.6vw, 3.2rem);
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: var(--bbg-ink);
+      font-variant-numeric: tabular-nums;
+      margin: 2px 0 0;
     }
-    .cbs-cost-card__bullet {
+    .cbs-ledger__headline--text {
+      letter-spacing: -0.015em;
+    }
+    .cbs-ledger__lead {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.32em;
+      font-weight: 700;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-right: 8px;
+      padding: 4px 8px;
+      background: rgba(38, 154, 218, 0.10);
+      border-radius: 6px;
+      align-self: center;
+      transform: translateY(-4px);
+    }
+    .cbs-ledger__lead:empty { display: none; }
+    .cbs-ledger__prefix,
+    .cbs-ledger__suffix {
+      font-size: 0.65em;
+      font-weight: 700;
+      color: var(--bbg-blue);
+      letter-spacing: -0.01em;
+    }
+    .cbs-ledger__num {
+      display: inline-block;
+      transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cbs-ledger__num.is-flashing {
+      animation: cbs-num-flash 480ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes cbs-num-flash {
+      0% { transform: translateY(8px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .cbs-ledger__unit {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+      margin: 4px 0 0;
+    }
+    .cbs-ledger__pill {
+      display: inline-flex;
+      align-self: flex-start;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      background: linear-gradient(180deg, #fff 0%, #f1f7fc 100%);
+      border: 1px solid rgba(38, 154, 218, 0.22);
+      border-radius: 8px;
+      margin-top: 6px;
+      box-shadow: 0 2px 6px -4px rgba(38, 154, 218, 0.35);
+    }
+    .cbs-ledger__pill::before {
+      content: "";
       width: 6px; height: 6px;
       border-radius: 50%;
       background: var(--bbg-blue);
-      box-shadow: 0 0 0 3px var(--bbg-blue-light);
-      margin: 6px 0 0 4px;
+      box-shadow: 0 0 8px rgba(38, 154, 218, 0.6);
     }
-    .cbs-cost-card__footer {
-      font-size: 0.85rem; line-height: 1.55;
+    .cbs-ledger__body {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 6px 0 0;
+    }
+
+    /* Platform card buckets */
+    .cbs-ledger__buckets {
+      list-style: none; margin: 8px 0 0; padding: 0;
+      display: flex; flex-direction: column;
+      gap: 12px;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(38, 154, 218, 0.22);
+    }
+    .cbs-bucket {
+      display: flex; flex-direction: column;
+      gap: 4px;
+    }
+    .cbs-bucket__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .cbs-bucket__title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+    }
+    .cbs-bucket__chip {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--bbg-blue);
+      padding: 2px 8px;
+      background: rgba(232, 244, 252, 0.7);
+      border-radius: 6px;
+    }
+    .cbs-bucket__sub {
+      font-size: 0.82rem;
+      line-height: 1.5;
       color: var(--bbg-text-muted);
       margin: 0;
-      padding-top: var(--space-2);
     }
-    @media (max-width: 960px) { .cbs-cost-grid { grid-template-columns: 1fr; } }
+    .cbs-bucket__meter {
+      display: block;
+      position: relative;
+      height: 4px;
+      background: rgba(38, 154, 218, 0.12);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 4px;
+    }
+    .cbs-bucket__meter-fill {
+      display: block;
+      position: absolute;
+      inset: 0;
+      width: 0;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 4px;
+      transition: width 1100ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cbs-ledger.is-in .cbs-bucket__meter-fill {
+      width: var(--meter, 50%);
+    }
 
-    /* ---------- QUOTE BLOCK ---------- */
-    .cbs-quote {
-      margin: var(--space-6) auto 0;
-      max-width: 760px;
-      padding: var(--space-5) var(--space-6);
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.10) 100%);
-      border-left: 4px solid var(--bbg-blue);
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    .cbs-ledger__foot {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px dashed rgba(15, 50, 85, 0.08);
     }
-    .cbs-quote p {
+    .cbs-ledger__foot-mark {
+      display: inline-flex;
+      align-items: center; justify-content: center;
+      width: 22px; height: 22px;
+      color: var(--bbg-blue);
+      opacity: 0.85;
+    }
+    .cbs-ledger__foot svg { width: 14px; height: 14px; }
+    .cbs-ledger__foot p {
       margin: 0;
-      font-size: 1.0625rem;
+      font-size: 0.82rem;
       line-height: 1.55;
-      color: var(--bbg-ink);
-      font-weight: 500;
-      font-style: italic;
+      color: var(--bbg-text-muted);
     }
-    .cbs-quote--inline {
-      margin: var(--space-2) 0;
-      max-width: none;
-      padding: var(--space-4) var(--space-5);
+
+    /* Variant accents */
+    .cbs-ledger--platform {
+      background:
+        linear-gradient(180deg, #fbfffd 0%, #f3fbf7 100%);
+      border-color: rgba(38, 165, 110, 0.22);
     }
+    .cbs-ledger--platform::before {
+      background: linear-gradient(90deg, #2EA56C 0%, #6FD7A6 50%, #2EA56C 100%);
+      background-size: 200% 100%;
+    }
+    .cbs-ledger--platform .cbs-ledger__corner {
+      background: #2EA56C;
+      box-shadow:
+        0 0 0 4px rgba(46, 165, 108, 0.14),
+        0 0 14px rgba(46, 165, 108, 0.4);
+    }
+    .cbs-ledger--platform .cbs-ledger__icon {
+      background: linear-gradient(135deg, rgba(220, 245, 232, 0.95) 0%, rgba(46, 165, 108, 0.2) 100%);
+      color: #1f6f4a;
+      box-shadow: 0 4px 12px -6px rgba(46, 165, 108, 0.45);
+    }
+    .cbs-ledger--platform .cbs-ledger__prefix,
+    .cbs-ledger--platform .cbs-ledger__suffix {
+      color: #1f6f4a;
+    }
+    .cbs-ledger--platform .cbs-bucket__chip {
+      color: #1f6f4a;
+      background: rgba(220, 245, 232, 0.75);
+    }
+    .cbs-ledger--platform .cbs-bucket__meter-fill {
+      background: linear-gradient(90deg, #2EA56C 0%, #6FD7A6 100%);
+    }
+    .cbs-ledger--platform .cbs-ledger__pill {
+      border-color: rgba(46, 165, 108, 0.28);
+    }
+    .cbs-ledger--platform .cbs-ledger__pill::before {
+      background: #2EA56C;
+      box-shadow: 0 0 8px rgba(46, 165, 108, 0.5);
+    }
+    .cbs-ledger--platform:hover {
+      border-color: rgba(46, 165, 108, 0.5);
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.9) inset,
+        0 40px 64px -36px rgba(20, 60, 40, 0.28),
+        0 10px 24px -12px rgba(46, 165, 108, 0.25);
+    }
+    .cbs-ledger--platform .cbs-ledger__sheen {
+      background:
+        radial-gradient(
+          240px circle at var(--mx, 50%) var(--my, 0%),
+          rgba(46, 165, 108, 0.14) 0%,
+          transparent 60%
+        );
+    }
+    .cbs-ledger--platform .cbs-ledger__foot-mark { color: #1f6f4a; }
+
+    .cbs-ledger--brand {
+      background:
+        linear-gradient(180deg, #fefbff 0%, #faf4ff 100%);
+      border-color: rgba(124, 86, 200, 0.22);
+    }
+    .cbs-ledger--brand::before {
+      background: linear-gradient(90deg, #7C56C8 0%, #B89BE8 50%, #7C56C8 100%);
+      background-size: 200% 100%;
+    }
+    .cbs-ledger--brand .cbs-ledger__corner {
+      background: #7C56C8;
+      box-shadow:
+        0 0 0 4px rgba(124, 86, 200, 0.14),
+        0 0 14px rgba(124, 86, 200, 0.4);
+    }
+    .cbs-ledger--brand .cbs-ledger__icon {
+      background: linear-gradient(135deg, rgba(238, 230, 255, 0.95) 0%, rgba(124, 86, 200, 0.2) 100%);
+      color: #5C3CA2;
+      box-shadow: 0 4px 12px -6px rgba(124, 86, 200, 0.45);
+    }
+    .cbs-ledger--brand .cbs-ledger__tag {
+      color: #5C3CA2;
+      background: rgba(238, 230, 255, 0.85);
+      border-color: rgba(124, 86, 200, 0.25);
+    }
+    .cbs-ledger--brand .cbs-ledger__prefix,
+    .cbs-ledger--brand .cbs-ledger__suffix {
+      color: #5C3CA2;
+    }
+    .cbs-ledger--brand .cbs-ledger__pill {
+      border-color: rgba(124, 86, 200, 0.28);
+    }
+    .cbs-ledger--brand .cbs-ledger__pill::before {
+      background: #7C56C8;
+      box-shadow: 0 0 8px rgba(124, 86, 200, 0.5);
+    }
+    .cbs-ledger--brand:hover {
+      border-color: rgba(124, 86, 200, 0.5);
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.9) inset,
+        0 40px 64px -36px rgba(60, 30, 100, 0.28),
+        0 10px 24px -12px rgba(124, 86, 200, 0.28);
+    }
+    .cbs-ledger--brand .cbs-ledger__sheen {
+      background:
+        radial-gradient(
+          240px circle at var(--mx, 50%) var(--my, 0%),
+          rgba(124, 86, 200, 0.13) 0%,
+          transparent 60%
+        );
+    }
+    .cbs-ledger--brand .cbs-ledger__foot-mark { color: #5C3CA2; }
+
+    /* Pledge block */
+    .cbs-pledge {
+      position: relative;
+      margin: calc(var(--space-6) + 12px) auto 0;
+      max-width: 880px;
+      padding: 32px 36px 28px;
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(38, 154, 218, 0.22) 0%, transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(91, 194, 240, 0.18) 0%, transparent 55%),
+        linear-gradient(135deg, #0d2a3e 0%, #143955 60%, #1c4f74 100%);
+      color: #fff;
+      overflow: hidden;
+      isolation: isolate;
+      box-shadow:
+        0 30px 70px -40px rgba(13, 42, 62, 0.7),
+        0 1px 0 rgba(255, 255, 255, 0.06) inset;
+    }
+    .cbs-pledge::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 24px 24px;
+      mask-image: radial-gradient(ellipse 80% 70% at 80% 30%, #000 30%, transparent 80%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 70% at 80% 30%, #000 30%, transparent 80%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .cbs-pledge > * { position: relative; z-index: 1; }
+    .cbs-pledge__mark {
+      width: 38px; height: 28px;
+      color: rgba(255, 255, 255, 0.32);
+      margin-bottom: 10px;
+    }
+    .cbs-pledge__mark svg { width: 100%; height: 100%; }
+    .cbs-pledge__line {
+      margin: 0;
+      font-size: clamp(1.15rem, 1.6vw, 1.5rem);
+      line-height: 1.35;
+      letter-spacing: -0.015em;
+      font-weight: 600;
+      color: #fff;
+      max-width: 56ch;
+    }
+    .cbs-pledge__never {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .cbs-pledge__never li {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .cbs-pledge__x {
+      display: inline-flex;
+      align-items: center; justify-content: center;
+      width: 16px; height: 16px;
+      color: #FF8B7A;
+    }
+    .cbs-pledge__x svg { width: 100%; height: 100%; }
+
     .cbs-cost-note {
       margin: var(--space-5) auto 0;
       max-width: 60ch;
@@ -1512,6 +2273,32 @@ const icons: Record<string, string> = {
       font-size: 0.95rem;
       color: var(--bbg-text-muted);
       line-height: 1.6;
+    }
+
+    /* Field-swap animation */
+    .cbs-cost__grid.is-swapping [data-cost-field],
+    .cbs-cost__grid.is-swapping .cbs-ledger__num {
+      animation: cbs-field-swap 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes cbs-field-swap {
+      0% { opacity: 0; transform: translateY(6px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 1024px) {
+      .cbs-cost__grid { grid-template-columns: 1fr; gap: var(--space-4); }
+      .cbs-cost__switcher { max-width: 100%; }
+    }
+    @media (max-width: 640px) {
+      .cbs-cost__switcher-sub { display: none; }
+      .cbs-pledge { padding: 26px 22px 22px; }
+      .cbs-ledger { padding: 22px 22px 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cbs-ledger { transform: none !important; transition: none; }
+      .cbs-ledger__sheen { display: none; }
+      .cbs-bucket__meter-fill { transition: none; }
+      .cbs-cost__switcher-pill { transition: none; }
     }
 
     /* ---------- JOURNEY (vertical timeline) ---------- */
@@ -1779,7 +2566,7 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
       margin: 0;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .cbs-sister { grid-template-columns: 1fr; }
     }
 
@@ -1985,19 +2772,26 @@ const icons: Record<string, string> = {
         }
       }
 
-      // 2. Animated number counters in the hero meta strip
+      // 2. Animated number counters
+      const formatCounter = (n, format) => {
+        if (format === 'comma' || n >= 1000) return n.toLocaleString('en-US');
+        return String(n);
+      };
       const counters = document.querySelectorAll('[data-counter]');
       if (counters.length && !reduced && 'IntersectionObserver' in window) {
         const animate = (el) => {
-          const target = parseFloat(el.dataset.counter || '0');
+          const raw = el.dataset.counter;
+          const target = parseFloat(raw);
+          if (isNaN(target)) return;
           const suffix = el.dataset.suffix || '';
+          const format = el.dataset.counterFormat || '';
           const duration = 1400;
           const start = performance.now();
           const tick = (now) => {
             const t = Math.min(1, (now - start) / duration);
             const eased = 1 - Math.pow(1 - t, 3);
             const value = Math.round(target * eased);
-            el.textContent = value + suffix;
+            el.textContent = formatCounter(value, format) + suffix;
             if (t < 1) requestAnimationFrame(tick);
           };
           requestAnimationFrame(tick);
@@ -2013,7 +2807,10 @@ const icons: Record<string, string> = {
         counters.forEach((el) => counterIo.observe(el));
       } else {
         counters.forEach((el) => {
-          el.textContent = (el.dataset.counter || '0') + (el.dataset.suffix || '');
+          const raw = el.dataset.counter;
+          const n = parseFloat(raw);
+          if (isNaN(n)) return;
+          el.textContent = formatCounter(n, el.dataset.counterFormat) + (el.dataset.suffix || '');
         });
       }
 
@@ -2147,6 +2944,222 @@ const icons: Record<string, string> = {
         window.addEventListener('scroll', onJourneyScroll, { passive: true });
         window.addEventListener('resize', onJourneyScroll, { passive: true });
         updateJourney();
+      }
+
+      // 7b. Two-truths: cursor tilt + scroll-driven image parallax
+      const truths = document.querySelectorAll('[data-truth-tilt]');
+      if (truths.length && !reduced) {
+        truths.forEach((card) => {
+          const onMove = (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width;
+            const y = (e.clientY - rect.top) / rect.height;
+            const ry = (x - 0.5) * 5;
+            const rx = (0.5 - y) * 4;
+            card.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+            card.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+            card.setAttribute('data-tilt-active', '');
+          };
+          const onLeave = () => {
+            card.style.setProperty('--ry', '0deg');
+            card.style.setProperty('--rx', '0deg');
+            card.removeAttribute('data-tilt-active');
+          };
+          card.addEventListener('mousemove', onMove);
+          card.addEventListener('mouseleave', onLeave);
+        });
+
+        const parallaxImgs = document.querySelectorAll('[data-truth-parallax]');
+        let truthsTicking = false;
+        const updateTruthParallax = () => {
+          parallaxImgs.forEach((img) => {
+            const frame = img.parentElement;
+            if (!frame) return;
+            const rect = frame.getBoundingClientRect();
+            const vh = window.innerHeight;
+            if (rect.bottom < 0 || rect.top > vh) return;
+            const center = rect.top + rect.height / 2;
+            const offset = (center - vh / 2) / vh;
+            const shift = Math.max(-16, Math.min(16, -offset * 22));
+            img.style.setProperty('--img-y', shift.toFixed(1) + 'px');
+          });
+        };
+        const onTruthsScroll = () => {
+          if (truthsTicking) return;
+          truthsTicking = true;
+          requestAnimationFrame(() => {
+            updateTruthParallax();
+            truthsTicking = false;
+          });
+        };
+        window.addEventListener('scroll', onTruthsScroll, { passive: true });
+        window.addEventListener('resize', onTruthsScroll, { passive: true });
+        updateTruthParallax();
+      }
+
+      // 7c. Cost section: model switcher + 3D tilt + meter reveal
+      const costRoot = document.querySelector('[data-cost]');
+      if (costRoot) {
+        const ledgerCards = Array.from(costRoot.querySelectorAll('[data-tilt]'));
+
+        // 3D mouse tilt + radial sheen
+        if (!reduced) {
+          ledgerCards.forEach((card) => {
+            const onMove = (e) => {
+              const rect = card.getBoundingClientRect();
+              const x = (e.clientX - rect.left) / rect.width;
+              const y = (e.clientY - rect.top) / rect.height;
+              card.style.setProperty('--ry', ((x - 0.5) * 6).toFixed(2) + 'deg');
+              card.style.setProperty('--rx', ((0.5 - y) * 5).toFixed(2) + 'deg');
+              card.style.setProperty('--mx', (x * 100).toFixed(1) + '%');
+              card.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+              card.setAttribute('data-tilt-active', '');
+            };
+            const onLeave = () => {
+              card.style.setProperty('--ry', '0deg');
+              card.style.setProperty('--rx', '0deg');
+              card.removeAttribute('data-tilt-active');
+            };
+            card.addEventListener('mousemove', onMove);
+            card.addEventListener('mouseleave', onLeave);
+          });
+        }
+
+        // Reveal cards (drives meter fill)
+        if ('IntersectionObserver' in window) {
+          const ledgerIo = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                ledgerIo.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.18 });
+          ledgerCards.forEach((c) => ledgerIo.observe(c));
+        } else {
+          ledgerCards.forEach((c) => c.classList.add('is-in'));
+        }
+
+        // Model switcher
+        const tabs = Array.from(costRoot.querySelectorAll('[data-cost-tab]'));
+        const switcher = costRoot.querySelector('.cbs-cost__switcher');
+        const dataEl = costRoot.querySelector('[data-cost-data]');
+        const grid = costRoot.querySelector('.cbs-cost__grid');
+        let dataTp = {}, dataDist = {};
+        try {
+          if (dataEl) {
+            dataTp = JSON.parse(dataEl.getAttribute('data-tp') || '{}');
+            dataDist = JSON.parse(dataEl.getAttribute('data-distributor') || '{}');
+          }
+        } catch (e) {}
+
+        const animateNum = (el, target) => {
+          const fromRaw = el.textContent.replace(/[^0-9-]/g, '');
+          const from = parseFloat(fromRaw) || 0;
+          if (reduced) {
+            el.textContent = formatCounter(target, el.dataset.counterFormat);
+            return;
+          }
+          const duration = 700;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(from + (target - from) * eased);
+            el.textContent = formatCounter(value, el.dataset.counterFormat);
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        };
+
+        const applyModel = (model) => {
+          if (!switcher) return;
+          const dataset = model === 'tp' ? dataTp : dataDist;
+          switcher.setAttribute('data-active', model);
+          tabs.forEach((t) => {
+            const active = t.getAttribute('data-cost-tab') === model;
+            t.classList.toggle('is-active', active);
+            t.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+
+          if (grid) {
+            grid.classList.remove('is-swapping');
+            // force reflow so animation re-runs
+            void grid.offsetWidth;
+            grid.classList.add('is-swapping');
+          }
+
+          ['agency', 'brand'].forEach((key) => {
+            const card = costRoot.querySelector('[data-cost-card="' + key + '"]');
+            if (!card || !dataset[key]) return;
+            const cfg = dataset[key];
+
+            const tagEl = card.querySelector('[data-cost-field="' + key + '.tag"]');
+            const unitEl = card.querySelector('[data-cost-field="' + key + '.unit"]');
+            const pillEl = card.querySelector('[data-cost-field="' + key + '.pill"]');
+            const bodyEl = card.querySelector('[data-cost-field="' + key + '.body"]');
+            const footerEl = card.querySelector('[data-cost-field="' + key + '.footer"]');
+            const headlineEl = card.querySelector('[data-cost-field="' + key + '.headline"]');
+
+            if (tagEl) tagEl.textContent = cfg.tag || '';
+            if (unitEl) unitEl.textContent = cfg.headlineUnit || '';
+            if (pillEl) pillEl.textContent = cfg.pill || '';
+            if (bodyEl) bodyEl.textContent = cfg.body || '';
+            if (footerEl) footerEl.textContent = cfg.footer || '';
+
+            if (headlineEl) {
+              const lead = headlineEl.querySelector('.cbs-ledger__lead');
+              const prefix = headlineEl.querySelector('.cbs-ledger__prefix');
+              const suffix = headlineEl.querySelector('.cbs-ledger__suffix');
+              const num = headlineEl.querySelector('.cbs-ledger__num');
+              const isNumeric = typeof cfg.headlineNum === 'number';
+
+              if (lead) {
+                const leadText = cfg.headlineLead || '';
+                lead.textContent = leadText;
+                lead.style.display = leadText ? '' : 'none';
+              }
+
+              if (isNumeric) {
+                headlineEl.classList.remove('cbs-ledger__headline--text');
+                if (prefix) prefix.textContent = cfg.headlinePrefix || '';
+                if (suffix) suffix.textContent = cfg.headlineSuffix || '';
+                if (num) {
+                  num.dataset.counter = String(cfg.headlineNum);
+                  animateNum(num, cfg.headlineNum);
+                }
+              } else {
+                headlineEl.classList.add('cbs-ledger__headline--text');
+                if (prefix) prefix.textContent = '';
+                if (suffix) suffix.textContent = '';
+                if (num) {
+                  num.textContent = cfg.headlineText || '';
+                  num.dataset.counter = '';
+                }
+              }
+            }
+          });
+        };
+
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            applyModel(tab.getAttribute('data-cost-tab'));
+          });
+          tab.addEventListener('keydown', (e) => {
+            const idx = tabs.indexOf(tab);
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+              e.preventDefault();
+              const next = tabs[(idx + 1) % tabs.length];
+              next.focus();
+              applyModel(next.getAttribute('data-cost-tab'));
+            } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+              e.preventDefault();
+              const prev = tabs[(idx - 1 + tabs.length) % tabs.length];
+              prev.focus();
+              applyModel(prev.getAttribute('data-cost-tab'));
+            }
+          });
+        });
       }
 
       // 8. FAQ category filter

@@ -205,6 +205,63 @@ When the user requests a content or copy change, default to editing **only the f
 
 **Why:** The user is the founder of BeyondBorderGroup. The site bridges China and the West. Translated-sounding copy in any language signals an outsider and undermines the brand premise. Past locale copy has read as English with the words swapped, which is the exact failure mode this rule blocks. Regenerating a locale page from English destroys prior editorial work (humanizer + native-rewrite passes), reintroduces the failure mode, wastes the translation budget, and forces the user to babysit changes in languages they were not yet ready to touch.
 
+### 6.11 Slug localisation (MANDATORY, permanent)
+
+Every page slug must be written in the target language of the locale it lives under. No English slugs under non-English locales. This rule is permanent and applies to every new page from now on.
+
+**Scope**
+
+- Every file and directory name under `src/pages/<locale>/` (e.g. `fr/`, `de/`, `es/`, `zh/`) uses words in that locale's language, not English.
+- Applies to landing pages, sub-pages, section indexes, dynamic-route folder names, and any URL-visible path segment.
+- The English site keeps English slugs at the root (`src/pages/<page>.astro`); this rule fires only for non-English locales.
+
+**Examples (illustrative, French)**
+
+- `src/pages/fr/nous-contacter.astro` instead of `src/pages/fr/contact.astro`
+- `src/pages/fr/qui-nous-sommes.astro` instead of `src/pages/fr/about.astro`
+- `src/pages/fr/entrer-en-chine/conseil-en-entree-de-marche.astro` instead of `src/pages/fr/enter-china/market-entry-consulting.astro`
+- `src/pages/fr/nos-realisations/` instead of `src/pages/fr/work/`
+- `src/pages/fr/decryptages/` instead of `src/pages/fr/insights/`
+
+**Form**
+
+- Lowercase, hyphen-separated. No spaces, no underscores, no trailing slashes in the filename.
+- Strip diacritics for URL safety: `entrée` becomes `entree`, `réalisations` becomes `realisations`, `développement` becomes `developpement`. The page CONTENT keeps the accents; only the slug strips them.
+- Use the word a native marketer or journalist would expect in the URL bar of a serious news / business site in that market.
+- Brand and product names stay in their canonical form (see 6.8). `tmall-global`, `wechat`, `beyondcompass` are fine inside any locale slug.
+
+**Locale defaults**
+
+- FR: native French nouns / verbs. `nous-contacter`, `qui-nous-sommes`, `realisations`, `decryptages`.
+- DE: native German. Compound nouns are normal; do not force English-style word breaks. `ueber-uns`, `kontakt`, `referenzen`. Replace umlauts: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss`.
+- ES: native Spanish. `contacto`, `quienes-somos`, `proyectos`. Replace `ñ→n` and accents with the unaccented vowel.
+- IT (if added later): same principle, `contatti`, `chi-siamo`.
+- PT (if added later): same principle, `contato`, `quem-somos`.
+
+**Routing / helpers**
+
+- `localizePath` and any other locale-link helper must map between locale slugs (per-locale slug table), not blindly prefix `/<locale>/` onto the English path.
+- Hreflang `<link rel="alternate">` tags must point to the native-language URL for each locale, not to the English-slug URL with a locale prefix.
+- Internal `<a>`, `<Link>`, and CTA references in any locale page must use that locale's slug.
+
+**Workflow when creating a new non-English locale page**
+
+1. Open the English source page to confirm scope.
+2. Draft the slug in the target language using a native journalist's framing. Apply the two-step humanize + native-rewrite pass from 6.4 to the slug itself, the same way you would for body copy.
+3. Strip diacritics and lowercase, hyphenate.
+4. Update the per-locale slug table / `localizePath` map so internal links resolve correctly.
+5. Run a build to confirm no broken links.
+
+**Workflow when EDITING a non-English locale page that is already shipped with an English slug**
+
+- Do NOT silently rename the file. URL changes break links, search ranking, and any external references.
+- Flag the mismatch to the user. Propose a renaming plan that includes a redirect from the old slug to the new one.
+- Let the user authorise before renaming. Default scope is single-locale (see 6.9); slug renames in one locale do not propagate to others without explicit instruction.
+
+**Why:** Native-language slugs match how users search in that market, build the credibility of the localized site, and signal to search engines that the page targets that audience. An English slug under `/fr/` undercuts both the editorial premise of the translation and the search ranking the page can achieve. The user has flagged this as a permanent project-wide rule.
+
+**How to apply:** Whenever creating a new locale page, draft the slug in the target language BEFORE creating the file. When auditing existing locale pages, scan for English slugs under non-English locales and flag them as renames that need user sign-off plus a redirect plan. This rule overrides the default in 6.3 step 5 ("keep page structure intact") for NEW pages, but the "do not change without flagging" guidance in 6.10 still applies to renaming SHIPPED slugs.
+
 ---
 
 ## 7. Project overview

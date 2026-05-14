@@ -3,16 +3,22 @@ import Layout from '../../layouts/Layout.astro';
 
 const whereYouAre = [
   {
+    kicker: 'Launching',
     title: "You're launching in China",
     body: 'No accounts, no data, no history. You need someone to build the whole thing and get it running, without burning the first three months figuring out which platform does what.',
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4c4 0 6 2 6 6-4 0-6 2-6 6-4 0-6-2-6-6 4 0 6-2 6-6z"/><circle cx="14" cy="10" r="1.5"/><path d="M8 16l-3 3M11 19l-2 2M5 13l-2 2"/></svg>`,
   },
   {
+    kicker: 'Underperforming',
     title: "You're already spending, and it isn't working",
     body: "Campaigns are live, maybe through another agency, and the numbers don't add up. You need a team to take it apart and rebuild it properly.",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>`,
   },
   {
+    kicker: 'Scaling',
     title: "You're scaling",
     body: 'The basics work. Now you want to push, new platforms, bigger budgets, livestreaming, eCommerce media. What you need is senior hands, not three more juniors.',
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg>`,
   },
 ];
 
@@ -411,7 +417,13 @@ const serviceJsonLd = {
     </section>
 
     {/* ---------- WHO WE WORK WITH ---------- */}
-    <section id="who-we-work-with" class="section">
+    <section id="who-we-work-with" class="section cbs-truths-section">
+      <div class="cbs-truths-bg" aria-hidden="true">
+        <div class="cbs-truths-bg__blob cbs-truths-bg__blob--a"></div>
+        <div class="cbs-truths-bg__blob cbs-truths-bg__blob--b"></div>
+        <div class="cbs-truths-bg__grid"></div>
+      </div>
+
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Where you're starting</span>
@@ -422,11 +434,24 @@ const serviceJsonLd = {
           </p>
         </header>
 
-        <div class="cbs-cards cbs-cards--3 cbs-reveal">
+        <div class="cbs-truths cbs-truths--three">
           {whereYouAre.map((c, i) => (
-            <article class="cbs-card" style={`--reveal-delay: ${i * 80}ms;`}>
-              <h3 class="cbs-card__title">{c.title}</h3>
-              <p class="cbs-card__body">{c.body}</p>
+            <article
+              class={`cbs-truth cbs-truth--text${i === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
+              style={`--reveal-delay: ${i * 100}ms;`}
+              data-truth-tilt
+            >
+              <div class="cbs-truth__inner">
+                <div class="cbs-truth__icon" aria-hidden="true" set:html={c.icon} />
+                <div class="cbs-truth__kicker">
+                  <span class="cbs-truth__kicker-dot"></span>
+                  {c.kicker}
+                </div>
+                <div class="cbs-truth__content">
+                  <h3 class="cbs-truth__title">{c.title}</h3>
+                  <p class="cbs-truth__body">{c.body}</p>
+                </div>
+              </div>
             </article>
           ))}
         </div>
@@ -985,7 +1010,7 @@ const serviceJsonLd = {
       font-size: 1rem;
       line-height: 1.6;
     }
-    @media (max-width: 960px) {
+    @media (max-width: 1024px) {
       .cbs-cards--3,
       .cbs-cards--4 { grid-template-columns: repeat(2, 1fr); }
     }
@@ -1071,7 +1096,7 @@ const serviceJsonLd = {
       color: var(--bbg-text);
       margin: 0;
     }
-    @media (max-width: 960px) {
+    @media (max-width: 1024px) {
       .cbs-services,
       .cbs-services--two { grid-template-columns: repeat(2, 1fr); }
     }
@@ -1257,7 +1282,7 @@ const serviceJsonLd = {
       font-size: 1rem;
       line-height: 1.6;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .cbs-tabs__nav { grid-template-columns: 1fr; }
       .cbs-tabs__tab { border-right: none; border-bottom: 1px solid var(--bbg-border); }
       .cbs-tabs__indicator { display: none; }
@@ -1654,6 +1679,57 @@ const serviceJsonLd = {
             });
           });
         });
+      }
+
+      // Truth cards: cursor tilt + scroll-driven image parallax
+      const truths = document.querySelectorAll('[data-truth-tilt]');
+      if (truths.length && !reduced) {
+        truths.forEach((card) => {
+          const onMove = (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width;
+            const y = (e.clientY - rect.top) / rect.height;
+            const ry = (x - 0.5) * 5;
+            const rx = (0.5 - y) * 4;
+            card.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+            card.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+            card.setAttribute('data-tilt-active', '');
+          };
+          const onLeave = () => {
+            card.style.setProperty('--ry', '0deg');
+            card.style.setProperty('--rx', '0deg');
+            card.removeAttribute('data-tilt-active');
+          };
+          card.addEventListener('mousemove', onMove);
+          card.addEventListener('mouseleave', onLeave);
+        });
+
+        const parallaxImgs = document.querySelectorAll('[data-truth-parallax]');
+        let truthsTicking = false;
+        const updateTruthParallax = () => {
+          parallaxImgs.forEach((img) => {
+            const frame = img.parentElement;
+            if (!frame) return;
+            const rect = frame.getBoundingClientRect();
+            const vh = window.innerHeight;
+            if (rect.bottom < 0 || rect.top > vh) return;
+            const center = rect.top + rect.height / 2;
+            const offset = (center - vh / 2) / vh;
+            const shift = Math.max(-16, Math.min(16, -offset * 22));
+            img.style.setProperty('--img-y', shift.toFixed(1) + 'px');
+          });
+        };
+        const onTruthsScroll = () => {
+          if (truthsTicking) return;
+          truthsTicking = true;
+          requestAnimationFrame(() => {
+            updateTruthParallax();
+            truthsTicking = false;
+          });
+        };
+        window.addEventListener('scroll', onTruthsScroll, { passive: true });
+        window.addEventListener('resize', onTruthsScroll, { passive: true });
+        updateTruthParallax();
       }
     })();
   </script>

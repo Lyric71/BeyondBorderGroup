@@ -6,7 +6,7 @@ const lastUpdated = '23 April 2026';
 
 <Layout
   title="Privacy Policy | Beyond Border Group"
-  description="How Beyond Border Group collects, uses and protects personal information. Privacy practices for our website and services."
+  description="How Beyond Border Group collects, uses and protects personal information on our website and in our services."
 >
   <section class="legal-hero">
     <div class="container">
@@ -14,10 +14,9 @@ const lastUpdated = '23 April 2026';
       <h1 class="legal-hero__title">Privacy Policy</h1>
       <p class="legal-hero__meta">Last updated: {lastUpdated}</p>
       <p class="legal-hero__lead">
-        Beyond Border Group is operated by BeyondBorderGroup LTD, a Hong Kong SAR registered
-        entity. We respect the privacy of every visitor and client. This policy explains what
-        personal data we collect, how we use it, how we store it, and who we share it with when
-        you visit our website or engage our services.
+        Beyond Border Group is operated by BeyondBorderGroup LTD, a company registered in the
+        Hong Kong SAR. This policy explains what personal data we collect when you visit our
+        website or engage our services, how we use and store it, and who we share it with.
       </p>
     </div>
   </section>
@@ -101,8 +100,7 @@ const lastUpdated = '23 April 2026';
         <h2>Changes to this policy</h2>
         <p>
           We may update this Privacy Policy from time to time. The revised version will be
-          posted on this page with an updated date. We encourage you to review this page
-          periodically.
+          posted on this page with a new date. Please check back occasionally.
         </p>
 
         <h2>Contact</h2>
@@ -178,4 +176,11 @@ const lastUpdated = '23 April 2026';
   .prose li { margin-bottom: var(--space-2); }
   .prose a { color: var(--bbg-blue); text-decoration: underline; text-underline-offset: 3px; }
   .prose a:hover { color: var(--bbg-blue-dark); }
+
+  @media (max-width: 640px) {
+    .legal-hero { padding: var(--space-6) 0 var(--space-5); }
+    .legal-body { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+    .prose h2 { margin-top: var(--space-6); font-size: 1.375rem; }
+    .prose h3 { margin-top: var(--space-4); }
+  }
 </style>

@@ -1,4 +1,11 @@
 ---
+import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
+import { locales, localeLabels, localeNamesNative, type Locale } from '../i18n/ui';
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const lp = (path: string) => localizePath(path, locale);
+
 const icon = {
   compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5.5-5.5 2 2-5.5z"/></svg>`,
   store: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/><path d="M4 9h16"/></svg>`,
@@ -16,66 +23,77 @@ const icon = {
   camera: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h3l2-3h8l2 3h3v12H3z"/><circle cx="12" cy="13" r="4"/></svg>`,
   megaphone: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h2l9 5V4L6 9H4a1 1 0 0 0-1 1z"/><path d="M18 9a4 4 0 0 1 0 6"/><path d="M7 15v3a2 2 0 0 0 4 0v-2"/></svg>`,
   newspaper: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h14v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M18 8h2v11a2 2 0 0 1-2 2"/><path d="M7 9h8M7 13h8M7 17h5"/></svg>`,
+  globe: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>`,
 };
 
 const enterChina = [
-  { label: 'Market Entry Consulting', desc: 'Strategy, business model and partner selection before launch.', href: '/enter-china/market-entry-consulting', svg: icon.compass },
-  { label: 'Cross-Border eCommerce Setup', desc: 'Tmall Global and JD Worldwide. No Chinese entity needed.', href: '/enter-china/cross-border-setup', svg: icon.store },
-  { label: 'Distribution', desc: 'Find the right distributor for your category and channel.', href: '/enter-china/distribution', svg: icon.truck },
-  { label: 'Branding & Localisation', desc: 'Your brand, sharpened for the Chinese consumer.', href: '/enter-china/branding-localisation', svg: icon.tag },
+  { label: t('nav.enter.marketEntry.label'), desc: t('nav.enter.marketEntry.desc'), href: lp('/enter-china/market-entry-consulting'), svg: icon.compass },
+  { label: t('nav.enter.crossBorder.label'), desc: t('nav.enter.crossBorder.desc'), href: lp('/enter-china/cross-border-setup'), svg: icon.store },
+  { label: t('nav.enter.distribution.label'), desc: t('nav.enter.distribution.desc'), href: lp('/enter-china/distribution'), svg: icon.truck },
+  { label: t('nav.enter.branding.label'), desc: t('nav.enter.branding.desc'), href: lp('/enter-china/branding-localisation'), svg: icon.tag },
 ];
 
 const enterChinaFeature = {
   label: 'BeyondCompass',
-  desc: 'Database of vetted China distributors, Tmall partners and channel operators.',
+  desc: t('nav.feature.beyondcompass.desc'),
   href: 'https://beyondcompass.beyondbordergroup.com',
   logo: '/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp',
 };
 
 const growChina = [
-  { label: 'Cross-Border eCommerce', desc: 'Run your Tmall Global and JD Worldwide stores end-to-end.', href: '/grow-in-china/cross-border-ecommerce', svg: icon.bag },
-  { label: 'Social Commerce', desc: 'Sales on Douyin, WeChat and RED. Livestream and KOL.', href: '/grow-in-china/social-commerce', svg: icon.chat },
-  { label: 'Campaigns', desc: '618, Double 11, CNY. Multi-channel festival campaigns, warm-up to peak.', href: '/grow-in-china/campaigns', svg: icon.tag },
-  { label: 'Media', desc: 'Performance and brand media across Chinese platforms.', href: '/grow-in-china/media', svg: icon.broadcast },
-  { label: 'Influencers & KOLs', desc: 'KOL casting and paid campaigns across Douyin, RED and WeChat.', href: '/grow-in-china/influencers-kols', svg: icon.megaphone },
+  { label: t('nav.grow.ecommerce.label'), desc: t('nav.grow.ecommerce.desc'), href: lp('/grow-in-china/cross-border-ecommerce'), svg: icon.bag },
+  { label: t('nav.grow.social.label'), desc: t('nav.grow.social.desc'), href: lp('/grow-in-china/social-commerce'), svg: icon.chat },
+  { label: t('nav.grow.campaigns.label'), desc: t('nav.grow.campaigns.desc'), href: lp('/grow-in-china/campaigns'), svg: icon.tag },
+  { label: t('nav.grow.media.label'), desc: t('nav.grow.media.desc'), href: lp('/grow-in-china/media'), svg: icon.broadcast },
+  { label: t('nav.grow.kols.label'), desc: t('nav.grow.kols.desc'), href: lp('/grow-in-china/influencers-kols'), svg: icon.megaphone },
 ];
 
 const growChinaFeature = {
   label: 'ChinaWebFoundry',
-  desc: 'A website built in Shanghai for China.',
+  desc: t('nav.feature.chinawebfoundry.desc'),
   href: 'https://chinawebfoundry.com',
   logo: '/Images/AgencyLogos/Logo-ChinaWebFoundry-transparent.webp',
 };
 
 const growChinaFeatureHub = {
   label: 'hubStudio',
-  desc: 'The creative production house.',
+  desc: t('nav.feature.hubstudio.desc'),
   href: 'https://hubstudio.ai',
   logo: '/Images/AgencyLogos/hubStudio%20(2).webp',
 };
 
 const learnChina = [
-  { label: 'Platforms', desc: 'Tmall, JD, Douyin, WeChat, RED, Pinduoduo. How each one works and who it is for.', href: '/learn-china/platforms', svg: icon.grid },
-  { label: 'Masterclass', desc: 'Workshops led by people who run China every day.', href: '/learn-china/masterclass', svg: icon.cap },
-  { label: 'Learning Expeditions', desc: 'On-the-ground programmes in Shanghai and beyond.', href: '/learn-china/learning-expeditions', svg: icon.pin },
-  { label: 'Insights', desc: 'Articles, reports and analysis from the frontlines.', href: '/insights', svg: icon.bulb },
+  { label: t('nav.learn.platforms.label'), desc: t('nav.learn.platforms.desc'), href: lp('/learn-china/platforms'), svg: icon.grid },
+  { label: t('nav.learn.masterclass.label'), desc: t('nav.learn.masterclass.desc'), href: lp('/learn-china/masterclass'), svg: icon.cap },
+  { label: t('nav.learn.expeditions.label'), desc: t('nav.learn.expeditions.desc'), href: lp('/learn-china/learning-expeditions'), svg: icon.pin },
+  { label: t('nav.learn.insights.label'), desc: t('nav.learn.insights.desc'), href: lp('/insights'), svg: icon.bulb },
 ];
 
 const sections = [
-  { key: 'enter', label: 'Enter China', href: '/enter-china', intro: 'Launch in China with the right model, the right partner, the right plan.', items: enterChina },
-  { key: 'grow', label: 'Grow in China', href: '/grow-in-china', intro: 'Operations, media and creative. One team running your stores, your channels, your brand.', items: growChina },
-  { key: 'learn', label: 'Learn China', href: '/learn-china', intro: 'Understand the market before you bet on it. Programmes built by people who run China every day.', items: learnChina },
+  { key: 'enter', label: t('nav.section.enter'), href: lp('/enter-china'), intro: t('nav.enter.intro'), items: enterChina },
+  { key: 'grow', label: t('nav.section.grow'), href: lp('/grow-in-china'), intro: t('nav.grow.intro'), items: growChina },
+  { key: 'learn', label: t('nav.section.learn'), href: lp('/learn-china'), intro: t('nav.learn.intro'), items: learnChina },
 ];
+
+// Build a sibling URL for each available locale, used by the language switcher.
+const otherLocales = (locales as readonly Locale[]).filter((l) => l !== locale);
+const switcherCurrent = { code: locale, label: localeLabels[locale], name: localeNamesNative[locale], href: localizePath(Astro.url.pathname, locale) };
+const switcherOthers = otherLocales.map((l) => ({
+  code: l,
+  label: localeLabels[l],
+  name: localeNamesNative[l],
+  href: localizePath(Astro.url.pathname, l),
+}));
 ---
 
 <header class="nav" id="site-nav">
   <div class="container nav__inner">
-    <a href="/" class="nav__logo" aria-label="Beyond Border Group Home">
+    <a href={lp('/')} class="nav__logo" aria-label={t('footer.aria.brand')}>
       <img class="nav__logo-img nav__logo-img--default" src="/Images/Logo%20Beyond%20SVG%20Export%20-%20Horizonthal.svg" alt="Beyond Border Group" width="1448" height="563" />
       <img class="nav__logo-img nav__logo-img--light" src="/Images/Logo-horizontal-light.svg" alt="" aria-hidden="true" width="1448" height="563" />
     </a>
 
-    <nav class="nav__primary" aria-label="Primary">
+    <nav class="nav__primary" aria-label={t('nav.aria.primary')}>
       <ul class="nav__links">
         {sections.map(section => (
           <li class="nav__item nav__item--mega">
@@ -85,7 +103,7 @@ const sections = [
                 <div class="mega__head">
                   <span class="mega__eyebrow">{section.label}</span>
                   <p class="mega__intro">{section.intro}</p>
-                  <a href={section.href} class="btn btn--ghost mega__cta">All {section.label.toLowerCase()} services</a>
+                  <a href={section.href} class="btn btn--ghost mega__cta">{t('nav.allServices', { section: section.label })}</a>
                 </div>
                 <div class={`mega__grid ${section.key === 'grow' ? 'mega__grid--grow' : section.items.length > 3 ? 'mega__grid--6' : 'mega__grid--3'}`}>
                   {section.items.map(item => (
@@ -98,7 +116,7 @@ const sections = [
                     </a>
                   ))}
                   {section.key === 'enter' && (
-                    <a href={enterChinaFeature.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature" data-spotlight aria-label={`${enterChinaFeature.label} (opens in new tab): ${enterChinaFeature.desc}`}>
+                    <a href={enterChinaFeature.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature" data-spotlight aria-label={t('nav.opensInNewTab', { name: enterChinaFeature.label, desc: enterChinaFeature.desc })}>
                       <span class="mega-feature__logobox">
                         <img src={enterChinaFeature.logo} alt={enterChinaFeature.label} loading="lazy" width="320" height="80" />
                       </span>
@@ -106,7 +124,7 @@ const sections = [
                     </a>
                   )}
                   {section.key === 'grow' && (
-                    <a href={growChinaFeature.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature mega-item--feature-cwf" data-spotlight aria-label={`${growChinaFeature.label} (opens in new tab): ${growChinaFeature.desc}`}>
+                    <a href={growChinaFeature.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature mega-item--feature-cwf" data-spotlight aria-label={t('nav.opensInNewTab', { name: growChinaFeature.label, desc: growChinaFeature.desc })}>
                       <span class="mega-feature__logobox">
                         <img src={growChinaFeature.logo} alt={growChinaFeature.label} loading="lazy" width="320" height="80" />
                       </span>
@@ -114,7 +132,7 @@ const sections = [
                     </a>
                   )}
                   {section.key === 'grow' && (
-                    <a href={growChinaFeatureHub.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature mega-item--feature-hub" data-spotlight aria-label={`${growChinaFeatureHub.label} (opens in new tab): ${growChinaFeatureHub.desc}`}>
+                    <a href={growChinaFeatureHub.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature mega-item--feature-hub" data-spotlight aria-label={t('nav.opensInNewTab', { name: growChinaFeatureHub.label, desc: growChinaFeatureHub.desc })}>
                       <span class="mega-feature__logobox">
                         <img src={growChinaFeatureHub.logo} alt={growChinaFeatureHub.label} loading="lazy" width="320" height="80" />
                       </span>
@@ -128,17 +146,44 @@ const sections = [
         ))}
 
         <li class="nav__item">
-          <a href="/work" class="nav__link">Our Work</a>
+          <a href={lp('/work')} class="nav__link">{t('nav.work')}</a>
         </li>
         <li class="nav__item">
-          <a href="/about" class="nav__link">Who We Are</a>
+          <a href={lp('/about')} class="nav__link">{t('nav.about')}</a>
         </li>
       </ul>
     </nav>
 
     <div class="nav__right">
-      <a href="/contact" class="btn btn--primary btn--sm">Contact</a>
-      <button class="nav__burger" type="button" aria-label="Menu" aria-expanded="false">
+      <div class="nav__lang" data-lang-switch>
+        <button class="nav__lang-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label={t('lang.switch.aria')}>
+          <svg class="nav__lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/>
+          </svg>
+          <span class="nav__lang-current">{switcherCurrent.label}</span>
+          <svg class="nav__lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <ul class="nav__lang-menu" role="listbox" aria-label={t('lang.switch.aria')}>
+          <li role="option" aria-selected="true">
+            <a class="nav__lang-option is-current" href={switcherCurrent.href} hreflang={switcherCurrent.code}>
+              <span class="nav__lang-option-code">{switcherCurrent.label}</span>
+              <span class="nav__lang-option-name">{switcherCurrent.name}</span>
+            </a>
+          </li>
+          {switcherOthers.map((opt) => (
+            <li role="option" aria-selected="false">
+              <a class="nav__lang-option" href={opt.href} hreflang={opt.code}>
+                <span class="nav__lang-option-code">{opt.label}</span>
+                <span class="nav__lang-option-name">{opt.name}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <a href={lp('/contact')} class="btn btn--primary btn--sm">{t('nav.contact')}</a>
+      <button class="nav__burger" type="button" aria-label={t('nav.menu')} aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -153,10 +198,30 @@ const sections = [
     window.addEventListener('scroll', onScroll, { passive: true });
 
     const burger = nav.querySelector('.nav__burger');
+    const closeDrawer = () => {
+      nav.classList.remove('nav--open');
+      burger?.setAttribute('aria-expanded', 'false');
+    };
     burger?.addEventListener('click', () => {
       const open = nav.classList.toggle('nav--open');
       burger.setAttribute('aria-expanded', String(open));
     });
+    // Close drawer when a nav link is tapped
+    nav.querySelectorAll('.nav__primary a').forEach((a) => {
+      a.addEventListener('click', closeDrawer);
+    });
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('nav--open')) closeDrawer();
+    });
+    // Close when the viewport grows past the breakpoint where the desktop
+    // nav takes over. FR keeps the burger up to 1180px (longer labels), so
+    // pick the matching breakpoint per locale.
+    const isFr = document.documentElement.lang === 'fr';
+    const mq = window.matchMedia(isFr ? '(min-width: 1181px)' : '(min-width: 1025px)');
+    const onMq = (e) => { if (e.matches) closeDrawer(); };
+    if (mq.addEventListener) mq.addEventListener('change', onMq);
+    else mq.addListener(onMq);
 
     nav.querySelectorAll('[data-spotlight]').forEach((el) => {
       const onMove = (e) => {
@@ -173,5 +238,26 @@ const sections = [
       el.addEventListener('pointermove', onMove);
       el.addEventListener('pointerleave', onLeave);
     });
+
+    // Language switcher: click-to-toggle dropdown, click-away to close.
+    const lang = nav.querySelector('[data-lang-switch]');
+    if (lang) {
+      const trigger = lang.querySelector('.nav__lang-trigger');
+      const close = () => {
+        lang.classList.remove('is-open');
+        trigger?.setAttribute('aria-expanded', 'false');
+      };
+      trigger?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = lang.classList.toggle('is-open');
+        trigger.setAttribute('aria-expanded', String(open));
+      });
+      document.addEventListener('click', (e) => {
+        if (!lang.contains(e.target)) close();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') close();
+      });
+    }
   })();
 </script>

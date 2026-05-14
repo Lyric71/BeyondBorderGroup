@@ -1,30 +1,36 @@
 ---
+import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
+
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const lp = (path: string) => localizePath(path, locale);
+
 const enterChina = [
-  { label: 'Market Entry Consulting', href: '/enter-china/market-entry-consulting' },
-  { label: 'Cross-Border eCommerce Setup', href: '/enter-china/cross-border-setup' },
-  { label: 'Distribution', href: '/enter-china/distribution' },
-  { label: 'Branding & Localisation', href: '/enter-china/branding-localisation' },
+  { label: t('nav.enter.marketEntry.label'), href: lp('/enter-china/market-entry-consulting') },
+  { label: t('nav.enter.crossBorder.label'), href: lp('/enter-china/cross-border-setup') },
+  { label: t('nav.enter.distribution.label'), href: lp('/enter-china/distribution') },
+  { label: t('nav.enter.branding.label'), href: lp('/enter-china/branding-localisation') },
 ];
 
 const growChina = [
-  { label: 'Cross-Border eCommerce', href: '/grow-in-china/cross-border-ecommerce' },
-  { label: 'Social Commerce', href: '/grow-in-china/social-commerce' },
-  { label: 'Campaigns', href: '/grow-in-china/campaigns' },
-  { label: 'Media', href: '/grow-in-china/media' },
-  { label: 'Influencers & KOLs', href: '/grow-in-china/influencers-kols' },
+  { label: t('nav.grow.ecommerce.label'), href: lp('/grow-in-china/cross-border-ecommerce') },
+  { label: t('nav.grow.social.label'), href: lp('/grow-in-china/social-commerce') },
+  { label: t('nav.grow.campaigns.label'), href: lp('/grow-in-china/campaigns') },
+  { label: t('nav.grow.media.label'), href: lp('/grow-in-china/media') },
+  { label: t('nav.grow.kols.label'), href: lp('/grow-in-china/influencers-kols') },
 ];
 
 const learnChina = [
-  { label: 'Platforms', href: '/learn-china/platforms' },
-  { label: 'Masterclass', href: '/learn-china/masterclass' },
-  { label: 'Learning Expeditions', href: '/learn-china/learning-expeditions' },
-  { label: 'Insights', href: '/insights' },
+  { label: t('nav.learn.platforms.label'), href: lp('/learn-china/platforms') },
+  { label: t('nav.learn.masterclass.label'), href: lp('/learn-china/masterclass') },
+  { label: t('nav.learn.expeditions.label'), href: lp('/learn-china/learning-expeditions') },
+  { label: t('nav.learn.insights.label'), href: lp('/insights') },
 ];
 
 const company = [
-  { label: 'Who We Are', href: '/about' },
-  { label: 'Our Work', href: '/work' },
-  { label: 'Contact', href: '/contact' },
+  { label: t('nav.about'), href: lp('/about') },
+  { label: t('nav.work'), href: lp('/work') },
+  { label: t('nav.contact'), href: lp('/contact') },
 ];
 
 const network = [
@@ -32,31 +38,31 @@ const network = [
     name: 'NuvoraStudio.com',
     href: 'https://nuvora.studio',
     logo: '/Images/AgencyLogos/Nuvora%20PNG.webp',
-    desc: 'LinkedIn presence built daily. Content, ads, executive branding.',
+    desc: t('footer.net.nuvora.desc'),
   },
   {
     name: 'ChinaWebFoundry.com',
     href: 'https://chinawebfoundry.com',
     logo: '/Images/AgencyLogos/Logo-ChinaWebFoundry-transparent.webp',
-    desc: 'Websites built for the Chinese internet. ICP, Baidu SEO, hosting.',
+    desc: t('footer.net.chinawebfoundry.desc'),
   },
   {
     name: 'BeyondCompass.com',
     href: 'https://beyondcompass.beyondbordergroup.com',
     logo: '/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp',
-    desc: 'Vetted distributor and Tmall partner introductions in China.',
+    desc: t('footer.net.beyondcompass.desc'),
   },
   {
     name: 'TheRedScroll.com',
     href: 'https://theredscroll.com',
     logo: '/Images/AgencyLogos/TheredScroll%20PNG.webp',
-    desc: 'Daily WeChat, Douyin, RedNote and Weibo operations from the ground.',
+    desc: t('footer.net.redscroll.desc'),
   },
   {
     name: 'HubStudio.ai',
     href: 'https://hubstudio.ai',
     logo: '/Images/AgencyLogos/hubStudio%20(2).webp',
-    desc: 'The creative production house.',
+    desc: t('footer.net.hubstudio.desc'),
   },
 ];
 
@@ -68,46 +74,43 @@ const year = new Date().getFullYear();
 
     <div class="footer__top">
       <div class="footer__brand">
-        <a href="/" class="footer__logo" aria-label="Beyond Border Group Home">
+        <a href={lp('/')} class="footer__logo" aria-label={t('footer.aria.brand')}>
           <img src="/Images/Logo-horizontal-light.svg" alt="Beyond Border Group" width="1448" height="563" />
         </a>
-        <p class="footer__pitch">
-          We help brands Enter China, Grow in China, and Learn China.
-          20 years of doing the work, not pitching it.
-        </p>
-        <p class="footer__cities">Shanghai · Hong Kong · Paris</p>
+        <p class="footer__pitch">{t('footer.pitch')}</p>
+        <p class="footer__cities">{t('footer.cities')}</p>
         <div class="footer__social">
-          <a href="https://www.linkedin.com/company/beyondbordergroup/" target="_blank" rel="noopener" aria-label="Beyond Border Group on LinkedIn" class="footer__social-link">
+          <a href="https://www.linkedin.com/company/beyondbordergroup/" target="_blank" rel="noopener" aria-label={t('footer.social.linkedinAria')} class="footer__social-link">
             <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path fill="#0A66C2" d="M22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
               <path fill="#FFFFFF" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/>
             </svg>
-            <span>LinkedIn</span>
+            <span>{t('footer.social.linkedin')}</span>
           </a>
         </div>
       </div>
 
       <div class="footer__nav">
         <div class="footer__col">
-          <h4>Enter China</h4>
+          <h4>{t('footer.col.enter')}</h4>
           <ul>
             {enterChina.map(item => <li><a href={item.href}>{item.label}</a></li>)}
           </ul>
         </div>
         <div class="footer__col">
-          <h4>Grow in China</h4>
+          <h4>{t('footer.col.grow')}</h4>
           <ul>
             {growChina.map(item => <li><a href={item.href}>{item.label}</a></li>)}
           </ul>
         </div>
         <div class="footer__col">
-          <h4>Learn China</h4>
+          <h4>{t('footer.col.learn')}</h4>
           <ul>
             {learnChina.map(item => <li><a href={item.href}>{item.label}</a></li>)}
           </ul>
         </div>
         <div class="footer__col">
-          <h4>The Company</h4>
+          <h4>{t('footer.col.company')}</h4>
           <ul>
             {company.map(item => <li><a href={item.href}>{item.label}</a></li>)}
           </ul>
@@ -115,8 +118,8 @@ const year = new Date().getFullYear();
       </div>
     </div>
 
-    <section class="footer__network" aria-label="Our network">
-      <span class="footer__network-label">Our Network</span>
+    <section class="footer__network" aria-label={t('footer.network.aria')}>
+      <span class="footer__network-label">{t('footer.network.label')}</span>
       <div class="footer__network-grid">
         {network.map(agency => (
           <a class="footer__network-card" href={agency.href} target="_blank" rel="noopener">
@@ -134,24 +137,24 @@ const year = new Date().getFullYear();
           <img src="/Images/AgencyLogos/BBG%20PNG.webp" alt="Beyond Border Group" loading="lazy" />
         </span>
         <span class="footer__parent-body">
-          <span class="footer__parent-eyebrow">Parent Group</span>
-          <span class="footer__parent-name">BeyondBorderGroup.org</span>
-          <span class="footer__parent-desc">The umbrella group connecting our specialised China agencies.</span>
+          <span class="footer__parent-eyebrow">{t('footer.parent.eyebrow')}</span>
+          <span class="footer__parent-name">{t('footer.parent.name')}</span>
+          <span class="footer__parent-desc">{t('footer.parent.desc')}</span>
         </span>
         <span class="footer__parent-cta">
-          Visit <span aria-hidden="true">→</span>
+          {t('footer.parent.cta')} <span aria-hidden="true">→</span>
         </span>
       </a>
     </section>
 
     <div class="footer__bottom">
-      <p>© Beyond Border Group {year}. All rights reserved.</p>
+      <p>{t('footer.copyright', { year })}</p>
       <p>
-        <a href="/terms-of-service">Terms of Service</a>
+        <a href={lp('/terms-of-service')}>{t('footer.legal.terms')}</a>
         <span aria-hidden="true"> · </span>
-        <a href="/privacy-policy">Privacy Policy</a>
+        <a href={lp('/privacy-policy')}>{t('footer.legal.privacy')}</a>
         <span aria-hidden="true"> · </span>
-        <a href="/cookie-policy">Cookie Policy</a>
+        <a href={lp('/cookie-policy')}>{t('footer.legal.cookie')}</a>
       </p>
     </div>
 

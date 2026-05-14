@@ -6,7 +6,7 @@ const lastUpdated = '23 April 2026';
 
 <Layout
   title="Terms of Service | Beyond Border Group"
-  description="Terms governing the use of Beyond Border Group's website and services. Client responsibilities, payment terms, liability, and governing law."
+  description="Terms governing the use of Beyond Border Group's website and services, including client responsibilities, payment terms, liability and governing law."
 >
   <section class="legal-hero">
     <div class="container">
@@ -14,9 +14,9 @@ const lastUpdated = '23 April 2026';
       <h1 class="legal-hero__title">Terms of Service</h1>
       <p class="legal-hero__meta">Last updated: {lastUpdated}</p>
       <p class="legal-hero__lead">
-        Beyond Border Group is operated by BeyondBorderGroup LTD, a Hong Kong SAR registered
-        entity. By accessing our website or engaging our services, you agree to these Terms of
-        Service. If you do not agree, please do not use the website or our services.
+        Beyond Border Group is operated by BeyondBorderGroup LTD, a company registered in the
+        Hong Kong SAR. By using our website or engaging our services, you agree to these Terms
+        of Service. If you do not agree, please do not use the website or the services.
       </p>
     </div>
   </section>
@@ -193,4 +193,11 @@ const lastUpdated = '23 April 2026';
   .prose li { margin-bottom: var(--space-2); }
   .prose a { color: var(--bbg-blue); text-decoration: underline; text-underline-offset: 3px; }
   .prose a:hover { color: var(--bbg-blue-dark); }
+
+  @media (max-width: 640px) {
+    .legal-hero { padding: var(--space-6) 0 var(--space-5); }
+    .legal-body { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+    .prose h2 { margin-top: var(--space-6); font-size: 1.375rem; }
+    .prose h3 { margin-top: var(--space-4); }
+  }
 </style>
