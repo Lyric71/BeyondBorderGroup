@@ -74,6 +74,7 @@ const servicesByStage = [
   {
     key: 'enter',
     label: 'Enter China',
+    href: '/enter-china',
     intro: 'Everything you need to go from zero to your first sales in China.',
     services: [
       {
@@ -118,6 +119,7 @@ const servicesByStage = [
   {
     key: 'grow',
     label: 'Grow in China',
+    href: '/grow-in-china',
     intro: "You're already selling. Now make it work harder.",
     services: [
       {
@@ -171,6 +173,7 @@ const servicesByStage = [
   {
     key: 'learn',
     label: 'Learn China',
+    href: '/learn-china',
     intro: "Make your China decisions on current ground truth, not on a playbook from two years ago.",
     services: [
       {
@@ -217,47 +220,56 @@ const servicesByStage = [
 const pillars = [
   {
     key: 'enter',
+    stage: 'Launch',
     title: 'Enter China',
+    teaser: 'You have the product. You need the route in.',
     image: '/Images/pillars/enter-china.png',
-    imageAlt: 'A brand director in a Shanghai office reviewing packaging samples with a Chinese ecommerce storefront on a laptop',
-    lead: "You have a product that could work in China, but no team there, no entity, no store on any platform.",
+    imageAlt: 'A brand director in a modern Chinese office reviewing premium packaging samples next to a laptop showing a Tmall-style storefront',
+    lead: "You have a product that could work in China. No team there yet, no entity, no store on any platform.",
     paragraphs: [
-      "Most international brands start from exactly this point. And most of them will tell you the same thing afterward: the ones that got traction fast picked the right entry model. The ones that picked wrong burned through six figures with nothing to show.",
-      "Cross-border eCommerce and a strong distribution partner let you start selling in months instead of years. Your risk stays tight, and the first real revenue comes in while you are still figuring out the market.",
+      "The brands that get traction fast pick the right entry model. Cross-border eCommerce and a strong distribution partner mean first sales in months, not years, and your downside stays small.",
     ],
-    tactics: ['Cross-border eCommerce', 'Right entry model', 'Distribution partner'],
-    close: "That is what a smart China launch looks like.",
+    tactics: ['Cross-border eCommerce', 'Right entry model', 'Distribution partner', 'Brand localisation'],
+    close: "That's what a smart China launch looks like.",
     href: '/enter-china',
   },
   {
     key: 'grow',
+    stage: 'Scale',
     title: 'Grow in China',
+    teaser: 'Already selling. You want the curve to bend up again.',
     image: '/Images/pillars/grow-in-china.png',
-    imageAlt: 'A livestream commerce host in a Shanghai studio with engagement analytics rising on a monitor',
-    lead: "You have done the hard part already. You are in the market, you are selling, you have real customers.",
+    imageAlt: 'A Chinese livestream commerce host in a clean content studio with skincare products on a wooden shelf and a phone on a tripod',
+    lead: "You're in the market and selling. Growth has stalled.",
     paragraphs: [
-      "But growth has stalled and you can feel why: four different agencies, none of them talking to each other. Brand copy that reads like a translation, because honestly it is one. Campaigns that drive clicks and nothing further.",
-      "When your eCommerce operations, social commerce, media and brand localisation sit under one roof, things start compounding. Less waste. Faster decisions.",
+      "Usually it's the setup. Four agencies, none of them talking. Copy that reads like a translation, because it is one. Pull eCommerce, social, media and brand under one roof and the curve bends back up.",
     ],
-    tactics: ['eCommerce operations', 'Social commerce', 'Media', 'Brand localisation'],
+    tactics: ['eCommerce operations', 'Social commerce', 'Media'],
     close: "A brand Chinese consumers stop and connect with.",
     href: '/grow-in-china',
   },
   {
     key: 'learn',
+    stage: 'Intelligence',
     title: 'Learn China',
+    teaser: "Make the next China decision on what's true today.",
     image: '/Images/pillars/learn-china.png',
-    imageAlt: 'International executives on a learning expedition walking through a Chinese shopping district',
-    lead: "Platform rules keep changing. Consumer habits that looked locked in three years ago are completely different now.",
+    imageAlt: 'Two international executives walking through a quiet Chinese tea and design market in afternoon light',
+    lead: "Platform rules keep shifting. Habits from three years ago are gone.",
     paragraphs: [
-      "A new commerce format takes off and suddenly everyone's playbook is outdated. If you are the person making the China call at your company, stale information is probably the most expensive thing on your desk right now.",
-      "On-the-ground learning expeditions, masterclasses run by operators who do this every day, current market data.",
+      "If you're the one making the China call, stale information is the most expensive thing on your desk. Learning expeditions, operator-led masterclasses, fresh market data.",
     ],
-    tactics: ['Learning expeditions', 'Operator-led masterclasses', 'Current market data'],
-    close: "That is how you make a decision you can stand behind.",
+    tactics: ['Learning expeditions', 'Operator-led masterclasses', 'Fresh market data'],
+    close: "That's how you make a decision you can stand behind.",
     href: '/learn-china',
   },
 ];
+
+const pillarIcons: Record<string, string> = {
+  enter: '<path d="M15 3h6v18h-6"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>',
+  grow: '<path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/>',
+  learn: '<path d="M2 4h7a3 3 0 0 1 3 3v13"/><path d="M22 4h-7a3 3 0 0 0-3 3v13"/><path d="M2 4v15h7a3 3 0 0 1 3 3"/><path d="M22 4v15h-7a3 3 0 0 0-3 3"/>',
+};
 
 const allCases = await getCollection('cases', ({ data }) => !data.draft);
 const featuredCases = allCases
@@ -395,45 +407,65 @@ function formatInsightDate(d?: Date) {
     </div>
   </section>
 
-  {/* ---------- PILLARS: ACCORDION ---------- */}
-  <section id="pillars" class="section section--alt">
+  {/* ---------- PILLARS: CINEMATIC EXPANDING PANELS ---------- */}
+  <section id="pillars" class="section section--alt pillars-section">
+    <div class="pillars-bg" aria-hidden="true">
+      <div class="pillars-bg__grid"></div>
+      <div class="pillars-bg__glow"></div>
+    </div>
     <div class="container">
-      <div class="pillars-split">
-        <div class="pillars-split__main">
-          <span class="eyebrow">Where to start</span>
-          <h2>China is not one problem to solve</h2>
-          <ul class="pillar-list">
-            {pillars.map((p) => (
-              <li class="pillar-item" data-pillar={p.key}>
-                <div class="pillar-item__head">
-                  <h3 class="pillar-item__title">{p.title}</h3>
-                  <span class="pillar-item__chev" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
-                  </span>
-                </div>
-                <div class="pillar-item__body">
-                  <p class="pillar-item__lead">{p.lead}</p>
-                  {p.paragraphs.map((par) => <p class="pillar-item__para">{par}</p>)}
-                  <ul class="pillar-item__tactics">
-                    {p.tactics.map((t) => <li>{t}</li>)}
-                  </ul>
-                  <p class="pillar-item__close">{p.close}</p>
-                  <a href={p.href} class="btn btn--ghost">{p.title}</a>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <header class="pillars-header">
+        <span class="eyebrow">Where to start</span>
+        <h2 class="pillars-header__title">China is not one problem to solve</h2>
+        <p class="pillars-header__lead">
+          Three ways in. Pick the one that matches where you actually are, not where you wish you were.
+        </p>
+      </header>
 
-        <aside class="pillars-split__aside" aria-hidden="true">
-          <div class="pillar-media">
-            {pillars.map((p, i) => (
-              <figure class={`pillar-media__frame${i === 0 ? ' is-active' : ''}`} data-pillar-media={p.key}>
-                <img src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
-              </figure>
-            ))}
-          </div>
-        </aside>
+      <div class="stage-panels" data-active="enter" data-stage-panels>
+        {pillars.map((p, i) => (
+          <article class={`stage-panel${i === 0 ? ' is-active' : ''}`} data-stage={p.key} style={`--stage-index: ${i};`}>
+            <button
+              class="stage-panel__hit"
+              type="button"
+              data-stage-trigger={p.key}
+              aria-pressed={i === 0 ? 'true' : 'false'}
+              aria-label={`Show ${p.title}`}
+            ></button>
+            <img class="stage-panel__img" src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
+            <div class="stage-panel__scrim" aria-hidden="true"></div>
+            <span class="stage-panel__rail" aria-hidden="true"></span>
+
+            <div class="stage-panel__top">
+              <span class="stage-panel__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" set:html={pillarIcons[p.key]} />
+              </span>
+              <span class="stage-panel__plus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </div>
+
+            <span class="stage-panel__hint" aria-hidden="true">
+              <span class="stage-panel__hint-text">Open</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+
+            <div class="stage-panel__body">
+              <span class="stage-panel__eyebrow">{p.stage}</span>
+              <h3 class="stage-panel__title">{p.title}</h3>
+              <div class="stage-panel__reveal">
+                <p class="stage-panel__lead">{p.lead}</p>
+                <ul class="stage-panel__tactics" aria-label="What this includes">
+                  {p.tactics.map((t) => <li>{t}</li>)}
+                </ul>
+                <a class="stage-panel__cta" href="#services" data-stage-jump={p.key}>
+                  <span>Explore {p.title}</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
     </div>
   </section>
@@ -731,69 +763,313 @@ function formatInsightDate(d?: Date) {
     </div>
   </section>
 
-  {/* ---------- STUDIO ---------- */}
-  <section class="section">
-    <div class="container">
-      <div class="studio-card">
-        <div class="studio-card__bg" aria-hidden="true">
-          <img src="/Images/studio-bg.png" alt="" loading="lazy" decoding="async" />
+  {/* ---------- STUDIO (Hub Studio editorial module) ---------- */}
+  <section class="section section--studio" aria-label="Hub Studio">
+    <div class="studio">
+      <div class="studio__atmos" aria-hidden="true">
+        <img src="/Images/hub-studio/backdrop.jpg" alt="" loading="lazy" decoding="async" />
+      </div>
+      <div class="studio__veil" aria-hidden="true"></div>
+      <div class="studio__grain" aria-hidden="true"></div>
+
+      <div class="studio__inner">
+
+        {/* ----- Top strip ----- */}
+        <div class="studio__topbar" data-reveal>
+          <a
+            href="https://hubstudio.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="studio__brand"
+            aria-label="Visit Hub Studio"
+          >
+            <img
+              src="/Images/hubStudio.png"
+              alt="Hub Studio"
+              loading="lazy"
+              decoding="async"
+              width="220"
+              height="60"
+            />
+          </a>
+
+          <div class="studio__marquee" aria-hidden="true">
+            <div class="studio__marquee-track">
+              <span>小红书 Xiaohongshu</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>抖音 Douyin</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>微信 WeChat</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>天猫 Tmall</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>淘宝 Taobao</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>京东 JD</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>B站 Bilibili</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>快手 Kuaishou</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>小红书 Xiaohongshu</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>抖音 Douyin</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>微信 WeChat</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>天猫 Tmall</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>淘宝 Taobao</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>京东 JD</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>B站 Bilibili</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>快手 Kuaishou</span>
+              <span class="studio__marquee-sep">+</span>
+            </div>
+          </div>
         </div>
-        <div class="studio-card__overlay" aria-hidden="true"></div>
 
-        <div class="studio-card__inner">
-          <div class="studio-card__copy">
-            <span class="eyebrow eyebrow--on-dark">Content production studio</span>
-            <h2 class="studio-card__title">Our content production studio in China</h2>
-            <p class="studio-card__lead">
-              Through our studio Hub Studio, we produce every type of content
-              brands need for the Chinese market: videos, photos, social media
-              posts, advertisements, print materials, livestreams. All
-              tailored for Chinese platforms and Chinese audiences.
+        {/* ----- Editorial hero ----- */}
+        <div class="studio__hero" data-reveal>
+          <div class="studio__hero-copy">
+            <span class="eyebrow eyebrow--on-dark">Inside Hub Studio</span>
+            <h2 class="studio__title">
+              Our content studio.<br />
+              Made <em>in China</em>,<br />
+              for Chinese platforms.
+            </h2>
+            <p class="studio__lead">
+              Hub Studio is the team behind everything we ship in market. Photo, film,
+              social, livestream, packaging, OOH. Made for Chinese platforms by people who
+              post on them every week.
             </p>
-            <p class="studio-card__lead">
-              AI-powered production cuts turnaround time and cost while
-              protecting the visual quality and brand consistency Chinese
-              consumers expect.
-            </p>
-            <a
-              class="btn btn--primary studio-card__cta"
-              href="https://hubstudio.ai"
-              target="_blank"
-              rel="noopener noreferrer"
+
+            <div class="studio__credits">
+              <div class="studio__credit">
+                <span class="studio__credit-key">Studio HQ</span>
+                <span class="studio__credit-val">Shanghai</span>
+              </div>
+              <span class="studio__credit-sep" aria-hidden="true"></span>
+              <div class="studio__credit">
+                <span class="studio__credit-key">Crews</span>
+                <span class="studio__credit-val">Shanghai · Shenzhen · Changsha · Hangzhou</span>
+              </div>
+              <span class="studio__credit-sep" aria-hidden="true"></span>
+              <div class="studio__credit">
+                <span class="studio__credit-key">Pipeline</span>
+                <span class="studio__credit-val">AI + human review</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="studio__hero-visual" data-parallax>
+            <figure class="studio__frame studio__frame--main">
+              <img src="/Images/hub-studio/creative.jpg" alt="" loading="lazy" decoding="async" />
+              <figcaption class="studio__frame-meta">
+                <span class="studio__rec" aria-hidden="true"></span>
+                <span class="studio__frame-meta-label">Now shooting</span>
+                <span class="studio__frame-meta-sub">Studio · Shanghai</span>
+              </figcaption>
+            </figure>
+            <figure class="studio__frame studio__frame--sub" aria-hidden="true">
+              <img src="/Images/hub-studio/production.jpg" alt="" loading="lazy" decoding="async" />
+            </figure>
+            <div class="studio__brace studio__brace--tl" aria-hidden="true"></div>
+            <div class="studio__brace studio__brace--br" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        {/* ----- Capability switcher ----- */}
+        <div class="studio__switch" data-reveal>
+          <div class="studio__tabs" role="tablist" aria-label="Hub Studio capabilities">
+            <span class="studio__tabs-indicator" aria-hidden="true"></span>
+            <button
+              type="button"
+              class="studio__tab is-active"
+              role="tab"
+              data-tab="creative"
+              aria-selected="true"
+              aria-controls="studio-panel-creative"
+              id="studio-tab-creative"
             >
-              Visit Hub Studio
-            </a>
+              <span class="studio__tab-mark" aria-hidden="true"></span>
+              <span class="studio__tab-label">Creative</span>
+              <span class="studio__tab-sub">Concept · direction</span>
+            </button>
+            <button
+              type="button"
+              class="studio__tab"
+              role="tab"
+              data-tab="production"
+              aria-selected="false"
+              aria-controls="studio-panel-production"
+              id="studio-tab-production"
+            >
+              <span class="studio__tab-mark" aria-hidden="true"></span>
+              <span class="studio__tab-label">Production</span>
+              <span class="studio__tab-sub">Photo · film · live</span>
+            </button>
+            <button
+              type="button"
+              class="studio__tab"
+              role="tab"
+              data-tab="ai"
+              aria-selected="false"
+              aria-controls="studio-panel-ai"
+              id="studio-tab-ai"
+            >
+              <span class="studio__tab-mark" aria-hidden="true"></span>
+              <span class="studio__tab-label">AI production</span>
+              <span class="studio__tab-sub">Custom pipelines</span>
+            </button>
           </div>
 
-          <div class="studio-card__visual" aria-hidden="true">
-            <figure class="studio-tile studio-tile--1">
-              <img
-                src="https://www.hubstudio.ai/wp-content/uploads/2025/12/Elizabeth-Gage_model_3-765x1024.png"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-              <figcaption>AI photography</figcaption>
-            </figure>
-            <figure class="studio-tile studio-tile--2">
-              <img
-                src="https://www.hubstudio.ai/wp-content/uploads/2025/10/INDOOR_FA_NO-WATERMARK-1024x1024.jpg"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-              <figcaption>Lifestyle</figcaption>
-            </figure>
-            <figure class="studio-tile studio-tile--3">
-              <img
-                src="https://www.hubstudio.ai/wp-content/uploads/2025/12/b6abd80b8fa24f5d9ae9f69d96999fec-765x1024.png"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-              <figcaption>Brand visuals</figcaption>
-            </figure>
+          <div class="studio__panels">
+            <article
+              class="studio__panel is-active"
+              data-panel="creative"
+              id="studio-panel-creative"
+              role="tabpanel"
+              aria-labelledby="studio-tab-creative"
+            >
+              <div class="studio__panel-visual">
+                <img src="/Images/hub-studio/creative.jpg" alt="" loading="lazy" decoding="async" />
+                <div class="studio__tags">
+                  <span>Concept</span>
+                  <span>Art direction</span>
+                  <span>Key visuals</span>
+                </div>
+              </div>
+              <div class="studio__panel-copy">
+                <span class="studio__panel-kicker">
+                  <span class="studio__panel-kicker-dot" aria-hidden="true"></span>
+                  Creative
+                </span>
+                <h3 class="studio__panel-title">Concept and art direction.</h3>
+                <p class="studio__panel-body">
+                  Key visuals, campaign ideas, packaging design, out-of-home. Built for
+                  Xiaohongshu, Douyin, WeChat and Tmall, the platforms your buyer actually
+                  opens.
+                </p>
+                <ul class="studio__list">
+                  <li>Brand-led creative direction</li>
+                  <li>Platform-native key visuals</li>
+                  <li>Packaging and OOH systems</li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="studio__panel"
+              data-panel="production"
+              id="studio-panel-production"
+              role="tabpanel"
+              aria-labelledby="studio-tab-production"
+              hidden
+            >
+              <div class="studio__panel-visual">
+                <img src="/Images/hub-studio/production.jpg" alt="" loading="lazy" decoding="async" />
+                <div class="studio__tags">
+                  <span>Photo</span>
+                  <span>Film</span>
+                  <span>Livestream</span>
+                </div>
+              </div>
+              <div class="studio__panel-copy">
+                <span class="studio__panel-kicker">
+                  <span class="studio__panel-kicker-dot" aria-hidden="true"></span>
+                  Production
+                </span>
+                <h3 class="studio__panel-title">Photo, film, livestream.</h3>
+                <p class="studio__panel-body">
+                  Crews based in Shanghai. Shoots in Beijing, Shenzhen and Guangzhou when
+                  the brief calls for it. Studio days, location days, crew and edit kept
+                  in-house.
+                </p>
+                <ul class="studio__list">
+                  <li>Studio and location shoots</li>
+                  <li>Full-service crew and edit</li>
+                  <li>Livestream sets and operations</li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="studio__panel"
+              data-panel="ai"
+              id="studio-panel-ai"
+              role="tabpanel"
+              aria-labelledby="studio-tab-ai"
+              hidden
+            >
+              <div class="studio__panel-visual">
+                <img src="/Images/hub-studio/aigc.jpg" alt="" loading="lazy" decoding="async" />
+                <div class="studio__tags">
+                  <span>AIGC</span>
+                  <span>Latest models</span>
+                  <span>Volume</span>
+                </div>
+              </div>
+              <div class="studio__panel-copy">
+                <span class="studio__panel-kicker">
+                  <span class="studio__panel-kicker-dot" aria-hidden="true"></span>
+                  AI production
+                </span>
+                <h3 class="studio__panel-title">AIGC on the latest models.</h3>
+                <p class="studio__panel-body">
+                  AI-generated content built on the strongest text-to-image and video
+                  models on the market. Product, fashion, lifestyle, social, high-volume
+                  e-commerce. Every frame reviewed by a human before anything goes live.
+                </p>
+                <ul class="studio__list">
+                  <li>Latest text-to-image and video models</li>
+                  <li>Brand-specific style and look</li>
+                  <li>Human review on every frame</li>
+                </ul>
+              </div>
+            </article>
           </div>
+        </div>
+
+        {/* ----- Capability ribbon ----- */}
+        <div class="studio__ribbon" aria-hidden="true">
+          <div class="studio__ribbon-track">
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Photo</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Film</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Livestream</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>AI pipelines</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Packaging</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>OOH</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Brand visuals</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Social-first edits</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Photo</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Film</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Livestream</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>AI pipelines</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Packaging</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>OOH</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Brand visuals</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Social-first edits</span>
+          </div>
+        </div>
+
+        {/* ----- Footer CTA ----- */}
+        <div class="studio__foot" data-reveal>
+          <a
+            class="studio__cta"
+            href="https://hubstudio.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="studio__cta-text">Visit Hub Studio</span>
+            <span class="studio__cta-arrow" aria-hidden="true">
+              <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7H21M21 7L15 1M21 7L15 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -1256,24 +1532,77 @@ function formatInsightDate(d?: Date) {
   </script>
 
   <script is:inline>
-    document.querySelectorAll('.pillar-item__head').forEach((head) => {
-      head.addEventListener('click', () => {
-        const item = head.closest('.pillar-item');
-        const parent = item.parentElement;
-        parent.querySelectorAll('.pillar-item.is-open').forEach((open) => {
-          if (open !== item) open.classList.remove('is-open');
-        });
-        item.classList.toggle('is-open');
+    (() => {
+      const root = document.querySelector('[data-stage-panels]');
+      if (!root) return;
+      const panels = Array.from(root.querySelectorAll('.stage-panel'));
+      if (!panels.length) return;
 
-        const key = item.dataset.pillar;
-        const isOpen = item.classList.contains('is-open');
-        if (key && isOpen) {
-          document.querySelectorAll('[data-pillar-media]').forEach((frame) => {
-            frame.classList.toggle('is-active', frame.dataset.pillarMedia === key);
-          });
+      const triggers = panels.map((p) => p.querySelector('.stage-panel__hit'));
+
+      const setActive = (key, opts = {}) => {
+        if (!key) return;
+        let activated = null;
+        panels.forEach((panel) => {
+          const isActive = panel.dataset.stage === key;
+          panel.classList.toggle('is-active', isActive);
+          const trig = panel.querySelector('.stage-panel__hit');
+          if (trig) trig.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+          if (isActive) activated = panel;
+        });
+        root.setAttribute('data-active', key);
+        if (opts.focus && activated) {
+          const trig = activated.querySelector('.stage-panel__hit');
+          if (trig) trig.focus();
         }
+      };
+
+      triggers.forEach((trig, idx) => {
+        if (!trig) return;
+        trig.addEventListener('click', () => {
+          const key = trig.dataset.stageTrigger;
+          if (root.dataset.active === key) return;
+          setActive(key);
+        });
+        trig.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+            e.preventDefault();
+            const next = triggers[(idx + 1) % triggers.length];
+            if (next) setActive(next.dataset.stageTrigger, { focus: true });
+          } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            const prev = triggers[(idx - 1 + triggers.length) % triggers.length];
+            if (prev) setActive(prev.dataset.stageTrigger, { focus: true });
+          } else if (e.key === 'Home') {
+            e.preventDefault();
+            const first = triggers[0];
+            if (first) setActive(first.dataset.stageTrigger, { focus: true });
+          } else if (e.key === 'End') {
+            e.preventDefault();
+            const last = triggers[triggers.length - 1];
+            if (last) setActive(last.dataset.stageTrigger, { focus: true });
+          }
+        });
       });
-    });
+
+      const section = document.getElementById('pillars');
+      if (section && 'IntersectionObserver' in window) {
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!reduced) {
+          section.classList.add('is-pre-reveal');
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                section.classList.remove('is-pre-reveal');
+                section.classList.add('is-revealed');
+                io.disconnect();
+              }
+            });
+          }, { threshold: 0.18 });
+          io.observe(section);
+        }
+      }
+    })();
 
     (() => {
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -1313,6 +1642,20 @@ function formatInsightDate(d?: Date) {
 
       tabs.forEach((tab) => {
         tab.addEventListener('click', () => setActive(tab));
+      });
+
+      // Pillar CTAs ("Explore Enter China" etc.) → scroll to services section
+      // and activate the matching stage tab.
+      document.querySelectorAll('[data-stage-jump]').forEach((cta) => {
+        cta.addEventListener('click', (e) => {
+          const key = cta.dataset.stageJump;
+          const targetTab = tabs.find((t) => t.dataset.stage === key);
+          const section = document.getElementById('services');
+          if (!targetTab || !section) return;
+          e.preventDefault();
+          setActive(targetTab);
+          section.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
       });
 
       const active = document.querySelector('.svc-tab.is-active');
@@ -1416,6 +1759,141 @@ function formatInsightDate(d?: Date) {
         });
       }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
       io.observe(bc);
+    })();
+
+    // Hub Studio module: reveal on scroll, tabs, mouse parallax, indicator
+    (() => {
+      const studio = document.querySelector('.studio');
+      if (!studio) return;
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Scroll reveal
+      const reveals = studio.querySelectorAll('[data-reveal]');
+      if (reduced || !('IntersectionObserver' in window)) {
+        reveals.forEach((el) => el.classList.add('is-in'));
+      } else {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-in');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        reveals.forEach((el) => io.observe(el));
+      }
+
+      // Tabs
+      const tabs = Array.from(studio.querySelectorAll('.studio__tab'));
+      const panels = Array.from(studio.querySelectorAll('.studio__panel'));
+      const indicator = studio.querySelector('.studio__tabs-indicator');
+      const positionIndicator = (tab) => {
+        if (!indicator || !tab) return;
+        const tabsEl = tab.parentElement;
+        const r = tab.getBoundingClientRect();
+        const pr = tabsEl.getBoundingClientRect();
+        indicator.style.setProperty('--x', (r.left - pr.left) + 'px');
+        indicator.style.setProperty('--w', r.width + 'px');
+      };
+      const activateTab = (key) => {
+        tabs.forEach((t) => {
+          const isActive = t.dataset.tab === key;
+          t.classList.toggle('is-active', isActive);
+          t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          if (isActive) positionIndicator(t);
+        });
+        panels.forEach((p) => {
+          const isActive = p.dataset.panel === key;
+          if (isActive) {
+            p.removeAttribute('hidden');
+            requestAnimationFrame(() => p.classList.add('is-active'));
+          } else {
+            p.classList.remove('is-active');
+            p.setAttribute('hidden', '');
+          }
+        });
+      };
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => activateTab(tab.dataset.tab));
+        tab.addEventListener('keydown', (e) => {
+          const i = tabs.indexOf(tab);
+          if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            const next = tabs[(i + 1) % tabs.length];
+            next.focus();
+            activateTab(next.dataset.tab);
+          } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            const prev = tabs[(i - 1 + tabs.length) % tabs.length];
+            prev.focus();
+            activateTab(prev.dataset.tab);
+          }
+        });
+      });
+      const first = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
+      if (first) {
+        // Wait one frame so layout is stable before positioning indicator
+        requestAnimationFrame(() => positionIndicator(first));
+      }
+      window.addEventListener('resize', () => {
+        const active = tabs.find((t) => t.classList.contains('is-active'));
+        positionIndicator(active);
+      });
+
+      // Mouse parallax on the hero visual
+      if (!reduced) {
+        const visual = studio.querySelector('[data-parallax]');
+        if (visual) {
+          const main = visual.querySelector('.studio__frame--main');
+          const sub = visual.querySelector('.studio__frame--sub');
+          visual.addEventListener('pointermove', (e) => {
+            const r = visual.getBoundingClientRect();
+            const x = (e.clientX - r.left) / r.width - 0.5;
+            const y = (e.clientY - r.top) / r.height - 0.5;
+            if (main) {
+              main.style.setProperty('--px', (x * -14) + 'px');
+              main.style.setProperty('--py', (y * -14) + 'px');
+              main.style.setProperty('--rx', (y * 4) + 'deg');
+              main.style.setProperty('--ry', (x * -6) + 'deg');
+            }
+            if (sub) {
+              sub.style.setProperty('--px', (x * 22) + 'px');
+              sub.style.setProperty('--py', (y * 22) + 'px');
+            }
+          });
+          visual.addEventListener('pointerleave', () => {
+            [main, sub].forEach((el) => {
+              if (!el) return;
+              el.style.setProperty('--px', '0px');
+              el.style.setProperty('--py', '0px');
+              el.style.setProperty('--rx', '0deg');
+              el.style.setProperty('--ry', '0deg');
+            });
+          });
+        }
+
+        // Scroll parallax on backdrop image
+        const atmos = studio.querySelector('.studio__atmos img');
+        if (atmos) {
+          let ticking = false;
+          const update = () => {
+            const r = studio.getBoundingClientRect();
+            const vh = window.innerHeight;
+            if (r.bottom < 0 || r.top > vh) { ticking = false; return; }
+            const center = r.top + r.height / 2;
+            const ratio = (center - vh / 2) / vh;
+            const shift = Math.max(-30, Math.min(30, ratio * -40));
+            atmos.style.setProperty('--sy', shift + 'px');
+            ticking = false;
+          };
+          window.addEventListener('scroll', () => {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(update);
+          }, { passive: true });
+          update();
+        }
+      }
     })();
   </script>
 

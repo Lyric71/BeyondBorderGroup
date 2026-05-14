@@ -186,31 +186,61 @@ const speakingPhotos = [
   description="Former Publicis executives who spent 15 years growing global brands in China. Strategy and execution under one roof, with the same senior people on both."
 >
 
+  {/* ---------- SCROLL PROGRESS ---------- */}
+  <div class="home-progress" aria-hidden="true"><div class="home-progress__bar"></div></div>
+
   {/* ---------- HERO ---------- */}
-  <section class="hero about-hero">
-    <div class="about-hero__bg" aria-hidden="true">
+  <section class="home-hero about-hero" data-home-hero>
+    <div class="home-hero__bg" aria-hidden="true" data-home-parallax>
       <img
         src="/Images/team/china-office.png"
         alt=""
+        width="1376"
+        height="768"
         loading="eager"
         decoding="async"
         fetchpriority="high"
       />
     </div>
-    <div class="about-hero__overlay" aria-hidden="true"></div>
+    <div class="home-hero__overlay" aria-hidden="true"></div>
+    <div class="home-hero__grain" aria-hidden="true"></div>
 
-    <div class="container about-hero__inner">
-      <span class="eyebrow eyebrow--on-dark">Who we are</span>
-      <h1 class="hero__title">We run your China growth. Advising on it is the easy part.</h1>
-      <p class="hero__lead">
+    <div class="container home-hero__inner">
+      <span class="eyebrow eyebrow--on-dark home-reveal">Who we are</span>
+      <h1 class="home-hero__title home-reveal" style="--reveal-delay: 80ms;">
+        <span class="home-hero__title-row">We run your China growth.</span>
+        <span class="home-hero__title-row home-hero__title-row--accent">Advising is the easy part.</span>
+        <span class="home-hero__title-row home-hero__title-row--highlight">Running it is the work.</span>
+      </h1>
+      <p class="home-hero__lead home-reveal" style="--reveal-delay: 200ms;">
         15 years building brands in China for Publicis. Now doing it for yours.
         Strategy without execution is expensive PowerPoint.
       </p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="/contact">Talk to us</a>
-        <a class="btn btn--ghost-light" href="#leadership">Meet the team</a>
+      <div class="home-hero__actions home-reveal" style="--reveal-delay: 280ms;">
+        <a class="btn btn--primary home-magnetic" href="/contact">Talk to us</a>
+        <a class="btn btn--ghost-light home-magnetic" href="#leadership">Meet the team</a>
+      </div>
+
+      <div class="home-hero__meta home-reveal" style="--reveal-delay: 360ms;">
+        <div class="home-hero__meta-item">
+          <span class="home-hero__meta-num" data-home-counter="15" data-suffix="+">0</span>
+          <span class="home-hero__meta-label">years in China</span>
+        </div>
+        <div class="home-hero__meta-item">
+          <span class="home-hero__meta-num" data-home-counter="60" data-suffix="+">0</span>
+          <span class="home-hero__meta-label">brands grown</span>
+        </div>
+        <div class="home-hero__meta-item">
+          <span class="home-hero__meta-num" data-home-counter="100" data-suffix="+">0</span>
+          <span class="home-hero__meta-label">campaigns delivered</span>
+        </div>
       </div>
     </div>
+
+    <a href="#leadership" class="home-hero__scroll" aria-label="Scroll to leadership section">
+      <span class="home-hero__scroll-line"></span>
+      <span class="home-hero__scroll-text">Scroll</span>
+    </a>
   </section>
 
   {/* ---------- WHY WE EXIST ---------- */}
@@ -537,6 +567,98 @@ const speakingPhotos = [
   </section>
 
   <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const revealEls = document.querySelectorAll('.home-hero .home-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      const counters = document.querySelectorAll('[data-home-counter]');
+      if (counters.length && !reduced && 'IntersectionObserver' in window) {
+        const animate = (el) => {
+          const target = parseFloat(el.dataset.homeCounter || '0');
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(target * eased);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        };
+        const counterIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((el) => counterIo.observe(el));
+      } else {
+        counters.forEach((el) => {
+          el.textContent = (el.dataset.homeCounter || '0') + (el.dataset.suffix || '');
+        });
+      }
+
+      const parallaxImg = document.querySelector('[data-home-parallax] img');
+      const heroEl = document.querySelector('[data-home-hero]');
+      const progressEl = document.querySelector('.home-progress__bar');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          if (parallaxImg && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxImg.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      const scrollLink = document.querySelector('.home-hero__scroll');
+      if (scrollLink) {
+        scrollLink.addEventListener('click', (e) => {
+          const id = scrollLink.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      }
+    })();
+  </script>
+
+  <script is:inline>
     (function () {
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -679,43 +801,221 @@ const speakingPhotos = [
 </Layout>
 
 <style>
-  /* ---------- About hero with team photo background ---------- */
-  .about-hero {
+  /* ---------- Scroll progress bar ---------- */
+  :global(.home-progress) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 1000;
+    background: transparent;
+    pointer-events: none;
+  }
+  :global(.home-progress__bar) {
+    height: 100%;
+    width: var(--progress, 0%);
+    background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+    box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+    transition: width 80ms linear;
+  }
+
+  /* ---------- Home hero (shared layout with index.astro) ---------- */
+  :global(.home-hero) {
     position: relative;
+    min-height: clamp(520px, 78vh, 760px);
+    display: flex;
+    align-items: flex-start;
+    padding: clamp(8px, 1.25vh, 16px) 0 clamp(64px, 9vh, 104px);
+    color: var(--bbg-white);
     overflow: hidden;
     isolation: isolate;
-    min-height: clamp(520px, 68vh, 720px);
-    display: flex;
-    align-items: center;
-    padding: clamp(96px, 12vh, 140px) 0 clamp(64px, 10vh, 120px);
   }
-  .about-hero__bg {
-    position: absolute;
-    inset: 0;
-    z-index: -2;
+  :global(body:has(.home-hero)) :global(.home-hero) {
+    padding-top: clamp(140px, 14vh, 184px);
   }
-  .about-hero__bg img {
+  @media (max-width: 1024px) {
+    :global(body:has(.home-hero)) :global(.home-hero) {
+      padding-top: clamp(112px, 12vh, 140px);
+    }
+  }
+  :global(.home-hero__bg) { position: absolute; inset: -10% 0 0; z-index: -3; }
+  :global(.home-hero__bg img) {
+    display: block;
     width: 100%;
-    height: 100%;
+    height: 110%;
     object-fit: cover;
     object-position: center;
+    transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+    transition: transform 80ms linear;
+    filter: saturate(0.95);
   }
-  .about-hero__overlay {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
+  :global(.home-hero__overlay) {
+    position: absolute; inset: 0; z-index: -2;
     background:
-      linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 55%, rgba(0, 0, 0, 0.8) 100%);
+      linear-gradient(110deg,
+        rgba(8, 18, 28, 0.92) 0%,
+        rgba(8, 18, 28, 0.72) 42%,
+        rgba(8, 18, 28, 0.32) 100%),
+      radial-gradient(120% 80% at 0% 100%,
+        rgba(38, 154, 218, 0.28) 0%,
+        rgba(38, 154, 218, 0) 60%);
   }
-  .about-hero__inner { position: relative; width: 100%; }
-
-  .about-hero .hero__title {
-    max-width: 920px;
+  :global(.home-hero__grain) {
+    position: absolute; inset: 0; z-index: -1;
+    background-image:
+      radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 3px 3px;
+    mix-blend-mode: overlay;
+    opacity: 0.45;
+    pointer-events: none;
+  }
+  :global(.home-hero__inner) { max-width: 980px; position: relative; }
+  :global(.home-hero__inner .eyebrow--on-dark) {
+    display: inline-block;
+    margin-bottom: var(--space-3);
+    color: #9DDBF5;
+  }
+  :global(.home-hero__title) {
+    font-size: clamp(2.25rem, 4vw + 1rem, 4.25rem);
+    line-height: 1.04;
+    letter-spacing: -0.025em;
     color: var(--bbg-white);
+    margin: 0 0 var(--space-4);
+    max-width: 24ch;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 0.05em;
   }
-  .about-hero .hero__lead {
-    color: rgba(255, 255, 255, 0.9);
-    max-width: 720px;
+  :global(.home-hero__title-row) { display: block; }
+  :global(.home-hero__title-row--accent) {
+    color: #9DDBF5;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: -0.018em;
+  }
+  :global(.home-hero__title-row--highlight) {
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0 0.15em;
+  }
+  :global(.home-hero__title-row--highlight::before) {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.04em;
+    height: 0.18em;
+    background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+    border-radius: 2px;
+    transform-origin: left center;
+    animation: about-home-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+    z-index: -1;
+  }
+  @keyframes about-home-underline {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+  :global(.home-hero__lead) {
+    font-size: clamp(1.0625rem, 0.5vw + 1rem, 1.25rem);
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.86);
+    max-width: 58ch;
+    margin: 0 0 var(--space-5);
+  }
+  :global(.home-hero__actions) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+  }
+
+  :global(.home-hero__meta) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(var(--space-4), 4vw, var(--space-7));
+    padding-top: var(--space-5);
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    max-width: 760px;
+  }
+  :global(.home-hero__meta-item) { display: flex; flex-direction: column; gap: 0.2rem; }
+  :global(.home-hero__meta-num) {
+    font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--bbg-white);
+    font-feature-settings: "tnum";
+  }
+  :global(.home-hero__meta-label) {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.66);
+    letter-spacing: 0.02em;
+  }
+
+  :global(.home-hero__scroll) {
+    position: absolute;
+    bottom: var(--space-5);
+    right: clamp(var(--space-5), 4vw, var(--space-7));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 200ms ease;
+  }
+  :global(.home-hero__scroll:hover) { color: var(--bbg-white); }
+  :global(.home-hero__scroll-line) {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  :global(.home-hero__scroll-line::after) {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+    animation: about-home-scroll-tick 1.8s ease-in-out infinite;
+  }
+  @keyframes about-home-scroll-tick {
+    0% { top: -50%; }
+    100% { top: 100%; }
+  }
+  @media (max-width: 720px) {
+    :global(.home-hero__scroll) { display: none; }
+    :global(.home-hero__meta) { gap: var(--space-4); }
+  }
+
+  /* Reveal motion + magnetic hover (scoped to hero) */
+  @media (prefers-reduced-motion: no-preference) {
+    :global(.home-hero .home-reveal) {
+      opacity: 0;
+      transform: translateY(16px);
+      transition:
+        opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+        transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+    }
+    :global(.home-hero .home-reveal.is-in) {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    :global(.home-hero .home-magnetic) {
+      will-change: transform;
+      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                  box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+    }
+    :global(.home-hero .home-magnetic:hover) { transform: translateY(-2px); }
   }
 
   /* ---------- Why we exist: split with signature ---------- */
