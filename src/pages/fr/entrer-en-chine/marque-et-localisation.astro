@@ -1,0 +1,2176 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const pillars = [
+  {
+    h: 'Comprendre le consommateur chinois',
+    body:
+      "Les consommateurs chinois ne forment pas un seul public. Les goûts changent selon la ville, l'âge, la plateforme. On étudie ces nuances d'abord, et on construit la marque par-dessus.",
+    image: '/Images/branding/positioning.png',
+    alt: "Documents de recherche, planification et insights consommateurs pour une marque en Chine",
+  },
+  {
+    h: 'Trouver le bon nom chinois',
+    body:
+      "La plupart des consommateurs chinois ne lisent pas les langues étrangères. Un bon nom se prononce sans effort et porte un sens favorable. Un mauvais nom plafonne la croissance, pour toujours.",
+    image: '/Images/branding/naming.png',
+    alt: "Recherche de naming chinois, caractères et notes de travail",
+  },
+  {
+    h: 'Transcréer plutôt que traduire',
+    body:
+      "Adapter une marque en Chine va bien au-delà du langage. Le récit, l'image, l'expérience, tout doit coller au goût local. Le résultat paraît natif, jamais importé.",
+    image: '/Images/branding/visual-identity.png',
+    alt: "Planches d'identité visuelle adaptées aux plateformes et au packaging chinois",
+  },
+];
+
+const promises = [
+  {
+    title: "Une recherche qui façonne la marque",
+    desc: "Données catégorie, études consommateurs et réalité des plateformes nourrissent la stratégie. Rien sur la page n'est laissé au hasard.",
+  },
+  {
+    title: "Un nom chinois que les acheteurs sauront dire",
+    desc: "Listes courtes phonétiques, sémantiques et culturelles, vérifiées au registre des marques et testées auprès de votre cible avant que le reste avance.",
+  },
+  {
+    title: "Des supports prêts pour chaque point de contact",
+    desc: "Packaging, photo, vidéo, social et retail. Conçus en Chine pour Tmall, Douyin, RED, le retail et la PR, pas adaptés à la dernière minute.",
+  },
+];
+
+const services = [
+  {
+    icon: 'target',
+    title: 'Positionnement',
+    short: 'Stratégie · Territoire · Discours',
+    desc: "On cartographie votre catégorie en Chine, on identifie le terrain laissé libre par vos concurrents, et on positionne votre marque pour l'occuper. La décision qui conditionne toutes les autres.",
+    points: [
+      "Cartographie concurrentielle dans votre catégorie",
+      "Analyse des espaces et segments à prendre",
+      "Un positionnement clair, pensé pour la Chine",
+      "Une architecture de messages utilisable par vos équipes au quotidien",
+    ],
+    color: '#269ADA',
+    colorSoft: '#E8F4FC',
+  },
+  {
+    icon: 'character',
+    title: 'Naming',
+    short: 'Phonétique · Sémantique · Marque déposée',
+    desc: "Le bon nom chinois ouvre la reconnaissance, la mémorisation et le bouche-à-oreille. Le mauvais crée des frictions à chaque fois qu'un consommateur tente de le prononcer. On compose des noms qui tiennent sur le plan linguistique, culturel et commercial.",
+    points: [
+      "Listes courtes phonétiques, sémantiques et culturelles",
+      "Vérification de disponibilité au registre des marques, par catégorie",
+      "Tests consommateurs dans les villes de votre cible",
+      "Un nom final qui voyage du packaging à la recherche, jusqu'à la voix",
+    ],
+    color: '#E54B6E',
+    colorSoft: '#FCEAEF',
+  },
+  {
+    icon: 'palette',
+    title: 'Identité visuelle',
+    short: 'Logo · Couleur · Typographie · Mise en page',
+    desc: "Logo, couleur, typographie, mise en page. On construit une identité visuelle cohérente pour la Chine et on la documente dans une charte que vos équipes et partenaires appliquent partout, sans interpréter.",
+    points: [
+      "Système de logo pensé pour les plateformes et le packaging chinois",
+      "Palettes couleur et typographiques adaptées au contexte local",
+      "Charte de marque et standards de design pour partenaires et agences",
+      "Templates social, eCommerce et offline",
+    ],
+    color: '#7C5DFA',
+    colorSoft: '#F0EDFE',
+  },
+  {
+    icon: 'cube',
+    title: 'Supports de marque',
+    short: 'Packaging · Photo · Vidéo · Espace',
+    desc: "Packaging, vidéo, photographie, design d'espace. Les supports dont votre marque a besoin pour exister en Chine, conçus en Chine pour le marché chinois, prêts pour Tmall, Douyin, RED, le retail et la PR.",
+    points: [
+      "Packaging adapté au retail et à l'eCommerce chinois",
+      "Photo et vidéo de marque tournées en Chine",
+      "Design de stand, pop-up et points de vente",
+      "Kits créatifs prêts pour le social et les KOL",
+    ],
+    color: '#0EA46C',
+    colorSoft: '#E6F5EE',
+  },
+];
+
+const starts = [
+  {
+    name: 'Nouveau lancement',
+    tag: "Aucune présence en Chine pour l'instant",
+    desc: "Vous entrez en Chine pour la première fois. La marque a du capital ailleurs, mais aucun nom chinois, aucun support local, aucune notoriété sur le terrain.",
+    when: "Vous avez un produit défini, un budget arrêté et 6 à 12 mois devant vous avant le lancement. On construit la marque depuis la stratégie, taillée pour la Chine dès le premier jour.",
+    bullets: [
+      "Études catégorie et consommateurs dans vos villes cibles",
+      "Positionnement et messages écrits pour le marché chinois",
+      "Liste courte de noms chinois, marque vérifiée et testée consommateurs",
+      "Identité visuelle complète et charte de marque, prête pour la Chine au lancement",
+      "Kit de supports pour packaging, social, Tmall, Douyin et RED",
+    ],
+    pricing: "Forfait projet, calibré par catégorie et nombre de SKU.",
+    highlight: false,
+  },
+  {
+    name: 'Refonte',
+    tag: 'Vous êtes déjà sur le marché',
+    desc: "Vous êtes en Chine depuis des années. La marque a ses acheteurs, sa distribution et un nom chinois qui fonctionne. Le système visuel a vieilli, les supports ne collent plus aux plateformes.",
+    when: "Vous voulez accélérer sur Douyin et RED, votre packaging fait dépassé à côté des concurrents locaux, ou votre boutique Tmall ne reflète plus ce que vous êtes. On met l'identité à jour sans casser l'équité acquise.",
+    bullets: [
+      "Audit de la marque actuelle face à votre catégorie en Chine aujourd'hui",
+      "Système visuel rafraîchi, aligné avec la marque globale",
+      "Packaging et supports de boutique remis aux standards des plateformes",
+      "Charte et templates rafraîchis pour les équipes en marché",
+      "Plan de déploiement online et offline",
+    ],
+    pricing: "Forfait projet, plus léger qu'une refonte totale.",
+    highlight: true,
+  },
+  {
+    name: 'Rebranding',
+    tag: 'Repartir après un faux pas',
+    desc: "Quelque chose s'est cassé. Mauvais nom chinois, mauvaise référence culturelle, lancement timide qui n'a jamais accroché. La marque doit repartir sans perdre les SKU et les partenariats qui tiennent encore.",
+    when: "Vous voulez un vrai reset, pas un pansement cosmétique. On reconstruit la marque autour de ce qui survit et on remplace le reste, puis on gère la transition côté partenaires, plateformes et consommateurs.",
+    bullets: [
+      "Diagnostic des causes profondes du blocage",
+      "Nouveau positionnement et nouveau nom chinois si nécessaire, avec recherche d'antériorité",
+      "Identité visuelle reconstruite pour effacer les associations héritées",
+      "Supports de transition pour que les acheteurs existants suivent la nouvelle marque",
+      "Plan de communication pour plateformes, distributeurs et PR",
+    ],
+    pricing: "Forfait projet, calibré après l'audit.",
+    highlight: false,
+  },
+  {
+    name: 'Marque fille',
+    tag: 'Nouvelle ligne sous une marque mère',
+    desc: "Vous avez déjà une marque qui fonctionne en Chine et vous lancez une nouvelle ligne en dessous. Autre catégorie, autre public, autre prix, même maison-mère.",
+    when: "Il vous faut une marque fille qui tient debout seule tout en profitant du capital de la marque mère. On définit l'architecture, on nomme la nouvelle ligne et on produit les supports nécessaires pour qu'elle joue dans la cour.",
+    bullets: [
+      "Audit d'architecture de marque et stratégie de marque fille",
+      "Naming de la nouvelle ligne, en cohérence avec la marque mère",
+      "Système visuel qui signale la famille sans la dupliquer",
+      "Packaging et supports de lancement pour la nouvelle gamme de SKU",
+      "Plan go-to-market avec l'équipe de la marque mère",
+    ],
+    pricing: "Forfait projet, calibré sur l'ambition de la marque fille.",
+    highlight: false,
+  },
+];
+
+const steps = [
+  {
+    icon: 'compass',
+    title: 'Découvrir',
+    desc: "On commence par écouter. Études consommateurs, cartographie de catégorie, démontage concurrentiel et lecture honnête de la place que votre marque occupe en Chine aujourd'hui, comparée à celle qu'elle pourrait prendre.",
+  },
+  {
+    icon: 'hammer',
+    title: 'Construire',
+    desc: "Positionnement, nom chinois, identité visuelle et charte de marque. Le cœur stratégique de la marque, écrit et dessiné pour le marché chinois, et marque vérifiée au registre avant livraison.",
+  },
+  {
+    icon: 'rocket',
+    title: 'Activer',
+    desc: "Packaging, photographie, vidéo et kits créatifs prêts pour les plateformes. Tout ce dont vos équipes et partenaires ont besoin pour lancer sur Tmall, Douyin, RED, le retail et la PR d'une seule voix.",
+  },
+];
+
+const hubPoints = [
+  "Produire. Image, vidéo, prise de vue réelle, 3D et motion à grande échelle.",
+  "Plateforme. Modèles entraînés sur la marque, sur serveurs GPU dédiés.",
+  "Conseiller. Stratégie, transcréation et formation des équipes aux outils IA.",
+];
+
+const faqs = [
+  {
+    cat: 'Strategy',
+    q: "Pourquoi localiser la marque, on ne peut pas se contenter de traduire ?",
+    a: "La traduction déplace les mots. La localisation déplace la marque. Le consommateur chinois arrive avec ses propres références, ses propres codes visuels et ses propres plateformes. Une marque qui débarque sans ces signaux passe pour étrangère au mauvais sens du terme : polie mais hors-sujet. Le travail consiste à garder ce qui fait votre singularité, et à reconstruire ce qu'il faut pour qu'un acheteur chinois la reconnaisse comme sienne.",
+  },
+  {
+    cat: 'Strategy',
+    q: "En quoi la perception d'une marque diffère vraiment en Chine ?",
+    a: "Assez pour que vous l'anticipiez dès le premier jour. La preuve sociale pèse plus lourd que la communication descendante. Avis, recommandations de KOL et ce qu'un ami a acheté la semaine passée battent souvent tout ce que vous direz de vous-même. L'héritage compte, l'innovation compte, et la capacité à montrer qu'on comprend la culture locale compte énormément.",
+  },
+  {
+    cat: 'Strategy',
+    q: "Marque étrangère ou marque locale, vers quel côté pencher ?",
+    a: "Ni l'un ni l'autre, franchement. Les marques étrangères apportent un signal de qualité et de prestige. Les marques locales apportent la fluidité culturelle et le rapport prix-valeur. Les gagnantes empruntent aux deux. Vous gardez l'histoire de qualité et d'héritage, et vous construisez la fluidité culturelle par-dessus, pour que la marque sonne locale même si le logo ne l'est pas.",
+  },
+  {
+    cat: 'Strategy',
+    q: "À quoi ressemble une transcréation en pratique ?",
+    a: "C'est l'écart entre une traduction littérale et une histoire qu'un acheteur chinois raconterait sur vous. Même vérité de marque, réécrite dans un registre qui parle au public. Nouvelles métaphores. Nouveaux exemples. Parfois un bénéfice principal différent, parce que celui qui marche à Paris n'est pas celui qui gagne à Shanghai. Bien fait, ça ne ressemble pas du tout à une adaptation.",
+  },
+  {
+    cat: 'Naming',
+    q: "Qu'est-ce qui fait qu'un nom de marque chinois fonctionne vraiment ?",
+    a: "Facile à dire. Facile à retenir. Un sens qui flatte le produit, ou au minimum qui ne lui fait pas honte. Si un consommateur peut lire le nom à voix haute après l'avoir vu une fois, vous avez une chance. Sinon, vous passerez votre vie à vous expliquer.",
+  },
+  {
+    cat: 'Naming',
+    q: "Et si mon nom de marque ne se traduit tout simplement pas ?",
+    a: "C'est le point de départ normal, pas l'exception. La plupart des noms étrangers sonnent maladroits ou portent un sens fâcheux quand on les force en mandarin. La solution consiste à créer un nom chinois qui vit à côté du nom latin, avec sa propre logique, son propre son, sa propre histoire. Apple a 苹果. BMW a 宝马. Vous pouvez aussi.",
+  },
+  {
+    cat: 'Naming',
+    q: "Garder le nom latin, le nom chinois, ou les deux ?",
+    a: "Les deux, presque toujours. Le nom latin protège la marque globale. Le nom chinois fait le travail quotidien sur le marché. Sur le packaging, la signalétique et la recherche, le nom chinois prend la tête. Sur la communication globale et les signaux de positionnement premium, le nom latin reprend la main.",
+  },
+  {
+    cat: 'Naming',
+    q: "Comment tester un nom avant de s'engager ?",
+    a: "On le lit à voix haute dans 3 villes. On récolte les réactions de jeunes, d'adultes et de seniors dans la cible visée. On le teste sur un écran de téléphone mal éclairé, pas seulement sur une slide. On lance une recherche d'antériorité dans les catégories où vous vendez vraiment, plus les adjacentes évidentes. Au moindre accroc, on refait la salve plutôt que de rapiécer.",
+  },
+  {
+    cat: 'Identity',
+    q: "Qu'est-ce qui fait qu'un logo fonctionne en Chine, au-delà de l'esthétique ?",
+    a: "Il doit se lire en vignette, sur un avatar WeChat de 1,5 cm, sur un packaging coincé en rayon dans une ville de rang 3, et sur un sticker Douyin. Il doit survivre à une impression médiocre. Il doit porter un sens même sans couleur. La plupart des logos étrangers passent le premier test et échouent aux 3 suivants.",
+  },
+  {
+    cat: 'Identity',
+    q: "Où les marques étrangères ratent-elles le plus souvent leur identité visuelle ?",
+    a: "Elles livrent la charte globale telle quelle. La palette pensée pour le retail européen paraît délavée sous l'éclairage d'un supermarché chinois. La typographie qui respire en imprimé étouffe à l'écran. La photo héros faite pour l'affichage urbain ne se recadre pas en vertical. L'adaptation du système n'est pas optionnelle.",
+  },
+  {
+    cat: 'Identity',
+    q: "Comment éviter le cliché des couleurs porte-bonheur ?",
+    a: "On les utilise avec intention, pas par défaut. Le rouge fonctionne quand il y a une raison. L'or fonctionne quand il gagne sa place. La version paresseuse, c'est tout en rouge et or pour le Nouvel An. La version forte, c'est une marque qui utilise un seul code culturel avec finesse et laisse le reste de l'identité faire son propre travail.",
+  },
+  {
+    cat: 'Assets',
+    q: "Mon packaging global peut-il simplement débarquer en Chine ?",
+    a: "Parfois le flacon, oui. Le graphisme, rarement. Le packaging chinois suit ses propres conventions : claims de face, codes ingrédients, pictogrammes réglementaires, hiérarchie des langues, formats de rayon différents des vôtres. On adapte les graphismes pour la Chine avant le lancement. C'est la pièce de marque la plus visible qu'un consommateur chinois aura jamais en main.",
+  },
+  {
+    cat: 'Assets',
+    q: "Comment tenir la cohérence de marque entre Tmall, Douyin, RED et le offline ?",
+    a: "Une charte de marque chinoise, pas la charte globale. Elle cartographie la marque dans les formats que les plateformes chinoises utilisent réellement, avec templates, contre-exemples et notes de ton. Vous la donnez ensuite à chaque partenaire qui touche à votre marque : TP, agence KOL, designer retail, agence PR. La cohérence est un problème de logistique déguisé en problème créatif.",
+  },
+  {
+    cat: 'Assets',
+    q: "Puis-je réutiliser mes photos de marque globales ?",
+    a: "Une partie, avec retouche. Les photos d'ambiance et lifestyle voyagent mal parce que le casting, les intérieurs, les gestes sonnent étrangers. La photo produit voyage bien si l'éclairage et les surfaces respectent les standards des plateformes. Prévoyez un shooting à Shanghai ou Shenzhen pour au moins la campagne héros chaque année.",
+  },
+  {
+    cat: 'Process',
+    q: "Combien de temps prend une construction de marque complète en Chine ?",
+    a: "Stratégie et naming, 4 à 6 semaines. Identité visuelle, 6 à 8. Supports incluant packaging et création clé, 8 à 12. Comptez encore un mois de buffer pour les recherches d'antériorité, les tests consommateurs et les révisions. 3 à 5 mois de bout en bout, ça reste honnête. Quiconque vous promet 6 semaines vous vend un template.",
+  },
+  {
+    cat: 'Process',
+    q: "À quelle fréquence faut-il refondre la marque ?",
+    a: "Refonte majeure tous les 4 à 6 ans, rafraîchissement léger tous les 2. Le marché chinois bouge vite. Tendances visuelles, UI des plateformes et références consommateurs se déplacent sur des cycles plus courts qu'en Europe ou aux États-Unis. Prévoyez un point annuel, pas seulement un grand reset tous les 5 ans.",
+  },
+  {
+    cat: 'Process',
+    q: "À qui appartient la charte, mon équipe ou l'agence ?",
+    a: "Vous. Toujours vous. L'agence la construit, votre équipe en est propriétaire. Mettez-le au contrat dès le premier jour, avec la propriété des fichiers, les fichiers de travail et les licences de polices. On a vu des marques verrouillées hors de leurs propres supports parce que le contrat restait flou. Ne soyez pas cette marque-là.",
+  },
+  {
+    cat: 'Cost',
+    q: "Combien coûte vraiment une construction de marque complète en Chine ?",
+    a: "Une fourchette, pas un chiffre. Une construction ciblée (stratégie, nom chinois, identité rafraîchie, packaging pour une gamme de SKU) tombe en général entre 30 000 et 80 000 USD. Un programme multi-SKU complet avec photo et vidéo originales double souvent ce montant. En dessous de 20 000, c'est du template déguisé.",
+  },
+  {
+    cat: 'Cost',
+    q: "Quelle répartition de budget entre stratégie, identité et supports ?",
+    a: "Environ 25 % stratégie et naming, 30 % identité, 45 % supports. La plupart des marques étrangères sous-pondèrent les supports et se retrouvent avec un beau logo sans rien à mettre dessus. Pensez d'abord aux supports : l'identité s'installe ensuite autour de ce que vous allez réellement produire.",
+  },
+  {
+    cat: 'Pitfalls',
+    q: "Faut-il déposer mon nom chinois tôt ?",
+    a: "Oui, le jour où vous l'arrêtez. La Chine fonctionne en premier-déposant. Des squatteurs surveillent les communiqués de presse et déposent les noms dans la semaine. Racheter votre propre nom coûte plus cher que la construction elle-même. Déposez en mandarin, en alphabet latin, en pinyin, sur les catégories où vous vendez et les adjacentes évidentes.",
+  },
+];
+
+const faqCategories = [
+  { key: 'All', label: 'Toutes' },
+  { key: 'Strategy', label: 'Stratégie' },
+  { key: 'Naming', label: 'Naming' },
+  { key: 'Identity', label: 'Identité' },
+  { key: 'Assets', label: 'Supports' },
+  { key: 'Process', label: 'Processus' },
+  { key: 'Cost', label: 'Budget' },
+  { key: 'Pitfalls', label: 'Pièges' },
+];
+
+const faqCatLabels: Record<string, string> = {
+  Strategy: 'Stratégie',
+  Naming: 'Naming',
+  Identity: 'Identité',
+  Assets: 'Supports',
+  Process: 'Processus',
+  Cost: 'Budget',
+  Pitfalls: 'Pièges',
+};
+
+const icons: Record<string, string> = {
+  target: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>`,
+  character: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M12 7v10M7 12h10M9 9l6 6M15 9l-6 6"/></svg>`,
+  palette: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9c0-1.5-1-2-2.5-2H17a2 2 0 0 1-2-2V7a2 2 0 0 0-3-1.7A9 9 0 0 0 12 3z"/><circle cx="7" cy="11" r="1" fill="currentColor"/><circle cx="9.5" cy="7.5" r="1" fill="currentColor"/><circle cx="14.5" cy="7" r="1" fill="currentColor"/></svg>`,
+  cube: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg>`,
+  compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16 8 13 13 8 16 11 11 16 8"/></svg>`,
+  hammer: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l7 7-3 3-7-7z"/><path d="M11 6 4 13l3 3 7-7"/><path d="M8 16l-4 4"/></svg>`,
+  rocket: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4c4 0 6 2 6 6-4 0-6 2-6 6-4 0-6-2-6-6 4 0 6-2 6-6z"/><circle cx="14" cy="10" r="1.5"/><path d="M8 16l-3 3M11 19l-2 2M5 13l-2 2"/></svg>`,
+};
+
+const phaseLabels = ['Phase un', 'Phase deux', 'Phase trois'];
+---
+
+<Layout
+  title="Marque et localisation en Chine | Beyond Border Group"
+  description="Agence de branding pour la Chine : positionnement, naming, identité visuelle et supports de marque. On construit des marques que le consommateur chinois reconnaît, qu'il préfère et qu'il choisit en rayon."
+>
+  <div class="bl-progress" aria-hidden="true"><div class="bl-progress__bar"></div></div>
+  <article class="bl">
+
+    {/* ---------- HERO ---------- */}
+    <section class="bl-hero" data-hero>
+      <div class="bl-hero__bg" aria-hidden="true" data-parallax>
+        <img src="/Images/branding/hero.png" alt="Supports de marque en marché, packaging et identité visuelle exposés" />
+      </div>
+      <div class="bl-hero__overlay" aria-hidden="true"></div>
+      <div class="bl-hero__grain" aria-hidden="true"></div>
+
+      <div class="container bl-hero__inner">
+        <nav class="bl-hero__crumbs" aria-label="Fil d'Ariane">
+          <a href="/fr/">Accueil</a>
+          <span aria-hidden="true">/</span>
+          <a href="/fr/#services">Entrer en Chine</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark bl-reveal">Marque et localisation</span>
+        <h1 class="bl-hero__title bl-reveal" style="--reveal-delay: 80ms;">
+          <span class="bl-hero__title-row">Une marque taillée pour la Chine,</span>
+          <span class="bl-hero__title-row bl-hero__title-row--accent">sur chaque point de contact.</span>
+          <span class="bl-hero__title-row">Conçue en Chine, pour le</span>
+          <span class="bl-hero__title-row bl-hero__title-row--highlight">consommateur chinois.</span>
+        </h1>
+        <p class="bl-hero__lead bl-reveal" style="--reveal-delay: 200ms;">
+          Positionnement, naming, identité visuelle et supports de marque, pensés pour les plateformes
+          que les acheteurs chinois utilisent vraiment. On transforme des marques internationales en
+          marques que le public chinois reconnaît, préfère, choisit en rayon.
+        </p>
+        <div class="bl-hero__actions bl-reveal" style="--reveal-delay: 280ms;">
+          <a href="/fr/nous-contacter" class="btn btn--primary bl-magnetic">Nous parler</a>
+          <a href="#services" class="btn btn--ghost-light bl-magnetic">Voir comment on travaille</a>
+        </div>
+
+        <div class="bl-hero__meta bl-reveal" style="--reveal-delay: 360ms;">
+          <div class="bl-hero__meta-item">
+            <span class="bl-hero__meta-num" data-counter="15" data-suffix="+">0</span>
+            <span class="bl-hero__meta-label">ans de travail de marque en Chine</span>
+          </div>
+          <div class="bl-hero__meta-item">
+            <span class="bl-hero__meta-num" data-counter="40" data-suffix="+">0</span>
+            <span class="bl-hero__meta-label">marques lancées, repositionnées ou rafraîchies</span>
+          </div>
+          <div class="bl-hero__meta-item">
+            <span class="bl-hero__meta-num">8</span>
+            <span class="bl-hero__meta-label">catégories, de la beauté à l'automobile</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#three-things" class="bl-hero__scroll" aria-label="Faire défiler vers la section suivante">
+        <span class="bl-hero__scroll-line"></span>
+        <span class="bl-hero__scroll-text">Défiler</span>
+      </a>
+    </section>
+
+    {/* ---------- THREE THINGS A CHINA BRAND NEEDS ---------- */}
+    <section id="three-things" class="section">
+      <div class="container">
+        <header class="section-header section-header--center bl-reveal">
+          <span class="eyebrow">Ce qu'il faut</span>
+          <h2>Une marque forte en Chine repose sur 3 choses</h2>
+          <p class="section-header__lead">
+            La connaissance, le nom et l'expérience. Manquez l'une des 3 et les autres travailleront 2 fois plus dur.
+          </p>
+        </header>
+
+        <div class="bl-pillars">
+          {pillars.map((p, i) => (
+            <article class="bl-pillar bl-reveal" style={`--reveal-delay: ${i * 100}ms;`}>
+              <figure class="bl-pillar__media">
+                <img src={p.image} alt={p.alt} loading="lazy" decoding="async" />
+              </figure>
+              <div class="bl-pillar__body">
+                <h3>{p.h}</h3>
+                <p>{p.body}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- VALUE + PROMISES ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <div class="bl-value">
+          <div class="bl-value__copy bl-reveal">
+            <span class="eyebrow">Pourquoi on existe</span>
+            <h2>De l'idée à l'identité, façonnée pour la Chine.</h2>
+            <p>
+              Des stratégies de marque qui voyagent. D'un écran de téléphone à une boutique Tmall jusqu'au stand d'un pop-up, la marque garde le même visage.
+            </p>
+            <p>
+              Quinze ans sur le marché chinois. Beauté, F&amp;B, automobile, mode et tech. Lancements, relances, faux pas redressés et identités qui tiennent face à la concurrence locale.
+            </p>
+          </div>
+
+          <ul class="bl-promise bl-reveal" style="--reveal-delay: 100ms;">
+            <li><span class="eyebrow">Ce que vous obtenez</span></li>
+            {promises.map((p) => (
+              <li class="bl-promise__item">
+                <span class="bl-promise__check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                </span>
+                <div>
+                  <h4>{p.title}</h4>
+                  <p>{p.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- SERVICES (bento 2x2) ---------- */}
+    <section id="services" class="section bl-svc-section">
+      <div class="container">
+        <header class="section-header section-header--split bl-reveal">
+          <div>
+            <span class="eyebrow">Nos prestations de marque</span>
+            <h2>Quatre briques. Une seule marque cohérente.</h2>
+          </div>
+          <p class="bl-svc-lead">
+            On part de la stratégie, on écrit le nom, on dessine l'identité, puis on produit les supports qui portent la marque en marché. Survolez une tuile pour voir ce qui tourne en dessous.
+          </p>
+        </header>
+
+        <div class="bl-svc-grid">
+          {services.map((s, i) => (
+            <article
+              class="bl-svc-card bl-reveal"
+              style={`--svc-color: ${s.color}; --svc-soft: ${s.colorSoft}; --reveal-delay: ${i * 80}ms;`}
+            >
+              <div class="bl-svc-card__head">
+                <span class="bl-svc-card__icon" set:html={icons[s.icon]} />
+                <span class="bl-svc-card__short">{s.short}</span>
+              </div>
+              <h3 class="bl-svc-card__title">{s.title}</h3>
+              <p class="bl-svc-card__desc">{s.desc}</p>
+              <ul class="bl-svc-card__points">
+                {s.points.map((b) => (
+                  <li>
+                    <span class="bl-svc-card__bullet" aria-hidden="true"></span>
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+              <span class="bl-svc-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- STARTING POINTS (tabbed showcase) ---------- */}
+    <section class="section section--alt bl-tabs-section">
+      <div class="container">
+        <header class="section-header section-header--center bl-reveal">
+          <span class="eyebrow">Où démarrent les marques</span>
+          <h2>Quatre points de départ classiques</h2>
+          <p class="section-header__lead">
+            Chaque marque arrive à un stade différent. Certaines partent de zéro. D'autres ont déjà un nom chinois, une boutique Tmall et veulent un rafraîchissement, pas un reset. Choisissez celui qui correspond à votre situation aujourd'hui.
+          </p>
+        </header>
+
+        <div class="bl-tabs bl-reveal" data-tabs>
+          <div class="bl-tabs__nav" role="tablist">
+            {starts.map((m, i) => (
+              <button
+                type="button"
+                class={`bl-tabs__tab${i === 1 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 1 ? 'true' : 'false'}
+                aria-controls={`start-panel-${i}`}
+                id={`start-tab-${i}`}
+                data-tab-target={`start-panel-${i}`}
+              >
+                <span class="bl-tabs__tab-label">{m.name}</span>
+                <span class="bl-tabs__tab-tag">{m.tag}</span>
+                {m.highlight && <span class="bl-tabs__tab-pop">Le plus courant</span>}
+              </button>
+            ))}
+            <span class="bl-tabs__indicator" aria-hidden="true"></span>
+          </div>
+
+          <div class="bl-tabs__panels">
+            {starts.map((m, i) => (
+              <div
+                class={`bl-tabs__panel${i === 1 ? ' is-active' : ''}`}
+                role="tabpanel"
+                id={`start-panel-${i}`}
+                aria-labelledby={`start-tab-${i}`}
+                hidden={i !== 1}
+              >
+                <div class="bl-tabs__panel-grid">
+                  <div class="bl-tabs__lead">
+                    <span class="bl-tabs__pillset">
+                      <span class="bl-tabs__pill">{m.tag}</span>
+                    </span>
+                    <h3 class="bl-tabs__title">{m.name}</h3>
+                    <p class="bl-tabs__desc">{m.desc}</p>
+                    <div class="bl-tabs__when">
+                      <span class="bl-tabs__when-label">À privilégier quand</span>
+                      <p>{m.when}</p>
+                    </div>
+                    <a href="/fr/nous-contacter" class="btn btn--primary bl-magnetic">Parlons {m.name.toLowerCase()}</a>
+                  </div>
+
+                  <div class="bl-tabs__body">
+                    <div class="bl-tabs__list-wrap">
+                      <span class="bl-tabs__list-label">Ce qu'on livre</span>
+                      <ul class="bl-tabs__list">
+                        {m.bullets.map((b) => (
+                          <li>
+                            <span class="bl-tabs__check" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                            </span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="bl-tabs__pricing">
+                      <span class="bl-tabs__pricing-label">Tarif</span>
+                      <span class="bl-tabs__pricing-value">{m.pricing}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- CONTENT PRODUCTION (hubStudio editorial) ---------- */}
+    <section class="section section--alt bl-trs-section">
+      <div class="container">
+        <div class="bl-trs bl-reveal">
+          <div class="bl-trs__text">
+            <span class="eyebrow"><span class="bl-trs__bar" aria-hidden="true"></span>Production de contenu</span>
+            <h2 class="bl-trs__title">
+              Une maison de production calée sur
+              <span class="bl-trs__title-emph">ce qu'est devenu le contenu.</span>
+            </h2>
+            <p class="bl-trs__lead">
+              Une fois la marque construite, on la fait vivre. Via hubStudio, notre maison de production à Shanghai, on livre image, vidéo et 3D au volume que les plateformes chinoises réclament aujourd'hui. Augmentée par l'IA, encadrée par l'humain, alignée sur la marque par construction.
+            </p>
+            <p class="bl-trs__lead">
+              Coût par support finalisé divisé par 2. Volume multiplié par 7. Le délai de 3 jours était impensable hier. C'est notre plancher aujourd'hui.
+            </p>
+            <ul class="bl-trs__list">
+              {hubPoints.map((point) => (
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg>
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+            <div class="bl-trs__actions">
+              <a class="bl-trs__cta" href="https://hubstudio.ai" target="_blank" rel="noopener noreferrer">
+                <span>Voir hubStudio</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <span class="bl-trs__meta">hubStudio · Shanghai</span>
+            </div>
+          </div>
+
+          <aside class="bl-trs__aside" aria-label="hubStudio en bref">
+            <a class="bl-trs__frame" href="https://hubstudio.ai" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir hubStudio dans un nouvel onglet">
+              <span class="bl-trs__chrome" aria-hidden="true">
+                <span class="bl-trs__dot"></span>
+                <span class="bl-trs__dot"></span>
+                <span class="bl-trs__dot"></span>
+                <span class="bl-trs__url">hubstudio.ai</span>
+              </span>
+              <img
+                src="/Images/branding/hubstudio-preview.png"
+                alt="Page d'accueil hubStudio, maison de production augmentée par l'IA à Shanghai"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <div class="bl-trs__rule" aria-hidden="true"></div>
+            <div class="bl-trs__stat">
+              <span class="bl-trs__stat-label">Volume multiplié</span>
+              <div class="bl-trs__stat-value">
+                <span class="bl-trs__stat-num">7</span>
+                <span class="bl-trs__stat-unit">×</span>
+              </div>
+              <p class="bl-trs__stat-note">
+                Coût par support finalisé divisé par 2. Délais de 3 jours, alignés sur la marque par construction.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- JOURNEY (vertical timeline) ---------- */}
+    <section class="section bl-journey-section">
+      <div class="container">
+        <header class="section-header section-header--center bl-reveal">
+          <span class="eyebrow">Comment on travaille</span>
+          <h2>De la découverte au lancement</h2>
+          <p class="section-header__lead">
+            Trois phases qui emmènent une marque d'une stratégie qui tient debout à un système prêt pour le marché, avec des tests in-market intégrés au passage.
+          </p>
+        </header>
+
+        <div class="bl-journey" data-journey>
+          <div class="bl-journey__rail" aria-hidden="true">
+            <div class="bl-journey__rail-track"></div>
+            <div class="bl-journey__rail-fill" data-journey-fill></div>
+          </div>
+          <ol class="bl-journey__list">
+            {steps.map((s, i) => (
+              <li class="bl-journey__item bl-reveal" data-journey-item style={`--reveal-delay: ${i * 80}ms;`}>
+                <span class="bl-journey__dot" aria-hidden="true">
+                  <span class="bl-journey__dot-inner"></span>
+                </span>
+                <span class="bl-journey__phase">{phaseLabels[i]}</span>
+                <div class="bl-journey__card">
+                  <span class="bl-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
+                  <div>
+                    <h3 class="bl-journey__title">{s.title}</h3>
+                    <p class="bl-journey__desc">{s.desc}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FAQ (with category filter) ---------- */}
+    <section class="section section--alt">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center bl-reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>La marque en Chine, réponses concrètes</h2>
+          <p class="section-header__lead">
+            20 questions qui reviennent chez les fondateurs, les équipes marque et les opérationnels qui préparent une construction de marque pour la Chine. Filtrez par sujet.
+          </p>
+        </header>
+
+        <div class="bl-faq-filter bl-reveal" data-faq-filter role="tablist" aria-label="Filtrer les FAQ par catégorie">
+          {faqCategories.map((c, i) => (
+            <button
+              type="button"
+              class={`bl-faq-chip${i === 0 ? ' is-active' : ''}`}
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              data-faq-cat={c.key}
+            >
+              <span class="bl-faq-chip__label">{c.label}</span>
+              <span class="bl-faq-chip__count">{c.key === 'All' ? faqs.length : faqs.filter((f) => f.cat === c.key).length}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="bl-faq" data-faq-list>
+          {faqs.map((f, i) => (
+            <details
+              class="bl-faq__item bl-reveal"
+              data-faq-cat={f.cat}
+              open={i === 0}
+              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+            >
+              <summary class="bl-faq__q">
+                <span class="bl-faq__cat-tag">{faqCatLabels[f.cat] ?? f.cat}</span>
+                <span class="bl-faq__q-text">{f.q}</span>
+                <span class="bl-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="bl-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="bl-cta">
+          <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
+          <h2 class="bl-cta__title">Vous pensez emmener votre marque en Chine ?</h2>
+          <p class="bl-cta__lead">
+            Dites-nous où vous en êtes et où vous voulez emmener la marque. Un senior de l'équipe vous répond sous un jour ouvré. Pas de tunnel de vente, pas de répondeur automatique.
+          </p>
+          <div class="bl-cta__actions">
+            <a href="/fr/nous-contacter" class="btn bl-cta__btn-primary">Nous contacter</a>
+            <a href="/fr/nos-realisations" class="btn bl-cta__btn-ghost">Voir nos études de cas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    .bl .container--narrow { max-width: 880px; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .bl-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .bl-reveal.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .bl-magnetic {
+        will-change: transform;
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      }
+    }
+
+    /* ---------- SCROLL PROGRESS BAR ---------- */
+    .bl-progress {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      z-index: 1000;
+      background: transparent;
+      pointer-events: none;
+    }
+    .bl-progress__bar {
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      transition: width 80ms linear;
+    }
+
+    /* ---------- HERO ---------- */
+    .bl-hero {
+      position: relative;
+      min-height: clamp(360px, 48vh, 500px);
+      display: flex;
+      align-items: flex-start;
+      padding: clamp(8px, 1.25vh, 16px) 0 clamp(48px, 7vh, 80px);
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    body:has(.bl-hero) .bl-hero { padding-top: clamp(112px, 10vh, 144px); }
+    @media (max-width: 1024px) {
+      body:has(.bl-hero) .bl-hero { padding-top: clamp(96px, 9vh, 116px); }
+    }
+    .bl-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .bl-hero__bg img {
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+      transition: transform 80ms linear;
+      filter: saturate(0.95);
+    }
+    .bl-hero__overlay {
+      position: absolute; inset: 0; z-index: -2;
+      background:
+        linear-gradient(110deg,
+          rgba(8, 18, 28, 0.92) 0%,
+          rgba(8, 18, 28, 0.72) 42%,
+          rgba(8, 18, 28, 0.32) 100%),
+        radial-gradient(120% 80% at 0% 100%,
+          rgba(38, 154, 218, 0.28) 0%,
+          rgba(38, 154, 218, 0) 60%);
+    }
+    .bl-hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      background-image:
+        radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .bl-hero__inner { max-width: 980px; position: relative; }
+    .bl-hero__crumbs {
+      margin-bottom: var(--space-4);
+      font-size: var(--fs-small);
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .bl-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .bl-hero__crumbs a:hover { color: var(--bbg-white); }
+    .bl-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-3);
+      color: #9DDBF5;
+    }
+    .bl-hero__title {
+      font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      max-width: 22ch;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      gap: 0.05em;
+    }
+    .bl-hero__title-row { display: block; }
+    .bl-hero__title-row--accent {
+      color: #9DDBF5;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -0.018em;
+    }
+    .bl-hero__title-row--highlight {
+      position: relative;
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0 0.15em;
+    }
+    .bl-hero__title-row--highlight::before {
+      content: "";
+      position: absolute;
+      left: 0; right: 0;
+      bottom: 0.04em;
+      height: 0.18em;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transform-origin: left center;
+      animation: bl-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+      z-index: -1;
+    }
+    @keyframes bl-underline {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    .bl-hero__lead {
+      font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 58ch;
+      margin: 0 0 var(--space-5);
+    }
+    .bl-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
+    .bl-magnetic:hover { transform: translateY(-2px); }
+
+    .bl-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(var(--space-4), 4vw, var(--space-7));
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: 720px;
+    }
+    .bl-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .bl-hero__meta-num {
+      font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: "tnum";
+    }
+    .bl-hero__meta-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.02em;
+    }
+
+    .bl-hero__scroll {
+      position: absolute;
+      bottom: var(--space-5);
+      right: clamp(var(--space-5), 4vw, var(--space-7));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color 200ms ease;
+    }
+    .bl-hero__scroll:hover { color: var(--bbg-white); }
+    .bl-hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .bl-hero__scroll-line::after {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0; right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+      animation: bl-scroll-tick 1.8s ease-in-out infinite;
+    }
+    @keyframes bl-scroll-tick {
+      0% { top: -50%; }
+      100% { top: 100%; }
+    }
+    @media (max-width: 720px) {
+      .bl-hero__scroll { display: none; }
+      .bl-hero__meta { gap: var(--space-4); }
+    }
+
+    /* ---------- THREE THINGS ---------- */
+    .bl-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+    }
+    .bl-pillar {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+    }
+    .bl-pillar:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .bl-pillar__media {
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: var(--bbg-surface);
+    }
+    .bl-pillar__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 600ms var(--ease);
+    }
+    .bl-pillar:hover .bl-pillar__media img { transform: scale(1.04); }
+    .bl-pillar__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+    .bl-pillar__body h3 {
+      font-size: clamp(1.125rem, 0.5vw + 0.9rem, 1.375rem);
+      line-height: 1.25;
+      margin: 0 0 var(--space-3);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .bl-pillar__body p {
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .bl-pillars { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- VALUE + PROMISES ---------- */
+    .bl-value {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .bl-value__copy h2 {
+      font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin: var(--space-3) 0 var(--space-4);
+    }
+    .bl-value__copy p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0 0 var(--space-4);
+    }
+    .bl-promise {
+      list-style: none;
+      padding: var(--space-6);
+      margin: 0;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .bl-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .bl-promise__item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+    }
+    .bl-promise__check {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .bl-promise__check svg { width: 16px; height: 16px; }
+    .bl-promise__item h4 {
+      font-size: 1.125rem;
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .bl-promise__item p {
+      font-size: 0.975rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .bl-value { grid-template-columns: 1fr; gap: var(--space-6); }
+    }
+
+    /* ---------- SERVICES BENTO ---------- */
+    .bl-svc-section .section-header--split { align-items: end; gap: var(--space-6); margin-bottom: var(--space-6); }
+    .bl-svc-lead {
+      max-width: 44ch;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .bl-svc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    .bl-svc-card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 20px;
+      padding: var(--space-6);
+      overflow: hidden;
+      isolation: isolate;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      min-height: 320px;
+      transition:
+        transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
+    }
+    .bl-svc-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--svc-color, #269ADA) 0%, var(--svc-color, #269ADA) 50%, transparent 100%);
+      transform: scaleX(0.3);
+      transform-origin: left center;
+      transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1;
+    }
+    .bl-svc-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(140% 90% at 100% 0%,
+        color-mix(in srgb, var(--svc-color, #269ADA) 14%, transparent) 0%,
+        transparent 55%);
+      opacity: 0;
+      transition: opacity 360ms ease;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .bl-svc-card:hover {
+      transform: translateY(-6px);
+      border-color: color-mix(in srgb, var(--svc-color, #269ADA) 55%, var(--bbg-border));
+      box-shadow: 0 22px 50px -26px color-mix(in srgb, var(--svc-color, #269ADA) 50%, transparent),
+                  0 6px 14px -8px rgba(0, 0, 0, 0.08);
+    }
+    .bl-svc-card:hover::before { transform: scaleX(1); }
+    .bl-svc-card:hover::after { opacity: 1; }
+    .bl-svc-card:hover .bl-svc-card__icon {
+      transform: scale(1.06) rotate(-4deg);
+      background: var(--svc-color, var(--bbg-blue));
+      color: var(--bbg-white);
+      box-shadow: 0 12px 24px -14px color-mix(in srgb, var(--svc-color, #269ADA) 70%, transparent),
+                  inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #269ADA) 30%, transparent);
+    }
+    .bl-svc-card:hover .bl-svc-card__arrow { transform: translateX(4px); color: var(--svc-color, var(--bbg-blue)); }
+    .bl-svc-card__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+    }
+    .bl-svc-card__icon {
+      display: inline-flex;
+      width: 56px;
+      height: 56px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: var(--svc-soft, var(--bbg-blue-light));
+      color: var(--svc-color, var(--bbg-blue));
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #269ADA) 18%, transparent);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+                  background 320ms ease, color 320ms ease, box-shadow 320ms ease;
+      flex-shrink: 0;
+    }
+    .bl-svc-card__icon svg { width: 28px; height: 28px; }
+    .bl-svc-card__short {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--svc-color, var(--bbg-blue));
+      text-align: right;
+      line-height: 1.4;
+    }
+    .bl-svc-card__title {
+      font-size: 1.5rem;
+      line-height: 1.18;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-ink);
+    }
+    .bl-svc-card__desc {
+      font-size: 0.975rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .bl-svc-card__points {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0;
+      border-top: 1px solid var(--bbg-border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-top: auto;
+    }
+    .bl-svc-card__points li {
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      gap: 0.6rem;
+      align-items: center;
+      font-size: 0.875rem;
+      line-height: 1.45;
+      color: var(--bbg-text);
+    }
+    .bl-svc-card__bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--svc-color, var(--bbg-blue));
+      box-shadow: 0 0 0 3px var(--svc-soft, var(--bbg-blue-light));
+      margin-left: 4px;
+    }
+    .bl-svc-card__arrow {
+      position: absolute;
+      bottom: var(--space-6);
+      right: var(--space-6);
+      color: var(--bbg-text-muted);
+      transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1), color 200ms ease;
+      pointer-events: none;
+    }
+    .bl-svc-card__arrow svg { width: 22px; height: 22px; }
+    @media (max-width: 720px) {
+      .bl-svc-grid { grid-template-columns: 1fr; }
+      .bl-svc-card { min-height: 0; }
+      .bl-svc-section .section-header--split { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ---------- STARTING POINTS TABS ---------- */
+    .bl-tabs {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px -28px rgba(8, 18, 28, 0.18);
+    }
+    .bl-tabs__nav {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      background: linear-gradient(180deg, var(--bbg-surface) 0%, var(--bbg-white) 100%);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .bl-tabs__tab {
+      position: relative;
+      background: transparent;
+      border: none;
+      padding: var(--space-5) var(--space-4);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      color: var(--bbg-text-muted);
+      transition: color 240ms ease, background 240ms ease;
+      border-right: 1px solid var(--bbg-border);
+      font-family: inherit;
+    }
+    .bl-tabs__tab:last-child { border-right: none; }
+    .bl-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .bl-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .bl-tabs__tab-label {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+      line-height: 1.2;
+    }
+    .bl-tabs__tab-tag {
+      font-size: 0.78rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.35;
+    }
+    .bl-tabs__tab.is-active .bl-tabs__tab-tag { color: var(--bbg-blue); }
+    .bl-tabs__tab-pop {
+      position: absolute;
+      top: var(--space-3);
+      right: var(--space-3);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .bl-tabs__indicator {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 25%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px 2px 0 0;
+      transform: translateX(0);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    .bl-tabs__panels { background: var(--bbg-white); }
+    .bl-tabs__panel {
+      padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
+      animation: bl-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes bl-tab-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .bl-tabs__panel[hidden] { display: none; }
+    .bl-tabs__panel-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(var(--space-5), 3vw, var(--space-7));
+      align-items: start;
+    }
+    .bl-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
+    .bl-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .bl-tabs__pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.35em 0.85em;
+      border-radius: 999px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      letter-spacing: 0.01em;
+    }
+    .bl-tabs__title {
+      font-size: clamp(1.625rem, 1.8vw + 1rem, 2.25rem);
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -0.015em;
+    }
+    .bl-tabs__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .bl-tabs__when {
+      padding: var(--space-4);
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .bl-tabs__when-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.35rem;
+    }
+    .bl-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
+    .bl-tabs__body {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .bl-tabs__list-wrap {
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+    }
+    .bl-tabs__list-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .bl-tabs__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .bl-tabs__list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .bl-tabs__check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .bl-tabs__check svg { width: 12px; height: 12px; }
+    .bl-tabs__pricing {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-4);
+      padding: var(--space-4);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.12) 100%);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(38, 154, 218, 0.2);
+    }
+    .bl-tabs__pricing-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue-dark);
+      flex-shrink: 0;
+    }
+    .bl-tabs__pricing-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      line-height: 1.4;
+    }
+    @media (max-width: 1024px) {
+      .bl-tabs__nav { grid-template-columns: repeat(2, 1fr); }
+      .bl-tabs__tab { border-bottom: 1px solid var(--bbg-border); }
+      .bl-tabs__tab:nth-child(2) { border-right: none; }
+      .bl-tabs__indicator { display: none; }
+      .bl-tabs__panel-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .bl-tabs__nav { grid-template-columns: 1fr; }
+      .bl-tabs__tab { border-right: none; }
+    }
+
+    /* ---------- CASES CTA ---------- */
+    .bl-cases-cta { display: flex; justify-content: center; }
+
+    /* ---------- CONTENT PRODUCTION (TheRedScroll editorial) ---------- */
+    .bl-trs-section { position: relative; isolation: isolate; overflow: hidden; }
+    .bl-trs {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: clamp(var(--space-6), 4vw, var(--space-8));
+      align-items: center;
+    }
+    .bl-trs__text { max-width: 60ch; }
+    .bl-trs__text .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: var(--space-3);
+    }
+    .bl-trs__bar {
+      display: inline-block;
+      width: 28px;
+      height: 2px;
+      background: var(--bbg-blue);
+      border-radius: 2px;
+    }
+    .bl-trs__title {
+      font-size: clamp(2rem, 2.6vw + 1rem, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.018em;
+      margin: 0 0 var(--space-4);
+      color: var(--bbg-ink);
+    }
+    .bl-trs__title-emph {
+      display: block;
+      color: var(--bbg-blue);
+      font-style: italic;
+      font-weight: 500;
+    }
+    .bl-trs__lead {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--bbg-text);
+      margin: 0 0 var(--space-4);
+    }
+    .bl-trs__list {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0 0 var(--space-5);
+      border-top: 1px solid var(--bbg-border);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .bl-trs__list li {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .bl-trs__list svg {
+      width: 20px;
+      height: 20px;
+      color: var(--bbg-blue);
+      margin-top: 2px;
+    }
+    .bl-trs__actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-5);
+      flex-wrap: wrap;
+    }
+    .bl-trs__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.85em 1.4em;
+      background: var(--bbg-ink);
+      color: var(--bbg-white);
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+      transition: background 200ms ease, transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .bl-trs__cta:hover {
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      transform: translateY(-2px);
+    }
+    .bl-trs__cta svg { width: 18px; height: 18px; }
+    .bl-trs__cta:hover svg { transform: translateX(2px); transition: transform 200ms ease; }
+    .bl-trs__meta {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+
+    .bl-trs__aside {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .bl-trs__frame {
+      display: block;
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      box-shadow: 0 24px 60px -28px rgba(8, 18, 28, 0.28),
+                  0 6px 18px -10px rgba(8, 18, 28, 0.12);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 320ms ease,
+                  border-color 240ms ease;
+    }
+    .bl-trs__frame:hover {
+      transform: translateY(-4px);
+      border-color: rgba(38, 154, 218, 0.4);
+      box-shadow: 0 32px 70px -28px rgba(38, 154, 218, 0.32),
+                  0 8px 22px -10px rgba(8, 18, 28, 0.14);
+    }
+    .bl-trs__chrome {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 0.8rem;
+      background: linear-gradient(180deg, #F2F4F7 0%, #E9ECF1 100%);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .bl-trs__dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #D6D9DE;
+    }
+    .bl-trs__dot:nth-child(1) { background: #FF5F57; }
+    .bl-trs__dot:nth-child(2) { background: #FEBC2E; }
+    .bl-trs__dot:nth-child(3) { background: #28C840; }
+    .bl-trs__url {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.01em;
+      padding: 0.1em 0.7em;
+      background: var(--bbg-white);
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.04);
+      transform: translateX(-1.5rem);
+    }
+    .bl-trs__frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      object-position: top center;
+      background: var(--bbg-surface);
+    }
+
+    .bl-trs__rule {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, var(--bbg-border) 30%, var(--bbg-border) 70%, transparent 100%);
+    }
+    .bl-trs__stat { display: flex; flex-direction: column; gap: 0.35rem; }
+    .bl-trs__stat-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+    .bl-trs__stat-value {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.15rem;
+      color: var(--bbg-blue);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .bl-trs__stat-num {
+      font-size: clamp(2.5rem, 2.4vw + 1rem, 3.25rem);
+      font-feature-settings: "tnum";
+    }
+    .bl-trs__stat-unit {
+      font-size: clamp(1.5rem, 1.4vw + 0.6rem, 2rem);
+      font-weight: 600;
+    }
+    .bl-trs__stat-note {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+      max-width: 38ch;
+    }
+
+    @media (max-width: 1024px) {
+      .bl-trs { grid-template-columns: 1fr; }
+      .bl-trs__aside { order: -1; }
+    }
+    @media (max-width: 540px) {
+      .bl-trs__url { transform: none; margin: 0 auto; }
+    }
+
+    /* ---------- JOURNEY ---------- */
+    .bl-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .bl-journey {
+      position: relative;
+      max-width: 880px;
+      margin: 0 auto;
+      padding-left: 56px;
+    }
+    .bl-journey__rail {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 22px;
+      width: 2px;
+    }
+    .bl-journey__rail-track {
+      position: absolute; inset: 0;
+      background: var(--bbg-border);
+      border-radius: 2px;
+    }
+    .bl-journey__rail-fill {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: var(--journey-progress, 0%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transition: height 120ms linear;
+      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+    }
+    .bl-journey__list {
+      list-style: none;
+      padding: 0; margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-7);
+    }
+    .bl-journey__item { position: relative; }
+    .bl-journey__dot {
+      position: absolute;
+      left: -56px;
+      top: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bbg-white);
+      border: 2px solid var(--bbg-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: border-color 320ms ease;
+    }
+    .bl-journey__dot-inner {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: background 320ms ease, transform 320ms ease;
+    }
+    .bl-journey__item.is-active .bl-journey__dot { border-color: var(--bbg-blue); }
+    .bl-journey__item.is-active .bl-journey__dot-inner {
+      background: var(--bbg-blue);
+      transform: scale(1.1);
+      box-shadow: 0 0 0 4px var(--bbg-blue-light);
+    }
+    .bl-journey__phase {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-2);
+      transition: color 320ms ease;
+    }
+    .bl-journey__item.is-active .bl-journey__phase { color: var(--bbg-blue); }
+    .bl-journey__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bl-journey__item:hover .bl-journey__card,
+    .bl-journey__item.is-active .bl-journey__card {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      transform: translateX(4px);
+    }
+    .bl-journey__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .bl-journey__icon svg { width: 24px; height: 24px; }
+    .bl-journey__title {
+      font-size: 1.25rem;
+      line-height: 1.25;
+      margin: 0 0 0.4rem;
+      letter-spacing: -0.005em;
+    }
+    .bl-journey__desc {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 600px) {
+      .bl-journey { padding-left: 40px; }
+      .bl-journey__rail { left: 16px; }
+      .bl-journey__dot { left: -40px; width: 32px; height: 32px; }
+      .bl-journey__dot-inner { width: 10px; height: 10px; }
+      .bl-journey__card { flex-direction: column; gap: var(--space-3); }
+    }
+
+    /* ---------- FAQ FILTER ---------- */
+    .bl-faq-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: var(--space-6);
+    }
+    .bl-faq-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--bbg-text);
+      transition: all 220ms ease;
+      font-family: inherit;
+    }
+    .bl-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .bl-faq-chip.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    .bl-faq-chip__count {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: all 220ms ease;
+    }
+    .bl-faq-chip:hover .bl-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .bl-faq-chip.is-active .bl-faq-chip__count {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--bbg-white);
+    }
+
+    .bl-faq {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .bl-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bl-faq__item:hover {
+      transform: translateX(2px);
+      border-color: rgba(38, 154, 218, 0.4);
+    }
+    .bl-faq__item[open] {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+    }
+    .bl-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .bl-faq__q::-webkit-details-marker { display: none; }
+    .bl-faq__q::marker { display: none; }
+    .bl-faq__item:hover .bl-faq__q { color: var(--bbg-blue); }
+    .bl-faq__cat-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 0.25em 0.6em;
+      border-radius: 4px;
+      margin-right: var(--space-3);
+      flex-shrink: 0;
+    }
+    .bl-faq__q-text { flex-grow: 1; }
+    .bl-faq__icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+                  color var(--dur) var(--ease),
+                  background var(--dur) var(--ease);
+    }
+    .bl-faq__item[open] .bl-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-white);
+      background: var(--bbg-blue);
+    }
+    .bl-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+      animation: bl-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes bl-faq-in {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .bl-faq__a p { margin: 0; }
+    .bl-faq__item.is-hidden { display: none; }
+
+    /* ---------- FINAL CTA ---------- */
+    .bl-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .bl-cta::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .bl-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .bl-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .bl-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 52ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .bl-cta__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .bl-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .bl-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .bl-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .bl-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
+
+  <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // 1. Reveal-on-scroll
+      const revealEls = document.querySelectorAll('.bl-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      // 2. Animated number counters
+      const counters = document.querySelectorAll('[data-counter]');
+      if (counters.length && !reduced && 'IntersectionObserver' in window) {
+        const animate = (el) => {
+          const target = parseFloat(el.dataset.counter || '0');
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(target * eased);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        };
+        const counterIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((el) => counterIo.observe(el));
+      } else {
+        counters.forEach((el) => {
+          el.textContent = (el.dataset.counter || '0') + (el.dataset.suffix || '');
+        });
+      }
+
+      // 3. Hero parallax + scroll progress bar
+      const parallaxEl = document.querySelector('[data-parallax]');
+      const progressEl = document.querySelector('.bl-progress__bar');
+      const heroEl = document.querySelector('[data-hero]');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          if (parallaxEl && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // 4. Smooth scroll for in-page anchors
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+
+      // 5. Accordion behaviour for FAQ
+      const faqItems = document.querySelectorAll('.bl-faq__item');
+      faqItems.forEach((item) => {
+        item.addEventListener('toggle', () => {
+          if (item.open) {
+            faqItems.forEach((other) => {
+              if (other !== item && other.open) other.open = false;
+            });
+          }
+        });
+      });
+
+      // 6. Starting-point tabs
+      const tabsRoot = document.querySelector('[data-tabs]');
+      if (tabsRoot) {
+        const tabs = Array.from(tabsRoot.querySelectorAll('.bl-tabs__tab'));
+        const panels = Array.from(tabsRoot.querySelectorAll('.bl-tabs__panel'));
+        const indicator = tabsRoot.querySelector('.bl-tabs__indicator');
+        const setActive = (tab) => {
+          tabs.forEach((t) => {
+            const active = t === tab;
+            t.classList.toggle('is-active', active);
+            t.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          const targetId = tab.getAttribute('data-tab-target');
+          panels.forEach((p) => {
+            const active = p.id === targetId;
+            p.classList.toggle('is-active', active);
+            if (active) p.removeAttribute('hidden');
+            else p.setAttribute('hidden', '');
+          });
+          if (indicator) {
+            const idx = tabs.indexOf(tab);
+            const w = 100 / tabs.length;
+            indicator.style.width = w + '%';
+            indicator.style.transform = `translateX(${idx * 100}%)`;
+          }
+        };
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => setActive(tab));
+          tab.addEventListener('keydown', (e) => {
+            const idx = tabs.indexOf(tab);
+            if (e.key === 'ArrowRight') {
+              e.preventDefault();
+              const next = tabs[(idx + 1) % tabs.length];
+              next.focus();
+              setActive(next);
+            } else if (e.key === 'ArrowLeft') {
+              e.preventDefault();
+              const prev = tabs[(idx - 1 + tabs.length) % tabs.length];
+              prev.focus();
+              setActive(prev);
+            }
+          });
+        });
+        const initialActive = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
+        if (initialActive) setActive(initialActive);
+      }
+
+      // 7. Journey vertical timeline
+      const journey = document.querySelector('[data-journey]');
+      if (journey) {
+        const fill = journey.querySelector('[data-journey-fill]');
+        const items = Array.from(journey.querySelectorAll('[data-journey-item]'));
+        const updateJourney = () => {
+          const rect = journey.getBoundingClientRect();
+          const vh = window.innerHeight;
+          const total = rect.height;
+          const visible = Math.max(0, Math.min(total, vh * 0.55 - rect.top));
+          const pct = Math.max(0, Math.min(100, (visible / total) * 100));
+          if (fill) fill.style.setProperty('--journey-progress', pct + '%');
+          items.forEach((item) => {
+            const r = item.getBoundingClientRect();
+            const center = r.top + r.height / 2;
+            const inActive = center < vh * 0.6 && center > 0;
+            item.classList.toggle('is-active', inActive);
+          });
+        };
+        let journeyTicking = false;
+        const onJourneyScroll = () => {
+          if (journeyTicking) return;
+          journeyTicking = true;
+          requestAnimationFrame(() => {
+            updateJourney();
+            journeyTicking = false;
+          });
+        };
+        window.addEventListener('scroll', onJourneyScroll, { passive: true });
+        window.addEventListener('resize', onJourneyScroll, { passive: true });
+        updateJourney();
+      }
+
+      // 8. FAQ category filter
+      const faqFilter = document.querySelector('[data-faq-filter]');
+      const faqList = document.querySelector('[data-faq-list]');
+      if (faqFilter && faqList) {
+        const chips = Array.from(faqFilter.querySelectorAll('.bl-faq-chip'));
+        const items = Array.from(faqList.querySelectorAll('.bl-faq__item'));
+        chips.forEach((chip) => {
+          chip.addEventListener('click', () => {
+            const cat = chip.dataset.faqCat;
+            chips.forEach((c) => {
+              const on = c === chip;
+              c.classList.toggle('is-active', on);
+              c.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            items.forEach((item) => {
+              const matches = cat === 'All' || item.dataset.faqCat === cat;
+              item.classList.toggle('is-hidden', !matches);
+            });
+          });
+        });
+      }
+    })();
+  </script>
+</Layout>

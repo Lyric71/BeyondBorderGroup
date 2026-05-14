@@ -1,0 +1,289 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const services = [
+  {
+    eyebrow: 'Plateformes',
+    title: 'Plateformes',
+    tagline: 'Tmall, JD, Douyin, WeChat, RED, Pinduoduo. À qui chacune parle, et comment elle se gagne.',
+    href: '/fr/comprendre-la-chine/plateformes',
+    cta: 'Découvrir les plateformes',
+    image: '/Images/learn-china/card-platforms.png',
+    alt: 'Trois smartphones posés sur un bureau chinois, chacun affichant une interface de plateforme différente, lumière de fin de journée',
+    accent: '#269ADA',
+    accentSoft: '#E8F4FC',
+  },
+  {
+    eyebrow: 'Masterclass',
+    title: 'Masterclass',
+    tagline: 'Des sessions d\'une demi-journée animées par celles et ceux qui lancent et font grandir les marques en Chine.',
+    href: '/fr/comprendre-la-chine/masterclass',
+    cta: 'Voir les masterclass',
+    image: '/Images/CyrilMasterclass.jpg',
+    alt: 'Cyril Drouin animant une masterclass BeyondBorderGroup sur le marché chinois',
+    accent: '#E54B6E',
+    accentSoft: '#FCEAEF',
+  },
+  {
+    eyebrow: 'Expéditions',
+    title: 'Expéditions terrain',
+    tagline: 'Des programmes sur le terrain, à Shanghai, Shenzhen et au-delà. Venez avec votre équipe, arpentez le marché.',
+    href: '/fr/comprendre-la-chine/expeditions-terrain',
+    cta: 'Voir les expéditions',
+    image: '/Images/learn-china/card-expeditions.png',
+    alt: 'Trois opérationnels traversant les allées d\'un marché de gros chinois, l\'un d\'eux pointant une palette de produits',
+    accent: '#0EA46C',
+    accentSoft: '#E6F5EE',
+  },
+  {
+    eyebrow: 'Lectures',
+    title: 'Décryptages',
+    tagline: 'Articles, rapports et notes de terrain, signés par notre équipe en Chine. En accès libre.',
+    href: '/insights',
+    cta: 'Lire les derniers articles',
+    image: '/Images/learn-china/card-insights.png',
+    alt: 'Un analyste du marché chinois à un bureau encombré, examinant un rapport imprimé à côté d\'un tableau de bord sur ordinateur, lumière naturelle venant de la gauche',
+    accent: '#7C5DFA',
+    accentSoft: '#F0EDFE',
+  },
+];
+---
+
+<Layout
+  title="Comprendre la Chine | BeyondBorderGroup"
+  description="Plateformes, masterclass, expéditions terrain et lectures. Quatre façons de mieux saisir la Chine, animées par l'équipe qui pilote le marché tous les jours."
+>
+
+  {/* ---------- HERO ---------- */}
+  <section class="hero-fullbleed">
+    <picture>
+      <img
+        src="/Images/learn-china/hero.png"
+        alt=""
+        class="hero-fullbleed__image"
+        width="1600"
+        height="900"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </picture>
+    <div class="hero-fullbleed__overlay" aria-hidden="true"></div>
+
+    <div class="container hero-fullbleed__inner">
+      <div class="hero-fullbleed__copy">
+        <span class="eyebrow eyebrow--on-dark">Comprendre la Chine</span>
+        <h1 class="hero-fullbleed__title">Lire le marché avant d'engager le moindre euro.</h1>
+        <p class="hero-fullbleed__lead">
+          Sessions de travail, plongées dans les plateformes, semaines sur le terrain, lectures. Animées par l'équipe qui fait tourner la Chine pour nos clients, jour après jour.
+        </p>
+        <div class="hero-fullbleed__actions">
+          <a class="btn btn--primary" href="#services">Voir les quatre formats</a>
+          <a class="btn btn--ghost-light" href="/contact">Nous parler</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- SERVICES GRID ---------- */}
+  <section class="section" id="services">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">Quatre formats</span>
+        <h2>Choisissez le format qui colle à votre équipe.</h2>
+        <p class="section-header__lead">
+          Certains veulent un atelier. D'autres préfèrent passer une semaine avec les opérationnels chinois. D'autres encore liront le dossier dans l'avion. Commencez là où c'est utile.
+        </p>
+      </header>
+
+      <div class="learn-grid">
+        {services.map((s) => (
+          <a
+            href={s.href}
+            class="learn-tile"
+            style={`--accent: ${s.accent}; --accent-soft: ${s.accentSoft};`}
+          >
+            <div class="learn-tile__media">
+              <img src={s.image} alt={s.alt} loading="lazy" decoding="async" />
+              <div class="learn-tile__scrim" aria-hidden="true"></div>
+            </div>
+
+            <div class="learn-tile__body">
+              <span class="learn-tile__eyebrow">{s.eyebrow}</span>
+              <h3 class="learn-tile__title">{s.title}</h3>
+              <p class="learn-tile__tagline">{s.tagline}</p>
+              <span class="learn-tile__cta">
+                {s.cta}
+                <span class="learn-tile__arrow" aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .learn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .learn-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 420px;
+    padding: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    color: #fff;
+    background: var(--bbg-ink);
+    isolation: isolate;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .learn-tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent);
+    z-index: 3;
+  }
+
+  .learn-tile__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .learn-tile__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .learn-tile__scrim {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.85) 100%);
+    z-index: 1;
+    transition: opacity 300ms ease;
+  }
+
+  .learn-tile__body {
+    position: relative;
+    z-index: 2;
+    max-width: 36rem;
+  }
+
+  .learn-tile__eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .learn-tile__title {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    line-height: 1.15;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  .learn-tile__tagline {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.92);
+    margin: 0 0 1.25rem;
+    max-width: 30rem;
+  }
+
+  .learn-tile__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    width: fit-content;
+    transition: border-color 200ms ease, color 200ms ease;
+  }
+
+  .learn-tile__arrow {
+    display: inline-block;
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .learn-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+    color: #fff;
+  }
+  .learn-tile:hover .learn-tile__media img {
+    transform: scale(1.05);
+  }
+  .learn-tile:hover .learn-tile__scrim {
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.9) 100%);
+  }
+  .learn-tile:hover .learn-tile__cta {
+    border-color: #fff;
+  }
+  .learn-tile:hover .learn-tile__arrow {
+    transform: translateX(6px);
+  }
+
+  .learn-tile:focus-visible {
+    outline: 3px solid var(--bbg-blue);
+    outline-offset: 4px;
+  }
+
+  @media (max-width: 1024px) {
+    .learn-grid {
+      grid-template-columns: 1fr;
+    }
+    .learn-tile {
+      min-height: 360px;
+      padding: 1.75rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .learn-tile {
+      min-height: 340px;
+    }
+    .learn-tile__tagline {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .learn-tile,
+    .learn-tile__media img,
+    .learn-tile__scrim,
+    .learn-tile__cta,
+    .learn-tile__arrow {
+      transition: none !important;
+    }
+  }
+</style>

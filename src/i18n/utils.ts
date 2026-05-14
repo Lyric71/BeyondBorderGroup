@@ -28,16 +28,81 @@ export function stripLocale(pathname: string): string {
 }
 
 /**
- * Build a path for a target locale. The default locale lives at the root.
+ * Per-locale slug table. Keys are canonical English paths (without locale
+ * prefix). Values are the native-language slug to use under that locale's URL
+ * tree, per the rule that every page under `/fr/`, `/de/`, `/es/`, `/zh/` must
+ * read in the target language.
  *
- * `localizePath('/about', 'fr')` -> `'/fr/about'`
- * `localizePath('/about', 'en')` -> `'/about'`
+ * Every page that exists in the target locale must be listed here so the
+ * language switcher can both forward-map (EN -> native) and reverse-map
+ * (native -> EN). Pages absent from this table fall back to the locale home.
+ */
+const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>> = {
+  fr: {
+    '/about': '/qui-nous-sommes',
+    '/enter-china': '/entrer-en-chine',
+    '/enter-china/market-entry-consulting': '/entrer-en-chine/conseil-en-entree-de-marche',
+    '/enter-china/cross-border-setup': '/entrer-en-chine/lancement-cross-border',
+    '/enter-china/distribution': '/entrer-en-chine/distribution',
+    '/enter-china/branding-localisation': '/entrer-en-chine/marque-et-localisation',
+    '/learn-china': '/comprendre-la-chine',
+    '/learn-china/platforms': '/comprendre-la-chine/plateformes',
+    '/learn-china/masterclass': '/comprendre-la-chine/masterclass',
+    '/learn-china/learning-expeditions': '/comprendre-la-chine/expeditions-terrain',
+  },
+};
+
+/**
+ * Reverse the per-locale slug table so we can translate a native-language slug
+ * back to its canonical English path. Built once at module load.
+ */
+const reverseSlugMap = Object.fromEntries(
+  (Object.entries(slugMap) as [Exclude<Locale, typeof defaultLocale>, Record<string, string>][])
+    .map(([loc, map]) => [loc, Object.fromEntries(Object.entries(map).map(([en, native]) => [native, en]))]),
+) as Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>>;
+
+/**
+ * Convert any path (canonical English or locale-prefixed native) to its
+ * canonical English form. Unknown native slugs return `null` so callers can
+ * fall back to the locale home rather than producing a 404.
+ */
+function toCanonical(path: string): string | null {
+  const parts = path.split('/').filter(Boolean);
+  if (!parts.length) return '/';
+  const first = parts[0];
+  if (!(locales as readonly string[]).includes(first)) {
+    return path.startsWith('/') ? path : '/' + path;
+  }
+  const sourceLocale = first as Locale;
+  const stripped = parts.length === 1 ? '/' : '/' + parts.slice(1).join('/');
+  if (sourceLocale === defaultLocale) return stripped;
+  if (stripped === '/') return '/';
+  const reverse = reverseSlugMap[sourceLocale as Exclude<Locale, typeof defaultLocale>];
+  return reverse?.[stripped] ?? null;
+}
+
+/**
+ * Build a path for a target locale. Handles both directions, so it works
+ * whether the input is `/about` (canonical) or `/fr/qui-nous-sommes` (native).
+ *
+ * `localizePath('/about', 'fr')` -> `'/fr/qui-nous-sommes'`
+ * `localizePath('/fr/qui-nous-sommes', 'en')` -> `'/about'`
+ *
+ * When the source path has no equivalent in the target locale, falls back to
+ * the target locale home so the switcher never lands on a 404.
  */
 export function localizePath(path: string, locale: Locale): string {
-  const clean = stripLocale(path);
-  if (locale === defaultLocale) return clean === '' ? '/' : clean;
-  if (clean === '/' || clean === '') return `/${locale}`;
-  return `/${locale}${clean}`;
+  const canonical = toCanonical(path);
+  if (locale === defaultLocale) {
+    if (canonical === null) return '/';
+    return canonical === '' ? '/' : canonical;
+  }
+  if (canonical === null) return `/${locale}`;
+  if (canonical === '/' || canonical === '') return `/${locale}`;
+  const map = slugMap[locale as Exclude<Locale, typeof defaultLocale>];
+  const translated = map?.[canonical];
+  if (!translated) return `/${locale}`;
+  return `/${locale}${translated}`;
 }
 
 /**

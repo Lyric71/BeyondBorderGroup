@@ -1,0 +1,1739 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const team = [
+  {
+    name: 'Cyril Drouin',
+    role: 'Fondateur et président',
+    base: 'Shanghai / Paris',
+    photo: '/Images/team/cyril-drouin.jpg',
+    bio: "Vingt-cinq années dans le digital, la publicité et le commerce. A dirigé Publicis Commerce et Performance Marketing pour la Chine et l'Asie du Nord. Tient la plume sur la stratégie. Préside aux destinées de la maison.",
+    linkedin: 'https://www.linkedin.com/in/cyril-d-68835729/',
+    twitter: 'https://twitter.com/CyrilDrouin',
+    substack: 'https://cyrildrouin.substack.com',
+  },
+  {
+    name: 'Echo Peng',
+    role: 'Directrice senior, associée',
+    base: 'Shanghai',
+    photo: '/Images/team/echo-peng.jpg',
+    bio: "Dix-huit années passées aux commandes de l'eCommerce et du digital pour des marques internationales en Chine. Ancienne directrice des opérations chez Publicis China. Conduit les plateformes et veille au pilotage quotidien des comptes.",
+    linkedin: 'https://www.linkedin.com/in/echo-peng/',
+  },
+  {
+    name: 'Liyan Ye',
+    role: 'Directrice senior',
+    base: 'Shanghai',
+    photo: '/Images/team/liyan-ye.jpg',
+    bio: "Vingt années de marketing au service de marques du Fortune 500 en Chine. Conduit la construction de marque et les campagnes. Transforme l'activité quotidienne sur les plateformes en empreinte durable auprès du consommateur.",
+    linkedin: 'https://www.linkedin.com/in/liyan-ye/',
+  },
+];
+
+const credentials = [
+  {
+    title: "Anciens directeurs en agence 4A",
+    body: "Chez Publicis, nous bâtissions les stratégies de croissance en Chine et en Asie du Nord pour des portefeuilles internationaux. Plans d'implantation, guides plateforme, dossiers distributeurs : ce que les agences 4A facturent au prix fort, c'est nous qui l'orchestrions.",
+    image: '/Images/about/credentials/01-4a-directors.png',
+  },
+  {
+    title: 'Opérateurs de plateformes, non commentateurs',
+    body: "Commerce et contenu sur Tmall, JD, Douyin et Xiaohongshu. Nous savons ce que chaque plateforme récompense réellement, et non ce qu'elle promet en présentation commerciale.",
+    image: '/Images/about/credentials/02-platform-strategists.png',
+  },
+  {
+    title: 'Trois cycles de marché traversés',
+    body: "Des dizaines d'entrées en Chine conduites pour des marques internationales, à travers les réformes réglementaires, les redistributions de cartes du côté de la concurrence et le basculement du commerce mené par la boutique vers celui mené par le contenu. Le manuel de 2018 ne tient plus en 2025. Nous savons ce qui doit être écarté.",
+    image: '/Images/about/credentials/03-brand-architects.png',
+  },
+  {
+    title: 'Aucun fossé entre stratégie et exécution',
+    body: "La personne qui rédige votre feuille de route chinoise est également celle qui tient votre compte Tmall à la clôture du mois. Un seul fil d'e-mails, du lancement à la revue trimestrielle. Aucun renvoi vers une équipe junior dont vous ignoriez l'existence.",
+    image: '/Images/about/credentials/04-no-gap.png',
+  },
+  {
+    title: 'Éprouvé sur toutes les catégories',
+    body: "Lancement de marques de beauté sur Xiaohongshu. Redressement de l'agroalimentaire au sortir d'un creux Tmall. Construction, à partir de rien, de la considération automobile sur Douyin. Catégories différentes, mêmes opérationnels aux commandes.",
+    image: '/Images/about/credentials/05-categories.png',
+  },
+];
+
+const principles = [
+  {
+    title: "Votre réussite ne se sous-traite pas",
+    body: "Le stratège qui prépare votre arrivée en Chine est également celui qui lance vos campagnes Douyin à deux heures du matin, heure de Pékin. Aucun relais junior en cours de route.",
+    icon: 'hands',
+  },
+  {
+    title: "Nous n'acceptons que les dossiers que nous savons gagner",
+    body: "Toute mission située hors de notre champ d'expertise, nous la déclinons. Et si nous ne pouvons faire bouger les lignes pour vous en Chine, vous l'apprendrez de notre bouche, en premier.",
+    icon: 'target',
+  },
+  {
+    title: "Cross-border, non export",
+    body: "La Chine n'est pas votre marché historique muni d'un dictionnaire. Paiement, plateformes, usages de consommation : tout y répond à ses propres règles. Manquer cette grille de lecture revient à livrer un travail soigné que personne n'achète.",
+    icon: 'globe',
+  },
+  {
+    title: "La mécanique, nous la maîtrisons de l'intérieur",
+    body: "Classement Tmall, modération Xiaohongshu, tracking WeChat. Quinze années à éprouver ces plateformes, à les redresser, à les conduire à l'échelle.",
+    icon: 'gears',
+  },
+  {
+    title: "Nous disposons des bons numéros",
+    body: "Vingt-cinq années en Chine, c'est savoir qui appeler lorsqu'une plateforme modifie ses règles dans la nuit. Des distributeurs qui décrochent. Des TP qui ne s'évanouissent pas une fois l'onboarding achevé. Des agences KOL qui trient véritablement leurs talents.",
+    icon: 'network',
+  },
+  {
+    title: "Nous avons occupé votre fauteuil",
+    body: "Avant Beyond Border, nous dirigions les équipes commerce chez Publicis. P&L de flagship store, sanctions de plateforme négociées à trois heures du matin, heure de Pékin.",
+    icon: 'chair',
+  },
+];
+
+const principleIcon: Record<string, string> = {
+  hands:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5a1.5 1.5 0 0 1 3 0v5"/><path d="M12 10V4a1.5 1.5 0 0 1 3 0v7"/><path d="M15 11V6a1.5 1.5 0 0 1 3 0v9"/><path d="M18 11V8a1.5 1.5 0 0 1 3 0v7a6 6 0 0 1-6 6H9a5 5 0 0 1-4.5-2.8L2 13.5a1.5 1.5 0 0 1 2.6-1.4L6 14"/></svg>',
+  target:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/></svg>',
+  globe:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a13 13 0 0 1 0 18"/><path d="M12 3a13 13 0 0 0 0 18"/></svg>',
+  gears:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="9.5" r="3"/><path d="M9.5 2v2M9.5 15v2M2 9.5h2M15 9.5h2M4.2 4.2l1.4 1.4M13.4 13.4l1.4 1.4M4.2 14.8l1.4-1.4M13.4 5.6l1.4-1.4"/><circle cx="17" cy="17" r="2.2"/><path d="M17 12v1.5M17 20.5V22M12 17h1.5M20.5 17H22"/></svg>',
+  network: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7l4 10M17 7l-4 10M7.5 6h9M6 8v8M18 8v8"/></svg>',
+  chair:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v8h14V3"/><path d="M3 11h18"/><path d="M5 11v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6"/><path d="M7 20l-1 2M17 20l1 2"/></svg>',
+};
+
+const metrics = [
+  { target: 15,  suffix: '+', label: 'années passées à bâtir des marques en Chine' },
+  { target: 60,  suffix: '+', label: "marques accompagnées en eCommerce, en média et en distribution" },
+  { target: 100, suffix: '+', label: 'campagnes livrées sur les plateformes chinoises' },
+  { target: 50,  suffix: '+', label: 'missions de conseil conduites pour des marques internationales' },
+];
+
+const clients = [
+  { name: 'Shiseido',       logo: '/Images/Clients%20Logos/shiseiso-black-scaled.png' },
+  { name: 'Pierre Fabre',   logo: '/Images/Clients%20Logos/pierre-black.png' },
+  { name: 'iFlytek',        logo: '/Images/Clients%20Logos/iflytek-black.png' },
+  { name: 'Camper',         logo: '/Images/Clients%20Logos/camper_black.png' },
+  { name: 'Into You',       logo: '/Images/Clients%20Logos/LogoIntoYou.png' },
+  { name: 'Estée Lauder',   logo: '/Images/Clients%20Logos/Estee%20Lauder.png' },
+  { name: 'Gucci',          logo: '/Images/Clients%20Logos/Gucci.png' },
+  { name: 'Huawei',         logo: '/Images/Clients%20Logos/Huawei.png' },
+  { name: 'Honor',          logo: '/Images/Clients%20Logos/Honor.png' },
+  { name: 'P&G',            logo: '/Images/Clients%20Logos/PG.png' },
+  { name: 'Sanofi',         logo: '/Images/Clients%20Logos/Sanofi.png' },
+  { name: 'Danone',         logo: '/Images/Clients%20Logos/Danone.png' },
+  { name: 'Heineken',       logo: '/Images/Clients%20Logos/Heineken.png' },
+  { name: 'Bacardi',        logo: '/Images/Clients%20Logos/Bacardi.png' },
+  { name: 'Martini',        logo: '/Images/Clients%20Logos/martini.png' },
+  { name: 'Lavazza',        logo: '/Images/Clients%20Logos/Lavazza.png' },
+  { name: 'Nescafé',        logo: '/Images/Clients%20Logos/Nescaf%C3%A9.png' },
+  { name: 'Costa Coffee',   logo: '/Images/Clients%20Logos/Costa.png' },
+  { name: 'Ferrero',        logo: '/Images/Clients%20Logos/Ferrero.png' },
+  { name: 'Kraft Heinz',    logo: '/Images/Clients%20Logos/KraftHeinz.png' },
+  { name: 'Maltesers',      logo: '/Images/Clients%20Logos/maltesers.png' },
+  { name: 'Kerry',          logo: '/Images/Clients%20Logos/Kerry.png' },
+  { name: 'Valio',          logo: '/Images/Clients%20Logos/Valio.png' },
+  { name: 'a2 Milk',        logo: '/Images/Clients%20Logos/a2.png' },
+  { name: 'Langnese',       logo: '/Images/Clients%20Logos/Langnese_International_Logo_v2.svg' },
+  { name: 'Marriott',       logo: '/Images/Clients%20Logos/Marriot.png' },
+  { name: 'Cigna',          logo: '/Images/Clients%20Logos/Cigna.png' },
+  { name: 'Electrolux',     logo: '/Images/Clients%20Logos/Electrolux.png' },
+  { name: 'Viessmann',      logo: '/Images/Clients%20Logos/Viessman.png' },
+  { name: 'Chery',          logo: '/Images/Clients%20Logos/Chery.png' },
+  { name: 'JAC Motors',     logo: '/Images/Clients%20Logos/JAC.png' },
+  { name: 'Bowers & Wilkins', logo: '/Images/Clients%20Logos/Bowers.png' },
+  { name: 'iGuzzini',       logo: '/Images/Clients%20Logos/iGuzzini.png' },
+  { name: 'Pigeon',         logo: '/Images/Clients%20Logos/Pigeon.png' },
+  { name: 'Pilot',          logo: '/Images/Clients%20Logos/Pilot.png' },
+  { name: 'Eucerin',        logo: '/Images/Clients%20Logos/Eucerin.png' },
+  { name: 'RoC',            logo: '/Images/Clients%20Logos/Roc.png' },
+  { name: 'Shu Uemura',     logo: '/Images/Clients%20Logos/Shu.png' },
+  { name: 'Age 20’s',  logo: '/Images/Clients%20Logos/Age20.png' },
+  { name: 'Codex Beauty',   logo: '/Images/Clients%20Logos/Codex.png' },
+  { name: 'Skarlett Blue',  logo: '/Images/Clients%20Logos/Skarlett%20Blue.png' },
+  { name: 'Magpie',         logo: '/Images/Clients%20Logos/MagPie.png' },
+  { name: 'Macusee',        logo: '/Images/Clients%20Logos/Logo-Macusee.png' },
+  { name: 'Zeinley',        logo: '/Images/Clients%20Logos/Zeinley.png' },
+  { name: 'Mission',        logo: '/Images/Clients%20Logos/Mission.png' },
+  { name: 'Russell',        logo: '/Images/Clients%20Logos/Russell.png' },
+  { name: 'BO',             logo: '/Images/Clients%20Logos/BO.png' },
+  { name: 'Blue',           logo: '/Images/Clients%20Logos/Blue.png' },
+];
+
+const halfIndex = Math.ceil(clients.length / 2);
+const clientsRowA = clients.slice(0, halfIndex);
+const clientsRowB = clients.slice(halfIndex);
+
+
+const speakingPhotos = [
+  '/Images/public-speaking/17b417b78e0a412bc58482b29ac8c6b.jpg',
+  '/Images/public-speaking/2510bca44deb48662fe871daf352150.jpg',
+  '/Images/public-speaking/2cf7dc73b6b0607d091bb88345e2af4.jpg',
+  '/Images/public-speaking/30760687b937fdc6fc6282706ce33e6.jpg',
+  '/Images/public-speaking/3bfe852ab85b61983e9f73cce64b2d7.jpg',
+  '/Images/public-speaking/3ec623820f67897bd46fea0652b4f40.jpg',
+  '/Images/public-speaking/6a3fce1f13b87e49429c6cf714c185f.jpg',
+  '/Images/public-speaking/6bbe316a504cacfcd3da13119781248.jpg',
+  '/Images/public-speaking/8291cc6eb2c5c3887ec3f0284505826.jpg',
+  '/Images/public-speaking/91854fc184b0bcb61e69ef03c837f15.jpg',
+  '/Images/public-speaking/96390c72ecabe65fdf238625699be42.jpg',
+  '/Images/public-speaking/bba6b17ae88dbb9fbca5d27248ec6a1.jpg',
+  '/Images/public-speaking/e0f5ca19ebdf2bc28529b0294d14b36.jpg',
+  '/Images/public-speaking/ed3e093e6adf981738fa10761a936fd.jpg',
+];
+---
+
+<Layout
+  title="Qui nous sommes | Beyond Border Group"
+  description="Anciens cadres dirigeants de Publicis. Quinze années passées à développer des marques internationales sur le marché chinois. Stratégie et exécution dans la même équipe, portées par les mêmes seniors."
+>
+
+  {/* ---------- SCROLL PROGRESS ---------- */}
+  <div class="home-progress" aria-hidden="true"><div class="home-progress__bar"></div></div>
+
+  {/* ---------- HERO ---------- */}
+  <section class="home-hero about-hero" data-home-hero>
+    <div class="home-hero__bg" aria-hidden="true" data-home-parallax>
+      <img
+        src="/Images/team/china-office.png"
+        alt=""
+        width="1376"
+        height="768"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </div>
+    <div class="home-hero__overlay" aria-hidden="true"></div>
+    <div class="home-hero__grain" aria-hidden="true"></div>
+
+    <div class="container home-hero__inner">
+      <span class="eyebrow eyebrow--on-dark home-reveal">Qui nous sommes</span>
+      <h1 class="home-hero__title home-reveal" style="--reveal-delay: 80ms;">
+        <span class="home-hero__title-row">Nous conduisons votre croissance en Chine.</span>
+        <span class="home-hero__title-row home-hero__title-row--accent">Le conseil constitue la part aisée.</span>
+        <span class="home-hero__title-row home-hero__title-row--highlight">L'exécution fait le métier.</span>
+      </h1>
+      <p class="home-hero__lead home-reveal" style="--reveal-delay: 200ms;">
+        Quinze années à faire émerger des marques en Chine sous les couleurs de
+        Publicis. Désormais sous les vôtres. Une stratégie privée d'exécution
+        n'est qu'un PowerPoint facturé au prix fort.
+      </p>
+      <div class="home-hero__actions home-reveal" style="--reveal-delay: 280ms;">
+        <a class="btn btn--primary home-magnetic" href="/fr/contact">Prendre contact</a>
+        <a class="btn btn--ghost-light home-magnetic" href="#leadership">Découvrir l'équipe</a>
+      </div>
+
+      <div class="home-hero__meta home-reveal" style="--reveal-delay: 360ms;">
+        <div class="home-hero__meta-item">
+          <span class="home-hero__meta-num" data-home-counter="15" data-suffix="+">0</span>
+          <span class="home-hero__meta-label">années en Chine</span>
+        </div>
+        <div class="home-hero__meta-item">
+          <span class="home-hero__meta-num" data-home-counter="60" data-suffix="+">0</span>
+          <span class="home-hero__meta-label">marques accompagnées</span>
+        </div>
+        <div class="home-hero__meta-item">
+          <span class="home-hero__meta-num" data-home-counter="100" data-suffix="+">0</span>
+          <span class="home-hero__meta-label">campagnes livrées</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#leadership" class="home-hero__scroll" aria-label="Aller à la section équipe">
+      <span class="home-hero__scroll-line"></span>
+      <span class="home-hero__scroll-text">Défiler</span>
+    </a>
+  </section>
+
+  {/* ---------- WHY WE EXIST ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <div class="about-split">
+        <div class="about-split__copy">
+          <span class="eyebrow">Notre raison d'être</span>
+          <h2>L'expérience que Google ne saurait livrer.</h2>
+          <p class="lead">
+            Beyond Border Group a été fondé par d'anciens cadres dirigeants de
+            Publicis. Quinze années passées derrière les tableaux de bord
+            Tmall, dans les studios Douyin et les arrière-boutiques des
+            distributeurs. À mille lieues d'une salle de conseil.
+          </p>
+          <p>
+            Partout, le même scénario : des marques payaient cher une stratégie
+            chinoise ciselée, puis voyaient des équipes juniors saboter la mise
+            en œuvre. Des présentations soignées, des résultats en demi-teinte.
+          </p>
+          <p>
+            Nous avons donc bâti autre chose. Le plan, nous le rédigeons. Le
+            plan, nous l'exécutons. Les mêmes seniors, du premier atelier à la
+            revue trimestrielle. Personne à qui transmettre le dossier.
+            Personne d'autre à incriminer lorsque la conjoncture se durcit.
+          </p>
+        </div>
+
+        <aside class="about-signature" aria-label="Signature de Cyril Drouin, fondateur">
+          <figure>
+            <img
+              src="/Images/team/Cyril-Drouin-Signature-Transparent.png"
+              alt="Signature de Cyril Drouin, fondateur de Beyond Border Group"
+              loading="lazy"
+              decoding="async"
+              width="512"
+              height="280"
+            />
+            <figcaption>
+              <strong>Cyril Drouin</strong>
+              <span>Fondateur et président, Beyond Border Group</span>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- LEADERSHIP ---------- */}
+  <section id="leadership" class="section">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">La direction</span>
+        <h2>Le marketing chinois, nous l'avons appris en y lançant des marques.</h2>
+        <p class="lead">
+          Anciens directeurs en agence 4A, également garants de P&L,
+          interlocuteurs des plateformes, signataires des budgets. Trois
+          opérationnels, une équipe, un seul interlocuteur.
+        </p>
+      </header>
+
+      <div class="grid grid-3 team-grid">
+        {team.map((t) => (
+          <article class="team-card">
+            <div class="team-card__photo">
+              <img
+                src={t.photo}
+                alt={`${t.name}, ${t.role}`}
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="480"
+              />
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">{t.name}</h3>
+              <span class="team-card__role">{t.role}</span>
+              <span class="team-card__base">{t.base}</span>
+              <p>{t.bio}</p>
+
+              <ul class="team-card__links" aria-label={`Profils de ${t.name}`}>
+                {t.linkedin && (
+                  <li>
+                    <a href={t.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${t.name} sur LinkedIn`}>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.82H5.67v8.52h2.67zm-1.33-9.7a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.66c0-2.5-1.34-3.66-3.12-3.66a2.7 2.7 0 0 0-2.44 1.34h-.04V9.82h-2.56v8.52h2.67v-4.22c0-1.11.21-2.18 1.59-2.18s1.38 1.27 1.38 2.25v4.15h2.52z"/>
+                      </svg>
+                    </a>
+                  </li>
+                )}
+                {t.twitter && (
+                  <li>
+                    <a href={t.twitter} target="_blank" rel="noopener noreferrer" aria-label={`${t.name} sur X / Twitter`}>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                      </svg>
+                    </a>
+                  </li>
+                )}
+                {t.substack && (
+                  <li>
+                    <a href={t.substack} target="_blank" rel="noopener noreferrer" aria-label={`${t.name} sur Substack`}>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+                      </svg>
+                    </a>
+                  </li>
+                )}
+              </ul>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- STRATEGIC LEADERSHIP / CREDENTIALS ---------- */}
+  <section class="section section--alt creds" data-creds-root>
+    <div class="creds__decor" aria-hidden="true">
+      <span class="creds__decor-rule"></span>
+      <span class="creds__decor-rule"></span>
+    </div>
+
+    <div class="container">
+      <header class="section-header creds__header" data-creds-reveal>
+        <span class="eyebrow"><span class="creds__eyebrow-bar" aria-hidden="true"></span>Direction stratégique, exécution opérationnelle</span>
+        <h2>Chacun d'entre nous cumule quinze années dans le marketing, le digital et l'eCommerce chinois.</h2>
+        <p class="lead creds__lead">
+          Nous rédigions les présentations stratégiques. Nous étions présents
+          dans la salle le jour où elles étaient validées. Nous livrions le
+          travail le lundi suivant. Voici ce que cela vous apporte concrètement.
+        </p>
+      </header>
+
+      <div class="creds__stage" data-creds data-creds-reveal>
+        <div class="cred-feature" data-feature>
+          {credentials.map((c, i) => (
+            <article
+              class={`cred-feature__slide${i === 0 ? ' is-active' : ''}`}
+              data-slide={i}
+              aria-hidden={i === 0 ? 'false' : 'true'}
+            >
+              <figure class="cred-feature__visual">
+                <img src={c.image} alt="" loading={i === 0 ? 'eager' : 'lazy'} decoding="async" />
+                <span class="cred-feature__chip" aria-hidden="true">{c.title}</span>
+              </figure>
+              <div class="cred-feature__body">
+                <span class="cred-feature__eyebrow">Ce que cela change</span>
+                <h3 class="cred-feature__title">{c.title}</h3>
+                <p class="cred-feature__copy">{c.body}</p>
+              </div>
+            </article>
+          ))}
+          <div class="cred-feature__progress" aria-hidden="true"><span></span></div>
+        </div>
+
+        <ol class="cred-rail" role="tablist" aria-label="Atouts stratégiques">
+          {credentials.map((c, i) => (
+            <li class="cred-rail__item">
+              <button
+                class={`cred-thumb${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                type="button"
+                data-thumb={i}
+                aria-selected={i === 0 ? 'true' : 'false'}
+              >
+                <span class="cred-thumb__visual" aria-hidden="true">
+                  <img src={c.image} alt="" loading="lazy" decoding="async" />
+                </span>
+                <span class="cred-thumb__title">{c.title}</span>
+                <span class="cred-thumb__arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </button>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- WHAT MAKES US DIFFERENT ---------- */}
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Ce qui nous distingue</span>
+        <h2>Six règles auxquelles nous ne dérogerons pas.</h2>
+      </header>
+
+      <div class="grid grid-3 principles">
+        {principles.map((p) => (
+          <article class="card principle">
+            <div class="principle__head">
+              <span class="principle__icon" aria-hidden="true" set:html={principleIcon[p.icon]} />
+            </div>
+            <h3 class="card__title">{p.title}</h3>
+            <p>{p.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- CLIENTS / PROOF ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">Avec qui nous travaillons</span>
+        <h2>Le travail en chiffres.</h2>
+      </header>
+
+      <div class="proof-metrics">
+        {metrics.map((m) => (
+          <div class="proof-metric">
+            <span class="proof-metric__value" data-counter data-target={m.target}>
+              <span class="proof-metric__num">{m.target}</span><span class="proof-metric__suffix">{m.suffix}</span>
+            </span>
+            <span class="proof-metric__label">{m.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="client-ticker" role="region" aria-label="Quelques marques que nous avons accompagnées">
+      <div class="client-ticker__row">
+        <div class="client-ticker__track">
+          {clientsRowA.map((c) => (
+            <div class="client-ticker__item">
+              <img src={c.logo} alt={c.name} loading="lazy" decoding="async" />
+            </div>
+          ))}
+          {clientsRowA.map((c) => (
+            <div class="client-ticker__item" aria-hidden="true">
+              <img src={c.logo} alt="" loading="lazy" decoding="async" />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="client-ticker__row client-ticker__row--reverse">
+        <div class="client-ticker__track">
+          {clientsRowB.map((c) => (
+            <div class="client-ticker__item">
+              <img src={c.logo} alt={c.name} loading="lazy" decoding="async" />
+            </div>
+          ))}
+          {clientsRowB.map((c) => (
+            <div class="client-ticker__item" aria-hidden="true">
+              <img src={c.logo} alt="" loading="lazy" decoding="async" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="proof-note">
+        Des marques internationales et chinoises, dans la beauté,
+        l'agroalimentaire, la mode, l'automobile et la technologie.
+      </p>
+    </div>
+  </section>
+
+  {/* ---------- RECOGNITION / SLIDER ---------- */}
+  <section class="section section--tight speaking" data-speak-root>
+    <div class="container">
+      <header class="speaking__header" data-speak-reveal>
+        <span class="eyebrow"><span class="creds__eyebrow-bar" aria-hidden="true"></span>La reconnaissance du secteur</span>
+        <h2 class="speaking__title">Conviés là où la Chine se discute.</h2>
+        <p class="lead speaking__lead">
+          Sommets de marques, conférences de plateformes, chambres de
+          commerce. Des tribunes à Shanghai, Paris, New York. Le plus souvent
+          parce que l'organisateur ne dispose plus de profils ayant
+          véritablement livré le travail.
+          <a href="/fr/decryptages">Lire nos analyses.</a>
+        </p>
+        <div class="speaking__meta" aria-hidden="true">
+          <span class="speaking__meta-item">Shanghai</span>
+          <span class="speaking__meta-dot"></span>
+          <span class="speaking__meta-item">Paris</span>
+          <span class="speaking__meta-dot"></span>
+          <span class="speaking__meta-item">New York</span>
+          <span class="speaking__meta-dot"></span>
+          <span class="speaking__meta-item">Hong Kong</span>
+          <span class="speaking__meta-dot"></span>
+          <span class="speaking__meta-item">Singapour</span>
+        </div>
+      </header>
+    </div>
+
+    <div class="speaking__wrap" data-speak-reveal>
+      <div class="speak-ticker" role="region" aria-label="Interventions publiques">
+        <div class="speak-ticker__row">
+          <div class="speak-ticker__track">
+            {speakingPhotos.map((src) => (
+              <figure class="speak-ticker__item">
+                <img src={src} alt="" loading="lazy" decoding="async" />
+              </figure>
+            ))}
+            {speakingPhotos.map((src) => (
+              <figure class="speak-ticker__item" aria-hidden="true">
+                <img src={src} alt="" loading="lazy" decoding="async" />
+              </figure>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- CLOSING CTA ---------- */}
+  <section class="section section--dark cta cta-team">
+    <div class="cta-team__bg" aria-hidden="true">
+      <img
+        src="/Images/team/team-photo.png"
+        alt=""
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <div class="cta-team__overlay" aria-hidden="true"></div>
+
+    <div class="container text-center cta-team__inner">
+      <span class="eyebrow">Prendre contact</span>
+      <h2>Un projet d'expansion en Chine ?</h2>
+      <p class="lead cta__lead">
+        Indiquez-nous où vous en êtes et où vous souhaitez parvenir. Un
+        associé senior vous répond sous un jour ouvré. Pas un message type
+        signé d'un robot d'accueil.
+      </p>
+      <a href="/fr/contact" class="btn btn--primary">Prendre contact</a>
+    </div>
+  </section>
+
+  <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const revealEls = document.querySelectorAll('.home-hero .home-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      const counters = document.querySelectorAll('[data-home-counter]');
+      if (counters.length && !reduced && 'IntersectionObserver' in window) {
+        const animate = (el) => {
+          const target = parseFloat(el.dataset.homeCounter || '0');
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(target * eased);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        };
+        const counterIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((el) => counterIo.observe(el));
+      } else {
+        counters.forEach((el) => {
+          el.textContent = (el.dataset.homeCounter || '0') + (el.dataset.suffix || '');
+        });
+      }
+
+      const parallaxImg = document.querySelector('[data-home-parallax] img');
+      const heroEl = document.querySelector('[data-home-hero]');
+      const progressEl = document.querySelector('.home-progress__bar');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          if (parallaxImg && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxImg.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      const scrollLink = document.querySelector('.home-hero__scroll');
+      if (scrollLink) {
+        scrollLink.addEventListener('click', (e) => {
+          const id = scrollLink.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      }
+    })();
+  </script>
+
+  <script is:inline>
+    (function () {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ---- Counter animation ---- */
+      const counters = document.querySelectorAll('[data-counter]');
+      const animateCounter = (numEl, target) => {
+        if (reduced) { numEl.textContent = target.toString(); return; }
+        const duration = 1600;
+        const start = performance.now();
+        const tick = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          numEl.textContent = Math.round(target * eased).toString();
+          if (progress < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = parseInt(el.dataset.target, 10);
+          const numEl = el.querySelector('.proof-metric__num');
+          if (!Number.isFinite(target) || !numEl) return;
+          numEl.textContent = reduced ? target.toString() : '0';
+          animateCounter(numEl, target);
+          counterObserver.unobserve(el);
+        });
+      }, { threshold: 0.35 });
+      counters.forEach((el) => counterObserver.observe(el));
+
+      /* ---- Credentials rotator ---- */
+      const credsRoot = document.querySelector('[data-creds]');
+      if (credsRoot) {
+        const slides = credsRoot.querySelectorAll('.cred-feature__slide');
+        const thumbs = credsRoot.querySelectorAll('.cred-thumb');
+        const progress = credsRoot.querySelector('.cred-feature__progress span');
+        const ROTATE_MS = 7000;
+        let activeIdx = 0;
+        let timerStart = 0;
+        let paused = false;
+        let started = false;
+
+        const activate = (idx) => {
+          activeIdx = idx;
+          slides.forEach((s, i) => {
+            const on = i === idx;
+            s.classList.toggle('is-active', on);
+            s.setAttribute('aria-hidden', on ? 'false' : 'true');
+          });
+          thumbs.forEach((t, i) => {
+            const on = i === idx;
+            t.classList.toggle('is-active', on);
+            t.setAttribute('aria-selected', on ? 'true' : 'false');
+          });
+          timerStart = performance.now();
+          if (progress) progress.style.width = '0%';
+        };
+
+        const tick = (now) => {
+          if (paused) { requestAnimationFrame(tick); return; }
+          const elapsed = now - timerStart;
+          if (progress) progress.style.width = Math.min(100, (elapsed / ROTATE_MS) * 100) + '%';
+          if (elapsed >= ROTATE_MS) {
+            activate((activeIdx + 1) % slides.length);
+          }
+          requestAnimationFrame(tick);
+        };
+
+        thumbs.forEach((t, i) => {
+          t.addEventListener('click', () => activate(i));
+          t.addEventListener('mouseenter', () => { paused = true; activate(i); });
+          t.addEventListener('mouseleave', () => { paused = false; });
+          t.addEventListener('focus', () => { paused = true; activate(i); });
+          t.addEventListener('blur', () => { paused = false; });
+        });
+
+        credsRoot.addEventListener('keydown', (e) => {
+          if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+          const next = e.key === 'ArrowRight'
+            ? (activeIdx + 1) % slides.length
+            : (activeIdx - 1 + slides.length) % slides.length;
+          activate(next);
+          const target = thumbs[next];
+          if (target instanceof HTMLElement) target.focus();
+          e.preventDefault();
+        });
+
+        if (!reduced) {
+          const startObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting || started) return;
+              started = true;
+              timerStart = performance.now();
+              requestAnimationFrame(tick);
+              startObserver.unobserve(credsRoot);
+            });
+          }, { threshold: 0.2 });
+          startObserver.observe(credsRoot);
+        }
+      }
+
+      /* ---- Reveal on scroll (scoped) ---- */
+      const credsReveals = document.querySelectorAll('[data-creds-reveal]');
+      if (credsReveals.length) {
+        if (reduced) {
+          credsReveals.forEach((el) => el.classList.add('is-revealed'));
+        } else {
+          const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add('is-revealed');
+              revealObserver.unobserve(entry.target);
+            });
+          }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+          credsReveals.forEach((el) => revealObserver.observe(el));
+        }
+      }
+
+      /* ---- Speak reveals ---- */
+      const speakReveals = document.querySelectorAll('[data-speak-reveal]');
+      if (speakReveals.length) {
+        if (reduced) {
+          speakReveals.forEach((el) => el.classList.add('is-revealed'));
+        } else {
+          const speakObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add('is-revealed');
+              speakObserver.unobserve(entry.target);
+            });
+          }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+          speakReveals.forEach((el) => speakObserver.observe(el));
+        }
+      }
+    })();
+  </script>
+
+</Layout>
+
+<style>
+  /* ---------- Scroll progress bar ---------- */
+  :global(.home-progress) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 1000;
+    background: transparent;
+    pointer-events: none;
+  }
+  :global(.home-progress__bar) {
+    height: 100%;
+    width: var(--progress, 0%);
+    background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+    box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+    transition: width 80ms linear;
+  }
+
+  /* ---------- Home hero (shared layout with index.astro) ---------- */
+  :global(.home-hero) {
+    position: relative;
+    min-height: clamp(520px, 78vh, 760px);
+    display: flex;
+    align-items: flex-start;
+    padding: clamp(8px, 1.25vh, 16px) 0 clamp(64px, 9vh, 104px);
+    color: var(--bbg-white);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  :global(body:has(.home-hero)) :global(.home-hero) {
+    padding-top: clamp(140px, 14vh, 184px);
+  }
+  @media (max-width: 1024px) {
+    :global(body:has(.home-hero)) :global(.home-hero) {
+      padding-top: clamp(112px, 12vh, 140px);
+    }
+  }
+  :global(.home-hero__bg) { position: absolute; inset: -10% 0 0; z-index: -3; }
+  :global(.home-hero__bg img) {
+    display: block;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    object-position: center;
+    transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+    transition: transform 80ms linear;
+    filter: saturate(0.95);
+  }
+  :global(.home-hero__overlay) {
+    position: absolute; inset: 0; z-index: -2;
+    background:
+      linear-gradient(110deg,
+        rgba(8, 18, 28, 0.92) 0%,
+        rgba(8, 18, 28, 0.72) 42%,
+        rgba(8, 18, 28, 0.32) 100%),
+      radial-gradient(120% 80% at 0% 100%,
+        rgba(38, 154, 218, 0.28) 0%,
+        rgba(38, 154, 218, 0) 60%);
+  }
+  :global(.home-hero__grain) {
+    position: absolute; inset: 0; z-index: -1;
+    background-image:
+      radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 3px 3px;
+    mix-blend-mode: overlay;
+    opacity: 0.45;
+    pointer-events: none;
+  }
+  :global(.home-hero__inner) { max-width: 980px; position: relative; }
+  :global(.home-hero__inner .eyebrow--on-dark) {
+    display: inline-block;
+    margin-bottom: var(--space-3);
+    color: #9DDBF5;
+  }
+  :global(.home-hero__title) {
+    font-size: clamp(2.25rem, 4vw + 1rem, 4.25rem);
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+    color: var(--bbg-white);
+    margin: 0 0 var(--space-4);
+    max-width: 24ch;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 0.05em;
+  }
+  :global(.home-hero__title-row) { display: block; }
+  :global(.home-hero__title-row--accent) {
+    color: #9DDBF5;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: -0.018em;
+  }
+  :global(.home-hero__title-row--highlight) {
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0 0.15em;
+  }
+  :global(.home-hero__title-row--highlight::before) {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.04em;
+    height: 0.18em;
+    background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+    border-radius: 2px;
+    transform-origin: left center;
+    animation: about-home-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+    z-index: -1;
+  }
+  @keyframes about-home-underline {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+  :global(.home-hero__lead) {
+    font-size: clamp(1.0625rem, 0.5vw + 1rem, 1.25rem);
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.86);
+    max-width: 58ch;
+    margin: 0 0 var(--space-5);
+  }
+  :global(.home-hero__actions) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+  }
+
+  :global(.home-hero__meta) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(var(--space-4), 4vw, var(--space-7));
+    padding-top: var(--space-5);
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    max-width: 760px;
+  }
+  :global(.home-hero__meta-item) { display: flex; flex-direction: column; gap: 0.2rem; }
+  :global(.home-hero__meta-num) {
+    font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--bbg-white);
+    font-feature-settings: "tnum";
+  }
+  :global(.home-hero__meta-label) {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.66);
+    letter-spacing: 0.02em;
+  }
+
+  :global(.home-hero__scroll) {
+    position: absolute;
+    bottom: var(--space-5);
+    right: clamp(var(--space-5), 4vw, var(--space-7));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 200ms ease;
+  }
+  :global(.home-hero__scroll:hover) { color: var(--bbg-white); }
+  :global(.home-hero__scroll-line) {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  :global(.home-hero__scroll-line::after) {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+    animation: about-home-scroll-tick 1.8s ease-in-out infinite;
+  }
+  @keyframes about-home-scroll-tick {
+    0% { top: -50%; }
+    100% { top: 100%; }
+  }
+  @media (max-width: 720px) {
+    :global(.home-hero__scroll) { display: none; }
+    :global(.home-hero__meta) { gap: var(--space-4); }
+  }
+
+  /* Reveal motion + magnetic hover (scoped to hero) */
+  @media (prefers-reduced-motion: no-preference) {
+    :global(.home-hero .home-reveal) {
+      opacity: 0;
+      transform: translateY(16px);
+      transition:
+        opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+        transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+    }
+    :global(.home-hero .home-reveal.is-in) {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    :global(.home-hero .home-magnetic) {
+      will-change: transform;
+      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                  box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+    }
+    :global(.home-hero .home-magnetic:hover) { transform: translateY(-2px); }
+  }
+
+  /* ---------- Why we exist: split with signature ---------- */
+  .about-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: var(--space-7);
+    align-items: center;
+  }
+  .about-split__copy { max-width: 62ch; }
+
+  .about-signature {
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+    border-left: 3px solid var(--bbg-blue);
+  }
+  .about-signature figure { margin: 0; }
+  .about-signature img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 360px;
+    margin: 0 auto var(--space-4);
+  }
+  .about-signature figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--bbg-border);
+    text-align: center;
+  }
+  .about-signature figcaption strong {
+    color: var(--bbg-ink);
+    font-weight: 600;
+    font-size: var(--fs-body);
+  }
+  .about-signature figcaption span {
+    color: var(--bbg-text-muted);
+    font-size: var(--fs-small);
+  }
+
+  @media (max-width: 1024px) {
+    .about-split { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Team cards ---------- */
+  .team-grid { gap: var(--space-6); }
+  .team-card {
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+  .team-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--bbg-blue);
+    box-shadow: var(--shadow-md);
+  }
+  .team-card__photo {
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: var(--bbg-surface);
+  }
+  .team-card__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 400ms var(--ease);
+  }
+  .team-card:hover .team-card__photo img { transform: scale(1.03); }
+
+  .team-card__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+  .team-card__name {
+    font-size: var(--fs-h3);
+    margin-bottom: 2px;
+    color: var(--bbg-ink);
+  }
+  .team-card__role {
+    display: block;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--bbg-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 2px;
+  }
+  .team-card__base {
+    display: block;
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    margin-bottom: var(--space-4);
+  }
+  .team-card__body p {
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    margin-bottom: var(--space-4);
+  }
+
+  .team-card__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: var(--space-3);
+  }
+  .team-card__links a {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+    transition: background var(--dur) var(--ease), color var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+  .team-card__links a:hover {
+    background: var(--bbg-blue);
+    color: var(--bbg-white);
+    transform: translateY(-2px);
+  }
+  .team-card__links svg { width: 16px; height: 16px; }
+
+  /* ============================================================
+     Strategic leadership / Credentials rotator
+     ============================================================ */
+  .creds {
+    position: relative;
+    overflow: hidden;
+  }
+  .creds__decor {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .creds__decor-rule {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.06) 30%, rgba(0, 0, 0, 0.06) 70%, transparent 100%);
+  }
+  .creds__decor-rule:nth-child(1) { left: 12%; }
+  .creds__decor-rule:nth-child(2) { right: 12%; }
+
+  .creds__header { max-width: 880px; }
+  .creds__eyebrow-bar {
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background: var(--bbg-blue);
+    vertical-align: middle;
+    margin-right: var(--space-2);
+  }
+  .creds__lead {
+    color: var(--bbg-text-muted);
+    margin-top: var(--space-3);
+    max-width: 60ch;
+  }
+
+  /* Scroll reveal scoped to credentials */
+  [data-creds-reveal] {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+    transition: opacity 650ms var(--ease), transform 650ms var(--ease);
+  }
+  [data-creds-reveal].is-revealed {
+    opacity: 1;
+    transform: none;
+  }
+
+  .creds__stage {
+    position: relative;
+    margin-top: var(--space-7);
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: var(--space-5);
+  }
+
+  /* ---- Featured slide panel ---- */
+  .cred-feature {
+    position: relative;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    min-height: 460px;
+    isolation: isolate;
+  }
+  .cred-feature__slide {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.01);
+    transition: opacity 600ms var(--ease), transform 800ms var(--ease), visibility 600ms;
+    pointer-events: none;
+  }
+  .cred-feature__slide.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    pointer-events: auto;
+    z-index: 1;
+  }
+  .cred-feature__visual {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    background: var(--bbg-surface);
+  }
+  .cred-feature__visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transform: scale(1.04);
+    transition: transform 9s linear;
+  }
+  .cred-feature__slide.is-active .cred-feature__visual img {
+    transform: scale(1.12);
+  }
+  .cred-feature__visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 55%, rgba(255, 255, 255, 0.6) 100%);
+    pointer-events: none;
+  }
+  .cred-feature__chip {
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-4);
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(8, 14, 24, 0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: var(--bbg-white);
+    font-size: var(--fs-label);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 2;
+  }
+  .cred-feature__body {
+    padding: clamp(var(--space-5), 3.5vw, var(--space-7));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+  .cred-feature__eyebrow {
+    font-size: var(--fs-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: var(--bbg-blue);
+  }
+  .cred-feature__title {
+    font-size: clamp(1.5rem, 1.4vw + 0.9rem, 2.1rem);
+    line-height: 1.15;
+    margin: 0;
+    color: var(--bbg-ink);
+  }
+  .cred-feature__copy {
+    color: var(--bbg-text);
+    line-height: 1.65;
+    margin: 0;
+  }
+  .cred-feature__progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgba(38, 154, 218, 0.10);
+    z-index: 3;
+  }
+  .cred-feature__progress span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--bbg-blue), #8FD0F2);
+    transition: width 100ms linear;
+  }
+
+  /* ---- Thumbnail rail ---- */
+  .cred-rail {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--space-3);
+  }
+  .cred-rail__item { display: flex; }
+  .cred-thumb {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+    color: var(--bbg-ink);
+    transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), background var(--dur) var(--ease);
+  }
+  .cred-thumb:hover {
+    border-color: var(--bbg-blue);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+  }
+  .cred-thumb.is-active {
+    border-color: var(--bbg-blue);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+    background: linear-gradient(180deg, var(--bbg-white) 0%, var(--bbg-blue-light) 100%);
+  }
+  .cred-thumb__visual {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+    background: var(--bbg-surface);
+    border: 1px solid var(--bbg-border);
+  }
+  .cred-thumb__visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.85);
+    transition: filter var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+  .cred-thumb:hover .cred-thumb__visual img,
+  .cred-thumb.is-active .cred-thumb__visual img {
+    filter: saturate(1.05);
+    transform: scale(1.04);
+  }
+  .cred-thumb__title {
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--bbg-ink);
+    line-height: 1.35;
+  }
+  .cred-thumb__arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgba(0, 0, 0, 0.3);
+    transition: color var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+  .cred-thumb__arrow svg { width: 16px; height: 16px; }
+  .cred-thumb:hover .cred-thumb__arrow,
+  .cred-thumb.is-active .cred-thumb__arrow {
+    color: var(--bbg-blue);
+    transform: translateX(3px);
+  }
+
+  @media (max-width: 1024px) {
+    .cred-rail { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+  @media (max-width: 720px) {
+    .cred-feature { min-height: auto; }
+    .cred-feature__slide {
+      position: relative;
+      grid-template-columns: 1fr;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      pointer-events: auto;
+      display: none;
+    }
+    .cred-feature__slide.is-active { display: grid; }
+    .cred-feature__visual { aspect-ratio: 16 / 10; }
+    .cred-feature__visual img { transform: none; }
+    .cred-feature__slide.is-active .cred-feature__visual img { transform: none; }
+    .cred-rail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-creds-reveal] { opacity: 1; transform: none; transition: none; }
+    .cred-feature__visual img,
+    .cred-feature__slide.is-active .cred-feature__visual img { transform: none !important; transition: none !important; }
+    .cred-feature__slide { transition: opacity 200ms linear, visibility 200ms; transform: none; }
+    .cred-feature__progress span { transition: none; }
+  }
+
+  /* ---------- Principles ---------- */
+  .principles { gap: var(--space-5); }
+  .principle {
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+  }
+  .principle__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-5);
+  }
+  .principle__icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+    transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+  }
+  .principle__icon svg {
+    width: 26px;
+    height: 26px;
+    display: block;
+  }
+  .principle:hover .principle__icon {
+    background: var(--bbg-blue);
+    color: var(--bbg-white);
+  }
+
+  /* (hub Studio styles moved to /grow-in-china/production-studio.astro) */
+
+  /* ---------- Proof / Clients ---------- */
+  .proof-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-5);
+    margin-bottom: var(--space-7);
+    padding: var(--space-6);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+  }
+  .proof-metric { display: flex; flex-direction: column; gap: var(--space-2); text-align: center; }
+  .proof-metric__value {
+    font-size: clamp(2rem, 2.4vw + 1rem, 3rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--bbg-blue);
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .proof-metric__num { display: inline-block; }
+  .proof-metric__suffix { display: inline-block; }
+  .proof-metric__label {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    line-height: 1.4;
+  }
+
+  .client-ticker {
+    --ticker-logo-h: 64px;
+    --ticker-logo-w: 200px;
+    --ticker-gap: clamp(36px, 4.5vw, 72px);
+    --ticker-duration: 95s;
+    width: 100%;
+    margin: var(--space-5) 0 var(--space-4);
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%);
+  }
+  .client-ticker__row {
+    overflow: hidden;
+    padding-block: var(--space-3);
+  }
+
+  .client-ticker__track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: var(--ticker-gap);
+    animation: client-ticker-scroll var(--ticker-duration) linear infinite;
+    will-change: transform;
+  }
+  .client-ticker__row--reverse .client-ticker__track {
+    animation-direction: reverse;
+    animation-duration: calc(var(--ticker-duration) * 1.2);
+  }
+  .client-ticker:hover .client-ticker__track,
+  .client-ticker:focus-within .client-ticker__track {
+    animation-play-state: paused;
+  }
+
+  .client-ticker__item {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .client-ticker .client-ticker__item img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: var(--ticker-logo-h);
+    max-width: var(--ticker-logo-w);
+    object-fit: contain;
+    opacity: 0.5;
+    filter: grayscale(1);
+    transition: opacity var(--dur) var(--ease), filter var(--dur) var(--ease);
+  }
+  .client-ticker .client-ticker__item:hover img {
+    opacity: 1;
+    filter: grayscale(0);
+  }
+
+  @keyframes client-ticker-scroll {
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(calc(-50% - (var(--ticker-gap) / 2)), 0, 0); }
+  }
+
+  @media (max-width: 1024px) {
+    .client-ticker {
+      --ticker-logo-h: 52px;
+      --ticker-logo-w: 168px;
+    }
+  }
+  @media (max-width: 520px) {
+    .client-ticker {
+      --ticker-logo-h: 40px;
+      --ticker-logo-w: 132px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .client-ticker__track { animation: none; transform: none !important; }
+    .client-ticker {
+      -webkit-mask-image: none;
+              mask-image: none;
+      overflow-x: auto;
+    }
+  }
+
+  .proof-note {
+    text-align: center;
+    color: var(--bbg-text-muted);
+    font-size: var(--fs-small);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    .proof-metrics { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* ============================================================
+     Industry recognition / Speaking slider
+     ============================================================ */
+  .speaking { position: relative; }
+  .speaking__header { max-width: 820px; }
+  .speaking__title { margin-bottom: var(--space-4); }
+  .speaking__lead { color: var(--bbg-text); margin-bottom: var(--space-4); }
+  .speaking__lead a {
+    color: var(--bbg-blue);
+    border-bottom: 1px solid currentColor;
+  }
+  .speaking__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+    color: var(--bbg-text-muted);
+    font-size: var(--fs-small);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .speaking__meta-dot {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--bbg-blue);
+  }
+
+  /* Reveal scoped to speaking */
+  [data-speak-reveal] {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+    transition: opacity 700ms var(--ease), transform 700ms var(--ease);
+  }
+  [data-speak-reveal].is-revealed {
+    opacity: 1;
+    transform: none;
+  }
+
+  .speaking__wrap { margin-top: var(--space-7); }
+
+  /* ---- Ticker (two rows, opposite directions) ---- */
+  .speak-ticker {
+    --speak-row-h: clamp(180px, 22vw, 280px);
+    --speak-gap: clamp(16px, 1.8vw, 28px);
+    --speak-duration: 60s;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--speak-gap);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  }
+  .speak-ticker__row {
+    overflow: hidden;
+  }
+  .speak-ticker__track {
+    display: flex;
+    align-items: center;
+    gap: var(--speak-gap);
+    width: max-content;
+    animation: speak-ticker-scroll var(--speak-duration) linear infinite;
+    will-change: transform;
+  }
+  .speak-ticker:hover .speak-ticker__track,
+  .speak-ticker:focus-within .speak-ticker__track {
+    animation-play-state: paused;
+  }
+  .speak-ticker__item {
+    flex: 0 0 auto;
+    margin: 0;
+    height: var(--speak-row-h);
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    background: var(--bbg-surface);
+    border: 1px solid var(--bbg-border);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  }
+  .speak-ticker__item img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    object-fit: cover;
+    display: block;
+    transition: transform 500ms var(--ease), filter var(--dur) var(--ease);
+    filter: saturate(0.9);
+  }
+  .speak-ticker__item:hover {
+    border-color: var(--bbg-blue);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+  }
+  .speak-ticker__item:hover img {
+    transform: scale(1.04);
+    filter: saturate(1.05);
+  }
+
+  @keyframes speak-ticker-scroll {
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(calc(-50% - (var(--speak-gap) / 2)), 0, 0); }
+  }
+
+  @media (max-width: 720px) {
+    .speak-ticker { --speak-row-h: 160px; --speak-duration: 48s; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .speak-ticker__track { animation: none; transform: none !important; }
+    .speak-ticker {
+      -webkit-mask-image: none;
+              mask-image: none;
+      overflow-x: auto;
+    }
+    [data-speak-reveal] { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* ---------- CTA ---------- */
+  .cta .eyebrow { color: var(--bbg-blue); }
+  .cta__lead { max-width: 640px; margin-left: auto; margin-right: auto; color: var(--bbg-white); opacity: 0.9; }
+  .text-center { text-align: center; }
+
+  /* CTA with team photo background */
+  .cta-team { position: relative; overflow: hidden; isolation: isolate; }
+  .cta-team__bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+  }
+  .cta-team__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .cta-team__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.8) 100%);
+  }
+  .cta-team__inner { position: relative; }
+</style>

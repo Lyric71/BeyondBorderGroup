@@ -1,0 +1,3180 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const phaseIcons: Record<string, string> = {
+  diagnosis: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><line x1="20" y1="20" x2="15.5" y2="15.5"/></svg>`,
+  channel: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`,
+  benchmark: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><rect x="4" y="13" width="3" height="7"/><rect x="10" y="8" width="3" height="12"/><rect x="16" y="4" width="3" height="16"/></svg>`,
+  blueprint: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="20"/><line x1="13" y1="13" x2="17" y2="13"/><line x1="13" y1="16" x2="17" y2="16"/></svg>`,
+  handshake: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 13l2-2 4 4-2 2z"/><path d="M3 12l4-4 5 5"/><path d="M21 12l-4 4-5-5"/><path d="M7 8l5 5"/></svg>`,
+  check: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>`,
+};
+
+const promises = [
+  {
+    title: "Une base de partenaires que les concurrents n'ont pas",
+    desc: "BeyondCompass, c'est quinze ans de relations distributeurs validées dans la beauté, le F&B, la mode, le wellness et le pet. Vérifiées à la main, rencontrées en personne, tenues à jour. Pas grattées sur Alibaba.",
+  },
+  {
+    title: 'Aucune commission distributeur. Jamais.',
+    desc: "Vous nous payez sur la mission. Les distributeurs ne nous versent pas de frais d'apport. Cela garde notre intérêt aligné sur le bon partenaire, pas sur la signature la plus rapide.",
+  },
+  {
+    title: 'On reste après la signature',
+    desc: "La plupart des agences disparaissent une fois le contrat signé. Nous restons en gardien de marque, en équipe marketing ou en relais terrain. Ce que la mission demande.",
+  },
+];
+
+const phases = [
+  {
+    icon: 'blueprint',
+    phase: 'Phase 1',
+    duration: '1 à 2 semaines',
+    title: 'Brief et cadrage',
+    image: '/Images/enter-china/dist-phase-1-scoping.png',
+    imageAlt: "Un fondateur de marque étrangère et un consultant en distribution chinois passent en revue un brief catégorie dans une salle de réunion à Shanghai",
+    intro:
+      "On s'assoit avec vous pour définir la catégorie, le positionnement, les volumes, les marges et le profil de partenaire qui colle. Le brief qui ressort de cette réunion pilote tout ce qui suit.",
+    outcome: "Un brief catégorie écrit, signé des deux côtés, et un profil de partenaire clair.",
+    does: [
+      "Revue catégorie, volumes, SKU cibles, marges",
+      "Stratégie canaux et niveaux de villes",
+      "Définition du profil distributeur (taille, région, mix canal)",
+      "Point réglementaire (NMPA, SAMR) et impact calendrier",
+    ],
+    deliverables: [
+      { kind: 'doc', name: 'Brief catégorie et profil partenaire' },
+      { kind: 'sheet', name: 'Grille volumes cibles et pricing' },
+      { kind: 'report', name: 'Audit de conformité réglementaire' },
+    ],
+  },
+  {
+    icon: 'diagnosis',
+    phase: 'Phase 2',
+    duration: '2 à 3 semaines',
+    title: 'Longue liste depuis BeyondCompass',
+    image: '/Images/enter-china/dist-phase-2-longlist.png',
+    imageAlt: "Un consultant senior examine huit à douze profils de distributeurs sur son bureau et son ordinateur portable à Shanghai",
+    intro:
+      "On tire une longue liste de 8 à 12 candidats dans BeyondCompass, notre base partenaires. Des distributeurs que l'on connaît personnellement, rencontrés ces douze derniers mois, accréditations retail ou plateformes encore actives.",
+    outcome: 'Une longue liste de 8 à 12 noms qualifiés, chacun avec une fiche d\'une page.',
+    does: [
+      "Sélection des candidats dans BeyondCompass par catégorie et canal",
+      "Vérification des accréditations retail ou plateformes actives",
+      "Confirmation de l'adéquation catégorie, taille et appétit SKU",
+      "Mise à jour du dossier si un partenaire s'est mis en sommeil ce trimestre",
+    ],
+    deliverables: [
+      { kind: 'sheet', name: 'Longue liste avec fiches et niveau de contact' },
+      { kind: 'doc', name: "Notes d'adéquation catégorie par candidat" },
+      { kind: 'report', name: 'Carte de couverture par canal' },
+    ],
+  },
+  {
+    icon: 'benchmark',
+    phase: 'Phase 3',
+    duration: '3 à 4 semaines',
+    title: 'Shortlist, entretiens, due diligence',
+    image: '/Images/enter-china/dist-phase-3-shortlist.png',
+    imageAlt: "Un appel vidéo entre une équipe de marque étrangère et un distributeur chinois candidat, fiches shortlist imprimées sur le bureau",
+    intro:
+      "On resserre à trois à cinq finalistes, on pilote les appels avec vous, on traduit quand c'est utile, et on passe chacun au crible financier, juridique et références.",
+    outcome: 'Trois à cinq finalistes avec dossier de diligence complet, prêts à négocier.',
+    does: [
+      "Entretiens shortlist (on est de votre côté, traduction live)",
+      "Vérification financière et licences",
+      "Inspection entrepôt, logistique, comptes plateformes",
+      "Références croisées avec marques clientes actuelles et anciennes",
+      "Audit historique Tmall, JD, Douyin si pertinent",
+    ],
+    deliverables: [
+      { kind: 'deck', name: 'Book de comparaison shortlist (deck)' },
+      { kind: 'doc', name: 'Dossier de diligence par candidat' },
+      { kind: 'sheet', name: 'Offres commerciales côte à côte' },
+    ],
+  },
+  {
+    icon: 'handshake',
+    phase: 'Phase 4',
+    duration: 'Variable',
+    title: 'Négociation et signature',
+    image: '/Images/enter-china/dist-phase-4-negotiation.png',
+    imageAlt: "Un moment de négociation contractuelle entre deux parties autour d'une table de réunion dans un cabinet d'avocats à Shanghai",
+    intro:
+      "Territoire, exclusivité, prix, MOQ, modalités de paiement, contribution marketing, protection de marque, résiliation. On est à la table avec vous, en mandarin et en anglais, jusqu'à ce que le contrat tienne pour les deux camps.",
+    outcome: "Un contrat de distribution signé, opposable en justice. Et un plan de transition propre.",
+    does: [
+      "Rédaction du term sheet et négociation bilingue",
+      "Clauses d'exclusivité, de territoire et de répartition par canal",
+      "MOQ, modalités de paiement, contribution marketing fléchée",
+      "Clauses protection de marque, PI et résiliation",
+      "Plan de transition avec jalons des 90 premiers jours",
+    ],
+    deliverables: [
+      { kind: 'doc', name: 'Contrat de distribution signé (bilingue)' },
+      { kind: 'sheet', name: 'Plan de transition 90 jours et suivi KPI' },
+      { kind: 'report', name: 'Playbook protection de marque' },
+    ],
+  },
+];
+
+const docIcons: Record<string, string> = {
+  doc: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>`,
+  sheet: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><line x1="10" y1="4" x2="10" y2="20"/></svg>`,
+  deck: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="1"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg>`,
+  report: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/><path d="M15 2v5h5"/><path d="M9 13l2 2 4-4"/></svg>`,
+  diagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M6 9v3h12V9"/><path d="M12 12v3"/></svg>`,
+};
+
+const models = [
+  {
+    name: 'Sourcer et passer la main',
+    tag: 'Mission projet',
+    tagline: 'Trouver le partenaire. Rendre les clés.',
+    image: '/Images/enter-china/dist-route-agent.png',
+    imageAlt: "Un commercial chinois revoit les rapports distributeur avec un opérateur de marque étrangère dans un bureau à Shanghai",
+    desc: "On pilote le sourcing complet, du brief au contrat signé. Une fois le distributeur en place, on rend les clés et on s'efface. Vous tenez la relation vous-même.",
+    when: "Vous avez déjà un référent Chine dans l'équipe, vous voulez serrer le budget de gestion, ou vous cherchez juste le bon partenaire sans retainer long.",
+    split: { you: 80, them: 20, themLabel: 'BBG' },
+    dims: [
+      { label: 'Budget requis', value: 'Faible', level: 1 },
+      { label: 'Délai jusqu\'à la signature', value: 'Rapide', level: 4 },
+      { label: 'Présence locale après', value: 'Faible', level: 1 },
+      { label: 'Contrôle de marque', value: 'Total', level: 5 },
+    ],
+    youGet: ['Contrat de distribution signé', 'Shortlist de finalistes validés', 'Appui négociation bilingue', 'Plan de transition avec KPI'],
+    they: ['Brief et cadrage', 'Longue liste depuis BeyondCompass', 'Diligence et prises de références', 'Négociation et rédaction du contrat'],
+    pricing: "Forfait projet. Devis au premier appel une fois le brief clair. Aucune commission distributeur.",
+    highlight: false,
+    ctaText: 'Parler d\'une mission de sourcing',
+  },
+  {
+    name: 'Sourcer et rester',
+    tag: 'Partenariat long terme',
+    tagline: 'Trouver le partenaire. Tenir la marque.',
+    image: '/Images/enter-china/dist-route-agency.png',
+    imageAlt: "Une équipe marketing chinoise pilote les opérations Tmall et Douyin pour une marque étrangère, bureau de Shanghai",
+    desc: "On source le distributeur et on reste votre équipe locale. Gardien de marque, opérateur marketing, revues mensuelles. Le contrat devient le début de la relation, pas la ligne d'arrivée.",
+    when: "Vous n'avez pas d'équipe en Asie, la P&L Chine est stratégique, ou votre précédent contrat a dérivé et il vous faut quelqu'un sur place pour défendre la marque.",
+    split: { you: 30, them: 70, themLabel: 'BBG' },
+    dims: [
+      { label: 'Budget requis', value: 'Moyen', level: 3 },
+      { label: 'Délai jusqu\'à la signature', value: 'Rapide', level: 4 },
+      { label: 'Présence locale après', value: 'Forte', level: 5 },
+      { label: 'Contrôle de marque', value: 'Partagé', level: 3 },
+    ],
+    youGet: ['Tout ce que couvre la mission projet', 'Revues mensuelles d\'activité', 'Gardien de marque, pricing, défense PI', 'Marketing, KOL et campagnes plateformes'],
+    they: ['Sourcing phases 1 à 4', 'Retainer gardien de marque continu', 'Marketing sur Tmall, JD, Douyin, RED, WeChat', 'Pilotage des campagnes 11.11 et 6.18'],
+    pricing: "Forfait sourcing plus retainer mensuel. Le retainer s'ajuste au périmètre, en général entre 40 000 et 150 000 RMB.",
+    highlight: true,
+    ctaText: 'Parler d\'un partenariat long terme',
+  },
+];
+
+const faqs = [
+  {
+    cat: 'Sourcing',
+    q: "Comment trouvez-vous des distributeurs que les concurrents n'ont pas ?",
+    a: "BeyondCompass, notre base partenaires. Quinze ans de rendez-vous en face à face entre nos bureaux de Chine, Hong Kong, Paris et nos relais sur chaque grande catégorie de consommation. La plupart des cabinets de sourcing vous remettent un export 1688 gratté et l'appellent shortlist curatée. Nous, on vous remet des partenaires qu'on connaît par leur prénom, rencontrés le trimestre dernier, et pour qui on engage notre nom. C'est toute la différence.",
+  },
+  {
+    cat: 'Sourcing',
+    q: 'Combien de temps entre le premier appel et le contrat signé ?',
+    a: "Trois à cinq mois. Cadrage en semaine 1, longue liste en semaine 4, entretiens shortlist en semaines 5 à 8, diligence et négociation en semaines 9 à 16. Les marques qui prennent plus de temps ont en général buté sur des dossiers NMPA ou SAMR qu'elles auraient dû lancer plus tôt.",
+  },
+  {
+    cat: 'Sourcing',
+    q: "Un seul distributeur couvre-t-il toute la Chine ?",
+    a: "Parfois. Plus souvent, on aboutit à deux ou trois, ventilés par canal (offline contre online) ou par région (nord, sud, ouest). L'exclusivité nationale ne s'accorde qu'en échange d'engagements de volumes fermes. Les marques qui ont signé une exclusivité nationale sans ces clauses sont celles qui se retrouvent bloquées trois ans.",
+  },
+  {
+    cat: 'Sourcing',
+    q: 'Et si ma catégorie est de niche ?',
+    a: "C'est exactement là que BeyondCompass paie. Les cabinets de sourcing génériques ne connaissent que les trente premiers distributeurs en beauté et en F&B. Pour le pet wellness, l'art de la table premium, les compléments alimentaires pointus ou le B2B spécialisé, le bon partenaire est parfois le quatre-vingt-troisième sur une liste, et le seul à dire oui. Ces noms-là, on les a. Ils ne sont pas en accès libre sur internet.",
+  },
+  {
+    cat: 'Sourcing',
+    q: 'Prenez-vous une commission sur les distributeurs que vous présentez ?',
+    a: "Non. On vous facture la mission. Le distributeur ne nous verse pas d'apport. C'est délibéré, et c'est écrit dans le contrat. Si on touchait une commission, notre intérêt basculerait vers la signature rapide plutôt que vers le bon partenaire. Certains clients posent la question. On est contents qu'ils la posent.",
+  },
+  {
+    cat: 'Canaux',
+    q: 'En ligne, en magasin, ou les deux ?',
+    a: "Les deux, à terme. La beauté démarre souvent en ligne puis bascule offline quand le volume le justifie. Le F&B part en général offline et ajoute Tmall Global plus tard. Le lifestyle premium attaque les deux d'emblée. Le bon profil distributeur dépend du canal de tête. On tranche la question en phase de cadrage, avant toute longue liste.",
+  },
+  {
+    cat: 'Canaux',
+    q: 'Faut-il ouvrir mon propre flagship Tmall ?',
+    a: "En général non, pas la première année. Un flagship coûte autour de 150 000 RMB de setup plus dépôts, plus une agence Tmall Partner entre 30 000 et 80 000 RMB par mois, plus les médias. Les distributeurs qui ont déjà un compte Tmall opèrent une boutique plus efficace au démarrage. Vous ouvrez la vôtre quand le GMV annuel dépasse 10 millions de RMB et que vous avez besoin du contrôle direct sur la data, les prix et le CRM.",
+  },
+  {
+    cat: 'Canaux',
+    q: 'CBEC ou general trade pour le premier coup ?',
+    a: "Le CBEC (cross-border via Tmall Global et JD Worldwide) est plus rapide. Pas d'enregistrement NMPA pour la cosmétique, étiquetage plus simple, droits réduits sur les commandes pour usage personnel. La plupart des marques s'en servent comme banc d'essai. Le general trade devient obligatoire pour le retail physique et le passage à l'échelle. Trajectoire classique : CBEC d'abord, general trade ajouté quand les volumes justifient les démarches.",
+  },
+  {
+    cat: 'Canaux',
+    q: 'Comment toucher les villes tier-2 et tier-3 ?',
+    a: "Pas en direct. Ce sont les distributeurs régionaux qui le font, et c'est précisément à ça que sert un partenariat distribution. Le tier-1 (Shanghai, Pékin, Canton, Shenzhen) est un jeu. Le tier-2 (Hangzhou, Chengdu, Wuhan) en est un autre. Le tier-3 demande un partenaire différent, avec une structure de coûts différente. Un distributeur national qui revendique une couverture tier-3 mais ne sert que le tier-1, c'est un signal d'alerte fréquent qu'on attrape en diligence.",
+  },
+  {
+    cat: 'Négociation',
+    q: 'Exclusivité nationale, ou canal par canal ?',
+    a: "Exclusivité par canal la première année. Offline au distributeur A, online au distributeur B ou à nous. L'exclusivité nationale complète ne s'accorde qu'en échange d'engagements de volumes fermes et de jalons de performance clairs. Les marques qui ont signé une exclusivité nationale sans ces clauses sont celles qui restent coincées trois ans.",
+  },
+  {
+    cat: 'Négociation',
+    q: 'Quels modalités de paiement faut-il viser ?',
+    a: "Première commande : 100 % prépayé contre facture proforma, parfois un crédit documentaire pour les gros volumes. Au bout d'un an de trading propre : 30 % d'acompte, 70 % à expédition, ou net 30 à 60 jours. Open account 90 jours seulement avec les distributeurs qu'on connaît bien. Devise USD ou EUR presque toujours. Le RMB à l'import reste rare.",
+  },
+  {
+    cat: 'Négociation',
+    q: 'Quel MOQ réaliste sur la première commande ?',
+    a: "Beauté et compléments : 30 000 à 80 000 EUR pour qu'un distributeur sérieux vous prenne. F&B : 50 000 EUR et plus, selon la DLC et la taille de palette. En dessous de 20 000 EUR, le distributeur vous traite comme un test. C'est honnête, mais le niveau de soutien suivra.",
+  },
+  {
+    cat: 'Opérations',
+    q: "Comment vérifier que le distributeur remonte les vrais chiffres ?",
+    a: "Accès lecture seule aux back-offices Tmall et JD, inscrit au contrat, pas en option. Recoupement avec un tracker indépendant type Magic Mirror pour le sell-through catégorie. Visites en magasin deux fois par an minimum. Si un distributeur refuse l'accès back-end, on quitte la table.",
+  },
+  {
+    cat: 'Opérations',
+    q: 'Que se passe-t-il si le distributeur sous-performe ?',
+    a: "On le détecte tôt via les revues mensuelles, en formule Sourcer et rester. Si les chiffres ne se redressent pas, on relance un sourcing de remplacement. Les marques qui patientent trop sur un partenaire faible perdent plus que celles qui changent. BeyondCompass garde des candidats de remplacement à jour ; le prochain tour va en général plus vite que le premier.",
+  },
+  {
+    cat: 'Opérations',
+    q: 'Comment contenir le marché gris et le daigou ?',
+    a: "On les réduit, on ne les efface pas. Contrôle des prix serré sur le marché domestique, traçabilité par lot, takedown sur Taobao et Xianyu pour les annonces non autorisées, alertes douanes aux points d'entrée chinois. Comptez 80 000 à 200 000 RMB par an de monitoring si la catégorie est exposée. La beauté premium, les compléments et le vin voient passer le plus de flux parallèle.",
+  },
+  {
+    cat: 'Opérations',
+    q: 'Combien de temps cela prend-il à mon équipe ?',
+    a: "Environ deux heures par semaine pour votre chef de projet pendant les phases 1 à 3. Trois ou quatre sessions de travail d'une demi-journée sur l'ensemble de la mission. Plus dense pendant les entretiens et la négociation, parce que vous êtes à la table. Sur la recherche, la longue liste et la diligence, c'est nous qui portons la charge.",
+  },
+  {
+    cat: 'Juridique',
+    q: 'Qui dépose ma marque en Chine ?',
+    a: "Vous, à votre nom. Toujours. Ne laissez jamais un distributeur déposer votre marque, même à titre provisoire. La Chine est un marché de premier déposant et le trademark squatting y est une vraie activité. Déposez dans les classes 3, 5, 29, 30, 35 et 43 selon la catégorie, avant toute activité commerciale, avant tout salon, avant toute mention sur les réseaux.",
+  },
+  {
+    cat: 'Juridique',
+    q: 'Que devient le stock en cas de résiliation ?',
+    a: "Écrit au contrat dès le départ. Clause de rachat standard : la marque ou le nouveau distributeur rachète le stock invendu au prix débarqué, moins une décote raisonnable. Sans cette clause, le distributeur sortant peut brader la marchandise à n'importe quel prix ou retenir le stock en otage pour bloquer votre relance. Cela se négocie dès le jour un.",
+  },
+  {
+    cat: 'Tarifs',
+    q: 'Combien coûte cette mission ?',
+    a: "Sourcer et passer la main : forfait projet, en général entre 40 000 et 90 000 EUR pour un brief mono-catégorie, mono-canal. Devis au premier appel, une fois le brief clair. Sourcer et rester : forfait projet plus retainer mensuel, retainer ajusté au périmètre, en général entre 40 000 et 150 000 RMB. Aucune commission distributeur, jamais.",
+  },
+  {
+    cat: 'Tarifs',
+    q: 'Quand passer en direct l\'emporte-t-il sur le distributeur ?',
+    a: "Quasiment jamais la première année. Passer en direct, c'est monter une WFOE à Shanghai ou Hong Kong (4 à 6 mois, 30 000 à 80 000 EUR de setup), recruter un GM local, bâtir vos relations entrepôt et absorber tout le risque. Le seuil de rentabilité tourne autour de 8 à 12 millions d'EUR de chiffre d'affaires Chine annuel, quand les marges du distributeur coûtent plus cher que faire tourner votre propre opération. En dessous, son réseau et son capital coûtent moins que votre équipe interne.",
+  },
+];
+
+const faqCategories = ['Toutes', 'Sourcing', 'Canaux', 'Négociation', 'Opérations', 'Juridique', 'Tarifs'];
+
+const contextCards = [
+  {
+    image: '/Images/enter-china/dist-context-shelf.png',
+    alt: "Un acheteur chinois inspecte la mise en linéaire d'une marque importée premium dans un supermarché de ville tier-1",
+    title: "Le bon distributeur n'est pas le plus bruyant",
+    body: "Les mêmes douze distributeurs vous croisent sur tous les salons. Le bon partenaire, c'est souvent un opérateur plus discret qu'on connaît par son nom, pas un démarcheur à froid.",
+  },
+  {
+    image: '/Images/enter-china/dist-context-meeting.png',
+    alt: "Un contrat signé sur un bureau métallique dans un entrepôt de distribution chinois en activité, cartons de marque sur palettes en arrière-plan",
+    title: 'Signer un distributeur, c\'est le début, pas la fin',
+    body: "Les marques qui se taisent après la signature reculent au fond du rayon en deux trimestres. Le travail qui protège votre position commence après la signature.",
+  },
+];
+---
+
+<Layout
+  title="Distribution produit en Chine | Beyond Border Group"
+  description="Trouver le bon distributeur en Chine, en ligne et en magasin. Base partenaires BeyondCompass, négociation bilingue, retainer gardien de marque. 15 ans sur le terrain."
+>
+  <div class="dis-progress" aria-hidden="true"><div class="dis-progress__bar"></div></div>
+  <article class="dis">
+
+    {/* ---------- HERO (dark, parallax) ---------- */}
+    <section class="dis-hero" data-hero>
+      <div class="dis-hero__bg" aria-hidden="true" data-parallax>
+        <img src="/Images/enter-china/dist-hero-warehouse.png" alt="Vue intérieure d'un entrepôt de distribution chinois moderne au crépuscule, cartons de marque sur convoyeurs et rayonnages" />
+      </div>
+      <div class="dis-hero__overlay" aria-hidden="true"></div>
+      <div class="dis-hero__grain" aria-hidden="true"></div>
+
+      <div class="container dis-hero__inner">
+        <nav class="dis-hero__crumbs" aria-label="Fil d'Ariane">
+          <a href="/fr/">Accueil</a>
+          <span aria-hidden="true">/</span>
+          <a href="/fr/#services">Entrer en Chine</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark dis-reveal">Distribution en Chine</span>
+        <h1 class="dis-hero__title dis-reveal" style="--reveal-delay: 80ms;">
+          <span class="dis-hero__title-row">Le bon distributeur,</span>
+          <span class="dis-hero__title-row dis-hero__title-row--accent">en ligne et en magasin.</span>
+          <span class="dis-hero__title-row">Et l'équipe qui</span>
+          <span class="dis-hero__title-row dis-hero__title-row--highlight">le tient droit.</span>
+        </h1>
+        <p class="dis-hero__lead dis-reveal" style="--reveal-delay: 200ms;">
+          On source vos distributeurs dans BeyondCompass, notre base partenaires
+          de quinze ans. On négocie en deux langues. On reste en gardien de marque
+          une fois le contrat signé. La plupart des agences font bien l'un des trois.
+          Nous faisons les trois.
+        </p>
+        <div class="dis-hero__actions dis-reveal" style="--reveal-delay: 280ms;">
+          <a href="/fr/nous-contacter" class="btn btn--primary dis-magnetic">Nous parler</a>
+          <a href="#how-we-work" class="btn btn--ghost-light dis-magnetic">Voir notre façon de travailler</a>
+        </div>
+
+        <div class="dis-hero__meta dis-reveal" style="--reveal-delay: 360ms;">
+          <div class="dis-hero__meta-item">
+            <span class="dis-hero__meta-num" data-counter="15" data-suffix="+">0</span>
+            <span class="dis-hero__meta-label">années de relations validées</span>
+          </div>
+          <div class="dis-hero__meta-item">
+            <span class="dis-hero__meta-num">Toutes</span>
+            <span class="dis-hero__meta-label">les grandes catégories conso, en ligne et en magasin</span>
+          </div>
+          <div class="dis-hero__meta-item">
+            <span class="dis-hero__meta-num">Zéro</span>
+            <span class="dis-hero__meta-label">commission distributeur. Jamais.</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#two-truths" class="dis-hero__scroll" aria-label="Aller à la section suivante">
+        <span class="dis-hero__scroll-line"></span>
+        <span class="dis-hero__scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    {/* ---------- TWO TRUTHS / CONTEXT ---------- */}
+    <section id="two-truths" class="section">
+      <div class="container">
+        <header class="section-header section-header--center dis-reveal">
+          <span class="eyebrow">Deux vérités d'abord</span>
+          <h2>Deux choses à savoir avant de signer quoi que ce soit</h2>
+          <p class="section-header__lead">
+            La plupart des marques étrangères croisent les mêmes douze distributeurs
+            sur tous les salons. La plupart des contrats signés se taisent en deux
+            trimestres. Voici ce qui pèse le plus, d'après notre expérience.</p>
+        </header>
+
+        <div class="dis-context">
+          {contextCards.map((c, i) => (
+            <article class={`dis-context__card${i === 1 ? ' dis-context__card--alt' : ''} dis-reveal`} style={`--reveal-delay: ${i * 120}ms;`}>
+              <figure class="dis-context__media">
+                <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
+              </figure>
+              <div class="dis-context__body">
+                <h3>{c.title}</h3>
+                <p>{c.body}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- BEYONDCOMPASS ---------- */}
+    <section class="section section--alt dis-compass-section">
+      <div class="container">
+        <header class="section-header section-header--center dis-reveal">
+          <span class="eyebrow">Notre différence</span>
+          <h2>Chaque shortlist tourne sur BeyondCompass</h2>
+          <p class="section-header__lead">
+            Le sourcing distributeur en Chine, c'est souvent une liste grattée sur
+            1688 ou Alibaba avec un markup. Pas chez nous. BeyondCompass est la
+            base de relations qu'on a construite sur quinze ans, à travers nos
+            bureaux et nos relais. Distributeurs, TP Tmall, partenaires Douyin,
+            importateurs. Vérifiés à la main, rencontrés en personne, tenus à jour.
+          </p>
+        </header>
+
+        <article class="dis-compass dis-reveal">
+          <div class="dis-compass__bg" aria-hidden="true"></div>
+          <div class="dis-compass__grid">
+            <div class="dis-compass__copy">
+              <div class="dis-compass__head">
+                <div class="dis-compass__logo">
+                  <img
+                    src="/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp"
+                    alt="Logo BeyondCompass"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <span class="dis-compass__chip">Notre base partenaires</span>
+              </div>
+
+              <p class="dis-compass__pitch">
+                Économisez trois mois de mauvaises introductions. Partez d'une liste de partenaires qu'on connaît déjà.
+              </p>
+
+              <p class="dis-compass__body">
+                Les cabinets génériques grattent 1688 et Alibaba, posent un markup
+                sur le fichier et appellent ça une shortlist curatée. Mille noms
+                avant midi, presque aucun pour votre catégorie. Ce n'est pas
+                comme ça qu'on travaille. BeyondCompass, ce sont quinze ans de
+                rencontres physiques, rafraîchies chaque trimestre, organisées
+                par grande catégorie de consommation. Quand on passe nos quatre
+                filtres sur la shortlist, on les passe sur des partenaires que
+                l'équipe connaît déjà par leur nom.
+              </p>
+
+              <ul class="dis-compass__stats">
+                <li>
+                  <span class="dis-compass__stat-num" data-counter="15" data-suffix="+">0</span>
+                  <span class="dis-compass__stat-label">années de relations validées</span>
+                </li>
+                <li>
+                  <span class="dis-compass__stat-num">Toutes</span>
+                  <span class="dis-compass__stat-label">les grandes catégories de consommation qu'on opère</span>
+                </li>
+                <li>
+                  <span class="dis-compass__stat-num">Zéro</span>
+                  <span class="dis-compass__stat-label">commission distributeur. Jamais.</span>
+                </li>
+              </ul>
+
+              <div class="dis-compass__actions">
+                <a
+                  href="https://beyondcompass.beyondbordergroup.com/en"
+                  class="btn dis-compass__btn-primary"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Découvrir BeyondCompass
+                  <span aria-hidden="true" class="dis-compass__btn-arrow">&#8599;</span>
+                </a>
+                <a href="/fr/nous-contacter" class="btn dis-compass__btn-ghost">
+                  Nous briefer sur votre recherche
+                </a>
+              </div>
+            </div>
+
+            <div class="dis-compass__art" aria-hidden="true">
+              <svg viewBox="0 0 440 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pile de fiches partenaires validées avec badges de vérification et sceau 100% vetted">
+                <defs>
+                  <pattern id="cmp-grid" width="22" height="22" patternUnits="userSpaceOnUse">
+                    <circle cx="1" cy="1" r="1" fill="#9DDBF5" fill-opacity="0.10"/>
+                  </pattern>
+                  <linearGradient id="cmp-card-soft" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#13283b"/>
+                    <stop offset="100%" stop-color="#0c1c2b"/>
+                  </linearGradient>
+                  <linearGradient id="cmp-card-active" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#269ADA"/>
+                    <stop offset="100%" stop-color="#1E7DB0"/>
+                  </linearGradient>
+                  <linearGradient id="cmp-fade" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#0e2030" stop-opacity="0"/>
+                    <stop offset="100%" stop-color="#0e2030" stop-opacity="0.85"/>
+                  </linearGradient>
+                  <filter id="cmp-glow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="6"/>
+                    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+
+                {/* Grid background */}
+                <rect width="440" height="480" fill="url(#cmp-grid)"/>
+
+                {/* Scraped pile (faded reject stack at the bottom) */}
+                <g class="cmp-scraped" opacity="0.35">
+                  <rect x="40" y="380" width="280" height="14" rx="4" fill="#3a4a5c"/>
+                  <rect x="60" y="402" width="240" height="12" rx="4" fill="#33424f"/>
+                  <rect x="48" y="422" width="270" height="11" rx="4" fill="#2b3946"/>
+                  <rect x="70" y="441" width="200" height="10" rx="4" fill="#243140"/>
+                  <line x1="40" y1="368" x2="370" y2="368" stroke="#5BC2F0" stroke-opacity="0.25" stroke-dasharray="2 4" stroke-width="1"/>
+                  <text x="40" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.12em" font-weight="700" fill="#5BC2F0" fill-opacity="0.55">GRATTÉ, PAS GARDÉ</text>
+                </g>
+                <rect x="0" y="340" width="440" height="140" fill="url(#cmp-fade)" pointer-events="none"/>
+
+                {/* Database label */}
+                <text x="40" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.18em" font-weight="700" fill="#9DDBF5">BASE BEYONDCOMPASS</text>
+                <line x1="40" y1="58" x2="200" y2="58" stroke="#9DDBF5" stroke-opacity="0.4" stroke-width="1"/>
+
+                {/* Card 4 (back) */}
+                <g class="cmp-card cmp-card--4" transform="translate(50 78)">
+                  <rect width="320" height="56" rx="10" fill="url(#cmp-card-soft)" stroke="#5BC2F0" stroke-opacity="0.18"/>
+                  <circle cx="30" cy="28" r="12" fill="#5BC2F0" fill-opacity="0.35"/>
+                  <text x="30" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#fff" fill-opacity="0.55" text-anchor="middle">M</text>
+                  <rect x="54" y="16" width="160" height="9" rx="2" fill="#fff" fill-opacity="0.45"/>
+                  <rect x="54" y="32" width="100" height="7" rx="2" fill="#fff" fill-opacity="0.22"/>
+                  <g class="cmp-check">
+                    <circle cx="290" cy="28" r="11" fill="#269ADA"/>
+                    <path d="M284 28 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </g>
+
+                {/* Card 3 */}
+                <g class="cmp-card cmp-card--3" transform="translate(35 142)">
+                  <rect width="340" height="58" rx="10" fill="url(#cmp-card-soft)" stroke="#5BC2F0" stroke-opacity="0.22"/>
+                  <circle cx="32" cy="29" r="13" fill="#5BC2F0" fill-opacity="0.45"/>
+                  <text x="32" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#fff" fill-opacity="0.7" text-anchor="middle">J</text>
+                  <rect x="58" y="16" width="180" height="9" rx="2" fill="#fff" fill-opacity="0.6"/>
+                  <rect x="58" y="33" width="120" height="7" rx="2" fill="#fff" fill-opacity="0.3"/>
+                  <g class="cmp-check">
+                    <circle cx="310" cy="29" r="12" fill="#269ADA"/>
+                    <path d="M304 29 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </g>
+
+                {/* Card 2 */}
+                <g class="cmp-card cmp-card--2" transform="translate(50 210)">
+                  <rect width="320" height="58" rx="10" fill="url(#cmp-card-soft)" stroke="#5BC2F0" stroke-opacity="0.3"/>
+                  <circle cx="32" cy="29" r="13" fill="#5BC2F0" fill-opacity="0.6"/>
+                  <text x="32" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#fff" fill-opacity="0.85" text-anchor="middle">Z</text>
+                  <rect x="58" y="16" width="170" height="9" rx="2" fill="#fff" fill-opacity="0.75"/>
+                  <rect x="58" y="33" width="110" height="7" rx="2" fill="#fff" fill-opacity="0.38"/>
+                  <g class="cmp-check">
+                    <circle cx="290" cy="29" r="12" fill="#269ADA"/>
+                    <path d="M284 29 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </g>
+
+                {/* Card 1 (front, highlighted) */}
+                <g class="cmp-card cmp-card--1" transform="translate(28 278)" filter="url(#cmp-glow)">
+                  <rect width="360" height="68" rx="12" fill="url(#cmp-card-active)"/>
+                  <circle cx="36" cy="34" r="16" fill="#fff" fill-opacity="0.95"/>
+                  <text x="36" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#1E7DB0" text-anchor="middle">å¤©</text>
+                  <rect x="64" y="19" width="200" height="11" rx="2" fill="#fff" fill-opacity="0.96"/>
+                  <rect x="64" y="38" width="140" height="9" rx="2" fill="#fff" fill-opacity="0.65"/>
+                  <g class="cmp-check cmp-check--big">
+                    <circle cx="328" cy="34" r="15" fill="#fff"/>
+                    <path d="M320 34 l5 5 l11 -10" stroke="#269ADA" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  {/* "live / kept current" pulse dot */}
+                  <circle class="cmp-live" cx="349" cy="13" r="4" fill="#5BC2F0"/>
+                </g>
+
+                {/* 100% VETTED seal, outside the cards, top-right */}
+                <g class="cmp-seal" transform="translate(322 24)">
+                  <circle cx="46" cy="46" r="46" fill="none" stroke="#5BC2F0" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="3 5"/>
+                  <circle cx="46" cy="46" r="36" fill="#0a1a28" stroke="#5BC2F0" stroke-opacity="0.6" stroke-width="1.5"/>
+                  <text x="46" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0.04em">100%</text>
+                  <line x1="22" y1="46" x2="70" y2="46" stroke="#5BC2F0" stroke-opacity="0.5" stroke-width="1"/>
+                  <text x="46" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#9DDBF5" text-anchor="middle" letter-spacing="0.22em">VALIDÉS</text>
+                </g>
+              </svg>
+
+              <ul class="dis-compass__art-key">
+                <li><span class="dis-compass__art-dot dis-compass__art-dot--vetted"></span>Vérifiés à la main, rencontrés en personne</li>
+                <li><span class="dis-compass__art-dot dis-compass__art-dot--live"></span>Relations tenues à jour</li>
+                <li><span class="dis-compass__art-dot dis-compass__art-dot--reject"></span>Listes grattées, hors de notre base</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <div class="dis-compass-tiers">
+          <article class="dis-compass-tier dis-reveal">
+            <span class="dis-compass-tier__label">Shortlist</span>
+            <p class="dis-compass-tier__lead">Trois à cinq noms validés, calibrés sur votre catégorie et votre stade. Livrée en deux à trois semaines.</p>
+            <span class="dis-compass-tier__when">Quand le brief est clair et qu'il vous faut les introductions, vite.</span>
+          </article>
+          <article class="dis-compass-tier dis-reveal" style="--reveal-delay: 80ms;">
+            <span class="dis-compass-tier__label">Cartographie marché</span>
+            <p class="dis-compass-tier__lead">Quinze à vingt options comparables sur le paysage. Livrée en trois à six semaines.</p>
+            <span class="dis-compass-tier__when">Quand vous voulez la vue d'ensemble avant de vous engager.</span>
+          </article>
+          <article class="dis-compass-tier dis-reveal" style="--reveal-delay: 160ms;">
+            <span class="dis-compass-tier__label">Remplacement</span>
+            <p class="dis-compass-tier__lead">Démêler un partenaire en sous-performance. Sourcer le suivant. Piloter la transition.</p>
+            <span class="dis-compass-tier__when">Quand la relation ne fonctionne plus et qu'il vous faut une sortie propre.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- BUSINESS MODELS (tabbed showcase) ---------- */}
+    <section class="section dis-models-section">
+      <div class="dis-models-section__bg" aria-hidden="true">
+        <img src="/Images/enter-china/four-ways-tiles.png" alt="" loading="lazy" decoding="async" />
+      </div>
+      <div class="container">
+        <header class="section-header section-header--center dis-reveal">
+          <span class="eyebrow">Deux façons de travailler avec nous</span>
+          <h2>Trouvez le partenaire. Puis dosez la part qu'on prend.</h2>
+          <p class="section-header__lead">
+            Les deux missions suivent le même process de sourcing : brief, longue
+            liste depuis BeyondCompass, shortlist, diligence, négociation. Ce qui
+            change, c'est ce qui se passe après la signature.
+          </p>
+        </header>
+
+        <div class="dis-routes dis-reveal">
+          {models.map((m, i) => (
+            <article class={`dis-route${m.highlight ? ' dis-route--featured' : ''}`} style={`--reveal-delay: ${i * 100}ms;`}>
+              <div class="dis-route__media">
+                <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" />
+                <span class="dis-route__pill">{m.name}</span>
+              </div>
+
+              <div class="dis-route__body">
+                <header class="dis-route__head">
+                  <h3 class="dis-route__title">{m.tag}</h3>
+                  <p class="dis-route__tagline">{m.tagline}</p>
+                </header>
+
+                <p class="dis-route__desc">{m.desc}</p>
+
+                <div class="dis-route__split" aria-label={`Répartition opérationnelle : vous ${m.split.you}%, ${m.split.themLabel.toLowerCase()} ${m.split.them}%`}>
+                  <div class="dis-route__split-labels">
+                    <span><strong>Vous</strong> {m.split.you}%</span>
+                    <span class="dis-route__split-label-end">{m.split.themLabel} <strong>{m.split.them}%</strong></span>
+                  </div>
+                  <div class="dis-route__split-bar">
+                    <span class="dis-route__split-bar-you" style={`--w: ${m.split.you}%;`}></span>
+                    <span class="dis-route__split-bar-them" style={`--w: ${m.split.them}%;`}></span>
+                  </div>
+                  <span class="dis-route__split-caption">Qui pilote l'opération Chine</span>
+                </div>
+
+                <ul class="dis-route__dims">
+                  {m.dims.map((d) => (
+                    <li class="dis-route__dim">
+                      <span class="dis-route__dim-label">{d.label}</span>
+                      <span class="dis-route__dim-dots" aria-label={`${d.value}, ${d.level} sur 5`}>
+                        {[1, 2, 3, 4, 5].map((n) => (
+                          <span class={`dis-route__dim-dot${n <= d.level ? ' is-on' : ''}`}></span>
+                        ))}
+                      </span>
+                      <span class="dis-route__dim-value">{d.value}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div class="dis-route__lists">
+                  <div class="dis-route__list">
+                    <span class="dis-route__list-label">Vous recevez</span>
+                    <ul>
+                      {m.youGet.map((b) => (
+                        <li>
+                          <span class="dis-route__check" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                          </span>
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div class="dis-route__list dis-route__list--muted">
+                    <span class="dis-route__list-label">On s'occupe de</span>
+                    <ul>
+                      {m.they.map((b) => (
+                        <li>
+                          <span class="dis-route__dash" aria-hidden="true"></span>
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="dis-route__when">
+                  <span class="dis-route__when-label">À choisir quand</span>
+                  <p>{m.when}</p>
+                </div>
+
+                <a href="/fr/nous-contacter" class="btn btn--primary dis-route__cta">
+                  {m.ctaText}
+                  <span class="dis-route__cta-arrow" aria-hidden="true">&#8594;</span>
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div class="dis-matrix dis-reveal" data-matrix>
+          <div class="dis-matrix__intro">
+            <span class="eyebrow">Comment choisir</span>
+            <h3>Deux questions, une réponse</h3>
+            <p>Avez-vous déjà un référent Chine dans l'équipe, ou partez-vous de zéro ? Et voulez-vous que la marque soit défendue chaque mois, ou êtes-vous prêts à la piloter vous-mêmes ? La réponse tranche.</p>
+          </div>
+          <div class="dis-matrix__grid" role="table" aria-label="Matrice de sélection des missions de distribution">
+            <div class="dis-matrix__corner" role="presentation"></div>
+            <div class="dis-matrix__head" role="columnheader" data-col="1">Pas d'équipe en Chine</div>
+            <div class="dis-matrix__head" role="columnheader" data-col="2">Référent Chine déjà en place</div>
+
+            <div class="dis-matrix__row-head" role="rowheader" data-row="1">Défense active de la marque</div>
+            <button type="button" class="dis-matrix__cell" role="cell" data-row="1" data-col="1" data-tab-jump="model-tab-0">
+              <span class="dis-matrix__cell-label">Sourcer et rester</span>
+              <span class="dis-matrix__cell-sub">On source, on reste, on assure le rôle de gardien de marque.</span>
+            </button>
+            <button type="button" class="dis-matrix__cell" role="cell" data-row="1" data-col="2" data-tab-jump="model-tab-0">
+              <span class="dis-matrix__cell-label">Sourcer et rester, version allégée</span>
+              <span class="dis-matrix__cell-sub">Votre référent gère le quotidien. On protège la marque.</span>
+            </button>
+
+            <div class="dis-matrix__row-head" role="rowheader" data-row="2">Pilotage interne</div>
+            <button type="button" class="dis-matrix__cell" role="cell" data-row="2" data-col="1" data-tab-jump="model-tab-1">
+              <span class="dis-matrix__cell-label">Sourcer et passer la main, avec transfert</span>
+              <span class="dis-matrix__cell-sub">On source. On forme votre équipe. On s'efface.</span>
+            </button>
+            <button type="button" class="dis-matrix__cell" role="cell" data-row="2" data-col="2" data-tab-jump="model-tab-1">
+              <span class="dis-matrix__cell-label">Sourcer et passer la main</span>
+              <span class="dis-matrix__cell-sub">On source. Votre référent reprend les clés. Fini.</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- HOW WE WORK / PHASES (tabbed) ---------- */}
+    <section id="how-we-work" class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center dis-reveal">
+          <span class="eyebrow">Notre façon de travailler</span>
+          <h2>Quatre phases, du brief au contrat signé</h2>
+          <p class="section-header__lead">
+            Trois à cinq mois en moyenne. Chaque phase se termine sur des livrables
+            actionnables, pas des slides à retraduire. On reste de votre côté de la
+            table tout du long.
+          </p>
+        </header>
+
+        <div class="dis-tabs dis-tabs--phases dis-reveal" data-tabs>
+          <div class="dis-tabs__nav dis-tabs__nav--phases" role="tablist">
+            {phases.map((p, i) => (
+              <button
+                type="button"
+                class={`dis-tabs__tab${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                aria-controls={`phase-panel-${i}`}
+                id={`phase-tab-${i}`}
+                data-tab-target={`phase-panel-${i}`}
+              >
+                <span class="dis-tabs__tab-eyebrow">{p.phase}</span>
+                <span class="dis-tabs__tab-label">{p.title}</span>
+              </button>
+            ))}
+            <span class="dis-tabs__indicator" aria-hidden="true"></span>
+          </div>
+
+          <div class="dis-tabs__panels">
+            {phases.map((p, i) => (
+              <div
+                class={`dis-tabs__panel dis-phase-panel${i === 0 ? ' is-active' : ''}`}
+                role="tabpanel"
+                id={`phase-panel-${i}`}
+                aria-labelledby={`phase-tab-${i}`}
+                hidden={i !== 0}
+              >
+                <div class="dis-phase">
+                  <figure class="dis-phase__media">
+                    <img src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
+                    <div class="dis-phase__media-overlay">
+                      <span class="dis-phase__media-phase">{p.phase}</span>
+                      <span class="dis-phase__media-duration">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                        {p.duration}
+                      </span>
+                    </div>
+                  </figure>
+
+                  <div class="dis-phase__content">
+                    <div class="dis-phase__head">
+                      <span class="dis-phase__icon" aria-hidden="true" set:html={phaseIcons[p.icon]} />
+                      <div>
+                        <span class="dis-phase__phase-label">{p.phase}</span>
+                        <h3 class="dis-phase__title">{p.title}</h3>
+                      </div>
+                    </div>
+
+                    <p class="dis-phase__intro">{p.intro}</p>
+
+                    <div class="dis-phase__outcome">
+                      <span class="dis-phase__outcome-label">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        Résultat
+                      </span>
+                      <p>{p.outcome}</p>
+                    </div>
+
+                    <div class="dis-phase__columns">
+                      <div class="dis-phase__col">
+                        <span class="dis-phase__col-label">Ce qu'on fait</span>
+                        <ul class="dis-phase__checks">
+                          {p.does.map((b, j) => (
+                            <li style={`--seq: ${j};`}>
+                              <span class="dis-phase__check" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                              </span>
+                              <span>{b}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div class="dis-phase__col">
+                        <span class="dis-phase__col-label">Livrables</span>
+                        <ul class="dis-phase__docs">
+                          {p.deliverables.map((d, j) => (
+                            <li class="dis-phase__doc" style={`--seq: ${j};`}>
+                              <span class="dis-phase__doc-icon" aria-hidden="true" set:html={docIcons[d.kind]} />
+                              <span class="dis-phase__doc-name">{d.name}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FAQ (with category filter) ---------- */}
+    <section class="section">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center dis-reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Vingt questions, des réponses directes</h2>
+          <p class="section-header__lead">
+            Les questions concrètes que nous posent fondateurs et opérateurs au
+            moment de sourcer leur premier, ou leur cinquième, distributeur en
+            Chine. Filtrez par sujet.
+          </p>
+        </header>
+
+        <div class="dis-faq-filter dis-reveal" data-faq-filter role="tablist" aria-label="Filtrer les questions par catégorie">
+          {faqCategories.map((c, i) => (
+            <button
+              type="button"
+              class={`dis-faq-chip${i === 0 ? ' is-active' : ''}`}
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              data-faq-cat={c}
+            >
+              <span class="dis-faq-chip__label">{c}</span>
+              <span class="dis-faq-chip__count">{c === 'Toutes' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="dis-faq" data-faq-list>
+          {faqs.map((f, i) => (
+            <details
+              class="dis-faq__item dis-reveal"
+              data-faq-cat={f.cat}
+              open={i === 0}
+              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+            >
+              <summary class="dis-faq__q">
+                <span class="dis-faq__cat-tag">{f.cat}</span>
+                <span class="dis-faq__q-text">{f.q}</span>
+                <span class="dis-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="dis-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="dis-cta">
+          <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
+          <h2 class="dis-cta__title">Besoin d'un distributeur en Chine ? Ou d'en changer ?</h2>
+          <p class="dis-cta__lead">
+            Dites-nous votre catégorie, vos volumes et où vous en êtes aujourd'hui.
+            Un membre senior de l'équipe vous répond sous un jour ouvré, avec deux
+            ou trois noms qui valent un rendez-vous. Pas de tunnel commercial, pas
+            de répondeur automatique.
+          </p>
+          <div class="dis-cta__actions">
+            <a href="/fr/nous-contacter" class="btn dis-cta__btn-primary">Lancer la conversation</a>
+            <a href="/fr/nos-realisations" class="btn dis-cta__btn-ghost">Voir nos études de cas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    /* ---------- Container narrow helper ---------- */
+    .dis .container--narrow { max-width: 880px; }
+
+    /* ---------- REVEAL + MOTION ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .dis-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .dis-reveal.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .dis-magnetic {
+        will-change: transform;
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      }
+    }
+
+    /* ---------- SCROLL PROGRESS BAR ---------- */
+    .dis-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 1000;
+      background: transparent;
+      pointer-events: none;
+    }
+    .dis-progress__bar {
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      transition: width 80ms linear;
+    }
+
+    /* ---------- HERO ---------- */
+    .dis-hero {
+      position: relative;
+      min-height: clamp(560px, 72vh, 760px);
+      display: flex;
+      align-items: center;
+      padding: clamp(8px, 1.25vh, 16px) 0 clamp(72px, 10vh, 120px);
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    body:has(.dis-hero) .dis-hero { padding-top: clamp(140px, 14vh, 180px); }
+    @media (max-width: 1024px) {
+      body:has(.dis-hero) .dis-hero { padding-top: clamp(120px, 12vh, 148px); }
+    }
+    @media (max-width: 720px) {
+      .dis-hero { min-height: clamp(520px, 80vh, 680px); padding-bottom: clamp(64px, 9vh, 96px); }
+    }
+    .dis-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .dis-hero__bg img {
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+      transition: transform 80ms linear;
+      filter: saturate(0.95);
+    }
+    .dis-hero__overlay {
+      position: absolute; inset: 0; z-index: -2;
+      background:
+        linear-gradient(110deg,
+          rgba(6, 14, 22, 0.94) 0%,
+          rgba(6, 14, 22, 0.82) 38%,
+          rgba(6, 14, 22, 0.55) 80%,
+          rgba(6, 14, 22, 0.4) 100%),
+        radial-gradient(120% 80% at 0% 100%,
+          rgba(38, 154, 218, 0.3) 0%,
+          rgba(38, 154, 218, 0) 60%);
+    }
+    .dis-hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .dis-hero__inner { max-width: 980px; position: relative; }
+    .dis-hero__crumbs {
+      margin-bottom: var(--space-4);
+      font-size: var(--fs-small);
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .dis-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .dis-hero__crumbs a:hover { color: var(--bbg-white); }
+    .dis-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-3);
+      color: #9DDBF5;
+    }
+    .dis-hero__title {
+      font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      max-width: 22ch;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      gap: 0.05em;
+    }
+    .dis-hero__title-row { display: block; }
+    .dis-hero__title-row--accent {
+      color: #9DDBF5;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -0.018em;
+    }
+    .dis-hero__title-row--highlight {
+      position: relative;
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0 0.15em;
+    }
+    .dis-hero__title-row--highlight::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0.04em;
+      height: 0.18em;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transform-origin: left center;
+      animation: dis-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+      z-index: -1;
+    }
+    @keyframes dis-underline {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    .dis-hero__lead {
+      font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 58ch;
+      margin: 0 0 var(--space-5);
+    }
+    .dis-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
+    .dis-magnetic:hover { transform: translateY(-2px); }
+    .dis-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(var(--space-4), 4vw, var(--space-7));
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: 720px;
+    }
+    .dis-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .dis-hero__meta-num {
+      font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: "tnum";
+    }
+    .dis-hero__meta-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.02em;
+    }
+    .dis-hero__scroll {
+      position: absolute;
+      bottom: var(--space-5);
+      right: clamp(var(--space-5), 4vw, var(--space-7));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color 200ms ease;
+    }
+    .dis-hero__scroll:hover { color: var(--bbg-white); }
+    .dis-hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .dis-hero__scroll-line::after {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+      animation: dis-scroll-tick 1.8s ease-in-out infinite;
+    }
+    @keyframes dis-scroll-tick {
+      0% { top: -50%; }
+      100% { top: 100%; }
+    }
+    @media (max-width: 720px) {
+      .dis-hero__scroll { display: none; }
+      .dis-hero__meta { gap: var(--space-4); }
+    }
+
+    /* ---------- SECTION HEADER LEAD ---------- */
+    .dis .section-header__lead {
+      max-width: 60ch;
+      margin: var(--space-4) auto 0;
+      color: var(--bbg-text-muted);
+      line-height: 1.6;
+      font-size: 1.0625rem;
+    }
+
+    /* ---------- CONTEXT (two truths) ---------- */
+    .dis-context {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    .dis-context__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .dis-context__card:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .dis-context__card--alt {
+      background: var(--bbg-blue-light);
+      border-color: transparent;
+    }
+    .dis-context__media {
+      margin: 0;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: var(--bbg-border);
+    }
+    .dis-context__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 600ms var(--ease);
+    }
+    .dis-context__card:hover .dis-context__media img { transform: scale(1.03); }
+    .dis-context__body { padding: var(--space-6) var(--space-7) var(--space-7); }
+    .dis-context__card h3 {
+      font-size: clamp(1.25rem, 1vw + 0.75rem, 1.625rem);
+      line-height: 1.25;
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.01em;
+    }
+    .dis-context__card p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .dis-context { grid-template-columns: 1fr; }
+      .dis-context__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+    }
+
+    /* ---------- VALUE + PROMISES ---------- */
+    .dis-value {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .dis-value__copy h2 {
+      font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin: var(--space-3) 0 var(--space-4);
+    }
+    .dis-value__copy p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0 0 var(--space-5);
+    }
+    .dis-value__quote {
+      margin: var(--space-5) 0;
+      padding: var(--space-4) var(--space-5);
+      border-left: 3px solid var(--bbg-blue);
+      background: var(--bbg-white);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-size: 1.1875rem;
+      line-height: 1.4;
+      color: var(--bbg-ink);
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: -0.01em;
+    }
+    .dis-promise {
+      list-style: none;
+      padding: var(--space-6);
+      margin: 0;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .dis-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .dis-promise__item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+    }
+    .dis-promise__check {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .dis-promise__check svg { width: 16px; height: 16px; }
+    .dis-promise__item h4 {
+      font-size: 1.125rem;
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .dis-promise__item p {
+      font-size: 0.975rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .dis-value { grid-template-columns: 1fr; gap: var(--space-6); }
+    }
+
+    /* ---------- MODELS SECTION BACKGROUND ---------- */
+    .dis-models-section { position: relative; isolation: isolate; overflow: hidden; }
+    .dis-models-section__bg {
+      position: absolute;
+      top: 0;
+      right: -8%;
+      width: 55%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.18;
+      mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
+      -webkit-mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .dis-models-section__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(0.6);
+    }
+    @media (max-width: 900px) { .dis-models-section__bg { display: none; } }
+
+    /* ---------- SELL IN / SELL OUT ROUTES ---------- */
+    .dis-routes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+      align-items: stretch;
+    }
+    .dis-route {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 24px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 380ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+    }
+    .dis-route:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 24px 50px -28px rgba(38, 154, 218, 0.45), 0 6px 14px -8px rgba(0, 0, 0, 0.08);
+    }
+    /* Dim the other route on hover */
+    .dis-routes:hover .dis-route { opacity: 0.7; transition: opacity 280ms ease; }
+    .dis-routes .dis-route:hover { opacity: 1; }
+    .dis-route--featured { border-color: rgba(38, 154, 218, 0.35); }
+    .dis-route--featured::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(38, 154, 218, 0.04) 0%, rgba(38, 154, 218, 0) 40%);
+      z-index: 1;
+    }
+
+    .dis-route__media {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: var(--bbg-surface);
+    }
+    .dis-route__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .dis-route:hover .dis-route__media img { transform: scale(1.04); }
+    .dis-route__pill {
+      position: absolute;
+      top: var(--space-4);
+      left: var(--space-4);
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--bbg-white);
+      background: rgba(8, 18, 28, 0.7);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 0.45em 0.9em;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .dis-route__badge {
+      position: absolute;
+      top: var(--space-4);
+      right: var(--space-4);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-blue-dark);
+      background: var(--bbg-white);
+      padding: 0.4em 0.85em;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px -4px rgba(8, 18, 28, 0.3);
+    }
+
+    .dis-route__body {
+      position: relative;
+      padding: var(--space-6) var(--space-6) var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      flex-grow: 1;
+      z-index: 2;
+    }
+    .dis-route__head { display: flex; flex-direction: column; gap: 0.4rem; }
+    .dis-route__title {
+      font-size: clamp(1.5rem, 1.4vw + 1rem, 1.875rem);
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-ink);
+      font-weight: 700;
+    }
+    .dis-route__tagline {
+      font-size: 1.0625rem;
+      line-height: 1.4;
+      color: var(--bbg-blue);
+      margin: 0;
+      font-weight: 600;
+    }
+    .dis-route__desc {
+      font-size: 0.975rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+
+    /* Control split visualisation */
+    .dis-route__split {
+      padding: var(--space-4);
+      background: var(--bbg-surface);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .dis-route__split-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--bbg-text);
+      line-height: 1.2;
+    }
+    .dis-route__split-labels strong {
+      color: var(--bbg-ink);
+      font-weight: 700;
+    }
+    .dis-route__split-label-end { color: var(--bbg-text-muted); }
+    .dis-route__split-bar {
+      display: flex;
+      height: 12px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--bbg-border);
+      gap: 2px;
+    }
+    .dis-route__split-bar-you {
+      width: var(--w, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 6px 0 0 6px;
+      animation: route-grow 800ms cubic-bezier(0.16, 1, 0.3, 1) 200ms both;
+    }
+    .dis-route__split-bar-them {
+      width: var(--w, 0%);
+      background: repeating-linear-gradient(45deg, var(--bbg-text-muted) 0 4px, rgba(107, 107, 107, 0.6) 4px 8px);
+      border-radius: 0 6px 6px 0;
+      animation: route-grow 800ms cubic-bezier(0.16, 1, 0.3, 1) 300ms both;
+    }
+    .dis-route__split-bar-you:only-child,
+    .dis-route__split-bar-them:only-child { border-radius: 6px; }
+    @keyframes route-grow {
+      from { transform: scaleX(0); transform-origin: left center; }
+      to { transform: scaleX(1); transform-origin: left center; }
+    }
+    .dis-route__split-caption {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-top: 0.2rem;
+    }
+
+    /* Dimensions grid */
+    .dis-route__dims {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .dis-route__dim {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      align-items: center;
+      gap: var(--space-3);
+      font-size: 0.875rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .dis-route__dim:last-child { border-bottom: none; }
+    .dis-route__dim-label {
+      color: var(--bbg-text);
+      font-weight: 500;
+    }
+    .dis-route__dim-dots {
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
+    }
+    .dis-route__dim-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: background 240ms ease;
+    }
+    .dis-route__dim-dot.is-on { background: var(--bbg-blue); }
+    .dis-route__dim-value {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--bbg-ink);
+      min-width: 56px;
+      text-align: right;
+      letter-spacing: -0.005em;
+      flex-shrink: 0;
+    }
+    @media (max-width: 640px) {
+      .dis-route__dim-value { min-width: 0; font-size: 0.8rem; }
+    }
+
+    /* Lists block */
+    .dis-route__lists {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .dis-route__list-label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-3);
+    }
+    .dis-route__list--muted .dis-route__list-label { color: var(--bbg-text-muted); }
+    .dis-route__list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .dis-route__list li {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 0.5rem;
+      align-items: start;
+      font-size: 0.875rem;
+      line-height: 1.45;
+      color: var(--bbg-text);
+    }
+    .dis-route__check {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .dis-route__check svg { width: 11px; height: 11px; }
+    .dis-route__dash {
+      display: inline-block;
+      width: 12px;
+      height: 2px;
+      background: var(--bbg-text-muted);
+      border-radius: 2px;
+      margin-top: 0.6em;
+      justify-self: center;
+    }
+
+    /* Best when callout */
+    .dis-route__when {
+      padding: var(--space-4);
+      background: var(--bbg-blue-light);
+      border-radius: 12px;
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .dis-route__when-label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.4rem;
+    }
+    .dis-route__when p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--bbg-ink);
+    }
+
+    /* CTA */
+    .dis-route__cta {
+      align-self: flex-start;
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .dis-route__cta-arrow {
+      display: inline-block;
+      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .dis-route__cta:hover .dis-route__cta-arrow { transform: translateX(4px); }
+
+    @media (max-width: 1024px) {
+      .dis-routes { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .dis-route__lists { grid-template-columns: 1fr; }
+      .dis-route__body { padding: var(--space-5); }
+    }
+
+    /* ---------- BUSINESS MODELS TABS ---------- */
+    .dis-tabs {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px -28px rgba(8, 18, 28, 0.18);
+    }
+    .dis-tabs__nav {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      background: linear-gradient(180deg, var(--bbg-surface) 0%, var(--bbg-white) 100%);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .dis-tabs__tab {
+      position: relative;
+      background: transparent;
+      border: none;
+      padding: var(--space-5) var(--space-5);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      color: var(--bbg-text-muted);
+      transition: color 240ms ease, background 240ms ease;
+      border-right: 1px solid var(--bbg-border);
+      font-family: inherit;
+    }
+    .dis-tabs__tab:last-child { border-right: none; }
+    .dis-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .dis-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .dis-tabs__tab-label {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+      line-height: 1.2;
+    }
+    .dis-tabs__tab-tag {
+      font-size: 0.85rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.35;
+    }
+    .dis-tabs__tab.is-active .dis-tabs__tab-tag { color: var(--bbg-blue); }
+    .dis-tabs__tab-pop {
+      position: absolute;
+      top: var(--space-3);
+      right: var(--space-3);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .dis-tabs__indicator {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 50%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px 2px 0 0;
+      transform: translateX(0);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    .dis-tabs__panels { background: var(--bbg-white); }
+    .dis-tabs__panel {
+      padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
+      animation: dis-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes dis-tab-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .dis-tabs__panel[hidden] { display: none; }
+    .dis-tabs__panel-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(var(--space-5), 3vw, var(--space-7));
+      align-items: start;
+    }
+    .dis-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
+    .dis-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .dis-tabs__pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.35em 0.85em;
+      border-radius: 999px;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      letter-spacing: 0.01em;
+    }
+    .dis-tabs__pill--soft {
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+    }
+    .dis-tabs__title {
+      font-size: clamp(1.625rem, 1.8vw + 1rem, 2.25rem);
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -0.015em;
+    }
+    .dis-tabs__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .dis-tabs__when {
+      padding: var(--space-4);
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .dis-tabs__when-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.35rem;
+    }
+    .dis-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
+    .dis-tabs__body { display: flex; flex-direction: column; gap: var(--space-4); }
+    .dis-tabs__list-wrap {
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+    }
+    .dis-tabs__list-wrap--muted { background: var(--bbg-white); border: 1px solid var(--bbg-border); }
+    .dis-tabs__list-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .dis-tabs__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .dis-tabs__list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .dis-tabs__check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .dis-tabs__check svg { width: 12px; height: 12px; }
+    .dis-tabs__list--muted li { grid-template-columns: 14px 1fr; }
+    .dis-tabs__dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--bbg-text-muted);
+      margin-top: 0.55em;
+      margin-left: 3px;
+    }
+    .dis-tabs__pricing {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-4);
+      padding: var(--space-4);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.12) 100%);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(38, 154, 218, 0.2);
+    }
+    .dis-tabs__pricing-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue-dark);
+      flex-shrink: 0;
+    }
+    .dis-tabs__pricing-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      line-height: 1.4;
+    }
+    @media (max-width: 1024px) {
+      .dis-tabs__nav { grid-template-columns: repeat(2, 1fr); }
+      .dis-tabs__panel-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .dis-tabs__nav { grid-template-columns: 1fr; }
+      .dis-tabs__tab { border-right: none; border-bottom: 1px solid var(--bbg-border); }
+      .dis-tabs__indicator { display: none; }
+    }
+
+    /* ---------- PHASE PANEL (new visual layout) ---------- */
+    .dis-phase-panel { padding: 0 !important; }
+    .dis-phase {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: 0;
+      align-items: stretch;
+    }
+    .dis-phase__media {
+      position: relative;
+      margin: 0;
+      min-height: 100%;
+      overflow: hidden;
+      background: var(--bbg-surface);
+    }
+    .dis-phase__media img {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+    .dis-phase__media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(8, 18, 28, 0) 50%, rgba(8, 18, 28, 0.75) 100%);
+      pointer-events: none;
+    }
+    .dis-phase__media-overlay {
+      position: absolute;
+      left: var(--space-5);
+      bottom: var(--space-5);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+      z-index: 2;
+    }
+    .dis-phase__media-phase {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--bbg-white);
+      background: rgba(8, 18, 28, 0.75);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 0.45em 0.85em;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .dis-phase__media-duration {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--bbg-blue-dark);
+      background: var(--bbg-white);
+      padding: 0.4em 0.85em;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px -4px rgba(8, 18, 28, 0.35);
+    }
+    .dis-phase__media-duration svg { width: 14px; height: 14px; }
+
+    .dis-phase__content {
+      padding: clamp(var(--space-5), 2.4vw + 1rem, var(--space-7));
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .dis-phase__head {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+    }
+    .dis-phase__icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      color: var(--bbg-blue);
+      box-shadow: inset 0 0 0 1px rgba(38, 154, 218, 0.15);
+    }
+    .dis-phase__icon svg { width: 26px; height: 26px; }
+    .dis-phase__phase-label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.3rem;
+    }
+    .dis-phase__title {
+      font-size: clamp(1.375rem, 1.4vw + 1rem, 1.875rem);
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-ink);
+      font-weight: 700;
+    }
+    .dis-phase__intro {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+
+    /* Outcome callout */
+    .dis-phase__outcome {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: var(--space-4);
+      padding: var(--space-4);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.12) 100%);
+      border-radius: 14px;
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .dis-phase__outcome-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-blue-dark);
+    }
+    .dis-phase__outcome-label svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--bbg-blue);
+      stroke: var(--bbg-blue);
+    }
+    .dis-phase__outcome p {
+      margin: 0;
+      font-size: 0.98rem;
+      line-height: 1.45;
+      color: var(--bbg-ink);
+      font-weight: 600;
+      letter-spacing: -0.005em;
+    }
+
+    /* Two columns: checks + docs */
+    .dis-phase__columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-5);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .dis-phase__col-label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .dis-phase__checks {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .dis-phase__checks li {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 0.55rem;
+      align-items: start;
+      font-size: 0.92rem;
+      line-height: 1.45;
+      color: var(--bbg-text);
+      animation: phase-fade-in 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation-delay: calc(var(--seq, 0) * 90ms + 80ms);
+    }
+    .dis-phase__check {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .dis-phase__check svg { width: 11px; height: 11px; }
+
+    /* Document tiles */
+    .dis-phase__docs {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .dis-phase__doc {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 0.7rem;
+      align-items: center;
+      padding: 0.7rem 0.9rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 10px;
+      transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+      animation: phase-fade-in 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation-delay: calc(var(--seq, 0) * 90ms + 200ms);
+    }
+    .dis-phase__doc:hover {
+      border-color: var(--bbg-blue);
+      transform: translateX(2px);
+      box-shadow: 0 8px 20px -12px rgba(38, 154, 218, 0.4);
+    }
+    .dis-phase__doc-icon {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .dis-phase__doc-icon svg { width: 18px; height: 18px; }
+    .dis-phase__doc-name {
+      font-size: 0.9rem;
+      line-height: 1.35;
+      color: var(--bbg-ink);
+      font-weight: 600;
+      letter-spacing: -0.005em;
+    }
+
+    @keyframes phase-fade-in {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .dis-phase__checks li,
+      .dis-phase__doc { animation: none; }
+    }
+
+    @media (max-width: 1024px) {
+      .dis-phase { grid-template-columns: 1fr; }
+      .dis-phase__media img { min-height: 0; aspect-ratio: 16 / 9; }
+    }
+    @media (max-width: 600px) {
+      .dis-phase__columns { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- TABS — PHASES VARIANT (4 columns, eyebrow above label) ---------- */
+    .dis-tabs__nav--phases { grid-template-columns: repeat(4, 1fr); }
+    .dis-tabs__nav--phases + .dis-tabs__panels {
+      /* keep panel layout shared */
+    }
+    .dis-tabs--phases .dis-tabs__tab { gap: 0.5rem; }
+    .dis-tabs__tab-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      line-height: 1;
+    }
+    .dis-tabs__tab:not(.is-active) .dis-tabs__tab-eyebrow {
+      color: var(--bbg-text-muted);
+    }
+    .dis-tabs--phases .dis-tabs__tab-label {
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+    .dis-phase-head {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    .dis-phase-head__icon {
+      display: inline-flex;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+      box-shadow: inset 0 0 0 1px rgba(38, 154, 218, 0.15);
+    }
+    .dis-phase-head__icon svg { width: 22px; height: 22px; }
+    .dis-phase-head .dis-tabs__title { margin: 0; }
+
+    @media (max-width: 1024px) {
+      .dis-tabs__nav--phases { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .dis-tabs__nav--phases { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- MATRIX ---------- */
+    .dis-matrix {
+      margin-top: var(--space-8);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: clamp(var(--space-5), 3vw + 1rem, var(--space-7));
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+    }
+    .dis-matrix__intro { text-align: center; margin-bottom: var(--space-6); }
+    .dis-matrix__intro h3 {
+      font-size: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
+      margin: var(--space-2) 0 var(--space-3);
+      letter-spacing: -0.01em;
+    }
+    .dis-matrix__intro p {
+      color: var(--bbg-text);
+      max-width: 56ch;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .dis-matrix__grid {
+      display: grid;
+      grid-template-columns: minmax(140px, 0.8fr) 1fr 1fr;
+      gap: 1px;
+      background: var(--bbg-border);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .dis-matrix__corner,
+    .dis-matrix__head,
+    .dis-matrix__row-head,
+    .dis-matrix__cell {
+      background: var(--bbg-white);
+      padding: var(--space-4);
+    }
+    .dis-matrix__corner { background: var(--bbg-surface); }
+    .dis-matrix__head {
+      background: var(--bbg-surface);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .dis-matrix__row-head {
+      background: var(--bbg-surface);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      display: flex;
+      align-items: center;
+    }
+    .dis-matrix__cell {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      transition: background var(--dur) var(--ease);
+      cursor: pointer;
+      border: none;
+      text-align: left;
+      font-family: inherit;
+    }
+    .dis-matrix__cell:hover { background: var(--bbg-blue-light); }
+    .dis-matrix__cell:focus-visible {
+      outline: 3px solid var(--bbg-blue);
+      outline-offset: -3px;
+    }
+    .dis-matrix__cell-label {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+    }
+    .dis-matrix__cell-sub {
+      font-size: 0.9rem;
+      color: var(--bbg-text);
+      line-height: 1.45;
+    }
+    .dis-matrix__note {
+      margin: var(--space-5) auto 0;
+      max-width: 68ch;
+      text-align: center;
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 0.975rem;
+    }
+    .dis-matrix__grid.is-hover-row .dis-matrix__cell { opacity: 0.4; }
+    .dis-matrix__grid.is-hover-row .dis-matrix__cell.is-row-active,
+    .dis-matrix__grid.is-hover-row .dis-matrix__cell.is-col-active { opacity: 1; background: var(--bbg-blue-light); }
+    .dis-matrix__grid.is-hover-row .dis-matrix__row-head,
+    .dis-matrix__grid.is-hover-row .dis-matrix__head { opacity: 0.4; }
+    .dis-matrix__grid.is-hover-row .dis-matrix__row-head.is-active,
+    .dis-matrix__grid.is-hover-row .dis-matrix__head.is-active {
+      opacity: 1;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    @media (max-width: 720px) {
+      .dis-matrix__grid { grid-template-columns: 1fr 1fr; }
+      .dis-matrix__corner { display: none; }
+      .dis-matrix__head { font-size: 0.75rem; padding: var(--space-3); }
+      .dis-matrix__row-head {
+        grid-column: 1 / -1;
+        background: var(--bbg-blue-light);
+        color: var(--bbg-blue-dark);
+        justify-content: center;
+        padding: var(--space-3);
+      }
+    }
+
+    /* ---------- JOURNEY (vertical timeline) ---------- */
+    .dis-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .dis-journey-section__bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      opacity: 0.10;
+      pointer-events: none;
+    }
+    .dis-journey-section__bg::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, var(--bbg-surface) 0%, rgba(247, 249, 251, 0.6) 40%, rgba(247, 249, 251, 0.9) 100%);
+    }
+    .dis-journey-section__bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      filter: saturate(0.55);
+    }
+
+    .dis-journey {
+      position: relative;
+      max-width: 920px;
+      margin: 0 auto;
+      padding-left: 64px;
+    }
+    .dis-journey__rail {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 26px;
+      width: 2px;
+    }
+    .dis-journey__rail-track {
+      position: absolute; inset: 0;
+      background: var(--bbg-border);
+      border-radius: 2px;
+    }
+    .dis-journey__rail-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--journey-progress, 0%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transition: height 120ms linear;
+      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+    }
+    .dis-journey__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-7);
+    }
+    .dis-journey__item { position: relative; }
+    .dis-journey__dot {
+      position: absolute;
+      left: -64px;
+      top: 8px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--bbg-white);
+      border: 2px solid var(--bbg-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: border-color 320ms ease;
+    }
+    .dis-journey__dot-inner {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: background 320ms ease, transform 320ms ease;
+    }
+    .dis-journey__item.is-active .dis-journey__dot { border-color: var(--bbg-blue); }
+    .dis-journey__item.is-active .dis-journey__dot-inner {
+      background: var(--bbg-blue);
+      transform: scale(1.1);
+      box-shadow: 0 0 0 4px var(--bbg-blue-light);
+    }
+    .dis-journey__phase {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+      transition: color 320ms ease;
+    }
+    .dis-journey__item.is-active .dis-journey__phase { color: var(--bbg-blue); }
+    .dis-journey__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6) var(--space-7);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .dis-journey__item:hover .dis-journey__card,
+    .dis-journey__item.is-active .dis-journey__card {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      transform: translateX(4px);
+    }
+    .dis-journey__card-head {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+    }
+    .dis-journey__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .dis-journey__icon svg { width: 24px; height: 24px; }
+    .dis-journey__title {
+      font-size: clamp(1.25rem, 1vw + 0.875rem, 1.625rem);
+      line-height: 1.2;
+      margin: 0;
+      letter-spacing: -0.01em;
+      font-weight: 700;
+      color: var(--bbg-ink);
+    }
+    .dis-journey__desc {
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .dis-journey__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-5);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .dis-journey__label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .dis-journey__label--blue { color: var(--bbg-blue); }
+    .dis-journey__bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .dis-journey__bullets li {
+      position: relative;
+      padding-left: 1.25rem;
+      color: var(--bbg-text);
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    .dis-journey__bullets li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+    }
+    .dis-journey__bullets--blue li::before { background: var(--bbg-blue); }
+
+    @media (max-width: 720px) {
+      .dis-journey { padding-left: 40px; }
+      .dis-journey__rail { left: 16px; }
+      .dis-journey__dot { left: -40px; width: 36px; height: 36px; top: 4px; }
+      .dis-journey__dot-inner { width: 12px; height: 12px; }
+      .dis-journey__card { padding: var(--space-5); }
+      .dis-journey__grid { grid-template-columns: 1fr; gap: var(--space-4); }
+    }
+
+    /* ---------- BEYONDCOMPASS ---------- */
+    .dis-compass {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      border-radius: 24px;
+      color: var(--bbg-white);
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8));
+      box-shadow: 0 24px 60px -30px rgba(8, 18, 28, 0.55);
+    }
+    .dis-compass__bg {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(80% 60% at 100% 0%, rgba(38, 154, 218, 0.42) 0%, rgba(38, 154, 218, 0) 60%),
+        radial-gradient(60% 50% at 0% 100%, rgba(38, 154, 218, 0.22) 0%, rgba(38, 154, 218, 0) 60%),
+        linear-gradient(160deg, #0e2030 0%, #08141f 60%);
+    }
+    .dis-compass__grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+      gap: clamp(var(--space-5), 3vw, var(--space-7));
+      align-items: center;
+    }
+    .dis-compass__copy {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+      min-width: 0;
+    }
+    .dis-compass__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+    }
+    .dis-compass__logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bbg-white);
+      border-radius: 12px;
+      padding: 10px 18px;
+      box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.35);
+      height: 56px;
+    }
+    .dis-compass__logo img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    @media (max-width: 1024px) {
+      .dis-compass__grid { grid-template-columns: 1fr; }
+    }
+    .dis-compass__chip {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9DDBF5;
+      background: rgba(38, 154, 218, 0.18);
+      padding: 0.4em 0.85em;
+      border-radius: 999px;
+      border: 1px solid rgba(155, 217, 245, 0.25);
+    }
+    .dis-compass__pitch {
+      font-size: clamp(1.5rem, 1.4vw + 1rem, 2.125rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--bbg-white);
+      font-weight: 700;
+      margin: 0;
+      max-width: 22ch;
+    }
+    .dis-compass__body {
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.82);
+      margin: 0;
+      max-width: 64ch;
+    }
+    .dis-compass__stats {
+      list-style: none;
+      padding: var(--space-5) 0 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .dis-compass__stats li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .dis-compass__stat-num {
+      font-size: clamp(1.75rem, 1.4vw + 1rem, 2.375rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: #9DDBF5;
+      font-feature-settings: "tnum";
+    }
+    .dis-compass__stat-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.01em;
+      line-height: 1.4;
+    }
+    .dis-compass__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-top: var(--space-3);
+    }
+    .dis-compass__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-ink);
+      border: 1px solid var(--bbg-white);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .dis-compass__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .dis-compass__btn-arrow {
+      display: inline-block;
+      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .dis-compass__btn-primary:hover .dis-compass__btn-arrow {
+      transform: translate(2px, -2px);
+    }
+    .dis-compass__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: var(--bbg-white);
+    }
+    .dis-compass__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+    @media (max-width: 720px) {
+      .dis-compass__stats { grid-template-columns: 1fr; gap: var(--space-4); }
+    }
+
+    /* ---------- COMPASS ART (vetted database SVG) ---------- */
+    .dis-compass__art {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      min-width: 0;
+    }
+    .dis-compass__art > svg {
+      width: 100%;
+      height: auto;
+      max-width: 480px;
+      margin-left: auto;
+      display: block;
+      filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.4));
+    }
+    /* Animations on SVG groups: only animate opacity to avoid clobbering
+       the SVG `transform` attribute on the same element. Pop / pulse effects
+       are scoped to elements with transform-box: fill-box. */
+    .dis-compass__art .cmp-card {
+      animation: cmp-fade-in 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .dis-compass__art .cmp-card--4 { animation-delay: 80ms; }
+    .dis-compass__art .cmp-card--3 { animation-delay: 200ms; }
+    .dis-compass__art .cmp-card--2 { animation-delay: 320ms; }
+    .dis-compass__art .cmp-card--1 { animation-delay: 460ms; }
+    .dis-compass__art .cmp-check {
+      animation: cmp-fade-in 500ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+    .dis-compass__art .cmp-card--4 .cmp-check { animation-delay: 360ms; }
+    .dis-compass__art .cmp-card--3 .cmp-check { animation-delay: 480ms; }
+    .dis-compass__art .cmp-card--2 .cmp-check { animation-delay: 600ms; }
+    .dis-compass__art .cmp-card--1 .cmp-check { animation-delay: 740ms; }
+    .dis-compass__art .cmp-seal {
+      animation: cmp-fade-in 800ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+    }
+    .dis-compass__art .cmp-live {
+      animation: cmp-live-pulse 2.2s ease-in-out 1.5s infinite;
+    }
+    @keyframes cmp-fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes cmp-live-pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .dis-compass__art .cmp-card,
+      .dis-compass__art .cmp-check,
+      .dis-compass__art .cmp-seal,
+      .dis-compass__art .cmp-live { animation: none; }
+    }
+    .dis-compass__art-key {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      max-width: 480px;
+      margin-left: auto;
+      width: 100%;
+    }
+    .dis-compass__art-key li {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.4;
+    }
+    .dis-compass__art-dot {
+      flex-shrink: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      box-shadow: 0 0 0 3px rgba(38, 154, 218, 0.2);
+    }
+    .dis-compass__art-dot--vetted { background: #fff; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15); }
+    .dis-compass__art-dot--live { background: #5BC2F0; box-shadow: 0 0 0 3px rgba(91, 194, 240, 0.25); }
+    .dis-compass__art-dot--reject {
+      background: transparent;
+      border: 1px dashed rgba(255, 255, 255, 0.4);
+      box-shadow: none;
+    }
+    @media (max-width: 900px) {
+      .dis-compass__art > svg { max-width: 100%; margin: 0 auto; }
+      .dis-compass__art-key { margin: 0 auto; }
+    }
+
+    /* ---------- COMPASS TIERS ---------- */
+    .dis-compass-tiers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+      margin-top: var(--space-5);
+    }
+    .dis-compass-tier {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+    }
+    .dis-compass-tier::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: var(--space-6);
+      right: var(--space-6);
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      transform: scaleX(0.3);
+      transform-origin: left center;
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      border-radius: 0 0 2px 2px;
+    }
+    .dis-compass-tier:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+    }
+    .dis-compass-tier:hover::before { transform: scaleX(1); }
+    .dis-compass-tier__label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+    }
+    .dis-compass-tier__lead {
+      font-size: 1.0625rem;
+      line-height: 1.5;
+      color: var(--bbg-ink);
+      font-weight: 600;
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+    .dis-compass-tier__when {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      color: var(--bbg-text-muted);
+      margin-top: auto;
+    }
+    @media (max-width: 1024px) {
+      .dis-compass-tiers { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- FAQ FILTER ---------- */
+    .dis-faq-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: var(--space-6);
+    }
+    .dis-faq-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--bbg-text);
+      transition: all 220ms ease;
+      font-family: inherit;
+    }
+    .dis-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .dis-faq-chip.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    .dis-faq-chip__count {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: all 220ms ease;
+    }
+    .dis-faq-chip:hover .dis-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .dis-faq-chip.is-active .dis-faq-chip__count {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--bbg-white);
+    }
+
+    /* ---------- FAQ ITEMS ---------- */
+    .dis-faq {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .dis-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .dis-faq__item:hover {
+      transform: translateX(2px);
+      border-color: rgba(38, 154, 218, 0.4);
+    }
+    .dis-faq__item[open] {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+    }
+    .dis-faq__item.is-hidden { display: none; }
+    .dis-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .dis-faq__q::-webkit-details-marker { display: none; }
+    .dis-faq__q::marker { display: none; }
+    .dis-faq__item:hover .dis-faq__q { color: var(--bbg-blue); }
+    .dis-faq__cat-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 0.25em 0.6em;
+      border-radius: 4px;
+      margin-right: var(--space-3);
+      flex-shrink: 0;
+    }
+    .dis-faq__q-text { flex-grow: 1; }
+    .dis-faq__icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), color var(--dur) var(--ease), background var(--dur) var(--ease);
+    }
+    .dis-faq__item[open] .dis-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-white);
+      background: var(--bbg-blue);
+    }
+    .dis-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+      animation: dis-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes dis-faq-in {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .dis-faq__a p { margin: 0; }
+
+    /* ---------- FINAL CTA ---------- */
+    .dis-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .dis-cta::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .dis-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .dis-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .dis-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 52ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .dis-cta__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .dis-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .dis-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .dis-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .dis-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
+
+  <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // 1. Reveal-on-scroll
+      const revealEls = document.querySelectorAll('.dis-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      // 2. Hero meta counters
+      const counters = document.querySelectorAll('[data-counter]');
+      if (counters.length && !reduced && 'IntersectionObserver' in window) {
+        const animate = (el) => {
+          const target = parseFloat(el.dataset.counter || '0');
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(target * eased);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        };
+        const counterIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((el) => counterIo.observe(el));
+      } else {
+        counters.forEach((el) => {
+          el.textContent = (el.dataset.counter || '0') + (el.dataset.suffix || '');
+        });
+      }
+
+      // 3. Hero parallax + scroll progress bar
+      const parallaxEl = document.querySelector('[data-parallax]');
+      const progressEl = document.querySelector('.dis-progress__bar');
+      const heroEl = document.querySelector('[data-hero]');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          if (parallaxEl && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // 4. Smooth scroll for in-page anchors
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+
+      // 5. FAQ accordion behaviour: close others when one opens
+      const faqItems = document.querySelectorAll('.dis-faq__item');
+      faqItems.forEach((item) => {
+        item.addEventListener('toggle', () => {
+          if (item.open) {
+            faqItems.forEach((other) => {
+              if (other !== item && other.open) other.open = false;
+            });
+          }
+        });
+      });
+
+      // 6. Tabs (business models + phases) — supports multiple [data-tabs] instances
+      document.querySelectorAll('[data-tabs]').forEach((tabsRoot) => {
+        const tabs = Array.from(tabsRoot.querySelectorAll(':scope > .dis-tabs__nav .dis-tabs__tab'));
+        const panels = Array.from(tabsRoot.querySelectorAll(':scope > .dis-tabs__panels > .dis-tabs__panel'));
+        const indicator = tabsRoot.querySelector(':scope > .dis-tabs__nav > .dis-tabs__indicator');
+        if (!tabs.length || !panels.length) return;
+        const setActive = (tab) => {
+          tabs.forEach((t) => {
+            const active = t === tab;
+            t.classList.toggle('is-active', active);
+            t.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          const targetId = tab.getAttribute('data-tab-target');
+          panels.forEach((p) => {
+            const active = p.id === targetId;
+            p.classList.toggle('is-active', active);
+            if (active) p.removeAttribute('hidden');
+            else p.setAttribute('hidden', '');
+          });
+          if (indicator) {
+            const idx = tabs.indexOf(tab);
+            const w = 100 / tabs.length;
+            indicator.style.width = w + '%';
+            indicator.style.transform = `translateX(${idx * 100}%)`;
+          }
+        };
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => setActive(tab));
+          tab.addEventListener('keydown', (e) => {
+            const idx = tabs.indexOf(tab);
+            if (e.key === 'ArrowRight') {
+              e.preventDefault();
+              const next = tabs[(idx + 1) % tabs.length];
+              next.focus();
+              setActive(next);
+            } else if (e.key === 'ArrowLeft') {
+              e.preventDefault();
+              const prev = tabs[(idx - 1 + tabs.length) % tabs.length];
+              prev.focus();
+              setActive(prev);
+            }
+          });
+        });
+        const initialActive = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
+        if (initialActive) setActive(initialActive);
+      });
+
+      // 7. Matrix hover + click
+      const matrix = document.querySelector('[data-matrix] .dis-matrix__grid');
+      if (matrix) {
+        const cells = Array.from(matrix.querySelectorAll('.dis-matrix__cell'));
+        const heads = Array.from(matrix.querySelectorAll('.dis-matrix__head'));
+        const rowHeads = Array.from(matrix.querySelectorAll('.dis-matrix__row-head'));
+        const clearHighlight = () => {
+          matrix.classList.remove('is-hover-row');
+          cells.forEach((c) => c.classList.remove('is-row-active', 'is-col-active'));
+          heads.forEach((h) => h.classList.remove('is-active'));
+          rowHeads.forEach((h) => h.classList.remove('is-active'));
+        };
+        cells.forEach((cell) => {
+          const row = cell.dataset.row;
+          const col = cell.dataset.col;
+          cell.addEventListener('mouseenter', () => {
+            matrix.classList.add('is-hover-row');
+            cells.forEach((c) => {
+              c.classList.toggle('is-row-active', c.dataset.row === row);
+              c.classList.toggle('is-col-active', c.dataset.col === col);
+            });
+            heads.forEach((h) => h.classList.toggle('is-active', h.dataset.col === col));
+            rowHeads.forEach((h) => h.classList.toggle('is-active', h.dataset.row === row));
+          });
+          cell.addEventListener('mouseleave', clearHighlight);
+          cell.addEventListener('click', () => {
+            const targetTabId = cell.dataset.tabJump;
+            const tab = targetTabId && document.getElementById(targetTabId);
+            if (tab) {
+              tab.click();
+              tab.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+              tab.focus();
+            }
+          });
+        });
+      }
+
+      // 8. FAQ category filter
+      const faqFilter = document.querySelector('[data-faq-filter]');
+      const faqList = document.querySelector('[data-faq-list]');
+      if (faqFilter && faqList) {
+        const chips = Array.from(faqFilter.querySelectorAll('.dis-faq-chip'));
+        const items = Array.from(faqList.querySelectorAll('.dis-faq__item'));
+        chips.forEach((chip) => {
+          chip.addEventListener('click', () => {
+            const cat = chip.dataset.faqCat;
+            chips.forEach((c) => {
+              const on = c === chip;
+              c.classList.toggle('is-active', on);
+              c.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            items.forEach((item) => {
+              const matches = cat === 'Toutes' || item.dataset.faqCat === cat;
+              item.classList.toggle('is-hidden', !matches);
+            });
+          });
+        });
+      }
+    })();
+  </script>
+</Layout>
