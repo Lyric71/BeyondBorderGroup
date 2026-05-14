@@ -3,53 +3,53 @@ import Layout from '../../../layouts/Layout.astro';
 
 const promises = [
   {
-    title: 'Animé par des opérationnels, pas par des tour-opérateurs',
-    desc: 'Celles et ceux qui animent les sessions gèrent des comptes sur les mêmes plateformes. Vous demandez ce qui marche, ils répondent avec la campagne de la semaine passée.',
+    title: 'Conduit par des praticiens, non par des prestataires de voyage',
+    desc: 'Les intervenants pilotent eux-mêmes des comptes sur les plateformes étudiées. La question posée appelle une réponse adossée à la campagne livrée la semaine précédente, et non à un retour d’expérience reconstitué.',
   },
   {
-    title: 'Un vrai accès, pas des visites mises en scène',
-    desc: 'Représentants plateformes, dirigeants MCN, opérationnels marques. La plupart acceptent parce que nous travaillons déjà avec eux. Vous voyez les dashboards backend et les chiffres en direct, là où la maison l\'autorise.',
+    title: 'Un accès opérationnel, jamais une visite préparée pour la galerie',
+    desc: 'Représentants des plateformes, dirigeants de MCN, responsables de marque : la plupart répondent présent parce qu’une relation de travail existe déjà. Tableaux de bord internes et chiffres en temps réel sont consultés sur place, dans la limite que chaque entreprise consent.',
   },
   {
-    title: 'Un plan sur mesure, pas un slide deck',
-    desc: 'Un atelier en troisième ou quatrième journée transforme ce que vous avez vu en actions pour votre catégorie, votre budget et votre équipe. Nous le finalisons par écrit après votre retour.',
+    title: 'Un plan d’action sur mesure, et non une présentation générique',
+    desc: 'Un atelier programmé en troisième ou quatrième journée transpose les observations recueillies en décisions pour votre catégorie, votre budget et votre équipe. La feuille de route définitive est rédigée à votre retour, puis remise sous format écrit.',
   },
 ];
 
 const formats = [
   {
     icon: 'talk',
-    title: 'Dialogues experts',
-    short: 'Plateformes · Opérationnels · MCN',
-    desc: 'Sessions avec celles et ceux qui pilotent les plateformes, les comptes marques et les agences créateurs. La pièce est dans la pièce.',
-    points: ['Account managers des plateformes', 'Opérationnels marques de votre catégorie', 'Dirigeants MCN et talent managers'],
+    title: 'Entretiens avec des experts',
+    short: 'Plateformes · Praticiens · MCN',
+    desc: 'Des sessions menées par les responsables qui pilotent au quotidien les plateformes, les comptes de marque et les agences de créateurs. Les bons interlocuteurs réunis dans la même salle.',
+    points: ['Responsables de compte des plateformes', 'Praticiens d’une marque de votre catégorie', 'Dirigeants de MCN et responsables de talents'],
     color: '#269ADA',
     colorSoft: '#E8F4FC',
   },
   {
     icon: 'building',
     title: 'Visites d\'entreprises',
-    short: 'Sièges · Studios · Labs IA',
-    desc: 'On traverse des opérations en marche. La visite presse n\'est pas l\'objectif. Systèmes backend là où l\'accès le permet.',
-    points: ['Centres opérationnels des plateformes', 'Studios de production de contenu et de livestream', 'Sociétés IA, retail tech et logistique'],
+    short: 'Sièges · Studios · Laboratoires d’IA',
+    desc: 'Une immersion dans des opérations en activité. Loin du parcours protocolaire, l’itinéraire conduit au plus près des systèmes internes, dans la limite que chaque entreprise consent.',
+    points: ['Centres opérationnels des plateformes', 'Studios de production de contenu et de livestream', 'Entreprises spécialisées dans l’intelligence artificielle, la retail tech et la logistique'],
     color: '#0EA46C',
     colorSoft: '#E6F5EE',
   },
   {
     icon: 'store',
-    title: 'Marches en boutique',
-    short: 'Flagship · Smart retail · Tier 3',
-    desc: 'Comportement consommateur, flux de paiement et technologies retail observés en direct, pas rapportés.',
-    points: ['Boutiques flagship et new retail', 'Formats smart retail et O2O', 'Quartiers Tier 3 où les marques mainstream passent à côté'],
+    title: 'Parcours en boutiques',
+    short: 'Flagship · Retail intelligent · Tier 3',
+    desc: 'Comportements d’achat, parcours de paiement et technologies de vente observés sur le terrain, jamais restitués de seconde main.',
+    points: ['Boutiques flagship et concepts new retail', 'Formats de retail intelligent et dispositifs O2O', 'Quartiers de Tier 3, là où les marques mondiales passent à côté de la demande réelle'],
     color: '#7C5DFA',
     colorSoft: '#F0EDFE',
   },
   {
     icon: 'tools',
-    title: 'Ateliers',
-    short: 'Appliquer · Décider · Planifier',
-    desc: 'Convertir ce que vous avez vu en un plan opérationnel pour votre catégorie, votre budget et l\'équipe qui devra le livrer.',
-    points: ['Évaluation des plateformes et des canaux', 'Audit contenu et IA', 'Budget, KPI et feuille de route à 12 mois'],
+    title: 'Ateliers de décision',
+    short: 'Appliquer · Trancher · Planifier',
+    desc: 'Convertir les observations recueillies en un plan d’action calibré pour votre catégorie, votre budget et l’équipe qui devra l’exécuter.',
+    points: ['Évaluation des plateformes et des canaux', 'Diagnostic des contenus et de l’intelligence artificielle', 'Budget, indicateurs et feuille de route sur douze mois'],
     color: '#E54B6E',
     colorSoft: '#FCEAEF',
   },
@@ -57,49 +57,49 @@ const formats = [
 
 const tracks = [
   {
-    name: 'E-commerce et digital',
+    name: 'Commerce électronique et numérique',
     tag: '4 jours, Tmall + Douyin + JD + RED',
-    desc: 'Les plateformes qui captent 80 % des transactions consommateurs. Comment elles fonctionnent, ce qu\'elles coûtent, ce que font vraiment les opérationnels au quotidien.',
-    when: 'Vous êtes à six à dix-huit mois d\'un lancement, ou déjà installé sur les plateformes et en quête d\'une lecture plus nette. Vous voulez voir les opérationnels, les studios et les dashboards qui sont derrière les études de cas publiques.',
+    desc: 'Les plateformes qui concentrent 80 % des transactions destinées aux consommateurs chinois : leur fonctionnement, leur économie réelle, le quotidien de celles et ceux qui les opèrent.',
+    when: 'Adressé aux marques qui préparent leur lancement à six ou dix-huit mois, comme à celles déjà présentes sur les plateformes en quête d’une lecture plus tranchée. L’itinéraire conduit aux opérateurs, aux studios et aux tableaux de bord situés en amont des études de cas publiées.',
     bullets: [
       'Centres opérationnels Tmall Global et JD Worldwide',
-      'Une marque en activité qui gère cross-border et flagship domestique',
-      'Production de contenu Douyin et plateaux de livestream',
-      'Agence MCN qui gère un portefeuille de créateurs dans votre catégorie',
-      'Account managers plateformes sur les mécaniques et l\'économie',
-      'Acheteur média digital sur les CAC catégorie et les benchmarks de conversion',
+      'Une marque en activité qui pilote conjointement le cross-border et son flagship domestique',
+      'Production de contenu sur Douyin et plateaux de livestream',
+      'Agence MCN qui gère un portefeuille de créateurs au sein de votre catégorie',
+      'Responsables de compte des plateformes sur les mécaniques et l’économie réelle',
+      'Acheteur média numérique sur les coûts d’acquisition par catégorie et les références de conversion',
     ],
-    pricing: 'Six à dix participants. Huit semaines de préavis. Shanghai, plus une journée Hangzhou en option.',
+    pricing: 'Six à dix participants. Huit semaines de préavis. Shanghai, avec une journée à Hangzhou en option.',
     highlight: false,
   },
   {
-    name: 'IA et technologie',
-    tag: '4 jours, IA en marche dans le commerce',
-    desc: 'Au cœur des systèmes IA qui font tourner le contenu, le commerce, le retail et la logistique en Chine. Des opérationnels, pas des vendeurs.',
-    when: 'Vous portez une initiative de transformation, ou vous tenez un P&L digital. Vous voulez voir ce que l\'IA livre vraiment en production, chiffres de coûts et résultats opérationnels à l\'appui.',
+    name: 'Intelligence artificielle et technologie',
+    tag: '4 jours, l’IA déployée dans le commerce',
+    desc: 'Au cœur des systèmes d’intelligence artificielle qui irriguent en Chine le contenu, le commerce, la distribution et la logistique. Côté opérationnel, jamais côté commercial.',
+    when: 'Pour les dirigeants qui pilotent un chantier de transformation ou détiennent un compte de résultat numérique. L’itinéraire montre ce que l’intelligence artificielle livre en production, coûts à l’appui et résultats opérationnels à la clé.',
     bullets: [
-      'Société de production de contenu par IA à grande échelle',
-      'Systèmes de recommandation à l\'intérieur d\'un opérateur e-commerce en activité',
-      'Centre de service client avec des agents IA en mandarin',
-      'Boutiques smart retail équipées de vision par ordinateur',
-      'Entrepôt avec robotique et machine vision en production',
-      'Conseiller privacy et conformité sur PIPL et flux de données',
+      'Société de production de contenu par intelligence artificielle, à grande échelle',
+      'Systèmes de recommandation au sein d’un opérateur de commerce électronique en activité',
+      'Centre de relation client doté d’agents conversationnels en mandarin',
+      'Boutiques de retail intelligent équipées de vision par ordinateur',
+      'Entrepôt logistique sous robotique et vision artificielle, en production',
+      'Conseiller en protection des données et conformité, sur la PIPL et les flux transfrontaliers',
     ],
     pricing: 'Six à dix participants. Dix semaines de préavis. Shanghai et Shenzhen.',
     highlight: true,
   },
   {
-    name: 'Retail et consommateur',
-    tag: '3 à 4 jours, boutiques et comportements',
-    desc: 'Derrière les plateformes, les vraies boutiques et les vrais acheteurs. New retail, formats intelligents et dynamiques des villes de Tier 3.',
-    when: 'Votre catégorie penche physique, ou vous voulez comprendre le consommateur qui décide avant même d\'apparaître sur Tmall.',
+    name: 'Distribution et consommation',
+    tag: '3 à 4 jours, points de vente et comportements',
+    desc: 'Derrière les plateformes, les magasins eux-mêmes et les véritables acheteurs. New retail, formats intelligents et dynamiques propres aux villes de Tier 3.',
+    when: 'Pour les marques dont la catégorie pèse au physique, ou qui cherchent à comprendre le consommateur dont la décision se forme bien avant le passage sur Tmall.',
     bullets: [
-      'Boutiques flagship de marque et concepts new retail',
-      'Formats smart retail sans caisse et vision par ordinateur',
-      'Quartiers shopping et flux de chalandise aux heures de pointe',
-      'Visite d\'une ville de Tier 3 pour étudier la demande mainstream',
-      'Responsable innovation retail sur l\'intégration O2O',
-      'Équipe consumer research sur la segmentation par rang de ville',
+      'Boutiques flagship et concepts new retail',
+      'Formats de retail intelligent sans caisse, sous vision par ordinateur',
+      'Quartiers commerçants et flux piétons aux heures de forte affluence',
+      'Visite d’une ville de Tier 3 pour cerner la demande grand public',
+      'Responsable de l’innovation retail sur l’intégration omnicanale',
+      'Équipe d’études consommateurs sur la segmentation par rang de ville',
     ],
     pricing: 'Six à dix participants. Huit semaines de préavis. Shanghai et une ville de second rang.',
     highlight: false,
@@ -107,15 +107,15 @@ const tracks = [
   {
     name: 'Contenu et créateurs',
     tag: '4 jours, livestream + KOL + MCN',
-    desc: 'Le moteur du content commerce. Studios, agences et créateurs qui font vraiment tourner la machine aujourd\'hui.',
-    when: 'Vos campagnes reposent sur les créateurs, ou votre catégorie bascule de la recherche au content commerce. Vous avez besoin de savoir avec qui travailler et comment les deals s\'écrivent.',
+    desc: 'Le moteur du commerce par le contenu. Studios, agences et créateurs qui font tenir la mécanique en 2026.',
+    when: 'Pour les marques dont les campagnes reposent sur les créateurs, ou dont la catégorie bascule de la recherche vers le commerce par le contenu. Savoir avec qui s’engager, sur quelles bases contractuelles, devient décisif.',
     bullets: [
       'Deux sessions de livestream en direct sur Douyin et RED',
-      'Agence MCN avec son roster de créateurs et ses grilles tarifaires',
-      'Société de production de contenu sur la chaîne créative',
-      'Entretien avec un créateur de premier rang sur la stratégie par tier et les dynamiques catégorie',
-      'Manager plateforme sur les mécaniques de distribution de contenu',
-      'Opérationnel marque sur KOL contre KOC contre contenu brandé',
+      'Agence MCN avec son portefeuille de créateurs et ses grilles tarifaires',
+      'Société de production de contenu, autour de sa chaîne créative',
+      'Entretien avec un créateur de premier rang, sur la stratégie par tier et les dynamiques de catégorie',
+      'Responsable plateforme sur les mécaniques de distribution de contenu',
+      'Praticien d’une marque, sur l’arbitrage entre KOL, KOC et contenu signé par la marque',
     ],
     pricing: 'Six à dix participants. Huit semaines de préavis. Shanghai et Hangzhou.',
     highlight: false,
@@ -127,7 +127,7 @@ const cities = [
     name: 'Shanghai',
     cn: '上海',
     mono: 'SH',
-    sub: 'Quartier général commercial pour presque toutes les marques en Chine. Tmall, Pinduoduo, les agences, les studios. La plupart des expéditions partent d\'ici.',
+    sub: 'Place commerciale de référence pour la quasi-totalité des marques présentes en Chine. Tmall, Pinduoduo, les agences, les studios y concentrent leurs équipes. La plupart des expéditions s’y ouvrent.',
     brandColor: '#269ADA',
     accent: '#1E7DB0',
   },
@@ -135,7 +135,7 @@ const cities = [
     name: 'Hangzhou',
     cn: '杭州',
     mono: 'HZ',
-    sub: 'Le fief d\'Alibaba. Opérations Tmall et Taobao, hubs du livestream commerce et écosystème MCN du delta du Yangtze.',
+    sub: 'Le fief historique d’Alibaba. On y rencontre les équipes de Tmall et de Taobao, les hauts lieux du livestream commerce et l’écosystème MCN du delta du Yangtze.',
     brandColor: '#E54B6E',
     accent: '#C73E5C',
   },
@@ -143,7 +143,7 @@ const cities = [
     name: 'Shenzhen',
     cn: '深圳',
     mono: 'SZ',
-    sub: 'Tencent et la ceinture tech. WeChat, hardware, labs IA et l\'innovation retail qui remonte à Shanghai un an plus tard.',
+    sub: 'Tencent et la grande ceinture technologique. WeChat, le matériel électronique, les laboratoires d’intelligence artificielle, et l’innovation retail dont Shanghai s’empare un an plus tard.',
     brandColor: '#7C5DFA',
     accent: '#5E45D6',
   },
@@ -151,7 +151,7 @@ const cities = [
     name: 'Pékin',
     cn: '北京',
     mono: 'BJ',
-    sub: 'Luxe, retail traditionnel et sièges de marques. Utile quand la catégorie penche premium ou frôle les sujets institutionnels.',
+    sub: 'Capitale du luxe, du commerce traditionnel et des sièges sociaux. Étape pertinente lorsque la catégorie joue dans le haut de gamme ou côtoie les enjeux institutionnels.',
     brandColor: '#0EA46C',
     accent: '#088955',
   },
@@ -161,49 +161,49 @@ const takeaways = [
   {
     icon: 'eye',
     title: 'Dossier de préparation',
-    desc: 'Lectures préalables, liste de contacts et contexte catégorie. Envoyé quatorze jours avant le départ.',
+    desc: 'Lectures préalables, annuaire des interlocuteurs et lecture de la catégorie. Transmis quatorze jours avant le départ, afin que la délégation arrive en terrain connu.',
   },
   {
     icon: 'document',
-    title: 'Comptes rendus en direct',
-    desc: 'Notes de travail de chaque session expert, traduites et partagées le soir même.',
+    title: 'Comptes rendus rédigés au fil de l’eau',
+    desc: 'Synthèses de travail issues de chaque entretien expert, traduites et diffusées le soir même, pour permettre à la délégation de revenir sur les arbitrages du jour.',
   },
   {
     icon: 'avatar',
-    title: 'Annuaire des contacts',
-    desc: 'Les opérationnels, représentants plateformes et créateurs rencontrés, avec les mises en relation maintenues actives.',
+    title: 'Carnet d’adresses opérationnel',
+    desc: 'Les responsables, intervenants plateformes et créateurs rencontrés, accompagnés des mises en relation entretenues dans la durée.',
   },
   {
     icon: 'phone',
-    title: 'Appel de suivi',
-    desc: 'Soixante minutes de questions-réponses avec l\'opérationnel qui a piloté le voyage, quatre semaines après votre retour.',
+    title: 'Entretien de suivi',
+    desc: 'Une heure de questions-réponses avec le praticien qui aura conduit le voyage, quatre semaines après le retour, afin d’ajuster la mise en œuvre.',
   },
 ];
 
 const faqs = [
-  { cat: 'Programme', q: 'À quel point le programme est-il sur mesure ?', a: 'Chaque expédition est bâtie autour du brief que vous nous envoyez. Appel de cadrage, agenda draft sous cinq jours ouvrés, deux tours d\'itération avant verrouillage. Des trames existent pour les équipes qui veulent aller plus vite, mais la plupart des clients partent sur un programme entièrement sur mesure.' },
-  { cat: 'Programme', q: 'Pouvez-vous vous concentrer sur notre secteur ?', a: 'Oui. Nous avons mené des expéditions pour la beauté, la mode, l\'alimentaire, l\'automobile, le luxe, la maison, l\'enfance, le pet care et la santé. Visites, opérationnels et études de cas sont choisis pour votre catégorie, pas tirés d\'une étagère générique.' },
-  { cat: 'Programme', q: 'À quoi ressemble une journée type ?', a: 'Neuf heures à dix-neuf heures. Une session expert et une visite d\'entreprise le matin. Une marche en boutique ou une seconde visite l\'après-midi. Le quatrième ou cinquième jour est un atelier. Les soirées sont libres, sauf dîner networking réservé.' },
-  { cat: 'Programme', q: 'Peut-on emmener notre agence ou nos partenaires ?', a: 'Oui. Environ un tiers des groupes viennent avec leur agence lead, leur partenaire technologique ou leur distributeur. Cela aligne toute l\'équipe de travail sur ce qui est réaliste, ce qui ne l\'est pas, et c\'est la moitié de la valeur du voyage.' },
-  { cat: 'Logistique', q: 'Combien de temps durent les programmes ?', a: 'Trois à cinq jours en standard. Nous pouvons mener des programmes ciblés de deux jours sur un sujet unique, comme le commerce Douyin, ou aller jusqu\'à sept ou huit jours pour des briefs multi-tracks couvrant deux villes.' },
-  { cat: 'Logistique', q: 'Quelle est la meilleure période ?', a: 'Mars à mai et septembre à novembre. À éviter : le Nouvel An chinois fin janvier ou février, la Golden Week du 1er au 7 octobre, et les jours autour du 618 en juin et du Double 11 en novembre. Les opérations se tendent pendant les festivals et l\'accès chute.' },
-  { cat: 'Logistique', q: 'Quelles villes couvrez-vous ?', a: 'La plupart des programmes ancrent à Shanghai avec des journées en option à Hangzhou pour l\'écosystème Alibaba ou à Shenzhen pour la technologie et l\'IA. Pékin pour le luxe et le retail traditionnel. Visite en ville de Tier 3 possible avec deux jours de préparation supplémentaire.' },
-  { cat: 'Logistique', q: 'Faut-il parler mandarin ?', a: 'Non. Une interprétation professionnelle tourne du début à la fin, sur chaque session expert, chaque visite d\'entreprise et chaque marche en boutique. Les interprètes sont briefés sur votre catégorie en amont pour que le vocabulaire technique tombe juste.' },
-  { cat: 'Logistique', q: 'Quelle est la taille du groupe ?', a: 'Six à dix personnes. Huit, c\'est le bon équilibre. Les petits groupes obtiennent un accès plus serré pendant les visites et plus de temps de parole en session expert. Nous ne menons pas de programmes pour des groupes plus larges.' },
-  { cat: 'Coût', q: 'Combien ça coûte ?', a: 'Le prix par personne dépend de la taille du groupe, de la profondeur et du nombre de villes. Une demi-semaine sur une seule ville démarre généralement dans les quatre chiffres hauts par personne en euros. Une plongée multi-villes avec accès IA grimpe au-dessus. Nous chiffrons sur le brief réel, pas sur une grille.' },
-  { cat: 'Coût', q: 'Qu\'est-ce qui est inclus ?', a: 'Le programme complet : visites d\'entreprises, sessions experts, marches en boutique, ateliers, interprétation professionnelle, tout le transport au sol entre les sites en Chine, supports de travail et rapport post-voyage. Vols et hôtels ne sont pas inclus par défaut.' },
-  { cat: 'Coût', q: 'Pouvez-vous gérer les vols et les hôtels ?', a: 'Oui, en option. Nous travaillons avec des hôtels partenaires à Shanghai, Hangzhou et Shenzhen, surtout sur le Bund ou le corridor Jing\'an à Shanghai. Certains clients préfèrent passer par leur service voyages corporate. Les deux fonctionnent.' },
-  { cat: 'Coût', q: 'Quelles sont les modalités de paiement ?', a: 'Cinquante pour cent à la signature pour confirmer les dates et verrouiller les visites d\'entreprises. Solde dû trente jours avant le départ. Virement en USD ou EUR pour les clients à l\'étranger, RMB pour les clients domestiques.' },
-  { cat: 'Accès', q: 'Quelles entreprises et plateformes faites-vous intervenir ?', a: 'Account managers et responsables catégorie de Douyin, Xiaohongshu, Tmall, JD, WeChat et Pinduoduo selon le brief. Opérationnels marques de votre catégorie. Agences MCN. Sociétés IA et retail tech. Le casting bouge avec l\'agenda.' },
-  { cat: 'Accès', q: 'Pouvons-nous visiter des sociétés précises que nous avons en tête ?', a: 'Dites-le nous lors de l\'appel de cadrage. Là où nous avons une relation de travail, nous organisons la visite. Là où nous n\'en avons pas, nous le disons. Certaines sociétés refusent les visites pour des raisons de confidentialité. Nous vous dirons lesquelles.' },
-  { cat: 'Accès', q: 'À quel point l\'accès est-il réel ?', a: 'Dashboards en activité, systèmes backend et données de campagne en direct là où la maison l\'autorise, ce qui arrive plus souvent qu\'on ne le croit parce que nous opérons déjà avec eux. Vous verrez des chiffres qui n\'apparaissent dans aucun deck public.' },
-  { cat: 'Accès', q: 'Peut-on enregistrer les sessions ou prendre des photos ?', a: 'Photos dans les espaces publics et la plupart des visites, oui. L\'enregistrement se décide session par session. Certains experts parlent plus librement hors enregistrement, nous le respectons. Votre rapport post-voyage capte ce qui a été dit.' },
-  { cat: 'Audience', q: 'Qui rejoint en général ?', a: 'Cadres dirigeants, directeurs e-commerce et marketing, responsables transformation digitale, brand managers, dirigeants d\'agence. La plupart des groupes mélangent décideurs seniors et opérationnels qui exécuteront. C\'est ce mélange qui fait marcher l\'atelier.' },
-  { cat: 'Après', q: 'Que se passe-t-il après l\'expédition ?', a: 'Un rapport écrit sous trente jours qui résume ce que nous avons vu et ce que nous recommandons pour votre catégorie. Slide deck, annuaire des contacts rencontrés, et un appel d\'une heure avec l\'opérationnel lead quatre semaines après votre retour.' },
-  { cat: 'Après', q: 'Peut-on engager Beyond Border Group pour la suite ?', a: 'Oui, mais ce n\'est pas le défaut. Environ un tiers des clients travaillent avec nous ensuite sur l\'entrée de marché, les opérations boutique ou le conseil. L\'expédition se vend sur ses propres mérites, sans pitch attaché.' },
+  { cat: 'Programme', q: 'Dans quelle mesure le programme est-il personnalisé ?', a: 'Chaque expédition se construit autour du cahier des charges que vous transmettez. Un entretien de cadrage ouvre la séquence, suivi d’un agenda provisoire remis sous cinq jours ouvrés, puis de deux itérations avant validation définitive. Des canevas existent pour les équipes qui souhaitent avancer plus vite, mais la majorité de nos clients optent pour un programme entièrement sur mesure.' },
+  { cat: 'Programme', q: 'Pouvez-vous calibrer le programme sur notre secteur ?', a: 'Oui. Nos expéditions ont couvert la beauté, la mode, l’agroalimentaire, l’automobile, le luxe, la maison, l’enfance, l’univers animalier et la santé. Visites, intervenants et études de cas sont sélectionnés pour votre catégorie, et non puisés dans un catalogue générique.' },
+  { cat: 'Programme', q: 'À quoi ressemble une journée type ?', a: 'De neuf heures à dix-neuf heures. Le matin réunit un entretien expert et une visite d’entreprise. L’après-midi est consacré à un parcours en boutiques ou à une seconde visite. Le quatrième ou le cinquième jour prend la forme d’un atelier. Les soirées demeurent libres, sauf dîner de réseautage réservé à l’avance.' },
+  { cat: 'Programme', q: 'Pouvons-nous associer notre agence ou nos partenaires au voyage ?', a: 'Oui. Près d’un tiers des délégations intègrent leur agence pilote, leur partenaire technologique ou leur distributeur. La démarche aligne l’ensemble de l’équipe sur ce qui relève du réalisable, et constitue à elle seule une part substantielle de la valeur du voyage.' },
+  { cat: 'Logistique', q: 'Combien de temps durent les programmes ?', a: 'De trois à cinq jours dans la formule courante. Nous concevons également des programmes ciblés de deux jours sur un sujet unique, comme le commerce sur Douyin, ou de sept à huit jours pour des cahiers des charges multi-tracks couvrant deux villes.' },
+  { cat: 'Logistique', q: 'Quelle est la période la plus propice ?', a: 'De mars à mai et de septembre à novembre. À éviter : le Nouvel An chinois fin janvier ou en février, la Semaine d’or du 1er au 7 octobre, ainsi que les jours qui entourent le 618 en juin et le Double 11 en novembre. Les opérations se tendent pendant les festivals commerciaux, et l’accès s’en trouve nettement réduit.' },
+  { cat: 'Logistique', q: 'Quelles villes couvrez-vous ?', a: 'La plupart des programmes prennent racine à Shanghai, avec des journées optionnelles à Hangzhou pour l’écosystème Alibaba, ou à Shenzhen pour la technologie et l’intelligence artificielle. Pékin reste la place du luxe et du commerce traditionnel. Une étape dans une ville de Tier 3 demeure possible, moyennant deux jours de préparation supplémentaires.' },
+  { cat: 'Logistique', q: 'Faut-il parler mandarin ?', a: 'Non. Une interprétation professionnelle accompagne l’ensemble du voyage, sur chaque entretien expert, chaque visite d’entreprise et chaque parcours en boutiques. Les interprètes reçoivent un briefing préalable sur votre catégorie, afin que le vocabulaire technique soit restitué avec justesse.' },
+  { cat: 'Logistique', q: 'Quelle est la taille du groupe ?', a: 'De six à dix participants, huit constituant l’équilibre idéal. Les petites délégations bénéficient d’un accès plus resserré lors des visites et d’un temps de parole plus généreux durant les entretiens. Nous ne menons pas de programmes pour des groupes plus larges.' },
+  { cat: 'Budget', q: 'Quel est le budget à prévoir ?', a: 'Le tarif par participant dépend de la taille du groupe, de la profondeur recherchée et du nombre de villes traversées. Un programme d’une demi-semaine sur une seule ville s’établit habituellement à un montant à quatre chiffres élevé, exprimé en euros et par personne. Une immersion multi-villes intégrant un accès aux acteurs de l’intelligence artificielle se situe au-dessus. Le devis se rédige sur la base du cahier des charges, jamais d’une grille préétablie.' },
+  { cat: 'Budget', q: 'Que comprend exactement le programme ?', a: 'L’intégralité du dispositif : visites d’entreprises, entretiens experts, parcours en boutiques, ateliers, interprétation professionnelle, transport terrestre entre les sites en Chine, supports de travail et rapport remis après le voyage. Les vols et l’hébergement ne sont pas compris par défaut.' },
+  { cat: 'Budget', q: 'Pouvez-vous prendre en charge les vols et les hôtels ?', a: 'Oui, en complément. Nous travaillons avec des hôtels partenaires à Shanghai, Hangzhou et Shenzhen, principalement sur le Bund ou dans le corridor de Jing’an pour Shanghai. Certains clients préfèrent solliciter leur propre service voyages : les deux options coexistent sans difficulté.' },
+  { cat: 'Budget', q: 'Quelles sont les modalités de règlement ?', a: 'Cinquante pour cent à la signature, afin de confirmer les dates et d’arrêter les visites d’entreprises. Le solde est dû trente jours avant le départ. Virement bancaire en dollars ou en euros pour les clients établis hors de Chine, en renminbi pour les clients domestiques.' },
+  { cat: 'Accès', q: 'Quels intervenants et plateformes mobilisez-vous ?', a: 'Selon le cahier des charges : responsables de compte et directeurs de catégorie chez Douyin, Xiaohongshu, Tmall, JD, WeChat et Pinduoduo, praticiens d’une marque de votre secteur, agences MCN, entreprises spécialisées dans l’intelligence artificielle et la retail tech. La composition du panel évolue avec l’agenda.' },
+  { cat: 'Accès', q: 'Pouvons-nous visiter des entreprises précises que nous avons identifiées ?', a: 'Indiquez-le lors de l’entretien de cadrage. Là où une relation de travail existe, nous organisons la visite. Là où elle n’existe pas, nous vous le disons sans détour. Certaines entreprises déclinent toute visite pour motifs de confidentialité : nous vous précisons lesquelles.' },
+  { cat: 'Accès', q: 'Jusqu’où va concrètement l’accès accordé ?', a: 'Tableaux de bord en exploitation, systèmes internes et données de campagne en temps réel, dans la limite de ce que chaque entreprise consent. Le périmètre est plus large qu’on ne le suppose, car nous opérons déjà avec ces interlocuteurs. La délégation accède à des chiffres qui ne figurent dans aucune présentation publique.' },
+  { cat: 'Accès', q: 'Peut-on enregistrer les sessions ou prendre des photographies ?', a: 'Les photographies sont autorisées dans les espaces publics et lors de la plupart des visites. L’enregistrement audio se décide au cas par cas. Certains intervenants s’expriment plus librement hors captation, et nous respectons cette préférence. Le rapport remis après le voyage restitue la teneur des échanges.' },
+  { cat: 'Participants', q: 'Quels profils participent habituellement ?', a: 'Membres de comités exécutifs, directeurs e-commerce et marketing, responsables de la transformation numérique, chefs de marque, dirigeants d’agence. La plupart des délégations associent décideurs et opérateurs appelés à mettre en œuvre les conclusions : c’est cet équilibre qui donne sa pertinence à l’atelier.' },
+  { cat: 'Suivi', q: 'Que se passe-t-il à l’issue de l’expédition ?', a: 'Un rapport écrit est remis dans les trente jours qui suivent le voyage. Il restitue les observations et les recommandations propres à votre catégorie. S’y ajoutent une présentation, l’annuaire des contacts rencontrés, et un entretien d’une heure avec le praticien qui aura conduit la mission, quatre semaines après le retour.' },
+  { cat: 'Suivi', q: 'Pouvons-nous solliciter Beyond Border Group pour la suite ?', a: 'Oui, mais sans automatisme. Environ un tiers des clients prolongent l’engagement, sur l’entrée de marché, l’exploitation des boutiques ou le conseil. L’expédition se conçoit comme une prestation autonome, jamais comme l’ouverture d’un argumentaire commercial.' },
 ];
 
-const faqCategories = ['Tous', 'Programme', 'Logistique', 'Coût', 'Accès', 'Audience', 'Après'];
+const faqCategories = ['Tous', 'Programme', 'Logistique', 'Budget', 'Accès', 'Participants', 'Suivi'];
 
 const icons: Record<string, string> = {
   talk: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-4a8 8 0 1 1 16-4z"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="14" x2="13" y2="14"/></svg>`,
@@ -222,8 +222,8 @@ const icons: Record<string, string> = {
 ---
 
 <Layout
-  title="Expéditions terrain en Chine | Programmes animés par des opérationnels sur l'e-commerce, l'IA, le retail et le contenu | Beyond Border Group"
-  description="Expéditions terrain immersives de 3 à 5 jours en Chine. Programmes animés par des opérationnels sur l'e-commerce, l'IA, le retail, le contenu et la distribution. Bâtis sur mesure autour de votre brief. Shanghai, Hangzhou, Shenzhen."
+  title="Expéditions terrain en Chine : commerce électronique, intelligence artificielle, distribution et contenu | Beyond Border Group"
+  description="Expéditions immersives de trois à cinq jours en Chine. Programmes conduits par des praticiens sur le commerce électronique, l’intelligence artificielle, la distribution, le contenu et les circuits de vente. Conçus sur mesure à partir de votre cahier des charges. Shanghai, Hangzhou, Shenzhen."
 >
   <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
   <article class="cbs">
@@ -231,7 +231,7 @@ const icons: Record<string, string> = {
     {/* ---------- HERO ---------- */}
     <section class="cbs-hero" data-hero>
       <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/learn-china/hero-livestream-expedition.png" alt="A small group of foreign executives observing a Chinese livestream e-commerce studio in Shanghai during a learning expedition" />
+        <img src="/Images/learn-china/hero-livestream-expedition.png" alt="Une délégation de dirigeants étrangers observe un plateau de livestream commerce à Shanghai, lors d’une expédition terrain" />
       </div>
       <div class="cbs-hero__overlay" aria-hidden="true"></div>
       <div class="cbs-hero__grain" aria-hidden="true"></div>
@@ -244,38 +244,38 @@ const icons: Record<string, string> = {
         </nav>
         <span class="eyebrow eyebrow--on-dark cbs-reveal">Expéditions terrain</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
-          <span class="cbs-hero__title-row">La Chine va plus vite que</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--accent">le deck sur votre écran.</span>
-          <span class="cbs-hero__title-row">Posez-vous ici et</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">voyez-la fonctionner.</span>
+          <span class="cbs-hero__title-row">La Chine avance plus vite</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent">que la note de synthèse posée sur votre bureau.</span>
+          <span class="cbs-hero__title-row">Venez sur place</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">en mesurer la mécanique.</span>
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          Programmes animés par des opérationnels pour des dirigeants qui veulent une vraie lecture
-          du marché chinois. E-commerce, IA, retail, contenu, distribution. Trois à cinq jours
-          au cœur du système qui les fait tourner.
+          Programmes conduits par des praticiens, destinés aux dirigeants qui cherchent une lecture
+          opérante du marché chinois. Commerce électronique, intelligence artificielle, distribution,
+          contenu et circuits de vente. Trois à cinq jours au cœur du dispositif qui les anime au quotidien.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
-          <a href="/contact" class="btn btn--primary cbs-magnetic">Planifier une expédition</a>
-          <a href="#tracks" class="btn btn--ghost-light cbs-magnetic">Voir des tracks types</a>
+          <a href="/contact" class="btn btn--primary cbs-magnetic">Construire une expédition</a>
+          <a href="#tracks" class="btn btn--ghost-light cbs-magnetic">Découvrir nos parcours</a>
         </div>
 
         <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num" data-counter="20" data-suffix="+">0</span>
-            <span class="cbs-hero__meta-label">années à guider des équipes en Chine</span>
+            <span class="cbs-hero__meta-label">années à accompagner des dirigeants en Chine</span>
           </div>
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num" data-counter="60" data-suffix="+">0</span>
-            <span class="cbs-hero__meta-label">opérationnels dans notre réseau</span>
+            <span class="cbs-hero__meta-label">praticiens mobilisables dans notre réseau</span>
           </div>
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num cbs-hero__meta-num--text">Plusieurs</span>
-            <span class="cbs-hero__meta-label">villes à travers la Chine</span>
+            <span class="cbs-hero__meta-label">métropoles parcourues à travers le pays</span>
           </div>
         </div>
       </div>
 
-      <a href="#tracks" class="cbs-hero__scroll" aria-label="Descendre vers la section suivante">
+      <a href="#tracks" class="cbs-hero__scroll" aria-label="Faire défiler vers la suite de la page">
         <span class="cbs-hero__scroll-line"></span>
         <span class="cbs-hero__scroll-text">Défiler</span>
       </a>
@@ -286,18 +286,18 @@ const icons: Record<string, string> = {
       <div class="container">
         <div class="cbs-value">
           <div class="cbs-value__copy">
-            <span class="eyebrow">Ce que nous faisons</span>
-            <h2>Nous concevons le programme, l'animons, et restons à vos côtés après.</h2>
+            <span class="eyebrow">Notre rôle</span>
+            <h2>Nous concevons le voyage, le conduisons, et poursuivons l’accompagnement à votre retour.</h2>
             <p>
-              Vingt ans à piloter des boutiques flagship, des campagnes de contenu et des partenariats
-              plateformes en Chine. L'équipe qui opère le marché conçoit le voyage et vous accompagne.
-              Pas de tour-opérateur sous-traité en cours de route.
+              Vingt années passées à piloter des boutiques flagship, à orchestrer des campagnes de contenu
+              et à nouer des partenariats avec les plateformes en Chine. L’équipe qui opère le marché trace
+              l’itinéraire et vous accompagne sur place. Aucun prestataire de voyage intermédiaire ne s’interpose.
             </p>
           </div>
 
           <ul class="cbs-promise">
             <li>
-              <span class="eyebrow">Ce à quoi vous pouvez vous attendre</span>
+              <span class="eyebrow">Ce que nous garantissons</span>
             </li>
             {promises.map((p) => (
               <li class="cbs-promise__item">
@@ -320,13 +320,13 @@ const icons: Record<string, string> = {
       <div class="container">
         <header class="section-header section-header--split cbs-reveal">
           <div>
-            <span class="eyebrow">Comment ça marche</span>
-            <h2>Quatre formats, un seul programme</h2>
+            <span class="eyebrow">Notre méthode</span>
+            <h2>Quatre formats articulés en un programme unique</h2>
           </div>
           <p class="cbs-svc-lead">
-            Chaque expédition mélange les quatre mêmes pièces, dosées selon votre brief. Plus des
-            sessions de contexte culturel et du networking structuré avec les six à dix autres
-            participants du groupe.
+            Chaque expédition combine les mêmes quatre composantes, dosées selon votre cahier des
+            charges. À cela s’ajoutent des temps de mise en perspective culturelle et un réseautage
+            structuré entre les six à dix participants réunis dans la délégation.
           </p>
         </header>
 
@@ -364,11 +364,12 @@ const icons: Record<string, string> = {
       </div>
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">Tracks types</span>
-          <h2>Quatre tracks à prendre tels quels, ou à recombiner selon votre brief</h2>
+          <span class="eyebrow">Parcours types</span>
+          <h2>Quatre itinéraires à reprendre tels quels, ou à recomposer selon votre cahier des charges</h2>
           <p class="section-header__lead">
-            Chaque expédition est sur mesure. Ces quatre tracks donnent la forme d'une semaine sur le terrain.
-            Échangez des journées, ajoutez-en, ou découpez le voyage en deux visites espacées de six mois.
+            Chaque expédition demeure sur mesure. Ces quatre parcours esquissent la silhouette
+            d’une semaine sur le terrain. Permuter des journées, en ajouter, scinder le voyage
+            en deux séjours espacés de six mois : autant d’ajustements possibles.
           </p>
         </header>
 
@@ -386,7 +387,7 @@ const icons: Record<string, string> = {
               >
                 <span class="cbs-tabs__tab-label">{m.name}</span>
                 <span class="cbs-tabs__tab-tag">{m.tag}</span>
-                {m.highlight && <span class="cbs-tabs__tab-pop">Le plus demandé</span>}
+                {m.highlight && <span class="cbs-tabs__tab-pop">Le plus sollicité</span>}
               </button>
             ))}
             <span class="cbs-tabs__indicator" aria-hidden="true"></span>
@@ -410,15 +411,15 @@ const icons: Record<string, string> = {
                     <h3 class="cbs-tabs__title">{m.name}</h3>
                     <p class="cbs-tabs__desc">{m.desc}</p>
                     <div class="cbs-tabs__when">
-                      <span class="cbs-tabs__when-label">Pour qui</span>
+                      <span class="cbs-tabs__when-label">À qui ce parcours s’adresse</span>
                       <p>{m.when}</p>
                     </div>
-                    <a href="/contact" class="btn btn--primary cbs-magnetic">Planifier ce track</a>
+                    <a href="/contact" class="btn btn--primary cbs-magnetic">Construire ce parcours</a>
                   </div>
 
                   <div class="cbs-tabs__body">
                     <div class="cbs-tabs__list-wrap">
-                      <span class="cbs-tabs__list-label">Ce que vous voyez</span>
+                      <span class="cbs-tabs__list-label">Ce que vous observerez</span>
                       <ul class="cbs-tabs__list">
                         {m.bullets.map((b) => (
                           <li>
@@ -448,7 +449,7 @@ const icons: Record<string, string> = {
     <section class="section section--tight">
       <div class="container">
         <div class="cbs-cases-cta">
-          <a href="/work" class="btn btn--secondary">Voir les marques que nous avons accompagnées</a>
+          <a href="/work" class="btn btn--secondary">Découvrir les marques que nous avons accompagnées</a>
         </div>
       </div>
     </section>
@@ -457,11 +458,12 @@ const icons: Record<string, string> = {
     <section class="section section--alt">
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">Villes que nous couvrons</span>
-          <h2>Là où le programme se déroule réellement</h2>
+          <span class="eyebrow">Géographie des expéditions</span>
+          <h2>Là où le programme se déploie sur le terrain</h2>
           <p class="section-header__lead">
-            Shanghai pour les plateformes et les agences, avec des journées ou des prolongations
-            là où le brief l'exige. La plupart des groupes visitent une ou deux villes.
+            Shanghai concentre les plateformes et les agences. Des journées complémentaires ou des
+            prolongations s’ajoutent dès que le cahier des charges l’impose. La plupart des
+            délégations parcourent une à deux métropoles.
           </p>
         </header>
 
@@ -491,11 +493,10 @@ const icons: Record<string, string> = {
     <section class="section section--alt cbs-ai-section">
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">Ce que vous ramenez</span>
-          <h2>La semaine pèse la moitié de la valeur. Les trente jours qui suivent posent le reste.</h2>
+          <span class="eyebrow">Ce que vous emportez</span>
+          <h2>La semaine ne représente que la moitié de la valeur. Les trente jours qui suivent en délivrent l’autre.</h2>
           <p class="section-header__lead">
-            La plupart des groupes retiennent les visites. C'est le suivi qui change la réunion
-            dans laquelle vous entrez une fois rentré.
+            La plupart des délégations en gardent d’abord le souvenir des visites. C’est pourtant le suivi qui modifie la teneur des réunions d’arbitrage, une fois la délégation rentrée au siège.
           </p>
         </header>
 
@@ -504,16 +505,16 @@ const icons: Record<string, string> = {
             <div class="cbs-ai-bento__feature-bg" aria-hidden="true"></div>
             <div class="cbs-ai-bento__feature-body">
               <span class="cbs-ai-bento__chip">Sous trente jours</span>
-              <h3>Un plan opérationnel pour votre équipe</h3>
-              <p>L'atelier du troisième ou quatrième jour transforme ce que vous avez vu en un plan draft pour votre catégorie. Nous le finalisons par écrit après votre retour, puis le déroulons à votre équipe lors d'un appel de suivi une fois qu'ils l'auront lu.</p>
+              <h3>Une feuille de route opérationnelle pour vos équipes</h3>
+              <p>L’atelier programmé en troisième ou quatrième journée transpose les observations recueillies en une feuille de route provisoire calée sur votre catégorie. Le document définitif est rédigé à votre retour, puis présenté à vos équipes lors d’un entretien de suivi, une fois qu’elles en auront pris connaissance.</p>
               <ul class="cbs-ai-bento__feature-stats">
                 <li>
                   <span class="cbs-ai-bento__stat-num" data-counter="30" data-suffix=" jours">0</span>
-                  <span class="cbs-ai-bento__stat-label">du départ au rapport écrit</span>
+                  <span class="cbs-ai-bento__stat-label">du retour au rapport écrit définitif</span>
                 </li>
                 <li>
                   <span class="cbs-ai-bento__stat-num" data-counter="60" data-suffix="+">0</span>
-                  <span class="cbs-ai-bento__stat-label">opérationnels derrière le réseau</span>
+                  <span class="cbs-ai-bento__stat-label">praticiens mobilisables au sein du réseau</span>
                 </li>
               </ul>
             </div>
@@ -535,10 +536,10 @@ const icons: Record<string, string> = {
     <section class="section">
       <div class="container container--narrow">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">FAQ</span>
-          <h2>Vingt questions pragmatiques avant de vous engager</h2>
+          <span class="eyebrow">Questions fréquentes</span>
+          <h2>Vingt questions concrètes avant de vous engager</h2>
           <p class="section-header__lead">
-            Programme, logistique, coût, accès, audience et après-voyage. Filtrez par thème.
+            Programme, logistique, budget, accès, participants et suivi. Sélectionnez le thème qui vous intéresse.
           </p>
         </header>
 
@@ -585,16 +586,16 @@ const icons: Record<string, string> = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">
-          <span class="eyebrow eyebrow--on-dark">Échangeons</span>
-          <h2 class="cbs-cta__title">Vous étudiez une expédition pour votre équipe ?</h2>
+          <span class="eyebrow eyebrow--on-dark">Entrons en discussion</span>
+          <h2 class="cbs-cta__title">Vous envisagez une expédition pour vos équipes en Chine ?</h2>
           <p class="cbs-cta__lead">
-            Donnez-nous le brief, votre secteur et les villes que vous voulez couvrir. Un senior
-            de l'équipe vous répond sous un jour ouvré avec un programme draft et un calendrier.
-            Pas de réponse automatique.
+            Transmettez-nous votre cahier des charges, votre secteur d’activité et les métropoles que
+            vous souhaitez parcourir. Un associé de l’équipe vous répond sous un jour ouvré, avec un
+            programme provisoire et un calendrier indicatif. Aucune réponse automatique : un échange direct.
           </p>
           <div class="cbs-cta__actions">
-            <a href="/contact" class="btn cbs-cta__btn-primary">Planifier une expédition</a>
-            <a href="/work" class="btn cbs-cta__btn-ghost">Voir nos réalisations</a>
+            <a href="/contact" class="btn cbs-cta__btn-primary">Construire une expédition</a>
+            <a href="/work" class="btn cbs-cta__btn-ghost">Découvrir nos réalisations</a>
           </div>
         </div>
       </div>

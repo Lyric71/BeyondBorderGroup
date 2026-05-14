@@ -12,16 +12,16 @@ const phaseIcons: Record<string, string> = {
 
 const promises = [
   {
-    title: "Une base de partenaires que les concurrents n'ont pas",
-    desc: "BeyondCompass, c'est quinze ans de relations distributeurs validées dans la beauté, le F&B, la mode, le wellness et le pet. Vérifiées à la main, rencontrées en personne, tenues à jour. Pas grattées sur Alibaba.",
+    title: "Un fichier de partenaires hors d'atteinte de la concurrence",
+    desc: "BeyondCompass rassemble quinze années de relations distributeurs vérifiées dans la beauté, l'agroalimentaire, la mode, le wellness et l'univers animal. Chaque contact a été qualifié à la main, rencontré en personne, tenu à jour. Loin des fichiers ratissés sur Alibaba.",
   },
   {
-    title: 'Aucune commission distributeur. Jamais.',
-    desc: "Vous nous payez sur la mission. Les distributeurs ne nous versent pas de frais d'apport. Cela garde notre intérêt aligné sur le bon partenaire, pas sur la signature la plus rapide.",
+    title: 'Aucune commission perçue auprès du distributeur. Jamais.',
+    desc: "Votre rémunération couvre la mission, point. Aucun apport ne nous est versé par les distributeurs. Notre intérêt reste aligné sur le bon partenaire, jamais sur la signature la plus rapide.",
   },
   {
-    title: 'On reste après la signature',
-    desc: "La plupart des agences disparaissent une fois le contrat signé. Nous restons en gardien de marque, en équipe marketing ou en relais terrain. Ce que la mission demande.",
+    title: 'Notre engagement ne s\'arrête pas au paraphe',
+    desc: "La plupart des cabinets s'effacent dès le contrat signé. Nous restons à vos côtés, en gardien de marque, en relais marketing ou en bras armé sur le terrain. Selon ce que la mission exige.",
   },
 ];
 
@@ -34,17 +34,17 @@ const phases = [
     image: '/Images/enter-china/dist-phase-1-scoping.png',
     imageAlt: "Un fondateur de marque étrangère et un consultant en distribution chinois passent en revue un brief catégorie dans une salle de réunion à Shanghai",
     intro:
-      "On s'assoit avec vous pour définir la catégorie, le positionnement, les volumes, les marges et le profil de partenaire qui colle. Le brief qui ressort de cette réunion pilote tout ce qui suit.",
-    outcome: "Un brief catégorie écrit, signé des deux côtés, et un profil de partenaire clair.",
+      "Première séance de travail commune pour arrêter la catégorie, le positionnement, les volumes, les marges et le profil de partenaire recherché. Le brief issu de cette rencontre cadre l'ensemble de la mission.",
+    outcome: "Un brief catégorie rédigé, contresigné par les deux parties, accompagné d'un profil de partenaire net.",
     does: [
-      "Revue catégorie, volumes, SKU cibles, marges",
-      "Stratégie canaux et niveaux de villes",
-      "Définition du profil distributeur (taille, région, mix canal)",
-      "Point réglementaire (NMPA, SAMR) et impact calendrier",
+      "Revue de catégorie, volumes, SKU cibles et marges",
+      "Stratégie de canaux et hiérarchie des villes",
+      "Cahier des charges distributeur : taille, territoire, mix de canaux",
+      "Cadrage réglementaire NMPA et SAMR, incidence sur le calendrier",
     ],
     deliverables: [
-      { kind: 'doc', name: 'Brief catégorie et profil partenaire' },
-      { kind: 'sheet', name: 'Grille volumes cibles et pricing' },
+      { kind: 'doc', name: 'Brief catégorie et profil de partenaire' },
+      { kind: 'sheet', name: 'Grille de volumes et de prix cibles' },
       { kind: 'report', name: 'Audit de conformité réglementaire' },
     ],
   },
@@ -56,18 +56,18 @@ const phases = [
     image: '/Images/enter-china/dist-phase-2-longlist.png',
     imageAlt: "Un consultant senior examine huit à douze profils de distributeurs sur son bureau et son ordinateur portable à Shanghai",
     intro:
-      "On tire une longue liste de 8 à 12 candidats dans BeyondCompass, notre base partenaires. Des distributeurs que l'on connaît personnellement, rencontrés ces douze derniers mois, accréditations retail ou plateformes encore actives.",
-    outcome: 'Une longue liste de 8 à 12 noms qualifiés, chacun avec une fiche d\'une page.',
+      "Nous puisons dans BeyondCompass, notre fichier de partenaires, une longue liste de huit à douze candidats. Des distributeurs que nous connaissons personnellement, rencontrés au cours des douze derniers mois, dont les accréditations retail ou plateformes demeurent en vigueur.",
+    outcome: 'Une longue liste de huit à douze noms qualifiés, chacun documenté sur une fiche d\'une page.',
     does: [
-      "Sélection des candidats dans BeyondCompass par catégorie et canal",
-      "Vérification des accréditations retail ou plateformes actives",
-      "Confirmation de l'adéquation catégorie, taille et appétit SKU",
-      "Mise à jour du dossier si un partenaire s'est mis en sommeil ce trimestre",
+      "Sélection des candidats au sein de BeyondCompass, par catégorie et par canal",
+      "Contrôle des accréditations retail et plateformes en cours de validité",
+      "Validation de l'adéquation catégorie, taille et appétit SKU",
+      "Réactualisation du dossier dès qu'un partenaire est entré en veille au dernier trimestre",
     ],
     deliverables: [
-      { kind: 'sheet', name: 'Longue liste avec fiches et niveau de contact' },
-      { kind: 'doc', name: "Notes d'adéquation catégorie par candidat" },
-      { kind: 'report', name: 'Carte de couverture par canal' },
+      { kind: 'sheet', name: 'Longue liste, fiches détaillées et état des contacts' },
+      { kind: 'doc', name: "Note d'adéquation catégorie pour chaque candidat" },
+      { kind: 'report', name: 'Cartographie de la couverture par canal' },
     ],
   },
   {
@@ -78,19 +78,19 @@ const phases = [
     image: '/Images/enter-china/dist-phase-3-shortlist.png',
     imageAlt: "Un appel vidéo entre une équipe de marque étrangère et un distributeur chinois candidat, fiches shortlist imprimées sur le bureau",
     intro:
-      "On resserre à trois à cinq finalistes, on pilote les appels avec vous, on traduit quand c'est utile, et on passe chacun au crible financier, juridique et références.",
-    outcome: 'Trois à cinq finalistes avec dossier de diligence complet, prêts à négocier.',
+      "Nous resserrons à trois ou cinq finalistes, pilotons les entretiens à vos côtés, traduisons à la demande, et soumettons chaque candidat à un examen financier, juridique et de références.",
+    outcome: 'Trois à cinq finalistes, dossier de due diligence bouclé, prêts à entrer en négociation.',
     does: [
-      "Entretiens shortlist (on est de votre côté, traduction live)",
-      "Vérification financière et licences",
-      "Inspection entrepôt, logistique, comptes plateformes",
-      "Références croisées avec marques clientes actuelles et anciennes",
-      "Audit historique Tmall, JD, Douyin si pertinent",
+      "Entretiens shortlist menés à vos côtés, traduction simultanée si nécessaire",
+      "Contrôle financier et examen des licences",
+      "Inspection entrepôt, logistique et comptes plateformes",
+      "Recoupement des références auprès des marques clientes, actuelles comme anciennes",
+      "Audit de l'historique Tmall, JD et Douyin, lorsque la catégorie s'y prête",
     ],
     deliverables: [
       { kind: 'deck', name: 'Book de comparaison shortlist (deck)' },
-      { kind: 'doc', name: 'Dossier de diligence par candidat' },
-      { kind: 'sheet', name: 'Offres commerciales côte à côte' },
+      { kind: 'doc', name: 'Dossier de due diligence par candidat' },
+      { kind: 'sheet', name: 'Offres commerciales mises en regard' },
     ],
   },
   {
@@ -101,19 +101,19 @@ const phases = [
     image: '/Images/enter-china/dist-phase-4-negotiation.png',
     imageAlt: "Un moment de négociation contractuelle entre deux parties autour d'une table de réunion dans un cabinet d'avocats à Shanghai",
     intro:
-      "Territoire, exclusivité, prix, MOQ, modalités de paiement, contribution marketing, protection de marque, résiliation. On est à la table avec vous, en mandarin et en anglais, jusqu'à ce que le contrat tienne pour les deux camps.",
-    outcome: "Un contrat de distribution signé, opposable en justice. Et un plan de transition propre.",
+      "Territoire, exclusivité, prix, MOQ, modalités de paiement, contribution marketing, protection de marque, sortie : tout passe sur la table. Nous menons la négociation à vos côtés, en mandarin comme en anglais, jusqu'à ce que le contrat tienne debout pour les deux parties.",
+    outcome: "Un contrat de distribution signé, opposable en justice, et un plan de transition au cordeau.",
     does: [
       "Rédaction du term sheet et négociation bilingue",
       "Clauses d'exclusivité, de territoire et de répartition par canal",
-      "MOQ, modalités de paiement, contribution marketing fléchée",
-      "Clauses protection de marque, PI et résiliation",
-      "Plan de transition avec jalons des 90 premiers jours",
+      "MOQ, modalités de paiement et contribution marketing fléchée",
+      "Clauses de protection de marque, de propriété intellectuelle et de résiliation",
+      "Plan de transition jalonné sur les quatre-vingt-dix premiers jours",
     ],
     deliverables: [
-      { kind: 'doc', name: 'Contrat de distribution signé (bilingue)' },
-      { kind: 'sheet', name: 'Plan de transition 90 jours et suivi KPI' },
-      { kind: 'report', name: 'Playbook protection de marque' },
+      { kind: 'doc', name: 'Contrat de distribution signé, version bilingue' },
+      { kind: 'sheet', name: 'Plan de transition à 90 jours et suivi des KPI' },
+      { kind: 'report', name: 'Playbook de protection de marque' },
     ],
   },
 ];
@@ -133,8 +133,8 @@ const models = [
     tagline: 'Trouver le partenaire. Rendre les clés.',
     image: '/Images/enter-china/dist-route-agent.png',
     imageAlt: "Un commercial chinois revoit les rapports distributeur avec un opérateur de marque étrangère dans un bureau à Shanghai",
-    desc: "On pilote le sourcing complet, du brief au contrat signé. Une fois le distributeur en place, on rend les clés et on s'efface. Vous tenez la relation vous-même.",
-    when: "Vous avez déjà un référent Chine dans l'équipe, vous voulez serrer le budget de gestion, ou vous cherchez juste le bon partenaire sans retainer long.",
+    desc: "Nous prenons en charge le sourcing de bout en bout, du brief au contrat. Une fois le distributeur en place, nous remettons les clés et nous nous effaçons. Vous tenez la relation seul.",
+    when: "Votre équipe compte déjà un référent Chine, vous souhaitez contenir le budget de pilotage, ou il vous faut simplement le bon partenaire, sans engagement long.",
     split: { you: 80, them: 20, themLabel: 'BBG' },
     dims: [
       { label: 'Budget requis', value: 'Faible', level: 1 },
@@ -142,9 +142,9 @@ const models = [
       { label: 'Présence locale après', value: 'Faible', level: 1 },
       { label: 'Contrôle de marque', value: 'Total', level: 5 },
     ],
-    youGet: ['Contrat de distribution signé', 'Shortlist de finalistes validés', 'Appui négociation bilingue', 'Plan de transition avec KPI'],
-    they: ['Brief et cadrage', 'Longue liste depuis BeyondCompass', 'Diligence et prises de références', 'Négociation et rédaction du contrat'],
-    pricing: "Forfait projet. Devis au premier appel une fois le brief clair. Aucune commission distributeur.",
+    youGet: ['Contrat de distribution signé', 'Shortlist de finalistes vérifiés', 'Appui négociation bilingue', 'Plan de transition assorti de KPI'],
+    they: ['Brief et cadrage', 'Longue liste extraite de BeyondCompass', 'Due diligence et prise de références', 'Négociation et rédaction du contrat'],
+    pricing: "Forfait projet. Devis remis dès le premier rendez-vous, une fois le brief stabilisé. Aucune commission auprès du distributeur.",
     highlight: false,
     ctaText: 'Parler d\'une mission de sourcing',
   },
@@ -154,8 +154,8 @@ const models = [
     tagline: 'Trouver le partenaire. Tenir la marque.',
     image: '/Images/enter-china/dist-route-agency.png',
     imageAlt: "Une équipe marketing chinoise pilote les opérations Tmall et Douyin pour une marque étrangère, bureau de Shanghai",
-    desc: "On source le distributeur et on reste votre équipe locale. Gardien de marque, opérateur marketing, revues mensuelles. Le contrat devient le début de la relation, pas la ligne d'arrivée.",
-    when: "Vous n'avez pas d'équipe en Asie, la P&L Chine est stratégique, ou votre précédent contrat a dérivé et il vous faut quelqu'un sur place pour défendre la marque.",
+    desc: "Nous sourçons le distributeur et restons votre équipe locale. Gardien de marque, opérateur marketing, revues mensuelles. Le contrat ouvre la relation, il ne la conclut pas.",
+    when: "Vous n'avez pas d'équipe en Asie, la P&L Chine pèse dans le plan groupe, ou votre précédent contrat a dérivé et il vous faut un relais sur place pour défendre la marque.",
     split: { you: 30, them: 70, themLabel: 'BBG' },
     dims: [
       { label: 'Budget requis', value: 'Moyen', level: 3 },
@@ -163,9 +163,9 @@ const models = [
       { label: 'Présence locale après', value: 'Forte', level: 5 },
       { label: 'Contrôle de marque', value: 'Partagé', level: 3 },
     ],
-    youGet: ['Tout ce que couvre la mission projet', 'Revues mensuelles d\'activité', 'Gardien de marque, pricing, défense PI', 'Marketing, KOL et campagnes plateformes'],
-    they: ['Sourcing phases 1 à 4', 'Retainer gardien de marque continu', 'Marketing sur Tmall, JD, Douyin, RED, WeChat', 'Pilotage des campagnes 11.11 et 6.18'],
-    pricing: "Forfait sourcing plus retainer mensuel. Le retainer s'ajuste au périmètre, en général entre 40 000 et 150 000 RMB.",
+    youGet: ['Tout le périmètre de la mission projet', 'Revues mensuelles d\'activité', 'Gardiennage de marque, pricing et défense PI', 'Marketing, KOL et campagnes plateformes'],
+    they: ['Sourcing des phases 1 à 4', 'Retainer continu de gardien de marque', 'Opérations sur Tmall, JD, Douyin, RED et WeChat', 'Pilotage des campagnes 11.11 et 6.18'],
+    pricing: "Forfait sourcing complété d'un retainer mensuel. Celui-ci s'ajuste au périmètre, et s'établit en règle générale entre 40 000 et 150 000 RMB.",
     highlight: true,
     ctaText: 'Parler d\'un partenariat long terme',
   },
@@ -174,103 +174,103 @@ const models = [
 const faqs = [
   {
     cat: 'Sourcing',
-    q: "Comment trouvez-vous des distributeurs que les concurrents n'ont pas ?",
-    a: "BeyondCompass, notre base partenaires. Quinze ans de rendez-vous en face à face entre nos bureaux de Chine, Hong Kong, Paris et nos relais sur chaque grande catégorie de consommation. La plupart des cabinets de sourcing vous remettent un export 1688 gratté et l'appellent shortlist curatée. Nous, on vous remet des partenaires qu'on connaît par leur prénom, rencontrés le trimestre dernier, et pour qui on engage notre nom. C'est toute la différence.",
+    q: "Comment identifiez-vous des distributeurs hors d'atteinte de la concurrence ?",
+    a: "BeyondCompass, notre fichier maison. Quinze années de rendez-vous en présentiel, tenus depuis nos bureaux de Shanghai, Hong Kong et Paris, et auprès de nos relais dans chaque grande catégorie de la consommation. La plupart des cabinets de sourcing remettent un export 1688 ratissé et le présentent comme une shortlist curatée. Nous remettons des partenaires dont nous connaissons le prénom, rencontrés au trimestre précédent, et pour lesquels nous engageons notre signature. Toute la différence tient là.",
   },
   {
     cat: 'Sourcing',
-    q: 'Combien de temps entre le premier appel et le contrat signé ?',
-    a: "Trois à cinq mois. Cadrage en semaine 1, longue liste en semaine 4, entretiens shortlist en semaines 5 à 8, diligence et négociation en semaines 9 à 16. Les marques qui prennent plus de temps ont en général buté sur des dossiers NMPA ou SAMR qu'elles auraient dû lancer plus tôt.",
+    q: 'Quel délai prévoir entre le premier rendez-vous et la signature du contrat ?',
+    a: "Comptez trois à cinq mois. Cadrage en semaine 1, longue liste en semaine 4, entretiens de shortlist en semaines 5 à 8, due diligence et négociation en semaines 9 à 16. Les marques qui débordent ont presque toujours achoppé sur un dossier NMPA ou SAMR engagé trop tardivement.",
   },
   {
     cat: 'Sourcing',
-    q: "Un seul distributeur couvre-t-il toute la Chine ?",
-    a: "Parfois. Plus souvent, on aboutit à deux ou trois, ventilés par canal (offline contre online) ou par région (nord, sud, ouest). L'exclusivité nationale ne s'accorde qu'en échange d'engagements de volumes fermes. Les marques qui ont signé une exclusivité nationale sans ces clauses sont celles qui se retrouvent bloquées trois ans.",
+    q: "Un seul distributeur peut-il couvrir l'ensemble de la Chine ?",
+    a: "Cela arrive. Plus souvent, le dispositif retient deux ou trois partenaires, ventilés par canal (offline et online) ou par zone (nord, sud, ouest). L'exclusivité nationale ne se concède qu'en contrepartie d'engagements de volumes fermes. À défaut, les marques qui l'ont accordée se retrouvent immobilisées trois années durant.",
   },
   {
     cat: 'Sourcing',
-    q: 'Et si ma catégorie est de niche ?',
-    a: "C'est exactement là que BeyondCompass paie. Les cabinets de sourcing génériques ne connaissent que les trente premiers distributeurs en beauté et en F&B. Pour le pet wellness, l'art de la table premium, les compléments alimentaires pointus ou le B2B spécialisé, le bon partenaire est parfois le quatre-vingt-troisième sur une liste, et le seul à dire oui. Ces noms-là, on les a. Ils ne sont pas en accès libre sur internet.",
+    q: 'Comment procédez-vous sur une catégorie de niche ?',
+    a: "C'est précisément le terrain où BeyondCompass démontre sa valeur. Les cabinets génériques s'arrêtent aux trente premiers distributeurs en beauté et en agroalimentaire. Pour le wellness animal, l'art de la table premium, les compléments spécialisés ou le B2B de niche, le bon partenaire occupe parfois la quatre-vingt-troisième ligne d'une liste, et reste le seul à donner suite. Ces noms-là, nous les détenons. Ils ne sont pas en accès libre sur internet.",
   },
   {
     cat: 'Sourcing',
-    q: 'Prenez-vous une commission sur les distributeurs que vous présentez ?',
-    a: "Non. On vous facture la mission. Le distributeur ne nous verse pas d'apport. C'est délibéré, et c'est écrit dans le contrat. Si on touchait une commission, notre intérêt basculerait vers la signature rapide plutôt que vers le bon partenaire. Certains clients posent la question. On est contents qu'ils la posent.",
+    q: 'Touchez-vous une commission sur les distributeurs que vous présentez ?',
+    a: "Non. La mission est facturée au client, point. Aucun apport ne nous est versé par le distributeur. Le principe est délibéré et figure noir sur blanc au contrat. Une commission ferait basculer notre intérêt vers la signature la plus rapide, au détriment du bon partenaire. Plusieurs clients soulèvent la question. Nous saluons qu'ils la posent.",
   },
   {
     cat: 'Canaux',
     q: 'En ligne, en magasin, ou les deux ?',
-    a: "Les deux, à terme. La beauté démarre souvent en ligne puis bascule offline quand le volume le justifie. Le F&B part en général offline et ajoute Tmall Global plus tard. Le lifestyle premium attaque les deux d'emblée. Le bon profil distributeur dépend du canal de tête. On tranche la question en phase de cadrage, avant toute longue liste.",
+    a: "Les deux, à terme. La beauté démarre le plus souvent en ligne avant de basculer en magasin lorsque le volume le justifie. L'agroalimentaire suit le chemin inverse : ouverture offline, puis Tmall Global en relais. Le lifestyle premium engage les deux fronts d'emblée. Le bon profil de distributeur dépend du canal de tête. La question se tranche en phase de cadrage, avant toute longue liste.",
   },
   {
     cat: 'Canaux',
-    q: 'Faut-il ouvrir mon propre flagship Tmall ?',
-    a: "En général non, pas la première année. Un flagship coûte autour de 150 000 RMB de setup plus dépôts, plus une agence Tmall Partner entre 30 000 et 80 000 RMB par mois, plus les médias. Les distributeurs qui ont déjà un compte Tmall opèrent une boutique plus efficace au démarrage. Vous ouvrez la vôtre quand le GMV annuel dépasse 10 millions de RMB et que vous avez besoin du contrôle direct sur la data, les prix et le CRM.",
+    q: 'Faut-il ouvrir son propre flagship Tmall ?',
+    a: "Pas la première année, dans l'immense majorité des cas. Un flagship engage environ 150 000 RMB de setup hors dépôts, complétés par 30 000 à 80 000 RMB mensuels pour une agence Tmall Partner, sans compter le média. Les distributeurs déjà équipés d'un compte Tmall opèrent une boutique plus efficace au lancement. La marque ouvre la sienne lorsque le GMV annuel franchit dix millions de RMB et que la maîtrise directe de la data, des prix et du CRM devient stratégique.",
   },
   {
     cat: 'Canaux',
-    q: 'CBEC ou general trade pour le premier coup ?',
-    a: "Le CBEC (cross-border via Tmall Global et JD Worldwide) est plus rapide. Pas d'enregistrement NMPA pour la cosmétique, étiquetage plus simple, droits réduits sur les commandes pour usage personnel. La plupart des marques s'en servent comme banc d'essai. Le general trade devient obligatoire pour le retail physique et le passage à l'échelle. Trajectoire classique : CBEC d'abord, general trade ajouté quand les volumes justifient les démarches.",
+    q: 'CBEC ou general trade pour la première salve ?',
+    a: "Le CBEC, transfrontalier via Tmall Global et JD Worldwide, ouvre plus vite. Pas d'enregistrement NMPA pour la cosmétique, étiquetage allégé, droits abaissés sur les commandes destinées à un usage personnel. La plupart des marques s'en servent comme banc d'essai. Le general trade s'impose dès que le retail physique entre en jeu, et que les volumes basculent à l'échelle supérieure. Trajectoire classique : CBEC d'abord, general trade greffé lorsque les volumes justifient les démarches.",
   },
   {
     cat: 'Canaux',
-    q: 'Comment toucher les villes tier-2 et tier-3 ?',
-    a: "Pas en direct. Ce sont les distributeurs régionaux qui le font, et c'est précisément à ça que sert un partenariat distribution. Le tier-1 (Shanghai, Pékin, Canton, Shenzhen) est un jeu. Le tier-2 (Hangzhou, Chengdu, Wuhan) en est un autre. Le tier-3 demande un partenaire différent, avec une structure de coûts différente. Un distributeur national qui revendique une couverture tier-3 mais ne sert que le tier-1, c'est un signal d'alerte fréquent qu'on attrape en diligence.",
+    q: 'Comment atteindre les villes tier-2 et tier-3 ?',
+    a: "Jamais en direct. Le maillage revient aux distributeurs régionaux, et c'est précisément l'apport d'un partenariat de distribution. Le tier 1 (Shanghai, Pékin, Canton, Shenzhen) constitue un terrain. Le tier 2 (Hangzhou, Chengdu, Wuhan) en représente un autre. Le tier 3 réclame un partenaire à part, doté d'une structure de coûts à part. Le distributeur national qui revendique une couverture tier 3 mais ne sert en réalité que le tier 1 reste un signal d'alerte classique, repéré en due diligence.",
   },
   {
     cat: 'Négociation',
-    q: 'Exclusivité nationale, ou canal par canal ?',
-    a: "Exclusivité par canal la première année. Offline au distributeur A, online au distributeur B ou à nous. L'exclusivité nationale complète ne s'accorde qu'en échange d'engagements de volumes fermes et de jalons de performance clairs. Les marques qui ont signé une exclusivité nationale sans ces clauses sont celles qui restent coincées trois ans.",
+    q: 'Exclusivité nationale, ou exclusivité canal par canal ?',
+    a: "Exclusivité par canal la première année. L'offline confié au distributeur A, l'online au distributeur B, voire à nous. L'exclusivité nationale entière ne se concède qu'en contrepartie d'engagements de volumes fermes et de jalons de performance précis. À défaut de ces verrous, l'exclusivité signée fige la marque trois années durant.",
   },
   {
     cat: 'Négociation',
-    q: 'Quels modalités de paiement faut-il viser ?',
-    a: "Première commande : 100 % prépayé contre facture proforma, parfois un crédit documentaire pour les gros volumes. Au bout d'un an de trading propre : 30 % d'acompte, 70 % à expédition, ou net 30 à 60 jours. Open account 90 jours seulement avec les distributeurs qu'on connaît bien. Devise USD ou EUR presque toujours. Le RMB à l'import reste rare.",
+    q: 'Quelles modalités de paiement viser ?',
+    a: "Première commande : 100 % prépayé contre facture proforma, parfois sécurisé par un crédit documentaire sur les gros volumes. Après douze mois d'historique sans accroc : 30 % d'acompte, 70 % à expédition, ou net 30 à 60 jours. Le compte ouvert à 90 jours se réserve aux distributeurs bien identifiés par nos équipes. Devise quasi systématiquement USD ou EUR. Le RMB à l'import demeure rare.",
   },
   {
     cat: 'Négociation',
-    q: 'Quel MOQ réaliste sur la première commande ?',
-    a: "Beauté et compléments : 30 000 à 80 000 EUR pour qu'un distributeur sérieux vous prenne. F&B : 50 000 EUR et plus, selon la DLC et la taille de palette. En dessous de 20 000 EUR, le distributeur vous traite comme un test. C'est honnête, mais le niveau de soutien suivra.",
+    q: 'Quel MOQ retenir comme réaliste sur la première commande ?',
+    a: "Beauté et compléments : entre 30 000 et 80 000 EUR pour intéresser un distributeur sérieux. Agroalimentaire : 50 000 EUR a minima, selon la DLC et le format de palette. En deçà de 20 000 EUR, le distributeur traite la marque comme un test. La démarche reste honnête, mais l'engagement opérationnel s'en ressent.",
   },
   {
     cat: 'Opérations',
-    q: "Comment vérifier que le distributeur remonte les vrais chiffres ?",
-    a: "Accès lecture seule aux back-offices Tmall et JD, inscrit au contrat, pas en option. Recoupement avec un tracker indépendant type Magic Mirror pour le sell-through catégorie. Visites en magasin deux fois par an minimum. Si un distributeur refuse l'accès back-end, on quitte la table.",
+    q: "Comment s'assurer que le distributeur remonte des chiffres fiables ?",
+    a: "Accès en lecture seule aux back-offices Tmall et JD, inscrit au contrat, jamais en option. Recoupement avec un outil indépendant, type Magic Mirror, pour le sell-through catégorie. Visites en magasin deux fois par an au minimum. Si un distributeur refuse l'accès back-end, la négociation s'arrête là.",
   },
   {
     cat: 'Opérations',
-    q: 'Que se passe-t-il si le distributeur sous-performe ?',
-    a: "On le détecte tôt via les revues mensuelles, en formule Sourcer et rester. Si les chiffres ne se redressent pas, on relance un sourcing de remplacement. Les marques qui patientent trop sur un partenaire faible perdent plus que celles qui changent. BeyondCompass garde des candidats de remplacement à jour ; le prochain tour va en général plus vite que le premier.",
+    q: 'Que faire lorsque le distributeur sous-performe ?',
+    a: "Le décrochage se détecte tôt, à travers les revues mensuelles, sous la formule Sourcer et rester. Si les chiffres ne redressent pas, nous relançons un sourcing de remplacement. Les marques qui s'éternisent sur un partenaire défaillant perdent davantage que celles qui tranchent. BeyondCompass entretient un vivier de remplaçants actualisé ; le tour suivant s'enclenche en règle générale plus vite que le premier.",
   },
   {
     cat: 'Opérations',
-    q: 'Comment contenir le marché gris et le daigou ?',
-    a: "On les réduit, on ne les efface pas. Contrôle des prix serré sur le marché domestique, traçabilité par lot, takedown sur Taobao et Xianyu pour les annonces non autorisées, alertes douanes aux points d'entrée chinois. Comptez 80 000 à 200 000 RMB par an de monitoring si la catégorie est exposée. La beauté premium, les compléments et le vin voient passer le plus de flux parallèle.",
+    q: 'Comment endiguer le marché gris et le daigou ?',
+    a: "Le travail consiste à les réduire, jamais à les supprimer. Contrôle serré des prix sur le marché domestique, traçabilité au lot, takedown sur Taobao et Xianyu pour les annonces non autorisées, alertes douanières aux points d'entrée chinois. Tablez sur 80 000 à 200 000 RMB par an de monitoring lorsque la catégorie y est exposée. La beauté premium, les compléments et les vins concentrent l'essentiel des flux parallèles.",
   },
   {
     cat: 'Opérations',
-    q: 'Combien de temps cela prend-il à mon équipe ?',
-    a: "Environ deux heures par semaine pour votre chef de projet pendant les phases 1 à 3. Trois ou quatre sessions de travail d'une demi-journée sur l'ensemble de la mission. Plus dense pendant les entretiens et la négociation, parce que vous êtes à la table. Sur la recherche, la longue liste et la diligence, c'est nous qui portons la charge.",
+    q: 'Quelle charge cette mission représente-t-elle pour mon équipe ?',
+    a: "Comptez environ deux heures hebdomadaires pour votre chef de projet durant les phases 1 à 3. Trois à quatre sessions de travail d'une demi-journée sur l'ensemble de la mission. La charge s'intensifie pendant les entretiens et la négociation, puisque vous êtes à la table. Sur la recherche, la longue liste et la due diligence, l'effort repose sur nos équipes.",
   },
   {
     cat: 'Juridique',
     q: 'Qui dépose ma marque en Chine ?',
-    a: "Vous, à votre nom. Toujours. Ne laissez jamais un distributeur déposer votre marque, même à titre provisoire. La Chine est un marché de premier déposant et le trademark squatting y est une vraie activité. Déposez dans les classes 3, 5, 29, 30, 35 et 43 selon la catégorie, avant toute activité commerciale, avant tout salon, avant toute mention sur les réseaux.",
+    a: "La marque elle-même, en son nom propre. Sans exception. Ne confiez jamais ce dépôt à un distributeur, même à titre provisoire. La Chine reste un marché du premier déposant, et le trademark squatting s'y pratique en activité de plein exercice. Déposez dans les classes 3, 5, 29, 30, 35 et 43 selon la catégorie, avant toute commercialisation, avant tout salon, avant la moindre publication sur les réseaux.",
   },
   {
     cat: 'Juridique',
-    q: 'Que devient le stock en cas de résiliation ?',
-    a: "Écrit au contrat dès le départ. Clause de rachat standard : la marque ou le nouveau distributeur rachète le stock invendu au prix débarqué, moins une décote raisonnable. Sans cette clause, le distributeur sortant peut brader la marchandise à n'importe quel prix ou retenir le stock en otage pour bloquer votre relance. Cela se négocie dès le jour un.",
+    q: 'Quel sort réserver au stock en cas de résiliation ?',
+    a: "Le sort du stock figure au contrat dès l'origine. Clause de rachat type : la marque, ou le distributeur entrant, reprend le stock invendu au prix débarqué, sous une décote raisonnable. À défaut, le distributeur sortant peut brader la marchandise à n'importe quel prix, ou retenir le stock en otage pour bloquer la relance. La clause se négocie au premier jour.",
   },
   {
     cat: 'Tarifs',
-    q: 'Combien coûte cette mission ?',
-    a: "Sourcer et passer la main : forfait projet, en général entre 40 000 et 90 000 EUR pour un brief mono-catégorie, mono-canal. Devis au premier appel, une fois le brief clair. Sourcer et rester : forfait projet plus retainer mensuel, retainer ajusté au périmètre, en général entre 40 000 et 150 000 RMB. Aucune commission distributeur, jamais.",
+    q: 'Quel est le coût de la mission ?',
+    a: "Sourcer et passer la main : forfait projet, généralement compris entre 40 000 et 90 000 EUR pour un brief mono-catégorie, mono-canal. Devis remis dès le premier rendez-vous, une fois le brief stabilisé. Sourcer et rester : forfait projet auquel s'ajoute un retainer mensuel, calibré sur le périmètre, en règle générale entre 40 000 et 150 000 RMB. Aucune commission auprès du distributeur, jamais.",
   },
   {
     cat: 'Tarifs',
     q: 'Quand passer en direct l\'emporte-t-il sur le distributeur ?',
-    a: "Quasiment jamais la première année. Passer en direct, c'est monter une WFOE à Shanghai ou Hong Kong (4 à 6 mois, 30 000 à 80 000 EUR de setup), recruter un GM local, bâtir vos relations entrepôt et absorber tout le risque. Le seuil de rentabilité tourne autour de 8 à 12 millions d'EUR de chiffre d'affaires Chine annuel, quand les marges du distributeur coûtent plus cher que faire tourner votre propre opération. En dessous, son réseau et son capital coûtent moins que votre équipe interne.",
+    a: "Pratiquement jamais la première année. Passer en direct suppose de monter une WFOE à Shanghai ou Hong Kong (quatre à six mois, 30 000 à 80 000 EUR de setup), de recruter un directeur local, de bâtir les relations entrepôt et d'assumer l'intégralité du risque. Le point de bascule se situe autour de huit à douze millions d'euros de chiffre d'affaires Chine annuel, lorsque les marges du distributeur pèsent davantage que le coût d'une opération en propre. En deçà, son réseau et son capital reviennent moins cher que votre équipe interne.",
   },
 ];
 
@@ -280,21 +280,21 @@ const contextCards = [
   {
     image: '/Images/enter-china/dist-context-shelf.png',
     alt: "Un acheteur chinois inspecte la mise en linéaire d'une marque importée premium dans un supermarché de ville tier-1",
-    title: "Le bon distributeur n'est pas le plus bruyant",
-    body: "Les mêmes douze distributeurs vous croisent sur tous les salons. Le bon partenaire, c'est souvent un opérateur plus discret qu'on connaît par son nom, pas un démarcheur à froid.",
+    title: "Le bon distributeur n'est jamais le plus tapageur",
+    body: "Les mêmes douze noms vous abordent dans chaque salon. Le bon partenaire est le plus souvent un opérateur discret, identifié par son nom dans notre fichier, jamais un démarcheur en porte-à-porte.",
   },
   {
     image: '/Images/enter-china/dist-context-meeting.png',
     alt: "Un contrat signé sur un bureau métallique dans un entrepôt de distribution chinois en activité, cartons de marque sur palettes en arrière-plan",
-    title: 'Signer un distributeur, c\'est le début, pas la fin',
-    body: "Les marques qui se taisent après la signature reculent au fond du rayon en deux trimestres. Le travail qui protège votre position commence après la signature.",
+    title: 'Signer un distributeur ouvre la collaboration, sans la conclure',
+    body: "Les marques qui se taisent une fois le contrat signé reculent au fond du linéaire en deux trimestres. Le travail qui défend la position commence précisément après la signature.",
   },
 ];
 ---
 
 <Layout
   title="Distribution produit en Chine | Beyond Border Group"
-  description="Trouver le bon distributeur en Chine, en ligne et en magasin. Base partenaires BeyondCompass, négociation bilingue, retainer gardien de marque. 15 ans sur le terrain."
+  description="Sourcer le bon distributeur en Chine, en ligne comme en magasin. Fichier partenaires BeyondCompass, négociation bilingue, retainer de gardien de marque. Quinze années de terrain."
 >
   <div class="dis-progress" aria-hidden="true"><div class="dis-progress__bar"></div></div>
   <article class="dis">
@@ -318,13 +318,10 @@ const contextCards = [
           <span class="dis-hero__title-row">Le bon distributeur,</span>
           <span class="dis-hero__title-row dis-hero__title-row--accent">en ligne et en magasin.</span>
           <span class="dis-hero__title-row">Et l'équipe qui</span>
-          <span class="dis-hero__title-row dis-hero__title-row--highlight">le tient droit.</span>
+          <span class="dis-hero__title-row dis-hero__title-row--highlight">sait le tenir.</span>
         </h1>
         <p class="dis-hero__lead dis-reveal" style="--reveal-delay: 200ms;">
-          On source vos distributeurs dans BeyondCompass, notre base partenaires
-          de quinze ans. On négocie en deux langues. On reste en gardien de marque
-          une fois le contrat signé. La plupart des agences font bien l'un des trois.
-          Nous faisons les trois.
+          Nous puisons vos distributeurs dans BeyondCompass, notre fichier de relations bâti sur quinze ans. Nous négocions dans les deux langues. Une fois le contrat signé, nous demeurons gardiens de la marque. La plupart des cabinets maîtrisent l'un de ces trois exercices. Nous les tenons tous les trois.
         </p>
         <div class="dis-hero__actions dis-reveal" style="--reveal-delay: 280ms;">
           <a href="/fr/nous-contacter" class="btn btn--primary dis-magnetic">Nous parler</a>
@@ -334,15 +331,15 @@ const contextCards = [
         <div class="dis-hero__meta dis-reveal" style="--reveal-delay: 360ms;">
           <div class="dis-hero__meta-item">
             <span class="dis-hero__meta-num" data-counter="15" data-suffix="+">0</span>
-            <span class="dis-hero__meta-label">années de relations validées</span>
+            <span class="dis-hero__meta-label">années de relations vérifiées</span>
           </div>
           <div class="dis-hero__meta-item">
             <span class="dis-hero__meta-num">Toutes</span>
-            <span class="dis-hero__meta-label">les grandes catégories conso, en ligne et en magasin</span>
+            <span class="dis-hero__meta-label">les grandes catégories de la consommation, en ligne comme en magasin</span>
           </div>
           <div class="dis-hero__meta-item">
             <span class="dis-hero__meta-num">Zéro</span>
-            <span class="dis-hero__meta-label">commission distributeur. Jamais.</span>
+            <span class="dis-hero__meta-label">commission auprès du distributeur. Jamais.</span>
           </div>
         </div>
       </div>
@@ -358,11 +355,9 @@ const contextCards = [
       <div class="container">
         <header class="section-header section-header--center dis-reveal">
           <span class="eyebrow">Deux vérités d'abord</span>
-          <h2>Deux choses à savoir avant de signer quoi que ce soit</h2>
+          <h2>Deux constats préalables à toute signature</h2>
           <p class="section-header__lead">
-            La plupart des marques étrangères croisent les mêmes douze distributeurs
-            sur tous les salons. La plupart des contrats signés se taisent en deux
-            trimestres. Voici ce qui pèse le plus, d'après notre expérience.</p>
+            La plupart des marques étrangères croisent les mêmes douze distributeurs au fil des salons. La plupart des contrats signés sombrent dans le silence dès le deuxième trimestre. Voici, à la lumière de notre expérience, ce qui pèse réellement dans la balance.</p>
         </header>
 
         <div class="dis-context">
@@ -386,13 +381,9 @@ const contextCards = [
       <div class="container">
         <header class="section-header section-header--center dis-reveal">
           <span class="eyebrow">Notre différence</span>
-          <h2>Chaque shortlist tourne sur BeyondCompass</h2>
+          <h2>Chaque shortlist sort de BeyondCompass</h2>
           <p class="section-header__lead">
-            Le sourcing distributeur en Chine, c'est souvent une liste grattée sur
-            1688 ou Alibaba avec un markup. Pas chez nous. BeyondCompass est la
-            base de relations qu'on a construite sur quinze ans, à travers nos
-            bureaux et nos relais. Distributeurs, TP Tmall, partenaires Douyin,
-            importateurs. Vérifiés à la main, rencontrés en personne, tenus à jour.
+            Le sourcing de distributeurs en Chine se résume trop souvent à une liste ratissée sur 1688 ou Alibaba, revendue avec un markup. Notre méthode diverge. BeyondCompass est le fichier de relations bâti sur quinze ans, depuis nos bureaux et nos relais : distributeurs, TP Tmall, partenaires Douyin, importateurs. Chaque contact a été qualifié à la main, rencontré en personne, tenu à jour.
           </p>
         </header>
 
@@ -409,36 +400,29 @@ const contextCards = [
                     decoding="async"
                   />
                 </div>
-                <span class="dis-compass__chip">Notre base partenaires</span>
+                <span class="dis-compass__chip">Notre fichier de partenaires</span>
               </div>
 
               <p class="dis-compass__pitch">
-                Économisez trois mois de mauvaises introductions. Partez d'une liste de partenaires qu'on connaît déjà.
+                Épargnez-vous trois mois de présentations stériles. Démarrez à partir d'un vivier de partenaires que nous connaissons déjà.
               </p>
 
               <p class="dis-compass__body">
-                Les cabinets génériques grattent 1688 et Alibaba, posent un markup
-                sur le fichier et appellent ça une shortlist curatée. Mille noms
-                avant midi, presque aucun pour votre catégorie. Ce n'est pas
-                comme ça qu'on travaille. BeyondCompass, ce sont quinze ans de
-                rencontres physiques, rafraîchies chaque trimestre, organisées
-                par grande catégorie de consommation. Quand on passe nos quatre
-                filtres sur la shortlist, on les passe sur des partenaires que
-                l'équipe connaît déjà par leur nom.
+                Les cabinets génériques ratissent 1688 et Alibaba, ajoutent un markup sur le fichier et présentent l'ensemble comme une shortlist curatée. Mille noms avant midi, à peine un pour votre catégorie. Notre méthode est ailleurs. BeyondCompass, ce sont quinze années de rencontres physiques, rafraîchies chaque trimestre, organisées par grande catégorie de consommation. Quand nos quatre filtres tombent sur la shortlist, ils s'appliquent à des partenaires que l'équipe connaît déjà par leur nom.
               </p>
 
               <ul class="dis-compass__stats">
                 <li>
                   <span class="dis-compass__stat-num" data-counter="15" data-suffix="+">0</span>
-                  <span class="dis-compass__stat-label">années de relations validées</span>
+                  <span class="dis-compass__stat-label">années de relations vérifiées</span>
                 </li>
                 <li>
                   <span class="dis-compass__stat-num">Toutes</span>
-                  <span class="dis-compass__stat-label">les grandes catégories de consommation qu'on opère</span>
+                  <span class="dis-compass__stat-label">les grandes catégories de consommation que nous opérons</span>
                 </li>
                 <li>
                   <span class="dis-compass__stat-num">Zéro</span>
-                  <span class="dis-compass__stat-label">commission distributeur. Jamais.</span>
+                  <span class="dis-compass__stat-label">commission auprès du distributeur. Jamais.</span>
                 </li>
               </ul>
 
@@ -453,7 +437,7 @@ const contextCards = [
                   <span aria-hidden="true" class="dis-compass__btn-arrow">&#8599;</span>
                 </a>
                 <a href="/fr/nous-contacter" class="btn dis-compass__btn-ghost">
-                  Nous briefer sur votre recherche
+                  Nous confier votre brief
                 </a>
               </div>
             </div>
@@ -492,12 +476,12 @@ const contextCards = [
                   <rect x="48" y="422" width="270" height="11" rx="4" fill="#2b3946"/>
                   <rect x="70" y="441" width="200" height="10" rx="4" fill="#243140"/>
                   <line x1="40" y1="368" x2="370" y2="368" stroke="#5BC2F0" stroke-opacity="0.25" stroke-dasharray="2 4" stroke-width="1"/>
-                  <text x="40" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.12em" font-weight="700" fill="#5BC2F0" fill-opacity="0.55">GRATTÉ, PAS GARDÉ</text>
+                  <text x="40" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.12em" font-weight="700" fill="#5BC2F0" fill-opacity="0.55">RATISSÉ, NON RETENU</text>
                 </g>
                 <rect x="0" y="340" width="440" height="140" fill="url(#cmp-fade)" pointer-events="none"/>
 
                 {/* Database label */}
-                <text x="40" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.18em" font-weight="700" fill="#9DDBF5">BASE BEYONDCOMPASS</text>
+                <text x="40" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.18em" font-weight="700" fill="#9DDBF5">FICHIER BEYONDCOMPASS</text>
                 <line x1="40" y1="58" x2="200" y2="58" stroke="#9DDBF5" stroke-opacity="0.4" stroke-width="1"/>
 
                 {/* Card 4 (back) */}
@@ -560,14 +544,14 @@ const contextCards = [
                   <circle cx="46" cy="46" r="36" fill="#0a1a28" stroke="#5BC2F0" stroke-opacity="0.6" stroke-width="1.5"/>
                   <text x="46" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0.04em">100%</text>
                   <line x1="22" y1="46" x2="70" y2="46" stroke="#5BC2F0" stroke-opacity="0.5" stroke-width="1"/>
-                  <text x="46" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#9DDBF5" text-anchor="middle" letter-spacing="0.22em">VALIDÉS</text>
+                  <text x="46" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#9DDBF5" text-anchor="middle" letter-spacing="0.22em">VÉRIFIÉS</text>
                 </g>
               </svg>
 
               <ul class="dis-compass__art-key">
                 <li><span class="dis-compass__art-dot dis-compass__art-dot--vetted"></span>Vérifiés à la main, rencontrés en personne</li>
                 <li><span class="dis-compass__art-dot dis-compass__art-dot--live"></span>Relations tenues à jour</li>
-                <li><span class="dis-compass__art-dot dis-compass__art-dot--reject"></span>Listes grattées, hors de notre base</li>
+                <li><span class="dis-compass__art-dot dis-compass__art-dot--reject"></span>Listes ratissées, hors de notre fichier</li>
               </ul>
             </div>
           </div>
@@ -576,18 +560,18 @@ const contextCards = [
         <div class="dis-compass-tiers">
           <article class="dis-compass-tier dis-reveal">
             <span class="dis-compass-tier__label">Shortlist</span>
-            <p class="dis-compass-tier__lead">Trois à cinq noms validés, calibrés sur votre catégorie et votre stade. Livrée en deux à trois semaines.</p>
-            <span class="dis-compass-tier__when">Quand le brief est clair et qu'il vous faut les introductions, vite.</span>
+            <p class="dis-compass-tier__lead">Trois à cinq noms vérifiés, calibrés sur votre catégorie et votre maturité. Livraison en deux à trois semaines.</p>
+            <span class="dis-compass-tier__when">Lorsque le brief est arrêté et que les introductions doivent suivre, vite.</span>
           </article>
           <article class="dis-compass-tier dis-reveal" style="--reveal-delay: 80ms;">
             <span class="dis-compass-tier__label">Cartographie marché</span>
-            <p class="dis-compass-tier__lead">Quinze à vingt options comparables sur le paysage. Livrée en trois à six semaines.</p>
-            <span class="dis-compass-tier__when">Quand vous voulez la vue d'ensemble avant de vous engager.</span>
+            <p class="dis-compass-tier__lead">Quinze à vingt options comparables sur le paysage concurrentiel. Livraison en trois à six semaines.</p>
+            <span class="dis-compass-tier__when">Lorsque la vue d'ensemble s'impose avant tout engagement.</span>
           </article>
           <article class="dis-compass-tier dis-reveal" style="--reveal-delay: 160ms;">
             <span class="dis-compass-tier__label">Remplacement</span>
-            <p class="dis-compass-tier__lead">Démêler un partenaire en sous-performance. Sourcer le suivant. Piloter la transition.</p>
-            <span class="dis-compass-tier__when">Quand la relation ne fonctionne plus et qu'il vous faut une sortie propre.</span>
+            <p class="dis-compass-tier__lead">Sortir d'un partenaire en sous-performance. Sourcer son successeur. Piloter la bascule.</p>
+            <span class="dis-compass-tier__when">Lorsque la relation s'enlise et qu'une sortie propre s'impose.</span>
           </article>
         </div>
       </div>
@@ -601,11 +585,9 @@ const contextCards = [
       <div class="container">
         <header class="section-header section-header--center dis-reveal">
           <span class="eyebrow">Deux façons de travailler avec nous</span>
-          <h2>Trouvez le partenaire. Puis dosez la part qu'on prend.</h2>
+          <h2>Le bon partenaire trouvé, calibrez la part que nous prenons</h2>
           <p class="section-header__lead">
-            Les deux missions suivent le même process de sourcing : brief, longue
-            liste depuis BeyondCompass, shortlist, diligence, négociation. Ce qui
-            change, c'est ce qui se passe après la signature.
+            Les deux missions empruntent le même cheminement de sourcing : brief, longue liste extraite de BeyondCompass, shortlist, due diligence, négociation. C'est l'après-signature qui les distingue.
           </p>
         </header>
 
@@ -666,7 +648,7 @@ const contextCards = [
                     </ul>
                   </div>
                   <div class="dis-route__list dis-route__list--muted">
-                    <span class="dis-route__list-label">On s'occupe de</span>
+                    <span class="dis-route__list-label">Nous prenons en charge</span>
                     <ul>
                       {m.they.map((b) => (
                         <li>
@@ -679,7 +661,7 @@ const contextCards = [
                 </div>
 
                 <div class="dis-route__when">
-                  <span class="dis-route__when-label">À choisir quand</span>
+                  <span class="dis-route__when-label">À privilégier quand</span>
                   <p>{m.when}</p>
                 </div>
 
@@ -696,7 +678,7 @@ const contextCards = [
           <div class="dis-matrix__intro">
             <span class="eyebrow">Comment choisir</span>
             <h3>Deux questions, une réponse</h3>
-            <p>Avez-vous déjà un référent Chine dans l'équipe, ou partez-vous de zéro ? Et voulez-vous que la marque soit défendue chaque mois, ou êtes-vous prêts à la piloter vous-mêmes ? La réponse tranche.</p>
+            <p>Disposez-vous d'un référent Chine en interne, ou partez-vous de zéro ? La marque doit-elle être défendue mois après mois, ou pilotez-vous vous-mêmes l'exécution ? La réponse trace la voie.</p>
           </div>
           <div class="dis-matrix__grid" role="table" aria-label="Matrice de sélection des missions de distribution">
             <div class="dis-matrix__corner" role="presentation"></div>
@@ -706,21 +688,21 @@ const contextCards = [
             <div class="dis-matrix__row-head" role="rowheader" data-row="1">Défense active de la marque</div>
             <button type="button" class="dis-matrix__cell" role="cell" data-row="1" data-col="1" data-tab-jump="model-tab-0">
               <span class="dis-matrix__cell-label">Sourcer et rester</span>
-              <span class="dis-matrix__cell-sub">On source, on reste, on assure le rôle de gardien de marque.</span>
+              <span class="dis-matrix__cell-sub">Nous sourçons, nous restons, nous tenons le rôle de gardien de marque.</span>
             </button>
             <button type="button" class="dis-matrix__cell" role="cell" data-row="1" data-col="2" data-tab-jump="model-tab-0">
               <span class="dis-matrix__cell-label">Sourcer et rester, version allégée</span>
-              <span class="dis-matrix__cell-sub">Votre référent gère le quotidien. On protège la marque.</span>
+              <span class="dis-matrix__cell-sub">Votre référent gère le quotidien. Nous protégeons la marque.</span>
             </button>
 
             <div class="dis-matrix__row-head" role="rowheader" data-row="2">Pilotage interne</div>
             <button type="button" class="dis-matrix__cell" role="cell" data-row="2" data-col="1" data-tab-jump="model-tab-1">
               <span class="dis-matrix__cell-label">Sourcer et passer la main, avec transfert</span>
-              <span class="dis-matrix__cell-sub">On source. On forme votre équipe. On s'efface.</span>
+              <span class="dis-matrix__cell-sub">Nous sourçons. Nous formons votre équipe. Nous nous retirons.</span>
             </button>
             <button type="button" class="dis-matrix__cell" role="cell" data-row="2" data-col="2" data-tab-jump="model-tab-1">
               <span class="dis-matrix__cell-label">Sourcer et passer la main</span>
-              <span class="dis-matrix__cell-sub">On source. Votre référent reprend les clés. Fini.</span>
+              <span class="dis-matrix__cell-sub">Nous sourçons. Votre référent reprend les clés. Fin de mission.</span>
             </button>
           </div>
         </div>
@@ -734,9 +716,7 @@ const contextCards = [
           <span class="eyebrow">Notre façon de travailler</span>
           <h2>Quatre phases, du brief au contrat signé</h2>
           <p class="section-header__lead">
-            Trois à cinq mois en moyenne. Chaque phase se termine sur des livrables
-            actionnables, pas des slides à retraduire. On reste de votre côté de la
-            table tout du long.
+            Trois à cinq mois en moyenne. Chaque phase se conclut sur des livrables exploitables, jamais sur des slides à retraduire. Nous demeurons à votre côté de la table d'un bout à l'autre du parcours.
           </p>
         </header>
 
@@ -801,7 +781,7 @@ const contextCards = [
 
                     <div class="dis-phase__columns">
                       <div class="dis-phase__col">
-                        <span class="dis-phase__col-label">Ce qu'on fait</span>
+                        <span class="dis-phase__col-label">Ce que nous faisons</span>
                         <ul class="dis-phase__checks">
                           {p.does.map((b, j) => (
                             <li style={`--seq: ${j};`}>
@@ -842,9 +822,7 @@ const contextCards = [
           <span class="eyebrow">FAQ</span>
           <h2>Vingt questions, des réponses directes</h2>
           <p class="section-header__lead">
-            Les questions concrètes que nous posent fondateurs et opérateurs au
-            moment de sourcer leur premier, ou leur cinquième, distributeur en
-            Chine. Filtrez par sujet.
+            Les interrogations concrètes que fondateurs et opérateurs nous adressent au moment de sourcer leur premier distributeur en Chine, comme leur cinquième. À filtrer par sujet.
           </p>
         </header>
 
@@ -894,10 +872,7 @@ const contextCards = [
           <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
           <h2 class="dis-cta__title">Besoin d'un distributeur en Chine ? Ou d'en changer ?</h2>
           <p class="dis-cta__lead">
-            Dites-nous votre catégorie, vos volumes et où vous en êtes aujourd'hui.
-            Un membre senior de l'équipe vous répond sous un jour ouvré, avec deux
-            ou trois noms qui valent un rendez-vous. Pas de tunnel commercial, pas
-            de répondeur automatique.
+            Indiquez-nous votre catégorie, vos volumes et votre point d'avancement. Un membre senior de l'équipe vous répond sous un jour ouvré, accompagné de deux ou trois noms qui méritent un rendez-vous. Ni tunnel commercial, ni répondeur automatique.
           </p>
           <div class="dis-cta__actions">
             <a href="/fr/nous-contacter" class="btn dis-cta__btn-primary">Lancer la conversation</a>

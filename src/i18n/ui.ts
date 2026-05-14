@@ -141,58 +141,60 @@ export const ui = {
     'nav.about': 'À propos',
 
     'nav.enter.intro':
-      "Démarrer en Chine sur des bases solides. Le bon modèle, le partenaire qu'il faut, un calendrier qui tient.",
+      "S'implanter sur le marché chinois exige un modèle économique adapté, des partenaires qualifiés et un calendrier maîtrisé.",
     'nav.grow.intro':
-      "Boutiques, médias, création : une équipe intégrée, du brief au reporting.",
+      "Une équipe intégrée pilote vos boutiques, vos plans média et votre production créative, de la conception au suivi des performances.",
     'nav.learn.intro':
-      "Lire le marché chinois avant d'y engager le moindre euro. Des formats animés par des opérationnels, pas par des consultants.",
+      "Comprendre le marché chinois avant tout investissement. Des programmes conduits par des praticiens en activité sur le terrain.",
 
     'nav.enter.marketEntry.label': "Stratégie d'implantation",
     'nav.enter.marketEntry.desc':
-      "Le modèle, les partenaires, la feuille de route. Tout caler avant le premier yuan.",
+      "Modèle économique, sélection des partenaires, feuille de route opérationnelle. Un dispositif arrêté en amont du lancement.",
     'nav.enter.crossBorder.label': 'Cross-Border eCommerce',
     'nav.enter.crossBorder.desc':
-      'Tmall Global, JD Worldwide. Sans monter de structure en Chine.',
+      "Tmall Global, JD Worldwide. Sans création d'entité juridique en Chine.",
     'nav.enter.distribution.label': 'Distribution',
     'nav.enter.distribution.desc':
-      'Le distributeur taillé pour votre catégorie, sur le bon canal.',
+      "Identifier le distributeur adapté à votre catégorie et au canal pertinent.",
     'nav.enter.branding.label': 'Marque et localisation',
-    'nav.enter.branding.desc': 'Une marque qui parle juste au consommateur chinois.',
+    'nav.enter.branding.desc':
+      "Une identité de marque ajustée aux attentes du consommateur chinois.",
 
     'nav.grow.ecommerce.label': 'Cross-Border eCommerce',
     'nav.grow.ecommerce.desc':
-      'Vos boutiques Tmall Global et JD Worldwide, pilotées de A à Z.',
+      "Gestion intégrale de vos boutiques Tmall Global et JD Worldwide.",
     'nav.grow.social.label': 'Social Commerce',
     'nav.grow.social.desc':
-      'Vendre sur Douyin, WeChat, RED. Livestream et KOL au cœur du dispositif.',
+      "Convertir sur Douyin, WeChat et RED. Livestream et KOL au centre du dispositif.",
     'nav.grow.campaigns.label': 'Campagnes',
     'nav.grow.campaigns.desc':
-      '618, Double 11, Nouvel An chinois. De la chauffe au jour J, sur tous les canaux.',
+      "618, Double 11, Nouvel An chinois. Pilotage multicanal, de la phase d'amorçage au pic des ventes.",
     'nav.grow.media.label': 'Média',
     'nav.grow.media.desc':
-      'Plans média performance et marque, sur toutes les plateformes chinoises.',
+      "Plans média de notoriété et de performance, sur l'ensemble des plateformes chinoises.",
     'nav.grow.kols.label': 'Influence et KOL',
     'nav.grow.kols.desc':
-      "Casting de KOL et campagnes payantes, de Douyin à RED en passant par WeChat.",
+      "Sélection des KOL et activations payantes sur Douyin, RED et WeChat.",
 
     'nav.learn.platforms.label': 'Plateformes',
     'nav.learn.platforms.desc':
-      "Tmall, JD, Douyin, WeChat, RED, Pinduoduo. À qui chacune parle, comment elle se gagne.",
+      "Tmall, JD, Douyin, WeChat, RED, Pinduoduo. Audience, mécaniques et conditions de réussite, plateforme par plateforme.",
     'nav.learn.masterclass.label': 'Masterclass',
     'nav.learn.masterclass.desc':
-      'Des sessions animées par des opérationnels. Formats courts, exemples du jour.',
+      "Sessions courtes conduites par des opérationnels, appuyées sur des cas récents.",
     'nav.learn.expeditions.label': 'Expéditions terrain',
     'nav.learn.expeditions.desc':
-      "Shanghai, Shenzhen, Hangzhou : voir l'écosystème de l'intérieur.",
+      "Shanghai, Shenzhen, Hangzhou : observer l'écosystème depuis le terrain chinois.",
     'nav.learn.insights.label': 'Décryptages',
     'nav.learn.insights.desc':
-      'Articles, notes et analyses, signés depuis le terrain.',
+      "Articles, notes et analyses produits depuis le terrain chinois.",
 
     'nav.feature.beyondcompass.desc':
-      'Distributeurs, TP Tmall, opérateurs de canaux : notre base, tous vérifiés.',
+      "Notre vivier de distributeurs, partenaires Tmall et opérateurs de canaux. Chaque profil vérifié en amont.",
     'nav.feature.chinawebfoundry.desc':
-      "Un site fait à Shanghai, qui tient sur l'internet chinois.",
-    'nav.feature.hubstudio.desc': 'Notre studio création et production, sur place.',
+      "Des sites pensés à Shanghai pour l'écosystème internet chinois.",
+    'nav.feature.hubstudio.desc':
+      "Studio de création et de production, installé en Chine.",
 
     // Language switcher
     'lang.switch.aria': 'Changer de langue',
@@ -201,7 +203,7 @@ export const ui = {
     // Footer
     'footer.aria.brand': "Accueil Beyond Border Group",
     'footer.pitch':
-      "Entrer en Chine, s'y développer, la comprendre. Vingt ans à faire le métier, plutôt qu'à le vendre.",
+      "S'implanter en Chine, s'y développer, la décrypter. Vingt années d'opérations conduites depuis le terrain.",
     'footer.cities': 'Shanghai · Hong Kong · Paris',
     'footer.social.linkedin': 'LinkedIn',
     'footer.social.linkedinAria': 'Beyond Border Group sur LinkedIn',
@@ -214,7 +216,7 @@ export const ui = {
     'footer.parent.eyebrow': 'Maison mère',
     'footer.parent.name': 'BeyondBorderGroup.org',
     'footer.parent.desc':
-      "Le toit commun de nos agences spécialistes de la Chine.",
+      "L'entité qui réunit l'ensemble de nos agences spécialistes du marché chinois.",
     'footer.parent.cta': 'Découvrir',
     'footer.copyright': '© Beyond Border Group {year}. Tous droits réservés.',
     'footer.legal.terms': "Conditions d'utilisation",
@@ -223,14 +225,15 @@ export const ui = {
 
     // Footer network descriptions
     'footer.net.nuvora.desc':
-      'LinkedIn travaillé au quotidien. Contenus, campagnes payantes, image des dirigeants.',
+      "Présence LinkedIn pilotée au quotidien. Production éditoriale, campagnes payantes et travail d'image des dirigeants.",
     'footer.net.chinawebfoundry.desc':
-      "Des sites taillés pour l'internet chinois. ICP, SEO Baidu, hébergement local.",
+      "Sites web conçus pour l'internet chinois. ICP, référencement Baidu, hébergement local.",
     'footer.net.beyondcompass.desc':
-      'Des distributeurs et partenaires Tmall vérifiés, présentés au cas par cas.',
+      "Distributeurs et partenaires Tmall qualifiés, sélectionnés au cas par cas selon votre catégorie.",
     'footer.net.redscroll.desc':
-      "WeChat, Douyin, RedNote, Weibo : nos équipes pilotent au jour le jour, depuis Shanghai.",
-    'footer.net.hubstudio.desc': 'Notre studio création et production, sur place.',
+      "WeChat, Douyin, RedNote, Weibo : pilotage quotidien assuré par nos équipes basées à Shanghai.",
+    'footer.net.hubstudio.desc':
+      "Studio de création et de production, installé en Chine.",
   },
 } as const;
 

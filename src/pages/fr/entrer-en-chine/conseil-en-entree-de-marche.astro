@@ -12,16 +12,16 @@ const phaseIcons: Record<string, string> = {
 
 const promises = [
   {
-    title: 'Des décisions adossées au terrain',
-    desc: "Chaque recommandation est confrontée aux plateformes, à la réglementation et aux partenaires que vous croiserez sur place. Pas de recherche en chambre.",
+    title: 'Des décisions ancrées dans le terrain',
+    desc: "Chaque recommandation se vérifie auprès des plateformes, des autorités réglementaires et des partenaires que vous rencontrerez en Chine. Aucune analyse de bureau.",
   },
   {
-    title: 'Un engagement par phases, jamais en bloc',
-    desc: "Vous engagez une phase à la fois. Vous arrêtez si la réponse change. Périmètre et budget restent dans vos mains.",
+    title: 'Un engagement séquencé, jamais en bloc',
+    desc: "Une phase à la fois. Vous arbitrez à chaque étape, ajustez le périmètre, suspendez la mission si la conclusion évolue. Le budget reste sous votre contrôle.",
   },
   {
-    title: 'Sourcing de distributeurs indépendant',
-    desc: "Nous ne touchons aucune commission des distributeurs. Vos intérêts, pas les leurs, sont du même côté de la table que nous.",
+    title: 'Un sourcing de distributeurs en toute indépendance',
+    desc: "Aucune commission perçue auprès des distributeurs. Notre rémunération provient exclusivement de votre engagement, ce qui aligne nos intérêts sur les vôtres.",
   },
 ];
 
@@ -32,43 +32,43 @@ const phases = [
     duration: '3 à 4 semaines',
     title: 'Diagnostic marché et réglementaire',
     image: '/Images/enter-china/phase-1-diagnosis.png',
-    imageAlt: "Une spécialiste réglementaire passe en revue les documents de conformité d'un produit dans un bureau de Shanghai",
+    imageAlt: "Une spécialiste réglementaire examine les documents de conformité d'un produit dans un bureau chinois",
     intro:
-      "On vérifie si votre produit peut légalement passer par le Cross-Border eCommerce, et on cartographie la concurrence.",
-    outcome: "Vous savez si votre produit peut entrer légalement en Chine, et à quel coût.",
+      "Nous évaluons l'éligibilité réglementaire de votre produit en Cross-Border eCommerce et dressons la cartographie de la concurrence.",
+    outcome: "Vous disposez d'une réponse documentée sur la légalité de l'importation et sur son coût.",
     does: [
-      "Éligibilité CBEC du produit (formulation, packaging, étiquetage)",
-      "Cadre réglementaire et exigences de conformité",
-      "Cartographie de la concurrence et positionnement",
-      "Sizing de l'opportunité, projections de demande réalistes",
+      "Éligibilité CBEC du produit : formulation, packaging, étiquetage",
+      "Cadre réglementaire applicable et exigences de conformité",
+      "Cartographie concurrentielle et axes de positionnement",
+      "Dimensionnement de l'opportunité et projections de demande étayées",
     ],
     deliverables: [
-      { kind: 'doc', name: 'Checklist faisabilité et conformité' },
-      { kind: 'report', name: 'Rapport benchmark concurrents' },
-      { kind: 'sheet', name: 'Analyse de positionnement prix' },
-      { kind: 'sheet', name: "Modèle de sizing de l'opportunité" },
+      { kind: 'doc', name: 'Note de faisabilité et conformité' },
+      { kind: 'report', name: 'Rapport benchmark concurrentiel' },
+      { kind: 'sheet', name: 'Analyse comparative des positionnements prix' },
+      { kind: 'sheet', name: "Modèle de dimensionnement de l'opportunité" },
     ],
   },
   {
     icon: 'channel',
     phase: 'Phase deux',
     duration: '2 à 3 semaines',
-    title: 'Évaluation canal et modèle consommateur',
+    title: 'Évaluation des canaux et du modèle consommateur',
     image: '/Images/enter-china/phase-2-channel.png',
-    imageAlt: "Une consommatrice fait défiler une appli e-commerce chinoise sur son smartphone dans un café de Shanghai",
+    imageAlt: "Une consommatrice consulte une application e-commerce chinoise sur son smartphone dans un café",
     intro:
-      "On évalue les plateformes possibles et on tranche le modèle de distribution qui tient économiquement.",
-    outcome: "Vous savez quelles plateformes vous correspondent, et quel modèle de distribution fait tenir l'équation.",
+      "Nous comparons les plateformes pertinentes et arbitrons le modèle de distribution dont l'économie tient sur la durée.",
+    outcome: "Vous identifiez les plateformes adaptées à votre positionnement et le modèle de distribution qui équilibre votre compte d'exploitation chinois.",
     does: [
-      "Évaluation des plateformes (Tmall Global, JD Worldwide, Douyin, RED)",
-      "Entrepôt sous douane ou direct mail, comparaison logistique",
-      "Sensibilité prix du consommateur chinois",
-      "Cahier des exigences par plateforme",
+      "Évaluation comparée des plateformes : Tmall Global, JD Worldwide, Douyin, RED",
+      "Comparaison logistique entre entrepôt sous douane et acheminement postal direct",
+      "Analyse de l'élasticité-prix du consommateur chinois",
+      "Cahier des charges détaillé par plateforme",
     ],
     deliverables: [
-      { kind: 'sheet', name: 'Matrice canaux avec forces par plateforme' },
+      { kind: 'sheet', name: 'Matrice des canaux et forces par plateforme' },
       { kind: 'diagram', name: 'Schéma des flux opérationnels' },
-      { kind: 'sheet', name: 'Validation des prix par modèle' },
+      { kind: 'sheet', name: 'Validation des prix selon le modèle retenu' },
       { kind: 'report', name: 'Rapport insights consommateurs' },
     ],
   },
@@ -76,23 +76,23 @@ const phases = [
     icon: 'benchmark',
     phase: 'Phase trois',
     duration: '4 à 6 semaines',
-    title: 'Plongée concurrents',
+    title: 'Analyse approfondie de la concurrence',
     image: '/Images/enter-china/phase-3-competitors.png',
-    imageAlt: "Un analyste marché examine des tableaux de bord concurrents sur trois écrans dans un bureau de Shanghai en soirée",
+    imageAlt: "Un analyste marché examine des tableaux de bord concurrents sur trois écrans dans un bureau en soirée",
     intro:
-      "On dissèque les marques qui réussissent dans votre catégorie sur les axes qui font bouger le cadran.",
-    outcome: "Vous savez à qui vous avez affaire, comment ils prix-positionnent, et où se trouve l'espace libre.",
+      "Nous décortiquons les marques qui s'imposent dans votre catégorie sur les leviers qui déplacent réellement les parts de marché.",
+    outcome: "Vous identifiez vos concurrents directs, lisez leur stratégie de prix et repérez les espaces de marché disponibles.",
     does: [
-      "Structure de portefeuille (couverture appareils, largeur de SKU)",
-      "Ladder de prix (points de prix, mécaniques promo)",
-      "Stratégie de bundling (tactiques d'AOV)",
-      "Audit boutiques (merchandising Tmall et JD)",
-      "Contenu et social (formats de preuve, stratégies plateforme)",
+      "Architecture du portefeuille : couverture des usages, étendue des SKU",
+      "Échelle tarifaire : points de prix et mécaniques promotionnelles",
+      "Stratégie de bundling et leviers de panier moyen",
+      "Audit des boutiques officielles : merchandising sur Tmall et JD",
+      "Contenu et social : formats de preuve, stratégies propres à chaque plateforme",
     ],
     deliverables: [
-      { kind: 'deck', name: 'Benchmark concurrents (deck)' },
-      { kind: 'doc', name: 'Fiches concurrents (1 page chacune)' },
-      { kind: 'sheet', name: 'Tables de données e-commerce (Excel)' },
+      { kind: 'deck', name: 'Benchmark concurrentiel (présentation)' },
+      { kind: 'doc', name: "Fiches concurrents d'une page" },
+      { kind: 'sheet', name: 'Tableaux de données e-commerce (Excel)' },
     ],
   },
   {
@@ -101,19 +101,19 @@ const phases = [
     duration: '3 à 4 semaines',
     title: 'Modèle financier et plan stratégique',
     image: '/Images/enter-china/phase-4-financial.png',
-    imageAlt: "Une analyste financière revoit un modèle Tmall Global sur son poste, bureau de Shanghai",
+    imageAlt: "Une analyste financière passe en revue un modèle Tmall Global sur son poste",
     intro:
-      "On construit le business case complet, structure de coûts transparente et recommandation prête pour décision.",
-    outcome: "Vous avez un Go ou No-Go défendable en board, chiffres à l'appui.",
+      "Nous bâtissons le business case complet, assorti d'une structure de coûts transparente et d'une recommandation prête à présenter au comité.",
+    outcome: "Vous disposez d'un Go ou No-Go argumenté et défendable en conseil d'administration, chiffres à l'appui.",
     does: [
-      "Modélisation des coûts d'import (COGS et logistique cross-border)",
-      "Structures de frais plateformes et paiements",
-      "Comparaison Sell-in et Sell-out, économie comparée",
-      "Cadre de budget marketing",
-      "Feuille de route sur 12 mois",
+      "Modélisation des coûts d'importation : COGS et logistique cross-border",
+      "Structures de frais plateformes et prestataires de paiement",
+      "Comparaison économique des modèles sell-in et sell-out",
+      "Cadrage du budget marketing",
+      "Feuille de route opérationnelle à douze mois",
     ],
     deliverables: [
-      { kind: 'deck', name: "Plan d'entrée Chine (deck)" },
+      { kind: 'deck', name: "Plan d'entrée Chine (présentation)" },
       { kind: 'sheet', name: 'Modèle financier avec scénarios (Excel)' },
       { kind: 'doc', name: 'Recommandation Go ou No-Go' },
     ],
@@ -132,44 +132,44 @@ const models = [
   {
     name: 'Sell in',
     tag: 'Partenariat distributeur',
-    tagline: 'Tester sans tout engager.',
+    tagline: 'Éprouver le marché sans tout immobiliser.',
     image: '/Images/enter-china/route-sellin.png',
-    imageAlt: "Une équipe de distributeur e-commerce chinois vérifie le stock dans un entrepôt logistique à Shanghai",
-    desc: "Vous vendez vos produits à un distributeur CBEC qualifié au prix de gros. Il achète le stock, porte le risque opérationnel et gère toutes les opérations sur le marché.",
-    when: "Vous validez encore l'adéquation marché, vous n'avez pas d'équipe Asie, ou votre catégorie demande une expertise locale que vous préférez louer plutôt que bâtir.",
+    imageAlt: "Une équipe de distributeur e-commerce chinois vérifie le stock dans un entrepôt logistique",
+    desc: "Vous cédez vos produits à un distributeur CBEC qualifié au prix de gros. Il acquiert le stock, supporte le risque opérationnel et pilote l'ensemble des opérations sur le marché chinois.",
+    when: "L'adéquation produit-marché reste à confirmer, votre organisation ne compte pas encore d'équipe en Asie, ou la catégorie exige une expertise locale qu'il vaut mieux louer que constituer en propre.",
     split: { you: 20, them: 80, themLabel: 'Distributeur' },
     dims: [
       { label: 'Capital requis', value: 'Faible', level: 1 },
       { label: 'Risque porté', value: 'Faible', level: 1 },
-      { label: 'Time to market', value: 'Rapide', level: 4 },
-      { label: 'Contrôle marque', value: 'Partagé', level: 2 },
+      { label: 'Délai de mise sur le marché', value: 'Rapide', level: 4 },
+      { label: 'Contrôle de la marque', value: 'Partagé', level: 2 },
     ],
-    youGet: ['Chiffre de gros', 'Zéro risque sur le stock', 'Cash flow immédiat', 'Engagement de capital limité'],
-    they: ['Opérations plateformes Tmall Global, JD Worldwide, Douyin', 'Marketing et contenu', 'Logistique et entrepôt sous douane', 'Service client en mandarin'],
-    pricing: "Marge de gros validée à la signature. Notre rémunération vient de votre engagement, pas du distributeur.",
+    youGet: ["Chiffre d'affaires en gros immédiat", 'Aucun risque porté sur le stock', 'Trésorerie disponible dès la première vente', 'Engagement capitalistique contenu'],
+    they: ['Pilotage opérationnel sur Tmall Global, JD Worldwide et Douyin', 'Production marketing et éditoriale', 'Logistique et entrepôt sous douane', 'Service client en mandarin'],
+    pricing: "Marge de gros arrêtée à la signature. Notre rémunération provient de votre engagement, jamais du distributeur.",
     highlight: true,
-    ctaText: 'Parler du sell in',
+    ctaText: 'Échanger sur le sell in',
   },
   {
     name: 'Sell out',
     tag: 'Opérations en direct',
-    tagline: 'S\'engager pour garder le contrôle.',
+    tagline: "S'engager pour conserver la main.",
     image: '/Images/enter-china/route-sellout.png',
-    imageAlt: "Une responsable de marque internationale et un opérateur chinois consultent le tableau de bord d'une boutique phare Tmall, bureau de Shanghai",
-    desc: "Votre marque détient toute l'opération chinoise. Vous financez le stock, vous tenez chaque point de contact, vous gérez plateformes et logistique.",
-    when: "Vous avez prouvé la demande, le P&L Chine est une priorité stratégique, et le contrôle complet des prix, des données clients et du positionnement justifie le capital et la complexité.",
+    imageAlt: "Une responsable de marque internationale et un opérateur chinois consultent le tableau de bord d'une boutique phare Tmall",
+    desc: "Votre marque opère intégralement en Chine. Elle finance le stock, maîtrise chaque point de contact et internalise plateformes comme logistique.",
+    when: "La demande est démontrée, le P&L Chine figure parmi vos priorités stratégiques, et la maîtrise des prix, de la donnée client et du positionnement justifie l'investissement comme la complexité.",
     split: { you: 100, them: 0, themLabel: 'Externe' },
     dims: [
       { label: 'Capital requis', value: 'Élevé', level: 5 },
       { label: 'Risque porté', value: 'Élevé', level: 4 },
-      { label: 'Time to market', value: 'Lent', level: 2 },
-      { label: 'Contrôle marque', value: 'Total', level: 5 },
+      { label: 'Délai de mise sur le marché', value: 'Lent', level: 2 },
+      { label: 'Contrôle de la marque', value: 'Total', level: 5 },
     ],
-    youGet: ['Chiffre retail complet', 'Contrôle total de la marque', 'Propriété des données clients', 'Autonomie sur les prix'],
-    they: ['Financement du stock', 'Frais plateformes et opérations', 'Exécution marketing et média', 'Coûts opérationnels (entrepôt, retours, SAV)'],
-    pricing: "Vous portez chaque ligne de coût. Le modèle de la Phase 4 vous donne le tableau complet avant que vous ne vous engagiez.",
+    youGet: ["Chiffre d'affaires retail intégral", 'Maîtrise totale de la marque', 'Propriété des données clients', 'Autonomie tarifaire complète'],
+    they: ['Financement du stock', 'Frais plateformes et coûts opérationnels', 'Exécution marketing et achat média', 'Logistique, retours, service après-vente'],
+    pricing: "Chaque ligne de coût pèse sur votre P&L. Le modèle financier de la phase quatre vous livre la photographie complète avant tout engagement.",
     highlight: false,
-    ctaText: 'Parler du sell out',
+    ctaText: 'Échanger sur le sell out',
   },
 ];
 
@@ -177,102 +177,102 @@ const faqs = [
   {
     cat: 'Stratégie',
     q: "Qu'est-ce que le Cross-Border eCommerce (CBEC) ?",
-    a: "Le CBEC vous permet de vendre aux consommateurs chinois sans créer d'entité chinoise. Les produits expédient depuis un entrepôt sous douane ou par voie postale directe, et la douane se règle au niveau du consommateur. Vous accédez à JD Worldwide, Tmall Global, Douyin et RED. Pas d'accès au retail offline, ni à l'e-commerce domestique tant que l'enregistrement NMPA ou SAMR n'est pas bouclé. La plupart des marques s'en servent comme rampe d'essai avant d'engager une infrastructure complète.",
+    a: "Le Cross-Border eCommerce autorise une marque étrangère à vendre directement au consommateur chinois sans constituer d'entité locale. Les expéditions transitent par un entrepôt sous douane ou par voie postale directe, le dédouanement s'effectuant au niveau de l'acheteur final. L'accès couvre JD Worldwide, Tmall Global, Douyin et RED. Le retail physique et l'e-commerce domestique restent fermés tant que l'enregistrement NMPA ou SAMR n'est pas finalisé. La majorité des marques utilisent ce canal comme rampe de lancement avant de déployer une infrastructure complète.",
   },
   {
     cat: 'Stratégie',
     q: "Sell-in ou sell-out, quel modèle de distribution choisir ?",
-    a: "Commencez par le sell-in si vous validez encore le marché. Un distributeur qualifié achète votre stock au prix de gros, porte le risque opérationnel, et vos équipes restent concentrées sur la vision globale. Passez au sell-out une fois la demande prouvée, quand vous avez besoin du contrôle complet sur les prix, les données clients et l'expérience de marque. Beaucoup de marques que nous accompagnons commencent en sell-in pendant 18 à 24 mois, puis basculent. Certaines ne basculent jamais, et c'est très bien si le distributeur tient le rythme.",
+    a: "Privilégiez le sell-in tant que la validation marché demeure incomplète. Un distributeur qualifié rachète votre stock au prix de gros, encaisse le risque opérationnel et libère vos équipes pour la stratégie globale. Le basculement vers le sell-out s'impose une fois la demande démontrée, lorsque la maîtrise des prix, des données clients et de l'expérience de marque devient incontournable. La plupart des marques que nous accompagnons opèrent dix-huit à vingt-quatre mois en sell-in avant de franchir le pas. D'autres ne franchissent jamais ce cap, et l'arbitrage reste parfaitement légitime tant que le distributeur soutient la cadence.",
   },
   {
     cat: 'Stratégie',
     q: "Et si la conclusion est « n'entrez pas en Chine maintenant » ?",
-    a: "Ça arrive. À peu près un dossier sur quatre se termine sur un No-Go. Mauvais timing, produit inadapté, coût réglementaire trop lourd, catégorie déjà saturée. On vous explique pourquoi, ce qui devrait changer, et quand reposer la question. Vous récupérez l'analyse complète. Un No clair vous épargne douze mois et plusieurs millions d'euros que vous auriez brûlés à apprendre à la dure.",
+    a: "Le cas se présente régulièrement. Près d'un dossier sur quatre s'achève par un No-Go. Calendrier inadapté, produit hors cible, charge réglementaire prohibitive, catégorie déjà saturée. Nous exposons les raisons, les paramètres à faire évoluer et le moment opportun pour reposer la question. L'analyse complète vous revient. Un refus net vous épargne douze mois d'exécution et plusieurs millions d'euros qui seraient partis en apprentissage forcé.",
   },
   {
     cat: 'Stratégie',
     q: "Pouvez-vous garantir le succès de ma marque en Chine ?",
-    a: "Non. Personne ne le peut. On peut vous dire si l'équation marché tient, si votre catégorie est gagnable, et quel modèle vous donne les meilleures chances. L'exécution dépend encore de votre produit, de votre patience et de votre capacité à vous adapter. Quiconque vous promet une garantie vous vend une histoire.",
+    a: "Non, et personne ne le peut sérieusement. Notre rôle consiste à établir si l'équation marché tient, si votre catégorie demeure accessible et quel modèle maximise vos chances. L'exécution, elle, reposera toujours sur votre produit, votre patience et votre capacité d'adaptation. Quiconque vous vend une garantie vous vend un récit, pas un résultat.",
   },
   {
     cat: 'Stratégie',
     q: "Pourquoi travailler avec vous plutôt qu'avec un Big Four ?",
-    a: "Les Big Four livrent d'excellents cadres méthodologiques. Nous livrons la réponse et l'opérateur capable de la construire. Notre équipe a tenu des boutiques Tmall, géré des retraits de plateforme, négocié avec des distributeurs, expédié depuis des entrepôts sous douane. Quand vous nous interrogez sur la conformité CBEC, vous parlez à quelqu'un qui a déposé les dossiers, pas qui en a lu un résumé. La plupart de nos missions reprennent là où une présentation de stratégie a cessé de servir.",
+    a: "Les Big Four livrent d'excellents cadres méthodologiques. Nous livrons la réponse, et l'opérateur capable de la mettre en œuvre. Nos consultants ont tenu des boutiques Tmall, géré des retraits de plateforme, négocié avec des distributeurs, expédié depuis des entrepôts sous douane. Lorsqu'une question de conformité CBEC se pose, votre interlocuteur a lui-même déposé les dossiers, plutôt qu'il n'en aurait lu le résumé. La plupart de nos missions débutent précisément là où une présentation stratégique a cessé d'être utile.",
   },
   {
     cat: 'Conformité',
     q: "Mon produit peut-il passer par le CBEC ?",
-    a: "Cela dépend de ce que vous vendez et de ce que vous revendiquez. Les cosmétiques anti-âge demandent un enregistrement NMPA usage spécial. Les compléments à ingrédients fonctionnels passent par une validation SAMR. Les dispositifs médicaux ont des classifications strictes. L'alimentaire est restreint par ingrédient. La Phase 1 vérifie l'éligibilité CBEC avant que vous ne brûliez un euro de plus sur le projet.",
+    a: "Tout dépend de la nature du produit et des allégations associées. Les cosmétiques anti-âge relèvent d'un enregistrement NMPA à usage spécial. Les compléments à ingrédients fonctionnels passent par une validation SAMR. Les dispositifs médicaux obéissent à des classifications strictes. L'alimentaire est encadré ingrédient par ingrédient. La Phase 1 tranche l'éligibilité CBEC avant qu'un euro supplémentaire ne soit engagé sur le projet.",
   },
   {
     cat: 'Conformité',
     q: "Que faire si je ne peux pas utiliser mes allégations produit chinoises ?",
-    a: "Cas fréquent. « Soin de plaies pour diabétiques » devient « soin quotidien des peaux fragiles ». « Soutien immunitaire » peut exiger un enregistrement alimentation-santé complet. « Cliniquement prouvé » se réécrit presque toujours. On adapte le positionnement aux règles plateformes sans sacrifier le capital de marque. L'astuce, c'est de savoir ce qui passera la revue avant de construire le lancement autour.",
+    a: "Situation courante. « Soin des plaies du pied diabétique » devient « soin quotidien des peaux fragiles ». « Soutien immunitaire » peut imposer un enregistrement alimentation-santé complet. « Cliniquement prouvé » exige presque toujours une réécriture. Nous ajustons le positionnement aux exigences des plateformes sans entamer le capital de marque. L'enjeu réel : connaître à l'avance ce qui passera la revue, puis bâtir le lancement à partir de ce filtre.",
   },
   {
     cat: 'Conformité',
     q: "Et si mon produit a déjà été refusé par une plateforme ?",
-    a: "On récupère la notification de refus, on identifie le déclencheur, et on vous dit si un repositionnement règle l'affaire, si une autre plateforme convient, ou si le produit ne peut tout simplement pas entrer en CBEC. Parfois, le correctif tient à un changement d'étiquette. Parfois, à une reformulation pour la Chine. Parfois, c'est un Non structurel et irréversible. On vous donne la vraie réponse plutôt que de faire comme si le refus n'avait pas eu lieu.",
+    a: "Nous récupérons la notification de refus, isolons le motif déclencheur, puis arbitrons : un repositionnement suffit-il, une autre plateforme convient-elle mieux, ou le produit reste-t-il définitivement incompatible avec le CBEC. Le correctif tient parfois à un simple changement d'étiquette. Parfois à une reformulation dédiée au marché chinois. Parfois, il s'agit d'un refus structurel et irréversible. Nous livrons la réponse réelle plutôt qu'un contournement de circonstance.",
   },
   {
     cat: 'Conformité',
     q: "Si la réglementation chinoise évolue en cours de mission, que se passe-t-il ?",
-    a: "On signale le changement, on met le chantier touché en pause et on réévalue. Exemples récents : la refonte cosmétique de 2021, les mises à jour NMPA de 2023, les révisions continues des listes positives CBEC. Nos partenaires conformité suivent ça au jour le jour. Si une règle rouvre ou tue votre dossier, on vous prévient sur-le-champ et on ajuste le plan. Pas à la fin de la mission.",
+    a: "Nous signalons l'évolution, suspendons le chantier concerné et procédons à une réévaluation. Exemples récents : la refonte cosmétique de 2021, les mises à jour NMPA de 2023, les révisions continues des listes positives CBEC. Nos partenaires conformité suivent ces évolutions au quotidien. Toute règle qui rouvre une possibilité ou condamne un dossier déclenche une alerte immédiate et un ajustement du plan, sans attendre la clôture de la mission.",
   },
   {
     cat: 'Process',
     q: "Quelles informations attendez-vous pour démarrer ?",
-    a: "Spécifications produit, fichiers packaging éditables, prix actuels sur votre marché d'origine, certificats réglementaires déjà en main, votre objectif Chine, votre calendrier. Plus le détail est précis en amont, plus la Phase 1 va vite. Tout n'est pas disponible ? Pas grave. On travaille avec ce que vous avez et on flague les manques.",
+    a: "Spécifications produit, fichiers packaging modifiables, grille tarifaire en vigueur sur votre marché d'origine, certificats réglementaires déjà obtenus, ambition pour la Chine, calendrier visé. Plus le brief transmis en amont est précis, plus la phase un progresse rapidement. À défaut d'éléments complets, nous travaillons à partir des données disponibles et signalons les lacunes au fil de l'avancement.",
   },
   {
     cat: 'Process',
     q: "Combien de temps prend la mission complète ?",
-    a: "Les Phases 1 et 2 cumulées tournent autour de 6 à 8 semaines. La Phase 3, plongée concurrents, court sur 4 à 6 semaines en parallèle. La Phase 4, modèle financier, ajoute 3 à 4 semaines. Du kickoff à un Go ou No-Go clair, comptez 10 à 14 semaines. Si vous souhaitez qu'on sourcie et qu'on négocie un distributeur en plus, prévoyez 8 à 12 semaines de plus.",
+    a: "Les Phases 1 et 2 cumulées s'étendent sur six à huit semaines. La Phase 3, dédiée à l'analyse concurrentielle, se déroule en parallèle sur quatre à six semaines. La Phase 4, modélisation financière, ajoute trois à quatre semaines. Du lancement à un arbitrage Go ou No-Go documenté, comptez dix à quatorze semaines. Un sourcing et une négociation de distributeur en option allongent le calendrier de huit à douze semaines supplémentaires.",
   },
   {
     cat: 'Process',
     q: "Que reçoit-on à la fin de la mission ?",
-    a: "Un dossier prêt pour le board. Rapport faisabilité et conformité. Benchmark concurrents avec une fiche par concurrent. Modèle financier Excel complet avec scénarios. Stratégie de canal et recommandations plateforme par plateforme. Un Go ou No-Go tranché. Si vous prenez l'option distributeur, un term sheet signé ou un contrat avec un partenaire validé. Tout en anglais. Versions traduites sur demande.",
+    a: "Un dossier prêt à présenter en conseil d'administration. Rapport de faisabilité et de conformité. Benchmark concurrentiel assorti d'une fiche par concurrent. Modèle financier Excel complet, scénarios inclus. Stratégie de canal et recommandations plateforme par plateforme. Un arbitrage Go ou No-Go tranché. En cas d'option distributeur, un term sheet signé ou un contrat conclu avec un partenaire validé. L'ensemble est livré en anglais ; les traductions sont disponibles à la demande.",
   },
   {
     cat: 'Process',
-    q: "Que se passe-t-il si un constat tue le business case en cours de route ?",
-    a: "On s'arrête, on vous parle, on ne se contente pas de remplir un dossier. Si la Phase 1 fait apparaître un blocage de conformité qui casse le dossier, on ne lance pas la Phase 4 pour vous facturer un modèle. On ajuste le périmètre, on rembourse la part non utilisée, et vous repartez avec ce que vous avez. La mission est structurée en phases précisément pour ça.",
+    q: "Que se passe-t-il si un constat invalide le business case en cours de mission ?",
+    a: "Nous interrompons les travaux et engageons la discussion plutôt que de remplir un livrable de complaisance. Si la Phase 1 met au jour un blocage de conformité qui invalide le dossier, la Phase 4 ne sera pas déclenchée pour vous facturer un modèle devenu sans objet. Le périmètre est ajusté, la part non consommée remboursée, et vous repartez avec ce qui a déjà été produit. La structuration en phases existe précisément à cette fin.",
   },
   {
     cat: 'Coût',
-    q: "Combien ça coûte ?",
-    a: "Les honoraires dépendent du périmètre et des phases retenues. On facture en forfait par phase, jamais à l'heure. La plupart des missions complètes jusqu'à la Phase 4 se situent entre 80 et 220 mille euros. Le sourcing distributeur, en option, se chiffre à part, en général un forfait projet plus une part au succès. On partage la grille tarifaire complète une fois le périmètre cadré lors du premier appel.",
+    q: "Quel est le coût d'une mission ?",
+    a: "Les honoraires varient selon le périmètre retenu et le nombre de phases engagées. La facturation s'effectue au forfait par phase, jamais à l'heure. La majorité des missions complètes, phase quatre incluse, oscillent entre quatre-vingt mille et deux cent vingt mille euros. Le sourcing distributeur, optionnel, fait l'objet d'une facturation séparée : un forfait projet assorti d'une part variable au succès. La grille tarifaire complète vous est transmise après cadrage du périmètre, lors du premier échange.",
   },
   {
     cat: 'Coût',
     q: "Touchez-vous une commission des distributeurs que vous introduisez ?",
-    a: "Non. Vous nous payez sur la mission. Le distributeur ne nous verse aucun apport d'affaires. C'est volontaire. Si on touchait une commission, notre incitation basculerait vers « fermer un deal » au lieu de « trouver le bon partenaire ». Vous pouvez le vérifier dans le contrat. Certains clients le demandent. Tant mieux.",
+    a: "Non. Notre rémunération provient exclusivement de la mission. Aucun apport d'affaires ne nous est versé par le distributeur. Le choix relève d'une décision délibérée. Toute commission orienterait notre intérêt vers la signature d'un accord plutôt que vers la sélection du partenaire pertinent. La clause figure noir sur blanc au contrat, et certains clients en demandent confirmation explicite. C'est précisément l'objet de cette clause.",
   },
   {
     cat: 'Coût',
-    q: "Quel budget typique pour lancer après la mission ?",
-    a: "Lancement Cross-Border via un distributeur : à partir de 200 000 euros environ en fonds de roulement, puis dépense de croissance ensuite. Sell-out en direct sur Tmall Global ou JD Worldwide : 800 000 à 1,5 million d'euros sur les douze premiers mois, pour ouverture de boutique, contenu, média et stock. On modélise le chiffre exact pour votre catégorie en Phase 4, vous ne budgétez pas à l'aveugle.",
+    q: "Quel budget de lancement prévoir une fois la mission terminée ?",
+    a: "Lancement Cross-Border via un distributeur : un fonds de roulement de l'ordre de 200 000 euros en point de départ, complété ensuite par les dépenses de croissance. Sell-out en direct sur Tmall Global ou JD Worldwide : entre 800 000 euros et 1,5 million d'euros sur les douze premiers mois, ventilés entre ouverture de boutique, production de contenu, achat média et stock. La modélisation propre à votre catégorie intervient en phase quatre, ce qui vous évite tout arbitrage budgétaire à l'aveugle.",
   },
   {
     cat: 'Opérations',
     q: "Comment sourcez-vous les distributeurs ?",
-    a: "Notre réseau couvre beauté, tech grand public, F&B, mère et bébé, premium maison et certaines catégories santé. On part d'une longlist de 8 à 12 noms, on filtre sur le track record catégorie et les références plateformes, puis on s'assoit avec vous pour retenir les 2 ou 3 finalistes que vous rencontrerez vraiment. On reste de votre côté de la table pour la négociation commerciale.",
+    a: "Notre réseau couvre la beauté, la tech grand public, l'agroalimentaire, l'univers mère et bébé, la maison premium ainsi que plusieurs catégories santé. Le travail démarre par une longlist de huit à douze noms, filtrée selon le track record catégorie et les références plateformes. Une session de travail commune permet ensuite de retenir les deux ou trois finalistes que vous rencontrerez effectivement. Pour la négociation commerciale, nous demeurons à vos côtés.",
   },
   {
     cat: 'Opérations',
-    q: "De combien de temps de notre équipe avez-vous besoin ?",
-    a: "Moins que la plupart des clients ne l'anticipent. Environ deux heures par semaine du chef de projet côté client pendant les Phases 1 à 3. Trois ou quatre sessions de travail d'une demi-journée chacune sur l'ensemble de la mission. Davantage si vous prenez la piste distributeur, puisque c'est vous qui rencontrez les partenaires. La recherche et la modélisation, c'est nous qui les portons.",
+    q: "Quelle disponibilité demandez-vous à votre équipe ?",
+    a: "Bien moins que la plupart des clients ne l'anticipent. Environ deux heures hebdomadaires pour le chef de projet côté client durant les Phases 1 à 3. Trois à quatre sessions de travail d'une demi-journée chacune sur l'ensemble de la mission. La mobilisation s'intensifie sur l'option distributeur, puisque les rencontres avec les partenaires se tiennent à votre niveau. La recherche et la modélisation, à l'inverse, reposent intégralement sur nos équipes.",
   },
   {
     cat: 'Juridique',
-    q: "Faut-il une entité légale en Chine ?",
-    a: "Via un distributeur, non. Il utilise ses propres licences et porte la charge réglementaire. Pour des opérations CBEC en direct, oui, mais pas forcément votre propre société. Les règles chinoises imposent à toute marque étrangère vendant en CBEC de désigner un prestataire de services domestique (境内服务商) qui dépose auprès des douanes et porte une responsabilité solidaire. Vous pouvez monter votre propre WFOE ou passer par un prestataire tiers qualifié. On vous aide à trancher.",
+    q: "Faut-il créer une entité juridique en Chine ?",
+    a: "Pas en cas de distribution via un partenaire local : il s'appuie sur ses propres licences et assume la charge réglementaire. Pour des opérations CBEC menées en direct, oui, mais pas nécessairement par le biais de votre propre société. La réglementation chinoise impose à toute marque étrangère vendant en CBEC de désigner un prestataire de services domestique (境内服务商) chargé du dépôt douanier et porteur d'une responsabilité solidaire. Deux voies s'offrent à vous : créer une WFOE en propre, ou recourir à un prestataire tiers qualifié. Nous vous accompagnons dans l'arbitrage.",
   },
   {
     cat: 'Juridique',
     q: "À qui appartiennent la stratégie et les données après la mission ?",
-    a: "À vous. Tous les livrables, modèles, données concurrents, recherches distributeurs et modèles contractuels vous sont transférés à la clôture. Aucune clause de rétention sur la stratégie. On ne revend pas les conclusions à des concurrents, c'est écrit noir sur blanc dans le contrat. Une propriété de bon sens, sans entourloupes juridiques.",
+    a: "À vous, pleinement. L'ensemble des livrables, modèles, données concurrents, recherches distributeurs et modèles contractuels vous est transféré à la clôture de la mission. Aucune clause de rétention ne porte sur la stratégie. La revente des conclusions à un concurrent est exclue contractuellement, noir sur blanc. Une propriété claire, sans subtilité juridique destinée à diluer vos droits.",
   },
 ];
 
@@ -281,22 +281,22 @@ const faqCategories = ['Tous', 'Stratégie', 'Conformité', 'Process', 'Coût', 
 const contextCards = [
   {
     image: '/Images/enter-china/ops-strategy-desk.png',
-    alt: "Deux opératrices e-commerce chinoises examinent un tableau de bord boutique phare Tmall, bureau de Shanghai en soirée",
-    title: 'Une stratégie qu\'on utilise, pas qu\'on archive',
-    body: "La plupart des decks d'entrée Chine décrivent le marché. Le nôtre vous dit ce que vous faites lundi matin. Chaque recommandation part de la réalité opérationnelle, jamais d'une recherche de bureau, et passe au crible des plateformes et partenaires que vous croiserez vraiment.",
+    alt: "Deux opératrices e-commerce chinoises examinent le tableau de bord d'une boutique phare Tmall en soirée",
+    title: "Une stratégie qui s'exécute, jamais qui s'archive",
+    body: "La plupart des présentations d'entrée Chine se contentent de décrire le marché. La nôtre vous indique précisément l'action à conduire dès lundi matin. Chaque recommandation s'enracine dans la réalité opérationnelle, jamais dans la recherche de bureau, et passe au crible des plateformes et partenaires que vous croiserez réellement sur le terrain.",
   },
   {
     image: '/Images/enter-china/team.png',
     alt: "L'équipe conseil de Beyond Border Group en Chine",
-    title: 'Architectes de l\'entrée, pas du bâtiment',
-    body: "Voyez-nous comme les architectes, pas les maçons. On dessine le plan, on sélectionne les partenaires, on monte le cadre. Vous décidez si et quand vous construisez. Pas de pression pour lancer, aucun intérêt à survendre le dossier.",
+    title: "Architectes de l'entrée, jamais maçons du chantier",
+    body: "Voyez en nous des architectes, jamais des maçons. Nous dessinons le plan, sélectionnons les partenaires, érigeons le cadre. La décision de construire, et le moment opportun pour le faire, vous appartiennent. Aucune pression au lancement, aucun intérêt à survendre le dossier.",
   },
 ];
 ---
 
 <Layout
   title="Conseil en entrée de marché Chine | Cross-Border eCommerce | Beyond Border Group"
-  description="Conseil en entrée de marché pour les marques qui vont en Chine. Faisabilité Cross-Border eCommerce, stratégie de canal, plongée concurrents, modélisation financière, sourcing de distributeurs."
+  description="Conseil en entrée de marché pour les marques internationales en Chine. Faisabilité Cross-Border eCommerce, stratégie de canal, analyse concurrentielle approfondie, modélisation financière, sourcing de distributeurs."
 >
   <div class="mec-progress" aria-hidden="true"><div class="mec-progress__bar"></div></div>
   <article class="mec">
@@ -317,16 +317,16 @@ const contextCards = [
         </nav>
         <span class="eyebrow eyebrow--on-dark mec-reveal">Conseil en entrée de marché</span>
         <h1 class="mec-hero__title mec-reveal" style="--reveal-delay: 80ms;">
-          <span class="mec-hero__title-row">L'entrée en Chine est</span>
-          <span class="mec-hero__title-row mec-hero__title-row--accent">complexe et disputée.</span>
-          <span class="mec-hero__title-row">On vous trace le chemin</span>
-          <span class="mec-hero__title-row mec-hero__title-row--highlight">avant que vous ne construisiez.</span>
+          <span class="mec-hero__title-row">L'entrée en Chine demeure</span>
+          <span class="mec-hero__title-row mec-hero__title-row--accent">complexe et concurrentielle.</span>
+          <span class="mec-hero__title-row">Nous traçons la voie</span>
+          <span class="mec-hero__title-row mec-hero__title-row--highlight">avant la première pierre.</span>
         </h1>
         <p class="mec-hero__lead mec-reveal" style="--reveal-delay: 200ms;">
-          On dessine les plans d'entrée Chine des marques internationales. Faisabilité, modèles financiers, analyse concurrents, partenariats distributeurs. Le plan avant la construction.
+          Nous concevons les plans d'entrée en Chine des marques internationales. Études de faisabilité, modélisation financière, analyse concurrentielle, sélection de distributeurs. Le plan d'abord, la construction ensuite.
         </p>
         <div class="mec-hero__actions mec-reveal" style="--reveal-delay: 280ms;">
-          <a href="/fr/nous-contacter" class="btn btn--primary mec-magnetic">Nous parler</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary mec-magnetic">Démarrer un échange</a>
           <a href="#how-we-work" class="btn btn--ghost-light mec-magnetic">Voir notre méthode</a>
         </div>
 
@@ -348,7 +348,7 @@ const contextCards = [
 
       <a href="#two-truths" class="mec-hero__scroll" aria-label="Descendre à la section suivante">
         <span class="mec-hero__scroll-line"></span>
-        <span class="mec-hero__scroll-text">Défiler</span>
+        <span class="mec-hero__scroll-text">Continuer</span>
       </a>
     </section>
 
@@ -357,9 +357,9 @@ const contextCards = [
       <div class="container">
         <header class="section-header section-header--center mec-reveal">
           <span class="eyebrow">Notre approche</span>
-          <h2>Deux choses à savoir avant qu'on démarre</h2>
+          <h2>Deux principes à poser avant toute mission</h2>
           <p class="section-header__lead">
-            La plupart des marques abordent la Chine comme n'importe quel nouveau marché. La Chine ne récompense pas cette approche. Voici ce qui dessine notre façon de travailler.
+            La plupart des marques abordent la Chine comme un marché nouveau parmi d'autres. La Chine ne récompense pas cette approche. Voici les deux principes qui structurent notre manière de travailler.
           </p>
         </header>
 
@@ -385,22 +385,22 @@ const contextCards = [
         <div class="mec-value">
           <div class="mec-value__copy">
             <span class="eyebrow">Pourquoi les marques nous choisissent</span>
-            <h2>La plupart des consultants Chine n'y ont jamais opéré. Nous, si.</h2>
+            <h2>La plupart des consultants Chine n'ont jamais opéré sur place. Nos équipes, si.</h2>
             <p>
-              L'équipe vient de Publicis Commerce China. Nous avons construit les pratiques e-commerce de GSK, Nestlé, Ferrero et Beiersdorf sur Tmall, JD, Douyin et RED.
+              L'équipe est issue de Publicis Commerce China. Nous y avons bâti les dispositifs e-commerce de GSK, Nestlé, Ferrero et Beiersdorf sur Tmall, JD, Douyin et RED.
             </p>
             <blockquote class="mec-value__quote">
-              Nous conseillons à partir de l'expérience du terrain, pas de rapports d'études.
+              Nous conseillons depuis l'expérience opérationnelle, jamais depuis un rapport d'étude.
             </blockquote>
             <p>
-              On sait quels distributeurs performent parce qu'on les a évalués. On sait ce que les plateformes demandent parce qu'on a déposé les dossiers nous-mêmes.
+              Nous identifions les distributeurs performants parce que nous les avons audités. Nous connaissons les exigences des plateformes parce que nous avons déposé les dossiers nous-mêmes.
             </p>
             <a href="/fr/qui-nous-sommes" class="btn btn--secondary btn--sm">Rencontrer l'équipe</a>
           </div>
 
           <ul class="mec-promise">
             <li>
-              <span class="eyebrow">Ce que vous obtenez</span>
+              <span class="eyebrow">Ce que vous recevez</span>
             </li>
             {promises.map((p) => (
               <li class="mec-promise__item">
@@ -425,10 +425,10 @@ const contextCards = [
       </div>
       <div class="container">
         <header class="section-header section-header--center mec-reveal">
-          <span class="eyebrow">Point de décision</span>
-          <h2>Sell in, ou sell out. Deux routes vers la Chine.</h2>
+          <span class="eyebrow">L'arbitrage central</span>
+          <h2>Sell-in ou sell-out, deux voies d'accès à la Chine</h2>
           <p class="section-header__lead">
-            Votre stratégie d'entrée tient sur une décision : passer par un distributeur, ou monter vos propres opérations. On vous aide à choisir la route qui colle à votre capital, votre calendrier et votre ambition.
+            Votre stratégie d'entrée se cristallise autour d'une décision : confier l'exécution à un distributeur, ou bâtir vos propres opérations. Nous vous accompagnons dans le choix de la voie cohérente avec votre capital, votre calendrier et votre ambition.
           </p>
         </header>
 
@@ -518,32 +518,32 @@ const contextCards = [
         <div class="mec-matrix mec-reveal" data-matrix>
           <div class="mec-matrix__intro">
             <span class="eyebrow">Comment choisir</span>
-            <h3>Une question, deux réponses</h3>
-            <p>Vous validez, ou vous vous engagez ? La réponse vous donne la route. La plupart des marques commencent par l'une et basculent vers l'autre une fois le dossier prouvé.</p>
+            <h3>Une question, deux trajectoires</h3>
+            <p>Validation préliminaire ou engagement structurel : la réponse oriente la voie à emprunter. La plupart des marques entament leur parcours par la première, puis basculent vers la seconde une fois la viabilité confirmée.</p>
           </div>
           <div class="mec-matrix__grid" role="table" aria-label="Matrice de sélection du modèle de distribution">
             <div class="mec-matrix__corner" role="presentation"></div>
             <div class="mec-matrix__head" role="columnheader" data-col="1">Validation du marché</div>
-            <div class="mec-matrix__head" role="columnheader" data-col="2">Engagement à l'échelle</div>
+            <div class="mec-matrix__head" role="columnheader" data-col="2">Engagement structurel</div>
 
             <div class="mec-matrix__row-head" role="rowheader" data-row="1">Capital léger</div>
             <button type="button" class="mec-matrix__cell" role="cell" data-row="1" data-col="1" data-tab-jump="model-tab-0">
               <span class="mec-matrix__cell-label">Sell in</span>
-              <span class="mec-matrix__cell-sub">Le distributeur achète, vend et porte le risque.</span>
+              <span class="mec-matrix__cell-sub">Le distributeur acquiert le stock, opère la vente et assume le risque.</span>
             </button>
             <button type="button" class="mec-matrix__cell" role="cell" data-row="1" data-col="2" data-tab-jump="model-tab-0">
-              <span class="mec-matrix__cell-label">Sell in, puis transition</span>
-              <span class="mec-matrix__cell-sub">Prouvez le dossier d'abord, internalisez ensuite.</span>
+              <span class="mec-matrix__cell-label">Sell in, puis bascule</span>
+              <span class="mec-matrix__cell-sub">Faites la preuve de la traction commerciale avant d'internaliser.</span>
             </button>
 
             <div class="mec-matrix__row-head" role="rowheader" data-row="2">Contrôle total</div>
             <button type="button" class="mec-matrix__cell" role="cell" data-row="2" data-col="1" data-tab-jump="model-tab-1">
               <span class="mec-matrix__cell-label">Sell out, périmètre pilote</span>
-              <span class="mec-matrix__cell-sub">Mise en direct limitée à une plateforme dans un premier temps.</span>
+              <span class="mec-matrix__cell-sub">Lancement en direct, périmètre limité à une seule plateforme dans un premier temps.</span>
             </button>
             <button type="button" class="mec-matrix__cell" role="cell" data-row="2" data-col="2" data-tab-jump="model-tab-1">
               <span class="mec-matrix__cell-label">Sell out</span>
-              <span class="mec-matrix__cell-sub">L'opération, la donnée, le P&L : tout à vous.</span>
+              <span class="mec-matrix__cell-sub">L'opération, la donnée et le P&L vous reviennent intégralement.</span>
             </button>
           </div>
         </div>
@@ -557,7 +557,7 @@ const contextCards = [
           <span class="eyebrow">Notre méthode</span>
           <h2>Quatre phases, de la question à la réponse</h2>
           <p class="section-header__lead">
-            Une mission structurée qui vous emmène de « faut-il entrer en Chine » à un plan prêt à décider. Chaque phase se termine sur des livrables actionnables.
+            Une mission séquencée qui vous mène de la question initiale, « faut-il entrer en Chine ? », à un plan prêt à arbitrer. Chaque phase se conclut sur des livrables directement exploitables.
           </p>
         </header>
 
@@ -615,14 +615,14 @@ const contextCards = [
                     <div class="mec-phase__outcome">
                       <span class="mec-phase__outcome-label">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                        Résultat
+                        Résultat attendu
                       </span>
                       <p>{p.outcome}</p>
                     </div>
 
                     <div class="mec-phase__columns">
                       <div class="mec-phase__col">
-                        <span class="mec-phase__col-label">Ce qu'on fait</span>
+                        <span class="mec-phase__col-label">Notre intervention</span>
                         <ul class="mec-phase__checks">
                           {p.does.map((b, j) => (
                             <li style={`--seq: ${j};`}>
@@ -660,10 +660,10 @@ const contextCards = [
     <section class="section mec-compass-section">
       <div class="container">
         <header class="section-header section-header--center mec-reveal">
-          <span class="eyebrow">Si vous choisissez le sell in</span>
-          <h2>Propulsé par BeyondCompass</h2>
+          <span class="eyebrow">Si vous retenez le sell-in</span>
+          <h2>Adossé à BeyondCompass</h2>
           <p class="section-header__lead">
-            Choisissez la route sell-in et la question suivante devient : à quel distributeur chinois faire confiance ? BeyondCompass est notre réponse. Une base de partenaires construite sur vingt ans. Distributeurs, prestataires Tmall, partenaires Douyin, importateurs. Validés à la main, rencontrés en personne, tenus à jour.
+            Dès lors que la voie sell-in est retenue, une question s'impose : à quel distributeur chinois confier votre marque ? BeyondCompass apporte la réponse. Vingt années de constitution méthodique, une base couvrant distributeurs, prestataires Tmall, partenaires Douyin et importateurs. Tous validés à la main, rencontrés en personne, suivis au quotidien.
           </p>
         </header>
 
@@ -680,15 +680,15 @@ const contextCards = [
                     decoding="async"
                   />
                 </div>
-                <span class="mec-compass__chip">Produit frère</span>
+                <span class="mec-compass__chip">Produit jumeau</span>
               </div>
 
               <p class="mec-compass__pitch">
-                Économisez trois mois de sourcing. Trouvez le bon partenaire chinois en premier.
+                Trois mois de recherche partenaire gagnés. Le bon interlocuteur chinois identifié dès la première liste.
               </p>
 
               <p class="mec-compass__body">
-                La plupart des listes de distributeurs en Chine sont scrappées. Mille noms avant midi, presque aucun qui corresponde à votre marque. BeyondCompass remplace ça par une shortlist curée, adossée à deux décennies de rendez-vous sur cinq catégories : beauté, alimentaire et boissons, mode, bien-être, animaux.
+                La majorité des listes de distributeurs qui circulent sur le marché proviennent de scraping automatisé : un millier de noms en quelques heures, et presque aucun véritablement aligné sur votre marque. BeyondCompass substitue à ces volumes une sélection resserrée et qualifiée, nourrie par vingt années de rencontres physiques dans cinq catégories : beauté, agroalimentaire, mode, bien-être, animaux de compagnie.
               </p>
 
               <ul class="mec-compass__stats">
@@ -698,11 +698,11 @@ const contextCards = [
                 </li>
                 <li>
                   <span class="mec-compass__stat-num">Cinq</span>
-                  <span class="mec-compass__stat-label">catégories : beauté, F&amp;B, mode, bien-être, animaux</span>
+                  <span class="mec-compass__stat-label">catégories : beauté, agroalimentaire, mode, bien-être, petfood</span>
                 </li>
                 <li>
                   <span class="mec-compass__stat-num">Sept</span>
-                  <span class="mec-compass__stat-label">bureaux et représentants en Chine, Europe et aux États-Unis</span>
+                  <span class="mec-compass__stat-label">bureaux et représentations en Chine, en Europe et aux États-Unis</span>
                 </li>
               </ul>
 
@@ -717,7 +717,7 @@ const contextCards = [
                   <span aria-hidden="true" class="mec-compass__btn-arrow">↗</span>
                 </a>
                 <a href="/fr/nous-contacter" class="btn mec-compass__btn-ghost">
-                  Nous briefer sur votre recherche
+                  Présenter votre recherche
                 </a>
               </div>
             </div>
@@ -756,7 +756,7 @@ const contextCards = [
                   <rect x="48" y="422" width="270" height="11" rx="4" fill="#2b3946"/>
                   <rect x="70" y="441" width="200" height="10" rx="4" fill="#243140"/>
                   <line x1="40" y1="368" x2="370" y2="368" stroke="#5BC2F0" stroke-opacity="0.25" stroke-dasharray="2 4" stroke-width="1"/>
-                  <text x="40" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.12em" font-weight="700" fill="#5BC2F0" fill-opacity="0.55">SCRAPÉ, NON RETENU</text>
+                  <text x="40" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.12em" font-weight="700" fill="#5BC2F0" fill-opacity="0.55">ISSU DU SCRAPING, ÉCARTÉ</text>
                 </g>
                 <rect x="0" y="340" width="440" height="140" fill="url(#cmp-fade)" pointer-events="none"/>
 
@@ -830,8 +830,8 @@ const contextCards = [
 
               <ul class="mec-compass__art-key">
                 <li><span class="mec-compass__art-dot mec-compass__art-dot--vetted"></span>Validé à la main, rencontré en personne</li>
-                <li><span class="mec-compass__art-dot mec-compass__art-dot--live"></span>Relations tenues à jour</li>
-                <li><span class="mec-compass__art-dot mec-compass__art-dot--reject"></span>Listes scrappées, jamais dans notre base</li>
+                <li><span class="mec-compass__art-dot mec-compass__art-dot--live"></span>Relations suivies au quotidien</li>
+                <li><span class="mec-compass__art-dot mec-compass__art-dot--reject"></span>Listes issues du scraping, exclues de notre base</li>
               </ul>
             </div>
           </div>
@@ -840,18 +840,18 @@ const contextCards = [
         <div class="mec-compass-tiers">
           <article class="mec-compass-tier mec-reveal">
             <span class="mec-compass-tier__label">Shortlist</span>
-            <p class="mec-compass-tier__lead">Trois à cinq noms validés, calés sur votre catégorie et votre stade. Livraison en deux à trois semaines.</p>
-            <span class="mec-compass-tier__when">Pour quand le brief est clair et qu'il vous faut les introductions, vite.</span>
+            <p class="mec-compass-tier__lead">Trois à cinq noms validés, alignés sur votre catégorie et votre stade de maturité. Livraison sous deux à trois semaines.</p>
+            <span class="mec-compass-tier__when">Lorsque le brief est cadré et que les introductions doivent suivre rapidement.</span>
           </article>
           <article class="mec-compass-tier mec-reveal" style="--reveal-delay: 80ms;">
             <span class="mec-compass-tier__label">Cartographie marché</span>
-            <p class="mec-compass-tier__lead">Quinze à vingt options comparables sur le marché. Livraison en trois à six semaines.</p>
-            <span class="mec-compass-tier__when">Pour quand vous voulez le tableau complet avant de vous engager.</span>
+            <p class="mec-compass-tier__lead">Quinze à vingt options comparables, balayage complet du marché. Livraison sous trois à six semaines.</p>
+            <span class="mec-compass-tier__when">Lorsque le tableau complet conditionne votre engagement.</span>
           </article>
           <article class="mec-compass-tier mec-reveal" style="--reveal-delay: 160ms;">
             <span class="mec-compass-tier__label">Remplacement</span>
-            <p class="mec-compass-tier__lead">Sortir un partenaire qui ne performe plus. Trouver le suivant. Piloter la passation.</p>
-            <span class="mec-compass-tier__when">Pour quand la relation a cessé de fonctionner et qu'il vous faut une sortie propre.</span>
+            <p class="mec-compass-tier__lead">Acter la sortie d'un partenaire qui ne livre plus. Identifier le suivant. Orchestrer la passation.</p>
+            <span class="mec-compass-tier__when">Lorsque la relation est rompue et qu'une sortie propre s'impose.</span>
           </article>
         </div>
       </div>
@@ -862,9 +862,9 @@ const contextCards = [
       <div class="container container--narrow">
         <header class="section-header section-header--center mec-reveal">
           <span class="eyebrow">FAQ</span>
-          <h2>Vingt questions, des réponses sans détour</h2>
+          <h2>Vingt questions, vingt réponses sans détour</h2>
           <p class="section-header__lead">
-            Les questions concrètes que nous posent fondateurs et opérateurs qui envisagent une entrée en Chine. Filtrez par sujet.
+            Les interrogations concrètes que nous adressent fondateurs et opérateurs avant toute entrée en Chine. Filtrage par thématique disponible.
           </p>
         </header>
 
@@ -912,13 +912,13 @@ const contextCards = [
       <div class="container container--narrow">
         <div class="mec-cta">
           <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
-          <h2 class="mec-cta__title">Vous pensez emmener votre marque en Chine ?</h2>
+          <h2 class="mec-cta__title">Vous envisagez une entrée en Chine pour votre marque ?</h2>
           <p class="mec-cta__lead">
-            Dites-nous où vous en êtes et où vous voulez aller. Un senior de l'équipe vous répond sous un jour ouvré. Pas de tunnel de vente, pas de réponse automatique.
+            Indiquez-nous votre point de départ et votre destination. Un senior de l'équipe vous répond sous un jour ouvré. Aucun tunnel de vente, aucune réponse automatique.
           </p>
           <div class="mec-cta__actions">
-            <a href="/fr/nous-contacter" class="btn mec-cta__btn-primary">Lancer la conversation</a>
-            <a href="/fr/nos-realisations" class="btn mec-cta__btn-ghost">Voir nos études de cas</a>
+            <a href="/fr/nous-contacter" class="btn mec-cta__btn-primary">Engager la conversation</a>
+            <a href="/fr/nos-realisations" class="btn mec-cta__btn-ghost">Consulter nos études de cas</a>
           </div>
         </div>
       </div>

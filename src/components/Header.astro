@@ -66,7 +66,7 @@ const learnChina = [
   { label: t('nav.learn.platforms.label'), desc: t('nav.learn.platforms.desc'), href: lp('/learn-china/platforms'), svg: icon.grid },
   { label: t('nav.learn.masterclass.label'), desc: t('nav.learn.masterclass.desc'), href: lp('/learn-china/masterclass'), svg: icon.cap },
   { label: t('nav.learn.expeditions.label'), desc: t('nav.learn.expeditions.desc'), href: lp('/learn-china/learning-expeditions'), svg: icon.pin },
-  { label: t('nav.learn.insights.label'), desc: t('nav.learn.insights.desc'), href: lp('/insights'), svg: icon.bulb },
+  { label: t('nav.learn.insights.label'), desc: t('nav.learn.insights.desc'), href: '/insights', svg: icon.bulb },
 ];
 
 const sections = [
@@ -146,7 +146,7 @@ const switcherOthers = otherLocales.map((l) => ({
         ))}
 
         <li class="nav__item">
-          <a href={lp('/work')} class="nav__link">{t('nav.work')}</a>
+          <a href="/work" class="nav__link">{t('nav.work')}</a>
         </li>
         <li class="nav__item">
           <a href={lp('/about')} class="nav__link">{t('nav.about')}</a>

@@ -4,16 +4,16 @@ import { getCollection } from 'astro:content';
 
 const promises = [
   {
-    title: 'Une entrée de marché lue dans les chiffres',
-    desc: "Stratégie, positionnement et prix bâtis sur les données de catégorie et la réalité des plateformes. On ne suppose pas, on vérifie.",
+    title: "Une entrée de marché ancrée dans les chiffres",
+    desc: "Stratégie, positionnement et tarification s'appuient sur les données de catégorie et le fonctionnement réel des plateformes. Aucune hypothèse non vérifiée.",
   },
   {
-    title: 'Une vraie lecture du consommateur chinois',
-    desc: "On sait comment les Chinois achètent sur Tmall, JD, Douyin, RED et WeChat, et ce qui les fait basculer d'une marque à l'autre.",
+    title: "Une lecture juste du consommateur chinois",
+    desc: "Nous connaissons les ressorts d'achat sur Tmall, JD, Douyin, RED et WeChat, ainsi que les déclencheurs qui font basculer un acheteur d'une marque vers une autre.",
   },
   {
-    title: 'Des relations privilégiées avec les plateformes',
-    desc: "15 ans à travailler avec les plateformes et les distributeurs. On ouvre les portes plus vite, et on sait qui livre et qui parle.",
+    title: "Un accès direct aux plateformes",
+    desc: "Quinze années passées aux côtés des plateformes et des distributeurs ouvrent les portes plus rapidement et permettent d'identifier les interlocuteurs qui tiennent parole.",
   },
 ];
 
@@ -22,7 +22,7 @@ const services = [
     icon: 'store',
     title: 'Marketplace',
     short: 'Tmall · JD · Taobao · Pinduoduo',
-    desc: "15 ans sur Tmall, JD, Taobao et Pinduoduo. Une stratégie pilotée par les données, qui fait monter les ventes et les marges.",
+    desc: "Quinze années d'opérations sur Tmall, JD, Taobao et Pinduoduo. Une stratégie pilotée par la donnée, calibrée pour soutenir le volume et préserver la marge.",
     points: ['Boutiques phares Tmall', 'JD direct et POP', 'Plans de seeding Taobao'],
     color: '#269ADA',
     colorSoft: '#E8F4FC',
@@ -31,7 +31,7 @@ const services = [
     icon: 'bag',
     title: 'DTC, vente directe au consommateur',
     short: 'WeChat · Mini-programmes · CRM',
-    desc: "Du trafic vers votre boutique DTC, en organique, en payant et en gagné, ancré sur WeChat et le trafic privé.",
+    desc: "Génération de trafic vers votre boutique DTC, en organique, en payant et en relais, articulée autour de WeChat et du trafic privé.",
     points: ['Boutiques mini-programmes WeChat', 'CRM et trafic privé', 'Fidélisation et cycle de vie'],
     color: '#0EA46C',
     colorSoft: '#E6F5EE',
@@ -40,8 +40,8 @@ const services = [
     icon: 'truck',
     title: 'Distribution',
     short: 'En ligne · En magasin · Toute la Chine',
-    desc: "Distributeurs en ligne et physiques dans chaque région de Chine, choisis pour votre catégorie.",
-    points: ['Sourcing et vérification des distributeurs', 'Cartes de couverture régionale', 'Intégration O2O'],
+    desc: "Distributeurs en ligne et physiques, sélectionnés région par région et alignés sur votre catégorie.",
+    points: ['Sourcing et audit des distributeurs', 'Cartographie de couverture régionale', 'Intégration O2O'],
     color: '#7C5DFA',
     colorSoft: '#F0EDFE',
   },
@@ -49,7 +49,7 @@ const services = [
     icon: 'broadcast',
     title: 'Social commerce',
     short: 'Douyin · Xiaohongshu · KOL',
-    desc: "Le moteur de la croissance e-commerce en Chine. Campagnes KOL et KOC sur Douyin et TikTok, qui vendent vraiment.",
+    desc: "Le moteur de croissance du e-commerce chinois. Campagnes KOL et KOC sur Douyin et TikTok, pensées pour convertir, non pour faire du bruit.",
     points: ['Douyin shop et livestream', 'Seeding Xiaohongshu', 'Programmes KOL et KOC'],
     color: '#E54B6E',
     colorSoft: '#FCEAEF',
@@ -60,60 +60,60 @@ const models = [
   {
     name: 'Agence marketing',
     tag: 'Vous tenez les ventes, vous tenez le stock',
-    desc: "Vous gardez la main sur l'opération Chine. On fait tourner le moteur marketing qui l'alimente.",
-    when: "Pertinent quand vous avez déjà un distributeur, un TP ou votre propre équipe qui vend en Chine, et qu'il vous faut un partenaire marketing senior pour bâtir la marque et protéger son capital.",
+    desc: "Vous conservez la main sur l'opération chinoise. Nous alimentons le moteur marketing qui la soutient.",
+    when: "Pertinent lorsque vous travaillez déjà avec un distributeur, un TP ou une équipe interne qui vend en Chine, et qu'il vous manque un partenaire marketing senior pour bâtir la marque et défendre son capital.",
     bullets: [
-      'Stratégie de marque et contenus pour Tmall, JD, Douyin et Xiaohongshu',
-      'Campagnes 11.11, 6.18, Nouvel An chinois et temps forts de catégorie',
-      'Programmes KOL et KOC, achat média et CRM sur WeChat',
-      'Reporting de performance branché sur vos canaux de vente',
+      "Stratégie de marque et production de contenus pour Tmall, JD, Douyin et Xiaohongshu",
+      "Pilotage des campagnes 11.11, 6.18, Nouvel An chinois et autres temps forts de catégorie",
+      "Programmes KOL et KOC, achat média et CRM sur WeChat",
+      "Reporting de performance connecté à vos canaux de vente",
     ],
-    pricing: 'Honoraires calés sur le périmètre. Forfait mensuel ou au projet.',
+    pricing: "Honoraires calibrés sur le périmètre. Forfait mensuel ou facturation au projet.",
     highlight: false,
   },
   {
     name: 'Agent commercial',
-    tag: 'Vous tenez le stock, on vous trouve un acheteur',
-    desc: "Vous voulez vendre via un distributeur chinois mais vous ne savez pas à qui faire confiance. On trouve le bon, on l'audite, on négocie le deal.",
-    when: "Pertinent quand vous voulez un accès rapide au marché sans monter votre propre opération, et qu'il vous faut quelqu'un de votre côté de la table au moment des discussions distributeurs.",
+    tag: "Vous tenez le stock, nous trouvons l'acheteur",
+    desc: "Vous souhaitez vendre via un distributeur chinois sans savoir à qui confier votre marque. Nous identifions le bon profil, l'auditons en profondeur, puis négocions l'accord.",
+    when: "Pertinent lorsque vous cherchez un accès rapide au marché sans monter votre propre opération, et qu'il vous faut un interlocuteur de votre côté de la table au moment des discussions avec les distributeurs.",
     bullets: [
-      'Cartographie des distributeurs qualifiés de votre catégorie, en ligne et hors ligne',
-      'Sélection de 15 à 30 candidats au parcours vérifié',
-      'Pitch en mandarin, conduite des rendez-vous, négociation des conditions',
-      'Revue du contrat et logistique de la première commande',
-      "Présence terrain après signature pour garder le partenaire engagé",
+      "Cartographie des distributeurs qualifiés sur votre catégorie, en ligne et hors ligne",
+      "Sélection d'une short-list de 15 à 30 candidats au parcours vérifié",
+      "Présentation en mandarin, conduite des rendez-vous, négociation des conditions",
+      "Revue contractuelle et logistique de la première commande",
+      "Suivi terrain après signature, pour préserver l'engagement du partenaire",
     ],
-    pricing: 'Forfait projet pour la recherche et la négociation.',
+    pricing: "Forfait projet couvrant la recherche et la négociation.",
     highlight: false,
   },
   {
     name: 'TP, partenaire opérateur',
-    tag: 'On tient les ventes, vous tenez le stock',
-    desc: "On opère vos boutiques de bout en bout sur Tmall, JD et Douyin sous nos licences chinoises. Vous gardez la marque, le stock et la donnée client.",
-    when: "Pertinent quand vous voulez une boutique phare chinoise que vous contrôlez, sans monter d'entité ni recruter une équipe locale tout de suite.",
+    tag: 'Nous tenons les ventes, vous tenez le stock',
+    desc: "Nous opérons vos boutiques de bout en bout sur Tmall, JD et Douyin, sous nos licences chinoises. La marque, le stock et la donnée client demeurent entre vos mains.",
+    when: "Pertinent lorsque vous voulez une boutique phare chinoise pleinement sous votre contrôle, sans constituer d'entité ni recruter immédiatement une équipe locale.",
     bullets: [
-      'Design de boutique, contenus, merchandising et pages campagne',
-      'Opérations au quotidien, achat média, traitement des commandes',
-      'Entreposage et logistique via nos partenaires',
-      'Service client et après-vente en mandarin',
-      "Reporting mensuel branché sur votre équipe commerciale globale",
+      "Conception des boutiques, contenus, merchandising et pages de campagne",
+      "Opérations quotidiennes, achat média et traitement des commandes",
+      "Entreposage et logistique via notre réseau de partenaires",
+      "Service client et après-vente en mandarin",
+      "Reporting mensuel relié à votre équipe commerciale globale",
     ],
-    pricing: 'Forfait mensuel fixe par boutique, plus commission sur les ventes.',
+    pricing: "Forfait mensuel fixe par boutique, complété par une commission sur les ventes.",
     highlight: true,
   },
   {
     name: 'Distributeur exclusif',
-    tag: 'On tient les ventes, on tient le stock',
-    desc: "On agit comme votre distributeur maître en Chine. On achète le produit, on porte le stock et on vend en ligne comme en magasin.",
-    when: "Pertinent quand vous voulez un seul interlocuteur sur le P&L Chine, et que vous préférez ne pas investir vous-même dans la partie commerciale.",
+    tag: 'Nous tenons les ventes, nous portons le stock',
+    desc: "Nous agissons comme votre distributeur maître en Chine. Achat du produit, portage du stock, commercialisation en ligne comme en magasin.",
+    when: "Pertinent lorsque vous cherchez un interlocuteur unique sur le P&L chinois et que vous préférez ne pas investir vous-même dans le volet commercial.",
     bullets: [
-      'Propriété du P&L Chine de bout en bout',
-      'Marketing, ventes, logistique et gestion du stock',
-      'Distribution en ligne et hors ligne, en direct et indirect',
-      'Conformité, réglementaire et relations plateformes',
-      'Reporting ventes, sell-through et santé de marque',
+      "Pleine propriété du P&L chinois, de bout en bout",
+      "Marketing, ventes, logistique et gestion du stock",
+      "Distribution en ligne et hors ligne, en direct comme en indirect",
+      "Conformité, affaires réglementaires et relations avec les plateformes",
+      "Reporting des ventes, du sell-through et des indicateurs de santé de marque",
     ],
-    pricing: 'Marge sur produit, fixée au départ.',
+    pricing: "Marge produit fixée dès la signature.",
     highlight: false,
   },
 ];
@@ -122,7 +122,7 @@ const platforms = [
   {
     name: 'Douyin',
     cn: '抖音',
-    sub: "Partenaire marketing officiel TikTok et Douyin. Vidéo courte, livestream et boutique réunis dans un seul tunnel.",
+    sub: "Partenaire marketing officiel TikTok et Douyin. Vidéo courte, livestream et boutique réunis dans un même parcours d'achat.",
     logo: '/Images/platforms/douyin-logo.svg',
     href: '/fr/comprendre-la-chine/plateformes',
     brandColor: '#000000',
@@ -131,7 +131,7 @@ const platforms = [
   {
     name: 'Tmall',
     cn: '天猫',
-    sub: "Plus de 15 ans sur la plateforme, TP certifié. Boutiques phares, brand zone et opérations de festivals.",
+    sub: "Plus de quinze années sur la plateforme, statut TP certifié. Boutiques phares, brand zone et activations de festivals.",
     logo: '/Images/platforms/tmall-logo.svg',
     href: '/fr/comprendre-la-chine/plateformes',
     brandColor: '#FF0036',
@@ -140,7 +140,7 @@ const platforms = [
   {
     name: 'JD',
     cn: '京东',
-    sub: "Marketplace ou distribution retail, on gère les deux. Très fort sur la maison, l'électronique, la puériculture.",
+    sub: "Marketplace ou distribution retail, les deux modèles sont pilotés en interne. Force éprouvée sur la maison, l'électronique et la puériculture.",
     logo: '/Images/platforms/jd-logo.png',
     href: '/fr/comprendre-la-chine/plateformes',
     brandColor: '#E1251B',
@@ -149,7 +149,7 @@ const platforms = [
   {
     name: 'WeChat',
     cn: '微信',
-    sub: "Mini-programmes e-commerce et fidélité. CRM, trafic privé et commerce par canal.",
+    sub: "Mini-programmes e-commerce et de fidélité. CRM, trafic privé et commerce par canal.",
     logo: '/Images/platforms/wechat-logo.svg',
     href: '/fr/comprendre-la-chine/plateformes',
     brandColor: '#07C160',
@@ -161,45 +161,45 @@ const steps = [
   {
     icon: 'compass',
     title: 'Plan et recherche',
-    desc: "On croise vos objectifs, votre expertise sectorielle et votre produit avec nos données pour bâtir la bonne stratégie e-commerce.",
+    desc: "Nous croisons vos objectifs, votre expertise sectorielle et votre produit avec nos données pour bâtir la stratégie e-commerce adaptée.",
   },
   {
     icon: 'rocket',
     title: 'Lancement et activation',
-    desc: "On conçoit et on ouvre vos canaux de vente en Chine, puis on génère du trafic via KOL, KOC, achat média et contenus.",
+    desc: "Conception et ouverture de vos canaux de vente en Chine, puis génération de trafic via KOL, KOC, achat média et contenus.",
   },
   {
     icon: 'trend',
     title: 'Campagnes et optimisation',
-    desc: "On pilote les campagnes 11.11, 6.18 et autres festivals, et on optimise en continu le média, les opérations et les ventes.",
+    desc: "Pilotage des temps forts 11.11, 6.18 et autres festivals, et optimisation continue du média, des opérations et du chiffre d'affaires.",
   },
 ];
 
 const aiBenefits = [
   {
     icon: 'heart',
-    title: 'Une meilleure expérience client',
-    desc: "L'IA personnalise tout le tunnel, fait grimper la conversion et la satisfaction.",
+    title: "Une expérience client supérieure",
+    desc: "L'IA personnalise l'ensemble du parcours, fait progresser la conversion comme la satisfaction.",
   },
   {
     icon: 'coin',
-    title: 'Des coûts opérationnels en baisse',
+    title: "Des coûts opérationnels en repli",
     desc: "L'IA optimise la chaîne logistique, réduit les pertes et libère de la marge.",
   },
   {
     icon: 'avatar',
-    title: 'Humains numériques',
-    desc: "Des hôtes virtuels animent les livestreams 24h/24 et répondent aux acheteurs en direct.",
+    title: "Humains numériques",
+    desc: "Des hôtes virtuels animent les livestreams en continu et dialoguent en direct avec les acheteurs.",
   },
   {
     icon: 'bubble',
-    title: 'Chatbots IA',
-    desc: "Le service client coûte moins cher quand le bot gère les questions de base, les retours et le suivi.",
+    title: "Chatbots IA",
+    desc: "Le service client allège sa facture dès lors que le bot prend en charge les questions courantes, les retours et le suivi de commande.",
   },
   {
     icon: 'spark',
-    title: 'Contenus AIGC',
-    desc: "Les contenus générés par IA produisent à la chaîne des variantes de pages produit, d'annonces et de briefs créateurs.",
+    title: "Contenus AIGC",
+    desc: "Les contenus générés par IA déclinent à grande échelle les pages produit, les annonces publicitaires et les briefs créateurs.",
   },
 ];
 
@@ -207,38 +207,38 @@ const contextCards = [
   {
     image: '/Images/enter-china/social-commerce-phone.png',
     alt: "Mains tenant un smartphone qui diffuse un livestream e-commerce chinois",
-    title: "Localiser un e-commerce, c'est bien plus que traduire",
-    body: "La localisation va plus loin que la langue. Les acheteurs chinois passent par le social commerce et le livestream, et il faut donc que la présence se sente native.",
+    title: "Localiser un e-commerce dépasse de loin la simple traduction",
+    body: "La localisation ne se limite pas à la langue. Les acheteurs chinois transitent par le social commerce et le livestream. La présence doit donc se révéler native jusque dans ses détails les plus fins.",
   },
   {
     image: '/Images/platforms/tmall-scene.png',
     alt: "Vitrine Tmall qui illustre l'échelle de la concurrence sur les plateformes en Chine",
-    title: "Une concurrence locale rapide, agile et bien financée",
-    body: "Alibaba, JD, Douyin et Pinduoduo donnent le rythme, et les marques locales suivent au même tempo. Rester visible demande de bouger en permanence.",
+    title: "Une concurrence locale rapide, agile et solidement financée",
+    body: "Alibaba, JD, Douyin et Pinduoduo imposent le tempo, et les marques locales suivent au même rythme. Demeurer visible suppose de bouger en permanence.",
   },
 ];
 
 const faqs = [
-  { cat: 'Lancement', q: 'Combien de temps pour ouvrir sur Tmall ou JD ?', a: "8 à 12 semaines en cross-border, 12 à 16 semaines en domestique. L'essentiel du planning passe dans la production de contenus, le design de boutique et l'audit de marque. Le dossier plateforme, c'est la plus petite partie." },
-  { cat: 'Stratégie', q: "Tmall, JD ou Douyin d'abord ?", a: "Ça dépend de la catégorie. Beauté, mode et lifestyle démarrent généralement sur Tmall ou Douyin. La maison, l'électronique et la puériculture marchent fort sur JD. Les marques premium de niche font souvent six à douze mois de seeding sur Xiaohongshu avant d'ouvrir une boutique phare." },
-  { cat: 'Lancement', q: 'Cross-border ou domestique, comment choisir ?', a: "Le cross-border ouvre plus vite, allège la conformité et livre depuis l'entrepôt sous douane ou en direct mail. Il plafonne à quelques centaines de millions de RMB dans certaines catégories. Le domestique donne accès au retail complet et à un marketing plus large, mais demande une entité, une structure fiscale et des dossiers NMPA ou SAMR." },
-  { cat: 'Coûts', q: "Quel volume de ventes pour atteindre l'équilibre ?", a: "Règle d'estimation : 5 à 8 millions de RMB de GMV annuel pour qu'une boutique phare s'autofinance, une fois absorbés les frais TP, les contenus, le média et les commissions plateforme. Moins si les marges sont fortes. Plus dans les catégories à forte promo." },
-  { cat: 'Coûts', q: 'Combien facture un TP, concrètement ?', a: "Deux couches. Un forfait mensuel par boutique, en général 30 à 80 000 RMB selon le périmètre. Plus une commission sur les ventes nettes, entre 5 et 12 %. Le setup, la production de contenus et le média se chiffrent à part." },
-  { cat: 'Opérations', q: 'Comment choisir le bon TP ?', a: "On regarde d'abord la track record dans votre catégorie, puis le nombre de boutiques, la taille des équipes et l'accès aux interlocuteurs plateforme. Demandez des cases dans votre catégorie exacte et des références que vous pouvez vraiment appeler. Méfiez-vous des TP qui poussent des templates plutôt qu'une stratégie." },
-  { cat: 'Opérations', q: 'Si je quitte mon TP, que devient ma marque ?', a: "Vous possédez la boutique, la marque déposée et la donnée client. Le TP est un prestataire. Le transfert se cale dans le contrat dès le premier jour : identifiants de boutique, export de données, liste des fournisseurs et droits sur les contenus reviennent chez vous à la sortie." },
-  { cat: 'Juridique', q: 'Faut-il déposer la marque en Chine avant de lancer ?', a: "Oui. Déposez la marque et les sous-marques clés en mandarin et en alphabet latin avant le lancement. La Chine fonctionne au premier déposant. Les squatteurs déposent vite et vous forcent à racheter votre propre nom, ce qui est long et cher." },
-  { cat: 'Opérations', q: 'Comment marchent les retours et remboursements sur Tmall et JD ?', a: "Tmall impose 7 jours de retour sans question. JD applique des règles voisines. Intégrez-le aux marges unitaires. Le taux de retour court de 5 à 25 % selon la catégorie, avec le textile et la chaussure dans le haut du tableau." },
-  { cat: 'Marketing', q: "Combien coûte une collaboration KOL ?", a: "Les nano-créateurs Xiaohongshu se paient quelques milliers de RMB par post. Les comptes intermédiaires se situent entre quelques dizaines et quelques centaines de milliers. Les top KOL Douyin peuvent dépasser un million de RMB par slot de livestream. Mieux vaut étager les budgets que parier sur un seul nom." },
-  { cat: 'Stratégie', q: 'Douyin et TikTok, quelle différence ?', a: "Même socle technique, deux marchés distincts. Douyin embarque tout le e-commerce, le livestream et la stack publicitaire à l'intérieur de la Chine. TikTok Shop tourne aux États-Unis, au Royaume-Uni, en Asie du Sud-Est et dans une poignée d'autres marchés. On choisit selon où vit l'acheteur, pas selon une préférence d'app." },
-  { cat: 'Opérations', q: 'Peut-on opérer sa boutique Tmall sans TP ?', a: "Oui, si vous avez une entité chinoise, une équipe sinophone et quelqu'un en interne qui connaît l'opération plateforme. La plupart des marques étrangères essaient une fois, puis font appel à un TP après leur premier 11.11." },
-  { cat: 'Juridique', q: 'Comment se faire payer pour des ventes en Chine ?', a: "Les plateformes cross-border règlent en USD ou en EUR sur votre compte domestique, en général chaque mois. Les boutiques domestiques règlent en RMB sur un compte bancaire chinois. Le rapatriement des fonds suppose la bonne structure d'entité, une raison commerciale réelle et des déclarations fiscales en règle." },
-  { cat: 'Juridique', q: 'Quelles catégories demandent un agrément ?', a: "Cosmétiques, compléments alimentaires, alimentaire, dispositifs médicaux, produits chimiques à double usage et à peu près tout ce qui s'ingère ou s'applique sur la peau. NMPA, SAMR ou douanes peuvent prendre 3 à 12 mois. Cartographiez votre catégorie tôt, sinon vous ratez votre fenêtre de lancement." },
-  { cat: 'Marketing', q: 'Xiaohongshu, à quel point avant un lancement ?', a: "Très important pour les marques premium et lifestyle. Les acheteurs chinois se renseignent sur Xiaohongshu avant d'acheter sur Tmall ou Douyin. Un plan de seeding de 6 à 12 mois avec 50 à 200 créateurs constitue une vraie chauffe avant l'ouverture d'une boutique phare." },
-  { cat: 'Coûts', q: 'Quel besoin en fonds de roulement prévoir ?', a: "Six à neuf mois de coûts d'exploitation en plus du stock d'ouverture. De quoi couvrir l'écart entre les dépenses de lancement et le premier cash-flow stable, une fois absorbés retours, remboursements et délais de règlement plateforme." },
-  { cat: 'Marketing', q: 'Le livestream commerce, ça vaut le coup ?', a: "Dans certaines catégories, c'est devenu le canal par défaut. La beauté, l'alimentaire, le textile et la maison vendent massivement en direct. Comptez 8 à 20 sessions par mois pour une boutique phare, en mêlant émissions de la boutique et émissions de KOL. Tenez trois mois minimum avant de juger le ROI." },
-  { cat: 'Stratégie', q: 'Pourquoi les marques étrangères échouent en Chine ?', a: "Deux raisons, le plus souvent. Elles sous-investissent en marketing parce qu'elles pensent que la marque est connue. Ou elles déploient le produit global sans l'adapter au goût, au format ou au prix local. Les deux tuent la traction dès la première année." },
-  { cat: 'Stratégie', q: 'Comment mesurer le succès d\'une boutique phare ?', a: "La croissance des ventes et la marge de contribution d'abord. Ensuite le taux de réachat, le rang en recherche organique sur la plateforme, la part de voix dans la catégorie et la santé de marque en étude. Les semaines de festival racontent une histoire. Les mois calmes entre deux racontent la vérité." },
-  { cat: 'Coûts', q: 'Comment garder les coûts opérationnels sous contrôle ?', a: "IA pour le service client, IA dans la supply chain, créa automatisée et discipline média. Le vrai levier reste de choisir le bon modèle dès le départ : agence marketing, TP ou distributeur, selon le stade et l'ambition." },
+  { cat: 'Lancement', q: 'Combien de temps faut-il pour ouvrir sur Tmall ou JD ?', a: "Comptez 8 à 12 semaines en cross-border, 12 à 16 semaines en domestique. L'essentiel du calendrier se concentre sur la production de contenus, la conception de la boutique et l'audit de marque. Le dossier plateforme ne représente qu'une fraction du chantier." },
+  { cat: 'Stratégie', q: "Tmall, JD ou Douyin en premier ?", a: "Tout dépend de la catégorie. La beauté, la mode et le lifestyle s'installent généralement sur Tmall ou Douyin. La maison, l'électronique et la puériculture trouvent leur terrain de jeu sur JD. Les marques premium de niche bâtissent souvent six à douze mois de seeding sur Xiaohongshu avant d'ouvrir une boutique phare." },
+  { cat: 'Lancement', q: 'Cross-border ou domestique, comment trancher ?', a: "Le cross-border accélère l'ouverture, allège la conformité et expédie depuis l'entrepôt sous douane ou en envoi direct. Il plafonne toutefois à quelques centaines de millions de RMB dans certaines catégories. Le domestique débloque le retail complet et un marketing plus ample, en contrepartie d'une entité juridique, d'une structure fiscale et de dossiers NMPA ou SAMR." },
+  { cat: 'Coûts', q: "Quel volume de ventes faut-il viser pour atteindre l'équilibre ?", a: "Ordre de grandeur : 5 à 8 millions de RMB de GMV annuel pour qu'une boutique phare s'autofinance, frais TP, contenus, média et commissions plateforme absorbés. Moins lorsque les marges sont fortes. Davantage dans les catégories à forte intensité promotionnelle." },
+  { cat: 'Coûts', q: "Quelle est la facture réelle d'un TP ?", a: "Deux strates de coût. Un forfait mensuel par boutique, en général compris entre 30 000 et 80 000 RMB selon le périmètre. Puis une commission sur les ventes nettes, située entre 5 et 12 %. Le setup, la production de contenus et le média se facturent séparément." },
+  { cat: 'Opérations', q: 'Comment sélectionner le bon TP ?', a: "L'examen porte d'abord sur les antécédents dans votre catégorie, puis sur le nombre de boutiques opérées, la taille des équipes et la qualité de l'accès aux interlocuteurs plateforme. Exigez des cas dans votre catégorie précise et des références joignables. Tenez à distance les opérateurs qui imposent des modèles tout faits avant d'avoir écouté la stratégie." },
+  { cat: 'Opérations', q: "Au départ d'un TP, que devient la marque ?", a: "La boutique, la marque déposée et la donnée client demeurent votre propriété. Le TP reste un prestataire. Le transfert se cadre dans le contrat dès le premier jour : identifiants de boutique, export des données, liste des fournisseurs et droits sur les contenus reviennent dans votre périmètre à la sortie." },
+  { cat: 'Juridique', q: 'Faut-il déposer la marque en Chine avant le lancement ?', a: "Oui, sans réserve. Déposez la marque et les sous-marques clés en mandarin et en alphabet latin avant l'ouverture. La Chine applique le principe du premier déposant. Les squatteurs déposent vite et obligent ensuite la marque à racheter son propre nom, procédure longue et coûteuse." },
+  { cat: 'Opérations', q: "Quel régime régit les retours et remboursements sur Tmall et JD ?", a: "Tmall impose sept jours de retour sans motif. JD applique des règles voisines. Cette contrainte s'intègre directement aux marges unitaires. Le taux de retour oscille entre 5 et 25 % selon la catégorie, le textile et la chaussure se positionnant dans le haut du tableau." },
+  { cat: 'Marketing', q: "Quel est le coût d'une collaboration KOL ?", a: "Les nano-créateurs Xiaohongshu se rémunèrent à hauteur de quelques milliers de RMB par publication. Les comptes intermédiaires se situent entre quelques dizaines et quelques centaines de milliers. Les top KOL Douyin peuvent dépasser le million de RMB par créneau de livestream. Mieux vaut étager les budgets que tout miser sur un seul nom." },
+  { cat: 'Stratégie', q: 'Douyin et TikTok, quelle est la différence ?', a: "Même socle technique, deux marchés distincts. Douyin embarque l'intégralité du e-commerce, du livestream et de la stack publicitaire à l'intérieur de la Chine. TikTok Shop opère aux États-Unis, au Royaume-Uni, en Asie du Sud-Est et dans une poignée d'autres marchés. La sélection se fait selon le pays de résidence de l'acheteur, jamais selon une préférence d'application." },
+  { cat: 'Opérations', q: 'Peut-on opérer sa boutique Tmall sans TP ?', a: "Oui, à condition de disposer d'une entité chinoise, d'une équipe sinophone et d'une expertise interne des opérations plateforme. La plupart des marques étrangères tentent l'expérience une fois, puis basculent vers un TP au lendemain de leur premier 11.11." },
+  { cat: 'Juridique', q: 'Comment percevoir le produit des ventes réalisées en Chine ?', a: "Les plateformes cross-border règlent en USD ou en EUR sur votre compte domestique, généralement à fréquence mensuelle. Les boutiques domestiques règlent en RMB sur un compte bancaire chinois. Le rapatriement des fonds suppose la bonne structure d'entité, une raison commerciale réelle et des déclarations fiscales irréprochables." },
+  { cat: 'Juridique', q: "Quelles catégories exigent un agrément ?", a: "Cosmétiques, compléments alimentaires, alimentaire, dispositifs médicaux, produits chimiques à double usage et, plus largement, tout ce qui s'ingère ou s'applique sur la peau. Les procédures NMPA, SAMR ou douanes courent sur 3 à 12 mois. Cartographiez la catégorie tôt, faute de quoi la fenêtre de lancement se referme." },
+  { cat: 'Marketing', q: "Quel poids accorder à Xiaohongshu avant un lancement ?", a: "Un poids déterminant pour les marques premium et lifestyle. Les acheteurs chinois s'informent sur Xiaohongshu avant de finaliser sur Tmall ou Douyin. Un plan de seeding de 6 à 12 mois, mobilisant 50 à 200 créateurs, constitue une véritable chauffe avant l'ouverture d'une boutique phare." },
+  { cat: 'Coûts', q: "Quel besoin en fonds de roulement anticiper ?", a: "Six à neuf mois de coûts d'exploitation, en complément du stock d'ouverture. De quoi couvrir l'écart entre les dépenses de lancement et le premier cash-flow stable, retours, remboursements et délais de règlement plateforme inclus." },
+  { cat: 'Marketing', q: "Le livestream commerce mérite-t-il l'investissement ?", a: "Dans plusieurs catégories, il s'impose désormais comme le canal par défaut. La beauté, l'alimentaire, le textile et la maison vendent massivement en direct. Tablez sur 8 à 20 sessions mensuelles pour une boutique phare, en alternant émissions internes et émissions de KOL. Trois mois au minimum sont nécessaires avant de juger le ROI." },
+  { cat: 'Stratégie', q: 'Pourquoi tant de marques étrangères échouent-elles en Chine ?', a: "Deux causes reviennent. Le sous-investissement marketing, motivé par la conviction que la marque jouit déjà d'une notoriété acquise. Ou le déploiement du produit global sans adaptation du goût, du format ni du prix au marché local. Les deux écueils étouffent la traction dès la première année." },
+  { cat: 'Stratégie', q: "Comment mesurer le succès d'une boutique phare ?", a: "La croissance des ventes et la marge de contribution priment. Viennent ensuite le taux de réachat, le rang en recherche organique sur la plateforme, la part de voix dans la catégorie et la santé de marque mesurée en étude. Les semaines de festival racontent une histoire. Les mois creux entre deux racontent la vérité." },
+  { cat: 'Coûts', q: 'Comment maîtriser les coûts opérationnels ?', a: "IA appliquée au service client, IA dans la supply chain, création automatisée et discipline média. Le véritable levier réside néanmoins dans le choix du modèle dès le départ : agence marketing, TP ou distributeur, en fonction du stade et de l'ambition." },
 ];
 
 const faqCategories = ['Tout', 'Lancement', 'Coûts', 'Opérations', 'Stratégie', 'Marketing', 'Juridique'];
@@ -270,8 +270,8 @@ const icons: Record<string, string> = {
 ---
 
 <Layout
-  title="Cross-Border eCommerce, mise en place en Chine | Tmall Global, JD Worldwide, Douyin | Beyond Border Group"
-  description="On met en place et on développe votre e-commerce en Chine. Tmall Global, JD Worldwide, Douyin, WeChat et RED, en mode agence marketing, TP ou distributeur. 15 ans d'expérience opérationnelle."
+  title="Lancement cross-border en Chine | Tmall Global, JD Worldwide, Douyin | Beyond Border Group"
+  description="Nous bâtissons et développons votre e-commerce en Chine. Tmall Global, JD Worldwide, Douyin, WeChat et RED, en mode agence marketing, TP ou distributeur. Quinze années d'expérience opérationnelle."
 >
   <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
   <article class="cbs">
@@ -292,32 +292,32 @@ const icons: Record<string, string> = {
         </nav>
         <span class="eyebrow eyebrow--on-dark cbs-reveal">eCommerce en Chine</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
-          <span class="cbs-hero__title-row">L'eCommerce en Chine est</span>
+          <span class="cbs-hero__title-row">Le e-commerce chinois reste</span>
           <span class="cbs-hero__title-row cbs-hero__title-row--accent">exigeant et coûteux.</span>
-          <span class="cbs-hero__title-row">C'est aussi votre</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">premier levier de croissance.</span>
+          <span class="cbs-hero__title-row">Il demeure aussi votre</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">principal levier de croissance.</span>
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          On met en place et on développe votre présence e-commerce en Chine. Tmall Global, JD Worldwide,
-          Douyin, WeChat et RED. 15 ans d'opérations derrière chaque recommandation.
+          Nous bâtissons et déployons votre présence e-commerce en Chine. Tmall Global, JD Worldwide,
+          Douyin, WeChat et RED. Quinze années d'opérations soutiennent chaque recommandation.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
-          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Nous parler</a>
-          <a href="#how-we-work" class="btn btn--ghost-light cbs-magnetic">Voir comment on travaille</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Échanger avec un senior</a>
+          <a href="#how-we-work" class="btn btn--ghost-light cbs-magnetic">Découvrir notre méthode</a>
         </div>
 
         <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num" data-counter="15" data-suffix="+">0</span>
-            <span class="cbs-hero__meta-label">ans sur Tmall et JD</span>
+            <span class="cbs-hero__meta-label">années sur Tmall et JD</span>
           </div>
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num" data-counter="200" data-suffix="+">0</span>
-            <span class="cbs-hero__meta-label">lancements de marques</span>
+            <span class="cbs-hero__meta-label">lancements de marques pilotés</span>
           </div>
           <div class="cbs-hero__meta-item">
-            <span class="cbs-hero__meta-num">Partout</span>
-            <span class="cbs-hero__meta-label">Shanghai, Shenzhen, Hangzhou, Chengdu, Beijing…</span>
+            <span class="cbs-hero__meta-num">Présents</span>
+            <span class="cbs-hero__meta-label">Shanghai, Shenzhen, Hangzhou, Chengdu, Pékin…</span>
           </div>
         </div>
       </div>
@@ -333,9 +333,9 @@ const icons: Record<string, string> = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">eCommerce en Chine</span>
-          <h2>Deux vérités à intégrer avant de lancer</h2>
+          <h2>Deux réalités à intégrer avant tout lancement</h2>
           <p class="section-header__lead">
-            La plupart des marques entrent en Chine avec des stratégies qui ont marché ailleurs. Voici ce qui fait basculer les choses sur le terrain.
+            La plupart des marques abordent la Chine avec des stratégies qui ont fait leurs preuves ailleurs. Voici ce qui bouscule la donne sur le terrain.
           </p>
         </header>
 
@@ -360,16 +360,16 @@ const icons: Record<string, string> = {
       <div class="container">
         <div class="cbs-value">
           <div class="cbs-value__copy">
-            <span class="eyebrow">Ce qu'on fait</span>
-            <h2>On met en place et on développe votre e-commerce en Chine.</h2>
+            <span class="eyebrow">Notre périmètre</span>
+            <h2>Nous bâtissons et développons votre e-commerce en Chine.</h2>
             <p>
-              15 ans à opérer des boutiques phares et des shops DTC en Chine pour des marques globales et des PME. Des relations directes avec les plateformes et un achat média discipliné transforment la stratégie en chiffre d'affaires.
+              Quinze années d'opérations à la tête de boutiques phares et de shops DTC en Chine, pour des marques internationales comme pour des PME. Des relations directes avec les plateformes et un achat média discipliné convertissent la stratégie en chiffre d'affaires.
             </p>
           </div>
 
           <ul class="cbs-promise">
             <li>
-              <span class="eyebrow">Ce que vous obtenez</span>
+              <span class="eyebrow">Ce qui vous revient</span>
             </li>
             {promises.map((p) => (
               <li class="cbs-promise__item">
@@ -396,7 +396,7 @@ const icons: Record<string, string> = {
             <h2>Quatre leviers, un seul moteur de croissance</h2>
           </div>
           <p class="cbs-svc-lead">
-            On ouvre la boutique, on amène le trafic, on vend à l'échelle, et on transforme le social en revenu. Survolez une tuile pour voir ce qui tourne en dessous.
+            Nous ouvrons la boutique, captons le trafic, vendons à grande échelle et convertissons le social en chiffre d'affaires. Survolez une tuile pour explorer le moteur sous-jacent.
           </p>
         </header>
 
@@ -438,9 +438,9 @@ const icons: Record<string, string> = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Modèles d'engagement</span>
-          <h2>Quatre façons de travailler avec nous</h2>
+          <h2>Quatre façons de travailler à nos côtés</h2>
           <p class="section-header__lead">
-            Chaque marque arrive en Chine à un stade différent, avec un budget et un appétit pour le risque qui lui sont propres. Choisissez le montage qui colle à votre point de départ. La plupart de nos clients passent de l'un à l'autre avec le temps.
+            Chaque marque aborde la Chine à un stade différent, avec un budget et un appétit pour le risque qui lui sont propres. Sélectionnez le montage adapté à votre point de départ. La plupart de nos clients transitent d'un modèle à l'autre au fil du temps.
           </p>
         </header>
 
@@ -458,7 +458,7 @@ const icons: Record<string, string> = {
               >
                 <span class="cbs-tabs__tab-label">{m.name}</span>
                 <span class="cbs-tabs__tab-tag">{m.tag}</span>
-                {m.highlight && <span class="cbs-tabs__tab-pop">Le plus choisi</span>}
+                {m.highlight && <span class="cbs-tabs__tab-pop">Le plus retenu</span>}
               </button>
             ))}
             <span class="cbs-tabs__indicator" aria-hidden="true"></span>
@@ -482,15 +482,15 @@ const icons: Record<string, string> = {
                     <h3 class="cbs-tabs__title">{m.name}</h3>
                     <p class="cbs-tabs__desc">{m.desc}</p>
                     <div class="cbs-tabs__when">
-                      <span class="cbs-tabs__when-label">Pertinent quand</span>
-                      <p>{m.when.replace(/^Pertinent quand\s*/, '')}</p>
+                      <span class="cbs-tabs__when-label">Quand y recourir</span>
+                      <p>{m.when.replace(/^Pertinent lorsque\s*/, '')}</p>
                     </div>
-                    <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Parlons du modèle {m.name}</a>
+                    <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Discuter du modèle {m.name}</a>
                   </div>
 
                   <div class="cbs-tabs__body">
                     <div class="cbs-tabs__list-wrap">
-                      <span class="cbs-tabs__list-label">Ce qu'on opère</span>
+                      <span class="cbs-tabs__list-label">Notre périmètre opérationnel</span>
                       <ul class="cbs-tabs__list">
                         {m.bullets.map((b) => (
                           <li>
@@ -503,7 +503,7 @@ const icons: Record<string, string> = {
                       </ul>
                     </div>
                     <div class="cbs-tabs__pricing">
-                      <span class="cbs-tabs__pricing-label">Tarif</span>
+                      <span class="cbs-tabs__pricing-label">Tarification</span>
                       <span class="cbs-tabs__pricing-value">{m.pricing}</span>
                     </div>
                   </div>
@@ -515,37 +515,37 @@ const icons: Record<string, string> = {
 
         <div class="cbs-matrix cbs-reveal" data-matrix>
           <div class="cbs-matrix__intro">
-            <span class="eyebrow">Comment choisir</span>
+            <span class="eyebrow">Comment trancher</span>
             <h3>Deux questions, quatre réponses</h3>
-            <p>Qui pilote la partie commerciale au quotidien, et qui porte le stock ? La réponse fixe le montage. Survolez une case pour mettre la ligne et la colonne en évidence.</p>
+            <p>Qui pilote l'activité commerciale au quotidien, et qui porte le stock ? Les réponses dessinent le montage. Survolez une case pour faire ressortir la ligne et la colonne correspondantes.</p>
           </div>
           <div class="cbs-matrix__grid" role="table" aria-label="Matrice de choix du modèle d'engagement">
             <div class="cbs-matrix__corner" role="presentation"></div>
             <div class="cbs-matrix__head" role="columnheader" data-col="1">Vous tenez les ventes</div>
-            <div class="cbs-matrix__head" role="columnheader" data-col="2">On tient les ventes</div>
+            <div class="cbs-matrix__head" role="columnheader" data-col="2">Nous tenons les ventes</div>
 
             <div class="cbs-matrix__row-head" role="rowheader" data-row="1">Vous tenez le stock</div>
             <button type="button" class="cbs-matrix__cell" role="cell" data-row="1" data-col="1" data-tab-jump="model-tab-0">
               <span class="cbs-matrix__cell-label">Agence marketing</span>
-              <span class="cbs-matrix__cell-sub">On porte la marque. Vous vendez.</span>
+              <span class="cbs-matrix__cell-sub">Nous portons la marque. Vous vendez.</span>
             </button>
             <button type="button" class="cbs-matrix__cell" role="cell" data-row="1" data-col="2" data-tab-jump="model-tab-2">
               <span class="cbs-matrix__cell-label">TP, partenaire opérateur</span>
-              <span class="cbs-matrix__cell-sub">On opère votre boutique phare sous nos licences.</span>
+              <span class="cbs-matrix__cell-sub">Nous opérons votre boutique phare sous nos licences.</span>
             </button>
 
-            <div class="cbs-matrix__row-head" role="rowheader" data-row="2">On tient le stock</div>
+            <div class="cbs-matrix__row-head" role="rowheader" data-row="2">Nous portons le stock</div>
             <button type="button" class="cbs-matrix__cell" role="cell" data-row="2" data-col="1" data-tab-jump="model-tab-1">
               <span class="cbs-matrix__cell-label">Agent commercial</span>
-              <span class="cbs-matrix__cell-sub">On vous trouve le bon distributeur.</span>
+              <span class="cbs-matrix__cell-sub">Nous identifions le distributeur adapté.</span>
             </button>
             <button type="button" class="cbs-matrix__cell" role="cell" data-row="2" data-col="2" data-tab-jump="model-tab-3">
               <span class="cbs-matrix__cell-label">Distributeur exclusif</span>
-              <span class="cbs-matrix__cell-sub">On achète, on stocke, on vend. Un seul P&L.</span>
+              <span class="cbs-matrix__cell-sub">Nous achetons, stockons, vendons. Un seul P&L.</span>
             </button>
           </div>
           <p class="cbs-matrix__note">
-            La plupart des marques démarrent dans une case et glissent vers une autre. Une marque qui arrive via un distributeur ouvre souvent ensuite sa propre boutique phare avec nous comme TP, une fois la catégorie validée. Une marque qui tient déjà sa boutique nous prend parfois comme distributeur pour ouvrir le retail physique quand les enseignes se débloquent.
+            La plupart des marques démarrent dans une case avant d'en rejoindre une autre. Une marque arrivée par un distributeur ouvre fréquemment sa propre boutique phare avec nous comme TP, une fois la catégorie validée. Inversement, une marque qui pilote déjà sa boutique nous confie parfois la distribution pour activer le retail physique lorsque les enseignes s'ouvrent.
           </p>
         </div>
       </div>
@@ -555,7 +555,7 @@ const icons: Record<string, string> = {
     <section class="section section--tight">
       <div class="container">
         <div class="cbs-cases-cta">
-          <a href="/fr/nos-realisations" class="btn btn--secondary">Voir nos cas e-commerce</a>
+          <a href="/fr/nos-realisations" class="btn btn--secondary">Consulter nos références e-commerce</a>
         </div>
       </div>
     </section>
@@ -567,7 +567,7 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Plateformes</span>
           <h2>Nos plateformes e-commerce en Chine</h2>
           <p class="section-header__lead">
-            Opérateur certifié sur les plateformes qui comptent. On choisit le bon dosage pour votre catégorie et votre ambition, et on les fait tourner.
+            Opérateur certifié sur les plateformes qui pèsent réellement. Nous calibrons la combinaison adaptée à votre catégorie et à votre ambition, puis nous l'exécutons.
           </p>
         </header>
 
@@ -605,7 +605,7 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Notre méthode</span>
           <h2>Du plan au pic du festival</h2>
           <p class="section-header__lead">
-            Trois phases qui transforment un lancement en activité durable. Faites défiler.
+            Trois phases qui transforment un lancement en activité pérenne. Le détail se déploie au fil de la lecture.
           </p>
         </header>
 
@@ -620,7 +620,7 @@ const icons: Record<string, string> = {
                 <span class="cbs-journey__dot" aria-hidden="true">
                   <span class="cbs-journey__dot-inner"></span>
                 </span>
-                <span class="cbs-journey__phase">Phase {i === 0 ? 'un' : i === 1 ? 'deux' : 'trois'}</span>
+                <span class="cbs-journey__phase">{i === 0 ? 'Première étape' : i === 1 ? 'Deuxième étape' : 'Troisième étape'}</span>
                 <div class="cbs-journey__card">
                   <span class="cbs-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
                   <h3 class="cbs-journey__title">{s.title}</h3>
@@ -638,9 +638,9 @@ const icons: Record<string, string> = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">L'IA dans l'eCommerce</span>
-          <h2>Comment on utilise l'IA pour opérer en Chine</h2>
+          <h2>Comment nous mobilisons l'IA pour opérer en Chine</h2>
           <p class="section-header__lead">
-            L'IA n'est plus un chantier annexe. C'est notre façon de baisser les coûts, de produire des contenus à grande échelle et de personnaliser le tunnel sur chaque boutique qu'on opère.
+            L'IA ne relève plus du chantier annexe. Elle structure désormais notre méthode pour contenir les coûts, industrialiser la production de contenus et personnaliser le parcours d'achat sur l'ensemble des boutiques que nous opérons.
           </p>
         </header>
 
@@ -649,8 +649,8 @@ const icons: Record<string, string> = {
             <div class="cbs-ai-bento__feature-bg" aria-hidden="true"></div>
             <div class="cbs-ai-bento__feature-body">
               <span class="cbs-ai-bento__chip">En continu</span>
-              <h3>Personnalisation IA sur tout le tunnel</h3>
-              <p>De la recommandation produit aux pages de destination dynamiques, l'IA fait grimper la conversion à chaque étape. Même boutique, même média, plus de revenu.</p>
+              <h3>Personnalisation IA sur l'ensemble du parcours</h3>
+              <p>De la recommandation produit aux pages de destination dynamiques, l'IA améliore la conversion à chaque étape. Même boutique, même budget média, davantage de chiffre d'affaires.</p>
               <ul class="cbs-ai-bento__feature-stats">
                 <li>
                   <span class="cbs-ai-bento__stat-num" data-counter="22" data-suffix="%">0</span>
@@ -658,7 +658,7 @@ const icons: Record<string, string> = {
                 </li>
                 <li>
                   <span class="cbs-ai-bento__stat-num" data-counter="40" data-suffix="%">0</span>
-                  <span class="cbs-ai-bento__stat-label">coût support en baisse</span>
+                  <span class="cbs-ai-bento__stat-label">coût du support en repli</span>
                 </li>
               </ul>
             </div>
@@ -683,7 +683,7 @@ const icons: Record<string, string> = {
           <span class="eyebrow">FAQ</span>
           <h2>Questions fréquentes sur l'eCommerce en Chine</h2>
           <p class="section-header__lead">
-            Vingt questions concrètes qu'on entend des opérateurs qui préparent un lancement Chine. Filtrez par sujet.
+            Vingt questions concrètes que nous adressent les opérateurs en préparation d'un lancement chinois. Filtrez par thématique.
           </p>
         </header>
 
@@ -733,9 +733,9 @@ const icons: Record<string, string> = {
           <header class="section-header section-header--split">
             <div>
               <span class="eyebrow">Décryptages</span>
-              <h2>Notes de marché en Chine</h2>
+              <h2>Lectures de marché en Chine</h2>
             </div>
-            <a href="/fr/decryptages" class="btn btn--secondary btn--sm">Voir plus</a>
+            <a href="/fr/decryptages" class="btn btn--secondary btn--sm">Voir plus de décryptages</a>
           </header>
 
           <div class="grid grid-3">
@@ -761,14 +761,14 @@ const icons: Record<string, string> = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">
-          <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
-          <h2 class="cbs-cta__title">Vous pensez à amener votre marque ou votre activité en Chine ?</h2>
+          <span class="eyebrow eyebrow--on-dark">Engager la conversation</span>
+          <h2 class="cbs-cta__title">Vous envisagez de porter votre marque ou votre activité en Chine ?</h2>
           <p class="cbs-cta__lead">
-            Dites-nous où vous en êtes et où vous voulez aller. Un senior de l'équipe vous répond sous un jour ouvré. Pas d'auto-répondeur, pas de tunnel commercial.
+            Précisez votre point de départ et la trajectoire visée. Un senior de l'équipe vous répond sous un jour ouvré. Aucun auto-répondeur, aucun tunnel commercial.
           </p>
           <div class="cbs-cta__actions">
             <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Nous contacter</a>
-            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Voir nos cas</a>
+            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Consulter nos références</a>
           </div>
         </div>
       </div>
