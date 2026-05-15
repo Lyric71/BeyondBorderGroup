@@ -6,6 +6,12 @@ author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: []
 tags: ["China market entry", "cross-border e-commerce", "CBEC", "pricing strategy", "Douyin"]
+keyTakeaways:
+  - "Cross-border eCommerce eats 30 to 40 percent of your year-one targeted revenue once TP retainer, commission, platform fees, media, and bonded warehousing are added up."
+  - "Domestic brands hold 76 percent of China's FMCG market. Foreign-premium pricing only still works in beauty, supplements, baby, pet, and niche fragrance."
+  - "Validate demand on Douyin with a tight KOL campaign first. Tmall and JD are where established brands fight, not where you test."
+  - "Skip the 1.4 billion shoppers pitch. Run category-level competitor and pricing research before you commit a yuan."
+  - "China rewards residents, not visitors. Side-project budgets and one-year timelines fail every time."
 heroImage: "/Images/insights/foreign-brands-in-china-why-most-market-tests-fail.png"
 heroImageAlt: "Foreign brands China CBEC"
 legacyUrl: "https://beyondbordergroup.com/foreign-brands-in-china-why-most-market-tests-fail/"

@@ -6,6 +6,12 @@ author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: []
 tags: ["entrée de marché Chine", "e-commerce transfrontalier", "CBEC", "stratégie tarifaire", "Douyin"]
+keyTakeaways:
+  - "Le cross-border avale 30 à 40 % du chiffre d'affaires visé en année une, une fois additionnés rétainer TP, commissions, frais de plateforme, médias et logistique en zone sous douane."
+  - "Les marques domestiques détiennent 76 % du marché chinois de la grande conso. Le tarif premium étranger ne tient plus, sauf en beauté, compléments, bébé, animaux et parfumerie de niche."
+  - "Validez la demande sur Douyin via une campagne KOL serrée avant tout. Tmall et JD sont les arènes des marques installées, pas des bancs d'essai."
+  - "Oubliez le pitch des 1,4 milliard de consommateurs. Étude concurrentielle et benchmark tarifaire à l'échelle de la catégorie, avant le premier yuan engagé."
+  - "La Chine récompense les résidents, pas les visiteurs. Les budgets en mode side-project et les feuilles de route à douze mois échouent à chaque fois."
 heroImage: "/Images/insights/foreign-brands-in-china-why-most-market-tests-fail.png"
 heroImageAlt: "Marques étrangères Chine CBEC"
 legacyUrl: "https://beyondbordergroup.com/foreign-brands-in-china-why-most-market-tests-fail/"

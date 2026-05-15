@@ -12,18 +12,31 @@ sitemap) and to send to anyone maintaining external backlinks.
 
 Do these steps after the redirects are live in production:
 
-1. Verify the new domain in Google Search Console if not already verified.
-   Same domain, so no Change of Address is required, only re-indexing.
-2. Submit the new sitemap (`/sitemap-index.xml`). Old sitemap entries become
-   orphan and drop out once Google reprocesses them.
-3. Spot-check a handful of old URLs via URL Inspection. Each should report
-   "Page with redirect" and name the new `/insights/<slug>` target.
-4. Request re-indexing of the new `/insights/` listing and the top 5 to 10
-   highest-traffic article destinations (check Analytics for top referrers).
-   Do not request re-indexing of the old URLs, Google drops them on its own
-   once the 301s are crawled.
-5. Leave the 301s in place permanently. Do not swap them to 302 or remove them
-   after Google recrawls. Removing a 301 resets accumulated link equity.
+1. Verify **both** properties in GSC: `https://beyondbordergroup.com`
+   (apex, legacy) and `https://www.beyondbordergroup.com` (www, new
+   canonical). Verifying both lets you watch the migration symmetrically as
+   apex impressions fall and www impressions rise. Same domain, so no
+   Change of Address is required.
+2. Confirm the apex-to-www host redirect is configured in Vercel (see
+   "Host canonicalisation" section below). Without it, the apex URLs keep
+   resolving and Google sees duplicate content.
+3. Submit the new sitemap (`/sitemap-index.xml`) under the **www** property.
+   The sitemap is emitted at build time by `@astrojs/sitemap` and includes
+   every public EN and FR page. Old WordPress sitemap entries drop out once
+   Google reprocesses them.
+4. Spot-check a handful of old URLs via URL Inspection from the **apex**
+   property. Each should report "Page with redirect" and name the final
+   www target (e.g. `https://www.beyondbordergroup.com/insights/<slug>`).
+5. Request re-indexing of the top 20 destination pages on **www**: `/`,
+   `/fr/`, `/insights`, `/work`, `/about`, `/contact`, the four
+   `/enter-china/*`, the seven `/grow-in-china/*`, the three
+   `/learn-china/*`. Do not request re-indexing of the old apex URLs;
+   Google drops them on its own once the 301s are crawled.
+6. Leave the 301s and the host redirect in place permanently. Do not swap
+   them to 302 or remove them after Google recrawls. Removing a 301 resets
+   accumulated link equity.
+7. Keep the old WordPress server reachable for 30 days post-cutover so DNS
+   caches outside Google still resolve. Decommission after that.
 
 ## Active redirects
 
@@ -160,6 +173,144 @@ The mapping is explicit, not 1:1.
 | `/case-study/kerry-food-ecommerce-china-tmalfor-davinci-gourmet-syrups-sauces-and-smoothies/` | `/work/kerry-davinci` | 301 |
 | `/case-study/case-study-exeeds-successful-global-pr-launch/` | `/work/exeed` | 301 |
 | `/case-study/case-study-sohomds-digital-health-transformation/` | `/work/sohomd` | 301 |
+
+### EN service pages (21 long WordPress marketing slugs)
+
+Where multiple legacy pages cover the same intent (Tmall, JD, generic
+"ecommerce-agency"), all land on the same hub so equity consolidates.
+
+| Old URL (WordPress) | New URL (Astro) | Status |
+|---|---|---|
+| `/wordpress-agency-in-china-design-coding-content-hosting/` | `/grow-in-china/website` | 301 |
+| `/website/` | `/grow-in-china/website` | 301 |
+| `/wechat-marketing-agency-in-china-content-advertising-mini-program/` | `/grow-in-china/website` | 301 |
+| `/red-little-red-book-marketing-agency-in-china-content-commerce-influencers/` | `/grow-in-china/influencers-kols` | 301 |
+| `/influencer-agency-in-china-campaigns-and-ecommerce/` | `/grow-in-china/influencers-kols` | 301 |
+| `/social-media-agency-in-china-kols-and-brand-content/` | `/grow-in-china/influencers-kols` | 301 |
+| `/douyin-marketing-agency-in-china-content-ads-influencers/` | `/grow-in-china/social-commerce` | 301 |
+| `/social-commerce-in-china/` | `/grow-in-china/social-commerce` | 301 |
+| `/media-and-marketing-agency-in-china/` | `/grow-in-china/media` | 301 |
+| `/pr/` | `/grow-in-china/media` | 301 |
+| `/creative-agency-china-production-studio-content-factory/` | `/grow-in-china/production-studio` | 301 |
+| `/artificial-intelligence-generated-content-for-marketing-in-china/` | `/grow-in-china/production-studio` | 301 |
+| `/event-trade-show-agency-in-china/` | `/grow-in-china/campaigns` | 301 |
+| `/tmall-ecommerce-agency-in-china-sell-your-products-in-china/` | `/grow-in-china/cross-border-ecommerce` | 301 |
+| `/jd-ecommerce-agency-in-china-cross-border-ecommerce/` | `/grow-in-china/cross-border-ecommerce` | 301 |
+| `/ecommerce-agency-in-china-sell-your-products-in-china/` | `/grow-in-china/cross-border-ecommerce` | 301 |
+| `/branding-and-design-agency-in-china/` | `/enter-china/branding-localisation` | 301 |
+| `/offline-product-distribution-services-in-china/` | `/enter-china/distribution` | 301 |
+| `/china-learning-expeditions-ecommerce-digital-ai/` | `/learn-china/learning-expeditions` | 301 |
+| `/who-we-are-agency-china-digital-commerce-branding/` | `/about` | 301 |
+| `/contact-us-to-enter-the-chinese-market-marketing-communication-commerce/` | `/contact` | 301 |
+
+### FR service pages (16)
+
+The old site mixed English and French slugs at the root. The new site uses
+native French slugs under `/fr/` (per `CLAUDE.md` section 6.11).
+
+| Old URL (WordPress) | New URL (Astro) | Status |
+|---|---|---|
+| `/agence-marketing-et-ecommerce-en-chine-20-ans-dexperience/` | `/fr/` | 301 |
+| `/agence-marketing-chine-bonne-pratiques-et-analyses-digital-et-commerce/` | `/fr/decryptages` | 301 |
+| `/agence-marketing-digitale-media-et-ecommerce-en-chine/` | `/fr/se-developper-en-chine/medias` | 301 |
+| `/agence-de-relations-presse-en-chine-rp-medias/` | `/fr/se-developper-en-chine/medias` | 301 |
+| `/agence-de-social-media-en-chine-kols-et-contenu-de-marque/` | `/fr/se-developper-en-chine/influence-et-kol` | 301 |
+| `/agence-evenementielle-salons-en-chine/` | `/fr/se-developper-en-chine/campagnes` | 301 |
+| `/agence-creative-chine-studio-de-production-usine-de-contenu/` | `/fr/se-developper-en-chine/studio-de-production` | 301 |
+| `/agence-wordpress-en-chine-design-dev-contenu-hebergement/` | `/fr/se-developper-en-chine/site-web` | 301 |
+| `/agence-web-et-mini-programme-wechat-en-chine/` | `/fr/se-developper-en-chine/site-web` | 301 |
+| `/agence-ecommerce-en-chine-vendez-vos-produits-en-chine/` | `/fr/se-developper-en-chine/ecommerce-transfrontalier` | 301 |
+| `/agence-ecommerce-tmall-en-chine-vendez-vos-produits-en-chine/` | `/fr/se-developper-en-chine/ecommerce-transfrontalier` | 301 |
+| `/agence-ecommerce-jd-en-chine-cross-border-ecommerce/` | `/fr/se-developper-en-chine/ecommerce-transfrontalier` | 301 |
+| `/ecommerce-transfrontalier-en-chine-strategie-dentree-sur-le-marche/` | `/fr/entrer-en-chine/lancement-cross-border` | 301 |
+| `/agence-branding-et-design-en-chine/` | `/fr/entrer-en-chine/marque-et-localisation` | 301 |
+| `/formation-au-digital-et-a-lecommerce-en-chine/` | `/fr/comprendre-la-chine/masterclass` | 301 |
+| `/learning-expedition-chine-ecommerce-ia/` | `/fr/comprendre-la-chine/expeditions-terrain` | 301 |
+| `/politique-de-confidentialite-beyondbordergroup/` | `/fr/politique-de-confidentialite` | 301 |
+
+### FR insight articles (14)
+
+Old French insights lived at a native slug at the root. New insights live at
+`/fr/decryptages/<native-fr-slug>`. The native slug for each article is
+defined in `src/i18n/insight-slugs.mjs`; `astro.config.mjs` resolves the
+destination through that map so a future slug rename only needs a single
+edit. Two old URLs collapse into the same destination because both articles
+cover the same intent.
+
+| Old URL (WordPress) | New URL (Astro) | Status |
+|---|---|---|
+| `/marques-etrangeres-en-chine-pourquoi-ca-echoue/` | `/fr/decryptages/marques-etrangeres-chine-tests-marche-echouent` | 301 |
+| `/defis-et-opportunites-du-e-commerce-pour-les-marques-francaises-en-chine/` | `/fr/decryptages/marques-etrangeres-chine-tests-marche-echouent` | 301 |
+| `/pipl-chine-loi-protection-donnees-conformite-marques/` | `/fr/decryptages/pipl-affaire-dior-marques-etrangeres` | 301 |
+| `/qr-codes-wechat-loutil-clef-succes-garanti-en-chine/` | `/fr/decryptages/qr-codes-wechat-marques-chine` | 301 |
+| `/les-influenceurs-e-commerce-incontournables-en-chine-en-2025/` | `/fr/decryptages/kol-e-commerce-chinois-2024` | 301 |
+| `/les-reseaux-sociaux-les-plus-influents-en-chine-en-2025/` | `/fr/decryptages/reseaux-sociaux-chinois-cartographie-2024` | 301 |
+| `/top-5-plateformes-video-et-livestreaming-chine/` | `/fr/decryptages/top-5-plateformes-video-live-commerce-chine` | 301 |
+| `/guide-du-marketing-sur-weibo-maitriser-le-social-commerce-en-chine/` | `/fr/decryptages/guide-weibo-social-commerce-chine` | 301 |
+| `/xianyu-plateforme-ideale-pour-jeunes-entrepreneurs-en-chine/` | `/fr/decryptages/xianyu-side-hustles-jeunesse-chinoise` | 301 |
+| `/trouver-un-distributeur-en-chine-guide-pratique-2025/` | `/fr/decryptages/trouver-distributeur-chine-2024` | 301 |
+| `/le-cout-des-kol-chinois-etudes-de-cas-et-tendances-marketing/` | `/fr/decryptages/prix-kol-chinois-grilles-tarifaires` | 301 |
+| `/une-comparaison-entre-tmall-et-amazon/` | `/fr/decryptages/tmall-amazon-deux-modeles` | 301 |
+| `/creation-de-contenu-marketing-assiste-par-intelligence-artificielle-en-chine/` | `/fr/decryptages/ia-moteur-e-commerce-chinois` | 301 |
+| `/qixi-2025-strategie-marques-luxe-chine-post-romantisme/` | `/fr/decryptages` | 301 |
+
+The Qixi article was not ported to FR. The redirect lands on the listing
+page until an FR version is written. Update the redirect to the article slug
+when it ships.
+
+### FR case studies (8, includes EN Macusee fallback)
+
+Native French URLs from the old site mapped onto the new shared slug under
+`/fr/nos-realisations/`. Macusee was not ported on either locale, so both
+Macusee URLs fall back to the relevant listing.
+
+| Old URL (WordPress) | New URL (Astro) | Status |
+|---|---|---|
+| `/case-study/roc-soins-de-la-peau-premium-de-la-france-a-la-chine/` | `/fr/nos-realisations/roc` | 301 |
+| `/case-study/campagne-du-super-brand-day-pour-les-hotels-marriot-en-chine/` | `/fr/nos-realisations/marriott` | 301 |
+| `/case-study/chery-automobile-campagne-with-chery-with-love/` | `/fr/nos-realisations/chery` | 301 |
+| `/case-study/pierre-fabre-masterclass-chine-digital-aigc/` | `/fr/nos-realisations/pierre-fabre` | 301 |
+| `/case-study/langnese-chine-stopper-le-declin-commercial/` | `/fr/nos-realisations/langnese` | 301 |
+| `/case-study/croissance-des-reseaux-sociaux-chinois-pour-land-rover/` | `/fr/nos-realisations/jaguar-land-rover` | 301 |
+| `/case-study/macusee-cross-border-ecommerce-et-sante-oculaire-en-chine/` | `/fr/nos-realisations` | 301 |
+| `/case-study/macusee-capturing-a-2b-white-space-in-chinas-eye-health-market/` | `/work` | 301 |
+
+When the Macusee case is ported, redirect both URLs to `/work/macusee` and
+`/fr/nos-realisations/macusee` and update this table.
+
+### Same path, no redirect needed
+
+These pages live at the same path on the new site. The apex-to-www host
+redirect (configured in Vercel, not in code) handles host normalisation; no
+path-level 301 is required.
+
+| URL | Status |
+|---|---|
+| `/` | served by `src/pages/index.astro` |
+| `/privacy-policy` | served by `src/pages/privacy-policy.astro` |
+| `/terms-of-service` | served by `src/pages/terms-of-service.astro` |
+
+## Host canonicalisation (apex to www)
+
+The Astro `site` is `https://www.beyondbordergroup.com`. Every URL Google
+already indexes (see `Table.csv`) sits at the apex `beyondbordergroup.com`
+with no www. Without a host-level 301 in front, Google sees the legacy URLs
+keep resolving at the apex while the new canonical lives at www, which
+splits ranking signals.
+
+**Fix:** in the Vercel project, add `beyondbordergroup.com` as an alias and
+mark it as a redirect to `www.beyondbordergroup.com`. Vercel issues a 308
+that preserves the path. The path-level 301 then fires on www. Net 2
+permanent hops for legacy URLs, both indexable by Google.
+
+**Verify after deploy:**
+
+```sh
+curl -sI https://beyondbordergroup.com/foreign-brands-in-china-why-most-market-tests-fail/
+# expect: 308, Location: https://www.beyondbordergroup.com/foreign-brands-in-china-why-most-market-tests-fail/
+curl -sI https://www.beyondbordergroup.com/foreign-brands-in-china-why-most-market-tests-fail/
+# expect: 301, Location: /insights/foreign-brands-in-china-why-most-market-tests-fail
+```
 
 ## How to add a new redirect
 

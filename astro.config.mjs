@@ -4,6 +4,8 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 import vercel from '@astrojs/vercel';
+import sitemap from '@astrojs/sitemap';
+import { insightEnToFr } from './src/i18n/insight-slugs.mjs';
 
 /**
  * Legacy WordPress insight article slugs. On the old site every insight sat at
@@ -131,6 +133,234 @@ const caseStudyRedirects = Object.fromEntries(
   ])
 );
 
+/**
+ * Legacy WordPress service pages (English). Each long marketing slug maps to
+ * the closest intent match on the new site. Where multiple legacy pages cover
+ * the same intent (e.g. Tmall, JD, and "ecommerce-agency"), they all land on
+ * the same hub to consolidate equity.
+ */
+const enServiceRedirectPairs = [
+  ['/wordpress-agency-in-china-design-coding-content-hosting', '/grow-in-china/website'],
+  ['/website', '/grow-in-china/website'],
+  ['/wechat-marketing-agency-in-china-content-advertising-mini-program', '/grow-in-china/website'],
+  ['/red-little-red-book-marketing-agency-in-china-content-commerce-influencers', '/grow-in-china/influencers-kols'],
+  ['/influencer-agency-in-china-campaigns-and-ecommerce', '/grow-in-china/influencers-kols'],
+  ['/social-media-agency-in-china-kols-and-brand-content', '/grow-in-china/influencers-kols'],
+  ['/douyin-marketing-agency-in-china-content-ads-influencers', '/grow-in-china/social-commerce'],
+  ['/social-commerce-in-china', '/grow-in-china/social-commerce'],
+  ['/media-and-marketing-agency-in-china', '/grow-in-china/media'],
+  ['/pr', '/grow-in-china/media'],
+  ['/creative-agency-china-production-studio-content-factory', '/grow-in-china/production-studio'],
+  ['/artificial-intelligence-generated-content-for-marketing-in-china', '/grow-in-china/production-studio'],
+  ['/event-trade-show-agency-in-china', '/grow-in-china/campaigns'],
+  ['/tmall-ecommerce-agency-in-china-sell-your-products-in-china', '/grow-in-china/cross-border-ecommerce'],
+  ['/jd-ecommerce-agency-in-china-cross-border-ecommerce', '/grow-in-china/cross-border-ecommerce'],
+  ['/ecommerce-agency-in-china-sell-your-products-in-china', '/grow-in-china/cross-border-ecommerce'],
+  ['/branding-and-design-agency-in-china', '/enter-china/branding-localisation'],
+  ['/offline-product-distribution-services-in-china', '/enter-china/distribution'],
+  ['/china-learning-expeditions-ecommerce-digital-ai', '/learn-china/learning-expeditions'],
+  ['/who-we-are-agency-china-digital-commerce-branding', '/about'],
+  ['/contact-us-to-enter-the-chinese-market-marketing-communication-commerce', '/contact'],
+];
+
+/**
+ * Legacy WordPress service pages (French). The old site mixed English and
+ * French slugs at the root; the new site uses native French slugs under /fr/.
+ */
+const frServiceRedirectPairs = [
+  ['/agence-marketing-et-ecommerce-en-chine-20-ans-dexperience', '/fr/'],
+  ['/agence-marketing-chine-bonne-pratiques-et-analyses-digital-et-commerce', '/fr/decryptages'],
+  ['/agence-marketing-digitale-media-et-ecommerce-en-chine', '/fr/se-developper-en-chine/medias'],
+  ['/agence-de-relations-presse-en-chine-rp-medias', '/fr/se-developper-en-chine/medias'],
+  ['/agence-de-social-media-en-chine-kols-et-contenu-de-marque', '/fr/se-developper-en-chine/influence-et-kol'],
+  ['/agence-evenementielle-salons-en-chine', '/fr/se-developper-en-chine/campagnes'],
+  ['/agence-creative-chine-studio-de-production-usine-de-contenu', '/fr/se-developper-en-chine/studio-de-production'],
+  ['/agence-wordpress-en-chine-design-dev-contenu-hebergement', '/fr/se-developper-en-chine/site-web'],
+  ['/agence-web-et-mini-programme-wechat-en-chine', '/fr/se-developper-en-chine/site-web'],
+  ['/agence-ecommerce-en-chine-vendez-vos-produits-en-chine', '/fr/se-developper-en-chine/ecommerce-transfrontalier'],
+  ['/agence-ecommerce-tmall-en-chine-vendez-vos-produits-en-chine', '/fr/se-developper-en-chine/ecommerce-transfrontalier'],
+  ['/agence-ecommerce-jd-en-chine-cross-border-ecommerce', '/fr/se-developper-en-chine/ecommerce-transfrontalier'],
+  ['/ecommerce-transfrontalier-en-chine-strategie-dentree-sur-le-marche', '/fr/entrer-en-chine/lancement-cross-border'],
+  ['/agence-branding-et-design-en-chine', '/fr/entrer-en-chine/marque-et-localisation'],
+  ['/formation-au-digital-et-a-lecommerce-en-chine', '/fr/comprendre-la-chine/masterclass'],
+  ['/learning-expedition-chine-ecommerce-ia', '/fr/comprendre-la-chine/expeditions-terrain'],
+  // FR privacy policy: native slug now lives at /fr/politique-de-confidentialite.
+  ['/politique-de-confidentialite-beyondbordergroup', '/fr/politique-de-confidentialite'],
+];
+
+/**
+ * Legacy WordPress insight slugs (French). The old site published the French
+ * version at a native slug at the root. The new site uses a different native
+ * French slug under `/fr/decryptages/`, mapped from the EN slug via
+ * `insightEnToFr`. Resolving destinations through the shared map means a
+ * future slug rename only needs a single edit in `src/i18n/insight-slugs.mjs`.
+ *
+ * Two legacy URLs land on the same destination because both old articles
+ * cover the same intent (`foreign-brands-in-china-why-most-market-tests-fail`).
+ */
+const frInsightDest = (/** @type {string} */ enSlug) => `/fr/decryptages/${insightEnToFr[enSlug]}`;
+const frInsightRedirectPairs = [
+  ['/marques-etrangeres-en-chine-pourquoi-ca-echoue', frInsightDest('foreign-brands-in-china-why-most-market-tests-fail')],
+  ['/defis-et-opportunites-du-e-commerce-pour-les-marques-francaises-en-chine', frInsightDest('foreign-brands-in-china-why-most-market-tests-fail')],
+  ['/pipl-chine-loi-protection-donnees-conformite-marques', frInsightDest('pipl-compliance-in-china-diors-wake-up-call-for-global-brands')],
+  ['/qr-codes-wechat-loutil-clef-succes-garanti-en-chine', frInsightDest('the-power-of-wechat-qr-codes-for-businesses-in-china')],
+  ['/les-influenceurs-e-commerce-incontournables-en-chine-en-2025', frInsightDest('top-ecommerce-influencers-in-china-2024')],
+  ['/les-reseaux-sociaux-les-plus-influents-en-chine-en-2025', frInsightDest('top-chinese-social-media-platforms-for-2024-marketing')],
+  ['/top-5-plateformes-video-et-livestreaming-chine', frInsightDest('top-5-video-and-livestreaming-platforms-in-china')],
+  ['/guide-du-marketing-sur-weibo-maitriser-le-social-commerce-en-chine', frInsightDest('weibo-marketing-guide-mastering-social-commerce-in-china')],
+  ['/xianyu-plateforme-ideale-pour-jeunes-entrepreneurs-en-chine', frInsightDest('how-xianyu-powers-young-entrepreneurs-side-hustles-in-china')],
+  ['/trouver-un-distributeur-en-chine-guide-pratique-2025', frInsightDest('how-to-find-a-distributor-for-your-products-in-china-in-2024')],
+  ['/le-cout-des-kol-chinois-etudes-de-cas-et-tendances-marketing', frInsightDest('the-cost-of-chinese-kols-case-studies-and-marketing-insights')],
+  ['/une-comparaison-entre-tmall-et-amazon', frInsightDest('a-comparison-between-tmall-and-amazon')],
+  ['/creation-de-contenu-marketing-assiste-par-intelligence-artificielle-en-chine', frInsightDest('ai-revolutionizing-ecommerce-in-china')],
+  // Qixi article was not ported. Falls back to the FR insights listing until
+  // the article is rewritten in French.
+  ['/qixi-2025-strategie-marques-luxe-chine-post-romantisme', '/fr/decryptages'],
+];
+
+/**
+ * Legacy WordPress case study slugs (French). The new site reuses the English
+ * case slug under /fr/nos-realisations/. Macusee was not ported, so its FR URL
+ * falls back to the listing.
+ */
+const frCaseStudyRedirectPairs = [
+  ['/case-study/roc-soins-de-la-peau-premium-de-la-france-a-la-chine', '/fr/nos-realisations/roc'],
+  ['/case-study/campagne-du-super-brand-day-pour-les-hotels-marriot-en-chine', '/fr/nos-realisations/marriott'],
+  ['/case-study/chery-automobile-campagne-with-chery-with-love', '/fr/nos-realisations/chery'],
+  ['/case-study/pierre-fabre-masterclass-chine-digital-aigc', '/fr/nos-realisations/pierre-fabre'],
+  ['/case-study/langnese-chine-stopper-le-declin-commercial', '/fr/nos-realisations/langnese'],
+  ['/case-study/croissance-des-reseaux-sociaux-chinois-pour-land-rover', '/fr/nos-realisations/jaguar-land-rover'],
+  ['/case-study/macusee-cross-border-ecommerce-et-sante-oculaire-en-chine', '/fr/nos-realisations'],
+  // EN Macusee case was also not ported.
+  ['/case-study/macusee-capturing-a-2b-white-space-in-chinas-eye-health-market', '/work'],
+];
+
+const enServiceRedirects = Object.fromEntries(
+  enServiceRedirectPairs.map(([from, to]) => [
+    from,
+    { status: /** @type {const} */ (301), destination: to },
+  ])
+);
+const frServiceRedirects = Object.fromEntries(
+  frServiceRedirectPairs.map(([from, to]) => [
+    from,
+    { status: /** @type {const} */ (301), destination: to },
+  ])
+);
+/**
+ * Resolve an `/fr/decryptages/<en-slug>` destination from the legacy WP map
+ * to its new FR slug, so legacy redirects 301 directly to the final URL
+ * (no chained redirect). Returns the destination unchanged if it isn't an
+ * `/fr/decryptages/<en-slug>` pointer.
+ */
+const resolveFrInsightDest = (/** @type {string} */ dest) => {
+  const prefix = '/fr/decryptages/';
+  if (!dest.startsWith(prefix)) return dest;
+  const tail = dest.slice(prefix.length);
+  const frSlug = insightEnToFr[tail];
+  return frSlug ? `${prefix}${frSlug}` : dest;
+};
+
+/**
+ * Static EN -> FR slug pairs for the sitemap serialize hook. Mirrors the
+ * `slugMap` in `src/i18n/utils.ts`; kept duplicated here because importing
+ * the .ts file from the config is not portable across Astro's loader.
+ */
+const staticEnToFr = {
+  '/': '/fr',
+  '/about': '/fr/qui-nous-sommes',
+  '/contact': '/fr/nous-contacter',
+  '/thank-you': '/fr/merci',
+  '/privacy-policy': '/fr/politique-de-confidentialite',
+  '/enter-china': '/fr/entrer-en-chine',
+  '/enter-china/market-entry-consulting': '/fr/entrer-en-chine/conseil-en-entree-de-marche',
+  '/enter-china/cross-border-setup': '/fr/entrer-en-chine/lancement-cross-border',
+  '/enter-china/distribution': '/fr/entrer-en-chine/distribution',
+  '/enter-china/branding-localisation': '/fr/entrer-en-chine/marque-et-localisation',
+  '/grow-in-china': '/fr/se-developper-en-chine',
+  '/grow-in-china/cross-border-ecommerce': '/fr/se-developper-en-chine/ecommerce-transfrontalier',
+  '/grow-in-china/social-commerce': '/fr/se-developper-en-chine/commerce-social',
+  '/grow-in-china/campaigns': '/fr/se-developper-en-chine/campagnes',
+  '/grow-in-china/media': '/fr/se-developper-en-chine/medias',
+  '/grow-in-china/influencers-kols': '/fr/se-developper-en-chine/influence-et-kol',
+  '/grow-in-china/production-studio': '/fr/se-developper-en-chine/studio-de-production',
+  '/grow-in-china/website': '/fr/se-developper-en-chine/site-web',
+  '/learn-china': '/fr/comprendre-la-chine',
+  '/learn-china/platforms': '/fr/comprendre-la-chine/plateformes',
+  '/learn-china/masterclass': '/fr/comprendre-la-chine/masterclass',
+  '/learn-china/learning-expeditions': '/fr/comprendre-la-chine/expeditions-terrain',
+  '/work': '/fr/nos-realisations',
+  '/insights': '/fr/decryptages',
+};
+const staticFrToEn = Object.fromEntries(
+  Object.entries(staticEnToFr).map(([en, fr]) => [fr, en])
+);
+
+/**
+ * Reduce a built page path to its canonical English equivalent.
+ * Returns `null` for paths with no resolvable canonical (e.g. orphan FR
+ * pages with no EN twin), so the sitemap hook can skip them.
+ */
+const canonicalize = (/** @type {string} */ path) => {
+  if (!path) return '/';
+  if (path === '/' || path === '') return '/';
+  if (!path.startsWith('/fr')) return path;
+  if (path.startsWith('/fr/decryptages/')) {
+    const tail = path.slice('/fr/decryptages/'.length);
+    if (!tail) return '/insights';
+    const enSlug = Object.entries(insightEnToFr).find(([, fr]) => fr === tail)?.[0];
+    return enSlug ? `/insights/${enSlug}` : null;
+  }
+  if (path.startsWith('/fr/nos-realisations/')) {
+    return '/work/' + path.slice('/fr/nos-realisations/'.length);
+  }
+  if (path === '/fr/nos-realisations') return '/work';
+  return staticFrToEn[path] ?? null;
+};
+
+/** Forward map an EN path to its FR twin, or null if none exists. */
+const enToFr = (/** @type {string | null} */ enPath) => {
+  if (!enPath) return null;
+  if (enPath === '/') return '/fr';
+  if (enPath.startsWith('/insights/')) {
+    const enSlug = enPath.slice('/insights/'.length);
+    const frSlug = insightEnToFr[enSlug];
+    return frSlug ? `/fr/decryptages/${frSlug}` : null;
+  }
+  if (enPath === '/insights') return '/fr/decryptages';
+  if (enPath.startsWith('/work/')) {
+    return '/fr/nos-realisations/' + enPath.slice('/work/'.length);
+  }
+  if (enPath === '/work') return '/fr/nos-realisations';
+  return staticEnToFr[enPath] ?? null;
+};
+
+const frInsightRedirects = Object.fromEntries(
+  frInsightRedirectPairs.map(([from, to]) => [
+    from,
+    { status: /** @type {const} */ (301), destination: resolveFrInsightDest(to) },
+  ])
+);
+const frCaseStudyRedirects = Object.fromEntries(
+  frCaseStudyRedirectPairs.map(([from, to]) => [
+    from,
+    { status: /** @type {const} */ (301), destination: to },
+  ])
+);
+
+/**
+ * FR insight slug rename: the FR insight collection was originally shipped
+ * under English slugs (e.g. /fr/decryptages/foreign-brands-...). Each FR
+ * article now uses a native French slug per CLAUDE.md §6.11. Emit a 301 for
+ * every renamed pair so any external link to the old FR URL still resolves.
+ */
+const frInsightSlugRenameRedirects = Object.fromEntries(
+  Object.entries(insightEnToFr).map(([enSlug, frSlug]) => [
+    `/fr/decryptages/${enSlug}`,
+    { status: /** @type {const} */ (301), destination: `/fr/decryptages/${frSlug}` },
+  ])
+);
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.beyondbordergroup.com',
@@ -141,6 +371,40 @@ export default defineConfig({
   },
 
   adapter: vercel(),
+
+  integrations: [
+    sitemap({
+      // Drop legacy or non-canonical destinations so they cannot enter the
+      // index. The form thank-you pages and the API routes do not belong in
+      // search results.
+      filter: (page) =>
+        !page.includes('/thank-you') &&
+        !page.includes('/fr/merci') &&
+        !page.includes('/api/'),
+      changefreq: 'weekly',
+      priority: 0.7,
+      // Rewrite each URL into the locale pair the slugMap actually dictates.
+      // @astrojs/sitemap's built-in i18n option only handles simple prefix
+      // routing (e.g. /about -> /fr/about), which is wrong for this site:
+      // /about pairs with /fr/qui-nous-sommes, /insights/<en> pairs with
+      // /fr/decryptages/<fr>, etc. The hook below resolves both halves of
+      // the pair via the insight + static slug maps.
+      serialize: (item) => {
+        const SITE = 'https://www.beyondbordergroup.com';
+        const url = new URL(item.url);
+        const path = url.pathname === '/' ? '/' : url.pathname.replace(/\/$/, '');
+        const enPath = canonicalize(path);
+        const frPath = enToFr(enPath);
+        if (!enPath) return item;
+        const enHref = SITE + (enPath === '/' ? '' : enPath);
+        const frHref = frPath ? SITE + frPath : null;
+        const links = [{ lang: 'en', url: enHref }];
+        if (frHref) links.push({ lang: 'fr', url: frHref });
+        links.push({ lang: 'x-default', url: enHref });
+        return { ...item, links };
+      },
+    }),
+  ],
 
   // Multilingual setup. English stays at the root (/), French lives under /fr/.
   // Add new locales to the array as they ship. Keep `prefixDefaultLocale: false`
@@ -196,5 +460,22 @@ export default defineConfig({
 
     // All 23 individual case studies: /case-study/<wp-slug> -> /work/<slug>
     ...caseStudyRedirects,
+
+    // 21 EN service pages from the WordPress site (long marketing slugs) ->
+    // closest intent match on the new site.
+    ...enServiceRedirects,
+
+    // 16 FR service pages.
+    ...frServiceRedirects,
+
+    // 14 FR insight articles from legacy WP -> /fr/decryptages/<new-fr-slug>.
+    ...frInsightRedirects,
+
+    // 66 FR insight slug renames (English-under-FR -> native French slug),
+    // per CLAUDE.md §6.11.
+    ...frInsightSlugRenameRedirects,
+
+    // 8 FR case studies -> /fr/nos-realisations/<en-slug>.
+    ...frCaseStudyRedirects,
   },
 });

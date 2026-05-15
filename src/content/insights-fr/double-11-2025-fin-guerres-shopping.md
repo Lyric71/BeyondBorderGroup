@@ -5,6 +5,12 @@ pubDate: "2025-11-14"
 author: "Beyond Border Group"
 category: "E-Commerce"
 tags: ["Double 11", "e-commerce", "retail Chine", "comportement consommateur", "GMV"]
+keyTakeaways:
+  - "Le GMV du Double 11 2025 atteint environ 1 700 milliards de RMB, contre 1 440 milliards un an plus tôt. Le chiffre progresse, le taux de croissance ralentit."
+  - "Le festival s'étire désormais sur cinq semaines. Pré-pré-vente, fenêtres d'acompte, empilement de coupons. Les acheteurs sont devenus des pros avant que les marques ne le réalisent."
+  - "Les grandes plateformes ont cessé de publier un chiffre de GMV unique pour le 11.11. La donnée elle-même est devenue un risque politique."
+  - "Les marques gonflent le prix barré avant le festival, juste pour le solder ensuite. La marge se comprime, la confiance s'érode, personne ne gagne."
+  - "Le Double 11 reste une fenêtre de lancement utile. Comme moteur de croissance trimestrielle, c'est terminé."
 heroImage: "/Images/insights/double-11-2025-the-end-of-chinas-shopping-wars.png"
 heroImageAlt: "Tableau de bord des données du festival Double 11 2025"
 legacyUrl: "https://beyondbordergroup.com/double-11-2025-the-end-of-chinas-shopping-wars/"

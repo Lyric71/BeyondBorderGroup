@@ -6,6 +6,12 @@ author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
 tags: ["China ecommerce", "brand strategy", "Douyin", "Tmall", "platform architecture"]
+keyTakeaways:
+  - "Collgene grew 47.6 percent year-on-year at Double 11. Kefumei lost 57 percent. Same category, same platforms, same shoppers. The gap was architecture, not formula."
+  - "Kefumei concentrated 75 percent of revenue in top-tier KOL livestreams. When traffic costs spiked and algorithms shifted, the whole stack folded."
+  - "Collgene's Tmall trust base produced a 42 percent repurchase rate, fifteen points above the dermocosmetic industry average."
+  - "A mid-tier KOL matrix combining ingredient science and emotional resonance drove 60 percent of Collgene's new-customer acquisition."
+  - "Three platforms, three jobs: Tmall and JD protect trust and repurchase. Douyin discovers. Xiaohongshu earns search and community. Same message across all three wastes the budget."
 heroImage: "/Images/insights/science-emotion-chinas-new-brand-playbook.jpg"
 heroImageAlt: "Science plus emotion china new brand playbook"
 legacyUrl: "https://beyondbordergroup.com/science-emotion-chinas-new-brand-playbook/"

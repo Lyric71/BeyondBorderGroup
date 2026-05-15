@@ -1,4 +1,5 @@
 import { defaultLocale, locales, ui, type Locale, type TranslationKey } from './ui';
+import { insightEnToFr, insightFrToEn } from './insight-slugs.mjs';
 
 /**
  * Detect the active locale from a URL pathname.
@@ -61,6 +62,7 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
     '/insights': '/decryptages',
     '/contact': '/nous-contacter',
     '/thank-you': '/merci',
+    '/privacy-policy': '/politique-de-confidentialite',
   },
 };
 
@@ -69,11 +71,13 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
  * brand or content slug that stays identical across locales (e.g. case study
  * URLs under /work and /fr/nos-realisations). Listing the prefix here lets the
  * language switcher round-trip the full path without enumerating every leaf.
+ *
+ * Note: /insights/ is NOT in this map because each FR insight has a fully
+ * native French slug. Insight pairs are resolved via `insightSlugFrToEn` below.
  */
 const prefixMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>> = {
   fr: {
     '/work/': '/nos-realisations/',
-    '/insights/': '/decryptages/',
   },
 };
 
@@ -107,6 +111,12 @@ function toCanonical(path: string): string | null {
   const stripped = parts.length === 1 ? '/' : '/' + parts.slice(1).join('/');
   if (sourceLocale === defaultLocale) return stripped;
   if (stripped === '/') return '/';
+  // FR insight reverse lookup: /fr/decryptages/<fr-slug> -> /insights/<en-slug>
+  if (sourceLocale === 'fr' && stripped.startsWith('/decryptages/')) {
+    const frSlug = stripped.slice('/decryptages/'.length);
+    const enSlug = insightFrToEn[frSlug];
+    if (enSlug) return `/insights/${enSlug}`;
+  }
   const reverse = reverseSlugMap[sourceLocale as Exclude<Locale, typeof defaultLocale>];
   const direct = reverse?.[stripped];
   if (direct) return direct;
@@ -142,6 +152,12 @@ export function localizePath(path: string, locale: Locale): string {
   const map = slugMap[locale as Exclude<Locale, typeof defaultLocale>];
   const translated = map?.[canonical];
   if (translated) return `/${locale}${translated}`;
+  // FR insight forward lookup: /insights/<en-slug> -> /fr/decryptages/<fr-slug>
+  if (locale === 'fr' && canonical.startsWith('/insights/')) {
+    const enSlug = canonical.slice('/insights/'.length);
+    const frSlug = insightEnToFr[enSlug];
+    if (frSlug) return `/fr/decryptages/${frSlug}`;
+  }
   const prefixes = prefixMap[locale as Exclude<Locale, typeof defaultLocale>];
   if (prefixes) {
     for (const [en, native] of Object.entries(prefixes)) {

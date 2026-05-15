@@ -5,6 +5,12 @@ pubDate: "2025-11-14"
 author: "Beyond Border Group"
 category: "E-Commerce"
 tags: ["Double 11", "e-commerce", "China retail", "consumer behavior", "GMV"]
+keyTakeaways:
+  - "Double 11 2025 GMV reached roughly 1.7 trillion RMB, up from 1.44 trillion the year before. The headline grew. The growth rate slowed."
+  - "The festival now stretches five weeks. Pre-pre-sale, deposit windows, coupon stacking. Shoppers turned pro before brands did."
+  - "Major platforms have stopped publishing a single Double 11 GMV figure. The metric itself has become a political risk."
+  - "Brands raise list prices ahead of the festival just to discount back. Margin compresses, consumer trust erodes, no one wins."
+  - "Double 11 still works as a launch window for new products. As a quarterly growth engine, it is finished."
 heroImage: "/Images/insights/double-11-2025-the-end-of-chinas-shopping-wars.png"
 heroImageAlt: "Screenshot showing Double 11 2025 shopping festival data"
 legacyUrl: "https://beyondbordergroup.com/double-11-2025-the-end-of-chinas-shopping-wars/"
