@@ -30,7 +30,7 @@ export const localeNamesNative: Record<Locale, string> = {
 export const ui = {
   en: {
     // Layout / meta
-    'site.title': 'BeyondBorderGroup | China Market Entry, eCommerce & Distribution',
+    'site.title': 'Beyond Border Group | China Market Entry, eCommerce & Distribution',
     'site.description':
       'We help global brands enter China, grow sales on Tmall, JD, Douyin, WeChat and RED, and find the right distributor. Shanghai, Hong Kong, Paris.',
     'skipLink': 'Skip to content',
@@ -122,7 +122,7 @@ export const ui = {
 
   fr: {
     // Layout / meta
-    'site.title': 'BeyondBorderGroup | Implantation, e-commerce et distribution en Chine',
+    'site.title': 'Beyond Border Group | Implantation, e-commerce et distribution en Chine',
     'site.description':
       "Nous accompagnons les marques internationales en Chine : implantation, ventes sur Tmall, JD, Douyin, WeChat et RED, choix du distributeur. Shanghai, Hong Kong, Paris.",
     'skipLink': 'Aller au contenu',

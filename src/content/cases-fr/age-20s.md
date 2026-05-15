@@ -2,6 +2,7 @@
 brand: "Age 20's"
 title: "Little Milk Brick Cushion : la campagne de lancement social et eCommerce"
 summary: "Lancement séquencé sur Xiaohongshu et Douyin du nouveau cushion d'Age 20's. Les objectifs d'impressions ont été dépassés de 287 %, et le packaging est devenu le surnom collectif du produit."
+metric: "Impressions Douyin : +287 % vs objectif. 750k de reach Xiaohongshu sur une cible de 300k."
 category: "Social & Content"
 services:
   - "Campagne"

@@ -50,7 +50,7 @@ const services = [
 ---
 
 <Layout
-  title="Enter China | BeyondBorderGroup"
+  title="Enter China | Beyond Border Group"
   description="Market entry consulting, branding and localisation, cross-border eCommerce setup, and distribution. Four ways into China, run by one team."
 >
 
@@ -82,6 +82,36 @@ const services = [
           <a class="btn btn--ghost-light" href="#services">See the four services</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  {/* ---------- PROOF STRIP ---------- */}
+  <section class="section section--tight enter-proof">
+    <div class="container">
+      <div class="enter-proof__intro">
+        <span class="eyebrow">Brands we have brought into China</span>
+        <p class="enter-proof__pitch">
+          Three weeks of market and regulatory diagnosis. Channel selection. Distributor shortlist or cross-border setup. We phase commitments so you only buy the next step.
+        </p>
+      </div>
+      <ul class="enter-proof__strip" role="list">
+        <li class="enter-proof__card">
+          <img src="/Images/Clients%20Logos/Marriot.png" alt="Marriott" width="160" height="60" loading="lazy" />
+          <p class="enter-proof__metric">Eight-figure RMB GMV on Tmall Super Brand Day</p>
+        </li>
+        <li class="enter-proof__card">
+          <img src="/Images/Clients%20Logos/camper_black.png" alt="Camper" width="160" height="60" loading="lazy" />
+          <p class="enter-proof__metric">+330% audience growth on WeChat, Weibo and RED</p>
+        </li>
+        <li class="enter-proof__card">
+          <img src="/Images/Clients%20Logos/Valio.png" alt="Valio" width="160" height="60" loading="lazy" />
+          <p class="enter-proof__metric">Sub-brand eila launched with localised name and full visual identity</p>
+        </li>
+        <li class="enter-proof__card">
+          <img src="/Images/Clients%20Logos/pierre-black.png" alt="Pierre Fabre" width="160" height="60" loading="lazy" />
+          <p class="enter-proof__metric">Leadership masterclass and the 3D Digital Growth Model</p>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -337,5 +367,58 @@ const services = [
     .enter-tile__arrow {
       transition: none !important;
     }
+  }
+
+  /* ---------- Proof strip ---------- */
+  .enter-proof {
+    padding-block: var(--space-7);
+    background: var(--bbg-surface);
+  }
+  .enter-proof__intro {
+    max-width: 720px;
+    margin: 0 auto var(--space-6);
+    text-align: center;
+  }
+  .enter-proof__pitch {
+    margin-top: var(--space-3);
+    font-size: 1.05rem;
+    color: var(--bbg-text);
+    line-height: 1.55;
+  }
+  .enter-proof__strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .enter-proof__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: var(--space-5) var(--space-4);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  .enter-proof__card img {
+    height: 36px;
+    width: auto;
+    max-width: 140px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  .enter-proof__metric {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--bbg-ink);
+    font-weight: 500;
+  }
+  @media (max-width: 900px) {
+    .enter-proof__strip { grid-template-columns: repeat(2, 1fr); }
   }
 </style>

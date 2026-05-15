@@ -1,7 +1,8 @@
 ---
 brand: "Marriott Hotel"
 title: "Social, eCommerce et plan média pour le Super Brand Day"
-summary: "Dispositif intégré pour le Super Brand Day de Tmall : célébrité, KOL et activations terrain conjugués pour générer plusieurs millions de yuans de ventes et autant d'inscriptions au programme de fidélité."
+summary: "Dispositif intégré pour le Super Brand Day de Tmall : célébrité, KOL et activations terrain conjugués pour générer un GMV à huit chiffres en RMB et des inscriptions Bonvoy par centaines de milliers en vingt-quatre heures."
+metric: "GMV à huit chiffres en RMB sur le Super Brand Day Tmall. Inscriptions Bonvoy à six chiffres en 24 h."
 category: "eCommerce"
 services:
   - "Social"
@@ -44,4 +45,4 @@ Chaque livrable a été pensé pour le contexte Tmall, depuis la hiérarchie cr�
 
 ## Résultats
 
-La campagne a généré plusieurs millions de yuans de ventes sur Tmall le jour du Super Brand Day, recruté des centaines de milliers de nouveaux membres Bonvoy et offert au groupe un net gain d'image auprès des voyageurs chinois aisés. Un format devenu référence pour les prochains rendez-vous Marriott sur Alibaba.
+La campagne signe un GMV à huit chiffres en RMB sur Tmall le jour du Super Brand Day, et une vague d'adhésions Bonvoy à six chiffres en vingt-quatre heures. La carte noire part en sell-out avant la fin de la journée. Le suivi de marque post-opération confirme un gain mesurable sur la considération et la disposition à payer chez les voyageurs chinois aisés. Le dispositif devient le format de référence pour les prochains rendez-vous Marriott chez Alibaba.

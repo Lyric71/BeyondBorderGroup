@@ -84,6 +84,9 @@ const counts = categoryOrder
               <span class="work-card__tag">{c.data.category}</span>
               <h3 class="work-card__title">{c.data.brand}</h3>
               <p class="work-card__summary">{c.data.title}</p>
+              {c.data.metric && (
+                <p class="work-card__metric">{c.data.metric}</p>
+              )}
               {c.data.services.length > 0 && (
                 <ul class="work-card__services" aria-label="Services">
                   {c.data.services.slice(0, 4).map((s) => <li>{s}</li>)}

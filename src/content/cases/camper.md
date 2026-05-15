@@ -2,6 +2,7 @@
 brand: "Camper"
 title: "Building a design-driven community on Chinese social media"
 summary: "Growing Camper's WeChat, Weibo, and RedNote presence by over 330% through craft-led storytelling, design partnerships, and micro-influencers."
+metric: "Combined followers from 43k to 187k. RedNote drove 38% of eCommerce traffic."
 category: "Social & Content"
 services:
   - "Brand Experience"

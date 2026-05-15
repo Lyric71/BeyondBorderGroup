@@ -23,14 +23,37 @@ const {
   category,
   tags,
   author,
+  keyTakeaways,
 } = post.data;
 
-const KNOWN_AUTHORS: Record<string, { url: string }> = {
-  'Cyril Drouin': { url: '/fr/qui-nous-sommes#cyril-drouin' },
-  'Echo Peng': { url: '/fr/qui-nous-sommes#echo-peng' },
-  'Liyan Ye': { url: '/fr/qui-nous-sommes#liyan-ye' },
+interface AuthorInfo {
+  url: string;
+  role: string;
+  photo: string;
+  linkedin: string;
+}
+const KNOWN_AUTHORS: Record<string, AuthorInfo> = {
+  'Cyril Drouin': {
+    url: '/fr/qui-nous-sommes#cyril-drouin',
+    role: 'Fondateur et président',
+    photo: '/Images/team/cyril-drouin.jpg',
+    linkedin: 'https://www.linkedin.com/in/cyril-d-68835729/',
+  },
+  'Echo Peng': {
+    url: '/fr/qui-nous-sommes#echo-peng',
+    role: 'Directrice senior et partenaire',
+    photo: '/Images/team/echo-peng.jpg',
+    linkedin: 'https://www.linkedin.com/in/echo-peng/',
+  },
+  'Liyan Ye': {
+    url: '/fr/qui-nous-sommes#liyan-ye',
+    role: 'Directrice senior',
+    photo: '/Images/team/liyan-ye.jpg',
+    linkedin: 'https://www.linkedin.com/in/liyan-ye/',
+  },
 };
-const authorLink = KNOWN_AUTHORS[author]?.url;
+const authorInfo: AuthorInfo | undefined = KNOWN_AUTHORS[author];
+const authorLink = authorInfo?.url;
 
 const articleJsonLd = articleSchema({
   url: `/fr/decryptages/${post.id}`,
@@ -110,6 +133,21 @@ const categoryLabel = categoryLabelsFr[category] ?? category;
           <span aria-hidden="true">·</span>
           <span>{readingTime(post.body)}</span>
         </div>
+
+        {authorInfo && (
+          <aside class="author-card" aria-label="À propos de l'auteur">
+            <a href={authorInfo.url} class="author-card__photo">
+              <img src={authorInfo.photo} alt={author} width="80" height="80" loading="lazy" />
+            </a>
+            <div class="author-card__body">
+              <a href={authorInfo.url} class="author-card__name">{author}</a>
+              <span class="author-card__role">{authorInfo.role}, Beyond Border Group</span>
+              <a href={authorInfo.linkedin} class="author-card__linkedin" target="_blank" rel="noopener">
+                LinkedIn <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </aside>
+        )}
       </div>
     </header>
 
@@ -130,6 +168,14 @@ const categoryLabel = categoryLabelsFr[category] ?? category;
 
     <div class="insight-article__body">
       <div class="container container--narrow">
+        {keyTakeaways && keyTakeaways.length > 0 && (
+          <aside class="insight-article__takeaways" aria-label="À retenir">
+            <span class="eyebrow">À retenir</span>
+            <ul>
+              {keyTakeaways.map((t) => <li>{t}</li>)}
+            </ul>
+          </aside>
+        )}
         <div class="prose">
           <Content />
         </div>
@@ -362,6 +408,30 @@ const categoryLabel = categoryLabelsFr[category] ?? category;
       padding: 0;
       color: inherit;
     }
+
+    .insight-article__takeaways {
+      margin-bottom: var(--space-6);
+      padding: var(--space-5) var(--space-5);
+      background: var(--bbg-blue-light);
+      border-left: 4px solid var(--bbg-blue);
+      border-radius: var(--radius-md);
+    }
+    .insight-article__takeaways .eyebrow {
+      display: block;
+      margin-bottom: var(--space-3);
+      color: var(--bbg-blue-dark);
+    }
+    .insight-article__takeaways ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+      margin: 0;
+    }
+    .insight-article__takeaways li {
+      margin-bottom: var(--space-2);
+      line-height: 1.5;
+      color: var(--bbg-ink);
+    }
+    .insight-article__takeaways li:last-child { margin-bottom: 0; }
 
     .insight-article__tags {
       margin-top: var(--space-7);

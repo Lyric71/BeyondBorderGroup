@@ -138,4 +138,4 @@ The ones who stay balanced usually have three things:
 - Clear, creative, and experienced territories for China
 - A map of real platform journeys, so content follows how people actually move from seeing to buying
 
-This is where BeyondBorderGroup works with teams, connecting a protected core to a Chinese expression that can stretch without losing itself.
+This is where Beyond Border Group works with teams, connecting a protected core to a Chinese expression that can stretch without losing itself.

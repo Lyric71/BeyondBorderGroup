@@ -32,6 +32,8 @@ const insightSchema = z.object({
   category: z.enum(INSIGHT_CATEGORIES),
   platforms: z.array(z.enum(INSIGHT_PLATFORMS)).default([]),
   tags: z.array(z.string()).default([]),
+  /** Short bullet list rendered above the article body. AI engines extract these. */
+  keyTakeaways: z.array(z.string()).default([]),
   heroImage: z.string(),
   heroImageAlt: z.string().default(''),
   legacyUrl: z.string().optional(),
@@ -61,6 +63,8 @@ const caseSchema = z.object({
     'Training',
   ]),
   services: z.array(z.string()).default([]),
+  /** Short outcome line shown on /work cards. Specific numbers preferred. */
+  metric: z.string().optional(),
   heroImage: z.string(),
   heroImageAlt: z.string().default(''),
   images: z

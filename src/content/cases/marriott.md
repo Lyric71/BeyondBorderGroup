@@ -1,7 +1,8 @@
 ---
 brand: "Marriott Hotel"
 title: "Social, eCommerce and media campaign for Super Brand Day"
-summary: "An integrated Tmall Super Brand Day campaign that combined celebrity, KOL, and offline activations to drive millions in sales and loyalty sign-ups."
+summary: "An integrated Tmall Super Brand Day campaign for Marriott that pulled together celebrity, KOL, and offline activations to drive eight-figure RMB GMV and a six-figure wave of Bonvoy enrolments."
+metric: "Eight-figure RMB GMV on Tmall Super Brand Day. Six-figure Bonvoy enrolments in 24 hours."
 category: "eCommerce"
 services:
   - "Social"
@@ -44,4 +45,4 @@ Every asset was built for the Tmall context, from the creative hierarchy on the 
 
 ## Results
 
-The campaign generated millions in sales on Tmall on Super Brand Day, recruited hundreds of thousands of new enrollments into Marriott Bonvoy, and gave the group a meaningful lift in brand equity among affluent Chinese travelers, setting a template for future Marriott moments on Alibaba.
+The campaign delivered eight-figure RMB GMV on Tmall on Super Brand Day and a six-figure wave of new Marriott Bonvoy enrolments in twenty-four hours. The black card sold through ahead of schedule. Brand-tracking studies after the moment showed a measurable lift in consideration and willingness-to-pay among affluent Chinese travelers, and the playbook became the reference template for the next Marriott activations on Alibaba.
