@@ -7,7 +7,6 @@ category: "Brand & Localization"
 tags: ["nom chinois", "localisation de marque", "e-commerce en Chine", "adaptation culturelle", "protection de marque"]
 heroImage: "/Images/insights/best-practices-for-finding-a-chinese-name-for-a-brand-in-china.jpg"
 heroImageAlt: "Exemple de stratégie de marque Coca-Cola pour le marché chinois"
-legacyUrl: "https://beyondbordergroup.com/best-practices-for-finding-a-chinese-name-for-a-brand-in-china/"
 ---
 
 ## Comprendre le terrain culturel et linguistique

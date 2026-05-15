@@ -2,12 +2,18 @@
 title: "When PIPL Bites: Dior's Wake-Up Call for Global Brands in China"
 description: "China's Personal Information Protection Law (PIPL) enforcement has shifted from theoretical to real. Dior's recent prosecution marks the first formal punishment of a foreign brand, signaling that data protection compliance is now critical for global brands operating in China."
 pubDate: "2025-11-26"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "Compliance & Setup"
 tags: ["PIPL", "data protection", "China regulations", "Dior", "global brands"]
 heroImage: "/Images/insights/pipl-compliance-in-china-diors-wake-up-call-for-global-brands.png"
 heroImageAlt: "PIPL compliance article cover image"
 legacyUrl: "https://beyondbordergroup.com/pipl-compliance-in-china-diors-wake-up-call-for-global-brands/"
+keyTakeaways:
+  - "PIPL is no longer a paper risk. CAC enforcement against Dior signals the start of real fines for cross-border data handling."
+  - "Consent flows that pass under GDPR-style frameworks do not cover PIPL's separate-consent rules for sensitive data."
+  - "Most foreign brands sit on marketing stacks (Salesforce, HubSpot, Adobe) hosted overseas with Chinese consumer data flowing through them. That is the exposure."
+  - "China-first stack design (regional instance, local data residency, separate consent) is now table stakes for any brand running a Tmall or WeChat flagship."
 ---
 
 ## When PIPL Bites: Dior's Wake-Up Call for Global Brands in China

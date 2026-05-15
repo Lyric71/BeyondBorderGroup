@@ -399,12 +399,17 @@ export default defineConfig({
         const enPath = canonicalize(path);
         const frPath = enToFr(enPath);
         if (!enPath) return item;
+        // Match the canonical URL convention from Layout.astro: no trailing
+        // slash except root. The sitemap <loc> and xhtml:link href must agree
+        // so Google does not see them as different URLs.
         const enHref = SITE + (enPath === '/' ? '' : enPath);
         const frHref = frPath ? SITE + frPath : null;
         const links = [{ lang: 'en', url: enHref }];
         if (frHref) links.push({ lang: 'fr', url: frHref });
         links.push({ lang: 'x-default', url: enHref });
-        return { ...item, links };
+        // Normalize the page URL itself to match the canonical convention.
+        const currentLocaleHref = path.startsWith('/fr') ? frHref : enHref;
+        return { ...item, url: currentLocaleHref ?? item.url, links };
       },
     }),
   ],

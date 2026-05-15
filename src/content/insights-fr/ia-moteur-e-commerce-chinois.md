@@ -7,7 +7,6 @@ category: "AI & Innovation"
 tags: ["IA", "e-commerce", "Chine", "personnalisation", "humains numériques"]
 heroImage: "/Images/insights/ai-revolutionizing-ecommerce-in-china.png"
 heroImageAlt: "Visuels de produits Taobao générés par IA"
-legacyUrl: "https://beyondbordergroup.com/ai-revolutionizing-ecommerce-in-china/"
 ---
 
 ## L'IA, nouveau moteur de l'e-commerce chinois

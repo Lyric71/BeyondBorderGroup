@@ -8,7 +8,6 @@ platforms: ["WeChat"]
 tags: ["CRM", "entrée de marché Chine", "WeChat", "gestion de la relation client", "e-commerce"]
 heroImage: "/Images/insights/best-practices-to-launch-a-crm-program-in-china.jpeg"
 heroImageAlt: "Vue rapprochée d'une main qui choisit un cube en bois marqué CRM"
-legacyUrl: "https://beyondbordergroup.com/best-practices-to-launch-a-crm-program-in-china/"
 ---
 
 ## Pourquoi le CRM pèse autant sur le marché chinois

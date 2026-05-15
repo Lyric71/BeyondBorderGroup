@@ -8,7 +8,6 @@ platforms: ["Tmall"]
 tags: ["Tmall", "e-commerce", "marketing Chine", "coûts publicitaires", "stratégie de marque"]
 heroImage: "/Images/insights/ultimate-guide-to-tmall-media-costs-in-china.jpg"
 heroImageAlt: "Tmall, coûts média et investissement de marque en Chine"
-legacyUrl: "https://beyondbordergroup.com/ultimate-guide-to-tmall-media-costs-in-china/"
 ---
 
 ## Le poids de Tmall dans le e-commerce chinois

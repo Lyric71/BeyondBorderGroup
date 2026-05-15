@@ -8,7 +8,6 @@ platforms: ["Taobao"]
 tags: ["Xianyu", "Alibaba", "side hustles", "e-commerce Chine", "jeunes entrepreneurs"]
 heroImage: "/Images/insights/how-xianyu-powers-young-entrepreneurs-side-hustles-in-china.jpeg"
 heroImageAlt: "Source : China Daily"
-legacyUrl: "https://beyondbordergroup.com/how-xianyu-powers-young-entrepreneurs-side-hustles-in-china/"
 ---
 
 ## Xianyu, plateforme refuge des side hustles de la jeunesse chinoise

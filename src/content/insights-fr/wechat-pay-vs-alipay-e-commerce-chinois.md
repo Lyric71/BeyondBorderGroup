@@ -2,13 +2,13 @@
 title: "WeChat Pay et Alipay : quelle solution retenir pour le e-commerce chinois"
 description: "Un milliard d'utilisateurs pour WeChat Pay, 652 millions pour Alipay. Deux logiques opposées sous la même promesse sans cash. Décryptage à l'usage des marques qui montent leur passerelle de paiement."
 pubDate: "2024-07-24"
+updatedDate: "2026-05-15"
 author: "Beyond Border Group"
 category: "Platforms"
 platforms: ["WeChat", "Alipay"]
 tags: ["WeChat Pay", "Alipay", "paiement mobile", "e-commerce Chine", "intégration paiement"]
 heroImage: "/Images/insights/wechat-pay-vs-alipay-best-mobile-payment-for-ecommerce.jpg"
 heroImageAlt: "WeChat Pay et Alipay, comparaison des solutions de paiement mobile chinoises"
-legacyUrl: "https://beyondbordergroup.com/wechat-pay-vs-alipay-best-mobile-payment-for-ecommerce/"
 ---
 
 ## La Chine, société sans espèces

@@ -2,6 +2,7 @@
 brand: "Shiseido RQ Pyology"
 title: "Brand launch campaign in China"
 summary: "Built a high-end dermo-cosmetic brand from the ground up for Shiseido, with positioning, identity, packaging and launch activation in China."
+metric: "New dermo-cosmetic brand built end to end for Shiseido, from positioning to packaging."
 category: "Brand & Design"
 services:
   - "Brand Experience"

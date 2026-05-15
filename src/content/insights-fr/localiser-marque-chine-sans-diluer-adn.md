@@ -2,12 +2,17 @@
 title: "Localiser une marque en Chine sans diluer son ADN"
 description: "La qualité ne suffit plus en Chine. Les marques étrangères doivent désormais conjuguer localisation profonde et identité forte. Pertinence culturelle et maîtrise des plateformes sont devenues les vrais critères de différenciation."
 pubDate: "2025-11-19"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Liyan Ye"
 category: "Brand & Localization"
 tags: ["stratégie de marque", "entrée sur le marché chinois", "adaptation culturelle", "e-commerce", "commerce digital"]
 heroImage: "/Images/insights/brand-localization-for-china-without-losing-your-dna.png"
 heroImageAlt: "Illustration du concept de localisation de marque"
-legacyUrl: "https://beyondbordergroup.com/brand-localization-for-china-without-losing-your-dna/"
+keyTakeaways:
+  - "La qualité est désormais un acquis en Chine. Les marques étrangères ne touchent plus la prime du « venu d'ailleurs ». La pertinence fait le travail."
+  - "Trois couches : le noyau non négociable, l'espace de design Chine, l'exécution native plateforme. Si l'ordre se brouille, la marque se dilue."
+  - "Apple garde son langage visuel mais cale ses moments sur les rythmes chinois. Coca-Cola garde le rouge mais c'est son nom chinois Kěkǒukělè qui fait le travail culturel."
+  - "Traduire un site web n'est pas une localisation. Le vrai travail consiste à reconstruire la manière dont la marque vit dans la boucle contenu-commerce chinoise."
 ---
 
 ## La donne a changé

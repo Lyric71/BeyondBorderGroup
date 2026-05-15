@@ -8,7 +8,6 @@ platforms: ["WeChat"]
 tags: ["WeChat Channels", "social commerce Chine", "e-commerce chinois", "live streaming", "marketing KOL"]
 heroImage: "/Images/insights/the-ultimate-guide-to-wechat-channels-for-brands.jpg"
 heroImageAlt: "Interface WeChat Channels avec contenu vidéo et photo"
-legacyUrl: "https://beyondbordergroup.com/the-ultimate-guide-to-wechat-channels-for-brands/"
 ---
 
 ## WeChat Channels, place forte du social commerce chinois

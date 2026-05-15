@@ -2,6 +2,7 @@
 title: "Navigating Cross-Border Commerce Livestreaming: Insights from Beyond Border Group's CEO Cyril Drouin"
 description: "CEO Cyril Drouin discusses live broadcast commerce, brand localization, KOLs, and cross-border eCommerce challenges. He shares insights on the differences between China's transactional livestream economy and Western markets."
 pubDate: "2024-11-05"
+updatedDate: "2026-05-15"
 author: "Cyril Drouin"
 category: "KOLs & Livestream"
 tags: ["cross-border eCommerce", "live commerce", "brand localization", "KOLs", "China expansion"]

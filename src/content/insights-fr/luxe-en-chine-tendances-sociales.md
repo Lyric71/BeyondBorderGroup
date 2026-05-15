@@ -8,7 +8,6 @@ platforms: ["WeChat"]
 tags: ["marques de luxe", "marketing social media", "marché chinois", "KOLs", "stratégie omnicanale"]
 heroImage: "/Images/insights/luxury-brand-trends-mastering-social-media-in-china.jpg"
 heroImageAlt: "Shopping de luxe et réseaux sociaux"
-legacyUrl: "https://beyondbordergroup.com/luxury-brand-trends-mastering-social-media-in-china/"
 ---
 
 ## Une consommation de luxe géographiquement concentrée

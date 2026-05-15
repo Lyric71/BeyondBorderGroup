@@ -7,7 +7,6 @@ category: "Brand & Localization"
 tags: ["créateurs chinois", "tendances mode", "durabilité", "innovation digitale", "e-commerce Chine"]
 heroImage: "/Images/insights/independent-chinese-designers-2024-trends-marketing-and-commerce-insights.jpeg"
 heroImageAlt: "Source : China Daily"
-legacyUrl: "https://beyondbordergroup.com/independent-chinese-designers-2024-trends-marketing-and-commerce-insights/"
 ---
 
 ## Créateurs chinois indépendants : la nouvelle donne mode et business en 2024

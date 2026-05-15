@@ -2,12 +2,17 @@
 title: "La Chine n'est plus un marché unique : le pari local supplante le plan national"
 description: "Face au ralentissement et à la montée des marques domestiques, les groupes internationaux doivent troquer le plan national contre une stratégie ville par ville, calibrée sur les bassins de consommation."
 pubDate: "2026-01-06"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "Market Strategy"
 tags: ["stratégie marché Chine", "localisation", "marketing par ville", "comportement consommateur", "approche portefeuille"]
 heroImage: "/Images/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans.png"
 heroImageAlt: "Cartographie d'une stratégie de localisation par bassin urbain"
-legacyUrl: "https://beyondbordergroup.com/china-is-no-longer-one-market-why-local-bets-beat-national-plans/"
+keyTakeaways:
+  - "Le playbook national ne fonctionne plus. Croissance qui ralentit, consommateurs plus prudents, marques chinoises plus fortes : le SKU phare plus la célébrité unique n'imprime plus."
+  - "La fierté domestique a basculé la beauté, les EV et le sportswear. Le logo étranger seul ne tire plus le premium."
+  - "La bonne question n'est plus « Comment gagner la Chine ? » mais « Où méritons-nous de compter, et pourquoi ? »"
+  - "Trois régions, trois moments de catégorie. Vraiment financés. Le reste du pays touche la distribution, pas le budget."
 ---
 
 Les opérateurs sur le terrain font le même constat. L'ancien manuel de croissance a vécu.

@@ -8,7 +8,6 @@ platforms: ["Douyin"]
 tags: ["marketing KOL", "Douyin", "coûts des influenceurs", "e-commerce chinois", "campagnes livestream"]
 heroImage: "/Images/insights/the-cost-of-chinese-kols-case-studies-and-marketing-insights.jpg"
 heroImageAlt: "Visuel de couverture pour l'article sur le marketing KOL"
-legacyUrl: "https://beyondbordergroup.com/the-cost-of-chinese-kols-case-studies-and-marketing-insights/"
 ---
 
 ## Les KOL, colonne vertébrale du marketing digital chinois

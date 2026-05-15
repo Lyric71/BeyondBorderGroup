@@ -7,7 +7,6 @@ category: "Market Strategy"
 tags: ["voyageurs chinois haut de gamme", "préférences de voyage", "consommateurs aisés", "voyage expérientiel", "sensibilité culturelle"]
 heroImage: "/Images/insights/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers.jpg"
 heroImageAlt: "Voyageur chinois haut de gamme sur une destination prestige"
-legacyUrl: "https://beyondbordergroup.com/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers/"
 ---
 
 ## Lire le voyageur chinois haut de gamme

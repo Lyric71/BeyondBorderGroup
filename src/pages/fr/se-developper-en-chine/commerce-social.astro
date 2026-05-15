@@ -909,6 +909,42 @@ const serviceJsonLd = {
       </div>
     </section>
 
+    {/* ---------- PREUVE : Camper mini-case ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <article class="cbs-proof cbs-reveal" data-reveal>
+          <div class="cbs-proof__head">
+            <span class="eyebrow">Réalisation récente</span>
+            <h2>À quoi ressemble ce dispositif en mode opérationnel.</h2>
+            <p class="cbs-proof__lead">
+              Dix-huit mois sur WeChat, Weibo et Xiaohongshu pour Camper. Storytelling
+              centré sur le savoir-faire, partenariats design, roster serré de
+              micro-influenceurs. Les ventes retail en villes de premier rang ont suivi
+              la croissance de l'audience.
+            </p>
+          </div>
+          <ul class="cbs-proof__stats" role="list">
+            <li>
+              <span class="cbs-proof__num">43k → 187k</span>
+              <span class="cbs-proof__label">Abonnés cumulés sur trois plateformes</span>
+            </li>
+            <li>
+              <span class="cbs-proof__num">+330 %</span>
+              <span class="cbs-proof__label">Croissance d'audience sur WeChat, Weibo, RED</span>
+            </li>
+            <li>
+              <span class="cbs-proof__num">38 %</span>
+              <span class="cbs-proof__label">Du trafic eCommerce vient de RED seul</span>
+            </li>
+          </ul>
+          <div class="cbs-proof__cta">
+            <a href="/fr/nos-realisations/camper" class="btn btn--secondary">Lire l'étude Camper</a>
+            <a href="/fr/nos-realisations" class="btn btn--ghost btn--sm">Toutes nos réalisations</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     {/* ---------- FAQ ---------- */}
     <section id="faq" class="section">
       <div class="container container--narrow">
@@ -1884,6 +1920,66 @@ const serviceJsonLd = {
     }
     .cbs-faq__q-text { flex-grow: 1; }
     .cbs-faq__item.is-hidden { display: none; }
+
+    /* ---------- PROOF: Camper mini-case ---------- */
+    .cbs-proof {
+      padding: clamp(var(--space-6), 3vw + 1rem, var(--space-8));
+      background: var(--bbg-surface);
+      border: 1px solid var(--bbg-border);
+      border-left: 6px solid var(--bbg-blue);
+      border-radius: var(--radius-md);
+    }
+    .cbs-proof__head .eyebrow { color: var(--bbg-blue-dark); }
+    .cbs-proof__head h2 {
+      font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+      line-height: 1.2;
+      margin: var(--space-3) 0 var(--space-3);
+      color: var(--bbg-ink);
+    }
+    .cbs-proof__lead {
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      max-width: 60ch;
+    }
+    .cbs-proof__stats {
+      list-style: none;
+      padding: 0;
+      margin: var(--space-6) 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    .cbs-proof__stats li {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: var(--space-4) var(--space-4);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-sm);
+    }
+    .cbs-proof__num {
+      font-size: clamp(1.25rem, 1vw + 1rem, 1.625rem);
+      font-weight: 700;
+      color: var(--bbg-blue-dark);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+    .cbs-proof__label {
+      font-size: 0.85rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.4;
+    }
+    .cbs-proof__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      align-items: center;
+    }
+    @media (max-width: 720px) {
+      .cbs-proof__stats { grid-template-columns: 1fr; }
+    }
 
     /* ---------- FINAL CTA ---------- */
     .cbs-cta {

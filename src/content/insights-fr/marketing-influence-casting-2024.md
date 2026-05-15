@@ -7,7 +7,6 @@ category: "KOLs & Livestream"
 tags: ["marketing d'influence", "réseaux sociaux", "stratégie de marque", "KOL", "engagement"]
 heroImage: "/Images/insights/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china.jpg"
 heroImageAlt: "Femme professionnelle souriant face caméra"
-legacyUrl: "https://beyondbordergroup.com/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china/"
 ---
 
 Le [marketing d'influence](/fr/se-developper-en-chine/influence-et-kol) pèse aujourd'hui plus lourd qu'un budget télé chez la plupart des annonceurs consumer. Instagram a posé les rails, TikTok a accéléré, et le casting décide désormais de tout. Trouver les créateurs qui amplifient la portée, déclenchent l'engagement, prolongent la conversation. Tout l'enjeu : la cohérence entre les profils retenus et l'ADN de la marque.

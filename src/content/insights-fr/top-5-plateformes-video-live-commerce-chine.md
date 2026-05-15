@@ -8,7 +8,6 @@ platforms: ["Douyin", "Taobao"]
 tags: ["live streaming", "e-commerce", "Douyin", "Taobao Live", "marketing en Chine"]
 heroImage: "/Images/insights/top-5-video-and-livestreaming-platforms-in-china.jpg"
 heroImageAlt: "Création de contenu vidéo et live streaming"
-legacyUrl: "https://beyondbordergroup.com/top-5-video-and-livestreaming-platforms-in-china/"
 ---
 
 ## La trajectoire fulgurante du live commerce chinois

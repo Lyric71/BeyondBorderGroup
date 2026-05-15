@@ -2,6 +2,7 @@
 brand: "Bassetti"
 title: "WordPress et Elementor derrière le pare-feu : la migration du site Bassetti vers la Chine"
 summary: "Site chinois dédié pour Bassetti, sous WordPress et Elementor, repensé pour l'hébergement local, la conformité ICP et la performance dans l'internet chinois."
+metric: "Bassetti.cn relancé sur WordPress hébergé en Chine, avec licence ICP et performances locales."
 category: "Website"
 services:
   - "Design"

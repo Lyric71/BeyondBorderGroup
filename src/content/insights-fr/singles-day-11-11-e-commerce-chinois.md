@@ -8,7 +8,6 @@ platforms: ["Tmall"]
 tags: ["Festival 11.11", "e-commerce en Chine", "marketing KOL", "Tmall", "social commerce"]
 heroImage: "/Images/insights/11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event.jpg"
 heroImageAlt: "Visuel promotionnel du festival shopping 11.11"
-legacyUrl: "https://beyondbordergroup.com/11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event/"
 ---
 
 ## Le phénomène 11.11 dans l'e-commerce chinois

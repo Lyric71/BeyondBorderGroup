@@ -7,7 +7,6 @@ category: "AI & Innovation"
 tags: ["PC dopés à l'IA", "marché chinois", "stratégie marketing", "pédagogie client", "positionnement produit"]
 heroImage: "/Images/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china.jpg"
 heroImageAlt: "Poste de travail professionnel équipé de matériel informatique moderne"
-legacyUrl: "https://beyondbordergroup.com/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china/"
 ---
 
 Lenovo, Huawei et Asus poussent depuis l'an dernier des PC à processeur neuronal dans leurs vitrines pékinoises. L'informatique personnelle chinoise bascule. La machine ne calcule plus, elle anticipe. Et toute la filière, des fondeurs aux vendeurs en boutique, doit réapprendre son métier.

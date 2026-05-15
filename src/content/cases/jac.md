@@ -2,6 +2,7 @@
 brand: "JAC"
 title: "Global assets production, pixel perfect"
 summary: "A full production of more than 250 exterior and interior vehicle images for JAC's new EV, built for pixel perfect use across global partner and reseller networks."
+metric: "250+ exterior and interior EV images produced for global reseller and partner use."
 category: "Brand & Design"
 services:
   - "Brand Experience"

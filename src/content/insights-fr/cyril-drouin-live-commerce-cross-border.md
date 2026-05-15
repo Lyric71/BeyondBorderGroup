@@ -2,12 +2,12 @@
 title: "Live commerce et cross-border : l'analyse de Cyril Drouin, CEO de Beyond Border Group"
 description: "Cyril Drouin décrypte le live commerce, la localisation, les KOL et ce qui sépare l'économie chinoise du livestream des marchés occidentaux."
 pubDate: "2024-11-05"
+updatedDate: "2026-05-15"
 author: "Cyril Drouin"
 category: "KOLs & Livestream"
 tags: ["e-commerce transfrontalier", "live commerce", "localisation de marque", "KOL", "expansion en Chine"]
 heroImage: "/Images/insights/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin.jpg"
 heroImageAlt: "Cyril Drouin, CEO de Beyond Border Group"
-legacyUrl: "https://beyondbordergroup.com/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin/"
 ---
 
 ## Cyril Drouin, CEO de Beyond Border Group, est intervenu le mois dernier à la conférence MCN International de Shanghai. Live commerce, localisation, KOL, frontières du commerce transfrontalier : extraits de l'entretien.

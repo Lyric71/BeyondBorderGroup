@@ -2607,7 +2607,10 @@ const contextCards = [
       border-color: var(--bbg-white);
       color: var(--bbg-white);
     }
-    @media (max-width: 720px) {
+    @media (max-width: 1024px) {
+      .dis-compass__stats { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
       .dis-compass__stats { grid-template-columns: 1fr; gap: var(--space-4); }
     }
 
@@ -2763,6 +2766,9 @@ const contextCards = [
       margin-top: auto;
     }
     @media (max-width: 1024px) {
+      .dis-compass-tiers { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
       .dis-compass-tiers { grid-template-columns: 1fr; }
     }
 

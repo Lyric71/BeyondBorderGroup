@@ -2,12 +2,18 @@
 title: "China's Biggest E-Commerce Festival Goes Back to Old Media"
 description: "Double 11, China's dominant shopping festival, is adopting television-style formats including galas, comedy sketches, and variety shows to rebuild consumer trust amid a market of increasingly sophisticated retail-savvy shoppers."
 pubDate: "2025-11-14"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "E-Commerce"
 tags: ["Double 11", "e-commerce", "China retail", "consumer trust", "marketing strategy"]
 heroImage: "/Images/insights/double-11-2025-old-media-strategy-china-ecommerce.png"
 heroImageAlt: "Promotional image for the 17th Double 11 shopping festival"
 legacyUrl: "https://beyondbordergroup.com/double-11-2025-old-media-strategy-china-ecommerce/"
+keyTakeaways:
+  - "Variety-show galas, comedy sketches, and outdoor brand boards are back at Double 11. Not nostalgia. A way to cut through scroll fatigue."
+  - "Platforms need a shared moment again. Tab takeovers and stacked coupons stopped making 11.11 feel like an event."
+  - "Owning the jokes before consumers do means brands sit at the centre of the cultural noise, not at the edge."
+  - "TV-era formats now run on digital rails: galas livestream, sketches loop on Douyin, OOH gets a Xiaohongshu kicker."
 ---
 
 ## Why a digital-native festival is borrowing TV-era humour to reconnect with retail-pro shoppers. This is not nostalgia. It is a strategy.

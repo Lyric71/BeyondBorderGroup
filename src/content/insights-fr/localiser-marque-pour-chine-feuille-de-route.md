@@ -7,7 +7,6 @@ category: "Brand & Localization"
 tags: ["entrée sur le marché chinois", "localisation de marque", "adaptation culturelle", "consommateurs chinois", "stratégie de marché"]
 heroImage: "/Images/insights/how-to-localize-a-brand-for-china.png"
 heroImageAlt: "Concept d'internationalisation de marque"
-legacyUrl: "https://beyondbordergroup.com/how-to-localize-a-brand-for-china/"
 ---
 
 ## Localiser une marque pour la Chine : feuille de route opérationnelle

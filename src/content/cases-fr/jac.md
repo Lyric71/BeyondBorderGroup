@@ -2,6 +2,7 @@
 brand: "JAC"
 title: "Production d'assets globaux, au pixel près"
 summary: "Production intégrale de plus de 250 visuels extérieurs et intérieurs pour le nouveau véhicule électrique de JAC, livrés au pixel près pour ses réseaux internationaux de partenaires et de revendeurs."
+metric: "Plus de 250 visuels EV (extérieurs et intérieurs) produits pour les revendeurs et partenaires mondiaux."
 category: "Brand & Design"
 services:
   - "Expérience de marque"

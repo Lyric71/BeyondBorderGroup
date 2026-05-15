@@ -2676,11 +2676,18 @@ const icons: Record<string, string> = {
     /* Responsive */
     @media (max-width: 1024px) {
       .lcp-trs__diptych { grid-template-columns: 1fr; }
+      .lcp-trs__pillars { grid-template-columns: repeat(2, 1fr); }
+      .lcp-trs__stats { grid-template-columns: repeat(2, 1fr); }
+      .lcp-trs__stat {
+        padding: var(--space-3) var(--space-4);
+        border-right: 0;
+      }
+    }
+    @media (max-width: 640px) {
       .lcp-trs__pillars { grid-template-columns: 1fr; }
       .lcp-trs__stats { grid-template-columns: 1fr; }
       .lcp-trs__stat {
         padding: var(--space-3) 0;
-        border-right: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       }
       .lcp-trs__stat:last-child { border-bottom: 0; }

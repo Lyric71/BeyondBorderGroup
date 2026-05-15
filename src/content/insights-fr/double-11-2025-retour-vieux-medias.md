@@ -2,12 +2,17 @@
 title: "Le premier festival e-commerce chinois renoue avec les vieux médias"
 description: "Le Double 11, navire amiral du commerce chinois, adopte les codes de la télévision : galas, sketches, variétés. Réponse calibrée à des consommateurs devenus experts du retail."
 pubDate: "2025-11-14"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "E-Commerce"
 tags: ["Double 11", "e-commerce", "retail Chine", "confiance consommateur", "stratégie marketing"]
 heroImage: "/Images/insights/double-11-2025-old-media-strategy-china-ecommerce.png"
 heroImageAlt: "Affiche promotionnelle de la 17e édition du festival Double 11"
-legacyUrl: "https://beyondbordergroup.com/double-11-2025-old-media-strategy-china-ecommerce/"
+keyTakeaways:
+  - "Galas façon variété, sketches comiques, panneaux OOH : tout cela revient au Double 11. Pas par nostalgie. Pour percer la fatigue du scroll."
+  - "Les plateformes ont besoin d'un moment partagé à nouveau. Tab takeover et empilage de coupons ne suffisaient plus à faire du 11.11 un événement."
+  - "Saisir les blagues avant que les consommateurs ne le fassent place les marques au centre du bruit culturel, pas en lisière."
+  - "Les formats télé tournent désormais sur des rails digitaux : galas en livestream, sketches qui bouclent sur Douyin, affichage OOH avec une relance sur Xiaohongshu."
 ---
 
 ## Quand un festival né du digital ressort la grammaire du prime time pour parler à des acheteurs aguerris. La nostalgie n'a rien à voir. C'est une stratégie.

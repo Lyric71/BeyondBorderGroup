@@ -2,6 +2,7 @@
 brand: "Jaguar Land Rover"
 title: "Annual social media integrated marketing services"
 summary: "Year-round integrated social program for Jaguar Land Rover in China, engaging younger audiences through iconic content and UGC."
+metric: "Year-round social programme with a measurable lift in engagement and a young Chinese fan community."
 category: "Social & Content"
 services:
   - "Campaign"

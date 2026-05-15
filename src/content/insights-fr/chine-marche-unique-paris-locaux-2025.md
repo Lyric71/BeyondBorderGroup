@@ -1,12 +1,16 @@
 ---
 title: "La Chine n'est plus un marché unique : les paris locaux battent les plans nationaux"
 description: "Croissance ralentie, consommateurs plus prudents, concurrence locale plus rude. Le vieux playbook national ne tient plus. Les marques qui gagnent ne cherchent plus à couvrir la Chine. Elles choisissent où mériter de compter."
-author: "Beyond Border Group"
+author: "Cyril Drouin"
 category: "Market Strategy"
 tags: ["stratégie marché Chine", "localisation", "comportement consommateur", "approche portefeuille", "clusters de villes"]
 heroImage: "/Images/insights/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025.png"
 heroImageAlt: "Visualisation de la stratégie de localisation"
-legacyUrl: "https://beyondbordergroup.com/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025/"
+keyTakeaways:
+  - "Passez d'une localisation symbolique à des choix structurels : où s'installer, avec quel assortiment, à quel prix."
+  - "Une stratégie régionale bat un plan national parce que les acheteurs de tier 1, new tier 1 et new-new tier 1 ne se comportent plus pareil."
+  - "Les clusters de KOL locaux convertissent dans des villes où les célébrités nationales ne suffisent plus."
+  - "Testez les nouvelles catégories sur 2 régions et 6 mois, pas en lancement national. Décidez sur les chiffres, pas à l'instinct."
 ---
 
 ## La Chine n'est plus un marché unique : les paris locaux battent les plans nationaux

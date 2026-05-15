@@ -7,7 +7,6 @@ category: "Brand & Localization"
 tags: ["localisation de site web", "entrée sur le marché chinois", "conformité réglementaire", "ecommerce", "stratégie digitale"]
 heroImage: "/Images/insights/how-to-localize-your-website-for-china-tips-for-global-marketers.jpg"
 heroImageAlt: "Design et localisation d'un site web chinois"
-legacyUrl: "https://beyondbordergroup.com/how-to-localize-your-website-for-china-tips-for-global-marketers/"
 ---
 
 ## Pourquoi localiser son site pour la Chine

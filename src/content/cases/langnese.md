@@ -2,6 +2,7 @@
 brand: "Langnese"
 title: "Reversing decline in China's honey market"
 summary: "A full rebuild of Langnese's China go-to-market, from distribution and formats to content, that reversed a long sales decline and opened new regional channels."
+metric: "Long-running sales decline reversed. New regional channels opened across China."
 category: "Distribution"
 services:
   - "Brand Strategy"

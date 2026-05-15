@@ -8,7 +8,6 @@ platforms: ["Taobao", "Tmall"]
 tags: ["Alibaba", "1688", "Taobao", "E-commerce", "B2B"]
 heroImage: "/Images/insights/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications.jpg"
 heroImageAlt: "Présentation de 1688.com"
-legacyUrl: "https://beyondbordergroup.com/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications/"
 ---
 
 ## 1688 plante son drapeau sur Taobao

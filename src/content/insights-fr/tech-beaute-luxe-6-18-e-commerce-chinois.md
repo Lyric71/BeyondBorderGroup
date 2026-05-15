@@ -8,7 +8,6 @@ platforms: ["Tmall", "JD"]
 tags: ["e-commerce Chine", "festival 6.18", "marques de luxe", "produits de beauté", "ventes tech"]
 heroImage: "/Images/insights/chinas-consumer-trends-in-tech-beauty-and-luxury-insights-from-6-18-sales.jpg"
 heroImageAlt: "Créatrice de contenu chinoise présentant une palette de fards à paupières"
-legacyUrl: "https://beyondbordergroup.com/chinas-consumer-trends-in-tech-beauty-and-luxury-insights-from-6-18-sales/"
 ---
 
 ## Un consommateur chinois en mouvement

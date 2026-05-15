@@ -2,13 +2,18 @@
 title: "11.11 2025 : du théâtre du GMV à la discipline de l'IA"
 description: "Le Double Eleven 2025 a tourné le dos au spectacle du GMV pour s'attaquer à l'efficacité opérationnelle. Systèmes IA, transparence des prix, fiabilité du service : les plateformes ont changé de feuille de route."
 pubDate: "2025-11-14"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "E-Commerce"
 platforms: ["Tmall", "Taobao", "Douyin"]
 tags: ["Double 11", "efficacité IA", "opérations e-commerce", "livestream commerce", "omnicanal"]
 heroImage: "/Images/insights/double-11-2025-ai-ecommerce-efficiency-china.jpg"
 heroImageAlt: "Pilotage opérationnel par IA durant le festival 11.11"
-legacyUrl: "https://beyondbordergroup.com/double-11-2025-ai-ecommerce-efficiency-china/"
+keyTakeaways:
+  - "Le Double 11 2025 se lit comme un test d'opérations, pas un test de GMV. Les plateformes ont discrètement enterré le chiffre unique."
+  - "L'IA orchestre désormais les promotions, le classement, la prévision et le dernier kilomètre. L'opérateur le plus fin l'emporte sur celui qui solde le plus dur."
+  - "Le débit créatif devient le goulot. Les marques qui sortent 50 variantes par campagne et vite battent celles qui brûlent quatre semaines sur un visuel hero."
+  - "Qualité de service, vitesse de livraison, taux de retour : voilà les KPI publics désormais. Construisez pour le 12 novembre, pas seulement pour le 11.11."
 ---
 
 ## L'examen de passage du 11.11 : du spectacle du GMV à la discipline de l'IA

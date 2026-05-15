@@ -7,7 +7,6 @@ category: "Brand & Localization"
 tags: ["marketing B2B", "storytelling", "marché chinois", "lien de marque", "engagement client"]
 heroImage: "/Images/insights/storytelling-in-b2b-marketing-enhancing-brand-connection-in-china.webp"
 heroImageAlt: "Storytelling B2B pour les marques en Chine"
-legacyUrl: "https://beyondbordergroup.com/storytelling-in-b2b-marketing-enhancing-brand-connection-in-china/"
 ---
 
 ## Le rôle du storytelling dans le marketing B2B en Chine

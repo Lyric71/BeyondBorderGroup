@@ -8,7 +8,6 @@ platforms: ["Taobao"]
 tags: ["entrepreneures", "e-commerce Chine", "Taobao", "plateformes numériques", "égalité femmes-hommes"]
 heroImage: "/Images/insights/empowering-women-in-chinas-digital-commerce-2024-trends.jpg"
 heroImageAlt: "Jeune entrepreneure asiatique au travail dans sa petite entreprise"
-legacyUrl: "https://beyondbordergroup.com/empowering-women-in-chinas-digital-commerce-2024-trends/"
 ---
 
 ## La poussée des entrepreneures sur le numérique chinois

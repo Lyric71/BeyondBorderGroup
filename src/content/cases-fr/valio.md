@@ -2,6 +2,7 @@
 brand: "Valio"
 title: "Des champs finlandais aux rayons chinois"
 summary: "Introduction de la sous-marque « eila » de Valio en Chine : positionnement concurrentiel, nom localisé et système d'identité visuelle complet, du logo au packaging."
+metric: "Sous-marque eila lancée avec nom chinois et système d'identité visuelle complet."
 category: "Brand & Design"
 services:
   - "Expérience de marque"

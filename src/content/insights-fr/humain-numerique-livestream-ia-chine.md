@@ -8,7 +8,6 @@ platforms: ["JD"]
 tags: ["avatars IA", "livestream commerce", "JD.com", "marketing digital", "e-commerce"]
 heroImage: "/Images/insights/digital-human-the-rise-of-ai-driven-live-streaming-in-china.webp"
 heroImageAlt: "Présentateurs virtuels animant un livestream commercial"
-legacyUrl: "https://beyondbordergroup.com/digital-human-the-rise-of-ai-driven-live-streaming-in-china/"
 ---
 
 ## Une audience captée en quelques minutes

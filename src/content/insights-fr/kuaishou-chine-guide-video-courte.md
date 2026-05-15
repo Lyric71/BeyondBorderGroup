@@ -8,7 +8,6 @@ platforms: ["Kuaishou"]
 tags: ["Kuaishou", "marketing vidéo courte", "e-commerce Chine", "live streaming", "social commerce"]
 heroImage: "/Images/insights/boost-your-brand-in-china-the-ultimate-kuaishou-short-video-marketing-guide.jpg"
 heroImageAlt: "Image de couverture Kuaishou"
-legacyUrl: "https://beyondbordergroup.com/boost-your-brand-in-china-the-ultimate-kuaishou-short-video-marketing-guide/"
 ---
 
 ## Comprendre l'audience singulière de Kuaishou

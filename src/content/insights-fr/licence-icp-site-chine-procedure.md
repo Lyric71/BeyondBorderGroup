@@ -7,7 +7,6 @@ category: "Compliance & Setup"
 tags: ["licence ICP", "réglementation Chine", "e-commerce", "hébergement de site", "exigences légales"]
 heroImage: "/Images/insights/how-to-apply-for-an-icp-license-for-your-website.png"
 heroImageAlt: "Illustration de la licence ICP"
-legacyUrl: "https://beyondbordergroup.com/how-to-apply-for-an-icp-license-for-your-website/"
 ---
 
 ## Licence ICP : la procédure pour exploiter légalement un site en Chine

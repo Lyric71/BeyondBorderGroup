@@ -238,10 +238,17 @@ const bgWords = [
     line-height: 1.5;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 1280px) {
+    .thanks { min-height: 70vh; }
+  }
+  @media (max-width: 768px) {
     .thanks { min-height: 0; padding-top: var(--space-7); padding-bottom: var(--space-7); }
     .thanks__cta { gap: var(--space-4); }
+  }
+  @media (max-width: 640px) {
+    .thanks { padding-top: var(--space-6); padding-bottom: var(--space-6); }
     .thanks__btn { width: 100%; min-width: 0; }
+    .thanks__ghost { width: 100%; text-align: center; }
   }
 
   @media (prefers-reduced-motion: reduce) {

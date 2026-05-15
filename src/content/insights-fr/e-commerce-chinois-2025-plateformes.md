@@ -2,13 +2,18 @@
 title: "E-commerce chinois 2025 : la carte des plateformes, et le retour du local"
 description: "Online et offline fusionnent désormais dans une même boucle opérationnelle. Chaque plateforme majeure capte une habitude de consommation précise et un segment du tunnel d'achat. Cartographie."
 pubDate: "2025-12-22"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "E-Commerce"
 platforms: ["Tmall", "Taobao", "Douyin"]
 tags: ["plateformes e-commerce", "retail Chine", "commerce instantané", "stratégie marketplace", "intégration plateformes"]
 heroImage: "/Images/insights/china-e-commerce-platforms-2025.png"
 heroImageAlt: "Vue d'ensemble des plateformes e-commerce chinoises"
-legacyUrl: "https://beyondbordergroup.com/china-e-commerce-platforms-2025/"
+keyTakeaways:
+  - "Le e-commerce chinois gagne par l'intégration, pas par la taille de l'audience. Les 1,12 milliard d'internautes pèsent moins que la manière dont Tmall, Douyin, JD et Xiaohongshu se passent le trafic."
+  - "Tmall et JD restent le socle de confiance. Douyin capte la découverte. Xiaohongshu capte la recherche. Pinduoduo capte le prix. Choisissez la bonne porte d'entrée, pas les quatre en parallèle."
+  - "Les marques étrangères budgètent encore Tmall comme un Amazon chinois. Le marché récompense une logique de portefeuille, pas un pari flagship unique."
+  - "Le cross-border achète de la vitesse, pas de la durée. Préparez un basculement en onshore sur 2 à 3 ans dès que l'économie de la catégorie le permet."
 ---
 
 ## Le marché chinois donne toujours le tempo. La raison tient à l'intégration, pas à la taille.

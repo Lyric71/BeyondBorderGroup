@@ -839,6 +839,25 @@ import Layout from '../../layouts/Layout.astro';
     .hub-panel { grid-template-columns: 1fr; }
     .hub-panel__visual { aspect-ratio: 16 / 10; }
   }
+  /* The page originally shipped with only the 1024 breakpoint above.
+     Type scale, hero stat and tab labels stayed at desktop sizes down
+     to 360px, overflowing the viewport. */
+  @media (max-width: 768px) {
+    .hub-editorial__title { font-size: clamp(2rem, 6vw + 0.5rem, 2.75rem); }
+    .hub-editorial__stat-value { font-size: clamp(3rem, 7vw + 0.5rem, 4.5rem); }
+    .hub-tabs__header { padding: var(--space-5) var(--space-5) 0; }
+    .hub-tabs__stage { padding: var(--space-4); min-height: 0; }
+    .hub-tab { grid-template-columns: 40px 1fr auto; padding: var(--space-3); }
+    .hub-tab__icon { width: 40px; height: 40px; }
+    .hub-tab__desc { display: none; }
+  }
+  @media (max-width: 560px) {
+    .hub-editorial__title { font-size: clamp(1.875rem, 6vw + 0.25rem, 2.25rem); }
+    .hub-editorial__stat-value { font-size: clamp(2.5rem, 8vw, 3.25rem); }
+    .hub-editorial__cta { padding: 10px 16px; font-size: 0.95rem; }
+    .hub-tabs__nav { padding: var(--space-3); }
+    .hub-tab__chev { display: none; }
+  }
 
   /* ---- Pull quote ---- */
   .hub-quote {

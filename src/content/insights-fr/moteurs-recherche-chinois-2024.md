@@ -7,7 +7,6 @@ category: "Platforms"
 tags: ["moteurs de recherche chinois", "Baidu", "SEO Chine", "marketing digital", "localisation"]
 heroImage: "/Images/insights/boost-your-marketing-with-the-best-chinese-search-engines-in-2024.png"
 heroImageAlt: "Moteur de recherche chinois"
-legacyUrl: "https://beyondbordergroup.com/boost-your-marketing-with-the-best-chinese-search-engines-in-2024/"
 ---
 
 ## Le marché des moteurs de recherche en Chine

@@ -8,7 +8,6 @@ platforms: ["Weibo"]
 tags: ["Weibo", "marketing Chine", "social commerce", "influence KOL", "e-commerce"]
 heroImage: "/Images/insights/weibo-marketing-guide-mastering-social-commerce-in-china.jpg"
 heroImageAlt: "Sina Weibo, plateforme sociale phare en Chine"
-legacyUrl: "https://beyondbordergroup.com/weibo-marketing-guide-mastering-social-commerce-in-china/"
 ---
 
 ## Le potentiel marketing de Weibo

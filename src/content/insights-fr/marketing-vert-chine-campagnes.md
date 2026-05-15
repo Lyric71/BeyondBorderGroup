@@ -7,7 +7,6 @@ category: "Brand & Localization"
 tags: ["marketing vert", "développement durable", "marques chinoises", "éco-responsabilité", "tendances consommation"]
 heroImage: "/Images/insights/green-marketing-in-china-how-brands-are-embracing-sustainability.jpg"
 heroImageAlt: "Agricultrice asiatique avec une tablette numérique dans un potager"
-legacyUrl: "https://beyondbordergroup.com/green-marketing-in-china-how-brands-are-embracing-sustainability/"
 ---
 
 ## Pourquoi le marketing vert pèse en Chine

@@ -7,7 +7,6 @@ category: "Market Strategy"
 tags: ["voyage de luxe chinois", "préférences consommateurs", "voyage expérientiel", "tourisme bien-être", "influence digitale"]
 heroImage: "/Images/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment.jpg"
 heroImageAlt: "Destination haut de gamme prisée par la clientèle chinoise"
-legacyUrl: "https://beyondbordergroup.com/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment/"
 ---
 
 ## La poussée du voyage de luxe chinois

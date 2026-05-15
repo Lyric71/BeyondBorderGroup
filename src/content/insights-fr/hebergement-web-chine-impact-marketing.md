@@ -7,7 +7,6 @@ category: "Compliance & Setup"
 tags: ["hébergement web", "Chine", "licence ICP", "enregistrement de domaine", "conformité numérique"]
 heroImage: "/Images/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact.jpg"
 heroImageAlt: "Différence entre hébergement et nom de domaine pour un site en Chine"
-legacyUrl: "https://beyondbordergroup.com/how-to-host-your-website-in-china-for-maximum-marketing-impact/"
 ---
 
 ## Hébergement web en Chine : la méthode pour un impact marketing maximal

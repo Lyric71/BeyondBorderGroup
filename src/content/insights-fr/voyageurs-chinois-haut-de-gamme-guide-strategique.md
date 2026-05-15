@@ -8,7 +8,6 @@ platforms: ["WeChat"]
 tags: ["voyageurs chinois haut de gamme", "immersion culturelle", "voyage sur mesure", "engagement digital", "marketing WeChat"]
 heroImage: "/Images/insights/top-digital-marketing-strategies-to-attract-chinese-luxury-travelers.jpg"
 heroImageAlt: "Paysage de destination de voyage de luxe"
-legacyUrl: "https://beyondbordergroup.com/top-digital-marketing-strategies-to-attract-chinese-luxury-travelers/"
 ---
 
 ## Voyageurs chinois haut de gamme : le guide stratégique pour les capter

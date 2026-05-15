@@ -2,12 +2,18 @@
 title: "China Is No Longer One Market: Why Local Bets Beat National Plans"
 description: "Global brands must shift from single national strategies to localized, city-level approaches to succeed in today's slower-growth Chinese market where domestic competition is stronger."
 pubDate: "2026-01-06"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "Market Strategy"
 tags: ["China market strategy", "localization", "city-level marketing", "consumer behavior", "portfolio approach"]
 heroImage: "/Images/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans.png"
 heroImageAlt: "Localization strategy visualization"
 legacyUrl: "https://beyondbordergroup.com/china-is-no-longer-one-market-why-local-bets-beat-national-plans/"
+keyTakeaways:
+  - "The national playbook is broken. Slower growth, cautious consumers, and stronger domestic competition mean one hero SKU plus one celebrity no longer scales."
+  - "Pride in domestic brands has flipped categories like EVs, beauty, and sportswear. Foreign logos alone no longer drive premium."
+  - "The right question is no longer 'How do we win China?'. It is 'Where do we deserve to matter, and why?'"
+  - "Pick three regions and three category occasions. Resource them properly. The rest of the country gets distribution, not investment."
 ---
 
 If you work with China day to day, you can feel it. The old growth [playbook](/work) is fading.

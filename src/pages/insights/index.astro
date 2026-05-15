@@ -504,6 +504,22 @@ const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >
       padding: var(--space-8) 0;
     }
 
+    @media (max-width: 1024px) {
+      .insights-intro { padding: var(--space-7) 0 var(--space-5); }
+      .insights-controls { margin-bottom: var(--space-6); }
+    }
+    @media (max-width: 768px) {
+      .insights-intro { padding: var(--space-6) 0 var(--space-4); }
+      .insights-intro h1 { max-width: 24ch; }
+      .insights-filter { justify-content: flex-start; }
+      .insights-platforms { justify-content: flex-start; gap: 0.4rem; }
+      .insights-sort { justify-content: flex-start; }
+      .insights-filter__btn { padding: 0.45rem 0.85rem; }
+    }
+    @media (max-width: 480px) {
+      .insights-filter__count,
+      .insights-platforms__count { display: none; }
+    }
   </style>
 
   <style is:global>

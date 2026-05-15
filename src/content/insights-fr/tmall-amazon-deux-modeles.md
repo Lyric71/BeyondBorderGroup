@@ -8,7 +8,6 @@ platforms: ["Tmall"]
 tags: ["Tmall", "Amazon", "e-commerce", "Chine", "B2C"]
 heroImage: "/Images/insights/a-comparison-between-tmall-and-amazon.png"
 heroImageAlt: "Article comparant Alibaba et Amazon"
-legacyUrl: "https://beyondbordergroup.com/a-comparison-between-tmall-and-amazon/"
 ---
 
 À l'arrivée, deux empires, deux logiques. [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier) règne sur le commerce premium chinois, Amazon mène la cadence ailleurs. Chacune avance ses atouts et défend un positionnement bien distinct.

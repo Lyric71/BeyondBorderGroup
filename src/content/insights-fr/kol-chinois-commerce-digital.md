@@ -8,7 +8,6 @@ platforms: ["Douyin", "Xiaohongshu"]
 tags: ["marketing KOL", "influenceurs chinois", "stratégie social media", "e-commerce", "Douyin"]
 heroImage: "/Images/insights/china-social-media-and-kol-strategies-for-ecommerce-brands.jpg"
 heroImageAlt: "Cartographie du marketing d'influence en Chine"
-legacyUrl: "https://beyondbordergroup.com/china-social-media-and-kol-strategies-for-ecommerce-brands/"
 ---
 
 ## Le rôle des KOL dans la décision d'achat des consommateurs chinois

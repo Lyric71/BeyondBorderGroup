@@ -2,12 +2,17 @@
 title: "Lois publicitaires chinoises : ce que les marques internationales doivent savoir"
 description: "Superlatifs interdits, secteurs sous tutelle, plateformes qui empilent leurs propres règles : la publicité en Chine impose un cadre dense. Tour d'horizon pour les marques internationales."
 pubDate: "2024-10-29"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "Compliance & Setup"
 tags: ["lois publicitaires", "e-commerce Chine", "conformité réglementaire", "marketing réseaux sociaux", "stratégie de marque"]
 heroImage: "/Images/insights/how-chinas-advertising-laws-impact-global-brands.jpg"
 heroImageAlt: "Lois publicitaires Chine"
-legacyUrl: "https://beyondbordergroup.com/how-chinas-advertising-laws-impact-global-brands/"
+keyTakeaways:
+  - "Trois régulateurs encadrent la publicité en Chine : SAMR (général), CAC (online et social), NRTA (broadcast et livestream). Une campagne cross-border tombe sous les trois."
+  - "Les termes absolus (meilleur, plus, le plus haut) exigent des preuves substantielles. Les revendications soin et compléments sont les plus rapidement signalées."
+  - "Santé, éducation, immobilier, alcool : règles sectorielles qui priment sur la loi générale. Adaptez la création par vertical, pas en horizontal."
+  - "Les workflows de pré-validation Tmall, JD, Douyin et WeChat se superposent par-dessus. Une ligne qui passe SAMR peut encore rebondir sur Douyin."
 ---
 
 ## Le paysage réglementaire de l'e-commerce chinois

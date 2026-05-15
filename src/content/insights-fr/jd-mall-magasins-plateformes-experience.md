@@ -2,13 +2,18 @@
 title: "JD Mall convertit ses magasins physiques en plateformes d'expérience"
 description: "Des enfants enfournent des cookies. Des parents testent des PlayStation. JD Mall redéfinit le commerce physique en lieu d'essai, une porte d'entrée inédite vers les acheteurs chinois des catégories à forte implication."
 pubDate: "2025-11-26"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "E-Commerce"
 platforms: ["JD"]
 tags: ["JD Mall", "retail expérientiel", "commerce physique", "e-commerce Chine", "expérience client"]
 heroImage: "/Images/insights/how-jd-mall-turns-offline-stores-into-experience-hubs.png"
 heroImageAlt: "Vitrine et intérieur d'un JD Mall"
-legacyUrl: "https://beyondbordergroup.com/how-jd-mall-turns-offline-stores-into-experience-hubs/"
+keyTakeaways:
+  - "JD Mall transforme l'électroménager en expérience à toucher. Les clients cuisinent, nettoient, testent, au lieu de regarder."
+  - "Stratégie des 5 km : chaque JD Mall fonctionne comme un hub de quartier, avec ateliers enfants, services mini-programme et événements le week-end."
+  - "Les vendeurs deviennent créateurs façon KOL. Beaucoup tiennent leur propre compte Xiaohongshu depuis le magasin, faisant des jours creux des journées de boutique virtuelle."
+  - "Les marques étrangères en électroménager, beauty tech et home ont besoin d'un plan JD Mall : démos en magasin, kits contenus pour les vendeurs, alignement de prix online-offline."
 ---
 
 ## JD convertit ses magasins physiques en plateformes d'expérience

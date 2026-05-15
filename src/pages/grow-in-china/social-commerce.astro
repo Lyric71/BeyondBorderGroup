@@ -909,6 +909,41 @@ const serviceJsonLd = {
       </div>
     </section>
 
+    {/* ---------- PROOF: Camper mini-case ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <article class="cbs-proof cbs-reveal" data-reveal>
+          <div class="cbs-proof__head">
+            <span class="eyebrow">Recent work</span>
+            <h2>What this looks like running for a brand.</h2>
+            <p class="cbs-proof__lead">
+              Eighteen months of WeChat, Weibo and RED for Camper. Craft-led storytelling,
+              design partnerships and a tight micro-influencer roster. Eight-figure RMB
+              retail in tier-one cities followed the audience growth.
+            </p>
+          </div>
+          <ul class="cbs-proof__stats" role="list">
+            <li>
+              <span class="cbs-proof__num">43k → 187k</span>
+              <span class="cbs-proof__label">Combined followers, three platforms</span>
+            </li>
+            <li>
+              <span class="cbs-proof__num">+330%</span>
+              <span class="cbs-proof__label">Audience growth across WeChat, Weibo, RED</span>
+            </li>
+            <li>
+              <span class="cbs-proof__num">38%</span>
+              <span class="cbs-proof__label">Of eCommerce traffic came from RED alone</span>
+            </li>
+          </ul>
+          <div class="cbs-proof__cta">
+            <a href="/work/camper" class="btn btn--secondary">Read the Camper case</a>
+            <a href="/work" class="btn btn--ghost btn--sm">See all case studies</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     {/* ---------- FAQ ---------- */}
     <section id="faq" class="section">
       <div class="container container--narrow">
@@ -1884,6 +1919,66 @@ const serviceJsonLd = {
     }
     .cbs-faq__q-text { flex-grow: 1; }
     .cbs-faq__item.is-hidden { display: none; }
+
+    /* ---------- PROOF: Camper mini-case ---------- */
+    .cbs-proof {
+      padding: clamp(var(--space-6), 3vw + 1rem, var(--space-8));
+      background: var(--bbg-surface);
+      border: 1px solid var(--bbg-border);
+      border-left: 6px solid var(--bbg-blue);
+      border-radius: var(--radius-md);
+    }
+    .cbs-proof__head .eyebrow { color: var(--bbg-blue-dark); }
+    .cbs-proof__head h2 {
+      font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+      line-height: 1.2;
+      margin: var(--space-3) 0 var(--space-3);
+      color: var(--bbg-ink);
+    }
+    .cbs-proof__lead {
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      max-width: 60ch;
+    }
+    .cbs-proof__stats {
+      list-style: none;
+      padding: 0;
+      margin: var(--space-6) 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    .cbs-proof__stats li {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: var(--space-4) var(--space-4);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-sm);
+    }
+    .cbs-proof__num {
+      font-size: clamp(1.25rem, 1vw + 1rem, 1.625rem);
+      font-weight: 700;
+      color: var(--bbg-blue-dark);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+    .cbs-proof__label {
+      font-size: 0.85rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.4;
+    }
+    .cbs-proof__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      align-items: center;
+    }
+    @media (max-width: 720px) {
+      .cbs-proof__stats { grid-template-columns: 1fr; }
+    }
 
     /* ---------- FINAL CTA ---------- */
     .cbs-cta {

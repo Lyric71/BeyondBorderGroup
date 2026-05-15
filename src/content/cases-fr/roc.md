@@ -2,6 +2,7 @@
 brand: "ROC Skincare"
 title: "Skincare premium, de la France à la Chine"
 summary: "Localisation d'une marque skincare dermo-cosmétique française d'héritage pour le consommateur chinois : récit de marque, naming, identité visuelle et guidelines packaging."
+metric: "Nom chinois, récit de marque et système d'identité visuelle complet livrés pour ROC dermo-cosmétique."
 category: "Brand & Design"
 services:
   - "Expérience de marque"

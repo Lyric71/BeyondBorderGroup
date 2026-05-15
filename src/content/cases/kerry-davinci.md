@@ -2,6 +2,7 @@
 brand: "Kerry Food, DaVinci Gourmet"
 title: "eCommerce for DaVinci Gourmet syrups, sauces and smoothies"
 summary: "Launched and ran Tmall and JD storefronts for DaVinci Gourmet in China, rebuilding brand presence, cleaning up pricing, and driving first-year revenue growth."
+metric: "Pricing disputes resolved in 3 months. Sales fraud eliminated in 6 months. Year-one online revenue growth."
 category: "eCommerce"
 services:
   - "Campaign"

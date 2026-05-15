@@ -2,13 +2,18 @@
 title: "Douyin live commerce en 2026 : les studios de marque relèguent les vedettes au second plan"
 description: "Sur Douyin, le livestream piloté depuis la boutique s'impose en 2026. Les marques reprennent la main face aux animateurs vedettes, durcissent leur conformité et installent une croissance reproductible."
 pubDate: "2026-01-06"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "KOLs & Livestream"
 platforms: ["Douyin"]
 tags: ["Douyin", "live commerce", "studios de marque", "e-commerce Chine", "stratégie livestream"]
 heroImage: "/Images/insights/douyin-live-commerce-2025-store-led-livestream-strategy.png"
 heroImageAlt: "Plateau de livestream e-commerce"
-legacyUrl: "https://beyondbordergroup.com/douyin-live-commerce-2025-store-led-livestream-strategy/"
+keyTakeaways:
+  - "Douyin ne se joue plus en livestream de célébrité. La croissance répétable vient de studios marque qui tournent comme des plateaux quotidiens."
+  - "Zara a fait tourner sur Douyin des shows hebdomadaires de plusieurs heures, puis a exporté le format ailleurs. Pensez live comme commerce permanent, pas comme événement campagne."
+  - "La stack publicitaire de Douyin se branche désormais directement sur les opérations e-commerce. Trafic payé et conversion magasin se pilotent ensemble."
+  - "Construisez un rythme : 3 à 5 lives par semaine, 10 à 15 vidéos courtes, un étage paid en dessous. La capitalisation tient au calendrier, pas au coup d'éclat."
 ---
 
 Douyin n'est plus la plateforme où l'on programme un gros [livestream](/fr/se-developper-en-chine/influence-et-kol) une fois par trimestre.

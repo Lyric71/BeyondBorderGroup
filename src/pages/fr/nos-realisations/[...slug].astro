@@ -1,6 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
+import { caseStudySchema } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const all = await getCollection('casesFr', ({ data }) => !data.draft);
@@ -28,11 +29,28 @@ const related = allCases
   .filter((c) => c.id !== entry.id && c.data.category === d.category)
   .sort((a, b) => a.data.order - b.data.order)
   .slice(0, 3);
+
+const caseJsonLd = caseStudySchema({
+  url: `/fr/nos-realisations/${entry.id}`,
+  name: `${d.brand} : ${d.title}`,
+  description: d.summary,
+  brand: d.brand,
+  image: d.heroImage,
+  inLanguage: 'fr',
+  breadcrumb: [
+    { name: 'Accueil', url: '/fr' },
+    { name: 'Nos réalisations', url: '/fr/nos-realisations' },
+    { name: d.brand, url: `/fr/nos-realisations/${entry.id}` },
+  ],
+});
 ---
 
 <Layout
   title={`${d.brand} : ${d.title} | Beyond Border Group`}
   description={d.summary}
+  schema={caseJsonLd}
+  ogImage={d.heroImage}
+  ogImageAlt={d.heroImageAlt || `Étude de cas ${d.brand}`}
 >
   <article class="case">
     {/* ---------- HERO ---------- */}

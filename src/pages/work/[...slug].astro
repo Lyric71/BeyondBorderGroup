@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
+import { caseStudySchema } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const all = await getCollection('cases', ({ data }) => !data.draft);
@@ -19,11 +20,28 @@ const related = allCases
   .filter((c) => c.id !== entry.id && c.data.category === d.category)
   .sort((a, b) => a.data.order - b.data.order)
   .slice(0, 3);
+
+const caseJsonLd = caseStudySchema({
+  url: `/work/${entry.id}`,
+  name: `${d.brand}: ${d.title}`,
+  description: d.summary,
+  brand: d.brand,
+  image: d.heroImage,
+  inLanguage: 'en',
+  breadcrumb: [
+    { name: 'Home', url: '/' },
+    { name: 'Our work', url: '/work' },
+    { name: d.brand, url: `/work/${entry.id}` },
+  ],
+});
 ---
 
 <Layout
   title={`${d.brand}: ${d.title} | Beyond Border Group`}
   description={d.summary}
+  schema={caseJsonLd}
+  ogImage={d.heroImage}
+  ogImageAlt={d.heroImageAlt || `${d.brand} case study`}
 >
   <article class="case">
     {/* ---------- HERO ---------- */}
@@ -152,10 +170,12 @@ const related = allCases
 
   <style is:global>
     /* ---------- CONTAINER MODIFIER ---------- */
+    /* The outer .container parent already supplies horizontal padding via
+       var(--container-pad). Re-padding here double-pads the content and
+       crushes the readable column on small viewports. */
     .container--narrow {
       max-width: 760px;
       margin-inline: auto;
-      padding-inline: var(--container-pad);
     }
 
     /* ---------- HERO ---------- */
@@ -519,6 +539,12 @@ const related = allCases
       .case-meta-wrap { margin-top: calc(var(--space-6) * -1); }
       .case-gallery__image { padding: var(--space-2); }
       .case-gallery__image img { max-height: 520px; }
+    }
+    @media (max-width: 768px) {
+      .case-hero__title { font-size: clamp(2.25rem, 6vw + 0.5rem, 3rem); }
+      .case-cta { padding: var(--space-6) var(--space-5); }
+      .case-gallery { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+      .case-gallery__image img { max-height: 420px; }
     }
     @media (max-width: 640px) {
       .case-intro__summary {

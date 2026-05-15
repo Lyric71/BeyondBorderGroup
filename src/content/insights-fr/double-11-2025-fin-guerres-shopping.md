@@ -2,6 +2,7 @@
 title: "Double 11 2025 : la fin des guerres du shopping chinoises"
 description: "Le Double 11 est passé d'un événement d'une journée à un marathon de cinq semaines. Croissance qui ralentit, confiance qui s'effrite, marges sous tension : l'acheteur opère désormais en gestionnaire."
 pubDate: "2025-11-14"
+updatedDate: "2026-05-15"
 author: "Beyond Border Group"
 category: "E-Commerce"
 tags: ["Double 11", "e-commerce", "retail Chine", "comportement consommateur", "GMV"]
@@ -13,7 +14,6 @@ keyTakeaways:
   - "Le Double 11 reste une fenêtre de lancement utile. Comme moteur de croissance trimestrielle, c'est terminé."
 heroImage: "/Images/insights/double-11-2025-the-end-of-chinas-shopping-wars.png"
 heroImageAlt: "Tableau de bord des données du festival Double 11 2025"
-legacyUrl: "https://beyondbordergroup.com/double-11-2025-the-end-of-chinas-shopping-wars/"
 ---
 
 ## Pourquoi le Double 11 a cessé de fonctionner et ce qu'il faut bâtir à la place

@@ -8,7 +8,6 @@ platforms: ["WeChat"]
 tags: ["WeChat", "QR codes", "marketing digital", "e-commerce", "paiements en Chine"]
 heroImage: "/Images/insights/the-power-of-wechat-qr-codes-for-businesses-in-china.jpg"
 heroImageAlt: "Exemple de QR code WeChat"
-legacyUrl: "https://beyondbordergroup.com/the-power-of-wechat-qr-codes-for-businesses-in-china/"
 ---
 
 Dans une Chine ultra-connectée, les QR codes [WeChat](/fr/se-developper-en-chine/commerce-social) rythment le quotidien. Le consommateur les scanne pour discuter, acheter, régler ses dépenses. 95,7 % des utilisateurs chinois du paiement mobile en passent par là. Plus une mode, un pilier. Le petit carré noir et blanc tient aujourd'hui une bonne part de l'infrastructure du marketing et du commerce contemporains.

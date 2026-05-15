@@ -263,14 +263,15 @@ const services = [
       grid-template-columns: 1fr;
     }
     .learn-tile {
-      min-height: 360px;
+      min-height: clamp(340px, 50vw, 420px);
       padding: 1.75rem;
     }
   }
 
   @media (max-width: 480px) {
     .learn-tile {
-      min-height: 340px;
+      min-height: 320px;
+      padding: 1.25rem;
     }
     .learn-tile__tagline {
       font-size: 0.95rem;

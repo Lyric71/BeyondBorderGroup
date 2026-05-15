@@ -8,7 +8,6 @@ platforms: ["Tmall", "JD", "Douyin"]
 tags: ["e-commerce", "Chine", "fêtes commerciales", "stratégie marketing", "commerce transfrontalier"]
 heroImage: "/Images/insights/top-e-commerce-events-in-china-2025-dates-and-marketing-tips.jpg"
 heroImageAlt: "Calendrier 2025 des fêtes chinoises"
-legacyUrl: "https://beyondbordergroup.com/top-e-commerce-events-in-china-2025-dates-and-marketing-tips/"
 ---
 
 ## Calendrier 2025 des grands rendez-vous e-commerce chinois

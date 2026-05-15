@@ -2,13 +2,18 @@
 title: "Taobao Instant Commerce : ce que la bascule change pour les marques non chinoises"
 description: "Alibaba range Double 11 au second plan, rebaptise Ele.me en Taobao Flash Sale et fait basculer la livraison instantanée au cœur du quotidien chinois. Lecture stratégique pour les marques étrangères."
 pubDate: "2025-11-21"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "E-Commerce"
 platforms: ["Taobao"]
 tags: ["Taobao", "Instant Commerce", "Alibaba", "e-commerce", "retail Chine"]
 heroImage: "/Images/insights/what-taobao-instant-commerce-means-for-non-chinese-brands.png"
 heroImageAlt: "Interface de Taobao Instant Commerce sur smartphone"
-legacyUrl: "https://beyondbordergroup.com/what-taobao-instant-commerce-means-for-non-chinese-brands/"
+keyTakeaways:
+  - "Alibaba fusionne Taobao et livraison instantanée. Taobao Flash Sale et Taobao Instant Commerce partagent désormais coursiers, magasins et porte d'entrée."
+  - "Le volume reste chez les acteurs locaux sur les catégories d'impulsion. La vitesse devient une norme dans les villes de premier rang, plus un bonus."
+  - "Les plateformes se spécialisent : Taobao tient la fréquence et la logistique, Douyin tient l'attention, JD s'appuie sur la confiance logistique."
+  - "Une marque cross-border pure n'a aucun intérêt à construire son propre réseau instantané. Partenariats tactiques, et protection de la communauté sur Douyin et Xiaohongshu."
 ---
 
 ## Taobao Instant Commerce : ce que la bascule change pour les marques non chinoises

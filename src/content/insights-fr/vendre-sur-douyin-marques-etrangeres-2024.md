@@ -8,7 +8,6 @@ platforms: ["Douyin"]
 tags: ["Douyin", "social commerce", "e-commerce chinois", "livestream", "marketing KOL"]
 heroImage: "/Images/insights/how-to-sell-on-douyin-boost-sales-with-effective-marketing-strategies.jpg"
 heroImageAlt: "Logo et interface de la plateforme Douyin"
-legacyUrl: "https://beyondbordergroup.com/how-to-sell-on-douyin-boost-sales-with-effective-marketing-strategies/"
 ---
 
 ## Pourquoi vendre sur Douyin

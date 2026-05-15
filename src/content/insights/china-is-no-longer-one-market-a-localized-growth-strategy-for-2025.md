@@ -1,12 +1,17 @@
 ---
 title: "China Is No Longer One Market: Why Local Bets Beat National Plans"
 description: "Chinese consumers are more deliberate and domestic competition stronger, making the old national playbook obsolete. Winning brands now ask where they deserve to matter locally rather than how to win all of China."
-author: "Beyond Border Group"
+author: "Cyril Drouin"
 category: "Market Strategy"
 tags: ["China market strategy", "localization", "consumer behavior", "portfolio approach", "city clusters"]
 heroImage: "/Images/insights/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025.png"
 heroImageAlt: "Localization strategy visualization"
 legacyUrl: "https://beyondbordergroup.com/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025/"
+keyTakeaways:
+  - "Move from symbolic localisation to structural choices: where to show up, with which assortment, at which price."
+  - "A regional growth strategy beats a national plan because tier 1, new tier 1, and new-new tier 1 shoppers behave nothing alike."
+  - "Local KOL clusters convert in cities where national celebrities barely register."
+  - "Test new categories with a 6-month budget on 2 regions, not a national splash. Decide based on category data, not gut."
 ---
 
 ## China Is No Longer One Market: Why Local Bets Beat National Plans

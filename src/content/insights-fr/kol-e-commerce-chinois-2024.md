@@ -8,7 +8,6 @@ platforms: ["Xiaohongshu", "Douyin"]
 tags: ["marketing KOL", "e-commerce Chine", "Xiaohongshu", "Douyin", "campagnes d'influence"]
 heroImage: "/Images/insights/top-ecommerce-influencers-in-china-2024.png"
 heroImageAlt: "Portraits des principaux KOL du e-commerce chinois en 2024"
-legacyUrl: "https://beyondbordergroup.com/top-ecommerce-influencers-in-china-2024/"
 ---
 
 ## Un marché en pleine ébullition

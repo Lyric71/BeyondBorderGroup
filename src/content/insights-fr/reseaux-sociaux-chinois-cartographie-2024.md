@@ -8,7 +8,6 @@ platforms: ["WeChat", "Douyin", "Xiaohongshu"]
 tags: ["WeChat", "Douyin", "réseaux sociaux chinois", "marketing d'influence", "e-commerce"]
 heroImage: "/Images/insights/top-chinese-social-media-platforms-for-2024-marketing.png"
 heroImageAlt: "Bannière des réseaux sociaux 2021"
-legacyUrl: "https://beyondbordergroup.com/top-chinese-social-media-platforms-for-2024-marketing/"
 ---
 
 ## Réseaux sociaux chinois : la cartographie 2024 pour les marques

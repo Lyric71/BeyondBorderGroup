@@ -8,7 +8,6 @@ platforms: ["Douyin", "Kuaishou"]
 tags: ["Douyin", "Kuaishou", "marketing vidéo courte", "live commerce", "e-commerce Chine"]
 heroImage: "/Images/insights/best-short-video-platforms-in-china.png"
 heroImageAlt: "Comparaison des plateformes Douyin et Kuaishou"
-legacyUrl: "https://beyondbordergroup.com/best-short-video-platforms-in-china/"
 ---
 
 ## Pourquoi la vidéo courte structure désormais le marketing chinois

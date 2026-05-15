@@ -7,7 +7,6 @@ category: "Brand & Localization"
 tags: ["UX design", "marchés chinois", "design web", "différences culturelles", "e-commerce"]
 heroImage: "/Images/insights/ux-design-for-global-markets-chinese-vs-western-approaches.jpg"
 heroImageAlt: "Composition digitale illustrant l'UX et la technologie"
-legacyUrl: "https://beyondbordergroup.com/ux-design-for-global-markets-chinese-vs-western-approaches/"
 ---
 
 ## Design UX en Chine et en Occident : deux écoles, deux logiques

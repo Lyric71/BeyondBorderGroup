@@ -8,7 +8,6 @@ platforms: ["Taobao", "Tmall"]
 tags: ["Taobao", "Tmall", "IA", "e-commerce chinois", "outillage marchand"]
 heroImage: "/Images/insights/taobao-transforming-shopping-and-merchant-support-with-ai-in-ecommerce-china.jpeg"
 heroImageAlt: "Alibaba annonce l'intégration de Taobao et Tmall"
-legacyUrl: "https://beyondbordergroup.com/taobao-transforming-shopping-and-merchant-support-with-ai-in-ecommerce-china/"
 ---
 
 ## Une expérience d'achat refondée

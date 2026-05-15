@@ -2,13 +2,19 @@
 title: "China E-Commerce 2025: The Platform Map, and Why Retail Is Going Local"
 description: "China's e-commerce market integrates online and offline into one operational loop across distinct platforms. Each major player owns different consumer habits and parts of the sales funnel."
 pubDate: "2025-12-22"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "E-Commerce"
 platforms: ["Tmall", "Taobao", "Douyin"]
 tags: ["e-commerce platforms", "China retail", "instant commerce", "marketplace strategy", "platform integration"]
 heroImage: "/Images/insights/china-e-commerce-platforms-2025.png"
 heroImageAlt: "China e-commerce platform overview illustration"
 legacyUrl: "https://beyondbordergroup.com/china-e-commerce-platforms-2025/"
+keyTakeaways:
+  - "China's eCommerce wins on integration, not user count. 1.12 billion internet users matter less than how Tmall, Douyin, JD and Xiaohongshu hand traffic to each other."
+  - "Tmall and JD remain the trust base. Douyin owns discovery. Xiaohongshu owns search. Pinduoduo owns price. Pick the right one to enter on, not all four at once."
+  - "Foreign brands still budget for Tmall the way Western retailers budget for Amazon. China rewards a portfolio approach, not a flagship-only bet."
+  - "Cross-border setup buys speed, not staying power. Plan for a 2 to 3 year shift to onshore once category economics make it pay."
 ---
 
 ## China's e-commerce market keeps setting the reference point. The reason is integration, not size.

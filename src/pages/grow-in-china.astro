@@ -428,12 +428,25 @@ const studios = [
   }
 
   /* ---------- Responsive ---------- */
+  /* At ≤1024 the 6-col bento collapses to 2-col. Wide and narrow pair
+     cleanly; three "third" tiles would orphan one card on its own row.
+     Make thirds span the full row so they each get a tidy full-width
+     tile (no orphan, no half-empty row). */
   @media (max-width: 1024px) {
     .grow-grid { grid-template-columns: repeat(2, 1fr); }
+    .grow-tile--narrow { grid-column: span 1; }
+    .grow-tile--wide,
+    .grow-tile--third { grid-column: span 2; }
     .grow-tile--wide,
     .grow-tile--narrow,
-    .grow-tile--third { grid-column: span 1; }
-    .grow-tile--wide { grid-column: span 2; }
+    .grow-tile--third { min-height: clamp(360px, 50vw, 440px); }
+  }
+  /* Collapse the studio + final CTA earlier than 1024 so the right
+     column doesn't squeeze under tablet portrait. */
+  @media (max-width: 900px) {
+    .studio-grid { grid-template-columns: 1fr; }
+    .grow-cta { grid-template-columns: 1fr; }
+    .grow-cta__actions { justify-content: flex-start; }
   }
 
   @media (max-width: 720px) {
@@ -441,9 +454,6 @@ const studios = [
     .grow-tile--wide,
     .grow-tile--narrow,
     .grow-tile--third { grid-column: span 1; min-height: 360px; }
-    .studio-grid { grid-template-columns: 1fr; }
-    .grow-cta { grid-template-columns: 1fr; }
-    .grow-cta__actions { justify-content: flex-start; }
   }
 
   @media (max-width: 480px) {

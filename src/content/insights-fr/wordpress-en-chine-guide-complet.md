@@ -7,7 +7,6 @@ category: "Compliance & Setup"
 tags: ["WordPress", "Chine", "hébergement web", "SEO", "e-commerce"]
 heroImage: "/Images/insights/ultimate-guide-to-using-wordpress-in-china.jpg"
 heroImageAlt: "Interface WordPress pour la création de sites en Chine"
-legacyUrl: "https://beyondbordergroup.com/ultimate-guide-to-using-wordpress-in-china/"
 ---
 
 ## Opérer un site WordPress en Chine : le guide complet

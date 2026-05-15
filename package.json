@@ -14,7 +14,9 @@
     "gen:edit": "node scripts/generate-image-edit.mjs",
     "img": "node scripts/optimize-image.mjs",
     "img:batch": "node scripts/optimize-images-batch.mjs",
-    "hooks:install": "node scripts/install-hooks.mjs"
+    "hooks:install": "node scripts/install-hooks.mjs",
+    "indexnow": "node scripts/submit-indexnow.mjs",
+    "llms:full": "node scripts/generate-llms-full.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",

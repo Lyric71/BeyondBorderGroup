@@ -8,7 +8,6 @@ platforms: ["Douyin", "Taobao"]
 tags: ["livestream", "e-commerce", "Chine", "KOLs", "marketing digital"]
 heroImage: "/Images/insights/best-practices-for-successful-e-commerce-livestreaming-in-china.jpg"
 heroImageAlt: "Plan moyen d'une influenceuse plus-size"
-legacyUrl: "https://beyondbordergroup.com/best-practices-for-successful-e-commerce-livestreaming-in-china/"
 ---
 
 ## Comprendre la montée du livestream e-commerce en Chine

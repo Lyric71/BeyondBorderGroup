@@ -8,7 +8,6 @@ platforms: ["WeChat", "Douyin"]
 tags: ["social commerce", "plateformes chinoises", "livestream", "KOL", "e-commerce"]
 heroImage: "/Images/insights/social-commerce-china-platforms-strategies-best-practices.jpg"
 heroImageAlt: "Visuel de couverture sur le social commerce en Chine"
-legacyUrl: "https://beyondbordergroup.com/social-commerce-china-platforms-strategies-best-practices/"
 ---
 
 ## Social commerce en Chine : plateformes, stratégies et impact sur le marché

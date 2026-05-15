@@ -2,12 +2,17 @@
 title: "PIPL : l'affaire Dior met les marques étrangères en alerte"
 description: "La sanction infligée à Dior, première frappe formelle contre une marque étrangère au titre du PIPL, change la doctrine. La conformité bascule au rang d'enjeu stratégique."
 pubDate: "2025-11-26"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "Compliance & Setup"
 tags: ["PIPL", "protection des données", "réglementation chinoise", "Dior", "marques internationales"]
 heroImage: "/Images/insights/pipl-compliance-in-china-diors-wake-up-call-for-global-brands.png"
 heroImageAlt: "Visuel de couverture sur la conformité PIPL"
-legacyUrl: "https://beyondbordergroup.com/pipl-compliance-in-china-diors-wake-up-call-for-global-brands/"
+keyTakeaways:
+  - "PIPL n'est plus un risque sur le papier. La sanction CAC contre Dior signale le début des amendes réelles sur le transfert transfrontalier de données."
+  - "Les parcours de consentement valables sous des cadres type RGPD ne couvrent pas la règle PIPL de consentement séparé pour les données sensibles."
+  - "La plupart des marques étrangères tournent sur des stacks marketing (Salesforce, HubSpot, Adobe) hébergés à l'étranger, traversés par des données de consommateurs chinois. C'est là que se loge l'exposition."
+  - "Stack China-first (instance régionale, résidence locale, consentement séparé) : c'est désormais le minimum pour toute marque qui opère un flagship Tmall ou WeChat."
 ---
 
 ## PIPL : l'affaire Dior met les marques étrangères en alerte

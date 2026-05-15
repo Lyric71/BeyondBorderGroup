@@ -8,7 +8,6 @@ platforms: ["WeChat", "Douyin", "Xiaohongshu"]
 tags: ["social commerce Chine", "plateformes e-commerce", "livestreaming", "marketing KOL", "WeChat"]
 heroImage: "/Images/insights/best-social-commerce-platforms-in-china-for-ecommerce-growth.jpeg"
 heroImageAlt: "Social e-commerce en Chine"
-legacyUrl: "https://beyondbordergroup.com/best-social-commerce-platforms-in-china-for-ecommerce-growth/"
 ---
 
 ## Le paysage du social commerce chinois

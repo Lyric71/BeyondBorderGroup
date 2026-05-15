@@ -2,6 +2,7 @@
 brand: "Master Martini"
 title: "Le partenaire des pâtissiers, chocolatiers et boulangers. Réseaux sociaux pour l'Asie du Sud-Est."
 summary: "Pilotage des comptes sociaux de Master Martini en Asie du Sud-Est, pour transformer boulangers et chefs professionnels en communauté engagée et instruite des produits."
+metric: "Communauté de boulangers professionnels bâtie sur les comptes sociaux Asie du Sud-Est."
 category: "Social & Content"
 services:
   - "Campagne"

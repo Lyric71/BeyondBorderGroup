@@ -2,6 +2,7 @@
 brand: "Viessmann"
 title: "Climate solutions: Tmall eCommerce in China for heating and boiling"
 summary: "End-to-end Tmall and JD operations for Viessmann's climate solutions, covering content, media, livestream, and service across the full online funnel."
+metric: "Tmall and JD storefronts run end to end for Viessmann's climate solutions: content, media, livestream, service."
 category: "eCommerce"
 services:
   - "Campaign"

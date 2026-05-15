@@ -216,5 +216,17 @@ const counts = categoryOrder
       color: var(--bbg-text-muted);
       padding: var(--space-8) 0;
     }
+
+    @media (max-width: 1024px) {
+      .work-intro { padding: var(--space-7) 0 var(--space-5); }
+    }
+    @media (max-width: 768px) {
+      .work-intro { padding: var(--space-6) 0 var(--space-4); }
+      .work-filter { justify-content: flex-start; margin-bottom: var(--space-6); }
+      .work-filter__btn { padding: 0.45rem 0.85rem; }
+    }
+    @media (max-width: 480px) {
+      .work-filter__count { display: none; }
+    }
   </style>
 </Layout>

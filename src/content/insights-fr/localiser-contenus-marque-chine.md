@@ -7,7 +7,6 @@ category: "Brand & Localization"
 tags: ["marketing en Chine", "localisation de contenus", "adaptation culturelle", "plateformes digitales", "e-commerce"]
 heroImage: "/Images/insights/how-to-localize-brand-content-for-china.jpg"
 heroImageAlt: "Drapeau chinois"
-legacyUrl: "https://beyondbordergroup.com/how-to-localize-brand-content-for-china/"
 ---
 
 ## Localiser ses contenus de marque pour la Chine

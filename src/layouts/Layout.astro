@@ -5,7 +5,7 @@ import Footer from '../components/Footer.astro';
 import SchemaGraph from '../components/SchemaGraph.astro';
 import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
 import { locales, defaultLocale } from '../i18n/ui';
-import { SITE_URL, organizationSchema, websiteSchema, schemaGraph } from '../lib/seo';
+import { SITE_URL, organizationSchema, websiteSchema, schemaGraph, getServicePageSchema } from '../lib/seo';
 
 interface Props {
 	title?: string;
@@ -84,12 +84,23 @@ if (!noAlternate) {
 }
 const enAlt = alternates.find((a) => a.code === 'en');
 
+// Auto-emit Service schema when the current path matches a known service
+// page AND no explicit schema is passed by the caller. Lets the 14 service
+// pages (EN + FR) inherit their Service node without per-page wiring.
+let autoSchema: Record<string, unknown> | null = null;
+if (!pageSchema) {
+	const enPath = localizePath(currentPath, defaultLocale);
+	autoSchema = getServicePageSchema(enPath, locale as 'en' | 'fr');
+}
+
 // Assemble the schema graph: site-wide entities + page-specific.
 const pageSchemaList = pageSchema
 	? Array.isArray(pageSchema)
 		? pageSchema
 		: [pageSchema]
-	: [];
+	: autoSchema
+		? [autoSchema]
+		: [];
 const graph = schemaGraph(organizationSchema(), websiteSchema(), ...pageSchemaList);
 ---
 

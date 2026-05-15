@@ -7,7 +7,6 @@ category: "E-Commerce"
 tags: ["distribution Chine", "entrée de marché", "logistique", "partenariats retail", "B2B"]
 heroImage: "/Images/insights/how-to-find-a-distributor-for-your-products-in-china-in-2024.png"
 heroImageAlt: "Image générique de remplacement"
-legacyUrl: "https://beyondbordergroup.com/how-to-find-a-distributor-for-your-products-in-china-in-2024/"
 ---
 
 ## Panorama de la distribution en Chine

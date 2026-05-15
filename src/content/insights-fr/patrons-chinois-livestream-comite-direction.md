@@ -7,7 +7,6 @@ category: "KOLs & Livestream"
 tags: ["livestream CEO", "marketing digital Chine", "engagement de marque", "livestream commerce", "réseaux sociaux corporate"]
 heroImage: "/Images/insights/transforming-brand-engagement-through-livestreaming-in-china.jpg"
 heroImageAlt: "Le PDG de NIO en livestream face à ses clients"
-legacyUrl: "https://beyondbordergroup.com/transforming-brand-engagement-through-livestreaming-in-china/"
 ---
 
 ## L'avènement du PDG livestreamer

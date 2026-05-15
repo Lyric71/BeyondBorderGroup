@@ -2,13 +2,19 @@
 title: "Douyin Live Commerce in 2025: Why Store-Led Rooms Beat Celebrity Events"
 description: "Store-led livestreaming has become the dominant strategy on Douyin in 2026, replacing reliance on celebrity hosts with merchant-controlled broadcasting that enables better compliance and repeatable growth."
 pubDate: "2026-01-06"
-author: "Beyond Border Group"
+updatedDate: "2026-05-15"
+author: "Cyril Drouin"
 category: "KOLs & Livestream"
 platforms: ["Douyin"]
 tags: ["Douyin", "live commerce", "store-led rooms", "China ecommerce", "livestream strategy"]
 heroImage: "/Images/insights/douyin-live-commerce-2025-store-led-livestream-strategy.png"
 heroImageAlt: "ecommerce livestream setup"
 legacyUrl: "https://beyondbordergroup.com/douyin-live-commerce-2025-store-led-livestream-strategy/"
+keyTakeaways:
+  - "Douyin is no longer a celebrity livestream play. Repeatable growth comes from store-led rooms that run like daily studios."
+  - "Zara built weekly multi-hour Douyin shows and exported the format to other markets. Treat live as always-on retail, not a campaign event."
+  - "Douyin's ad stack now plugs directly into commerce ops. Traffic spend and store conversion are managed together, not in separate dashboards."
+  - "Budget for a content rhythm: 3 to 5 live sessions per week, 10 to 15 short videos, a paid layer underneath. The compounding sits in the calendar, not in a hero moment."
 ---
 
 Douyin is no longer "a channel where you do a big [livestream](/grow-in-china/influencers-kols)."
