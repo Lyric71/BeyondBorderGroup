@@ -168,7 +168,7 @@ const enServiceRedirectPairs = [
  * French slugs at the root; the new site uses native French slugs under /fr/.
  */
 const frServiceRedirectPairs = [
-  ['/agence-marketing-et-ecommerce-en-chine-20-ans-dexperience', '/fr/'],
+  ['/agence-marketing-et-ecommerce-en-chine-20-ans-dexperience', '/fr'],
   ['/agence-marketing-chine-bonne-pratiques-et-analyses-digital-et-commerce', '/fr/decryptages'],
   ['/agence-marketing-digitale-media-et-ecommerce-en-chine', '/fr/se-developper-en-chine/medias'],
   ['/agence-de-relations-presse-en-chine-rp-medias', '/fr/se-developper-en-chine/medias'],
@@ -364,7 +364,10 @@ const frInsightSlugRenameRedirects = Object.fromEntries(
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.beyondbordergroup.com',
-  trailingSlash: 'ignore',
+  // 'never' makes Vercel strip trailing slashes from incoming requests before
+  // applying redirect rules. Without this, every legacy WP URL (all served
+  // with trailing slash) misses the path-level 301 and 404s on www.
+  trailingSlash: 'never',
 
   vite: {
     plugins: [tailwindcss()]
