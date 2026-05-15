@@ -14,13 +14,13 @@ legacyUrl: "https://beyondbordergroup.com/brand-localization-for-china-without-l
 
 For a long time, foreign brands stood for rarity and modern life. If it came from overseas, it felt a step ahead.
 
-As the middle class grew, global brands became shorthand for status and quality. Domestic brands were still catching up on product, design, and storytelling.
+As the middle class grew, [global brands](/enter-china/market-entry-consulting) became shorthand for status and quality. Domestic brands were still catching up on product, design, and storytelling.
 
 Today, Chinese brands have largely closed the quality gap and often move faster on culture and digital. Guochao has given local players a strong story, and Western brands have become one choice among many. Quality is assumed. Relevance comes from cultural fit and platform fluency.
 
 ## Why Localization Is A Must
 
-Two forces make deep localization essential in China.
+Two forces make deep [localization](/enter-china/branding-localisation) essential in China.
 
 **1. Quality is a starting line**
 

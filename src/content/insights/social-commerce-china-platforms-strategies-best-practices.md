@@ -13,7 +13,7 @@ legacyUrl: "https://beyondbordergroup.com/social-commerce-china-platforms-strate
 
 ## Exploring Social Commerce in China Platforms: Strategies and Market Impact
 
-Social commerce has revolutionized the way people shop online, particularly in China. This hybrid of social interaction and online shopping has created a vibrant ecosystem where consumers engage with brands, influencers, and each other in unprecedented ways. China's social commerce platforms, such as Xiaohongshu, WeChat, Douyin, Taobao, Pinduoduo, and Weibo, have been at the forefront of this transformation. These platforms use user-generated content, Key Opinion Leaders (KOLs), and innovative features like live streaming to create an engaging and dynamic shopping experience.
+[Social commerce](/grow-in-china/social-commerce) has revolutionized the way people shop online, particularly in China. This hybrid of social interaction and online shopping has created a vibrant ecosystem where consumers engage with brands, influencers, and each other in unprecedented ways. China's social commerce [platforms](/learn-china/platforms), such as Xiaohongshu, WeChat, Douyin, Taobao, Pinduoduo, and Weibo, have been at the forefront of this transformation. These platforms use user-generated content, Key Opinion Leaders (KOLs), and innovative features like live streaming to create an engaging and dynamic shopping experience.
 
 ## The Rise of Social Commerce in China
 
@@ -104,7 +104,7 @@ Weibo, often likened to Twitter, has successfully transitioned into a powerful s
 **Key Features of Weibo:**
 
 * Strong Presence: Weibo's longevity and adaptability have cemented its position as a major social media platform in China, appealing to a wide range of demographics.
-* KOL Marketing: The platform is ideal for finding and collaborating with KOLs, who can significantly boost brand visibility and sales through their influence.
+* [KOL](/grow-in-china/influencers-kols) Marketing: The platform is ideal for finding and collaborating with KOLs, who can significantly boost brand visibility and sales through their influence.
 * Smooth Communication: Weibo facilitates direct communication between brands and customers, enhancing engagement and customer service.
 * E-Commerce Management: Weibo Xiaodian allows brands to control their e-commerce operations within the platform, providing a smooth and integrated shopping experience for users.
 

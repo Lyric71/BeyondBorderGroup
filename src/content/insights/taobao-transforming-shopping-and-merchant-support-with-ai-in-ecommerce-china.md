@@ -15,11 +15,11 @@ legacyUrl: "https://beyondbordergroup.com/taobao-transforming-shopping-and-merch
 
 ### AI-Driven Personalization
 
-For years, Taobao and Tmall have utilized consumer insights and algorithms to offer personalized user interfaces and recommendations. Today, their AI capabilities have taken these efforts to new heights in eCommerce China.
+For years, [Taobao](/grow-in-china/cross-border-ecommerce) and Tmall have utilized consumer insights and algorithms to offer personalized user interfaces and recommendations. Today, their AI capabilities have taken these efforts to new heights in eCommerce China.
 
 ### Taobao Wenwen: An AI-Powered Shopping Assistant
 
-Launched in September 2023, Taobao Wenwen integrates AI into the Taobao app, offering a unique question-and-answer interaction platform. Wenwen provides detailed product recommendations, guided purchasing decisions, and multi-media content, including videos and livestreams. During major shopping festivals like 11.11 and 6.18, Wenwen's ability to identify the best deals and provide instant pricing analysis has been a game-changer for millions of users.
+Launched in September 2023, Taobao Wenwen integrates AI into the Taobao app, offering a unique question-and-answer interaction platform. Wenwen provides detailed product recommendations, guided purchasing decisions, and multi-[media](/grow-in-china/media) content, including videos and livestreams. During major shopping festivals like 11.11 and 6.18, Wenwen's ability to identify the best deals and provide instant pricing analysis has been a game-changer for millions of users.
 
 ## Enhancing Merchant Efficiency
 
@@ -35,7 +35,7 @@ Creating compelling marketing content can be time-consuming and challenging for 
 
 ### Market Insights with Business Advisor
 
-The Business Advisor tool is an AI-powered market insights monitoring system designed to support merchants' operational analytics needs. By leveraging consumer demand insights, industry trends, and competitor analysis, Business Advisor helps merchants capture new opportunities to grow their businesses. The tool provides a simple user interface that offers strong AI-driven analytics, enabling merchants to make real-time adjustments to optimize product assortments, pricing strategies, and marketing campaigns. This dynamic and data-driven approach allows merchants to stay competitive in a fast-paced market, ensuring they can respond quickly to changing consumer preferences and market conditions in eCommerce China.
+The Business Advisor tool is an AI-powered market insights monitoring system designed to support merchants' operational analytics needs. By leveraging consumer demand insights, industry trends, and competitor analysis, Business Advisor helps merchants capture new opportunities to grow their businesses. The tool provides a simple user interface that offers strong AI-driven analytics, enabling merchants to make real-time adjustments to optimize product assortments, pricing strategies, and marketing [campaigns](/grow-in-china/campaigns). This dynamic and data-driven approach allows merchants to stay competitive in a fast-paced market, ensuring they can respond quickly to changing consumer preferences and market conditions in eCommerce China.
 
 ### Smart Customer Service with Ali Xiaomi
 

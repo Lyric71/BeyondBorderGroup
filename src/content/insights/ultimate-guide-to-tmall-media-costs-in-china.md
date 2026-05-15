@@ -13,9 +13,9 @@ legacyUrl: "https://beyondbordergroup.com/ultimate-guide-to-tmall-media-costs-in
 
 ## Tmall's Market Power and Media Investment in China eCommerce
 
-As China's leading B2C eCommerce platform, Tmall gives brands access to a vast pool of consumers, with over 500 million active monthly users. Unlike Taobao, which caters to budget-focused buyers, Tmall is known for premium offerings and has established itself as a trusted Chinese eCommerce website for both local and imported goods. This distinction makes Tmall a preferred choice for brands aiming to position themselves in the premium segment, which is critical in China's competitive online marketplace.
+As China's leading B2C eCommerce platform, [Tmall](/grow-in-china/cross-border-ecommerce) gives brands access to a vast pool of consumers, with over 500 million active monthly users. Unlike Taobao, which caters to budget-focused buyers, Tmall is known for premium offerings and has established itself as a trusted Chinese eCommerce website for both local and imported goods. This distinction makes Tmall a preferred choice for brands aiming to position themselves in the premium segment, which is critical in China's competitive online marketplace.
 
-Investing in Tmall Media provides access to advanced tools for targeted ads, content, and social engagement, all tailored to resonate with Chinese consumers. To maximize ROI, brands often work with a specialized China marketing agency to refine campaigns and ensure they appeal to local preferences. While initial costs can be high, the potential to reach a highly receptive audience with thoughtfully localized campaigns can yield significant returns.
+Investing in [Tmall Media](/grow-in-china/media) provides access to advanced tools for targeted ads, content, and social engagement, all tailored to resonate with Chinese consumers. To maximize ROI, brands often work with a specialized China marketing agency to refine campaigns and ensure they appeal to local preferences. While initial costs can be high, the potential to reach a highly receptive audience with thoughtfully localized campaigns can yield significant returns.
 
 ## Setup Costs: Security Deposit and Annual Fees
 
@@ -33,7 +33,7 @@ Working with a China eCommerce agency can help streamline the setup process and 
 
 ## Tmall Advertising Options for Maximum Brand Visibility
 
-Advertising on Tmall is crucial to standing out, and Tmall offers various ad formats to reach targeted customer segments effectively. Brands need a clear understanding of these options to allocate budgets wisely and maximize visibility.
+[Advertising](/grow-in-china/campaigns) on Tmall is crucial to standing out, and Tmall offers various ad formats to reach targeted customer segments effectively. Brands need a clear understanding of these options to allocate budgets wisely and maximize visibility.
 
 ### Search Ads
 

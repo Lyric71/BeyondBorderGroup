@@ -120,7 +120,7 @@ const servicesByStage = [
   {
     key: 'grow',
     label: 'Se développer en Chine',
-    href: '/fr/grow-in-china',
+    href: '/fr/se-developper-en-chine',
     intro: "Vous vendez déjà. Le moment d'appuyer sur l'accélérateur.",
     services: [
       {
@@ -130,7 +130,7 @@ const servicesByStage = [
         desc: "Fiches produits, promotions, service client en mandarin, coordination logistique, conformité plateforme. On porte le quotidien, votre équipe garde la tête sur le produit et la marque.",
         image: '/Images/grow-in-china/social-commerce/team-livestream-control.png',
         imageAlt: "Équipe d'opérations e-commerce à Shanghai, travail en cours sur une vitrine Tmall",
-        href: '/fr/grow-in-china/cross-border-ecommerce',
+        href: '/fr/se-developper-en-chine/ecommerce-transfrontalier',
         featured: true,
       },
       {
@@ -140,7 +140,7 @@ const servicesByStage = [
         desc: "Vente en livestream, partenariats KOL, boutiques in-app. Du contenu qui convertit dans la même session qu'il sert à faire connaître la marque.",
         image: '/Images/grow-in-china/social-commerce/hero-douyin-livestream.png',
         imageAlt: "Session de livestream Douyin, vente d'un produit de marque, animatrice en plein direct",
-        href: '/fr/grow-in-china/social-commerce',
+        href: '/fr/se-developper-en-chine/commerce-social',
       },
       {
         title: 'Campagnes',
@@ -149,7 +149,7 @@ const servicesByStage = [
         desc: "Les gros pics de ventes pèsent lourd dans l'année. On choisit les moments qui méritent le combat, on construit la création, on tient le warm-up, on reste au front le jour J, heure par heure.",
         image: '/Images/grow-in-china/campaigns/hero-campaign-warroom.png',
         imageAlt: "War room de campagne pendant un festival e-commerce chinois, écrans qui suivent livestream et ventes",
-        href: '/fr/grow-in-china/campaigns',
+        href: '/fr/se-developper-en-chine/campagnes',
       },
       {
         title: 'Média',
@@ -158,7 +158,7 @@ const servicesByStage = [
         desc: "Douyin, WeChat, RED, Baidu, Tmall, JD, programmatique. Une seule équipe pour planifier et acheter sur toutes les plateformes chinoises, et pour rattacher chaque euro à la performance e-commerce.",
         image: '/Images/grow-in-china/media/hero-media-buying.png',
         imageAlt: "Tableau de bord d'achat média, campagnes sur plateformes chinoises et données de performance en direct",
-        href: '/fr/grow-in-china/media',
+        href: '/fr/se-developper-en-chine/medias',
       },
       {
         title: 'Influence et KOL',
@@ -167,7 +167,7 @@ const servicesByStage = [
         desc: "Le consommateur chinois s'informe, décide et achète sans lâcher son téléphone. Casting dans notre base KOC, briefs qui laissent de l'air au créateur, ventes attribuées créateur par créateur.",
         image: '/Images/grow-in-china/influencers-kols/hero-kol-livestream.png',
         imageAlt: "KOL chinoise sur un plateau de livestream, produit en avant, fil de commentaires qui défile",
-        href: '/fr/grow-in-china/influencers-kols',
+        href: '/fr/se-developper-en-chine/influence-et-kol',
       },
     ],
   },
@@ -212,7 +212,7 @@ const servicesByStage = [
         desc: "Articles et analyses signés par celles et ceux qui travaillent le marché chinois chaque jour. Lecture à chaud des plateformes, des évolutions consommateurs, et de ce que tout ça veut dire pour une marque internationale.",
         image: '/Images/learn-china/ai-discovery-shenzhen.png',
         imageAlt: "Moment de recherche à Shenzhen, analyste qui consulte des données plateforme sur portable",
-        href: '/fr/insights',
+        href: '/fr/decryptages',
       },
     ],
   },
@@ -247,7 +247,7 @@ const pillars = [
     ],
     tactics: ['Opérations e-commerce', 'Social commerce', 'Média'],
     close: "Une marque que le consommateur chinois retient, et avec qui il échange.",
-    href: '/fr/grow-in-china',
+    href: '/fr/se-developper-en-chine',
   },
   {
     key: 'learn',
@@ -278,7 +278,18 @@ const featuredCases = allCases
   .sort((a, b) => a.data.order - b.data.order)
   .slice(0, 6);
 
-const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+const allInsights = await getCollection('insightsFr', ({ data }) => !data.draft);
+
+const insightCategoryFr: Record<string, string> = {
+  'Platforms': 'Plateformes',
+  'E-Commerce': 'eCommerce',
+  'KOLs & Livestream': 'KOL et livestream',
+  'Brand & Localization': 'Marque et localisation',
+  'AI & Innovation': 'IA et innovation',
+  'Market Strategy': 'Stratégie de marché',
+  'Compliance & Setup': 'Conformité et installation',
+};
+
 const latestInsights = allInsights
   .slice()
   .sort((a, b) => {
@@ -340,8 +351,8 @@ function formatInsightDate(d?: Date) {
         Douyin et RED, et le bon distributeur pour votre catégorie.
       </p>
       <div class="home-hero__actions home-reveal" style="--reveal-delay: 280ms;">
-        <a class="btn btn--primary home-magnetic" href="/fr/contact">Parlons-en</a>
-        <a class="btn btn--ghost-light home-magnetic" href="/fr/work">Voir nos réalisations</a>
+        <a class="btn btn--primary home-magnetic" href="/fr/nous-contacter">Parlons-en</a>
+        <a class="btn btn--ghost-light home-magnetic" href="/fr/nos-realisations">Voir nos réalisations</a>
       </div>
 
       <div class="home-hero__meta home-reveal" style="--reveal-delay: 360ms;">
@@ -1083,12 +1094,12 @@ function formatInsightDate(d?: Date) {
           <span class="eyebrow">Nos réalisations</span>
           <h2>Des marques que nous avons bâties en Chine</h2>
         </div>
-        <a href="/fr/work" class="btn btn--secondary btn--sm">Toutes les études de cas</a>
+        <a href="/fr/nos-realisations" class="btn btn--secondary btn--sm">Toutes les études de cas</a>
       </header>
 
       <div class="grid grid-3">
         {featuredCases.map((c) => (
-          <a href={`/fr/work/${c.id}`} class="work-card">
+          <a href={`/fr/nos-realisations/${c.id}`} class="work-card">
             <div class="work-card__image">
               <img
                 src={c.data.heroImage}
@@ -1121,7 +1132,7 @@ function formatInsightDate(d?: Date) {
 
       <div class="grid grid-3">
         {latestInsights.map((post) => (
-          <a href={`/fr/insights/${post.id}`} class="insight-card">
+          <a href={`/fr/decryptages/${post.id}`} class="insight-card">
             <div class="insight-card__image">
               {post.data.heroImage && (
                 <img
@@ -1135,7 +1146,7 @@ function formatInsightDate(d?: Date) {
               )}
             </div>
             <div class="insight-card__body">
-              <span class="insight-card__tag">{post.data.category}</span>
+              <span class="insight-card__tag">{insightCategoryFr[post.data.category] ?? post.data.category}</span>
               <h3 class="insight-card__title">{post.data.title}</h3>
               <div class="insight-card__meta">
                 <span>{readingTime(post.body)}</span>
@@ -1165,7 +1176,7 @@ function formatInsightDate(d?: Date) {
             qui vous répond, pas un chatbot, pas un tunnel de vente.
           </p>
           <div class="cta-card__actions">
-            <a href="/fr/contact" class="btn btn--primary">Démarrer la conversation</a>
+            <a href="/fr/nous-contacter" class="btn btn--primary">Démarrer la conversation</a>
           </div>
         </div>
 

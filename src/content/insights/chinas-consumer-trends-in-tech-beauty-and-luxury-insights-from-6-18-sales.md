@@ -13,7 +13,7 @@ legacyUrl: "https://beyondbordergroup.com/chinas-consumer-trends-in-tech-beauty-
 
 ## China's Consumer Landscape and Market Shifts
 
-China's consumer landscape is rapidly evolving, with significant shifts in preferences and spending patterns. Recent sales data from Alibaba's Taobao and Tmall during the 6.18 shopping festival reveal these changes vividly, showcasing strong demand across tech, beauty, and luxury segments.
+China's consumer landscape is rapidly evolving, with significant shifts in preferences and spending patterns. Recent sales data from Alibaba's Taobao and [Tmall](/grow-in-china/cross-border-ecommerce) during the 6.18 shopping festival reveal these changes vividly, showcasing strong demand across tech, beauty, and luxury segments.
 
 ## Tech Products Dominate Early Sales
 
@@ -27,7 +27,7 @@ The appeal of these tech products is driven by steep discounts and aggressive ma
 
 Beauty products were another standout category during the 6.18 sales. Within the first 30 minutes, brands like Proya, Lancome, L'Oreal, and Estee Lauder each reported GMV exceeding RMB100 million. This trend shows the strong demand for premium beauty products in China, driven by an increasing focus on personal care and grooming.
 
-Marketing campaigns for these brands often use social media platforms in China, creating an engaging shopping experience that resonates with young, tech-savvy consumers. Discounts and special offers during the festival further incentivized purchases, contributing to the impressive sales figures.
+Marketing [campaigns](/grow-in-china/campaigns) for these brands often use social media platforms in China, creating an engaging shopping experience that resonates with young, tech-savvy consumers. Discounts and special offers during the festival further incentivized purchases, contributing to the impressive sales figures.
 
 ## Luxury Brands Capture Consumer Attention
 

@@ -13,11 +13,11 @@ legacyUrl: "https://beyondbordergroup.com/taobao-flash-sale-and-chinas-30-minute
 
 ## Chinese retail used to start with a familiar question.
 
-"What is our plan for Taobao traffic this week?"
+"What is our plan for [Taobao](/grow-in-china/cross-border-ecommerce) traffic this week?"
 
 Now the question is changing.
 
-"What is our plan for Taobao traffic and local fulfilment, in the same flow?"
+"What is our plan for [Taobao](/grow-in-china/cross-border-ecommerce) traffic and local fulfilment, in the same flow?"
 
 Alibaba's decision to rebrand Ele.me into Taobao Flash Sale (淘宝闪购) goes beyond a name change. It is a structural reset that pulls food delivery, instant retail, and in-store services into a unified Taobao experience.
 
@@ -76,7 +76,7 @@ If Taobao can own more of the everyday rhythm, it strengthens loyalty, increases
 
 This is where many non-Chinese brands misread the shift.
 
-They see "instant retail" and think it is another marketing channel.
+They see "instant retail" and think it is another [marketing](/grow-in-china/campaigns) channel.
 
 In reality, it is a new operating model that forces brands to connect marketing, merchandising, and fulfilment.
 

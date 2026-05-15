@@ -29,7 +29,7 @@ Under the surface runs an AI-led operating model. Promotions, ranking, forecasti
 
 * Pair elite creatives with AIGC engineers. Creativity sets the standard; AI scales it across placements, languages, and markets without diluting craft.
 
-* Ship on real studio rails. GPU power, production workflows, and post for the final 5%, so assets are launch-ready, not "almost."
+* Ship on real studio rails. GPU power, [production](/grow-in-china/production-studio) workflows, and post for the final 5%, so assets are launch-ready, not "almost."
 
 * Measure what matters. HubStudio optimizes toward save/share rate, 3-second hold, Brand Fit, Distinctive Asset Recognition, Speed-to-Asset, and Cost per Qualified View, and links them to commercial levers.
 
@@ -44,7 +44,7 @@ Offer architecture guided by cohort and SKU signals. Use targeted coupons as ret
 Variant sets (angles, backplates, seasons) mapped to cohorts and placements turn discovery into conversion instead of noise.
 
 * **Logistics that reinforces trust**  
-Tighter routing and service levels matter. JD, for example, cites ~95% of first‑party retail orders delivered within 24 hours. They're an expectation‑setter that pushes everyone toward speed. Meanwhile, robotics and autonomous delivery remain early‑stage/augmentative and are useful in pilots and dense nodes.
+Tighter routing and service levels matter. [JD](/grow-in-china/cross-border-ecommerce), for example, cites ~95% of first‑party retail orders delivered within 24 hours. They're an expectation‑setter that pushes everyone toward speed. Meanwhile, robotics and autonomous delivery remain early‑stage/augmentative and are useful in pilots and dense nodes.
 
 * **Creative that reduces cost‑to‑serve**  
 Clear PDP expectations, localized size/fit logic, and post‑purchase content that deflects WISMO and lowers refunds/complaints.
@@ -60,7 +60,7 @@ Trust and personality convert. The unlock in 2025 is format discipline and studi
 
 * AI‑assisted pre‑production: shot lists, storyboards, talking points; instant cut‑downs for retargeting within minutes.
 
-For context, livestream GMV reached RMB 332.5B during Double 11 in 2024 (+54.6% YoY). 2025 results are still being compiled, but the structural advantage of live commerce remains: trust + clarity + proven conversion.
+For context, [livestream](/grow-in-china/influencers-kols) GMV reached RMB 332.5B during Double 11 in 2024 (+54.6% YoY). 2025 results are still being compiled, but the structural advantage of live commerce remains: trust + clarity + proven conversion.
 
 ![AI efficiency metrics for ecommerce](https://beyondbordergroup.com/wp-content/uploads/2025/11/Screenshot-2025-11-19-at-4.28.43-PM.png)
 

@@ -58,6 +58,9 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
     '/grow-in-china/production-studio': '/se-developper-en-chine/studio-de-production',
     '/grow-in-china/website': '/se-developper-en-chine/site-web',
     '/work': '/nos-realisations',
+    '/insights': '/decryptages',
+    '/contact': '/nous-contacter',
+    '/thank-you': '/merci',
   },
 };
 
@@ -70,6 +73,7 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
 const prefixMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>> = {
   fr: {
     '/work/': '/nos-realisations/',
+    '/insights/': '/decryptages/',
   },
 };
 

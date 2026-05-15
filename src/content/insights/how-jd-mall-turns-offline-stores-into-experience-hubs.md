@@ -13,7 +13,7 @@ legacyUrl: "https://beyondbordergroup.com/how-jd-mall-turns-offline-stores-into-
 
 ## How JD Is Turning Offline Stores Into Experience Hubs
 
-For years, JD was the "engineering" answer to Chinese e-commerce: logistics, speed, and reliability.
+For years, [JD](/grow-in-china/cross-border-ecommerce) was the "engineering" answer to Chinese e-commerce: logistics, speed, and reliability.
 
 Walk into a JD Mall in Xi'an or Beijing now, and you see something different. Kids are baking cookies. Parents are testing PlayStations. People are learning how to use their smart ovens and hair dryers, not scrolling through manuals.
 
@@ -63,7 +63,7 @@ If JD Mall is in your mix, you need to decide how these people talk about your b
 
 JD connects the mall tightly to its main app and data layer.
 
-Search for a product in the JD app, and you may see the nearest mall and its campaigns. Register for an in-store class and your JD ID is linked to that visit. Electronic price tags keep prices aligned with online and carry QR codes that track "see offline, buy online" behaviour.
+Search for a product in the JD app, and you may see the nearest mall and its [campaigns](/grow-in-china/campaigns). Register for an in-store class and your JD ID is linked to that visit. Electronic price tags keep prices aligned with online and carry QR codes that track "see offline, buy online" behaviour.
 
 This matters because your investment in JD Mall should be judged on both store sales and uplift across JD's online ecosystem, and any mismatch in assortment, pricing, or messaging between online JD and JD Mall will be instantly visible to shoppers.
 

@@ -15,7 +15,7 @@ legacyUrl: "https://beyondbordergroup.com/china-social-media-and-kol-strategies-
 
 ### What is a KOL in China?
 
-A Key Opinion Leader (KOL) in China is an influencer with a substantial following who holds significant sway over their audience's opinions and purchasing decisions. Unlike Western influencers, KOLs in China are seen as trusted experts who offer advice and product recommendations across various categories, from beauty and fashion to tech and lifestyle.
+A Key Opinion Leader ([KOL](/grow-in-china/influencers-kols)) in China is an influencer with a substantial following who holds significant sway over their audience's opinions and purchasing decisions. Unlike Western influencers, KOLs in China are seen as trusted experts who offer advice and product recommendations across various categories, from beauty and fashion to tech and lifestyle.
 
 ### Why KOLs are Essential for Brands in China
 
@@ -23,7 +23,7 @@ The influence of KOLs goes beyond mere visibility. In China, consumers are gener
 
 ## Platforms to Reach KOLs in China
 
-Understanding the social media ecosystem in China is crucial for effectively finding KOLs. Unlike the Western world, where platforms like Instagram and YouTube dominate, China has its own unique social media giants.
+Understanding the [social media](/grow-in-china/social-commerce) ecosystem in China is crucial for effectively finding KOLs. Unlike the Western world, where platforms like Instagram and YouTube dominate, China has its own unique social media giants.
 
 ### Key Social Media Platforms
 
@@ -79,7 +79,7 @@ Understanding the different types of influencers in China can help you choose th
 
 ### Mega-Celebrities
 
-These are actors, musicians, and other public figures with massive followings, typically suited for luxury brands or large campaigns. They come at a high cost but can provide extensive reach.
+These are actors, musicians, and other public figures with massive followings, typically suited for luxury brands or large [campaigns](/grow-in-china/campaigns). They come at a high cost but can provide extensive reach.
 
 ### KOLs (Macro Influencers)
 

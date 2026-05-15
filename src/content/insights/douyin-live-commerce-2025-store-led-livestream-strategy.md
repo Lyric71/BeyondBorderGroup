@@ -11,7 +11,7 @@ heroImageAlt: "ecommerce livestream setup"
 legacyUrl: "https://beyondbordergroup.com/douyin-live-commerce-2025-store-led-livestream-strategy/"
 ---
 
-Douyin is no longer "a channel where you do a big livestream."
+Douyin is no longer "a channel where you do a big [livestream](/grow-in-china/influencers-kols)."
 
 In 2026, it behaves like a retail operating system. Content creates demand, ads amplify it, search captures it, and checkout happens inside the same loop. If you treat it like a one-off campaign, you will burn budget fast and learn slowly.
 
@@ -79,7 +79,7 @@ This is why store-led rooms keep gaining share. The model is ownable.
 
 **5) Close the loop with retention as well as conversion**
 
-* You do not "own" customers on Douyin the way you do in WeChat. But you can still build compounding value through:
+* You do not "own" customers on Douyin the way you do in [WeChat](/grow-in-china/social-commerce). But you can still build compounding value through:
   * Fan follow incentives and member perks
   * Retargeting based on viewers and product clickers
   * A content library that becomes performance creative fast

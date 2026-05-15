@@ -12,7 +12,9 @@
     "astro": "astro",
     "gen": "node scripts/generate-image.mjs",
     "gen:edit": "node scripts/generate-image-edit.mjs",
-    "img": "node scripts/optimize-image.mjs"
+    "img": "node scripts/optimize-image.mjs",
+    "img:batch": "node scripts/optimize-images-batch.mjs",
+    "hooks:install": "node scripts/install-hooks.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",

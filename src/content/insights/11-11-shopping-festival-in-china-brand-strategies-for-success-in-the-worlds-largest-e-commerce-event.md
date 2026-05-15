@@ -25,7 +25,7 @@ This retail event now stretches into multi-week campaigns, involving millions of
 
 ## The Role of E-Commerce Platforms in the 11.11 Festival
 
-The success of the 11.11 Shopping Festival is largely driven by China's dominant eCommerce platforms like Tmall and JD.com. These platforms provide the infrastructure for the event while also leading marketing campaigns that define the festival's impact.
+The success of the 11.11 Shopping Festival is largely driven by China's dominant eCommerce platforms like Tmall and JD.com. These platforms provide the infrastructure for the event while also leading [marketing campaigns](/grow-in-china/campaigns) that define the festival's impact.
 
 * **Tmall:** As a premium marketplace under Alibaba, Tmall hosts pre-sales, live-streaming events, and interactive shopping experiences that attract both local and international brands. Brands utilizing Tmall cross-border services can access millions of Chinese consumers without requiring a physical presence in China.
 
@@ -57,7 +57,7 @@ By integrating social media strategies with a focus on China performance marketi
 
 ### b) Partnering with Key Opinion Leaders (KOLs) for Greater Impact
 
-Influencer marketing, or KOL marketing, is one of the most powerful tools for brands looking to expand their reach during the 11.11 Festival. Collaborating with China KOLs, Key Opinion Leaders, who have strong followings can significantly amplify a brand's visibility and credibility.
+Influencer marketing, or [KOL marketing](/grow-in-china/influencers-kols), is one of the most powerful tools for brands looking to expand their reach during the 11.11 Festival. Collaborating with China KOLs, Key Opinion Leaders, who have strong followings can significantly amplify a brand's visibility and credibility.
 
 China influencers have the trust of their followers, making their endorsements highly effective. For instance, fashion brands can partner with lifestyle influencers on Little Red Book, while tech companies may collaborate with gadget reviewers on platforms like Weibo.
 
@@ -95,7 +95,7 @@ The 11.11 Shopping Festival presents enormous opportunities for international br
 
 * Localization of content: Brands need to tailor their messages to the Chinese market, ensuring that marketing materials reflect local cultural preferences and nuances.
 
-* Utilizing cross-border e-commerce platforms: Platforms like Tmall Global and JD Worldwide facilitate China cross-border transactions, allowing international brands to reach Chinese consumers without requiring a physical presence in the country.
+* Utilizing [cross-border e-commerce](/grow-in-china/cross-border-ecommerce) platforms: Platforms like Tmall Global and JD Worldwide facilitate China cross-border transactions, allowing international brands to reach Chinese consumers without requiring a physical presence in the country.
 
 ## Tapping the Potential of the 11.11 Shopping Festival
 

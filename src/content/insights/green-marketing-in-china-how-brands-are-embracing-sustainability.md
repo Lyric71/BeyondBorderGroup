@@ -12,7 +12,7 @@ legacyUrl: "https://beyondbordergroup.com/green-marketing-in-china-how-brands-ar
 
 ## Importance of Green Marketing in China
 
-In today's market, green marketing has become a powerful tool for brands. It not only highlights a brand's commitment to the environment but also resonates deeply with consumers who are increasingly making eco-conscious purchasing decisions. Successful green marketing campaigns draw attention to environmental issues and encourage consumers to adopt more sustainable lifestyles.
+In today's market, green marketing has become a powerful tool for brands. It not only highlights a [brand](/enter-china/branding-localisation)'s commitment to the environment but also resonates deeply with consumers who are increasingly making eco-conscious purchasing decisions. Successful green [marketing campaigns](/grow-in-china/campaigns) draw attention to environmental issues and encourage consumers to adopt more sustainable lifestyles.
 
 ## Starbucks and Proya Cosmetics: Leading the Way
 

@@ -12,7 +12,7 @@ legacyUrl: "https://beyondbordergroup.com/how-to-localize-your-website-for-china
 
 ## Importance of Website Localization in China
 
-Localizing your website for the Chinese market, a specialty of proficient ecommerce agencies in China, goes beyond simple translation. It is crucial for navigating regulatory requirements and aligning with consumer expectations. Effective localization ensures that your website is accessible, culturally relevant, and compliant with local laws, significantly enhancing your business's presence and success in ecommerce China.
+Localizing your [website](/grow-in-china/website) for the Chinese market, a specialty of proficient ecommerce agencies in China, goes beyond simple translation. It is crucial for navigating regulatory requirements and aligning with consumer expectations. Effective [localization](/enter-china/branding-localisation) ensures that your website is accessible, culturally relevant, and compliant with local laws, significantly enhancing your business's presence and success in ecommerce China.
 
 ### Great Firewall and Censorship
 

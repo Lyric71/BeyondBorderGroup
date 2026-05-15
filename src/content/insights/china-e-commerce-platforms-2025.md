@@ -21,7 +21,7 @@ China also has the user base to sustain this integration. The country had more t
 
 ## The platform map
 
-China's major commerce platforms have distinct strengths. Most brands end up operating across several at once because each platform owns a different part of the funnel.
+China's major commerce [platforms](/learn-china/platforms) have distinct strengths. Most brands end up operating across several at once because each platform owns a different part of the funnel.
 
 ### **Alibaba (Taobao, Tmall, 1688)**
 
@@ -82,7 +82,7 @@ Instant commerce retail sales will reach RMB 1.003 trillion in 2025, with growth
 
 ## What this means for global brands in China
 
-Global brands do not enter "China e-commerce" as a single channel. They enter a platform system where each player owns a different consumer habit.
+[Global brands](/enter-china/market-entry-consulting) do not enter "China [e-commerce](/grow-in-china/cross-border-ecommerce)" as a single channel. They enter a platform system where each player owns a different consumer habit.
 
 **A practical way to think about it is by capability, not by logo:**
 

@@ -13,7 +13,7 @@ legacyUrl: "https://beyondbordergroup.com/best-practices-for-successful-e-commer
 
 ## Understanding the Rise of Livestream E-Commerce in China
 
-Livestream e-commerce in China is more than a trend, it's a dominant force in the retail ecosystem. Platforms like Taobao Live, Douyin (TikTok's Chinese counterpart), and Kuaishou have transformed traditional shopping into an interactive and entertaining experience. Shoppers can see products demonstrated in real-time, ask questions, and make purchases smoothly, creating a more informed and engaging buying journey.
+[Livestream](/grow-in-china/influencers-kols) [e-commerce](/grow-in-china/cross-border-ecommerce) in China is more than a trend, it's a dominant force in the retail ecosystem. Platforms like Taobao Live, Douyin (TikTok's Chinese counterpart), and Kuaishou have transformed traditional shopping into an interactive and entertaining experience. Shoppers can see products demonstrated in real-time, ask questions, and make purchases smoothly, creating a more informed and engaging buying journey.
 
 The growth is fueled by several factors:
 

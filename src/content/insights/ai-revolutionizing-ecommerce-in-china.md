@@ -26,15 +26,15 @@ AI helps eCommerce businesses in China reduce operational costs. Alibaba, for ex
 
 ## Digital Human Integration
 
-Digital humans are becoming integral in AI-driven eCommerce strategies. For example, Li Jiaqi, a well-known virtual influencer, collaborates with brands to promote products through live-streaming. These AI-powered influencers interact with consumers in real-time, offering personalized recommendations and creating a more engaging shopping experience.
+Digital humans are becoming integral in AI-driven eCommerce strategies. For example, Li Jiaqi, a well-known virtual [influencer](/grow-in-china/influencers-kols), collaborates with brands to promote products through live-streaming. These AI-powered influencers interact with consumers in real-time, offering personalized recommendations and creating a more engaging shopping experience.
 
 ## Comprehensive AI Integration
 
-AI is integrated across the entire eCommerce value chain in China. Platforms like Taobao and Pinduoduo use AI for everything from intelligent customer service chatbots to sophisticated data analytics that drive marketing strategies. This integration ensures that operations are smooth, decisions are data-driven, and customer interactions are highly personalized.
+AI is integrated across the entire eCommerce value chain in China. Platforms like Taobao and Pinduoduo use AI for everything from intelligent customer service chatbots to sophisticated data analytics that drive [marketing](/grow-in-china/campaigns) strategies. This integration ensures that operations are smooth, decisions are data-driven, and customer interactions are highly personalized.
 
 ## Future Trends
 
-The future of AI in eCommerce in China looks promising. The adoption of AI-generated content (AIGC) is set to rise, with platforms like Baidu using AI to create engaging content that drives user engagement. As AI technologies advance, their applications will expand, making the industry more efficient and consumer-focused.
+The future of AI in [eCommerce in China](/grow-in-china/cross-border-ecommerce) looks promising. The adoption of AI-generated content (AIGC) is set to rise, with platforms like Baidu using AI to create engaging content that drives user engagement. As AI technologies advance, their applications will expand, making the industry more efficient and consumer-focused.
 
 AI is transforming China's eCommerce industry by enhancing consumer experiences, reducing operational costs, and integrating digital humans. As AI technology evolves, it will continue to drive innovation and efficiency, cementing its role as a critical component of China's eCommerce landscape. The integration of AI represents a new era of intelligent, efficient, and customer-focused online retail, poised to revolutionize the market.
 

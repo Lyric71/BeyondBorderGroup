@@ -23,22 +23,29 @@ export const INSIGHT_PLATFORMS = [
   'Alipay',
 ] as const;
 
+const insightSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  pubDate: z.coerce.date().optional(),
+  updatedDate: z.coerce.date().optional(),
+  author: z.string().default('Beyond Border Group'),
+  category: z.enum(INSIGHT_CATEGORIES),
+  platforms: z.array(z.enum(INSIGHT_PLATFORMS)).default([]),
+  tags: z.array(z.string()).default([]),
+  heroImage: z.string(),
+  heroImageAlt: z.string().default(''),
+  legacyUrl: z.string().optional(),
+  draft: z.boolean().default(false),
+});
+
 const insights = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/insights' }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    pubDate: z.coerce.date().optional(),
-    updatedDate: z.coerce.date().optional(),
-    author: z.string().default('Beyond Border Group'),
-    category: z.enum(INSIGHT_CATEGORIES),
-    platforms: z.array(z.enum(INSIGHT_PLATFORMS)).default([]),
-    tags: z.array(z.string()).default([]),
-    heroImage: z.string(),
-    heroImageAlt: z.string().default(''),
-    legacyUrl: z.string().optional(),
-    draft: z.boolean().default(false),
-  }),
+  schema: insightSchema,
+});
+
+const insightsFr = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/insights-fr' }),
+  schema: insightSchema,
 });
 
 const caseSchema = z.object({
@@ -80,4 +87,4 @@ const casesFr = defineCollection({
   schema: caseSchema,
 });
 
-export const collections = { insights, cases, casesFr };
+export const collections = { insights, insightsFr, cases, casesFr };

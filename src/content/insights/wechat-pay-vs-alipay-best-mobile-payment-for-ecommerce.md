@@ -17,7 +17,7 @@ legacyUrl: "https://beyondbordergroup.com/wechat-pay-vs-alipay-best-mobile-payme
 
 ### What is WeChat Pay?
 
-WeChat Pay, a product of Tencent, stands as a cornerstone of China's mobile payment ecosystem. Integrated smoothly into the WeChat app, it transforms the platform from a simple messaging app to a multifunctional super app. Launched in August 2013, WeChat Pay has quickly scaled up to cater to over a billion users, revolutionizing how transactions are conducted in China.
+[WeChat](/grow-in-china/social-commerce) Pay, a product of Tencent, stands as a cornerstone of China's mobile payment ecosystem. Integrated smoothly into the WeChat app, it transforms the platform from a simple messaging app to a multifunctional super app. Launched in August 2013, WeChat Pay has quickly scaled up to cater to over a billion users, revolutionizing how transactions are conducted in China.
 
 ### Key Features of WeChat Pay
 
@@ -36,7 +36,7 @@ Source: WeChat Pay (https://pay.weixin.qq.com/)
 For businesses aiming to tap into WeChat Pay's vast user base, setting up an account is a strategic move. Here's how to get started:
 
 1. **Create an Official Account:** Businesses must first establish an official WeChat account. This requires submitting company information and necessary documentation for verification.
-2. **Choose a Business Profile:** Depending on the nature of the business, you can choose between a Subscription account or a Service account. The latter is more suitable for businesses looking to integrate WeChat Pay for e-commerce activities.
+2. **Choose a Business Profile:** Depending on the nature of the business, you can choose between a Subscription account or a Service account. The latter is more suitable for businesses looking to integrate WeChat Pay for [e-commerce](/grow-in-china/cross-border-ecommerce) activities.
 3. **Apply for WeChat Pay:** After your account is verified, apply for WeChat Pay through the Official Accounts Platform. Provide details such as expected transaction volumes and bank account information.
 4. **Integrate with E-commerce Platforms:** To maximize reach, businesses can partner with major online marketplaces like JD.com, Pinduoduo, VIP Shop, and Kaola. These platforms support WeChat Pay, simplifying the integration process and expanding the potential customer base.
 
@@ -100,4 +100,4 @@ When deciding between WeChat Pay and Alipay, consider your business goals and ta
 
 On the other hand, if your business model is centered around e-commerce and financial services, Alipay offers a strong ecosystem that can support various financial needs and provide detailed insights into customer payment behaviors.
 
-In conclusion, both WeChat Pay and Alipay offer distinct advantages for businesses looking to tap into China's vast mobile payment market. By understanding their unique features and aligning them with your business goals, you can choose the platform that best suits your needs and enhances your customer's experience in eCommerce China.
+In conclusion, both WeChat Pay and Alipay offer distinct advantages for businesses looking to tap into China's vast mobile payment market. By understanding their unique features and aligning them with your business goals, you can choose the platform that best suits your needs and enhances your customer's experience in [eCommerce](/grow-in-china/cross-border-ecommerce) China.

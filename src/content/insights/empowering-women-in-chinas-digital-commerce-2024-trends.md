@@ -17,7 +17,7 @@ The rise of [digital commerce in China](https://beyondbordergroup.com/ecommerce-
 
 ## Empowering Women Entrepreneurs through Digital Platforms
 
-Women-owned businesses are making significant strides in the [eCommerce China](https://beyondbordergroup.com/ecommerce-services-in-china/) landscape. On platforms like Taobao, women have emerged as leading sellers, accounting for over half of the top 100 best-selling stores. This trend reflects a broader global movement where women are increasingly taking the helm of early-stage businesses.
+Women-owned businesses are making significant strides in the [eCommerce China](https://beyondbordergroup.com/ecommerce-services-in-china/) landscape. On platforms like [Taobao](/grow-in-china/cross-border-ecommerce), women have emerged as leading sellers, accounting for over half of the top 100 best-selling stores. This trend reflects a broader global movement where women are increasingly taking the helm of early-stage businesses.
 
 The success stories of young women entrepreneurs in China, particularly on Alibaba's Taobao, are remarkable. Last year, over 30% of new businesses on Taobao were owned by women born after 2000. Many of these entrepreneurs hail from third and fourth-tier cities, illustrating that digital commerce is democratizing business opportunities beyond metropolitan areas.
 
@@ -45,7 +45,7 @@ Platforms like DiverseUp, founded by Angel Vossough, are at the forefront of thi
 
 The impact of women's entrepreneurship extends beyond individual success stories. It sends a powerful message about women's empowerment and resonates deeply with consumers. Brands that support women's issues and promote gender equality can build stronger connections with their audience.
 
-Campaigns celebrating women's achievements, from the boardroom to various other domains, are gaining traction. These campaigns not only highlight the successes of women entrepreneurs but also inspire the next generation of women to pursue their business ambitions.
+[Campaigns](/grow-in-china/campaigns) celebrating women's achievements, from the boardroom to various other domains, are gaining traction. These campaigns not only highlight the successes of women entrepreneurs but also inspire the next generation of women to pursue their business ambitions.
 
 ## The Future of Women in Digital Commerce
 

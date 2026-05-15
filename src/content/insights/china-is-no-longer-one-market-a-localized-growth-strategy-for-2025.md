@@ -11,9 +11,9 @@ legacyUrl: "https://beyondbordergroup.com/china-is-no-longer-one-market-a-locali
 
 ## China Is No Longer One Market: Why Local Bets Beat National Plans
 
-If you work with China day to day, you can feel it. The old growth playbook is fading.
+If you work with China day to day, you can feel it. The old growth [playbook](/work) is fading.
 
-For years, many global brands treated China as one big growth machine. Pick a hero SKU, choose a celebrity, roll out nationally, and let scale do the work. In a fast-growing market, that could still deliver.
+For years, many [global brands](/enter-china/market-entry-consulting) treated China as one big growth machine. Pick a hero SKU, choose a celebrity, roll out nationally, and let scale do the work. In a fast-growing market, that could still deliver.
 
 In 2025, it is more likely to expose your weaknesses.
 
@@ -27,7 +27,7 @@ A one-size-fits-all message now feels blunt.
 
 Winning brands no longer ask "How do we win China?" They ask, "Where do we deserve to matter, and why?"
 
-That means moving away from symbolic localisation and toward structural choices about where and how to show up:
+That means moving away from symbolic [localisation](/enter-china/branding-localisation) and toward structural choices about where and how to show up:
 
 * Choosing specific cities and clusters instead of a single national launch.
 * Building activation plans around real local routines, instead of landmarks and clichés.

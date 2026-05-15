@@ -12,9 +12,9 @@ legacyUrl: "https://beyondbordergroup.com/ultimate-guide-to-using-wordpress-in-c
 
 ## Ultimate Guide to Using WordPress in China
 
-WordPress is one of the most popular website-building platforms in the world. It is commonly used by businesses, bloggers, and e-commerce stores. With its flexibility, ease of use, and cost-effectiveness, many entrepreneurs and companies want to use it to build their websites, even in China. But can you successfully use WordPress to build your website in China, especially for Chinese e-commerce or digital marketing?
+[WordPress](/grow-in-china/website) is one of the most popular website-building platforms in the world. It is commonly used by businesses, bloggers, and e-commerce stores. With its flexibility, ease of use, and cost-effectiveness, many entrepreneurs and companies want to use it to build their websites, even in China. But can you successfully use WordPress to build your website in China, especially for Chinese e-commerce or digital marketing?
 
-The answer is yes, but with some important considerations. Due to unique internet regulations, blocked services, and technical challenges, operating a WordPress site in China requires specific strategies. This guide will explore how to optimize your WordPress website for the Chinese market, focusing on hosting, design, SEO, and marketing techniques essential for e-commerce in China.
+The answer is yes, but with some important considerations. Due to unique internet regulations, blocked services, and technical challenges, operating a WordPress site in China requires specific strategies. This guide will explore how to optimize your WordPress website for the [Chinese market](/enter-china/market-entry-consulting), focusing on hosting, design, SEO, and marketing techniques essential for e-commerce in China.
 
 ## Why Choose WordPress for Your Business Website?
 
@@ -84,7 +84,7 @@ To ensure compatibility, choose themes and plugins designed to function well in 
 
 ### Make Your Website Multilingual
 
-If you're targeting both local Chinese consumers and international audiences, offering a multilingual website is important for success in cross-border e-commerce in China:
+If you're targeting both local Chinese consumers and international audiences, offering a multilingual website is important for success in [cross-border](/enter-china/cross-border-setup) e-commerce in China:
 
 * Use a multilingual plugin like WPML or Polylang to translate content.
 * Offer both Simplified Chinese (for mainland China) and English (for global users).

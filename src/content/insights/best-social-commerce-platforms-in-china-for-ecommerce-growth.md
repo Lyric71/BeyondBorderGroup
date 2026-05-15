@@ -13,9 +13,9 @@ legacyUrl: "https://beyondbordergroup.com/best-social-commerce-platforms-in-chin
 
 ## Social Commerce in China: The Market Landscape
 
-Social commerce has transformed the way consumers shop, combining social media engagement with direct purchasing experiences. Nowhere is this shift more significant than in eCommerce China, which boasts the largest online shopping market globally. The rise of social commerce China has been powered by cutting-edge trends like China livestreaming, mobile payments, and KOL marketing, offering unique opportunities for brands to interact with consumers. By 2021, China's social commerce market had reached over 2.5 trillion yuan (approximately $374 billion), with nearly 800 million participants, solidifying the country's role as a leader in digital retail.
+[Social commerce](/grow-in-china/social-commerce) has transformed the way consumers shop, combining social media engagement with direct purchasing experiences. Nowhere is this shift more significant than in eCommerce China, which boasts the largest online shopping market globally. The rise of social commerce China has been powered by cutting-edge trends like China livestreaming, mobile payments, and [KOL](/grow-in-china/influencers-kols) marketing, offering unique opportunities for brands to interact with consumers. By 2021, China's social commerce market had reached over 2.5 trillion yuan (approximately $374 billion), with nearly 800 million participants, solidifying the country's role as a leader in digital retail.
 
-For brands seeking success in China's highly competitive eCommerce space, understanding the leading eCommerce platforms in China is essential. Below, we'll explore the top social commerce platforms that can enhance your China marketing strategy and accelerate your brand's growth.
+For brands seeking success in China's highly competitive eCommerce space, understanding the leading eCommerce [platforms](/learn-china/platforms) in China is essential. Below, we'll explore the top social commerce platforms that can enhance your China marketing strategy and accelerate your brand's growth.
 
 ## 1. Xiaohongshu (Little Red Book)
 

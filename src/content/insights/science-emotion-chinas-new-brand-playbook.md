@@ -19,7 +19,7 @@ Last November, two Chinese dermocosmetics brands went head-to-head during the co
 
 Same product category. Same platforms. Same scroll.
 
-That swing does not happen over a formula difference. It happens when one brand builds a real commerce engine and the other just rents traffic.
+That swing does not happen over a formula difference. It happens when one [brand](/enter-china/branding-localisation) builds a real commerce engine and the other just rents traffic.
 
 ## Same Category, Opposite Architecture
 
@@ -35,9 +35,9 @@ This is one of the most common mistakes we see international brands make when en
 
 > Collgene's patented recombinant collagen showed 3x higher skin absorption than traditional collagen.
 
-Collgene ran Tmall and JD as their trust base. Search optimization, SKU architecture, personalized skincare plans, and repurchase flows were all built before they scaled spend. The result was a 42% repurchase rate, 15 points above the industry average.
+Collgene ran [Tmall](/grow-in-china/cross-border-ecommerce) and JD as their trust base. Search optimization, SKU architecture, personalized skincare plans, and repurchase flows were all built before they scaled spend. The result was a 42% repurchase rate, 15 points above the industry average.
 
-This is how shelf eCommerce is supposed to work. Not as a transaction layer, but as a credibility asset. Consumers who discover a brand on Douyin will search for it on Tmall before they buy. What they find there either closes the sale or kills it.
+This is how shelf eCommerce is supposed to work. Not as a transaction layer, but as a credibility asset. Consumers who discover a brand on [Douyin](/grow-in-china/influencers-kols) will search for it on Tmall before they buy. What they find there either closes the sale or kills it.
 
 ![](https://beyondbordergroup.com/wp-content/uploads/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
 

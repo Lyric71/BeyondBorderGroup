@@ -45,7 +45,7 @@ In that era, the math worked. Margins took a hit, but the story was about acquis
 Then the game got crowded.
 
 * New players like **Douyin and Kuaishou** brought livestream commerce into the core of Double 11.
-* Cross-border demand grew. Platforms pushed Double 11 overseas into 20+ markets.
+* [Cross-border](/enter-china/cross-border-setup) demand grew. Platforms pushed Double 11 overseas into 20+ markets.
 * Pre-sales crept earlier and earlier, until the festival became a **five-week marathon** instead of a one-night sprint.
 
 **Every year added a new layer:**
@@ -64,12 +64,12 @@ Then the game got crowded.
 
 * Sellers built for the game and stopped building for the shopper.
   * List prices quietly crept up ahead of the festival, just to be "discounted" back to normal.
-  * Marketing budgets inflated to chase GMV headlines and buy placements that looked impressive on internal dashboards.
+  * [Marketing](/grow-in-china/campaigns) budgets inflated to chase GMV headlines and buy placements that looked impressive on internal dashboards.
   * Unit economics became something you checked after the festival, not before.
 
 * Shoppers levelled up faster than the system.
   * Guides teaching you how to "stack everything" and "time your order perfectly" are now their own content genre.
-  * Users compare Taobao vs JD vs Pinduoduo vs Douyin across weeks, channels, and devices.
+  * Users compare Taobao vs [JD](/grow-in-china/cross-border-ecommerce) vs Pinduoduo vs Douyin across weeks, channels, and devices.
   * Tools and social groups track prices before, during, and after Double 11 to call out fake deals.
 
 The more complex the game became, the more professional the players on the other side of the screen became.

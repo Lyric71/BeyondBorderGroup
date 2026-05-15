@@ -12,7 +12,7 @@ legacyUrl: "https://beyondbordergroup.com/how-to-localize-a-brand-for-china/"
 
 ## How to localize a Brand for China?
 
-To effectively localize a brand for the Chinese market, it is crucial to understand the unique cultural, social, and economic factors that exist in China. With a population of over 1.4 billion people, China is one of the largest and fastest-growing consumer markets in the world. However, it is also a complex market with its own set of cultural norms, preferences, and regulations.
+To effectively [localize](/enter-china/branding-localisation) a brand for the [Chinese market](/enter-china/market-entry-consulting), it is crucial to understand the unique cultural, social, and economic factors that exist in China. With a population of over 1.4 billion people, China is one of the largest and fastest-growing consumer markets in the world. However, it is also a complex market with its own set of cultural norms, preferences, and regulations.
 
 By following these steps, you can successfully localize your brand and appeal to Chinese consumers.
 
@@ -34,7 +34,7 @@ Popular social media platforms, such as WeChat and Weibo, are widely used in Chi
 
 ### 5. Partner with Local Influencers
 
-Partnering with local influencers, such as bloggers or celebrities, can help increase brand awareness and credibility in the Chinese market. Influencer marketing is particularly popular in China, and consumers trust recommendations from trusted sources.
+Partnering with local influencers, such as bloggers or celebrities, can help increase brand awareness and credibility in the Chinese market. Influencer [marketing](/grow-in-china/campaigns) is particularly popular in China, and consumers trust recommendations from trusted sources.
 
 ### 6. Comply with Regulations
 

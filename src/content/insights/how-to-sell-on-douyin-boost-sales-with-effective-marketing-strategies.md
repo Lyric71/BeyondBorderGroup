@@ -13,7 +13,7 @@ legacyUrl: "https://beyondbordergroup.com/how-to-sell-on-douyin-boost-sales-with
 
 ## Why Sell on Douyin?
 
-Douyin is a vital part of social commerce in China, offering businesses a content-driven platform where users engage deeply with videos, live streams, and shoppable content. Its algorithm-driven recommendations make it easier for brands to target specific audiences, increasing the potential for sales and brand awareness.
+Douyin is a vital part of [social commerce](/grow-in-china/social-commerce) in China, offering businesses a content-driven platform where users engage deeply with videos, live streams, and shoppable content. Its algorithm-driven recommendations make it easier for brands to target specific audiences, increasing the potential for sales and brand awareness.
 
 ### Key Benefits of Selling on Douyin:
 
@@ -34,7 +34,7 @@ Douyin has developed an integrated e-commerce ecosystem that blends content with
 
 * **Shoppable Links in Videos:** Douyin allows brands to add product links to videos, enabling users to shop while watching.
 
-* **Live Streaming:** A powerful tool for real-time product demonstrations, often used in China Livestreaming campaigns.
+* **Live Streaming:** A powerful tool for real-time product demonstrations, often used in China Livestreaming [campaigns](/grow-in-china/campaigns).
 
 This blend of content and commerce makes Douyin unique compared to other eCommerce platforms in China. By using these features, brands can directly engage with users while they consume content.
 
@@ -80,7 +80,7 @@ Live streaming not only enhances user engagement but also offers real-time feedb
 
 ## Collaborating with Key Opinion Leaders (KOLs)
 
-In social commerce in China, KOL marketing is an essential strategy for building credibility and expanding reach. By collaborating with China KOLs, brands can tap into their vast followings to reach targeted demographics more effectively.
+In social commerce in China, [KOL](/grow-in-china/influencers-kols) marketing is an essential strategy for building credibility and expanding reach. By collaborating with China KOLs, brands can tap into their vast followings to reach targeted demographics more effectively.
 
 ### How to Work with KOLs:
 

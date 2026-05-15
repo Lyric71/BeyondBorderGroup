@@ -12,7 +12,7 @@ legacyUrl: "https://beyondbordergroup.com/pipl-compliance-in-china-diors-wake-up
 
 ## When PIPL Bites: Dior's Wake-Up Call for Global Brands in China
 
-For years, China's Personal Information Protection Law (PIPL) sat at the edge of many global brands' China plans. Legal teams flagged it; marketing and e-commerce teams mostly carried on.
+For years, China's Personal Information Protection Law (PIPL) sat at the edge of many [global brands](/enter-china/market-entry-consulting)' China plans. Legal teams flagged it; marketing and e-commerce teams mostly carried on.
 
 Dior's recent prosecution in China changed that. After a data breach at its Shanghai subsidiary, the French luxury house became the first foreign brand formally punished under PIPL. The message from regulators is simple: data protection is no longer theoretical.
 
@@ -32,7 +32,7 @@ Regulators highlighted three core issues:
 
 ## Why Enforcement Is Ramping Up Now
 
-Over the past few years, China has filled in PIPL with practical rules on cross-border transfers, standard contracts, and certification, giving regulators a clear checklist to audit against. At the same time, data sovereignty has moved centre stage: who owns Chinese user data, where it sits, and who can access it is now tied to national security, tech competition, and consumer trust.
+Over the past few years, China has filled in PIPL with practical rules on [cross-border](/enter-china/cross-border-setup) transfers, standard contracts, and certification, giving regulators a clear checklist to audit against. At the same time, data sovereignty has moved centre stage: who owns Chinese user data, where it sits, and who can access it is now tied to national security, tech competition, and consumer trust.
 
 A high-profile case like Dior is both punishment and a public signal. For senior marketers and e-commerce leads, the takeaway is simple: PIPL is no longer something you can leave to "legal and IT". It shapes what your teams can do with customer data day to day.
 

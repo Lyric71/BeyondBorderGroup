@@ -46,7 +46,7 @@ Moreover, there's a nuanced difference between mature and younger Chinese luxury
 
 ## The Influence of Social Status and "Face"
 
-In Chinese culture, the concept of "face", the desire to avoid embarrassment or shame, plays a significant role in purchasing decisions. Luxury travelers prioritize goods and services that enhance their social standing and avoid anything that could cause embarrassment among their peers. This cultural nuance significantly shapes their travel preferences and brand choices.
+In Chinese culture, the concept of "face", the desire to avoid embarrassment or shame, plays a significant role in purchasing decisions. Luxury travelers prioritize goods and services that enhance their social standing and avoid anything that could cause embarrassment among their peers. This cultural nuance significantly shapes their travel preferences and [brand](/enter-china/branding-localisation) choices.
 
 ## The Importance of Personalization and Authenticity
 

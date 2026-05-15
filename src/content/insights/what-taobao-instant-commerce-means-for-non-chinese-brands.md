@@ -15,13 +15,13 @@ legacyUrl: "https://beyondbordergroup.com/what-taobao-instant-commerce-means-for
 
 Double 11 used to be about one question: who could stack the biggest discounts.
 
-This year, Alibaba used it for something different. With Taobao Instant Commerce and the rebrand of Ele.me into Taobao Flash Sale, Alibaba is doing more than chasing festival GMV. It is trying to retrain how people shop in China every day. Instant delivery is no longer a side product inside a food app. It is being woven into the core Taobao experience.
+This year, Alibaba used it for something different. With [Taobao](/grow-in-china/cross-border-ecommerce) Instant Commerce and the rebrand of Ele.me into Taobao Flash Sale, Alibaba is doing more than chasing festival GMV. It is trying to retrain how people shop in China every day. Instant delivery is no longer a side product inside a food app. It is being woven into the core Taobao experience.
 
 For non-Chinese brands, this is less about one campaign and more about planning for a world where Chinese ecommerce behaves a lot more like takeaway.
 
 ## What Alibaba Is Actually Building
 
-Taobao Instant Commerce upgrades Taobao's hourly delivery into a single grid powered by Ele.me riders, Freshippo stores, and partner supermarkets. It now covers everyday essentials, some electronics, and fashion, with tens of millions of instant orders a day.
+[Taobao](/grow-in-china/cross-border-ecommerce) Instant Commerce upgrades Taobao's hourly delivery into a single grid powered by Ele.me riders, Freshippo stores, and partner supermarkets. It now covers everyday essentials, some electronics, and fashion, with tens of millions of instant orders a day.
 
 Taobao Flash Sale is the front door for all of this. The Ele.me app is being renamed, riders are recast as city knights, and the familiar blue of food delivery is slowly replaced by Taobao orange.
 

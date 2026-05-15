@@ -12,7 +12,7 @@ legacyUrl: "https://beyondbordergroup.com/how-to-apply-for-an-icp-license-for-yo
 
 ## How to Apply for an ICP License for Your Website in China
 
-Expanding your business into the Chinese market offers huge potential, especially for companies involved in ecommerce and digital marketing in China. However, this growth comes with strict regulatory requirements. One of the most important steps to legally operate a website in China is securing an ICP (Internet Content Provider) License. Without this license, your website can be blocked, fined, or even shut down, resulting in limited access to one of the largest online audiences in the world.
+Expanding your business into the [Chinese market](/enter-china/market-entry-consulting) offers huge potential, especially for companies involved in ecommerce and digital marketing in China. However, this growth comes with strict regulatory requirements. One of the most important steps to legally operate a [website](/grow-in-china/website) in China is securing an ICP (Internet Content Provider) License. Without this license, your website can be blocked, fined, or even shut down, resulting in limited access to one of the largest online audiences in the world.
 
 In this guide, we'll break down everything you need to know about applying for an ICP License, particularly if you're running an e-commerce platform or working with a marketing agency China. We'll cover who needs an ICP License, the types of licenses available, the step-by-step application process, and the marketing benefits of staying compliant.
 

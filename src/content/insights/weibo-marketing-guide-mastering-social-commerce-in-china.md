@@ -13,7 +13,7 @@ legacyUrl: "https://beyondbordergroup.com/weibo-marketing-guide-mastering-social
 
 ## Understanding Weibo's Potential for Marketing
 
-Weibo is one of the most influential social media platforms in China. It is widely used for its real-time updates and viral content capabilities. Its user base primarily consists of young, tech-savvy individuals aged 19 to 29. This makes it a goldmine for businesses targeting this demographic, especially those collaborating with a branding agency China to refine their strategy.
+Weibo is one of the most influential [social media](/grow-in-china/social-commerce) platforms in China. It is widely used for its real-time updates and viral content capabilities. Its user base primarily consists of young, tech-savvy individuals aged 19 to 29. This makes it a goldmine for businesses targeting this demographic, especially those collaborating with a branding agency China to refine their strategy.
 
 **Key Advantages of Marketing on Weibo:**
 
@@ -104,7 +104,7 @@ Collaborating with influencers or Key Opinion Leaders (KOLs) is a highly effecti
 **How to Work with KOLs:**
 
 - Identify KOLs whose audience aligns with your target demographic.
-- Develop creative campaigns such as product reviews, giveaways, or live events.
+- Develop creative [campaigns](/grow-in-china/campaigns) such as product reviews, giveaways, or live events.
 - Monitor performance metrics like engagement and conversion rates.
 
 ## How to Use System Campaigns on Weibo

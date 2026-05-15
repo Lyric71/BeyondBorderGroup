@@ -1,0 +1,246 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const offices = [
+  {
+    city: 'Shanghai',
+    address: 'Trinity Plaza, 19F\n868 Changshou Road\nPutuo District, Shanghai',
+  },
+  {
+    city: 'Hong Kong',
+    address: "Capitol Centre\n5-19 Jardine's Bazaar\nCauseway Bay, Hong Kong",
+  },
+  {
+    city: 'Paris',
+    address: '12 rue Curial\n75019 Paris\nFrance',
+  },
+];
+
+const bgWords = [
+  { text: '你好',    cls: 'w-1' },
+  { text: '上海',    cls: 'w-2' },
+  { text: 'Bonjour', cls: 'w-3' },
+  { text: '香港',    cls: 'w-4' },
+  { text: 'Hello',   cls: 'w-5' },
+  { text: '巴黎',    cls: 'w-6' },
+  { text: '你好',    cls: 'w-7' },
+];
+---
+
+<Layout
+  title="Nous contacter | Beyond Border Group"
+  description="Cadrer un projet en Chine avec nos équipes de Shanghai, Hong Kong et Paris. Réponse sous un jour ouvré."
+>
+  <section class="contact">
+    <div class="contact__bg" aria-hidden="true">
+      <img
+        class="contact__bg-image"
+        src="/Images/contact-bg.png"
+        alt=""
+        loading="eager"
+        decoding="async"
+      />
+      <span class="contact__bg-veil"></span>
+      <ul class="contact__bg-words">
+        {bgWords.map((w) => <li class={w.cls}>{w.text}</li>)}
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="contact__layout">
+
+        {/* ---------- LEFT: dark intro + info ---------- */}
+        <div class="contact__intro">
+          <span class="eyebrow eyebrow--on-dark">Contact</span>
+          <h1 class="contact__title">Un échange pour cadrer la Chine.</h1>
+          <p class="lead contact__lead">
+            L'équipe répond depuis Shanghai sous un jour ouvré.
+            Un premier message suffit ; les détails viendront ensuite.
+          </p>
+
+          <div class="contact__info">
+            <div class="contact-block">
+              <span class="eyebrow eyebrow--on-dark">Écrire</span>
+              <a class="contact-block__link" href="mailto:hello@beyondbordergroup.com">
+                hello@beyondbordergroup.com
+              </a>
+            </div>
+
+            <div class="contact-block">
+              <span class="eyebrow eyebrow--on-dark">Réponse</span>
+              <p class="contact-block__text">Vingt-quatre heures ouvrées, heure de Chine.</p>
+            </div>
+
+            <div class="contact-block">
+              <span class="eyebrow eyebrow--on-dark">Implantations</span>
+              <ul class="offices">
+                {offices.map(o => (
+                  <li class="office">
+                    <h3 class="office__city">{o.city}</h3>
+                    <address class="office__address">{o.address}</address>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* ---------- RIGHT: white form card ---------- */}
+        <div class="contact__form-card">
+          <h2 class="contact__form-title">Présenter le projet</h2>
+
+          <form class="form" id="contact-form" novalidate>
+            <div class="form__row form__row--2">
+              <div class="field">
+                <label class="field__label" for="firstName">Prénom <span aria-hidden="true">*</span></label>
+                <input class="field__input" type="text" id="firstName" name="firstName" autocomplete="given-name" required />
+              </div>
+              <div class="field">
+                <label class="field__label" for="lastName">Nom de famille <span aria-hidden="true">*</span></label>
+                <input class="field__input" type="text" id="lastName" name="lastName" autocomplete="family-name" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="email">Courriel professionnel <span aria-hidden="true">*</span></label>
+              <input class="field__input" type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="company">Société <span aria-hidden="true">*</span></label>
+              <input class="field__input" type="text" id="company" name="company" autocomplete="organization" required />
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="website">Site internet</label>
+              <input class="field__input" type="url" id="website" name="website" autocomplete="url" placeholder="https://" />
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="message">Le projet en quelques lignes <span aria-hidden="true">*</span></label>
+              <textarea class="field__input field__input--textarea" id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <div class="field field--captcha">
+              <label class="field__label" for="captcha">
+                Vérification : combien font <span id="captchaA">?</span> + <span id="captchaB">?</span> ?
+                <span aria-hidden="true">*</span>
+              </label>
+              <input
+                class="field__input field__input--captcha"
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                id="captcha"
+                name="captcha"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            {/* honeypot, bots fill this, humans don't see it */}
+            <div class="form__honeypot" aria-hidden="true">
+              <label for="website_url">Ne rien renseigner ici</label>
+              <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form__footer">
+              <button type="submit" class="btn btn--primary form__submit" id="contact-submit">
+                Envoyer
+              </button>
+              <p class="form__note">
+                L'envoi vaut accord pour une réponse de notre équipe.
+              </p>
+            </div>
+
+            <p class="form__status" id="contact-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline>
+  (function () {
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('contact-status');
+    const submit = document.getElementById('contact-submit');
+    const captchaA = document.getElementById('captchaA');
+    const captchaB = document.getElementById('captchaB');
+    const captchaInput = document.getElementById('captcha');
+    if (!form) return;
+
+    function rollCaptcha() {
+      const a = Math.floor(Math.random() * 9) + 1;
+      const b = Math.floor(Math.random() * 9) + 1;
+      captchaA.textContent = a;
+      captchaB.textContent = b;
+      form.dataset.captchaSum = String(a + b);
+      if (captchaInput) captchaInput.value = '';
+    }
+    rollCaptcha();
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = '';
+      status.className = 'form__status';
+
+      const data = new FormData(form);
+      if (data.get('website_url')) return; // honeypot tripped, silently drop
+
+      const firstName = String(data.get('firstName') || '').trim();
+      const lastName = String(data.get('lastName') || '').trim();
+      const payload = {
+        name: [firstName, lastName].filter(Boolean).join(' '),
+        email: String(data.get('email') || '').trim(),
+        company: String(data.get('company') || '').trim(),
+        message: String(data.get('message') || '').trim(),
+        captcha: String(data.get('captcha') || '').trim(),
+        captchaExpected: String(form.dataset.captchaSum || ''),
+      };
+
+      const captchaNum = parseInt(payload.captcha, 10);
+      const expectedNum = parseInt(payload.captchaExpected, 10);
+      if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
+        status.textContent = "Vérification incorrecte. Reprenez avec les nouveaux chiffres.";
+        status.classList.add('form__status--error');
+        rollCaptcha();
+        return;
+      }
+
+      if (!payload.name || !payload.email || !payload.message) {
+        status.textContent = "Les champs nom, courriel et message ne peuvent rester vides.";
+        status.classList.add('form__status--error');
+        return;
+      }
+
+      submit.disabled = true;
+      submit.textContent = 'Envoi…';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const body = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(body.error || "L'envoi a échoué. Veuillez recommencer.");
+
+        form.reset();
+        rollCaptcha();
+        status.textContent = 'Message transmis. Redirection…';
+        status.classList.add('form__status--success');
+        window.location.assign('/fr/merci');
+        return;
+      } catch (err) {
+        status.textContent = err && err.message ? err.message : "L'envoi a échoué. Veuillez recommencer.";
+        status.classList.add('form__status--error');
+      } finally {
+        submit.disabled = false;
+        submit.textContent = 'Envoyer';
+      }
+    });
+  })();
+</script>

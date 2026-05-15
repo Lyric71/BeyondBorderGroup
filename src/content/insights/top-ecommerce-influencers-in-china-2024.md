@@ -13,7 +13,7 @@ legacyUrl: "https://beyondbordergroup.com/top-ecommerce-influencers-in-china-202
 
 ## In 2024, Chinese eCommerce is booming
 
-In 2024, Chinese eCommerce is booming, driven by innovative technologies, mobile-first consumer behaviors, and the pivotal role of Key Opinion Leaders (KOLs). With platforms like Xiaohongshu (RED) and Douyin, influencers are changing how brands engage with audiences. KOLs bridge the gap between brands and consumers, offering authenticity, trust, and creativity to drive sales.
+In 2024, Chinese eCommerce is booming, driven by innovative technologies, mobile-first consumer behaviors, and the pivotal role of Key Opinion Leaders (KOLs). With platforms like [Xiaohongshu](/grow-in-china/social-commerce) (RED) and Douyin, influencers are changing how brands engage with audiences. KOLs bridge the gap between brands and consumers, offering authenticity, trust, and creativity to drive sales.
 
 Many brands also collaborate with experts from a digital marketing agency in China or a media buying agency in China to maximize the effectiveness of these partnerships. Here's an in-depth look at the top eCommerce influencers in China, their platforms, and how they contribute to the marketing ecosystem.
 
@@ -36,7 +36,7 @@ These KOLs focus on promoting practical, everyday products, often targeting urba
 * **Platform**: Xiaohongshu
 * **Followers**: 3.9 million
 
-Lin Yilun is celebrated for her cozy and practical lifestyle content, offering audiences insights into home organization, parenting tips, and product recommendations. Her relatable approach to everyday challenges resonates strongly with middle-class urban audiences. Collaborations with a branding agency in China often feature her for creating relatable yet aspirational campaigns.
+Lin Yilun is celebrated for her cozy and practical lifestyle content, offering audiences insights into home organization, parenting tips, and product recommendations. Her relatable approach to everyday challenges resonates strongly with middle-class urban audiences. Collaborations with a branding agency in China often feature her for creating relatable yet aspirational [campaigns](/grow-in-china/campaigns).
 
 ![Lin Yilun lifestyle influencer](https://beyondbordergroup.com/wp-content/uploads/2024/12/Lin-final.png)
 
@@ -111,7 +111,7 @@ Fei Zhu Zhu shares quick and easy recipes, along with creative food hacks. Her c
 * **Platform**: Douyin
 * **Followers**: 738K
 
-Bacon Diary is a juggernaut in the food influencer space, combining visually stunning content with relatable narratives. His focus on traditional Chinese dishes, modern cooking techniques, and humor has garnered him a massive following.
+Bacon Diary is a juggernaut in the food [influencer](/grow-in-china/influencers-kols) space, combining visually stunning content with relatable narratives. His focus on traditional Chinese dishes, modern cooking techniques, and humor has garnered him a massive following.
 
 ![Bacon Diary food content Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/12/bacon-final.png)
 

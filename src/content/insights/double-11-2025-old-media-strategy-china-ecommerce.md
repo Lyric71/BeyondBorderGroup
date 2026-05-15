@@ -20,11 +20,11 @@ Tabs, banners, flash sales, app only perks. For more than a decade, China's bigg
 
 You open your phone and it feels strangely like television.
 
-There are gala-style launch shows with celebrity hosts. Comedy sketches about prices that feel too high and quality that feels too low. Variety segments where KOLs argue with brand managers on stage to unlock one more bundle for the audience. Metro tunnels and outdoor boards start to look like classic brand campaigns again, with big slogans and simple promises.
+There are gala-style launch shows with celebrity hosts. Comedy sketches about prices that feel too high and quality that feels too low. Variety segments where KOLs argue with brand managers on stage to unlock one more bundle for the audience. Metro tunnels and outdoor boards start to look like classic brand [campaigns](/grow-in-china/campaigns) again, with big slogans and simple promises.
 
 The same platforms that taught China to swipe are suddenly speaking in the language of prime time.
 
-This is not nostalgia. It is a strategy. A digital native festival is reaching for old media tools to solve a very modern problem: how to win back the trust and attention of consumers who now shop like professionals.
+This is not nostalgia. It is a strategy. A digital native festival is reaching for old [media](/grow-in-china/media) tools to solve a very modern problem: how to win back the trust and attention of consumers who now shop like professionals.
 
 ## From tab takeover to variety show, in three quick moves
 

@@ -15,7 +15,7 @@ legacyUrl: "https://beyondbordergroup.com/best-practices-for-koc-marketing-in-ch
 
 China's eCommerce market is booming, and earning customer trust has never been more important. While big influencers, or Key Opinion Leaders (KOLs), used to dominate the scene, Key Opinion Consumers (KOCs) are now taking the lead. These everyday shoppers share genuine reviews and experiences, making them a powerful way for brands to connect with people on a more personal level.
 
-For businesses looking to capitalize on this trend, partnering with a digital agency in China or a branding agency in China can help ensure campaigns are strategic, impactful, and well-targeted.
+For businesses looking to capitalize on this trend, partnering with a digital agency in China or a branding agency in China can help ensure [campaigns](/grow-in-china/campaigns) are strategic, impactful, and well-targeted.
 
 This guide explores the best practices for using KOCs in China to grow your business, foster trust, and maximize sales in the competitive Chinese eCommerce market.
 
@@ -23,7 +23,7 @@ This guide explores the best practices for using KOCs in China to grow your busi
 
 KOCs are micro-influencers who prioritize authenticity and relatability. Unlike KOLs, who often have a large but less engaged audience, KOCs establish credibility by sharing personal experiences and honest product reviews. They typically operate within niche markets, targeting specific communities with shared interests or needs.
 
-With the help of a marketing agency in China, brands can identify the right KOCs to align with their goals, ensuring campaigns are both authentic and effective. As Chinese consumers increasingly seek genuine recommendations over celebrity endorsements, KOC marketing has become an essential strategy.
+With the help of a marketing agency in China, brands can identify the right KOCs to align with their goals, ensuring campaigns are both authentic and effective. As Chinese consumers increasingly seek genuine recommendations over celebrity endorsements, [KOC marketing](/grow-in-china/influencers-kols) has become an essential strategy.
 
 ## Benefits of KOC Marketing for eCommerce in China
 

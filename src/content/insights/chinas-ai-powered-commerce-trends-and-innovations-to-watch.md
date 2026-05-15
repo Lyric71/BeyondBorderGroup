@@ -12,7 +12,7 @@ legacyUrl: "https://beyondbordergroup.com/chinas-ai-powered-commerce-trends-and-
 
 ## AI-Powered Marketing Innovations
 
-Chinese companies and digital marketing agencies in China are leading the way in revolutionizing marketing strategies with AI. Platforms like Alibaba and JD.com use AI to offer personalized customer experiences, optimize campaigns, and enhance consumer engagement.
+Chinese companies and digital [marketing](/grow-in-china/campaigns) agencies in China are leading the way in revolutionizing marketing strategies with AI. Platforms like Alibaba and JD.com use AI to offer personalized customer experiences, optimize campaigns, and enhance consumer engagement.
 
 Key applications in marketing include:
 
@@ -28,7 +28,7 @@ These advancements have enabled media agencies in China to help brands achieve n
 
 ## AI in E-Commerce
 
-E-commerce in China has been transformed by AI technologies, creating unparalleled user experiences. Ecommerce agencies in China utilize tools like machine learning and natural language processing to streamline operations and improve customer satisfaction.
+[E-commerce](/grow-in-china/cross-border-ecommerce) in China has been transformed by AI technologies, creating unparalleled user experiences. Ecommerce agencies in China utilize tools like machine learning and natural language processing to streamline operations and improve customer satisfaction.
 
 ### Key Advancements in E-Commerce
 
@@ -48,7 +48,7 @@ Social commerce is a booming sector in China, with platforms like WeChat and Dou
 
 - **Content Personalization:** AI ensures users see ads and products that align with their preferences.
 - **Livestream Shopping:** AI enhances live shopping experiences by providing real-time analytics and interaction tools.
-- **Influencer Marketing:** Algorithms identify suitable influencers for brands, maximizing campaign impact.
+- **[Influencer](/grow-in-china/influencers-kols) Marketing:** Algorithms identify suitable influencers for brands, maximizing campaign impact.
 
 These developments empower social media agencies in China to create innovative marketing strategies, redefining how products are discovered and sold.
 

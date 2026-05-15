@@ -17,7 +17,7 @@ Luxury consumption in China is geographically concentrated, with the majority oc
 
 ## The Influence of Social Media
 
-Social media plays a central role in the purchasing decisions of Chinese luxury consumers. With a social media penetration rate of 67%, platforms like WeChat, Weibo, and Xiaohongshu are essential for brand visibility and customer engagement. More than 80% of Chinese consumers research online before making offline purchases, underscoring the importance of a strong digital presence.
+Social media plays a central role in the purchasing decisions of Chinese luxury consumers. With a social media penetration rate of 67%, platforms like [WeChat](/grow-in-china/social-commerce), Weibo, and Xiaohongshu are essential for brand visibility and customer engagement. More than 80% of Chinese consumers research online before making offline purchases, underscoring the importance of a strong digital presence.
 
 ## Using Social Media to Reach Customers
 
@@ -31,7 +31,7 @@ Building and maintaining customer loyalty is a central challenge for luxury bran
 
 ## Data-Driven Growth Strategies
 
-Data assets are invaluable for luxury brands aiming to drive business growth. Collecting and analyzing consumer data allows brands to develop strategic insights and optimize marketing efforts. Tencent's Data Think Tank provides tools to identify target audiences, optimize budget allocation, and enhance conversion rates, acting as a compass for brands navigating the Chinese market.
+Data assets are invaluable for luxury brands aiming to drive business growth. Collecting and analyzing consumer data allows brands to develop strategic insights and optimize [marketing](/grow-in-china/campaigns) efforts. Tencent's Data Think Tank provides tools to identify target audiences, optimize budget allocation, and enhance conversion rates, acting as a compass for brands navigating the Chinese market.
 
 ## Omnichannel Marketing Approaches
 

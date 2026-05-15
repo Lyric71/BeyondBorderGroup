@@ -18,7 +18,7 @@ Here's what I see coming in 2026.
 
 ## Instant Commerce Will Eat Traditional eCommerce's Lunch
 
-The 30-minute delivery war is just getting started. What I'm calling "instant commerce" (即时零售, jishi lingshou) will aggressively steal market share from traditional eCommerce platforms in 2026.
+The 30-minute delivery war is just getting started. What I'm calling "instant commerce" (即时零售, jishi lingshou) will aggressively steal market share from traditional [eCommerce](/grow-in-china/cross-border-ecommerce) platforms in 2026.
 
 Meituan (美团) already processes over 2 billion instant delivery orders annually. Ele.me (饿了么) has expanded beyond food to beauty, pharma, and consumer electronics.
 
@@ -30,7 +30,7 @@ Tmall (天猫) and JD.com (京东) are racing to build competing infrastructure,
 
 Here's the paradox GenAI creates: as synthetic content floods Xiaohongshu/RED (小红书), Weibo (微博), and Douyin (抖音), authentic human voices become exponentially more valuable.
 
-I'm watching brands scramble to lock in long-term relationships with proven KOLs and KOCs before their rates skyrocket. The economics are straightforward: when every brand can generate thousands of AI influencer posts for pennies, the humans who can move purchase intent become strategic assets.
+I'm watching brands scramble to lock in long-term relationships with proven KOLs and KOCs before their rates skyrocket. The economics are straightforward: when every brand can generate thousands of AI [influencer](/grow-in-china/influencers-kols) posts for pennies, the humans who can move purchase intent become strategic assets.
 
 > Expect KOL fees to increase 30-50% in 2026 for creators who can demonstrate genuine community trust and conversion metrics.
 
@@ -74,7 +74,7 @@ I'm seeing a significant shift in cross-border sentiment. The US market, once th
 
 Does this mean China is easy? Absolutely not. Regulatory uncertainty remains real. The "cheapest wins" procurement mentality still dominates many categories. Local competition is fierce and well-funded.
 
-But the relative economics have shifted. China's cross-border infrastructure, logistics sophistication, and existing frameworks suddenly look attractive when compared to US market entry costs in 2026.
+But the relative economics have shifted. China's cross-border infrastructure, logistics sophistication, and existing frameworks suddenly look attractive when compared to US [market entry](/enter-china/market-entry-consulting) costs in 2026.
 
 ## Xiaohongshu and Douyin Dominate Brand-Building
 

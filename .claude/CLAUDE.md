@@ -377,3 +377,36 @@ Keep subtle. 200ms ease for hover states. Section entrance: fade + 12px rise, 40
 - Commit messages: conventional commits (`feat:`, `fix:`, `chore:`, `docs:`, `style:`).
 - Branch naming: `feature/description`, `fix/description`.
 - Always run build before pushing.
+
+---
+
+## 18. Image optimization (MANDATORY for every image added)
+
+Every raster image (`.jpg`, `.jpeg`, `.png`, `.webp`) added under `public/Images/` must be optimized before it ships. SVG and AVIF are exempt (already vector / already modern).
+
+**Targets**
+
+- Max width 2000px (heroes), 1600px or less for inline. Anything larger gets resized down on optimize.
+- JPG: mozjpeg, quality 82, progressive.
+- PNG: palette + max compression. PNGs without meaningful alpha are flattened on white.
+- WebP: quality 78, effort 6.
+- Files under 30 KB are left alone (no meaningful gain).
+- After optimize, file is replaced in place at the same path with the same extension. No `<picture>` retrofit, no link breakage.
+
+**How it runs**
+
+- Manual: `npm run img:batch` to scan the whole tree, or `node scripts/optimize-images-batch.mjs <path>` for a folder or a single file. Add `--dry` to preview, `--max-width=1600` to override.
+- Automatic: a `pre-commit` git hook (`scripts/hooks/pre-commit` -> `scripts/pre-commit-optimize-images.mjs`) detects staged images under `public/Images/`, runs the optimizer on each, and re-stages them. Install once per clone with `npm run hooks:install`.
+- The single-file `npm run img <path>` script (`scripts/optimize-image.mjs`) is the older variant that emits a JPG + WebP pair into `public/`. Prefer `img:batch` for in-place work; reserve the old script for ad-hoc dual-format exports.
+
+**How to apply when adding images**
+
+1. Drop the source file into the right `public/Images/<topic>/` folder using a kebab-case slug.
+2. Run `npm run img:batch public/Images/<topic>/` (or rely on the pre-commit hook to do it on stage).
+3. Verify the new file size is reasonable: heroes under ~600 KB, inline under ~250 KB, thumbnails under ~80 KB.
+4. Reference the same path in markup, `/Images/<topic>/<file>.<ext>`. The extension does not change.
+5. Always pair with descriptive `alt` text per the copy rules.
+
+**Why:** Half the site weight was photos. From inside China the difference between a 9 MB PNG and a 400 KB PNG is the difference between a page that loads and a page that doesn't. The optimizer keeps quality high enough that the saving is invisible to the eye but cuts payload by 60-90% on most files. Enforcing it via a git hook means we cannot accidentally ship an unoptimized asset.
+
+**How to apply (for future Claude work):** Whenever the user asks for new imagery, generated images, or imports a screenshot/photo, run the batch optimizer on the file before reporting the task as done. Treat unoptimized images the same way you treat em dashes: never ship them.

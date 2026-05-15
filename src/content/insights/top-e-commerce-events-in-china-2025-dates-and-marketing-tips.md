@@ -17,7 +17,7 @@ In China, eCommerce shopping festivals do more than fill a calendar. Each one is
 
 For brands operating in Chinese eCommerce, the landscape is especially promising for cross-border sellers. By using cross-border eCommerce in China, businesses can reach consumers eager for international products while navigating the unique demands of this market.
 
-This article provides a detailed guide to the major eCommerce festivals in 2025, along with strategic insights to help brands align their campaigns with consumer trends and cultural values.
+This article provides a detailed guide to the major eCommerce festivals in 2025, along with strategic insights to help brands align their [campaigns](/grow-in-china/campaigns) with consumer trends and cultural values.
 
 ## Why Shopping Festivals Are Crucial in China's eCommerce Market
 
@@ -35,7 +35,7 @@ For businesses engaged in cross-border eCommerce in China, these festivals are g
 
 #### Lunar New Year (January 29, 2025)
 
-The Lunar New Year is China's most important traditional festival and a major driver of consumer spending. Known for family reunions and gifting traditions, this holiday sees significant activity across e-commerce platforms.
+The Lunar New Year is China's most important traditional festival and a major driver of consumer spending. Known for family reunions and gifting traditions, this holiday sees significant activity across [e-commerce](/grow-in-china/cross-border-ecommerce) platforms.
 
 **Marketing Strategies:**
 
@@ -212,7 +212,7 @@ Cultural festivals in China have deep emotional significance. Craft narratives t
 
 ### Start Early
 
-Engage with a media buying agency in China to secure premium ad placements and maximize reach during pre-sale periods.
+Engage with a [media](/grow-in-china/media) buying agency in China to secure premium ad placements and maximize reach during pre-sale periods.
 
 ### Invest in Localization
 

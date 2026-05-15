@@ -13,7 +13,7 @@ legacyUrl: "https://beyondbordergroup.com/best-short-video-platforms-in-china/"
 
 ## Why Short Video Platforms Are Important for Marketing
 
-Digital marketing in China now relies heavily on short videos because they quickly capture consumer attention and boost engagement. Brands that master short video platforms experience benefits from:
+Digital marketing in China now relies heavily on short videos because they quickly capture consumer attention and boost engagement. Brands that master short video [platforms](/learn-china/platforms) experience benefits from:
 
 - High engagement rates – Short videos are highly interactive and easy to consume.
 - Massive reach – Platforms like Douyin and Kuaishou have hundreds of millions of active users.
@@ -42,7 +42,7 @@ The Chinese TikTok version, Douyin stands as one of China's leading short video 
 
 #### Why Brands Use Douyin
 
-Douyin excels as a marketing platform for brands aiming to reach young urbanites who are drawn to stylish and visually stimulating content. Many businesses collaborate with a marketing agency China to create compelling content and execute influencer partnerships. The platform allows users to effortlessly move from viewing entertaining content to completing a purchase through its smooth e-commerce experience.
+Douyin excels as a marketing platform for brands aiming to reach young urbanites who are drawn to stylish and visually stimulating content. Many businesses collaborate with a marketing agency China to create compelling content and execute [influencer](/grow-in-china/influencers-kols) partnerships. The platform allows users to effortlessly move from viewing entertaining content to completing a purchase through its smooth e-commerce experience.
 
 ### Kuaishou
 

@@ -12,7 +12,7 @@ legacyUrl: "https://beyondbordergroup.com/best-practices-for-finding-a-chinese-n
 
 ## Understand the Cultural and Linguistic Background
 
-China's linguistic diversity and cultural complexity make naming a brand more than just a simple translation exercise. Mandarin is the official language and is spoken by the majority of the population, but other dialects like Cantonese also play a significant role, particularly in regions like Hong Kong and Guangdong.
+China's linguistic diversity and cultural complexity make [naming](/enter-china/branding-localisation) a brand more than just a simple translation exercise. Mandarin is the official language and is spoken by the majority of the population, but other dialects like Cantonese also play a significant role, particularly in regions like Hong Kong and Guangdong.
 
 ### Key Cultural Considerations
 
@@ -58,7 +58,7 @@ For brands involved in douyin ecommerce or social media China, selecting a name 
 
 ## Align with Brand Values and Market Positioning
 
-A Chinese name is an opportunity to reinforce your brand's identity while appealing to local consumer aspirations. In many cases, this may involve adapting your messaging to resonate more strongly with the Chinese market.
+A Chinese name is an opportunity to reinforce your brand's identity while appealing to local consumer aspirations. In many cases, this may involve adapting your messaging to resonate more strongly with the [Chinese market](/enter-china/market-entry-consulting).
 
 ### The Power of Cultural Resonance
 
@@ -71,7 +71,7 @@ In China, brand names often evoke aspirations, such as success, happiness, or pr
 
 Sometimes, brands must adapt their global positioning to better align with local values. For instance, LinkedIn's original positioning of "connecting everyone" was less compelling to Chinese professionals than the aspirational "leading elite." This highlights the importance of aligning the brand message with consumer priorities.
 
-Engaging with a marketing agency China ensures your brand adapts its positioning to better align with these local values.
+Engaging with a [marketing](/grow-in-china/campaigns) agency China ensures your brand adapts its positioning to better align with these local values.
 
 ## Simplify for Memorability and Market Entry
 

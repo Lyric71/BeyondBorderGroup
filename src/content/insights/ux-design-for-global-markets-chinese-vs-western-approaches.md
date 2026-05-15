@@ -28,7 +28,7 @@ The Great Firewall of China and strict internet regulations isolated the country
 
 In contrast, Western markets, driven by platforms like iOS and Android, favor specialized apps that excel at a single purpose. Users prefer streamlined experiences that focus on functionality without overwhelming the interface.
 
-These differing approaches have significantly influenced UX design, particularly in how features are presented and prioritized. For brands supported by a marketing agency in China or a web design agency in China, understanding these differences is essential to crafting localized strategies.
+These differing approaches have significantly influenced [UX design](/grow-in-china/website), particularly in how features are presented and prioritized. For brands supported by a marketing agency in China or a web design agency in China, understanding these differences is essential to crafting localized strategies.
 
 ### Visual Design Philosophies: Minimalism vs. Maximalism
 
@@ -44,7 +44,7 @@ Western websites prioritize simplicity, emphasizing white space, clean lines, an
 
 Chinese websites and apps often adopt a "more is more" philosophy. Vibrant visuals, dense information layouts, and numerous calls-to-action dominate the interface. This reflects cultural preferences for abundance, where busier designs are perceived as offering more value and engagement. For example, Douyin ecommerce uses visually rich interfaces to attract and retain users.
 
-For Western users, Chinese designs might feel overwhelming, while for Chinese users, Western designs can appear sparse and less engaging. Collaborating with a creative agency in China can help businesses strike a balance between these styles when entering the Chinese market.
+For Western users, Chinese designs might feel overwhelming, while for Chinese users, Western designs can appear sparse and less engaging. Collaborating with a creative agency in China can help businesses strike a balance between these styles when entering the [Chinese market](/enter-china/market-entry-consulting).
 
 ### Writing Systems and Their Impact on UX
 

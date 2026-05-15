@@ -13,13 +13,13 @@ legacyUrl: "https://beyondbordergroup.com/the-ultimate-guide-to-wechat-channels-
 
 ## Introduction to WeChat Channels and Social Commerce China
 
-WeChat Channels, developed by Tencent, is a content-sharing feature within the WeChat app that enables users and brands to connect through short videos and photos. With over a billion monthly active users, WeChat offers brands an enormous audience, making Channels a unique platform for China social commerce. Similar to platforms like Douyin and Little Red Book (known as Xiaohongshu), WeChat Channels focuses on delivering interactive and engaging visual content, ideal for China eCommerce strategies.
+[WeChat](/grow-in-china/social-commerce) Channels, developed by Tencent, is a content-sharing feature within the WeChat app that enables users and brands to connect through short videos and photos. With over a billion monthly active users, WeChat offers brands an enormous audience, making Channels a unique platform for China social commerce. Similar to platforms like Douyin and Little Red Book (known as Xiaohongshu), WeChat Channels focuses on delivering interactive and engaging visual content, ideal for China eCommerce strategies.
 
 With smooth integration into WeChat's "super app" ecosystem, Channels connects with messaging, payments, mini-programs, and e-commerce features, making it an ideal place for China brand localization and increasing sales potential.
 
 ## Key Features of WeChat Channels and Audience Insights
 
-WeChat Channels offers several valuable features for brands targeting Chinese social media users. These include short-form video, live streaming, interactive comments, and organic content discovery, which appeal to Chinese users who increasingly prefer interactive and mobile-first digital experiences.
+WeChat Channels offers several valuable features for brands targeting Chinese social media users. These include short-form video, [live streaming](/grow-in-china/production-studio), interactive comments, and organic content discovery, which appeal to Chinese users who increasingly prefer interactive and mobile-first digital experiences.
 
 **Key features:**
 
@@ -57,7 +57,7 @@ Live streaming on Channels allows brands to engage directly with followers, answ
 
 ## Influencer and Key Opinion Leader Marketing
 
-Partnering with China influencers and Key Opinion Leaders (KOLs) is a proven way for brands to expand their reach on WeChat Channels. KOL marketing in China offers brands credibility and access to targeted audiences, as followers trust KOLs' recommendations, making it easier to capture engagement and build brand affinity.
+Partnering with China influencers and Key Opinion Leaders (KOLs) is a proven way for brands to expand their reach on WeChat Channels. [KOL](/grow-in-china/influencers-kols) marketing in China offers brands credibility and access to targeted audiences, as followers trust KOLs' recommendations, making it easier to capture engagement and build brand affinity.
 
 * **KOL Partnerships:** By collaborating with KOLs who specialize in areas relevant to the brand, such as beauty, fashion, or technology, brands can achieve high engagement.
 * **Paid Ads with KOLs:** WeChat Channels offers native ads that appear within users' video feeds, influencer ads, and CPC/CPM ads, giving brands flexibility to increase brand visibility with targeted audiences.

@@ -11,7 +11,7 @@ heroImageAlt: "WeChat QR code example"
 legacyUrl: "https://beyondbordergroup.com/the-power-of-wechat-qr-codes-for-businesses-in-china/"
 ---
 
-In China's rapidly growing digital world, WeChat QR codes have become a part of everyday life. People use them for everything from social networking to shopping and payments. With 95.7% of Chinese mobile payment users depending on QR codes, these simple black-and-white squares have become essential tools for modern business and marketing, well beyond a passing tech trend.
+In China's rapidly growing digital world, [WeChat](/grow-in-china/social-commerce) QR codes have become a part of everyday life. People use them for everything from social networking to shopping and payments. With 95.7% of Chinese mobile payment users depending on QR codes, these simple black-and-white squares have become essential tools for modern business and marketing, well beyond a passing tech trend.
 
 For businesses looking to succeed in the Chinese market, especially in ecommerce China and digital marketing China, understanding how to effectively utilize WeChat QR codes is important. These codes do more than just simplify transactions. They enhance customer engagement, streamline marketing strategies, and create a direct connection between brands and consumers. This guide will explore everything you need to know about using WeChat QR codes to drive your business success in China.
 
@@ -35,7 +35,7 @@ WeChat QR codes eliminate the need for lengthy processes. Instead of typing user
 
 ### Versatility for Businesses
 
-For brands, WeChat QR codes offer an efficient way to connect with customers. Whether it's promoting a new product, offering discounts, or facilitating payments, QR codes can be adapted to various business needs. This flexibility has made them a powerful marketing tool for digital agencies in China looking to create targeted, engaging campaigns.
+For brands, WeChat QR codes offer an efficient way to connect with customers. Whether it's promoting a new product, offering discounts, or facilitating payments, QR codes can be adapted to various business needs. This flexibility has made them a powerful marketing tool for digital agencies in China looking to create targeted, engaging [campaigns](/grow-in-china/campaigns).
 
 ## How WeChat QR Codes Work
 

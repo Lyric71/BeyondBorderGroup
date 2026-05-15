@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Work / Case studies sitemap — 23 EN + 23 FR case studies
+  Both collections have parity: every EN slug has a matching FR file.
+  Slugs are identical across EN and FR (same filename in cases/ and cases-fr/).
+  lastmod values are approximated from the Astro rebuild date; once
+  @astrojs/sitemap reads frontmatter pubDate these will be replaced with real dates.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/camper</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/camper"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/camper"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/camper"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/camper</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/camper"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/camper"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/camper"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/roc</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/roc"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/roc"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/roc"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/roc</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/roc"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/roc"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/roc"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/master-martini</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/master-martini"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/master-martini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/master-martini"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/master-martini</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/master-martini"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/master-martini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/master-martini"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/iguzzini</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/iguzzini"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/iguzzini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/iguzzini"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/iguzzini</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/iguzzini"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/iguzzini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/iguzzini"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/chery</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/chery"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/chery"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/chery"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/chery</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/chery"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/chery"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/chery"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/valio</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/valio"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/valio"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/valio"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/valio</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/valio"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/valio"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/valio"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/marriott</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/marriott"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/marriott"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/marriott"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/marriott</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/marriott"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/marriott"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/marriott"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/viessmann</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/viessmann"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/viessmann"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/viessmann"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/viessmann</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/viessmann"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/viessmann"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/viessmann"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/jac</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/jac"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/jac"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/jac"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/jac</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/jac"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/jac"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/jac"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/langnese</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/langnese"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/langnese"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/langnese"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/langnese</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/langnese"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/langnese"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/langnese"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/blue-insurance</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/blue-insurance"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/blue-insurance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/blue-insurance"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/blue-insurance</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/blue-insurance"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/blue-insurance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/blue-insurance"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/age-20s</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/age-20s"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/age-20s"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/age-20s"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/age-20s</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/age-20s"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/age-20s"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/age-20s"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/jac-automobile</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/jac-automobile"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/jac-automobile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/jac-automobile"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/jac-automobile</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/jac-automobile"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/jac-automobile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/jac-automobile"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/mission-foods</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/mission-foods"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/mission-foods"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/mission-foods"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/mission-foods</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/mission-foods"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/mission-foods"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/mission-foods"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/exlantix</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/exlantix"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/exlantix"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/exlantix"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/exlantix</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/exlantix"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/exlantix"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/exlantix"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/jaguar-land-rover</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/jaguar-land-rover"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/jaguar-land-rover"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/jaguar-land-rover"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/jaguar-land-rover</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/jaguar-land-rover"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/jaguar-land-rover"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/jaguar-land-rover"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/bassetti</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/bassetti"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/bassetti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/bassetti"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/bassetti</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/bassetti"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/bassetti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/bassetti"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/pierre-fabre</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/pierre-fabre"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/pierre-fabre"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/pierre-fabre"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/pierre-fabre</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/pierre-fabre"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/pierre-fabre"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/pierre-fabre"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/shiseido-rq-pyology</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/shiseido-rq-pyology"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/shiseido-rq-pyology"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/shiseido-rq-pyology"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/shiseido-rq-pyology</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/shiseido-rq-pyology"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/shiseido-rq-pyology"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/shiseido-rq-pyology"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/beyondtiktok</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/beyondtiktok"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/beyondtiktok"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/beyondtiktok"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/beyondtiktok</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/beyondtiktok"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/beyondtiktok"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/beyondtiktok"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/kerry-davinci</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/kerry-davinci"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/kerry-davinci"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/kerry-davinci"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/kerry-davinci</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/kerry-davinci"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/kerry-davinci"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/kerry-davinci"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/exeed</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/exeed"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/exeed"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/exeed"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/exeed</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/exeed"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/exeed"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/exeed"/>
+  </url>
+
+  <url>
+    <loc>https://www.beyondbordergroup.com/work/sohomd</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/sohomd"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/sohomd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/sohomd"/>
+  </url>
+  <url>
+    <loc>https://www.beyondbordergroup.com/fr/nos-realisations/sohomd</loc>
+    <lastmod>2026-05-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondbordergroup.com/work/sohomd"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.beyondbordergroup.com/fr/nos-realisations/sohomd"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondbordergroup.com/work/sohomd"/>
+  </url>
+
+</urlset>

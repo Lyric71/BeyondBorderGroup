@@ -11,9 +11,9 @@ heroImageAlt: "Blog comparing Alibaba and Amazon"
 legacyUrl: "https://beyondbordergroup.com/a-comparison-between-tmall-and-amazon/"
 ---
 
-Tmall and Amazon are two of the biggest e-commerce platforms in the world, each with its own strengths and unique features.
+[Tmall](/grow-in-china/cross-border-ecommerce) and Amazon are two of the biggest e-commerce platforms in the world, each with its own strengths and unique features.
 
-Tmall, owned by Alibaba Group, is one of the largest B2C (business-to-consumer) online retail platforms in China. It provides a platform for both domestic and international brands to sell their products directly to consumers in China. Tmall offers a wide range of products, including fashion and clothing, beauty products, home goods, electronics, and much more. Tmall also has a strong emphasis on brand building and customer engagement, with features like brand zones and live streaming.
+[Tmall](/grow-in-china/cross-border-ecommerce), owned by Alibaba Group, is one of the largest B2C (business-to-consumer) online retail platforms in China. It provides a platform for both domestic and international brands to sell their products directly to consumers in China. Tmall offers a wide range of products, including fashion and clothing, beauty products, home goods, electronics, and much more. Tmall also has a strong emphasis on brand building and customer engagement, with features like brand zones and live streaming.
 
 Amazon, on the other hand, is a global e-commerce giant with a presence in many countries, including China. It started as an online bookstore, but over the years it has expanded to offer a wide range of products and services. Amazon offers a massive selection of products, including books, electronics, home goods, groceries, and much more. It also provides services like Amazon Prime, which offers fast shipping, access to streaming services, and other benefits. In addition, Amazon has its own line of products, such as the Amazon Echo smart speaker and Kindle e-reader.
 
