@@ -45,7 +45,7 @@ Première fête traditionnelle du pays, le Nouvel An lunaire reste le premier mo
 
 #### Saint-Valentin (14 février 2025)
 
-![Saint-Valentin par Caixin Global](https://beyondbordergroup.com/wp-content/uploads/2025/01/valentines-day-by-Caixin-Global.jpg)
+![Saint-Valentin par Caixin Global](/Images/insights/2025/01/valentines-day-by-Caixin-Global.jpg)
 
 Source : Caixin Global
 
@@ -60,7 +60,7 @@ D'origine occidentale, la Saint-Valentin a été largement adoptée par la jeune
 
 #### Journée internationale des droits des femmes (8 mars 2025)
 
-![Journée des femmes par China Daily](https://beyondbordergroup.com/wp-content/uploads/2025/01/Womens-day-by-China-Daily.jpg)
+![Journée des femmes par China Daily](/Images/insights/2025/01/Womens-day-by-China-Daily.jpg)
 
 Source : China Daily
 
@@ -98,7 +98,7 @@ Né chez JD.com, le 618 s'est imposé comme l'un des plus grands événements e-
 
 #### Fête des bateaux-dragons (31 mai 2025)
 
-![Bateaux-dragons par South China Morning Post](https://beyondbordergroup.com/wp-content/uploads/2025/01/Dragon-boat-by-South-China-Morning-Post-1024x629.jpg)
+![Bateaux-dragons par South China Morning Post](/Images/insights/2025/01/Dragon-boat-by-South-China-Morning-Post-1024x629.jpg)
 
 Source : South China Morning Post
 
@@ -124,7 +124,7 @@ Désignée comme la Saint-Valentin chinoise, la fête de Qixi puise dans le folk
 
 #### Festival du 8.8 (8 août 2025)
 
-![Festival 88 Air New Zealand par Alizila](https://beyondbordergroup.com/wp-content/uploads/2025/01/88-festival-newzealand-air-by-Alizila-1024x576.jpg)
+![Festival 88 Air New Zealand par Alizila](/Images/insights/2025/01/88-festival-newzealand-air-by-Alizila-1024x576.jpg)
 
 Source : Alizila
 
@@ -138,7 +138,7 @@ Lancée par Alibaba, cette fête met l'accent sur les achats transfrontaliers et
 
 #### Fête des professeurs (10 septembre 2025)
 
-![Fête des professeurs par China Daily](https://beyondbordergroup.com/wp-content/uploads/2025/01/Teachers-Day-by-China-Daily.jpeg)
+![Fête des professeurs par China Daily](/Images/insights/2025/01/Teachers-Day-by-China-Daily.jpeg)
 
 Source : China Daily
 
@@ -174,7 +174,7 @@ Centrée sur la famille, cette fête se vit autour des gâteaux de lune et des l
 
 #### Fête des célibataires (11 novembre 2025)
 
-![Fête des célibataires par Reuters](https://beyondbordergroup.com/wp-content/uploads/2025/01/Singles-Day-by-Reuters-1024x574.jpg)
+![Fête des célibataires par Reuters](/Images/insights/2025/01/Singles-Day-by-Reuters-1024x574.jpg)
 
 Source : Reuters
 

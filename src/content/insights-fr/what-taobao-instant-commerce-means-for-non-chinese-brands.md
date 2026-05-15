@@ -29,7 +29,7 @@ En coulisses, Alibaba a rapatrié le retail temps réel dans sa division e-comme
 
 Subventions massives et investissements ont fait grimper les volumes très vite, sous pression des marges pour toute la filière. Bataille pour la part de marché et l'habitude. Pas pour le résultat trimestriel propre.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/TB-instant-commerce-2-1024x576.png)
+![](/Images/insights/2025/11/TB-instant-commerce-2-1024x576.png)
 
 ## De l'événement commercial à l'habitude de vie locale
 
@@ -80,7 +80,7 @@ La réponse à apporter dépend de la position actuelle de la marque.
 * Protéger d'abord la perception. La rapidité ne doit pas glisser automatiquement vers la lecture « bon marché » ou « grand public ».
 * Concentrer l'investissement sur le search et la mise en visibilité chez Tmall et Taobao. Traiter toute activité d'instant commerce comme une expérience de visibilité, pas comme un moteur de volume.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/TB-instant-commerce-3-1024x576.png)
+![](/Images/insights/2025/11/TB-instant-commerce-3-1024x576.png)
 
 ## Planifier une Chine en mode instant first
 

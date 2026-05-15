@@ -35,7 +35,7 @@ The younger generation of Chinese luxury travelers is showing a growing concern 
 
 Travel providers can capture the interest of Chinese luxury travelers by offering experiences that highlight local culture. For instance, Rissai Valley, a Ritz-Carlton Reserve, provides guests with an intimate luxury retreat in Jiuzhaigou, allowing them to immerse themselves in traditional Tibetan village life.
 
-![Ritz-Carlton luxury villa terrace](https://beyondbordergroup.com/wp-content/uploads/2024/07/rz-jzhrz-two-bedroom-villa-terrace-36218_Wide-Hor.jpeg)
+![Ritz-Carlton luxury villa terrace](/Images/insights/2024/07/rz-jzhrz-two-bedroom-villa-terrace-36218_Wide-Hor.jpeg)
 
 ### Personalized and Customized Travel
 
@@ -51,7 +51,7 @@ The pursuit of holistic well-being is a growing trend among Chinese luxury trave
 
 Xiaohongshu, known as China's lifestyle search engine, is a vital platform for travel inspiration and recommendations. Travel brands can partner with influencers on this platform to showcase unique destinations and experiences, boosting engagement and bookings. Brands can also utilize Xiaohongshu's community features to create user-generated content campaigns that encourage travelers to share their experiences, further enhancing brand visibility and credibility.
 
-![Xiaohongshu platform interface](https://beyondbordergroup.com/wp-content/uploads/2024/07/xiao-1024x551.jpg)
+![Xiaohongshu platform interface](/Images/insights/2024/07/xiao-1024x551.jpg)
 
 ### Utilizing WeChat and Weibo
 
@@ -93,15 +93,15 @@ Collaborating with leading fashion houses, renowned artists, and elite sporting 
 
 Luxury brands can engage travelers by creating unique activations around popular activities, such as skiing or fashion shows. For example, Dior's ski pop-up store at the Lake Songhua Seibu Prince Hotel offered travelers an exclusive shopping experience amidst a picturesque winter landscape. Similarly, Fendi's Winter Sports Capsule Collection pop-up space at The Westin Changbaishan combined fashion with winter sports, offering guests a blend of luxury and adventure. These activations not only attract attention but also provide travelers with exclusive and unforgettable experiences.
 
-![Dior winter fashion activation at luxury resort](https://beyondbordergroup.com/wp-content/uploads/2024/07/dior2-1024x766.jpg)
+![Dior winter fashion activation at luxury resort](/Images/insights/2024/07/dior2-1024x766.jpg)
 
-![Dior pop-up store fashion display](https://beyondbordergroup.com/wp-content/uploads/2024/07/dior-1024x764.jpg)
+![Dior pop-up store fashion display](/Images/insights/2024/07/dior-1024x764.jpg)
 
 ### Event-Driven Tourism
 
 Events like concerts, sports matches, and cultural festivals can significantly drive tourism traffic and spending. Travel brands can capitalize on these events by offering exclusive access and premium experiences to their guests. For example, The Ritz-Carlton's partnership with the Mercedes-AMG Petronas F1 Team provides guests with VIP access to the Shanghai Formula 1 Grand Prix, including behind-the-scenes tours and meet-and-greet sessions with the drivers. Similarly, Marriott Bonvoy's collaboration with the Shanghai Rolex Masters offers exclusive experiences like the Dream Seat series and Master Classes with tennis legend Li Na. These unique offerings not only enhance the travel experience but also create memorable moments that travelers will cherish.
 
-![Ritz-Carlton Mercedes F1 Team partnership luxury experience](https://beyondbordergroup.com/wp-content/uploads/2024/07/LuxExpose-The-Ritz-Carlton_Mercedes-AMG_PETRONAS_F1-1024x683.jpg)
+![Ritz-Carlton Mercedes F1 Team partnership luxury experience](/Images/insights/2024/07/LuxExpose-The-Ritz-Carlton_Mercedes-AMG_PETRONAS_F1-1024x683.jpg)
 
 ### Surprise Elements
 

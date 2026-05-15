@@ -82,7 +82,7 @@ Reserved for large brands with significant budgets, often working with a digital
 
 Crazy Little Brother Yang consistently generated millions in sales during his live-stream sessions. His humorous content and relatable personality captured wide appeal, particularly among young audiences. Humor and authenticity are critical for brands working with a media buying agency China to drive real-time sales through live-stream campaigns.
 
-![Crazy Little Brother Yang](https://beyondbordergroup.com/wp-content/uploads/2024/12/twin.jpg)
+![Crazy Little Brother Yang](/Images/insights/2024/12/twin.jpg)
 
 ### Dong Yuhui, The Education-Led Approach
 
@@ -92,7 +92,7 @@ Crazy Little Brother Yang consistently generated millions in sales during his li
 
 Dong Yuhui combined product promotions with educational content, earning massive engagement and trust. Educational content enhances campaign value, especially for brands aligned with a digital agency China specializing in innovative marketing.
 
-![Dong Yuhui](https://beyondbordergroup.com/wp-content/uploads/2024/12/tutor-2.jpg)
+![Dong Yuhui](/Images/insights/2024/12/tutor-2.jpg)
 
 ### Bo Ge Wei Wu, Relatable Family Content
 
@@ -102,7 +102,7 @@ Dong Yuhui combined product promotions with educational content, earning massive
 
 The duo of young brothers resonated with family audiences by showcasing products in playful, relatable videos. For family-focused campaigns, storytelling is an invaluable tool. Brands can collaborate with a communication agency China to craft emotionally resonant narratives.
 
-![Bo Ge Wei Wu](https://beyondbordergroup.com/wp-content/uploads/2024/12/bo-2.jpg)
+![Bo Ge Wei Wu](/Images/insights/2024/12/bo-2.jpg)
 
 Source: ixigua.com
 
@@ -114,7 +114,7 @@ Source: ixigua.com
 
 Isabella Ye's partnerships with brands like Buccellati highlight the power of luxury influencers in promoting high-end products. Luxury campaigns thrive with influencers who embody exclusivity. Collaborating with a branding agency China ensures alignment with elite brand values.
 
-![Isabella Ye](https://beyondbordergroup.com/wp-content/uploads/2024/12/isabelle.jpg)
+![Isabella Ye](/Images/insights/2024/12/isabelle.jpg)
 
 Source: @1saye
 

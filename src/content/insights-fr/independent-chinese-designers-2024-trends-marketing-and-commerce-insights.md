@@ -24,7 +24,7 @@ La pandémie a posé des défis sérieux à de nombreux créateurs. Beaucoup ont
 
 Les créateurs chinois maîtrisent l'art d'incorporer des éléments culturels dans leurs collections. Motifs traditionnels et esthétique contemporaine fusionnent dans un même geste créatif. L'approche séduit les consommateurs locaux et attire l'attention internationale. Valoriser le patrimoine culturel ouvre la voie à des produits singuliers qui se détachent dans un marché saturé. Le [marketing](/fr/se-developper-en-chine/campagnes) social en Chine tient un rôle clé pour faire connaître ces créations sur des plateformes comme WeChat et Douyin.
 
-![Hommage culturel Chanel](https://beyondbordergroup.com/wp-content/uploads/2024/06/Chanel-1024x816-1.png)
+![Hommage culturel Chanel](/Images/insights/2024/06/Chanel-1024x816-1.png)
 
 Source : China Briefing
 
@@ -36,7 +36,7 @@ La durabilité s'impose comme un axe majeur pour de nombreux créateurs chinois 
 
 Le paysage digital chinois affiche un degré de maturité élevé. Les créateurs y trouvent une palette élargie de leviers d'innovation. Des marques comme 8ON8 jouent à fond la carte de l'intégration numérique. Elles fusionnent expériences physiques et digitales pour livrer des présentations immersives. Métavers et NFT ouvrent de nouvelles voies pour l'engagement de [marque](/fr/entrer-en-chine/marque-et-localisation) et l'interaction avec les consommateurs. Les réseaux sociaux chinois, Weibo et Xiaohongshu en tête, tiennent un rôle moteur dans la diffusion de ces innovations digitales.
 
-![Présentation digitale d'une marque chinoise](https://beyondbordergroup.com/wp-content/uploads/2024/06/dg.png)
+![Présentation digitale d'une marque chinoise](/Images/insights/2024/06/dg.png)
 
 Source : Digital Crew
 

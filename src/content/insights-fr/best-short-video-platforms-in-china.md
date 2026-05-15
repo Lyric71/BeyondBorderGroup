@@ -29,7 +29,7 @@ Divertir et vendre dans le même geste. C'est la promesse. Les marques qui s'en 
 
 Douyin règne sur la vidéo courte. Développée par ByteDance, la plateforme rassemble 731 millions d'utilisateurs actifs autour de contenus rapides et créatifs. L'algorithme sert en continu des vidéos calibrées sur les centres d'intérêt de chaque profil, ce qui en fait un terrain de choix pour les campagnes d'une agence publicitaire en Chine.
 
-![Interface de la plateforme Douyin](https://beyondbordergroup.com/wp-content/uploads/2025/02/Douyin-1024x497.jpg)
+![Interface de la plateforme Douyin](/Images/insights/2025/02/Douyin-1024x497.jpg)
 
 #### Les atouts marketing et e-commerce
 
@@ -38,7 +38,7 @@ Douyin règne sur la vidéo courte. Développée par ByteDance, la plateforme ra
 - Comptes professionnels. Analyse, publicité, outils réservés aux marques.
 - Live commerce. Diffusion en direct et vente immédiate dans la même séquence.
 
-![Diffusion en direct sur Douyin](https://beyondbordergroup.com/wp-content/uploads/2025/02/live-dou-1024x585.png)
+![Diffusion en direct sur Douyin](/Images/insights/2025/02/live-dou-1024x585.png)
 
 #### Ce qui attire les marques
 
@@ -48,7 +48,7 @@ Douyin parle aux jeunes urbains, sensibles à l'esthétique et au tempo. Beaucou
 
 529 millions d'utilisateurs actifs. Là où Douyin cible les tendances urbaines, Kuaishou cultive une logique communautaire qui couvre autant les grandes villes que les zones rurales.
 
-![Diffusion en direct sur Kuaishou](https://beyondbordergroup.com/wp-content/uploads/2025/02/kua-live-1024x597.jpg)
+![Diffusion en direct sur Kuaishou](/Images/insights/2025/02/kua-live-1024x597.jpg)
 
 #### Les atouts marketing et e-commerce
 
@@ -98,7 +98,7 @@ Beaucoup de plateformes intègrent désormais l'achat direct. Le passage du dive
 
 Les deux plateformes dominent la vidéo courte, mais elles s'adressent à des publics distincts. Tout dépend de la cible et des objectifs business.
 
-![Tableau comparatif Douyin vs Kuaishou](https://beyondbordergroup.com/wp-content/uploads/2025/02/Untitled-1-1024x550.png)
+![Tableau comparatif Douyin vs Kuaishou](/Images/insights/2025/02/Untitled-1-1024x550.png)
 
 ### Choisir, ou combiner
 

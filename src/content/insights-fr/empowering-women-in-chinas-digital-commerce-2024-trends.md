@@ -33,7 +33,7 @@ Des plateformes comme [Taobao](https://beyondbordergroup.com/ecommerce-services-
 
 L'histoire de Lorina Tan illustre la bascule. Cette ancienne marketeuse philippine a cofondé la marque de soins pour bébés Tiny Buds en s'appuyant sur les ressources de Lazada. De tels parcours rappellent ce que le commerce numérique rend possible : bâtir et faire grandir des marques solides.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/taobao-app.jpeg)
+![](/Images/insights/2024/06/taobao-app.jpeg)
 
 ## IA et technologie : des alliées de l'égalité
 

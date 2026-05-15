@@ -27,9 +27,9 @@ En Chine, deux acteurs concentrent l'essentiel des flux de paiement mobile : WeC
 * **Le paiement par QR code** : l'ubiquité du QR code en Chine a fait du paiement par scan une fonction de base. Boutique, restaurant, prestataire : on scanne, on règle en quelques secondes, en toute sécurité.
 * **Les mini-programmes** : ces sous-applications tournent à l'intérieur même de WeChat, sans téléchargement séparé. Les marques y installent leur boutique, leur service client, leurs campagnes. Tout reste accessible depuis WeChat, ce qui colle le service au moment d'achat.
 
-![Plateforme WeChat Pay](https://beyondbordergroup.com/wp-content/uploads/2024/07/WeChat-Pay-platform.png)
+![Plateforme WeChat Pay](/Images/insights/2024/07/WeChat-Pay-platform.png)
 
-![Plateforme WeChat Pay 2](https://beyondbordergroup.com/wp-content/uploads/2024/07/WeChat-Pay-platform-2.png)
+![Plateforme WeChat Pay 2](/Images/insights/2024/07/WeChat-Pay-platform-2.png)
 
 Source : WeChat Pay (https://pay.weixin.qq.com/)
 
@@ -60,7 +60,7 @@ Alipay, propriété d'Alibaba, est le pionnier du paiement mobile chinois. Lanc�
 * **Portée internationale** : Alipay déborde la Chine. Présent dans plus de 300 villes à l'international, il sert tout particulièrement les marques qui veulent capter le voyageur chinois à l'étranger ou des audiences globales.
 * **Services financiers** : Alipay aligne une vraie palette de produits financiers, épargne, crédit, assurance, investissement. À l'arrivée, un outil financier complet, qui séduit ceux qui cherchent plus qu'un simple moyen de paiement.
 
-![Plateforme Alipay](https://beyondbordergroup.com/wp-content/uploads/2024/07/Alipay-platform.jpg)
+![Plateforme Alipay](/Images/insights/2024/07/Alipay-platform.jpg)
 
 Source : SmartShanghai
 

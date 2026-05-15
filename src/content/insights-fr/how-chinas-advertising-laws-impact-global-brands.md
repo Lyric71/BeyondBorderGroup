@@ -34,25 +34,25 @@ Les règles publicitaires couvrent tous les secteurs, mais certaines branches su
 
 La réglementation chinoise restreint la publicité dans la santé pour limiter la désinformation. Médicaments sur ordonnance, substances narcotiques et certains produits de santé spécialisés ne peuvent pas être promus, ou le sont sous fortes contraintes. Toute allégation santé doit reposer sur une validation scientifique. Une publicité qui prétendrait qu'un complément alimentaire « guérit » une affection serait interdite sans preuves cliniques.
 
-![Restrictions publicitaires sur la santé en Chine](https://beyondbordergroup.com/wp-content/uploads/2024/12/health-1024x585.png)
+![Restrictions publicitaires sur la santé en Chine](/Images/insights/2024/12/health-1024x585.png)
 
 ### Éducation
 
 Le secteur éducatif est lui aussi strictement encadré, pour protéger les consommateurs des promesses fallacieuses. Les publicités qui garantissent un résultat scolaire ou une admission dans un établissement prestigieux sont interdites. Le recours aux témoignages d'anciens élèves obéit à des règles similaires, pour éviter les techniques promotionnelles exagérées ou infondées.
 
-![Réglementation publicitaire dans l'éducation](https://beyondbordergroup.com/wp-content/uploads/2024/12/education-1024x585.png)
+![Réglementation publicitaire dans l'éducation](/Images/insights/2024/12/education-1024x585.png)
 
 ### Immobilier
 
 La publicité immobilière impose une distinction claire entre la surface totale d'un bâtiment et la surface habitable. Le contenu promotionnel doit aussi décrire fidèlement les commodités à proximité, afin de ne pas induire en erreur sur les avantages d'emplacement.
 
-![Exigences publicitaires dans l'immobilier](https://beyondbordergroup.com/wp-content/uploads/2024/12/real.png)
+![Exigences publicitaires dans l'immobilier](/Images/insights/2024/12/real.png)
 
 ### Alcool et tabac
 
 Les lois publicitaires s'appliquent avec la même rigueur à l'alcool et au tabac. Une publicité pour l'alcool ne peut pas suggérer une réduction du stress, une amélioration physique ou une élévation du statut social. Côté tabac, la publicité est, elle, globalement interdite sur les supports grand public.
 
-![Restrictions publicitaires pour l'alcool et le tabac](https://beyondbordergroup.com/wp-content/uploads/2024/12/alcohol-1024x585.png)
+![Restrictions publicitaires pour l'alcool et le tabac](/Images/insights/2024/12/alcohol-1024x585.png)
 
 Pour les marques de ces secteurs, la maîtrise des règles conditionne la conformité. Un partenariat avec une agence marketing chinoise, rompue à la réglementation locale, aide à tenir le cadre tout en touchant le public cible.
 

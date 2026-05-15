@@ -23,7 +23,7 @@ Social media plays a central role in the purchasing decisions of Chinese luxury 
 
 Effective use of social media is critical for luxury brands aiming to reach and influence Chinese consumers. Key opinion leaders (KOLs) and influencers hold significant sway, and brands must engage with them strategically. Brands are increasingly setting up WeChat official accounts and mini-programs to create proprietary traffic channels, allowing for in-depth interaction and customer retention.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/ss12.jpg)
+![](/Images/insights/2024/06/ss12.jpg)
 
 ## Enhancing Customer Loyalty
 

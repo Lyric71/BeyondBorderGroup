@@ -39,7 +39,7 @@ Three things matter here:
 
 If you are a global brand, the key question is: what do you want people to actually do with your product inside a JD Mall?
 
-![JD Store Interior](https://beyondbordergroup.com/wp-content/uploads/2025/11/JD-store.png)
+![JD Store Interior](/Images/insights/2025/11/JD-store.png)
 
 ## The 5 km Strategy: Mall as Community Hub
 
@@ -57,7 +57,7 @@ JD employees manage experience zones and overall service. Brand specialists sit 
 
 If JD Mall is in your mix, you need to decide how these people talk about your brand, and whether they have the right demos, stories, and content to share.
 
-![JD Staff KOL Content Creation](https://beyondbordergroup.com/wp-content/uploads/2025/11/JD-KOL.png)
+![JD Staff KOL Content Creation](/Images/insights/2025/11/JD-KOL.png)
 
 ## Closing the Loop Between App and Store
 

@@ -45,11 +45,11 @@ Content marketing on WeChat Channels centers on delivering high-quality, engagin
 
 * **Educational Content:** Tutorials, "how-to" guides, and product demos are effective for establishing brand authority while providing valuable insights to users, especially for lifestyle and tech brands.
 
-![WeChat educational content example](https://beyondbordergroup.com/wp-content/uploads/2024/12/wechat-education-1024x585.png)
+![WeChat educational content example](/Images/insights/2024/12/wechat-education-1024x585.png)
 
 * **Localized Content for Festivals:** Cultural festivals like Chinese New Year and Singles Day are ideal times for brands to share themed content that resonates with Chinese audiences, boosting both brand awareness and sales.
 
-![WeChat festival content example](https://beyondbordergroup.com/wp-content/uploads/2024/12/wechat-festival-1024x585.png)
+![WeChat festival content example](/Images/insights/2024/12/wechat-festival-1024x585.png)
 
 ### Live Streaming on WeChat Channels
 

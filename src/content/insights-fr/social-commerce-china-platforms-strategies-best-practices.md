@@ -56,7 +56,7 @@ Xiaohongshu, surnommé Little Red Book, compte parmi les plateformes les plus in
 * Audience jeune : 90 % des utilisateurs ont moins de 32 ans. La génération née dans les années 1990, à l'aise avec le numérique, y est très active.
 * Paiement fluide via WeChat Pay et Alipay : adossée à Tencent et Alibaba, la plateforme bénéficie d'une intégration sans friction avec les principaux systèmes de paiement.
 
-![Plateforme Little Red Book](https://beyondbordergroup.com/wp-content/uploads/2024/06/little-red-book-1024x585.jpg)
+![Plateforme Little Red Book](/Images/insights/2024/06/little-red-book-1024x585.jpg)
 
 ### 2. WeChat
 
@@ -69,7 +69,7 @@ WeChat est la super-app tout-en-un de la Chine. À l'origine messagerie, elle s'
 * WeChat Pay : un paiement sécurisé qui renforce confiance et simplicité.
 * Portée massive : la base utilisateurs colossale de WeChat en fait un passage obligé pour toute marque qui veut s'adresser au marché chinois.
 
-![Plateforme WeChat](https://beyondbordergroup.com/wp-content/uploads/2024/06/wechat-1024x585.jpg)
+![Plateforme WeChat](/Images/insights/2024/06/wechat-1024x585.jpg)
 
 ### 3. Taobao / Tmall (plateforme GuangGuang)
 
@@ -82,7 +82,7 @@ Taobao et Tmall, propriétés d'Alibaba Group, comptent parmi les piliers du e-c
 * Plateforme orientée commerce : à la différence des réseaux sociaux généralistes, Taobao et Tmall sont conçus pour l'achat. Les algorithmes priorisent l'intention d'achat et optimisent l'expérience commerciale.
 * Temps forts commerciaux : la plateforme orchestre plusieurs rendez-vous annuels, bien au-delà du fameux Double 11. Les promotions exclusives génèrent trafic et chiffre d'affaires.
 
-![Plateforme Taobao](https://beyondbordergroup.com/wp-content/uploads/2024/06/taobao-1024x585.jpg)
+![Plateforme Taobao](/Images/insights/2024/06/taobao-1024x585.jpg)
 
 ### 4. Pinduoduo
 
@@ -95,7 +95,7 @@ Pinduoduo joue une partition à part. La plateforme repose sur l'achat groupé :
 * Marques internationales : la plateforme attire de plus en plus de marques étrangères, plébiscitées par les consommateurs en quête de variété et de qualité.
 * Mini-jeux intégrés : l'application retient ses utilisateurs grâce à des animations ludiques qui dopent la fréquence de visite.
 
-![Plateforme Pinduoduo](https://beyondbordergroup.com/wp-content/uploads/2024/06/PINDOUDOU-1024x585.jpg)
+![Plateforme Pinduoduo](/Images/insights/2024/06/PINDOUDOU-1024x585.jpg)
 
 ### 5. Weibo
 
@@ -108,7 +108,7 @@ Souvent comparé à Twitter, Weibo a basculé dans le social commerce avec Weibo
 * Communication directe : Weibo facilite l'échange entre marques et clients, ce qui renforce l'engagement et la qualité de service.
 * Pilotage e-commerce : Weibo Xiaodian permet aux marques de gérer leurs opérations en interne, pour une expérience intégrée côté utilisateur.
 
-![Plateforme Weibo](https://beyondbordergroup.com/wp-content/uploads/2024/06/weibo-1024x585.jpg)
+![Plateforme Weibo](/Images/insights/2024/06/weibo-1024x585.jpg)
 
 ## Pourquoi la Chine domine le social commerce
 

@@ -2,7 +2,7 @@
 title: "Science + Emotion: China's New Brand Playbook"
 description: "One dermocosmetics brand grew 47% at Double 11 while its competitor dropped 57% on the same platforms. The difference came down to distribution architecture and brand strategy rather than product quality."
 pubDate: "2026-03-12"
-author: "Beyond Border Group"
+author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
 tags: ["China ecommerce", "brand strategy", "Douyin", "Tmall", "platform architecture"]
@@ -39,7 +39,7 @@ Collgene ran [Tmall](/grow-in-china/cross-border-ecommerce) and JD as their trus
 
 This is how shelf eCommerce is supposed to work. Not as a transaction layer, but as a credibility asset. Consumers who discover a brand on [Douyin](/grow-in-china/influencers-kols) will search for it on Tmall before they buy. What they find there either closes the sale or kills it.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
+![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
 
 ## Douyin as a Growth Engine, Not a Crutch
 
@@ -57,7 +57,7 @@ Most brands underestimate what Xiaohongshu does in a purchase funnel. Calling it
 
 Collgene seeded emotional narratives there. Gift sets named "Overtime Rescue Kit" and "Stress-Relief Set." Campaigns built around urban life and skin that reacts when you have not slept. That content drove community before it drove conversion.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2026/03/Science-plus-emotion-china-new-brand-playbook-1.png)
+![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-1.png)
 
 ## Three Platforms, Three Jobs
 

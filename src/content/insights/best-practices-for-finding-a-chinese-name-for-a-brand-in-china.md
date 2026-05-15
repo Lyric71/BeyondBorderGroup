@@ -36,7 +36,7 @@ This approach closely mimics the sound of the original name using Chinese charac
 
 * Example: Adidas (阿迪达斯, Ādídásī) retains the sound of the original name while using neutral characters to avoid unintended connotations.
 
-![Adidas Chinese branding](https://beyondbordergroup.com/wp-content/uploads/2025/01/Adidas-300x294.jpg)
+![Adidas Chinese branding](/Images/insights/2025/01/Adidas-300x294.jpg)
 
 ### Strong Evocative Meaning
 
@@ -44,7 +44,7 @@ Here, the focus shifts to creating a name that conveys the brand's essence or va
 
 * Example: Marriott (万豪, Wànháo) translates to "million grand," evoking a sense of luxury and sophistication.
 
-![Marriott Chinese branding](https://beyondbordergroup.com/wp-content/uploads/2025/01/mariott-by-TutorABC-Chinese-300x180.jpg)
+![Marriott Chinese branding](/Images/insights/2025/01/mariott-by-TutorABC-Chinese-300x180.jpg)
 
 ### Phonetic and Meaningful Blend
 
@@ -52,7 +52,7 @@ This approach combines both phonetic similarity and meaningful character selecti
 
 * Example: Coca-Cola (可口可乐, Kěkǒu Kělè) sounds similar to the original name and translates to "tasty happiness," aligning perfectly with the brand's image.
 
-![Coca-Cola Chinese branding](https://beyondbordergroup.com/wp-content/uploads/2025/01/cola-by-TutorABC-Chinese-300x288.jpg)
+![Coca-Cola Chinese branding](/Images/insights/2025/01/cola-by-TutorABC-Chinese-300x288.jpg)
 
 For brands involved in douyin ecommerce or social media China, selecting a name with emotional appeal and phonetic familiarity enhances brand recall and consumer connection.
 

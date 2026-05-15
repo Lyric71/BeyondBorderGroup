@@ -20,9 +20,9 @@ In this guide, we'll break down everything you need to know about applying for a
 
 An ICP License is a mandatory permit issued by the Chinese Ministry of Industry and Information Technology (MIIT) that allows websites to legally operate within China. It ensures that your online platform complies with the country's strict internet regulations, which cover areas like content censorship, data security, and national security.
 
-![ICP license number at the footer of Zuoyebang website, the largest K12 online education platform in China](https://beyondbordergroup.com/wp-content/uploads/2025/02/ICP-ex1-1024x538.png)
+![ICP license number at the footer of Zuoyebang website, the largest K12 online education platform in China](/Images/insights/2025/02/ICP-ex1-1024x538.png)
 
-![ICP license number at the footer of Youku website, a similar video site like YouTube](https://beyondbordergroup.com/wp-content/uploads/2025/02/ICP-ex2-1024x495.png)
+![ICP license number at the footer of Youku website, a similar video site like YouTube](/Images/insights/2025/02/ICP-ex2-1024x495.png)
 
 If you're a business looking to establish an online presence in China, whether through an e-commerce site, a blog, or even a WeChat Mini Program, having an ICP License is non-negotiable. Without it, your website might be inaccessible to Chinese users, thus, severely limiting your market reach.
 

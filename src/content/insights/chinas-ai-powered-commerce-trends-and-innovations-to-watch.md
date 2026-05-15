@@ -20,7 +20,7 @@ Key applications in marketing include:
 - **Dynamic Pricing Models:** AI adjusts prices in real time based on demand, competition, and customer behavior.
 - **Chatbots and Virtual Assistants:** AI-powered assistants improve customer interactions by providing instant support and personalized shopping guidance.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/01/virtual-avatar-by-Alibaba-Group-1024x576.png)
+![](/Images/insights/2025/01/virtual-avatar-by-Alibaba-Group-1024x576.png)
 
 Source: Alibaba Group
 
@@ -42,7 +42,7 @@ As AI advances, crossborder e-commerce in China is becoming more efficient, allo
 
 Social commerce is a booming sector in China, with platforms like WeChat and Douyin integrating AI to analyze user behavior. AI-driven tools help creative agencies in China craft hyper-targeted campaigns that resonate with specific audiences.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/01/livestream-Douyin_2-300x198.png)
+![](/Images/insights/2025/01/livestream-Douyin_2-300x198.png)
 
 ### AI Applications in Social Commerce
 

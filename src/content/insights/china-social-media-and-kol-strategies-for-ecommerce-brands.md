@@ -31,25 +31,25 @@ Understanding the [social media](/grow-in-china/social-commerce) ecosystem in Ch
 
 Known for its versatility, WeChat is used by KOLs to engage with fans, create exclusive content, and even conduct e-commerce directly within the platform.
 
-![KOL WeChat](https://beyondbordergroup.com/wp-content/uploads/2024/11/kol_wechat-2.jpg)
+![KOL WeChat](/Images/insights/2024/11/kol_wechat-2.jpg)
 
 #### Weibo
 
 Similar to Twitter, Weibo is ideal for content sharing, making it a popular space for influencer marketing, especially for news, entertainment, and product updates.
 
-![KOL Weibo](https://beyondbordergroup.com/wp-content/uploads/2024/11/kol_weibo.jpg)
+![KOL Weibo](/Images/insights/2024/11/kol_weibo.jpg)
 
 #### Douyin (TikTok)
 
 As one of the leading short-video platforms, Douyin allows KOLs to showcase products through live streaming and engaging video content.
 
-![KOL Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/11/kol_duoyin.jpg)
+![KOL Douyin](/Images/insights/2024/11/kol_duoyin.jpg)
 
 #### Xiaohongshu (Little Red Book)
 
 Targeting mainly fashion and beauty enthusiasts, Xiaohongshu is known for its authentic community, where KOLs post product reviews and recommendations.
 
-![KOL Red](https://beyondbordergroup.com/wp-content/uploads/2024/11/kol_red.jpg)
+![KOL Red](/Images/insights/2024/11/kol_red.jpg)
 
 ## How to Find the Right KOLs for Your Brand
 

@@ -45,11 +45,11 @@ Le content marketing sur Channels obéit à une exigence simple : produire des c
 
 * **Contenu pédagogique :** tutoriels, guides pratiques, démonstrations produit. Très efficace pour asseoir l'autorité d'une marque, en particulier dans le lifestyle et la technologie.
 
-![Exemple de contenu pédagogique sur WeChat](https://beyondbordergroup.com/wp-content/uploads/2024/12/wechat-education-1024x585.png)
+![Exemple de contenu pédagogique sur WeChat](/Images/insights/2024/12/wechat-education-1024x585.png)
 
 * **Contenu localisé pour les fêtes :** Nouvel An chinois, fête des célibataires, etc. Ces rendez-vous culturels offrent un terrain naturel pour des contenus thématiques qui résonnent localement et tirent ensemble la notoriété et le chiffre d'affaires.
 
-![Exemple de contenu événementiel WeChat](https://beyondbordergroup.com/wp-content/uploads/2024/12/wechat-festival-1024x585.png)
+![Exemple de contenu événementiel WeChat](/Images/insights/2024/12/wechat-festival-1024x585.png)
 
 ### Le live streaming sur Channels
 

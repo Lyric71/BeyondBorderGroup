@@ -63,11 +63,11 @@ Le profil de l'audience pèse autant que celui de l'influenceur. Privilégiez le
 
 Le choix de la plateforme pèse autant que celui du KOC. Xiaohongshu colle parfaitement aux marques de beauté et de lifestyle. Douyin (le TikTok chinois) excelle pour les contenus accrocheurs et viraux. Pour des campagnes plus pointues et informatives, Zhihu ou Weibo prennent l'avantage. Tout dépend du lieu où la cible passe le plus de temps. Collaborer avec une agence d'achat média en Chine aide à repérer les canaux les plus efficaces.
 
-![Marques beauté et lifestyle sur Xiaohongshu](https://beyondbordergroup.com/wp-content/uploads/2024/12/little-final.png)
+![Marques beauté et lifestyle sur Xiaohongshu](/Images/insights/2024/12/little-final.png)
 
-![Contenu engageant et viral sur Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/12/dou-final.png)
+![Contenu engageant et viral sur Douyin](/Images/insights/2024/12/dou-final.png)
 
-![Campagnes professionnelles et informatives sur Weibo](https://beyondbordergroup.com/wp-content/uploads/2024/12/wei-final-300x292.png)
+![Campagnes professionnelles et informatives sur Weibo](/Images/insights/2024/12/wei-final-300x292.png)
 
 ### Examiner le style et le format du contenu
 
@@ -93,13 +93,13 @@ En suivant ces étapes, une marque identifie les KOC capables de la porter et ma
 
 Les KOC excellent dans la production d'UGC qui parle au public. Encouragez-les à publier avis, tutoriels et vidéos d'unboxing qui mettent en valeur le produit sans en faire trop. Cet UGC se réinjecte ensuite sur les canaux propres pour démultiplier la portée.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/unbox-final-300x295.png)
+![](/Images/insights/2024/12/unbox-final-300x295.png)
 
 ### Offrir des expériences exclusives
 
 Confier aux KOC des produits exclusifs ou un accès anticipé à un lancement nourrit leur enthousiasme et la qualité de leurs contenus. Ces avantages rendent leurs avis plus singuliers et plus convaincants.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/launch-final-300x293.png)
+![](/Images/insights/2024/12/launch-final-300x293.png)
 
 ### S'appuyer sur la donnée
 

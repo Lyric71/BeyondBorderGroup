@@ -34,13 +34,13 @@ Ces écoles façonnent l'[UX design](/fr/se-developper-en-chine/site-web) jusque
 
 #### Minimalisme occidental
 
-![Page d'accueil de TikTok](https://beyondbordergroup.com/wp-content/uploads/2025/01/tiktok-website-1024x496.jpg)
+![Page d'accueil de TikTok](/Images/insights/2025/01/tiktok-website-1024x496.jpg)
 
 Le site occidental mise sur la simplicité. Beaucoup de blanc, des lignes nettes, une navigation lisible. Le parti pris colle aux valeurs occidentales d'efficacité et de pragmatisme. Rendu propre, presque professionnel.
 
 #### Maximalisme chinois
 
-![Page d'accueil de Douyin](https://beyondbordergroup.com/wp-content/uploads/2025/01/douyin-website-1024x496.jpg)
+![Page d'accueil de Douyin](/Images/insights/2025/01/douyin-website-1024x496.jpg)
 
 Sites et applications chinois assument l'inverse : plus, c'est plus. Visuels saturés, mises en page denses, appels à l'action multiples. Ce parti pris traduit une préférence culturelle pour l'abondance, lue comme un signe de richesse fonctionnelle et d'engagement. Douyin, sur le terrain e-commerce, en livre l'illustration parfaite.
 
@@ -66,13 +66,13 @@ La manière dont l'information est structurée reflète les priorités culturell
 
 #### UX occidentale
 
-![Page d'accueil d'Amazon](https://beyondbordergroup.com/wp-content/uploads/2025/01/amazon-website-1024x499.jpg)
+![Page d'accueil d'Amazon](/Images/insights/2025/01/amazon-website-1024x499.jpg)
 
 Le site occidental pratique la hiérarchie claire : menus logiques, catégories ordonnées. La structure simplifie la navigation et aide l'utilisateur à trouver vite.
 
 #### UX chinoise
 
-![Page d'accueil d'Alibaba](https://beyondbordergroup.com/wp-content/uploads/2025/01/Alibaba-website-1024x491.jpg)
+![Page d'accueil d'Alibaba](/Images/insights/2025/01/Alibaba-website-1024x491.jpg)
 
 Le site chinois aligne une grande variété d'options en parallèle, avec moins de hiérarchie. Bannières défilantes, CTA qui se chevauchent : tout capte l'attention et pousse l'exploration. Chaotique à un œil occidental. Côté utilisateur chinois, parfaitement aligné avec la préférence pour une interface dense et immersive.
 

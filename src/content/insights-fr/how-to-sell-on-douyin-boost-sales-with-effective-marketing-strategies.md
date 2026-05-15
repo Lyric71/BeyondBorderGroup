@@ -30,7 +30,7 @@ Douyin a monté un dispositif qui marie contenu et commerce. Maîtriser ses outi
 
 * **Flagship Store Douyin :** vitrine personnalisable où la marque expose ses produits et vend directement dans l'application.
 
-![Interface du flagship store Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/10/Douyin-flagship-store.jpg)
+![Interface du flagship store Douyin](/Images/insights/2024/10/Douyin-flagship-store.jpg)
 
 * **Liens produits dans les vidéos :** Douyin ouvre la voie à des liens shoppables qui transforment le visionnage en moment d'achat.
 
@@ -76,7 +76,7 @@ Le livestream s'est imposé comme l'un des leviers les plus efficaces pour faire
 
 Le livestream muscle l'engagement, fournit un retour immédiat et installe la confiance entre la marque et le consommateur.
 
-![Interface de vente en livestream sur Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/10/Douyin-Livestream-Sales-473x1024.png)
+![Interface de vente en livestream sur Douyin](/Images/insights/2024/10/Douyin-Livestream-Sales-473x1024.png)
 
 ## Travailler avec les KOL (Key Opinion Leaders)
 

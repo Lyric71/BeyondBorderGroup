@@ -51,7 +51,7 @@ Une plateforme conçue pour capter la demande, la router localement et la satisf
 
 Le consommateur prend goût à ce rythme, et la barre monte pour tous les acteurs.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/12/TB-flash-2-300x300.png)
+![](/Images/insights/2025/12/TB-flash-2-300x300.png)
 
 ---
 
@@ -68,7 +68,7 @@ Selon People's Daily Online, le marché chinois du retail instantané devrait d�
 **3) Alibaba veut que Taobao s'invite dans la vie quotidienne.**
 Quand Taobao s'empare d'une part plus grande du rythme quotidien, la fidélité monte, la fréquence des sessions aussi, et l'utilité de la plateforme s'élargit.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/12/TB-flash-3-1024x576.png)
+![](/Images/insights/2025/12/TB-flash-3-1024x576.png)
 
 ---
 

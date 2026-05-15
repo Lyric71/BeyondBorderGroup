@@ -27,7 +27,7 @@ La [marketplace](https://beyondbordergroup.com/tmall-taobao-%e6%b7%98%e5%ae%9d-j
 
 Au-delà de sa [marketplace en ligne](https://beyondbordergroup.com/ecommerce-in-china/), Xianyu a poussé ses pions dans le monde physique. La plateforme a ouvert des boutiques à Hangzhou et Shanghai. Ces espaces facilitent l'envoi d'objets pour tri et estimation, et fluidifient l'expérience d'ensemble. Xianyu n'a rien d'une simple marketplace. L'application sert aussi de terrain où l'utilisateur muscle et valorise ses compétences. Beaucoup capitalisent sur leur expérience Xianyu pour étoffer leur CV : rédaction de fiches produits, négociation, relation client. Autant de compétences valorisables dans des contextes professionnels variés, qui ouvrent un avantage réel sur le marché du travail. La plateforme a su fédérer une communauté solide. Elle sert de forum où amateurs et collectionneurs échangent idées et projets collaboratifs. Cette dimension communautaire muscle l'engagement et installe une valeur ajoutée qui dépasse la simple transaction.
 
-![Données Xianyu sur Alibaba Cloud](https://beyondbordergroup.com/wp-content/uploads/2024/07/c63d9d33e9483fa6243735ea3797ddcd8b95dd1c.png)
+![Données Xianyu sur Alibaba Cloud](/Images/insights/2024/07/c63d9d33e9483fa6243735ea3797ddcd8b95dd1c.png)
 
 Source : Alibaba Cloud
 

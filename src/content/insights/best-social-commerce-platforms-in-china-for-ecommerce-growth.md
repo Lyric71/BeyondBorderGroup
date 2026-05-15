@@ -23,7 +23,7 @@ For brands seeking success in China's highly competitive eCommerce space, unders
 
 Xiaohongshu, also known as Little Red Book, is one of the most popular social commerce platforms in China, particularly favored by younger, urban consumers. Initially recognized for its product reviews, mainly in beauty and fashion, it has since expanded into other categories, such as lifestyle, travel, and home goods. With over 260 million active users, Xiaohongshu has become a dominant force in social commerce China, especially for brands targeting younger demographics.
 
-![Xiaohongshu platform interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/Xiaohong-1024x585.png)
+![Xiaohongshu platform interface](/Images/insights/2024/12/Xiaohong-1024x585.png)
 
 ### Key Features
 
@@ -42,7 +42,7 @@ For brands seeking success in eCommerce China, Xiaohongshu offers multiple oppor
 
 WeChat is much more than a messaging platform; it is an all-in-one super app that smoothly integrates Chinese social media, mobile payments, and eCommerce platform China. With over 1.2 billion active users, WeChat offers brands unprecedented reach and engagement opportunities, making it a key player in China digital marketing.
 
-![WeChat platform features](https://beyondbordergroup.com/wp-content/uploads/2024/12/wechat2-1024x585.png)
+![WeChat platform features](/Images/insights/2024/12/wechat2-1024x585.png)
 
 ### Key Features
 
@@ -61,7 +61,7 @@ WeChat offers significant advantages for brands aiming to enhance their China so
 
 As a major player in eCommerce China, Taobao and Tmall, owned by Alibaba, have dominated the market through their social commerce China features, particularly through their GuangGuang platform. These platforms provide brands access to millions of consumers, making them a top choice for companies looking to scale quickly.
 
-![Taobao and Tmall eCommerce platform](https://beyondbordergroup.com/wp-content/uploads/2024/12/taobao2-1024x585.png)
+![Taobao and Tmall eCommerce platform](/Images/insights/2024/12/taobao2-1024x585.png)
 
 ### Key Features
 
@@ -79,7 +79,7 @@ For brands, using China KOLs during live-streaming events and taking part in sea
 
 Pinduoduo is a rising star in social commerce China, standing out with its unique group-buying model. By encouraging users to make purchases with friends and family, Pinduoduo has quickly gained a strong foothold, particularly in lower-tier cities, attracting over 500 million buyers.
 
-![Pinduoduo group buying platform](https://beyondbordergroup.com/wp-content/uploads/2024/12/pind-1024x585.png)
+![Pinduoduo group buying platform](/Images/insights/2024/12/pind-1024x585.png)
 
 ### Key Features
 
@@ -97,7 +97,7 @@ Pinduoduo is ideal for brands that want to capitalize on China social media shop
 
 Weibo, often referred to as China's version of Twitter, has maintained a strong presence in the country's digital landscape, evolving into a significant social commerce China platform. With the launch of Weibo Xiaodian, brands can now sell products directly on the platform, transforming Weibo into a powerful eCommerce tool.
 
-![Weibo social commerce platform](https://beyondbordergroup.com/wp-content/uploads/2024/12/weibo2-1024x585.png)
+![Weibo social commerce platform](/Images/insights/2024/12/weibo2-1024x585.png)
 
 ### Key Features
 

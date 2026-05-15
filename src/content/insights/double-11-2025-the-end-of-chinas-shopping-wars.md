@@ -38,7 +38,7 @@ For international brands, it was the easiest story to sell upstream: "China has 
 
 In that era, the math worked. Margins took a hit, but the story was about acquisition, market share, and learning the ecosystem.
 
-![Screenshot of e-commerce data and trends](https://beyondbordergroup.com/wp-content/uploads/2025/11/Screenshot-2025-11-19-at-3.29.36-PM.png)
+![Screenshot of e-commerce data and trends](/Images/insights/2025/11/Screenshot-2025-11-19-at-3.29.36-PM.png)
 
 ## The compounding effect: more platforms, more tricks, less clarity
 
@@ -109,7 +109,7 @@ Behind closed doors, you hear the same stories:
 * "We increased marketing spend because everyone else did."
 * "We discounted harder just to defend last year's GMV line."
 
-![Screenshot of e-commerce analytics and metrics](https://beyondbordergroup.com/wp-content/uploads/2025/11/Screenshot-2025-11-19-at-3.28.21-PM.png)
+![Screenshot of e-commerce analytics and metrics](/Images/insights/2025/11/Screenshot-2025-11-19-at-3.28.21-PM.png)
 
 ## E-Commerce in China
 

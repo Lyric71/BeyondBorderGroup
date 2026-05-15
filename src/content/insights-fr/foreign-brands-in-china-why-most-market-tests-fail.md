@@ -2,9 +2,9 @@
 title: "Marques étrangères en Chine : pourquoi la plupart des tests de marché échouent"
 description: "Vingt ans de terrain en Chine, et toujours les mêmes erreurs coûteuses. Mauvais canal, prix de brochure, lecture de marché bâclée, budget sous-estimé : la mécanique du fiasco se répète. Décryptage."
 pubDate: "2026-03-25"
-author: "Beyond Border Group"
+author: "Cyril Drouin"
 category: "Market Strategy"
-platforms: ["Douyin"]
+platforms: []
 tags: ["entrée de marché Chine", "e-commerce transfrontalier", "CBEC", "stratégie tarifaire", "Douyin"]
 heroImage: "/Images/insights/foreign-brands-in-china-why-most-market-tests-fail.png"
 heroImageAlt: "Marques étrangères Chine CBEC"

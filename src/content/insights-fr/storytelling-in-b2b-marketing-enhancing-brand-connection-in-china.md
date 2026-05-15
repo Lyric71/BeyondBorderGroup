@@ -24,9 +24,9 @@ L'engagement et la conversion en B2B reposent sur l'alignement de plusieurs él�
 
 La construction d'un récit B2B convaincant en Chine commence par les défis propres à l'audience et par la manière dont la marque y répond. S'y ajoute la boîte à outils du storytelling : développement de personnages, arc narratif autour du parcours client, tensions et résolutions. La combinaison forge une histoire qui résonne auprès des marques et des consommateurs chinois. En éclairant précisément les points de friction et les aspirations des personas, la marque produit des récits qui informent, inspirent, déclenchent l'action. Elle devient alors un guide essentiel dans le parcours de réussite de son client.
 
-![Compte officiel Xiaomi](https://beyondbordergroup.com/wp-content/uploads/2024/04/Xiaomi-Official-Account-2.jpg)
+![Compte officiel Xiaomi](/Images/insights/2024/04/Xiaomi-Official-Account-2.jpg)
 
-![Compte officiel Xiaomi](https://beyondbordergroup.com/wp-content/uploads/2024/04/Xiaomi-Official-Account-3-473x1024.png)
+![Compte officiel Xiaomi](/Images/insights/2024/04/Xiaomi-Official-Account-3-473x1024.png)
 
 ## Authenticité et émotion dans le marketing B2B des marques chinoises
 
@@ -40,6 +40,6 @@ Dans le contexte B2B chinois, où le processus d'achat mobilise plusieurs étape
 
 Le storytelling B2B dépasse la mode passagère. Il s'inscrit au cœur d'une stratégie de contenu solide. En produisant des récits qui touchent émotionnellement et qui épousent le parcours client, l'entreprise engage son audience et fait monter son taux de conversion. Dans un univers où les cycles d'achat s'étirent et se complexifient, un récit fort et authentique reste indispensable pour garder l'attention des prospects et tenir les objectifs marketing.
 
-![Compte officiel Xiaomi](https://beyondbordergroup.com/wp-content/uploads/2024/04/Xiaomi-Official-Account-4-473x1024.jpg)
+![Compte officiel Xiaomi](/Images/insights/2024/04/Xiaomi-Official-Account-4-473x1024.jpg)
 
-![Compte officiel Xiaomi](https://beyondbordergroup.com/wp-content/uploads/2024/04/Xiaomi-Official-Account-1-473x1024.jpg)
+![Compte officiel Xiaomi](/Images/insights/2024/04/Xiaomi-Official-Account-1-473x1024.jpg)

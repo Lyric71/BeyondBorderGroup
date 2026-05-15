@@ -63,11 +63,11 @@ The audience demographics of a KOC are just as important as the influencer thems
 
 Choosing the right platform is equally essential when selecting a KOC. Platforms like Little Red Book (Xiaohongshu) are perfect for beauty and lifestyle brands, while Douyin (Chinese TikTok) works well for creating engaging, viral content. For more professional and information-driven campaigns, platforms such as Zhihu or Weibo may be more effective. Your decision should be based on where your target demographic is most active. Collaborating with a media buying agency in China can help you identify the most effective channels for your audience.
 
-![Beauty and lifestyle brands in Little Red Book (Xiaohongshu)](https://beyondbordergroup.com/wp-content/uploads/2024/12/little-final.png)
+![Beauty and lifestyle brands in Little Red Book (Xiaohongshu)](/Images/insights/2024/12/little-final.png)
 
-![Engaging and viral content in Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/12/dou-final.png)
+![Engaging and viral content in Douyin](/Images/insights/2024/12/dou-final.png)
 
-![Professional and information-driven campaigns in Weibo](https://beyondbordergroup.com/wp-content/uploads/2024/12/wei-final-300x292.png)
+![Professional and information-driven campaigns in Weibo](/Images/insights/2024/12/wei-final-300x292.png)
 
 ### Review Content Style and Format
 
@@ -93,13 +93,13 @@ By following these steps, you can identify the ideal KOCs to represent your bran
 
 KOCs excel at creating relatable UGC. Encourage them to share reviews, tutorials, or "unboxing" videos that showcase your product authentically. UGC can be repurposed across your digital channels to amplify reach.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/unbox-final-300x295.png)
+![](/Images/insights/2024/12/unbox-final-300x295.png)
 
 ### Offer Exclusive Experiences
 
 Providing KOCs with exclusive products or early access to launches can enhance their enthusiasm and content quality. These perks make their reviews feel more special and compelling.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/launch-final-300x293.png)
+![](/Images/insights/2024/12/launch-final-300x293.png)
 
 ### Use Data and Analytics
 

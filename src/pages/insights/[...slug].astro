@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
+import { articleSchema } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const posts = await getCollection('insights', ({ data }) => !data.draft);
@@ -24,6 +25,30 @@ const {
   author,
 } = post.data;
 
+const KNOWN_AUTHORS: Record<string, { url: string }> = {
+  'Cyril Drouin': { url: '/about#cyril-drouin' },
+  'Echo Peng': { url: '/about#echo-peng' },
+  'Liyan Ye': { url: '/about#liyan-ye' },
+};
+const authorLink = KNOWN_AUTHORS[author]?.url;
+
+const articleJsonLd = articleSchema({
+  url: `/insights/${post.id}`,
+  title,
+  description,
+  image: heroImage,
+  pubDate,
+  updatedDate,
+  author,
+  inLanguage: 'en',
+  category,
+  breadcrumb: [
+    { name: 'Home', url: '/' },
+    { name: 'Insights', url: '/insights' },
+    { name: title, url: `/insights/${post.id}` },
+  ],
+});
+
 function formatDate(d?: Date) {
   if (!d) return '';
   return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
@@ -42,7 +67,17 @@ const related = allInsights
   .slice(0, 3);
 ---
 
-<Layout title={`${title} | Beyond Border Group`} description={description}>
+<Layout
+  title={`${title} | Beyond Border Group`}
+  description={description}
+  schema={articleJsonLd}
+  ogType="article"
+  ogImage={heroImage}
+  ogImageAlt={heroImageAlt || title}
+  publishedTime={pubDate}
+  modifiedTime={updatedDate}
+  articleAuthor={author}
+>
   <article class="insight-article">
     <header class="insight-article__header">
       <div class="container container--narrow">
@@ -53,7 +88,7 @@ const related = allInsights
         <h1 class="insight-article__title">{title}</h1>
         <p class="insight-article__lead">{description}</p>
         <div class="insight-article__meta">
-          <span>{author}</span>
+          {authorLink ? <a href={authorLink} rel="author">{author}</a> : <span>{author}</span>}
           {pubDate && (
             <>
               <span aria-hidden="true">·</span>

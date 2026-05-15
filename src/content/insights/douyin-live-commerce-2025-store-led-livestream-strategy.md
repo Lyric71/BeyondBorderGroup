@@ -29,7 +29,7 @@ It is also where Douyin is investing on the product side. The platform has been 
 
 This is why "store-led" goes beyond content. It is a trading model.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2026/01/ecommerce-3.png)
+![](/Images/insights/2026/01/ecommerce-3.png)
 
 ## Case study: Zara made Douyin live shopping feel like a weekly show
 
@@ -84,7 +84,7 @@ This is why store-led rooms keep gaining share. The model is ownable.
   * Retargeting based on viewers and product clickers
   * A content library that becomes performance creative fast
 
-![](https://beyondbordergroup.com/wp-content/uploads/2026/01/ecommerce-2.png)
+![](/Images/insights/2026/01/ecommerce-2.png)
 
 ## Governance is now a performance variable
 

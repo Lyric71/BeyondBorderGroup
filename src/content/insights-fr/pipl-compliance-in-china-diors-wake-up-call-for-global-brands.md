@@ -36,7 +36,7 @@ Ces dernières années, Pékin a précisé le PIPL par des règles concrètes su
 
 Un dossier aussi médiatisé que celui de Dior remplit deux fonctions. Punir, et envoyer un signal public. La leçon pour les directions marketing et e-commerce est limpide. Le PIPL ne se délègue plus aux juristes et aux informaticiens. Il dicte ce que les équipes opérationnelles peuvent faire, au quotidien, avec la donnée client.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/PIPL-2-1-1024x576.png)
+![](/Images/insights/2025/11/PIPL-2-1-1024x576.png)
 
 ## Ce que le PIPL change pour le marketing et le e-commerce
 
@@ -56,7 +56,7 @@ Quand les plateformes marketing cœur sont hébergées à l'étranger, les campa
 
 Vu sous cet angle, le PIPL n'est pas un chantier juridique ponctuel. C'est une contrainte de conception pour l'ensemble du système client Chine.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/PIPL-3-1024x576.png)
+![](/Images/insights/2025/11/PIPL-3-1024x576.png)
 
 ## Les chantiers concrets pour les marques internationales
 

@@ -35,7 +35,7 @@ Luxury brands also performed exceptionally well during the 6.18 sales. Over 200 
 
 The luxury sector's success can be attributed to targeted marketing campaigns that emphasize exclusivity and prestige. Additionally, the introduction of special discounts and limited-time offers during the festival created a sense of urgency, prompting consumers to make quick purchasing decisions.
 
-![Miu Miu luxury product display](https://beyondbordergroup.com/wp-content/uploads/2024/06/S519-1.avif)
+![Miu Miu luxury product display](/Images/insights/2024/06/S519-1.avif)
 
 ## Evolving Shopping Dynamics
 
@@ -55,7 +55,7 @@ The success of the 6.18 sales can be largely attributed to strategic marketing e
 
 Moreover, personalized marketing, based on consumer data and preferences, played a crucial role. Tailored promotions and recommendations enhanced the shopping experience, making it more relevant and engaging for consumers.
 
-![Marketing strategy advertisement display](https://beyondbordergroup.com/wp-content/uploads/2024/06/ads.jpg)
+![Marketing strategy advertisement display](/Images/insights/2024/06/ads.jpg)
 
 ## Conclusion
 

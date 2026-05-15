@@ -38,7 +38,7 @@ Ils parlent à des urbains en quête de solutions concrètes. Produits utiles, t
 
 Lin Yilun s'est installée avec un contenu chaleureux et pratique : organisation domestique, parentalité, sélection produit. Sa lecture des petits tracas du quotidien parle directement à la classe moyenne urbaine. Les agences de branding la sollicitent pour bâtir des [campagnes](/fr/se-developper-en-chine/campagnes) à la fois proches et aspirationnelles.
 
-![Lin Yilun, influenceuse lifestyle](https://beyondbordergroup.com/wp-content/uploads/2024/12/Lin-final.png)
+![Lin Yilun, influenceuse lifestyle](/Images/insights/2024/12/Lin-final.png)
 
 #### Papi酱 (Papi Jiang)
 
@@ -47,7 +47,7 @@ Lin Yilun s'est installée avec un contenu chaleureux et pratique : organisation
 
 Papi Jiang croise humour et regard décalé. Elle glisse le placement produit dans des saynètes courtes sans casser le rythme. Une des figures les plus polyvalentes du segment lifestyle. Les agences créatives chinoises l'activent pour les campagnes qui exigent un vrai sens du récit.
 
-![Papi Jiang, humour et lifestyle](https://beyondbordergroup.com/wp-content/uploads/2024/12/papi-final.png)
+![Papi Jiang, humour et lifestyle](/Images/insights/2024/12/papi-final.png)
 
 ### Voyage et aventure
 
@@ -60,7 +60,7 @@ Le voyage reste un terrain fort : destinations, équipement, art de vivre. Du co
 
 Winnie Wen met en scène des destinations haut de gamme, des hôtels d'exception, des expériences taillées pour la rêverie. Sa communauté affiche un fort pouvoir d'achat. Les régies média chinoises l'activent pour les voyagistes premium.
 
-![Winnie Wen, voyage de luxe](https://beyondbordergroup.com/wp-content/uploads/2024/12/win-final.png)
+![Winnie Wen, voyage de luxe](/Images/insights/2024/12/win-final.png)
 
 #### 氧化菊 (Yanghua Ju)
 
@@ -69,7 +69,7 @@ Winnie Wen met en scène des destinations haut de gamme, des hôtels d'exception
 
 Yanghua Ju chasse les expériences culturelles et les pépites confidentielles. Son ton terre à terre séduit un public d'aventuriers, curieux des lieux que les guides classiques ignorent.
 
-![Yanghua Ju, voyage culturel](https://beyondbordergroup.com/wp-content/uploads/2024/12/yang-final.png)
+![Yanghua Ju, voyage culturel](/Images/insights/2024/12/yang-final.png)
 
 ### Beauté
 
@@ -82,7 +82,7 @@ La beauté demeure la catégorie reine du e-commerce chinois. Tutoriels, tests, 
 
 Yimoney teste sans détour. Du luxe au drugstore abordable, elle livre des avis francs et des tutoriels précis. Pour viser une cible passionnée de beauté, les marques la placent en tête de leur shortlist, souvent par l'intermédiaire d'une agence digitale locale.
 
-![Yimoney, tests beauté](https://beyondbordergroup.com/wp-content/uploads/2024/12/yim-final.png)
+![Yimoney, tests beauté](/Images/insights/2024/12/yim-final.png)
 
 #### 李佳琦 (Austin Li)
 
@@ -91,7 +91,7 @@ Yimoney teste sans détour. Du luxe au drugstore abordable, elle livre des avis 
 
 Surnommé le « roi du rouge à lèvres », Austin Li reste la machine à records du livestream chinois. Travailler avec lui passe presque toujours par une agence digitale capable d'amplifier la campagne autour de la session.
 
-![Austin Li, roi du rouge à lèvres](https://beyondbordergroup.com/wp-content/uploads/2024/12/au-final.png)
+![Austin Li, roi du rouge à lèvres](/Images/insights/2024/12/au-final.png)
 
 ### Food et boissons
 
@@ -104,7 +104,7 @@ Recettes, tests, mise en scène culinaire. Ces KOL convertissent l'appétit en i
 
 Fei Zhu Zhu partage recettes express et astuces de cuisine inventives. Vitrine idéale pour les fabricants d'ustensiles et les groupes agroalimentaires qui passent par une agence marketing en Chine.
 
-![Fei Zhu Zhu, recettes et astuces](https://beyondbordergroup.com/wp-content/uploads/2024/12/fei-final.png)
+![Fei Zhu Zhu, recettes et astuces](/Images/insights/2024/12/fei-final.png)
 
 #### 培根日记 (Bacon Diary)
 
@@ -113,7 +113,7 @@ Fei Zhu Zhu partage recettes express et astuces de cuisine inventives. Vitrine i
 
 Bacon Diary fait figure de référence dans l'[influence](/fr/se-developper-en-chine/influence-et-kol) culinaire. Esthétique soignée, récits qui parlent au plus grand nombre, cuisine traditionnelle revisitée avec des techniques modernes, et une dose d'humour. La recette d'une communauté massive.
 
-![Bacon Diary, food sur Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/12/bacon-final.png)
+![Bacon Diary, food sur Douyin](/Images/insights/2024/12/bacon-final.png)
 
 ## L'effet KOL sur le e-commerce chinois
 

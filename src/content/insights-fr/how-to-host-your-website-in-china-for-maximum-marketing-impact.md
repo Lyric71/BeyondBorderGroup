@@ -34,7 +34,7 @@ Le parcours passe par plusieurs étapes critiques. Chacune conditionne le bon fo
 
 Déposer un domaine en `.cn` figure parmi les premiers gestes de localisation. L'extension pèse sur le référencement Baidu et envoie un signal de crédibilité aux consommateurs locaux.
 
-![Domaine cn pour un site en Chine](https://beyondbordergroup.com/wp-content/uploads/2025/01/cn-domain-1024x598.png)
+![Domaine cn pour un site en Chine](/Images/insights/2025/01/cn-domain-1024x598.png)
 
 #### La procédure d'enregistrement d'un `.cn`
 
@@ -59,7 +59,7 @@ Une fois le domaine acquis, l'hébergeur doit poser ses serveurs en Chine contin
 
 * **Alibaba Cloud :** réputé pour ses solutions évolutives et son intégration native aux outils e-commerce du groupe Alibaba.
 
-![Hébergement web Alibaba Cloud](https://beyondbordergroup.com/wp-content/uploads/2025/01/alibaba-cloud-web-hosting-1024x587.png)
+![Hébergement web Alibaba Cloud](/Images/insights/2025/01/alibaba-cloud-web-hosting-1024x587.png)
 
 Source : Alibaba Cloud
 
@@ -70,7 +70,7 @@ Source : Alibaba Cloud
 
 La licence ICP relève de l'obligation légale pour tout site hébergé sur le territoire. Sans elle, le site reste inopérant, exposé au blocage de la Grande Muraille numérique.
 
-![Licence ICP, portail officiel du gouvernement chinois](https://beyondbordergroup.com/wp-content/uploads/2025/01/ICP.jpg)
+![Licence ICP, portail officiel du gouvernement chinois](/Images/insights/2025/01/ICP.jpg)
 
 Portail officiel : http://beian.miit.gov.cn/
 
@@ -104,7 +104,7 @@ Une fois la licence ICP délivrée, la configuration sur un serveur chinois peut
   - Écarter les sujets sensibles pour rester aligné sur les règles de modération.
 * **Réseau de diffusion :** un CDN basé en Chine accélère le chargement sur l'ensemble du territoire.
 
-![Schéma d'un réseau CDN](https://beyondbordergroup.com/wp-content/uploads/2025/01/CDN-1024x576.png)
+![Schéma d'un réseau CDN](/Images/insights/2025/01/CDN-1024x576.png)
 
 Source : ClouDNS
 
@@ -135,7 +135,7 @@ Avant la mise en ligne, une batterie de tests valide le fonctionnement du site e
 
 * Chinalytics : solution d'analyse web pensée pour les sites opérant en Chine.
 
-![Tableau de bord Chinalytics](https://beyondbordergroup.com/wp-content/uploads/2025/01/Chinalytics-1024x520.jpg)
+![Tableau de bord Chinalytics](/Images/insights/2025/01/Chinalytics-1024x520.jpg)
 
 Source : Chinalytics
 

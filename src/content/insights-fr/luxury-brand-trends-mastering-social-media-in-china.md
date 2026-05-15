@@ -23,7 +23,7 @@ Les réseaux sociaux pèsent lourd dans les décisions d'achat des consommateurs
 
 Bien utiliser les réseaux sociaux conditionne la capacité d'une maison de luxe à atteindre et à influencer le consommateur chinois. Les KOL (Key Opinion Leaders) et les influenceurs pèsent lourd. Les marques les engagent avec méthode. Beaucoup déploient des comptes officiels WeChat et des mini-programmes pour bâtir des canaux de trafic propriétaires, propices aux interactions approfondies et à la fidélisation.
 
-![Marque de luxe sur les réseaux sociaux chinois](https://beyondbordergroup.com/wp-content/uploads/2024/06/ss12.jpg)
+![Marque de luxe sur les réseaux sociaux chinois](/Images/insights/2024/06/ss12.jpg)
 
 ## Renforcer la fidélité client
 

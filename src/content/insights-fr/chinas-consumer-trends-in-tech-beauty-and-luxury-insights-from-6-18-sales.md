@@ -35,7 +35,7 @@ Le luxe n'a pas démérité durant le 6.18. Plus de 200 marques issues des cinq 
 
 La performance du luxe doit beaucoup à un marketing ciblé, articulé autour de l'exclusivité et du prestige. Remises dédiées et offres à durée limitée ont fabriqué un sentiment d'urgence propice à la décision d'achat.
 
-![Présentation produit Miu Miu](https://beyondbordergroup.com/wp-content/uploads/2024/06/S519-1.avif)
+![Présentation produit Miu Miu](/Images/insights/2024/06/S519-1.avif)
 
 ## Une mécanique d'achat redessinée
 
@@ -55,7 +55,7 @@ La performance du 6.18 doit beaucoup à un marketing affûté. Les marques ont c
 
 La personnalisation a tranché. Promotions et recommandations sur mesure, adossées aux données consommateurs, ont rendu l'expérience plus pertinente et plus engageante.
 
-![Affichage publicitaire d'une campagne marketing](https://beyondbordergroup.com/wp-content/uploads/2024/06/ads.jpg)
+![Affichage publicitaire d'une campagne marketing](/Images/insights/2024/06/ads.jpg)
 
 ## Conclusion
 

@@ -2,7 +2,7 @@
 title: "Live commerce et cross-border : l'analyse de Cyril Drouin, CEO de BeyondBorderGroup"
 description: "Cyril Drouin décrypte le live commerce, la localisation, les KOL et ce qui sépare l'économie chinoise du livestream des marchés occidentaux."
 pubDate: "2024-11-05"
-author: "Beyond Border Group"
+author: "Cyril Drouin"
 category: "KOLs & Livestream"
 tags: ["e-commerce transfrontalier", "live commerce", "localisation de marque", "KOL", "expansion en Chine"]
 heroImage: "/Images/insights/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin.jpg"
@@ -16,7 +16,7 @@ legacyUrl: "https://beyondbordergroup.com/navigating-cross-border-commerce-insig
 
 Cyril Drouin, Français installé en Chine de longue date. Sept années à la direction de Publicis China, sur les volets commerce, performance et création, avant de fonder BeyondBorderGroup, une agence [cross-border](/fr/entrer-en-chine/lancement-cross-border). Notre mission tient en deux volets : pousser les marques chinoises à l'international, et installer durablement les groupes étrangers en Chine. Branding, contenu, social media, achat média, relations presse, salons, distribution, logistique : l'agence couvre toute la chaîne.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/11/1727424689670.jpg)
+![](/Images/insights/2024/11/1727424689670.jpg)
 
 ### Que pensez-vous de l'économie du livestream, en Chine et ailleurs ?
 
@@ -26,7 +26,7 @@ En Chine, le livestream sert à vendre. Point. La diffusion conclut, parfois off
 
 Ces dernières années, BeyondBorderGroup a localisé des marques de beauté, d'alimentation et de mobilier pour le marché chinois. Le point de départ varie peu : nom chinois et logo adaptés, refonte des visuels et des vidéos, ouverture des comptes sociaux et e-commerce, premières campagnes avec des KOL. Ça ne suffit pas. Pour durer, une marque doit raconter quelque chose et viser un créneau précis. À défaut, le coût d'acquisition file et devient intenable. Les marques qui percent en Chine partagent quelques traits : un produit difficile à copier, un héritage fort, des objectifs clairs en GMV et en rentabilité, un plan à cinq ans solidement charpenté.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/11/1727424693783.jpg)
+![](/Images/insights/2024/11/1727424693783.jpg)
 
 ### Quelle est la clé pour bâtir une marque à l'international ?
 
@@ -40,7 +40,7 @@ En Chine, les KOL pèsent toujours autant. Mais leur fonction se transforme. La 
 
 Trois écarts dominent : culturel, réglementaire, comportemental. Les marques chinoises sous-estiment leur portée. Le rythme énergique, presque saturé, qui marche à Shanghai exige un recalibrage complet pour parler à Paris ou à Berlin. Côté réglementation, la protection des données, les certifications produit, les normes publicitaires varient fortement et réclament une expertise locale. Reste la perception. Pour rivaliser avec des enseignes européennes ou américaines installées depuis des décennies, les groupes chinois doivent bâtir patiemment leur capital confiance et livrer une qualité irréprochable.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/11/1727424701110.jpg)
+![](/Images/insights/2024/11/1727424701110.jpg)
 
 ### Comment imaginez-vous le commerce transfrontalier dans cinq ans ?
 

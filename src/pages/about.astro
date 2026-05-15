@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { personSchema, aboutPageSchema, PERSON_IDS } from '../lib/seo';
 
 const team = [
   {
@@ -179,11 +180,50 @@ const speakingPhotos = [
   '/Images/public-speaking/e0f5ca19ebdf2bc28529b0294d14b36.jpg',
   '/Images/public-speaking/ed3e093e6adf981738fa10761a936fd.jpg',
 ];
+
+const aboutSchema = [
+  aboutPageSchema('en'),
+  personSchema({
+    id: PERSON_IDS.cyril,
+    name: 'Cyril Drouin',
+    jobTitle: 'Founder & CEO',
+    description:
+      '25 years in digital, advertising and commerce. Former CEO of Publicis Commerce and Performance Marketing for China and North Asia.',
+    image: '/Images/team/cyril-drouin.jpg',
+    sameAs: [
+      'https://www.linkedin.com/in/cyril-d-68835729/',
+      'https://twitter.com/CyrilDrouin',
+      'https://cyrildrouin.substack.com',
+    ],
+    workLocations: ['Shanghai', 'Paris'],
+  }),
+  personSchema({
+    id: PERSON_IDS.echo,
+    name: 'Echo Peng',
+    jobTitle: 'Senior Director & Partner',
+    description:
+      '18 years running eCommerce and digital for global brands in China. Former operations director at Publicis China.',
+    image: '/Images/team/echo-peng.jpg',
+    sameAs: ['https://www.linkedin.com/in/echo-peng/'],
+    workLocations: ['Shanghai'],
+  }),
+  personSchema({
+    id: PERSON_IDS.liyan,
+    name: 'Liyan Ye',
+    jobTitle: 'Senior Director',
+    description:
+      '20 years marketing Fortune 500 brands in China. Leads brand building and campaigns.',
+    image: '/Images/team/liyan-ye.jpg',
+    sameAs: ['https://www.linkedin.com/in/liyan-ye/'],
+    workLocations: ['Shanghai'],
+  }),
+];
 ---
 
 <Layout
   title="Who we are | Beyond Border Group"
   description="Former Publicis executives. 15 years growing global brands in China. Strategy and execution under one roof, with the same senior operators on both."
+  schema={aboutSchema}
 >
 
   {/* ---------- SCROLL PROGRESS ---------- */}

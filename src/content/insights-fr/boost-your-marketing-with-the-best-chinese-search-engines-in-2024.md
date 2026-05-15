@@ -28,7 +28,7 @@ Baidu, le « Google chinois » comme on le surnomme, garde plus de 50 % du march
 
 Pour les marketeurs, Baidu reste une opportunité majeure. La réussite y suppose toutefois de maîtriser ses règles SEO, qui diffèrent sensiblement de celles de Google. Le moteur accorde encore du poids aux mots-clés méta et privilégie nettement le chinois simplifié. Les sites hébergés en Chine avec une licence ICP se classent mieux. L'algorithme valorise aussi le HTTPS, les temps de chargement rapides et la qualité du contenu.
 
-![Logo et interface Baidu](https://beyondbordergroup.com/wp-content/uploads/2024/07/baidu.jpg)
+![Logo et interface Baidu](/Images/insights/2024/07/baidu.jpg)
 
 ### 2. Sogou, le chien chercheur
 
@@ -38,7 +38,7 @@ Sogou, lancé en 2004, occupe la deuxième place. En 2021, le moteur est passé 
 
 Le SEO sur Sogou privilégie le contenu original et l'autorité du site. Les backlinks comptent, parfois plus en quantité qu'en qualité. Les descriptions méta y pèsent moins, mais les balises de titre restent décisives au classement. L'arrimage aux plateformes Tencent ouvre des opportunités côté social et messagerie.
 
-![Interface du moteur Sogou](https://beyondbordergroup.com/wp-content/uploads/2024/07/sougou.jpg)
+![Interface du moteur Sogou](/Images/insights/2024/07/sougou.jpg)
 
 ### 3. Shenma, le mobile d'abord
 
@@ -48,7 +48,7 @@ Shenma, coentreprise Alibaba et UC Web, joue tout sur la recherche mobile. Vu qu
 
 Les liens étroits avec Alibaba donnent priorité aux produits Taobao et Tmall dans les résultats. Le moteur convient donc parfaitement aux marketeurs qui visent l'audience mobile et qui poussent des produits e-commerce. Pour performer, les fiches produits sur Taobao ou Tmall doivent être soignées, côté éditorial comme côté SEO.
 
-![Shenma, moteur de recherche mobile](https://beyondbordergroup.com/wp-content/uploads/2024/07/shenma2-500x408-1.png)
+![Shenma, moteur de recherche mobile](/Images/insights/2024/07/shenma2-500x408-1.png)
 
 ### 4. Haosuo, le moteur sécurité
 
@@ -58,7 +58,7 @@ Alias Qihoo 360 Search, Haosuo mise sur la sécurité. Le moteur capte une part 
 
 Le classement Haosuo valorise les sites à forte autorité et bien perçus côté confiance. Excellent terrain pour le B2B. La concurrence y reste moins vive que sur Baidu, ce qui se traduit souvent par un coût par clic plus bas en publicité payante.
 
-![Interface de recherche Haosuo](https://beyondbordergroup.com/wp-content/uploads/2024/07/Haosou.png)
+![Interface de recherche Haosuo](/Images/insights/2024/07/Haosou.png)
 
 ### 5. Youdao, la référence traduction
 
@@ -68,7 +68,7 @@ Youdao, du groupe NetEase, ressemble plus à une plateforme éducative qu'à un 
 
 Sa base utilisateurs particulière et son orientation éducation en font une plateforme de niche, mais précieuse. Produits et services liés à l'éducation, aux outils d'apprentissage et aux références internationales tirent profit de ses capacités de traduction et de son public engagé.
 
-![Youdao, plateforme de traduction et de recherche](https://beyondbordergroup.com/wp-content/uploads/2024/07/youdao1.jpg)
+![Youdao, plateforme de traduction et de recherche](/Images/insights/2024/07/youdao1.jpg)
 
 ## L'importance du SEO localisé en Chine
 

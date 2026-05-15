@@ -29,27 +29,27 @@ L'appareil chinois du livestream est éclaté. Chaque plateforme s'adresse à un
 
 Taobao Live mène la danse, avec plus de 70 % des transactions en livestream. La plateforme convient aux campagnes de grande ampleur et aligne les outils adaptés pour pousser les ventes pendant les festivals comme Singles' Day.
 
-![Interface Taobao Live](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-tao.png)
+![Interface Taobao Live](/Images/insights/2024/12/live-tao.png)
 
 ### Douyin
 
 Douyin marie divertissement et commerce avec brio. Démographie plus jeune, contenus visuels denses : la plateforme s'impose pour les marques qui veulent mettre en avant des produits innovants.
 
-![Plateforme livestream Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-dou.png)
+![Plateforme livestream Douyin](/Images/insights/2024/12/live-dou.png)
 
 ### Kuaishou
 
 Kuaishou joue la carte de l'authenticité et de la proximité. Le positionnement en fait un terrain de choix pour les campagnes régionales et pour les marques en quête de confiance auprès de communautés de niche.
 
-![Interface de la plateforme Kuaishou](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-kua.png)
+![Interface de la plateforme Kuaishou](/Images/insights/2024/12/live-kua.png)
 
 ### Bilibili
 
 Bilibili s'adresse aux jeunes audiences en quête de contenus fouillés. Son ancrage entre éducation et divertissement en fait une plateforme solide pour des démonstrations produit détaillées.
 
-![Interface Bilibili 1](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-bili1.png)
+![Interface Bilibili 1](/Images/insights/2024/12/live-bili1.png)
 
-![Interface Bilibili 2](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-bili2.png)
+![Interface Bilibili 2](/Images/insights/2024/12/live-bili2.png)
 
 ## Bâtir une stratégie livestream qui gagne
 
@@ -75,7 +75,7 @@ Les meilleurs livestreams ne restent jamais statiques. Sessions de questions-ré
 
 Les festivals commerciaux, comme Singles' Day ou le 618, tiennent un rôle central dans la réussite du livestream e-commerce. Sur ces fenêtres, l'enthousiasme et l'intention d'achat décuplent.
 
-![Calendrier des festivals shopping](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-festi.png)
+![Calendrier des festivals shopping](/Images/insights/2024/12/live-festi.png)
 
 Pour en tirer le maximum :
 

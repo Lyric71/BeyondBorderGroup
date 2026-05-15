@@ -23,7 +23,7 @@ The gross merchandise value (GMV) of China's livestreaming industry is projected
 
 Douyin, internationally known as TikTok, is a leading short-video and livestreaming platform in China. It has gained widespread popularity due to its interactive features and engaging content. The platform allows real-time interactions where viewers can comment, ask questions, and send virtual gifts that content creators can monetize.
 
-![Douyin livestream interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/duoyin-livestream-1024x486.jpg)
+![Douyin livestream interface](/Images/insights/2024/12/duoyin-livestream-1024x486.jpg)
 
 Douyin livestreams span a variety of topics, including entertainment, fashion, lifestyle, education, and cooking, attracting a diverse audience with varied interests. Influencers and celebrities frequently use the platform, enhancing fan engagement through performances, Q&A sessions, and personal life sharing. Additionally, Douyin integrates e-commerce capabilities, enabling creators to showcase and sell products directly to viewers during live sessions, making it a valuable tool for brands and retailers.
 
@@ -31,7 +31,7 @@ Douyin livestreams span a variety of topics, including entertainment, fashion, l
 
 Launched by Alibaba in 2016, Taobao Live has rapidly grown to become China's largest B2C livestreaming platform. It dominates the livestreaming e-commerce market, accounting for 80% of all related transactions in the country.
 
-![Taobao Live platform interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/taobao-live-1024x502.jpg)
+![Taobao Live platform interface](/Images/insights/2024/12/taobao-live-1024x502.jpg)
 
 The platform's success stems from its vast selection of affordable products and a fast, efficient supply chain. This allows livestreamers to quickly showcase, review, and sell products to their dedicated audiences. Taobao Live has become an essential platform for businesses aiming to capitalize on China's booming e-commerce sector.
 
@@ -39,7 +39,7 @@ The platform's success stems from its vast selection of affordable products and 
 
 Kuaishou, backed by Tencent, is another major player in China's livestreaming industry, boasting 673 million monthly active users and nearly $4 billion in revenue during the second quarter of 2023. While luxury brands often focus on Douyin, Kuaishou distinguishes itself with its unique user base in lower-tier cities and smaller towns.
 
-![Kuaishou livestream platform](https://beyondbordergroup.com/wp-content/uploads/2024/12/kua-live-1024x597.jpg)
+![Kuaishou livestream platform](/Images/insights/2024/12/kua-live-1024x597.jpg)
 
 This platform offers brands an exciting opportunity to reach underrepresented demographics, especially in regions such as Hubei, Fujian, and Yunnan, which have shown significant consumer goods sales growth. With experts predicting continued growth in these areas, Kuaishou is positioned as a key channel for reaching emerging markets in China.
 
@@ -47,7 +47,7 @@ This platform offers brands an exciting opportunity to reach underrepresented de
 
 Tencent Video is one of China's largest online video platforms, operated by the tech giant Tencent. It is called WeTV outside of China. Since its launch in 2020, it has rapidly garnered 800 million users, making it the fourth-largest video platform globally, behind only Netflix, Amazon Prime, and Disney+.
 
-![Tencent Video streaming platform](https://beyondbordergroup.com/wp-content/uploads/2024/12/tencent-video-1024x511.jpg)
+![Tencent Video streaming platform](/Images/insights/2024/12/tencent-video-1024x511.jpg)
 
 The platform offers a diverse range of content, including movies, TV shows, animations, documentaries, and sports events. A standout feature of Tencent Video is its ability to foster community interaction through user recommendations, discussions, and content sharing. These features make it a versatile platform for entertainment and engagement.
 
@@ -55,7 +55,7 @@ The platform offers a diverse range of content, including movies, TV shows, anim
 
 Youku, formed from the merger of Youku and Tudou in 2012, is one of China's leading video streaming platforms. It commands an impressive 60% market share in China's online video space.
 
-![Youku video platform interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/youku-live-1024x498.jpg)
+![Youku video platform interface](/Images/insights/2024/12/youku-live-1024x498.jpg)
 
 Often compared to YouTube, Youku differs in its approach, functioning more like Hulu or Netflix. The platform invests heavily in creating original content and offering a wide array of licensed TV shows, movies, and documentaries. Youku's emphasis on high-quality, curated content makes it a dominant force in the Chinese video streaming market.
 

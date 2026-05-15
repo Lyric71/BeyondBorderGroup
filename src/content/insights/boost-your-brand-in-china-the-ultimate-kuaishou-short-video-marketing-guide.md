@@ -31,7 +31,7 @@ Users in lower-tier cities are active participants in China's eCommerce scene, m
 
 Kuaishou is a leader in live-stream eCommerce, where creators can sell products in real time during broadcasts. This live sales model is particularly effective on Kuaishou, with conversion rates up to three to five times higher than Douyin's.
 
-![Kuaishou live commerce interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/kai-live-1024x585.png)
+![Kuaishou live commerce interface](/Images/insights/2024/12/kai-live-1024x585.png)
 
 ### Building Community Trust
 
@@ -75,7 +75,7 @@ Certified accounts gain access to additional features, such as advertising disco
 
 Kuaishou's hashtag system is essential for helping content reach a larger audience. By using trending and relevant hashtags, brands can significantly increase impressions.
 
-![Kuaishou trend tracking interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/kai-trend-1024x585.png)
+![Kuaishou trend tracking interface](/Images/insights/2024/12/kai-trend-1024x585.png)
 
 ### Participating in Challenges
 

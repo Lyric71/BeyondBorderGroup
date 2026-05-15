@@ -82,7 +82,7 @@ Réservés aux marques aux budgets lourds, le plus souvent encadrées par une ag
 
 Crazy Little Brother Yang aligne plusieurs millions de dollars de ventes par session. Son humour et son ton accessible captent un public large, en particulier les jeunes générations. Pour les marques pilotées par une agence d'achat média en Chine et tournées vers la vente en direct, l'authenticité du créateur pèse autant que sa portée.
 
-![Crazy Little Brother Yang](https://beyondbordergroup.com/wp-content/uploads/2024/12/twin.jpg)
+![Crazy Little Brother Yang](/Images/insights/2024/12/twin.jpg)
 
 ### Dong Yuhui, la pédagogie comme moteur
 
@@ -92,7 +92,7 @@ Crazy Little Brother Yang aligne plusieurs millions de dollars de ventes par ses
 
 Dong Yuhui marie promotion produit et contenu éducatif. Le procédé installe un engagement massif et bâtit une confiance solide. Le registre pédagogique enrichit la valeur d'une campagne, en particulier pour les marques appuyées par une agence digitale chinoise positionnée sur le marketing créatif.
 
-![Dong Yuhui](https://beyondbordergroup.com/wp-content/uploads/2024/12/tutor-2.jpg)
+![Dong Yuhui](/Images/insights/2024/12/tutor-2.jpg)
 
 ### Bo Ge Wei Wu, le créneau familial
 
@@ -102,7 +102,7 @@ Dong Yuhui marie promotion produit et contenu éducatif. Le procédé installe u
 
 Ce duo de jeunes frères vise la famille. Le produit trouve sa place dans des vidéos enjouées, faciles d'accès. La narration reste l'arme principale du segment. Les marques s'appuient volontiers sur une agence de communication chinoise pour bâtir des récits qui touchent leur cible.
 
-![Bo Ge Wei Wu](https://beyondbordergroup.com/wp-content/uploads/2024/12/bo-2.jpg)
+![Bo Ge Wei Wu](/Images/insights/2024/12/bo-2.jpg)
 
 Source : ixigua.com
 
@@ -114,7 +114,7 @@ Source : ixigua.com
 
 Les collaborations d'Isabella Ye avec des maisons comme Buccellati illustrent la puissance des influenceuses luxe sur les produits premium. Tout l'enjeu : la capacité du créateur à incarner l'exclusivité. L'accompagnement d'une agence de branding chinoise verrouille l'alignement avec les codes maison.
 
-![Isabella Ye](https://beyondbordergroup.com/wp-content/uploads/2024/12/isabelle.jpg)
+![Isabella Ye](/Images/insights/2024/12/isabelle.jpg)
 
 Source : @1saye
 

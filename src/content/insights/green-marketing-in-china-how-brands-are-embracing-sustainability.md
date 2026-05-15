@@ -18,7 +18,7 @@ In today's market, green marketing has become a powerful tool for brands. It not
 
 Starbucks and Proya Cosmetics have set exemplary standards with their plastic reduction initiatives, particularly around Earth Day. Starbucks incentivized customers to bring their own cups by offering a free medium Americano and upgrading the first 30 participants to an oat milk latte. This initiative not only reduces plastic waste but also embeds sustainable practices into daily routines.
 
-![Starbucks sustainability campaign](https://beyondbordergroup.com/wp-content/uploads/2024/06/SBX20230601-Laxman_China_4-16-1024x683-1.jpg)
+![Starbucks sustainability campaign](/Images/insights/2024/06/SBX20230601-Laxman_China_4-16-1024x683-1.jpg)
 
 Proya Cosmetics, on the other hand, has taken a creative approach by recycling empty bottles into useful eco-friendly items. Their campaign cleverly links the rejuvenation of the skin with the repurposing of empty bottles, reinforcing their brand's sustainable and eco-friendly attributes.
 
@@ -26,7 +26,7 @@ Proya Cosmetics, on the other hand, has taken a creative approach by recycling e
 
 Emotional resonance is key to effective green marketing. Purcotton launched the "Mountain and Sea Cure Plan," a campaign that invited people to recycle old clothes in exchange for environmental protection bags. This initiative not only reduces waste but also fosters a community spirit around environmental protection.
 
-![Purcotton cotton campaign](https://beyondbordergroup.com/wp-content/uploads/2024/06/cotton-era.jpg)
+![Purcotton cotton campaign](/Images/insights/2024/06/cotton-era.jpg)
 
 Goofish, a leading platform for second-hand goods in China, established a green savings center to encourage users to share and spread carbon-reduction knowledge. By engaging users both online and offline, Goofish maximizes the impact of their green initiatives and inspires more people to participate in the circular economy.
 

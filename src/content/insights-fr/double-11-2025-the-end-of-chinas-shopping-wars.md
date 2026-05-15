@@ -38,7 +38,7 @@ Pour les marques internationales, le récit se vendait sans peine au siège : la
 
 À l'époque, le calcul tenait. Les marges absorbaient le choc. Le récit, lui, portait sur l'acquisition, la part de marché et l'apprentissage de l'écosystème.
 
-![Tendances du e-commerce et données chiffrées](https://beyondbordergroup.com/wp-content/uploads/2025/11/Screenshot-2025-11-19-at-3.29.36-PM.png)
+![Tendances du e-commerce et données chiffrées](/Images/insights/2025/11/Screenshot-2025-11-19-at-3.29.36-PM.png)
 
 ## L'effet boule de neige : plus de plateformes, plus d'astuces, moins de clarté
 
@@ -109,7 +109,7 @@ En coulisses, les mêmes constats reviennent :
 * « Le budget marketing a été relevé parce que tout le monde l'a relevé. »
 * « La remise a été creusée juste pour défendre la ligne GMV de l'an dernier. »
 
-![Capture d'écran d'un tableau analytique e-commerce](https://beyondbordergroup.com/wp-content/uploads/2025/11/Screenshot-2025-11-19-at-3.28.21-PM.png)
+![Capture d'écran d'un tableau analytique e-commerce](/Images/insights/2025/11/Screenshot-2025-11-19-at-3.28.21-PM.png)
 
 ## Le e-commerce en Chine
 

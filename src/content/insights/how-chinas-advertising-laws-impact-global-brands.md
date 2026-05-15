@@ -34,25 +34,25 @@ While advertising regulations apply across all industries, certain sectors in Ch
 
 China's advertising regulations restrict healthcare advertising to prevent misinformation. Prescription drugs, narcotics, and specialized health products either cannot be advertised or are heavily restricted. Health claims require scientific validation, meaning an advertisement suggesting that a health supplement can "cure" a condition would be disallowed unless clinically verified.
 
-![Health advertising restrictions in China](https://beyondbordergroup.com/wp-content/uploads/2024/12/health-1024x585.png)
+![Health advertising restrictions in China](/Images/insights/2024/12/health-1024x585.png)
 
 ### Education
 
 The education sector is also tightly regulated to protect consumers from misleading claims. Ads promoting guaranteed educational outcomes or prestigious placements are restricted, as these claims are considered deceptive. The use of testimonials or endorsements by former students is similarly regulated to prevent exaggerated or unfounded promotional tactics.
 
-![Education advertising regulations](https://beyondbordergroup.com/wp-content/uploads/2024/12/education-1024x585.png)
+![Education advertising regulations](/Images/insights/2024/12/education-1024x585.png)
 
 ### Real Estate
 
 Real estate advertising in China must adhere to strict rules requiring clear distinction between total building area and usable living space. Additionally, promotional content must be accurate in describing nearby amenities to prevent consumer deception about location benefits.
 
-![Real estate advertising requirements](https://beyondbordergroup.com/wp-content/uploads/2024/12/real.png)
+![Real estate advertising requirements](/Images/insights/2024/12/real.png)
 
 ### Alcohol and Tobacco
 
 Strict advertising laws also apply to alcohol and tobacco products. Alcohol ads cannot imply stress relief, physical improvement, or social status enhancement. Tobacco advertising, meanwhile, is generally banned across public-facing platforms to limit its promotion and influence.
 
-![Alcohol and tobacco advertising restrictions](https://beyondbordergroup.com/wp-content/uploads/2024/12/alcohol-1024x585.png)
+![Alcohol and tobacco advertising restrictions](/Images/insights/2024/12/alcohol-1024x585.png)
 
 For brands in these sectors, navigating these stringent advertising laws is critical for compliance. Partnering with a China marketing agency that understands local regulations can help ensure adherence to the laws while effectively reaching the intended audience through compliant advertising channels.
 

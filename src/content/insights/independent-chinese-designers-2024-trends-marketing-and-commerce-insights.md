@@ -24,7 +24,7 @@ The pandemic posed significant challenges for many designers, leading them to re
 
 Chinese designers are adept at incorporating cultural elements into their creations, blending traditional motifs with modern aesthetics. This approach not only appeals to local consumers but also attracts international attention. The emphasis on cultural heritage allows designers to create unique products that stand out in a crowded market. Social [marketing](/grow-in-china/campaigns) in China plays a crucial role in promoting these culturally rich designs on platforms like Wechat and Douyin.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/Chanel-1024x816-1.png)
+![](/Images/insights/2024/06/Chanel-1024x816-1.png)
 
 Source: China Briefing
 
@@ -36,7 +36,7 @@ Sustainability has become a key focus for many independent Chinese designers. Br
 
 The digital landscape in China is highly advanced, providing designers with numerous opportunities to innovate. Brands like 8ON8 are using the power of digital integration, combining physical and digital experiences to create immersive fashion presentations. The use of the Metaverse and NFTs has opened new avenues for [brand](/enter-china/branding-localisation) engagement and consumer interaction. Social media platforms in China, such as Weibo and Little Red Book, are instrumental in promoting these digital innovations.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/dg.png)
+![](/Images/insights/2024/06/dg.png)
 
 Source: Digital Crew
 

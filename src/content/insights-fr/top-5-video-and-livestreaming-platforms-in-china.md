@@ -23,7 +23,7 @@ Le volume d'affaires du live commerce chinois doit franchir la barre des 1 000 m
 
 Douyin, connue à l'international sous le nom de TikTok, règne sur la vidéo courte et le live en Chine. Sa popularité tient à la richesse de son interactivité et à la diversité de ses contenus. La plateforme autorise l'échange en temps réel : commentaires, questions, cadeaux virtuels que les créateurs monétisent.
 
-![Interface Douyin Live](https://beyondbordergroup.com/wp-content/uploads/2024/12/duoyin-livestream-1024x486.jpg)
+![Interface Douyin Live](/Images/insights/2024/12/duoyin-livestream-1024x486.jpg)
 
 Le live sur Douyin couvre un large spectre : divertissement, mode, lifestyle, formation, cuisine. L'audience reste hétérogène, ses centres d'intérêt variés. Influenceurs et célébrités y entretiennent leur lien avec leurs fans à coups de performances, de sessions questions-réponses et de tranches de vie. Douyin intègre des fonctionnalités e-commerce qui permettent au créateur de présenter et de vendre directement aux spectateurs pendant la session. L'un des outils les plus puissants pour les marques et les distributeurs.
 
@@ -31,7 +31,7 @@ Le live sur Douyin couvre un large spectre : divertissement, mode, lifestyle, fo
 
 Lancée par Alibaba en 2016, Taobao Live s'est imposée comme la première plateforme B2C de live commerce en Chine. Le service capte 80 % des transactions de live commerce du pays.
 
-![Interface Taobao Live](https://beyondbordergroup.com/wp-content/uploads/2024/12/taobao-live-1024x502.jpg)
+![Interface Taobao Live](/Images/insights/2024/12/taobao-live-1024x502.jpg)
 
 Le succès de la plateforme tient à un catalogue immense de produits abordables et à une chaîne logistique rapide et fiable. Les hôtes présentent, testent et vendent à une communauté constituée en quelques minutes. Pour les marques engagées dans l'e-commerce chinois, Taobao Live est devenu un passage obligé.
 
@@ -39,7 +39,7 @@ Le succès de la plateforme tient à un catalogue immense de produits abordables
 
 Kuaishou, soutenue par Tencent, figure parmi les poids lourds du live commerce chinois. La plateforme revendique 673 millions d'utilisateurs actifs mensuels et près de 4 milliards de dollars de revenus au deuxième trimestre 2023. Là où le luxe se concentre sur Douyin, Kuaishou tire sa singularité de son ancrage dans les villes de rang inférieur et les bourgs ruraux.
 
-![Plateforme live Kuaishou](https://beyondbordergroup.com/wp-content/uploads/2024/12/kua-live-1024x597.jpg)
+![Plateforme live Kuaishou](/Images/insights/2024/12/kua-live-1024x597.jpg)
 
 Pour les marques, la plateforme ouvre l'accès à des audiences encore peu sollicitées, en particulier dans le Hubei, le Fujian et le Yunnan, où la consommation de biens progresse rapidement. Les analystes anticipent une croissance soutenue sur ces zones. Kuaishou s'impose à ce titre comme un canal de référence pour adresser les marchés émergents chinois.
 
@@ -47,7 +47,7 @@ Pour les marques, la plateforme ouvre l'accès à des audiences encore peu solli
 
 Tencent Video figure parmi les plus grandes plateformes vidéo du pays. Le service appartient au géant Tencent et porte le nom de WeTV hors de Chine. Depuis son lancement en 2020, il a rassemblé 800 millions d'utilisateurs et s'est hissé au quatrième rang mondial des plateformes vidéo, derrière Netflix, Amazon Prime et Disney+.
 
-![Plateforme Tencent Video](https://beyondbordergroup.com/wp-content/uploads/2024/12/tencent-video-1024x511.jpg)
+![Plateforme Tencent Video](/Images/insights/2024/12/tencent-video-1024x511.jpg)
 
 Le catalogue est large : films, séries, animation, documentaires, événements sportifs. La plateforme tire sa différence de ses fonctionnalités communautaires : recommandations entre utilisateurs, discussions, partages. Un terrain polyvalent qui marie divertissement et engagement.
 
@@ -55,7 +55,7 @@ Le catalogue est large : films, séries, animation, documentaires, événements 
 
 Youku, née en 2012 de la fusion entre Youku et Tudou, figure parmi les plateformes de streaming vidéo les plus puissantes du pays. Elle revendique près de 60 % de part de marché sur la vidéo en ligne en Chine.
 
-![Interface Youku](https://beyondbordergroup.com/wp-content/uploads/2024/12/youku-live-1024x498.jpg)
+![Interface Youku](/Images/insights/2024/12/youku-live-1024x498.jpg)
 
 Souvent comparée à YouTube, Youku se rapproche dans les faits davantage de Hulu ou de Netflix. La plateforme jette des moyens conséquents sur les productions originales et propose un catalogue étoffé de séries, films et documentaires sous licence. Cette priorité donnée au contenu premium et éditorialisé lui vaut sa place dominante sur le streaming vidéo chinois.
 

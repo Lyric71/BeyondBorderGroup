@@ -34,7 +34,7 @@ Hosting a website in China involves several critical steps that ensure your webs
 
 Registering a domain with a Chinese extension, such as .cn, is one of the first steps toward localizing your website for the Chinese market. A .cn domain not only improves your search engine ranking in China but also signifies credibility and trustworthiness among local consumers.
 
-![cn-domain](https://beyondbordergroup.com/wp-content/uploads/2025/01/cn-domain-1024x598.png)
+![cn-domain](/Images/insights/2025/01/cn-domain-1024x598.png)
 
 #### How to Register a .cn Domain
 
@@ -59,7 +59,7 @@ After securing your domain name, the next step is to select a hosting provider w
 
 * **Alibaba Cloud:** Known for scalable solutions and integration with other Alibaba services, such as its ecommerce China tools.
 
-![alibaba-cloud-web-hosting](https://beyondbordergroup.com/wp-content/uploads/2025/01/alibaba-cloud-web-hosting-1024x587.png)
+![alibaba-cloud-web-hosting](/Images/insights/2025/01/alibaba-cloud-web-hosting-1024x587.png)
 
 Source: Alibaba Cloud
 
@@ -70,7 +70,7 @@ Source: Alibaba Cloud
 
 The ICP license is a legal requirement for all websites hosted in China. Without this license, your website cannot be hosted within the country and may be blocked by the Great Firewall.
 
-![ICP](https://beyondbordergroup.com/wp-content/uploads/2025/01/ICP.jpg)
+![ICP](/Images/insights/2025/01/ICP.jpg)
 
 Official website of the government. website: http://beian.miit.gov.cn/
 
@@ -104,7 +104,7 @@ Once your ICP license is approved, you can proceed to configure your website on 
   - Ensuring content adheres to censorship guidelines by avoiding sensitive topics.
 * **Integrate a Content Delivery Network (CDN):** Use a China-based CDN to ensure faster load times for users across the country.
 
-![CDN](https://beyondbordergroup.com/wp-content/uploads/2025/01/CDN-1024x576.png)
+![CDN](/Images/insights/2025/01/CDN-1024x576.png)
 
 Source: ClouDNS
 
@@ -135,7 +135,7 @@ Before launching your website, conduct thorough testing to ensure it functions s
 
 * Chinalytics: A web analytics tool designed specifically for websites operating within China.
 
-![Chinalytics](https://beyondbordergroup.com/wp-content/uploads/2025/01/Chinalytics-1024x520.jpg)
+![Chinalytics](/Images/insights/2025/01/Chinalytics-1024x520.jpg)
 
 Source: Chinalytics
 

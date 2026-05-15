@@ -35,7 +35,7 @@ La nouvelle génération de voyageurs aisés chinois affiche une sensibilité cr
 
 Les acteurs du voyage captent l'intérêt de cette clientèle par des expériences qui mettent la culture locale au premier plan. Rissai Valley, un Ritz-Carlton Reserve installé à Jiuzhaigou, propose ainsi à ses hôtes une retraite intimiste au cœur de villages tibétains traditionnels.
 
-![Terrasse de villa Ritz-Carlton](https://beyondbordergroup.com/wp-content/uploads/2024/07/rz-jzhrz-two-bedroom-villa-terrace-36218_Wide-Hor.jpeg)
+![Terrasse de villa Ritz-Carlton](/Images/insights/2024/07/rz-jzhrz-two-bedroom-villa-terrace-36218_Wide-Hor.jpeg)
 
 ### Voyage sur mesure
 
@@ -51,7 +51,7 @@ La quête du bien-être prend de l'ampleur chez le voyageur aisé chinois. Les m
 
 Xiaohongshu, qualifié de moteur de recherche lifestyle chinois, joue un rôle déterminant dans la phase d'inspiration et la décision de voyage. La marque s'y associe aux influenceurs de la plateforme pour valoriser des destinations et des expériences singulières, ce qui amplifie l'engagement et les réservations. Elle active aussi les fonctionnalités communautaires pour bâtir des campagnes de contenu généré par les utilisateurs. Les voyageurs partagent leur expérience, visibilité et crédibilité progressent dans la foulée.
 
-![Interface Xiaohongshu](https://beyondbordergroup.com/wp-content/uploads/2024/07/xiao-1024x551.jpg)
+![Interface Xiaohongshu](/Images/insights/2024/07/xiao-1024x551.jpg)
 
 ### Mettre [WeChat](/fr/se-developper-en-chine/commerce-social) et Weibo au travail
 
@@ -93,15 +93,15 @@ S'associer à des maisons de mode, à des artistes reconnus ou à des événemen
 
 Les maisons de luxe engagent le voyageur autour d'activations originales adossées à des activités phares, du ski à la haute couture. Le pop-up ski de Dior au Lake Songhua Seibu Prince Hotel a offert aux voyageurs une expérience shopping exclusive au cœur d'un décor hivernal saisissant. Dans la même veine, la collection capsule sports d'hiver de Fendi au Westin Changbaishan a marié mode et glisse, dans un alliage de luxe et d'aventure. Ces opérations captent le regard et offrent au voyageur des moments rares.
 
-![Activation Dior dans un resort de luxe](https://beyondbordergroup.com/wp-content/uploads/2024/07/dior2-1024x766.jpg)
+![Activation Dior dans un resort de luxe](/Images/insights/2024/07/dior2-1024x766.jpg)
 
-![Boutique éphémère Dior](https://beyondbordergroup.com/wp-content/uploads/2024/07/dior-1024x764.jpg)
+![Boutique éphémère Dior](/Images/insights/2024/07/dior-1024x764.jpg)
 
 ### Tourisme événementiel
 
 Concerts, rencontres sportives et festivals culturels déclenchent des pics de trafic et de dépenses. Les marques de voyage en tirent parti par un accès exclusif et des prestations premium. The Ritz-Carlton, partenaire de Mercedes-AMG Petronas F1 Team, offre ainsi à ses hôtes un accès VIP au Grand Prix de Formule 1 de Shanghai, coulisses incluses, avec rencontres avec les pilotes. Marriott Bonvoy s'allie de son côté au Shanghai Rolex Masters pour proposer des expériences exclusives, du Dream Seat series aux Master Classes animées par la légende du tennis Li Na. Ces dispositifs enrichissent considérablement le voyage et produisent des souvenirs qui s'installent dans la durée.
 
-![Partenariat Ritz-Carlton Mercedes F1](https://beyondbordergroup.com/wp-content/uploads/2024/07/LuxExpose-The-Ritz-Carlton_Mercedes-AMG_PETRONAS_F1-1024x683.jpg)
+![Partenariat Ritz-Carlton Mercedes F1](/Images/insights/2024/07/LuxExpose-The-Ritz-Carlton_Mercedes-AMG_PETRONAS_F1-1024x683.jpg)
 
 ### L'art de la surprise
 

@@ -22,7 +22,7 @@ Weibo is one of the most influential [social media](/grow-in-china/social-commer
 - Integration with Chinese ecommerce platforms
 - Advanced targeting and analytics
 
-![Young Chinese people use smartphones](https://beyondbordergroup.com/wp-content/uploads/2024/12/stock-photo-young-chinese-people-use-smartphones.webp)
+![Young Chinese people use smartphones](/Images/insights/2024/12/stock-photo-young-chinese-people-use-smartphones.webp)
 
 ## Steps to Sign Up for Weibo
 
@@ -119,7 +119,7 @@ Below are the most popular types of system campaigns on Weibo and their benefits
 
 The Lucky Roulette campaign is a gamified promotion where users spin a virtual wheel for a chance to win prizes.
 
-![Lucky Roulette campaign interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/roufinal-300x293.png)
+![Lucky Roulette campaign interface](/Images/insights/2024/12/roufinal-300x293.png)
 
 **How It Works:**
 
@@ -135,7 +135,7 @@ The Lucky Roulette campaign is a gamified promotion where users spin a virtual w
 
 Offering free trials or samples is another effective system campaign, particularly for brands introducing new products in the Chinese market.
 
-![Free trials campaign interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/free-final-300x295.png)
+![Free trials campaign interface](/Images/insights/2024/12/free-final-300x295.png)
 
 **How It Works:**
 
@@ -151,7 +151,7 @@ Offering free trials or samples is another effective system campaign, particular
 
 Flash sales are ideal for driving urgency and sparking excitement among your audience.
 
-![Flash sales campaign interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/flash-300x293.png)
+![Flash sales campaign interface](/Images/insights/2024/12/flash-300x293.png)
 
 **How It Works:**
 
@@ -167,7 +167,7 @@ Flash sales are ideal for driving urgency and sparking excitement among your aud
 
 Reposting campaigns use user actions like sharing content and tagging friends to increase your reach organically.
 
-![Reposting campaigns interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/repost-final-300x297.png)
+![Reposting campaigns interface](/Images/insights/2024/12/repost-final-300x297.png)
 
 **How It Works:**
 

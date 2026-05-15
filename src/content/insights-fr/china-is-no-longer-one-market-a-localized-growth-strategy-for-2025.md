@@ -35,7 +35,7 @@ Le glissement impose de quitter la localisation symbolique pour des choix struct
 
 Une maison de luxe qui investit dans une expérience à Chengdu pensée autour de la confiance culturelle de la ville, ou une marque de sport qui rénove des terrains de quartier au lieu de monter un show ponctuel : c'est exactement ce basculement qui se joue. Il ne s'agit plus de parler à toute la Chine. Il s'agit de choisir un endroit et de le faire bien.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/localization-1-1024x576.png)
+![](/Images/insights/2024/06/localization-1-1024x576.png)
 
 ### La Chine compte plusieurs marchés, pas un seul
 
@@ -82,7 +82,7 @@ Trois changements comptent :
 
 Les marques qui s'adapteront le plus vite verront la Chine moins comme une ligne dans un tableur, davantage comme une mosaïque d'opportunités en mouvement.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/localization-2-1-1024x647.png)
+![](/Images/insights/2024/06/localization-2-1-1024x647.png)
 
 ### Passer de l'insight à l'action avec BBG
 

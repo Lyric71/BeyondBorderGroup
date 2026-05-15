@@ -22,7 +22,7 @@ Weibo concentre une base 19-29 ans, jeune, connectée, à l'aise avec le digital
 - Une intégration aux plateformes e-commerce chinoises.
 - Des outils de ciblage et d'analytique avancés.
 
-![Jeunes Chinois sur smartphone](https://beyondbordergroup.com/wp-content/uploads/2024/12/stock-photo-young-chinese-people-use-smartphones.webp)
+![Jeunes Chinois sur smartphone](/Images/insights/2024/12/stock-photo-young-chinese-people-use-smartphones.webp)
 
 ## Ouvrir un compte Weibo
 
@@ -119,7 +119,7 @@ Tour d'horizon des principales campagnes système et de leurs bénéfices.
 
 La Lucky Roulette est une promotion ludique : l'utilisateur fait tourner une roue virtuelle pour tenter de gagner des lots.
 
-![Interface de la campagne Roue de la chance](https://beyondbordergroup.com/wp-content/uploads/2024/12/roufinal-300x293.png)
+![Interface de la campagne Roue de la chance](/Images/insights/2024/12/roufinal-300x293.png)
 
 **Mécanique :**
 
@@ -135,7 +135,7 @@ La Lucky Roulette est une promotion ludique : l'utilisateur fait tourner une rou
 
 L'essai ou l'échantillon gratuit reste une campagne efficace, surtout pour les marques qui lancent un nouveau produit sur le marché chinois.
 
-![Interface de la campagne Échantillons](https://beyondbordergroup.com/wp-content/uploads/2024/12/free-final-300x295.png)
+![Interface de la campagne Échantillons](/Images/insights/2024/12/free-final-300x295.png)
 
 **Mécanique :**
 
@@ -151,7 +151,7 @@ L'essai ou l'échantillon gratuit reste une campagne efficace, surtout pour les 
 
 La vente flash crée l'urgence et fait monter l'envie.
 
-![Interface de la campagne Vente flash](https://beyondbordergroup.com/wp-content/uploads/2024/12/flash-300x293.png)
+![Interface de la campagne Vente flash](/Images/insights/2024/12/flash-300x293.png)
 
 **Mécanique :**
 
@@ -167,7 +167,7 @@ La vente flash crée l'urgence et fait monter l'envie.
 
 Le repost transforme le partage et le tag d'amis en relais organique de la marque.
 
-![Interface des campagnes de repost](https://beyondbordergroup.com/wp-content/uploads/2024/12/repost-final-300x297.png)
+![Interface des campagnes de repost](/Images/insights/2024/12/repost-final-300x297.png)
 
 **Mécanique :**
 

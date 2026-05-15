@@ -20,7 +20,7 @@ Trois usages s'imposent en première ligne :
 - **La tarification dynamique.** Les modèles ajustent les prix en temps réel, au gré de la demande, de la concurrence et du comportement d'achat.
 - **Les chatbots et assistants virtuels.** Ces interfaces fluidifient la relation client par un accompagnement immédiat et personnalisé.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/01/virtual-avatar-by-Alibaba-Group-1024x576.png)
+![](/Images/insights/2025/01/virtual-avatar-by-Alibaba-Group-1024x576.png)
 
 Source : Alibaba Group
 
@@ -42,7 +42,7 @@ Le [e-commerce](/fr/se-developper-en-chine/ecommerce-transfrontalier) chinois a 
 
 Le social commerce avance à plein régime en Chine. WeChat et Douyin embarquent l'IA pour décrypter les comportements utilisateur. À la clé, les agences créatives locales peuvent monter des campagnes hyper-ciblées qui parlent à chaque audience.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/01/livestream-Douyin_2-300x198.png)
+![](/Images/insights/2025/01/livestream-Douyin_2-300x198.png)
 
 ### Les usages dominants
 

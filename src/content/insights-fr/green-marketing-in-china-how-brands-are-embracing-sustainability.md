@@ -18,7 +18,7 @@ Le marketing vert s'est imposé comme un levier puissant. Il signale l'engagemen
 
 Starbucks et Proya Cosmetics ont placé la barre haut sur le terrain de la réduction du plastique, en particulier autour de la Journée de la Terre. Starbucks a invité ses clients à apporter leur tasse personnelle contre un Americano moyen offert. Les trente premiers participants repartaient avec un latte au lait d'avoine. L'opération réduit les déchets plastiques. Elle ancre surtout la pratique dans la routine quotidienne.
 
-![Campagne Starbucks pour le développement durable](https://beyondbordergroup.com/wp-content/uploads/2024/06/SBX20230601-Laxman_China_4-16-1024x683-1.jpg)
+![Campagne Starbucks pour le développement durable](/Images/insights/2024/06/SBX20230601-Laxman_China_4-16-1024x683-1.jpg)
 
 Côté Proya Cosmetics, l'enseigne mise sur la créativité et recycle ses flacons vides en objets utiles, eux-mêmes éco-responsables. La campagne file un parallèle astucieux entre le renouvellement de la peau et la seconde vie des contenants. À l'arrivée, l'identité durable de la marque s'ancre.
 
@@ -26,7 +26,7 @@ Côté Proya Cosmetics, l'enseigne mise sur la créativité et recycle ses flaco
 
 L'émotion fait toute la différence dans une campagne verte qui réussit. Purcotton a lancé son « Mountain and Sea Cure Plan », opération qui propose aux participants d'échanger leurs vieux vêtements contre des sacs réutilisables. L'initiative limite le gaspillage textile et tisse une communauté autour de la protection de l'environnement.
 
-![Campagne coton Purcotton](https://beyondbordergroup.com/wp-content/uploads/2024/06/cotton-era.jpg)
+![Campagne coton Purcotton](/Images/insights/2024/06/cotton-era.jpg)
 
 Goofish, leader chinois de la seconde main, a ouvert un « centre d'épargne verte » pour pousser ses utilisateurs à partager des astuces de réduction carbone. La plateforme mobilise sa communauté en ligne comme hors ligne. À la clé, la portée des actions vertes se démultiplie. Et plus de Chinois embarquent dans l'économie circulaire.
 

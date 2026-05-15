@@ -29,7 +29,7 @@ C'est aussi le terrain sur lequel Douyin engage ses investissements produit. La 
 
 Le « store-led » n'est plus un registre de contenu. C'est un modèle de trading.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2026/01/ecommerce-3.png)
+![](/Images/insights/2026/01/ecommerce-3.png)
 
 ## Cas d'école : Zara installe le live shopping Douyin en rendez-vous hebdomadaire
 
@@ -84,7 +84,7 @@ Voilà pourquoi les studios de marque gagnent du terrain. Le modèle s'industria
   * Du retargeting sur les spectateurs et les cliqueurs de fiches produits
   * Une bibliothèque de contenus qui se reconvertit vite en création publicitaire
 
-![](https://beyondbordergroup.com/wp-content/uploads/2026/01/ecommerce-2.png)
+![](/Images/insights/2026/01/ecommerce-2.png)
 
 ## La gouvernance devient une variable de performance
 

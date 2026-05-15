@@ -62,8 +62,6 @@ La confiance et la personnalité convertissent. Le déclic de 2025 tient à la d
 
 Pour mémoire, le [livestream](/fr/se-developper-en-chine/influence-et-kol) avait atteint 332,5 milliards de yuans de GMV durant le Double 11 2024 (+54,6 % en glissement annuel). Les chiffres 2025 sont en cours de consolidation. L'avantage structurel du commerce live, lui, tient : confiance, clarté, conversion documentée.
 
-![Indicateurs d'efficacité IA pour le e-commerce](https://beyondbordergroup.com/wp-content/uploads/2025/11/Screenshot-2025-11-19-at-4.28.43-PM.png)
-
 ### Un omnicanal qui relie réellement et passe les frontières
 
 * Boucles offline ↔ online : tickets QR, démos en magasin, pop-ups qui débloquent des offres digitales, écrans en magasin synchronisés avec le même Creative OS qui alimente fiches produit et publicités.

@@ -29,7 +29,7 @@ Short videos provide entertainment while simultaneously influencing consumer pur
 
 The Chinese TikTok version, Douyin stands as one of China's leading short video platforms. The Bytedance-developed Douyin platform attracts 731 million active users through its dynamic and imaginative video content. The platform's sophisticated AI algorithm ensures that users are continuously served content that matches their interests, making it an ideal platform for advertising agency China campaigns.
 
-![Douyin platform interface](https://beyondbordergroup.com/wp-content/uploads/2025/02/Douyin-1024x497.jpg)
+![Douyin platform interface](/Images/insights/2025/02/Douyin-1024x497.jpg)
 
 #### Key Features for Marketing & E-Commerce
 
@@ -38,7 +38,7 @@ The Chinese TikTok version, Douyin stands as one of China's leading short video 
 - Business Accounts – Special accounts for brands with access to advertising and analytics tools.
 - Live Streaming Commerce – Influencers and businesses can sell products through live-streamed promotions.
 
-![Live streaming on Douyin](https://beyondbordergroup.com/wp-content/uploads/2025/02/live-dou-1024x585.png)
+![Live streaming on Douyin](/Images/insights/2025/02/live-dou-1024x585.png)
 
 #### Why Brands Use Douyin
 
@@ -48,7 +48,7 @@ Douyin excels as a marketing platform for brands aiming to reach young urbanites
 
 Kuaishou operates as a top short video platform serving 529 million active users. Kuaishou adopts a genuine community-focused strategy that pulls in audiences from both urban spaces and rural regions while Douyin specializes in trendy content for city dwellers.
 
-![Kuaishou live streaming feature](https://beyondbordergroup.com/wp-content/uploads/2025/02/kua-live-1024x597.jpg)
+![Kuaishou live streaming feature](/Images/insights/2025/02/kua-live-1024x597.jpg)
 
 #### Key Features for Marketing & E-Commerce
 
@@ -98,7 +98,7 @@ Many short video platforms now offer direct shopping experiences, allowing users
 
 Both Douyin and Kuaishou are dominant players in China's short video market, but they cater to different audiences and marketing approaches. Brands must carefully choose the platform that aligns with their target demographic and business goals.
 
-![Douyin vs Kuaishou comparison chart](https://beyondbordergroup.com/wp-content/uploads/2025/02/Untitled-1-1024x550.png)
+![Douyin vs Kuaishou comparison chart](/Images/insights/2025/02/Untitled-1-1024x550.png)
 
 ### Which Platform Should Your Brand Use?
 

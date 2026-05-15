@@ -62,8 +62,6 @@ Trust and personality convert. The unlock in 2025 is format discipline and studi
 
 For context, [livestream](/grow-in-china/influencers-kols) GMV reached RMB 332.5B during Double 11 in 2024 (+54.6% YoY). 2025 results are still being compiled, but the structural advantage of live commerce remains: trust + clarity + proven conversion.
 
-![AI efficiency metrics for ecommerce](https://beyondbordergroup.com/wp-content/uploads/2025/11/Screenshot-2025-11-19-at-4.28.43-PM.png)
-
 ### Omnichannel that actually connects & crosses borders
 
 * Offline ↔ online loops: QR receipts, store demos, and pop‑ups that unlock digital bundles; in‑store screens sync with the same Creative OS powering PDPs and ads.

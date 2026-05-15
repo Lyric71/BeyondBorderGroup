@@ -56,7 +56,7 @@ Xiaohongshu, or Little Red Book, is one of the most influential social commerce 
 * Young User Base: With 90% of its users under 32 years old, Xiaohongshu appeals to a younger demographic, particularly those born in the 1990s, who are often more tech-savvy and open to online shopping.
 * Smooth Integration with WeChat and Alipay: Jointly invested in by Tencent and Alibaba, Xiaohongshu benefits from smooth integration with major digital payment systems, enhancing the overall user experience and facilitating easy transactions.
 
-![Little Red Book Platform](https://beyondbordergroup.com/wp-content/uploads/2024/06/little-red-book-1024x585.jpg)
+![Little Red Book Platform](/Images/insights/2024/06/little-red-book-1024x585.jpg)
 
 ### 2. WeChat
 
@@ -69,7 +69,7 @@ WeChat is widely recognized as China's all-in-one super-app. Originally launched
 * WeChat Pay: Integrated digital payment capabilities through WeChat Pay facilitate easy and secure transactions, enhancing user convenience and trust.
 * Extensive Consumer Reach: WeChat's vast user base and comprehensive features make it a vital tool for businesses looking to tap into the Chinese market.
 
-![WeChat Platform](https://beyondbordergroup.com/wp-content/uploads/2024/06/wechat-1024x585.jpg)
+![WeChat Platform](/Images/insights/2024/06/wechat-1024x585.jpg)
 
 ### 3. Taobao / Tmall Platform (GuangGuang)
 
@@ -82,7 +82,7 @@ Taobao and Tmall, part of Alibaba Group, have been key players in China's e-comm
 * Retail-Specific Platform: Unlike general social media platforms, Taobao and Tmall are designed specifically for shopping, with algorithms that prioritize buying intent and optimize the user experience for commerce.
 * Special Sales Events: The platform hosts a variety of sales events throughout the year, beyond the famous Singles' Day (11/11), offering customers exclusive deals and driving significant traffic and sales.
 
-![Taobao Platform](https://beyondbordergroup.com/wp-content/uploads/2024/06/taobao-1024x585.jpg)
+![Taobao Platform](/Images/insights/2024/06/taobao-1024x585.jpg)
 
 ### 4. Pinduoduo
 
@@ -95,7 +95,7 @@ Pinduoduo is a unique social commerce platform that emphasizes group buying, all
 * Focus on International Brands: The platform has seen a growing popularity of international brands, appealing to consumers looking for diverse and high-quality products.
 * Mini-Games: Pinduoduo retains consumer engagement through in-app mini-games, enhancing the overall user experience and encouraging repeated use.
 
-![Pinduoduo Platform](https://beyondbordergroup.com/wp-content/uploads/2024/06/PINDOUDOU-1024x585.jpg)
+![Pinduoduo Platform](/Images/insights/2024/06/PINDOUDOU-1024x585.jpg)
 
 ### 5. Weibo
 
@@ -108,7 +108,7 @@ Weibo, often likened to Twitter, has successfully transitioned into a powerful s
 * Smooth Communication: Weibo facilitates direct communication between brands and customers, enhancing engagement and customer service.
 * E-Commerce Management: Weibo Xiaodian allows brands to control their e-commerce operations within the platform, providing a smooth and integrated shopping experience for users.
 
-![Weibo Platform](https://beyondbordergroup.com/wp-content/uploads/2024/06/weibo-1024x585.jpg)
+![Weibo Platform](/Images/insights/2024/06/weibo-1024x585.jpg)
 
 ## Why China Leads the World in Social Commerce
 

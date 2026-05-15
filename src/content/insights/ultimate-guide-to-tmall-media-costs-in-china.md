@@ -39,25 +39,25 @@ Working with a China eCommerce agency can help streamline the setup process and 
 
 Search ads appear at the top of Tmall's search results, giving brands high-priority exposure. While the cost per click (CPC) can be high, search ads are one of the most effective ways to reach consumers actively looking for specific products.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/tmall-search-ad-1024x585.png)
+![](/Images/insights/2024/12/tmall-search-ad-1024x585.png)
 
 ### Display Ads
 
 Display ads, which appear on the homepage or in specific categories, use compelling visuals to boost brand recognition. These ads operate on a cost-per-impression basis, making them effective for brand awareness campaigns.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/tmall-display-1024x585.png)
+![](/Images/insights/2024/12/tmall-display-1024x585.png)
 
 ### Livestreaming
 
 One of the fastest-growing formats in China's eCommerce space, livestreaming has become popular for engaging Chinese shoppers in real time. It allows brands to connect directly with viewers, demonstrate products, and answer questions, making it a highly effective tool. Collaborating with China influencers, or Key Opinion Leaders (KOLs), during livestreams can also amplify reach and engagement.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/tmall-livestreaming-1024x585.png)
+![](/Images/insights/2024/12/tmall-livestreaming-1024x585.png)
 
 ### Brand Zone Ads
 
 For brands looking to make a lasting impression, Brand Zone Ads provide a customized storefront with unique visuals, descriptions, and promotions that enhance brand identity.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/tmall-brand-zone-1024x585.png)
+![](/Images/insights/2024/12/tmall-brand-zone-1024x585.png)
 
 Since each ad format has its own cost structure, working with a China performance marketing specialist or a social media agency in China can help ensure campaigns are optimized and budgets are spent strategically.
 

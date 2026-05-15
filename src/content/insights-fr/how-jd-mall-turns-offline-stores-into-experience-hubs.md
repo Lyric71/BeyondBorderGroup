@@ -39,7 +39,7 @@ Trois points retiennent l'attention :
 
 Pour une marque internationale, la vraie question devient : quelle action concrète vos visiteurs doivent-ils accomplir avec votre produit à l'intérieur d'un JD Mall ?
 
-![Intérieur d'un magasin JD](https://beyondbordergroup.com/wp-content/uploads/2025/11/JD-store.png)
+![Intérieur d'un magasin JD](/Images/insights/2025/11/JD-store.png)
 
 ## La stratégie des 5 km : le mall comme lieu de vie
 
@@ -57,7 +57,7 @@ Les salariés JD pilotent les zones d'expérience et la qualité de service glob
 
 Si JD Mall figure dans votre dispositif, vous arbitrez la façon dont ces équipes parleront de votre marque, et vous leur fournissez les démonstrations, les histoires, les contenus à partager.
 
-![Création de contenu KOL par le personnel JD](https://beyondbordergroup.com/wp-content/uploads/2025/11/JD-KOL.png)
+![Création de contenu KOL par le personnel JD](/Images/insights/2025/11/JD-KOL.png)
 
 ## Boucler le lien entre l'application et le magasin
 

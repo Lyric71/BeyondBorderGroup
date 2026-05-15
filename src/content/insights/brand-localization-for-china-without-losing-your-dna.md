@@ -48,7 +48,7 @@ If your brand looks and sounds out of place in those feeds, it does not matter h
 
 Localization is no longer about translating a website. It is about rebuilding how your brand lives inside this content commerce loop.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/localization-2-1024x576.png)
+![](/Images/insights/2025/11/localization-2-1024x576.png)
 
 ## What It Looks Like When Brands Get It Right [Apple & Coca-Cola]
 
@@ -81,7 +81,7 @@ The Apple feeling is unchanged. The route from attention to purchase is very Chi
 
 The result still feels like Coca-Cola, simply expressed through Chinese moments and symbols.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/localization-3-1024x576.png)
+![](/Images/insights/2025/11/localization-3-1024x576.png)
 
 ## A Simple Way To Frame Localization For China
 

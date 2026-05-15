@@ -25,9 +25,9 @@ legacyUrl: "https://beyondbordergroup.com/wechat-pay-vs-alipay-best-mobile-payme
 * **QR Code Payments:** The ubiquity of QR codes in China has made QR code payments a fundamental feature of WeChat Pay. Users can easily scan QR codes at retail outlets, restaurants, and service providers to make payments swiftly and securely.
 * **Mini Programs:** Mini programs are sub-applications within WeChat that provide a range of services without requiring a separate download. These mini-programs allow businesses to set up virtual stores, offer customer service, and run marketing campaigns directly within WeChat, making it easier for users to access services and make purchases.
 
-![WeChat Pay platform](https://beyondbordergroup.com/wp-content/uploads/2024/07/WeChat-Pay-platform.png)
+![WeChat Pay platform](/Images/insights/2024/07/WeChat-Pay-platform.png)
 
-![WeChat Pay platform 2](https://beyondbordergroup.com/wp-content/uploads/2024/07/WeChat-Pay-platform-2.png)
+![WeChat Pay platform 2](/Images/insights/2024/07/WeChat-Pay-platform-2.png)
 
 Source: WeChat Pay (https://pay.weixin.qq.com/)
 
@@ -58,7 +58,7 @@ Alipay, owned by Alibaba, is a pioneer in China's mobile payment industry. Since
 * **Global Reach:** Alipay's services are not confined to China. It is available in over 300 cities worldwide, making it an excellent choice for businesses with an international footprint. This global reach helps businesses cater to Chinese tourists and international users alike.
 * **Financial Services:** Alipay offers a wide range of financial services, including savings accounts, loans, insurance, and investment products. This functionality makes it a comprehensive financial tool for users, appealing to those who seek more than just a payment solution.
 
-![Alipay platform](https://beyondbordergroup.com/wp-content/uploads/2024/07/Alipay-platform.jpg)
+![Alipay platform](/Images/insights/2024/07/Alipay-platform.jpg)
 
 Source: SmartShanghai
 

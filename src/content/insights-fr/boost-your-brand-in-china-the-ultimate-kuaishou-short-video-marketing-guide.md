@@ -31,7 +31,7 @@ Les consommateurs des villes de rang inférieur figurent parmi les plus actifs s
 
 Kuaishou figure parmi les leaders du live commerce. Les créateurs vendent en direct pendant leurs diffusions, avec un taux de conversion trois à cinq fois supérieur à celui de Douyin. Le modèle tourne à plein régime.
 
-![Interface du live commerce sur Kuaishou](https://beyondbordergroup.com/wp-content/uploads/2024/12/kai-live-1024x585.png)
+![Interface du live commerce sur Kuaishou](/Images/insights/2024/12/kai-live-1024x585.png)
 
 ### Construire la confiance par la communauté
 
@@ -75,7 +75,7 @@ Les comptes certifiés accèdent à des remises publicitaires, à des outils e-c
 
 Le système de hashtags conditionne la portée. Adopter les bons mots-clés fait grimper les impressions de façon nette.
 
-![Tendances sur Kuaishou](https://beyondbordergroup.com/wp-content/uploads/2024/12/kai-trend-1024x585.png)
+![Tendances sur Kuaishou](/Images/insights/2024/12/kai-trend-1024x585.png)
 
 ### Participer aux défis
 

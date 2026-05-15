@@ -27,7 +27,7 @@ Xianyu's side job marketplace offers users a platform to advertise their service
 
 In addition to its [online marketplace](https://beyondbordergroup.com/ecommerce-in-china/), Xianyu has expanded its reach into the physical world with the opening of brick-and-mortar shops in Hangzhou and Shanghai. These shops provide a convenient way for users to send items to the platform for sorting and pricing, enhancing the overall user experience. Xianyu is not only a marketplace but also a platform where users can develop and showcase their skills. Many sellers use their experience on Xianyu to build their resumes, highlighting their abilities in product description writing, price negotiation, and customer service. This experience can be valuable in various professional contexts, providing users with a competitive edge in the job market. Xianyu has fostered a strong sense of community among its users. The platform serves as a forum where hobbyists and collectors can exchange ideas and collaborate on projects. This community aspect enhances user engagement and provides additional value beyond the basic buying and selling functions.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/07/c63d9d33e9483fa6243735ea3797ddcd8b95dd1c.png)
+![](/Images/insights/2024/07/c63d9d33e9483fa6243735ea3797ddcd8b95dd1c.png)
 
 Source: Alibaba Cloud
 

@@ -39,25 +39,25 @@ La [publicité](/fr/se-developper-en-chine/campagnes) sur Tmall sort la marque d
 
 Les annonces search se logent en tête des résultats Tmall. Le CPC peut grimper, mais le format reste imbattable pour capter l'acheteur déjà en intention.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/tmall-search-ad-1024x585.png)
+![](/Images/insights/2024/12/tmall-search-ad-1024x585.png)
 
 ### Annonces display
 
 Les annonces display occupent la page d'accueil ou les pages catégories. Visuels marqués, achat à l'impression. La référence pour bâtir de la notoriété.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/tmall-display-1024x585.png)
+![](/Images/insights/2024/12/tmall-display-1024x585.png)
 
 ### Livestream
 
 Le livestream s'est hissé parmi les formats les plus dynamiques du e-commerce chinois. Démonstration produit, session de questions-réponses : la marque entre en relation directe avec l'acheteur, en temps réel. L'association à un KOL local démultiplie la portée.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/tmall-livestreaming-1024x585.png)
+![](/Images/insights/2024/12/tmall-livestreaming-1024x585.png)
 
 ### Brand Zone
 
 La Brand Zone donne aux marques une vitrine personnalisée : visuels, récit, opérations promotionnelles taillés sur mesure. Pour celles qui veulent installer une présence forte.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/12/tmall-brand-zone-1024x585.png)
+![](/Images/insights/2024/12/tmall-brand-zone-1024x585.png)
 
 Chaque format porte sa propre structure de coût. Un spécialiste de la performance ou une agence sociale locale orchestre les campagnes et dépense à bon escient.
 

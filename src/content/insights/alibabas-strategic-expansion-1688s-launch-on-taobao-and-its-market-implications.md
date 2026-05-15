@@ -19,7 +19,7 @@ Alibaba's 1688, renowned as China's preeminent integrated domestic wholesale mar
 
 These newly launched stand-alone stores on [Taobao](/grow-in-china/cross-border-ecommerce) diversify their offerings into three categories: well-known brand-name factory-produced furniture and general merchandise, office supplies and business consumables, and unbranded white-label products. This expansion aligns with Taobao's plans to create a dedicated channel akin to Tmall Supermarket for 1688-based businesses. Such an initiative will simplify the shopping process for users, allowing them to access a wide array of goods directly on Taobao without the necessity of downloading the 1688 app, thereby broadening their shopping experience.
 
-![1688 pic2 blog](https://beyondbordergroup.com/wp-content/uploads/2024/03/1688-pic2-blog.png)
+![1688 pic2 blog](/Images/insights/2024/03/1688-pic2-blog.png)
 
 ## 1688: A Cornerstone in Alibaba's E-commerce Ecosystem
 

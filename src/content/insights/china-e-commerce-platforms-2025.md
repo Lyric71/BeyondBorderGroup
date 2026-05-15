@@ -60,7 +60,7 @@ China's major commerce [platforms](/learn-china/platforms) have distinct strengt
 
 * Vipshop stays focused on discount retail for branded goods, operating like a rolling outlet model.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/12/new-app-2.png)
+![](/Images/insights/2025/12/new-app-2.png)
 
 ---
 
@@ -91,4 +91,4 @@ Instant commerce retail sales will reach RMB 1.003 trillion in 2025, with growth
 * Trust-led discovery: Xiaohongshu.
 * Local fulfilment and services: Meituan, and the broader instant retail push.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/12/new-app-3.png)
+![](/Images/insights/2025/12/new-app-3.png)

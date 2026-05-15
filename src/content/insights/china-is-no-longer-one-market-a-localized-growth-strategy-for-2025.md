@@ -35,7 +35,7 @@ That means moving away from symbolic [localisation](/enter-china/branding-locali
 
 When a luxury house invests in a Chengdu experience built around the city's cultural confidence, or a sports brand refurbishes local courts instead of staging a one-off show, it is making exactly this shift. It is not trying to talk to all of China; it is choosing one place and getting it right.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/localization-1-1024x576.png)
+![](/Images/insights/2024/06/localization-1-1024x576.png)
 
 ### China has many markets, not one
 
@@ -82,7 +82,7 @@ Three changes matter:
 
 The brands that adapt fastest will be those that treat China less like a single line on a spreadsheet and more like a set of evolving opportunities.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/localization-2-1-1024x647.png)
+![](/Images/insights/2024/06/localization-2-1-1024x647.png)
 
 ### Turning Insight Into Action With BBG
 

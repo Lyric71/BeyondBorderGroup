@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { personSchema, aboutPageSchema, PERSON_IDS } from '../../lib/seo';
 
 const team = [
   {
@@ -179,11 +180,50 @@ const speakingPhotos = [
   '/Images/public-speaking/e0f5ca19ebdf2bc28529b0294d14b36.jpg',
   '/Images/public-speaking/ed3e093e6adf981738fa10761a936fd.jpg',
 ];
+
+const aboutSchema = [
+  aboutPageSchema('fr'),
+  personSchema({
+    id: PERSON_IDS.cyril,
+    name: 'Cyril Drouin',
+    jobTitle: 'Fondateur et président',
+    description:
+      "25 ans dans le digital, la publicité et le commerce. Ancien CEO de Publicis Commerce et Performance Marketing pour la Chine et l'Asie du Nord.",
+    image: '/Images/team/cyril-drouin.jpg',
+    sameAs: [
+      'https://www.linkedin.com/in/cyril-d-68835729/',
+      'https://twitter.com/CyrilDrouin',
+      'https://cyrildrouin.substack.com',
+    ],
+    workLocations: ['Shanghai', 'Paris'],
+  }),
+  personSchema({
+    id: PERSON_IDS.echo,
+    name: 'Echo Peng',
+    jobTitle: 'Directrice senior et partenaire',
+    description:
+      "18 ans à piloter l'eCommerce et le digital pour des marques internationales en Chine. Ancienne directrice des opérations chez Publicis China.",
+    image: '/Images/team/echo-peng.jpg',
+    sameAs: ['https://www.linkedin.com/in/echo-peng/'],
+    workLocations: ['Shanghai'],
+  }),
+  personSchema({
+    id: PERSON_IDS.liyan,
+    name: 'Liyan Ye',
+    jobTitle: 'Directrice senior',
+    description:
+      '20 ans de marketing pour des marques Fortune 500 en Chine. Pilote le brand-building et les campagnes.',
+    image: '/Images/team/liyan-ye.jpg',
+    sameAs: ['https://www.linkedin.com/in/liyan-ye/'],
+    workLocations: ['Shanghai'],
+  }),
+];
 ---
 
 <Layout
   title="Qui nous sommes | Beyond Border Group"
   description="Anciens cadres dirigeants de Publicis. Quinze années passées à développer des marques internationales sur le marché chinois. Stratégie et exécution dans la même équipe, portées par les mêmes seniors."
+  schema={aboutSchema}
 >
 
   {/* ---------- SCROLL PROGRESS ---------- */}

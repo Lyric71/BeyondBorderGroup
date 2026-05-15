@@ -19,7 +19,7 @@ legacyUrl: "https://beyondbordergroup.com/alibabas-strategic-expansion-1688s-lau
 
 Les trois boutiques indépendantes lancées sur [Taobao](/fr/se-developper-en-chine/ecommerce-transfrontalier) découpent l'offre par segment : mobilier et articles de marque sortis d'usine, fournitures de bureau et consommables professionnels, produits sans marque en marque blanche. L'opération s'inscrit dans le projet de Taobao de bâtir un canal dédié, comparable à Tmall Supermarché, pour les vendeurs venus de 1688. À la clé pour l'utilisateur, l'accès à une large gamme directement sur Taobao, sans détour par l'application 1688, et une expérience d'achat plus complète.
 
-![1688 photo 2 article](https://beyondbordergroup.com/wp-content/uploads/2024/03/1688-pic2-blog.png)
+![1688 photo 2 article](/Images/insights/2024/03/1688-pic2-blog.png)
 
 ## 1688, pièce maîtresse de l'appareil Alibaba
 

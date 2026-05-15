@@ -34,7 +34,7 @@ Plusieurs profils types se dessinent, chacun avec ses préférences propres :
 - **Les entrepreneurs de la première génération** : ils combinent affaires et loisirs, valorisent l'efficacité autant que le confort, et retiennent des destinations qui conjuguent luxe et praticité.
 - **Les nomades digitaux** : millennials et Gen Z adeptes du travail à distance. Ils cherchent liberté, flexibilité et authenticité, dans des destinations qui offrent connectivité, immersion culturelle et équilibre de vie.
 
-![Voyageur chinois haut de gamme](https://beyondbordergroup.com/wp-content/uploads/2024/07/pexels-jimmy-teoh-294331-2411759-768x1024.jpg)
+![Voyageur chinois haut de gamme](/Images/insights/2024/07/pexels-jimmy-teoh-294331-2411759-768x1024.jpg)
 
 ## Ce qui le distingue
 

@@ -33,7 +33,7 @@ Digital commerce platforms like [Taobao](https://beyondbordergroup.com/ecommerce
 
 For instance, Lorina Tan, a Filipino marketer-turned-entrepreneur, co-founded the baby-care brand Tiny Buds using knowledge gained from the e-commerce platform Lazada. Stories like Tan's underscore the transformative power of digital commerce in empowering women to build and scale successful businesses.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/taobao-app.jpeg)
+![](/Images/insights/2024/06/taobao-app.jpeg)
 
 ## AI and Technology: Allies in Promoting Gender Equality
 

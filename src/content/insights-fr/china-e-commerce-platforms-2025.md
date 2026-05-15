@@ -60,7 +60,7 @@ Les grandes [plateformes](/fr/comprendre-la-chine/plateformes) chinoises ont cha
 
 * Vipshop reste centrée sur le déstockage de marques, sur un modèle d'outlet permanent.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/12/new-app-2.png)
+![](/Images/insights/2025/12/new-app-2.png)
 
 ---
 
@@ -91,4 +91,4 @@ Les [marques internationales](/fr/entrer-en-chine/conseil-en-entree-de-marche) n
 * Découverte par la confiance : Xiaohongshu.
 * Livraison locale et services : Meituan, et plus largement la poussée du retail instantané.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/12/new-app-3.png)
+![](/Images/insights/2025/12/new-app-3.png)

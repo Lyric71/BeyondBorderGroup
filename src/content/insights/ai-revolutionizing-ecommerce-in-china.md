@@ -20,7 +20,7 @@ AI is significantly improving the consumer experience in China's eCommerce marke
 
 ## Reducing Operational Costs
 
-![AI host live streaming](https://beyondbordergroup.com/wp-content/uploads/2024/05/AI-host-live-streaming-284x300.png)
+![AI host live streaming](/Images/insights/2024/05/AI-host-live-streaming-284x300.png)
 
 AI helps eCommerce businesses in China reduce operational costs. Alibaba, for example, utilizes AI to optimize its supply chain, predicting inventory needs and managing logistics efficiently. This automation reduces waste and ensures products are delivered quickly, improving overall customer service and reducing costs.
 
@@ -38,4 +38,4 @@ The future of AI in [eCommerce in China](/grow-in-china/cross-border-ecommerce) 
 
 AI is transforming China's eCommerce industry by enhancing consumer experiences, reducing operational costs, and integrating digital humans. As AI technology evolves, it will continue to drive innovation and efficiency, cementing its role as a critical component of China's eCommerce landscape. The integration of AI represents a new era of intelligent, efficient, and customer-focused online retail, poised to revolutionize the market.
 
-![Taobao AI services](https://beyondbordergroup.com/wp-content/uploads/2024/05/Taobao-AI-services.png)
+![Taobao AI services](/Images/insights/2024/05/Taobao-AI-services.png)

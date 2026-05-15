@@ -2,21 +2,95 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { getLocaleFromUrl } from '../i18n/utils';
-import { useTranslations } from '../i18n/utils';
+import SchemaGraph from '../components/SchemaGraph.astro';
+import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
+import { locales, defaultLocale } from '../i18n/ui';
+import { SITE_URL, organizationSchema, websiteSchema, schemaGraph } from '../lib/seo';
 
 interface Props {
 	title?: string;
 	description?: string;
+	/** Skip emitting hreflang alternates (use for legal pages without a FR twin). */
+	noAlternate?: boolean;
+	/** Emit a robots meta tag with noindex (use for /thank-you, /fr/merci). */
+	noindex?: boolean;
+	/** Page-specific schema. Merged with site-wide Organization + WebSite. */
+	schema?: Record<string, unknown> | Record<string, unknown>[];
+	/** Open Graph type, defaults to "website". Use "article" on blog posts. */
+	ogType?: 'website' | 'article';
+	/** Absolute or root-relative URL of the social preview image (1200x630). */
+	ogImage?: string;
+	/** Pre-resolved alt text for the OG image. */
+	ogImageAlt?: string;
+	/** Article-only metadata; ignored when ogType is "website". */
+	publishedTime?: Date | string;
+	modifiedTime?: Date | string;
+	articleAuthor?: string;
 }
 
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
 
+// Site-wide fallback OG image. Pages with a more specific hero should override
+// via the ogImage prop. Reuses the home hero asset, which already ships.
+const DEFAULT_OG_IMAGE = '/Images/hero-livestream.jpg';
+
 const {
 	title = t('site.title'),
 	description = t('site.description'),
+	noAlternate = false,
+	noindex = false,
+	schema: pageSchema,
+	ogType = 'website',
+	ogImage = DEFAULT_OG_IMAGE,
+	ogImageAlt = 'Beyond Border Group',
+	publishedTime,
+	modifiedTime,
+	articleAuthor,
 } = Astro.props;
+
+const ogLocale = locale === 'fr' ? 'fr_FR' : 'en_US';
+const ogLocaleAlt = locale === 'fr' ? 'en_US' : 'fr_FR';
+const absoluteOgImage = ogImage.startsWith('http') ? ogImage : SITE_URL + ogImage;
+
+const toIsoMaybe = (d?: Date | string) => {
+	if (!d) return undefined;
+	if (typeof d === 'string') return new Date(d).toISOString();
+	return d.toISOString();
+};
+const publishedIso = toIsoMaybe(publishedTime);
+const modifiedIso = toIsoMaybe(modifiedTime) ?? publishedIso;
+
+// Normalize current path: no trailing slash except root.
+const rawPath = Astro.url.pathname;
+const currentPath = rawPath === '/' ? '/' : rawPath.replace(/\/$/, '');
+const canonicalHref = SITE_URL + (currentPath === '/' ? '' : currentPath);
+
+// Build hreflang alternates. Skip locales where the path falls back to the
+// locale home (which means no real twin exists for the current page).
+const isLocaleHome = (p: string) => p === '/' || locales.some((l) => p === `/${l}`);
+type Alt = { code: string; href: string };
+const alternates: Alt[] = [];
+if (!noAlternate) {
+	for (const l of locales) {
+		const mapped = localizePath(currentPath, l);
+		const localeHome = l === defaultLocale ? '/' : `/${l}`;
+		if (mapped === localeHome && !isLocaleHome(currentPath)) continue;
+		alternates.push({
+			code: l,
+			href: SITE_URL + (mapped === '/' ? '' : mapped),
+		});
+	}
+}
+const enAlt = alternates.find((a) => a.code === 'en');
+
+// Assemble the schema graph: site-wide entities + page-specific.
+const pageSchemaList = pageSchema
+	? Array.isArray(pageSchema)
+		? pageSchema
+		: [pageSchema]
+	: [];
+const graph = schemaGraph(organizationSchema(), websiteSchema(), ...pageSchemaList);
 ---
 
 <!doctype html>
@@ -30,6 +104,45 @@ const {
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<title>{title}</title>
+		<link rel="canonical" href={canonicalHref} />
+		{noindex && <meta name="robots" content="noindex, follow" />}
+		{!noAlternate && alternates.map((a) => (
+			<link rel="alternate" hreflang={a.code} href={a.href} />
+		))}
+		{!noAlternate && enAlt && (
+			<link rel="alternate" hreflang="x-default" href={enAlt.href} />
+		)}
+
+		{/* Open Graph */}
+		<meta property="og:site_name" content="Beyond Border Group" />
+		<meta property="og:type" content={ogType} />
+		<meta property="og:url" content={canonicalHref} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={absoluteOgImage} />
+		<meta property="og:image:alt" content={ogImageAlt} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:locale" content={ogLocale} />
+		<meta property="og:locale:alternate" content={ogLocaleAlt} />
+		{ogType === 'article' && publishedIso && (
+			<meta property="article:published_time" content={publishedIso} />
+		)}
+		{ogType === 'article' && modifiedIso && (
+			<meta property="article:modified_time" content={modifiedIso} />
+		)}
+		{ogType === 'article' && articleAuthor && (
+			<meta property="article:author" content={articleAuthor} />
+		)}
+
+		{/* Twitter card */}
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={absoluteOgImage} />
+		<meta name="twitter:image:alt" content={ogImageAlt} />
+
+		<SchemaGraph schema={graph} />
 	</head>
 	<body>
 		<a href="#main" class="skip-link">{t('skipLink')}</a>

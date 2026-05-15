@@ -29,7 +29,7 @@ WeChat conserve son statut de référence du social chinois avec plus d'un milli
 
 La fonction Moments, équivalente du fil Facebook, sert de canal de diffusion pour les actualités, les promotions et les annonces publicitaires. WeChat fournit en parallèle une analytique poussée, capable de cibler des segments précis selon préférences et comportements. Bien orchestré, WeChat devient un accélérateur d'e-commerce en Chine, où communication et transaction se fondent dans une même expérience.
 
-![Interface WeChat Moments](https://beyondbordergroup.com/wp-content/uploads/2024/07/wechat-moments-1024x623.jpg)
+![Interface WeChat Moments](/Images/insights/2024/07/wechat-moments-1024x623.jpg)
 
 ### 2. Weibo
 
@@ -37,7 +37,7 @@ Weibo est une plateforme de microblogging qui revendique plus de 550 millions d'
 
 Les campagnes à hashtag et les sujets en tendance offrent un coup de projecteur considérable. L'économie des fans pèse lourd, portée par des KOL aux communautés massives qui amplifient les messages de marque. Les annonceurs s'associent à ces influenceurs pour lancer un produit, déployer une campagne ou nourrir l'engagement d'une audience exigeante. Weibo demeure un passage obligé de toute stratégie de marque ambitieuse en Chine.
 
-![Interface Weibo](https://beyondbordergroup.com/wp-content/uploads/2024/07/Weibo-new-1024x839.jpg)
+![Interface Weibo](/Images/insights/2024/07/Weibo-new-1024x839.jpg)
 
 ### 3. Douyin (TikTok)
 
@@ -45,7 +45,7 @@ Douyin, version chinoise de TikTok, rassemble 600 millions d'utilisateurs actifs
 
 L'application propose un éventail large de formats publicitaires : in-feed, défis de hashtag sponsorisés, effets de marque. L'algorithme Douyin remonte avec une précision redoutable les contenus pertinents, ce qui permet à une vidéo bien construite d'atteindre une audience massive. La collaboration avec des KOL populaires sur Douyin reste l'un des raccourcis les plus efficaces pour gagner en crédibilité. L'ascension de la plateforme a fait du marketing à la performance un terrain stratégique en Chine.
 
-![Plateforme Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/07/Douyin-1024x497.jpg)
+![Plateforme Douyin](/Images/insights/2024/07/Douyin-1024x497.jpg)
 
 ### 4. Tencent QQ
 
@@ -53,7 +53,7 @@ Tencent QQ rassemble plus de 800 millions d'utilisateurs actifs mensuels sur plu
 
 Une marque y active plusieurs leviers : campagne interactive, service client via la messagerie QQ, publicité sur le réseau de jeux. L'intégration avec les autres services Tencent (WeChat, Tencent Video) ouvre la voie à des stratégies marketing cross-plateformes parfaitement articulées.
 
-![Tencent QQ](https://beyondbordergroup.com/wp-content/uploads/2024/07/tencent-QQ.jpg)
+![Tencent QQ](/Images/insights/2024/07/tencent-QQ.jpg)
 
 ### 5. Baidu Tieba
 
@@ -61,7 +61,7 @@ Baidu Tieba est un forum communautaire qui revendique plus de 300 millions d'uti
 
 Baidu Tieba s'avère précieux pour le content marketing : publications et discussions ressortent fréquemment dans les résultats de recherche Baidu, ce qui démultiplie la visibilité. La plateforme constitue par ailleurs un outil de veille pour suivre l'opinion publique et collecter des retours sur produits ou services.
 
-![Baidu Tieba](https://beyondbordergroup.com/wp-content/uploads/2024/07/baidu-tieba-home.jpg)
+![Baidu Tieba](/Images/insights/2024/07/baidu-tieba-home.jpg)
 
 ### 6. Tencent Video
 
@@ -69,7 +69,7 @@ Tencent Video figure parmi les plus grandes plateformes de streaming vidéo en C
 
 L'étendue de l'audience et le niveau d'engagement en font un canal de premier choix pour adresser un large public. Le live y rencontre un succès marqué : événements, lancements produit, sessions interactives. Cet échange en temps réel renforce la visibilité et la confiance. Tencent Video s'inscrit naturellement dans une stratégie de live commerce en Chine.
 
-![Live streaming Tencent](https://beyondbordergroup.com/wp-content/uploads/2024/07/Tencent-livestreaming.jpg)
+![Live streaming Tencent](/Images/insights/2024/07/Tencent-livestreaming.jpg)
 
 ### 7. Zhihu
 
@@ -77,7 +77,7 @@ Zhihu est une plateforme de questions-réponses qui réunit plus de 100 millions
 
 Zhihu propose également des formats publicitaires payants, qu'il s'agisse de réponses sponsorisées ou de bannières, qui amplifient la visibilité. Les abonnements premium permettent à la marque d'offrir du contenu exclusif : webinaires, ebooks, livres blancs. La valeur apportée à la communauté Zhihu installe progressivement la marque en référence de son secteur.
 
-![Plateforme Zhihu](https://beyondbordergroup.com/wp-content/uploads/2024/07/Zhihu.jpg)
+![Plateforme Zhihu](/Images/insights/2024/07/Zhihu.jpg)
 
 ### 8. Xiaohongshu (RED)
 
@@ -85,7 +85,7 @@ Xiaohongshu, alias Little Red Book ou RED, est une plateforme de social commerce
 
 Les fonctions shopping permettent l'achat directement dans l'application, ce qui simplifie radicalement le parcours. L'approche communautaire de Xiaohongshu aide la marque à bâtir une authenticité solide, particulièrement précieuse pour adresser une jeune audience attentive aux tendances. Xiaohongshu reste un passage essentiel pour la localisation de marque en Chine.
 
-![Xiaohongshu](https://beyondbordergroup.com/wp-content/uploads/2024/07/little-red-1024x550.jpg)
+![Xiaohongshu](/Images/insights/2024/07/little-red-1024x550.jpg)
 
 ## Activer les réseaux sociaux chinois au service du marketing
 

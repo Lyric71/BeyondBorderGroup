@@ -20,7 +20,7 @@ L'IA rebat les cartes de l'expérience d'achat sur le marché chinois. Sur Tmall
 
 ## Des coûts opérationnels en baisse
 
-![Animatrice IA en direct livestream](https://beyondbordergroup.com/wp-content/uploads/2024/05/AI-host-live-streaming-284x300.png)
+![Animatrice IA en direct livestream](/Images/insights/2024/05/AI-host-live-streaming-284x300.png)
 
 L'IA aide les acteurs chinois de l'e-commerce à serrer leurs coûts. Alibaba s'appuie par exemple sur ses modèles pour piloter sa chaîne d'approvisionnement, anticiper les besoins en stock et orchestrer la logistique au plus juste. Cette automatisation comprime les pertes, accélère les livraisons et améliore au passage la qualité du service client.
 
@@ -38,4 +38,4 @@ L'avenir de l'IA dans l'[e-commerce chinois](/fr/se-developper-en-chine/ecommerc
 
 L'IA redessine en profondeur l'e-commerce chinois. Elle améliore le parcours d'achat, comprime les coûts opérationnels et installe les humains numériques dans la chaîne de prescription. À mesure que la technologie progresse, elle tirera l'innovation et la productivité, et confirmera son statut de pièce maîtresse du commerce en ligne chinois. Une nouvelle séquence s'ouvre : un commerce plus intelligent, plus efficace, plus tourné vers le client.
 
-![Services IA de Taobao](https://beyondbordergroup.com/wp-content/uploads/2024/05/Taobao-AI-services.png)
+![Services IA de Taobao](/Images/insights/2024/05/Taobao-AI-services.png)

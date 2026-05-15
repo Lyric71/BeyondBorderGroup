@@ -48,7 +48,7 @@ La durabilité s'installe comme un critère majeur pour le voyageur chinois ais�
 
 Le bien-être monte en puissance. Retraites santé, spas, programmes axés sur la longévité ou la régénération attirent une demande structurée. Le voyageur chinois aisé veut soigner son corps autant que son esprit. Les opérateurs qui montent des forfaits dédiés tirent leur épingle du jeu.
 
-![Voyageurs chinois haut de gamme](https://beyondbordergroup.com/wp-content/uploads/2024/07/pexels-freestockpro-2166608-1024x683.jpg)
+![Voyageurs chinois haut de gamme](/Images/insights/2024/07/pexels-freestockpro-2166608-1024x683.jpg)
 
 **L'expérience comme moteur**
 

@@ -29,7 +29,7 @@ Underneath, Alibaba has folded real-time retail into its core e-commerce divisio
 
 Heavy subsidies and investment have pushed volumes up quickly while putting pressure on margins across the industry. This is a fight for share and habit, not for neat quarterly profit.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/TB-instant-commerce-2-1024x576.png)
+![](/Images/insights/2025/11/TB-instant-commerce-2-1024x576.png)
 
 ## From Shopping Event To Local Life Habits
 
@@ -80,7 +80,7 @@ How you respond depends on where your brand is today.
 * Protect perception first: fast should not automatically read as cheap or mass
 * Concentrate investment on search and seeding inside Tmall and Taobao, and treat any instant commerce activity as a visibility experiment rather than a volume engine
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/TB-instant-commerce-3-1024x576.png)
+![](/Images/insights/2025/11/TB-instant-commerce-3-1024x576.png)
 
 ## Planning For An Instant First China
 

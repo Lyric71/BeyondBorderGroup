@@ -36,7 +36,7 @@ L'approche reprend fidèlement la sonorité du nom d'origine avec des caractère
 
 * Exemple : Adidas (阿迪达斯, Ādídásī) conserve la sonorité originale et joue sur des caractères neutres pour écarter toute connotation indésirable.
 
-![Adaptation chinoise d'Adidas](https://beyondbordergroup.com/wp-content/uploads/2025/01/Adidas-300x294.jpg)
+![Adaptation chinoise d'Adidas](/Images/insights/2025/01/Adidas-300x294.jpg)
 
 ### Le sens fort
 
@@ -44,7 +44,7 @@ L'attention bascule ici sur un nom qui restitue l'essence ou les valeurs de l'en
 
 * Exemple : Marriott (万豪, Wànháo) signifie « dix mille grandeurs » et installe d'emblée une image de luxe et de raffinement.
 
-![Adaptation chinoise de Marriott](https://beyondbordergroup.com/wp-content/uploads/2025/01/mariott-by-TutorABC-Chinese-300x180.jpg)
+![Adaptation chinoise de Marriott](/Images/insights/2025/01/mariott-by-TutorABC-Chinese-300x180.jpg)
 
 ### Le mariage sonorité et sens
 
@@ -52,7 +52,7 @@ La troisième voie combine proximité sonore et sens fort. Elle fait figure de s
 
 * Exemple : Coca-Cola (可口可乐, Kěkǒu Kělè) reprend la sonorité originale et signifie « bonheur savoureux », un résultat parfaitement aligné sur l'image de la marque.
 
-![Adaptation chinoise de Coca-Cola](https://beyondbordergroup.com/wp-content/uploads/2025/01/cola-by-TutorABC-Chinese-300x288.jpg)
+![Adaptation chinoise de Coca-Cola](/Images/insights/2025/01/cola-by-TutorABC-Chinese-300x288.jpg)
 
 Pour les marques engagées sur Douyin ou sur les autres réseaux sociaux chinois, un nom qui marie impact émotionnel et familiarité sonore facilite la mémorisation et resserre le lien avec le consommateur.
 

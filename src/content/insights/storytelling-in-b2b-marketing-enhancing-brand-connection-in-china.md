@@ -24,9 +24,9 @@ To effectively engage and convert in B2B marketing, especially for Chinese brand
 
 To create compelling B2B narratives in China, focus on the unique challenges your Chinese audience faces and how your brand can solve them. Employ storytelling techniques such as character development and customer journey narratives, incorporating elements of conflict and resolution, to forge a strong narrative arc that resonates with Chinese brands and consumers. By emphasizing the specific pain points and aspirations of your buyer personas in China, you can craft stories that not only inform but also inspire and drive them to take action, positioning your brand as a crucial guide in their journey to success.
 
-![Xiaomi Official Account](https://beyondbordergroup.com/wp-content/uploads/2024/04/Xiaomi-Official-Account-2.jpg)
+![Xiaomi Official Account](/Images/insights/2024/04/Xiaomi-Official-Account-2.jpg)
 
-![Xiaomi Official Account](https://beyondbordergroup.com/wp-content/uploads/2024/04/Xiaomi-Official-Account-3-473x1024.png)
+![Xiaomi Official Account](/Images/insights/2024/04/Xiaomi-Official-Account-3-473x1024.png)
 
 ## Embedding Authenticity and Emotional Connections in B2B Marketing for Chinese Brands
 
@@ -40,6 +40,6 @@ Storytelling through the customer journey is especially crucial in the B2B conte
 
 Storytelling in B2B marketing transcends being just a trend; it's fundamental to effective content marketing. By crafting stories that resonate emotionally and align with the customer journey, companies can genuinely engage their audiences and drive greater conversions. In the B2B realm, where purchase cycles are longer and more complex, a compelling and authentic narrative is essential for maintaining lead interest and achieving marketing objectives.
 
-![Xiaomi Official Account](https://beyondbordergroup.com/wp-content/uploads/2024/04/Xiaomi-Official-Account-4-473x1024.jpg)
+![Xiaomi Official Account](/Images/insights/2024/04/Xiaomi-Official-Account-4-473x1024.jpg)
 
-![Xiaomi Official Account](https://beyondbordergroup.com/wp-content/uploads/2024/04/Xiaomi-Official-Account-1-473x1024.jpg)
+![Xiaomi Official Account](/Images/insights/2024/04/Xiaomi-Official-Account-1-473x1024.jpg)

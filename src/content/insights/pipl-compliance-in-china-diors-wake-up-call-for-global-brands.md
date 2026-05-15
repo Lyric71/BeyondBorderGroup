@@ -36,7 +36,7 @@ Over the past few years, China has filled in PIPL with practical rules on [cross
 
 A high-profile case like Dior is both punishment and a public signal. For senior marketers and e-commerce leads, the takeaway is simple: PIPL is no longer something you can leave to "legal and IT". It shapes what your teams can do with customer data day to day.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/PIPL-2-1-1024x576.png)
+![](/Images/insights/2025/11/PIPL-2-1-1024x576.png)
 
 ## What PIPL Changes For Marketing And E-commerce
 
@@ -56,7 +56,7 @@ When core marketing platforms are hosted overseas, campaigns that rely on identi
 
 Seen this way, PIPL is less a one-off legal project and more a design constraint for your China customer system.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/PIPL-3-1024x576.png)
+![](/Images/insights/2025/11/PIPL-3-1024x576.png)
 
 ## Practical Moves For Global Brands In China
 

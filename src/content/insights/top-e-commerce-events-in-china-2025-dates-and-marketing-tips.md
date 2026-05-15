@@ -45,7 +45,7 @@ The Lunar New Year is China's most important traditional festival and a major dr
 
 #### Valentine's Day (February 14, 2025)
 
-![valentines-day-by-Caixin-Global](https://beyondbordergroup.com/wp-content/uploads/2025/01/valentines-day-by-Caixin-Global.jpg)
+![valentines-day-by-Caixin-Global](/Images/insights/2025/01/valentines-day-by-Caixin-Global.jpg)
 
 Source: Caixin Global
 
@@ -60,7 +60,7 @@ Though Western in origin, Valentine's Day is widely embraced by younger Chinese 
 
 #### International Women's Day (March 8, 2025)
 
-![Womens-day-by-China-Daily](https://beyondbordergroup.com/wp-content/uploads/2025/01/Womens-day-by-China-Daily.jpg)
+![Womens-day-by-China-Daily](/Images/insights/2025/01/Womens-day-by-China-Daily.jpg)
 
 Source: China Daily
 
@@ -98,7 +98,7 @@ Founded by JD.com, the 618 Shopping Festival has grown into one of China's large
 
 #### Dragon Boat Festival (May 31, 2025)
 
-![Dragon-boat-by-South-China-Morning-Post](https://beyondbordergroup.com/wp-content/uploads/2025/01/Dragon-boat-by-South-China-Morning-Post-1024x629.jpg)
+![Dragon-boat-by-South-China-Morning-Post](/Images/insights/2025/01/Dragon-boat-by-South-China-Morning-Post-1024x629.jpg)
 
 Source: South China Morning Post
 
@@ -124,7 +124,7 @@ Known as Chinese Valentine's Day, the Qixi Festival is steeped in romantic folkl
 
 #### 8.8 Shopping Festival (August 8, 2025)
 
-![88-festival-newzealand-air-by-Alizila](https://beyondbordergroup.com/wp-content/uploads/2025/01/88-festival-newzealand-air-by-Alizila-1024x576.jpg)
+![88-festival-newzealand-air-by-Alizila](/Images/insights/2025/01/88-festival-newzealand-air-by-Alizila-1024x576.jpg)
 
 Source: Alizila
 
@@ -138,7 +138,7 @@ Launched by Alibaba, this festival highlights cross-border shopping and exclusiv
 
 #### Teachers' Day (September 10, 2025)
 
-![Teachers-Day-by-China-Daily](https://beyondbordergroup.com/wp-content/uploads/2025/01/Teachers-Day-by-China-Daily.jpeg)
+![Teachers-Day-by-China-Daily](/Images/insights/2025/01/Teachers-Day-by-China-Daily.jpeg)
 
 Source: China Daily
 
@@ -174,7 +174,7 @@ This family-focused festival is celebrated with mooncakes and lanterns, making i
 
 #### Singles' Day (November 11, 2025)
 
-![Singles-Day-by-Reuters](https://beyondbordergroup.com/wp-content/uploads/2025/01/Singles-Day-by-Reuters-1024x574.jpg)
+![Singles-Day-by-Reuters](/Images/insights/2025/01/Singles-Day-by-Reuters-1024x574.jpg)
 
 Source: Reuters
 

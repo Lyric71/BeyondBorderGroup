@@ -28,7 +28,7 @@ Baidu is often referred to as China's Google. With over 50% of the search engine
 
 For marketers, Baidu presents a significant opportunity. However, succeeding on Baidu requires understanding its unique SEO practices. Unlike Google, Baidu still relies heavily on meta keywords and places significant emphasis on simplified Chinese content. Websites hosted on Chinese servers with an Internet Content Provider (ICP) license are preferred in rankings. Additionally, Baidu's search algorithms favor HTTPS, fast loading speeds, and high-quality content.
 
-![Baidu logo and interface](https://beyondbordergroup.com/wp-content/uploads/2024/07/baidu.jpg)
+![Baidu logo and interface](/Images/insights/2024/07/baidu.jpg)
 
 ### 2. Sogou: The Search Dog
 
@@ -38,7 +38,7 @@ Sogou, launched in 2004, is the second-largest search engine in China. In 2021, 
 
 Sogou's SEO practices emphasize original content and site authority. Backlinks are crucial, with quantity often trumping quality. While meta descriptions are less important, title tags play a vital role in search rankings. Sogou's integration with Tencent platforms also allows for smooth marketing opportunities within social media and messaging apps.
 
-![Sogou search engine interface](https://beyondbordergroup.com/wp-content/uploads/2024/07/sougou.jpg)
+![Sogou search engine interface](/Images/insights/2024/07/sougou.jpg)
 
 ### 3. Shenma: Mobile-First Approach
 
@@ -48,7 +48,7 @@ Shenma is a joint venture between Alibaba and UC Web, focusing exclusively on mo
 
 Shenma's close ties with Alibaba mean that products listed on Alibaba platforms like Taobao and Tmall get priority in search results. This makes Shenma an excellent choice for marketers targeting mobile users and promoting ecommerce products. Optimizing for Shenma involves ensuring that product pages on Taobao or Tmall are well-maintained and SEO-friendly.
 
-![Shenma mobile search engine](https://beyondbordergroup.com/wp-content/uploads/2024/07/shenma2-500x408-1.png)
+![Shenma mobile search engine](/Images/insights/2024/07/shenma2-500x408-1.png)
 
 ### 4. Haosuo: The Secure Search Engine
 
@@ -58,7 +58,7 @@ Also known as Qihoo 360 Search, Haosuo is known for its emphasis on security. It
 
 Haosuo's SEO rankings prioritize websites with high authority and trustworthiness. This makes it an excellent platform for B2B marketing. The competition on Haosuo is less intense than on Baidu, often resulting in lower cost-per-click rates for paid ads.
 
-![Haosuo search interface](https://beyondbordergroup.com/wp-content/uploads/2024/07/Haosou.png)
+![Haosuo search interface](/Images/insights/2024/07/Haosou.png)
 
 ### 5. Youdao: The Translation Giant
 
@@ -68,7 +68,7 @@ Youdao, part of the NetEase family, operates more like an educational platform t
 
 Youdao's unique user base and focus on education make it a niche but valuable platform for marketers. Products and services related to education, learning tools, and international products benefit from Youdao's translation capabilities and user engagement.
 
-![Youdao translation and search platform](https://beyondbordergroup.com/wp-content/uploads/2024/07/youdao1.jpg)
+![Youdao translation and search platform](/Images/insights/2024/07/youdao1.jpg)
 
 ## The Importance of Localized SEO in China
 

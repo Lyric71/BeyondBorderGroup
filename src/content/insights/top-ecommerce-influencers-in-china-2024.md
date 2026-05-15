@@ -38,7 +38,7 @@ These KOLs focus on promoting practical, everyday products, often targeting urba
 
 Lin Yilun is celebrated for her cozy and practical lifestyle content, offering audiences insights into home organization, parenting tips, and product recommendations. Her relatable approach to everyday challenges resonates strongly with middle-class urban audiences. Collaborations with a branding agency in China often feature her for creating relatable yet aspirational [campaigns](/grow-in-china/campaigns).
 
-![Lin Yilun lifestyle influencer](https://beyondbordergroup.com/wp-content/uploads/2024/12/Lin-final.png)
+![Lin Yilun lifestyle influencer](/Images/insights/2024/12/Lin-final.png)
 
 #### Papi酱 (Papi Jiang)
 
@@ -47,7 +47,7 @@ Lin Yilun is celebrated for her cozy and practical lifestyle content, offering a
 
 Papi Jiang blends humor and commentary to captivate her audience. Her knack for cleanly integrating product endorsements into engaging skits makes her one of the most versatile influencers for lifestyle brands. She's a favorite for brands needing creative, storytelling-focused campaigns handled by a creative agency in China.
 
-![Papi Jiang humor and lifestyle content](https://beyondbordergroup.com/wp-content/uploads/2024/12/papi-final.png)
+![Papi Jiang humor and lifestyle content](/Images/insights/2024/12/papi-final.png)
 
 ### Travel and Adventure Influencers
 
@@ -60,7 +60,7 @@ Travel influencers are important in promoting destinations, travel gear, and lif
 
 Winnie Wen showcases luxury travel destinations, accommodations, and aspirational experiences. Her content appeals to affluent consumers and is often featured in campaigns by media agencies in China for premium travel brands.
 
-![Winnie Wen luxury travel influencer](https://beyondbordergroup.com/wp-content/uploads/2024/12/win-final.png)
+![Winnie Wen luxury travel influencer](/Images/insights/2024/12/win-final.png)
 
 #### 氧化菊 (Yanghua Ju)
 
@@ -69,7 +69,7 @@ Winnie Wen showcases luxury travel destinations, accommodations, and aspirationa
 
 Yanghua Ju highlights cultural experiences and hidden gems, creating content that combines education with entertainment. Her down-to-earth tone attracts adventurous audiences eager to explore unique destinations.
 
-![Yanghua Ju cultural travel experiences](https://beyondbordergroup.com/wp-content/uploads/2024/12/yang-final.png)
+![Yanghua Ju cultural travel experiences](/Images/insights/2024/12/yang-final.png)
 
 ### Beauty Influencers
 
@@ -82,7 +82,7 @@ Beauty KOLs dominate the Chinese eCommerce space, offering tutorials, reviews, a
 
 Yimoney delivers honest beauty product reviews and tutorials, covering everything from luxury brands to affordable drugstore finds. She's highly valued by brands looking to collaborate with a digital marketing agency in China for campaigns targeting beauty enthusiasts.
 
-![Yimoney beauty product reviews](https://beyondbordergroup.com/wp-content/uploads/2024/12/yim-final.png)
+![Yimoney beauty product reviews](/Images/insights/2024/12/yim-final.png)
 
 #### 李佳琦 (Austin Li)
 
@@ -91,7 +91,7 @@ Yimoney delivers honest beauty product reviews and tutorials, covering everythin
 
 Dubbed the "Lipstick King," Austin Li is a live-streaming powerhouse known for breaking sales records. Brands often work with a digital agency in China to effectively partner with him and amplify their campaigns.
 
-![Austin Li lipstick king livestreaming](https://beyondbordergroup.com/wp-content/uploads/2024/12/au-final.png)
+![Austin Li lipstick king livestreaming](/Images/insights/2024/12/au-final.png)
 
 ### Food and Beverage Influencers
 
@@ -104,7 +104,7 @@ These influencers bring the culinary world to life, showcasing recipes, reviews,
 
 Fei Zhu Zhu shares quick and easy recipes, along with creative food hacks. Her content often serves as a promotional channel for cooking brands partnering with a marketing agency in China.
 
-![Fei Zhu Zhu recipe and food hacks](https://beyondbordergroup.com/wp-content/uploads/2024/12/fei-final.png)
+![Fei Zhu Zhu recipe and food hacks](/Images/insights/2024/12/fei-final.png)
 
 #### 培根日记 (Bacon Diary)
 
@@ -113,7 +113,7 @@ Fei Zhu Zhu shares quick and easy recipes, along with creative food hacks. Her c
 
 Bacon Diary is a juggernaut in the food [influencer](/grow-in-china/influencers-kols) space, combining visually stunning content with relatable narratives. His focus on traditional Chinese dishes, modern cooking techniques, and humor has garnered him a massive following.
 
-![Bacon Diary food content Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/12/bacon-final.png)
+![Bacon Diary food content Douyin](/Images/insights/2024/12/bacon-final.png)
 
 ## The Impact of KOL Marketing on Chinese eCommerce
 

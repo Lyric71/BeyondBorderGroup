@@ -19,7 +19,7 @@ For businesses looking to succeed in the Chinese market, especially in ecommerce
 
 WeChat QR codes are unique, scannable codes linked to user profiles, businesses, or specific content within the WeChat ecosystem. Unlike traditional QR codes that simply redirect to websites, WeChat QR codes can perform multiple functions, from adding friends to making payments or following official accounts.
 
-![WeChat Pay sample QR code](https://beyondbordergroup.com/wp-content/uploads/2025/02/wechatpay-sample-300x157.jpg)
+![WeChat Pay sample QR code](/Images/insights/2025/02/wechatpay-sample-300x157.jpg)
 
 Every WeChat user is assigned a personal QR code that others can scan to connect. For businesses, QR codes can link to official accounts, mini-programs, or promotional content, making them a versatile tool for customer interaction. This is especially valuable for companies involved in Chinese ecommerce or cross-border ecommerce China, as QR codes streamline the connection between brands and consumers.
 

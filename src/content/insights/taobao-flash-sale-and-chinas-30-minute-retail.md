@@ -51,7 +51,7 @@ A platform designed to pull demand, route it locally, and fulfill it from nearby
 
 Once consumers get used to that, the bar rises for everyone.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/12/TB-flash-2-300x300.png)
+![](/Images/insights/2025/12/TB-flash-2-300x300.png)
 
 ---
 
@@ -68,7 +68,7 @@ China's instant retail market is forecast to exceed RMB 2 trillion by 2030. Peop
 **3) Alibaba wants Taobao to be inside daily life.**
 If Taobao can own more of the everyday rhythm, it strengthens loyalty, increases session frequency, and gives it more use in category growth.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/12/TB-flash-3-1024x576.png)
+![](/Images/insights/2025/12/TB-flash-3-1024x576.png)
 
 ---
 

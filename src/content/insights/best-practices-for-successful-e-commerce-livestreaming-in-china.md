@@ -29,27 +29,27 @@ China's livestreaming ecosystem is diverse, with platforms catering to specific 
 
 Taobao Live leads the market, accounting for over 70% of livestream transactions. It's ideal for large-scale campaigns and offers tools to maximize sales during shopping festivals like Singles' Day.
 
-![Taobao Live interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-tao.png)
+![Taobao Live interface](/Images/insights/2024/12/live-tao.png)
 
 ### Douyin
 
 Douyin excels in blending entertainment and commerce. With its younger demographic and visually rich content, Douyin is perfect for brands looking to showcase innovative products.
 
-![Douyin livestream platform](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-dou.png)
+![Douyin livestream platform](/Images/insights/2024/12/live-dou.png)
 
 ### Kuaishou
 
 Kuaishou emphasizes authenticity and relatability, making it ideal for regional campaigns. It's a great choice for brands focusing on building trust within niche communities.
 
-![Kuaishou platform interface](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-kua.png)
+![Kuaishou platform interface](/Images/insights/2024/12/live-kua.png)
 
 ### Bilibili
 
 Bilibili caters to younger audiences who value in-depth content. Its emphasis on education and entertainment makes it a strong option for detailed product demonstrations.
 
-![Bilibili interface 1](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-bili1.png)
+![Bilibili interface 1](/Images/insights/2024/12/live-bili1.png)
 
-![Bilibili interface 2](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-bili2.png)
+![Bilibili interface 2](/Images/insights/2024/12/live-bili2.png)
 
 ## Developing a Winning Livestream Strategy
 
@@ -75,7 +75,7 @@ Successful livestreams are not static, they're dynamic and interactive. Include 
 
 Shopping festivals, such as Singles' Day and the 618 Festival, are central in the success of livestream e-commerce. During these events, brands can capitalize on heightened consumer enthusiasm and purchasing intent.
 
-![Shopping festival calendar](https://beyondbordergroup.com/wp-content/uploads/2024/12/live-festi.png)
+![Shopping festival calendar](/Images/insights/2024/12/live-festi.png)
 
 To make the most of these opportunities:
 

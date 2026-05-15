@@ -1,6 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
+import { articleSchema } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const posts = await getCollection('insightsFr', ({ data }) => !data.draft);
@@ -23,6 +24,30 @@ const {
   tags,
   author,
 } = post.data;
+
+const KNOWN_AUTHORS: Record<string, { url: string }> = {
+  'Cyril Drouin': { url: '/fr/qui-nous-sommes#cyril-drouin' },
+  'Echo Peng': { url: '/fr/qui-nous-sommes#echo-peng' },
+  'Liyan Ye': { url: '/fr/qui-nous-sommes#liyan-ye' },
+};
+const authorLink = KNOWN_AUTHORS[author]?.url;
+
+const articleJsonLd = articleSchema({
+  url: `/fr/decryptages/${post.id}`,
+  title,
+  description,
+  image: heroImage,
+  pubDate,
+  updatedDate,
+  author,
+  inLanguage: 'fr',
+  category,
+  breadcrumb: [
+    { name: 'Accueil', url: '/fr' },
+    { name: 'Décryptages', url: '/fr/decryptages' },
+    { name: title, url: `/fr/decryptages/${post.id}` },
+  ],
+});
 
 const categoryLabelsFr: Record<string, string> = {
   'Platforms': 'Plateformes',
@@ -54,7 +79,17 @@ const related = allInsights
 const categoryLabel = categoryLabelsFr[category] ?? category;
 ---
 
-<Layout title={`${title} | Beyond Border Group`} description={description}>
+<Layout
+  title={`${title} | Beyond Border Group`}
+  description={description}
+  schema={articleJsonLd}
+  ogType="article"
+  ogImage={heroImage}
+  ogImageAlt={heroImageAlt || title}
+  publishedTime={pubDate}
+  modifiedTime={updatedDate}
+  articleAuthor={author}
+>
   <article class="insight-article">
     <header class="insight-article__header">
       <div class="container container--narrow">
@@ -65,7 +100,7 @@ const categoryLabel = categoryLabelsFr[category] ?? category;
         <h1 class="insight-article__title">{title}</h1>
         <p class="insight-article__lead">{description}</p>
         <div class="insight-article__meta">
-          <span>{author}</span>
+          {authorLink ? <a href={authorLink} rel="author">{author}</a> : <span>{author}</span>}
           {pubDate && (
             <>
               <span aria-hidden="true">·</span>

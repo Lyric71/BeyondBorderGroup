@@ -26,7 +26,7 @@ Chinese consumers have different expectations when it comes to the usability and
 
 For example, websites in China often use more direct and detailed product descriptions and prefer a design that is rich in information yet easy to navigate. Localizing your website to align with these traits can significantly enhance user engagement and trust. This leads to better conversion rates and customer retention.
 
-![Beauty Products in Taobao](https://beyondbordergroup.com/wp-content/uploads/2025/01/site_product-descriptions-1.png)
+![Beauty Products in Taobao](/Images/insights/2025/01/site_product-descriptions-1.png)
 
 ## Key Strategies for Website Localization
 
@@ -44,7 +44,7 @@ Effective localization involves adjusting your content and design to fit local c
 
 * **Language Choices:** The choice between Simplified and Traditional Chinese should be guided by your target demographic. Simplified Chinese is used in mainland China, while Traditional Chinese is prevalent in Hong Kong and Taiwan. Knowing these distinctions is essential for effective communication and engagement.
 
-![Chinese language variants](https://beyondbordergroup.com/wp-content/uploads/2025/01/chinese-language.png)
+![Chinese language variants](/Images/insights/2025/01/chinese-language.png)
 
 * **Cultural Nuances:** Localizing content includes adapting your marketing messages to fit cultural contexts and values. This might involve modifying images, color schemes, and promotional messages to resonate more deeply with local consumers.
 
@@ -86,7 +86,7 @@ The technical backbone of your website must be compatible with China's internet 
 
 * **Replacing Restricted Services:** Many common Western services, such as Google Maps, are blocked in China. Utilizing local services like Baidu Maps instead can enhance functionality and user experience.
 
-![Baidu Maps 3D view](https://beyondbordergroup.com/wp-content/uploads/2025/01/Baidu-Maps-3D-view-03.jpg)
+![Baidu Maps 3D view](/Images/insights/2025/01/Baidu-Maps-3D-view-03.jpg)
 
 * **Local API Integration:** Integrating APIs that are permitted and optimized for the Chinese internet infrastructure can improve the performance and reliability of your website's features.
 
@@ -102,7 +102,7 @@ Unlike Western websites, which often favor minimalism, Chinese websites are know
 
 The visual design of your website should reflect branding China preferences and norms. Bright colors like red and gold are popular as they symbolize good fortune and happiness. Avoid using dark and dull colors which might not be as appealing. Incorporating vibrant, animated elements and flashy banners can also be more attractive to Chinese ecommerce users, as these features are commonly seen in local digital content.
 
-![Zhangmen Homepage](https://beyondbordergroup.com/wp-content/uploads/2025/01/zhangmen-website.png)
+![Zhangmen Homepage](/Images/insights/2025/01/zhangmen-website.png)
 
 ### User Experience (UX) Adaptations
 

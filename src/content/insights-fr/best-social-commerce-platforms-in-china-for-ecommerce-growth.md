@@ -23,7 +23,7 @@ Pour exister dans cet environnement saturé, la connaissance des principales [pl
 
 Xiaohongshu, alias Little Red Book, séduit en premier la jeunesse urbaine. Connue à l'origine pour ses avis beauté et mode, l'application couvre désormais le lifestyle, le voyage et la maison. Avec 260 millions d'utilisateurs actifs, elle pèse lourd dans le social commerce, surtout côté Gen Z et jeunes actifs.
 
-![Interface de Xiaohongshu](https://beyondbordergroup.com/wp-content/uploads/2024/12/Xiaohong-1024x585.png)
+![Interface de Xiaohongshu](/Images/insights/2024/12/Xiaohong-1024x585.png)
 
 ### Caractéristiques clés
 
@@ -42,7 +42,7 @@ Pour les marques tournées vers le e-commerce chinois, Xiaohongshu offre plusieu
 
 WeChat n'est pas une messagerie. La super-app marie réseaux sociaux, paiement et e-commerce dans une seule interface, et compte 1,2 milliard d'utilisateurs actifs. Portée inégalée, terrain de jeu central pour le marketing digital en Chine.
 
-![Fonctionnalités de WeChat](https://beyondbordergroup.com/wp-content/uploads/2024/12/wechat2-1024x585.png)
+![Fonctionnalités de WeChat](/Images/insights/2024/12/wechat2-1024x585.png)
 
 ### Caractéristiques clés
 
@@ -61,7 +61,7 @@ WeChat reste l'arme principale de toute stratégie sociale en Chine. Mini-progra
 
 Taobao et Tmall, propriétés d'Alibaba, dominent le e-commerce chinois. Leur volet social commerce, notamment via GuangGuang, ouvre l'accès à des millions de consommateurs. Passage quasi obligé pour qui veut accélérer.
 
-![Plateforme e-commerce Taobao et Tmall](https://beyondbordergroup.com/wp-content/uploads/2024/12/taobao2-1024x585.png)
+![Plateforme e-commerce Taobao et Tmall](/Images/insights/2024/12/taobao2-1024x585.png)
 
 ### Caractéristiques clés
 
@@ -79,7 +79,7 @@ Mobiliser des KOL chinois pendant les livestreams et participer aux soldes saiso
 
 Pinduoduo grimpe vite dans le social commerce grâce à son modèle d'achat groupé. Le principe : acheter à plusieurs, avec ses amis ou sa famille, pour décrocher la remise. L'application s'est imposée rapidement, surtout dans les villes de second et troisième rang, et a dépassé les 500 millions d'acheteurs.
 
-![Plateforme d'achat groupé Pinduoduo](https://beyondbordergroup.com/wp-content/uploads/2024/12/pind-1024x585.png)
+![Plateforme d'achat groupé Pinduoduo](/Images/insights/2024/12/pind-1024x585.png)
 
 ### Caractéristiques clés
 
@@ -97,7 +97,7 @@ Pinduoduo répond aux marques qui jouent la carte du groupe et du bouche-à-orei
 
 Weibo, souvent comparé au Twitter chinois, conserve une présence solide dans le paysage digital et s'est imposé comme vraie plateforme de social commerce. Avec le lancement de Weibo Xiaodian, les marques vendent désormais leurs produits sans quitter l'application.
 
-![Weibo, plateforme de social commerce](https://beyondbordergroup.com/wp-content/uploads/2024/12/weibo2-1024x585.png)
+![Weibo, plateforme de social commerce](/Images/insights/2024/12/weibo2-1024x585.png)
 
 ### Caractéristiques clés
 

@@ -30,7 +30,7 @@ Ce basculement éloigne de la localisation cosmétique pour pousser vers des cho
 
 Une maison de luxe qui investit Chengdu en s'appuyant sur la confiance culturelle de la ville, une marque sportive qui rénove les terrains de quartier plutôt que d'orchestrer un événement national : voilà le mouvement à l'œuvre. La marque renonce à parler à toute la Chine. Elle choisit un terrain et soigne l'exécution.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/localization-1-1024x576.png)
+![](/Images/insights/2024/06/localization-1-1024x576.png)
 
 ---
 
@@ -83,7 +83,7 @@ Trois inflexions comptent vraiment :
 
 Les marques qui s'adapteront le plus vite seront celles qui cessent de réduire la Chine à une ligne de tableur pour la lire comme un ensemble d'opportunités mobiles.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2024/06/localization-2-1-1024x647.png)
+![](/Images/insights/2024/06/localization-2-1-1024x647.png)
 
 ---
 

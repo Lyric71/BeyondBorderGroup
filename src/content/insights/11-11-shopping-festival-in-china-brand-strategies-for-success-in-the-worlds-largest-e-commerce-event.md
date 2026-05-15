@@ -29,13 +29,13 @@ The success of the 11.11 Shopping Festival is largely driven by China's dominant
 
 * **Tmall:** As a premium marketplace under Alibaba, Tmall hosts pre-sales, live-streaming events, and interactive shopping experiences that attract both local and international brands. Brands utilizing Tmall cross-border services can access millions of Chinese consumers without requiring a physical presence in China.
 
-![Tmall's 11.11 Countdown Gala](https://beyondbordergroup.com/wp-content/uploads/2024/10/Tmall-11-countdown-1024x576.png)
+![Tmall's 11.11 Countdown Gala](/Images/insights/2024/10/Tmall-11-countdown-1024x576.png)
 
 Tmall's 11.11 Countdown Gala Source: Alibaba Group
 
 * **JD.com:** JD.com is another key player, known for its focus on logistics and fast delivery. It is particularly attractive for electronics and consumer goods during the 11.11 Festival, ensuring that buyers receive their orders quickly, further boosting brand loyalty.
 
-![Launch of JD's 2020 11.11 Campaign](https://beyondbordergroup.com/wp-content/uploads/2024/10/jd-double-11.jpg)
+![Launch of JD's 2020 11.11 Campaign](/Images/insights/2024/10/jd-double-11.jpg)
 
 Launch of JD's 2020 11.11 Campaign Source: JD.com
 

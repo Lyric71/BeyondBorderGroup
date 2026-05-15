@@ -27,4 +27,4 @@ JD.com's use of AI like ChatRhino represents a significant shift in e-commerce, 
 
 This development highlights a trend that could redefine global e-commerce strategies. As AI technologies continue to evolve, their integration into online platforms could become more prevalent, enhancing the shopping experience and creating new opportunities for digital marketing. This innovative approach by JD.com could inspire other companies worldwide to explore the benefits of AI in engaging and retaining customers.
 
-![AI hosts for livestream ecommerce](https://beyondbordergroup.com/wp-content/uploads/2024/04/AI-hosts-for-livestream-ecommerce.webp)
+![AI hosts for livestream ecommerce](/Images/insights/2024/04/AI-hosts-for-livestream-ecommerce.webp)

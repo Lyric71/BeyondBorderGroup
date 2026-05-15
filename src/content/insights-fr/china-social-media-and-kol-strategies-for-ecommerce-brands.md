@@ -31,25 +31,25 @@ Repérer les bons profils suppose de connaître l'écosystème [social](/fr/se-d
 
 Polyvalente, WeChat sert au KOL pour dialoguer avec sa communauté, produire du contenu exclusif et commercialiser ses recommandations sans quitter l'application.
 
-![KOL WeChat](https://beyondbordergroup.com/wp-content/uploads/2024/11/kol_wechat-2.jpg)
+![KOL WeChat](/Images/insights/2024/11/kol_wechat-2.jpg)
 
 #### Weibo
 
 Cousine de Twitter, Weibo carbure à la viralité. La plateforme reste un terrain de choix pour l'influence sur l'actualité, le divertissement et les sorties produit.
 
-![KOL Weibo](https://beyondbordergroup.com/wp-content/uploads/2024/11/kol_weibo.jpg)
+![KOL Weibo](/Images/insights/2024/11/kol_weibo.jpg)
 
 #### Douyin
 
 Pilier de la vidéo courte chinoise, Douyin laisse au KOL le choix du format : démonstration en direct ou capsule vidéo travaillée.
 
-![KOL Douyin](https://beyondbordergroup.com/wp-content/uploads/2024/11/kol_duoyin.jpg)
+![KOL Douyin](/Images/insights/2024/11/kol_duoyin.jpg)
 
 #### Xiaohongshu (RED)
 
 Xiaohongshu draine d'abord les passionnés de mode et de beauté. La plateforme s'est imposée par la qualité de sa communauté, où les KOL publient avis détaillés et tests longs.
 
-![KOL Red](https://beyondbordergroup.com/wp-content/uploads/2024/11/kol_red.jpg)
+![KOL Red](/Images/insights/2024/11/kol_red.jpg)
 
 ## Bien choisir ses KOL
 

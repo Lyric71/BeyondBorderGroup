@@ -34,7 +34,7 @@ The luxury Chinese traveler can be categorized into several key personas, each w
 - **First-Generation Entrepreneurs**: This group values a blend of business and leisure. They prioritize efficiency and enjoyment, seeking destinations that offer both luxury and convenience.
 - **Young Digital Nomads**: Millennials and Gen Z travelers embrace a remote work lifestyle, valuing freedom, flexibility, and authentic experiences. They favor destinations that offer a blend of connectivity, cultural immersion, and work-life balance.
 
-![Chinese Luxury Traveler](https://beyondbordergroup.com/wp-content/uploads/2024/07/pexels-jimmy-teoh-294331-2411759-768x1024.jpg)
+![Chinese Luxury Traveler](/Images/insights/2024/07/pexels-jimmy-teoh-294331-2411759-768x1024.jpg)
 
 ## Distinct Characteristics: What Sets Chinese Luxury Travelers Apart
 

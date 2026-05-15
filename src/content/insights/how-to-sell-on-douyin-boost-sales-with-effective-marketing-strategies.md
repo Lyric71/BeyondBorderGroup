@@ -30,7 +30,7 @@ Douyin has developed an integrated e-commerce ecosystem that blends content with
 
 * **Douyin Flagship Store:** A customizable storefront where brands can showcase products and sell directly within the app.
 
-![Douyin flagship store interface](https://beyondbordergroup.com/wp-content/uploads/2024/10/Douyin-flagship-store.jpg)
+![Douyin flagship store interface](/Images/insights/2024/10/Douyin-flagship-store.jpg)
 
 * **Shoppable Links in Videos:** Douyin allows brands to add product links to videos, enabling users to shop while watching.
 
@@ -76,7 +76,7 @@ China Livestreaming has emerged as one of the most effective tools for driving s
 
 Live streaming not only enhances user engagement but also offers real-time feedback and helps build trust among consumers.
 
-![Douyin livestream sales interface](https://beyondbordergroup.com/wp-content/uploads/2024/10/Douyin-Livestream-Sales-473x1024.png)
+![Douyin livestream sales interface](/Images/insights/2024/10/Douyin-Livestream-Sales-473x1024.png)
 
 ## Collaborating with Key Opinion Leaders (KOLs)
 

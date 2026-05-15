@@ -48,7 +48,7 @@ Sustainability has become a significant consideration for Chinese luxury travele
 
 The demand for wellness tourism is on the rise among Chinese luxury travelers. Wellness retreats, spa experiences, and health-centric activities are increasingly sought after, reflecting a growing emphasis on holistic well-being. Businesses can tap into this trend by offering wellness-focused packages and services that cater to this burgeoning demand.
 
-![Luxury Travelers from China](https://beyondbordergroup.com/wp-content/uploads/2024/07/pexels-freestockpro-2166608-1024x683.jpg)
+![Luxury Travelers from China](/Images/insights/2024/07/pexels-freestockpro-2166608-1024x683.jpg)
 
 **Experiential Enrichment**
 

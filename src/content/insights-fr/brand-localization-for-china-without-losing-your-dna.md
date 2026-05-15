@@ -48,7 +48,7 @@ Une marque qui détonne dans ces fils ne sera pas lue, quelle que soit la profon
 
 La localisation ne se résume plus à traduire un site. Tout l'enjeu : repenser comment la marque vit dans cette boucle entre contenu et commerce.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/localization-2-1024x576.png)
+![](/Images/insights/2025/11/localization-2-1024x576.png)
 
 ## Quand les marques font les bons choix [Apple et Coca-Cola]
 
@@ -81,7 +81,7 @@ Le « feeling » Apple reste intact. Le chemin de l'attention à l'achat, lui, e
 
 À l'arrivée, ça reste Coca-Cola. Le langage, lui, passe par des moments et des symboles chinois.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2025/11/localization-3-1024x576.png)
+![](/Images/insights/2025/11/localization-3-1024x576.png)
 
 ## Une grille de lecture pour la localisation en Chine
 

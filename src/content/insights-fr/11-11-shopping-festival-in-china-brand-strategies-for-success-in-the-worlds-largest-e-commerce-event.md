@@ -29,13 +29,13 @@ Le succès du 11.11 doit beaucoup aux deux mastodontes de l'e-commerce chinois, 
 
 * **Tmall :** place de marché premium d'Alibaba, Tmall héberge précommandes, live shopping et expériences interactives, et attire aussi bien les marques locales qu'internationales. Son service cross-border ouvre la porte aux consommateurs chinois sans implantation physique sur le territoire.
 
-![Le compte à rebours du 11.11 de Tmall](https://beyondbordergroup.com/wp-content/uploads/2024/10/Tmall-11-countdown-1024x576.png)
+![Le compte à rebours du 11.11 de Tmall](/Images/insights/2024/10/Tmall-11-countdown-1024x576.png)
 
 Compte à rebours du 11.11 de Tmall, source : Alibaba Group
 
 * **JD.com :** la plateforme joue la carte de la chaîne logistique et de la rapidité de livraison. L'électronique et les biens de grande consommation lui sont particulièrement fidèles pendant le 11.11, les commandes arrivant en quelques heures, ce qui consolide la rétention.
 
-![Lancement de la campagne 11.11 de JD en 2020](https://beyondbordergroup.com/wp-content/uploads/2024/10/jd-double-11.jpg)
+![Lancement de la campagne 11.11 de JD en 2020](/Images/insights/2024/10/jd-double-11.jpg)
 
 Lancement de la campagne 11.11 de JD en 2020, source : JD.com
 

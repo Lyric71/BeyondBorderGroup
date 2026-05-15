@@ -34,13 +34,13 @@ These differing approaches have significantly influenced [UX design](/grow-in-ch
 
 #### Western Minimalism
 
-![Tiktok Homepage](https://beyondbordergroup.com/wp-content/uploads/2025/01/tiktok-website-1024x496.jpg)
+![Tiktok Homepage](/Images/insights/2025/01/tiktok-website-1024x496.jpg)
 
 Western websites prioritize simplicity, emphasizing white space, clean lines, and intuitive navigation. This minimalist approach aligns with Western values of practicality and efficiency, creating a polished, professional feel.
 
 #### Chinese Maximalism
 
-![Douyin Homepage](https://beyondbordergroup.com/wp-content/uploads/2025/01/douyin-website-1024x496.jpg)
+![Douyin Homepage](/Images/insights/2025/01/douyin-website-1024x496.jpg)
 
 Chinese websites and apps often adopt a "more is more" philosophy. Vibrant visuals, dense information layouts, and numerous calls-to-action dominate the interface. This reflects cultural preferences for abundance, where busier designs are perceived as offering more value and engagement. For example, Douyin ecommerce uses visually rich interfaces to attract and retain users.
 
@@ -66,13 +66,13 @@ The way information is structured on websites reflects cultural priorities:
 
 #### Western UX
 
-![Amazon Homepage](https://beyondbordergroup.com/wp-content/uploads/2025/01/amazon-website-1024x499.jpg)
+![Amazon Homepage](/Images/insights/2025/01/amazon-website-1024x499.jpg)
 
 Western websites focus on clear hierarchies, with logically ordered menus and content categories. This structured approach simplifies navigation and helps users quickly find what they need.
 
 #### Chinese UX
 
-![Alibaba Homepage](https://beyondbordergroup.com/wp-content/uploads/2025/01/Alibaba-website-1024x491.jpg)
+![Alibaba Homepage](/Images/insights/2025/01/Alibaba-website-1024x491.jpg)
 
 In contrast, Chinese websites often present a variety of options simultaneously, with less emphasis on hierarchy. Features like scrolling banners and overlapping CTAs are designed to capture attention and encourage exploration. While this may seem chaotic to Western audiences, it aligns with the preferences of Chinese users for more comprehensive and immersive interfaces.
 

@@ -27,4 +27,4 @@ Le déploiement de ChatRhino par JD.com marque une bascule pour le e-commerce. L
 
 Le mouvement éclaire une tendance prête à reconfigurer les stratégies e-commerce à l'échelle mondiale. À mesure que l'IA progresse, son intégration aux plateformes en ligne s'élargit, l'expérience d'achat s'enrichit, et de nouveaux terrains s'ouvrent au marketing digital. L'approche signée JD.com a vocation à inspirer les opérateurs à l'étranger et à les pousser à mesurer ce que l'IA peut faire pour l'engagement et la fidélisation.
 
-![Présentateurs virtuels pour le livestream e-commerce](https://beyondbordergroup.com/wp-content/uploads/2024/04/AI-hosts-for-livestream-ecommerce.webp)
+![Présentateurs virtuels pour le livestream e-commerce](/Images/insights/2024/04/AI-hosts-for-livestream-ecommerce.webp)

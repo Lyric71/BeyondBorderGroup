@@ -26,7 +26,7 @@ Les internautes chinois nourrissent des attentes spécifiques sur l'ergonomie et
 
 Les sites chinois privilégient des descriptions produits plus directes et plus détaillées. Le design assume la densité d'information tout en restant lisible. S'aligner sur ces codes fait grimper l'engagement et la confiance. Conversion et fidélisation suivent.
 
-![Fiches produits de cosmétiques sur Taobao](https://beyondbordergroup.com/wp-content/uploads/2025/01/site_product-descriptions-1.png)
+![Fiches produits de cosmétiques sur Taobao](/Images/insights/2025/01/site_product-descriptions-1.png)
 
 ## Les stratégies clés de localisation
 
@@ -44,7 +44,7 @@ Une localisation efficace cale contenus et design sur les codes culturels et lin
 
 * **Choix de la langue :** le simplifié ou le traditionnel, le choix dépend de la cible. Le chinois simplifié sert la Chine continentale, le traditionnel Hong Kong et Taïwan. La distinction reste essentielle pour communiquer juste.
 
-![Variantes de la langue chinoise](https://beyondbordergroup.com/wp-content/uploads/2025/01/chinese-language.png)
+![Variantes de la langue chinoise](/Images/insights/2025/01/chinese-language.png)
 
 * **Nuances culturelles :** localiser, c'est aussi caler le discours marketing sur les contextes et les valeurs locales. Images, palettes et messages promotionnels appellent souvent un repositionnement.
 
@@ -86,7 +86,7 @@ L'épine dorsale technique du site doit rester compatible avec l'infrastructure 
 
 * **Remplacer les services bloqués :** Google Maps et d'autres services occidentaux courants restent inaccessibles en Chine. Baidu Maps et ses équivalents locaux fournissent les fonctionnalités attendues sans rupture d'expérience.
 
-![Vue 3D Baidu Maps](https://beyondbordergroup.com/wp-content/uploads/2025/01/Baidu-Maps-3D-view-03.jpg)
+![Vue 3D Baidu Maps](/Images/insights/2025/01/Baidu-Maps-3D-view-03.jpg)
 
 * **Intégration d'API locales :** les API autorisées, calibrées pour l'infrastructure chinoise, muscle la performance et la fiabilité des fonctionnalités du site.
 
@@ -102,7 +102,7 @@ Là où les sites occidentaux misent souvent sur l'épure, les sites chinois ass
 
 L'esthétique du site doit refléter les codes du branding chinois. Le rouge et l'or restent populaires, associés à la chance et au bonheur. Les tons sombres et ternes accrochent moins. Animations soignées et bannières marquantes dopent l'attrait auprès des utilisateurs e-commerce chinois, habitués à ce registre dans leur quotidien numérique.
 
-![Page d'accueil de Zhangmen](https://beyondbordergroup.com/wp-content/uploads/2025/01/zhangmen-website.png)
+![Page d'accueil de Zhangmen](/Images/insights/2025/01/zhangmen-website.png)
 
 ### Ergonomie (UX)
 

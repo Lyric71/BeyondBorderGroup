@@ -2,7 +2,7 @@
 title: "Science et émotion : la nouvelle grammaire des marques en Chine"
 description: "Une marque chinoise de dermocosmétique gagne 47 % au Double 11. Sa rivale directe en perd 57. Même catégorie, mêmes plateformes. L'écart se joue sur l'architecture."
 pubDate: "2026-03-12"
-author: "Beyond Border Group"
+author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
 tags: ["e-commerce Chine", "stratégie de marque", "Douyin", "Tmall", "architecture plateforme"]
@@ -39,7 +39,7 @@ Collgene a posé [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier) e
 
 Voilà comment un shelf eCommerce doit travailler. Pas comme une couche transactionnelle, mais comme un actif de crédibilité. Le consommateur qui découvre une marque sur [Douyin](/fr/se-developper-en-chine/influence-et-kol) ira la vérifier sur Tmall avant d'acheter. Ce qu'il trouve à cet instant précis conclut la vente. Ou la tue.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
+![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
 
 ## Douyin comme moteur de croissance, pas comme béquille
 
@@ -57,7 +57,7 @@ La plupart des marques sous-estiment Xiaohongshu dans le tunnel d'achat. Le réd
 
 Collgene a semé sur Xiaohongshu des récits émotionnels. Des coffrets baptisés « Kit de sauvetage heures sup » et « Set anti-stress ». Des campagnes adossées à la vie urbaine, à la peau qui réagit après les nuits trop courtes. Ce contenu a d'abord nourri la communauté. La conversion a suivi.
 
-![](https://beyondbordergroup.com/wp-content/uploads/2026/03/Science-plus-emotion-china-new-brand-playbook-1.png)
+![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-1.png)
 
 ## Trois plateformes, trois missions
 

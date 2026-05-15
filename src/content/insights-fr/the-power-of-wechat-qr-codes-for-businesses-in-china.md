@@ -19,7 +19,7 @@ Pour une marque qui vise une percée sur le marché chinois, en e-commerce et en
 
 Le QR code WeChat est un code unique rattaché à un profil utilisateur, à une entreprise ou à un contenu spécifique au sein de l'écosystème WeChat. Là où un QR classique redirige vers une URL, le QR WeChat ouvre plusieurs portes : ajout d'un contact, règlement d'une note, abonnement à un compte officiel.
 
-![Exemple de QR code WeChat Pay](https://beyondbordergroup.com/wp-content/uploads/2025/02/wechatpay-sample-300x157.jpg)
+![Exemple de QR code WeChat Pay](/Images/insights/2025/02/wechatpay-sample-300x157.jpg)
 
 Chaque utilisateur dispose d'un QR personnel, scanné par d'autres pour entrer en contact. Côté entreprise, le code renvoie vers un compte officiel, un mini-programme ou un contenu promotionnel. Outil polyvalent, particulièrement précieux pour les acteurs de l'e-commerce chinois ou transfrontalier qui cherchent à raccourcir la distance entre la marque et le consommateur.
 
