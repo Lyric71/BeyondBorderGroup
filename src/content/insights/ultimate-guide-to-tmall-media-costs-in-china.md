@@ -3,7 +3,8 @@ title: "Guide to Tmall Media Costs in China | Optimize Your Brand's Investment"
 description: "Tmall, Alibaba's leading B2C eCommerce platform in China, offers brands access to over 500 million monthly users. This guide covers setup fees, advertising options, content marketing strategies, and participation in major shopping events to help brands maximize ROI."
 pubDate: "2024-10-30"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "E-Commerce"
+platforms: ["Tmall"]
 tags: ["Tmall", "eCommerce", "China marketing", "advertising costs", "brand strategy"]
 heroImage: "/Images/insights/ultimate-guide-to-tmall-media-costs-in-china.jpg"
 heroImageAlt: "Tmall media costs and brand investment guide cover image"

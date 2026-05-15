@@ -4,6 +4,7 @@ description: "Short video platforms have become crucial marketing and e-commerce
 pubDate: "2025-02-13"
 author: "Beyond Border Group"
 category: "Platforms"
+platforms: ["Douyin", "Kuaishou"]
 tags: ["Douyin", "Kuaishou", "short video marketing", "live commerce", "China e-commerce"]
 heroImage: "/Images/insights/best-short-video-platforms-in-china.png"
 heroImageAlt: "Comparison of Douyin and Kuaishou platforms"

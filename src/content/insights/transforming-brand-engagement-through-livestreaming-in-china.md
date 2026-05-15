@@ -3,7 +3,7 @@ title: "The Digital Stage: How China's CEOs Are Transforming Brand Engagement th
 description: "Chinese corporate executives are stepping into livestreaming roles to enhance brand visibility and sales, following trends set by global tech leaders while balancing professionalism with authenticity."
 pubDate: "2024-05-10"
 author: "Beyond Border Group"
-category: "Livestream"
+category: "KOLs & Livestream"
 tags: ["CEO livestreaming", "China digital marketing", "brand engagement", "livestream commerce", "corporate social media"]
 heroImage: "/Images/insights/transforming-brand-engagement-through-livestreaming-in-china.jpg"
 heroImageAlt: "NIO CEO livestreaming"

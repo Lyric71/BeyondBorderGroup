@@ -3,7 +3,7 @@ title: "China 2026: 8 eCommerce & Marketing Predictions"
 description: "Eight predictions for China's digital marketplace in 2026, from instant commerce dominance to GenAI-driven personalization and the resurgence of experiential marketing over discounting."
 pubDate: "2026-01-02"
 author: "Beyond Border Group"
-category: "Strategy"
+category: "Market Strategy"
 tags: ["eCommerce", "China digital marketing", "instant commerce", "GenAI", "influencer marketing"]
 heroImage: "/Images/insights/china-2026-8-ecommerce-marketing-predictions.png"
 heroImageAlt: "China digital marketplace trends visualization"

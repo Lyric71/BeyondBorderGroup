@@ -3,7 +3,8 @@ title: "Maximizing Brand Impact: How the 11.11 Shopping Festival Transforms E-Co
 description: "The 11.11 Shopping Festival has become the world's largest online shopping event. Brands can capitalize through social media engagement, influencer partnerships, and strategic localization."
 pubDate: "2024-10-11"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "E-Commerce"
+platforms: ["Tmall"]
 tags: ["11.11 Shopping Festival", "eCommerce China", "KOL marketing", "Tmall", "social commerce"]
 heroImage: "/Images/insights/11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event.jpg"
 heroImageAlt: "11.11 shopping festival promotional image"

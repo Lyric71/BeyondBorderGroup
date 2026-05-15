@@ -3,7 +3,8 @@ title: "Best Practices for KOC / Key Opinion Consumers Marketing in China"
 description: "Key Opinion Consumers are becoming essential to eCommerce success in China. These micro-influencers prioritize authenticity and relatability, offering brands a cost-effective alternative to traditional celebrity endorsements for connecting with engaged niche audiences."
 pubDate: "2024-12-07"
 author: "Beyond Border Group"
-category: "Influencers"
+category: "KOLs & Livestream"
+platforms: ["Xiaohongshu", "Douyin"]
 tags: ["KOC marketing", "China eCommerce", "micro-influencers", "social commerce", "consumer trust"]
 heroImage: "/Images/insights/best-practices-for-koc-marketing-in-china.jpg"
 heroImageAlt: "Portrait of a beautiful young Asian woman reviewing and using cosmetics on a sofa"

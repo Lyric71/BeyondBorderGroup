@@ -4,6 +4,7 @@ description: "WeChat Channels is a content-sharing feature enabling brands to re
 pubDate: "2024-11-01"
 author: "Beyond Border Group"
 category: "Platforms"
+platforms: ["WeChat"]
 tags: ["WeChat Channels", "Social Commerce China", "China eCommerce", "Live Streaming", "KOL Marketing"]
 heroImage: "/Images/insights/the-ultimate-guide-to-wechat-channels-for-brands.jpg"
 heroImageAlt: "WeChat Channels interface showing video and photo content"

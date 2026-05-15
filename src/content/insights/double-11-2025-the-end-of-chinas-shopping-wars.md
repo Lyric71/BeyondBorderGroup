@@ -3,7 +3,7 @@ title: "Double 11 2025: The End of China's Shopping Wars"
 description: "China's Double 11 shopping festival has evolved from a simple one-day event into a complex five-week marathon, with slowing growth rates and eroding consumer trust as brands face margin compression and shoppers become savvier retail operators."
 pubDate: "2025-11-14"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "E-Commerce"
 tags: ["Double 11", "e-commerce", "China retail", "consumer behavior", "GMV"]
 heroImage: "/Images/insights/double-11-2025-the-end-of-chinas-shopping-wars.png"
 heroImageAlt: "Screenshot showing Double 11 2025 shopping festival data"

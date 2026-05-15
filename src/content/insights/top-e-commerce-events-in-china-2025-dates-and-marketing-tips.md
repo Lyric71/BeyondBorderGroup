@@ -3,7 +3,8 @@ title: "China's 2025 eCommerce Shopping Festivals Calendar"
 description: "A comprehensive guide to major e-commerce shopping festivals in China during 2025, including strategic marketing tips for brands looking to capitalize on these peak selling periods."
 pubDate: "2025-01-09"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "E-Commerce"
+platforms: ["Tmall", "JD", "Douyin"]
 tags: ["ecommerce", "China", "shopping festivals", "marketing strategy", "cross-border commerce"]
 heroImage: "/Images/insights/top-e-commerce-events-in-china-2025-dates-and-marketing-tips.jpg"
 heroImageAlt: "Chinese 2025 festivals calendar"

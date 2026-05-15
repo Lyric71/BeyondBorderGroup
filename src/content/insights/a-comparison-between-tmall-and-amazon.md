@@ -3,7 +3,8 @@ title: "A comparison between Tmall and Amazon"
 description: "Tmall and Amazon are two of the biggest e-commerce platforms in the world, each with its own strengths and unique features."
 pubDate: "2023-02-02"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "Platforms"
+platforms: ["Tmall"]
 tags: ["Tmall", "Amazon", "e-commerce", "China", "B2C"]
 heroImage: "/Images/insights/a-comparison-between-tmall-and-amazon.png"
 heroImageAlt: "Blog comparing Alibaba and Amazon"

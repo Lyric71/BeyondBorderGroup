@@ -3,7 +3,7 @@ title: "China's Biggest E-Commerce Festival Goes Back to Old Media"
 description: "Double 11, China's dominant shopping festival, is adopting television-style formats including galas, comedy sketches, and variety shows to rebuild consumer trust amid a market of increasingly sophisticated retail-savvy shoppers."
 pubDate: "2025-11-14"
 author: "Beyond Border Group"
-category: "Strategy"
+category: "E-Commerce"
 tags: ["Double 11", "e-commerce", "China retail", "consumer trust", "marketing strategy"]
 heroImage: "/Images/insights/double-11-2025-old-media-strategy-china-ecommerce.png"
 heroImageAlt: "Promotional image for the 17th Double 11 shopping festival"

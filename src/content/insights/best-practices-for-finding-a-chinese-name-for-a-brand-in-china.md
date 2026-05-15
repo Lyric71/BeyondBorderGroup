@@ -3,7 +3,7 @@ title: "Best Practices for Finding a Chinese Name for a Brand in China"
 description: "Choosing a Chinese brand name requires balancing phonetic similarity, cultural meaning, and brand values. This guide explores strategies for successful localization in the Chinese market."
 pubDate: "2025-01-14"
 author: "Beyond Border Group"
-category: "Branding"
+category: "Brand & Localization"
 tags: ["Chinese naming", "brand localization", "ecommerce China", "cultural adaptation", "trademark protection"]
 heroImage: "/Images/insights/best-practices-for-finding-a-chinese-name-for-a-brand-in-china.jpg"
 heroImageAlt: "Coca-Cola branding example for Chinese market"

@@ -3,7 +3,7 @@ title: "Explosive Growth in the Chinese Luxury Travel Segment | 2024 Insights"
 description: "China's luxury travel market has expanded exponentially over the past decade, driven by rising affluence, increased spending power, and evolving consumer preferences toward authentic, culturally immersive experiences rather than mere displays of wealth."
 pubDate: "2024-07-08"
 author: "Beyond Border Group"
-category: "Luxury"
+category: "Market Strategy"
 tags: ["Chinese luxury travel", "consumer preferences", "experiential travel", "wellness tourism", "digital influence"]
 heroImage: "/Images/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment.jpg"
 heroImageAlt: "Scenic luxury travel destination"

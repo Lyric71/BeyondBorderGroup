@@ -3,7 +3,8 @@ title: "How Xianyu Transforms Bargains into Side Hustles for Young Entrepreneurs
 description: "Alibaba's Xianyu platform is evolving beyond second-hand goods to become a hub where young entrepreneurs monetize skills and hobbies through a new side job marketplace."
 pubDate: "2024-07-12"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "Platforms"
+platforms: ["Taobao"]
 tags: ["Xianyu", "Alibaba", "side hustles", "e-commerce China", "young entrepreneurs"]
 heroImage: "/Images/insights/how-xianyu-powers-young-entrepreneurs-side-hustles-in-china.jpeg"
 heroImageAlt: "Source: China Daily"

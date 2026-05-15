@@ -3,7 +3,7 @@ title: "Comprehensive Guide to Finding a Distributor for Your Products in China 
 description: "This guide provides an in-depth understanding of China's distribution landscape and offers practical steps to find and work with distributors to ensure product success in this dynamic market."
 pubDate: "2024-06-28"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "E-Commerce"
 tags: ["China distribution", "market entry", "logistics", "retail partnerships", "B2B"]
 heroImage: "/Images/insights/how-to-find-a-distributor-for-your-products-in-china-in-2024.png"
 heroImageAlt: "Coming soon placeholder image"

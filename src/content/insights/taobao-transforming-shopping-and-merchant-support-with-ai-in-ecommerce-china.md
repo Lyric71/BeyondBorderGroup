@@ -3,7 +3,8 @@ title: "How Taobao and Tmall Are Revolutionizing Consumer Shopping and Merchant 
 description: "Alibaba Group's Taobao and Tmall use AI technologies to enhance consumer shopping experiences and boost merchant operational efficiency through tools like Taobao Wenwen, visual generation, and smart customer service."
 pubDate: "2024-07-12"
 author: "Beyond Border Group"
-category: "AI"
+category: "AI & Innovation"
+platforms: ["Taobao", "Tmall"]
 tags: ["Taobao", "Tmall", "AI", "eCommerce China", "Merchant Tools"]
 heroImage: "/Images/insights/taobao-transforming-shopping-and-merchant-support-with-ai-in-ecommerce-china.jpeg"
 heroImageAlt: "Alibaba announces integration of Taobao and Tmall"

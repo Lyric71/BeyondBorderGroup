@@ -3,7 +3,7 @@ title: "When PIPL Bites: Dior's Wake-Up Call for Global Brands in China"
 description: "China's Personal Information Protection Law (PIPL) enforcement has shifted from theoretical to real. Dior's recent prosecution marks the first formal punishment of a foreign brand, signaling that data protection compliance is now critical for global brands operating in China."
 pubDate: "2025-11-26"
 author: "Beyond Border Group"
-category: "Compliance"
+category: "Compliance & Setup"
 tags: ["PIPL", "data protection", "China regulations", "Dior", "global brands"]
 heroImage: "/Images/insights/pipl-compliance-in-china-diors-wake-up-call-for-global-brands.png"
 heroImageAlt: "PIPL compliance article cover image"

@@ -3,7 +3,8 @@ title: "The Ultimate Guide to WeChat Pay vs. Alipay for eCommerce in China"
 description: "WeChat Pay and Alipay dominate China's mobile payment ecosystem. Understanding their differences helps businesses choose the right platform for smooth customer experience in eCommerce."
 pubDate: "2024-07-24"
 author: "Beyond Border Group"
-category: "Payments"
+category: "Platforms"
+platforms: ["WeChat", "Alipay"]
 tags: ["WeChat Pay", "Alipay", "mobile payments", "eCommerce China", "payment integration"]
 heroImage: "/Images/insights/wechat-pay-vs-alipay-best-mobile-payment-for-ecommerce.jpg"
 heroImageAlt: "WeChat Pay and Alipay comparison"

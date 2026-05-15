@@ -3,7 +3,7 @@ title: "Navigating Advertising Laws in China: Essential Insights for Internation
 description: "China's strict advertising laws and platform-specific regulations present unique challenges for global brands seeking to reach consumers through eCommerce and social media. This guide explores regulations covering absolute claims restrictions, industry-specific rules, and digital advertising compliance."
 pubDate: "2024-10-29"
 author: "Beyond Border Group"
-category: "Compliance"
+category: "Compliance & Setup"
 tags: ["advertising laws", "China eCommerce", "regulatory compliance", "social media marketing", "brand strategy"]
 heroImage: "/Images/insights/how-chinas-advertising-laws-impact-global-brands.jpg"
 heroImageAlt: "Advertising laws China"

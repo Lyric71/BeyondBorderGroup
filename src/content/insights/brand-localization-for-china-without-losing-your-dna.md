@@ -3,7 +3,7 @@ title: "Brand Localization for China: Adapt & Keep Your DNA"
 description: "Foreign brands in China must balance deep localization with core identity. Quality alone is no longer enough; success requires cultural relevance and platform fluency while protecting what makes the brand distinctive."
 pubDate: "2025-11-19"
 author: "Beyond Border Group"
-category: "Localization"
+category: "Brand & Localization"
 tags: ["brand strategy", "China market entry", "cultural adaptation", "ecommerce", "digital commerce"]
 heroImage: "/Images/insights/brand-localization-for-china-without-losing-your-dna.png"
 heroImageAlt: "Screenshot showing brand localization concept"

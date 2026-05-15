@@ -224,23 +224,24 @@ const icons: Record<string, string> = {
       <div class="container">
         <div class="web-intro">
           <div class="web-intro__copy">
-            <span class="eyebrow">Bâti pour l'internet chinois, jamais greffé</span>
-            <h2>La plupart des sites mondiaux cassent à l'intérieur de la Chine.</h2>
+            <span class="eyebrow">Conçu pour l'internet chinois, jamais transposé</span>
+            <h2>La plupart des sites internationaux se fragilisent à leur arrivée en Chine.</h2>
             <p>
-              Ils chargent lentement, parfois pas du tout. Les services Google restent bloqués.
-              Baidu ne les indexe pas. Et les moteurs IA passent dessus sans s'arrêter.
+              Le chargement s'allonge, jusqu'à l'échec complet d'affichage. Les services Google demeurent
+              bloqués. Baidu refuse l'indexation. Les moteurs IA poursuivent leur route sans s'arrêter.
             </p>
             <p>
-              Nous bâtissons des sites et mini-programmes WeChat qui vivent à l'intérieur du web chinois.
-              La tech colle au marché, l'hébergement se trouve au bon endroit, le SEO est
-              bâti pour Baidu, et le contenu est repris par les moteurs IA sur lesquels les consommateurs chinois
-              s'appuient désormais. Pour qu'on vous trouve. Et pour que vous vendiez.
+              Nous concevons des sites et des mini-programmes WeChat qui prennent leur place au sein du web
+              chinois. Le socle technologique épouse les contraintes du marché, l'hébergement se trouve à
+              l'endroit qui convient, le référencement est calibré pour Baidu, et le contenu est repris par
+              les moteurs IA sur lesquels les consommateurs chinois s'appuient désormais. Pour être trouvé,
+              et pour vendre.
             </p>
           </div>
 
-          <aside class="web-outcomes" aria-label="Résultats typiques sur les quatre-vingt-dix premiers jours">
+          <aside class="web-outcomes" aria-label="Résultats observés sur les quatre-vingt-dix premiers jours">
             <span class="web-outcomes__tag">Quatre-vingt-dix premiers jours</span>
-            <h3>Ce qui change quand cela est fait correctement</h3>
+            <h3>Ce qui évolue lorsque la mise en œuvre est rigoureuse</h3>
             <ul>
               {outcomes.map((o) => (
                 <li>
@@ -258,23 +259,23 @@ const icons: Record<string, string> = {
     <section class="section section--alt">
       <div class="container">
         <header class="section-header section-header--center">
-          <span class="eyebrow">Pourquoi un site Chine est non négociable en 2026</span>
-          <h2>GEO : se faire citer par les IA, pas seulement classer par Baidu</h2>
+          <span class="eyebrow">Un site en Chine, condition désormais non négociable en 2026</span>
+          <h2>GEO : obtenir la citation par les IA, sans se limiter au classement Baidu</h2>
           <p class="section-header__lead">
-            GEO signifie Generative Engine Optimization. En substance, le SEO de l'ère IA.
-            Les consommateurs chinois sautent la barre de recherche et interrogent les modèles.
+            Le GEO, Generative Engine Optimization, désigne le référencement à l'ère de l'IA. Le consommateur
+            chinois contourne la barre de recherche et interroge directement les modèles.
           </p>
         </header>
 
         <div class="web-geo">
           <div class="web-geo__copy">
             <p>
-              Doubao, Kimi, DeepSeek, Qwen et une liste qui s'allonge répondent en tirant
-              depuis les sites qu'ils ont indexés et jugés crédibles. Sans site hébergé en
-              Chine, ils n'ont rien à citer sur votre marque. Ce qui signifie
-              que vous êtes hors de la conversation.
+              Doubao, Kimi, DeepSeek, Qwen et une liste qui ne cesse de s'allonger répondent en puisant dans
+              les sites qu'ils ont indexés et jugés crédibles. Sans site hébergé en Chine, ces moteurs n'ont
+              aucune source à citer sur votre marque. La conséquence est mécanique : votre marque sort de la
+              conversation.
             </p>
-            <h3 class="web-geo__h3">Ce que nous faisons concrètement en GEO</h3>
+            <h3 class="web-geo__h3">Notre intervention concrète sur le terrain GEO</h3>
             <ul class="web-geo__list">
               {geoBullets.map((b) => (
                 <li>
@@ -297,8 +298,9 @@ const icons: Record<string, string> = {
               ))}
             </div>
             <p class="web-engines__note">
-              Un site hébergé en Chine et rédigé en chinois est l'actif fondateur qui nourrit
-              Baidu et chaque moteur IA qui façonne désormais la manière dont les consommateurs chinois trouvent les produits.
+              Un site hébergé en Chine et rédigé en chinois constitue l'actif fondateur qui alimente Baidu et
+              l'ensemble des moteurs IA qui façonnent désormais la manière dont les consommateurs chinois
+              découvrent les produits.
             </p>
           </div>
         </div>
@@ -310,8 +312,8 @@ const icons: Record<string, string> = {
       <div class="container">
         <header class="section-header section-header--split">
           <div>
-            <span class="eyebrow">WeChat, l'autre moitié</span>
-            <h2>Deux surfaces à tenir. Le compte et le mini-programme.</h2>
+            <span class="eyebrow">WeChat, l'autre versant du dispositif</span>
+            <h2>Deux surfaces à tenir : le compte officiel et le mini-programme.</h2>
           </div>
           <div class="web-wechat-stat">
             <span class="web-wechat-stat__value">1,414 Md</span>
@@ -325,7 +327,7 @@ const icons: Record<string, string> = {
         <div class="web-surfaces">
           {wechatSurfaces.map((s) => (
             <article class={`web-surface${s.highlight ? ' web-surface--highlight' : ''}`}>
-              {s.highlight && <span class="web-surface__badge">Là où la conversion se joue</span>}
+              {s.highlight && <span class="web-surface__badge">Le point de bascule de la conversion</span>}
               <div class="web-surface__head">
                 <span class="web-surface__cn" lang="zh-Hans">{s.cn}</span>
                 <span class="web-surface__tag">{s.tag}</span>
@@ -338,9 +340,9 @@ const icons: Record<string, string> = {
         </div>
 
         <p class="web-surfaces__note">
-          La plupart des marques que nous accompagnons opèrent les deux. Le compte garde la relation vivante.
-          Le mini-programme est l'endroit où la conversion se joue. Ensemble, ils couvrent de la découverte
-          à l'achat.
+          La majorité des marques que nous accompagnons mobilisent les deux surfaces. Le compte officiel
+          entretient la relation. Le mini-programme constitue le terrain où s'opère la conversion. Ensemble,
+          ils couvrent l'intégralité du parcours, de la découverte à l'achat.
         </p>
       </div>
     </section>
@@ -350,10 +352,10 @@ const icons: Record<string, string> = {
       <div class="container">
         <header class="section-header section-header--center">
           <span class="eyebrow">Deux voies techniques</span>
-          <h2>WordPress ou Astro. Nous tranchons selon le fonctionnement de votre équipe.</h2>
+          <h2>WordPress ou Astro : l'arbitrage s'opère selon le fonctionnement de votre équipe.</h2>
           <p class="section-header__lead">
-            Pas une guerre de religion. Le bon choix dépend de la fréquence de publication, des personnes qui poussent
-            les mises à jour, et de la nécessité d'opérer des transactions.
+            Aucune querelle d'école. Le bon choix dépend de la fréquence de publication, de l'identité des
+            personnes qui poussent les mises à jour, et de la nécessité de gérer des transactions.
           </p>
         </header>
 
@@ -388,10 +390,11 @@ const icons: Record<string, string> = {
       <div class="container">
         <header class="section-header section-header--center">
           <span class="eyebrow">Hébergement en Chine</span>
-          <h2>L'hébergement est la décision la plus importante que vous prendrez.</h2>
+          <h2>L'hébergement constitue la décision la plus structurante du projet.</h2>
           <p class="section-header__lead">
-            Et il n'y a qu'une seule vraie réponse : héberger à l'intérieur de la Chine. Tout le reste est un
-            compromis qui vous coûte. Chargement lent, ranking Baidu faible, UX cassée.
+            Et la réponse est, à dire vrai, unique : héberger à l'intérieur de la Chine. Toute autre option
+            relève d'un compromis qui se paie. Chargement ralenti, classement Baidu affaibli, expérience
+            utilisateur dégradée.
           </p>
         </header>
 
@@ -419,18 +422,19 @@ const icons: Record<string, string> = {
 
         <div class="web-icp">
           <div class="web-icp__copy">
-            <span class="eyebrow">Dépôt ICP, la partie dont personne ne vous parle</span>
-            <h3>Bei'an en 2 à 4 semaines. Licence commerciale en 2 à 3 mois.</h3>
+            <span class="eyebrow">Dépôt ICP : le chapitre dont aucune agence ne parle vraiment</span>
+            <h3>Bei'an : deux à quatre semaines. Licence commerciale : deux à trois mois.</h3>
             <p>
-              Héberger en Chine continentale suppose une licence ICP et un serveur chez Alibaba Cloud, Tencent
-              Cloud ou Huawei Cloud. Nous prenons en charge le dépôt ICP complet. Bei'an
-              (informationnel) pour les sites de contenu. Licence commerciale pour l'eCommerce et
+              Héberger en Chine continentale suppose la détention d'une licence ICP et la mise en place d'un
+              serveur chez Alibaba Cloud, Tencent Cloud ou Huawei Cloud. Nous prenons en charge la totalité
+              du dépôt ICP. Bei'an pour les sites informationnels, licence commerciale pour l'eCommerce et
               les plateformes transactionnelles.
             </p>
             <p>
-              Nous gérons aussi la configuration serveur, le CDN, le monitoring depuis l'intérieur de la Chine (la plupart des outils
-              vérifient depuis l'extérieur du Firewall et ratent les vrais problèmes), et les sauvegardes quotidiennes.
-              Pas encore d'entité chinoise ? Des solutions existent. Nous vous les exposerons.
+              Nous assurons également la configuration du serveur, le CDN, la supervision depuis l'intérieur
+              de la Chine (la plupart des outils contrôlent l'état du site depuis l'extérieur du Firewall et
+              passent à côté des incidents réels) ainsi que les sauvegardes quotidiennes. En l'absence
+              d'entité chinoise, plusieurs voies de contournement existent. Nous les exposerons en détail.
             </p>
           </div>
           <div class="web-icp__visual">
@@ -446,25 +450,25 @@ const icons: Record<string, string> = {
         <article class="web-cwf">
           <div class="web-cwf__copy">
             <span class="eyebrow">Agence sœur</span>
-            <h2 class="web-cwf__title">ChinaWebFoundry : une agence dédiée aux sites pour la Chine.</h2>
+            <h2 class="web-cwf__title">ChinaWebFoundry : une agence dédiée aux sites destinés au marché chinois.</h2>
             <p>
-              Quand le site lui-même est le livrable principal, nous opérons une agence sœur
-              spécifiquement conçue pour le marché chinois. Toutes les stacks : WordPress,
-              Astro, statique, sur mesure.
+              Lorsque le site lui-même constitue le livrable principal, nous opérons une agence sœur conçue
+              spécifiquement pour le marché chinois. Tous les socles techniques sont couverts : WordPress,
+              Astro, statique, développement sur mesure.
             </p>
             <ul class="web-cwf__list">
-              <li>Stratégie, audit et migration derrière le Firewall</li>
+              <li>Stratégie, audit et migration en aval du Firewall</li>
               <li>Hébergement sous licence ICP sur Alibaba, Tencent ou Huawei Cloud</li>
-              <li>Refonte UX et UI pour les utilisateurs chinois</li>
-              <li>Remplacement de plugins et intégrations pour tout ce qui est bloqué</li>
-              <li>SEO Baidu, contenu chinois, maintenance continue</li>
+              <li>Refonte UX et UI calibrée pour l'internaute chinois</li>
+              <li>Substitution des plugins et intégrations bloqués par des équivalents locaux</li>
+              <li>Référencement Baidu, rédaction chinoise, maintenance en continu</li>
             </ul>
             <p class="web-cwf__same">
-              Même équipe. Mêmes vingt ans et plus en Chine. Une porte d'entrée resserrée quand votre priorité
-              est un site qui fonctionne réellement à l'intérieur de la Chine continentale.
+              Même équipe. Plus de vingt années d'expérience cumulée en Chine. Une porte d'entrée resserrée
+              dès lors que la priorité demeure un site qui fonctionne véritablement en Chine continentale.
             </p>
             <a href="https://www.chinawebfoundry.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-              Voir ChinaWebFoundry <span aria-hidden="true">→</span>
+              Consulter ChinaWebFoundry <span aria-hidden="true">→</span>
             </a>
           </div>
           <div class="web-cwf__visual" aria-hidden="true">
@@ -497,7 +501,7 @@ const icons: Record<string, string> = {
       <div class="container">
         <header class="section-header section-header--center">
           <span class="eyebrow">Ce que nous livrons</span>
-          <h2>Cinq éléments qui décident si le site fonctionne réellement</h2>
+          <h2>Cinq points cardinaux qui déterminent la performance réelle du site</h2>
         </header>
 
         <div class="web-deliver">
@@ -516,19 +520,19 @@ const icons: Record<string, string> = {
     <section class="section section--alt">
       <div class="container container--narrow">
         <header class="section-header section-header--center">
-          <span class="eyebrow">Pour qui nous bâtissons</span>
-          <h2>Les marques qui ont besoin d'un site qui marche en Chine, pas d'un site qui paraît bien ailleurs.</h2>
+          <span class="eyebrow">Pour qui nous concevons</span>
+          <h2>Les marques qui réclament un site qui tient en Chine, et non un site qui se présente bien ailleurs.</h2>
         </header>
 
         <div class="web-who">
           <ul>
-            <li>Marques internationales qui lancent en Chine pour la première fois</li>
-            <li>Marques dont le site actuel est trop lent pour peser en Chine continentale</li>
-            <li>Équipes qui déposent leur premier ICP et perdent des semaines dans les démarches</li>
-            <li>Acteurs eCommerce qui ont besoin d'un hébergement rapide et conforme</li>
-            <li>Marques chinoises qui partent à l'international et ont besoin d'un vrai site en anglais</li>
+            <li>Marques internationales qui s'implantent en Chine pour la première fois</li>
+            <li>Marques dont le site actuel s'avère trop lent pour peser en Chine continentale</li>
+            <li>Équipes engagées dans leur premier dépôt ICP et freinées par la procédure</li>
+            <li>Acteurs eCommerce en quête d'un hébergement rapide et conforme</li>
+            <li>Marques chinoises qui s'ouvrent à l'international et requièrent un site anglophone réellement opérationnel</li>
           </ul>
-          <p class="web-who__cta">Études de cas disponibles sur demande.</p>
+          <p class="web-who__cta">Études de cas remises sur demande.</p>
         </div>
       </div>
     </section>
@@ -563,15 +567,16 @@ const icons: Record<string, string> = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="web-cta">
-          <span class="eyebrow eyebrow--on-dark">Parlons de votre site Chine</span>
-          <h2 class="web-cta__title">Dites-nous ce que vous avez, ce qu'il vous faut et où vous voulez aller.</h2>
+          <span class="eyebrow eyebrow--on-dark">Échangeons sur votre site en Chine</span>
+          <h2 class="web-cta__title">Exposez le dispositif en place, le besoin identifié, l'horizon visé.</h2>
           <p class="web-cta__lead">
-            Nous reviendrons avec une recommandation qui colle à votre calendrier, à votre audience
-            et à votre budget. Pas de deck générique, pas de présentation en quarante slides. Juste un plan.
+            Notre retour prend la forme d'une recommandation calibrée sur votre calendrier, votre audience et
+            votre budget. Aucun deck générique, aucune présentation en quarante diapositives. Un plan, et
+            rien d'autre.
           </p>
           <div class="web-cta__actions">
-            <a href="/fr/nous-contacter" class="btn web-cta__btn-primary">Nous contacter</a>
-            <a href="/fr/nos-realisations" class="btn web-cta__btn-ghost">Voir nos études de cas</a>
+            <a href="/fr/nous-contacter" class="btn web-cta__btn-primary">Engager la conversation</a>
+            <a href="/fr/nos-realisations" class="btn web-cta__btn-ghost">Consulter nos études de cas</a>
           </div>
         </div>
       </div>

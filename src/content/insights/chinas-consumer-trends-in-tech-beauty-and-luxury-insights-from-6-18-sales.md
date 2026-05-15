@@ -3,7 +3,8 @@ title: "China's eCommerce Evolution Driven by Tech, Beauty, and Luxury Sales"
 description: "China's 6.18 shopping festival revealed significant shifts in consumer preferences, with tech, beauty, and luxury brands achieving record sales figures through strategic marketing and dynamic commerce strategies."
 pubDate: "2024-06-14"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "E-Commerce"
+platforms: ["Tmall", "JD"]
 tags: ["China eCommerce", "6.18 Festival", "Luxury Brands", "Beauty Products", "Tech Sales"]
 heroImage: "/Images/insights/chinas-consumer-trends-in-tech-beauty-and-luxury-insights-from-6-18-sales.jpg"
 heroImageAlt: "Beautiful Asian woman blogger holding eye shadow box"

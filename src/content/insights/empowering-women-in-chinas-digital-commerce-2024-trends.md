@@ -3,7 +3,8 @@ title: "Empowering Women in China's Digital Commerce: 2024 Trends"
 description: "Women entrepreneurs are making significant strides in China's eCommerce landscape, with digital platforms like Taobao enabling business opportunities and driving economic growth globally."
 pubDate: "2024-06-14"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "Market Strategy"
+platforms: ["Taobao"]
 tags: ["women entrepreneurs", "eCommerce China", "Taobao", "digital platforms", "gender equality"]
 heroImage: "/Images/insights/empowering-women-in-chinas-digital-commerce-2024-trends.jpg"
 heroImageAlt: "Small business SME entrepreneur of young Asian women working"

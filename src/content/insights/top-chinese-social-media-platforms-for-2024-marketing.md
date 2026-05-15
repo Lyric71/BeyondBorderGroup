@@ -3,7 +3,8 @@ title: "Where Brands Win Attention: Top Chinese Social Media Platforms in 2024"
 description: "Chinese social media platforms like WeChat, Weibo, and TikTok offer global brands unprecedented opportunities to engage with one of the largest consumer bases in the world. Understanding and using these platforms is crucial for brands aiming to expand their presence in the Chinese market."
 pubDate: "2024-08-10"
 author: "Beyond Border Group"
-category: "Social Media"
+category: "Platforms"
+platforms: ["WeChat", "Douyin", "Xiaohongshu"]
 tags: ["WeChat", "Douyin", "Chinese social media", "influencer marketing", "e-commerce"]
 heroImage: "/Images/insights/top-chinese-social-media-platforms-for-2024-marketing.png"
 heroImageAlt: "Social media platforms 2021 banner"

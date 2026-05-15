@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import { INSIGHT_CATEGORIES, INSIGHT_PLATFORMS } from '../../content.config';
 
 const allInsights = await getCollection('insights', ({ data }) => !data.draft);
 
@@ -23,7 +24,24 @@ function formatDate(d?: Date) {
   return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 }
 
-const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort();
+const categoryCounts = new Map<string, number>();
+const platformCounts = new Map<string, number>();
+for (const post of sorted) {
+  categoryCounts.set(post.data.category, (categoryCounts.get(post.data.category) ?? 0) + 1);
+  for (const p of post.data.platforms ?? []) {
+    platformCounts.set(p, (platformCounts.get(p) ?? 0) + 1);
+  }
+}
+
+const categories = INSIGHT_CATEGORIES.filter((c) => (categoryCounts.get(c) ?? 0) > 0).map((c) => ({
+  value: c,
+  count: categoryCounts.get(c) ?? 0,
+}));
+
+const PLATFORM_MIN = 2;
+const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >= PLATFORM_MIN)
+  .map((p) => ({ value: p, count: platformCounts.get(p) ?? 0 }))
+  .sort((a, b) => b.count - a.count);
 ---
 
 <Layout
@@ -43,14 +61,43 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
 
   <section class="section">
     <div class="container">
-      {categories.length > 1 && (
-        <div class="insights-filter" role="tablist" aria-label="Filter by category">
-          <button type="button" class="insights-filter__btn is-active" data-category="all" role="tab" aria-selected="true">All</button>
-          {categories.map((c) => (
-            <button type="button" class="insights-filter__btn" data-category={c} role="tab" aria-selected="false">{c}</button>
-          ))}
+      <div class="insights-controls">
+        {categories.length > 1 && (
+          <div class="insights-filter" role="tablist" aria-label="Filter by category">
+            <button type="button" class="insights-filter__btn is-active" data-category="all" role="tab" aria-selected="true">
+              <span class="insights-filter__label">All</span>
+              <span class="insights-filter__count" aria-hidden="true">{sorted.length}</span>
+            </button>
+            {categories.map((c) => (
+              <button type="button" class="insights-filter__btn" data-category={c.value} role="tab" aria-selected="false">
+                <span class="insights-filter__label">{c.value}</span>
+                <span class="insights-filter__count" aria-hidden="true">{c.count}</span>
+              </button>
+            ))}
+          </div>
+        )}
+
+        {platforms.length > 1 && (
+          <div class="insights-platforms" role="group" aria-label="Filter by platform">
+            <span class="insights-platforms__label">Platform</span>
+            <button type="button" class="insights-platforms__btn is-active" data-platform="all">All</button>
+            {platforms.map((p) => (
+              <button type="button" class="insights-platforms__btn" data-platform={p.value}>
+                {p.value}
+                <span class="insights-platforms__count" aria-hidden="true">{p.count}</span>
+              </button>
+            ))}
+          </div>
+        )}
+
+        <div class="insights-sort">
+          <label for="insights-sort-select" class="insights-sort__label">Sort</label>
+          <select id="insights-sort-select" class="insights-sort__select" data-sort>
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
         </div>
-      )}
+      </div>
 
       <div class="grid grid-3 insights-grid">
         {sorted.map((post) => (
@@ -58,6 +105,9 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
             href={`/insights/${post.id}`}
             class="insight-card"
             data-category={post.data.category}
+            data-platforms={(post.data.platforms ?? []).join('|')}
+            data-pubdate={post.data.pubDate ? post.data.pubDate.valueOf() : 0}
+            data-title={post.data.title}
           >
             <div class="insight-card__image">
               {post.data.heroImage && (
@@ -88,9 +138,11 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
         ))}
       </div>
 
-      {sorted.length === 0 && (
-        <p class="insights-empty">We're moving older articles over. Check back in a few days.</p>
-      )}
+      <p class="insights-empty" hidden={sorted.length !== 0}>
+        {sorted.length === 0
+          ? "We're moving older articles over. Check back in a few days."
+          : 'Nothing here for this filter combination. Try another.'}
+      </p>
 
       <nav class="insights-pagination" aria-label="Insights pagination" hidden>
         <button type="button" class="insights-pagination__btn" data-page-prev aria-label="Previous page">
@@ -113,15 +165,19 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
       const pageList = document.querySelector('[data-page-list]');
       const prevBtn = document.querySelector('[data-page-prev]');
       const nextBtn = document.querySelector('[data-page-next]');
+      const sortSelect = document.querySelector('[data-sort]');
       let currentCategory = 'all';
+      let currentPlatform = 'all';
+      let currentSort = 'newest';
       let currentPage = 1;
 
       function readUrl() {
         const params = new URLSearchParams(window.location.search);
         const page = parseInt(params.get('page') || '1', 10);
-        const cat = params.get('category') || 'all';
         currentPage = Number.isFinite(page) && page > 0 ? page : 1;
-        currentCategory = cat;
+        currentCategory = params.get('category') || 'all';
+        currentPlatform = params.get('platform') || 'all';
+        currentSort = params.get('sort') === 'oldest' ? 'oldest' : 'newest';
       }
 
       function writeUrl(push) {
@@ -130,22 +186,50 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
         else params.delete('page');
         if (currentCategory && currentCategory !== 'all') params.set('category', currentCategory);
         else params.delete('category');
+        if (currentPlatform && currentPlatform !== 'all') params.set('platform', currentPlatform);
+        else params.delete('platform');
+        if (currentSort === 'oldest') params.set('sort', 'oldest');
+        else params.delete('sort');
         const qs = params.toString();
         const url = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
-        if (push) history.pushState({ page: currentPage, category: currentCategory }, '', url);
-        else history.replaceState({ page: currentPage, category: currentCategory }, '', url);
+        const state = { page: currentPage, category: currentCategory, platform: currentPlatform, sort: currentSort };
+        if (push) history.pushState(state, '', url);
+        else history.replaceState(state, '', url);
       }
 
-      function syncFilterUi() {
+      function syncUi() {
         document.querySelectorAll('.insights-filter__btn').forEach((b) => {
           const on = b.dataset.category === currentCategory;
           b.classList.toggle('is-active', on);
           b.setAttribute('aria-selected', on ? 'true' : 'false');
         });
+        document.querySelectorAll('.insights-platforms__btn').forEach((b) => {
+          b.classList.toggle('is-active', b.dataset.platform === currentPlatform);
+        });
+        if (sortSelect) sortSelect.value = currentSort;
+      }
+
+      function cardMatchesPlatform(card) {
+        if (currentPlatform === 'all') return true;
+        const list = (card.dataset.platforms || '').split('|').filter(Boolean);
+        return list.includes(currentPlatform);
       }
 
       function getFiltered() {
-        return cards.filter((c) => currentCategory === 'all' || c.dataset.category === currentCategory);
+        const filtered = cards.filter(
+          (c) => (currentCategory === 'all' || c.dataset.category === currentCategory) && cardMatchesPlatform(c)
+        );
+        filtered.sort((a, b) => {
+          const da = parseInt(a.dataset.pubdate || '0', 10);
+          const db = parseInt(b.dataset.pubdate || '0', 10);
+          if (currentSort === 'oldest') {
+            if (da !== db) return da - db;
+            return (a.dataset.title || '').localeCompare(b.dataset.title || '');
+          }
+          if (db !== da) return db - da;
+          return (a.dataset.title || '').localeCompare(b.dataset.title || '');
+        });
+        return filtered;
       }
 
       function pageNumbers(total, current) {
@@ -171,11 +255,16 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
 
         cards.forEach((card) => {
           card.style.display = 'none';
+          card.style.order = '';
         });
         const start = (currentPage - 1) * PER_PAGE;
-        filtered.slice(start, start + PER_PAGE).forEach((card) => {
+        filtered.slice(start, start + PER_PAGE).forEach((card, i) => {
           card.style.display = '';
+          card.style.order = String(i);
         });
+
+        const empty = document.querySelector('.insights-empty');
+        if (empty) empty.hidden = filtered.length !== 0;
 
         if (totalPages <= 1) {
           pagination.hidden = true;
@@ -229,20 +318,39 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
         btn.addEventListener('click', () => {
           currentCategory = btn.dataset.category;
           currentPage = 1;
-          syncFilterUi();
+          syncUi();
           writeUrl(true);
           render();
         });
       });
 
+      document.querySelectorAll('.insights-platforms__btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          currentPlatform = btn.dataset.platform;
+          currentPage = 1;
+          syncUi();
+          writeUrl(true);
+          render();
+        });
+      });
+
+      if (sortSelect) {
+        sortSelect.addEventListener('change', () => {
+          currentSort = sortSelect.value === 'oldest' ? 'oldest' : 'newest';
+          currentPage = 1;
+          writeUrl(true);
+          render();
+        });
+      }
+
       window.addEventListener('popstate', () => {
         readUrl();
-        syncFilterUi();
+        syncUi();
         render();
       });
 
       readUrl();
-      syncFilterUi();
+      syncUi();
       writeUrl(false);
       render();
     })();
@@ -257,17 +365,24 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
     .insights-intro h1 { max-width: 18ch; margin-inline: auto; margin-bottom: var(--space-4); }
     .insights-intro .lead { max-width: 60ch; margin-inline: auto; color: var(--bbg-text); }
 
+    .insights-controls {
+      margin-bottom: var(--space-7);
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+
     .insights-filter {
       display: flex;
       flex-wrap: wrap;
       gap: var(--space-2);
       justify-content: center;
-      margin-bottom: var(--space-7);
-      padding-bottom: var(--space-4);
-      border-bottom: 1px solid var(--bbg-border);
+      margin-bottom: var(--space-3);
     }
     .insights-filter__btn {
       appearance: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       border: 1px solid var(--bbg-border);
       background: transparent;
       padding: 0.5rem 1rem;
@@ -286,6 +401,96 @@ const categories = Array.from(new Set(sorted.map((p) => p.data.category))).sort(
       background: var(--bbg-blue);
       border-color: var(--bbg-blue);
       color: var(--bbg-white);
+    }
+    .insights-filter__count {
+      font-variant-numeric: tabular-nums;
+      font-size: 0.75rem;
+      font-weight: 500;
+      opacity: 0.6;
+    }
+    .insights-filter__btn.is-active .insights-filter__count {
+      opacity: 0.85;
+    }
+
+    .insights-platforms {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-2);
+      justify-content: center;
+      margin-top: var(--space-3);
+    }
+    .insights-platforms__label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-right: 0.25rem;
+    }
+    .insights-platforms__btn {
+      appearance: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+      cursor: pointer;
+      transition: all var(--dur) var(--ease);
+    }
+    .insights-platforms__btn:hover {
+      color: var(--bbg-blue);
+    }
+    .insights-platforms__btn.is-active {
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue-dark);
+      border-color: var(--bbg-blue-light);
+    }
+    .insights-platforms__count {
+      font-variant-numeric: tabular-nums;
+      font-size: 0.7rem;
+      opacity: 0.7;
+    }
+
+    .insights-sort {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: var(--space-3);
+    }
+    .insights-sort__label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+    .insights-sort__select {
+      appearance: none;
+      border: 1px solid var(--bbg-border);
+      background: transparent;
+      padding: 0.4rem 2rem 0.4rem 0.75rem;
+      border-radius: 999px;
+      font-size: var(--fs-small);
+      font-weight: 500;
+      color: var(--bbg-ink);
+      cursor: pointer;
+      background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+      background-position: calc(100% - 14px) 50%, calc(100% - 9px) 50%;
+      background-size: 5px 5px;
+      background-repeat: no-repeat;
+      transition: border-color var(--dur) var(--ease);
+    }
+    .insights-sort__select:hover,
+    .insights-sort__select:focus {
+      border-color: var(--bbg-blue);
+      outline: none;
     }
 
     .insights-grid {

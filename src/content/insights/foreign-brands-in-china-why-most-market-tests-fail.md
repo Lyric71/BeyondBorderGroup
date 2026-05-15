@@ -3,7 +3,8 @@ title: "How Foreign Brands Test the Chinese Market. And Why Most Get It Wrong."
 description: "An analysis of why foreign brands fail when entering China, examining common mistakes in cross-border e-commerce strategy, pricing, and market approach."
 pubDate: "2026-03-25"
 author: "Beyond Border Group"
-category: "Strategy"
+category: "Market Strategy"
+platforms: ["Douyin"]
 tags: ["China market entry", "cross-border e-commerce", "CBEC", "pricing strategy", "Douyin"]
 heroImage: "/Images/insights/foreign-brands-in-china-why-most-market-tests-fail.png"
 heroImageAlt: "Foreign brands China CBEC"

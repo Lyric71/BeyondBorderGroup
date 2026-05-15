@@ -3,7 +3,8 @@ title: "Science + Emotion: China's New Brand Playbook"
 description: "One dermocosmetics brand grew 47% at Double 11 while its competitor dropped 57% on the same platforms. The difference came down to distribution architecture and brand strategy rather than product quality."
 pubDate: "2026-03-12"
 author: "Beyond Border Group"
-category: "Strategy"
+category: "Market Strategy"
+platforms: ["Tmall", "Douyin"]
 tags: ["China ecommerce", "brand strategy", "Douyin", "Tmall", "platform architecture"]
 heroImage: "/Images/insights/science-emotion-chinas-new-brand-playbook.jpg"
 heroImageAlt: "Science plus emotion china new brand playbook"

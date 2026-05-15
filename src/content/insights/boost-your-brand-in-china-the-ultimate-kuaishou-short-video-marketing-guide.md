@@ -4,6 +4,7 @@ description: "Kuaishou is a premier short-video platform distinct from Douyin, f
 pubDate: "2024-10-28"
 author: "Beyond Border Group"
 category: "Platforms"
+platforms: ["Kuaishou"]
 tags: ["Kuaishou", "short-video marketing", "China eCommerce", "live streaming", "social commerce"]
 heroImage: "/Images/insights/boost-your-brand-in-china-the-ultimate-kuaishou-short-video-marketing-guide.jpg"
 heroImageAlt: "Kuaishou cover image"

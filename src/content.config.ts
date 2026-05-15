@@ -1,6 +1,28 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
+export const INSIGHT_CATEGORIES = [
+  'Platforms',
+  'E-Commerce',
+  'KOLs & Livestream',
+  'Brand & Localization',
+  'AI & Innovation',
+  'Market Strategy',
+  'Compliance & Setup',
+] as const;
+
+export const INSIGHT_PLATFORMS = [
+  'WeChat',
+  'Douyin',
+  'Tmall',
+  'Taobao',
+  'JD',
+  'Xiaohongshu',
+  'Weibo',
+  'Kuaishou',
+  'Alipay',
+] as const;
+
 const insights = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/insights' }),
   schema: z.object({
@@ -9,7 +31,8 @@ const insights = defineCollection({
     pubDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     author: z.string().default('Beyond Border Group'),
-    category: z.string().default('Insights'),
+    category: z.enum(INSIGHT_CATEGORIES),
+    platforms: z.array(z.enum(INSIGHT_PLATFORMS)).default([]),
     tags: z.array(z.string()).default([]),
     heroImage: z.string(),
     heroImageAlt: z.string().default(''),

@@ -3,7 +3,8 @@ title: "Top 5 Video and Livestreaming Platforms in China"
 description: "Livestreaming has become a cornerstone of China's digital commerce ecosystem. This guide explores the top five platforms reshaping how brands engage with consumers and drive sales through interactive real-time experiences."
 pubDate: "2024-12-27"
 author: "Beyond Border Group"
-category: "Livestream"
+category: "KOLs & Livestream"
+platforms: ["Douyin", "Taobao"]
 tags: ["livestreaming", "ecommerce", "Douyin", "Taobao Live", "China marketing"]
 heroImage: "/Images/insights/top-5-video-and-livestreaming-platforms-in-china.jpg"
 heroImageAlt: "Livestreaming and video content creation"

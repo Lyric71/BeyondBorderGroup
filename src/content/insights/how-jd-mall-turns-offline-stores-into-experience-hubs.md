@@ -3,7 +3,8 @@ title: "How JD Is Turning Offline Stores Into Experience Hubs"
 description: "JD Mall transforms physical retail into experience-driven destinations where customers actively test products rather than passively browse, reshaping how global brands engage with Chinese consumers in high-consideration categories."
 pubDate: "2025-11-26"
 author: "Beyond Border Group"
-category: "Retail"
+category: "E-Commerce"
+platforms: ["JD"]
 tags: ["JD Mall", "experiential retail", "offline commerce", "China e-commerce", "customer experience"]
 heroImage: "/Images/insights/how-jd-mall-turns-offline-stores-into-experience-hubs.png"
 heroImageAlt: "JD Mall storefront and interior"

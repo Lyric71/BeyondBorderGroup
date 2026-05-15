@@ -3,7 +3,8 @@ title: "What Taobao Instant Commerce Means For Non-Chinese Brands"
 description: "Alibaba's Taobao Instant Commerce and Taobao Flash Sale rebrand signal a shift from festival-driven shopping to daily delivery habits, reshaping how non-Chinese brands must compete in China's evolving retail landscape."
 pubDate: "2025-11-21"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "E-Commerce"
+platforms: ["Taobao"]
 tags: ["Taobao", "Instant Commerce", "Alibaba", "E-commerce", "China Retail"]
 heroImage: "/Images/insights/what-taobao-instant-commerce-means-for-non-chinese-brands.png"
 heroImageAlt: "Taobao Instant Commerce interface screenshot"

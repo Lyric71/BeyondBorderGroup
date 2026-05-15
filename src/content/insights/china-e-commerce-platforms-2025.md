@@ -3,7 +3,8 @@ title: "China E-Commerce 2025: The Platform Map, and Why Retail Is Going Local"
 description: "China's e-commerce market integrates online and offline into one operational loop across distinct platforms. Each major player owns different consumer habits and parts of the sales funnel."
 pubDate: "2025-12-22"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "E-Commerce"
+platforms: ["Tmall", "Taobao", "Douyin"]
 tags: ["e-commerce platforms", "China retail", "instant commerce", "marketplace strategy", "platform integration"]
 heroImage: "/Images/insights/china-e-commerce-platforms-2025.png"
 heroImageAlt: "China e-commerce platform overview illustration"

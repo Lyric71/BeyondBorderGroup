@@ -3,7 +3,8 @@ title: "11.11 2025: From GMV Theater to AI-First Efficiency"
 description: "Double Eleven 2025 shifted from GMV spectacle to operational efficiency, with platforms prioritizing AI-led systems, transparent pricing, and reliable service over gimmicks."
 pubDate: "2025-11-14"
 author: "Beyond Border Group"
-category: "Commerce"
+category: "E-Commerce"
+platforms: ["Tmall", "Taobao", "Douyin"]
 tags: ["Double 11", "AI efficiency", "ecommerce operations", "livestream commerce", "omnichannel"]
 heroImage: "/Images/insights/double-11-2025-ai-ecommerce-efficiency-china.jpg"
 heroImageAlt: "AI-driven e-commerce efficiency for Double 11 shopping festival"
