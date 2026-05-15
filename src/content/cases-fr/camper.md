@@ -13,7 +13,6 @@ services:
   - "Social"
 heroImage: "/Images/work/camper.jpg"
 heroImageAlt: "Étude de cas Camper"
-legacyUrl: "/case-study/how-camper-grew-335-on-chinese-social-media/"
 order: 1
 images:
   - src: "/Images/work/camper-1.jpg"

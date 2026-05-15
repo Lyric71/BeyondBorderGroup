@@ -13,7 +13,6 @@ services:
   - "Identité visuelle"
 heroImage: "/Images/work/shiseido-rq.jpg"
 heroImageAlt: "Étude de cas Shiseido RQ Pyology"
-legacyUrl: "/case-study/shiseido-rq-pyology-china-brand-launch-case-study/"
 order: 19
 images:
   - src: "/Images/work/shiseido-rq-pyology-1.png"

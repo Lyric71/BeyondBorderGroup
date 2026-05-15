@@ -316,6 +316,7 @@ Whether you're targeting douyin ecommerce, crossborder ecommerce China, or socia
 # Best Practices for KOC / Key Opinion Consumers Marketing in China
 URL: https://www.beyondbordergroup.com/insights/best-practices-for-koc-marketing-in-china
 Published: 2024-12-07
+Updated: 2026-05-15
 Author: Beyond Border Group
 Category: KOLs & Livestream
 
@@ -1179,7 +1180,8 @@ Choosing the best Chinese search engine for your marketing efforts in 2024 depen
 # Brand Localization for China: Adapt & Keep Your DNA
 URL: https://www.beyondbordergroup.com/insights/brand-localization-for-china-without-losing-your-dna
 Published: 2025-11-19
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Liyan Ye
 Category: Brand & Localization
 
 Foreign brands in China must balance deep localization with core identity. Quality alone is no longer enough; success requires cultural relevance and platform fluency while protecting what makes the brand distinctive.
@@ -1318,6 +1320,7 @@ This is where Beyond Border Group works with teams, connecting a protected core 
 # China 2026: 8 eCommerce & Marketing Predictions
 URL: https://www.beyondbordergroup.com/insights/china-2026-8-ecommerce-marketing-predictions
 Published: 2026-01-02
+Updated: 2026-05-15
 Author: Cyril Drouin
 Category: Market Strategy
 
@@ -1419,7 +1422,8 @@ If your China strategy still looks the same as it did two years ago, you're not 
 # China E-Commerce 2025: The Platform Map, and Why Retail Is Going Local
 URL: https://www.beyondbordergroup.com/insights/china-e-commerce-platforms-2025
 Published: 2025-12-22
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Cyril Drouin
 Category: E-Commerce
 
 China's e-commerce market integrates online and offline into one operational loop across distinct platforms. Each major player owns different consumer habits and parts of the sales funnel.
@@ -1509,7 +1513,7 @@ Instant commerce retail sales will reach RMB 1.003 trillion in 2025, with growth
 ---
 # China Is No Longer One Market: Why Local Bets Beat National Plans
 URL: https://www.beyondbordergroup.com/insights/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025
-Author: Beyond Border Group
+Author: Cyril Drouin
 Category: Market Strategy
 
 Chinese consumers are more deliberate and domestic competition stronger, making the old national playbook obsolete. Winning brands now ask where they deserve to matter locally rather than how to win all of China.
@@ -1601,7 +1605,8 @@ The goal is simple. Less chasing abstract "China scale", more building specific 
 # China Is No Longer One Market: Why Local Bets Beat National Plans
 URL: https://www.beyondbordergroup.com/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans
 Published: 2026-01-06
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Cyril Drouin
 Category: Market Strategy
 
 Global brands must shift from single national strategies to localized, city-level approaches to succeed in today's slower-growth Chinese market where domestic competition is stronger.
@@ -1844,6 +1849,7 @@ Finding and partnering with KOLs in China can be a transformative strategy for b
 # China's AI-Powered Commerce: Trends and Innovations to Watch
 URL: https://www.beyondbordergroup.com/insights/chinas-ai-powered-commerce-trends-and-innovations-to-watch
 Published: 2025-01-10
+Updated: 2026-05-15
 Author: Beyond Border Group
 Category: AI & Innovation
 
@@ -2059,7 +2065,8 @@ This development highlights a trend that could redefine global e-commerce strate
 # 11.11 2025: From GMV Theater to AI-First Efficiency
 URL: https://www.beyondbordergroup.com/insights/double-11-2025-ai-ecommerce-efficiency-china
 Published: 2025-11-14
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Cyril Drouin
 Category: E-Commerce
 
 Double Eleven 2025 shifted from GMV spectacle to operational efficiency, with platforms prioritizing AI-led systems, transparent pricing, and reliable service over gimmicks.
@@ -2145,7 +2152,8 @@ If you want to see this in your numbers, let's co‑create a few visuals on the 
 # China's Biggest E-Commerce Festival Goes Back to Old Media
 URL: https://www.beyondbordergroup.com/insights/double-11-2025-old-media-strategy-china-ecommerce
 Published: 2025-11-14
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Cyril Drouin
 Category: E-Commerce
 
 Double 11, China's dominant shopping festival, is adopting television-style formats including galas, comedy sketches, and variety shows to rebuild consumer trust amid a market of increasingly sophisticated retail-savvy shoppers.
@@ -2242,6 +2250,7 @@ It is an opening.
 # Double 11 2025: The End of China's Shopping Wars
 URL: https://www.beyondbordergroup.com/insights/double-11-2025-the-end-of-chinas-shopping-wars
 Published: 2025-11-14
+Updated: 2026-05-15
 Author: Beyond Border Group
 Category: E-Commerce
 
@@ -2368,7 +2377,8 @@ Which is exactly why this is the right moment to declare your own Last 11.11 Pla
 # Douyin Live Commerce in 2025: Why Store-Led Rooms Beat Celebrity Events
 URL: https://www.beyondbordergroup.com/insights/douyin-live-commerce-2025-store-led-livestream-strategy
 Published: 2026-01-06
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Cyril Drouin
 Category: KOLs & Livestream
 
 Store-led livestreaming has become the dominant strategy on Douyin in 2026, replacing reliance on celebrity hosts with merchant-controlled broadcasting that enables better compliance and repeatable growth.
@@ -2515,6 +2525,7 @@ The empowerment of women entrepreneurs through digital commerce is a transformat
 # How Foreign Brands Test the Chinese Market. And Why Most Get It Wrong.
 URL: https://www.beyondbordergroup.com/insights/foreign-brands-in-china-why-most-market-tests-fail
 Published: 2026-03-25
+Updated: 2026-05-15
 Author: Cyril Drouin
 Category: Market Strategy
 
@@ -2625,7 +2636,8 @@ Incorporating sustainability into a brand's core values and marketing strategies
 # Navigating Advertising Laws in China: Essential Insights for International Brands
 URL: https://www.beyondbordergroup.com/insights/how-chinas-advertising-laws-impact-global-brands
 Published: 2024-10-29
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Cyril Drouin
 Category: Compliance & Setup
 
 China's strict advertising laws and platform-specific regulations present unique challenges for global brands seeking to reach consumers through eCommerce and social media. This guide explores regulations covering absolute claims restrictions, industry-specific rules, and digital advertising compliance.
@@ -2710,7 +2722,8 @@ China's advertising laws are fundamental to ensuring a fair, safe, and culturall
 # How JD Is Turning Offline Stores Into Experience Hubs
 URL: https://www.beyondbordergroup.com/insights/how-jd-mall-turns-offline-stores-into-experience-hubs
 Published: 2025-11-26
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Cyril Drouin
 Category: E-Commerce
 
 JD Mall transforms physical retail into experience-driven destinations where customers actively test products rather than passively browse, reshaping how global brands engage with Chinese consumers in high-consideration categories.
@@ -3895,6 +3908,7 @@ The rise of AI-integrated PCs in China is more than just a technological advance
 # Navigating Cross-Border Commerce Livestreaming: Insights from Beyond Border Group's CEO Cyril Drouin
 URL: https://www.beyondbordergroup.com/insights/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin
 Published: 2024-11-05
+Updated: 2026-05-15
 Author: Cyril Drouin
 Category: KOLs & Livestream
 
@@ -4037,7 +4051,8 @@ Choosing the right influencer for your brand is a strategic decision that can si
 # When PIPL Bites: Dior's Wake-Up Call for Global Brands in China
 URL: https://www.beyondbordergroup.com/insights/pipl-compliance-in-china-diors-wake-up-call-for-global-brands
 Published: 2025-11-26
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Cyril Drouin
 Category: Compliance & Setup
 
 China's Personal Information Protection Law (PIPL) enforcement has shifted from theoretical to real. Dior's recent prosecution marks the first formal punishment of a foreign brand, signaling that data protection compliance is now critical for global brands operating in China.
@@ -4111,6 +4126,7 @@ If you are building for the long term in China, PIPL is more than another hurdle
 # Science + Emotion: China's New Brand Playbook
 URL: https://www.beyondbordergroup.com/insights/science-emotion-chinas-new-brand-playbook
 Published: 2026-03-12
+Updated: 2026-05-15
 Author: Cyril Drouin
 Category: Market Strategy
 
@@ -4337,7 +4353,8 @@ Storytelling in B2B marketing transcends being just a trend; it's fundamental to
 # Taobao Flash Sale and the 30-Minute Shift: Why China Retail Is Going Deeper Online to Offline
 URL: https://www.beyondbordergroup.com/insights/taobao-flash-sale-and-chinas-30-minute-retail
 Published: 2025-12-22
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Cyril Drouin
 Category: E-Commerce
 
 Alibaba's rebrand of Ele.me into Taobao Flash Sale signals a structural shift in Chinese retail, pulling food delivery, instant retail, and in-store services into a unified platform experience designed for 30-60 minute fulfillment.
@@ -6186,6 +6203,7 @@ The UX design differences between Chinese and Western websites reflect deeply in
 # The Ultimate Guide to WeChat Pay vs. Alipay for eCommerce in China
 URL: https://www.beyondbordergroup.com/insights/wechat-pay-vs-alipay-best-mobile-payment-for-ecommerce
 Published: 2024-07-24
+Updated: 2026-05-15
 Author: Beyond Border Group
 Category: Platforms
 
@@ -6517,7 +6535,8 @@ Weibo is a lively platform that offers a lot of opportunities for businesses to 
 # What Taobao Instant Commerce Means For Non-Chinese Brands
 URL: https://www.beyondbordergroup.com/insights/what-taobao-instant-commerce-means-for-non-chinese-brands
 Published: 2025-11-21
-Author: Beyond Border Group
+Updated: 2026-05-15
+Author: Cyril Drouin
 Category: E-Commerce
 
 Alibaba's Taobao Instant Commerce and Taobao Flash Sale rebrand signal a shift from festival-driven shopping to daily delivery habits, reshaping how non-Chinese brands must compete in China's evolving retail landscape.

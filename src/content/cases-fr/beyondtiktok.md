@@ -15,7 +15,6 @@ images:
   - src: "/Images/work/beyondtiktok-1.png"
     alt: "Page d'accueil BeyondTikTok"
     caption: "Une page d'accueil pensée pour la captation de leads et la performance en référencement organique"
-legacyUrl: "/case-study/case-study-beyondtiktoks-dedicated-tiktok-success/"
 order: 20
 ---
 

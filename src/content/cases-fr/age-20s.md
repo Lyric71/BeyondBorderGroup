@@ -14,7 +14,6 @@ services:
   - "Social"
 heroImage: "/Images/work/age-20s.jpg"
 heroImageAlt: "Étude de cas Age 20's"
-legacyUrl: "/case-study/age-20s-little-milk-brick-launch-campaign-china/"
 order: 12
 images:
   - src: "/Images/work/age-20s-1.jpg"

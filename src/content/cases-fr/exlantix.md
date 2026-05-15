@@ -15,7 +15,6 @@ images:
   - src: "/Images/work/exlantix-1.png"
     alt: "Mise en situation de l'identité Exlantix"
     caption: "L'identité de marque déployée dans ses environnements"
-legacyUrl: "/case-study/case-study-chery-groups-exlantix-branding-success/"
 order: 15
 ---
 

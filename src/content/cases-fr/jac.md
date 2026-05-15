@@ -18,7 +18,6 @@ images:
     alt: "Détail extérieur du VE JAC"
   - src: "/Images/work/jac-2.webp"
     alt: "Détail intérieur du VE JAC"
-legacyUrl: "/case-study/case-study-jacs-pixel-perfect-global-asset-production/"
 order: 9
 ---
 

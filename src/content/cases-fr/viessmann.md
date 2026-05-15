@@ -13,7 +13,6 @@ services:
   - "Social"
 heroImage: "/Images/work/viessmann.avif"
 heroImageAlt: "Étude de cas Viessmann"
-legacyUrl: "/case-study/viessmann-tmall-ecommerce-in-china-for-heating-boiling-solutions/"
 order: 8
 images:
   - src: "/Images/work/viessmann-1.png"

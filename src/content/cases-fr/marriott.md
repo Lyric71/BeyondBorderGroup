@@ -16,7 +16,6 @@ images:
     caption: "Le dispositif visuel de la campagne Super Brand Day sur Tmall."
   - src: "/Images/work/marriott-2.png"
     alt: "Page Tmall de la carte noire Marriott"
-legacyUrl: "/case-study/case-study-marriotts-super-brand-day-huge-success-in-china/"
 order: 7
 ---
 

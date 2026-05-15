@@ -18,7 +18,6 @@ images:
     alt: "Visuel clé de la campagne co-création With Chery With Love"
   - src: "/Images/work/chery-2.png"
     alt: "Concept de goodies dessinés par des fans dans le cadre de With Chery With Love"
-legacyUrl: "/case-study/chery-automotive-with-chery-with-love-co-create-friday-campaign-cross-border-marketing/"
 order: 5
 ---
 

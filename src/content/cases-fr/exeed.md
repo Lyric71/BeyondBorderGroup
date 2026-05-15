@@ -11,7 +11,6 @@ services:
   - "Identité visuelle"
 heroImage: "/Images/work/exeed.webp"
 heroImageAlt: "Étude de cas Exeed"
-legacyUrl: "/case-study/case-study-exeeds-successful-global-pr-launch/"
 order: 22
 images:
   - src: "/Images/work/exeed-1.webp"

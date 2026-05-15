@@ -18,7 +18,6 @@ images:
     caption: "Le flagship Tmall après refonte"
   - src: "/Images/work/kerry-davinci-2.png"
     alt: "Page récit de marque DaVinci Gourmet sur Tmall"
-legacyUrl: "/case-study/kerry-food-ecommerce-china-tmalfor-davinci-gourmet-syrups-sauces-and-smoothies/"
 order: 21
 ---
 

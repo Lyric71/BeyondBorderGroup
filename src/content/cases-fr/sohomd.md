@@ -20,7 +20,6 @@ images:
     caption: "L'expérience sur ordinateur, repensée pour l'admission patient"
   - src: "/Images/work/sohomd-2.webp"
     alt: "La plateforme SohoMD affichée sur une tablette"
-legacyUrl: "/case-study/case-study-sohomds-digital-health-transformation/"
 order: 23
 ---
 

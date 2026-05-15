@@ -17,7 +17,6 @@ images:
   - src: "/Images/work/jaguar-land-rover-1.png"
     alt: "Contenu social Jaguar Land Rover pour la Chine"
     caption: "Des contenus sociaux taillés pour les plateformes chinoises"
-legacyUrl: "/case-study/jaguar-land-rover-annual-social-media-integrated-marketing-services/"
 order: 16
 ---
 

@@ -23,7 +23,12 @@ export const INSIGHT_PLATFORMS = [
   'Alipay',
 ] as const;
 
-const insightSchema = z.object({
+// Shared base fields for insights. The only locale-specific field is
+// `legacyUrl`: it preserves the old WordPress URL (always English) for
+// documentation and to power the 301 redirect plan. Carrying it on FR
+// frontmatter would point a French page at an English URL, which is
+// confusing for future editors. EN-only.
+const insightBaseSchema = z.object({
   title: z.string(),
   description: z.string(),
   pubDate: z.coerce.date().optional(),
@@ -36,21 +41,27 @@ const insightSchema = z.object({
   keyTakeaways: z.array(z.string()).default([]),
   heroImage: z.string(),
   heroImageAlt: z.string().default(''),
-  legacyUrl: z.string().optional(),
   draft: z.boolean().default(false),
 });
 
+const insightEnSchema = insightBaseSchema.extend({
+  /** Original WordPress URL. Used only for documentation; redirects live in astro.config.mjs. */
+  legacyUrl: z.string().optional(),
+});
+
+const insightFrSchema = insightBaseSchema;
+
 const insights = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/insights' }),
-  schema: insightSchema,
+  schema: insightEnSchema,
 });
 
 const insightsFr = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/insights-fr' }),
-  schema: insightSchema,
+  schema: insightFrSchema,
 });
 
-const caseSchema = z.object({
+const caseBaseSchema = z.object({
   brand: z.string(),
   title: z.string(),
   summary: z.string(),
@@ -76,19 +87,25 @@ const caseSchema = z.object({
       })
     )
     .default([]),
-  legacyUrl: z.string().optional(),
   order: z.number().default(100),
   draft: z.boolean().default(false),
 });
 
+const caseEnSchema = caseBaseSchema.extend({
+  /** Original WordPress `/case-study/<slug>` URL. EN-only, doc-only. */
+  legacyUrl: z.string().optional(),
+});
+
+const caseFrSchema = caseBaseSchema;
+
 const cases = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/cases' }),
-  schema: caseSchema,
+  schema: caseEnSchema,
 });
 
 const casesFr = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/cases-fr' }),
-  schema: caseSchema,
+  schema: caseFrSchema,
 });
 
 export const collections = { insights, insightsFr, cases, casesFr };

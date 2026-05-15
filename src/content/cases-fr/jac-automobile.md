@@ -15,7 +15,6 @@ images:
   - src: "/Images/work/jac-automobile-1.jpg"
     alt: "Contenu de campagne JAC Automobile sur WeChat"
     caption: "Un contenu de campagne taillé pour WeChat"
-legacyUrl: "/case-study/jac-automobile-campaign-and-content-on-wechat-red-weibo-powered-by-ai/"
 order: 13
 ---
 

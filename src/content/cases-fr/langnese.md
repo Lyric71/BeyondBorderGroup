@@ -14,7 +14,6 @@ services:
   - "Média"
 heroImage: "/Images/work/langnese.png"
 heroImageAlt: "Étude de cas Langnese"
-legacyUrl: "/case-study/langnese-china-reversing-sales-decline/"
 order: 10
 images:
   - src: "/Images/work/langnese-1.png"

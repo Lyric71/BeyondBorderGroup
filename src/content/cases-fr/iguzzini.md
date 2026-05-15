@@ -18,7 +18,6 @@ images:
   - src: "/Images/work/iguzzini-1.webp"
     alt: "Design du flagship Tmall Iguzzini"
     caption: "Le flagship Tmall cross-border, premier volet du dispositif."
-legacyUrl: "/case-study/case-study-iguzzinis-luxury-lighting-success-in-china/"
 order: 4
 ---
 

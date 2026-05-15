@@ -17,7 +17,6 @@ images:
     caption: "Concept d'affichage extérieur, conçu pour les villes chinoises de premier rang."
   - src: "/Images/work/roc-2.webp"
     alt: "Maquette produit ROC Skincare"
-legacyUrl: "/case-study/case-study-roc-skincares-china-market-success/"
 order: 2
 ---
 

@@ -16,7 +16,6 @@ images:
   - src: "/Images/work/master-martini-1.png"
     alt: "Grille Instagram régionale Master Martini"
     caption: "La grille de contenus pilotée par les recettes sur le compte Instagram régional."
-legacyUrl: "/case-study/case-study-master-martinis-social-media-success/"
 order: 3
 ---
 

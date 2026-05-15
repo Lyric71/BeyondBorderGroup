@@ -19,7 +19,6 @@ images:
     caption: "Le brand book qui a guidé le déploiement d'eila en Chine."
   - src: "/Images/work/valio-2.jpg"
     alt: "Concept d'affichage café Valio eila"
-legacyUrl: "/case-study/case-study-valios-successful-entry-into-china/"
 order: 6
 ---
 

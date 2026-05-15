@@ -10,7 +10,6 @@ services:
   - "Formation"
 heroImage: "/Images/work/pierre-fabre.png"
 heroImageAlt: "Étude de cas Pierre Fabre"
-legacyUrl: "/case-study/pierre-fabre-china-masterclass-digital-ecomm/"
 order: 18
 images:
   - src: "/Images/work/pierre-fabre-1.png"

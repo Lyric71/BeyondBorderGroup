@@ -17,7 +17,6 @@ images:
   - src: "/Images/work/mission-foods-1.jpg"
     alt: "Contenu social pour les corn chips Mission Foods"
     caption: "Le contenu de lancement de la gamme corn chips"
-legacyUrl: "/case-study/how-mission-foods-nailed-digital-marketing-in-china/"
 order: 14
 ---
 

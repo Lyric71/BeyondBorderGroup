@@ -14,7 +14,6 @@ heroImageAlt: "Étude de cas Blue Insurance"
 images:
   - src: "/Images/work/blue-insurance-1.png"
     alt: "Interface produit d'assurance vie digitale Blue"
-legacyUrl: "/case-study/case-study-blue-insurances-digital-success-in-hk/"
 order: 11
 ---
 

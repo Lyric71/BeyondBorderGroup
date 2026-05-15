@@ -412,6 +412,40 @@ export default defineConfig({
         return { ...item, url: currentLocaleHref ?? item.url, links };
       },
     }),
+    // Runs AFTER @astrojs/sitemap on build:done and strips the trailing slash
+    // that the sitemap library appends to xhtml:link hreflang hrefs for the
+    // site root. The <loc> already lands without a trailing slash via the
+    // serialize hook above; this rewrite makes the alternates match. Cosmetic
+    // for Google (it normalises either way) but signals consistent intent.
+    {
+      name: 'bbg-sitemap-postprocess',
+      hooks: {
+        'astro:build:done': async ({ dir, logger }) => {
+          const { readFile, writeFile, readdir } = await import('node:fs/promises');
+          const { fileURLToPath } = await import('node:url');
+          const path = await import('node:path');
+          const root = fileURLToPath(dir);
+          let files;
+          try {
+            files = (await readdir(root)).filter((f) => /^sitemap-\d+\.xml$/.test(f));
+          } catch {
+            return;
+          }
+          for (const f of files) {
+            const filePath = path.join(root, f);
+            const xml = await readFile(filePath, 'utf8');
+            const fixed = xml.replace(
+              /(<xhtml:link rel="alternate" hreflang="[^"]+" href="https:\/\/www\.beyondbordergroup\.com)\/(")/g,
+              '$1$2',
+            );
+            if (fixed !== xml) {
+              await writeFile(filePath, fixed);
+              logger.info(`normalised root xhtml:link in ${f}`);
+            }
+          }
+        },
+      },
+    },
   ],
 
   // Multilingual setup. English stays at the root (/), French lives under /fr/.

@@ -9,7 +9,6 @@ services:
   - "Site web"
 heroImage: "/Images/work/bassetti.png"
 heroImageAlt: "Étude de cas Bassetti"
-legacyUrl: "/case-study/wordpress-china-migration-bassetti-case-study/"
 order: 17
 ---
 
