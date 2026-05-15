@@ -2,10 +2,10 @@
 import Layout from '../../../layouts/Layout.astro';
 
 const outcomes = [
-  "Les temps de chargement passent de 8 à 15 secondes à moins d'une seconde en Chine continentale",
-  "Baidu commence à indexer dans les semaines qui suivent l'approbation ICP",
-  "Les premières citations apparaissent dans les moteurs IA chinois à mesure que les nouveaux contenus sont crawlés",
-  "Le GMV du mini-programme WeChat est suivi dès le premier jour",
+  "Les temps de chargement reculent de huit à quinze secondes à moins d'une seconde en Chine continentale",
+  "Baidu engage l'indexation dans les semaines qui suivent la délivrance de l'ICP",
+  "Les premières citations apparaissent dans les moteurs IA chinois à mesure que le crawl progresse sur les nouveaux contenus",
+  "Le GMV du mini-programme WeChat fait l'objet d'un suivi dès le premier jour",
 ];
 
 const aiEngines = [
@@ -17,27 +17,27 @@ const aiEngines = [
 ];
 
 const geoBullets = [
-  "Données structurées (schema.org, JSON-LD) pour que les modèles lisent vos pages proprement",
-  "Contenu dense et factuel que les moteurs IA préfèrent citer ; le bavardage marketing est ignoré",
-  "Pages en chinois indexées par Baidu et Sogou",
-  "Mise en place de l'entité de marque sur Baidu Baike et les sources de référence équivalentes",
-  "Suivi des moteurs qui mentionnent votre marque et de la manière dont ils la cadrent",
+  "Données structurées (schema.org, JSON-LD) pour que les modèles parcourent vos pages sans accroc",
+  "Contenu dense et factuel : les moteurs IA citent ce qu'ils peuvent étayer, le langage marketing reste ignoré",
+  "Pages rédigées en chinois et indexées par Baidu comme par Sogou",
+  "Constitution de l'entité de marque sur Baidu Baike et sur les sources de référence équivalentes",
+  "Suivi des moteurs qui citent la marque et de la manière dont ils la qualifient",
 ];
 
 const wechatSurfaces = [
   {
     tag: "Compte officiel",
     cn: '公众号',
-    title: "La rédaction de votre marque à l'intérieur de WeChat",
-    body: "Compte service ou abonnement qui pousse des articles aux abonnés, tient le service client et héberge des pages de base. Garde la relation vivante entre deux achats.",
-    bullet: "Articles poussés, service client, pages de base",
+    title: "La rédaction de votre marque, hébergée dans WeChat",
+    body: "Compte service ou abonnement qui diffuse les articles auprès des abonnés, assure le service client et abrite quelques pages essentielles. Maintient la relation entre deux achats.",
+    bullet: "Articles diffusés, service client, pages essentielles",
   },
   {
     tag: "Mini-programme",
     cn: '小程序',
-    title: "Une application complète dans WeChat, à deux tapes de tout utilisateur",
-    body: "Catalogue, paiement, WeChat Pay, cartes de membre et systèmes de niveaux vivent ici. C'est là que se concluent réellement eCommerce, fidélité et adhésion.",
-    bullet: "eCommerce + fidélité + adhésion",
+    title: "Une application complète au cœur de WeChat, accessible en deux gestes",
+    body: "Catalogue, paiement par WeChat Pay, cartes de membre et systèmes de niveaux y trouvent leur place. C'est ici que se nouent véritablement eCommerce, fidélité et adhésion.",
+    bullet: "eCommerce, fidélité et adhésion réunis",
     highlight: true,
   },
 ];
@@ -46,24 +46,24 @@ const techPaths = [
   {
     name: "WordPress",
     sub: "Orienté contenu, édité en local",
-    when: "Quand votre équipe locale doit opérer le site elle-même. Campagnes, articles de blog, lancements produit, mises à jour fréquentes. Éditeur familier, stack éprouvée, votre responsable marketing à Shanghai publie un mardi sans appeler un développeur.",
+    when: "À retenir lorsque l'équipe locale doit conduire elle-même l'exploitation du site : campagnes, articles, lancements produit, mises à jour soutenues. Interface familière, socle technologique éprouvé. Votre responsable marketing à Shanghai publie un mardi sans solliciter de développeur.",
     bullets: [
       "Google Fonts remplacés par des CDN chinois équivalents",
-      "Plugins bloqués remplacés par des alternatives locales",
-      "CDN local câblé, ICP déposé, SEO Baidu configuré",
-      "Idéal pour les équipes qui veulent l'autonomie sur le contenu",
+      "Plugins bloqués substitués par des alternatives locales",
+      "CDN local raccordé, ICP déposé, paramétrage SEO Baidu finalisé",
+      "Pertinent pour les équipes qui revendiquent leur autonomie éditoriale",
     ],
     timeline: "6 à 10 semaines",
   },
   {
     name: "Astro",
-    sub: "Site de marque, ultra-rapide",
-    when: "Quand le site sert de vitrine marque et produit avec des mises à jour rares. Astro génère du HTML statique pur, ce qui veut dire un chargement sous la seconde même derrière le Firewall, un coût d'hébergement quasi nul et une surface d'attaque bien plus faible.",
+    sub: "Site de marque, performances soutenues",
+    when: "À privilégier lorsque le site tient lieu de vitrine de marque et de produit, sans rythme de mise à jour soutenu. Astro produit un HTML strictement statique : chargement sous la seconde y compris derrière le Firewall, coût d'hébergement quasi nul, surface d'attaque nettement réduite.",
     bullets: [
       "Chargement sous la seconde en Chine continentale",
-      "Pas de base de données, pas de PHP, empreinte serveur minimale",
-      "Rien de dynamique à exploiter, aucun plugin à patcher",
-      "Idéal pour les sites marketing menés par la marque, sans transaction",
+      "Aucune base de données, aucun PHP, empreinte serveur minimale",
+      "Aucun composant dynamique exploitable, aucun plugin à corriger",
+      "Pertinent pour les sites marketing portés par la marque, hors transaction",
     ],
     timeline: "4 à 8 semaines",
     highlight: true,
@@ -75,24 +75,24 @@ const hostingOptions = [
     where: "Chine continentale",
     note: "ICP requis",
     load: "< 1 seconde",
-    seo: "Très positif",
-    verdict: "La seule vraie option",
+    seo: "Très favorable",
+    verdict: "La seule option réellement défendable",
     status: 'go',
   },
   {
     where: "Hong Kong",
     note: "Sans ICP",
     load: "2 à 4 secondes",
-    seo: "Minimal",
+    seo: "Marginal",
     verdict: "Lent, pénalisé par Baidu",
     status: 'warn',
   },
   {
-    where: "États-Unis ou UE",
+    where: "États-Unis ou Union européenne",
     note: "Sans ICP",
-    load: "8 à 15 secondes et plus",
-    seo: "Nul",
-    verdict: "De facto cassé",
+    load: "8 à 15 secondes, parfois davantage",
+    seo: "Inexistant",
+    verdict: "Inopérant de facto",
     status: 'stop',
   },
 ];
@@ -100,75 +100,75 @@ const hostingOptions = [
 const deliverables = [
   {
     icon: 'design',
-    title: "Un design qui colle aux utilisateurs chinois",
-    desc: "Pages plus denses, navigation plus plate, QR codes partout, mobile-first parce que le mobile concentre 95 % du trafic. Nous bâtissons pour cette réalité, pas pour les habitudes web occidentales qui paraissent soignées à Stockholm et brisées à Shanghai.",
+    title: "Un design pensé pour le lecteur chinois",
+    desc: "Pages plus denses, arborescence ramassée, QR codes systématiques, primauté du mobile : 95 % du trafic y transite. Nous bâtissons pour cette réalité, et non pour les codes occidentaux du web, soignés à Stockholm et défaillants à Shanghai.",
   },
   {
     icon: 'code',
-    title: "Un code qui respecte le Grand Firewall",
-    desc: "Aucune Google Fonts, aucune CDN bloquée, aucune API Maps qui timeout, aucun embed YouTube. Tout remplacé par un équivalent local. Pas glamour, mais c'est la différence entre un site qui charge et un site qui ne charge pas.",
+    title: "Un code qui compose avec le Grand Firewall",
+    desc: "Aucune Google Fonts, aucune CDN bloquée, aucun appel à l'API Maps en délai d'attente, aucun embed YouTube. Chaque dépendance est remplacée par son équivalent local. Sans éclat apparent, mais c'est précisément ce qui sépare un site qui s'affiche d'un site qui se fige.",
   },
   {
     icon: 'server',
-    title: "Un hébergement qui tient debout",
-    desc: "99 % d'uptime et plus, avec une couverture de réponse sous deux heures 24/7. Nous patchons la stack, lançons des sauvegardes nocturnes et tenons le site conforme PIPL dès le premier jour. Le monitoring tourne depuis l'intérieur du Firewall, là où il attrape réellement ce qui casse.",
+    title: "Un hébergement à la stabilité éprouvée",
+    desc: "Disponibilité supérieure à 99 %, prise en charge des incidents sous deux heures, sept jours sur sept. Mise à jour de la pile technique, sauvegardes nocturnes, conformité PIPL assurée dès le premier jour. La supervision opère depuis l'intérieur du Firewall, là où les anomalies se manifestent réellement.",
   },
   {
     icon: 'phone',
-    title: "Des mini-programmes qui convertissent",
-    desc: "Bâtis sur la stack Tencent (WXML, WXSS, WeChat JS). Paiements natifs, intégration CRM, systèmes de niveaux, messages poussés. Dix ans de mini-programmes pour les marques qui utilisent WeChat comme canal de vente, pas comme une plaquette.",
+    title: "Des mini-programmes calibrés pour convertir",
+    desc: "Conçus sur la pile Tencent (WXML, WXSS, WeChat JS). Paiements natifs, intégration CRM, systèmes de niveaux, notifications poussées. Une décennie de mini-programmes pour des marques qui font de WeChat un canal de vente, jamais une simple plaquette.",
   },
   {
     icon: 'pen',
-    title: "Un copywriting dans la langue dont vous avez besoin",
-    desc: "Contenu chinois rédigé directement par notre équipe interne, jamais traduit de l'anglais. Versions française et anglaise produites lorsque la relecture siège, les decks investisseurs ou la cohérence globale les exigent.",
+    title: "Un copywriting dans la langue requise",
+    desc: "Contenu chinois rédigé directement par notre équipe interne, jamais traduit depuis l'anglais. Versions française et anglaise produites lorsque la communication corporate, les supports investisseurs ou la cohérence du groupe l'exigent.",
   },
 ];
 
 const faqs = [
   {
-    q: "Qu'est-ce que le GEO et pourquoi cela compte ?",
-    a: "Le GEO (Generative Engine Optimization) est le SEO de la recherche IA. Les utilisateurs chinois interrogent de plus en plus les assistants IA (Doubao, Kimi, DeepSeek, Qwen) au lieu de taper une requête. Ces modèles ont besoin de sites crédibles et indexés à citer. Pas de site hébergé en Chine, pas de visibilité.",
+    q: "Qu'entend-on par GEO, et pourquoi cette discipline pèse-t-elle ?",
+    a: "Le GEO, pour Generative Engine Optimization, désigne le référencement appliqué à la recherche par intelligence artificielle. Les internautes chinois interrogent de plus en plus les assistants IA (Doubao, Kimi, DeepSeek, Qwen) à la place d'une requête classique. Ces modèles ont besoin de sites crédibles, indexés, qu'ils puissent citer. Sans hébergement en Chine, pas de visibilité dans cette nouvelle couche de recherche.",
   },
   {
-    q: "WordPress ou Astro, lequel choisir ?",
-    a: "WordPress si votre équipe met à jour le contenu fréquemment et veut son autonomie. Astro si le site reste relativement figé entre deux lancements et que vous voulez vitesse, sécurité et coûts d'hébergement bas.",
+    q: "WordPress ou Astro, quel choix retenir ?",
+    a: "WordPress si l'équipe met à jour le site fréquemment et tient à son autonomie éditoriale. Astro si le site demeure relativement figé entre deux lancements et que les priorités portent sur la rapidité, la sécurité et la maîtrise du coût d'hébergement.",
   },
   {
-    q: "Combien coûte un site en Chine ?",
-    a: "Les budgets dépendent du périmètre, de l'échelle et des intégrations. Les petits sites de marque sur Astro démarrent plus bas. Les builds WordPress avec eCommerce ou intégration WeChat se situent plus haut. Nous cadrons chaque projet séparément.",
+    q: "Quel est le budget d'un site conçu pour la Chine ?",
+    a: "Les enveloppes dépendent du périmètre, de l'échelle et du nombre d'intégrations. Les sites de marque sur Astro se positionnent en bas de la fourchette. Les projets WordPress dotés de fonctionnalités eCommerce ou d'une intégration WeChat se situent plus haut. Chaque projet fait l'objet d'un cadrage spécifique.",
   },
   {
-    q: "Combien de temps prend l'ensemble ?",
-    a: "4 à 10 semaines pour le build, plus le dépôt ICP au-dessus. Bei'an : 2 à 4 semaines. Licence commerciale : 2 à 3 mois, parfois plus. Nous menons design et développement en parallèle des démarches ICP pour qu'aucun chantier ne reste en attente.",
+    q: "Quelle est la durée totale du projet ?",
+    a: "Quatre à dix semaines pour la conception et le développement, auxquelles s'ajoute le dépôt ICP. Bei'an : deux à quatre semaines. Licence commerciale : deux à trois mois, parfois davantage. Nous menons design et développement en parallèle des démarches ICP, afin de prévenir toute mise en attente.",
   },
   {
-    q: "Qui détient le code et l'ICP ?",
-    a: "Vous. Le code est à vous. L'ICP est enregistré au nom de votre entité chinoise (ou de l'entité partenaire que nous mettons en place avec vous). Aucun verrouillage.",
+    q: "À qui reviennent le code et l'ICP ?",
+    a: "À la marque, sans réserve. Le code lui appartient. L'ICP est enregistré au nom de son entité chinoise, ou de l'entité partenaire mise en place de concert. Aucun verrouillage opérationnel n'est appliqué.",
   },
   {
-    q: "Pouvez-vous migrer mon site existant ?",
-    a: "Oui. Nous auditons ce que vous avez, signalons ce qui casse en Chine, et migrons proprement ou reconstruisons les parties qui ne fonctionneront pas. Dans la plupart des cas, c'est plus rapide et moins cher que de repartir de zéro.",
+    q: "Pouvez-vous migrer un site existant ?",
+    a: "Oui. Nous procédons à l'audit du site en place, signalons les composants défaillants en Chine, puis migrons proprement ou reconstruisons les pans inopérants. Dans la majorité des cas, cette approche se révèle plus rapide et moins coûteuse qu'une refonte intégrale.",
   },
   {
-    q: "L'hébergement en Chine est-il vraiment obligatoire ?",
-    a: "Pour la vitesse, le ranking Baidu, les citations IA et la fiabilité, oui. Hong Kong fait office de passerelle. Servir depuis l'Europe ou les États-Unis, c'est une expérience cassée pour les utilisateurs chinois.",
+    q: "L'hébergement en Chine s'impose-t-il réellement ?",
+    a: "Pour la vitesse d'affichage, le référencement sur Baidu, la citation par les moteurs IA et la fiabilité, oui. Hong Kong fait figure de passerelle imparfaite. Servir un site depuis l'Europe ou les États-Unis revient à offrir une expérience défaillante aux utilisateurs chinois.",
   },
   {
     q: "Qu'est-ce qu'une licence ICP ?",
-    a: "Un dépôt obligatoire auprès du ministère chinois de l'Industrie et des Technologies de l'information. Deux types. Le Bei'an couvre les sites informationnels. La licence commerciale couvre l'eCommerce et les plateformes transactionnelles. Requise pour tout hébergement en Chine continentale.",
+    a: "Un dépôt obligatoire auprès du ministère chinois de l'Industrie et des Technologies de l'information. Deux régimes coexistent. Le Bei'an couvre les sites informationnels. La licence commerciale couvre l'eCommerce et les plateformes transactionnelles. Le dispositif est requis pour tout hébergement en Chine continentale.",
   },
   {
     q: "Un mini-programme WeChat peut-il remplacer un site ?",
-    a: "Pour l'eCommerce et la fidélité, souvent oui. Pour la découverte, le SEO et la crédibilité de marque, un site reste essentiel. La plupart des clients opèrent les deux.",
+    a: "Sur le terrain de l'eCommerce et de la fidélité, la réponse est souvent affirmative. Pour la découverte, le référencement naturel et la crédibilité de marque, le site demeure indispensable. La majorité des clients opèrent les deux dispositifs en parallèle.",
   },
   {
-    q: "Comment la PIPL affecte-t-elle mon site ?",
-    a: "La PIPL est l'équivalent chinois du RGPD. Votre site doit divulguer la collecte des données, obtenir le consentement explicite et stocker les données personnelles en sécurité. Nous intégrons la conformité PIPL dès le départ.",
+    q: "Comment la PIPL conditionne-t-elle le site ?",
+    a: "La PIPL constitue l'équivalent chinois du RGPD. Le site doit indiquer clairement la collecte des données, recueillir un consentement explicite et conserver les données personnelles dans des conditions de sécurité adéquates. La conformité PIPL est intégrée dès le cadrage du projet.",
   },
   {
     q: "En quoi consiste l'audit gratuit ?",
-    a: "Nous testons votre site actuel depuis l'intérieur de la Chine. Temps de chargement, ressources bloquées, visibilité Baidu, citations dans les moteurs IA. Vous recevez une synthèse écrite en retour. Sans engagement.",
+    a: "Le site existant est testé depuis l'intérieur de la Chine : temps de chargement, ressources bloquées, visibilité sur Baidu, citations dans les moteurs IA. Une synthèse écrite est transmise à l'issue de la lecture. Aucun engagement n'est attendu en retour.",
   },
 ];
 
@@ -202,19 +202,19 @@ const icons: Record<string, string> = {
           <a href="/fr/#services">Se développer en Chine</a>
         </nav>
         <span class="eyebrow eyebrow--on-dark">Sites web en Chine</span>
-        <h1 class="web-hero__title">Des sites qui chargent, se classent et vendent réellement en Chine.</h1>
+        <h1 class="web-hero__title">Des sites qui s'affichent, se classent et vendent véritablement en Chine.</h1>
         <p class="web-hero__lead">
-          Nous concevons, développons et hébergeons des sites et mini-programmes WeChat pour le marché chinois.
-          Chargement sous la seconde. Conformes ICP. Prêts pour Baidu. Visibles dans les moteurs IA que les
-          consommateurs chinois utilisent désormais pour découvrir les marques.
+          Nous concevons, développons et hébergeons des sites et des mini-programmes WeChat à destination du
+          marché chinois. Chargement sous la seconde, conformité ICP, indexation Baidu, présence dans les
+          moteurs IA que les consommateurs chinois mobilisent désormais pour découvrir les marques.
         </p>
         <p class="web-hero__support">
-          Plus de vingt ans en Chine. Bureaux à Shanghai, Hong Kong et Paris. Des équipes qui ont bâti pour
-          des marques mondiales comme pour des challengers chinois.
+          Plus de vingt années d'ancrage en Chine. Bureaux à Shanghai, Hong Kong et Paris. Une équipe qui a
+          conçu pour des groupes internationaux comme pour des challengers locaux.
         </p>
         <div class="web-hero__actions">
-          <a href="/fr/nous-contacter" class="btn btn--primary">Audit gratuit de votre site Chine</a>
-          <a href="/fr/nos-realisations" class="btn btn--ghost-light">Voir nos réalisations</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary">Audit gratuit de votre site en Chine</a>
+          <a href="/fr/nos-realisations" class="btn btn--ghost-light">Consulter nos réalisations</a>
         </div>
       </div>
     </section>

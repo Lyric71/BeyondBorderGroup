@@ -4,20 +4,20 @@ import Layout from '../../../layouts/Layout.astro';
 const whereYouAre = [
   {
     kicker: "Lancement",
-    title: "Vous lancez en Chine",
-    body: "Aucun compte, aucune donnée, aucun historique. Il vous faut quelqu'un pour bâtir l'ensemble et le mettre en route, sans brûler les trois premiers mois à comprendre quelle plateforme fait quoi.",
+    title: "Premier déploiement en Chine",
+    body: "Ni compte, ni données, ni historique. Tout l'édifice reste à bâtir, à raccorder, à mettre en route, sans perdre un trimestre à départager les plateformes une par une.",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4c4 0 6 2 6 6-4 0-6 2-6 6-4 0-6-2-6-6 4 0 6-2 6-6z"/><circle cx="14" cy="10" r="1.5"/><path d="M8 16l-3 3M11 19l-2 2M5 13l-2 2"/></svg>`,
   },
   {
     kicker: "Sous-performance",
-    title: "Vous dépensez déjà, et cela ne fonctionne pas",
-    body: "Des campagnes tournent, peut-être via une autre agence, et les chiffres ne tiennent pas. Il vous faut une équipe pour démonter l'ensemble et le reconstruire correctement.",
+    title: "Une dépense engagée, des résultats qui ne suivent pas",
+    body: "Les campagnes tournent. Confiées à une autre agence ou tenues en interne, peu importe. Les chiffres, eux, ne convergent pas. Reste à démonter l'existant, à reprendre pièce par pièce et à rebâtir sur des bases qui tiennent dans la durée.",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>`,
   },
   {
     kicker: "Passage à l'échelle",
-    title: "Vous passez à l'échelle",
-    body: "Les fondamentaux fonctionnent. Maintenant vous voulez pousser : nouvelles plateformes, budgets plus larges, livestream, média eCommerce. Il vous faut des mains seniors, pas trois juniors de plus.",
+    title: "Le moment d'élargir l'opération",
+    body: "Les fondamentaux tiennent. Il s'agit désormais d'élargir le dispositif : nouvelles plateformes, budgets renforcés, livestream, médias eCommerce. À ce stade, le besoin porte sur des profils expérimentés, pas sur une couche supplémentaire de juniors.",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg>`,
   },
 ];
@@ -26,32 +26,32 @@ const brandReach = [
   {
     icon: 'wechat',
     title: "WeChat Ads",
-    body: "Moments ads, bannières Comptes officiels, placements Mini Program, Search ads. Quand vous disposez de données CRM, nous construisons le ciblage autour. À défaut, nous travaillons en lookalike. Le créatif est produit en interne, en chinois, par des plumes qui écrivent pour des lecteurs chinois.",
+    body: "Moments ads, bannières au sein des Comptes officiels, placements Mini Program, Search ads. Quand un CRM existe, il sert d'ossature au ciblage. À défaut, l'audience se construit en lookalike. Le créatif sort de notre studio, directement en chinois, sous la plume de rédacteurs qui écrivent pour un lectorat local.",
   },
   {
     icon: 'video',
     title: "Douyin Ads",
-    body: "Vidéo in-feed, TopView, Brand Challenges, Search ads, et toute la boîte à outils Qianchuan pour le live commerce. Nous testons le créatif chaque semaine. Nous coupons ce qui échoue et plaçons l'argent derrière ce qui fonctionne. La plupart des clients voient leur CPM se stabiliser dès le premier mois.",
+    body: "Vidéo in-feed, TopView, Brand Challenges, Search ads, et la suite Qianchuan dans son intégralité pour le live commerce. Test créatif chaque semaine. Les variantes qui s'essoufflent quittent le dispositif, celles qui tiennent captent le budget. Pour la plupart des annonceurs, le CPM se stabilise dès le premier mois d'exploitation.",
   },
   {
     icon: 'heart',
     title: "Ads RED (Xiaohongshu)",
-    body: "Feed ads, search ads, seeding KOC, amplification KOL. RED récompense les contenus qui se lisent comme la prose d'une vraie personne. Nous produisons ces contenus. Les publications qui sentent la pub se font enterrer.",
+    body: "Feed ads, search ads, seeding KOC, amplification KOL. La plateforme récompense les contenus qui ressemblent au témoignage d'une utilisatrice ordinaire. Nous produisons exactement ce registre. Toute publication trop ouvertement publicitaire se voit reléguée par l'algorithme, sans appel.",
   },
   {
     icon: 'search',
     title: "SEM Baidu",
-    body: "Search ads, Baidu Brand Zone, réseau display, SEO. Baidu pèse encore pour les recherches à forte intention, en particulier en B2B, automobile, finance, éducation et luxe.",
+    body: "Search ads, Baidu Brand Zone, réseau display, référencement naturel. Baidu garde la main sur les requêtes à forte intention d'achat, tout particulièrement en B2B, dans l'automobile, la finance, l'éducation et le luxe.",
   },
   {
     icon: 'film',
     title: "Bilibili et Kuaishou",
-    body: "Audiences plus jeunes, villes plus petites, gaming, animation, lifestyle. Nous y allons quand cela colle à la marque. Nous ne meublons pas un plan avec des canaux dont vous n'avez pas besoin.",
+    body: "Audiences plus jeunes, villes de second et troisième rangs, gaming, animation, art de vivre. Ces plateformes entrent au plan dès lors qu'elles épousent le positionnement de la marque. Aucune ligne n'est inscrite pour la seule beauté du tableau.",
   },
   {
     icon: 'target',
     title: "Programmatique et display",
-    body: "Tencent Ads, ByteDance Ads, Alibaba UniDesk. Retargeting cross-plateformes, modèles lookalike, et capping de fréquence qui respecte l'attention de l'utilisateur.",
+    body: "Tencent Ads, ByteDance Ads, Alibaba UniDesk. Reciblage interplateformes, modèles lookalike, capping de fréquence calibré pour ne pas saturer l'internaute.",
   },
 ];
 
@@ -59,41 +59,41 @@ const ecommerceMedia = [
   {
     icon: 'store',
     title: "Tmall Ads",
-    body: "Zhitongche, le « train direct », pour les annonces produit basées sur mots-clés. Wanxiangtai, « Super Express », pour le bidding piloté par IA sur le réseau Alimama. Diamond Booth pour les bannières à fort trafic. Nous planifions la dépense contre des objectifs de ventes et de retour, pas contre des impressions. Cela couvre l'entretien quotidien, la montée en pré-vente et le grand pic des festivals : 618 en juin, Double 11 en novembre, Nouvel An chinois.",
+    body: "Zhitongche, le « train direct », pour les annonces produit indexées sur mots-clés. Wanxiangtai, le « super-express », remet l'enchère à l'algorithme sur l'ensemble du réseau Alimama. Diamond Booth verrouille les bannières premium aux fortes audiences. La dépense s'aligne sur des objectifs de ventes et de retour sur investissement, jamais sur le seul volume d'impressions. Le dispositif couvre l'entretien quotidien, la montée en charge avant les pré-ventes et les pics des grandes échéances commerciales : 618 en juin, Double 11 en novembre, Nouvel An chinois en début d'année.",
   },
   {
     icon: 'cart',
     title: "JD Ads",
-    body: "JD Express, ou Kuaiche, pour les annonces produit orientées recherche. Haitou, « lancer en mer », pour les placements optimisés par IA dans les flux JD. JD Zhanwai pour le retargeting hors plateforme. Les acheteurs JD se comportent autrement que ceux de Tmall, plus décisifs, plus fidèles à leurs marques, et orientés électronique et maison. Nous enchérissons pour cela, jamais contre un modèle générique.",
+    body: "JD Express, ou Kuaiche, pour les annonces produit calibrées sur la recherche. Haitou, « lancer en mer », pour les placements pilotés par l'algorithme au cœur des flux JD. JD Zhanwai prend en charge le reciblage hors plateforme. Le profil de l'acheteur JD diffère sensiblement de celui de Tmall : décision plus rapide, fidélité de marque affirmée, appétence pour l'électronique et l'équipement de la maison. Nos enchères s'alignent sur ce profil, jamais sur un modèle générique.",
   },
   {
     icon: 'live',
     title: "Ads Douyin eCommerce",
-    body: "Qianchuan est le moteur. Il pousse du trafic payant vers les vidéos produit, les lives et les pages boutique. Nous l'opérons pour les clients dont les marges et la cadence de contenu suivent : booster les lives aux heures de pointe, mettre du budget derrière les vidéos qui marchent déjà, construire des campagnes qui mènent le spectateur de l'intérêt au paiement.",
+    body: "Qianchuan tient lieu de moteur. L'outil pousse du trafic payant vers les vidéos produit, les sessions de live et les pages boutique. Notre exploitation s'adresse aux marques dont les marges et la cadence éditoriale soutiennent l'effort : amplification des lives aux heures de plus forte audience, budget adossé aux vidéos déjà performantes, parcours conçu pour conduire le spectateur de la découverte au paiement.",
   },
   {
     icon: 'note',
     title: "Ads RED eCommerce",
-    body: "Juguang amplifie les notes et lives liés à un produit. Le volet commerce de RED est plus jeune que celui de Douyin, mais il croît vite : skincare, mode, parfum de niche, maison. L'amplification payante d'un contenu KOC déjà semé l'emporte en général sur une annonce de marque pure et simple.",
+    body: "Juguang amplifie les notes et les sessions de live attachées à un produit. La branche commerce de Xiaohongshu reste plus récente que celle de Douyin, sa progression n'en est pas moins rapide : soins, mode, parfumerie de niche, art de vivre. Une amplification payante adossée à un contenu KOC déjà semé l'emporte presque toujours sur l'annonce de marque frontale.",
   },
 ];
 
 const whyStay = [
   {
-    title: "Une équipe, du début à la fin",
-    body: "La personne qui rédige votre plan média est celle qui achète vos espaces. Votre stratège senior ne s'évapore pas après le kickoff pour vous laisser avec quelqu'un que vous n'avez jamais rencontré.",
+    title: "Une seule équipe, du diagnostic à la diffusion",
+    body: "Qui rédige le plan média achète l'espace. Le stratège senior présent au lancement reste votre interlocuteur jusqu'à la revue mensuelle. Aucun relais imposé en cours de route, aucun visage inconnu à mi-parcours.",
   },
   {
-    title: "Média et boutique, opérés ensemble",
-    body: "La plupart des agences scindent achat média et opérations boutique entre deux équipes. Parfois entre deux sociétés. C'est précisément dans cet écart que fuit le retour sur investissement. Nous gardons les deux sous le même toit, pour que trafic, conversion et travail sur les fiches produit avancent ensemble.",
+    title: "Média et opérations boutique, sous le même toit",
+    body: "La plupart des agences répartissent l'achat média et la gestion de boutique entre deux équipes distinctes. Parfois entre deux sociétés. C'est précisément dans cet interstice que le retour sur investissement se dissipe. Chez nous, les deux périmètres avancent de concert, pour que trafic, conversion et fiches produit progressent au même rythme.",
   },
   {
-    title: "Tout vous appartient",
-    body: "Les comptes, les données, les pixels, les audiences. Tout à votre nom, tout vous reste. Vous partez quand vous voulez, vous emportez l'ensemble.",
+    title: "Vos actifs vous restent acquis",
+    body: "Comptes, données, pixels, audiences. Tout ouvert au nom de la marque, tout conservé par elle. Le jour d'une séparation, le dossier suit. Sans contentieux, sans négociation de sortie.",
   },
   {
-    title: "Conformité intégrée, jamais ajoutée",
-    body: "Nous cadrons le volet juridique avant toute mise en ligne. En Chine, l'alternative tient en trois mots : annonces refusées, comptes suspendus, amendes. Nous en avons assez nettoyé pour prendre le sujet au sérieux.",
+    title: "Conformité au cœur du plan, jamais en aval",
+    body: "Le cadre juridique se traite avant la mise en ligne, pas après. La sanction chinoise est connue : refus de diffusion, suspension de compte, amende. Nous avons relevé assez de dossiers de redressement pour ne jamais prendre la question à la légère.",
   },
 ];
 
@@ -104,17 +104,17 @@ const weeks = [
     tabId: 'week-1',
     pill: "Semaine 1",
     title: "Audit et KPI",
-    desc: "Nous passons en revue votre dispositif actuel, vos actifs, vos données. Nous posons des KPI qui veulent vraiment dire quelque chose plutôt que ceux qui font joli en rapport.",
-    outcome: "Une base saine. Vous savez précisément ce qui fonctionne aujourd'hui, où le budget fuit, et ce que nous allons corriger en priorité.",
+    desc: "Examen complet du dispositif en place, des actifs disponibles et des données accumulées. Mise en place d'indicateurs réellement signifiants, à la place des chiffres décoratifs glissés dans un rapport.",
+    outcome: "Une base d'analyse solide. La marque sait précisément ce qui produit du résultat, les zones où le budget s'évapore et les chantiers à ouvrir en priorité.",
     image: '/Images/grow-in-china/media/process-week1-audit.png',
-    imageAlt: "Deux personnes devant un ordinateur portable examinent un compte publicitaire existant, l'une pointe l'écran, des impressions annotées en chinois sont posées sur le bureau",
+    imageAlt: "Deux collaborateurs devant un ordinateur portable examinent un compte publicitaire existant, l'un désigne l'écran, des impressions annotées en chinois sont posées sur le bureau",
     does: [
-      "Audit des comptes sur chaque plateforme que vous opérez",
-      "Revue créative, ciblage et bidding",
-      "Définition des KPI alignés sur le chiffre d'affaires, pas sur des métriques de vanité",
-      "Contrôle de santé du tracking et de l'attribution",
+      "Audit des comptes sur l'ensemble des plateformes en exploitation",
+      "Revue du créatif, du ciblage et des stratégies d'enchères",
+      "Définition d'indicateurs adossés au chiffre d'affaires, hors métriques de complaisance",
+      "Diagnostic du tracking et de la chaîne d'attribution",
     ],
-    deliverables: ["Rapport d'audit avec corrections priorisées", "Cadre KPI validé par écrit"],
+    deliverables: ["Rapport d'audit assorti d'un plan de correctifs hiérarchisés", "Cadre d'indicateurs validé par écrit"],
   },
   {
     name: "Semaine 2",
@@ -122,17 +122,17 @@ const weeks = [
     tabId: 'week-2',
     pill: "Semaine 2",
     title: "Construire le plan",
-    desc: "Nous bâtissons le plan : mix de plateformes, ventilation du budget, brief créatif et méthode de mesure.",
-    outcome: "Un plan média que vous pouvez réellement défendre en interne, avec le raisonnement derrière chaque ligne.",
+    desc: "Construction du plan, du sommet jusqu'aux détails d'exécution : mix de plateformes, ventilation budgétaire, brief créatif, protocole de mesure.",
+    outcome: "Un plan média défendable en comité, étayé par le raisonnement qui sous-tend chaque ligne du tableau.",
     image: '/Images/grow-in-china/media/process-week2-plan.png',
-    imageAlt: "Un plan média annoté sur papier ou sur tableau blanc, noms de plateformes chinoises visibles en écriture manuscrite",
+    imageAlt: "Un plan média annoté à la main sur papier et tableau blanc, plusieurs noms de plateformes chinoises lisibles en écriture manuscrite",
     does: [
-      "Mix de plateformes et ventilation du budget par phase",
-      "Brief créatif par plateforme",
-      "Plan de tests, plan de mesure, cadence de reporting",
-      "Pré-contrôle de conformité sur chaque allégation et chaque accroche",
+      "Mix de plateformes et ventilation budgétaire par phase d'exécution",
+      "Brief créatif décliné plateforme par plateforme",
+      "Plan d'expérimentations, protocole de mesure, calendrier de reporting",
+      "Précontrôle de conformité sur chaque allégation et chaque accroche",
     ],
-    deliverables: ["Deck du plan média", "Brief créatif et calendrier de production"],
+    deliverables: ["Document de présentation du plan média", "Brief créatif et calendrier de production"],
   },
   {
     name: "Semaine 3",
@@ -140,17 +140,17 @@ const weeks = [
     tabId: 'week-3',
     pill: "Semaine 3",
     title: "Mise en ligne",
-    desc: "Nous mettons en ligne. Créatifs produits, comptes paramétrés, tracking en place.",
-    outcome: "Des campagnes qui tournent sur les plateformes qui comptent, avec un tracking qui prouve déjà qu'elles fonctionnent.",
+    desc: "Mise en ligne du dispositif. Créatifs livrés, comptes paramétrés, tracking activé.",
+    outcome: "Des campagnes en diffusion sur les plateformes décisives, adossées à un tracking qui démontre leur efficacité dès les premières heures.",
     image: '/Images/grow-in-china/media/process-week3-golive.png',
-    imageAlt: "Un acheteur paramètre une campagne sur une plateforme publicitaire chinoise, lueur d'écran, soirée, concentré",
+    imageAlt: "Un acheteur média paramètre une campagne sur une plateforme publicitaire chinoise, lueur d'écran, fin de journée, concentration soutenue",
     does: [
-      "Créatifs produits et adaptés aux specs de plateforme",
-      "Comptes publicitaires ouverts à votre nom",
-      "Pixels de tracking, UTM et conversions plateforme activés",
-      "Bidding au premier jour, lissage du budget et capping de fréquence",
+      "Créatifs produits et calibrés aux spécifications de chaque plateforme",
+      "Comptes publicitaires ouverts au nom de la marque",
+      "Activation des pixels, des paramètres UTM et des conversions plateforme",
+      "Stratégie d'enchères dès le premier jour, lissage budgétaire, capping de fréquence",
     ],
-    deliverables: ["Campagnes en ligne sur les plateformes du plan", "Confirmation du tracking et rapport de pacing"],
+    deliverables: ["Campagnes en diffusion sur les plateformes prévues au plan", "Validation du tracking et premier rapport de pacing"],
   },
   {
     name: "Semaine 4 et au-delà",
@@ -158,32 +158,32 @@ const weeks = [
     tabId: 'week-4',
     pill: "En continu",
     title: "Optimiser et rendre compte",
-    desc: "Nous optimisons chaque semaine et rendons compte chaque mois. Quand la donnée dit qu'il faut changer le plan, nous le changeons. Nous ne campons pas sur un dispositif sous prétexte qu'il s'agit de ce que nous avions vendu.",
-    outcome: "Une opération média qui gagne en précision chaque mois, avec les chiffres pour le prouver.",
+    desc: "Optimisation hebdomadaire, reporting mensuel. Lorsque la donnée commande un virage, le virage intervient sans délai. Aucune fidélité de principe à un dispositif au prétexte qu'il s'agit de celui présenté à la signature.",
+    outcome: "Une opération média qui s'affine de mois en mois, données à l'appui.",
     image: '/Images/grow-in-china/media/process-week4-optimize.png',
-    imageAlt: "Revue hebdomadaire : deux collègues devant un moniteur de courbes de performance, en plein échange, l'un un café en main",
+    imageAlt: "Revue hebdomadaire devant un moniteur affichant des courbes de performance, deux collaborateurs échangent, l'un tient un café à la main",
     does: [
       "Optimisation hebdomadaire des enchères, du budget et du créatif",
-      "Revue mensuelle avec le stratège senior et l'acheteur",
-      "Planification des montées festival et debrief post-festival",
-      "Rafraîchissement créatif trimestriel et reconstruction des audiences",
+      "Revue mensuelle conduite avec le stratège senior et l'acheteur média",
+      "Préparation des montées en charge festivalières et bilan post-événement",
+      "Rafraîchissement créatif trimestriel et reconstruction des segments d'audience",
     ],
-    deliverables: ["Tableau de bord en direct, mêmes chiffres que les nôtres", "Rapport mensuel et revue d'activité trimestrielle"],
+    deliverables: ["Tableau de bord en temps réel partageant nos propres données", "Rapport mensuel et revue d'activité trimestrielle"],
   },
 ];
 
 const compliance = [
   {
     title: "L'interdiction du superlatif",
-    body: "La Loi sur la publicité chinoise interdit les allégations absolues. Pas de « meilleur », pas de « numéro un », pas de « plus haut grade ». Les amendes se chiffrent en centaines de milliers de RMB, et la véracité éventuelle de l'allégation n'entre pas en ligne de compte.",
+    body: "La loi chinoise sur la publicité prohibe les allégations absolues. Aucun « meilleur », aucun « numéro un », aucune « plus haute distinction ». Les amendes se chiffrent en centaines de milliers de yuans, et la véracité éventuelle de l'allégation n'a aucune valeur exonératoire.",
   },
   {
     title: "Les règles livestream de 2026",
-    body: "Nouveauté de l'année : enregistrements conservés trois ans, pas de superlatifs de prix sans preuve à l'appui, et responsabilité partagée pour toute agence qui touche à de l'engagement fictif.",
+    body: "Trois nouveautés majeures cette année. Les enregistrements doivent être conservés trois années pleines. Les superlatifs tarifaires exigent désormais une preuve documentée à l'appui. La responsabilité juridique se partage entre créateurs et agences dès lors qu'un montage d'engagement fictif entre en jeu.",
   },
   {
     title: "Données et PIPL",
-    body: "Sortir des données clients chinoises hors du pays constitue un transfert encadré, jamais un réglage par défaut. Cela cadre ce que vous pouvez tracker et où ces données ont le droit de résider.",
+    body: "L'exportation de données clients hors du territoire chinois relève d'un régime de transfert encadré, en aucun cas d'un paramétrage automatique. Ce cadre conditionne la nature même du tracking et la juridiction d'hébergement des données collectées.",
   },
 ];
 
@@ -191,127 +191,127 @@ const faqs = [
   {
     cat: "Opérations",
     q: "Qui détient les comptes publicitaires et les données ?",
-    a: "Vous. Nous ouvrons les comptes Tmall, Douyin, Baidu et WeChat au nom de votre marque partout où la plateforme l'autorise. Pixels, audiences, historique de campagnes, données de performance : tout vous appartient. Vous arrêtez la collaboration et vous emportez l'ensemble, sans drame à la sortie. Nous abordons le sujet en premier, parce que c'est en général la première question d'un client qui s'est déjà fait avoir.",
+    a: "La marque, sans réserve. Les comptes Tmall, Douyin, Baidu et WeChat sont ouverts au nom du client partout où la plateforme l'autorise. Pixels, audiences, historique de campagnes, données de performance : tout revient à la marque. Le jour d'une séparation, le dossier suit. Sans contentieux, sans rétention. Si ce point ouvre la conversation, c'est qu'il revient en premier chez tout client échaudé par une expérience antérieure.",
   },
   {
     cat: "Coût",
     q: "Quel est le budget minimum pour faire de la publicité en Chine ?",
-    a: "Réalistement, environ 100 000 RMB par mois, autour de 14 000 dollars, pour opérer une plateforme correctement avec du créatif et de l'optimisation derrière. Vous pouvez dépenser moins. Vous n'en apprendrez simplement pas grand-chose. Pour un lancement multi-plateformes, comptez entre 500 000 et 2 millions de RMB sur les trois premiers mois. Ces fourchettes restent indicatives. Votre catégorie les déplace, parfois beaucoup.",
+    a: "Concrètement, l'ordre de grandeur s'établit autour de 100 000 yuans mensuels, soit environ 14 000 dollars, pour exploiter une plateforme avec un créatif et une optimisation à la hauteur. Une enveloppe inférieure reste possible, sans grand enseignement à la clé. Pour un lancement multiplateforme, l'investissement se situe entre 500 000 et 2 millions de yuans sur le premier trimestre. Ces fourchettes demeurent indicatives. La catégorie de produit les déplace, parfois sensiblement.",
   },
   {
     cat: "Coût",
     q: "Combien coûte la publicité sur WeChat ?",
-    a: "Les Moments ads démarrent autour de 50 à 120 RMB de CPM, soit 7 à 16 dollars, et un ciblage plus serré pousse ce chiffre. Le ticket d'entrée pour Moments tourne en général autour de 50 000 RMB. Les annonces dans les articles des Comptes officiels et les bannières Mini Program partent plus bas, à partir d'environ 15 000 RMB. Secteur, ciblage, qualité du créatif : ces variables tirent le chiffre.",
+    a: "Les Moments ads s'établissent entre 50 et 120 yuans de CPM, soit 7 à 16 dollars. Un ciblage resserré renchérit la facture. Le ticket d'entrée pour Moments avoisine 50 000 yuans. Les emplacements dans les articles des Comptes officiels et les bannières Mini Program démarrent plus bas, à partir d'environ 15 000 yuans. Le secteur, la finesse du ciblage et la qualité du créatif tirent ces chiffres vers le haut.",
   },
   {
     cat: "Coût",
     q: "Combien coûte la publicité sur Douyin ?",
-    a: "Le CPM de la vidéo in-feed tourne entre 30 et 60 RMB, environ 4 à 8 dollars. Le minimum technique est de 50 RMB par jour par groupe d'annonces, mais ce n'est pas une vraie campagne. Comptez au moins 10 000 RMB pour que le système ait de quoi optimiser. TopView et Brand Challenges relèvent d'un autre monde, en centaines de milliers de RMB.",
+    a: "Le CPM de la vidéo in-feed oscille entre 30 et 60 yuans, soit 4 à 8 dollars. Le minimum technique s'élève à 50 yuans par jour et par groupe d'annonces, un montant qui n'autorise aucune campagne digne de ce nom. Une enveloppe d'au moins 10 000 yuans s'impose pour que l'algorithme dispose de la matière nécessaire à son optimisation. TopView et Brand Challenges relèvent d'un tout autre ordre de grandeur, en centaines de milliers de yuans.",
   },
   {
     cat: "Coût",
     q: "Combien coûte la publicité sur RED (Xiaohongshu) ?",
-    a: "Le CPM des feed ads démarre entre 40 et 100 RMB, environ 6 à 14 dollars. Les search ads se facturent au clic, en général entre 1 et 5 RMB. Le seeding KOC démarre autour de 300 à 1 500 RMB par publication. Les campagnes KOL couvrent un large spectre : autour de 5 000 RMB pour un petit créateur, plusieurs centaines de milliers pour un nom de premier rang.",
+    a: "Le CPM des feed ads démarre entre 40 et 100 yuans, soit 6 à 14 dollars. Les search ads se facturent au clic, généralement entre 1 et 5 yuans. Le seeding KOC débute autour de 300 à 1 500 yuans par publication. Les campagnes KOL couvrent un spectre étendu : environ 5 000 yuans pour un créateur émergent, plusieurs centaines de milliers pour un nom de premier plan.",
   },
   {
     cat: "Coût",
     q: "Combien coûte le SEM Baidu ?",
-    a: "Tout dépend du mot-clé. Un terme générique se négocie entre 1 et 3 RMB le clic. Un mot concurrentiel en assurance, éducation ou santé peut grimper entre 30 et 100 RMB. Le Baidu Brand Zone, ce résultat de marque premium, démarre autour de 200 000 RMB par an pour la plupart des catégories.",
+    a: "Tout dépend du mot-clé considéré. Un terme générique se traite entre 1 et 3 yuans par clic. Un mot concurrentiel dans l'assurance, l'éducation ou la santé peut atteindre 30 à 100 yuans. Le Baidu Brand Zone, emplacement de marque premium qui surplombe les résultats, débute autour de 200 000 yuans annuels pour l'essentiel des catégories.",
   },
   {
     cat: "Coût",
     q: "Comment vos honoraires se structurent-ils ?",
-    a: "Frais projet pour le setup, retainers mensuels pour le pilotage en continu, et budget média refacturé au coût réel. Aucune marge cachée sur le média. Nous vous montrons les factures plateformes à la demande. Retainer mensuel plancher : 5 000 dollars.",
+    a: "Trois lignes distinctes. Un forfait projet couvre la mise en place. Un honoraire mensuel rémunère le pilotage en continu. Le budget média est refacturé au coût réel des plateformes, sans marge dissimulée. Les justificatifs restent communicables sur demande. Honoraire mensuel plancher : 5 000 dollars.",
   },
   {
     cat: "Plateformes",
     q: "Par quelle plateforme faut-il commencer ?",
-    a: "Cela dépend du produit et de l'acheteur. Skincare et mode démarrent en général sur RED. La grande consommation et les achats à décision rapide partent sur Douyin. Le B2B, la finance et tout achat à forte considération mènent par WeChat et Baidu. Nous choisissons en fonction du lieu où votre acheteur décide réellement, pas du lieu où l'achat est le plus simple pour nous.",
+    a: "Le choix dépend du produit et du profil d'acheteur. Les soins et la mode trouvent généralement leur point d'entrée sur Xiaohongshu. La grande consommation et les achats d'impulsion se positionnent sur Douyin. Le B2B, la finance et l'ensemble des achats à forte délibération passent par WeChat et Baidu. Notre arbitrage suit la décision d'achat là où elle se prend réellement, jamais la facilité d'exploitation.",
   },
   {
     cat: "Setup",
     q: "Peut-on diffuser des annonces en Chine sans entité enregistrée localement ?",
-    a: "Oui, via des comptes publicitaires cross-border. Douyin, WeChat, RED et Baidu acceptent tous les annonceurs étrangers. Comptez des vérifications supplémentaires et des tarifs légèrement plus élevés. Le setup prend deux à quatre semaines et exige des documents juridiques, une lettre d'autorisation de marque, et les certifications propres à votre catégorie.",
+    a: "Oui, par l'intermédiaire de comptes publicitaires transfrontaliers. Douyin, WeChat, Xiaohongshu et Baidu acceptent les annonceurs étrangers. Des vérifications additionnelles et une tarification légèrement majorée sont à prévoir. La mise en place dure deux à quatre semaines et exige plusieurs pièces juridiques, une lettre d'autorisation de marque ainsi que les certifications propres à la catégorie.",
   },
   {
     cat: "Setup",
     q: "Combien de temps prend l'ouverture des comptes ?",
-    a: "WeChat : deux à trois semaines. Douyin : une à deux semaines pour les catégories standard, quatre à six pour les catégories régulées comme la cosmétique, l'alimentaire ou la santé. RED : deux à quatre semaines. Baidu : une à deux semaines. Les catégories régulées prennent toujours plus de temps à cause des pré-validations. Il n'y a aucun moyen d'accélérer cette étape, et vous ne le souhaiteriez pas.",
+    a: "WeChat : deux à trois semaines. Douyin : une à deux semaines pour les catégories courantes, quatre à six semaines pour les catégories réglementées comme la cosmétique, l'alimentaire ou la santé. Xiaohongshu : deux à quatre semaines. Baidu : une à deux semaines. Les catégories réglementées s'étendent toujours davantage en raison des précontrôles imposés par les plateformes. Aucun raccourci n'existe à cette étape, et il serait imprudent d'en chercher.",
   },
   {
     cat: "Setup",
     q: "Faut-il une landing page en chinois ?",
-    a: "Presque toujours, oui. Diriger du trafic payant vers un site en anglais tue le taux de conversion. La page doit se charger depuis la Chine, en chinois, avec les options de paiement chinoises là où elles s'appliquent. Nous les construisons, ou nous adaptons ce que vous avez.",
+    a: "Dans la quasi-totalité des cas, oui. Adresser du trafic payant vers un site anglophone effondre le taux de conversion. La page doit s'afficher depuis la Chine continentale, en chinois, et intégrer les moyens de paiement locaux dès lors qu'ils s'appliquent. Notre studio la construit, ou adapte la version existante.",
   },
   {
     cat: "Setup",
     q: "À quelle vitesse peut-on être en ligne ?",
-    a: "Catégorie standard, créatif simple, une plateforme : environ trois semaines entre la signature et la mise en ligne. Catégorie régulée, plusieurs plateformes, production créative complète : six à dix semaines. Nous ne sautons pas l'étape conformité. C'est précisément ce raccourci qui fait suspendre des comptes.",
+    a: "Catégorie courante, créatif épuré, plateforme unique : environ trois semaines entre la signature et la diffusion. Catégorie réglementée, dispositif multiplateforme, production créative complète : six à dix semaines. L'étape de conformité n'est jamais escamotée. C'est précisément cette économie de procédure qui mène aux suspensions de comptes.",
   },
   {
     cat: "Opérations",
     q: "Comment mesurez-vous la performance ?",
-    a: "Les KPI digitaux classiques s'appliquent : CPM, CPC, CTR, coût par acquisition, retour sur investissement publicitaire. Par-dessus, nous suivons les signaux propres à la Chine qui en disent plus. Coût de conversion d'un follower WeChat. Taux d'entrée en live room Douyin. Ratio sauvegarde-sur-impression RED. Lift de la recherche de marque sur Baidu. Nous arrêtons les KPI dès le départ, puis rendons compte chaque mois.",
+    a: "Les indicateurs digitaux classiques s'appliquent : CPM, CPC, CTR, coût par acquisition, retour sur investissement publicitaire. À ce socle s'ajoutent les signaux propres au marché chinois, souvent plus parlants. Coût de conversion d'un abonné WeChat. Taux d'entrée en live room sur Douyin. Ratio de sauvegardes par impression sur Xiaohongshu. Progression de la recherche de marque sur Baidu. Les indicateurs sont arrêtés dès le démarrage, puis suivis mois après mois en reporting.",
   },
   {
     cat: "Opérations",
     q: "Comment fonctionne l'attribution entre plateformes chinoises ?",
-    a: "Très mal, en réalité, pas comme on en a l'habitude. Ce sont des jardins clos. Chaque plateforme reporte ses propres conversions, et l'attribution cross-plateformes reste sincèrement difficile. Nous utilisons les pixels natifs, les UTM là où ils tiennent, et les enquêtes post-achat pour les catégories à forte valeur. Mieux vaut le dire honnêtement que vendre un tableau de bord qui prétend avoir résolu la question.",
+    a: "De façon imparfaite, à dire vrai, sans commune mesure avec ce que l'on connaît à l'Ouest. L'écosystème chinois fonctionne en jardins clos. Chaque plateforme remonte ses propres conversions, et l'attribution interplateforme reste un exercice ardu. Nous combinons pixels natifs, paramètres UTM lorsqu'ils tiennent et enquêtes post-achat sur les catégories à fort panier moyen. Cette transparence vaut mieux qu'un tableau de bord prétendant avoir résolu la question.",
   },
   {
     cat: "Opérations",
     q: "Peut-on utiliser le même créatif sur WeChat, Douyin et RED ?",
-    a: "Non. Chaque plateforme a sa voix, son format, son attente d'audience. Douyin veut des coupes rapides et un hook en deux secondes. RED veut un rythme plus lent, du contenu lifestyle qui se lit comme la publication d'un vrai utilisateur. WeChat se situe entre les deux, plus orienté marque. Nous adaptons ou reconstruisons pour chacune.",
+    a: "Non. Chaque plateforme impose sa voix, son format et ses attentes d'audience. Douyin réclame un montage rythmé et une accroche tenue en moins de deux secondes. Xiaohongshu privilégie un tempo plus lent, un registre lifestyle qui s'apparente à la publication d'une utilisatrice ordinaire. WeChat se situe à mi-chemin, davantage tourné vers la marque. Le créatif s'adapte, ou se refait, pour chaque environnement.",
   },
   {
     cat: "Opérations",
     q: "Comment gérez-vous la production créative ?",
-    a: "Studio interne. Photo, vidéo, copywriting, motion design, avec des plumes, monteurs et designers chinois aux manettes. Nous utilisons aussi des outils de contenu généré par IA pour gagner du temps et du coût sur les volumes élevés, comme les variantes de photos produit et le montage de vidéos courtes. Le jugement reste humain. Les tâches répétitives n'ont pas à l'être.",
+    a: "Studio intégré. Photographie, vidéo, rédaction, motion design, avec des rédacteurs, monteurs et designers chinois aux commandes. Des outils d'IA générative interviennent sur les volumes élevés, en particulier pour les déclinaisons de photos produit et les premiers montages de formats courts. Le jugement éditorial demeure humain. Les tâches répétitives, elles, n'ont aucune raison de l'être.",
   },
   {
     cat: "Opérations",
     q: "Les partenariats KOL et KOC font-ils partie de l'achat média ?",
-    a: "Oui, et de plus en plus chaque année. Sur RED et Douyin, le budget payant placé derrière un contenu KOL bat souvent une annonce frontale. Nous traitons les KOL et KOC comme une composante du plan média, jamais comme une ligne séparée gérée ailleurs. Nous les sourçons, les briefons, les contractualisons, et amplifions ce qui fonctionne.",
+    a: "Oui, et la part qu'ils représentent s'accroît d'année en année. Sur Xiaohongshu et Douyin, le budget payant adossé à un contenu KOL surpasse fréquemment l'annonce frontale. Les KOL et KOC sont traités comme une composante à part entière du plan média, jamais comme une ligne isolée gérée hors périmètre. Le sourcing, le brief, la contractualisation et l'amplification des contenus performants relèvent du même équipage.",
   },
   {
     cat: "Plateformes",
     q: "Et le livestream sur Douyin et Taobao ?",
-    a: "Le live commerce est un canal à part, avec ses propres compétences. Pour pousser du trafic payant dans les lives, Qianchuan sur Douyin, Wantwang sur Taobao. Nous l'opérons pour les clients dont le produit et les marges s'y prêtent. Toutes les marques ne devraient pas faire de livestream, et si la vôtre fait partie de celles-là, nous le disons plutôt que de prendre le budget.",
+    a: "Le live commerce constitue un canal en propre, doté de ses propres compétences. Pour adresser du trafic payant dans les sessions de live, Qianchuan sur Douyin, Wantwang sur Taobao. Nous l'opérons pour les marques dont le produit et la structure de marge s'y prêtent. Toutes les marques n'ont pas vocation à se lancer dans le livestream. Lorsque tel est le cas, nous le disons, plutôt que d'accepter le budget.",
   },
   {
     cat: "Opérations",
     q: "Comment gérez-vous les changements d'algorithme des plateformes ?",
-    a: "Nous reconstruisons les segments et testons un créatif neuf. Les mises à jour d'algorithme sur Douyin et RED sont fréquentes. Nous ne promettons pas que le dispositif du trimestre précédent traverse le suivant. Ce que nous promettons, c'est de repérer le changement vite et d'agir vite.",
+    a: "Reconstruction des segments d'audience, lancement de créatifs neufs. Les évolutions d'algorithmes sur Douyin et Xiaohongshu sont fréquentes. Aucune promesse ne porte sur la pérennité d'un dispositif d'un trimestre à l'autre. Notre engagement se situe ailleurs : détecter le changement rapidement, ajuster sans délai.",
   },
   {
     cat: "Conformité",
     q: "Quelles catégories sont restreintes ou interdites de publicité en Chine ?",
-    a: "Tabac et médicaments sur ordonnance, interdits net. Alcool, finance, santé, lait infantile, cosmétique, dispositifs médicaux : tous fortement restreints. Éducation, jeux d'argent et crypto sont de facto bannis. Nous vérifions l'éligibilité de votre catégorie avant de vous présenter un plan média, pas après.",
+    a: "Tabac et médicaments délivrés sur ordonnance : prohibition totale. Alcool, services financiers, santé, lait infantile, cosmétique, dispositifs médicaux : encadrement strict. Éducation parascolaire, jeux d'argent et cryptomonnaies : exclusion de facto. L'éligibilité de la catégorie est vérifiée en amont du plan média, jamais une fois la signature actée.",
   },
   {
     cat: "Conformité",
     q: "Quels mots sont interdits dans le copywriting publicitaire chinois ?",
-    a: "Les superlatifs absolus : meilleur, top, numéro un, le plus haut, le plus, niveau national, classe mondiale, et tout ce qui s'en approche. La liste officielle reste incomplète, l'application attrape donc des tournures auxquelles vous ne penseriez pas, et la véracité éventuelle de l'allégation n'entre pas en ligne de compte. Les allégations santé, les références à un traitement médical et les promesses de résultat garanti sont restreintes en plus. Les amendes vont de 200 000 à 1 million de RMB. Nous écrivons un copywriting qui garde une marge confortable.",
+    a: "Les superlatifs absolus, d'abord : « meilleur », « top », « numéro un », « le plus haut », « le plus », « niveau national », « classe mondiale », et tout ce qui s'en approche. La liste officielle demeure lacunaire, ce qui conduit les autorités à sanctionner des tournures inattendues, sans considération pour l'éventuelle véracité du propos. S'y ajoutent les allégations de santé, les références à un traitement médical et les promesses de résultat garanti. Les amendes vont de 200 000 à 1 million de yuans. Notre copywriting conserve une marge confortable par rapport à la zone à risque.",
   },
   {
     cat: "Conformité",
     q: "Peut-on renvoyer les données clients chinoises vers notre CRM global ?",
-    a: "Pas automatiquement, non. Sous la Loi chinoise sur la protection des informations personnelles, déplacer des données personnelles hors du pays constitue un transfert transfrontalier encadré. Cela exige une base juridique, le consentement de l'utilisateur, et parfois une évaluation de sécurité. La règle tient même sans entité en Chine. Nous mettons en place un tracking et des flux qui restent dans les clous, et nous sommes francs sur ce qui peut et ne peut pas sortir du pays.",
+    a: "Pas par défaut, non. La loi chinoise sur la protection des informations personnelles range le déplacement de données personnelles hors du territoire dans la catégorie des transferts transfrontaliers encadrés. Trois éléments sont requis : une base juridique, le consentement de l'utilisateur, parfois une évaluation de sécurité. La règle s'applique même en l'absence d'entité chinoise. Nous bâtissons un tracking et des flux qui restent dans le cadre, en disant franchement ce qui peut sortir du pays comme ce qui doit y demeurer.",
   },
   {
     cat: "Conformité",
     q: "Qu'est-ce qui a changé avec les règles livestream en 2026 ?",
-    a: "Trois éléments qui comptent pour le média. Les enregistrements livestream doivent être archivés au moins trois ans. Les influenceurs ne peuvent plus utiliser de superlatif de prix, le fameux « prix le plus bas partout », sans preuve vérifiable à l'appui. Et les agences qui facilitent l'engagement fictif partagent désormais la responsabilité juridique avec les créateurs qu'elles engagent. Nous tenons les campagnes livestream dans ce cadre, et nous ne travaillons qu'avec des créateurs qui font de même.",
+    a: "Trois changements significatifs pour l'achat média. Les enregistrements de sessions doivent être archivés trois années pleines. Les créateurs ne peuvent plus employer de superlatif tarifaire, type « prix le plus bas du marché », sans preuve documentée à l'appui. Les agences impliquées dans un montage d'engagement fictif partagent désormais la responsabilité juridique avec les créateurs qu'elles activent. Nos campagnes de live respectent strictement ce cadre, et notre sélection s'en tient aux créateurs qui en font autant.",
   },
   {
     cat: "Conformité",
     q: "Qu'est-ce qu'un dénonciateur professionnel, et pourquoi cela compte ?",
-    a: "La Chine compte une population de plaignants professionnels. Ils scannent les publicités à la recherche de violations légales, particulièrement les superlatifs et les allégations non étayées, et déposent des signalements pour récompense financière. Ils opèrent à l'échelle. Pour une marque étrangère, cela signifie qu'un seul mot non conforme dans votre copywriting peut déclencher une vraie enquête et une vraie amende. C'est une raison de plus pour caler le copywriting avant toute mise en ligne.",
+    a: "La Chine abrite une population de plaignants professionnels. Ces particuliers passent les publicités au peigne fin à la recherche d'infractions, en particulier les superlatifs et les allégations non étayées, puis déposent des signalements rémunérés. L'activité tourne à l'échelle industrielle. Pour une marque étrangère, un seul mot non conforme dans une accroche peut suffire à enclencher une enquête en bonne et due forme, assortie d'une amende. Raison supplémentaire pour caler le copywriting en amont de la diffusion.",
   },
   {
     cat: "Plateformes",
     q: "Pouvez-vous nous aider sur le média à Hong Kong et à Taïwan ?",
-    a: "Oui. Hong Kong tourne sur Google, Meta et des plateformes locales comme HK01. Taïwan tourne sur Facebook, Line et Dcard. Écosystèmes différents, équipes différentes. Nous avons l'expérience des deux, tenue à part de la Chine continentale.",
+    a: "Oui. Hong Kong fonctionne sur Google, Meta et des plateformes locales telles que HK01. Taïwan repose sur Facebook, Line et Dcard. Écosystèmes distincts, équipes distinctes. Notre expérience couvre les deux marchés, traités séparément de la Chine continentale.",
   },
 ];
 
@@ -367,7 +367,7 @@ const serviceJsonLd = {
     {/* ---------- HERO ---------- */}
     <section class="cbs-hero" data-hero>
       <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/grow-in-china/media/hero-media-buying.png" alt="Un acheteur média à son bureau dans des locaux de Shanghai en fin d'après-midi, deux moniteurs affichent les tableaux de bord des plateformes publicitaires chinoises" />
+        <img src="/Images/grow-in-china/media/hero-media-buying.png" alt="Un acheteur média à son poste de travail en fin d'après-midi, deux moniteurs affichent les tableaux de bord des plateformes publicitaires chinoises" />
       </div>
       <div class="cbs-hero__overlay" aria-hidden="true"></div>
       <div class="cbs-hero__grain" aria-hidden="true"></div>
@@ -380,24 +380,24 @@ const serviceJsonLd = {
         </nav>
         <span class="eyebrow eyebrow--on-dark cbs-reveal">Médias</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
-          <span class="cbs-hero__title-row">Votre budget média Chine</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--accent">mérite une équipe senior.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">Nous le planifions, l'achetons, l'opérons.</span>
+          <span class="cbs-hero__title-row">Votre budget média en Chine</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent">appelle des opérateurs seniors.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">Plan, achat, exploitation : sous le même toit.</span>
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          Les personnes qui montent votre compte sont celles qui le tiennent encore à la revue mensuelle.
-          Aucune strate, aucun passage de relais, aucun account manager junior qui apprend les plateformes
-          à vos frais.
+          L'équipe qui ouvre votre compte est celle qui le tient encore en revue mensuelle.
+          Aucune strate intermédiaire, aucun passage de relais, aucun chargé de compte junior
+          qui se forme aux plateformes à vos dépens.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
-          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Réserver un audit média</a>
-          <a href="#how-we-work" class="btn btn--ghost-light cbs-magnetic">Voir notre méthode</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Demander un audit média</a>
+          <a href="#how-we-work" class="btn btn--ghost-light cbs-magnetic">Consulter la méthode</a>
         </div>
 
         <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num" data-counter="15" data-suffix="+">0</span>
-            <span class="cbs-hero__meta-label">ans à tenir l'achat média pour des marques étrangères</span>
+            <span class="cbs-hero__meta-label">années à conduire l'achat média pour des marques étrangères</span>
           </div>
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num" data-counter="40" data-suffix="+">0</span>
@@ -405,7 +405,7 @@ const serviceJsonLd = {
           </div>
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num">Une équipe</span>
-            <span class="cbs-hero__meta-label">Stratégie, créatif, achat et reporting, de bout en bout</span>
+            <span class="cbs-hero__meta-label">Stratégie, création, achat, reporting : la chaîne complète</span>
           </div>
         </div>
       </div>
@@ -427,10 +427,10 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Votre point de départ</span>
-          <h2>La plupart des marques nous rejoignent dans l'une de ces trois situations.</h2>
+          <h2>Trois cas de figure rassemblent l'essentiel des marques qui nous rejoignent.</h2>
           <p class="section-header__lead">
-            Une de ces situations est probablement la vôtre. Le plan diffère selon le cas, l'équipe
-            qui le pilote reste la même.
+            L'un d'eux correspond probablement au vôtre. Le plan d'action change selon le cas.
+            L'équipe qui le porte, jamais.
           </p>
         </header>
 
@@ -456,7 +456,7 @@ const serviceJsonLd = {
           ))}
         </div>
 
-        <p class="cbs-cards__note cbs-reveal">Nous opérons les trois cas. Le plan diffère pour chacun.</p>
+        <p class="cbs-cards__note cbs-reveal">Les trois cas relèvent de notre champ. À chacun son plan d'action.</p>
       </div>
     </section>
 
@@ -464,13 +464,13 @@ const serviceJsonLd = {
     <section class="section section--alt">
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">Ce que nous faisons</span>
+          <span class="eyebrow">Notre champ d'intervention</span>
           <h2>Deux périmètres, une équipe.</h2>
           <p class="section-header__lead">
-            Nous opérons l'achat média sur les plateformes qui comptent en Chine. Chacune fonctionne
-            différemment. Chacune réclame son propre plan, son propre créatif, sa propre logique
-            d'enchères. Nous les maîtrisons parce que nous y sommes tous les jours, pas parce que nous
-            avons lu une étude de cas à leur sujet.
+            Nous opérons l'achat média sur les plateformes décisives du marché chinois. Chacune
+            obéit à ses propres règles. Chacune réclame un plan, un créatif et une logique
+            d'enchères qui lui appartiennent. Une maîtrise qui se gagne sur le terrain, jour
+            après jour, pas dans la lecture d'études de cas.
           </p>
         </header>
 
@@ -491,7 +491,7 @@ const serviceJsonLd = {
         <figure class="cbs-band cbs-reveal">
           <img
             src="/Images/grow-in-china/media/ecommerce-media-band.png"
-            alt="Un téléphone affiche une page boutique Douyin tenu dans un cadre logistique, l'entrepôt en flou doux à l'arrière-plan"
+            alt="Un téléphone tenu en main affiche une page boutique Douyin, l'entrepôt se devine en arrière-plan dans un flou doux"
             loading="lazy"
             decoding="async"
           />
@@ -500,9 +500,9 @@ const serviceJsonLd = {
         <div class="cbs-sub cbs-sub--ec">
           <span class="eyebrow">Médias eCommerce</span>
           <p class="cbs-sub__lead">
-            C'est là que le trafic payant se transforme en ventes. Si vous vendez en Chine, c'est en général là que
-            le budget doit aller en premier, avant les lignes de notoriété de marque.
-            
+            C'est là que le trafic payant se transforme en chiffre d'affaires. Pour une marque
+            qui vend en Chine, ce poste mobilise le premier arbitrage budgétaire, bien avant
+            les lignes dédiées à la notoriété.
           </p>
         </div>
 
@@ -523,10 +523,11 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Pourquoi les marques restent</span>
-          <h2>La plupart des agences média staffent votre compte de juniors. Pas nous.</h2>
+          <h2>La plupart des agences confient l'exécution à des juniors. Notre parti pris est l'inverse.</h2>
           <p class="section-header__lead">
-            L'équipe qui signe le contrat est celle qui opère la mission. Mêmes noms au
-            kickoff, mêmes noms à la revue mensuelle.
+            L'équipe qui signe le contrat reste celle qui exécute la mission. Mêmes
+            interlocuteurs au lancement, mêmes interlocuteurs en revue mensuelle, sans
+            rotation de façade.
           </p>
         </header>
 
@@ -541,8 +542,8 @@ const serviceJsonLd = {
 
         <blockquote class="cbs-quote cbs-reveal">
           <p>
-            L'équipe qui monte votre compte est celle qui le tient encore à la revue mensuelle.
-            En Chine, cette continuité fait la différence entre dépense et gaspillage.
+            L'équipe qui ouvre le compte est celle qui le tient encore en revue mensuelle.
+            En Chine, cette continuité départage la dépense utile du gaspillage pur.
           </p>
         </blockquote>
       </div>
@@ -553,10 +554,10 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Notre méthode</span>
-          <h2>Quatre semaines avant la mise en ligne, puis une cadence hebdomadaire.</h2>
+          <h2>Quatre semaines pour préparer la mise en ligne, puis un rythme hebdomadaire.</h2>
           <p class="section-header__lead">
-            Une équipe. Stratégie, planning média, créatif, achat, optimisation, reporting,
-            tout en interne et tout au niveau senior.
+            Une seule équipe sur l'ensemble du parcours. Stratégie, planification, création,
+            achat, optimisation, reporting : tout reste en interne, tout reste au niveau senior.
           </p>
         </header>
 
@@ -641,8 +642,8 @@ const serviceJsonLd = {
         </div>
 
         <p class="cbs-tabs__note cbs-reveal">
-          Vous avez aussi le tableau de bord. Mêmes chiffres que nous, au même moment
-          que nous.
+          Le tableau de bord reste ouvert au client. Mêmes données que les nôtres, à la même
+          seconde, sans filtre intermédiaire.
         </p>
       </div>
     </section>
@@ -652,17 +653,17 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Conformité</span>
-          <h2>En Chine, la loi décide de ce que votre annonce peut dire.</h2>
+          <h2>En Chine, la loi fixe les bornes de ce qu'une annonce a le droit d'affirmer.</h2>
           <p class="section-header__lead">
-            Trois règles piègent les marques étrangères plus que les autres. La FAQ plus bas
-            approfondit chacune.
+            Trois règles piègent les marques étrangères plus souvent que les autres. La FAQ
+            ci-dessous reprend chacune en détail.
           </p>
         </header>
 
         <figure class="cbs-band cbs-band--narrow cbs-reveal">
           <img
             src="/Images/grow-in-china/media/compliance-adlaw-band.png"
-            alt="Une feuille imprimée de copywriting marketing chinois, un stylo rouge posé dessus, quelques mots entourés, lumière naturelle sur le bureau"
+            alt="Une feuille imprimée d'un texte publicitaire chinois, un stylo rouge posé sur la page, plusieurs mots entourés, lumière naturelle sur le bureau"
             loading="lazy"
             decoding="async"
           />
@@ -673,7 +674,7 @@ const serviceJsonLd = {
             <article class="cbs-card" style={`--reveal-delay: ${i * 80}ms;`}>
               <h3 class="cbs-card__title">{c.title}</h3>
               <p class="cbs-card__body">{c.body}</p>
-              <a href="#faq" class="cbs-card__link">Plus de détails en FAQ
+              <a href="#faq" class="cbs-card__link">Détails complets en FAQ
                 <span aria-hidden="true">→</span>
               </a>
             </article>
@@ -687,9 +688,10 @@ const serviceJsonLd = {
       <div class="container container--narrow">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">FAQ</span>
-          <h2>Vingt-cinq questions, réponses directes.</h2>
+          <h2>Vingt-cinq questions, des réponses sans détour.</h2>
           <p class="section-header__lead">
-            Les questions que les marques étrangères nous posent au premier rendez-vous. À filtrer par sujet.
+            Les questions remontées par les marques étrangères au premier rendez-vous.
+            Filtrables par sujet.
           </p>
         </header>
 
@@ -736,17 +738,18 @@ const serviceJsonLd = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">
-          <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
-          <h2 class="cbs-cta__title">Prêts à confier votre budget média Chine à des mains seniors ?</h2>
+          <span class="eyebrow eyebrow--on-dark">Échangeons</span>
+          <h2 class="cbs-cta__title">Confier votre budget média chinois à une équipe senior, en êtes-vous prêts ?</h2>
           <p class="cbs-cta__lead">
-            Démarrez par un audit média. Nous regarderons ce que vous opérez aujourd'hui, ou ce qu'il
-            vous faudrait pour démarrer, et nous reviendrons avec une lecture franche : ce qui fonctionne, ce qui
-            ne fonctionne pas, ce que nous ferions différemment. Pas de deck rempli de jargon, juste l'image
-            réelle. Vous avez déjà un brief ? Envoyez-le.
+            Le point de départ se résume à peu de chose : un audit média. Lecture du dispositif
+            en place, ou de celui à concevoir en amont du lancement, suivie d'un constat sans
+            détour. Ce qui produit du résultat. Ce qui n'en produit pas. Et ce que nous ferions
+            autrement. Aucun document saturé de jargon, simplement l'état réel de la situation.
+            Si un brief est déjà rédigé, transmettez-le.
           </p>
           <div class="cbs-cta__actions">
-            <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Réserver un audit média</a>
-            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Voir nos réalisations</a>
+            <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Demander un audit média</a>
+            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Consulter nos réalisations</a>
           </div>
         </div>
       </div>

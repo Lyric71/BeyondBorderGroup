@@ -2,51 +2,51 @@
 import Layout from '../../../layouts/Layout.astro';
 
 const heroStats = [
-  { num: '20', suffix: '+', label: "années à piloter des campagnes festivals pour des marques étrangères" },
-  { num: '10', suffix: '', label: "fenêtres festival sur le calendrier chinois chaque année" },
-  { num: "Une équipe", suffix: '', label: "Stratégie, contenu, livestream, achat média et offline, de bout en bout" },
+  { num: '20', suffix: '+', label: "années consacrées au pilotage de campagnes festival pour les marques internationales" },
+  { num: '10', suffix: '', label: "fenêtres festival rythment chaque année le calendrier commercial chinois" },
+  { num: "Une équipe", suffix: '', label: "Stratégie, contenu, livestream, achat média et hors ligne, pilotés de bout en bout" },
 ];
 
 const channels = [
   {
     kicker: "Plateforme",
     title: "La plateforme eCommerce",
-    body: "Habillage de la boutique, prix, coupons, mécaniques officielles du festival, trafic payant (Zhitongche, Wanxiangtai).",
+    body: "Habillage de la boutique, grille tarifaire, dispositifs de coupons, mécaniques officielles du festival, trafic payant orchestré sur Zhitongche et Wanxiangtai.",
     image: '/Images/grow-in-china/campaigns/channel-platform-storefront.png',
     alt: "Un téléphone affiche la vitrine festival Tmall d'une marque en pleine campagne, tenu d'une main dans un bureau chinois",
   },
   {
     kicker: "Contenu",
     title: "Contenu et social",
-    body: "Xiaohongshu, Douyin et WeChat sèment l'intérêt dans les semaines qui précèdent la date. Plus la production photo et vidéo qui les alimente.",
+    body: "Xiaohongshu, Douyin et WeChat installent la demande dans les semaines qui précèdent l'échéance, adossés à une production photo et vidéo dédiée.",
     image: '/Images/grow-in-china/campaigns/channel-content-shoot.png',
     alt: "Un petit studio tourne une vidéo courte festival, produit sur une table éclairée, téléphone sur stabilisateur, plan de tournage en mandarin scotché au mur",
   },
   {
     kicker: "Créateurs",
     title: "KOL et KOC",
-    body: "Les créateurs et les consommateurs experts bâtissent la preuve sociale et la demande avant le pic.",
+    body: "Créateurs d'audience et consommateurs avertis bâtissent la preuve sociale et structurent la demande à l'approche du pic.",
     image: '/Images/grow-in-china/campaigns/channel-kol-review.png',
     alt: "Une créatrice chinoise de mid-tier filme un avis produit pour un pic festival, chez elle près d'une fenêtre, ring light et lumière d'après-midi mêlées",
   },
   {
     kicker: "Live",
     title: "Livestream",
-    body: "Votre propre studio de marque, ou celui d'un animateur. Souvent le premier moteur de ventes le jour même.",
+    body: "Studio de marque en propre ou plateau d'animateur partenaire. Premier moteur des ventes le jour J, dans la grande majorité des cas.",
     image: '/Images/grow-in-china/campaigns/channel-livestream-room.png',
     alt: "Un plateau livestream Douyin en pleine session festival, l'animatrice s'adresse à la caméra, le compte à rebours s'affiche sur un moniteur latéral",
   },
   {
     kicker: "Privé",
     title: "Trafic privé",
-    body: "Les groupes WeChat et votre base de membres. Des audiences que vous touchez directement, sans coût média.",
+    body: "Groupes WeChat et base de membres de la marque. Des audiences activables en direct, sans intermédiation média.",
     image: '/Images/grow-in-china/campaigns/channel-wechat-groups.png',
     alt: "L'écran d'une community manager affiche des groupes WeChat actifs avec un bon festival épinglé, téléphone et ordinateur portable côte à côte",
   },
   {
     kicker: "Offline",
-    title: "Offline, quand cela s'impose",
-    body: "Un pop-up, un partenariat retail, un événement. Pour certaines catégories, le rendez-vous physique rend toute la campagne en ligne crédible.",
+    title: "Hors ligne, lorsque la catégorie l'exige",
+    body: "Pop-up, partenariat retail, événement physique. Sur certaines catégories, le rendez-vous en présentiel vient légitimer l'ensemble du dispositif en ligne.",
     image: '/Images/grow-in-china/campaigns/channel-offline-popup.png',
     alt: "Un pop-up de marque dans un centre commercial chinois adossé à un festival, des visiteurs s'arrêtent au stand, un kakémono QR renvoie vers la boutique en ligne",
   },
@@ -55,37 +55,37 @@ const channels = [
 const steps = [
   {
     title: "Choisir le moment",
-    body: "Toutes les marques ne devraient pas courir tous les festivals, et nous le disons tôt si une date ne vaut pas la peine pour vous. Nous retenons celles qui valent qu'on s'y batte, selon votre catégorie, votre stock et vos marges.",
+    body: "Aucune marque ne couvre la totalité des festivals. Lorsqu'une date ne se justifie pas, nous le signalons dès la première séance. La sélection s'opère au regard de votre catégorie, de votre niveau de stock et de votre structure de marges.",
   },
   {
-    title: "Bâtir l'angle créatif",
-    body: "Une grande campagne chinoise est une campagne de marque, pas un simple rabais. Il lui faut une idée, un produit héros, une signature visuelle. C'est l'étape que les marques sautent le plus souvent, et celle qui gagne l'attention avant que la campagne ne décroche la moindre vente.",
+    title: "Construire l'angle créatif",
+    body: "Une grande campagne chinoise relève de la communication de marque, et non d'une simple opération promotionnelle. Elle réclame une idée, un produit héros, une signature visuelle. Étape la plus souvent escamotée, et pourtant celle qui capte l'attention bien avant la première vente enregistrée.",
   },
   {
-    title: "Tenir la montée",
-    body: "Quatre à six semaines avant, le contenu et le seeding KOL démarrent. Les paniers se remplissent. La recherche s'intensifie. C'est le travail que personne ne voit, et c'est en général lui qui décide du résultat.",
+    title: "Conduire la montée en charge",
+    body: "Quatre à six semaines avant l'échéance, le contenu se déploie et le seeding KOL entre en piste. Les paniers se garnissent. La pression sur les requêtes s'intensifie. Travail invisible, et le plus souvent décisif sur l'issue de l'opération.",
   },
   {
     title: "Tenir le pic",
-    body: "La fenêtre événement elle-même. Livestream, trafic et prix en direct, service client à plein régime. Nous y sommes heure par heure, parce que la journée bouge vite et que les ajustements fins comptent.",
+    body: "La fenêtre événement à proprement parler. Livestream, ajustements de trafic et de prix en temps réel, service client à plein régime. Présence heure par heure aux côtés des équipes : la journée file, et chaque arbitrage fin pèse sur le résultat final.",
   },
   {
-    title: "Clôturer et lire",
-    body: "Offres de fin, puis bilan honnête de ce que la campagne a réellement rapporté et de ce que nous changerions la prochaine fois.",
+    title: "Clôturer et tirer les enseignements",
+    body: "Offres de clôture, puis bilan sans complaisance : ce que la campagne a réellement rapporté, et les arbitrages à corriger pour l'édition suivante.",
   },
 ];
 
 const calendar = [
-  { date: "Janv. / févr.", event: "Nouvel An chinois", prep: "8 à 10 semaines à l'avance", what: "Le plus grand rendez-vous culturel de l'année. Cadeaux, emballages rouges, famille. Les ventes ralentissent pendant la fête elle-même, mais la montée est forte.", who: "Catégories cadeaux, alimentaire, beauté, premium" },
-  { date: "8 mars", event: "Journée des femmes / Queen's Day", prep: "6 semaines à l'avance", what: "Un moment shopping centré sur le féminin, fort en beauté et en mode.", who: "Beauté, mode, joaillerie, wellness" },
-  { date: "Avril / mai", event: "Fête du travail (1er mai)", prep: "6 semaines à l'avance", what: "Un pic voyage et lifestyle, et un relais utile en milieu de printemps.", who: "Voyage, outdoor, lifestyle, grande consommation" },
-  { date: "Mai au 18 juin", event: "Festival 618", prep: "10 à 12 semaines à l'avance", what: "Le deuxième festival de l'année. Lancé par JD, il s'étend désormais à toutes les plateformes. Les préventes ouvrent à la mi-mai.", who: "Toute marque vendant en Chine" },
-  { date: "19 juin (2026)", event: "Fête des bateaux-dragons", prep: "5 semaines à l'avance", what: "Un rendez-vous culturel autour du cadeau et de la cuisine traditionnelle.", who: "Alimentaire, cadeau, marques d'héritage" },
-  { date: "8 août", event: "8.8 / Festival 88VIP", prep: "6 semaines à l'avance", what: "Un rendez-vous Tmall Global centré sur les marques internationales et la fidélité des membres.", who: "Marques cross-border, marques avec base de membres" },
-  { date: "19 août (2026)", event: "Festival Qixi", prep: "5 à 6 semaines à l'avance", what: "La Saint-Valentin chinoise. Cadeau romantique.", who: "Beauté, joaillerie, mode, cadeau" },
-  { date: "Sept. / oct.", event: "Mi-automne et Golden Week", prep: "6 à 8 semaines à l'avance", what: "Cadeau, doublé d'une longue fête nationale, avec un pic voyage et dépense.", who: "Alimentaire, cadeau, voyage, lifestyle" },
-  { date: "Fin oct. au 11 nov.", event: "Singles Day (Double 11)", prep: "12 à 14 semaines à l'avance", what: "Le plus grand événement de shopping en ligne au monde. Désormais étalé sur plusieurs semaines depuis fin octobre. La campagne de l'année.", who: "Toute marque vendant en Chine" },
-  { date: "12 décembre", event: "Double 12 / fin d'année", prep: "5 semaines à l'avance", what: "Le pic final de l'année. Fort pour les marques plus modestes et pour la liquidation de stock.", who: "Petites marques, déstockage, retardataires" },
+  { date: "Janv. / févr.", event: "Nouvel An chinois", prep: "8 à 10 semaines à l'avance", what: "Premier rendez-vous culturel de l'année. Cadeaux, enveloppes rouges, retrouvailles familiales. Les ventes refluent durant la fête elle-même, après une montée vigoureuse en amont.", who: "Catégories cadeaux, alimentaire, beauté, premium" },
+  { date: "8 mars", event: "Journée des femmes / Queen's Day", prep: "6 semaines à l'avance", what: "Temps fort shopping au registre féminin, particulièrement actif en beauté et en mode.", who: "Beauté, mode, joaillerie, wellness" },
+  { date: "Avril / mai", event: "Fête du travail (1er mai)", prep: "6 semaines à l'avance", what: "Pic voyage et art de vivre, doublé d'un relais commercial utile en milieu de printemps.", who: "Voyage, outdoor, lifestyle, grande consommation" },
+  { date: "Mai au 18 juin", event: "Festival 618", prep: "10 à 12 semaines à l'avance", what: "Deuxième grand festival de l'année. Initié par JD, il s'étend désormais à l'ensemble des plateformes. Les préventes s'ouvrent à la mi-mai.", who: "Toute marque vendant en Chine" },
+  { date: "19 juin (2026)", event: "Fête des bateaux-dragons", prep: "5 semaines à l'avance", what: "Rendez-vous culturel articulé autour du cadeau et de la cuisine traditionnelle.", who: "Alimentaire, cadeau, marques d'héritage" },
+  { date: "8 août", event: "8.8 / Festival 88VIP", prep: "6 semaines à l'avance", what: "Rendez-vous Tmall Global dédié aux marques internationales et à la fidélisation des membres.", who: "Marques cross-border, marques disposant d'une base de membres" },
+  { date: "19 août (2026)", event: "Festival Qixi", prep: "5 à 6 semaines à l'avance", what: "Équivalent chinois de la Saint-Valentin. Le registre du cadeau romantique domine.", who: "Beauté, joaillerie, mode, cadeau" },
+  { date: "Sept. / oct.", event: "Mi-automne et Golden Week", prep: "6 à 8 semaines à l'avance", what: "Saison du cadeau, conjuguée à une longue semaine nationale, marquée par un pic voyage et consommation.", who: "Alimentaire, cadeau, voyage, lifestyle" },
+  { date: "Fin oct. au 11 nov.", event: "Singles Day (Double 11)", prep: "12 à 14 semaines à l'avance", what: "Premier événement de e-commerce au monde. L'opération s'étale désormais sur plusieurs semaines à partir de fin octobre. La campagne structurante de l'année.", who: "Toute marque vendant en Chine" },
+  { date: "12 décembre", event: "Double 12 / clôture de fin d'année", prep: "5 semaines à l'avance", what: "Dernier pic de l'année. Particulièrement porteur pour les marques de taille intermédiaire et pour l'écoulement des stocks.", who: "Marques de taille intermédiaire, déstockage, opérations de rattrapage" },
 ];
 
 const serviceJsonLd = {
@@ -102,8 +102,8 @@ const serviceJsonLd = {
 ---
 
 <Layout
-  title="Campagnes eCommerce en Chine : 618, Singles Day et plus"
-  description="Les festivals chinois décident de votre année. Nous concevons et tenons des campagnes eCommerce multicanal sur Tmall, JD, Douyin et offline, de la montée au pic."
+  title="Campagnes eCommerce en Chine : 618, Singles Day et autres temps forts"
+  description="Les festivals chinois déterminent l'année commerciale. Conception et pilotage de campagnes eCommerce multicanal sur Tmall, JD, Douyin et hors ligne, de la montée préparatoire au pic événementiel."
 >
   <script type="application/ld+json" set:html={JSON.stringify(serviceJsonLd)} is:inline />
 
@@ -126,18 +126,19 @@ const serviceJsonLd = {
         </nav>
         <span class="eyebrow eyebrow--on-dark cbs-reveal">Campagnes</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
-          <span class="cbs-hero__title-row">Vendre en Chine tourne autour des campagnes.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--accent">Les manquer, c'est manquer l'année.</span>
+          <span class="cbs-hero__title-row">En Chine, la vente se joue par campagnes.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent">Les manquer revient à manquer l'année.</span>
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          En Chine, les ventes arrivent par vagues, calées sur des dates où le pays entier fait ses achats.
-          Les marques qui anticipent ces vagues croissent. Les autres stagnent.
-          Nous bâtissons la campagne, l'opérons sur chaque canal nécessaire, et restons sur le
-          terrain à vos côtés quand elle part en direct.
+          Le commerce chinois progresse par vagues, calées sur quelques dates où le pays tout
+          entier consomme. Les marques qui anticipent ces séquences gagnent du terrain. Les
+          autres voient l'année leur échapper. Nous bâtissons la campagne, l'orchestrons
+          sur l'ensemble des canaux pertinents, et restons en première ligne lorsque
+          l'opération bascule en direct.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
-          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Échanger sur une campagne</a>
-          <a href="#calendar" class="btn btn--ghost-light cbs-magnetic">Voir le calendrier</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Discuter d'une campagne</a>
+          <a href="#calendar" class="btn btn--ghost-light cbs-magnetic">Consulter le calendrier</a>
         </div>
 
         <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
@@ -162,50 +163,51 @@ const serviceJsonLd = {
         <div class="cbs-basics">
           <header class="cbs-basics__head cbs-reveal">
             <span class="eyebrow">Les fondamentaux</span>
-            <h2>Ce qu'est une campagne, et pourquoi cela compte</h2>
+            <h2>Anatomie d'une campagne, et raisons de sa centralité</h2>
           </header>
 
           <div class="cbs-basics__cols cbs-reveal">
             <div class="cbs-basics__col">
               <p>
-                Une campagne, c'est un effort coordonné autour d'un seul moment. Le plus souvent un
-                festival commercial comme 618 ou Singles Day, parfois un lancement produit
-                ou un anniversaire de marque.
+                Une campagne se définit comme un effort coordonné autour d'une échéance unique.
+                Festival commercial le plus souvent, 618 ou Singles Day en tête, parfois
+                lancement produit ou anniversaire de marque.
               </p>
               <p>
-                Ce qu'elle n'est pas : une bannière sur la page de votre boutique. C'est une séquence
-                qui tient sur des semaines. Une montée avant la date, l'événement au pic, une
-                clôture après, avec des prix, du contenu, du livestream, du seeding KOL,
-                du service client et du stock, tous orientés vers les mêmes quelques jours.
+                Une campagne ne se résume pas à une bannière en tête de boutique. Il s'agit
+                d'une séquence qui s'étale sur plusieurs semaines : montée préparatoire,
+                événement à son apogée, phase de clôture. Prix, contenu, livestream, seeding
+                KOL, service client et niveaux de stock convergent tous vers les mêmes journées.
               </p>
               <p>
-                Et une grande campagne chinoise est une campagne de marque à part entière. Le
-                budget atteint souvent celui d'une campagne de marque, et le retour
-                ne se limite pas au chiffre du trimestre ; il se joue aussi
-                sur la construction de marque.
+                Une grande campagne chinoise relève pleinement de la communication de marque.
+                Le budget engagé approche celui d'une opération corporate, et le retour ne se
+                mesure pas au seul chiffre du trimestre : il s'inscrit aussi dans la
+                construction durable de notoriété.
               </p>
             </div>
 
             <div class="cbs-basics__col">
               <p>
-                Voici ce que les marques ratent. Les acheteurs chinois attendent les festivals.
-                Ils remplissent leur panier pendant des semaines, puis achètent tout d'un coup quand les
-                remises s'ouvrent. Les plateformes alimentent ce comportement : pendant les
-                fenêtres festival, Tmall, JD et Douyin orientent le trafic et le ranking de recherche vers
-                les marques qui activent les mécaniques officielles. Manquer 618 et
-                Singles Day, c'est céder les deux plus grandes fenêtres de ventes de
-                l'année, ainsi que votre ranking, à ceux qui se sont présentés.
+                Voilà ce qui échappe à nombre d'enseignes. Le consommateur chinois guette les
+                festivals. Il remplit son panier pendant des semaines, puis valide d'un seul
+                geste à l'ouverture des remises. Les plateformes entretiennent ce réflexe :
+                durant les fenêtres festival, Tmall, JD et Douyin orientent trafic et
+                classements de recherche vers les marques qui activent les mécaniques officielles.
+                Faire l'impasse sur 618 et Singles Day revient à céder les deux plus grandes
+                fenêtres de l'année, ainsi que son référencement, aux concurrents présents le
+                jour dit.
               </p>
               <p>
-                Il y a un prix plus grand encore. Lorsque la plateforme retient votre
-                campagne parmi les temps forts du festival, elle place son propre poids publicitaire
-                derrière vous. Mise en avant, trafic home page, le type de
-                portée qu'on ne peut tout simplement pas acheter en direct.
+                L'enjeu va plus loin encore. Dès lors que la plateforme retient votre campagne
+                parmi ses temps forts, elle engage son propre poids publicitaire à vos côtés :
+                mises en avant, trafic en page d'accueil. Une couverture qu'aucun achat média
+                direct ne permet d'égaler.
               </p>
               <p>
-                Pour la plupart des marques que nous opérons, les fenêtres festival concentrent une part
-                importante du chiffre annuel. Les mois calmes paient le loyer.
-                Les campagnes font l'année.
+                Chez la plupart des marques que nous accompagnons, les fenêtres festival
+                concentrent une part déterminante du chiffre annuel. Les mois plus calmes
+                couvrent les charges. Les campagnes, elles, font l'exercice.
               </p>
             </div>
           </div>
@@ -224,12 +226,12 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">La réalité</span>
-          <h2>Une campagne ne se limite jamais à la plateforme eCommerce</h2>
+          <h2>Une campagne déborde toujours largement la plateforme eCommerce</h2>
           <p class="section-header__lead">
-            C'est la partie que la plupart des marques sous-estiment. Oui, la vente se conclut sur Tmall,
-            JD ou Douyin. Mais la campagne qui la déclenche vit presque partout ailleurs,
-            et elle est presque toujours multicanal. Une campagne type travaille sur
-            plusieurs fronts en même temps.
+            Le pan que la plupart des marques sous-estiment. La transaction, certes, se conclut
+            sur Tmall, JD ou Douyin. Mais la campagne qui la déclenche se joue presque
+            entièrement ailleurs, et toujours sur plusieurs canaux. Une campagne type avance de
+            front sur plusieurs terrains à la fois.
           </p>
         </header>
 
@@ -269,9 +271,9 @@ const serviceJsonLd = {
         </div>
 
         <p class="cbs-reality__note cbs-reveal">
-          Aucun de ces leviers n'est difficile à activer isolément. La difficulté, et le point qui
-          décide du résultat, c'est de les faire partir dans le bon ordre, tous orientés vers
-          la même date.
+          Aucun de ces leviers ne pose de réelle difficulté pris isolément. Tout l'enjeu, et
+          tout le résultat, consiste à les déclencher dans le bon ordre et à les converger
+          vers une seule et même échéance.
         </p>
       </div>
     </section>
@@ -281,10 +283,10 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Notre approche</span>
-          <h2>Comment nous tenons une campagne</h2>
+          <h2>La méthode appliquée à chaque campagne</h2>
           <p class="section-header__lead">
-            L'ossature reste la même à chaque fois. Les détails varient, la colonne vertébrale
-            non.
+            L'ossature ne varie pas d'une campagne à l'autre. Seuls les détails s'ajustent.
+            La colonne vertébrale, elle, tient.
           </p>
         </header>
 
@@ -301,12 +303,12 @@ const serviceJsonLd = {
         </ol>
 
         <blockquote class="cbs-quote cbs-reveal">
-          <p>Nous ne vous remettons pas une présentation pour disparaître ensuite. Nous l'opérons avec vous.
-          Voilà la différence.</p>
+          <p>Nous ne livrons pas une présentation pour disparaître ensuite. La campagne, nous
+          l'exécutons à vos côtés. Toute la différence est là.</p>
         </blockquote>
 
         <div class="cbs-approach__cta cbs-reveal">
-          <a href="/fr/nous-contacter" class="btn btn--ghost">Voir comment nous planifierions votre prochain festival</a>
+          <a href="/fr/nous-contacter" class="btn btn--ghost">Étudier notre plan pour votre prochain festival</a>
         </div>
       </div>
     </section>
@@ -316,33 +318,34 @@ const serviceJsonLd = {
       <div class="container container--narrow">
         <header class="section-header cbs-reveal">
           <span class="eyebrow">Le budget</span>
-          <h2>Ce que cela coûte, et ce qu'il faut savoir avant de signer</h2>
+          <h2>L'enveloppe à prévoir, et ce qu'il convient de savoir avant tout engagement</h2>
         </header>
 
         <div class="cbs-prose cbs-reveal">
           <p>
-            Il n'existe pas de chiffre unique pour une campagne chinoise, et quiconque vous en propose
-            un avant d'avoir interrogé votre catégorie devine. Le budget se ventile en
-            plusieurs postes : les honoraires de conception et de pilotage, le média (souvent la plus grosse ligne, trafic payant
-            et amplification sur Xiaohongshu et Douyin), les frais KOL et livestream,
-            la production de contenu, ainsi que la marge stock et remise qui décide
-            si l'ensemble est rentable.
+            Aucun chiffre unique ne vaut pour une campagne chinoise, et quiconque en avance un
+            avant d'avoir examiné votre catégorie improvise. Le budget se ventile sur plusieurs
+            postes : honoraires de conception et de pilotage, achat média (souvent la première
+            ligne, entre trafic payant et amplification sur Xiaohongshu et Douyin), engagements
+            KOL et livestream, production de contenu. À cela s'ajoute la marge stock et remise,
+            qui conditionne en dernier ressort la rentabilité de l'ensemble.
           </p>
         </div>
 
         <blockquote class="cbs-quote cbs-quote--warning cbs-reveal">
           <p>
-            Un mot d'avertissement honnête. Les festivals tirent sur la marge, et toutes les marques
-            ne devraient pas viser chaque date. Une campagne qui gagne en GMV mais perd de l'argent n'est pas
-            une victoire. Mieux vaut vous dire de sauter un festival que d'en tenir un qui
-            vous abîme. Ce jugement fait partie de ce que vous payez.
+            Un avertissement, sans détour. Les festivals pèsent sur la marge. Toutes les marques
+            n'ont pas vocation à viser chaque date. Une campagne qui gonfle le GMV au prix de
+            pertes financières ne constitue pas une victoire. Mieux vaut renoncer à un festival
+            que d'en mener un qui fragilise la rentabilité. Ce discernement fait partie
+            intégrante de la prestation que nous facturons.
           </p>
         </blockquote>
 
         <div class="cbs-prose cbs-reveal">
           <p>
-            Dites-nous la date que vous visez. Nous reviendrons avec un chiffre réel,
-            pas une fourchette vague.
+            Indiquez-nous la date visée. La réponse vous parviendra sous forme d'un chiffre
+            concret, et non d'une fourchette vague.
           </p>
         </div>
       </div>
@@ -355,10 +358,10 @@ const serviceJsonLd = {
           <span class="eyebrow">Le calendrier</span>
           <h2>Le calendrier des campagnes eCommerce chinoises</h2>
           <p class="section-header__lead">
-            Quelles dates faut-il réellement planifier ? Voici celles autour desquelles le marché chinois
-            fait ses achats. Toutes ne sont pas à viser. Mais toute marque
-            qui vend en Chine devrait s'aligner sur ce calendrier un an à l'avance, parce que la
-            préparation démarre bien avant la date.
+            Quelles échéances justifient réellement une préparation ? Voici celles autour
+            desquelles le marché chinois s'organise. Aucune marque n'a vocation à toutes les
+            couvrir. Mais toute enseigne qui vend en Chine devrait caler sa planification sur ce
+            calendrier un an en amont : la préparation s'engage bien avant la date elle-même.
           </p>
         </header>
 
@@ -389,11 +392,12 @@ const serviceJsonLd = {
           </div>
 
           <p class="cbs-compare__note">
-            Comment lire ce calendrier. Vous ne tenez pas les dix. Une marque focalisée en retient
-            deux ou trois à remporter sérieusement et traite les autres en mode léger. 618 et
-            Singles Day sont les non-négociables. Le reste dépend de votre catégorie. Et
-            regardez la colonne préparation : si un festival approche en moins que son délai d'antériorité,
-            vous êtes déjà en retard ; visez le suivant.
+            Mode d'emploi. Nul ne tient l'ensemble des dix échéances. Une marque concentrée en
+            retient deux ou trois à conquérir pleinement, et traite les autres en activation
+            légère. 618 et Singles Day demeurent les rendez-vous incontournables. Le reste se
+            décide en fonction de la catégorie. Un point d'attention : la colonne préparation.
+            Lorsqu'une date approche en deçà du délai requis, le retard est consommé ; il faut
+            alors viser le festival suivant.
           </p>
         </div>
       </div>
@@ -404,29 +408,29 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Le profil</span>
-          <h2>Est-ce votre cas ?</h2>
+          <h2>Cette approche est-elle pertinente pour vous ?</h2>
         </header>
 
         <div class="cbs-fit">
           <article class="cbs-fit__card cbs-fit__card--yes cbs-reveal">
-            <span class="cbs-fit__tag">C'est pour vous</span>
+            <span class="cbs-fit__tag">Vous êtes concerné</span>
             <p>
-              Un programme de campagne a du sens si vous vendez déjà en Chine,
-              sur Tmall, Tmall Global, JD ou Douyin, et que vos fenêtres festival
-              ne pèsent pas autant qu'elles le devraient. Il a tout autant de sens si
-              vous vous apprêtez à lancer et que vous voulez voir votre premier festival
-              marquer, plutôt que passer.
+              Un programme de campagne se justifie pleinement si vous vendez déjà en Chine, sur
+              Tmall, Tmall Global, JD ou Douyin, et si vos fenêtres festival ne pèsent pas
+              autant qu'elles le devraient. Il se justifie tout autant à l'orée d'un lancement,
+              lorsque l'enjeu consiste à faire compter le premier festival plutôt que de le
+              laisser filer.
             </p>
           </article>
 
           <article class="cbs-fit__card cbs-fit__card--not cbs-reveal" style="--reveal-delay: 120ms;">
             <span class="cbs-fit__tag">Pas encore</span>
             <p>
-              Ce n'est sans doute pas encore pour vous si votre boutique est toute neuve sans
-              historique de trafic, ou si vos marges ne supportent simplement pas une
-              remise festival. Aucune honte. Cela signifie simplement que le travail de fond passe
-              d'abord, et la campagne après. Parlons-en plutôt côté fondations,
-              nous préférons vous démarrer au bon endroit.
+              L'approche n'est sans doute pas encore la vôtre si la boutique vient d'ouvrir,
+              sans historique de trafic, ou si les marges ne supportent pas une remise festival.
+              Aucun jugement à en tirer. Le travail de fond passe d'abord, la campagne ensuite.
+              Mieux vaut alors ouvrir la conversation sur les fondations : démarrer au bon
+              endroit nous tient à cœur.
             </p>
           </article>
         </div>
@@ -437,21 +441,21 @@ const serviceJsonLd = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">
-          <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
-          <h2 class="cbs-cta__title">Prêts à remporter les festivals chinois ?</h2>
+          <span class="eyebrow eyebrow--on-dark">Échangeons</span>
+          <h2 class="cbs-cta__title">Prêts à conquérir les festivals chinois ?</h2>
           <p class="cbs-cta__lead">
-            Nous avons piloté des campagnes festival pour des marques internationales en beauté,
-            skincare, alimentaire et grande consommation. Nous savons quelles dates valent votre
-            budget, et lesquelles laisser passer. Nous savons bâtir la montée qui
-            déplace réellement le résultat, et nous connaissons la sensation du pic quand
-            il est en direct et que les chiffres arrivent heure par heure.
+            Nous avons orchestré des campagnes festival pour des marques internationales en
+            beauté, soin, alimentaire et grande consommation. Nous savons quelles dates méritent
+            un budget et lesquelles laisser passer. Nous savons bâtir la montée qui déplace
+            réellement le résultat. Et nous connaissons la tension du pic, lorsque l'événement
+            court en direct et que les chiffres tombent heure par heure.
           </p>
           <p class="cbs-cta__pull">
-            Nous conseillons sur le plan, et nous opérons ce que nous recommandons.
+            Nous concevons le plan, puis nous exécutons ce que nous recommandons.
           </p>
           <div class="cbs-cta__actions">
-            <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Planifier votre calendrier de campagnes avec nous</a>
-            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Voir nos études de cas</a>
+            <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Bâtir ensemble votre calendrier de campagnes</a>
+            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Consulter nos études de cas</a>
           </div>
         </div>
       </div>

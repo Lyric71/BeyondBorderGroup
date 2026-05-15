@@ -3,54 +3,54 @@ import Layout from '../../../layouts/Layout.astro';
 
 const promises = [
   {
-    title: "Des opérateurs seniors tiennent le compte",
-    desc: "Stratégie et exécution par les mêmes personnes. Aucun passage de relais à un junior une fois le contrat signé.",
+    title: "Des opérateurs chevronnés, du cadrage au bilan",
+    desc: "La stratégie et l'exécution s'incarnent dans une même équipe, du cadrage initial jusqu'aux bilans mensuels. Aucune passation à un profil junior une fois le contrat signé.",
   },
   {
-    title: "Engagement séquencé",
-    desc: "Démarrez sur une plateforme. Ajoutez la suivante quand la première fonctionne. Pas d'engagement de douze mois en bloc.",
+    title: "Un déploiement par paliers, jamais en bloc",
+    desc: "Le travail s'amorce sur une plateforme. La suivante n'entre dans le périmètre qu'une fois la précédente rentabilisée. Pas de forfait annuel imposé dès la signature.",
   },
   {
-    title: "Sourcing créateurs en toute indépendance",
-    desc: "Aucune rétrocommission perçue des créateurs ni des agences. Nos intérêts restent du même côté de la table que les vôtres.",
+    title: "Un sourcing créateurs sans conflit d'intérêts",
+    desc: "Aucune rétrocommission n'est perçue auprès des créateurs ni des agences partenaires. La rémunération vient toujours de la marque, jamais des prestataires que nous lui recommandons.",
   },
 ];
 
 const services = [
   {
     icon: 'store',
-    title: "Opérations plateformes",
-    body: "Nous tenons vos boutiques et vos comptes sur Douyin, RedNote (Xiaohongshu), WeChat et Weibo, sans oublier WeChat Channels et Douyin Mall. Publication quotidienne, contenu, service client, pilotage publicitaire.",
+    title: "Pilotage des plateformes",
+    body: "Boutiques et comptes activés chaque jour sur Douyin, RedNote (Xiaohongshu), WeChat et Weibo, jusqu'aux extensions WeChat Channels et Douyin Mall. Production éditoriale, publication, service client et achat média se déploient sous un même toit.",
     href: '#decision-point',
   },
   {
     icon: 'creator',
     title: "Programmes créateurs et KOL",
-    body: "Un vivier qualifié en beauté, agroalimentaire, maison, mode, mère et enfant, tech et lifestyle. Nous négocions, briefons, produisons et mesurons. Et nous vous indiquons quand un créateur est hors marché.",
+    body: "Un vivier de créateurs éprouvés couvre la beauté, l'agroalimentaire, la maison, la mode, la parentalité, la tech et l'art de vivre. Négociation, brief, production et mesure se traitent en interne. Lorsqu'un tarif s'éloigne du marché, le diagnostic remonte sans détour.",
     href: '#kol',
   },
   {
     icon: 'video',
     title: "Commerce livestream",
-    body: "Livestreams animés depuis la boutique sur Douyin et Taobao Live, trois à sept sessions par semaine. Nous tenons le plateau, écrivons le script, dessinons le décor, pilotons le média.",
+    body: "Trois à sept sessions de livestream chaque semaine, animées depuis la boutique sur Douyin et Taobao Live. Plateau, scénarisation, scénographie et pilotage média restent intégrés à la même équipe, sans recours à la sous-traitance.",
     href: '#livestream',
   },
   {
     icon: 'film',
     title: "Production de contenu",
-    body: "Vidéos courtes, notes RedNote, plateaux livestream, visuels produit. Tournés dans notre studio de Shanghai ou en extérieur, en mandarin, avec des talents qui collent à la marque.",
+    body: "Vidéos courtes, notes RedNote, plateaux livestream et visuels produit composent une chaîne de production intégrée. Les tournages se déroulent en studio ou en extérieur, en mandarin, avec un casting choisi pour son adéquation à l'univers de la marque.",
     href: '/fr/se-developper-en-chine/studio-de-production',
   },
   {
     icon: 'chart',
     title: "Performance et achat média",
-    body: "Douyin Qianchuan, formats effet RedNote, WeChat Moments, Weibo. Nous allouons, testons, coupons ce qui ne fonctionne pas et renforçons ce qui prend. Les rapports hebdomadaires restent simples.",
+    body: "Douyin Qianchuan, formats à la performance RedNote, WeChat Moments, Weibo : l'allocation s'arbitre en continu. Les budgets se testent, se redéploient vers les leviers productifs, se coupent ailleurs. Le compte rendu hebdomadaire reste lisible, sans empilement d'indicateurs.",
     href: '#how-we-work',
   },
   {
     icon: 'clipboard',
-    title: "Mesure et reporting",
-    body: "Ventes par SKU, par créateur, par livestream, par campagne. GMV, conversion, taux de réachat. Les chiffres qui disent réellement quoi faire demain.",
+    title: "Mesure et lecture des résultats",
+    body: "Ventes ventilées par référence, par créateur, par livestream et par campagne, croisées avec le GMV, le taux de conversion et le réachat. Une sélection resserrée d'indicateurs, calibrée pour éclairer la prochaine décision plutôt que pour épaissir le rapport.",
     href: '#measurement',
   },
 ];
@@ -58,30 +58,30 @@ const services = [
 const models = [
   {
     name: "Modèle DP",
-    tag: "Vous tenez le stock, nous tenons la boutique",
-    desc: "Vous gardez le stock dans vos livres et la relation client à votre nom. Nous opérons en DP (Designated Partner) sur Douyin EC et RedNote. Contenu, livestream, achat média, service client, programmes KOL et KOC : tout est porté par nos équipes, sous votre marque.",
-    when: "Vous voulez le P&L Chine dans vos livres, bâtir un capital de marque durable sur Douyin et RedNote, et vous disposez de la trésorerie pour financer le stock et le budget média.",
+    tag: "Stock chez la marque, boutique opérée par BBG",
+    desc: "Le stock figure dans vos comptes, la relation client conserve votre nom. Beyond Border Group intervient comme Designated Partner sur Douyin EC et RedNote. Contenu, livestream, achat média, service client, programmes KOL et KOC : tout se déroule à l'intérieur de nos équipes, sous votre marque.",
+    when: "Privilégié lorsque le compte de résultat chinois doit consolider chez la marque, qu'un capital durable se construit sur Douyin et RedNote, et que la trésorerie autorise un financement direct du stock et du média.",
     owns: [
-      { label: "Stock", value: "À vous, en entrepôt sous douane ou domestique" },
-      { label: "Licence boutique", value: "À vous" },
-      { label: "Données clients", value: "À vous" },
-      { label: "Contenu, comptes, contrats KOL", value: "À vous" },
-      { label: "Budget média et promotion", value: "Financé à 100 % par vous" },
-      { label: "Chiffre d'affaires", value: "GMV en direct au consommateur, dans vos comptes" },
+      { label: "Stock", value: "Détenu par la marque, entreposé sous régime douanier ou domestique" },
+      { label: "Licence boutique", value: "Au nom de la marque" },
+      { label: "Données clients", value: "Propriété de la marque" },
+      { label: "Contenu, comptes, contrats KOL", value: "Au nom de la marque" },
+      { label: "Budget média et promotion", value: "Intégralement à votre charge" },
+      { label: "Chiffre d'affaires", value: "GMV consommateur reconnu directement dans vos comptes" },
     ],
     yourSide: [
-      "Marge retail entière sur chaque vente",
-      "Visibilité directe sur les données clients et le CRM",
-      "Maîtrise de la marque sur la boutique, le fil et chaque livestream",
-      "Revue mensuelle du P&L avec les leads seniors",
+      "Marge de détail captée vente après vente, sans rabot intermédiaire",
+      "Accès direct aux données clients et au CRM",
+      "Maîtrise éditoriale sur la boutique, le fil et chaque livestream",
+      "Revue mensuelle du compte de résultat avec les responsables seniors de l'équipe",
     ],
     ourSide: [
-      "Opérations quotidiennes, mises à jour des fiches, calendrier vidéo courte",
-      "Production livestream, trois à sept sessions hebdomadaires, plateau, animation et script compris",
-      "Achat média sur Douyin Qianchuan et formats effet RedNote",
-      "Seeding KOL et KOC, négociation, brief et reporting",
-      "Service client en mandarin et modération des avis",
-      "Conformité plateforme, vérification de contenu, négociation des sanctions",
+      "Opérations quotidiennes, des fiches produit au calendrier de vidéos courtes",
+      "Production de livestream : trois à sept sessions par semaine, plateau, animation et scénarisation pris en charge",
+      "Pilotage de l'achat média sur Douyin Qianchuan et formats à la performance RedNote",
+      "Programmes de seeding KOL et KOC, de la négociation au bilan",
+      "Service client en mandarin, modération des commentaires et des avis directement sur la plateforme",
+      "Conformité plateforme : validation éditoriale en amont, arbitrage des sanctions le cas échéant",
     ],
     image: '/Images/grow-in-china/social-commerce/route-dp-unboxing.png',
     imageAlt: "Une jeune Chinoise ouvre un colis Douyin au sol de son appartement, le livestream depuis lequel elle a acheté tourne encore sur son téléphone",
@@ -89,28 +89,28 @@ const models = [
   },
   {
     name: "Modèle distributeur",
-    tag: "Nous tenons le stock, nous tenons la boutique",
-    desc: "Nous achetons votre produit au prix de gros et portons le stock en Chine. Les boutiques Douyin et RedNote tournent sous notre licence, le stock figure dans notre bilan, et nous assumons le risque commercial. Vous nous vendez, nous vendons au consommateur.",
-    when: "Votre marque est déjà installée en Chine, vous voulez le chiffre d'affaires Douyin et RedNote sans la complexité opérationnelle, et vous préférez ne pas immobiliser de trésorerie dans le stock. Les marques nouvelles entrantes trouvent rarement leur compte dans ce modèle.",
+    tag: "Stock et boutique opérés en propre par BBG",
+    desc: "L'achat s'effectue au prix de gros, et le stock rejoint le bilan de Beyond Border Group en Chine. Les boutiques Douyin et RedNote opèrent sous notre licence ; le risque commercial nous incombe. Une vente B2B vers nos comptes, puis une distribution au consommateur final.",
+    when: "Privilégié lorsque la marque est déjà installée en Chine, que le chiffre d'affaires Douyin et RedNote doit rentrer sans complexité opérationnelle, et que la trésorerie ne peut pas s'immobiliser dans le stock. Les primo-entrants y trouvent rarement leur compte.",
     owns: [
-      { label: "Stock", value: "À nous" },
-      { label: "Licence boutique", value: "À nous" },
-      { label: "Données clients", value: "À nous" },
-      { label: "Contenu, comptes, contrats KOL", value: "À nous" },
-      { label: "Budget média et promotion", value: "Budget marque + co-investissement BBG" },
-      { label: "Chiffre d'affaires", value: "Facturation en gros, comptabilisée en B2B" },
+      { label: "Stock", value: "Porté par BBG" },
+      { label: "Licence boutique", value: "Au nom de BBG" },
+      { label: "Données clients", value: "Propriété BBG" },
+      { label: "Contenu, comptes, contrats KOL", value: "Au nom de BBG" },
+      { label: "Budget média et promotion", value: "Budget marque, cofinancé par BBG" },
+      { label: "Chiffre d'affaires", value: "Facturation B2B au prix de gros" },
     ],
     yourSide: [
-      "Chiffre d'affaires en gros, sans risque sur le stock",
-      "Une facture B2B unique plutôt qu'un P&L direct-au-consommateur",
-      "Aucune trésorerie immobilisée dans du stock chinois",
-      "Reporting de performance agrégé et lecture de la catégorie",
+      "Un chiffre d'affaires de gros encaissé hors risque de stock",
+      "Une écriture B2B unique, sans compte de résultat direct au consommateur à tenir",
+      "Aucune trésorerie immobilisée dans le stock chinois",
+      "Reporting consolidé et lecture trimestrielle de la catégorie",
     ],
     ourSide: [
-      "Achat du stock, financement et entreposage",
-      "Tout ce que couvre le modèle DP, plus le risque commercial",
-      "Stratégie tarifaire sur Douyin et RedNote dans le respect des garde-fous convenus",
-      "Retours, remboursements, responsabilité du service client",
+      "Achat du stock, financement et entreposage assumés en propre",
+      "Le périmètre intégral du Modèle DP, augmenté du risque commercial",
+      "Politique tarifaire arbitrée sur Douyin et RedNote, à l'intérieur des garde-fous convenus avec la marque",
+      "Retours, remboursements et service client portés sous notre responsabilité",
     ],
     image: '/Images/grow-in-china/social-commerce/route-distributor-livingroom.png',
     imageAlt: "Une mère chinoise suit un livestream Douyin sur sa tablette pendant que sa fille joue à proximité sur le tapis",
@@ -119,15 +119,15 @@ const models = [
 ];
 
 const compareRows = [
-  { label: "Qui tient le stock", tp: "Vous", dist: "BBG" },
-  { label: "Qui tient la boutique et la donnée", tp: "Vous", dist: "BBG" },
-  { label: "Trésorerie engagée", tp: "Élevée", dist: "Aucune" },
-  { label: "Chiffre d'affaires reconnu", tp: "GMV retail moins les frais", dist: "Prix de gros" },
-  { label: "Potentiel de marge", tp: "Marge retail entière", dist: "Plafonné au prix de gros" },
-  { label: "Risque porté", tp: "Stock et demande", dist: "Aucun sur le stock" },
-  { label: "Coûts média et promotion", tp: "100 % à votre charge", dist: "Budget marque + co-investissement BBG" },
-  { label: "Capital de marque sur Douyin et RedNote", tp: "À vous, intégralement", dist: "À vous, bâti par nos soins" },
-  { label: "Profil cible", tp: "Marques construisant un social commerce chinois de long terme", dist: "Marques déjà installées en Chine" },
+  { label: "Propriété du stock", tp: "La marque", dist: "BBG" },
+  { label: "Propriété de la boutique et des données", tp: "La marque", dist: "BBG" },
+  { label: "Engagement de trésorerie", tp: "Élevé", dist: "Nul" },
+  { label: "Chiffre d'affaires reconnu", tp: "GMV de détail, frais déduits", dist: "Prix de gros" },
+  { label: "Potentiel de marge", tp: "Marge de détail captée en intégralité", dist: "Plafonné au prix de cession" },
+  { label: "Risque assumé", tp: "Stock et demande consommateur", dist: "Nul sur le stock" },
+  { label: "Financement média et promotion", tp: "Intégralement à votre charge", dist: "Budget marque, cofinancé par BBG" },
+  { label: "Capital de marque sur Douyin et RedNote", tp: "Détenu par la marque", dist: "Détenu par la marque, construit par BBG" },
+  { label: "Profil cible", tp: "Marques engagées sur un social commerce chinois de long terme", dist: "Marques déjà implantées en Chine" },
 ];
 
 const rhythms = [
@@ -137,19 +137,19 @@ const rhythms = [
     tabId: 'daily',
     pill: "Quotidien",
     title: "Contenu et communauté",
-    desc: "Le fil reste vivant. L'algorithme récompense la régularité, et le silence coûte de la portée plus vite que la plupart des marques l'imaginent.",
-    outcome: "Le fil reste vivant, semaine après semaine, sur une cadence que l'algorithme valorise réellement.",
+    desc: "Le fil ne supporte pas l'interruption. L'algorithme prime la régularité, et chaque silence se paie en portée perdue, plus vite que la plupart des marques ne le mesurent.",
+    outcome: "Un fil entretenu d'une semaine à l'autre, sur une cadence que l'algorithme reconnaît.",
     image: '/Images/grow-in-china/social-commerce/cadence-daily-content.png',
     imageAlt: "Deux monteurs de contenu chinois côte à côte passent en revue les vidéos courtes destinées à un fil Douyin",
     does: [
       "Publication quotidienne de vidéos courtes sur Douyin et RedNote",
-      "Modération des commentaires et réponse aux messages privés en mandarin",
-      "Veille tendances et contenus de réponse rapide",
-      "Sourcing de contenus UGC et KOC",
+      "Modération des commentaires et réponse aux messages privés, en mandarin",
+      "Veille des tendances et formats de réaction rapide",
+      "Sourcing de contenus UGC et activations KOC",
     ],
     deliverables: [
       "Calendrier de contenu hebdomadaire",
-      "Rapport quotidien de communauté",
+      "Bilan quotidien d'animation de communauté",
     ],
   },
   {
@@ -158,19 +158,19 @@ const rhythms = [
     tabId: 'livestream',
     pill: "Hebdomadaire",
     title: "Livestream",
-    desc: "Le livestream tenu depuis la boutique est la cadence hebdomadaire qui bâtit une vraie ligne de chiffre d'affaires. Pas un événement people une fois par trimestre. Un plateau de travail, trois à sept soirs par semaine.",
-    outcome: "Une ligne de chiffre d'affaires prévisible, semaine après semaine, et pas seulement les jours de festival.",
+    desc: "Animé depuis la boutique, le livestream donne la cadence hebdomadaire qui ancre une ligne de revenu durable. Rien d'un rendez-vous people ponctuel : un plateau de travail, ouvert trois à sept soirs par semaine.",
+    outcome: "Une ligne de revenu prévisible chaque semaine, hors des seules journées de festival.",
     image: '/Images/grow-in-china/social-commerce/cadence-weekly-livestream.png',
     imageAlt: "Une régie livestream pendant une session Douyin, les écrans affichent les ventes et l'audience en temps réel",
     does: [
-      "Trois à sept sessions livestream Douyin par semaine",
-      "Écriture des scripts, brief de l'animation, conception du décor",
-      "Optimisation Qianchuan en temps réel derrière le flux",
-      "Rapport post-livestream sur le sell-through et la performance SKU",
+      "Trois à sept sessions de livestream Douyin par semaine",
+      "Scénarisation, brief de l'animation et conception scénographique",
+      "Pilotage Qianchuan en temps réel derrière le flux",
+      "Bilan post-livestream sur le sell-through et la performance par référence",
     ],
     deliverables: [
-      "Rapport hebdomadaire de sell-through livestream",
-      "Revue mensuelle de performance des animateurs",
+      "Bilan hebdomadaire du sell-through livestream",
+      "Revue mensuelle de la performance des animateurs",
     ],
   },
   {
@@ -179,19 +179,19 @@ const rhythms = [
     tabId: 'kol',
     pill: "Mensuel",
     title: "Campagnes KOL et KOC",
-    desc: "La couche créateurs. Nous briefons, négocions et mesurons sur un vivier qualifié, et nous vous signalons les tarifs gonflés. La plupart le sont en ce moment.",
-    outcome: "Notoriété, confiance et conversion à grande échelle, sans surpayer.",
+    desc: "Le palier des créateurs. Brief, négociation et mesure se déroulent à l'intérieur d'un vivier qualifié, et les devis jugés surévalués remontent sans filtre. Une majorité d'entre eux le sont actuellement.",
+    outcome: "Notoriété, confiance et conversion à l'échelle, sans surenchère tarifaire.",
     image: '/Images/grow-in-china/social-commerce/cadence-monthly-kol.png',
     imageAlt: "Une KOL chinoise filme un avis skincare pour RedNote près d'une fenêtre, dans la lumière naturelle de l'après-midi",
     does: [
-      "Shortlist de créateurs tirée de notre vivier qualifié",
-      "Brief, revue de contenu, négociation et paiement",
-      "Programmes de seeding avec 20 à 40 KOC par mois",
-      "Deux ou trois collaborations KOL par mois, jusqu'à cinq parfois",
+      "Présélection de créateurs issue de notre vivier qualifié",
+      "Brief, validation éditoriale, négociation et paiement",
+      "Programmes de seeding mobilisant 20 à 40 KOC par mois",
+      "Deux à trois collaborations KOL par mois, jusqu'à cinq sur les cycles renforcés",
     ],
     deliverables: [
-      "Rapport mensuel de performance des créateurs",
-      "Coût d'acquisition par créateur",
+      "Bilan mensuel de la performance des créateurs",
+      "Coût d'acquisition ventilé par créateur",
     ],
   },
   {
@@ -200,19 +200,19 @@ const rhythms = [
     tabId: 'measurement',
     pill: "Trimestriel",
     title: "Pic festival et mesure",
-    desc: "Les grands rendez-vous (11.11, 6.18, Journée des femmes, Nouvel An chinois) portent leur poids. La préparation festival démarre six mois à l'avance, jamais la semaine d'avant. Puis le rapport dit ce qu'il faut changer pour la prochaine fois.",
-    outcome: "Les festivals tiennent leur part de l'année. Le post-mortem dit ce qu'il faut changer pour la prochaine fois.",
+    desc: "Les grands rendez-vous (11.11, 6.18, Fête des Femmes, Nouvel An chinois) pèsent lourd dans le calendrier annuel. La préparation s'engage six mois en amont, jamais dans les dernières semaines. Le bilan d'après campagne dicte ensuite les ajustements à porter sur la fenêtre suivante.",
+    outcome: "Une contribution festival conforme à son poids dans l'année, prolongée par un bilan qui éclaire la fenêtre suivante.",
     image: '/Images/grow-in-china/social-commerce/cadence-quarterly-festival.png',
     imageAlt: "Un tableau de bord boutique Douyin pendant le festival 11.11, le compteur de ventes grimpe en caractères rouges",
     does: [
-      "Plan festival bâti six mois à l'avance",
-      "Stock, prix et mécaniques promotionnelles",
-      "Montée en trafic avant le festival, opérations le jour J, CRM post-festival",
-      "Reporting quotidien pendant la fenêtre festival",
+      "Plan festival construit six mois en amont",
+      "Arbitrages de stock, de prix et de mécaniques promotionnelles",
+      "Montée en charge avant l'événement, exécution le jour J, relances CRM post-festival",
+      "Reporting quotidien sur toute la fenêtre festival",
     ],
     deliverables: [
-      "Deck du plan festival",
-      "Rapport post-festival avec comparaison année sur année",
+      "Présentation du plan festival",
+      "Bilan post-festival, comparaison année sur année",
     ],
   },
 ];
@@ -220,15 +220,15 @@ const rhythms = [
 const sisterPackages = [
   {
     title: "WeChat et Weibo",
-    desc: "Contenu quotidien, communauté et seeding KOL sur les plateformes où vivent encore les achats réfléchis. Pour les marques où la confiance pèse plus que l'achat impulsif.",
+    desc: "Contenu quotidien, animation de communauté et seeding KOL sur les plateformes qui hébergent encore les achats réfléchis. Adapté aux marques pour lesquelles la confiance pèse davantage que l'impulsion.",
   },
   {
     title: "Contenus RedNote et Douyin",
-    desc: "Vidéos courtes, notes et partenariats créateurs, sans boutique derrière. Pour les marques qui bâtissent leur notoriété en amont d'un lancement commerce futur.",
+    desc: "Vidéos courtes, notes et partenariats créateurs, hors logique de boutique. Pensé pour les marques qui installent leur notoriété en amont d'un lancement commercial.",
   },
   {
-    title: "Retainer social always-on",
-    desc: "Un forfait mensuel unique qui couvre les quatre canaux. Tenu par les mêmes opérateurs que votre commerce, sur un périmètre allégé.",
+    title: "Forfait social en continu",
+    desc: "Un engagement mensuel couvre les quatre canaux. Mêmes équipes que pour votre commerce, périmètre resserré.",
   },
 ];
 
@@ -236,12 +236,12 @@ const contextCards = [
   {
     image: '/Images/grow-in-china/social-commerce/truth-content-engine.png',
     alt: "Une productrice de contenu chinoise passe en revue des montages vidéo courte sur un écran de studio, un carnet de notes manuscrites en chinois posé à côté",
-    kicker: "Le contenu est la vente",
-    title: "Le contenu est l'équipe de vente",
-    body: "Un contenu faible signifie des ventes faibles. Si la personne fait défiler en deux secondes, le produit n'est jamais vu. Nous tournons nous-mêmes, en mandarin, chaque jour.",
+    kicker: "Le contenu fait la vente",
+    title: "Le contenu tient lieu de force commerciale",
+    body: "Un contenu en retrait se traduit immédiatement par des ventes en retrait. Deux secondes de défilement suffisent pour que le produit s'efface du regard. La production reste assurée en interne, en mandarin, sur un rythme quotidien.",
     flow: ["Tourner", "Monter", "Diffuser"],
-    chipLabel: "Point contenu quotidien",
-    chipSub: "Producteurs, monteurs, animation, tous dans la même pièce",
+    chipLabel: "Brief contenu quotidien",
+    chipSub: "Producteurs, monteurs et animation, sous le même toit",
     avatars: [
       { letter: 'M', tone: 'blue' },
       { letter: 'J', tone: 'dark' },
@@ -255,38 +255,38 @@ const contextCards = [
   {
     image: '/Images/grow-in-china/social-commerce/truth-daily-operation.png',
     alt: "Un plateau livestream Douyin en pleine session, l'animatrice à l'image au fond, deux producteurs surveillent le tableau de bord en direct au premier plan",
-    kicker: "Cadence sur l'année",
-    title: "Une opération quotidienne, jamais une campagne",
-    body: "Les boutiques Douyin demandent une publication quotidienne, un livestream hebdomadaire et du média derrière les deux. L'algorithme sanctionne le silence.",
+    kicker: "Une cadence à l'année",
+    title: "Une exploitation continue, jamais une campagne ponctuelle",
+    body: "Les boutiques Douyin réclament une publication chaque jour, un livestream chaque semaine et un appui média derrière les deux. Le silence s'y paie en sanction algorithmique.",
     credentials: ["Publications", "Livestreams", "Médias", "Commentaires"],
-    chipLabel: "En direct sur plateforme",
+    chipLabel: "En direct sur la plateforme",
     chipSub: "Huit à vingt livestreams par mois",
     badge: "L'algorithme sanctionne le silence",
-    badgeSub: "Nous tenons donc la cadence, festival ou pas.",
+    badgeSub: "Cadence tenue toute l'année, festival ou non.",
   },
 ];
 
 const faqs = [
-  { cat: "Stratégie", q: "Quelle est la vraie différence entre e-commerce et social commerce en Chine ?", a: "L'e-commerce relève du comportement de recherche. La personne sait déjà ce qu'elle veut et se rend sur Tmall ou JD pour le trouver. Le social commerce relève du comportement de découverte. Elle ignorait vouloir le produit avant que le fil ne le lui propose. Autre état d'esprit, autre contenu, autres indicateurs. La plupart des marques ont besoin des deux, à condition de savoir lequel porte l'activité." },
-  { cat: "Plateformes", q: "Sur quelles plateformes faut-il être en premier ?", a: "Cela dépend de la catégorie. Beauté et lifestyle : RedNote d'abord, Douyin ensuite. Grande consommation et alimentaire : Douyin d'abord. B2B et achats réfléchis : WeChat. Premium et luxe : RedNote et WeChat. Vouloir être sur les quatre plateformes dès le premier mois reste la faute la plus fréquente que nous observons. La marque se disperse et ne gagne nulle part." },
-  { cat: "Coût", q: "Combien coûte un lancement sur Douyin ou RedNote ?", a: "Le setup tourne entre 80 000 et 150 000 RMB selon la complexité de la boutique et les besoins en contenu. (Nous avons monté un lancement à moins, mais en rognant sur des choix que nous regrettons aujourd'hui.) Les opérations mensuelles vont de 50 000 à 250 000 RMB selon le volume de contenu, le pilotage publicitaire et la fréquence des livestreams. Le budget média s'ajoute à cela. Comptez au minimum 100 000 RMB de média par mois sur les six premiers mois, le temps d'apprendre ce qui fonctionne réellement dans votre catégorie. Ajoutez les dépôts plateformes : 30 000 RMB pour Douyin et 20 000 RMB pour RedNote, remboursables." },
-  { cat: "Coût", q: "Que coûte Tmall Global au-dessus de cela ?", a: "Un dépôt de 30 000 USD, des frais annuels de service entre 5 000 et 10 000 USD selon la catégorie, une commission de 2 % à 5 % par transaction et 1 % Alipay. Cross-border, donc aucune entité chinoise requise." },
-  { cat: "Stratégie", q: "Combien de temps avant les premières ventes ?", a: "Sur Douyin, les premières ventes tombent en quelques semaines dès lors que vous activez du trafic payant. La rentabilité, elle, demande trois à six mois. Sur RedNote, la construction de marque vient d'abord. Les ventes suivent six à neuf mois plus tard. Toute promesse plus rapide tient de la survente." },
-  { cat: "Opérations", q: "Quand faut-il commencer à préparer le 11.11 ou le 6.18 ?", a: "Six mois à l'avance. Le calendrier des festivals chinois reste la contrainte de planification la plus sous-estimée chez les marques étrangères. La préparation du 11.11 démarre en mai. Celle du 6.18 démarre en décembre. Les marques qui arrivent trois mois avant héritent des invendus publicitaires et des créneaux KOL résiduels, à des tarifs premium." },
-  { cat: "Stratégie", q: "Faut-il une entité juridique en Chine ?", a: "Pas toujours. Les modèles cross-border (Douyin Cross-Border, Tmall Global, JD Worldwide) n'exigent pas d'entité. Le onshore (Douyin, Tmall, JD domestiques) en exige une, ou un partenaire TP qui en met une à disposition. Nous opérons les deux. Et si vous disposez déjà d'une WFOE constituée pour du commerce offline mais désormais appelée à faire du digital, nous vous indiquons s'il faut élargir l'objet social, monter une seconde entité ou rester en cross-border. La mauvaise configuration coûte plus cher que la bonne, à coup sûr." },
-  { cat: "Opérations", q: "Peut-on utiliser notre contenu global tel quel ?", a: "Presque jamais. Éclairage, rythme, voix off, textes à l'écran, étalonnage, jusqu'au cadrage des mains. Tout diffère. Les acheteurs chinois repèrent un contenu étranger traduit en deux secondes et passent au suivant. Nous retournons ou remontons le contenu pour les plateformes locales." },
-  { cat: "Créateurs", q: "Quelle est la différence entre un KOL et un KOC ?", a: "KOL : Key Opinion Leader. Audience importante, cachet plus élevé, levier de notoriété. KOC : Key Opinion Consumer. Audience plus restreinte, ton plus authentique, levier de conversion. La plupart des campagnes ont besoin des deux. Les KOC font le volume. Les KOL apportent la crédibilité." },
-  { cat: "Coût", q: "Combien coûtent réellement les KOL ?", a: "Une créatrice RedNote de mid-tier avec 100 000 abonnés se rémunère entre 15 000 et 40 000 RMB la note. Un animateur Douyin de premier rang, entre 200 000 et 2 millions de RMB le créneau livestream, plus une commission de 20 % à 30 % du GMV. Des accords à la commission existent avec des animateurs plus modestes, mais la marge s'amincit vite. Nous benchmarkons chaque devis contre le marché en direct, parce que les tarifs bougent d'un mois à l'autre." },
-  { cat: "Créateurs", q: "Un livestream people vaut-il l'investissement ?", a: "Presque jamais. Les livestreams stars génèrent un pic suivi de silence, avec un coût d'acquisition gonflé qui fait toujours bonne figure sur la troisième slide du rapport de campagne. Les livestreams animés depuis la boutique, à raison de trois à sept sessions par semaine, bâtissent une ligne de chiffre d'affaires prévisible. Nous recommandons le second, presque à chaque fois." },
-  { cat: "Opérations", q: "Comment gérez-vous les retours et le service client ?", a: "Les plateformes chinoises imposent une réponse rapide, sous une minute sur Douyin en heures de pointe, et une forte tolérance aux retours. Le retour sans motif sous 7 jours est la norme. Nous tenons le service client en mandarin, sur la plateforme, avec des SLA de temps de réponse. Les retours transitent par notre entrepôt ou par le vôtre." },
-  { cat: "Opérations", q: "Et la censure des contenus ?", a: "Certains mots, allégations et images sont signalés ou bloqués. Allégations santé. Comparaisons directes avec des concurrents. Certaines références politiques et culturelles. Nous validons chaque pièce de contenu avant publication. Les erreurs coûtent le compte, et parfois le compte ne revient pas." },
-  { cat: "Coût", q: "Comment se gèrent les paiements ?", a: "WeChat Pay et Alipay dominent. Les plateformes encaissent pour votre compte et règlent sur un cycle, généralement hebdomadaire ou tous les quinze jours. Les modèles cross-border règlent en USD ou EUR sur votre compte à l'étranger. Les modèles onshore règlent en RMB sur votre entité chinoise." },
-  { cat: "Stratégie", q: "Peut-on mener une campagne sans ouvrir de boutique Douyin ou RedNote ?", a: "Oui, en notoriété. Seeding KOL, notes de marque, livestreams animés par des créateurs qui vendent depuis leur propre boutique. Vous ne détiendrez ni le client ni la donnée, mais c'est une voie valide pour tester la demande avant d'ouvrir votre propre boutique." },
-  { cat: "Plateformes", q: "À quoi ressemble un calendrier de contenu type ?", a: "Sur RedNote : 8 à 15 notes par mois depuis le compte marque, 20 à 40 notes KOC, 2 à 5 notes KOL. Sur Douyin : 15 à 30 vidéos courtes par mois, 8 à 20 sessions livestream. Le volume n'est pas optionnel. Les algorithmes sanctionnent le silence." },
-  { cat: "Stratégie", q: "Comment mesurer le ROI ?", a: "Trois chiffres suivis chaque semaine : coût par acquisition, GMV par heure de livestream, taux d'engagement contenu. Trois chiffres chaque mois : taux de réachat, ROAS média global, lift sur les recherches de marque. Le reste relève du détail d'appui." },
-  { cat: "Coût", q: "Qu'est-ce qui dérape le plus souvent ?", a: "Trois choses, généralement dans cet ordre. Les marques sous-investissent dans la production de contenu. Les marques signent un seul créateur bon marché et attendent qu'une campagne entière en sorte. Et les marques coupent les dépenses au deuxième mois faute de résultats immédiats, ce qui tue l'élan juste avant qu'il ne commence à composer. Nous avons vu ce scénario se répéter peut-être une dizaine de fois en deux ans." },
-  { cat: "Plateformes", q: "Faut-il être sur WeChat si nous sommes déjà sur Douyin et RedNote ?", a: "En B2C, vous pouvez probablement faire l'impasse sur WeChat la première année si le budget est serré, à une nuance près : WeChat Channels est devenu une vraie surface de social commerce ces dix-huit derniers mois, et l'écart avec Douyin se referme trimestre après trimestre. En B2B, en premium et pour toute marque qui vend un achat réfléchi, WeChat n'est pas optionnel. C'est là que les clients à forte valeur restent assez longtemps pour acheter une deuxième puis une troisième fois." },
-  { cat: "Plateformes", q: "Comment démarrer avec vous ?", a: "Un échange de trente minutes avec notre équipe senior, sans intermédiaire junior. Vous nous indiquez la catégorie, la fourchette budgétaire et le calendrier. Nous vous disons ce qui est réaliste, par quelles plateformes commencer et à quoi ressembleront les quatre-vingt-dix premiers jours. Aucune proposition tant que les deux parties ne sont pas d'accord sur la pertinence du projet." },
+  { cat: "Stratégie", q: "Quelle est la véritable différence entre e-commerce et social commerce en Chine ?", a: "L'e-commerce répond à un comportement de recherche : l'acheteur sait ce qu'il veut et se rend sur Tmall ou JD pour le trouver. Le social commerce, lui, relève du comportement de découverte. Le produit arrive dans son fil avant même qu'il en ait formulé le besoin. Deux logiques distinctes, deux registres de contenu, deux familles d'indicateurs. La plupart des marques mobilisent les deux canaux, à condition d'avoir identifié lequel porte réellement l'activité." },
+  { cat: "Plateformes", q: "Sur quelles plateformes convient-il de s'installer en premier ?", a: "Tout dépend de la catégorie. Beauté et art de vivre : RedNote d'abord, Douyin ensuite. Grande consommation et alimentaire : Douyin en priorité. B2B et achats à long cycle : WeChat. Premium et luxe : RedNote et WeChat. L'erreur la plus fréquente, observée à de multiples reprises, consiste à vouloir occuper les quatre plateformes dès le premier mois. La marque s'éparpille et ne s'impose nulle part." },
+  { cat: "Coût", q: "Combien coûte un lancement sur Douyin ou RedNote ?", a: "La mise en place se chiffre entre 80 000 et 150 000 RMB, selon la complexité de la boutique et le volume de contenu nécessaire. Il nous est arrivé de boucler un lancement pour moins, au prix de choix que nous ne recommandons plus. Les opérations courantes s'établissent ensuite entre 50 000 et 250 000 RMB par mois, en fonction du rythme éditorial, du pilotage média et de la fréquence des livestreams. Le budget média se calcule à part : tabler sur 100 000 RMB mensuels pendant les six premiers mois constitue un plancher raisonnable, le temps de cerner les ressorts propres à la catégorie. À cela s'ajoutent les dépôts plateformes, remboursables : 30 000 RMB pour Douyin, 20 000 RMB pour RedNote." },
+  { cat: "Coût", q: "Quel surcoût représente Tmall Global ?", a: "Un dépôt de 30 000 USD à l'ouverture, des frais annuels de service compris entre 5 000 et 10 000 USD selon la catégorie, une commission de 2 % à 5 % sur chaque transaction et 1 % de frais Alipay. Le dispositif passe par le cross-border ; aucune entité juridique chinoise n'est exigée." },
+  { cat: "Stratégie", q: "Combien de temps avant les premières ventes ?", a: "Sur Douyin, les premières commandes tombent en quelques semaines, dès activation du trafic payant. La rentabilité, en revanche, se construit sur un horizon de trois à six mois. Sur RedNote, la marque s'installe d'abord et la conversion suit : les ventes arrivent six à neuf mois plus tard. Toute promesse plus rapide relève de la pure promesse commerciale." },
+  { cat: "Opérations", q: "À partir de quand préparer le 11.11 ou le 6.18 ?", a: "Six mois en amont, au minimum. Le calendrier des festivals chinois reste la contrainte de planification la plus sous-estimée par les marques étrangères. La préparation du 11.11 démarre en mai ; celle du 6.18, dès décembre. Une marque qui se présente trois mois avant l'événement hérite des invendus publicitaires et des créneaux KOL restants, à des tarifs gonflés sans contrepartie." },
+  { cat: "Stratégie", q: "Faut-il disposer d'une entité juridique en Chine ?", a: "Pas systématiquement. Les modèles cross-border (Douyin Cross-Border, Tmall Global, JD Worldwide) se passent d'entité chinoise. Le onshore (Douyin, Tmall et JD domestiques) impose soit une entité dédiée, soit un partenaire TP qui en met une à disposition. Beyond Border Group opère sur les deux schémas. Lorsque la marque dispose déjà d'une WFOE constituée pour du commerce physique mais désormais sollicitée sur le digital, nous instruisons l'arbitrage adapté : élargir l'objet social, créer une seconde entité ou conserver le cross-border. Un mauvais montage coûte invariablement plus cher qu'un montage taillé." },
+  { cat: "Opérations", q: "Peut-on réutiliser le contenu global en l'état ?", a: "Presque jamais. Tout se distingue : l'éclairage, le rythme, la voix off, les surimpressions, l'étalonnage, jusqu'au cadrage des mains à l'image. L'acheteur chinois repère un contenu étranger doublé en deux secondes et passe au suivant. La règle est nette : chaque pièce est retournée ou remontée pour les plateformes locales." },
+  { cat: "Créateurs", q: "Quelle est la différence entre un KOL et un KOC ?", a: "KOL : Key Opinion Leader. Audience large, cachet élevé, levier de notoriété. KOC : Key Opinion Consumer. Audience plus restreinte, registre plus authentique, levier de conversion. La plupart des dispositifs reposent sur l'articulation des deux. Les KOC font le volume ; les KOL apportent la crédibilité." },
+  { cat: "Coût", q: "Combien coûtent réellement les KOL ?", a: "Une créatrice RedNote de profil intermédiaire, à 100 000 abonnés, facture entre 15 000 et 40 000 RMB la publication. Un animateur Douyin de premier rang réclame de 200 000 à 2 millions de RMB par créneau de livestream, auxquels s'ajoute une commission de 20 % à 30 % du GMV. Des accords à la commission seule existent avec des animateurs plus modestes, mais la marge s'érode rapidement. Chaque devis est confronté au marché en direct, car les tarifs évoluent d'un mois sur l'autre." },
+  { cat: "Créateurs", q: "Un livestream avec une célébrité justifie-t-il l'investissement ?", a: "Très rarement. Le livestream de célébrité provoque un pic de ventes immédiatement suivi d'un effondrement, doublé d'un coût d'acquisition que la troisième page d'un rapport de campagne suffit à maquiller. Le livestream animé depuis la boutique, à raison de trois à sept sessions par semaine, construit une ligne de revenu prévisible. C'est ce second dispositif que nous privilégions dans la quasi-totalité des cas." },
+  { cat: "Opérations", q: "Comment gérez-vous les retours et le service client ?", a: "Les plateformes chinoises imposent un délai de réponse serré, inférieur à une minute sur Douyin aux heures de pointe, et une politique de retours particulièrement souple. Le retour sans motif sous sept jours s'impose comme la norme. Le service client est assuré en mandarin, directement sur la plateforme, encadré par des engagements de temps de réponse. Les retours transitent par notre entrepôt ou par celui de la marque, selon le montage retenu." },
+  { cat: "Opérations", q: "Et la censure des contenus ?", a: "Certains mots, certaines allégations, certaines images sont signalés ou bloqués d'office : revendications de santé, comparatifs directs avec des concurrents, mentions politiques ou culturelles sensibles. Chaque pièce de contenu fait l'objet d'une validation préalable. Une erreur coûte le compte, parfois sans retour possible." },
+  { cat: "Coût", q: "Comment s'organisent les paiements ?", a: "WeChat Pay et Alipay dominent très largement le règlement à l'achat. Les plateformes encaissent pour le compte de la marque et reversent les fonds sur un cycle hebdomadaire ou bimensuel. En cross-border, le règlement tombe en USD ou en EUR sur un compte étranger. En onshore, il tombe en RMB sur l'entité chinoise." },
+  { cat: "Stratégie", q: "Peut-on mener une campagne sans ouvrir de boutique Douyin ou RedNote ?", a: "Oui, sur un objectif de notoriété. Seeding KOL, notes de marque, livestreams portés par des créateurs qui vendent depuis leur propre boutique : le dispositif tient debout. La marque n'en détiendra ni le client ni la donnée, mais l'approche reste valide pour tester la demande avant d'ouvrir sa propre vitrine." },
+  { cat: "Plateformes", q: "À quoi ressemble un calendrier de contenu type ?", a: "Sur RedNote, on compte 8 à 15 notes mensuelles publiées depuis le compte de marque, 20 à 40 notes KOC et 2 à 5 notes KOL. Sur Douyin, 15 à 30 vidéos courtes par mois, complétées par 8 à 20 sessions de livestream. Le volume n'est pas négociable. Les algorithmes sanctionnent le silence." },
+  { cat: "Stratégie", q: "Comment mesurer le retour sur investissement ?", a: "Trois indicateurs suivis chaque semaine : coût par acquisition, GMV par heure de livestream, taux d'engagement sur le contenu. Trois autres tenus chaque mois : taux de réachat, ROAS média global, progression des requêtes de marque. Le reste relève du détail d'analyse." },
+  { cat: "Coût", q: "Quelles sont les erreurs les plus fréquentes ?", a: "Trois écueils reviennent, presque toujours dans cet ordre. Un sous-investissement chronique dans la production de contenu. La signature d'un créateur unique, peu coûteux, dont on attend qu'il porte à lui seul une campagne entière. Et la coupe budgétaire au deuxième mois, faute de résultats immédiats, qui casse l'élan au moment précis où il commence à prendre. Ce scénario s'est rejoué sous nos yeux une dizaine de fois en deux ans." },
+  { cat: "Plateformes", q: "Faut-il être présent sur WeChat lorsque l'on opère déjà sur Douyin et RedNote ?", a: "En B2C, il reste possible de différer WeChat la première année si le budget est tendu, à une réserve près : WeChat Channels s'est imposé en dix-huit mois comme une véritable surface de social commerce, et l'écart avec Douyin se resserre de trimestre en trimestre. En B2B, dans le premium et pour toute catégorie reposant sur un achat réfléchi, WeChat cesse d'être optionnel. C'est là que les clients à forte valeur restent suffisamment longtemps pour acheter une deuxième, puis une troisième fois." },
+  { cat: "Plateformes", q: "Comment démarrer avec vous ?", a: "Un échange de trente minutes avec un membre senior de l'équipe, sans intermédiaire junior. La marque expose sa catégorie, sa fourchette budgétaire et son calendrier. Nous indiquons en retour ce qui relève du réalisable, par quelles plateformes commencer, et l'allure que prendront les quatre-vingt-dix premiers jours. Aucune proposition n'est rédigée tant que les deux parties ne s'accordent pas sur la pertinence du projet." },
 ];
 
 const faqCategories = ["Toutes", "Stratégie", "Coût", "Plateformes", "Opérations", "Créateurs"];
@@ -327,8 +327,8 @@ const serviceJsonLd = {
 ---
 
 <Layout
-  title="Social Commerce en Chine pour les marques étrangères"
-  description="Social commerce en Chine pour les marques étrangères. Boutiques Douyin, RedNote, WeChat et Weibo, programmes KOL, livestreams hebdomadaires, tenus par des opérateurs seniors."
+  title="Social commerce en Chine pour les marques internationales"
+  description="Pilotage du social commerce chinois pour les marques internationales. Boutiques Douyin, RedNote, WeChat et Weibo, programmes KOL et livestreams hebdomadaires, opérés par une équipe senior."
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(serviceJsonLd)} is:inline />
@@ -352,32 +352,32 @@ const serviceJsonLd = {
         </nav>
         <span class="eyebrow eyebrow--on-dark cbs-reveal">Social commerce</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
-          <span class="cbs-hero__title-row">En Chine, on ne va plus à la boutique.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--accent">La boutique vient au fil.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">Nous tenons cette opération.</span>
+          <span class="cbs-hero__title-row">En Chine, l'acheteur ne se rend plus jusqu'à la boutique.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent">C'est la boutique qui s'invite dans son fil.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">Cette mécanique, nous l'orchestrons au quotidien.</span>
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          Le social commerce en Chine n'est pas une couche posée sur l'e-commerce. C'est la première
-          voie de vente pour la plupart des marques de consommation. Nous l'opérons pour des marques
-          internationales. L'opération entière, jamais une simple présentation.
+          En Chine, le social commerce ne se greffe plus à l'e-commerce. Il s'est imposé en tête de
+          pont des ventes pour la plupart des marques de consommation. Beyond Border Group en pilote
+          l'intégralité, du cadrage stratégique à l'exécution quotidienne sur plateforme.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
-          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Nous parler</a>
-          <a href="#how-we-work" class="btn btn--ghost-light cbs-magnetic">Voir notre méthode</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Entrer en relation</a>
+          <a href="#how-we-work" class="btn btn--ghost-light cbs-magnetic">Consulter la méthode</a>
         </div>
 
         <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num" data-counter="15" data-suffix="+">0</span>
-            <span class="cbs-hero__meta-label">ans à tenir Douyin et RedNote pour des marques étrangères</span>
+            <span class="cbs-hero__meta-label">années à opérer Douyin et RedNote pour des marques étrangères</span>
           </div>
           <div class="cbs-hero__meta-item">
             <span class="cbs-hero__meta-num" data-counter="40" data-suffix="+">0</span>
-            <span class="cbs-hero__meta-label">boutiques et comptes social commerce actifs</span>
+            <span class="cbs-hero__meta-label">boutiques et comptes de social commerce en activité</span>
           </div>
           <div class="cbs-hero__meta-item">
-            <span class="cbs-hero__meta-num">Une équipe</span>
-            <span class="cbs-hero__meta-label">Stratégie, contenu, livestream et achat média, de bout en bout</span>
+            <span class="cbs-hero__meta-num">Une équipe unique</span>
+            <span class="cbs-hero__meta-label">Stratégie, contenu, livestream et achat média rassemblés sous un même toit</span>
           </div>
         </div>
       </div>
@@ -399,10 +399,10 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Notre approche</span>
-          <h2>Deux constats avant que nous touchions à votre social commerce</h2>
+          <h2>Deux constats avant toute intervention sur votre social commerce</h2>
           <p class="section-header__lead">
-            La plupart des marques abordent Douyin et RedNote comme n'importe quel nouveau marché.
-            Aucune des deux plateformes ne récompense cette approche. Deux principes structurent notre manière de faire.
+            La plupart des marques abordent Douyin et RedNote comme un marché de plus à conquérir.
+            Aucune des deux plateformes ne récompense ce réflexe. Deux principes guident, en amont, notre méthode.
           </p>
         </header>
 
@@ -533,19 +533,19 @@ const serviceJsonLd = {
         <div class="cbs-value">
           <div class="cbs-value__copy">
             <span class="eyebrow">Pourquoi les marques nous choisissent</span>
-            <h2>La plupart des agences social commerce n'ont jamais tenu de boutique. Nous, si.</h2>
+            <h2>Peu d'agences de social commerce ont véritablement opéré une boutique. Beyond Border Group le fait depuis quinze ans.</h2>
             <p>
-              Notre équipe vient de Publicis Commerce China. Nous avons bâti et opéré des boutiques Douyin
-              et RedNote pour des marques internationales. Nous savons quels créateurs convertissent
-              parce que nous les avons briefés. Nous savons ce que Qianchuan valorise parce que nous
-              y avons dépensé chaque jour.
+              L'équipe vient de Publicis Commerce China. Elle a conçu et fait tourner des boutiques Douyin
+              et RedNote pour des marques internationales. Si nous identifions les créateurs qui convertissent,
+              c'est que nous les avons briefés. Si nous lisons les arbitrages de Qianchuan, c'est que nous
+              y dépensons chaque jour.
             </p>
             <blockquote class="cbs-quote cbs-quote--inline">
-              <p>La plupart des consultants qui parlent de Douyin et RedNote n'y ont jamais tenu de boutique. Nous, si, et cela change ce que nous vous disons.</p>
+              <p>Les consultants qui parlent de Douyin et de RedNote ont rarement opéré une boutique sur ces plateformes. Nous l'avons fait, et cela change radicalement la nature des recommandations que nous formulons.</p>
             </blockquote>
             <p>
-              Nous avons perdu un 11.11 et remporté celui qui a suivi. Quand nous vous indiquons ce qui fonctionne
-              en mars, c'est parce que nous étions à l'intérieur de la plateforme en février.
+              Nous avons manqué un 11.11 avant de remporter le suivant. Si nous indiquons en mars ce qui
+              fonctionne sur Douyin, c'est que nous étions à l'intérieur de la plateforme dès février.
             </p>
             <a href="/fr/qui-nous-sommes#team" class="btn btn--secondary cbs-magnetic">Rencontrer l'équipe</a>
           </div>
@@ -575,11 +575,11 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Ce que nous faisons</span>
-          <h2>Six terrains, une seule équipe</h2>
+          <h2>Six terrains, une équipe unique</h2>
           <p class="section-header__lead">
-            Plutôt que quatre agences, quatre briefs et quatre factures. Un seul opérateur sur le contenu,
-            le commerce, les créateurs et le média. La stratégie qui figure dans la présentation est celle
-            qui tourne sur la plateforme dès lundi.
+            Plutôt que de multiplier agences, briefs et factures, un même opérateur prend en main
+            le contenu, le commerce, les créateurs et le média. La stratégie inscrite dans la
+            présentation tourne sur la plateforme dès le lundi suivant.
           </p>
         </header>
 
@@ -590,7 +590,7 @@ const serviceJsonLd = {
               <h3 class="cbs-service__title">{s.title}</h3>
               <p class="cbs-service__body">{s.body}</p>
               <span class="cbs-service__arrow">
-                Learn more
+                En savoir plus
                 <span class="cbs-service__arrow-icon" aria-hidden="true">→</span>
               </span>
             </a>
@@ -604,12 +604,12 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Point de décision</span>
-          <h2>Qui tient le stock. Deux manières de faire tourner votre boutique sociale.</h2>
+          <h2>Qui détient le stock ? Deux manières de structurer votre boutique sociale.</h2>
           <p class="section-header__lead">
-            La première question commerciale d'une boutique Douyin ou RedNote, c'est de savoir qui détient le
-            stock. La réponse cadre le contrat, la marge et la façon de comptabiliser le chiffre d'affaires chinois.
-            Nous travaillons sur deux modèles. Choisissez celui qui colle à votre manière d'inscrire la Chine
-            dans vos comptes.
+            Toute boutique Douyin ou RedNote se bâtit autour d'une première question commerciale :
+            à qui revient la propriété du stock ? La réponse oriente la rédaction du contrat, le niveau
+            de marge et le mode de comptabilisation du chiffre d'affaires chinois. Deux modèles structurent
+            l'offre ; le bon choix dépend de la place que la Chine doit occuper dans les comptes.
           </p>
         </header>
 
@@ -627,7 +627,7 @@ const serviceJsonLd = {
               >
                 <span class="cbs-tabs__tab-label">{m.name}</span>
                 <span class="cbs-tabs__tab-tag">{m.tag}</span>
-                {m.highlight && <span class="cbs-tabs__tab-pop">Le plus fréquent</span>}
+                {m.highlight && <span class="cbs-tabs__tab-pop">Le plus retenu</span>}
               </button>
             ))}
             <span class="cbs-tabs__indicator" aria-hidden="true"></span>
@@ -650,12 +650,12 @@ const serviceJsonLd = {
                     <h3 class="cbs-tabs__title">{m.name}</h3>
                     <p class="cbs-tabs__desc">{m.desc}</p>
                     <div class="cbs-tabs__when">
-                      <span class="cbs-tabs__when-label">À privilégier quand</span>
+                      <span class="cbs-tabs__when-label">À privilégier lorsque</span>
                       <p>{m.when}</p>
                     </div>
 
                     <div class="cbs-owns">
-                      <span class="cbs-owns__label">Qui tient quoi</span>
+                      <span class="cbs-owns__label">Qui détient quoi</span>
                       <ul class="cbs-owns__list">
                         {m.owns.map((o) => (
                           <li>
@@ -666,7 +666,7 @@ const serviceJsonLd = {
                       </ul>
                     </div>
 
-                    <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Échanger sur le {m.name}</a>
+                    <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Discuter du {m.name}</a>
                   </div>
 
                   <div class="cbs-tabs__body">
@@ -675,7 +675,7 @@ const serviceJsonLd = {
                     </figure>
 
                     <div class="cbs-tabs__list-wrap">
-                      <span class="cbs-tabs__list-label">Vous recevez</span>
+                      <span class="cbs-tabs__list-label">Ce que vous obtenez</span>
                       <ul class="cbs-tabs__list">
                         {m.yourSide.map((b) => (
                           <li>
@@ -713,7 +713,7 @@ const serviceJsonLd = {
           <div class="cbs-compare__intro">
             <span class="eyebrow">Comment trancher</span>
             <h3>Une question, deux réponses</h3>
-            <p>Voulez-vous tenir la relation client sur Douyin et RedNote, ou préférez-vous une sortie nette en gros ? C'est cette question qui tranche le modèle.</p>
+            <p>Garder la main sur la relation client sur Douyin et RedNote, ou céder le stock au prix de gros et confier la suite ? Cet arbitrage commande le modèle.</p>
           </div>
           <div class="cbs-compare__table-wrap">
             <table class="cbs-compare__table">
@@ -722,11 +722,11 @@ const serviceJsonLd = {
                   <th scope="col" class="cbs-compare__row-head-col"></th>
                   <th scope="col" class="cbs-compare__head cbs-compare__head--tp">
                     <span class="cbs-compare__head-label">Modèle DP</span>
-                    <span class="cbs-compare__head-sub">Vous tenez le stock</span>
+                    <span class="cbs-compare__head-sub">Vous détenez le stock</span>
                   </th>
                   <th scope="col" class="cbs-compare__head cbs-compare__head--dist">
                     <span class="cbs-compare__head-label">Modèle distributeur</span>
-                    <span class="cbs-compare__head-sub">Nous tenons le stock</span>
+                    <span class="cbs-compare__head-sub">Le stock revient à BBG</span>
                   </th>
                 </tr>
               </thead>
@@ -742,12 +742,12 @@ const serviceJsonLd = {
             </table>
           </div>
           <p class="cbs-compare__note">
-            Le modèle qui colle dépend de deux variables : la place que vous voulez accorder au social commerce chinois
-            dans votre chiffre d'affaires global, et la trésorerie que vous pouvez aligner derrière
-            cette ambition. Les marques très ambitieuses qui peuvent financer le stock
-            et le média choisissent en général le DP. Celles qui visent un chiffre d'affaires régulier sans
-            immobiliser leur trésorerie optent pour le distributeur. Certaines marques tiennent les deux en parallèle sur
-            des catégories différentes. Rien de tout cela ne forme une échelle de maturité.
+            Le bon modèle se décide sur deux variables : la place que la marque entend donner au social
+            commerce chinois dans son chiffre d'affaires consolidé, et la trésorerie qu'elle peut mobiliser
+            pour soutenir cette ambition. Les marques offensives, capables de financer le stock et le média,
+            retiennent généralement le Modèle DP. Celles qui cherchent un revenu régulier sans engager de
+            trésorerie penchent pour le distributeur. Certains groupes combinent les deux en parallèle, sur
+            des catégories distinctes. Aucun de ces choix ne dessine un palier de maturité.
           </p>
         </div>
       </div>
@@ -758,10 +758,10 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">Notre méthode</span>
-          <h2>Quatre cadences qui font tourner votre social commerce</h2>
+          <h2>Quatre cadences qui structurent votre social commerce</h2>
           <p class="section-header__lead">
-            Une fois le modèle posé, le travail ne s'arrête pas, il change de forme. Quatre
-            cadences tournent en parallèle, toute l'année.
+            Une fois le modèle arrêté, le travail bascule sans pour autant ralentir. Quatre cadences
+            se déploient en parallèle, tout au long de l'année.
           </p>
         </header>
 
@@ -854,10 +854,10 @@ const serviceJsonLd = {
           <span class="eyebrow">Pour du social sans commerce</span>
           <h2>Adossé à TheRedScroll</h2>
           <p class="section-header__lead">
-            Certaines marques veulent une présence sociale chinoise (WeChat, Weibo, contenu Douyin,
-            notes RedNote) sans l'opération commerce complète derrière. TheRedScroll est
-            notre agence sœur conçue précisément pour cela. Contenu quotidien, communauté et seeding KOL,
-            sans boutique en dessous.
+            Certaines marques recherchent une présence sociale chinoise sur WeChat, Weibo, Douyin et
+            RedNote sans embrasser l'appareil commerce complet. TheRedScroll, notre agence sœur, prend
+            en charge précisément ce périmètre : contenu quotidien, animation de communauté et seeding
+            KOL, hors logique de boutique.
           </p>
         </header>
 
@@ -866,33 +866,33 @@ const serviceJsonLd = {
             <div class="cbs-sister__logo">
               <img src="/Images/AgencyLogos/TheredScroll%20PNG.webp" alt="TheRedScroll logo" loading="lazy" decoding="async" />
             </div>
-            <span class="cbs-sister__chip">Produit sœur</span>
-            <h3 class="cbs-sister__title">Social hors plateformes, tenu par les mêmes opérateurs.</h3>
+            <span class="cbs-sister__chip">Offre sœur</span>
+            <h3 class="cbs-sister__title">Une présence sociale prise en charge par les mêmes équipes, sans appareil commerce attaché.</h3>
             <p class="cbs-sister__desc">
               Lorsque la boutique n'est pas la priorité mais que la marque doit rester présente dans
-              le fil, TheRedScroll prend en charge le contenu et la communauté. Même groupe,
-              mêmes standards, marque distincte, retainer mensuel plus léger.
+              le fil, TheRedScroll prend en charge contenu et animation de communauté. Même groupe,
+              mêmes standards, marque distincte, engagement mensuel allégé.
             </p>
             <ul class="cbs-sister__stats">
               <li>
                 <span class="cbs-sister__stat-num">4</span>
-                <span class="cbs-sister__stat-label">canaux couverts : WeChat, Weibo, Douyin, RedNote</span>
+                <span class="cbs-sister__stat-label">canaux couverts : WeChat, Weibo, Douyin et RedNote</span>
               </li>
               <li>
                 <span class="cbs-sister__stat-num">25+</span>
-                <span class="cbs-sister__stat-label">années d'expérience sur le social chinois au sein du groupe</span>
+                <span class="cbs-sister__stat-label">années d'expérience cumulées sur le social chinois au sein du groupe</span>
               </li>
               <li>
                 <span class="cbs-sister__stat-num">En interne</span>
-                <span class="cbs-sister__stat-label">équipe native, contenu tourné en studio</span>
+                <span class="cbs-sister__stat-label">équipe locale, contenus tournés en studio</span>
               </li>
             </ul>
             <div class="cbs-sister__actions">
               <a href="https://theredscroll.com" target="_blank" rel="noopener" class="btn cbs-sister__btn-primary">
-                Voir TheRedScroll
+                Découvrir TheRedScroll
                 <span aria-hidden="true">↗</span>
               </a>
-              <a href="/fr/nous-contacter" class="btn cbs-sister__btn-ghost">Confiez-nous votre plan social</a>
+              <a href="/fr/nous-contacter" class="btn cbs-sister__btn-ghost">Nous confier votre plan social</a>
             </div>
           </div>
 
@@ -914,10 +914,10 @@ const serviceJsonLd = {
       <div class="container container--narrow">
         <header class="section-header section-header--center cbs-reveal">
           <span class="eyebrow">FAQ</span>
-          <h2>Vingt questions, réponses directes</h2>
+          <h2>Vingt questions, vingt réponses directes</h2>
           <p class="section-header__lead">
-            Les questions qui nous arrivent au premier rendez-vous, avec les réponses que nous formulons une fois la marque connue.
-            À filtrer par sujet.
+            Les questions qui reviennent dès le premier rendez-vous, accompagnées des réponses que nous
+            formulons une fois la marque étudiée. Filtrage par thème.
           </p>
         </header>
 
@@ -964,17 +964,17 @@ const serviceJsonLd = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">
-          <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
-          <h2 class="cbs-cta__title">Prêts à vendre là où la Chine fait vraiment ses achats ?</h2>
+          <span class="eyebrow eyebrow--on-dark">Échangeons</span>
+          <h2 class="cbs-cta__title">Vendre là où le marché chinois achète réellement, en êtes-vous prêts ?</h2>
           <p class="cbs-cta__lead">
-            Dites-nous la catégorie, la fourchette budgétaire, les plateformes envisagées et
-            si vous visez une fenêtre festival ou un lancement de régime stable. Un membre senior
-            de l'équipe vous répond sous un jour ouvré. Vous ne serez pas renvoyé
-            vers un tunnel commercial ni un répondeur automatique.
+            Précisez la catégorie, la fourchette budgétaire, les plateformes visées et le cadre du
+            lancement, qu'il s'agisse d'une fenêtre festival ou d'un régime de croisière. Un responsable
+            senior de l'équipe vous répond sous un jour ouvré, sans tunnel commercial automatisé ni
+            filtre par répondeur.
           </p>
           <div class="cbs-cta__actions">
-            <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Lancer la conversation</a>
-            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Voir nos études de cas</a>
+            <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Engager la conversation</a>
+            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Consulter nos études de cas</a>
           </div>
         </div>
       </div>
