@@ -2,90 +2,90 @@
 import Layout from '../../../layouts/Layout.astro';
 
 const heroStats = [
-  { num: '20', suffix: '+', label: 'years running festival campaigns for foreign brands' },
-  { num: '10', suffix: '', label: 'festival windows on the China calendar each year' },
-  { num: 'One team', suffix: '', label: 'Strategy, content, livestream, ads and offline, end to end' },
+  { num: '20', suffix: '+', label: "années à piloter des campagnes festivals pour des marques étrangères" },
+  { num: '10', suffix: '', label: "fenêtres festival sur le calendrier chinois chaque année" },
+  { num: "Une équipe", suffix: '', label: "Stratégie, contenu, livestream, achat média et offline, de bout en bout" },
 ];
 
 const channels = [
   {
-    kicker: 'Platform',
-    title: 'The eCommerce platform',
-    body: 'Store decoration, pricing, coupons, the official festival mechanics, paid traffic (Zhitongche, Wanxiangtai).',
+    kicker: "Plateforme",
+    title: "La plateforme eCommerce",
+    body: "Habillage de la boutique, prix, coupons, mécaniques officielles du festival, trafic payant (Zhitongche, Wanxiangtai).",
     image: '/Images/grow-in-china/campaigns/channel-platform-storefront.png',
-    alt: 'A phone showing a brand’s Tmall festival storefront mid-campaign, held in one hand in a Chinese office',
+    alt: "Un téléphone affiche la vitrine festival Tmall d'une marque en pleine campagne, tenu d'une main dans un bureau chinois",
   },
   {
-    kicker: 'Content',
-    title: 'Content and social',
-    body: 'Xiaohongshu, Douyin, WeChat seeding interest in the weeks before the date. Plus the photo and video production that feeds them.',
+    kicker: "Contenu",
+    title: "Contenu et social",
+    body: "Xiaohongshu, Douyin et WeChat sèment l'intérêt dans les semaines qui précèdent la date. Plus la production photo et vidéo qui les alimente.",
     image: '/Images/grow-in-china/campaigns/channel-content-shoot.png',
-    alt: 'A small studio shooting a festival short video, product on a lit table, phone on a gimbal, Mandarin shot-list taped to the wall',
+    alt: "Un petit studio tourne une vidéo courte festival, produit sur une table éclairée, téléphone sur stabilisateur, plan de tournage en mandarin scotché au mur",
   },
   {
-    kicker: 'Creators',
-    title: 'KOL and KOC',
-    body: 'Influencers and everyday reviewers building proof and demand ahead of the peak.',
+    kicker: "Créateurs",
+    title: "KOL et KOC",
+    body: "Les créateurs et les consommateurs experts bâtissent la preuve sociale et la demande avant le pic.",
     image: '/Images/grow-in-china/campaigns/channel-kol-review.png',
-    alt: 'A mid-tier Chinese creator filming a product review for a festival push at home by a window, ring light, afternoon light mixing in',
+    alt: "Une créatrice chinoise de mid-tier filme un avis produit pour un pic festival, chez elle près d'une fenêtre, ring light et lumière d'après-midi mêlées",
   },
   {
-    kicker: 'Live',
-    title: 'Livestream',
-    body: 'Your own brand room, or a host’s room. Often the single biggest sales driver on the day itself.',
+    kicker: "Live",
+    title: "Livestream",
+    body: "Votre propre studio de marque, ou celui d'un animateur. Souvent le premier moteur de ventes le jour même.",
     image: '/Images/grow-in-china/campaigns/channel-livestream-room.png',
-    alt: 'A Douyin livestream room mid-session during a festival, host gesturing at camera, festival countdown graphic on a side monitor',
+    alt: "Un plateau livestream Douyin en pleine session festival, l'animatrice s'adresse à la caméra, le compte à rebours s'affiche sur un moniteur latéral",
   },
   {
-    kicker: 'Private',
-    title: 'Private traffic',
-    body: 'WeChat groups and your member base. People you can reach directly, at no media cost.',
+    kicker: "Privé",
+    title: "Trafic privé",
+    body: "Les groupes WeChat et votre base de membres. Des audiences que vous touchez directement, sans coût média.",
     image: '/Images/grow-in-china/campaigns/channel-wechat-groups.png',
-    alt: 'A community manager’s screen showing active WeChat group chats with a festival voucher pinned, phone and laptop side by side',
+    alt: "L'écran d'une community manager affiche des groupes WeChat actifs avec un bon festival épinglé, téléphone et ordinateur portable côte à côte",
   },
   {
-    kicker: 'Offline',
-    title: 'Offline, when it fits',
-    body: 'A pop-up, a retail tie-in, an event. For some categories an offline moment is what makes the whole online campaign believable.',
+    kicker: "Offline",
+    title: "Offline, quand cela s'impose",
+    body: "Un pop-up, un partenariat retail, un événement. Pour certaines catégories, le rendez-vous physique rend toute la campagne en ligne crédible.",
     image: '/Images/grow-in-china/campaigns/channel-offline-popup.png',
-    alt: 'A brand pop-up in a Chinese shopping mall tied to a festival, shoppers stopping at the stand, a QR standee linking to the online store',
+    alt: "Un pop-up de marque dans un centre commercial chinois adossé à un festival, des visiteurs s'arrêtent au stand, un kakémono QR renvoie vers la boutique en ligne",
   },
 ];
 
 const steps = [
   {
-    title: 'Pick the moment',
-    body: 'Not every brand should chase every festival, and we’ll say so early if a date isn’t worth it for you. We pick the ones worth fighting for, based on your category, your stock, and your margins.',
+    title: "Choisir le moment",
+    body: "Toutes les marques ne devraient pas courir tous les festivals, et nous le disons tôt si une date ne vaut pas la peine pour vous. Nous retenons celles qui valent qu'on s'y batte, selon votre catégorie, votre stock et vos marges.",
   },
   {
-    title: 'Build the creative angle',
-    body: 'A big China campaign is a brand campaign, not just a discount. It needs an idea, a hero product, a look. This is the step brands most often skip, and it’s the one that earns attention before the campaign ever earns a sale.',
+    title: "Bâtir l'angle créatif",
+    body: "Une grande campagne chinoise est une campagne de marque, pas un simple rabais. Il lui faut une idée, un produit héros, une signature visuelle. C'est l'étape que les marques sautent le plus souvent, et celle qui gagne l'attention avant que la campagne ne décroche la moindre vente.",
   },
   {
-    title: 'Run the warm-up',
-    body: 'Four to six weeks out, the content and KOL seeding starts. Carts fill up. Search interest builds. It’s the work nobody sees, and it’s usually what decides the result.',
+    title: "Tenir la montée",
+    body: "Quatre à six semaines avant, le contenu et le seeding KOL démarrent. Les paniers se remplissent. La recherche s'intensifie. C'est le travail que personne ne voit, et c'est en général lui qui décide du résultat.",
   },
   {
-    title: 'Run the peak',
-    body: 'The event window itself. Livestream, live traffic and pricing, customer service at full tilt. We’re on it hour by hour, because the day moves fast and small adjustments matter.',
+    title: "Tenir le pic",
+    body: "La fenêtre événement elle-même. Livestream, trafic et prix en direct, service client à plein régime. Nous y sommes heure par heure, parce que la journée bouge vite et que les ajustements fins comptent.",
   },
   {
-    title: 'Close and read',
-    body: 'Wind-down offers, then an honest review of what the campaign actually returned and what we’d change next time.',
+    title: "Clôturer et lire",
+    body: "Offres de fin, puis bilan honnête de ce que la campagne a réellement rapporté et de ce que nous changerions la prochaine fois.",
   },
 ];
 
 const calendar = [
-  { date: 'Jan / Feb', event: 'Chinese New Year', prep: '8 to 10 weeks out', what: 'The biggest cultural moment of the year. Gifting, red packaging, family. Sales slow during the holiday itself, but the run-up is strong.', who: 'Gifting categories, food, beauty, premium' },
-  { date: 'March 8', event: 'Women’s Day / Queen’s Day', prep: '6 weeks out', what: 'A female-focused shopping moment, strong for beauty and fashion.', who: 'Beauty, fashion, jewelry, wellness' },
-  { date: 'April / May', event: 'Labor Day (May 1)', prep: '6 weeks out', what: 'A travel and lifestyle peak, and a useful mid-spring push.', who: 'Travel, outdoor, lifestyle, FMCG' },
-  { date: 'May to June 18', event: '618 Festival', prep: '10 to 12 weeks out', what: 'The second-biggest festival of the year. Launched by JD, now run across all platforms. Pre-sales open in mid-May.', who: 'Every brand selling in China' },
-  { date: 'June 19 (2026)', event: 'Dragon Boat Festival', prep: '5 weeks out', what: 'A cultural moment built around gifting and traditional food.', who: 'Food, gifting, heritage-led brands' },
-  { date: 'August 8', event: '8.8 / 88VIP Members Festival', prep: '6 weeks out', what: 'A Tmall Global moment focused on international brands and member loyalty.', who: 'Cross-border brands, brands with a member base' },
-  { date: 'August 19 (2026)', event: 'Qixi Festival', prep: '5 to 6 weeks out', what: 'Chinese Valentine’s Day. Romantic gifting.', who: 'Beauty, jewelry, fashion, gifting' },
-  { date: 'Sept / Oct', event: 'Mid-Autumn & Golden Week', prep: '6 to 8 weeks out', what: 'Gifting plus a long national holiday, with a travel and spending spike.', who: 'Food, gifting, travel, lifestyle' },
-  { date: 'Late Oct to Nov 11', event: 'Singles Day (Double 11)', prep: '12 to 14 weeks out', what: 'The largest online shopping event in the world. Now a multi-week event that starts in late October. The campaign of the year.', who: 'Every brand selling in China' },
-  { date: 'December 12', event: 'Double 12 / Year-End', prep: '5 weeks out', what: 'The final push of the year. Strong for smaller brands and inventory clearance.', who: 'Smaller brands, clearance, late entrants' },
+  { date: "Janv. / févr.", event: "Nouvel An chinois", prep: "8 à 10 semaines à l'avance", what: "Le plus grand rendez-vous culturel de l'année. Cadeaux, emballages rouges, famille. Les ventes ralentissent pendant la fête elle-même, mais la montée est forte.", who: "Catégories cadeaux, alimentaire, beauté, premium" },
+  { date: "8 mars", event: "Journée des femmes / Queen's Day", prep: "6 semaines à l'avance", what: "Un moment shopping centré sur le féminin, fort en beauté et en mode.", who: "Beauté, mode, joaillerie, wellness" },
+  { date: "Avril / mai", event: "Fête du travail (1er mai)", prep: "6 semaines à l'avance", what: "Un pic voyage et lifestyle, et un relais utile en milieu de printemps.", who: "Voyage, outdoor, lifestyle, grande consommation" },
+  { date: "Mai au 18 juin", event: "Festival 618", prep: "10 à 12 semaines à l'avance", what: "Le deuxième festival de l'année. Lancé par JD, il s'étend désormais à toutes les plateformes. Les préventes ouvrent à la mi-mai.", who: "Toute marque vendant en Chine" },
+  { date: "19 juin (2026)", event: "Fête des bateaux-dragons", prep: "5 semaines à l'avance", what: "Un rendez-vous culturel autour du cadeau et de la cuisine traditionnelle.", who: "Alimentaire, cadeau, marques d'héritage" },
+  { date: "8 août", event: "8.8 / Festival 88VIP", prep: "6 semaines à l'avance", what: "Un rendez-vous Tmall Global centré sur les marques internationales et la fidélité des membres.", who: "Marques cross-border, marques avec base de membres" },
+  { date: "19 août (2026)", event: "Festival Qixi", prep: "5 à 6 semaines à l'avance", what: "La Saint-Valentin chinoise. Cadeau romantique.", who: "Beauté, joaillerie, mode, cadeau" },
+  { date: "Sept. / oct.", event: "Mi-automne et Golden Week", prep: "6 à 8 semaines à l'avance", what: "Cadeau, doublé d'une longue fête nationale, avec un pic voyage et dépense.", who: "Alimentaire, cadeau, voyage, lifestyle" },
+  { date: "Fin oct. au 11 nov.", event: "Singles Day (Double 11)", prep: "12 à 14 semaines à l'avance", what: "Le plus grand événement de shopping en ligne au monde. Désormais étalé sur plusieurs semaines depuis fin octobre. La campagne de l'année.", who: "Toute marque vendant en Chine" },
+  { date: "12 décembre", event: "Double 12 / fin d'année", prep: "5 semaines à l'avance", what: "Le pic final de l'année. Fort pour les marques plus modestes et pour la liquidation de stock.", who: "Petites marques, déstockage, retardataires" },
 ];
 
 const serviceJsonLd = {
@@ -102,8 +102,8 @@ const serviceJsonLd = {
 ---
 
 <Layout
-  title="China eCommerce Campaigns: 618, Singles Day & More"
-  description="China's shopping festivals decide your year. We plan and run multi-channel eCommerce campaigns across Tmall, JD, Douyin, and offline, warm-up to peak."
+  title="Campagnes eCommerce en Chine : 618, Singles Day et plus"
+  description="Les festivals chinois décident de votre année. Nous concevons et tenons des campagnes eCommerce multicanal sur Tmall, JD, Douyin et offline, de la montée au pic."
 >
   <script type="application/ld+json" set:html={JSON.stringify(serviceJsonLd)} is:inline />
 
@@ -113,31 +113,31 @@ const serviceJsonLd = {
     {/* ---------- HERO ---------- */}
     <section class="cbs-hero" data-hero>
       <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/grow-in-china/campaigns/hero-campaign-warroom.png" alt="A Singles Day campaign control room in China, operators watching a live GMV dashboard with festival numbers climbing in red" />
+        <img src="/Images/grow-in-china/campaigns/hero-campaign-warroom.png" alt="Une salle de pilotage de campagne Singles Day en Chine, des opérateurs suivent un tableau GMV en direct, les chiffres festival grimpent en rouge" />
       </div>
       <div class="cbs-hero__overlay" aria-hidden="true"></div>
       <div class="cbs-hero__grain" aria-hidden="true"></div>
 
       <div class="container cbs-hero__inner">
-        <nav class="cbs-hero__crumbs" aria-label="Breadcrumb">
-          <a href="/">Home</a>
+        <nav class="cbs-hero__crumbs" aria-label="Fil d'Ariane">
+          <a href="/fr/">Accueil</a>
           <span aria-hidden="true">/</span>
-          <a href="/#services">Grow in China</a>
+          <a href="/fr/#services">Se développer en Chine</a>
         </nav>
-        <span class="eyebrow eyebrow--on-dark cbs-reveal">Campaigns</span>
+        <span class="eyebrow eyebrow--on-dark cbs-reveal">Campagnes</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
-          <span class="cbs-hero__title-row">Selling in China runs on campaigns.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--accent">Miss them, and you miss the year.</span>
+          <span class="cbs-hero__title-row">Vendre en Chine tourne autour des campagnes.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent">Les manquer, c'est manquer l'année.</span>
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          In China, sales come in waves, tied to dates the whole country shops around.
-          Brands that plan for those waves grow. Brands that don’t tend to flatline.
-          We build the campaign, run it across every channel it needs, and stay on the
-          floor with you when it goes live.
+          En Chine, les ventes arrivent par vagues, calées sur des dates où le pays entier fait ses achats.
+          Les marques qui anticipent ces vagues croissent. Les autres stagnent.
+          Nous bâtissons la campagne, l'opérons sur chaque canal nécessaire, et restons sur le
+          terrain à vos côtés quand elle part en direct.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
-          <a href="/contact" class="btn btn--primary cbs-magnetic">Talk to us about a campaign</a>
-          <a href="#calendar" class="btn btn--ghost-light cbs-magnetic">See the calendar</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Échanger sur une campagne</a>
+          <a href="#calendar" class="btn btn--ghost-light cbs-magnetic">Voir le calendrier</a>
         </div>
 
         <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
@@ -150,9 +150,9 @@ const serviceJsonLd = {
         </div>
       </div>
 
-      <a href="#basics" class="cbs-hero__scroll" aria-label="Scroll to next section">
+      <a href="#basics" class="cbs-hero__scroll" aria-label="Aller à la section suivante">
         <span class="cbs-hero__scroll-line"></span>
-        <span class="cbs-hero__scroll-text">Scroll</span>
+        <span class="cbs-hero__scroll-text">Faire défiler</span>
       </a>
     </section>
 
@@ -161,51 +161,51 @@ const serviceJsonLd = {
       <div class="container">
         <div class="cbs-basics">
           <header class="cbs-basics__head cbs-reveal">
-            <span class="eyebrow">The basics</span>
-            <h2>What a campaign is, and why it matters</h2>
+            <span class="eyebrow">Les fondamentaux</span>
+            <h2>Ce qu'est une campagne, et pourquoi cela compte</h2>
           </header>
 
           <div class="cbs-basics__cols cbs-reveal">
             <div class="cbs-basics__col">
               <p>
-                A campaign is a coordinated push around a single moment. Usually a
-                shopping festival like 618 or Singles Day, sometimes a product launch
-                or a brand anniversary.
+                Une campagne, c'est un effort coordonné autour d'un seul moment. Le plus souvent un
+                festival commercial comme 618 ou Singles Day, parfois un lancement produit
+                ou un anniversaire de marque.
               </p>
               <p>
-                What it isn’t: one banner on your store page. It’s a sequence
-                that runs for weeks. A warm-up before the date, the peak event, a
-                close-out after, with pricing, content, livestream, KOL seeding,
-                customer service, and stock all aimed at the same few days.
+                Ce qu'elle n'est pas : une bannière sur la page de votre boutique. C'est une séquence
+                qui tient sur des semaines. Une montée avant la date, l'événement au pic, une
+                clôture après, avec des prix, du contenu, du livestream, du seeding KOL,
+                du service client et du stock, tous orientés vers les mêmes quelques jours.
               </p>
               <p>
-                And a big China campaign is a brand campaign in its own right. The
-                budget is often just as large as a brand campaign’s, and the payoff
-                isn’t only the quarter’s sales numbers; it’s
-                brand-building too.
+                Et une grande campagne chinoise est une campagne de marque à part entière. Le
+                budget atteint souvent celui d'une campagne de marque, et le retour
+                ne se limite pas au chiffre du trimestre ; il se joue aussi
+                sur la construction de marque.
               </p>
             </div>
 
             <div class="cbs-basics__col">
               <p>
-                Here’s the thing brands miss. Chinese shoppers wait for festivals.
-                They fill their carts for weeks, then buy everything at once when the
-                discounts open. The platforms feed this behavior: during festival
-                periods, Tmall, JD, and Douyin steer traffic and search ranking toward
-                brands that are running official campaign mechanics. Sit out 618 and
-                Singles Day and you’ve handed the two biggest sales windows of the
-                year, and your ranking, to whoever did show up.
+                Voici ce que les marques ratent. Les acheteurs chinois attendent les festivals.
+                Ils remplissent leur panier pendant des semaines, puis achètent tout d'un coup quand les
+                remises s'ouvrent. Les plateformes alimentent ce comportement : pendant les
+                fenêtres festival, Tmall, JD et Douyin orientent le trafic et le ranking de recherche vers
+                les marques qui activent les mécaniques officielles. Manquer 618 et
+                Singles Day, c'est céder les deux plus grandes fenêtres de ventes de
+                l'année, ainsi que votre ranking, à ceux qui se sont présentés.
               </p>
               <p>
-                There’s a bigger prize on top of that. If a platform picks your
-                campaign as one of its festival standouts, it puts its own advertising
-                weight behind you. Feature placement, homepage traffic, the kind of
-                reach you simply can’t buy directly.
+                Il y a un prix plus grand encore. Lorsque la plateforme retient votre
+                campagne parmi les temps forts du festival, elle place son propre poids publicitaire
+                derrière vous. Mise en avant, trafic home page, le type de
+                portée qu'on ne peut tout simplement pas acheter en direct.
               </p>
               <p>
-                For most of the brands we run, the festival periods are where a large
-                chunk of the annual number comes from. The quiet months pay the rent.
-                The campaigns are the year.
+                Pour la plupart des marques que nous opérons, les fenêtres festival concentrent une part
+                importante du chiffre annuel. Les mois calmes paient le loyer.
+                Les campagnes font l'année.
               </p>
             </div>
           </div>
@@ -223,13 +223,13 @@ const serviceJsonLd = {
 
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">The reality</span>
-          <h2>A campaign is never just the eCommerce platform</h2>
+          <span class="eyebrow">La réalité</span>
+          <h2>Une campagne ne se limite jamais à la plateforme eCommerce</h2>
           <p class="section-header__lead">
-            This is the part most brands underestimate. Yes, the sale closes on Tmall,
-            JD, or Douyin. But the campaign that drives it lives almost everywhere else,
-            and it’s nearly always multi-channel. A typical campaign is working on
-            several fronts at the same time.
+            C'est la partie que la plupart des marques sous-estiment. Oui, la vente se conclut sur Tmall,
+            JD ou Douyin. Mais la campagne qui la déclenche vit presque partout ailleurs,
+            et elle est presque toujours multicanal. Une campagne type travaille sur
+            plusieurs fronts en même temps.
           </p>
         </header>
 
@@ -269,9 +269,9 @@ const serviceJsonLd = {
         </div>
 
         <p class="cbs-reality__note cbs-reveal">
-          None of these is hard to run on its own. The hard part, and the part that
-          decides the result, is making them fire in the right order, all pointing at
-          the same date.
+          Aucun de ces leviers n'est difficile à activer isolément. La difficulté, et le point qui
+          décide du résultat, c'est de les faire partir dans le bon ordre, tous orientés vers
+          la même date.
         </p>
       </div>
     </section>
@@ -280,11 +280,11 @@ const serviceJsonLd = {
     <section class="section">
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">Our approach</span>
-          <h2>How we run a campaign</h2>
+          <span class="eyebrow">Notre approche</span>
+          <h2>Comment nous tenons une campagne</h2>
           <p class="section-header__lead">
-            The backbone is the same every time. The details change, the spine
-            doesn’t.
+            L'ossature reste la même à chaque fois. Les détails varient, la colonne vertébrale
+            non.
           </p>
         </header>
 
@@ -301,12 +301,12 @@ const serviceJsonLd = {
         </ol>
 
         <blockquote class="cbs-quote cbs-reveal">
-          <p>We don’t hand you a deck and walk away. We run it with you.
-          That’s the difference.</p>
+          <p>Nous ne vous remettons pas une présentation pour disparaître ensuite. Nous l'opérons avec vous.
+          Voilà la différence.</p>
         </blockquote>
 
         <div class="cbs-approach__cta cbs-reveal">
-          <a href="/contact" class="btn btn--ghost">See how we’d plan your next festival</a>
+          <a href="/fr/nous-contacter" class="btn btn--ghost">Voir comment nous planifierions votre prochain festival</a>
         </div>
       </div>
     </section>
@@ -315,34 +315,34 @@ const serviceJsonLd = {
     <section class="section section--alt">
       <div class="container container--narrow">
         <header class="section-header cbs-reveal">
-          <span class="eyebrow">The budget</span>
-          <h2>What it costs, and what you need to know going in</h2>
+          <span class="eyebrow">Le budget</span>
+          <h2>Ce que cela coûte, et ce qu'il faut savoir avant de signer</h2>
         </header>
 
         <div class="cbs-prose cbs-reveal">
           <p>
-            There’s no single number for a China campaign, and anyone who hands you
-            one before asking about your category is guessing. The budget splits into a
-            few parts: the fee to plan and run it, media (usually the largest line, paid
-            traffic plus amplification on Xiaohongshu and Douyin), KOL and livestream
-            fees, content production, and the stock and discount margin that decides
-            whether the whole thing turns a profit.
+            Il n'existe pas de chiffre unique pour une campagne chinoise, et quiconque vous en propose
+            un avant d'avoir interrogé votre catégorie devine. Le budget se ventile en
+            plusieurs postes : les honoraires de conception et de pilotage, le média (souvent la plus grosse ligne, trafic payant
+            et amplification sur Xiaohongshu et Douyin), les frais KOL et livestream,
+            la production de contenu, ainsi que la marge stock et remise qui décide
+            si l'ensemble est rentable.
           </p>
         </div>
 
         <blockquote class="cbs-quote cbs-quote--warning cbs-reveal">
           <p>
-            One honest word of caution. Festivals are hard on margin, and not every brand
-            should chase every date. A campaign that wins GMV but loses money isn’t
-            a win. We’d rather tell you to sit a festival out than run one that
-            hurts you. That judgment is part of what you’re paying for.
+            Un mot d'avertissement honnête. Les festivals tirent sur la marge, et toutes les marques
+            ne devraient pas viser chaque date. Une campagne qui gagne en GMV mais perd de l'argent n'est pas
+            une victoire. Mieux vaut vous dire de sauter un festival que d'en tenir un qui
+            vous abîme. Ce jugement fait partie de ce que vous payez.
           </p>
         </blockquote>
 
         <div class="cbs-prose cbs-reveal">
           <p>
-            Tell us the date you’re eyeing. We’ll come back with a real
-            number, not a vague range.
+            Dites-nous la date que vous visez. Nous reviendrons avec un chiffre réel,
+            pas une fourchette vague.
           </p>
         </div>
       </div>
@@ -352,13 +352,13 @@ const serviceJsonLd = {
     <section id="calendar" class="section">
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">The calendar</span>
-          <h2>The China eCommerce campaign calendar</h2>
+          <span class="eyebrow">Le calendrier</span>
+          <h2>Le calendrier des campagnes eCommerce chinoises</h2>
           <p class="section-header__lead">
-            So which dates should you actually plan for? These are the ones the Chinese
-            market shops around. Not all of them are yours to chase. But every brand
-            selling in China should plan against this calendar a year out, because the
-            prep starts long before the date.
+            Quelles dates faut-il réellement planifier ? Voici celles autour desquelles le marché chinois
+            fait ses achats. Toutes ne sont pas à viser. Mais toute marque
+            qui vend en Chine devrait s'aligner sur ce calendrier un an à l'avance, parce que la
+            préparation démarre bien avant la date.
           </p>
         </header>
 
@@ -368,10 +368,10 @@ const serviceJsonLd = {
               <thead>
                 <tr>
                   <th scope="col">Date</th>
-                  <th scope="col">Event</th>
-                  <th scope="col" class="cbs-calendar__th--accent">Start prep</th>
-                  <th scope="col">What it is</th>
-                  <th scope="col">Who it suits</th>
+                  <th scope="col">Événement</th>
+                  <th scope="col" class="cbs-calendar__th--accent">Démarrer la préparation</th>
+                  <th scope="col">De quoi il s'agit</th>
+                  <th scope="col">À qui cela convient</th>
                 </tr>
               </thead>
               <tbody>
@@ -389,11 +389,11 @@ const serviceJsonLd = {
           </div>
 
           <p class="cbs-compare__note">
-            How to read this calendar. You don’t run all ten. A focused brand picks
-            two or three to win properly and treats the rest as light-touch. 618 and
-            Singles Day are the non-negotiables. The rest depends on your category. And
-            look at the prep column: if a festival is less than its lead time away,
-            you’re already behind, so plan the next one.
+            Comment lire ce calendrier. Vous ne tenez pas les dix. Une marque focalisée en retient
+            deux ou trois à remporter sérieusement et traite les autres en mode léger. 618 et
+            Singles Day sont les non-négociables. Le reste dépend de votre catégorie. Et
+            regardez la colonne préparation : si un festival approche en moins que son délai d'antériorité,
+            vous êtes déjà en retard ; visez le suivant.
           </p>
         </div>
       </div>
@@ -403,30 +403,30 @@ const serviceJsonLd = {
     <section class="section section--alt">
       <div class="container">
         <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">The fit</span>
-          <h2>Is this you?</h2>
+          <span class="eyebrow">Le profil</span>
+          <h2>Est-ce votre cas ?</h2>
         </header>
 
         <div class="cbs-fit">
           <article class="cbs-fit__card cbs-fit__card--yes cbs-reveal">
-            <span class="cbs-fit__tag">This is for you</span>
+            <span class="cbs-fit__tag">C'est pour vous</span>
             <p>
-              A campaign program makes sense if you’re already selling in China,
-              on Tmall, Tmall Global, JD, or Douyin, and your festival periods
-              aren’t pulling the weight they should be. It also makes sense if
-              you’re about to launch and you want your first festival to actually
-              land, instead of watching it go by.
+              Un programme de campagne a du sens si vous vendez déjà en Chine,
+              sur Tmall, Tmall Global, JD ou Douyin, et que vos fenêtres festival
+              ne pèsent pas autant qu'elles le devraient. Il a tout autant de sens si
+              vous vous apprêtez à lancer et que vous voulez voir votre premier festival
+              marquer, plutôt que passer.
             </p>
           </article>
 
           <article class="cbs-fit__card cbs-fit__card--not cbs-reveal" style="--reveal-delay: 120ms;">
-            <span class="cbs-fit__tag">Not yet</span>
+            <span class="cbs-fit__tag">Pas encore</span>
             <p>
-              It’s probably not for you yet if your store is brand new with no
-              traffic history behind it, or if your margins simply can’t take a
-              festival discount. No shame in that. It just means the groundwork comes
-              first, and the campaign comes after. Talk to us about that part instead,
-              we’d rather start you in the right place.
+              Ce n'est sans doute pas encore pour vous si votre boutique est toute neuve sans
+              historique de trafic, ou si vos marges ne supportent simplement pas une
+              remise festival. Aucune honte. Cela signifie simplement que le travail de fond passe
+              d'abord, et la campagne après. Parlons-en plutôt côté fondations,
+              nous préférons vous démarrer au bon endroit.
             </p>
           </article>
         </div>
@@ -437,21 +437,21 @@ const serviceJsonLd = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">
-          <span class="eyebrow eyebrow--on-dark">Let’s talk</span>
-          <h2 class="cbs-cta__title">Ready to win China’s shopping festivals?</h2>
+          <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
+          <h2 class="cbs-cta__title">Prêts à remporter les festivals chinois ?</h2>
           <p class="cbs-cta__lead">
-            We’ve run festival campaigns for international brands across beauty,
-            skincare, food, and consumer goods. We know which dates are worth your
-            money, and which ones to skip. We know how to build the warm-up that
-            actually moves the result, and we know what the peak feels like when
-            it’s live and the numbers are coming in by the hour.
+            Nous avons piloté des campagnes festival pour des marques internationales en beauté,
+            skincare, alimentaire et grande consommation. Nous savons quelles dates valent votre
+            budget, et lesquelles laisser passer. Nous savons bâtir la montée qui
+            déplace réellement le résultat, et nous connaissons la sensation du pic quand
+            il est en direct et que les chiffres arrivent heure par heure.
           </p>
           <p class="cbs-cta__pull">
-            We consult on the plan, and we run what we recommend.
+            Nous conseillons sur le plan, et nous opérons ce que nous recommandons.
           </p>
           <div class="cbs-cta__actions">
-            <a href="/contact" class="btn cbs-cta__btn-primary">Plan your campaign calendar with us</a>
-            <a href="/work" class="btn cbs-cta__btn-ghost">See our case studies</a>
+            <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Planifier votre calendrier de campagnes avec nous</a>
+            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Voir nos études de cas</a>
           </div>
         </div>
       </div>

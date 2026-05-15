@@ -2,10 +2,10 @@
 import Layout from '../../../layouts/Layout.astro';
 
 const outcomes = [
-  'Load times drop from 8 to 15 seconds down to under one second in the mainland',
-  'Baidu starts indexing within a few weeks of ICP approval',
-  'First citations show up in Chinese AI engines as new content gets crawled',
-  'WeChat mini-program GMV tracked from day one',
+  "Les temps de chargement passent de 8 à 15 secondes à moins d'une seconde en Chine continentale",
+  "Baidu commence à indexer dans les semaines qui suivent l'approbation ICP",
+  "Les premières citations apparaissent dans les moteurs IA chinois à mesure que les nouveaux contenus sont crawlés",
+  "Le GMV du mini-programme WeChat est suivi dès le premier jour",
 ];
 
 const aiEngines = [
@@ -17,82 +17,82 @@ const aiEngines = [
 ];
 
 const geoBullets = [
-  'Structured data (schema.org, JSON-LD) so models can parse your pages cleanly',
-  'Dense, factual content that AI engines prefer to quote, marketing fluff gets skipped',
-  'Chinese-language pages indexed by Baidu and Sogou',
-  'Brand entity setup in Baidu Baike and similar reference sources',
-  'Monitoring of which engines mention your brand, and how they frame it',
+  "Données structurées (schema.org, JSON-LD) pour que les modèles lisent vos pages proprement",
+  "Contenu dense et factuel que les moteurs IA préfèrent citer ; le bavardage marketing est ignoré",
+  "Pages en chinois indexées par Baidu et Sogou",
+  "Mise en place de l'entité de marque sur Baidu Baike et les sources de référence équivalentes",
+  "Suivi des moteurs qui mentionnent votre marque et de la manière dont ils la cadrent",
 ];
 
 const wechatSurfaces = [
   {
-    tag: 'Official account',
+    tag: "Compte officiel",
     cn: '公众号',
-    title: 'Your brand newsroom inside WeChat',
-    body: 'Service or subscription account that pushes articles to followers, handles customer service, and hosts basic pages. Keeps the relationship warm between purchases.',
-    bullet: 'Push articles, customer service, basic pages',
+    title: "La rédaction de votre marque à l'intérieur de WeChat",
+    body: "Compte service ou abonnement qui pousse des articles aux abonnés, tient le service client et héberge des pages de base. Garde la relation vivante entre deux achats.",
+    bullet: "Articles poussés, service client, pages de base",
   },
   {
-    tag: 'Mini-program',
+    tag: "Mini-programme",
     cn: '小程序',
-    title: 'A full app inside WeChat, two taps from any user',
-    body: 'Catalog, checkout, WeChat Pay, member cards and tier systems all live here. This is where eCommerce, loyalty and membership conversion actually happen.',
-    bullet: 'eCommerce + loyalty + membership',
+    title: "Une application complète dans WeChat, à deux tapes de tout utilisateur",
+    body: "Catalogue, paiement, WeChat Pay, cartes de membre et systèmes de niveaux vivent ici. C'est là que se concluent réellement eCommerce, fidélité et adhésion.",
+    bullet: "eCommerce + fidélité + adhésion",
     highlight: true,
   },
 ];
 
 const techPaths = [
   {
-    name: 'WordPress',
-    sub: 'Content-driven, locally edited',
-    when: 'When your local team needs to run the site themselves. Campaigns, blog posts, product launches, frequent updates. Familiar editor, proven stack, your marketing person in Shanghai can publish on a Tuesday without calling a developer.',
+    name: "WordPress",
+    sub: "Orienté contenu, édité en local",
+    when: "Quand votre équipe locale doit opérer le site elle-même. Campagnes, articles de blog, lancements produit, mises à jour fréquentes. Éditeur familier, stack éprouvée, votre responsable marketing à Shanghai publie un mardi sans appeler un développeur.",
     bullets: [
-      'Google Fonts swapped for Chinese CDN equivalents',
-      'Blocked plugins replaced with local alternatives',
-      'Local CDN wired up, ICP filed, Baidu SEO configured',
-      'Best for teams that need content autonomy',
+      "Google Fonts remplacés par des CDN chinois équivalents",
+      "Plugins bloqués remplacés par des alternatives locales",
+      "CDN local câblé, ICP déposé, SEO Baidu configuré",
+      "Idéal pour les équipes qui veulent l'autonomie sur le contenu",
     ],
-    timeline: '6 to 10 weeks',
+    timeline: "6 à 10 semaines",
   },
   {
-    name: 'Astro',
-    sub: 'Brand site, blistering fast',
-    when: 'When the site is a brand and product window with only occasional updates. Astro generates pure static HTML, which means it loads under one second even behind the Firewall, costs almost nothing to host, and is much harder to hack.',
+    name: "Astro",
+    sub: "Site de marque, ultra-rapide",
+    when: "Quand le site sert de vitrine marque et produit avec des mises à jour rares. Astro génère du HTML statique pur, ce qui veut dire un chargement sous la seconde même derrière le Firewall, un coût d'hébergement quasi nul et une surface d'attaque bien plus faible.",
     bullets: [
-      'Sub-second load times in mainland China',
-      'No database, no PHP, minimal server footprint',
-      'Nothing dynamic to exploit, no plugins to patch',
-      'Best for brand-led marketing sites without transactions',
+      "Chargement sous la seconde en Chine continentale",
+      "Pas de base de données, pas de PHP, empreinte serveur minimale",
+      "Rien de dynamique à exploiter, aucun plugin à patcher",
+      "Idéal pour les sites marketing menés par la marque, sans transaction",
     ],
-    timeline: '4 to 8 weeks',
+    timeline: "4 à 8 semaines",
     highlight: true,
   },
 ];
 
 const hostingOptions = [
   {
-    where: 'Mainland China',
-    note: 'ICP required',
-    load: '< 1 second',
-    seo: 'Strong positive',
-    verdict: 'The only real option',
+    where: "Chine continentale",
+    note: "ICP requis",
+    load: "< 1 seconde",
+    seo: "Très positif",
+    verdict: "La seule vraie option",
     status: 'go',
   },
   {
-    where: 'Hong Kong',
-    note: 'No ICP',
-    load: '2 to 4 seconds',
-    seo: 'Minimal',
-    verdict: 'Slow, penalized by Baidu',
+    where: "Hong Kong",
+    note: "Sans ICP",
+    load: "2 à 4 secondes",
+    seo: "Minimal",
+    verdict: "Lent, pénalisé par Baidu",
     status: 'warn',
   },
   {
-    where: 'US or EU',
-    note: 'No ICP',
-    load: '8 to 15+ seconds',
-    seo: 'None',
-    verdict: 'Effectively broken',
+    where: "États-Unis ou UE",
+    note: "Sans ICP",
+    load: "8 à 15 secondes et plus",
+    seo: "Nul",
+    verdict: "De facto cassé",
     status: 'stop',
   },
 ];
@@ -100,75 +100,75 @@ const hostingOptions = [
 const deliverables = [
   {
     icon: 'design',
-    title: 'Design that fits Chinese users',
-    desc: 'Denser pages, flatter navigation, QR codes everywhere, mobile-first because mobile is 95% of the traffic. We build for that reality, not the Western web habits that look polished in Stockholm and broken in Shanghai.',
+    title: "Un design qui colle aux utilisateurs chinois",
+    desc: "Pages plus denses, navigation plus plate, QR codes partout, mobile-first parce que le mobile concentre 95 % du trafic. Nous bâtissons pour cette réalité, pas pour les habitudes web occidentales qui paraissent soignées à Stockholm et brisées à Shanghai.",
   },
   {
     icon: 'code',
-    title: 'Code that respects the Firewall',
-    desc: 'No Google Fonts, no blocked CDNs, no Maps API that times out, no YouTube embeds. Everything swapped for a local equivalent. Not glamorous, but it is the difference between a site that loads and one that does not.',
+    title: "Un code qui respecte le Grand Firewall",
+    desc: "Aucune Google Fonts, aucune CDN bloquée, aucune API Maps qui timeout, aucun embed YouTube. Tout remplacé par un équivalent local. Pas glamour, mais c'est la différence entre un site qui charge et un site qui ne charge pas.",
   },
   {
     icon: 'server',
-    title: 'Hosting that stays up',
-    desc: '99%+ uptime, with two-hour response coverage around the clock. We patch the stack, run nightly backups, and keep the site PIPL compliant from day one. Monitoring runs from inside the Firewall, where it actually catches what breaks.',
+    title: "Un hébergement qui tient debout",
+    desc: "99 % d'uptime et plus, avec une couverture de réponse sous deux heures 24/7. Nous patchons la stack, lançons des sauvegardes nocturnes et tenons le site conforme PIPL dès le premier jour. Le monitoring tourne depuis l'intérieur du Firewall, là où il attrape réellement ce qui casse.",
   },
   {
     icon: 'phone',
-    title: 'Mini-programs that convert',
-    desc: "Built on Tencent's stack (WXML, WXSS, WeChat JS). Native payments, CRM integration, tier systems, push messaging. Ten years of mini-program work for brands that use WeChat as a sales channel, not a brochure.",
+    title: "Des mini-programmes qui convertissent",
+    desc: "Bâtis sur la stack Tencent (WXML, WXSS, WeChat JS). Paiements natifs, intégration CRM, systèmes de niveaux, messages poussés. Dix ans de mini-programmes pour les marques qui utilisent WeChat comme canal de vente, pas comme une plaquette.",
   },
   {
     icon: 'pen',
-    title: 'Copy in the language you need',
-    desc: 'Chinese content written directly by our in-house team, not translated from English. English and French versions produced when HQ review, investor decks or global consistency require them.',
+    title: "Un copywriting dans la langue dont vous avez besoin",
+    desc: "Contenu chinois rédigé directement par notre équipe interne, jamais traduit de l'anglais. Versions française et anglaise produites lorsque la relecture siège, les decks investisseurs ou la cohérence globale les exigent.",
   },
 ];
 
 const faqs = [
   {
-    q: 'What is GEO and why does it matter?',
-    a: 'GEO (Generative Engine Optimization) is SEO for AI-powered search. Chinese users increasingly ask AI assistants (Doubao, Kimi, DeepSeek, Qwen) instead of typing queries. These models need credible, indexed sites to cite. No China-hosted site means no visibility.',
+    q: "Qu'est-ce que le GEO et pourquoi cela compte ?",
+    a: "Le GEO (Generative Engine Optimization) est le SEO de la recherche IA. Les utilisateurs chinois interrogent de plus en plus les assistants IA (Doubao, Kimi, DeepSeek, Qwen) au lieu de taper une requête. Ces modèles ont besoin de sites crédibles et indexés à citer. Pas de site hébergé en Chine, pas de visibilité.",
   },
   {
-    q: 'WordPress or Astro, which one?',
-    a: 'WordPress if your team updates content often and wants autonomy. Astro if the site mostly sits still between launches and you want speed, security and low hosting costs.',
+    q: "WordPress ou Astro, lequel choisir ?",
+    a: "WordPress si votre équipe met à jour le contenu fréquemment et veut son autonomie. Astro si le site reste relativement figé entre deux lancements et que vous voulez vitesse, sécurité et coûts d'hébergement bas.",
   },
   {
-    q: 'How much does a China website cost?',
-    a: 'Budgets depend on scope, scale and integrations. Small brand sites on Astro start lower. WordPress builds with eCommerce or WeChat integration sit higher. We scope every project separately.',
+    q: "Combien coûte un site en Chine ?",
+    a: "Les budgets dépendent du périmètre, de l'échelle et des intégrations. Les petits sites de marque sur Astro démarrent plus bas. Les builds WordPress avec eCommerce ou intégration WeChat se situent plus haut. Nous cadrons chaque projet séparément.",
   },
   {
-    q: 'How long does the whole thing take?',
-    a: "4 to 10 weeks for the build, plus ICP filing on top. Bei'an runs 2 to 4 weeks. Commercial license runs 2 to 3 months, sometimes more. We run design and dev in parallel with the ICP paperwork so nothing sits idle waiting.",
+    q: "Combien de temps prend l'ensemble ?",
+    a: "4 à 10 semaines pour le build, plus le dépôt ICP au-dessus. Bei'an : 2 à 4 semaines. Licence commerciale : 2 à 3 mois, parfois plus. Nous menons design et développement en parallèle des démarches ICP pour qu'aucun chantier ne reste en attente.",
   },
   {
-    q: 'Who owns the code and the ICP?',
-    a: 'You do. Code is yours. ICP is registered to your Chinese entity (or the partner entity we set up with you). No lock-in.',
+    q: "Qui détient le code et l'ICP ?",
+    a: "Vous. Le code est à vous. L'ICP est enregistré au nom de votre entité chinoise (ou de l'entité partenaire que nous mettons en place avec vous). Aucun verrouillage.",
   },
   {
-    q: 'Can you migrate my existing site?',
-    a: 'Yes. We audit what you have, flag what breaks in China, and either migrate it clean or rebuild the parts that will not work. In most cases it is faster and cheaper than starting from scratch.',
+    q: "Pouvez-vous migrer mon site existant ?",
+    a: "Oui. Nous auditons ce que vous avez, signalons ce qui casse en Chine, et migrons proprement ou reconstruisons les parties qui ne fonctionneront pas. Dans la plupart des cas, c'est plus rapide et moins cher que de repartir de zéro.",
   },
   {
-    q: 'Is hosting in China really mandatory?',
-    a: 'For speed, Baidu rankings, AI citations and reliability, yes. Hong Kong works as a bridge. Serving from Europe or the US means a broken experience for Chinese users.',
+    q: "L'hébergement en Chine est-il vraiment obligatoire ?",
+    a: "Pour la vitesse, le ranking Baidu, les citations IA et la fiabilité, oui. Hong Kong fait office de passerelle. Servir depuis l'Europe ou les États-Unis, c'est une expérience cassée pour les utilisateurs chinois.",
   },
   {
-    q: 'What is an ICP license?',
-    a: "A mandatory filing from China's Ministry of Industry and Information Technology. Two types. Bei'an covers informational sites. Commercial license covers eCommerce and transactional platforms. Required for any mainland hosting.",
+    q: "Qu'est-ce qu'une licence ICP ?",
+    a: "Un dépôt obligatoire auprès du ministère chinois de l'Industrie et des Technologies de l'information. Deux types. Le Bei'an couvre les sites informationnels. La licence commerciale couvre l'eCommerce et les plateformes transactionnelles. Requise pour tout hébergement en Chine continentale.",
   },
   {
-    q: 'Can a WeChat mini-program replace a website?',
-    a: 'For eCommerce and loyalty, often yes. For discovery, SEO and brand credibility, a website is still essential. Most clients run both.',
+    q: "Un mini-programme WeChat peut-il remplacer un site ?",
+    a: "Pour l'eCommerce et la fidélité, souvent oui. Pour la découverte, le SEO et la crédibilité de marque, un site reste essentiel. La plupart des clients opèrent les deux.",
   },
   {
-    q: 'How does PIPL affect my site?',
-    a: "PIPL is China's GDPR equivalent. Your site has to disclose data collection, get explicit user consent, and store personal data securely. We build PIPL compliance in from the start.",
+    q: "Comment la PIPL affecte-t-elle mon site ?",
+    a: "La PIPL est l'équivalent chinois du RGPD. Votre site doit divulguer la collecte des données, obtenir le consentement explicite et stocker les données personnelles en sécurité. Nous intégrons la conformité PIPL dès le départ.",
   },
   {
-    q: 'What is the free site check?',
-    a: 'We test your current site from inside China. Load times, blocked resources, Baidu visibility, AI engine citations. You get a written summary back. No commitment.',
+    q: "En quoi consiste l'audit gratuit ?",
+    a: "Nous testons votre site actuel depuis l'intérieur de la Chine. Temps de chargement, ressources bloquées, visibilité Baidu, citations dans les moteurs IA. Vous recevez une synthèse écrite en retour. Sans engagement.",
   },
 ];
 
@@ -183,8 +183,8 @@ const icons: Record<string, string> = {
 ---
 
 <Layout
-  title="China Website Agency: Build, Host, Rank in China | Beyond Border Group"
-  description="We build and host websites and WeChat mini-programs that load, rank on Baidu, and get cited by Chinese AI engines. 20+ years in China."
+  title="Agence de sites web Chine : conception, hébergement, ranking | Beyond Border Group"
+  description="Nous concevons et hébergeons des sites et mini-programmes WeChat qui chargent, se classent sur Baidu et se font citer par les moteurs IA chinois. Plus de vingt ans en Chine."
 >
   <article class="web">
 
@@ -196,25 +196,25 @@ const icons: Record<string, string> = {
       <div class="web-hero__overlay" aria-hidden="true"></div>
 
       <div class="container web-hero__inner">
-        <nav class="web-hero__crumbs" aria-label="Breadcrumb">
-          <a href="/">Home</a>
+        <nav class="web-hero__crumbs" aria-label="Fil d'Ariane">
+          <a href="/fr/">Accueil</a>
           <span aria-hidden="true">/</span>
-          <a href="/#services">Grow in China</a>
+          <a href="/fr/#services">Se développer en Chine</a>
         </nav>
-        <span class="eyebrow eyebrow--on-dark">Websites in China</span>
-        <h1 class="web-hero__title">Websites that actually load, rank, and sell in China.</h1>
+        <span class="eyebrow eyebrow--on-dark">Sites web en Chine</span>
+        <h1 class="web-hero__title">Des sites qui chargent, se classent et vendent réellement en Chine.</h1>
         <p class="web-hero__lead">
-          We design, build and host websites and WeChat mini-programs for the Chinese market.
-          Sub-second load times. ICP-compliant. Baidu-ready. Visible in the AI engines Chinese
-          consumers now use to discover brands.
+          Nous concevons, développons et hébergeons des sites et mini-programmes WeChat pour le marché chinois.
+          Chargement sous la seconde. Conformes ICP. Prêts pour Baidu. Visibles dans les moteurs IA que les
+          consommateurs chinois utilisent désormais pour découvrir les marques.
         </p>
         <p class="web-hero__support">
-          20+ years in China. Offices in Shanghai, Hong Kong and Paris. Teams that have built for
-          global brands and Chinese challengers alike.
+          Plus de vingt ans en Chine. Bureaux à Shanghai, Hong Kong et Paris. Des équipes qui ont bâti pour
+          des marques mondiales comme pour des challengers chinois.
         </p>
         <div class="web-hero__actions">
-          <a href="/contact" class="btn btn--primary">Get a free China site check</a>
-          <a href="/work" class="btn btn--ghost-light">See our work</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary">Audit gratuit de votre site Chine</a>
+          <a href="/fr/nos-realisations" class="btn btn--ghost-light">Voir nos réalisations</a>
         </div>
       </div>
     </section>
@@ -224,23 +224,23 @@ const icons: Record<string, string> = {
       <div class="container">
         <div class="web-intro">
           <div class="web-intro__copy">
-            <span class="eyebrow">Built for the Chinese internet, not bolted on</span>
-            <h2>Most global websites break inside China.</h2>
+            <span class="eyebrow">Bâti pour l'internet chinois, jamais greffé</span>
+            <h2>La plupart des sites mondiaux cassent à l'intérieur de la Chine.</h2>
             <p>
-              They load slowly, sometimes not at all. Google services stay blocked.
-              Baidu does not index them. And the AI engines skip right over them.
+              Ils chargent lentement, parfois pas du tout. Les services Google restent bloqués.
+              Baidu ne les indexe pas. Et les moteurs IA passent dessus sans s'arrêter.
             </p>
             <p>
-              We build sites and WeChat mini-programs that live inside the Chinese web.
-              The tech fits the market, the hosting sits in the right place, the SEO is
-              built for Baidu, and the content gets picked up by the AI engines Chinese
-              consumers now lean on. So you can be found. And so you can sell.
+              Nous bâtissons des sites et mini-programmes WeChat qui vivent à l'intérieur du web chinois.
+              La tech colle au marché, l'hébergement se trouve au bon endroit, le SEO est
+              bâti pour Baidu, et le contenu est repris par les moteurs IA sur lesquels les consommateurs chinois
+              s'appuient désormais. Pour qu'on vous trouve. Et pour que vous vendiez.
             </p>
           </div>
 
-          <aside class="web-outcomes" aria-label="Typical outcomes in the first 90 days">
-            <span class="web-outcomes__tag">First 90 days</span>
-            <h3>What changes when you do this right</h3>
+          <aside class="web-outcomes" aria-label="Résultats typiques sur les quatre-vingt-dix premiers jours">
+            <span class="web-outcomes__tag">Quatre-vingt-dix premiers jours</span>
+            <h3>Ce qui change quand cela est fait correctement</h3>
             <ul>
               {outcomes.map((o) => (
                 <li>
@@ -258,23 +258,23 @@ const icons: Record<string, string> = {
     <section class="section section--alt">
       <div class="container">
         <header class="section-header section-header--center">
-          <span class="eyebrow">Why a China website is non-negotiable in 2026</span>
-          <h2>GEO: getting cited by AI, not just ranked by Baidu</h2>
+          <span class="eyebrow">Pourquoi un site Chine est non négociable en 2026</span>
+          <h2>GEO : se faire citer par les IA, pas seulement classer par Baidu</h2>
           <p class="section-header__lead">
-            GEO stands for Generative Engine Optimization. Basically SEO for the AI era.
-            Chinese consumers are skipping the search bar and asking models instead.
+            GEO signifie Generative Engine Optimization. En substance, le SEO de l'ère IA.
+            Les consommateurs chinois sautent la barre de recherche et interrogent les modèles.
           </p>
         </header>
 
         <div class="web-geo">
           <div class="web-geo__copy">
             <p>
-              Doubao, Kimi, DeepSeek, Qwen and a growing list of others answer by pulling
-              from websites they have indexed and deemed credible. If you do not have a
-              China-hosted site, they have nothing to cite about your brand. Which means
-              you are not in the conversation.
+              Doubao, Kimi, DeepSeek, Qwen et une liste qui s'allonge répondent en tirant
+              depuis les sites qu'ils ont indexés et jugés crédibles. Sans site hébergé en
+              Chine, ils n'ont rien à citer sur votre marque. Ce qui signifie
+              que vous êtes hors de la conversation.
             </p>
-            <h3 class="web-geo__h3">What we actually do for GEO</h3>
+            <h3 class="web-geo__h3">Ce que nous faisons concrètement en GEO</h3>
             <ul class="web-geo__list">
               {geoBullets.map((b) => (
                 <li>
@@ -285,8 +285,8 @@ const icons: Record<string, string> = {
             </ul>
           </div>
 
-          <div class="web-engines" aria-label="Chinese AI engines">
-            <span class="web-engines__tag">The engines that now decide visibility</span>
+          <div class="web-engines" aria-label="Moteurs IA chinois">
+            <span class="web-engines__tag">Les moteurs qui décident désormais de la visibilité</span>
             <div class="web-engines__grid">
               {aiEngines.map((e) => (
                 <div class="web-engine">
@@ -297,8 +297,8 @@ const icons: Record<string, string> = {
               ))}
             </div>
             <p class="web-engines__note">
-              A Chinese-hosted, Chinese-language website is the foundation asset that feeds
-              Baidu and every AI engine now shaping how Chinese consumers find products.
+              Un site hébergé en Chine et rédigé en chinois est l'actif fondateur qui nourrit
+              Baidu et chaque moteur IA qui façonne désormais la manière dont les consommateurs chinois trouvent les produits.
             </p>
           </div>
         </div>
@@ -310,22 +310,22 @@ const icons: Record<string, string> = {
       <div class="container">
         <header class="section-header section-header--split">
           <div>
-            <span class="eyebrow">WeChat as the other half</span>
-            <h2>Two surfaces to own. The account and the mini-program.</h2>
+            <span class="eyebrow">WeChat, l'autre moitié</span>
+            <h2>Deux surfaces à tenir. Le compte et le mini-programme.</h2>
           </div>
           <div class="web-wechat-stat">
-            <span class="web-wechat-stat__value">1.414B</span>
+            <span class="web-wechat-stat__value">1,414 Md</span>
             <span class="web-wechat-stat__label">
-              Combined monthly active users of Weixin and WeChat as of September 30, 2025
+              Utilisateurs actifs mensuels combinés de Weixin et WeChat au 30 septembre 2025
             </span>
-            <span class="web-wechat-stat__source">Source: Tencent Q3 2025 results</span>
+            <span class="web-wechat-stat__source">Source : résultats Tencent T3 2025</span>
           </div>
         </header>
 
         <div class="web-surfaces">
           {wechatSurfaces.map((s) => (
             <article class={`web-surface${s.highlight ? ' web-surface--highlight' : ''}`}>
-              {s.highlight && <span class="web-surface__badge">Where conversion happens</span>}
+              {s.highlight && <span class="web-surface__badge">Là où la conversion se joue</span>}
               <div class="web-surface__head">
                 <span class="web-surface__cn" lang="zh-Hans">{s.cn}</span>
                 <span class="web-surface__tag">{s.tag}</span>
@@ -338,9 +338,9 @@ const icons: Record<string, string> = {
         </div>
 
         <p class="web-surfaces__note">
-          Most brands on our roster run both. The account keeps the relationship warm.
-          The mini-program is where the conversion happens. Together they cover discovery
-          through to purchase.
+          La plupart des marques que nous accompagnons opèrent les deux. Le compte garde la relation vivante.
+          Le mini-programme est l'endroit où la conversion se joue. Ensemble, ils couvrent de la découverte
+          à l'achat.
         </p>
       </div>
     </section>
@@ -349,11 +349,11 @@ const icons: Record<string, string> = {
     <section class="section section--alt">
       <div class="container">
         <header class="section-header section-header--center">
-          <span class="eyebrow">Two tech paths</span>
-          <h2>WordPress or Astro. We pick based on how your team works.</h2>
+          <span class="eyebrow">Deux voies techniques</span>
+          <h2>WordPress ou Astro. Nous tranchons selon le fonctionnement de votre équipe.</h2>
           <p class="section-header__lead">
-            Not a religion war. The right call depends on how often you publish, who pushes
-            updates, and whether the site needs to do transactions.
+            Pas une guerre de religion. Le bon choix dépend de la fréquence de publication, des personnes qui poussent
+            les mises à jour, et de la nécessité d'opérer des transactions.
           </p>
         </header>
 
@@ -374,8 +374,8 @@ const icons: Record<string, string> = {
                 ))}
               </ul>
               <div class="web-tech-card__footer">
-                <span class="web-tech-card__timeline-label">Timeline</span>
-                <span class="web-tech-card__timeline-value">{t.timeline}, plus ICP filing</span>
+                <span class="web-tech-card__timeline-label">Calendrier</span>
+                <span class="web-tech-card__timeline-value">{t.timeline}, plus le dépôt ICP</span>
               </div>
             </article>
           ))}
@@ -387,11 +387,11 @@ const icons: Record<string, string> = {
     <section class="section">
       <div class="container">
         <header class="section-header section-header--center">
-          <span class="eyebrow">Hosting in China</span>
-          <h2>Hosting is the single most important call you'll make.</h2>
+          <span class="eyebrow">Hébergement en Chine</span>
+          <h2>L'hébergement est la décision la plus importante que vous prendrez.</h2>
           <p class="section-header__lead">
-            And there is really only one answer: host inside China. Everything else is a
-            compromise that hurts you. Slow load times, weak Baidu rankings, broken UX.
+            Et il n'y a qu'une seule vraie réponse : héberger à l'intérieur de la Chine. Tout le reste est un
+            compromis qui vous coûte. Chargement lent, ranking Baidu faible, UX cassée.
           </p>
         </header>
 
@@ -404,11 +404,11 @@ const icons: Record<string, string> = {
               </header>
               <dl class="web-host__metrics">
                 <div>
-                  <dt>Load time in China</dt>
+                  <dt>Temps de chargement en Chine</dt>
                   <dd>{h.load}</dd>
                 </div>
                 <div>
-                  <dt>Baidu SEO impact</dt>
+                  <dt>Impact SEO Baidu</dt>
                   <dd>{h.seo}</dd>
                 </div>
               </dl>
@@ -419,22 +419,22 @@ const icons: Record<string, string> = {
 
         <div class="web-icp">
           <div class="web-icp__copy">
-            <span class="eyebrow">ICP filing, the part nobody warns you about</span>
-            <h3>Bei'an in 2 to 4 weeks. Commercial license in 2 to 3 months.</h3>
+            <span class="eyebrow">Dépôt ICP, la partie dont personne ne vous parle</span>
+            <h3>Bei'an en 2 à 4 semaines. Licence commerciale en 2 à 3 mois.</h3>
             <p>
-              Mainland hosting means an ICP license and a server with Alibaba Cloud, Tencent
-              Cloud or Huawei Cloud. We take care of the full ICP filing. Bei'an
-              (informational) for content sites. Commercial license for eCommerce and
-              transactional platforms.
+              Héberger en Chine continentale suppose une licence ICP et un serveur chez Alibaba Cloud, Tencent
+              Cloud ou Huawei Cloud. Nous prenons en charge le dépôt ICP complet. Bei'an
+              (informationnel) pour les sites de contenu. Licence commerciale pour l'eCommerce et
+              les plateformes transactionnelles.
             </p>
             <p>
-              We also handle server config, CDN, monitoring from inside China (most tools
-              check from outside the Firewall and miss the real problems), and daily backups.
-              No Chinese entity yet? There are workarounds. We will walk you through them.
+              Nous gérons aussi la configuration serveur, le CDN, le monitoring depuis l'intérieur de la Chine (la plupart des outils
+              vérifient depuis l'extérieur du Firewall et ratent les vrais problèmes), et les sauvegardes quotidiennes.
+              Pas encore d'entité chinoise ? Des solutions existent. Nous vous les exposerons.
             </p>
           </div>
           <div class="web-icp__visual">
-            <img src="/Images/insights/how-to-apply-for-an-icp-license-for-your-website.png" alt="ICP licensing process for websites in China" loading="lazy" />
+            <img src="/Images/insights/how-to-apply-for-an-icp-license-for-your-website.png" alt="Processus de licence ICP pour les sites web en Chine" loading="lazy" />
           </div>
         </div>
       </div>
@@ -445,26 +445,26 @@ const icons: Record<string, string> = {
       <div class="container">
         <article class="web-cwf">
           <div class="web-cwf__copy">
-            <span class="eyebrow">Sister agency</span>
-            <h2 class="web-cwf__title">ChinaWebFoundry: a dedicated website agency for China.</h2>
+            <span class="eyebrow">Agence sœur</span>
+            <h2 class="web-cwf__title">ChinaWebFoundry : une agence dédiée aux sites pour la Chine.</h2>
             <p>
-              When the website itself is the main deliverable, we run a dedicated sister
-              agency built specifically for the Chinese market. Any tech stack: WordPress,
-              Astro, static, custom.
+              Quand le site lui-même est le livrable principal, nous opérons une agence sœur
+              spécifiquement conçue pour le marché chinois. Toutes les stacks : WordPress,
+              Astro, statique, sur mesure.
             </p>
             <ul class="web-cwf__list">
-              <li>Strategy, audit and migration behind the Firewall</li>
-              <li>ICP-licensed hosting on Alibaba, Tencent or Huawei Cloud</li>
-              <li>UX and UI redesign for Chinese users</li>
-              <li>Plugin and integration swaps for anything blocked</li>
-              <li>Baidu SEO, Chinese content, ongoing maintenance</li>
+              <li>Stratégie, audit et migration derrière le Firewall</li>
+              <li>Hébergement sous licence ICP sur Alibaba, Tencent ou Huawei Cloud</li>
+              <li>Refonte UX et UI pour les utilisateurs chinois</li>
+              <li>Remplacement de plugins et intégrations pour tout ce qui est bloqué</li>
+              <li>SEO Baidu, contenu chinois, maintenance continue</li>
             </ul>
             <p class="web-cwf__same">
-              Same team. Same 20+ years in China. A focused front door when your priority
-              is a website that actually works inside the mainland.
+              Même équipe. Mêmes vingt ans et plus en Chine. Une porte d'entrée resserrée quand votre priorité
+              est un site qui fonctionne réellement à l'intérieur de la Chine continentale.
             </p>
             <a href="https://www.chinawebfoundry.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-              Visit ChinaWebFoundry <span aria-hidden="true">→</span>
+              Voir ChinaWebFoundry <span aria-hidden="true">→</span>
             </a>
           </div>
           <div class="web-cwf__visual" aria-hidden="true">
@@ -477,12 +477,12 @@ const icons: Record<string, string> = {
               </div>
               <div class="web-cwf__browser-body">
                 <span class="web-cwf__brand">CWF</span>
-                <span class="web-cwf__tagline">Websites built for the Chinese internet.</span>
+                <span class="web-cwf__tagline">Des sites conçus pour l'internet chinois.</span>
                 <div class="web-cwf__chips">
                   <span>WordPress</span>
                   <span>Astro</span>
                   <span>WeChat</span>
-                  <span>Baidu SEO</span>
+                  <span>SEO Baidu</span>
                   <span>ICP</span>
                 </div>
               </div>
@@ -496,8 +496,8 @@ const icons: Record<string, string> = {
     <section class="section">
       <div class="container">
         <header class="section-header section-header--center">
-          <span class="eyebrow">What we deliver</span>
-          <h2>Five things that decide whether the site actually works</h2>
+          <span class="eyebrow">Ce que nous livrons</span>
+          <h2>Cinq éléments qui décident si le site fonctionne réellement</h2>
         </header>
 
         <div class="web-deliver">
@@ -516,19 +516,19 @@ const icons: Record<string, string> = {
     <section class="section section--alt">
       <div class="container container--narrow">
         <header class="section-header section-header--center">
-          <span class="eyebrow">Who we build for</span>
-          <h2>Brands that need a site that works in China, not one that looks fine elsewhere.</h2>
+          <span class="eyebrow">Pour qui nous bâtissons</span>
+          <h2>Les marques qui ont besoin d'un site qui marche en Chine, pas d'un site qui paraît bien ailleurs.</h2>
         </header>
 
         <div class="web-who">
           <ul>
-            <li>International brands launching in China for the first time</li>
-            <li>Brands whose current site is too slow to matter in the mainland</li>
-            <li>Teams filing ICP for the first time and losing weeks to the paperwork</li>
-            <li>eCommerce businesses that need fast, compliant hosting</li>
-            <li>Chinese brands going overseas who need a proper English site</li>
+            <li>Marques internationales qui lancent en Chine pour la première fois</li>
+            <li>Marques dont le site actuel est trop lent pour peser en Chine continentale</li>
+            <li>Équipes qui déposent leur premier ICP et perdent des semaines dans les démarches</li>
+            <li>Acteurs eCommerce qui ont besoin d'un hébergement rapide et conforme</li>
+            <li>Marques chinoises qui partent à l'international et ont besoin d'un vrai site en anglais</li>
           </ul>
-          <p class="web-who__cta">Case studies available on request.</p>
+          <p class="web-who__cta">Études de cas disponibles sur demande.</p>
         </div>
       </div>
     </section>
@@ -538,7 +538,7 @@ const icons: Record<string, string> = {
       <div class="container container--narrow">
         <header class="section-header section-header--center">
           <span class="eyebrow">FAQ</span>
-          <h2>Frequently asked questions about websites in China</h2>
+          <h2>Questions fréquentes sur les sites web en Chine</h2>
         </header>
 
         <div class="web-faq">
@@ -563,15 +563,15 @@ const icons: Record<string, string> = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="web-cta">
-          <span class="eyebrow eyebrow--on-dark">Let's talk about your China website</span>
-          <h2 class="web-cta__title">Tell us what you have, what you need, and where you want to be.</h2>
+          <span class="eyebrow eyebrow--on-dark">Parlons de votre site Chine</span>
+          <h2 class="web-cta__title">Dites-nous ce que vous avez, ce qu'il vous faut et où vous voulez aller.</h2>
           <p class="web-cta__lead">
-            We will come back with a recommendation that fits your timeline, your audience
-            and your budget. No generic decks, no 40-slide intro. Just a plan.
+            Nous reviendrons avec une recommandation qui colle à votre calendrier, à votre audience
+            et à votre budget. Pas de deck générique, pas de présentation en quarante slides. Juste un plan.
           </p>
           <div class="web-cta__actions">
-            <a href="/contact" class="btn web-cta__btn-primary">Contact us</a>
-            <a href="/work" class="btn web-cta__btn-ghost">See our case studies</a>
+            <a href="/fr/nous-contacter" class="btn web-cta__btn-primary">Nous contacter</a>
+            <a href="/fr/nos-realisations" class="btn web-cta__btn-ghost">Voir nos études de cas</a>
           </div>
         </div>
       </div>

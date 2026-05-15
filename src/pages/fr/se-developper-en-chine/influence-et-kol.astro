@@ -2,151 +2,151 @@
 import Layout from '../../../layouts/Layout.astro';
 
 const heroStats = [
-  { num: '10,000', suffix: '+', label: 'creators in our own KOC database' },
-  { num: '7', suffix: '', label: 'platforms run end to end' },
-  { num: 'One team', suffix: '', label: 'Casting, briefing, production and reporting' },
+  { num: '10,000', suffix: '+', label: "créateurs dans notre propre base KOC" },
+  { num: '7', suffix: '', label: "plateformes opérées de bout en bout" },
+  { num: "Une équipe", suffix: '', label: "Casting, brief, production et reporting" },
 ];
 
 const whyPoints = [
   {
-    lead: 'The funnel is one screen, not five steps.',
-    body: 'Chinese shoppers don’t leave the app to decide. They scroll, search, watch a livestream and buy, all in the same place. Treat the influencer as a billboard and the budget is gone before the first post goes up.',
+    lead: "Le tunnel tient sur un écran, pas en cinq étapes.",
+    body: "Les acheteurs chinois ne quittent pas l'application pour décider. Ils défilent, cherchent, regardent un livestream et achètent, tout au même endroit. Traiter l'influenceur comme un panneau d'affichage, c'est brûler le budget avant la première publication.",
   },
   {
-    lead: 'The numbers are bigger than people expect.',
-    body: 'Livestream commerce alone runs into the hundreds of billions of dollars a year, and the channel keeps growing at a double-digit rate.',
+    lead: "Les ordres de grandeur dépassent ce qu'on imagine.",
+    body: "Le livestream commerce seul atteint des centaines de milliards de dollars par an, et le canal continue de croître à un rythme à deux chiffres.",
   },
   {
-    lead: 'And brands still underspend it.',
-    body: 'Influencer investment in Asia trails the US by an order of magnitude, even though the channel does more of the selling. The opportunity is sitting right there.',
+    lead: "Et les marques y sous-investissent encore.",
+    body: "L'investissement influence en Asie reste un ordre de grandeur sous celui des États-Unis, alors que le canal y porte une plus large part des ventes. L'opportunité est là, à portée de main.",
   },
 ];
 
 const whyQuotes = [
   {
     image: '/Images/grow-in-china/influencers-kols/why-funnel-onescreen.png',
-    alt: 'A Chinese woman scrolling her phone on a sofa, a just-opened delivery parcel beside her, the one-screen funnel made literal',
-    quote: 'China’s livestreaming e-commerce market reached roughly $807 billion in 2024, and is projected to grow at around 18 percent a year through 2026.',
-    cite: 'U.S. Department of Agriculture, Shanghai ATO',
-    citeMeta: 'Selling in China: The Rise of Livestreaming E-commerce, 2025',
+    alt: "Une Chinoise fait défiler son téléphone sur un canapé, un colis tout juste ouvert à ses côtés, le tunnel en un écran pris au pied de la lettre",
+    quote: "Le marché du livestream e-commerce chinois a atteint environ 807 milliards de dollars en 2024, et devrait croître à près de 18 % par an jusqu'en 2026.",
+    cite: "U.S. Department of Agriculture, Shanghai ATO",
+    citeMeta: "Selling in China: The Rise of Livestreaming E-commerce, 2025",
   },
   {
     image: '/Images/grow-in-china/influencers-kols/why-koc-mentions.png',
-    alt: 'A phone screen showing a grid of small creator posts for one product category, a real research moment in a domestic setting',
-    quote: 'Across Asia, influencer spend is just 0.75 percent of social commerce GMV, against 6.8 percent in the US.',
-    cite: 'Totem and Rakuten Insight',
-    citeMeta: 'Influencer Marketing in Asia, 2025',
+    alt: "Un écran de téléphone affiche une grille de publications de petits créateurs pour une catégorie produit, un vrai moment de recherche dans un cadre domestique",
+    quote: "À l'échelle de l'Asie, la dépense influence ne représente que 0,75 % du GMV social commerce, contre 6,8 % aux États-Unis.",
+    cite: "Totem et Rakuten Insight",
+    citeMeta: "Influencer Marketing in Asia, 2025",
   },
 ];
 
 const howSteps = [
   {
     icon: 'compass',
-    title: 'Find the right people',
-    body: 'We start with your goal and your margin, not a name on a list. Then we read the data: who is watching, and what they go on to buy. We keep our own database of KOCs we have used and trust.',
+    title: "Trouver les bonnes personnes",
+    body: "Nous partons de votre objectif et de votre marge, pas d'un nom sur une liste. Puis nous lisons la donnée : qui regarde, et ce qu'ils achètent ensuite. Nous tenons notre propre base de KOC déjà éprouvés.",
   },
   {
     icon: 'pen',
-    title: 'Write a brief that travels',
-    body: 'The brief is the whole game. We agree the message and the must-haves with you, then leave the execution to the creator. The ones who sound scripted are the ones nobody watches.',
+    title: "Rédiger un brief qui passe la rampe",
+    body: "Le brief, c'est tout le jeu. Nous arrêtons le message et les essentiels avec vous, puis nous laissons l'exécution au créateur. Ceux qui sonnent comme un script sont précisément ceux que personne ne regarde.",
   },
   {
     icon: 'gear',
-    title: 'Run it end to end',
-    body: 'Contracts, content, posting schedule, livestream coordination. You approve the plan. We move budget the moment something underperforms, not weeks later in a post-mortem.',
+    title: "Opérer de bout en bout",
+    body: "Contrats, contenu, calendrier de publication, coordination livestream. Vous validez le plan. Nous redéployons le budget dès qu'un levier sous-performe, pas trois semaines plus tard en post-mortem.",
   },
   {
     icon: 'link',
-    title: 'Connect content to commerce',
-    body: 'A post you can’t buy from is half a campaign. We link content straight to your store on Douyin, Tmall or JD and track what each creator drove. On Xiaohongshu the sale often lands elsewhere, so we follow it across platforms.',
+    title: "Relier le contenu au commerce",
+    body: "Une publication d'où l'on ne peut pas acheter, c'est une demi-campagne. Nous relions le contenu directement à votre boutique sur Douyin, Tmall ou JD et traçons ce que chaque créateur a généré. Sur Xiaohongshu, la vente se referme souvent ailleurs, alors nous la suivons d'une plateforme à l'autre.",
   },
 ];
 
 const benefits = [
   {
     icon: 'handshake',
-    lead: 'Direct relationships, better rates.',
-    body: 'We work with KOLs and MCNs we know personally, not a marketplace. Priority access to in-demand creators, at rates below open-market.',
+    lead: "Des relations directes, des tarifs meilleurs.",
+    body: "Nous travaillons avec des KOL et des MCN que nous connaissons personnellement, pas une marketplace. Accès prioritaire à des créateurs très demandés, à des tarifs en dessous du marché ouvert.",
   },
   {
     icon: 'creator',
-    lead: 'A KOC network built over years.',
-    body: 'Our own database, more than 10,000 creators deep. It puts your product in front of the right niche communities at a scale a brand cannot reach alone.',
+    lead: "Un réseau KOC bâti sur des années.",
+    body: "Notre propre base, plus de 10 000 créateurs. Elle place votre produit devant les bonnes communautés de niche à une échelle qu'une marque ne peut pas atteindre seule.",
   },
   {
     icon: 'chart',
-    lead: 'Selection backed by data, not a gut call.',
-    body: 'Every creator on a shortlist is screened first: audience composition, real engagement, fake-follower checks.',
+    lead: "Une sélection appuyée sur la donnée, pas sur l'instinct.",
+    body: "Chaque créateur d'une shortlist est filtré au préalable : composition d'audience, engagement réel, contrôle des faux abonnés.",
   },
   {
     icon: 'clipboard',
-    lead: 'Reporting that ties spend to sales.',
-    body: 'Creator by creator, across platforms. You know which ones sold while the campaign is still live, while it can still be fixed.',
+    lead: "Un reporting qui relie la dépense aux ventes.",
+    body: "Créateur par créateur, d'une plateforme à l'autre. Vous savez lesquels ont vendu pendant que la campagne tourne encore, quand il est encore temps d'agir.",
   },
 ];
 
 const platforms = [
   {
-    name: 'Xiaohongshu',
+    name: "Xiaohongshu",
     cn: '小红书',
-    desc: 'Where research and purchase happen in the same scroll. A strong note sends shoppers straight to your store. Our own KOC and KOL database lives here.',
+    desc: "Là où la recherche et l'achat se font dans le même scroll. Une note forte renvoie l'acheteur droit vers votre boutique. Notre base maison KOC et KOL vit ici.",
   },
   {
-    name: 'Douyin',
+    name: "Douyin",
     cn: '抖音',
-    desc: 'Short video and livestream commerce, run on an interest algorithm. We are an official Douyin marketing partner.',
+    desc: "Vidéo courte et livestream commerce, sur un algorithme d'intérêt. Nous sommes partenaire marketing officiel Douyin.",
   },
   {
-    name: 'WeChat',
+    name: "WeChat",
     cn: '微信',
-    desc: 'Articles, private traffic, long-form trust and CRM. More than ten years on the platform.',
+    desc: "Articles, trafic privé, confiance longue et CRM. Plus de dix ans sur la plateforme.",
   },
   {
-    name: 'Weibo',
+    name: "Weibo",
     cn: '微博',
-    desc: 'Reach and conversation. Still strong for launches and buzz.',
+    desc: "Audience et conversation. Toujours puissant pour les lancements et le buzz.",
   },
   {
-    name: 'Bilibili',
+    name: "Bilibili",
     cn: '',
-    desc: 'Long-form, younger, deeply engaged. Underused by foreign brands.',
+    desc: "Format long, audience plus jeune, fortement engagée. Sous-utilisé par les marques étrangères.",
   },
   {
-    name: 'Kuaishou',
+    name: "Kuaishou",
     cn: '快手',
-    desc: 'Livestream commerce with real pull in lower-tier cities.',
+    desc: "Livestream commerce qui mord pour de bon dans les villes de rang inférieur.",
   },
   {
-    name: 'Tmall & JD',
+    name: "Tmall et JD",
     cn: '天猫 / 京东',
-    desc: 'The platforms where the sale closes. We connect KOL content straight to your store and run influencer campaigns inside both.',
+    desc: "Les plateformes où la vente se conclut. Nous relions le contenu KOL directement à votre boutique et tenons des campagnes d'influence à l'intérieur des deux.",
   },
 ];
 
 const faqs = [
-  { cat: 'Strategy', q: 'How is this different from influencer marketing back home?', a: 'In the West, influencers mostly create awareness and the purchase happens later, somewhere else. In China it all happens on the same app, often in the same session. Creators are tied directly to sales, not just reach. And because brands here still underspend the channel relative to the US, it is more of an open door than a crowded room.' },
-  { cat: 'Creators', q: 'How do I find the right influencer?', a: 'Start with your audience, not the influencer. Work out who you need to reach, then check that against a creator’s real follower base, not their headline number. Douyin runs on an interest algorithm, so content fit usually beats follower count. An agency with real data and direct relationships makes this faster and cheaper than guessing your way through it.' },
-  { cat: 'Cost', q: 'How much does a KOL actually cost?', a: 'It ranges a lot. On Xiaohongshu, a nano KOC post can run a few hundred RMB; a mid-tier KOL post sits in the low tens of thousands; a top-tier name can pass 100,000 RMB for a single post. Douyin video tends to come in 20 to 30 percent lower for comparable reach. And top livestream KOLs take a sales commission on top, often 40 to 50 percent. Whatever number you get quoted, treat it as a starting point, not a rate card.' },
-  { cat: 'Cost', q: 'What budget do I need to run something real?', a: 'To genuinely test a platform, plan for 100,000 to 300,000 RMB over two to three months. That covers a KOC seeding base, a few mid-tier KOLs, content production and some paid amplification. You can run a seeding pilot below 50,000 RMB, but you will not get a clean read on whether the channel sells for you.' },
-  { cat: 'Creators', q: 'KOL or KOC?', a: 'Usually both. KOLs give you reach and a credibility signal. KOCs, the everyday creators with small, trusted followings, build the search traction that matters when a shopper looks your product up. Find a dozen honest mentions and they buy. Find one paid post and they keep scrolling. We size the mix to your goal and your budget, and that mix is rarely the same twice.' },
-  { cat: 'Strategy', q: 'Which platform is best?', a: 'The one where your buyers already are. Xiaohongshu suits considered purchases in beauty, lifestyle and wellness. Douyin is built for video and livestream selling at scale. Weibo still works for launches. WeChat is for depth and retention. Most brands need two or three, not one, and definitely not all of them at once.' },
-  { cat: 'Working with us', q: 'How do I get a KOL to actually sell, not just rack up views?', a: 'Build the product into the content so it does not read as an ad, then make it buyable on the spot. Livestreams, honest reviews, unboxings, follower-only discount codes. And the link from post to product page has to be there. A campaign with no path to purchase is just awareness with a bigger invoice.' },
-  { cat: 'Operations', q: 'Do I need a China-registered entity?', a: 'For the official collaboration systems, usually yes. Xiaohongshu’s Pugongying and Weibo’s official tools generally want a registered business in China. You can still run campaigns through an agency that holds the relationships, which is how most foreign brands start before their own entity is set up.' },
-  { cat: 'Operations', q: 'How long until we are live?', a: 'Brief to first posts, three to five weeks. Shortlisting and negotiation take one to two weeks, contracting a few days, content and review another one to two. Livestream slots with in-demand hosts often need booking further out. Rushing the brief is where campaigns quietly lose their quality.' },
-  { cat: 'Creators', q: 'How do I know an influencer’s followers are real?', a: 'Look past the count at the shape of the engagement. Comment quality, save and share rates, whether the audience’s city and age profile matches the content. Sudden follower spikes, generic one-word comments, engagement that does not track with views, those are the red flags. We screen for this before anyone reaches a shortlist, because inflated accounts are common.' },
-  { cat: 'Operations', q: 'What should the contract spell out?', a: 'Be specific. Number and type of posts, platform, posting window, whether the content stays up and for how long, usage rights if you want to repurpose it, KPIs, and the commission structure where it applies. Vague contracts are where the disputes start. And get proof of performance before final payment written in.' },
-  { cat: 'Cost', q: 'Can I reuse the content in my own ads?', a: 'Only if the contract grants usage rights, and that usually costs extra. Plenty of brands forget to negotiate it, then find they cannot legally boost a post that did well. Decide upfront whether you want amplification rights. Bolting them on later is slower and more expensive.' },
-  { cat: 'Strategy', q: 'What results can I realistically expect?', a: 'Depends on category, budget and platform, so be wary of anyone who promises a fixed number. A healthy seeding campaign builds search visibility and a base of genuine mentions. A livestream drives sales in a window. Match the KPI to the format: reach and saves for seeding, conversion and GMV for livestream. And judge the program over a quarter, not off one post.' },
-  { cat: 'Strategy', q: 'How do you measure ROI when the sale happens somewhere else?', a: 'This is the Xiaohongshu problem. A note builds intent, then the shopper buys on Tmall or JD a few days later. We track it through branded search lift, traffic and add-to-cart movement on your store, and discount codes unique to each creator. Intent shows up first, sales after. So we measure across platforms, not inside one.' },
-  { cat: 'Operations', q: 'What if a campaign is underperforming halfway through?', a: 'We move budget. If a creator isn’t converting, spend shifts to the ones that are. Or we adjust the angle. Or change the format entirely. None of that works without live reporting, which is exactly why we set it up that way from day one. The flexibility has to be in the plan, and in the contracts, before you need it.' },
-  { cat: 'Creators', q: 'Is livestreaming worth it for us?', a: 'Depends on your category and your margin. Livestream drives the highest engagement and the most direct conversion, but top hosts take that 40 to 50 percent commission, and the format rewards products that demo well. For a lot of brands, a store-led livestream beats renting a celebrity, you keep control of the message and the margin. If it does not fit, we will say so.' },
-  { cat: 'Operations', q: 'How do I keep it from looking like an obvious ad?', a: 'Brief the creator on the message and the must-haves, then leave the execution alone. The scripted ones are the ones nobody watches, and on Xiaohongshu hard-selling backfires fast. Native, experience-based content that names the product honestly beats a polished ad read almost every time.' },
-  { cat: 'Operations', q: 'What compliance risks should I know about?', a: 'China’s advertising law is strict on superlatives and unverified claims. "Best," "number one," unproven health or efficacy statements, those can trigger real penalties. And influencer collaborations increasingly have to run through official platforms for disclosure. We brief creators on what they cannot say, and we review content before it goes live.' },
-  { cat: 'Strategy', q: 'Can a small brand succeed here, or is this just for the big names?', a: 'A small brand can absolutely work here, and often does better through KOCs than KOLs. Because Douyin and Xiaohongshu reward content fit over follower count, a relevant product with good content can build traction without a celebrity budget. Start with a focused KOC seeding base, prove the product lands, then scale.' },
-  { cat: 'Working with us', q: 'Should I work with creators directly, through an MCN, or through an agency?', a: 'Direct works if you have the China team, the language, the contracts and the time to vet accounts. An MCN gives you its roster, but remember it represents its creators, not you. An agency works for your side of the table. It selects across the whole market against your goals, handles the contracts and the compliance, and ties the reporting back to your sales. That last part is the job we do.' },
+  { cat: "Stratégie", q: "En quoi est-ce différent du marketing d'influence chez nous ?", a: "À l'Ouest, les influenceurs créent surtout de la notoriété, et l'achat se conclut plus tard, ailleurs. En Chine, tout se passe dans la même application, souvent dans la même session. Les créateurs sont reliés directement aux ventes, pas seulement à l'audience. Et parce que les marques sous-investissent encore le canal par rapport aux États-Unis, c'est davantage une porte ouverte qu'une salle pleine." },
+  { cat: "Créateurs", q: "Comment trouver le bon influenceur ?", a: "Partez de votre audience, pas de l'influenceur. Identifiez qui vous devez toucher, puis comparez ce profil à la vraie base d'abonnés du créateur, pas à son chiffre de façade. Douyin tourne sur un algorithme d'intérêt, l'adéquation du contenu l'emporte donc en général sur le nombre d'abonnés. Une agence qui dispose de vraies données et de relations directes rend ce travail plus rapide et moins cher que de tâtonner seul." },
+  { cat: "Coût", q: "Combien coûte réellement un KOL ?", a: "Très large amplitude. Sur Xiaohongshu, une publication de nano KOC vaut quelques centaines de RMB ; une publication de KOL de mid-tier se situe dans les dizaines de milliers ; un nom de premier rang peut dépasser 100 000 RMB pour une seule publication. La vidéo Douyin sort généralement 20 à 30 % en dessous, pour une portée comparable. Et les KOL livestream de premier rang touchent une commission sur les ventes en plus, souvent 40 à 50 %. Quel que soit le chiffre annoncé, traitez-le comme un point de départ, pas une grille tarifaire." },
+  { cat: "Coût", q: "Quel budget faut-il pour tester sérieusement ?", a: "Pour réellement tester une plateforme, comptez 100 000 à 300 000 RMB sur deux à trois mois. Cela couvre un socle de seeding KOC, quelques KOL de mid-tier, la production de contenu et un peu d'amplification payante. Vous pouvez tenir un pilote de seeding sous 50 000 RMB, mais vous n'aurez pas de lecture nette sur la capacité du canal à vendre pour vous." },
+  { cat: "Créateurs", q: "KOL ou KOC ?", a: "Le plus souvent les deux. Les KOL vous donnent de la portée et un signal de crédibilité. Les KOC, ces créateurs du quotidien à audience restreinte et fidèle, bâtissent la traction de recherche qui compte quand un acheteur cherche votre produit. Une dizaine de mentions honnêtes, et il achète. Une seule publication payée, il poursuit son défilement. Nous calibrons le mix en fonction de votre objectif et de votre budget, et ce mix est rarement le même deux fois." },
+  { cat: "Stratégie", q: "Quelle plateforme est la meilleure ?", a: "Celle où vos acheteurs se trouvent déjà. Xiaohongshu convient aux achats réfléchis en beauté, lifestyle et wellness. Douyin est conçu pour la vente en vidéo et livestream à grande échelle. Weibo fonctionne encore pour les lancements. WeChat est pour la profondeur et la rétention. La plupart des marques ont besoin de deux ou trois, pas d'une seule, et surtout pas de toutes en même temps." },
+  { cat: "Travailler avec nous", q: "Comment faire en sorte qu'un KOL vende réellement, et pas seulement génère des vues ?", a: "Intégrez le produit au contenu pour qu'il ne se lise pas comme une publicité, puis rendez-le achetable sur place. Livestreams, avis honnêtes, déballages, codes de réduction réservés aux abonnés. Et le lien de la publication vers la page produit doit exister. Une campagne sans chemin vers l'achat n'est qu'une notoriété facturée plus cher." },
+  { cat: "Opérations", q: "Faut-il une entité enregistrée en Chine ?", a: "Pour les systèmes officiels de collaboration, en général oui. Le Pugongying de Xiaohongshu et les outils officiels de Weibo demandent généralement une entité enregistrée en Chine. Vous pouvez toutefois tenir des campagnes via une agence qui détient les relations, voie que la plupart des marques étrangères empruntent avant d'avoir leur propre entité." },
+  { cat: "Opérations", q: "Combien de temps avant la mise en ligne ?", a: "Du brief aux premières publications, trois à cinq semaines. La shortlist et la négociation prennent une à deux semaines, le contrat quelques jours, le contenu et sa relecture une à deux de plus. Les créneaux livestream avec des animateurs très demandés se réservent souvent plus à l'avance. Bâcler le brief, c'est précisément là que les campagnes perdent silencieusement en qualité." },
+  { cat: "Créateurs", q: "Comment savoir si les abonnés d'un influenceur sont réels ?", a: "Regardez au-delà du chiffre, observez la forme de l'engagement. Qualité des commentaires, taux de sauvegarde et de partage, adéquation du profil ville et âge de l'audience avec le contenu. Pics soudains d'abonnés, commentaires génériques d'un seul mot, engagement décorrélé des vues : ce sont les drapeaux rouges. Nous filtrons cela avant qu'un nom n'atteigne une shortlist, parce que les comptes gonflés sont courants." },
+  { cat: "Opérations", q: "Que doit préciser le contrat ?", a: "Soyez précis. Nombre et type de publications, plateforme, fenêtre de diffusion, durée de maintien du contenu en ligne, droits d'usage si vous voulez le réemployer, KPI et structure de commission lorsqu'elle s'applique. Les contrats vagues sont la source des litiges. Et inscrivez la preuve de performance avant paiement final." },
+  { cat: "Coût", q: "Puis-je réutiliser le contenu dans mes propres campagnes ?", a: "Uniquement si le contrat accorde des droits d'usage, et cela coûte généralement en plus. Beaucoup de marques oublient de le négocier, puis découvrent qu'elles ne peuvent pas amplifier légalement une publication qui a bien marché. Décidez en amont si vous voulez les droits d'amplification. Les ajouter après coup est plus lent et plus cher." },
+  { cat: "Stratégie", q: "Quels résultats peut-on raisonnablement attendre ?", a: "Cela dépend de la catégorie, du budget et de la plateforme, méfiez-vous donc de quiconque promet un chiffre fixe. Une campagne de seeding saine bâtit la visibilité en recherche et un socle de mentions authentiques. Un livestream génère des ventes dans une fenêtre. Calez le KPI sur le format : portée et sauvegardes pour le seeding, conversion et GMV pour le livestream. Et jugez le programme sur un trimestre, pas sur une publication." },
+  { cat: "Stratégie", q: "Comment mesurer le ROI quand la vente se conclut ailleurs ?", a: "C'est le problème Xiaohongshu. Une note bâtit l'intention, puis l'acheteur règle sur Tmall ou JD quelques jours plus tard. Nous le suivons à travers le lift de recherche de marque, le trafic et l'ajout au panier sur votre boutique, et des codes de réduction propres à chaque créateur. L'intention apparaît d'abord, les ventes ensuite. Nous mesurons donc d'une plateforme à l'autre, pas à l'intérieur d'une seule." },
+  { cat: "Opérations", q: "Que faire si une campagne sous-performe à mi-parcours ?", a: "Nous déplaçons le budget. Si un créateur ne convertit pas, la dépense bascule vers ceux qui convertissent. Ou nous ajustons l'angle. Ou nous changeons de format. Rien de cela ne fonctionne sans reporting en direct, et c'est précisément pour cette raison que nous le mettons en place dès le premier jour. La souplesse doit figurer dans le plan et dans les contrats, avant d'en avoir besoin." },
+  { cat: "Créateurs", q: "Le livestream en vaut-il la peine pour nous ?", a: "Cela dépend de la catégorie et de la marge. Le livestream tire l'engagement le plus élevé et la conversion la plus directe, mais les animateurs de premier rang prennent cette commission de 40 à 50 %, et le format récompense les produits qui se démontrent bien. Pour beaucoup de marques, un livestream tenu depuis la boutique l'emporte sur la location d'une vedette : vous gardez la main sur le message et la marge. Si cela ne colle pas à votre cas, nous le dirons." },
+  { cat: "Opérations", q: "Comment éviter que cela ne ressemble à une publicité évidente ?", a: "Briefez le créateur sur le message et les essentiels, puis laissez l'exécution tranquille. Les scripts sont précisément ce que personne ne regarde, et sur Xiaohongshu la vente forcée se retourne vite. Un contenu natif, basé sur l'expérience, qui cite le produit honnêtement, l'emporte presque toujours sur un texte publicitaire poli." },
+  { cat: "Opérations", q: "Quels risques de conformité connaître ?", a: "La loi publicitaire chinoise est stricte sur les superlatifs et les allégations non vérifiées. « Meilleur », « numéro un », promesses santé ou efficacité non prouvées peuvent déclencher de vraies sanctions. Et les collaborations d'influence doivent de plus en plus passer par les plateformes officielles pour la déclaration. Nous briefons les créateurs sur ce qu'ils ne peuvent pas dire, et nous validons le contenu avant la mise en ligne." },
+  { cat: "Stratégie", q: "Une petite marque peut-elle réussir ici, ou est-ce réservé aux grands noms ?", a: "Une petite marque peut absolument réussir ici, et fait souvent mieux par les KOC que par les KOL. Parce que Douyin et Xiaohongshu récompensent l'adéquation du contenu plutôt que le nombre d'abonnés, un produit pertinent et un bon contenu peuvent bâtir de la traction sans budget vedette. Démarrez par un socle resserré de seeding KOC, prouvez que le produit prend, puis montez en charge." },
+  { cat: "Travailler avec nous", q: "Faut-il travailler avec les créateurs en direct, via une MCN, ou via une agence ?", a: "Le direct fonctionne si vous avez l'équipe Chine, la langue, les contrats et le temps de qualifier les comptes. Une MCN vous donne son roster, mais souvenez-vous qu'elle représente ses créateurs, pas vous. Une agence travaille de votre côté de la table. Elle sélectionne sur l'ensemble du marché contre vos objectifs, gère les contrats et la conformité, et relie le reporting à vos ventes. Cette dernière partie, c'est notre métier." },
 ];
 
-const faqCategories = ['All', 'Strategy', 'Cost', 'Creators', 'Operations', 'Working with us'];
+const faqCategories = ["Toutes", "Stratégie", "Coût", "Créateurs", "Opérations", "Travailler avec nous"];
 
 const icons: Record<string, string> = {
   compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="15 9 13 13 9 15 11 11 15 9"/></svg>`,
@@ -183,8 +183,8 @@ const serviceJsonLd = {
 ---
 
 <Layout
-  title="China KOL Agency: Influencer Marketing & Sales"
-  description="We run KOL and KOC campaigns in China that sell, not just get views. Data-driven creator selection across Douyin, Xiaohongshu, Tmall and JD."
+  title="Agence KOL Chine : marketing d'influence et ventes"
+  description="Nous opérons des campagnes KOL et KOC en Chine qui vendent, pas seulement qui font des vues. Sélection de créateurs pilotée par la donnée sur Douyin, Xiaohongshu, Tmall et JD."
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(serviceJsonLd)} is:inline />
@@ -195,31 +195,31 @@ const serviceJsonLd = {
     {/* ---------- HERO ---------- */}
     <section class="kol-hero" data-hero>
       <div class="kol-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/grow-in-china/influencers-kols/hero-kol-livestream.png" alt="A young Chinese livestream host on a small home set, ring light glowing, holding a skincare bottle mid-pitch" />
+        <img src="/Images/grow-in-china/influencers-kols/hero-kol-livestream.png" alt="Une jeune animatrice livestream chinoise sur un petit plateau à domicile, ring light allumée, présente un flacon de skincare en plein argumentaire" />
       </div>
       <div class="kol-hero__overlay" aria-hidden="true"></div>
       <div class="kol-hero__grain" aria-hidden="true"></div>
 
       <div class="container kol-hero__inner">
-        <nav class="kol-hero__crumbs" aria-label="Breadcrumb">
-          <a href="/">Home</a>
+        <nav class="kol-hero__crumbs" aria-label="Fil d'Ariane">
+          <a href="/fr/">Accueil</a>
           <span aria-hidden="true">/</span>
-          <a href="/#services">Grow in China</a>
+          <a href="/fr/#services">Se développer en Chine</a>
         </nav>
-        <span class="eyebrow eyebrow--on-dark kol-reveal">Influencers &amp; KOLs</span>
+        <span class="eyebrow eyebrow--on-dark kol-reveal">Influence et KOL</span>
         <h1 class="kol-hero__title kol-reveal" style="--reveal-delay: 80ms;">
-          <span class="kol-hero__title-row">In the West, an influencer gets you noticed.</span>
-          <span class="kol-hero__title-row kol-hero__title-row--accent">In China, they close the sale.</span>
+          <span class="kol-hero__title-row">À l'Ouest, un influenceur attire l'attention.</span>
+          <span class="kol-hero__title-row kol-hero__title-row--accent">En Chine, il referme la vente.</span>
         </h1>
         <p class="kol-hero__lead kol-reveal" style="--reveal-delay: 200ms;">
-          On Instagram, the creator sits at the top of the funnel. In China, discovery,
-          research and checkout happen on one screen, in the same minute. The KOL is not
-          your awareness layer. They are standing at the register. So we pick creators on
-          data, we brief them properly, and what we get paid is tied to what actually sold.
+          Sur Instagram, le créateur se loge en haut du tunnel. En Chine, découverte,
+          recherche et paiement tiennent sur un seul écran, dans la même minute. Le KOL n'est pas
+          votre couche de notoriété. Il se tient à la caisse. Nous choisissons donc les créateurs sur
+          données, nous les briefons sérieusement, et notre rémunération est liée à ce qui s'est réellement vendu.
         </p>
         <div class="kol-hero__actions kol-reveal" style="--reveal-delay: 280ms;">
-          <a href="/contact" class="btn btn--primary kol-magnetic">Talk to us about your campaign</a>
-          <a href="/insights" class="btn btn--ghost-light kol-magnetic">Read our China insights</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary kol-magnetic">Échanger sur votre campagne</a>
+          <a href="/fr/decryptages" class="btn btn--ghost-light kol-magnetic">Lire nos décryptages Chine</a>
         </div>
 
         <div class="kol-hero__meta kol-reveal" style="--reveal-delay: 360ms;">
@@ -232,9 +232,9 @@ const serviceJsonLd = {
         </div>
       </div>
 
-      <a href="#why" class="kol-hero__scroll" aria-label="Scroll to next section">
+      <a href="#why" class="kol-hero__scroll" aria-label="Aller à la section suivante">
         <span class="kol-hero__scroll-line"></span>
-        <span class="kol-hero__scroll-text">Scroll</span>
+        <span class="kol-hero__scroll-text">Faire défiler</span>
       </a>
     </section>
 
@@ -243,10 +243,10 @@ const serviceJsonLd = {
       <div class="container">
         <header class="section-header section-header--center kol-reveal">
           <span class="eyebrow">Why it&rsquo;s different</span>
-          <h2>Why China is a different game</h2>
+          <h2>Pourquoi la Chine est un autre jeu</h2>
           <p class="section-header__lead">
-            Most brands show up with the Western playbook and lose money for a quarter
-            before they work out why. Three things it gets wrong.
+            La plupart des marques débarquent avec le playbook occidental et perdent de l'argent pendant un trimestre
+            avant d'en comprendre la cause. Trois erreurs qu'il fait.
           </p>
         </header>
 
@@ -280,10 +280,10 @@ const serviceJsonLd = {
         </div>
 
         <p class="kol-aftertext kol-reveal">
-          One last shift. The era of renting a single giant name is fading. Brand-led and
+          Un dernier déplacement. L'ère de la location d'un seul grand nom s'achève. Les livestreams animés depuis la marque ou
           store-led livestreams now drive most of Douyin&rsquo;s commerce, and top KOLs take
-          a 40 to 50 percent cut. When a shopper looks you up, you want a dozen honest
-          mentions. Not one paid celebrity post.
+          40 à 50 % de commission. Quand un acheteur vous cherche, vous voulez une dizaine de mentions honnêtes.
+          Pas une seule publication payée d'une vedette.
         </p>
       </div>
     </section>
@@ -292,11 +292,11 @@ const serviceJsonLd = {
     <section id="how" class="section section--alt">
       <div class="container">
         <header class="section-header section-header--center kol-reveal">
-          <span class="eyebrow">What we do</span>
-          <h2>So here is how we run it</h2>
+          <span class="eyebrow">Ce que nous faisons</span>
+          <h2>Voici comment nous l'opérons</h2>
           <p class="section-header__lead">
-            One operator across casting, briefing, production and reporting. The plan that
-            goes into the deck is the one that runs on the platform on Monday.
+            Un seul opérateur pour le casting, le brief, la production et le reporting. Le plan qui figure
+            dans la présentation est celui qui tourne sur la plateforme dès lundi.
           </p>
         </header>
 
@@ -311,7 +311,7 @@ const serviceJsonLd = {
         </div>
 
         <blockquote class="kol-pull kol-reveal">
-          <p>A million followers means nothing if half of them will never buy your category. We read audience composition before we read follower count. Every time.</p>
+          <p>Un million d'abonnés ne vaut rien si la moitié n'achètera jamais dans votre catégorie. Nous lisons la composition d'audience avant le nombre d'abonnés. À chaque fois.</p>
         </blockquote>
       </div>
     </section>
@@ -321,29 +321,29 @@ const serviceJsonLd = {
       <div class="container container--narrow">
         <header class="section-header kol-reveal">
           <span class="eyebrow">MCN</span>
-          <h2>What is an MCN, and why it matters</h2>
+          <h2>Qu'est-ce qu'une MCN, et pourquoi cela compte</h2>
         </header>
 
         <div class="kol-prose kol-reveal">
           <p>
-            An MCN (multi-channel network) is an agency that signs creators and runs
-            everything for them: content, contracts, brand deals, livestream operations.
+            Une MCN (multi-channel network) est une agence qui signe des créateurs et opère
+            tout pour eux : contenu, contrats, deals de marque, opérations livestream.
           </p>
           <p>
-            In China, MCNs run the creator economy. Most working KOLs and KOCs are signed
-            to one. So when you book a creator, you are negotiating with their MCN, not the
-            person, and the MCN works for the creator, not for you.
+            En Chine, les MCN tiennent l'économie des créateurs. La plupart des KOL et KOC actifs sont sous contrat avec
+            l'une d'elles. Quand vous réservez un créateur, vous négociez avec sa MCN, pas avec
+            la personne, et la MCN travaille pour le créateur, pas pour vous.
           </p>
           <p>
-            We deal with MCNs every day, and we work around them when that serves you
-            better. You want someone on your side of the table.
+            Nous traitons avec les MCN tous les jours, et nous les contournons quand cela vous sert
+            mieux. Il vous faut quelqu'un de votre côté de la table.
           </p>
         </div>
 
         <figure class="kol-figure kol-reveal">
           <img
             src="/Images/grow-in-china/influencers-kols/mcn-creator-signing.png"
-            alt="A Chinese creator and an MCN manager reviewing a contract on a laptop in a plain office, fluorescent light overhead"
+            alt="Un créateur chinois et un manager MCN examinent un contrat sur un ordinateur portable dans un bureau sobre, néon au plafond"
             loading="lazy"
             decoding="async"
           />
@@ -355,11 +355,11 @@ const serviceJsonLd = {
     <section id="get" class="section section--alt">
       <div class="container">
         <header class="section-header section-header--center kol-reveal">
-          <span class="eyebrow">What you get</span>
-          <h2>What you actually get</h2>
+          <span class="eyebrow">Ce que vous obtenez</span>
+          <h2>Ce que vous obtenez vraiment</h2>
           <p class="section-header__lead">
-            Direct access, data-led selection, and reporting that links every yuan of spend
-            back to a sale you can name.
+            Accès direct, sélection guidée par la donnée, et reporting qui relie chaque yuan de dépense
+            à une vente identifiable.
           </p>
         </header>
 
@@ -379,11 +379,11 @@ const serviceJsonLd = {
     <section id="platforms" class="section">
       <div class="container">
         <header class="section-header section-header--center kol-reveal">
-          <span class="eyebrow">Platforms</span>
-          <h2>Platforms we run</h2>
+          <span class="eyebrow">Plateformes</span>
+          <h2>Plateformes que nous opérons</h2>
           <p class="section-header__lead">
-            Seven platforms covered end to end. We pick the two or three that fit your
-            category, not all of them at once.
+            Sept plateformes couvertes de bout en bout. Nous retenons les deux ou trois qui collent à votre
+            catégorie, pas toutes en même temps.
           </p>
         </header>
 
@@ -406,13 +406,13 @@ const serviceJsonLd = {
       <div class="container container--narrow">
         <header class="section-header section-header--center kol-reveal">
           <span class="eyebrow">FAQ</span>
-          <h2>Questions brands actually ask us</h2>
+          <h2>Les questions que les marques nous posent réellement</h2>
           <p class="section-header__lead">
-            Twenty questions we hear on the first call. Filter by topic.
+            Vingt questions entendues au premier rendez-vous. À filtrer par sujet.
           </p>
         </header>
 
-        <div class="kol-faq-filter kol-reveal" data-faq-filter role="tablist" aria-label="Filter FAQs by category">
+        <div class="kol-faq-filter kol-reveal" data-faq-filter role="tablist" aria-label="Filtrer la FAQ par catégorie">
           {faqCategories.map((c, i) => (
             <button
               type="button"
@@ -422,7 +422,7 @@ const serviceJsonLd = {
               data-faq-cat={c}
             >
               <span class="kol-faq-chip__label">{c}</span>
-              <span class="kol-faq-chip__count">{c === 'All' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
+              <span class="kol-faq-chip__count">{c === "Toutes" ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
             </button>
           ))}
         </div>
@@ -455,17 +455,17 @@ const serviceJsonLd = {
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="kol-cta">
-          <span class="eyebrow eyebrow--on-dark">Let&rsquo;s talk</span>
-          <h2 class="kol-cta__title">One thing before you go</h2>
+          <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
+          <h2 class="kol-cta__title">Une dernière chose avant de partir</h2>
           <p class="kol-cta__lead">
-            The brands that win in China are not the ones with the biggest influencer
-            budget. They are the ones that started while the channel was still underpriced.
-            That window is open right now. It will not stay open forever. We consult, and
-            we run what we recommend. If you want a KOL and KOC program built on data and
-            judged on sales, get in touch.
+            Les marques qui gagnent en Chine ne sont pas celles qui ont le plus gros budget
+            influence. Ce sont celles qui ont démarré quand le canal était encore sous-évalué.
+            Cette fenêtre est ouverte en ce moment. Elle ne le restera pas indéfiniment. Nous conseillons, et
+            nous opérons ce que nous recommandons. Si vous voulez un programme KOL et KOC bâti sur la donnée et
+            jugé sur les ventes, prenez contact.
           </p>
           <div class="kol-cta__actions">
-            <a href="/contact" class="btn kol-cta__btn-primary">Contact us</a>
+            <a href="/fr/nous-contacter" class="btn kol-cta__btn-primary">Nous contacter</a>
           </div>
         </div>
       </div>
