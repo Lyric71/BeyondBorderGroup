@@ -1,0 +1,40 @@
+---
+brand: "Kerry Food, DaVinci Gourmet"
+title: "eCommerce pour les sirops, sauces et bases smoothies DaVinci Gourmet"
+summary: "Lancement et exploitation des boutiques Tmall et JD de DaVinci Gourmet en Chine : reconstruction de la présence de marque, alignement de la grille tarifaire et progression du chiffre d'affaires dès la première année."
+category: "eCommerce"
+services:
+  - "Campagne"
+  - "eCommerce"
+  - "KOL"
+  - "Livestream"
+  - "Média"
+heroImage: "/Images/work/kerry-davinci.webp"
+heroImageAlt: "Étude de cas Kerry DaVinci Gourmet"
+images:
+  - src: "/Images/work/kerry-davinci-1.png"
+    alt: "Page d'accueil du flagship Tmall DaVinci Gourmet"
+    caption: "Le flagship Tmall après refonte"
+  - src: "/Images/work/kerry-davinci-2.png"
+    alt: "Page récit de marque DaVinci Gourmet sur Tmall"
+legacyUrl: "/case-study/kerry-food-ecommerce-china-tmalfor-davinci-gourmet-syrups-sauces-and-smoothies/"
+order: 21
+---
+
+## La marque
+
+DaVinci Gourmet, filiale du groupe Kerry, fournit sirops, sauces et bases smoothies aux cafés, bars et opérateurs de restauration à travers le monde. En Chine, la marque devait se doter d'une présence directe, à la fois auprès des professionnels et auprès du consommateur final, capable de coexister avec son réseau de distribution.
+
+## Le défi
+
+À notre prise en main de l'opération eCommerce chinoise, les flagships Tmall et JD appelaient une refonte complète. Les prix divergeaient d'un canal à l'autre, les annonces de contrefaçon ponctionnaient du volume et la fraude des vendeurs tiers érodait la confiance. À cela s'ajoutait une expression de marque incohérente, qui compliquait la lecture pour les acheteurs professionnels en quête du bon produit.
+
+## Notre approche
+
+Nous avons assumé la responsabilité bout en bout des stores Tmall et JD : production de contenus, opérations de vente, marketing, achat média et service client. Les boutiques ont été reconstruites autour d'une identité visuelle rafraîchie et d'un positionnement explicite, calibré pour les communautés foodservice et baristas chinoises.
+
+En parallèle, la grille tarifaire a été harmonisée entre Tmall et le réseau de distribution, afin que les canaux en ligne et hors ligne cessent de se neutraliser. Un rythme coordonné de campagnes et de livestreams a porté l'essai sur les sirops, les sauces et la gamme smoothies. Un chantier dédié a enfin traité les contrefaçons et la fraude par l'enforcement plateforme et l'hygiène des fiches produits.
+
+## Résultats
+
+Dès la première année, le chiffre d'affaires en ligne de DaVinci Gourmet en Chine a fortement progressé. Les conflits tarifaires entre canaux ont été résolus en trois mois, la fraude éliminée en six, et les annonces de contrefaçon retirées de Tmall. Kerry dispose désormais d'une fondation eCommerce saine et pilotable.

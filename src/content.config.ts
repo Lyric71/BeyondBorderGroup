@@ -18,36 +18,43 @@ const insights = defineCollection({
   }),
 });
 
-const cases = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/cases' }),
-  schema: z.object({
-    brand: z.string(),
-    title: z.string(),
-    summary: z.string(),
-    category: z.enum([
-      'Brand & Design',
-      'Social & Content',
-      'eCommerce',
-      'Website',
-      'Distribution',
-      'Training',
-    ]),
-    services: z.array(z.string()).default([]),
-    heroImage: z.string(),
-    heroImageAlt: z.string().default(''),
-    images: z
-      .array(
-        z.object({
-          src: z.string(),
-          alt: z.string().default(''),
-          caption: z.string().optional(),
-        })
-      )
-      .default([]),
-    legacyUrl: z.string().optional(),
-    order: z.number().default(100),
-    draft: z.boolean().default(false),
-  }),
+const caseSchema = z.object({
+  brand: z.string(),
+  title: z.string(),
+  summary: z.string(),
+  category: z.enum([
+    'Brand & Design',
+    'Social & Content',
+    'eCommerce',
+    'Website',
+    'Distribution',
+    'Training',
+  ]),
+  services: z.array(z.string()).default([]),
+  heroImage: z.string(),
+  heroImageAlt: z.string().default(''),
+  images: z
+    .array(
+      z.object({
+        src: z.string(),
+        alt: z.string().default(''),
+        caption: z.string().optional(),
+      })
+    )
+    .default([]),
+  legacyUrl: z.string().optional(),
+  order: z.number().default(100),
+  draft: z.boolean().default(false),
 });
 
-export const collections = { insights, cases };
+const cases = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/cases' }),
+  schema: caseSchema,
+});
+
+const casesFr = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/cases-fr' }),
+  schema: caseSchema,
+});
+
+export const collections = { insights, cases, casesFr };

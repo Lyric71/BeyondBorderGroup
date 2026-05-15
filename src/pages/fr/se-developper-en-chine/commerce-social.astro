@@ -1,0 +1,2195 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const promises = [
+  {
+    title: "Des opérateurs seniors tiennent le compte",
+    desc: "Stratégie et exécution par les mêmes personnes. Aucun passage de relais à un junior une fois le contrat signé.",
+  },
+  {
+    title: "Engagement séquencé",
+    desc: "Démarrez sur une plateforme. Ajoutez la suivante quand la première fonctionne. Pas d'engagement de douze mois en bloc.",
+  },
+  {
+    title: "Sourcing créateurs en toute indépendance",
+    desc: "Aucune rétrocommission perçue des créateurs ni des agences. Nos intérêts restent du même côté de la table que les vôtres.",
+  },
+];
+
+const services = [
+  {
+    icon: 'store',
+    title: "Opérations plateformes",
+    body: "Nous tenons vos boutiques et vos comptes sur Douyin, RedNote (Xiaohongshu), WeChat et Weibo, sans oublier WeChat Channels et Douyin Mall. Publication quotidienne, contenu, service client, pilotage publicitaire.",
+    href: '#decision-point',
+  },
+  {
+    icon: 'creator',
+    title: "Programmes créateurs et KOL",
+    body: "Un vivier qualifié en beauté, agroalimentaire, maison, mode, mère et enfant, tech et lifestyle. Nous négocions, briefons, produisons et mesurons. Et nous vous indiquons quand un créateur est hors marché.",
+    href: '#kol',
+  },
+  {
+    icon: 'video',
+    title: "Commerce livestream",
+    body: "Livestreams animés depuis la boutique sur Douyin et Taobao Live, trois à sept sessions par semaine. Nous tenons le plateau, écrivons le script, dessinons le décor, pilotons le média.",
+    href: '#livestream',
+  },
+  {
+    icon: 'film',
+    title: "Production de contenu",
+    body: "Vidéos courtes, notes RedNote, plateaux livestream, visuels produit. Tournés dans notre studio de Shanghai ou en extérieur, en mandarin, avec des talents qui collent à la marque.",
+    href: '/fr/se-developper-en-chine/studio-de-production',
+  },
+  {
+    icon: 'chart',
+    title: "Performance et achat média",
+    body: "Douyin Qianchuan, formats effet RedNote, WeChat Moments, Weibo. Nous allouons, testons, coupons ce qui ne fonctionne pas et renforçons ce qui prend. Les rapports hebdomadaires restent simples.",
+    href: '#how-we-work',
+  },
+  {
+    icon: 'clipboard',
+    title: "Mesure et reporting",
+    body: "Ventes par SKU, par créateur, par livestream, par campagne. GMV, conversion, taux de réachat. Les chiffres qui disent réellement quoi faire demain.",
+    href: '#measurement',
+  },
+];
+
+const models = [
+  {
+    name: "Modèle DP",
+    tag: "Vous tenez le stock, nous tenons la boutique",
+    desc: "Vous gardez le stock dans vos livres et la relation client à votre nom. Nous opérons en DP (Designated Partner) sur Douyin EC et RedNote. Contenu, livestream, achat média, service client, programmes KOL et KOC : tout est porté par nos équipes, sous votre marque.",
+    when: "Vous voulez le P&L Chine dans vos livres, bâtir un capital de marque durable sur Douyin et RedNote, et vous disposez de la trésorerie pour financer le stock et le budget média.",
+    owns: [
+      { label: "Stock", value: "À vous, en entrepôt sous douane ou domestique" },
+      { label: "Licence boutique", value: "À vous" },
+      { label: "Données clients", value: "À vous" },
+      { label: "Contenu, comptes, contrats KOL", value: "À vous" },
+      { label: "Budget média et promotion", value: "Financé à 100 % par vous" },
+      { label: "Chiffre d'affaires", value: "GMV en direct au consommateur, dans vos comptes" },
+    ],
+    yourSide: [
+      "Marge retail entière sur chaque vente",
+      "Visibilité directe sur les données clients et le CRM",
+      "Maîtrise de la marque sur la boutique, le fil et chaque livestream",
+      "Revue mensuelle du P&L avec les leads seniors",
+    ],
+    ourSide: [
+      "Opérations quotidiennes, mises à jour des fiches, calendrier vidéo courte",
+      "Production livestream, trois à sept sessions hebdomadaires, plateau, animation et script compris",
+      "Achat média sur Douyin Qianchuan et formats effet RedNote",
+      "Seeding KOL et KOC, négociation, brief et reporting",
+      "Service client en mandarin et modération des avis",
+      "Conformité plateforme, vérification de contenu, négociation des sanctions",
+    ],
+    image: '/Images/grow-in-china/social-commerce/route-dp-unboxing.png',
+    imageAlt: "Une jeune Chinoise ouvre un colis Douyin au sol de son appartement, le livestream depuis lequel elle a acheté tourne encore sur son téléphone",
+    highlight: true,
+  },
+  {
+    name: "Modèle distributeur",
+    tag: "Nous tenons le stock, nous tenons la boutique",
+    desc: "Nous achetons votre produit au prix de gros et portons le stock en Chine. Les boutiques Douyin et RedNote tournent sous notre licence, le stock figure dans notre bilan, et nous assumons le risque commercial. Vous nous vendez, nous vendons au consommateur.",
+    when: "Votre marque est déjà installée en Chine, vous voulez le chiffre d'affaires Douyin et RedNote sans la complexité opérationnelle, et vous préférez ne pas immobiliser de trésorerie dans le stock. Les marques nouvelles entrantes trouvent rarement leur compte dans ce modèle.",
+    owns: [
+      { label: "Stock", value: "À nous" },
+      { label: "Licence boutique", value: "À nous" },
+      { label: "Données clients", value: "À nous" },
+      { label: "Contenu, comptes, contrats KOL", value: "À nous" },
+      { label: "Budget média et promotion", value: "Budget marque + co-investissement BBG" },
+      { label: "Chiffre d'affaires", value: "Facturation en gros, comptabilisée en B2B" },
+    ],
+    yourSide: [
+      "Chiffre d'affaires en gros, sans risque sur le stock",
+      "Une facture B2B unique plutôt qu'un P&L direct-au-consommateur",
+      "Aucune trésorerie immobilisée dans du stock chinois",
+      "Reporting de performance agrégé et lecture de la catégorie",
+    ],
+    ourSide: [
+      "Achat du stock, financement et entreposage",
+      "Tout ce que couvre le modèle DP, plus le risque commercial",
+      "Stratégie tarifaire sur Douyin et RedNote dans le respect des garde-fous convenus",
+      "Retours, remboursements, responsabilité du service client",
+    ],
+    image: '/Images/grow-in-china/social-commerce/route-distributor-livingroom.png',
+    imageAlt: "Une mère chinoise suit un livestream Douyin sur sa tablette pendant que sa fille joue à proximité sur le tapis",
+    highlight: false,
+  },
+];
+
+const compareRows = [
+  { label: "Qui tient le stock", tp: "Vous", dist: "BBG" },
+  { label: "Qui tient la boutique et la donnée", tp: "Vous", dist: "BBG" },
+  { label: "Trésorerie engagée", tp: "Élevée", dist: "Aucune" },
+  { label: "Chiffre d'affaires reconnu", tp: "GMV retail moins les frais", dist: "Prix de gros" },
+  { label: "Potentiel de marge", tp: "Marge retail entière", dist: "Plafonné au prix de gros" },
+  { label: "Risque porté", tp: "Stock et demande", dist: "Aucun sur le stock" },
+  { label: "Coûts média et promotion", tp: "100 % à votre charge", dist: "Budget marque + co-investissement BBG" },
+  { label: "Capital de marque sur Douyin et RedNote", tp: "À vous, intégralement", dist: "À vous, bâti par nos soins" },
+  { label: "Profil cible", tp: "Marques construisant un social commerce chinois de long terme", dist: "Marques déjà installées en Chine" },
+];
+
+const rhythms = [
+  {
+    name: "Quotidien",
+    tag: "Contenu et communauté",
+    tabId: 'daily',
+    pill: "Quotidien",
+    title: "Contenu et communauté",
+    desc: "Le fil reste vivant. L'algorithme récompense la régularité, et le silence coûte de la portée plus vite que la plupart des marques l'imaginent.",
+    outcome: "Le fil reste vivant, semaine après semaine, sur une cadence que l'algorithme valorise réellement.",
+    image: '/Images/grow-in-china/social-commerce/cadence-daily-content.png',
+    imageAlt: "Deux monteurs de contenu chinois côte à côte passent en revue les vidéos courtes destinées à un fil Douyin",
+    does: [
+      "Publication quotidienne de vidéos courtes sur Douyin et RedNote",
+      "Modération des commentaires et réponse aux messages privés en mandarin",
+      "Veille tendances et contenus de réponse rapide",
+      "Sourcing de contenus UGC et KOC",
+    ],
+    deliverables: [
+      "Calendrier de contenu hebdomadaire",
+      "Rapport quotidien de communauté",
+    ],
+  },
+  {
+    name: "Hebdomadaire",
+    tag: "Livestream",
+    tabId: 'livestream',
+    pill: "Hebdomadaire",
+    title: "Livestream",
+    desc: "Le livestream tenu depuis la boutique est la cadence hebdomadaire qui bâtit une vraie ligne de chiffre d'affaires. Pas un événement people une fois par trimestre. Un plateau de travail, trois à sept soirs par semaine.",
+    outcome: "Une ligne de chiffre d'affaires prévisible, semaine après semaine, et pas seulement les jours de festival.",
+    image: '/Images/grow-in-china/social-commerce/cadence-weekly-livestream.png',
+    imageAlt: "Une régie livestream pendant une session Douyin, les écrans affichent les ventes et l'audience en temps réel",
+    does: [
+      "Trois à sept sessions livestream Douyin par semaine",
+      "Écriture des scripts, brief de l'animation, conception du décor",
+      "Optimisation Qianchuan en temps réel derrière le flux",
+      "Rapport post-livestream sur le sell-through et la performance SKU",
+    ],
+    deliverables: [
+      "Rapport hebdomadaire de sell-through livestream",
+      "Revue mensuelle de performance des animateurs",
+    ],
+  },
+  {
+    name: "Mensuel",
+    tag: "KOL et KOC",
+    tabId: 'kol',
+    pill: "Mensuel",
+    title: "Campagnes KOL et KOC",
+    desc: "La couche créateurs. Nous briefons, négocions et mesurons sur un vivier qualifié, et nous vous signalons les tarifs gonflés. La plupart le sont en ce moment.",
+    outcome: "Notoriété, confiance et conversion à grande échelle, sans surpayer.",
+    image: '/Images/grow-in-china/social-commerce/cadence-monthly-kol.png',
+    imageAlt: "Une KOL chinoise filme un avis skincare pour RedNote près d'une fenêtre, dans la lumière naturelle de l'après-midi",
+    does: [
+      "Shortlist de créateurs tirée de notre vivier qualifié",
+      "Brief, revue de contenu, négociation et paiement",
+      "Programmes de seeding avec 20 à 40 KOC par mois",
+      "Deux ou trois collaborations KOL par mois, jusqu'à cinq parfois",
+    ],
+    deliverables: [
+      "Rapport mensuel de performance des créateurs",
+      "Coût d'acquisition par créateur",
+    ],
+  },
+  {
+    name: "Trimestriel",
+    tag: "Pic festival",
+    tabId: 'measurement',
+    pill: "Trimestriel",
+    title: "Pic festival et mesure",
+    desc: "Les grands rendez-vous (11.11, 6.18, Journée des femmes, Nouvel An chinois) portent leur poids. La préparation festival démarre six mois à l'avance, jamais la semaine d'avant. Puis le rapport dit ce qu'il faut changer pour la prochaine fois.",
+    outcome: "Les festivals tiennent leur part de l'année. Le post-mortem dit ce qu'il faut changer pour la prochaine fois.",
+    image: '/Images/grow-in-china/social-commerce/cadence-quarterly-festival.png',
+    imageAlt: "Un tableau de bord boutique Douyin pendant le festival 11.11, le compteur de ventes grimpe en caractères rouges",
+    does: [
+      "Plan festival bâti six mois à l'avance",
+      "Stock, prix et mécaniques promotionnelles",
+      "Montée en trafic avant le festival, opérations le jour J, CRM post-festival",
+      "Reporting quotidien pendant la fenêtre festival",
+    ],
+    deliverables: [
+      "Deck du plan festival",
+      "Rapport post-festival avec comparaison année sur année",
+    ],
+  },
+];
+
+const sisterPackages = [
+  {
+    title: "WeChat et Weibo",
+    desc: "Contenu quotidien, communauté et seeding KOL sur les plateformes où vivent encore les achats réfléchis. Pour les marques où la confiance pèse plus que l'achat impulsif.",
+  },
+  {
+    title: "Contenus RedNote et Douyin",
+    desc: "Vidéos courtes, notes et partenariats créateurs, sans boutique derrière. Pour les marques qui bâtissent leur notoriété en amont d'un lancement commerce futur.",
+  },
+  {
+    title: "Retainer social always-on",
+    desc: "Un forfait mensuel unique qui couvre les quatre canaux. Tenu par les mêmes opérateurs que votre commerce, sur un périmètre allégé.",
+  },
+];
+
+const contextCards = [
+  {
+    image: '/Images/grow-in-china/social-commerce/truth-content-engine.png',
+    alt: "Une productrice de contenu chinoise passe en revue des montages vidéo courte sur un écran de studio, un carnet de notes manuscrites en chinois posé à côté",
+    kicker: "Le contenu est la vente",
+    title: "Le contenu est l'équipe de vente",
+    body: "Un contenu faible signifie des ventes faibles. Si la personne fait défiler en deux secondes, le produit n'est jamais vu. Nous tournons nous-mêmes, en mandarin, chaque jour.",
+    flow: ["Tourner", "Monter", "Diffuser"],
+    chipLabel: "Point contenu quotidien",
+    chipSub: "Producteurs, monteurs, animation, tous dans la même pièce",
+    avatars: [
+      { letter: 'M', tone: 'blue' },
+      { letter: 'J', tone: 'dark' },
+      { letter: 'X', tone: 'green' },
+      { letter: 'L', tone: 'amber' },
+    ],
+    extraAvatars: '+4',
+    pinLabel: "Production",
+    pinValue: "15 à 30 vidéos par mois",
+  },
+  {
+    image: '/Images/grow-in-china/social-commerce/truth-daily-operation.png',
+    alt: "Un plateau livestream Douyin en pleine session, l'animatrice à l'image au fond, deux producteurs surveillent le tableau de bord en direct au premier plan",
+    kicker: "Cadence sur l'année",
+    title: "Une opération quotidienne, jamais une campagne",
+    body: "Les boutiques Douyin demandent une publication quotidienne, un livestream hebdomadaire et du média derrière les deux. L'algorithme sanctionne le silence.",
+    credentials: ["Publications", "Livestreams", "Médias", "Commentaires"],
+    chipLabel: "En direct sur plateforme",
+    chipSub: "Huit à vingt livestreams par mois",
+    badge: "L'algorithme sanctionne le silence",
+    badgeSub: "Nous tenons donc la cadence, festival ou pas.",
+  },
+];
+
+const faqs = [
+  { cat: "Stratégie", q: "Quelle est la vraie différence entre e-commerce et social commerce en Chine ?", a: "L'e-commerce relève du comportement de recherche. La personne sait déjà ce qu'elle veut et se rend sur Tmall ou JD pour le trouver. Le social commerce relève du comportement de découverte. Elle ignorait vouloir le produit avant que le fil ne le lui propose. Autre état d'esprit, autre contenu, autres indicateurs. La plupart des marques ont besoin des deux, à condition de savoir lequel porte l'activité." },
+  { cat: "Plateformes", q: "Sur quelles plateformes faut-il être en premier ?", a: "Cela dépend de la catégorie. Beauté et lifestyle : RedNote d'abord, Douyin ensuite. Grande consommation et alimentaire : Douyin d'abord. B2B et achats réfléchis : WeChat. Premium et luxe : RedNote et WeChat. Vouloir être sur les quatre plateformes dès le premier mois reste la faute la plus fréquente que nous observons. La marque se disperse et ne gagne nulle part." },
+  { cat: "Coût", q: "Combien coûte un lancement sur Douyin ou RedNote ?", a: "Le setup tourne entre 80 000 et 150 000 RMB selon la complexité de la boutique et les besoins en contenu. (Nous avons monté un lancement à moins, mais en rognant sur des choix que nous regrettons aujourd'hui.) Les opérations mensuelles vont de 50 000 à 250 000 RMB selon le volume de contenu, le pilotage publicitaire et la fréquence des livestreams. Le budget média s'ajoute à cela. Comptez au minimum 100 000 RMB de média par mois sur les six premiers mois, le temps d'apprendre ce qui fonctionne réellement dans votre catégorie. Ajoutez les dépôts plateformes : 30 000 RMB pour Douyin et 20 000 RMB pour RedNote, remboursables." },
+  { cat: "Coût", q: "Que coûte Tmall Global au-dessus de cela ?", a: "Un dépôt de 30 000 USD, des frais annuels de service entre 5 000 et 10 000 USD selon la catégorie, une commission de 2 % à 5 % par transaction et 1 % Alipay. Cross-border, donc aucune entité chinoise requise." },
+  { cat: "Stratégie", q: "Combien de temps avant les premières ventes ?", a: "Sur Douyin, les premières ventes tombent en quelques semaines dès lors que vous activez du trafic payant. La rentabilité, elle, demande trois à six mois. Sur RedNote, la construction de marque vient d'abord. Les ventes suivent six à neuf mois plus tard. Toute promesse plus rapide tient de la survente." },
+  { cat: "Opérations", q: "Quand faut-il commencer à préparer le 11.11 ou le 6.18 ?", a: "Six mois à l'avance. Le calendrier des festivals chinois reste la contrainte de planification la plus sous-estimée chez les marques étrangères. La préparation du 11.11 démarre en mai. Celle du 6.18 démarre en décembre. Les marques qui arrivent trois mois avant héritent des invendus publicitaires et des créneaux KOL résiduels, à des tarifs premium." },
+  { cat: "Stratégie", q: "Faut-il une entité juridique en Chine ?", a: "Pas toujours. Les modèles cross-border (Douyin Cross-Border, Tmall Global, JD Worldwide) n'exigent pas d'entité. Le onshore (Douyin, Tmall, JD domestiques) en exige une, ou un partenaire TP qui en met une à disposition. Nous opérons les deux. Et si vous disposez déjà d'une WFOE constituée pour du commerce offline mais désormais appelée à faire du digital, nous vous indiquons s'il faut élargir l'objet social, monter une seconde entité ou rester en cross-border. La mauvaise configuration coûte plus cher que la bonne, à coup sûr." },
+  { cat: "Opérations", q: "Peut-on utiliser notre contenu global tel quel ?", a: "Presque jamais. Éclairage, rythme, voix off, textes à l'écran, étalonnage, jusqu'au cadrage des mains. Tout diffère. Les acheteurs chinois repèrent un contenu étranger traduit en deux secondes et passent au suivant. Nous retournons ou remontons le contenu pour les plateformes locales." },
+  { cat: "Créateurs", q: "Quelle est la différence entre un KOL et un KOC ?", a: "KOL : Key Opinion Leader. Audience importante, cachet plus élevé, levier de notoriété. KOC : Key Opinion Consumer. Audience plus restreinte, ton plus authentique, levier de conversion. La plupart des campagnes ont besoin des deux. Les KOC font le volume. Les KOL apportent la crédibilité." },
+  { cat: "Coût", q: "Combien coûtent réellement les KOL ?", a: "Une créatrice RedNote de mid-tier avec 100 000 abonnés se rémunère entre 15 000 et 40 000 RMB la note. Un animateur Douyin de premier rang, entre 200 000 et 2 millions de RMB le créneau livestream, plus une commission de 20 % à 30 % du GMV. Des accords à la commission existent avec des animateurs plus modestes, mais la marge s'amincit vite. Nous benchmarkons chaque devis contre le marché en direct, parce que les tarifs bougent d'un mois à l'autre." },
+  { cat: "Créateurs", q: "Un livestream people vaut-il l'investissement ?", a: "Presque jamais. Les livestreams stars génèrent un pic suivi de silence, avec un coût d'acquisition gonflé qui fait toujours bonne figure sur la troisième slide du rapport de campagne. Les livestreams animés depuis la boutique, à raison de trois à sept sessions par semaine, bâtissent une ligne de chiffre d'affaires prévisible. Nous recommandons le second, presque à chaque fois." },
+  { cat: "Opérations", q: "Comment gérez-vous les retours et le service client ?", a: "Les plateformes chinoises imposent une réponse rapide, sous une minute sur Douyin en heures de pointe, et une forte tolérance aux retours. Le retour sans motif sous 7 jours est la norme. Nous tenons le service client en mandarin, sur la plateforme, avec des SLA de temps de réponse. Les retours transitent par notre entrepôt ou par le vôtre." },
+  { cat: "Opérations", q: "Et la censure des contenus ?", a: "Certains mots, allégations et images sont signalés ou bloqués. Allégations santé. Comparaisons directes avec des concurrents. Certaines références politiques et culturelles. Nous validons chaque pièce de contenu avant publication. Les erreurs coûtent le compte, et parfois le compte ne revient pas." },
+  { cat: "Coût", q: "Comment se gèrent les paiements ?", a: "WeChat Pay et Alipay dominent. Les plateformes encaissent pour votre compte et règlent sur un cycle, généralement hebdomadaire ou tous les quinze jours. Les modèles cross-border règlent en USD ou EUR sur votre compte à l'étranger. Les modèles onshore règlent en RMB sur votre entité chinoise." },
+  { cat: "Stratégie", q: "Peut-on mener une campagne sans ouvrir de boutique Douyin ou RedNote ?", a: "Oui, en notoriété. Seeding KOL, notes de marque, livestreams animés par des créateurs qui vendent depuis leur propre boutique. Vous ne détiendrez ni le client ni la donnée, mais c'est une voie valide pour tester la demande avant d'ouvrir votre propre boutique." },
+  { cat: "Plateformes", q: "À quoi ressemble un calendrier de contenu type ?", a: "Sur RedNote : 8 à 15 notes par mois depuis le compte marque, 20 à 40 notes KOC, 2 à 5 notes KOL. Sur Douyin : 15 à 30 vidéos courtes par mois, 8 à 20 sessions livestream. Le volume n'est pas optionnel. Les algorithmes sanctionnent le silence." },
+  { cat: "Stratégie", q: "Comment mesurer le ROI ?", a: "Trois chiffres suivis chaque semaine : coût par acquisition, GMV par heure de livestream, taux d'engagement contenu. Trois chiffres chaque mois : taux de réachat, ROAS média global, lift sur les recherches de marque. Le reste relève du détail d'appui." },
+  { cat: "Coût", q: "Qu'est-ce qui dérape le plus souvent ?", a: "Trois choses, généralement dans cet ordre. Les marques sous-investissent dans la production de contenu. Les marques signent un seul créateur bon marché et attendent qu'une campagne entière en sorte. Et les marques coupent les dépenses au deuxième mois faute de résultats immédiats, ce qui tue l'élan juste avant qu'il ne commence à composer. Nous avons vu ce scénario se répéter peut-être une dizaine de fois en deux ans." },
+  { cat: "Plateformes", q: "Faut-il être sur WeChat si nous sommes déjà sur Douyin et RedNote ?", a: "En B2C, vous pouvez probablement faire l'impasse sur WeChat la première année si le budget est serré, à une nuance près : WeChat Channels est devenu une vraie surface de social commerce ces dix-huit derniers mois, et l'écart avec Douyin se referme trimestre après trimestre. En B2B, en premium et pour toute marque qui vend un achat réfléchi, WeChat n'est pas optionnel. C'est là que les clients à forte valeur restent assez longtemps pour acheter une deuxième puis une troisième fois." },
+  { cat: "Plateformes", q: "Comment démarrer avec vous ?", a: "Un échange de trente minutes avec notre équipe senior, sans intermédiaire junior. Vous nous indiquez la catégorie, la fourchette budgétaire et le calendrier. Nous vous disons ce qui est réaliste, par quelles plateformes commencer et à quoi ressembleront les quatre-vingt-dix premiers jours. Aucune proposition tant que les deux parties ne sont pas d'accord sur la pertinence du projet." },
+];
+
+const faqCategories = ["Toutes", "Stratégie", "Coût", "Plateformes", "Opérations", "Créateurs"];
+
+const icons: Record<string, string> = {
+  store: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9"/><path d="M3 9h18"/><path d="M9 13h6"/></svg>`,
+  creator: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/><path d="M18 3l0.8 1.7 1.8 0.3-1.3 1.3 0.3 1.8L18 7.3 16.4 8.1l0.3-1.8L15.4 5l1.8-0.3z"/></svg>`,
+  video: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="12" rx="2"/><polygon points="17 9 22 6 22 18 17 15"/><circle cx="8" cy="11" r="1.2" fill="currentColor"/></svg>`,
+  film: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="17" y2="20"/><line x1="3" y1="9" x2="7" y2="9"/><line x1="3" y1="15" x2="7" y2="15"/><line x1="17" y1="9" x2="21" y2="9"/><line x1="17" y1="15" x2="21" y2="15"/></svg>`,
+  chart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><rect x="5" y="13" width="3" height="7"/><rect x="11" y="8" width="3" height="12"/><rect x="17" y="4" width="3" height="16"/></svg>`,
+  clipboard: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg>`,
+  scroll: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 7h7M8 11h7M8 15h4"/></svg>`,
+  outcome: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+  doc: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>`,
+};
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const serviceJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Social commerce management',
+  provider: {
+    '@type': 'Organization',
+    name: 'Beyond Border Group',
+    url: 'https://beyondbordergroup.com',
+  },
+  areaServed: { '@type': 'Country', name: 'China' },
+};
+---
+
+<Layout
+  title="Social Commerce en Chine pour les marques étrangères"
+  description="Social commerce en Chine pour les marques étrangères. Boutiques Douyin, RedNote, WeChat et Weibo, programmes KOL, livestreams hebdomadaires, tenus par des opérateurs seniors."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} is:inline />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceJsonLd)} is:inline />
+
+  <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
+  <article class="cbs">
+
+    {/* ---------- HERO ---------- */}
+    <section class="cbs-hero" data-hero>
+      <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
+        <img src="/Images/grow-in-china/social-commerce/hero-douyin-livestream.png" alt="Une jeune animatrice de livestream chinoise sur un plateau Douyin, ring light allumée, présente un flacon de skincare en plein argumentaire" />
+      </div>
+      <div class="cbs-hero__overlay" aria-hidden="true"></div>
+      <div class="cbs-hero__grain" aria-hidden="true"></div>
+
+      <div class="container cbs-hero__inner">
+        <nav class="cbs-hero__crumbs" aria-label="Fil d'Ariane">
+          <a href="/fr/">Accueil</a>
+          <span aria-hidden="true">/</span>
+          <a href="/fr/#services">Se développer en Chine</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark cbs-reveal">Social commerce</span>
+        <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
+          <span class="cbs-hero__title-row">En Chine, on ne va plus à la boutique.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent">La boutique vient au fil.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">Nous tenons cette opération.</span>
+        </h1>
+        <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
+          Le social commerce en Chine n'est pas une couche posée sur l'e-commerce. C'est la première
+          voie de vente pour la plupart des marques de consommation. Nous l'opérons pour Shiseido, Pierre Fabre,
+          Camper, Bassetti, Mous, MacuSee et d'autres. L'opération entière, jamais une simple présentation.
+        </p>
+        <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
+          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Nous parler</a>
+          <a href="#how-we-work" class="btn btn--ghost-light cbs-magnetic">Voir notre méthode</a>
+        </div>
+
+        <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
+          <div class="cbs-hero__meta-item">
+            <span class="cbs-hero__meta-num" data-counter="15" data-suffix="+">0</span>
+            <span class="cbs-hero__meta-label">ans à tenir Douyin et RedNote pour des marques étrangères</span>
+          </div>
+          <div class="cbs-hero__meta-item">
+            <span class="cbs-hero__meta-num" data-counter="40" data-suffix="+">0</span>
+            <span class="cbs-hero__meta-label">boutiques et comptes social commerce actifs</span>
+          </div>
+          <div class="cbs-hero__meta-item">
+            <span class="cbs-hero__meta-num">Une équipe</span>
+            <span class="cbs-hero__meta-label">Stratégie, contenu, livestream et achat média, de bout en bout</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#two-truths" class="cbs-hero__scroll" aria-label="Aller à la section suivante">
+        <span class="cbs-hero__scroll-line"></span>
+        <span class="cbs-hero__scroll-text">Faire défiler</span>
+      </a>
+    </section>
+
+    {/* ---------- TWO TRUTHS ---------- */}
+    <section id="two-truths" class="section cbs-truths-section">
+      <div class="cbs-truths-bg" aria-hidden="true">
+        <div class="cbs-truths-bg__blob cbs-truths-bg__blob--a"></div>
+        <div class="cbs-truths-bg__blob cbs-truths-bg__blob--b"></div>
+        <div class="cbs-truths-bg__grid"></div>
+      </div>
+
+      <div class="container">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Notre approche</span>
+          <h2>Deux constats avant que nous touchions à votre social commerce</h2>
+          <p class="section-header__lead">
+            La plupart des marques abordent Douyin et RedNote comme n'importe quel nouveau marché.
+            Aucune des deux plateformes ne récompense cette approche. Deux principes structurent notre manière de faire.
+          </p>
+        </header>
+
+        <div class="cbs-truths" data-truths>
+          {contextCards.map((c, i) => (
+            <article
+              class={`cbs-truth${i === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
+              style={`--reveal-delay: ${i * 140}ms;`}
+              data-truth-tilt
+            >
+              <div class="cbs-truth__inner">
+                <div class="cbs-truth__stage">
+                  <div class="cbs-truth__frame">
+                    <img
+                      src={c.image}
+                      alt={c.alt}
+                      loading="lazy"
+                      decoding="async"
+                      data-truth-parallax
+                    />
+                    <div class="cbs-truth__shade" aria-hidden="true"></div>
+                    <div class="cbs-truth__sheen" aria-hidden="true"></div>
+                  </div>
+
+                  <div class="cbs-truth__kicker" aria-hidden="true">
+                    <span class="cbs-truth__kicker-dot"></span>
+                    {c.kicker}
+                  </div>
+
+                  {i === 0 && (
+                    <div class="cbs-truth__chip cbs-truth__chip--bl" data-float="1">
+                      <div class="cbs-truth__chip-row">
+                        <span class="cbs-truth__pulse" aria-hidden="true"></span>
+                        <span class="cbs-truth__chip-label">{c.chipLabel}</span>
+                      </div>
+                      <p class="cbs-truth__chip-sub">{c.chipSub}</p>
+                      <div class="cbs-truth__avatars">
+                        {c.avatars && c.avatars.map((a) => (
+                          <span class={`cbs-truth__avatar cbs-truth__avatar--${a.tone}`}>{a.letter}</span>
+                        ))}
+                        <span class="cbs-truth__avatar cbs-truth__avatar--more">{c.extraAvatars}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {i === 0 && (
+                    <div class="cbs-truth__pin" data-float="2">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="6" width="14" height="12" rx="2"/>
+                        <polygon points="17 9 22 6 22 18 17 15"/>
+                      </svg>
+                      <div class="cbs-truth__pin-text">
+                        <span class="cbs-truth__pin-label">{c.pinLabel}</span>
+                        <span class="cbs-truth__pin-value">{c.pinValue}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {i === 1 && (
+                    <div class="cbs-truth__chip cbs-truth__chip--tr" data-float="1">
+                      <div class="cbs-truth__chip-row">
+                        <span class="cbs-truth__pulse" aria-hidden="true"></span>
+                        <span class="cbs-truth__chip-label">{c.chipLabel}</span>
+                      </div>
+                      <p class="cbs-truth__chip-sub">{c.chipSub}</p>
+                    </div>
+                  )}
+
+                  {i === 1 && (
+                    <div class="cbs-truth__badge" data-float="2">
+                      <span class="cbs-truth__badge-eyebrow">Pourquoi cela compte</span>
+                      <span class="cbs-truth__badge-title">{c.badge}</span>
+                      <span class="cbs-truth__badge-sub">{c.badgeSub}</span>
+                    </div>
+                  )}
+                </div>
+
+                <div class="cbs-truth__content">
+                  <h3 class="cbs-truth__title">{c.title}</h3>
+                  <p class="cbs-truth__body">{c.body}</p>
+
+                  {i === 0 && c.flow && (
+                    <ol class="cbs-truth__flow" aria-label="Flux de production de contenu quotidien">
+                      {c.flow.map((step, idx) => (
+                        <>
+                          <li class="cbs-truth__flow-step" style={`--flow-delay: ${idx * 90}ms`}>
+                            <span class="cbs-truth__flow-bubble">
+                              {idx === 0 && (
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="14" height="12" rx="2"/><polygon points="17 9 22 6 22 18 17 15"/></svg>
+                              )}
+                              {idx === 1 && (
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.1 2.1 0 1 1 3 3L12 15l-4 1 1-4z"/></svg>
+                              )}
+                              {idx === 2 && (
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9z"/></svg>
+                              )}
+                            </span>
+                            <span class="cbs-truth__flow-label">{step}</span>
+                          </li>
+                          {idx < c.flow.length - 1 && (
+                            <li class="cbs-truth__flow-arrow" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </li>
+                          )}
+                        </>
+                      ))}
+                    </ol>
+                  )}
+
+                  {i === 1 && c.credentials && (
+                    <ul class="cbs-truth__tags" aria-label="Ce que nous opérons, au quotidien">
+                      {c.credentials.map((tag) => (
+                        <li class="cbs-truth__tag">{tag}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- WHY BRANDS CHOOSE US ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <div class="cbs-value">
+          <div class="cbs-value__copy">
+            <span class="eyebrow">Pourquoi les marques nous choisissent</span>
+            <h2>La plupart des agences social commerce n'ont jamais tenu de boutique. Nous, si.</h2>
+            <p>
+              Notre équipe vient de Publicis Commerce China. Nous avons bâti et opéré des boutiques Douyin
+              et RedNote pour Shiseido, Pierre Fabre, Camper et d'autres. Nous savons
+              quels créateurs convertissent parce que nous les avons briefés. Nous savons ce que Qianchuan
+              valorise parce que nous y avons dépensé chaque jour.
+            </p>
+            <blockquote class="cbs-quote cbs-quote--inline">
+              <p>La plupart des consultants qui parlent de Douyin et RedNote n'y ont jamais tenu de boutique. Nous, si, et cela change ce que nous vous disons.</p>
+            </blockquote>
+            <p>
+              Nous avons perdu un 11.11 et remporté celui qui a suivi. Quand nous vous indiquons ce qui fonctionne
+              en mars, c'est parce que nous étions à l'intérieur de la plateforme en février.
+            </p>
+            <a href="/fr/qui-nous-sommes#team" class="btn btn--secondary cbs-magnetic">Rencontrer l'équipe</a>
+          </div>
+
+          <ul class="cbs-promise">
+            <li>
+              <span class="eyebrow">Ce que vous pouvez attendre</span>
+            </li>
+            {promises.map((p) => (
+              <li class="cbs-promise__item">
+                <span class="cbs-promise__check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                </span>
+                <div>
+                  <h4>{p.title}</h4>
+                  <p>{p.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- WHAT WE DO ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Ce que nous faisons</span>
+          <h2>Six terrains, une seule équipe</h2>
+          <p class="section-header__lead">
+            Plutôt que quatre agences, quatre briefs et quatre factures. Un seul opérateur sur le contenu,
+            le commerce, les créateurs et le média. La stratégie qui figure dans la présentation est celle
+            qui tourne sur la plateforme dès lundi.
+          </p>
+        </header>
+
+        <div class="cbs-services cbs-reveal">
+          {services.map((s, i) => (
+            <a href={s.href} class="cbs-service" style={`--reveal-delay: ${i * 60}ms;`}>
+              <span class="cbs-service__icon" aria-hidden="true" set:html={icons[s.icon]} />
+              <h3 class="cbs-service__title">{s.title}</h3>
+              <p class="cbs-service__body">{s.body}</p>
+              <span class="cbs-service__arrow">
+                Learn more
+                <span class="cbs-service__arrow-icon" aria-hidden="true">→</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- DECISION POINT (Two models) ---------- */}
+    <section id="decision-point" class="section section--alt cbs-models-section">
+      <div class="container">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Point de décision</span>
+          <h2>Qui tient le stock. Deux manières de faire tourner votre boutique sociale.</h2>
+          <p class="section-header__lead">
+            La première question commerciale d'une boutique Douyin ou RedNote, c'est de savoir qui détient le
+            stock. La réponse cadre le contrat, la marge et la façon de comptabiliser le chiffre d'affaires chinois.
+            Nous travaillons sur deux modèles. Choisissez celui qui colle à votre manière d'inscrire la Chine
+            dans vos comptes.
+          </p>
+        </header>
+
+        <div class="cbs-tabs cbs-tabs--two cbs-reveal" data-tabs>
+          <div class="cbs-tabs__nav" role="tablist">
+            {models.map((m, i) => (
+              <button
+                type="button"
+                class={`cbs-tabs__tab${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                aria-controls={`model-panel-${i}`}
+                id={`model-tab-${i}`}
+                data-tab-target={`model-panel-${i}`}
+              >
+                <span class="cbs-tabs__tab-label">{m.name}</span>
+                <span class="cbs-tabs__tab-tag">{m.tag}</span>
+                {m.highlight && <span class="cbs-tabs__tab-pop">Le plus fréquent</span>}
+              </button>
+            ))}
+            <span class="cbs-tabs__indicator" aria-hidden="true"></span>
+          </div>
+
+          <div class="cbs-tabs__panels">
+            {models.map((m, i) => (
+              <div
+                class={`cbs-tabs__panel${i === 0 ? ' is-active' : ''}`}
+                role="tabpanel"
+                id={`model-panel-${i}`}
+                aria-labelledby={`model-tab-${i}`}
+                hidden={i !== 0}
+              >
+                <div class="cbs-tabs__panel-grid">
+                  <div class="cbs-tabs__lead">
+                    <span class="cbs-tabs__pillset">
+                      <span class="cbs-tabs__pill">{m.tag}</span>
+                    </span>
+                    <h3 class="cbs-tabs__title">{m.name}</h3>
+                    <p class="cbs-tabs__desc">{m.desc}</p>
+                    <div class="cbs-tabs__when">
+                      <span class="cbs-tabs__when-label">À privilégier quand</span>
+                      <p>{m.when}</p>
+                    </div>
+
+                    <div class="cbs-owns">
+                      <span class="cbs-owns__label">Qui tient quoi</span>
+                      <ul class="cbs-owns__list">
+                        {m.owns.map((o) => (
+                          <li>
+                            <span class="cbs-owns__key">{o.label}</span>
+                            <span class="cbs-owns__val">{o.value}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Échanger sur le {m.name}</a>
+                  </div>
+
+                  <div class="cbs-tabs__body">
+                    <figure class="cbs-tabs__image">
+                      <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" />
+                    </figure>
+
+                    <div class="cbs-tabs__list-wrap">
+                      <span class="cbs-tabs__list-label">Vous recevez</span>
+                      <ul class="cbs-tabs__list">
+                        {m.yourSide.map((b) => (
+                          <li>
+                            <span class="cbs-tabs__check" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                            </span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div class="cbs-tabs__list-wrap cbs-tabs__list-wrap--alt">
+                      <span class="cbs-tabs__list-label">Nous prenons en charge</span>
+                      <ul class="cbs-tabs__list">
+                        {m.ourSide.map((b) => (
+                          <li>
+                            <span class="cbs-tabs__check cbs-tabs__check--alt" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                            </span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ---------- HOW TO PICK: Comparison Table ---------- */}
+        <div class="cbs-compare cbs-reveal">
+          <div class="cbs-compare__intro">
+            <span class="eyebrow">Comment trancher</span>
+            <h3>Une question, deux réponses</h3>
+            <p>Voulez-vous tenir la relation client sur Douyin et RedNote, ou préférez-vous une sortie nette en gros ? C'est cette question qui tranche le modèle.</p>
+          </div>
+          <div class="cbs-compare__table-wrap">
+            <table class="cbs-compare__table">
+              <thead>
+                <tr>
+                  <th scope="col" class="cbs-compare__row-head-col"></th>
+                  <th scope="col" class="cbs-compare__head cbs-compare__head--tp">
+                    <span class="cbs-compare__head-label">Modèle DP</span>
+                    <span class="cbs-compare__head-sub">Vous tenez le stock</span>
+                  </th>
+                  <th scope="col" class="cbs-compare__head cbs-compare__head--dist">
+                    <span class="cbs-compare__head-label">Modèle distributeur</span>
+                    <span class="cbs-compare__head-sub">Nous tenons le stock</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {compareRows.map((r) => (
+                  <tr>
+                    <th scope="row" class="cbs-compare__row-label">{r.label}</th>
+                    <td class="cbs-compare__cell cbs-compare__cell--tp">{r.tp}</td>
+                    <td class="cbs-compare__cell cbs-compare__cell--dist">{r.dist}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="cbs-compare__note">
+            Le modèle qui colle dépend de deux variables : la place que vous voulez accorder au social commerce chinois
+            dans votre chiffre d'affaires global, et la trésorerie que vous pouvez aligner derrière
+            cette ambition. Les marques très ambitieuses qui peuvent financer le stock
+            et le média choisissent en général le DP. Celles qui visent un chiffre d'affaires régulier sans
+            immobiliser leur trésorerie optent pour le distributeur. Certaines marques tiennent les deux en parallèle sur
+            des catégories différentes. Rien de tout cela ne forme une échelle de maturité.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- HOW WE WORK / CADENCE ---------- */}
+    <section id="how-we-work" class="section">
+      <div class="container">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Notre méthode</span>
+          <h2>Quatre cadences qui font tourner votre social commerce</h2>
+          <p class="section-header__lead">
+            Une fois le modèle posé, le travail ne s'arrête pas, il change de forme. Quatre
+            cadences tournent en parallèle, toute l'année.
+          </p>
+        </header>
+
+        <div class="cbs-tabs cbs-reveal" data-tabs>
+          <div class="cbs-tabs__nav" role="tablist">
+            {rhythms.map((r, i) => (
+              <button
+                type="button"
+                class={`cbs-tabs__tab${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                aria-controls={`rhythm-panel-${i}`}
+                id={`rhythm-tab-${i}`}
+                data-tab-target={`rhythm-panel-${i}`}
+                data-tab-id={r.tabId}
+              >
+                <span class="cbs-tabs__tab-label">{r.name}</span>
+                <span class="cbs-tabs__tab-tag">{r.tag}</span>
+              </button>
+            ))}
+            <span class="cbs-tabs__indicator" aria-hidden="true"></span>
+          </div>
+
+          <div class="cbs-tabs__panels">
+            {rhythms.map((r, i) => (
+              <div
+                class={`cbs-tabs__panel${i === 0 ? ' is-active' : ''}`}
+                role="tabpanel"
+                id={`rhythm-panel-${i}`}
+                aria-labelledby={`rhythm-tab-${i}`}
+                hidden={i !== 0}
+              >
+                <div class="cbs-tabs__panel-grid">
+                  <div class="cbs-tabs__lead">
+                    <span class="cbs-tabs__pillset">
+                      <span class="cbs-tabs__pill">{r.pill}</span>
+                    </span>
+                    <h3 class="cbs-tabs__title">{r.title}</h3>
+                    <p class="cbs-tabs__desc">{r.desc}</p>
+
+                    <div class="cbs-tabs__when">
+                      <span class="cbs-tabs__when-label">Résultat</span>
+                      <p>{r.outcome}</p>
+                    </div>
+
+                    <figure class="cbs-tabs__image">
+                      <img src={r.image} alt={r.imageAlt} loading="lazy" decoding="async" />
+                    </figure>
+                  </div>
+
+                  <div class="cbs-tabs__body">
+                    <div class="cbs-tabs__list-wrap">
+                      <span class="cbs-tabs__list-label">Ce que nous faisons</span>
+                      <ul class="cbs-tabs__list">
+                        {r.does.map((b) => (
+                          <li>
+                            <span class="cbs-tabs__check" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                            </span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div class="cbs-tabs__list-wrap cbs-tabs__list-wrap--alt">
+                      <span class="cbs-tabs__list-label">Livrables</span>
+                      <ul class="cbs-tabs__list">
+                        {r.deliverables.map((d) => (
+                          <li>
+                            <span class="cbs-tabs__check cbs-tabs__check--alt" aria-hidden="true" set:html={icons.doc} />
+                            <span>{d}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- SISTER PRODUCT: TheRedScroll ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Pour du social sans commerce</span>
+          <h2>Adossé à TheRedScroll</h2>
+          <p class="section-header__lead">
+            Certaines marques veulent une présence sociale chinoise (WeChat, Weibo, contenu Douyin,
+            notes RedNote) sans l'opération commerce complète derrière. TheRedScroll est
+            notre agence sœur conçue précisément pour cela. Contenu quotidien, communauté et seeding KOL,
+            sans boutique en dessous.
+          </p>
+        </header>
+
+        <div class="cbs-sister cbs-reveal">
+          <div class="cbs-sister__hero">
+            <div class="cbs-sister__logo">
+              <img src="/Images/AgencyLogos/TheredScroll%20PNG.webp" alt="TheRedScroll logo" loading="lazy" decoding="async" />
+            </div>
+            <span class="cbs-sister__chip">Produit sœur</span>
+            <h3 class="cbs-sister__title">Social hors plateformes, tenu par les mêmes opérateurs.</h3>
+            <p class="cbs-sister__desc">
+              Lorsque la boutique n'est pas la priorité mais que la marque doit rester présente dans
+              le fil, TheRedScroll prend en charge le contenu et la communauté. Même groupe,
+              mêmes standards, marque distincte, retainer mensuel plus léger.
+            </p>
+            <ul class="cbs-sister__stats">
+              <li>
+                <span class="cbs-sister__stat-num">4</span>
+                <span class="cbs-sister__stat-label">canaux couverts : WeChat, Weibo, Douyin, RedNote</span>
+              </li>
+              <li>
+                <span class="cbs-sister__stat-num">25+</span>
+                <span class="cbs-sister__stat-label">années d'expérience sur le social chinois au sein du groupe</span>
+              </li>
+              <li>
+                <span class="cbs-sister__stat-num">En interne</span>
+                <span class="cbs-sister__stat-label">équipe native, contenu tourné en studio</span>
+              </li>
+            </ul>
+            <div class="cbs-sister__actions">
+              <a href="https://theredscroll.com" target="_blank" rel="noopener" class="btn cbs-sister__btn-primary">
+                Voir TheRedScroll
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a href="/fr/nous-contacter" class="btn cbs-sister__btn-ghost">Confiez-nous votre plan social</a>
+            </div>
+          </div>
+
+          <div class="cbs-sister__packs">
+            {sisterPackages.map((p) => (
+              <article class="cbs-sister__pack">
+                <span class="cbs-sister__pack-icon" aria-hidden="true" set:html={icons.scroll} />
+                <h4>{p.title}</h4>
+                <p>{p.desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FAQ ---------- */}
+    <section id="faq" class="section">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Vingt questions, réponses directes</h2>
+          <p class="section-header__lead">
+            Les questions qui nous arrivent au premier rendez-vous, avec les réponses que nous formulons une fois la marque connue.
+            À filtrer par sujet.
+          </p>
+        </header>
+
+        <div class="cbs-faq-filter cbs-reveal" data-faq-filter role="tablist" aria-label="Filtrer la FAQ par catégorie">
+          {faqCategories.map((c, i) => (
+            <button
+              type="button"
+              class={`cbs-faq-chip${i === 0 ? ' is-active' : ''}`}
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              data-faq-cat={c}
+            >
+              <span class="cbs-faq-chip__label">{c}</span>
+              <span class="cbs-faq-chip__count">{c === "Toutes" ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="cbs-faq" data-faq-list>
+          {faqs.map((f, i) => (
+            <details
+              class="cbs-faq__item cbs-reveal"
+              data-faq-cat={f.cat}
+              open={i === 0}
+              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+            >
+              <summary class="cbs-faq__q">
+                <span class="cbs-faq__cat-tag">{f.cat}</span>
+                <span class="cbs-faq__q-text">{f.q}</span>
+                <span class="cbs-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="cbs-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="cbs-cta">
+          <span class="eyebrow eyebrow--on-dark">Parlons-en</span>
+          <h2 class="cbs-cta__title">Prêts à vendre là où la Chine fait vraiment ses achats ?</h2>
+          <p class="cbs-cta__lead">
+            Dites-nous la catégorie, la fourchette budgétaire, les plateformes envisagées et
+            si vous visez une fenêtre festival ou un lancement de régime stable. Un membre senior
+            de l'équipe vous répond sous un jour ouvré. Vous ne serez pas renvoyé
+            vers un tunnel commercial ni un répondeur automatique.
+          </p>
+          <div class="cbs-cta__actions">
+            <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Lancer la conversation</a>
+            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Voir nos études de cas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    /* ---------- Container narrow helper ---------- */
+    .cbs .container--narrow { max-width: 880px; }
+
+    /* ---------- REVEAL + MOTION ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .cbs-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .cbs-reveal.is-in { opacity: 1; transform: translateY(0); }
+      .cbs-magnetic {
+        will-change: transform;
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      }
+    }
+
+    /* ---------- SCROLL PROGRESS BAR ---------- */
+    .cbs-progress {
+      position: fixed; top: 0; left: 0; right: 0;
+      height: 3px; z-index: 1000;
+      background: transparent; pointer-events: none;
+    }
+    .cbs-progress__bar {
+      height: 100%; width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      transition: width 80ms linear;
+    }
+
+    /* ---------- HERO ---------- */
+    .cbs-hero {
+      position: relative;
+      min-height: clamp(360px, 48vh, 500px);
+      display: flex; align-items: flex-start;
+      padding: clamp(8px, 1.25vh, 16px) 0 clamp(48px, 7vh, 80px);
+      color: var(--bbg-white);
+      overflow: hidden; isolation: isolate;
+    }
+    body:has(.cbs-hero) .cbs-hero { padding-top: clamp(112px, 10vh, 144px); }
+    @media (max-width: 1024px) {
+      body:has(.cbs-hero) .cbs-hero { padding-top: clamp(96px, 9vh, 116px); }
+    }
+    .cbs-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .cbs-hero__bg img {
+      width: 100%; height: 110%;
+      object-fit: cover; object-position: center;
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+      transition: transform 80ms linear;
+      filter: saturate(0.95);
+    }
+    .cbs-hero__overlay {
+      position: absolute; inset: 0; z-index: -2;
+      background:
+        linear-gradient(110deg,
+          rgba(8, 18, 28, 0.92) 0%,
+          rgba(8, 18, 28, 0.72) 42%,
+          rgba(8, 18, 28, 0.32) 100%),
+        radial-gradient(120% 80% at 0% 100%,
+          rgba(38, 154, 218, 0.28) 0%,
+          rgba(38, 154, 218, 0) 60%);
+    }
+    .cbs-hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay; opacity: 0.45;
+      pointer-events: none;
+    }
+    .cbs-hero__inner { max-width: 980px; position: relative; }
+    .cbs-hero__crumbs {
+      margin-bottom: var(--space-4);
+      font-size: var(--fs-small);
+      display: flex; gap: 0.5rem; align-items: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .cbs-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .cbs-hero__crumbs a:hover { color: var(--bbg-white); }
+    .cbs-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-3);
+      color: #9DDBF5;
+    }
+    .cbs-hero__title {
+      font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      max-width: 22ch;
+      font-weight: 700;
+      display: flex; flex-direction: column;
+      gap: 0.05em;
+    }
+    .cbs-hero__title-row { display: block; }
+    .cbs-hero__title-row--accent {
+      color: #9DDBF5; font-weight: 500;
+      font-style: italic; letter-spacing: -0.018em;
+    }
+    .cbs-hero__title-row--highlight {
+      position: relative; display: inline-block;
+      align-self: flex-start; padding: 0 0.15em;
+    }
+    .cbs-hero__title-row--highlight::before {
+      content: ""; position: absolute;
+      left: 0; right: 0; bottom: 0.04em;
+      height: 0.18em;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transform-origin: left center;
+      animation: cbs-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+      z-index: -1;
+    }
+    @keyframes cbs-underline { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .cbs-hero__lead {
+      font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 58ch;
+      margin: 0 0 var(--space-5);
+    }
+    .cbs-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
+    .cbs-magnetic:hover { transform: translateY(-2px); }
+
+    .cbs-hero__meta {
+      display: flex; flex-wrap: nowrap;
+      gap: clamp(var(--space-3), 3vw, var(--space-6));
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: none;
+    }
+    .cbs-hero__meta-item {
+      display: flex; flex-direction: column;
+      gap: 0.2rem;
+      min-width: 0;
+      flex: 1 1 0;
+    }
+    @media (max-width: 720px) {
+      .cbs-hero__meta { flex-wrap: wrap; }
+      .cbs-hero__meta-item { flex: 1 1 auto; }
+    }
+    .cbs-hero__meta-num {
+      font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+      font-weight: 700; letter-spacing: -0.02em;
+      line-height: 1; color: var(--bbg-white);
+      font-feature-settings: "tnum";
+    }
+    .cbs-hero__meta-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.02em;
+    }
+
+    .cbs-hero__scroll {
+      position: absolute;
+      bottom: var(--space-5);
+      right: clamp(var(--space-5), 4vw, var(--space-7));
+      display: flex; flex-direction: column;
+      align-items: center; gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.7rem; letter-spacing: 0.18em;
+      text-transform: uppercase; font-weight: 600;
+      transition: color 200ms ease;
+    }
+    .cbs-hero__scroll:hover { color: var(--bbg-white); }
+    .cbs-hero__scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+      position: relative; overflow: hidden;
+    }
+    .cbs-hero__scroll-line::after {
+      content: ""; position: absolute;
+      top: -100%; left: 0; right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+      animation: cbs-scroll-tick 1.8s ease-in-out infinite;
+    }
+    @keyframes cbs-scroll-tick { 0% { top: -50%; } 100% { top: 100%; } }
+    @media (max-width: 720px) {
+      .cbs-hero__scroll { display: none; }
+      .cbs-hero__meta { gap: var(--space-4); }
+    }
+
+
+    /* ---------- VALUE + PROMISES ---------- */
+    .cbs-value {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .cbs-value__copy h2 {
+      font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+      line-height: 1.15; letter-spacing: -0.015em;
+      margin: var(--space-3) 0 var(--space-4);
+    }
+    .cbs-value__copy p {
+      color: var(--bbg-text); line-height: 1.7;
+      font-size: 1.0625rem; margin: 0 0 var(--space-4);
+    }
+    .cbs-value__copy .btn { margin-top: var(--space-4); }
+    .cbs-promise {
+      list-style: none; padding: var(--space-6); margin: 0;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      display: flex; flex-direction: column;
+      gap: var(--space-5);
+    }
+    .cbs-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .cbs-promise__item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+    }
+    .cbs-promise__check {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .cbs-promise__check svg { width: 16px; height: 16px; }
+    .cbs-promise__item h4 {
+      font-size: 1.125rem; margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em; color: var(--bbg-ink);
+    }
+    .cbs-promise__item p {
+      font-size: 0.975rem; line-height: 1.55;
+      color: var(--bbg-text); margin: 0;
+    }
+
+    @media (max-width: 1024px) {
+      .cbs-value { grid-template-columns: 1fr; gap: var(--space-6); }
+    }
+
+    /* ---------- SERVICES (six-card grid) ---------- */
+    .cbs-services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+    }
+    .cbs-service {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      display: flex; flex-direction: column;
+      gap: var(--space-3);
+      text-decoration: none;
+      color: inherit;
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 260ms ease,
+        box-shadow 260ms ease;
+      overflow: hidden;
+    }
+    .cbs-service::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cbs-service:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+    }
+    .cbs-service:hover::before { transform: scaleX(1); }
+    .cbs-service__icon {
+      display: inline-flex;
+      width: 44px; height: 44px;
+      align-items: center; justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-2);
+    }
+    .cbs-service__icon svg { width: 22px; height: 22px; }
+    .cbs-service__title {
+      font-size: 1.125rem;
+      line-height: 1.25;
+      margin: 0;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+    }
+    .cbs-service__body {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .cbs-service__arrow {
+      margin-top: auto;
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center; gap: 0.4rem;
+      font-size: 0.85rem; font-weight: 600;
+      color: var(--bbg-blue);
+      letter-spacing: 0.01em;
+      padding-top: var(--space-2);
+    }
+    .cbs-service__arrow-icon {
+      display: inline-block;
+      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .cbs-service:hover .cbs-service__arrow-icon { transform: translateX(3px); }
+    @media (max-width: 1024px) { .cbs-services { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .cbs-services { grid-template-columns: 1fr; } }
+
+    /* ---------- MODELS / TABS BG ---------- */
+    .cbs-models-section { position: relative; isolation: isolate; overflow: hidden; }
+
+    /* ---------- TABS ---------- */
+    .cbs-tabs {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px -28px rgba(8, 18, 28, 0.18);
+    }
+    .cbs-tabs__nav {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      background: linear-gradient(180deg, var(--bbg-surface) 0%, var(--bbg-white) 100%);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .cbs-tabs--two .cbs-tabs__nav { grid-template-columns: repeat(2, 1fr); }
+    .cbs-tabs__tab {
+      position: relative; background: transparent; border: none;
+      padding: var(--space-5) var(--space-4);
+      text-align: left; cursor: pointer;
+      display: flex; flex-direction: column;
+      gap: 0.35rem;
+      color: var(--bbg-text-muted);
+      transition: color 240ms ease, background 240ms ease;
+      border-right: 1px solid var(--bbg-border);
+      font-family: inherit;
+    }
+    .cbs-tabs__tab:last-child { border-right: none; }
+    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .cbs-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .cbs-tabs__tab-label {
+      font-size: 1.0625rem; font-weight: 700;
+      letter-spacing: -0.005em; line-height: 1.2;
+    }
+    .cbs-tabs__tab-tag {
+      font-size: 0.78rem; color: var(--bbg-text-muted);
+      line-height: 1.35;
+    }
+    .cbs-tabs__tab.is-active .cbs-tabs__tab-tag { color: var(--bbg-blue); }
+    .cbs-tabs__tab-pop {
+      position: absolute;
+      top: var(--space-3); right: var(--space-3);
+      font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .cbs-tabs__indicator {
+      position: absolute;
+      bottom: -1px; left: 0;
+      width: 25%; height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px 2px 0 0;
+      transform: translateX(0);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    .cbs-tabs--two .cbs-tabs__indicator { width: 50%; }
+    .cbs-tabs__panels { background: var(--bbg-white); }
+    .cbs-tabs__panel {
+      padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
+      animation: cbs-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes cbs-tab-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .cbs-tabs__panel[hidden] { display: none; }
+    .cbs-tabs__panel-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(var(--space-5), 3vw, var(--space-7));
+      align-items: start;
+    }
+    .cbs-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
+    .cbs-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .cbs-tabs__pill {
+      font-size: 0.78rem; font-weight: 600;
+      padding: 0.35em 0.85em;
+      border-radius: 999px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      letter-spacing: 0.01em;
+    }
+    .cbs-tabs__title {
+      font-size: clamp(1.625rem, 1.8vw + 1rem, 2.25rem);
+      line-height: 1.1; margin: 0;
+      letter-spacing: -0.015em;
+    }
+    .cbs-tabs__desc {
+      font-size: 1rem; line-height: 1.6;
+      color: var(--bbg-text); margin: 0;
+    }
+    .cbs-tabs__when {
+      padding: var(--space-4);
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .cbs-tabs__when-label {
+      display: block;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.35rem;
+    }
+    .cbs-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
+    .cbs-tabs__body { display: flex; flex-direction: column; gap: var(--space-4); }
+    .cbs-tabs__image {
+      margin: 0;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      background: var(--bbg-border);
+    }
+    .cbs-tabs__image img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+    }
+    .cbs-tabs__list-wrap {
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+    }
+    .cbs-tabs__list-wrap--alt { background: var(--bbg-blue-light); }
+    .cbs-tabs__list-label {
+      display: block;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .cbs-tabs__list-wrap--alt .cbs-tabs__list-label { color: var(--bbg-blue-dark); }
+    .cbs-tabs__list {
+      list-style: none; padding: 0; margin: 0;
+      display: flex; flex-direction: column;
+      gap: var(--space-3);
+    }
+    .cbs-tabs__list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      font-size: 0.95rem; line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .cbs-tabs__check {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      display: inline-flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 1px;
+    }
+    .cbs-tabs__check--alt {
+      background: var(--bbg-white);
+      color: var(--bbg-blue);
+      box-shadow: inset 0 0 0 1.5px var(--bbg-blue);
+    }
+    .cbs-tabs__check svg { width: 12px; height: 12px; }
+
+    .cbs-owns {
+      padding: var(--space-4);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      background: var(--bbg-white);
+    }
+    .cbs-owns__label {
+      display: block;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .cbs-owns__list {
+      list-style: none; padding: 0; margin: 0;
+      display: flex; flex-direction: column;
+      gap: 0.6rem;
+    }
+    .cbs-owns__list li {
+      display: grid;
+      grid-template-columns: minmax(150px, auto) 1fr;
+      gap: var(--space-4);
+      align-items: baseline;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px dashed var(--bbg-border);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+    .cbs-owns__list li:last-child { border-bottom: none; padding-bottom: 0; }
+    .cbs-owns__key { color: var(--bbg-text-muted); font-weight: 600; }
+    .cbs-owns__val { color: var(--bbg-ink); }
+
+    @media (max-width: 1024px) {
+      .cbs-tabs__nav { grid-template-columns: 1fr; }
+      .cbs-tabs__tab { border-right: none; border-bottom: 1px solid var(--bbg-border); }
+      .cbs-tabs__indicator { display: none; }
+      .cbs-tabs__panel-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- COMPARISON TABLE ---------- */
+    .cbs-compare {
+      margin-top: var(--space-8);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: clamp(var(--space-5), 3vw + 1rem, var(--space-7));
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+    }
+    .cbs-compare__intro { text-align: center; margin-bottom: var(--space-6); }
+    .cbs-compare__intro h3 {
+      font-size: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
+      margin: var(--space-2) 0 var(--space-3);
+      letter-spacing: -0.01em;
+    }
+    .cbs-compare__intro p {
+      color: var(--bbg-text);
+      max-width: 60ch; margin: 0 auto;
+      line-height: 1.6; font-size: 1rem;
+    }
+    .cbs-compare__table-wrap { overflow-x: auto; }
+    .cbs-compare__table {
+      width: 100%; border-collapse: separate;
+      border-spacing: 0;
+      min-width: 640px;
+    }
+    .cbs-compare__head {
+      background: var(--bbg-surface);
+      padding: var(--space-4);
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .cbs-compare__head--tp { border-bottom-color: var(--bbg-blue); }
+    .cbs-compare__head--dist { border-bottom-color: var(--bbg-blue-dark); }
+    .cbs-compare__head-label {
+      display: block;
+      font-size: 1rem; font-weight: 700;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+    }
+    .cbs-compare__head-sub {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--bbg-text-muted);
+      margin-top: 0.25rem;
+    }
+    .cbs-compare__row-head-col {
+      width: 38%;
+      background: var(--bbg-surface);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .cbs-compare__row-label {
+      text-align: left;
+      padding: var(--space-4);
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.01em;
+      border-bottom: 1px solid var(--bbg-border);
+      background: var(--bbg-white);
+    }
+    .cbs-compare__cell {
+      padding: var(--space-4);
+      font-size: 0.95rem;
+      color: var(--bbg-ink);
+      border-bottom: 1px solid var(--bbg-border);
+      vertical-align: top;
+    }
+    .cbs-compare__cell--tp { background: rgba(38, 154, 218, 0.04); }
+    .cbs-compare__cell--dist { background: var(--bbg-white); }
+    .cbs-compare__table tbody tr:last-child .cbs-compare__row-label,
+    .cbs-compare__table tbody tr:last-child .cbs-compare__cell {
+      border-bottom: none;
+    }
+    .cbs-compare__note {
+      margin: var(--space-5) auto 0;
+      max-width: 70ch;
+      text-align: center;
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 0.975rem;
+    }
+
+    /* ---------- QUOTE ---------- */
+    .cbs-quote {
+      margin: var(--space-6) auto 0;
+      max-width: 760px;
+      padding: var(--space-5) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.10) 100%);
+      border-left: 4px solid var(--bbg-blue);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+    .cbs-quote p {
+      margin: 0;
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      color: var(--bbg-ink);
+      font-weight: 500;
+      font-style: italic;
+    }
+    .cbs-quote--inline {
+      margin: var(--space-2) 0;
+      max-width: none;
+      padding: var(--space-4) var(--space-5);
+    }
+
+    /* ---------- SISTER PRODUCT (TheRedScroll) ---------- */
+    .cbs-sister {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-6);
+      align-items: stretch;
+    }
+    .cbs-sister__hero {
+      position: relative;
+      padding: clamp(var(--space-6), 4vw, var(--space-8));
+      background: linear-gradient(160deg, #1a0f1f 0%, #2a1530 60%, #401a45 100%);
+      color: var(--bbg-white);
+      border-radius: 24px;
+      overflow: hidden;
+      isolation: isolate;
+      display: flex; flex-direction: column;
+      gap: var(--space-4);
+    }
+    .cbs-sister__hero::before {
+      content: "";
+      position: absolute; inset: 0; z-index: -1;
+      background:
+        radial-gradient(60% 80% at 100% 0%, rgba(255, 90, 130, 0.25) 0%, transparent 60%),
+        radial-gradient(40% 60% at 0% 100%, rgba(255, 60, 100, 0.18) 0%, transparent 60%);
+    }
+    .cbs-sister__logo {
+      align-self: flex-start;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      padding: 0.55rem 0.9rem;
+      max-width: 180px;
+    }
+    .cbs-sister__logo img {
+      display: block; width: 100%; height: auto;
+    }
+    .cbs-sister__chip {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: #FFC2D1;
+      background: rgba(255, 90, 130, 0.18);
+      padding: 0.4em 0.85em;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 194, 209, 0.3);
+    }
+    .cbs-sister__title {
+      font-size: clamp(1.5rem, 1.6vw + 1rem, 2.125rem);
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-white);
+    }
+    .cbs-sister__desc {
+      font-size: 1rem; line-height: 1.6;
+      color: rgba(255, 255, 255, 0.82);
+      margin: 0;
+    }
+    .cbs-sister__stats {
+      list-style: none; padding: var(--space-4) 0 0;
+      margin: 0;
+      display: flex; flex-direction: column;
+      gap: var(--space-3);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .cbs-sister__stats li {
+      display: grid;
+      grid-template-columns: minmax(96px, auto) 1fr;
+      gap: var(--space-4);
+      align-items: baseline;
+    }
+    .cbs-sister__stat-num {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #FFC2D1;
+      letter-spacing: -0.01em;
+      font-feature-settings: "tnum";
+    }
+    .cbs-sister__stat-label {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.5;
+    }
+    .cbs-sister__actions {
+      display: flex; flex-wrap: wrap; gap: var(--space-3);
+      margin-top: var(--space-3);
+    }
+    .cbs-sister__btn-primary {
+      background: var(--bbg-white);
+      color: #2a1530;
+      border: 1px solid var(--bbg-white);
+      display: inline-flex; align-items: center; gap: 0.4rem;
+    }
+    .cbs-sister__btn-primary:hover {
+      background: #FFC2D1; color: #2a1530;
+    }
+    .cbs-sister__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .cbs-sister__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+    .cbs-sister__packs {
+      display: flex; flex-direction: column;
+      gap: var(--space-4);
+    }
+    .cbs-sister__pack {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      display: flex; flex-direction: column;
+      gap: var(--space-2);
+      transition: border-color 280ms ease, box-shadow 280ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cbs-sister__pack:hover {
+      transform: translateY(-3px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 14px 28px -18px rgba(38, 154, 218, 0.35);
+    }
+    .cbs-sister__pack-icon {
+      display: inline-flex;
+      width: 36px; height: 36px;
+      align-items: center; justify-content: center;
+      border-radius: 10px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      margin-bottom: 0.4rem;
+    }
+    .cbs-sister__pack-icon svg { width: 18px; height: 18px; }
+    .cbs-sister__pack h4 {
+      font-size: 1.0625rem;
+      margin: 0;
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .cbs-sister__pack p {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .cbs-sister { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- FAQ ---------- */
+    .cbs-faq {
+      display: flex; flex-direction: column;
+      gap: var(--space-3);
+    }
+    .cbs-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cbs-faq__item:hover {
+      transform: translateX(2px);
+      border-color: rgba(38, 154, 218, 0.4);
+    }
+    .cbs-faq__item[open] {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+    }
+    .cbs-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex; align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem; line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .cbs-faq__q::-webkit-details-marker { display: none; }
+    .cbs-faq__q::marker { display: none; }
+    .cbs-faq__item:hover .cbs-faq__q { color: var(--bbg-blue); }
+    .cbs-faq__icon {
+      flex-shrink: 0;
+      width: 28px; height: 28px;
+      display: inline-flex;
+      align-items: center; justify-content: center;
+      border-radius: 50%;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+                  color var(--dur) var(--ease),
+                  background var(--dur) var(--ease);
+    }
+    .cbs-faq__item[open] .cbs-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-white);
+      background: var(--bbg-blue);
+    }
+    .cbs-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+      animation: cbs-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes cbs-faq-in {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .cbs-faq__a p { margin: 0; }
+
+    /* ---------- FAQ FILTER ---------- */
+    .cbs-faq-filter {
+      display: flex; flex-wrap: wrap;
+      gap: 0.5rem; justify-content: center;
+      margin-bottom: var(--space-6);
+      overflow-x: auto;
+    }
+    .cbs-faq-chip {
+      display: inline-flex; align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--bbg-text);
+      transition: all 220ms ease;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .cbs-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .cbs-faq-chip.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    .cbs-faq-chip__count {
+      font-size: 0.72rem; font-weight: 700;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: all 220ms ease;
+    }
+    .cbs-faq-chip:hover .cbs-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .cbs-faq-chip.is-active .cbs-faq-chip__count {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--bbg-white);
+    }
+    .cbs-faq__cat-tag {
+      display: inline-block;
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 0.25em 0.6em;
+      border-radius: 4px;
+      margin-right: var(--space-3);
+      flex-shrink: 0;
+    }
+    .cbs-faq__q-text { flex-grow: 1; }
+    .cbs-faq__item.is-hidden { display: none; }
+
+    /* ---------- FINAL CTA ---------- */
+    .cbs-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .cbs-cta::before {
+      content: ""; position: absolute;
+      top: -40%; right: -10%;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .cbs-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .cbs-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .cbs-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 52ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .cbs-cta__actions {
+      display: flex; flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .cbs-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .cbs-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .cbs-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .cbs-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
+
+  <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // 1. Reveal-on-scroll
+      const revealEls = document.querySelectorAll('.cbs-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      // 2. Animated counters
+      const counters = document.querySelectorAll('[data-counter]');
+      if (counters.length && !reduced && 'IntersectionObserver' in window) {
+        const animate = (el) => {
+          const target = parseFloat(el.dataset.counter || '0');
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(target * eased);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        };
+        const counterIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((el) => counterIo.observe(el));
+      } else {
+        counters.forEach((el) => {
+          el.textContent = (el.dataset.counter || '0') + (el.dataset.suffix || '');
+        });
+      }
+
+      // 3. Hero parallax + scroll progress bar
+      const parallaxEl = document.querySelector('[data-parallax]');
+      const progressEl = document.querySelector('.cbs-progress__bar');
+      const heroEl = document.querySelector('[data-hero]');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          if (parallaxEl && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // 4. Tabs (handles both 2-tab models and 4-tab cadence)
+      const openTabByHash = () => {
+        const hash = window.location.hash.slice(1);
+        if (!hash) return;
+        document.querySelectorAll('[data-tabs]').forEach((root) => {
+          const matchingTab = root.querySelector(`[data-tab-id="${hash}"]`);
+          if (matchingTab) matchingTab.click();
+        });
+      };
+
+      document.querySelectorAll('[data-tabs]').forEach((tabsRoot) => {
+        const tabs = Array.from(tabsRoot.querySelectorAll('.cbs-tabs__tab'));
+        const panels = Array.from(tabsRoot.querySelectorAll('.cbs-tabs__panel'));
+        const indicator = tabsRoot.querySelector('.cbs-tabs__indicator');
+
+        const setActive = (tab) => {
+          tabs.forEach((t) => {
+            const active = t === tab;
+            t.classList.toggle('is-active', active);
+            t.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          const targetId = tab.getAttribute('data-tab-target');
+          panels.forEach((p) => {
+            const active = p.id === targetId;
+            p.classList.toggle('is-active', active);
+            if (active) p.removeAttribute('hidden');
+            else p.setAttribute('hidden', '');
+          });
+          if (indicator) {
+            const idx = tabs.indexOf(tab);
+            const w = 100 / tabs.length;
+            indicator.style.width = w + '%';
+            indicator.style.transform = `translateX(${idx * 100}%)`;
+          }
+        };
+
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => setActive(tab));
+          tab.addEventListener('keydown', (e) => {
+            const idx = tabs.indexOf(tab);
+            if (e.key === 'ArrowRight') {
+              e.preventDefault();
+              const next = tabs[(idx + 1) % tabs.length];
+              next.focus(); setActive(next);
+            } else if (e.key === 'ArrowLeft') {
+              e.preventDefault();
+              const prev = tabs[(idx - 1 + tabs.length) % tabs.length];
+              prev.focus(); setActive(prev);
+            }
+          });
+        });
+
+        const initialActive = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
+        if (initialActive) setActive(initialActive);
+      });
+
+      // Open tab from URL hash on load and on hash change
+      openTabByHash();
+      window.addEventListener('hashchange', openTabByHash);
+
+      // 5. Smooth scroll for anchors (also triggers tab open via hashchange)
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+          const tabId = id.slice(1);
+          document.querySelectorAll('[data-tabs]').forEach((root) => {
+            const matchingTab = root.querySelector(`[data-tab-id="${tabId}"]`);
+            if (matchingTab) matchingTab.click();
+          });
+          history.replaceState(null, '', id);
+        });
+      });
+
+      // 6. Two-truths: cursor tilt + scroll-driven image parallax
+      const truths = document.querySelectorAll('[data-truth-tilt]');
+      if (truths.length && !reduced) {
+        truths.forEach((card) => {
+          const onMove = (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width;
+            const y = (e.clientY - rect.top) / rect.height;
+            const ry = (x - 0.5) * 5;
+            const rx = (0.5 - y) * 4;
+            card.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+            card.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+            card.setAttribute('data-tilt-active', '');
+          };
+          const onLeave = () => {
+            card.style.setProperty('--ry', '0deg');
+            card.style.setProperty('--rx', '0deg');
+            card.removeAttribute('data-tilt-active');
+          };
+          card.addEventListener('mousemove', onMove);
+          card.addEventListener('mouseleave', onLeave);
+        });
+
+        const parallaxImgs = document.querySelectorAll('[data-truth-parallax]');
+        let truthsTicking = false;
+        const updateTruthParallax = () => {
+          parallaxImgs.forEach((img) => {
+            const frame = img.parentElement;
+            if (!frame) return;
+            const rect = frame.getBoundingClientRect();
+            const vh = window.innerHeight;
+            if (rect.bottom < 0 || rect.top > vh) return;
+            const center = rect.top + rect.height / 2;
+            const offset = (center - vh / 2) / vh;
+            const shift = Math.max(-16, Math.min(16, -offset * 22));
+            img.style.setProperty('--img-y', shift.toFixed(1) + 'px');
+          });
+        };
+        const onTruthsScroll = () => {
+          if (truthsTicking) return;
+          truthsTicking = true;
+          requestAnimationFrame(() => {
+            updateTruthParallax();
+            truthsTicking = false;
+          });
+        };
+        window.addEventListener('scroll', onTruthsScroll, { passive: true });
+        window.addEventListener('resize', onTruthsScroll, { passive: true });
+        updateTruthParallax();
+      }
+
+      // 7. FAQ accordion - close others on open
+      const faqItems = document.querySelectorAll('.cbs-faq__item');
+      faqItems.forEach((item) => {
+        item.addEventListener('toggle', () => {
+          if (item.open) {
+            faqItems.forEach((other) => {
+              if (other !== item && other.open) other.open = false;
+            });
+          }
+        });
+      });
+
+      // 7. FAQ category filter
+      const faqFilter = document.querySelector('[data-faq-filter]');
+      const faqList = document.querySelector('[data-faq-list]');
+      if (faqFilter && faqList) {
+        const chips = Array.from(faqFilter.querySelectorAll('.cbs-faq-chip'));
+        const items = Array.from(faqList.querySelectorAll('.cbs-faq__item'));
+        chips.forEach((chip) => {
+          chip.addEventListener('click', () => {
+            const cat = chip.dataset.faqCat;
+            chips.forEach((c) => {
+              const on = c === chip;
+              c.classList.toggle('is-active', on);
+              c.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            items.forEach((item) => {
+              const matches = cat === 'All' || item.dataset.faqCat === cat;
+              item.classList.toggle('is-hidden', !matches);
+            });
+          });
+        });
+      }
+    })();
+  </script>
+</Layout>

@@ -49,6 +49,27 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
     '/learn-china/platforms': '/comprendre-la-chine/plateformes',
     '/learn-china/masterclass': '/comprendre-la-chine/masterclass',
     '/learn-china/learning-expeditions': '/comprendre-la-chine/expeditions-terrain',
+    '/grow-in-china': '/se-developper-en-chine',
+    '/grow-in-china/cross-border-ecommerce': '/se-developper-en-chine/ecommerce-transfrontalier',
+    '/grow-in-china/social-commerce': '/se-developper-en-chine/commerce-social',
+    '/grow-in-china/campaigns': '/se-developper-en-chine/campagnes',
+    '/grow-in-china/media': '/se-developper-en-chine/medias',
+    '/grow-in-china/influencers-kols': '/se-developper-en-chine/influence-et-kol',
+    '/grow-in-china/production-studio': '/se-developper-en-chine/studio-de-production',
+    '/grow-in-china/website': '/se-developper-en-chine/site-web',
+    '/work': '/nos-realisations',
+  },
+};
+
+/**
+ * Per-locale path prefixes. Used for nested routes whose tail segment is a
+ * brand or content slug that stays identical across locales (e.g. case study
+ * URLs under /work and /fr/nos-realisations). Listing the prefix here lets the
+ * language switcher round-trip the full path without enumerating every leaf.
+ */
+const prefixMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>> = {
+  fr: {
+    '/work/': '/nos-realisations/',
   },
 };
 
@@ -58,6 +79,11 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
  */
 const reverseSlugMap = Object.fromEntries(
   (Object.entries(slugMap) as [Exclude<Locale, typeof defaultLocale>, Record<string, string>][])
+    .map(([loc, map]) => [loc, Object.fromEntries(Object.entries(map).map(([en, native]) => [native, en]))]),
+) as Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>>;
+
+const reversePrefixMap = Object.fromEntries(
+  (Object.entries(prefixMap) as [Exclude<Locale, typeof defaultLocale>, Record<string, string>][])
     .map(([loc, map]) => [loc, Object.fromEntries(Object.entries(map).map(([en, native]) => [native, en]))]),
 ) as Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>>;
 
@@ -78,7 +104,17 @@ function toCanonical(path: string): string | null {
   if (sourceLocale === defaultLocale) return stripped;
   if (stripped === '/') return '/';
   const reverse = reverseSlugMap[sourceLocale as Exclude<Locale, typeof defaultLocale>];
-  return reverse?.[stripped] ?? null;
+  const direct = reverse?.[stripped];
+  if (direct) return direct;
+  const prefixes = reversePrefixMap[sourceLocale as Exclude<Locale, typeof defaultLocale>];
+  if (prefixes) {
+    for (const [native, en] of Object.entries(prefixes)) {
+      if (stripped.startsWith(native)) {
+        return en + stripped.slice(native.length);
+      }
+    }
+  }
+  return null;
 }
 
 /**
@@ -101,8 +137,16 @@ export function localizePath(path: string, locale: Locale): string {
   if (canonical === '/' || canonical === '') return `/${locale}`;
   const map = slugMap[locale as Exclude<Locale, typeof defaultLocale>];
   const translated = map?.[canonical];
-  if (!translated) return `/${locale}`;
-  return `/${locale}${translated}`;
+  if (translated) return `/${locale}${translated}`;
+  const prefixes = prefixMap[locale as Exclude<Locale, typeof defaultLocale>];
+  if (prefixes) {
+    for (const [en, native] of Object.entries(prefixes)) {
+      if (canonical.startsWith(en)) {
+        return `/${locale}${native}${canonical.slice(en.length)}`;
+      }
+    }
+  }
+  return `/${locale}`;
 }
 
 /**
