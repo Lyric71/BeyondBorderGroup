@@ -1,6 +1,6 @@
 ---
-title: "E-commerce en Chine 2025 : la carte des plateformes, et pourquoi le retail redevient local"
-description: "Le marché e-commerce chinois fusionne désormais online et offline dans une même boucle opérationnelle. Chaque plateforme majeure capte ses propres habitudes de consommation et un segment précis du tunnel d'achat."
+title: "E-commerce chinois 2025 : la carte des plateformes, et le retour du local"
+description: "Online et offline fusionnent désormais dans une même boucle opérationnelle. Chaque plateforme majeure capte une habitude de consommation précise et un segment du tunnel d'achat. Cartographie."
 pubDate: "2025-12-22"
 author: "Beyond Border Group"
 category: "E-Commerce"
@@ -11,17 +11,17 @@ heroImageAlt: "Vue d'ensemble des plateformes e-commerce chinoises"
 legacyUrl: "https://beyondbordergroup.com/china-e-commerce-platforms-2025/"
 ---
 
-## Le marché e-commerce chinois continue à donner le tempo. La raison tient à l'intégration, pas à la taille.
+## Le marché chinois donne toujours le tempo. La raison tient à l'intégration, pas à la taille.
 
-Le basculement actuel du retail tient en une idée. Online et offline convergent dans une seule boucle opérationnelle. Découverte, conversion, livraison, service : tout se conçoit en parcours unifié, souvent à l'intérieur d'une même application.
+Le basculement actuel du retail tient en une idée. Online et offline convergent dans une seule boucle opérationnelle. Découverte, conversion, livraison, service : tout se conçoit comme un parcours unifié, souvent à l'intérieur d'une même application.
 
-La Chine dispose en outre de la masse critique qui rend cette intégration viable. Le pays comptait plus de 1,12 milliard d'internautes en juin 2025.
+La Chine dispose en outre de la masse critique qui rend l'intégration viable. Le pays comptait plus de 1,12 milliard d'internautes en juin 2025.
 
 ---
 
 ## La carte des plateformes
 
-Les grandes [plateformes](/fr/comprendre-la-chine/plateformes) chinoises ont chacune leurs forces. La plupart des marques finissent par jouer sur plusieurs tableaux en même temps, chaque acteur occupant un segment précis du tunnel.
+Les grandes [plateformes](/fr/comprendre-la-chine/plateformes) chinoises ont chacune leurs forces. La plupart des marques finissent par jouer sur plusieurs tableaux en même temps. Chaque acteur occupe un segment précis du tunnel.
 
 ### **Alibaba (Taobao, Tmall, 1688)**
 
@@ -31,7 +31,7 @@ Les grandes [plateformes](/fr/comprendre-la-chine/plateformes) chinoises ont cha
 ### **JD.com**
 
 * JD continue à se positionner sur la fiabilité logistique et le contrôle qualité.
-* JD a annoncé une base annuelle d'acheteurs actifs supérieure à 700 millions en octobre 2025.
+* JD revendique une base annuelle d'acheteurs actifs supérieure à 700 millions en octobre 2025.
 
 ### **Pinduoduo (PDD)**
 
@@ -68,7 +68,7 @@ Les grandes [plateformes](/fr/comprendre-la-chine/plateformes) chinoises ont cha
 
 S'il fallait retenir une seule tendance de 2025, ce serait le commerce instantané.
 
-Le commerce instantané n'est pas une « livraison rapide » optionnelle. C'est une nouvelle norme retail bâtie sur des stocks de proximité, une logistique locale et un routage natif dans l'application. Ce qui redéfinit le « normal » des achats du quotidien.
+Le commerce instantané n'est pas une « livraison rapide » en option. C'est une nouvelle norme retail, bâtie sur des stocks de proximité, une logistique locale et un routage natif dans l'application. Le « normal » des achats du quotidien s'en trouve redéfini.
 
 Les ventes en commerce instantané atteindront 1 003 milliards de yuans en 2025, avec une croissance plus rapide que celle du e-commerce retail global.
 
