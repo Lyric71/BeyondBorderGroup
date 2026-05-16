@@ -4222,37 +4222,10 @@ body:has(.nav.nav--open) { overflow: hidden; }
 
 /* ---------- Tablet (1024 and below) ---------- */
 @media (max-width: 1024px) {
-  .svc-bento { grid-template-columns: repeat(6, 1fr); grid-auto-rows: 260px; }
-  .svc-tile,
-  .svc-tile--featured,
-  .svc-panel[data-stage="enter"] .svc-tile:nth-child(2),
-  .svc-panel[data-stage="learn"] .svc-tile:nth-child(2),
-  .svc-panel[data-stage="enter"] .svc-tile:nth-child(3),
-  .svc-panel[data-stage="learn"] .svc-tile:nth-child(3),
-  .svc-panel[data-stage="grow"] .svc-tile:nth-child(2),
-  .svc-panel[data-stage="grow"] .svc-tile:nth-child(3),
-  .svc-panel[data-stage="grow"] .svc-tile:nth-child(4),
-  .svc-panel[data-stage="grow"] .svc-tile:nth-child(5) {
-    grid-column: span 3;
-    grid-row: span 2;
-  }
-  .svc-tile--featured { grid-column: span 6; grid-row: span 2; }
-  /* On tablet, the lone 4th card in enter/learn spans full width */
-  .svc-panel[data-stage="enter"] .svc-tile:nth-child(4),
-  .svc-panel[data-stage="learn"] .svc-tile:nth-child(4) {
-    grid-column: span 6;
-    grid-row: span 1;
-  }
-  .svc-tile__desc { max-height: 100px; opacity: 1; }
-  .svc-tile--featured .svc-tile__title { font-size: clamp(26px, 4vw, 36px); }
-}
-
-/* ---------- Mobile ---------- */
-@media (max-width: 640px) {
   .svc-bento {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-    gap: 14px;
+    align-items: stretch;
   }
   .svc-bento .svc-tile,
   .svc-bento .svc-tile--featured,
@@ -4269,22 +4242,31 @@ body:has(.nav.nav--open) { overflow: hidden; }
     grid-column: span 1;
     grid-row: auto;
   }
-  /* Mobile cards size to their content. The photo holds a fixed strip at the
-     top; the text block flows beneath it, so the title can never ride up over
-     the tag pill the way it does when the body is pinned to a fixed height. */
+  /* Grow has five services: the odd fifth card runs full width so it never
+     sits alone in a half-row. */
+  .svc-panel[data-stage="grow"] .svc-tile:nth-child(5) { grid-column: 1 / -1; }
+
+  /* Below the bento breakpoint the card sizes to its content: the photo holds
+     a fixed strip at the top and the text block flows beneath it. Pinning the
+     body to a fixed-height card is what let the title ride up over the tag. */
+  .svc-bento .svc-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   .svc-tile__body {
     position: relative;
     inset: auto;
-    margin-top: 124px;
-    padding: 42px 20px 22px;
+    margin-top: 150px;
+    padding: 44px 22px 22px;
     background: linear-gradient(180deg,
       rgba(10, 21, 32, 0) 0%,
       rgba(10, 21, 32, 0.86) 30%,
       rgba(10, 21, 32, 0.97) 100%);
   }
   .svc-tile--featured .svc-tile__body {
-    margin-top: 138px;
-    padding: 46px 22px 24px;
+    margin-top: 170px;
+    padding: 48px 26px 26px;
     max-width: 100%;
   }
   /* No hover on touch: every card shows its full description up front. */
@@ -4292,6 +4274,23 @@ body:has(.nav.nav--open) { overflow: hidden; }
   .svc-tile--featured .svc-tile__desc {
     max-height: none;
     opacity: 1;
+  }
+  .svc-tile--featured .svc-tile__title { font-size: clamp(26px, 4vw, 36px); }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 640px) {
+  .svc-bento {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .svc-tile__body {
+    margin-top: 124px;
+    padding: 42px 20px 22px;
+  }
+  .svc-tile--featured .svc-tile__body {
+    margin-top: 138px;
+    padding: 46px 22px 24px;
   }
   .svc-tile__title { font-size: clamp(20px, 5.4vw, 23px); }
   .svc-tile--featured .svc-tile__title { font-size: clamp(23px, 6.2vw, 28px); }
