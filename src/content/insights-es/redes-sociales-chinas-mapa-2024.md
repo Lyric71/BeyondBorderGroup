@@ -24,17 +24,17 @@ El usuario chino de redes sociales es altamente implicado y dedica una media de 
 
 ### 1. WeChat
 
-WeChat es la reina indiscutible de las redes sociales chinas, con más de 1.000 millones de usuarios activos mensuales. Nació como app de mensajería y se ha convertido en una super app de alcance enorme. Ofrece servicios diversos: mensajería instantánea, videollamadas y llamadas de voz, redes sociales y pagos móviles a través de WeChat Pay. A esto se suman los mini-programas, pequeñas apps dentro del propio ecosistema, que permiten a las marcas construir experiencias a medida sin salir de WeChat. Una marca puede montar mini-programas de eCommerce, atención al cliente o incluso juegos interactivos para enganchar al usuario.
+WeChat es la reina indiscutible de las redes sociales chinas, con más de 1.000 millones de usuarios activos mensuales. Nació como app de mensajería y se ha convertido en una super app de alcance enorme. Ofrece servicios variados: mensajería instantánea, videollamadas y llamadas de voz, redes sociales y pagos móviles a través de WeChat Pay. A esto se suman los mini-programas, pequeñas apps dentro del propio ecosistema, que dejan a las marcas montar experiencias a medida sin salir de WeChat. Una marca puede levantar mini-programas de eCommerce, de atención al cliente o incluso de juegos interactivos para enganchar al usuario.
 
-La función Moments, parecida al timeline de Facebook, permite a la marca compartir actualizaciones, promociones y anuncios directamente con sus seguidores. La analítica de la plataforma también es amplísima: segmenta a grupos concretos por preferencias y comportamientos. Apalancar bien WeChat es un cambio de juego para el eCommerce en China, porque integra comunicación y transacción sin saltos.
+La función Moments, parecida al timeline de Facebook, deja a la marca compartir actualizaciones, promociones y anuncios directamente con sus seguidores. La analítica de la plataforma también es amplísima: segmenta a grupos concretos por preferencias y comportamientos. Tirar bien de WeChat es un cambio de juego para el eCommerce en China, porque junta comunicación y transacción sin saltos.
 
 ![Interfaz de WeChat Moments](/Images/insights/2024/07/wechat-moments-1024x623.jpg)
 
 ### 2. Weibo
 
-Weibo es una plataforma de microblogging con más de 550 millones de usuarios activos mensuales. Se la compara con Twitter por su apuesta por el contenido breve, pero soporta una experiencia multimedia más rica, con imágenes, vídeo y livestream. La plataforma destaca en noticias en tiempo real, conversación sobre celebridades y temas de tendencia. Para las marcas, ofrece opciones publicitarias variadas: posts promocionados, banners y anuncios en vídeo.
+Weibo es una plataforma de microblogging con más de 550 millones de usuarios activos mensuales. Se la compara con Twitter por su apuesta por el contenido breve, pero soporta una experiencia multimedia más rica, con imágenes, vídeo y livestream. La plataforma destaca en noticias en tiempo real, conversación sobre celebridades y temas de tendencia. Para las marcas, abre opciones publicitarias variadas: posts promocionados, banners y anuncios en vídeo.
 
-Las campañas con hashtag y los trending topics pueden disparar la visibilidad. Además, la "fan economy" de Weibo es fuerte. Hay muchos influencers (Key Opinion Leaders o KOL) capaces de amplificar el mensaje de una marca apalancando comunidades enormes. La colaboración con estos KOL se usa para lanzar producto, montar campañas y dialogar con el público de forma más auténtica. Weibo es imprescindible en cualquier estrategia integral de marca en China.
+Las campañas con hashtag y los trending topics pueden disparar la visibilidad. Además, la "fan economy" de Weibo es fuerte. Hay muchos influencers (Key Opinion Leaders o KOL) capaces de amplificar el mensaje de una marca tirando de comunidades enormes. La colaboración con estos KOL se usa para lanzar producto, montar campañas y dialogar con el público de forma más auténtica. Weibo es pieza imprescindible en cualquier estrategia integral de marca en China.
 
 ![Interfaz de Weibo](/Images/insights/2024/07/Weibo-new-1024x839.jpg)
 
@@ -42,7 +42,7 @@ Las campañas con hashtag y los trending topics pueden disparar la visibilidad. 
 
 TikTok, conocida en China como Douyin, es una plataforma de vídeo corto con 600 millones de usuarios activos mensuales. Es especialmente popular entre la generación Z y los millennials, atraídos por un contenido creativo y muy enganchable. Douyin pone a disposición herramientas de edición potentes y efectos que facilitan crear contenido viral. La marca puede apalancar la plataforma con vídeos entretenidos que conecten con el público más joven.
 
-La app soporta múltiples formatos publicitarios, incluidos anuncios in-feed, retos con hashtag y efectos de marca. El algoritmo de Douyin además acierta mucho al servir contenido relevante al usuario, lo que garantiza un alcance notable a vídeos bien hechos. Colaborar con creadores populares de Douyin también ayuda a la marca a ganar credibilidad y a llegar más lejos. El ascenso de Douyin subraya la importancia del marketing de rendimiento en China.
+La app soporta varios formatos publicitarios, anuncios in-feed, retos con hashtag y efectos de marca incluidos. El algoritmo de Douyin, además, acierta mucho al servir contenido relevante al usuario, lo que asegura un alcance notable a los vídeos bien hechos. Colaborar con creadores populares de Douyin también ayuda a la marca a ganar credibilidad y a llegar más lejos. El ascenso de Douyin subraya el peso del marketing de rendimiento en China.
 
 ![Plataforma Douyin](/Images/insights/2024/07/Douyin-1024x497.jpg)
 
@@ -50,15 +50,15 @@ La app soporta múltiples formatos publicitarios, incluidos anuncios in-feed, re
 
 Tencent QQ, con más de 800 millones de usuarios activos mensuales, es una plataforma versátil que aglutina mensajería, gaming, música, compras, microblogging e incluso citas. Su variedad funcional resulta atractiva para un público amplio, desde los jóvenes que disfrutan de sus capacidades multimedia hasta los usuarios mayores que valoran su sencillez.
 
-Las marcas pueden apalancar las distintas funcionalidades de QQ para conectar con el usuario por varios frentes. Pueden lanzar campañas interactivas, atender al cliente por mensajería y anunciarse en la potente red de gaming. La integración con otros servicios de Tencent, como WeChat y Tencent Video, abre además estrategias de marketing entre plataformas sin saltos.
+Las marcas pueden tirar de las distintas funcionalidades de QQ para conectar con el usuario por varios frentes. Pueden lanzar campañas interactivas, atender al cliente por mensajería y anunciarse en la potente red de gaming. La integración con otros servicios de Tencent, como WeChat y Tencent Video, abre además estrategias de marketing entre plataformas sin saltos.
 
 ![Tencent QQ](/Images/insights/2024/07/tencent-QQ.jpg)
 
 ### 5. Baidu Tieba
 
-Baidu Tieba es un foro por comunidades con más de 300 millones de usuarios activos mensuales. Permite crear y participar en debates por temáticas, parecido a Reddit. La marca puede apalancar Tieba para conectar con comunidades de nicho, recoger insights de consumidor y construir fidelidad. Al participar en debates relevantes y crear "Tieba" propios, la marca puede posicionarse como referencia y generar comunidad.
+Baidu Tieba es un foro por comunidades con más de 300 millones de usuarios activos mensuales. Permite crear y participar en debates por temáticas, parecido a Reddit. La marca puede tirar de Tieba para conectar con comunidades de nicho, recoger insights de consumidor y levantar fidelidad. Al participar en debates relevantes y crear "Tieba" propios, la marca puede colocarse como referencia y levantar comunidad.
 
-Baidu Tieba es muy útil para el content marketing, porque los posts y debates suelen rankear bien en los resultados de búsqueda de Baidu, lo que aporta visibilidad extra. La marca también puede usar la plataforma para escuchar opinión pública y recoger feedback sobre productos o servicios.
+Baidu Tieba es muy útil para el content marketing, porque los posts y debates suelen rankear bien en los resultados de búsqueda de Baidu, lo que da visibilidad extra. La marca también puede usar la plataforma para escuchar opinión pública y recoger feedback sobre productos o servicios.
 
 ![Página de inicio de Baidu Tieba](/Images/insights/2024/07/baidu-tieba-home.jpg)
 

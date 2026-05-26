@@ -54,7 +54,7 @@ Aunque tiene origen occidental, San Valentín cala con fuerza entre los consumid
 
 * Poner el foco en productos internacionales con tirón en el eCommerce chino: alta bombonería, perfumería, joyería.
 * Diseñar campañas interactivas pensadas para millennials y Generación Z.
-* Promover regalos premium y personalizados a través de eventos de livestream en Douyin.
+* Empujar regalos premium y personalizados con eventos de livestream en Douyin.
 * Activar flash sales para empujar la compra de última hora.
 
 #### Día Internacional de la Mujer (8 de marzo de 2025)
@@ -67,10 +67,10 @@ Rebautizado en China como «Día de la Diosa» o «Día de la Reina», se ha con
 
 **Recomendaciones de marketing:**
 
-* Coordinarse con una agencia de marketing digital en China para construir campañas en torno al empoderamiento y al cuidado personal.
+* Coordinarse con una agencia de marketing digital en China para montar campañas alrededor del empoderamiento y del cuidado personal.
 * Empujar belleza y bienestar a través de plataformas pensadas para el Cross-Border eCommerce en China.
-* Apoyarse en KOL chinos para ganar credibilidad y prescripción.
-* Ofrecer descuentos exclusivos y programas de fidelización dirigidos a la consumidora.
+* Tirar de KOL chinos para ganar credibilidad y prescripción.
+* Ofrecer descuentos exclusivos y programas de fidelización apuntados a la consumidora.
 
 ### Segundo trimestre: de abril a junio
 

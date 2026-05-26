@@ -11,7 +11,7 @@ heroImageAlt: "Coverbild zum PIPL-Compliance-Artikel"
 keyTakeaways:
   - "PIPL ist kein Papier-Risiko mehr. Das CAC-Verfahren gegen Dior markiert den Beginn echter Bussgelder für grenzüberschreitende Datenverarbeitung."
   - "Einwilligungsflüsse, die nach GDPR-Logik durchgehen, decken die Regel zur gesonderten Einwilligung bei sensiblen Daten nicht ab."
-  - "Die meisten ausländischen Marken sitzen auf Marketing-Stacks (Salesforce, HubSpot, Adobe), die im Ausland gehostet sind und durch die chinesische Konsumentendaten laufen. Genau dort liegt die Exposition."
+  - "Die meisten ausländischen Marken sitzen auf Marketing-Stacks (Salesforce, HubSpot, Adobe), die im Ausland gehostet sind und durch die chinesische Käuferdaten laufen. Genau dort liegt die Exposition."
   - "Ein China-First-Stack (regionale Instanz, lokale Datenresidenz, gesonderte Einwilligung) ist heute Pflichtniveau für jede Marke mit Tmall- oder WeChat-Flagship."
 ---
 
@@ -76,6 +76,6 @@ Ein paar konkrete Schritte:
 
 ## Compliance als Vorteil
 
-Diors Fall ist Warnschuss und Chance. Marken, die PIPL als Last-Minute-Rechtsprüfung behandeln, bleiben im Feuerwehrmodus und stopfen Lücken, wenn etwas leckt. Marken, die für klare Datenflüsse, transparente Einwilligung und lokale Kontrolle gestalten, werden Vertrauen bei chinesischen Verbrauchern und Aufsicht eher gewinnen.
+Diors Fall ist Warnschuss und Chance. Marken, die PIPL als Last-Minute-Rechtsprüfung behandeln, bleiben im Feuerwehrmodus und stopfen Lücken, wenn etwas leckt. Marken, die für klare Datenflüsse, transparente Einwilligung und lokale Kontrolle gestalten, werden eher Vertrauen bei chinesischen Käufern und Aufsicht gewinnen.
 
 Wer in China langfristig baut, sollte PIPL nicht als nächste Hürde sehen. Es ist Teil der Marktrealität und eine Chance, ein saubereres, widerstandsfähigeres China-Geschäft aufzubauen.

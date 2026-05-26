@@ -29,11 +29,11 @@ Fuente: China Briefing
 
 ## La sostenibilidad como eje central
 
-La sostenibilidad se ha convertido en un foco principal para muchos diseñadores chinos independientes. Marcas como Susan Fang han avanzado de forma significativa en moda ecoconsciente, con técnicas innovadoras y materiales sostenibles. El método de tejido al aire de Fang y sus colaboraciones con marcas como Zara o Swarovski muestran cómo la sostenibilidad puede integrarse en el mainstream. La tendencia también se refleja en el social commerce en China, donde el consumidor se inclina cada vez más por productos eco-friendly.
+La sostenibilidad se ha convertido en un foco central para muchos diseñadores chinos independientes. Marcas como Susan Fang han dado pasos importantes en moda ecoconsciente, con técnicas innovadoras y materiales sostenibles. El método de tejido al aire de Fang y sus colaboraciones con marcas como Zara o Swarovski enseñan cómo la sostenibilidad puede colarse en el mainstream. La tendencia también se nota en el social commerce en China, donde el consumidor se inclina cada vez más por productos eco-friendly.
 
 ## Innovación digital y metaverso
 
-El ecosistema digital chino está muy desarrollado, lo que abre a los diseñadores múltiples vías de innovación. Marcas como 8ON8 aprovechan la integración digital, combinando experiencias físicas y digitales para producir desfiles inmersivos. El uso del metaverso y los NFT ha abierto nuevas vías de engagement de [marca](/es/entrar-en-china/marca-y-localizacion) e interacción con el consumidor. Plataformas como Weibo y Xiaohongshu son clave para promover estas innovaciones digitales.
+El ecosistema digital chino está muy desarrollado, lo que abre a los diseñadores múltiples vías de innovación. Marcas como 8ON8 tiran de la integración digital, mezclando experiencias físicas y digitales para montar desfiles inmersivos. El uso del metaverso y los NFT ha abierto nuevas vías de engagement de [marca](/es/entrar-en-china/marca-y-localizacion) e interacción con el consumidor. Plataformas como Weibo y Xiaohongshu son clave para mover estas innovaciones digitales.
 
 ![](/Images/insights/2024/06/dg.png)
 
@@ -41,7 +41,7 @@ Fuente: Digital Crew
 
 ## Colaboraciones y alianzas
 
-Las colaboraciones son una pieza importante en la estrategia de crecimiento de los diseñadores independientes. Al asociarse con empresas locales y globales, los diseñadores ganan visibilidad, mejoran sus cadenas de suministro y llegan a nuevas audiencias. Estas alianzas han evolucionado más allá del componente económico hasta convertirse en relaciones mutuamente provechosas que aportan valor de marca. El papel de los influencers chinos y los KOL es vital en estas colaboraciones, impulsando engagement y fidelidad.
+Las colaboraciones son una pieza importante en la estrategia de crecimiento de los diseñadores independientes. Al aliarse con empresas locales y globales, los diseñadores ganan visibilidad, mejoran sus cadenas de suministro y llegan a nuevas audiencias. Estas alianzas han ido más allá del componente económico hasta convertirse en relaciones provechosas para los dos lados, que aportan valor de marca. El papel de los influencers chinos y los KOL es vital en estas colaboraciones, tirando del engagement y de la fidelidad.
 
 ## Llegar al público joven
 

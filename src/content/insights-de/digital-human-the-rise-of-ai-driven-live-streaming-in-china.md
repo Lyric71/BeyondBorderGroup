@@ -16,7 +16,7 @@ Am 16. April 2024 stellte [JD](/de/in-china-wachsen/cross-border-ecommerce).com 
 
 ## Lebensnahe Interaktion hält Zuschauer länger
 
-Hinter dem digitalen Abbild steht JDs eigene KI-Technologie ChatRhino. Sie kopierte nicht nur Lius Erscheinung, sondern auch seine Gestik und Sprache. Der Auftritt wirkte bemerkenswert lebensnah. Die Fähigkeit der KI, menschliche Ausdrucksweise nachzubilden und das Publikum einzubinden, hob die durchschnittliche Verweildauer auf das 5,6-Fache einer typischen Session. Das spricht für hohe Retention und wachsendes Interesse an KI-geführten Inhalten.
+Hinter dem digitalen Abbild steht JDs eigene KI-Technologie ChatRhino. Sie hat nicht nur Lius Erscheinung kopiert, sondern auch seine Gestik und Sprache. Der Auftritt wirkte bemerkenswert lebensnah. Die Fähigkeit der KI, menschliche Ausdrucksweise nachzubilden und das Publikum einzubinden, hob die durchschnittliche Verweildauer auf das 5,6-Fache einer typischen Session. Das spricht für hohe Retention und wachsendes Interesse an KI-geführten Inhalten.
 
 ## Bessere eCommerce-Erfahrung durch KI
 
@@ -24,6 +24,6 @@ Wenn JD.com KI wie ChatRhino einsetzt, markiert das eine Verschiebung im eCommer
 
 ## Ein neuer Standard im Digital-Marketing
 
-Die Entwicklung markiert einen Trend, der die globalen eCommerce-Strategien neu zeichnen könnte. Mit der Reifung der KI-Technologie wächst auch ihre Integration in Online-Plattformen. Das Einkaufserlebnis profitiert, das Digital-Marketing erhält neue Spielräume. JD.coms Schritt dürfte andere Unternehmen weltweit anregen, die Möglichkeiten zu prüfen, mit KI Kunden zu gewinnen und zu halten.
+Die Entwicklung markiert einen Trend, der die globalen eCommerce-Strategien neu zeichnen könnte. Mit der Reife der KI-Technologie wächst auch ihre Integration in Online-Plattformen. Das Einkaufserlebnis profitiert, das Digital-Marketing bekommt neue Spielräume. JD.coms Schritt dürfte andere Unternehmen weltweit anregen, die Möglichkeiten zu prüfen, mit KI Kunden zu gewinnen und zu halten.
 
 ![KI-Hosts für den Livestream-eCommerce](/Images/insights/2024/04/AI-hosts-for-livestream-ecommerce.webp)

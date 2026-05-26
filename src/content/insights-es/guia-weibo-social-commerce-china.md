@@ -25,7 +25,7 @@ Weibo es una de las plataformas de [redes sociales](/es/crecer-en-china/comercio
 
 ## Cómo abrir cuenta en Weibo
 
-Abrir una cuenta de Weibo implica elegir el tipo de perfil adecuado y pasar por el proceso de verificación, sobre todo si se hace como empresa. La hoja de ruta es la siguiente:
+Abrir una cuenta de Weibo pasa por escoger el tipo de perfil adecuado y pasar por el proceso de verificación, sobre todo si se hace como empresa. La hoja de ruta es la siguiente:
 
 ### Elegir el tipo de cuenta
 
@@ -75,7 +75,7 @@ Los tiempos dependen del tipo de cuenta:
 
 ### Personalizar el perfil
 
-Cuando la cuenta queda verificada, conviene completar el perfil para que tenga una imagen profesional:
+Cuando la cuenta queda verificada, conviene completar el perfil para que tenga imagen profesional:
 
 - Subir una foto de perfil (suele ser el logotipo).
 - Añadir una imagen de cabecera que refleje la marca.
@@ -83,7 +83,7 @@ Cuando la cuenta queda verificada, conviene completar el perfil para que tenga u
 
 ### Empezar a usar Weibo
 
-Una vez configurada, ya se puede publicar contenido, interactuar con usuarios y aprovechar las herramientas de la plataforma para marketing y analítica.
+Una vez configurada, ya se puede publicar contenido, interactuar con usuarios y tirar de las herramientas de la plataforma para marketing y analítica.
 
 ## Diseñar una estrategia de contenido eficaz
 

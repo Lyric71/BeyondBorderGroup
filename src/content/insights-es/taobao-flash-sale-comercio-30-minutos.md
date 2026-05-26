@@ -36,7 +36,7 @@ Los antiguos "caballeros azules" de Ele.me eran el símbolo de una marca de repa
 
 Con Taobao Flash Sale, los riders pasan a formar parte de una red de fulfillment más amplia. El cambio de color es simbólico, pero el movimiento estratégico es de pura ingeniería: la entrega deja de funcionar en un universo paralelo y se convierte en infraestructura compartida al servicio de las ambiciones de Taobao en retail instantáneo.
 
-Alibaba lleva años trabajando en esta dirección y en junio de 2025 fusionó Ele.me y Fliggy con su división principal de eCommerce en China. Operaciones aparte, estrategia y datos bajo un mismo paraguas.
+Alibaba lleva años yendo en esta dirección y en junio de 2025 fusionó Ele.me y Fliggy con su división principal de eCommerce en China. Operaciones aparte, estrategia y datos bajo un mismo paraguas.
 
 El cambio de marca es, sencillamente, el momento en que el organigrama se hace visible dentro de la app.
 
@@ -46,7 +46,7 @@ El cambio de marca es, sencillamente, el momento en que el organigrama se hace v
 
 El gran cambio no está en la marca. Está en la expectativa del consumidor.
 
-Taobao empuja hacia una experiencia de compra más rápida y más física, donde una parte relevante de los pedidos diarios se entregan entre 30 y 60 minutos. Compite en el mismo terreno que Meituan y los esfuerzos de quick commerce de JD.
+Taobao empuja hacia una experiencia de compra más rápida y más física, donde una parte relevante de los pedidos diarios se entrega entre 30 y 60 minutos. Pelea en el mismo terreno que Meituan y los esfuerzos de quick commerce de JD.
 
 Así se ve en la China de hoy la famosa "integración profunda online y offline".
 

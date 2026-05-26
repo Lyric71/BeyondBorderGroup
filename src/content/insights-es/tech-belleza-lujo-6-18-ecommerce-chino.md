@@ -24,13 +24,13 @@ El atractivo de estas categorías se explica por descuentos agresivos y marketin
 
 ## La belleza brilla
 
-La cosmética fue otra protagonista del 618. En los primeros 30 minutos, marcas como Proya, Lancôme, L'Oréal y Estée Lauder superaron los 100 millones de RMB de GMV cada una. La tendencia confirma una demanda muy fuerte por la cosmética premium en China, alimentada por un foco creciente en cuidado personal y rutina de belleza.
+La cosmética fue otra protagonista del 618. En los primeros 30 minutos, marcas como Proya, Lancôme, L'Oréal y Estée Lauder cruzaron los 100 millones de RMB de GMV cada una. La tendencia confirma una demanda muy fuerte por la cosmética premium en China, empujada por un foco creciente en cuidado personal y rutina de belleza.
 
-Las [campañas](/es/crecer-en-china/campanas) de marketing en estas categorías se apoyan a fondo en las redes sociales chinas y construyen una experiencia de compra cercana al consumidor joven y digital. Los descuentos y las ofertas especiales del festival empujaron aún más la compra y elevaron las cifras finales.
+Las [campañas](/es/crecer-en-china/campanas) de marketing en estas categorías se apoyan a fondo en las redes sociales chinas y arman una experiencia de compra cercana al consumidor joven y digital. Los descuentos y las ofertas especiales del festival empujaron aún más la compra y subieron las cifras finales.
 
 ## El lujo gana presencia
 
-El lujo también firmó un 618 sobresaliente. Participaron más de 200 marcas de los cinco grandes conglomerados mundiales, y nombres como Miu Miu y Valentino superaron en la primera hora las ventas totales del año anterior para ese mismo día. Refleja una demanda sólida del consumidor chino, cada vez más dispuesto a invertir en producto de gama alta.
+El lujo también firmó un 618 sobresaliente. Participaron más de 200 marcas de los cinco grandes conglomerados mundiales, y nombres como Miu Miu y Valentino pasaron en la primera hora las ventas totales del año anterior para ese mismo día. Refleja una demanda sólida del consumidor chino, cada vez más dispuesto a meter dinero en producto de gama alta.
 
 El éxito del sector se explica por campañas muy enfocadas en exclusividad y prestigio. A eso se sumaron descuentos puntuales y ofertas con tiempo limitado, que crearon una sensación de urgencia y empujaron decisiones rápidas de compra.
 
@@ -38,9 +38,9 @@ El éxito del sector se explica por campañas muy enfocadas en exclusividad y pr
 
 ## La dinámica de compra está cambiando
 
-El 618 de este año dejó claro que la mecánica de compra se está transformando. La decisión de Alibaba de prescindir del periodo de preventa y arrancar con dos ventanas de venta del 20 de mayo al 20 de junio cambió la conducta del consumidor. Las plataformas reactivaron además espacios de venta in-app muy populares, con producto al 50 %, junto a descuentos y promociones clásicas como 50 RMB de rebaja por cada 300 RMB gastados.
+El 618 de este año dejó claro que la mecánica de compra se está dando la vuelta. La decisión de Alibaba de saltarse el periodo de preventa y arrancar con dos ventanas de venta del 20 de mayo al 20 de junio cambió la conducta del consumidor. Las plataformas reactivaron además espacios de venta in-app muy populares, con producto al 50 %, junto a descuentos y promociones clásicas como 50 RMB de rebaja por cada 300 RMB gastados.
 
-Los cambios crearon una experiencia más inmediata y dinámica, y empujaron al consumidor a interactuar más con las plataformas. El aumento de visitas de los miembros del programa de fidelización 88VIP de Tmall (un 40 % más interanual el primer día) ilustra el giro. Además, el número de miembros que hicieron pedidos creció más del 50 %, y el ticket medio subió más del 30 %.
+Los cambios crearon una experiencia más inmediata y dinámica, y empujaron al consumidor a meterse más con las plataformas. La subida de visitas de los miembros del programa de fidelización 88VIP de Tmall (un 40 % más interanual el primer día) enseña el giro. Además, el número de miembros que hicieron pedidos creció más del 50 %, y el ticket medio subió más del 30 %.
 
 ## Las pymes también ganan
 

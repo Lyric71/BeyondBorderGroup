@@ -26,7 +26,7 @@ El vídeo corto entretiene y, al mismo tiempo, influye en la decisión de compra
 
 ### Douyin (la versión china de TikTok)
 
-Douyin es la versión china de TikTok y una de las plataformas líderes del vídeo corto. Propiedad de Bytedance, atrae a 731 millones de usuarios activos con contenidos dinámicos y creativos. Su algoritmo de IA, muy afinado, ofrece de forma continua piezas alineadas con los intereses del usuario, lo que la convierte en una plataforma ideal para las campañas de cualquier agencia publicitaria en China.
+Douyin es la versión china de TikTok y una de las plataformas líderes del vídeo corto. Propiedad de Bytedance, atrae a 731 millones de usuarios activos con contenidos dinámicos y creativos. Su algoritmo de IA, muy afinado, sirve sin parar piezas alineadas con los intereses del usuario, lo que la deja como plataforma ideal para las campañas de cualquier agencia publicitaria en China.
 
 ![Interfaz de Douyin](/Images/insights/2025/02/Douyin-1024x497.jpg)
 
@@ -41,7 +41,7 @@ Douyin es la versión china de TikTok y una de las plataformas líderes del víd
 
 #### Por qué las marcas usan Douyin
 
-Douyin destaca como plataforma de marketing para marcas que apuntan al consumidor urbano joven, atraído por contenido visualmente potente y con estilo. Muchas empresas trabajan con una agencia de marketing en China para crear contenidos sólidos y orquestar colaboraciones con [influencers](/es/crecer-en-china/influencia-y-kol). La plataforma deja que el usuario pase del entretenimiento a la compra sin sobresaltos.
+Douyin destaca como plataforma de marketing para marcas que apuntan al consumidor urbano joven, enganchado al contenido visualmente potente y con estilo. Muchas empresas trabajan con una agencia de marketing en China para crear contenidos sólidos y orquestar colaboraciones con [influencers](/es/crecer-en-china/influencia-y-kol). La plataforma deja al usuario pasar del entretenimiento a la compra sin sobresaltos.
 
 ### Kuaishou
 
@@ -56,7 +56,7 @@ Kuaishou es otra plataforma de referencia, con 529 millones de usuarios activos.
 
 #### Por qué las marcas usan Kuaishou
 
-Kuaishou encaja con las marcas que quieren construir confianza a largo plazo. Su foco en interacciones auténticas la convierte en una opción preferida para empresas que trabajan con una agencia de branding en China para reforzar su presencia en ciudades de menor categoría. El live commerce en Kuaishou también arroja tasas de conversión más altas, porque el consumidor confía mucho en las recomendaciones de sus creadores favoritos.
+Kuaishou encaja con las marcas que quieren levantar confianza a largo plazo. Su foco en interacciones auténticas la deja como opción preferida para empresas que trabajan con una agencia de branding en China para reforzar su presencia en ciudades de menor categoría. El live commerce en Kuaishou también arroja tasas de conversión más altas, porque el consumidor se fía mucho de las recomendaciones de sus creadores favoritos.
 
 ## Estrategias clave en las plataformas chinas de vídeo corto
 

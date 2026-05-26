@@ -19,7 +19,7 @@ Hier die zentralen Aspekte und ein Leitfaden, wie Sie den richtigen Influencer f
 
 ## Der Influencer-Vorteil
 
-Influencer sind mehr als Botschafter. Sie sind vertrauenswürdige Stimmen im digitalen Rauschen. Authentizität und Nahbarkeit machen sie zu einem wirksamen Werbemittel. Studien zeigen, dass Verbraucher Empfehlungen von Influencern, denen sie folgen, eher trauen als klassischer Werbung. Dieses Vertrauen kann die Wirkung Ihrer Marketing-Arbeit deutlich heben.
+Influencer sind mehr als Botschafter. Sie sind vertrauenswürdige Stimmen im digitalen Rauschen. Authentizität und Nahbarkeit machen sie zu einem wirksamen Werbemittel. Studien zeigen: Käufer vertrauen Empfehlungen von Influencern, denen sie folgen, eher als klassischer Werbung. Dieses Vertrauen kann die Wirkung Ihrer Marketing-Arbeit deutlich heben.
 
 ## Die Vertrauensfrage
 

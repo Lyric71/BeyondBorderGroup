@@ -25,15 +25,15 @@ La sociedad china ha desplazado su relación con el lujo hacia la sutileza, la s
 
 **Influencia digital**
 
-Las plataformas digitales y las redes sociales han transformado la decisión de compra. El viajero chino se apoya en reseñas, recomendaciones y perfiles de influencia para elegir destino. El lujo experiencial, asociado al crecimiento personal y a la conexión auténtica, gana terreno año tras año. La integración del social commerce y otras herramientas digitales también facilita compartir y descubrir nuevas experiencias.
+Las plataformas digitales y las redes sociales han dado la vuelta a la decisión de compra. El viajero chino se apoya en reseñas, recomendaciones y perfiles de influencia para escoger destino. El lujo experiencial, unido al crecimiento personal y a la conexión auténtica, gana terreno año tras año. La integración del social commerce y otras herramientas digitales también facilita compartir y descubrir nuevas experiencias.
 
 **Avances tecnológicos**
 
-Los métodos de pago digital, desde Tap to Pay hasta los monederos móviles, son ya estándar entre los viajeros de alta gama. Pesan la comodidad y la seguridad. La pandemia aceleró la adopción del pago sin contacto, y esa preferencia se ha asentado.
+Los métodos de pago digital, de Tap to Pay a los monederos móviles, son ya estándar entre los viajeros de alta gama. Pesan la comodidad y la seguridad. La pandemia aceleró la adopción del pago sin contacto, y esa preferencia se ha quedado.
 
 ## Oportunidades a futuro
 
-El mercado chino del viaje de lujo abre un abanico amplio para hoteles, operadores y destinos. La vía pasa por un enfoque integral: sostenibilidad, bienestar y enriquecimiento experiencial. Diseñar propuestas alineadas con los valores y aspiraciones del viajero chino genera vínculos más profundos y refuerza la lealtad a la [marca](/es/entrar-en-china/marca-y-localizacion).
+El mercado chino del viaje de lujo abre un abanico amplio para hoteles, operadores y destinos. La vía pasa por un planteamiento integral: sostenibilidad, bienestar y enriquecimiento experiencial. Diseñar propuestas alineadas con los valores y aspiraciones del viajero chino teje vínculos más profundos y refuerza la lealtad a la [marca](/es/entrar-en-china/marca-y-localizacion).
 
 **Leer las motivaciones del consumidor**
 
@@ -51,7 +51,7 @@ El turismo de bienestar gana cada año más espacio en este segmento. Retiros, s
 
 **Experiencia con peso**
 
-El enriquecimiento a través de la experiencia es uno de los grandes motores del lujo en China. El viajero busca propuestas únicas e inmersivas: intercambio cultural, estímulo intelectual, descanso espiritual. Quien sepa ofrecer experiencias personalizadas y con significado destacará en un mercado cada vez más competitivo.
+El enriquecimiento a través de la experiencia es uno de los grandes motores del lujo en China. El viajero busca propuestas únicas e inmersivas: intercambio cultural, estímulo intelectual, descanso espiritual. Quien sepa ofrecer experiencias hechas a medida y con peso destacará en un mercado cada vez más competitivo.
 
 **Integración tecnológica**
 

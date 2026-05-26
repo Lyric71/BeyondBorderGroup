@@ -24,11 +24,11 @@ Aplicaciones clave en marketing:
 
 Fuente: Alibaba Group
 
-Estos avances permiten a las agencias de medios en China llevar a las marcas a un marketing más centrado en el consumidor, marcando estándares globales.
+Estos avances permiten a las agencias de medios en China llevar a las marcas hacia un marketing más centrado en el consumidor, marcando estándares globales.
 
 ## IA en eCommerce
 
-El [eCommerce](/es/crecer-en-china/ecommerce-transfronterizo) chino se ha transformado con la IA, generando experiencias de usuario difíciles de igualar. Las agencias de eCommerce en el país aprovechan machine learning y procesamiento de lenguaje natural para optimizar operaciones y mejorar la satisfacción del cliente.
+El [eCommerce](/es/crecer-en-china/ecommerce-transfronterizo) chino se ha transformado con la IA y ofrece experiencias de usuario difíciles de igualar. Las agencias de eCommerce en el país tiran de machine learning y procesamiento de lenguaje natural para afinar operaciones y subir la satisfacción del cliente.
 
 ### Avances clave en eCommerce
 
@@ -40,7 +40,7 @@ A medida que la IA avanza, el cross-border eCommerce en China gana eficiencia y 
 
 ## El impacto de la IA en el comercio social
 
-El comercio social vive un boom en China, y plataformas como WeChat y Douyin integran IA para analizar comportamiento. Las herramientas basadas en IA permiten a las agencias creativas del país construir campañas hipersegmentadas que conectan con audiencias muy concretas.
+El comercio social vive un boom en China, y plataformas como WeChat y Douyin integran IA para leer comportamiento. Las herramientas basadas en IA permiten a las agencias creativas del país armar campañas hipersegmentadas que conectan con audiencias muy concretas.
 
 ![](/Images/insights/2025/01/livestream-Douyin_2-300x198.png)
 

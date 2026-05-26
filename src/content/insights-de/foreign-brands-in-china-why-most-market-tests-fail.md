@@ -23,7 +23,7 @@ Nach 20 Jahren in China sehe ich immer wieder dieselben teuren Fehler. Die Einga
 
 ### Cross-Border wirkt günstig. Bis Sie rechnen.
 
-Der typische Einstieg nach China beginnt heute mit [Cross-Border](/de/nach-china/cross-border-aufbau) eCommerce, kurz CBEC. Keine Firmengründung, keine lokale Gesellschaft, kein Lager, kein eigenes Team vor Ort. Plattformen wie Tmall Global, JD Worldwide, Douyin und Xiaohongshu bieten CBEC-Programme, mit denen [ausländische Marken](/de/nach-china/markteintrittsberatung) direkt aus dem Ausland an chinesische Verbraucher verkaufen.
+Der typische Einstieg nach China beginnt heute mit [Cross-Border](/de/nach-china/cross-border-aufbau) eCommerce, kurz CBEC. Keine Firmengründung, keine lokale Gesellschaft, kein Lager, kein eigenes Team vor Ort. Plattformen wie Tmall Global, JD Worldwide, Douyin und Xiaohongshu bieten CBEC-Programme, mit denen [ausländische Marken](/de/nach-china/markteintrittsberatung) direkt aus dem Ausland an chinesische Käufer verkaufen.
 
 Auf dem Papier schnell und bezahlbar. In der Praxis weder noch.
 
@@ -35,7 +35,7 @@ Ein guter TP verlangt einen monatlichen Retainer und eine Verkaufsprovision. Rec
 
 ### Die Premium-Preisfalle
 
-Hier stossen viele ausländische Marken an eine Wand, die sie nicht erwartet haben. Chinesische Verbraucher zahlen für importierte Produkte immer weniger. Lokale Marken haben in den meisten Kategorien zur Qualität aufgeschlossen. Die alte Gleichung „ausländisch = premium" verblasst.
+Hier stossen viele ausländische Marken an eine Wand, die sie nicht erwartet haben. Chinesische Käufer zahlen für importierte Produkte immer weniger. Lokale Marken haben in den meisten Kategorien zur Qualität aufgeschlossen. Die alte Gleichung „ausländisch = premium" verblasst.
 
 > Lokale Marken halten heute 76 Prozent des chinesischen FMCG-Marktes. Die Preisdeflation drückt die Branche im vierten Jahr in Folge.
 
@@ -51,11 +51,11 @@ Heute empfehle ich Marken, mit einer fokussierten KOL-Kampagne auf Douyin zu tes
 
 ### Die 1,4-Milliarden-Käufer-Fantasie
 
-Diese Folie kommt in fast jedem Briefing. Eine Führungskraft steht auf und sagt: „China hat 1,4 Milliarden Verbraucher. Selbst wenn nur ein winziger Bruchteil kauft, sind wir profitabel."
+Diese Folie kommt in fast jedem Briefing. Eine Führungskraft steht auf und sagt: „China hat 1,4 Milliarden Käufer. Selbst wenn nur ein winziger Bruchteil kauft, sind wir profitabel."
 
 Ich habe diesen Pitch Dutzende Male gehört. Ich habe ihn nie funktionieren sehen.
 
-Sie müssen wissen, gegen wen Sie antreten. Was chinesische Verbraucher in Ihrer Kategorie kaufen, zu welchem Preis, auf welchen Plattformen und warum. Sie brauchen den richtigen Produktmix, den richtigen Preis und eine Marke, die zu diesem Markt passt. Wer ohne diese Hausaufgabe einsteigt, hat das Scheitern nicht als Risiko, sondern als Gewissheit.
+Sie müssen wissen, gegen wen Sie antreten. Was chinesische Käufer in Ihrer Kategorie kaufen, zu welchem Preis, auf welchen Plattformen und warum. Sie brauchen den richtigen Produktmix, den richtigen Preis und eine Marke, die zu diesem Markt passt. Wer ohne diese Hausaufgabe einsteigt, hat das Scheitern nicht als Risiko, sondern als Gewissheit.
 
 > Marktforschung in China hat früher sechsstellige Beträge und Monate gekostet. Mit KI-Tools laufen heute Wettbewerbsanalysen für unsere Kunden in Wochen, zu einem Bruchteil des Preises. Es gibt keine Entschuldigung mehr, das auszulassen.
 

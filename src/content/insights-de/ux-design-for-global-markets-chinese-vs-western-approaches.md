@@ -21,7 +21,7 @@ China und der Westen haben aufgrund ihrer sozio-politischen und technologischen 
 
 #### Chinas eigener Pfad
 
-Der Grosse Firewall und strenge Internet-Regeln haben Chinas Digital-Welt abgeschirmt. Lokale Tech-Riesen wie Tencent, Alibaba und Baidu dominieren. Super-Apps wie WeChat und Plattformen, die im chinesischen eCommerce integriert sind, zeigen diesen Ansatz.
+Die Great Firewall und strenge Internet-Regeln haben Chinas Digital-Welt abgeschirmt. Lokale Tech-Riesen wie Tencent, Alibaba und Baidu dominieren. Super-Apps wie WeChat und Plattformen, die im chinesischen eCommerce integriert sind, zeigen diesen Ansatz.
 
 #### Westens fragmentierter Weg
 

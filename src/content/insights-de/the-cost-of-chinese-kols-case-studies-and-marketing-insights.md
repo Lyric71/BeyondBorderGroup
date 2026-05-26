@@ -16,7 +16,7 @@ KOL und Influencer dominieren Chinas Digital-[Marketing](/de/in-china-wachsen/ka
 
 ## Die Rolle der KOL
 
-KOL sind einflussreiche Persönlichkeiten in Nischen wie Beauty, Tech und Mode. Sie liefern authentische Empfehlungen, die bei chinesischen Verbrauchern auf Vertrauen und Nähe treffen. Eine Branding- oder Kommunikationsagentur in China kann mit KOL die Brücke zwischen klassischer Werbung und modernen Erwartungen schlagen.
+KOL sind einflussreiche Persönlichkeiten in Nischen wie Beauty, Tech und Mode. Sie liefern authentische Empfehlungen, die bei chinesischen Käufern auf Vertrauen und Nähe treffen. Eine Branding- oder Kommunikationsagentur in China kann mit KOL die Brücke zwischen klassischer Werbung und modernen Erwartungen schlagen.
 
 ## Kostenfaktoren
 

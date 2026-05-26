@@ -4,7 +4,7 @@ description: "Chinesische Luxusreisende sind eine wachsende Gruppe, die den glob
 pubDate: "2024-07-08"
 author: "Beyond Border Group"
 category: "Market Strategy"
-tags: ["Chinesische Luxusreisende", "Reise-Vorlieben", "Wohlhabende Verbraucher", "Erlebnis-Reise", "Kulturelle Sensibilität"]
+tags: ["Chinesische Luxusreisende", "Reise-Vorlieben", "Wohlhabende Käufer", "Erlebnis-Reise", "Kulturelle Sensibilität"]
 heroImage: "/Images/insights/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers.jpg"
 heroImageAlt: "Chinesischer Luxusreisender"
 ---

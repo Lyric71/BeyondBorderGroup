@@ -10,11 +10,11 @@ heroImage: "/Images/insights/taobao-transforming-shopping-and-merchant-support-w
 heroImageAlt: "Alibaba kündigt die Integration von Taobao und Tmall an"
 ---
 
-## Das Verbraucher-Erlebnis verändert sich
+## Das Käufer-Erlebnis verändert sich
 
 ### KI-getriebene Personalisierung
 
-[Taobao](/de/in-china-wachsen/cross-border-ecommerce) und Tmall nutzen seit Jahren Verbraucherdaten und Algorithmen für personalisierte Oberflächen und Empfehlungen. Mit der heutigen KI hat dieser Ansatz im chinesischen eCommerce ein neues Niveau erreicht.
+[Taobao](/de/in-china-wachsen/cross-border-ecommerce) und Tmall nutzen seit Jahren Käuferdaten und Algorithmen für personalisierte Oberflächen und Empfehlungen. Mit der heutigen KI hat dieser Ansatz im chinesischen eCommerce ein neues Niveau erreicht.
 
 ### Taobao Wenwen: ein KI-gestützter Einkaufsassistent
 
@@ -58,15 +58,15 @@ Eine effiziente Supply Chain trägt das Geschäft. KI-Werkzeuge bringen End-to-E
 
 ### Bessere Betrugserkennung
 
-Betrug ist eine Belastung im eCommerce. KI hilft, das Risiko zu senken. Maschinelles Lernen erkennt Anomalien in Transaktionsmustern und markiert verdächtige Vorgänge in Echtzeit. Händler reagieren sofort und vermeiden Verluste. Mit besserer Erkennung schützen Anbieter ihr Geschäft und das Vertrauen der Verbraucher.
+Betrug ist eine Belastung im eCommerce. KI hilft, das Risiko zu senken. Maschinelles Lernen erkennt Anomalien in Transaktionsmustern und markiert verdächtige Vorgänge in Echtzeit. Händler reagieren sofort und vermeiden Verluste. Mit besserer Erkennung schützen Anbieter ihr Geschäft und das Vertrauen der Käufer.
 
-### Personalisierte Konsumenten-Bindung
+### Personalisierte Käufer-Bindung
 
-KI lässt Händler Verbraucher persönlicher ansprechen. Aus Verhalten und Vorlieben entstehen massgeschneiderte Kampagnen und Empfehlungen. Personalisierung hebt das Erlebnis und baut stärkere Bindungen, was Zufriedenheit, Loyalität und Wiederkauf im chinesischen Social Commerce stärkt.
+KI lässt Händler Käufer persönlicher ansprechen. Aus Verhalten und Vorlieben entstehen massgeschneiderte Kampagnen und Empfehlungen. Personalisierung hebt das Erlebnis und baut stärkere Bindungen, was Zufriedenheit, Loyalität und Wiederkauf im chinesischen Social Commerce stärkt.
 
 ## Ausblick: KI im eCommerce
 
-Mit der Reifung der KI wachsen die Anwendungen. Taobao und Tmall arbeiten daran, an der Spitze dieser Entwicklung zu bleiben und ihre Plattformen für Verbraucher wie Händler stetig zu verbessern.
+Mit der Reifung der KI wachsen die Anwendungen. Taobao und Tmall arbeiten daran, an der Spitze dieser Entwicklung zu bleiben und ihre Plattformen für Käufer wie Händler stetig zu verbessern.
 
 Künftige Schritte erweitern die KI-Fähigkeiten in Personalisierung, Effizienz und Innovation. Dieses Bekenntnis sichert die Vorreiterrolle im digitalen Handel.
 

@@ -26,15 +26,15 @@ Cada usuario de WeChat tiene un código QR personal que otros pueden escanear pa
 
 ### Integrados en el día a día
 
-Los códigos QR son un básico de la sociedad china sin efectivo. Desde pagar el café de la mañana hasta tomar el transporte público, simplifican infinidad de gestiones diarias. Esa adopción masiva la han empujado WeChat y Alipay, que han incrustado el QR en sus sistemas de pago. Para una empresa con una agencia de marketing digital en China detrás, usar QR es la vía natural para conectar con un consumidor altamente digital.
+Los códigos QR son un básico de la sociedad china sin efectivo. Desde pagar el café de la mañana hasta coger el transporte público, simplifican un montón de gestiones diarias. Esa adopción masiva la han empujado WeChat y Alipay, que han incrustado el QR en sus sistemas de pago. Para una empresa con una agencia de marketing digital en China detrás, tirar de QR es la vía natural para conectar con un consumidor muy digital.
 
 ### Comodidad y rapidez
 
-Los códigos QR de WeChat eliminan procesos largos. En lugar de escribir nombres de usuario, introducir datos de pago o buscar información del producto, el usuario escanea y resuelve en segundos. Esa velocidad encaja con el ritmo del mercado chino, lo que los hace imprescindibles para las agencias de eCommerce que buscan optimizar la experiencia del cliente.
+Los códigos QR de WeChat se cargan los procesos largos. En lugar de escribir nombres de usuario, meter datos de pago o buscar información del producto, el usuario escanea y resuelve en segundos. Esa velocidad casa con el ritmo del mercado chino, lo que los hace imprescindibles para las agencias de eCommerce que buscan afinar la experiencia del cliente.
 
 ### Versatilidad para las marcas
 
-Para las marcas, los códigos QR de WeChat son una vía eficaz de conectar con el cliente. Lo mismo sirven para promocionar un nuevo producto, lanzar un descuento o facilitar el pago. Esa flexibilidad los ha convertido en una palanca potente para las agencias digitales que quieran lanzar [campañas](/es/crecer-en-china/campanas) muy enfocadas.
+Para las marcas, los códigos QR de WeChat son una vía eficaz para conectar con el cliente. Lo mismo sirven para promocionar un nuevo producto, lanzar un descuento o agilizar el pago. Esa flexibilidad los ha vuelto una palanca potente para las agencias digitales que quieran lanzar [campañas](/es/crecer-en-china/campanas) muy enfocadas.
 
 ## Cómo funcionan los códigos QR de WeChat
 

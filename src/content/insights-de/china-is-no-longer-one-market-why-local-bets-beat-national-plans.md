@@ -9,7 +9,7 @@ tags: ["China-Marktstrategie", "Lokalisierung", "City-Marketing", "Konsumentenve
 heroImage: "/Images/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans.png"
 heroImageAlt: "Visualisierung einer Lokalisierungsstrategie"
 keyTakeaways:
-  - "Das nationale Playbook ist gebrochen. Langsameres Wachstum, vorsichtige Verbraucher und stärkere lokale Konkurrenz machen das alte Rezept aus einer Hero-SKU und einem Celebrity ungeeignet."
+  - "Das nationale Playbook ist gebrochen. Langsameres Wachstum, vorsichtige Käufer und stärkere lokale Konkurrenz machen das alte Rezept aus einer Hero-SKU und einem Celebrity ungeeignet."
   - "Stolz auf einheimische Marken hat Kategorien wie E-Autos, Beauty und Sportswear gedreht. Ein ausländisches Logo allein trägt das Premium-Argument nicht mehr."
   - 'Die richtige Frage ist nicht mehr „Wie gewinnen wir China?". Sie lautet „Wo verdienen wir es, zu zählen, und warum?".'
   - "Drei Regionen und drei Kategorie-Anlässe wählen. Sie sauber ausstatten. Der Rest des Landes bekommt Vertrieb, keine Investition."
@@ -17,11 +17,11 @@ keyTakeaways:
 
 Wer täglich mit China arbeitet, spürt es. Das alte Wachstums-[Playbook](/de/referenzen) verblasst.
 
-Jahrelang behandelten viele [globale Marken](/de/nach-china/markteintrittsberatung) China wie eine grosse Wachstumsmaschine. Eine Hero-SKU wählen, einen Celebrity, national ausrollen, die Skalierung den Rest erledigen lassen. In einem schnell wachsenden Markt konnte das funktionieren. 2025 legt es eher die Schwächen offen. Langsameres Wachstum, vorsichtigere Verbraucher und stärkere lokale Konkurrenz machen das alte Rezept untauglich. Marken, die noch immer einer einzigen nationalen Antwort hinterherjagen, geben viel aus und kommen trotzdem schwer an.
+Jahrelang haben viele [globale Marken](/de/nach-china/markteintrittsberatung) China wie eine grosse Wachstumsmaschine behandelt. Eine Hero-SKU wählen, einen Celebrity, national ausrollen, die Skalierung den Rest erledigen lassen. In einem schnell wachsenden Markt konnte das funktionieren. 2025 legt es eher die Schwächen offen. Langsameres Wachstum, vorsichtigere Käufer und stärkere lokale Konkurrenz machen das alte Rezept untauglich. Marken, die weiter einer einzigen nationalen Antwort hinterherjagen, geben viel aus und kommen trotzdem schwer an.
 
 ## Vom nationalen Spruch zur lokalen Relevanz
 
-Nach Covid sind chinesische Verbraucher überlegter. Sie vergleichen, sie warten, sie sind weniger bereit, allein für das Logo zu zahlen. Gleichzeitig ist der Stolz auf lokale Marken gewachsen, besonders bei E-Autos, Beauty und Sportswear.
+Nach Covid sind chinesische Käufer überlegter. Sie vergleichen, sie warten, sie sind weniger bereit, allein für das Logo zu zahlen. Gleichzeitig ist der Stolz auf lokale Marken gewachsen, vor allem bei E-Autos, Beauty und Sportswear.
 
 Eine Botschaft, die für alle passt, wirkt heute grob.
 
@@ -55,7 +55,7 @@ China als einen einzigen Markt zu behandeln, führt häufig zu:
 - Plattform-Plänen, die Schlagzeilen-Nutzerzahlen folgen, nicht der lokalen Nutzung und den Content-Kulturen.
 - Kreation, die sich auf sichere Symbole stützt, Pandas oder die Grosse Mauer, statt auf Lebenswelten.
 
-Gleichzeitig hat Gen Z in Städten unterer Tiers in bestimmten Kategorien vergleichbare Kaufkraft, weniger konkurrierende Botschaften und mehr Zeit, sich mit Inhalten zu beschäftigen. Die Chance ist da, aber nur für Marken, die bereit sind, dafür zu gestalten.
+Gleichzeitig hat die Gen Z in Städten unterer Tiers in bestimmten Kategorien vergleichbare Kaufkraft, weniger konkurrierende Botschaften und mehr Zeit, sich mit Inhalten auseinanderzusetzen. Die Chance liegt offen, aber nur für Marken, die bereit sind, dafür zu gestalten.
 
 ---
 
@@ -86,7 +86,7 @@ Drei Verschiebungen zählen:
 - **Lokale Teams mehr Spielraum geben.** Tiefe Lokalisierung braucht Leute nahe an Plattformen, Kultur und Handel. Zentrale Teams setzen Leitplanken, sie diktieren nicht jeden Schritt.
 - **Lernen finanzieren, nicht nur Launches.** Manche Ideen werden nicht skalieren, und das ist in Ordnung. Es zählt, ob jeder Test das Gespür dafür schärft, wo die Marke das Recht hat, zu gewinnen.
 
-Die Marken, die am schnellsten anpassen, werden jene sein, die China weniger als eine Zeile in der Tabelle behandeln und mehr als ein Bündel sich entwickelnder Chancen.
+Die Marken, die am schnellsten umstellen, werden jene sein, die China weniger als eine Zeile in der Tabelle behandeln und mehr als ein Bündel sich entwickelnder Chancen.
 
 ![](/Images/insights/2024/06/localization-2-1-1024x647.png)
 

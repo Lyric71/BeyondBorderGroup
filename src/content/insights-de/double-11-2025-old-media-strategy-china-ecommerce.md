@@ -5,13 +5,13 @@ pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
 category: "E-Commerce"
-tags: ["Double 11", "eCommerce", "China Retail", "Konsumentenvertrauen", "Marketing-Strategie"]
+tags: ["Double 11", "eCommerce", "China Retail", "Käufervertrauen", "Marketing-Strategie"]
 heroImage: "/Images/insights/double-11-2025-old-media-strategy-china-ecommerce.png"
 heroImageAlt: "Werbebild des 17. Double-11-Shopping-Festivals"
 keyTakeaways:
   - "Varieté-Galas, Comedy-Sketche und Aussenwerbung sind beim Double 11 zurück. Keine Nostalgie. Ein Mittel gegen die Scroll-Müdigkeit."
   - "Plattformen brauchen wieder einen geteilten Moment. Tab-Takeovers und gestapelte Coupons haben den 11.11. aufgehört, wie ein Ereignis wirken zu lassen."
-  - "Wer die Witze besitzt, bevor Verbraucher sie machen, sitzt im Zentrum des kulturellen Lärms, nicht am Rand."
+  - "Wer die Witze besetzt, bevor die Käufer sie selbst machen, sitzt im Zentrum des kulturellen Lärms, nicht am Rand."
   - "TV-Zeit-Formate laufen heute auf digitalen Schienen: Galas livestreamen, Sketche loopen auf Douyin, OOH bekommt einen Xiaohongshu-Anschluss."
 ---
 
@@ -29,7 +29,7 @@ Gala-artige Launch-Shows mit Celebrity-Hosts. Comedy-Sketche über Preise, die z
 
 Dieselben Plattformen, die China das Wischen beigebracht haben, sprechen plötzlich in der Sprache der Hauptsendezeit.
 
-Das ist keine Nostalgie. Das ist Strategie. Ein digital-natives Festival greift zu alten [Media](/de/in-china-wachsen/media)-Werkzeugen, um ein sehr modernes Problem zu lösen: wie man das Vertrauen und die Aufmerksamkeit von Verbrauchern zurückgewinnt, die heute wie Profis einkaufen.
+Das ist keine Nostalgie. Das ist Strategie. Ein digital-natives Festival greift zu alten [Media](/de/in-china-wachsen/media)-Werkzeugen, um ein sehr modernes Problem zu lösen: wie man Vertrauen und Aufmerksamkeit von Käufern zurückgewinnt, die heute wie Profis einkaufen.
 
 ## Vom Tab-Takeover zur Varieté-Show, in drei Schritten
 
@@ -41,7 +41,7 @@ Eine Zeit lang wirkte jede Schicht wie ein Upgrade. Dann verschwammen die Upgrad
 
 In der siebzehnten Ausgabe ist das Festival keine Überraschung mehr. Grosse Anschaffungen werden um es herum geplant. Jede Fläche schreit, rote Banner und Niedrigpreis-Sticker verschmelzen zu einer Masse. Wichtiger noch: Das Publikum ist über das Skript hinausgewachsen.
 
-Chinesische Verbraucher vergleichen heute standardmässig über Plattformen, verfolgen Preisbewegungen vor und nach den Kampagnen, teilen Stapeltaktiken in WeChat-Gruppen und Xiaohongshu-Notes und wissen, welche Versprechen real sind und welche kosmetisch. Sie verhalten sich nicht wie Anfänger auf dem Jahrmarkt. Sie verhalten sich wie Retail-Profis, die ihr eigenes Portfolio managen.
+Chinesische Käufer vergleichen heute standardmässig über Plattformen, verfolgen Preisbewegungen vor und nach den Kampagnen, teilen Stapeltaktiken in WeChat-Gruppen und Xiaohongshu-Notes und wissen, welche Versprechen real sind und welche kosmetisch. Sie verhalten sich nicht wie Anfänger auf dem Jahrmarkt. Sie verhalten sich wie Retail-Profis, die ihr eigenes Portfolio managen.
 
 In dieser Welt ist ein weiteres hyperaktives Banner oder ein noch intensiver Livestream nicht aufregend. Es ist nur mehr Lärm. Also greift Double 11 zu etwas Älterem und Grösserem als zum Feed: zur emotionalen Grammatik des Fernsehens.
 
@@ -77,7 +77,7 @@ Die Botschaft ist einfach. Wir wissen, dass ihr die Details verfolgt. Wir sind b
 
 Unter all dem liegt eine harte Wahrheit.
 
-Double 11 hat mehr getan, als mehr Käufer zu schaffen. Es hat bessere Operatoren auf der Verbraucherseite geschaffen.
+Double 11 hat mehr getan, als mehr Käufer zu schaffen. Es hat bessere Operatoren auf der Käuferseite geschaffen.
 
 Menschen trainieren seit mehr als einem Jahrzehnt für dieses Festival. Sie wissen, wie jede Plattform ihre Stärken ausspielt, wann eine Aussage faul wirkt, und wie Preis, Qualität, Service und Cross-Border-Optionen in ihrer Kategorie zusammenpassen.
 
@@ -93,7 +93,7 @@ Der nützlichere Befund liegt darunter.
 
 Vertrauen ist still zur zentralen Kreativ-Aufgabe geworden. Die Witze, die Retro-Ästhetik, die inszenierten Kämpfe um bessere Preise drehen sich alle um ein Bedürfnis: den Preis und das Versprechen wieder glaubwürdig zu machen.
 
-Lokalisierung heisst heute, die Intelligenz des Publikums zu respektieren. Sie betreten einen Raum, in dem Verbraucher Rabattlogik und Plattformverhalten feiner verstehen als die meisten Auslands-Zentralen. Ihre Angebote und Ihr Storytelling müssen diese Versiertheit voraussetzen.
+Lokalisierung heisst heute, die Intelligenz des Publikums zu respektieren. Sie betreten einen Raum, in dem Käufer Rabattlogik und Plattformverhalten feiner verstehen als die meisten Auslands-Zentralen. Ihre Angebote und Ihr Storytelling müssen diese Versiertheit voraussetzen.
 
 Alte Mediensprache in Kombination mit neuen Mechaniken braucht ein System darunter. Eine konsistente Preisarchitektur, eine klare Wertegeschichte und eine kohärente Kreativsprache über TV-artige Inhalte, Livestream-Räume und Kurzvideo trennen den einmaligen Stunt von einer Marke, die das ganze Jahr glaubwürdig wirkt.
 

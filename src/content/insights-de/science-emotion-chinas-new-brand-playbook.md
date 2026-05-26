@@ -43,7 +43,7 @@ Das ist einer der häufigsten Fehler, den wir bei internationalen Marken sehen, 
 
 Collgene führte [Tmall](/de/in-china-wachsen/cross-border-ecommerce) und JD als Vertrauensbasis. Suchoptimierung, SKU-Architektur, personalisierte Hautpflege-Pläne und Wiederkauf-Flows waren gebaut, bevor sie die Ausgaben hochzogen. Das Ergebnis: eine Wiederkaufrate von 42 Prozent, fünfzehn Punkte über dem Branchenmittel.
 
-So soll Shelf-eCommerce funktionieren. Nicht als Transaktions-Schicht, sondern als Glaubwürdigkeits-Asset. Verbraucher, die eine Marke auf [Douyin](/de/in-china-wachsen/influencer-und-kol) entdecken, suchen sie auf Tmall, bevor sie kaufen. Was sie dort finden, schliesst den Kauf ab oder bringt ihn zum Erliegen.
+So soll Shelf-eCommerce funktionieren. Nicht als Transaktions-Schicht, sondern als Glaubwürdigkeits-Asset. Käufer, die eine Marke auf [Douyin](/de/in-china-wachsen/influencer-und-kol) entdecken, suchen sie auf Tmall, bevor sie kaufen. Was sie dort finden, schliesst den Kauf ab oder bringt ihn zum Erliegen.
 
 ![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
 
@@ -59,7 +59,7 @@ Dieser Content erledigte zwei Aufgaben. Er konvertierte Erstkäufer. Und er pfla
 
 > Die #MyEmotionalOasis-Kampagne generierte über 120.000 UGC-Posts und 210 Prozent Suchwachstum auf Xiaohongshu.
 
-Die meisten Marken unterschätzen, was Xiaohongshu im Kauf-Funnel leistet. „Stimmungsbrett" greift zu kurz. Es ist der Ort, an dem chinesische Verbraucher eine Marke verifizieren, bevor sie echtes Geld ausgeben. Notes zu Inhaltsstoffen, Routinen, Vorher-Nachher-Haut und ehrlichen Reviews legen das Long-Tail-Suchfundament, das bezahlte Medien an allen anderen Stellen effizienter macht.
+Die meisten Marken unterschätzen, was Xiaohongshu im Kauf-Funnel leistet. „Stimmungsbrett" greift zu kurz. Es ist der Ort, an dem chinesische Käufer eine Marke verifizieren, bevor sie echtes Geld ausgeben. Notes zu Inhaltsstoffen, Routinen, Vorher-Nachher-Haut und ehrlichen Reviews legen das Long-Tail-Suchfundament, das bezahlte Medien an allen anderen Stellen effizienter macht.
 
 Collgene streute hier emotionale Narrative aus. Geschenksets namens „Overtime Rescue Kit" und „Stress-Relief Set". Kampagnen rund um urbanes Leben und um Haut, die reagiert, wenn man nicht geschlafen hat. Dieser Content trug Community, bevor er Konversion trug.
 

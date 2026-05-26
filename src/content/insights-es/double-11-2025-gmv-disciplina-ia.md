@@ -24,7 +24,7 @@ Double 11 fue una locura. En 2025 es un test de sistemas: ¿puede su marca opera
 
 El titular no es "más GMV". Son sistemas mejores. Plataformas y marcas priorizaron eficiencia, transparencia y repetibilidad. El consumidor premió esa transparencia con menos trucos, precios más claros y mejor servicio.
 
-Por debajo corre un modelo operativo guiado por IA. Promociones, ranking, previsión y enrutado están cada vez más orquestados por sistemas que aprenden. Y, aunque las grandes plataformas han dejado en buena medida de publicar la cifra única de GMV, sí cargan el acento en participación, calidad de servicio y métricas de entrega. Cuando todo el mundo descuenta, gana el operador que se mueve con más cabeza: entrega más rápida, menos roturas de stock y unos números unitarios que el 12 de noviembre todavía cuadran.
+Por debajo corre un modelo operativo tirado por IA. Promociones, ranking, previsión y enrutado están cada vez más orquestados por sistemas que aprenden. Y, aunque las grandes plataformas han dejado en buena medida de publicar la cifra única de GMV, sí cargan el acento en participación, calidad de servicio y métricas de entrega. Cuando todo el mundo descuenta, gana el operador que se mueve con más cabeza: entrega más rápida, menos roturas de stock y unos números unitarios que el 12 de noviembre todavía cuadran.
 
 ### Diseñar el sistema operativo creativo que hace convertir a las ops
 

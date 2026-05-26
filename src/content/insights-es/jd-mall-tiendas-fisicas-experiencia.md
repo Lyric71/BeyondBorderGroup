@@ -26,9 +26,9 @@ Si juega en hogar, electrodomésticos, electrónica de consumo, beauty tech o eq
 
 ## Del gigante del eCommerce al centro comercial de barrio
 
-JD Mall se sitúa en la cúspide de una red más amplia de formatos físicos, con grandes centros en ciudades clave y otros conceptos en ciudades de menor tamaño. El objetivo: recrear la fortaleza de JD en electrodomésticos en el mundo físico, con una experiencia mejor que la de las cadenas tradicionales.
+JD Mall se sitúa en la cúspide de una red más amplia de formatos físicos, con grandes centros en ciudades clave y otros conceptos en ciudades de menor tamaño. La meta: trasladar la fortaleza de JD en electrodomésticos al mundo físico, con una experiencia mejor que la de las cadenas tradicionales.
 
-Para las marcas globales, JD ya no es solo una línea en un plan de medios entre Tmall y JD. Está construyendo su propio recorrido de cliente, de la app al salón de casa.
+Para las marcas globales, JD ya no es solo una línea en un plan de medios entre Tmall y JD. Está montando su propio recorrido de cliente, de la app al salón de casa.
 
 ## Experiencia primero, exposición después
 
@@ -36,11 +36,11 @@ El principio rector es "venta dirigida por la experiencia". JD quiere que la gen
 
 Las tiendas están diseñadas para uso real: hornos y cafeteras funcionando todo el día, aparatos de limpieza probados sobre suciedad de verdad, zonas de lavandería y cuidado del calzado con equipamiento profesional, no con atrezo.
 
-Tres cosas importan aquí:
+Tres cosas pesan aquí:
 
 * Participación activa: se guía al cliente a cocinar, limpiar o probar, no a ver a un empleado haciéndolo.
 * Categorías de alta consideración: el modelo está pensado para decisiones de ticket alto como conjuntos completos de cocina, sistemas de aire, home cinema o dispositivos de belleza.
-* Confianza antes de la conversión: tras probar varios aparatos y hornear con uno, el precio pasa a ser un factor más, no el único.
+* Confianza antes que conversión: tras probar varios aparatos y hornear con uno, el precio pasa a ser un factor más, no el único.
 
 Si es una marca global, la pregunta clave es: ¿qué quiere usted que la gente haga, de verdad, con su producto dentro de un JD Mall?
 

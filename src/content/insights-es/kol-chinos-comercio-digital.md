@@ -52,13 +52,13 @@ Apunta sobre todo al público de moda y belleza, con una comunidad muy auténtic
 
 ## Cómo encontrar al KOL adecuado para su marca
 
-Identificar al KOL correcto exige método. Hay que alinear sus contenidos con los objetivos de marca y con el público al que se quiere llegar. Unas cuantas consideraciones bastan para orientar bien la búsqueda.
+Dar con el KOL correcto pide método. Hay que casar sus contenidos con los objetivos de marca y con el público al que se quiere llegar. Unas cuantas consideraciones bastan para orientar bien la búsqueda.
 
 ### Paso 1: defina sus objetivos
 
 * Notoriedad de marca: para marcas o productos nuevos, conviene buscar KOL con alcance amplio y mucha visibilidad.
 * Engagement y ventas: si la prioridad son las ventas, los micro-KOL con audiencias muy comprometidas suelen rendir mejor, porque cultivan una relación más cercana con sus seguidores.
-* Credibilidad y confianza: para construcción de marca a largo plazo, hay que trabajar con KOL cuyo estilo de contenido encaje con la filosofía y los valores de la marca.
+* Credibilidad y confianza: para levantar marca a largo plazo, hay que trabajar con KOL cuyo estilo de contenido case con la filosofía y los valores de la marca.
 
 ### Paso 2: elija las plataformas correctas
 

@@ -24,6 +24,6 @@ El uso que hace JD.com de tecnologías como ChatRhino marca un giro relevante en
 
 ## Un nuevo estándar en marketing digital
 
-Este movimiento apunta a una tendencia capaz de redibujar las estrategias globales de eCommerce. A medida que la IA evoluciona, su integración en plataformas online será más habitual, mejorará la experiencia de compra y abrirá nuevas oportunidades para el marketing digital. El enfoque de JD.com puede animar a empresas de todo el mundo a explorar la IA como vía para atraer y retener clientes.
+Este movimiento apunta a una tendencia capaz de darle la vuelta a las estrategias globales de eCommerce. A medida que la IA evoluciona, su integración en plataformas online será más habitual, mejorará la experiencia de compra y abrirá nuevas oportunidades de marketing digital. El planteamiento de JD.com puede animar a empresas de todo el mundo a explorar la IA como vía para atraer y retener clientes.
 
 ![Presentadores con IA para livestream de eCommerce](/Images/insights/2024/04/AI-hosts-for-livestream-ecommerce.webp)

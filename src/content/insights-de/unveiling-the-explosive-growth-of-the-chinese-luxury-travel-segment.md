@@ -25,7 +25,7 @@ Die Einstellung der chinesischen Gesellschaft zum Luxuskonsum hat sich gewandelt
 
 **Digitaler Einfluss:**
 
-Die Verbreitung digitaler Plattformen und sozialer Medien prägt die Wahrnehmung der Verbraucher stark. Chinesische Reisende stützen ihre Entscheidungen auf Online-Reviews, Empfehlungen und Influencer. Erlebnis-Luxus, geprägt von persönlicher Bereicherung und echten Verbindungen, gewinnt an Boden. Die Verzahnung von Social Commerce mit anderen digitalen Plattformen macht es einfacher, neue Luxuserlebnisse zu teilen und zu entdecken.
+Die Verbreitung digitaler Plattformen und sozialer Medien prägt die Wahrnehmung der Reisenden stark. Chinesische Reisende stützen ihre Entscheidungen auf Online-Reviews, Empfehlungen und Influencer. Erlebnis-Luxus, geprägt von persönlicher Bereicherung und echten Verbindungen, gewinnt an Boden. Die Verzahnung von Social Commerce mit anderen digitalen Plattformen macht es einfacher, neue Luxuserlebnisse zu teilen und zu entdecken.
 
 **Technische Fortschritte:**
 

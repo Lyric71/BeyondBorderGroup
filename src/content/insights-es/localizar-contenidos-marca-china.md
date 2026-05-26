@@ -58,26 +58,26 @@ Pasar el contenido al mandarín no basta. Las marcas que triunfan en China ajust
 * **Sensibilidad cultural:** asegúrese de que el contenido respeta las tradiciones, las festividades y los valores chinos. Evite símbolos o palabras que puedan malinterpretarse.
 * **Imágenes y referencias locales:** use visuales y referencias culturalmente cercanas. Nike, por ejemplo, ajusta el contenido a la región, destacando el baloncesto en Estados Unidos y el fútbol en Argentina.
 
-McDonald's es otro caso claro de adaptación cultural: el Mac Maharajah en India se diseñó para encajar con el gusto local. Ajustar la oferta y el mensaje al público chino dispara el atractivo de la marca. Una agencia creativa con presencia en China puede ayudarle a construir [campañas](/es/crecer-en-china/campanas) culturalmente sólidas que conecten con el consumidor local.
+McDonald's es otro caso claro de adaptación cultural: el Mac Maharajah en India se diseñó para encajar con el gusto local. Ajustar la oferta y el mensaje al público chino dispara el atractivo de la marca. Una agencia creativa con presencia en China puede ayudarle a montar [campañas](/es/crecer-en-china/campanas) culturalmente sólidas que conecten con el consumidor local.
 
 ### Optimizar para Baidu y los buscadores locales
 
-Baidu domina el mercado de buscadores en China, así que optimizar el contenido para sus algoritmos es básico. A diferencia de Google, Baidu prioriza factores distintos y entenderlos le da ventaja competitiva.
+Baidu manda en el mercado de buscadores en China, así que afinar el contenido para sus algoritmos es básico. A diferencia de Google, Baidu prioriza factores distintos y entenderlos le da ventaja competitiva.
 
 * **Investigación de keywords en mandarín:** identifique las palabras clave que resuenan con el público chino. Trabaje tanto las keywords con tráfico alto como las long tail orientadas a nichos.
-* **Estructura del contenido:** organice el sitio con una jerarquía clara, compatible con el sistema de indexación de Baidu. Esto incluye un árbol de páginas estructurado y un uso estratégico de las keywords principales y sus variantes.
+* **Estructura del contenido:** organice el sitio con una jerarquía clara, compatible con el sistema de indexación de Baidu. Esto pasa por un árbol de páginas estructurado y un uso estratégico de las keywords principales y sus variantes.
 
-WeChat y Weibo, además, tienen sus propios buscadores internos. Optimizar el contenido para ellos amplía aún más la visibilidad. Aprovechar bien los buscadores chinos es clave para mantener una presencia digital sólida.
+WeChat y Weibo, además, tienen sus propios buscadores internos. Afinar el contenido para ellos amplía aún más la visibilidad. Tirar bien de los buscadores chinos es clave para mantener una presencia digital sólida.
 
 ### Usar las plataformas digitales locales para generar engagement
 
 Para conectar con el consumidor chino hay que estar en las plataformas que usa a diario. Redes sociales y agregadores de noticias son palancas importantes.
 
-* **WeChat:** ofrece mini-programas, pagos integrados y herramientas de marketing que permiten experiencias de cliente envolventes.
+* **WeChat:** trae mini-programas, pagos integrados y herramientas de marketing que dejan armar experiencias de cliente envolventes.
 * **Weibo:** una de las redes más influyentes de China, con espacio para temas en tendencia, colaboraciones con influencers y campañas pagadas.
-* **Toutiao y Tencent News:** estos agregadores permiten publicidad muy segmentada e integrar la marca en contenido editorial de actualidad, lo que amplía alcance y credibilidad.
+* **Toutiao y Tencent News:** estos agregadores permiten publicidad muy segmentada y meter la marca en contenido editorial de actualidad, lo que amplía alcance y credibilidad.
 
-Aprovechar bien estas plataformas construye una presencia digital que resuena con el consumidor chino.
+Tirar bien de estas plataformas levanta una presencia digital que resuena con el consumidor chino.
 
 ### Monitorizar y refinar la estrategia de localización
 

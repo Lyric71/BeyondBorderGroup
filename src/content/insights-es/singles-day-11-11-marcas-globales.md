@@ -64,17 +64,17 @@ Bien calibradas, estas alianzas abren el acceso a comunidades muy precisas, dese
 
 ### c) Lanzamientos exclusivos y ofertas calibradas para la cita
 
-Las marcas que sacan ediciones limitadas o lanzamientos reservados al 11.11 captan más atención. El comprador chino persigue la exclusividad, y esta mecánica instala la urgencia en el carrito. Valentino, Burberry y varias casas de lujo han presentado colecciones específicas para el 11.11, que apuntalan a la vez la facturación y el prestigio.
+Las marcas que sacan ediciones limitadas o lanzamientos reservados al 11.11 captan más atención. El comprador chino busca la exclusividad, y esta mecánica mete urgencia en el carrito. Valentino, Burberry y varias casas de lujo han presentado colecciones específicas para el 11.11, que apuntalan a la vez la facturación y el prestigio.
 
-Una localización cuidada prolonga el efecto: packaging con los colores del festival, colaboración con un creador chino, series especiales. Esta lógica de exclusividad alimenta el engagement y dispara la compra.
+Una localización cuidada alarga el efecto: packaging con los colores del festival, colaboración con un creador chino, series especiales. Esta lógica de exclusividad alimenta el engagement y dispara la compra.
 
 ### d) El livestream, motor del eCommerce chino
 
-El livestream se ha convertido en una pieza maestra del 11.11. Permite una interacción en tiempo real con el consumidor, imposible en una ficha de producto clásica. Sobre Taobao Live, las marcas presentan sus productos, responden preguntas y lanzan ofertas relámpago ante millones de espectadores.
+El livestream se ha convertido en una pieza maestra del 11.11. Deja una interacción en tiempo real con el consumidor, imposible en una ficha de producto clásica. Sobre Taobao Live, las marcas presentan sus productos, responden preguntas y lanzan ofertas relámpago ante millones de espectadores.
 
-Presentadores como Li Jiaqi, apodado "el rey del pintalabios", han demostrado la potencia del formato generando miles de millones de yuanes de ventas en una sola velada. Apostar por el livestream significa ganar engagement y desatar la compra sobre la marcha, empujada por la efervescencia del festival.
+Presentadores como Li Jiaqi, apodado "el rey del pintalabios", han enseñado la potencia del formato generando miles de millones de yuanes de ventas en una sola velada. Apostar por el livestream quiere decir ganar engagement y desatar la compra sobre la marcha, empujada por la efervescencia del festival.
 
-En un terreno tan veloz como el eCommerce chino, el directo se ha impuesto como uno de los canales más eficaces para llegar al consumidor. Las marcas que despliegan ahí recogen los frutos.
+En un terreno tan veloz como el eCommerce chino, el directo se ha plantado como uno de los canales más eficaces para llegar al consumidor. Las marcas que despliegan ahí recogen los frutos.
 
 ## Leer las tendencias de consumo durante el 11.11
 
@@ -82,11 +82,11 @@ Para sacar el máximo partido del 11.11 conviene leer los movimientos de fondo q
 
 ### a) La gamificación se impone
 
-La gamificación lo ha invadido todo. Las plataformas injertan mecánicas de juego en el recorrido de compra: cazas del tesoro virtuales, mini-juegos interactivos que desbloquean descuentos. Estos resortes retienen la atención y elevan la tasa de participación.
+La gamificación lo ha invadido todo. Las plataformas meten mecánicas de juego dentro del recorrido de compra: cazas del tesoro virtuales, mini-juegos interactivos que desbloquean descuentos. Estos resortes retienen la atención y suben la tasa de participación.
 
 ### b) El consumo sostenible sube enteros
 
-Los jóvenes consumidores chinos sitúan ahora la sostenibilidad más arriba en sus criterios. Muchas marcas responden con productos ecodiseñados e iniciativas verdes durante el 11.11. Alinearse con esa expectativa responde a la demanda y consolida una fidelidad de fondo en el mercado chino.
+Los jóvenes consumidores chinos colocan ahora la sostenibilidad más arriba en sus criterios. Muchas marcas responden con productos ecodiseñados e iniciativas verdes durante el 11.11. Alinearse con esa expectativa responde a la demanda y asienta una fidelidad de fondo en el mercado chino.
 
 ## Las oportunidades para las marcas extranjeras
 

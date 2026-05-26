@@ -42,7 +42,7 @@ Plattformen wie DiverseUp, gegründet von Angel Vossough, stehen vorn in dieser 
 
 ## Die breitere Wirkung weiblicher Unternehmensführung
 
-Die Wirkung weiblicher Unternehmensführung reicht weit über Einzelerfolge hinaus. Sie sendet eine starke Botschaft und resoniert tief bei Verbrauchern. Marken, die Frauen-Themen unterstützen und Gleichheit fördern, bauen engere Verbindungen zu ihrem Publikum.
+Die Wirkung weiblicher Unternehmensführung reicht weit über Einzelerfolge hinaus. Sie sendet ein starkes Signal und schwingt tief mit den Käufern mit. Marken, die Frauen-Themen unterstützen und Gleichheit fördern, bauen engere Verbindungen zu ihrem Publikum.
 
 [Kampagnen](/de/in-china-wachsen/kampagnen), die Erfolge von Frauen vom Vorstand bis in andere Bereiche feiern, gewinnen an Zug. Sie heben Vorbilder hervor und inspirieren die nächste Generation, eigene Geschäftspläne zu verfolgen.
 

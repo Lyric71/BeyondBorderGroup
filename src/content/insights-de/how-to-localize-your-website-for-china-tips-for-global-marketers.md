@@ -11,17 +11,17 @@ heroImageAlt: "Chinesisches Website-Design und Lokalisierung"
 
 ## Warum Website-Lokalisierung in China zählt
 
-Eine [Website](/de/in-china-wachsen/website) für den chinesischen Markt zu lokalisieren, eine Kerndisziplin erfahrener eCommerce-Agenturen in China, geht weit über Übersetzung hinaus. Es geht um regulatorische Anforderungen und die Ausrichtung an Erwartungen der Verbraucher. Wirksame [Lokalisierung](/de/nach-china/marke-und-lokalisierung) sichert Zugänglichkeit, kulturelle Relevanz und Compliance, das hebt Präsenz und Erfolg im chinesischen eCommerce deutlich.
+Eine [Website](/de/in-china-wachsen/website) für den chinesischen Markt zu lokalisieren, eine Kerndisziplin erfahrener eCommerce-Agenturen in China, geht weit über Übersetzung hinaus. Es geht um regulatorische Anforderungen und die Ausrichtung an den Erwartungen der Käufer. Wirksame [Lokalisierung](/de/nach-china/marke-und-lokalisierung) sichert Zugänglichkeit, kulturelle Relevanz und Compliance, das hebt Präsenz und Erfolg im chinesischen eCommerce deutlich.
 
-### Grosser Firewall und Zensur
+### Great Firewall und Zensur
 
-Der Grosse Firewall setzt strikte Regeln durch und kann nicht lokalisierte Sites blockieren oder verlangsamen. Diese digitale Barriere prägt, wie Inhalte ankommen, und kann den Zugang zu vielen internationalen Sites verhindern.
+Die Great Firewall setzt strikte Regeln durch und kann nicht lokalisierte Sites blockieren oder verlangsamen. Diese digitale Barriere prägt, wie Inhalte ankommen, und kann den Zugang zu vielen internationalen Sites verhindern.
 
 Lokalisierung sichert die Einhaltung der chinesischen Gesetze und Zensur-Vorgaben. Sichtbarkeit und Erreichbarkeit für Nutzer in China steigen. Schwarze Listen oder lange Ladezeiten, die Käufer abschrecken, lassen sich vermeiden.
 
-### Verbrauchervorlieben
+### Vorlieben der Käufer
 
-Chinesische Verbraucher erwarten anderes bei Usability und Inhalt. Eine Seite, die diese Vorlieben respektiert, oft begleitet von einer Branding-Agentur in China, wird erfolgreicher sein.
+Chinesische Käufer erwarten anderes bei Usability und Inhalt. Eine Seite, die diese Vorlieben respektiert, oft begleitet von einer Branding-Agentur in China, wird erfolgreicher sein.
 
 Chinesische Websites arbeiten oft mit direkten, detaillierten Produktbeschreibungen und bevorzugen ein Design, das viele Informationen klar präsentiert. Wer das aufgreift, hebt Engagement und Vertrauen und damit Konversion und Bindung.
 
@@ -33,7 +33,7 @@ Chinesische Websites arbeiten oft mit direkten, detaillierten Produktbeschreibun
 
 Ein lokaler Auftritt beginnt mit der passenden Domain und einem Hoster in China. Dieser Schritt stärkt SEO und Vertrauen, die Performance steigt.
 
-* **.CN-Domain:** Eine .CN-Domain stützt die Legitimität in China und hilft beim SEO in lokalen Suchmaschinen. Sie signalisiert Verbrauchern und Suche, dass das Geschäft offiziell anerkannt ist.
+* **.CN-Domain:** Eine .CN-Domain stützt die Legitimität in China und hilft beim SEO in lokalen Suchmaschinen. Sie signalisiert Käufern und Suche, dass das Geschäft offiziell anerkannt ist.
 
 * **Lokaler Hoster:** Lokales Hosting verbessert Tempo und Stabilität für Nutzer in China. Lokale Anbieter kennen die Regulatorik und sichern die Einhaltung von Datenschutz- und Speicherregeln.
 

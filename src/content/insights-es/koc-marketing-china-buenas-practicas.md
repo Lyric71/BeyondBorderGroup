@@ -29,31 +29,31 @@ Con la ayuda de una agencia de marketing en China, una marca puede identificar a
 
 ### Conexiones auténticas
 
-Los KOC ofrecen reseñas reales. Su contenido es cercano y se percibe como digno de confianza. Su audiencia los ve como iguales, no como vendedores.
+Los KOC dan reseñas reales. Su contenido es cercano y se lee como digno de confianza. Su audiencia los ve como iguales, no como vendedores.
 
 ### Coste contenido
 
-Trabajar con KOC sale más barato que con influencers de gran formato. Una marca puede estirar el presupuesto colaborando con varios KOC para ganar alcance.
+Trabajar con KOC sale más barato que con influencers de gran formato. Una marca puede estirar el presupuesto aliándose con varios KOC para ganar alcance.
 
 ### Llegada a nichos
 
-Los KOC suelen especializarse en categorías concretas (belleza, fitness, tecnología), lo que permite a las marcas conectar con comunidades muy específicas.
+Los KOC suelen especializarse en categorías concretas (belleza, fitness, tecnología), lo que deja a las marcas conectar con comunidades muy específicas.
 
 ### Menor riesgo reputacional
 
-Con audiencias más pequeñas y más implicadas, los KOC quedan menos expuestos al escrutinio público. Eso reduce el riesgo de polémicas capaces de dañar la imagen de la marca.
+Con audiencias más pequeñas y más implicadas, los KOC quedan menos expuestos al escrutinio público. Eso recorta el riesgo de polémicas capaces de dañar la imagen de la marca.
 
-Una agencia de medios en China puede ayudar a planificar campañas que aprovechen estas ventajas y eviten los tropiezos habituales.
+Una agencia de medios en China puede ayudar a planificar campañas que tiren de estas ventajas y esquiven los tropiezos habituales.
 
 ## Buenas prácticas para usar KOC en el eCommerce chino
 
-Elegir al KOC adecuado es un paso crítico en cualquier estrategia de eCommerce en China. A continuación, una guía paso a paso para acertar.
+Acertar con el KOC es un paso crítico en cualquier estrategia de eCommerce en China. Aquí va una guía paso a paso para no fallar.
 
 ### Defina sus objetivos de marketing
 
-Empiece por concretar qué busca. Si el objetivo es notoriedad, puede priorizar KOC de alcance medio con apelación amplia. Si lo que persigue es conversión en nichos y ventas directas, conviene apuntar a KOC con comunidades más pequeñas pero muy implicadas, alineadas con su categoría.
+Empiece por concretar qué busca. Si la meta es notoriedad, puede ir a KOC de alcance medio con apelación amplia. Si lo que persigue es conversión en nichos y ventas directas, conviene apuntar a KOC con comunidades más pequeñas pero muy implicadas, alineadas con su categoría.
 
-Entender el objetivo final es lo que permite reducir la lista de candidatos.
+Entender el objetivo final es lo que deja recortar la lista de candidatos.
 
 ### Analice la audiencia del KOC
 

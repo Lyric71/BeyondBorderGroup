@@ -19,9 +19,9 @@ keyTakeaways:
 
 Chinas eCommerce-Landschaft wird von mehreren Behörden reguliert, die strenge [Werbe](/de/in-china-wachsen/kampagnen)-Vorgaben durchsetzen. Die State Administration for Market Regulation (SAMR) wacht über das allgemeine Werberecht, die Cyberspace Administration of China (CAC) über Social [Media](/de/in-china-wachsen/media) und Online-Inhalte, was für Marken auf Plattformen wie Douyin (chinesisches Pendant zu TikTok) und WeChat zentral ist. Die National Radio and Television Administration (NRTA) beaufsichtigt Broadcast- und Video-Inhalte, was Marken betrifft, die Livestream- oder Videowerbung nutzen.
 
-Diese Behörden setzen gemeinsam das chinesische Werberecht durch, ein Rahmen gegen irreführende oder schädliche Inhalte, zum Schutz der Verbraucher und für fairen Wettbewerb. Das Recht gilt für digitale, gedruckte und ausgestrahlte Werbung. Wer in China auftritt, muss seine Marketing-Strategie an den nationalen Standards ausrichten. Für Unternehmen, die in den chinesischen eCommerce einsteigen wollen, ist das Verständnis dieser Regeln Pflicht, um konforme, verbraucherfreundliche Kampagnen zu bauen.
+Diese Behörden setzen gemeinsam das chinesische Werberecht durch, ein Rahmen gegen irreführende oder schädliche Inhalte, zum Schutz der Käufer und für fairen Wettbewerb. Das Recht gilt für digitale, gedruckte und ausgestrahlte Werbung. Wer in China auftritt, muss seine Marketing-Strategie an den nationalen Standards ausrichten. Für Unternehmen, die in den chinesischen eCommerce einsteigen wollen, ist das Verständnis dieser Regeln Pflicht, um konforme, käuferfreundliche Kampagnen zu bauen.
 
-Wegen der grossen Wirkung der digitalen Werbung sind die Regeln dort besonders streng. Plattformen wie WeChat, Douyin sowie Tmall und JD.com setzen zusätzlich eigene Regeln, damit Inhalte den nationalen wie plattformspezifischen Standards entsprechen. Dieser Rahmen ist wichtig, um ausländische Marken zu führen, chinesische Verbraucher zu schützen und ein stabiles Geschäftsumfeld zu sichern.
+Wegen der grossen Wirkung der digitalen Werbung sind die Regeln dort besonders streng. Plattformen wie WeChat, Douyin sowie Tmall und JD.com setzen zusätzlich eigene Regeln, damit Inhalte sowohl den nationalen als auch den plattformspezifischen Standards entsprechen. Dieser Rahmen ist wichtig, um ausländische Marken zu führen, chinesische Käufer zu schützen und ein stabiles Geschäftsumfeld zu sichern.
 
 ## Beschränkungen bei Absolut-Aussagen
 
@@ -89,4 +89,4 @@ So gelingen Kampagnen, die die Regeln einhalten, Vertrauen aufbauen und eine pos
 
 ## Fazit
 
-Chinas Werberecht ist Fundament für ein faires, sicheres und kulturell respektvolles eCommerce-Umfeld. Wer in China erfolgreich sein will, hält diese Vorgaben strikt ein. Eine lokale eCommerce-Agentur und ein klares Bekenntnis zu Transparenz und kultureller Anpassung machen den Unterschied. Mit dem richtigen Ansatz nutzen Marken den riesigen Digital-Markt und respektieren zugleich den Rahmen, der die Verbraucher schützt.
+Chinas Werberecht ist das Fundament für ein faires, sicheres und kulturell respektvolles eCommerce-Umfeld. Wer in China erfolgreich sein will, hält diese Vorgaben strikt ein. Eine lokale eCommerce-Agentur und ein klares Bekenntnis zu Transparenz und kultureller Anpassung machen den Unterschied. Mit dem richtigen Ansatz nutzen Marken den riesigen Digital-Markt und respektieren zugleich den Rahmen, der die Käufer schützt.

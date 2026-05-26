@@ -1,6 +1,6 @@
 ---
 title: "Die wichtigsten eCommerce-Influencer in China 2024"
-description: "Chinas eCommerce wird von Key Opinion Leaders (KOLs) getragen, die die Brücke zwischen Marken und Verbrauchern über Authentizität und Kreativität auf Plattformen wie Xiaohongshu und Douyin schlagen."
+description: "Chinas eCommerce wird von Key Opinion Leaders (KOLs) getragen, die die Brücke zwischen Marken und Käufern über Authentizität und Kreativität auf Plattformen wie Xiaohongshu und Douyin schlagen."
 pubDate: "2024-12-18"
 author: "Beyond Border Group"
 category: "KOLs & Livestream"
@@ -12,7 +12,7 @@ heroImageAlt: "Werbebild zu Top-Influencern"
 
 ## Chinas eCommerce wächst 2024 stark
 
-2024 boomt der chinesische eCommerce, getragen von innovativer Technologie, Mobile-First-Verhalten und der zentralen Rolle der Key Opinion Leaders (KOLs). Auf Plattformen wie [Xiaohongshu](/de/in-china-wachsen/social-commerce) (RED) und Douyin verändern Influencer, wie Marken ihre Audience erreichen. KOL schlagen die Brücke zwischen Marken und Konsumenten, mit Authentizität, Vertrauen und Kreativität, die Umsätze tragen.
+2024 boomt der chinesische eCommerce, getragen von innovativer Technologie, Mobile-First-Verhalten und der zentralen Rolle der Key Opinion Leaders (KOLs). Auf Plattformen wie [Xiaohongshu](/de/in-china-wachsen/social-commerce) (RED) und Douyin verändern Influencer, wie Marken ihre Audience erreichen. KOL schlagen die Brücke zwischen Marken und Käufer, mit Authentizität, Vertrauen und Kreativität, die Umsätze tragen.
 
 Viele Marken arbeiten dabei mit einer Digital-Marketing- oder Media-Buying-Agentur in China, um die Wirkung dieser Partnerschaften zu heben. Hier ein detaillierter Blick auf Top-Influencer in China und ihre Rolle.
 
@@ -57,7 +57,7 @@ Reise-Influencer bewerben Ziele, Reisegepäck und Lifestyle-Produkte. Aspiration
 * **Plattform:** Xiaohongshu
 * **Follower:** 6,5 Millionen
 
-Winnie Wen zeigt Luxus-Reiseziele, Häuser und Erlebnisse. Ihre Inhalte sprechen wohlhabende Verbraucher an, oft Teil von Kampagnen, die Medienagenturen in China für Premium-Reisemarken steuern.
+Winnie Wen zeigt Luxus-Reiseziele, Häuser und Erlebnisse. Ihre Inhalte sprechen wohlhabende Käufer an, oft Teil von Kampagnen, die Medienagenturen in China für Premium-Reisemarken steuern.
 
 ![Winnie Wen Luxus-Reise](/Images/insights/2024/12/win-final.png)
 
@@ -120,9 +120,9 @@ Bacon Diary verbindet visuell starken Content mit nahbaren Erzählungen. Schwerp
 
 Influencer-Kooperationen öffnen Nischenmärkte und erreichen vielfältige Demografien über mehrere Plattformen.
 
-### Mehr Konsumentenvertrauen
+### Mehr Käufervertrauen
 
-KOL-Empfehlungen heben das Konsumentenvertrauen und damit die Kaufrate.
+KOL-Empfehlungen heben das Käufervertrauen und damit die Kaufrate.
 
 ### Bessere Konversionsraten
 

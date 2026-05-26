@@ -127,4 +127,4 @@ Douyin hat eigene Vorteile gegenüber anderen eCommerce-Plattformen in China. Co
 
 ## Fazit
 
-Douyin bietet Marken einen starken Weg, chinesische Verbraucher über die Verbindung aus Content und Handel zu erreichen. Mit einbindenden Videos, Livestream, KOL-Kooperationen und Werbe-Tools bauen Marken eine starke Präsenz im chinesischen eCommerce. Ob lokal oder global, Douyin liefert die Mittel, um Verbraucher zu erreichen und Umsatz zu treiben.
+Douyin bietet Marken einen starken Weg, chinesische Käufer über die Verbindung aus Content und Handel zu erreichen. Mit einbindenden Videos, Livestream, KOL-Kooperationen und Werbe-Tools bauen Marken eine starke Präsenz im chinesischen eCommerce. Ob lokal oder global: Douyin liefert die Mittel, um Käufer zu erreichen und Umsatz zu treiben.

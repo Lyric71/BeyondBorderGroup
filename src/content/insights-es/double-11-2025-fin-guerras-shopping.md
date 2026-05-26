@@ -69,16 +69,16 @@ Entonces el tablero se llenó.
 **Con cada nueva mecánica pasaban dos cosas:**
 
 * Los vendedores diseñaban para el juego y dejaban de diseñar para el comprador.
-  * Los precios de catálogo subían discretamente antes del festival, solo para "descontarse" hasta su nivel habitual.
-  * Los presupuestos de [marketing](/es/crecer-en-china/campanas) se hinchaban persiguiendo titulares de GMV y comprando posiciones que lucían bien en los cuadros internos.
+  * Los precios de catálogo subían en silencio antes del festival, solo para "descontarse" hasta su nivel habitual.
+  * Los presupuestos de [marketing](/es/crecer-en-china/campanas) se hinchaban persiguiendo titulares de GMV y comprando posiciones que quedaban bien en los cuadros internos.
   * La rentabilidad por unidad pasaba a revisarse después del festival, no antes.
 
 * Los compradores subían de nivel más rápido que el sistema.
-  * Las guías sobre cómo "apilarlo todo" y "cronometrar el pedido al milímetro" son ya un género de contenido propio.
+  * Las guías sobre cómo "apilarlo todo" y "cronometrar el pedido al milímetro" son ya un género de contenido aparte.
   * Los usuarios comparan Taobao, [JD](/es/crecer-en-china/ecommerce-transfronterizo), Pinduoduo y Douyin a lo largo de semanas, canales y dispositivos.
-  * Las herramientas y los grupos sociales monitorizan precios antes, durante y después de Double 11 para señalar las gangas falsas.
+  * Las herramientas y los grupos sociales vigilan precios antes, durante y después de Double 11 para señalar las gangas falsas.
 
-Cuanto más complejo se volvía el juego, más profesionales se volvían los jugadores al otro lado de la pantalla.
+Cuanto más complejo se hacía el juego, más profesionales se hacían los jugadores al otro lado de la pantalla.
 
 ## El comprador chino es un profesional del retail. El juego se volvió en su contra.
 

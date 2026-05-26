@@ -28,7 +28,7 @@ Los usuarios de ciudades menores participan activamente en el eCommerce chino y 
 
 ### Venta directa con livestream
 
-Kuaishou es líder en eCommerce con livestream, donde los creadores venden producto en directo durante sus emisiones. Este modelo funciona especialmente bien en Kuaishou, con tasas de conversión hasta tres o cinco veces superiores a las de Douyin.
+Kuaishou manda en el eCommerce por livestream, donde los creadores venden producto en directo durante sus emisiones. Este modelo tira especialmente bien en Kuaishou, con tasas de conversión hasta tres o cinco veces superiores a las de Douyin.
 
 ![Interfaz de live commerce en Kuaishou](/Images/insights/2024/12/kai-live-1024x585.png)
 
@@ -38,7 +38,7 @@ Los livestreams interactivos permiten a la marca responder preguntas, mostrar pr
 
 ### Afinar el horario
 
-Las marcas deberían emitir en las horas pico de Kuaishou, en torno a las 22:00, para maximizar alcance y engagement. Programar los streams con antelación ayuda a generar expectativa y a ganar visibilidad.
+Las marcas deberían emitir en las horas pico de Kuaishou, alrededor de las 22:00, para sacar el máximo a alcance y engagement. Programar los streams con tiempo ayuda a generar expectativa y a ganar visibilidad.
 
 ## Aprovechar la integración con el eCommerce chino
 

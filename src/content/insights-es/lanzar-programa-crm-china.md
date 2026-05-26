@@ -22,7 +22,7 @@ Acertar con el software es crítico. Muchas plataformas chinas están diseñadas
 
 ### Yonyou CRM
 
-Pionero del CRM en China, Yonyou se integra de forma fluida con plataformas como WeChat y QQ. Su propuesta va más allá de la gestión de clientes: cubre también soluciones de gestión financiera y de personal. Una buena opción para pymes que buscan un sistema todo en uno.
+Pionero del CRM en China, Yonyou encaja sin fricción con plataformas como WeChat y QQ. Su propuesta va más allá de la gestión de clientes: cubre también soluciones de gestión financiera y de personal. Una buena baza para pymes que buscan un sistema todo en uno.
 
 ### NeoCRM (Xiaoshouyi)
 
@@ -34,7 +34,7 @@ Pensado para ser asequible, Fxiaoke es popular entre los negocios pequeños. Cub
 
 ### Tencent Qidian
 
-Desarrollado por Tencent, este CRM brilla al aprovechar el dato del ecosistema del grupo, WeChat y QQ. Recolecta información de forma centralizada y se integra con redes sociales. Ideal para compañías centradas en maximizar la interacción con el cliente a través de redes sociales.
+Desarrollado por Tencent, este CRM brilla al tirar del dato del ecosistema del grupo, WeChat y QQ. Recoge la información de forma centralizada y encaja con redes sociales. Ideal para compañías centradas en sacar el máximo a la interacción con el cliente a través de redes sociales.
 
 ## Aprovechar los mini-programas de CRM en WeChat
 
@@ -42,7 +42,7 @@ WeChat, con más de mil millones de usuarios mensuales activos, es la columna ve
 
 ### Youzan
 
-Con su gestión de tienda integrada en WeChat, Youzan es ideal para negocios que buscan una solución eCommerce completa. La capacidad para generar informes y seguir comportamientos de compra permite ajustar la estrategia en tiempo real. Encaja con minoristas y pequeños negocios que quieren una plataforma de ventas y marketing fluida dentro de WeChat.
+Con su gestión de tienda integrada en WeChat, Youzan es ideal para negocios que buscan una solución eCommerce completa. La capacidad para generar informes y seguir comportamientos de compra deja ajustar la estrategia al vuelo. Encaja con minoristas y pequeños negocios que quieran una plataforma de ventas y marketing sin saltos dentro de WeChat.
 
 ### Drip
 

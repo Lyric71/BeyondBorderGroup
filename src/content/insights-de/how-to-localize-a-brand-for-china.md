@@ -1,27 +1,27 @@
 ---
 title: "Wie lokalisiert man eine Marke für China?"
-description: "Lokalisierung einer Marke für China verlangt das Verständnis kultureller Normen, die Übersetzung von Inhalten, die Anpassung an lokale Vorlieben und die Erfüllung der Vorschriften. So erreichen Sie diesen riesigen Konsumentenmarkt."
+description: "Eine Marke für China zu lokalisieren, verlangt das Verständnis kultureller Normen, die Übersetzung von Inhalten, die Anpassung an lokale Vorlieben und die Erfüllung der Vorschriften. So erreichen Sie diesen riesigen Käufermarkt."
 pubDate: "2023-02-03"
 author: "Beyond Border Group"
 category: "Brand & Localization"
-tags: ["China-Markteintritt", "Markenlokalisierung", "Kulturelle Anpassung", "Chinesische Verbraucher", "Marktstrategie"]
+tags: ["China-Markteintritt", "Markenlokalisierung", "Kulturelle Anpassung", "Chinesische Käufer", "Marktstrategie"]
 heroImage: "/Images/insights/how-to-localize-a-brand-for-china.png"
 heroImageAlt: "Konzeptbild zur Marken-Internationalisierung"
 ---
 
 ## Wie lokalisiert man eine Marke für China?
 
-Um eine Marke wirkungsvoll für den [chinesischen Markt](/de/nach-china/markteintrittsberatung) zu [lokalisieren](/de/nach-china/marke-und-lokalisierung), zählt das Verständnis der einzigartigen kulturellen, gesellschaftlichen und wirtschaftlichen Faktoren in China. Mit über 1,4 Milliarden Menschen ist das Land einer der grössten und am schnellsten wachsenden Konsumentenmärkte der Welt. Es ist zugleich ein komplexer Markt mit eigenen Normen, Vorlieben und Vorschriften.
+Um eine Marke wirkungsvoll für den [chinesischen Markt](/de/nach-china/markteintrittsberatung) zu [lokalisieren](/de/nach-china/marke-und-lokalisierung), zählt das Verständnis der einzigartigen kulturellen, gesellschaftlichen und wirtschaftlichen Faktoren in China. Mit über 1,4 Milliarden Menschen ist das Land einer der grössten und am schnellsten wachsenden Käufermärkte der Welt. Es ist zugleich ein komplexer Markt mit eigenen Normen, Vorlieben und Vorschriften.
 
-Mit den folgenden Schritten lokalisieren Sie Ihre Marke und sprechen chinesische Verbraucher überzeugend an.
+Mit den folgenden Schritten lokalisieren Sie Ihre Marke und sprechen chinesische Käufer überzeugend an.
 
 ### 1. Den Markt erforschen
 
-Ein tiefes Verständnis von Kultur, Werten und Vorlieben Ihrer Zielgruppe ist der Ausgangspunkt. Marktforschung, Befragungen und Fokusgruppen helfen, die Treiber chinesischer Verbraucher zu erfassen: Was sie motiviert, was sie wertschätzen, was sie von einer Marke erwarten.
+Ein tiefes Verständnis von Kultur, Werten und Vorlieben Ihrer Zielgruppe ist der Ausgangspunkt. Marktforschung, Befragungen und Fokusgruppen helfen, die Treiber chinesischer Käufer zu erfassen: Was sie motiviert, was sie wertschätzen, was sie von einer Marke erwarten.
 
 ### 2. Inhalte übersetzen
 
-Botschaften, Website und Werbematerial in vereinfachtes Chinesisch zu übersetzen, ist Pflicht. Englisch ist in China längst nicht so verbreitet wie in anderen Ländern, Verbraucher vertrauen einer Marke eher, die ihre Sprache spricht. Ton, Stil und Wortwahl sollten an chinesische kulturelle Normen angepasst werden.
+Botschaften, Website und Werbematerial in vereinfachtes Chinesisch zu übersetzen, ist Pflicht. Englisch ist in China längst nicht so verbreitet wie in anderen Ländern. Käufer vertrauen einer Marke eher, die ihre Sprache spricht. Ton, Stil und Wortwahl gehören an chinesische kulturelle Normen angepasst.
 
 ### 3. An lokale Normen anpassen
 
@@ -33,7 +33,7 @@ Beliebte Social-Plattformen wie WeChat und Weibo sind in China weit verbreitet. 
 
 ### 5. Mit lokalen Influencern arbeiten
 
-Partnerschaften mit lokalen Influencern, ob Blogger oder Prominente, erhöhen Bekanntheit und Glaubwürdigkeit im chinesischen Markt. Influencer-[Marketing](/de/in-china-wachsen/kampagnen) ist in China besonders stark, Verbraucher schenken Empfehlungen aus vertrauten Quellen Glauben.
+Partnerschaften mit lokalen Influencern, ob Blogger oder Prominente, erhöhen Bekanntheit und Glaubwürdigkeit im chinesischen Markt. Influencer-[Marketing](/de/in-china-wachsen/kampagnen) ist in China besonders stark. Käufer schenken Empfehlungen aus vertrauten Quellen Glauben.
 
 ### 6. Vorschriften einhalten
 
@@ -45,4 +45,4 @@ Ein starker Kundenservice ist in China entscheidend, Kundenerlebnis wird hoch ge
 
 ## Fazit
 
-Eine Marke für China zu lokalisieren, verlangt das tiefe Verständnis von Kultur, Werten und Vorlieben Ihrer Zielgruppe. Mit den genannten Schritten gelingt die Lokalisierung, Sie erreichen chinesische Verbraucher und bauen eine starke Markenposition in diesem lukrativen Markt auf.
+Eine Marke für China zu lokalisieren, verlangt ein tiefes Verständnis von Kultur, Werten und Vorlieben Ihrer Zielgruppe. Mit den genannten Schritten gelingt die Lokalisierung, Sie erreichen chinesische Käufer und bauen eine starke Markenposition in diesem lukrativen Markt auf.

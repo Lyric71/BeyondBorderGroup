@@ -11,11 +11,11 @@ heroImageAlt: "Chinesische Suchmaschine"
 
 ## Der chinesische Suchmaschinen-Markt
 
-Die chinesische Internet-Landschaft ist eigenständig. Behördliche Regelungen und der Grosse Firewall blockieren viele internationale Websites und Suchmaschinen. Dadurch sind mehrere inländische Suchmaschinen gross geworden, die sich speziell an chinesische Nutzer richten. Ab 2024 dominieren Baidu, Sogou, Shenma und Haosuo, jede mit eigenen Stärken und Zielgruppen.
+Die chinesische Internet-Landschaft ist eigenständig. Behördliche Regelungen und die Great Firewall blockieren viele internationale Websites und Suchmaschinen. Dadurch sind mehrere inländische Suchmaschinen gross geworden, die sich speziell an chinesische Nutzer richten. Im Jahr 2024 dominieren Baidu, Sogou, Shenma und Haosuo, jede mit eigenen Stärken und Zielgruppen.
 
 ## Warum chinesische Suchmaschinen im Marketing zählen
 
-Suchmaschinen spielen im chinesischen Digital-Marketing eine zentrale Rolle. Sie prägen SEO-Strategien, [Kampagnen](/de/in-china-wachsen/kampagnen) und das Konsumverhalten. Wer weiss, welche Plattformen Priorität haben, hebt seinen Erfolg im Markt deutlich.
+Suchmaschinen spielen im chinesischen Digital-Marketing eine zentrale Rolle. Sie prägen SEO-Strategien, [Kampagnen](/de/in-china-wachsen/kampagnen) und das Kaufverhalten. Wer weiss, welche Plattformen Priorität haben, hebt seinen Erfolg im Markt deutlich.
 
 ## Top-Suchmaschinen in China 2024
 
@@ -35,7 +35,7 @@ Sogou, gestartet 2004, ist die zweitgrösste Suchmaschine. 2021 wurde sie Tochte
 
 #### Marketing auf Sogou
 
-Sogou-SEO setzt auf Originalinhalt und Site-Autorität. Backlinks zählen, oft eher in Menge als in Qualität. Meta-Beschreibungen sind weniger wichtig, Title-Tags spielen eine zentrale Rolle. Die Tencent-Anbindung öffnet Marketing-Chancen in Social-Media- und Messaging-Apps.
+SEO auf Sogou setzt auf Originalinhalt und Site-Autorität. Backlinks zählen, eher in der Menge als in der Qualität. Meta-Beschreibungen treten in den Hintergrund, Title-Tags spielen die Hauptrolle. Die Tencent-Anbindung öffnet Marketing-Chancen in Social-Media- und Messaging-Apps.
 
 ![Sogou-Oberfläche](/Images/insights/2024/07/sougou.jpg)
 

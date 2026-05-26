@@ -27,7 +27,7 @@ Für jedes Unternehmen, das in China online präsent sein möchte, ob über eine
 
 ### Warum es für eCommerce und Digital-Marketing zählt
 
-China ist der grösste eCommerce-Markt der Welt, die Verbraucher erwarten schnelle, verlässliche Zugänge. Eine ICP-Lizenz macht die Website nicht nur legal zugänglich, sie hebt auch die Glaubwürdigkeit. Chinesische Verbraucher vertrauen Unternehmen eher, die die lokalen Regeln befolgen, das stärkt Marke und Marketing.
+China ist der grösste eCommerce-Markt der Welt, die Käufer erwarten schnelle, verlässliche Zugänge. Eine ICP-Lizenz macht die Website nicht nur legal zugänglich, sie hebt auch die Glaubwürdigkeit. Chinesische Käufer vertrauen Unternehmen eher, die die lokalen Regeln befolgen, das stärkt Marke und Marketing.
 
 ## Welche ICP-Lizenz braucht Ihr Unternehmen?
 
@@ -45,7 +45,7 @@ Für nicht-kommerzielle Websites, die Informationen teilen, aber keinen Verkauf 
 
 ### ICP-Zheng (许可证 oder ICP-Commercial-License)
 
-Für jede kommerzielle Aktivität, also Produktverkauf, kostenpflichtige Services oder Werbung. Pflicht für eCommerce-Unternehmen, Online-Service-Plattformen und Digital-Marketing, das chinesische Verbraucher direkt anspricht.
+Für jede kommerzielle Aktivität, also Produktverkauf, kostenpflichtige Services oder Werbung. Pflicht für eCommerce-Unternehmen, Online-Service-Plattformen und Digital-Marketing, das chinesische Käufer direkt anspricht.
 
 **Anforderungen:**
 
@@ -138,7 +138,7 @@ Viele beliebte Zahlungsplattformen wie Alipay und WeChat Pay setzen eine ICP-Liz
 
 ### Rechtssicherheit und Risikoreduktion
 
-Die Lizenz schützt vor Bussen, Sperrungen und anderen Massnahmen und stellt die Einhaltung der strengen Cybersicherheits- und Inhalts-Gesetze sicher.
+Die Lizenz schützt vor Bussen, Sperrungen und anderen Massnahmen und stellt die Einhaltung der strengen Cybersicherheits- und Content-Gesetze sicher.
 
 ## Nach der Lizenzerteilung
 

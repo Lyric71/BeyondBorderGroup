@@ -23,19 +23,19 @@ Douyin es una pieza central del [social commerce](/es/crecer-en-china/comercio-s
 
 ## El ecosistema de eCommerce de Douyin
 
-Douyin ha construido un ecosistema de eCommerce que mezcla contenido y comercio. Para que un negocio funcione en la plataforma, conviene conocer bien sus herramientas y palancas, y maximizar engagement y conversión.
+Douyin ha levantado un ecosistema de eCommerce que mezcla contenido y comercio. Para que un negocio funcione en la plataforma, conviene conocer bien sus herramientas y palancas, y sacar el máximo a engagement y conversión.
 
 ### Funcionalidades de eCommerce en Douyin:
 
-* **Tienda Flagship Douyin:** un escaparate personalizable donde la marca muestra producto y vende directamente dentro de la app.
+* **Tienda Flagship Douyin:** un escaparate personalizable donde la marca enseña producto y vende directamente dentro de la app.
 
 ![Interfaz de tienda Flagship en Douyin](/Images/insights/2024/10/Douyin-flagship-store.jpg)
 
-* **Enlaces de compra en vídeos:** Douyin permite añadir enlaces de producto en los vídeos, así el usuario compra mientras los ve.
+* **Enlaces de compra en vídeos:** Douyin deja añadir enlaces de producto en los vídeos, así el usuario compra mientras los ve.
 
-* **Livestream:** una herramienta potente para hacer demostraciones de producto en directo, muy usada en las [campañas](/es/crecer-en-china/campanas) de livestream en China.
+* **Livestream:** una herramienta potente para enseñar producto en directo, muy usada en las [campañas](/es/crecer-en-china/campanas) de livestream en China.
 
-Esta combinación de contenido y comercio distingue a Douyin del resto de plataformas de eCommerce en China. Al apoyarse en estas funcionalidades, una marca interactúa con el usuario en el mismo momento en que consume contenido.
+Esta mezcla de contenido y comercio separa a Douyin del resto de plataformas de eCommerce en China. Al tirar de estas funcionalidades, una marca dialoga con el usuario en el mismo momento en que consume contenido.
 
 ## Cómo montar una tienda en Douyin
 
@@ -49,7 +49,7 @@ Para empezar a vender en Douyin hay que abrir una cuenta de empresa Douyin China
 
 ## Crear contenido que enganche en Douyin
 
-El corazón de Douyin es el contenido. Las marcas tienen que producir vídeos que sean informativos y, sobre todo, entretenidos. El contenido que capta atención y provoca interacción tiene más posibilidades de funcionar, lo que se traduce en mayor visibilidad en las redes sociales chinas.
+El corazón de Douyin es el contenido. Las marcas tienen que producir vídeos que sean informativos y, sobre todo, entretenidos. El contenido que atrapa atención y provoca interacción tiene más boletos de tirar, lo que se traduce en más visibilidad en las redes sociales chinas.
 
 ### Ideas de contenido:
 

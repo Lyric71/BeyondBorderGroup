@@ -12,7 +12,7 @@ heroImageAlt: "Coverbild Social Commerce in China"
 
 ## Social Commerce in China: Plattformen, Strategien, Marktwirkung
 
-[Social Commerce](/de/in-china-wachsen/social-commerce) hat den Online-Einkauf revolutioniert, besonders in China. Diese Mischung aus sozialer Interaktion und Online-Handel hat ein lebendiges Ökosystem geschaffen, in dem Verbraucher mit Marken, Influencern und untereinander auf neue Weise interagieren. Chinas Social-Commerce-[Plattformen](/de/china-verstehen/plattformen) wie Xiaohongshu, WeChat, Douyin, Taobao, Pinduoduo und Weibo führen diesen Wandel an. Sie nutzen nutzergenerierte Inhalte, KOLs und Funktionen wie Livestream für ein einbindendes Einkaufserlebnis.
+[Social Commerce](/de/in-china-wachsen/social-commerce) hat den Online-Einkauf revolutioniert, besonders in China. Diese Mischung aus sozialer Interaktion und Online-Handel hat ein lebendiges Ökosystem geschaffen, in dem Käufer mit Marken, Influencern und untereinander auf neue Weise interagieren. Chinas Social-Commerce-[Plattformen](/de/china-verstehen/plattformen) wie Xiaohongshu, WeChat, Douyin, Taobao, Pinduoduo und Weibo führen diesen Wandel an. Sie nutzen nutzergenerierte Inhalte, KOLs und Funktionen wie Livestream für ein einbindendes Einkaufserlebnis.
 
 ## Aufstieg des Social Commerce
 
@@ -22,7 +22,7 @@ Social Commerce in China verbindet den Komfort des eCommerce mit dem Engagement 
 
 ### 1. Nutzergenerierte Inhalte
 
-UGC steht im Herz des Social Commerce in China. Verbraucher teilen Erfahrungen, Meinungen und Bilder, das beeinflusst die Kaufentscheidungen anderer. Dieser gemeinschaftliche Austausch baut Vertrauen und Authentizität auf, UGC ist damit ein zentrales Werkzeug.
+UGC steht im Herz des Social Commerce in China. Käufer teilen Erfahrungen, Meinungen und Bilder, das beeinflusst die Kaufentscheidungen anderer. Dieser gemeinschaftliche Austausch baut Vertrauen und Authentizität auf, UGC ist damit ein zentrales Werkzeug.
 
 ### 2. Die Rolle der KOL
 
@@ -38,7 +38,7 @@ Wer im Wettbewerb vorn bleiben will, muss Strategien stetig anpassen und Innovat
 
 ## Wirkung des Social Commerce in China
 
-Social Commerce gewinnt stetig Einfluss. Klassische eCommerce-Kanäle dominieren noch, doch Social Commerce wächst rasch, getragen von UGC, KOL und Livestream. Plattformen wie Xiaohongshu, WeChat und Douyin (chinesisches TikTok) führen den Wandel an und bieten Unternehmen einzigartige Wege, mit Verbrauchern zu sprechen.
+Social Commerce gewinnt stetig Einfluss. Klassische eCommerce-Kanäle dominieren noch, doch Social Commerce wächst rasch, getragen von UGC, KOL und Livestream. Plattformen wie Xiaohongshu, WeChat und Douyin (chinesisches TikTok) führen den Wandel an und bieten Unternehmen einzigartige Wege, mit Käufern zu sprechen.
 
 ## Die wichtigsten Plattformen
 
@@ -111,8 +111,8 @@ Mit Weibo Xiaodian zur Social-Commerce-Bühne geworden. Marken steuern Bestände
 
 ## Warum China den Social Commerce anführt
 
-Chinas Vormachtstellung kommt aus der digitalen Infrastruktur und der Konsumkultur. Tencent und Alibaba bauen Ökosysteme, die eCommerce, Social Media und Bezahlsysteme verbinden. Verbraucher durchlaufen reibungslos die Reise vom Feed bis zur Bezahlung.
+Chinas Vormachtstellung kommt aus der digitalen Infrastruktur und der Konsumkultur. Tencent und Alibaba bauen Ökosysteme, die eCommerce, Social Media und Bezahlsysteme verbinden. Käufer durchlaufen reibungslos die Reise vom Feed bis zur Bezahlung.
 
-Kulturelle Eigenheiten spielen eine Rolle. Chinesische Verbraucher mögen interaktive und einbindende digitale Erlebnisse, Livestream und mobile Video-Apps tragen sowohl Unterhaltung als auch Handel. Auf diesem Fundament konnte Social Commerce gedeihen.
+Kulturelle Eigenheiten spielen eine Rolle. Chinesische Käufer mögen interaktive und einbindende digitale Erlebnisse, Livestream und mobile Video-Apps tragen sowohl Unterhaltung als auch Handel. Auf diesem Fundament konnte Social Commerce gedeihen.
 
-Die Plattformen haben die Art verändert, wie Verbraucher einkaufen und interagieren. UGC, KOL-Einfluss und Livestream schaffen ein dynamisches Erlebnis. Mit Technologie und Erwartungen, die weiter wachsen, müssen Unternehmen ihre Strategien anpassen. Mit Xiaohongshu, WeChat, Taobao, Pinduoduo und Weibo an der Spitze sieht die Zukunft des Social Commerce in China vielversprechend aus, mit klaren Chancen, Audiences sinnvoll zu erreichen.
+Die Plattformen haben die Art verändert, wie Käufer einkaufen und interagieren. UGC, KOL-Einfluss und Livestream schaffen ein dynamisches Erlebnis. Mit Technologie und Erwartungen, die weiter wachsen, müssen Unternehmen ihre Strategien laufend nachziehen. Mit Xiaohongshu, WeChat, Taobao, Pinduoduo und Weibo an der Spitze sieht die Zukunft des Social Commerce in China vielversprechend aus, mit klaren Chancen, Zielgruppen sinnvoll zu erreichen.

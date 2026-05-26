@@ -73,7 +73,7 @@ Las grandes [plataformas](/es/conocer-china/plataformas) de comercio chinas tien
 
 Si hay una tendencia que explica 2025, es el comercio instantáneo.
 
-El comercio instantáneo no es "entrega rápida" como prestación. Es una nueva expectativa de retail, construida sobre inventario cercano, fulfilment local y enrutado nativo en app. Cambia lo que el consumidor considera normal en el día a día.
+El comercio instantáneo no es "entrega rápida" como prestación. Es una nueva expectativa de retail, levantada sobre inventario cercano, fulfilment local y enrutado nativo en app. Cambia lo que el consumidor da por normal en el día a día.
 
 Las ventas de retail instantáneo alcanzarán 1,003 billones de RMB en 2025, con un crecimiento por encima del total del eCommerce.
 

@@ -17,7 +17,7 @@ Mit sauberer Hosting-[Konfiguration](/de/in-china-wachsen/website), den richtige
 
 ## Warum es zählt, in China zu hosten
 
-Eine Website in China zu hosten geht über die blosse Präsenz hinaus. Es bedeutet, eine schnelle, verlässliche und kulturell zugeschnittene Erfahrung zu liefern. Der Grosse Firewall regelt den Internet-Datenverkehr und bevorzugt lokal gehostete Sites. Im Ausland gehostete Seiten laden oft langsamer, sind schwer erreichbar oder werden blockiert.
+Eine Website in China zu hosten geht über die blosse Präsenz hinaus. Es bedeutet, eine schnelle, verlässliche und kulturell zugeschnittene Erfahrung zu liefern. Die Great Firewall regelt den Internet-Datenverkehr und bevorzugt lokal gehostete Sites. Im Ausland gehostete Seiten laden oft langsamer, sind schwer erreichbar oder werden blockiert.
 
 Lokal hosten heisst:
 
@@ -31,7 +31,7 @@ Die Einrichtung läuft über mehrere Etappen:
 
 ### Eine chinesische Domain registrieren
 
-Eine Domain mit .cn-Endung lokalisiert die Website und hebt das Ranking in chinesischen Suchmaschinen. Sie signalisiert Glaubwürdigkeit und Vertrauen bei lokalen Verbrauchern.
+Eine Domain mit .cn-Endung lokalisiert die Website und hebt das Ranking in chinesischen Suchmaschinen. Sie signalisiert Glaubwürdigkeit und Vertrauen bei lokalen Käufern.
 
 ![CN-Domain](/Images/insights/2025/01/cn-domain-1024x598.png)
 

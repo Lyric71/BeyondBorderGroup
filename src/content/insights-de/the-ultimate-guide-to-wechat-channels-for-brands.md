@@ -28,7 +28,7 @@ WeChat Channels bietet Marken mehrere wertvolle Funktionen, von Kurzvideo über 
 
 **Audience-Befunde**
 
-Channels zieht eine etwas ältere Audience als Douyin an, mit starkem Interesse an informativen, bildenden und Lifestyle-Inhalten. Das macht die Plattform attraktiv für Performance-Marketing und für Marken, die hochwertige Käufer in Tech, Mode und mehr ansprechen.
+Channels zieht eine etwas ältere Zielgruppe als Douyin an, mit starkem Interesse an informativen, bildungsnahen und Lifestyle-Inhalten. Das macht die Plattform attraktiv für Performance-Marketing und für Marken, die hochwertige Käufer in Tech, Mode und mehr ansprechen.
 
 ## Warum WeChat Channels für eCommerce und Markenarbeit zählen
 

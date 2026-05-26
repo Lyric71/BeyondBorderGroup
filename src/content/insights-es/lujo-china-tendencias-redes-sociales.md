@@ -26,11 +26,11 @@ Un uso eficaz de las redes sociales resulta clave para las marcas de lujo que qu
 
 ## Construir fidelidad
 
-Mantener al cliente fiel es uno de los grandes retos del lujo. Los canales online propios, como los mini-programas y las cuentas oficiales en WeChat, ofrecen un entorno controlado para reproducir la experiencia de compra de una boutique. Estas plataformas facilitan una conexión emocional con el consumidor a través de contenido personalizado y colaboraciones con influencers.
+Retener al cliente es uno de los grandes retos del lujo. Los canales online propios, como los mini-programas y las cuentas oficiales en WeChat, dan un entorno controlado para reproducir la experiencia de compra de una boutique. Estas plataformas facilitan la conexión emocional con el consumidor a través de contenido personalizado y colaboraciones con influencers.
 
 ## Crecer con los datos
 
-Los datos son un activo muy valioso para las marcas de lujo que buscan crecer. Recoger y analizar la información del consumidor permite generar insights estratégicos y optimizar los esfuerzos de [marketing](/es/crecer-en-china/campanas). El Data Think Tank de Tencent aporta herramientas para identificar audiencias objetivo, optimizar la asignación de presupuesto y mejorar las tasas de conversión. Actúa como brújula para las marcas que navegan el mercado chino.
+Los datos son un activo muy valioso para las marcas de lujo que buscan crecer. Recoger y analizar la información del consumidor permite sacar insights estratégicos y afinar los esfuerzos de [marketing](/es/crecer-en-china/campanas). El Data Think Tank de Tencent aporta herramientas para identificar audiencias objetivo, afinar la asignación de presupuesto y mejorar las tasas de conversión. Hace de brújula para las marcas que se mueven en el mercado chino.
 
 ## Estrategias omnicanal
 
@@ -42,7 +42,7 @@ Los KOL influyen en la percepción del consumidor y mueven ventas. Las marcas de
 
 ## Social commerce y lujo
 
-El social commerce gana terreno en China, donde el consumidor prefiere la comodidad de comprar a través de redes sociales. Casas como Cartier o Gucci usan las soluciones de tráfico de Tencent para ampliar su base de clientes y empujar ventas. El social commerce ofrece una vía directa y atractiva para llegar al consumidor y mover conversión.
+El social commerce gana terreno en China, donde el consumidor prefiere la comodidad de comprar desde las redes sociales. Casas como Cartier o Gucci tiran de las soluciones de tráfico de Tencent para ampliar su base de clientes y empujar ventas. El social commerce abre una vía directa y atractiva para llegar al consumidor y mover conversión.
 
 ## Construir valor de marca con contenido
 

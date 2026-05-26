@@ -23,7 +23,7 @@ Los influencers son algo más que canales para difundir mensajes de marca: son v
 
 ## El factor confianza
 
-En un mundo saturado de publicidad, la confianza se ha vuelto un bien escaso. Los influencers cubren ese hueco creando vínculos genuinos con sus seguidores. La autenticidad de su contenido alimenta esa confianza y refuerza el peso de sus recomendaciones. Como el consumidor busca cada vez más autenticidad, alinear la marca con influencers que conecten de verdad con su audiencia genera confianza y credibilidad para sus productos o servicios.
+En un mundo saturado de publicidad, la confianza se ha vuelto un bien escaso. Los influencers cubren ese hueco tejiendo vínculos genuinos con sus seguidores. La autenticidad de su contenido alimenta esa confianza y refuerza el peso de sus recomendaciones. Como el consumidor busca cada vez más autenticidad, alinear la marca con influencers que conecten de verdad con su audiencia da confianza y credibilidad a sus productos o servicios.
 
 ## Tipos de influencers
 
@@ -39,15 +39,15 @@ Encuentran un equilibrio entre alcance y engagement. Los micro-influencers ofrec
 
 ### Influencers de gama media (50.000 a 250.000 seguidores)
 
-Esta categoría combina un alcance considerable con un nivel de influencia importante. Llegan a una audiencia amplia sin perder del todo la conexión personal.
+Esta categoría mezcla un alcance considerable con un nivel de influencia importante. Llegan a una audiencia amplia sin perder del todo la conexión personal.
 
 ### Macro-influencers (250.000 a 1.000.000 de seguidores)
 
-Con una comunidad significativa, los macro-influencers aportan un alcance amplio. Son ideales para marcas con públicos objetivos más extensos, ya que combinan influencia y escala.
+Con una comunidad amplia, los macro-influencers aportan un alcance grande. Son una buena baza para marcas con públicos objetivos más extensos, porque mezclan influencia y escala.
 
 ### Mega-influencers (más de 1.000.000 de seguidores)
 
-Con un estatus casi de celebridad, ofrecen un alcance masivo. Su impacto puede ser más diluido y la colaboración suele ser más costosa.
+Con un estatus casi de celebridad, ofrecen un alcance masivo. Su impacto puede ser más diluido y la colaboración suele ser más cara.
 
 ## Qué tener en cuenta al elegir un influencer
 

@@ -1,6 +1,6 @@
 ---
 title: "Weibo-Marketing: Social Commerce in China meistern"
-description: "Weibo, Chinas führende Social-Plattform mit über 600 Millionen monatlich aktiven Nutzern, bietet Marken grosse Chancen, technikaffine Konsumenten zu erreichen. Der Leitfaden zeigt Konto-Aufbau, Content, KOL-Partnerschaften und eCommerce-Integration."
+description: "Weibo, Chinas führende Social-Plattform mit über 600 Millionen monatlich aktiven Nutzern, bietet Marken grosse Chancen, technikaffine Käufer zu erreichen. Der Leitfaden zeigt Konto-Aufbau, Content, KOL-Partnerschaften und eCommerce-Integration."
 pubDate: "2024-12-13"
 author: "Beyond Border Group"
 category: "Platforms"
@@ -228,4 +228,4 @@ Werbekosten variieren nach Kampagne, Targeting und Format und sind nicht in der 
 
 ## Fazit
 
-Weibo ist eine lebendige Plattform mit grossen Chancen, Chinas digital aktive Konsumentenbasis zu erreichen. Wer Funktionen versteht, Werkzeuge nutzt und sich an lokale Trends ausrichtet, erzielt klare Erfolge. Ob Neueinsteiger oder erfahrener Spieler, Weibo gehört in das Marketing-Playbook in China.
+Weibo ist eine lebendige Plattform mit grossen Chancen, Chinas digital aktive Käuferbasis zu erreichen. Wer Funktionen versteht, Werkzeuge nutzt und sich an lokale Trends ausrichtet, erzielt klare Erfolge. Ob Neueinsteiger oder erfahrener Spieler, Weibo gehört in das Marketing-Playbook in China.

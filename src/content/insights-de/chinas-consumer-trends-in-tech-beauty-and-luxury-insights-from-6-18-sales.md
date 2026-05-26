@@ -26,11 +26,11 @@ Die Attraktivität dieser Tech-Produkte kommt aus steilen Rabatten und einer agg
 
 Beauty war eine weitere Top-Kategorie. In den ersten 30 Minuten erzielten Marken wie Proya, Lancôme, L'Oréal und Estée Lauder je über 100 Millionen RMB. Der Trend zeigt die starke Nachfrage nach Premium-Beauty in China, getragen vom wachsenden Stellenwert von Pflege und Selbstpräsentation.
 
-Die [Kampagnen](/de/in-china-wachsen/kampagnen) dieser Marken setzen meist auf die chinesischen Social-Plattformen und schaffen ein einbindendes Einkaufserlebnis, das junge, technikaffine Verbraucher abholt. Rabatte und Sonderangebote während des Festivals brachten zusätzlich Tempo.
+Die [Kampagnen](/de/in-china-wachsen/kampagnen) dieser Marken setzen vor allem auf die chinesischen Social-Plattformen und schaffen ein einbindendes Einkaufserlebnis, das junge, technikaffine Käufer abholt. Rabatte und Sonderangebote während des Festivals haben zusätzlich Tempo gemacht.
 
 ## Luxusmarken fangen die Aufmerksamkeit
 
-Luxusmarken liefen ausserordentlich stark. Über 200 Marken aus den fünf grössten Luxuskonzernen nahmen teil. Häuser wie Miu Miu und Valentino überschritten in der ersten Stunde ihre Vorjahres-Tagesumsätze. Das spricht für die starke Nachfrage nach Luxus in China, mit Verbrauchern, die bereit sind, in hochwertige Produkte zu investieren.
+Luxusmarken liefen aussergewöhnlich stark. Über 200 Marken aus den fünf grössten Luxuskonzernen waren dabei. Häuser wie Miu Miu und Valentino haben in der ersten Stunde ihren Vorjahres-Tagesumsatz übertroffen. Das spricht für die starke Nachfrage nach Luxus in China, mit Käufern, die bereit sind, in hochwertige Produkte zu investieren.
 
 Der Erfolg im Luxus geht auf gezielte Kampagnen zurück, die Exklusivität und Prestige betonen. Sonderaktionen und zeitlich begrenzte Angebote schufen Dringlichkeit und bewegten zum schnellen Kauf.
 
@@ -40,7 +40,7 @@ Der Erfolg im Luxus geht auf gezielte Kampagnen zurück, die Exklusivität und P
 
 Das diesjährige 6.18 markierte einen klaren Wechsel in der Einkaufsdynamik. Alibaba verzichtete auf die klassische Pre-Sale-Phase und arbeitete stattdessen mit zwei Einkaufsfenstern vom 20. Mai bis zum 20. Juni. Beliebte In-App-Verkaufsflächen kehrten mit Halbpreisangeboten zurück, neben klassischen Rabatten wie „50 RMB ab 300 RMB Umsatz".
 
-Diese Anpassungen schufen ein direkteres, dynamischeres Einkaufserlebnis und brachten Verbraucher tiefer in die Plattformen. Die Besuchszahlen der 88-VIP-Loyalitätsmitglieder von Tmall stiegen am ersten Tag um 40 Prozent gegenüber Vorjahr. Die Zahl der Mitglieder mit Bestellungen wuchs um über 50 Prozent, der durchschnittliche Bestellwert um über 30 Prozent.
+Diese Anpassungen schufen ein direkteres, dynamischeres Einkaufserlebnis und brachten Käufer tiefer in die Plattformen. Die Besuchszahlen der 88-VIP-Loyalitätsmitglieder von Tmall stiegen am ersten Tag um 40 Prozent gegenüber Vorjahr. Die Zahl der Mitglieder mit Bestellungen wuchs um über 50 Prozent, der durchschnittliche Bestellwert um über 30 Prozent.
 
 ## Auch kleine Unternehmen profitieren
 
@@ -58,4 +58,4 @@ Personalisiertes Marketing auf Basis von Daten und Vorlieben spielte eine zentra
 
 ## Fazit
 
-Die Daten aus dem 6.18 liefern wertvolle Einblicke in Chinas Konsumtrends. Die starke Performance in Tech, Beauty und Luxus zeigt die wandelnden Vorlieben und die wachsende Kaufkraft chinesischer Verbraucher. Mit strategischem Marketing und dynamischen Verkaufstaktiken können Marken weiter von diesen Trends profitieren und in einem der lukrativsten Märkte der Welt wachsen.
+Die Daten aus dem 6.18 liefern wertvolle Einblicke in die chinesischen Kauftrends. Die starke Performance in Tech, Beauty und Luxus zeigt die wandelnden Vorlieben und die wachsende Kaufkraft der chinesischen Käufer. Mit strategischem Marketing und dynamischen Verkaufstaktiken können Marken weiter von diesen Trends profitieren und in einem der lukrativsten Märkte der Welt wachsen.

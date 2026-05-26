@@ -16,7 +16,7 @@ Chinesische Unternehmen und digitale [Marketing](/de/in-china-wachsen/kampagnen)
 
 Wichtige Marketing-Anwendungen:
 
-- **Personalisierte Empfehlungen:** Algorithmen analysieren Konsumdaten und liefern passende Produktvorschläge, das hebt die Konversion.
+- **Personalisierte Empfehlungen:** Algorithmen werten Kaufdaten aus und liefern passende Produktvorschläge, das hebt die Konversion.
 - **Dynamische Preise:** KI passt Preise in Echtzeit an Nachfrage, Wettbewerb und Verhalten an.
 - **Chatbots und Assistenten:** KI-gestützter Service liefert sofortige Antworten und persönliche Kaufberatung.
 
@@ -36,7 +36,7 @@ Diese Fortschritte erlauben Medienagenturen in China, Marken in ein kundenzentri
 - **AR-Shopping:** KI-gestützte AR-Tools zeigen Produkte im realen Umfeld, etwa virtuelle Anproben.
 - **Betrugserkennung:** KI identifiziert verdächtige Transaktionen und schützt die Käufer.
 
-Mit weiterer KI-Reifung wird der Cross-Border-eCommerce in China effizienter. Globale Marken erreichen Verbraucher reibungsloser.
+Mit weiterer KI-Reife wird der Cross-Border-eCommerce in China effizienter. Globale Marken erreichen Käufer reibungsloser.
 
 ## Wirkung der KI im Social Commerce
 
@@ -98,7 +98,7 @@ Diese Fortschritte haben Liefergeschwindigkeit und Genauigkeit deutlich gehoben 
 
 ## Ethik und Datenschutz
 
-Die rasche KI-Integration wirft wichtige Fragen zu Ethik und Datenschutz auf. Bei umfangreicher Datenerhebung muss China Innovation und Verbraucherrechte balancieren. Medienagenturen in China müssen diese Themen sorgfältig steuern, um Vertrauen zu halten.
+Die rasche KI-Integration wirft wichtige Fragen zu Ethik und Datenschutz auf. Bei umfangreicher Datenerhebung muss China Innovation und Verbraucherrechte in der Waage halten. Medienagenturen in China müssen diese Themen sorgfältig steuern, um Vertrauen zu halten.
 
 Die Regierung hat Regelungen wie das Datensicherheitsgesetz eingeführt, mit Transparenz- und Verantwortungspflichten. Diese Balance bleibt eine zentrale Aufgabe des chinesischen KI-Ökosystems.
 
@@ -128,4 +128,4 @@ Mit der Weiterentwicklung der Technologie bleiben Chinas Marketing und Handel an
 
 Chinas KI-Fortschritte krempeln Marketing und Handel um. Mit Unterstützung der Regierung, innovativen Unternehmen und starker Forschung ist das Land zur globalen KI-Macht geworden. Vom personalisierten Marketing bis zur effizienten Logistik ist die transformative Wirkung der KI in allen Bereichen sichtbar.
 
-Während China voranschreitet, treibt die Zusammenarbeit zwischen Regierung, akademischen Institutionen und Agenturen wie Branding-Agenturen in China weitere Innovation. Diese Fortschritte nützen Branchen und Verbrauchern und positionieren China als globalen KI-Treiber, der die Zukunft des Handels formt.
+Während China voranschreitet, treibt die Zusammenarbeit zwischen Regierung, akademischen Institutionen und Agenturen wie Branding-Agenturen in China weitere Innovation. Diese Fortschritte nützen Branchen und Käufern und positionieren China als globalen KI-Treiber, der die Zukunft des Handels formt.

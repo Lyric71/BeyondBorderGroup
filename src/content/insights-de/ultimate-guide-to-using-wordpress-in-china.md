@@ -36,7 +36,7 @@ WordPress selbst ist nicht verboten, doch viele übliche Drittdienste wie Google
 
 ### Langsame Performance
 
-Der Grosse Firewall filtert und überwacht den Datenverkehr. Sites auf ausländischen Servern laden langsamer. Im eCommerce schadet das dem Erlebnis und dem Umsatz.
+Die Great Firewall filtert und überwacht den Datenverkehr. Sites auf ausländischen Servern laden langsamer. Im eCommerce schadet das dem Erlebnis und dem Umsatz.
 
 ### Hosting-Beschränkungen
 

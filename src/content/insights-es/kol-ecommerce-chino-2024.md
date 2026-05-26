@@ -35,7 +35,7 @@ Estos KOL recomiendan productos prácticos del día a día y se dirigen sobre to
 * **Plataforma**: Xiaohongshu
 * **Seguidores**: 3,9 millones
 
-Lin Yilun se ha hecho un nombre con contenido sobre el hogar: organización doméstica, consejos para padres y recomendaciones de producto. Su tono cercano cuaja con fuerza entre la clase media urbana. Las colaboraciones gestionadas por una agencia de branding en China la eligen a menudo para [campañas](/es/crecer-en-china/campanas) cercanas pero con ambición aspiracional.
+Lin Yilun se ha hecho un nombre con contenido sobre el hogar: organización doméstica, consejos para padres y recomendaciones de producto. Su tono cercano cuaja con fuerza entre la clase media urbana. Las colaboraciones llevadas por una agencia de branding en China la escogen a menudo para [campañas](/es/crecer-en-china/campanas) cercanas pero con ambición aspiracional.
 
 ![Lin Yilun, KOL de estilo de vida](/Images/insights/2024/12/Lin-final.png)
 
@@ -44,7 +44,7 @@ Lin Yilun se ha hecho un nombre con contenido sobre el hogar: organización dom�
 * **Plataforma**: Xiaohongshu
 * **Seguidores**: 5,5 millones
 
-Papi Jiang combina humor y comentario social y engancha a su audiencia con una facilidad envidiable. Sabe meter el producto en sus sketches sin chirriar, algo poco habitual. Una de las preferidas de las marcas que buscan campañas creativas, narrativas, con sello editorial, gestionadas por una agencia creativa en China.
+Papi Jiang mezcla humor y comentario social y engancha a su audiencia con una facilidad envidiable. Sabe meter el producto en sus sketches sin chirriar, algo poco común. Una de las preferidas de las marcas que buscan campañas creativas, narrativas, con sello editorial, llevadas por una agencia creativa en China.
 
 ![Papi Jiang, humor y estilo de vida](/Images/insights/2024/12/papi-final.png)
 
@@ -57,7 +57,7 @@ Los KOL de viajes pesan en la promoción de destinos, equipamiento y producto pr
 * **Plataforma**: Xiaohongshu
 * **Seguidores**: 6,5 millones
 
-Winnie Wen muestra destinos de lujo, hoteles top y experiencias aspiracionales. Su público encaja con el consumidor de alta gama y aparece a menudo en campañas de agencias de medios chinas trabajando para marcas premium de viaje.
+Winnie Wen enseña destinos de lujo, hoteles top y experiencias aspiracionales. Su público encaja con el consumidor de alta gama y aparece a menudo en campañas de agencias de medios chinas trabajando para marcas premium de viaje.
 
 ![Winnie Wen, viajes de lujo](/Images/insights/2024/12/win-final.png)
 

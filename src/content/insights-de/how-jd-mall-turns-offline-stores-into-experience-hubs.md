@@ -70,7 +70,7 @@ JD verbindet den Mall eng mit seiner Haupt-App und seiner Datenschicht.
 
 Wer in der JD-App ein Produkt sucht, sieht möglicherweise den nächstgelegenen Mall und dessen [Kampagnen](/de/in-china-wachsen/kampagnen). Wer sich für einen Kurs anmeldet, dessen JD-ID wird mit diesem Besuch verknüpft. Elektronische Preisschilder halten Preise online und offline gleich und tragen QR-Codes, die „offline gesehen, online gekauft"-Verhalten messen.
 
-Das zählt, denn Ihre Investition in JD Mall muss an beidem gemessen werden, am Filial-Umsatz und am Aufschlag im gesamten JD-Online-Ökosystem. Jede Unstimmigkeit in Sortiment, Preis oder Botschaft zwischen JD online und JD Mall ist für Käufer sofort sichtbar.
+Das zählt, denn Ihre Investition in JD Mall muss an beidem gemessen werden: am Filial-Umsatz und am Aufschlag im gesamten JD-Online-Ökosystem. Jede Unstimmigkeit in Sortiment, Preis oder Botschaft zwischen JD online und JD Mall fällt den Käufern sofort auf.
 
 Die erfolgreichsten Marken behandeln JD Mall als Testfeld, in dem Content, Sortiment und Service mit der JD.com-Strategie verzahnt sind.
 
@@ -88,7 +88,7 @@ Ein paar konkrete Schritte:
 
 Bei Beyond Border Group helfen wir globalen Marken, JDs Ökosystem in klare Entscheidungen zu übersetzen: Wo passt JD Mall in Ihr China-Portfolio? Welche Städte und Formate priorisieren? Wie Pilotprogramme strukturieren, statt One-size-fits-all-Rollouts?
 
-Wir arbeiten mit Marken an In-Store-Erlebnissen, lokalen Community-Hooks und Playbooks fürs Personal, die vor Ort funktionieren, von Demo-Abläufen über Kursformate bis zu Xiaohongshu-Content-Winkeln, die für chinesische Verbraucher heimisch wirken, nicht importiert.
+Wir arbeiten mit Marken an In-Store-Erlebnissen, lokalen Community-Hooks und Playbooks fürs Personal, die vor Ort funktionieren, von Demo-Abläufen über Kursformate bis zu Xiaohongshu-Content-Winkeln, die für chinesische Käufer heimisch wirken, nicht importiert.
 
 Weil Content-Volumen heute eine echte Begrenzung ist, gerade wenn jede Verkäuferin Creator wird, arbeiten wir mit KI-nativen Partnern wie HubStudio, um Bild- und Videomaterial markenkonform und im Tempo zu skalieren.
 

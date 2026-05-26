@@ -26,29 +26,29 @@ La inmersión cultural se ha vuelto una tendencia clara entre los viajeros chino
 
 ### Conciencia medioambiental y social
 
-La generación más joven de viajeros chinos de lujo muestra una preocupación creciente por el impacto medioambiental y social de sus viajes. Las prácticas turísticas sostenibles y responsables se han vuelto importantes para captar a este segmento.
+La generación más joven de viajeros chinos de lujo enseña una preocupación creciente por el impacto medioambiental y social de sus viajes. Las prácticas turísticas sostenibles y responsables han pasado a pesar para captar a este segmento.
 
 ## Construir experiencias únicas e inmersivas
 
 ### Experiencias culturales locales
 
-Las marcas de viajes pueden ganarse el interés del viajero chino de lujo con propuestas que pongan en valor la cultura local. Un ejemplo: el Rissai Valley, un Ritz-Carlton Reserve, ofrece a sus huéspedes un retiro de lujo íntimo en Jiuzhaigou, donde pueden sumergirse en la vida tradicional de los pueblos tibetanos.
+Las marcas de viajes pueden ganarse el interés del viajero chino de lujo con propuestas que pongan en valor la cultura local. Un ejemplo: el Rissai Valley, un Ritz-Carlton Reserve, ofrece a sus huéspedes un retiro de lujo íntimo en Jiuzhaigou, donde pueden meterse en la vida tradicional de los pueblos tibetanos.
 
 ![Terraza de villa de lujo en el Ritz-Carlton](/Images/insights/2024/07/rz-jzhrz-two-bedroom-villa-terrace-36218_Wide-Hor.jpeg)
 
 ### Viaje personalizado y a medida
 
-El viajero de lujo se aleja de los tours en grupo y opta por experiencias privadas, con flexibilidad y acceso exclusivo a la cultura local. Esa tendencia subraya la importancia de los servicios de viaje a medida, capaces de responder a las preferencias individuales.
+El viajero de lujo se aleja de los tours en grupo y se decanta por experiencias privadas, con flexibilidad y acceso exclusivo a la cultura local. Esa tendencia subraya el peso de los servicios de viaje hechos a medida, capaces de responder a las preferencias individuales.
 
 ### Bienestar integral
 
-La búsqueda del bienestar integral gana peso entre los viajeros chinos de lujo. Las marcas pueden capitalizarlo ofreciendo retiros que combinen relax con autenticidad cultural, por ejemplo, spas inspirados en técnicas tradicionales.
+La búsqueda del bienestar integral gana peso entre los viajeros chinos de lujo. Las marcas pueden capitalizarlo ofreciendo retiros que mezclen relax con autenticidad cultural, por ejemplo, spas inspirados en técnicas tradicionales.
 
 ## Apalancar plataformas digitales para enganchar al cliente
 
 ### Apostar por Xiaohongshu
 
-Xiaohongshu, conocida como el "buscador de lifestyle" chino, es una plataforma decisiva para inspirar viajes y recomendar destinos. Las marcas pueden colaborar con sus influencers para mostrar destinos y experiencias únicas, lo que dispara engagement y reservas. También vale la pena apalancar las funciones comunitarias de Xiaohongshu y montar campañas de UGC que animen al viajero a compartir su experiencia. Ese contenido refuerza la visibilidad y la credibilidad de la marca.
+Xiaohongshu, conocida como el "buscador de lifestyle" chino, es una plataforma decisiva para inspirar viajes y recomendar destinos. Las marcas pueden aliarse con sus influencers para enseñar destinos y experiencias únicas, lo que dispara engagement y reservas. También vale la pena tirar de las funciones comunitarias de Xiaohongshu y montar campañas de UGC que animen al viajero a compartir su experiencia. Ese contenido refuerza la visibilidad y la credibilidad de la marca.
 
 ![Interfaz de Xiaohongshu](/Images/insights/2024/07/xiao-1024x551.jpg)
 

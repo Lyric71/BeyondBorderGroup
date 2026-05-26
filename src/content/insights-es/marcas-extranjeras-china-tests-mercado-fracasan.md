@@ -29,9 +29,9 @@ Sobre el papel, es rápido y asequible. En la práctica, no.
 
 > La marca sigue necesitando una infraestructura completa y un equipo que opere en China. Ahí es donde se disparan los costes.
 
-Las marcas extranjeras casi siempre necesitan lo que el sector llama un TP, un Trade Partner. El TP es una agencia local que gestiona la tienda online día a día: alta, fichas, contenido, atención al cliente, compra de medios, ejecución de campañas, acuerdos con [KOL](/es/crecer-en-china/influencia-y-kol) y coordinación logística. Todo se hace en mandarín, en horario chino y sobre plataformas que cambian las reglas sin avisar. Ninguna sede extranjera puede gestionar esto en remoto.
+Las marcas extranjeras casi siempre necesitan lo que el sector llama un TP, un Trade Partner. El TP es una agencia local que lleva la tienda online día a día: alta, fichas, contenido, atención al cliente, compra de medios, ejecución de campañas, acuerdos con [KOL](/es/crecer-en-china/influencia-y-kol) y coordinación logística. Todo se hace en mandarín, en horario chino y sobre plataformas que cambian las reglas sin avisar. Ninguna sede extranjera puede llevar esto en remoto.
 
-Un TP solvente cobra una retainer mensual y una comisión sobre las ventas. Súmense los gastos de plataforma, la compra de medios y la logística de depósito aduanero y se llega al 30, 40 por ciento de los ingresos anuales previstos comidos por la operativa los primeros dos o tres años. He visto a marcas europeas de tamaño medio presupuestar 500.000 dólares para un lanzamiento en China y agotarlos en seis meses sin nada que enseñar. Si la marca trabaja con márgenes finos, esas cuentas no salen ni en el papel.
+Un TP solvente cobra una retainer mensual y una comisión sobre las ventas. Súmense los gastos de plataforma, la compra de medios y la logística de depósito franco y se llega al 30, 40 por ciento de los ingresos anuales previstos comidos por la operativa los primeros dos o tres años. He visto a marcas europeas de tamaño medio presupuestar 500.000 dólares para un lanzamiento en China y agotarlos en seis meses sin nada que enseñar. Si la marca trabaja con márgenes finos, esas cuentas no salen ni sobre el papel.
 
 ### La trampa del precio premium
 
@@ -45,17 +45,17 @@ Algunas categorías siguen premiando el origen extranjero. Belleza, cuidado de l
 
 Uno de los errores más persistentes que veo es probar primero en las grandes plataformas. Tmall y JD son donde pelean por estantería las marcas ya asentadas. La barrera de entrada es alta. El coste de adquisición de cliente en categorías como belleza o electrónica de consumo puede ir de los 15 a los 30 dólares por nuevo comprador. Y el proceso desde que se solicita la apertura hasta la primera venta puede llevar meses.
 
-Hoy aconsejo a las marcas que arranquen las pruebas con una campaña enfocada de KOL en Douyin. Es más rápido, más barato y devuelve retroalimentación real del consumidor antes de comprometerse con una tienda completa. Douyin se ha convertido en un motor de comercio donde el descubrimiento de producto pasa por el contenido, no por la búsqueda. Un vídeo corto bien orientado o un livestream con el influencer adecuado pueden validar la demanda en cuestión de semanas.
+Hoy aconsejo a las marcas que arranquen las pruebas con una campaña enfocada de KOL en Douyin. Es más rápido, más barato y devuelve respuesta real del consumidor antes de comprometerse con una tienda completa. Douyin se ha convertido en un motor de comercio donde el descubrimiento de producto pasa por el contenido, no por la búsqueda. Un vídeo corto bien orientado o un livestream con el influencer adecuado pueden validar la demanda en cosa de semanas.
 
 > En 2026, el descubrimiento de producto en China empieza en Douyin y Xiaohongshu. No en una tienda insignia de Tmall.
 
 ### La fantasía de los 1.400 millones de compradores
 
-Esta sigue apareciendo en casi todos los briefings a los que asisto. Un directivo se levanta y dice: "China tiene 1.400 millones de consumidores. Aunque compre una mínima parte de ellos, seremos rentables".
+Esta sigue apareciendo en casi todos los briefings a los que asisto. Un directivo se levanta y dice: "China tiene 1.400 millones de consumidores. Aunque compre una parte mínima, seremos rentables".
 
 He escuchado ese discurso decenas de veces. No lo he visto funcionar nunca.
 
-Hay que saber a quién se enfrenta uno. Qué compra el consumidor chino en su categoría, a qué precio, en qué plataformas y por qué. Hace falta el mix de producto correcto, el precio correcto y una marca adaptada a este mercado. Sin hacer ese trabajo previo, el fracaso deja de ser un riesgo. Se convierte en una certeza.
+Hay que saber contra quién juega uno. Qué compra el consumidor chino en su categoría, a qué precio, en qué plataformas y por qué. Hace falta el mix de producto que toca, el precio que toca y una marca adaptada a este mercado. Sin hacer ese trabajo previo, el fracaso deja de ser un riesgo. Se convierte en una certeza.
 
 > Antes, un estudio de mercado en China costaba seis cifras y llevaba meses. Con herramientas de IA, hoy hacemos estudios competitivos para nuestros clientes en semanas y a una fracción del precio. No hay excusa para saltárselo.
 

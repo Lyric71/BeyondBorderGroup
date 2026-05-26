@@ -12,7 +12,7 @@ heroImageAlt: "Quelle: China Daily"
 
 ## Wie Xianyu Schnäppchen in Nebenverdienste junger Unternehmer verwandelt
 
-Alibabas Xianyu, ursprünglich bekannt für ein breites Angebot an Gebrauchtware, wird zur Drehscheibe für junge Unternehmer, die nebenher Geld verdienen wollen. Als grösste C2C-Plattform für Gebrauchtware in China geht Xianyu über den blossen Schnäppchenmarkt hinaus und bietet einen Ort, an dem Nutzer ihre Hobbys und Fähigkeiten monetarisieren. Diese Verschiebung öffnet neue Wege in der dynamischen [eCommerce-Landschaft](https://beyondbordergroup.com/ecommerce-in-china/) Chinas, besonders bei budgetbewussten jungen Verbrauchern. Sie passt zum breiteren Trend des Social Commerce in China, in dem junge Menschen [Plattformen](/de/china-verstehen/plattformen) nutzen, um Einkommen aus eigenem Können zu schaffen.
+Alibabas Xianyu, ursprünglich bekannt für ein breites Angebot an Gebrauchtware, wird zur Drehscheibe für junge Unternehmer, die nebenher Geld verdienen wollen. Als grösste C2C-Plattform für Gebrauchtware in China geht Xianyu über den blossen Schnäppchenmarkt hinaus und bietet einen Ort, an dem Nutzer ihre Hobbys und Fähigkeiten zu Geld machen. Diese Verschiebung öffnet neue Wege in der dynamischen [eCommerce-Landschaft](https://beyondbordergroup.com/ecommerce-in-china/) Chinas, vor allem bei budgetbewussten jungen Käufern. Sie passt zum breiteren Trend des Social Commerce in China, in dem junge Menschen [Plattformen](/de/china-verstehen/plattformen) nutzen, um Einkommen aus eigenem Können zu schaffen.
 
 ## Der Aufstieg der Nebenjobs auf Xianyu
 

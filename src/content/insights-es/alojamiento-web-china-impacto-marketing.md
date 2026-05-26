@@ -23,11 +23,11 @@ Alojar la web dentro de China:
 
 * **Mejor rendimiento:** los sitios alojados en local cargan hasta cuatro veces más rápido que los hospedados fuera.
 * **Más visibilidad en buscadores:** el alojamiento local puede empujar el posicionamiento en Baidu, el buscador líder en China.
-* **Cumplimiento:** alojarse en local asegura el cumplimiento de la normativa digital china y reduce el riesgo de censura o bloqueo.
+* **Cumplimiento:** alojarse en local asegura el encaje con la normativa digital china y recorta el riesgo de censura o bloqueo.
 
 ## Pasos para alojar un sitio web en China
 
-Alojar un sitio en China implica varios pasos críticos para que la web funcione bien, cumpla la regulación y conecte con el público objetivo. Lo que sigue es un desglose detallado.
+Alojar un sitio en China pasa por varios pasos críticos para que la web funcione bien, cumpla la regulación y conecte con el público objetivo. Lo que sigue es un desglose detallado.
 
 ### Registrar un dominio chino
 
@@ -45,7 +45,7 @@ Registrar un dominio con extensión china, como .cn, es uno de los primeros paso
 
 ### Elegir un proveedor de alojamiento local
 
-Una vez asegurado el dominio, toca elegir un proveedor de alojamiento con servidores en China continental. Un proveedor local asegura cumplimiento normativo y rendimiento óptimo para los usuarios dentro del país.
+Una vez asegurado el dominio, toca escoger un proveedor de alojamiento con servidores en China continental. Un proveedor local asegura cumplimiento normativo y rendimiento óptimo para los usuarios dentro del país.
 
 #### Qué tener en cuenta al elegir proveedor
 

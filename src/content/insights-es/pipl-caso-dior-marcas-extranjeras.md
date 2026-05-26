@@ -25,7 +25,7 @@ Si gestiona CRM, eCommerce o medios en China, esto no es solo una noticia legal.
 
 ## De amenaza vaga a aplicación real
 
-La PIPL entró en vigor en noviembre de 2021 como la primera ley china integral de protección de datos. Durante un tiempo, muchas marcas la trataron como una especie de RGPD ligero para China: importante, pero resoluble con una actualización de política de privacidad y unas cuantas casillas.
+La PIPL entró en vigor en noviembre de 2021 como la primera ley china integral de protección de datos. Durante un tiempo, muchas marcas la trataron como una especie de RGPD ligero para China: importante, pero resuelto con una actualización de política de privacidad y unas cuantas casillas.
 
 El caso Dior marca un giro.
 
@@ -37,9 +37,9 @@ El regulador apuntó a tres cuestiones de fondo:
 
 ## Por qué la aplicación se está intensificando ahora
 
-En los últimos años, China ha desarrollado la PIPL con normas prácticas sobre transferencias [cross-border](/es/entrar-en-china/lanzamiento-cross-border), contratos estándar y certificación, lo que le da al regulador una lista clara contra la que auditar. A la vez, la soberanía de los datos se ha situado en el centro del tablero: quién posee los datos del usuario chino, dónde residen y quién puede acceder a ellos se entrelaza con seguridad nacional, competencia tecnológica y confianza del consumidor.
+En los últimos años, China ha desarrollado la PIPL con normas prácticas sobre transferencias [cross-border](/es/entrar-en-china/lanzamiento-cross-border), contratos estándar y certificación, lo que le da al regulador una lista clara contra la que auditar. A la vez, la soberanía de los datos se ha colocado en el centro del tablero: quién es dueño de los datos del usuario chino, dónde residen y quién puede acceder a ellos se entrelaza con seguridad nacional, competencia tecnológica y confianza del consumidor.
 
-Un caso de alto perfil como el de Dior funciona como sanción y, a la vez, como señal pública. Para los responsables sénior de marketing y eCommerce, la lectura es simple: la PIPL ya no es algo que se pueda delegar en "legal y IT". Condiciona lo que los equipos pueden hacer con los datos de cliente cada día.
+Un caso de alto perfil como el de Dior funciona como sanción y, a la vez, como aviso público. Para los responsables sénior de marketing y eCommerce, la lectura es clara: la PIPL ya no es algo que se pueda delegar en "legal y IT". Condiciona lo que los equipos pueden hacer con los datos de cliente cada día.
 
 ![](/Images/insights/2025/11/PIPL-2-1-1024x576.png)
 
@@ -49,7 +49,7 @@ Bajo la PIPL, tres preguntas se vuelven inevitables para cualquier marca global 
 
 ### ¿Qué datos tienen que salir de China?
 
-Muchas organizaciones siguen volcando por defecto los datos de cliente chino en CRM, CDP, analytics y sistemas de personalización globales. Bajo la PIPL, ese modelo de "copiar todo a la central" es de alto riesgo. Hay que tener claro qué datos personales necesitan cruzar fronteras de verdad, y cuáles pueden quedarse en territorio chino, compartiendo a escala global solo insights agregados o anonimizados.
+Muchas organizaciones siguen volcando por defecto los datos de cliente chino en CRM, CDP, analytics y sistemas de personalización globales. Bajo la PIPL, ese modelo de "copiar todo a la central" es de alto riesgo. Hay que tener claro qué datos personales necesitan cruzar frontera de verdad, y cuáles pueden quedarse en territorio chino, compartiendo a escala global solo insights agregados o anonimizados.
 
 ### ¿Cómo se explica y se demuestra el consentimiento?
 

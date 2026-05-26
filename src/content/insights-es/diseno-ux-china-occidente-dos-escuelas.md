@@ -25,9 +25,9 @@ El Gran Cortafuegos y una regulación estricta aislaron el ecosistema digital ch
 
 #### La fragmentación occidental
 
-En los mercados occidentales, en cambio, iOS y Android empujaron hacia apps especializadas que hacen una cosa y la hacen bien. El usuario prefiere experiencias depuradas, centradas en la funcionalidad, sin sobrecargas en la interfaz.
+En los mercados occidentales, en cambio, iOS y Android empujaron hacia apps especializadas que hacen una cosa y la hacen bien. El usuario prefiere experiencias depuradas, puestas en la funcionalidad, sin sobrecargas en la interfaz.
 
-Estos dos caminos han condicionado de forma muy concreta el [diseño UX](/es/crecer-en-china/sitio-web), sobre todo en cómo se presentan y priorizan las funcionalidades. Para una marca acompañada por una agencia de marketing o de diseño web en China, leer bien estas diferencias es la base de cualquier estrategia local.
+Estos dos caminos han marcado de forma muy concreta el [diseño UX](/es/crecer-en-china/sitio-web), sobre todo en cómo se presentan y priorizan las funcionalidades. Para una marca acompañada por una agencia de marketing o de diseño web en China, leer bien estas diferencias es la base de cualquier estrategia local.
 
 ### Filosofías visuales: minimalismo o maximalismo
 
@@ -35,15 +35,15 @@ Estos dos caminos han condicionado de forma muy concreta el [diseño UX](/es/cre
 
 ![Página de inicio de TikTok](/Images/insights/2025/01/tiktok-website-1024x496.jpg)
 
-El diseño web occidental apuesta por la simplicidad: espacio en blanco, líneas limpias, navegación intuitiva. Esa escuela conecta con valores de practicidad y eficiencia, y transmite una sensación pulida y profesional.
+El diseño web occidental tira de la simplicidad: espacio en blanco, líneas limpias, navegación intuitiva. Esa escuela casa con valores de practicidad y eficiencia, y deja una sensación pulida y profesional.
 
 #### El maximalismo chino
 
 ![Página de inicio de Douyin](/Images/insights/2025/01/douyin-website-1024x496.jpg)
 
-Los sitios y apps chinas funcionan a menudo con una lógica opuesta: cuanto más, mejor. Colores intensos, mucha información por pantalla, llamadas a la acción por todas partes. Refleja una preferencia cultural por la abundancia, donde una pantalla cargada se percibe como una propuesta de mayor valor. El eCommerce en Douyin es un buen ejemplo: usa interfaces visualmente densas para captar y retener al usuario.
+Los sitios y apps chinas funcionan a menudo con una lógica contraria: cuanto más, mejor. Colores intensos, mucha información por pantalla, llamadas a la acción por todas partes. Refleja una preferencia cultural por la abundancia, donde una pantalla cargada se lee como propuesta de mayor valor. El eCommerce en Douyin es un buen ejemplo: tira de interfaces visualmente densas para captar y retener al usuario.
 
-Para el usuario occidental, un diseño chino puede resultar agobiante. Para el chino, un sitio occidental puede parecer vacío y aburrido. Una agencia creativa en China puede ayudar a encontrar el punto medio cuando se entra al [mercado chino](/es/entrar-en-china/estrategia-de-entrada).
+Para el usuario occidental, un diseño chino puede resultar agobiante. Para el chino, un sitio occidental puede sonar vacío y aburrido. Una agencia creativa en China puede ayudar a dar con el punto medio cuando se entra al [mercado chino](/es/entrar-en-china/estrategia-de-entrada).
 
 ### Cómo influye el sistema de escritura en la UX
 

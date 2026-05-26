@@ -24,7 +24,7 @@ Douyin, conocida internacionalmente como TikTok, es la plataforma líder de víd
 
 ![Interfaz de livestream de Douyin](/Images/insights/2024/12/duoyin-livestream-1024x486.jpg)
 
-Los livestreams de Douyin abarcan multitud de temáticas, desde entretenimiento, moda y lifestyle hasta cocina o formación. Influencers y celebridades usan la plataforma con regularidad y refuerzan el vínculo con su público a través de actuaciones, Q&A y trozos de vida personal. Douyin además incorpora funcionalidades de eCommerce, lo que permite a los creadores mostrar y vender producto durante la emisión y la convierte en una herramienta valiosa para marcas y retailers.
+Los livestreams de Douyin cubren multitud de temáticas, de entretenimiento, moda y lifestyle a cocina o formación. Influencers y celebridades usan la plataforma con regularidad y aprietan el vínculo con su público a través de actuaciones, Q&A y trozos de vida personal. Douyin además trae funcionalidades de eCommerce, lo que deja a los creadores enseñar y vender producto durante la emisión y la convierte en una herramienta valiosa para marcas y retailers.
 
 ### Taobao Live
 
@@ -32,7 +32,7 @@ Lanzada por Alibaba en 2016, Taobao Live ha crecido a un ritmo vertiginoso hasta
 
 ![Interfaz de Taobao Live](/Images/insights/2024/12/taobao-live-1024x502.jpg)
 
-El éxito de la plataforma se apoya en un catálogo vastísimo de productos a precios competitivos y en una cadena de suministro rápida y eficiente. Eso permite a los livestreamers mostrar, comentar y vender producto a su audiencia con agilidad. Taobao Live se ha convertido en una plataforma imprescindible para cualquier negocio que quiera capitalizar el auge del eCommerce chino.
+El éxito de la plataforma se apoya en un catálogo enorme de productos a precios competitivos y en una cadena de suministro rápida y eficiente. Eso deja a los livestreamers enseñar, comentar y vender producto a su audiencia con agilidad. Taobao Live se ha vuelto plataforma imprescindible para cualquier negocio que quiera capitalizar el auge del eCommerce chino.
 
 ### Kuaishou (快手)
 
@@ -40,7 +40,7 @@ Kuaishou, con respaldo de Tencent, es otro actor principal del livestream chino.
 
 ![Plataforma de livestream de Kuaishou](/Images/insights/2024/12/kua-live-1024x597.jpg)
 
-Para una marca, Kuaishou es una vía interesante para llegar a perfiles demográficos poco trabajados, sobre todo en regiones como Hubei, Fujian y Yunnan, donde el consumo de bienes de gran consumo crece a un ritmo notable. Con los analistas anticipando continuidad en estas regiones, Kuaishou se posiciona como un canal clave para acceder a los mercados emergentes de China.
+Para una marca, Kuaishou es una vía interesante para llegar a perfiles demográficos poco trabajados, sobre todo en regiones como Hubei, Fujian y Yunnan, donde el consumo de bienes de gran consumo crece a buen ritmo. Con los analistas apostando por la continuidad en estas regiones, Kuaishou se coloca como canal clave para acceder a los mercados emergentes de China.
 
 ### Tencent Video (腾讯视频)
 
@@ -48,7 +48,7 @@ Tencent Video es una de las mayores plataformas de vídeo online en China, opera
 
 ![Plataforma de streaming de Tencent Video](/Images/insights/2024/12/tencent-video-1024x511.jpg)
 
-La plataforma ofrece un catálogo amplio, con películas, series, animación, documentales y eventos deportivos. Una de sus señas de identidad es la capacidad de generar comunidad a través de recomendaciones de usuario, debates y contenido compartido. Esas funcionalidades la convierten en una plataforma versátil para entretener y dialogar con el usuario.
+La plataforma trae un catálogo amplio, con películas, series, animación, documentales y eventos deportivos. Una de sus señas de identidad es la capacidad de levantar comunidad a través de recomendaciones de usuario, debates y contenido compartido. Esas funcionalidades la dejan como plataforma versátil para entretener y dialogar con el usuario.
 
 ### Youku (优酷)
 

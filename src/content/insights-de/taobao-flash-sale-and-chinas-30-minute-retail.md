@@ -44,7 +44,7 @@ Die Umbenennung ist schlicht der Moment, in dem das Organigramm sichtbar in der 
 
 ## Taobao soll sich wie ein lokales Liefernetz anfühlen
 
-Die grösste Veränderung ist nicht das Branding. Es ist die Verbrauchererwartung.
+Die grösste Veränderung ist nicht das Branding. Es ist die Käufererwartung.
 
 Taobao drückt auf ein schnelleres, körperlicheres Einkaufserlebnis. Ein spürbarer Anteil alltäglicher Bestellungen wird in 30 bis 60 Minuten ausgeliefert. Damit konkurriert die Plattform im selben Feld wie Meituan und JDs Quick-Commerce.
 
@@ -54,7 +54,7 @@ Kein Modewort.
 
 Eine Plattform, gebaut um Nachfrage zu ziehen, sie lokal zu routen und aus nahegelegenen Läden und Mikro-Lagern auszuliefern.
 
-Sobald sich Verbraucher daran gewöhnen, steigt die Latte für alle.
+Sobald sich Käufer daran gewöhnen, steigt die Latte für alle.
 
 ![](/Images/insights/2025/12/TB-flash-2-300x300.png)
 

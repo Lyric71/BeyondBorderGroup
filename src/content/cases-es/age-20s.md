@@ -39,7 +39,7 @@ Levantamos el lanzamiento alrededor de la identidad "Little Milk Brick", convirt
 - Conversión con KOL escogidos por su credibilidad en base de maquillaje
 - Amplificación con contenidos de usuarias para que el apodo siguiera rodando
 
-La adaptación a cada plataforma fue deliberada. Xiaohongshu se apoyó en tutoriales de aplicación, comparativas antes y después y reseñas largas. Douyin tiró de retoques rápidos en la oficina, trucos de maquillaje sobre la marcha y formatos pensados para livestream. La promesa de rendimiento (cobertura profesional, acabado lácteo mate y ocho horas de duración) se mantuvo idéntica en los dos canales.
+La adaptación a cada plataforma fue deliberada. Xiaohongshu se apoyó en tutoriales de aplicación, comparativas antes y después y reseñas largas. Douyin tiró de retoques rápidos en la oficina, trucos de maquillaje al vuelo y formatos pensados para livestream. La promesa de rendimiento (cobertura profesional, acabado lácteo mate y ocho horas de duración) se mantuvo igual en los dos canales.
 
 ## Resultados
 

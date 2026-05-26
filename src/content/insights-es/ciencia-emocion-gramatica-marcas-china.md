@@ -59,9 +59,9 @@ Ese contenido cumplía dos funciones. Convertía al comprador primerizo. Y sembr
 
 > La campaña #MyEmotionalOasis generó más de 120.000 publicaciones UGC y un crecimiento del 210 % en las búsquedas dentro de Xiaohongshu.
 
-La mayoría de las marcas subestiman el papel de Xiaohongshu en el embudo de compra. Llamarla un mood board es perder el hilo. Es donde el consumidor chino verifica una marca antes de gastar dinero de verdad. Las notas sobre ingredientes, rutinas, antes y después, y reseñas honestas, construyen la base de búsqueda de cola larga que vuelve más eficiente la compra de medios en cualquier otro sitio.
+La mayoría de las marcas subestiman el papel de Xiaohongshu en el embudo de compra. Llamarla un mood board es perder el hilo. Es donde el consumidor chino comprueba una marca antes de soltar dinero de verdad. Las notas sobre ingredientes, rutinas, antes y después, y reseñas honestas, levantan la base de búsqueda de cola larga que deja la compra de medios más eficiente en cualquier otro sitio.
 
-Collgene sembró ahí relatos emocionales. Sets de regalo bautizados como "Kit de rescate para horas extra" y "Set antiestrés". Campañas montadas alrededor de la vida urbana y de la piel que reacciona cuando uno no ha dormido. Ese contenido generó comunidad antes de generar conversión.
+Collgene sembró ahí relatos emocionales. Sets de regalo bautizados como "Kit de rescate para horas extra" y "Set antiestrés". Campañas montadas alrededor de la vida urbana y de la piel que reacciona cuando uno no ha dormido. Ese contenido levantó comunidad antes de generar conversión.
 
 ![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-1.png)
 
@@ -69,8 +69,8 @@ Collgene sembró ahí relatos emocionales. Sets de regalo bautizados como "Kit d
 
 > La próxima fase de crecimiento de Pierre Fabre pasa por combinar la herencia médica con la agilidad de plataforma, el relato emocional y la inteligencia del dato.
 
-Tmall y JD construyen confianza y protegen la recompra. Douyin descubre y convierte al nuevo comprador. Xiaohongshu gana búsqueda orgánica y comunidad. Ninguna de estas plataformas es intercambiable. Repetir el mismo mensaje en las tres es de las maneras más rápidas de quemar un presupuesto chino.
+Tmall y JD levantan confianza y protegen la recompra. Douyin descubre y convierte al nuevo comprador. Xiaohongshu gana búsqueda orgánica y comunidad. Ninguna de estas plataformas es intercambiable. Repetir el mismo mensaje en las tres es de las maneras más rápidas de quemar un presupuesto chino.
 
-Las marcas con las que trabajamos y que crecen de forma sostenida tienen un rasgo en común: saben qué función cumple cada plataforma, y dotan a cada una con su propia gente y su propio presupuesto.
+Las marcas con las que trabajamos y que crecen de forma sostenida tienen un rasgo en común: saben qué función cumple cada plataforma, y le ponen a cada una su propia gente y su propio presupuesto.
 
-Esa es la receta. No se trata de elegir entre ciencia o emoción. Se trata de saber dónde encaja cada una.
+Esa es la receta. No va de escoger entre ciencia o emoción. Va de saber dónde encaja cada una.

@@ -1,6 +1,6 @@
 ---
 title: "Social-Media- und KOL-Strategien für eCommerce-Marken in China"
-description: "Partnerschaften mit Key Opinion Leaders (KOLs) sind ein wirksamer Weg, chinesische Verbraucher zu erreichen. Der Leitfaden zeigt, wie Marken die richtigen KOL finden und mit ihnen zusammenarbeiten, um Reichweite, Glaubwürdigkeit und Wachstum zu heben."
+description: "Partnerschaften mit Key Opinion Leaders (KOLs) sind ein wirksamer Weg, chinesische Käufer zu erreichen. Der Leitfaden zeigt, wie Marken die richtigen KOL finden und mit ihnen zusammenarbeiten, um Reichweite, Glaubwürdigkeit und Wachstum zu heben."
 pubDate: "2024-11-28"
 author: "Beyond Border Group"
 category: "KOLs & Livestream"
@@ -10,7 +10,7 @@ heroImage: "/Images/insights/china-social-media-and-kol-strategies-for-ecommerce
 heroImageAlt: "Visualisierung des KOL-Marketings"
 ---
 
-## KOL und ihre Wirkung auf chinesische Verbraucher
+## KOL und ihre Wirkung auf chinesische Käufer
 
 ### Was ist ein KOL in China?
 
@@ -90,7 +90,7 @@ Geringere Follower-Zahl, aber engere, engagierte Beziehungen. Für kleinere Budg
 
 ### Key Opinion Consumers (KOC)
 
-Reguläre Verbraucher mit starker Online-Präsenz. Sie liefern authentische Reviews und Empfehlungen, ideal für Grassroots-Marketing und Vertrauen.
+Normale Käufer mit starker Online-Präsenz. Sie liefern authentische Reviews und Empfehlungen, ideal für Grassroots-Marketing und Vertrauen.
 
 ## Strategien für wirksame KOL-Partnerschaften
 
@@ -144,4 +144,4 @@ Stimmung in Social Media und Kommentare zeigen, wie die Marke nach der Kampagne 
 
 ## Fazit
 
-KOL in China zu finden und mit ihnen zu arbeiten, kann eine Marke verwandeln. Mit dem Verständnis der Influencer-Typen, der richtigen Plattformwahl und massgeschneiderten Strategien nutzen Marken die Kraft der chinesischen KOL, um sinnstiftende Verbindungen zu Verbrauchern aufzubauen. Ob global oder Nische, die richtige Partnerschaft hebt Einfluss, Umsatz und langfristige Position im chinesischen Wettbewerb.
+KOL in China zu finden und mit ihnen zu arbeiten, kann eine Marke verwandeln. Wer die Influencer-Typen versteht, die richtige Plattform wählt und mit massgeschneiderten Strategien arbeitet, nutzt die Kraft der chinesischen KOL und baut tragfähige Verbindungen zu den Käufern auf. Ob global oder Nische: Die richtige Partnerschaft hebt Einfluss, Umsatz und langfristige Position im chinesischen Wettbewerb.

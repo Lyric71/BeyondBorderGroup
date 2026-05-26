@@ -28,7 +28,7 @@ Der Douyin-Handel löst sich von der Abhängigkeit von wenigen Mega-Influencern 
 
 Die Logik ist einfach.
 
-Das Studio einer Marke ist kontrollierbar. Sie standardisieren Aussagen, Service-Skripte und Aftersales, Sie iterieren täglich. Das zählt, wenn Plattformen ihre Governance straffen und Verbraucher vorsichtiger werden.
+Das Studio einer Marke ist steuerbar. Sie standardisieren Aussagen, Service-Skripte und Aftersales, Sie iterieren täglich. Das zählt, wenn Plattformen ihre Governance straffen und Käufer vorsichtiger werden.
 
 Hier investiert auch Douyin auf der Produktseite. Die Plattform hat ihren Performance-Werbestack näher an die eCommerce-Operations gerückt, mit engerer Integration, die Konversion verbessern und „verlorene" Traffic-Ausgaben senken soll.
 
@@ -64,7 +64,7 @@ Die meisten globalen Marken kennen das Grundgerüst: Host, Angebote, Creator. De
 
 * Das Studio um 1 bis 2 Hero-SKUs ankern, gut erklärbar und leicht erfüllbar.
 * Margenschützer ergänzen: Bundles, Sets, Add-ons, die den AOV heben, ohne tiefere Rabatte zu erzwingen.
-* „Festival-Leitern" für 618 und Double 11 vordenken, damit Sie Verbraucher nicht darauf trainieren, auf extreme Preisstufen zu warten.
+* „Festival-Leitern" für 618 und Double 11 vordenken, damit Sie Käufer nicht darauf trainieren, auf extreme Preisstufen zu warten.
 
 **3) Traffic als drei Motoren denken, nicht als einen**
 

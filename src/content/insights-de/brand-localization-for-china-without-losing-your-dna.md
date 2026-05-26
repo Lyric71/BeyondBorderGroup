@@ -21,7 +21,7 @@ Lange standen ausländische Marken in China für Seltenheit und Moderne. Was aus
 
 Mit dem Wachstum der Mittelschicht wurden [globale Marken](/de/nach-china/markteintrittsberatung) zum Kürzel für Status und Qualität. Lokale Marken hielten in Produkt, Design und Erzählung noch nicht mit.
 
-Heute haben chinesische Marken den Qualitätsabstand grösstenteils geschlossen und sind in Kultur und Digitalem oft schneller. Guochao hat den lokalen Spielern eine starke Geschichte gegeben, westliche Marken sind eine Wahl unter vielen geworden. Qualität wird vorausgesetzt. Relevanz entsteht aus kultureller Passung und Plattform-Sprachgefühl.
+Heute haben chinesische Marken den Qualitätsabstand grösstenteils geschlossen und sind in Kultur und Digitalem oft schneller unterwegs. Guochao hat den lokalen Spielern eine starke Geschichte gegeben, westliche Marken sind zu einer Wahl unter vielen geworden. Qualität wird vorausgesetzt. Relevanz entsteht aus kultureller Passung und Plattform-Sprachgefühl.
 
 ## Warum Lokalisierung Pflicht ist
 
@@ -29,7 +29,7 @@ Zwei Kräfte machen tiefe [Lokalisierung](/de/nach-china/marke-und-lokalisierung
 
 **1. Qualität ist die Startlinie**
 
-Chinesische Verbraucher vertrauen vielen westlichen Marken weiterhin bei Sicherheit und Technik, doch lokale Marken haben die Latte gehoben.
+Chinesische Käufer vertrauen vielen westlichen Marken weiterhin bei Sicherheit und Technik. Die lokalen Marken haben die Latte allerdings deutlich gehoben.
 
 Wenn Ihre wichtigste China-Geschichte lautet, dass Sie hochwertig und international sind, treten Sie gegen die Erwartungen von gestern an.
 
@@ -135,12 +135,12 @@ Sie ändern nicht, wer Sie sind. Sie ändern, wie Sie in den Scroll eintreten.
 
 ## Vom Prinzip zur Praxis
 
-Die drei Schichten als Brille sind der einfache Teil. Die Herausforderung ist, sie in tägliche Entscheidungen zu übersetzen, zu Namen, Packungen, Formaten, Partnern und Media. Unter Druck recyceln Marken entweder globale Arbeit oder nicken lokale Ideen ab, die langsam verwässern, wer sie sind.
+Die drei Schichten als Brille sind der einfache Teil. Die Herausforderung liegt darin, sie in tägliche Entscheidungen zu übersetzen: in Namen, Verpackung, Formate, Partner und Media. Unter Druck recyceln Marken entweder globale Arbeit oder winken lokale Ideen durch, die langsam verwässern, wer sie sind.
 
-Wer im Gleichgewicht bleibt, hat meist drei Dinge:
+Wer im Gleichgewicht bleibt, hat meist drei Dinge im Haus:
 
 - Eine geteilte Sicht darauf, was in der Marke wirklich nicht verhandelbar ist
-- Klare, kreative, erfahrene China-Territorien
-- Eine Karte echter Plattform-Reisen, sodass Content der Bewegung folgt, wie Menschen tatsächlich vom Sehen zum Kaufen kommen
+- Klare, kreativ erschlossene China-Territorien
+- Eine Karte der tatsächlichen Plattform-Reisen, sodass Content der Bewegung folgt, wie Menschen vom Sehen zum Kaufen kommen
 
-Hier arbeitet Beyond Border Group mit Teams, indem wir einen geschützten Kern mit einem chinesischen Ausdruck verbinden, der sich strecken kann, ohne sich zu verlieren.
+Hier setzt Beyond Border Group mit den Teams an: ein geschützter Kern, kombiniert mit einem chinesischen Ausdruck, der sich strecken kann, ohne sich zu verlieren.

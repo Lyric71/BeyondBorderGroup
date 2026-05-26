@@ -52,7 +52,7 @@ Indem Alibaba die Sofortlieferung in Taobao einbettet und Ele.me als Taobao Flas
 
 * Tägliche Berührungspunkte schaffen, statt einiger Festival-Spitzen
 * Die Kauffrequenz pro Nutzer heben, nicht nur die Warenkorbgrösse
-* Verbraucher darauf trainieren, schnelle Auslieferung in vielen Kategorien zu erwarten, nicht nur bei Mahlzeiten
+* Käufer darauf trainieren, schnelle Auslieferung in vielen Kategorien zu erwarten, nicht nur bei Mahlzeiten
 
 Hält diese Verschiebung, dann wird Double 11 weniger eine einmalige Jahresexplosion und mehr ein Schlaglicht innerhalb eines durchgehenden lokalen Alltagssystems.
 

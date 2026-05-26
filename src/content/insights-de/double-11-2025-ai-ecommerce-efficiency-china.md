@@ -18,13 +18,13 @@ keyTakeaways:
 
 ## 11.11 als Systems-Check: Vom GMV-Theater zur KI-First-Effizienz
 
-Der Double Eleven war einmal ein Rausch. 2025 ist er ein Systemtest: Kann Ihre Marke sauberer operieren, ruhigere Verbraucher bedienen und Markenwert aufbauen, während das ganze Land einkauft?
+Der Double Eleven war einmal ein Rausch. 2025 ist er ein Systemtest: Kann Ihre Marke sauberer arbeiten, ruhigere Käufer bedienen und Markenwert aufbauen, während das ganze Land einkauft?
 
 ### Was sich dieses Jahr wirklich verändert hat
 
-Die Schlagzeile lautet nicht „grösserer GMV". Sie lautet „bessere Systeme". Plattformen und Marken verschoben sich Richtung Effizienz, Transparenz und Wiederholbarkeit. Verbraucher belohnten den transparenten Ansatz: weniger Tricks, klarere Preise, besserer Service.
+Die Schlagzeile lautet nicht „grösserer GMV". Sie lautet „bessere Systeme". Plattformen und Marken haben sich in Richtung Effizienz, Transparenz und Wiederholbarkeit verschoben. Käufer haben den transparenten Ansatz belohnt: weniger Tricks, klarere Preise, besserer Service.
 
-Unter der Oberfläche läuft ein KI-getriebenes Betriebsmodell. Promotion, Ranking, Forecast und Routing werden zunehmend von lernenden Systemen orchestriert. Die grossen Plattformen haben weitgehend aufgehört, einzelne GMV-Schlagzeilen zu veröffentlichen, und betonen Teilnahme, Servicequalität und Liefer-Kennzahlen. Wenn alle rabattieren, gewinnt der Operator, der am klügsten läuft: schnellere Lieferung, weniger Out-of-Stocks und Stückkosten, die am 12. November noch Sinn ergeben.
+Unter der Oberfläche läuft ein KI-getriebenes Betriebsmodell. Promotion, Ranking, Forecast und Routing werden zunehmend von lernenden Systemen orchestriert. Die grossen Plattformen haben weitgehend aufgehört, einzelne GMV-Schlagzeilen zu veröffentlichen, und betonen Teilnahme, Servicequalität und Liefer-Kennzahlen. Wenn alle rabattieren, gewinnt der Operator, der am klügsten arbeitet: schnellere Lieferung, weniger Out-of-Stocks und Stückkosten, die am 12. November noch Sinn ergeben.
 
 ### Bauen Sie das Creative OS, das aus Operations Konversion macht
 

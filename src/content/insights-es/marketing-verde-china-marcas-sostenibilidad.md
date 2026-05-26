@@ -31,7 +31,7 @@ Goofish, plataforma de segunda mano líder en China, montó un centro de ahorro 
 
 ## Día de la Tierra y redes sociales chinas
 
-El Día de la Tierra funciona como un momento clave para que las marcas muestren su trabajo en sostenibilidad. El lema de este año, "Planeta vs. Plásticos", insiste en reducir el uso de plástico. Muchas marcas se han apuntado al desafío con campañas que abordan directamente la contaminación plástica. La cafetería Seesaw se alió con VANS para promocionar la bebida "No Carbon Gas", animando a reducir emisiones de CO₂ a través del transporte verde. También crearon vasos de café con cordón, en edición limitada, fabricados con materiales de paja respetuosos con el medio ambiente para promover productos reutilizables.
+El Día de la Tierra funciona como un momento clave para que las marcas enseñen su trabajo en sostenibilidad. El lema de este año, "Planeta vs. Plásticos", insiste en recortar el uso de plástico. Muchas marcas se han apuntado al reto con campañas que se meten de lleno en la contaminación plástica. La cafetería Seesaw se alió con VANS para empujar la bebida "No Carbon Gas", animando a recortar emisiones de CO₂ con transporte verde. También lanzaron vasos de café con cordón, en edición limitada, fabricados con materiales de paja respetuosos con el medio ambiente para empujar productos reutilizables.
 
 ## Prácticas sostenibles en el día a día
 
@@ -39,7 +39,7 @@ Más allá del Día de la Tierra, marcas como Starbucks se aseguran de integrar 
 
 ## Impacto emocional y visual: Zhao Ri Wei Pin
 
-Conectar al consumidor emocional y visualmente puede potenciar mucho una campaña verde. Zhao Ri Wei Pin, marca de leche orgánica, levantó un globo terráqueo hecho con cartones de leche en Anfu Road, en Shanghái. La instalación interactiva invitaba al usuario a depositar sus cartones en un cilindro de reciclaje, como gesto de apoyo al medio ambiente. La acción promueve el reciclaje y, además, implica al consumidor de un modo lúdico y significativo.
+Conectar al consumidor en lo emocional y en lo visual puede empujar mucho una campaña verde. Zhao Ri Wei Pin, marca de leche orgánica, levantó un globo terráqueo hecho con cartones de leche en Anfu Road, en Shanghái. La instalación interactiva invitaba al usuario a dejar sus cartones en un cilindro de reciclaje, como gesto de apoyo al medio ambiente. La acción empuja el reciclaje y, además, mete al consumidor en un gesto lúdico y con sentido.
 
 ## Conectar con el interés del consumidor a través del marketing social en China
 
@@ -49,4 +49,4 @@ Para marcas con atributos verdes intrínsecos, como Purcotton o Zhao Ri Wei Pin,
 
 Para otras marcas, presentar la sostenibilidad de formas creativas y entretenidas, como hacen Proya Cosmetics y Seesaw, también comunica con eficacia el cuidado por el medio ambiente. Iniciativas así reflejan una filosofía empresarial orientada al largo plazo.
 
-Incorporar la sostenibilidad a los valores y a la estrategia de marketing ha dejado de ser una tendencia y es ya una necesidad. Las buenas campañas de marketing verde abordan retos ambientales reales, conectan con la audiencia, generan lealtad y promueven hábitos de consumo más responsables. A medida que más marcas hagan suya esta agenda, el esfuerzo conjunto empujará hacia una sociedad más consciente.
+Meter la sostenibilidad en los valores y en la estrategia de marketing ha dejado de ser una tendencia y es ya una necesidad. Las buenas campañas de marketing verde se meten en retos ambientales reales, conectan con la audiencia, generan lealtad y empujan hábitos de consumo más responsables. A medida que más marcas hagan suya esta agenda, el esfuerzo conjunto empujará hacia una sociedad más consciente.

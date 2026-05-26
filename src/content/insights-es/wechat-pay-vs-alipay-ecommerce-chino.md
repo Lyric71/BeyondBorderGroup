@@ -22,8 +22,8 @@ heroImageAlt: "Comparativa entre WeChat Pay y Alipay"
 ### Funcionalidades clave
 
 * **Ecosistema integrado.** WeChat Pay va más allá del pago en sí. Vive dentro de un entorno digital más amplio. El usuario puede pedir comida, llamar un coche o comprar en tiendas online sin salir de la app. Esa integración simplifica la experiencia y mantiene altos niveles de uso.
-* **Pago con código QR.** La presencia del QR en China es masiva. Se paga así en tiendas, restaurantes y proveedores de servicios, con rapidez y sin sobresaltos.
-* **Mini-programas.** Son subaplicaciones dentro de WeChat que ofrecen servicios sin descarga adicional. Las marcas montan dentro su tienda virtual, dan soporte y lanzan campañas de marketing, todo sin que el usuario salga de WeChat.
+* **Pago con código QR.** La presencia del QR en China es masiva. Se paga así en tiendas, restaurantes y proveedores de servicios, deprisa y sin sobresaltos.
+* **Mini-programas.** Son subaplicaciones dentro de WeChat que dan servicios sin descarga aparte. Las marcas levantan dentro su tienda virtual, dan soporte y lanzan campañas de marketing, todo sin que el usuario salga de WeChat.
 
 ![Plataforma WeChat Pay](/Images/insights/2024/07/WeChat-Pay-platform.png)
 
@@ -33,7 +33,7 @@ Fuente: WeChat Pay (https://pay.weixin.qq.com/)
 
 ### Cómo dar de alta WeChat Pay en una empresa
 
-Para aprovechar la enorme base de usuarios de WeChat Pay, abrir cuenta de empresa es un movimiento estratégico. El proceso, paso a paso:
+Para tirar de la enorme base de usuarios de WeChat Pay, abrir cuenta de empresa es un movimiento estratégico. El proceso, paso a paso:
 
 1. **Crear una cuenta oficial.** El primer paso es montar una cuenta oficial de WeChat. Hay que aportar la información societaria y la documentación que la plataforma exige para verificar.
 2. **Elegir el tipo de perfil.** Según el tipo de negocio, conviene un Subscription account o un Service account. El segundo es el más adecuado si el objetivo es integrar WeChat Pay con la operación de [eCommerce](/es/crecer-en-china/ecommerce-transfronterizo).
@@ -42,9 +42,9 @@ Para aprovechar la enorme base de usuarios de WeChat Pay, abrir cuenta de empres
 
 ### Cómo usar WeChat Pay para hacer crecer el negocio
 
-* **Compra dentro de la app.** La integración permite comprar de forma directa dentro del mini-programa de la marca. Esa fluidez es clave para empujar ventas.
-* **Campañas de marketing.** WeChat aporta funcionalidades sociales para lanzar campañas segmentadas, con ofertas o descuentos exclusivos que el usuario canjea directamente con WeChat Pay.
-* **Relación con el cliente.** El cruce entre pago y red social permite acompañar al cliente de forma más personal. Mensajes, soporte, recogida de feedback: todo en el mismo entorno.
+* **Compra dentro de la app.** La integración deja comprar directamente dentro del mini-programa de la marca. Esa fluidez es clave para empujar ventas.
+* **Campañas de marketing.** WeChat trae funcionalidades sociales para lanzar campañas segmentadas, con ofertas o descuentos exclusivos que el usuario canjea directamente con WeChat Pay.
+* **Relación con el cliente.** El cruce entre pago y red social deja acompañar al cliente de forma más personal. Mensajes, soporte, recogida de feedback: todo en el mismo entorno.
 
 ## Alipay: en qué consiste y para qué sirve
 

@@ -22,9 +22,9 @@ WeChat Channels ofrece varias funcionalidades valiosas para las marcas que apunt
 
 **Funcionalidades clave:**
 
-* **Vídeo y fotos:** vídeos de hasta 30 minutos y publicaciones tipo carrusel de fotos. Las marcas pueden diversificar el contenido y llegar a la audiencia con formatos ricos.
-* **Livestream:** la emisión en directo permite una interacción real con el usuario, mostrar producto, hacer Q&A y montar eventos de venta. Es una de las palancas más utilizadas en el livestream chino.
-* **Comentarios y descubrimiento:** Channels apoya su sistema de recomendación en algoritmo, lo que potencia el alcance orgánico y mejora el engagement con audiencias relevantes.
+* **Vídeo y fotos:** vídeos de hasta 30 minutos y publicaciones tipo carrusel de fotos. Las marcas pueden variar el contenido y llegar a la audiencia con formatos ricos.
+* **Livestream:** la emisión en directo permite una interacción real con el usuario, enseñar producto, hacer Q&A y montar eventos de venta. Es una de las palancas más usadas del livestream chino.
+* **Comentarios y descubrimiento:** Channels apoya su sistema de recomendación en algoritmo, lo que empuja el alcance orgánico y mejora el engagement con audiencias relevantes.
 
 **Perfil de audiencia**
 
@@ -32,17 +32,17 @@ WeChat Channels capta un público algo mayor que el de Douyin, con mucho interé
 
 ## Por qué WeChat Channels importa para el eCommerce y la marca en China
 
-Con la base de usuarios de WeChat detrás, Channels encaja de forma natural con las marcas que quieran reforzar su posicionamiento en China y ganar presencia en redes sociales chinas. Combina la fuerza de las redes sociales con la del eCommerce, lo que la vuelve ideal para estrategias de social commerce chino y venta directa.
+Con la base de usuarios de WeChat detrás, Channels encaja sin fricción con las marcas que quieran reforzar su posicionamiento en China y ganar presencia en redes sociales chinas. Mezcla la fuerza de las redes sociales con la del eCommerce, lo que la vuelve ideal para estrategias de social commerce chino y venta directa.
 
-* **Base de audiencia enorme:** el alcance de WeChat pone a millones de clientes potenciales al alcance de la marca, algo imprescindible para construir o ampliar la presencia en China.
-* **Ecosistema integrado:** WeChat Channels se conecta con WeChat Pay y los mini-programas, lo que facilita promocionar producto y procesar el pago dentro de la propia app.
-* **Engagement auténtico:** entre el descubrimiento orgánico de contenido y las opciones de publicidad, Channels permite a la marca llegar a nuevos usuarios y a la vez mantener vivos a los seguidores actuales.
+* **Base de audiencia enorme:** el alcance de WeChat pone a millones de clientes potenciales al alcance de la marca, pieza imprescindible para levantar o ampliar la presencia en China.
+* **Ecosistema integrado:** WeChat Channels casa con WeChat Pay y los mini-programas, lo que facilita promocionar producto y cobrar dentro de la propia app.
+* **Engagement auténtico:** entre el descubrimiento orgánico de contenido y las opciones de publicidad, Channels deja a la marca llegar a nuevos usuarios y, a la vez, mantener vivos a los seguidores actuales.
 
 ## Contenido y livestream en WeChat Channels
 
 El content marketing en WeChat Channels gira alrededor de contenido de calidad, que entretenga o que aporte algo útil al usuario. Algunas estrategias para que el contenido tire:
 
-* **Contenido formativo:** tutoriales, guías paso a paso y demos de producto son eficaces para construir autoridad de marca y aportar valor real al usuario, sobre todo en marcas de lifestyle y tecnología.
+* **Contenido formativo:** tutoriales, guías paso a paso y demos de producto cumplen para levantar autoridad de marca y aportar valor real al usuario, sobre todo en marcas de lifestyle y tecnología.
 
 ![Ejemplo de contenido formativo en WeChat](/Images/insights/2024/12/wechat-education-1024x585.png)
 

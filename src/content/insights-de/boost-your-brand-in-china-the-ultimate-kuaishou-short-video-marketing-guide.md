@@ -176,4 +176,4 @@ Grüne Praktiken in den Vordergrund zu stellen, schliesst an Kuaishous umweltbew
 
 ## Fazit
 
-Kuaishou ist eine eigenständige Plattform, auf der Marken in China über lokalisierten Content, Livestream und [Influencer-Marketing](/de/in-china-wachsen/influencer-und-kol) Anschluss finden. In einer ganzheitlichen China-Markenstrategie öffnet sie einen starken Weg zu Verbrauchern, besonders in ländlichen Regionen und unteren Tiers, wo die Nachfrage nach nachvollziehbarem Content und eCommerce-Engagement schnell wächst. Marken, die diese Stärken nutzen, positionieren sich nachhaltig im dynamischen digitalen Marktplatz Chinas.
+Kuaishou ist eine eigenständige Plattform, auf der Marken in China über lokalisierten Content, Livestream und [Influencer-Marketing](/de/in-china-wachsen/influencer-und-kol) Anschluss finden. In einer ganzheitlichen China-Markenstrategie öffnet sie einen starken Weg zu Käufern, vor allem in ländlichen Regionen und unteren Tiers, wo die Nachfrage nach nachvollziehbarem Content und eCommerce-Engagement schnell wächst. Marken, die diese Stärken nutzen, positionieren sich nachhaltig im dynamischen digitalen Marktplatz Chinas.

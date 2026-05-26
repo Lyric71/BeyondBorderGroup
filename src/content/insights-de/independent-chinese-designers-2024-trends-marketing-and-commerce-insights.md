@@ -17,11 +17,11 @@ In den letzten Jahren hat sich Chinas Modeszene grundlegend gewandelt. Die Wiede
 
 ## Fokus auf den Heimmarkt
 
-Die Pandemie traf viele Designer hart und richtete den Blick stärker auf den Heimmarkt. Daraus entstand das Interesse an einzigartigen Nischenmarken, die kulturelles Erbe und globale Trends verbinden. Verbraucher trauen lokalen Marken zunehmend zu, dass sie wachsen. Mehr als die Hälfte spricht ihnen Vertrauen aus. Die eCommerce-Landschaft in China hat sich entsprechend angepasst und bietet eine starke Bühne für diese Designer.
+Die Pandemie traf viele Designer hart und richtete den Blick stärker auf den Heimmarkt. Daraus entstand das Interesse an einzigartigen Nischenmarken, die kulturelles Erbe und globale Trends verbinden. Käufer trauen lokalen Marken zunehmend zu, dass sie wachsen. Mehr als die Hälfte spricht ihnen Vertrauen aus. Die eCommerce-Landschaft in China hat sich darauf eingestellt und bietet diesen Designern eine starke Bühne.
 
 ## Kulturelle Integration im Design
 
-Chinesische Designer integrieren kulturelle Elemente geschickt, sie verbinden traditionelle Motive mit moderner Ästhetik. Der Ansatz spricht lokale Verbraucher an und zieht internationales Interesse. Der Fokus auf kulturelles Erbe schafft einzigartige Produkte in einem dichten Markt. Social-[Marketing](/de/in-china-wachsen/kampagnen) in China spielt eine wichtige Rolle, um diese kulturell reichen Entwürfe auf WeChat und Douyin zu zeigen.
+Chinesische Designer integrieren kulturelle Elemente geschickt, sie verbinden traditionelle Motive mit moderner Ästhetik. Der Ansatz spricht lokale Käufer an und zieht internationales Interesse. Der Fokus auf kulturelles Erbe schafft einzigartige Produkte in einem dichten Markt. Social-[Marketing](/de/in-china-wachsen/kampagnen) in China spielt eine wichtige Rolle, um diese kulturell reichen Entwürfe auf WeChat und Douyin zu zeigen.
 
 ![](/Images/insights/2024/06/Chanel-1024x816-1.png)
 
@@ -33,7 +33,7 @@ Nachhaltigkeit ist für viele unabhängige Designer zentral. Marken wie Susan Fa
 
 ## Digitale Innovation und Metaverse
 
-Chinas digitale Landschaft ist sehr fortgeschritten und bietet Designern viele Innovationsfelder. Marken wie 8ON8 nutzen die Kraft der digitalen Integration und verbinden physische mit digitalen Erlebnissen, um immersive Modepräsentationen zu schaffen. Metaverse und NFTs öffnen neue Wege für [Marken](/de/nach-china/marke-und-lokalisierung)-Engagement und Konsumenten-Interaktion. Plattformen wie Weibo und Xiaohongshu (Little Red Book) tragen diese digitalen Innovationen.
+Chinas digitale Landschaft ist sehr fortgeschritten und bietet Designern viele Innovationsfelder. Marken wie 8ON8 nutzen die Kraft der digitalen Integration und verbinden physische mit digitalen Erlebnissen, um immersive Modepräsentationen zu schaffen. Metaverse und NFTs öffnen neue Wege für [Marken](/de/nach-china/marke-und-lokalisierung)-Engagement und Käufer-Interaktion. Plattformen wie Weibo und Xiaohongshu (Little Red Book) tragen diese digitalen Innovationen.
 
 ![](/Images/insights/2024/06/dg.png)
 
@@ -51,7 +51,7 @@ Die Vorlieben der Jüngeren, vor allem Millennials und Gen Z, treiben die Modeen
 
 ### 1. Ökobewusste Co-Creation
 
-Susan Fangs Marke ist ein Beispiel, wie Nachhaltigkeit und Zusammenarbeit Erfolg tragen. Innovative Entwürfe und strategische Partnerschaften mit grossen Marken haben Reichweite gegeben und die Botschaft verantwortlicher Schönheit verstärkt. Andere Marken lernen davon: Social Media nutzen, mit Wertepartnern verbünden, im Social Commerce in China gezielt mit ökobewussten Verbrauchern arbeiten.
+Susan Fangs Marke ist ein Beispiel, wie Nachhaltigkeit und Zusammenarbeit Erfolg tragen. Innovative Entwürfe und strategische Partnerschaften mit grossen Marken haben Reichweite gebracht und die Botschaft verantwortlicher Schönheit verstärkt. Andere Marken lernen davon: Social Media nutzen, sich mit Wertepartnern verbünden, im Social Commerce in China gezielt mit ökobewussten Käufern arbeiten.
 
 ### 2. Immersive digitale Integration
 

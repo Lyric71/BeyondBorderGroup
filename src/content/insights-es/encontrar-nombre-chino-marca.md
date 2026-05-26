@@ -39,7 +39,7 @@ Reproduce el sonido del nombre original con caracteres chinos. Funciona para mar
 
 ### Significado evocador
 
-El foco se desplaza hacia un nombre que transmite la esencia o los valores de la marca, aunque no suene al original.
+El foco se mueve hacia un nombre que transmite la esencia o los valores de la marca, aunque no suene al original.
 
 * Ejemplo: Marriott (万豪, Wànháo) se traduce como "millones de grandeza" y evoca lujo y sofisticación.
 
@@ -53,7 +53,7 @@ Esta vía combina parecido sonoro y carga significativa. Se considera el patrón
 
 ![Coca-Cola y su nombre chino](/Images/insights/2025/01/cola-by-TutorABC-Chinese-300x288.jpg)
 
-Para una marca activa en Douyin eCommerce o en social commerce, elegir un nombre con carga emocional y familiaridad fonética facilita el recuerdo y refuerza el vínculo con el consumidor.
+Para una marca activa en Douyin eCommerce o en social commerce, escoger un nombre con carga emocional y familiaridad fonética facilita el recuerdo y refuerza el vínculo con el consumidor.
 
 ## Alinear el nombre con los valores y el posicionamiento
 
@@ -68,9 +68,9 @@ En China, los nombres de marca evocan a menudo aspiraciones: éxito, felicidad o
 
 ### Adaptar para ser relevante
 
-A veces toca ajustar el posicionamiento global para encajar mejor en los valores locales. El "connecting everyone" original de LinkedIn resultaba menos atractivo para los profesionales chinos que la promesa aspiracional de "élite líder". Una buena muestra de hasta qué punto importa alinear el mensaje con las prioridades del consumidor.
+A veces toca ajustar el posicionamiento global para encajar mejor con los valores locales. El "connecting everyone" original de LinkedIn resultaba menos atractivo para los profesionales chinos que la promesa aspiracional de "élite líder". Una buena muestra de hasta qué punto importa casar el mensaje con las prioridades del consumidor.
 
-Trabajar con una agencia de [marketing](/es/crecer-en-china/campanas) en China ayuda a que la marca afine ese ajuste y se sitúe del lado de los valores locales.
+Trabajar con una agencia de [marketing](/es/crecer-en-china/campanas) en China ayuda a que la marca afine ese ajuste y se coloque del lado de los valores locales.
 
 ## Simplicidad para que el nombre se quede
 

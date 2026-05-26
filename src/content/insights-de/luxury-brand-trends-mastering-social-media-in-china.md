@@ -20,7 +20,7 @@ Soziale Medien stehen im Zentrum der Kaufentscheidungen chinesischer Luxuskunden
 
 ## Soziale Medien zur Kundenansprache nutzen
 
-Die wirksame Nutzung sozialer Medien ist für Luxusmarken entscheidend, die chinesische Verbraucher erreichen und beeinflussen wollen. Key Opinion Leader (KOLs) haben grosses Gewicht, der Kontakt zu ihnen muss strategisch laufen. Marken bauen WeChat Official Accounts und Mini-Programme auf, um eigene Traffic-Kanäle zu schaffen, in denen tiefe Interaktion und Kundenbindung möglich werden.
+Die wirksame Nutzung sozialer Medien ist für Luxusmarken entscheidend, die chinesische Käufer erreichen und beeinflussen wollen. Key Opinion Leader (KOLs) haben grosses Gewicht, der Kontakt zu ihnen muss strategisch laufen. Marken bauen WeChat Official Accounts und Mini-Programme auf, um eigene Traffic-Kanäle zu schaffen, in denen tiefe Interaktion und Kundenbindung möglich werden.
 
 ![](/Images/insights/2024/06/ss12.jpg)
 
@@ -42,11 +42,11 @@ KOLs prägen die Wahrnehmung und treiben Umsatz. Luxusmarken müssen mit KOLs zu
 
 ## Social Commerce und Luxus
 
-Social Commerce gewinnt in China an Boden. Verbraucher kaufen lieber direkt über die Social-Plattformen ein. Marken wie Cartier oder Gucci nutzen Tencents Traffic-Lösungen, um die Kundenbasis zu erweitern und den Umsatz zu heben. Social Commerce bietet einen direkten, engen Weg, Verbraucher zu erreichen und zur Konversion zu führen.
+Social Commerce gewinnt in China an Boden. Käufer kaufen lieber direkt über die Social-Plattformen ein. Marken wie Cartier oder Gucci nutzen Tencents Traffic-Lösungen, um die Kundenbasis zu erweitern und den Umsatz zu heben. Social Commerce bietet einen direkten, engen Weg, Käufer zu erreichen und zur Konversion zu führen.
 
 ## Markenwert über Content aufbauen
 
-Content-Marketing ist zentral, um Markenwert zu schaffen und Konsumenten tiefer anzusprechen. Luxusmarken sollten hochwertige, gut gemachte Inhalte produzieren, die Werte tragen und das Zielpublikum erreichen. Storytelling, Blicke hinter die Kulissen und interaktive Formate stärken Wahrnehmung und Loyalität.
+Content-Marketing ist zentral, um Markenwert zu schaffen und Käufer tiefer anzusprechen. Luxusmarken sollten hochwertige, gut gemachte Inhalte produzieren, die Werte tragen und das Zielpublikum erreichen. Storytelling, Blicke hinter die Kulissen und interaktive Formate stärken Wahrnehmung und Loyalität.
 
 ## Personalisierung und Kundenerlebnis
 

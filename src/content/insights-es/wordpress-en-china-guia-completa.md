@@ -24,25 +24,25 @@ WordPress mueve más del 40 % de los sitios del planeta y su peso sigue creciend
 * **Coste razonable.** El núcleo es gratuito y la mayoría de plugins y temas se pagan a precios asumibles, tanto para una startup como para una marca consolidada.
 * **Pensado para SEO.** WordPress trae herramientas que ayudan a posicionar en buscadores, incluido Baidu.
 
-Para empresas que se dirigen a la vez al mercado chino y a una audiencia internacional, la flexibilidad de la plataforma es difícil de igualar. Eso sí, operarla dentro de China obliga a resolver problemas técnicos y regulatorios concretos.
+Para empresas que apuntan a la vez al mercado chino y a una audiencia internacional, la flexibilidad de la plataforma es difícil de igualar. Eso sí, operarla dentro de China obliga a resolver problemas técnicos y regulatorios concretos.
 
 ## ¿Está disponible WordPress en China?
 
 Sí, pero con limitaciones. La versión autoalojada (WordPress.org) funciona sin restricciones. La versión gestionada (WordPress.com) está bloqueada, así que no se puede contar con su servicio de hosting.
 
-WordPress como tal no está prohibido. Lo que sí ocurre es que muchos servicios de terceros habituales en una instalación estándar (Google Fonts, YouTube, ciertos plugins sociales) están bloqueados o cargan con mucha latencia. El rendimiento se resiente, y la experiencia del visitante también. Por eso muchas marcas trabajan con una agencia web local que sepa cómo ajustar la base.
+WordPress como tal no está prohibido. Lo que sí pasa es que muchos servicios de terceros habituales en una instalación estándar (Google Fonts, YouTube, ciertos plugins sociales) están bloqueados o cargan con mucha latencia. El rendimiento se resiente y la experiencia del visitante también. Por eso muchas marcas trabajan con una agencia web local que sepa cómo afinar la base.
 
 ## Los retos de WordPress en China
 
-Montar un sitio WordPress en China no se parece a hacerlo en cualquier otro mercado. Hay frentes específicos que conviene tener en mente, sobre todo si el proyecto va orientado al eCommerce o al marketing digital local.
+Montar un sitio WordPress en China no se parece a hacerlo en cualquier otro mercado. Hay frentes concretos que conviene tener en mente, sobre todo si el proyecto va orientado al eCommerce o al marketing digital local.
 
 ### Carga lenta
 
-El Gran Cortafuegos filtra y supervisa todo el tráfico que entra al país. Para un sitio alojado en servidores extranjeros, eso se traduce en retardos visibles. En un proyecto de eCommerce en China, esa lentitud destruye conversiones y arruina la experiencia de compra.
+El Gran Cortafuegos filtra y vigila todo el tráfico que entra al país. Para un sitio alojado en servidores extranjeros, eso se traduce en retardos a ojo. En un proyecto de eCommerce en China, esa lentitud destruye conversiones y arruina la experiencia de compra.
 
 ### Restricciones de alojamiento
 
-Para alojar legalmente un sitio en servidores de China continental hace falta una licencia ICP (Internet Content Provider). Es obligatoria y, para una empresa extranjera, conseguirla no es trivial. Sin ICP, el sitio puede caer en cualquier momento. De ahí que tantas marcas recurran a una agencia de marketing en China para acompañarlas en el proceso administrativo.
+Para alojar legalmente un sitio en servidores de China continental hace falta una licencia ICP (Internet Content Provider). Es obligatoria y, para una empresa extranjera, conseguirla no es coser y cantar. Sin ICP, el sitio puede caerse en cualquier momento. De ahí que tantas marcas tiren de una agencia de marketing en China para acompañarlas en el proceso administrativo.
 
 ### Servicios bloqueados
 
@@ -50,7 +50,7 @@ Muchos temas y plugins de WordPress dan por hecho que Google Analytics, Facebook
 
 ### Compatibilidad de temas y plugins
 
-WordPress ofrece miles de temas y plugins, pero no todos están pensados para este mercado. Algunos dependen de redes de distribución de contenido (CDN) que en China van lentas o directamente no responden, lo que provoca que el sitio cargue a medias o con errores visuales.
+WordPress trae miles de temas y plugins, pero no todos están pensados para este mercado. Algunos dependen de redes de distribución de contenido (CDN) que en China van lentas o directamente no responden, lo que hace que el sitio cargue a medias o con errores visuales.
 
 ## Cómo construir un WordPress optimizado para China
 

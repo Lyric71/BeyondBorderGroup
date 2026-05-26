@@ -23,11 +23,11 @@ La licencia ICP es un permiso obligatorio que emite el Ministerio de Industria y
 
 ![Número de licencia ICP en el pie del sitio Youku, plataforma de vídeo similar a YouTube](/Images/insights/2025/02/ICP-ex2-1024x495.png)
 
-Si su empresa quiere construir presencia online en China, ya sea con una tienda de eCommerce, un blog o un mini-programa de WeChat, contar con licencia ICP no es opcional. Sin ella, la web puede quedar inaccesible para los usuarios chinos y limitar gravemente su alcance.
+Si su empresa quiere levantar presencia online en China, ya sea con una tienda de eCommerce, un blog o un mini-programa de WeChat, contar con licencia ICP no es opcional. Sin ella, la web puede acabar inaccesible para los usuarios chinos y recortar de mala manera su alcance.
 
 ### ¿Por qué importa para eCommerce y marketing digital?
 
-China es el mayor mercado de eCommerce del mundo y los consumidores esperan acceso rápido y fiable a las webs. La licencia ICP da acceso legal y, además, refuerza la credibilidad. El consumidor chino confía y conecta más con empresas que cumplen la normativa local, lo que mejora la reputación de marca y los resultados de marketing.
+China es el mayor mercado de eCommerce del mundo y los consumidores esperan acceso rápido y fiable a las webs. La licencia ICP da acceso legal y, además, suma credibilidad. El consumidor chino confía y conecta más con empresas que cumplen la normativa local, lo que mejora la reputación de marca y los resultados de marketing.
 
 ## Tipos de licencia ICP: ¿cuál necesita su negocio?
 

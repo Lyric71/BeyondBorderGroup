@@ -73,7 +73,7 @@ Chinas grosse Handels-[Plattformen](/de/china-verstehen/plattformen) haben eigen
 
 Wer einen Trend will, der 2025 erklärt, dann diesen: Instant Commerce.
 
-Instant Commerce ist nicht „Lieferung" als Feature. Es ist eine neue Handels-Erwartung, gebaut auf nahem Bestand, lokaler Erfüllung und app-eigenem Routing. Es verändert, was Verbraucher beim Alltagsgut für normal halten.
+Instant Commerce ist nicht „Lieferung" als Feature. Es ist eine neue Handels-Erwartung, gebaut auf wohnortnahem Bestand, lokaler Auslieferung und app-eigenem Routing. Das verändert, was Käufer beim Alltagsgut für normal halten.
 
 Der Instant-Commerce-Einzelhandel wird 2025 ein Volumen von 1,003 Billionen RMB erreichen, mit Wachstum oberhalb des gesamten Retail-eCommerce.
 
@@ -87,13 +87,13 @@ Der Instant-Commerce-Einzelhandel wird 2025 ein Volumen von 1,003 Billionen RMB 
 
 ## Was das für globale Marken in China heisst
 
-[Globale Marken](/de/nach-china/markteintrittsberatung) treten nicht in „Chinas [eCommerce](/de/in-china-wachsen/cross-border-ecommerce)" als einzelnen Kanal ein. Sie treten in ein Plattform-System ein, in dem jeder Akteur eine eigene Konsumgewohnheit besetzt.
+[Globale Marken](/de/nach-china/markteintrittsberatung) treten nicht in „Chinas [eCommerce](/de/in-china-wachsen/cross-border-ecommerce)" als einen einzelnen Kanal ein. Sie steigen in ein Plattform-System ein, in dem jeder Akteur eine eigene Kaufgewohnheit besetzt.
 
 **Praktisch denkt man besser nach Fähigkeit, nicht nach Logo:**
 
 * Marktplatzgrösse und Such-Intent: Alibaba-Ökosystem, JD.
 * Content-getriebene Konversion: Douyin, Kuaishou.
 * Vertrauensgetriebene Entdeckung: Xiaohongshu.
-* Lokale Auslieferung und Services: Meituan und der breitere Instant-Retail-Schub.
+* Lokale Auslieferung und Services: Meituan und der breitere Schub im Instant Retail.
 
 ![](/Images/insights/2025/12/new-app-3.png)

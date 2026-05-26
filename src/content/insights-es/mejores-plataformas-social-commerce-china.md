@@ -26,39 +26,39 @@ Xiaohongshu, también conocida como Little Red Book, es una de las plataformas m
 
 ### Funcionalidades clave
 
-* **Contenido generado por el usuario (UGC):** Xiaohongshu vive del UGC auténtico, reseñas y tutoriales de lifestyle que construyen confianza con la audiencia. Una palanca excelente para la localización de marca.
-* **Livestreaming:** la función de directo facilita la interacción en tiempo real con el consumidor y da a las marcas un canal directo para mostrar producto y vender.
-* **Marketing de KOL:** Xiaohongshu se vuelca con los KOL chinos, lo que permite a las marcas aliarse con influencers de credibilidad y alcance considerables, claves para subir la visibilidad del producto.
-* **Pago fluido:** la plataforma soporta WeChat Pay y Alipay, lo que simplifica el checkout y eleva la conversión.
+* **Contenido generado por el usuario (UGC):** Xiaohongshu vive del UGC auténtico, reseñas y tutoriales de lifestyle que levantan confianza con la audiencia. Una palanca de primera para la localización de marca.
+* **Livestreaming:** la función de directo facilita la interacción al vuelo con el consumidor y da a las marcas un canal directo para enseñar producto y vender.
+* **Marketing de KOL:** Xiaohongshu se vuelca con los KOL chinos, lo que deja a las marcas aliarse con influencers de credibilidad y alcance considerables, piezas clave para subir la visibilidad del producto.
+* **Pago fluido:** la plataforma soporta WeChat Pay y Alipay, lo que pule el checkout y empuja la conversión.
 
 ### Oportunidades de marketing
 
-Para una marca que busca encajar en el eCommerce chino, Xiaohongshu ofrece muchas vías de performance marketing. Apoyarse en livestreaming e influencers chinos para promocionar producto permite enganchar al usuario joven y muy activo, y construir relaciones de medio plazo.
+Para una marca que busca encajar en el eCommerce chino, Xiaohongshu abre muchas vías de performance marketing. Apoyarse en livestreaming e influencers chinos para promocionar producto deja enganchar al usuario joven y muy activo, y tejer relaciones de medio plazo.
 
 ## 2. WeChat
 
 ### Visión general
 
-WeChat es mucho más que una mensajería. Es una superapp todo en uno que integra redes sociales, pago móvil y plataforma eCommerce. Con más de 1.200 millones de usuarios activos, WeChat ofrece a las marcas un alcance y una capacidad de engagement difíciles de igualar, y es un actor central del marketing digital chino.
+WeChat es mucho más que una app de mensajería. Es una superapp todo en uno que junta redes sociales, pago móvil y plataforma eCommerce. Con más de 1.200 millones de usuarios activos, WeChat da a las marcas un alcance y una capacidad de engagement difíciles de igualar, y es un actor central del marketing digital chino.
 
 ![Funcionalidades de WeChat](/Images/insights/2024/12/wechat2-1024x585.png)
 
 ### Funcionalidades clave
 
-* **Mini-programas:** subaplicaciones dentro del ecosistema de WeChat que permiten a las marcas crear experiencias de compra a medida, desde el descubrimiento hasta el checkout, sin salir de la app. Una pieza vital de la localización.
-* **WeChat Pay:** el sistema de pago integrado simplifica la transacción y deja al usuario comprar directamente.
-* **WeChat Channels:** plataforma de vídeo que permite usar el livestreaming para conectar con el consumidor en directo y empujar ventas con demostraciones.
-* **Tráfico privado:** las cuentas oficiales y los grupos de usuarios crean canales de comunicación directa que ayudan a bajar el coste de adquisición en un mercado saturado.
+* **Mini-programas:** subaplicaciones dentro del ecosistema de WeChat que dejan a las marcas crear experiencias de compra a medida, del descubrimiento al checkout, sin salir de la app. Pieza vital de la localización.
+* **WeChat Pay:** el sistema de pago integrado pule la transacción y deja al usuario comprar directamente.
+* **WeChat Channels:** plataforma de vídeo que deja usar el livestreaming para conectar con el consumidor en directo y empujar ventas con demostraciones.
+* **Tráfico privado:** las cuentas oficiales y los grupos de usuarios abren canales de comunicación directa que ayudan a bajar el coste de adquisición en un mercado saturado.
 
 ### Oportunidades de marketing
 
-WeChat ofrece ventajas serias para reforzar la estrategia de redes sociales en China. Apoyarse en mini-programas y livestream permite enganchar mejor al consumidor y montar experiencias de compra fluidas e integradas.
+WeChat trae ventajas serias para reforzar la estrategia de redes sociales en China. Apoyarse en mini-programas y livestream deja enganchar mejor al consumidor y montar experiencias de compra sin saltos e integradas.
 
 ## 3. Taobao/Tmall (GuangGuang)
 
 ### Visión general
 
-Taobao y Tmall, propiedad de Alibaba, son pesos pesados del eCommerce chino y dominan el social commerce con su plataforma GuangGuang. Estas plataformas dan a las marcas acceso a millones de consumidores y son una elección habitual para empresas que quieren escalar rápido.
+Taobao y Tmall, propiedad de Alibaba, son pesos pesados del eCommerce chino y mandan en el social commerce con su plataforma GuangGuang. Estas plataformas dan a las marcas acceso a millones de consumidores y son una elección habitual para empresas que quieran escalar rápido.
 
 ![Plataforma Taobao y Tmall](/Images/insights/2024/12/taobao2-1024x585.png)
 

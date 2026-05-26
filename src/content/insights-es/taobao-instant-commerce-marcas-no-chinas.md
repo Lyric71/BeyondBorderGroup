@@ -26,11 +26,11 @@ Para una marca no china, esto importa menos por la campaña concreta y más por 
 
 ## Qué está construyendo Alibaba en realidad
 
-[Taobao](/es/crecer-en-china/ecommerce-transfronterizo) Instant Commerce convierte la entrega por hora de Taobao en una red única, con los repartidores de Ele.me, las tiendas Freshippo y supermercados aliados. Cubre productos cotidianos, parte de la electrónica y moda, con varias decenas de millones de pedidos rápidos al día.
+[Taobao](/es/crecer-en-china/ecommerce-transfronterizo) Instant Commerce convierte la entrega por hora de Taobao en una red única, con los repartidores de Ele.me, las tiendas Freshippo y supermercados aliados. Cubre productos cotidianos, parte de la electrónica y la moda, con varias decenas de millones de pedidos rápidos al día.
 
-Taobao Flash Sale es la puerta de entrada. La app de Ele.me se está renombrando, los repartidores se rebautizan como city knights y el azul familiar del delivery cede poco a poco al naranja de Taobao.
+Taobao Flash Sale es la puerta de entrada. La app de Ele.me se está renombrando, los repartidores se rebautizan como city knights y el azul familiar del delivery va cediendo poco a poco al naranja de Taobao.
 
-Por debajo, Alibaba ha integrado el retail en tiempo real dentro de su división principal de eCommerce. El instant commerce ya no es un proyecto lateral. Es parte de la propuesta central de Taobao.
+Por debajo, Alibaba ha metido el retail en tiempo real dentro de su división principal de eCommerce. El instant commerce ya no es un proyecto lateral. Es parte de la propuesta central de Taobao.
 
 Las subvenciones y la inversión han disparado los volúmenes en poco tiempo y presionan a la baja los márgenes de todo el sector. Es una batalla por cuota y por hábito, no por beneficio trimestral.
 
@@ -48,7 +48,7 @@ El retail instantáneo funciona con otra lógica. Está mucho más cerca del del
 * Ciclos de decisión cortos.
 * Alta frecuencia, ticket bajo.
 
-Al meter la entrega inmediata dentro de Taobao y al renombrar Ele.me como Taobao Flash Sale, Alibaba intenta fusionar los dos comportamientos. El objetivo va más allá del Double 11:
+Al meter la entrega inmediata dentro de Taobao y al renombrar Ele.me como Taobao Flash Sale, Alibaba intenta fundir los dos comportamientos. La meta va más allá del Double 11:
 
 * Crear puntos de contacto diarios en lugar de picos festivos.
 * Subir la frecuencia de compra por usuario, no solo el tamaño de la cesta.

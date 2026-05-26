@@ -29,7 +29,7 @@ Los KOL son figuras con peso en nichos concretos: belleza, tecnología, moda. Of
 
 Cada plataforma habla con un perfil distinto, y eso influye en el coste:
 
-- **Douyin**: muy fuerte en vídeo, puede salir cara para marcas que quieran apalancar las tendencias del eCommerce en Douyin.
+- **Douyin**: muy fuerte en vídeo, puede salir cara a las marcas que quieran tirar de las tendencias del eCommerce en Douyin.
 - **Xiaohongshu**: encaja con marcas de lujo y lifestyle, sobre todo si se trabaja con una agencia creativa en China.
 - **WeChat**: marketing personalizado a través de grupos privados.
 

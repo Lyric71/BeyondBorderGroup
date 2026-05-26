@@ -24,11 +24,11 @@ Las historias de emprendedoras jóvenes en China, sobre todo en el Taobao de Ali
 
 Las implicaciones económicas de impulsar a las mujeres en el mundo de los negocios son profundas. Según un informe del Banco Mundial, el PIB per cápita aumenta cerca de un 20 % cuando las mujeres tienen las mismas oportunidades laborales que los hombres. La cifra subraya el papel decisivo de la igualdad en el desarrollo económico.
 
-En China, las emprendedoras se sirven de las plataformas digitales para sortear barreras tradicionales. Montar y escalar un negocio online les permite esquivar las limitaciones del local físico. Esa accesibilidad importa especialmente en regiones donde el acceso a financiación y recursos sigue siendo desigual.
+En China, las emprendedoras tiran de las plataformas digitales para sortear barreras tradicionales. Montar y escalar un negocio online les permite esquivar las limitaciones del local físico. Esa accesibilidad importa especialmente en regiones donde el acceso a financiación y recursos sigue siendo desigual.
 
 ## El papel del comercio digital en cerrar la brecha de género
 
-Plataformas como [Taobao](/es/crecer-en-china/ecommerce-transfronterizo) y Lazada nivelan el terreno para las mujeres emprendedoras. Sus bajas barreras de entrada permiten arrancar a vender con una inversión inicial mínima. El modelo resulta especialmente útil cuando el acceso a financiación es más difícil.
+Plataformas como [Taobao](/es/crecer-en-china/ecommerce-transfronterizo) y Lazada nivelan el terreno para las mujeres emprendedoras. Sus bajas barreras de entrada permiten arrancar a vender con una inversión inicial mínima. El modelo resulta especialmente útil cuando conseguir financiación es más difícil.
 
 Es el caso de Lorina Tan, comerciante filipina convertida en emprendedora, cofundadora de la marca de cuidado infantil Tiny Buds, que se apoyó en lo aprendido en Lazada. Historias como la suya muestran el poder transformador del comercio digital para construir y escalar negocios sólidos.
 
@@ -42,9 +42,9 @@ Plataformas como DiverseUp, fundada por Angel Vossough, están en la primera lí
 
 ## El impacto más amplio del emprendimiento femenino
 
-El impacto del emprendimiento femenino va más allá de las historias individuales. Lanza un mensaje potente sobre el empoderamiento de las mujeres y conecta con el consumidor. Las marcas que apoyan estas causas y promueven la igualdad construyen vínculos más fuertes con su audiencia.
+El impacto del emprendimiento femenino va más allá de las historias individuales. Lanza un mensaje potente sobre el empoderamiento de las mujeres y conecta con el consumidor. Las marcas que apoyan estas causas y empujan la igualdad tejen vínculos más fuertes con su audiencia.
 
-Las [campañas](/es/crecer-en-china/campanas) que celebran los logros de mujeres, desde el consejo de administración hasta otros ámbitos, ganan tracción. Visibilizan los éxitos y, sobre todo, animan a la siguiente generación a perseguir sus ambiciones empresariales.
+Las [campañas](/es/crecer-en-china/campanas) que celebran los logros de mujeres, desde el consejo de administración hasta otros ámbitos, ganan tracción. Ponen sobre la mesa los éxitos y, sobre todo, animan a la siguiente generación a perseguir sus ambiciones empresariales.
 
 ## El futuro de las mujeres en el comercio digital
 
