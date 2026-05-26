@@ -25,7 +25,7 @@ Marriott pilote l'un des plus vastes portefeuilles hôteliers au monde, du luxe 
 
 ## Le défi
 
-Le Super Brand Day de Tmall reste le grand rendez-vous d'Alibaba : un partenaire par catégorie, une journée. Pour la première édition de Marriott, le niveau d'exigence était élevé. Le dispositif devait produire du volume commercial, des adhésions Bonvoy en nombre et un vrai gain d'image auprès d'un public chinois premium déjà très sollicité.
+Le Super Brand Day de Tmall reste le grand rendez-vous d'Alibaba : un partenaire par catégorie, une journée. Pour la première édition de Marriott, le niveau d'exigence montait haut. Le dispositif devait produire du volume commercial, des adhésions Bonvoy en nombre et un vrai gain d'image auprès d'un public chinois premium déjà très sollicité.
 
 ## Notre approche
 

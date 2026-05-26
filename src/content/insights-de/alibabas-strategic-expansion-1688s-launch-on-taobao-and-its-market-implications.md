@@ -1,6 +1,6 @@
 ---
 title: "Alibabas strategischer Schritt: 1688 startet auf Taobao und die Marktwirkung"
-description: "Alibabas Grosshandelsplattform 1688 hat drei offizielle Online-Shops auf Taobao eröffnet, mit wettbewerbsfähigen Preisen und einer vereinfachten Einkaufserfahrung für Verbraucher, die in grösseren Mengen kaufen oder gewerblichen Bedarf decken."
+description: "Alibabas Grosshandelsplattform 1688 hat drei offizielle Online-Shops auf Taobao eröffnet. Wettbewerbsfähige Preise und ein vereinfachter Einkaufsweg für Käufer, die grössere Mengen brauchen oder gewerblichen Bedarf decken."
 pubDate: "2024-03-27"
 author: "Beyond Border Group"
 category: "Platforms"
@@ -16,7 +16,7 @@ Alibabas 1688, bekannt als Chinas führender integrierter inländischer Grosshan
 
 ## Mehr Auswahl im eCommerce: 1688s neue Shops auf Taobao
 
-Die neuen Stand-alone-Shops auf [Taobao](/de/in-china-wachsen/cross-border-ecommerce) decken drei Kategorien ab: Möbel und Allgemeinwaren bekannter Marken aus den Fabriken, Bürobedarf und Verbrauchsmaterial für den Geschäftsbereich sowie weisse Ware ohne Markenetikett. Die Erweiterung passt zu Taobaos Plan, einen eigenen Kanal nach dem Vorbild des Tmall Supermarket für 1688-Anbieter zu schaffen. Verbraucher kaufen direkt auf Taobao ein, ohne die 1688-App installieren zu müssen.
+Die neuen Stand-alone-Shops auf [Taobao](/de/in-china-wachsen/cross-border-ecommerce) decken drei Kategorien ab: Möbel und Allgemeinwaren bekannter Marken direkt aus den Fabriken, Bürobedarf und Verbrauchsmaterial für den Geschäftsbereich sowie weisse Ware ohne Markenetikett. Die Erweiterung passt zu Taobaos Plan, nach dem Vorbild des Tmall Supermarket einen eigenen Kanal für 1688-Anbieter zu schaffen. Käufer können direkt auf Taobao zuschlagen, ohne die 1688-App installieren zu müssen.
 
 ![1688 pic2 blog](/Images/insights/2024/03/1688-pic2-blog.png)
 
@@ -26,6 +26,6 @@ Seit dem Start 1999 ist 1688 ein zentrales Element des Alibaba-Konzerns. Die Pla
 
 ## Synergien und Unterschiede zwischen 1688 und Taobao
 
-Die Unterschiede zwischen 1688 und Taobao gehen über die jüngste Kooperation hinaus. Beide Plattformen sind Teil der Alibaba Group, sie sprechen aber unterschiedliche Marktsegmente an. Taobao dominiert in den letzten Jahren den chinesischen Online-Handel mit einem breiten Sortiment und attraktiven Angeboten für Privatkunden. 1688 läuft als B2B-Modell und konzentriert sich auf Transaktionen zwischen Unternehmen, ideal für gewerbliche Käufer und grössere Stückzahlen.
+Die Unterschiede zwischen 1688 und Taobao gehen über die jüngste Kooperation hinaus. Beide Plattformen gehören zur Alibaba Group, sprechen aber unterschiedliche Marktsegmente an. Taobao dominiert in den letzten Jahren den chinesischen Online-Handel mit einem breiten Sortiment und attraktiven Angeboten für Privatkunden. 1688 läuft als B2B-Modell und konzentriert sich auf Transaktionen zwischen Unternehmen, prädestiniert für gewerbliche Käufer und grössere Stückzahlen.
 
-Der Schritt von 1688 auf Taobao bestätigt Alibabas Linie, über wettbewerbsfähige Preise Mehrwert zu liefern, und steht für eine enge Integration innerhalb des Konzerns. Verbraucher erhalten eine reichere Auswahl, gewerbliche Käufer eine zugänglichere, effizientere Lieferkette.
+Der Schritt von 1688 auf Taobao bestätigt Alibabas Linie, über wettbewerbsfähige Preise Mehrwert zu liefern, und steht für eine enge Verzahnung innerhalb des Konzerns. Privatkunden bekommen eine reichere Auswahl, gewerbliche Käufer eine zugänglichere, effizientere Lieferkette.

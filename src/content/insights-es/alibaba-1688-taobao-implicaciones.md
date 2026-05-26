@@ -12,7 +12,7 @@ heroImageAlt: "Qué es 1688.com"
 
 ## 1688 refuerza su posición con tres tiendas oficiales en Taobao
 
-1688, el principal marketplace mayorista integrado de China, acaba de afilar su apuesta por el precio competitivo con la apertura de tres tiendas oficiales en [Taobao](/es/crecer-en-china/ecommerce-transfronterizo). El movimiento debería acelerar la entrada de mercancías a precios asequibles. Como apunta KrASIA:
+1688, el principal marketplace mayorista integrado de China, acaba de afilar su apuesta por el precio competitivo con la apertura de tres tiendas oficiales en [Taobao](/es/crecer-en-china/ecommerce-transfronterizo). El movimiento debería acelerar la llegada de mercancías a precios asequibles. Como apunta KrASIA:
 
 > La red de 1688 cubre 174 de los 192 cinturones industriales de nivel A o superior de China, y su volumen anual de negocio podría alcanzar los 2 billones de RMB (unos 278.400 millones de dólares).
 

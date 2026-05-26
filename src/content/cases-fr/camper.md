@@ -23,7 +23,7 @@ images:
 
 ## La marque
 
-Née à Majorque en 1975, Camper a construit sa réputation sur un design qui prend ses libertés et un artisanat méditerranéen. Sa philosophie, « walk, don't run », parle aux urbains qui préfèrent le confort, la qualité et un style à part aux cycles courts de la fast fashion.
+Née à Majorque en 1975, Camper a construit sa réputation sur un design qui prend ses libertés et un artisanat méditerranéen. Sa philosophie, « walk, don't run », parle aux urbains qui placent confort, qualité et style singulier devant les cycles courts de la fast fashion.
 
 ## Le défi
 

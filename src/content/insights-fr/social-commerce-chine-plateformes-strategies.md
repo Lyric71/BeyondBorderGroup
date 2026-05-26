@@ -16,7 +16,7 @@ Le [social commerce](/fr/se-developper-en-chine/commerce-social) chinois pèse a
 
 ## La montée du social commerce en Chine
 
-Le social commerce chinois marie la simplicité du e-commerce et la vivacité des réseaux sociaux. À l'arrivée, une expérience d'achat dynamique qui séduit une population connectée colossale. Forte de plus d'un milliard d'internautes, la Chine devance le reste du monde sur l'intégration entre interactions sociales et achat en ligne. Le marché mise sur le poids des recommandations, qu'elles viennent des proches ou des créateurs. Confiance et engagement en sortent renforcés.
+Le social commerce chinois marie la simplicité du e-commerce et la vivacité des réseaux sociaux. À l'arrivée, une expérience d'achat dynamique qui séduit une population connectée colossale. Forte de plus d'un milliard d'internautes, la Chine devance le reste du monde sur l'intégration entre interactions sociales et achat en ligne. Le marché mise sur le poids des recommandations, qu'elles viennent des proches ou des créateurs. Confiance et engagement en sortent musclés.
 
 ## Les ressorts du social commerce chinois
 
@@ -30,7 +30,7 @@ Les Key Opinion Leaders pèsent lourd dans l'équation. Ils mobilisent leur pré
 
 ### 3. La force du livestream
 
-Le livestream s'est imposé comme une pièce maîtresse. Marques et créateurs y présentent leurs produits en direct face à des audiences massives. Le consommateur interagit en temps réel, pose ses questions, donne son avis. L'expérience devient interactive. Les chiffres parlent d'eux-mêmes : 763 millions d'utilisateurs du livestream en juin 2023, signe tangible de son poids sur les ventes et l'engagement.
+Le livestream s'est imposé en pièce maîtresse. Marques et créateurs y présentent leurs produits en direct face à des audiences massives. Le consommateur interagit en temps réel, pose ses questions, donne son avis. L'expérience devient interactive. Les chiffres parlent d'eux-mêmes : 763 millions d'utilisateurs du livestream en juin 2023, signe tangible de son poids sur les ventes et l'engagement.
 
 ## L'évolution des stratégies marketing dans le social commerce chinois
 
@@ -78,7 +78,7 @@ Taobao et Tmall, propriétés d'Alibaba Group, comptent parmi les piliers du e-c
 
 * Poids de marché : Taobao et Tmall captent une part majeure du e-commerce chinois, soit une base de consommateurs immense pour les activités sociales.
 * KOL du livestream : la plateforme a vu émerger des figures comme Li Jiaqi, le « roi du rouge à lèvres », qui ont redéfini l'expérience d'achat par des diffusions captivantes et des recommandations produit.
-* Plateforme orientée commerce : à la différence des réseaux sociaux généralistes, Taobao et Tmall sont conçus pour l'achat. Les algorithmes priorisent l'intention d'achat et optimisent l'expérience commerciale.
+* Plateforme orientée commerce : à rebours des réseaux sociaux généralistes, Taobao et Tmall sont conçus pour l'achat. Les algorithmes priorisent l'intention d'achat et optimisent l'expérience commerciale.
 * Temps forts commerciaux : la plateforme orchestre plusieurs rendez-vous annuels, bien au-delà du fameux Double 11. Les promotions exclusives génèrent trafic et chiffre d'affaires.
 
 ![Plateforme Taobao](/Images/insights/2024/06/taobao-1024x585.jpg)
@@ -104,7 +104,7 @@ Souvent comparé à Twitter, Weibo a basculé dans le social commerce avec Weibo
 
 * Présence installée : la longévité et la capacité d'adaptation de Weibo en font un acteur social majeur en Chine, qui parle à un public très varié.
 * Marketing [KOL](/fr/se-developper-en-chine/influence-et-kol) : la plateforme reste un terrain de chasse idéal pour repérer et activer des créateurs capables d'amplifier visibilité et ventes.
-* Communication directe : Weibo facilite l'échange entre marques et clients, ce qui renforce l'engagement et la qualité de service.
+* Communication directe : Weibo facilite l'échange entre marques et clients, ce qui solidifie l'engagement et la qualité de service.
 * Pilotage e-commerce : Weibo Xiaodian permet aux marques de gérer leurs opérations en interne, pour une expérience intégrée côté utilisateur.
 
 ![Plateforme Weibo](/Images/insights/2024/06/weibo-1024x585.jpg)

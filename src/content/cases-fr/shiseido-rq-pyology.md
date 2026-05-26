@@ -27,7 +27,7 @@ RQ Pyology, nouvelle marque dermo-cosmétique haut de gamme de Shiseido, voit le
 
 ## Le défi
 
-Lancer une marque dermo-cosmétique premium en Chine demande davantage qu'une campagne. RQ Pyology appelait une fondation de marque complète : cadre de positionnement, système visuel distinct, voix capable de tenir face aux acteurs historiques. La cible est exigeante : des femmes urbaines diplômées, de 28 à 40 ans, qui décortiquent les listes d'ingrédients, suivent les comptes de dermatologues en ligne, et préfèrent la substance au discours marketing.
+Lancer une marque dermo-cosmétique premium en Chine demande plus qu'une campagne. RQ Pyology exigeait une fondation de marque complète : cadre de positionnement, système visuel singulier, voix capable de tenir face aux acteurs historiques. La cible ne pardonne rien : des femmes urbaines diplômées, 28-40 ans, qui décortiquent les listes d'ingrédients, suivent les comptes de dermatologues en ligne et préfèrent la substance au discours marketing.
 
 ## Notre approche
 

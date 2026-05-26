@@ -9,7 +9,7 @@ heroImage: "/Images/insights/optimizing-your-brand-choosing-the-right-influencer
 heroImageAlt: "Femme professionnelle souriant face caméra"
 ---
 
-Le [marketing d'influence](/fr/se-developper-en-chine/influence-et-kol) pèse aujourd'hui plus lourd qu'un budget télé chez la plupart des annonceurs consumer. Instagram a posé les rails, TikTok a accéléré, et le casting décide désormais de tout. Trouver les créateurs qui amplifient la portée, déclenchent l'engagement, prolongent la conversation. Tout l'enjeu : la cohérence entre les profils retenus et l'ADN de la marque.
+Le [marketing d'influence](/fr/se-developper-en-chine/influence-et-kol) pèse aujourd'hui plus lourd qu'un budget télé chez la plupart des annonceurs consumer. Instagram a posé les rails, TikTok a accéléré, le casting décide désormais de tout. Trouver les créateurs qui amplifient la portée, déclenchent l'engagement, prolongent la conversation. Tout l'enjeu : la cohérence entre les profils retenus et l'ADN de la marque.
 
 Tour d'horizon des fondamentaux et de la méthode pour décrocher le bon partenaire.
 

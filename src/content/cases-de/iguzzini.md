@@ -23,16 +23,16 @@ order: 4
 
 ## Die Marke
 
-Iguzzini ist ein Innovator der Leuchtenbranche. Seit 1959 arbeitet das Unternehmen an der Erforschung, Gestaltung und Produktion von Innen- und Aussenleuchten-Systemen. Iguzzini setzt Licht konsequent als Werkzeug für Architektur und für eine bessere Lebensqualität ein, mit ausdrücklichem sozialen Anspruch.
+Iguzzini ist ein Innovator der Leuchtenbranche. Seit 1959 arbeitet das Unternehmen an Forschung, Gestaltung und Produktion von Innen- und Aussenleuchten-Systemen. Iguzzini setzt Licht konsequent als Werkzeug für Architektur und für eine bessere Lebensqualität ein, mit ausdrücklich sozialem Anspruch.
 
 ## Die Aufgabe
 
-Wir wurden für Launch und Tagesbetrieb von Iguzzinis Cross-Border-eCommerce auf Tmall in China herangezogen. Die Aufgabe lag in einem grösseren Vorhaben: Iguzzini wollte seine Position als projektbezogene B2B-Luxusmarke schärfen und zugleich die Herzen chinesischer Designer und Luxuskäufer gewinnen. Die Marke wollte über ihre klassischen Marktgrenzen hinauswachsen und für das anspruchsvolle Luxussegment Chinas zur Standardwahl werden.
+Wir wurden für Launch und Tagesbetrieb von Iguzzinis Cross-Border-eCommerce auf Tmall in China geholt. Die Aufgabe steckte in einem grösseren Vorhaben: Iguzzini wollte seine Position als projektbezogene B2B-Luxusmarke schärfen und zugleich die Herzen chinesischer Designer und Luxuskäufer gewinnen. Die Marke wollte über ihre klassischen Marktgrenzen hinauswachsen und im anspruchsvollen Luxussegment Chinas zur Standardwahl werden.
 
 ## Unser Vorgehen
 
-Wir bauten den Tmall-Auftritt wie ein Designstudio, nicht wie einen Katalog. Produktgeschichten, Designer-Kollaborationen und Architekturprojekte standen neben klaren Kaufpfaden, damit Fachplanerin, Architekt und Privatkundin jeweils den Weg fanden, der zu ihrer Absicht passt. Kampagnen, KOL-Partnerschaften und Livestream-Sessions gaben dem Shop einen verlässlichen Rhythmus über das Jahr. Die visuelle Sprache hielt sich an die europäische Zurückhaltung der Marke.
+Wir haben den Tmall-Auftritt wie ein Designstudio gebaut, nicht wie einen Katalog. Produktgeschichten, Designer-Kooperationen und Architekturprojekte standen neben klaren Kaufpfaden, damit Fachplanerin, Architekt und Privatkundin jeweils den Weg fanden, der zu ihrer Absicht passt. Kampagnen, KOL-Kooperationen und Livestream-Sessions gaben dem Shop über das Jahr hinweg einen verlässlichen Rhythmus. Die visuelle Sprache hielt sich an die europäische Zurückhaltung der Marke.
 
 ## Ergebnisse
 
-Der Start auf Tmall verlief erfolgreich und führte über 24 Monate zu stabilem Umsatzwachstum. Mit einer mutigen Strategie haben wir Iguzzini kommerziell wachsen lassen, ohne das Luxusbild zu beschädigen. Heute zählt die Marke zu den führenden Luxus-Leuchtennamen im chinesischen Markt, sichtbar für Projektkäufer wie für private Verbraucher.
+Der Start auf Tmall verlief erfolgreich und brachte über 24 Monate stabiles Umsatzwachstum. Mit einer mutigen Strategie haben wir Iguzzini kommerziell wachsen lassen, ohne das Luxusbild zu beschädigen. Heute zählt die Marke zu den führenden Luxus-Leuchtenamen im chinesischen Markt, sichtbar für Projektkäufer wie für Privatkunden.

@@ -13,7 +13,7 @@ Lenovo, Huawei et Asus poussent depuis l'an dernier des PC à processeur neurona
 
 ## L'IA reconfigure l'ordinateur
 
-Les NPU embarqués accélèrent les traitements, affinent l'ergonomie, taillent l'usage sur mesure. Le smartphone garde la main sur le temps d'écran, mais le PC tient une carte unique : la puissance brute qu'exigent les modèles lourds. Une fenêtre étroite. Précieuse. Les constructeurs s'y engouffrent.
+Les NPU embarqués accélèrent les traitements, affinent l'ergonomie, taillent l'usage sur mesure. Le smartphone garde la main sur le temps d'écran, mais le PC tient une carte unique : la puissance brute qu'exigent les modèles lourds. Une fenêtre étroite. Précieuse. Les constructeurs s'y engagent à fond.
 
 ## Une filière en pleine recomposition
 

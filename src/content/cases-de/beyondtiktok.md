@@ -1,8 +1,8 @@
 ---
 brand: "BeyondTikTok"
 title: "Eigenständiges TikTok-Angebot"
-summary: "Konzeption und Aufbau der BeyondTikTok-Website als Lead-Generierungs-Plattform für TikTok-Services, flankiert von SEO und Google Ads für qualifizierten Traffic."
-metric: "Lead-Generation-Site für TikTok-Services, SEO und Google Ads liefern qualifizierten Traffic."
+summary: "Konzeption und Aufbau der BeyondTikTok-Website als Plattform für Lead-Generierung rund um TikTok-Services. SEO und Google Ads bringen qualifizierten Traffic."
+metric: "Lead-Site für TikTok-Services, SEO und Google Ads bringen qualifizierten Traffic."
 category: "Website"
 services:
   - "Markenerlebnis"
@@ -24,14 +24,14 @@ BeyondTikTok ist unsere eigene TikTok-Praxis, Official TikTok Marketing Partner 
 
 ## Die Aufgabe
 
-Das neue Angebot brauchte ein eigenes Zuhause im Web. Der Auftrag war klar: Eine Seite, die qualifizierte Leads für TikTok-Anfragen generiert, auf Desktop und Mobile sauber rendert und in der Suche gut genug rankt, um organischen Traffic zu bringen, ohne ständig auf bezahlte Sichtbarkeit angewiesen zu sein.
+Das neue Angebot brauchte ein eigenes Zuhause im Web. Der Auftrag war klar: eine Seite, die qualifizierte Leads für TikTok-Anfragen erzeugt, auf Desktop und Mobile sauber rendert und in der Suche gut genug rankt, um organischen Traffic zu liefern, ohne dauerhaft an bezahlter Sichtbarkeit zu hängen.
 
 ## Unser Vorgehen
 
-Wir haben die Seite wie ein Lead-Generation-Produkt gebaut, nicht wie eine Broschüre. Die Informationsarchitektur folgt den Fragen, die Interessenten tatsächlich stellen, wenn sie einen TikTok-Partner prüfen: klare Service-Aufschlüsselung, regionale Abdeckung, Belege schnell sichtbar. Die visuelle Sprache trägt das BeyondTikTok-System über jede Bildschirmgrösse.
+Wir haben die Seite wie ein Produkt zur Lead-Generierung gebaut, nicht wie eine Imagebroschüre. Die Informationsarchitektur folgt den Fragen, die Interessenten tatsächlich stellen, wenn sie einen TikTok-Partner prüfen: klare Service-Aufschlüsselung, regionale Abdeckung, Belege schnell griffbereit. Die visuelle Sprache trägt das BeyondTikTok-System über jede Bildschirmgrösse.
 
-Auf der Performance-Seite stand die SEO-Grundlage vom ersten Tag an: Metadaten, semantische Auszeichnung, Ladegeschwindigkeit und eine Keyword-Karte, abgestimmt auf die Service-Intent-Logik. Darüber legten wir Google-Ads-Kampagnen auf hochintentionale Anfragen, sodass Paid und Organic einander verstärken, statt zu konkurrieren.
+Auf der Performance-Seite stand das SEO-Fundament vom ersten Tag an: Metadaten, semantische Auszeichnung, Ladezeit und eine Keyword-Karte, abgestimmt auf die Such-Intentionen rund um die Leistungen. Darüber haben wir Google-Ads-Kampagnen auf hochintentionale Anfragen gelegt. Paid und Organic verstärken sich gegenseitig, statt sich Konkurrenz zu machen.
 
 ## Ergebnisse
 
-Die Seite ging als funktionierender Funnel für das BeyondTikTok-Angebot live: SEO-optimiert für organische Reichweite, UX-optimiert für Konversion, ergänzt durch zugeschnittene Google-Ads-Kampagnen zur Sichtbarkeit in den Prioritätsmärkten.
+Die Seite ging als funktionierender Funnel für das BeyondTikTok-Angebot live: SEO-optimiert für organische Reichweite, UX-optimiert für Konversion, dazu zugeschnittene Google-Ads-Kampagnen für Sichtbarkeit in den Prioritätsmärkten.

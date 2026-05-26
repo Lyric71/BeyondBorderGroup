@@ -13,7 +13,7 @@ heroImageAlt: "Joven mujer asiática probando y reseñando cosméticos en un sof
 
 ## KOC en China: buenas prácticas de marketing con Key Opinion Consumers
 
-El eCommerce chino crece a buen ritmo y ganarse la confianza del consumidor importa más que nunca. Los grandes influencers, o Key Opinion Leaders (KOL), llevaban años marcando el paso. Hoy son los Key Opinion Consumers (KOC) quienes empiezan a liderar. Compradores normales que comparten reseñas y experiencias auténticas, lo que los convierte en una palanca potente para conectar con la gente a un nivel mucho más personal.
+El eCommerce chino crece a buen ritmo y ganarse la confianza del consumidor importa más que nunca. Los grandes influencers, o Key Opinion Leaders (KOL), llevaban años marcando el paso. Hoy son los Key Opinion Consumers (KOC) quienes empiezan a tomar las riendas. Compradores normales que comparten reseñas y experiencias auténticas, lo que los convierte en una palanca potente para conectar con la gente a un nivel mucho más personal.
 
 Para una empresa que quiera aprovechar esta dinámica, apoyarse en una agencia digital o de marca en China ayuda a que las [campañas](/es/crecer-en-china/campanas) salgan estratégicas, eficaces y bien orientadas.
 

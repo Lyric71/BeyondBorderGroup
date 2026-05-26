@@ -20,7 +20,7 @@ Me llamo Cyril Drouin. Soy francés y llevo muchos años viviendo en China. Tras
 
 ### ¿Qué opina de la economía del directo, dentro y fuera de China?
 
-La economía del directo en China está mucho más volcada al comercio que en Occidente. Aquí, la mayoría de los livestreams son transaccionales: se centran en eCommerce o en gifting. En Europa y Estados Unidos, en cambio, la venta directa por livestream sigue viéndose como algo complejo y poco intuitivo para el comprador. Amazon Live, por ejemplo, aún no ha cuajado y las ventas que genera son relativamente bajas. Los directos en Instagram y Facebook también tienen dificultades para mover tráfico significativo al eCommerce. Shopify, sin ir más lejos, no incluye el live commerce como funcionalidad estándar en su oferta básica. Eso ilustra la brecha de adopción entre regiones.
+La economía del directo en China está mucho más volcada al comercio que en Occidente. Aquí, la mayoría de los livestreams son transaccionales: van de eCommerce o de gifting. En Europa y Estados Unidos, en cambio, la venta directa por livestream sigue viéndose como algo complicado y poco intuitivo para el comprador. Amazon Live, por ejemplo, todavía no ha cuajado y las ventas que genera se quedan cortas. Los directos en Instagram y Facebook también tienen dificultades para mover tráfico significativo al eCommerce. Shopify, sin ir más lejos, no incluye el live commerce como funcionalidad estándar en su oferta básica. Eso enseña la brecha de adopción entre regiones.
 
 ### ¿Puede compartir su experiencia localizando marcas internacionales en China?
 

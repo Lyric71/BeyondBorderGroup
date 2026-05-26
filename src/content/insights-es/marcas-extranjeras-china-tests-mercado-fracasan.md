@@ -23,7 +23,7 @@ Después de veinte años sobre el terreno en China, sigo viendo los mismos error
 
 ### El transfronterizo parece barato. Hasta que se hacen las cuentas.
 
-El camino habitual hacia China empieza hoy por el eCommerce [transfronterizo](/es/entrar-en-china/lanzamiento-cross-border), el CBEC. Sin registro de sociedad. Sin entidad local, sin almacén, sin equipo sobre el terreno. Tmall Global, JD Worldwide, Douyin y Xiaohongshu ofrecen programas CBEC que permiten a las [marcas extranjeras](/es/entrar-en-china/estrategia-de-entrada) vender directamente al consumidor chino desde fuera del país.
+El camino habitual hacia China arranca hoy por el eCommerce [transfronterizo](/es/entrar-en-china/lanzamiento-cross-border), el CBEC. Sin registro de sociedad. Sin entidad local, sin almacén, sin equipo sobre el terreno. Tmall Global, JD Worldwide, Douyin y Xiaohongshu ofrecen programas CBEC que permiten a las [marcas extranjeras](/es/entrar-en-china/estrategia-de-entrada) vender directamente al consumidor chino desde fuera del país.
 
 Sobre el papel, es rápido y asequible. En la práctica, no.
 

@@ -12,7 +12,7 @@ heroImageAlt: "Paisaje espectacular en un destino de lujo"
 
 ## Guía estratégica para enamorar al viajero chino de alta gama
 
-El mercado chino del viaje de lujo se mueve a gran velocidad. Lo empuja un viajero que busca propuestas únicas, con inmersión cultural y una conexión emocional más profunda con el destino. Este perfil se aleja del turismo de postal y abraza recorridos con más calado, lo que obliga a las marcas a ajustarse a unas exigencias mucho más finas. Este artículo repasa estrategias eficaces para conquistar al viajero chino de lujo, con el foco en experiencias culturales, viaje personalizado y engagement digital.
+El mercado chino del viaje de lujo se mueve a buena velocidad. Lo empuja un viajero que busca propuestas únicas, con inmersión cultural y una conexión emocional más profunda con el destino. Este perfil se aleja del turismo de postal y abraza recorridos con más calado, lo que obliga a las marcas a ajustarse a unas exigencias mucho más finas. Este artículo repasa estrategias eficaces para conquistar al viajero chino de lujo, con foco en experiencias culturales, viaje personalizado y engagement digital.
 
 ## Entender al viajero chino de alta gama
 

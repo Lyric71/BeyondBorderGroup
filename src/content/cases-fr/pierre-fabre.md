@@ -24,7 +24,7 @@ Pierre Fabre est le premier groupe dermo-cosmétique français, propriétaire de
 
 ## Le défi
 
-Le comité de direction de Pierre Fabre cherchait une intelligence stratégique sur le paysage digital et eCommerce chinois, adossée à des observations actionnables issues du terrain, et non à des rapports de marché génériques. La demande : une masterclass complète, qui balaie la dynamique des plateformes du moment (Douyin, Tmall, JD, Xiaohongshu, WeChat), les cas concrets de ce qui fonctionne vraiment dans la beauté, les tendances émergentes (live commerce, contenus générés par l'IA, CRM), et qui livre des enseignements directement transposables à leurs opérations chinoises.
+Le comité de direction de Pierre Fabre cherchait une intelligence stratégique sur le paysage digital et eCommerce chinois, adossée à des observations terrain actionnables, pas à des rapports de marché génériques. La demande : une masterclass complète, qui balaie la dynamique des plateformes du moment (Douyin, Tmall, JD, Xiaohongshu, WeChat), les cas concrets de ce qui marche vraiment dans la beauté, les tendances émergentes (live commerce, contenus IA, CRM), avec des enseignements directement transposables à leurs opérations chinoises.
 
 ## Notre approche
 

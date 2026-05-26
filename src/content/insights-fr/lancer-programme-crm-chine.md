@@ -12,9 +12,9 @@ heroImageAlt: "Vue rapprochée d'une main qui choisit un cube en bois marqué CR
 
 ## Pourquoi le CRM pèse autant sur le marché chinois
 
-Un CRM centralise la donnée client. Il sert à hisser la satisfaction, à suivre les comportements et à affiner les actions marketing. Le consommateur chinois exige des expériences personnalisées, ce qui rend ces outils indispensables pour tenir le niveau attendu et consolider la rétention.
+Un CRM centralise la donnée client. Il sert à pousser la satisfaction, à suivre les comportements et à affiner les actions marketing. Le consommateur chinois exige des expériences personnalisées, ce qui rend ces outils incontournables pour tenir le niveau attendu et solidifier la rétention.
 
-Le pays accueille par ailleurs l'un des dispositifs e-commerce les plus avancés au monde, porté par [WeChat](/fr/se-developper-en-chine/commerce-social), Tmall et JD.com. Connecter un CRM à ces plateformes ouvre la collecte de la donnée, l'analyse fine des comportements, la personnalisation de la communication. Les marques engagées sur le cross-border ou sur Douyin profitent largement d'un CRM capable d'alimenter un marketing piloté par la donnée.
+Le pays héberge l'un des dispositifs e-commerce les plus avancés au monde, porté par [WeChat](/fr/se-developper-en-chine/commerce-social), Tmall et JD.com. Connecter un CRM à ces plateformes ouvre la collecte de la donnée, l'analyse fine des comportements, la personnalisation de la communication. Les marques engagées sur le cross-border ou sur Douyin profitent largement d'un CRM capable d'alimenter un marketing piloté par la donnée.
 
 ## Choisir la bonne plateforme CRM pour le marché chinois
 

@@ -24,7 +24,7 @@ images:
 
 ## La marque
 
-Langnese est la première marque de miel en Allemagne, forte d'un siècle de métier apicole et d'un positionnement premium sur les marchés européens. En Chine, la maison avait sécurisé sa distribution et sa présence en rayon dans la grande distribution moderne, sans que l'activité se comporte pour autant comme celle d'un premium européen.
+Langnese est la première marque de miel en Allemagne, forte d'un siècle de métier apicole et d'un positionnement premium sur les marchés européens. En Chine, la maison avait sécurisé sa distribution et sa présence en rayon dans la grande distribution moderne, sans que l'activité tourne pour autant comme une marque premium européenne.
 
 ## Le défi
 

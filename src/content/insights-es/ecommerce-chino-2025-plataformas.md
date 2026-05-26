@@ -18,7 +18,7 @@ keyTakeaways:
 
 ## El eCommerce chino sigue marcando la referencia. La razón es la integración, no el tamaño.
 
-El gran cambio para el retail es simple: online y offline convergen en un mismo bucle operativo. Descubrimiento, conversión, entrega y servicio se diseñan cada vez más como un único recorrido, muchas veces dentro de una sola app.
+El gran cambio para el retail es sencillo: online y offline confluyen en un mismo bucle operativo. Descubrimiento, conversión, entrega y servicio se diseñan cada vez más como un único recorrido, muchas veces dentro de una sola app.
 
 Y China tiene la base de usuarios para sostener esa integración. A junio de 2025, el país superaba los 1.120 millones de internautas.
 

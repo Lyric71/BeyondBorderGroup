@@ -11,15 +11,15 @@ heroImageAlt: "Fichas de producto de Taobao generadas con IA"
 
 ## ¿Cómo puede la IA potenciar el eCommerce en China?
 
-El comercio electrónico chino vive una transformación radical empujada por la IA. Según iiMedia Research:
+El comercio electrónico chino vive una transformación de fondo empujada por la IA. Según iiMedia Research:
 
 > El núcleo industrial chino de IA debería pasar de 150.000 millones de yuanes en 2020 a un billón en 2030.
 
-Ese crecimiento abre oportunidades nuevas y eleva la eficiencia del sector.
+Ese crecimiento abre oportunidades nuevas y tira de la eficiencia del sector.
 
 ## La IA mejora la experiencia de compra
 
-La IA está reescribiendo la experiencia del consumidor en el eCommerce chino. La personalización algorítmica permite a plataformas como Tmall y JD.com proponer recomendaciones a medida, basadas en el historial y en las preferencias del usuario. Las pruebas virtuales, usadas por firmas cosméticas como Perfect Diary, dejan al cliente probar productos sin tocarlos, lo que reduce devoluciones y eleva la satisfacción.
+La IA está reescribiendo la experiencia del consumidor en el eCommerce chino. La personalización algorítmica permite a plataformas como Tmall y JD.com lanzar recomendaciones hechas a medida, apoyadas en el historial y en las preferencias del usuario. Las pruebas virtuales, usadas por firmas cosméticas como Perfect Diary, dejan al cliente probar productos sin tocarlos, lo que recorta devoluciones y sube la satisfacción.
 
 ## Bajar el coste operativo
 

@@ -12,16 +12,16 @@ const phaseIcons: Record<string, string> = {
 
 const promises = [
   {
-    title: 'Decisiones basadas en experiencia operativa',
-    desc: 'Cada recomendación se contrasta con las plataformas, la normativa y los socios reales con los que usted trabajará en el terreno. Nada sale de un estudio de despacho.',
+    title: 'Decisiones tomadas con experiencia operativa',
+    desc: 'Cada recomendación se contrasta con las plataformas, la normativa y los socios reales con los que va a trabajar sobre el terreno. Nada sale de un análisis de despacho.',
   },
   {
     title: 'Compromiso por fases, sin apuestas a ciegas',
-    desc: 'Avance una fase cada vez. Si la respuesta cambia, paramos. Usted controla el alcance y el gasto en todo momento.',
+    desc: 'Una fase cada vez. Si la respuesta cambia, paramos. Usted manda en el alcance y en el gasto en todo momento.',
   },
   {
     title: 'Búsqueda independiente de distribuidores',
-    desc: 'No cobramos comisión a los distribuidores. Sus intereses, no los del proveedor, están de nuestro lado de la mesa.',
+    desc: 'No cobramos comisión a los distribuidores. Lo que defendemos es su interés, no el del proveedor.',
   },
 ];
 
@@ -34,8 +34,8 @@ const phases = [
     image: '/Images/enter-china/phase-1-diagnosis.png',
     imageAlt: 'Especialista en cumplimiento normativo revisando expedientes de un producto en una oficina de Shanghái',
     intro:
-      'Comprobamos si su producto puede venderse legalmente por Cross-Border eCommerce y analizamos el terreno competitivo.',
-    outcome: 'Sabrá si su producto puede entrar en China legalmente, y a qué coste.',
+      'Comprobamos si su producto se puede vender legalmente por Cross-Border eCommerce y miramos el terreno competitivo.',
+    outcome: 'Sabrá si su producto puede entrar legalmente en China, y a qué coste.',
     does: [
       'Estudio de elegibilidad CBEC (formulación, packaging, cumplimiento del etiquetado)',
       'Análisis del entorno regulatorio y requisitos de cumplimiento',
@@ -53,11 +53,11 @@ const phases = [
     icon: 'channel',
     phase: 'Fase dos',
     duration: '2 a 3 semanas',
-    title: 'Evaluación de canales y modelo de consumo',
+    title: 'Evaluación de canales y modelo comercial',
     image: '/Images/enter-china/phase-2-channel.png',
     imageAlt: 'Consumidora navegando una app china de eCommerce en un café de Shanghái',
     intro:
-      'Evaluamos las opciones de plataforma y determinamos qué modelo de distribución encaja comercialmente con su producto.',
+      'Vemos las opciones de plataforma y definimos qué modelo de distribución le sale a cuenta con su producto.',
     outcome: 'Sabrá qué plataformas le encajan y qué modelo de distribución hace cuadrar las cuentas.',
     does: [
       'Evaluación de plataformas (Tmall Global, JD Worldwide, Douyin, RED)',
@@ -80,8 +80,8 @@ const phases = [
     image: '/Images/enter-china/phase-3-competitors.png',
     imageAlt: 'Analista de mercado revisando dashboards de competidores en tres pantallas, oficina nocturna en Shanghái',
     intro:
-      'Estudiamos cómo operan las marcas líderes de su categoría en los frentes que de verdad mueven la aguja.',
-    outcome: 'Sabrá contra quién compite, cómo fijan los precios y dónde están los huecos en el mercado.',
+      'Miramos cómo operan las marcas líderes de su categoría en los frentes que mueven la aguja de verdad.',
+    outcome: 'Sabrá contra quién juega, cómo fijan los precios y dónde están los huecos del mercado.',
     does: [
       'Análisis de la estructura del portfolio (cobertura de gama, amplitud de SKU)',
       'Mapeo de la escala de precios (precios y mecánicas promocionales)',
@@ -103,8 +103,8 @@ const phases = [
     image: '/Images/enter-china/phase-4-financial.png',
     imageAlt: 'Analista financiero revisando un modelo de Tmall Global en una pantalla de oficina, Shanghái',
     intro:
-      'Construimos el business case completo con estructuras de coste transparentes y una recomendación lista para decidir.',
-    outcome: 'Tendrá un Go o No-Go listo para consejo, con los números detrás.',
+      'Montamos el business case completo con estructuras de coste transparentes y una recomendación lista para decidir.',
+    outcome: 'Tendrá un Go o No-Go listo para consejo, con los números detrás respaldándolo.',
     does: [
       'Modelización del coste de importación (COGS y logística transfronteriza)',
       'Estructuras de comisiones de plataforma y pago',
@@ -132,11 +132,11 @@ const models = [
   {
     name: 'Sell in',
     tag: 'Acuerdo con distribuidor',
-    tagline: 'Valide sin comprometerse a fondo.',
+    tagline: 'Valide sin jugársela a fondo.',
     image: '/Images/enter-china/route-sellin.png',
     imageAlt: 'Equipo de un distribuidor chino de eCommerce revisando stock en un almacén de Shanghái',
-    desc: 'Usted vende sus productos a un distribuidor CBEC cualificado a precio mayorista. El distribuidor compra el stock, asume el riesgo operativo y gestiona toda la operación en mercado.',
-    when: 'Está validando el encaje con el mercado, no tiene equipo en Asia o su categoría exige una especialización local que prefiere alquilar antes que montar de cero.',
+    desc: 'Usted vende su producto a un distribuidor CBEC cualificado a precio mayorista. El distribuidor compra el stock, carga con el riesgo operativo y maneja toda la operación en mercado.',
+    when: 'Está probando el encaje con el mercado, no tiene equipo en Asia o su categoría pide una especialización local que prefiere alquilar antes que levantar desde cero.',
     split: { you: 20, them: 80, themLabel: 'Distribuidor' },
     dims: [
       { label: 'Capital necesario', value: 'Bajo', level: 1 },
@@ -146,18 +146,18 @@ const models = [
     ],
     youGet: ['Ingresos por venta mayorista', 'Cero riesgo de inventario', 'Cobro inmediato', 'Compromiso de capital limitado'],
     they: ['Operativa de plataforma en Tmall Global, JD Worldwide y Douyin', 'Marketing y contenidos', 'Logística y depósito aduanero', 'Atención al cliente en mandarín'],
-    pricing: 'Margen mayorista pactado de entrada. Nos paga usted por el encargo, no el distribuidor.',
+    pricing: 'Margen mayorista pactado desde el primer día. Nos paga usted por el encargo, no el distribuidor.',
     highlight: true,
     ctaText: 'Hablemos de sell in',
   },
   {
     name: 'Sell out',
     tag: 'Operación directa',
-    tagline: 'Apueste por el control.',
+    tagline: 'Vaya al control total.',
     image: '/Images/enter-china/route-sellout.png',
     imageAlt: 'Brand manager extranjero y operador chino revisando el dashboard de una tienda Tmall en una oficina de Shanghái',
-    desc: 'La marca opera China directamente. Financia el stock, gobierna cada punto de contacto y gestiona las relaciones con las plataformas y la logística.',
-    when: 'La demanda ya está probada, la cuenta China es una prioridad estratégica y controlar precios, datos de cliente y posicionamiento justifica el capital y la complejidad.',
+    desc: 'La marca opera China en directo. Financia el stock, manda en cada punto de contacto y lleva la relación con las plataformas y la logística.',
+    when: 'La demanda ya está probada, la cuenta China es prioridad estratégica y controlar precios, datos de cliente y posicionamiento le justifica el capital y la complejidad.',
     split: { you: 100, them: 0, themLabel: 'Externo' },
     dims: [
       { label: 'Capital necesario', value: 'Alto', level: 5 },
@@ -167,7 +167,7 @@ const models = [
     ],
     youGet: ['Ingresos retail completos', 'Control total de la marca', 'Propiedad del dato de cliente', 'Autonomía en precios'],
     they: ['Financiación de stock', 'Comisiones de plataforma y operativa', 'Ejecución de marketing y compra de medios', 'Costes operativos (almacén, devoluciones, atención al cliente)'],
-    pricing: 'Usted carga con cada línea de coste. El modelo de la Fase 4 le enseña el cuadro completo antes de comprometerse.',
+    pricing: 'Usted carga con cada línea de coste. El modelo de la Fase 4 le pone delante el cuadro completo antes de comprometerse.',
     highlight: false,
     ctaText: 'Hablemos de sell out',
   },
@@ -177,27 +177,27 @@ const faqs = [
   {
     cat: 'Estrategia',
     q: '¿Qué es el Cross-Border eCommerce (CBEC)?',
-    a: 'El CBEC le permite vender al consumidor chino sin abrir una entidad china. El producto sale de un depósito aduanero o por envío directo internacional, y el despacho de aduana se hace en el momento de la compra. Le abre la puerta a JD Worldwide, Tmall Global, Douyin y RED. No le da acceso al retail físico ni al eCommerce doméstico hasta que complete el registro NMPA o SAMR. La mayoría de marcas lo usan como vía ligera para tantear la demanda antes de montar la infraestructura completa.',
+    a: 'El CBEC le permite vender al consumidor chino sin abrir sociedad en China. El producto sale de un depósito franco o por envío directo internacional, y el despacho de aduanas se resuelve al pagar. Le abre la puerta a JD Worldwide, Tmall Global, Douyin y RED. No le da acceso al retail físico ni al eCommerce doméstico hasta que complete el registro NMPA o SAMR. La mayoría de marcas lo usan como vía ligera para tantear la demanda antes de montar la infraestructura entera.',
   },
   {
     cat: 'Estrategia',
     q: '¿Qué modelo de distribución elijo, sell-in o sell-out?',
-    a: 'Empiece por sell-in si todavía está validando el mercado. Un distribuidor cualificado compra su stock a precio mayorista, asume el riesgo operativo y su equipo sigue centrado en el negocio global. Pase a sell-out cuando la demanda esté probada y necesite control total sobre precios, datos de cliente y experiencia de marca. Muchas marcas con las que trabajamos arrancan en sell-in entre dieciocho y veinticuatro meses, y luego dan el salto. Otras nunca lo dan, y está bien si el distribuidor rinde.',
+    a: 'Empiece por sell-in si todavía está validando el mercado. Un distribuidor cualificado le compra el stock a precio mayorista, carga con el riesgo operativo y su equipo sigue centrado en el negocio global. Salte a sell-out cuando la demanda esté probada y necesite control total sobre precios, datos de cliente y experiencia de marca. Muchas marcas con las que trabajamos arrancan en sell-in entre dieciocho y veinticuatro meses y luego dan el salto. Otras no lo dan nunca, y está bien si el distribuidor cumple.',
   },
   {
     cat: 'Estrategia',
     q: '¿Y si la respuesta es "no entre en China ahora"?',
-    a: 'Pasa. Aproximadamente una de cada cuatro consultorías termina en No-Go. Mal momento, encaje de producto débil, coste regulatorio prohibitivo, categoría saturada. Le explicamos por qué, qué tendría que cambiar y cuándo conviene revisitar el caso. El análisis completo se lo queda. Un No claro le ahorra doce meses y varios millones de euros que habría quemado descubriéndolo a las malas.',
+    a: 'Pasa. Una de cada cuatro consultorías termina en No-Go. Mal momento, encaje de producto flojo, coste regulatorio prohibitivo, categoría saturada. Le explicamos el porqué, qué tendría que cambiar y cuándo merece la pena retomar el caso. El análisis se lo lleva entero. Un No claro le ahorra doce meses y varios millones de euros que habría quemado descubriéndolo a las malas.',
   },
   {
     cat: 'Estrategia',
     q: '¿Pueden garantizar el éxito de mi marca en China?',
-    a: 'No. Nadie puede. Lo que sí podemos decirle es si los números cuadran, si su categoría se puede ganar y qué modelo le da más probabilidades. La ejecución depende de su producto, su paciencia y su disposición a adaptarse. Cualquiera que le prometa garantías le está vendiendo un cuento.',
+    a: 'No. Nadie puede. Lo que sí podemos decirle es si los números cuadran, si su categoría se puede ganar y qué modelo le da más boletos. La ejecución depende de su producto, de su paciencia y de hasta dónde está dispuesto a adaptarse. Quien le prometa garantías le está vendiendo humo.',
   },
   {
     cat: 'Estrategia',
     q: '¿Por qué trabajar con ustedes y no con una Big Four?',
-    a: 'Las Big Four entregan grandes frameworks. Nosotros entregamos la respuesta y el operador que sabe construirla. Nuestro equipo ha gestionado tiendas en Tmall, lidiado con bloqueos de plataforma, negociado con distribuidores y enviado mercancía por depósito aduanero. Cuando nos pregunta por cumplimiento CBEC, habla con alguien que ha presentado los expedientes, no con alguien que los leyó. La mayoría de nuestros encargos arrancan donde la presentación estratégica deja de servir.',
+    a: 'Las Big Four entregan grandes marcos. Nosotros entregamos la respuesta y el operador que sabe construirla. Nuestro equipo ha llevado tiendas en Tmall, ha lidiado con bloqueos de plataforma, ha negociado con distribuidores y ha sacado mercancía por depósito franco. Cuando nos pregunta por cumplimiento CBEC, habla con alguien que ha presentado los expedientes, no con alguien que los leyó. La mayoría de nuestros encargos arrancan donde la presentación estratégica deja de servir.',
   },
   {
     cat: 'Cumplimiento',
@@ -207,7 +207,7 @@ const faqs = [
   {
     cat: 'Cumplimiento',
     q: '¿Y si no puedo usar en China los claims de mi mercado de origen?',
-    a: 'Es un problema habitual. "Diabetic wound care" se convierte en "cuidado diario de piel frágil". "Soporte inmunitario" puede exigir registro completo como alimento funcional. "Clínicamente probado" suele tener que reescribirse. Adaptamos el posicionamiento para que pase los filtros de plataforma sin renunciar al capital de marca. La clave está en saber qué pasa revisión antes de construir el lanzamiento alrededor.',
+    a: 'Es un problema habitual. "Diabetic wound care" se convierte en "cuidado diario de piel frágil". "Soporte inmunitario" puede pedir registro completo como alimento funcional. "Clínicamente probado" suele tener que reescribirse. Adaptamos el posicionamiento para que pase los filtros de plataforma sin renunciar al capital de marca. La clave está en saber qué pasa la revisión antes de montar el lanzamiento a su alrededor.',
   },
   {
     cat: 'Cumplimiento',
@@ -282,14 +282,14 @@ const contextCards = [
   {
     image: '/Images/enter-china/ops-strategy-desk.png',
     alt: 'Dos operadores chinos de eCommerce revisando el dashboard de una tienda Tmall en un escritorio de Shanghái al anochecer',
-    title: 'Una estrategia que se usa, no se archiva',
-    body: 'La mayoría de presentaciones sobre entrada en China describen el mercado. La nuestra le dice qué hacer el lunes por la mañana. Cada recomendación parte de la realidad operativa, no del despacho, y se contrasta con las plataformas y los socios con los que realmente va a trabajar.',
+    title: 'Una estrategia que se usa, no que se archiva',
+    body: 'La mayoría de presentaciones sobre entrada en China describen el mercado. La nuestra le dice qué hacer el lunes a primera hora. Cada recomendación parte de la realidad operativa, no del despacho, y se contrasta con las plataformas y los socios con los que va a trabajar de verdad.',
   },
   {
     image: '/Images/enter-china/team.png',
     alt: 'Equipo de consultoría de Beyond Border Group en China',
-    title: 'Arquitectos de la entrada, no constructores',
-    body: 'Piénsenos como los arquitectos, no como la constructora. Diseñamos el plano, encontramos a los socios, montamos la estructura. Usted decide si construye y cuándo. Sin presión por lanzar, sin incentivo por inflar el caso.',
+    title: 'Arquitectos de la entrada, no constructora',
+    body: 'Piénsenos como los arquitectos, no como la constructora. Trazamos el plano, encontramos a los socios, montamos la estructura. Usted decide si construye y cuándo. Sin presión por lanzar, sin incentivo por inflar el caso.',
   },
 ];
 ---
@@ -318,14 +318,14 @@ const contextCards = [
         <span class="eyebrow eyebrow--on-dark mec-reveal">Estrategia de entrada</span>
         <h1 class="mec-hero__title mec-reveal" style="--reveal-delay: 80ms;">
           <span class="mec-hero__title-row">Entrar en China es</span>
-          <span class="mec-hero__title-row mec-hero__title-row--accent">complejo y saturado.</span>
+          <span class="mec-hero__title-row mec-hero__title-row--accent">complicado y saturado.</span>
           <span class="mec-hero__title-row">Despejamos el camino</span>
           <span class="mec-hero__title-row mec-hero__title-row--highlight">antes de construir.</span>
         </h1>
         <p class="mec-hero__lead mec-reveal" style="--reveal-delay: 200ms;">
-          Diseñamos planes de entrada en China para marcas internacionales. Viabilidad,
-          modelos financieros, análisis de competidores y acuerdos con distribuidores. La
-          arquitectura antes de la obra.
+          Trazamos planes de entrada en China para marcas internacionales. Viabilidad,
+          modelos financieros, análisis de competidores y acuerdos con distribuidores. El
+          plano antes de la obra.
         </p>
         <div class="mec-hero__actions mec-reveal" style="--reveal-delay: 280ms;">
           <a href="/es/contacto" class="btn btn--primary mec-magnetic">Hablemos</a>
@@ -361,8 +361,8 @@ const contextCards = [
           <span class="eyebrow">Nuestro enfoque</span>
           <h2>Dos cosas que conviene saber antes de arrancar</h2>
           <p class="section-header__lead">
-            La mayoría de marcas abordan China como abordarían cualquier mercado nuevo. China
-            no premia ese enfoque. Esto es lo que marca cómo trabajamos.
+            La mayoría de marcas tratan China como tratarían cualquier mercado nuevo. China
+            no premia ese planteamiento. Esto es lo que marca cómo trabajamos.
           </p>
         </header>
 
@@ -388,18 +388,18 @@ const contextCards = [
         <div class="mec-value">
           <div class="mec-value__copy">
             <span class="eyebrow">Por qué nos eligen las marcas</span>
-            <h2>La mayoría de consultoras sobre China nunca han operado allí. Nosotros sí.</h2>
+            <h2>Casi todas las consultoras sobre China no han operado allí. Nosotros sí.</h2>
             <p>
-              Nuestro equipo viene de Publicis Commerce China. Construimos las prácticas
+              Nuestro equipo viene de Publicis Commerce China. Levantamos las prácticas
               de eCommerce de GSK, Nestlé, Ferrero y Beiersdorf en Tmall, JD, Douyin
               y RED.
             </p>
             <blockquote class="mec-value__quote">
-              Asesoramos desde la experiencia operativa, no desde informes de investigación.
+              Asesoramos desde la experiencia operativa, no desde un informe de investigación.
             </blockquote>
             <p>
-              Sabemos qué distribuidores rinden porque los hemos evaluado. Sabemos qué
-              exige cada plataforma porque nosotros presentamos los expedientes.
+              Sabemos qué distribuidores cumplen porque los hemos pasado por la criba.
+              Sabemos qué pide cada plataforma porque hemos presentado los expedientes.
             </p>
             <a href="/es/quienes-somos" class="btn btn--secondary btn--sm">Conozca al equipo</a>
           </div>
@@ -435,7 +435,7 @@ const contextCards = [
           <h2>Sell in o sell out. Dos rutas para entrar en China.</h2>
           <p class="section-header__lead">
             Su estrategia de entrada se juega en una sola decisión: aliarse con un
-            distribuidor o montar la operación propia. Le ayudamos a elegir la ruta
+            distribuidor o montar la operación en casa. Le ayudamos a escoger la ruta
             que encaja con su capital, su calendario y su ambición.
           </p>
         </header>

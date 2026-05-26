@@ -11,7 +11,7 @@ heroImageAlt: "Exemple de stratégie de marque Coca-Cola pour le marché chinois
 
 ## Comprendre le terrain culturel et linguistique
 
-Choisir un [nom de marque](/fr/entrer-en-chine/marque-et-localisation) chinois ne se réduit jamais à traduire. La Chine empile dialectes, idiogrammes et codes culturels qui modifient le sens d'un même mot d'une province à l'autre. Le mandarin tient le pavé officiel et la majorité de la population, mais le cantonais pèse à Hong Kong et dans le Guangdong, et le sens d'un caractère peut basculer entre les deux.
+Choisir un [nom de marque](/fr/entrer-en-chine/marque-et-localisation) chinois ne se réduit jamais à traduire. La Chine empile dialectes, idéogrammes et codes culturels qui modifient le sens d'un même mot d'une province à l'autre. Le mandarin tient la voie officielle et la majorité de la population, mais le cantonais pèse à Hong Kong et dans le Guangdong, et le sens d'un caractère peut basculer entre les deux.
 
 ### Les points culturels à intégrer
 
@@ -57,7 +57,7 @@ Pour les marques engagées sur Douyin ou sur les autres réseaux sociaux chinois
 
 ## Aligner le nom avec les valeurs et le positionnement
 
-Le nom chinois pèse aussi comme levier d'identité, à condition de parler aux aspirations locales. Cela suppose parfois d'adapter le message pour épouser pleinement le [marché chinois](/fr/entrer-en-chine/conseil-en-entree-de-marche).
+Le nom chinois pèse aussi en levier d'identité, à condition de parler aux aspirations locales. Cela suppose parfois d'adapter le message pour épouser pleinement le [marché chinois](/fr/entrer-en-chine/conseil-en-entree-de-marche).
 
 ### Le poids de la résonance culturelle
 
@@ -114,6 +114,6 @@ Cette phase de test limite les risques et livre, au passage, des indications pr�
 
 ## Conclusion
 
-Le choix d'un nom chinois pèse lourd dans la durée d'installation d'une marque sur le marché. Un nom qui marie proximité sonore, pertinence culturelle et valeurs de marque renforce la présence et solidifie le lien avec les consommateurs locaux.
+Le choix d'un nom chinois pèse lourd dans la durée d'installation d'une marque sur le marché. Un nom qui marie proximité sonore, pertinence culturelle et valeurs de marque solidifie la présence et resserre le lien avec les consommateurs locaux.
 
-Que la cible soit Douyin, le cross-border ou les autres réseaux sociaux chinois, un nom pensé avec soin nourrit la reconnaissance et bâtit une confiance qui dure. Avec la bonne méthode et des tests rigoureux, une marque tisse des liens solides et construit une réussite durable sur ce marché.
+Que la cible soit Douyin, le cross-border ou les autres réseaux sociaux chinois, un nom pensé avec soin alimente la reconnaissance et bâtit une confiance qui dure. Avec la bonne méthode et des tests rigoureux, une marque tisse des liens solides et construit une réussite durable sur ce marché.

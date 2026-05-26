@@ -15,13 +15,13 @@ Du 1er au 5 mai 2024, pendant les congés de la fête du Travail, les voyageurs 
 
 ## Une grammaire du voyage qui se réécrit
 
-Les attentes du voyageur chinois aisé ont basculé. Le luxe ostentatoire recule. L'authenticité, l'exclusivité, l'immersion culturelle prennent le relais. Une évolution qui suit la trajectoire économique du pays et la maturité d'une classe aisée mieux installée. Le voyage de luxe se mesure désormais à l'enrichissement personnel, à la résonance émotionnelle et à la qualité du souvenir.
+Les attentes du voyageur chinois aisé ont basculé. Le luxe ostentatoire recule. L'authenticité, l'exclusivité, l'immersion culturelle prennent le relais. Un virage qui suit la trajectoire économique du pays et la maturité d'une classe aisée mieux installée. Le voyage de luxe se mesure désormais à l'enrichissement personnel, à la résonance émotionnelle et à la qualité du souvenir.
 
 ## Les moteurs de la croissance
 
 **Mutation culturelle**
 
-La société chinoise réinterprète la notion même de luxe. Plus de subtilité, plus de raffinement, plus de discrétion. Le bien matériel cède la place à l'expérience comme marqueur ultime du statut.
+La société chinoise réinterprète la notion même de luxe. Plus de subtilité, plus de raffinement, plus de discrétion. Le bien matériel cède la place à l'expérience en marqueur ultime du statut.
 
 **Effet du digital**
 
@@ -41,7 +41,7 @@ Les attentes évoluent vite. Cerner avec finesse les ressorts du voyageur chinoi
 
 **Durabilité et voyage de luxe**
 
-La durabilité s'installe comme un critère majeur pour le voyageur chinois aisé. Pratiques écoresponsables et tourisme durable séduisent une clientèle qui cherche la cohérence avec ses valeurs. Opportunité claire pour les opérateurs capables de différencier leur offre par des engagements concrets.
+La durabilité s'installe en critère majeur pour le voyageur chinois aisé. Pratiques écoresponsables et tourisme durable séduisent une clientèle qui cherche la cohérence avec ses valeurs. Opportunité claire pour les opérateurs capables de différencier leur offre par des engagements concrets.
 
 **Tourisme du bien-être**
 
@@ -69,7 +69,7 @@ L'influence reste un levier puissant sur ce marché. Travailler avec des personn
 
 **Communication personnalisée**
 
-Le sur-mesure paie. Donnée et analyse comportementale ajustent messages et offres, soignent l'expérience client et soutiennent la fidélité.
+Le sur-mesure paie. Donnée et analyse comportementale ajustent messages et offres, soignent l'expérience client et alimentent la fidélité.
 
 **Un contenu qui accroche**
 

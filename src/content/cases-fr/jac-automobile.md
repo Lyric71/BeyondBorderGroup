@@ -28,7 +28,7 @@ L'enjeu : développer des contenus sur mesure pour les plateformes sociales chin
 
 ## Notre approche
 
-La présence digitale de JAC est passée d'un dispositif éditorial classique à une véritable communauté interactive sur WeChat, Xiaohongshu et Weibo. L'approche s'est appuyée sur trois piliers : expertise automobile, storytelling humain, engagement communautaire. L'intelligence artificielle a joué un rôle déterminant : personnalisation des contenus et analyse des interactions plateforme par plateforme. L'équipe créative a produit vidéos courtes et visuels contemporains taillés pour chaque réseau, pour imprimer à la marque une image innovante et orientée client sur le marché chinois. Le programme est passé d'une gestion de contenus standardisée à un engagement communautaire multiplateforme, avec l'IA en levier d'optimisation pour l'impact et la performance de chaque canal.
+La présence digitale de JAC est passée d'un dispositif éditorial classique à une communauté interactive sur WeChat, Xiaohongshu et Weibo. Trois piliers : expertise automobile, récit humain, engagement de la communauté. L'IA a fait le gros du levier : contenus personnalisés et analyse des interactions plateforme par plateforme. L'équipe créative a produit vidéos courtes et visuels contemporains taillés pour chaque réseau, pour imprimer à la marque une image innovante, branchée client. Au bout du compte, on est passé d'une gestion de contenus standardisée à un engagement communautaire multiplateforme, avec l'IA pour optimiser l'impact et la performance de chaque canal.
 
 ## Résultats
 

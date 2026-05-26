@@ -12,7 +12,7 @@ heroImageAlt: "Logo e interfaz de la plataforma Douyin"
 
 ## ¿Por qué vender en Douyin?
 
-Douyin es una pieza central del [social commerce](/es/crecer-en-china/comercio-social) en China. Ofrece a las marcas una plataforma articulada en torno al contenido, donde los usuarios interactúan a fondo con vídeos, livestreams y formatos que permiten comprar sin salir de la app. Su algoritmo de recomendación facilita llegar a audiencias muy concretas, lo que potencia tanto las ventas como la notoriedad de marca.
+Douyin es una pieza central del [social commerce](/es/crecer-en-china/comercio-social) en China. Da a las marcas una plataforma articulada alrededor del contenido, donde los usuarios interactúan a fondo con vídeos, livestreams y formatos que permiten comprar sin salir de la app. Su algoritmo de recomendación facilita llegar a audiencias muy concretas, lo que tira tanto de las ventas como de la notoriedad de marca.
 
 ### Lo que aporta vender en Douyin:
 

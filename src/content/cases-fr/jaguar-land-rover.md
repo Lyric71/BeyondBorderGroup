@@ -22,7 +22,7 @@ order: 16
 
 ## La marque
 
-Jaguar Land Rover marie luxe, performance et technologie de pointe dans chacun de ses véhicules. Le groupe consacre des moyens considérables à la durabilité et au design d'avant-garde, et demeure une référence pour l'industrie automobile.
+Jaguar Land Rover marie luxe, performance et technologie de pointe dans chacun de ses véhicules. Le groupe investit lourdement dans la durabilité et le design d'avant-garde, et reste une référence pour l'industrie automobile.
 
 ## Le défi
 
@@ -30,7 +30,7 @@ Engager les jeunes publics par des contenus sociaux sur mesure, capables de rapp
 
 ## Notre approche
 
-Le programme reposait sur trois piliers. D'abord, des contenus iconiques qui font vivre l'héritage et le langage design de Jaguar Land Rover, par des vidéos courtes et des visuels d'impact, calibrés sur la sensibilité esthétique des jeunes audiences. Ensuite, des récits de marque sur mesure, qui traduisent innovation, aventure et luxe en narrations adressées à la jeunesse chinoise : publications, mini-documentaires, expériences immersives sur les plateformes sociales. Enfin, des campagnes de contenus utilisateurs qui invitent les fans à raconter leur expérience des véhicules Jaguar Land Rover, par hashtags, challenges et concours qui récompensent créativité et authenticité. Les enthousiastes deviennent ambassadeurs.
+Le programme tenait sur trois piliers. D'abord, des contenus iconiques qui font vivre l'héritage et le langage design de Jaguar Land Rover, en vidéos courtes et en visuels d'impact, calés sur la sensibilité esthétique de la jeune génération. Ensuite, des récits de marque sur mesure, qui traduisent innovation, aventure et luxe pour le public chinois : publications, mini-documentaires, expériences immersives sur les plateformes sociales. Enfin, des campagnes UGC qui invitent les fans à raconter leur expérience des véhicules, à coups de hashtags, de challenges et de concours qui récompensent créativité et authenticité. Les passionnés deviennent ambassadeurs.
 
 ## Résultats
 

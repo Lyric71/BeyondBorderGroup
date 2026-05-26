@@ -23,7 +23,7 @@ order: 4
 
 ## La marque
 
-Iguzzini fait partie des innovateurs du luminaire. Depuis 1959, la maison étudie, dessine et fabrique des systèmes d'éclairage intérieur et extérieur. Un engagement tenu : mettre l'architecture en valeur et élever la qualité de vie, en faisant de la lumière un levier d'innovation sociale.
+Iguzzini est un nom de l'innovation dans le luminaire. Depuis 1959, la maison étudie, dessine et fabrique des systèmes d'éclairage intérieur et extérieur. Une ligne tenue : mettre l'architecture en valeur, élever la qualité de vie, faire de la lumière un levier d'innovation sociale.
 
 ## Le défi
 

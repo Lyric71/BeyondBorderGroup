@@ -17,7 +17,7 @@ keyTakeaways:
 
 Quien trabaja con China a diario lo nota. El viejo [manual](/es/proyectos) de crecimiento se está apagando.
 
-Durante años, muchas [marcas globales](/es/entrar-en-china/estrategia-de-entrada) trataron a China como una gran máquina de crecimiento. Se elegía un SKU estrella, una celebridad, se lanzaba a nivel nacional y la escala hacía el trabajo. En un mercado en pleno empuje, eso aún cuajaba. En 2025, sobre todo, deja al descubierto los puntos débiles. Crecimiento más lento, consumidores más cautos y una competencia doméstica más fuerte significan que el manual viejo ya no encaja. Las marcas que insisten en una única respuesta nacional pueden gastar mucho y, aun así, costarles importar.
+Durante años, muchas [marcas globales](/es/entrar-en-china/estrategia-de-entrada) trataron China como una gran máquina de crecimiento. Se elegía un SKU estrella, una celebridad, se lanzaba a escala nacional y la inercia hacía el trabajo. En un mercado en pleno empuje, eso aún cuajaba. En 2025, sobre todo, deja al descubierto los puntos flojos. Un crecimiento más lento, consumidores más cautos y una competencia doméstica más fuerte quieren decir que el manual viejo ya no encaja. Las marcas que insisten en una única respuesta nacional pueden gastar mucho y, aun así, costarles importar.
 
 ## De los mensajes nacionales a la relevancia local
 

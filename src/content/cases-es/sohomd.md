@@ -29,14 +29,14 @@ SohoMD es un proveedor estadounidense de telepsiquiatría y teleterapia, especia
 
 ## El reto
 
-SohoMD necesitaba más leads y una experiencia de marca a la altura de la calidad asistencial al otro lado de la pantalla. El sitio estaba anticuado, la visibilidad en buscadores era limitada y la captación de pago no aportaba lo que debía. Nos pidieron renovar la marca, rediseñar el sitio y convertir la búsqueda y los anuncios en canales fiables de crecimiento.
+SohoMD necesitaba más leads y una experiencia de marca a la altura de la calidad asistencial que había al otro lado de la pantalla. El sitio sabía a viejo, la visibilidad en buscadores era escasa y la captación de pago no daba lo que debía. Nos pidieron renovar la marca, rediseñar el sitio y convertir la búsqueda y los anuncios en canales fiables de crecimiento.
 
 ## Nuestro enfoque
 
-Lideramos una revitalización completa de la marca: nuevos activos visuales, rediseño web, gestión continua del sitio, publicidad agresiva y un SEO estructurado. La dirección de diseño apostó por la simplicidad, un layout moderno y un sistema de color que respira calma, en línea con la misión de bienestar de la plataforma. Limamos así la fricción del flujo de alta del paciente.
+Llevamos una revitalización completa de la marca: nuevos activos visuales, rediseño web, gestión continua del sitio, publicidad agresiva y un SEO estructurado. La dirección de diseño apostó por la simplicidad, un layout moderno y un sistema de color que respira calma, alineado con la misión de bienestar de la plataforma. Limamos así la fricción del flujo de alta del paciente.
 
-En la parte de performance, montamos campañas de Google Ads enfocadas en búsquedas de alta intención sobre depresión, ansiedad y atención al TDAH, y optimizamos un núcleo de 150 keywords para orgánico. Los dos canales se afinaron juntos, para que la inversión en pago no se comiera el crecimiento orgánico.
+En la parte de performance, montamos campañas de Google Ads enfocadas en búsquedas de alta intención sobre depresión, ansiedad y atención al TDAH, y afinamos un núcleo de 150 keywords para orgánico. Los dos canales se ajustaron juntos, para que la inversión en pago no se comiera el crecimiento orgánico.
 
 ## Resultados
 
-Después del lanzamiento, SohoMD vio mejorar las tasas de conversión y el ROI en marca, sitio y medios. El programa SEO se diseñó para duplicar el tráfico orgánico de Google en seis meses, dando a la clínica un canal de captación compuesto que se suma a sus campañas de pago.
+Tras el lanzamiento, SohoMD vio mejorar las tasas de conversión y el ROI en marca, sitio y medios. El programa SEO se diseñó para duplicar el tráfico orgánico de Google en seis meses, dándole a la clínica un canal de captación compuesto que suma a sus campañas de pago.

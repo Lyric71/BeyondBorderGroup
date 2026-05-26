@@ -12,7 +12,7 @@ heroImageAlt: "Portraits des principaux KOL du e-commerce chinois en 2024"
 
 ## Un marché en pleine ébullition
 
-Le e-commerce chinois a pesé 1 500 milliards de dollars de transactions et continue d'accélérer. Mobile partout, technologies de rupture, et au centre du dispositif : les Key Opinion Leaders. Sur [Xiaohongshu](/fr/se-developper-en-chine/commerce-social) (RED) comme sur Douyin, ces figures rebattent les cartes de la prise de parole publicitaire. Authenticité, crédibilité, ressort narratif. Trois leviers qui basculent directement dans le chiffre d'affaires, là où la publicité classique s'épuise.
+Le e-commerce chinois a pesé 1 500 milliards de dollars de transactions et continue d'accélérer. Mobile partout, technologies de rupture, et au centre de la machine : les Key Opinion Leaders. Sur [Xiaohongshu](/fr/se-developper-en-chine/commerce-social) (RED) comme sur Douyin, ces figures rebattent les cartes de la prise de parole publicitaire. Authenticité, crédibilité, ressort narratif. Trois leviers qui basculent directement dans le chiffre d'affaires, là où la publicité classique s'essouffle.
 
 D'où le réflexe, désormais installé : pour orchestrer ces partenariats, les marques s'adjoignent une agence de marketing digital ou une régie média locale. Tour d'horizon des KOL qui comptent vraiment, de leurs plateformes et de leur place dans la chaîne marketing.
 

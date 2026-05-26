@@ -10,7 +10,7 @@ heroImage: "/Images/insights/the-power-of-wechat-qr-codes-for-businesses-in-chin
 heroImageAlt: "Exemple de QR code WeChat"
 ---
 
-Dans une Chine ultra-connectée, les QR codes [WeChat](/fr/se-developper-en-chine/commerce-social) rythment le quotidien. Le consommateur les scanne pour discuter, acheter, régler ses dépenses. 95,7 % des utilisateurs chinois du paiement mobile en passent par là. Plus une mode, un pilier. Le petit carré noir et blanc tient aujourd'hui une bonne part de l'infrastructure du marketing et du commerce contemporains.
+Dans une Chine ultra-connectée, les QR codes [WeChat](/fr/se-developper-en-chine/commerce-social) rythment le quotidien. Le consommateur les scanne pour discuter, acheter, régler ses dépenses. 95,7 % des utilisateurs chinois du paiement mobile passent par là. Plus une mode, un pilier. Le petit carré noir et blanc tient aujourd'hui une bonne part de l'infrastructure du marketing et du commerce contemporains.
 
 Pour une marque qui vise une percée sur le marché chinois, en e-commerce et en marketing digital, sa maîtrise change la donne. Au-delà de la simplification de la transaction, le format consolide l'engagement client, rend les campagnes plus lisibles et installe un lien direct entre la marque et ses consommateurs. Suivent les usages à mobiliser.
 

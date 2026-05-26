@@ -18,9 +18,9 @@ keyTakeaways:
 
 Douyin ya no es "un canal donde se hace un [livestream](/es/crecer-en-china/influencia-y-kol) gordo".
 
-En 2026 se comporta como un sistema operativo de retail. El contenido genera demanda, la publicidad la amplifica, la búsqueda la captura y el checkout ocurre dentro del mismo bucle. Si lo trata como una campaña puntual, quemará presupuesto rápido y aprenderá despacio.
+En 2026 se comporta como un sistema operativo de retail. El contenido genera demanda, la publicidad la amplifica, la búsqueda la captura y el checkout pasa dentro del mismo bucle. Si lo trata como una campaña puntual, quemará presupuesto rápido y aprenderá despacio.
 
-Las marcas que crecen de forma repetible están montando salas de directo gestionadas por la propia marca, con la lógica de un plató, no de un evento de famosos.
+Las marcas que crecen de forma repetible están montando salas de directo llevadas por la propia marca, con la lógica de un plató, no de un evento de famosos.
 
 ## El giro que importa: del presentador estrella a la sala de marca
 

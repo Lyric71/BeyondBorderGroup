@@ -12,9 +12,9 @@ heroImageAlt: "Imagen promocional del festival de compras 11.11"
 
 ## El fenómeno 11.11 en el comercio electrónico chino
 
-El 11 de noviembre, en China, ya no pertenece a los solteros. En 2021, el 11.11 vendió 139.000 millones de dólares en veinticuatro horas dentro del ecosistema de Alibaba, una cifra superior a la facturación anual de cualquier gran cadena europea de distribución. La cita, rebautizada como Singles' Day, ha absorbido la gran misa mundial del comercio electrónico y ya no admite vacilaciones: las enseñas locales y extranjeras que aspiran a contar en el mercado chino tienen que figurar. Cada otoño, decenas de millones de consumidores aguardan los descuentos y las series exclusivas. Para una marca que prepara su entrada o busca abrir distancia con sus rivales, el 11.11 sigue siendo la rampa más rápida hacia la facturación y la notoriedad.
+El 11 de noviembre, en China, ya no es de los solteros. En 2021, el 11.11 vendió 139.000 millones de dólares en veinticuatro horas dentro del ecosistema de Alibaba, una cifra por encima de la facturación anual de cualquier gran cadena europea de distribución. La cita, rebautizada como Singles' Day, se ha quedado con la gran misa mundial del comercio electrónico y ya no admite titubeos: las marcas locales y extranjeras que quieran contar en el mercado chino tienen que estar. Cada otoño, decenas de millones de consumidores esperan los descuentos y las series exclusivas. Para una marca que prepara su entrada o que busca abrir hueco frente a sus rivales, el 11.11 sigue siendo la rampa más rápida hacia la facturación y la notoriedad.
 
-Este artículo desmenuza las palancas que de verdad producen resultados: localización de contenidos, dinamización social y alianzas con los influencers chinos. Sin una lectura fina de estas dinámicas y sin un encaje preciso en los usos locales, ninguna marca aguanta el envite en el primer mercado minorista del mundo.
+Este artículo desmenuza las palancas que sí dan resultado: localización de contenidos, dinamización social y alianzas con los influencers chinos. Sin una lectura fina de estas dinámicas y sin un encaje preciso a los usos locales, ninguna marca aguanta el envite en el primer mercado minorista del mundo.
 
 ## Orígenes y evolución del 11.11
 

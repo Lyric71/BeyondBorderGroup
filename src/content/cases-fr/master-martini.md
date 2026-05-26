@@ -25,7 +25,7 @@ Depuis 1982, Master Martini accompagne pâtissiers et boulangers. La maison prop
 
 ## Le défi
 
-La mission portait sur les comptes Master Martini Asia couvrant toute la zone : Malaisie, Hong Kong, Singapour, Indonésie, Thaïlande. Objectif : faire monter la notoriété auprès d'un public précis, celui des boulangers et chefs en exercice. Des professionnels occupés, qui ne consultent pas les réseaux pour passer le temps, mais qui suivent ce qui élève leur pratique.
+La mission portait sur les comptes Master Martini Asia, couvrant toute la zone : Malaisie, Hong Kong, Singapour, Indonésie, Thaïlande. Objectif : pousser la notoriété auprès d'un public précis, celui des boulangers et des chefs en exercice. Des pros occupés, qui n'ouvrent pas les réseaux pour tuer le temps, mais qui suivent ce qui élève leur métier.
 
 ## Notre approche
 

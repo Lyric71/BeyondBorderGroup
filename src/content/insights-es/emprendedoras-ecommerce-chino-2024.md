@@ -12,7 +12,7 @@ heroImageAlt: "Joven emprendedora asiática trabajando en una pequeña empresa"
 
 ## El auge de las emprendedoras en el comercio digital chino
 
-El despegue del comercio digital en China ha cambiado el juego para las emprendedoras, y 2024 lo ha confirmado. Con plataformas accesibles y nuevas estrategias de eCommerce, cada vez más mujeres encuentran vías para lanzar y hacer crecer sus negocios. El movimiento transforma vidas individuales y, a la vez, empuja el crecimiento económico global.
+El despegue del comercio digital en China ha cambiado el juego para las emprendedoras, y 2024 lo ha confirmado. Con plataformas accesibles y nuevas estrategias de eCommerce, cada vez más mujeres encuentran vías para lanzar y hacer crecer sus negocios. El movimiento transforma vidas y, a la vez, tira del crecimiento económico global.
 
 ## Plataformas digitales como palanca para las emprendedoras
 

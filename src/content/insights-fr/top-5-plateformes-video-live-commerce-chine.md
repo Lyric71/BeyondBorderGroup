@@ -12,7 +12,7 @@ heroImageAlt: "Création de contenu vidéo et live streaming"
 
 ## La trajectoire fulgurante du live commerce chinois
 
-Le [live commerce](/fr/se-developper-en-chine/influence-et-kol) chinois a connu une accélération vertigineuse avant de s'installer parmi les piliers de l'e-commerce local. Bien au-delà du divertissement, ces [plateformes](/fr/comprendre-la-chine/plateformes) servent aux marques d'outils pour dialoguer directement avec le consommateur, démontrer un produit et boucler la vente dans la durée même de la session.
+Le [live commerce](/fr/se-developper-en-chine/influence-et-kol) chinois a accéléré à toute vitesse avant de s'installer parmi les piliers de l'e-commerce local. Bien au-delà du divertissement, ces [plateformes](/fr/comprendre-la-chine/plateformes) donnent aux marques les outils pour dialoguer directement avec le consommateur, démontrer un produit et boucler la vente dans la session même.
 
 Le volume d'affaires du live commerce chinois doit franchir la barre des 1 000 milliards de dollars d'ici 2026. La courbe repose sur trois piliers : une population de digital natives, un terreau technologique inventif, une intégration fluide entre social et shopping. L'engouement pour le live Douyin résume à lui seul la rapidité d'appropriation du format par le consommateur.
 
@@ -28,7 +28,7 @@ Le live sur Douyin couvre un large spectre : divertissement, mode, lifestyle, fo
 
 ### Taobao Live
 
-Lancée par Alibaba en 2016, Taobao Live s'est imposée comme la première plateforme B2C de live commerce en Chine. Le service capte 80 % des transactions de live commerce du pays.
+Lancée par Alibaba en 2016, Taobao Live s'est imposée en première plateforme B2C de live commerce en Chine. Le service capte 80 % des transactions de live commerce du pays.
 
 ![Interface Taobao Live](/Images/insights/2024/12/taobao-live-1024x502.jpg)
 
@@ -40,7 +40,7 @@ Kuaishou, soutenue par Tencent, figure parmi les poids lourds du live commerce c
 
 ![Plateforme live Kuaishou](/Images/insights/2024/12/kua-live-1024x597.jpg)
 
-Pour les marques, la plateforme ouvre l'accès à des audiences encore peu sollicitées, en particulier dans le Hubei, le Fujian et le Yunnan, où la consommation de biens progresse rapidement. Les analystes anticipent une croissance soutenue sur ces zones. Kuaishou s'impose à ce titre comme un canal de référence pour adresser les marchés émergents chinois.
+Pour les marques, la plateforme ouvre l'accès à des audiences encore peu sollicitées, en particulier dans le Hubei, le Fujian et le Yunnan, où la consommation de biens progresse rapidement. Les analystes anticipent une croissance soutenue sur ces zones. Kuaishou s'impose à ce titre en canal de référence pour adresser les marchés émergents chinois.
 
 ### Tencent Video (腾讯视频)
 
@@ -92,7 +92,7 @@ Le partenariat repose sur des profils dont les valeurs et l'audience cadrent ave
 
 ### Le créneau horaire
 
-L'analyse des tendances de la plateforme identifie les pics d'audience. Plus de spectateurs, plus d'engagement.
+L'analyse des tendances de la plateforme repère les pics d'audience. Plus de spectateurs, plus d'engagement.
 
 ### Le ressort de l'exclusivité
 

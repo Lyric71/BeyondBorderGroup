@@ -12,12 +12,12 @@ heroImageAlt: "Imagen destacada de Sina Weibo"
 
 ## El potencial de Weibo para el marketing
 
-Weibo es una de las plataformas de [redes sociales](/es/crecer-en-china/comercio-social) con más peso en China. Se usa por sus actualizaciones en tiempo real y por la capacidad que tiene el contenido de volverse viral. Su base de usuarios está concentrada en perfiles jóvenes, muy digitales, sobre todo entre 19 y 29 años. Para las marcas que quieren llegar a ese público, especialmente las que trabajan con una agencia de branding en China, es un terreno muy rico.
+Weibo es una de las plataformas de [redes sociales](/es/crecer-en-china/comercio-social) con más peso en China. Se usa por sus actualizaciones en tiempo real y por la facilidad con la que el contenido se vuelve viral. Su base de usuarios está concentrada en perfiles jóvenes, muy digitales, sobre todo entre 19 y 29 años. Para las marcas que quieran llegar a ese público, especialmente las que trabajan con una agencia de branding en China, es un terreno muy rico.
 
 **Ventajas clave de hacer marketing en Weibo:**
 
 - Una base de usuarios amplia y activa.
-- Potencial viral para construir notoriedad rápidamente.
+- Potencial viral para levantar notoriedad rápido.
 - Integración con las plataformas chinas de eCommerce.
 - Segmentación y analítica avanzadas.
 

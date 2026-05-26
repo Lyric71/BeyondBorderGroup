@@ -11,7 +11,7 @@ heroImageAlt: "Destino panorámico de viaje de lujo"
 
 ## El ascenso del viaje de lujo chino
 
-El segmento del lujo turístico en China lleva años creciendo a buen ritmo. Durante el puente del Día del Trabajo de 2024, del 1 al 5 de mayo, los viajes y el gasto superaron incluso las cifras previas a la pandemia. Es una señal clara de recuperación. Según el informe de Ctrip sobre ese puente, los viajeros chinos hicieron casi 10 millones de desplazamientos aéreos y visitaron alrededor de 200 países y más de 3.000 ciudades. En el interior del país se registraron 295 millones de viajes y un gasto de 166.900 millones de RMB (unos 23.130 millones de dólares). La cifra creció un 12,7 % respecto al año anterior y quedó un 13,5 % por encima de la de 2019.
+El segmento del lujo turístico en China lleva años creciendo a buen ritmo. Durante el puente del Día del Trabajo de 2024, del 1 al 5 de mayo, los viajes y el gasto pasaron por encima incluso de las cifras previas a la pandemia. Es una señal clara de recuperación. Según el informe de Ctrip sobre ese puente, los viajeros chinos hicieron casi 10 millones de desplazamientos aéreos y pisaron unos 200 países y más de 3.000 ciudades. En el interior del país se registraron 295 millones de viajes y un gasto de 166.900 millones de RMB (unos 23.130 millones de dólares). La cifra creció un 12,7 % respecto al año anterior y quedó un 13,5 % por encima de la de 2019.
 
 ## Cómo han cambiado las preferencias
 

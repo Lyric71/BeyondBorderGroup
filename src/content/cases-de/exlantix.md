@@ -20,16 +20,16 @@ order: 15
 
 ## Die Marke
 
-Exlantix ist eine neue Premiumlinie innerhalb des Exceed-Portfolios der Chery Automotive Group. Sie verbindet hochentwickelte Technologie mit Luxus und will das Fahrerlebnis aus einer globalen Perspektive neu setzen.
+Exlantix ist eine neue Premiumlinie im Exceed-Portfolio der Chery Automotive Group. Sie verbindet fortschrittliche Technologie mit Luxus und will das Fahrerlebnis aus globaler Perspektive neu setzen.
 
 ## Die Aufgabe
 
-Wir entwickelten eine eigenständige visuelle Identität für Exlantix, die sich von klassischen chinesischen Design-Einflüssen löst und einer universell anschlussfähigen Designsprache folgt. Die Identität sollte die luxuriöse Anmutung der Marke und ihren globalen Anspruch tragen und in unterschiedlichen Märkten gleichermassen wirken.
+Wir haben eine eigenständige visuelle Identität für Exlantix entwickelt, die sich von klassischen chinesischen Design-Einflüssen löst und einer universell anschlussfähigen Designsprache folgt. Die Identität sollte den luxuriösen Auftritt der Marke und ihren globalen Anspruch tragen und in sehr unterschiedlichen Märkten gleichermassen funktionieren.
 
 ## Unser Vorgehen
 
-Die Arbeit umfasste das gesamte Identitätssystem, vom Emblem über die Typografie bis zu Farbwelt und Bildsprache. Jedes Element wurde so entwickelt, dass es das Qualitätsversprechen und den Pioniergeist im Luxus-Auto-Segment trägt. Konsistent über alle Touchpoints angewendet, stützt die Identität eine stimmige, ausdrucksstarke Markenpräsenz, wo immer die Marke auftritt.
+Die Arbeit umfasste das gesamte Identitätssystem, vom Emblem über die Typografie bis zu Farbwelt und Bildsprache. Jedes Element wurde so entwickelt, dass es das Qualitätsversprechen und den Pioniergeist im Luxus-Auto-Segment trägt. Konsequent über alle Touchpoints eingesetzt, stützt die Identität einen stimmigen, ausdrucksstarken Auftritt, wo immer die Marke erscheint.
 
 ## Ergebnisse
 
-Das Resultat ist eine geschlossene visuelle Identität, die Exlantix' innovativen Anspruch und seine Premium-Statur trägt. Sie zieht sich durch alle Marken-Interaktionen, formt ein einheitliches Erlebnis und legt das Fundament für den internationalen Start der Marke.
+Das Ergebnis ist eine geschlossene visuelle Identität, die den innovativen Anspruch und die Premium-Statur von Exlantix trägt. Sie zieht sich durch sämtliche Marken-Interaktionen, formt ein einheitliches Erlebnis und legt das Fundament für den internationalen Start.

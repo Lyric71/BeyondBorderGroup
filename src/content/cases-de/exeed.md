@@ -21,17 +21,17 @@ images:
 
 ## Die Marke
 
-Exeed ist die Premiummarke der chinesischen Chery Group und baut die Präsenz in Osteuropa, im Nahen Osten und in Südamerika aus. Im Wettbewerb mit etablierten Spielern wie Mercedes-Benz und BMW positioniert sich Exeed über Qualität und Design. Die Luxus-Elektrolinie EXLANTIX zählt mehr als 180.000 Nutzer weltweit und steuert auf mehr als 25 Märkte bis 2025 zu.
+Exeed ist die Premiummarke der chinesischen Chery Group und baut ihre Präsenz in Osteuropa, im Nahen Osten und in Südamerika aus. Im Wettbewerb mit etablierten Anbietern wie Mercedes-Benz und BMW positioniert sich Exeed über Qualität und Design. Die Luxus-Elektrolinie EXLANTIX zählt weltweit mehr als 180.000 Nutzer und steuert auf über 25 Märkte bis 2025 zu.
 
 ## Die Aufgabe
 
-Auftrag war es, Exeeds globale Präsenz zu heben und die öffentliche Wahrnehmung in Märkten neu zu zeichnen, in denen chinesische Premium-Automobilmarken noch eine junge Kategorie sind. Das hiess: glaubwürdige PR im grossen Stil über sehr unterschiedliche Medienlandschaften hinweg, kombiniert mit einer Markengeschichte, die sich gegen europäische Traditionsmarken behaupten kann.
+Der Auftrag: Exeeds globale Präsenz heben und die öffentliche Wahrnehmung in Märkten neu zeichnen, in denen chinesische Premium-Automobilmarken noch eine junge Kategorie sind. Das hiess glaubwürdige PR im grossen Stil über sehr unterschiedliche Medienlandschaften hinweg, dazu eine Markengeschichte, die sich gegen europäische Traditionsmarken behaupten kann.
 
 ## Unser Vorgehen
 
-Seit August 2023 läuft ein durchgehendes PR-Programm aus Earned Media, Content und Sichtbarkeit der Geschäftsführung. Die Arbeit umfasst Original-Redaktion, Advertorials, Interview-Planung, Q&A-Formate, Krisenkommunikation, CEO-Reden und Auftritte auf den grossen Branchenbühnen.
+Seit August 2023 läuft ein durchgängiges PR-Programm aus Earned Media, Content und Sichtbarkeit der Geschäftsführung. Dazu gehört Original-Redaktion, Advertorials, Interview-Planung, Q&A-Formate, Krisenkommunikation, CEO-Reden und Auftritte auf den grossen Branchenbühnen.
 
-Wir haben Branding und digitale Innovationsdenke über die klassische PR-Umsetzung gelegt, damit die Botschaft vom Messestand über den Social Post bis zur CEO-Keynote dieselbe bleibt. Leitmomente waren der Genfer Auto-Salon, die Global Co-creation Ecological Conference und die EXLANTIX-Pre-Launch-Kampagnen, jeweils gebaut als ein verstärkendes Kapitel desselben Narrativs, statt als Einzel-Aktivierung.
+Branding und digitale Innovationsdenke haben wir über die klassische PR-Umsetzung gelegt, damit die Botschaft vom Messestand über den Social Post bis zur CEO-Keynote dieselbe bleibt. Die Leitmomente waren der Genfer Auto-Salon, die Global Co-creation Ecological Conference und die EXLANTIX-Pre-Launch-Kampagnen. Jeder Moment wurde als verstärkendes Kapitel desselben Narrativs gebaut, nicht als Einzelaktivierung.
 
 ## Ergebnisse
 

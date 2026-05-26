@@ -25,7 +25,7 @@ En noviembre pasado, dos marcas chinas de dermocosmética se midieron cara a car
 
 Misma categoría de producto. Las mismas plataformas. El mismo scroll.
 
-Una brecha así no se abre por una diferencia de fórmula. Se abre cuando una [marca](/es/entrar-en-china/marca-y-localizacion) construye un motor comercial de verdad y la otra se limita a alquilar tráfico.
+Una brecha así no se abre por una diferencia de fórmula. Se abre cuando una [marca](/es/entrar-en-china/marca-y-localizacion) levanta un motor comercial de verdad y la otra se queda alquilando tráfico.
 
 ## La misma categoría, arquitecturas opuestas
 

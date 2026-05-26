@@ -11,7 +11,7 @@ heroImageAlt: "Design et localisation d'un site web chinois"
 
 ## Pourquoi localiser son site pour la Chine
 
-Localiser un [site web](/fr/se-developper-en-chine/site-web) pour la Chine figure parmi les chantiers les plus exigeants des agences e-commerce spécialisées sur le pays. La traduction n'en couvre qu'une fraction. Le chantier engage la conformité réglementaire, l'ajustement aux attentes des consommateurs locaux et un arbitrage technique précis. Une [localisation](/fr/entrer-en-chine/marque-et-localisation) efficace rend le site accessible, culturellement juste et conforme au droit applicable. Elle pose les fondations d'une présence solide sur le commerce en ligne chinois.
+Localiser un [site web](/fr/se-developper-en-chine/site-web) pour la Chine est l'un des chantiers les plus exigeants des agences e-commerce spécialisées sur le pays. La traduction n'en couvre qu'une fraction. Le chantier engage la conformité réglementaire, l'ajustement aux attentes des consommateurs locaux et un arbitrage technique précis. Une [localisation](/fr/entrer-en-chine/marque-et-localisation) efficace rend le site accessible, culturellement juste et conforme au droit applicable. Elle pose les fondations d'une présence solide sur le commerce en ligne chinois.
 
 ### La Grande Muraille numérique et la modération des contenus
 

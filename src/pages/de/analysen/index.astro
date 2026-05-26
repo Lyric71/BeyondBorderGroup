@@ -6,7 +6,7 @@ import { insightEnToDe } from '../../../i18n/insight-slugs.mjs';
 
 const slugMap = insightEnToDe as Record<string, string>;
 
-const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+const allInsights = await getCollection('insightsDe', ({ data }) => !data.draft);
 
 const sorted = allInsights.sort((a, b) => {
   const da = a.data.pubDate?.valueOf() ?? 0;
@@ -53,14 +53,14 @@ const slugFor = (enSlug: string) => slugMap[enSlug] ?? enSlug;
 
 <Layout
   title="Analysen | Beyond Border Group"
-  description="Analysen des chinesischen eCommerce, der digitalen Plattformen und der Markenstrategie. Vom Team, das Marken auf Tmall, JD, Douyin, WeChat und RED aus Shanghai, Hongkong und Paris steuert."
+  description="Analysen zum chinesischen eCommerce, zu digitalen Plattformen und zu Markenstrategie. Geschrieben von dem Team, das Marken auf Tmall, JD, Douyin, WeChat und RED aus Shanghai, Hongkong und Paris steuert."
 >
   <section class="insights-intro">
     <div class="container">
       <span class="eyebrow">Analysen</span>
-      <h1>China, direkt vom Boden.</h1>
+      <h1>China, direkt aus dem Tagesgeschäft.</h1>
       <p class="lead">
-        Das Team, das Marken auf Tmall, JD, Douyin, WeChat und RED bedient, schreibt selbst. Aus Shanghai, Hongkong und Paris. Nie aus einer abgehobenen Kanzlei.
+        Das Team, das Marken auf Tmall, JD, Douyin, WeChat und RED steuert, schreibt selbst. Aus Shanghai, Hongkong und Paris. Nie aus dem Elfenbeinturm.
       </p>
     </div>
   </section>
@@ -121,7 +121,7 @@ const slugFor = (enSlug: string) => slugMap[enSlug] ?? enSlug;
       </div>
 
       <p class="insights-empty" hidden={sorted.length !== 0}>
-        Die Archive kommen zurück. Es dauert noch ein paar Tage.
+        Das Archiv ist gerade in Arbeit. Geben Sie uns ein paar Tage.
       </p>
     </div>
   </section>

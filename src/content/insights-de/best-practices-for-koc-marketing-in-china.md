@@ -13,17 +13,17 @@ heroImageAlt: "Junge asiatische Frau prüft Kosmetik auf einem Sofa"
 
 ## Bewährte Praxis im KOC-Marketing in China
 
-Chinas eCommerce-Markt wächst, und Kundenvertrauen war nie wichtiger. Während früher grosse Influencer (KOL) dominierten, übernehmen heute Key Opinion Consumers (KOC) die Führung. Diese alltäglichen Käufer teilen echte Bewertungen und Erfahrungen und sind ein wirksamer Weg, um auf persönlicher Ebene mit Verbrauchern zu sprechen.
+Chinas eCommerce-Markt wächst, und Kundenvertrauen war nie wichtiger. Während früher grosse Influencer (KOL) dominierten, übernehmen heute Key Opinion Consumers (KOC) die Führung. Diese alltäglichen Käufer teilen ehrliche Bewertungen und Erfahrungen und sind ein wirksamer Weg, um auf persönlicher Ebene mit Käufern zu sprechen.
 
-Wer diesen Trend nutzen will, profitiert von der Zusammenarbeit mit einer digitalen oder Branding-Agentur in China. So entstehen [Kampagnen](/de/in-china-wachsen/kampagnen), die strategisch, wirkungsstark und treffsicher sind.
+Wer diesen Trend nutzen will, fährt mit einer digitalen oder Branding-Agentur in China gut. So entstehen [Kampagnen](/de/in-china-wachsen/kampagnen), die strategisch, wirkungsstark und treffsicher sind.
 
-Dieser Leitfaden zeigt die bewährten Praktiken im KOC-Einsatz, um Geschäft zu wachsen, Vertrauen aufzubauen und im Wettbewerb des chinesischen eCommerce Umsatz zu heben.
+Dieser Leitfaden zeigt die bewährte Praxis im KOC-Einsatz, um Geschäft wachsen zu lassen, Vertrauen aufzubauen und im Wettbewerb des chinesischen eCommerce Umsatz zu heben.
 
 ## Was ist KOC-Marketing in China?
 
-KOC sind Mikro-Influencer, die Authentizität und Nähe priorisieren. Anders als KOL mit grossen, oft weniger engagierten Communities bauen KOC Glaubwürdigkeit über persönliche Erfahrungen und ehrliche Reviews. Sie bewegen sich meist in Nischen mit klar definierten Interessen.
+KOC sind Mikro-Influencer, die Authentizität und Nähe an erste Stelle setzen. Anders als KOL mit grossen, oft weniger engagierten Communities bauen KOC ihre Glaubwürdigkeit über persönliche Erfahrungen und ehrliche Reviews auf. Sie bewegen sich meist in Nischen mit klar definierten Interessen.
 
-Mit einer Marketing-Agentur in China lassen sich die passenden KOC identifizieren, sodass Kampagnen authentisch und wirksam laufen. Da chinesische Verbraucher zunehmend ehrliche Empfehlungen statt Promi-Endorsements suchen, ist [KOC-Marketing](/de/in-china-wachsen/influencer-und-kol) zur Pflichtdisziplin geworden.
+Mit einer Marketing-Agentur in China lassen sich die passenden KOC identifizieren, damit Kampagnen authentisch und wirksam laufen. Da chinesische Käufer zunehmend ehrliche Empfehlungen statt Promi-Endorsements suchen, ist [KOC-Marketing](/de/in-china-wachsen/influencer-und-kol) zur Pflichtdisziplin geworden.
 
 ## Vorteile des KOC-Marketings für den chinesischen eCommerce
 
@@ -75,7 +75,7 @@ Der KOC-Content sollte zu Ihrer Markenstimme und Ästhetik passen. Manche KOC gl
 
 ### Authentizität und Glaubwürdigkeit
 
-Echtheit ist die Kernqualität erfolgreicher KOC. Vermeiden Sie überkommerzialisierte Inhalte oder zweifelhafte Follower-Basen. Prüfen Sie frühere Endorsements auf ehrliche, durchdachte Reviews, nicht auf generische Werbung. Verbraucher vertrauen KOC, die persönliche, nachvollziehbare Erfahrungen teilen.
+Echtheit ist die Kernqualität erfolgreicher KOC. Vermeiden Sie überkommerzialisierte Inhalte oder zweifelhafte Follower-Basen. Sehen Sie sich frühere Endorsements an: ehrliche, durchdachte Reviews zählen, generische Werbung nicht. Käufer vertrauen KOC, die persönliche, nachvollziehbare Erfahrungen teilen.
 
 ### Kulturelle Relevanz und Lokalisierung
 
@@ -111,7 +111,7 @@ Kombinieren Sie KOC-Arbeit mit SEO, bezahlten Anzeigen und E-Mail-Marketing. Die
 
 ### Trends und Feedback verfolgen
 
-Chinesische Konsumvorlieben ändern sich schnell. Prüfen Sie Kampagnen regelmässig und passen Sie sich an, gemeinsam mit einer Branding-Agentur in China.
+Die Kaufvorlieben in China verschieben sich schnell. Prüfen Sie Kampagnen regelmässig und passen Sie sich an, am besten gemeinsam mit einer Branding-Agentur in China.
 
 ## Herausforderungen und wie sie zu lösen sind
 
@@ -129,6 +129,6 @@ Zu viel Mikromanagement erstickt Authentizität. Geben Sie klare Leitplanken, la
 
 ## Fazit
 
-KOC-Marketing verändert, wie Marken im chinesischen eCommerce gewinnen. Mit Authentizität, gezielter Nischenansprache und der Zusammenarbeit mit Fachpartnern wie digitalen oder Branding-Agenturen in China bauen Sie Vertrauen, heben Umsatz und werden zur ersten Wahl für Verbraucher.
+KOC-Marketing verändert, wie Marken im chinesischen eCommerce gewinnen. Mit Authentizität, gezielter Nischenansprache und der Zusammenarbeit mit Fachpartnern wie digitalen oder Branding-Agenturen in China bauen Sie Vertrauen, heben Umsatz und werden zur ersten Wahl für Käufer.
 
-Wer im digitalen Markt vorn bleibt, bleibt flexibel, arbeitet mit den richtigen Partnern und konzentriert sich auf echte Verbindungen. KOC-Marketing aufzunehmen, hilft Ihrer Marke, in diesem schnellen, lebendigen Markt zu wachsen.
+Wer im digitalen Markt vorne bleiben will, bleibt flexibel, arbeitet mit den richtigen Partnern und konzentriert sich auf echte Verbindungen. KOC-Marketing aufzunehmen, hilft Ihrer Marke, in diesem schnellen, lebendigen Markt zu wachsen.

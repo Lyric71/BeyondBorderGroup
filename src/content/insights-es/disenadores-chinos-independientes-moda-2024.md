@@ -17,7 +17,7 @@ En los últimos años, la escena de la moda en China ha cambiado mucho. La reape
 
 ## Foco en el mercado doméstico
 
-La pandemia supuso un desafío serio para muchos diseñadores y empujó a redirigir esfuerzos al mercado interior, con los movimientos internacionales restringidos. El resultado es un interés creciente por marcas únicas y de nicho, que combinan herencia cultural y tendencias globales. El consumidor confía cada vez más en las marcas domésticas: más de la mitad expresa fe en su crecimiento. El eCommerce chino se ha adaptado a este escenario, ofreciendo una plataforma sólida para estos diseñadores.
+La pandemia fue un palo serio para muchos diseñadores y empujó a redirigir esfuerzos al mercado interior, con los movimientos internacionales restringidos. El resultado es un interés creciente por marcas únicas y de nicho, que mezclan herencia cultural y tendencias globales. El consumidor confía cada vez más en las marcas domésticas: más de la mitad apuesta por su crecimiento. El eCommerce chino se ha adaptado a este escenario, ofreciendo una plataforma sólida para estos diseñadores.
 
 ## La integración cultural en el diseño
 

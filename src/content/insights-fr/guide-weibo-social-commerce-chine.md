@@ -98,7 +98,7 @@ Le contenu fait le cœur de toute stratégie Weibo qui fonctionne. Engageant, pe
 
 ## Travailler avec les KOL
 
-S'appuyer sur des Key Opinion Leaders reste une stratégie particulièrement efficace sur Weibo. Ces personnalités disposent d'une communauté fidèle qui leur fait confiance, ce qui en fait des partenaires de choix pour soutenir notoriété et ventes. Démarche courante pour une agence marketing en Chine.
+Sur Weibo, les Key Opinion Leaders restent une arme redoutable. Ces personnalités tiennent une communauté qui leur fait confiance, ce qui en fait des partenaires de choix pour porter notoriété et ventes. Démarche courante pour une agence marketing en Chine.
 
 **Comment collaborer :**
 

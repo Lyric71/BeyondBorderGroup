@@ -12,13 +12,13 @@ heroImageAlt: "Fuente: Getty Images"
 
 ## Innovaciones de marketing impulsadas por IA
 
-Las empresas chinas y las agencias de [marketing](/es/crecer-en-china/campanas) digital del país lideran la transformación del marketing con IA. Plataformas como Alibaba y JD.com aplican IA para personalizar la experiencia de cliente, optimizar campañas y elevar el engagement.
+Las empresas chinas y las agencias de [marketing](/es/crecer-en-china/campanas) digital del país lideran la transformación del marketing con IA. Plataformas como Alibaba y JD.com aplican IA para personalizar la experiencia de cliente, afinar campañas y tirar del engagement.
 
 Aplicaciones clave en marketing:
 
-- **Recomendaciones personalizadas:** algoritmos avanzados analizan datos de consumo y sugieren productos a medida, lo que eleva la conversión.
+- **Recomendaciones personalizadas:** algoritmos avanzados leen los datos de consumo y proponen productos a medida, lo que tira de la conversión.
 - **Modelos de pricing dinámico:** la IA ajusta precios en tiempo real según demanda, competencia y comportamiento del cliente.
-- **Chatbots y asistentes virtuales:** asistentes con IA mejoran la atención al ofrecer soporte instantáneo y guía de compra personalizada.
+- **Chatbots y asistentes virtuales:** los asistentes con IA mejoran la atención al ofrecer soporte instantáneo y guía de compra personalizada.
 
 ![](/Images/insights/2025/01/virtual-avatar-by-Alibaba-Group-1024x576.png)
 

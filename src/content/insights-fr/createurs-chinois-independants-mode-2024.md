@@ -11,7 +11,7 @@ heroImageAlt: "Source : China Daily"
 
 ## Créateurs chinois indépendants : la nouvelle donne mode et business en 2024
 
-Longtemps associée à la performance technologique et à la puissance manufacturière, la Chine s'est aussi imposée en terreau fertile pour les esprits créatifs de la mode. L'écosystème reste jeune. Sa résilience et sa capacité d'innovation forcent pourtant le respect. Les créateurs indépendants chinois occupent désormais le devant de la scène. Ils dictent les tendances et réécrivent les codes du secteur à l'échelle mondiale.
+Longtemps associée à la performance technologique et à la puissance manufacturière, la Chine s'est aussi imposée en terreau fertile pour les esprits créatifs de la mode. L'écosystème reste jeune. Sa résilience et sa capacité d'innovation forcent pourtant le respect. Les créateurs indépendants chinois tiennent désormais le devant de la scène. Ils dictent les tendances et réécrivent les codes du secteur à l'échelle mondiale.
 
 La scène mode chinoise a basculé ces dernières années. Réouverture post-Covid, maturation économique, bouleversements démographiques : la combinaison a redessiné les tendances. Les créateurs locaux saisissent la dynamique. Ils signent des pièces de haute facture qui parlent au goût local et rivalisent par moments avec les marques internationales.
 

@@ -12,7 +12,7 @@ heroImageAlt: "Portada del artículo sobre marketing con KOL"
 
 ## KOL y marketing digital en China
 
-Los KOL (Key Opinion Leaders) e influencers dominan el panorama del [marketing](/es/crecer-en-china/campanas) digital en China y son piezas imprescindibles para mover marca. Plataformas como Douyin, Xiaohongshu y WeChat mueven la conversación y la venta. Permiten a las empresas construir confianza y empujar resultados. Colaborar con KOL es ya una estrategia central para marcas globales y locales, sobre todo si trabajan con una agencia digital, de marca o de social [media](/es/crecer-en-china/medios) en China para moverse en un mercado tan vivo.
+Los KOL (Key Opinion Leaders) e influencers dominan el panorama del [marketing](/es/crecer-en-china/campanas) digital en China y son piezas imprescindibles para mover marca. Plataformas como Douyin, Xiaohongshu y WeChat mueven la conversación y la venta. Permiten a las empresas construir confianza y tirar de resultados. Colaborar con KOL es ya una estrategia central para marcas globales y locales, sobre todo si trabajan con una agencia digital, de marca o de social [media](/es/crecer-en-china/medios) en China para moverse en un mercado tan vivo.
 
 ## El papel del KOL en el marketing chino
 

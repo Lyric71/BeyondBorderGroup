@@ -15,8 +15,8 @@ La diversidad lingüística y la complejidad cultural de China convierten el [na
 
 ### Claves culturales
 
-* **El peso simbólico de los caracteres:** cada carácter chino carga su propio significado y su propia textura emocional. Combinados, pueden transmitir mensajes potentes o, al revés, connotaciones no buscadas. Un nombre neutro en mandarín puede arrastrar matices negativos en cantonés.
-* **Lo que valora el consumidor chino:** los nombres que evocan prosperidad, felicidad o elegancia funcionan mejor. Las ideas asociadas al éxito, la fortuna y la belleza resultan especialmente atractivas.
+* **El peso simbólico de los caracteres:** cada carácter chino lleva su propio significado y su propia textura emocional. Combinados, pueden transmitir mensajes potentes o, al revés, connotaciones no deseadas. Un nombre neutro en mandarín puede arrastrar matices negativos en cantonés.
+* **Lo que valora el consumidor chino:** los nombres que evocan prosperidad, felicidad o elegancia funcionan mejor. Las ideas asociadas al éxito, la fortuna y la belleza tiran especialmente bien.
 
 ### Trampas lingüísticas
 

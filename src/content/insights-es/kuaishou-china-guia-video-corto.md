@@ -18,7 +18,7 @@ Los usuarios de Kuaishou viven sobre todo en ciudades de menor categoría y zona
 
 ### Cómo prefieren engancharse
 
-Este consumidor prefiere lo crudo y auténtico frente a la publicidad muy pulida. Eso convierte a Kuaishou en una buena elección para las marcas que quieren conectar a un nivel personal, no a base de campañas brillantes.
+Este consumidor prefiere lo crudo y auténtico frente a la publicidad muy pulida. Eso convierte a Kuaishou en una buena baza para las marcas que quieran conectar a nivel personal, no a base de campañas brillantes.
 
 ### Hábitos de gasto
 

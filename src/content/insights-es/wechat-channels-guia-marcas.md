@@ -14,7 +14,7 @@ heroImageAlt: "Interfaz de WeChat Channels con contenido en vídeo y foto"
 
 [WeChat](/es/crecer-en-china/comercio-social) Channels, desarrollada por Tencent, es la función de contenido dentro de la app de WeChat que permite a usuarios y marcas conectar a través de vídeos cortos y fotos. Con más de mil millones de usuarios activos mensuales, WeChat ofrece a las marcas una audiencia enorme y convierte Channels en una plataforma única para el social commerce chino. Al igual que Douyin y Little Red Book (Xiaohongshu), WeChat Channels apuesta por contenido visual interactivo, ideal para las estrategias de eCommerce en China.
 
-Channels se integra de forma fluida con el ecosistema de super app de WeChat, lo que la conecta con mensajería, pagos, mini-programas y funciones de eCommerce. El resultado es un terreno perfecto para la localización de marca en China y para empujar el potencial de venta.
+Channels encaja sin fricción con el ecosistema de super app de WeChat, lo que la conecta con mensajería, pagos, mini-programas y funciones de eCommerce. El resultado es un terreno perfecto para la localización de marca en China y para tirar del potencial de venta.
 
 ## Características de WeChat Channels y perfil de su audiencia
 

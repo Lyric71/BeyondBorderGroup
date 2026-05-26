@@ -10,9 +10,9 @@ heroImage: "/Images/insights/the-power-of-wechat-qr-codes-for-businesses-in-chin
 heroImageAlt: "Ejemplo de código QR de WeChat"
 ---
 
-En el universo digital chino, en plena expansión, los códigos QR de [WeChat](/es/crecer-en-china/comercio-social) forman parte del día a día. Se usan para todo: contactar con alguien, comprar, pagar. Con un 95,7 % de los usuarios de pago móvil chinos apoyándose en códigos QR, estos cuadrados en blanco y negro son herramienta imprescindible para el negocio y el marketing moderno, mucho más que una moda tecnológica.
+En el universo digital chino, en plena expansión, los códigos QR de [WeChat](/es/crecer-en-china/comercio-social) son parte del día a día. Se usan para todo: contactar con alguien, comprar, pagar. Con un 95,7 % de los usuarios chinos de pago móvil tirando de códigos QR, estos cuadrados en blanco y negro son herramienta imprescindible para el negocio y el marketing moderno, mucho más que una moda tecnológica.
 
-Para una empresa que quiera ganar terreno en el mercado chino, sobre todo en eCommerce y marketing digital, dominar los códigos QR de WeChat resulta clave. Estos códigos no se limitan a simplificar la transacción. Mejoran el engagement, ordenan la estrategia de marketing y abren una vía directa entre marca y consumidor. En esta guía repasamos todo lo que necesita saber para apalancar los códigos QR de WeChat al servicio de su negocio en China.
+Para una empresa que quiera ganar terreno en el mercado chino, sobre todo en eCommerce y marketing digital, dominar los códigos QR de WeChat resulta clave. Estos códigos no se quedan en simplificar la transacción. Tiran del engagement, ordenan la estrategia de marketing y abren una vía directa entre marca y consumidor. En esta guía repasamos todo lo que necesita saber para apoyarse en los códigos QR de WeChat al servicio de su negocio en China.
 
 ## ¿Qué son los códigos QR de WeChat?
 

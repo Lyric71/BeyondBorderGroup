@@ -13,7 +13,7 @@ heroImageAlt: "Portrait d'une jeune femme asiatique testant des cosmétiques sur
 
 ## KOC en Chine : la méthode pour bâtir des campagnes qui convertissent
 
-L'e-commerce chinois tourne à plein régime, et la confiance pèse plus que jamais dans la décision d'achat. Les Key Opinion Leaders (KOL) ont longtemps tenu tout l'espace. Place aux Key Opinion Consumers (KOC). Ces acheteurs ordinaires publient des avis sincères et partagent un vécu produit, ce qui ouvre aux marques une voie plus personnelle vers leur audience.
+L'e-commerce chinois tourne à plein régime, et la confiance pèse plus que jamais sur la décision d'achat. Les Key Opinion Leaders (KOL) ont longtemps occupé tout l'espace. Place aux Key Opinion Consumers (KOC). Ces acheteurs ordinaires publient des avis sincères et partagent leur vécu produit, ce qui ouvre aux marques une voie plus personnelle vers leur audience.
 
 Pour une entreprise qui veut surfer sur cette dynamique, l'appui d'une agence digitale ou d'une agence branding en Chine garantit des [campagnes](/fr/se-developper-en-chine/campagnes) stratégiques, percutantes et bien ciblées.
 

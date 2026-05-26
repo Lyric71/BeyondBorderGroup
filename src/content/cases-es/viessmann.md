@@ -27,21 +27,21 @@ Fundada en 1917 y hoy parte de Carrier, Viessmann es uno de los líderes mundial
 
 ## El reto
 
-La calefacción y el agua caliente son una compra muy meditada, atada a la instalación, al servicio y a la confianza en la marca. El comprador chino investiga mucho online antes de decidir, y la categoría premia a los actores que combinan pedagogía de producto con un buen postventa. Viessmann necesitaba una presencia online seria en China, a la altura de su calidad offline, sin canibalizar a distribuidores ni a partners de servicio.
+La calefacción y el agua caliente son una compra muy meditada, atada a la instalación, al servicio y a la confianza en la marca. El comprador chino escarba mucho online antes de decidir, y la categoría premia a los actores que mezclan pedagogía de producto con un buen postventa. Viessmann necesitaba una presencia online seria en China, a la altura de su calidad offline, sin canibalizar a distribuidores ni a partners de servicio.
 
 ## Nuestro enfoque
 
-Beyond Border Group recibió el encargo de construir y operar de extremo a extremo las tiendas de Viessmann en Tmall y JD. Cubrimos:
+Beyond Border Group recibió el encargo de montar y operar de cabo a rabo las tiendas de Viessmann en Tmall y JD. Cubrimos:
 
-- Desarrollo de contenido, desde el diseño de la tienda hasta fichas de producto pensadas para el comportamiento de compra chino
-- Ventas y operación, manteniendo las tiendas activas durante los picos de campaña y el día a día
+- Desarrollo de contenido, del diseño de la tienda a fichas de producto pensadas para cómo compra el chino
+- Ventas y operación, manteniendo las tiendas activas en los picos de campaña y en el día a día
 - Estrategia de marketing en campañas, always-on de medios y grandes hitos de marca
 - Programas de livestream y KOL para dar vida al producto y resolver las preguntas reales del consumidor
 - Gestión social para sostener el relato de marca entre los grandes picos comerciales
-- Atención al cliente para proteger la experiencia en el punto más sensible del recorrido
+- Atención al cliente para proteger la experiencia en el punto más delicado del recorrido
 
-Una parte clave del trabajo fue lograr que el negocio online conviviera bien con el retail offline, los distribuidores y la red de servicio, en vez de competir con ellos.
+Una parte clave del trabajo fue conseguir que el negocio online conviviera bien con el retail offline, los distribuidores y la red de servicio, en vez de competir con ellos.
 
 ## Resultados
 
-Unos años después del lanzamiento, los ingresos online de producto y servicio habían crecido con fuerza. Más importante aún: Viessmann ya contaba con una presencia eCommerce creíble en China, que reforzaba el retail offline, apoyaba a los distribuidores y daba a los proveedores de servicio nuevas razones para implicarse. Los canales digitales se convirtieron en un motor real de crecimiento para la marca.
+Unos años después del lanzamiento, los ingresos online de producto y servicio habían crecido con fuerza. Más importante aún: Viessmann ya tenía una presencia eCommerce creíble en China, que reforzaba el retail offline, apoyaba a los distribuidores y daba a los proveedores de servicio nuevas razones para implicarse. Los canales digitales se convirtieron en un motor real de crecimiento para la marca.

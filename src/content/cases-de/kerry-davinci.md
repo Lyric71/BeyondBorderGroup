@@ -23,18 +23,18 @@ order: 21
 
 ## Die Marke
 
-DaVinci Gourmet, Teil der Kerry Group, liefert Sirupe, Saucen und Smoothie-Basen an Cafés, Bars und Gastronomiebetriebe weltweit. In China brauchte die Marke einen direkten Auftritt zum Handel und zu den Endverbrauchern, der parallel zum Distributorennetz funktioniert.
+DaVinci Gourmet, Teil der Kerry Group, liefert Sirupe, Saucen und Smoothie-Basen an Cafés, Bars und Gastronomiebetriebe weltweit. In China brauchte die Marke einen direkten Auftritt zum Handel und zu den Endkunden, der parallel zum Distributorennetz funktioniert.
 
 ## Die Aufgabe
 
-Als wir den eCommerce-Betrieb in China übernahmen, mussten die Tmall- und JD-Flagships von Grund auf neu gebaut werden. Die Preise liefen kanalübergreifend aus dem Ruder, gefälschte Listings sogen Volumen ab, und Betrug durch Dritte untergrub das Vertrauen. Dazu kam ein uneinheitlicher Markenauftritt, der es professionellen Käufern schwer machte, das richtige Produkt schnell zu finden.
+Als wir den eCommerce-Betrieb in China übernommen haben, mussten die Tmall- und JD-Flagships von Grund auf neu gebaut werden. Die Preise liefen kanalübergreifend aus dem Ruder, gefälschte Listings sogen Volumen ab, und Betrug durch Dritte untergrub das Vertrauen. Dazu ein uneinheitlicher Markenauftritt, der es professionellen Käufern schwer machte, das richtige Produkt rasch zu finden.
 
 ## Unser Vorgehen
 
-Wir übernahmen die End-to-End-Verantwortung für die Tmall- und JD-Shops: Content-Produktion, Vertriebsbetrieb, Marketing, Media-Einkauf, Kundenservice. Die Shops wurden mit einer überarbeiteten visuellen Identität und einer klareren Markenpositionierung neu aufgesetzt, abgestimmt auf die chinesische Gastronomie- und Barista-Community.
+Wir haben die End-to-End-Verantwortung für die Tmall- und JD-Shops übernommen: Content-Produktion, Vertriebsbetrieb, Marketing, Media-Einkauf, Kundenservice. Die Shops wurden mit überarbeiteter visueller Identität und klarerer Markenpositionierung neu aufgesetzt, abgestimmt auf die chinesische Gastronomie- und Barista-Community.
 
-Parallel haben wir die Preise zwischen Tmall und dem Distributorennetz angeglichen, sodass Online- und Offline-Kanäle nicht länger gegeneinander arbeiteten. Eine koordinierte Kampagnen- und Livestream-Kadenz trieb den Probekauf über Sirupe, Saucen und Smoothie-Linien hinweg. Ein eigener Arbeitsstrang räumte Fälschungen und Betrug auf, über Plattform-Eskalation und Listing-Hygiene.
+Parallel haben wir die Preise zwischen Tmall und dem Distributorennetz angeglichen. Online- und Offline-Kanäle arbeiten seither nicht mehr gegeneinander. Eine koordinierte Kampagnen- und Livestream-Kadenz hat den Probekauf über Sirupe, Saucen und Smoothie-Linien getragen. Ein eigener Arbeitsstrang räumte Fälschungen und Betrug auf, über Plattform-Eskalation und saubere Listing-Hygiene.
 
 ## Ergebnisse
 
-Im ersten Jahr legte der Online-Umsatz von DaVinci Gourmet in China deutlich zu. Preisstreitigkeiten über die Kanäle waren binnen drei Monaten ausgeräumt, Verkaufsbetrug binnen sechs Monaten beendet, gefälschte Listings auf Tmall entfernt. Kerry verfügt damit über ein sauberes, kontrollierbares eCommerce-Fundament zum Weiterbauen.
+Im ersten Jahr legte der Online-Umsatz von DaVinci Gourmet in China deutlich zu. Preisstreitigkeiten zwischen den Kanälen waren in drei Monaten ausgeräumt, Verkaufsbetrug in sechs Monaten gestoppt, gefälschte Listings auf Tmall entfernt. Kerry hat damit ein sauberes, steuerbares eCommerce-Fundament zum Weiterbauen.

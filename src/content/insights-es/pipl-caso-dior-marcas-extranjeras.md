@@ -17,9 +17,9 @@ keyTakeaways:
 
 ## Cuando la PIPL muerde: el aviso de Dior a las marcas globales en China
 
-Durante años, la PIPL china (Personal Information Protection Law) se quedaba en los márgenes de los planes que las [marcas globales](/es/entrar-en-china/estrategia-de-entrada) tenían para China. Los equipos legales la señalaban; los de marketing y eCommerce seguían en gran medida con su rutina.
+Durante años, la PIPL china (Personal Information Protection Law) se quedaba en los márgenes de los planes que las [marcas globales](/es/entrar-en-china/estrategia-de-entrada) tenían para China. Los equipos legales la señalaban; los de marketing y eCommerce, en general, seguían con su rutina.
 
-La sanción reciente a Dior en China cambia el escenario. Tras una brecha de datos en su filial de Shanghái, la casa francesa de lujo se ha convertido en la primera marca extranjera sancionada formalmente bajo la PIPL. El mensaje del regulador es claro: la protección de datos ha dejado de ser un asunto teórico.
+La sanción reciente a Dior en China cambia el cuadro. Tras una brecha de datos en su filial de Shanghái, la casa francesa de lujo se ha convertido en la primera marca extranjera sancionada formalmente bajo la PIPL. El mensaje del regulador es claro: la protección de datos ha dejado de ser un asunto sobre el papel.
 
 Si gestiona CRM, eCommerce o medios en China, esto no es solo una noticia legal. Tiene que ver con cómo está diseñado su sistema de datos de cliente.
 

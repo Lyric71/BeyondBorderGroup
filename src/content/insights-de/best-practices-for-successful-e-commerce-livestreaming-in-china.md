@@ -82,9 +82,9 @@ So holen Sie am meisten heraus:
 * Mit Plattformen und Influencern vor dem Event zusammenarbeiten.
 * Exklusive Rabatte und Bundles, die im Wettbewerb herausstechen.
 
-## Inhalte für chinesische Verbraucher zuschneiden
+## Inhalte für chinesische Käufer zuschneiden
 
-Vorlieben der chinesischen Verbraucher zu verstehen, ist Pflicht.
+Die Vorlieben der chinesischen Käufer zu verstehen, ist Pflicht.
 
 ### Produktnutzen über Demos zeigen
 
@@ -108,4 +108,4 @@ Promotionen und Rabatte sind Schlüsseltreiber im Livestream-Umsatz. So heben Si
 
 ## Fazit
 
-Livestream-eCommerce verändert in China, wie Marken Publikum erreichen. Es ist ein lebendiger Weg, Umsatz zu heben, Zuschauer zu binden und Beziehungen aufzubauen. Mit der richtigen Plattformwahl, verlässlichen Influencern, einbindendem Content und datengestützten Entscheidungen schöpfen Unternehmen das Potenzial dieses Werkzeugs aus. Die Zusammenarbeit mit Branding-, Medien- und Marketing-Agenturen bringt Kampagnen, die chinesische Verbraucher tatsächlich treffen.
+Livestream-eCommerce verändert in China, wie Marken ihr Publikum erreichen. Es ist ein lebendiger Weg, Umsatz zu heben, Zuschauer zu binden und Beziehungen aufzubauen. Mit der richtigen Plattformwahl, verlässlichen Influencern, einbindendem Content und datengestützten Entscheidungen schöpfen Unternehmen das Potenzial dieses Werkzeugs aus. Die Zusammenarbeit mit Branding-, Medien- und Marketing-Agenturen bringt Kampagnen, die chinesische Käufer tatsächlich treffen.

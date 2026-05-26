@@ -18,7 +18,7 @@ Un Key Opinion Leader ([KOL](/es/crecer-en-china/influencia-y-kol)) en China es 
 
 ### Por qué son imprescindibles para las marcas
 
-La influencia de un KOL va mucho más allá de la mera visibilidad. En China, el consumidor escucha mucho mejor la recomendación de una figura digital cercana que la publicidad tradicional. Esa preferencia convierte al KOL en un socio clave para el crecimiento de marca: construye confianza, genera vínculo con su audiencia y convierte seguidores en clientes fieles.
+La influencia de un KOL va mucho más allá de la simple visibilidad. En China, el consumidor escucha mucho mejor la recomendación de una figura digital cercana que la publicidad tradicional. Esa preferencia convierte al KOL en un socio clave para el crecimiento de marca: construye confianza, genera vínculo con su audiencia y convierte seguidores en clientes fieles.
 
 ## Plataformas para llegar a los KOL en China
 

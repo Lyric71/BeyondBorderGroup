@@ -22,7 +22,7 @@ order: 2
 
 ## La marque
 
-ROC Skincare est une marque de soin française bâtie sur des produits scientifiquement prouvés, testés par des dermatologues, qui ciblent plusieurs problématiques cutanées par des actifs tels que le rétinol, la vitamine C ou l'acide hyaluronique. La marque s'est imposée en référence de l'anti-âge et propose une gamme cruelty-free.
+ROC Skincare est une marque de soin française bâtie sur des produits cliniquement prouvés, testés par des dermatologues, qui traitent plusieurs problématiques cutanées par des actifs comme le rétinol, la vitamine C ou l'acide hyaluronique. La marque s'est imposée en référence de l'anti-âge avec une gamme cruelty-free.
 
 ## Le défi
 

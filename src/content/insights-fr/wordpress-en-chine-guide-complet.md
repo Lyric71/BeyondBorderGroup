@@ -38,7 +38,7 @@ Construire un site WordPress en Chine ne ressemble en rien à un projet europée
 
 ### Lenteurs de chargement
 
-La Grande Muraille numérique filtre tout le trafic entrant. À l'arrivée : des temps de chargement qui s'allongent pour les sites hébergés à l'étranger. Sur un site e-commerce, ces secondes en plus se traduisent en paniers abandonnés.
+La Grande Muraille numérique filtre tout le trafic entrant. Au bout du compte : des temps de chargement qui s'allongent pour les sites hébergés à l'étranger. Sur un site e-commerce, ces secondes en plus se traduisent en paniers abandonnés.
 
 ### Restrictions d'hébergement
 
@@ -50,7 +50,7 @@ Beaucoup de thèmes et de plugins WordPress intègrent Google Analytics, le Face
 
 ### Compatibilité des thèmes et plugins
 
-WordPress propose des milliers de thèmes et de plugins. Peu sont calibrés pour le marché chinois. Beaucoup s'appuient sur des CDN inaccessibles ou très lents en Chine. À l'arrivée, un site qui charge mal, voire partiellement.
+WordPress propose des milliers de thèmes et de plugins. Peu sont calibrés pour le marché chinois. Beaucoup s'appuient sur des CDN inaccessibles ou très lents en Chine. Au bout du compte, un site qui charge mal, voire partiellement.
 
 ## Bâtir un WordPress optimisé pour la Chine
 

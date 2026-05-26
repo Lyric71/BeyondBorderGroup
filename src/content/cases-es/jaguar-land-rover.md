@@ -26,12 +26,12 @@ Jaguar Land Rover combina lujo, prestaciones y tecnología innovadora en sus veh
 
 ## El reto
 
-Conectar con públicos más jóvenes mediante contenidos sociales hechos a medida, capaces de tender un puente entre Land Rover, Jaguar y el consumidor chino, y de construir un vínculo duradero con la próxima generación de compradores de lujo.
+Conectar con públicos más jóvenes con contenidos sociales hechos a medida, capaces de tender un puente entre Land Rover, Jaguar y el consumidor chino, y de construir un vínculo de largo recorrido con la próxima generación de compradores de lujo.
 
 ## Nuestro enfoque
 
-El programa se apoyó en tres pilares. Los contenidos icónicos llevaron la herencia y el lenguaje de diseño de Jaguar Land Rover a la vida del feed, con vídeos cortos y piezas de imagen pensadas para el gusto estético del público joven. Los relatos de marca a medida tradujeron innovación, aventura y lujo a narrativas que conectan con el consumidor chino joven, distribuidas como posts, minidocumentales y experiencias inmersivas en plataformas sociales. Las campañas de contenido generado por usuario invitaron a los fans a compartir sus propias experiencias con los vehículos de Jaguar Land Rover, con hashtags, retos y concursos que premiaban la creatividad y la autenticidad, convirtiendo al entusiasta en prescriptor.
+El programa se apoyó en tres pilares. Los contenidos icónicos llevaron la herencia y el lenguaje de diseño de Jaguar Land Rover al feed, con vídeos cortos y piezas de imagen pensadas para el gusto estético del público joven. Los relatos de marca a medida tradujeron innovación, aventura y lujo a narrativas que conectan con el joven consumidor chino, distribuidas como posts, minidocumentales y experiencias inmersivas en plataformas sociales. Las campañas de contenido generado por usuario invitaron a los fans a compartir sus propias experiencias con los vehículos de Jaguar Land Rover, con hashtags, retos y concursos que premiaban la creatividad y la autenticidad, convirtiendo al entusiasta en prescriptor.
 
 ## Resultados
 
-La estrategia trajo una subida importante del engagement y del crecimiento de seguidores en redes sociales, con un repunte del contenido generado por usuario que dejaba ver experiencias positivas con la marca. La visibilidad creció en todas las plataformas y una comunidad fiel de jóvenes entusiastas tomó forma alrededor de Jaguar Land Rover en China.
+La estrategia trajo una subida fuerte del engagement y del crecimiento de seguidores en redes sociales, con un repunte del contenido generado por usuario que dejaba ver experiencias positivas con la marca. La visibilidad creció en todas las plataformas y una comunidad fiel de jóvenes entusiastas tomó forma alrededor de Jaguar Land Rover en China.

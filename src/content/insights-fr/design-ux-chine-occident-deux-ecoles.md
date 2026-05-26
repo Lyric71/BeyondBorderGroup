@@ -11,9 +11,9 @@ heroImageAlt: "Composition digitale illustrant l'UX et la technologie"
 
 ## Design UX en Chine et en Occident : deux écoles, deux logiques
 
-Le web est aussi divers que ses utilisateurs. Nulle part le fossé n'est aussi net qu'entre l'UX des sites chinois et celle des sites occidentaux. Culture, langue, technologie : les écarts plongent leurs racines en profondeur. Pour la marque qui vise l'international, lire ces partis pris est un préalable. Voilà ce qui ouvre la voie à des plateformes qui parlent réellement à l'utilisateur local.
+Le web est aussi divers que ses utilisateurs. Nulle part le fossé n'est aussi net qu'entre l'UX des sites chinois et celle des sites occidentaux. Culture, langue, technologie : les écarts plongent leurs racines en profondeur. Pour la marque qui vise l'international, lire ces partis pris est un préalable. C'est ce qui ouvre la voie à des plateformes qui parlent vraiment à l'utilisateur local.
 
-Pour quiconque s'attaque au e-commerce chinois, ces écarts pèsent stratégiquement. Que la marque mise sur le e-commerce Douyin ou navigue le cross-border, l'ajustement aux usages locaux trace la frontière entre la traction et l'enlisement.
+Pour qui s'attaque au e-commerce chinois, ces écarts pèsent stratégiquement. Que la marque mise sur le e-commerce Douyin ou navigue le cross-border, l'ajustement aux usages locaux trace la frontière entre la traction et l'enlisement.
 
 ### Deux internets, deux trajectoires
 

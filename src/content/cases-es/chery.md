@@ -23,18 +23,18 @@ order: 5
 
 ## La marca
 
-Chery Automotive es uno de los fabricantes chinos más grandes y con mayor proyección internacional, con una base creciente de fans en mercados de todo el mundo. La marca quería dejar atrás el marketing de difusión y dar a su comunidad un papel creativo, visible, dentro de la propia marca.
+Chery Automotive es uno de los fabricantes chinos más grandes y con mayor proyección internacional, con una base de fans que crece en mercados de todo el mundo. La marca quería dejar atrás el marketing de difusión y dar a su comunidad un papel creativo, visible, dentro de la propia marca.
 
 ## El reto
 
-Asumimos una campaña global de redes sociales para Chery Automotive bajo el lema "With Chery With Love". El encargo: invitar a los fans a colaborar en el diseño de regalos y merchandising únicos, dándoles cauce creativo y la posibilidad de cobrar ingresos por las ventas de los productos resultantes. La dificultad consistía en que la cocreación se sintiera real, no un guiño, en varios mercados y varios idiomas a la vez.
+Asumimos una campaña global de redes sociales para Chery Automotive bajo el lema "With Chery With Love". El encargo: invitar a los fans a meter mano en el diseño de regalos y merchandising únicos, dándoles cauce creativo y la posibilidad de cobrar ingresos por las ventas de los productos resultantes. La parte difícil era que la cocreación se sintiera real, no un guiño, en varios mercados y varios idiomas a la vez.
 
 ## Nuestro enfoque
 
-Empezamos con una investigación de mercado a fondo para identificar y dirigirnos al público correcto, asegurándonos de que la campaña llegara al entusiasta con más probabilidad de participar. Analizamos datos de plataforma para elegir los temas y temáticas de proyecto que iban a resonar con ese perfil. La estrategia se ajustó a los puntos fuertes de Facebook e Instagram, con un planteamiento propio para cada uno.
+Arrancamos con una investigación de mercado a fondo para identificar y apuntar al público correcto, asegurándonos de que la campaña llegara al entusiasta con más papeletas para participar. Analizamos datos de plataforma para escoger los temas y las temáticas de proyecto que iban a calar en ese perfil. La estrategia se ajustó a los puntos fuertes de Facebook e Instagram, con un planteamiento propio para cada uno.
 
-Diseñamos una estructura de recompensas que combinaba incentivos económicos con experiencias exclusivas, para que participar resultara atractivo en lo material y gratificante en lo emocional. Esa combinación, un reto creativo de verdad y una recompensa de verdad, es lo que mantuvo el flujo de propuestas semana tras semana.
+Diseñamos una estructura de recompensas que mezclaba incentivos económicos con experiencias exclusivas, para que participar resultara atractivo en lo material y gratificante en lo emocional. Esa mezcla, un reto creativo de verdad y una recompensa de verdad, es lo que mantuvo el flujo de propuestas semana tras semana.
 
 ## Resultados
 
-La campaña alcanzó dos millones de impresiones semanales y atrajo más de cien diseños de cocreación de los participantes cada semana. El nivel de engagement y de aportación creativa superó los objetivos iniciales y mostró, en volumen, la fuerza del vínculo entre Chery Automotive y su comunidad.
+La campaña llegó a dos millones de impresiones semanales y atrajo más de cien diseños de cocreación de los participantes cada semana. El nivel de engagement y de aportación creativa pasó por encima de los objetivos iniciales y enseñó, en volumen, la fuerza del vínculo entre Chery Automotive y su comunidad.

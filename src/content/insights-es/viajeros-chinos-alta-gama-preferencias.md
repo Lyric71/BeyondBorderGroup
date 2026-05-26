@@ -15,9 +15,9 @@ Entender al viajero chino de alta gama es básico para cualquier marca de turism
 
 ## Quiénes son: el ascenso del viajero chino de alto poder adquisitivo
 
-La urbanización acelerada y la expansión económica de China han dado forma a una nueva clase de viajero. El aumento de la renta disponible empuja a millones de consumidores a buscar experiencias premium, dentro y fuera del país. China se ha situado como pieza clave del lujo turístico global, y las previsiones apuntan a un crecimiento sostenido.
+La urbanización acelerada y la expansión económica de China han dado forma a una nueva clase de viajero. El alza de la renta disponible empuja a millones de consumidores a buscar experiencias premium, dentro y fuera del país. China se ha colocado como pieza clave del lujo turístico global, y las previsiones apuntan a un crecimiento sostenido.
 
-Los viajeros chinos de alto poder adquisitivo suelen venir de los grandes núcleos urbanos: Pekín, Shanghái, Guangzhou. Están bien formados, son nativos digitales y exigentes a la hora de elegir. Valoran la exclusividad, el confort y las experiencias únicas que reflejan su estatus social y sus gustos personales.
+Los viajeros chinos de alto poder adquisitivo suelen venir de los grandes núcleos urbanos: Pekín, Shanghái, Guangzhou. Están bien formados, son nativos digitales y exigentes a la hora de escoger. Valoran la exclusividad, el confort y las experiencias únicas que reflejan su estatus social y sus gustos personales.
 
 ## Motivaciones: negocio y placer en una misma agenda
 

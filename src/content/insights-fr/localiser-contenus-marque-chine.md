@@ -11,7 +11,7 @@ heroImageAlt: "Drapeau chinois"
 
 ## Localiser ses contenus de marque pour la Chine
 
-La Chine compte 1,4 milliard de consommateurs parmi les plus dynamiques et les plus exigeants au monde. Y entrer ouvre des perspectives spectaculaires et soulève des défis sans équivalent. La traduction ne suffit pas. Les contenus de marque doivent être [localisés](/fr/entrer-en-chine/marque-et-localisation) en profondeur, jusqu'à se fondre dans les codes culturels, linguistiques et régionaux de l'audience.
+La Chine compte 1,4 milliard de consommateurs parmi les plus dynamiques et les plus exigeants au monde. Y entrer ouvre des perspectives spectaculaires et pose des défis sans équivalent. La traduction ne suffit pas. Les contenus de marque doivent être [localisés](/fr/entrer-en-chine/marque-et-localisation) en profondeur, jusqu'à se fondre dans les codes culturels, linguistiques et régionaux de l'audience.
 
 L'article qui suit passe en revue les méthodes éprouvées : marketing digital, stratégie e-commerce, communication ajustée. Pour une marque installée à l'international comme pour un nouvel entrant, le recours à une agence marketing en Chine reste l'un des moyens les plus sûrs de traverser la complexité du marché digital local et d'y poser une présence qui pèse.
 

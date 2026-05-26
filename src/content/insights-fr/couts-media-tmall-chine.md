@@ -14,7 +14,7 @@ heroImageAlt: "Tmall, coûts média et investissement de marque en Chine"
 
 [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier) ouvre l'accès à plus de 500 millions d'utilisateurs actifs mensuels et reste la première place de marché B2C en Chine. Là où Taobao chasse l'acheteur sensible au prix, Tmall s'est imposé en vitrine du premium et de l'import. Terrain naturel des marques positionnées sur le haut du marché chinois.
 
-Investir sur [Tmall Media](/fr/se-developper-en-chine/medias), c'est mobiliser un arsenal complet : ciblage, contenu, interaction sociale, le tout calibré pour le consommateur local. Pour rentabiliser la dépense, le réflexe s'est installé : s'adjoindre une agence marketing spécialisée, capable d'affiner la campagne et de coller au terrain. Le ticket d'entrée reste élevé. Une localisation soignée le transforme en moteur de croissance.
+Investir sur [Tmall Media](/fr/se-developper-en-chine/medias), c'est mobiliser un arsenal complet : ciblage, contenu, interaction sociale, le tout calibré pour le consommateur local. Pour rentabiliser la dépense, le réflexe s'est installé : s'adjoindre une agence marketing spécialisée, capable d'affiner la campagne et de coller au terrain. Le ticket d'entrée reste salé. Une localisation soignée le transforme en moteur de croissance.
 
 ## Frais d'ouverture : caution et redevance annuelle
 

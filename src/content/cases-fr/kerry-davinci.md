@@ -27,7 +27,7 @@ DaVinci Gourmet, filiale du groupe Kerry, fournit sirops, sauces et bases smooth
 
 ## Le défi
 
-À notre prise en main de l'opération eCommerce chinoise, les flagships Tmall et JD appelaient une refonte complète. Les prix s'écartaient d'un canal à l'autre, les annonces de contrefaçon ponctionnaient du volume, la fraude des vendeurs tiers érodait la confiance. À quoi s'ajoutait une expression de marque hétérogène, qui troublait la lecture des acheteurs professionnels en quête du bon produit.
+À notre arrivée sur l'opération eCommerce chinoise, les flagships Tmall et JD demandaient une refonte complète. Les prix divergeaient d'un canal à l'autre, les annonces de contrefaçon ponctionnaient du volume, la fraude des vendeurs tiers entamait la confiance. S'y ajoutait une expression de marque hétérogène, qui brouillait la lecture des acheteurs professionnels en quête du bon produit.
 
 ## Notre approche
 

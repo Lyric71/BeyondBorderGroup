@@ -12,7 +12,7 @@ heroImageAlt: "Visuel de couverture pour l'article sur le marketing KOL"
 
 ## Les KOL, colonne vertébrale du marketing digital chinois
 
-Les Key Opinion Leaders structurent le [marketing](/fr/se-developper-en-chine/campagnes) digital chinois. Aucune stratégie de marque sérieuse ne s'en passe. Douyin, Xiaohongshu et WeChat captent l'essentiel de l'engagement consommateur et offrent aux annonceurs un levier direct sur la confiance et le chiffre d'affaires. Acteurs domestiques comme groupes internationaux passent par eux, surtout quand une agence digitale en Chine, une agence de branding ou une agence [médias](/fr/se-developper-en-chine/medias) sociaux décode le terrain à leur place.
+Les Key Opinion Leaders structurent le [marketing](/fr/se-developper-en-chine/campagnes) digital chinois. Aucune stratégie de marque sérieuse ne s'en passe. Douyin, Xiaohongshu et WeChat captent l'essentiel de l'engagement consommateur et donnent aux annonceurs un levier direct sur la confiance et le chiffre d'affaires. Acteurs domestiques comme groupes internationaux passent par eux, surtout quand une agence digitale en Chine, une agence de branding ou une agence [médias](/fr/se-developper-en-chine/medias) sociaux décode le terrain à leur place.
 
 ## À quoi sert un KOL sur le marché chinois
 

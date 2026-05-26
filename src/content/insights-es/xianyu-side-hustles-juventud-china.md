@@ -12,7 +12,7 @@ heroImageAlt: "Fuente: China Daily"
 
 ## Cómo Xianyu transforma las gangas en side hustles para los jóvenes emprendedores chinos
 
-Xianyu, la plataforma de Alibaba conocida por su enorme catálogo de productos de segunda mano, está mutando para convertirse en un hub de jóvenes emprendedores que buscan un segundo ingreso. Como mayor plataforma C2C de segunda mano de China, Xianyu deja de ser solo un destino de gangas para ofrecer un espacio donde el usuario monetiza aficiones y habilidades. Este giro abre nuevas vías en el [ecosistema de eCommerce](https://beyondbordergroup.com/ecommerce-in-china/) chino, sobre todo entre los consumidores jóvenes con presupuesto ajustado. Encaja con la corriente más amplia del social commerce en China, donde la juventud se apoya en [plataformas](/es/conocer-china/plataformas) digitales para generar ingresos a partir de lo que sabe hacer.
+Xianyu, la plataforma de Alibaba conocida por su enorme catálogo de productos de segunda mano, está mutando hasta convertirse en un hub de jóvenes emprendedores que buscan un segundo ingreso. Como mayor plataforma C2C de segunda mano de China, Xianyu deja de ser solo un destino de gangas y abre un espacio donde el usuario monetiza aficiones y habilidades. Este giro abre nuevas vías en el [ecosistema de eCommerce](https://beyondbordergroup.com/ecommerce-in-china/) chino, sobre todo entre los consumidores jóvenes con presupuesto ajustado. Encaja con la corriente más amplia del social commerce en China, donde la juventud tira de [plataformas](/es/conocer-china/plataformas) digitales para generar ingresos a partir de lo que sabe hacer.
 
 ## El auge de los side hustles en Xianyu
 

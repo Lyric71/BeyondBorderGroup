@@ -22,16 +22,16 @@ order: 16
 
 ## Die Marke
 
-Jaguar Land Rover verbindet Luxus, Performance und innovative Technologie in seinen Fahrzeugen. Der Konzern investiert massiv in Nachhaltigkeit und vorausschauendes Design und bleibt ein Massstab in der Automobilindustrie.
+Jaguar Land Rover verbindet Luxus, Performance und innovative Technologie. Der Konzern investiert massiv in Nachhaltigkeit und vorausschauendes Design und bleibt damit ein Massstab der Automobilindustrie.
 
 ## Die Aufgabe
 
-Jüngere Zielgruppen mit massgeschneiderten Social-Inhalten erreichen, die die Distanz zwischen Land Rover, Jaguar und chinesischen Verbrauchern schliessen und eine dauerhafte Verbindung zur nächsten Generation der Luxuskäufer aufbauen.
+Jüngere Zielgruppen mit massgeschneiderten Social-Inhalten erreichen. Die Distanz zwischen Land Rover, Jaguar und chinesischen Käufern schliessen und eine dauerhafte Verbindung zur nächsten Generation der Luxuskäufer aufbauen.
 
 ## Unser Vorgehen
 
-Das Programm stützte sich auf drei Säulen. Ikonische Inhalte brachten das Erbe und die Designsprache von Jaguar Land Rover in visuell starken Kurzvideos und Bildern zum Leben, abgestimmt auf die ästhetischen Vorlieben jüngerer Zielgruppen. Massgeschneiderte Markengeschichten übersetzten Innovation, Abenteuer und Luxus in Erzählungen, die bei jungen chinesischen Verbrauchern Anklang finden, als Posts, Mini-Dokumentationen und immersive Erlebnisse über die Plattformen verteilt. UGC-Kampagnen luden Fans ein, ihre eigenen Erfahrungen mit Jaguar-Land-Rover-Fahrzeugen zu teilen, über Hashtags, Challenges und Wettbewerbe, die Kreativität und Authentizität belohnten und Enthusiasten zu Markenbotschaftern machten.
+Das Programm stützt sich auf drei Säulen. Ikonische Inhalte bringen das Erbe und die Designsprache von Jaguar Land Rover in starken Kurzvideos und Bildern zur Wirkung, abgestimmt auf die Ästhetik jüngerer Zielgruppen. Massgeschneiderte Markengeschichten übersetzen Innovation, Abenteuer und Luxus in Erzählungen, die bei jungen chinesischen Käufern ankommen, als Posts, Mini-Dokumentationen und immersive Erlebnisse über die Plattformen verteilt. UGC-Kampagnen laden Fans ein, ihre eigenen Erfahrungen mit Jaguar-Land-Rover-Fahrzeugen zu teilen, über Hashtags, Challenges und Wettbewerbe, die Kreativität und Authentizität belohnen und Enthusiasten zu Markenbotschaftern machen.
 
 ## Ergebnisse
 
-Die Strategie brachte einen deutlichen Sprung bei Engagement und Follower-Wachstum, mit einer Welle von User-Generated Content, der positive Erfahrungen mit der Marke zeigte. Die Sichtbarkeit stieg auf allen Plattformen, und eine treue Community junger Enthusiasten formierte sich rund um Jaguar Land Rover in China.
+Die Strategie brachte einen deutlichen Sprung bei Engagement und Follower-Wachstum, dazu eine Welle nutzergenerierter Inhalte, die positive Erfahrungen mit der Marke gezeigt haben. Die Sichtbarkeit stieg auf allen Plattformen, und um Jaguar Land Rover in China hat sich eine treue Community junger Enthusiasten gebildet.

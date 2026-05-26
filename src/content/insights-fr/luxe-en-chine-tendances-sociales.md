@@ -16,7 +16,7 @@ Les cinquante premières villes captent autour de 70 % des ventes du luxe en Chi
 
 ## L'influence des réseaux sociaux
 
-Les réseaux sociaux pèsent lourd dans les décisions d'achat des consommateurs chinois du luxe. Avec un taux de pénétration sociale de 67 %, [WeChat](/fr/se-developper-en-chine/commerce-social), Weibo et Xiaohongshu s'imposent dans la visibilité et l'engagement client. Plus de 80 % des consommateurs chinois se renseignent en ligne avant d'acheter en boutique. La présence numérique n'a plus rien d'un complément. Elle relève du préalable.
+Les réseaux sociaux pèsent lourd dans les décisions d'achat des consommateurs chinois du luxe. Avec un taux de pénétration sociale de 67 %, [WeChat](/fr/se-developper-en-chine/commerce-social), Weibo et Xiaohongshu tiennent la visibilité et l'engagement client. Plus de 80 % des consommateurs chinois se renseignent en ligne avant d'acheter en boutique. La présence numérique n'est plus un complément. C'est le préalable.
 
 ## Toucher ses clients via les réseaux sociaux
 

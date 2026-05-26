@@ -20,16 +20,16 @@ order: 15
 
 ## La marca
 
-Exlantix es una nueva línea premium dentro del portfolio Exceed del grupo Chery Automotive. La distingue la integración de tecnología avanzada y lujo, con la voluntad de redefinir la esencia de la conducción desde una mirada global.
+Exlantix es una nueva línea premium dentro del portfolio Exceed del grupo Chery Automotive. La distingue la mezcla de tecnología avanzada y lujo, con la voluntad de redefinir la esencia de la conducción desde una mirada global.
 
 ## El reto
 
-Se nos pidió crear una identidad visual diferencial para Exlantix que se alejara de las influencias del diseño chino tradicional y respondiera a una filosofía estética de alcance universal. La meta era captar el carácter lujoso de la marca y su ambición internacional, con una lectura coherente en cada mercado.
+Se nos pidió crear una identidad visual diferencial para Exlantix que se saliera de las influencias del diseño chino tradicional y respondiera a una filosofía estética de alcance universal. La meta era captar el carácter lujoso de la marca y su ambición internacional, con una lectura coherente en cada mercado.
 
 ## Nuestro enfoque
 
-El trabajo cubrió todo el sistema de identidad: del emblema a la tipografía, las paletas cromáticas y la imaginería. Cada pieza se desarrolló para hacer eco a la apuesta de Exlantix por la calidad y a su espíritu pionero en el segmento de la automoción de lujo. Aplicada con disciplina en cada punto de contacto, la identidad sostiene una presencia de marca coherente y memorable allí donde aparece.
+El trabajo cubrió todo el sistema de identidad: del emblema a la tipografía, las paletas cromáticas y la imaginería. Cada pieza se trabajó para hacer eco a la apuesta de Exlantix por la calidad y a su espíritu pionero en el segmento de la automoción de lujo. Aplicada con disciplina en cada punto de contacto, la identidad sostiene una presencia de marca coherente y memorable allí donde aparece.
 
 ## Resultados
 
-El resultado es una identidad visual coherente que recoge la vocación innovadora y el carácter premium de Exlantix. Fluye a través de todas las interacciones de marca, genera una experiencia unitaria y deja sentadas las bases para el lanzamiento internacional.
+El resultado es una identidad visual coherente que recoge la vocación innovadora y el carácter premium de Exlantix. Fluye por todas las interacciones de marca, genera una experiencia unitaria y deja sentadas las bases para el lanzamiento internacional.

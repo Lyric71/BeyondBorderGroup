@@ -72,7 +72,7 @@ const profileOptions = [
 
 <Layout
   title="Sprechen Sie mit unseren China-Teams in Shanghai, Hongkong und Paris | Beyond Border Group"
-  description="Stellen Sie uns Ihr China-Vorhaben vor. Unsere Teams in Shanghai, Hongkong und Paris melden sich innerhalb eines Arbeitstages und kommen mit konkreten Überlegungen auf Sie zu."
+  description="Schildern Sie uns Ihr China-Vorhaben. Die Teams in Shanghai, Hongkong und Paris melden sich binnen eines Arbeitstages mit konkreten Überlegungen zurück."
 >
   <section class="contact">
     <div class="contact__bg" aria-hidden="true">
@@ -92,11 +92,11 @@ const profileOptions = [
     <div class="container">
       <header class="contact__header">
         <span class="eyebrow eyebrow--on-dark">Kontakt</span>
-        <h1 class="contact__title">Wir freuen uns, mit Ihnen über Ihr China-Vorhaben zu sprechen.</h1>
+        <h1 class="contact__title">Reden wir über Ihr China-Vorhaben.</h1>
         <p class="lead contact__lead">
-          Unsere Teams in Shanghai, Hongkong und Paris melden sich bei Ihnen innerhalb eines Arbeitstages, Montag bis Freitag.
-          Eine erste, kurze Nachricht genügt vollkommen: Wir kommen mit gezielten Rückfragen und, sobald möglich,
-          mit konkreten Ansätzen für Ihren Markteintritt oder Ihr Wachstum in China auf Sie zu.
+          Die Teams in Shanghai, Hongkong und Paris melden sich binnen eines Arbeitstages bei Ihnen, Montag bis Freitag.
+          Eine kurze Nachricht reicht zum Anfangen. Wir kommen mit gezielten Rückfragen zurück und, sobald wir
+          genug wissen, mit konkreten Ansätzen für Ihren Markteintritt oder Ihr Wachstum in China.
         </p>
       </header>
 
@@ -104,7 +104,7 @@ const profileOptions = [
 
         {/* ---------- White form card, full width ---------- */}
         <div class="contact__form-card">
-          <h2 class="contact__form-title">Erzählen Sie uns kurz von Ihrem Vorhaben</h2>
+          <h2 class="contact__form-title">Schildern Sie uns kurz Ihr Vorhaben</h2>
 
           <form class="form" id="contact-form" novalidate>
             <div class="form__row form__row--2">
@@ -135,8 +135,8 @@ const profileOptions = [
             </div>
 
             <fieldset class="field field--group">
-              <legend class="field__label">Leistungen, die Sie interessieren</legend>
-              <p class="field__hint">Wählen Sie alles aus, was für Ihr Vorhaben relevant erscheint, wir vertiefen die Details gemeinsam.</p>
+              <legend class="field__label">Welche Leistungen interessieren Sie?</legend>
+              <p class="field__hint">Kreuzen Sie alles an, was für Ihr Vorhaben in Frage kommt. Die Details schauen wir uns im Gespräch zusammen an.</p>
               <div class="services">
                 {serviceGroups.map((group) => (
                   <div class="services__group">
@@ -159,7 +159,7 @@ const profileOptions = [
 
             <div class="form__row form__row--2">
               <fieldset class="field field--group">
-                <legend class="field__label">Budgetrahmen, den Sie zu diesem Zeitpunkt im Blick haben</legend>
+                <legend class="field__label">Budgetrahmen, den Sie derzeit im Kopf haben</legend>
                 <div class="choices">
                   {budgetOptions.map((opt) => {
                     const id = `budget-${opt.value.replace(/[^a-zA-Z0-9]+/g, '-')}`;
@@ -174,7 +174,7 @@ const profileOptions = [
               </fieldset>
 
               <fieldset class="field field--group">
-                <legend class="field__label">Ein paar Worte zu Ihrem Unternehmen</legend>
+                <legend class="field__label">Ihr Profil</legend>
                 <div class="choices">
                   {profileOptions.map((opt) => {
                     const id = `profile-${opt.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
@@ -193,7 +193,7 @@ const profileOptions = [
                       type="text"
                       id="profileOther"
                       name="profileOther"
-                      placeholder="Beschreiben Sie kurz Ihre Tätigkeit"
+                      placeholder="Kurz Ihre Tätigkeit beschreiben"
                       autocomplete="off"
                     />
                   </div>
@@ -202,13 +202,13 @@ const profileOptions = [
             </div>
 
             <div class="field">
-              <label class="field__label" for="message">Ein paar Zeilen zu Ihrem Vorhaben <span aria-hidden="true">*</span></label>
+              <label class="field__label" for="message">Worum geht es? <span aria-hidden="true">*</span></label>
               <textarea class="field__input field__input--textarea" id="message" name="message" rows="5" required></textarea>
             </div>
 
             <div class="field field--captcha">
               <label class="field__label" for="captcha">
-                Kleine Prüfung, um Bots fernzuhalten: Was ergibt <span id="captchaA">?</span> + <span id="captchaB">?</span>?
+                Kurze Prüfung gegen Bots: Wie viel ergibt <span id="captchaA">?</span> + <span id="captchaB">?</span>?
                 <span aria-hidden="true">*</span>
               </label>
               <input
@@ -234,7 +234,7 @@ const profileOptions = [
                 Nachricht senden
               </button>
               <p class="form__note">
-                Mit dem Absenden willigen Sie ein, dass wir Sie zu Ihrer Anfrage kontaktieren dürfen. Ihre Angaben bleiben ausschließlich bei unserem Team.
+                Mit dem Absenden geben Sie uns das Einverständnis, Sie zu Ihrer Anfrage zu kontaktieren. Ihre Angaben bleiben ausschliesslich bei unserem Team.
               </p>
             </div>
 
@@ -253,7 +253,7 @@ const profileOptions = [
 
           <div class="contact-block">
             <span class="eyebrow eyebrow--on-dark">Antwortzeit</span>
-            <p class="contact-block__text">Innerhalb von 24 Geschäftsstunden, Montag bis Freitag, chinesische Zeitzone.</p>
+            <p class="contact-block__text">Binnen 24 Geschäftsstunden, Montag bis Freitag, chinesische Zeitzone.</p>
           </div>
 
           <div class="contact-block">
@@ -338,14 +338,14 @@ const profileOptions = [
       const captchaNum = parseInt(payload.captcha, 10);
       const expectedNum = parseInt(payload.captchaExpected, 10);
       if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
-        status.textContent = "Das Ergebnis stimmt leider nicht. Die Zahlen wurden gerade aktualisiert, bitte versuchen Sie es erneut.";
+        status.textContent = "Das Ergebnis passt leider nicht. Die Zahlen wurden gerade neu gewürfelt, bitte noch einmal.";
         status.classList.add('form__status--error');
         rollCaptcha();
         return;
       }
 
       if (!payload.name || !payload.email || !payload.message) {
-        status.textContent = "Bitte ergänzen Sie Ihren Namen, Ihre E-Mail-Adresse und eine kurze Nachricht, bevor Sie absenden.";
+        status.textContent = "Bitte tragen Sie Name, E-Mail-Adresse und eine kurze Nachricht ein, bevor Sie absenden.";
         status.classList.add('form__status--error');
         return;
       }
@@ -360,16 +360,16 @@ const profileOptions = [
           body: JSON.stringify(payload),
         });
         const body = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(body.error || "Der Versand ist leider nicht durchgegangen. Bitte versuchen Sie es in einem Moment erneut. Sollte es weiterhin nicht klappen, schreiben Sie uns gerne direkt an hello@beyondbordergroup.com.");
+        if (!res.ok) throw new Error(body.error || "Der Versand ist nicht durchgegangen. Probieren Sie es bitte gleich noch einmal. Klappt es weiterhin nicht, schreiben Sie uns direkt an hello@beyondbordergroup.com.");
 
         form.reset();
         rollCaptcha();
-        status.textContent = 'Nachricht angekommen. Wir melden uns kurzfristig bei Ihnen. Weiterleitung …';
+        status.textContent = 'Nachricht ist da. Wir melden uns kurzfristig bei Ihnen. Sie werden weitergeleitet …';
         status.classList.add('form__status--success');
         window.location.assign('/de/danke');
         return;
       } catch (err) {
-        status.textContent = err && err.message ? err.message : "Der Versand ist leider nicht durchgegangen. Bitte versuchen Sie es in einem Moment erneut. Sollte es weiterhin nicht klappen, schreiben Sie uns gerne direkt an hello@beyondbordergroup.com.";
+        status.textContent = err && err.message ? err.message : "Der Versand ist nicht durchgegangen. Probieren Sie es bitte gleich noch einmal. Klappt es weiterhin nicht, schreiben Sie uns direkt an hello@beyondbordergroup.com.";
         status.classList.add('form__status--error');
       } finally {
         submit.disabled = false;

@@ -23,7 +23,7 @@ Blue est le premier assureur vie 100 % digital de Hong Kong. Sa promesse : lever
 
 ## Le défi
 
-Lancer le premier assureur vie digital sur un marché tenu par des acteurs historiques et leurs réseaux d'agents, c'est résoudre d'un même geste un problème de produit et un problème de confiance. Blue devait afficher une présence en ligne assez crédible pour traiter d'assurance vie, assez simple pour permettre une souscription rapide, et assez visible pour bâtir une audience à partir de zéro. En chinois et en anglais.
+Lancer le premier assureur vie digital sur un marché tenu par des acteurs historiques et leurs réseaux d'agents, c'est régler en même temps un problème de produit et un problème de confiance. Il fallait une présence en ligne assez crédible pour parler d'assurance vie, assez simple pour permettre une souscription rapide, assez visible pour bâtir une audience à partir de zéro. En chinois et en anglais.
 
 ## Notre approche
 
@@ -35,7 +35,7 @@ Site et campagne de lancement ont été traités comme un seul produit.
 - Plan social et publicité digitale pour bâtir l'audience et alimenter le tunnel de conversion
 - Campagne tournée vers la génération de leads, chaque création débouchant sur une étape suivante explicite
 
-La stratégie éditoriale a écarté le jargon technique du seuil du parcours, sans rien céder sur les signaux de confiance attendus par un acheteur d'assurance vie.
+La ligne éditoriale a évacué le jargon technique de l'entrée du parcours, sans rien lâcher sur les signaux de confiance qu'attend un acheteur d'assurance vie.
 
 ## Résultats
 

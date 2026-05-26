@@ -24,20 +24,20 @@ order: 6
 
 ## Die Marke
 
-Valio gehört zu den prestigeträchtigsten Unternehmen Finnlands. Als führender Milchverarbeiter des Landes hat Valio ein bemerkenswertes Portfolio aus Käse, Milchpulver, Butter, Joghurt und Milch und deckt 85 Prozent der finnischen Milchproduktion ab. Dieses Erbe aus Qualität und Innovation bereitete den Sprung in neue Märkte vor.
+Valio gehört zu den prestigeträchtigsten Unternehmen Finnlands. Als führender Milchverarbeiter des Landes hält Valio ein bemerkenswertes Portfolio aus Käse, Milchpulver, Butter, Joghurt und Milch und deckt 85 Prozent der finnischen Milchproduktion ab. Dieses Erbe aus Qualität und Innovation hat den Sprung in neue Märkte vorbereitet.
 
 ## Die Aufgabe
 
-Valio wollte den chinesischen Milchmarkt mitgestalten und den Schritt von B2B nach B2C gehen. Der Auftrag: Valios Erbe und Produktqualität in eine neue Sub-Marke „eila" überführen, eigens für chinesische Verbraucher gebaut und in der Lage, sich in der Premium-Milchkategorie zu behaupten.
+Valio wollte den chinesischen Milchmarkt mitgestalten und den Schritt von B2B nach B2C machen. Der Auftrag: Valios Erbe und Produktqualität in eine neue Submarke „eila" überführen, eigens für chinesische Käufer gemacht und tragfähig in der Premium-Milchkategorie.
 
-Wir spielten eine zentrale Rolle bei der Einführung von eila in China. Die Arbeit umfasste Markenanalyse, strategische Positionierung und die Entwicklung der visuellen Identität von eila, immer mit Blick auf Marktrelevanz und echten Konsumentenanschluss.
+Wir haben eine zentrale Rolle bei der Einführung von eila in China gespielt. Die Arbeit umfasste Markenanalyse, strategische Positionierung und die Entwicklung der visuellen Identität, immer mit Blick auf Marktrelevanz und echten Konsumentenanschluss.
 
 ## Unser Vorgehen
 
-Wir starteten mit einer Recherche des Wettbewerbsumfelds und einem genauen Blick auf Valios Marktposition. Wir identifizierten den optimalen Platz für eila auf der Landkarte, jenseits zu „mainstream" wirkender oder zu „extremer" Felder, und fanden eine Balance, die sowohl extrovertierte als auch introvertierte Verbraucher-Qualitäten ansprach. Die Position spiegelt Valios Erbe und antwortet zugleich auf die Attribute, die chinesische Verbraucher von einer Premium-Milchmarke erwarten.
+Wir haben mit einer Recherche des Wettbewerbsumfelds gestartet und Valios Marktposition genau angesehen. Wir haben den optimalen Platz für eila auf der Landkarte gefunden, jenseits zu „mainstream" wirkender oder zu „extremer" Felder, in einer Balance, die sowohl extrovertierte als auch introvertierte Käufer-Qualitäten anspricht. Die Position spiegelt Valios Erbe und greift zugleich die Attribute auf, die chinesische Käufer von einer Premium-Milchmarke erwarten.
 
-Mit diesem Fundament gingen wir in Lokalisierung und Naming und landeten bei einem klingenden, wiedererkennbaren chinesischen Namen für eila. Anschliessend entwickelten wir ein vollständiges visuelles System, inklusive CN-Logo, und führten es bis ins Packaging und in eine breite Reihe von Anwendungen durch, damit die Marke vollständig eingekleidet im Markt ankommt.
+Auf diesem Fundament sind wir in Lokalisierung und Naming gegangen und bei einem klingenden, wiedererkennbaren chinesischen Namen für eila gelandet. Anschliessend haben wir ein vollständiges visuelles System entwickelt, inklusive CN-Logo, und es bis in Verpackung und eine breite Reihe von Anwendungen durchgezogen, damit die Marke vollständig eingekleidet im Markt ankommt.
 
 ## Ergebnisse
 
-Der schlanke Ansatz hob Valio und eila im chinesischen Milchmarkt. Indem wir die globale Markenintegrität mit lokalem Marktgespür verbanden, sicherten wir Valio einen souveränen Markteintritt und legten das Fundament für eine dauerhafte Präsenz. Heraus kam eine finnische Erbe-Geschichte, die für chinesische Verbraucher echt premium liest, ohne irgendetwas von dem zu verlieren, was Valio ausmacht.
+Der konzentrierte Ansatz hat Valio und eila im chinesischen Milchmarkt nach vorne gebracht. Indem wir globale Markenintegrität mit lokalem Marktgespür verbunden haben, konnten wir Valio einen souveränen Markteintritt sichern und das Fundament für eine dauerhafte Präsenz legen. Herausgekommen ist eine finnische Erbe-Geschichte, die für chinesische Käufer echt premium liest, ohne etwas von dem zu verlieren, was Valio ausmacht.

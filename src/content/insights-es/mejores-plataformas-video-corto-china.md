@@ -12,7 +12,7 @@ heroImageAlt: "Comparativa entre Douyin y Kuaishou"
 
 ## Por qué el vídeo corto pesa tanto en marketing
 
-El marketing digital chino se apoya hoy en el vídeo corto porque captura la atención rápido y dispara el engagement. Las marcas que dominan estas [plataformas](/es/conocer-china/plataformas) se llevan ventajas:
+El marketing digital chino se apoya hoy en el vídeo corto porque atrapa la atención rápido y dispara el engagement. Las marcas que dominan estas [plataformas](/es/conocer-china/plataformas) se llevan ventajas:
 
 - Tasas de interacción altas, en un formato muy interactivo y fácil de consumir.
 - Alcance enorme, con plataformas como Douyin y Kuaishou que suman cientos de millones de usuarios activos.

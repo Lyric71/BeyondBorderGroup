@@ -11,7 +11,7 @@ heroImageAlt: "Ilustración sobre la licencia ICP"
 
 ## Cómo solicitar la licencia ICP para su sitio web en China
 
-Expandir su negocio al [mercado chino](/es/entrar-en-china/estrategia-de-entrada) abre un potencial enorme, sobre todo para empresas que se mueven en eCommerce y marketing digital. Ese crecimiento, sin embargo, viene con exigencias regulatorias estrictas. Uno de los pasos más importantes para operar legalmente un [sitio web](/es/crecer-en-china/sitio-web) en China es conseguir la licencia ICP (Internet Content Provider). Sin ella, su web puede ser bloqueada, multada o cerrada, con el consiguiente recorte de acceso a una de las mayores audiencias online del mundo.
+Llevar su negocio al [mercado chino](/es/entrar-en-china/estrategia-de-entrada) abre un potencial enorme, sobre todo para empresas que se mueven en eCommerce y marketing digital. Ese crecimiento, eso sí, viene con exigencias regulatorias estrictas. Uno de los pasos más importantes para operar legalmente un [sitio web](/es/crecer-en-china/sitio-web) en China es conseguir la licencia ICP (Internet Content Provider). Sin ella, su web puede acabar bloqueada, multada o cerrada, con el consiguiente recorte de acceso a una de las mayores audiencias online del mundo.
 
 En esta guía repasamos todo lo necesario para solicitar la licencia ICP, sobre todo si gestiona una plataforma de eCommerce o trabaja con una agencia de marketing en China. Cubriremos quién la necesita, los tipos disponibles, el proceso paso a paso y las ventajas de marketing de mantenerse en regla.
 

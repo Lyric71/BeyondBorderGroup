@@ -29,7 +29,7 @@ SohoMD est un prestataire américain de télépsychiatrie et de téléthérapie 
 
 ## Le défi
 
-SohoMD voulait gonfler le flux de leads patients et offrir une expérience de marque à la hauteur du soin dispensé de l'autre côté de l'écran. Le site existant avait vieilli, la visibilité en recherche restait limitée, l'acquisition payante ne tenait pas encore son rôle. L'agence devait rafraîchir la marque, refondre le site et faire de la recherche et de la publicité des canaux de croissance fiables.
+SohoMD voulait gonfler le flux de leads patients et offrir une expérience de marque à la hauteur du soin dispensé de l'autre côté de l'écran. Le site existant avait vieilli, la visibilité en recherche restait faible, l'acquisition payante ne jouait pas encore son rôle. L'agence devait rafraîchir la marque, refondre le site et transformer recherche et publicité en canaux de croissance fiables.
 
 ## Notre approche
 

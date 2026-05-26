@@ -25,7 +25,7 @@ Esto es lo que veo venir en 2026.
 
 ## El comercio instantáneo se come el almuerzo del eCommerce tradicional
 
-La guerra de la entrega en 30 minutos solo está empezando. Lo que llamo comercio instantáneo (即时零售, jishi lingshou) se quedará con cuota a costa de las plataformas tradicionales de [eCommerce](/es/crecer-en-china/ecommerce-transfronterizo) en 2026, y lo hará sin contemplaciones.
+La guerra de la entrega en 30 minutos no ha hecho más que empezar. Lo que llamo comercio instantáneo (即时零售, jishi lingshou) se va a quedar con cuota a costa de las plataformas tradicionales de [eCommerce](/es/crecer-en-china/ecommerce-transfronterizo) en 2026, y lo va a hacer sin miramientos.
 
 Meituan (美团) ya procesa más de 2.000 millones de pedidos al año en entrega inmediata. Ele.me (饿了么) se ha salido del delivery de comida y ya cubre belleza, farmacia y electrónica de consumo.
 
@@ -37,7 +37,7 @@ Tmall (天猫) y JD.com (京东) corren para montar una infraestructura competid
 
 Esta es la paradoja que crea la IA generativa: a medida que el contenido sintético inunda Xiaohongshu/RED (小红书), Weibo (微博) y Douyin (抖音), las voces humanas auténticas multiplican su valor.
 
-Veo a marcas peleándose por cerrar relaciones a largo plazo con KOL y KOC probados antes de que sus tarifas se disparen. La aritmética es simple: cuando cualquiera puede generar miles de posts de [influencia](/es/crecer-en-china/influencia-y-kol) con IA por céntimos, los humanos que de verdad mueven la intención de compra se vuelven activos estratégicos.
+Veo a marcas peleándose por cerrar relaciones de largo recorrido con KOL y KOC probados antes de que sus tarifas se disparen. La cuenta es sencilla: cuando cualquiera puede generar miles de posts de [influencia](/es/crecer-en-china/influencia-y-kol) con IA por céntimos, los humanos que sí mueven la intención de compra se convierten en activos estratégicos.
 
 > Las tarifas de KOL crecerán entre un 30 % y un 50 % en 2026 para creadores que puedan demostrar confianza real de comunidad y métricas de conversión.
 
@@ -47,7 +47,7 @@ Eso sí, identificar contenido genuinamente humano será cada vez más difícil.
 
 La fuerza real de la IA generativa en China no será producir contenido genérico. Será generar cientos de variantes publicitarias personalizadas para decenas de perfiles distintos de consumidor, todo dentro del mismo presupuesto de medios.
 
-Ya he visto campañas piloto corriendo más de cincuenta variantes creativas en paralelo entre Tmall, JD, Douyin, WeChat (微信) y Xiaohongshu, cada una optimizada para un microsegmento definido por datos de comportamiento.
+Ya he visto campañas piloto corriendo más de cincuenta variantes creativas en paralelo entre Tmall, JD, Douyin, WeChat (微信) y Xiaohongshu, cada una ajustada a un microsegmento definido por datos de comportamiento.
 
 > En 2026 esto será la norma. La barrera técnica de entrada es baja. La complejidad estratégica para ejecutarlo bien es alta.
 
@@ -55,9 +55,9 @@ Las marcas que ganen serán las que dominen el prompt engineering y la sistemati
 
 ## El marketing experiencial cubre el hueco del cansancio del descuento
 
-El consumidor chino está agotado del ciclo de descuentos sin fin. Guerras de precio, ventas relámpago, promociones de festivales. Todo se ha convertido en ruido blanco.
+El consumidor chino está harto del ciclo de descuentos sin fin. Guerras de precio, ventas relámpago, promociones de festivales. Todo se ha convertido en ruido blanco.
 
-Eso abre una oportunidad enorme para el marketing experiencial: pop-up stores con narrativa de marca inmersiva, instalaciones interactivas que generan momentos compartibles, eventos de comunidad que construyen vínculo emocional real y colaboraciones limitadas con artistas locales.
+Eso abre una oportunidad enorme para el marketing experiencial: pop-up stores con narrativa de marca inmersiva, instalaciones interactivas que generan momentos para compartir, eventos de comunidad que construyen vínculo emocional real y colaboraciones limitadas con artistas locales.
 
 > Las marcas que inviertan en experiencias memorables, en lugar de apoyarse en descuentos que devoran el margen, construirán la fidelidad que aguanta en 2026.
 

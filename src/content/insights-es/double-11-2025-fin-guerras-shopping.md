@@ -40,9 +40,9 @@ La fórmula original de Double 11 era brillante:
 * **Una rebaja real.** Las plataformas subvencionaban con fuerza, las marcas ganaban volumen y nuevos usuarios, y en muchas categorías los consumidores veían bajadas auténticas de precio.
 * **Un ritual nuevo.** "Aguanta despierto, paga, presume del botín." El comercio se hizo cultura.
 
-Para las marcas internacionales era la historia más fácil de vender hacia arriba: "China tiene un día nacional del shopping. Nos presentamos, descontamos fuerte y miramos cómo sube la línea."
+Para las marcas internacionales era la historia más fácil de vender hacia arriba: "China tiene un día nacional del shopping. Nos plantamos, descontamos fuerte y miramos cómo sube la línea."
 
-En aquella etapa, las cuentas salían. El margen se resentía, pero la historia iba sobre captación, cuota de mercado y aprender el ecosistema.
+En aquella etapa, las cuentas salían. El margen se resentía, pero la historia iba de captación, cuota de mercado y aprender el ecosistema.
 
 ![Captura con datos y tendencias del eCommerce](/Images/insights/2025/11/Screenshot-2025-11-19-at-3.29.36-PM.png)
 

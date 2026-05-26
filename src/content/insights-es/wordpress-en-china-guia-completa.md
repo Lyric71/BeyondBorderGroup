@@ -11,9 +11,9 @@ heroImageAlt: "Logotipo de WordPress e interfaz del editor para construir sitios
 
 ## WordPress en China: guía completa para empresas
 
-[WordPress](/es/crecer-en-china/sitio-web) es una de las plataformas de creación de sitios web más utilizadas del mundo. La emplean empresas, blogueros y tiendas de eCommerce. Flexibilidad, facilidad de uso y un coste contenido explican que muchas marcas quieran apoyarse en ella también para entrar en China. ¿Puede funcionar igual de bien aquí, sobre todo si el objetivo es el eCommerce chino o una operación de marketing digital seria?
+[WordPress](/es/crecer-en-china/sitio-web) es una de las plataformas de creación de sitios web más utilizadas del mundo. La usan empresas, blogueros y tiendas de eCommerce. Flexibilidad, facilidad de uso y un coste contenido explican que muchas marcas quieran tirar de ella también para entrar en China. ¿Funciona aquí igual de bien, sobre todo si el objetivo es el eCommerce chino o una operación de marketing digital seria?
 
-La respuesta es sí, pero con matices. Hay normativa propia, servicios bloqueados y retos técnicos que obligan a ajustar la receta habitual. Esta guía repasa cómo preparar un sitio WordPress para el [mercado chino](/es/entrar-en-china/estrategia-de-entrada): alojamiento, diseño, SEO y las tácticas de marketing que un proyecto de eCommerce en China necesita realmente.
+La respuesta es sí, con matices. Hay normativa propia, servicios bloqueados y retos técnicos que obligan a ajustar la receta habitual. Esta guía repasa cómo preparar un sitio WordPress para el [mercado chino](/es/entrar-en-china/estrategia-de-entrada): alojamiento, diseño, SEO y las tácticas de marketing que un proyecto de eCommerce en China necesita de verdad.
 
 ## ¿Por qué elegir WordPress para el sitio corporativo?
 

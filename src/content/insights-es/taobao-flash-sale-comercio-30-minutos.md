@@ -20,13 +20,13 @@ keyTakeaways:
 
 "¿Cuál es nuestro plan para el tráfico de [Taobao](/es/crecer-en-china/ecommerce-transfronterizo) esta semana?"
 
-Ahora la pregunta se está moviendo.
+Ahora la pregunta se mueve.
 
 "¿Cuál es nuestro plan para el tráfico de [Taobao](/es/crecer-en-china/ecommerce-transfronterizo) y, en el mismo flujo, para la entrega local?"
 
 La decisión de Alibaba de transformar Ele.me en Taobao Flash Sale (淘宝闪购) va mucho más allá de un cambio de nombre. Es un reseteo estructural que mete reparto de comida, retail instantáneo y servicios en tienda dentro de una misma experiencia de Taobao.
 
-China empuja con fuerza la integración online y offline, y las plataformas lo están haciendo a velocidad de crucero.
+China empuja con fuerza la integración online y offline, y las plataformas lo están haciendo a velocidad de vértigo.
 
 ---
 

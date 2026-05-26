@@ -62,7 +62,7 @@ Ein zertifiziertes Geschäftskonto hebt Glaubwürdigkeit und Sichtbarkeit. Verif
 
 ### Kategorie-Profile
 
-Geschäftliche Profile lassen sich kategorisieren, das verbessert die Auffindbarkeit für relevante Verbraucher.
+Geschäftliche Profile lassen sich kategorisieren, das verbessert die Auffindbarkeit für die relevanten Käufer.
 
 ### Zusätzliche Funktionen für höhere Konversion
 
@@ -112,7 +112,7 @@ Mit AR-Funktionen schaffen Marken visuell starke, interaktive Inhalte. Filter un
 
 ### Immersives Storytelling
 
-Per AR erkunden Nutzer Produkte in virtuellen Settings, virtuelle Anproben heben Engagement und ziehen digital affine Verbraucher an.
+Per AR erkunden Nutzer Produkte in virtuellen Settings, virtuelle Anproben heben Engagement und ziehen digital affine Käufer an.
 
 ## Bezahlte Werbung auf Kuaishou
 
@@ -158,9 +158,9 @@ Top-Inhalte und neue Trends regelmässig prüfen, damit die Marke im sich wandel
 
 Kuaishou unterstützt umweltfreundliche Praktiken. Marken mit grünen Initiativen sprechen eine Audience an, die Nachhaltigkeit schätzt. Das schafft einen Wettbewerbsvorteil.
 
-### Bewusste Konsumenten erreichen
+### Bewusste Käufer erreichen
 
-Grüne Praktiken hervorzuheben, schliesst an Kuaishous umweltbewusste Nutzerbasis an und fördert Loyalität und Engagement.
+Grüne Praktiken in den Vordergrund zu stellen, schliesst an Kuaishous umweltbewusste Nutzerbasis an und fördert Loyalität und Engagement.
 
 ## Häufige Fallstricke
 

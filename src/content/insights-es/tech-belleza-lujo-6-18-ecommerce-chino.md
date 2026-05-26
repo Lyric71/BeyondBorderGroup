@@ -16,11 +16,11 @@ El consumo en China evoluciona rápido. Hay cambios claros en preferencias y pat
 
 ## La tech manda en el arranque
 
-El 618, uno de los festivales más grandes del país, vio una explosión de ventas en producto tecnológico. Solo la tienda de Apple en Tmall hizo un GMV superior a 1.500 millones de RMB en la primera hora del 20 de mayo. Otras marcas de smartphone, como Huawei y Xiaomi, también superaron los 100 millones de RMB en GMV.
+El 618, uno de los festivales más grandes del país, vio una explosión de ventas en producto tecnológico. Solo la tienda de Apple en Tmall facturó un GMV por encima de 1.500 millones de RMB en la primera hora del 20 de mayo. Otras marcas de smartphone, como Huawei y Xiaomi, también pasaron de los 100 millones de RMB en GMV.
 
-El electrodoméstico también pegó un salto. Haier, Gree y Midea pasaron de los 100 millones de RMB en GMV durante la primera hora.
+El electrodoméstico también pegó un salto. Haier, Gree y Midea cruzaron los 100 millones de RMB en GMV durante la primera hora.
 
-El atractivo de estas categorías se explica por descuentos agresivos y marketing afilado, que reflejan un apetito creciente por electrónica de calidad. Estos movimientos confirman el peso de una buena estrategia de eCommerce en China, donde la marca exprime los canales online para maximizar ventas.
+El atractivo de estas categorías se explica por descuentos agresivos y marketing afilado, que reflejan un apetito creciente por electrónica de calidad. Estos movimientos confirman el peso de una buena estrategia de eCommerce en China, donde la marca exprime los canales online para sacarles el máximo a las ventas.
 
 ## La belleza brilla
 

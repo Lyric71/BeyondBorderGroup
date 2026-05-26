@@ -27,14 +27,14 @@ DaVinci Gourmet, filial del grupo Kerry, abastece de siropes, salsas y bases par
 
 ## El reto
 
-Cuando asumimos la operación china de eCommerce, las tiendas oficiales de Tmall y JD pedían una reconstrucción completa. Los precios bailaban entre canales, las listas falsificadas drenaban volumen y el fraude de terceros minaba la confianza. Encima, las tiendas carecían de un relato de marca coherente, lo que dificultaba que el comprador profesional encontrara el producto adecuado en pocos clics.
+Cuando asumimos la operación china de eCommerce, las tiendas oficiales de Tmall y JD pedían una reconstrucción completa. Los precios bailaban entre canales, los listados falsos drenaban volumen y el fraude de terceros minaba la confianza. Encima, las tiendas no tenían un relato de marca coherente, lo que ponía difícil que el comprador profesional encontrara el producto adecuado en pocos clics.
 
 ## Nuestro enfoque
 
-Asumimos las tiendas de Tmall y JD de principio a fin: producción de contenido, operación de ventas, marketing, compra de medios y atención al cliente. Las reconstruimos con una identidad visual renovada y un posicionamiento más nítido, pensado para la comunidad foodservice y barista en China.
+Asumimos las tiendas de Tmall y JD de cabo a rabo: producción de contenido, operación de ventas, marketing, compra de medios y atención al cliente. Las reconstruimos con una identidad visual renovada y un posicionamiento más nítido, pensado para la comunidad foodservice y barista en China.
 
-En paralelo, alineamos precios entre Tmall y la red de distribuidores para que online y offline dejaran de pisarse, y montamos una cadencia coordinada de campañas y livestream para impulsar prueba en siropes, salsas y smoothies. Un equipo dedicado se ocupó de la limpieza de falsificaciones y fraude vía denuncias en plataforma e higiene del listado.
+En paralelo, alineamos precios entre Tmall y la red de distribuidores para que online y offline dejaran de pisarse, y montamos una cadencia coordinada de campañas y livestream para empujar la prueba en siropes, salsas y smoothies. Un equipo dedicado se ocupó de la limpieza de falsificaciones y de fraude con denuncias en plataforma e higiene del listado.
 
 ## Resultados
 
-En el primer año desde el relanzamiento, los ingresos online de DaVinci Gourmet en China crecieron con fuerza. Las disputas de precio entre canales se resolvieron en tres meses, el fraude se erradicó en seis y las listas falsificadas desaparecieron de Tmall. Kerry quedó con una base de eCommerce limpia y controlable sobre la que seguir construyendo.
+En el primer año desde el relanzamiento, los ingresos online de DaVinci Gourmet en China crecieron con fuerza. Las disputas de precio entre canales se resolvieron en tres meses, el fraude se erradicó en seis y los listados falsos desaparecieron de Tmall. Kerry quedó con una base de eCommerce limpia y controlable sobre la que seguir construyendo.

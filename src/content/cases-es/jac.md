@@ -27,16 +27,16 @@ JAC es un fabricante chino de automoción con una gama creciente de vehículos e
 
 ## El reto
 
-La producción global de activos no perdona. El mismo coche tiene que verse igual en webs de concesionario, configuradores, impresos, redes y campañas regionales, en todos los mercados y a cualquier resolución. JAC necesitaba imágenes pixel perfect del exterior y el interior completos del nuevo modelo, listas para integrarse en sistemas de partner muy diversos sin perder intención.
+La producción global de activos no perdona. El mismo coche tiene que verse igual en webs de concesionario, configuradores, impresos, redes y campañas regionales, en todos los mercados y a cualquier resolución. JAC necesitaba imágenes pixel perfect del exterior y el interior completos del nuevo modelo, listas para entrar en sistemas de partner muy distintos sin perder la intención.
 
 ## Nuestro enfoque
 
-Tratamos la sesión como un proyecto de diseño antes que como un proyecto fotográfico. La dirección de arte se definió de entrada, ajustada al relato de producto que queríamos que los partners contaran, y se sostuvo en cada plano del set.
+Tratamos la sesión como un proyecto de diseño antes que como uno fotográfico. La dirección de arte se cerró de entrada, ajustada al relato de producto que queríamos que los partners contaran, y se sostuvo en cada plano del set.
 
 - Fotografía en localización con iluminación y puesta en escena controladas al detalle
 - Dirección de arte creativa para exteriores, interiores y planos de detalle
-- Postproducción intensiva para preservar la coherencia de toda la colección
-- Sistema de entrega estructurado a partir de cómo los partners globales usan los activos en la práctica
+- Postproducción intensiva para mantener la coherencia de toda la colección
+- Sistema de entrega armado a partir de cómo los partners globales usan los activos en la práctica
 
 ## Resultados
 

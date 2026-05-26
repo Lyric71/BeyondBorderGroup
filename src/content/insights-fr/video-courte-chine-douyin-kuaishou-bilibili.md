@@ -20,7 +20,7 @@ Le marketing digital chinois s'écrit en vidéo courte. Le format capte l'attent
 - Ciblage piloté par l'IA. Les algorithmes envoient chaque marque vers son public.
 - Achat in-app. La transaction se conclut sans sortir du flux.
 
-Divertir et vendre dans le même geste. C'est la promesse. Les marques qui s'en sortent vraiment travaillent souvent avec une agence de branding chinoise pour produire des récits brefs qui transforment l'attention en intention d'achat.
+Divertir et vendre dans le même geste. C'est la promesse. Les marques qui s'en sortent vraiment travaillent souvent avec une agence de branding chinoise pour produire des récits brefs qui convertissent l'attention en intention d'achat.
 
 ## Les plateformes qui font le marché
 
@@ -66,7 +66,7 @@ Les KOL et KOC ouvrent la voie la plus rapide à la crédibilité. Key Opinion L
 
 ### Le live commerce
 
-Le direct s'est imposé comme un pilier du e-commerce chinois, porté par Douyin et Kuaishou. Trois usages dominent :
+Le direct s'est imposé en pilier du e-commerce chinois, porté par Douyin et Kuaishou. Trois usages dominent :
 
 - Démontrer un produit en temps réel
 - Répondre aux questions des clients

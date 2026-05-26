@@ -12,7 +12,7 @@ heroImageAlt: "Social eCommerce en China"
 
 ## El mapa del social commerce en China
 
-El [social commerce](/es/crecer-en-china/comercio-social) ha cambiado el modo en que el consumidor compra al fundir conversación social y compra directa. Ningún país lo encarna mejor que China, sede del mayor mercado de compra en línea del planeta. El auge del social commerce chino se apoya en tendencias punteras: livestreaming, pago móvil, marketing de [KOL](/es/crecer-en-china/influencia-y-kol). Todo ello da a las marcas oportunidades únicas para hablar con su consumidor. En 2021, el mercado chino del social commerce superó los 2,5 billones de yuanes (unos 374.000 millones de dólares), con casi 800 millones de participantes. Una cifra que confirma a China como referente del retail digital.
+El [social commerce](/es/crecer-en-china/comercio-social) ha cambiado el modo en que el consumidor compra al fundir conversación social y compra directa. Ningún país lo encarna mejor que China, sede del mayor mercado de compra online del planeta. El auge del social commerce chino se apoya en tendencias punteras: livestreaming, pago móvil, marketing de [KOL](/es/crecer-en-china/influencia-y-kol). Todo eso da a las marcas oportunidades únicas para hablar con su consumidor. En 2021, el mercado chino del social commerce superó los 2,5 billones de yuanes (unos 374.000 millones de dólares), con casi 800 millones de participantes. Una cifra que confirma a China como referente del retail digital.
 
 Para las marcas que aspiran a sobresalir en el competitivo eCommerce chino, entender las grandes [plataformas](/es/conocer-china/plataformas) del país es esencial. Repasamos las que pueden potenciar su estrategia de marketing en China y acelerar el crecimiento.
 

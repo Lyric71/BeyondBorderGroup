@@ -24,7 +24,7 @@ Pierre Fabre es el principal grupo francés de dermocosmética, con marcas como 
 
 ## El reto
 
-La dirección de Pierre Fabre necesitaba inteligencia estratégica sobre el panorama digital y de eCommerce en China, con conclusiones operativas desde el terreno y no los habituales informes de mercado genéricos. Pidieron una masterclass exhaustiva que cubriera la dinámica actual de plataformas como Douyin, Tmall, JD, Xiaohongshu y WeChat, casos reales sobre lo que de verdad funciona en belleza, tendencias emergentes (live commerce, contenidos generados con IA y CRM), y aprendizajes prácticos que pudieran trasladar a su propia operación en China.
+La dirección de Pierre Fabre necesitaba inteligencia estratégica sobre el panorama digital y de eCommerce en China, con conclusiones operativas tiradas del terreno y no los habituales informes de mercado genéricos. Pidieron una masterclass a fondo que cubriera la dinámica actual de plataformas como Douyin, Tmall, JD, Xiaohongshu y WeChat, casos reales sobre lo que tira de verdad en belleza, tendencias emergentes (live commerce, contenidos generados con IA y CRM) y aprendizajes prácticos que pudieran trasladar a su propia operación en China.
 
 ## Nuestro enfoque
 
@@ -32,4 +32,4 @@ En vez de marcos teóricos, la masterclass se construyó alrededor de seis casos
 
 ## Resultados
 
-El equipo de Pierre Fabre se llevó marcos estratégicos accionables, entre ellos el "3D Digital Growth Model", inteligencia competitiva sobre marcas internacionales y locales, mayor alineamiento entre áreas y oportunidades de aplicación inmediata para su negocio chino. Algunos datos de referencia de la sesión: Proya convirtiendo el 83 % del buzz social, Collgene creciendo un 47,6 % interanual con una mezcla del 35 % de eCommerce en lineal, 40 % de livestream y 25 % de contenido social, Estée Lauder elevando el peso de Tmall del 8 % al 28 % del GMV total en una década, y la campaña "Coleccionable Anual" de Lancôme estimada en torno a 200 millones de RMB anuales.
+El equipo de Pierre Fabre se llevó marcos estratégicos accionables, entre ellos el "3D Digital Growth Model", inteligencia competitiva sobre marcas internacionales y locales, mejor alineamiento entre áreas y oportunidades de aplicación inmediata para su negocio chino. Algunos datos de referencia de la sesión: Proya convirtiendo el 83 % del buzz social, Collgene creciendo un 47,6 % interanual con una mezcla del 35 % de eCommerce en lineal, 40 % de livestream y 25 % de contenido social, Estée Lauder llevando el peso de Tmall del 8 % al 28 % del GMV total en una década, y la campaña "Coleccionable Anual" de Lancôme estimada en torno a 200 millones de RMB anuales.

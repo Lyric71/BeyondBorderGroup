@@ -92,11 +92,11 @@ const profileOptions = [
     <div class="container">
       <header class="contact__header">
         <span class="eyebrow eyebrow--on-dark">Contact</span>
-        <h1 class="contact__title">Nous serions heureux d'échanger sur votre projet en Chine.</h1>
+        <h1 class="contact__title">Parlons de votre projet en Chine.</h1>
         <p class="lead contact__lead">
-          Nos équipes basées à Shanghai vous répondent dans un délai d'un jour ouvré, du lundi au vendredi.
-          Inutile de tout préciser dès le premier message : nous reviendrons vers vous avec des questions ciblées
-          et, dès que possible, des pistes concrètes adaptées à votre marché.
+          Nos équipes de Shanghai répondent sous un jour ouvré, du lundi au vendredi.
+          Pas besoin de tout dire dès le premier message : on revient vers vous avec des questions précises,
+          et, dès qu'on peut, des pistes concrètes calées sur votre marché.
         </p>
       </header>
 
@@ -135,8 +135,8 @@ const profileOptions = [
             </div>
 
             <fieldset class="field field--group">
-              <legend class="field__label">Les services qui retiennent votre attention</legend>
-              <p class="field__hint">Cochez tout ce qui vous semble pertinent, nous affinerons ensemble.</p>
+              <legend class="field__label">Les services qui vous intéressent</legend>
+              <p class="field__hint">Cochez tout ce qui colle, on affine ensemble.</p>
               <div class="services">
                 {serviceGroups.map((group) => (
                   <div class="services__group">
@@ -208,7 +208,7 @@ const profileOptions = [
 
             <div class="field field--captcha">
               <label class="field__label" for="captcha">
-                Petite vérification pour écarter les robots : combien font <span id="captchaA">?</span> + <span id="captchaB">?</span> ?
+                Petite vérification anti-robot : combien font <span id="captchaA">?</span> + <span id="captchaB">?</span> ?
                 <span aria-hidden="true">*</span>
               </label>
               <input
@@ -234,7 +234,7 @@ const profileOptions = [
                 Envoyer le message
               </button>
               <p class="form__note">
-                En envoyant ce formulaire, vous nous autorisez à revenir vers vous au sujet de votre demande. Vos coordonnées restent strictement entre nos mains.
+                En envoyant ce formulaire, vous nous autorisez à revenir vers vous au sujet de votre demande. Vos coordonnées ne quittent pas notre équipe.
               </p>
             </div>
 
@@ -253,7 +253,7 @@ const profileOptions = [
 
           <div class="contact-block">
             <span class="eyebrow eyebrow--on-dark">Délai de réponse</span>
-            <p class="contact-block__text">Sous vingt-quatre heures ouvrées, du lundi au vendredi, heure de Chine continentale.</p>
+            <p class="contact-block__text">Sous un jour ouvré, du lundi au vendredi, heure de Chine.</p>
           </div>
 
           <div class="contact-block">
@@ -338,14 +338,14 @@ const profileOptions = [
       const captchaNum = parseInt(payload.captcha, 10);
       const expectedNum = parseInt(payload.captchaExpected, 10);
       if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
-        status.textContent = "Le résultat n'est pas correct. Les chiffres viennent d'être renouvelés, merci d'essayer à nouveau.";
+        status.textContent = "Le résultat n'y est pas. Les chiffres viennent de changer, retentez.";
         status.classList.add('form__status--error');
         rollCaptcha();
         return;
       }
 
       if (!payload.name || !payload.email || !payload.message) {
-        status.textContent = "Merci de bien vouloir renseigner votre nom, votre courriel et un message avant l'envoi.";
+        status.textContent = "Il nous faut au minimum votre nom, votre courriel et un message.";
         status.classList.add('form__status--error');
         return;
       }
@@ -364,7 +364,7 @@ const profileOptions = [
 
         form.reset();
         rollCaptcha();
-        status.textContent = 'Message bien reçu. Nous revenons rapidement vers vous. Redirection en cours…';
+        status.textContent = 'Message bien reçu. On revient vite vers vous. Redirection en cours…';
         status.classList.add('form__status--success');
         window.location.assign('/fr/merci');
         return;

@@ -12,7 +12,7 @@ heroImageAlt: "Vendedores online generados con IA"
 
 ## Una audiencia que se enganchó muy rápido
 
-El 16 de abril de 2024, [JD](/es/crecer-en-china/ecommerce-transfronterizo).com presentó un avatar digital de su fundador, Liu Qiangdong, que captó una atención enorme durante un [livestream](/es/crecer-en-china/influencia-y-kol). En los primeros 30 minutos ya había más de 10 millones de espectadores; a los 40 minutos, 13 millones. El directo cerró la primera hora con casi 20 millones de espectadores, un récord que ilustra hasta dónde puede llegar la IA cuando se trata de movilizar audiencias.
+El 16 de abril de 2024, [JD](/es/crecer-en-china/ecommerce-transfronterizo).com presentó un avatar digital de su fundador, Liu Qiangdong, que captó una atención enorme durante un [livestream](/es/crecer-en-china/influencia-y-kol). En los primeros 30 minutos ya había más de 10 millones de espectadores; a los 40 minutos, 13 millones. El directo cerró la primera hora con casi 20 millones de espectadores, un récord que enseña hasta dónde puede llegar la IA cuando se trata de movilizar audiencias.
 
 ## Una interacción realista que retiene a la audiencia
 

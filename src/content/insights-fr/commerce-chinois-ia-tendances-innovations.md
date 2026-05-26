@@ -12,7 +12,7 @@ heroImageAlt: "Source : Getty Images"
 
 ## Le marketing chinois saisi par l'IA
 
-Sous la pression de l'IA, les entreprises chinoises et les agences de [marketing](/fr/se-developper-en-chine/campagnes) digital refondent leurs stratégies à marche forcée. Alibaba, JD.com et les autres places de marché s'appuient sur l'intelligence artificielle pour personnaliser l'expérience, affiner les campagnes et resserrer l'engagement consommateur.
+Sous la pression de l'IA, les entreprises chinoises et les agences de [marketing](/fr/se-developper-en-chine/campagnes) digital refondent leurs stratégies à marche forcée. Alibaba, JD.com et les autres places de marché s'appuient sur l'intelligence artificielle pour personnaliser l'expérience, affiner les campagnes et serrer l'engagement consommateur.
 
 Trois usages s'imposent en première ligne :
 

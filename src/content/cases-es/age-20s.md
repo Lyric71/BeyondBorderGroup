@@ -24,23 +24,23 @@ images:
 
 ## La marca
 
-Age 20's es una firma coreana de belleza reconocida sobre todo por sus cushion. En este lanzamiento, la ambición era dar el salto: pasar de un cushion funcional a una opción premium de estilo de vida para la profesional urbana china, apoyada en una nueva línea de base de maquillaje con un envase inspirado en la repostería.
+Age 20's es una firma coreana de belleza conocida sobre todo por sus cushion. En este lanzamiento la ambición era dar un salto: pasar de un cushion funcional a una opción premium de estilo de vida para la profesional urbana china, con una nueva línea de base de maquillaje y un envase inspirado en la repostería.
 
 ## El reto
 
-El cushion es una categoría saturada en China. Marcas locales e internacionales se disputan el mismo terreno: la oficina y el uso diario. Para destacar, el producto necesitaba un gancho memorable, una promesa de rendimiento creíble y contenidos pensados para cómo la consumidora china descubre y compra belleza de verdad en Xiaohongshu y Douyin.
+El cushion es una categoría saturada en China. Marcas locales e internacionales se pelean el mismo terreno: la oficina y el uso diario. Para destacar, el producto pedía un gancho que se quedara en la cabeza, una promesa de rendimiento creíble y contenidos pensados para cómo la consumidora china descubre y compra belleza de verdad en Xiaohongshu y Douyin.
 
 ## Nuestro enfoque
 
-Construimos el lanzamiento alrededor de la identidad "Little Milk Brick", convirtiendo el envase en un anclaje visual que la consumidora podía reconocer, nombrar y compartir. A partir de ahí, desplegamos una campaña por fases en las dos plataformas que mandan en esta categoría.
+Levantamos el lanzamiento alrededor de la identidad "Little Milk Brick", convirtiendo el envase en un anclaje visual que la consumidora pudiese reconocer, nombrar y compartir. A partir de ahí, desplegamos una campaña por fases en las dos plataformas que mandan en esta categoría.
 
 - Fase de notoriedad para fijar la identidad Little Milk Brick
 - Demostración de producto en escenarios de oficina, ajustada al uso profesional
-- Conversión vía KOL elegidos por su credibilidad en base de maquillaje
-- Amplificación con contenidos de usuarias para que el apodo siguiera circulando
+- Conversión con KOL escogidos por su credibilidad en base de maquillaje
+- Amplificación con contenidos de usuarias para que el apodo siguiera rodando
 
-La adaptación a cada plataforma fue deliberada. Xiaohongshu se apoyó en tutoriales de aplicación, comparativas antes y después y reseñas largas. Douyin tiró de retoques rápidos en la oficina, trucos de maquillaje sobre la marcha y formatos pensados para livestream. La promesa de rendimiento, cobertura profesional, acabado lácteo mate y ocho horas de duración, se mantuvo idéntica en ambos canales.
+La adaptación a cada plataforma fue deliberada. Xiaohongshu se apoyó en tutoriales de aplicación, comparativas antes y después y reseñas largas. Douyin tiró de retoques rápidos en la oficina, trucos de maquillaje sobre la marcha y formatos pensados para livestream. La promesa de rendimiento (cobertura profesional, acabado lácteo mate y ocho horas de duración) se mantuvo idéntica en los dos canales.
 
 ## Resultados
 
-La campaña superó las cifras en todos los frentes. Xiaohongshu alcanzó 750.000 impresiones frente a un objetivo de 300.000, un 150 % por encima de la meta. Douyin llegó a 3,87 millones contra el millón previsto, un 287 % más de lo planificado. El ROI cerró en 3,3 %, por delante de la media de la categoría, y el apodo "Little Milk Brick" empezó a circular de forma orgánica entre las consumidoras, la señal más clara de que la identidad había prendido.
+La campaña pasó por encima de las cifras en todos los frentes. Xiaohongshu llegó a 750.000 impresiones frente a un objetivo de 300.000, un 150 % por encima de la meta. Douyin alcanzó los 3,87 millones contra el millón previsto, un 287 % más de lo planificado. El ROI cerró en 3,3 %, por delante de la media de la categoría, y el apodo "Little Milk Brick" empezó a circular solo entre las consumidoras, la señal más clara de que la identidad había prendido.

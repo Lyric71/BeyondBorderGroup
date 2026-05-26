@@ -18,11 +18,11 @@ keyTakeaways:
 
 ## La revisión de sistemas del 11.11: del teatro del GMV a la eficiencia con IA
 
-Double 11 fue una locura. En 2025 es un test de sistemas: ¿puede su marca operar más limpio, atender a un consumidor más sereno y, además, sumar equity de marca mientras todo el país está comprando?
+Double 11 fue una locura. En 2025 es un test de sistemas: ¿puede su marca operar más limpio, atender a un consumidor más sereno y, encima, sumar equity de marca mientras todo el país está comprando?
 
 ### Qué cambió de verdad este año
 
-El titular no es "más GMV". Es mejores sistemas. Plataformas y marcas priorizaron eficiencia, transparencia y repetibilidad. El consumidor premió esa transparencia con menos trucos, precios más claros y mejor servicio.
+El titular no es "más GMV". Son sistemas mejores. Plataformas y marcas priorizaron eficiencia, transparencia y repetibilidad. El consumidor premió esa transparencia con menos trucos, precios más claros y mejor servicio.
 
 Por debajo corre un modelo operativo guiado por IA. Promociones, ranking, previsión y enrutado están cada vez más orquestados por sistemas que aprenden. Y, aunque las grandes plataformas han dejado en buena medida de publicar la cifra única de GMV, sí cargan el acento en participación, calidad de servicio y métricas de entrega. Cuando todo el mundo descuenta, gana el operador que se mueve con más cabeza: entrega más rápida, menos roturas de stock y unos números unitarios que el 12 de noviembre todavía cuadran.
 

@@ -11,7 +11,7 @@ heroImageAlt: "El consejero delegado de NIO en livestream"
 
 ## La irrupción del directivo en livestream
 
-En el cambiante mercado digital chino se consolida una tendencia llamativa: el primer ejecutivo se pone delante de la cámara y se convierte en su propia voz en [livestream](/es/crecer-en-china/influencia-y-kol). Una jugada que recuerda al estilo de figuras como Elon Musk, y que en China han adoptado nombres como Lei Jun, de Xiaomi, o Zhou Hongyi, de 360 Company. Su uso del livestream no se queda en presentar producto: humaniza la marca y la acerca a un consumidor nativo digital que quiere caras, no logos.
+En el cambiante mercado digital chino cuaja una tendencia llamativa: el primer ejecutivo se pone delante de la cámara y se convierte en su propia voz en [livestream](/es/crecer-en-china/influencia-y-kol). Una jugada que recuerda al estilo de figuras como Elon Musk, y que en China han adoptado nombres como Lei Jun, de Xiaomi, o Zhou Hongyi, de 360 Company. Su uso del livestream no se queda en presentar producto: humaniza la marca y la acerca a un consumidor nativo digital que quiere caras, no logos.
 
 ## Moverse en el escenario del livestream
 

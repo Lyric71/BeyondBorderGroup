@@ -13,7 +13,7 @@ heroImageAlt: "Concepto visual de internacionalización de marca"
 
 Para [localizar](/es/entrar-en-china/marca-y-localizacion) una marca en el [mercado chino](/es/entrar-en-china/estrategia-de-entrada) hay que partir de los factores culturales, sociales y económicos propios del país. Con más de 1.400 millones de habitantes, China es uno de los mercados de consumo más grandes y de mayor crecimiento del planeta. También es un mercado complejo, con sus propias normas culturales, preferencias y regulaciones.
 
-Si sigue estos pasos, podrá adaptar su marca y conectar con los consumidores chinos.
+Si sigue estos pasos, podrá ajustar su marca y conectar con los consumidores chinos.
 
 ### 1. Estudiar el mercado
 

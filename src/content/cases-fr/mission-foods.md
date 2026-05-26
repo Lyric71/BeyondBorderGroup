@@ -30,7 +30,7 @@ La mission portait sur le pilotage des campagnes sociales et l'animation continu
 
 ## Notre approche
 
-Pour toucher la génération Z chinoise sur le lancement des corn chips, la stratégie s'est ancrée sur des moments de snacking qui entrent en résonance avec les goûts et les préférences alimentaires locaux. Les contenus mettaient en avant le caractère singulier et polyvalent des corn chips, en s'adressant à l'appétence de la Gen Z pour des expériences gustatives nouvelles et savoureuses. Concrètement, cela passait par l'insertion des corn chips dans des snacks et des repas chinois traditionnels, sur des registres à la fois authentiques et respectueux des codes culinaires locaux. Sur WeChat, Weibo et Xiaohongshu, nous avons travaillé avec des influenceurs et imaginé des campagnes interactives propices au partage et à la participation, tout en restant alignés avec les valeurs et le mode de vie de la Gen Z.
+Pour parler à la génération Z chinoise sur le lancement des corn chips, la stratégie s'est calée sur les moments de snacking qui parlent vraiment aux goûts locaux. Les contenus jouaient sur le caractère singulier et polyvalent des corn chips, et sur l'appétit de la Gen Z pour les expériences gustatives neuves. Concrètement, ça passait par l'insertion des corn chips dans des snacks et des repas chinois traditionnels, sur un registre authentique, respectueux des codes culinaires locaux. Sur WeChat, Weibo et Xiaohongshu, on a travaillé avec des influenceurs et imaginé des campagnes interactives faites pour le partage et la participation, sans jamais s'écarter des valeurs et du mode de vie Gen Z.
 
 ## Résultats
 

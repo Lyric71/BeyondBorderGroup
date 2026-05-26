@@ -22,7 +22,7 @@ El Double 11 solía resumirse en una pregunta: ¿quién apilaba más descuento?
 
 Este año Alibaba lo ha usado para otra cosa. Con [Taobao](/es/crecer-en-china/ecommerce-transfronterizo) Instant Commerce y el rebrand de Ele.me como Taobao Flash Sale, el grupo está haciendo algo más que perseguir GMV de festival. Está reeducando la forma en que la gente compra cada día en China. La entrega inmediata ya no es un producto satélite dentro de una app de comida. Se ha cosido al corazón de Taobao.
 
-Para una marca no china, esto importa menos por la campaña concreta y más por lo que apunta a un futuro: un eCommerce en China que se comporta cada vez más como el delivery.
+Para una marca no china, esto importa menos por la campaña concreta y más por lo que apunta hacia el futuro: un eCommerce en China que se comporta cada vez más como el delivery.
 
 ## Qué está construyendo Alibaba en realidad
 

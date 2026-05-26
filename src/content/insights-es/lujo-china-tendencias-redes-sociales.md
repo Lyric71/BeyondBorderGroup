@@ -20,7 +20,7 @@ Las redes sociales son determinantes en las decisiones de compra del consumidor 
 
 ## Usar las redes sociales para llegar al cliente
 
-Un uso eficaz de las redes sociales resulta clave para las marcas de lujo que quieren llegar e influir en el consumidor chino. Los KOL (Key Opinion Leaders) y los influencers cuentan con una influencia notable, y las marcas tienen que trabajar con ellos de forma estratégica. Cada vez más casas abren cuentas oficiales en WeChat y mini-programas para crear canales de tráfico propios que permitan profundizar en la relación con el cliente y retenerlo.
+Un uso eficaz de las redes sociales resulta clave para las marcas de lujo que quieran llegar e influir en el consumidor chino. Los KOL (Key Opinion Leaders) y los influencers pesan mucho, y las marcas tienen que trabajar con ellos de forma estratégica. Cada vez más casas abren cuentas oficiales en WeChat y mini-programas para levantar canales de tráfico propios que permitan profundizar en la relación con el cliente y retenerlo.
 
 ![](/Images/insights/2024/06/ss12.jpg)
 

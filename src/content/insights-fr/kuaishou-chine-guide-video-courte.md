@@ -14,7 +14,7 @@ heroImageAlt: "Image de couverture Kuaishou"
 
 ### Profil démographique
 
-Les utilisateurs viennent en majorité des villes de second et troisième rang et des zones rurales, avec une forte présence de jeunes profils. Là où Douyin séduit la jeunesse urbaine, Kuaishou parle à un public attaché aux contenus de proximité et au quotidien partagé.
+Les utilisateurs viennent en majorité des villes de second et troisième rang et des zones rurales, avec une forte présence de profils jeunes. Là où Douyin séduit la jeunesse urbaine, Kuaishou parle à un public attaché aux contenus de proximité et au quotidien partagé.
 
 ### Préférences d'engagement
 

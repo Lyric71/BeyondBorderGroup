@@ -92,11 +92,11 @@ const profileOptions = [
     <div class="container">
       <header class="contact__header">
         <span class="eyebrow eyebrow--on-dark">Contacto</span>
-        <h1 class="contact__title">Nos encantará conversar sobre su proyecto en China.</h1>
+        <h1 class="contact__title">Hablemos de su proyecto en China.</h1>
         <p class="lead contact__lead">
-          Nuestros equipos en Shanghái le responden en menos de un día hábil, de lunes a viernes.
-          No hace falta detallarlo todo en el primer mensaje: volveremos hacia usted con preguntas
-          concretas y, en cuanto sea posible, con propuestas adaptadas a su mercado.
+          Nuestros equipos en Shanghái le contestan en menos de un día laborable, de lunes a viernes.
+          No hace falta contarlo todo en el primer mensaje: le escribimos con preguntas concretas
+          y, en cuanto se pueda, con propuestas hechas para su mercado.
         </p>
       </header>
 
@@ -104,7 +104,7 @@ const profileOptions = [
 
         {/* ---------- White form card, full width ---------- */}
         <div class="contact__form-card">
-          <h2 class="contact__form-title">Cuéntenos brevemente su proyecto</h2>
+          <h2 class="contact__form-title">Cuéntenos su proyecto en pocas líneas</h2>
 
           <form class="form" id="contact-form" novalidate>
             <div class="form__row form__row--2">
@@ -135,8 +135,8 @@ const profileOptions = [
             </div>
 
             <fieldset class="field field--group">
-              <legend class="field__label">Los servicios que le interesan</legend>
-              <p class="field__hint">Marque todos los que considere pertinentes, los afinamos juntos.</p>
+              <legend class="field__label">Servicios que le interesan</legend>
+              <p class="field__hint">Marque los que vea, ya los afinamos juntos.</p>
               <div class="services">
                 {serviceGroups.map((group) => (
                   <div class="services__group">
@@ -159,7 +159,7 @@ const profileOptions = [
 
             <div class="form__row form__row--2">
               <fieldset class="field field--group">
-                <legend class="field__label">El presupuesto que contempla, por el momento</legend>
+                <legend class="field__label">Presupuesto que maneja, por ahora</legend>
                 <div class="choices">
                   {budgetOptions.map((opt) => {
                     const id = `budget-${opt.value.replace(/[^a-zA-Z0-9]+/g, '-')}`;
@@ -174,7 +174,7 @@ const profileOptions = [
               </fieldset>
 
               <fieldset class="field field--group">
-                <legend class="field__label">Unas palabras sobre su empresa</legend>
+                <legend class="field__label">Dos palabras sobre su empresa</legend>
                 <div class="choices">
                   {profileOptions.map((opt) => {
                     const id = `profile-${opt.toLowerCase()}`;
@@ -193,7 +193,7 @@ const profileOptions = [
                       type="text"
                       id="profileOther"
                       name="profileOther"
-                      placeholder="Indique brevemente su actividad"
+                      placeholder="Diga en una línea a qué se dedican"
                       autocomplete="off"
                     />
                   </div>
@@ -202,13 +202,13 @@ const profileOptions = [
             </div>
 
             <div class="field">
-              <label class="field__label" for="message">Unas líneas para presentar su proyecto <span aria-hidden="true">*</span></label>
+              <label class="field__label" for="message">Unas líneas para presentarnos su proyecto <span aria-hidden="true">*</span></label>
               <textarea class="field__input field__input--textarea" id="message" name="message" rows="5" required></textarea>
             </div>
 
             <div class="field field--captcha">
               <label class="field__label" for="captcha">
-                Una pequeña comprobación para descartar robots: ¿cuánto es <span id="captchaA">?</span> + <span id="captchaB">?</span>?
+                Una comprobación rápida para descartar robots: ¿cuánto suman <span id="captchaA">?</span> + <span id="captchaB">?</span>?
                 <span aria-hidden="true">*</span>
               </label>
               <input
@@ -234,7 +234,7 @@ const profileOptions = [
                 Enviar el mensaje
               </button>
               <p class="form__note">
-                Al enviar este formulario, nos autoriza a ponernos en contacto con usted en relación con su consulta. Sus datos quedan exclusivamente en manos de nuestro equipo.
+                Al enviar el formulario nos autoriza a ponernos en contacto con usted sobre su consulta. Sus datos se quedan en casa, sólo los maneja nuestro equipo.
               </p>
             </div>
 
@@ -252,8 +252,8 @@ const profileOptions = [
           </div>
 
           <div class="contact-block">
-            <span class="eyebrow eyebrow--on-dark">Tiempo de respuesta</span>
-            <p class="contact-block__text">En menos de veinticuatro horas hábiles, de lunes a viernes, hora de China continental.</p>
+            <span class="eyebrow eyebrow--on-dark">Plazo de respuesta</span>
+            <p class="contact-block__text">En menos de veinticuatro horas laborables, de lunes a viernes, hora de China continental.</p>
           </div>
 
           <div class="contact-block">
@@ -338,14 +338,14 @@ const profileOptions = [
       const captchaNum = parseInt(payload.captcha, 10);
       const expectedNum = parseInt(payload.captchaExpected, 10);
       if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
-        status.textContent = 'El resultado no es correcto. Los números acaban de cambiar, vuelva a probar.';
+        status.textContent = 'El resultado no es correcto. Los números acaban de cambiar, pruebe otra vez.';
         status.classList.add('form__status--error');
         rollCaptcha();
         return;
       }
 
       if (!payload.name || !payload.email || !payload.message) {
-        status.textContent = 'Por favor, indíquenos su nombre, su correo y un breve mensaje antes de enviar.';
+        status.textContent = 'Por favor, díganos su nombre, su correo y unas líneas antes de enviar.';
         status.classList.add('form__status--error');
         return;
       }
@@ -364,7 +364,7 @@ const profileOptions = [
 
         form.reset();
         rollCaptcha();
-        status.textContent = 'Mensaje recibido. Volvemos hacia usted en breve. Redirigiendo…';
+        status.textContent = 'Mensaje recibido. Le escribimos en breve. Redirigiendo…';
         status.classList.add('form__status--success');
         window.location.assign('/es/gracias');
         return;

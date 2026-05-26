@@ -14,7 +14,7 @@ order: 17
 
 ## La marque
 
-Le groupe Bassetti figure parmi les acteurs européens de la transformation numérique industrielle. Ses logiciels de gestion de l'innovation accompagnent les industriels dans l'optimisation de leurs procédés. L'équipe entendait porter cette expertise auprès du public chinois en direct, sur un site conçu pour les conditions de l'internet local.
+Bassetti compte parmi les acteurs européens de la transformation numérique industrielle. Ses logiciels de gestion de l'innovation aident les industriels à mieux faire tourner leurs procédés. L'équipe voulait porter cette expertise au public chinois en direct, sur un site taillé pour les conditions de l'internet local.
 
 ## Le défi
 
@@ -24,8 +24,8 @@ Bassetti voulait un site dédié à son marché chinois. La plateforme internati
 
 Le chantier s'est ouvert par la conformité et l'infrastructure. Dépôt du nom de domaine en .cn, puis obtention de la licence ICP, sésame obligatoire pour tout site hébergé sur le territoire. Cette licence d'Internet Content Provider s'apparente à un passeport éditorial : elle suppose une revue gouvernementale des références d'entreprise et du plan éditorial.
 
-Le site a ensuite migré sur un cloud chinois. Chaque appel à une ressource externe a fait l'objet d'un audit. Google Fonts a cédé la place à des polices équivalentes compatibles avec la Chine. Google Analytics a laissé sa place à des outils locaux. Les API tierces hébergées hors du territoire ont été soit rapatriées, soit retirées. La pile WordPress et Elementor a été conservée, mais ses fondations techniques entièrement reconstruites. Chaque plugin, chaque script, chaque dépendance est passé au crible. Tout appel franchissant les frontières chinoises a sauté ou été remplacé.
+Le site a ensuite migré sur un cloud chinois. Chaque appel à une ressource externe est passé à l'audit. Google Fonts a cédé la place à des polices compatibles avec la Chine. Google Analytics a basculé sur des outils locaux. Les API tierces hébergées hors du territoire ont été rapatriées ou retirées. La pile WordPress et Elementor est restée, mais ses fondations techniques ont été refaites de zéro. Chaque plugin, chaque script, chaque dépendance est passé au crible. Tout appel qui franchissait la frontière chinoise a sauté ou trouvé un remplaçant local.
 
 ## Résultats
 
-Le site chinois de Bassetti est entré en service en quelques semaines. Le chargement est rapide, aucune ressource Google bloquée ne vient interrompre l'affichage, et les visiteurs chinois retrouvent la fluidité que les utilisateurs européens connaissent sur le site international. Conformité aux réglementations internet chinoises : intégrale. Le nettoyage technique a porté les performances au-dessus de nombreux concurrents pourtant conçus localement. Sur un marché mobile-first, la vitesse fait la différence. Bassetti dispose désormais de cet avantage. Le site est en ligne : https://bassetti-group.cn/.
+Le site chinois de Bassetti est entré en service en quelques semaines. Le chargement file, aucune ressource Google bloquée ne casse l'affichage, et le visiteur chinois retrouve la fluidité que les utilisateurs européens connaissent sur le site international. Conformité réglementaire chinoise : intégrale. Le nettoyage technique a hissé les performances au-dessus de beaucoup de concurrents conçus pourtant localement. Sur un marché mobile-first, la vitesse fait la différence. Bassetti tient cet avantage. Le site est en ligne : https://bassetti-group.cn/.

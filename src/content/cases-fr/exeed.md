@@ -25,7 +25,7 @@ Exeed, marque premium du groupe chinois Chery, poursuit son expansion en Europe 
 
 ## Le défi
 
-La mission : élargir la présence internationale d'Exeed et faire bouger la perception publique sur des marchés où l'automobile premium chinoise reste une catégorie naissante. Cela supposait une exécution PR crédible, à grande échelle, dans des écosystèmes médias très différents les uns des autres, et un récit de marque assez solide pour soutenir la comparaison avec les patronymes européens d'héritage.
+La mission : élargir la présence internationale d'Exeed et faire bouger la perception sur des marchés où l'automobile premium chinoise reste une catégorie en construction. Il fallait une exécution PR crédible, à grande échelle, dans des écosystèmes médias très différents les uns des autres, et un récit de marque assez solide pour tenir la comparaison avec les noms européens d'héritage.
 
 ## Notre approche
 

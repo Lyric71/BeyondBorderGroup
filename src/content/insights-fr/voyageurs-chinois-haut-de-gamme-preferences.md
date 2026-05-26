@@ -11,11 +11,11 @@ heroImageAlt: "Voyageur chinois haut de gamme sur une destination prestige"
 
 ## Lire le voyageur chinois haut de gamme
 
-Pour tout opérateur du tourisme et de l'hôtellerie, lire finement le voyageur chinois aisé conditionne le reste. Cette clientèle croît, se transforme et redessine le marché mondial du voyage haut de gamme à sa main. Ce papier ouvre les profils types, les ressorts qui évoluent et les traits distinctifs du voyageur. Autant de clés pour les marketeurs et les opérateurs qui veulent capter une demande à fort potentiel.
+Pour tout opérateur du tourisme et de l'hôtellerie, lire finement le voyageur chinois aisé commande tout le reste. Cette clientèle grandit, se transforme et redessine le marché mondial du voyage haut de gamme à sa main. Ce papier ouvre les profils types, les ressorts qui évoluent et les traits distinctifs du voyageur. Autant de clés pour les marketeurs et les opérateurs qui veulent capter une demande à fort potentiel.
 
 ## Profils clés : la montée d'une classe aisée
 
-Urbanisation rapide, expansion économique : la Chine a vu émerger une classe aisée en pleine croissance. Le revenu disponible progresse, la demande pour des expériences de voyage premium suit, en Chine comme à l'étranger. La Chine s'installe comme un acteur central du marché mondial du luxe touristique. Tous les indicateurs annoncent une trajectoire soutenue.
+Urbanisation rapide, expansion économique : la Chine a vu émerger une classe aisée en pleine croissance. Le revenu disponible progresse, la demande pour des expériences de voyage premium suit, en Chine comme à l'étranger. La Chine s'installe en acteur central du marché mondial du luxe touristique. Tous les indicateurs annoncent une trajectoire soutenue.
 
 Ces voyageurs sortent principalement des grandes métropoles : Pékin, Shanghai, Canton. Bien formés, à l'aise avec la technologie, exigeants dans leurs arbitrages. Ils valorisent l'exclusivité, le confort et l'expérience singulière qui reflète à la fois leur statut et leur goût personnel.
 
@@ -45,7 +45,7 @@ Nuance entre générations. Les voyageurs mûrs privilégient l'exclusivité. Le
 
 ## Le poids du statut social et de la « face »
 
-La notion chinoise de « face », ce désir de ne pas perdre la considération sociale, pèse lourd dans la décision d'achat. Le voyageur de luxe retient les biens et services qui renforcent sa position et écarte tout ce qui pourrait susciter la moindre gêne dans son entourage. Cette nuance culturelle façonne en profondeur ses préférences de voyage et ses choix de [marque](/fr/entrer-en-chine/marque-et-localisation).
+La notion chinoise de « face », ce désir de ne pas perdre la considération sociale, pèse lourd dans la décision d'achat. Le voyageur de luxe retient les biens et services qui solidifient sa position et écarte tout ce qui pourrait susciter la moindre gêne dans son entourage. Cette nuance culturelle façonne en profondeur ses préférences de voyage et ses choix de [marque](/fr/entrer-en-chine/marque-et-localisation).
 
 ## Personnalisation et authenticité
 

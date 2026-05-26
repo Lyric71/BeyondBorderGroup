@@ -11,7 +11,7 @@ heroImageAlt: "Diferencia entre alojamiento web y dominio"
 
 ## Cómo alojar su sitio web en China para sacar el máximo partido de marketing
 
-Alojar un sitio web en China es un paso esencial para acceder a uno de los mayores mercados online del mundo. Con más de mil millones de usuarios de internet y un sector de eCommerce en plena expansión, China ofrece oportunidades enormes para las marcas internacionales. El proceso, sin embargo, requiere planificación, cumplimiento normativo y una visión clara del ecosistema digital del mercado.
+Alojar un sitio web en China es un paso esencial para acceder a uno de los mayores mercados online del mundo. Con más de mil millones de usuarios de internet y un sector de eCommerce en plena expansión, China abre oportunidades enormes a las marcas internacionales. El proceso, eso sí, pide planificación, cumplimiento normativo y una visión clara del ecosistema digital del mercado.
 
 Si pone el foco en un buen [alojamiento web](/es/crecer-en-china/sitio-web), apoyándose en herramientas como Baidu China y adaptando la web a las preferencias locales, puede construir una presencia digital potente al servicio de sus objetivos. Esta guía recorre los pasos clave para alojar la web en China, sin dejar de señalar oportunidades para integrarse con las plataformas chinas de eCommerce y sacar partido a los buscadores locales.
 

@@ -14,7 +14,7 @@ heroImageAlt: "Calendario de festivales chinos 2025"
 
 En China, los festivales del eCommerce hacen mucho más que ocupar una casilla en el calendario. Cada cita es una ocasión para disparar ventas, ganar visibilidad de marca y reforzar la relación con el cliente. En un mercado donde la tradición cultural pesa tanto como el dinamismo digital, cada festival abre una ventana distinta para las marcas que quieran captar la atención del consumidor chino.
 
-Para quienes operan en el eCommerce chino, el contexto resulta especialmente favorable a los vendedores transfronterizos. Apoyándose en el Cross-Border eCommerce, una marca puede llegar a un público ávido de productos internacionales y, al mismo tiempo, moverse en las reglas particulares del mercado.
+Para quien opera en el eCommerce chino, el contexto resulta especialmente favorable a los vendedores transfronterizos. Apoyándose en el Cross-Border eCommerce, una marca puede llegar a un público con apetito por los productos internacionales y, a la vez, moverse dentro de las reglas particulares del mercado.
 
 Este artículo recorre con detalle los grandes festivales del eCommerce en 2025 y propone pautas para alinear las [campañas](/es/crecer-en-china/campanas) con las tendencias de consumo y los valores culturales locales.
 

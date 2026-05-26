@@ -24,7 +24,7 @@ images:
 
 ## La marque
 
-Age 20's, maison coréenne de beauté, doit l'essentiel de sa notoriété à ses fonds de teint cushion. Le lancement visait un saut de registre : faire passer la marque du statut de référence fonctionnelle à celui de choix lifestyle premium pour les urbaines chinoises actives, autour d'une nouvelle ligne dont le packaging emprunte à l'univers des desserts.
+Age 20's, maison coréenne de beauté, doit l'essentiel de sa notoriété à ses fonds de teint cushion. Le lancement visait un saut de registre : sortir du statut de référence fonctionnelle pour s'installer comme choix lifestyle premium auprès des urbaines chinoises actives, autour d'une nouvelle ligne au packaging signé pâtisserie.
 
 ## Le défi
 

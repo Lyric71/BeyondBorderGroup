@@ -11,7 +11,7 @@ heroImageAlt: "Illustration de la licence ICP"
 
 ## Licence ICP : la procédure pour exploiter légalement un site en Chine
 
-L'extension d'une activité au [marché chinois](/fr/entrer-en-chine/conseil-en-entree-de-marche) ouvre un potentiel considérable, particulièrement pour les acteurs de l'e-commerce et du marketing digital. Cette croissance s'accompagne d'exigences réglementaires strictes. L'une des étapes les plus importantes pour exploiter légalement un [site web](/fr/se-developper-en-chine/site-web) en Chine consiste à décrocher une licence ICP (Internet Content Provider). À défaut, le site peut être bloqué, sanctionné, voire fermé. La porte se referme alors sur l'une des audiences en ligne les plus vastes au monde.
+Étendre son activité au [marché chinois](/fr/entrer-en-chine/conseil-en-entree-de-marche) ouvre un potentiel énorme, en particulier pour les acteurs de l'e-commerce et du marketing digital. Cette croissance vient avec des exigences réglementaires serrées. L'une des étapes décisives pour exploiter légalement un [site web](/fr/se-developper-en-chine/site-web) en Chine : décrocher la licence ICP (Internet Content Provider). À défaut, le site peut être bloqué, sanctionné, voire fermé. La porte se referme alors sur l'une des plus vastes audiences en ligne au monde.
 
 Ce guide détaille la procédure, particulièrement pour les opérateurs d'une plateforme e-commerce ou les marques qui collaborent avec une agence marketing en Chine. Au programme : acteurs concernés, types de licence disponibles, marche à suivre étape par étape, bénéfices marketing d'une mise en conformité.
 

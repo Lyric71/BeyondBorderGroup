@@ -26,12 +26,12 @@ ROC Skincare es una marca francesa de cuidado de la piel, basada en productos av
 
 ## El reto
 
-Nos encargaron, como agencia de branding, localizar ROC Skincare para el mercado chino. El mandato era amplio. Cubría la adaptación de la historia de marca, la experiencia, la identidad visual, el logotipo y el nombre chino, y también el establecimiento de guidelines de fotografía, vídeo y diseño web. ROC quería una presencia en China que se sintiera genuinamente francesa sin parecer ajena, y genuinamente local sin alejarse de la marca global.
+Nos encargaron, como agencia de branding, localizar ROC Skincare para el mercado chino. El mandato era amplio. Cubría la adaptación de la historia de marca, la experiencia, la identidad visual, el logotipo y el nombre chino, y también el establecimiento de guidelines de fotografía, vídeo y diseño web. ROC quería una presencia en China que se sintiera genuinamente francesa sin sonar ajena, y genuinamente local sin alejarse de la marca global.
 
 ## Nuestro enfoque
 
-Nos apoyamos en un conocimiento profundo tanto de la elegancia francesa como de los matices culturales chinos para que el ADN de la marca llegara intacto, ya relevante y atractivo para el consumidor chino. Reconstruimos cada capa de la marca por orden: primero posicionamiento y relato, luego nombre, luego sistema de identidad visual, y al final guidelines de packaging y aplicación. Cada decisión se contrastaba con una pregunta sencilla. ¿Entendería un consumidor chino esto como premium, eficaz y clínicamente creíble?
+Tiramos del conocimiento profundo, tanto de la elegancia francesa como de los matices culturales chinos, para que el ADN de la marca llegara intacto, ya relevante y atractivo para el consumidor chino. Reconstruimos cada capa de la marca por orden: primero posicionamiento y relato, luego nombre, después sistema de identidad visual y al final guidelines de packaging y aplicación. Cada decisión se contrastaba con una pregunta sencilla. ¿Entendería un consumidor chino esto como premium, eficaz y clínicamente creíble?
 
 ## Resultados
 
-El resultado es una presencia de ROC Skincare en China que conserva los valores fundacionales de la marca sin perder su carácter francés. Su legado se combinó con elementos pensados para el mercado chino, generando una historia y una identidad visual al servicio del consumidor chino preocupado por su salud. La localización se aplica en cada punto de contacto y mantiene a ROC coherente con sus estándares globales.
+El resultado es una presencia de ROC Skincare en China que conserva los valores fundacionales de la marca sin perder su carácter francés. Su legado se mezcló con elementos pensados para el mercado chino, dando una historia y una identidad visual al servicio del consumidor chino preocupado por su salud. La localización se aplica en cada punto de contacto y mantiene a ROC alineada con sus estándares globales.

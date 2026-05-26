@@ -12,7 +12,7 @@ heroImageAlt: "Imagen promocional de KOL chinos"
 
 ## El eCommerce chino vive un momento dulce en 2024
 
-En 2024, el eCommerce chino crece a ritmo fuerte: innovación tecnológica, un consumidor que vive en el móvil y un papel central de los KOL. Plataformas como [Xiaohongshu](/es/crecer-en-china/comercio-social) (RED) y Douyin han cambiado la forma en que las marcas se relacionan con su audiencia. Los KOL hacen de puente entre marca y consumidor con tres armas: autenticidad, confianza y creatividad puesta al servicio de la venta.
+En 2024, el eCommerce chino crece a buen ritmo: innovación tecnológica, un consumidor que vive en el móvil y un papel central de los KOL. Plataformas como [Xiaohongshu](/es/crecer-en-china/comercio-social) (RED) y Douyin han cambiado la forma en que las marcas se relacionan con su audiencia. Los KOL hacen de puente entre marca y consumidor con tres armas: autenticidad, confianza y creatividad puesta al servicio de la venta.
 
 Muchas marcas se apoyan, además, en una agencia de marketing digital o de medios en China para sacar partido a esas colaboraciones. Veamos quiénes son hoy los KOL de referencia en el eCommerce chino, en qué plataformas operan y qué aportan al ecosistema de marketing.
 

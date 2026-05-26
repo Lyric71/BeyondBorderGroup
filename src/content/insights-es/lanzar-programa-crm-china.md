@@ -12,7 +12,7 @@ heroImageAlt: "Mujer eligiendo la palabra CRM entre bloques de madera"
 
 ## Por qué importa el CRM en China
 
-Las plataformas de CRM centralizan el dato del cliente y permiten mejorar su satisfacción, seguir su comportamiento y afinar el esfuerzo de marketing. En China, donde el consumidor valora la experiencia personalizada, el CRM es indispensable para responder a sus expectativas y elevar la tasa de retención.
+Las plataformas de CRM centralizan el dato del cliente y permiten mejorar su satisfacción, seguir su comportamiento y afinar el esfuerzo de marketing. En China, donde el consumidor valora la experiencia personalizada, el CRM es indispensable para responder a sus expectativas y tirar de la retención.
 
 China alberga, además, uno de los ecosistemas de eCommerce más avanzados del mundo, dominado por plataformas como [WeChat](/es/crecer-en-china/comercio-social), Tmall y JD.com. Integrar herramientas de CRM con estas plataformas permite recoger datos, analizar comportamientos y personalizar la comunicación con eficacia. Las empresas que exploran el comercio transfronterizo o el eCommerce en Douyin también ganan mucho al apoyarse en sistemas de CRM con buen soporte al marketing basado en datos.
 

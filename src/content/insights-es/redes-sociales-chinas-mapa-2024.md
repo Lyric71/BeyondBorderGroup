@@ -12,7 +12,7 @@ heroImageAlt: "Banner de plataformas de redes sociales 2021"
 
 ## Dónde se gana la atención: el mapa de las redes sociales chinas en 2024
 
-En 2024, el ecosistema digital chino sigue moviéndose y ofrece a las marcas globales vías reales para conectar con una de las mayores bases de consumidores del mundo. Las [plataformas](/es/conocer-china/plataformas) chinas de redes sociales como [WeChat](/es/crecer-en-china/comercio-social), Weibo y TikTok pesan mucho más allá de China, gracias a unas bases de usuarios enormes y a una funcionalidad muy diversa. Entender y apalancar estas plataformas es ya imprescindible para cualquier marca que quiera reforzar su presencia en el mercado chino. Este artículo recorre las principales plataformas chinas y explica cómo ponerlas a trabajar para el marketing de marca.
+En 2024, el ecosistema digital chino sigue moviéndose y abre a las marcas globales vías reales para conectar con una de las mayores bases de consumidores del mundo. Las [plataformas](/es/conocer-china/plataformas) chinas de redes sociales como [WeChat](/es/crecer-en-china/comercio-social), Weibo y TikTok pesan mucho más allá de China, por sus bases de usuarios enormes y por una funcionalidad muy diversa. Entender y tirar de estas plataformas es ya imprescindible para cualquier marca que quiera reforzar su presencia en el mercado chino. Este artículo recorre las principales plataformas chinas y explica cómo ponerlas a trabajar para el marketing de marca.
 
 ## Por qué las redes sociales chinas pesan para las marcas globales
 

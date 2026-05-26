@@ -12,7 +12,7 @@ heroImageAlt: "Portada sobre social commerce en China"
 
 ## Social commerce en China: plataformas, estrategias e impacto en el mercado
 
-El [social commerce](/es/crecer-en-china/comercio-social) ha cambiado por completo la forma en que se compra online, sobre todo en China. Esta mezcla de interacción social y comercio digital ha levantado un ecosistema donde el consumidor dialoga con marcas, influencers y otros usuarios como en ningún otro mercado. Las [plataformas](/es/conocer-china/plataformas) chinas de social commerce, entre ellas Xiaohongshu, WeChat, Douyin, Taobao, Pinduoduo y Weibo, llevan años marcando el rumbo de esa transformación. Apalancan contenido de los propios usuarios, KOL (Key Opinion Leaders) y funcionalidades como el livestream para que comprar también sea ver, comentar y dejarse aconsejar.
+El [social commerce](/es/crecer-en-china/comercio-social) ha cambiado de raíz cómo se compra online, sobre todo en China. Esta mezcla de interacción social y comercio digital ha levantado un ecosistema donde el consumidor dialoga con marcas, influencers y otros usuarios como en ningún otro mercado. Las [plataformas](/es/conocer-china/plataformas) chinas de social commerce, entre ellas Xiaohongshu, WeChat, Douyin, Taobao, Pinduoduo y Weibo, llevan años marcando el rumbo de esa transformación. Tiran del contenido de los propios usuarios, de los KOL (Key Opinion Leaders) y de funciones como el livestream para que comprar también sea ver, comentar y dejarse aconsejar.
 
 ## La irrupción del social commerce en China
 

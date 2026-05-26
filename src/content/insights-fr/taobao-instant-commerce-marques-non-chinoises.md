@@ -70,8 +70,8 @@ La réponse à apporter dépend de la position actuelle de la marque.
 
 ### Marques établies avec un réseau de magasins en Chine
 
-* Lire Double 11 et le trimestre suivant comme un diagnostic des attentes de rapidité dans votre catégorie.
-* Tester quelques magasins comme hubs de livraison en jour J ou J+1, sur des références faciles à réassortir.
+* Lire Double 11 et le trimestre suivant en diagnostic des attentes de rapidité dans votre catégorie.
+* Tester quelques magasins en hubs de livraison en jour J ou J+1, sur des références faciles à réassortir.
 * Profiter des pilotes pour apprendre à parler vitesse sans verser dans le pur discours promotionnel.
 
 ### Marques pure player ou cross-border
@@ -83,7 +83,7 @@ La réponse à apporter dépend de la position actuelle de la marque.
 ### Marques premium en construction
 
 * Protéger d'abord la perception. La rapidité ne doit pas glisser automatiquement vers la lecture « bon marché » ou « grand public ».
-* Concentrer l'investissement sur le search et la mise en visibilité chez Tmall et Taobao. Traiter toute activité d'instant commerce comme une expérience de visibilité, pas comme un moteur de volume.
+* Concentrer l'investissement sur le search et la mise en visibilité chez Tmall et Taobao. Traiter toute activité d'instant commerce en expérience de visibilité, pas en moteur de volume.
 
 ![](/Images/insights/2025/11/TB-instant-commerce-3-1024x576.png)
 

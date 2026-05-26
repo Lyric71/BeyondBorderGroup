@@ -11,7 +11,7 @@ heroImageAlt: "Diseño y localización de sitios web chinos"
 
 ## Por qué importa localizar la web para China
 
-Localizar el [sitio web](/es/crecer-en-china/sitio-web) para el mercado chino, una especialidad de las agencias de eCommerce con presencia en China, va mucho más allá de traducir. Es la pieza clave para encajar con la normativa local y con lo que el consumidor chino espera de una web. Una [localización](/es/entrar-en-china/marca-y-localizacion) bien hecha hace que el sitio sea accesible, culturalmente relevante y conforme a la ley, y eso eleva de forma directa la presencia y el rendimiento del negocio en el eCommerce chino.
+Localizar el [sitio web](/es/crecer-en-china/sitio-web) para el mercado chino, una especialidad de las agencias de eCommerce con presencia en China, va mucho más allá de traducir. Es la pieza clave para encajar con la normativa local y con lo que el consumidor chino espera de una web. Una [localización](/es/entrar-en-china/marca-y-localizacion) bien hecha hace que el sitio sea accesible, culturalmente relevante y dentro de la ley, y eso tira de forma directa de la presencia y el rendimiento del negocio en el eCommerce chino.
 
 ### El Gran Cortafuegos y la censura
 

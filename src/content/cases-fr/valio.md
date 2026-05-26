@@ -34,10 +34,10 @@ Nous avons joué un rôle pivot dans le lancement d'eila en Chine. Le périmètr
 
 ## Notre approche
 
-Le premier chantier a porté sur la cartographie concurrentielle et un examen serré du positionnement de Valio. L'espace optimal pour eila a été repéré, à distance des territoires trop mainstream comme trop extrêmes, dans un équilibre capable de séduire les profils consommateurs extravertis comme introvertis. Le positionnement traduisait l'héritage Valio tout en répondant aux attributs que les consommateurs chinois attendent d'une marque laitière premium.
+Le premier chantier a porté sur la cartographie concurrentielle et un examen serré du positionnement de Valio. On a repéré l'espace optimal pour eila, à distance des territoires trop mainstream comme trop extrêmes, sur un équilibre capable de toucher autant les profils extravertis que les introvertis. Le positionnement portait l'héritage Valio tout en cochant les attributs que les consommateurs chinois attendent d'un laitier premium.
 
-Sur cette fondation, le travail s'est étendu à la localisation et au naming, jusqu'à l'élaboration d'un nom chinois sonore et identifiable pour eila. Un système d'identité visuelle complet a ensuite été déployé, logo CN compris, étendu au packaging et à de nombreuses applications. La marque pouvait se présenter sur le marché entièrement habillée.
+Sur cette base, le travail s'est étendu à la localisation et au naming, jusqu'à l'élaboration d'un nom chinois sonore et reconnaissable pour eila. Un système d'identité visuelle complet a suivi, logo CN compris, étendu au packaging et à un large éventail d'applications. La marque pouvait se présenter sur le marché habillée de pied en cap.
 
 ## Résultats
 
-Cette approche resserrée a élevé Valio et eila dans le paysage laitier chinois. En conjuguant intégrité de la marque globale et sensibilité locale, elle a sécurisé une entrée de marché confiante et inscrit Valio dans la durée. Au bout du compte, une histoire d'héritage finlandais qui se lit en premium authentique côté consommateurs chinois, sans rien céder de ce qui fait Valio.
+Cette approche resserrée a installé Valio et eila dans le paysage laitier chinois. En mariant l'intégrité de la marque globale et la sensibilité locale, elle a sécurisé une entrée de marché solide et inscrit Valio dans la durée. Au bout du compte, un héritage finlandais qui se lit en premium authentique aux yeux du consommateur chinois, sans rien lâcher de ce qui fait Valio.

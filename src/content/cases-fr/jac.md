@@ -27,7 +27,7 @@ JAC est un constructeur automobile chinois dont la gamme électrique s'étoffe, 
 
 ## Le défi
 
-La production d'assets globaux ne tolère aucune approximation. Un même véhicule doit garder sa cohérence sur les sites concessionnaires, les configurateurs, les supports print, les réseaux sociaux et les campagnes régionales. Marché par marché, résolution par résolution. JAC voulait des visuels au pixel près couvrant l'extérieur comme l'intérieur du nouveau modèle, prêts à entrer dans des systèmes partenaires très contrastés sans rien perdre de leur intention.
+La production d'assets globaux ne tolère pas l'à-peu-près. Un même véhicule doit garder sa cohérence sur les sites concessionnaires, les configurateurs, les supports print, les réseaux sociaux et les campagnes régionales. Marché par marché, résolution par résolution. JAC voulait des visuels au pixel près sur l'extérieur comme sur l'intérieur du nouveau modèle, prêts à entrer dans des systèmes partenaires très contrastés sans rien perdre de leur intention.
 
 ## Notre approche
 

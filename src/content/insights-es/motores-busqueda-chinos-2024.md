@@ -11,11 +11,11 @@ heroImageAlt: "Motor de búsqueda chino"
 
 ## Cómo funciona el mercado de buscadores en China
 
-Internet en China tiene reglas propias. La regulación gubernamental, incluido el Gran Cortafuegos, bloquea buena parte de los sitios y buscadores internacionales, y eso ha dejado espacio a una serie de motores nacionales pensados para el usuario local. En 2024 los protagonistas son Baidu, Sogou, Shenma y Haosuo. Cada uno tiene su público y sus puntos fuertes.
+Internet en China va por sus propias reglas. La regulación gubernamental, incluido el Gran Cortafuegos, bloquea buena parte de los sitios y buscadores internacionales, y eso ha dejado espacio a una serie de motores nacionales pensados para el usuario local. En 2024 los protagonistas son Baidu, Sogou, Shenma y Haosuo. Cada uno tiene su público y sus puntos fuertes.
 
 ## Por qué pesan tanto en cualquier plan de marketing
 
-Los buscadores chinos son centrales en el marketing digital. Marcan las prioridades de SEO, condicionan la compra de medios en [campañas](/es/crecer-en-china/campanas) y orientan el comportamiento del consumidor. Saber cuáles priorizar puede cambiar por completo los resultados de una marca que quiera llegar al consumidor chino.
+Los buscadores chinos son centrales en el marketing digital. Marcan las prioridades de SEO, condicionan la compra de medios en [campañas](/es/crecer-en-china/campanas) y orientan el comportamiento del consumidor. Saber cuáles priorizar puede cambiar de plano los resultados de una marca que quiera llegar al consumidor chino.
 
 ## Los principales motores de búsqueda en 2024
 
@@ -81,4 +81,4 @@ El SEO en China es otra disciplina. Cada motor tiene su propio algoritmo y sus p
 
 ## Conclusión
 
-Elegir el buscador adecuado para una marca en 2024 depende del objetivo y del público al que se quiera llegar. Baidu sigue siendo la referencia, pero Sogou, Shenma o Haosuo aportan ventajas concretas que pueden encajar mejor en estrategias específicas. Conocer los puntos fuertes de cada uno y ajustar el enfoque a esa realidad permite llegar al consumidor chino con mucha más solvencia.
+Escoger el buscador que toca para una marca en 2024 depende del objetivo y del público al que se quiera llegar. Baidu sigue siendo la referencia, pero Sogou, Shenma o Haosuo aportan ventajas concretas que pueden encajar mejor en estrategias específicas. Conocer los puntos fuertes de cada uno y ajustar el planteamiento a esa realidad permite llegar al consumidor chino con mucha más solvencia.

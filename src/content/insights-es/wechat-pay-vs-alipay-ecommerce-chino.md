@@ -11,7 +11,7 @@ heroImage: "/Images/insights/wechat-pay-vs-alipay-best-mobile-payment-for-ecomme
 heroImageAlt: "Comparativa entre WeChat Pay y Alipay"
 ---
 
-## China se ha convertido en una sociedad sin efectivo. El pago móvil ya manda y el duelo se juega entre WeChat Pay y Alipay. Cada uno tiene su lógica y sus ventajas. Saber en qué se diferencian es lo que permite a una marca elegir bien al integrar pagos en su operación de eCommerce en China.
+## China se ha convertido en una sociedad sin efectivo. El pago móvil ya manda y el duelo se juega entre WeChat Pay y Alipay. Cada uno tiene su lógica y sus ventajas. Saber en qué se diferencian es lo que permite a una marca acertar al integrar pagos en su operación de eCommerce en China.
 
 ## WeChat Pay: en qué consiste y para qué sirve
 

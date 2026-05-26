@@ -133,7 +133,7 @@ Taobao Flash Sale n'est pas « un onglet de plus ».
 
 C'est une voie avec son rythme, ses indicateurs et ses contraintes.
 
-À traiter comme un playbook neuf :
+À traiter en playbook neuf :
 
 * Revue hebdomadaire de l'assortiment et des stocks.
 * Calendriers promotionnels au niveau magasin ou ville.
@@ -160,6 +160,6 @@ Sans réponse, le retard ne se joue pas sur le marketing. Il se joue sur le mod�
 
 Le retail chinois ne tranche plus entre online et offline. Il les comprime dans une seule expérience. Taobao Flash Sale signale que la prochaine phase de croissance reviendra aux marques capables de relier création de demande et livraison locale, sans perdre la main sur leur marque.
 
-La question n'est pas de savoir si la tendance se prolongera. La question est de savoir si l'équipe Chine est structurée pour gagner à l'intérieur. BBG accompagne les marques internationales dans cette bascule, avec une exécution concrète. Le périmètre couvre la stratégie Taobao et Tmall, la préparation au retail instantané, les systèmes de contenu et de merchandising orientés conversion, et l'intégration avec les canaux clés que sont Douyin, Xiaohongshu et WeChat.
+La question n'est pas de savoir si la tendance se prolongera. La question est de savoir si l'équipe Chine est structurée pour gagner à l'intérieur. BBG accompagne les marques internationales dans cette bascule, avec une exécution concrète. Le périmètre couvre la stratégie Taobao et Tmall, la préparation au retail instantané, les systèmes de contenu et de merchandising orientés conversion, l'intégration avec les canaux clés que sont Douyin, Xiaohongshu et WeChat.
 
 Pour les marques qui explorent Taobao Flash Sale, BBG aide à définir la bonne voie d'assortiment, le bon dispositif partenaires et le bon plan de go-to-market, puis à localiser les actifs et le rythme opérationnel qui rendront tout cela viable, ville après ville.

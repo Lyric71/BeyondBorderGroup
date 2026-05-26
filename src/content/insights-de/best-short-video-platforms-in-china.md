@@ -14,11 +14,11 @@ heroImageAlt: "Vergleich der Plattformen Douyin und Kuaishou"
 
 Digital-Marketing in China stützt sich heute stark auf Kurzvideo. Diese Formate fangen Aufmerksamkeit schnell ein und heben Engagement. Marken, die Kurzvideo-[Plattformen](/de/china-verstehen/plattformen) beherrschen, profitieren von:
 
-- Hoher Interaktionsrate, Kurzvideos sind leicht zu konsumieren und einbindend.
-- Riesiger Reichweite, Plattformen wie Douyin und Kuaishou zählen Hunderte Millionen aktive Nutzer.
-- Mobile-First-Konsum, chinesische Verbraucher bevorzugen Kurzformat unterwegs.
-- Algorithmischer Zielausrichtung, KI bringt Inhalte zur passenden Audience.
-- eCommerce-Integration, viele Plattformen erlauben Kauf direkt in der App.
+- Hohe Interaktionsrate, Kurzvideos sind leicht zu konsumieren und ziehen schnell in den Bann.
+- Riesige Reichweite, Plattformen wie Douyin und Kuaishou zählen Hunderte Millionen aktive Nutzer.
+- Mobile-First-Konsum, chinesische Käufer bevorzugen das Kurzformat unterwegs.
+- Algorithmische Zielausrichtung, KI bringt Inhalte zur passenden Zielgruppe.
+- eCommerce-Integration, viele Plattformen lassen den Kauf direkt in der App zu.
 
 Kurzvideos unterhalten und prägen zugleich Kaufentscheidungen. Viele erfolgreiche Marken arbeiten mit chinesischen Branding-Agenturen an interaktiven Inhalten, die über Storytelling den Kauf treiben.
 
@@ -56,7 +56,7 @@ Kuaishou ist eine Spitzenplattform mit 529 Millionen aktiven Nutzern. Während D
 
 #### Warum Marken Kuaishou nutzen
 
-Kuaishou ist ideal für Marken, die langfristiges Vertrauen aufbauen wollen. Authentisches Engagement macht die Plattform zur ersten Wahl für Anbieter, die mit einer Branding-Agentur in China ihre Position in den Tier-2- und Tier-3-Städten stärken. Livestream-Commerce auf Kuaishou erreicht hohe Konversionsraten, weil Verbraucher Empfehlungen ihrer Lieblings-Creator vertrauen.
+Kuaishou ist ideal für Marken, die langfristiges Vertrauen aufbauen wollen. Authentisches Engagement macht die Plattform zur ersten Wahl für Anbieter, die mit einer Branding-Agentur in China ihre Position in den Tier-2- und Tier-3-Städten stärken. Livestream-Commerce auf Kuaishou erreicht hohe Konversionsraten, weil Käufer Empfehlungen ihrer Lieblings-Creator vertrauen.
 
 ## Wichtige Marketing-Strategien auf den chinesischen Kurzvideo-Plattformen
 
@@ -72,7 +72,7 @@ Livestream ist zum dominanten eCommerce-Trend geworden, mit Douyin und Kuaishou 
 - Mit Kunden über Q&A zu interagieren
 - Exklusive Aktionen zu setzen, um Umsatz zu treiben
 
-Da Konsumenten in Live-Sessions stark engagiert sind, hilft die Zusammenarbeit mit einer Digital-Marketing-Agentur in China, überzeugende Live-Inhalte zu bauen und das Verkaufspotenzial zu maximieren.
+Da Käufer in Live-Sessions stark engagiert sind, hilft die Zusammenarbeit mit einer Digital-Marketing-Agentur in China, überzeugende Live-Inhalte zu bauen und das Verkaufspotenzial auszuschöpfen.
 
 ### Nutzergenerierter Content (UGC)
 
@@ -105,7 +105,7 @@ Beide Plattformen dominieren in China, sprechen aber unterschiedliche Audiences 
   - Schnelles, virales Marketing.
   - KI-gestütztes Targeting in bezahlter Werbung.
   - Energiegeladenen, kreativen Trend-Content.
-  - Urbane, trend-sensible Verbraucher.
+  - Urbane, trend-sensible Käufer.
 
 - Kuaishou, wenn Sie wollen:
   - Langfristiges Vertrauen und Loyalität.

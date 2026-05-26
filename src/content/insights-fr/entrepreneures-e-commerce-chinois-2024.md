@@ -12,7 +12,7 @@ heroImageAlt: "Jeune entrepreneure asiatique au travail dans sa petite entrepris
 
 ## La poussée des entrepreneures sur le numérique chinois
 
-L'essor du [commerce numérique en Chine](https://beyondbordergroup.com/ecommerce-services-in-china/) rebat les cartes pour les fondatrices, et 2024 confirme la bascule. Les plateformes ont fait sauter le verrou du capital initial, les outils marketing se démocratisent, de nouvelles voies s'ouvrent aux femmes pour lancer puis faire grandir leur affaire. Le mouvement déborde les trajectoires individuelles. Il irrigue la croissance économique au sens large.
+L'essor du [commerce numérique en Chine](https://beyondbordergroup.com/ecommerce-services-in-china/) rebat les cartes pour les fondatrices, et 2024 confirme la bascule. Les plateformes ont fait sauter le verrou du capital initial, les outils marketing se démocratisent, de nouvelles voies s'ouvrent aux femmes pour lancer puis faire grandir leur affaire. Le mouvement déborde le cadre individuel. Il irrigue la croissance économique au sens large.
 
 ## Des plateformes qui rebattent les cartes
 

@@ -11,7 +11,7 @@ heroImageAlt: "Agricultrice asiatique avec une tablette numérique dans un potag
 
 ## Pourquoi le marketing vert pèse en Chine
 
-Le marketing vert s'est imposé en levier puissant. Il signale l'engagement environnemental d'une [marque](/fr/entrer-en-chine/marque-et-localisation) et trouve un écho profond chez des consommateurs qui scrutent l'étiquette écologique avant de passer en caisse. Les [campagnes](/fr/se-developper-en-chine/campagnes) vertes les plus marquantes éclairent les enjeux climatiques. Mieux : elles installent des habitudes plus sobres dans le quotidien.
+Le marketing vert s'est imposé en levier puissant. Il signale l'engagement environnemental d'une [marque](/fr/entrer-en-chine/marque-et-localisation) et trouve un écho profond chez des consommateurs qui scrutent l'étiquette écologique avant de passer en caisse. Les [campagnes](/fr/se-developper-en-chine/campagnes) vertes les plus marquantes éclairent les enjeux climatiques. Mieux : elles installent des habitudes plus sobres dans la vie quotidienne.
 
 ## Starbucks et Proya ouvrent la voie
 

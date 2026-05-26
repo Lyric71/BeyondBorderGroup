@@ -24,11 +24,11 @@ images:
 
 ## Die Marke
 
-Langnese ist Deutschlands führende Honigmarke, mit mehr als einem Jahrhundert Imker-Expertise und einer Premium-Positionierung in den europäischen Märkten. In China hatte die Marke Distribution und Regalplatz im modernen Handel gesichert, doch das Geschäft verhielt sich nicht wie das einer europäischen Premiummarke.
+Langnese ist Deutschlands führende Honigmarke, mit über einem Jahrhundert Imker-Expertise und einer Premium-Positionierung in den europäischen Märkten. In China hatte die Marke Distribution und Regalplatz im modernen Handel gesichert. Das Geschäft verhielt sich allerdings nicht wie das einer europäischen Premiummarke.
 
 ## Die Aufgabe
 
-Die Umsätze gingen Monat für Monat zurück, obwohl die Distribution stand. Die Ursache war einfach: Chinesische Verbraucher hatten keinen klaren Grund, für Langnese rund das Doppelte zu zahlen, wenn lokale Honigmarken direkt daneben im Regal standen. Der Markt hatte sich weiterbewegt, neue Formate, neue Kanäle, neue Konsumanlässe, das China-Playbook der Marke nicht.
+Die Umsätze gingen Monat für Monat zurück, obwohl die Distribution stand. Die Ursache war einfach: Chinesische Käufer hatten keinen klaren Grund, für Langnese rund das Doppelte zu zahlen, wenn lokale Honigmarken direkt daneben im Regal stehen. Der Markt hatte sich weiterbewegt, neue Formate, neue Kanäle, neue Konsumanlässe. Das China-Playbook der Marke hatte sich nicht mitbewegt.
 
 ## Unser Vorgehen
 
@@ -39,8 +39,8 @@ Wir haben das Bild von Grund auf neu gezeichnet, statt am bestehenden Plan zu sc
 - Konsumentenforschung in Tier-1- und Tier-2-Städten gefahren, um die tatsächlichen Kauftreiber zu isolieren
 - Unterversorgte Segmente und neue Konsumanlässe identifiziert, in denen ein europäischer Premium-Honig wirklich gewinnen kann
 
-Daraus haben wir mit Kunde und Vertriebspartner den Marktangang neu gebaut: neue Vertriebskanäle, neue Produktformate, abgestimmt darauf, wie chinesische Verbraucher Honig tatsächlich nutzen, und plattformspezifische Inhalte, die das Premium-Argument glaubwürdig erzählen.
+Daraus haben wir gemeinsam mit Kunde und Vertriebspartner den Marktangang neu gebaut: neue Vertriebskanäle, neue Produktformate, abgestimmt darauf, wie chinesische Käufer Honig tatsächlich verwenden, und plattformspezifische Inhalte, die das Premium-Argument glaubwürdig erzählen.
 
 ## Ergebnisse
 
-Der Rückgang wurde gedreht. Marke und Vertriebspartner einigten sich auf neun Wachstumssäulen, die zum operativen Plan der nächsten Phase wurden. Langnese öffnete neue Regionalkanäle, in denen vorher keine Präsenz bestand. Das Engagement des Vertriebspartners kehrte zurück. Chinesische Verbraucher hatten endlich echte Gründe, Langnese gegenüber den lokalen Alternativen zu wählen, jenseits des höheren Preises.
+Der Rückgang ist gedreht. Marke und Vertriebspartner haben sich auf neun Wachstumssäulen geeinigt, die zum operativen Plan der nächsten Phase wurden. Langnese öffnete neue Regionalkanäle, in denen vorher keine Präsenz bestand. Das Engagement des Vertriebspartners kam zurück. Chinesische Käufer hatten endlich echte Gründe, Langnese gegenüber den lokalen Alternativen zu wählen, jenseits des höheren Preises.

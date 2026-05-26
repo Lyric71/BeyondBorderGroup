@@ -17,11 +17,11 @@ keyTakeaways:
 
 ## Cómo ha cambiado el juego
 
-Durante mucho tiempo, las marcas extranjeras representaban rareza y vida moderna. Si venía de fuera, parecía ir un paso por delante.
+Durante años, las marcas extranjeras eran rareza y vida moderna. Si venía de fuera, parecía ir un paso por delante.
 
-Con el crecimiento de la clase media, las [marcas globales](/es/entrar-en-china/estrategia-de-entrada) pasaron a ser sinónimo de estatus y calidad. Las locales todavía iban detrás en producto, diseño y narrativa.
+Con el crecimiento de la clase media, las [marcas globales](/es/entrar-en-china/estrategia-de-entrada) pasaron a ser sinónimo de estatus y calidad. Las locales aún iban por detrás en producto, diseño y narrativa.
 
-Hoy las marcas chinas han cerrado buena parte de esa brecha de calidad y suelen moverse más rápido en cultura y en digital. El Guochao ha dado a los actores locales un relato potente, y las marcas occidentales son una opción entre tantas. La calidad se da por hecha. La relevancia llega por el encaje cultural y por dominar las plataformas.
+Hoy las marcas chinas han cerrado buena parte de esa brecha de calidad y suelen moverse más rápido en cultura y en digital. El Guochao les ha dado un relato potente, y las marcas occidentales son una opción entre tantas. La calidad se da por hecha. La relevancia llega por el encaje cultural y por dominar las plataformas.
 
 ## Por qué la localización es obligatoria
 
@@ -49,9 +49,9 @@ En muchas categorías, el recorrido se parece más a esto:
 - Validar a través de notas, comentarios y prueba social.
 - Convertir vía livestream, mini-programa o flagship de eCommerce.
 
-Si la marca parece fuera de lugar en esos feeds, da igual lo fuerte que sea su herencia. Pasa desapercibida.
+Si la marca parece fuera de sitio en esos feeds, da igual lo fuerte que sea su herencia. Pasa desapercibida.
 
-Localizar ya no consiste en traducir un sitio web. Consiste en reconstruir cómo vive la marca dentro de ese bucle contenido-comercio.
+Localizar ya no es traducir un sitio web. Es reconstruir cómo vive la marca dentro de ese bucle contenido-comercio.
 
 ![](/Images/insights/2025/11/localization-2-1024x576.png)
 
@@ -67,8 +67,8 @@ Las marcas que ganan en China no renuncian a su identidad. Protegen su núcleo y
 
 **Apple se adapta en China:**
 
-- Construye campañas en torno a festivales chinos y picos de eCommerce.
-- Lanza sesiones de directo a medida en plataformas como Tmall.
+- Monta campañas alrededor de festivales chinos y picos de eCommerce.
+- Lanza sesiones de directo hechas a medida en plataformas como Tmall.
 - Diseña ofertas pensando en cómo gasta la clase media china.
 
 La sensación Apple no cambia. El camino que va de la atención a la compra sí es muy chino.

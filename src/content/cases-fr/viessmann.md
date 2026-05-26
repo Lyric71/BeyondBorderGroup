@@ -27,7 +27,7 @@ Fondée en 1917, désormais filiale de Carrier, Viessmann fait partie des leader
 
 ## Le défi
 
-L'achat d'un équipement de chauffage ou d'eau chaude relève d'une décision réfléchie, intimement liée à la pose, au service après-vente, à la confiance dans la marque. L'acheteur chinois fait ses recherches en ligne avant de trancher, et la catégorie récompense les acteurs qui allient pédagogie produit claire et SAV solide. Viessmann devait afficher en Chine une présence en ligne sérieuse, à hauteur de sa marque hors ligne, sans pour autant cannibaliser ses distributeurs et ses partenaires de service.
+L'achat d'un équipement de chauffage ou d'eau chaude relève d'une décision réfléchie, intimement liée à la pose, au SAV, à la confiance dans la marque. L'acheteur chinois cherche en ligne avant de trancher, et la catégorie récompense les acteurs qui marient pédagogie produit claire et SAV solide. Viessmann devait afficher en Chine une présence en ligne sérieuse, à la hauteur de sa marque hors ligne, sans pour autant cannibaliser ses distributeurs et ses partenaires de service.
 
 ## Notre approche
 

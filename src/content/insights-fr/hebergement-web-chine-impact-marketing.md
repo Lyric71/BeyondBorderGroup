@@ -11,7 +11,7 @@ heroImageAlt: "Différence entre hébergement et nom de domaine pour un site en 
 
 ## Hébergement web en Chine : la méthode pour un impact marketing maximal
 
-La Chine compte plus d'un milliard d'internautes et son commerce en ligne avance à une cadence que peu d'économies tiennent. Toute marque qui prétend y exister installe ses serveurs sur le territoire. Le ticket d'entrée, lui, reste salé. Planification, conformité, lecture fine de l'écosystème : tout se joue avant même la mise en ligne.
+La Chine compte plus d'un milliard d'internautes et son commerce en ligne file à une cadence que peu d'économies tiennent. Toute marque qui veut y exister pose ses serveurs sur le territoire. Le ticket d'entrée, lui, reste salé. Planification, conformité, lecture fine de l'écosystème : tout se joue avant même la mise en ligne.
 
 Trois piliers tiennent la présence d'un site derrière la Grande Muraille numérique. Un [hébergement local maîtrisé](/fr/se-developper-en-chine/site-web), un référencement calibré pour Baidu, une interface taillée pour les usages chinois. Le guide qui suit déroule chaque étape et précise les passerelles à monter avec les places de marché et les moteurs locaux.
 

@@ -11,7 +11,7 @@ heroImageAlt: "Moteur de recherche chinois"
 
 ## Le marché des moteurs de recherche en Chine
 
-L'internet chinois suit ses propres règles. Le Grand Pare-feu et la régulation gouvernementale ferment la porte à la majorité des sites et moteurs étrangers. De cette contrainte est née une génération d'acteurs locaux, taillés pour le public chinois. En 2024, quatre noms dominent : Baidu, Sogou, Shenma et Haosuo, chacun avec ses forces propres et son public.
+L'internet chinois joue selon ses propres règles. Le Grand Pare-feu et la régulation publique ferment la porte à la plupart des sites et moteurs étrangers. De cette contrainte est née une génération d'acteurs locaux, taillés pour le public chinois. En 2024, quatre noms dominent : Baidu, Sogou, Shenma et Haosuo, chacun avec ses forces et son public.
 
 ## Pourquoi les moteurs chinois pèsent dans le marketing
 

@@ -24,14 +24,14 @@ BeyondTikTok es nuestra unidad especializada en TikTok, Official TikTok Marketin
 
 ## El reto
 
-La nueva propuesta necesitaba casa propia en la web. El encargo era nítido: un sitio que genere leads cualificados para servicios de TikTok, que renderice limpio en escritorio y móvil, y que posicione lo suficiente en buscadores como para traer tráfico orgánico sin depender constantemente de la inversión pagada.
+La nueva propuesta necesitaba casa propia en la web. El encargo era claro: un sitio que genere leads cualificados para servicios de TikTok, que renderice limpio en escritorio y móvil y que posicione lo suficiente en buscadores como para traer tráfico orgánico sin tirar todo el rato de la inversión pagada.
 
 ## Nuestro enfoque
 
-Tratamos el sitio como un producto de captación, no como un folleto. Levantamos la arquitectura de la información sobre las preguntas que realmente se hace un prospecto cuando evalúa un partner de TikTok, con desgloses de servicio claros, cobertura geográfica visible y casos de éxito a la vista desde el primer scroll. El diseño visual prolongó el sistema de marca de BeyondTikTok en cualquier tamaño de pantalla.
+Tratamos el sitio como un producto de captación, no como un folleto. Levantamos la arquitectura de la información sobre las preguntas que se hace de verdad un prospecto cuando evalúa a un partner de TikTok, con desgloses de servicio claros, cobertura geográfica a la vista y casos de éxito desde el primer scroll. El diseño visual extendió el sistema de marca de BeyondTikTok a cualquier tamaño de pantalla.
 
-En el lado del rendimiento, arrancamos el sitio con cimientos SEO estructurados desde el día uno: metadatos, marcado semántico, velocidad de página y un mapa de palabras clave alineado con la intención de servicio. Encima añadimos campañas de Google Ads orientadas a consultas de alta intención, de modo que paid y orgánico se refuerzan en lugar de pisarse.
+En el lado del rendimiento, montamos el sitio con cimientos SEO estructurados desde el día uno: metadatos, marcado semántico, velocidad de página y un mapa de palabras clave casado con la intención de servicio. Encima añadimos campañas de Google Ads orientadas a consultas de alta intención, de modo que paid y orgánico se refuerzan en vez de pisarse.
 
 ## Resultados
 
-El sitio se lanzó como un embudo operativo para la oferta de BeyondTikTok: optimizado para SEO de cara al alcance orgánico, optimizado en UX para convertir, y acompañado de campañas de Google Ads a medida que amplían la visibilidad en los mercados prioritarios.
+El sitio se lanzó como un embudo operativo para la oferta de BeyondTikTok: optimizado en SEO para el alcance orgánico, optimizado en UX para convertir, y acompañado de campañas de Google Ads hechas a medida que amplían la visibilidad en los mercados prioritarios.

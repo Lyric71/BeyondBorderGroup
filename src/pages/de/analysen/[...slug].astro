@@ -7,7 +7,7 @@ import { insightEnToDe } from '../../../i18n/insight-slugs.mjs';
 const enToDe = insightEnToDe as Record<string, string>;
 
 export async function getStaticPaths() {
-  const posts = await getCollection('insights', ({ data }) => !data.draft);
+  const posts = await getCollection('insightsDe', ({ data }) => !data.draft);
   const map = insightEnToDe as Record<string, string>;
   return posts.map((post) => ({
     params: { slug: map[post.id] ?? post.id },
@@ -67,7 +67,7 @@ function readingTime(body: string | undefined) {
   return `${minutes} Min. Lesezeit`;
 }
 
-const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+const allInsights = await getCollection('insightsDe', ({ data }) => !data.draft);
 const related = allInsights
   .filter((p) => p.id !== post.id && p.data.category === category)
   .slice(0, 3);
@@ -168,9 +168,9 @@ const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
         <div class="cta-card">
           <div class="cta-card__copy">
             <span class="eyebrow">Sprechen wir</span>
-            <h2>Erzählen Sie uns Ihre Lage in China.</h2>
+            <h2>Schildern Sie uns Ihre Lage in China.</h2>
             <p>
-              Antworten tut jemand aus dem Senior-Team, kein Verkaufstrichter.
+              Es antwortet jemand aus dem Senior-Team. Kein Verkaufstrichter.
             </p>
             <div class="cta-card__actions">
               <a href="/de/kontakt" class="btn btn--primary">Gespräch beginnen</a>

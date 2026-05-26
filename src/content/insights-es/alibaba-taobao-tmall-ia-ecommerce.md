@@ -14,7 +14,7 @@ heroImageAlt: "Alibaba anuncia la integración de Taobao y Tmall"
 
 ### Personalización con IA
 
-[Taobao](/es/crecer-en-china/ecommerce-transfronterizo) y Tmall llevan años apoyándose en datos de consumo y algoritmos para ofrecer interfaces y recomendaciones personalizadas. La IA ha elevado ese trabajo a otra escala dentro del eCommerce chino.
+[Taobao](/es/crecer-en-china/ecommerce-transfronterizo) y Tmall llevan años apoyándose en datos de consumo y algoritmos para servir interfaces y recomendaciones personalizadas. La IA ha llevado ese trabajo a otra escala dentro del eCommerce chino.
 
 ### Taobao Wenwen, el asistente de compras con IA
 

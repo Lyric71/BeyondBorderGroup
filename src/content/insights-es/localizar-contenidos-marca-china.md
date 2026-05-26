@@ -11,7 +11,7 @@ heroImageAlt: "Bandera de China"
 
 ## Cómo localizar los contenidos de marca para China
 
-Llevar la marca a China abre oportunidades enormes, pero también plantea retos muy específicos. China es una de las bases de consumidores más dinámicas y diversas del mundo, con más de 1.400 millones de habitantes. Ahora bien, conquistar al consumidor chino no se consigue traduciendo: requiere una [localización](/es/entrar-en-china/marca-y-localizacion) profunda del contenido, alineada con los matices culturales, lingüísticos y regionales del país.
+Llevar la marca a China abre oportunidades enormes, pero también pone sobre la mesa retos muy específicos. China es una de las bases de consumidores más dinámicas y diversas del mundo, con más de 1.400 millones de habitantes. Ahora bien, ganarse al consumidor chino no se consigue traduciendo: pide una [localización](/es/entrar-en-china/marca-y-localizacion) profunda del contenido, alineada con los matices culturales, lingüísticos y regionales del país.
 
 En este artículo veremos cómo localizar el contenido de marca para China con un enfoque en marketing digital, estrategia de eCommerce y técnicas de comunicación que conectan con el público chino. Sea su marca un actor global ya establecido o un recién llegado, apoyarse en una agencia de marketing con presencia en China puede facilitar el camino dentro de un mercado digital exigente y garantizar que el mensaje cale.
 

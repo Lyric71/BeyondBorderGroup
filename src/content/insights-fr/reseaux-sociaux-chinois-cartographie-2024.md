@@ -12,7 +12,7 @@ heroImageAlt: "Bannière des réseaux sociaux 2021"
 
 ## Réseaux sociaux chinois : la cartographie 2024 pour les marques
 
-Le paysage digital chinois poursuit sa mue en 2024. Les marques internationales y repèrent des opportunités sérieuses sur l'une des plus larges bases consommateurs de la planète. Les [plateformes](/fr/comprendre-la-chine/plateformes) que sont [WeChat](/fr/se-developper-en-chine/commerce-social), Weibo ou Douyin pèsent bien au-delà de la sphère chinoise, par leur taille critique et par la diversité de leurs fonctionnalités. Comprendre ces canaux et maîtriser leur activation forme le socle de toute installation durable sur le marché. Suit l'inventaire des plateformes de référence et des modes d'activation pertinents pour le marketing de marque.
+Le paysage digital chinois poursuit sa mue en 2024. Les marques internationales y voient des occasions sérieuses sur l'une des plus larges bases consommateurs de la planète. Les [plateformes](/fr/comprendre-la-chine/plateformes) que sont [WeChat](/fr/se-developper-en-chine/commerce-social), Weibo ou Douyin pèsent bien au-delà de la sphère chinoise, par leur taille critique et par la richesse de leurs fonctionnalités. Comprendre ces canaux et maîtriser leur activation reste le socle de toute installation durable sur le marché. Voici l'inventaire des plateformes de référence et des modes d'activation pertinents pour le marketing de marque.
 
 ## Les enjeux pour les marques internationales
 

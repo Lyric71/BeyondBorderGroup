@@ -11,7 +11,7 @@ heroImageAlt: "Agricultora asiática con tableta digital en un huerto"
 
 ## La importancia del marketing verde en China
 
-El marketing verde se ha convertido en una palanca potente para las marcas. Muestra el compromiso ambiental de la [marca](/es/entrar-en-china/marca-y-localizacion) y conecta con un consumidor que toma decisiones de compra más conscientes. Las buenas [campañas](/es/crecer-en-china/campanas) de marketing verde llaman la atención sobre los problemas ambientales y animan a adoptar estilos de vida más sostenibles.
+El marketing verde se ha convertido en una palanca potente para las marcas. Enseña el compromiso ambiental de la [marca](/es/entrar-en-china/marca-y-localizacion) y conecta con un consumidor que toma decisiones de compra más conscientes. Las buenas [campañas](/es/crecer-en-china/campanas) de marketing verde ponen el foco en los problemas ambientales y animan a abrazar estilos de vida más sostenibles.
 
 ## Starbucks y Proya Cosmetics: marcan el camino
 

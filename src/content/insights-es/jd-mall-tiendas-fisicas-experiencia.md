@@ -20,9 +20,9 @@ keyTakeaways:
 
 Durante años, [JD](/es/crecer-en-china/ecommerce-transfronterizo) fue la respuesta "ingenieril" al eCommerce chino: logística, velocidad y fiabilidad.
 
-Entre hoy en un JD Mall de Xi'an o Pekín y verá otra cosa. Niños horneando galletas. Padres probando PlayStation. Clientes aprendiendo a usar su horno inteligente o su secador, en lugar de pelearse con un manual.
+Entre hoy en un JD Mall de Xi'an o Pekín y verá otra cosa. Niños horneando galletas. Padres probando PlayStation. Clientes aprendiendo a manejar su horno inteligente o su secador, en lugar de pelearse con un manual.
 
-Si juega en hogar, electrodomésticos, electrónica de consumo, beauty tech o equipamiento doméstico, este es un canal que no puede ignorar.
+Si juega en hogar, electrodomésticos, electrónica de consumo, beauty tech o equipamiento doméstico, este es un canal que no puede dejar pasar.
 
 ## Del gigante del eCommerce al centro comercial de barrio
 

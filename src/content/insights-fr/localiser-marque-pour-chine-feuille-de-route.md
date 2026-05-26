@@ -11,7 +11,7 @@ heroImageAlt: "Concept d'internationalisation de marque"
 
 ## Localiser une marque pour la Chine : feuille de route opérationnelle
 
-La Chine pèse 1,4 milliard d'habitants et compte parmi les marchés de consommation les plus vastes et les plus exigeants au monde. [Y localiser une marque](/fr/entrer-en-chine/marque-et-localisation) suppose une lecture précise des ressorts culturels, sociaux et économiques propres au pays. Codes culturels, préférences régionales, cadre réglementaire : chaque volet réclame une approche dédiée, et le [conseil en entrée de marché](/fr/entrer-en-chine/conseil-en-entree-de-marche) commence par ce travail-là.
+La Chine pèse 1,4 milliard d'habitants et compte parmi les marchés de consommation les plus vastes et les plus exigeants au monde. [Y localiser une marque](/fr/entrer-en-chine/marque-et-localisation) exige une lecture précise des ressorts culturels, sociaux et économiques propres au pays. Codes culturels, préférences régionales, cadre réglementaire : chaque volet demande une approche dédiée, et le [conseil en entrée de marché](/fr/entrer-en-chine/conseil-en-entree-de-marche) démarre par ce travail-là.
 
 Les étapes qui suivent dessinent une feuille de route opérationnelle pour structurer la démarche et toucher l'audience visée.
 

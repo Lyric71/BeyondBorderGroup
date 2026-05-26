@@ -23,7 +23,7 @@ order: 5
 
 ## La marque
 
-Chery Automotive compte parmi les plus grands constructeurs chinois et parmi les plus tournés vers l'international, avec une base de fans qui couvre l'ensemble de ses marchés. La marque voulait sortir du marketing descendant et confier à sa communauté un rôle créatif lisible dans sa propre identité.
+Chery Automotive compte parmi les plus grands constructeurs chinois et parmi les plus internationaux, avec une communauté de fans présente sur l'ensemble de ses marchés. La marque voulait sortir du marketing descendant et donner à sa communauté un vrai rôle créatif, lisible dans son identité.
 
 ## Le défi
 
@@ -31,9 +31,9 @@ La mission : une campagne sociale mondiale, sous la bannière « With Chery With
 
 ## Notre approche
 
-Tout a commencé par une étude de marché poussée, pour identifier la bonne audience et la mobiliser, et pour s'assurer que la campagne touche les passionnés les plus enclins à s'engager. Les données des plateformes ont guidé le choix des thèmes et des sujets, en privilégiant ceux qui résonnaient dans la communauté. La stratégie a ensuite été calibrée canal par canal, avec un traitement propre à Facebook et un autre à Instagram.
+Tout a démarré par une étude de marché serrée, pour cibler la bonne audience, la mobiliser, et pour viser juste auprès des passionnés les plus prêts à s'engager. La donnée plateforme a orienté le choix des thèmes et des sujets, en filtrant ceux qui résonnaient dans la communauté. La stratégie a ensuite été calibrée canal par canal, avec un traitement propre à Facebook et un autre à Instagram.
 
-Un mécanisme de récompenses a été conçu pour combiner gain financier et expériences exclusives. La participation devenait à la fois stimulante et gratifiante sur le plan affectif. Ce double registre, défi créatif sincère et contrepartie tangible, a entretenu un flux constant de propositions semaine après semaine.
+Le mécanisme de récompenses combinait gain financier et expériences exclusives. La participation devenait stimulante et gratifiante sur le plan affectif. Ce double registre, défi créatif sincère et contrepartie tangible, a entretenu un flux régulier de propositions semaine après semaine.
 
 ## Résultats
 

@@ -12,9 +12,9 @@ heroImageAlt: "Imagen de portada de la guía sobre costes de media en Tmall"
 
 ## La fuerza de Tmall y la inversión en medios dentro del eCommerce chino
 
-[Tmall](/es/crecer-en-china/ecommerce-transfronterizo) lidera el B2C en China y ofrece a las marcas un escaparate con más de 500 millones de usuarios activos al mes. A diferencia de Taobao, orientado al consumidor que mira el precio, Tmall se ha posicionado como la plataforma de referencia para producto premium y para producto importado de confianza, tanto local como global. Eso la convierte en la primera opción para una marca que quiera jugar en el segmento alto del mercado online chino.
+[Tmall](/es/crecer-en-china/ecommerce-transfronterizo) lidera el B2C en China y le da a las marcas un escaparate con más de 500 millones de usuarios activos al mes. A diferencia de Taobao, orientado al consumidor que mira el precio, Tmall se ha colocado como la plataforma de referencia para producto premium y para producto importado de confianza, tanto local como global. Eso la convierte en la primera opción para una marca que quiera jugar en el segmento alto del mercado online chino.
 
-Invertir en [Tmall Media](/es/crecer-en-china/medios) abre la puerta a herramientas avanzadas de segmentación, contenido y social que se calibran a la medida del consumidor chino. Para optimizar el ROI, las marcas suelen apoyarse en una agencia de marketing en China especializada que afine las campañas a las preferencias locales. Las cifras de entrada no son bajas, pero un trabajo serio de localización compensa con un público que sí está dispuesto a escuchar.
+Invertir en [Tmall Media](/es/crecer-en-china/medios) abre la puerta a herramientas avanzadas de segmentación, contenido y social, ajustadas a la medida del consumidor chino. Para sacar el máximo al ROI, las marcas suelen apoyarse en una agencia de marketing en China especializada que afine las campañas a las preferencias locales. Las cifras de entrada no son bajas, pero un trabajo serio de localización compensa con un público que sí está dispuesto a escuchar.
 
 ## Costes de entrada: depósito de garantía y cuotas anuales
 

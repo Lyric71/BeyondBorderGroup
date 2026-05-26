@@ -12,7 +12,7 @@ heroImageAlt: "Chinesischer Social-eCommerce"
 
 ## Social Commerce in China: das Marktbild
 
-[Social Commerce](/de/in-china-wachsen/social-commerce) hat die Art, wie Verbraucher einkaufen, neu sortiert. Soziale Interaktion und direkter Kauf verschmelzen. Nirgendwo ist dieser Wandel ausgeprägter als im chinesischen eCommerce, dem grössten Online-Markt der Welt. Trends wie Livestream, Mobile Payment und [KOL](/de/in-china-wachsen/influencer-und-kol)-Marketing treiben ihn. 2021 hat der Social-Commerce-Markt in China 2,5 Billionen Yuan überschritten (rund 374 Milliarden US-Dollar) und zählt fast 800 Millionen Teilnehmer.
+[Social Commerce](/de/in-china-wachsen/social-commerce) hat die Art, wie Käufer einkaufen, neu sortiert. Soziale Interaktion und direkter Kauf verschmelzen. Nirgendwo ist dieser Wandel ausgeprägter als im chinesischen eCommerce, dem grössten Online-Markt der Welt. Trends wie Livestream, Mobile Payment und [KOL](/de/in-china-wachsen/influencer-und-kol)-Marketing treiben ihn. 2021 hat der Social-Commerce-Markt in China 2,5 Billionen Yuan überschritten (rund 374 Milliarden US-Dollar) und zählt fast 800 Millionen Teilnehmer.
 
 Wer im Wettbewerb gewinnen will, muss die führenden [Plattformen](/de/china-verstehen/plattformen) Chinas kennen. Hier die wichtigsten Social-Commerce-Plattformen, die Ihre China-Marketing-Strategie und das Wachstum Ihrer Marke tragen.
 
@@ -20,14 +20,14 @@ Wer im Wettbewerb gewinnen will, muss die führenden [Plattformen](/de/china-ver
 
 ### Überblick
 
-Xiaohongshu, auch Little Red Book, ist eine der beliebtesten Social-Commerce-Plattformen, besonders bei jüngeren, urbanen Verbrauchern. Zunächst für Produkt-Reviews in Beauty und Mode bekannt, deckt die Plattform inzwischen Lifestyle, Reise und Wohnen ab. Mit mehr als 260 Millionen aktiven Nutzern ist Xiaohongshu eine prägende Kraft im chinesischen Social Commerce, vor allem für junge Zielgruppen.
+Xiaohongshu, auch Little Red Book, ist eine der beliebtesten Social-Commerce-Plattformen, besonders bei jüngeren, urbanen Käufern. Zunächst für Produkt-Reviews in Beauty und Mode bekannt, deckt die Plattform inzwischen Lifestyle, Reise und Wohnen ab. Mit mehr als 260 Millionen aktiven Nutzern ist Xiaohongshu eine prägende Kraft im chinesischen Social Commerce, vor allem für junge Zielgruppen.
 
 ![Xiaohongshu-Oberfläche](/Images/insights/2024/12/Xiaohong-1024x585.png)
 
 ### Schlüsselfunktionen
 
 * **Nutzergenerierte Inhalte (UGC)**: Xiaohongshu lebt von authentischen Beiträgen, Produkt-Reviews und Lifestyle-Tutorials, die Vertrauen aufbauen. Ideal für Markenlokalisierung in China.
-* **Livestream**: Echtzeit-Interaktion mit Verbrauchern, eine direkte Bühne für Produkte und Verkauf.
+* **Livestream**: Echtzeit-Interaktion mit Käufern, eine direkte Bühne für Produkte und Verkauf.
 * **KOL-Marketing**: Die Plattform setzt stark auf KOL. Marken arbeiten mit Influencern hoher Glaubwürdigkeit und Reichweite.
 * **Reibungslose Integration**: Bezahlung über WeChat Pay und Alipay sind eingebunden, das hebt die Konversion.
 
@@ -47,18 +47,18 @@ WeChat ist weit mehr als ein Messenger. Es ist eine All-in-One-Super-App, die ch
 
 * **WeChat-Mini-Programme**: Sub-Apps im WeChat-Ökosystem, die personalisierte Shopping-Erlebnisse von der Produktentdeckung bis zur Kasse innerhalb der App ermöglichen. Essenziell für die Lokalisierung.
 * **WeChat Pay**: Das integrierte Bezahlsystem vereinfacht Transaktionen und erlaubt Käufe direkt in der App.
-* **WeChat Channels**: Die Video-Plattform unterstützt Livestream, um Verbraucher in Echtzeit einzubinden und Umsatz durch Live-Demos zu steigern.
+* **WeChat Channels**: Die Video-Plattform unterstützt Livestream, um Käufer in Echtzeit einzubinden und Umsatz durch Live-Demos zu steigern.
 * **Private Traffic**: Mit offiziellen Konten und Nutzergruppen schaffen Marken direkte Kommunikationskanäle und senken Akquisitionskosten im überfüllten Markt.
 
 ### Marketing-Chancen
 
-WeChat ist Pflicht in der chinesischen Social-Media-Strategie. Mini-Programme und Livestream bringen Marken näher an die Verbraucher und schaffen integrierte, reibungslose Einkaufserlebnisse.
+WeChat ist Pflicht in der chinesischen Social-Media-Strategie. Mini-Programme und Livestream bringen Marken näher an die Käufer und schaffen integrierte, reibungslose Einkaufserlebnisse.
 
 ## 3. Taobao/Tmall (GuangGuang)
 
 ### Überblick
 
-Als zentrale Spieler im chinesischen eCommerce dominieren Taobao und Tmall den Markt, beide unter Alibaba. Sie führen den Social-Commerce-Trend mit Funktionen wie GuangGuang an. Die Plattformen geben Marken Zugang zu Millionen Verbrauchern, ideal für schnelles Skalieren.
+Als zentrale Spieler im chinesischen eCommerce dominieren Taobao und Tmall den Markt, beide unter Alibaba. Sie führen den Social-Commerce-Trend mit Funktionen wie GuangGuang an. Die Plattformen geben Marken Zugang zu Millionen Käufern, ideal für schnelles Skalieren.
 
 ![Taobao- und Tmall-Plattform](/Images/insights/2024/12/taobao2-1024x585.png)
 
@@ -84,7 +84,7 @@ Pinduoduo ist der Aufsteiger im chinesischen Social Commerce, bekannt für sein 
 
 * **Gruppenkauf**: Rabatte beim Kauf in der Gruppe, ein stark soziales Erlebnis, das Community-Käufe trägt.
 * **Gamification**: Spielfunktionen erzeugen Rabatte oder Belohnungen, das hebt Engagement und Wiederkehr.
-* **Wert-Fokus**: Mit Niedrigpreisangeboten und exklusiven Rabatten zieht Pinduoduo preissensible Verbraucher an, besonders in weniger wohlhabenden Regionen.
+* **Wert-Fokus**: Mit Niedrigpreisangeboten und exklusiven Rabatten zieht Pinduoduo preissensible Käufer an, besonders in weniger wohlhabenden Regionen.
 
 ### Marketing-Chancen
 
@@ -110,6 +110,6 @@ Die Kombination aus Social-Interaktion und eCommerce macht Weibo ideal für Mark
 
 ## Fazit
 
-Social Commerce ist ein zentraler Baustein der chinesischen eCommerce-Landschaft geworden. Plattformen wie Xiaohongshu, WeChat, Taobao/Tmall, Pinduoduo und Weibo bieten jeweils eigene Vorteile, um Verbraucher anzusprechen und Umsatz über interaktive, inhaltsreiche Einkaufserlebnisse zu treiben.
+Social Commerce ist ein zentraler Baustein der chinesischen eCommerce-Landschaft geworden. Plattformen wie Xiaohongshu, WeChat, Taobao/Tmall, Pinduoduo und Weibo bieten jeweils eigene Vorteile, um Käufer anzusprechen und Umsatz über interaktive, inhaltsreiche Einkaufserlebnisse zu treiben.
 
 Wer chinesische Influencer, Livestreams und KOL-orientierte Plattformen nutzt, gewinnt Aufmerksamkeit und übersetzt sie in Umsatz. Eine Strategie, die zu den Stärken jeder Plattform passt, ist Schlüssel zum Erfolg im sich rasch wandelnden chinesischen Digital-Markt.

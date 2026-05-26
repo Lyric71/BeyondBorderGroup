@@ -10,7 +10,7 @@ heroImage: "/Images/insights/a-comparison-between-tmall-and-amazon.png"
 heroImageAlt: "Article comparant Alibaba et Amazon"
 ---
 
-À l'arrivée, deux empires, deux logiques. [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier) règne sur le commerce premium chinois, Amazon mène la cadence ailleurs. Chacune avance ses atouts et défend un positionnement bien distinct.
+Deux empires, deux logiques. [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier) règne sur le commerce premium chinois, Amazon dicte la cadence ailleurs. Chacune avance ses atouts et défend un positionnement distinct.
 
 [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier), filiale du groupe Alibaba, domine la cour des places de marché B2C en Chine. La plateforme laisse les enseignes locales comme étrangères vendre directement aux consommateurs du pays. Son catalogue couvre la mode, la beauté, l'équipement de la maison, l'électronique grand public et bien d'autres catégories. Côté marque, elle met du muscle sur la construction d'image et la relation client, via ses brand zones et le livestream.
 

@@ -29,7 +29,7 @@ Hay galas de lanzamiento con presentadores famosos. Sketches sobre precios desme
 
 Las mismas plataformas que enseñaron a China a deslizar el dedo hablan ahora con el lenguaje del prime time.
 
-No es nostalgia. Es estrategia. Un festival nativo digital recurre a las herramientas de los [medios](/es/crecer-en-china/medios) de toda la vida para resolver un problema muy actual: recuperar la confianza y la atención de un consumidor que ya compra como un profesional.
+No es nostalgia. Es estrategia. Un festival nacido en lo digital tira de las herramientas de los [medios](/es/crecer-en-china/medios) de toda la vida para resolver un problema muy actual: recuperar la confianza y la atención de un consumidor que ya compra como un profesional.
 
 ## De la pestaña tomada al programa de variedades, en tres movimientos
 
@@ -41,9 +41,9 @@ Durante un tiempo, cada capa parecía una mejora. Luego, todas las mejoras se fu
 
 A la decimoséptima edición, la cita ya no sorprende. Las compras grandes se planifican alrededor de ella. Todas las superficies gritan, banners rojos y pegatinas de "precio más bajo" se confunden. Y, sobre todo, el público se ha quedado por encima del guion.
 
-El consumidor chino compara entre plataformas por defecto, sigue el movimiento de precios antes y después de las campañas, comparte tácticas de apilado en grupos de WeChat y notas de Xiaohongshu, y distingue qué promesas son reales y cuáles, cosméticas. No se comporta como un novato en una feria. Se comporta como un profesional del retail que gestiona su propia cartera.
+El consumidor chino compara entre plataformas por defecto, sigue el movimiento de precios antes y después de las campañas, comparte tácticas de apilado en grupos de WeChat y notas de Xiaohongshu, y distingue qué promesas son reales y cuáles, cosméticas. No se comporta como un novato en una feria. Se comporta como un profesional del retail llevando su propia cartera.
 
-En ese contexto, un banner hiperactivo más o un livestream eufórico más no entusiasman a nadie. Solo añaden ruido. Por eso Double 11 echa mano de algo más antiguo y más grande que el feed: la gramática emocional de la televisión.
+En ese contexto, un banner hiperactivo más o un livestream eufórico más no entusiasman a nadie. Solo suman ruido. Por eso Double 11 echa mano de algo más antiguo y más grande que el feed: la gramática emocional de la televisión.
 
 ## Por qué vuelven los medios tradicionales
 

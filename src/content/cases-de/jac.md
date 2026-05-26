@@ -27,17 +27,17 @@ JAC ist ein chinesischer Automobilhersteller mit einer wachsenden Elektrofahrzeu
 
 ## Die Aufgabe
 
-Globale Asset-Produktion verzeiht nichts. Dasselbe Fahrzeug muss auf Händlerseiten, Konfiguratoren, Print, Social und in regionalen Kampagnen einheitlich aussehen, in jedem Markt, in jeder Auflösung. JAC benötigte pixelgenaue Bilder des gesamten Aussen- und Innenraums, einsatzbereit für sehr unterschiedliche Partnersysteme, ohne dass die Bildaussage verloren geht.
+Globale Asset-Produktion verzeiht nichts. Dasselbe Fahrzeug muss auf Händlerseiten, im Konfigurator, in Print, Social und in regionalen Kampagnen identisch aussehen. In jedem Markt, in jeder Auflösung. JAC brauchte pixelgenaue Bilder des kompletten Aussen- und Innenraums, einsatzbereit für sehr unterschiedliche Partnersysteme, ohne dass die Bildaussage verloren geht.
 
 ## Unser Vorgehen
 
-Wir behandelten den Shoot zuerst als Design-Projekt, erst dann als Fotografie. Die Art-Direction wurde vorab festgezurrt, abgestimmt auf die Produktgeschichte, die die Partner erzählen sollten, und konsequent durch jedes Setup gezogen.
+Wir haben den Shoot zuerst als Design-Projekt behandelt, erst dann als Fotografie. Die Art-Direction wurde vorab festgezurrt, abgestimmt auf die Produktgeschichte, die die Partner erzählen sollten, und konsequent durch jedes Setup gezogen.
 
 - Vor-Ort-Fotografie mit präzise gesteuertem Licht und Inszenierung
 - Kreative Art-Direction über Aussen-, Innen- und Detailaufnahmen
-- Umfassende Postproduktion, um die Konsistenz der gesamten Bildreihe zu sichern
-- Liefer-System, gebaut entlang dessen, wie globale Partner Assets tatsächlich nutzen
+- Umfassende Postproduktion, um die Konsistenz der gesamten Bildreihe zu halten
+- Auslieferungssystem, gebaut entlang dessen, wie globale Partner ihre Assets tatsächlich verwenden
 
 ## Ergebnisse
 
-Das Projekt lieferte mehr als 250 Aufnahmen des Fahrzeugs, von Aussen-Hero-Winkeln über Innenraum-Details bis zu Handwerks-Close-ups. Die fertige Bibliothek gab JAC eine einzige Quelle der Wahrheit für den Launch, skalierbar über das internationale Partner- und Händler-Ökosystem, ohne nachträgliche Anpassungen Markt für Markt.
+Das Projekt brachte mehr als 250 Aufnahmen des Fahrzeugs hervor, von Aussen-Hero-Winkeln über Innenraum-Details bis zu Handwerks-Close-ups. Die fertige Bibliothek gab JAC eine einzige Quelle der Wahrheit für den Launch, skalierbar über das internationale Partner- und Händlernetz, ohne nachträgliche Anpassungen Markt für Markt.

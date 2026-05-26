@@ -11,7 +11,7 @@ heroImageAlt: "Diseño digital abstracto que representa UX y tecnología"
 
 ## Diseño UX para mercados globales: China y Occidente, dos escuelas
 
-El mundo digital es tan diverso como la gente que lo usa. En pocos sitios se nota tanto como cuando uno compara la experiencia de usuario (UX) de un sitio chino y la de uno occidental. Las diferencias responden a factores culturales, lingüísticos y tecnológicos que llevan años moldeando la forma en que cada mercado se relaciona con su público. Para una empresa que quiera salir al exterior, entender estos contrastes es la base de cualquier sitio o plataforma que aspire a conectar con el usuario local.
+El mundo digital es tan diverso como la gente que lo usa. En pocos sitios se nota tanto como al comparar la experiencia de usuario (UX) de un sitio chino con la de uno occidental. Las diferencias responden a factores culturales, lingüísticos y tecnológicos que llevan años moldeando la forma en que cada mercado se relaciona con su público. Para una empresa que quiera salir fuera, entender estos contrastes es la base de cualquier sitio o plataforma que quiera conectar con el usuario local.
 
 Para las marcas que entran en el inmenso mercado chino del eCommerce, comprender estas diferencias en UX es decisivo. Tanto si el camino pasa por el eCommerce en Douyin como por el cross-border eCommerce en China, adaptarse a las preferencias locales separa el éxito del fracaso.
 

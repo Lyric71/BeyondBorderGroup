@@ -27,14 +27,14 @@ RQ Pyology es una nueva marca dermocosmética de alta gama de Shiseido, creada p
 
 ## El reto
 
-Lanzar una marca dermocosmética premium en China exige más que una campaña. RQ Pyology necesitaba unos cimientos completos: un marco de posicionamiento, un sistema visual propio y una voz capaz de plantar cara, con credibilidad, a los grandes nombres tradicionales. El público objetivo era exigente: mujeres urbanas formadas de 28 a 40 años, que investigan ingredientes, siguen a dermatólogos online y prefieren sustancia al ruido de marketing.
+Lanzar una marca dermocosmética premium en China pide más que una campaña. RQ Pyology necesitaba unos cimientos completos: un marco de posicionamiento, un sistema visual propio y una voz capaz de plantar cara, con credibilidad, a los grandes nombres tradicionales. El público objetivo era exigente: mujeres urbanas formadas de 28 a 40 años, que escarban en los ingredientes, siguen a dermatólogos online y prefieren sustancia al ruido de marketing.
 
 ## Nuestro enfoque
 
-El trabajo arrancó con posicionamiento y estrategia, antes de cualquier pieza de campaña. Definimos a un público que valora la transparencia de los ingredientes y la eficacia clínica, y construimos la identidad de marca en torno a esa promesa. El lenguaje visual se inclina por lo clínico y preciso: tipografía contenida, una paleta de color de aire de laboratorio y fotografía que muestra piel real, sin filtros. Packaging, plantillas de eCommerce y piezas sociales quedaron alineados, para que cada punto de contacto reforzara el relato respaldado por la ciencia.
+El trabajo arrancó con posicionamiento y estrategia, antes que cualquier pieza de campaña. Definimos a un público que valora la transparencia de los ingredientes y la eficacia clínica, y levantamos la identidad de marca alrededor de esa promesa. El lenguaje visual tira de lo clínico y preciso: tipografía contenida, una paleta de color con aire de laboratorio y fotografía que enseña piel real, sin filtros. Packaging, plantillas de eCommerce y piezas sociales quedaron alineados, para que cada punto de contacto reforzara el relato respaldado por la ciencia.
 
-La activación de lanzamiento sumó un plan de contenido coordinado, programas de sampling para impulsar prueba y una campaña que tradujo las afirmaciones clínicas a un lenguaje que el consumidor puede llegar a sentir.
+La activación de lanzamiento sumó un plan de contenido coordinado, programas de sampling para empujar la prueba y una campaña que tradujo los claims clínicos a un lenguaje que el consumidor puede llegar a sentir.
 
 ## Resultados
 
-El lanzamiento situó a RQ Pyology dentro del competitivo segmento dermocosmético chino. El engagement social arrancó fuerte, el sampling generó prueba y conversión relevantes, y la credibilidad científica de la marca aguantó frente a competidores ya asentados, dando a Shiseido una plataforma para escalar la marca a otros mercados.
+El lanzamiento colocó a RQ Pyology dentro del competitivo segmento dermocosmético chino. El engagement social arrancó fuerte, el sampling generó prueba y conversión relevantes, y la credibilidad científica de la marca aguantó frente a competidores ya asentados, dando a Shiseido una plataforma para escalar la marca a otros mercados.

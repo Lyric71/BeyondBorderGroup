@@ -12,7 +12,7 @@ heroImageAlt: "Créatrice de contenu chinoise présentant une palette de fards �
 
 ## Un consommateur chinois en mouvement
 
-La consommation chinoise accélère. Préférences et arbitrages budgétaires se déplacent en quelques mois. Les chiffres encaissés par Taobao et [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier) pendant le festival 6.18 mettent le mouvement en relief. Trois catégories en tension, trois moteurs : la tech, la beauté, le luxe.
+La consommation chinoise accélère. Préférences et arbitrages budgétaires bougent en quelques mois. Les chiffres encaissés par Taobao et [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier) pendant le festival 6.18 mettent le mouvement en relief. Trois catégories sous tension, trois moteurs : la tech, la beauté, le luxe.
 
 ## La tech ouvre le bal
 
@@ -40,7 +40,7 @@ La performance du luxe doit beaucoup à un marketing ciblé, articulé autour de
 
 L'édition 2024 a marqué une inflexion. Alibaba a supprimé la phase de pré-vente et basculé sur deux fenêtres d'achat, du 20 mai au 20 juin. Les comportements ont suivi. Les plateformes ont aussi relancé leurs espaces in-app à fort trafic avec des produits à 50 % de remise, en parallèle des promotions classiques et des opérations du type 50 yuans offerts pour 300 yuans dépensés.
 
-À l'arrivée, l'expérience d'achat gagne en immédiateté et en relief. L'engagement utilisateur suit. La fréquentation des membres du programme 88VIP de Tmall, en hausse de 40 % en glissement annuel le premier jour, en témoigne. Le nombre de membres ayant passé commande a progressé de plus de 50 %. Le panier moyen, de plus de 30 %.
+Au bout du compte, l'expérience d'achat gagne en immédiateté et en relief. L'engagement utilisateur suit. La fréquentation des membres du programme 88VIP de Tmall, en hausse de 40 % en glissement annuel le premier jour, en témoigne. Le nombre de membres ayant passé commande a progressé de plus de 50 %. Le panier moyen, de plus de 30 %.
 
 ## Les petits commerçants ont leur part
 

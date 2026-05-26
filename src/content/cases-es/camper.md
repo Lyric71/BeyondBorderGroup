@@ -23,18 +23,18 @@ images:
 
 ## La marca
 
-Fundada en Mallorca en 1975, Camper construyó su reputación sobre el diseño inconformista y el oficio mediterráneo. Su filosofía "walk, don't run" conecta con el profesional urbano que valora comodidad, calidad y un estilo propio por encima de la moda rápida.
+Fundada en Mallorca en 1975, Camper levantó su reputación sobre el diseño inconformista y el oficio mediterráneo. Su filosofía "walk, don't run" conecta con el profesional urbano que valora comodidad, calidad y estilo propio por encima de la moda rápida.
 
 ## El reto
 
-Camper necesitaba crecer en WeChat, Weibo y RedNote sin perder su identidad de marca de diseño. La visibilidad era solo la mitad del encargo. La parte difícil consistía en producir contenidos fieles al ADN creativo de la casa que, a la vez, hablaran a la consumidora china que sí aprecia el diseño con criterio. Apostamos por construir una narrativa sobre el oficio, la innovación en confort y las colaboraciones con artistas, en lugar de empujar promociones de temporada.
+Camper necesitaba crecer en WeChat, Weibo y RedNote sin perder su identidad de marca de diseño. La visibilidad era solo la mitad del encargo. La parte dura era producir contenidos fieles al ADN creativo de la casa que, a la vez, hablaran a la consumidora china que sí sabe leer el diseño. Apostamos por una narrativa de oficio, de innovación en confort y de colaboraciones con artistas, en lugar de empujar promociones de temporada.
 
 ## Nuestro enfoque
 
-El público objetivo de Camper en China, profesionales sensibles al diseño de entre 28 y 45 años, no responde a la venta dura. Buscan marcas con un punto de vista. Articulamos los contenidos sobre tres ejes: las historias detrás de los diseños icónicos, las colaboraciones con artistas y los momentos reales de cliente en Shanghái, Pekín y Guangzhou.
+El público de Camper en China (profesionales sensibles al diseño de entre 28 y 45 años) no responde a la venta dura. Busca marcas con un punto de vista. Articulamos los contenidos sobre tres ejes: las historias detrás de los diseños icónicos, las colaboraciones con artistas y los momentos reales de cliente en Shanghái, Pekín y Guangzhou.
 
-En RedNote nos asociamos con microinfluencers del mundo de la arquitectura y el diseño. En WeChat produjimos minidocumentales rodados en los talleres de Mallorca. En Weibo abrimos conversaciones sobre confort frente a estilo que provocaron debate real, no un goteo pasivo de "me gusta".
+En RedNote nos aliamos con microinfluencers del mundo de la arquitectura y el diseño. En WeChat produjimos minidocumentales rodados en los talleres de Mallorca. En Weibo abrimos conversaciones sobre confort frente a estilo que generaron debate real, no un goteo pasivo de "me gusta".
 
 ## Resultados
 
-En dieciocho meses, la base combinada de seguidores de Camper en las tres plataformas creció de 43.000 a 187.000. Las tasas de engagement pasaron del 1,2 % al 4,7 %, muy por encima de la media de la categoría. RedNote movió el 38 % del tráfico de eCommerce a pesar de ser la cuenta con menos seguidores. Las ventas mismas-tiendas en ciudades de primer nivel subieron un 31 % interanual, la retención de clientes mejoró un 22 % y la frecuencia media de compra pasó de 1,3 a 2,1 transacciones por cliente al año. Tres colaboradoras de RedNote siguieron publicando sobre los zapatos sin acuerdo formal alguno y se convirtieron en embajadoras de facto.
+En dieciocho meses, la base combinada de seguidores de Camper en las tres plataformas pasó de 43.000 a 187.000. Las tasas de engagement subieron del 1,2 % al 4,7 %, muy por encima de la media de la categoría. RedNote movió el 38 % del tráfico de eCommerce pese a ser la cuenta con menos seguidores. Las ventas mismas tiendas en ciudades de primer nivel subieron un 31 % interanual, la retención de clientes mejoró un 22 % y la frecuencia media de compra pasó de 1,3 a 2,1 transacciones por cliente al año. Tres colaboradoras de RedNote siguieron publicando sobre los zapatos sin acuerdo formal y se convirtieron en embajadoras de facto.
