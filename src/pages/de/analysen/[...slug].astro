@@ -1,0 +1,254 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+import { articleSchema } from '../../../lib/seo';
+import { insightEnToDe } from '../../../i18n/insight-slugs.mjs';
+
+const enToDe = insightEnToDe as Record<string, string>;
+
+export async function getStaticPaths() {
+  const posts = await getCollection('insights', ({ data }) => !data.draft);
+  const map = insightEnToDe as Record<string, string>;
+  return posts.map((post) => ({
+    params: { slug: map[post.id] ?? post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const {
+  title,
+  description,
+  heroImage,
+  heroImageAlt,
+  pubDate,
+  updatedDate,
+  category,
+  author,
+} = post.data;
+
+const articleJsonLd = articleSchema({
+  url: `/de/analysen/${enToDe[post.id] ?? post.id}`,
+  title,
+  description,
+  image: heroImage,
+  pubDate,
+  updatedDate,
+  author,
+  inLanguage: 'de',
+  category,
+  breadcrumb: [
+    { name: 'Startseite', url: '/de' },
+    { name: 'Analysen', url: '/de/analysen' },
+    { name: title, url: `/de/analysen/${enToDe[post.id] ?? post.id}` },
+  ],
+});
+
+const categoryLabelsDe: Record<string, string> = {
+  'Platforms': 'Plattformen',
+  'E-Commerce': 'eCommerce',
+  'KOLs & Livestream': 'KOL und Livestream',
+  'Brand & Localization': 'Marke und Lokalisierung',
+  'AI & Innovation': 'KI und Innovation',
+  'Market Strategy': 'Marktstrategie',
+  'Compliance & Setup': 'Compliance und Aufbau',
+};
+
+function formatDate(d?: Date) {
+  if (!d) return '';
+  return d.toLocaleDateString('de-DE', { month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+function readingTime(body: string | undefined) {
+  if (!body) return '';
+  const words = body.trim().split(/\s+/).length;
+  const minutes = Math.max(1, Math.round(words / 200));
+  return `${minutes} Min. Lesezeit`;
+}
+
+const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+const related = allInsights
+  .filter((p) => p.id !== post.id && p.data.category === category)
+  .slice(0, 3);
+
+const categoryLabel = categoryLabelsDe[category] ?? category;
+const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
+---
+
+<Layout
+  title={`${title} | Beyond Border Group`}
+  description={description}
+  schema={articleJsonLd}
+  ogType="article"
+  ogImage={heroImage}
+  ogImageAlt={heroImageAlt || title}
+  publishedTime={pubDate}
+  modifiedTime={updatedDate}
+  articleAuthor={author}
+>
+  <article class="insight-article">
+    <header class="insight-article__header">
+      <div class="container container--narrow">
+        <nav class="insight-article__crumbs" aria-label="Brotkrumen-Navigation">
+          <a href="/de/analysen">← Zurück zu den Analysen</a>
+        </nav>
+        <span class="eyebrow">{categoryLabel}</span>
+        <h1 class="insight-article__title">{title}</h1>
+        <p class="insight-article__lead">{description}</p>
+        <div class="insight-article__meta">
+          <span>{author}</span>
+          {pubDate && (
+            <>
+              <span aria-hidden="true">·</span>
+              <span>{formatDate(pubDate)}</span>
+            </>
+          )}
+          <span aria-hidden="true">·</span>
+          <span>{readingTime(post.body)}</span>
+        </div>
+      </div>
+    </header>
+
+    {heroImage && (
+      <figure class="insight-article__hero">
+        <img src={heroImage} alt={heroImageAlt || title} loading="eager" decoding="async" />
+      </figure>
+    )}
+
+    <div class="insight-article__body">
+      <div class="container container--narrow">
+        <div class="prose">
+          <Content />
+        </div>
+      </div>
+    </div>
+
+    {related.length > 0 && (
+      <section class="section section--alt">
+        <div class="container">
+          <header class="section-header section-header--split">
+            <div>
+              <span class="eyebrow">Weiterlesen</span>
+              <h2>In derselben Kategorie: {categoryLabel}</h2>
+            </div>
+            <a href="/de/analysen" class="btn btn--secondary btn--sm">Alle Analysen</a>
+          </header>
+
+          <div class="grid grid-3">
+            {related.map((r) => (
+              <a href={`/de/analysen/${slugFor(r.id)}`} class="insight-card">
+                <div class="insight-card__image">
+                  {r.data.heroImage && (
+                    <img src={r.data.heroImage} alt={r.data.heroImageAlt} loading="lazy" decoding="async" width="600" height="400" />
+                  )}
+                </div>
+                <div class="insight-card__body">
+                  <span class="insight-card__tag">{categoryLabelsDe[r.data.category] ?? r.data.category}</span>
+                  <h3 class="insight-card__title">{r.data.title}</h3>
+                  <div class="insight-card__meta">
+                    <span>{readingTime(r.body)}</span>
+                    {r.data.pubDate && (
+                      <>
+                        <span class="insight-card__meta-sep" aria-hidden="true">|</span>
+                        <span>{formatDate(r.data.pubDate)}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="cta-card">
+          <div class="cta-card__copy">
+            <span class="eyebrow">Sprechen wir</span>
+            <h2>Erzählen Sie uns Ihre Lage in China.</h2>
+            <p>
+              Antworten tut jemand aus dem Senior-Team, kein Verkaufstrichter.
+            </p>
+            <div class="cta-card__actions">
+              <a href="/de/kontakt" class="btn btn--primary">Gespräch beginnen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style>
+    .insight-article__header { padding: var(--space-7) 0 var(--space-5); }
+    .insight-article__crumbs { font-size: var(--fs-small); margin-bottom: var(--space-4); }
+    .insight-article__crumbs a { color: var(--bbg-text-muted); font-weight: 500; }
+    .insight-article__crumbs a:hover { color: var(--bbg-blue); }
+    .insight-article__title {
+      font-size: clamp(2rem, 3vw + 1rem, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--bbg-ink);
+      margin: var(--space-3) 0 var(--space-4);
+    }
+    .insight-article__lead {
+      font-size: var(--fs-lead);
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0 0 var(--space-4);
+      max-width: 60ch;
+    }
+    .insight-article__meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+    }
+    .insight-article__hero {
+      margin: 0 auto var(--space-6);
+      max-width: 1200px;
+      padding: 0 var(--container-pad);
+    }
+    .insight-article__hero img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-md);
+      display: block;
+    }
+    .insight-article__body { padding-bottom: var(--space-8); }
+    .insight-article__body .prose h2 {
+      font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+      margin: var(--space-7) 0 var(--space-3);
+      color: var(--bbg-ink);
+    }
+    .insight-article__body .prose h3 {
+      font-size: 1.25rem;
+      margin: var(--space-5) 0 var(--space-2);
+      color: var(--bbg-ink);
+    }
+    .insight-article__body .prose p {
+      margin-bottom: var(--space-3);
+      line-height: 1.75;
+      color: var(--bbg-text);
+    }
+    .insight-article__body .prose ul,
+    .insight-article__body .prose ol {
+      margin: 0 0 var(--space-4) 1.5rem;
+    }
+    .insight-article__body .prose li {
+      margin-bottom: var(--space-2);
+      line-height: 1.6;
+      color: var(--bbg-text);
+    }
+    .insight-article__body .prose a {
+      color: var(--bbg-blue);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .insight-article__body .prose a:hover { color: var(--bbg-blue-dark); }
+  </style>
+</Layout>

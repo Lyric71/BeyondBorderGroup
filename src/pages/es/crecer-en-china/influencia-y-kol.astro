@@ -1,0 +1,1843 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import kolsData from '../../../data/kols.json';
+
+type Tier = 'top' | 'mid' | 'rising';
+interface KOL {
+  id: string;
+  rank: number;
+  name_zh: string;
+  name_en: string;
+  tier: Tier;
+  tier_label: string;
+  platforms: string[];
+  primary_platform: string | null;
+  primary_platform_label: string;
+  followers_text: string;
+  specialty: string;
+  profile_url: string;
+  notable_brands: string[];
+  source_note: string;
+  avatar_initials: string;
+}
+interface Industry {
+  id: string;
+  name_en: string;
+  name_zh: string;
+  tagline: string;
+  color: string;
+  kols: KOL[];
+}
+interface KolsRoot {
+  meta: {
+    title: string;
+    subtitle: string;
+    prepared_for: string;
+    tier_definitions: { top: string; mid: string; rising: string };
+    platforms_covered: string[];
+    sources: string[];
+    follower_data_note: string;
+    healthcare_note: string;
+  };
+  industries: Industry[];
+}
+
+const kolsRoot = kolsData as unknown as KolsRoot;
+
+const tierMeta: Record<Tier, { short: string; sr: string }> = {
+  top:    { short: 'Top, 1M+',           sr: 'Nivel: Top, un millón de seguidores o más' },
+  mid:    { short: 'Mid, 100K a 1M',     sr: 'Nivel: Mid, entre cien mil y un millón de seguidores' },
+  rising: { short: 'Emergente, en torno a 1M', sr: 'Nivel: Emergente, cruzando la línea del millón de seguidores' },
+};
+
+const directoryItemListJsonLd = (industry: Industry) => ({
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `KOL de ${industry.name_en} en China`,
+  itemListElement: industry.kols.map((k, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'Person',
+      name: k.name_zh,
+      alternateName: k.name_en,
+      url: k.profile_url,
+      knowsAbout: k.specialty,
+    },
+  })),
+});
+
+const heroStats = [
+  { num: '10.000', suffix: '+', label: 'creadores en nuestra propia base de datos de KOC' },
+  { num: '7', suffix: '', label: 'plataformas llevadas de principio a fin' },
+  { num: 'Un equipo', suffix: '', label: 'Casting, briefing, producción y reporting' },
+];
+
+const whyPoints = [
+  {
+    lead: 'El funnel es una pantalla, no cinco pasos.',
+    body: 'El comprador chino no sale de la app para decidir. Hace scroll, busca, ve un livestream y compra, todo en el mismo sitio. Si trata al influencer como una valla publicitaria, el presupuesto se le va antes del primer post.',
+  },
+  {
+    lead: 'Los números son más grandes de lo que parece.',
+    body: 'Solo el livestream comercial mueve cientos de miles de millones de dólares al año y sigue creciendo a doble dígito.',
+  },
+  {
+    lead: 'Y las marcas todavía invierten poco.',
+    body: 'La inversión en influencia en Asia va por detrás de la estadounidense en un orden de magnitud, aunque el canal venda más. La oportunidad está ahí, encima de la mesa.',
+  },
+];
+
+const whyQuotes = [
+  {
+    image: '/Images/grow-in-china/influencers-kols/why-funnel-onescreen.png',
+    alt: 'Una mujer china haciendo scroll en el móvil en el sofá, junto a ella un paquete recién abierto, el funnel de una sola pantalla hecho literal',
+    quote: 'El mercado chino de livestream eCommerce alcanzó unos 807.000 millones de dólares en 2024 y se proyecta crecer en torno al 18 por ciento anual hasta 2026.',
+    cite: 'Departamento de Agricultura de EE. UU., ATO Shanghái',
+    citeMeta: 'Selling in China: The Rise of Livestreaming E-commerce, 2025',
+  },
+  {
+    image: '/Images/grow-in-china/influencers-kols/why-koc-mentions.png',
+    alt: 'Una pantalla de móvil con una rejilla de publicaciones pequeñas de creadores para una categoría de producto, un momento real de investigación en un entorno doméstico',
+    quote: 'En Asia, la inversión en influencia es solo el 0,75 por ciento del GMV del social commerce, frente al 6,8 por ciento en EE. UU.',
+    cite: 'Totem y Rakuten Insight',
+    citeMeta: 'Influencer Marketing in Asia, 2025',
+  },
+];
+
+const howSteps = [
+  {
+    icon: 'compass',
+    title: 'Encontrar a la gente adecuada',
+    body: 'Empezamos por su objetivo y su margen, no por un nombre de lista. Después leemos los datos: quién mira y qué acaba comprando. Tenemos nuestra propia base de KOC que ya hemos usado y en los que confiamos.',
+  },
+  {
+    icon: 'pen',
+    title: 'Escribir un brief que viaje',
+    body: 'El brief es el partido entero. Acordamos con usted el mensaje y los imprescindibles, y dejamos la ejecución al creador. Los que suenan a guion son los que nadie mira.',
+  },
+  {
+    icon: 'gear',
+    title: 'Ejecutar de principio a fin',
+    body: 'Contratos, contenido, calendario de publicación, coordinación de livestream. Usted aprueba el plan. Movemos presupuesto en cuanto algo rinde por debajo, no semanas después en un post-mortem.',
+  },
+  {
+    icon: 'link',
+    title: 'Conectar contenido y venta',
+    body: 'Un post desde el que no se puede comprar es media campaña. Enlazamos el contenido directo con su tienda en Douyin, Tmall o JD y medimos lo que aportó cada creador. En Xiaohongshu la venta suele cerrarse en otro sitio, así que la seguimos entre plataformas.',
+  },
+];
+
+const benefits = [
+  {
+    icon: 'handshake',
+    lead: 'Relaciones directas, mejores tarifas.',
+    body: 'Trabajamos con KOL y MCN a los que conocemos personalmente, no con un marketplace. Acceso prioritario a creadores muy solicitados, a tarifas por debajo del mercado abierto.',
+  },
+  {
+    icon: 'creator',
+    lead: 'Una red de KOC construida durante años.',
+    body: 'Nuestra propia base, con más de 10.000 creadores. Pone su producto delante de las comunidades de nicho adecuadas a una escala que una marca, por su cuenta, no alcanza.',
+  },
+  {
+    icon: 'chart',
+    lead: 'Selección con datos, no con olfato.',
+    body: 'A cada creador que llega a una shortlist lo pasamos antes por el cribado: composición de audiencia, engagement real, chequeo de seguidores falsos.',
+  },
+  {
+    icon: 'clipboard',
+    lead: 'Reporting que une gasto y ventas.',
+    body: 'Creador a creador, entre plataformas. Sabe cuáles vendieron mientras la campaña sigue viva, mientras aún se puede arreglar.',
+  },
+];
+
+const platforms = [
+  {
+    name: 'Xiaohongshu',
+    cn: '小红书',
+    desc: 'Donde la investigación y la compra ocurren en el mismo scroll. Una buena nota manda al comprador derecho a su tienda. Aquí vive nuestra base propia de KOC y KOL.',
+  },
+  {
+    name: 'Douyin',
+    cn: '抖音',
+    desc: 'Vídeo corto y livestream commerce, sobre un algoritmo de intereses. Somos socio oficial de marketing de Douyin.',
+  },
+  {
+    name: 'WeChat',
+    cn: '微信',
+    desc: 'Artículos, tráfico privado, confianza en formato largo y CRM. Más de diez años en la plataforma.',
+  },
+  {
+    name: 'Weibo',
+    cn: '微博',
+    desc: 'Alcance y conversación. Sigue siendo fuerte para lanzamientos y ruido.',
+  },
+  {
+    name: 'Bilibili',
+    cn: '',
+    desc: 'Formato largo, audiencia joven, muy comprometida. Las marcas extranjeras la usan poco.',
+  },
+  {
+    name: 'Kuaishou',
+    cn: '快手',
+    desc: 'Livestream commerce con tirón real en ciudades de menor escalafón.',
+  },
+  {
+    name: 'Tmall y JD',
+    cn: '天猫 / 京东',
+    desc: 'Las plataformas donde se cierra la venta. Conectamos el contenido de KOL directo con su tienda y hacemos campañas de influencia dentro de ambas.',
+  },
+];
+
+const faqs = [
+  { cat: 'Estrategia', q: '¿En qué se diferencia esto del marketing de influencia en mi mercado?', a: 'En Occidente, los influencers crean notoriedad y la compra cierra después, en otro lado. En China todo pasa en la misma app, a menudo en la misma sesión. Los creadores están atados directamente a la venta, no solo al alcance. Y como las marcas todavía invierten poco aquí en comparación con EE. UU., el canal está más abierto que saturado.' },
+  { cat: 'Creadores', q: '¿Cómo encuentro al influencer adecuado?', a: 'Empiece por su audiencia, no por el influencer. Defina a quién necesita llegar y contraste eso con la base real del creador, no con su cifra de portada. Douyin va sobre un algoritmo de intereses, así que el encaje del contenido suele ganar al número de seguidores. Una agencia con datos reales y relaciones directas lo hace más rápido y más barato que andar a tientas.' },
+  { cat: 'Coste', q: '¿Cuánto cuesta un KOL en la práctica?', a: 'Varía bastante. En Xiaohongshu, un post de nano-KOC puede ir por unos cientos de RMB; un post de KOL medio se mueve en la decena baja de miles; un nombre top puede pasar de 100.000 RMB por un único post. El vídeo en Douyin suele entrar un 20-30 por ciento más bajo para alcances comparables. Y los grandes KOL de livestream se llevan, además, una comisión sobre ventas, a menudo del 40-50 por ciento. La cifra que le coticen, trátela como punto de partida y no como tarifario.' },
+  { cat: 'Coste', q: '¿Qué presupuesto necesito para probar algo serio?', a: 'Para testear de verdad una plataforma, prevea entre 100.000 y 300.000 RMB en dos o tres meses. Cubre una base de siembra con KOC, unos pocos KOL medios, producción de contenido y algo de amplificación pagada. Puede hacer una prueba de siembra por debajo de 50.000 RMB, pero no le dará una lectura limpia de si el canal vende para su marca.' },
+  { cat: 'Creadores', q: '¿KOL o KOC?', a: 'Normalmente, los dos. Los KOL aportan alcance y señal de credibilidad. Los KOC, esos creadores cotidianos con audiencias pequeñas y confiables, construyen la tracción en búsqueda que pesa cuando un comprador busca su producto. Encuentre una docena de menciones honestas y compra. Encuentre un único post pagado y sigue scrolleando. Ajustamos la mezcla a su objetivo y a su presupuesto, y esa mezcla rara vez se repite igual dos veces.' },
+  { cat: 'Estrategia', q: '¿Cuál es la mejor plataforma?', a: 'Aquella donde ya están sus compradores. Xiaohongshu encaja con compras meditadas en belleza, lifestyle y wellness. Douyin está hecho para vídeo y livestream a escala. Weibo sigue funcionando para lanzamientos. WeChat es para profundidad y retención. La mayoría de las marcas necesita dos o tres, no una, y desde luego no todas a la vez.' },
+  { cat: 'Trabajo conjunto', q: '¿Cómo consigo que un KOL venda y no solo acumule visualizaciones?', a: 'Meta el producto dentro del contenido para que no se lea como anuncio y haga que se pueda comprar al instante. Livestreams, reseñas honestas, unboxings, códigos de descuento solo para seguidores. Y el enlace del post a la ficha de producto tiene que estar. Una campaña sin camino de compra es notoriedad con una factura mayor.' },
+  { cat: 'Operación', q: '¿Necesito una entidad registrada en China?', a: 'Para los sistemas oficiales de colaboración, normalmente sí. Pugongying (Xiaohongshu) y las herramientas oficiales de Weibo suelen pedir un negocio registrado en China. Aun así, puede correr campañas a través de una agencia que tenga las relaciones, que es como arrancan la mayoría de las marcas extranjeras antes de montar su propia entidad.' },
+  { cat: 'Operación', q: '¿Cuánto tardamos en estar a directo?', a: 'Del brief a las primeras publicaciones, entre tres y cinco semanas. La shortlist y la negociación se llevan una o dos semanas, contratar unos días, contenido y revisión otra semana o dos. Las franjas de livestream con hosts muy demandados a veces hay que reservarlas con más antelación. Apurar el brief es donde las campañas pierden calidad sin que nadie lo note.' },
+  { cat: 'Creadores', q: '¿Cómo sé si los seguidores de un influencer son reales?', a: 'Mire más allá del número. Forma del engagement. Calidad de los comentarios, tasas de guardado y compartido, si la ciudad y la edad de la audiencia encajan con el contenido. Saltos súbitos de seguidores, comentarios genéricos de una palabra, engagement que no acompaña a las visualizaciones, son banderas rojas. Lo filtramos antes de que nadie llegue a una shortlist, porque las cuentas infladas abundan.' },
+  { cat: 'Operación', q: '¿Qué tiene que dejar claro el contrato?', a: 'Concreto. Número y tipo de publicaciones, plataforma, ventana de publicación, si el contenido se queda colgado y por cuánto tiempo, derechos de uso si quiere reaprovecharlo, KPI y la estructura de comisiones donde aplique. Los contratos vagos son donde nacen las disputas. Y exija prueba de rendimiento por escrito antes del pago final.' },
+  { cat: 'Coste', q: '¿Puedo reutilizar el contenido en mis propios anuncios?', a: 'Solo si el contrato concede derechos de uso, y eso suele costar aparte. Muchas marcas olvidan negociarlo y luego no pueden, legalmente, impulsar un post que funcionó. Decida desde el principio si quiere derechos de amplificación. Añadirlos después es más lento y más caro.' },
+  { cat: 'Estrategia', q: '¿Qué resultados puedo esperar de verdad?', a: 'Depende de categoría, presupuesto y plataforma, así que desconfíe de quien le prometa una cifra fija. Una campaña de siembra sana construye visibilidad en búsqueda y una base de menciones genuinas. Un livestream empuja ventas en una ventana. Adapte el KPI al formato: alcance y guardados para siembra, conversión y GMV para livestream. Y juzgue el programa por trimestre, no por un único post.' },
+  { cat: 'Estrategia', q: '¿Cómo miden el ROI cuando la venta cae en otro sitio?', a: 'Es el caso típico de Xiaohongshu. Una nota construye intención y, días después, el comprador cierra la compra en Tmall o JD. Lo seguimos por el lift de búsquedas de marca, por el tráfico y los add-to-cart en su tienda, y por códigos de descuento únicos por creador. La intención aparece primero, las ventas después. Por eso medimos entre plataformas, no dentro de una.' },
+  { cat: 'Operación', q: '¿Y si una campaña va por debajo a mitad de camino?', a: 'Movemos presupuesto. Si un creador no convierte, el gasto se reasigna a los que sí. O ajustamos el ángulo. O cambiamos el formato entero. Nada de eso funciona sin reporting en vivo, y por eso lo montamos así desde el primer día. La flexibilidad tiene que estar en el plan, y en los contratos, antes de necesitarla.' },
+  { cat: 'Creadores', q: '¿Nos compensa el livestreaming?', a: 'Depende de su categoría y de su margen. El livestream genera el engagement más alto y la conversión más directa, pero los hosts top se llevan ese 40-50 por ciento de comisión, y el formato premia productos que se muestran bien en cámara. Para muchas marcas, un livestream desde su propia tienda gana a alquilar una celebridad: conserva el control del mensaje y del margen. Si no encaja, se lo decimos.' },
+  { cat: 'Operación', q: '¿Cómo evito que parezca un anuncio cantado?', a: 'Pase al creador el mensaje y los imprescindibles, y deje la ejecución en sus manos. Los guionizados son los que nadie ve, y en Xiaohongshu la venta dura se vuelve en contra rápido. El contenido nativo, basado en experiencia, que nombra el producto con honestidad, gana a una lectura publicitaria pulida casi siempre.' },
+  { cat: 'Operación', q: '¿Qué riesgos de cumplimiento conviene conocer?', a: 'La ley de publicidad china es estricta con superlativos y claims sin verificar. "El mejor", "número uno", afirmaciones de salud o eficacia sin respaldo, pueden activar sanciones reales. Y las colaboraciones con influencers tienen que pasar cada vez más por las plataformas oficiales para la divulgación. Informamos al creador de lo que no puede decir y revisamos el contenido antes de que se publique.' },
+  { cat: 'Estrategia', q: '¿Puede una marca pequeña triunfar aquí o esto es solo para los grandes?', a: 'Una marca pequeña puede absolutamente trabajar aquí, y a menudo le va mejor con KOC que con KOL. Como Douyin y Xiaohongshu premian el encaje del contenido por encima del número de seguidores, un producto relevante con buen contenido puede tirar sin un presupuesto de celebridad. Empiece con una base de siembra de KOC bien enfocada, demuestre que el producto aterriza y, después, escale.' },
+  { cat: 'Trabajo conjunto', q: '¿Debería trabajar con creadores directamente, a través de una MCN o con una agencia?', a: 'Directo funciona si tiene equipo en China, idioma, contratos y tiempo para verificar cuentas. Una MCN le abre su roster, pero recuerde que representa a sus creadores, no a usted. Una agencia trabaja para su lado de la mesa. Selecciona en todo el mercado contra sus objetivos, gestiona contratos y cumplimiento, y une el reporting con sus ventas. Esa última parte es la que hacemos.' },
+];
+
+const faqCategories = ['Todas', 'Estrategia', 'Coste', 'Creadores', 'Operación', 'Trabajo conjunto'];
+
+const icons: Record<string, string> = {
+  compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="15 9 13 13 9 15 11 11 15 9"/></svg>`,
+  pen: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l3.5-1 11-11-2.5-2.5-11 11z"/><path d="M14 5l2.5-2.5a1.4 1.4 0 0 1 2 0l1 1a1.4 1.4 0 0 1 0 2L17 8"/></svg>`,
+  gear: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>`,
+  link: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07L11.17 5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07L12.83 19"/></svg>`,
+  handshake: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l4-4 5 5-1 1-3-3-4 4z"/><path d="M22 12l-4-4-5 5 1 1 3-3 4 4z"/><path d="M9 14l3-3 3 3-3 3z"/></svg>`,
+  creator: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>`,
+  chart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><rect x="5" y="13" width="3" height="7"/><rect x="11" y="8" width="3" height="12"/><rect x="17" y="4" width="3" height="16"/></svg>`,
+  clipboard: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg>`,
+};
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const serviceJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Marketing de KOL e influencia en China',
+  provider: {
+    '@type': 'Organization',
+    name: 'Beyond Border Group',
+    url: 'https://beyondbordergroup.com',
+  },
+  areaServed: { '@type': 'Country', name: 'China' },
+};
+---
+
+<Layout
+  title="Agencia KOL en China: marketing de influencia que vende"
+  description="Ejecutamos campañas de KOL y KOC en China que venden, no solo acumulan visualizaciones. Selección de creadores con datos en Douyin, Xiaohongshu, Tmall y JD."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} is:inline />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceJsonLd)} is:inline />
+
+  <div class="kol-progress" aria-hidden="true"><div class="kol-progress__bar"></div></div>
+  <article class="kol">
+
+    {/* ---------- HERO ---------- */}
+    <section class="kol-hero" data-hero>
+      <div class="kol-hero__bg" aria-hidden="true" data-parallax>
+        <img src="/Images/grow-in-china/influencers-kols/hero-kol-livestream.png" alt="Una joven host china de livestream en un pequeño set casero, aro de luz encendido, sosteniendo un frasco de skincare a media presentación" />
+      </div>
+      <div class="kol-hero__overlay" aria-hidden="true"></div>
+      <div class="kol-hero__grain" aria-hidden="true"></div>
+
+      <div class="container kol-hero__inner">
+        <nav class="kol-hero__crumbs" aria-label="Migas de pan">
+          <a href="/es">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <a href="/es#services">Crecer en China</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark kol-reveal">Influencia y KOL</span>
+        <h1 class="kol-hero__title kol-reveal" style="--reveal-delay: 80ms;">
+          <span class="kol-hero__title-row">En Occidente, un influencer le pone en el mapa.</span>
+          <span class="kol-hero__title-row kol-hero__title-row--accent">En China, le cierra la venta.</span>
+        </h1>
+        <p class="kol-hero__lead kol-reveal" style="--reveal-delay: 200ms;">
+          En Instagram, el creador está arriba del funnel. En China, descubrimiento,
+          investigación y checkout ocurren en una sola pantalla, en el mismo minuto. El
+          KOL no es su capa de notoriedad. Está en la caja. Por eso elegimos creadores con
+          datos, les damos un briefing serio, y lo que cobramos depende de lo que
+          realmente vendió.
+        </p>
+        <div class="kol-hero__actions kol-reveal" style="--reveal-delay: 280ms;">
+          <a href="/es/contacto" class="btn btn--primary kol-magnetic">Hablemos de su campaña</a>
+          <a href="/es/analisis" class="btn btn--ghost-light kol-magnetic">Leer nuestros análisis sobre China</a>
+        </div>
+
+        <div class="kol-hero__meta kol-reveal" style="--reveal-delay: 360ms;">
+          {heroStats.map((s) => (
+            <div class="kol-hero__meta-item">
+              <span class="kol-hero__meta-num">{s.num}{s.suffix}</span>
+              <span class="kol-hero__meta-label">{s.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <a href="#why" class="kol-hero__scroll" aria-label="Bajar a la siguiente sección">
+        <span class="kol-hero__scroll-line"></span>
+        <span class="kol-hero__scroll-text">Bajar</span>
+      </a>
+    </section>
+
+    {/* ---------- WHY CHINA IS A DIFFERENT GAME ---------- */}
+    <section id="why" class="section">
+      <div class="container">
+        <header class="section-header section-header--center kol-reveal">
+          <span class="eyebrow">Por qué es distinto</span>
+          <h2>Por qué China es otro juego</h2>
+          <p class="section-header__lead">
+            Muchas marcas llegan con el manual occidental y pierden dinero un trimestre
+            antes de entender por qué. Tres cosas se les escapan.
+          </p>
+        </header>
+
+        <ul class="kol-points kol-reveal">
+          {whyPoints.map((p, i) => (
+            <li class="kol-point" style={`--reveal-delay: ${i * 80}ms;`}>
+              <span class="kol-point__mark" aria-hidden="true"></span>
+              <div>
+                <h3>{p.lead}</h3>
+                <p>{p.body}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+
+        <div class="kol-quotes">
+          {whyQuotes.map((q, i) => (
+            <figure class={`kol-quote-card kol-reveal`} style={`--reveal-delay: ${i * 120}ms;`}>
+              <div class="kol-quote-card__media">
+                <img src={q.image} alt={q.alt} loading="lazy" decoding="async" />
+              </div>
+              <blockquote class="kol-quote-card__body">
+                <p>{q.quote}</p>
+                <footer>
+                  <cite>{q.cite}</cite>
+                  <span class="kol-quote-card__meta">{q.citeMeta}</span>
+                </footer>
+              </blockquote>
+            </figure>
+          ))}
+        </div>
+
+        <p class="kol-aftertext kol-reveal">
+          Un último cambio. La era de alquilar un solo nombre gigantesco se desvanece. Los
+          livestream de marca y de tienda mueven ya la mayor parte del comercio en
+          Douyin, y los grandes KOL se llevan entre el 40 y el 50 por ciento. Cuando un
+          comprador le busca, usted quiere una docena de menciones honestas. No un único
+          post pagado de celebridad.
+        </p>
+      </div>
+    </section>
+
+    {/* ---------- SO HERE IS HOW WE RUN IT ---------- */}
+    <section id="how" class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center kol-reveal">
+          <span class="eyebrow">Qué hacemos</span>
+          <h2>Así lo ejecutamos</h2>
+          <p class="section-header__lead">
+            Un operador para casting, briefing, producción y reporting. El plan que entra
+            en el dossier es el que corre en la plataforma el lunes por la mañana.
+          </p>
+        </header>
+
+        <div class="kol-grid kol-grid--4">
+          {howSteps.map((s, i) => (
+            <article class="kol-card kol-reveal" style={`--reveal-delay: ${i * 60}ms;`}>
+              <span class="kol-card__icon" aria-hidden="true" set:html={icons[s.icon]} />
+              <h3 class="kol-card__title">{s.title}</h3>
+              <p class="kol-card__body">{s.body}</p>
+            </article>
+          ))}
+        </div>
+
+        <blockquote class="kol-pull kol-reveal">
+          <p>Un millón de seguidores no significa nada si la mitad nunca comprará en su categoría. Leemos la composición de audiencia antes que el número de seguidores. Siempre.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    {/* ---------- WHAT IS AN MCN ---------- */}
+    <section id="mcn" class="section">
+      <div class="container container--narrow">
+        <header class="section-header kol-reveal">
+          <span class="eyebrow">MCN</span>
+          <h2>Qué es una MCN, y por qué importa</h2>
+        </header>
+
+        <div class="kol-prose kol-reveal">
+          <p>
+            Una MCN (multi-channel network) es una agencia que ficha creadores y se
+            encarga de todo lo suyo: contenido, contratos, acuerdos con marcas,
+            operaciones de livestream.
+          </p>
+          <p>
+            En China, las MCN llevan la economía de creadores. La mayoría de los KOL y
+            KOC que trabajan está fichada por alguna. Así que cuando contrata a un
+            creador, negocia con su MCN, no con la persona, y la MCN trabaja para el
+            creador, no para usted.
+          </p>
+          <p>
+            Tratamos con MCN a diario y las esquivamos cuando le conviene más. Usted
+            quiere a alguien en su lado de la mesa.
+          </p>
+        </div>
+
+        <figure class="kol-figure kol-reveal">
+          <img
+            src="/Images/grow-in-china/influencers-kols/mcn-creator-signing.png"
+            alt="Un creador chino y un gestor de MCN revisando un contrato en un portátil, oficina sobria, fluorescente cenital"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      </div>
+    </section>
+
+    {/* ---------- WHAT YOU ACTUALLY GET ---------- */}
+    <section id="get" class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center kol-reveal">
+          <span class="eyebrow">Qué obtiene</span>
+          <h2>Qué obtiene en realidad</h2>
+          <p class="section-header__lead">
+            Acceso directo, selección con datos y reporting que une cada yuan invertido
+            con una venta que puede nombrar.
+          </p>
+        </header>
+
+        <div class="kol-grid kol-grid--4">
+          {benefits.map((b, i) => (
+            <article class="kol-card kol-card--benefit kol-reveal" style={`--reveal-delay: ${i * 60}ms;`}>
+              <span class="kol-card__icon" aria-hidden="true" set:html={icons[b.icon]} />
+              <h3 class="kol-card__lead">{b.lead}</h3>
+              <p class="kol-card__body">{b.body}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- PLATFORMS WE RUN ---------- */}
+    <section id="platforms" class="section">
+      <div class="container">
+        <header class="section-header section-header--center kol-reveal">
+          <span class="eyebrow">Plataformas</span>
+          <h2>Plataformas que llevamos</h2>
+          <p class="section-header__lead">
+            Siete plataformas cubiertas de principio a fin. Elegimos las dos o tres que
+            encajan con su categoría, no todas a la vez.
+          </p>
+        </header>
+
+        <div class="kol-platforms">
+          {platforms.map((p, i) => (
+            <article class="kol-platform kol-reveal" style={`--reveal-delay: ${i * 50}ms;`}>
+              <header class="kol-platform__head">
+                <h3 class="kol-platform__name">{p.name}</h3>
+                {p.cn && <span class="kol-platform__cn" lang="zh">{p.cn}</span>}
+              </header>
+              <p class="kol-platform__desc">{p.desc}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- KOL DIRECTORY ---------- */}
+    <section id="directory" class="section">
+      <div class="container">
+        <header class="section-header section-header--center kol-reveal">
+          <span class="eyebrow">El directorio</span>
+          <h2>Ochenta KOL destacados en China</h2>
+          <p class="section-header__lead">
+            Una muestra de ocho verticales, con fuentes en chino del web chino. Nombres,
+            nichos, franjas de seguidores y marcas con las que han trabajado, según
+            registro. No es un mapa completo del panorama KOL en China, ni tampoco
+            nuestro roster. Es un punto de partida para una conversación.
+          </p>
+        </header>
+
+        <nav class="kol-dir-chips kol-reveal" aria-label="Saltar a un vertical">
+          {kolsRoot.industries.map((ind) => (
+            <a
+              href={`#dir-${ind.id}`}
+              class="kol-dir-chip"
+              style={`--ind-color: ${ind.color};`}
+            >
+              <span class="kol-dir-chip__dot" aria-hidden="true"></span>
+              <span class="kol-dir-chip__en">{ind.name_en}</span>
+              <span class="kol-dir-chip__zh" lang="zh">{ind.name_zh}</span>
+            </a>
+          ))}
+        </nav>
+
+        {kolsRoot.industries.map((ind) => (
+          <section
+            id={`dir-${ind.id}`}
+            class="kol-dir-vertical kol-reveal"
+            aria-labelledby={`dir-${ind.id}-heading`}
+          >
+            <header class="kol-dir-vertical__head">
+              <span
+                class="kol-dir-vertical__bar"
+                style={`background:${ind.color};`}
+                aria-hidden="true"
+              ></span>
+              <div class="kol-dir-vertical__title">
+                <p class="kol-dir-vertical__eyebrow" style={`color:${ind.color};`} lang="zh">
+                  {ind.name_zh}
+                </p>
+                <h3 id={`dir-${ind.id}-heading`} class="kol-dir-vertical__h">
+                  {ind.name_en}
+                </h3>
+                <p class="kol-dir-vertical__tag">{ind.tagline}</p>
+              </div>
+              <p class="kol-dir-vertical__count">
+                <span>{ind.kols.length}</span>
+                <span class="kol-dir-vertical__count-label">KOL</span>
+              </p>
+            </header>
+
+            {ind.id === 'healthcare' && (
+              <p class="kol-dir-note" role="note">
+                <strong>Aviso sobre acuerdos de marca.</strong> {kolsRoot.meta.healthcare_note}
+              </p>
+            )}
+
+            <div class="kol-dir-grid">
+              {ind.kols.map((k) => {
+                const extra = Math.max(0, k.platforms.length - 1);
+                const visibleBrands = k.notable_brands.slice(0, 3);
+                const overflow = k.notable_brands.length - visibleBrands.length;
+                const tm = tierMeta[k.tier];
+                return (
+                  <article id={k.id} class="kol-dir-card" style={`--ind-color: ${ind.color};`}>
+                    <span class="kol-dir-card__accent" aria-hidden="true"></span>
+                    <header class="kol-dir-card__head">
+                      <div
+                        class="kol-dir-card__avatar"
+                        style={`background:${ind.color};`}
+                        aria-hidden="true"
+                      >
+                        {k.avatar_initials}
+                      </div>
+                      <div class="kol-dir-card__id">
+                        <h4 class="kol-dir-card__zh" lang="zh">{k.name_zh}</h4>
+                        <p class="kol-dir-card__en">{k.name_en}</p>
+                      </div>
+                    </header>
+
+                    <div class="kol-dir-card__tags">
+                      <span class={`kol-dir-tier kol-dir-tier--${k.tier}`} title={k.tier_label}>
+                        {tm.short}
+                        <span class="sr-only">. {tm.sr}</span>
+                      </span>
+                      <span class="kol-dir-card__platform">
+                        {k.primary_platform_label}
+                        {extra > 0 && (
+                          <span
+                            class="kol-dir-card__platform-extra"
+                            title={`También activo en ${extra} plataforma${extra === 1 ? '' : 's'} más: ${k.platforms.slice(1).join(', ')}`}
+                          >
+                            +{extra}
+                          </span>
+                        )}
+                      </span>
+                    </div>
+
+                    <p class="kol-dir-card__followers">
+                      <span class="kol-dir-card__followers-label">Seguidores.</span>
+                      {' '}{k.followers_text}
+                    </p>
+
+                    <p class="kol-dir-card__specialty">{k.specialty}</p>
+
+                    {visibleBrands.length > 0 && (
+                      <div class="kol-dir-card__brands">
+                        <p class="kol-dir-card__brands-label">Colaboraciones destacadas</p>
+                        <ul class="kol-dir-brand-pills">
+                          {visibleBrands.map((b) => (
+                            <li class="kol-dir-brand-pill">{b}</li>
+                          ))}
+                          {overflow > 0 && (
+                            <li class="kol-dir-brand-pill kol-dir-brand-pill--more">
+                              +{overflow} más
+                            </li>
+                          )}
+                        </ul>
+                      </div>
+                    )}
+
+                    <footer class="kol-dir-card__foot">
+                      <p class="kol-dir-card__source">{k.source_note}</p>
+                      <a
+                        class="kol-dir-card__link"
+                        href={k.profile_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Ver perfil <span aria-hidden="true">→</span>
+                        <span class="sr-only">se abre en una pestaña nueva</span>
+                      </a>
+                    </footer>
+                  </article>
+                );
+              })}
+            </div>
+
+            <script
+              type="application/ld+json"
+              set:html={JSON.stringify(directoryItemListJsonLd(ind))}
+              is:inline
+            />
+          </section>
+        ))}
+
+        <details class="kol-dir-method kol-reveal">
+          <summary class="kol-dir-method__summary">Metodología y fuentes</summary>
+          <div class="kol-dir-method__body">
+            <p>
+              <strong>Definiciones de nivel.</strong> Top: {kolsRoot.meta.tier_definitions.top}.
+              Mid: {kolsRoot.meta.tier_definitions.mid}. Emergente:{' '}
+              {kolsRoot.meta.tier_definitions.rising}.
+            </p>
+            <p>{kolsRoot.meta.follower_data_note}</p>
+            <p>
+              <strong>Fuentes.</strong> {kolsRoot.meta.sources.join(' · ')}.
+            </p>
+            <p class="kol-dir-method__foot">
+              Investigación realizada en chino sobre fuentes en chino. Preparada para{' '}
+              {kolsRoot.meta.prepared_for}.
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    {/* ---------- FAQ ---------- */}
+    <section id="faq" class="section section--alt">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center kol-reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Las preguntas que las marcas nos hacen de verdad</h2>
+          <p class="section-header__lead">
+            Veinte preguntas que escuchamos en la primera llamada. Filtre por tema.
+          </p>
+        </header>
+
+        <div class="kol-faq-filter kol-reveal" data-faq-filter role="tablist" aria-label="Filtrar preguntas por categoría">
+          {faqCategories.map((c, i) => (
+            <button
+              type="button"
+              class={`kol-faq-chip${i === 0 ? ' is-active' : ''}`}
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              data-faq-cat={c}
+            >
+              <span class="kol-faq-chip__label">{c}</span>
+              <span class="kol-faq-chip__count">{c === 'Todas' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="kol-faq" data-faq-list>
+          {faqs.map((f, i) => (
+            <details
+              class="kol-faq__item kol-reveal"
+              data-faq-cat={f.cat}
+              open={i === 0}
+              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+            >
+              <summary class="kol-faq__q">
+                <span class="kol-faq__cat-tag">{f.cat}</span>
+                <span class="kol-faq__q-text">{f.q}</span>
+                <span class="kol-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="kol-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="kol-cta">
+          <span class="eyebrow eyebrow--on-dark">Hablemos</span>
+          <h2 class="kol-cta__title">Una cosa antes de cerrar</h2>
+          <p class="kol-cta__lead">
+            Las marcas que ganan en China no son las del mayor presupuesto en influencia.
+            Son las que arrancaron mientras el canal seguía infravalorado. Esa ventana
+            está abierta ahora mismo. No lo estará para siempre. Asesoramos y ejecutamos
+            lo que recomendamos. Si quiere un programa de KOL y KOC construido sobre
+            datos y juzgado por ventas, hablemos.
+          </p>
+          <div class="kol-cta__actions">
+            <a href="/es/contacto" class="btn kol-cta__btn-primary">Contacte con nosotros</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    .kol .container--narrow { max-width: 880px; }
+
+    /* ---------- REVEAL + MOTION ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .kol-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .kol-reveal.is-in { opacity: 1; transform: translateY(0); }
+      .kol-magnetic {
+        will-change: transform;
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      }
+      .kol-magnetic:hover { transform: translateY(-2px); }
+    }
+
+    /* ---------- SCROLL PROGRESS BAR ---------- */
+    .kol-progress {
+      position: fixed; top: 0; left: 0; right: 0;
+      height: 3px; z-index: 1000;
+      background: transparent; pointer-events: none;
+    }
+    .kol-progress__bar {
+      height: 100%; width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      transition: width 80ms linear;
+    }
+
+    /* ---------- HERO ---------- */
+    .kol-hero {
+      position: relative;
+      min-height: clamp(360px, 48vh, 500px);
+      display: flex; align-items: flex-start;
+      padding: clamp(8px, 1.25vh, 16px) 0 clamp(48px, 7vh, 80px);
+      color: var(--bbg-white);
+      overflow: hidden; isolation: isolate;
+    }
+    body:has(.kol-hero) .kol-hero { padding-top: clamp(112px, 10vh, 144px); }
+    @media (max-width: 1024px) {
+      body:has(.kol-hero) .kol-hero { padding-top: clamp(96px, 9vh, 116px); }
+    }
+    .kol-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .kol-hero__bg img {
+      width: 100%; height: 110%;
+      object-fit: cover; object-position: center;
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+      transition: transform 80ms linear;
+      filter: saturate(0.95);
+    }
+    .kol-hero__overlay {
+      position: absolute; inset: 0; z-index: -2;
+      background:
+        linear-gradient(110deg,
+          rgba(8, 18, 28, 0.92) 0%,
+          rgba(8, 18, 28, 0.72) 42%,
+          rgba(8, 18, 28, 0.32) 100%),
+        radial-gradient(120% 80% at 0% 100%,
+          rgba(38, 154, 218, 0.28) 0%,
+          rgba(38, 154, 218, 0) 60%);
+    }
+    .kol-hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay; opacity: 0.45;
+      pointer-events: none;
+    }
+    .kol-hero__inner { max-width: 980px; position: relative; }
+    .kol-hero__crumbs {
+      margin-bottom: var(--space-4);
+      font-size: var(--fs-small);
+      display: flex; gap: 0.5rem; align-items: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .kol-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .kol-hero__crumbs a:hover { color: var(--bbg-white); }
+    .kol-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-3);
+      color: #9DDBF5;
+    }
+    .kol-hero__title {
+      font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      max-width: 24ch;
+      font-weight: 700;
+      display: flex; flex-direction: column;
+      gap: 0.05em;
+    }
+    .kol-hero__title-row { display: block; }
+    .kol-hero__title-row--accent {
+      color: #9DDBF5; font-weight: 500;
+      font-style: italic; letter-spacing: -0.018em;
+    }
+    .kol-hero__lead {
+      font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 62ch;
+      margin: 0 0 var(--space-5);
+    }
+    .kol-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
+
+    .kol-hero__meta {
+      display: flex; flex-wrap: nowrap;
+      gap: clamp(var(--space-3), 3vw, var(--space-6));
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: none;
+    }
+    .kol-hero__meta-item {
+      display: flex; flex-direction: column;
+      gap: 0.2rem;
+      min-width: 0;
+      flex: 1 1 0;
+    }
+    @media (max-width: 720px) {
+      .kol-hero__meta { flex-wrap: wrap; }
+      .kol-hero__meta-item { flex: 1 1 auto; }
+    }
+    .kol-hero__meta-num {
+      font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+      font-weight: 700; letter-spacing: -0.02em;
+      line-height: 1; color: var(--bbg-white);
+      font-feature-settings: "tnum";
+    }
+    .kol-hero__meta-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.02em;
+    }
+
+    .kol-hero__scroll {
+      position: absolute;
+      bottom: var(--space-5);
+      right: clamp(var(--space-5), 4vw, var(--space-7));
+      display: flex; flex-direction: column;
+      align-items: center; gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.7rem; letter-spacing: 0.18em;
+      text-transform: uppercase; font-weight: 600;
+      transition: color 200ms ease;
+    }
+    .kol-hero__scroll:hover { color: var(--bbg-white); }
+    .kol-hero__scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+      position: relative; overflow: hidden;
+    }
+    .kol-hero__scroll-line::after {
+      content: ""; position: absolute;
+      top: -100%; left: 0; right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+      animation: kol-scroll-tick 1.8s ease-in-out infinite;
+    }
+    @keyframes kol-scroll-tick { 0% { top: -50%; } 100% { top: 100%; } }
+    @media (max-width: 720px) {
+      .kol-hero__scroll { display: none; }
+      .kol-hero__meta { gap: var(--space-4); }
+    }
+
+    /* ---------- WHY POINTS ---------- */
+    .kol-points {
+      list-style: none;
+      padding: 0;
+      margin: var(--space-6) auto 0;
+      max-width: 880px;
+      display: grid;
+      gap: var(--space-5);
+    }
+    .kol-point {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: var(--space-5);
+      align-items: start;
+      padding: var(--space-5) 0;
+      border-top: 1px solid var(--bbg-border);
+    }
+    .kol-point:last-child { border-bottom: 1px solid var(--bbg-border); }
+    .kol-point__mark {
+      display: block;
+      width: 6px;
+      height: 28px;
+      border-radius: 3px;
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      margin-top: 0.6rem;
+    }
+    .kol-point h3 {
+      font-size: clamp(1.125rem, 0.6vw + 1rem, 1.375rem);
+      line-height: 1.3;
+      margin: 0 0 var(--space-3);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .kol-point p {
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 640px) {
+      .kol-point { grid-template-columns: 1fr; gap: var(--space-2); }
+      .kol-point__mark { width: 36px; height: 4px; margin-top: 0; }
+    }
+
+    /* ---------- QUOTE CARDS (stats) ---------- */
+    .kol-quotes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+      margin-top: var(--space-7);
+    }
+    .kol-quote-card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin: 0;
+      display: flex; flex-direction: column;
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .kol-quote-card:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 16px 32px -22px rgba(38, 154, 218, 0.4);
+    }
+    .kol-quote-card__media {
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: var(--bbg-border);
+    }
+    .kol-quote-card__media img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      transition: transform 600ms var(--ease);
+    }
+    .kol-quote-card:hover .kol-quote-card__media img { transform: scale(1.03); }
+    .kol-quote-card__body {
+      padding: var(--space-6);
+      margin: 0;
+      border-left: 4px solid var(--bbg-blue);
+      background: linear-gradient(180deg, rgba(232, 244, 252, 0.4) 0%, rgba(232, 244, 252, 0) 100%);
+    }
+    .kol-quote-card__body p {
+      margin: 0 0 var(--space-4);
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      color: var(--bbg-ink);
+      font-weight: 500;
+      font-style: italic;
+    }
+    .kol-quote-card__body footer {
+      display: flex; flex-direction: column;
+      gap: 0.2rem;
+      padding-top: var(--space-3);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .kol-quote-card__body cite {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--bbg-ink);
+    }
+    .kol-quote-card__meta {
+      font-size: 0.8rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.4;
+    }
+    @media (max-width: 1024px) {
+      .kol-quotes { grid-template-columns: 1fr; }
+    }
+
+    .kol-aftertext {
+      max-width: 760px;
+      margin: var(--space-7) auto 0;
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--bbg-text);
+      text-align: center;
+    }
+
+    /* ---------- 4-CARD GRID ---------- */
+    .kol-grid {
+      display: grid;
+      gap: var(--space-5);
+    }
+    .kol-grid--4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 1024px) {
+      .kol-grid--4 { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .kol-grid--4 { grid-template-columns: 1fr; }
+    }
+    .kol-card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      display: flex; flex-direction: column;
+      gap: var(--space-3);
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 260ms ease,
+        box-shadow 260ms ease;
+      overflow: hidden;
+    }
+    .kol-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .kol-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+    }
+    .kol-card:hover::before { transform: scaleX(1); }
+    .kol-card__icon {
+      display: inline-flex;
+      width: 44px; height: 44px;
+      align-items: center; justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-2);
+    }
+    .kol-card__icon svg { width: 22px; height: 22px; }
+    .kol-card__title {
+      font-size: 1.125rem;
+      line-height: 1.25;
+      margin: 0;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+    }
+    .kol-card__lead {
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      margin: 0;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+    }
+    .kol-card__body {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+
+    /* ---------- PULL QUOTE ---------- */
+    .kol-pull {
+      margin: var(--space-7) auto 0;
+      max-width: 820px;
+      padding: var(--space-6) var(--space-7);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.10) 100%);
+      border-left: 4px solid var(--bbg-blue);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+    .kol-pull p {
+      margin: 0;
+      font-size: clamp(1.0625rem, 0.4vw + 1rem, 1.25rem);
+      line-height: 1.5;
+      color: var(--bbg-ink);
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    /* ---------- PROSE ---------- */
+    .kol-prose {
+      margin-top: var(--space-5);
+    }
+    .kol-prose p {
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      color: var(--bbg-text);
+      margin: 0 0 var(--space-4);
+    }
+    .kol-prose p:last-child { margin-bottom: 0; }
+
+    .kol-figure {
+      margin: var(--space-7) 0 0;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--bbg-border);
+      aspect-ratio: 16 / 9;
+      background: var(--bbg-border);
+    }
+    .kol-figure img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+    }
+
+    /* ---------- PLATFORMS ---------- */
+    .kol-platforms {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-4);
+    }
+    .kol-platforms > :nth-child(5),
+    .kol-platforms > :nth-child(6),
+    .kol-platforms > :nth-child(7) {
+      grid-column: span 1;
+    }
+    .kol-platforms > :last-child {
+      grid-column: span 2;
+    }
+    @media (max-width: 1024px) {
+      .kol-platforms { grid-template-columns: repeat(2, 1fr); }
+      .kol-platforms > :last-child { grid-column: span 2; }
+    }
+    @media (max-width: 640px) {
+      .kol-platforms { grid-template-columns: 1fr; }
+      .kol-platforms > :last-child { grid-column: span 1; }
+    }
+    .kol-platform {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .kol-platform:hover {
+      transform: translateY(-3px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 14px 28px -22px rgba(38, 154, 218, 0.4);
+    }
+    .kol-platform__head {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-3);
+      margin-bottom: var(--space-3);
+      flex-wrap: wrap;
+    }
+    .kol-platform__name {
+      font-size: 1.0625rem;
+      margin: 0;
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .kol-platform__cn {
+      font-size: 0.95rem;
+      color: var(--bbg-blue);
+      font-weight: 500;
+    }
+    .kol-platform__desc {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+
+    /* ---------- KOL DIRECTORY ---------- */
+    .kol-dir-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin: var(--space-5) auto var(--space-7);
+      max-width: 1000px;
+    }
+    .kol-dir-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease),
+                  transform 220ms cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow var(--dur) var(--ease);
+      white-space: nowrap;
+    }
+    .kol-dir-chip:hover {
+      border-color: var(--ind-color);
+      color: var(--ind-color);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px -18px var(--ind-color);
+    }
+    .kol-dir-chip__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--ind-color);
+      flex-shrink: 0;
+    }
+    .kol-dir-chip__zh {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+    }
+
+    .kol-dir-vertical {
+      scroll-margin-top: calc(var(--nav-h) + 1rem);
+      padding-top: var(--space-7);
+      padding-bottom: var(--space-6);
+    }
+    .kol-dir-vertical:first-of-type {
+      padding-top: var(--space-5);
+    }
+    .kol-dir-vertical__head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: var(--space-5);
+      padding-bottom: var(--space-5);
+      margin-bottom: var(--space-5);
+      border-bottom: 1px solid var(--bbg-border);
+      position: relative;
+    }
+    .kol-dir-vertical__bar {
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 64px;
+      height: 3px;
+      border-radius: 2px;
+    }
+    .kol-dir-vertical__title { min-width: 0; flex: 1 1 auto; }
+    .kol-dir-vertical__eyebrow {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin: 0 0 0.25rem;
+    }
+    .kol-dir-vertical__h {
+      font-size: clamp(1.5rem, 1.2vw + 1rem, 2rem);
+      line-height: 1.15;
+      margin: 0 0 var(--space-2);
+      color: var(--bbg-ink);
+      letter-spacing: -0.015em;
+    }
+    .kol-dir-vertical__tag {
+      margin: 0;
+      max-width: 60ch;
+      font-size: 0.95rem;
+      color: var(--bbg-text);
+      line-height: 1.5;
+    }
+    .kol-dir-vertical__count {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.35rem;
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--bbg-text-muted);
+    }
+    .kol-dir-vertical__count > span:first-child {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--bbg-ink);
+      font-feature-settings: "tnum";
+    }
+    .kol-dir-vertical__count-label { font-weight: 500; }
+    @media (max-width: 640px) {
+      .kol-dir-vertical__head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-3);
+      }
+    }
+
+    .kol-dir-note {
+      margin: 0 0 var(--space-5);
+      padding: var(--space-4) var(--space-5);
+      background: var(--bbg-surface);
+      border: 1px solid var(--bbg-border);
+      border-left: 3px solid var(--bbg-warning);
+      border-radius: var(--radius-md);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    .kol-dir-note strong { color: var(--bbg-ink); font-weight: 700; }
+
+    .kol-dir-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-4);
+    }
+    @media (max-width: 1280px) {
+      .kol-dir-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 1024px) {
+      .kol-dir-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 600px) {
+      .kol-dir-grid { grid-template-columns: 1fr; }
+    }
+
+    .kol-dir-card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      overflow: hidden;
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color var(--dur) var(--ease),
+                  box-shadow var(--dur) var(--ease);
+    }
+    .kol-dir-card:hover,
+    .kol-dir-card:focus-within {
+      transform: translateY(-3px);
+      border-color: var(--ind-color);
+      box-shadow: 0 16px 32px -22px var(--ind-color);
+    }
+    .kol-dir-card__accent {
+      position: absolute;
+      left: 0;
+      top: 22px;
+      width: 3px;
+      height: 28px;
+      border-radius: 0 2px 2px 0;
+      background: var(--ind-color);
+    }
+    .kol-dir-card__head {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      min-width: 0;
+    }
+    .kol-dir-card__avatar {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bbg-white);
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: -0.01em;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+    }
+    .kol-dir-card__id { min-width: 0; flex: 1 1 auto; }
+    .kol-dir-card__zh {
+      font-size: 1.0625rem;
+      line-height: 1.25;
+      margin: 0 0 0.15rem;
+      color: var(--bbg-ink);
+      font-weight: 600;
+      letter-spacing: -0.005em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .kol-dir-card__en {
+      margin: 0;
+      font-size: 0.82rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.3;
+    }
+
+    .kol-dir-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: -0.25rem;
+    }
+    .kol-dir-tier {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: var(--bbg-white);
+      white-space: nowrap;
+    }
+    .kol-dir-tier--top    { background: #2E7D32; }
+    .kol-dir-tier--mid    { background: #C77800; }
+    .kol-dir-tier--rising { background: #455A64; }
+
+    .kol-dir-card__platform {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.18rem 0.55rem;
+      background: var(--bbg-surface);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--bbg-text);
+      white-space: nowrap;
+    }
+    .kol-dir-card__platform-extra {
+      padding: 0.02rem 0.35rem;
+      border-radius: 999px;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      color: var(--bbg-text-muted);
+      font-size: 0.66rem;
+      font-weight: 700;
+      cursor: help;
+    }
+
+    .kol-dir-card__followers {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    .kol-dir-card__followers-label {
+      font-weight: 700;
+      color: var(--bbg-ink);
+    }
+    .kol-dir-card__specialty {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+
+    .kol-dir-card__brands { margin-top: var(--space-2); }
+    .kol-dir-card__brands-label {
+      margin: 0 0 0.45rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+    .kol-dir-brand-pills {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .kol-dir-brand-pill {
+      padding: 0.15rem 0.5rem;
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      font-size: 0.72rem;
+      color: var(--bbg-text);
+      background: var(--bbg-white);
+      line-height: 1.4;
+    }
+    .kol-dir-brand-pill--more {
+      border-style: dashed;
+      color: var(--bbg-text-muted);
+    }
+
+    .kol-dir-card__foot {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: var(--space-3);
+      margin-top: auto;
+      padding-top: var(--space-3);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .kol-dir-card__source {
+      margin: 0;
+      font-size: 0.68rem;
+      line-height: 1.4;
+      color: var(--bbg-text-muted);
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+    .kol-dir-card__link {
+      flex-shrink: 0;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--bbg-border);
+      padding-bottom: 1px;
+      transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+    }
+    .kol-dir-card__link:hover,
+    .kol-dir-card__link:focus-visible {
+      color: var(--ind-color);
+      border-bottom-color: var(--ind-color);
+    }
+
+    .kol-dir-method {
+      margin: var(--space-7) auto 0;
+      max-width: 880px;
+      background: var(--bbg-surface);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+      transition: border-color var(--dur) var(--ease);
+    }
+    .kol-dir-method[open] { border-color: var(--bbg-blue); }
+    .kol-dir-method__summary {
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .kol-dir-method__summary::-webkit-details-marker { display: none; }
+    .kol-dir-method__summary::after {
+      content: "+";
+      margin-left: auto;
+      font-weight: 400;
+      color: var(--bbg-text-muted);
+      transition: transform 220ms ease;
+    }
+    .kol-dir-method[open] .kol-dir-method__summary::after { content: "−"; }
+    .kol-dir-method__body {
+      margin-top: var(--space-4);
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--bbg-text);
+    }
+    .kol-dir-method__body p { margin: 0 0 var(--space-3); }
+    .kol-dir-method__body p:last-child { margin-bottom: 0; }
+    .kol-dir-method__body strong { color: var(--bbg-ink); }
+    .kol-dir-method__foot {
+      font-size: 0.78rem;
+      color: var(--bbg-text-muted);
+    }
+
+    /* sr-only helper, scoped to the directory in case it isn't already global */
+    .kol-dir-card .sr-only,
+    .kol-dir-tier .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0);
+      white-space: nowrap; border: 0;
+    }
+
+    /* ---------- FAQ ---------- */
+    .kol-faq {
+      display: flex; flex-direction: column;
+      gap: var(--space-3);
+    }
+    .kol-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .kol-faq__item:hover {
+      transform: translateX(2px);
+      border-color: rgba(38, 154, 218, 0.4);
+    }
+    .kol-faq__item[open] {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+    }
+    .kol-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex; align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem; line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .kol-faq__q::-webkit-details-marker { display: none; }
+    .kol-faq__q::marker { display: none; }
+    .kol-faq__item:hover .kol-faq__q { color: var(--bbg-blue); }
+    .kol-faq__icon {
+      flex-shrink: 0;
+      width: 28px; height: 28px;
+      display: inline-flex;
+      align-items: center; justify-content: center;
+      border-radius: 50%;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+                  color var(--dur) var(--ease),
+                  background var(--dur) var(--ease);
+    }
+    .kol-faq__item[open] .kol-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-white);
+      background: var(--bbg-blue);
+    }
+    .kol-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+      animation: kol-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes kol-faq-in {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .kol-faq__a p { margin: 0; }
+
+    .kol-faq-filter {
+      display: flex; flex-wrap: wrap;
+      gap: 0.5rem; justify-content: center;
+      margin-bottom: var(--space-6);
+      overflow-x: auto;
+    }
+    .kol-faq-chip {
+      display: inline-flex; align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--bbg-text);
+      transition: all 220ms ease;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .kol-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .kol-faq-chip.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    .kol-faq-chip__count {
+      font-size: 0.72rem; font-weight: 700;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: all 220ms ease;
+    }
+    .kol-faq-chip:hover .kol-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .kol-faq-chip.is-active .kol-faq-chip__count {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--bbg-white);
+    }
+    .kol-faq__cat-tag {
+      display: inline-block;
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 0.25em 0.6em;
+      border-radius: 4px;
+      margin-right: var(--space-3);
+      flex-shrink: 0;
+    }
+    .kol-faq__q-text { flex-grow: 1; }
+    .kol-faq__item.is-hidden { display: none; }
+
+    /* ---------- FINAL CTA ---------- */
+    .kol-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .kol-cta::before {
+      content: ""; position: absolute;
+      top: -40%; right: -10%;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .kol-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .kol-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .kol-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 60ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.6;
+    }
+    .kol-cta__actions {
+      display: flex; flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .kol-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .kol-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+  </style>
+
+  <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Reveal-on-scroll
+      const revealEls = document.querySelectorAll('.kol-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      // Hero parallax + scroll progress
+      const parallaxEl = document.querySelector('[data-parallax]');
+      const progressEl = document.querySelector('.kol-progress__bar');
+      const heroEl = document.querySelector('[data-hero]');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          if (parallaxEl && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Smooth scroll for in-page anchors
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+          history.replaceState(null, '', id);
+        });
+      });
+
+      // FAQ accordion - close others on open
+      const faqItems = document.querySelectorAll('.kol-faq__item');
+      faqItems.forEach((item) => {
+        item.addEventListener('toggle', () => {
+          if (item.open) {
+            faqItems.forEach((other) => {
+              if (other !== item && other.open) other.open = false;
+            });
+          }
+        });
+      });
+
+      // FAQ category filter
+      const faqFilter = document.querySelector('[data-faq-filter]');
+      const faqList = document.querySelector('[data-faq-list]');
+      if (faqFilter && faqList) {
+        const chips = Array.from(faqFilter.querySelectorAll('.kol-faq-chip'));
+        const items = Array.from(faqList.querySelectorAll('.kol-faq__item'));
+        chips.forEach((chip) => {
+          chip.addEventListener('click', () => {
+            const cat = chip.dataset.faqCat;
+            chips.forEach((c) => {
+              const on = c === chip;
+              c.classList.toggle('is-active', on);
+              c.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            items.forEach((item) => {
+              const matches = cat === 'Todas' || item.dataset.faqCat === cat;
+              item.classList.toggle('is-hidden', !matches);
+            });
+          });
+        });
+      }
+    })();
+  </script>
+</Layout>

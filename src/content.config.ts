@@ -61,6 +61,16 @@ const insightsFr = defineCollection({
   schema: insightFrSchema,
 });
 
+const insightsDe = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/insights-de' }),
+  schema: insightFrSchema,
+});
+
+const insightsEs = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/insights-es' }),
+  schema: insightFrSchema,
+});
+
 const caseBaseSchema = z.object({
   brand: z.string(),
   title: z.string(),
@@ -108,4 +118,14 @@ const casesFr = defineCollection({
   schema: caseFrSchema,
 });
 
-export const collections = { insights, insightsFr, cases, casesFr };
+const casesDe = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/cases-de' }),
+  schema: caseFrSchema,
+});
+
+const casesEs = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/cases-es' }),
+  schema: caseFrSchema,
+});
+
+export const collections = { insights, insightsFr, insightsDe, insightsEs, cases, casesFr, casesDe, casesEs };

@@ -1,0 +1,289 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const services = [
+  {
+    eyebrow: 'Plattformen',
+    title: 'Plattformen',
+    tagline: 'Tmall, JD, Douyin, WeChat, RED, Pinduoduo: An wen sich jede Plattform richtet und mit welchen Hebeln man dort Fuss fasst.',
+    href: '/de/china-verstehen/plattformen',
+    cta: 'Plattformen erkunden',
+    image: '/Images/learn-china/card-platforms.png',
+    alt: 'Drei Smartphones auf einem chinesischen Schreibtisch, jedes zeigt eine andere Plattform-Oberfläche, Spätnachmittags-Licht',
+    accent: '#269ADA',
+    accentSoft: '#E8F4FC',
+  },
+  {
+    eyebrow: 'Masterclass',
+    title: 'Masterclass',
+    tagline: 'Konzentrierte Sessions am halben Tag, geleitet von den Operatoren, die das Wachstum ausländischer Marken auf dem chinesischen Markt täglich steuern.',
+    href: '/de/china-verstehen/masterclass',
+    cta: 'Masterclasses entdecken',
+    image: '/Images/CyrilMasterclass.jpg',
+    alt: 'Cyril Drouin leitet eine Beyond-Border-Group-Masterclass zum chinesischen Markt',
+    accent: '#E54B6E',
+    accentSoft: '#FCEAEF',
+  },
+  {
+    eyebrow: 'Studienreisen',
+    title: 'Studienreisen',
+    tagline: 'Immersionsprogramme in Shanghai, Shenzhen und den aufstrebenden Städten. Eine Woche vor Ort mit Ihrem Team, im direkten Austausch mit chinesischen Verbrauchern und Vertriebspartnern.',
+    href: '/de/china-verstehen/studienreisen',
+    cta: 'Programme entdecken',
+    image: '/Images/learn-china/card-expeditions.png',
+    alt: 'Drei Operatoren gehen durch die Gänge eines chinesischen Grosshandelsmarkts, einer zeigt auf eine Produktpalette',
+    accent: '#0EA46C',
+    accentSoft: '#E6F5EE',
+  },
+  {
+    eyebrow: 'Lektüre',
+    title: 'Analysen',
+    tagline: 'Analysen, Branchenberichte und Feldnotizen aus unseren Teams in China. Frei zugänglich.',
+    href: '/de/analysen',
+    cta: 'Aktuelle Analysen lesen',
+    image: '/Images/learn-china/card-insights.png',
+    alt: 'Ein Analyst des chinesischen Marktes an einem vollen Schreibtisch, prüft einen gedruckten Bericht neben einem Dashboard auf dem Computer, Tageslicht von links',
+    accent: '#7C5DFA',
+    accentSoft: '#F0EDFE',
+  },
+];
+---
+
+<Layout
+  title="China verstehen | Masterclass und Studienreisen unserer Agentur | Beyond Border Group"
+  description="Plattformen, Masterclasses, Studienreisen vor Ort und Publikationen, geleitet von unserer Agentur in China. Vier Formate, um den Markt zu lesen, entwickelt von den Teams, die ihn täglich bedienen."
+>
+
+  {/* ---------- HERO ---------- */}
+  <section class="hero-fullbleed">
+    <picture>
+      <img
+        src="/Images/learn-china/hero.png"
+        alt=""
+        class="hero-fullbleed__image"
+        width="1600"
+        height="900"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </picture>
+    <div class="hero-fullbleed__overlay" aria-hidden="true"></div>
+
+    <div class="container hero-fullbleed__inner">
+      <div class="hero-fullbleed__copy">
+        <span class="eyebrow eyebrow--on-dark">China verstehen</span>
+        <h1 class="hero-fullbleed__title">China lesen, bevor Sie einen einzigen Euro binden.</h1>
+        <p class="hero-fullbleed__lead">
+          Workshops, Plattform-Analysen, Immersionswochen vor Ort, redaktionelle Publikationen. Vier Formate, konzipiert und geleitet von den Teams, die unsere China-Operationen tagtäglich führen.
+        </p>
+        <div class="hero-fullbleed__actions">
+          <a class="btn btn--primary" href="#services">Vier Formate ansehen</a>
+          <a class="btn btn--ghost-light" href="/de/kontakt">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- SERVICES GRID ---------- */}
+  <section class="section" id="services">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">Vier Formate</span>
+        <h2>Das Format wählen, das zu Ihrer Lage passt.</h2>
+        <p class="section-header__lead">
+          Jedes Team braucht einen anderen Einstieg. Die einen bevorzugen den kurzen Workshop, die anderen die Immersionswoche neben den chinesischen Operatoren, wieder andere nehmen lieber ein Lesedossier mit auf die erste Reise. Kein Weg ist richtiger als der andere. Es ist eine Frage der Marktreife.
+        </p>
+      </header>
+
+      <div class="learn-grid">
+        {services.map((s) => (
+          <a
+            href={s.href}
+            class="learn-tile"
+            style={`--accent: ${s.accent}; --accent-soft: ${s.accentSoft};`}
+          >
+            <div class="learn-tile__media">
+              <img src={s.image} alt={s.alt} loading="lazy" decoding="async" />
+              <div class="learn-tile__scrim" aria-hidden="true"></div>
+            </div>
+
+            <div class="learn-tile__body">
+              <span class="learn-tile__eyebrow">{s.eyebrow}</span>
+              <h3 class="learn-tile__title">{s.title}</h3>
+              <p class="learn-tile__tagline">{s.tagline}</p>
+              <span class="learn-tile__cta">
+                {s.cta}
+                <span class="learn-tile__arrow" aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .learn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .learn-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 420px;
+    padding: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    color: #fff;
+    background: var(--bbg-ink);
+    isolation: isolate;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .learn-tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent);
+    z-index: 3;
+  }
+
+  .learn-tile__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .learn-tile__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .learn-tile__scrim {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.85) 100%);
+    z-index: 1;
+    transition: opacity 300ms ease;
+  }
+
+  .learn-tile__body {
+    position: relative;
+    z-index: 2;
+    max-width: 36rem;
+  }
+
+  .learn-tile__eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .learn-tile__title {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    line-height: 1.15;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  .learn-tile__tagline {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.92);
+    margin: 0 0 1.25rem;
+    max-width: 30rem;
+  }
+
+  .learn-tile__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    width: fit-content;
+    transition: border-color 200ms ease, color 200ms ease;
+  }
+
+  .learn-tile__arrow {
+    display: inline-block;
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .learn-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+    color: #fff;
+  }
+  .learn-tile:hover .learn-tile__media img {
+    transform: scale(1.05);
+  }
+  .learn-tile:hover .learn-tile__scrim {
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.9) 100%);
+  }
+  .learn-tile:hover .learn-tile__cta {
+    border-color: #fff;
+  }
+  .learn-tile:hover .learn-tile__arrow {
+    transform: translateX(6px);
+  }
+
+  .learn-tile:focus-visible {
+    outline: 3px solid var(--bbg-blue);
+    outline-offset: 4px;
+  }
+
+  @media (max-width: 1024px) {
+    .learn-grid {
+      grid-template-columns: 1fr;
+    }
+    .learn-tile {
+      min-height: 360px;
+      padding: 1.75rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .learn-tile {
+      min-height: 340px;
+    }
+    .learn-tile__tagline {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .learn-tile,
+    .learn-tile__media img,
+    .learn-tile__scrim,
+    .learn-tile__cta,
+    .learn-tile__arrow {
+      transition: none !important;
+    }
+  }
+</style>

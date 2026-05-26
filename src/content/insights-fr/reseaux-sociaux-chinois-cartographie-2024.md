@@ -12,7 +12,7 @@ heroImageAlt: "Bannière des réseaux sociaux 2021"
 
 ## Réseaux sociaux chinois : la cartographie 2024 pour les marques
 
-Le paysage digital chinois poursuit sa mue en 2024. Les marques internationales y identifient des opportunités sérieuses sur l'une des plus larges bases consommateurs de la planète. Les [plateformes](/fr/comprendre-la-chine/plateformes) que sont [WeChat](/fr/se-developper-en-chine/commerce-social), Weibo ou Douyin pèsent bien au-delà de la sphère chinoise, par leur taille critique et par la diversité de leurs fonctionnalités. Comprendre ces canaux et maîtriser leur activation forme le socle de toute installation durable sur le marché. Suit l'inventaire des plateformes de référence et des modes d'activation pertinents pour le marketing de marque.
+Le paysage digital chinois poursuit sa mue en 2024. Les marques internationales y repèrent des opportunités sérieuses sur l'une des plus larges bases consommateurs de la planète. Les [plateformes](/fr/comprendre-la-chine/plateformes) que sont [WeChat](/fr/se-developper-en-chine/commerce-social), Weibo ou Douyin pèsent bien au-delà de la sphère chinoise, par leur taille critique et par la diversité de leurs fonctionnalités. Comprendre ces canaux et maîtriser leur activation forme le socle de toute installation durable sur le marché. Suit l'inventaire des plateformes de référence et des modes d'activation pertinents pour le marketing de marque.
 
 ## Les enjeux pour les marques internationales
 
@@ -56,7 +56,7 @@ Une marque y active plusieurs leviers : campagne interactive, service client via
 
 ### 5. Baidu Tieba
 
-Baidu Tieba est un forum communautaire qui revendique plus de 300 millions d'utilisateurs actifs mensuels. Les internautes y lancent et rejoignent des discussions thématiques, sur un modèle proche de Reddit. La marque y dialogue avec des communautés de niche, recueille des signaux consommateur et nourrit la fidélité. La participation aux discussions pertinentes et la création de Tieba dédiés installent la marque en référence et fédèrent une communauté autour d'elle.
+Baidu Tieba est un forum communautaire qui revendique plus de 300 millions d'utilisateurs actifs mensuels. Les internautes y lancent et rejoignent des discussions thématiques, sur un modèle proche de Reddit. La marque y dialogue avec des communautés de niche, recueille des signaux consommateur, alimente la fidélité. La participation aux discussions pertinentes et la création de Tieba dédiés installent la marque en référence et fédèrent une communauté autour d'elle.
 
 Baidu Tieba s'avère précieux pour le content marketing : publications et discussions ressortent fréquemment dans les résultats de recherche Baidu, ce qui démultiplie la visibilité. La plateforme constitue par ailleurs un outil de veille pour suivre l'opinion publique et collecter des retours sur produits ou services.
 
@@ -66,7 +66,7 @@ Baidu Tieba s'avère précieux pour le content marketing : publications et discu
 
 Tencent Video figure parmi les plus grandes plateformes de streaming vidéo en Chine avec plus de 443 millions d'utilisateurs actifs mensuels et plus de 112 millions d'abonnés payants. Le catalogue couvre films, séries et événements en direct. Pour la marque, Tencent Video déploie un éventail publicitaire généreux : pre-roll, mid-roll, contenus sponsorisés.
 
-L'étendue de l'audience et le niveau d'engagement en font un canal de premier choix pour adresser un large public. Le live y rencontre un succès marqué : événements, lancements produit, sessions interactives. Cet échange en temps réel renforce la visibilité et la confiance. Tencent Video s'inscrit naturellement dans une stratégie de live commerce en Chine.
+L'étendue de l'audience et le niveau d'engagement en font un canal de premier choix pour adresser un large public. Le live y rencontre un succès marqué : événements, lancements produit, sessions interactives. Cet échange en temps réel solidifie la visibilité et la confiance. Tencent Video s'inscrit naturellement dans une stratégie de live commerce en Chine.
 
 ![Live streaming Tencent](/Images/insights/2024/07/Tencent-livestreaming.jpg)
 

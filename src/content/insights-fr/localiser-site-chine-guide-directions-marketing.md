@@ -59,7 +59,7 @@ La réglementation chinoise impose une lecture fine et une conformité rigoureus
 
 Caler la stratégie SEO sur les algorithmes des moteurs chinois, Baidu en tête, fait grimper la visibilité du site. Recherche de mots-clés, optimisation des balises meta, refonte des contenus pour la recherche locale : autant de chantiers à ouvrir.
 
-* **SEO Baidu :** contrairement à Google, Baidu favorise les sites qui travaillent finement mots-clés et balises meta, et qui sont hébergés en Chine. Optimiser pour ses algorithmes spécifiques pousse la visibilité dans l'e-commerce chinois.
+* **SEO Baidu :** à la différence de Google, Baidu favorise les sites qui travaillent finement mots-clés et balises meta, et qui sont hébergés en Chine. Optimiser pour ses algorithmes propres pousse la visibilité dans l'e-commerce chinois.
 
 * **Localisation des contenus :** descriptions meta, titres et balises passent en chinois et se calent sur les mots-clés tendance du secteur dans le pays.
 
@@ -73,7 +73,7 @@ Vu le poids du mobile en Chine, l'approche mobile first n'a plus rien d'optionne
 
 ### Intégration aux réseaux sociaux
 
-Les réseaux sociaux pèsent lourd dans le marketing digital en Chine. Bien utiliser WeChat et Douyin nourrit trafic et engagement, et ouvre la voie à la vente directe.
+Les réseaux sociaux pèsent lourd dans le marketing digital en Chine. Bien utiliser WeChat et Douyin alimente trafic et engagement, et ouvre la voie à la vente directe.
 
 * **Intégrations spécifiques :** Facebook et Twitter restent bloqués. L'enjeu bascule donc sur les réseaux locaux, WeChat et Weibo en tête. Ces plateformes ouvrent des leviers uniques : achat direct via le réseau social et accès à une base d'utilisateurs gigantesque.
 
@@ -87,7 +87,7 @@ L'épine dorsale technique du site doit rester compatible avec l'infrastructure 
 
 ![Vue 3D Baidu Maps](/Images/insights/2025/01/Baidu-Maps-3D-view-03.jpg)
 
-* **Intégration d'API locales :** les API autorisées, calibrées pour l'infrastructure chinoise, muscle la performance et la fiabilité des fonctionnalités du site.
+* **Intégration d'API locales :** les API autorisées, calibrées pour l'infrastructure chinoise, musclent la performance et la fiabilité des fonctionnalités du site.
 
 ## Design et interface utilisateur
 

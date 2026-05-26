@@ -1,0 +1,1513 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const outcomes = [
+  "El tiempo de carga baja de ocho a quince segundos a menos de un segundo en China continental",
+  "Baidu empieza a indexar en las semanas siguientes a la concesión del ICP",
+  "Aparecen las primeras citas en los motores de IA chinos a medida que rastrean el contenido nuevo",
+  "El GMV del mini-programa de WeChat se sigue desde el primer día",
+];
+
+const aiEngines = [
+  { name: 'Doubao', cn: '豆包', maker: 'ByteDance' },
+  { name: 'DeepSeek', cn: '深度求索', maker: 'DeepSeek' },
+  { name: 'Kimi', cn: 'Kimi', maker: 'Moonshot AI' },
+  { name: 'Qwen', cn: '通义千问', maker: 'Alibaba' },
+  { name: 'Baidu AI', cn: '文心一言', maker: 'Baidu' },
+];
+
+const geoBullets = [
+  "Datos estructurados (schema.org, JSON-LD) para que los modelos recorran sus páginas sin tropiezos",
+  "Contenido denso y factual: los motores de IA citan lo que pueden respaldar; el lenguaje publicitario lo ignoran",
+  "Páginas redactadas en chino e indexadas tanto por Baidu como por Sogou",
+  "Construcción de la entidad de marca en Baidu Baike y fuentes de referencia equivalentes",
+  "Seguimiento de qué motores citan la marca y cómo la describen",
+];
+
+const wechatSurfaces = [
+  {
+    tag: "Cuenta oficial",
+    cn: '公众号',
+    title: "La redacción de su marca, dentro de WeChat",
+    body: "Cuenta de servicio o de suscripción que envía artículos a los suscriptores, gestiona la atención al cliente y aloja un puñado de páginas clave. Mantiene la relación entre compras.",
+    bullet: "Artículos publicados, atención al cliente, páginas clave",
+  },
+  {
+    tag: "Mini-programa",
+    cn: '小程序',
+    title: "Una aplicación completa dentro de WeChat, a dos toques",
+    body: "Catálogo, pago con WeChat Pay, tarjetas de socio y programas de niveles caben aquí. Es donde de verdad se anudan eCommerce, fidelización y membresía.",
+    bullet: "eCommerce, fidelización y membresía en uno",
+    highlight: true,
+  },
+];
+
+const techPaths = [
+  {
+    name: "WordPress",
+    sub: "Orientado a contenido, editado en local",
+    when: "Encaja cuando el equipo local quiere llevar el sitio por su cuenta: campañas, artículos, lanzamientos de producto, actualizaciones frecuentes. Interfaz familiar, base tecnológica probada. Su responsable de marketing en Shanghái publica un martes sin pedir nada al equipo de desarrollo.",
+    bullets: [
+      "Google Fonts sustituidas por CDN chinas equivalentes",
+      "Plugins bloqueados reemplazados por alternativas locales",
+      "CDN local conectada, ICP tramitado, SEO Baidu cerrado",
+      "Indicado para equipos que reivindican su autonomía editorial",
+    ],
+    timeline: "6 a 10 semanas",
+  },
+  {
+    name: "Astro",
+    sub: "Sitio de marca, rendimiento sostenido",
+    when: "Encaja cuando el sitio es la vitrina de marca y producto, sin un ritmo intenso de actualización. Astro produce HTML estrictamente estático: carga por debajo de un segundo incluso detrás del Firewall, coste de alojamiento casi nulo y superficie de ataque mucho menor.",
+    bullets: [
+      "Carga por debajo de un segundo en China continental",
+      "Sin base de datos ni PHP, huella mínima en servidor",
+      "Sin componentes dinámicos explotables ni plugins que parchear",
+      "Indicado para sitios de marketing de marca, sin transacción",
+    ],
+    timeline: "4 a 8 semanas",
+    highlight: true,
+  },
+];
+
+const hostingOptions = [
+  {
+    where: "China continental",
+    note: "ICP obligatorio",
+    load: "< 1 segundo",
+    seo: "Muy favorable",
+    verdict: "La única opción realmente defendible",
+    status: 'go',
+  },
+  {
+    where: "Hong Kong",
+    note: "Sin ICP",
+    load: "De 2 a 4 segundos",
+    seo: "Marginal",
+    verdict: "Lento y penalizado por Baidu",
+    status: 'warn',
+  },
+  {
+    where: "Estados Unidos o Unión Europea",
+    note: "Sin ICP",
+    load: "De 8 a 15 segundos, a veces más",
+    seo: "Inexistente",
+    verdict: "Inviable en la práctica",
+    status: 'stop',
+  },
+];
+
+const deliverables = [
+  {
+    icon: 'design',
+    title: "Un diseño pensado para el lector chino",
+    desc: "Páginas más densas, arquitectura recogida, códigos QR sistemáticos, primacía móvil: el 95 % del tráfico pasa por ahí. Construimos para esa realidad, no para los códigos occidentales de la web, pulidos en Estocolmo y rotos en Shanghái.",
+  },
+  {
+    icon: 'code',
+    title: "Un código que convive con el Gran Firewall",
+    desc: "Nada de Google Fonts, ni CDN bloqueadas, ni llamadas a la API de Maps que se quedan colgadas, ni embeds de YouTube. Cada dependencia se sustituye por su equivalente local. Sin brillo aparente, pero esa es la diferencia entre un sitio que aparece y un sitio que se queda congelado.",
+  },
+  {
+    icon: 'server',
+    title: "Un alojamiento estable y probado",
+    desc: "Disponibilidad superior al 99 %, atención a incidencias en menos de dos horas, siete días a la semana. Actualización del stack, copias nocturnas, cumplimiento PIPL desde el primer día. La monitorización corre desde dentro del Firewall, que es donde las anomalías aparecen de verdad.",
+  },
+  {
+    icon: 'phone',
+    title: "Mini-programas calibrados para convertir",
+    desc: "Diseñados sobre el stack de Tencent (WXML, WXSS, WeChat JS). Pagos nativos, integración con CRM, programas de niveles, notificaciones push. Una década de mini-programas para marcas que tratan WeChat como canal de venta, no como un folleto.",
+  },
+  {
+    icon: 'pen',
+    title: "Copywriting en el idioma que toca",
+    desc: "Contenido en chino escrito directamente por nuestro equipo interno, nunca traducido del inglés. Versiones en español e inglés cuando la comunicación corporativa, los materiales de inversores o la coherencia del grupo lo exigen.",
+  },
+];
+
+const faqs = [
+  {
+    q: "¿Qué es GEO y por qué importa?",
+    a: "GEO, Generative Engine Optimization, es el SEO aplicado a la búsqueda por IA. Los internautas chinos consultan cada vez más a los asistentes de IA (Doubao, Kimi, DeepSeek, Qwen) en lugar de hacer una búsqueda clásica. Esos modelos necesitan sitios creíbles, indexados, que puedan citar. Sin alojamiento en China, no hay visibilidad en esa nueva capa de búsqueda.",
+  },
+  {
+    q: "¿WordPress o Astro?",
+    a: "WordPress si el equipo actualiza el sitio con frecuencia y quiere mantener su autonomía editorial. Astro si el sitio permanece relativamente estable entre lanzamientos y las prioridades son velocidad, seguridad y control del coste de alojamiento.",
+  },
+  {
+    q: "¿Cuál es el presupuesto de un sitio diseñado para China?",
+    a: "Depende del alcance, la escala y el número de integraciones. Los sitios de marca en Astro están en la parte baja del rango. Los proyectos WordPress con funcionalidades de eCommerce o integración con WeChat están más arriba. Cada proyecto se presupuesta a medida.",
+  },
+  {
+    q: "¿Cuánto dura el proyecto?",
+    a: "De cuatro a diez semanas para diseño y desarrollo, más el trámite del ICP. Bei'an: dos a cuatro semanas. Licencia comercial: dos a tres meses, a veces más. Diseño y desarrollo corren en paralelo a los trámites de ICP para evitar parones.",
+  },
+  {
+    q: "¿De quién es el código y el ICP?",
+    a: "De la marca, sin reservas. El código es suyo. El ICP queda a nombre de su entidad china, o de la entidad partner montada conjuntamente. Sin bloqueos operativos.",
+  },
+  {
+    q: "¿Pueden migrar un sitio existente?",
+    a: "Sí. Auditamos el sitio actual, señalamos los componentes que fallan en China y migramos limpio o reconstruimos las partes que no funcionan. En la mayoría de casos sale más rápido y más barato que rehacerlo entero.",
+  },
+  {
+    q: "¿De verdad hace falta alojar en China?",
+    a: "Para velocidad de carga, posicionamiento en Baidu, citas de los motores de IA y fiabilidad, sí. Hong Kong funciona como una pasarela imperfecta. Servir el sitio desde Europa o Estados Unidos equivale a ofrecer una experiencia rota a los usuarios chinos.",
+  },
+  {
+    q: "¿Qué es una licencia ICP?",
+    a: "Un trámite obligatorio ante el Ministerio chino de Industria y Tecnologías de la Información. Conviven dos regímenes. El Bei'an cubre los sitios informativos. La licencia comercial cubre eCommerce y plataformas transaccionales. Se exige para cualquier alojamiento en China continental.",
+  },
+  {
+    q: "¿Puede un mini-programa de WeChat sustituir al sitio?",
+    a: "En eCommerce y fidelización, a menudo sí. Para descubrimiento, SEO y credibilidad de marca, el sitio sigue siendo indispensable. La mayoría de los clientes opera los dos en paralelo.",
+  },
+  {
+    q: "¿Cómo condiciona la PIPL el sitio?",
+    a: "La PIPL es el equivalente chino del RGPD. El sitio debe indicar con claridad qué datos recoge, obtener consentimiento explícito y conservar los datos personales con seguridad. Integramos el cumplimiento PIPL desde el arranque del proyecto.",
+  },
+  {
+    q: "¿En qué consiste la auditoría gratuita?",
+    a: "Probamos el sitio actual desde dentro de China: tiempos de carga, recursos bloqueados, visibilidad en Baidu, citas en los motores de IA. Le mandamos un resumen escrito al terminar. Sin compromiso.",
+  },
+];
+
+const icons: Record<string, string> = {
+  design: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M3 9h18"/><circle cx="6.5" cy="6" r="0.6" fill="currentColor"/><path d="M8 21h8M12 17v4"/></svg>`,
+  code: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/><path d="m14 4-4 16"/></svg>`,
+  server: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r="0.6" fill="currentColor"/><circle cx="7" cy="17" r="0.6" fill="currentColor"/></svg>`,
+  phone: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>`,
+  pen: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6L8 22H2v-6L14 4z"/><path d="m13 5 6 6"/></svg>`,
+  check: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>`,
+};
+---
+
+<Layout
+  title="Agencia de sitios web para China: diseño, alojamiento y ranking | Beyond Border Group"
+  description="Diseñamos y alojamos sitios y mini-programas de WeChat que cargan, posicionan en Baidu y son citados por los motores de IA chinos. Más de veinte años en China."
+>
+  <article class="web">
+
+    {/* ---------- HERO ---------- */}
+    <section class="web-hero">
+      <div class="web-hero__bg" aria-hidden="true">
+        <img src="/Images/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact.jpg" alt="" />
+      </div>
+      <div class="web-hero__overlay" aria-hidden="true"></div>
+
+      <div class="container web-hero__inner">
+        <nav class="web-hero__crumbs" aria-label="Migas de pan">
+          <a href="/es">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <a href="/es#services">Crecer en China</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark">Sitios web en China</span>
+        <h1 class="web-hero__title">Sitios que cargan, posicionan y venden de verdad en China.</h1>
+        <p class="web-hero__lead">
+          Diseñamos, desarrollamos y alojamos sitios y mini-programas de WeChat para el mercado chino.
+          Carga por debajo del segundo, cumplimiento ICP, indexación en Baidu y presencia en los motores de
+          IA que los consumidores chinos usan ya para descubrir marcas.
+        </p>
+        <p class="web-hero__support">
+          Más de veinte años en China. Oficinas en Shanghái, Hong Kong y París. Un equipo que ha trabajado
+          para grupos internacionales y para retadores locales.
+        </p>
+        <div class="web-hero__actions">
+          <a href="/es/contacto" class="btn btn--primary">Auditoría gratuita de su sitio en China</a>
+          <a href="/es/proyectos" class="btn btn--ghost-light">Ver nuestros casos</a>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- INTRO + 90-DAY OUTCOMES ---------- */}
+    <section class="section">
+      <div class="container">
+        <div class="web-intro">
+          <div class="web-intro__copy">
+            <span class="eyebrow">Diseñado para la internet china, no traspuesto</span>
+            <h2>Casi todos los sitios internacionales se rompen al llegar a China.</h2>
+            <p>
+              La carga se alarga, hasta no mostrar nada. Los servicios de Google siguen bloqueados. Baidu
+              no indexa. Los motores de IA siguen su camino sin pararse.
+            </p>
+            <p>
+              Diseñamos sitios y mini-programas de WeChat que encuentran su sitio dentro de la web china.
+              El stack tecnológico encaja con las limitaciones del mercado, el alojamiento está donde tiene
+              que estar, el SEO está calibrado para Baidu y los motores de IA en los que se apoyan ahora
+              los consumidores chinos recogen el contenido. Para que le encuentren, y para vender.
+            </p>
+          </div>
+
+          <aside class="web-outcomes" aria-label="Resultados observados en los primeros noventa días">
+            <span class="web-outcomes__tag">Primeros noventa días</span>
+            <h3>Lo que cambia cuando la ejecución es rigurosa</h3>
+            <ul>
+              {outcomes.map((o) => (
+                <li>
+                  <span class="web-outcomes__check" aria-hidden="true" set:html={icons.check} />
+                  <span>{o}</span>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- GEO: AI ENGINES ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Un sitio en China, condición innegociable en 2026</span>
+          <h2>GEO: que la IA le cite, no solo posicionar en Baidu</h2>
+          <p class="section-header__lead">
+            GEO, Generative Engine Optimization, es el SEO en la era de la IA. El consumidor chino se salta
+            la barra de búsqueda y pregunta directamente a los modelos.
+          </p>
+        </header>
+
+        <div class="web-geo">
+          <div class="web-geo__copy">
+            <p>
+              Doubao, Kimi, DeepSeek, Qwen y una lista que no para de crecer responden tirando de los sitios
+              que han indexado y considerado creíbles. Sin sitio alojado en China, esos motores no tienen
+              ninguna fuente que citar sobre su marca. La consecuencia es mecánica: su marca queda fuera de
+              la conversación.
+            </p>
+            <h3 class="web-geo__h3">Lo que hacemos en GEO, en concreto</h3>
+            <ul class="web-geo__list">
+              {geoBullets.map((b) => (
+                <li>
+                  <span class="web-geo__bullet" aria-hidden="true" set:html={icons.check} />
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="web-engines" aria-label="Motores de IA chinos">
+            <span class="web-engines__tag">Los motores que ahora deciden la visibilidad</span>
+            <div class="web-engines__grid">
+              {aiEngines.map((e) => (
+                <div class="web-engine">
+                  <span class="web-engine__cn" lang="zh-Hans">{e.cn}</span>
+                  <span class="web-engine__name">{e.name}</span>
+                  <span class="web-engine__maker">{e.maker}</span>
+                </div>
+              ))}
+            </div>
+            <p class="web-engines__note">
+              Un sitio alojado en China y redactado en chino es el activo de base que alimenta a Baidu y al
+              conjunto de motores de IA que hoy moldean cómo descubren productos los consumidores chinos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- WECHAT SURFACES ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--split">
+          <div>
+            <span class="eyebrow">WeChat, la otra cara del dispositivo</span>
+            <h2>Dos superficies que cubrir: la cuenta oficial y el mini-programa.</h2>
+          </div>
+          <div class="web-wechat-stat">
+            <span class="web-wechat-stat__value">1.414 M</span>
+            <span class="web-wechat-stat__label">
+              Usuarios activos mensuales combinados de Weixin y WeChat a 30 de septiembre de 2025
+            </span>
+            <span class="web-wechat-stat__source">Fuente: resultados Tencent T3 2025</span>
+          </div>
+        </header>
+
+        <div class="web-surfaces">
+          {wechatSurfaces.map((s) => (
+            <article class={`web-surface${s.highlight ? ' web-surface--highlight' : ''}`}>
+              {s.highlight && <span class="web-surface__badge">El punto de inflexión de la conversión</span>}
+              <div class="web-surface__head">
+                <span class="web-surface__cn" lang="zh-Hans">{s.cn}</span>
+                <span class="web-surface__tag">{s.tag}</span>
+              </div>
+              <h3 class="web-surface__title">{s.title}</h3>
+              <p class="web-surface__body">{s.body}</p>
+              <span class="web-surface__bullet">{s.bullet}</span>
+            </article>
+          ))}
+        </div>
+
+        <p class="web-surfaces__note">
+          La mayoría de las marcas con las que trabajamos usan las dos superficies. La cuenta oficial
+          sostiene la relación. El mini-programa es donde se cierra la conversión. Juntas cubren el
+          recorrido entero, del descubrimiento a la compra.
+        </p>
+      </div>
+    </section>
+
+    {/* ---------- TWO TECH PATHS ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Dos vías técnicas</span>
+          <h2>WordPress o Astro: la decisión depende de cómo trabaja su equipo.</h2>
+          <p class="section-header__lead">
+            Sin guerras de capilla. La elección correcta depende de la frecuencia de publicación, de quién
+            empuja las actualizaciones y de si hay que gestionar transacciones.
+          </p>
+        </header>
+
+        <div class="web-tech">
+          {techPaths.map((t) => (
+            <article class={`web-tech-card${t.highlight ? ' web-tech-card--highlight' : ''}`}>
+              <div class="web-tech-card__head">
+                <h3 class="web-tech-card__name">{t.name}</h3>
+                <span class="web-tech-card__sub">{t.sub}</span>
+              </div>
+              <p class="web-tech-card__when">{t.when}</p>
+              <ul class="web-tech-card__list">
+                {t.bullets.map((b) => (
+                  <li>
+                    <span class="web-tech-card__check" aria-hidden="true" set:html={icons.check} />
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+              <div class="web-tech-card__footer">
+                <span class="web-tech-card__timeline-label">Calendario</span>
+                <span class="web-tech-card__timeline-value">{t.timeline}, más el trámite del ICP</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- HOSTING ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Alojamiento en China</span>
+          <h2>El alojamiento es la decisión más estructural del proyecto.</h2>
+          <p class="section-header__lead">
+            Y la respuesta, a decir verdad, es una: alojar dentro de China. Cualquier otra opción es un
+            compromiso que se paga. Carga lenta, peor posicionamiento en Baidu, experiencia de usuario rota.
+          </p>
+        </header>
+
+        <div class="web-hosting">
+          {hostingOptions.map((h) => (
+            <article class={`web-host web-host--${h.status}`}>
+              <header class="web-host__head">
+                <h3>{h.where}</h3>
+                <span class="web-host__note">{h.note}</span>
+              </header>
+              <dl class="web-host__metrics">
+                <div>
+                  <dt>Tiempo de carga en China</dt>
+                  <dd>{h.load}</dd>
+                </div>
+                <div>
+                  <dt>Impacto en SEO Baidu</dt>
+                  <dd>{h.seo}</dd>
+                </div>
+              </dl>
+              <p class={`web-host__verdict web-host__verdict--${h.status}`}>{h.verdict}</p>
+            </article>
+          ))}
+        </div>
+
+        <div class="web-icp">
+          <div class="web-icp__copy">
+            <span class="eyebrow">El trámite ICP, el capítulo del que nadie habla</span>
+            <h3>Bei'an: dos a cuatro semanas. Licencia comercial: dos a tres meses.</h3>
+            <p>
+              Alojar en China continental supone tener una licencia ICP y montar el servidor en Alibaba
+              Cloud, Tencent Cloud o Huawei Cloud. Nos hacemos cargo del trámite completo del ICP. Bei'an
+              para sitios informativos, licencia comercial para eCommerce y plataformas transaccionales.
+            </p>
+            <p>
+              También configuramos el servidor, la CDN, la monitorización desde dentro de China (la mayoría
+              de las herramientas vigilan el estado del sitio desde fuera del Firewall y se pierden los
+              incidentes reales) y las copias diarias. Si no hay entidad china, existen varias vías. Las
+              explicamos en detalle.
+            </p>
+          </div>
+          <div class="web-icp__visual">
+            <img src="/Images/insights/how-to-apply-for-an-icp-license-for-your-website.png" alt="Proceso de licencia ICP para sitios web en China" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- CHINAWEBFOUNDRY ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <article class="web-cwf">
+          <div class="web-cwf__copy">
+            <span class="eyebrow">Agencia hermana</span>
+            <h2 class="web-cwf__title">ChinaWebFoundry: una agencia dedicada a sitios para el mercado chino.</h2>
+            <p>
+              Cuando el sitio en sí es el entregable principal, operamos una agencia hermana pensada
+              específicamente para el mercado chino. Cubrimos todas las bases técnicas: WordPress, Astro,
+              estático, desarrollo a medida.
+            </p>
+            <ul class="web-cwf__list">
+              <li>Estrategia, auditoría y migración detrás del Firewall</li>
+              <li>Alojamiento con licencia ICP en Alibaba, Tencent o Huawei Cloud</li>
+              <li>Rediseño UX y UI calibrado para el internauta chino</li>
+              <li>Sustitución de plugins e integraciones bloqueados por equivalentes locales</li>
+              <li>Posicionamiento en Baidu, redacción en chino y mantenimiento continuo</li>
+            </ul>
+            <p class="web-cwf__same">
+              El mismo equipo. Más de veinte años de experiencia acumulada en China. Una puerta de entrada
+              concreta cuando la prioridad es un sitio que funcione de verdad en China continental.
+            </p>
+            <a href="https://www.chinawebfoundry.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              Visitar ChinaWebFoundry <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="web-cwf__visual" aria-hidden="true">
+            <div class="web-cwf__browser">
+              <div class="web-cwf__browser-bar">
+                <span class="web-cwf__dot"></span>
+                <span class="web-cwf__dot"></span>
+                <span class="web-cwf__dot"></span>
+                <span class="web-cwf__url">chinawebfoundry.com</span>
+              </div>
+              <div class="web-cwf__browser-body">
+                <span class="web-cwf__brand">CWF</span>
+                <span class="web-cwf__tagline">Sitios diseñados para la internet china.</span>
+                <div class="web-cwf__chips">
+                  <span>WordPress</span>
+                  <span>Astro</span>
+                  <span>WeChat</span>
+                  <span>SEO Baidu</span>
+                  <span>ICP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    {/* ---------- WHAT WE DELIVER ---------- */}
+    <section class="section">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Lo que entregamos</span>
+          <h2>Cinco puntos cardinales que determinan el rendimiento real del sitio</h2>
+        </header>
+
+        <div class="web-deliver">
+          {deliverables.map((d) => (
+            <article class="web-deliver-card">
+              <span class="web-deliver-card__icon" set:html={icons[d.icon]} />
+              <h3 class="web-deliver-card__title">{d.title}</h3>
+              <p class="web-deliver-card__desc">{d.desc}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- WHO WE BUILD FOR ---------- */}
+    <section class="section section--alt">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">Para quién diseñamos</span>
+          <h2>Marcas que quieren un sitio que aguanta en China, no un sitio bonito en otro sitio.</h2>
+        </header>
+
+        <div class="web-who">
+          <ul>
+            <li>Marcas internacionales que entran en China por primera vez</li>
+            <li>Marcas cuyo sitio actual es demasiado lento para pesar en China continental</li>
+            <li>Equipos atascados en su primer trámite de ICP</li>
+            <li>Operadores de eCommerce que buscan alojamiento rápido y en regla</li>
+            <li>Marcas chinas que se abren al exterior y necesitan un sitio en inglés que funcione</li>
+          </ul>
+          <p class="web-who__cta">Casos de estudio bajo petición.</p>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FAQ ---------- */}
+    <section class="section">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center">
+          <span class="eyebrow">FAQ</span>
+          <h2>Preguntas frecuentes sobre sitios web en China</h2>
+        </header>
+
+        <div class="web-faq">
+          {faqs.map((f, i) => (
+            <details class="web-faq__item" open={i === 0}>
+              <summary class="web-faq__q">
+                <span>{f.q}</span>
+                <span class="web-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="web-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="web-cta">
+          <span class="eyebrow eyebrow--on-dark">Hablemos de su sitio en China</span>
+          <h2 class="web-cta__title">Cuéntenos qué tiene montado, qué necesita y a qué plazo.</h2>
+          <p class="web-cta__lead">
+            Le devolvemos una recomendación ajustada a su calendario, su audiencia y su presupuesto. Sin
+            decks genéricos, sin presentaciones de cuarenta diapositivas. Un plan y nada más.
+          </p>
+          <div class="web-cta__actions">
+            <a href="/es/contacto" class="btn web-cta__btn-primary">Empezar la conversación</a>
+            <a href="/es/proyectos" class="btn web-cta__btn-ghost">Ver nuestros casos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </article>
+
+  <style is:global>
+    .web .container--narrow { max-width: 880px; }
+
+    /* ---------- HERO ---------- */
+    .web-hero {
+      position: relative;
+      min-height: clamp(540px, 66vh, 700px);
+      display: flex;
+      align-items: center;
+      padding: clamp(96px, 12vh, 140px) 0 clamp(64px, 10vh, 120px);
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .web-hero__bg { position: absolute; inset: 0; z-index: -2; }
+    .web-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .web-hero__overlay {
+      position: absolute; inset: 0; z-index: -1;
+      background: linear-gradient(110deg,
+        rgba(8, 20, 32, 0.92) 0%,
+        rgba(8, 20, 32, 0.72) 50%,
+        rgba(8, 20, 32, 0.4) 100%);
+    }
+    .web-hero__inner { max-width: 920px; position: relative; }
+    .web-hero__crumbs {
+      margin-bottom: var(--space-5);
+      font-size: var(--fs-small);
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .web-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .web-hero__crumbs a:hover { color: var(--bbg-white); }
+    .web-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: #9DDBF5;
+    }
+    .web-hero__title {
+      font-size: clamp(2.25rem, 3.6vw + 1rem, 4rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-5);
+      max-width: 22ch;
+      text-wrap: balance;
+    }
+    .web-hero__lead {
+      font-size: clamp(1.0625rem, 0.6vw + 1rem, 1.3125rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.92);
+      max-width: 60ch;
+      margin: 0 0 var(--space-4);
+    }
+    .web-hero__support {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 56ch;
+      margin: 0 0 var(--space-6);
+    }
+    .web-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+
+    /* ---------- INTRO + 90-DAY OUTCOMES ---------- */
+    .web-intro {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: var(--space-7);
+      align-items: start;
+    }
+    .web-intro__copy h2 {
+      font-size: clamp(1.875rem, 2vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin: var(--space-3) 0 var(--space-5);
+    }
+    .web-intro__copy p {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--bbg-text);
+      margin-bottom: var(--space-4);
+    }
+    .web-intro__copy p:last-child { margin-bottom: 0; }
+
+    .web-outcomes {
+      background: var(--bbg-ink);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      position: relative;
+      overflow: hidden;
+    }
+    .web-outcomes::before {
+      content: "";
+      position: absolute;
+      top: -30%;
+      right: -20%;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(38,154,218,0.32) 0%, rgba(38,154,218,0) 65%);
+      pointer-events: none;
+    }
+    .web-outcomes__tag {
+      display: inline-block;
+      font-size: var(--fs-label);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #9DDBF5;
+      margin-bottom: var(--space-3);
+    }
+    .web-outcomes h3 {
+      color: var(--bbg-white);
+      font-size: 1.375rem;
+      margin: 0 0 var(--space-5);
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    .web-outcomes ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .web-outcomes li {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 12px;
+      align-items: start;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      color: rgba(255,255,255,0.9);
+    }
+    .web-outcomes__check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .web-outcomes__check svg { width: 12px; height: 12px; }
+    @media (max-width: 1024px) {
+      .web-intro { grid-template-columns: 1fr; gap: var(--space-5); }
+    }
+
+    /* ---------- GEO ---------- */
+    .web-geo {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-7);
+      align-items: start;
+    }
+    .web-geo__copy p {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--bbg-text);
+      margin: 0 0 var(--space-5);
+    }
+    .web-geo__h3 {
+      font-size: 1.25rem;
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.005em;
+    }
+    .web-geo__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .web-geo__list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 12px;
+      align-items: start;
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    .web-geo__bullet {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .web-geo__bullet svg { width: 14px; height: 14px; }
+
+    .web-engines {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+    }
+    .web-engines__tag {
+      display: inline-block;
+      font-size: var(--fs-label);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-4);
+    }
+    .web-engines__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-3);
+    }
+    .web-engine {
+      background: var(--bbg-surface);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-4);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease), transform var(--dur) var(--ease);
+    }
+    .web-engine:hover {
+      border-color: var(--bbg-blue);
+      background: var(--bbg-white);
+      transform: translateY(-2px);
+    }
+    .web-engine__cn {
+      font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      line-height: 1;
+      letter-spacing: 0.02em;
+    }
+    .web-engine__name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      margin-top: 2px;
+    }
+    .web-engine__maker {
+      font-size: 0.75rem;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.04em;
+    }
+    .web-engines__note {
+      margin: var(--space-4) 0 0;
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--bbg-border);
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    @media (max-width: 1024px) {
+      .web-geo { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .web-engines__grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- WECHAT SURFACES ---------- */
+    .web-wechat-stat {
+      max-width: 360px;
+      padding-left: var(--space-5);
+      border-left: 3px solid var(--bbg-blue);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .web-wechat-stat__value {
+      font-size: clamp(2rem, 2vw + 1rem, 2.75rem);
+      font-weight: 700;
+      color: var(--bbg-blue);
+      line-height: 1;
+      letter-spacing: -0.025em;
+      font-feature-settings: "tnum";
+    }
+    .web-wechat-stat__label {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: var(--bbg-text);
+    }
+    .web-wechat-stat__source {
+      font-size: var(--fs-label);
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    .web-surfaces {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-5);
+    }
+    .web-surface {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .web-surface:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .web-surface--highlight {
+      background: linear-gradient(180deg, var(--bbg-blue-light) 0%, var(--bbg-white) 60%);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .web-surface__badge {
+      position: absolute;
+      top: -12px;
+      left: var(--space-6);
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      font-size: var(--fs-label);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4em 0.9em;
+      border-radius: 999px;
+    }
+    .web-surface__head {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+    }
+    .web-surface__cn {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      line-height: 1;
+      letter-spacing: 0.02em;
+    }
+    .web-surface__tag {
+      font-size: var(--fs-label);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+    }
+    .web-surface__title {
+      font-size: 1.375rem;
+      line-height: 1.25;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+    .web-surface__body {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+      flex-grow: 1;
+    }
+    .web-surface__bullet {
+      align-self: flex-start;
+      font-size: var(--fs-label);
+      font-weight: 600;
+      color: var(--bbg-ink);
+      background: var(--bbg-surface);
+      padding: 0.5em 0.9em;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+    }
+    .web-surface--highlight .web-surface__bullet { background: var(--bbg-white); }
+    .web-surfaces__note {
+      max-width: 720px;
+      margin: var(--space-5) 0 0;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+    }
+    @media (max-width: 1024px) {
+      .web-surfaces { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- TWO TECH PATHS ---------- */
+    .web-tech {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-5);
+    }
+    .web-tech-card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-7);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .web-tech-card:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .web-tech-card--highlight {
+      background: linear-gradient(180deg, var(--bbg-blue-light) 0%, var(--bbg-white) 50%);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .web-tech-card__head { display: flex; align-items: baseline; flex-wrap: wrap; gap: var(--space-3); }
+    .web-tech-card__name {
+      font-size: 1.75rem;
+      letter-spacing: -0.015em;
+      margin: 0;
+    }
+    .web-tech-card__sub {
+      font-size: var(--fs-label);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+    }
+    .web-tech-card__when {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .web-tech-card__list {
+      list-style: none;
+      padding: var(--space-4) 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      border-top: 1px solid var(--bbg-border);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .web-tech-card__list li {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 10px;
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    .web-tech-card__check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .web-tech-card__check svg { width: 12px; height: 12px; }
+    .web-tech-card__footer { display: flex; flex-direction: column; gap: 4px; }
+    .web-tech-card__timeline-label {
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+    .web-tech-card__timeline-value {
+      font-size: 1rem;
+      color: var(--bbg-ink);
+      font-weight: 600;
+    }
+    @media (max-width: 1024px) {
+      .web-tech { grid-template-columns: 1fr; }
+      .web-tech-card { padding: var(--space-6); }
+    }
+
+    /* ---------- HOSTING ---------- */
+    .web-hosting {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+      margin-bottom: var(--space-7);
+    }
+    .web-host {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      border-top: 4px solid var(--bbg-border);
+    }
+    .web-host--go { border-top-color: #2BA767; }
+    .web-host--warn { border-top-color: #E0A91B; }
+    .web-host--stop { border-top-color: #C9402F; }
+    .web-host__head { display: flex; align-items: baseline; gap: var(--space-3); flex-wrap: wrap; }
+    .web-host__head h3 {
+      font-size: 1.25rem;
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+    .web-host__note {
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      background: var(--bbg-surface);
+      padding: 0.3em 0.7em;
+      border-radius: 999px;
+    }
+    .web-host__metrics {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      margin: 0;
+      padding: 0;
+    }
+    .web-host__metrics > div {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding-bottom: var(--space-3);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .web-host__metrics > div:last-child { border-bottom: none; padding-bottom: 0; }
+    .web-host__metrics dt {
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+    .web-host__metrics dd {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      margin: 0;
+      letter-spacing: -0.005em;
+      font-feature-settings: "tnum";
+    }
+    .web-host__verdict {
+      margin: 0;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      padding: var(--space-3);
+      border-radius: var(--radius-md);
+    }
+    .web-host__verdict--go { background: rgba(43,167,103,0.12); color: #1F7E4D; }
+    .web-host__verdict--warn { background: rgba(224,169,27,0.12); color: #8A6610; }
+    .web-host__verdict--stop { background: rgba(201,64,47,0.12); color: #952D20; }
+
+    .web-icp {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: var(--space-7);
+      align-items: center;
+      background: var(--bbg-blue-light);
+      border-radius: var(--radius-lg);
+      padding: var(--space-7);
+    }
+    .web-icp__copy h3 {
+      font-size: 1.5rem;
+      line-height: 1.25;
+      margin: var(--space-3) 0 var(--space-4);
+      letter-spacing: -0.01em;
+    }
+    .web-icp__copy p {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--bbg-text);
+      margin-bottom: var(--space-4);
+    }
+    .web-icp__copy p:last-child { margin-bottom: 0; }
+    .web-icp__visual {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 16 / 11;
+    }
+    .web-icp__visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    @media (max-width: 1024px) {
+      .web-hosting { grid-template-columns: 1fr; }
+      .web-icp { grid-template-columns: 1fr; padding: var(--space-6); }
+    }
+
+    /* ---------- CHINAWEBFOUNDRY ---------- */
+    .web-cwf {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-7);
+      align-items: center;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-7);
+      overflow: hidden;
+    }
+    .web-cwf__title {
+      font-size: clamp(1.625rem, 2vw + 0.75rem, 2.25rem);
+      line-height: 1.18;
+      margin: var(--space-3) 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .web-cwf__copy p {
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--bbg-text);
+      margin-bottom: var(--space-4);
+    }
+    .web-cwf__list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--space-5);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+    .web-cwf__list li {
+      position: relative;
+      padding-left: 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    .web-cwf__list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+    }
+    .web-cwf__same {
+      font-style: italic;
+      color: var(--bbg-text-muted);
+    }
+
+    .web-cwf__visual { display: flex; justify-content: center; }
+    .web-cwf__browser {
+      width: 100%;
+      max-width: 460px;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+    .web-cwf__browser-bar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 14px;
+      background: var(--bbg-surface);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .web-cwf__dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #D4D4D4;
+    }
+    .web-cwf__dot:nth-child(1) { background: #FF5F57; }
+    .web-cwf__dot:nth-child(2) { background: #FEBC2E; }
+    .web-cwf__dot:nth-child(3) { background: #28C840; }
+    .web-cwf__url {
+      margin-left: 12px;
+      font-size: 0.75rem;
+      color: var(--bbg-text-muted);
+      letter-spacing: 0.03em;
+      font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+    }
+    .web-cwf__browser-body {
+      padding: var(--space-6) var(--space-5);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      min-height: 220px;
+      background: linear-gradient(160deg, var(--bbg-white) 0%, var(--bbg-blue-light) 100%);
+    }
+    .web-cwf__brand {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--bbg-blue);
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .web-cwf__tagline {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--bbg-ink);
+      line-height: 1.4;
+      max-width: 22ch;
+    }
+    .web-cwf__chips {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .web-cwf__chips span {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.35em 0.65em;
+      border-radius: 999px;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      color: var(--bbg-blue);
+    }
+    @media (max-width: 1024px) {
+      .web-cwf { grid-template-columns: 1fr; padding: var(--space-6); }
+    }
+
+    /* ---------- DELIVERABLES ---------- */
+    .web-deliver {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+    }
+    .web-deliver-card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+    }
+    .web-deliver-card:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+    .web-deliver-card__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-4);
+    }
+    .web-deliver-card__icon svg { width: 24px; height: 24px; }
+    .web-deliver-card__title {
+      font-size: 1.1875rem;
+      line-height: 1.25;
+      margin: 0 0 var(--space-3);
+      letter-spacing: -0.005em;
+    }
+    .web-deliver-card__desc {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 1024px) { .web-deliver { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .web-deliver { grid-template-columns: 1fr; } }
+
+    /* ---------- WHO WE BUILD FOR ---------- */
+    .web-who {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-7);
+    }
+    .web-who ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--space-5);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .web-who li {
+      position: relative;
+      padding-left: 1.75rem;
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      color: var(--bbg-ink);
+      font-weight: 500;
+    }
+    .web-who li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 12px;
+      height: 2px;
+      background: var(--bbg-blue);
+    }
+    .web-who__cta {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: var(--bbg-text-muted);
+      font-style: italic;
+    }
+
+    /* ---------- FAQ ---------- */
+    .web-faq {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .web-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color var(--dur) var(--ease);
+    }
+    .web-faq__item[open] { border-color: var(--bbg-blue); }
+    .web-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .web-faq__q::-webkit-details-marker { display: none; }
+    .web-faq__q::marker { display: none; }
+    .web-faq__item:hover .web-faq__q { color: var(--bbg-blue); }
+    .web-faq__icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bbg-text-muted);
+      transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+    }
+    .web-faq__item[open] .web-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-blue);
+    }
+    .web-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+    .web-faq__a p { margin: 0; }
+
+    /* ---------- FINAL CTA ---------- */
+    .web-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .web-cta::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .web-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .web-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .web-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 56ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .web-cta__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .web-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .web-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .web-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .web-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
+</Layout>

@@ -17,7 +17,7 @@ L'article qui suit passe en revue les méthodes éprouvées : marketing digital,
 
 ## Pourquoi la localisation pèse autant en Chine
 
-La localisation va bien au-delà du passage en mandarin. Elle ajuste l'ensemble du message au contexte culturel de la cible. Selon plusieurs études, plus de 52 % des consommateurs préfèrent acheter sur des sites rédigés dans leur langue. Tout l'enjeu d'un contenu localisé tient là : la confiance, puis la conversion.
+La localisation va bien au-delà du passage en mandarin. Elle ajuste l'ensemble du message au contexte culturel de la cible. Selon plusieurs études, plus de 52 % des consommateurs préfèrent acheter sur des sites rédigés dans leur langue. Tout l'enjeu d'un contenu localisé tient là : la confiance d'abord, la conversion ensuite.
 
 En Chine, les comportements d'achat tiennent à des valeurs culturelles spécifiques, à des coutumes locales et à un écosystème numérique singulier. Pour émerger dans un marché saturé, le contenu localisé fait toute la différence. Les marques qui percent ne traduisent pas. Elles plongent dans la culture, les préférences et les tendances digitales du pays. Une agence de branding en Chine apporte ici une valeur décisive. Elle cale le message sur la perception réelle du public local.
 
@@ -55,7 +55,7 @@ Le marché chinois affiche une diversité régionale impressionnante. Une strat�
 
 Traduire en mandarin ne suffit pas. Les marques qui réussissent en Chine recalibrent leur discours sur les normes culturelles et les préférences locales.
 
-* **Sensibilité culturelle :** les contenus respectent traditions, fêtes et valeurs chinoises. Symboles et formulations ambigus restent à éviter.
+* **Sensibilité culturelle :** les contenus respectent traditions, fêtes et valeurs chinoises. Symboles et formulations ambigus restent à écarter.
 * **Imagerie et références localisées :** mobiliser des visuels et des références qui parlent à la culture chinoise. Nike adapte ses contenus selon les régions du monde, basket aux États-Unis, football en Argentine.
 
 McDonald's en fournit un autre exemple, avec des plats comme le Maharaja Mac introduit en Inde pour épouser les goûts locaux. Ajuster l'offre et le discours pour le public chinois fait grimper nettement l'attractivité de la marque. Une agence créative en Chine accompagne le développement de [campagnes](/fr/se-developper-en-chine/campagnes) culturellement justes, qui parlent vraiment à l'audience locale.
@@ -64,7 +64,7 @@ McDonald's en fournit un autre exemple, avec des plats comme le Maharaja Mac int
 
 Baidu domine la recherche en Chine. Optimiser ses contenus pour ses algorithmes relève de l'impératif. Le moteur pondère des facteurs différents de Google. Les saisir procure un véritable avantage compétitif.
 
-* **Mots-clés en mandarin :** identifier les requêtes qui parlent à l'audience chinoise. Travailler aussi bien le volume que la longue traîne pour viser des niches précises.
+* **Mots-clés en mandarin :** repérer les requêtes qui parlent à l'audience chinoise. Travailler aussi bien le volume que la longue traîne pour viser des niches précises.
 * **Structure du contenu :** organiser le site selon une hiérarchie claire, alignée sur la logique d'indexation de Baidu. L'arborescence reste structurée, avec un usage stratégique des mots-clés principaux et de leurs variantes.
 
 WeChat et Weibo ont aussi leurs propres moteurs internes. Optimiser pour ces environnements amplifie la visibilité de la marque. L'investissement sur les moteurs chinois relève du passage obligé pour tenir une présence numérique solide.

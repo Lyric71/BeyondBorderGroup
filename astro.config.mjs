@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
-import { insightEnToFr } from './src/i18n/insight-slugs.mjs';
+import { insightEnToFr, insightEnToDe } from './src/i18n/insight-slugs.mjs';
 
 /**
  * Legacy WordPress insight article slugs. On the old site every insight sat at
@@ -297,25 +297,77 @@ const staticFrToEn = Object.fromEntries(
 );
 
 /**
+ * Static EN -> DE slug pairs for the sitemap serialize hook. Mirrors the
+ * `slugMap.de` block in `src/i18n/utils.ts`. Native German slugs per CLAUDE.md §6.11
+ * (umlauts replaced ae/oe/ue/ss).
+ */
+const staticEnToDe = {
+  '/': '/de',
+  '/about': '/de/ueber-uns',
+  '/contact': '/de/kontakt',
+  '/thank-you': '/de/danke',
+  '/privacy-policy': '/de/datenschutz',
+  '/enter-china': '/de/nach-china',
+  '/enter-china/market-entry-consulting': '/de/nach-china/markteintrittsberatung',
+  '/enter-china/cross-border-setup': '/de/nach-china/cross-border-aufbau',
+  '/enter-china/distribution': '/de/nach-china/vertrieb',
+  '/enter-china/branding-localisation': '/de/nach-china/marke-und-lokalisierung',
+  '/grow-in-china': '/de/in-china-wachsen',
+  '/grow-in-china/cross-border-ecommerce': '/de/in-china-wachsen/cross-border-ecommerce',
+  '/grow-in-china/social-commerce': '/de/in-china-wachsen/social-commerce',
+  '/grow-in-china/campaigns': '/de/in-china-wachsen/kampagnen',
+  '/grow-in-china/media': '/de/in-china-wachsen/media',
+  '/grow-in-china/influencers-kols': '/de/in-china-wachsen/influencer-und-kol',
+  '/grow-in-china/production-studio': '/de/in-china-wachsen/produktionsstudio',
+  '/grow-in-china/website': '/de/in-china-wachsen/website',
+  '/learn-china': '/de/china-verstehen',
+  '/learn-china/platforms': '/de/china-verstehen/plattformen',
+  '/learn-china/masterclass': '/de/china-verstehen/masterclass',
+  '/learn-china/learning-expeditions': '/de/china-verstehen/studienreisen',
+  '/work': '/de/referenzen',
+  '/insights': '/de/analysen',
+  '/cookie-policy': '/de/cookie-richtlinie',
+  '/terms-of-service': '/de/nutzungsbedingungen',
+};
+const staticDeToEn = Object.fromEntries(
+  Object.entries(staticEnToDe).map(([en, de]) => [de, en])
+);
+
+/**
  * Reduce a built page path to its canonical English equivalent.
- * Returns `null` for paths with no resolvable canonical (e.g. orphan FR
+ * Returns `null` for paths with no resolvable canonical (e.g. orphan FR/DE
  * pages with no EN twin), so the sitemap hook can skip them.
  */
 const canonicalize = (/** @type {string} */ path) => {
   if (!path) return '/';
   if (path === '/' || path === '') return '/';
-  if (!path.startsWith('/fr')) return path;
-  if (path.startsWith('/fr/decryptages/')) {
-    const tail = path.slice('/fr/decryptages/'.length);
-    if (!tail) return '/insights';
-    const enSlug = Object.entries(insightEnToFr).find(([, fr]) => fr === tail)?.[0];
-    return enSlug ? `/insights/${enSlug}` : null;
+  if (path.startsWith('/fr')) {
+    if (path.startsWith('/fr/decryptages/')) {
+      const tail = path.slice('/fr/decryptages/'.length);
+      if (!tail) return '/insights';
+      const enSlug = Object.entries(insightEnToFr).find(([, fr]) => fr === tail)?.[0];
+      return enSlug ? `/insights/${enSlug}` : null;
+    }
+    if (path.startsWith('/fr/nos-realisations/')) {
+      return '/work/' + path.slice('/fr/nos-realisations/'.length);
+    }
+    if (path === '/fr/nos-realisations') return '/work';
+    return staticFrToEn[path] ?? null;
   }
-  if (path.startsWith('/fr/nos-realisations/')) {
-    return '/work/' + path.slice('/fr/nos-realisations/'.length);
+  if (path.startsWith('/de')) {
+    if (path.startsWith('/de/analysen/')) {
+      const tail = path.slice('/de/analysen/'.length);
+      if (!tail) return '/insights';
+      const enSlug = Object.entries(insightEnToDe).find(([, de]) => de === tail)?.[0];
+      return enSlug ? `/insights/${enSlug}` : null;
+    }
+    if (path.startsWith('/de/referenzen/')) {
+      return '/work/' + path.slice('/de/referenzen/'.length);
+    }
+    if (path === '/de/referenzen') return '/work';
+    return staticDeToEn[path] ?? null;
   }
-  if (path === '/fr/nos-realisations') return '/work';
-  return staticFrToEn[path] ?? null;
+  return path;
 };
 
 /** Forward map an EN path to its FR twin, or null if none exists. */
@@ -333,6 +385,23 @@ const enToFr = (/** @type {string | null} */ enPath) => {
   }
   if (enPath === '/work') return '/fr/nos-realisations';
   return staticEnToFr[enPath] ?? null;
+};
+
+/** Forward map an EN path to its DE twin, or null if none exists. */
+const enToDe = (/** @type {string | null} */ enPath) => {
+  if (!enPath) return null;
+  if (enPath === '/') return '/de';
+  if (enPath.startsWith('/insights/')) {
+    const enSlug = enPath.slice('/insights/'.length);
+    const deSlug = insightEnToDe[enSlug];
+    return deSlug ? `/de/analysen/${deSlug}` : null;
+  }
+  if (enPath === '/insights') return '/de/analysen';
+  if (enPath.startsWith('/work/')) {
+    return '/de/referenzen/' + enPath.slice('/work/'.length);
+  }
+  if (enPath === '/work') return '/de/referenzen';
+  return staticEnToDe[enPath] ?? null;
 };
 
 const frInsightRedirects = Object.fromEntries(
@@ -383,6 +452,7 @@ export default defineConfig({
       filter: (page) =>
         !page.includes('/thank-you') &&
         !page.includes('/fr/merci') &&
+        !page.includes('/de/danke') &&
         !page.includes('/api/'),
       changefreq: 'weekly',
       priority: 0.7,
@@ -398,17 +468,22 @@ export default defineConfig({
         const path = url.pathname === '/' ? '/' : url.pathname.replace(/\/$/, '');
         const enPath = canonicalize(path);
         const frPath = enToFr(enPath);
+        const dePath = enToDe(enPath);
         if (!enPath) return item;
         // Match the canonical URL convention from Layout.astro: no trailing
         // slash except root. The sitemap <loc> and xhtml:link href must agree
         // so Google does not see them as different URLs.
         const enHref = SITE + (enPath === '/' ? '' : enPath);
         const frHref = frPath ? SITE + frPath : null;
+        const deHref = dePath ? SITE + dePath : null;
         const links = [{ lang: 'en', url: enHref }];
         if (frHref) links.push({ lang: 'fr', url: frHref });
+        if (deHref) links.push({ lang: 'de', url: deHref });
         links.push({ lang: 'x-default', url: enHref });
         // Normalize the page URL itself to match the canonical convention.
-        const currentLocaleHref = path.startsWith('/fr') ? frHref : enHref;
+        let currentLocaleHref = enHref;
+        if (path.startsWith('/fr')) currentLocaleHref = frHref ?? enHref;
+        else if (path.startsWith('/de')) currentLocaleHref = deHref ?? enHref;
         return { ...item, url: currentLocaleHref ?? item.url, links };
       },
     }),
@@ -448,12 +523,12 @@ export default defineConfig({
     },
   ],
 
-  // Multilingual setup. English stays at the root (/), French lives under /fr/.
+  // Multilingual setup. English stays at the root (/). FR under /fr/, DE under /de/.
   // Add new locales to the array as they ship. Keep `prefixDefaultLocale: false`
   // so existing English URLs and the WP redirect map continue to work as-is.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    locales: ['en', 'fr', 'de'],
     routing: {
       prefixDefaultLocale: false,
     },

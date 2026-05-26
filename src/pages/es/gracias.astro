@@ -1,0 +1,258 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const bgWords = [
+  { text: '谢谢',    cls: 'w-1' },
+  { text: '上海',    cls: 'w-2' },
+  { text: 'Gracias', cls: 'w-3' },
+  { text: '香港',    cls: 'w-4' },
+  { text: 'Merci',   cls: 'w-5' },
+  { text: '巴黎',    cls: 'w-6' },
+  { text: '谢谢',    cls: 'w-7' },
+];
+---
+
+<Layout
+  title="Mensaje enviado | Beyond Border Group"
+  description="Gracias por escribirnos. Su mensaje acaba de llegar a nuestro equipo en Shanghái. Respondemos en menos de un día hábil."
+  noindex
+  noAlternate
+>
+  <section class="thanks">
+    <div class="thanks__bg" aria-hidden="true">
+      <img
+        class="thanks__bg-image"
+        src="/Images/contact-bg.png"
+        alt=""
+        loading="eager"
+        decoding="async"
+      />
+      <span class="thanks__bg-veil"></span>
+      <ul class="thanks__bg-words">
+        {bgWords.map((w) => <li class={w.cls}>{w.text}</li>)}
+      </ul>
+    </div>
+
+    <div class="container thanks__container">
+      <span class="eyebrow eyebrow--on-dark">Gracias por escribirnos</span>
+
+      <h1 class="thanks__title">Mensaje enviado.</h1>
+      <p class="thanks__sub">Su nota acaba de aterrizar en Shanghái.</p>
+
+      <p class="thanks__body">
+        Hoy mismo un estratega del equipo lo leerá y le responderá en menos de un día hábil,
+        de lunes a viernes en horario chino. Si el proyecto es urgente, escríbanos directamente
+        a <a class="thanks__mail" href="mailto:hello@beyondbordergroup.com">hello@beyondbordergroup.com</a>.
+      </p>
+
+      <div class="thanks__cta">
+        <a href="/es" class="btn btn--primary thanks__btn">Volver al inicio</a>
+        <a href="/es/proyectos" class="btn btn--ghost thanks__ghost">Ver proyectos recientes</a>
+      </div>
+
+      <div class="thanks__while">
+        <span class="eyebrow eyebrow--on-dark">Mientras espera</span>
+
+        <ul class="thanks__links">
+          <li>
+            <a href="/es/analisis" class="thanks__link">
+              <span class="thanks__link-title">Análisis</span>
+              <span class="thanks__link-text">
+                Notas de nuestro equipo sobre Tmall, Douyin, RED y la forma real de crecer en China.
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/es/quienes-somos" class="thanks__link">
+              <span class="thanks__link-title">El grupo</span>
+              <span class="thanks__link-text">
+                Quiénes somos, dónde trabajamos y cómo encajan Shanghái, Hong Kong y París.
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .thanks {
+    position: relative;
+    background: var(--bbg-black);
+    color: var(--bbg-white);
+    padding: clamp(var(--space-8), 14vh, var(--space-10)) 0 var(--space-9);
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .thanks__bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .thanks__bg-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.18;
+    filter: grayscale(35%) contrast(1.05);
+  }
+  .thanks__bg-veil {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(120% 80% at 70% 10%, rgba(38,154,218,0.18) 0%, rgba(0,0,0,0) 55%),
+      linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.85) 100%);
+  }
+  .thanks__bg-words {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: rgba(255,255,255,0.05);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    user-select: none;
+  }
+  .thanks__bg-words li {
+    position: absolute;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .thanks__bg-words .w-1 { top:   6%; left:   4%; font-size: clamp(80px, 14vw, 220px); }
+  .thanks__bg-words .w-2 { top:  72%; left:   3%; font-size: clamp(70px, 11vw, 180px); }
+  .thanks__bg-words .w-3 { top:  18%; right:  4%; font-size: clamp(60px, 9vw, 150px); }
+  .thanks__bg-words .w-4 { top:  82%; right:  6%; font-size: clamp(70px, 12vw, 200px); }
+  .thanks__bg-words .w-5 { top:  46%; right: 18%; font-size: clamp(50px, 8vw, 130px); }
+  .thanks__bg-words .w-6 { top:  38%; left:  22%; font-size: clamp(45px, 7vw, 120px); }
+  .thanks__bg-words .w-7 { top:   2%; left:  55%; font-size: clamp(55px, 9vw, 140px); }
+
+  .thanks__container {
+    position: relative;
+    z-index: 1;
+    max-width: 880px;
+  }
+
+  .eyebrow--on-dark {
+    color: var(--bbg-blue);
+  }
+
+  .thanks__title {
+    font-size: clamp(2.75rem, 6vw + 0.5rem, 5rem);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    color: var(--bbg-white);
+    margin: 0 0 var(--space-3);
+  }
+
+  .thanks__sub {
+    font-size: clamp(1.5rem, 2vw + 0.75rem, 2.25rem);
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bbg-white);
+    margin: 0 0 var(--space-5);
+    opacity: 0.92;
+  }
+
+  .thanks__body {
+    font-size: var(--fs-lead);
+    line-height: 1.6;
+    color: rgba(255,255,255,0.78);
+    max-width: 620px;
+    margin: 0 0 var(--space-6);
+  }
+  .thanks__mail {
+    color: var(--bbg-white);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+  }
+  .thanks__mail:hover { color: var(--bbg-blue-light); }
+
+  .thanks__cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-5);
+    margin-bottom: var(--space-8);
+  }
+  .thanks__btn { min-width: 200px; }
+  .thanks__ghost {
+    color: var(--bbg-white);
+    padding: 0.875rem 0;
+  }
+  .thanks__ghost:hover { color: var(--bbg-blue-light); }
+
+  .thanks__while {
+    padding-top: var(--space-5);
+    border-top: 1px solid rgba(255,255,255,0.12);
+    max-width: 720px;
+  }
+  .thanks__while .eyebrow {
+    margin-bottom: var(--space-4);
+  }
+
+  .thanks__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-3);
+  }
+  .thanks__link {
+    display: block;
+    padding: var(--space-4) var(--space-5);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: var(--radius-md);
+    color: var(--bbg-white);
+    background: rgba(255,255,255,0.02);
+    transition: border-color var(--dur) var(--ease),
+                background var(--dur) var(--ease),
+                transform var(--dur) var(--ease);
+  }
+  .thanks__link:hover {
+    border-color: var(--bbg-blue);
+    background: rgba(38,154,218,0.08);
+    transform: translateY(-2px);
+    color: var(--bbg-white);
+  }
+  .thanks__link-title {
+    display: block;
+    font-size: var(--fs-h4);
+    font-weight: 600;
+    color: var(--bbg-white);
+    margin-bottom: 2px;
+  }
+  .thanks__link-text {
+    display: block;
+    font-size: var(--fs-small);
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1280px) {
+    .thanks { min-height: 70vh; }
+  }
+  @media (max-width: 768px) {
+    .thanks { min-height: 0; padding-top: var(--space-7); padding-bottom: var(--space-7); }
+    .thanks__cta { gap: var(--space-4); }
+  }
+  @media (max-width: 640px) {
+    .thanks { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+    .thanks__btn { width: 100%; min-width: 0; }
+    .thanks__ghost { width: 100%; text-align: center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .thanks__link { transition: none; }
+    .thanks__link:hover { transform: none; }
+  }
+</style>

@@ -17,15 +17,15 @@ keyTakeaways:
 
 À pratiquer la Chine au quotidien, le constat s'impose. Le vieux playbook s'éteint, doucement.
 
-Pendant des années, beaucoup de [marques internationales](/fr/entrer-en-chine/conseil-en-entree-de-marche) ont traité la Chine comme une grosse machine à croissance. Choisir un SKU phare, signer une célébrité, déployer en national, laisser l'échelle faire le reste. Sur un marché en forte expansion, la méthode pouvait encore livrer.
+Pendant des années, beaucoup de [marques internationales](/fr/entrer-en-chine/conseil-en-entree-de-marche) ont traité la Chine comme une grosse machine à croissance. Un SKU phare, une célébrité, un déploiement national, l'échelle se chargeait du reste. Sur un marché en forte expansion, la méthode pouvait encore livrer.
 
-En 2025, cette recette expose surtout les faiblesses.
+En 2025, cette recette expose surtout ses faiblesses.
 
 Croissance ralentie, consommateurs plus prudents, concurrents locaux plus solides. Le vieux playbook ne colle plus. Les marques qui s'accrochent à une réponse nationale unique peuvent dépenser beaucoup et peiner à exister.
 
 ### Du message national à la pertinence locale
 
-Depuis la sortie du Covid, le consommateur chinois est devenu plus réfléchi. Il compare, il attend, il accepte moins de payer pour le logo seul. En parallèle, la fierté pour les marques chinoises a grandi, dans l'auto électrique, la beauté, le sportswear.
+Depuis la sortie du Covid, le consommateur chinois est devenu plus réfléchi. Il compare, il attend, il accepte moins de payer pour le logo seul. En parallèle, la fierté pour les marques chinoises a pris du muscle, dans l'auto électrique, la beauté, le sportswear.
 
 Un message uniforme paraît désormais brutal.
 
@@ -37,7 +37,7 @@ Le glissement impose de quitter la localisation symbolique pour des choix struct
 * Construire des plans d'activation autour des routines locales réelles, et non autour de clichés et de monuments.
 * Concevoir des créations qui parlent du vécu, et non de références culturelles génériques.
 
-Une maison de luxe qui investit dans une expérience à Chengdu pensée autour de la confiance culturelle de la ville, ou une marque de sport qui rénove des terrains de quartier au lieu de monter un show ponctuel : c'est exactement ce basculement qui se joue. Il ne s'agit plus de parler à toute la Chine. Il s'agit de choisir un endroit et de le faire bien.
+Une maison de luxe qui investit dans une expérience à Chengdu calée sur la confiance culturelle de la ville, ou une marque de sport qui rénove des terrains de quartier plutôt que de monter un show ponctuel : c'est exactement ce basculement qui se joue. Il ne s'agit plus de parler à toute la Chine. Il s'agit de choisir un endroit et de le faire bien.
 
 ![](/Images/insights/2024/06/localization-1-1024x576.png)
 
@@ -45,7 +45,7 @@ Une maison de luxe qui investit dans une expérience à Chengdu pensée autour d
 
 Les marques chinoises l'ont compris.
 
-Beaucoup grossissent à partir de tests ultra-ciblés. Une ville, une plateforme, un festival, un micro-segment. Certaines initiatives ne visent jamais le passage à l'échelle nationale. Elles existent pour construire de la profondeur ou pour comprendre ce qui résonne vraiment.
+Beaucoup grossissent à partir de tests ultra-ciblés. Une ville, une plateforme, un festival, un micro-segment. Certaines initiatives ne visent jamais le passage à l'échelle nationale. Elles existent pour bâtir de la profondeur ou pour comprendre ce qui résonne vraiment.
 
 Pour les marques internationales, l'idée peut sembler inconfortable. Elle heurte des habitudes prises ailleurs, où l'efficacité et la couverture nationale priment.
 
@@ -54,10 +54,10 @@ Dans la Chine d'aujourd'hui, ce réflexe devient risqué.
 Traiter la Chine comme un marché unique conduit souvent à :
 
 * Une dépendance excessive aux métropoles de premier rang comme Shanghai, là où la concurrence et les coûts média culminent.
-* Des plans plateformes qui suivent des chiffres d'utilisateurs vedettes, et non les usages réels ni les cultures de contenu locales.
+* Des plans plateformes qui suivent les chiffres d'utilisateurs vedettes, et non les usages réels ni les cultures de contenu locales.
 * Des créations qui s'appuient sur des symboles confortables comme le panda ou la Grande Muraille, et non sur l'insight terrain.
 
-Pendant ce temps, la Gen Z des villes de rang inférieur affiche dans certaines catégories un pouvoir d'achat comparable, moins de messages concurrents, et plus de temps pour s'engager avec le contenu. L'opportunité existe. Encore faut-il accepter de concevoir pour elle.
+Pendant ce temps, la Gen Z des villes de rang inférieur affiche dans certaines catégories un pouvoir d'achat comparable, moins de messages concurrents, plus de temps pour s'engager avec le contenu. L'opportunité existe. Encore faut-il accepter de concevoir pour elle.
 
 ### Un portefeuille de paris locaux, pas un seul gros pari
 
@@ -80,9 +80,9 @@ Pour les directions hors de Chine, le glissement le plus difficile relève souve
 
 Trois changements comptent :
 
-* Mesurer la profondeur autant que la portée. Une activation à Chengdu qui fait bouger la préférence locale peut peser davantage qu'une vague nationale qui laisse des impressions superficielles.
+* Mesurer la profondeur autant que la portée. Une activation à Chengdu qui déplace la préférence locale peut peser davantage qu'une vague nationale qui ne laisse que des impressions superficielles.
 * Donner de l'air aux équipes locales. La localisation profonde demande des gens proches des plateformes, de la culture, du retail. Les équipes centrales fixent le cadre, elles ne dictent pas chaque geste.
-* Financer l'apprentissage, pas seulement les lancements. Certaines idées ne passeront pas à l'échelle, et c'est très bien. Reste à savoir si chaque test affine la lecture des terrains où la marque a vraiment le droit de gagner.
+* Financer l'apprentissage, pas seulement les lancements. Certaines idées ne passeront pas à l'échelle, tant mieux. La vraie question : est-ce que chaque test affine la lecture des terrains où la marque a réellement le droit de gagner.
 
 Les marques qui s'adapteront le plus vite verront la Chine moins comme une ligne dans un tableur, davantage comme une mosaïque d'opportunités en mouvement.
 
@@ -92,6 +92,6 @@ Les marques qui s'adapteront le plus vite verront la Chine moins comme une ligne
 
 Chez BBG, nous travaillons avec des marques internationales qui ressentent ce basculement en Chine et cherchent une réponse concrète.
 
-Nous aidons les équipes à sortir des plans nationaux uniques pour bâtir des portefeuilles structurés de paris chinois. Cela peut inclure une stratégie ville et cluster, des feuilles de route plateformes sur Douyin, Xiaohongshu, WeChat, Tmall, JD et autres, ainsi qu'une localisation des expériences de marque et de commerce qui respecte l'ADN global.
+Nous aidons les équipes à sortir des plans nationaux uniques pour bâtir des portefeuilles structurés de paris chinois. Cela peut comprendre une stratégie ville et cluster, des feuilles de route plateformes sur Douyin, Xiaohongshu, WeChat, Tmall, JD et autres, ainsi qu'une localisation des expériences de marque et de commerce qui respecte l'ADN global.
 
 L'objectif reste simple. Moins courir après une « échelle Chine » abstraite, davantage construire une pertinence précise là où la marque peut vraiment sortir du lot.

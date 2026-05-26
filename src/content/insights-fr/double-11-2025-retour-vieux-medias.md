@@ -19,7 +19,7 @@ keyTakeaways:
 
 Le Double 11 est né dans le navigateur.
 
-Onglets, bandeaux, ventes flash, avantages réservés à l'application. Pendant plus de dix ans, le premier festival commercial de Chine a incarné l'expression la plus aboutie du commerce digital à grande échelle. Pour mesurer la puissance des plateformes, il suffisait de regarder le 11.11.
+Onglets, bandeaux, ventes flash, avantages réservés à l'application. Pendant plus de dix ans, le premier festival commercial de Chine a incarné l'expression la plus aboutie du commerce digital à grande échelle. Pour prendre la mesure de la puissance des plateformes, il suffisait de regarder le 11.11.
 
 ## Dix-sept ans plus tard, le décor a changé.
 
@@ -29,21 +29,21 @@ Soirées de lancement façon gala, présentateurs vedettes, sketches sur les pri
 
 Les plateformes qui avaient appris au pays à scroller parlent désormais la langue du prime time.
 
-Rien de nostalgique. Une stratégie. Un festival natif du digital convoque les outils des vieux [médias](/fr/se-developper-en-chine/medias) pour résoudre un problème très contemporain : reconquérir la confiance et l'attention de consommateurs qui font leurs courses comme des pros.
+Rien de nostalgique. Une stratégie. Un festival natif du digital convoque les outils des vieux [médias](/fr/se-developper-en-chine/medias) pour régler un problème très contemporain : reconquérir la confiance et l'attention de consommateurs qui font leurs courses en pros.
 
 ## De l'onglet géant au plateau de variétés, en trois mouvements
 
 Le parcours se laisse retracer simplement.
 
-Le Double 11 a commencé comme un onglet géant d'une journée, articulé autour d'une promesse unique de prix le plus bas de l'année et d'une page d'accueil saturée de bandeaux. Le festival s'est ensuite étiré en longue saison sociale, avec pré-ventes, acomptes, enveloppes rouges et mini-jeux qui transformaient l'événement en quête d'une semaine. Le commerce live a parachevé la bascule : la demande s'est concentrée dans quelques super-salles KOL, où split screens, comptes à rebours et empilements de coupons faisaient de chaque achat une performance.
+Le Double 11 a commencé sous la forme d'un onglet géant d'une journée, articulé autour d'une promesse unique de prix le plus bas de l'année et d'une page d'accueil saturée de bandeaux. Le festival s'est ensuite étiré en longue saison sociale, avec pré-ventes, acomptes, enveloppes rouges et mini-jeux qui transformaient l'événement en quête d'une semaine. Le commerce live a parachevé la bascule : la demande s'est concentrée dans quelques super-salles KOL, où split screens, comptes à rebours et empilements de coupons faisaient de chaque achat une performance.
 
 Un temps, chaque couche tenait de la montée en gamme. Les montées en gamme ont fini par se fondre en bruit.
 
-À la dix-septième édition, le festival ne surprend plus. Les achats importants se planifient autour de lui. Tous les écrans crient. Les bandeaux rouges et les autocollants prix bas finissent par se confondre. Surtout, le public a doublé le scénario.
+À la dix-septième édition, le festival ne surprend plus. Les achats importants se planifient autour de lui. Tous les écrans crient. Bandeaux rouges et autocollants prix bas finissent par se confondre. Surtout, le public a doublé le scénario.
 
 Le consommateur chinois compare désormais d'une plateforme à l'autre par réflexe. Il suit les prix avant et après les campagnes, échange des tactiques d'empilement dans les groupes WeChat et les notes Xiaohongshu, repère sans peine les promesses tenues et celles qui relèvent du décor. Il n'est plus le novice dans une fête foraine. Il opère en professionnel du retail, gestionnaire de son propre portefeuille.
 
-Dans cet univers-là, un bandeau hyperactif de plus ou un livestream survolté de plus n'excite plus. Il ajoute du bruit. Le Double 11 se tourne donc vers une grammaire plus ancienne et plus puissante que le feed : la grammaire émotionnelle de la télévision.
+Dans cet univers, un bandeau hyperactif de plus ou un livestream survolté de plus n'excite plus. Il ajoute du bruit. Le Double 11 se tourne donc vers une grammaire plus ancienne et plus puissante que le feed : la grammaire émotionnelle de la télévision.
 
 ## Le retour des vieux médias dans le cadre
 
@@ -81,7 +81,7 @@ Le Double 11 n'a pas seulement créé davantage d'acheteurs. Il a formé de meil
 
 Le public s'entraîne à ce festival depuis plus de dix ans. Il sait quelle plateforme excelle dans quelle catégorie, repère l'instant où une promesse sonne faux, classe prix, qualité, service et options transfrontalières dans sa tête.
 
-La dix-septième édition s'adresse à cette audience. Pas à une masse naïve, mais à un marché de professionnels du retail qui exigent des offres résumables en une ligne, une logique qu'ils peuvent expliquer à un proche, et une valeur qui tient au-delà du gag.
+La dix-septième édition s'adresse à cette audience. Pas à une masse naïve, mais à un marché de professionnels du retail qui réclament des offres résumables en une ligne, une logique qu'ils peuvent expliquer à un proche, une valeur qui tient au-delà du gag.
 
 Sous cet angle, le retour à la grammaire des vieux médias n'a rien d'un pas en arrière. C'est un ajustement de ton dans la relation. Moins de hype à sens unique, davantage de « nous savons que vous n'êtes pas faciles à impressionner, voici notre dossier ».
 

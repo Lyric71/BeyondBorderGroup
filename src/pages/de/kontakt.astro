@@ -1,0 +1,380 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const offices = [
+  {
+    city: 'Shanghai',
+    address: 'Trinity Plaza, 19F\n868 Changshou Road\nPutuo District, Shanghai',
+  },
+  {
+    city: 'Hongkong',
+    address: "Capitol Centre\n5-19 Jardine's Bazaar\nCauseway Bay, Hong Kong",
+  },
+  {
+    city: 'Paris',
+    address: '12 rue Curial\n75019 Paris\nFrankreich',
+  },
+];
+
+const bgWords = [
+  { text: '你好',    cls: 'w-1' },
+  { text: '上海',    cls: 'w-2' },
+  { text: 'Hallo',   cls: 'w-3' },
+  { text: '香港',    cls: 'w-4' },
+  { text: 'Hello',   cls: 'w-5' },
+  { text: 'Paris',   cls: 'w-6' },
+  { text: '你好',    cls: 'w-7' },
+];
+
+const serviceGroups = [
+  {
+    title: 'Nach China',
+    items: [
+      'Markteintrittsberatung',
+      'Cross-Border-Aufbau',
+      'Vertrieb',
+      'Marke & Lokalisierung',
+    ],
+  },
+  {
+    title: 'In China wachsen',
+    items: [
+      'Cross-Border eCommerce',
+      'Social Commerce',
+      'Kampagnen',
+      'Media',
+      'Influencer & KOL',
+    ],
+  },
+  {
+    title: 'China verstehen',
+    items: [
+      'Masterclass',
+      'Studienreisen',
+    ],
+  },
+];
+
+const budgetOptions = [
+  { value: '<10k',    label: 'Unter 10.000 €' },
+  { value: '10k-50k', label: '10.000 bis 50.000 €' },
+  { value: '>50k',    label: 'Über 50.000 €' },
+];
+
+const profileOptions = [
+  'Marke',
+  'Händler',
+  'Agentur',
+  'Beratung',
+  'Hersteller',
+];
+---
+
+<Layout
+  title="Sprechen Sie mit unseren China-Teams in Shanghai, Hongkong und Paris | Beyond Border Group"
+  description="Stellen Sie uns Ihr China-Vorhaben vor. Unsere Teams in Shanghai, Hongkong und Paris melden sich innerhalb eines Arbeitstages und kommen mit konkreten Überlegungen auf Sie zu."
+>
+  <section class="contact">
+    <div class="contact__bg" aria-hidden="true">
+      <img
+        class="contact__bg-image"
+        src="/Images/contact-bg.png"
+        alt=""
+        loading="eager"
+        decoding="async"
+      />
+      <span class="contact__bg-veil"></span>
+      <ul class="contact__bg-words">
+        {bgWords.map((w) => <li class={w.cls}>{w.text}</li>)}
+      </ul>
+    </div>
+
+    <div class="container">
+      <header class="contact__header">
+        <span class="eyebrow eyebrow--on-dark">Kontakt</span>
+        <h1 class="contact__title">Wir freuen uns, mit Ihnen über Ihr China-Vorhaben zu sprechen.</h1>
+        <p class="lead contact__lead">
+          Unsere Teams in Shanghai, Hongkong und Paris melden sich bei Ihnen innerhalb eines Arbeitstages, Montag bis Freitag.
+          Eine erste, kurze Nachricht genügt vollkommen: Wir kommen mit gezielten Rückfragen und, sobald möglich,
+          mit konkreten Ansätzen für Ihren Markteintritt oder Ihr Wachstum in China auf Sie zu.
+        </p>
+      </header>
+
+      <div class="contact__layout contact__layout--stacked">
+
+        {/* ---------- White form card, full width ---------- */}
+        <div class="contact__form-card">
+          <h2 class="contact__form-title">Erzählen Sie uns kurz von Ihrem Vorhaben</h2>
+
+          <form class="form" id="contact-form" novalidate>
+            <div class="form__row form__row--2">
+              <div class="field">
+                <label class="field__label" for="firstName">Vorname <span aria-hidden="true">*</span></label>
+                <input class="field__input" type="text" id="firstName" name="firstName" autocomplete="given-name" required />
+              </div>
+              <div class="field">
+                <label class="field__label" for="lastName">Nachname <span aria-hidden="true">*</span></label>
+                <input class="field__input" type="text" id="lastName" name="lastName" autocomplete="family-name" required />
+              </div>
+            </div>
+
+            <div class="form__row form__row--2">
+              <div class="field">
+                <label class="field__label" for="email">Geschäftliche E-Mail-Adresse <span aria-hidden="true">*</span></label>
+                <input class="field__input" type="email" id="email" name="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label class="field__label" for="company">Unternehmen <span aria-hidden="true">*</span></label>
+                <input class="field__input" type="text" id="company" name="company" autocomplete="organization" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="website">Website</label>
+              <input class="field__input" type="url" id="website" name="website" autocomplete="url" placeholder="https://" />
+            </div>
+
+            <fieldset class="field field--group">
+              <legend class="field__label">Leistungen, die Sie interessieren</legend>
+              <p class="field__hint">Wählen Sie alles aus, was für Ihr Vorhaben relevant erscheint, wir vertiefen die Details gemeinsam.</p>
+              <div class="services">
+                {serviceGroups.map((group) => (
+                  <div class="services__group">
+                    <span class="services__group-title">{group.title}</span>
+                    <ul class="services__list">
+                      {group.items.map((item) => {
+                        const id = `svc-${item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+                        return (
+                          <li class="services__item">
+                            <input class="check__input" type="checkbox" id={id} name="services" value={`${group.title}: ${item}`} />
+                            <label class="check__label" for={id}>{item}</label>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </fieldset>
+
+            <div class="form__row form__row--2">
+              <fieldset class="field field--group">
+                <legend class="field__label">Budgetrahmen, den Sie zu diesem Zeitpunkt im Blick haben</legend>
+                <div class="choices">
+                  {budgetOptions.map((opt) => {
+                    const id = `budget-${opt.value.replace(/[^a-zA-Z0-9]+/g, '-')}`;
+                    return (
+                      <div class="choice">
+                        <input class="choice__input" type="radio" id={id} name="budget" value={opt.label} />
+                        <label class="choice__label" for={id}>{opt.label}</label>
+                      </div>
+                    );
+                  })}
+                </div>
+              </fieldset>
+
+              <fieldset class="field field--group">
+                <legend class="field__label">Ein paar Worte zu Ihrem Unternehmen</legend>
+                <div class="choices">
+                  {profileOptions.map((opt) => {
+                    const id = `profile-${opt.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+                    return (
+                      <div class="choice">
+                        <input class="choice__input" type="radio" id={id} name="profile" value={opt} />
+                        <label class="choice__label" for={id}>{opt}</label>
+                      </div>
+                    );
+                  })}
+                  <div class="choice choice--other">
+                    <input class="choice__input" type="radio" id="profile-other" name="profile" value="Sonstiges" />
+                    <label class="choice__label" for="profile-other">Sonstiges</label>
+                    <input
+                      class="field__input field__input--inline"
+                      type="text"
+                      id="profileOther"
+                      name="profileOther"
+                      placeholder="Beschreiben Sie kurz Ihre Tätigkeit"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="message">Ein paar Zeilen zu Ihrem Vorhaben <span aria-hidden="true">*</span></label>
+              <textarea class="field__input field__input--textarea" id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="field field--captcha">
+              <label class="field__label" for="captcha">
+                Kleine Prüfung, um Bots fernzuhalten: Was ergibt <span id="captchaA">?</span> + <span id="captchaB">?</span>?
+                <span aria-hidden="true">*</span>
+              </label>
+              <input
+                class="field__input field__input--captcha"
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                id="captcha"
+                name="captcha"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            {/* honeypot, bots fill this, humans don't see it */}
+            <div class="form__honeypot" aria-hidden="true">
+              <label for="website_url">Bitte nichts eintragen</label>
+              <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form__footer">
+              <button type="submit" class="btn btn--primary form__submit" id="contact-submit">
+                Nachricht senden
+              </button>
+              <p class="form__note">
+                Mit dem Absenden willigen Sie ein, dass wir Sie zu Ihrer Anfrage kontaktieren dürfen. Ihre Angaben bleiben ausschließlich bei unserem Team.
+              </p>
+            </div>
+
+            <p class="form__status" id="contact-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        {/* ---------- Contact info, stacked below the form ---------- */}
+        <div class="contact__info">
+          <div class="contact-block">
+            <span class="eyebrow eyebrow--on-dark">Schreiben Sie uns</span>
+            <a class="contact-block__link" href="mailto:hello@beyondbordergroup.com">
+              hello@beyondbordergroup.com
+            </a>
+          </div>
+
+          <div class="contact-block">
+            <span class="eyebrow eyebrow--on-dark">Antwortzeit</span>
+            <p class="contact-block__text">Innerhalb von 24 Geschäftsstunden, Montag bis Freitag, chinesische Zeitzone.</p>
+          </div>
+
+          <div class="contact-block">
+            <span class="eyebrow eyebrow--on-dark">Unsere Standorte</span>
+            <ul class="offices">
+              {offices.map(o => (
+                <li class="office">
+                  <h3 class="office__city">{o.city}</h3>
+                  <address class="office__address">{o.address}</address>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline>
+  (function () {
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('contact-status');
+    const submit = document.getElementById('contact-submit');
+    const captchaA = document.getElementById('captchaA');
+    const captchaB = document.getElementById('captchaB');
+    const captchaInput = document.getElementById('captcha');
+    if (!form) return;
+
+    function rollCaptcha() {
+      const a = Math.floor(Math.random() * 9) + 1;
+      const b = Math.floor(Math.random() * 9) + 1;
+      captchaA.textContent = a;
+      captchaB.textContent = b;
+      form.dataset.captchaSum = String(a + b);
+      if (captchaInput) captchaInput.value = '';
+    }
+    rollCaptcha();
+
+    const profileRadios = form.querySelectorAll('input[name="profile"]');
+    const profileOther = document.getElementById('profileOther');
+    function syncProfileOther() {
+      const isOther = form.querySelector('input[name="profile"]:checked')?.value === 'Sonstiges';
+      if (!profileOther) return;
+      profileOther.disabled = !isOther;
+      profileOther.required = isOther;
+      if (!isOther) profileOther.value = '';
+    }
+    profileRadios.forEach((r) => r.addEventListener('change', syncProfileOther));
+    syncProfileOther();
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = '';
+      status.className = 'form__status';
+
+      const data = new FormData(form);
+      if (data.get('website_url')) return; // honeypot tripped, silently drop
+
+      const firstName = String(data.get('firstName') || '').trim();
+      const lastName = String(data.get('lastName') || '').trim();
+      const services = data.getAll('services').map((v) => String(v));
+      const profileValue = String(data.get('profile') || '').trim();
+      const profileOtherVal = String(data.get('profileOther') || '').trim();
+      const profile = profileValue === 'Sonstiges' && profileOtherVal
+        ? `Sonstiges: ${profileOtherVal}`
+        : profileValue;
+      const payload = {
+        name: [firstName, lastName].filter(Boolean).join(' '),
+        email: String(data.get('email') || '').trim(),
+        company: String(data.get('company') || '').trim(),
+        website: String(data.get('website') || '').trim(),
+        services,
+        budget: String(data.get('budget') || '').trim(),
+        profile,
+        message: String(data.get('message') || '').trim(),
+        captcha: String(data.get('captcha') || '').trim(),
+        captchaExpected: String(form.dataset.captchaSum || ''),
+      };
+
+      const captchaNum = parseInt(payload.captcha, 10);
+      const expectedNum = parseInt(payload.captchaExpected, 10);
+      if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
+        status.textContent = "Das Ergebnis stimmt leider nicht. Die Zahlen wurden gerade aktualisiert, bitte versuchen Sie es erneut.";
+        status.classList.add('form__status--error');
+        rollCaptcha();
+        return;
+      }
+
+      if (!payload.name || !payload.email || !payload.message) {
+        status.textContent = "Bitte ergänzen Sie Ihren Namen, Ihre E-Mail-Adresse und eine kurze Nachricht, bevor Sie absenden.";
+        status.classList.add('form__status--error');
+        return;
+      }
+
+      submit.disabled = true;
+      submit.textContent = 'Wird gesendet …';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const body = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(body.error || "Der Versand ist leider nicht durchgegangen. Bitte versuchen Sie es in einem Moment erneut. Sollte es weiterhin nicht klappen, schreiben Sie uns gerne direkt an hello@beyondbordergroup.com.");
+
+        form.reset();
+        rollCaptcha();
+        status.textContent = 'Nachricht angekommen. Wir melden uns kurzfristig bei Ihnen. Weiterleitung …';
+        status.classList.add('form__status--success');
+        window.location.assign('/de/danke');
+        return;
+      } catch (err) {
+        status.textContent = err && err.message ? err.message : "Der Versand ist leider nicht durchgegangen. Bitte versuchen Sie es in einem Moment erneut. Sollte es weiterhin nicht klappen, schreiben Sie uns gerne direkt an hello@beyondbordergroup.com.";
+        status.classList.add('form__status--error');
+      } finally {
+        submit.disabled = false;
+        submit.textContent = 'Nachricht senden';
+      }
+    });
+  })();
+</script>

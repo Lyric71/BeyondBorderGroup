@@ -19,9 +19,9 @@ keyTakeaways:
 
 Pendant des années, les marques étrangères ont incarné la rareté et la modernité en Chine. Ce qui venait d'ailleurs paraissait toujours un cran devant.
 
-À mesure que la classe moyenne s'élargissait, les [grandes marques internationales](/fr/entrer-en-chine/conseil-en-entree-de-marche) sont devenues des marqueurs de statut et de qualité. Les acteurs locaux traînaient un retard évident sur le produit, le design et le récit.
+À mesure que la classe moyenne s'élargissait, les [grandes marques internationales](/fr/entrer-en-chine/conseil-en-entree-de-marche) sont devenues des marqueurs de statut et de qualité. Les acteurs locaux traînaient un retard manifeste sur le produit, le design et le récit.
 
-Aujourd'hui, les marques chinoises ont rattrapé. Elles vont souvent plus vite côté culture et digital. Le mouvement Guochao a doté les marques locales d'un récit puissant. Les marques occidentales sont devenues une option parmi d'autres. La qualité ne suffit plus à se démarquer. Restent deux critères : la justesse culturelle et la maîtrise des plateformes.
+Aujourd'hui, les marques chinoises ont rattrapé. Elles vont souvent plus vite côté culture et digital. Le mouvement Guochao a doté les marques locales d'un récit puissant. Les marques occidentales sont devenues une option parmi d'autres. La qualité ne suffit plus à se démarquer. Restent deux critères : la justesse culturelle, la maîtrise des plateformes.
 
 ## Pourquoi la localisation s'impose
 
@@ -31,7 +31,7 @@ Deux forces rendent la [localisation](/fr/entrer-en-chine/marque-et-localisation
 
 Le consommateur chinois fait toujours confiance aux marques occidentales pour la sécurité et la conception, mais le standard local a grimpé.
 
-Une marque qui se borne à se présenter comme « marque internationale de qualité » défend une promesse d'hier.
+Une marque qui se borne à se présenter en « marque internationale de qualité » défend une promesse d'hier.
 
 Pour sortir du lot aujourd'hui, elle doit signaler :
 
@@ -84,7 +84,7 @@ Le « feeling » Apple reste intact. Le chemin de l'attention à l'achat, lui, e
 - Des éditions Nouvel An chinois pensées pour les rituels familiaux et le cadeau
 - Des collaborations avec des artistes locaux dont les créations circulent sur les réseaux chinois
 
-À l'arrivée, ça reste Coca-Cola. Le langage, lui, passe par des moments et des symboles chinois.
+Au bout du compte, ça reste Coca-Cola. Le langage, lui, passe par des moments et des symboles chinois.
 
 ![](/Images/insights/2025/11/localization-3-1024x576.png)
 

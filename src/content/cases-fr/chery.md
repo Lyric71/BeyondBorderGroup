@@ -23,18 +23,18 @@ order: 5
 
 ## La marque
 
-Chery Automotive figure parmi les plus grands constructeurs chinois et parmi les plus engagés à l'international, avec une base de fans qui s'étend sur l'ensemble de ses marchés. La marque cherchait à dépasser le marketing descendant et à confier à sa communauté un rôle créatif visible dans sa propre identité.
+Chery Automotive compte parmi les plus grands constructeurs chinois et parmi les plus tournés vers l'international, avec une base de fans qui couvre l'ensemble de ses marchés. La marque voulait sortir du marketing descendant et confier à sa communauté un rôle créatif lisible dans sa propre identité.
 
 ## Le défi
 
-La mission portait sur une campagne sociale mondiale, déployée sous la bannière « With Chery With Love ». Il s'agissait de convier les fans à co-créer des cadeaux et des goodies inédits, en leur ouvrant un espace de création et une part des revenus générés. La principale difficulté tenait à la sincérité perçue de la démarche : la co-création devait paraître authentique, pas opportuniste, à travers plusieurs marchés et plusieurs langues.
+La mission : une campagne sociale mondiale, sous la bannière « With Chery With Love ». L'idée, convier les fans à co-créer des cadeaux et des goodies inédits, en leur ouvrant un espace de création et une part des revenus dégagés. La principale difficulté tenait à la sincérité perçue : la co-création devait sonner juste, pas opportuniste, sur plusieurs marchés et dans plusieurs langues.
 
 ## Notre approche
 
-Le travail a démarré par une étude de marché approfondie, destinée à identifier et à mobiliser la bonne audience, et à s'assurer que la campagne atteigne les passionnés les plus susceptibles de s'engager. Les données de plateformes ont guidé le choix des thèmes et des sujets, en privilégiant ceux qui résonnaient au sein de cette communauté. La stratégie a ensuite été calibrée canal par canal, avec un traitement spécifique pour Facebook et pour Instagram.
+Tout a commencé par une étude de marché poussée, pour identifier la bonne audience et la mobiliser, et pour s'assurer que la campagne touche les passionnés les plus enclins à s'engager. Les données des plateformes ont guidé le choix des thèmes et des sujets, en privilégiant ceux qui résonnaient dans la communauté. La stratégie a ensuite été calibrée canal par canal, avec un traitement propre à Facebook et un autre à Instagram.
 
-Un mécanisme de récompenses a été conçu pour mêler gain financier et expériences exclusives. La participation devenait à la fois stimulante et émotionnellement gratifiante. Ce double registre, défi créatif sincère et contrepartie tangible, a entretenu un flux constant de soumissions semaine après semaine.
+Un mécanisme de récompenses a été conçu pour combiner gain financier et expériences exclusives. La participation devenait à la fois stimulante et gratifiante sur le plan affectif. Ce double registre, défi créatif sincère et contrepartie tangible, a entretenu un flux constant de propositions semaine après semaine.
 
 ## Résultats
 
-La campagne a atteint deux millions d'impressions par semaine et recueilli plus de cent designs co-créés à un rythme hebdomadaire. L'engagement et la production créative ont dépassé les objectifs initiaux. La preuve, en volume, de l'attachement qui lie Chery Automotive à sa communauté.
+La campagne a atteint deux millions d'impressions par semaine et recueilli plus de cent designs co-créés au rythme hebdomadaire. L'engagement comme la production créative ont dépassé les objectifs initiaux. La preuve, en volume, du lien qui unit Chery Automotive à sa communauté.

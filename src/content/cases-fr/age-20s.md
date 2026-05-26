@@ -24,23 +24,23 @@ images:
 
 ## La marque
 
-Marque coréenne de beauté, Age 20's doit sa notoriété à ses fonds de teint cushion. L'enjeu de ce lancement consistait à faire évoluer son statut : passer de référence fonctionnelle à choix lifestyle premium pour les urbains chinois actifs, autour d'une nouvelle ligne au packaging inspiré de l'univers des desserts.
+Age 20's, maison coréenne de beauté, doit l'essentiel de sa notoriété à ses fonds de teint cushion. Le lancement visait un saut de registre : faire passer la marque du statut de référence fonctionnelle à celui de choix lifestyle premium pour les urbaines chinoises actives, autour d'une nouvelle ligne dont le packaging emprunte à l'univers des desserts.
 
 ## Le défi
 
-La catégorie cushion est saturée sur le marché chinois. Marques locales et marques internationales se disputent les mêmes moments de consommation, le bureau et la vie quotidienne. Émerger imposait trois conditions : un signe visuel mémorisable, un récit de performance crédible et des contenus calibrés sur les comportements de découverte et d'achat propres à Xiaohongshu et à Douyin.
+La catégorie cushion est saturée en Chine. Marques locales et internationales se disputent les mêmes occasions de consommation, le bureau, la vie courante. Sortir du lot supposait trois conditions tenues simultanément : un signe visuel qu'on mémorise du premier coup d'œil, un récit de performance crédible, et des contenus taillés sur les ressorts de découverte et d'achat propres à Xiaohongshu et à Douyin.
 
 ## Notre approche
 
-Le lancement s'est articulé autour de l'identité « Little Milk Brick ». Le packaging a été pensé comme repère visuel, à la fois reconnaissable, nommable et partageable. Sur cette base, nous avons déployé une campagne sociale et eCommerce séquencée, taillée pour les deux plateformes de référence de la catégorie.
+Le lancement a tenu sur une idée : « Little Milk Brick ». Le packaging fait office de repère, à la fois reconnaissable, nommable, partageable. Sur cette base s'est construite une campagne sociale et e-commerce séquencée, taillée pour les deux plateformes qui structurent la catégorie.
 
-- Phase de notoriété destinée à ancrer l'identité Little Milk Brick
-- Mises en scène produit en contexte professionnel, alignées sur l'occasion d'usage
-- Conversion portée par des KOL choisis pour leur crédibilité sur le segment fond de teint
-- Amplification des contenus utilisateurs, vecteur de circulation du surnom
+- Phase de notoriété pour ancrer l'identité Little Milk Brick
+- Mises en scène produit en contexte professionnel, calées sur l'occasion d'usage
+- Conversion confiée à des KOL choisis pour leur crédibilité sur le segment fond de teint
+- Amplification des contenus utilisateurs, vecteur naturel de circulation du surnom
 
-Le calibrage plateforme par plateforme a été délibéré. Xiaohongshu a privilégié les tutoriels d'application, les transformations avant-après et les avis détaillés. Douyin s'est concentré sur les retouches express en journée, les conseils make-up en mouvement et les formats compatibles avec le livestream. Le récit de performance, couverture professionnelle, fini milky-mat et tenue de huit heures, est resté homogène sur les deux canaux.
+Le calibrage plateforme par plateforme relevait d'un parti pris. À Xiaohongshu les tutoriels d'application, les transformations avant-après, les avis détaillés. À Douyin les retouches express en journée, les conseils make-up en mouvement, les formats taillés pour le livestream. Le récit de performance, couvrance professionnelle, fini milky-mat, tenue de huit heures, est resté identique d'un canal à l'autre.
 
 ## Résultats
 
-La campagne a surperformé sur l'ensemble des indicateurs. Xiaohongshu a totalisé 750 000 impressions pour un objectif de 300 000, soit 150 % au-dessus de la cible. Douyin a enregistré 3,87 millions d'impressions pour un objectif d'un million, soit 287 % au-dessus. Le ROI s'est établi à 3,3 %, au-delà des standards de la catégorie. Surtout, le surnom « Little Milk Brick » s'est imposé de manière organique. Indice le plus probant : l'identité avait pris racine.
+La campagne a dépassé tous les indicateurs. Xiaohongshu : 750 000 impressions pour un objectif de 300 000, deux fois et demie la cible. Douyin : 3,87 millions d'impressions pour un objectif d'un million, près de quatre fois l'attendu. ROI à 3,3 %, au-dessus des standards de la catégorie. Et, signe sans doute le plus probant, le surnom « Little Milk Brick » a pris racine de lui-même. L'identité tenait.

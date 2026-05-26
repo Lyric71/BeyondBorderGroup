@@ -11,7 +11,7 @@ heroImageAlt: "Agricultrice asiatique avec une tablette numérique dans un potag
 
 ## Pourquoi le marketing vert pèse en Chine
 
-Le marketing vert s'est imposé comme un levier puissant. Il signale l'engagement environnemental d'une [marque](/fr/entrer-en-chine/marque-et-localisation) et trouve un écho profond chez des consommateurs qui scrutent l'étiquette écologique avant de passer en caisse. Les [campagnes](/fr/se-developper-en-chine/campagnes) vertes les plus marquantes éclairent les enjeux climatiques. Mieux : elles installent des habitudes plus sobres dans le quotidien.
+Le marketing vert s'est imposé en levier puissant. Il signale l'engagement environnemental d'une [marque](/fr/entrer-en-chine/marque-et-localisation) et trouve un écho profond chez des consommateurs qui scrutent l'étiquette écologique avant de passer en caisse. Les [campagnes](/fr/se-developper-en-chine/campagnes) vertes les plus marquantes éclairent les enjeux climatiques. Mieux : elles installent des habitudes plus sobres dans le quotidien.
 
 ## Starbucks et Proya ouvrent la voie
 
@@ -19,7 +19,7 @@ Starbucks et Proya Cosmetics ont placé la barre haut sur le terrain de la rédu
 
 ![Campagne Starbucks pour le développement durable](/Images/insights/2024/06/SBX20230601-Laxman_China_4-16-1024x683-1.jpg)
 
-Côté Proya Cosmetics, l'enseigne mise sur la créativité et recycle ses flacons vides en objets utiles, eux-mêmes éco-responsables. La campagne file un parallèle astucieux entre le renouvellement de la peau et la seconde vie des contenants. À l'arrivée, l'identité durable de la marque s'ancre.
+Côté Proya Cosmetics, l'enseigne mise sur la créativité et recycle ses flacons vides en objets utiles, eux-mêmes éco-responsables. La campagne file un parallèle astucieux entre le renouvellement de la peau et la seconde vie des contenants. Au bout du compte, l'identité durable de la marque s'ancre.
 
 ## La résonance émotionnelle : Purcotton et Goofish
 
@@ -39,14 +39,14 @@ Au-delà du 22 avril, des marques comme Starbucks tiennent à inscrire leurs ini
 
 ## L'impact émotionnel et visuel : Zhao Ri Wei Pin
 
-Toucher l'émotion et l'œil démultiplie la portée d'une campagne verte. Zhao Ri Wei Pin, marque de lait bio, a édifié un globe terrestre en briques de lait sur la rue Anfu, à Shanghai. L'installation invitait les passants à déposer leurs propres briques dans un cylindre de recyclage, en signe de soutien à la planète. L'opération promeut le recyclage et embarque le public dans une expérience ludique, et porteuse de sens.
+Toucher l'émotion et l'œil démultiplie la portée d'une campagne verte. Zhao Ri Wei Pin, marque de lait bio, a édifié un globe terrestre en briques de lait sur la rue Anfu, à Shanghai. L'installation invitait les passants à déposer leurs propres briques dans un cylindre de recyclage, en signe de soutien à la planète. L'opération promeut le recyclage et embarque le public dans une expérience ludique, porteuse de sens.
 
 ## Capter l'intérêt grâce au social
 
 D'après le rapport Higher Impact 2023 d'Amazon Advertising, « 66 % des consommateurs dans le monde recherchent activement des marques engagées dans une démarche durable, et cette part continue de progresser ». Les marques peuvent saisir cet intérêt croissant en tenant le cap toute l'année, plutôt qu'en réservant le sujet à la Journée de la Terre.
 
-Pour les marques dont l'ADN est déjà environnemental, à l'image de Purcotton ou Zhao Ri Wei Pin, les campagnes du 22 avril renforcent encore l'image éco-responsable. Elles raccrochent les enjeux verts aux produits et aux services. Le discours y gagne en solidité.
+Pour les marques dont l'ADN est déjà environnemental, à l'image de Purcotton ou Zhao Ri Wei Pin, les campagnes du 22 avril musclent encore l'image éco-responsable. Elles raccrochent les enjeux verts aux produits et aux services. Le discours y gagne en solidité.
 
 Pour les autres, mettre en scène la durabilité de façon créative et impliquante, à la manière de Proya ou Seesaw, reste une méthode efficace pour signaler l'engagement. Ces démarches traduisent une philosophie de long terme, ancrée dans la durabilité.
 
-À l'arrivée, intégrer la durabilité au cœur des valeurs et de la stratégie marketing n'est plus une tendance. C'est une nécessité. Les campagnes vertes qui parlent vrai répondent aux enjeux environnementaux, créent du lien, fidélisent, orientent les comportements d'achat. À mesure que les marques s'y attèlent, ces efforts dessinent collectivement une société plus attentive à son empreinte.
+Au bout du compte, intégrer la durabilité au cœur des valeurs et de la stratégie marketing n'est plus une tendance. C'est une nécessité. Les campagnes vertes qui parlent vrai répondent aux enjeux environnementaux, créent du lien, fidélisent, orientent les comportements d'achat. À mesure que les marques s'y attèlent, ces efforts dessinent collectivement une société plus attentive à son empreinte.

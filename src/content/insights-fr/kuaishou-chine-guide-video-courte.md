@@ -1,6 +1,6 @@
 ---
 title: "Kuaishou en Chine : le guide complet du marketing vidéo courte"
-description: "Kuaishou s'est imposé comme la grande alternative à Douyin sur la vidéo courte, avec une assise solide dans les villes de second rang et les zones rurales. Mode d'emploi du livestream, de l'influence et du e-commerce localisé."
+description: "Kuaishou s'est imposé en grande alternative à Douyin sur la vidéo courte, avec une assise solide dans les villes de second rang et les zones rurales. Mode d'emploi du livestream, de l'influence et du e-commerce localisé."
 pubDate: "2024-10-28"
 author: "Beyond Border Group"
 category: "Platforms"
@@ -22,7 +22,7 @@ Ce public préfère le contenu brut, sincère, sans esthétique publicitaire. Ku
 
 ### Habitudes d'achat
 
-Les consommateurs des villes de rang inférieur figurent parmi les plus actifs sur le e-commerce chinois. Kuaishou s'impose donc comme la plateforme idéale pour les marques qui ciblent des acheteurs fidèles, attentifs au prix et très engagés en ligne.
+Les consommateurs des villes de rang inférieur figurent parmi les plus actifs sur le e-commerce chinois. Kuaishou s'impose donc en plateforme idéale pour les marques qui ciblent des acheteurs fidèles, attentifs au prix et très engagés en ligne.
 
 ## Activer le live commerce sur Kuaishou
 
@@ -88,7 +88,7 @@ Les influenceurs Kuaishou, ou KOL, sont des figures de confiance. Ils ouvrent un
 
 ### Choisir le bon profil
 
-La sélection se joue sur deux critères : l'adéquation entre l'audience du KOL et la cible visée, et un historique d'engagement solide.
+La sélection se joue sur deux critères : l'adéquation entre l'audience du KOL et la cible visée, un historique d'engagement solide.
 
 ### Mesurer la performance
 
@@ -122,7 +122,7 @@ Ces annonces apparaissent à l'ouverture de l'application. Exposition immédiate
 
 ### Newsfeed Ads
 
-Intégrées dans la page Découverte, elles se présentent comme du contenu natif. L'engagement y reste plus élevé.
+Intégrées dans la page Découverte, elles se présentent en contenu natif. L'engagement y reste plus élevé.
 
 ### Hashtags et défis
 
@@ -136,7 +136,7 @@ Le public de Kuaishou aime le contenu non filtré, ancré dans le réel. Les mar
 
 ### Tester les formats
 
-Du live aux vidéos courtes, varier les formats permet de toucher différents segments et d'identifier ce qui résonne le mieux.
+Du live aux vidéos courtes, varier les formats permet de toucher différents segments et de repérer ce qui résonne le mieux.
 
 ### Démonstration et récit
 

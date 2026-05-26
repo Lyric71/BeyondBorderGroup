@@ -30,7 +30,7 @@ La logique tient en quelques lignes.
 
 Le studio de boutique offre un contrôle complet. La marque calibre ses arguments, ses scripts de service, son après-vente, et corrige chaque jour. Or les plateformes durcissent leur gouvernance et le consommateur s'est appris à se méfier. Ce contrôle pèse d'autant plus lourd.
 
-C'est aussi le terrain sur lequel Douyin engage ses investissements produit. La plateforme rapproche sa pile publicitaire de la performance e-commerce, avec une intégration plus serrée pour soutenir la conversion et limiter la déperdition de trafic.
+C'est aussi le terrain sur lequel Douyin engage ses investissements produit. La plateforme rapproche sa pile publicitaire de la performance e-commerce, avec une intégration plus serrée pour soutenir la conversion et contenir la déperdition de trafic.
 
 Le « store-led » n'est plus un registre de contenu. C'est un modèle de trading.
 
@@ -48,7 +48,7 @@ D'abord, le contenu prime. Mise en scène, association des pièces, rythme posé
 
 Ensuite, le live épouse la trajectoire chinoise de la marque. Zara rationalise ses implantations physiques et concentre ses moyens sur le digital et les flagships. Le livestream s'inscrit dans cette poussée numérique.
 
-À l'arrivée, la leçon n'est pas de copier la durée du show. Douyin récompense les marques qui traitent le live comme un canal retail permanent, conçu pour capitaliser dans la durée.
+Au bout du compte, la leçon n'est pas de copier la durée du show. Douyin récompense les marques qui traitent le live en canal retail permanent, conçu pour capitaliser dans la durée.
 
 ## Ce qu'il faut faire autrement sur Douyin en 2026
 
@@ -58,13 +58,13 @@ La plupart des marques internationales tiennent les fondamentaux : un animateur,
 
 * Partir d'une promesse claire : à qui s'adresse le produit, quel problème il règle.
 * Tenir un rythme reproductible : accroche, démonstration, preuve, offre.
-* Transformer les commentaires en matière première. Tenir à jour une liste des dix objections récurrentes, les traiter en rotation.
+* Convertir les commentaires en matière première. Tenir à jour une liste des dix objections récurrentes, les traiter en rotation.
 
 **2) Concevoir une architecture produit pour la diffusion quotidienne**
 
 * Ancrer le studio sur 1 à 2 SKU héros, simples à expliquer et à livrer.
 * Ajouter des « protecteurs de marge » : lots, coffrets, accessoires qui font grimper le panier moyen sans creuser les remises.
-* Préparer des paliers tarifaires spécifiques au 618 et au Double 11, pour ne pas conditionner les acheteurs à attendre des soldes extrêmes.
+* Préparer des paliers tarifaires propres au 618 et au Double 11, pour ne pas conditionner les acheteurs à attendre des soldes extrêmes.
 
 **3) Penser le trafic comme trois moteurs distincts**
 
@@ -99,4 +99,4 @@ Pour les marques internationales, la conformité n'est plus un détail juridique
 
 Reste que la vraie question n'est plus de savoir si le live commerce vaut la peine sur Douyin.
 
-Elle est de savoir si l'entreprise peut tenir Douyin comme un canal retail permanent, où la création et le trading avancent à la même cadence.
+Elle est de savoir si l'entreprise peut tenir Douyin en canal retail permanent, où la création et le trading avancent à la même cadence.

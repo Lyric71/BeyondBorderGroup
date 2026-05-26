@@ -70,7 +70,7 @@ Inutile de tout reconstruire d'un trait. La méthode prime.
 Quelques étapes concrètes :
 
 * Cartographier les flux de données Chine. Commencer par le marketing, le e-commerce et le CRM. Où la donnée est-elle collectée ? Où circule-t-elle ensuite, à l'intérieur comme à l'extérieur du pays ?
-* Distinguer les exports indispensables des exports simplement pratiques. Tableaux de bord exécutifs et benchmarks globaux n'ont presque jamais besoin de données personnelles brutes. Déterminer ce qui peut être agrégé ou anonymisé avant transfert.
+* Distinguer les exports indispensables des exports simplement pratiques. Tableaux de bord exécutifs et benchmarks globaux n'ont presque jamais besoin de données personnelles brutes. Trancher ce qui peut être agrégé ou anonymisé avant transfert.
 * Refondre les parcours de consentement. Harmoniser libellés et logique entre tous les points de contact, pour que le client saisisse clairement à quoi il consent, surtout en cas de traitement à l'étranger.
 * Auditer les prestataires et caler les attentes avec le siège. Vérifier où les partenaires hébergent les données et comment ils traitent les identifiants chinois. Cadrer explicitement avec les équipes globales ce qui reste faisable et ce qui doit rester local.
 

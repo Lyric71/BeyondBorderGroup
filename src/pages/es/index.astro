@@ -1,0 +1,1230 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import HomeAssets from '../../components/home/HomeAssets.astro';
+import { getCollection } from 'astro:content';
+
+const dayStops = [
+  {
+    time:   '07:30',
+    moment: 'Al despertar',
+    name:   'WeChat',
+    zh:     '微信',
+    photo:  '/Images/platforms/wechat.webp',
+    logo:   '/Images/platforms/wechat-logo.svg',
+  },
+  {
+    time:   '10:15',
+    moment: 'La pausa de media mañana',
+    name:   'RED',
+    zh:     '小红书',
+    photo:  '/Images/platforms/rednote.webp',
+    logo:   '/Images/platforms/rednote-logo.svg',
+  },
+  {
+    time:   '12:40',
+    moment: 'A la hora del almuerzo, carrito lleno',
+    name:   'Tmall',
+    zh:     '天猫',
+    photo:  '/Images/platforms/tmall-scene.webp',
+    logo:   '/Images/platforms/tmall-logo.svg',
+  },
+  {
+    time:   '15:50',
+    moment: 'Compra en grupo por la tarde',
+    name:   'Pinduoduo',
+    zh:     '拼多多',
+    photo:  '/Images/platforms/pdd-scene.webp',
+    logo:   '/Images/platforms/pdd-logo.svg',
+  },
+  {
+    time:   '19:20',
+    moment: 'Entrega al caer la tarde',
+    name:   'JD',
+    zh:     '京东',
+    photo:  '/Images/platforms/jd-scene.webp',
+    logo:   '/Images/platforms/jd-logo.webp',
+  },
+  {
+    time:   '21:45',
+    moment: 'Compra en livestream',
+    name:   'Douyin',
+    zh:     '抖音',
+    photo:  '/Images/platforms/douyin.webp',
+    logo:   '/Images/platforms/douyin-logo.svg',
+  },
+];
+
+const svcIcon: Record<string, string> = {
+  compass:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',
+  tag:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>',
+  store:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg>',
+  truck:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+  bag:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>',
+  chat:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>',
+  broadcast: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.5 7.5a6 6 0 0 1 0 9M7.5 7.5a6 6 0 0 0 0 9"/><path d="M19.5 4.5a10 10 0 0 1 0 15M4.5 4.5a10 10 0 0 0 0 15"/></svg>',
+  monitor:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
+  megaphone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-8v18L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>',
+  calendar:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+  cap:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>',
+  pin:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+  bulb:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>',
+  grid:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>',
+};
+
+const servicesByStage = [
+  {
+    key: 'enter',
+    label: 'Entrar en China',
+    href: '/es/entrar-en-china',
+    intro: 'Lo que hace falta para pasar de cero a las primeras ventas en China.',
+    services: [
+      {
+        title: 'Estrategia de entrada',
+        icon: 'compass',
+        tagline: 'Estrategia y modelo de negocio',
+        desc: 'Antes de quemar un yuan en plataformas o socios, conviene tener un modelo hecho a medida para su marca, su categoría y su presupuesto. Sentamos las bases estratégicas: dónde vender, cómo vender, con quién jugar.',
+        image: '/Images/enter-china/ops-strategy-desk.png',
+        imageAlt: 'Sesión de estrategia en una oficina china, hoja de ruta de entrada al mercado sobre la mesa',
+        href: '/es/entrar-en-china/estrategia-de-entrada',
+        featured: true,
+      },
+      {
+        title: 'Lanzamiento Cross-Border eCommerce',
+        icon: 'store',
+        tagline: 'Tmall Global y JD Worldwide',
+        desc: 'Vender en China sin constituir sociedad local. Depósito franco, despacho de aduanas y una tienda en marcha en Tmall Global o JD Worldwide.',
+        image: '/Images/enter-china/ecommerce.jpg',
+        imageAlt: 'Escaparate de Tmall Global en una tableta dentro de un depósito aduanero',
+        href: '/es/entrar-en-china/lanzamiento-cross-border',
+      },
+      {
+        title: 'Distribución',
+        icon: 'truck',
+        tagline: 'Canales B2B y DTC',
+        desc: 'La vía rápida para llevar el producto al lineal y a los almacenes chinos. Le buscamos el distribuidor que encaja con su categoría, o nos ponemos nosotros ese sombrero.',
+        image: '/Images/enter-china/dist-hero-warehouse.png',
+        imageAlt: 'Almacén de distribución en China con producto paletizado listo para el canal retail',
+        href: '/es/entrar-en-china/distribucion',
+      },
+      {
+        title: 'Marca y localización',
+        icon: 'tag',
+        tagline: 'Nombre, identidad, voz',
+        desc: 'Su marca nació pensada para el consumidor occidental. El chino la lee de otra manera. Nombre chino, identidad visual, packaging, tono. Trabajo de antes de lanzar, no de después.',
+        image: '/Images/branding/visual-identity.png',
+        imageAlt: 'Tableros de identidad de marca adaptados al mercado chino, con muestras de tipografía y color',
+        href: '/es/entrar-en-china/marca-y-localizacion',
+      },
+    ],
+  },
+  {
+    key: 'grow',
+    label: 'Crecer en China',
+    href: '/es/crecer-en-china',
+    intro: 'Ya vende. Toca exprimir el potencial.',
+    services: [
+      {
+        title: 'Cross-Border eCommerce',
+        icon: 'bag',
+        tagline: 'Tiendas operadas de cabo a rabo',
+        desc: 'Fichas de producto, promociones, atención al cliente en mandarín, coordinación logística, reglas de la plataforma. Llevamos el día a día para que su equipo se centre en producto y marca.',
+        image: '/Images/grow-in-china/social-commerce/team-livestream-control.png',
+        imageAlt: 'Equipo de operaciones eCommerce en Shanghái actualizando la tienda Tmall',
+        href: '/es/crecer-en-china/ecommerce-transfronterizo',
+        featured: true,
+      },
+      {
+        title: 'Social Commerce',
+        icon: 'chat',
+        tagline: 'Douyin, WeChat, RED',
+        desc: 'Venta por livestream, alianzas con KOL, tiendas dentro de la app. Contenido que vende en la misma sesión en la que crea marca.',
+        image: '/Images/grow-in-china/social-commerce/hero-douyin-livestream.png',
+        imageAlt: 'Sesión de livestream en Douyin vendiendo un producto de marca, presentadora en cámara durante la emisión',
+        href: '/es/crecer-en-china/comercio-social',
+      },
+      {
+        title: 'Campañas',
+        icon: 'tag',
+        tagline: '618, Double 11, Año Nuevo Chino',
+        desc: 'Las grandes citas comerciales se llevan media facturación del año. Elegimos los picos que vale la pena pelear, montamos la creatividad, arrancamos el calentamiento y aguantamos al pie del cañón hora tras hora.',
+        image: '/Images/grow-in-china/campaigns/hero-campaign-warroom.png',
+        imageAlt: 'Sala de mando durante una gran cita del eCommerce chino, con pantallas que siguen el livestream y las ventas',
+        href: '/es/crecer-en-china/campanas',
+      },
+      {
+        title: 'Medios',
+        icon: 'broadcast',
+        tagline: 'Compra de medios planificada y trazada',
+        desc: 'Douyin, WeChat, RED, Baidu, Tmall, JD y programática. Un mismo equipo planifica y compra en cada plataforma china, y todo vuelve atado al resultado de la tienda.',
+        image: '/Images/grow-in-china/media/hero-media-buying.png',
+        imageAlt: 'Panel de compra de medios con campañas en plataformas chinas y datos de rendimiento en directo',
+        href: '/es/crecer-en-china/medios',
+      },
+      {
+        title: 'Influencia y KOL',
+        icon: 'megaphone',
+        tagline: 'Casting, briefing, reporting',
+        desc: 'El comprador chino investiga, decide y compra en el mismo scroll. Casting tirando de nuestra base propia de KOC, briefs que dejan respirar al creador, ventas trazadas uno a uno.',
+        image: '/Images/grow-in-china/influencers-kols/hero-kol-livestream.png',
+        imageAlt: 'KOL china en un set de livestream, producto de marca en plano y comentarios de la audiencia desplazándose',
+        href: '/es/crecer-en-china/influencia-y-kol',
+      },
+    ],
+  },
+  {
+    key: 'learn',
+    label: 'Conocer China',
+    href: '/es/conocer-china',
+    intro: 'Decida sobre la China de hoy, no sobre un manual de hace dos años.',
+    services: [
+      {
+        title: 'Plataformas',
+        icon: 'grid',
+        tagline: 'Cómo funciona cada una de verdad',
+        desc: 'Tmall, JD, Douyin, WeChat, RED. Audiencias distintas, reglas distintas y formas distintas de mover el dinero. Un mapa claro antes de comprometer presupuesto.',
+        image: '/Images/learn-china/platforms/hero.png',
+        imageAlt: 'Pantalla con un mosaico de plataformas chinas de eCommerce y social en distintos teléfonos',
+        href: '/es/conocer-china/plataformas',
+        featured: true,
+      },
+      {
+        title: 'Masterclass',
+        icon: 'cap',
+        tagline: 'Quien opera el mercado, formando a equipos',
+        desc: 'Un programa intensivo que recorre las plataformas, el comportamiento del consumidor y la mecánica de las grandes campañas. Lo dan quienes pisan China cada día.',
+        image: '/Images/CyrilMasterclass.jpg',
+        imageAlt: 'Sesión de masterclass sobre comercio en China, con asistentes tomando notas',
+        href: '/es/conocer-china/masterclass',
+      },
+      {
+        title: 'Inmersión China',
+        icon: 'pin',
+        tagline: 'Verlo con los pies en el suelo',
+        desc: 'Aterrice en China. Visite operaciones eCommerce en marcha, hable con equipos de plataforma, asista a un livestream en directo. Pensado para directivos que necesitan tomarle el pulso al mercado de primera mano.',
+        image: '/Images/learn-china/hero-livestream-expedition.png',
+        imageAlt: 'Directivos internacionales en una inmersión visitando un plató de livestream en Shanghái',
+        href: '/es/conocer-china/inmersion-china',
+      },
+      {
+        title: 'Análisis',
+        icon: 'bulb',
+        tagline: 'Lectura del mercado, hoy',
+        desc: 'Artículos y análisis firmados por quienes pisan el mercado chino cada día. Qué hacen las plataformas, hacia dónde se mueve el consumidor y qué implica todo esto para una marca internacional.',
+        image: '/Images/learn-china/ai-discovery-shenzhen.png',
+        imageAlt: 'Momento de investigación en Shenzhen, analista revisando datos de plataforma china en un portátil',
+        href: '/es/analisis',
+      },
+    ],
+  },
+];
+
+const pillars = [
+  {
+    key: 'enter',
+    stage: 'Lanzamiento',
+    title: 'Entrar en China',
+    teaser: 'El producto lo tiene. Le falta la puerta.',
+    image: '/Images/pillars/enter-china.webp',
+    imageAlt: 'Directora de marca en una oficina china moderna revisando muestras de packaging premium junto a un portátil con una tienda estilo Tmall',
+    lead: 'Tiene un producto que puede funcionar en China. Aún no hay equipo allí, ni sociedad, ni tienda en ninguna plataforma.',
+    paragraphs: [
+      'Las marcas que arrancan rápido escogen bien el modelo de entrada. Cross-Border eCommerce y un buen socio de distribución dan las primeras ventas en meses, no en años, y mantienen el riesgo a raya.',
+    ],
+    tactics: ['Cross-Border eCommerce', 'Modelo de entrada que cuadra', 'Socio distribuidor', 'Localización de marca'],
+    close: 'Así se ve un aterrizaje en China hecho con cabeza.',
+    href: '/es/entrar-en-china',
+  },
+  {
+    key: 'grow',
+    stage: 'Escala',
+    title: 'Crecer en China',
+    teaser: 'Ya vende. Quiere que la curva vuelva a remontar.',
+    image: '/Images/pillars/grow-in-china.webp',
+    imageAlt: 'Presentadora china de livestream commerce en un estudio limpio, con productos de cuidado de la piel en una estantería de madera y un teléfono sobre un trípode',
+    lead: 'Ya está en el mercado y vende. El crecimiento se ha encallado.',
+    paragraphs: [
+      'Suele ser el montaje. Cuatro agencias y ninguna se habla. Textos que huelen a traducción, porque lo son. Junte eCommerce, social, medios y marca bajo un mismo techo y la curva vuelve a remontar.',
+    ],
+    tactics: ['Operaciones de eCommerce', 'Social commerce', 'Medios'],
+    close: 'Una marca con la que el consumidor chino para y conecta.',
+    href: '/es/crecer-en-china',
+  },
+  {
+    key: 'learn',
+    stage: 'Inteligencia',
+    title: 'Conocer China',
+    teaser: 'Tome la próxima decisión sobre China con la realidad de hoy.',
+    image: '/Images/pillars/learn-china.webp',
+    imageAlt: 'Dos directivos internacionales recorriendo un tranquilo mercado chino de té y diseño a la luz de la tarde',
+    lead: 'Las reglas de las plataformas se mueven sin parar. Los hábitos de hace tres años ya no están.',
+    paragraphs: [
+      'Cuando la decisión sobre China recae en usted, la información caducada es lo más caro que tiene sobre la mesa. Inmersiones, masterclasses dadas por quienes operan a diario, datos frescos del mercado.',
+    ],
+    tactics: ['Inmersiones en China', 'Masterclasses dadas por operadores', 'Datos frescos del mercado'],
+    close: 'Así se decide y así se defiende lo decidido.',
+    href: '/es/conocer-china',
+  },
+];
+
+const pillarIcons: Record<string, string> = {
+  enter: '<path d="M15 3h6v18h-6"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>',
+  grow: '<path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/>',
+  learn: '<path d="M2 4h7a3 3 0 0 1 3 3v13"/><path d="M22 4h-7a3 3 0 0 0-3 3v13"/><path d="M2 4v15h7a3 3 0 0 1 3 3"/><path d="M22 4v15h-7a3 3 0 0 0-3 3"/>',
+};
+
+const allCases = await getCollection('casesEs', ({ data }) => !data.draft);
+const featuredCases = allCases
+  .slice()
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 6);
+
+const allInsights = await getCollection('insightsEs', ({ data }) => !data.draft);
+
+const insightCategoryEs: Record<string, string> = {
+  'Platforms': 'Plataformas',
+  'E-Commerce': 'eCommerce',
+  'KOLs & Livestream': 'KOL y livestream',
+  'Brand & Localization': 'Marca y localización',
+  'AI & Innovation': 'IA e innovación',
+  'Market Strategy': 'Estrategia de mercado',
+  'Compliance & Setup': 'Cumplimiento y puesta en marcha',
+};
+
+const latestInsights = allInsights
+  .slice()
+  .sort((a, b) => {
+    const da = a.data.pubDate?.valueOf() ?? 0;
+    const db = b.data.pubDate?.valueOf() ?? 0;
+    return db - da;
+  })
+  .slice(0, 3);
+
+function readingTime(body: string | undefined) {
+  if (!body) return '';
+  const words = body.trim().split(/\s+/).length;
+  return `${Math.max(1, Math.round(words / 200))} min de lectura`;
+}
+
+function formatInsightDate(d?: Date) {
+  if (!d) return '';
+  return d.toLocaleDateString('es-ES', { month: 'short', year: 'numeric' });
+}
+
+---
+
+<Layout
+  title="Agencia de marketing y eCommerce en China | Beyond Border Group"
+  description="Agencia de marketing, eCommerce y distribución para marcas internacionales en China. Operamos Tmall, JD, Douyin, WeChat y RED a diario. Shanghái, Hong Kong, París."
+>
+
+  {/* ---------- SCROLL PROGRESS ---------- */}
+  <div class="home-progress" aria-hidden="true"><div class="home-progress__bar"></div></div>
+
+  {/* ---------- HERO ---------- */}
+  <section class="home-hero" data-home-hero>
+    <div class="home-hero__bg" aria-hidden="true" data-home-parallax>
+      <picture>
+        <source srcset="/Images/hero-livestream.webp" type="image/webp" />
+        <img
+          src="/Images/hero-livestream.jpg"
+          alt="Presentadora china de livestream commerce en plató, mostrando productos a una audiencia conectada"
+          width="1376"
+          height="768"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </picture>
+    </div>
+    <div class="home-hero__overlay" aria-hidden="true"></div>
+    <div class="home-hero__grain" aria-hidden="true"></div>
+
+    <div class="container home-hero__inner">
+      <span class="eyebrow eyebrow--on-dark home-reveal">Marketing y eCommerce en China</span>
+      <h1 class="home-hero__title home-reveal" style="--reveal-delay: 80ms;">
+        <span class="home-hero__title-row">Vender en China.</span>
+        <span class="home-hero__title-row home-hero__title-row--accent">Crecer en China.</span>
+        <span class="home-hero__title-row home-hero__title-row--highlight">Entender China.</span>
+      </h1>
+      <p class="home-hero__lead home-reveal" style="--reveal-delay: 200ms;">
+        Ponemos a las marcas a facturar en China. Tiendas en Tmall y JD, social
+        commerce en Douyin y RED, y el distribuidor que encaja con su categoría.
+      </p>
+      <div class="home-hero__actions home-reveal" style="--reveal-delay: 280ms;">
+        <a class="btn btn--primary home-magnetic" href="/es/contacto">Hablemos</a>
+        <a class="btn btn--ghost-light home-magnetic" href="/es/proyectos">Ver nuestros proyectos</a>
+      </div>
+
+      <div class="home-hero__meta home-reveal" style="--reveal-delay: 360ms;">
+        <div class="home-hero__meta-item">
+          <span class="home-hero__meta-num" data-home-counter="20" data-suffix="+">0</span>
+          <span class="home-hero__meta-label">años en China</span>
+        </div>
+        <div class="home-hero__meta-item">
+          <span class="home-hero__meta-num" data-home-counter="75" data-suffix="+">0</span>
+          <span class="home-hero__meta-label">marcas lanzadas</span>
+        </div>
+        <div class="home-hero__meta-item">
+          <span class="home-hero__meta-num">Millones</span>
+          <span class="home-hero__meta-label">de GMV bajo gestión</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#day-commerce" class="home-hero__scroll" aria-label="Bajar a la siguiente sección">
+      <span class="home-hero__scroll-line"></span>
+      <span class="home-hero__scroll-text">Bajar</span>
+    </a>
+  </section>
+
+  {/* ---------- DAY IN CHINESE COMMERCE ---------- */}
+  <section id="day-commerce" class="section day-timeline-section">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">Un día en el comercio chino</span>
+        <h2>Su marca, en cada momento del día</h2>
+        <p class="section-header__lead">
+          El consumidor chino salta entre media docena de apps antes de comer.
+          Cada una tiene su público y su forma de vender.
+        </p>
+      </header>
+
+      <ol class="day-timeline" aria-label="Un día en las plataformas chinas">
+        {dayStops.map((s) => (
+          <li class="day-stop">
+            <figure class="day-stop__photo">
+              <img src={s.photo} alt="" loading="lazy" decoding="async" />
+            </figure>
+            <div class="day-stop__info">
+              <span class="day-stop__time">{s.time}</span>
+              <span class="day-stop__moment">{s.moment}</span>
+              <span class="day-stop__platform">
+                <img class="day-stop__logo" src={s.logo} alt="" loading="lazy" decoding="async" />
+                <span class="day-stop__platform-text">
+                  <span class="day-stop__name">{s.name}</span>
+                  <span class="day-stop__zh">{s.zh}</span>
+                </span>
+              </span>
+            </div>
+          </li>
+        ))}
+      </ol>
+
+      <div class="day-timeline__cta">
+        <a href="#services" class="btn btn--primary">Descubrir nuestros servicios</a>
+        <p class="day-timeline__cta-note">
+          Cada plataforma tiene su libro de instrucciones. Así colocamos una marca en cada una.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- PILLARS: CINEMATIC EXPANDING PANELS ---------- */}
+  <section id="pillars" class="section section--alt pillars-section">
+    <div class="pillars-bg" aria-hidden="true">
+      <div class="pillars-bg__grid"></div>
+      <div class="pillars-bg__glow"></div>
+    </div>
+    <div class="container">
+      <header class="pillars-header">
+        <span class="eyebrow">Por dónde empezar</span>
+        <h2 class="pillars-header__title">China no se resuelve por una sola puerta</h2>
+        <p class="pillars-header__lead">
+          Tres puertas. Escoja la que encaja con su situación real, no con la que le gustaría tener.
+        </p>
+      </header>
+
+      <div class="stage-panels" data-active="enter" data-stage-panels>
+        {pillars.map((p, i) => (
+          <article class={`stage-panel${i === 0 ? ' is-active' : ''}`} data-stage={p.key} style={`--stage-index: ${i};`}>
+            <button
+              class="stage-panel__hit"
+              type="button"
+              data-stage-trigger={p.key}
+              aria-pressed={i === 0 ? 'true' : 'false'}
+              aria-label={`Mostrar ${p.title}`}
+            ></button>
+            <img class="stage-panel__img" src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
+            <div class="stage-panel__scrim" aria-hidden="true"></div>
+            <span class="stage-panel__rail" aria-hidden="true"></span>
+
+            <div class="stage-panel__top">
+              <span class="stage-panel__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" set:html={pillarIcons[p.key]} />
+              </span>
+              <span class="stage-panel__plus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </div>
+
+            <span class="stage-panel__hint" aria-hidden="true">
+              <span class="stage-panel__hint-text">Abrir</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+
+            <div class="stage-panel__body">
+              <span class="stage-panel__eyebrow">{p.stage}</span>
+              <h3 class="stage-panel__title">{p.title}</h3>
+              <div class="stage-panel__reveal">
+                <p class="stage-panel__lead">{p.lead}</p>
+                <ul class="stage-panel__tactics" aria-label="Qué cubre">
+                  {p.tactics.map((t) => <li>{t}</li>)}
+                </ul>
+                <a class="stage-panel__cta" href="#services" data-stage-jump={p.key}>
+                  <span>Explorar {p.title}</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- SERVICES BY STAGE (TABBED) ---------- */}
+  <section class="section svc-section" id="services">
+    <div class="svc-bg-deco" aria-hidden="true">
+      <div class="svc-bg-deco__orb svc-bg-deco__orb--1"></div>
+      <div class="svc-bg-deco__orb svc-bg-deco__orb--2"></div>
+      <div class="svc-bg-deco__grid"></div>
+    </div>
+
+    <div class="container">
+      <header class="section-header section-header--center svc-section__header">
+        <span class="eyebrow">Servicios</span>
+        <h2>Todos los servicios que hacen falta, en cada etapa</h2>
+        <p class="svc-section__sub">La primera tienda en Tmall, el primer post viral en RED, el primer apretón con un distribuidor. Esté donde esté la marca, le atiende el mismo equipo sénior.</p>
+      </header>
+
+      <div class="svc-tabs-wrap" data-svc-sticky>
+        <div class="svc-tabs" role="tablist" aria-label="Servicios por etapa">
+          <span class="svc-tabs__indicator" aria-hidden="true"></span>
+          {servicesByStage.map((stage, i) => (
+            <button
+              type="button"
+              role="tab"
+              class={`svc-tab${i === 0 ? ' is-active' : ''}`}
+              aria-selected={i === 0 ? 'true' : 'false'}
+              aria-controls={`svc-panel-${stage.key}`}
+              data-stage={stage.key}
+              id={`svc-tab-${stage.key}`}
+            >
+              <span class="svc-tab__num" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  {stage.key === 'enter' && <><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></>}
+                  {stage.key === 'grow' && <><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-6"/></>}
+                  {stage.key === 'learn' && <><path d="M2 9 12 5l10 4-10 4z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></>}
+                </svg>
+              </span>
+              <span class="svc-tab__label">{stage.label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {servicesByStage.map((stage, i) => (
+        <div
+          class={`svc-panel${i === 0 ? ' is-active' : ''}`}
+          role="tabpanel"
+          id={`svc-panel-${stage.key}`}
+          aria-labelledby={`svc-tab-${stage.key}`}
+          data-stage={stage.key}
+        >
+          <p class="svc-panel__intro">{stage.intro}</p>
+
+          <div class="svc-bento" data-svc-bento>
+            {stage.services.map((s, idx) => (
+              <a
+                href={s.href}
+                class={`svc-tile${s.featured ? ' svc-tile--featured' : ''}`}
+                data-svc-tile
+                style={`--svc-delay: ${idx * 70}ms;`}
+              >
+                <div class="svc-tile__media">
+                  <div class="svc-tile__image" data-svc-parallax>
+                    <img src={s.image} alt={s.imageAlt} loading="lazy" decoding="async" />
+                  </div>
+                  <div class="svc-tile__media-overlay" aria-hidden="true"></div>
+                  <div class="svc-tile__media-grain" aria-hidden="true"></div>
+                  <span class="svc-tile__chip" aria-hidden="true">
+                    <span class="svc-tile__chip-icon" set:html={svcIcon[s.icon]} />
+                  </span>
+                  <span class="svc-tile__tag">{s.tagline}</span>
+                </div>
+
+                <div class="svc-tile__body">
+                  <h3 class="svc-tile__title">
+                    <span class="svc-tile__title-text">{s.title}</span>
+                    <span class="svc-tile__title-underline" aria-hidden="true"></span>
+                  </h3>
+                  <p class="svc-tile__desc">{s.desc}</p>
+
+                  <span class="svc-tile__cta">
+                    <span class="svc-tile__cta-text">Más información</span>
+                    <span class="svc-tile__cta-arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </span>
+                  </span>
+                </div>
+
+                <span class="svc-tile__spotlight" aria-hidden="true"></span>
+                <span class="svc-tile__corner" aria-hidden="true"></span>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* ---------- BEYONDCOMPASS: STANDOUT FEATURE ---------- */}
+  <section class="bc-section" id="beyondcompass" data-bc-section>
+    <div class="bc-bg" aria-hidden="true">
+      <div class="bc-bg__glow bc-bg__glow--1"></div>
+      <div class="bc-bg__glow bc-bg__glow--2"></div>
+      <div class="bc-bg__grid"></div>
+      <div class="bc-bg__scan"></div>
+    </div>
+
+    <div class="container bc-section__inner">
+      <div class="bc-copy">
+        <span class="eyebrow eyebrow--on-dark bc-copy__eyebrow">Nuestra ventaja</span>
+        <div class="bc-copy__brand">
+          <img
+            src="/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp"
+            alt="BeyondCompass"
+            class="bc-copy__logo"
+            width="420"
+            height="100"
+            loading="lazy"
+          />
+        </div>
+        <h2 class="bc-copy__title">La base de socios que montamos primero para nosotros.</h2>
+        <p class="bc-copy__lead">
+          Cada distribuidor que hemos filtrado ya. Cada TP y cada DP con los que hemos
+          rodado. Cada operador de canal al que llamamos por su nombre. Veinte años
+          de relaciones, volcados en una base de datos. Ahora puede buscar en ella usted.
+        </p>
+
+        <ul class="bc-features">
+          <li class="bc-feature">
+            <span class="bc-feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.16 0 4.13.76 5.68 2.03"/></svg>
+            </span>
+            <div class="bc-feature__text">
+              <h3>Filtrado a mano por nuestro equipo</h3>
+              <p>Cada socio pasa el corte antes de entrar. Trayectoria que se puede comprobar y referencias a las que se puede llamar.</p>
+            </div>
+          </li>
+          <li class="bc-feature">
+            <span class="bc-feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.5V19l4 2v-8.5L22 3z"/></svg>
+            </span>
+            <div class="bc-feature__text">
+              <h3>Búsqueda hecha a su medida</h3>
+              <p>Categoría, región, canal, rango de precio, cartera de marcas. Los perfiles que no cuadran caen antes de la primera llamada.</p>
+            </div>
+          </li>
+          <li class="bc-feature">
+            <span class="bc-feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </span>
+            <div class="bc-feature__text">
+              <h3>Al día cada trimestre</h3>
+              <p>El equipo que tira de BeyondCompass en proyectos vivos es el mismo que lo mantiene al día.</p>
+            </div>
+          </li>
+        </ul>
+
+        <a
+          class="bc-cta"
+          href="https://beyondcompass.beyondbordergroup.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="bc-cta__text">Explorar BeyondCompass</span>
+          <span class="bc-cta__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+          <span class="bc-cta__ring" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="bc-mock" aria-hidden="true">
+        <div class="bc-mock__floats">
+          <div class="bc-mock__float bc-mock__float--top">
+            <span class="bc-mock__float-dot"></span>
+            <span>Solo socios verificados</span>
+          </div>
+          <div class="bc-mock__float bc-mock__float--bottom">
+            <strong>20 años</strong>
+            <span>de filtrado, en una sola búsqueda</span>
+          </div>
+        </div>
+
+        <div class="bc-mock__window">
+          <div class="bc-mock__chrome">
+            <span class="bc-mock__dot bc-mock__dot--r"></span>
+            <span class="bc-mock__dot bc-mock__dot--y"></span>
+            <span class="bc-mock__dot bc-mock__dot--g"></span>
+            <span class="bc-mock__url">beyondcompass.beyondbordergroup.com</span>
+          </div>
+          <div class="bc-mock__body">
+            <div class="bc-mock__header">
+              <span class="bc-mock__brand">BeyondCompass</span>
+              <span class="bc-mock__count">
+                <span class="bc-mock__count-dot"></span>
+                Base en vivo
+              </span>
+            </div>
+            <div class="bc-mock__search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <span class="bc-mock__search-text">Distribuidores de belleza, ciudades tier 1</span>
+              <span class="bc-mock__search-cursor"></span>
+            </div>
+            <div class="bc-mock__chips">
+              <span class="bc-mock__chip is-on">Belleza</span>
+              <span class="bc-mock__chip is-on">Tier 1</span>
+              <span class="bc-mock__chip">Tmall Global</span>
+              <span class="bc-mock__chip">DTC</span>
+            </div>
+            <ul class="bc-mock__results">
+              <li class="bc-mock__result">
+                <div class="bc-mock__avatar bc-mock__avatar--1">L</div>
+                <div class="bc-mock__result-info">
+                  <span class="bc-mock__result-name">Luxe China Partners</span>
+                  <span class="bc-mock__result-meta">Belleza, premium, Tmall Global</span>
+                </div>
+                <span class="bc-mock__tag bc-mock__tag--ok">Verificado</span>
+              </li>
+              <li class="bc-mock__result">
+                <div class="bc-mock__avatar bc-mock__avatar--2">B</div>
+                <div class="bc-mock__result-info">
+                  <span class="bc-mock__result-name">BlueLine Retail Group</span>
+                  <span class="bc-mock__result-meta">FMCG, retail tier 1, Shanghái</span>
+                </div>
+                <span class="bc-mock__tag bc-mock__tag--ok">Verificado</span>
+              </li>
+              <li class="bc-mock__result">
+                <div class="bc-mock__avatar bc-mock__avatar--3">S</div>
+                <div class="bc-mock__result-info">
+                  <span class="bc-mock__result-name">Shenzhen Trade House</span>
+                  <span class="bc-mock__result-meta">Electrónica, JD Worldwide</span>
+                </div>
+                <span class="bc-mock__tag bc-mock__tag--ok">Verificado</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- ABOUT / TEAM IN CHINA ---------- */}
+  <section class="section section--tight">
+    <div class="container">
+      <div class="home-about">
+        <div class="home-about__gallery" aria-hidden="true">
+          <figure class="home-about__tile">
+            <img
+              src="/Images/team/china-office.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <figure class="home-about__tile">
+            <img
+              src="/Images/team/team-photo.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+
+        <div class="home-about__copy">
+          <span class="eyebrow eyebrow--rule">Quiénes somos</span>
+          <h2 class="home-about__title">Por qué las marcas trabajan con nosotros</h2>
+
+          <p class="home-about__lead">
+            El equipo que hay detrás de BBG se curtió años dentro de Publicis Shanghái y de
+            grupos del Fortune 500 con sede en China.
+          </p>
+          <p>
+            Estrategia de marca, compra de medios, operación de eCommerce, social
+            commerce en Douyin, WeChat y RED, localización de producto para el comprador
+            chino. Asesoría de entrada al mercado, del modelo de negocio a la elección
+            del distribuidor y al encaje regulatorio. Producción de contenido a escala,
+            tanto en estudio clásico como con pipelines de IA.
+          </p>
+          <p class="home-about__punchline">
+            Lo hacemos sobre las plataformas, con los presupuestos, bajo presión. Asesorar
+            desde el banquillo no es lo nuestro.
+          </p>
+          <p>
+            En 2023 nos independizamos para juntar estrategia y ejecución bajo un mismo
+            techo, con los mismos sénior llevando las dos. La experiencia no cambió. La
+            estructura, sí.
+          </p>
+
+          <a href="/es/quienes-somos" class="btn btn--ghost home-about__cta">Conocer al equipo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- STUDIO (Hub Studio editorial module) ---------- */}
+  <section class="section section--studio" aria-label="Hub Studio">
+    <div class="studio">
+      <div class="studio__atmos" aria-hidden="true">
+        <img src="/Images/hub-studio/backdrop.jpg" alt="" loading="lazy" decoding="async" />
+      </div>
+      <div class="studio__veil" aria-hidden="true"></div>
+      <div class="studio__grain" aria-hidden="true"></div>
+
+      <div class="studio__inner">
+
+        {/* ----- Top strip ----- */}
+        <div class="studio__topbar" data-reveal>
+          <a
+            href="https://hubstudio.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="studio__brand"
+            aria-label="Visitar Hub Studio"
+          >
+            <img
+              src="/Images/hubStudio.png"
+              alt="Hub Studio"
+              loading="lazy"
+              decoding="async"
+              width="220"
+              height="60"
+            />
+          </a>
+
+          <div class="studio__marquee" aria-hidden="true">
+            <div class="studio__marquee-track">
+              <span>小红书 Xiaohongshu</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>抖音 Douyin</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>微信 WeChat</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>天猫 Tmall</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>淘宝 Taobao</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>京东 JD</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>B站 Bilibili</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>快手 Kuaishou</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>小红书 Xiaohongshu</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>抖音 Douyin</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>微信 WeChat</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>天猫 Tmall</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>淘宝 Taobao</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>京东 JD</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>B站 Bilibili</span>
+              <span class="studio__marquee-sep">+</span>
+              <span>快手 Kuaishou</span>
+              <span class="studio__marquee-sep">+</span>
+            </div>
+          </div>
+        </div>
+
+        {/* ----- Editorial hero ----- */}
+        <div class="studio__hero" data-reveal>
+          <div class="studio__hero-copy">
+            <span class="eyebrow eyebrow--on-dark">Por dentro de Hub Studio</span>
+            <h2 class="studio__title">
+              Nuestro estudio de contenido.<br />
+              Hecho <em>en China</em>,<br />
+              para plataformas chinas.
+            </h2>
+            <p class="studio__lead">
+              Hub Studio firma todo lo que sacamos al mercado. Foto, cine, social,
+              livestream, packaging, OOH. Pensado para plataformas chinas por gente
+              que publica en ellas cada semana.
+            </p>
+
+            <div class="studio__credits">
+              <div class="studio__credit">
+                <span class="studio__credit-key">Sede</span>
+                <span class="studio__credit-val">Shanghái</span>
+              </div>
+              <span class="studio__credit-sep" aria-hidden="true"></span>
+              <div class="studio__credit">
+                <span class="studio__credit-key">Equipos</span>
+                <span class="studio__credit-val">Shanghái · Shenzhen · Changsha · Hangzhou</span>
+              </div>
+              <span class="studio__credit-sep" aria-hidden="true"></span>
+              <div class="studio__credit">
+                <span class="studio__credit-key">Pipeline</span>
+                <span class="studio__credit-val">IA + revisión humana</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="studio__hero-visual" data-parallax>
+            <figure class="studio__frame studio__frame--main">
+              <img src="/Images/hub-studio/creative.jpg" alt="" loading="lazy" decoding="async" />
+              <figcaption class="studio__frame-meta">
+                <span class="studio__rec" aria-hidden="true"></span>
+                <span class="studio__frame-meta-label">Rodando ahora</span>
+                <span class="studio__frame-meta-sub">Estudio · Shanghái</span>
+              </figcaption>
+            </figure>
+            <figure class="studio__frame studio__frame--sub" aria-hidden="true">
+              <img src="/Images/hub-studio/production.jpg" alt="" loading="lazy" decoding="async" />
+            </figure>
+            <div class="studio__brace studio__brace--tl" aria-hidden="true"></div>
+            <div class="studio__brace studio__brace--br" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        {/* ----- Capability switcher ----- */}
+        <div class="studio__switch" data-reveal>
+          <div class="studio__tabs" role="tablist" aria-label="Capacidades de Hub Studio">
+            <span class="studio__tabs-indicator" aria-hidden="true"></span>
+            <button
+              type="button"
+              class="studio__tab is-active"
+              role="tab"
+              data-tab="creative"
+              aria-selected="true"
+              aria-controls="studio-panel-creative"
+              id="studio-tab-creative"
+            >
+              <span class="studio__tab-mark" aria-hidden="true"></span>
+              <span class="studio__tab-label">Creatividad</span>
+              <span class="studio__tab-sub">Concepto · dirección</span>
+            </button>
+            <button
+              type="button"
+              class="studio__tab"
+              role="tab"
+              data-tab="production"
+              aria-selected="false"
+              aria-controls="studio-panel-production"
+              id="studio-tab-production"
+            >
+              <span class="studio__tab-mark" aria-hidden="true"></span>
+              <span class="studio__tab-label">Producción</span>
+              <span class="studio__tab-sub">Foto · cine · live</span>
+            </button>
+            <button
+              type="button"
+              class="studio__tab"
+              role="tab"
+              data-tab="ai"
+              aria-selected="false"
+              aria-controls="studio-panel-ai"
+              id="studio-tab-ai"
+            >
+              <span class="studio__tab-mark" aria-hidden="true"></span>
+              <span class="studio__tab-label">Producción IA</span>
+              <span class="studio__tab-sub">Pipelines a medida</span>
+            </button>
+          </div>
+
+          <div class="studio__panels">
+            <article
+              class="studio__panel is-active"
+              data-panel="creative"
+              id="studio-panel-creative"
+              role="tabpanel"
+              aria-labelledby="studio-tab-creative"
+            >
+              <div class="studio__panel-visual">
+                <img src="/Images/hub-studio/creative.jpg" alt="" loading="lazy" decoding="async" />
+                <div class="studio__tags">
+                  <span>Concepto</span>
+                  <span>Dirección artística</span>
+                  <span>Visuales clave</span>
+                </div>
+              </div>
+              <div class="studio__panel-copy">
+                <span class="studio__panel-kicker">
+                  <span class="studio__panel-kicker-dot" aria-hidden="true"></span>
+                  Creatividad
+                </span>
+                <h3 class="studio__panel-title">Trabajo que aguanta junto al de las marcas chinas.</h3>
+                <p class="studio__panel-body">
+                  Visuales clave, ideas de campaña, packaging, OOH. Pensados para las apps en las que entra de verdad su comprador: Xiaohongshu, Douyin, WeChat, Tmall.
+                </p>
+                <ul class="studio__list">
+                  <li>Dirección creativa al servicio de la marca</li>
+                  <li>Visuales clave para Xiaohongshu y Douyin</li>
+                  <li>Packaging y OOH que viajan</li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="studio__panel"
+              data-panel="production"
+              id="studio-panel-production"
+              role="tabpanel"
+              aria-labelledby="studio-tab-production"
+              hidden
+            >
+              <div class="studio__panel-visual">
+                <img src="/Images/hub-studio/production.jpg" alt="" loading="lazy" decoding="async" />
+                <div class="studio__tags">
+                  <span>Foto</span>
+                  <span>Cine</span>
+                  <span>Livestream</span>
+                </div>
+              </div>
+              <div class="studio__panel-copy">
+                <span class="studio__panel-kicker">
+                  <span class="studio__panel-kicker-dot" aria-hidden="true"></span>
+                  Producción
+                </span>
+                <h3 class="studio__panel-title">Equipos sobre el terreno, edición en casa.</h3>
+                <p class="studio__panel-body">
+                  Equipo base en Shanghái. Rodajes en Pekín, Shenzhen y Cantón cuando el brief lo pide. Días de estudio, días de localización, sala de edición. Todo bajo un mismo techo.
+                </p>
+                <ul class="studio__list">
+                  <li>Rodajes en estudio y en localización</li>
+                  <li>Equipo y montaje, todo en casa</li>
+                  <li>Platós de livestream y operación en directo</li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="studio__panel"
+              data-panel="ai"
+              id="studio-panel-ai"
+              role="tabpanel"
+              aria-labelledby="studio-tab-ai"
+              hidden
+            >
+              <div class="studio__panel-visual">
+                <img src="/Images/hub-studio/aigc.jpg" alt="" loading="lazy" decoding="async" />
+                <div class="studio__tags">
+                  <span>AIGC</span>
+                  <span>Últimos modelos</span>
+                  <span>Volumen</span>
+                </div>
+              </div>
+              <div class="studio__panel-copy">
+                <span class="studio__panel-kicker">
+                  <span class="studio__panel-kicker-dot" aria-hidden="true"></span>
+                  Producción IA
+                </span>
+                <h3 class="studio__panel-title">AIGC con los modelos que de verdad valen la pena.</h3>
+                <p class="studio__panel-body">
+                  Contenido generado con IA sobre los mejores modelos de texto a imagen y de vídeo del momento. Producto, moda, lifestyle, social, eCommerce de gran volumen. Cada frame pasa por ojo humano antes de salir.
+                </p>
+                <ul class="studio__list">
+                  <li>Últimos modelos de texto a imagen y de vídeo</li>
+                  <li>Estilo y mirada propios de cada marca</li>
+                  <li>Revisión humana en cada frame</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        {/* ----- Capability ribbon ----- */}
+        <div class="studio__ribbon" aria-hidden="true">
+          <div class="studio__ribbon-track">
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Foto</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Cine</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Livestream</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Pipelines IA</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Packaging</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>OOH</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Visuales de marca</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Montajes social-first</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Foto</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Cine</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Livestream</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Pipelines IA</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Packaging</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>OOH</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Visuales de marca</span>
+            <span class="studio__chip"><span class="studio__chip-bullet"></span>Montajes social-first</span>
+          </div>
+        </div>
+
+        {/* ----- Footer CTA ----- */}
+        <div class="studio__foot" data-reveal>
+          <a
+            class="studio__cta"
+            href="/es/crecer-en-china/estudio-de-produccion"
+          >
+            <span class="studio__cta-text">Ver el trabajo de producción</span>
+            <span class="studio__cta-arrow" aria-hidden="true">
+              <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7H21M21 7L15 1M21 7L15 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+          <a
+            class="studio__cta studio__cta--secondary"
+            href="https://hubstudio.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="studio__cta-text">O visite hubstudio.ai</span>
+            <span class="studio__cta-external" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- OUR WORK ---------- */}
+  <section class="section section--alt">
+    <div class="container">
+      <header class="section-header section-header--split">
+        <div>
+          <span class="eyebrow">Proyectos</span>
+          <h2>Marcas que hemos construido en China</h2>
+        </div>
+        <a href="/es/proyectos" class="btn btn--secondary btn--sm">Ver todos los casos</a>
+      </header>
+
+      <div class="grid grid-3">
+        {featuredCases.map((c) => (
+          <a href={`/es/proyectos/${c.id}`} class="work-card">
+            <div class="work-card__image">
+              <img
+                src={c.data.heroImage}
+                alt={c.data.heroImageAlt || `Caso ${c.data.brand}`}
+                loading="lazy"
+                decoding="async"
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">{c.data.category}</span>
+              <h3 class="work-card__title">{c.data.brand}</h3>
+              <p class="work-card__summary">{c.data.title}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- INSIGHTS ---------- */}
+  <section class="section">
+    <div class="container">
+      <header class="insights-header">
+        <span class="insights-header__rule" aria-hidden="true"></span>
+        <span class="eyebrow">Análisis</span>
+        <h2>Nuestra lectura del mercado chino, ahora mismo</h2>
+      </header>
+
+      <div class="grid grid-3">
+        {latestInsights.map((post) => (
+          <a href={`/es/analisis/${post.id}`} class="insight-card">
+            <div class="insight-card__image">
+              {post.data.heroImage && (
+                <img
+                  src={post.data.heroImage}
+                  alt={post.data.heroImageAlt}
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
+                />
+              )}
+            </div>
+            <div class="insight-card__body">
+              <span class="insight-card__tag">{insightCategoryEs[post.data.category] ?? post.data.category}</span>
+              <h3 class="insight-card__title">{post.data.title}</h3>
+              <div class="insight-card__meta">
+                <span>{readingTime(post.body)}</span>
+                {post.data.pubDate && (
+                  <>
+                    <span class="insight-card__meta-sep" aria-hidden="true">|</span>
+                    <span>{formatInsightDate(post.data.pubDate)}</span>
+                  </>
+                )}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- FINAL CTA CARD ---------- */}
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-card__copy">
+          <span class="eyebrow">Diga hola</span>
+          <h2>¿Pensando en China? Tomemos un café.</h2>
+          <p class="cta-card__lead">
+            Cuéntenos dónde está hoy y adónde quiere llegar. Le contesta un sénior del
+            equipo, no un chatbot ni un embudo de ventas.
+          </p>
+          <div class="cta-card__actions">
+            <a href="/es/contacto" class="btn btn--primary">Empezar la conversación</a>
+          </div>
+        </div>
+
+        <div class="cta-card__visual" aria-hidden="true">
+          <div class="hello-stack">
+            <article class="hello-card hello-card--1">
+              <header class="hello-card__head">
+                <span class="hello-card__avatar">上</span>
+                <div>
+                  <span class="hello-card__city">Shanghái</span>
+                  <span class="hello-card__role">Operaciones</span>
+                </div>
+                <span class="hello-card__dot" title="en línea"></span>
+              </header>
+              <p class="hello-card__hi"><span class="hello-card__zh">你好</span> <span class="hello-card__latin">Nǐ hǎo</span></p>
+            </article>
+
+            <article class="hello-card hello-card--2">
+              <header class="hello-card__head">
+                <span class="hello-card__avatar">港</span>
+                <div>
+                  <span class="hello-card__city">Hong Kong</span>
+                  <span class="hello-card__role">Cross-border</span>
+                </div>
+                <span class="hello-card__dot" title="en línea"></span>
+              </header>
+              <p class="hello-card__hi"><span class="hello-card__zh">你好</span> <span class="hello-card__latin">Neih hóu</span></p>
+            </article>
+
+            <article class="hello-card hello-card--3">
+              <header class="hello-card__head">
+                <span class="hello-card__avatar">P</span>
+                <div>
+                  <span class="hello-card__city">París</span>
+                  <span class="hello-card__role">Entrada al mercado</span>
+                </div>
+                <span class="hello-card__dot" title="en línea"></span>
+              </header>
+              <p class="hello-card__hi"><span class="hello-card__zh">Hola</span></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <HomeAssets />
+</Layout>

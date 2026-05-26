@@ -75,14 +75,25 @@ const sections = [
   { key: 'learn', label: t('nav.section.learn'), href: lp('/learn-china'), intro: t('nav.learn.intro'), items: learnChina },
 ];
 
+// Country flags used by the language switcher. USA stands in for English;
+// the other locales use their national flag. Inline SVG keeps the asset
+// fast, China-safe (no external CDN), and crisp at any size.
+const flags: Record<Locale, string> = {
+  en: `<svg viewBox="0 0 7410 3900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="7410" height="3900" fill="#B22234"/><g fill="#FFFFFF"><rect y="300" width="7410" height="300"/><rect y="900" width="7410" height="300"/><rect y="1500" width="7410" height="300"/><rect y="2100" width="7410" height="300"/><rect y="2700" width="7410" height="300"/><rect y="3300" width="7410" height="300"/></g><rect width="2964" height="2100" fill="#3C3B6E"/></svg>`,
+  fr: `<svg viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="1" height="2" fill="#002395"/><rect x="1" width="1" height="2" fill="#FFFFFF"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg>`,
+  de: `<svg viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="5" height="1" fill="#000000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>`,
+  es: `<svg viewBox="0 0 6 4" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="6" height="4" fill="#AA151B"/><rect y="1" width="6" height="2" fill="#F1BF00"/></svg>`,
+};
+
 // Build a sibling URL for each available locale, used by the language switcher.
 const otherLocales = (locales as readonly Locale[]).filter((l) => l !== locale);
-const switcherCurrent = { code: locale, label: localeLabels[locale], name: localeNamesNative[locale], href: localizePath(Astro.url.pathname, locale) };
+const switcherCurrent = { code: locale, label: localeLabels[locale], name: localeNamesNative[locale], href: localizePath(Astro.url.pathname, locale), flag: flags[locale] };
 const switcherOthers = otherLocales.map((l) => ({
   code: l,
   label: localeLabels[l],
   name: localeNamesNative[l],
   href: localizePath(Astro.url.pathname, l),
+  flag: flags[l],
 }));
 ---
 
@@ -157,9 +168,7 @@ const switcherOthers = otherLocales.map((l) => ({
     <div class="nav__right">
       <div class="nav__lang" data-lang-switch>
         <button class="nav__lang-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label={t('lang.switch.aria')}>
-          <svg class="nav__lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/>
-          </svg>
+          <span class="nav__lang-flag" set:html={switcherCurrent.flag} />
           <span class="nav__lang-current">{switcherCurrent.label}</span>
           <svg class="nav__lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <polyline points="6 9 12 15 18 9"/>
@@ -168,6 +177,7 @@ const switcherOthers = otherLocales.map((l) => ({
         <ul class="nav__lang-menu" role="listbox" aria-label={t('lang.switch.aria')}>
           <li role="option" aria-selected="true">
             <a class="nav__lang-option is-current" href={switcherCurrent.href} hreflang={switcherCurrent.code}>
+              <span class="nav__lang-flag" set:html={switcherCurrent.flag} />
               <span class="nav__lang-option-code">{switcherCurrent.label}</span>
               <span class="nav__lang-option-name">{switcherCurrent.name}</span>
             </a>
@@ -175,6 +185,7 @@ const switcherOthers = otherLocales.map((l) => ({
           {switcherOthers.map((opt) => (
             <li role="option" aria-selected="false">
               <a class="nav__lang-option" href={opt.href} hreflang={opt.code}>
+                <span class="nav__lang-flag" set:html={opt.flag} />
                 <span class="nav__lang-option-code">{opt.label}</span>
                 <span class="nav__lang-option-name">{opt.name}</span>
               </a>
@@ -215,10 +226,11 @@ const switcherOthers = otherLocales.map((l) => ({
       if (e.key === 'Escape' && nav.classList.contains('nav--open')) closeDrawer();
     });
     // Close when the viewport grows past the breakpoint where the desktop
-    // nav takes over. FR keeps the burger up to 1180px (longer labels), so
-    // pick the matching breakpoint per locale.
-    const isFr = document.documentElement.lang === 'fr';
-    const mq = window.matchMedia(isFr ? '(min-width: 1181px)' : '(min-width: 1025px)');
+    // nav takes over. FR, DE and ES carry longer labels than EN, so they
+    // keep the burger up to 1180px before the desktop nav takes over.
+    const htmlLang = document.documentElement.lang;
+    const needsWide = htmlLang === 'fr' || htmlLang === 'de' || htmlLang === 'es';
+    const mq = window.matchMedia(needsWide ? '(min-width: 1181px)' : '(min-width: 1025px)');
     const onMq = (e) => { if (e.matches) closeDrawer(); };
     if (mq.addEventListener) mq.addEventListener('change', onMq);
     else mq.addListener(onMq);

@@ -27,7 +27,7 @@ Toute marque qui veut installer une présence en ligne en Chine, qu'il s'agisse 
 
 ### Pourquoi cela pèse pour l'e-commerce et le marketing digital
 
-La Chine reste le premier marché e-commerce mondial, et les consommateurs y attendent un accès rapide et fiable aux sites. La licence ICP rend le site juridiquement accessible et renforce sa crédibilité. Les acheteurs chinois accordent davantage leur confiance aux entreprises en règle avec la réglementation locale. Le réflexe d'achat pèse sur la réputation de la marque. Et sur l'efficacité des campagnes.
+La Chine reste le premier marché e-commerce mondial, et les consommateurs y attendent un accès rapide et fiable aux sites. La licence ICP rend le site juridiquement accessible et solidifie sa crédibilité. Les acheteurs chinois accordent davantage leur confiance aux entreprises en règle avec la réglementation locale. Le réflexe d'achat pèse sur la réputation de la marque. Et sur l'efficacité des campagnes.
 
 ## Quel type de licence ICP pour quelle activité
 
@@ -67,7 +67,7 @@ Sites qui diffusent des publicités ou proposent des services marketing en Chine
 
 ### Réseaux sociaux et forums
 
-Plateformes qui permettent l'interaction entre utilisateurs et le partage de contenu, pages H5 et Mini Programmes WeChat compris.
+Plateformes qui autorisent l'interaction entre utilisateurs et le partage de contenu, pages H5 et Mini Programmes WeChat compris.
 
 ### Sites de contenus générés par les utilisateurs
 

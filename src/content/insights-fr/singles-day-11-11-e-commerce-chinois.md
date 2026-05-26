@@ -60,13 +60,13 @@ Le [marketing d'influence](/fr/se-developper-en-chine/influence-et-kol), ou KOL 
 
 Les influenceurs chinois cumulent un capital confiance considérable auprès de leurs abonnés, ce qui donne à leurs recommandations une force de prescription rare. Une maison de mode trouvera son public chez les créateurs lifestyle de Xiaohongshu. Un acteur tech préférera les testeurs de gadgets actifs sur Weibo.
 
-Bien calibrés, ces partenariats ouvrent l'accès à des communautés précises, déclenchent des ventes et nourrissent la fidélité. La sélection des KOL alignés avec les valeurs de la marque et la cible visée reste la condition de base.
+Bien calibrés, ces partenariats ouvrent l'accès à des communautés précises, déclenchent des ventes et alimentent la fidélité. La sélection des KOL alignés avec les valeurs de la marque et la cible visée reste la condition de base.
 
 ### c) Lancements exclusifs et offres calibrées pour l'événement
 
 Les marques qui dévoilent des éditions limitées ou des lancements réservés au 11.11 captent davantage d'attention. L'acheteur chinois traque l'exclusivité, et cette mécanique installe l'urgence dans le panier. Valentino, Burberry et plusieurs maisons de luxe ont déjà sorti des collections dédiées au 11.11, qui soutiennent à la fois les ventes et le prestige.
 
-Une localisation soignée prolonge l'effet : packaging aux couleurs du festival, collaboration avec un créateur chinois, séries spéciales. Cette logique d'exclusivité nourrit l'engagement et déclenche l'achat.
+Une localisation soignée prolonge l'effet : packaging aux couleurs du festival, collaboration avec un créateur chinois, séries spéciales. Cette logique d'exclusivité alimente l'engagement et déclenche l'achat.
 
 ### d) Le livestream, moteur de l'e-commerce chinois
 
@@ -74,7 +74,7 @@ Le livestream est devenu une pièce maîtresse du 11.11. Il rend possible une in
 
 Des animateurs comme Li Jiaqi, surnommé « le roi du rouge à lèvres », ont démontré la puissance du format en générant des milliards de yuans de ventes sur une seule soirée. Investir le livestream, c'est gagner en engagement et déclencher l'achat dans la foulée, porté par l'effervescence du festival.
 
-Sur un terrain aussi rapide que l'e-commerce chinois, le direct s'est imposé comme l'un des canaux les plus efficaces pour atteindre les consommateurs. Les marques qui s'y déploient en récoltent les fruits.
+Sur un terrain aussi rapide que l'e-commerce chinois, le direct s'est imposé en l'un des canaux les plus efficaces pour atteindre les consommateurs. Les marques qui s'y déploient en récoltent les fruits.
 
 ## Comprendre les tendances de consommation pendant le 11.11
 

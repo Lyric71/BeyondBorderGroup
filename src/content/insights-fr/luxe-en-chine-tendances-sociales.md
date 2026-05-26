@@ -30,7 +30,7 @@ Construire et tenir la fidélité reste un défi central pour les maisons de lux
 
 ## Croître grâce à la donnée
 
-Les actifs data deviennent précieux pour les maisons de luxe en quête d'accélération. Collecter et analyser les données consommateurs ouvre la voie à des insights stratégiques et à un calibrage fin des efforts [marketing](/fr/se-developper-en-chine/campagnes). Le Data Think Tank de Tencent fournit des outils pour identifier les cibles, ajuster l'allocation budgétaire et faire grimper les taux de conversion. Une boussole utile pour les marques qui naviguent sur le marché chinois.
+Les actifs data deviennent précieux pour les maisons de luxe en quête d'accélération. Collecter et analyser les données consommateurs ouvre la voie à des insights stratégiques et à un calibrage fin des efforts [marketing](/fr/se-developper-en-chine/campagnes). Le Data Think Tank de Tencent fournit des outils pour repérer les cibles, ajuster l'allocation budgétaire et faire grimper les taux de conversion. Une boussole utile pour les marques qui naviguent sur le marché chinois.
 
 ## Marketing omnicanal
 
@@ -42,7 +42,7 @@ Les KOL pèsent fortement sur les perceptions des consommateurs et sur les vente
 
 ## Le social commerce et les maisons de luxe
 
-Le social commerce monte en puissance en Chine. Le consommateur apprécie la commodité d'acheter directement via les réseaux sociaux. Cartier et Gucci s'appuient sur les solutions trafic de Tencent pour pousser leur base de clientèle et doper les ventes. Le canal social ouvre une voie directe et engageante pour toucher le consommateur et déclencher la conversion.
+Le social commerce monte en puissance en Chine. Le consommateur apprécie la commodité d'acheter directement via les réseaux sociaux. Cartier et Gucci s'appuient sur les solutions trafic de Tencent pour étendre leur base de clientèle et accélérer les ventes. Le canal social ouvre une voie directe et engageante pour toucher le consommateur et déclencher la conversion.
 
 ## Bâtir le capital marque via le contenu
 

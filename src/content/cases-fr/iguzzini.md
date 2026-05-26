@@ -23,15 +23,15 @@ order: 4
 
 ## La marque
 
-Iguzzini est un innovateur du luminaire. Depuis 1959, la maison étudie, conçoit et fabrique des systèmes d'éclairage intérieur et extérieur. Un engagement profond : mettre l'architecture en valeur et améliorer la qualité de vie, en faisant de la lumière un levier d'innovation sociale.
+Iguzzini fait partie des innovateurs du luminaire. Depuis 1959, la maison étudie, dessine et fabrique des systèmes d'éclairage intérieur et extérieur. Un engagement tenu : mettre l'architecture en valeur et élever la qualité de vie, en faisant de la lumière un levier d'innovation sociale.
 
 ## Le défi
 
-La mission portait sur le lancement et l'exploitation quotidienne de la boutique cross-border d'Iguzzini sur Tmall. Elle s'inscrivait dans une ambition plus large. La maison souhaitait consolider son rang de marque de luxe B2B liée aux projets d'architecture, tout en gagnant la considération des designers et des consommateurs chinois du luxe. Élargir le périmètre habituel du marché. Devenir une référence évidente du segment premium chinois.
+La mission portait sur le lancement et l'exploitation quotidienne de la boutique cross-border d'Iguzzini sur Tmall. Elle s'inscrivait dans une ambition plus large. La maison voulait consolider son rang de marque de luxe B2B adossée aux projets d'architecture, tout en gagnant la considération des designers et des consommateurs chinois du luxe. Élargir le périmètre habituel du marché. Devenir une référence évidente du segment premium chinois.
 
 ## Notre approche
 
-L'expérience Tmall a été conçue comme un atelier de design, et non comme un catalogue. Récits produits, collaborations avec des designers et projets d'architecture y cohabitaient avec des parcours d'achat clairs. Prescripteurs, architectes et acheteurs privés y empruntaient chacun un chemin adapté à leur intention. Campagnes, partenariats KOL et sessions de livestream ont imprimé à la boutique un rythme soutenu de temps forts tout au long de l'année. Le langage visuel, lui, est resté fidèle à la retenue européenne de la maison.
+L'expérience Tmall a été conçue comme un atelier de design, non comme un catalogue. Récits produits, collaborations avec des designers et projets d'architecture y cohabitaient avec des parcours d'achat clairs. Prescripteurs, architectes et acheteurs privés y empruntaient chacun un chemin taillé pour leur intention. Campagnes, partenariats KOL et sessions de livestream ont imprimé à la boutique un rythme soutenu de temps forts d'un bout à l'autre de l'année. Le langage visuel, lui, est resté fidèle à la retenue européenne de la maison.
 
 ## Résultats
 

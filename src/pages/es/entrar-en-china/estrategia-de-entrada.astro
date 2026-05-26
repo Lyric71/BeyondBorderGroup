@@ -1,0 +1,3218 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const phaseIcons: Record<string, string> = {
+  diagnosis: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><line x1="20" y1="20" x2="15.5" y2="15.5"/></svg>`,
+  channel: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`,
+  benchmark: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><rect x="4" y="13" width="3" height="7"/><rect x="10" y="8" width="3" height="12"/><rect x="16" y="4" width="3" height="16"/></svg>`,
+  blueprint: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="20"/><line x1="13" y1="13" x2="17" y2="13"/><line x1="13" y1="16" x2="17" y2="16"/></svg>`,
+  handshake: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 13l2-2 4 4-2 2z"/><path d="M3 12l4-4 5 5"/><path d="M21 12l-4 4-5-5"/><path d="M7 8l5 5"/></svg>`,
+  check: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>`,
+};
+
+const promises = [
+  {
+    title: 'Decisiones basadas en experiencia operativa',
+    desc: 'Cada recomendación se contrasta con las plataformas, la normativa y los socios reales con los que usted trabajará en el terreno. Nada sale de un estudio de despacho.',
+  },
+  {
+    title: 'Compromiso por fases, sin apuestas a ciegas',
+    desc: 'Avance una fase cada vez. Si la respuesta cambia, paramos. Usted controla el alcance y el gasto en todo momento.',
+  },
+  {
+    title: 'Búsqueda independiente de distribuidores',
+    desc: 'No cobramos comisión a los distribuidores. Sus intereses, no los del proveedor, están de nuestro lado de la mesa.',
+  },
+];
+
+const phases = [
+  {
+    icon: 'diagnosis',
+    phase: 'Fase uno',
+    duration: '3 a 4 semanas',
+    title: 'Diagnóstico de mercado y normativa',
+    image: '/Images/enter-china/phase-1-diagnosis.png',
+    imageAlt: 'Especialista en cumplimiento normativo revisando expedientes de un producto en una oficina de Shanghái',
+    intro:
+      'Comprobamos si su producto puede venderse legalmente por Cross-Border eCommerce y analizamos el terreno competitivo.',
+    outcome: 'Sabrá si su producto puede entrar en China legalmente, y a qué coste.',
+    does: [
+      'Estudio de elegibilidad CBEC (formulación, packaging, cumplimiento del etiquetado)',
+      'Análisis del entorno regulatorio y requisitos de cumplimiento',
+      'Mapeo del panorama competitivo y análisis de posicionamiento',
+      'Dimensionamiento de la oportunidad con proyecciones realistas de demanda',
+    ],
+    deliverables: [
+      { kind: 'doc', name: 'Check-list de viabilidad y cumplimiento' },
+      { kind: 'report', name: 'Informe de benchmark competitivo' },
+      { kind: 'sheet', name: 'Análisis de posicionamiento en precio' },
+      { kind: 'sheet', name: 'Modelo de dimensionamiento de la oportunidad' },
+    ],
+  },
+  {
+    icon: 'channel',
+    phase: 'Fase dos',
+    duration: '2 a 3 semanas',
+    title: 'Evaluación de canales y modelo de consumo',
+    image: '/Images/enter-china/phase-2-channel.png',
+    imageAlt: 'Consumidora navegando una app china de eCommerce en un café de Shanghái',
+    intro:
+      'Evaluamos las opciones de plataforma y determinamos qué modelo de distribución encaja comercialmente con su producto.',
+    outcome: 'Sabrá qué plataformas le encajan y qué modelo de distribución hace cuadrar las cuentas.',
+    does: [
+      'Evaluación de plataformas (Tmall Global, JD Worldwide, Douyin, RED)',
+      'Comparativa entre depósito aduanero y envío directo internacional',
+      'Análisis de la sensibilidad al precio del consumidor',
+      'Mapeo de los requisitos específicos por plataforma',
+    ],
+    deliverables: [
+      { kind: 'sheet', name: 'Matriz de canales con fortalezas por plataforma' },
+      { kind: 'diagram', name: 'Diagrama de flujo operativo' },
+      { kind: 'sheet', name: 'Validación de precios por modelo' },
+      { kind: 'report', name: 'Informe de insights del consumidor' },
+    ],
+  },
+  {
+    icon: 'benchmark',
+    phase: 'Fase tres',
+    duration: '4 a 6 semanas',
+    title: 'Análisis a fondo de competidores',
+    image: '/Images/enter-china/phase-3-competitors.png',
+    imageAlt: 'Analista de mercado revisando dashboards de competidores en tres pantallas, oficina nocturna en Shanghái',
+    intro:
+      'Estudiamos cómo operan las marcas líderes de su categoría en los frentes que de verdad mueven la aguja.',
+    outcome: 'Sabrá contra quién compite, cómo fijan los precios y dónde están los huecos en el mercado.',
+    does: [
+      'Análisis de la estructura del portfolio (cobertura de gama, amplitud de SKU)',
+      'Mapeo de la escala de precios (precios y mecánicas promocionales)',
+      'Evaluación de la estrategia de bundling (tácticas de ticket medio)',
+      'Auditoría de la presencia en tienda (merchandising en Tmall y JD)',
+      'Análisis de contenido y social (formatos de prueba, estrategias por plataforma)',
+    ],
+    deliverables: [
+      { kind: 'deck', name: 'Libro de benchmark competitivo (presentación)' },
+      { kind: 'doc', name: 'Scorecards de competidores (una página por marca)' },
+      { kind: 'sheet', name: 'Tablas de datos eCommerce por competidor (Excel)' },
+    ],
+  },
+  {
+    icon: 'blueprint',
+    phase: 'Fase cuatro',
+    duration: '3 a 4 semanas',
+    title: 'Modelo financiero y plan estratégico',
+    image: '/Images/enter-china/phase-4-financial.png',
+    imageAlt: 'Analista financiero revisando un modelo de Tmall Global en una pantalla de oficina, Shanghái',
+    intro:
+      'Construimos el business case completo con estructuras de coste transparentes y una recomendación lista para decidir.',
+    outcome: 'Tendrá un Go o No-Go listo para consejo, con los números detrás.',
+    does: [
+      'Modelización del coste de importación (COGS y logística transfronteriza)',
+      'Estructuras de comisiones de plataforma y pago',
+      'Comparativa de modelos de distribución (economía Sell-in vs. Sell-out)',
+      'Marco de presupuesto de marketing',
+      'Hoja de ruta a doce meses',
+    ],
+    deliverables: [
+      { kind: 'deck', name: 'China Market Entry Blueprint (presentación)' },
+      { kind: 'sheet', name: 'Modelo financiero con escenarios (Excel)' },
+      { kind: 'doc', name: 'Recomendación Go o No-Go' },
+    ],
+  },
+];
+
+const docIcons: Record<string, string> = {
+  doc: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>`,
+  sheet: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><line x1="10" y1="4" x2="10" y2="20"/></svg>`,
+  deck: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="1"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg>`,
+  report: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/><path d="M15 2v5h5"/><path d="M9 13l2 2 4-4"/></svg>`,
+  diagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M6 9v3h12V9"/><path d="M12 12v3"/></svg>`,
+};
+
+const models = [
+  {
+    name: 'Sell in',
+    tag: 'Acuerdo con distribuidor',
+    tagline: 'Valide sin comprometerse a fondo.',
+    image: '/Images/enter-china/route-sellin.png',
+    imageAlt: 'Equipo de un distribuidor chino de eCommerce revisando stock en un almacén de Shanghái',
+    desc: 'Usted vende sus productos a un distribuidor CBEC cualificado a precio mayorista. El distribuidor compra el stock, asume el riesgo operativo y gestiona toda la operación en mercado.',
+    when: 'Está validando el encaje con el mercado, no tiene equipo en Asia o su categoría exige una especialización local que prefiere alquilar antes que montar de cero.',
+    split: { you: 20, them: 80, themLabel: 'Distribuidor' },
+    dims: [
+      { label: 'Capital necesario', value: 'Bajo', level: 1 },
+      { label: 'Riesgo que asume', value: 'Bajo', level: 1 },
+      { label: 'Tiempo hasta el mercado', value: 'Rápido', level: 4 },
+      { label: 'Control de marca', value: 'Compartido', level: 2 },
+    ],
+    youGet: ['Ingresos por venta mayorista', 'Cero riesgo de inventario', 'Cobro inmediato', 'Compromiso de capital limitado'],
+    they: ['Operativa de plataforma en Tmall Global, JD Worldwide y Douyin', 'Marketing y contenidos', 'Logística y depósito aduanero', 'Atención al cliente en mandarín'],
+    pricing: 'Margen mayorista pactado de entrada. Nos paga usted por el encargo, no el distribuidor.',
+    highlight: true,
+    ctaText: 'Hablemos de sell in',
+  },
+  {
+    name: 'Sell out',
+    tag: 'Operación directa',
+    tagline: 'Apueste por el control.',
+    image: '/Images/enter-china/route-sellout.png',
+    imageAlt: 'Brand manager extranjero y operador chino revisando el dashboard de una tienda Tmall en una oficina de Shanghái',
+    desc: 'La marca opera China directamente. Financia el stock, gobierna cada punto de contacto y gestiona las relaciones con las plataformas y la logística.',
+    when: 'La demanda ya está probada, la cuenta China es una prioridad estratégica y controlar precios, datos de cliente y posicionamiento justifica el capital y la complejidad.',
+    split: { you: 100, them: 0, themLabel: 'Externo' },
+    dims: [
+      { label: 'Capital necesario', value: 'Alto', level: 5 },
+      { label: 'Riesgo que asume', value: 'Alto', level: 4 },
+      { label: 'Tiempo hasta el mercado', value: 'Lento', level: 2 },
+      { label: 'Control de marca', value: 'Total', level: 5 },
+    ],
+    youGet: ['Ingresos retail completos', 'Control total de la marca', 'Propiedad del dato de cliente', 'Autonomía en precios'],
+    they: ['Financiación de stock', 'Comisiones de plataforma y operativa', 'Ejecución de marketing y compra de medios', 'Costes operativos (almacén, devoluciones, atención al cliente)'],
+    pricing: 'Usted carga con cada línea de coste. El modelo de la Fase 4 le enseña el cuadro completo antes de comprometerse.',
+    highlight: false,
+    ctaText: 'Hablemos de sell out',
+  },
+];
+
+const faqs = [
+  {
+    cat: 'Estrategia',
+    q: '¿Qué es el Cross-Border eCommerce (CBEC)?',
+    a: 'El CBEC le permite vender al consumidor chino sin abrir una entidad china. El producto sale de un depósito aduanero o por envío directo internacional, y el despacho de aduana se hace en el momento de la compra. Le abre la puerta a JD Worldwide, Tmall Global, Douyin y RED. No le da acceso al retail físico ni al eCommerce doméstico hasta que complete el registro NMPA o SAMR. La mayoría de marcas lo usan como vía ligera para tantear la demanda antes de montar la infraestructura completa.',
+  },
+  {
+    cat: 'Estrategia',
+    q: '¿Qué modelo de distribución elijo, sell-in o sell-out?',
+    a: 'Empiece por sell-in si todavía está validando el mercado. Un distribuidor cualificado compra su stock a precio mayorista, asume el riesgo operativo y su equipo sigue centrado en el negocio global. Pase a sell-out cuando la demanda esté probada y necesite control total sobre precios, datos de cliente y experiencia de marca. Muchas marcas con las que trabajamos arrancan en sell-in entre dieciocho y veinticuatro meses, y luego dan el salto. Otras nunca lo dan, y está bien si el distribuidor rinde.',
+  },
+  {
+    cat: 'Estrategia',
+    q: '¿Y si la respuesta es "no entre en China ahora"?',
+    a: 'Pasa. Aproximadamente una de cada cuatro consultorías termina en No-Go. Mal momento, encaje de producto débil, coste regulatorio prohibitivo, categoría saturada. Le explicamos por qué, qué tendría que cambiar y cuándo conviene revisitar el caso. El análisis completo se lo queda. Un No claro le ahorra doce meses y varios millones de euros que habría quemado descubriéndolo a las malas.',
+  },
+  {
+    cat: 'Estrategia',
+    q: '¿Pueden garantizar el éxito de mi marca en China?',
+    a: 'No. Nadie puede. Lo que sí podemos decirle es si los números cuadran, si su categoría se puede ganar y qué modelo le da más probabilidades. La ejecución depende de su producto, su paciencia y su disposición a adaptarse. Cualquiera que le prometa garantías le está vendiendo un cuento.',
+  },
+  {
+    cat: 'Estrategia',
+    q: '¿Por qué trabajar con ustedes y no con una Big Four?',
+    a: 'Las Big Four entregan grandes frameworks. Nosotros entregamos la respuesta y el operador que sabe construirla. Nuestro equipo ha gestionado tiendas en Tmall, lidiado con bloqueos de plataforma, negociado con distribuidores y enviado mercancía por depósito aduanero. Cuando nos pregunta por cumplimiento CBEC, habla con alguien que ha presentado los expedientes, no con alguien que los leyó. La mayoría de nuestros encargos arrancan donde la presentación estratégica deja de servir.',
+  },
+  {
+    cat: 'Cumplimiento',
+    q: '¿Puede mi producto venderse por CBEC?',
+    a: 'Depende de lo que venda y de lo que afirme. Los cosméticos antiedad necesitan el registro especial NMPA. Los complementos alimenticios con ingredientes funcionales necesitan aprobación SAMR. Los dispositivos médicos llevan clasificaciones estrictas. Los alimentos tienen restricciones por ingrediente. La Fase 1 del encargo comprueba la elegibilidad CBEC antes de que gaste un euro más en el proyecto.',
+  },
+  {
+    cat: 'Cumplimiento',
+    q: '¿Y si no puedo usar en China los claims de mi mercado de origen?',
+    a: 'Es un problema habitual. "Diabetic wound care" se convierte en "cuidado diario de piel frágil". "Soporte inmunitario" puede exigir registro completo como alimento funcional. "Clínicamente probado" suele tener que reescribirse. Adaptamos el posicionamiento para que pase los filtros de plataforma sin renunciar al capital de marca. La clave está en saber qué pasa revisión antes de construir el lanzamiento alrededor.',
+  },
+  {
+    cat: 'Cumplimiento',
+    q: '¿Y si una plataforma ya rechazó mi producto?',
+    a: 'Recuperamos la notificación de rechazo, identificamos qué lo disparó y le decimos si un cambio de posicionamiento lo arregla, si otra plataforma funciona o si el producto realmente no puede entrar por CBEC. A veces basta con cambiar el etiquetado. A veces hay que ajustar la fórmula china. Otras veces es un No estructural. Le damos la respuesta real en lugar de fingir que el rechazo no ocurrió.',
+  },
+  {
+    cat: 'Cumplimiento',
+    q: '¿Qué pasa si la regulación china cambia a mitad del encargo?',
+    a: 'Lo señalamos, pausamos la línea de trabajo afectada y reevaluamos. Ejemplos recientes: la reforma cosmética de 2021, las actualizaciones NMPA de 2023 y las revisiones continuas de la lista positiva CBEC. Nuestros socios de cumplimiento siguen estos cambios a diario. Si una nueva norma reabre o tumba su caso, se lo decimos al instante y ajustamos el plan, no al cierre del encargo.',
+  },
+  {
+    cat: 'Proceso',
+    q: '¿Qué información necesitan de nosotros para arrancar?',
+    a: 'Fichas técnicas del producto, artworks de packaging en formato editable, el precio actual en su mercado de origen, los certificados regulatorios que ya tenga, su objetivo en China y el calendario. Cuanto más detalle de entrada, más rápida será la Fase 1. Si no lo tiene todo, no pasa nada. Trabajamos con lo que haya y le marcamos los huecos.',
+  },
+  {
+    cat: 'Proceso',
+    q: '¿Cuánto dura el encargo completo?',
+    a: 'Las Fases 1 y 2 suman entre seis y ocho semanas. La Fase 3, el análisis a fondo de competidores, corre en paralelo entre cuatro y seis semanas. La Fase 4, el modelo financiero, añade tres o cuatro semanas. Desde el arranque hasta un Go o No-Go claro, calcule entre diez y catorce semanas. Si quiere que además busquemos y negociemos un distribuidor, sume otras ocho a doce semanas.',
+  },
+  {
+    cat: 'Proceso',
+    q: '¿Qué se lleva al terminar el encargo?',
+    a: 'Un paquete listo para consejo. Informe de viabilidad y cumplimiento. Libro de benchmark competitivo con una página por competidor. Modelo financiero completo en Excel con planificación de escenarios. Estrategia de canal con recomendaciones por plataforma. Una recomendación clara Go o No-Go. Si suma la búsqueda de distribuidor, un term sheet firmado o contrato con un socio validado. Todo en inglés. Si pide los assets traducidos, también.',
+  },
+  {
+    cat: 'Proceso',
+    q: '¿Qué pasa si un hallazgo tumba el business case a mitad del proyecto?',
+    a: 'Paramos y hablamos con usted, no escribimos al expediente. Si la Fase 1 destapa un problema de cumplimiento que tumba el caso, no vamos a correr la Fase 4 para cobrarle el modelo. Reajustamos el alcance, devolvemos la parte no consumida y usted se lleva lo hecho. El encargo está estructurado por fases precisamente para esto.',
+  },
+  {
+    cat: 'Coste',
+    q: '¿Cuánto cuesta esto?',
+    a: 'Los honorarios dependen del alcance y de las fases que tome. Trabajamos a precio fijo por fase, no por horas. La mayoría de encargos completos hasta la Fase 4 acaban entre ochenta y doscientos veinte mil euros. La búsqueda de distribuidor, si la añade, se presupuesta aparte, normalmente con honorarios de proyecto más un componente de éxito. Compartimos el precio completo en la primera llamada, una vez acotado el alcance.',
+  },
+  {
+    cat: 'Coste',
+    q: '¿Cobran comisión a los distribuidores que presentan?',
+    a: 'No. Le facturamos a usted por el encargo. El distribuidor no nos paga referral fees. Es una decisión deliberada. Si cobráramos comisión, nuestro incentivo se inclinaría hacia cerrar un acuerdo en lugar de encontrar al socio adecuado. Puede verificarlo en el contrato. Algunos clientes preguntan. Nos alegra que lo hagan.',
+  },
+  {
+    cat: 'Coste',
+    q: '¿Qué presupuesto suele necesitarse para lanzar tras el encargo?',
+    a: 'Lanzamiento Cross-Border con distribuidor: desde unos doscientos mil euros de capital circulante, y a partir de ahí lo que invierta en crecimiento. Sell-out directo en Tmall Global o JD Worldwide: entre ochocientos mil y un millón y medio de euros en los primeros doce meses para tienda, contenido, medios y stock. En la Fase 4 modelamos la cifra exacta para su categoría para que no presupueste a ciegas.',
+  },
+  {
+    cat: 'Operaciones',
+    q: '¿Cómo buscan distribuidores?',
+    a: 'Nuestra red cubre belleza, tecnología de consumo, alimentación y bebida, maternoinfantil, hogar premium y categorías seleccionadas de salud. Arrancamos con una lista larga de ocho a doce nombres, filtramos por trayectoria en la categoría y credenciales de plataforma, y luego nos sentamos con usted para elegir los dos o tres finalistas con los que efectivamente se reúne. En la negociación comercial estamos de su lado de la mesa.',
+  },
+  {
+    cat: 'Operaciones',
+    q: '¿Cuánto tiempo va a consumir el encargo a mi equipo?',
+    a: 'Menos del que casi todos los clientes esperan. Unas dos horas semanales del project lead durante las Fases 1 a 3. Tres o cuatro sesiones de trabajo de media jornada repartidas a lo largo del encargo. Más implicación si añade la búsqueda de distribuidor, porque usted es quien se reúne con los socios. La carga de investigación y modelización la llevamos nosotros.',
+  },
+  {
+    cat: 'Legal',
+    q: '¿Necesito una entidad legal en China?',
+    a: 'A través de un distribuidor, no. Él usa sus propias licencias y asume la carga regulatoria. Para operar CBEC directamente, sí, aunque no tiene por qué ser su propia sociedad. La normativa china obliga a toda marca extranjera que venda por CBEC a designar un proveedor de servicios doméstico (境内服务商) que tramita ante aduanas y asume responsabilidad solidaria. Puede montar su propia WFOE o trabajar con un proveedor tercero cualificado. Le ayudamos a decidir cuál le encaja.',
+  },
+  {
+    cat: 'Legal',
+    q: '¿De quién son la estrategia y los datos al cerrar el encargo?',
+    a: 'Suyos. Todos los entregables, modelos, datos de competidores, búsqueda de distribuidores y plantillas contractuales se le transfieren al cierre. Sin cláusulas de retención sobre la estrategia. No revendemos hallazgos a competidores, y eso también queda por escrito en el contrato. Propiedad de sentido común, no de letra pequeña.',
+  },
+];
+
+const faqCategories = ['Todas', 'Estrategia', 'Cumplimiento', 'Proceso', 'Coste', 'Operaciones', 'Legal'];
+
+const contextCards = [
+  {
+    image: '/Images/enter-china/ops-strategy-desk.png',
+    alt: 'Dos operadores chinos de eCommerce revisando el dashboard de una tienda Tmall en un escritorio de Shanghái al anochecer',
+    title: 'Una estrategia que se usa, no se archiva',
+    body: 'La mayoría de presentaciones sobre entrada en China describen el mercado. La nuestra le dice qué hacer el lunes por la mañana. Cada recomendación parte de la realidad operativa, no del despacho, y se contrasta con las plataformas y los socios con los que realmente va a trabajar.',
+  },
+  {
+    image: '/Images/enter-china/team.png',
+    alt: 'Equipo de consultoría de Beyond Border Group en China',
+    title: 'Arquitectos de la entrada, no constructores',
+    body: 'Piénsenos como los arquitectos, no como la constructora. Diseñamos el plano, encontramos a los socios, montamos la estructura. Usted decide si construye y cuándo. Sin presión por lanzar, sin incentivo por inflar el caso.',
+  },
+];
+---
+
+<Layout
+  title="Estrategia de entrada en China | Cross-Border eCommerce | Beyond Border Group"
+  description="Consultoría de entrada en China para marcas internacionales. Viabilidad Cross-Border eCommerce, estrategia de canal, análisis competitivo, modelo financiero y búsqueda de distribuidores."
+>
+  <div class="mec-progress" aria-hidden="true"><div class="mec-progress__bar"></div></div>
+  <article class="mec">
+
+    {/* ---------- HERO (dark, parallax) ---------- */}
+    <section class="mec-hero" data-hero>
+      <div class="mec-hero__bg" aria-hidden="true" data-parallax>
+        <img src="/Images/enter-china/hero-tier3-mall.png" alt="Familias y compradores en un centro comercial concurrido de una ciudad china de tercer nivel" />
+      </div>
+      <div class="mec-hero__overlay" aria-hidden="true"></div>
+      <div class="mec-hero__grain" aria-hidden="true"></div>
+
+      <div class="container mec-hero__inner">
+        <nav class="mec-hero__crumbs" aria-label="Migas de pan">
+          <a href="/es">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <a href="/es#services">Entrar en China</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark mec-reveal">Estrategia de entrada</span>
+        <h1 class="mec-hero__title mec-reveal" style="--reveal-delay: 80ms;">
+          <span class="mec-hero__title-row">Entrar en China es</span>
+          <span class="mec-hero__title-row mec-hero__title-row--accent">complejo y saturado.</span>
+          <span class="mec-hero__title-row">Despejamos el camino</span>
+          <span class="mec-hero__title-row mec-hero__title-row--highlight">antes de construir.</span>
+        </h1>
+        <p class="mec-hero__lead mec-reveal" style="--reveal-delay: 200ms;">
+          Diseñamos planes de entrada en China para marcas internacionales. Viabilidad,
+          modelos financieros, análisis de competidores y acuerdos con distribuidores. La
+          arquitectura antes de la obra.
+        </p>
+        <div class="mec-hero__actions mec-reveal" style="--reveal-delay: 280ms;">
+          <a href="/es/contacto" class="btn btn--primary mec-magnetic">Hablemos</a>
+          <a href="#how-we-work" class="btn btn--ghost-light mec-magnetic">Cómo trabajamos</a>
+        </div>
+
+        <div class="mec-hero__meta mec-reveal" style="--reveal-delay: 360ms;">
+          <div class="mec-hero__meta-item">
+            <span class="mec-hero__meta-num" data-counter="15" data-suffix="+">0</span>
+            <span class="mec-hero__meta-label">años operando en China</span>
+          </div>
+          <div class="mec-hero__meta-item">
+            <span class="mec-hero__meta-num" data-counter="75" data-suffix="+">0</span>
+            <span class="mec-hero__meta-label">marcas lanzadas</span>
+          </div>
+          <div class="mec-hero__meta-item">
+            <span class="mec-hero__meta-num">Tres</span>
+            <span class="mec-hero__meta-label">oficinas: Shanghái, Hong Kong, París</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#two-truths" class="mec-hero__scroll" aria-label="Bajar a la siguiente sección">
+        <span class="mec-hero__scroll-line"></span>
+        <span class="mec-hero__scroll-text">Bajar</span>
+      </a>
+    </section>
+
+    {/* ---------- TWO TRUTHS / CONTEXT ---------- */}
+    <section id="two-truths" class="section">
+      <div class="container">
+        <header class="section-header section-header--center mec-reveal">
+          <span class="eyebrow">Nuestro enfoque</span>
+          <h2>Dos cosas que conviene saber antes de arrancar</h2>
+          <p class="section-header__lead">
+            La mayoría de marcas abordan China como abordarían cualquier mercado nuevo. China
+            no premia ese enfoque. Esto es lo que marca cómo trabajamos.
+          </p>
+        </header>
+
+        <div class="mec-context">
+          {contextCards.map((c, i) => (
+            <article class={`mec-context__card${i === 1 ? ' mec-context__card--alt' : ''} mec-reveal`} style={`--reveal-delay: ${i * 120}ms;`}>
+              <figure class="mec-context__media">
+                <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
+              </figure>
+              <div class="mec-context__body">
+                <h3>{c.title}</h3>
+                <p>{c.body}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- VALUE PROPOSITION + PROMISES ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <div class="mec-value">
+          <div class="mec-value__copy">
+            <span class="eyebrow">Por qué nos eligen las marcas</span>
+            <h2>La mayoría de consultoras sobre China nunca han operado allí. Nosotros sí.</h2>
+            <p>
+              Nuestro equipo viene de Publicis Commerce China. Construimos las prácticas
+              de eCommerce de GSK, Nestlé, Ferrero y Beiersdorf en Tmall, JD, Douyin
+              y RED.
+            </p>
+            <blockquote class="mec-value__quote">
+              Asesoramos desde la experiencia operativa, no desde informes de investigación.
+            </blockquote>
+            <p>
+              Sabemos qué distribuidores rinden porque los hemos evaluado. Sabemos qué
+              exige cada plataforma porque nosotros presentamos los expedientes.
+            </p>
+            <a href="/es/quienes-somos" class="btn btn--secondary btn--sm">Conozca al equipo</a>
+          </div>
+
+          <ul class="mec-promise">
+            <li>
+              <span class="eyebrow">Qué puede esperar</span>
+            </li>
+            {promises.map((p) => (
+              <li class="mec-promise__item">
+                <span class="mec-promise__check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                </span>
+                <div>
+                  <h4>{p.title}</h4>
+                  <p>{p.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- BUSINESS MODELS (tabbed showcase) ---------- */}
+    <section class="section mec-models-section">
+      <div class="mec-models-section__bg" aria-hidden="true">
+        <img src="/Images/enter-china/four-ways-tiles.png" alt="" loading="lazy" decoding="async" />
+      </div>
+      <div class="container">
+        <header class="section-header section-header--center mec-reveal">
+          <span class="eyebrow">Punto de decisión</span>
+          <h2>Sell in o sell out. Dos rutas para entrar en China.</h2>
+          <p class="section-header__lead">
+            Su estrategia de entrada se juega en una sola decisión: aliarse con un
+            distribuidor o montar la operación propia. Le ayudamos a elegir la ruta
+            que encaja con su capital, su calendario y su ambición.
+          </p>
+        </header>
+
+        <div class="mec-routes mec-reveal">
+          {models.map((m, i) => (
+            <article class={`mec-route${m.highlight ? ' mec-route--featured' : ''}`} style={`--reveal-delay: ${i * 100}ms;`}>
+              <div class="mec-route__media">
+                <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" />
+                <span class="mec-route__pill">{m.name}</span>
+              </div>
+
+              <div class="mec-route__body">
+                <header class="mec-route__head">
+                  <h3 class="mec-route__title">{m.tag}</h3>
+                  <p class="mec-route__tagline">{m.tagline}</p>
+                </header>
+
+                <p class="mec-route__desc">{m.desc}</p>
+
+                <div class="mec-route__split" aria-label={`Reparto de la operación: usted ${m.split.you}%, ${m.split.themLabel.toLowerCase()} ${m.split.them}%`}>
+                  <div class="mec-route__split-labels">
+                    <span><strong>Usted</strong> {m.split.you}%</span>
+                    <span class="mec-route__split-label-end">{m.split.themLabel} <strong>{m.split.them}%</strong></span>
+                  </div>
+                  <div class="mec-route__split-bar">
+                    <span class="mec-route__split-bar-you" style={`--w: ${m.split.you}%;`}></span>
+                    <span class="mec-route__split-bar-them" style={`--w: ${m.split.them}%;`}></span>
+                  </div>
+                  <span class="mec-route__split-caption">Quién opera China</span>
+                </div>
+
+                <ul class="mec-route__dims">
+                  {m.dims.map((d) => (
+                    <li class="mec-route__dim">
+                      <span class="mec-route__dim-label">{d.label}</span>
+                      <span class="mec-route__dim-dots" aria-label={`${d.value}, ${d.level} de 5`}>
+                        {[1, 2, 3, 4, 5].map((n) => (
+                          <span class={`mec-route__dim-dot${n <= d.level ? ' is-on' : ''}`}></span>
+                        ))}
+                      </span>
+                      <span class="mec-route__dim-value">{d.value}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div class="mec-route__lists">
+                  <div class="mec-route__list">
+                    <span class="mec-route__list-label">Usted recibe</span>
+                    <ul>
+                      {m.youGet.map((b) => (
+                        <li>
+                          <span class="mec-route__check" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                          </span>
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div class="mec-route__list mec-route__list--muted">
+                    <span class="mec-route__list-label">{m.name === 'Sell in' ? 'Lo gestiona el distribuidor' : 'Usted gestiona'}</span>
+                    <ul>
+                      {m.they.map((b) => (
+                        <li>
+                          <span class="mec-route__dash" aria-hidden="true"></span>
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="mec-route__when">
+                  <span class="mec-route__when-label">Le encaja cuando</span>
+                  <p>{m.when}</p>
+                </div>
+
+                <a href="/es/contacto" class="btn btn--primary mec-route__cta">
+                  {m.ctaText}
+                  <span class="mec-route__cta-arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div class="mec-matrix mec-reveal" data-matrix>
+          <div class="mec-matrix__intro">
+            <span class="eyebrow">Cómo elegir</span>
+            <h3>Una pregunta, dos respuestas</h3>
+            <p>¿Está validando o ya quiere comprometerse? Esa pregunta le marca la ruta. La mayoría de marcas arrancan por una y, cuando el caso está probado, dan el salto a la otra.</p>
+          </div>
+          <div class="mec-matrix__grid" role="table" aria-label="Matriz de selección del modelo de distribución">
+            <div class="mec-matrix__corner" role="presentation"></div>
+            <div class="mec-matrix__head" role="columnheader" data-col="1">Validando el mercado</div>
+            <div class="mec-matrix__head" role="columnheader" data-col="2">Apostando a escala</div>
+
+            <div class="mec-matrix__row-head" role="rowheader" data-row="1">Capital ligero</div>
+            <button type="button" class="mec-matrix__cell" role="cell" data-row="1" data-col="1" data-tab-jump="model-tab-0">
+              <span class="mec-matrix__cell-label">Sell in</span>
+              <span class="mec-matrix__cell-sub">El distribuidor compra, vende y asume el riesgo.</span>
+            </button>
+            <button type="button" class="mec-matrix__cell" role="cell" data-row="1" data-col="2" data-tab-jump="model-tab-0">
+              <span class="mec-matrix__cell-label">Sell in, luego transición</span>
+              <span class="mec-matrix__cell-sub">Pruebe el caso primero, internalícelo después.</span>
+            </button>
+
+            <div class="mec-matrix__row-head" role="rowheader" data-row="2">Control total</div>
+            <button type="button" class="mec-matrix__cell" role="cell" data-row="2" data-col="1" data-tab-jump="model-tab-1">
+              <span class="mec-matrix__cell-label">Sell out, piloto acotado</span>
+              <span class="mec-matrix__cell-sub">Operación directa limitada a una plataforma para empezar.</span>
+            </button>
+            <button type="button" class="mec-matrix__cell" role="cell" data-row="2" data-col="2" data-tab-jump="model-tab-1">
+              <span class="mec-matrix__cell-label">Sell out</span>
+              <span class="mec-matrix__cell-sub">Su operación. Sus datos. Su cuenta de resultados.</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- HOW WE WORK / PHASES (tabbed) ---------- */}
+    <section id="how-we-work" class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center mec-reveal">
+          <span class="eyebrow">Cómo trabajamos</span>
+          <h2>Cuatro fases, de la pregunta a la respuesta</h2>
+          <p class="section-header__lead">
+            Un encargo estructurado que le lleva de "¿deberíamos entrar en China?"
+            a un plan listo para decidir. Cada fase cierra con entregables que puede ejecutar.
+          </p>
+        </header>
+
+        <div class="mec-tabs mec-tabs--phases mec-reveal" data-tabs>
+          <div class="mec-tabs__nav mec-tabs__nav--phases" role="tablist">
+            {phases.map((p, i) => (
+              <button
+                type="button"
+                class={`mec-tabs__tab${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                aria-controls={`phase-panel-${i}`}
+                id={`phase-tab-${i}`}
+                data-tab-target={`phase-panel-${i}`}
+              >
+                <span class="mec-tabs__tab-eyebrow">{p.phase}</span>
+                <span class="mec-tabs__tab-label">{p.title}</span>
+              </button>
+            ))}
+            <span class="mec-tabs__indicator" aria-hidden="true"></span>
+          </div>
+
+          <div class="mec-tabs__panels">
+            {phases.map((p, i) => (
+              <div
+                class={`mec-tabs__panel mec-phase-panel${i === 0 ? ' is-active' : ''}`}
+                role="tabpanel"
+                id={`phase-panel-${i}`}
+                aria-labelledby={`phase-tab-${i}`}
+                hidden={i !== 0}
+              >
+                <div class="mec-phase">
+                  <figure class="mec-phase__media">
+                    <img src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
+                    <div class="mec-phase__media-overlay">
+                      <span class="mec-phase__media-phase">{p.phase}</span>
+                      <span class="mec-phase__media-duration">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                        {p.duration}
+                      </span>
+                    </div>
+                  </figure>
+
+                  <div class="mec-phase__content">
+                    <div class="mec-phase__head">
+                      <span class="mec-phase__icon" aria-hidden="true" set:html={phaseIcons[p.icon]} />
+                      <div>
+                        <span class="mec-phase__phase-label">{p.phase}</span>
+                        <h3 class="mec-phase__title">{p.title}</h3>
+                      </div>
+                    </div>
+
+                    <p class="mec-phase__intro">{p.intro}</p>
+
+                    <div class="mec-phase__outcome">
+                      <span class="mec-phase__outcome-label">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        Resultado
+                      </span>
+                      <p>{p.outcome}</p>
+                    </div>
+
+                    <div class="mec-phase__columns">
+                      <div class="mec-phase__col">
+                        <span class="mec-phase__col-label">Qué hacemos</span>
+                        <ul class="mec-phase__checks">
+                          {p.does.map((b, j) => (
+                            <li style={`--seq: ${j};`}>
+                              <span class="mec-phase__check" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                              </span>
+                              <span>{b}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div class="mec-phase__col">
+                        <span class="mec-phase__col-label">Entregables</span>
+                        <ul class="mec-phase__docs">
+                          {p.deliverables.map((d, j) => (
+                            <li class="mec-phase__doc" style={`--seq: ${j};`}>
+                              <span class="mec-phase__doc-icon" aria-hidden="true" set:html={docIcons[d.kind]} />
+                              <span class="mec-phase__doc-name">{d.name}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- BEYONDCOMPASS ---------- */}
+    <section class="section mec-compass-section">
+      <div class="container">
+        <header class="section-header section-header--center mec-reveal">
+          <span class="eyebrow">Si elige sell in</span>
+          <h2>Potenciado por BeyondCompass</h2>
+          <p class="section-header__lead">
+            En cuanto se decide por sell-in, la siguiente pregunta es a qué distribuidor chino
+            confiarle la marca. BeyondCompass es nuestra respuesta. Una base de socios construida
+            a lo largo de veinte años. Distribuidores, third-party providers en Tmall, partners
+            de Douyin, importadores. Validados a mano, conocidos en persona, mantenidos al día.
+          </p>
+        </header>
+
+        <article class="mec-compass mec-reveal">
+          <div class="mec-compass__bg" aria-hidden="true"></div>
+          <div class="mec-compass__grid">
+            <div class="mec-compass__copy">
+              <div class="mec-compass__head">
+                <div class="mec-compass__logo">
+                  <img
+                    src="/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp"
+                    alt="Logotipo de BeyondCompass"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <span class="mec-compass__chip">Producto hermano</span>
+              </div>
+
+              <p class="mec-compass__pitch">
+                Ahórrese tres meses de búsqueda. Encuentre antes al socio chino adecuado.
+              </p>
+
+              <p class="mec-compass__body">
+                La mayoría de listas de distribuidores en China están scrapeadas. Mil nombres antes
+                de comer, casi ninguno encaja con su marca. BeyondCompass sustituye eso por una
+                shortlist curada, respaldada por dos décadas de reuniones en cinco categorías:
+                belleza, alimentación y bebida, moda, wellness, mascotas.
+              </p>
+
+              <ul class="mec-compass__stats">
+                <li>
+                  <span class="mec-compass__stat-num" data-counter="20" data-suffix="+">0</span>
+                  <span class="mec-compass__stat-label">años de relaciones validadas</span>
+                </li>
+                <li>
+                  <span class="mec-compass__stat-num">Cinco</span>
+                  <span class="mec-compass__stat-label">categorías: belleza, alimentación y bebida, moda, wellness, mascotas</span>
+                </li>
+                <li>
+                  <span class="mec-compass__stat-num">Siete</span>
+                  <span class="mec-compass__stat-label">oficinas y representantes en China, Europa y EE. UU.</span>
+                </li>
+              </ul>
+
+              <div class="mec-compass__actions">
+                <a
+                  href="https://beyondcompass.beyondbordergroup.com/en"
+                  class="btn mec-compass__btn-primary"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Conocer BeyondCompass
+                  <span aria-hidden="true" class="mec-compass__btn-arrow">↗</span>
+                </a>
+                <a href="/es/contacto" class="btn mec-compass__btn-ghost">
+                  Cuéntenos su búsqueda
+                </a>
+              </div>
+            </div>
+
+            <div class="mec-compass__art" aria-hidden="true">
+              <svg viewBox="0 0 440 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Una pila de fichas de socios validados con sellos de verificación y una marca de 100% validados">
+                <defs>
+                  <pattern id="cmp-grid" width="22" height="22" patternUnits="userSpaceOnUse">
+                    <circle cx="1" cy="1" r="1" fill="#9DDBF5" fill-opacity="0.10"/>
+                  </pattern>
+                  <linearGradient id="cmp-card-soft" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#13283b"/>
+                    <stop offset="100%" stop-color="#0c1c2b"/>
+                  </linearGradient>
+                  <linearGradient id="cmp-card-active" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#269ADA"/>
+                    <stop offset="100%" stop-color="#1E7DB0"/>
+                  </linearGradient>
+                  <linearGradient id="cmp-fade" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#0e2030" stop-opacity="0"/>
+                    <stop offset="100%" stop-color="#0e2030" stop-opacity="0.85"/>
+                  </linearGradient>
+                  <filter id="cmp-glow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="6"/>
+                    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+
+                {/* Grid background */}
+                <rect width="440" height="480" fill="url(#cmp-grid)"/>
+
+                {/* Scraped pile (faded reject stack at the bottom) */}
+                <g class="cmp-scraped" opacity="0.35">
+                  <rect x="40" y="380" width="280" height="14" rx="4" fill="#3a4a5c"/>
+                  <rect x="60" y="402" width="240" height="12" rx="4" fill="#33424f"/>
+                  <rect x="48" y="422" width="270" height="11" rx="4" fill="#2b3946"/>
+                  <rect x="70" y="441" width="200" height="10" rx="4" fill="#243140"/>
+                  <line x1="40" y1="368" x2="370" y2="368" stroke="#5BC2F0" stroke-opacity="0.25" stroke-dasharray="2 4" stroke-width="1"/>
+                  <text x="40" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.12em" font-weight="700" fill="#5BC2F0" fill-opacity="0.55">SCRAPEADO, FUERA</text>
+                </g>
+                <rect x="0" y="340" width="440" height="140" fill="url(#cmp-fade)" pointer-events="none"/>
+
+                {/* Database label */}
+                <text x="40" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.18em" font-weight="700" fill="#9DDBF5">BASE BEYONDCOMPASS</text>
+                <line x1="40" y1="58" x2="200" y2="58" stroke="#9DDBF5" stroke-opacity="0.4" stroke-width="1"/>
+
+                {/* Card 4 (back) */}
+                <g class="cmp-card cmp-card--4" transform="translate(50 78)">
+                  <rect width="320" height="56" rx="10" fill="url(#cmp-card-soft)" stroke="#5BC2F0" stroke-opacity="0.18"/>
+                  <circle cx="30" cy="28" r="12" fill="#5BC2F0" fill-opacity="0.35"/>
+                  <text x="30" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#fff" fill-opacity="0.55" text-anchor="middle">M</text>
+                  <rect x="54" y="16" width="160" height="9" rx="2" fill="#fff" fill-opacity="0.45"/>
+                  <rect x="54" y="32" width="100" height="7" rx="2" fill="#fff" fill-opacity="0.22"/>
+                  <g class="cmp-check">
+                    <circle cx="290" cy="28" r="11" fill="#269ADA"/>
+                    <path d="M284 28 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </g>
+
+                {/* Card 3 */}
+                <g class="cmp-card cmp-card--3" transform="translate(35 142)">
+                  <rect width="340" height="58" rx="10" fill="url(#cmp-card-soft)" stroke="#5BC2F0" stroke-opacity="0.22"/>
+                  <circle cx="32" cy="29" r="13" fill="#5BC2F0" fill-opacity="0.45"/>
+                  <text x="32" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#fff" fill-opacity="0.7" text-anchor="middle">J</text>
+                  <rect x="58" y="16" width="180" height="9" rx="2" fill="#fff" fill-opacity="0.6"/>
+                  <rect x="58" y="33" width="120" height="7" rx="2" fill="#fff" fill-opacity="0.3"/>
+                  <g class="cmp-check">
+                    <circle cx="310" cy="29" r="12" fill="#269ADA"/>
+                    <path d="M304 29 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </g>
+
+                {/* Card 2 */}
+                <g class="cmp-card cmp-card--2" transform="translate(50 210)">
+                  <rect width="320" height="58" rx="10" fill="url(#cmp-card-soft)" stroke="#5BC2F0" stroke-opacity="0.3"/>
+                  <circle cx="32" cy="29" r="13" fill="#5BC2F0" fill-opacity="0.6"/>
+                  <text x="32" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#fff" fill-opacity="0.85" text-anchor="middle">Z</text>
+                  <rect x="58" y="16" width="170" height="9" rx="2" fill="#fff" fill-opacity="0.75"/>
+                  <rect x="58" y="33" width="110" height="7" rx="2" fill="#fff" fill-opacity="0.38"/>
+                  <g class="cmp-check">
+                    <circle cx="290" cy="29" r="12" fill="#269ADA"/>
+                    <path d="M284 29 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </g>
+
+                {/* Card 1 (front, highlighted) */}
+                <g class="cmp-card cmp-card--1" transform="translate(28 278)" filter="url(#cmp-glow)">
+                  <rect width="360" height="68" rx="12" fill="url(#cmp-card-active)"/>
+                  <circle cx="36" cy="34" r="16" fill="#fff" fill-opacity="0.95"/>
+                  <text x="36" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#1E7DB0" text-anchor="middle">天</text>
+                  <rect x="64" y="19" width="200" height="11" rx="2" fill="#fff" fill-opacity="0.96"/>
+                  <rect x="64" y="38" width="140" height="9" rx="2" fill="#fff" fill-opacity="0.65"/>
+                  <g class="cmp-check cmp-check--big">
+                    <circle cx="328" cy="34" r="15" fill="#fff"/>
+                    <path d="M320 34 l5 5 l11 -10" stroke="#269ADA" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  {/* "live / kept current" pulse dot */}
+                  <circle class="cmp-live" cx="349" cy="13" r="4" fill="#5BC2F0"/>
+                </g>
+
+                {/* 100% VALIDADOS seal - outside the cards, top-right */}
+                <g class="cmp-seal" transform="translate(322 24)">
+                  <circle cx="46" cy="46" r="46" fill="none" stroke="#5BC2F0" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="3 5"/>
+                  <circle cx="46" cy="46" r="36" fill="#0a1a28" stroke="#5BC2F0" stroke-opacity="0.6" stroke-width="1.5"/>
+                  <text x="46" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0.04em">100%</text>
+                  <line x1="22" y1="46" x2="70" y2="46" stroke="#5BC2F0" stroke-opacity="0.5" stroke-width="1"/>
+                  <text x="46" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#9DDBF5" text-anchor="middle" letter-spacing="0.22em">VALIDADOS</text>
+                </g>
+              </svg>
+
+              <ul class="mec-compass__art-key">
+                <li><span class="mec-compass__art-dot mec-compass__art-dot--vetted"></span>Validados a mano, conocidos en persona</li>
+                <li><span class="mec-compass__art-dot mec-compass__art-dot--live"></span>Relaciones mantenidas al día</li>
+                <li><span class="mec-compass__art-dot mec-compass__art-dot--reject"></span>Listas scrapeadas, fuera de nuestra base</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <div class="mec-compass-tiers">
+          <article class="mec-compass-tier mec-reveal">
+            <span class="mec-compass-tier__label">Shortlist</span>
+            <p class="mec-compass-tier__lead">De tres a cinco nombres validados, ajustados a su categoría y a su fase. En dos o tres semanas.</p>
+            <span class="mec-compass-tier__when">Cuando tiene el brief claro y necesita las presentaciones rápido.</span>
+          </article>
+          <article class="mec-compass-tier mec-reveal" style="--reveal-delay: 80ms;">
+            <span class="mec-compass-tier__label">Mapa de mercado</span>
+            <p class="mec-compass-tier__lead">De quince a veinte opciones comparables del sector. En tres a seis semanas.</p>
+            <span class="mec-compass-tier__when">Cuando quiere el cuadro completo antes de comprometerse.</span>
+          </article>
+          <article class="mec-compass-tier mec-reveal" style="--reveal-delay: 160ms;">
+            <span class="mec-compass-tier__label">Sustitución</span>
+            <p class="mec-compass-tier__lead">Cerrar una relación que no rinde. Buscar al siguiente socio. Gestionar el traspaso.</p>
+            <span class="mec-compass-tier__when">Cuando la relación ha dejado de funcionar y necesita una salida limpia.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FAQ (with category filter) ---------- */}
+    <section class="section">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center mec-reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Veinte preguntas, respuestas directas</h2>
+          <p class="section-header__lead">
+            Las preguntas prácticas que nos llegan de fundadores y operadores que
+            están sopesando una entrada en China. Filtre por tema.
+          </p>
+        </header>
+
+        <div class="mec-faq-filter mec-reveal" data-faq-filter role="tablist" aria-label="Filtrar preguntas por categoría">
+          {faqCategories.map((c, i) => (
+            <button
+              type="button"
+              class={`mec-faq-chip${i === 0 ? ' is-active' : ''}`}
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              data-faq-cat={c}
+            >
+              <span class="mec-faq-chip__label">{c}</span>
+              <span class="mec-faq-chip__count">{c === 'Todas' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="mec-faq" data-faq-list>
+          {faqs.map((f, i) => (
+            <details
+              class="mec-faq__item mec-reveal"
+              data-faq-cat={f.cat}
+              open={i === 0}
+              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+            >
+              <summary class="mec-faq__q">
+                <span class="mec-faq__cat-tag">{f.cat}</span>
+                <span class="mec-faq__q-text">{f.q}</span>
+                <span class="mec-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="mec-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="mec-cta">
+          <span class="eyebrow eyebrow--on-dark">Hablemos</span>
+          <h2 class="mec-cta__title">¿Pensando en llevar su marca a China?</h2>
+          <p class="mec-cta__lead">
+            Cuéntenos dónde está hoy y a dónde quiere llegar. Un miembro sénior del
+            equipo le contesta en menos de un día hábil. Sin embudo de ventas, sin
+            respuestas automáticas.
+          </p>
+          <div class="mec-cta__actions">
+            <a href="/es/contacto" class="btn mec-cta__btn-primary">Empecemos la conversación</a>
+            <a href="/es/proyectos" class="btn mec-cta__btn-ghost">Ver nuestros casos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    /* ---------- Container narrow helper ---------- */
+    .mec .container--narrow { max-width: 880px; }
+
+    /* ---------- REVEAL + MOTION ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .mec-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .mec-reveal.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .mec-magnetic {
+        will-change: transform;
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      }
+    }
+
+    /* ---------- SCROLL PROGRESS BAR ---------- */
+    .mec-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 1000;
+      background: transparent;
+      pointer-events: none;
+    }
+    .mec-progress__bar {
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      transition: width 80ms linear;
+    }
+
+    /* ---------- HERO ---------- */
+    .mec-hero {
+      position: relative;
+      min-height: clamp(560px, 72vh, 760px);
+      display: flex;
+      align-items: center;
+      padding: clamp(8px, 1.25vh, 16px) 0 clamp(72px, 10vh, 120px);
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    body:has(.mec-hero) .mec-hero { padding-top: clamp(140px, 14vh, 180px); }
+    @media (max-width: 1024px) {
+      body:has(.mec-hero) .mec-hero { padding-top: clamp(120px, 12vh, 148px); }
+    }
+    @media (max-width: 720px) {
+      .mec-hero { min-height: clamp(520px, 80vh, 680px); padding-bottom: clamp(64px, 9vh, 96px); }
+    }
+    .mec-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .mec-hero__bg img {
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+      transition: transform 80ms linear;
+      filter: saturate(0.95);
+    }
+    .mec-hero__overlay {
+      position: absolute; inset: 0; z-index: -2;
+      background:
+        linear-gradient(110deg,
+          rgba(6, 14, 22, 0.94) 0%,
+          rgba(6, 14, 22, 0.82) 38%,
+          rgba(6, 14, 22, 0.55) 80%,
+          rgba(6, 14, 22, 0.4) 100%),
+        radial-gradient(120% 80% at 0% 100%,
+          rgba(38, 154, 218, 0.3) 0%,
+          rgba(38, 154, 218, 0) 60%);
+    }
+    .mec-hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .mec-hero__inner { max-width: 980px; position: relative; }
+    .mec-hero__crumbs {
+      margin-bottom: var(--space-4);
+      font-size: var(--fs-small);
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .mec-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .mec-hero__crumbs a:hover { color: var(--bbg-white); }
+    .mec-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-3);
+      color: #9DDBF5;
+    }
+    .mec-hero__title {
+      font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      max-width: 22ch;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      gap: 0.05em;
+    }
+    .mec-hero__title-row { display: block; }
+    .mec-hero__title-row--accent {
+      color: #9DDBF5;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -0.018em;
+    }
+    .mec-hero__title-row--highlight {
+      position: relative;
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0 0.15em;
+    }
+    .mec-hero__title-row--highlight::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0.04em;
+      height: 0.18em;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transform-origin: left center;
+      animation: mec-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+      z-index: -1;
+    }
+    @keyframes mec-underline {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    .mec-hero__lead {
+      font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 58ch;
+      margin: 0 0 var(--space-5);
+    }
+    .mec-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
+    .mec-magnetic:hover { transform: translateY(-2px); }
+    .mec-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(var(--space-4), 4vw, var(--space-7));
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: 720px;
+    }
+    .mec-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .mec-hero__meta-num {
+      font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: "tnum";
+    }
+    .mec-hero__meta-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.02em;
+    }
+    .mec-hero__scroll {
+      position: absolute;
+      bottom: var(--space-5);
+      right: clamp(var(--space-5), 4vw, var(--space-7));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color 200ms ease;
+    }
+    .mec-hero__scroll:hover { color: var(--bbg-white); }
+    .mec-hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .mec-hero__scroll-line::after {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+      animation: mec-scroll-tick 1.8s ease-in-out infinite;
+    }
+    @keyframes mec-scroll-tick {
+      0% { top: -50%; }
+      100% { top: 100%; }
+    }
+    @media (max-width: 720px) {
+      .mec-hero__scroll { display: none; }
+      .mec-hero__meta { gap: var(--space-4); }
+    }
+
+    /* ---------- SECTION HEADER LEAD ---------- */
+    .mec .section-header__lead {
+      max-width: 60ch;
+      margin: var(--space-4) auto 0;
+      color: var(--bbg-text-muted);
+      line-height: 1.6;
+      font-size: 1.0625rem;
+    }
+
+    /* ---------- CONTEXT (two truths) ---------- */
+    .mec-context {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    .mec-context__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .mec-context__card:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .mec-context__card--alt {
+      background: var(--bbg-blue-light);
+      border-color: transparent;
+    }
+    .mec-context__media {
+      margin: 0;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: var(--bbg-border);
+    }
+    .mec-context__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 600ms var(--ease);
+    }
+    .mec-context__card:hover .mec-context__media img { transform: scale(1.03); }
+    .mec-context__body { padding: var(--space-6) var(--space-7) var(--space-7); }
+    .mec-context__card h3 {
+      font-size: clamp(1.25rem, 1vw + 0.75rem, 1.625rem);
+      line-height: 1.25;
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.01em;
+    }
+    .mec-context__card p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .mec-context { grid-template-columns: 1fr; }
+      .mec-context__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+    }
+
+    /* ---------- VALUE + PROMISES ---------- */
+    .mec-value {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .mec-value__copy h2 {
+      font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin: var(--space-3) 0 var(--space-4);
+    }
+    .mec-value__copy p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0 0 var(--space-5);
+    }
+    .mec-value__quote {
+      margin: var(--space-5) 0;
+      padding: var(--space-4) var(--space-5);
+      border-left: 3px solid var(--bbg-blue);
+      background: var(--bbg-white);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-size: 1.1875rem;
+      line-height: 1.4;
+      color: var(--bbg-ink);
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: -0.01em;
+    }
+    .mec-promise {
+      list-style: none;
+      padding: var(--space-6);
+      margin: 0;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    .mec-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .mec-promise__item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+    }
+    .mec-promise__check {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .mec-promise__check svg { width: 16px; height: 16px; }
+    .mec-promise__item h4 {
+      font-size: 1.125rem;
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .mec-promise__item p {
+      font-size: 0.975rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .mec-value { grid-template-columns: 1fr; gap: var(--space-6); }
+    }
+
+    /* ---------- MODELS SECTION BACKGROUND ---------- */
+    .mec-models-section { position: relative; isolation: isolate; overflow: hidden; }
+    .mec-models-section__bg {
+      position: absolute;
+      top: 0;
+      right: -8%;
+      width: 55%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.18;
+      mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
+      -webkit-mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .mec-models-section__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(0.6);
+    }
+    @media (max-width: 900px) { .mec-models-section__bg { display: none; } }
+
+    /* ---------- SELL IN / SELL OUT ROUTES ---------- */
+    .mec-routes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+      align-items: stretch;
+    }
+    .mec-route {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 24px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 380ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+    }
+    .mec-route:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 24px 50px -28px rgba(38, 154, 218, 0.45), 0 6px 14px -8px rgba(0, 0, 0, 0.08);
+    }
+    /* Dim the other route on hover */
+    .mec-routes:hover .mec-route { opacity: 0.7; transition: opacity 280ms ease; }
+    .mec-routes .mec-route:hover { opacity: 1; }
+    .mec-route--featured { border-color: rgba(38, 154, 218, 0.35); }
+    .mec-route--featured::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(38, 154, 218, 0.04) 0%, rgba(38, 154, 218, 0) 40%);
+      z-index: 1;
+    }
+
+    .mec-route__media {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: var(--bbg-surface);
+    }
+    .mec-route__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .mec-route:hover .mec-route__media img { transform: scale(1.04); }
+    .mec-route__pill {
+      position: absolute;
+      top: var(--space-4);
+      left: var(--space-4);
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--bbg-white);
+      background: rgba(8, 18, 28, 0.7);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 0.45em 0.9em;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .mec-route__badge {
+      position: absolute;
+      top: var(--space-4);
+      right: var(--space-4);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-blue-dark);
+      background: var(--bbg-white);
+      padding: 0.4em 0.85em;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px -4px rgba(8, 18, 28, 0.3);
+    }
+
+    .mec-route__body {
+      position: relative;
+      padding: var(--space-6) var(--space-6) var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      flex-grow: 1;
+      z-index: 2;
+    }
+    .mec-route__head { display: flex; flex-direction: column; gap: 0.4rem; }
+    .mec-route__title {
+      font-size: clamp(1.5rem, 1.4vw + 1rem, 1.875rem);
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-ink);
+      font-weight: 700;
+    }
+    .mec-route__tagline {
+      font-size: 1.0625rem;
+      line-height: 1.4;
+      color: var(--bbg-blue);
+      margin: 0;
+      font-weight: 600;
+    }
+    .mec-route__desc {
+      font-size: 0.975rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+
+    /* Control split visualisation */
+    .mec-route__split {
+      padding: var(--space-4);
+      background: var(--bbg-surface);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .mec-route__split-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--bbg-text);
+      line-height: 1.2;
+    }
+    .mec-route__split-labels strong {
+      color: var(--bbg-ink);
+      font-weight: 700;
+    }
+    .mec-route__split-label-end { color: var(--bbg-text-muted); }
+    .mec-route__split-bar {
+      display: flex;
+      height: 12px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--bbg-border);
+      gap: 2px;
+    }
+    .mec-route__split-bar-you {
+      width: var(--w, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 6px 0 0 6px;
+      animation: route-grow 800ms cubic-bezier(0.16, 1, 0.3, 1) 200ms both;
+    }
+    .mec-route__split-bar-them {
+      width: var(--w, 0%);
+      background: repeating-linear-gradient(45deg, var(--bbg-text-muted) 0 4px, rgba(107, 107, 107, 0.6) 4px 8px);
+      border-radius: 0 6px 6px 0;
+      animation: route-grow 800ms cubic-bezier(0.16, 1, 0.3, 1) 300ms both;
+    }
+    .mec-route__split-bar-you:only-child,
+    .mec-route__split-bar-them:only-child { border-radius: 6px; }
+    @keyframes route-grow {
+      from { transform: scaleX(0); transform-origin: left center; }
+      to { transform: scaleX(1); transform-origin: left center; }
+    }
+    .mec-route__split-caption {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-top: 0.2rem;
+    }
+
+    /* Dimensions grid */
+    .mec-route__dims {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .mec-route__dim {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      align-items: center;
+      gap: var(--space-3);
+      font-size: 0.875rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .mec-route__dim:last-child { border-bottom: none; }
+    .mec-route__dim-label {
+      color: var(--bbg-text);
+      font-weight: 500;
+    }
+    .mec-route__dim-dots {
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
+    }
+    .mec-route__dim-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: background 240ms ease;
+    }
+    .mec-route__dim-dot.is-on { background: var(--bbg-blue); }
+    .mec-route__dim-value {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--bbg-ink);
+      min-width: 56px;
+      text-align: right;
+      letter-spacing: -0.005em;
+      flex-shrink: 0;
+    }
+    @media (max-width: 640px) {
+      .mec-route__dim-value { min-width: 0; font-size: 0.8rem; }
+    }
+
+    /* Lists block */
+    .mec-route__lists {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .mec-route__list-label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-3);
+    }
+    .mec-route__list--muted .mec-route__list-label { color: var(--bbg-text-muted); }
+    .mec-route__list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .mec-route__list li {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 0.5rem;
+      align-items: start;
+      font-size: 0.875rem;
+      line-height: 1.45;
+      color: var(--bbg-text);
+    }
+    .mec-route__check {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .mec-route__check svg { width: 11px; height: 11px; }
+    .mec-route__dash {
+      display: inline-block;
+      width: 12px;
+      height: 2px;
+      background: var(--bbg-text-muted);
+      border-radius: 2px;
+      margin-top: 0.6em;
+      justify-self: center;
+    }
+
+    /* Best when callout */
+    .mec-route__when {
+      padding: var(--space-4);
+      background: var(--bbg-blue-light);
+      border-radius: 12px;
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .mec-route__when-label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.4rem;
+    }
+    .mec-route__when p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--bbg-ink);
+    }
+
+    /* CTA */
+    .mec-route__cta {
+      align-self: flex-start;
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .mec-route__cta-arrow {
+      display: inline-block;
+      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .mec-route__cta:hover .mec-route__cta-arrow { transform: translateX(4px); }
+
+    @media (max-width: 1024px) {
+      .mec-routes { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .mec-route__lists { grid-template-columns: 1fr; }
+      .mec-route__body { padding: var(--space-5); }
+    }
+
+    /* ---------- BUSINESS MODELS TABS ---------- */
+    .mec-tabs {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px -28px rgba(8, 18, 28, 0.18);
+    }
+    .mec-tabs__nav {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      background: linear-gradient(180deg, var(--bbg-surface) 0%, var(--bbg-white) 100%);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .mec-tabs__tab {
+      position: relative;
+      background: transparent;
+      border: none;
+      padding: var(--space-5) var(--space-5);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      color: var(--bbg-text-muted);
+      transition: color 240ms ease, background 240ms ease;
+      border-right: 1px solid var(--bbg-border);
+      font-family: inherit;
+    }
+    .mec-tabs__tab:last-child { border-right: none; }
+    .mec-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .mec-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .mec-tabs__tab-label {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+      line-height: 1.2;
+    }
+    .mec-tabs__tab-tag {
+      font-size: 0.85rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.35;
+    }
+    .mec-tabs__tab.is-active .mec-tabs__tab-tag { color: var(--bbg-blue); }
+    .mec-tabs__tab-pop {
+      position: absolute;
+      top: var(--space-3);
+      right: var(--space-3);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .mec-tabs__indicator {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 50%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px 2px 0 0;
+      transform: translateX(0);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    .mec-tabs__panels { background: var(--bbg-white); }
+    .mec-tabs__panel {
+      padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
+      animation: mec-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes mec-tab-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .mec-tabs__panel[hidden] { display: none; }
+    .mec-tabs__panel-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(var(--space-5), 3vw, var(--space-7));
+      align-items: start;
+    }
+    .mec-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
+    .mec-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .mec-tabs__pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.35em 0.85em;
+      border-radius: 999px;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      letter-spacing: 0.01em;
+    }
+    .mec-tabs__pill--soft {
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+    }
+    .mec-tabs__title {
+      font-size: clamp(1.625rem, 1.8vw + 1rem, 2.25rem);
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -0.015em;
+    }
+    .mec-tabs__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .mec-tabs__when {
+      padding: var(--space-4);
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .mec-tabs__when-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.35rem;
+    }
+    .mec-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
+    .mec-tabs__body { display: flex; flex-direction: column; gap: var(--space-4); }
+    .mec-tabs__list-wrap {
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+    }
+    .mec-tabs__list-wrap--muted { background: var(--bbg-white); border: 1px solid var(--bbg-border); }
+    .mec-tabs__list-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .mec-tabs__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .mec-tabs__list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .mec-tabs__check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .mec-tabs__check svg { width: 12px; height: 12px; }
+    .mec-tabs__list--muted li { grid-template-columns: 14px 1fr; }
+    .mec-tabs__dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--bbg-text-muted);
+      margin-top: 0.55em;
+      margin-left: 3px;
+    }
+    .mec-tabs__pricing {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-4);
+      padding: var(--space-4);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.12) 100%);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(38, 154, 218, 0.2);
+    }
+    .mec-tabs__pricing-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue-dark);
+      flex-shrink: 0;
+    }
+    .mec-tabs__pricing-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      line-height: 1.4;
+    }
+    @media (max-width: 1024px) {
+      .mec-tabs__nav { grid-template-columns: repeat(2, 1fr); }
+      .mec-tabs__panel-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .mec-tabs__nav { grid-template-columns: 1fr; }
+      .mec-tabs__tab { border-right: none; border-bottom: 1px solid var(--bbg-border); }
+      .mec-tabs__indicator { display: none; }
+    }
+
+    /* ---------- PHASE PANEL (new visual layout) ---------- */
+    .mec-phase-panel { padding: 0 !important; }
+    .mec-phase {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: 0;
+      align-items: stretch;
+    }
+    .mec-phase__media {
+      position: relative;
+      margin: 0;
+      min-height: 100%;
+      overflow: hidden;
+      background: var(--bbg-surface);
+    }
+    .mec-phase__media img {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+    .mec-phase__media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(8, 18, 28, 0) 50%, rgba(8, 18, 28, 0.75) 100%);
+      pointer-events: none;
+    }
+    .mec-phase__media-overlay {
+      position: absolute;
+      left: var(--space-5);
+      bottom: var(--space-5);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+      z-index: 2;
+    }
+    .mec-phase__media-phase {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--bbg-white);
+      background: rgba(8, 18, 28, 0.75);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 0.45em 0.85em;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .mec-phase__media-duration {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--bbg-blue-dark);
+      background: var(--bbg-white);
+      padding: 0.4em 0.85em;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px -4px rgba(8, 18, 28, 0.35);
+    }
+    .mec-phase__media-duration svg { width: 14px; height: 14px; }
+
+    .mec-phase__content {
+      padding: clamp(var(--space-5), 2.4vw + 1rem, var(--space-7));
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .mec-phase__head {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+    }
+    .mec-phase__icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      color: var(--bbg-blue);
+      box-shadow: inset 0 0 0 1px rgba(38, 154, 218, 0.15);
+    }
+    .mec-phase__icon svg { width: 26px; height: 26px; }
+    .mec-phase__phase-label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.3rem;
+    }
+    .mec-phase__title {
+      font-size: clamp(1.375rem, 1.4vw + 1rem, 1.875rem);
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-ink);
+      font-weight: 700;
+    }
+    .mec-phase__intro {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+
+    /* Outcome callout */
+    .mec-phase__outcome {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: var(--space-4);
+      padding: var(--space-4);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.12) 100%);
+      border-radius: 14px;
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .mec-phase__outcome-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-blue-dark);
+    }
+    .mec-phase__outcome-label svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--bbg-blue);
+      stroke: var(--bbg-blue);
+    }
+    .mec-phase__outcome p {
+      margin: 0;
+      font-size: 0.98rem;
+      line-height: 1.45;
+      color: var(--bbg-ink);
+      font-weight: 600;
+      letter-spacing: -0.005em;
+    }
+
+    /* Two columns: checks + docs */
+    .mec-phase__columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-5);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .mec-phase__col-label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .mec-phase__checks {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .mec-phase__checks li {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 0.55rem;
+      align-items: start;
+      font-size: 0.92rem;
+      line-height: 1.45;
+      color: var(--bbg-text);
+      animation: phase-fade-in 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation-delay: calc(var(--seq, 0) * 90ms + 80ms);
+    }
+    .mec-phase__check {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .mec-phase__check svg { width: 11px; height: 11px; }
+
+    /* Document tiles */
+    .mec-phase__docs {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .mec-phase__doc {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 0.7rem;
+      align-items: center;
+      padding: 0.7rem 0.9rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 10px;
+      transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+      animation: phase-fade-in 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation-delay: calc(var(--seq, 0) * 90ms + 200ms);
+    }
+    .mec-phase__doc:hover {
+      border-color: var(--bbg-blue);
+      transform: translateX(2px);
+      box-shadow: 0 8px 20px -12px rgba(38, 154, 218, 0.4);
+    }
+    .mec-phase__doc-icon {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .mec-phase__doc-icon svg { width: 18px; height: 18px; }
+    .mec-phase__doc-name {
+      font-size: 0.9rem;
+      line-height: 1.35;
+      color: var(--bbg-ink);
+      font-weight: 600;
+      letter-spacing: -0.005em;
+    }
+
+    @keyframes phase-fade-in {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .mec-phase__checks li,
+      .mec-phase__doc { animation: none; }
+    }
+
+    @media (max-width: 1024px) {
+      .mec-phase { grid-template-columns: 1fr; }
+      .mec-phase__media img { min-height: 0; aspect-ratio: 16 / 9; }
+    }
+    @media (max-width: 600px) {
+      .mec-phase__columns { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- TABS - PHASES VARIANT (4 columns, eyebrow above label) ---------- */
+    .mec-tabs__nav--phases { grid-template-columns: repeat(4, 1fr); }
+    .mec-tabs__nav--phases + .mec-tabs__panels {
+      /* keep panel layout shared */
+    }
+    .mec-tabs--phases .mec-tabs__tab { gap: 0.5rem; }
+    .mec-tabs__tab-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      line-height: 1;
+    }
+    .mec-tabs__tab:not(.is-active) .mec-tabs__tab-eyebrow {
+      color: var(--bbg-text-muted);
+    }
+    .mec-tabs--phases .mec-tabs__tab-label {
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+    .mec-phase-head {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    .mec-phase-head__icon {
+      display: inline-flex;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+      box-shadow: inset 0 0 0 1px rgba(38, 154, 218, 0.15);
+    }
+    .mec-phase-head__icon svg { width: 22px; height: 22px; }
+    .mec-phase-head .mec-tabs__title { margin: 0; }
+
+    @media (max-width: 1024px) {
+      .mec-tabs__nav--phases { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .mec-tabs__nav--phases { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- MATRIX ---------- */
+    .mec-matrix {
+      margin-top: var(--space-8);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: clamp(var(--space-5), 3vw + 1rem, var(--space-7));
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+    }
+    .mec-matrix__intro { text-align: center; margin-bottom: var(--space-6); }
+    .mec-matrix__intro h3 {
+      font-size: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
+      margin: var(--space-2) 0 var(--space-3);
+      letter-spacing: -0.01em;
+    }
+    .mec-matrix__intro p {
+      color: var(--bbg-text);
+      max-width: 56ch;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .mec-matrix__grid {
+      display: grid;
+      grid-template-columns: minmax(140px, 0.8fr) 1fr 1fr;
+      gap: 1px;
+      background: var(--bbg-border);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .mec-matrix__corner,
+    .mec-matrix__head,
+    .mec-matrix__row-head,
+    .mec-matrix__cell {
+      background: var(--bbg-white);
+      padding: var(--space-4);
+    }
+    .mec-matrix__corner { background: var(--bbg-surface); }
+    .mec-matrix__head {
+      background: var(--bbg-surface);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .mec-matrix__row-head {
+      background: var(--bbg-surface);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      display: flex;
+      align-items: center;
+    }
+    .mec-matrix__cell {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      transition: background var(--dur) var(--ease);
+      cursor: pointer;
+      border: none;
+      text-align: left;
+      font-family: inherit;
+    }
+    .mec-matrix__cell:hover { background: var(--bbg-blue-light); }
+    .mec-matrix__cell:focus-visible {
+      outline: 3px solid var(--bbg-blue);
+      outline-offset: -3px;
+    }
+    .mec-matrix__cell-label {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+    }
+    .mec-matrix__cell-sub {
+      font-size: 0.9rem;
+      color: var(--bbg-text);
+      line-height: 1.45;
+    }
+    .mec-matrix__note {
+      margin: var(--space-5) auto 0;
+      max-width: 68ch;
+      text-align: center;
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 0.975rem;
+    }
+    .mec-matrix__grid.is-hover-row .mec-matrix__cell { opacity: 0.4; }
+    .mec-matrix__grid.is-hover-row .mec-matrix__cell.is-row-active,
+    .mec-matrix__grid.is-hover-row .mec-matrix__cell.is-col-active { opacity: 1; background: var(--bbg-blue-light); }
+    .mec-matrix__grid.is-hover-row .mec-matrix__row-head,
+    .mec-matrix__grid.is-hover-row .mec-matrix__head { opacity: 0.4; }
+    .mec-matrix__grid.is-hover-row .mec-matrix__row-head.is-active,
+    .mec-matrix__grid.is-hover-row .mec-matrix__head.is-active {
+      opacity: 1;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    @media (max-width: 720px) {
+      .mec-matrix__grid { grid-template-columns: 1fr 1fr; }
+      .mec-matrix__corner { display: none; }
+      .mec-matrix__head { font-size: 0.75rem; padding: var(--space-3); }
+      .mec-matrix__row-head {
+        grid-column: 1 / -1;
+        background: var(--bbg-blue-light);
+        color: var(--bbg-blue-dark);
+        justify-content: center;
+        padding: var(--space-3);
+      }
+    }
+
+    /* ---------- JOURNEY (vertical timeline) ---------- */
+    .mec-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .mec-journey-section__bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      opacity: 0.10;
+      pointer-events: none;
+    }
+    .mec-journey-section__bg::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, var(--bbg-surface) 0%, rgba(247, 249, 251, 0.6) 40%, rgba(247, 249, 251, 0.9) 100%);
+    }
+    .mec-journey-section__bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      filter: saturate(0.55);
+    }
+
+    .mec-journey {
+      position: relative;
+      max-width: 920px;
+      margin: 0 auto;
+      padding-left: 64px;
+    }
+    .mec-journey__rail {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 26px;
+      width: 2px;
+    }
+    .mec-journey__rail-track {
+      position: absolute; inset: 0;
+      background: var(--bbg-border);
+      border-radius: 2px;
+    }
+    .mec-journey__rail-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--journey-progress, 0%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transition: height 120ms linear;
+      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+    }
+    .mec-journey__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-7);
+    }
+    .mec-journey__item { position: relative; }
+    .mec-journey__dot {
+      position: absolute;
+      left: -64px;
+      top: 8px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--bbg-white);
+      border: 2px solid var(--bbg-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: border-color 320ms ease;
+    }
+    .mec-journey__dot-inner {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: background 320ms ease, transform 320ms ease;
+    }
+    .mec-journey__item.is-active .mec-journey__dot { border-color: var(--bbg-blue); }
+    .mec-journey__item.is-active .mec-journey__dot-inner {
+      background: var(--bbg-blue);
+      transform: scale(1.1);
+      box-shadow: 0 0 0 4px var(--bbg-blue-light);
+    }
+    .mec-journey__phase {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+      transition: color 320ms ease;
+    }
+    .mec-journey__item.is-active .mec-journey__phase { color: var(--bbg-blue); }
+    .mec-journey__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6) var(--space-7);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .mec-journey__item:hover .mec-journey__card,
+    .mec-journey__item.is-active .mec-journey__card {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      transform: translateX(4px);
+    }
+    .mec-journey__card-head {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+    }
+    .mec-journey__icon {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .mec-journey__icon svg { width: 24px; height: 24px; }
+    .mec-journey__title {
+      font-size: clamp(1.25rem, 1vw + 0.875rem, 1.625rem);
+      line-height: 1.2;
+      margin: 0;
+      letter-spacing: -0.01em;
+      font-weight: 700;
+      color: var(--bbg-ink);
+    }
+    .mec-journey__desc {
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .mec-journey__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-5);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .mec-journey__label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .mec-journey__label--blue { color: var(--bbg-blue); }
+    .mec-journey__bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .mec-journey__bullets li {
+      position: relative;
+      padding-left: 1.25rem;
+      color: var(--bbg-text);
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    .mec-journey__bullets li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+    }
+    .mec-journey__bullets--blue li::before { background: var(--bbg-blue); }
+
+    @media (max-width: 720px) {
+      .mec-journey { padding-left: 40px; }
+      .mec-journey__rail { left: 16px; }
+      .mec-journey__dot { left: -40px; width: 36px; height: 36px; top: 4px; }
+      .mec-journey__dot-inner { width: 12px; height: 12px; }
+      .mec-journey__card { padding: var(--space-5); }
+      .mec-journey__grid { grid-template-columns: 1fr; gap: var(--space-4); }
+    }
+
+    /* ---------- BEYONDCOMPASS ---------- */
+    .mec-compass {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      border-radius: 24px;
+      color: var(--bbg-white);
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8));
+      box-shadow: 0 24px 60px -30px rgba(8, 18, 28, 0.55);
+    }
+    .mec-compass__bg {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(80% 60% at 100% 0%, rgba(38, 154, 218, 0.42) 0%, rgba(38, 154, 218, 0) 60%),
+        radial-gradient(60% 50% at 0% 100%, rgba(38, 154, 218, 0.22) 0%, rgba(38, 154, 218, 0) 60%),
+        linear-gradient(160deg, #0e2030 0%, #08141f 60%);
+    }
+    .mec-compass__grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+      gap: clamp(var(--space-5), 3vw, var(--space-7));
+      align-items: center;
+    }
+    .mec-compass__copy {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+      min-width: 0;
+    }
+    .mec-compass__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+    }
+    .mec-compass__logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bbg-white);
+      border-radius: 12px;
+      padding: 10px 18px;
+      box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.35);
+      height: 56px;
+    }
+    .mec-compass__logo img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    @media (max-width: 1024px) {
+      .mec-compass__grid { grid-template-columns: 1fr; }
+    }
+    .mec-compass__chip {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9DDBF5;
+      background: rgba(38, 154, 218, 0.18);
+      padding: 0.4em 0.85em;
+      border-radius: 999px;
+      border: 1px solid rgba(155, 217, 245, 0.25);
+    }
+    .mec-compass__pitch {
+      font-size: clamp(1.5rem, 1.4vw + 1rem, 2.125rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--bbg-white);
+      font-weight: 700;
+      margin: 0;
+      max-width: 22ch;
+    }
+    .mec-compass__body {
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.82);
+      margin: 0;
+      max-width: 64ch;
+    }
+    .mec-compass__stats {
+      list-style: none;
+      padding: var(--space-5) 0 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .mec-compass__stats li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .mec-compass__stat-num {
+      font-size: clamp(1.75rem, 1.4vw + 1rem, 2.375rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: #9DDBF5;
+      font-feature-settings: "tnum";
+    }
+    .mec-compass__stat-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.01em;
+      line-height: 1.4;
+    }
+    .mec-compass__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-top: var(--space-3);
+    }
+    .mec-compass__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-ink);
+      border: 1px solid var(--bbg-white);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .mec-compass__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .mec-compass__btn-arrow {
+      display: inline-block;
+      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .mec-compass__btn-primary:hover .mec-compass__btn-arrow {
+      transform: translate(2px, -2px);
+    }
+    .mec-compass__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: var(--bbg-white);
+    }
+    .mec-compass__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+    @media (max-width: 1024px) {
+      .mec-compass__stats { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .mec-compass__stats { grid-template-columns: 1fr; gap: var(--space-4); }
+    }
+
+    /* ---------- COMPASS ART (vetted database SVG) ---------- */
+    .mec-compass__art {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      min-width: 0;
+    }
+    .mec-compass__art > svg {
+      width: 100%;
+      height: auto;
+      max-width: 480px;
+      margin-left: auto;
+      display: block;
+      filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.4));
+    }
+    .mec-compass__art .cmp-card {
+      animation: cmp-fade-in 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .mec-compass__art .cmp-card--4 { animation-delay: 80ms; }
+    .mec-compass__art .cmp-card--3 { animation-delay: 200ms; }
+    .mec-compass__art .cmp-card--2 { animation-delay: 320ms; }
+    .mec-compass__art .cmp-card--1 { animation-delay: 460ms; }
+    .mec-compass__art .cmp-check {
+      animation: cmp-fade-in 500ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+    .mec-compass__art .cmp-card--4 .cmp-check { animation-delay: 360ms; }
+    .mec-compass__art .cmp-card--3 .cmp-check { animation-delay: 480ms; }
+    .mec-compass__art .cmp-card--2 .cmp-check { animation-delay: 600ms; }
+    .mec-compass__art .cmp-card--1 .cmp-check { animation-delay: 740ms; }
+    .mec-compass__art .cmp-seal {
+      animation: cmp-fade-in 800ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+    }
+    .mec-compass__art .cmp-live {
+      animation: cmp-live-pulse 2.2s ease-in-out 1.5s infinite;
+    }
+    @keyframes cmp-fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes cmp-live-pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .mec-compass__art .cmp-card,
+      .mec-compass__art .cmp-check,
+      .mec-compass__art .cmp-seal,
+      .mec-compass__art .cmp-live { animation: none; }
+    }
+    .mec-compass__art-key {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      max-width: 480px;
+      margin-left: auto;
+      width: 100%;
+    }
+    .mec-compass__art-key li {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.4;
+    }
+    .mec-compass__art-dot {
+      flex-shrink: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      box-shadow: 0 0 0 3px rgba(38, 154, 218, 0.2);
+    }
+    .mec-compass__art-dot--vetted { background: #fff; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15); }
+    .mec-compass__art-dot--live { background: #5BC2F0; box-shadow: 0 0 0 3px rgba(91, 194, 240, 0.25); }
+    .mec-compass__art-dot--reject {
+      background: transparent;
+      border: 1px dashed rgba(255, 255, 255, 0.4);
+      box-shadow: none;
+    }
+    @media (max-width: 900px) {
+      .mec-compass__art > svg { max-width: 100%; margin: 0 auto; }
+      .mec-compass__art-key { margin: 0 auto; }
+    }
+
+    /* ---------- COMPASS TIERS ---------- */
+    .mec-compass-tiers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+      margin-top: var(--space-5);
+    }
+    .mec-compass-tier {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+    }
+    .mec-compass-tier::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: var(--space-6);
+      right: var(--space-6);
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      transform: scaleX(0.3);
+      transform-origin: left center;
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      border-radius: 0 0 2px 2px;
+    }
+    .mec-compass-tier:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+    }
+    .mec-compass-tier:hover::before { transform: scaleX(1); }
+    .mec-compass-tier__label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+    }
+    .mec-compass-tier__lead {
+      font-size: 1.0625rem;
+      line-height: 1.5;
+      color: var(--bbg-ink);
+      font-weight: 600;
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+    .mec-compass-tier__when {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      color: var(--bbg-text-muted);
+      margin-top: auto;
+    }
+    @media (max-width: 1024px) {
+      .mec-compass-tiers { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .mec-compass-tiers { grid-template-columns: 1fr; }
+    }
+
+    /* ---------- FAQ FILTER ---------- */
+    .mec-faq-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: var(--space-6);
+    }
+    .mec-faq-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--bbg-text);
+      transition: all 220ms ease;
+      font-family: inherit;
+    }
+    .mec-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .mec-faq-chip.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    .mec-faq-chip__count {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: all 220ms ease;
+    }
+    .mec-faq-chip:hover .mec-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .mec-faq-chip.is-active .mec-faq-chip__count {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--bbg-white);
+    }
+
+    /* ---------- FAQ ITEMS ---------- */
+    .mec-faq {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .mec-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .mec-faq__item:hover {
+      transform: translateX(2px);
+      border-color: rgba(38, 154, 218, 0.4);
+    }
+    .mec-faq__item[open] {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+    }
+    .mec-faq__item.is-hidden { display: none; }
+    .mec-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .mec-faq__q::-webkit-details-marker { display: none; }
+    .mec-faq__q::marker { display: none; }
+    .mec-faq__item:hover .mec-faq__q { color: var(--bbg-blue); }
+    .mec-faq__cat-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 0.25em 0.6em;
+      border-radius: 4px;
+      margin-right: var(--space-3);
+      flex-shrink: 0;
+    }
+    .mec-faq__q-text { flex-grow: 1; }
+    .mec-faq__icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), color var(--dur) var(--ease), background var(--dur) var(--ease);
+    }
+    .mec-faq__item[open] .mec-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-white);
+      background: var(--bbg-blue);
+    }
+    .mec-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+      animation: mec-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes mec-faq-in {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .mec-faq__a p { margin: 0; }
+
+    /* ---------- FINAL CTA ---------- */
+    .mec-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .mec-cta::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .mec-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .mec-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .mec-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 52ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .mec-cta__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .mec-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .mec-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .mec-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .mec-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
+
+  <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // 1. Reveal-on-scroll
+      const revealEls = document.querySelectorAll('.mec-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      // 2. Hero meta counters
+      const counters = document.querySelectorAll('[data-counter]');
+      if (counters.length && !reduced && 'IntersectionObserver' in window) {
+        const animate = (el) => {
+          const target = parseFloat(el.dataset.counter || '0');
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(target * eased);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        };
+        const counterIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((el) => counterIo.observe(el));
+      } else {
+        counters.forEach((el) => {
+          el.textContent = (el.dataset.counter || '0') + (el.dataset.suffix || '');
+        });
+      }
+
+      // 3. Hero parallax + scroll progress bar
+      const parallaxEl = document.querySelector('[data-parallax]');
+      const progressEl = document.querySelector('.mec-progress__bar');
+      const heroEl = document.querySelector('[data-hero]');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          if (parallaxEl && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // 4. Smooth scroll for in-page anchors
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+
+      // 5. FAQ accordion behaviour: close others when one opens
+      const faqItems = document.querySelectorAll('.mec-faq__item');
+      faqItems.forEach((item) => {
+        item.addEventListener('toggle', () => {
+          if (item.open) {
+            faqItems.forEach((other) => {
+              if (other !== item && other.open) other.open = false;
+            });
+          }
+        });
+      });
+
+      // 6. Tabs (business models + phases) - supports multiple [data-tabs] instances
+      document.querySelectorAll('[data-tabs]').forEach((tabsRoot) => {
+        const tabs = Array.from(tabsRoot.querySelectorAll(':scope > .mec-tabs__nav .mec-tabs__tab'));
+        const panels = Array.from(tabsRoot.querySelectorAll(':scope > .mec-tabs__panels > .mec-tabs__panel'));
+        const indicator = tabsRoot.querySelector(':scope > .mec-tabs__nav > .mec-tabs__indicator');
+        if (!tabs.length || !panels.length) return;
+        const setActive = (tab) => {
+          tabs.forEach((t) => {
+            const active = t === tab;
+            t.classList.toggle('is-active', active);
+            t.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          const targetId = tab.getAttribute('data-tab-target');
+          panels.forEach((p) => {
+            const active = p.id === targetId;
+            p.classList.toggle('is-active', active);
+            if (active) p.removeAttribute('hidden');
+            else p.setAttribute('hidden', '');
+          });
+          if (indicator) {
+            const idx = tabs.indexOf(tab);
+            const w = 100 / tabs.length;
+            indicator.style.width = w + '%';
+            indicator.style.transform = `translateX(${idx * 100}%)`;
+          }
+        };
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => setActive(tab));
+          tab.addEventListener('keydown', (e) => {
+            const idx = tabs.indexOf(tab);
+            if (e.key === 'ArrowRight') {
+              e.preventDefault();
+              const next = tabs[(idx + 1) % tabs.length];
+              next.focus();
+              setActive(next);
+            } else if (e.key === 'ArrowLeft') {
+              e.preventDefault();
+              const prev = tabs[(idx - 1 + tabs.length) % tabs.length];
+              prev.focus();
+              setActive(prev);
+            }
+          });
+        });
+        const initialActive = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
+        if (initialActive) setActive(initialActive);
+      });
+
+      // 7. Matrix hover + click
+      const matrix = document.querySelector('[data-matrix] .mec-matrix__grid');
+      if (matrix) {
+        const cells = Array.from(matrix.querySelectorAll('.mec-matrix__cell'));
+        const heads = Array.from(matrix.querySelectorAll('.mec-matrix__head'));
+        const rowHeads = Array.from(matrix.querySelectorAll('.mec-matrix__row-head'));
+        const clearHighlight = () => {
+          matrix.classList.remove('is-hover-row');
+          cells.forEach((c) => c.classList.remove('is-row-active', 'is-col-active'));
+          heads.forEach((h) => h.classList.remove('is-active'));
+          rowHeads.forEach((h) => h.classList.remove('is-active'));
+        };
+        cells.forEach((cell) => {
+          const row = cell.dataset.row;
+          const col = cell.dataset.col;
+          cell.addEventListener('mouseenter', () => {
+            matrix.classList.add('is-hover-row');
+            cells.forEach((c) => {
+              c.classList.toggle('is-row-active', c.dataset.row === row);
+              c.classList.toggle('is-col-active', c.dataset.col === col);
+            });
+            heads.forEach((h) => h.classList.toggle('is-active', h.dataset.col === col));
+            rowHeads.forEach((h) => h.classList.toggle('is-active', h.dataset.row === row));
+          });
+          cell.addEventListener('mouseleave', clearHighlight);
+          cell.addEventListener('click', () => {
+            const targetTabId = cell.dataset.tabJump;
+            const tab = targetTabId && document.getElementById(targetTabId);
+            if (tab) {
+              tab.click();
+              tab.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+              tab.focus();
+            }
+          });
+        });
+      }
+
+      // 8. FAQ category filter
+      const faqFilter = document.querySelector('[data-faq-filter]');
+      const faqList = document.querySelector('[data-faq-list]');
+      if (faqFilter && faqList) {
+        const chips = Array.from(faqFilter.querySelectorAll('.mec-faq-chip'));
+        const items = Array.from(faqList.querySelectorAll('.mec-faq__item'));
+        chips.forEach((chip) => {
+          chip.addEventListener('click', () => {
+            const cat = chip.dataset.faqCat;
+            chips.forEach((c) => {
+              const on = c === chip;
+              c.classList.toggle('is-active', on);
+              c.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            items.forEach((item) => {
+              const matches = cat === 'Todas' || item.dataset.faqCat === cat;
+              item.classList.toggle('is-hidden', !matches);
+            });
+          });
+        });
+      }
+    })();
+  </script>
+</Layout>

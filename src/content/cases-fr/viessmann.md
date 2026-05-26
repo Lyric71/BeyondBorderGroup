@@ -23,11 +23,11 @@ images:
 
 ## La marque
 
-Fondée en 1917 et désormais filiale de Carrier, Viessmann figure parmi les leaders mondiaux des solutions climatiques performantes : chauffage, eau chaude, qualité de l'air et énergies renouvelables, conçues pour durer et fonctionner en conditions réelles.
+Fondée en 1917, désormais filiale de Carrier, Viessmann fait partie des leaders mondiaux des solutions climatiques performantes : chauffage, eau chaude, qualité de l'air et énergies renouvelables, conçues pour durer et fonctionner en conditions réelles.
 
 ## Le défi
 
-L'achat d'un équipement de chauffage ou d'eau chaude relève d'une décision réfléchie, étroitement liée à la pose, au service après-vente et à la confiance dans la marque. L'acheteur chinois mène ses recherches en ligne avant de trancher, et la catégorie récompense les acteurs capables d'allier pédagogie produit claire et SAV solide. Viessmann devait afficher en Chine une présence en ligne sérieuse, à la hauteur de sa marque hors ligne, sans pour autant cannibaliser ses distributeurs et ses partenaires de service.
+L'achat d'un équipement de chauffage ou d'eau chaude relève d'une décision réfléchie, intimement liée à la pose, au service après-vente, à la confiance dans la marque. L'acheteur chinois fait ses recherches en ligne avant de trancher, et la catégorie récompense les acteurs qui allient pédagogie produit claire et SAV solide. Viessmann devait afficher en Chine une présence en ligne sérieuse, à hauteur de sa marque hors ligne, sans pour autant cannibaliser ses distributeurs et ses partenaires de service.
 
 ## Notre approche
 
@@ -35,13 +35,13 @@ Beyond Border Group a été missionné pour construire et exploiter les boutique
 
 - Le développement des contenus, du design du store aux fiches produits pensées pour les comportements d'achat chinois
 - Les ventes et l'exploitation, pour tenir les boutiques debout aux pics commerciaux comme au quotidien
-- La stratégie marketing : campagnes, média always-on et temps forts de marque
-- Les programmes livestream et KOL, pour incarner les produits et répondre aux interrogations réelles des consommateurs
+- La stratégie marketing : campagnes, média always-on, temps forts de marque
+- Les programmes livestream et KOL, pour incarner les produits et répondre aux questions réelles des consommateurs
 - Le pilotage social, pour prolonger le récit de marque entre deux pics commerciaux
 - Le service client, pour protéger l'expérience au moment le plus sensible du parcours
 
-Un volet déterminant a consisté à articuler l'activité en ligne avec le retail physique, les distributeurs et le réseau service, en évitant tout effet de concurrence interne.
+Un volet décisif a consisté à articuler l'activité en ligne avec le retail physique, les distributeurs et le réseau service, à l'écart de toute concurrence interne.
 
 ## Résultats
 
-Plusieurs années après le lancement, les revenus en ligne, produits et services réunis, avaient fortement progressé. Plus déterminant encore, Viessmann disposait d'une présence eCommerce crédible en Chine, qui renforce le retail physique, soutient les distributeurs et offre aux installateurs de nouvelles raisons de s'engager. Le digital devient ainsi un véritable moteur de croissance pour la marque.
+Plusieurs années après le lancement, les revenus en ligne, produits et services réunis, avaient nettement progressé. Plus décisif encore, Viessmann dispose d'une présence eCommerce crédible en Chine, qui renforce le retail physique, soutient les distributeurs, et offre aux installateurs de nouvelles raisons de s'engager. Le digital devient ainsi un moteur de croissance pour la marque.

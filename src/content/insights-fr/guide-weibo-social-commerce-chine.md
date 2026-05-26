@@ -17,7 +17,7 @@ Weibo concentre une base 19-29 ans, jeune, connectée, à l'aise avec le digital
 **Atouts marketing de Weibo :**
 
 - Une base utilisateur massive et engagée.
-- Un potentiel viral très élevé pour la notoriété.
+- Un potentiel viral élevé pour la notoriété.
 - Une intégration aux plateformes e-commerce chinoises.
 - Des outils de ciblage et d'analytique avancés.
 
@@ -56,7 +56,7 @@ Pour une entreprise hors de Chine, la procédure passe par la « Vérification d
 - Coordonnées du gestionnaire ou de l'équipe en charge du compte Weibo.
 - Lettre d'autorisation pour la création du compte.
 
-À noter : si la gestion du compte Weibo revient à une entité chinoise partenaire, prévoir une lettre d'autorisation l'autorisant à exploiter nom de marque, logo et description.
+À noter : si la gestion du compte Weibo revient à une entité chinoise partenaire, prévoir une lettre d'autorisation l'autorisant à exploiter nom de marque, logo, description.
 
 ### Soumettre les documents
 
@@ -75,7 +75,7 @@ Délais de traitement selon le type de compte :
 
 ### Personnaliser le profil
 
-Compte validé, on soigne la présentation :
+Compte validé, place à la présentation :
 
 - Photo de profil (logo en général).
 - Bannière à l'image de la marque.
@@ -108,7 +108,7 @@ S'appuyer sur des Key Opinion Leaders reste une stratégie particulièrement eff
 
 ## Les campagnes système sur Weibo
 
-Les campagnes système de Weibo sont des outils promotionnels préconfigurés qui permettent aux marketeurs d'engager les utilisateurs, de soutenir la visibilité de la marque et de générer de l'interaction. Réservées aux comptes officiels, elles sont souvent pilotées par une agence sociale en Chine pour un déploiement efficace.
+Les campagnes système de Weibo sont des outils promotionnels préconfigurés qui permettent aux marketeurs d'engager les utilisateurs, de soutenir la visibilité de la marque et d'alimenter l'interaction. Réservées aux comptes officiels, elles sont souvent pilotées par une agence sociale en Chine pour un déploiement efficace.
 
 À la différence d'un contenu promotionnel entièrement personnalisable, ces campagnes suivent un format prédéfini. Leur simplicité et leur logique intégrée en font un levier rentable pour activer engagement et intérêt autour d'une marque.
 
@@ -170,13 +170,13 @@ Le repost transforme le partage et le tag d'amis en relais organique de la marqu
 
 **Mécanique :**
 
-- Les utilisateurs reposteent le contenu, taguent des amis ou suivent le compte pour participer.
+- Les utilisateurs repostent le contenu, taguent des amis ou suivent le compte pour participer.
 - Les gagnants sont tirés au sort ou retenus selon des critères prédéfinis.
 
 **Bénéfices clés :**
 
 - Une mécanique simple et engageante.
-- Une visibilité démultipliée via les réseaux des utilisateurs eux-mêmes.
+- Une visibilité démultipliée par les réseaux des utilisateurs eux-mêmes.
 
 ## Intégration e-commerce sur Weibo
 
@@ -190,7 +190,7 @@ Weibo s'intègre proprement aux plateformes de e-commerce cross-border chinoises
 
 ## Le rôle de la vidéo
 
-La vidéo reste l'un des formats les plus engageants sur Weibo. Vidéos courtes et live captent l'attention et nourrissent l'interaction.
+La vidéo reste l'un des formats les plus engageants sur Weibo. Vidéos courtes et live captent l'attention et alimentent l'interaction.
 
 **Conseils :**
 

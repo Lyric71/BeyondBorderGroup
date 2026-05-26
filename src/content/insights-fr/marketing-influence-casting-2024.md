@@ -47,7 +47,7 @@ Visibilité large, adaptée aux marques qui visent des cibles généralistes. Le
 
 ### Méga-influenceurs (plus d'un million d'abonnés)
 
-Statut de quasi-célébrité, portée massive. L'impact se dilue parfois, et les budgets s'envolent vite.
+Statut de quasi-célébrité, portée massive. L'impact se dilue parfois, les budgets s'envolent vite.
 
 ## Les critères de sélection
 

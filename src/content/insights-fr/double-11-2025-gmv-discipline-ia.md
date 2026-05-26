@@ -10,9 +10,9 @@ tags: ["Double 11", "efficacité IA", "opérations e-commerce", "livestream comm
 heroImage: "/Images/insights/double-11-2025-ai-ecommerce-efficiency-china.jpg"
 heroImageAlt: "Pilotage opérationnel par IA durant le festival 11.11"
 keyTakeaways:
-  - "Le Double 11 2025 se lit comme un test d'opérations, pas un test de GMV. Les plateformes ont discrètement enterré le chiffre unique."
+  - "Le Double 11 2025 se lit en test d'opérations, pas en test de GMV. Les plateformes ont discrètement enterré le chiffre unique."
   - "L'IA orchestre désormais les promotions, le classement, la prévision et le dernier kilomètre. L'opérateur le plus fin l'emporte sur celui qui solde le plus dur."
-  - "Le débit créatif devient le goulot. Les marques qui sortent 50 variantes par campagne et vite battent celles qui brûlent quatre semaines sur un visuel hero."
+  - "Le débit créatif devient le goulot. Les marques qui sortent 50 variantes par campagne, et vite, battent celles qui brûlent quatre semaines sur un visuel hero."
   - "Qualité de service, vitesse de livraison, taux de retour : voilà les KPI publics désormais. Construisez pour le 12 novembre, pas seulement pour le 11.11."
 ---
 
@@ -22,9 +22,9 @@ Le Double Eleven relevait de la frénésie commerciale. En 2025, il sert de test
 
 ### Le vrai basculement de l'année
 
-Le titre n'est plus « davantage de GMV ». Il est devenu « de meilleurs systèmes ». Plateformes et marques ont pivoté vers la priorité à l'efficacité, à la transparence et à la répétabilité. Le consommateur a récompensé cette ligne : moins d'artifices, des prix plus lisibles, un service supérieur.
+Le titre n'est plus « davantage de GMV ». Il est devenu « de meilleurs systèmes ». Plateformes et marques ont pivoté vers la priorité à l'efficacité, à la transparence, à la répétabilité. Le consommateur a récompensé cette ligne : moins d'artifices, des prix plus lisibles, un service supérieur.
 
-Sous la surface tourne un modèle opérationnel piloté par l'IA. Promotions, classement, prévisions, routage : les systèmes d'apprentissage orchestrent l'essentiel. La plupart des grandes plateformes ont cessé de publier un GMV unique en une. Elles communiquent désormais sur la participation, la qualité de service et les indicateurs de livraison. Quand tout le monde solde, la victoire revient à l'opérateur qui pilote le plus finement : livraisons accélérées, ruptures contenues, économie unitaire tenable le 12 novembre venu.
+Sous la surface tourne un modèle opérationnel piloté par l'IA. Promotions, classement, prévisions, routage : les systèmes d'apprentissage orchestrent l'essentiel. La plupart des grandes plateformes ont cessé de publier un GMV unique en une. Elles communiquent désormais sur la participation, la qualité de service et les indicateurs de livraison. Quand tout le monde solde, la victoire revient à l'opérateur qui pilote le plus finement : livraisons accélérées, ruptures contenues, économie unitaire tenable au 12 novembre venu.
 
 ### Architecturer le Creative OS qui convertit l'opérationnel en ventes
 
@@ -55,7 +55,7 @@ Routage resserré et niveaux de service tenus font la différence. JD revendique
 Fiches produit honnêtes, logique de taille et d'ajustement localisée, contenu post-achat qui désamorce le WISMO et contient remboursements et réclamations.
 
 * **Les opérations avant le décor**
-Les étoiles polaires se déplacent : du GMV d'une journée vers le coût de service, le taux de réachat, le CAC/LTV, le taux de remboursement et la ponctualité des livraisons, le tout soutenu par les indicateurs créatifs cités plus haut.
+Les étoiles polaires se déplacent : du GMV d'une journée vers le coût de service, le taux de réachat, le CAC/LTV, le taux de remboursement, la ponctualité des livraisons, le tout soutenu par les indicateurs créatifs cités plus haut.
 
 ### Le livestream vend toujours
 
@@ -89,6 +89,6 @@ Pour mémoire, le [livestream](/fr/se-developper-en-chine/influence-et-kol) avai
 
 ### En clair
 
-Le 11.11 n'a pas besoin de davantage de paillettes. Il appelle un système piloté par la création, natif IA, qui respecte le consommateur, protège les marges et passe les frontières. Les gagnants se sont servis du festival comme d'un test système. Ils l'ont validé sur la vitesse, la clarté et la cohérence de marque.
+Le 11.11 n'a pas besoin de davantage de paillettes. Il appelle un système piloté par la création, natif IA, qui respecte le consommateur, protège les marges, passe les frontières. Les gagnants se sont servis du festival en test système. Ils l'ont validé sur la vitesse, la clarté et la cohérence de marque.
 
 Pour voir cette logique appliquée à vos propres chiffres, BBG propose une session avec quelques visuels offerts et une lecture de cas marques en direct. L'équipe conçoit le Creative OS avec vous et fait du prochain rendez-vous shopping un fossé concurrentiel.

@@ -1,0 +1,241 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allCases = await getCollection('casesEs', ({ data }) => !data.draft);
+
+const sorted = allCases.sort((a, b) => {
+  if (a.data.order !== b.data.order) return a.data.order - b.data.order;
+  return a.data.brand.localeCompare(b.data.brand);
+});
+
+const categoryOrder = [
+  'Brand & Design',
+  'Social & Content',
+  'eCommerce',
+  'Website',
+  'Distribution',
+  'Training',
+] as const;
+
+const categoryLabelsEs: Record<(typeof categoryOrder)[number], string> = {
+  'Brand & Design': 'Marca y diseño',
+  'Social & Content': 'Social y contenidos',
+  'eCommerce': 'eCommerce',
+  'Website': 'Sitios web',
+  'Distribution': 'Distribución',
+  'Training': 'Formación',
+};
+
+const counts = categoryOrder
+  .map((c) => ({ name: c, count: sorted.filter((x) => x.data.category === c).length }))
+  .filter((c) => c.count > 0);
+---
+
+<Layout
+  title="Casos de nuestra agencia en China | Beyond Border Group"
+  description="Casos de marketing, eCommerce y distribución en China realizados por nuestra agencia para marcas internacionales. Tmall, JD, Douyin, WeChat y RED."
+>
+  <section class="work-intro">
+    <div class="container">
+      <span class="eyebrow">Proyectos</span>
+      <h1>Cómo crecen las marcas internacionales en China</h1>
+      <p class="lead">
+        Selección de trabajos para nuestros clientes en marketing, eCommerce y distribución.
+        Lanzamientos de marca, operaciones en Tmall y JD, social commerce en Douyin, WeChat
+        y RED, distribución retail, sitios web pensados para el internet chino y formación
+        de equipos que se asoman por primera vez al mercado.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {counts.length > 1 && (
+        <div class="work-filter" role="tablist" aria-label="Filtrar por servicio">
+          <button
+            type="button"
+            class="work-filter__btn is-active"
+            data-category="all"
+            role="tab"
+            aria-selected="true"
+          >
+            Todo <span class="work-filter__count">{sorted.length}</span>
+          </button>
+          {counts.map((c) => (
+            <button
+              type="button"
+              class="work-filter__btn"
+              data-category={c.name}
+              role="tab"
+              aria-selected="false"
+            >
+              {categoryLabelsEs[c.name]} <span class="work-filter__count">{c.count}</span>
+            </button>
+          ))}
+        </div>
+      )}
+
+      <div class="grid grid-3 work-grid">
+        {sorted.map((c) => (
+          <a href={`/es/proyectos/${c.id}`} class="work-card" data-category={c.data.category}>
+            <div class="work-card__image">
+              <img
+                src={c.data.heroImage}
+                alt={c.data.heroImageAlt || `Caso ${c.data.brand}`}
+                loading="lazy"
+                decoding="async"
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">{categoryLabelsEs[c.data.category]}</span>
+              <h3 class="work-card__title">{c.data.brand}</h3>
+              <p class="work-card__summary">{c.data.title}</p>
+              {c.data.metric && (
+                <p class="work-card__metric">{c.data.metric}</p>
+              )}
+              {c.data.services.length > 0 && (
+                <ul class="work-card__services" aria-label="Servicios">
+                  {c.data.services.slice(0, 4).map((s) => <li>{s}</li>)}
+                  {c.data.services.length > 4 && (
+                    <li class="work-card__services-more">+{c.data.services.length - 4}</li>
+                  )}
+                </ul>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+
+      {sorted.length === 0 && (
+        <p class="work-empty">Estamos pasando los casos antiguos al nuevo sitio. Vuelva en unos días.</p>
+      )}
+    </div>
+  </section>
+
+  <section class="section section--alt section--tight">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-card__copy">
+          <span class="eyebrow">Hablemos</span>
+          <h2>¿Quiere que su marca sea el próximo caso? Tomemos un café.</h2>
+          <p class="cta-card__lead">
+            Cuéntenos dónde está hoy y a dónde quiere llegar. Responde un miembro sénior del
+            equipo, no un chatbot ni un embudo comercial.
+          </p>
+          <div class="cta-card__actions">
+            <a href="/es/contacto" class="btn btn--primary">Iniciar la conversación</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    (() => {
+      const grid = document.querySelector('.work-grid');
+      if (!grid) return;
+      const cards = Array.from(grid.children);
+      for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+      }
+      const frag = document.createDocumentFragment();
+      cards.forEach((c) => frag.appendChild(c));
+      grid.appendChild(frag);
+    })();
+
+    document.querySelectorAll('.work-filter__btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.category;
+        document.querySelectorAll('.work-filter__btn').forEach((b) => {
+          const on = b === btn;
+          b.classList.toggle('is-active', on);
+          b.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        document.querySelectorAll('.work-card').forEach((card) => {
+          const show = cat === 'all' || card.dataset.category === cat;
+          card.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  </script>
+
+  <style>
+    .work-intro {
+      padding: var(--space-8) 0 var(--space-6);
+      text-align: center;
+    }
+    .work-intro .eyebrow { display: inline-block; margin-bottom: var(--space-4); }
+    .work-intro h1 { max-width: 22ch; margin-inline: auto; margin-bottom: var(--space-4); }
+    .work-intro .lead {
+      max-width: 66ch;
+      margin-inline: auto;
+      color: var(--bbg-text);
+    }
+
+    .work-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      justify-content: center;
+      margin-bottom: var(--space-7);
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .work-filter__btn {
+      appearance: none;
+      border: 1px solid var(--bbg-border);
+      background: transparent;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: var(--fs-small);
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+      cursor: pointer;
+      transition: all var(--dur) var(--ease);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .work-filter__btn:hover {
+      border-color: var(--bbg-blue);
+      color: var(--bbg-blue);
+    }
+    .work-filter__btn.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    .work-filter__count {
+      font-size: 0.75rem;
+      font-weight: 600;
+      opacity: 0.7;
+    }
+    .work-filter__btn.is-active .work-filter__count { opacity: 0.9; }
+
+    .work-grid {
+      gap: var(--space-6) var(--space-5);
+    }
+
+    .work-empty {
+      text-align: center;
+      color: var(--bbg-text-muted);
+      padding: var(--space-8) 0;
+    }
+
+    @media (max-width: 1024px) {
+      .work-intro { padding: var(--space-7) 0 var(--space-5); }
+    }
+    @media (max-width: 768px) {
+      .work-intro { padding: var(--space-6) 0 var(--space-4); }
+      .work-filter { justify-content: flex-start; margin-bottom: var(--space-6); }
+      .work-filter__btn { padding: 0.45rem 0.85rem; }
+    }
+    @media (max-width: 480px) {
+      .work-filter__count { display: none; }
+    }
+  </style>
+</Layout>

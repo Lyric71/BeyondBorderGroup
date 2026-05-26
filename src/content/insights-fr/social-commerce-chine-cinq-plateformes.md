@@ -33,7 +33,7 @@ Xiaohongshu, alias Little Red Book, séduit en premier la jeunesse urbaine. Conn
 
 ### Opportunités marketing
 
-Pour les marques tournées vers le e-commerce chinois, Xiaohongshu offre plusieurs leviers de performance. Le live et l'influence engagent les jeunes urbains et nourrissent la relation dans la durée.
+Pour les marques tournées vers le e-commerce chinois, Xiaohongshu offre plusieurs leviers de performance. Le live et l'influence engagent les jeunes urbains et alimentent la relation dans la durée.
 
 ## 2. WeChat
 
@@ -94,7 +94,7 @@ Pinduoduo répond aux marques qui jouent la carte du groupe et du bouche-à-orei
 
 ### Vue d'ensemble
 
-Weibo, souvent comparé au Twitter chinois, conserve une présence solide dans le paysage digital et s'est imposé comme vraie plateforme de social commerce. Avec le lancement de Weibo Xiaodian, les marques vendent désormais leurs produits sans quitter l'application.
+Weibo, souvent comparé au Twitter chinois, conserve une présence solide dans le paysage digital et s'est imposé en vraie plateforme de social commerce. Avec le lancement de Weibo Xiaodian, les marques vendent désormais leurs produits sans quitter l'application.
 
 ![Weibo, plateforme de social commerce](/Images/insights/2024/12/weibo2-1024x585.png)
 
@@ -110,6 +110,6 @@ Le mariage réseau social et e-commerce fait de Weibo un terrain idéal pour la 
 
 ## Pour finir
 
-Le social commerce s'est imposé comme pièce maîtresse du e-commerce chinois. Il offre aux marques plusieurs voies pour capter le consommateur et déclencher la vente à travers des expériences riches en contenu. Xiaohongshu, WeChat, Taobao/Tmall, Pinduoduo et Weibo ont chacune leurs forces propres.
+Le social commerce s'est imposé en pièce maîtresse du e-commerce chinois. Il offre aux marques plusieurs voies pour capter le consommateur et déclencher la vente à travers des expériences riches en contenu. Xiaohongshu, WeChat, Taobao/Tmall, Pinduoduo et Weibo ont chacune leurs forces propres.
 
-En activant influenceurs, livestream et plateformes orientées KOL, la marque ne se contente pas d'attirer l'attention. Elle convertit cet engagement en chiffre d'affaires. Tout l'enjeu : caler la stratégie sur les forces propres de chaque plateforme, et ne pas chercher à les traiter comme un canal unique.
+En activant influenceurs, livestream et plateformes orientées KOL, la marque ne se contente pas d'attirer l'attention. Elle convertit cet engagement en chiffre d'affaires. Tout l'enjeu : caler la stratégie sur les forces propres de chaque plateforme, et ne pas chercher à les traiter en canal unique.

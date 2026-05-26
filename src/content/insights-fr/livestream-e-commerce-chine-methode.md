@@ -12,13 +12,13 @@ heroImageAlt: "Plan moyen d'une influenceuse plus-size"
 
 ## Comprendre la montée du livestream e-commerce en Chine
 
-Sur Taobao Live, plus de 70 % du livestream marchand chinois transite par les flux d'Alibaba. Le format a depuis longtemps quitté le rayon des modes passagères : il s'impose comme une force dominante de la distribution. Avec Douyin (la version chinoise de TikTok) et Kuaishou, le [livestream](/fr/se-developper-en-chine/influence-et-kol) [e-commerce](/fr/se-developper-en-chine/ecommerce-transfrontalier) a transformé l'achat en expérience interactive et divertissante. L'acheteur assiste à la démonstration en temps réel, pose ses questions et passe à l'acte sans rupture, dans un parcours plus informé et plus vivant.
+Sur Taobao Live, plus de 70 % du livestream marchand chinois transite par les flux d'Alibaba. Le format a depuis longtemps quitté le rayon des modes passagères : il s'impose en force dominante de la distribution. Avec Douyin (la version chinoise de TikTok) et Kuaishou, le [livestream](/fr/se-developper-en-chine/influence-et-kol) [e-commerce](/fr/se-developper-en-chine/ecommerce-transfrontalier) a transformé l'achat en expérience interactive et divertissante. L'acheteur assiste à la démonstration en temps réel, pose ses questions et passe à l'acte sans rupture, dans un parcours plus informé et plus vivant.
 
-Trois forces nourrissent cette croissance :
+Trois forces alimentent cette croissance :
 
 * Une audience née avec le numérique, en particulier la génération Z et les Millennials.
 * Le poids des Key Opinion Leaders (KOL), qui pèsent sur la décision d'achat.
-* L'expertise des agences de marketing digital, qui concevoivent des campagnes inventives.
+* L'expertise des agences de marketing digital, qui conçoivent des campagnes inventives.
 
 ## Choisir la bonne plateforme pour réussir en livestream
 
@@ -60,7 +60,7 @@ La clarification du but s'impose dès le départ. Lancement de produit ? Notori�
 
 ### S'allier aux influenceurs et aux KOL
 
-Les influenceurs forment la colonne vertébrale du livestream chinois. Leur capital confiance et leur proximité avec leur communauté peuvent faire basculer le résultat. La collaboration avec des KOL alignés sur les valeurs de la marque préserve l'authenticité et amplifie l'impact.
+Les influenceurs font la colonne vertébrale du livestream chinois. Leur capital confiance et leur proximité avec leur communauté peuvent faire basculer le résultat. La collaboration avec des KOL alignés sur les valeurs de la marque préserve l'authenticité et amplifie l'impact.
 
 ### Investir dans la production
 
@@ -72,7 +72,7 @@ Les meilleurs livestreams ne restent jamais statiques. Sessions de questions-ré
 
 ## Le rôle des festivals shopping dans le livestream
 
-Les festivals commerciaux, comme Singles' Day ou le 618, tiennent un rôle central dans la réussite du livestream e-commerce. Sur ces fenêtres, l'enthousiasme et l'intention d'achat décuplent.
+Les festivals commerciaux, comme Singles' Day ou le 618, jouent un rôle central dans la réussite du livestream e-commerce. Sur ces fenêtres, l'enthousiasme et l'intention d'achat décuplent.
 
 ![Calendrier des festivals shopping](/Images/insights/2024/12/live-festi.png)
 
@@ -92,7 +92,7 @@ Le produit en action, en direct, installe la confiance et la familiarité. Les d
 
 ### Travailler le storytelling
 
-Aligner le contenu sur les tendances et les valeurs locales nourrit la fidélité.
+Aligner le contenu sur les tendances et les valeurs locales alimente la fidélité.
 
 ### Garder la pertinence culturelle
 
@@ -108,4 +108,4 @@ Promotions et remises restent les moteurs des ventes en livestream. Pour optimis
 
 ## Conclusion
 
-Le livestream e-commerce en Chine redessine la relation entre les marques et leur audience. Le format reste l'un des plus efficaces pour générer des ventes, captiver les spectateurs et bâtir des relations clients qui durent. En choisissant la bonne plateforme, en s'appuyant sur des influenceurs de confiance, en concevant des contenus engageants et en pilotant les décisions par la donnée, les marques tirent le meilleur de ce levier. Travailler main dans la main avec des agences branding, média et marketing aide à bâtir des campagnes qui résonnent réellement auprès des consommateurs chinois.
+Le livestream e-commerce en Chine redessine la relation entre les marques et leur audience. Le format reste l'un des plus efficaces pour générer des ventes, captiver les spectateurs, bâtir des relations clients qui durent. En choisissant la bonne plateforme, en s'appuyant sur des influenceurs de confiance, en concevant des contenus engageants et en pilotant les décisions par la donnée, les marques tirent le meilleur de ce levier. Travailler main dans la main avec des agences branding, média et marketing aide à bâtir des campagnes qui résonnent réellement auprès des consommateurs chinois.

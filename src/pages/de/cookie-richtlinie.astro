@@ -1,0 +1,180 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const lastUpdated = '23. April 2026';
+---
+
+<Layout
+  title="Cookie-Richtlinie | Beyond Border Group"
+  description="Wie Beyond Border Group auf der Website Cookies einsetzt: welche Arten wir setzen, Drittanbieter und Optionen zur Verwaltung."
+>
+  <section class="legal-hero">
+    <div class="container">
+      <span class="eyebrow">Rechtliche Hinweise</span>
+      <h1 class="legal-hero__title">Cookie-Richtlinie</h1>
+      <p class="legal-hero__meta">Letzte Aktualisierung: {lastUpdated}</p>
+      <p class="legal-hero__lead">
+        Beyond Border Group, betrieben von BeyondBorderGroup LTD (Sonderverwaltungsregion
+        Hongkong), nutzt auf dieser Website Cookies und vergleichbare Technologien. Wenn Sie
+        unsere Seite weiter besuchen, erklären Sie sich mit dem Einsatz der hier beschriebenen
+        Cookies einverstanden.
+      </p>
+    </div>
+  </section>
+
+  <section class="section legal-body">
+    <div class="container">
+      <article class="prose">
+        <h2>Was Cookies sind</h2>
+        <p>
+          Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Gerät
+          (Computer, Tablet oder Smartphone) abgelegt werden. Sie erlauben es einer Website,
+          Ihr Gerät wiederzuerkennen und Informationen zu Ihrem Besuch zu speichern, etwa die
+          bevorzugte Sprache oder andere Einstellungen.
+        </p>
+
+        <h2>Wie wir Cookies einsetzen</h2>
+
+        <h3>Unbedingt erforderliche Cookies</h3>
+        <p>
+          Diese Cookies sind für den Betrieb der Website unverzichtbar. Sie sichern
+          Grundfunktionen wie die Navigation zwischen Seiten, den geschützten Zugang zu
+          gesicherten Bereichen und das Absenden von Formularen. Ohne sie funktioniert die
+          Website nicht korrekt.
+        </p>
+
+        <h3>Funktionale Cookies</h3>
+        <p>
+          Sie sorgen dafür, dass sich die Website Ihre Wahl merkt, etwa Sprache oder Region,
+          und so eine persönlichere Erfahrung möglich wird. Einige funktionale Cookies stammen
+          von Drittanbietern, deren Dienste auf unseren Seiten eingebunden sind.
+        </p>
+
+        <h3>Analyse-Cookies</h3>
+        <p>
+          Wir nutzen datenschutzfreundliche Analyse-Werkzeuge, um zu verstehen, wie Besucher
+          mit unserer Website umgehen, und sie weiter zu verbessern. Google Analytics setzen wir
+          nicht ein: Google-Dienste sind aus dem chinesischen Festland nicht zuverlässig
+          erreichbar, einem Markt, den wir täglich bedienen.
+        </p>
+
+        <h2>Marketing-Cookies</h2>
+        <p>
+          Marketing- und Werbe-Cookies setzen wir derzeit nicht ein. Sollte sich daran etwas
+          ändern, aktualisieren wir diese Richtlinie und holen, wo erforderlich, Ihre
+          Einwilligung ein.
+        </p>
+
+        <h2>Cookies von Drittanbietern</h2>
+        <p>
+          Einzelne Seiten können Inhalte oder Werkzeuge aus Diensten Dritter enthalten, die
+          eigene Cookies setzen. Auf diese Cookies haben wir keinen Einfluss. Wir empfehlen,
+          die Datenschutz- und Cookie-Richtlinien der jeweiligen Dienste direkt einzusehen.
+        </p>
+
+        <h2>Cookies verwalten</h2>
+        <p>
+          Die meisten Browser erlauben über ihre Einstellungen, Cookies anzusehen, zu löschen
+          und zu blockieren. Diese Optionen finden Sie meist unter „Datenschutz" oder
+          „Sicherheit" in den Browser-Einstellungen. Beachten Sie, dass das Deaktivieren
+          einzelner Cookies die Funktion bestimmter Bereiche dieser Website einschränken kann.
+        </p>
+
+        <h2>Rechtsrahmen</h2>
+        <p>
+          Unser Einsatz von Cookies richtet sich nach den Gesetzen der Sonderverwaltungsregion
+          Hongkong, insbesondere nach der Personal Data (Privacy) Ordinance.
+        </p>
+
+        <h2>Änderungen dieser Richtlinie</h2>
+        <p>
+          Wir können diese Cookie-Richtlinie von Zeit zu Zeit anpassen. Die überarbeitete
+          Fassung wird mit aktualisiertem Datum auf dieser Seite veröffentlicht.
+        </p>
+
+        <h2>Kontakt</h2>
+        <p>
+          Bei Fragen zum Einsatz von Cookies schreiben Sie an
+          <a href="mailto:hello@beyondbordergroup.com">hello@beyondbordergroup.com</a>
+          oder nutzen Sie unsere <a href="/de/kontakt">Kontaktseite</a>.
+        </p>
+      </article>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .legal-hero {
+    background: var(--bbg-surface);
+    padding: var(--space-7) 0 var(--space-6);
+    border-bottom: 1px solid var(--bbg-border);
+  }
+  .legal-hero .container > * { max-width: 760px; margin-left: auto; margin-right: auto; }
+  .legal-hero__title {
+    font-size: clamp(2.25rem, 4vw + 1rem, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--bbg-ink);
+    margin: var(--space-3) auto var(--space-3);
+  }
+  .legal-hero__meta {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    margin: 0 auto var(--space-5);
+    letter-spacing: 0.02em;
+  }
+  .legal-hero__lead {
+    font-size: var(--fs-lead);
+    line-height: 1.6;
+    color: var(--bbg-text);
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .legal-body { padding-top: var(--space-7); padding-bottom: var(--space-7); }
+
+  .prose {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--bbg-text);
+    font-size: var(--fs-body);
+    line-height: 1.7;
+  }
+  .prose h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bbg-ink);
+    letter-spacing: -0.01em;
+    margin: var(--space-7) 0 var(--space-3);
+    line-height: 1.25;
+  }
+  .prose h2:first-child { margin-top: 0; }
+  .prose h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--bbg-ink);
+    margin: var(--space-5) 0 var(--space-2);
+    line-height: 1.3;
+  }
+  .prose p { margin: 0 0 var(--space-4); }
+  .prose ul {
+    padding-left: 1.25rem;
+    margin: 0 0 var(--space-4);
+  }
+  .prose li { margin-bottom: var(--space-2); }
+  .prose a { color: var(--bbg-blue); text-decoration: underline; text-underline-offset: 3px; }
+  .prose a:hover { color: var(--bbg-blue-dark); }
+
+  @media (max-width: 768px) {
+    .legal-hero { padding: var(--space-6) 0 var(--space-5); }
+    .legal-body { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+    .prose h2 { margin-top: var(--space-6); font-size: 1.375rem; }
+    .prose h3 { margin-top: var(--space-4); }
+  }
+  @media (max-width: 640px) {
+    .legal-hero { padding: var(--space-5) 0 var(--space-4); }
+    .prose { font-size: 1rem; }
+    .prose ul { padding-left: 1rem; }
+  }
+</style>

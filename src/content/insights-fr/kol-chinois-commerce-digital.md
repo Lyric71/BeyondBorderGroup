@@ -28,7 +28,7 @@ Repérer les bons profils suppose de connaître l'écosystème [social](/fr/se-d
 
 #### WeChat
 
-Polyvalente, WeChat sert au KOL pour dialoguer avec sa communauté, produire du contenu exclusif et commercialiser ses recommandations sans quitter l'application.
+Polyvalente, WeChat sert au KOL pour dialoguer avec sa communauté, produire du contenu exclusif, commercialiser ses recommandations sans quitter l'application.
 
 ![KOL WeChat](/Images/insights/2024/11/kol_wechat-2.jpg)
 
@@ -56,7 +56,7 @@ Identifier le bon profil exige une démarche méthodique, calée sur les objecti
 
 ### Étape 1 : fixer les objectifs
 
-* Notoriété : pour une marque ou un produit récent, viser des KOL à large portée et forte visibilité.
+* Notoriété : pour une marque ou un produit récent, viser des KOL à large portée et à forte visibilité.
 * Engagement et ventes : quand la priorité est la conversion, les micro-KOL à communauté active délivrent souvent un meilleur rendement. Le lien personnel avec leurs abonnés fait la différence.
 * Crédibilité et confiance : pour bâtir la marque dans la durée, sélectionner des KOL dont le ton éditorial épouse les valeurs de la marque.
 

@@ -15,7 +15,7 @@ L'internet chinois suit ses propres règles. Le Grand Pare-feu et la régulation
 
 ## Pourquoi les moteurs chinois pèsent dans le marketing
 
-Les moteurs chinois pilotent le marketing digital local. Ils dictent les stratégies SEO, conditionnent les [campagnes](/fr/se-developper-en-chine/campagnes) publicitaires et influencent le comportement d'achat. Savoir lequel prioriser peut tout changer pour atteindre le consommateur chinois.
+Les moteurs chinois pilotent le marketing digital local. Ils dictent les stratégies SEO, conditionnent les [campagnes](/fr/se-developper-en-chine/campagnes) publicitaires et infléchissent le comportement d'achat. Savoir lequel prioriser peut tout changer pour adresser le consommateur chinois.
 
 ## Les principaux moteurs en 2024
 
@@ -41,7 +41,7 @@ Le SEO sur Sogou privilégie le contenu original et l'autorité du site. Les bac
 
 ### 3. Shenma, le mobile d'abord
 
-Shenma, coentreprise Alibaba et UC Web, joue tout sur la recherche mobile. Vu que les internautes chinois passent presque exclusivement par le mobile, l'approche fait mouche.
+Shenma, coentreprise Alibaba et UC Web, joue tout sur la recherche mobile. Puisque les internautes chinois passent presque exclusivement par le mobile, l'approche fait mouche.
 
 #### Faire du marketing sur Shenma
 
@@ -71,7 +71,7 @@ Sa base utilisateurs particulière et son orientation éducation en font une pla
 
 ## L'importance du SEO localisé en Chine
 
-Le SEO localisé reste décisif. Chaque moteur applique ses propres règles, très différentes des standards occidentaux. Comprendre ces particularités et y plier le [site](/fr/se-developper-en-chine/site-web) peut transformer la visibilité sur le [marché chinois](/fr/entrer-en-chine/conseil-en-entree-de-marche).
+Le SEO localisé reste décisif. Chaque moteur applique ses propres règles, très différentes des standards occidentaux. Cerner ces particularités et y plier le [site](/fr/se-developper-en-chine/site-web) peut transformer la visibilité sur le [marché chinois](/fr/entrer-en-chine/conseil-en-entree-de-marche).
 
 ### Les fondamentaux du SEO localisé
 

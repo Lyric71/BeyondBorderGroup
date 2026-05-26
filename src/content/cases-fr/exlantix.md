@@ -20,16 +20,16 @@ order: 15
 
 ## La marque
 
-Exlantix est une nouvelle ligne automobile premium, intégrée au portefeuille Exceed du groupe Chery Automotive. Elle se distingue par la rencontre entre la technologie de pointe et le luxe, et entend redéfinir l'essence même de la conduite, avec une ambition résolument mondiale.
+Exlantix est une nouvelle ligne automobile premium, rattachée au portefeuille Exceed du groupe Chery Automotive. La marque tient son singulier de la rencontre entre une technologie de pointe et un parti pris de luxe, et entend redéfinir l'essence même de la conduite, avec une ambition d'emblée mondiale.
 
 ## Le défi
 
-L'enjeu consistait à doter Exlantix d'une identité visuelle distinctive, affranchie des influences traditionnelles du design chinois, capable d'incarner une philosophie design universelle. Objectif assumé : saisir la dimension luxueuse de la marque et son ambition sur la scène internationale, tout en garantissant sa résonance sur l'ensemble des marchés.
+L'enjeu : doter Exlantix d'une identité visuelle distinctive, libérée des influences traditionnelles du design chinois, capable de porter une philosophie design universelle. Objectif assumé, traduire la dimension luxueuse de la marque et son ambition internationale, sans rien lui faire perdre de sa résonance sur l'ensemble des marchés.
 
 ## Notre approche
 
-Le chantier a embrassé la totalité du système d'identité, depuis l'emblème jusqu'à la typographie, en passant par la palette chromatique et l'imagerie. Chaque élément a été conçu pour refléter l'exigence qualité d'Exlantix et son esprit pionnier dans le luxe automobile. Déployée avec cohérence sur l'ensemble des points de contact, l'identité installe une présence de marque unie et marquante, où qu'elle apparaisse.
+Le chantier a embrassé tout le système d'identité : de l'emblème à la typographie, de la palette chromatique à l'imagerie. Chaque élément a été pensé pour refléter l'exigence qualité d'Exlantix et son tempérament de pionnier dans le luxe automobile. Déployée avec cohérence sur l'ensemble des points de contact, l'identité installe une présence de marque unie et marquante, où qu'elle se montre.
 
 ## Résultats
 
-Au terme du chantier, une identité visuelle cohérente traduit l'ADN innovant d'Exlantix et son rang premium. Elle se décline sur toutes les interactions de marque pour produire une expérience unifiée, et pose une fondation solide pour le lancement international.
+Au terme du chantier, une identité visuelle cohérente traduit l'ADN innovant d'Exlantix et son rang premium. Elle se décline sur toutes les interactions de marque pour offrir une expérience unifiée, et pose une fondation solide pour le lancement international.

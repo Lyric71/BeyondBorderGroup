@@ -24,23 +24,23 @@ images:
 
 ## La marque
 
-Langnese est la première marque de miel en Allemagne, forte d'un siècle d'expertise apicole et d'un positionnement premium sur les marchés européens. En Chine, la maison avait sécurisé sa distribution et sa présence en rayon dans la grande distribution moderne, sans que l'activité se comporte pour autant comme celle d'un premium européen.
+Langnese est la première marque de miel en Allemagne, forte d'un siècle de métier apicole et d'un positionnement premium sur les marchés européens. En Chine, la maison avait sécurisé sa distribution et sa présence en rayon dans la grande distribution moderne, sans que l'activité se comporte pour autant comme celle d'un premium européen.
 
 ## Le défi
 
-Les ventes reculaient mois après mois, tandis que la distribution se maintenait. Le diagnostic se résumait à une équation : les consommateurs chinois ne disposaient d'aucune raison explicite de payer près du double pour un pot Langnese quand un miel local figurait juste à côté en rayon. Le marché avait évolué, sous l'effet de nouveaux formats, de nouveaux canaux et de nouvelles occasions de consommation, et le playbook chinois de la marque n'avait pas suivi.
+Les ventes reculaient mois après mois, alors que la distribution se maintenait. Le diagnostic tenait en une équation simple : aucun consommateur chinois n'avait de raison explicite de payer près du double pour un pot Langnese quand un miel local trônait juste à côté en rayon. Le marché s'était transformé, porté par de nouveaux formats, de nouveaux canaux et de nouvelles occasions de consommation, et le playbook chinois de la marque n'avait pas suivi.
 
 ## Notre approche
 
-La méthode a consisté à repartir des fondamentaux. Plutôt que de retoucher le plan existant, nous avons refait l'intégralité du diagnostic.
+Plutôt que de retoucher le plan existant, nous avons rouvert le dossier au complet.
 
 - Cartographie de la chaîne de distribution, de l'import au gros jusqu'au retail
-- Benchmark des concurrents locaux : positionnement, prix et contenus sur les grandes plateformes
-- Études consommateurs dans les villes de premier et de deuxième rang, pour isoler les déclencheurs d'achat réels
-- Identification de segments sous-servis et d'occasions de consommation inédites, sur lesquels un miel européen premium pouvait légitimement gagner
+- Benchmark des concurrents locaux : positionnement, prix, contenus sur les grandes plateformes
+- Études consommateurs dans les villes de premier et de deuxième rang, pour isoler les vrais déclencheurs d'achat
+- Repérage des segments sous-servis et des occasions inédites, où un miel européen premium pouvait gagner sa place
 
-Sur cette base, nous avons retravaillé l'approche conjointement avec le client et le distributeur : nouveaux canaux de distribution, formats produits ajustés aux usages réels du miel chez les consommateurs chinois, et contenus plateforme par plateforme bâtissant un argumentaire premium crédible.
+Sur ces bases, l'approche a été remise sur le métier avec le client et le distributeur : nouveaux canaux de distribution, formats produits taillés sur l'usage réel du miel chez les consommateurs chinois, contenus plateforme par plateforme pour bâtir un argumentaire premium crédible.
 
 ## Résultats
 
-La courbe s'est inversée. La marque et le distributeur se sont accordés sur neuf piliers de croissance, devenus le plan opérationnel de la phase suivante. Langnese a ouvert de nouveaux canaux régionaux, sur des territoires où la marque était absente. L'engagement du distributeur s'est reconstitué, et les consommateurs chinois disposaient enfin de raisons concrètes de choisir Langnese face aux alternatives locales, au-delà du seul prix affiché.
+La courbe s'est inversée. Marque et distributeur se sont accordés sur neuf piliers de croissance, devenus le plan opérationnel de la phase suivante. Langnese a ouvert de nouveaux canaux régionaux, sur des territoires jusque-là blancs sur la carte. L'engagement du distributeur s'est reconstitué, et les consommateurs chinois disposaient enfin de raisons concrètes, au-delà du prix, de choisir Langnese face aux alternatives locales.

@@ -11,13 +11,13 @@ heroImageAlt: "Différence entre hébergement et nom de domaine pour un site en 
 
 ## Hébergement web en Chine : la méthode pour un impact marketing maximal
 
-La Chine compte plus d'un milliard d'internautes et son commerce en ligne avance à une cadence que rares économies tiennent. Toute marque qui prétend y exister installe ses serveurs sur le territoire. Le ticket d'entrée, lui, reste salé. Planification, conformité, lecture fine de l'écosystème : tout se joue avant même la mise en ligne.
+La Chine compte plus d'un milliard d'internautes et son commerce en ligne avance à une cadence que peu d'économies tiennent. Toute marque qui prétend y exister installe ses serveurs sur le territoire. Le ticket d'entrée, lui, reste salé. Planification, conformité, lecture fine de l'écosystème : tout se joue avant même la mise en ligne.
 
 Trois piliers tiennent la présence d'un site derrière la Grande Muraille numérique. Un [hébergement local maîtrisé](/fr/se-developper-en-chine/site-web), un référencement calibré pour Baidu, une interface taillée pour les usages chinois. Le guide qui suit déroule chaque étape et précise les passerelles à monter avec les places de marché et les moteurs locaux.
 
 ## Pourquoi l'hébergement local fait la différence
 
-Héberger en Chine n'a rien d'une formalité technique. La Grande Muraille numérique filtre les flux et avantage les sites posés sur le territoire. À l'arrivée, un site hébergé à l'étranger charge plus lentement, bute sur des problèmes d'accès, finit parfois bloqué.
+Héberger en Chine n'a rien d'une formalité technique. La Grande Muraille numérique filtre les flux et avantage les sites posés sur le territoire. Au bout du compte, un site hébergé à l'étranger charge plus lentement, bute sur des problèmes d'accès, finit parfois bloqué.
 
 Trois bénéfices se mesurent dès la mise en service :
 
@@ -27,7 +27,7 @@ Trois bénéfices se mesurent dès la mise en service :
 
 ## Les étapes d'un hébergement réussi
 
-Le parcours passe par plusieurs étapes critiques. Chacune conditionne le bon fonctionnement du site, sa conformité et son accueil par le public visé.
+Le parcours passe par plusieurs étapes critiques. Chacune conditionne le bon fonctionnement du site, sa conformité, son accueil par le public visé.
 
 ### Enregistrer un nom de domaine chinois
 
@@ -50,7 +50,7 @@ Une fois le domaine acquis, l'hébergeur doit poser ses serveurs en Chine contin
 #### Les critères à examiner
 
 * **Localisation des serveurs :** vérifier que les machines tournent physiquement en Chine continentale, gage de temps de chargement compétitifs et de conformité claire.
-* **Évolutivité :** retenir une offre calibrée sur le trafic attendu, le stockage requis et la trajectoire de croissance.
+* **Évolutivité :** retenir une offre calibrée sur le trafic attendu, le stockage requis, la trajectoire de croissance.
 * **Sécurité :** s'assurer que le prestataire applique des protocoles solides, du pare-feu à la protection anti-DDoS en passant par la politique de sauvegarde.
 * **Support :** privilégier les acteurs qui assurent une assistance 24/7 en anglais et en chinois.
 
@@ -117,7 +117,7 @@ La localisation aligne le site sur les attentes culturelles et linguistiques des
 
 * Langue : l'intégralité des contenus passe en chinois simplifié.
 * Design : visuels, couleurs et symboles tiennent la corde culturelle. Le rouge, par exemple, évoque la prospérité dans la culture chinoise.
-* Formats : dates, unités et monnaie s'ajustent aux standards locaux.
+* Formats : dates, unités, monnaie s'ajustent aux standards locaux.
 * Mobile : vu le poids du smartphone en Chine, le site se conçoit d'abord pour l'écran mobile.
 
 ### Tester et vérifier la conformité
@@ -148,7 +148,7 @@ Une fois le site en ligne, l'enjeu bascule sur le marketing.
 
 * **Référencement (SEO) :** travail des mots-clés locaux et collecte de backlinks auprès de sites chinois crédibles. Une agence digitale locale affine la stratégie pour gagner en visibilité organique sur Baidu.
 * **Réseaux sociaux :** WeChat, Weibo et Douyin restent les terrains de référence pour parler à l'audience. Contenus localisés, campagnes ciblées et jonction avec les profils sociaux relèvent d'une agence social media chinoise rompue aux usages locaux.
-* **Partenariats KOL :** la collaboration avec des Key Opinion Leaders chinois construit la crédibilité et draine du trafic qualifié. Les KOL connectent la marque à des segments précis et renforcent la confiance.
+* **Partenariats KOL :** la collaboration avec des Key Opinion Leaders chinois construit la crédibilité et draine du trafic qualifié. Les KOL connectent la marque à des segments précis et solidifient la confiance.
 * **Intégration e-commerce :** la connexion à Tmall et JD.com ouvre la voie à des arbitrages cross-canal pertinents.
 
 ### Maintenir et faire évoluer le site

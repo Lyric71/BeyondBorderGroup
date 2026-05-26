@@ -15,9 +15,9 @@ keyTakeaways:
   - "Trois régions, trois moments de catégorie. Vraiment financés. Le reste du pays touche la distribution, pas le budget."
 ---
 
-Les opérateurs sur le terrain font le même constat. L'ancien manuel de croissance a vécu.
+Les opérateurs de terrain font le même constat. L'ancien manuel de croissance a vécu.
 
-Pendant dix ans, les [marques internationales](/fr/entrer-en-chine/conseil-en-entree-de-marche) ont traité la Chine comme une machine à débit. Un produit phare, une égérie taillée pour le buzz, un déploiement national, et la taille du marché finissait le travail. Tant que la demande progressait à deux chiffres, la mécanique tournait. En 2025, elle exhibe surtout ses limites. Croissance atone, consommateurs sur la défensive, concurrents domestiques affûtés : le vieux schéma ne tient plus. Les groupes qui s'entêtent dans la réponse nationale unique peuvent y engloutir des budgets entiers sans peser un gramme sur la préférence de marque.
+Pendant dix ans, les [marques internationales](/fr/entrer-en-chine/conseil-en-entree-de-marche) ont traité la Chine comme une machine à débit. Un produit phare, une égérie taillée pour le buzz, un déploiement national, et la taille du marché finissait le travail. Tant que la demande progressait à deux chiffres, la mécanique tournait. En 2025, elle expose surtout ses limites. Croissance atone, consommateurs sur la défensive, concurrents domestiques affûtés : le vieux schéma ne tient plus. Les groupes qui s'entêtent dans la réponse nationale unique peuvent y engloutir des budgets entiers sans peser un gramme sur la préférence de marque.
 
 ## Du message national à la pertinence locale
 
@@ -30,8 +30,8 @@ Les marques qui gagnent ont changé la question qu'elles se posent. La conquête
 Ce basculement éloigne de la localisation cosmétique pour pousser vers des choix structurels, ancrés dans la durée :
 
 - Cibler des villes et des bassins identifiés, plutôt que dérouler une campagne nationale uniforme.
-- Bâtir les plans d'activation sur les routines réelles des habitants, pas sur l'imagerie touristique.
-- Concevoir des créations qui restituent un vécu, plutôt que recycler les marqueurs culturels attendus.
+- Bâtir les plans d'activation sur les routines réelles des habitants, et non sur l'imagerie touristique.
+- Concevoir des créations qui restituent un vécu, plutôt que de recycler les marqueurs culturels attendus.
 
 Une maison de luxe qui investit Chengdu en s'appuyant sur la confiance culturelle de la ville, une marque sportive qui rénove les terrains de quartier plutôt que d'orchestrer un événement national : voilà le mouvement à l'œuvre. La marque renonce à parler à toute la Chine. Elle choisit un terrain et soigne l'exécution.
 
@@ -63,7 +63,7 @@ Pendant ce temps, la Gen Z des villes de rang inférieur affiche, sur certaines 
 
 Il n'existe plus de recette nationale pour gagner la Chine.
 
-Ce qui fonctionne aujourd'hui prend la forme d'un portefeuille de paris locaux. Certains massifs, d'autres modestes, quelques-uns voués à s'éteindre. La méthode est déjà celle de nombreuses marques chinoises performantes. Elle s'imposera, à mesure, comme la grille de lecture des opérateurs étrangers.
+Ce qui fonctionne aujourd'hui prend la forme d'un portefeuille de paris locaux. Certains massifs, d'autres modestes, quelques-uns voués à s'éteindre. La méthode est déjà celle de nombreuses marques chinoises performantes. Elle s'imposera, à mesure, en grille de lecture des opérateurs étrangers.
 
 Un portefeuille pragmatique articule en général :
 
@@ -86,7 +86,7 @@ Trois inflexions comptent vraiment :
 - **Donner du jeu aux équipes locales.** La localisation profonde réclame des profils proches des plateformes, de la culture et du retail. Le siège fixe le cadre, il ne dicte pas chaque mouvement.
 - **Financer l'apprentissage autant que les lancements.** Certaines idées ne passeront pas à l'échelle. Tout l'enjeu consiste à savoir si chaque test affine la lecture des terrains où la marque peut gagner.
 
-Les marques qui s'adapteront le plus vite seront celles qui cessent de réduire la Chine à une ligne de tableur pour la lire comme un ensemble d'opportunités mobiles.
+Les marques qui s'adapteront le plus vite seront celles qui cessent de réduire la Chine à une ligne de tableur pour la lire en ensemble d'opportunités mobiles.
 
 ![](/Images/insights/2024/06/localization-2-1-1024x647.png)
 
@@ -98,4 +98,4 @@ BBG accompagne les marques internationales qui perçoivent ce basculement et che
 
 Notre rôle : faire passer les équipes du plan national unique au portefeuille structuré de paris chinois. Le périmètre couvre la stratégie de villes et de bassins, les feuilles de route plateformes sur Douyin, Xiaohongshu, WeChat, Tmall, JD et d'autres, la localisation des expériences de marque et de commerce, sans dénaturer l'ADN global.
 
-L'objectif tient en une ligne. Moins de course derrière une « échelle Chine » abstraite, davantage de pertinence concrète là où la marque a une véritable chance de se distinguer.
+L'objectif tient en une ligne. Moins de course derrière une « échelle Chine » abstraite, davantage de pertinence concrète là où la marque a une vraie chance de se distinguer.

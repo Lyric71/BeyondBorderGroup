@@ -15,7 +15,7 @@ heroImageAlt: "Visuels de produits Taobao générés par IA"
 
 ## Une expérience client repensée
 
-L'IA rebat les cartes de l'expérience d'achat sur le marché chinois. Sur Tmall comme sur JD.com, la personnalisation pilotée par les algorithmes pousse des recommandations calibrées à partir de l'historique de navigation et des préférences de l'utilisateur. Les essayages virtuels, à l'image de ceux déployés par la marque de cosmétiques Perfect Diary, laissent le consommateur tester un produit avant l'achat. À l'arrivée : un taux de retour qui recule et une satisfaction qui monte.
+L'IA rebat les cartes de l'expérience d'achat sur le marché chinois. Sur Tmall comme sur JD.com, la personnalisation pilotée par les algorithmes pousse des recommandations calibrées à partir de l'historique de navigation et des préférences de l'utilisateur. Les essayages virtuels, à l'image de ceux déployés par la marque de cosmétiques Perfect Diary, permettent au consommateur de tester un produit avant l'achat. Au bout du compte : un taux de retour qui recule, une satisfaction qui monte.
 
 ## Des coûts opérationnels en baisse
 
@@ -29,7 +29,7 @@ Les humains numériques gagnent du terrain dans les stratégies pilotées par IA
 
 ## Une intégration sur toute la chaîne de valeur
 
-L'IA s'étend désormais à toute la chaîne de valeur de l'e-commerce chinois. Taobao et Pinduoduo la mobilisent à chaque étage, des chatbots de service client à l'analyse fine de données qui nourrit les [campagnes](/fr/se-developper-en-chine/campagnes) marketing. Cette diffusion fluidifie les opérations, ancre les décisions dans la donnée et personnalise les interactions client à grande échelle.
+L'IA s'étend désormais à toute la chaîne de valeur de l'e-commerce chinois. Taobao et Pinduoduo la mobilisent à chaque étage, des chatbots de service client à l'analyse fine de données qui nourrit les [campagnes](/fr/se-developper-en-chine/campagnes) marketing. Cette diffusion fluidifie les opérations, ancre les décisions dans la donnée, personnalise les interactions client à grande échelle.
 
 ## Les tendances à venir
 

@@ -21,18 +21,18 @@ order: 3
 
 ## La marque
 
-Depuis 1982, Master Martini accompagne les pâtissiers et boulangers. La maison propose matières premières de haute qualité, semi-finis et produits finis, sélectionnés et fabriqués pour relever la production des cuisines professionnelles.
+Depuis 1982, Master Martini accompagne pâtissiers et boulangers. La maison propose matières premières de haute qualité, semi-finis et produits finis, sélectionnés et fabriqués pour relever le niveau des cuisines professionnelles.
 
 ## Le défi
 
-La mission portait sur les comptes Master Martini Asia couvrant l'ensemble de la zone : Malaisie, Hong Kong, Singapour, Indonésie et Thaïlande. Objectif : faire progresser la notoriété auprès d'une audience précise, celle des boulangers et chefs en exercice. Une catégorie de professionnels occupés, qui ne consulte pas les réseaux pour passer le temps mais qui suit ce qui élève sa pratique.
+La mission portait sur les comptes Master Martini Asia couvrant toute la zone : Malaisie, Hong Kong, Singapour, Indonésie, Thaïlande. Objectif : faire monter la notoriété auprès d'un public précis, celui des boulangers et chefs en exercice. Des professionnels occupés, qui ne consultent pas les réseaux pour passer le temps, mais qui suivent ce qui élève leur pratique.
 
 ## Notre approche
 
-Une stratégie coordonnée a été déployée sur Instagram et Facebook, pour s'adresser aux chefs en leur démontrant les usages concrets des produits Master Martini en cuisine. Point de départ : des recettes esthétiques et reproductibles, portées par une photographie soignée et des vidéos en pas-à-pas. Sont venues s'ajouter des sessions en direct, où des chefs reconnus mettaient les produits à l'épreuve dans des préparations réelles et répondaient aux questions des spectateurs en temps réel. La marque y a gagné en proximité et en accessibilité.
+Une stratégie coordonnée a été déployée sur Instagram et Facebook, pour parler aux chefs en leur montrant les usages concrets des produits Master Martini en cuisine. Point de départ : des recettes esthétiques et reproductibles, servies par une photographie soignée et des vidéos en pas-à-pas. À cela se sont ajoutées des sessions en direct où des chefs reconnus mettaient les produits à l'épreuve dans des préparations réelles, et répondaient aux questions en temps réel. La marque y a gagné en proximité et en accessibilité.
 
-Des concours ont également été conçus, invitant les chefs à partager leurs créations sous un hashtag dédié, en échange de récompenses. Un flux régulier de contenus utilisateurs s'est installé, suivi du bouche-à-oreille attendu. Enfin, cours et ateliers en ligne sont venus traiter techniques et tendances du moment, afin que chaque chef reparte avec un savoir-faire mobilisable dès le service suivant.
+Des concours ont également vu le jour, qui invitaient les chefs à partager leurs créations sous un hashtag dédié, contre récompenses. Un flux régulier de contenus utilisateurs s'est installé, suivi du bouche-à-oreille attendu. Cours et ateliers en ligne sont enfin venus traiter techniques et tendances du moment, pour que chaque chef reparte avec un savoir-faire mobilisable au service suivant.
 
 ## Résultats
 
-Le dispositif a fait connaître la marque à de nouveaux chefs, la notoriété a progressé, les abonnés ont suivi au rythme prévu. La visibilité s'est traduite par une véritable traction commerciale, avec une hausse des demandes et des commandes côté distribution. Les contenus ont également ouvert l'accès à de nouveaux marchés régionaux, en plaçant les produits sous les yeux de professionnels jusqu'alors hors de portée.
+Le dispositif a fait connaître la marque à de nouveaux chefs, la notoriété a progressé, les abonnés ont suivi au rythme prévu. La visibilité s'est traduite par une vraie traction commerciale, avec une hausse des demandes et des commandes côté distribution. Les contenus ont également ouvert l'accès à de nouveaux marchés régionaux, en plaçant les produits sous les yeux de professionnels jusque-là hors de portée.

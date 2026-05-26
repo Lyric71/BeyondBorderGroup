@@ -26,7 +26,7 @@ Chaque utilisateur dispose d'un QR personnel, scanné par d'autres pour entrer e
 
 ### Une intégration profonde au quotidien
 
-Le QR code tient désormais une place centrale dans la société chinoise sans numéraire. Du café du matin au métro, il fluidifie des dizaines de gestes quotidiens. WeChat et Alipay portent une responsabilité directe dans cette adoption massive. Tous deux ont arrimé le QR à leur infrastructure de paiement. Pour une marque accompagnée par une agence de marketing digital en Chine, le scan est le geste naturel d'entrée en contact avec un consommateur déjà suréquipé.
+Le QR code occupe désormais une place centrale dans la société chinoise sans numéraire. Du café du matin au métro, il fluidifie des dizaines de gestes quotidiens. WeChat et Alipay portent une responsabilité directe dans cette adoption massive. Tous deux ont arrimé le QR à leur infrastructure de paiement. Pour une marque accompagnée par une agence de marketing digital en Chine, le scan est le geste naturel d'entrée en contact avec un consommateur déjà suréquipé.
 
 ### Vitesse et simplicité d'exécution
 
@@ -85,7 +85,7 @@ L'adoption de WeChat Pay ne fluidifie pas seulement l'achat. Elle signale au con
 
 Les mini-programmes WeChat sont des applications légères hébergées au sein de la plateforme. Achat en ligne, réservation, support client : ils couvrent un large périmètre. Un QR code y conduit directement et enrichit l'expérience d'usage.
 
-Posé sur un emballage, un QR peut ouvrir un mini-programme de fidélité ou afficher des informations produit complémentaires. La mécanique est très répandue dans l'e-commerce chinois pour encourager la rétention et nourrir le réachat.
+Posé sur un emballage, un QR peut ouvrir un mini-programme de fidélité ou afficher des informations produit complémentaires. La mécanique est très répandue dans l'e-commerce chinois pour encourager la rétention et alimenter le réachat.
 
 ### Faire connaître un événement ou une offre
 

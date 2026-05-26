@@ -1,0 +1,224 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const offices = [
+  {
+    city: 'Shanghai',
+    role: 'Operativer Standort',
+    desc: 'Hauptbüro der Gruppe. Strategie, eCommerce-Betrieb, Social Commerce, Produktion. Auch Heimat von Hub Studio und ChinaWebFoundry.',
+  },
+  {
+    city: 'Hongkong',
+    role: 'Cross-Border-Zentrale',
+    desc: 'Sitz von BeyondBorderGroup LTD. Cross-Border-Strukturen, Vertragsarchitektur, regionale Steuerung.',
+  },
+  {
+    city: 'Paris',
+    role: 'Markteintritt für Europa',
+    desc: 'Erste Anlaufstelle für europäische Marken. Markteintrittsberatung, regulatorische Vorbereitung, Stakeholder-Begleitung.',
+  },
+];
+
+const leadership = [
+  {
+    name: 'Cyril Drouin',
+    role: 'Gründer und CEO',
+    bio: 'Zwanzig Jahre im chinesischen Markt. Frühere Funktionen bei Publicis Shanghai und in Fortune-500-Konzernen mit China-Geschäft. Spezialist für Cross-Border-Commerce, Markteintritt und KOL-Strategie.',
+    image: '/Images/team/cyril-drouin.png',
+  },
+];
+---
+
+<Layout
+  title="Über Beyond Border Group | Unsere Agentur in China"
+  description="Beyond Border Group ist eine Marketing- und eCommerce-Agentur mit Sitz in Shanghai, Hongkong und Paris. Zwanzig Jahre Erfahrung im chinesischen Markt, Senior-Operatoren an der Spitze."
+>
+
+  <section class="hero-fullbleed">
+    <picture>
+      <img
+        src="/Images/team/team-photo.png"
+        alt=""
+        class="hero-fullbleed__image"
+        width="1600"
+        height="900"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </picture>
+    <div class="hero-fullbleed__overlay" aria-hidden="true"></div>
+
+    <div class="container hero-fullbleed__inner">
+      <div class="hero-fullbleed__copy">
+        <span class="eyebrow eyebrow--on-dark">Über uns</span>
+        <h1 class="hero-fullbleed__title">Eine Agentur, geführt von Senior-Operatoren, die Tag für Tag im chinesischen Markt arbeiten.</h1>
+        <p class="hero-fullbleed__lead">
+          Beyond Border Group bringt internationale Marken nach China und führt sie dort durch das Tagesgeschäft auf Tmall, JD, Douyin, WeChat und RED. Drei Büros: Shanghai, Hongkong und Paris.
+        </p>
+        <div class="hero-fullbleed__actions">
+          <a class="btn btn--primary" href="/de/kontakt">Kontakt aufnehmen</a>
+          <a class="btn btn--ghost-light" href="/de/referenzen">Referenzen ansehen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <header class="section-header">
+        <span class="eyebrow">Unser Ansatz</span>
+        <h2>Wir arbeiten, wo das Geschäft entsteht. Nicht daneben.</h2>
+      </header>
+
+      <article class="prose">
+        <p>
+          Die Senioren von BBG haben viele Jahre bei Publicis Shanghai und in Fortune-500-Konzernen mit chinesischen Geschäftsfeldern verbracht. Markenstrategie, Media-Einkauf, eCommerce-Betrieb, Social Commerce auf Douyin, WeChat und RED, Produktlokalisierung. Markteintritt vom Geschäftsmodell über die Vertriebspartnerwahl bis zur regulatorischen Umsetzung. Content-Produktion in grossem Umfang, klassisch im Studio wie über KI-Pipelines.
+        </p>
+        <p>
+          Wir arbeiten auf den Plattformen, mit den Budgets, unter Termindruck. Vom Spielfeldrand beraten ist nicht unser Geschäft. Wir setzen mit dem Team in Shanghai an dem Punkt an, an dem die Entscheidung getroffen wird, und bleiben dort, bis der Verkauf im System ankommt.
+        </p>
+        <p>
+          2023 sind wir unabhängig geworden, um Strategie und Umsetzung unter einem Dach zu vereinen, mit denselben Senioren an der Spitze beider Bereiche. Die Erfahrung ist dieselbe. Nur die Struktur ist neu.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">Standorte</span>
+        <h2>Drei Büros, eine Gruppe.</h2>
+        <p class="section-header__lead">
+          Shanghai ist das operative Herz. Hongkong trägt die Cross-Border-Architektur. Paris ist der erste Kontakt für europäische Marken, die nach China gehen.
+        </p>
+      </header>
+
+      <div class="offices-grid">
+        {offices.map((o) => (
+          <div class="office-card">
+            <span class="office-card__city">{o.city}</span>
+            <span class="office-card__role">{o.role}</span>
+            <p class="office-card__desc">{o.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <header class="section-header">
+        <span class="eyebrow">Geschäftsführung</span>
+        <h2>An der Spitze des Teams.</h2>
+      </header>
+
+      {leadership.map((l) => (
+        <div class="leader-card">
+          <div class="leader-card__photo">
+            <img src={l.image} alt={l.name} loading="lazy" decoding="async" width="320" height="320" />
+          </div>
+          <div class="leader-card__body">
+            <h3 class="leader-card__name">{l.name}</h3>
+            <span class="leader-card__role">{l.role}</span>
+            <p class="leader-card__bio">{l.bio}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section section--tight section--alt">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-card__copy">
+          <span class="eyebrow">Sprechen wir</span>
+          <h2>Sie denken über China nach? Lassen Sie uns bei einem Kaffee darüber sprechen.</h2>
+          <p>
+            Antworten tut jemand aus dem Senior-Team, kein Chatbot, kein Verkaufstrichter.
+          </p>
+          <div class="cta-card__actions">
+            <a href="/de/kontakt" class="btn btn--primary">Gespräch beginnen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .offices-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .office-card {
+    padding: 1.75rem;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+  }
+  .office-card__city {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bbg-ink);
+    margin-bottom: 0.25rem;
+  }
+  .office-card__role {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--bbg-blue);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.85rem;
+  }
+  .office-card__desc {
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--bbg-text);
+    margin: 0;
+  }
+
+  .leader-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-top: var(--space-6);
+  }
+  .leader-card__photo img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .leader-card__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--bbg-ink);
+    margin: 0 0 0.25rem;
+  }
+  .leader-card__role {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--bbg-blue);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  .leader-card__bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--bbg-text);
+    margin: 0;
+  }
+
+  @media (max-width: 800px) {
+    .offices-grid { grid-template-columns: 1fr; }
+    .leader-card { grid-template-columns: 1fr; }
+    .leader-card__photo img { max-width: 200px; }
+  }
+</style>

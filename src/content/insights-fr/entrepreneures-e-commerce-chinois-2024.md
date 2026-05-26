@@ -12,13 +12,13 @@ heroImageAlt: "Jeune entrepreneure asiatique au travail dans sa petite entrepris
 
 ## La poussée des entrepreneures sur le numérique chinois
 
-L'essor du [commerce numérique en Chine](https://beyondbordergroup.com/ecommerce-services-in-china/) rebat les cartes pour les fondatrices, et 2024 confirme la bascule. Les plateformes ont fait sauter le verrou du capital initial, les outils marketing se démocratisent, et de nouvelles voies s'ouvrent aux femmes pour lancer puis faire grandir leur affaire. Le mouvement déborde les trajectoires individuelles. Il irrigue la croissance économique au sens large.
+L'essor du [commerce numérique en Chine](https://beyondbordergroup.com/ecommerce-services-in-china/) rebat les cartes pour les fondatrices, et 2024 confirme la bascule. Les plateformes ont fait sauter le verrou du capital initial, les outils marketing se démocratisent, de nouvelles voies s'ouvrent aux femmes pour lancer puis faire grandir leur affaire. Le mouvement déborde les trajectoires individuelles. Il irrigue la croissance économique au sens large.
 
 ## Des plateformes qui rebattent les cartes
 
 Les sociétés dirigées par des femmes avancent vite dans le paysage de l'[e-commerce chinois](https://beyondbordergroup.com/ecommerce-services-in-china/). Sur [Taobao](/fr/se-developper-en-chine/ecommerce-transfrontalier), elles figurent parmi les meilleurs vendeurs et occupent plus de la moitié du top 100 des boutiques les plus actives. La dynamique épouse une tendance mondiale : les femmes prennent la tête de jeunes structures à un rythme inédit.
 
-Les chiffres frappent par leur ampleur. L'an dernier, plus de 30 % des nouvelles boutiques ouvertes sur Taobao appartenaient à des femmes nées après 2000. Une part conséquente venait de villes de troisième ou quatrième rang. Preuve en est, le commerce numérique démocratise l'accès aux affaires bien au-delà des grandes métropoles.
+Les chiffres frappent par leur ampleur. L'an dernier, plus de 30 % des nouvelles boutiques ouvertes sur Taobao appartenaient à des femmes nées après 2000. Une part conséquente venait de villes de troisième ou quatrième rang. Preuve, s'il en fallait, que le commerce numérique démocratise l'accès aux affaires bien au-delà des grandes métropoles.
 
 ## Le coût caché des inégalités d'emploi
 
@@ -36,15 +36,15 @@ L'histoire de Lorina Tan illustre la bascule. Cette ancienne marketeuse philippi
 
 ## IA et technologie : des alliées de l'égalité
 
-L'arrivée de l'IA resserre encore l'écart d'opportunités entre hommes et femmes dans les affaires. L'IA aide à recruter plus juste, repère les écarts salariaux et propose des correctifs. Autant d'outils décisifs pour bâtir un environnement plus inclusif.
+L'arrivée de l'IA resserre encore l'écart d'opportunités entre hommes et femmes dans les affaires. L'IA aide à recruter plus juste, repère les écarts salariaux, propose des correctifs. Autant d'outils décisifs pour bâtir un environnement plus inclusif.
 
-Des plateformes comme DiverseUp, fondée par Angel Vossough, ouvrent la voie. En collectant des retours sur l'égalité au travail, DiverseUp aide les organisations à installer des pratiques plus équitables. Ces initiatives nourrissent un terreau favorable aux entrepreneures.
+Des plateformes comme DiverseUp, fondée par Angel Vossough, ouvrent la voie. En collectant des retours sur l'égalité au travail, DiverseUp aide les organisations à installer des pratiques plus équitables. Ces initiatives composent un terreau favorable aux entrepreneures.
 
 ## L'effet d'entraînement
 
 L'effet de l'entrepreneuriat féminin déborde les réussites individuelles. Il porte un message fort sur l'autonomie des femmes, et trouve un écho profond chez les consommateurs. Les marques qui défendent les causes féminines et l'égalité tissent des liens plus solides avec leur public.
 
-Les campagnes qui célèbrent les réussites féminines, du comité de direction aux coulisses créatives, montent en puissance. Elles mettent en lumière des parcours concrets et donnent envie à la génération suivante de tenter sa chance.
+Les campagnes qui célèbrent les réussites féminines, du comité de direction aux coulisses créatives, montent en puissance. Elles éclairent des parcours concrets et donnent envie à la génération suivante de tenter sa chance.
 
 ## Ce qui attend les femmes dans le commerce numérique
 
@@ -52,4 +52,4 @@ L'horizon s'annonce favorable. À mesure que les femmes investissent les platefo
 
 Le commerce numérique redessine l'ensemble de l'e-commerce chinois en donnant aux fondatrices les outils pour percer. La base d'un avenir plus inclusif et plus prospère se dessine.
 
-L'autonomisation des entrepreneures par le commerce numérique compte parmi les transformations majeures de l'économie actuelle. Grâce à ces plateformes, les femmes font tomber les obstacles et décrochent des résultats inédits. Un mouvement bénéfique pour elles. Indispensable à la croissance. La suite passera par un soutien continu à l'égalité dans le champ entrepreneurial.
+L'autonomisation des entrepreneures par le commerce numérique figure parmi les transformations majeures de l'économie actuelle. Grâce à ces plateformes, les femmes font tomber les obstacles et décrochent des résultats inédits. Un mouvement bénéfique pour elles. Indispensable à la croissance. La suite passera par un soutien continu à l'égalité dans le champ entrepreneurial.

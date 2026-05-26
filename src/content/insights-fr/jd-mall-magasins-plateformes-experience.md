@@ -26,7 +26,7 @@ Maison, électroménager, électronique grand public, beauty tech, aménagement 
 
 ## D'un géant de l'e-commerce à un mall de quartier
 
-JD Mall coiffe un réseau plus large de formats physiques : des malls dans les grandes villes et d'autres concepts dans les villes secondaires. L'objectif consiste à transposer hors ligne la force de JD dans l'électroménager, avec une expérience supérieure à celle des chaînes traditionnelles.
+JD Mall coiffe un réseau plus large de formats physiques : des malls dans les grandes villes, d'autres concepts dans les villes secondaires. L'objectif consiste à transposer hors ligne la force de JD dans l'électroménager, avec une expérience supérieure à celle des chaînes traditionnelles.
 
 Pour les marques internationales, JD ne se résume plus à une ligne dans un plan média « Tmall vs JD ». L'enseigne bâtit son propre parcours client de bout en bout, de l'application au salon.
 
@@ -48,7 +48,7 @@ Pour une marque internationale, la vraie question devient : quelle action concr�
 
 ## La stratégie des 5 km : le mall comme lieu de vie
 
-JD présente chaque mall comme un lieu de service pour un rayon de 5 km. Le but n'est pas le gros achat unique. C'est la visite régulière et la familiarité.
+JD présente chaque mall en lieu de service pour un rayon de 5 km. Le but n'est pas le gros achat unique. C'est la visite régulière et la familiarité.
 
 Pour y parvenir, l'enseigne superpose au retail des services de quartier : prestations de nettoyage via un mini programme, ateliers DIY pour enfants qui mobilisent les appareils en magasin, événements le week-end dans le hall. Des lancements aux séances de cosplay.
 
@@ -58,7 +58,7 @@ Le résultat tient debout : une destination où les consommateurs chinois passen
 
 Le modèle RH s'éloigne aussi de l'enseigne électronique classique.
 
-Les salariés JD pilotent les zones d'expérience et la qualité de service globale. Des spécialistes de marque tiennent vos espaces avec une consigne claire : éduquer et guider, sans pousser au volume. Beaucoup sont poussés à se comporter comme de petits KOL. Ils animent un compte Xiaohongshu avec un positionnement net, foodie, geek, expert rangement, tournent des vidéos courtes et lancent des lives depuis le magasin. De quoi convertir un mardi calme en journée de « magasin virtuel ».
+Les salariés JD pilotent les zones d'expérience et la qualité de service globale. Des spécialistes de marque tiennent vos espaces avec une consigne claire : éduquer et guider, sans pousser au volume. Beaucoup sont incités à se comporter en petits KOL. Ils animent un compte Xiaohongshu au positionnement net, foodie, geek, expert rangement, tournent des vidéos courtes et lancent des lives depuis le magasin. De quoi convertir un mardi calme en journée de « magasin virtuel ».
 
 Si JD Mall figure dans votre dispositif, vous arbitrez la façon dont ces équipes parleront de votre marque, et vous leur fournissez les démonstrations, les histoires, les contenus à partager.
 
@@ -72,7 +72,7 @@ Une recherche produit dans l'application JD peut afficher le mall le plus proche
 
 L'enjeu compte. L'investissement dans JD Mall se juge sur les ventes en magasin et sur l'effet d'entraînement sur l'ensemble de l'écosystème JD en ligne. Le moindre décalage d'assortiment, de prix ou de discours entre JD.com et JD Mall sera repéré instantanément par les visiteurs.
 
-Les marques qui s'en sortent le mieux traitent JD Mall comme un terrain d'essai, où contenu, merchandising et service se coordonnent avec leur stratégie JD.com.
+Les marques qui s'en sortent le mieux traitent JD Mall en terrain d'essai, où contenu, merchandising et service se coordonnent avec leur stratégie JD.com.
 
 ## Marque internationale : quels mouvements concrets
 

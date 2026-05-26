@@ -31,7 +31,7 @@ Sur le papier, l'opération paraît rapide et abordable. Dans les faits, elle n'
 
 Quasi toutes les marques étrangères passent par ce que le secteur appelle un TP, un Trade Partner. C'est une agence locale qui fait tourner la boutique en ligne au quotidien : configuration, fiches produits, contenu, service client, achat média, exécution des campagnes, partenariats [KOL](/fr/se-developper-en-chine/influence-et-kol) et coordination logistique. Tout se joue en mandarin, aux heures chinoises, sur des plateformes qui modifient leurs règles sans préavis. Aucun siège étranger ne pilote cela à distance.
 
-Un bon TP facture un forfait mensuel et une commission sur les ventes. Ajoutez les frais de plateforme, l'investissement média et la logistique en entrepôt sous douane. Comptez 30 à 40 % du chiffre d'affaires annuel visé absorbés par les opérations pendant les deux à trois premières années. J'ai vu des marques européennes de taille intermédiaire budgéter 500 000 dollars pour un lancement chinois et tout dépenser en six mois sans rien à montrer. Pour celles aux marges serrées, l'équation casse avant même de commencer.
+Un bon TP facture un forfait mensuel et une commission sur les ventes. Ajoutez les frais de plateforme, l'investissement média, la logistique en entrepôt sous douane. Comptez 30 à 40 % du chiffre d'affaires annuel visé absorbés par les opérations pendant les deux à trois premières années. J'ai vu des marques européennes de taille intermédiaire budgéter 500 000 dollars pour un lancement chinois et tout dépenser en six mois sans rien à montrer. Pour celles aux marges serrées, l'équation casse avant même de commencer.
 
 ### Le piège du positionnement premium
 
@@ -61,7 +61,7 @@ Encore faut-il savoir contre qui l'on joue. Ce que les consommateurs chinois ach
 
 ### La Chine punit le tourisme
 
-S'il faut tirer une leçon de mes vingt ans sur ce marché, la voici : la Chine ne récompense pas les visiteurs. Elle récompense les résidents. Les marques qui traitent la Chine comme un projet annexe, avec un petit budget de test, une équipe distraite et un horizon d'un an, échouent invariablement. Le budget ne suffit jamais à mener une vraie campagne. L'équipe n'est jamais assez proche pour réagir quand une plateforme bascule son algorithme du jour au lendemain.
+S'il faut tirer une leçon de mes vingt ans sur ce marché, la voici : la Chine ne récompense pas les visiteurs. Elle récompense les résidents. Les marques qui traitent la Chine en projet annexe, avec un petit budget de test, une équipe distraite et un horizon d'un an, échouent invariablement. Le budget ne suffit jamais à mener une vraie campagne. L'équipe n'est jamais assez proche pour réagir quand une plateforme bascule son algorithme du jour au lendemain.
 
 Toutes les marques n'ont pas vocation à entrer en Chine. Celles qui s'y lancent doivent s'engager. Tester avec discipline. Commencer par Douyin, pas par Tmall. Conduire une vraie étude avant d'expédier le premier carton. Budgéter le coût réel, pas le coût de brochure.
 

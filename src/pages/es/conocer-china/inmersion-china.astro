@@ -1,0 +1,2222 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const promises = [
+  {
+    title: 'Operadores al frente, no guías turísticos',
+    desc: 'Quienes dirigen las sesiones gestionan cuentas en esas mismas plataformas. Usted pregunta qué funciona y le contestan con la campaña de la semana pasada.',
+  },
+  {
+    title: 'Acceso de trabajo, no visitas de escaparate',
+    desc: 'Responsables de plataforma, directivos de MCN, operadores de marca. La mayoría se suman porque ya trabajan con nosotros. Verá paneles internos y números en vivo allí donde la empresa lo permita.',
+  },
+  {
+    title: 'Un plan a medida, no un dossier',
+    desc: 'Un taller el día tres o cuatro transforma lo que ha visto en acciones para su categoría, su presupuesto y su equipo. Lo cerramos por escrito cuando vuelve a casa.',
+  },
+];
+
+const formats = [
+  {
+    icon: 'talk',
+    title: 'Diálogos con expertos',
+    short: 'Plataformas · Operadores · MCN',
+    desc: 'Sesiones con quienes operan las plataformas, las cuentas de marca y las agencias de creadores. La sala está en la sala.',
+    points: ['Responsables de cuenta de plataforma', 'Operadores de marca de su categoría', 'Directivos de MCN y mánagers de creadores'],
+    color: '#269ADA',
+    colorSoft: '#E8F4FC',
+  },
+  {
+    icon: 'building',
+    title: 'Visitas a empresas',
+    short: 'Sedes · Estudios · Labs de IA',
+    desc: 'Recorrido por operaciones en funcionamiento. Las visitas de prensa no son el objetivo. Sistemas internos, allí donde el acceso lo permita.',
+    points: ['Centros de operación de plataformas', 'Estudios de producción de contenido y de livestream', 'Empresas de IA, retail tech y logística'],
+    color: '#0EA46C',
+    colorSoft: '#E6F5EE',
+  },
+  {
+    icon: 'store',
+    title: 'Recorridos por tienda',
+    short: 'Flagship · Smart retail · Nivel 3',
+    desc: 'Comportamiento del consumidor, flujos de pago y tecnología minorista observados en vivo, no contados.',
+    points: ['Flagships y tiendas de new retail', 'Formatos de smart retail y O2O', 'Distritos de nivel 3 donde el mainstream falla'],
+    color: '#7C5DFA',
+    colorSoft: '#F0EDFE',
+  },
+  {
+    icon: 'tools',
+    title: 'Talleres',
+    short: 'Aplicar · Decidir · Planificar',
+    desc: 'Convertir lo que ha visto en un plan operativo para su categoría, su presupuesto y el equipo que tiene que ejecutarlo.',
+    points: ['Evaluación de plataformas y canales', 'Diagnóstico de contenido e IA', 'Presupuesto, KPI y hoja de ruta a doce meses'],
+    color: '#E54B6E',
+    colorSoft: '#FCEAEF',
+  },
+];
+
+const tracks = [
+  {
+    name: 'eCommerce y digital',
+    tag: '4 días, Tmall + Douyin + JD + RED',
+    desc: 'Las plataformas que se llevan el 80 % de las transacciones de consumo. Cómo funcionan, cuánto cuestan y qué hace de verdad un operador en su día a día.',
+    when: 'Está entre seis y dieciocho meses del lanzamiento, o ya opera en plataformas y busca una lectura más afinada. Quiere ver a los operadores, los estudios y los paneles que hay detrás de los casos públicos.',
+    bullets: [
+      'Centros de operaciones de Tmall Global y JD Worldwide',
+      'Una marca que opera flagship Cross-Border y doméstico',
+      'Producción de contenido y plató de livestream en Douyin',
+      'MCN gestionando un porfolio de creadores de su categoría',
+      'Responsables de cuenta sobre mecánica y economía de plataforma',
+      'Un media buyer digital sobre CAC y conversión por categoría',
+    ],
+    pricing: 'De seis a diez participantes. Ocho semanas de antelación. Shanghái, con día opcional en Hangzhou.',
+    highlight: false,
+  },
+  {
+    name: 'IA y tecnología',
+    tag: '4 días, IA que opera en comercio',
+    desc: 'Dentro de los sistemas de IA que mueven contenido, comercio, retail y logística en China. Operadores, no vendedores.',
+    when: 'Lidera una iniciativa de transformación o tiene un P&L digital. Quiere ver qué entrega la IA en producción de verdad, con cifras de coste y resultados a la vista.',
+    bullets: [
+      'Empresa de producción de contenido con IA a escala',
+      'Sistemas de recomendación dentro de un operador eCommerce activo',
+      'Centro de atención al cliente con agentes de IA en mandarín',
+      'Tiendas smart retail con visión por ordenador',
+      'Almacén con robótica y visión artificial en producción',
+      'Asesor de privacidad y cumplimiento sobre PIPL y flujos de datos',
+    ],
+    pricing: 'De seis a diez participantes. Diez semanas de antelación. Shanghái y Shenzhen.',
+    highlight: true,
+  },
+  {
+    name: 'Retail y consumidor',
+    tag: '3 o 4 días, tiendas y comportamiento',
+    desc: 'Por detrás de las plataformas, las tiendas y los compradores reales. New retail, formatos smart y dinámicas de las ciudades de nivel 3.',
+    when: 'Su categoría se apoya en lo físico, o quiere entender al consumidor que ya decidió antes de aparecer en Tmall.',
+    bullets: [
+      'Flagships de marca y conceptos de new retail',
+      'Formatos smart retail con pago sin caja y visión artificial',
+      'Distritos comerciales y tráfico en hora punta',
+      'Visita a una ciudad de nivel 3 para estudiar la demanda mainstream',
+      'Responsable de innovación retail sobre integración O2O',
+      'Equipo de investigación de consumidor sobre segmentación por nivel de ciudad',
+    ],
+    pricing: 'De seis a diez participantes. Ocho semanas de antelación. Shanghái y una ciudad de segundo nivel.',
+    highlight: false,
+  },
+  {
+    name: 'Contenido y creadores',
+    tag: '4 días, livestream + KOL + MCN',
+    desc: 'El motor del content commerce. Estudios, agencias y los creadores que hoy lo hacen funcionar de verdad.',
+    when: 'Sus campañas dependen de creadores, o su categoría está pasando de la búsqueda al content commerce. Necesita saber con quién trabajar y cómo se redactan los acuerdos.',
+    bullets: [
+      'Dos sesiones de livestream en directo en Douyin y RED',
+      'MCN con cartera de creadores y rate cards',
+      'Productora de contenido sobre el pipeline creativo',
+      'Entrevista con un creador top sobre estrategia por niveles y dinámicas de categoría',
+      'Mánager de plataforma sobre mecánica de distribución de contenido',
+      'Operador de marca sobre KOL frente a KOC frente a contenido propio',
+    ],
+    pricing: 'De seis a diez participantes. Ocho semanas de antelación. Shanghái y Hangzhou.',
+    highlight: false,
+  },
+];
+
+const cities = [
+  {
+    name: 'Shanghái',
+    cn: '上海',
+    mono: 'SH',
+    sub: 'Sede comercial de casi todas las marcas en China. Tmall, Pinduoduo, las agencias, los estudios. Casi todas las expediciones arrancan aquí.',
+    brandColor: '#269ADA',
+    accent: '#1E7DB0',
+  },
+  {
+    name: 'Hangzhou',
+    cn: '杭州',
+    mono: 'HZ',
+    sub: 'La casa de Alibaba. Operaciones de Tmall y Taobao, polos de livestream commerce y todo el ecosistema MCN del delta del Yangtsé.',
+    brandColor: '#E54B6E',
+    accent: '#C73E5C',
+  },
+  {
+    name: 'Shenzhen',
+    cn: '深圳',
+    mono: 'SZ',
+    sub: 'Tencent y el cinturón tech. WeChat, hardware, labs de IA y la innovación retail que un año después viaja a Shanghái.',
+    brandColor: '#7C5DFA',
+    accent: '#5E45D6',
+  },
+  {
+    name: 'Pekín',
+    cn: '北京',
+    mono: 'BJ',
+    sub: 'Lujo, retail tradicional y sedes de marca. Útil cuando la categoría tira a premium o roza lo institucional.',
+    brandColor: '#0EA46C',
+    accent: '#088955',
+  },
+];
+
+const takeaways = [
+  {
+    icon: 'eye',
+    title: 'Dossier de briefing',
+    desc: 'Lectura previa, lista de contactos y contexto de categoría. Se envía catorce días antes de su vuelo.',
+  },
+  {
+    icon: 'document',
+    title: 'Transcripciones en vivo',
+    desc: 'Notas de trabajo de cada sesión con expertos, traducidas y enviadas la misma tarde.',
+  },
+  {
+    icon: 'avatar',
+    title: 'Directorio de contactos',
+    desc: 'Operadores, responsables de plataforma y creadores que conoció, con las presentaciones mantenidas calientes.',
+  },
+  {
+    icon: 'phone',
+    title: 'Llamada de seguimiento',
+    desc: 'Una hora de Q&A con el operador que dirigió el viaje, cuatro semanas después de aterrizar.',
+  },
+];
+
+const faqs = [
+  { cat: 'Programa', q: '¿Hasta qué punto se personaliza el programa?', a: 'Cada expedición se construye sobre el brief que nos envía. Llamada inicial, agenda preliminar en cinco días hábiles y dos rondas de iteración antes de cerrarla. Hay plantillas de track fijo para equipos que quieran un arranque rápido, pero la mayoría de los clientes hace un programa totalmente a medida.' },
+  { cat: 'Programa', q: '¿Pueden centrarse en nuestro sector concreto?', a: 'Sí. Hemos llevado expediciones para belleza, moda, alimentación y bebidas, automoción, lujo, hogar, infantil, mascotas y salud. Las visitas, los operadores y los casos se eligen para su categoría, no se sacan de un estante genérico.' },
+  { cat: 'Programa', q: '¿Cómo es un día tipo?', a: 'De nueve a siete. Una sesión con experto y una visita a empresa por la mañana. Recorrido por tienda o segunda visita por la tarde. El día cuatro o cinco hay taller. Las noches están libres salvo que reserve una cena de networking.' },
+  { cat: 'Programa', q: '¿Podemos traer a nuestra agencia o socios?', a: 'Sí. Cerca de un tercio de los grupos viene con su agencia principal, su socio tecnológico o su distribuidor. Ayuda a alinear a todo el equipo de trabajo en lo que es realista y lo que no, que es la mitad del valor del viaje.' },
+  { cat: 'Logística', q: '¿Cuánto duran los programas?', a: 'De tres a cinco días es lo habitual. Hacemos programas focalizados de dos días sobre un solo tema, como Douyin commerce, o extendemos a siete u ocho días para briefs multi-track que abarcan dos ciudades.' },
+  { cat: 'Logística', q: '¿Cuál es la mejor época para venir?', a: 'De marzo a mayo y de septiembre a noviembre. Evite el Año Nuevo Chino a finales de enero o en febrero, la Golden Week del 1 al 7 de octubre y los días alrededor del 618 en junio y del Double 11 en noviembre. Las operaciones se estiran durante los festivales y el acceso baja.' },
+  { cat: 'Logística', q: '¿Qué ciudades cubren?', a: 'La mayoría de los programas se ancla en Shanghái con días opcionales en Hangzhou para el ecosistema Alibaba o en Shenzhen para tecnología e IA. Pekín para lujo y retail tradicional. Visitas a ciudades de nivel 3 con dos días extra de planificación.' },
+  { cat: 'Logística', q: '¿Necesito hablar mandarín?', a: 'No. La interpretación profesional acompaña todas las sesiones con expertos, las visitas a empresas y los recorridos por tienda. Los intérpretes vienen informados sobre su categoría para que el vocabulario técnico aterrice limpio.' },
+  { cat: 'Logística', q: '¿Cuál es el tamaño del grupo?', a: 'De seis a diez personas. Ocho es el punto dulce. Los grupos más pequeños consiguen mejor acceso en las visitas y más espacio en las sesiones con expertos. No hacemos programas para grupos más grandes.' },
+  { cat: 'Coste', q: '¿Cuánto cuesta?', a: 'El precio por persona escala con el tamaño del grupo, la profundidad y el número de ciudades. Los programas de media semana en una sola ciudad suelen arrancar en cifras altas de cuatro dígitos por persona en euros. Los multiciudad con acceso a IA suben más. Cotizamos contra el brief real, no contra una lista de precios.' },
+  { cat: 'Coste', q: '¿Qué está incluido?', a: 'El programa completo: visitas a empresas, sesiones con expertos, recorridos por tienda, talleres, interpretación profesional, todo el transporte terrestre dentro de China entre puntos, materiales de trabajo y el informe posterior al viaje. Los vuelos y los hoteles no entran por defecto.' },
+  { cat: 'Coste', q: '¿Pueden encargarse de vuelos y hoteles?', a: 'Sí, como añadido. Trabajamos con hoteles aliados en Shanghái, Hangzhou y Shenzhen, sobre todo en el Bund o en el corredor de Jing\'an para Shanghái. Algunos clientes prefieren a su equipo corporativo de viajes. Ambas opciones funcionan.' },
+  { cat: 'Coste', q: '¿Cuáles son las condiciones de pago?', a: 'Cincuenta por ciento a la firma para confirmar fechas y reservar las visitas. El saldo, treinta días antes de la salida. Transferencia en USD o EUR para clientes extranjeros, RMB para los nacionales.' },
+  { cat: 'Acceso', q: '¿Qué empresas y plataformas traen?', a: 'Responsables de cuenta y líderes de categoría de Douyin, Xiaohongshu, Tmall, JD, WeChat y Pinduoduo, según el brief. Operadores de marca de su categoría. MCN. Empresas de IA y retail tech. La lista cambia con la agenda.' },
+  { cat: 'Acceso', q: '¿Podemos visitar empresas concretas que tengamos en mente?', a: 'Dígalo en la llamada inicial. Donde tenemos relación de trabajo, organizamos la visita. Donde no, lo decimos. Algunas empresas no abren sus puertas por confidencialidad. Le diremos cuáles.' },
+  { cat: 'Acceso', q: '¿Qué nivel de acceso real tenemos?', a: 'Paneles internos, sistemas de back office y datos de campaña en vivo allí donde la empresa lo permita, que suele ser la mayoría de las veces porque ya operamos con ellos. Va a ver cifras que no aparecen en ningún dossier público.' },
+  { cat: 'Acceso', q: '¿Podemos grabar sesiones o sacar fotos?', a: 'Fotos en espacios públicos y en casi todas las visitas, sí. La grabación se decide sesión por sesión. Algunos expertos hablan más abiertamente fuera de cámara y lo respetamos. El informe posterior al viaje recoge lo que se dijo.' },
+  { cat: 'Audiencia', q: '¿Quién suele venir?', a: 'Directivos C-level, directores de eCommerce y marketing, líderes de transformación digital, brand managers, socios de agencia. La mayoría de los grupos mezcla a quienes deciden con quienes ejecutan. Esa mezcla es parte de lo que hace que el taller funcione.' },
+  { cat: 'Después', q: '¿Qué pasa después de la expedición?', a: 'Un informe escrito en treinta días con lo que vimos y lo que recomendamos para su categoría. Dossier, directorio de contactos de toda la gente que conoció y una llamada de una hora con el operador principal cuatro semanas después de aterrizar.' },
+  { cat: 'Después', q: '¿Podemos contratar a Beyond Border Group para el seguimiento?', a: 'Sí, pero no es lo habitual. Cerca de un tercio de los clientes trabaja con nosotros después en entrada de mercado, operativa de tienda o asesoramiento. La expedición se vende por sí misma, sin pitch incorporado.' },
+];
+
+const faqCategories = ['Todas', 'Programa', 'Logística', 'Coste', 'Acceso', 'Audiencia', 'Después'];
+
+const icons: Record<string, string> = {
+  talk: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-4a8 8 0 1 1 16-4z"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="14" x2="13" y2="14"/></svg>`,
+  building: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="9" x2="9" y2="21"/><line x1="15" y1="9" x2="15" y2="21"/></svg>`,
+  store: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/><path d="M4 9h16"/></svg>`,
+  tools: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a5 5 0 1 1-7.1 7.1L3 18v3h3l4.6-4.6a5 5 0 0 1 7.1-7.1z"/><line x1="17" y1="7" x2="21" y2="3"/></svg>`,
+  compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16 8 13 13 8 16 11 11 16 8"/></svg>`,
+  rocket: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4c4 0 6 2 6 6-4 0-6 2-6 6-4 0-6-2-6-6 4 0 6-2 6-6z"/><circle cx="14" cy="10" r="1.5"/><path d="M8 16l-3 3M11 19l-2 2M5 13l-2 2"/></svg>`,
+  trend: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg>`,
+  eye: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>`,
+  document: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1.5"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg>`,
+  avatar: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>`,
+  phone: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.1 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg>`,
+  spark: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg>`,
+};
+---
+
+<Layout
+  title="Inmersión China | Programas dirigidos por operadores sobre eCommerce, IA, retail y contenido | Beyond Border Group"
+  description="Programas inmersivos de tres a cinco días en China. Operadores al frente. eCommerce, IA, retail, contenido y distribución. Diseñados a medida sobre su brief. Shanghái, Hangzhou, Shenzhen."
+>
+  <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
+  <article class="cbs">
+
+    {/* ---------- HERO ---------- */}
+    <section class="cbs-hero" data-hero>
+      <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
+        <img src="/Images/learn-china/hero-livestream-expedition.png" alt="Pequeño grupo de directivos extranjeros observando un estudio chino de livestream eCommerce en Shanghái durante una inmersión" />
+      </div>
+      <div class="cbs-hero__overlay" aria-hidden="true"></div>
+      <div class="cbs-hero__grain" aria-hidden="true"></div>
+
+      <div class="container cbs-hero__inner">
+        <nav class="cbs-hero__crumbs" aria-label="Breadcrumb">
+          <a href="/es">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <a href="/es/#services">Conocer China</a>
+        </nav>
+        <span class="eyebrow eyebrow--on-dark cbs-reveal">Inmersión China</span>
+        <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
+          <span class="cbs-hero__title-row">China va más rápido que</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent">el dossier en su pantalla.</span>
+          <span class="cbs-hero__title-row">Aterrice aquí y véalo</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">funcionar por usted mismo.</span>
+        </h1>
+        <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
+          Programas dirigidos por operadores para directivos que quieren una visión de
+          trabajo del mercado chino. eCommerce, IA, retail, contenido, distribución.
+          De tres a cinco días dentro del sistema que lo hace funcionar.
+        </p>
+        <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
+          <a href="/es/contacto" class="btn btn--primary cbs-magnetic">Planificar una inmersión</a>
+          <a href="#tracks" class="btn btn--ghost-light cbs-magnetic">Ver tracks de ejemplo</a>
+        </div>
+
+        <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
+          <div class="cbs-hero__meta-item">
+            <span class="cbs-hero__meta-num" data-counter="20" data-suffix="+">0</span>
+            <span class="cbs-hero__meta-label">años guiando equipos en China</span>
+          </div>
+          <div class="cbs-hero__meta-item">
+            <span class="cbs-hero__meta-num" data-counter="60" data-suffix="+">0</span>
+            <span class="cbs-hero__meta-label">operadores en nuestra red</span>
+          </div>
+          <div class="cbs-hero__meta-item">
+            <span class="cbs-hero__meta-num cbs-hero__meta-num--text">Varias</span>
+            <span class="cbs-hero__meta-label">ciudades por toda China</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#tracks" class="cbs-hero__scroll" aria-label="Bajar a la siguiente sección">
+        <span class="cbs-hero__scroll-line"></span>
+        <span class="cbs-hero__scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    {/* ---------- VALUE PROPOSITION ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <div class="cbs-value">
+          <div class="cbs-value__copy">
+            <span class="eyebrow">Lo que hacemos</span>
+            <h2>Diseñamos el programa, lo dirigimos y seguimos con usted después.</h2>
+            <p>
+              Veinte años operando flagships, campañas de contenido y acuerdos con
+              plataformas en China. El equipo que opera el mercado diseña el viaje y le
+              acompaña dentro. No hay un tour operador subcontratado por medio.
+            </p>
+          </div>
+
+          <ul class="cbs-promise">
+            <li>
+              <span class="eyebrow">Lo que puede esperar</span>
+            </li>
+            {promises.map((p) => (
+              <li class="cbs-promise__item">
+                <span class="cbs-promise__check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                </span>
+                <div>
+                  <h4>{p.title}</h4>
+                  <p>{p.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FORMATS (bento) ---------- */}
+    <section class="section cbs-svc-section">
+      <div class="container">
+        <header class="section-header section-header--split cbs-reveal">
+          <div>
+            <span class="eyebrow">Cómo funciona</span>
+            <h2>Cuatro formatos, un solo programa</h2>
+          </div>
+          <p class="cbs-svc-lead">
+            Cada inmersión mezcla los mismos cuatro bloques, ponderados según su brief.
+            Más sesiones de contexto cultural y un networking estructurado con los
+            otros seis a diez participantes del grupo.
+          </p>
+        </header>
+
+        <div class="cbs-svc-grid">
+          {formats.map((s, i) => (
+            <article
+              class="cbs-svc-card cbs-reveal"
+              style={`--svc-color: ${s.color}; --svc-soft: ${s.colorSoft}; --reveal-delay: ${i * 80}ms;`}
+              data-svc-card
+            >
+              <div class="cbs-svc-card__head">
+                <span class="cbs-svc-card__icon" set:html={icons[s.icon]} />
+                <span class="cbs-svc-card__short">{s.short}</span>
+              </div>
+              <h3 class="cbs-svc-card__title">{s.title}</h3>
+              <p class="cbs-svc-card__desc">{s.desc}</p>
+              <ul class="cbs-svc-card__points">
+                {s.points.map((p) => (
+                  <li>
+                    <span class="cbs-svc-card__bullet" aria-hidden="true"></span>
+                    <span>{p}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- TRACKS (tabbed showcase) ---------- */}
+    <section id="tracks" class="section section--alt cbs-models-section">
+      <div class="cbs-models-section__bg" aria-hidden="true">
+        <img src="/Images/learn-china/ai-discovery-shenzhen.png" alt="" loading="lazy" decoding="async" />
+      </div>
+      <div class="container">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Tracks de ejemplo</span>
+          <h2>Cuatro tracks para hacer tal cual, o recombinar a su brief</h2>
+          <p class="section-header__lead">
+            Cada inmersión se hace a medida. Estos cuatro tracks enseñan la forma de
+            una semana sobre el terreno. Cambie días, sume días o parta el viaje en
+            dos visitas separadas por seis meses.
+          </p>
+        </header>
+
+        <div class="cbs-tabs cbs-reveal" data-tabs>
+          <div class="cbs-tabs__nav" role="tablist">
+            {tracks.map((m, i) => (
+              <button
+                type="button"
+                class={`cbs-tabs__tab${i === 1 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 1 ? 'true' : 'false'}
+                aria-controls={`track-panel-${i}`}
+                id={`track-tab-${i}`}
+                data-tab-target={`track-panel-${i}`}
+              >
+                <span class="cbs-tabs__tab-label">{m.name}</span>
+                <span class="cbs-tabs__tab-tag">{m.tag}</span>
+                {m.highlight && <span class="cbs-tabs__tab-pop">Más demandado</span>}
+              </button>
+            ))}
+            <span class="cbs-tabs__indicator" aria-hidden="true"></span>
+          </div>
+
+          <div class="cbs-tabs__panels">
+            {tracks.map((m, i) => (
+              <div
+                class={`cbs-tabs__panel${i === 1 ? ' is-active' : ''}`}
+                role="tabpanel"
+                id={`track-panel-${i}`}
+                aria-labelledby={`track-tab-${i}`}
+                hidden={i !== 1}
+              >
+                <div class="cbs-tabs__panel-grid">
+                  <div class="cbs-tabs__lead">
+                    <span class="cbs-tabs__pillset">
+                      <span class="cbs-tabs__pill">{m.tag.split(',')[0].trim()}</span>
+                      <span class="cbs-tabs__pill">{m.tag.split(',')[1] ? m.tag.split(',')[1].trim() : ''}</span>
+                    </span>
+                    <h3 class="cbs-tabs__title">{m.name}</h3>
+                    <p class="cbs-tabs__desc">{m.desc}</p>
+                    <div class="cbs-tabs__when">
+                      <span class="cbs-tabs__when-label">Ideal para</span>
+                      <p>{m.when}</p>
+                    </div>
+                    <a href="/es/contacto" class="btn btn--primary cbs-magnetic">Planificar este track</a>
+                  </div>
+
+                  <div class="cbs-tabs__body">
+                    <div class="cbs-tabs__list-wrap">
+                      <span class="cbs-tabs__list-label">Lo que verá</span>
+                      <ul class="cbs-tabs__list">
+                        {m.bullets.map((b) => (
+                          <li>
+                            <span class="cbs-tabs__check" aria-hidden="true">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
+                            </span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="cbs-tabs__pricing">
+                      <span class="cbs-tabs__pricing-label">Formato</span>
+                      <span class="cbs-tabs__pricing-value">{m.pricing}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    {/* ---------- WORK CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cbs-cases-cta">
+          <a href="/es/proyectos" class="btn btn--secondary">Ver las marcas que hemos acompañado</a>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- CITIES ---------- */}
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Ciudades que cubrimos</span>
+          <h2>Dónde transcurre el programa de verdad</h2>
+          <p class="section-header__lead">
+            Shanghái para las plataformas y las agencias, con escapadas y extensiones
+            cuando el brief lo pide. Casi todos los grupos visitan una o dos ciudades.
+          </p>
+        </header>
+
+        <div class="cbs-platforms">
+          {cities.map((p, i) => (
+            <div
+              class="cbs-platform cbs-city cbs-reveal"
+              style={`--platform-color: ${p.brandColor}; --platform-accent: ${p.accent}; --reveal-delay: ${i * 90}ms;`}
+            >
+              <div class="cbs-platform__head">
+                <div class="cbs-platform__logo cbs-city__mark">
+                  <span class="cbs-city__mono">{p.mono}</span>
+                </div>
+                <span class="cbs-platform__cn" aria-hidden="true">{p.cn}</span>
+              </div>
+              <div class="cbs-platform__body">
+                <h3 class="cbs-platform__title">{p.name}</h3>
+                <p class="cbs-platform__sub">{p.sub}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- TAKEAWAYS (bento) ---------- */}
+    <section class="section section--alt cbs-ai-section">
+      <div class="container">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Lo que se lleva a casa</span>
+          <h2>La semana es la mitad del valor. Los treinta días siguientes traen la otra mitad.</h2>
+          <p class="section-header__lead">
+            Casi todos los grupos se acuerdan de las visitas. El seguimiento es lo que
+            cambia la reunión a la que entra cuando vuelve.
+          </p>
+        </header>
+
+        <div class="cbs-ai-bento">
+          <article class="cbs-ai-bento__card cbs-ai-bento__card--feature cbs-reveal">
+            <div class="cbs-ai-bento__feature-bg" aria-hidden="true"></div>
+            <div class="cbs-ai-bento__feature-body">
+              <span class="cbs-ai-bento__chip">En treinta días</span>
+              <h3>Un plan operativo para su equipo</h3>
+              <p>El taller del día tres o cuatro convierte lo que vio en un borrador de plan para su categoría. Lo cerramos por escrito cuando vuelve a casa y luego lo recorremos con su equipo en una llamada, una vez que lo hayan leído.</p>
+              <ul class="cbs-ai-bento__feature-stats">
+                <li>
+                  <span class="cbs-ai-bento__stat-num" data-counter="30" data-suffix=" días">0</span>
+                  <span class="cbs-ai-bento__stat-label">desde la salida hasta el informe escrito</span>
+                </li>
+                <li>
+                  <span class="cbs-ai-bento__stat-num" data-counter="60" data-suffix="+">0</span>
+                  <span class="cbs-ai-bento__stat-label">operadores detrás de la red</span>
+                </li>
+              </ul>
+            </div>
+            <span class="cbs-ai-bento__icon-large" aria-hidden="true" set:html={icons['spark']} />
+          </article>
+
+          {takeaways.map((b, i) => (
+            <article class={`cbs-ai-bento__card cbs-ai-bento__card--small cbs-reveal`} style={`--reveal-delay: ${i * 80}ms;`}>
+              <span class="cbs-ai-bento__icon" aria-hidden="true" set:html={icons[b.icon]} />
+              <h3>{b.title}</h3>
+              <p>{b.desc}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FAQ ---------- */}
+    <section class="section">
+      <div class="container container--narrow">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Veinte preguntas prácticas antes de dar el paso</h2>
+          <p class="section-header__lead">
+            Programa, logística, coste, acceso, audiencia y qué viene después. Filtre
+            por tema.
+          </p>
+        </header>
+
+        <div class="cbs-faq-filter cbs-reveal" data-faq-filter role="tablist" aria-label="Filtrar preguntas por categoría">
+          {faqCategories.map((c, i) => (
+            <button
+              type="button"
+              class={`cbs-faq-chip${i === 0 ? ' is-active' : ''}`}
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              data-faq-cat={c}
+            >
+              <span class="cbs-faq-chip__label">{c}</span>
+              <span class="cbs-faq-chip__count">{c === 'Todas' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="cbs-faq" data-faq-list>
+          {faqs.map((f, i) => (
+            <details
+              class="cbs-faq__item cbs-reveal"
+              data-faq-cat={f.cat}
+              open={i === 0}
+              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+            >
+              <summary class="cbs-faq__q">
+                <span class="cbs-faq__cat-tag">{f.cat}</span>
+                <span class="cbs-faq__q-text">{f.q}</span>
+                <span class="cbs-faq__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </summary>
+              <div class="cbs-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FINAL CTA ---------- */}
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <div class="cbs-cta">
+          <span class="eyebrow eyebrow--on-dark">Hablemos</span>
+          <h2 class="cbs-cta__title">¿Pensando en una inmersión para su equipo?</h2>
+          <p class="cbs-cta__lead">
+            Cuéntenos el brief, su sector y las ciudades que quiere cubrir. Le responde
+            un miembro sénior del equipo en menos de un día hábil con un programa
+            preliminar y un calendario. No le va a recibir una respuesta automática.
+          </p>
+          <div class="cbs-cta__actions">
+            <a href="/es/contacto" class="btn cbs-cta__btn-primary">Planificar una inmersión</a>
+            <a href="/es/proyectos" class="btn cbs-cta__btn-ghost">Ver nuestros casos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    /* ---------- Container narrow helper ---------- */
+    .cbs .container--narrow { max-width: 880px; }
+
+    /* ---------- REVEAL + MOTION ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .cbs-reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .cbs-reveal.is-in { opacity: 1; transform: translateY(0); }
+      .cbs-magnetic {
+        will-change: transform;
+        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      }
+    }
+
+    /* ---------- SCROLL PROGRESS ---------- */
+    .cbs-progress {
+      position: fixed; top: 0; left: 0; right: 0;
+      height: 3px; z-index: 1000;
+      background: transparent; pointer-events: none;
+    }
+    .cbs-progress__bar {
+      height: 100%; width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      transition: width 80ms linear;
+    }
+
+    /* ---------- HERO ---------- */
+    .cbs-hero {
+      position: relative;
+      min-height: clamp(420px, 60vh, 620px);
+      display: flex; align-items: center;
+      padding: clamp(72px, 10vh, 120px) 0 clamp(56px, 8vh, 96px);
+      color: var(--bbg-white);
+      overflow: hidden; isolation: isolate;
+    }
+    /* Tighten the bleed: hero starts right under the sticky nav, content sits closer to the top */
+    body.x:has(.cbs-hero) article.cbs section.cbs-hero,
+    body:has(.cbs-hero) article.cbs section.cbs-hero { padding-top: 104px !important; }
+    @media (max-width: 1024px) {
+      body.x:has(.cbs-hero) article.cbs section.cbs-hero,
+      body:has(.cbs-hero) article.cbs section.cbs-hero { padding-top: 92px !important; }
+    }
+    .cbs-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .cbs-hero__bg img {
+      width: 100%; height: 110%;
+      object-fit: cover; object-position: center;
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
+      transition: transform 80ms linear;
+      filter: saturate(0.95);
+    }
+    .cbs-hero__overlay {
+      position: absolute; inset: 0; z-index: -2;
+      background:
+        linear-gradient(110deg,
+          rgba(8, 18, 28, 0.92) 0%,
+          rgba(8, 18, 28, 0.72) 42%,
+          rgba(8, 18, 28, 0.32) 100%),
+        radial-gradient(120% 80% at 0% 100%,
+          rgba(38, 154, 218, 0.28) 0%,
+          rgba(38, 154, 218, 0) 60%);
+    }
+    .cbs-hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .cbs-hero__inner { max-width: 980px; position: relative; }
+    .cbs-hero__crumbs {
+      margin-bottom: var(--space-4);
+      font-size: var(--fs-small);
+      display: flex; gap: 0.5rem; align-items: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .cbs-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+    .cbs-hero__crumbs a:hover { color: var(--bbg-white); }
+    .cbs-hero__inner .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-3);
+      color: #9DDBF5;
+    }
+    .cbs-hero__title {
+      font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      max-width: 22ch;
+      font-weight: 700;
+      display: flex; flex-direction: column;
+      gap: 0.05em;
+    }
+    .cbs-hero__title-row { display: block; }
+    .cbs-hero__title-row--accent {
+      color: #9DDBF5;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -0.018em;
+    }
+    .cbs-hero__title-row--highlight {
+      position: relative;
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0 0.15em;
+    }
+    .cbs-hero__title-row--highlight::before {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 0.04em;
+      height: 0.18em;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transform-origin: left center;
+      animation: cbs-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+      z-index: -1;
+    }
+    @keyframes cbs-underline {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    .cbs-hero__lead {
+      font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 58ch;
+      margin: 0 0 var(--space-5);
+    }
+    .cbs-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
+    .cbs-magnetic:hover { transform: translateY(-2px); }
+
+    .cbs-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(var(--space-4), 4vw, var(--space-7));
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: 720px;
+    }
+    .cbs-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .cbs-hero__meta-num {
+      font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: "tnum";
+    }
+    .cbs-hero__meta { align-items: baseline; }
+    .cbs-hero__meta-item { justify-content: flex-start; }
+    .cbs-hero__meta-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 0.02em;
+    }
+
+    .cbs-hero__scroll {
+      position: absolute;
+      bottom: var(--space-5);
+      right: clamp(var(--space-5), 4vw, var(--space-7));
+      display: flex; flex-direction: column;
+      align-items: center; gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color 200ms ease;
+    }
+    .cbs-hero__scroll:hover { color: var(--bbg-white); }
+    .cbs-hero__scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+      position: relative; overflow: hidden;
+    }
+    .cbs-hero__scroll-line::after {
+      content: "";
+      position: absolute;
+      top: -100%; left: 0; right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+      animation: cbs-scroll-tick 1.8s ease-in-out infinite;
+    }
+    @keyframes cbs-scroll-tick {
+      0% { top: -50%; }
+      100% { top: 100%; }
+    }
+    @media (max-width: 720px) {
+      .cbs-hero__scroll { display: none; }
+      .cbs-hero__meta { gap: var(--space-4); }
+    }
+
+    /* ---------- CONTEXT ---------- */
+    .cbs-context {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    .cbs-context__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    }
+    .cbs-context__card:hover {
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .cbs-context__card--alt {
+      background: var(--bbg-blue-light);
+      border-color: transparent;
+    }
+    .cbs-context__media {
+      margin: 0;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: var(--bbg-border);
+    }
+    .cbs-context__media img {
+      width: 100%; height: 100%;
+      object-fit: cover; display: block;
+      transition: transform 600ms var(--ease);
+    }
+    .cbs-context__card:hover .cbs-context__media img { transform: scale(1.03); }
+    .cbs-context__body { padding: var(--space-6) var(--space-7) var(--space-7); }
+    .cbs-context__card h3 {
+      font-size: clamp(1.25rem, 1vw + 0.75rem, 1.625rem);
+      line-height: 1.25;
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.01em;
+    }
+    .cbs-context__card p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .cbs-context { grid-template-columns: 1fr; }
+      .cbs-context__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+    }
+
+    /* ---------- VALUE + PROMISE ---------- */
+    .cbs-value {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .cbs-value__copy h2 {
+      font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin: var(--space-3) 0 var(--space-4);
+    }
+    .cbs-value__copy p {
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0;
+    }
+    .cbs-promise {
+      list-style: none;
+      padding: var(--space-6);
+      margin: 0;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      display: flex; flex-direction: column;
+      gap: var(--space-5);
+    }
+    .cbs-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .cbs-promise__item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+    }
+    .cbs-promise__check {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      display: inline-flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .cbs-promise__check svg { width: 16px; height: 16px; }
+    .cbs-promise__item h4 {
+      font-size: 1.125rem;
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
+    }
+    .cbs-promise__item p {
+      font-size: 0.975rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 1024px) {
+      .cbs-value { grid-template-columns: 1fr; gap: var(--space-6); }
+    }
+
+    /* ---------- FORMATS BENTO ---------- */
+    .cbs-svc-section .section-header--split { align-items: end; gap: var(--space-6); margin-bottom: var(--space-6); }
+    .cbs-svc-lead {
+      max-width: 44ch;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .cbs-svc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    .cbs-svc-card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 20px;
+      padding: var(--space-6);
+      overflow: hidden;
+      isolation: isolate;
+      display: flex; flex-direction: column;
+      gap: var(--space-4);
+      min-height: 320px;
+      transition:
+        transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
+    }
+    .cbs-svc-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 4px;
+      background: linear-gradient(90deg, var(--svc-color, #269ADA) 0%, var(--svc-color, #269ADA) 50%, transparent 100%);
+      transform: scaleX(0.3);
+      transform-origin: left center;
+      transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1;
+    }
+    .cbs-svc-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(140% 90% at 100% 0%,
+        color-mix(in srgb, var(--svc-color, #269ADA) 14%, transparent) 0%,
+        transparent 55%);
+      opacity: 0;
+      transition: opacity 360ms ease;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .cbs-svc-card:hover {
+      transform: translateY(-6px);
+      border-color: color-mix(in srgb, var(--svc-color, #269ADA) 55%, var(--bbg-border));
+      box-shadow: 0 22px 50px -26px color-mix(in srgb, var(--svc-color, #269ADA) 50%, transparent),
+                  0 6px 14px -8px rgba(0, 0, 0, 0.08);
+    }
+    .cbs-svc-card:hover::before { transform: scaleX(1); }
+    .cbs-svc-card:hover::after { opacity: 1; }
+    .cbs-svc-card:hover .cbs-svc-card__icon {
+      transform: scale(1.06) rotate(-4deg);
+      background: var(--svc-color, var(--bbg-blue));
+      color: var(--bbg-white);
+      box-shadow: 0 12px 24px -14px color-mix(in srgb, var(--svc-color, #269ADA) 70%, transparent),
+                  inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #269ADA) 30%, transparent);
+    }
+    .cbs-svc-card:hover .cbs-svc-card__arrow { transform: translateX(4px); color: var(--svc-color, var(--bbg-blue)); }
+
+    .cbs-svc-card__head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: var(--space-3);
+    }
+    .cbs-svc-card__icon {
+      display: inline-flex;
+      width: 56px; height: 56px;
+      align-items: center; justify-content: center;
+      border-radius: 16px;
+      background: var(--svc-soft, var(--bbg-blue-light));
+      color: var(--svc-color, var(--bbg-blue));
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #269ADA) 18%, transparent);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+                  background 320ms ease, color 320ms ease, box-shadow 320ms ease;
+      flex-shrink: 0;
+    }
+    .cbs-svc-card__icon svg { width: 28px; height: 28px; }
+    .cbs-svc-card__short {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--svc-color, var(--bbg-blue));
+      text-align: right;
+      line-height: 1.4;
+    }
+    .cbs-svc-card__title {
+      font-size: 1.5rem;
+      line-height: 1.18;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-ink);
+    }
+    .cbs-svc-card__desc {
+      font-size: 0.975rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .cbs-svc-card__points {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0;
+      border-top: 1px solid var(--bbg-border);
+      display: flex; flex-direction: column;
+      gap: 0.55rem;
+      margin-top: auto;
+    }
+    .cbs-svc-card__points li {
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      gap: 0.6rem;
+      align-items: center;
+      font-size: 0.875rem;
+      line-height: 1.45;
+      color: var(--bbg-text);
+    }
+    .cbs-svc-card__bullet {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--svc-color, var(--bbg-blue));
+      box-shadow: 0 0 0 3px var(--svc-soft, var(--bbg-blue-light));
+      margin-left: 4px;
+    }
+    .cbs-svc-card__arrow {
+      position: absolute;
+      bottom: var(--space-6);
+      right: var(--space-6);
+      color: var(--bbg-text-muted);
+      transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1), color 200ms ease;
+      pointer-events: none;
+    }
+    .cbs-svc-card__arrow svg { width: 22px; height: 22px; }
+    @media (max-width: 720px) {
+      .cbs-svc-grid { grid-template-columns: 1fr; }
+      .cbs-svc-card { min-height: 0; }
+      .cbs-svc-section .section-header--split { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ---------- TRACKS / MODELS SECTION BG ---------- */
+    .cbs-models-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-models-section__bg {
+      position: absolute;
+      top: 0; right: -8%;
+      width: 55%; height: 100%;
+      z-index: -1;
+      opacity: 0.18;
+      mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
+      -webkit-mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .cbs-models-section__bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      filter: saturate(0.6);
+    }
+    @media (max-width: 900px) { .cbs-models-section__bg { display: none; } }
+
+    /* ---------- TABS ---------- */
+    .cbs-tabs {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px -28px rgba(8, 18, 28, 0.18);
+    }
+    .cbs-tabs__nav {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      background: linear-gradient(180deg, var(--bbg-surface) 0%, var(--bbg-white) 100%);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .cbs-tabs__tab {
+      position: relative;
+      background: transparent;
+      border: none;
+      padding: var(--space-5) var(--space-4);
+      text-align: left;
+      cursor: pointer;
+      display: flex; flex-direction: column;
+      gap: 0.35rem;
+      color: var(--bbg-text-muted);
+      transition: color 240ms ease, background 240ms ease;
+      border-right: 1px solid var(--bbg-border);
+    }
+    .cbs-tabs__tab:last-child { border-right: none; }
+    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .cbs-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .cbs-tabs__tab-label {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+      line-height: 1.2;
+    }
+    .cbs-tabs__tab-tag {
+      font-size: 0.78rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.35;
+    }
+    .cbs-tabs__tab.is-active .cbs-tabs__tab-tag { color: var(--bbg-blue); }
+    .cbs-tabs__tab-pop {
+      position: absolute;
+      top: var(--space-3);
+      right: var(--space-3);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .cbs-tabs__indicator {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 25%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px 2px 0 0;
+      transform: translateX(0);
+      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    .cbs-tabs__panels { background: var(--bbg-white); }
+    .cbs-tabs__panel {
+      padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
+      animation: cbs-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes cbs-tab-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .cbs-tabs__panel[hidden] { display: none; }
+    .cbs-tabs__panel-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(var(--space-5), 3vw, var(--space-7));
+      align-items: start;
+    }
+    .cbs-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
+    .cbs-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .cbs-tabs__pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.35em 0.85em;
+      border-radius: 999px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      letter-spacing: 0.01em;
+    }
+    .cbs-tabs__title {
+      font-size: clamp(1.625rem, 1.8vw + 1rem, 2.25rem);
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -0.015em;
+    }
+    .cbs-tabs__desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .cbs-tabs__when {
+      padding: var(--space-4);
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--bbg-blue);
+    }
+    .cbs-tabs__when-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: 0.35rem;
+    }
+    .cbs-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
+    .cbs-tabs__body { display: flex; flex-direction: column; gap: var(--space-4); }
+    .cbs-tabs__list-wrap {
+      background: var(--bbg-surface);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+    }
+    .cbs-tabs__list-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .cbs-tabs__list {
+      list-style: none;
+      padding: 0; margin: 0;
+      display: flex; flex-direction: column;
+      gap: var(--space-3);
+    }
+    .cbs-tabs__list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--bbg-text);
+    }
+    .cbs-tabs__check {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      display: inline-flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .cbs-tabs__check svg { width: 12px; height: 12px; }
+    .cbs-tabs__pricing {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-4);
+      padding: var(--space-4);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.12) 100%);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(38, 154, 218, 0.2);
+    }
+    .cbs-tabs__pricing-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-blue-dark);
+      flex-shrink: 0;
+    }
+    .cbs-tabs__pricing-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      line-height: 1.4;
+    }
+    @media (max-width: 1024px) {
+      .cbs-tabs__nav { grid-template-columns: repeat(2, 1fr); }
+      .cbs-tabs__tab { border-bottom: 1px solid var(--bbg-border); }
+      .cbs-tabs__tab:nth-child(2) { border-right: none; }
+      .cbs-tabs__indicator { display: none; }
+      .cbs-tabs__panel-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .cbs-tabs__nav { grid-template-columns: 1fr; }
+      .cbs-tabs__tab { border-right: none; }
+    }
+
+    /* ---------- MATRIX ---------- */
+    .cbs-matrix {
+      margin-top: var(--space-8);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: clamp(var(--space-5), 3vw + 1rem, var(--space-7));
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+    }
+    .cbs-matrix__intro { text-align: center; margin-bottom: var(--space-6); }
+    .cbs-matrix__intro h3 {
+      font-size: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
+      margin: var(--space-2) 0 var(--space-3);
+      letter-spacing: -0.01em;
+    }
+    .cbs-matrix__intro p {
+      color: var(--bbg-text);
+      max-width: 60ch;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .cbs-matrix__grid {
+      display: grid;
+      grid-template-columns: minmax(180px, 0.9fr) 1fr 1fr;
+      gap: 1px;
+      background: var(--bbg-border);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .cbs-matrix__corner,
+    .cbs-matrix__head,
+    .cbs-matrix__row-head,
+    .cbs-matrix__cell {
+      background: var(--bbg-white);
+      padding: var(--space-4);
+    }
+    .cbs-matrix__corner { background: var(--bbg-surface); }
+    .cbs-matrix__head {
+      background: var(--bbg-surface);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      text-align: center;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .cbs-matrix__row-head {
+      background: var(--bbg-surface);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      display: flex; align-items: center;
+    }
+    .cbs-matrix__cell {
+      border: none;
+      text-align: left;
+      font-family: inherit;
+      cursor: pointer;
+      display: flex; flex-direction: column;
+      gap: 0.35rem;
+      transition: background var(--dur) var(--ease);
+    }
+    .cbs-matrix__cell:hover { background: var(--bbg-blue-light); }
+    .cbs-matrix__cell:focus-visible {
+      outline: 3px solid var(--bbg-blue);
+      outline-offset: -3px;
+    }
+    .cbs-matrix__cell-label {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--bbg-ink);
+      letter-spacing: -0.005em;
+    }
+    .cbs-matrix__cell-sub {
+      font-size: 0.9rem;
+      color: var(--bbg-text);
+      line-height: 1.45;
+    }
+    .cbs-matrix__note {
+      margin: var(--space-5) auto 0;
+      max-width: 68ch;
+      text-align: center;
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 0.975rem;
+    }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__cell { opacity: 0.4; }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__cell.is-row-active,
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__cell.is-col-active { opacity: 1; background: var(--bbg-blue-light); }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__row-head,
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__head { opacity: 0.4; }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__row-head.is-active,
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__head.is-active {
+      opacity: 1;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    @media (max-width: 720px) {
+      .cbs-matrix__grid { grid-template-columns: 1fr 1fr; }
+      .cbs-matrix__corner { display: none; }
+      .cbs-matrix__head { font-size: 0.75rem; padding: var(--space-3); }
+      .cbs-matrix__row-head {
+        grid-column: 1 / -1;
+        background: var(--bbg-blue-light);
+        color: var(--bbg-blue-dark);
+        justify-content: center;
+        padding: var(--space-3);
+      }
+    }
+
+    /* ---------- CASES CTA ---------- */
+    .cbs-cases-cta { display: flex; justify-content: center; }
+
+    /* ---------- CITIES (platform-style cards) ---------- */
+    .cbs-platforms {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-5);
+    }
+    .cbs-platform {
+      position: relative;
+      display: flex; flex-direction: column;
+      gap: var(--space-4);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      color: var(--bbg-ink);
+      overflow: hidden;
+      isolation: isolate;
+      transition: transform var(--dur) var(--ease),
+                  border-color var(--dur) var(--ease),
+                  box-shadow var(--dur) var(--ease);
+    }
+    .cbs-platform::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg,
+        var(--platform-color, var(--bbg-blue)) 0%,
+        var(--platform-accent, var(--bbg-blue-dark)) 100%);
+      transform: scaleX(0.4);
+      transform-origin: left center;
+      transition: transform var(--dur) var(--ease);
+    }
+    .cbs-platform::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 100% 0%,
+        color-mix(in srgb, var(--platform-color, #269ADA) 12%, transparent) 0%,
+        transparent 55%);
+      opacity: 0;
+      transition: opacity var(--dur) var(--ease);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .cbs-platform:hover {
+      transform: translateY(-6px);
+      border-color: color-mix(in srgb, var(--platform-color, #269ADA) 60%, var(--bbg-border));
+      box-shadow: 0 18px 40px -22px color-mix(in srgb, var(--platform-color, #269ADA) 55%, transparent),
+                  0 4px 12px -6px rgba(0, 0, 0, 0.08);
+      color: var(--bbg-ink);
+    }
+    .cbs-platform:hover::before { transform: scaleX(1); }
+    .cbs-platform:hover::after { opacity: 1; }
+    .cbs-platform__head {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: var(--space-3);
+    }
+    .cbs-platform__logo {
+      width: 76px; height: 76px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border-radius: var(--radius-md);
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      padding: 14px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+      transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
+    }
+    .cbs-platform:hover .cbs-platform__logo {
+      border-color: color-mix(in srgb, var(--platform-color, #269ADA) 35%, var(--bbg-border));
+      transform: scale(1.04);
+    }
+    .cbs-city__mark {
+      background: linear-gradient(140deg,
+        color-mix(in srgb, var(--platform-color, #269ADA) 10%, var(--bbg-white)) 0%,
+        var(--bbg-white) 100%);
+    }
+    .cbs-city__mono {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--platform-color, var(--bbg-blue));
+      line-height: 1;
+    }
+    .cbs-platform__cn {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: color-mix(in srgb, var(--platform-color, #269ADA) 75%, var(--bbg-ink));
+      line-height: 1;
+      letter-spacing: 0.02em;
+      opacity: 0.85;
+    }
+    .cbs-platform__body { display: flex; flex-direction: column; gap: var(--space-2); flex-grow: 1; }
+    .cbs-platform__title {
+      font-size: 1.375rem;
+      line-height: 1.2;
+      margin: 0;
+      color: var(--bbg-ink);
+      letter-spacing: -0.01em;
+      font-weight: 700;
+    }
+    .cbs-platform__sub {
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 1024px) { .cbs-platforms { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .cbs-platforms { grid-template-columns: 1fr; } }
+
+    /* ---------- JOURNEY ---------- */
+    .cbs-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-journey-section__bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -2;
+      opacity: 0.10;
+      pointer-events: none;
+    }
+    .cbs-journey-section__bg::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, var(--bbg-white) 0%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.7) 100%);
+    }
+    .cbs-journey-section__bg img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      filter: saturate(0.55);
+    }
+    .cbs-journey {
+      position: relative;
+      max-width: 880px;
+      margin: 0 auto;
+      padding-left: 56px;
+    }
+    .cbs-journey__rail {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 22px;
+      width: 2px;
+    }
+    .cbs-journey__rail-track {
+      position: absolute; inset: 0;
+      background: var(--bbg-border);
+      border-radius: 2px;
+    }
+    .cbs-journey__rail-fill {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: var(--journey-progress, 0%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      border-radius: 2px;
+      transition: height 120ms linear;
+      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+    }
+    .cbs-journey__list {
+      list-style: none;
+      padding: 0; margin: 0;
+      display: flex; flex-direction: column;
+      gap: var(--space-7);
+    }
+    .cbs-journey__item { position: relative; }
+    .cbs-journey__dot {
+      position: absolute;
+      left: -56px;
+      top: 0;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--bbg-white);
+      border: 2px solid var(--bbg-border);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 2;
+      transition: border-color 320ms ease;
+    }
+    .cbs-journey__dot-inner {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: background 320ms ease, transform 320ms ease;
+    }
+    .cbs-journey__item.is-active .cbs-journey__dot { border-color: var(--bbg-blue); }
+    .cbs-journey__item.is-active .cbs-journey__dot-inner {
+      background: var(--bbg-blue);
+      transform: scale(1.1);
+      box-shadow: 0 0 0 4px var(--bbg-blue-light);
+    }
+    .cbs-journey__phase {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-2);
+      transition: color 320ms ease;
+    }
+    .cbs-journey__item.is-active .cbs-journey__phase { color: var(--bbg-blue); }
+    .cbs-journey__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      display: flex; align-items: flex-start;
+      gap: var(--space-4);
+      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cbs-journey__item:hover .cbs-journey__card,
+    .cbs-journey__item.is-active .cbs-journey__card {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      transform: translateX(4px);
+    }
+    .cbs-journey__icon {
+      display: inline-flex;
+      width: 48px; height: 48px;
+      align-items: center; justify-content: center;
+      border-radius: 14px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .cbs-journey__icon svg { width: 24px; height: 24px; }
+    .cbs-journey__title {
+      font-size: 1.25rem;
+      line-height: 1.25;
+      margin: 0 0 0.4rem;
+      letter-spacing: -0.005em;
+    }
+    .cbs-journey__desc {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    @media (max-width: 600px) {
+      .cbs-journey { padding-left: 40px; }
+      .cbs-journey__rail { left: 16px; }
+      .cbs-journey__dot { left: -40px; width: 32px; height: 32px; }
+      .cbs-journey__dot-inner { width: 10px; height: 10px; }
+      .cbs-journey__card { flex-direction: column; gap: var(--space-3); }
+    }
+
+    /* ---------- AI BENTO (Take home) ---------- */
+    .cbs-ai-bento {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: var(--space-4);
+    }
+    .cbs-ai-bento__card {
+      position: relative;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      overflow: hidden;
+      isolation: isolate;
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+    }
+    .cbs-ai-bento__card:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+    }
+    .cbs-ai-bento__card--small h3 {
+      font-size: 1.05rem;
+      line-height: 1.3;
+      margin: 0 0 0.5rem;
+    }
+    .cbs-ai-bento__card--small p {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
+    }
+    .cbs-ai-bento__card--feature {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      padding: var(--space-7);
+      background: linear-gradient(160deg, #102434 0%, #0c1a26 60%);
+      color: var(--bbg-white);
+      border-color: rgba(255, 255, 255, 0.08);
+      display: flex; flex-direction: column;
+      justify-content: space-between;
+      gap: var(--space-5);
+    }
+    .cbs-ai-bento__card--feature:hover { border-color: rgba(155, 217, 245, 0.4); }
+    .cbs-ai-bento__feature-bg {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(80% 60% at 100% 0%, rgba(38, 154, 218, 0.32) 0%, rgba(38, 154, 218, 0) 60%),
+        radial-gradient(60% 50% at 0% 100%, rgba(38, 154, 218, 0.18) 0%, rgba(38, 154, 218, 0) 60%);
+    }
+    .cbs-ai-bento__feature-body { display: flex; flex-direction: column; gap: var(--space-3); }
+    .cbs-ai-bento__chip {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9DDBF5;
+      background: rgba(38, 154, 218, 0.18);
+      padding: 0.4em 0.85em;
+      border-radius: 999px;
+      border: 1px solid rgba(155, 217, 245, 0.25);
+    }
+    .cbs-ai-bento__card--feature h3 {
+      font-size: clamp(1.5rem, 1.4vw + 1rem, 2rem);
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -0.015em;
+      color: var(--bbg-white);
+    }
+    .cbs-ai-bento__card--feature p {
+      font-size: 1rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.78);
+      margin: 0;
+    }
+    .cbs-ai-bento__feature-stats {
+      list-style: none;
+      padding: var(--space-4) 0 0;
+      margin: 0;
+      display: flex; gap: var(--space-6);
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .cbs-ai-bento__feature-stats li { display: flex; flex-direction: column; gap: 0.25rem; }
+    .cbs-ai-bento__stat-num {
+      font-size: clamp(1.625rem, 1.4vw + 1rem, 2.125rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: #9DDBF5;
+      font-feature-settings: "tnum";
+    }
+    .cbs-ai-bento__stat-label {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.65);
+      letter-spacing: 0.02em;
+    }
+    .cbs-ai-bento__icon-large {
+      position: absolute;
+      bottom: -28px;
+      right: -28px;
+      width: 200px;
+      height: 200px;
+      color: rgba(38, 154, 218, 0.18);
+      opacity: 0.7;
+      pointer-events: none;
+    }
+    .cbs-ai-bento__icon-large svg { width: 100%; height: 100%; }
+    .cbs-ai-bento__icon {
+      display: inline-flex;
+      width: 40px; height: 40px;
+      align-items: center; justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-3);
+    }
+    .cbs-ai-bento__icon svg { width: 20px; height: 20px; }
+    @media (max-width: 1024px) {
+      .cbs-ai-bento { grid-template-columns: 1fr 1fr; }
+      .cbs-ai-bento__card--feature { grid-column: 1 / -1; grid-row: auto; }
+    }
+    @media (max-width: 560px) {
+      .cbs-ai-bento { grid-template-columns: 1fr; }
+      .cbs-ai-bento__feature-stats { gap: var(--space-4); flex-wrap: wrap; }
+    }
+
+    /* ---------- FAQ FILTER + LIST ---------- */
+    .cbs-faq-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: var(--space-6);
+    }
+    .cbs-faq-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--bbg-text);
+      transition: all 220ms ease;
+      font-family: inherit;
+    }
+    .cbs-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .cbs-faq-chip.is-active {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      color: var(--bbg-white);
+    }
+    .cbs-faq-chip__count {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: all 220ms ease;
+    }
+    .cbs-faq-chip:hover .cbs-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .cbs-faq-chip.is-active .cbs-faq-chip__count {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--bbg-white);
+    }
+    .cbs-faq {
+      display: flex; flex-direction: column;
+      gap: var(--space-3);
+    }
+    .cbs-faq__item {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cbs-faq__item:hover {
+      transform: translateX(2px);
+      border-color: rgba(38, 154, 218, 0.4);
+    }
+    .cbs-faq__item[open] {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+    }
+    .cbs-faq__q {
+      cursor: pointer;
+      padding: var(--space-5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      font-weight: 600;
+      font-size: 1.0625rem;
+      line-height: 1.3;
+      color: var(--bbg-ink);
+      list-style: none;
+      transition: color var(--dur) var(--ease);
+    }
+    .cbs-faq__q::-webkit-details-marker { display: none; }
+    .cbs-faq__q::marker { display: none; }
+    .cbs-faq__item:hover .cbs-faq__q { color: var(--bbg-blue); }
+    .cbs-faq__cat-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      background: var(--bbg-blue-light);
+      padding: 0.25em 0.6em;
+      border-radius: 4px;
+      margin-right: var(--space-3);
+      flex-shrink: 0;
+    }
+    .cbs-faq__q-text { flex-grow: 1; }
+    .cbs-faq__icon {
+      flex-shrink: 0;
+      width: 28px; height: 28px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border-radius: 50%;
+      background: var(--bbg-surface);
+      color: var(--bbg-text-muted);
+      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+                  color var(--dur) var(--ease),
+                  background var(--dur) var(--ease);
+    }
+    .cbs-faq__item[open] .cbs-faq__icon {
+      transform: rotate(180deg);
+      color: var(--bbg-white);
+      background: var(--bbg-blue);
+    }
+    .cbs-faq__a {
+      padding: 0 var(--space-5) var(--space-5);
+      color: var(--bbg-text);
+      line-height: 1.65;
+      font-size: 1rem;
+      animation: cbs-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes cbs-faq-in {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .cbs-faq__a p { margin: 0; }
+    .cbs-faq__item.is-hidden { display: none; }
+
+    /* ---------- FINAL CTA ---------- */
+    .cbs-cta {
+      padding: clamp(var(--space-6), 4vw + 1rem, var(--space-8)) var(--space-6);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cbs-cta::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      pointer-events: none;
+    }
+    .cbs-cta .eyebrow--on-dark {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .cbs-cta__title {
+      font-size: clamp(1.75rem, 1.5vw + 1rem, 2.5rem);
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: 0 0 var(--space-4);
+      letter-spacing: -0.015em;
+    }
+    .cbs-cta__lead {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.0625rem;
+      max-width: 56ch;
+      margin: 0 auto var(--space-5);
+      line-height: 1.55;
+    }
+    .cbs-cta__actions {
+      display: flex; flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      position: relative;
+    }
+    .cbs-cta__btn-primary {
+      background: var(--bbg-white);
+      color: var(--bbg-blue-dark);
+      border: 1px solid var(--bbg-white);
+    }
+    .cbs-cta__btn-primary:hover {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--bbg-blue-dark);
+    }
+    .cbs-cta__btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: var(--bbg-white);
+    }
+    .cbs-cta__btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--bbg-white);
+      color: var(--bbg-white);
+    }
+  </style>
+
+  <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // 1. Reveal-on-scroll
+      const revealEls = document.querySelectorAll('.cbs-reveal');
+      if (revealEls.length) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('is-in'));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          revealEls.forEach((el) => io.observe(el));
+        }
+      }
+
+      // 2. Counters
+      const counters = document.querySelectorAll('[data-counter]');
+      if (counters.length && !reduced && 'IntersectionObserver' in window) {
+        const animate = (el) => {
+          const target = parseFloat(el.dataset.counter || '0');
+          const suffix = el.dataset.suffix || '';
+          const duration = 1400;
+          const start = performance.now();
+          const tick = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(target * eased);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        };
+        const counterIo = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+        counters.forEach((el) => counterIo.observe(el));
+      } else {
+        counters.forEach((el) => {
+          el.textContent = (el.dataset.counter || '0') + (el.dataset.suffix || '');
+        });
+      }
+
+      // 3. Hero parallax + scroll progress
+      const parallaxEl = document.querySelector('[data-parallax]');
+      const progressEl = document.querySelector('.cbs-progress__bar');
+      const heroEl = document.querySelector('[data-hero]');
+      let ticking = false;
+
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY || window.pageYOffset;
+          if (parallaxEl && heroEl && !reduced) {
+            const heroH = heroEl.offsetHeight;
+            if (scrollY < heroH) {
+              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            }
+          }
+          if (progressEl) {
+            const docH = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
+            progressEl.style.setProperty('--progress', pct + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // 4. Smooth scroll for in-page anchors
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+
+      // 5. FAQ auto-close other items
+      const faqItems = document.querySelectorAll('.cbs-faq__item');
+      faqItems.forEach((item) => {
+        item.addEventListener('toggle', () => {
+          if (item.open) {
+            faqItems.forEach((other) => {
+              if (other !== item && other.open) other.open = false;
+            });
+          }
+        });
+      });
+
+      // 6. Track tabs
+      const tabsRoot = document.querySelector('[data-tabs]');
+      if (tabsRoot) {
+        const tabs = Array.from(tabsRoot.querySelectorAll('.cbs-tabs__tab'));
+        const panels = Array.from(tabsRoot.querySelectorAll('.cbs-tabs__panel'));
+        const indicator = tabsRoot.querySelector('.cbs-tabs__indicator');
+
+        const setActive = (tab) => {
+          tabs.forEach((t) => {
+            const active = t === tab;
+            t.classList.toggle('is-active', active);
+            t.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          const targetId = tab.getAttribute('data-tab-target');
+          panels.forEach((p) => {
+            const active = p.id === targetId;
+            p.classList.toggle('is-active', active);
+            if (active) p.removeAttribute('hidden');
+            else p.setAttribute('hidden', '');
+          });
+          if (indicator) {
+            const idx = tabs.indexOf(tab);
+            const w = 100 / tabs.length;
+            indicator.style.width = w + '%';
+            indicator.style.transform = `translateX(${idx * 100}%)`;
+          }
+        };
+
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => setActive(tab));
+          tab.addEventListener('keydown', (e) => {
+            const idx = tabs.indexOf(tab);
+            if (e.key === 'ArrowRight') {
+              e.preventDefault();
+              const next = tabs[(idx + 1) % tabs.length];
+              next.focus();
+              setActive(next);
+            } else if (e.key === 'ArrowLeft') {
+              e.preventDefault();
+              const prev = tabs[(idx - 1 + tabs.length) % tabs.length];
+              prev.focus();
+              setActive(prev);
+            }
+          });
+        });
+
+        const initialActive = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
+        if (initialActive) setActive(initialActive);
+      }
+
+      // 7. Matrix highlights
+      const matrix = document.querySelector('[data-matrix] .cbs-matrix__grid');
+      if (matrix) {
+        const cells = Array.from(matrix.querySelectorAll('.cbs-matrix__cell'));
+        const heads = Array.from(matrix.querySelectorAll('.cbs-matrix__head'));
+        const rowHeads = Array.from(matrix.querySelectorAll('.cbs-matrix__row-head'));
+
+        const clearHighlight = () => {
+          matrix.classList.remove('is-hover-row');
+          cells.forEach((c) => c.classList.remove('is-row-active', 'is-col-active'));
+          heads.forEach((h) => h.classList.remove('is-active'));
+          rowHeads.forEach((h) => h.classList.remove('is-active'));
+        };
+
+        cells.forEach((cell) => {
+          const row = cell.dataset.row;
+          const col = cell.dataset.col;
+          cell.addEventListener('mouseenter', () => {
+            matrix.classList.add('is-hover-row');
+            cells.forEach((c) => {
+              c.classList.toggle('is-row-active', c.dataset.row === row);
+              c.classList.toggle('is-col-active', c.dataset.col === col);
+            });
+            heads.forEach((h) => h.classList.toggle('is-active', h.dataset.col === col));
+            rowHeads.forEach((h) => h.classList.toggle('is-active', h.dataset.row === row));
+          });
+          cell.addEventListener('mouseleave', clearHighlight);
+          cell.addEventListener('click', () => {
+            const targetTabId = cell.dataset.tabJump;
+            const tab = targetTabId && document.getElementById(targetTabId);
+            if (tab) {
+              tab.click();
+              tab.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+              tab.focus();
+            }
+          });
+        });
+      }
+
+      // 8. Journey vertical timeline
+      const journey = document.querySelector('[data-journey]');
+      if (journey) {
+        const fill = journey.querySelector('[data-journey-fill]');
+        const items = Array.from(journey.querySelectorAll('[data-journey-item]'));
+
+        const updateJourney = () => {
+          const rect = journey.getBoundingClientRect();
+          const vh = window.innerHeight;
+          const total = rect.height;
+          const visible = Math.max(0, Math.min(total, vh * 0.55 - rect.top));
+          const pct = Math.max(0, Math.min(100, (visible / total) * 100));
+          if (fill) fill.style.setProperty('--journey-progress', pct + '%');
+
+          items.forEach((item) => {
+            const r = item.getBoundingClientRect();
+            const center = r.top + r.height / 2;
+            const inActive = center < vh * 0.6 && center > 0;
+            item.classList.toggle('is-active', inActive);
+          });
+        };
+
+        let journeyTicking = false;
+        const onJourneyScroll = () => {
+          if (journeyTicking) return;
+          journeyTicking = true;
+          requestAnimationFrame(() => {
+            updateJourney();
+            journeyTicking = false;
+          });
+        };
+        window.addEventListener('scroll', onJourneyScroll, { passive: true });
+        window.addEventListener('resize', onJourneyScroll, { passive: true });
+        updateJourney();
+      }
+
+      // 9. FAQ category filter
+      const faqFilter = document.querySelector('[data-faq-filter]');
+      const faqList = document.querySelector('[data-faq-list]');
+      if (faqFilter && faqList) {
+        const chips = Array.from(faqFilter.querySelectorAll('.cbs-faq-chip'));
+        const items = Array.from(faqList.querySelectorAll('.cbs-faq__item'));
+        chips.forEach((chip) => {
+          chip.addEventListener('click', () => {
+            const cat = chip.dataset.faqCat;
+            chips.forEach((c) => {
+              const on = c === chip;
+              c.classList.toggle('is-active', on);
+              c.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            items.forEach((item) => {
+              const matches = cat === 'Todas' || item.dataset.faqCat === cat;
+              item.classList.toggle('is-hidden', !matches);
+            });
+          });
+        });
+      }
+    })();
+  </script>
+</Layout>

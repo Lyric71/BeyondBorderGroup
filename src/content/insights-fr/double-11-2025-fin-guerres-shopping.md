@@ -11,7 +11,7 @@ keyTakeaways:
   - "Le festival s'étire désormais sur cinq semaines. Pré-pré-vente, fenêtres d'acompte, empilement de coupons. Les acheteurs sont devenus des pros avant que les marques ne le réalisent."
   - "Les grandes plateformes ont cessé de publier un chiffre de GMV unique pour le 11.11. La donnée elle-même est devenue un risque politique."
   - "Les marques gonflent le prix barré avant le festival, juste pour le solder ensuite. La marge se comprime, la confiance s'érode, personne ne gagne."
-  - "Le Double 11 reste une fenêtre de lancement utile. Comme moteur de croissance trimestrielle, c'est terminé."
+  - "Le Double 11 reste une fenêtre de lancement utile. En moteur de croissance trimestrielle, c'est terminé."
 heroImage: "/Images/insights/double-11-2025-the-end-of-chinas-shopping-wars.png"
 heroImageAlt: "Tableau de bord des données du festival Double 11 2025"
 ---
@@ -24,7 +24,7 @@ Le Double 11 a longtemps été simple. Une date. Une promesse. « Le prix le plu
 
 ### Décor de 2025. Plus rien ne tient en l'état.
 
-Le festival s'étire désormais de début octobre à mi-novembre. Pré-ventes qui se chevauchent, opérations « plus », échelles de coupons à n'en plus finir. La valeur brute des marchandises continue de progresser, autour de 1 700 milliards de yuans cette année contre 1 440 milliards. Mais le rythme ralentit. L'ambiance se décrit comme « atone », « prudente », « tournée vers la valeur ».
+Le festival s'étire désormais de début octobre à mi-novembre. Pré-ventes qui se chevauchent, opérations « plus », échelles de coupons à n'en plus finir. La valeur brute des marchandises continue de progresser, autour de 1 700 milliards de yuans cette année contre 1 440 milliards. Mais le rythme ralentit. L'ambiance se décrit en « atone », « prudente », « tournée vers la valeur ».
 
 Les enseignes appuient plus fort sur les promotions et les incitations. Les acheteurs vérifient et recoupent avant l'achat.
 
@@ -95,7 +95,7 @@ Le contexte macro alourdit la note : tensions immobilières, salaires en panne, 
 
 Le résultat tient en trois lignes.
 
-* **Marges sous pression côté marques.** Le prix affiché remonte pour protéger la marge, puis la remise se creuse pour tenir face aux concurrents. À l'arrivée, la marque cède plus que prévu.
+* **Marges sous pression côté marques.** Le prix affiché remonte pour protéger la marge, puis la remise se creuse pour tenir face aux concurrents. Au bout du compte, la marque cède plus que prévu.
 * **Confiance qui s'effrite côté consommateur.** Chaque « faux prix le plus bas » rend la prochaine histoire plus difficile à croire.
 * **Signal qui se brouille côté plateformes.** Le GMV reste massif, mais si chargé politiquement et concurrentiellement que les grandes plateformes renoncent à publier un chiffre unique pour le festival.
 
@@ -119,11 +119,11 @@ En coulisses, les mêmes constats reviennent :
 
 ## Le e-commerce en Chine
 
-Vu de l'extérieur, le Double 11 a dépassé ses racines de festival commercial local. Il offre une vue avancée du comportement du commerce quand l'IA s'installe dans la pile et que l'acheteur raisonne comme un opérateur.
+Vu de l'extérieur, le Double 11 a dépassé ses racines de festival commercial local. Il offre une vue avancée du comportement du commerce quand l'IA s'installe dans la pile et que l'acheteur raisonne en opérateur.
 
 Trois enseignements à retenir :
 
-* Traiter le 11.11 comme un crash test plutôt que comme un coup d'éclat. Ce qui casse en novembre était fragile toute l'année.
+* Traiter le 11.11 en crash test plutôt qu'en coup d'éclat. Ce qui casse en novembre était fragile toute l'année.
 * Bâtir un système de création et de tarification qui tient sa forme pendant que plateformes, formats et outils continuent de bouger.
 * Partir du principe que le consommateur comparera tout, et devenir la marque qui récompense cette intelligence par une valeur claire et un prix honnête.
 

@@ -49,8 +49,14 @@ const {
 	articleAuthor,
 } = Astro.props;
 
-const ogLocale = locale === 'fr' ? 'fr_FR' : 'en_US';
-const ogLocaleAlt = locale === 'fr' ? 'en_US' : 'fr_FR';
+const OG_LOCALE: Record<typeof locale, string> = {
+	en: 'en_US',
+	fr: 'fr_FR',
+	de: 'de_DE',
+	es: 'es_ES',
+};
+const ogLocale = OG_LOCALE[locale] ?? 'en_US';
+const ogLocaleAlt = locale === 'en' ? 'fr_FR' : 'en_US';
 const absoluteOgImage = ogImage.startsWith('http') ? ogImage : SITE_URL + ogImage;
 
 const toIsoMaybe = (d?: Date | string) => {
@@ -90,7 +96,7 @@ const enAlt = alternates.find((a) => a.code === 'en');
 let autoSchema: Record<string, unknown> | null = null;
 if (!pageSchema) {
 	const enPath = localizePath(currentPath, defaultLocale);
-	autoSchema = getServicePageSchema(enPath, locale as 'en' | 'fr');
+	autoSchema = getServicePageSchema(enPath, locale);
 }
 
 // Assemble the schema graph: site-wide entities + page-specific.

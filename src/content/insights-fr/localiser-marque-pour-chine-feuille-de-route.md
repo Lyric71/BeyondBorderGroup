@@ -33,7 +33,7 @@ WeChat, Weibo et les autres réseaux sociaux chinois structurent la conversation
 
 ### 5. S'associer aux influenceurs locaux
 
-Travailler avec des influenceurs chinois, blogueurs ou personnalités du divertissement, fait grimper la notoriété et installe la crédibilité auprès du public local. Le [marketing](/fr/se-developper-en-chine/campagnes) d'influence pèse lourd sur le territoire, où le consommateur accorde une grande valeur aux recommandations qui viennent de sources reconnues.
+Travailler avec des influenceurs chinois, blogueurs ou personnalités du divertissement, fait grimper la notoriété et installe la crédibilité auprès du public local. Le [marketing](/fr/se-developper-en-chine/campagnes) d'influence pèse lourd sur le territoire, où le consommateur accorde une grande valeur aux recommandations issues de sources reconnues.
 
 ### 6. Respecter le cadre réglementaire
 

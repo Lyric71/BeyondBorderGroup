@@ -11,7 +11,7 @@ heroImageAlt: "Composition digitale illustrant l'UX et la technologie"
 
 ## Design UX en Chine et en Occident : deux écoles, deux logiques
 
-Le web est aussi divers que ses utilisateurs. Nulle part le fossé n'est aussi net qu'entre l'UX des sites chinois et celle des sites occidentaux. Culture, langue, technologie : les écarts plongent leurs racines en profondeur. Pour la marque qui vise l'international, lire ces partis pris devient un préalable. C'est ce qui ouvre la voie à des plateformes qui parlent réellement à l'utilisateur local.
+Le web est aussi divers que ses utilisateurs. Nulle part le fossé n'est aussi net qu'entre l'UX des sites chinois et celle des sites occidentaux. Culture, langue, technologie : les écarts plongent leurs racines en profondeur. Pour la marque qui vise l'international, lire ces partis pris est un préalable. Voilà ce qui ouvre la voie à des plateformes qui parlent réellement à l'utilisateur local.
 
 Pour quiconque s'attaque au e-commerce chinois, ces écarts pèsent stratégiquement. Que la marque mise sur le e-commerce Douyin ou navigue le cross-border, l'ajustement aux usages locaux trace la frontière entre la traction et l'enlisement.
 
@@ -41,9 +41,9 @@ Le site occidental mise sur la simplicité. Beaucoup de blanc, des lignes nettes
 
 ![Page d'accueil de Douyin](/Images/insights/2025/01/douyin-website-1024x496.jpg)
 
-Sites et applications chinois assument l'inverse : plus, c'est plus. Visuels saturés, mises en page denses, appels à l'action multiples. Ce parti pris traduit une préférence culturelle pour l'abondance, lue comme un signe de richesse fonctionnelle et d'engagement. Douyin, sur le terrain e-commerce, en livre l'illustration parfaite.
+Sites et applications chinois assument l'inverse : plus, c'est plus. Visuels saturés, mises en page denses, appels à l'action multiples. Ce parti pris traduit une préférence culturelle pour l'abondance, lue en signe de richesse fonctionnelle et d'engagement. Douyin, sur le terrain e-commerce, en livre l'illustration parfaite.
 
-À un œil occidental, le design chinois paraît saturé. À un œil chinois, le design occidental paraît vide, presque pauvre. Travailler avec une agence créative locale aide à trouver l'équilibre quand la marque s'attaque au [marché chinois](/fr/entrer-en-chine/conseil-en-entree-de-marche).
+Pour un œil occidental, le design chinois paraît saturé. Pour un œil chinois, le design occidental paraît vide, presque pauvre. Travailler avec une agence créative locale aide à trouver l'équilibre quand la marque s'attaque au [marché chinois](/fr/entrer-en-chine/conseil-en-entree-de-marche).
 
 ### Système d'écriture et impact sur l'UX
 
@@ -73,7 +73,7 @@ Le site occidental pratique la hiérarchie claire : menus logiques, catégories 
 
 ![Page d'accueil d'Alibaba](/Images/insights/2025/01/Alibaba-website-1024x491.jpg)
 
-Le site chinois aligne une grande variété d'options en parallèle, avec moins de hiérarchie. Bannières défilantes, CTA qui se chevauchent : tout capte l'attention et pousse l'exploration. Chaotique à un œil occidental. Côté utilisateur chinois, parfaitement aligné avec la préférence pour une interface dense et immersive.
+Le site chinois aligne une grande variété d'options en parallèle, avec moins de hiérarchie. Bannières défilantes, CTA qui se chevauchent : tout capte l'attention et pousse l'exploration. Chaotique pour un œil occidental. Pour un utilisateur chinois, parfaitement aligné avec la préférence pour une interface dense et immersive.
 
 ### Les super-apps, pilier de l'UX chinoise
 
@@ -89,7 +89,7 @@ Les écarts culturels pèsent lourd dans la conception UX.
 
 #### Culture à haut contexte en Chine
 
-La culture chinoise est dite « à haut contexte ». La communication s'appuie sur l'implicite et le contextuel. En design, cela donne des éléments symboliques, des couleurs vives et des motifs porteurs de sens culturel.
+La culture chinoise est dite « à haut contexte ». La communication s'appuie sur l'implicite et le contextuel. En design, cela donne des éléments symboliques, des couleurs vives, des motifs porteurs de sens culturel.
 
 #### Culture à bas contexte en Occident
 
@@ -99,7 +99,7 @@ L'UX occidentale s'adresse à des cultures « à bas contexte », qui privilégi
 
 L'adoption massive du mobile en Chine a installé une logique mobile-first dans toutes les couches du digital, du e-commerce au design d'application.
 
-Douyin a redéfini l'expérience d'achat mobile, avec un contenu engageant et des codes propres au livestream chinois. Ces interactions immersives répondent aux attentes mobile-first de l'utilisateur chinois.
+Douyin a redéfini l'expérience d'achat mobile, à grand renfort de contenus engageants et de codes propres au livestream chinois. Ces interactions immersives répondent aux attentes mobile-first de l'utilisateur chinois.
 
 Le marché occidental mise lui aussi sur le mobile, mais en soignant la continuité entre desktop et mobile, pour garantir une expérience équilibrée des deux côtés.
 
@@ -113,11 +113,11 @@ L'application chinoise combine services intégrés, achats in-app, publicité et
 
 #### Modèles occidentaux
 
-La plateforme occidentale s'appuie davantage sur l'abonnement ou l'achat d'application. À l'arrivée, des interfaces épurées, qui privilégient la fonction sur l'empilement de couches supplémentaires.
+La plateforme occidentale s'appuie davantage sur l'abonnement ou l'achat d'application. Au bout du compte, des interfaces épurées, qui privilégient la fonction sur l'empilement de couches supplémentaires.
 
 ### Psychologie de l'abondance et de la simplicité
 
-La perception culturelle de la valeur oriente la préférence de design.
+La lecture culturelle de la valeur oriente la préférence de design.
 
 #### Perception de la valeur en Chine
 

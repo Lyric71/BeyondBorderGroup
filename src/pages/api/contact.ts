@@ -16,6 +16,10 @@ export const POST: APIRoute = async ({ request }) => {
 	const name = stringField(body.name);
 	const email = stringField(body.email);
 	const company = stringField(body.company);
+	const website = stringField(body.website);
+	const services = stringArrayField(body.services);
+	const budget = stringField(body.budget);
+	const profile = stringField(body.profile);
 	const message = stringField(body.message);
 	const captcha = stringField(body.captcha);
 	const captchaExpected = stringField(body.captchaExpected);
@@ -40,17 +44,31 @@ export const POST: APIRoute = async ({ request }) => {
 	}
 
 	try {
-		await sendContactEmail({ name, email, company, message });
+		await sendContactEmail({ name, email, company, website, services, budget, profile, message });
 		return json({ success: true }, 200);
 	} catch (err) {
-		console.error('[api/contact] send failed', err);
-		const m = err instanceof Error ? err.message : 'Unknown error.';
-		return json({ error: m }, 500);
+		const detail = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
+		const stack = err instanceof Error ? err.stack : undefined;
+		console.error('[api/contact] send failed', { detail, stack });
+		return json(
+			{
+				error:
+					"We couldn't send your message right now. Please try again in a moment, or email us at hello@beyondbordergroup.com.",
+			},
+			500,
+		);
 	}
 };
 
 function stringField(value: unknown): string {
 	return typeof value === 'string' ? value.trim() : '';
+}
+
+function stringArrayField(value: unknown): string[] {
+	if (!Array.isArray(value)) return [];
+	return value
+		.map((v) => (typeof v === 'string' ? v.trim() : ''))
+		.filter((v) => v.length > 0);
 }
 
 function json(payload: unknown, status: number) {

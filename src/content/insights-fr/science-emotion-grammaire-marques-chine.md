@@ -41,13 +41,13 @@ C'est l'une des erreurs les plus fréquentes des marques internationales qui ent
 
 > Le collagène recombinant breveté de Collgene affiche une absorption cutanée trois fois supérieure à celle du collagène traditionnel.
 
-Collgene a posé [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier) et JD en socle de confiance. Optimisation des requêtes, architecture des SKU, plans de soin personnalisés, parcours de réachat : tout en place avant l'accélération du budget média. À l'arrivée, un taux de réachat de 42 %, soit 15 points au-dessus de la moyenne du secteur.
+Collgene a posé [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier) et JD en socle de confiance. Optimisation des requêtes, architecture des SKU, plans de soin personnalisés, parcours de réachat : tout en place avant l'accélération du budget média. Au bout du compte, un taux de réachat de 42 %, soit 15 points au-dessus de la moyenne du secteur.
 
-Voilà comment un shelf eCommerce doit travailler. Pas comme une couche transactionnelle, mais comme un actif de crédibilité. Le consommateur qui découvre une marque sur [Douyin](/fr/se-developper-en-chine/influence-et-kol) ira la vérifier sur Tmall avant d'acheter. Ce qu'il trouve à cet instant précis conclut la vente. Ou la tue.
+Voilà comment un shelf eCommerce doit travailler. Pas en couche transactionnelle, mais en actif de crédibilité. Le consommateur qui découvre une marque sur [Douyin](/fr/se-developper-en-chine/influence-et-kol) ira la vérifier sur Tmall avant d'acheter. Ce qu'il trouve à cet instant précis conclut la vente. Ou la tue.
 
 ![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
 
-## Douyin comme moteur de croissance, pas comme béquille
+## Douyin en moteur de croissance, pas en béquille
 
 > La matrice de KOL milieu de gamme de Collgene, combinée à un récit scientifique, a porté 60 % de l'acquisition de nouveaux clients.
 
@@ -55,13 +55,13 @@ La marque a évité le piège du livestream unique adossé à une seule célébr
 
 Ce contenu remplit deux missions. Convertir les nouveaux acheteurs. Et semer les requêtes qui nourriront ensuite Tmall et RED.
 
-## Xiaohongshu comme moteur de recherche longue traîne
+## Xiaohongshu en moteur de recherche longue traîne
 
 > La campagne #MyEmotionalOasis a généré plus de 120 000 publications UGC et une croissance de 210 % des requêtes sur Xiaohongshu.
 
 La plupart des marques sous-estiment Xiaohongshu dans le tunnel d'achat. Le réduire à un mood board passe à côté de l'essentiel. Le consommateur chinois y vérifie une marque avant de sortir la carte. Notes sur les ingrédients, routines, avant-après, avis francs : cette matière construit la fondation longue traîne qui rend la pub plus efficace partout ailleurs.
 
-Collgene a semé sur Xiaohongshu des récits émotionnels. Des coffrets baptisés « Kit de sauvetage heures sup » et « Set anti-stress ». Des campagnes adossées à la vie urbaine, à la peau qui réagit après les nuits trop courtes. Ce contenu a d'abord nourri la communauté. La conversion a suivi.
+Collgene a semé sur Xiaohongshu des récits émotionnels. Des coffrets baptisés « Kit de sauvetage heures sup » et « Set anti-stress ». Des campagnes adossées à la vie urbaine, à la peau qui réagit après les nuits trop courtes. Ce contenu a d'abord alimenté la communauté. La conversion a suivi.
 
 ![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-1.png)
 

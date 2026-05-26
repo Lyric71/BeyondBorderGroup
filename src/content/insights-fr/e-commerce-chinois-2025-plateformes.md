@@ -18,7 +18,7 @@ keyTakeaways:
 
 ## Le marché chinois donne toujours le tempo. La raison tient à l'intégration, pas à la taille.
 
-Le basculement actuel du retail tient en une idée. Online et offline convergent dans une seule boucle opérationnelle. Découverte, conversion, livraison, service : tout se conçoit comme un parcours unifié, souvent à l'intérieur d'une même application.
+Le basculement actuel du retail tient en une idée. Online et offline convergent dans une seule boucle opérationnelle. Découverte, conversion, livraison, service : tout se conçoit en parcours unifié, souvent à l'intérieur d'une même application.
 
 La Chine dispose en outre de la masse critique qui rend l'intégration viable. Le pays comptait plus de 1,12 milliard d'internautes en juin 2025.
 
@@ -31,7 +31,7 @@ Les grandes [plateformes](/fr/comprendre-la-chine/plateformes) chinoises ont cha
 ### **Alibaba (Taobao, Tmall, 1688)**
 
 * Taobao et Tmall portent le commerce marketplace à grande échelle (C2C et B2C).
-* 1688 couvre le gros et le sourcing domestique (B2B), souvent pertinent pour les fabricants et distributeurs.
+* 1688 couvre le gros et le sourcing domestique (B2B), souvent pertinent pour les fabricants et les distributeurs.
 
 ### **JD.com**
 
@@ -58,7 +58,7 @@ Les grandes [plateformes](/fr/comprendre-la-chine/plateformes) chinoises ont cha
 
 ### **Meituan**
 
-* Meituan agit comme une infrastructure de commerce local : livraison de repas, services de proximité, et de plus en plus de retail instantané.
+* Meituan tient un rôle d'infrastructure de commerce local : livraison de repas, services de proximité, et de plus en plus de retail instantané.
 * La plateforme tiendrait environ 70 % du marché chinois de la livraison de repas.
 
 ### **Vipshop**
@@ -81,7 +81,7 @@ Les ventes en commerce instantané atteindront 1 003 milliards de yuans en 2025,
 
 * Les magasins fonctionnent comme des mini-entrepôts.
 * Les flottes de livreurs jouent le rôle d'infrastructure retail.
-* Les applications agissent comme un système d'exploitation local, pas comme un catalogue national.
+* Les applications tiennent lieu de système d'exploitation local, pas de catalogue national.
 
 ---
 

@@ -1,5 +1,12 @@
 import { defaultLocale, locales, ui, type Locale, type TranslationKey } from './ui';
-import { insightEnToFr, insightFrToEn } from './insight-slugs.mjs';
+import {
+  insightEnToFr,
+  insightFrToEn,
+  insightEnToDe,
+  insightDeToEn,
+  insightEnToEs,
+  insightEsToEn,
+} from './insight-slugs.mjs';
 
 /**
  * Detect the active locale from a URL pathname.
@@ -64,6 +71,58 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
     '/thank-you': '/merci',
     '/privacy-policy': '/politique-de-confidentialite',
   },
+  de: {
+    '/about': '/ueber-uns',
+    '/enter-china': '/nach-china',
+    '/enter-china/market-entry-consulting': '/nach-china/markteintrittsberatung',
+    '/enter-china/cross-border-setup': '/nach-china/cross-border-aufbau',
+    '/enter-china/distribution': '/nach-china/vertrieb',
+    '/enter-china/branding-localisation': '/nach-china/marke-und-lokalisierung',
+    '/learn-china': '/china-verstehen',
+    '/learn-china/platforms': '/china-verstehen/plattformen',
+    '/learn-china/masterclass': '/china-verstehen/masterclass',
+    '/learn-china/learning-expeditions': '/china-verstehen/studienreisen',
+    '/grow-in-china': '/in-china-wachsen',
+    '/grow-in-china/cross-border-ecommerce': '/in-china-wachsen/cross-border-ecommerce',
+    '/grow-in-china/social-commerce': '/in-china-wachsen/social-commerce',
+    '/grow-in-china/campaigns': '/in-china-wachsen/kampagnen',
+    '/grow-in-china/media': '/in-china-wachsen/media',
+    '/grow-in-china/influencers-kols': '/in-china-wachsen/influencer-und-kol',
+    '/grow-in-china/production-studio': '/in-china-wachsen/produktionsstudio',
+    '/grow-in-china/website': '/in-china-wachsen/website',
+    '/work': '/referenzen',
+    '/insights': '/analysen',
+    '/contact': '/kontakt',
+    '/thank-you': '/danke',
+    '/privacy-policy': '/datenschutz',
+    '/cookie-policy': '/cookie-richtlinie',
+    '/terms-of-service': '/nutzungsbedingungen',
+  },
+  es: {
+    '/about': '/quienes-somos',
+    '/enter-china': '/entrar-en-china',
+    '/enter-china/market-entry-consulting': '/entrar-en-china/estrategia-de-entrada',
+    '/enter-china/cross-border-setup': '/entrar-en-china/lanzamiento-cross-border',
+    '/enter-china/distribution': '/entrar-en-china/distribucion',
+    '/enter-china/branding-localisation': '/entrar-en-china/marca-y-localizacion',
+    '/learn-china': '/conocer-china',
+    '/learn-china/platforms': '/conocer-china/plataformas',
+    '/learn-china/masterclass': '/conocer-china/masterclass',
+    '/learn-china/learning-expeditions': '/conocer-china/inmersion-china',
+    '/grow-in-china': '/crecer-en-china',
+    '/grow-in-china/cross-border-ecommerce': '/crecer-en-china/ecommerce-transfronterizo',
+    '/grow-in-china/social-commerce': '/crecer-en-china/comercio-social',
+    '/grow-in-china/campaigns': '/crecer-en-china/campanas',
+    '/grow-in-china/media': '/crecer-en-china/medios',
+    '/grow-in-china/influencers-kols': '/crecer-en-china/influencia-y-kol',
+    '/grow-in-china/production-studio': '/crecer-en-china/estudio-de-produccion',
+    '/grow-in-china/website': '/crecer-en-china/sitio-web',
+    '/work': '/proyectos',
+    '/insights': '/analisis',
+    '/contact': '/contacto',
+    '/thank-you': '/gracias',
+    '/privacy-policy': '/politica-de-privacidad',
+  },
 };
 
 /**
@@ -78,6 +137,12 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
 const prefixMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>> = {
   fr: {
     '/work/': '/nos-realisations/',
+  },
+  de: {
+    '/work/': '/referenzen/',
+  },
+  es: {
+    '/work/': '/proyectos/',
   },
 };
 
@@ -115,6 +180,18 @@ function toCanonical(path: string): string | null {
   if (sourceLocale === 'fr' && stripped.startsWith('/decryptages/')) {
     const frSlug = stripped.slice('/decryptages/'.length);
     const enSlug = insightFrToEn[frSlug];
+    if (enSlug) return `/insights/${enSlug}`;
+  }
+  // DE insight reverse lookup: /de/analysen/<de-slug> -> /insights/<en-slug>
+  if (sourceLocale === 'de' && stripped.startsWith('/analysen/')) {
+    const deSlug = stripped.slice('/analysen/'.length);
+    const enSlug = insightDeToEn[deSlug];
+    if (enSlug) return `/insights/${enSlug}`;
+  }
+  // ES insight reverse lookup: /es/analisis/<es-slug> -> /insights/<en-slug>
+  if (sourceLocale === 'es' && stripped.startsWith('/analisis/')) {
+    const esSlug = stripped.slice('/analisis/'.length);
+    const enSlug = insightEsToEn[esSlug];
     if (enSlug) return `/insights/${enSlug}`;
   }
   const reverse = reverseSlugMap[sourceLocale as Exclude<Locale, typeof defaultLocale>];
@@ -157,6 +234,18 @@ export function localizePath(path: string, locale: Locale): string {
     const enSlug = canonical.slice('/insights/'.length);
     const frSlug = insightEnToFr[enSlug];
     if (frSlug) return `/fr/decryptages/${frSlug}`;
+  }
+  // DE insight forward lookup: /insights/<en-slug> -> /de/analysen/<de-slug>
+  if (locale === 'de' && canonical.startsWith('/insights/')) {
+    const enSlug = canonical.slice('/insights/'.length);
+    const deSlug = insightEnToDe[enSlug];
+    if (deSlug) return `/de/analysen/${deSlug}`;
+  }
+  // ES insight forward lookup: /insights/<en-slug> -> /es/analisis/<es-slug>
+  if (locale === 'es' && canonical.startsWith('/insights/')) {
+    const enSlug = canonical.slice('/insights/'.length);
+    const esSlug = insightEnToEs[enSlug];
+    if (esSlug) return `/es/analisis/${esSlug}`;
   }
   const prefixes = prefixMap[locale as Exclude<Locale, typeof defaultLocale>];
   if (prefixes) {

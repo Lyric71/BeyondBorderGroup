@@ -1,0 +1,418 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const services = [
+  {
+    eyebrow: 'Strategie',
+    title: 'Markteintrittsberatung',
+    tagline: 'Ein Geschäftsmodell, abgestimmt auf Ihre Kategorie, Ihr Budget und Ihren Zeitplan. Ein Fahrplan, den Ihre Teams wirklich umsetzen können.',
+    href: '/de/nach-china/markteintrittsberatung',
+    cta: 'Strategieberatung entdecken',
+    image: '/Images/enter-china/phase-4-financial.png',
+    alt: 'Ein Finanzanalyst prüft ein China-Eintrittsmodell am Arbeitsplatz, Shanghai-Büro.',
+    accent: '#269ADA',
+    accentSoft: '#E8F4FC',
+  },
+  {
+    eyebrow: 'Marke',
+    title: 'Marke und Lokalisierung',
+    tagline: 'Eine für den chinesischen Verbraucher neu gedachte Marke: Name, visuelle Identität, Packaging, redaktioneller Ton.',
+    href: '/de/nach-china/marke-und-lokalisierung',
+    cta: 'Markenexpertise entdecken',
+    image: '/Images/branding/visual-identity.png',
+    alt: 'Identitäts-Boards, angepasst an chinesische Plattformen und Packaging.',
+    accent: '#E54B6E',
+    accentSoft: '#FCEAEF',
+  },
+  {
+    eyebrow: 'Launch',
+    title: 'Cross-Border eCommerce, Aufbau',
+    tagline: 'Tmall Global oder JD Worldwide, in wenigen Monaten ausgerollt, ohne Gründung einer lokalen Gesellschaft.',
+    href: '/de/nach-china/cross-border-aufbau',
+    cta: 'Rollout entdecken',
+    image: '/Images/enter-china/route-sellin.png',
+    alt: 'Ein chinesisches eCommerce-Vertriebsteam prüft den Bestand in einem Logistiklager in Shanghai.',
+    accent: '#0EA46C',
+    accentSoft: '#E6F5EE',
+  },
+  {
+    eyebrow: 'Reichweite',
+    title: 'Vertrieb',
+    tagline: 'Online, im Laden, in jeder Region. Ein passender Partner für Ihre Kategorie, ausgewählt und geprüft von unseren Teams.',
+    href: '/de/nach-china/vertrieb',
+    cta: 'Vertriebsarbeit entdecken',
+    image: '/Images/enter-china/route-sellout.png',
+    alt: 'Eine internationale Brand-Managerin und ein chinesischer Operator prüfen das Dashboard eines Tmall-Flagship-Shops, Shanghai-Büro.',
+    accent: '#7C5DFA',
+    accentSoft: '#F0EDFE',
+  },
+];
+---
+
+<Layout
+  title="Nach China | Markteintrittsagentur | Beyond Border Group"
+  description="Markteintrittsagentur in China für internationale Marken: Beratung, Marke und Lokalisierung, Cross-Border-Rollout, Vertrieb. Vier Leistungen, geführt von einer einzigen Mannschaft."
+>
+
+  {/* ---------- HERO ---------- */}
+  <section class="hero-fullbleed">
+    <picture>
+      <img
+        src="/Images/enter-china/hero-skyline.png"
+        alt=""
+        class="hero-fullbleed__image"
+        width="1600"
+        height="900"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </picture>
+    <div class="hero-fullbleed__overlay" aria-hidden="true"></div>
+
+    <div class="container hero-fullbleed__inner">
+      <div class="hero-fullbleed__copy">
+        <span class="eyebrow eyebrow--on-dark">Nach China</span>
+        <h1 class="hero-fullbleed__title">In China Fuss fassen.</h1>
+        <p class="hero-fullbleed__lead">
+          Strategie, Marke, Cross-Border-Rollout, Vertrieb. Vier Leistungen, die Marken vom Projekt zu den ersten Umsätzen führen, unter der Verantwortung eines einzigen Teams.
+        </p>
+        <div class="hero-fullbleed__actions">
+          <a class="btn btn--primary" href="/de/kontakt">Kontakt aufnehmen</a>
+          <a class="btn btn--ghost-light" href="#services">Vier Leistungen entdecken</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- PROOF STRIP ---------- */}
+  <section class="section section--tight enter-proof">
+    <div class="container">
+      <div class="enter-proof__intro">
+        <span class="eyebrow">Marken, die wir nach China gebracht haben</span>
+        <p class="enter-proof__pitch">
+          Drei Wochen Markt- und Regulatorik-Diagnose. Kanalwahl. Vertriebspartner-Shortlist oder Cross-Border-Aufbau. Schrittweise Beauftragung: Sie zahlen nur die nächste Etappe.
+        </p>
+      </div>
+      <ul class="enter-proof__strip" role="list">
+        <li class="enter-proof__card">
+          <img src="/Images/Clients%20Logos/Marriot.png" alt="Marriott" width="160" height="60" loading="lazy" />
+          <p class="enter-proof__metric">Achtstelliger RMB-GMV am Super Brand Day auf Tmall</p>
+        </li>
+        <li class="enter-proof__card">
+          <img src="/Images/Clients%20Logos/camper_black.png" alt="Camper" width="160" height="60" loading="lazy" />
+          <p class="enter-proof__metric">+330 % Audience-Wachstum auf WeChat, Weibo und RED</p>
+        </li>
+        <li class="enter-proof__card">
+          <img src="/Images/Clients%20Logos/Valio.png" alt="Valio" width="160" height="60" loading="lazy" />
+          <p class="enter-proof__metric">Sub-Marke eila gelauncht mit lokalisiertem Namen und vollständigem Identitäts-System</p>
+        </li>
+        <li class="enter-proof__card">
+          <img src="/Images/Clients%20Logos/pierre-black.png" alt="Pierre Fabre" width="160" height="60" loading="lazy" />
+          <p class="enter-proof__metric">Führungskräfte-Masterclass und 3D Digital Growth Model</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  {/* ---------- SERVICES GRID ---------- */}
+  <section class="section" id="services">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="eyebrow">Vier Türen</span>
+        <h2>Jeder Marke ihr eigener Eintrittspunkt.</h2>
+        <p class="section-header__lead">
+          Manche Marken brauchen erst eine Strategie, bevor sie operativ einen Schritt machen. Andere stehen startbereit. Wieder andere müssen ihre Identität zuerst für den chinesischen Markt überarbeiten. Vier Profile, vier Türen.
+        </p>
+      </header>
+
+      <div class="enter-grid">
+        {services.map((s) => (
+          <a
+            href={s.href}
+            class="enter-tile"
+            style={`--accent: ${s.accent}; --accent-soft: ${s.accentSoft};`}
+          >
+            <div class="enter-tile__media">
+              <img src={s.image} alt={s.alt} loading="lazy" decoding="async" />
+              <div class="enter-tile__scrim" aria-hidden="true"></div>
+            </div>
+
+            <div class="enter-tile__body">
+              <span class="enter-tile__eyebrow">{s.eyebrow}</span>
+              <h3 class="enter-tile__title">{s.title}</h3>
+              <p class="enter-tile__tagline">{s.tagline}</p>
+              <span class="enter-tile__cta">
+                {s.cta}
+                <span class="enter-tile__arrow" aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- FINAL CTA ---------- */}
+  <section class="section section--tight section--alt">
+    <div class="container">
+      <div class="enter-cta">
+        <div class="enter-cta__copy">
+          <span class="eyebrow">Unentschlossen zwischen den vier Leistungen?</span>
+          <h2>Schildern Sie uns Ihre Lage. Wir sagen Ihnen, wo wir anfangen.</h2>
+          <p class="enter-cta__lead">
+            Ein Mitglied unserer Geschäftsführung antwortet direkt, ohne automatisierten Zwischenschritt. Zwanzig Minuten am Telefon sparen oft ein Jahr Tasten.
+          </p>
+        </div>
+        <div class="enter-cta__actions">
+          <a class="btn btn--primary" href="/de/kontakt">Termin vereinbaren</a>
+          <a class="btn btn--ghost" href="/de/referenzen">Referenzen ansehen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .enter-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .enter-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 460px;
+    padding: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    color: #fff;
+    background: var(--bbg-ink);
+    isolation: isolate;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .enter-tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent);
+    z-index: 3;
+  }
+
+  .enter-tile__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .enter-tile__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .enter-tile__scrim {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.85) 100%);
+    z-index: 1;
+    transition: opacity 300ms ease;
+  }
+
+  .enter-tile__body {
+    position: relative;
+    z-index: 2;
+    max-width: 36rem;
+  }
+
+  .enter-tile__eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .enter-tile__title {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    line-height: 1.15;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  .enter-tile__tagline {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.92);
+    margin: 0 0 1.25rem;
+    max-width: 30rem;
+  }
+
+  .enter-tile__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    width: fit-content;
+    transition: border-color 200ms ease, color 200ms ease;
+  }
+
+  .enter-tile__arrow {
+    display: inline-block;
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .enter-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+    color: #fff;
+  }
+  .enter-tile:hover .enter-tile__media img {
+    transform: scale(1.05);
+  }
+  .enter-tile:hover .enter-tile__scrim {
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.9) 100%);
+  }
+  .enter-tile:hover .enter-tile__cta {
+    border-color: #fff;
+  }
+  .enter-tile:hover .enter-tile__arrow {
+    transform: translateX(6px);
+  }
+
+  .enter-tile:focus-visible {
+    outline: 3px solid var(--bbg-blue);
+    outline-offset: 4px;
+  }
+
+  .enter-cta {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  .enter-cta__copy h2 {
+    margin: 0 0 0.75rem;
+  }
+  .enter-cta__lead {
+    font-size: 1.0625rem;
+    color: var(--bbg-text);
+    margin: 0;
+    max-width: 38rem;
+  }
+  .enter-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 1024px) {
+    .enter-grid {
+      grid-template-columns: 1fr;
+    }
+    .enter-tile {
+      min-height: 380px;
+      padding: 1.75rem;
+    }
+    .enter-cta {
+      grid-template-columns: 1fr;
+    }
+    .enter-cta__actions {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .enter-tile {
+      min-height: 360px;
+    }
+    .enter-tile__tagline {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .enter-tile,
+    .enter-tile__media img,
+    .enter-tile__scrim,
+    .enter-tile__cta,
+    .enter-tile__arrow {
+      transition: none !important;
+    }
+  }
+
+  .enter-proof {
+    padding-block: var(--space-7);
+    background: var(--bbg-surface);
+  }
+  .enter-proof__intro {
+    max-width: 720px;
+    margin: 0 auto var(--space-6);
+    text-align: center;
+  }
+  .enter-proof__pitch {
+    margin-top: var(--space-3);
+    font-size: 1.05rem;
+    color: var(--bbg-text);
+    line-height: 1.55;
+  }
+  .enter-proof__strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .enter-proof__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: var(--space-5) var(--space-4);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  .enter-proof__card img {
+    height: 36px;
+    width: auto;
+    max-width: 140px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  .enter-proof__metric {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--bbg-ink);
+    font-weight: 500;
+  }
+  @media (max-width: 900px) {
+    .enter-proof__strip { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
