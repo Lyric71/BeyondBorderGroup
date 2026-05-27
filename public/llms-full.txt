@@ -1,6 +1,6 @@
 # Beyond Border Group — Insights (full text)
 
-> Full-text dump of every published insight on https://www.beyondbordergroup.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the Beyond Border Group team. Last regenerated: 2026-05-26.
+> Full-text dump of every published insight on https://www.beyondbordergroup.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the Beyond Border Group team. Last regenerated: 2026-05-27.
 
 ---
 # Maximizing Brand Impact: How the 11.11 Shopping Festival Transforms E-Commerce in China

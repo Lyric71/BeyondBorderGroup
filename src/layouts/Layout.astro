@@ -168,5 +168,9 @@ const graph = schemaGraph(organizationSchema(), websiteSchema(), ...pageSchemaLi
 			<slot />
 		</main>
 		<Footer />
+		<script>
+			import { inject } from '@vercel/analytics';
+			inject();
+		</script>
 	</body>
 </html>
