@@ -255,24 +255,28 @@
         }
       });
 
-      // Hero parallax + scroll progress bar (single rAF loop)
+      // Hero parallax + scroll progress bar (single rAF loop).
+      // Hero height and doc height are cached and refreshed on resize so the
+      // scroll handler does not force a synchronous layout every tick.
       const parallaxImg = document.querySelector('[data-home-parallax] img');
       const progressEl = document.querySelector('.home-progress__bar');
       const heroEl = document.querySelector('[data-home-hero]');
+      let heroH = heroEl ? heroEl.offsetHeight : 0;
+      let docH = document.documentElement.scrollHeight - window.innerHeight;
       let ticking = false;
+      const refreshMetrics = () => {
+        if (heroEl) heroH = heroEl.offsetHeight;
+        docH = document.documentElement.scrollHeight - window.innerHeight;
+      };
       const onScroll = () => {
         if (ticking) return;
         ticking = true;
         requestAnimationFrame(() => {
           const scrollY = window.scrollY || window.pageYOffset;
-          if (parallaxImg && heroEl && !reduced) {
-            const heroH = heroEl.offsetHeight;
-            if (scrollY < heroH) {
-              parallaxImg.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
-            }
+          if (parallaxImg && heroEl && !reduced && scrollY < heroH) {
+            parallaxImg.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
           }
           if (progressEl) {
-            const docH = document.documentElement.scrollHeight - window.innerHeight;
             const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
             progressEl.style.setProperty('--progress', pct + '%');
           }
@@ -280,6 +284,9 @@
         });
       };
       window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', refreshMetrics, { passive: true });
+      // Doc height grows as lazy content/images load; refresh after load too.
+      window.addEventListener('load', refreshMetrics, { once: true });
       onScroll();
 
       // Smooth-scroll the hero anchor
@@ -396,10 +403,14 @@
           p.classList.toggle('is-active', on);
           if (on) {
             const tiles = p.querySelectorAll('[data-svc-tile]');
-            tiles.forEach((tile) => {
-              tile.classList.remove('is-in');
-              void tile.offsetWidth;
-              tile.classList.add('is-in');
+            // Re-trigger the entrance animation without a forced reflow:
+            // strip the class on this frame, re-add on the next, so the
+            // browser does ONE layout pass instead of one per tile.
+            tiles.forEach((tile) => tile.classList.remove('is-in'));
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => {
+                tiles.forEach((tile) => tile.classList.add('is-in'));
+              });
             });
           }
         });
@@ -481,20 +492,27 @@
           });
         });
 
-        // Image scroll-parallax inside each tile (subtle)
+        // Image scroll-parallax inside each tile (subtle).
+        // Two-pass: all reads first, then all writes, so the browser does a
+        // single layout pass per frame instead of one per tile.
         if (!reduced) {
           const parallaxImgs = document.querySelectorAll('[data-svc-parallax] img');
           let parallaxTicking = false;
+          const shifts = new Array(parallaxImgs.length);
           const updateParallax = () => {
-            parallaxImgs.forEach((img) => {
-              const frame = img.parentElement;
-              const r = frame.getBoundingClientRect();
-              const vh = window.innerHeight;
-              if (r.bottom < 0 || r.top > vh) return;
+            const vh = window.innerHeight;
+            parallaxImgs.forEach((img, i) => {
+              const r = img.parentElement.getBoundingClientRect();
+              if (r.bottom < 0 || r.top > vh) {
+                shifts[i] = null;
+                return;
+              }
               const center = r.top + r.height / 2;
               const ratio = (center - vh / 2) / vh;
-              const shift = Math.max(-14, Math.min(14, ratio * -22));
-              img.style.setProperty('--sy', shift + 'px');
+              shifts[i] = Math.max(-14, Math.min(14, ratio * -22));
+            });
+            parallaxImgs.forEach((img, i) => {
+              if (shifts[i] !== null) img.style.setProperty('--sy', shifts[i] + 'px');
             });
             parallaxTicking = false;
           };

@@ -26,6 +26,10 @@ interface Props {
 	publishedTime?: Date | string;
 	modifiedTime?: Date | string;
 	articleAuthor?: string;
+	/** Preload an above-the-fold image (typically the LCP hero) so the browser
+	 * starts fetching it without waiting to parse the body. Pass the WebP path;
+	 * the JPG fallback is discovered normally via <picture>. */
+	preloadImage?: string;
 }
 
 const locale = getLocaleFromUrl(Astro.url);
@@ -47,6 +51,7 @@ const {
 	publishedTime,
 	modifiedTime,
 	articleAuthor,
+	preloadImage,
 } = Astro.props;
 
 const OG_LOCALE: Record<typeof locale, string> = {
@@ -130,6 +135,15 @@ const graph = schemaGraph(
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
+		{preloadImage && (
+			<link
+				rel="preload"
+				as="image"
+				href={preloadImage}
+				type={preloadImage.endsWith('.webp') ? 'image/webp' : undefined}
+				fetchpriority="high"
+			/>
+		)}
 		<title>{title}</title>
 		<link rel="canonical" href={canonicalHref} />
 		{noindex && <meta name="robots" content="noindex, follow" />}
