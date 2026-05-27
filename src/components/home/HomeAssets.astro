@@ -243,37 +243,17 @@
         }
       }
 
-      // Animated counters in the hero meta strip
+      // Hero meta counters render their final value in static HTML so AI
+      // crawlers (no JS) read the real numbers, not 0. Keep the data
+      // attributes wired in case the animation is reintroduced later, but
+      // skip animating when the static value already matches the target.
       const counters = document.querySelectorAll('[data-home-counter]');
-      if (counters.length && !reduced && 'IntersectionObserver' in window) {
-        const animate = (el) => {
-          const target = parseFloat(el.dataset.homeCounter || '0');
-          const suffix = el.dataset.suffix || '';
-          const duration = 1400;
-          const start = performance.now();
-          const tick = (now) => {
-            const t = Math.min(1, (now - start) / duration);
-            const eased = 1 - Math.pow(1 - t, 3);
-            const value = Math.round(target * eased);
-            el.textContent = value + suffix;
-            if (t < 1) requestAnimationFrame(tick);
-          };
-          requestAnimationFrame(tick);
-        };
-        const counterIo = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animate(entry.target);
-              counterIo.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.5 });
-        counters.forEach((el) => counterIo.observe(el));
-      } else {
-        counters.forEach((el) => {
-          el.textContent = (el.dataset.homeCounter || '0') + (el.dataset.suffix || '');
-        });
-      }
+      counters.forEach((el) => {
+        const target = (el.dataset.homeCounter || '0') + (el.dataset.suffix || '');
+        if (el.textContent.trim() !== target) {
+          el.textContent = target;
+        }
+      });
 
       // Hero parallax + scroll progress bar (single rAF loop)
       const parallaxImg = document.querySelector('[data-home-parallax] img');

@@ -328,6 +328,29 @@ const icons: Record<string, string> = {
       </a>
     </section>
 
+    {/* ---------- WHAT IS A TP (citable explainer passage) ---------- */}
+    <section class="section section--tight cbs-tp-explainer">
+      <div class="container">
+        <div class="cbs-tp-explainer__copy">
+          <span class="eyebrow">The model</span>
+          <h2 class="cbs-tp-explainer__title">What is a Tmall Global TP?</h2>
+          <p>
+            A Tmall Global Trade Partner (TP) is an Alibaba-certified operator that runs a
+            brand's cross-border store on the platform. Setup, listings, customer service in
+            Mandarin, livestream, paid media, customs paperwork. The brand keeps the IP and
+            the customer relationship. The TP gets paid a fixed fee plus a share of sales.
+          </p>
+          <p>
+            Our senior team has run TP-model stores for international brands since the early
+            2010s, across beauty, F&amp;B, automotive, hospitality and luxury. Setup on Tmall
+            Global typically takes 8 to 12 weeks: store opening, ICP filing, bonded warehouse
+            contract, first catalogue, launch content. JD Worldwide and Douyin EC follow the
+            same pattern with different platform mechanics.
+          </p>
+        </div>
+      </div>
+    </section>
+
     {/* ---------- CONTEXT: LOCALIZATION + COMPETITION ---------- */}
     <section id="two-truths" class="section">
       <div class="container">
@@ -791,6 +814,28 @@ const icons: Record<string, string> = {
   <style is:global>
     /* ---------- Container narrow helper (re-used pattern) ---------- */
     .cbs .container--narrow { max-width: 880px; }
+
+    /* ---------- TP explainer (citable Q&A passage) ---------- */
+    .cbs-tp-explainer__copy {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+    .cbs-tp-explainer__title {
+      font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin: 0.5rem 0 1rem;
+      color: #1a1a1a;
+    }
+    .cbs-tp-explainer__copy p {
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: #333;
+      margin: 0 0 1rem;
+    }
+    .cbs-tp-explainer__copy p:last-child {
+      margin-bottom: 0;
+    }
 
     /* ---------- REVEAL + MOTION (global) ---------- */
     @media (prefers-reduced-motion: no-preference) {

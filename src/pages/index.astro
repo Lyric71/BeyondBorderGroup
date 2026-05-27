@@ -346,11 +346,11 @@ function formatInsightDate(d?: Date) {
 
       <div class="home-hero__meta home-reveal" style="--reveal-delay: 360ms;">
         <div class="home-hero__meta-item">
-          <span class="home-hero__meta-num" data-home-counter="20" data-suffix="+">0</span>
+          <span class="home-hero__meta-num" data-home-counter="20" data-suffix="+">20+</span>
           <span class="home-hero__meta-label">years in China</span>
         </div>
         <div class="home-hero__meta-item">
-          <span class="home-hero__meta-num" data-home-counter="75" data-suffix="+">0</span>
+          <span class="home-hero__meta-num" data-home-counter="75" data-suffix="+">75+</span>
           <span class="home-hero__meta-label">brand launches</span>
         </div>
         <div class="home-hero__meta-item">
@@ -381,13 +381,13 @@ function formatInsightDate(d?: Date) {
         {dayStops.map((s) => (
           <li class="day-stop">
             <figure class="day-stop__photo">
-              <img src={s.photo} alt="" loading="lazy" decoding="async" />
+              <img src={s.photo} alt="" width="800" height="600" loading="lazy" decoding="async" />
             </figure>
             <div class="day-stop__info">
               <span class="day-stop__time">{s.time}</span>
               <span class="day-stop__moment">{s.moment}</span>
               <span class="day-stop__platform">
-                <img class="day-stop__logo" src={s.logo} alt="" loading="lazy" decoding="async" />
+                <img class="day-stop__logo" src={s.logo} alt="" width="48" height="48" loading="lazy" decoding="async" />
                 <span class="day-stop__platform-text">
                   <span class="day-stop__name">{s.name}</span>
                   <span class="day-stop__zh">{s.zh}</span>
@@ -432,7 +432,7 @@ function formatInsightDate(d?: Date) {
               aria-pressed={i === 0 ? 'true' : 'false'}
               aria-label={`Show ${p.title}`}
             ></button>
-            <img class="stage-panel__img" src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
+            <img class="stage-panel__img" src={p.image} alt={p.imageAlt} width="800" height="1000" loading="lazy" decoding="async" />
             <div class="stage-panel__scrim" aria-hidden="true"></div>
             <span class="stage-panel__rail" aria-hidden="true"></span>
 
@@ -531,7 +531,7 @@ function formatInsightDate(d?: Date) {
               >
                 <div class="svc-tile__media">
                   <div class="svc-tile__image" data-svc-parallax>
-                    <img src={s.image} alt={s.imageAlt} loading="lazy" decoding="async" />
+                    <img src={s.image} alt={s.imageAlt} width="800" height="600" loading="lazy" decoding="async" />
                   </div>
                   <div class="svc-tile__media-overlay" aria-hidden="true"></div>
                   <div class="svc-tile__media-grain" aria-hidden="true"></div>
@@ -737,8 +737,10 @@ function formatInsightDate(d?: Date) {
           <h2 class="home-about__title">Here's why brands work with us</h2>
 
           <p class="home-about__lead">
-            The team behind BBG spent years inside Publicis Shanghai and Fortune 500 companies
-            operating in China.
+            Cyril Drouin founded Beyond Border Group in 2023, after running Publicis Commerce
+            and Performance Marketing for China and North Asia as CEO. He brought the senior
+            team with him. Operators with 20 years on Tmall, JD, Douyin and WeChat, 75+ brand
+            launches behind them, based in Shanghai, Hong Kong and Paris.
           </p>
           <p>
             Running brand strategy, buying media, managing eCommerce operations, building social
@@ -752,8 +754,8 @@ function formatInsightDate(d?: Date) {
             the outside is not our model.
           </p>
           <p>
-            We went independent in 2023 because we wanted strategy and execution under one roof,
-            with the same senior people handling both. The experience didn't change. The
+            Going independent in 2023 let us put strategy and execution under one roof, with
+            the same senior people handling both. The experience didn't change. The
             structure did.
           </p>
 
@@ -767,7 +769,7 @@ function formatInsightDate(d?: Date) {
   <section class="section section--studio" aria-label="Hub Studio">
     <div class="studio">
       <div class="studio__atmos" aria-hidden="true">
-        <img src="/Images/hub-studio/backdrop.jpg" alt="" loading="lazy" decoding="async" />
+        <img src="/Images/hub-studio/backdrop.jpg" alt="" width="1920" height="1080" loading="lazy" decoding="async" />
       </div>
       <div class="studio__veil" aria-hidden="true"></div>
       <div class="studio__grain" aria-hidden="true"></div>
@@ -866,7 +868,7 @@ function formatInsightDate(d?: Date) {
 
           <div class="studio__hero-visual" data-parallax>
             <figure class="studio__frame studio__frame--main">
-              <img src="/Images/hub-studio/creative.jpg" alt="" loading="lazy" decoding="async" />
+              <img src="/Images/hub-studio/creative.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
               <figcaption class="studio__frame-meta">
                 <span class="studio__rec" aria-hidden="true"></span>
                 <span class="studio__frame-meta-label">Now shooting</span>
@@ -874,7 +876,7 @@ function formatInsightDate(d?: Date) {
               </figcaption>
             </figure>
             <figure class="studio__frame studio__frame--sub" aria-hidden="true">
-              <img src="/Images/hub-studio/production.jpg" alt="" loading="lazy" decoding="async" />
+              <img src="/Images/hub-studio/production.jpg" alt="" width="900" height="1200" loading="lazy" decoding="async" />
             </figure>
             <div class="studio__brace studio__brace--tl" aria-hidden="true"></div>
             <div class="studio__brace studio__brace--br" aria-hidden="true"></div>
@@ -935,7 +937,7 @@ function formatInsightDate(d?: Date) {
               aria-labelledby="studio-tab-creative"
             >
               <div class="studio__panel-visual">
-                <img src="/Images/hub-studio/creative.jpg" alt="" loading="lazy" decoding="async" />
+                <img src="/Images/hub-studio/creative.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
                 <div class="studio__tags">
                   <span>Concept</span>
                   <span>Art direction</span>
@@ -968,7 +970,7 @@ function formatInsightDate(d?: Date) {
               hidden
             >
               <div class="studio__panel-visual">
-                <img src="/Images/hub-studio/production.jpg" alt="" loading="lazy" decoding="async" />
+                <img src="/Images/hub-studio/production.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
                 <div class="studio__tags">
                   <span>Photo</span>
                   <span>Film</span>
@@ -1001,7 +1003,7 @@ function formatInsightDate(d?: Date) {
               hidden
             >
               <div class="studio__panel-visual">
-                <img src="/Images/hub-studio/aigc.jpg" alt="" loading="lazy" decoding="async" />
+                <img src="/Images/hub-studio/aigc.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" />
                 <div class="studio__tags">
                   <span>AIGC</span>
                   <span>Latest models</span>

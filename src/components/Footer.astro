@@ -124,7 +124,7 @@ const year = new Date().getFullYear();
         {network.map(agency => (
           <a class="footer__network-card" href={agency.href} target="_blank" rel="noopener">
             <span class="footer__network-card-logo">
-              <img src={agency.logo} alt={agency.name} loading="lazy" />
+              <img src={agency.logo} alt={agency.name} width="320" height="80" loading="lazy" />
             </span>
             <span class="footer__network-card-name">{agency.name}</span>
             <span class="footer__network-card-desc">{agency.desc}</span>
@@ -134,7 +134,7 @@ const year = new Date().getFullYear();
 
       <a class="footer__parent" href="https://www.beyondbordergroup.org/" target="_blank" rel="noopener">
         <span class="footer__parent-logo">
-          <img src="/Images/AgencyLogos/BBG%20PNG.webp" alt="Beyond Border Group" loading="lazy" />
+          <img src="/Images/AgencyLogos/BBG%20PNG.webp" alt="Beyond Border Group" width="400" height="120" loading="lazy" />
         </span>
         <span class="footer__parent-body">
           <span class="footer__parent-eyebrow">{t('footer.parent.eyebrow')}</span>

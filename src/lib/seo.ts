@@ -29,13 +29,88 @@ function toIso(d?: Date | string): string | undefined {
   return d.toISOString();
 }
 
+/**
+ * Stable @id anchors for the three offices. Referenced from the
+ * Organization graph via `subOrganization` so AI search and rich-result
+ * pipelines see each location as its own LocalBusiness entity.
+ *
+ * Street addresses and geo coordinates are populated when finalised. The
+ * fields below carry locality + country at minimum, which is enough to
+ * resolve the entity in Google Knowledge Graph and Bing Copilot.
+ */
+export const OFFICE_IDS = {
+  shanghai: `${SITE_URL}/#office-shanghai`,
+  hongkong: `${SITE_URL}/#office-hongkong`,
+  paris: `${SITE_URL}/#office-paris`,
+} as const;
+
+export function localBusinessSchemas(): SchemaObject[] {
+  return [
+    {
+      '@type': ['LocalBusiness', 'MarketingAgency'],
+      '@id': OFFICE_IDS.shanghai,
+      name: 'Beyond Border Group, Shanghai',
+      parentOrganization: { '@id': ORG_ID },
+      url: `${SITE_URL}/contact`,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Shanghai',
+        addressRegion: 'Shanghai',
+        addressCountry: 'CN',
+      },
+      areaServed: { '@type': 'Country', name: 'China' },
+      availableLanguage: ['English', 'French'],
+    },
+    {
+      '@type': ['LocalBusiness', 'MarketingAgency'],
+      '@id': OFFICE_IDS.hongkong,
+      name: 'Beyond Border Group, Hong Kong',
+      parentOrganization: { '@id': ORG_ID },
+      url: `${SITE_URL}/contact`,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Hong Kong',
+        addressCountry: 'HK',
+      },
+      areaServed: { '@type': 'Country', name: 'Hong Kong' },
+      availableLanguage: ['English', 'French'],
+    },
+    {
+      '@type': ['LocalBusiness', 'MarketingAgency'],
+      '@id': OFFICE_IDS.paris,
+      name: 'Beyond Border Group, Paris',
+      parentOrganization: { '@id': ORG_ID },
+      url: `${SITE_URL}/contact`,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Paris',
+        addressRegion: 'Île-de-France',
+        addressCountry: 'FR',
+      },
+      areaServed: [
+        { '@type': 'Country', name: 'France' },
+        { '@type': 'Country', name: 'Germany' },
+        { '@type': 'Country', name: 'United Kingdom' },
+      ],
+      availableLanguage: ['English', 'French'],
+    },
+  ];
+}
+
 export function organizationSchema(): SchemaObject {
   return {
-    '@type': 'Organization',
+    '@type': ['Organization', 'MarketingAgency'],
     '@id': ORG_ID,
     name: 'Beyond Border Group',
-    alternateName: 'BBG',
+    alternateName: ['BBG', 'BeyondBorderGroup'],
     url: SITE_URL,
+    foundingDate: '2023',
+    foundingLocation: { '@type': 'Place', name: 'Shanghai, China' },
+    founder: {
+      '@type': 'Person',
+      '@id': PERSON_IDS.cyril,
+      name: 'Cyril Drouin',
+    },
     logo: {
       '@type': 'ImageObject',
       url: `${SITE_URL}/Images/Logo-horizontal-light.svg`,
@@ -43,20 +118,42 @@ export function organizationSchema(): SchemaObject {
       height: 563,
     },
     description:
-      'B2B marketing and eCommerce agency helping global brands enter, grow, and win in China. Offices in Shanghai, Hong Kong, and Paris.',
+      'B2B marketing and eCommerce agency helping global brands enter, grow, and win in China. Offices in Shanghai, Hong Kong, and Paris. Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketing for China and North Asia.',
+    knowsAbout: [
+      'China market entry',
+      'Cross-border eCommerce',
+      'Tmall Global',
+      'JD Worldwide',
+      'Douyin',
+      'WeChat marketing',
+      'Xiaohongshu',
+      'Livestream commerce',
+      'KOL marketing in China',
+      'China brand localisation',
+      'Baidu SEO',
+      'ICP licensing',
+    ],
     address: [
       { '@type': 'PostalAddress', addressLocality: 'Shanghai', addressCountry: 'CN' },
       { '@type': 'PostalAddress', addressLocality: 'Hong Kong', addressCountry: 'HK' },
       { '@type': 'PostalAddress', addressLocality: 'Paris', addressCountry: 'FR' },
     ],
+    location: [
+      { '@id': OFFICE_IDS.shanghai },
+      { '@id': OFFICE_IDS.hongkong },
+      { '@id': OFFICE_IDS.paris },
+    ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',
       url: `${SITE_URL}/contact`,
-      areaServed: ['CN', 'HK', 'FR', 'GB', 'US', 'DE', 'AU'],
-      availableLanguage: ['English', 'French', 'Chinese'],
+      areaServed: ['CN', 'HK', 'FR', 'GB', 'US', 'DE', 'AU', 'ES'],
+      availableLanguage: ['English', 'French'],
     },
-    sameAs: ['https://www.linkedin.com/company/beyondbordergroup/'],
+    sameAs: [
+      'https://www.linkedin.com/company/beyondbordergroup/',
+      'https://cyrildrouin.substack.com',
+    ],
     subOrganization: [
       {
         '@type': 'Organization',
@@ -631,6 +728,87 @@ const SERVICE_PATH_BY_LOCALE: Record<'fr' | 'de' | 'es', Record<string, string>>
 };
 
 /**
+ * Per-locale labels for the three top-level service hubs. Used by the
+ * breadcrumb generator so a path like
+ * `/grow-in-china/social-commerce` shows the right native parent name in
+ * each locale.
+ */
+const HUB_LABELS: Record<
+  'en' | 'fr' | 'de' | 'es',
+  Record<'/enter-china' | '/grow-in-china' | '/learn-china', string>
+> = {
+  en: {
+    '/enter-china': 'Enter China',
+    '/grow-in-china': 'Grow in China',
+    '/learn-china': 'Learn China',
+  },
+  fr: {
+    '/enter-china': 'Entrer en Chine',
+    '/grow-in-china': 'Se développer en Chine',
+    '/learn-china': 'Comprendre la Chine',
+  },
+  de: {
+    '/enter-china': 'Nach China',
+    '/grow-in-china': 'In China wachsen',
+    '/learn-china': 'China verstehen',
+  },
+  es: {
+    '/enter-china': 'Entrar en China',
+    '/grow-in-china': 'Crecer en China',
+    '/learn-china': 'Conocer China',
+  },
+};
+
+const HOME_LABELS: Record<'en' | 'fr' | 'de' | 'es', string> = {
+  en: 'Home',
+  fr: 'Accueil',
+  de: 'Startseite',
+  es: 'Inicio',
+};
+
+/** Resolve the locale-aware URL for a canonical English path. */
+function localizeUrl(
+  canonicalPath: string,
+  inLanguage: 'en' | 'fr' | 'de' | 'es',
+): string {
+  if (inLanguage === 'en') return SITE_URL + canonicalPath;
+  const map = SERVICE_PATH_BY_LOCALE[inLanguage];
+  return SITE_URL + (map[canonicalPath] ?? canonicalPath);
+}
+
+/**
+ * Build a service-page breadcrumb (Home > Hub > Service) from the canonical
+ * English path. Returns `undefined` for paths that do not nest under a known
+ * hub, so callers can omit the breadcrumb on standalone pages.
+ */
+function serviceBreadcrumb(
+  canonicalPath: string,
+  inLanguage: 'en' | 'fr' | 'de' | 'es',
+  serviceName: string,
+): BreadcrumbItem[] | undefined {
+  const hubs: ('/enter-china' | '/grow-in-china' | '/learn-china')[] = [
+    '/enter-china',
+    '/grow-in-china',
+    '/learn-china',
+  ];
+  const hub = hubs.find((h) => canonicalPath.startsWith(`${h}/`));
+  if (!hub) return undefined;
+  const homeUrl =
+    inLanguage === 'en' ? `${SITE_URL}/` : `${SITE_URL}/${inLanguage}`;
+  return [
+    { name: HOME_LABELS[inLanguage], url: homeUrl },
+    {
+      name: HUB_LABELS[inLanguage][hub],
+      url: localizeUrl(hub, inLanguage),
+    },
+    {
+      name: serviceName,
+      url: localizeUrl(canonicalPath, inLanguage),
+    },
+  ];
+}
+
+/**
  * Build the Service schema for a service page given the locale and path.
  * `path` is the canonical English path; the helper looks up the locale's
  * native URL when one exists. Returns `null` for paths that are not service
@@ -645,10 +823,7 @@ export function getServicePageSchema(
 ): SchemaObject | null {
   const data = SERVICE_PAGE_DATA[canonicalPath];
   if (!data) return null;
-  const url =
-    inLanguage === 'en'
-      ? SITE_URL + canonicalPath
-      : SITE_URL + (SERVICE_PATH_BY_LOCALE[inLanguage][canonicalPath] ?? canonicalPath);
+  const url = localizeUrl(canonicalPath, inLanguage);
   const copy = (data[inLanguage] ?? data.en) as ServiceLocaleCopy;
   return serviceSchema({
     url,
@@ -657,7 +832,72 @@ export function getServicePageSchema(
     serviceType: data.serviceType,
     areaServed: data.areaServed,
     inLanguage,
+    breadcrumb: serviceBreadcrumb(canonicalPath, inLanguage, copy.name),
   });
+}
+
+/**
+ * Hub-page metadata for the three service hubs (`/enter-china`,
+ * `/grow-in-china`, `/learn-china`). Returns a CollectionPage + BreadcrumbList
+ * pair so AI search engines see the hub as its own entity with a clear
+ * parent (the home page) and a clear set of child services. Returns `null`
+ * for any other path.
+ */
+const HUB_DESCRIPTIONS: Record<
+  '/enter-china' | '/grow-in-china' | '/learn-china',
+  Record<'en' | 'fr' | 'de' | 'es', string>
+> = {
+  '/enter-china': {
+    en: 'Market entry, cross-border eCommerce setup, distribution and brand localisation for foreign brands launching in China.',
+    fr: "Implantation en Chine : conseil en entrée de marché, lancement cross-border, distribution et localisation de marque pour les marques étrangères.",
+    de: 'Markteintritt, Cross-Border-eCommerce-Aufbau, Vertrieb und Markenlokalisierung für ausländische Marken, die in China starten.',
+    es: 'Entrada en el mercado chino: consultoría estratégica, lanzamiento cross-border, distribución y localización de marca para marcas extranjeras.',
+  },
+  '/grow-in-china': {
+    en: 'eCommerce operations, social commerce, paid media, campaigns and content production for brands already selling in China.',
+    fr: "Opérations eCommerce, social commerce, achat média, campagnes et production de contenu pour les marques déjà présentes en Chine.",
+    de: 'eCommerce-Betrieb, Social Commerce, Media-Einkauf, Kampagnen und Content-Produktion für Marken, die bereits in China verkaufen.',
+    es: 'Operaciones eCommerce, social commerce, compra de medios, campañas y producción de contenido para marcas que ya venden en China.',
+  },
+  '/learn-china': {
+    en: 'China platforms tour, marketing masterclasses and on-the-ground learning expeditions for international leadership teams.',
+    fr: "Panorama des plateformes chinoises, masterclass marketing et expéditions terrain pour les dirigeants internationaux.",
+    de: 'Überblick über chinesische Plattformen, Marketing-Masterclasses und Studienreisen vor Ort für internationale Führungsteams.',
+    es: 'Panorama de las plataformas chinas, masterclasses de marketing y programas de inmersión sobre el terreno para equipos directivos internacionales.',
+  },
+};
+
+export function getServiceHubSchema(
+  canonicalPath: string,
+  inLanguage: 'en' | 'fr' | 'de' | 'es',
+): SchemaObject[] | null {
+  if (
+    canonicalPath !== '/enter-china' &&
+    canonicalPath !== '/grow-in-china' &&
+    canonicalPath !== '/learn-china'
+  ) {
+    return null;
+  }
+  const url = localizeUrl(canonicalPath, inLanguage);
+  const homeUrl =
+    inLanguage === 'en' ? `${SITE_URL}/` : `${SITE_URL}/${inLanguage}`;
+  const name = HUB_LABELS[inLanguage][canonicalPath];
+  return [
+    {
+      '@type': 'CollectionPage',
+      '@id': `${url}#webpage`,
+      url,
+      name,
+      description: HUB_DESCRIPTIONS[canonicalPath][inLanguage],
+      isPartOf: { '@id': WEBSITE_ID },
+      about: { '@id': ORG_ID },
+      inLanguage,
+      breadcrumb: breadcrumbList([
+        { name: HOME_LABELS[inLanguage], url: homeUrl },
+        { name, url },
+      ]),
+    },
+  ];
 }
 
 export function serviceSchema(s: ServiceInput): SchemaObject {

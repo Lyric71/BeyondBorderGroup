@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
-import { insightEnToFr, insightEnToDe } from './src/i18n/insight-slugs.mjs';
+import { insightEnToFr, insightEnToDe, insightEnToEs } from './src/i18n/insight-slugs.mjs';
 
 /**
  * Legacy WordPress insight article slugs. On the old site every insight sat at
@@ -334,6 +334,43 @@ const staticDeToEn = Object.fromEntries(
 );
 
 /**
+ * Static EN -> ES slug pairs for the sitemap serialize hook. Mirrors the
+ * `slugMap.es` block in `src/i18n/utils.ts`. Native Spanish slugs per CLAUDE.md §6.11
+ * (ñ → n, accents stripped on slug, kept in body copy).
+ */
+const staticEnToEs = {
+  '/': '/es',
+  '/about': '/es/quienes-somos',
+  '/contact': '/es/contacto',
+  '/thank-you': '/es/gracias',
+  '/privacy-policy': '/es/politica-de-privacidad',
+  '/enter-china': '/es/entrar-en-china',
+  '/enter-china/market-entry-consulting': '/es/entrar-en-china/estrategia-de-entrada',
+  '/enter-china/cross-border-setup': '/es/entrar-en-china/lanzamiento-cross-border',
+  '/enter-china/distribution': '/es/entrar-en-china/distribucion',
+  '/enter-china/branding-localisation': '/es/entrar-en-china/marca-y-localizacion',
+  '/grow-in-china': '/es/crecer-en-china',
+  '/grow-in-china/cross-border-ecommerce': '/es/crecer-en-china/ecommerce-transfronterizo',
+  '/grow-in-china/social-commerce': '/es/crecer-en-china/comercio-social',
+  '/grow-in-china/campaigns': '/es/crecer-en-china/campanas',
+  '/grow-in-china/media': '/es/crecer-en-china/medios',
+  '/grow-in-china/influencers-kols': '/es/crecer-en-china/influencia-y-kol',
+  '/grow-in-china/production-studio': '/es/crecer-en-china/estudio-de-produccion',
+  '/grow-in-china/website': '/es/crecer-en-china/sitio-web',
+  '/learn-china': '/es/conocer-china',
+  '/learn-china/platforms': '/es/conocer-china/plataformas',
+  '/learn-china/masterclass': '/es/conocer-china/masterclass',
+  '/learn-china/learning-expeditions': '/es/conocer-china/inmersion-china',
+  '/work': '/es/proyectos',
+  '/insights': '/es/analisis',
+  '/cookie-policy': '/es/politica-de-cookies',
+  '/terms-of-service': '/es/condiciones-de-uso',
+};
+const staticEsToEn = Object.fromEntries(
+  Object.entries(staticEnToEs).map(([en, es]) => [es, en])
+);
+
+/**
  * Reduce a built page path to its canonical English equivalent.
  * Returns `null` for paths with no resolvable canonical (e.g. orphan FR/DE
  * pages with no EN twin), so the sitemap hook can skip them.
@@ -366,6 +403,19 @@ const canonicalize = (/** @type {string} */ path) => {
     }
     if (path === '/de/referenzen') return '/work';
     return staticDeToEn[path] ?? null;
+  }
+  if (path.startsWith('/es')) {
+    if (path.startsWith('/es/analisis/')) {
+      const tail = path.slice('/es/analisis/'.length);
+      if (!tail) return '/insights';
+      const enSlug = Object.entries(insightEnToEs).find(([, es]) => es === tail)?.[0];
+      return enSlug ? `/insights/${enSlug}` : null;
+    }
+    if (path.startsWith('/es/proyectos/')) {
+      return '/work/' + path.slice('/es/proyectos/'.length);
+    }
+    if (path === '/es/proyectos') return '/work';
+    return staticEsToEn[path] ?? null;
   }
   return path;
 };
@@ -402,6 +452,23 @@ const enToDe = (/** @type {string | null} */ enPath) => {
   }
   if (enPath === '/work') return '/de/referenzen';
   return staticEnToDe[enPath] ?? null;
+};
+
+/** Forward map an EN path to its ES twin, or null if none exists. */
+const enToEs = (/** @type {string | null} */ enPath) => {
+  if (!enPath) return null;
+  if (enPath === '/') return '/es';
+  if (enPath.startsWith('/insights/')) {
+    const enSlug = enPath.slice('/insights/'.length);
+    const esSlug = insightEnToEs[enSlug];
+    return esSlug ? `/es/analisis/${esSlug}` : null;
+  }
+  if (enPath === '/insights') return '/es/analisis';
+  if (enPath.startsWith('/work/')) {
+    return '/es/proyectos/' + enPath.slice('/work/'.length);
+  }
+  if (enPath === '/work') return '/es/proyectos';
+  return staticEnToEs[enPath] ?? null;
 };
 
 const frInsightRedirects = Object.fromEntries(
@@ -453,6 +520,7 @@ export default defineConfig({
         !page.includes('/thank-you') &&
         !page.includes('/fr/merci') &&
         !page.includes('/de/danke') &&
+        !page.includes('/es/gracias') &&
         !page.includes('/api/'),
       changefreq: 'weekly',
       priority: 0.7,
@@ -469,6 +537,7 @@ export default defineConfig({
         const enPath = canonicalize(path);
         const frPath = enToFr(enPath);
         const dePath = enToDe(enPath);
+        const esPath = enToEs(enPath);
         if (!enPath) return item;
         // Match the canonical URL convention from Layout.astro: no trailing
         // slash except root. The sitemap <loc> and xhtml:link href must agree
@@ -476,14 +545,17 @@ export default defineConfig({
         const enHref = SITE + (enPath === '/' ? '' : enPath);
         const frHref = frPath ? SITE + frPath : null;
         const deHref = dePath ? SITE + dePath : null;
+        const esHref = esPath ? SITE + esPath : null;
         const links = [{ lang: 'en', url: enHref }];
         if (frHref) links.push({ lang: 'fr', url: frHref });
         if (deHref) links.push({ lang: 'de', url: deHref });
+        if (esHref) links.push({ lang: 'es', url: esHref });
         links.push({ lang: 'x-default', url: enHref });
         // Normalize the page URL itself to match the canonical convention.
         let currentLocaleHref = enHref;
         if (path.startsWith('/fr')) currentLocaleHref = frHref ?? enHref;
         else if (path.startsWith('/de')) currentLocaleHref = deHref ?? enHref;
+        else if (path.startsWith('/es')) currentLocaleHref = esHref ?? enHref;
         return { ...item, url: currentLocaleHref ?? item.url, links };
       },
     }),
@@ -528,7 +600,7 @@ export default defineConfig({
   // so existing English URLs and the WP redirect map continue to work as-is.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr', 'de'],
+    locales: ['en', 'fr', 'de', 'es'],
     routing: {
       prefixDefaultLocale: false,
     },
