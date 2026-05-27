@@ -291,6 +291,8 @@ const staticEnToFr = {
   '/learn-china/learning-expeditions': '/fr/comprendre-la-chine/expeditions-terrain',
   '/work': '/fr/nos-realisations',
   '/insights': '/fr/decryptages',
+  '/cookie-policy': '/fr/politique-de-cookies',
+  '/terms-of-service': '/fr/conditions-d-utilisation',
 };
 const staticFrToEn = Object.fromEntries(
   Object.entries(staticEnToFr).map(([en, fr]) => [fr, en])

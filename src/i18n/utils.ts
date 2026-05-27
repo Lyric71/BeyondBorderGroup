@@ -70,6 +70,8 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
     '/contact': '/nous-contacter',
     '/thank-you': '/merci',
     '/privacy-policy': '/politique-de-confidentialite',
+    '/cookie-policy': '/politique-de-cookies',
+    '/terms-of-service': '/conditions-d-utilisation',
   },
   de: {
     '/about': '/ueber-uns',
