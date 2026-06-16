@@ -2,7 +2,7 @@
 title: "Storytelling B2B: cómo conectan las marcas con su público en China"
 description: "El storytelling ocupa un lugar central en el marketing B2B chino. Cambia la forma en que las empresas conectan con su audiencia y empujan la conversión a partir de relatos con carga emocional que profundizan la relación con el cliente."
 pubDate: "2024-04-16"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["marketing B2B", "storytelling", "mercado chino", "conexión con la marca", "engagement"]
 heroImage: "/Images/insights/storytelling-in-b2b-marketing-enhancing-brand-connection-in-china.webp"

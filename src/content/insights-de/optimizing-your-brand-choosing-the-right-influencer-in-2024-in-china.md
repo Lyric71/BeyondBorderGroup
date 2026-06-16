@@ -2,7 +2,7 @@
 title: "Marke optimieren: Den richtigen Influencer wählen"
 description: "Influencer-Marketing ist zu einer Schlüsselstrategie für Marken geworden, die Reichweite ausbauen wollen. Erfolg hängt davon ab, die richtigen Influencer zu wählen, die zu Markenwerten und Zielgruppe passen."
 pubDate: "2023-11-17"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 tags: ["Influencer-Marketing", "Social Media", "Markenstrategie", "KOL", "Engagement"]
 heroImage: "/Images/insights/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china.jpg"

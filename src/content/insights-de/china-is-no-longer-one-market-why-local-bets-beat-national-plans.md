@@ -92,9 +92,9 @@ Die Marken, die am schnellsten umstellen, werden jene sein, die China weniger al
 
 ---
 
-## Befunde in Handeln übersetzen, mit BBG
+## Befunde in Handeln übersetzen, mit TheChinaPath
 
-Bei BBG arbeiten wir mit globalen Marken, die diese Verschiebung in China spüren und einen konkreten Weg suchen, darauf zu antworten.
+Bei TheChinaPath arbeiten wir mit globalen Marken, die diese Verschiebung in China spüren und einen konkreten Weg suchen, darauf zu antworten.
 
 Wir helfen Teams, von einem einzigen nationalen Plan zu einem strukturierten Portfolio von China-Wetten zu wechseln. Dazu gehören City- und Cluster-Strategien, Plattform-Roadmaps über Douyin, Xiaohongshu, WeChat, Tmall, JD und andere, und die Lokalisierung von Marken- und Commerce-Erlebnissen, die zugleich die globale DNA respektieren.
 

@@ -2,7 +2,7 @@
 title: "Die digitale Bühne: Wie Chinas CEOs Markenbindung über Livestream neu definieren"
 description: "Chinesische Vorstandschefs treten selbst vor die Kamera, um Sichtbarkeit und Umsatz zu heben. Sie folgen Mustern, die globale Tech-Stars geprägt haben, und balancieren Professionalität mit Authentizität."
 pubDate: "2024-05-10"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 tags: ["CEO-Livestream", "China Digital Marketing", "Markenbindung", "Livestream-Commerce", "Corporate Social Media"]
 heroImage: "/Images/insights/transforming-brand-engagement-through-livestreaming-in-china.jpg"

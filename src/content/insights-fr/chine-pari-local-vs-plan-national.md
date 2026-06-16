@@ -92,9 +92,9 @@ Les marques qui s'adapteront le plus vite seront celles qui cessent de réduire 
 
 ---
 
-## De l'intuition à l'action avec BBG
+## De l'intuition à l'action avec TheChinaPath
 
-BBG accompagne les marques internationales qui perçoivent ce basculement et cherchent une réponse opérationnelle.
+TheChinaPath accompagne les marques internationales qui perçoivent ce basculement et cherchent une réponse opérationnelle.
 
 Notre rôle : faire passer les équipes du plan national unique au portefeuille structuré de paris chinois. Le périmètre couvre la stratégie de villes et de bassins, les feuilles de route plateformes sur Douyin, Xiaohongshu, WeChat, Tmall, JD et d'autres, la localisation des expériences de marque et de commerce, sans dénaturer l'ADN global.
 

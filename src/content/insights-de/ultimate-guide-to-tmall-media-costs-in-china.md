@@ -2,7 +2,7 @@
 title: "Leitfaden: Tmall-Media-Kosten in China"
 description: "Tmall, Alibabas führende B2C-eCommerce-Plattform in China, bietet Marken Zugang zu über 500 Millionen monatlich aktiven Nutzern. Der Leitfaden zeigt Setup-Gebühren, Werbeoptionen, Content-Strategien und Beteiligung an grossen Shopping-Events."
 pubDate: "2024-10-30"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall"]
 tags: ["Tmall", "eCommerce", "China-Marketing", "Werbekosten", "Markenstrategie"]

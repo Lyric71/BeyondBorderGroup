@@ -2,7 +2,7 @@
 title: "Design UX en Chine et en Occident : deux écoles, deux logiques"
 description: "Sites chinois saturés, sites occidentaux dépouillés. Derrière cette opposition visuelle, deux cultures, deux langues, deux internets. Décryptage à l'usage des marques qui visent les deux marchés."
 pubDate: "2025-01-17"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["UX design", "marchés chinois", "design web", "différences culturelles", "e-commerce"]
 heroImage: "/Images/insights/ux-design-for-global-markets-chinese-vs-western-approaches.jpg"

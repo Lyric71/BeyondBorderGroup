@@ -2,7 +2,7 @@
 title: "Digitaler Mensch: Der Aufstieg KI-getriebener Livestreams in China"
 description: "JD.coms digitales Abbild des Gründers Liu Qiangdong zog in einer Stunde 20 Millionen Zuschauer an. Ein Beleg, wie KI Publikum bindet und den eCommerce über lebensnahe Interaktion verändern kann."
 pubDate: "2024-04-25"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 platforms: ["JD"]
 tags: ["KI-Avatare", "Livestream-Commerce", "JD.com", "Digital Marketing", "eCommerce"]

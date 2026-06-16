@@ -2,7 +2,7 @@
 title: "Wirksame grüne Marketing-Kampagnen führender Marken in China"
 description: "Nachhaltigkeit ist ein zentrales Marketing-Thema chinesischer Marken geworden. Kampagnen tragen das ökologische Engagement und resonieren bei umweltbewussten Käufern, die ihre Kaufentscheidung daran ausrichten."
 pubDate: "2024-06-17"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["Grünes Marketing", "Nachhaltigkeit", "China-Marken", "Umweltfreundlich", "Konsumtrends"]
 heroImage: "/Images/insights/green-marketing-in-china-how-brands-are-embracing-sustainability.jpg"

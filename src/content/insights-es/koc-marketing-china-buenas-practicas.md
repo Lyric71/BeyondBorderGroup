@@ -3,7 +3,7 @@ title: "KOC en China: buenas prácticas de marketing con Key Opinion Consumers"
 description: "Los Key Opinion Consumers se han vuelto esenciales para el eCommerce en China. Estos microinfluencers priorizan la autenticidad y la cercanía, y dan a las marcas una alternativa más asequible al endoso de celebridades para conectar con audiencias de nicho muy comprometidas."
 pubDate: "2024-12-07"
 updatedDate: "2026-05-15"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Xiaohongshu", "Douyin"]
 tags: ["marketing KOC", "eCommerce en China", "microinfluencers", "social commerce", "confianza del consumidor"]

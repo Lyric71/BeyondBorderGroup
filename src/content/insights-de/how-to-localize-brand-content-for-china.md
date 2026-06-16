@@ -2,7 +2,7 @@
 title: "Markeninhalte für China lokalisieren"
 description: "Der Eintritt in den chinesischen Markt verlangt mehr als Übersetzung. Lokalisierung heisst tiefe kulturelle Anpassung, gezielte Nutzung lokaler Plattformen und die Ausrichtung an chinesischen Kaufvorlieben und Werten."
 pubDate: "2025-02-11"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["China-Marketing", "Content-Lokalisierung", "Kulturelle Anpassung", "Digital-Plattformen", "eCommerce"]
 heroImage: "/Images/insights/how-to-localize-brand-content-for-china.jpg"

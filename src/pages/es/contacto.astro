@@ -71,7 +71,7 @@ const profileOptions = [
 ---
 
 <Layout
-  title="Hable con nuestros equipos en Shanghái, Hong Kong y París | Beyond Border Group"
+  title="Hable con nuestros equipos en Shanghái, Hong Kong y París | TheChinaPath"
   description="Cuéntenos su proyecto en China. Nuestros equipos en Shanghái, Hong Kong y París le responden en menos de un día hábil y vuelven con propuestas concretas adaptadas a su mercado."
 >
   <section class="contact">
@@ -246,8 +246,8 @@ const profileOptions = [
         <div class="contact__info">
           <div class="contact-block">
             <span class="eyebrow eyebrow--on-dark">Escríbanos</span>
-            <a class="contact-block__link" href="mailto:hello@beyondbordergroup.com">
-              hello@beyondbordergroup.com
+            <a class="contact-block__link" href="mailto:hello@thechinapath.com">
+              hello@thechinapath.com
             </a>
           </div>
 
@@ -360,7 +360,7 @@ const profileOptions = [
           body: JSON.stringify(payload),
         });
         const body = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(body.error || 'El envío no se ha completado. Inténtelo de nuevo en un momento. Si persiste, puede escribirnos directamente a hello@beyondbordergroup.com.');
+        if (!res.ok) throw new Error(body.error || 'El envío no se ha completado. Inténtelo de nuevo en un momento. Si persiste, puede escribirnos directamente a hello@thechinapath.com.');
 
         form.reset();
         rollCaptcha();
@@ -369,7 +369,7 @@ const profileOptions = [
         window.location.assign('/es/gracias');
         return;
       } catch (err) {
-        status.textContent = err && err.message ? err.message : 'El envío no se ha completado. Inténtelo de nuevo en un momento. Si persiste, puede escribirnos directamente a hello@beyondbordergroup.com.';
+        status.textContent = err && err.message ? err.message : 'El envío no se ha completado. Inténtelo de nuevo en un momento. Si persiste, puede escribirnos directamente a hello@thechinapath.com.';
         status.classList.add('form__status--error');
       } finally {
         submit.disabled = false;

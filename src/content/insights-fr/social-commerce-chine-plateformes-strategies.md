@@ -2,7 +2,7 @@
 title: "Social commerce en Chine : plateformes, stratégies et impact sur le marché"
 description: "Xiaohongshu, WeChat, Douyin : le social commerce chinois marie UGC, KOL et livestream pour bâtir une expérience d'achat que l'Occident peine à reproduire."
 pubDate: "2024-06-24"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["WeChat", "Douyin"]
 tags: ["social commerce", "plateformes chinoises", "livestream", "KOL", "e-commerce"]

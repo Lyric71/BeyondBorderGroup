@@ -9,7 +9,7 @@
  *    everything else references them by @id rather than inlining.
  */
 
-export const SITE_URL = 'https://www.beyondbordergroup.com';
+export const SITE_URL = 'https://www.thechinapath.com';
 
 export const ORG_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -49,7 +49,7 @@ export function localBusinessSchemas(): SchemaObject[] {
     {
       '@type': ['LocalBusiness', 'MarketingAgency'],
       '@id': OFFICE_IDS.shanghai,
-      name: 'Beyond Border Group, Shanghai',
+      name: 'TheChinaPath, Shanghai',
       parentOrganization: { '@id': ORG_ID },
       url: `${SITE_URL}/contact`,
       address: {
@@ -64,7 +64,7 @@ export function localBusinessSchemas(): SchemaObject[] {
     {
       '@type': ['LocalBusiness', 'MarketingAgency'],
       '@id': OFFICE_IDS.hongkong,
-      name: 'Beyond Border Group, Hong Kong',
+      name: 'TheChinaPath, Hong Kong',
       parentOrganization: { '@id': ORG_ID },
       url: `${SITE_URL}/contact`,
       address: {
@@ -78,7 +78,7 @@ export function localBusinessSchemas(): SchemaObject[] {
     {
       '@type': ['LocalBusiness', 'MarketingAgency'],
       '@id': OFFICE_IDS.paris,
-      name: 'Beyond Border Group, Paris',
+      name: 'TheChinaPath, Paris',
       parentOrganization: { '@id': ORG_ID },
       url: `${SITE_URL}/contact`,
       address: {
@@ -101,8 +101,10 @@ export function organizationSchema(): SchemaObject {
   return {
     '@type': ['Organization', 'MarketingAgency'],
     '@id': ORG_ID,
-    name: 'Beyond Border Group',
-    alternateName: ['BBG', 'BeyondBorderGroup'],
+    name: 'TheChinaPath',
+    // Old names kept as alternates so Google links the rebrand to the
+    // existing entity and transfers its history.
+    alternateName: ['The China Path', 'TheChinaPath', 'TheChinaPath'],
     url: SITE_URL,
     foundingDate: '2023',
     foundingLocation: { '@type': 'Place', name: 'Shanghai, China' },
@@ -113,9 +115,9 @@ export function organizationSchema(): SchemaObject {
     },
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}/Images/Logo-horizontal-light.svg`,
-      width: 1448,
-      height: 563,
+      url: `${SITE_URL}/Images/thechinapath-horizontal-light.png`,
+      width: 1205,
+      height: 518,
     },
     description:
       'B2B marketing and eCommerce agency helping global brands enter, grow, and win in China. Offices in Shanghai, Hong Kong, and Paris. Founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketing for China and North Asia.',
@@ -173,7 +175,7 @@ export function websiteSchema(): SchemaObject {
     '@type': 'WebSite',
     '@id': WEBSITE_ID,
     url: SITE_URL,
-    name: 'Beyond Border Group',
+    name: 'TheChinaPath',
     publisher: { '@id': ORG_ID },
     inLanguage: ['en', 'fr', 'de', 'es'],
   };
@@ -960,7 +962,7 @@ export function caseStudySchema(c: CaseStudyInput): SchemaObject {
 }
 
 const ABOUT_BY_LOCALE: Record<'en' | 'fr' | 'de' | 'es', { path: string; name: string }> = {
-  en: { path: '/about', name: 'About Beyond Border Group' },
+  en: { path: '/about', name: 'About TheChinaPath' },
   fr: { path: '/fr/qui-nous-sommes', name: 'Qui nous sommes' },
   de: { path: '/de/ueber-uns', name: 'Über uns' },
   es: { path: '/es/quienes-somos', name: 'Quiénes somos' },

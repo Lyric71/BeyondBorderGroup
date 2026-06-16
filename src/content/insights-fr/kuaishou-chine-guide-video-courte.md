@@ -2,7 +2,7 @@
 title: "Kuaishou en Chine : le guide complet du marketing vidéo courte"
 description: "Kuaishou s'est imposé en grande alternative à Douyin sur la vidéo courte, avec une assise solide dans les villes de second rang et les zones rurales. Mode d'emploi du livestream, de l'influence et du e-commerce localisé."
 pubDate: "2024-10-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Kuaishou"]
 tags: ["Kuaishou", "marketing vidéo courte", "e-commerce Chine", "live streaming", "social commerce"]

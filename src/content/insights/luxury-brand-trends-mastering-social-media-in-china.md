@@ -2,7 +2,7 @@
 title: "Exploring Luxury Brand Marketing Trends in China"
 description: "China's luxury market evolves through technological advances and demographic shifts. Brands must address three key challenges: reaching customers, building loyalty, and using data for growth."
 pubDate: "2024-06-07"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["WeChat"]
 tags: ["luxury brands", "social media marketing", "China market", "KOLs", "omnichannel strategy"]

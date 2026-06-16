@@ -2,7 +2,7 @@
 title: "El crecimiento acelerado de los viajes de lujo en China en 2024"
 description: "El mercado chino de viajes de lujo se ha multiplicado en la última década. Detrás están el aumento de la renta disponible, una mayor capacidad de gasto y un consumidor que prefiere la experiencia auténtica y la inmersión cultural antes que la ostentación."
 pubDate: "2024-07-08"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 tags: ["viajes de lujo en China", "preferencias del consumidor", "viaje experiencial", "turismo de bienestar", "influencia digital"]
 heroImage: "/Images/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment.jpg"

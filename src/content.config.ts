@@ -33,7 +33,7 @@ const insightBaseSchema = z.object({
   description: z.string(),
   pubDate: z.coerce.date().optional(),
   updatedDate: z.coerce.date().optional(),
-  author: z.string().default('Beyond Border Group'),
+  author: z.string().default('TheChinaPath'),
   category: z.enum(INSIGHT_CATEGORIES),
   platforms: z.array(z.enum(INSIGHT_PLATFORMS)).default([]),
   tags: z.array(z.string()).default([]),

@@ -2,7 +2,7 @@
 title: "PC dopés à l'IA en Chine : le marketing change de braquet"
 description: "L'intelligence artificielle s'installe au cœur des ordinateurs personnels et rebat la grammaire commerciale en Chine. Pédagogie, prix, écosystème : les nouveaux fronts sont posés."
 pubDate: "2024-06-07"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 tags: ["PC dopés à l'IA", "marché chinois", "stratégie marketing", "pédagogie client", "positionnement produit"]
 heroImage: "/Images/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china.jpg"

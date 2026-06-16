@@ -2,7 +2,7 @@
 title: "Plató digital: cómo los directivos chinos están reinventando la relación con su marca a través del livestream"
 description: "Los altos ejecutivos chinos se suben al livestream para empujar visibilidad y ventas. Siguen la estela de algunos líderes tecnológicos globales mientras tratan de equilibrar profesionalidad y autenticidad."
 pubDate: "2024-05-10"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 tags: ["livestream de directivos", "marketing digital China", "engagement de marca", "comercio en livestream", "redes sociales corporativas"]
 heroImage: "/Images/insights/transforming-brand-engagement-through-livestreaming-in-china.jpg"

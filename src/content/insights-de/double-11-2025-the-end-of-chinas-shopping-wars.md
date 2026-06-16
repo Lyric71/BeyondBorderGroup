@@ -3,7 +3,7 @@ title: "Double 11 2025: Das Ende der chinesischen Shopping-Kriege"
 description: "Chinas Double-11-Shopping-Festival hat sich vom Eintagesereignis zu einem fünfwöchigen Marathon entwickelt. Die Wachstumsraten schwächen sich ab, das Käufervertrauen erodiert, während Marken in der Marge gedrückt werden und Käufer zu professionellen Operatoren werden."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 tags: ["Double 11", "eCommerce", "China Retail", "Käuferverhalten", "GMV"]
 keyTakeaways:

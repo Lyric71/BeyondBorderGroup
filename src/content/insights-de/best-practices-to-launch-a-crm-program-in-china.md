@@ -2,7 +2,7 @@
 title: "Bewährte Praxis für den CRM-Start in China"
 description: "Ein robustes CRM-System ist für den Geschäftserfolg im chinesischen Digital-Markt unerlässlich. Der Leitfaden zeigt bewährte Praxis, abgestimmt auf das Konsumverhalten und das digitale Ökosystem in China."
 pubDate: "2025-01-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["WeChat"]
 tags: ["CRM", "China-Markteintritt", "WeChat", "Kundenbeziehungsmanagement", "eCommerce"]

@@ -92,9 +92,9 @@ Las marcas que adapten más rápido serán las que dejen de ver China como una l
 
 ---
 
-## Convertir el insight en acción con BBG
+## Convertir el insight en acción con TheChinaPath
 
-En BBG trabajamos con marcas globales que perciben este giro en China y necesitan una forma concreta de responder.
+En TheChinaPath trabajamos con marcas globales que perciben este giro en China y necesitan una forma concreta de responder.
 
 Ayudamos a los equipos a pasar de planes nacionales únicos a carteras estructuradas de apuestas en China. Eso puede incluir estrategia de ciudad y clúster, hojas de ruta por plataforma (Douyin, Xiaohongshu, WeChat, Tmall, JD y otras) y localización de experiencias de marca y comercio que sigan respetando el ADN global.
 

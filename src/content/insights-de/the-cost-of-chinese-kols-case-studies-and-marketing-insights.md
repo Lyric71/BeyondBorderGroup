@@ -2,7 +2,7 @@
 title: "Was chinesische Influencer kosten: Fallstudien und Befunde"
 description: "Der Artikel zeigt Honorarspannen chinesischer KOL auf Plattformen wie Douyin und Xiaohongshu, mit Kostenstrukturen und Fallstudien erfolgreicher Influencer-Kampagnen, die Marken Engagement und Umsatz brachten."
 pubDate: "2024-11-29"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin"]
 tags: ["KOL-Marketing", "Douyin", "Influencer-Kosten", "Chinesischer eCommerce", "Livestream-Kampagnen"]

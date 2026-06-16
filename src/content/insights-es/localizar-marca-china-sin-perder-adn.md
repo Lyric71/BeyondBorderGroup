@@ -143,4 +143,4 @@ Las que se mantienen en equilibrio comparten tres cosas:
 - Territorios claros, creativos y bien probados para China.
 - Un mapa de recorridos reales por plataforma, para que el contenido siga cómo las personas pasan, de verdad, de ver a comprar.
 
-Ahí es donde Beyond Border Group trabaja con los equipos, conectando un núcleo protegido con una expresión china que pueda estirarse sin perderse.
+Ahí es donde TheChinaPath trabaja con los equipos, conectando un núcleo protegido con una expresión china que pueda estirarse sin perderse.

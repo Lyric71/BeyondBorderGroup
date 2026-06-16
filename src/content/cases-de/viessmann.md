@@ -31,7 +31,7 @@ Heizung und Warmwasser sind eine erwogene Anschaffung, eng verknüpft mit Instal
 
 ## Unser Vorgehen
 
-Beyond Border Group hat den Auftrag bekommen, Viessmanns Tmall- und JD-Shops End-to-End aufzubauen und zu betreiben. Wir haben abgedeckt:
+TheChinaPath hat den Auftrag bekommen, Viessmanns Tmall- und JD-Shops End-to-End aufzubauen und zu betreiben. Wir haben abgedeckt:
 
 - Content-Entwicklung, vom Shop-Design bis zur Produkt-Detailseite, gebaut für das chinesische Kaufverhalten
 - Vertrieb und Operations, die die Shops über Peak-Momente und im Tagesgeschäft am Laufen halten

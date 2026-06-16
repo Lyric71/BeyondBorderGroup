@@ -143,4 +143,4 @@ Wer im Gleichgewicht bleibt, hat meist drei Dinge im Haus:
 - Klare, kreativ erschlossene China-Territorien
 - Eine Karte der tatsächlichen Plattform-Reisen, sodass Content der Bewegung folgt, wie Menschen vom Sehen zum Kaufen kommen
 
-Hier setzt Beyond Border Group mit den Teams an: ein geschützter Kern, kombiniert mit einem chinesischen Ausdruck, der sich strecken kann, ohne sich zu verlieren.
+Hier setzt TheChinaPath mit den Teams an: ein geschützter Kern, kombiniert mit einem chinesischen Ausdruck, der sich strecken kann, ohne sich zu verlieren.

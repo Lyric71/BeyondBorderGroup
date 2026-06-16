@@ -2,7 +2,7 @@
 title: "Estrategias de marketing que están revolucionando los PC con IA en China"
 description: "La integración de la IA convierte al ordenador personal en un asistente inteligente y reescribe cómo se comercializan estos dispositivos en China, con estrategias centradas en educación, precio y ecosistema."
 pubDate: "2024-06-07"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 tags: ["PC con IA", "mercado chino", "estrategia de marketing", "educación del consumidor", "posicionamiento de producto"]
 heroImage: "/Images/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china.jpg"

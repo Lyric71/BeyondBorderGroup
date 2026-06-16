@@ -2,7 +2,7 @@
 title: "Top 5 Best Social Commerce Platforms in China to Drive Your Brand's Success"
 description: "Social commerce has transformed consumer shopping in China, combining social media engagement with direct purchasing. The article explores the leading platforms driving eCommerce growth in the country's 2.5 trillion yuan market."
 pubDate: "2024-10-23"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["WeChat", "Douyin", "Xiaohongshu"]
 tags: ["social commerce China", "eCommerce platforms", "livestreaming", "KOL marketing", "WeChat"]

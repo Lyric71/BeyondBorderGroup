@@ -1,7 +1,41 @@
 # Redirection plan for Google
 
-Legacy WordPress URLs on beyondbordergroup.com and their destination on the
-Astro rebuild. Every entry is a 301 redirect, configured in
+## Domain migration: beyondbordergroup.com to www.thechinapath.com
+
+The site was rebranded from Beyond Border Group to TheChinaPath and the
+canonical domain changed to `https://www.thechinapath.com`. The paths
+(slugs) are unchanged, so the migration is a 1:1 host swap.
+
+Host-level redirects live in [vercel.json](../vercel.json) under `redirects`:
+both `beyondbordergroup.com` (apex) and `www.beyondbordergroup.com` issue a
+permanent redirect to the same path on `www.thechinapath.com`. Vercel emits
+these as 308 (permanent), which Google treats as a 301 for ranking transfer.
+
+The path-level WordPress redirects below still apply, now resolving on the new
+domain (e.g. a legacy WP URL hits the host redirect, lands on
+`www.thechinapath.com/<legacy-path>`, then the path redirect sends it to the
+final page). `legacyUrl` fields in the content frontmatter intentionally keep
+the original `beyondbordergroup.com` URLs: they record what Google indexed and
+are the keys for the host swap.
+
+### Google Search Console steps for the domain change
+
+1. Add and verify `https://www.thechinapath.com` as a new property.
+2. Confirm the host redirects are live (spot-check an old apex and www URL,
+   each should report a redirect to the matching `www.thechinapath.com` path).
+3. Use **Change of Address** in the old `beyondbordergroup.com` property,
+   pointing to the new `www.thechinapath.com` property.
+4. Submit `https://www.thechinapath.com/sitemap-index.xml` under the new
+   property.
+5. Keep the old domain pointed at Vercel with the 308s in place permanently.
+   Do not remove them; doing so resets accumulated link equity.
+
+---
+
+## Legacy WordPress path redirects
+
+Legacy WordPress URLs (originally on beyondbordergroup.com) and their
+destination on the Astro rebuild. Every entry is a 301 redirect, configured in
 [astro.config.mjs](../astro.config.mjs) under the `redirects` key.
 
 Keep this file in sync with the config. This is the list to submit to Google

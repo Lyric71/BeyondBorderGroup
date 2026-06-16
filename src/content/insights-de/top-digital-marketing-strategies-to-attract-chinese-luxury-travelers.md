@@ -2,7 +2,7 @@
 title: "Leitfaden: Chinesische Luxusreisende für sich gewinnen"
 description: "Chinesische Luxusreisende suchen zunehmend echte kulturelle Tiefe und persönliche Erlebnisse. Anbieter brauchen innovative Digital-Strategien und emotionales Storytelling, um diese anspruchsvolle Audience zu erreichen."
 pubDate: "2024-07-08"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["WeChat"]
 tags: ["Chinesische Luxusreisende", "Kulturelle Immersion", "Personalisierte Reise", "Digital Engagement", "WeChat-Marketing"]

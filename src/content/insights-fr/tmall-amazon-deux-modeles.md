@@ -2,7 +2,7 @@
 title: "Tmall et Amazon : deux géants, deux modèles"
 description: "Tmall et Amazon dominent l'e-commerce mondial. Chacune des deux plateformes défend un positionnement et des points forts qui lui sont propres."
 pubDate: "2023-02-02"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Tmall"]
 tags: ["Tmall", "Amazon", "e-commerce", "Chine", "B2C"]

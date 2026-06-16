@@ -4,15 +4,15 @@
  *
  * Usage:
  *   node scripts/submit-indexnow.mjs                    # submits all URLs in dist/client/sitemap-0.xml
- *   node scripts/submit-indexnow.mjs https://www.beyondbordergroup.com/insights/foo  # one URL
+ *   node scripts/submit-indexnow.mjs https://www.thechinapath.com/insights/foo  # one URL
  *   node scripts/submit-indexnow.mjs --changed-since=2026-05-15  # filter sitemap by lastmod
  *
  * The key file lives at public/<key>.txt and is served from
- * https://www.beyondbordergroup.com/<key>.txt for verification.
+ * https://www.thechinapath.com/<key>.txt for verification.
  */
 import { readFileSync } from 'node:fs';
 
-const HOST = 'www.beyondbordergroup.com';
+const HOST = 'www.thechinapath.com';
 const KEY = 'fd2f6b433b8c24473ab36608e9ed5bfd';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const ENDPOINT = 'https://api.indexnow.org/indexnow';

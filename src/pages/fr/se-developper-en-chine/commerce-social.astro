@@ -58,8 +58,8 @@ const services = [
 const models = [
   {
     name: "Modèle DP",
-    tag: "Stock chez la marque, boutique opérée par BBG",
-    desc: "Le stock figure dans vos comptes, la relation client conserve votre nom. Beyond Border Group intervient comme Designated Partner sur Douyin EC et RedNote. Contenu, livestream, achat média, service client, programmes KOL et KOC : tout se déroule à l'intérieur de nos équipes, sous votre marque.",
+    tag: "Stock chez la marque, boutique opérée par TheChinaPath",
+    desc: "Le stock figure dans vos comptes, la relation client conserve votre nom. TheChinaPath intervient comme Designated Partner sur Douyin EC et RedNote. Contenu, livestream, achat média, service client, programmes KOL et KOC : tout se déroule à l'intérieur de nos équipes, sous votre marque.",
     when: "Privilégié lorsque le compte de résultat chinois doit consolider chez la marque, qu'un capital durable se construit sur Douyin et RedNote, et que la trésorerie autorise un financement direct du stock et du média.",
     owns: [
       { label: "Stock", value: "Détenu par la marque, entreposé sous régime douanier ou domestique" },
@@ -89,15 +89,15 @@ const models = [
   },
   {
     name: "Modèle distributeur",
-    tag: "Stock et boutique opérés en propre par BBG",
-    desc: "L'achat s'effectue au prix de gros, et le stock rejoint le bilan de Beyond Border Group en Chine. Les boutiques Douyin et RedNote opèrent sous notre licence ; le risque commercial nous incombe. Une vente B2B vers nos comptes, puis une distribution au consommateur final.",
+    tag: "Stock et boutique opérés en propre par TheChinaPath",
+    desc: "L'achat s'effectue au prix de gros, et le stock rejoint le bilan de TheChinaPath en Chine. Les boutiques Douyin et RedNote opèrent sous notre licence ; le risque commercial nous incombe. Une vente B2B vers nos comptes, puis une distribution au consommateur final.",
     when: "Privilégié lorsque la marque est déjà installée en Chine, que le chiffre d'affaires Douyin et RedNote doit rentrer sans complexité opérationnelle, et que la trésorerie ne peut pas s'immobiliser dans le stock. Les primo-entrants y trouvent rarement leur compte.",
     owns: [
-      { label: "Stock", value: "Porté par BBG" },
-      { label: "Licence boutique", value: "Au nom de BBG" },
-      { label: "Données clients", value: "Propriété BBG" },
-      { label: "Contenu, comptes, contrats KOL", value: "Au nom de BBG" },
-      { label: "Budget média et promotion", value: "Budget marque, cofinancé par BBG" },
+      { label: "Stock", value: "Porté par TheChinaPath" },
+      { label: "Licence boutique", value: "Au nom de TheChinaPath" },
+      { label: "Données clients", value: "Propriété TheChinaPath" },
+      { label: "Contenu, comptes, contrats KOL", value: "Au nom de TheChinaPath" },
+      { label: "Budget média et promotion", value: "Budget marque, cofinancé par TheChinaPath" },
       { label: "Chiffre d'affaires", value: "Facturation B2B au prix de gros" },
     ],
     yourSide: [
@@ -119,14 +119,14 @@ const models = [
 ];
 
 const compareRows = [
-  { label: "Propriété du stock", tp: "La marque", dist: "BBG" },
-  { label: "Propriété de la boutique et des données", tp: "La marque", dist: "BBG" },
+  { label: "Propriété du stock", tp: "La marque", dist: "TheChinaPath" },
+  { label: "Propriété de la boutique et des données", tp: "La marque", dist: "TheChinaPath" },
   { label: "Engagement de trésorerie", tp: "Élevé", dist: "Nul" },
   { label: "Chiffre d'affaires reconnu", tp: "GMV de détail, frais déduits", dist: "Prix de gros" },
   { label: "Potentiel de marge", tp: "Marge de détail captée en intégralité", dist: "Plafonné au prix de cession" },
   { label: "Risque assumé", tp: "Stock et demande consommateur", dist: "Nul sur le stock" },
-  { label: "Financement média et promotion", tp: "Intégralement à votre charge", dist: "Budget marque, cofinancé par BBG" },
-  { label: "Capital de marque sur Douyin et RedNote", tp: "Détenu par la marque", dist: "Détenu par la marque, construit par BBG" },
+  { label: "Financement média et promotion", tp: "Intégralement à votre charge", dist: "Budget marque, cofinancé par TheChinaPath" },
+  { label: "Capital de marque sur Douyin et RedNote", tp: "Détenu par la marque", dist: "Détenu par la marque, construit par TheChinaPath" },
   { label: "Profil cible", tp: "Marques engagées sur un social commerce chinois de long terme", dist: "Marques déjà implantées en Chine" },
 ];
 
@@ -273,7 +273,7 @@ const faqs = [
   { cat: "Coût", q: "Quel surcoût représente Tmall Global ?", a: "Un dépôt de 30 000 USD à l'ouverture, des frais annuels de service compris entre 5 000 et 10 000 USD selon la catégorie, une commission de 2 % à 5 % sur chaque transaction et 1 % de frais Alipay. Le dispositif passe par le cross-border ; aucune entité juridique chinoise n'est exigée." },
   { cat: "Stratégie", q: "Combien de temps avant les premières ventes ?", a: "Sur Douyin, les premières commandes tombent en quelques semaines, dès activation du trafic payant. La rentabilité, en revanche, se construit sur un horizon de trois à six mois. Sur RedNote, la marque s'installe d'abord et la conversion suit : les ventes arrivent six à neuf mois plus tard. Toute promesse plus rapide relève de la pure promesse commerciale." },
   { cat: "Opérations", q: "À partir de quand préparer le 11.11 ou le 6.18 ?", a: "Six mois en amont, au minimum. Le calendrier des festivals chinois reste la contrainte de planification la plus sous-estimée par les marques étrangères. La préparation du 11.11 démarre en mai ; celle du 6.18, dès décembre. Une marque qui se présente trois mois avant l'événement hérite des invendus publicitaires et des créneaux KOL restants, à des tarifs gonflés sans contrepartie." },
-  { cat: "Stratégie", q: "Faut-il disposer d'une entité juridique en Chine ?", a: "Pas systématiquement. Les modèles cross-border (Douyin Cross-Border, Tmall Global, JD Worldwide) se passent d'entité chinoise. Le onshore (Douyin, Tmall et JD domestiques) impose soit une entité dédiée, soit un partenaire TP qui en met une à disposition. Beyond Border Group opère sur les deux schémas. Lorsque la marque dispose déjà d'une WFOE constituée pour du commerce physique mais désormais sollicitée sur le digital, nous instruisons l'arbitrage adapté : élargir l'objet social, créer une seconde entité ou conserver le cross-border. Un mauvais montage coûte invariablement plus cher qu'un montage taillé." },
+  { cat: "Stratégie", q: "Faut-il disposer d'une entité juridique en Chine ?", a: "Pas systématiquement. Les modèles cross-border (Douyin Cross-Border, Tmall Global, JD Worldwide) se passent d'entité chinoise. Le onshore (Douyin, Tmall et JD domestiques) impose soit une entité dédiée, soit un partenaire TP qui en met une à disposition. TheChinaPath opère sur les deux schémas. Lorsque la marque dispose déjà d'une WFOE constituée pour du commerce physique mais désormais sollicitée sur le digital, nous instruisons l'arbitrage adapté : élargir l'objet social, créer une seconde entité ou conserver le cross-border. Un mauvais montage coûte invariablement plus cher qu'un montage taillé." },
   { cat: "Opérations", q: "Peut-on réutiliser le contenu global en l'état ?", a: "Presque jamais. Tout se distingue : l'éclairage, le rythme, la voix off, les surimpressions, l'étalonnage, jusqu'au cadrage des mains à l'image. L'acheteur chinois repère un contenu étranger doublé en deux secondes et passe au suivant. La règle est nette : chaque pièce est retournée ou remontée pour les plateformes locales." },
   { cat: "Créateurs", q: "Quelle est la différence entre un KOL et un KOC ?", a: "KOL : Key Opinion Leader. Audience large, cachet élevé, levier de notoriété. KOC : Key Opinion Consumer. Audience plus restreinte, registre plus authentique, levier de conversion. La plupart des dispositifs reposent sur l'articulation des deux. Les KOC font le volume ; les KOL apportent la crédibilité." },
   { cat: "Coût", q: "Combien coûtent réellement les KOL ?", a: "Une créatrice RedNote de profil intermédiaire, à 100 000 abonnés, facture entre 15 000 et 40 000 RMB la publication. Un animateur Douyin de premier rang réclame de 200 000 à 2 millions de RMB par créneau de livestream, auxquels s'ajoute une commission de 20 % à 30 % du GMV. Des accords à la commission seule existent avec des animateurs plus modestes, mais la marge s'érode rapidement. Chaque devis est confronté au marché en direct, car les tarifs évoluent d'un mois sur l'autre." },
@@ -319,8 +319,8 @@ const serviceJsonLd = {
   serviceType: 'Social commerce management',
   provider: {
     '@type': 'Organization',
-    name: 'Beyond Border Group',
-    url: 'https://beyondbordergroup.com',
+    name: 'TheChinaPath',
+    url: 'https://www.thechinapath.com',
   },
   areaServed: { '@type': 'Country', name: 'China' },
 };
@@ -358,7 +358,7 @@ const serviceJsonLd = {
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
           En Chine, le social commerce n'est plus une greffe sur l'e-commerce. Il est devenu la tête
-          de pont des ventes pour la plupart des marques de consommation. Beyond Border Group en pilote
+          de pont des ventes pour la plupart des marques de consommation. TheChinaPath en pilote
           la totalité, du cadrage stratégique à l'exécution quotidienne sur plateforme.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
@@ -533,7 +533,7 @@ const serviceJsonLd = {
         <div class="cbs-value">
           <div class="cbs-value__copy">
             <span class="eyebrow">Pourquoi les marques nous choisissent</span>
-            <h2>Peu d'agences de social commerce ont véritablement opéré une boutique. Beyond Border Group le fait depuis quinze ans.</h2>
+            <h2>Peu d'agences de social commerce ont véritablement opéré une boutique. TheChinaPath le fait depuis quinze ans.</h2>
             <p>
               L'équipe vient de Publicis Commerce China. Elle a conçu et fait tourner des boutiques Douyin
               et RedNote pour des marques internationales. Si nous identifions les créateurs qui convertissent,
@@ -726,7 +726,7 @@ const serviceJsonLd = {
                   </th>
                   <th scope="col" class="cbs-compare__head cbs-compare__head--dist">
                     <span class="cbs-compare__head-label">Modèle distributeur</span>
-                    <span class="cbs-compare__head-sub">Le stock revient à BBG</span>
+                    <span class="cbs-compare__head-sub">Le stock revient à TheChinaPath</span>
                   </th>
                 </tr>
               </thead>
@@ -1046,8 +1046,8 @@ const serviceJsonLd = {
     }
     .cbs-progress__bar {
       height: 100%; width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
-      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
 
@@ -1080,8 +1080,8 @@ const serviceJsonLd = {
           rgba(8, 18, 28, 0.72) 42%,
           rgba(8, 18, 28, 0.32) 100%),
         radial-gradient(120% 80% at 0% 100%,
-          rgba(38, 154, 218, 0.28) 0%,
-          rgba(38, 154, 218, 0) 60%);
+          rgba(200, 16, 46, 0.28) 0%,
+          rgba(200, 16, 46, 0) 60%);
     }
     .cbs-hero__grain {
       position: absolute; inset: 0; z-index: -1;
@@ -1128,7 +1128,7 @@ const serviceJsonLd = {
       content: ""; position: absolute;
       left: 0; right: 0; bottom: 0.04em;
       height: 0.18em;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px;
       transform-origin: left center;
       animation: cbs-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
@@ -1286,7 +1286,7 @@ const serviceJsonLd = {
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       transform: scaleX(0);
       transform-origin: left center;
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1294,7 +1294,7 @@ const serviceJsonLd = {
     .cbs-service:hover {
       transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 16px 32px -20px rgba(200, 16, 46, 0.4);
     }
     .cbs-service:hover::before { transform: scaleX(1); }
     .cbs-service__icon {
@@ -1302,7 +1302,7 @@ const serviceJsonLd = {
       width: 44px; height: 44px;
       align-items: center; justify-content: center;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.18) 100%);
       color: var(--bbg-blue);
       margin-bottom: var(--space-2);
     }
@@ -1370,7 +1370,7 @@ const serviceJsonLd = {
       font-family: inherit;
     }
     .cbs-tabs__tab:last-child { border-right: none; }
-    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(200, 16, 46, 0.04); }
     .cbs-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
     .cbs-tabs__tab-label {
       font-size: 1.0625rem; font-weight: 700;
@@ -1395,7 +1395,7 @@ const serviceJsonLd = {
       position: absolute;
       bottom: -1px; left: 0;
       width: 25%; height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px 2px 0 0;
       transform: translateX(0);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1613,7 +1613,7 @@ const serviceJsonLd = {
       border-bottom: 1px solid var(--bbg-border);
       vertical-align: top;
     }
-    .cbs-compare__cell--tp { background: rgba(38, 154, 218, 0.04); }
+    .cbs-compare__cell--tp { background: rgba(200, 16, 46, 0.04); }
     .cbs-compare__cell--dist { background: var(--bbg-white); }
     .cbs-compare__table tbody tr:last-child .cbs-compare__row-label,
     .cbs-compare__table tbody tr:last-child .cbs-compare__cell {
@@ -1633,7 +1633,7 @@ const serviceJsonLd = {
       margin: var(--space-6) auto 0;
       max-width: 760px;
       padding: var(--space-5) var(--space-6);
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.10) 100%);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.10) 100%);
       border-left: 4px solid var(--bbg-blue);
       border-radius: 0 var(--radius-md) var(--radius-md) 0;
     }
@@ -1773,7 +1773,7 @@ const serviceJsonLd = {
     .cbs-sister__pack:hover {
       transform: translateY(-3px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 14px 28px -18px rgba(38, 154, 218, 0.35);
+      box-shadow: 0 14px 28px -18px rgba(200, 16, 46, 0.35);
     }
     .cbs-sister__pack-icon {
       display: inline-flex;
@@ -1815,11 +1815,11 @@ const serviceJsonLd = {
     }
     .cbs-faq__item:hover {
       transform: translateX(2px);
-      border-color: rgba(38, 154, 218, 0.4);
+      border-color: rgba(200, 16, 46, 0.4);
     }
     .cbs-faq__item[open] {
       border-color: var(--bbg-blue);
-      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 8px 22px -14px rgba(200, 16, 46, 0.4);
     }
     .cbs-faq__q {
       cursor: pointer;

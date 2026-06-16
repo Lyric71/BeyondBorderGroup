@@ -2,7 +2,7 @@
 title: "Trends im Luxus-Marketing in China"
 description: "Chinas Luxusmarkt entwickelt sich durch Technologie und demografische Verschiebungen. Marken müssen drei Aufgaben lösen: Kunden erreichen, Loyalität aufbauen, Daten in Wachstum übersetzen."
 pubDate: "2024-06-07"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["WeChat"]
 tags: ["Luxusmarken", "Social-Media-Marketing", "China-Markt", "KOLs", "Omnichannel-Strategie"]

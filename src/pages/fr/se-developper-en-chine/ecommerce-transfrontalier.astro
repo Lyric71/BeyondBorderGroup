@@ -19,7 +19,7 @@ const promises = [
 const models = [
   {
     name: "Modèle TP",
-    tag: "La marque porte le stock, BBG porte la boutique",
+    tag: "La marque porte le stock, TheChinaPath porte la boutique",
     desc: "Le stock figure à votre bilan, la relation client s'établit sous votre nom. Nos équipes opèrent en qualité de Tmall Partner, JD Partner ou partenaire Douyin EC. Opérations, contenu, achats média, livestream, service client : le dispositif intégral tourne entre nos mains, sous votre marque.",
     when: "Le compte de résultat chinois doit se consolider dans vos livres, l'ambition vise un capital de marque durable sur le marché, et la trésorerie disponible permet de financer le stock en zone sous douane.",
     owns: [
@@ -48,15 +48,15 @@ const models = [
   },
   {
     name: "Modèle distributeur",
-    tag: "BBG porte le stock, BBG porte la boutique",
+    tag: "TheChinaPath porte le stock, TheChinaPath porte la boutique",
     desc: "Nous rachetons le produit au prix de gros et portons le stock en Chine. La boutique tourne sous notre licence, le stock figure à notre bilan, le risque commercial repose sur nos épaules. La marque vend au groupe, le groupe écoule le produit auprès du consommateur final.",
     when: "Votre marque dispose déjà d'une notoriété installée en Chine, vise un chiffre d'affaires chinois sans en absorber la complexité opérationnelle, refuse de financer le stock comme d'en porter le risque, et cherche un partenaire unique pour acheter puis écouler le produit. Les nouveaux entrants y trouvent rarement leur compte.",
     owns: [
       { label: "Stock", value: "À notre charge" },
-      { label: "Licence boutique", value: "Inscrite au nom de BBG" },
-      { label: "Données clients", value: "Détenues en direct par BBG" },
-      { label: "Contenu, média, contrats", value: "Signés par BBG" },
-      { label: "Budget média", value: "Budget marque, co-investissement BBG" },
+      { label: "Licence boutique", value: "Inscrite au nom de TheChinaPath" },
+      { label: "Données clients", value: "Détenues en direct par TheChinaPath" },
+      { label: "Contenu, média, contrats", value: "Signés par TheChinaPath" },
+      { label: "Budget média", value: "Budget marque, co-investissement TheChinaPath" },
       { label: "Chiffre d'affaires", value: "Facturation en gros, traitée en B2B" },
     ],
     yourSide: [
@@ -78,13 +78,13 @@ const models = [
 ];
 
 const compareRows = [
-  { label: "Propriété du stock", tp: "Marque", dist: "BBG" },
-  { label: "Propriété de la boutique et des données", tp: "Marque", dist: "BBG" },
+  { label: "Propriété du stock", tp: "Marque", dist: "TheChinaPath" },
+  { label: "Propriété de la boutique et des données", tp: "Marque", dist: "TheChinaPath" },
   { label: "Trésorerie engagée", tp: "Élevée", dist: "Nulle" },
   { label: "Comptabilisation du chiffre d'affaires", tp: "GMV retail, net des frais de plateforme", dist: "Prix de gros facturé" },
   { label: "Potentiel de marge", tp: "Marge retail intégrale", dist: "Plafonné par le prix de gros" },
   { label: "Risque assumé", tp: "Stock et demande", dist: "Aucun sur le stock" },
-  { label: "Charge média et promotionnelle", tp: "Entièrement à la charge de la marque", dist: "Budget marque, co-investissement BBG" },
+  { label: "Charge média et promotionnelle", tp: "Entièrement à la charge de la marque", dist: "Budget marque, co-investissement TheChinaPath" },
   { label: "Capital de marque en Chine", tp: "Acquis et conservé", dist: "Acquis, bâti par nos équipes" },
   { label: "Profil cible", tp: "Marques engagées dans une présence chinoise de long terme", dist: "Marques déjà installées sur le marché chinois" },
 ];
@@ -92,7 +92,7 @@ const compareRows = [
 const costLedger = {
   tp: {
     label: "Modèle TP",
-    sub: "La marque détient la boutique. BBG la pilote.",
+    sub: "La marque détient la boutique. TheChinaPath la pilote.",
     agency: {
       tag: "Ligne agence",
       headlineLead: "À partir de",
@@ -112,12 +112,12 @@ const costLedger = {
       headlineUnit: "à la charge de la marque",
       pill: "À partir de 120 000 $ la première année",
       body: "Le média, le contenu et la promotion restent à la charge de la marque, dans leur intégralité. Nos équipes opèrent dans le périmètre budgétaire validé en amont. Chaque yuan transite par votre compte plateforme, en pleine traçabilité.",
-      footer: "Les fourchettes habituelles débutent à 120 000 $ d'investissement média sur les douze premiers mois. Le contenu se refacture au coût, augmenté d'une commission de gestion réduite. Les KOL et les KOC passent par leur agence de talents ; aucune commission d'apport ne revient à BBG sur cette ligne.",
+      footer: "Les fourchettes habituelles débutent à 120 000 $ d'investissement média sur les douze premiers mois. Le contenu se refacture au coût, augmenté d'une commission de gestion réduite. Les KOL et les KOC passent par leur agence de talents ; aucune commission d'apport ne revient à TheChinaPath sur cette ligne.",
     },
   },
   distributor: {
     label: "Modèle distributeur",
-    sub: "BBG rachète. BBG écoule. La marque expédie.",
+    sub: "TheChinaPath rachète. TheChinaPath écoule. La marque expédie.",
     agency: {
       tag: "Ligne agence",
       headlineLead: '',
@@ -132,10 +132,10 @@ const costLedger = {
     brand: {
       tag: "Budget marque",
       headlineText: "Co-financé",
-      headlineUnit: "marque + BBG",
+      headlineUnit: "marque + TheChinaPath",
       pill: "Effort soutenu sur le 618 et le 11.11",
-      body: "La marque alloue une enveloppe marketing annuelle, déployée selon un plan arrêté en commun. BBG y ajoute fréquemment une part de sa propre marge retail, en particulier sur le média always-on et sur les temps forts promotionnels du 618 et du 11.11.",
-      footer: "Le co-investissement se finance sur la marge de gros que BBG perçoit. La marque consulte le plan, le valide, puis reçoit une reddition de comptes poste par poste.",
+      body: "La marque alloue une enveloppe marketing annuelle, déployée selon un plan arrêté en commun. TheChinaPath y ajoute fréquemment une part de sa propre marge retail, en particulier sur le média always-on et sur les temps forts promotionnels du 618 et du 11.11.",
+      footer: "Le co-investissement se finance sur la marge de gros que TheChinaPath perçoit. La marque consulte le plan, le valide, puis reçoit une reddition de comptes poste par poste.",
     },
   },
 };
@@ -168,7 +168,7 @@ const platformLedger = {
       meterPct: 22,
     },
   ],
-  footer: "Les chiffres valent pour toutes les marques sans exception. BBG n'ajoute aucune marge dissimulée, en aucune circonstance.",
+  footer: "Les chiffres valent pour toutes les marques sans exception. TheChinaPath n'ajoute aucune marge dissimulée, en aucune circonstance.",
 };
 
 const steps = [
@@ -239,7 +239,7 @@ const contextCards = [
   },
   {
     image: '/Images/enter-china/team.png',
-    alt: "L'équipe des opérations eCommerce de Beyond Border Group au travail dans un espace ouvert",
+    alt: "L'équipe des opérations eCommerce de TheChinaPath au travail dans un espace ouvert",
     kicker: "Cicatrices de plateforme",
     title: "Opérateurs d'abord, stratèges ensuite",
     body: "Nos seniors ont piloté des boutiques Tmall et JD au sein de Publicis Commerce China. Ils y ont perdu un Double 11, puis remporté l'édition suivante. La leçon a façonné la méthode.",
@@ -268,7 +268,7 @@ const faqs = [
   { cat: "Conformité", q: "Que se passe-t-il si mon produit ne peut pas emprunter la voie cross-border ?", a: "Le verdict tombe avant toute signature. Certains produits restent hors champ : catégories réglementées, allégations médicales sensibles, problèmes de formulation. Le diagnostic intervient dès la première semaine, suivi soit d'un travail de repositionnement, soit d'une recommandation alternative pour entrer sur le marché. Nous n'ouvrons pas de boutique pour un produit voué à être retiré six mois plus tard." },
   { cat: "Conformité", q: "Et les retraits ou sanctions de plateforme ?", a: "Ces dossiers relèvent de notre équipe. Une notification de sanction sur Tmall Global ou JD Worldwide se traite dans une fenêtre de 24 à 72 heures, selon la gravité. L'équipe opérations rédige la réponse, structure le plan de rectification, conduit la négociation avec la plateforme. Les sanctions surviennent, y compris chez les marques les mieux structurées ; la variable décisive reste la vitesse de récupération." },
   { cat: "Contrat", q: "Quelle est la durée minimale d'engagement ?", a: "Douze mois en modèle TP, vingt-quatre mois en modèle distributeur. Une boutique cross-border réclame du temps pour atteindre son régime de croisière, en particulier à la traversée de la première grande fenêtre commerciale ; un engagement sur le stock impose, de son côté, un horizon assez long pour amortir l'investissement. Des engagements plus courts demeurent envisageables sur des missions ponctuelles, qu'il s'agisse du 618, du 11.11 ou d'un sprint de lancement, mais jamais sur de l'always-on. Tout opérateur qui promet un résultat always-on en moins de trois mois mène son client à un mauvais résultat." },
-  { cat: "Contrat", q: "Qui détient la licence boutique, les données clients et le contenu ?", a: "Le modèle commande la propriété. En TP, la marque conserve la totalité des actifs : licence boutique, données clients, bibliothèque de contenu, comptes média, contrats fournisseurs. Nos équipes opèrent sous votre signature et avec vos actifs ; rien ne se transfère à la sortie, puisque rien ne nous a jamais appartenu. En distributeur, BBG détient l'ensemble : boutique, stock, données clients, contenu, comptes média. La marque vend au groupe, le groupe écoule auprès du consommateur final. La propriété intellectuelle et les marques déposées reviennent naturellement à la marque, mais l'infrastructure commerciale chinoise reste de notre côté." },
+  { cat: "Contrat", q: "Qui détient la licence boutique, les données clients et le contenu ?", a: "Le modèle commande la propriété. En TP, la marque conserve la totalité des actifs : licence boutique, données clients, bibliothèque de contenu, comptes média, contrats fournisseurs. Nos équipes opèrent sous votre signature et avec vos actifs ; rien ne se transfère à la sortie, puisque rien ne nous a jamais appartenu. En distributeur, TheChinaPath détient l'ensemble : boutique, stock, données clients, contenu, comptes média. La marque vend au groupe, le groupe écoule auprès du consommateur final. La propriété intellectuelle et les marques déposées reviennent naturellement à la marque, mais l'infrastructure commerciale chinoise reste de notre côté." },
   { cat: "Équipe", q: "Qui pilote mon compte au quotidien ?", a: "Un directeur de compte senior dédié, un responsable des opérations boutique, un producteur de contenu, un acheteur média : voilà l'équipage. Tous travaillent à plein temps sur le cross-border chinois, sans disperser leurs heures entre cinq clients en parallèle. Cyril ou Liyan se joignent à la revue mensuelle et interviennent sur les rendez-vous commerciaux." },
   { cat: "Équipe", q: "Où l'équipe est-elle basée ?", a: "L'équipe native opère depuis la Chine continentale, alignée sur les horaires des plateformes. La direction senior partage son temps entre la Chine, Hong Kong et Paris. Pour la marque, une adresse courriel unique, un canal Slack unique, et une journée de travail dont l'amplitude couvre la Chine comme l'Europe." },
   { cat: "Équipe", q: "Travaillez-vous avec mon agence globale ou mon équipe interne ?", a: "Oui. Notre dispositif s'inscrit dans les cadres existants de la marque et reverse à l'équipe globale les apprentissages issus du terrain. Aucune volonté d'empiéter sur des chantiers couverts ailleurs. Le brief, dès la première semaine, consiste à faire tourner les boutiques chinoises, et non à refaire le plan global." },
@@ -290,7 +290,7 @@ const icons: Record<string, string> = {
 ---
 
 <Layout
-  title="Agence Cross-Border eCommerce en Chine | BBG"
+  title="Agence Cross-Border eCommerce en Chine | TheChinaPath"
   description="Nos équipes opèrent les boutiques Tmall Global, JD Worldwide et Douyin EC Global des marques étrangères. Pilotage quotidien, contenu, achat média et livestream sous la responsabilité d'une équipe senior unique."
 >
   <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
@@ -618,7 +618,7 @@ const icons: Record<string, string> = {
                   </th>
                   <th scope="col" class="cbs-compare__head cbs-compare__head--dist">
                     <span class="cbs-compare__head-label">Modèle distributeur</span>
-                    <span class="cbs-compare__head-sub">BBG porte le stock</span>
+                    <span class="cbs-compare__head-sub">TheChinaPath porte le stock</span>
                   </th>
                 </tr>
               </thead>
@@ -1112,8 +1112,8 @@ const icons: Record<string, string> = {
     }
     .cbs-progress__bar {
       height: 100%; width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
-      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
 
@@ -1146,8 +1146,8 @@ const icons: Record<string, string> = {
           rgba(8, 18, 28, 0.72) 42%,
           rgba(8, 18, 28, 0.32) 100%),
         radial-gradient(120% 80% at 0% 100%,
-          rgba(38, 154, 218, 0.28) 0%,
-          rgba(38, 154, 218, 0) 60%);
+          rgba(200, 16, 46, 0.28) 0%,
+          rgba(200, 16, 46, 0) 60%);
     }
     .cbs-hero__grain {
       position: absolute; inset: 0; z-index: -1;
@@ -1194,7 +1194,7 @@ const icons: Record<string, string> = {
       content: ""; position: absolute;
       left: 0; right: 0; bottom: 0.04em;
       height: 0.18em;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px;
       transform-origin: left center;
       animation: cbs-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
@@ -1392,7 +1392,7 @@ const icons: Record<string, string> = {
       border-right: 1px solid var(--bbg-border);
     }
     .cbs-tabs__tab:last-child { border-right: none; }
-    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(200, 16, 46, 0.04); }
     .cbs-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
     .cbs-tabs__tab-label {
       font-size: 1.0625rem; font-weight: 700;
@@ -1417,7 +1417,7 @@ const icons: Record<string, string> = {
       position: absolute;
       bottom: -1px; left: 0;
       width: 25%; height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px 2px 0 0;
       transform: translateX(0);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1638,7 +1638,7 @@ const icons: Record<string, string> = {
       vertical-align: top;
     }
     .cbs-compare__cell--tp {
-      background: rgba(38, 154, 218, 0.04);
+      background: rgba(200, 16, 46, 0.04);
     }
     .cbs-compare__cell--dist {
       background: var(--bbg-white);
@@ -1673,8 +1673,8 @@ const icons: Record<string, string> = {
       position: absolute;
       inset: 0;
       background-image:
-        linear-gradient(rgba(38, 154, 218, 0.07) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(38, 154, 218, 0.07) 1px, transparent 1px);
+        linear-gradient(rgba(200, 16, 46, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 16, 46, 0.07) 1px, transparent 1px);
       background-size: 48px 48px;
       background-position: center;
       mask-image: radial-gradient(ellipse 70% 60% at center, #000 25%, transparent 75%);
@@ -1689,7 +1689,7 @@ const icons: Record<string, string> = {
     }
     .cbs-cost-section__glow--a {
       top: -120px; left: -100px;
-      background: radial-gradient(circle, rgba(38, 154, 218, 0.22) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(200, 16, 46, 0.22) 0%, transparent 70%);
     }
     .cbs-cost-section__glow--b {
       bottom: -150px; right: -120px;
@@ -1712,11 +1712,11 @@ const icons: Record<string, string> = {
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(38, 154, 218, 0.16);
+      border: 1px solid rgba(200, 16, 46, 0.16);
       border-radius: 999px;
       box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.9) inset,
-        0 18px 40px -28px rgba(38, 154, 218, 0.35);
+        0 18px 40px -28px rgba(200, 16, 46, 0.35);
     }
     .cbs-cost__switcher-pill {
       position: absolute;
@@ -1724,9 +1724,9 @@ const icons: Record<string, string> = {
       width: calc(50% - 6px);
       height: calc(100% - 12px);
       border-radius: 999px;
-      background: linear-gradient(135deg, var(--bbg-blue) 0%, #1E7DB0 100%);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, #A50C26 100%);
       box-shadow:
-        0 6px 18px -8px rgba(38, 154, 218, 0.6),
+        0 6px 18px -8px rgba(200, 16, 46, 0.6),
         0 1px 0 rgba(255, 255, 255, 0.3) inset;
       transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
       z-index: 0;
@@ -1790,14 +1790,14 @@ const icons: Record<string, string> = {
       padding: 28px 28px 24px;
       background:
         linear-gradient(180deg, #ffffff 0%, #fafdff 100%);
-      border: 1px solid rgba(38, 154, 218, 0.18);
+      border: 1px solid rgba(200, 16, 46, 0.18);
       border-radius: 22px;
       overflow: hidden;
       isolation: isolate;
       box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.9) inset,
         0 24px 48px -34px rgba(15, 50, 85, 0.18),
-        0 6px 16px -10px rgba(38, 154, 218, 0.10);
+        0 6px 16px -10px rgba(200, 16, 46, 0.10);
       transform-style: preserve-3d;
       transform:
         perspective(1200px)
@@ -1814,7 +1814,7 @@ const icons: Record<string, string> = {
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 50%, var(--bbg-blue) 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 50%, var(--bbg-blue) 100%);
       background-size: 200% 100%;
       animation: cbs-stripe 6s linear infinite;
       transform-origin: left;
@@ -1827,11 +1827,11 @@ const icons: Record<string, string> = {
     }
     .cbs-ledger:hover {
       --lift: -6px;
-      border-color: rgba(38, 154, 218, 0.45);
+      border-color: rgba(200, 16, 46, 0.45);
       box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.9) inset,
         0 40px 64px -36px rgba(15, 50, 85, 0.28),
-        0 10px 24px -12px rgba(38, 154, 218, 0.28);
+        0 10px 24px -12px rgba(200, 16, 46, 0.28);
     }
     .cbs-ledger:hover::before {
       transform: scaleX(1);
@@ -1843,7 +1843,7 @@ const icons: Record<string, string> = {
       background:
         radial-gradient(
           240px circle at var(--mx, 50%) var(--my, 0%),
-          rgba(38, 154, 218, 0.12) 0%,
+          rgba(200, 16, 46, 0.12) 0%,
           transparent 60%
         );
       opacity: 0;
@@ -1860,8 +1860,8 @@ const icons: Record<string, string> = {
       border-radius: 50%;
       background: var(--bbg-blue);
       box-shadow:
-        0 0 0 4px rgba(38, 154, 218, 0.14),
-        0 0 14px rgba(38, 154, 218, 0.4);
+        0 0 0 4px rgba(200, 16, 46, 0.14),
+        0 0 14px rgba(200, 16, 46, 0.4);
     }
     .cbs-ledger > * { position: relative; z-index: 1; }
 
@@ -1878,9 +1878,9 @@ const icons: Record<string, string> = {
       align-items: center; justify-content: center;
       border-radius: 14px;
       background:
-        linear-gradient(135deg, rgba(232, 244, 252, 0.95) 0%, rgba(38, 154, 218, 0.18) 100%);
+        linear-gradient(135deg, rgba(232, 244, 252, 0.95) 0%, rgba(200, 16, 46, 0.18) 100%);
       color: var(--bbg-blue);
-      box-shadow: 0 4px 12px -6px rgba(38, 154, 218, 0.45);
+      box-shadow: 0 4px 12px -6px rgba(200, 16, 46, 0.45);
     }
     .cbs-ledger__icon svg { width: 20px; height: 20px; }
     .cbs-ledger__tag {
@@ -1892,7 +1892,7 @@ const icons: Record<string, string> = {
       text-transform: uppercase;
       color: var(--bbg-blue);
       background: rgba(232, 244, 252, 0.85);
-      border: 1px solid rgba(38, 154, 218, 0.22);
+      border: 1px solid rgba(200, 16, 46, 0.22);
       border-radius: 999px;
     }
     .cbs-ledger__tag--universal {
@@ -1939,7 +1939,7 @@ const icons: Record<string, string> = {
       text-transform: uppercase;
       margin-right: 8px;
       padding: 4px 8px;
-      background: rgba(38, 154, 218, 0.10);
+      background: rgba(200, 16, 46, 0.10);
       border-radius: 6px;
       align-self: center;
       transform: translateY(-4px);
@@ -1979,17 +1979,17 @@ const icons: Record<string, string> = {
       font-weight: 600;
       color: var(--bbg-ink);
       background: linear-gradient(180deg, #fff 0%, #f1f7fc 100%);
-      border: 1px solid rgba(38, 154, 218, 0.22);
+      border: 1px solid rgba(200, 16, 46, 0.22);
       border-radius: 8px;
       margin-top: 6px;
-      box-shadow: 0 2px 6px -4px rgba(38, 154, 218, 0.35);
+      box-shadow: 0 2px 6px -4px rgba(200, 16, 46, 0.35);
     }
     .cbs-ledger__pill::before {
       content: "";
       width: 6px; height: 6px;
       border-radius: 50%;
       background: var(--bbg-blue);
-      box-shadow: 0 0 8px rgba(38, 154, 218, 0.6);
+      box-shadow: 0 0 8px rgba(200, 16, 46, 0.6);
     }
     .cbs-ledger__body {
       font-size: 0.92rem;
@@ -2004,7 +2004,7 @@ const icons: Record<string, string> = {
       display: flex; flex-direction: column;
       gap: 12px;
       padding-top: 14px;
-      border-top: 1px dashed rgba(38, 154, 218, 0.22);
+      border-top: 1px dashed rgba(200, 16, 46, 0.22);
     }
     .cbs-bucket {
       display: flex; flex-direction: column;
@@ -2040,7 +2040,7 @@ const icons: Record<string, string> = {
       display: block;
       position: relative;
       height: 4px;
-      background: rgba(38, 154, 218, 0.12);
+      background: rgba(200, 16, 46, 0.12);
       border-radius: 4px;
       overflow: hidden;
       margin-top: 4px;
@@ -2050,7 +2050,7 @@ const icons: Record<string, string> = {
       position: absolute;
       inset: 0;
       width: 0;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 4px;
       transition: width 1100ms cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -2198,7 +2198,7 @@ const icons: Record<string, string> = {
       padding: 32px 36px 28px;
       border-radius: 24px;
       background:
-        radial-gradient(circle at 0% 0%, rgba(38, 154, 218, 0.22) 0%, transparent 55%),
+        radial-gradient(circle at 0% 0%, rgba(200, 16, 46, 0.22) 0%, transparent 55%),
         radial-gradient(circle at 100% 100%, rgba(91, 194, 240, 0.18) 0%, transparent 55%),
         linear-gradient(135deg, #0d2a3e 0%, #143955 60%, #1c4f74 100%);
       color: #fff;
@@ -2340,10 +2340,10 @@ const icons: Record<string, string> = {
       position: absolute;
       top: 0; left: 0; width: 100%;
       height: var(--journey-progress, 0%);
-      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px;
       transition: height 120ms linear;
-      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 0 8px rgba(200, 16, 46, 0.4);
     }
     .cbs-journey__list {
       list-style: none; padding: 0; margin: 0;
@@ -2401,7 +2401,7 @@ const icons: Record<string, string> = {
     .cbs-journey__item:hover .cbs-journey__card,
     .cbs-journey__item.is-active .cbs-journey__card {
       border-color: var(--bbg-blue);
-      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 18px 38px -22px rgba(200, 16, 46, 0.4);
       transform: translateX(4px);
     }
     .cbs-journey__icon {
@@ -2542,7 +2542,7 @@ const icons: Record<string, string> = {
     .cbs-sister__pack:hover {
       transform: translateY(-3px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 14px 28px -18px rgba(38, 154, 218, 0.35);
+      box-shadow: 0 14px 28px -18px rgba(200, 16, 46, 0.35);
     }
     .cbs-sister__pack-icon {
       display: inline-flex;
@@ -2584,11 +2584,11 @@ const icons: Record<string, string> = {
     }
     .cbs-faq__item:hover {
       transform: translateX(2px);
-      border-color: rgba(38, 154, 218, 0.4);
+      border-color: rgba(200, 16, 46, 0.4);
     }
     .cbs-faq__item[open] {
       border-color: var(--bbg-blue);
-      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 8px 22px -14px rgba(200, 16, 46, 0.4);
     }
     .cbs-faq__q {
       cursor: pointer;

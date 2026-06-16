@@ -3,7 +3,7 @@ title: "Comercio con IA en China: tendencias e innovaciones a vigilar"
 description: "China ha integrado a gran velocidad la IA en marketing y comercio. Plataformas como Alibaba o JD.com aprovechan la tecnología para transformar la experiencia de cliente, el eCommerce y la operación de retail en todo el país."
 pubDate: "2025-01-10"
 updatedDate: "2026-05-15"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 tags: ["marketing con IA", "eCommerce", "China", "IA generativa", "comercio social"]
 heroImage: "/Images/insights/chinas-ai-powered-commerce-trends-and-innovations-to-watch.png"

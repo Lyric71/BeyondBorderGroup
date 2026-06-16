@@ -2,7 +2,7 @@
 title: "Trouver un distributeur en Chine en 2024 : méthode et critères"
 description: "Pinlive Foods sur le retail, ESB Shanghai sur le digital, Classic Fine Foods sur la gastronomie : la distribution chinoise se segmente. Méthode concrète pour repérer le bon partenaire et bâtir un accord qui tient."
 pubDate: "2024-06-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 tags: ["distribution Chine", "entrée de marché", "logistique", "partenariats retail", "B2B"]
 heroImage: "/Images/insights/how-to-find-a-distributor-for-your-products-in-china-in-2024.png"

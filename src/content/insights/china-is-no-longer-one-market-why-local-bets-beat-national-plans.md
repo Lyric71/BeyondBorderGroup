@@ -93,9 +93,9 @@ The brands that adapt fastest will be those that treat China less like a single 
 
 ---
 
-## Turning Insight Into Action With BBG
+## Turning Insight Into Action With TheChinaPath
 
-At BBG, we work with global brands that feel this shift in China and need a concrete way to respond.
+At TheChinaPath, we work with global brands that feel this shift in China and need a concrete way to respond.
 
 We help teams move from single national plans to structured portfolios of China bets. That can include city and cluster strategy, platform roadmaps across Douyin, Xiaohongshu, WeChat, Tmall, JD and others, and localisation of brand and commerce experiences that still respect global DNA.
 

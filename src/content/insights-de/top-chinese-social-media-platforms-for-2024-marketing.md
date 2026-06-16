@@ -2,7 +2,7 @@
 title: "Wo Marken Aufmerksamkeit gewinnen: Die Top-Social-Plattformen Chinas 2024"
 description: "Chinesische Social-Plattformen wie WeChat, Weibo und TikTok eröffnen globalen Marken einzigartige Chancen, mit einem der grössten Käufermärkte der Welt in Kontakt zu treten. Wer diese Plattformen versteht und nutzt, gewinnt im chinesischen Markt."
 pubDate: "2024-08-10"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["WeChat", "Douyin", "Xiaohongshu"]
 tags: ["WeChat", "Douyin", "Chinesische Social Media", "Influencer-Marketing", "eCommerce"]

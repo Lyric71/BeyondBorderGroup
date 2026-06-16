@@ -2,7 +2,7 @@
 title: "Réseaux sociaux chinois : la cartographie 2024 pour les marques"
 description: "WeChat, Weibo, Douyin et leurs concurrents donnent aux marques un accès sans équivalent à l'une des plus vastes bases consommateurs au monde. Comprendre et activer ces plateformes conditionne toute trajectoire de croissance en Chine."
 pubDate: "2024-08-10"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["WeChat", "Douyin", "Xiaohongshu"]
 tags: ["WeChat", "Douyin", "réseaux sociaux chinois", "marketing d'influence", "e-commerce"]

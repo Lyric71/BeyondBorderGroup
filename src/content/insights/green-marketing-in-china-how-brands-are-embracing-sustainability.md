@@ -2,7 +2,7 @@
 title: "Effective Green Marketing Campaigns by Leading Brands in China"
 description: "Sustainability has become a core marketing focus for Chinese brands, with campaigns highlighting environmental commitment and resonating with eco-conscious consumers making sustainable purchasing decisions."
 pubDate: "2024-06-17"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["green marketing", "sustainability", "China brands", "eco-friendly", "consumer trends"]
 heroImage: "/Images/insights/green-marketing-in-china-how-brands-are-embracing-sustainability.jpg"

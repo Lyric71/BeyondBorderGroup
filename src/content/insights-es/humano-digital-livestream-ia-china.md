@@ -2,7 +2,7 @@
 title: "Humano digital: el auge del livestream con IA en China"
 description: "El avatar digital del fundador de JD.com, Liu Qiangdong, atrajo a 20 millones de espectadores en una hora. Una muestra del potencial de la IA para enganchar audiencias y transformar el eCommerce con interacciones realistas."
 pubDate: "2024-04-25"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 platforms: ["JD"]
 tags: ["avatares con IA", "livestream commerce", "JD.com", "marketing digital", "eCommerce"]

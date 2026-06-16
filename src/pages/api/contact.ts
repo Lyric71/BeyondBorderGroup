@@ -53,7 +53,7 @@ export const POST: APIRoute = async ({ request }) => {
 		return json(
 			{
 				error:
-					"We couldn't send your message right now. Please try again in a moment, or email us at hello@beyondbordergroup.com.",
+					"We couldn't send your message right now. Please try again in a moment, or email us at hello@thechinapath.com.",
 			},
 			500,
 		);

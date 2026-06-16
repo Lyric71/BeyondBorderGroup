@@ -1,5 +1,5 @@
 ---
-title: "Navigating Cross-Border Commerce Livestreaming: Insights from Beyond Border Group's CEO Cyril Drouin"
+title: "Navigating Cross-Border Commerce Livestreaming: Insights from TheChinaPath's CEO Cyril Drouin"
 description: "CEO Cyril Drouin discusses live broadcast commerce, brand localization, KOLs, and cross-border eCommerce challenges. He shares insights on the differences between China's transactional livestream economy and Western markets."
 pubDate: "2024-11-05"
 updatedDate: "2026-05-15"
@@ -7,7 +7,7 @@ author: "Cyril Drouin"
 category: "KOLs & Livestream"
 tags: ["cross-border eCommerce", "live commerce", "brand localization", "KOLs", "China expansion"]
 heroImage: "/Images/insights/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin.jpg"
-heroImageAlt: "Cyril Drouin, CEO of Beyond Border Group"
+heroImageAlt: "Cyril Drouin, CEO of TheChinaPath"
 legacyUrl: "https://beyondbordergroup.com/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin/"
 ---
 
@@ -15,7 +15,7 @@ legacyUrl: "https://beyondbordergroup.com/navigating-cross-border-commerce-insig
 
 ### Introduce yourself
 
-My name is Cyril Drouin, a French national who has lived in China for many years. After spending seven years as the CEO of Publicis China, where I led initiatives in commerce, performance marketing, and creative work, I founded a [cross-border](/enter-china/cross-border-setup) agency called Beyond Border Group. Our agency focuses on helping Chinese brands expand internationally while supporting global companies entering the Chinese market. We offer a comprehensive range of services, including branding, content creation, social media management, media planning, public relations, exhibitions, distribution, logistics, and more.
+My name is Cyril Drouin, a French national who has lived in China for many years. After spending seven years as the CEO of Publicis China, where I led initiatives in commerce, performance marketing, and creative work, I founded a [cross-border](/enter-china/cross-border-setup) agency called TheChinaPath. Our agency focuses on helping Chinese brands expand internationally while supporting global companies entering the Chinese market. We offer a comprehensive range of services, including branding, content creation, social media management, media planning, public relations, exhibitions, distribution, logistics, and more.
 
 ![](/Images/insights/2024/11/1727424689670.jpg)
 

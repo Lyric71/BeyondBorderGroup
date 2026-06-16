@@ -2,7 +2,7 @@
 title: "Calendrier 2025 des grands rendez-vous e-commerce chinois"
 description: "Panorama complet des grandes fêtes e-commerce chinoises en 2025 et leviers marketing à activer pour exploiter chaque pic commercial."
 pubDate: "2025-01-09"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["e-commerce", "Chine", "fêtes commerciales", "stratégie marketing", "commerce transfrontalier"]

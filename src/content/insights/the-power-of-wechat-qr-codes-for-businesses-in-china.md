@@ -2,7 +2,7 @@
 title: "The power of Wechat QR Codes for businesses in China"
 description: "WeChat QR codes have become essential tools for businesses in China's digital market, with 95.7% of mobile payment users relying on them for transactions, engagement, and marketing."
 pubDate: "2025-02-07"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["WeChat"]
 tags: ["WeChat", "QR codes", "digital marketing", "ecommerce", "China payments"]

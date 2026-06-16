@@ -93,6 +93,6 @@ Aus der Ferne wirken Taobao Instant Commerce und Taobao Flash Sale nach Logistik
 
 Für nicht-chinesische Marken ist die Verschiebung klar. Sie konkurrieren nicht mehr nur darum, wer am Double 11 die beste Geschichte erzählt. Sie konkurrieren darum, wer in den kleinen, spontanen Entscheidungen, die jetzt den Rest des Kalenders füllen, natürlich präsent wirkt.
 
-Bei Beyond Border Group ist das das Feld, auf dem wir mit Kunden arbeiten und globale Absicht mit Chinas sich schnell ändernder lokaler Realität verbinden. Die praktische Frage, auf die wir zurückkommen, ist einfach.
+Bei TheChinaPath ist das das Feld, auf dem wir mit Kunden arbeiten und globale Absicht mit Chinas sich schnell ändernder lokaler Realität verbinden. Die praktische Frage, auf die wir zurückkommen, ist einfach.
 
 Wenn China sich von Festival-First zu Instant-First bewegt, welche Teile dieser neuen Reise sollen die Handschrift Ihrer Marke tragen, und welche Teile überlassen Sie derzeit den Plattformen?

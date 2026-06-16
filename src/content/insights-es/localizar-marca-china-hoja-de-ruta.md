@@ -2,7 +2,7 @@
 title: "Cómo localizar una marca para China"
 description: "Localizar una marca para China exige entender los códigos culturales, traducir los contenidos, adaptar el producto a las preferencias locales y cumplir con la normativa para llegar de verdad a uno de los mercados de consumo más grandes del mundo."
 pubDate: "2023-02-03"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["entrada en el mercado chino", "localización de marca", "adaptación cultural", "consumidores chinos", "estrategia de mercado"]
 heroImage: "/Images/insights/how-to-localize-a-brand-for-china.png"

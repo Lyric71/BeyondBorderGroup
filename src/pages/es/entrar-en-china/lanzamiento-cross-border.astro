@@ -24,8 +24,8 @@ const services = [
     short: 'Tmall · JD · Taobao · Pinduoduo',
     desc: 'Quince años operando Tmall, JD, Taobao y Pinduoduo. Estrategia tirada por los datos, ajustada para sostener ventas y margen.',
     points: ['Operaciones de flagship en Tmall', 'JD directo y POP', 'Planes de seeding en Taobao'],
-    color: '#269ADA',
-    colorSoft: '#E8F4FC',
+    color: '#C8102E',
+    colorSoft: '#FBE9EC',
   },
   {
     icon: 'bag',
@@ -270,7 +270,7 @@ const icons: Record<string, string> = {
 ---
 
 <Layout
-  title="Lanzamiento Cross-Border en China | Tmall Global, JD Worldwide, Douyin | Beyond Border Group"
+  title="Lanzamiento Cross-Border en China | Tmall Global, JD Worldwide, Douyin | TheChinaPath"
   description="Lanzamos y hacemos crecer su eCommerce en China. Tmall Global, JD Worldwide, Douyin, WeChat y RED, en modo agencia de marketing, TP o distribuidor. Quince años de experiencia operativa."
 >
   <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
@@ -827,8 +827,8 @@ const icons: Record<string, string> = {
     .cbs-progress__bar {
       height: 100%;
       width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
-      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
 
@@ -867,8 +867,8 @@ const icons: Record<string, string> = {
           rgba(8, 18, 28, 0.72) 42%,
           rgba(8, 18, 28, 0.32) 100%),
         radial-gradient(120% 80% at 0% 100%,
-          rgba(38, 154, 218, 0.28) 0%,
-          rgba(38, 154, 218, 0) 60%);
+          rgba(200, 16, 46, 0.28) 0%,
+          rgba(200, 16, 46, 0) 60%);
     }
     .cbs-hero__grain {
       position: absolute; inset: 0; z-index: -1;
@@ -927,7 +927,7 @@ const icons: Record<string, string> = {
       right: 0;
       bottom: 0.04em;
       height: 0.18em;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px;
       transform-origin: left center;
       animation: cbs-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
@@ -1187,8 +1187,8 @@ const icons: Record<string, string> = {
       position: absolute;
       inset: 0;
       background: radial-gradient(120% 80% at 100% 0%,
-        rgba(38, 154, 218, 0.10) 0%,
-        rgba(38, 154, 218, 0) 55%);
+        rgba(200, 16, 46, 0.10) 0%,
+        rgba(200, 16, 46, 0) 55%);
       opacity: 0;
       transition: opacity 320ms ease;
       z-index: -1;
@@ -1196,7 +1196,7 @@ const icons: Record<string, string> = {
     .cbs-service:hover {
       transform: translateY(-6px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.45),
+      box-shadow: 0 18px 38px -22px rgba(200, 16, 46, 0.45),
                   0 4px 10px -6px rgba(0, 0, 0, 0.08);
     }
     .cbs-service:hover::before { opacity: 1; }
@@ -1208,11 +1208,11 @@ const icons: Record<string, string> = {
       align-items: center;
       justify-content: center;
       border-radius: var(--radius-md);
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.16) 100%);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.16) 100%);
       color: var(--bbg-blue);
       margin-bottom: var(--space-4);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: inset 0 0 0 1px rgba(38, 154, 218, 0.15);
+      box-shadow: inset 0 0 0 1px rgba(200, 16, 46, 0.15);
     }
     .cbs-service__icon svg { width: 26px; height: 26px; }
     .cbs-service h3 {
@@ -1338,7 +1338,7 @@ const icons: Record<string, string> = {
     .cbs-model--highlight .cbs-model__tag {
       background: var(--bbg-white);
       color: var(--bbg-blue);
-      border-color: rgba(38, 154, 218, 0.25);
+      border-color: rgba(200, 16, 46, 0.25);
     }
     .cbs-model__title {
       font-size: 1.5rem;
@@ -1608,7 +1608,7 @@ const icons: Record<string, string> = {
       position: absolute;
       inset: 0;
       background: radial-gradient(circle at 100% 0%,
-        color-mix(in srgb, var(--platform-color, #269ADA) 12%, transparent) 0%,
+        color-mix(in srgb, var(--platform-color, #C8102E) 12%, transparent) 0%,
         transparent 55%);
       opacity: 0;
       transition: opacity var(--dur) var(--ease);
@@ -1617,8 +1617,8 @@ const icons: Record<string, string> = {
     }
     .cbs-platform:hover {
       transform: translateY(-6px);
-      border-color: color-mix(in srgb, var(--platform-color, #269ADA) 60%, var(--bbg-border));
-      box-shadow: 0 18px 40px -22px color-mix(in srgb, var(--platform-color, #269ADA) 55%, transparent),
+      border-color: color-mix(in srgb, var(--platform-color, #C8102E) 60%, var(--bbg-border));
+      box-shadow: 0 18px 40px -22px color-mix(in srgb, var(--platform-color, #C8102E) 55%, transparent),
                   0 4px 12px -6px rgba(0, 0, 0, 0.08);
       color: var(--bbg-ink);
     }
@@ -1644,7 +1644,7 @@ const icons: Record<string, string> = {
       transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
     }
     .cbs-platform:hover .cbs-platform__logo {
-      border-color: color-mix(in srgb, var(--platform-color, #269ADA) 35%, var(--bbg-border));
+      border-color: color-mix(in srgb, var(--platform-color, #C8102E) 35%, var(--bbg-border));
       transform: scale(1.04);
     }
     .cbs-platform__logo img {
@@ -1655,7 +1655,7 @@ const icons: Record<string, string> = {
     .cbs-platform__cn {
       font-size: 1.5rem;
       font-weight: 700;
-      color: color-mix(in srgb, var(--platform-color, #269ADA) 75%, var(--bbg-ink));
+      color: color-mix(in srgb, var(--platform-color, #C8102E) 75%, var(--bbg-ink));
       line-height: 1;
       letter-spacing: 0.02em;
       opacity: 0.85;
@@ -1711,11 +1711,11 @@ const icons: Record<string, string> = {
         right: 12%;
         height: 2px;
         background: linear-gradient(90deg,
-          rgba(38, 154, 218, 0) 0%,
-          rgba(38, 154, 218, 0.35) 12%,
-          rgba(38, 154, 218, 0.55) 50%,
-          rgba(38, 154, 218, 0.35) 88%,
-          rgba(38, 154, 218, 0) 100%);
+          rgba(200, 16, 46, 0) 0%,
+          rgba(200, 16, 46, 0.35) 12%,
+          rgba(200, 16, 46, 0.55) 50%,
+          rgba(200, 16, 46, 0.35) 88%,
+          rgba(200, 16, 46, 0) 100%);
         z-index: 0;
         transform: scaleX(0);
         transform-origin: left center;
@@ -1738,7 +1738,7 @@ const icons: Record<string, string> = {
     .cbs-step:hover {
       transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4),
+      box-shadow: 0 16px 32px -20px rgba(200, 16, 46, 0.4),
                   0 4px 10px -6px rgba(0, 0, 0, 0.06);
     }
     .cbs-step__icon {
@@ -1751,7 +1751,7 @@ const icons: Record<string, string> = {
       background: var(--bbg-white);
       color: var(--bbg-blue);
       margin-bottom: var(--space-4);
-      box-shadow: 0 0 0 3px var(--bbg-blue-light), inset 0 0 0 1px rgba(38, 154, 218, 0.18);
+      box-shadow: 0 0 0 3px var(--bbg-blue-light), inset 0 0 0 1px rgba(200, 16, 46, 0.18);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-step:hover .cbs-step__icon { transform: scale(1.06) rotate(4deg); }
@@ -1797,7 +1797,7 @@ const icons: Record<string, string> = {
       left: 0;
       right: 0;
       height: 2px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 50%, var(--bbg-blue) 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 50%, var(--bbg-blue) 100%);
       transform: scaleX(0);
       transform-origin: left center;
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1805,7 +1805,7 @@ const icons: Record<string, string> = {
     .cbs-ai__card:hover {
       transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 14px 30px -18px rgba(38, 154, 218, 0.42),
+      box-shadow: 0 14px 30px -18px rgba(200, 16, 46, 0.42),
                   0 4px 10px -6px rgba(0, 0, 0, 0.06);
     }
     .cbs-ai__card:hover::before { transform: scaleX(1); }
@@ -1816,10 +1816,10 @@ const icons: Record<string, string> = {
       align-items: center;
       justify-content: center;
       border-radius: var(--radius-md);
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.18) 100%);
       color: var(--bbg-blue);
       margin-bottom: var(--space-3);
-      box-shadow: inset 0 0 0 1px rgba(38, 154, 218, 0.12);
+      box-shadow: inset 0 0 0 1px rgba(200, 16, 46, 0.12);
       transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-ai__card:hover .cbs-ai__icon { transform: scale(1.08) rotate(-4deg); }
@@ -1858,11 +1858,11 @@ const icons: Record<string, string> = {
     }
     .cbs-faq__item:hover {
       transform: translateX(2px);
-      border-color: rgba(38, 154, 218, 0.4);
+      border-color: rgba(200, 16, 46, 0.4);
     }
     .cbs-faq__item[open] {
       border-color: var(--bbg-blue);
-      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 8px 22px -14px rgba(200, 16, 46, 0.4);
     }
     .cbs-faq__q {
       cursor: pointer;
@@ -2020,7 +2020,7 @@ const icons: Record<string, string> = {
       top: 0; left: 0;
       width: 100%;
       height: 4px;
-      background: linear-gradient(90deg, var(--svc-color, #269ADA) 0%, var(--svc-color, #269ADA) 50%, transparent 100%);
+      background: linear-gradient(90deg, var(--svc-color, #C8102E) 0%, var(--svc-color, #C8102E) 50%, transparent 100%);
       transform: scaleX(0.3);
       transform-origin: left center;
       transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -2031,7 +2031,7 @@ const icons: Record<string, string> = {
       position: absolute;
       inset: 0;
       background: radial-gradient(140% 90% at 100% 0%,
-        color-mix(in srgb, var(--svc-color, #269ADA) 14%, transparent) 0%,
+        color-mix(in srgb, var(--svc-color, #C8102E) 14%, transparent) 0%,
         transparent 55%);
       opacity: 0;
       transition: opacity 360ms ease;
@@ -2040,8 +2040,8 @@ const icons: Record<string, string> = {
     }
     .cbs-svc-card:hover {
       transform: translateY(-6px);
-      border-color: color-mix(in srgb, var(--svc-color, #269ADA) 55%, var(--bbg-border));
-      box-shadow: 0 22px 50px -26px color-mix(in srgb, var(--svc-color, #269ADA) 50%, transparent),
+      border-color: color-mix(in srgb, var(--svc-color, #C8102E) 55%, var(--bbg-border));
+      box-shadow: 0 22px 50px -26px color-mix(in srgb, var(--svc-color, #C8102E) 50%, transparent),
                   0 6px 14px -8px rgba(0, 0, 0, 0.08);
     }
     .cbs-svc-card:hover::before { transform: scaleX(1); }
@@ -2050,8 +2050,8 @@ const icons: Record<string, string> = {
       transform: scale(1.06) rotate(-4deg);
       background: var(--svc-color, var(--bbg-blue));
       color: var(--bbg-white);
-      box-shadow: 0 12px 24px -14px color-mix(in srgb, var(--svc-color, #269ADA) 70%, transparent),
-                  inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #269ADA) 30%, transparent);
+      box-shadow: 0 12px 24px -14px color-mix(in srgb, var(--svc-color, #C8102E) 70%, transparent),
+                  inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #C8102E) 30%, transparent);
     }
     .cbs-svc-card:hover .cbs-svc-card__arrow { transform: translateX(4px); color: var(--svc-color, var(--bbg-blue)); }
 
@@ -2070,7 +2070,7 @@ const icons: Record<string, string> = {
       border-radius: 16px;
       background: var(--svc-soft, var(--bbg-blue-light));
       color: var(--svc-color, var(--bbg-blue));
-      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #269ADA) 18%, transparent);
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #C8102E) 18%, transparent);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
                   background 320ms ease, color 320ms ease, box-shadow 320ms ease;
       flex-shrink: 0;
@@ -2171,7 +2171,7 @@ const icons: Record<string, string> = {
       border-right: 1px solid var(--bbg-border);
     }
     .cbs-tabs__tab:last-child { border-right: none; }
-    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(200, 16, 46, 0.04); }
     .cbs-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
     .cbs-tabs__tab-label {
       font-size: 1.0625rem;
@@ -2204,7 +2204,7 @@ const icons: Record<string, string> = {
       left: 0;
       width: 25%;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px 2px 0 0;
       transform: translateX(0);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -2319,9 +2319,9 @@ const icons: Record<string, string> = {
       align-items: baseline;
       gap: var(--space-4);
       padding: var(--space-4);
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.12) 100%);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.12) 100%);
       border-radius: var(--radius-md);
-      border: 1px solid rgba(38, 154, 218, 0.2);
+      border: 1px solid rgba(200, 16, 46, 0.2);
     }
     .cbs-tabs__pricing-label {
       font-size: 0.72rem;
@@ -2418,10 +2418,10 @@ const icons: Record<string, string> = {
       left: 0;
       width: 100%;
       height: var(--journey-progress, 0%);
-      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px;
       transition: height 120ms linear;
-      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 0 8px rgba(200, 16, 46, 0.4);
     }
     .cbs-journey__list {
       list-style: none;
@@ -2484,7 +2484,7 @@ const icons: Record<string, string> = {
     .cbs-journey__item:hover .cbs-journey__card,
     .cbs-journey__item.is-active .cbs-journey__card {
       border-color: var(--bbg-blue);
-      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 18px 38px -22px rgba(200, 16, 46, 0.4);
       transform: translateX(4px);
     }
     .cbs-journey__icon {
@@ -2539,7 +2539,7 @@ const icons: Record<string, string> = {
     .cbs-ai-bento__card:hover {
       transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 16px 32px -20px rgba(200, 16, 46, 0.4);
     }
     .cbs-ai-bento__card--small h3 {
       font-size: 1.05rem;
@@ -2570,8 +2570,8 @@ const icons: Record<string, string> = {
       inset: 0;
       z-index: -1;
       background:
-        radial-gradient(80% 60% at 100% 0%, rgba(38, 154, 218, 0.32) 0%, rgba(38, 154, 218, 0) 60%),
-        radial-gradient(60% 50% at 0% 100%, rgba(38, 154, 218, 0.18) 0%, rgba(38, 154, 218, 0) 60%);
+        radial-gradient(80% 60% at 100% 0%, rgba(200, 16, 46, 0.32) 0%, rgba(200, 16, 46, 0) 60%),
+        radial-gradient(60% 50% at 0% 100%, rgba(200, 16, 46, 0.18) 0%, rgba(200, 16, 46, 0) 60%);
     }
     .cbs-ai-bento__feature-body { display: flex; flex-direction: column; gap: var(--space-3); }
     .cbs-ai-bento__chip {
@@ -2582,7 +2582,7 @@ const icons: Record<string, string> = {
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #9DDBF5;
-      background: rgba(38, 154, 218, 0.18);
+      background: rgba(200, 16, 46, 0.18);
       padding: 0.4em 0.85em;
       border-radius: 999px;
       border: 1px solid rgba(155, 217, 245, 0.25);
@@ -2628,7 +2628,7 @@ const icons: Record<string, string> = {
       right: -28px;
       width: 200px;
       height: 200px;
-      color: rgba(38, 154, 218, 0.18);
+      color: rgba(200, 16, 46, 0.18);
       opacity: 0.7;
       pointer-events: none;
     }
@@ -2640,7 +2640,7 @@ const icons: Record<string, string> = {
       align-items: center;
       justify-content: center;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.18) 100%);
       color: var(--bbg-blue);
       margin-bottom: var(--space-3);
     }

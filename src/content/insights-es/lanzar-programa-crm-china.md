@@ -2,7 +2,7 @@
 title: "Buenas prácticas para lanzar un programa CRM en China"
 description: "Implantar un buen sistema de gestión de la relación con el cliente es decisivo para tener éxito en el mercado digital chino. Esta guía recoge las prácticas que mejor encajan con el comportamiento del consumidor y con el ecosistema digital local."
 pubDate: "2025-01-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["WeChat"]
 tags: ["CRM", "entrada en el mercado chino", "WeChat", "relación con el cliente", "eCommerce"]

@@ -2,7 +2,7 @@
 title: "Viajeros chinos de alta gama: preferencias y motivaciones hoy"
 description: "El viajero chino de alta gama es un segmento que está reordenando el mapa global del turismo. Llega de las grandes ciudades, tiene poder adquisitivo y busca experiencias premium que combinen exclusividad, exploración cultural y crecimiento personal."
 pubDate: "2024-07-08"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 tags: ["viajeros chinos de lujo", "preferencias de viaje", "consumidor de alto poder adquisitivo", "viaje experiencial", "sensibilidad cultural"]
 heroImage: "/Images/insights/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers.jpg"

@@ -2,7 +2,7 @@
 title: "Guide Weibo : maîtriser le social commerce en Chine"
 description: "600 millions d'utilisateurs mensuels, une audience 19-29 ans, des campagnes système préconfigurées. Ouverture de compte, contenu, KOL, intégration e-commerce : le guide complet de Weibo."
 pubDate: "2024-12-13"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Weibo"]
 tags: ["Weibo", "marketing Chine", "social commerce", "influence KOL", "e-commerce"]

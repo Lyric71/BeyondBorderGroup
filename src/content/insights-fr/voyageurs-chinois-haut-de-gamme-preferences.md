@@ -2,7 +2,7 @@
 title: "Voyageurs chinois haut de gamme : ce qu'ils recherchent vraiment"
 description: "90 % des grandes fortunes chinoises veulent intensifier leurs déplacements dans les trois ans. Issus de Pékin, Shanghai, Canton, ils cherchent l'exclusivité, l'immersion culturelle et du sens, pas une carte postale."
 pubDate: "2024-07-08"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 tags: ["voyageurs chinois haut de gamme", "préférences de voyage", "consommateurs aisés", "voyage expérientiel", "sensibilité culturelle"]
 heroImage: "/Images/insights/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers.jpg"

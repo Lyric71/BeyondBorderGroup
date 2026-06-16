@@ -2,7 +2,7 @@
 title: "Tmall und Amazon im Vergleich"
 description: "Tmall und Amazon sind zwei der grössten eCommerce-Plattformen der Welt, jede mit eigenen Stärken und eigenen Funktionen."
 pubDate: "2023-02-02"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Tmall"]
 tags: ["Tmall", "Amazon", "eCommerce", "China", "B2C"]

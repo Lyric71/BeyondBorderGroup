@@ -2,7 +2,7 @@
 title: "El precio de los KOL chinos: casos y aprendizajes de marketing"
 description: "Este artículo repasa las tarifas de KOL en plataformas chinas como Douyin y Xiaohongshu, con desgloses de coste y casos de campañas que ayudaron a marcas a mover ventas y engagement."
 pubDate: "2024-11-29"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin"]
 tags: ["marketing con KOL", "Douyin", "tarifas de influencers", "eCommerce chino", "campañas de livestream"]

@@ -31,7 +31,7 @@ La calefacción y el agua caliente son una compra muy meditada, atada a la insta
 
 ## Nuestro enfoque
 
-Beyond Border Group recibió el encargo de montar y operar de cabo a rabo las tiendas de Viessmann en Tmall y JD. Cubrimos:
+TheChinaPath recibió el encargo de montar y operar de cabo a rabo las tiendas de Viessmann en Tmall y JD. Cubrimos:
 
 - Desarrollo de contenido, del diseño de la tienda a fichas de producto pensadas para cómo compra el chino
 - Ventas y operación, manteniendo las tiendas activas en los picos de campaña y en el día a día

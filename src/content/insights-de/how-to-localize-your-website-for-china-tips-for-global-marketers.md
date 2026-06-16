@@ -2,7 +2,7 @@
 title: "Website für China lokalisieren: Tipps für globale Marketing-Teams"
 description: "Eine Website für China zu lokalisieren ist mehr als Übersetzung. Es geht um Regulierung, kulturelle Anpassung und technische Anpassungen, damit Sie im chinesischen Digital-Markt bestehen."
 pubDate: "2025-01-21"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["Website-Lokalisierung", "China-Markteintritt", "Regulatorische Compliance", "eCommerce", "Digitale Strategie"]
 heroImage: "/Images/insights/how-to-localize-your-website-for-china-tips-for-global-marketers.jpg"

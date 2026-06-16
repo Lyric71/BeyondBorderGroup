@@ -2,7 +2,7 @@
 title: "Emprendedoras en el eCommerce chino: tendencias 2024"
 description: "Las mujeres emprendedoras avanzan con fuerza en el eCommerce chino. Plataformas como Taobao están abriendo oportunidades de negocio y empujando el crecimiento económico mundial."
 pubDate: "2024-06-14"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Taobao"]
 tags: ["mujeres emprendedoras", "eCommerce en China", "Taobao", "plataformas digitales", "igualdad de género"]

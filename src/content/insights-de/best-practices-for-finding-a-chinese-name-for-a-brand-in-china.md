@@ -2,7 +2,7 @@
 title: "Bewährte Praxis: Einen chinesischen Markennamen finden"
 description: "Einen chinesischen Markennamen zu wählen, verlangt die Balance aus Klangähnlichkeit, kultureller Bedeutung und Markenwerten. Der Leitfaden zeigt Strategien für die erfolgreiche Lokalisierung im chinesischen Markt."
 pubDate: "2025-01-14"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["Chinesische Namensfindung", "Markenlokalisierung", "eCommerce China", "Kulturelle Anpassung", "Markenschutz"]
 heroImage: "/Images/insights/best-practices-for-finding-a-chinese-name-for-a-brand-in-china.jpg"

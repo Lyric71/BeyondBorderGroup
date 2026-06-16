@@ -2,7 +2,7 @@
 title: "Boost Your Marketing with the Best Chinese Search Engines in 2024"
 description: "China's internet ecosystem features distinct search engines that differ from Western platforms. Understanding Baidu, Sogou, Shenma, and other Chinese search engines is crucial for effective marketing in China's market."
 pubDate: "2024-09-02"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 tags: ["Chinese search engines", "Baidu", "SEO China", "digital marketing", "localization"]
 heroImage: "/Images/insights/boost-your-marketing-with-the-best-chinese-search-engines-in-2024.png"

@@ -2,7 +2,7 @@
 title: "Wie das 11.11-Shopping-Festival den eCommerce in China prägt"
 description: "Das 11.11-Shopping-Festival ist zum grössten Online-Einkaufstag der Welt geworden. Marken nutzen Social Media, Influencer und strategische Lokalisierung, um Wirkung zu erzielen."
 pubDate: "2024-10-11"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall"]
 tags: ["11.11-Festival", "eCommerce China", "KOL-Marketing", "Tmall", "Social Commerce"]

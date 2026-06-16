@@ -2,7 +2,7 @@
 title: "Tech, beauté, luxe : ce que le 6.18 dit du e-commerce chinois"
 description: "Le festival 6.18 a tranché. Tech, beauté et luxe ont signé des records sur Taobao et Tmall, portés par un marketing offensif et un commerce sous tension."
 pubDate: "2024-06-14"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "JD"]
 tags: ["e-commerce Chine", "festival 6.18", "marques de luxe", "produits de beauté", "ventes tech"]

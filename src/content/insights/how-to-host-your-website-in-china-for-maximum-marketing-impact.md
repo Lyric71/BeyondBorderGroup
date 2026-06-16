@@ -2,7 +2,7 @@
 title: "How to Host Your Website in China for Maximum Marketing Impact"
 description: "Hosting a website in China requires careful planning, compliance with local regulations, and understanding the digital ecosystem. This guide walks through essential steps including domain registration, securing an ICP license, and optimizing for local search engines."
 pubDate: "2025-01-24"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Compliance & Setup"
 tags: ["website hosting", "China", "ICP license", "domain registration", "digital compliance"]
 heroImage: "/Images/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact.jpg"

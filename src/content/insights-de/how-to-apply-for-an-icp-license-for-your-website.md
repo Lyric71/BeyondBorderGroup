@@ -2,7 +2,7 @@
 title: "ICP-Lizenz für Ihre Website in China beantragen"
 description: "Eine ICP-Lizenz ist die Pflicht-Erlaubnis des chinesischen Ministeriums für Industrie und Informationstechnologie, die einer Website den legalen Betrieb im Land erlaubt. Der Leitfaden erklärt, wer sie braucht, wie der Antrag läuft und welche geschäftlichen Vorteile sie bringt."
 pubDate: "2025-02-05"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Compliance & Setup"
 tags: ["ICP-Lizenz", "China-Regulierung", "eCommerce", "Website-Hosting", "Rechtliches"]
 heroImage: "/Images/insights/how-to-apply-for-an-icp-license-for-your-website.png"

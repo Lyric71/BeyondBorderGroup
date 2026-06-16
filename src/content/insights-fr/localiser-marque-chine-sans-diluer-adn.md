@@ -143,4 +143,4 @@ Celles qui tiennent la ligne s'appuient souvent sur trois points :
 - Des territoires créatifs clairs, ambitieux, expérimentés pour la Chine
 - Une cartographie des parcours plateformes, pour que le contenu suive la manière dont les gens passent de la découverte à l'achat
 
-C'est là que Beyond Border Group intervient. Connecter un noyau protégé à une expression chinoise capable de s'étirer sans se perdre.
+C'est là que TheChinaPath intervient. Connecter un noyau protégé à une expression chinoise capable de s'étirer sans se perdre.

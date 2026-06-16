@@ -32,7 +32,7 @@ Heating and boiling is a considered purchase, closely tied to installation, serv
 
 ## Our approach
 
-Beyond Border Group was commissioned to build and run Viessmann's Tmall and JD storefronts end to end. We covered:
+TheChinaPath was commissioned to build and run Viessmann's Tmall and JD storefronts end to end. We covered:
 
 - Content development, from store design to product detail pages built for Chinese buying behaviour
 - Sales and operations, keeping the stores live through peak moments and daily trade

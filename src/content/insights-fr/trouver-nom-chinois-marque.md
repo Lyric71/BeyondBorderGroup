@@ -2,7 +2,7 @@
 title: "Trouver un nom chinois pour une marque : la méthode qui fonctionne"
 description: "Le choix d'un nom chinois exige de tenir trois fils en parallèle : la proximité sonore, la charge culturelle, les valeurs de l'enseigne. Tour d'horizon des approches qui produisent des résultats sur le marché chinois."
 pubDate: "2025-01-14"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["nom chinois", "localisation de marque", "e-commerce en Chine", "adaptation culturelle", "protection de marque"]
 heroImage: "/Images/insights/best-practices-for-finding-a-chinese-name-for-a-brand-in-china.jpg"

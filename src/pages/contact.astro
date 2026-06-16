@@ -71,7 +71,7 @@ const profileOptions = [
 ---
 
 <Layout
-  title="Talk to our China teams in Shanghai, Hong Kong and Paris | Beyond Border Group"
+  title="Talk to our China teams in Shanghai, Hong Kong and Paris | TheChinaPath"
   description="Tell us about your project in China. Our teams in Shanghai, Hong Kong and Paris reply within one business day and come back with concrete starting points."
 >
   <section class="contact">
@@ -247,8 +247,8 @@ const profileOptions = [
         <div class="contact__info">
           <div class="contact-block">
             <span class="eyebrow eyebrow--on-dark">Write to us</span>
-            <a class="contact-block__link" href="mailto:hello@beyondbordergroup.com">
-              hello@beyondbordergroup.com
+            <a class="contact-block__link" href="mailto:hello@thechinapath.com">
+              hello@thechinapath.com
             </a>
           </div>
 
@@ -362,7 +362,7 @@ const profileOptions = [
           body: JSON.stringify(payload),
         });
         const body = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(body.error || 'The message did not go through. Please try again in a moment. If it keeps failing, you can write to us directly at hello@beyondbordergroup.com.');
+        if (!res.ok) throw new Error(body.error || 'The message did not go through. Please try again in a moment. If it keeps failing, you can write to us directly at hello@thechinapath.com.');
 
         form.reset();
         rollCaptcha();
@@ -371,7 +371,7 @@ const profileOptions = [
         window.location.assign('/thank-you');
         return;
       } catch (err) {
-        status.textContent = err && err.message ? err.message : 'The message did not go through. Please try again in a moment. If it keeps failing, you can write to us directly at hello@beyondbordergroup.com.';
+        status.textContent = err && err.message ? err.message : 'The message did not go through. Please try again in a moment. If it keeps failing, you can write to us directly at hello@thechinapath.com.';
         status.classList.add('form__status--error');
       } finally {
         submit.disabled = false;

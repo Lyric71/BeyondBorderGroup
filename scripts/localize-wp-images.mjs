@@ -8,7 +8,7 @@
  * WordPress install, and so it works behind the Great Firewall.
  *
  * Mapping:
- *   https://beyondbordergroup.com/wp-content/uploads/<Y>/<M>/<file>
+ *   https://www.thechinapath.com/wp-content/uploads/<Y>/<M>/<file>
  *   -> /Images/insights/<Y>/<M>/<file>
  */
 
@@ -66,7 +66,7 @@ async function download(url, dest, { tries = 3 } = {}) {
 	for (let attempt = 1; attempt <= tries; attempt++) {
 		try {
 			const res = await fetch(url, {
-				headers: { 'User-Agent': 'BBG-image-localizer/1.0' },
+				headers: { 'User-Agent': 'TheChinaPath-image-localizer/1.0' },
 			});
 			if (!res.ok) {
 				throw new Error(`HTTP ${res.status}`);

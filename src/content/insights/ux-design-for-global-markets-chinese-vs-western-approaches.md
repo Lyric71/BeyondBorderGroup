@@ -2,7 +2,7 @@
 title: "UX Design for Global Markets: Chinese vs. Western Approaches"
 description: "Chinese and Western websites differ significantly in UX design due to cultural, linguistic, and technological factors. Understanding these distinctions is essential for companies expanding globally or entering the Chinese ecommerce market."
 pubDate: "2025-01-17"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["UX Design", "Chinese Markets", "Web Design", "Cultural Differences", "Ecommerce"]
 heroImage: "/Images/insights/ux-design-for-global-markets-chinese-vs-western-approaches.jpg"

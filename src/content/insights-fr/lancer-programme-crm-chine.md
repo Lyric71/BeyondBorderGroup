@@ -2,7 +2,7 @@
 title: "Lancer un programme CRM en Chine : la méthode qui marche"
 description: "L'installation d'un dispositif solide de gestion de la relation client conditionne la réussite sur le marché digital chinois. Tour d'horizon des bonnes pratiques d'un CRM calibré pour les comportements locaux et l'appareil numérique chinois."
 pubDate: "2025-01-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["WeChat"]
 tags: ["CRM", "entrée de marché Chine", "WeChat", "gestion de la relation client", "e-commerce"]

@@ -2,7 +2,7 @@
 title: "Unabhängige chinesische Designer 2024: Trends und Geschäftsstrategien"
 description: "Unabhängige chinesische Designer formen die Mode neu, durch kulturelle Verankerung, Nachhaltigkeit und digitale Innovation. Wie diese lokal verwurzelten Marken Anerkennung im In- und Ausland gewinnen."
 pubDate: "2024-06-25"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["Chinesische Designer", "Modetrends", "Nachhaltigkeit", "Digitale Innovation", "eCommerce China"]
 heroImage: "/Images/insights/independent-chinese-designers-2024-trends-marketing-and-commerce-insights.jpeg"

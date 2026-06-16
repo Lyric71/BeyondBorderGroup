@@ -2,7 +2,7 @@
 title: "Wie KI den eCommerce in China beschleunigt"
 description: "Chinas eCommerce verändert sich durch KI grundlegend. Die KI-Kernindustrie wird von 150 Milliarden Yuan im Jahr 2020 auf rund 1 Billion Yuan bis 2030 wachsen. Neue Chancen, höhere Effizienz."
 pubDate: "2024-05-16"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 tags: ["KI", "eCommerce", "China", "Personalisierung", "Digitale Menschen"]
 heroImage: "/Images/insights/ai-revolutionizing-ecommerce-in-china.png"

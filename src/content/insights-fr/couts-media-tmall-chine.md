@@ -2,7 +2,7 @@
 title: "Coûts média sur Tmall : calibrer son investissement en Chine"
 description: "500 millions d'utilisateurs mensuels, un ticket d'entrée à 100 000 yuans, des CPC qui montent. Grille de lecture pour arbitrer un budget Tmall sans éroder sa marge."
 pubDate: "2024-10-30"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall"]
 tags: ["Tmall", "e-commerce", "marketing Chine", "coûts publicitaires", "stratégie de marque"]

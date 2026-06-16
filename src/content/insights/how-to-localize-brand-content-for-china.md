@@ -2,7 +2,7 @@
 title: "How to Localize Brand Content for China"
 description: "Expanding into the Chinese market requires more than translation. Localization involves deep cultural adaptation, strategic use of local digital platforms, and alignment with Chinese consumer preferences and values."
 pubDate: "2025-02-11"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["China marketing", "content localization", "cultural adaptation", "digital platforms", "e-commerce"]
 heroImage: "/Images/insights/how-to-localize-brand-content-for-china.jpg"

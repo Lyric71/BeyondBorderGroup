@@ -2,7 +2,7 @@
 title: "Marketing mit den besten chinesischen Suchmaschinen 2024"
 description: "Chinas Internet hat eigene Suchmaschinen, die sich von den westlichen unterscheiden. Wer Baidu, Sogou, Shenma und Co. versteht, kann im chinesischen Markt wirksam vermarkten."
 pubDate: "2024-09-02"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 tags: ["Chinesische Suchmaschinen", "Baidu", "China-SEO", "Digital Marketing", "Lokalisierung"]
 heroImage: "/Images/insights/boost-your-marketing-with-the-best-chinese-search-engines-in-2024.png"

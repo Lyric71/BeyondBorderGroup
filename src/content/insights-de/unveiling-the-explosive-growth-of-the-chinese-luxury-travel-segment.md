@@ -2,7 +2,7 @@
 title: "Explosives Wachstum im chinesischen Luxusreise-Segment | Einblicke 2024"
 description: "Chinas Luxusreise-Markt ist im letzten Jahrzehnt stark gewachsen. Mehr Wohlstand, mehr Kaufkraft, mehr Lust auf authentische, kulturell tief gehende Erlebnisse statt blossen Wohlstandsdemonstrationen treiben das Segment."
 pubDate: "2024-07-08"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 tags: ["Chinesischer Luxus-Tourismus", "Konsumvorlieben", "Erlebnisreisen", "Wellness-Tourismus", "Digitaler Einfluss"]
 heroImage: "/Images/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment.jpg"

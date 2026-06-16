@@ -87,7 +87,7 @@ A few concrete moves:
 
 ## Turning JD Mall into a Brand Engine, Not a Side Channel
 
-At Beyond Border Group, we help global brands translate JD's ecosystem into clear decisions mapping where JD Mall fits in your broader China portfolio, which cities and formats to prioritise, and how to structure pilots instead of one-size-fits-all rollouts.
+At TheChinaPath, we help global brands translate JD's ecosystem into clear decisions mapping where JD Mall fits in your broader China portfolio, which cities and formats to prioritise, and how to structure pilots instead of one-size-fits-all rollouts.
 
 We work with brands to design in-store experiences, local community hooks, and staff playbooks that work on the ground, from demo flows and class formats to Xiaohongshu content angles that feel native to Chinese consumers, not imported.
 

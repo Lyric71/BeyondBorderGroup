@@ -2,7 +2,7 @@
 title: "Luxe en Chine : les tendances sociales qui font la différence"
 description: "Le marché chinois du luxe se transforme sous l'effet conjugué des avancées technologiques et des mutations démographiques. Trois défis majeurs s'imposent désormais aux maisons : atteindre leurs clients, bâtir la fidélité, capitaliser sur la donnée pour croître."
 pubDate: "2024-06-07"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["WeChat"]
 tags: ["marques de luxe", "marketing social media", "marché chinois", "KOLs", "stratégie omnicanale"]

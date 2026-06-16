@@ -2,7 +2,7 @@
 title: "Consumo chino: tendencias en tech, belleza y lujo según las ventas del 618"
 description: "El festival 618 dejó al descubierto cambios importantes en las preferencias del consumidor chino. Tech, belleza y lujo firmaron cifras récord con un marketing afinado y estrategias de comercio muy dinámicas."
 pubDate: "2024-06-14"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "JD"]
 tags: ["eCommerce en China", "Festival 618", "marcas de lujo", "productos de belleza", "ventas tech"]

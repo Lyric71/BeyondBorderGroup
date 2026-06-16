@@ -2,7 +2,7 @@
 title: "Marketing-Strategien für KI-integrierte PCs in China"
 description: "KI-Integration verwandelt PCs in intelligente Assistenten. Das verändert, wie diese Geräte in China vermarktet werden, mit Schwerpunkten auf Aufklärung, Bezahlbarkeit und Ökosystem-Integration."
 pubDate: "2024-06-07"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 tags: ["KI-PC", "China-Markt", "Marketing-Strategie", "Konsumentenaufklärung", "Produktpositionierung"]
 heroImage: "/Images/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china.jpg"

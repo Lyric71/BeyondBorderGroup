@@ -3,7 +3,7 @@ title: "Chinas KI-getriebener Handel: Trends und Innovationen"
 description: "China hat KI rasch in Marketing und Handel integriert. Plattformen wie Alibaba und JD.com gestalten Kundenerlebnisse, eCommerce und Handelsbetrieb landesweit neu."
 pubDate: "2025-01-10"
 updatedDate: "2026-05-15"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 tags: ["KI-Marketing", "eCommerce", "China", "Generative KI", "Social Commerce"]
 heroImage: "/Images/insights/chinas-ai-powered-commerce-trends-and-innovations-to-watch.png"

@@ -2,7 +2,7 @@
 title: "Optimizing Your Brand: Choosing the Right Influencer"
 description: "Influencer marketing has emerged as a powerful strategy for brands seeking to expand their reach. Success depends on selecting the right influencers who align with your brand values and target audience."
 pubDate: "2023-11-17"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 tags: ["influencer marketing", "social media", "brand strategy", "KOL", "engagement"]
 heroImage: "/Images/insights/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china.jpg"

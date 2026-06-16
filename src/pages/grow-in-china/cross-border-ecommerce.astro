@@ -56,7 +56,7 @@ const models = [
       { label: 'Store license', value: 'Ours' },
       { label: 'Customer data', value: 'Ours' },
       { label: 'Content, media, contracts', value: 'Ours' },
-      { label: 'Media spend', value: 'Brand budget + BBG co-invest' },
+      { label: 'Media spend', value: 'Brand budget + TheChinaPath co-invest' },
       { label: 'Revenue', value: 'Wholesale invoice, recognised as B2B' },
     ],
     yourSide: [
@@ -78,13 +78,13 @@ const models = [
 ];
 
 const compareRows = [
-  { label: 'Who owns the inventory', tp: 'You', dist: 'BBG' },
-  { label: 'Who owns the store and the data', tp: 'You', dist: 'BBG' },
+  { label: 'Who owns the inventory', tp: 'You', dist: 'TheChinaPath' },
+  { label: 'Who owns the store and the data', tp: 'You', dist: 'TheChinaPath' },
   { label: 'Working capital you put in', tp: 'High', dist: 'None' },
   { label: 'Revenue you book', tp: 'Retail GMV minus fees', dist: 'Wholesale price' },
   { label: 'Margin upside', tp: 'Full retail margin', dist: 'Capped at wholesale' },
   { label: 'Risk you carry', tp: 'Stock and demand', dist: 'None on inventory' },
-  { label: 'Media and promotion costs', tp: '100% on you', dist: 'Brand budget + BBG co-invest' },
+  { label: 'Media and promotion costs', tp: '100% on you', dist: 'Brand budget + TheChinaPath co-invest' },
   { label: 'Brand equity in China', tp: 'Yours, fully', dist: 'Yours, built through us' },
   { label: 'Best for', tp: 'Brands building long-term China P&L', dist: 'Brands already known in China' },
 ];
@@ -132,9 +132,9 @@ const costLedger = {
     brand: {
       tag: 'Brand budget',
       headlineText: 'Co-funded',
-      headlineUnit: 'brand + BBG',
+      headlineUnit: 'brand + TheChinaPath',
       pill: 'Heavy lift on 618 + 11.11',
-      body: 'The brand provides a marketing budget for the year, and we deploy it against a co-agreed plan. BBG often co-invests from retail margin on top, particularly on always-on platform media and promotional mechanics for 618 and 11.11.',
+      body: 'The brand provides a marketing budget for the year, and we deploy it against a co-agreed plan. TheChinaPath often co-invests from retail margin on top, particularly on always-on platform media and promotional mechanics for 618 and 11.11.',
       footer: 'Co-invest sits inside the wholesale margin we earn. You see the plan, you sign the plan, and we report against it line by line.',
     },
   },
@@ -239,7 +239,7 @@ const contextCards = [
   },
   {
     image: '/Images/enter-china/team.png',
-    alt: 'The Beyond Border Group eCommerce operations team working in an open office',
+    alt: 'The TheChinaPath eCommerce operations team working in an open office',
     kicker: 'Scars from the platform',
     title: 'Operators first, strategists second',
     body: 'Our senior team ran Tmall and JD stores at Publicis Commerce China. They have lost a Double 11 and won the next one.',
@@ -290,7 +290,7 @@ const icons: Record<string, string> = {
 ---
 
 <Layout
-  title="Cross-Border eCommerce Agency in China | BBG"
+  title="Cross-Border eCommerce Agency in China | TheChinaPath"
   description="We run Tmall Global, JD Worldwide and Douyin EC Global stores for foreign brands. Daily ops, content, paid media, livestream. One senior team."
 >
   <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
@@ -1112,8 +1112,8 @@ const icons: Record<string, string> = {
     }
     .cbs-progress__bar {
       height: 100%; width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
-      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
 
@@ -1146,8 +1146,8 @@ const icons: Record<string, string> = {
           rgba(8, 18, 28, 0.72) 42%,
           rgba(8, 18, 28, 0.32) 100%),
         radial-gradient(120% 80% at 0% 100%,
-          rgba(38, 154, 218, 0.28) 0%,
-          rgba(38, 154, 218, 0) 60%);
+          rgba(200, 16, 46, 0.28) 0%,
+          rgba(200, 16, 46, 0) 60%);
     }
     .cbs-hero__grain {
       position: absolute; inset: 0; z-index: -1;
@@ -1194,7 +1194,7 @@ const icons: Record<string, string> = {
       content: ""; position: absolute;
       left: 0; right: 0; bottom: 0.04em;
       height: 0.18em;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px;
       transform-origin: left center;
       animation: cbs-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
@@ -1392,7 +1392,7 @@ const icons: Record<string, string> = {
       border-right: 1px solid var(--bbg-border);
     }
     .cbs-tabs__tab:last-child { border-right: none; }
-    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(200, 16, 46, 0.04); }
     .cbs-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
     .cbs-tabs__tab-label {
       font-size: 1.0625rem; font-weight: 700;
@@ -1417,7 +1417,7 @@ const icons: Record<string, string> = {
       position: absolute;
       bottom: -1px; left: 0;
       width: 25%; height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px 2px 0 0;
       transform: translateX(0);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1638,7 +1638,7 @@ const icons: Record<string, string> = {
       vertical-align: top;
     }
     .cbs-compare__cell--tp {
-      background: rgba(38, 154, 218, 0.04);
+      background: rgba(200, 16, 46, 0.04);
     }
     .cbs-compare__cell--dist {
       background: var(--bbg-white);
@@ -1673,8 +1673,8 @@ const icons: Record<string, string> = {
       position: absolute;
       inset: 0;
       background-image:
-        linear-gradient(rgba(38, 154, 218, 0.07) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(38, 154, 218, 0.07) 1px, transparent 1px);
+        linear-gradient(rgba(200, 16, 46, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 16, 46, 0.07) 1px, transparent 1px);
       background-size: 48px 48px;
       background-position: center;
       mask-image: radial-gradient(ellipse 70% 60% at center, #000 25%, transparent 75%);
@@ -1689,7 +1689,7 @@ const icons: Record<string, string> = {
     }
     .cbs-cost-section__glow--a {
       top: -120px; left: -100px;
-      background: radial-gradient(circle, rgba(38, 154, 218, 0.22) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(200, 16, 46, 0.22) 0%, transparent 70%);
     }
     .cbs-cost-section__glow--b {
       bottom: -150px; right: -120px;
@@ -1712,11 +1712,11 @@ const icons: Record<string, string> = {
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(38, 154, 218, 0.16);
+      border: 1px solid rgba(200, 16, 46, 0.16);
       border-radius: 999px;
       box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.9) inset,
-        0 18px 40px -28px rgba(38, 154, 218, 0.35);
+        0 18px 40px -28px rgba(200, 16, 46, 0.35);
     }
     .cbs-cost__switcher-pill {
       position: absolute;
@@ -1724,9 +1724,9 @@ const icons: Record<string, string> = {
       width: calc(50% - 6px);
       height: calc(100% - 12px);
       border-radius: 999px;
-      background: linear-gradient(135deg, var(--bbg-blue) 0%, #1E7DB0 100%);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, #A50C26 100%);
       box-shadow:
-        0 6px 18px -8px rgba(38, 154, 218, 0.6),
+        0 6px 18px -8px rgba(200, 16, 46, 0.6),
         0 1px 0 rgba(255, 255, 255, 0.3) inset;
       transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
       z-index: 0;
@@ -1790,14 +1790,14 @@ const icons: Record<string, string> = {
       padding: 28px 28px 24px;
       background:
         linear-gradient(180deg, #ffffff 0%, #fafdff 100%);
-      border: 1px solid rgba(38, 154, 218, 0.18);
+      border: 1px solid rgba(200, 16, 46, 0.18);
       border-radius: 22px;
       overflow: hidden;
       isolation: isolate;
       box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.9) inset,
         0 24px 48px -34px rgba(15, 50, 85, 0.18),
-        0 6px 16px -10px rgba(38, 154, 218, 0.10);
+        0 6px 16px -10px rgba(200, 16, 46, 0.10);
       transform-style: preserve-3d;
       transform:
         perspective(1200px)
@@ -1814,7 +1814,7 @@ const icons: Record<string, string> = {
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 50%, var(--bbg-blue) 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 50%, var(--bbg-blue) 100%);
       background-size: 200% 100%;
       animation: cbs-stripe 6s linear infinite;
       transform-origin: left;
@@ -1827,11 +1827,11 @@ const icons: Record<string, string> = {
     }
     .cbs-ledger:hover {
       --lift: -6px;
-      border-color: rgba(38, 154, 218, 0.45);
+      border-color: rgba(200, 16, 46, 0.45);
       box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.9) inset,
         0 40px 64px -36px rgba(15, 50, 85, 0.28),
-        0 10px 24px -12px rgba(38, 154, 218, 0.28);
+        0 10px 24px -12px rgba(200, 16, 46, 0.28);
     }
     .cbs-ledger:hover::before {
       transform: scaleX(1);
@@ -1843,7 +1843,7 @@ const icons: Record<string, string> = {
       background:
         radial-gradient(
           240px circle at var(--mx, 50%) var(--my, 0%),
-          rgba(38, 154, 218, 0.12) 0%,
+          rgba(200, 16, 46, 0.12) 0%,
           transparent 60%
         );
       opacity: 0;
@@ -1860,8 +1860,8 @@ const icons: Record<string, string> = {
       border-radius: 50%;
       background: var(--bbg-blue);
       box-shadow:
-        0 0 0 4px rgba(38, 154, 218, 0.14),
-        0 0 14px rgba(38, 154, 218, 0.4);
+        0 0 0 4px rgba(200, 16, 46, 0.14),
+        0 0 14px rgba(200, 16, 46, 0.4);
     }
     .cbs-ledger > * { position: relative; z-index: 1; }
 
@@ -1878,9 +1878,9 @@ const icons: Record<string, string> = {
       align-items: center; justify-content: center;
       border-radius: 14px;
       background:
-        linear-gradient(135deg, rgba(232, 244, 252, 0.95) 0%, rgba(38, 154, 218, 0.18) 100%);
+        linear-gradient(135deg, rgba(232, 244, 252, 0.95) 0%, rgba(200, 16, 46, 0.18) 100%);
       color: var(--bbg-blue);
-      box-shadow: 0 4px 12px -6px rgba(38, 154, 218, 0.45);
+      box-shadow: 0 4px 12px -6px rgba(200, 16, 46, 0.45);
     }
     .cbs-ledger__icon svg { width: 20px; height: 20px; }
     .cbs-ledger__tag {
@@ -1892,7 +1892,7 @@ const icons: Record<string, string> = {
       text-transform: uppercase;
       color: var(--bbg-blue);
       background: rgba(232, 244, 252, 0.85);
-      border: 1px solid rgba(38, 154, 218, 0.22);
+      border: 1px solid rgba(200, 16, 46, 0.22);
       border-radius: 999px;
     }
     .cbs-ledger__tag--universal {
@@ -1939,7 +1939,7 @@ const icons: Record<string, string> = {
       text-transform: uppercase;
       margin-right: 8px;
       padding: 4px 8px;
-      background: rgba(38, 154, 218, 0.10);
+      background: rgba(200, 16, 46, 0.10);
       border-radius: 6px;
       align-self: center;
       transform: translateY(-4px);
@@ -1979,17 +1979,17 @@ const icons: Record<string, string> = {
       font-weight: 600;
       color: var(--bbg-ink);
       background: linear-gradient(180deg, #fff 0%, #f1f7fc 100%);
-      border: 1px solid rgba(38, 154, 218, 0.22);
+      border: 1px solid rgba(200, 16, 46, 0.22);
       border-radius: 8px;
       margin-top: 6px;
-      box-shadow: 0 2px 6px -4px rgba(38, 154, 218, 0.35);
+      box-shadow: 0 2px 6px -4px rgba(200, 16, 46, 0.35);
     }
     .cbs-ledger__pill::before {
       content: "";
       width: 6px; height: 6px;
       border-radius: 50%;
       background: var(--bbg-blue);
-      box-shadow: 0 0 8px rgba(38, 154, 218, 0.6);
+      box-shadow: 0 0 8px rgba(200, 16, 46, 0.6);
     }
     .cbs-ledger__body {
       font-size: 0.92rem;
@@ -2004,7 +2004,7 @@ const icons: Record<string, string> = {
       display: flex; flex-direction: column;
       gap: 12px;
       padding-top: 14px;
-      border-top: 1px dashed rgba(38, 154, 218, 0.22);
+      border-top: 1px dashed rgba(200, 16, 46, 0.22);
     }
     .cbs-bucket {
       display: flex; flex-direction: column;
@@ -2040,7 +2040,7 @@ const icons: Record<string, string> = {
       display: block;
       position: relative;
       height: 4px;
-      background: rgba(38, 154, 218, 0.12);
+      background: rgba(200, 16, 46, 0.12);
       border-radius: 4px;
       overflow: hidden;
       margin-top: 4px;
@@ -2050,7 +2050,7 @@ const icons: Record<string, string> = {
       position: absolute;
       inset: 0;
       width: 0;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 4px;
       transition: width 1100ms cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -2198,7 +2198,7 @@ const icons: Record<string, string> = {
       padding: 32px 36px 28px;
       border-radius: 24px;
       background:
-        radial-gradient(circle at 0% 0%, rgba(38, 154, 218, 0.22) 0%, transparent 55%),
+        radial-gradient(circle at 0% 0%, rgba(200, 16, 46, 0.22) 0%, transparent 55%),
         radial-gradient(circle at 100% 100%, rgba(91, 194, 240, 0.18) 0%, transparent 55%),
         linear-gradient(135deg, #0d2a3e 0%, #143955 60%, #1c4f74 100%);
       color: #fff;
@@ -2340,10 +2340,10 @@ const icons: Record<string, string> = {
       position: absolute;
       top: 0; left: 0; width: 100%;
       height: var(--journey-progress, 0%);
-      background: linear-gradient(180deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px;
       transition: height 120ms linear;
-      box-shadow: 0 0 8px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 0 8px rgba(200, 16, 46, 0.4);
     }
     .cbs-journey__list {
       list-style: none; padding: 0; margin: 0;
@@ -2401,7 +2401,7 @@ const icons: Record<string, string> = {
     .cbs-journey__item:hover .cbs-journey__card,
     .cbs-journey__item.is-active .cbs-journey__card {
       border-color: var(--bbg-blue);
-      box-shadow: 0 18px 38px -22px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 18px 38px -22px rgba(200, 16, 46, 0.4);
       transform: translateX(4px);
     }
     .cbs-journey__icon {
@@ -2542,7 +2542,7 @@ const icons: Record<string, string> = {
     .cbs-sister__pack:hover {
       transform: translateY(-3px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 14px 28px -18px rgba(38, 154, 218, 0.35);
+      box-shadow: 0 14px 28px -18px rgba(200, 16, 46, 0.35);
     }
     .cbs-sister__pack-icon {
       display: inline-flex;
@@ -2584,11 +2584,11 @@ const icons: Record<string, string> = {
     }
     .cbs-faq__item:hover {
       transform: translateX(2px);
-      border-color: rgba(38, 154, 218, 0.4);
+      border-color: rgba(200, 16, 46, 0.4);
     }
     .cbs-faq__item[open] {
       border-color: var(--bbg-blue);
-      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 8px 22px -14px rgba(200, 16, 46, 0.4);
     }
     .cbs-faq__q {
       cursor: pointer;

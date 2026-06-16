@@ -15,7 +15,7 @@ import { join } from 'node:path';
 
 const SOURCE_DIR = 'src/content/insights';
 const TARGET = 'public/llms-full.txt';
-const SITE = 'https://www.beyondbordergroup.com';
+const SITE = 'https://www.thechinapath.com';
 
 function parseFrontmatter(text) {
   const m = text.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
@@ -59,9 +59,9 @@ function main() {
     entries.push(buildEntry(slug, frontmatter, body));
   }
   const head = [
-    '# Beyond Border Group — Insights (full text)',
+    '# TheChinaPath — Insights (full text)',
     '',
-    `> Full-text dump of every published insight on ${SITE}/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the Beyond Border Group team. Last regenerated: ${new Date().toISOString().slice(0, 10)}.`,
+    `> Full-text dump of every published insight on ${SITE}/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: ${new Date().toISOString().slice(0, 10)}.`,
     '',
     '---',
     '',

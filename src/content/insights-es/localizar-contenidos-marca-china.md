@@ -2,7 +2,7 @@
 title: "Cómo localizar los contenidos de marca para China"
 description: "Entrar en el mercado chino exige mucho más que traducir. La localización implica adaptación cultural a fondo, uso estratégico de las plataformas digitales locales y alineación con los códigos del consumidor chino."
 pubDate: "2025-02-11"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["marketing en China", "localización de contenidos", "adaptación cultural", "plataformas digitales", "eCommerce"]
 heroImage: "/Images/insights/how-to-localize-brand-content-for-china.jpg"

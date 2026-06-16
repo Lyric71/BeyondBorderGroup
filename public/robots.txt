@@ -48,4 +48,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://www.beyondbordergroup.com/sitemap-index.xml
+Sitemap: https://www.thechinapath.com/sitemap-index.xml

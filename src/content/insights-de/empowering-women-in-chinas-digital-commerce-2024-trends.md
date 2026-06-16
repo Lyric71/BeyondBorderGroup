@@ -2,7 +2,7 @@
 title: "Unternehmerinnen im chinesischen Digital-Handel: Trends 2024"
 description: "Unternehmerinnen machen in Chinas eCommerce grosse Schritte. Plattformen wie Taobao schaffen Chancen und treiben weltweit Wirtschaftswachstum."
 pubDate: "2024-06-14"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Taobao"]
 tags: ["Unternehmerinnen", "eCommerce China", "Taobao", "Digitale Plattformen", "Geschlechtergleichheit"]
@@ -12,11 +12,11 @@ heroImageAlt: "Junge asiatische Unternehmerin im Klein- und Mittelstand bei der 
 
 ## Der Aufstieg der Unternehmerinnen im chinesischen Digital-Handel
 
-Der Aufstieg des [digitalen Handels in China](https://beyondbordergroup.com/ecommerce-services-in-china/) ist für Unternehmerinnen ein Wendepunkt, besonders 2024. Mit zugänglichen Online-Plattformen und sich weiterentwickelnden eCommerce-Strategien finden Frauen neue Wege, Geschäfte zu starten und auszubauen. Diese Verschiebung verändert Lebenswege und treibt weltweit das Wirtschaftswachstum.
+Der Aufstieg des [digitalen Handels in China](https://www.thechinapath.com/ecommerce-services-in-china/) ist für Unternehmerinnen ein Wendepunkt, besonders 2024. Mit zugänglichen Online-Plattformen und sich weiterentwickelnden eCommerce-Strategien finden Frauen neue Wege, Geschäfte zu starten und auszubauen. Diese Verschiebung verändert Lebenswege und treibt weltweit das Wirtschaftswachstum.
 
 ## Unternehmerinnen über digitale Plattformen stärken
 
-Von Frauen geführte Unternehmen machen im [chinesischen eCommerce](https://beyondbordergroup.com/ecommerce-services-in-china/) deutliche Fortschritte. Auf Plattformen wie [Taobao](/de/in-china-wachsen/cross-border-ecommerce) gehören Frauen zu den führenden Verkäuferinnen und stellen mehr als die Hälfte der Top-100-Bestseller-Shops. Das spiegelt eine weltweite Bewegung, in der Frauen zunehmend früh in Geschäftsphasen die Führung übernehmen.
+Von Frauen geführte Unternehmen machen im [chinesischen eCommerce](https://www.thechinapath.com/ecommerce-services-in-china/) deutliche Fortschritte. Auf Plattformen wie [Taobao](/de/in-china-wachsen/cross-border-ecommerce) gehören Frauen zu den führenden Verkäuferinnen und stellen mehr als die Hälfte der Top-100-Bestseller-Shops. Das spiegelt eine weltweite Bewegung, in der Frauen zunehmend früh in Geschäftsphasen die Führung übernehmen.
 
 Die Erfolgsgeschichten junger Unternehmerinnen in China, gerade auf Alibabas Taobao, sind bemerkenswert. Im vergangenen Jahr gingen über 30 Prozent der neu eröffneten Shops auf Taobao auf Frauen zurück, die nach dem Jahr 2000 geboren wurden. Viele kommen aus Tier-3- und Tier-4-Städten. Der digitale Handel demokratisiert die Geschäftschancen weit über die Metropolen hinaus.
 
@@ -28,7 +28,7 @@ In China nutzen Unternehmerinnen digitale Plattformen, um klassische Hürden zu 
 
 ## Wie digitaler Handel die Geschlechterlücke verkleinert
 
-Plattformen wie [Taobao](https://beyondbordergroup.com/ecommerce-services-in-china/) und Lazada wirken als Gleichmacher. Niedrige Einstiegshürden lassen Unternehmerinnen mit geringer Anfangsinvestition starten. Für Frauen ist das ein zentraler Vorteil, da sie oft grössere Hürden bei Finanzierung und Ressourcen vorfinden.
+Plattformen wie [Taobao](https://www.thechinapath.com/ecommerce-services-in-china/) und Lazada wirken als Gleichmacher. Niedrige Einstiegshürden lassen Unternehmerinnen mit geringer Anfangsinvestition starten. Für Frauen ist das ein zentraler Vorteil, da sie oft grössere Hürden bei Finanzierung und Ressourcen vorfinden.
 
 Lorina Tan etwa, vom Marketing zur Unternehmerin geworden, hat mit Wissen von Lazada die Babypflege-Marke Tiny Buds mitgegründet. Solche Geschichten zeigen, wie stark digitaler Handel Frauen dabei stützt, erfolgreiche Geschäfte aufzubauen und zu skalieren.
 

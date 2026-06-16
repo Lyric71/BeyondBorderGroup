@@ -93,6 +93,6 @@ Visto de lejos, Taobao Instant Commerce y Taobao Flash Sale son logística, subv
 
 Para una marca no china, el desplazamiento es claro. Ya no se compite solo por contar la mejor historia en Double 11. Se compite por estar presente con naturalidad en las pequeñas decisiones espontáneas que ahora llenan el resto del calendario.
 
-En Beyond Border Group, este es el terreno donde acompañamos a nuestros clientes, conectando una intención global con la realidad local china en plena transformación. La pregunta práctica a la que volvemos siempre es sencilla.
+En TheChinaPath, este es el terreno donde acompañamos a nuestros clientes, conectando una intención global con la realidad local china en plena transformación. La pregunta práctica a la que volvemos siempre es sencilla.
 
 Si China pasa del modelo de gran festival al modelo instantáneo, ¿qué parte de ese nuevo recorrido lleva la firma de su marca y qué parte está dejando en manos de las plataformas?

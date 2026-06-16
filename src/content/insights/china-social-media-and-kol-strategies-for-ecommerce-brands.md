@@ -2,7 +2,7 @@
 title: "China Social Media and KOL Strategies for eCommerce Brands"
 description: "Partnering with Key Opinion Leaders (KOLs) has become a powerful way to connect with Chinese consumers. This guide explores strategies for finding and collaborating with the right KOLs to maximize reach, credibility, and brand growth."
 pubDate: "2024-11-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin", "Xiaohongshu"]
 tags: ["KOL marketing", "Chinese influencers", "social media strategy", "eCommerce", "Douyin"]

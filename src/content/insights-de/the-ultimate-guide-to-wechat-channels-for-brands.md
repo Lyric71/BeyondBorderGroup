@@ -2,7 +2,7 @@
 title: "Der vollständige Leitfaden zu WeChat Channels für Marken"
 description: "WeChat Channels ist eine Content-Funktion innerhalb von WeChat. Marken erreichen damit engagierte Audiences über Kurzvideos und Fotos. So nutzen Sie die Plattform für eCommerce und Markenaufbau in China."
 pubDate: "2024-11-01"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["WeChat"]
 tags: ["WeChat Channels", "Social Commerce China", "China eCommerce", "Livestream", "KOL-Marketing"]

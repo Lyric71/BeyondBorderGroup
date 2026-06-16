@@ -1,5 +1,5 @@
 ---
-title: "Cross-Border Commerce und Livestream: Einblicke von Cyril Drouin, CEO Beyond Border Group"
+title: "Cross-Border Commerce und Livestream: Einblicke von Cyril Drouin, CEO TheChinaPath"
 description: "Cyril Drouin über Live-Commerce, Markenlokalisierung, KOLs und die Herausforderungen im Cross-Border-eCommerce. Was Chinas transaktionale Livestream-Wirtschaft von westlichen Märkten unterscheidet."
 pubDate: "2024-11-05"
 updatedDate: "2026-05-15"
@@ -7,14 +7,14 @@ author: "Cyril Drouin"
 category: "KOLs & Livestream"
 tags: ["Cross-Border eCommerce", "Live Commerce", "Markenlokalisierung", "KOLs", "China-Expansion"]
 heroImage: "/Images/insights/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin.jpg"
-heroImageAlt: "Cyril Drouin, CEO der Beyond Border Group"
+heroImageAlt: "Cyril Drouin, CEO der TheChinaPath"
 ---
 
 ## Unser CEO wurde auf der jüngsten MCN International Conference in Shanghai interviewt, zu Live-Broadcast-Commerce, Markenlokalisierung, KOLs und den Chancen und Risiken im Cross-Border-eCommerce.
 
 ### Stellen Sie sich vor.
 
-Ich bin Cyril Drouin, Franzose, seit vielen Jahren in China. Nach sieben Jahren als CEO von Publicis China, wo ich Commerce, Performance-Marketing und Kreation verantwortet habe, gründete ich die [Cross-Border](/de/nach-china/cross-border-aufbau)-Agentur Beyond Border Group. Wir helfen chinesischen Marken, international zu expandieren, und begleiten globale Unternehmen beim Eintritt in den chinesischen Markt. Das Leistungsspektrum reicht von Branding und Content über Social-Media-Management, Mediaplanung, PR, Messen, Vertrieb bis zur Logistik.
+Ich bin Cyril Drouin, Franzose, seit vielen Jahren in China. Nach sieben Jahren als CEO von Publicis China, wo ich Commerce, Performance-Marketing und Kreation verantwortet habe, gründete ich die [Cross-Border](/de/nach-china/cross-border-aufbau)-Agentur TheChinaPath. Wir helfen chinesischen Marken, international zu expandieren, und begleiten globale Unternehmen beim Eintritt in den chinesischen Markt. Das Leistungsspektrum reicht von Branding und Content über Social-Media-Management, Mediaplanung, PR, Messen, Vertrieb bis zur Logistik.
 
 ![](/Images/insights/2024/11/1727424689670.jpg)
 

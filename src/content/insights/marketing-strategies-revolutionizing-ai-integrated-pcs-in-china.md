@@ -2,7 +2,7 @@
 title: "Marketing Strategies Revolutionizing AI-Integrated PCs in China"
 description: "AI integration is transforming personal computers into intelligent assistants, reshaping how these devices are marketed in China through innovative strategies focused on education, affordability, and ecosystem integration."
 pubDate: "2024-06-07"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 tags: ["AI-integrated PCs", "China market", "marketing strategy", "consumer education", "product positioning"]
 heroImage: "/Images/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china.jpg"

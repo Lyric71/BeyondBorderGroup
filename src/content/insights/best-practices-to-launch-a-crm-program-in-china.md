@@ -2,7 +2,7 @@
 title: "Best Practices to Launch a CRM Program in China"
 description: "Implementing a strong customer relationship management system is essential for business success in China's digital market. This guide outlines best practices for CRM implementation tailored to local consumer behavior and digital ecosystems."
 pubDate: "2025-01-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["WeChat"]
 tags: ["CRM", "China market entry", "WeChat", "customer relationship management", "ecommerce"]

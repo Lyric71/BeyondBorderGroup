@@ -2,7 +2,7 @@
 title: "Hébergement web en Chine : la méthode pour un impact marketing maximal"
 description: "Implanter un site en Chine relève d'un arbitrage à la fois technique, réglementaire et éditorial. Du dépôt du domaine à la licence ICP, en passant par l'optimisation Baidu, ce guide détaille les étapes qui conditionnent la visibilité d'une marque sur le marché numérique le plus surveillé du monde."
 pubDate: "2025-01-24"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Compliance & Setup"
 tags: ["hébergement web", "Chine", "licence ICP", "enregistrement de domaine", "conformité numérique"]
 heroImage: "/Images/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact.jpg"

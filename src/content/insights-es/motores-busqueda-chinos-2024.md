@@ -2,7 +2,7 @@
 title: "Motores de búsqueda chinos en 2024: cómo elegir y trabajar cada uno"
 description: "El ecosistema de internet en China se mueve con motores de búsqueda propios, distintos a los occidentales. Entender Baidu, Sogou, Shenma y los demás es clave para que cualquier marketing en el mercado chino funcione."
 pubDate: "2024-09-02"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 tags: ["motores de búsqueda chinos", "Baidu", "SEO en China", "marketing digital", "localización"]
 heroImage: "/Images/insights/boost-your-marketing-with-the-best-chinese-search-engines-in-2024.png"

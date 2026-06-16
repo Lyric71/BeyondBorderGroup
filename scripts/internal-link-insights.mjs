@@ -221,7 +221,7 @@ const PLAN = {
   ],
   'navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin': [
     { url: '/enter-china/cross-border-setup', anchors: ['cross-border commerce', 'cross-border', 'CBEC'] },
-    { url: '/about', anchors: ['Beyond Border Group', 'our team'] },
+    { url: '/about', anchors: ['TheChinaPath', 'our team'] },
     { url: '/grow-in-china/influencers-kols', anchors: ['livestream', 'KOL'] },
   ],
   'optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china': [
@@ -363,7 +363,7 @@ const FALLBACK_ANCHORS = {
   '/grow-in-china/production-studio': ['video production', 'content production', 'production'],
   '/learn-china/platforms': ['Chinese platforms', 'platforms'],
   '/learn-china/masterclass': ['masterclass', 'training', 'workshop'],
-  '/about': ['Beyond Border Group', 'our team'],
+  '/about': ['TheChinaPath', 'our team'],
   '/work': ['case study', 'case studies', 'our work'],
 };
 

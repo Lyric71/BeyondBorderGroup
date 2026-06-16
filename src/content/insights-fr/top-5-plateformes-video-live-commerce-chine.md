@@ -2,7 +2,7 @@
 title: "Vidéo et live commerce en Chine : les cinq plateformes qui font le marché"
 description: "Le live commerce chinois devrait franchir les 1 000 milliards de dollars d'ici 2026. Tour d'horizon des cinq plateformes qui captent l'engagement consommateur et la vente en direct."
 pubDate: "2024-12-27"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin", "Taobao"]
 tags: ["live streaming", "e-commerce", "Douyin", "Taobao Live", "marketing en Chine"]

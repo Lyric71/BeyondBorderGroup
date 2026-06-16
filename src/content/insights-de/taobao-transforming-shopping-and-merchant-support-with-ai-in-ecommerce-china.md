@@ -2,7 +2,7 @@
 title: "Wie Taobao und Tmall den Einkauf und den Händler-Support mit KI umbauen"
 description: "Alibabas Taobao und Tmall heben das Einkaufserlebnis und die operative Effizienz der Händler mit KI-Werkzeugen wie Taobao Wenwen, visueller Bilderzeugung und smartem Kundenservice."
 pubDate: "2024-07-12"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 platforms: ["Taobao", "Tmall"]
 tags: ["Taobao", "Tmall", "KI", "eCommerce China", "Händler-Tools"]

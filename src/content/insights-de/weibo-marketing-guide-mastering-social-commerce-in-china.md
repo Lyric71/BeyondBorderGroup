@@ -2,7 +2,7 @@
 title: "Weibo-Marketing: Social Commerce in China meistern"
 description: "Weibo, Chinas führende Social-Plattform mit über 600 Millionen monatlich aktiven Nutzern, bietet Marken grosse Chancen, technikaffine Käufer zu erreichen. Der Leitfaden zeigt Konto-Aufbau, Content, KOL-Partnerschaften und eCommerce-Integration."
 pubDate: "2024-12-13"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Weibo"]
 tags: ["Weibo", "China-Marketing", "Social Commerce", "KOL-Influencer", "eCommerce"]

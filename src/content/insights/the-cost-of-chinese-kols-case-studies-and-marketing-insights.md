@@ -2,7 +2,7 @@
 title: "The Cost of Chinese Influencers: Case Studies and Marketing Insights"
 description: "This article examines KOL pricing across Chinese platforms like Douyin and Xiaohongshu, providing cost breakdowns and case studies of successful influencer campaigns that helped brands drive engagement and sales."
 pubDate: "2024-11-29"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin"]
 tags: ["KOL marketing", "Douyin", "influencer costs", "Chinese ecommerce", "livestream campaigns"]

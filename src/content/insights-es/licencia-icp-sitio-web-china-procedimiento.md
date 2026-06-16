@@ -2,7 +2,7 @@
 title: "Cómo solicitar la licencia ICP para su sitio web en China"
 description: "La licencia ICP es el permiso obligatorio del Ministerio de Industria y Tecnología de la Información que permite operar legalmente un sitio web en China. Esta guía explica quién la necesita, los pasos para solicitarla y las ventajas para el negocio."
 pubDate: "2025-02-05"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Compliance & Setup"
 tags: ["licencia ICP", "regulación en China", "eCommerce", "alojamiento web", "requisitos legales"]
 heroImage: "/Images/insights/how-to-apply-for-an-icp-license-for-your-website.png"

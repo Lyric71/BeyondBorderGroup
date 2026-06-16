@@ -11,7 +11,7 @@ export interface ContactPayload {
 	message: string;
 }
 
-const FROM_ADDRESS = 'Beyond Border Group <onboarding@resend.dev>';
+const FROM_ADDRESS = 'TheChinaPath <onboarding@resend.dev>';
 
 export async function sendContactEmail(payload: ContactPayload) {
 	const apiKey = import.meta.env.RESEND_API_KEY ?? process.env.RESEND_API_KEY;
@@ -38,7 +38,7 @@ export async function sendContactEmail(payload: ContactPayload) {
 
 	const html = `
 		<div style="font-family: -apple-system, 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #F7F9FB; padding: 32px;">
-			<div style="background: #269ADA; border-radius: 8px; padding: 24px 28px; margin-bottom: 20px;">
+			<div style="background: #C8102E; border-radius: 8px; padding: 24px 28px; margin-bottom: 20px;">
 				<h1 style="color: #ffffff; font-size: 20px; margin: 0;">New contact form submission</h1>
 			</div>
 			<div style="background: #ffffff; border: 1px solid #E5E5E5; border-radius: 8px; padding: 24px 28px;">
@@ -47,9 +47,9 @@ export async function sendContactEmail(payload: ContactPayload) {
 						<td style="padding: 10px 0; font-size: 13px; color: #6B6B6B; width: 120px;">Name</td>
 						<td style="padding: 10px 0; font-size: 14px; color: #1A1A1A; font-weight: 600;">${escapeHtml(name)}</td>
 					</tr>
-					${row('Email', `<a href="mailto:${escapeHtml(email)}" style="color: #269ADA;">${escapeHtml(email)}</a>`)}
+					${row('Email', `<a href="mailto:${escapeHtml(email)}" style="color: #C8102E;">${escapeHtml(email)}</a>`)}
 					${row('Company', escapeHtml(company ?? '-'))}
-					${row('Website', website ? `<a href="${escapeHtml(website)}" style="color: #269ADA;">${escapeHtml(website)}</a>` : '-')}
+					${row('Website', website ? `<a href="${escapeHtml(website)}" style="color: #C8102E;">${escapeHtml(website)}</a>` : '-')}
 					${row('Profile', escapeHtml(profile ?? '-') || '-')}
 					${row('Budget', escapeHtml(budget ?? '-') || '-')}
 					${row('Services', servicesHtml)}

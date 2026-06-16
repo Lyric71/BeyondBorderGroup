@@ -2,7 +2,7 @@
 title: "Voyage de luxe : la trajectoire du marché chinois en 2024"
 description: "166,9 milliards de yuans dépensés sur cinq jours de congés. Le voyage de luxe chinois a changé de visage. Statut et ostentation s'effacent derrière le sens et l'expérience."
 pubDate: "2024-07-08"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 tags: ["voyage de luxe chinois", "préférences consommateurs", "voyage expérientiel", "tourisme bien-être", "influence digitale"]
 heroImage: "/Images/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment.jpg"

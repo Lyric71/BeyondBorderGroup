@@ -97,7 +97,7 @@ const models = [
       { label: "Licencia de tienda", value: "Nuestra" },
       { label: "Datos de cliente", value: "Nuestros" },
       { label: "Contenido, cuentas, contratos KOL", value: "Nuestros" },
-      { label: "Inversión en medios y promoción", value: "Presupuesto de marca + coinversión BBG" },
+      { label: "Inversión en medios y promoción", value: "Presupuesto de marca + coinversión TheChinaPath" },
       { label: "Ingresos", value: "Factura mayorista, reconocida como B2B" },
     ],
     yourSide: [
@@ -119,13 +119,13 @@ const models = [
 ];
 
 const compareRows = [
-  { label: "Quién asume el stock", tp: "Usted", dist: "BBG" },
-  { label: "Quién es dueño de la tienda y de los datos", tp: "Usted", dist: "BBG" },
+  { label: "Quién asume el stock", tp: "Usted", dist: "TheChinaPath" },
+  { label: "Quién es dueño de la tienda y de los datos", tp: "Usted", dist: "TheChinaPath" },
   { label: "Circulante que aporta", tp: "Elevado", dist: "Ninguno" },
   { label: "Ingresos que registra", tp: "GMV retail menos comisiones", dist: "Precio mayorista" },
   { label: "Recorrido de margen", tp: "Margen retail íntegro", dist: "Limitado al precio mayorista" },
   { label: "Riesgo que asume", tp: "Stock y demanda", dist: "Ninguno sobre el inventario" },
-  { label: "Coste de medios y promoción", tp: "100 % a su cargo", dist: "Presupuesto de marca + coinversión BBG" },
+  { label: "Coste de medios y promoción", tp: "100 % a su cargo", dist: "Presupuesto de marca + coinversión TheChinaPath" },
   { label: "Capital de marca en Douyin y RedNote", tp: "Suyo, íntegro", dist: "Suyo, construido a través nuestro" },
   { label: "Más indicado para", tp: "Marcas que construyen social commerce chino a largo plazo", dist: "Marcas ya conocidas en China" },
 ];
@@ -319,8 +319,8 @@ const serviceJsonLd = {
   serviceType: 'Social commerce management',
   provider: {
     '@type': 'Organization',
-    name: 'Beyond Border Group',
-    url: 'https://beyondbordergroup.com',
+    name: 'TheChinaPath',
+    url: 'https://www.thechinapath.com',
   },
   areaServed: { '@type': 'Country', name: 'China' },
 };
@@ -1039,8 +1039,8 @@ const serviceJsonLd = {
     }
     .cbs-progress__bar {
       height: 100%; width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 60%, #9DDBF5 100%);
-      box-shadow: 0 0 12px rgba(38, 154, 218, 0.55);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #9DDBF5 100%);
+      box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
 
@@ -1073,8 +1073,8 @@ const serviceJsonLd = {
           rgba(8, 18, 28, 0.72) 42%,
           rgba(8, 18, 28, 0.32) 100%),
         radial-gradient(120% 80% at 0% 100%,
-          rgba(38, 154, 218, 0.28) 0%,
-          rgba(38, 154, 218, 0) 60%);
+          rgba(200, 16, 46, 0.28) 0%,
+          rgba(200, 16, 46, 0) 60%);
     }
     .cbs-hero__grain {
       position: absolute; inset: 0; z-index: -1;
@@ -1121,7 +1121,7 @@ const serviceJsonLd = {
       content: ""; position: absolute;
       left: 0; right: 0; bottom: 0.04em;
       height: 0.18em;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px;
       transform-origin: left center;
       animation: cbs-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
@@ -1279,7 +1279,7 @@ const serviceJsonLd = {
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       transform: scaleX(0);
       transform-origin: left center;
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1287,7 +1287,7 @@ const serviceJsonLd = {
     .cbs-service:hover {
       transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 16px 32px -20px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 16px 32px -20px rgba(200, 16, 46, 0.4);
     }
     .cbs-service:hover::before { transform: scaleX(1); }
     .cbs-service__icon {
@@ -1295,7 +1295,7 @@ const serviceJsonLd = {
       width: 44px; height: 44px;
       align-items: center; justify-content: center;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.18) 100%);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.18) 100%);
       color: var(--bbg-blue);
       margin-bottom: var(--space-2);
     }
@@ -1363,7 +1363,7 @@ const serviceJsonLd = {
       font-family: inherit;
     }
     .cbs-tabs__tab:last-child { border-right: none; }
-    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(38, 154, 218, 0.04); }
+    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(200, 16, 46, 0.04); }
     .cbs-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
     .cbs-tabs__tab-label {
       font-size: 1.0625rem; font-weight: 700;
@@ -1388,7 +1388,7 @@ const serviceJsonLd = {
       position: absolute;
       bottom: -1px; left: 0;
       width: 25%; height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #5BC2F0 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
       border-radius: 2px 2px 0 0;
       transform: translateX(0);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1606,7 +1606,7 @@ const serviceJsonLd = {
       border-bottom: 1px solid var(--bbg-border);
       vertical-align: top;
     }
-    .cbs-compare__cell--tp { background: rgba(38, 154, 218, 0.04); }
+    .cbs-compare__cell--tp { background: rgba(200, 16, 46, 0.04); }
     .cbs-compare__cell--dist { background: var(--bbg-white); }
     .cbs-compare__table tbody tr:last-child .cbs-compare__row-label,
     .cbs-compare__table tbody tr:last-child .cbs-compare__cell {
@@ -1626,7 +1626,7 @@ const serviceJsonLd = {
       margin: var(--space-6) auto 0;
       max-width: 760px;
       padding: var(--space-5) var(--space-6);
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(38, 154, 218, 0.10) 100%);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.10) 100%);
       border-left: 4px solid var(--bbg-blue);
       border-radius: 0 var(--radius-md) var(--radius-md) 0;
     }
@@ -1766,7 +1766,7 @@ const serviceJsonLd = {
     .cbs-sister__pack:hover {
       transform: translateY(-3px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 14px 28px -18px rgba(38, 154, 218, 0.35);
+      box-shadow: 0 14px 28px -18px rgba(200, 16, 46, 0.35);
     }
     .cbs-sister__pack-icon {
       display: inline-flex;
@@ -1808,11 +1808,11 @@ const serviceJsonLd = {
     }
     .cbs-faq__item:hover {
       transform: translateX(2px);
-      border-color: rgba(38, 154, 218, 0.4);
+      border-color: rgba(200, 16, 46, 0.4);
     }
     .cbs-faq__item[open] {
       border-color: var(--bbg-blue);
-      box-shadow: 0 8px 22px -14px rgba(38, 154, 218, 0.4);
+      box-shadow: 0 8px 22px -14px rgba(200, 16, 46, 0.4);
     }
     .cbs-faq__q {
       cursor: pointer;

@@ -2,7 +2,7 @@
 title: "Digital Human: The Rise of AI-Driven Live Streaming in China"
 description: "JD.com's digital avatar of founder Liu Qiangdong attracted 20 million viewers in one hour, demonstrating AI's potential to engage audiences and transform e-commerce through lifelike interactions."
 pubDate: "2024-04-25"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 platforms: ["JD"]
 tags: ["AI avatars", "livestream commerce", "JD.com", "digital marketing", "e-commerce"]

@@ -2,7 +2,7 @@
 title: "Tendencias emergentes y estrategias de los diseñadores chinos independientes en 2024"
 description: "Los diseñadores chinos independientes están redefiniendo la moda apoyándose en su herencia cultural, en la sostenibilidad y en la innovación digital. Estas marcas locales ganan reconocimiento en China y fuera de China."
 pubDate: "2024-06-25"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["diseñadores chinos", "tendencias de moda", "sostenibilidad", "innovación digital", "eCommerce en China"]
 heroImage: "/Images/insights/independent-chinese-designers-2024-trends-marketing-and-commerce-insights.jpeg"

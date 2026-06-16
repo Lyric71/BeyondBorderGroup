@@ -2,7 +2,7 @@
 title: "Kuaishou-Kurzvideo-Marketing: Der vollständige Leitfaden für Marken in China"
 description: "Kuaishou ist eine führende Kurzvideo-Plattform, anders als Douyin auf Audiences in Tier-2- und Tier-3-Städten und ländlichen Regionen ausgerichtet. Der Leitfaden zeigt, wie Marken mit Livestream, Influencer-Partnerschaften und lokalisierten eCommerce-Strategien gewinnen."
 pubDate: "2024-10-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Kuaishou"]
 tags: ["Kuaishou", "Kurzvideo-Marketing", "China eCommerce", "Livestream", "Social Commerce"]

@@ -2,7 +2,7 @@
 title: "Tmall y Amazon: dos modelos enfrentados de comercio electrónico"
 description: "Tmall y Amazon figuran entre las mayores plataformas de comercio electrónico del mundo, cada una con sus fortalezas y un perfil propio."
 pubDate: "2023-02-02"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Tmall"]
 tags: ["Tmall", "Amazon", "eCommerce", "China", "B2C"]

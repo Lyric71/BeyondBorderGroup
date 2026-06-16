@@ -2,7 +2,7 @@
 title: "Los principales KOL del eCommerce chino en 2024"
 description: "El eCommerce chino se apoya en los KOL para tender puentes entre marcas y consumidores, con autenticidad y creatividad en plataformas como Xiaohongshu y Douyin."
 pubDate: "2024-12-18"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Xiaohongshu", "Douyin"]
 tags: ["marketing de KOL", "eCommerce China", "Xiaohongshu", "Douyin", "campañas de influencers"]

@@ -2,7 +2,7 @@
 title: "Cómo encontrar un nombre chino para una marca en China"
 description: "Elegir un nombre chino exige equilibrio entre fonética, carga cultural y valores de marca. Esta guía recorre las estrategias que funcionan para localizar bien en el mercado chino."
 pubDate: "2025-01-14"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["nombre chino", "localización de marca", "eCommerce en China", "adaptación cultural", "protección de marca"]
 heroImage: "/Images/insights/best-practices-for-finding-a-chinese-name-for-a-brand-in-china.jpg"

@@ -2,7 +2,7 @@
 title: "Ultimate Guide to Capturing the Hearts of Chinese Luxury Travelers"
 description: "Chinese luxury travelers increasingly seek authentic cultural immersion and personalized experiences. Travel providers must adapt with innovative digital engagement strategies and emotional storytelling to capture this sophisticated market."
 pubDate: "2024-07-08"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["WeChat"]
 tags: ["Chinese luxury travelers", "cultural immersion", "personalized travel", "digital engagement", "WeChat marketing"]

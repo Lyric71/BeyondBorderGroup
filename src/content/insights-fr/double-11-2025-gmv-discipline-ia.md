@@ -91,4 +91,4 @@ Pour mémoire, le [livestream](/fr/se-developper-en-chine/influence-et-kol) avai
 
 Le 11.11 n'a pas besoin de davantage de paillettes. Il appelle un système piloté par la création, natif IA, qui respecte le consommateur, protège les marges, passe les frontières. Les gagnants se sont servis du festival en test système. Ils l'ont validé sur la vitesse, la clarté et la cohérence de marque.
 
-Pour voir cette logique appliquée à vos propres chiffres, BBG propose une session avec quelques visuels offerts et une lecture de cas marques en direct. L'équipe conçoit le Creative OS avec vous et fait du prochain rendez-vous shopping un fossé concurrentiel.
+Pour voir cette logique appliquée à vos propres chiffres, TheChinaPath propose une session avec quelques visuels offerts et une lecture de cas marques en direct. L'équipe conçoit le Creative OS avec vous et fait du prochain rendez-vous shopping un fossé concurrentiel.

@@ -3,7 +3,7 @@ title: "KOC en Chine : la méthode pour bâtir des campagnes qui convertissent"
 description: "Les Key Opinion Consumers s'installent en levier décisif sur l'e-commerce chinois. Ces micro-influenceurs jouent la carte de l'authenticité, à un coût bien inférieur au sponsoring des célébrités."
 pubDate: "2024-12-07"
 updatedDate: "2026-05-15"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Xiaohongshu", "Douyin"]
 tags: ["marketing KOC", "e-commerce en Chine", "micro-influenceurs", "social commerce", "confiance consommateur"]

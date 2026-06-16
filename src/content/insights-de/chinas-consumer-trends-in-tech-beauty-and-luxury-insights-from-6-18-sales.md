@@ -2,7 +2,7 @@
 title: "Chinas eCommerce-Wandel, getrieben von Tech, Beauty und Luxus"
 description: "Das 6.18-Shopping-Festival in China zeigte deutliche Verschiebungen in den Konsumvorlieben. Tech-, Beauty- und Luxusmarken erzielten Rekordumsätze durch gezieltes Marketing und dynamische Handelsstrategien."
 pubDate: "2024-06-14"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "JD"]
 tags: ["China eCommerce", "6.18-Festival", "Luxusmarken", "Beauty-Produkte", "Tech-Verkäufe"]

@@ -34,7 +34,7 @@ export const localeNamesNative: Record<Locale, string> = {
 export const ui = {
   en: {
     // Layout / meta
-    'site.title': 'Beyond Border Group | China Market Entry, eCommerce & Distribution',
+    'site.title': 'TheChinaPath | China Market Entry, eCommerce & Distribution',
     'site.description':
       'We help global brands enter China, grow sales on Tmall, JD, Douyin, WeChat and RED, and find the right distributor. Shanghai, Hong Kong, Paris.',
     'skipLink': 'Skip to content',
@@ -95,12 +95,12 @@ export const ui = {
     'lang.current': 'Language',
 
     // Footer
-    'footer.aria.brand': 'Beyond Border Group Home',
+    'footer.aria.brand': 'TheChinaPath Home',
     'footer.pitch':
       'We help brands Enter China, Grow in China, and Learn China. 20 years of doing the work, not pitching it.',
     'footer.cities': 'Shanghai · Hong Kong · Paris',
     'footer.social.linkedin': 'LinkedIn',
-    'footer.social.linkedinAria': 'Beyond Border Group on LinkedIn',
+    'footer.social.linkedinAria': 'TheChinaPath on LinkedIn',
     'footer.col.enter': 'Enter China',
     'footer.col.grow': 'Grow in China',
     'footer.col.learn': 'Learn China',
@@ -108,10 +108,10 @@ export const ui = {
     'footer.network.label': 'Our Network',
     'footer.network.aria': 'Our network',
     'footer.parent.eyebrow': 'Parent Group',
-    'footer.parent.name': 'BeyondBorderGroup.org',
+    'footer.parent.name': 'TheChinaPath',
     'footer.parent.desc': 'The umbrella group connecting our specialised China agencies.',
     'footer.parent.cta': 'Visit',
-    'footer.copyright': '© Beyond Border Group {year}. All rights reserved.',
+    'footer.copyright': '© TheChinaPath {year}. All rights reserved.',
     'footer.legal.terms': 'Terms of Service',
     'footer.legal.privacy': 'Privacy Policy',
     'footer.legal.cookie': 'Cookie Policy',
@@ -126,7 +126,7 @@ export const ui = {
 
   fr: {
     // Layout / meta
-    'site.title': 'Beyond Border Group | Implantation, e-commerce et distribution en Chine',
+    'site.title': 'TheChinaPath | Implantation, e-commerce et distribution en Chine',
     'site.description':
       "Nous accompagnons les marques internationales en Chine : implantation, ventes sur Tmall, JD, Douyin, WeChat et RED, choix du distributeur. Shanghai, Hong Kong, Paris.",
     'skipLink': 'Aller au contenu',
@@ -205,12 +205,12 @@ export const ui = {
     'lang.current': 'Langue',
 
     // Footer
-    'footer.aria.brand': "Accueil Beyond Border Group",
+    'footer.aria.brand': "Accueil TheChinaPath",
     'footer.pitch':
       "S'implanter en Chine, s'y développer, la décrypter. Vingt années d'opérations conduites depuis le terrain.",
     'footer.cities': 'Shanghai · Hong Kong · Paris',
     'footer.social.linkedin': 'LinkedIn',
-    'footer.social.linkedinAria': 'Beyond Border Group sur LinkedIn',
+    'footer.social.linkedinAria': 'TheChinaPath sur LinkedIn',
     'footer.col.enter': 'Entrer en Chine',
     'footer.col.grow': 'Se développer en Chine',
     'footer.col.learn': 'Comprendre la Chine',
@@ -218,11 +218,11 @@ export const ui = {
     'footer.network.label': 'Notre réseau',
     'footer.network.aria': 'Notre réseau',
     'footer.parent.eyebrow': 'Maison mère',
-    'footer.parent.name': 'BeyondBorderGroup.org',
+    'footer.parent.name': 'TheChinaPath',
     'footer.parent.desc':
       "L'entité qui réunit l'ensemble de nos agences spécialistes du marché chinois.",
     'footer.parent.cta': 'Découvrir',
-    'footer.copyright': '© Beyond Border Group {year}. Tous droits réservés.',
+    'footer.copyright': '© TheChinaPath {year}. Tous droits réservés.',
     'footer.legal.terms': "Conditions d'utilisation",
     'footer.legal.privacy': 'Politique de confidentialité',
     'footer.legal.cookie': 'Politique de cookies',
@@ -242,7 +242,7 @@ export const ui = {
 
   de: {
     // Layout / meta
-    'site.title': 'Beyond Border Group | Markteintritt, E-Commerce und Vertrieb in China',
+    'site.title': 'TheChinaPath | Markteintritt, E-Commerce und Vertrieb in China',
     'site.description':
       'Wir begleiten internationale Marken beim Eintritt in den chinesischen Markt: Umsätze auf Tmall, JD, Douyin, WeChat und RED, passende Vertriebspartner. Shanghai, Hongkong, Paris.',
     'skipLink': 'Zum Inhalt springen',
@@ -321,12 +321,12 @@ export const ui = {
     'lang.current': 'Sprache',
 
     // Footer
-    'footer.aria.brand': 'Beyond Border Group Startseite',
+    'footer.aria.brand': 'TheChinaPath Startseite',
     'footer.pitch':
       'Nach China kommen, in China wachsen, China verstehen. Zwanzig Jahre operative Arbeit vor Ort, nicht aus dem Pitch-Deck.',
     'footer.cities': 'Shanghai · Hongkong · Paris',
     'footer.social.linkedin': 'LinkedIn',
-    'footer.social.linkedinAria': 'Beyond Border Group auf LinkedIn',
+    'footer.social.linkedinAria': 'TheChinaPath auf LinkedIn',
     'footer.col.enter': 'Nach China',
     'footer.col.grow': 'In China wachsen',
     'footer.col.learn': 'China verstehen',
@@ -334,11 +334,11 @@ export const ui = {
     'footer.network.label': 'Unser Netzwerk',
     'footer.network.aria': 'Unser Netzwerk',
     'footer.parent.eyebrow': 'Muttergesellschaft',
-    'footer.parent.name': 'BeyondBorderGroup.org',
+    'footer.parent.name': 'TheChinaPath',
     'footer.parent.desc':
       'Die Dachgesellschaft hinter unseren Spezialagenturen für den chinesischen Markt.',
     'footer.parent.cta': 'Mehr erfahren',
-    'footer.copyright': '© Beyond Border Group {year}. Alle Rechte vorbehalten.',
+    'footer.copyright': '© TheChinaPath {year}. Alle Rechte vorbehalten.',
     'footer.legal.terms': 'Nutzungsbedingungen',
     'footer.legal.privacy': 'Datenschutz',
     'footer.legal.cookie': 'Cookie-Richtlinie',
@@ -358,7 +358,7 @@ export const ui = {
 
   es: {
     // Layout / meta
-    'site.title': 'Beyond Border Group | Implantación, eCommerce y distribución en China',
+    'site.title': 'TheChinaPath | Implantación, eCommerce y distribución en China',
     'site.description':
       'Acompañamos a marcas internacionales en China. Implantación, ventas en Tmall, JD, Douyin, WeChat y RED, y selección del distribuidor adecuado. Shanghái, Hong Kong, París.',
     'skipLink': 'Saltar al contenido',
@@ -437,12 +437,12 @@ export const ui = {
     'lang.current': 'Idioma',
 
     // Footer
-    'footer.aria.brand': 'Inicio Beyond Border Group',
+    'footer.aria.brand': 'Inicio TheChinaPath',
     'footer.pitch':
       'Implantarse en China, crecer en China, entender China. Veinte años de operaciones desde el terreno.',
     'footer.cities': 'Shanghái · Hong Kong · París',
     'footer.social.linkedin': 'LinkedIn',
-    'footer.social.linkedinAria': 'Beyond Border Group en LinkedIn',
+    'footer.social.linkedinAria': 'TheChinaPath en LinkedIn',
     'footer.col.enter': 'Entrar en China',
     'footer.col.grow': 'Crecer en China',
     'footer.col.learn': 'Conocer China',
@@ -450,11 +450,11 @@ export const ui = {
     'footer.network.label': 'Nuestra red',
     'footer.network.aria': 'Nuestra red',
     'footer.parent.eyebrow': 'Grupo matriz',
-    'footer.parent.name': 'BeyondBorderGroup.org',
+    'footer.parent.name': 'TheChinaPath',
     'footer.parent.desc':
       'La entidad que reúne a nuestras agencias especializadas en China.',
     'footer.parent.cta': 'Descubrir',
-    'footer.copyright': '© Beyond Border Group {year}. Todos los derechos reservados.',
+    'footer.copyright': '© TheChinaPath {year}. Todos los derechos reservados.',
     'footer.legal.terms': 'Condiciones de uso',
     'footer.legal.privacy': 'Política de privacidad',
     'footer.legal.cookie': 'Política de cookies',

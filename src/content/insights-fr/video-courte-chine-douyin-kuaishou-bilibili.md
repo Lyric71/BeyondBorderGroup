@@ -2,7 +2,7 @@
 title: "Vidéo courte en Chine : Douyin, Kuaishou, Bilibili, qui rafle la mise"
 description: "Douyin, Kuaishou et Bilibili cumulent plus de 941 millions d'utilisateurs actifs par mois. La vidéo courte est devenue le premier réflexe d'achat du consommateur chinois. Tour d'horizon des plateformes qui pèsent."
 pubDate: "2025-02-13"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Douyin", "Kuaishou"]
 tags: ["Douyin", "Kuaishou", "marketing vidéo courte", "live commerce", "e-commerce Chine"]

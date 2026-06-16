@@ -2,7 +2,7 @@
 title: "Las 5 grandes plataformas de vídeo y livestream en China"
 description: "El livestream se ha convertido en una de las piezas centrales del comercio digital chino. Esta guía repasa las cinco plataformas que están reescribiendo la manera en que las marcas conectan con el consumidor y mueven ventas en tiempo real."
 pubDate: "2024-12-27"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin", "Taobao"]
 tags: ["livestream", "eCommerce", "Douyin", "Taobao Live", "marketing en China"]

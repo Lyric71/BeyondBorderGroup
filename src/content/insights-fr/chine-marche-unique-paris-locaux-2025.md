@@ -88,9 +88,9 @@ Les marques qui s'adapteront le plus vite verront la Chine moins comme une ligne
 
 ![](/Images/insights/2024/06/localization-2-1-1024x647.png)
 
-### Passer de l'insight à l'action avec BBG
+### Passer de l'insight à l'action avec TheChinaPath
 
-Chez BBG, nous travaillons avec des marques internationales qui ressentent ce basculement en Chine et cherchent une réponse concrète.
+Chez TheChinaPath, nous travaillons avec des marques internationales qui ressentent ce basculement en Chine et cherchent une réponse concrète.
 
 Nous aidons les équipes à sortir des plans nationaux uniques pour bâtir des portefeuilles structurés de paris chinois. Cela peut comprendre une stratégie ville et cluster, des feuilles de route plateformes sur Douyin, Xiaohongshu, WeChat, Tmall, JD et autres, ainsi qu'une localisation des expériences de marque et de commerce qui respecte l'ADN global.
 

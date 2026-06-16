@@ -2,7 +2,7 @@
 title: "Die chinesischen Luxusreisenden von heute: Vorlieben und Motive verstehen"
 description: "Chinesische Luxusreisende sind eine wachsende Gruppe, die den globalen Reisemarkt umformt. Sie suchen Premium-Erlebnisse, die Exklusivität, Kulturerkundung und persönliches Wachstum verbinden."
 pubDate: "2024-07-08"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Market Strategy"
 tags: ["Chinesische Luxusreisende", "Reise-Vorlieben", "Wohlhabende Käufer", "Erlebnis-Reise", "Kulturelle Sensibilität"]
 heroImage: "/Images/insights/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers.jpg"

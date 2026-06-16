@@ -2,7 +2,7 @@
 title: "Leitfaden 2024: Den richtigen Vertriebspartner in China finden"
 description: "Der Leitfaden zeigt die Vertriebslandschaft Chinas und praktische Schritte, um Vertriebspartner zu finden und mit ihnen zu arbeiten, damit Produkte in diesem dynamischen Markt Erfolg haben."
 pubDate: "2024-06-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 tags: ["China-Vertrieb", "Markteintritt", "Logistik", "Handelspartnerschaften", "B2B"]
 heroImage: "/Images/insights/how-to-find-a-distributor-for-your-products-in-china-in-2024.png"

@@ -2,7 +2,7 @@
 title: "Alibaba's Strategic Expansion: 1688's Launch on Taobao and Its Market Implications"
 description: "Alibaba's 1688 wholesale marketplace has launched three official online stores on Taobao to offer competitively priced goods and simplify shopping for consumers seeking bulk purchases and commercial supplies."
 pubDate: "2024-03-27"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Taobao", "Tmall"]
 tags: ["Alibaba", "1688", "Taobao", "E-commerce", "B2B"]

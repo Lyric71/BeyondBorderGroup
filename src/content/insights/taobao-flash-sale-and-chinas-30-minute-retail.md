@@ -161,6 +161,6 @@ If you cannot answer these, you are not behind on marketing. You are behind on t
 
 Chinese retail is not choosing between online and offline. It is compressing them into one experience. Taobao Flash Sale is a signal that the next phase of growth belongs to brands who can connect demand creation with local fulfilment, without losing brand control.
 
-The question is not whether this trend continues. The question is whether your China team is structured to win inside it. BBG helps global brands adapt to China's platform reality with practical execution. That includes Taobao and Tmall strategy, instant retail readiness planning, content and merchandising systems for conversion, and integration across key channels like Douyin, Xiaohongshu, and WeChat.
+The question is not whether this trend continues. The question is whether your China team is structured to win inside it. TheChinaPath helps global brands adapt to China's platform reality with practical execution. That includes Taobao and Tmall strategy, instant retail readiness planning, content and merchandising systems for conversion, and integration across key channels like Douyin, Xiaohongshu, and WeChat.
 
 If you are exploring Taobao Flash Sale, we can help you define the right assortment lane, partner setup, and go-to-market plan, then localize the assets and operating rhythm needed to make it work city by city.

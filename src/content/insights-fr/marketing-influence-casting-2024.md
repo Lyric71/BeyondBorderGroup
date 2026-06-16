@@ -2,7 +2,7 @@
 title: "Marketing d'influence : la nouvelle équation du casting"
 description: "Le casting commande désormais la performance d'une campagne d'influence. Méthode pour trouver les créateurs qui collent vraiment à votre marque et à votre audience."
 pubDate: "2023-11-17"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 tags: ["marketing d'influence", "réseaux sociaux", "stratégie de marque", "KOL", "engagement"]
 heroImage: "/Images/insights/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china.jpg"

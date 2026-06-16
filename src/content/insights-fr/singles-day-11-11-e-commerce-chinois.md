@@ -2,7 +2,7 @@
 title: "Singles' Day : comment le 11.11 a redessiné l'e-commerce chinois"
 description: "Devenu la plus grosse opération commerciale en ligne au monde, le 11.11 récompense les marques qui maîtrisent les réseaux sociaux chinois, les alliances avec les influenceurs et une localisation rigoureuse."
 pubDate: "2024-10-11"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall"]
 tags: ["Festival 11.11", "e-commerce en Chine", "marketing KOL", "Tmall", "social commerce"]

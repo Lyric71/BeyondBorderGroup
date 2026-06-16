@@ -10,11 +10,11 @@ if (!to) throw new Error('CONTACT_TO_EMAIL missing');
 const resend = new Resend(apiKey);
 
 const { data, error } = await resend.emails.send({
-	from: 'Beyond Border Group <onboarding@resend.dev>',
+	from: 'TheChinaPath <onboarding@resend.dev>',
 	to,
-	subject: 'Resend test from Beyond Border Group',
-	html: '<p>This is a test email sent from the BBG project to verify the Resend integration is working.</p>',
-	text: 'This is a test email sent from the BBG project to verify the Resend integration is working.',
+	subject: 'Resend test from TheChinaPath',
+	html: '<p>This is a test email sent from the TheChinaPath project to verify the Resend integration is working.</p>',
+	text: 'This is a test email sent from the TheChinaPath project to verify the Resend integration is working.',
 });
 
 if (error) {

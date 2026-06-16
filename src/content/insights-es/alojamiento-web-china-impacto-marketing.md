@@ -2,7 +2,7 @@
 title: "Cómo alojar su sitio web en China para sacar el máximo partido de marketing"
 description: "Alojar un sitio web en China exige planificación, cumplir la normativa local y entender el ecosistema digital del país. Esta guía recorre los pasos esenciales: registro de dominio, licencia ICP y optimización para los buscadores locales."
 pubDate: "2025-01-24"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Compliance & Setup"
 tags: ["alojamiento web", "China", "licencia ICP", "registro de dominio", "cumplimiento digital"]
 heroImage: "/Images/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact.jpg"

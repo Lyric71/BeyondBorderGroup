@@ -501,7 +501,7 @@ const frInsightSlugRenameRedirects = Object.fromEntries(
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.beyondbordergroup.com',
+  site: 'https://www.thechinapath.com',
   // 'never' makes Vercel strip trailing slashes from incoming requests before
   // applying redirect rules. Without this, every legacy WP URL (all served
   // with trailing slash) misses the path-level 301 and 404s on www.
@@ -533,7 +533,7 @@ export default defineConfig({
       // /fr/decryptages/<fr>, etc. The hook below resolves both halves of
       // the pair via the insight + static slug maps.
       serialize: (item) => {
-        const SITE = 'https://www.beyondbordergroup.com';
+        const SITE = 'https://www.thechinapath.com';
         const url = new URL(item.url);
         const path = url.pathname === '/' ? '/' : url.pathname.replace(/\/$/, '');
         const enPath = canonicalize(path);
@@ -584,7 +584,7 @@ export default defineConfig({
             const filePath = path.join(root, f);
             const xml = await readFile(filePath, 'utf8');
             const fixed = xml.replace(
-              /(<xhtml:link rel="alternate" hreflang="[^"]+" href="https:\/\/www\.beyondbordergroup\.com)\/(")/g,
+              /(<xhtml:link rel="alternate" hreflang="[^"]+" href="https:\/\/www.thechinapath.com)\/(")/g,
               '$1$2',
             );
             if (fixed !== xml) {

@@ -2,7 +2,7 @@
 title: "KOL chinois : la grammaire du commerce digital"
 description: "Les Key Opinion Leaders pèsent désormais sur la majorité des décisions d'achat en ligne. Profils, plateformes, arbitrages budgétaires : la lecture pour les marques e-commerce."
 pubDate: "2024-11-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin", "Xiaohongshu"]
 tags: ["marketing KOL", "influenceurs chinois", "stratégie social media", "e-commerce", "Douyin"]

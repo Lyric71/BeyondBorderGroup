@@ -2,7 +2,7 @@
 title: "Guía completa para encontrar distribuidor para sus productos en China en 2024"
 description: "Una visión a fondo del panorama de distribución en China y los pasos prácticos para encontrar y trabajar con distribuidores que aseguren el éxito del producto en un mercado tan dinámico."
 pubDate: "2024-06-28"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 tags: ["distribución en China", "entrada de mercado", "logística", "alianzas con retail", "B2B"]
 heroImage: "/Images/insights/how-to-find-a-distributor-for-your-products-in-china-in-2024.png"

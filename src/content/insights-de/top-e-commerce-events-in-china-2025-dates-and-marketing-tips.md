@@ -2,7 +2,7 @@
 title: "Chinas eCommerce-Shopping-Kalender 2025"
 description: "Ein umfassender Leitfaden zu den grossen eCommerce-Festivals 2025 in China, mit strategischen Marketing-Tipps für Marken, die diese Verkaufsphasen nutzen wollen."
 pubDate: "2025-01-09"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["eCommerce", "China", "Shopping-Festivals", "Marketing-Strategie", "Cross-Border-Handel"]

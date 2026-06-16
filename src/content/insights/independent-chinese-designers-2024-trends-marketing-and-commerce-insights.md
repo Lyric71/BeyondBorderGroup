@@ -2,7 +2,7 @@
 title: "Emerging Trends and Business Strategies of Independent Chinese Designers in 2024"
 description: "Independent Chinese designers are reshaping the fashion landscape through cultural integration, sustainability focus, and digital innovation. The article explores how these homegrown brands are gaining domestic and international recognition."
 pubDate: "2024-06-25"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["Chinese designers", "fashion trends", "sustainability", "digital innovation", "eCommerce China"]
 heroImage: "/Images/insights/independent-chinese-designers-2024-trends-marketing-and-commerce-insights.jpeg"

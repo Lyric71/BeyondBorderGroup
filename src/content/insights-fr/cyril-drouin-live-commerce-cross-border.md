@@ -1,5 +1,5 @@
 ---
-title: "Live commerce et cross-border : l'analyse de Cyril Drouin, CEO de Beyond Border Group"
+title: "Live commerce et cross-border : l'analyse de Cyril Drouin, CEO de TheChinaPath"
 description: "Cyril Drouin décrypte le live commerce, la localisation, les KOL et ce qui sépare l'économie chinoise du livestream des marchés occidentaux."
 pubDate: "2024-11-05"
 updatedDate: "2026-05-15"
@@ -7,14 +7,14 @@ author: "Cyril Drouin"
 category: "KOLs & Livestream"
 tags: ["e-commerce transfrontalier", "live commerce", "localisation de marque", "KOL", "expansion en Chine"]
 heroImage: "/Images/insights/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin.jpg"
-heroImageAlt: "Cyril Drouin, CEO de Beyond Border Group"
+heroImageAlt: "Cyril Drouin, CEO de TheChinaPath"
 ---
 
-## Cyril Drouin, CEO de Beyond Border Group, est intervenu le mois dernier à la conférence MCN International de Shanghai. Live commerce, localisation, KOL, frontières du commerce transfrontalier : extraits de l'entretien.
+## Cyril Drouin, CEO de TheChinaPath, est intervenu le mois dernier à la conférence MCN International de Shanghai. Live commerce, localisation, KOL, frontières du commerce transfrontalier : extraits de l'entretien.
 
 ### Pouvez-vous vous présenter ?
 
-Cyril Drouin, Français installé en Chine de longue date. Sept années à la direction de Publicis China, sur les volets commerce, performance et création, avant de fonder Beyond Border Group, une agence [cross-border](/fr/entrer-en-chine/lancement-cross-border). Notre mission tient en deux volets : pousser les marques chinoises à l'international, installer durablement les groupes étrangers en Chine. Branding, contenu, social media, achat média, relations presse, salons, distribution, logistique : l'agence couvre l'ensemble de la chaîne.
+Cyril Drouin, Français installé en Chine de longue date. Sept années à la direction de Publicis China, sur les volets commerce, performance et création, avant de fonder TheChinaPath, une agence [cross-border](/fr/entrer-en-chine/lancement-cross-border). Notre mission tient en deux volets : pousser les marques chinoises à l'international, installer durablement les groupes étrangers en Chine. Branding, contenu, social media, achat média, relations presse, salons, distribution, logistique : l'agence couvre l'ensemble de la chaîne.
 
 ![](/Images/insights/2024/11/1727424689670.jpg)
 
@@ -24,7 +24,7 @@ En Chine, le livestream sert à vendre. Point. La diffusion conclut, propose par
 
 ### Comment se déroule la localisation d'une marque internationale en Chine ?
 
-Ces dernières années, Beyond Border Group a localisé des marques de beauté, d'alimentation et de mobilier pour le marché chinois. Le point de départ varie peu : nom chinois et logo adaptés, refonte des visuels et des vidéos, ouverture des comptes sociaux et e-commerce, premières campagnes avec des KOL. Ça ne suffit pas. Pour durer, une marque doit raconter quelque chose et viser un créneau précis. À défaut, le coût d'acquisition file et devient intenable. Les marques qui percent en Chine partagent quelques traits : un produit difficile à copier, un héritage fort, des objectifs clairs en GMV et en rentabilité, un plan à cinq ans solidement charpenté.
+Ces dernières années, TheChinaPath a localisé des marques de beauté, d'alimentation et de mobilier pour le marché chinois. Le point de départ varie peu : nom chinois et logo adaptés, refonte des visuels et des vidéos, ouverture des comptes sociaux et e-commerce, premières campagnes avec des KOL. Ça ne suffit pas. Pour durer, une marque doit raconter quelque chose et viser un créneau précis. À défaut, le coût d'acquisition file et devient intenable. Les marques qui percent en Chine partagent quelques traits : un produit difficile à copier, un héritage fort, des objectifs clairs en GMV et en rentabilité, un plan à cinq ans solidement charpenté.
 
 ![](/Images/insights/2024/11/1727424693783.jpg)
 

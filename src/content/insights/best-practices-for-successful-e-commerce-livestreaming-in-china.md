@@ -2,7 +2,7 @@
 title: "Best Practices for Successful E-Commerce Livestreaming in China"
 description: "E-commerce livestreaming has transformed how brands connect with audiences in China by combining live video, real-time engagement, and smooth shopping. Platforms like Taobao Live and Douyin dominate this space, enabling businesses to boost sales and build customer relationships."
 pubDate: "2024-12-06"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin", "Taobao"]
 tags: ["livestreaming", "e-commerce", "China", "KOLs", "digital marketing"]

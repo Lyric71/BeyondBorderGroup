@@ -2,7 +2,7 @@
 title: "Alibabas strategischer Schritt: 1688 startet auf Taobao und die Marktwirkung"
 description: "Alibabas Grosshandelsplattform 1688 hat drei offizielle Online-Shops auf Taobao eröffnet. Wettbewerbsfähige Preise und ein vereinfachter Einkaufsweg für Käufer, die grössere Mengen brauchen oder gewerblichen Bedarf decken."
 pubDate: "2024-03-27"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Taobao", "Tmall"]
 tags: ["Alibaba", "1688", "Taobao", "eCommerce", "B2B"]

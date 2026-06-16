@@ -2,7 +2,7 @@
 title: "Optimice su marca: cómo elegir al influencer adecuado"
 description: "El marketing de influencia se ha convertido en una palanca potente para las marcas que quieren ampliar su alcance. El éxito depende de elegir bien al influencer: que encaje con los valores de la marca y con el público objetivo."
 pubDate: "2023-11-17"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 tags: ["marketing de influencia", "redes sociales", "estrategia de marca", "KOL", "engagement"]
 heroImage: "/Images/insights/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china.jpg"

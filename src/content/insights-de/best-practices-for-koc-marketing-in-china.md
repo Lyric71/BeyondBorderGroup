@@ -3,7 +3,7 @@ title: "Bewährte Praxis im KOC-Marketing in China"
 description: "Key Opinion Consumers werden zentral für den eCommerce-Erfolg in China. Diese Mikro-Influencer setzen auf Authentizität und Nähe und bieten Marken eine kosteneffiziente Alternative zu klassischen Promi-Endorsements."
 pubDate: "2024-12-07"
 updatedDate: "2026-05-15"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Xiaohongshu", "Douyin"]
 tags: ["KOC-Marketing", "China eCommerce", "Mikro-Influencer", "Social Commerce", "Konsumentenvertrauen"]

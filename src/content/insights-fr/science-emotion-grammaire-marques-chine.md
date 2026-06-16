@@ -71,6 +71,6 @@ Collgene a semé sur Xiaohongshu des récits émotionnels. Des coffrets baptisé
 
 Tmall et JD bâtissent la confiance et protègent le réachat. Douyin découvre et convertit les nouveaux acheteurs. Xiaohongshu gagne le référencement organique et la communauté. Aucune de ces plateformes n'est interchangeable. Diffuser le même message sur les trois reste l'un des moyens les plus rapides de gâcher un budget Chine.
 
-Les marques que BBG accompagne et qui croissent dans la durée partagent un trait. Elles savent quelle mission chaque plateforme doit remplir, et elles dotent chacune de moyens et d'équipes différents.
+Les marques que TheChinaPath accompagne et qui croissent dans la durée partagent un trait. Elles savent quelle mission chaque plateforme doit remplir, et elles dotent chacune de moyens et d'équipes différents.
 
 Voilà le playbook. La question n'est pas de choisir entre science et émotion. Tout l'enjeu, c'est de savoir où chacune trouve sa place.

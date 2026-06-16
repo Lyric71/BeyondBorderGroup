@@ -3,7 +3,7 @@ title: "Le commerce chinois sous IA : tendances et innovations à suivre"
 description: "Alibaba, JD.com, Baidu : la Chine a fait de l'IA la colonne vertébrale du marketing et de l'e-commerce. Lecture d'un basculement qui redéfinit l'expérience client à l'échelle du pays."
 pubDate: "2025-01-10"
 updatedDate: "2026-05-15"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 tags: ["marketing IA", "e-commerce", "Chine", "IA générative", "social commerce"]
 heroImage: "/Images/insights/chinas-ai-powered-commerce-trends-and-innovations-to-watch.png"

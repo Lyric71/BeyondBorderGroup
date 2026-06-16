@@ -1,12 +1,12 @@
-# Beyond Border Group — Insights (full text)
+# TheChinaPath — Insights (full text)
 
-> Full-text dump of every published insight on https://www.beyondbordergroup.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the Beyond Border Group team. Last regenerated: 2026-05-27.
+> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-06-16.
 
 ---
 # Maximizing Brand Impact: How the 11.11 Shopping Festival Transforms E-Commerce in China
-URL: https://www.beyondbordergroup.com/insights/11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event
+URL: https://www.thechinapath.com/insights/11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event
 Published: 2024-10-11
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: E-Commerce
 
 The 11.11 Shopping Festival has become the world's largest online shopping event. Brands can capitalize through social media engagement, influencer partnerships, and strategic localization.
@@ -105,9 +105,9 @@ Understanding and adapting to Chinese consumer trends, such as the rise of susta
 
 ---
 # A comparison between Tmall and Amazon
-URL: https://www.beyondbordergroup.com/insights/a-comparison-between-tmall-and-amazon
+URL: https://www.thechinapath.com/insights/a-comparison-between-tmall-and-amazon
 Published: 2023-02-02
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 Tmall and Amazon are two of the biggest e-commerce platforms in the world, each with its own strengths and unique features.
@@ -128,9 +128,9 @@ Tmall and Amazon are both huge players in the e-commerce industry, each with its
 
 ---
 # How AI Can Supercharge eCommerce in China?
-URL: https://www.beyondbordergroup.com/insights/ai-revolutionizing-ecommerce-in-china
+URL: https://www.thechinapath.com/insights/ai-revolutionizing-ecommerce-in-china
 Published: 2024-05-16
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: AI & Innovation
 
 China's eCommerce industry is undergoing AI-driven transformation, with the AI core industry expected to grow from 150 billion yuan in 2020 to 1 trillion yuan by 2030, creating new opportunities and enhancing sector efficiency.
@@ -167,9 +167,9 @@ AI is transforming China's eCommerce industry by enhancing consumer experiences,
 
 ---
 # Alibaba's Strategic Expansion: 1688's Launch on Taobao and Its Market Implications
-URL: https://www.beyondbordergroup.com/insights/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications
+URL: https://www.thechinapath.com/insights/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications
 Published: 2024-03-27
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 Alibaba's 1688 wholesale marketplace has launched three official online stores on Taobao to offer competitively priced goods and simplify shopping for consumers seeking bulk purchases and commercial supplies.
@@ -196,9 +196,9 @@ This strategic move by Alibaba's 1688 to open online shops on Taobao not only re
 
 ---
 # Best Practices for Finding a Chinese Name for a Brand in China
-URL: https://www.beyondbordergroup.com/insights/best-practices-for-finding-a-chinese-name-for-a-brand-in-china
+URL: https://www.thechinapath.com/insights/best-practices-for-finding-a-chinese-name-for-a-brand-in-china
 Published: 2025-01-14
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Brand & Localization
 
 Choosing a Chinese brand name requires balancing phonetic similarity, cultural meaning, and brand values. This guide explores strategies for successful localization in the Chinese market.
@@ -314,10 +314,10 @@ Whether you're targeting douyin ecommerce, crossborder ecommerce China, or socia
 
 ---
 # Best Practices for KOC / Key Opinion Consumers Marketing in China
-URL: https://www.beyondbordergroup.com/insights/best-practices-for-koc-marketing-in-china
+URL: https://www.thechinapath.com/insights/best-practices-for-koc-marketing-in-china
 Published: 2024-12-07
 Updated: 2026-05-15
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: KOLs & Livestream
 
 Key Opinion Consumers are becoming essential to eCommerce success in China. These micro-influencers prioritize authenticity and relatability, offering brands a cost-effective alternative to traditional celebrity endorsements for connecting with engaged niche audiences.
@@ -446,9 +446,9 @@ As the digital market evolves, staying ahead means being flexible, working with 
 
 ---
 # Best Practices for Successful E-Commerce Livestreaming in China
-URL: https://www.beyondbordergroup.com/insights/best-practices-for-successful-e-commerce-livestreaming-in-china
+URL: https://www.thechinapath.com/insights/best-practices-for-successful-e-commerce-livestreaming-in-china
 Published: 2024-12-06
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: KOLs & Livestream
 
 E-commerce livestreaming has transformed how brands connect with audiences in China by combining live video, real-time engagement, and smooth shopping. Platforms like Taobao Live and Douyin dominate this space, enabling businesses to boost sales and build customer relationships.
@@ -555,9 +555,9 @@ E-commerce livestreaming in China is transforming the way brands connect with th
 
 ---
 # Best Practices to Launch a CRM Program in China
-URL: https://www.beyondbordergroup.com/insights/best-practices-to-launch-a-crm-program-in-china
+URL: https://www.thechinapath.com/insights/best-practices-to-launch-a-crm-program-in-china
 Published: 2025-01-28
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Market Strategy
 
 Implementing a strong customer relationship management system is essential for business success in China's digital market. This guide outlines best practices for CRM implementation tailored to local consumer behavior and digital ecosystems.
@@ -672,9 +672,9 @@ By adopting these best practices and using the right tools, you can build strong
 
 ---
 # Best Short Video Platforms in China
-URL: https://www.beyondbordergroup.com/insights/best-short-video-platforms-in-china
+URL: https://www.thechinapath.com/insights/best-short-video-platforms-in-china
 Published: 2025-02-13
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 Short video platforms have become crucial marketing and e-commerce tools in China, with Douyin, Kuaishou, and Bilibili leading the market and reaching over 941 million monthly active users.
@@ -805,9 +805,9 @@ Companies aiming for success in China should consider working with a branding ag
 
 ---
 # Top 5 Best Social Commerce Platforms in China to Drive Your Brand's Success
-URL: https://www.beyondbordergroup.com/insights/best-social-commerce-platforms-in-china-for-ecommerce-growth
+URL: https://www.thechinapath.com/insights/best-social-commerce-platforms-in-china-for-ecommerce-growth
 Published: 2024-10-23
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 Social commerce has transformed consumer shopping in China, combining social media engagement with direct purchasing. The article explores the leading platforms driving eCommerce growth in the country's 2.5 trillion yuan market.
@@ -918,9 +918,9 @@ By utilizing China influencers, China livestreaming, and platforms that support 
 
 ---
 # Kuaishou Short-Video Marketing: A Complete Guide for Brands in China
-URL: https://www.beyondbordergroup.com/insights/boost-your-brand-in-china-the-ultimate-kuaishou-short-video-marketing-guide
+URL: https://www.thechinapath.com/insights/boost-your-brand-in-china-the-ultimate-kuaishou-short-video-marketing-guide
 Published: 2024-10-28
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 Kuaishou is a premier short-video platform distinct from Douyin, focusing on audiences in lower-tier cities and rural areas. This guide explores how brands can use live-streaming, influencer partnerships, and localized eCommerce strategies for success in China's social commerce market.
@@ -1095,9 +1095,9 @@ Kuaishou provides a distinct platform for brands in China to engage with audienc
 
 ---
 # Boost Your Marketing with the Best Chinese Search Engines in 2024
-URL: https://www.beyondbordergroup.com/insights/boost-your-marketing-with-the-best-chinese-search-engines-in-2024
+URL: https://www.thechinapath.com/insights/boost-your-marketing-with-the-best-chinese-search-engines-in-2024
 Published: 2024-09-02
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 China's internet ecosystem features distinct search engines that differ from Western platforms. Understanding Baidu, Sogou, Shenma, and other Chinese search engines is crucial for effective marketing in China's market.
@@ -1178,7 +1178,7 @@ Choosing the best Chinese search engine for your marketing efforts in 2024 depen
 
 ---
 # Brand Localization for China: Adapt & Keep Your DNA
-URL: https://www.beyondbordergroup.com/insights/brand-localization-for-china-without-losing-your-dna
+URL: https://www.thechinapath.com/insights/brand-localization-for-china-without-losing-your-dna
 Published: 2025-11-19
 Updated: 2026-05-15
 Author: Liyan Ye
@@ -1314,11 +1314,11 @@ The ones who stay balanced usually have three things:
 - Clear, creative, and experienced territories for China
 - A map of real platform journeys, so content follows how people actually move from seeing to buying
 
-This is where Beyond Border Group works with teams, connecting a protected core to a Chinese expression that can stretch without losing itself.
+This is where TheChinaPath works with teams, connecting a protected core to a Chinese expression that can stretch without losing itself.
 
 ---
 # China 2026: 8 eCommerce & Marketing Predictions
-URL: https://www.beyondbordergroup.com/insights/china-2026-8-ecommerce-marketing-predictions
+URL: https://www.thechinapath.com/insights/china-2026-8-ecommerce-marketing-predictions
 Published: 2026-01-02
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -1420,7 +1420,7 @@ If your China strategy still looks the same as it did two years ago, you're not 
 
 ---
 # China E-Commerce 2025: The Platform Map, and Why Retail Is Going Local
-URL: https://www.beyondbordergroup.com/insights/china-e-commerce-platforms-2025
+URL: https://www.thechinapath.com/insights/china-e-commerce-platforms-2025
 Published: 2025-12-22
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -1512,7 +1512,7 @@ Instant commerce retail sales will reach RMB 1.003 trillion in 2025, with growth
 
 ---
 # China Is No Longer One Market: Why Local Bets Beat National Plans
-URL: https://www.beyondbordergroup.com/insights/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025
+URL: https://www.thechinapath.com/insights/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025
 Author: Cyril Drouin
 Category: Market Strategy
 
@@ -1593,9 +1593,9 @@ The brands that adapt fastest will be those that treat China less like a single 
 
 ![](/Images/insights/2024/06/localization-2-1-1024x647.png)
 
-### Turning Insight Into Action With BBG
+### Turning Insight Into Action With TheChinaPath
 
-At BBG, we work with global brands that feel this shift in China and need a concrete way to respond.
+At TheChinaPath, we work with global brands that feel this shift in China and need a concrete way to respond.
 
 We help teams move from single national plans to structured portfolios of China bets. That can include city and cluster strategy, platform roadmaps across Douyin, Xiaohongshu, WeChat, Tmall, JD, and others, and localisation of brand and commerce experiences that still respect global DNA.
 
@@ -1603,7 +1603,7 @@ The goal is simple. Less chasing abstract "China scale", more building specific 
 
 ---
 # China Is No Longer One Market: Why Local Bets Beat National Plans
-URL: https://www.beyondbordergroup.com/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans
+URL: https://www.thechinapath.com/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans
 Published: 2026-01-06
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -1688,9 +1688,9 @@ The brands that adapt fastest will be those that treat China less like a single 
 
 ---
 
-## Turning Insight Into Action With BBG
+## Turning Insight Into Action With TheChinaPath
 
-At BBG, we work with global brands that feel this shift in China and need a concrete way to respond.
+At TheChinaPath, we work with global brands that feel this shift in China and need a concrete way to respond.
 
 We help teams move from single national plans to structured portfolios of China bets. That can include city and cluster strategy, platform roadmaps across Douyin, Xiaohongshu, WeChat, Tmall, JD and others, and localisation of brand and commerce experiences that still respect global DNA.
 
@@ -1698,9 +1698,9 @@ The goal is simple. Less chasing abstract "China scale", more building specific 
 
 ---
 # China Social Media and KOL Strategies for eCommerce Brands
-URL: https://www.beyondbordergroup.com/insights/china-social-media-and-kol-strategies-for-ecommerce-brands
+URL: https://www.thechinapath.com/insights/china-social-media-and-kol-strategies-for-ecommerce-brands
 Published: 2024-11-28
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: KOLs & Livestream
 
 Partnering with Key Opinion Leaders (KOLs) has become a powerful way to connect with Chinese consumers. This guide explores strategies for finding and collaborating with the right KOLs to maximize reach, credibility, and brand growth.
@@ -1847,10 +1847,10 @@ Finding and partnering with KOLs in China can be a transformative strategy for b
 
 ---
 # China's AI-Powered Commerce: Trends and Innovations to Watch
-URL: https://www.beyondbordergroup.com/insights/chinas-ai-powered-commerce-trends-and-innovations-to-watch
+URL: https://www.thechinapath.com/insights/chinas-ai-powered-commerce-trends-and-innovations-to-watch
 Published: 2025-01-10
 Updated: 2026-05-15
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: AI & Innovation
 
 China has rapidly integrated AI technology into marketing and commerce sectors, using platforms like Alibaba and JD.com to revolutionize customer experiences, e-commerce, and retail operations across the nation.
@@ -1977,9 +1977,9 @@ As China continues to lead the way, the collaboration between government, academ
 
 ---
 # China's eCommerce Evolution Driven by Tech, Beauty, and Luxury Sales
-URL: https://www.beyondbordergroup.com/insights/chinas-consumer-trends-in-tech-beauty-and-luxury-insights-from-6-18-sales
+URL: https://www.thechinapath.com/insights/chinas-consumer-trends-in-tech-beauty-and-luxury-insights-from-6-18-sales
 Published: 2024-06-14
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: E-Commerce
 
 China's 6.18 shopping festival revealed significant shifts in consumer preferences, with tech, beauty, and luxury brands achieving record sales figures through strategic marketing and dynamic commerce strategies.
@@ -2036,9 +2036,9 @@ The latest sales data from the 6.18 shopping festival offers valuable insights i
 
 ---
 # Digital Human: The Rise of AI-Driven Live Streaming in China
-URL: https://www.beyondbordergroup.com/insights/digital-human-the-rise-of-ai-driven-live-streaming-in-china
+URL: https://www.thechinapath.com/insights/digital-human-the-rise-of-ai-driven-live-streaming-in-china
 Published: 2024-04-25
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: AI & Innovation
 
 JD.com's digital avatar of founder Liu Qiangdong attracted 20 million viewers in one hour, demonstrating AI's potential to engage audiences and transform e-commerce through lifelike interactions.
@@ -2063,7 +2063,7 @@ This development highlights a trend that could redefine global e-commerce strate
 
 ---
 # 11.11 2025: From GMV Theater to AI-First Efficiency
-URL: https://www.beyondbordergroup.com/insights/double-11-2025-ai-ecommerce-efficiency-china
+URL: https://www.thechinapath.com/insights/double-11-2025-ai-ecommerce-efficiency-china
 Published: 2025-11-14
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -2150,7 +2150,7 @@ If you want to see this in your numbers, let's co‑create a few visuals on the 
 
 ---
 # China's Biggest E-Commerce Festival Goes Back to Old Media
-URL: https://www.beyondbordergroup.com/insights/double-11-2025-old-media-strategy-china-ecommerce
+URL: https://www.thechinapath.com/insights/double-11-2025-old-media-strategy-china-ecommerce
 Published: 2025-11-14
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -2248,10 +2248,10 @@ It is an opening.
 
 ---
 # Double 11 2025: The End of China's Shopping Wars
-URL: https://www.beyondbordergroup.com/insights/double-11-2025-the-end-of-chinas-shopping-wars
+URL: https://www.thechinapath.com/insights/double-11-2025-the-end-of-chinas-shopping-wars
 Published: 2025-11-14
 Updated: 2026-05-15
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: E-Commerce
 
 China's Double 11 shopping festival has evolved from a simple one-day event into a complex five-week marathon, with slowing growth rates and eroding consumer trust as brands face margin compression and shoppers become savvier retail operators.
@@ -2375,7 +2375,7 @@ Which is exactly why this is the right moment to declare your own Last 11.11 Pla
 
 ---
 # Douyin Live Commerce in 2025: Why Store-Led Rooms Beat Celebrity Events
-URL: https://www.beyondbordergroup.com/insights/douyin-live-commerce-2025-store-led-livestream-strategy
+URL: https://www.thechinapath.com/insights/douyin-live-commerce-2025-store-led-livestream-strategy
 Published: 2026-01-06
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -2470,20 +2470,20 @@ It is whether you can run Douyin like an always-on retail channel, where creativ
 
 ---
 # Empowering Women in China's Digital Commerce: 2024 Trends
-URL: https://www.beyondbordergroup.com/insights/empowering-women-in-chinas-digital-commerce-2024-trends
+URL: https://www.thechinapath.com/insights/empowering-women-in-chinas-digital-commerce-2024-trends
 Published: 2024-06-14
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Market Strategy
 
 Women entrepreneurs are making significant strides in China's eCommerce landscape, with digital platforms like Taobao enabling business opportunities and driving economic growth globally.
 
 ## The Rise of Women Entrepreneurs in China's Digital Commerce Scene
 
-The rise of [digital commerce in China](https://beyondbordergroup.com/ecommerce-services-in-china/) has been a game-changer for women entrepreneurs, especially in 2024. With the advent of accessible online platforms and evolving eCommerce strategies, women are finding new opportunities to launch and grow their businesses. This shift is transforming individual lives and driving economic growth globally.
+The rise of [digital commerce in China](https://www.thechinapath.com/ecommerce-services-in-china/) has been a game-changer for women entrepreneurs, especially in 2024. With the advent of accessible online platforms and evolving eCommerce strategies, women are finding new opportunities to launch and grow their businesses. This shift is transforming individual lives and driving economic growth globally.
 
 ## Empowering Women Entrepreneurs through Digital Platforms
 
-Women-owned businesses are making significant strides in the [eCommerce China](https://beyondbordergroup.com/ecommerce-services-in-china/) landscape. On platforms like [Taobao](/grow-in-china/cross-border-ecommerce), women have emerged as leading sellers, accounting for over half of the top 100 best-selling stores. This trend reflects a broader global movement where women are increasingly taking the helm of early-stage businesses.
+Women-owned businesses are making significant strides in the [eCommerce China](https://www.thechinapath.com/ecommerce-services-in-china/) landscape. On platforms like [Taobao](/grow-in-china/cross-border-ecommerce), women have emerged as leading sellers, accounting for over half of the top 100 best-selling stores. This trend reflects a broader global movement where women are increasingly taking the helm of early-stage businesses.
 
 The success stories of young women entrepreneurs in China, particularly on Alibaba's Taobao, are remarkable. Last year, over 30% of new businesses on Taobao were owned by women born after 2000. Many of these entrepreneurs hail from third and fourth-tier cities, illustrating that digital commerce is democratizing business opportunities beyond metropolitan areas.
 
@@ -2495,7 +2495,7 @@ In China, women entrepreneurs are using digital platforms to overcome traditiona
 
 ## The Role of Digital Commerce in Bridging the Gender Gap
 
-Digital commerce platforms like [Taobao](https://beyondbordergroup.com/ecommerce-services-in-china/) and Lazada are instrumental in leveling the playing field for women entrepreneurs. These platforms offer low barriers to entry, enabling aspiring business owners to start selling their goods with minimal initial investment. This model has proven especially beneficial for women, who often face greater challenges in securing funding and resources.
+Digital commerce platforms like [Taobao](https://www.thechinapath.com/ecommerce-services-in-china/) and Lazada are instrumental in leveling the playing field for women entrepreneurs. These platforms offer low barriers to entry, enabling aspiring business owners to start selling their goods with minimal initial investment. This model has proven especially beneficial for women, who often face greater challenges in securing funding and resources.
 
 For instance, Lorina Tan, a Filipino marketer-turned-entrepreneur, co-founded the baby-care brand Tiny Buds using knowledge gained from the e-commerce platform Lazada. Stories like Tan's underscore the transformative power of digital commerce in empowering women to build and scale successful businesses.
 
@@ -2523,7 +2523,7 @@ The empowerment of women entrepreneurs through digital commerce is a transformat
 
 ---
 # How Foreign Brands Test the Chinese Market. And Why Most Get It Wrong.
-URL: https://www.beyondbordergroup.com/insights/foreign-brands-in-china-why-most-market-tests-fail
+URL: https://www.thechinapath.com/insights/foreign-brands-in-china-why-most-market-tests-fail
 Published: 2026-03-25
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -2583,9 +2583,9 @@ The brands that win in China are the ones that showed up prepared and stayed lon
 
 ---
 # Effective Green Marketing Campaigns by Leading Brands in China
-URL: https://www.beyondbordergroup.com/insights/green-marketing-in-china-how-brands-are-embracing-sustainability
+URL: https://www.thechinapath.com/insights/green-marketing-in-china-how-brands-are-embracing-sustainability
 Published: 2024-06-17
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Brand & Localization
 
 Sustainability has become a core marketing focus for Chinese brands, with campaigns highlighting environmental commitment and resonating with eco-conscious consumers making sustainable purchasing decisions.
@@ -2634,7 +2634,7 @@ Incorporating sustainability into a brand's core values and marketing strategies
 
 ---
 # Navigating Advertising Laws in China: Essential Insights for International Brands
-URL: https://www.beyondbordergroup.com/insights/how-chinas-advertising-laws-impact-global-brands
+URL: https://www.thechinapath.com/insights/how-chinas-advertising-laws-impact-global-brands
 Published: 2024-10-29
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -2720,7 +2720,7 @@ China's advertising laws are fundamental to ensuring a fair, safe, and culturall
 
 ---
 # How JD Is Turning Offline Stores Into Experience Hubs
-URL: https://www.beyondbordergroup.com/insights/how-jd-mall-turns-offline-stores-into-experience-hubs
+URL: https://www.thechinapath.com/insights/how-jd-mall-turns-offline-stores-into-experience-hubs
 Published: 2025-11-26
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -2798,7 +2798,7 @@ A few concrete moves:
 
 ## Turning JD Mall into a Brand Engine, Not a Side Channel
 
-At Beyond Border Group, we help global brands translate JD's ecosystem into clear decisions mapping where JD Mall fits in your broader China portfolio, which cities and formats to prioritise, and how to structure pilots instead of one-size-fits-all rollouts.
+At TheChinaPath, we help global brands translate JD's ecosystem into clear decisions mapping where JD Mall fits in your broader China portfolio, which cities and formats to prioritise, and how to structure pilots instead of one-size-fits-all rollouts.
 
 We work with brands to design in-store experiences, local community hooks, and staff playbooks that work on the ground, from demo flows and class formats to Xiaohongshu content angles that feel native to Chinese consumers, not imported.
 
@@ -2808,9 +2808,9 @@ If you are rethinking your JD strategy or planning how to engage with JD Mall, w
 
 ---
 # How to Apply for an ICP License for Your Website in China
-URL: https://www.beyondbordergroup.com/insights/how-to-apply-for-an-icp-license-for-your-website
+URL: https://www.thechinapath.com/insights/how-to-apply-for-an-icp-license-for-your-website
 Published: 2025-02-05
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Compliance & Setup
 
 An ICP License is a mandatory permit from China's Ministry of Industry and Information Technology that allows websites to legally operate within the country. This guide covers who needs one, application steps, and business benefits.
@@ -2972,9 +2972,9 @@ Taking the time to understand and navigate this process can seem daunting, but t
 
 ---
 # Comprehensive Guide to Finding a Distributor for Your Products in China in 2024
-URL: https://www.beyondbordergroup.com/insights/how-to-find-a-distributor-for-your-products-in-china-in-2024
+URL: https://www.thechinapath.com/insights/how-to-find-a-distributor-for-your-products-in-china-in-2024
 Published: 2024-06-28
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: E-Commerce
 
 This guide provides an in-depth understanding of China's distribution landscape and offers practical steps to find and work with distributors to ensure product success in this dynamic market.
@@ -3097,9 +3097,9 @@ Successfully finding and partnering with the right distributor in China can sign
 
 ---
 # How to Host Your Website in China for Maximum Marketing Impact
-URL: https://www.beyondbordergroup.com/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact
+URL: https://www.thechinapath.com/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact
 Published: 2025-01-24
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Compliance & Setup
 
 Hosting a website in China requires careful planning, compliance with local regulations, and understanding the digital ecosystem. This guide walks through essential steps including domain registration, securing an ICP license, and optimizing for local search engines.
@@ -3298,9 +3298,9 @@ With the right strategy, your business can tap the full potential of China's dig
 
 ---
 # How to localize a Brand for China ?
-URL: https://www.beyondbordergroup.com/insights/how-to-localize-a-brand-for-china
+URL: https://www.thechinapath.com/insights/how-to-localize-a-brand-for-china
 Published: 2023-02-03
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Brand & Localization
 
 Localizing a brand for China requires understanding cultural norms, translating content, adapting to local preferences, and complying with regulations to successfully reach this vast consumer market.
@@ -3345,9 +3345,9 @@ Localizing a brand for the Chinese market requires a deep understanding of the c
 
 ---
 # How to Localize Brand Content for China
-URL: https://www.beyondbordergroup.com/insights/how-to-localize-brand-content-for-china
+URL: https://www.thechinapath.com/insights/how-to-localize-brand-content-for-china
 Published: 2025-02-11
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Brand & Localization
 
 Expanding into the Chinese market requires more than translation. Localization involves deep cultural adaptation, strategic use of local digital platforms, and alignment with Chinese consumer preferences and values.
@@ -3451,9 +3451,9 @@ Whether you're an established brand or just entering the market, adopting these 
 
 ---
 # How to Localize Your Website for China: Tips for Global Marketers
-URL: https://www.beyondbordergroup.com/insights/how-to-localize-your-website-for-china-tips-for-global-marketers
+URL: https://www.thechinapath.com/insights/how-to-localize-your-website-for-china-tips-for-global-marketers
 Published: 2025-01-21
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Brand & Localization
 
 Localizing your website for China requires more than translation. It involves navigating regulatory requirements, cultural adaptation, and technical adjustments to succeed in the Chinese digital market.
@@ -3574,9 +3574,9 @@ Effectively localizing your website for the Chinese market is crucial for captur
 
 ---
 # How to Sell on Douyin in China: Best Practices for Success in 2024
-URL: https://www.beyondbordergroup.com/insights/how-to-sell-on-douyin-boost-sales-with-effective-marketing-strategies
+URL: https://www.thechinapath.com/insights/how-to-sell-on-douyin-boost-sales-with-effective-marketing-strategies
 Published: 2024-10-21
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: KOLs & Livestream
 
 Douyin, China's TikTok version with 750 million daily active users, combines social media and shopping. Success requires using live streaming, KOL partnerships, and targeted content strategies.
@@ -3702,16 +3702,16 @@ Douyin offers businesses a powerful platform to engage with Chinese consumers th
 
 ---
 # How Xianyu Transforms Bargains into Side Hustles for Young Entrepreneurs in China
-URL: https://www.beyondbordergroup.com/insights/how-xianyu-powers-young-entrepreneurs-side-hustles-in-china
+URL: https://www.thechinapath.com/insights/how-xianyu-powers-young-entrepreneurs-side-hustles-in-china
 Published: 2024-07-12
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 Alibaba's Xianyu platform is evolving beyond second-hand goods to become a hub where young entrepreneurs monetize skills and hobbies through a new side job marketplace.
 
 ## How Xianyu Transforms Bargains into Side Hustles for Young Entrepreneurs in China
 
-Alibaba's Xianyu, originally known for its extensive array of second-hand goods, is evolving into a hub for young entrepreneurs seeking side hustles. As China's largest consumer-to-consumer platform for second-hand goods, Xianyu is moving beyond mere bargains to offer a platform where users can monetize their hobbies and skills. This shift is opening new avenues in China's dynamic [e-commerce landscape](https://beyondbordergroup.com/ecommerce-in-china/), particularly among budget-conscious young consumers. This evolution aligns with the broader trends in social commerce China, where young people are using [platforms](/learn-china/platforms) to create income streams from their skills and hobbies.
+Alibaba's Xianyu, originally known for its extensive array of second-hand goods, is evolving into a hub for young entrepreneurs seeking side hustles. As China's largest consumer-to-consumer platform for second-hand goods, Xianyu is moving beyond mere bargains to offer a platform where users can monetize their hobbies and skills. This shift is opening new avenues in China's dynamic [e-commerce landscape](https://www.thechinapath.com/ecommerce-in-china/), particularly among budget-conscious young consumers. This evolution aligns with the broader trends in social commerce China, where young people are using [platforms](/learn-china/platforms) to create income streams from their skills and hobbies.
 
 ## The Rise of Side Hustles on Xianyu
 
@@ -3719,11 +3719,11 @@ Xianyu's latest feature is a side job marketplace that enables users to offer va
 
 ## Features and Popular Services on Xianyu
 
-Xianyu's side job marketplace offers users a platform to advertise their services and connect with potential customers. The [marketplace](https://beyondbordergroup.com/tmall-taobao-%e6%b7%98%e5%ae%9d-jd-%e4%ba%ac%e4%b8%9c-ecommerce-growth-china/) is designed to be user-friendly, allowing sellers to detail their work experience, upload resumes, and outline their skill sets. This feature provides prospective customers with an easy way to search for services and review the seller's qualifications before placing an order. Certain services are particularly popular among young people on Xianyu. Education and training, pet services, and online consultation are some of the top categories that attract young entrepreneurs. These services offer flexibility and the potential for significant earnings, making them attractive options for those looking to supplement their income. Over the past decade, Xianyu has evolved into more than just a platform for buying and selling goods. It has become a vibrant online and offline community where users can connect over shared interests and collaborate on various projects. This sense of community is a key factor in Xianyu's success, as it fosters engagement and loyalty among its users.
+Xianyu's side job marketplace offers users a platform to advertise their services and connect with potential customers. The [marketplace](https://www.thechinapath.com/tmall-taobao-%e6%b7%98%e5%ae%9d-jd-%e4%ba%ac%e4%b8%9c-ecommerce-growth-china/) is designed to be user-friendly, allowing sellers to detail their work experience, upload resumes, and outline their skill sets. This feature provides prospective customers with an easy way to search for services and review the seller's qualifications before placing an order. Certain services are particularly popular among young people on Xianyu. Education and training, pet services, and online consultation are some of the top categories that attract young entrepreneurs. These services offer flexibility and the potential for significant earnings, making them attractive options for those looking to supplement their income. Over the past decade, Xianyu has evolved into more than just a platform for buying and selling goods. It has become a vibrant online and offline community where users can connect over shared interests and collaborate on various projects. This sense of community is a key factor in Xianyu's success, as it fosters engagement and loyalty among its users.
 
 ## Community and Offline Presence
 
-In addition to its [online marketplace](https://beyondbordergroup.com/ecommerce-in-china/), Xianyu has expanded its reach into the physical world with the opening of brick-and-mortar shops in Hangzhou and Shanghai. These shops provide a convenient way for users to send items to the platform for sorting and pricing, enhancing the overall user experience. Xianyu is not only a marketplace but also a platform where users can develop and showcase their skills. Many sellers use their experience on Xianyu to build their resumes, highlighting their abilities in product description writing, price negotiation, and customer service. This experience can be valuable in various professional contexts, providing users with a competitive edge in the job market. Xianyu has fostered a strong sense of community among its users. The platform serves as a forum where hobbyists and collectors can exchange ideas and collaborate on projects. This community aspect enhances user engagement and provides additional value beyond the basic buying and selling functions.
+In addition to its [online marketplace](https://www.thechinapath.com/ecommerce-in-china/), Xianyu has expanded its reach into the physical world with the opening of brick-and-mortar shops in Hangzhou and Shanghai. These shops provide a convenient way for users to send items to the platform for sorting and pricing, enhancing the overall user experience. Xianyu is not only a marketplace but also a platform where users can develop and showcase their skills. Many sellers use their experience on Xianyu to build their resumes, highlighting their abilities in product description writing, price negotiation, and customer service. This experience can be valuable in various professional contexts, providing users with a competitive edge in the job market. Xianyu has fostered a strong sense of community among its users. The platform serves as a forum where hobbyists and collectors can exchange ideas and collaborate on projects. This community aspect enhances user engagement and provides additional value beyond the basic buying and selling functions.
 
 ![](/Images/insights/2024/07/c63d9d33e9483fa6243735ea3797ddcd8b95dd1c.png)
 
@@ -3735,13 +3735,13 @@ Xianyu's growth is closely linked with the broader China social media landscape.
 
 Looking ahead, Xianyu is poised to continue its growth as a hub for side hustles and entrepreneurial activities. The platform's ability to adapt to the changing needs of its users and provide opportunities for income generation will be key to its ongoing success. Xianyu's focus on empowering young users is likely to remain a central aspect of its strategy. By offering a diverse range of services and creating a supportive community, Xianyu helps young entrepreneurs explore new opportunities and achieve financial independence. This evolution not only benefits individual users but also contributes to the broader [e-commerce](/grow-in-china/cross-border-ecommerce) landscape in China, fostering innovation and entrepreneurial spirit among the younger generation. Alibaba's Xianyu platform is transforming the way young entrepreneurs approach side hustles. By offering a marketplace for both second-hand goods and diverse services, Xianyu empowers users to turn their hobbies and skills into viable income streams.
 
-This transformation is particularly significant in the context of the [China eCommerce ecosystem](https://beyondbordergroup.com/social-commerce-in-china/), where young entrepreneurs are increasingly looking for ways to use digital platforms for economic opportunities. The integration with China social media platforms like WeChat, Douyin, and Weibo, as well as the broader trend of social marketing in China, underscores Xianyu's role in shaping the future of eCommerce in China. By staying at the forefront of these trends, Xianyu not only supports individual entrepreneurs but also contributes to the ongoing evolution of China's dynamic e-commerce landscape.
+This transformation is particularly significant in the context of the [China eCommerce ecosystem](https://www.thechinapath.com/social-commerce-in-china/), where young entrepreneurs are increasingly looking for ways to use digital platforms for economic opportunities. The integration with China social media platforms like WeChat, Douyin, and Weibo, as well as the broader trend of social marketing in China, underscores Xianyu's role in shaping the future of eCommerce in China. By staying at the forefront of these trends, Xianyu not only supports individual entrepreneurs but also contributes to the ongoing evolution of China's dynamic e-commerce landscape.
 
 ---
 # Emerging Trends and Business Strategies of Independent Chinese Designers in 2024
-URL: https://www.beyondbordergroup.com/insights/independent-chinese-designers-2024-trends-marketing-and-commerce-insights
+URL: https://www.thechinapath.com/insights/independent-chinese-designers-2024-trends-marketing-and-commerce-insights
 Published: 2024-06-25
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Brand & Localization
 
 Independent Chinese designers are reshaping the fashion landscape through cultural integration, sustainability focus, and digital innovation. The article explores how these homegrown brands are gaining domestic and international recognition.
@@ -3808,9 +3808,9 @@ The future of Chinese fashion looks bright, with independent designers leading t
 
 ---
 # Exploring Luxury Brand Marketing Trends in China
-URL: https://www.beyondbordergroup.com/insights/luxury-brand-trends-mastering-social-media-in-china
+URL: https://www.thechinapath.com/insights/luxury-brand-trends-mastering-social-media-in-china
 Published: 2024-06-07
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Market Strategy
 
 China's luxury market evolves through technological advances and demographic shifts. Brands must address three key challenges: reaching customers, building loyalty, and using data for growth.
@@ -3859,9 +3859,9 @@ Personalization is key to providing a superior customer experience. Luxury brand
 
 ---
 # Marketing Strategies Revolutionizing AI-Integrated PCs in China
-URL: https://www.beyondbordergroup.com/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china
+URL: https://www.thechinapath.com/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china
 Published: 2024-06-07
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: AI & Innovation
 
 AI integration is transforming personal computers into intelligent assistants, reshaping how these devices are marketed in China through innovative strategies focused on education, affordability, and ecosystem integration.
@@ -3905,8 +3905,8 @@ As AI-integrated PCs become more advanced and affordable, they are expected to g
 The rise of AI-integrated PCs in China is more than just a technological advancement; it represents a significant shift in marketing strategies. By highlighting unique selling points, educating consumers, using [influencer](/grow-in-china/influencers-kols) partnerships, and focusing on affordability, manufacturers are poised to revolutionize the personal computing market. The transformation of PCs into intelligent personal assistants marks the dawn of a new era in personal computing, driven by innovative marketing and strategic collaborations.
 
 ---
-# Navigating Cross-Border Commerce Livestreaming: Insights from Beyond Border Group's CEO Cyril Drouin
-URL: https://www.beyondbordergroup.com/insights/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin
+# Navigating Cross-Border Commerce Livestreaming: Insights from TheChinaPath's CEO Cyril Drouin
+URL: https://www.thechinapath.com/insights/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin
 Published: 2024-11-05
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -3918,7 +3918,7 @@ CEO Cyril Drouin discusses live broadcast commerce, brand localization, KOLs, an
 
 ### Introduce yourself
 
-My name is Cyril Drouin, a French national who has lived in China for many years. After spending seven years as the CEO of Publicis China, where I led initiatives in commerce, performance marketing, and creative work, I founded a [cross-border](/enter-china/cross-border-setup) agency called Beyond Border Group. Our agency focuses on helping Chinese brands expand internationally while supporting global companies entering the Chinese market. We offer a comprehensive range of services, including branding, content creation, social media management, media planning, public relations, exhibitions, distribution, logistics, and more.
+My name is Cyril Drouin, a French national who has lived in China for many years. After spending seven years as the CEO of Publicis China, where I led initiatives in commerce, performance marketing, and creative work, I founded a [cross-border](/enter-china/cross-border-setup) agency called TheChinaPath. Our agency focuses on helping Chinese brands expand internationally while supporting global companies entering the Chinese market. We offer a comprehensive range of services, including branding, content creation, social media management, media planning, public relations, exhibitions, distribution, logistics, and more.
 
 ![](/Images/insights/2024/11/1727424689670.jpg)
 
@@ -3952,9 +3952,9 @@ In the next five years, I anticipate a convergence of eCommerce approaches acros
 
 ---
 # Optimizing Your Brand: Choosing the Right Influencer
-URL: https://www.beyondbordergroup.com/insights/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+URL: https://www.thechinapath.com/insights/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
 Published: 2023-11-17
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: KOLs & Livestream
 
 Influencer marketing has emerged as a powerful strategy for brands seeking to expand their reach. Success depends on selecting the right influencers who align with your brand values and target audience.
@@ -4049,7 +4049,7 @@ Choosing the right influencer for your brand is a strategic decision that can si
 
 ---
 # When PIPL Bites: Dior's Wake-Up Call for Global Brands in China
-URL: https://www.beyondbordergroup.com/insights/pipl-compliance-in-china-diors-wake-up-call-for-global-brands
+URL: https://www.thechinapath.com/insights/pipl-compliance-in-china-diors-wake-up-call-for-global-brands
 Published: 2025-11-26
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -4124,7 +4124,7 @@ If you are building for the long term in China, PIPL is more than another hurdle
 
 ---
 # Science + Emotion: China's New Brand Playbook
-URL: https://www.beyondbordergroup.com/insights/science-emotion-chinas-new-brand-playbook
+URL: https://www.thechinapath.com/insights/science-emotion-chinas-new-brand-playbook
 Published: 2026-03-12
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -4192,9 +4192,9 @@ That is the playbook. It is not about picking science or emotion. It is about kn
 
 ---
 # Exploring Social Commerce in China Platforms: Strategies and Market Impact
-URL: https://www.beyondbordergroup.com/insights/social-commerce-china-platforms-strategies-best-practices
+URL: https://www.thechinapath.com/insights/social-commerce-china-platforms-strategies-best-practices
 Published: 2024-06-24
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 Social commerce has revolutionized online shopping in China through platforms like Xiaohongshu, WeChat, and Douyin, using user-generated content, influencers, and live streaming to create dynamic shopping experiences.
@@ -4308,9 +4308,9 @@ Social commerce platforms in China have revolutionized the way consumers shop an
 
 ---
 # Storytelling in B2B Marketing: Enhancing Brand Connection in China
-URL: https://www.beyondbordergroup.com/insights/storytelling-in-b2b-marketing-enhancing-brand-connection-in-china
+URL: https://www.thechinapath.com/insights/storytelling-in-b2b-marketing-enhancing-brand-connection-in-china
 Published: 2024-04-16
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Brand & Localization
 
 Storytelling is central in China's B2B marketing landscape, transforming how companies engage audiences and drive conversions by creating emotionally resonant narratives that deepen customer connections.
@@ -4351,7 +4351,7 @@ Storytelling in B2B marketing transcends being just a trend; it's fundamental to
 
 ---
 # Taobao Flash Sale and the 30-Minute Shift: Why China Retail Is Going Deeper Online to Offline
-URL: https://www.beyondbordergroup.com/insights/taobao-flash-sale-and-chinas-30-minute-retail
+URL: https://www.thechinapath.com/insights/taobao-flash-sale-and-chinas-30-minute-retail
 Published: 2025-12-22
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -4503,15 +4503,15 @@ If you cannot answer these, you are not behind on marketing. You are behind on t
 
 Chinese retail is not choosing between online and offline. It is compressing them into one experience. Taobao Flash Sale is a signal that the next phase of growth belongs to brands who can connect demand creation with local fulfilment, without losing brand control.
 
-The question is not whether this trend continues. The question is whether your China team is structured to win inside it. BBG helps global brands adapt to China's platform reality with practical execution. That includes Taobao and Tmall strategy, instant retail readiness planning, content and merchandising systems for conversion, and integration across key channels like Douyin, Xiaohongshu, and WeChat.
+The question is not whether this trend continues. The question is whether your China team is structured to win inside it. TheChinaPath helps global brands adapt to China's platform reality with practical execution. That includes Taobao and Tmall strategy, instant retail readiness planning, content and merchandising systems for conversion, and integration across key channels like Douyin, Xiaohongshu, and WeChat.
 
 If you are exploring Taobao Flash Sale, we can help you define the right assortment lane, partner setup, and go-to-market plan, then localize the assets and operating rhythm needed to make it work city by city.
 
 ---
 # How Taobao and Tmall Are Revolutionizing Consumer Shopping and Merchant Support with AI
-URL: https://www.beyondbordergroup.com/insights/taobao-transforming-shopping-and-merchant-support-with-ai-in-ecommerce-china
+URL: https://www.thechinapath.com/insights/taobao-transforming-shopping-and-merchant-support-with-ai-in-ecommerce-china
 Published: 2024-07-12
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: AI & Innovation
 
 Alibaba Group's Taobao and Tmall use AI technologies to enhance consumer shopping experiences and boost merchant operational efficiency through tools like Taobao Wenwen, visual generation, and smart customer service.
@@ -4580,9 +4580,9 @@ Taobao and Tmall's integration of AI is revolutionizing the e-commerce landscape
 
 ---
 # The Cost of Chinese Influencers: Case Studies and Marketing Insights
-URL: https://www.beyondbordergroup.com/insights/the-cost-of-chinese-kols-case-studies-and-marketing-insights
+URL: https://www.thechinapath.com/insights/the-cost-of-chinese-kols-case-studies-and-marketing-insights
 Published: 2024-11-29
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: KOLs & Livestream
 
 This article examines KOL pricing across Chinese platforms like Douyin and Xiaohongshu, providing cost breakdowns and case studies of successful influencer campaigns that helped brands drive engagement and sales.
@@ -4744,9 +4744,9 @@ By learning from case studies and understanding the nuances of Chinese consumer 
 
 ---
 # The power of Wechat QR Codes for businesses in China
-URL: https://www.beyondbordergroup.com/insights/the-power-of-wechat-qr-codes-for-businesses-in-china
+URL: https://www.thechinapath.com/insights/the-power-of-wechat-qr-codes-for-businesses-in-china
 Published: 2025-02-07
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 WeChat QR codes have become essential tools for businesses in China's digital market, with 95.7% of mobile payment users relying on them for transactions, engagement, and marketing.
@@ -4866,9 +4866,9 @@ Whether you're promoting products, facilitating payments, or growing your follow
 
 ---
 # The Ultimate Guide to WeChat Channels for Brands
-URL: https://www.beyondbordergroup.com/insights/the-ultimate-guide-to-wechat-channels-for-brands
+URL: https://www.thechinapath.com/insights/the-ultimate-guide-to-wechat-channels-for-brands
 Published: 2024-11-01
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 WeChat Channels is a content-sharing feature enabling brands to reach engaged audiences through short videos and photos. Learn how to use this platform for eCommerce and brand growth in China.
@@ -4958,9 +4958,9 @@ WeChat Channels has rapidly become a key tool in China digital marketing, offeri
 
 ---
 # Top 5 Video and Livestreaming Platforms in China
-URL: https://www.beyondbordergroup.com/insights/top-5-video-and-livestreaming-platforms-in-china
+URL: https://www.thechinapath.com/insights/top-5-video-and-livestreaming-platforms-in-china
 Published: 2024-12-27
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: KOLs & Livestream
 
 Livestreaming has become a cornerstone of China's digital commerce ecosystem. This guide explores the top five platforms reshaping how brands engage with consumers and drive sales through interactive real-time experiences.
@@ -5065,9 +5065,9 @@ For brands looking to succeed in this highly competitive market, adopting livest
 
 ---
 # Where Brands Win Attention: Top Chinese Social Media Platforms in 2024
-URL: https://www.beyondbordergroup.com/insights/top-chinese-social-media-platforms-for-2024-marketing
+URL: https://www.thechinapath.com/insights/top-chinese-social-media-platforms-for-2024-marketing
 Published: 2024-08-10
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 Chinese social media platforms like WeChat, Weibo, and TikTok offer global brands unprecedented opportunities to engage with one of the largest consumer bases in the world. Understanding and using these platforms is crucial for brands aiming to expand their presence in the Chinese market.
@@ -5184,9 +5184,9 @@ In 2024, using Chinese social media platforms is essential for global brands aim
 
 ---
 # Ultimate Guide to Capturing the Hearts of Chinese Luxury Travelers
-URL: https://www.beyondbordergroup.com/insights/top-digital-marketing-strategies-to-attract-chinese-luxury-travelers
+URL: https://www.thechinapath.com/insights/top-digital-marketing-strategies-to-attract-chinese-luxury-travelers
 Published: 2024-07-08
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Market Strategy
 
 Chinese luxury travelers increasingly seek authentic cultural immersion and personalized experiences. Travel providers must adapt with innovative digital engagement strategies and emotional storytelling to capture this sophisticated market.
@@ -5295,9 +5295,9 @@ Capturing the hearts of Chinese luxury travelers requires a deep understanding o
 
 ---
 # China's 2025 eCommerce Shopping Festivals Calendar
-URL: https://www.beyondbordergroup.com/insights/top-e-commerce-events-in-china-2025-dates-and-marketing-tips
+URL: https://www.thechinapath.com/insights/top-e-commerce-events-in-china-2025-dates-and-marketing-tips
 Published: 2025-01-09
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: E-Commerce
 
 A comprehensive guide to major e-commerce shopping festivals in China during 2025, including strategic marketing tips for brands looking to capitalize on these peak selling periods.
@@ -5517,9 +5517,9 @@ For international brands, 2025 is the year to make a mark in cross-border eComme
 
 ---
 # Top eCommerce Influencers in China 2024
-URL: https://www.beyondbordergroup.com/insights/top-ecommerce-influencers-in-china-2024
+URL: https://www.thechinapath.com/insights/top-ecommerce-influencers-in-china-2024
 Published: 2024-12-18
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: KOLs & Livestream
 
 Chinese eCommerce is driven by Key Opinion Leaders (KOLs) who bridge the gap between brands and consumers through authenticity and creativity on platforms like Xiaohongshu and Douyin.
@@ -5652,9 +5652,9 @@ The eCommerce revolution in China continues to flourish, driven by the creativit
 
 ---
 # The Digital Stage: How China's CEOs Are Transforming Brand Engagement through Livestreaming
-URL: https://www.beyondbordergroup.com/insights/transforming-brand-engagement-through-livestreaming-in-china
+URL: https://www.thechinapath.com/insights/transforming-brand-engagement-through-livestreaming-in-china
 Published: 2024-05-10
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: KOLs & Livestream
 
 Chinese corporate executives are stepping into livestreaming roles to enhance brand visibility and sales, following trends set by global tech leaders while balancing professionalism with authenticity.
@@ -5675,9 +5675,9 @@ Strategic integration of CEO livestreaming into broader marketing frameworks is 
 
 ---
 # Guide to Tmall Media Costs in China | Optimize Your Brand's Investment
-URL: https://www.beyondbordergroup.com/insights/ultimate-guide-to-tmall-media-costs-in-china
+URL: https://www.thechinapath.com/insights/ultimate-guide-to-tmall-media-costs-in-china
 Published: 2024-10-30
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: E-Commerce
 
 Tmall, Alibaba's leading B2C eCommerce platform in China, offers brands access to over 500 million monthly users. This guide covers setup fees, advertising options, content marketing strategies, and participation in major shopping events to help brands maximize ROI.
@@ -5773,9 +5773,9 @@ As China's eCommerce platform landscape continues to expand, Tmall remains a cri
 
 ---
 # Ultimate Guide to Using WordPress in China
-URL: https://www.beyondbordergroup.com/insights/ultimate-guide-to-using-wordpress-in-china
+URL: https://www.thechinapath.com/insights/ultimate-guide-to-using-wordpress-in-china
 Published: 2025-02-03
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Compliance & Setup
 
 WordPress can be successfully used to build websites in China, but requires specific optimizations for hosting, performance, and SEO due to unique internet regulations and blocked services.
@@ -5916,9 +5916,9 @@ For businesses engaged in Chinese e-commerce or cross-border e-commerce in China
 
 ---
 # Explosive Growth in the Chinese Luxury Travel Segment | 2024 Insights
-URL: https://www.beyondbordergroup.com/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment
+URL: https://www.thechinapath.com/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment
 Published: 2024-07-08
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Market Strategy
 
 China's luxury travel market has expanded exponentially over the past decade, driven by rising affluence, increased spending power, and evolving consumer preferences toward authentic, culturally immersive experiences rather than mere displays of wealth.
@@ -5993,9 +5993,9 @@ The Chinese luxury travel market is poised for continued growth, driven by evolv
 
 ---
 # Understanding Today's Luxury Chinese Travelers: Preferences and Motivations
-URL: https://www.beyondbordergroup.com/insights/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers
+URL: https://www.thechinapath.com/insights/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers
 Published: 2024-07-08
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Market Strategy
 
 The luxury Chinese traveler represents a growing demographic reshaping global travel markets. These affluent consumers from major urban centers seek premium experiences that blend exclusivity, cultural exploration, and personal growth.
@@ -6048,9 +6048,9 @@ The luxury Chinese travel market is poised for continued growth and transformati
 
 ---
 # UX Design for Global Markets: Chinese vs. Western Approaches
-URL: https://www.beyondbordergroup.com/insights/ux-design-for-global-markets-chinese-vs-western-approaches
+URL: https://www.thechinapath.com/insights/ux-design-for-global-markets-chinese-vs-western-approaches
 Published: 2025-01-17
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Brand & Localization
 
 Chinese and Western websites differ significantly in UX design due to cultural, linguistic, and technological factors. Understanding these distinctions is essential for companies expanding globally or entering the Chinese ecommerce market.
@@ -6201,10 +6201,10 @@ The UX design differences between Chinese and Western websites reflect deeply in
 
 ---
 # The Ultimate Guide to WeChat Pay vs. Alipay for eCommerce in China
-URL: https://www.beyondbordergroup.com/insights/wechat-pay-vs-alipay-best-mobile-payment-for-ecommerce
+URL: https://www.thechinapath.com/insights/wechat-pay-vs-alipay-best-mobile-payment-for-ecommerce
 Published: 2024-07-24
 Updated: 2026-05-15
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 WeChat Pay and Alipay dominate China's mobile payment ecosystem. Understanding their differences helps businesses choose the right platform for smooth customer experience in eCommerce.
@@ -6302,9 +6302,9 @@ In conclusion, both WeChat Pay and Alipay offer distinct advantages for business
 
 ---
 # Weibo Marketing Guide: Mastering Social Commerce in China
-URL: https://www.beyondbordergroup.com/insights/weibo-marketing-guide-mastering-social-commerce-in-china
+URL: https://www.thechinapath.com/insights/weibo-marketing-guide-mastering-social-commerce-in-china
 Published: 2024-12-13
-Author: Beyond Border Group
+Author: TheChinaPath
 Category: Platforms
 
 Weibo, China's leading social platform with over 600 million monthly active users, offers significant opportunities for brands to engage tech-savvy consumers. This guide covers account setup, content strategy, KOL partnerships, and ecommerce integration.
@@ -6533,7 +6533,7 @@ Weibo is a lively platform that offers a lot of opportunities for businesses to 
 
 ---
 # What Taobao Instant Commerce Means For Non-Chinese Brands
-URL: https://www.beyondbordergroup.com/insights/what-taobao-instant-commerce-means-for-non-chinese-brands
+URL: https://www.thechinapath.com/insights/what-taobao-instant-commerce-means-for-non-chinese-brands
 Published: 2025-11-21
 Updated: 2026-05-15
 Author: Cyril Drouin
@@ -6618,7 +6618,7 @@ Seen from a distance, Taobao Instant Commerce and Taobao Flash Sale are about lo
 
 For non-Chinese brands, the shift is clear. You are no longer only competing on who tells the best story at Double 11. You are competing on who feels naturally present in the small, spontaneous decisions that now fill the rest of the calendar.
 
-At Beyond Border Group, this is the terrain where we work with clients, connecting global intent to China's fast-changing local reality. The practical question we come back to is simple.
+At TheChinaPath, this is the terrain where we work with clients, connecting global intent to China's fast-changing local reality. The practical question we come back to is simple.
 
 If China moves from festival first to instant first, which parts of that new journey should carry your brand's signature, and which parts are you currently leaving for the platforms to decide?
 

@@ -3,7 +3,7 @@ title: "China's AI-Powered Commerce: Trends and Innovations to Watch"
 description: "China has rapidly integrated AI technology into marketing and commerce sectors, using platforms like Alibaba and JD.com to revolutionize customer experiences, e-commerce, and retail operations across the nation."
 pubDate: "2025-01-10"
 updatedDate: "2026-05-15"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 tags: ["AI marketing", "e-commerce", "China", "generative AI", "social commerce"]
 heroImage: "/Images/insights/chinas-ai-powered-commerce-trends-and-innovations-to-watch.png"

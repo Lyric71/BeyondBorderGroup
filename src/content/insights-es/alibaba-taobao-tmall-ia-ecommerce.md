@@ -2,7 +2,7 @@
 title: "Cómo Taobao y Tmall transforman la compra y el soporte al comerciante con IA"
 description: "Taobao y Tmall, dentro de Alibaba Group, apalancan la IA para mejorar la experiencia de compra del consumidor y la eficiencia operativa del comerciante con herramientas como Taobao Wenwen, la generación visual y la atención al cliente inteligente."
 pubDate: "2024-07-12"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "AI & Innovation"
 platforms: ["Taobao", "Tmall"]
 tags: ["Taobao", "Tmall", "IA", "eCommerce en China", "herramientas para comerciantes"]

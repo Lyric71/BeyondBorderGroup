@@ -2,7 +2,7 @@
 title: "Social commerce en China: plataformas, estrategias e impacto en el mercado"
 description: "El social commerce ha transformado la compra online en China a través de plataformas como Xiaohongshu, WeChat y Douyin, apoyándose en contenido de usuarios, influencers y livestream para construir experiencias de compra dinámicas."
 pubDate: "2024-06-24"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 platforms: ["WeChat", "Douyin"]
 tags: ["social commerce", "plataformas chinas", "livestream", "KOL", "eCommerce"]

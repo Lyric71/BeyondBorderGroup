@@ -31,7 +31,7 @@ L'achat d'un équipement de chauffage ou d'eau chaude relève d'une décision r�
 
 ## Notre approche
 
-Beyond Border Group a été missionné pour construire et exploiter les boutiques Tmall et JD de Viessmann, bout en bout. Le périmètre couvrait :
+TheChinaPath a été missionné pour construire et exploiter les boutiques Tmall et JD de Viessmann, bout en bout. Le périmètre couvrait :
 
 - Le développement des contenus, du design du store aux fiches produits pensées pour les comportements d'achat chinois
 - Les ventes et l'exploitation, pour tenir les boutiques debout aux pics commerciaux comme au quotidien

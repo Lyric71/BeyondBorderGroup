@@ -2,7 +2,7 @@
 title: "Opérer un site WordPress en Chine : le guide complet"
 description: "WordPress tourne en Chine, à condition de soigner l'hébergement, la performance et le référencement Baidu. Lecture des pièges de la Grande Muraille numérique."
 pubDate: "2025-02-03"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Compliance & Setup"
 tags: ["WordPress", "Chine", "hébergement web", "SEO", "e-commerce"]
 heroImage: "/Images/insights/ultimate-guide-to-using-wordpress-in-china.jpg"

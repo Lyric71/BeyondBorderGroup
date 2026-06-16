@@ -160,6 +160,6 @@ Wer das nicht beantworten kann, hinkt nicht im Marketing hinterher. Er hinkt im 
 
 Chinas Handel entscheidet sich nicht zwischen online und offline. Er presst beides in eine Erfahrung. Taobao Flash Sale ist ein Signal: Die nächste Wachstumsphase gehört Marken, die Nachfrage-Generierung mit lokaler Erfüllung verbinden, ohne die Marken-Kontrolle zu verlieren.
 
-Die Frage ist nicht, ob dieser Trend bleibt. Die Frage ist, ob Ihr China-Team so aufgestellt ist, dass es darin gewinnt. BBG hilft globalen Marken, sich an Chinas Plattformrealität mit praktischer Umsetzung anzupassen. Dazu gehören Taobao- und Tmall-Strategie, Instant-Retail-Bereitschaftsplanung, Content- und Sortimentssysteme für Konversion und die Integration in Kanäle wie Douyin, Xiaohongshu und WeChat.
+Die Frage ist nicht, ob dieser Trend bleibt. Die Frage ist, ob Ihr China-Team so aufgestellt ist, dass es darin gewinnt. TheChinaPath hilft globalen Marken, sich an Chinas Plattformrealität mit praktischer Umsetzung anzupassen. Dazu gehören Taobao- und Tmall-Strategie, Instant-Retail-Bereitschaftsplanung, Content- und Sortimentssysteme für Konversion und die Integration in Kanäle wie Douyin, Xiaohongshu und WeChat.
 
 Wenn Sie Taobao Flash Sale prüfen, helfen wir, die richtige Sortimentsspur zu definieren, die Partnerstruktur aufzusetzen und einen Go-to-Market-Plan zu bauen, dann Assets und Operativ-Rhythmus zu lokalisieren, Stadt für Stadt.

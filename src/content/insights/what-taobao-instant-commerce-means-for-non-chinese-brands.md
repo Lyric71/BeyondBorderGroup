@@ -94,6 +94,6 @@ Seen from a distance, Taobao Instant Commerce and Taobao Flash Sale are about lo
 
 For non-Chinese brands, the shift is clear. You are no longer only competing on who tells the best story at Double 11. You are competing on who feels naturally present in the small, spontaneous decisions that now fill the rest of the calendar.
 
-At Beyond Border Group, this is the terrain where we work with clients, connecting global intent to China's fast-changing local reality. The practical question we come back to is simple.
+At TheChinaPath, this is the terrain where we work with clients, connecting global intent to China's fast-changing local reality. The practical question we come back to is simple.
 
 If China moves from festival first to instant first, which parts of that new journey should carry your brand's signature, and which parts are you currently leaving for the platforms to decide?

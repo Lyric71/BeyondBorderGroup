@@ -2,7 +2,7 @@
 title: "Localiser son site pour la Chine : le guide des directions marketing internationales"
 description: "La localisation d'un site pour la Chine dépasse de loin la traduction. Le cadre réglementaire, les codes culturels et les choix techniques pèsent autant que la qualité éditoriale dans la capacité d'une marque à exister sur le marché digital chinois."
 pubDate: "2025-01-21"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["localisation de site web", "entrée sur le marché chinois", "conformité réglementaire", "ecommerce", "stratégie digitale"]
 heroImage: "/Images/insights/how-to-localize-your-website-for-china-tips-for-global-marketers.jpg"

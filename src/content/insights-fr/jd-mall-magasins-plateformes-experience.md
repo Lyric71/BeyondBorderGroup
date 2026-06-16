@@ -86,7 +86,7 @@ Quelques mouvements concrets :
 
 ## Faire de JD Mall un moteur de marque, pas un canal secondaire
 
-Chez Beyond Border Group, nous accompagnons les marques internationales pour traduire l'écosystème JD en décisions concrètes : la place de JD Mall dans le portefeuille chinois, les villes et les formats à prioriser, la structuration de pilotes plutôt que de déploiements uniformes.
+Chez TheChinaPath, nous accompagnons les marques internationales pour traduire l'écosystème JD en décisions concrètes : la place de JD Mall dans le portefeuille chinois, les villes et les formats à prioriser, la structuration de pilotes plutôt que de déploiements uniformes.
 
 Nous concevons avec les marques des expériences en magasin, des accroches communautaires locales et des playbooks d'équipe qui tiennent sur le terrain. Du flux de démo aux formats d'atelier, jusqu'aux angles Xiaohongshu qui sonnent natif pour les consommateurs chinois, jamais importés.
 

@@ -2,7 +2,7 @@
 title: "Moteurs de recherche chinois 2024 : la carte qui compte"
 description: "L'internet chinois fonctionne avec ses propres moteurs, loin des standards occidentaux. Baidu garde plus de 50 % du marché, mais Sogou, Shenma, Haosuo et Youdao tiennent chacun un segment précis."
 pubDate: "2024-09-02"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Platforms"
 tags: ["moteurs de recherche chinois", "Baidu", "SEO Chine", "marketing digital", "localisation"]
 heroImage: "/Images/insights/boost-your-marketing-with-the-best-chinese-search-engines-in-2024.png"

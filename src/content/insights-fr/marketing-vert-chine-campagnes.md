@@ -2,7 +2,7 @@
 title: "Marketing vert en Chine : les campagnes qui rebattent les cartes"
 description: "Starbucks offre l'Americano contre une tasse réutilisable. Proya recycle ses flacons. Goofish ouvre un centre d'épargne carbone. Le développement durable s'installe au cœur du discours des marques en Chine."
 pubDate: "2024-06-17"
-author: "Beyond Border Group"
+author: "TheChinaPath"
 category: "Brand & Localization"
 tags: ["marketing vert", "développement durable", "marques chinoises", "éco-responsabilité", "tendances consommation"]
 heroImage: "/Images/insights/green-marketing-in-china-how-brands-are-embracing-sustainability.jpg"
