@@ -361,6 +361,12 @@ body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-her
 body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav:not(.nav--scrolled):not(:has(.nav__item--mega:hover, .nav__item--mega:focus-within)) .nav__logo-img--light {
   opacity: 1;
 }
+/* Over a hero image the transparent-nav logo can wash out, so lift it off
+   the background with a soft shadow. Removed once the nav goes solid on
+   scroll (filter: none rules above). */
+body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav:not(.nav--scrolled):not(:has(.nav__item--mega:hover, .nav__item--mega:focus-within)) .nav__logo img {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.55));
+}
 .nav__logo-img--default { transition: opacity var(--dur) var(--ease); }
 
 .nav__primary { flex: 1; display: flex; justify-content: center; align-self: stretch; min-width: 0; }
@@ -1518,7 +1524,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
   padding: 0;
   margin: 0;
 }
-.eyebrow--on-dark { color: #F2A0AB; }
+.eyebrow--on-dark { color: #C8102E; }
 .platform-chip--on-dark {
   position: static;
   display: inline-flex;
@@ -5429,7 +5435,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
   gap: 22px;
 }
 .bc-copy__eyebrow {
-  color: #F2A0AB !important;
+  color: #C8102E !important;
   margin: 0 !important;
 }
 .bc-copy__brand {
@@ -5485,7 +5491,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
   height: 38px;
   border-radius: 11px;
   background: linear-gradient(135deg, rgba(200, 16, 46, 0.3), rgba(200, 16, 46, 0.06));
-  color: #F2A0AB;
+  color: #C8102E;
   display: grid;
   place-items: center;
   border: 1px solid rgba(91, 194, 240, 0.35);
@@ -5628,7 +5634,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
   font-weight: 700;
   color: #ffffff;
   letter-spacing: -0.01em;
-  background: linear-gradient(135deg, #ffffff 0%, #F2A0AB 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #C8102E 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -5702,7 +5708,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
 .bc-mock__chip.is-on {
   background: rgba(200, 16, 46, 0.2);
   border-color: rgba(91, 194, 240, 0.5);
-  color: #F2A0AB;
+  color: #C8102E;
 }
 .bc-mock__results {
   list-style: none;
