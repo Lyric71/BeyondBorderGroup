@@ -344,11 +344,11 @@ body:has(.brand-hero) .brand-hero {
   height: 100%;
 }
 .nav__logo { display: inline-flex; align-items: center; flex-shrink: 0; position: relative; }
-.nav__logo img { height: 40px; width: auto; display: block; }
+.nav__logo img { height: 50px; width: auto; display: block; }
 .nav__logo .nav__logo-img--light {
   position: absolute;
   inset: 0;
-  height: 40px;
+  height: 50px;
   width: auto;
   opacity: 0;
   transition: opacity var(--dur) var(--ease);
@@ -361,11 +361,16 @@ body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-her
 body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav:not(.nav--scrolled):not(:has(.nav__item--mega:hover, .nav__item--mega:focus-within)) .nav__logo-img--light {
   opacity: 1;
 }
-/* Over a hero image the transparent-nav logo can wash out, so lift it off
-   the background with a soft shadow. Removed once the nav goes solid on
-   scroll (filter: none rules above). */
+/* Over a hero image the full-colour logo (red pin, white 中国路, red
+   TheChinaPath wordmark) keeps its brand colours, but the red can blend into
+   the photo. A tight dark outline-halo plus a soft falloff lifts every edge
+   off the background without recolouring anything. Removed once the nav goes
+   solid on scroll (filter: none rules above). */
 body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-hero, .brand-hero) .nav:not(.nav--scrolled):not(:has(.nav__item--mega:hover, .nav__item--mega:focus-within)) .nav__logo img {
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.55));
+  filter:
+    drop-shadow(0 0 2px rgba(0, 0, 0, 0.95))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.85))
+    drop-shadow(0 2px 8px rgba(0, 0, 0, 0.45));
 }
 .nav__logo-img--default { transition: opacity var(--dur) var(--ease); }
 
@@ -794,7 +799,7 @@ body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-her
 
 @media (max-width: 1024px) {
   :root { --nav-h: 80px; }
-  .nav__logo img { height: 32px; }
+  .nav__logo img { height: 40px; }
   .nav__logo .nav__logo-img--light { height: 26px; }
   .nav__primary { display: none; }
   .nav__burger { display: flex; }
@@ -961,7 +966,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
   margin-bottom: var(--space-4);
 }
 .footer__logo img {
-  height: 50px;
+  height: 63px;
   width: auto;
   display: block;
 }
