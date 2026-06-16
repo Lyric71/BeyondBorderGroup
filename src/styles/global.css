@@ -344,11 +344,11 @@ body:has(.brand-hero) .brand-hero {
   height: 100%;
 }
 .nav__logo { display: inline-flex; align-items: center; flex-shrink: 0; position: relative; }
-.nav__logo img { height: 32px; width: auto; display: block; }
+.nav__logo img { height: 40px; width: auto; display: block; }
 .nav__logo .nav__logo-img--light {
   position: absolute;
   inset: 0;
-  height: 32px;
+  height: 40px;
   width: auto;
   opacity: 0;
   transition: opacity var(--dur) var(--ease);
@@ -788,7 +788,7 @@ body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-her
 
 @media (max-width: 1024px) {
   :root { --nav-h: 80px; }
-  .nav__logo img { height: 26px; }
+  .nav__logo img { height: 32px; }
   .nav__logo .nav__logo-img--light { height: 26px; }
   .nav__primary { display: none; }
   .nav__burger { display: flex; }
@@ -955,7 +955,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
   margin-bottom: var(--space-4);
 }
 .footer__logo img {
-  height: 40px;
+  height: 50px;
   width: auto;
   display: block;
 }
@@ -1518,7 +1518,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
   padding: 0;
   margin: 0;
 }
-.eyebrow--on-dark { color: #8FD0F2; }
+.eyebrow--on-dark { color: #F2A0AB; }
 .platform-chip--on-dark {
   position: static;
   display: inline-flex;
@@ -5429,7 +5429,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
   gap: 22px;
 }
 .bc-copy__eyebrow {
-  color: #9DDBF5 !important;
+  color: #F2A0AB !important;
   margin: 0 !important;
 }
 .bc-copy__brand {
@@ -5485,7 +5485,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
   height: 38px;
   border-radius: 11px;
   background: linear-gradient(135deg, rgba(200, 16, 46, 0.3), rgba(200, 16, 46, 0.06));
-  color: #9DDBF5;
+  color: #F2A0AB;
   display: grid;
   place-items: center;
   border: 1px solid rgba(91, 194, 240, 0.35);
@@ -5628,7 +5628,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
   font-weight: 700;
   color: #ffffff;
   letter-spacing: -0.01em;
-  background: linear-gradient(135deg, #ffffff 0%, #9DDBF5 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #F2A0AB 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -5702,7 +5702,7 @@ body:has(.nav.nav--open) { overflow: hidden; }
 .bc-mock__chip.is-on {
   background: rgba(200, 16, 46, 0.2);
   border-color: rgba(91, 194, 240, 0.5);
-  color: #9DDBF5;
+  color: #F2A0AB;
 }
 .bc-mock__results {
   list-style: none;
