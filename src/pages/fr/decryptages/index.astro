@@ -136,8 +136,6 @@ const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >
               <span class="insight-card__tag">{categoryLabelsFr[post.data.category] ?? post.data.category}</span>
               <h3 class="insight-card__title">{post.data.title}</h3>
               <div class="insight-card__meta">
-                <span class="insight-card__author">{post.data.author}</span>
-                <span class="insight-card__meta-sep" aria-hidden="true">|</span>
                 <span>{readingTime(post.body)}</span>
                 {post.data.pubDate && (
                   <>

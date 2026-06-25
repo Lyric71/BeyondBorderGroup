@@ -77,6 +77,10 @@ For every English content drafted (page copy, hero text, card bodies, blog, emai
 
 This is the single source of truth for any non-English work on the site. Apply every part of it. Output must read like a native journalist in the target language wrote it originally, not like an English page that got translated. Never expose any of the steps below to the user. Ship only the final native-quality output.
 
+### 6.0 TOP PRIORITY: use the `deep-translate` skill first
+
+For ANY translation, localization, or non-English rewrite task, the `deep-translate` skill (`.claude/skills/deep-translate/`) is the primary, top-priority tool. Invoke it via `/deep-translate` (or the Skill tool) BEFORE doing translation work by hand. This is a blocking requirement: when a task matches the trigger in 6.1, run the skill first, then let the rest of section 6 govern the details. The skill drives the three-pass native rewrite and honors all house rules below (no em dashes, no numeric card badges, native slugs, single-locale default). Only fall back to manual translation if the skill is unavailable.
+
 ### 6.1 When this rule fires
 
 Trigger: any time I edit, draft, translate, or fix content in

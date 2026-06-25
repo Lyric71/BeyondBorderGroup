@@ -123,31 +123,10 @@ const categoryLabel = categoryLabelsFr[category] ?? category;
         <h1 class="insight-article__title">{title}</h1>
         <p class="insight-article__lead">{description}</p>
         <div class="insight-article__meta">
-          {authorLink ? <a href={authorLink} rel="author">{author}</a> : <span>{author}</span>}
-          {pubDate && (
-            <>
-              <span aria-hidden="true">·</span>
-              <span>{formatDate(pubDate)}</span>
-            </>
-          )}
-          <span aria-hidden="true">·</span>
+          {pubDate && <span>{formatDate(pubDate)}</span>}
+          {pubDate && <span aria-hidden="true">·</span>}
           <span>{readingTime(post.body)}</span>
         </div>
-
-        {authorInfo && (
-          <aside class="author-card" aria-label="À propos de l'auteur">
-            <a href={authorInfo.url} class="author-card__photo">
-              <img src={authorInfo.photo} alt={author} width="80" height="80" loading="lazy" />
-            </a>
-            <div class="author-card__body">
-              <a href={authorInfo.url} class="author-card__name">{author}</a>
-              <span class="author-card__role">{authorInfo.role}, TheChinaPath</span>
-              <a href={authorInfo.linkedin} class="author-card__linkedin" target="_blank" rel="noopener">
-                LinkedIn <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </aside>
-        )}
       </div>
     </header>
 

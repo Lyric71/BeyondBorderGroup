@@ -73,6 +73,7 @@ export const insightEnToFr = {
   'wechat-pay-vs-alipay-best-mobile-payment-for-ecommerce': 'wechat-pay-vs-alipay-e-commerce-chinois',
   'weibo-marketing-guide-mastering-social-commerce-in-china': 'guide-weibo-social-commerce-chine',
   'what-taobao-instant-commerce-means-for-non-chinese-brands': 'taobao-instant-commerce-marques-non-chinoises',
+  'what-a-pinduoduo-fine-says-about-doing-business-in-china': 'amende-pinduoduo-faire-des-affaires-en-chine',
 };
 
 /** Reverse lookup, built once. */
@@ -152,6 +153,7 @@ export const insightEnToDe = {
   'wechat-pay-vs-alipay-best-mobile-payment-for-ecommerce': 'wechat-pay-vs-alipay-chinesischer-e-commerce',
   'weibo-marketing-guide-mastering-social-commerce-in-china': 'weibo-leitfaden-social-commerce-china',
   'what-taobao-instant-commerce-means-for-non-chinese-brands': 'taobao-instant-commerce-nicht-chinesische-marken',
+  'what-a-pinduoduo-fine-says-about-doing-business-in-china': 'pinduoduo-strafe-geschaeft-in-china',
 };
 
 /** Reverse lookup, built once. */
@@ -230,6 +232,7 @@ export const insightEnToEs = {
   'wechat-pay-vs-alipay-best-mobile-payment-for-ecommerce': 'wechat-pay-vs-alipay-ecommerce-chino',
   'weibo-marketing-guide-mastering-social-commerce-in-china': 'guia-weibo-social-commerce-china',
   'what-taobao-instant-commerce-means-for-non-chinese-brands': 'taobao-instant-commerce-marcas-no-chinas',
+  'what-a-pinduoduo-fine-says-about-doing-business-in-china': 'multa-pinduoduo-negocios-en-china',
 };
 
 /** Reverse lookup, built once. */

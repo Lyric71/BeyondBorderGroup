@@ -97,14 +97,8 @@ const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
         <h1 class="insight-article__title">{title}</h1>
         <p class="insight-article__lead">{description}</p>
         <div class="insight-article__meta">
-          <span>{author}</span>
-          {pubDate && (
-            <>
-              <span aria-hidden="true">·</span>
-              <span>{formatDate(pubDate)}</span>
-            </>
-          )}
-          <span aria-hidden="true">·</span>
+          {pubDate && <span>{formatDate(pubDate)}</span>}
+          {pubDate && <span aria-hidden="true">·</span>}
           <span>{readingTime(post.body)}</span>
         </div>
       </div>
