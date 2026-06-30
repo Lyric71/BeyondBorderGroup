@@ -5,7 +5,8 @@ const services = [
   {
     eyebrow: 'Estrategia',
     title: 'Estrategia de entrada',
-    tagline: 'Un modelo hecho a medida para su categoría, su presupuesto y sus plazos. Y una hoja de ruta que su equipo puede ejecutar.',
+    tagline:
+      'Un modelo hecho a medida para su categoría, su presupuesto y sus plazos. Y una hoja de ruta que su equipo puede ejecutar.',
     href: '/es/entrar-en-china/estrategia-de-entrada',
     cta: 'Ver el trabajo de consultoría',
     image: '/Images/enter-china/phase-4-financial.png',
@@ -38,7 +39,8 @@ const services = [
   {
     eyebrow: 'Cobertura',
     title: 'Distribución',
-    tagline: 'Online, offline, región a región. El socio que encaja con su categoría, evaluado desde nuestro lado de la mesa.',
+    tagline:
+      'Online, offline, región a región. El socio que encaja con su categoría, evaluado desde nuestro lado de la mesa.',
     href: '/es/entrar-en-china/distribucion',
     cta: 'Ver el trabajo de distribución',
     image: '/Images/enter-china/route-sellout.png',
@@ -53,7 +55,6 @@ const services = [
   title="Entrar en China | Agencia de entrada al mercado | TheChinaPath"
   description="Agencia de entrada al mercado chino para marcas extranjeras. Consultoría, marca y localización, lanzamiento cross-border eCommerce, distribución. Cuatro vías de entrada, un solo equipo."
 >
-
   {/* ---------- HERO ---------- */}
   <section class="hero-fullbleed">
     <picture>
@@ -75,7 +76,8 @@ const services = [
         <span class="eyebrow eyebrow--on-dark">Entrar en China</span>
         <h1 class="hero-fullbleed__title">Poner pie en China.</h1>
         <p class="hero-fullbleed__lead">
-          Estrategia, marca, lanzamiento cross-border, distribución. Cuatro servicios que le llevan de la idea a la primera venta, con un mismo equipo al frente.
+          Estrategia, marca, lanzamiento cross-border, distribución. Cuatro servicios que le llevan
+          de la idea a la primera venta, con un mismo equipo al frente.
         </p>
         <div class="hero-fullbleed__actions">
           <a class="btn btn--primary" href="/es/contacto">Hablemos</a>
@@ -91,24 +93,52 @@ const services = [
       <div class="enter-proof__intro">
         <span class="eyebrow">Marcas que hemos llevado a China</span>
         <p class="enter-proof__pitch">
-          Tres semanas de diagnóstico de mercado y regulación. Elección de canales. Lista corta de distribuidores o montaje cross-border. Escalonamos los compromisos para que solo pague el siguiente paso.
+          Tres semanas de diagnóstico de mercado y regulación. Elección de canales. Lista corta de
+          distribuidores o montaje cross-border. Escalonamos los compromisos para que solo pague el
+          siguiente paso.
         </p>
       </div>
       <ul class="enter-proof__strip" role="list">
         <li class="enter-proof__card">
-          <img src="/Images/Clients%20Logos/Marriot.png" alt="Marriott" width="160" height="60" loading="lazy" />
+          <img
+            src="/Images/Clients%20Logos/Marriot.png"
+            alt="Marriott"
+            width="160"
+            height="60"
+            loading="lazy"
+          />
           <p class="enter-proof__metric">GMV de ocho cifras en RMB en el Tmall Super Brand Day</p>
         </li>
         <li class="enter-proof__card">
-          <img src="/Images/Clients%20Logos/camper_black.png" alt="Camper" width="160" height="60" loading="lazy" />
+          <img
+            src="/Images/Clients%20Logos/camper_black.png"
+            alt="Camper"
+            width="160"
+            height="60"
+            loading="lazy"
+          />
           <p class="enter-proof__metric">+330 % de audiencia en WeChat, Weibo y RED</p>
         </li>
         <li class="enter-proof__card">
-          <img src="/Images/Clients%20Logos/Valio.png" alt="Valio" width="160" height="60" loading="lazy" />
-          <p class="enter-proof__metric">Lanzamiento de la submarca eila con nombre chino e identidad visual completa</p>
+          <img
+            src="/Images/Clients%20Logos/Valio.png"
+            alt="Valio"
+            width="160"
+            height="60"
+            loading="lazy"
+          />
+          <p class="enter-proof__metric">
+            Lanzamiento de la submarca eila con nombre chino e identidad visual completa
+          </p>
         </li>
         <li class="enter-proof__card">
-          <img src="/Images/Clients%20Logos/pierre-black.png" alt="Pierre Fabre" width="160" height="60" loading="lazy" />
+          <img
+            src="/Images/Clients%20Logos/pierre-black.png"
+            alt="Pierre Fabre"
+            width="160"
+            height="60"
+            loading="lazy"
+          />
           <p class="enter-proof__metric">Masterclass de liderazgo y modelo 3D Digital Growth</p>
         </li>
       </ul>
@@ -122,33 +152,39 @@ const services = [
         <span class="eyebrow">Cuatro vías de entrada</span>
         <h2>Escoja la que encaja con su punto de partida.</h2>
         <p class="section-header__lead">
-          Hay marcas que necesitan una estrategia antes de mover ficha. Otras están listas para lanzar. Y otras tienen que rehacer la marca para el público chino antes de nada. Empiece por donde tenga sentido.
+          Hay marcas que necesitan una estrategia antes de mover ficha. Otras están listas para
+          lanzar. Y otras tienen que rehacer la marca para el público chino antes de nada. Empiece
+          por donde tenga sentido.
         </p>
       </header>
 
       <div class="enter-grid">
-        {services.map((s) => (
-          <a
-            href={s.href}
-            class="enter-tile"
-            style={`--accent: ${s.accent}; --accent-soft: ${s.accentSoft};`}
-          >
-            <div class="enter-tile__media">
-              <img src={s.image} alt={s.alt} loading="lazy" decoding="async" />
-              <div class="enter-tile__scrim" aria-hidden="true"></div>
-            </div>
+        {
+          services.map((s) => (
+            <a
+              href={s.href}
+              class="enter-tile"
+              style={`--accent: ${s.accent}; --accent-soft: ${s.accentSoft};`}
+            >
+              <div class="enter-tile__media">
+                <img src={s.image} alt={s.alt} loading="lazy" decoding="async" />
+                <div class="enter-tile__scrim" aria-hidden="true" />
+              </div>
 
-            <div class="enter-tile__body">
-              <span class="enter-tile__eyebrow">{s.eyebrow}</span>
-              <h3 class="enter-tile__title">{s.title}</h3>
-              <p class="enter-tile__tagline">{s.tagline}</p>
-              <span class="enter-tile__cta">
-                {s.cta}
-                <span class="enter-tile__arrow" aria-hidden="true">→</span>
-              </span>
-            </div>
-          </a>
-        ))}
+              <div class="enter-tile__body">
+                <span class="enter-tile__eyebrow">{s.eyebrow}</span>
+                <h3 class="enter-tile__title">{s.title}</h3>
+                <p class="enter-tile__tagline">{s.tagline}</p>
+                <span class="enter-tile__cta">
+                  {s.cta}
+                  <span class="enter-tile__arrow" aria-hidden="true">
+                    →
+                  </span>
+                </span>
+              </div>
+            </a>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -161,7 +197,8 @@ const services = [
           <span class="eyebrow">¿No sabe cuál encaja?</span>
           <h2>Cuéntenos dónde está. Le decimos el siguiente paso.</h2>
           <p class="enter-cta__lead">
-            Contesta un sénior del equipo, nunca un chatbot. Veinte minutos al teléfono suelen ahorrar un año de tanteo.
+            Contesta un sénior del equipo, nunca un chatbot. Veinte minutos al teléfono suelen
+            ahorrar un año de tanteo.
           </p>
         </div>
         <div class="enter-cta__actions">
@@ -171,7 +208,6 @@ const services = [
       </div>
     </div>
   </section>
-
 </Layout>
 
 <style>
@@ -194,12 +230,13 @@ const services = [
     color: #fff;
     background: var(--bbg-ink);
     isolation: isolate;
-    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
-                box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+      transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .enter-tile::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -224,8 +261,12 @@ const services = [
   .enter-tile__scrim {
     position: absolute;
     inset: 0;
-    background:
-      linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.85) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(0, 0, 0, 0.25) 45%,
+      rgba(0, 0, 0, 0.85) 100%
+    );
     z-index: 1;
     transition: opacity 300ms ease;
   }
@@ -261,7 +302,7 @@ const services = [
   .enter-tile__tagline {
     font-size: 1rem;
     line-height: 1.5;
-    color: rgba(255,255,255,0.92);
+    color: rgba(255, 255, 255, 0.92);
     margin: 0 0 1.25rem;
     max-width: 30rem;
   }
@@ -274,9 +315,11 @@ const services = [
     font-weight: 600;
     color: #fff;
     padding-bottom: 2px;
-    border-bottom: 1px solid rgba(255,255,255,0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     width: fit-content;
-    transition: border-color 200ms ease, color 200ms ease;
+    transition:
+      border-color 200ms ease,
+      color 200ms ease;
   }
 
   .enter-tile__arrow {
@@ -287,15 +330,19 @@ const services = [
   /* Hover */
   .enter-tile:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
     color: #fff;
   }
   .enter-tile:hover .enter-tile__media img {
     transform: scale(1.05);
   }
   .enter-tile:hover .enter-tile__scrim {
-    background:
-      linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.9) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.45) 45%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
   }
   .enter-tile:hover .enter-tile__cta {
     border-color: #fff;
@@ -422,9 +469,13 @@ const services = [
     font-weight: 500;
   }
   @media (max-width: 1100px) {
-    .enter-proof__strip { grid-template-columns: repeat(2, 1fr); }
+    .enter-proof__strip {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   @media (max-width: 480px) {
-    .enter-proof__strip { grid-template-columns: 1fr; }
+    .enter-proof__strip {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

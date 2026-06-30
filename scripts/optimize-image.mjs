@@ -15,14 +15,14 @@
 //
 // The script prints before/after sizes so you can verify the compression.
 
-import { argv, exit } from "node:process";
-import { readFile, stat, writeFile, mkdir } from "node:fs/promises";
-import path from "node:path";
-import sharp from "sharp";
+import { argv, exit } from 'node:process';
+import { readFile, stat, writeFile, mkdir } from 'node:fs/promises';
+import path from 'node:path';
+import sharp from 'sharp';
 
 const DEFAULTS = {
   maxWidth: 2000, // hero-class images rarely need more than this
-  outDir: "public",
+  outDir: 'public',
   jpgQuality: 82,
   webpQualityPhoto: 78,
   webpQualityGraphic: 85,
@@ -33,10 +33,10 @@ function parseArgs(rawArgs) {
   const files = [];
   const opts = { ...DEFAULTS, name: null };
   for (const arg of rawArgs) {
-    if (arg.startsWith("--max-width=")) opts.maxWidth = Number(arg.split("=")[1]);
-    else if (arg.startsWith("--out=")) opts.outDir = arg.split("=")[1];
-    else if (arg.startsWith("--name=")) opts.name = arg.split("=")[1];
-    else if (arg.startsWith("--")) {
+    if (arg.startsWith('--max-width=')) opts.maxWidth = Number(arg.split('=')[1]);
+    else if (arg.startsWith('--out=')) opts.outDir = arg.split('=')[1];
+    else if (arg.startsWith('--name=')) opts.name = arg.split('=')[1];
+    else if (arg.startsWith('--')) {
       console.error(`Unknown flag: ${arg}`);
       exit(2);
     } else {
@@ -75,7 +75,7 @@ async function optimizeOne(inputPath, opts) {
   await ensureDir(outDir);
 
   // Pipeline: decode once, reuse for metadata + derivatives.
-  const pipeline = sharp(srcBuf, { failOn: "error" }).rotate(); // respect EXIF
+  const pipeline = sharp(srcBuf, { failOn: 'error' }).rotate(); // respect EXIF
   const meta = await pipeline.metadata();
 
   const needsResize = meta.width && meta.width > opts.maxWidth;
@@ -108,7 +108,7 @@ async function optimizeOne(inputPath, opts) {
     const jpgPath = path.join(outDir, `${base}.jpg`);
     const webpPath = path.join(outDir, `${base}.webp`);
 
-    const flatten = (p) => p.flatten({ background: "#ffffff" });
+    const flatten = (p) => p.flatten({ background: '#ffffff' });
 
     const jpgBuf = await flatten(resizer(sharp(srcBuf).rotate()))
       .jpeg({ quality: opts.jpgQuality, mozjpeg: true, progressive: true })
@@ -137,8 +137,8 @@ async function optimizeOne(inputPath, opts) {
 function report(results) {
   for (const r of results) {
     const rel = path.relative(process.cwd(), r.input);
-    console.log(`\n${rel}  (${r.width}x${r.height}, ${r.alpha ? "alpha" : "opaque"})`);
-    console.log(`  source: ${fmtBytes(r.srcBytes)}${r.resized ? "  [resized down]" : ""}`);
+    console.log(`\n${rel}  (${r.width}x${r.height}, ${r.alpha ? 'alpha' : 'opaque'})`);
+    console.log(`  source: ${fmtBytes(r.srcBytes)}${r.resized ? '  [resized down]' : ''}`);
     for (const out of r.outputs) {
       const outRel = path.relative(process.cwd(), out.path);
       const ratio = ((1 - out.bytes / r.srcBytes) * 100).toFixed(0);
@@ -150,8 +150,8 @@ function report(results) {
 async function main() {
   const { files, opts } = parseArgs(argv.slice(2));
   if (files.length === 0) {
-    console.error("Usage: npm run img <path-to-image> [more paths...]");
-    console.error("       [--max-width=2000] [--out=public] [--name=basename]");
+    console.error('Usage: npm run img <path-to-image> [more paths...]');
+    console.error('       [--max-width=2000] [--out=public] [--name=basename]');
     exit(1);
   }
   const results = [];

@@ -37,7 +37,7 @@ export const ui = {
     'site.title': 'TheChinaPath | China Market Entry, eCommerce & Distribution',
     'site.description':
       'We help global brands enter China, grow sales on Tmall, JD, Douyin, WeChat and RED, and find the right distributor. Shanghai, Hong Kong, Paris.',
-    'skipLink': 'Skip to content',
+    skipLink: 'Skip to content',
 
     // Header / nav
     'nav.aria.primary': 'Primary',
@@ -53,8 +53,10 @@ export const ui = {
     'nav.about': 'Who We Are',
 
     'nav.enter.intro': 'Launch in China with the right model, the right partner, the right plan.',
-    'nav.grow.intro': 'Operations, media and creative. One team running your stores, your channels, your brand.',
-    'nav.learn.intro': 'Understand the market before you bet on it. Programmes built by people who run China every day.',
+    'nav.grow.intro':
+      'Operations, media and creative. One team running your stores, your channels, your brand.',
+    'nav.learn.intro':
+      'Understand the market before you bet on it. Programmes built by people who run China every day.',
 
     'nav.enter.marketEntry.label': 'Market Entry Consulting',
     'nav.enter.marketEntry.desc': 'Strategy, business model and partner selection before launch.',
@@ -70,14 +72,16 @@ export const ui = {
     'nav.grow.social.label': 'Social Commerce',
     'nav.grow.social.desc': 'Sales on Douyin, WeChat and RED. Livestream and KOL.',
     'nav.grow.campaigns.label': 'Campaigns',
-    'nav.grow.campaigns.desc': '618, Double 11, CNY. Multi-channel festival campaigns, warm-up to peak.',
+    'nav.grow.campaigns.desc':
+      '618, Double 11, CNY. Multi-channel festival campaigns, warm-up to peak.',
     'nav.grow.media.label': 'Media',
     'nav.grow.media.desc': 'Performance and brand media across Chinese platforms.',
     'nav.grow.kols.label': 'Influencers & KOLs',
     'nav.grow.kols.desc': 'KOL casting and paid campaigns across Douyin, RED and WeChat.',
 
     'nav.learn.platforms.label': 'Platforms',
-    'nav.learn.platforms.desc': 'Tmall, JD, Douyin, WeChat, RED, Pinduoduo. How each one works and who it is for.',
+    'nav.learn.platforms.desc':
+      'Tmall, JD, Douyin, WeChat, RED, Pinduoduo. How each one works and who it is for.',
     'nav.learn.masterclass.label': 'Masterclass',
     'nav.learn.masterclass.desc': 'Workshops led by people who run China every day.',
     'nav.learn.expeditions.label': 'Learning Expeditions',
@@ -117,10 +121,13 @@ export const ui = {
     'footer.legal.cookie': 'Cookie Policy',
 
     // Footer network descriptions
-    'footer.net.nuvora.desc': 'LinkedIn presence built daily. Content, ads, executive branding.',
-    'footer.net.chinawebfoundry.desc': 'Websites built for the Chinese internet. ICP, Baidu SEO, hosting.',
-    'footer.net.beyondcompass.desc': 'Vetted distributor and Tmall partner introductions in China.',
-    'footer.net.redscroll.desc': 'Daily WeChat, Douyin, RedNote and Weibo operations from the ground.',
+    'footer.net.beyondbridge.desc': 'The full pipeline for Chinese brands going overseas.',
+    'footer.net.bearingbridgeai.desc': 'AI adoption consulting. East and West, on your data.',
+    'footer.net.nuvora.desc': 'LinkedIn-only B2B. Strategy, content, ads.',
+    'footer.net.chinawebfoundry.desc': 'Websites built for the Chinese web. Baidu, ICP, AI engines.',
+    'footer.net.beyondcompass.desc':
+      'A private database of vetted China distributors, Tmall TPs, and Douyin partners.',
+    'footer.net.redscroll.desc': 'Chinese social media. WeChat, Douyin, RedNote, Weibo.',
     'footer.net.hubstudio.desc': 'The creative production house.',
   },
 
@@ -128,8 +135,8 @@ export const ui = {
     // Layout / meta
     'site.title': 'TheChinaPath | Implantation, e-commerce et distribution en Chine',
     'site.description':
-      "Nous accompagnons les marques internationales en Chine : implantation, ventes sur Tmall, JD, Douyin, WeChat et RED, choix du distributeur. Shanghai, Hong Kong, Paris.",
-    'skipLink': 'Aller au contenu',
+      'Nous accompagnons les marques internationales en Chine : implantation, ventes sur Tmall, JD, Douyin, WeChat et RED, choix du distributeur. Shanghai, Hong Kong, Paris.',
+    skipLink: 'Aller au contenu',
 
     // Header / nav
     'nav.aria.primary': 'Principale',
@@ -147,29 +154,28 @@ export const ui = {
     'nav.enter.intro':
       "S'implanter sur le marché chinois exige un modèle économique adapté, des partenaires qualifiés et un calendrier maîtrisé.",
     'nav.grow.intro':
-      "Une équipe intégrée pilote vos boutiques, vos plans média et votre production créative, de la conception au suivi des performances.",
+      'Une équipe intégrée pilote vos boutiques, vos plans média et votre production créative, de la conception au suivi des performances.',
     'nav.learn.intro':
-      "Comprendre le marché chinois avant tout investissement. Des programmes conduits par des praticiens en activité sur le terrain.",
+      'Comprendre le marché chinois avant tout investissement. Des programmes conduits par des praticiens en activité sur le terrain.',
 
     'nav.enter.marketEntry.label': "Stratégie d'implantation",
     'nav.enter.marketEntry.desc':
-      "Modèle économique, sélection des partenaires, feuille de route opérationnelle. Un dispositif arrêté en amont du lancement.",
+      'Modèle économique, sélection des partenaires, feuille de route opérationnelle. Un dispositif arrêté en amont du lancement.',
     'nav.enter.crossBorder.label': 'Cross-Border eCommerce',
     'nav.enter.crossBorder.desc':
       "Tmall Global, JD Worldwide. Sans création d'entité juridique en Chine.",
     'nav.enter.distribution.label': 'Distribution',
     'nav.enter.distribution.desc':
-      "Identifier le distributeur adapté à votre catégorie et au canal pertinent.",
+      'Identifier le distributeur adapté à votre catégorie et au canal pertinent.',
     'nav.enter.branding.label': 'Marque et localisation',
     'nav.enter.branding.desc':
-      "Une identité de marque ajustée aux attentes du consommateur chinois.",
+      'Une identité de marque ajustée aux attentes du consommateur chinois.',
 
     'nav.grow.ecommerce.label': 'Cross-Border eCommerce',
-    'nav.grow.ecommerce.desc':
-      "Gestion intégrale de vos boutiques Tmall Global et JD Worldwide.",
+    'nav.grow.ecommerce.desc': 'Gestion intégrale de vos boutiques Tmall Global et JD Worldwide.',
     'nav.grow.social.label': 'Social Commerce',
     'nav.grow.social.desc':
-      "Convertir sur Douyin, WeChat et RED. Livestream et KOL au centre du dispositif.",
+      'Convertir sur Douyin, WeChat et RED. Livestream et KOL au centre du dispositif.',
     'nav.grow.campaigns.label': 'Campagnes',
     'nav.grow.campaigns.desc':
       "618, Double 11, Nouvel An chinois. Pilotage multicanal, de la phase d'amorçage au pic des ventes.",
@@ -177,35 +183,32 @@ export const ui = {
     'nav.grow.media.desc':
       "Plans média de notoriété et de performance, sur l'ensemble des plateformes chinoises.",
     'nav.grow.kols.label': 'Influence et KOL',
-    'nav.grow.kols.desc':
-      "Sélection des KOL et activations payantes sur Douyin, RED et WeChat.",
+    'nav.grow.kols.desc': 'Sélection des KOL et activations payantes sur Douyin, RED et WeChat.',
 
     'nav.learn.platforms.label': 'Plateformes',
     'nav.learn.platforms.desc':
-      "Tmall, JD, Douyin, WeChat, RED, Pinduoduo. Audience, mécaniques et conditions de réussite, plateforme par plateforme.",
+      'Tmall, JD, Douyin, WeChat, RED, Pinduoduo. Audience, mécaniques et conditions de réussite, plateforme par plateforme.',
     'nav.learn.masterclass.label': 'Masterclass',
     'nav.learn.masterclass.desc':
-      "Sessions courtes conduites par des opérationnels, appuyées sur des cas récents.",
+      'Sessions courtes conduites par des opérationnels, appuyées sur des cas récents.',
     'nav.learn.expeditions.label': 'Expéditions terrain',
     'nav.learn.expeditions.desc':
       "Shanghai, Shenzhen, Hangzhou : observer l'écosystème depuis le terrain chinois.",
     'nav.learn.insights.label': 'Décryptages',
-    'nav.learn.insights.desc':
-      "Articles, notes et analyses produits depuis le terrain chinois.",
+    'nav.learn.insights.desc': 'Articles, notes et analyses produits depuis le terrain chinois.',
 
     'nav.feature.beyondcompass.desc':
-      "Notre vivier de distributeurs, partenaires Tmall et opérateurs de canaux. Chaque profil vérifié en amont.",
+      'Notre vivier de distributeurs, partenaires Tmall et opérateurs de canaux. Chaque profil vérifié en amont.',
     'nav.feature.chinawebfoundry.desc':
       "Des sites pensés à Shanghai pour l'écosystème internet chinois.",
-    'nav.feature.hubstudio.desc':
-      "Studio de création et de production, installé en Chine.",
+    'nav.feature.hubstudio.desc': 'Studio de création et de production, installé en Chine.',
 
     // Language switcher
     'lang.switch.aria': 'Changer de langue',
     'lang.current': 'Langue',
 
     // Footer
-    'footer.aria.brand': "Accueil TheChinaPath",
+    'footer.aria.brand': 'Accueil TheChinaPath',
     'footer.pitch':
       "S'implanter en Chine, s'y développer, la décrypter. Vingt années d'opérations conduites depuis le terrain.",
     'footer.cities': 'Shanghai · Hong Kong · Paris',
@@ -233,11 +236,10 @@ export const ui = {
     'footer.net.chinawebfoundry.desc':
       "Sites web conçus pour l'internet chinois. ICP, référencement Baidu, hébergement local.",
     'footer.net.beyondcompass.desc':
-      "Distributeurs et partenaires Tmall qualifiés, sélectionnés au cas par cas selon votre catégorie.",
+      'Distributeurs et partenaires Tmall qualifiés, sélectionnés au cas par cas selon votre catégorie.',
     'footer.net.redscroll.desc':
-      "WeChat, Douyin, RedNote, Weibo : pilotage quotidien assuré par nos équipes basées à Shanghai.",
-    'footer.net.hubstudio.desc':
-      "Studio de création et de production, installé en Chine.",
+      'WeChat, Douyin, RedNote, Weibo : pilotage quotidien assuré par nos équipes basées à Shanghai.',
+    'footer.net.hubstudio.desc': 'Studio de création et de production, installé en Chine.',
   },
 
   de: {
@@ -245,7 +247,7 @@ export const ui = {
     'site.title': 'TheChinaPath | Markteintritt, E-Commerce und Vertrieb in China',
     'site.description':
       'Wir begleiten internationale Marken beim Eintritt in den chinesischen Markt: Umsätze auf Tmall, JD, Douyin, WeChat und RED, passende Vertriebspartner. Shanghai, Hongkong, Paris.',
-    'skipLink': 'Zum Inhalt springen',
+    skipLink: 'Zum Inhalt springen',
 
     // Header / nav
     'nav.aria.primary': 'Hauptnavigation',
@@ -281,11 +283,9 @@ export const ui = {
       'Eine Markenidentität, abgestimmt auf die Erwartungen chinesischer Verbraucher.',
 
     'nav.grow.ecommerce.label': 'Cross-Border eCommerce',
-    'nav.grow.ecommerce.desc':
-      'Ihre Tmall-Global- und JD-Worldwide-Shops, von A bis Z geführt.',
+    'nav.grow.ecommerce.desc': 'Ihre Tmall-Global- und JD-Worldwide-Shops, von A bis Z geführt.',
     'nav.grow.social.label': 'Social Commerce',
-    'nav.grow.social.desc':
-      'Verkaufen auf Douyin, WeChat und RED. Livestream und KOL im Zentrum.',
+    'nav.grow.social.desc': 'Verkaufen auf Douyin, WeChat und RED. Livestream und KOL im Zentrum.',
     'nav.grow.campaigns.label': 'Kampagnen',
     'nav.grow.campaigns.desc':
       '618, Double 11, Chinesisches Neujahr. Mehrkanal-Steuerung vom Aufwärmen bis zum Verkaufspeak.',
@@ -293,28 +293,24 @@ export const ui = {
     'nav.grow.media.desc':
       'Marken- und Performance-Media auf allen relevanten chinesischen Plattformen.',
     'nav.grow.kols.label': 'Influencer und KOL',
-    'nav.grow.kols.desc':
-      'KOL-Auswahl und bezahlte Aktivierungen auf Douyin, RED und WeChat.',
+    'nav.grow.kols.desc': 'KOL-Auswahl und bezahlte Aktivierungen auf Douyin, RED und WeChat.',
 
     'nav.learn.platforms.label': 'Plattformen',
     'nav.learn.platforms.desc':
       'Tmall, JD, Douyin, WeChat, RED, Pinduoduo. Zielgruppe, Mechanik, Erfolgsbedingungen, Plattform für Plattform.',
     'nav.learn.masterclass.label': 'Masterclass',
-    'nav.learn.masterclass.desc':
-      'Kurze Sessions von Operatoren, gestützt auf laufende Mandate.',
+    'nav.learn.masterclass.desc': 'Kurze Sessions von Operatoren, gestützt auf laufende Mandate.',
     'nav.learn.expeditions.label': 'Studienreisen',
     'nav.learn.expeditions.desc':
       'Shanghai, Shenzhen, Hangzhou. Den chinesischen Markt vom Boden aus beobachten.',
     'nav.learn.insights.label': 'Analysen',
-    'nav.learn.insights.desc':
-      'Artikel, Notizen und Untersuchungen, erstellt vor Ort in China.',
+    'nav.learn.insights.desc': 'Artikel, Notizen und Untersuchungen, erstellt vor Ort in China.',
 
     'nav.feature.beyondcompass.desc':
       'Unser Pool aus geprüften Vertriebspartnern, Tmall-Partneragenturen und Kanalbetreibern in China.',
     'nav.feature.chinawebfoundry.desc':
       'Websites, in Shanghai gebaut für das chinesische Internet.',
-    'nav.feature.hubstudio.desc':
-      'Studio für Kreation und Produktion, ansässig in China.',
+    'nav.feature.hubstudio.desc': 'Studio für Kreation und Produktion, ansässig in China.',
 
     // Language switcher
     'lang.switch.aria': 'Sprache wechseln',
@@ -352,8 +348,7 @@ export const ui = {
       'Geprüfte Vertriebspartner und Tmall-Spezialagenturen in China, fallweise ausgewählt nach Ihrer Kategorie.',
     'footer.net.redscroll.desc':
       'WeChat, Douyin, RedNote, Weibo: tägliche Steuerung durch unsere Teams in Shanghai.',
-    'footer.net.hubstudio.desc':
-      'Studio für Kreation und Produktion, ansässig in China.',
+    'footer.net.hubstudio.desc': 'Studio für Kreation und Produktion, ansässig in China.',
   },
 
   es: {
@@ -361,7 +356,7 @@ export const ui = {
     'site.title': 'TheChinaPath | Implantación, eCommerce y distribución en China',
     'site.description':
       'Acompañamos a marcas internacionales en China. Implantación, ventas en Tmall, JD, Douyin, WeChat y RED, y selección del distribuidor adecuado. Shanghái, Hong Kong, París.',
-    'skipLink': 'Saltar al contenido',
+    skipLink: 'Saltar al contenido',
 
     // Header / nav
     'nav.aria.primary': 'Principal',
@@ -397,8 +392,7 @@ export const ui = {
       'Una identidad de marca ajustada a las expectativas del consumidor chino.',
 
     'nav.grow.ecommerce.label': 'Cross-Border eCommerce',
-    'nav.grow.ecommerce.desc':
-      'Gestión integral de sus tiendas Tmall Global y JD Worldwide.',
+    'nav.grow.ecommerce.desc': 'Gestión integral de sus tiendas Tmall Global y JD Worldwide.',
     'nav.grow.social.label': 'Social Commerce',
     'nav.grow.social.desc':
       'Vender en Douyin, WeChat y RED. Livestream y KOL en el centro del dispositivo.',
@@ -409,8 +403,7 @@ export const ui = {
     'nav.grow.media.desc':
       'Compra de medios de marca y de rendimiento en todas las plataformas chinas.',
     'nav.grow.kols.label': 'Influencia y KOL',
-    'nav.grow.kols.desc':
-      'Selección de KOL y activaciones pagadas en Douyin, RED y WeChat.',
+    'nav.grow.kols.desc': 'Selección de KOL y activaciones pagadas en Douyin, RED y WeChat.',
 
     'nav.learn.platforms.label': 'Plataformas',
     'nav.learn.platforms.desc':
@@ -422,15 +415,12 @@ export const ui = {
     'nav.learn.expeditions.desc':
       'Shanghái, Shenzhen, Hangzhou: leer el mercado desde el propio terreno.',
     'nav.learn.insights.label': 'Análisis',
-    'nav.learn.insights.desc':
-      'Artículos, informes y análisis escritos desde el terreno chino.',
+    'nav.learn.insights.desc': 'Artículos, informes y análisis escritos desde el terreno chino.',
 
     'nav.feature.beyondcompass.desc':
       'Nuestra base de distribuidores, socios Tmall y operadores de canal. Cada perfil verificado uno a uno.',
-    'nav.feature.chinawebfoundry.desc':
-      'Sitios web pensados en Shanghái para el internet chino.',
-    'nav.feature.hubstudio.desc':
-      'Estudio creativo y de producción, con sede en China.',
+    'nav.feature.chinawebfoundry.desc': 'Sitios web pensados en Shanghái para el internet chino.',
+    'nav.feature.hubstudio.desc': 'Estudio creativo y de producción, con sede en China.',
 
     // Language switcher
     'lang.switch.aria': 'Cambiar de idioma',
@@ -451,8 +441,7 @@ export const ui = {
     'footer.network.aria': 'Nuestra red',
     'footer.parent.eyebrow': 'Grupo matriz',
     'footer.parent.name': 'TheChinaPath',
-    'footer.parent.desc':
-      'La entidad que reúne a nuestras agencias especializadas en China.',
+    'footer.parent.desc': 'La entidad que reúne a nuestras agencias especializadas en China.',
     'footer.parent.cta': 'Descubrir',
     'footer.copyright': '© TheChinaPath {year}. Todos los derechos reservados.',
     'footer.legal.terms': 'Condiciones de uso',
@@ -468,8 +457,7 @@ export const ui = {
       'Distribuidores y socios Tmall cualificados, seleccionados uno a uno según su categoría.',
     'footer.net.redscroll.desc':
       'WeChat, Douyin, RedNote, Weibo: operación diaria a cargo de nuestros equipos en Shanghái.',
-    'footer.net.hubstudio.desc':
-      'Estudio creativo y de producción, con sede en China.',
+    'footer.net.hubstudio.desc': 'Estudio creativo y de producción, con sede en China.',
   },
 } as const;
 

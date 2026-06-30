@@ -17,16 +17,8 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const {
-  title,
-  description,
-  heroImage,
-  heroImageAlt,
-  pubDate,
-  updatedDate,
-  category,
-  author,
-} = post.data;
+const { title, description, heroImage, heroImageAlt, pubDate, updatedDate, category, author } =
+  post.data;
 
 const articleJsonLd = articleSchema({
   url: `/de/analysen/${enToDe[post.id] ?? post.id}`,
@@ -46,7 +38,7 @@ const articleJsonLd = articleSchema({
 });
 
 const categoryLabelsDe: Record<string, string> = {
-  'Platforms': 'Plattformen',
+  Platforms: 'Plattformen',
   'E-Commerce': 'eCommerce',
   'KOLs & Livestream': 'KOL und Livestream',
   'Brand & Localization': 'Marke und Lokalisierung',
@@ -104,11 +96,13 @@ const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
       </div>
     </header>
 
-    {heroImage && (
-      <figure class="insight-article__hero">
-        <img src={heroImage} alt={heroImageAlt || title} loading="eager" decoding="async" />
-      </figure>
-    )}
+    {
+      heroImage && (
+        <figure class="insight-article__hero">
+          <img src={heroImage} alt={heroImageAlt || title} loading="eager" decoding="async" />
+        </figure>
+      )
+    }
 
     <div class="insight-article__body">
       <div class="container container--narrow">
@@ -118,44 +112,59 @@ const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
       </div>
     </div>
 
-    {related.length > 0 && (
-      <section class="section section--alt">
-        <div class="container">
-          <header class="section-header section-header--split">
-            <div>
-              <span class="eyebrow">Weiterlesen</span>
-              <h2>In derselben Kategorie: {categoryLabel}</h2>
-            </div>
-            <a href="/de/analysen" class="btn btn--secondary btn--sm">Alle Analysen</a>
-          </header>
+    {
+      related.length > 0 && (
+        <section class="section section--alt">
+          <div class="container">
+            <header class="section-header section-header--split">
+              <div>
+                <span class="eyebrow">Weiterlesen</span>
+                <h2>In derselben Kategorie: {categoryLabel}</h2>
+              </div>
+              <a href="/de/analysen" class="btn btn--secondary btn--sm">
+                Alle Analysen
+              </a>
+            </header>
 
-          <div class="grid grid-3">
-            {related.map((r) => (
-              <a href={`/de/analysen/${slugFor(r.id)}`} class="insight-card">
-                <div class="insight-card__image">
-                  {r.data.heroImage && (
-                    <img src={r.data.heroImage} alt={r.data.heroImageAlt} loading="lazy" decoding="async" width="600" height="400" />
-                  )}
-                </div>
-                <div class="insight-card__body">
-                  <span class="insight-card__tag">{categoryLabelsDe[r.data.category] ?? r.data.category}</span>
-                  <h3 class="insight-card__title">{r.data.title}</h3>
-                  <div class="insight-card__meta">
-                    <span>{readingTime(r.body)}</span>
-                    {r.data.pubDate && (
-                      <>
-                        <span class="insight-card__meta-sep" aria-hidden="true">|</span>
-                        <span>{formatDate(r.data.pubDate)}</span>
-                      </>
+            <div class="grid grid-3">
+              {related.map((r) => (
+                <a href={`/de/analysen/${slugFor(r.id)}`} class="insight-card">
+                  <div class="insight-card__image">
+                    {r.data.heroImage && (
+                      <img
+                        src={r.data.heroImage}
+                        alt={r.data.heroImageAlt}
+                        loading="lazy"
+                        decoding="async"
+                        width="600"
+                        height="400"
+                      />
                     )}
                   </div>
-                </div>
-              </a>
-            ))}
+                  <div class="insight-card__body">
+                    <span class="insight-card__tag">
+                      {categoryLabelsDe[r.data.category] ?? r.data.category}
+                    </span>
+                    <h3 class="insight-card__title">{r.data.title}</h3>
+                    <div class="insight-card__meta">
+                      <span>{readingTime(r.body)}</span>
+                      {r.data.pubDate && (
+                        <>
+                          <span class="insight-card__meta-sep" aria-hidden="true">
+                            |
+                          </span>
+                          <span>{formatDate(r.data.pubDate)}</span>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-    )}
+        </section>
+      )
+    }
 
     <section class="section section--tight">
       <div class="container container--narrow">
@@ -163,9 +172,7 @@ const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
           <div class="cta-card__copy">
             <span class="eyebrow">Sprechen wir</span>
             <h2>Schildern Sie uns Ihre Lage in China.</h2>
-            <p>
-              Es antwortet jemand aus dem Senior-Team. Kein Verkaufstrichter.
-            </p>
+            <p>Es antwortet jemand aus dem Senior-Team. Kein Verkaufstrichter.</p>
             <div class="cta-card__actions">
               <a href="/de/kontakt" class="btn btn--primary">Gespräch beginnen</a>
             </div>
@@ -176,10 +183,20 @@ const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
   </article>
 
   <style>
-    .insight-article__header { padding: var(--space-7) 0 var(--space-5); }
-    .insight-article__crumbs { font-size: var(--fs-small); margin-bottom: var(--space-4); }
-    .insight-article__crumbs a { color: var(--bbg-text-muted); font-weight: 500; }
-    .insight-article__crumbs a:hover { color: var(--bbg-blue); }
+    .insight-article__header {
+      padding: var(--space-7) 0 var(--space-5);
+    }
+    .insight-article__crumbs {
+      font-size: var(--fs-small);
+      margin-bottom: var(--space-4);
+    }
+    .insight-article__crumbs a {
+      color: var(--bbg-text-muted);
+      font-weight: 500;
+    }
+    .insight-article__crumbs a:hover {
+      color: var(--bbg-blue);
+    }
     .insight-article__title {
       font-size: clamp(2rem, 3vw + 1rem, 3rem);
       line-height: 1.1;
@@ -213,7 +230,9 @@ const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
       border-radius: var(--radius-md);
       display: block;
     }
-    .insight-article__body { padding-bottom: var(--space-8); }
+    .insight-article__body {
+      padding-bottom: var(--space-8);
+    }
     .insight-article__body .prose h2 {
       font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
       margin: var(--space-7) 0 var(--space-3);
@@ -243,6 +262,8 @@ const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    .insight-article__body .prose a:hover { color: var(--bbg-blue-dark); }
+    .insight-article__body .prose a:hover {
+      color: var(--bbg-blue-dark);
+    }
   </style>
 </Layout>

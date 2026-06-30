@@ -18,10 +18,10 @@ const d = entry.data;
 const categoryLabelsFr: Record<string, string> = {
   'Brand & Design': 'Marque et design',
   'Social & Content': 'Social et contenus',
-  'eCommerce': 'eCommerce',
-  'Website': 'Sites web',
-  'Distribution': 'Distribution',
-  'Training': 'Formation',
+  eCommerce: 'eCommerce',
+  Website: 'Sites web',
+  Distribution: 'Distribution',
+  Training: 'Formation',
 };
 
 const allCases = await getCollection('casesFr', ({ data }) => !data.draft);
@@ -63,7 +63,17 @@ const caseJsonLd = caseStudySchema({
       <div class="container case-hero__inner">
         <nav class="case-hero__crumbs" aria-label="Fil d'Ariane">
           <a href="/fr/nos-realisations">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg
+            >
             Retour à l'ensemble des études de cas
           </a>
         </nav>
@@ -108,26 +118,28 @@ const caseJsonLd = caseStudySchema({
     </div>
 
     {/* ---------- GALLERY ---------- */}
-    {d.images.length > 0 && (
-      <section class="case-gallery">
-        <div class="container">
-          <header class="case-gallery__head">
-            <span class="eyebrow">Pièces du dossier</span>
-            <h2 class="case-gallery__title">Le projet en images</h2>
-          </header>
-          <div class="case-gallery__stack">
-            {d.images.map((img) => (
-              <figure class="case-gallery__figure">
-                <div class="case-gallery__image">
-                  <img src={img.src} alt={img.alt} loading="lazy" decoding="async" />
-                </div>
-                {img.caption && <figcaption>{img.caption}</figcaption>}
-              </figure>
-            ))}
+    {
+      d.images.length > 0 && (
+        <section class="case-gallery">
+          <div class="container">
+            <header class="case-gallery__head">
+              <span class="eyebrow">Pièces du dossier</span>
+              <h2 class="case-gallery__title">Le projet en images</h2>
+            </header>
+            <div class="case-gallery__stack">
+              {d.images.map((img) => (
+                <figure class="case-gallery__figure">
+                  <div class="case-gallery__image">
+                    <img src={img.src} alt={img.alt} loading="lazy" decoding="async" />
+                  </div>
+                  {img.caption && <figcaption>{img.caption}</figcaption>}
+                </figure>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-    )}
+        </section>
+      )
+    }
 
     {/* ---------- CTA ---------- */}
     <section class="case-cta-wrap">
@@ -136,45 +148,61 @@ const caseJsonLd = caseStudySchema({
           <span class="eyebrow eyebrow--on-dark">Nous écrire</span>
           <h2 class="case-cta__title">Et si la prochaine étude de cas portait votre marque ?</h2>
           <p class="case-cta__lead">
-            Présentez-nous votre situation et l'ambition que vous nourrissez pour la Chine. Chaque message est lu et traité par un associé du cabinet.
+            Présentez-nous votre situation et l'ambition que vous nourrissez pour la Chine. Chaque
+            message est lu et traité par un associé du cabinet.
           </p>
           <div class="case-cta__actions">
             <a href="/fr/nous-contacter" class="btn case-cta__btn-primary">Engager l'échange</a>
-            <a href="/fr/nos-realisations" class="btn case-cta__btn-ghost">Consulter d'autres études de cas</a>
+            <a href="/fr/nos-realisations" class="btn case-cta__btn-ghost"
+              >Consulter d'autres études de cas</a
+            >
           </div>
         </div>
       </div>
     </section>
 
     {/* ---------- RELATED ---------- */}
-    {related.length > 0 && (
-      <section class="section section--alt">
-        <div class="container">
-          <header class="section-header section-header--split">
-            <div>
-              <span class="eyebrow">Dossiers comparables</span>
-              <h2>Dans la même catégorie : {categoryLabelsFr[d.category] ?? d.category}</h2>
-            </div>
-            <a href="/fr/nos-realisations" class="btn btn--secondary btn--sm">Toutes les études de cas</a>
-          </header>
-
-          <div class="grid grid-3">
-            {related.map((c) => (
-              <a href={`/fr/nos-realisations/${c.id}`} class="work-card">
-                <div class="work-card__image">
-                  <img src={c.data.heroImage} alt={c.data.heroImageAlt || `Étude de cas ${c.data.brand}`} loading="lazy" decoding="async" width="600" height="400" />
-                </div>
-                <div class="work-card__body">
-                  <span class="work-card__tag">{categoryLabelsFr[c.data.category] ?? c.data.category}</span>
-                  <h3 class="work-card__title">{c.data.brand}</h3>
-                  <p class="work-card__summary">{c.data.title}</p>
-                </div>
+    {
+      related.length > 0 && (
+        <section class="section section--alt">
+          <div class="container">
+            <header class="section-header section-header--split">
+              <div>
+                <span class="eyebrow">Dossiers comparables</span>
+                <h2>Dans la même catégorie : {categoryLabelsFr[d.category] ?? d.category}</h2>
+              </div>
+              <a href="/fr/nos-realisations" class="btn btn--secondary btn--sm">
+                Toutes les études de cas
               </a>
-            ))}
+            </header>
+
+            <div class="grid grid-3">
+              {related.map((c) => (
+                <a href={`/fr/nos-realisations/${c.id}`} class="work-card">
+                  <div class="work-card__image">
+                    <img
+                      src={c.data.heroImage}
+                      alt={c.data.heroImageAlt || `Étude de cas ${c.data.brand}`}
+                      loading="lazy"
+                      decoding="async"
+                      width="600"
+                      height="400"
+                    />
+                  </div>
+                  <div class="work-card__body">
+                    <span class="work-card__tag">
+                      {categoryLabelsFr[c.data.category] ?? c.data.category}
+                    </span>
+                    <h3 class="work-card__title">{c.data.brand}</h3>
+                    <p class="work-card__summary">{c.data.title}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-    )}
+        </section>
+      )
+    }
   </article>
 
   <style is:global>
@@ -211,12 +239,13 @@ const caseJsonLd = caseStudySchema({
       position: absolute;
       inset: 0;
       z-index: -1;
-      background:
-        linear-gradient(180deg,
-          rgba(10, 20, 28, 0.35) 0%,
-          rgba(10, 20, 28, 0.45) 40%,
-          rgba(10, 20, 28, 0.80) 80%,
-          rgba(10, 20, 28, 0.92) 100%);
+      background: linear-gradient(
+        180deg,
+        rgba(10, 20, 28, 0.35) 0%,
+        rgba(10, 20, 28, 0.45) 40%,
+        rgba(10, 20, 28, 0.8) 80%,
+        rgba(10, 20, 28, 0.92) 100%
+      );
     }
     .case-hero__inner {
       max-width: 880px;
@@ -234,11 +263,13 @@ const caseJsonLd = caseStudySchema({
       gap: 0.4rem;
       transition: color var(--dur) var(--ease);
     }
-    .case-hero__crumbs a:hover { color: var(--bbg-white); }
+    .case-hero__crumbs a:hover {
+      color: var(--bbg-white);
+    }
     .case-hero__inner .eyebrow--on-dark {
       display: inline-block;
       margin-bottom: var(--space-4);
-      color: #C8102E;
+      color: #c8102e;
     }
     .case-hero__title {
       font-size: clamp(2.75rem, 5vw + 1rem, 4.75rem);
@@ -335,7 +366,9 @@ const caseJsonLd = caseStudySchema({
       line-height: 1.75;
       color: var(--bbg-text);
     }
-    .prose--case > * + * { margin-top: 1.25em; }
+    .prose--case > * + * {
+      margin-top: 1.25em;
+    }
     .prose--case h2 {
       font-size: clamp(1.625rem, 1.5vw + 0.875rem, 2.125rem);
       line-height: 1.2;
@@ -348,7 +381,7 @@ const caseJsonLd = caseStudySchema({
       font-weight: 700;
     }
     .prose--case h2::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0.38em;
@@ -357,7 +390,9 @@ const caseJsonLd = caseStudySchema({
       border-radius: 2px;
       background: var(--bbg-blue);
     }
-    .prose--case h2:first-child { margin-top: 0; }
+    .prose--case h2:first-child {
+      margin-top: 0;
+    }
     .prose--case h3 {
       font-size: 1.375rem;
       line-height: 1.3;
@@ -366,17 +401,27 @@ const caseJsonLd = caseStudySchema({
       margin-bottom: 0.5em;
       font-weight: 600;
     }
-    .prose--case p { margin: 0 0 1.25em; }
-    .prose--case p:last-child { margin-bottom: 0; }
+    .prose--case p {
+      margin: 0 0 1.25em;
+    }
+    .prose--case p:last-child {
+      margin-bottom: 0;
+    }
     .prose--case a {
       color: var(--bbg-blue);
       text-decoration: underline;
       text-decoration-thickness: 1px;
       text-underline-offset: 3px;
     }
-    .prose--case a:hover { color: var(--bbg-blue-dark); }
-    .prose--case strong { color: var(--bbg-ink); font-weight: 700; }
-    .prose--case ul, .prose--case ol {
+    .prose--case a:hover {
+      color: var(--bbg-blue-dark);
+    }
+    .prose--case strong {
+      color: var(--bbg-ink);
+      font-weight: 700;
+    }
+    .prose--case ul,
+    .prose--case ol {
       padding-left: 1.5rem;
       margin: 0 0 1.25em;
     }
@@ -384,7 +429,10 @@ const caseJsonLd = caseStudySchema({
       margin-bottom: 0.55em;
       padding-left: 0.25rem;
     }
-    .prose--case ul li::marker { color: var(--bbg-blue); font-size: 1.1em; }
+    .prose--case ul li::marker {
+      color: var(--bbg-blue);
+      font-size: 1.1em;
+    }
     .prose--case blockquote {
       margin: 2em 0;
       padding: 0.4em 0 0.4em 1.5em;
@@ -477,13 +525,17 @@ const caseJsonLd = caseStudySchema({
       overflow: hidden;
     }
     .case-cta::before {
-      content: "";
+      content: '';
       position: absolute;
       top: -40%;
       right: -10%;
       width: 420px;
       height: 420px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 65%
+      );
       pointer-events: none;
     }
     .case-cta .eyebrow--on-dark {
@@ -543,18 +595,31 @@ const caseJsonLd = caseStudySchema({
         gap: var(--space-4);
         padding: var(--space-5);
       }
-      .case-meta-wrap { margin-top: calc(var(--space-6) * -1); }
-      .case-gallery__image { padding: var(--space-2); }
-      .case-gallery__image img { max-height: 520px; }
+      .case-meta-wrap {
+        margin-top: calc(var(--space-6) * -1);
+      }
+      .case-gallery__image {
+        padding: var(--space-2);
+      }
+      .case-gallery__image img {
+        max-height: 520px;
+      }
     }
     @media (max-width: 640px) {
       .case-intro__summary {
         padding-left: var(--space-4);
         font-size: 1.25rem;
       }
-      .prose--case { font-size: 1.0625rem; line-height: 1.7; }
-      .prose--case h2 { padding-left: 1rem; }
-      .prose--case h2::before { width: 3px; }
+      .prose--case {
+        font-size: 1.0625rem;
+        line-height: 1.7;
+      }
+      .prose--case h2 {
+        padding-left: 1rem;
+      }
+      .prose--case h2::before {
+        width: 3px;
+      }
     }
   </style>
 </Layout>

@@ -21,10 +21,10 @@ const categoryOrder = [
 const categoryLabelsEs: Record<(typeof categoryOrder)[number], string> = {
   'Brand & Design': 'Marca y diseño',
   'Social & Content': 'Social y contenidos',
-  'eCommerce': 'eCommerce',
-  'Website': 'Sitios web',
-  'Distribution': 'Distribución',
-  'Training': 'Formación',
+  eCommerce: 'eCommerce',
+  Website: 'Sitios web',
+  Distribution: 'Distribución',
+  Training: 'Formación',
 };
 
 const counts = categoryOrder
@@ -42,76 +42,84 @@ const counts = categoryOrder
       <h1>Cómo crecen las marcas internacionales en China</h1>
       <p class="lead">
         Una selección de trabajos para nuestros clientes en marketing, eCommerce y distribución.
-        Lanzamientos de marca, operación de Tmall y JD, social commerce en Douyin, WeChat
-        y RED, distribución retail, sitios web pensados para el internet chino y formación
-        de equipos que asoman la cabeza por primera vez al mercado.
+        Lanzamientos de marca, operación de Tmall y JD, social commerce en Douyin, WeChat y RED,
+        distribución retail, sitios web pensados para el internet chino y formación de equipos que
+        asoman la cabeza por primera vez al mercado.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      {counts.length > 1 && (
-        <div class="work-filter" role="tablist" aria-label="Filtrar por servicio">
-          <button
-            type="button"
-            class="work-filter__btn is-active"
-            data-category="all"
-            role="tab"
-            aria-selected="true"
-          >
-            Todo <span class="work-filter__count">{sorted.length}</span>
-          </button>
-          {counts.map((c) => (
+      {
+        counts.length > 1 && (
+          <div class="work-filter" role="tablist" aria-label="Filtrar por servicio">
             <button
               type="button"
-              class="work-filter__btn"
-              data-category={c.name}
+              class="work-filter__btn is-active"
+              data-category="all"
               role="tab"
-              aria-selected="false"
+              aria-selected="true"
             >
-              {categoryLabelsEs[c.name]} <span class="work-filter__count">{c.count}</span>
+              Todo <span class="work-filter__count">{sorted.length}</span>
             </button>
-          ))}
-        </div>
-      )}
+            {counts.map((c) => (
+              <button
+                type="button"
+                class="work-filter__btn"
+                data-category={c.name}
+                role="tab"
+                aria-selected="false"
+              >
+                {categoryLabelsEs[c.name]} <span class="work-filter__count">{c.count}</span>
+              </button>
+            ))}
+          </div>
+        )
+      }
 
       <div class="grid grid-3 work-grid">
-        {sorted.map((c) => (
-          <a href={`/es/proyectos/${c.id}`} class="work-card" data-category={c.data.category}>
-            <div class="work-card__image">
-              <img
-                src={c.data.heroImage}
-                alt={c.data.heroImageAlt || `Caso ${c.data.brand}`}
-                loading="lazy"
-                decoding="async"
-                width="600"
-                height="400"
-              />
-            </div>
-            <div class="work-card__body">
-              <span class="work-card__tag">{categoryLabelsEs[c.data.category]}</span>
-              <h3 class="work-card__title">{c.data.brand}</h3>
-              <p class="work-card__summary">{c.data.title}</p>
-              {c.data.metric && (
-                <p class="work-card__metric">{c.data.metric}</p>
-              )}
-              {c.data.services.length > 0 && (
-                <ul class="work-card__services" aria-label="Servicios">
-                  {c.data.services.slice(0, 4).map((s) => <li>{s}</li>)}
-                  {c.data.services.length > 4 && (
-                    <li class="work-card__services-more">+{c.data.services.length - 4}</li>
-                  )}
-                </ul>
-              )}
-            </div>
-          </a>
-        ))}
+        {
+          sorted.map((c) => (
+            <a href={`/es/proyectos/${c.id}`} class="work-card" data-category={c.data.category}>
+              <div class="work-card__image">
+                <img
+                  src={c.data.heroImage}
+                  alt={c.data.heroImageAlt || `Caso ${c.data.brand}`}
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
+                />
+              </div>
+              <div class="work-card__body">
+                <span class="work-card__tag">{categoryLabelsEs[c.data.category]}</span>
+                <h3 class="work-card__title">{c.data.brand}</h3>
+                <p class="work-card__summary">{c.data.title}</p>
+                {c.data.metric && <p class="work-card__metric">{c.data.metric}</p>}
+                {c.data.services.length > 0 && (
+                  <ul class="work-card__services" aria-label="Servicios">
+                    {c.data.services.slice(0, 4).map((s) => (
+                      <li>{s}</li>
+                    ))}
+                    {c.data.services.length > 4 && (
+                      <li class="work-card__services-more">+{c.data.services.length - 4}</li>
+                    )}
+                  </ul>
+                )}
+              </div>
+            </a>
+          ))
+        }
       </div>
 
-      {sorted.length === 0 && (
-        <p class="work-empty">Estamos pasando los casos viejos al nuevo sitio. Pásese en unos días.</p>
-      )}
+      {
+        sorted.length === 0 && (
+          <p class="work-empty">
+            Estamos pasando los casos viejos al nuevo sitio. Pásese en unos días.
+          </p>
+        )
+      }
     </div>
   </section>
 
@@ -122,8 +130,8 @@ const counts = categoryOrder
           <span class="eyebrow">Hablemos</span>
           <h2>¿Quiere que su marca sea el próximo caso? Tomemos un café.</h2>
           <p class="cta-card__lead">
-            Cuéntenos dónde está hoy y adónde quiere llegar. Le contesta un sénior del
-            equipo, no un chatbot ni un embudo comercial.
+            Cuéntenos dónde está hoy y adónde quiere llegar. Le contesta un sénior del equipo, no un
+            chatbot ni un embudo comercial.
           </p>
           <div class="cta-card__actions">
             <a href="/es/contacto" class="btn btn--primary">Iniciar la conversación</a>
@@ -168,8 +176,15 @@ const counts = categoryOrder
       padding: var(--space-8) 0 var(--space-6);
       text-align: center;
     }
-    .work-intro .eyebrow { display: inline-block; margin-bottom: var(--space-4); }
-    .work-intro h1 { max-width: 22ch; margin-inline: auto; margin-bottom: var(--space-4); }
+    .work-intro .eyebrow {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+    }
+    .work-intro h1 {
+      max-width: 22ch;
+      margin-inline: auto;
+      margin-bottom: var(--space-4);
+    }
     .work-intro .lead {
       max-width: 66ch;
       margin-inline: auto;
@@ -214,7 +229,9 @@ const counts = categoryOrder
       font-weight: 600;
       opacity: 0.7;
     }
-    .work-filter__btn.is-active .work-filter__count { opacity: 0.9; }
+    .work-filter__btn.is-active .work-filter__count {
+      opacity: 0.9;
+    }
 
     .work-grid {
       gap: var(--space-6) var(--space-5);
@@ -227,15 +244,26 @@ const counts = categoryOrder
     }
 
     @media (max-width: 1024px) {
-      .work-intro { padding: var(--space-7) 0 var(--space-5); }
+      .work-intro {
+        padding: var(--space-7) 0 var(--space-5);
+      }
     }
     @media (max-width: 768px) {
-      .work-intro { padding: var(--space-6) 0 var(--space-4); }
-      .work-filter { justify-content: flex-start; margin-bottom: var(--space-6); }
-      .work-filter__btn { padding: 0.45rem 0.85rem; }
+      .work-intro {
+        padding: var(--space-6) 0 var(--space-4);
+      }
+      .work-filter {
+        justify-content: flex-start;
+        margin-bottom: var(--space-6);
+      }
+      .work-filter__btn {
+        padding: 0.45rem 0.85rem;
+      }
     }
     @media (max-width: 480px) {
-      .work-filter__count { display: none; }
+      .work-filter__count {
+        display: none;
+      }
     }
   </style>
 </Layout>

@@ -4,7 +4,11 @@ import Layout from '../../layouts/Layout.astro';
 const heroStats = [
   { num: '20', suffix: '+', label: 'years running festival campaigns for foreign brands' },
   { num: '10', suffix: '', label: 'festival windows on the China calendar each year' },
-  { num: 'One team', suffix: '', label: 'Strategy, content, livestream, ads and offline, end to end' },
+  {
+    num: 'One team',
+    suffix: '',
+    label: 'Strategy, content, livestream, ads and offline, end to end',
+  },
 ];
 
 const channels = [
@@ -76,16 +80,76 @@ const steps = [
 ];
 
 const calendar = [
-  { date: 'Jan / Feb', event: 'Chinese New Year', prep: '8 to 10 weeks out', what: 'The biggest cultural moment of the year. Gifting, red packaging, family. Sales slow during the holiday itself, but the run-up is strong.', who: 'Gifting categories, food, beauty, premium' },
-  { date: 'March 8', event: 'Women’s Day / Queen’s Day', prep: '6 weeks out', what: 'A female-focused shopping moment, strong for beauty and fashion.', who: 'Beauty, fashion, jewelry, wellness' },
-  { date: 'April / May', event: 'Labor Day (May 1)', prep: '6 weeks out', what: 'A travel and lifestyle peak, and a useful mid-spring push.', who: 'Travel, outdoor, lifestyle, FMCG' },
-  { date: 'May to June 18', event: '618 Festival', prep: '10 to 12 weeks out', what: 'The second-biggest festival of the year. Launched by JD, now run across all platforms. Pre-sales open in mid-May.', who: 'Every brand selling in China' },
-  { date: 'June 19 (2026)', event: 'Dragon Boat Festival', prep: '5 weeks out', what: 'A cultural moment built around gifting and traditional food.', who: 'Food, gifting, heritage-led brands' },
-  { date: 'August 8', event: '8.8 / 88VIP Members Festival', prep: '6 weeks out', what: 'A Tmall Global moment focused on international brands and member loyalty.', who: 'Cross-border brands, brands with a member base' },
-  { date: 'August 19 (2026)', event: 'Qixi Festival', prep: '5 to 6 weeks out', what: 'Chinese Valentine’s Day. Romantic gifting.', who: 'Beauty, jewelry, fashion, gifting' },
-  { date: 'Sept / Oct', event: 'Mid-Autumn & Golden Week', prep: '6 to 8 weeks out', what: 'Gifting plus a long national holiday, with a travel and spending spike.', who: 'Food, gifting, travel, lifestyle' },
-  { date: 'Late Oct to Nov 11', event: 'Singles Day (Double 11)', prep: '12 to 14 weeks out', what: 'The largest online shopping event in the world. Now a multi-week event that starts in late October. The campaign of the year.', who: 'Every brand selling in China' },
-  { date: 'December 12', event: 'Double 12 / Year-End', prep: '5 weeks out', what: 'The final push of the year. Strong for smaller brands and inventory clearance.', who: 'Smaller brands, clearance, late entrants' },
+  {
+    date: 'Jan / Feb',
+    event: 'Chinese New Year',
+    prep: '8 to 10 weeks out',
+    what: 'The biggest cultural moment of the year. Gifting, red packaging, family. Sales slow during the holiday itself, but the run-up is strong.',
+    who: 'Gifting categories, food, beauty, premium',
+  },
+  {
+    date: 'March 8',
+    event: 'Women’s Day / Queen’s Day',
+    prep: '6 weeks out',
+    what: 'A female-focused shopping moment, strong for beauty and fashion.',
+    who: 'Beauty, fashion, jewelry, wellness',
+  },
+  {
+    date: 'April / May',
+    event: 'Labor Day (May 1)',
+    prep: '6 weeks out',
+    what: 'A travel and lifestyle peak, and a useful mid-spring push.',
+    who: 'Travel, outdoor, lifestyle, FMCG',
+  },
+  {
+    date: 'May to June 18',
+    event: '618 Festival',
+    prep: '10 to 12 weeks out',
+    what: 'The second-biggest festival of the year. Launched by JD, now run across all platforms. Pre-sales open in mid-May.',
+    who: 'Every brand selling in China',
+  },
+  {
+    date: 'June 19 (2026)',
+    event: 'Dragon Boat Festival',
+    prep: '5 weeks out',
+    what: 'A cultural moment built around gifting and traditional food.',
+    who: 'Food, gifting, heritage-led brands',
+  },
+  {
+    date: 'August 8',
+    event: '8.8 / 88VIP Members Festival',
+    prep: '6 weeks out',
+    what: 'A Tmall Global moment focused on international brands and member loyalty.',
+    who: 'Cross-border brands, brands with a member base',
+  },
+  {
+    date: 'August 19 (2026)',
+    event: 'Qixi Festival',
+    prep: '5 to 6 weeks out',
+    what: 'Chinese Valentine’s Day. Romantic gifting.',
+    who: 'Beauty, jewelry, fashion, gifting',
+  },
+  {
+    date: 'Sept / Oct',
+    event: 'Mid-Autumn & Golden Week',
+    prep: '6 to 8 weeks out',
+    what: 'Gifting plus a long national holiday, with a travel and spending spike.',
+    who: 'Food, gifting, travel, lifestyle',
+  },
+  {
+    date: 'Late Oct to Nov 11',
+    event: 'Singles Day (Double 11)',
+    prep: '12 to 14 weeks out',
+    what: 'The largest online shopping event in the world. Now a multi-week event that starts in late October. The campaign of the year.',
+    who: 'Every brand selling in China',
+  },
+  {
+    date: 'December 12',
+    event: 'Double 12 / Year-End',
+    prep: '5 weeks out',
+    what: 'The final push of the year. Strong for smaller brands and inventory clearance.',
+    who: 'Smaller brands, clearance, late entrants',
+  },
 ];
 
 const serviceJsonLd = {
@@ -109,11 +173,13 @@ const serviceJsonLd = {
 
   <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
   <article class="cbs">
-
     {/* ---------- HERO ---------- */}
     <section class="cbs-hero" data-hero>
       <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/grow-in-china/campaigns/hero-campaign-warroom.png" alt="A Singles Day campaign control room in China, operators watching a live GMV dashboard with festival numbers climbing in red" />
+        <img
+          src="/Images/grow-in-china/campaigns/hero-campaign-warroom.png"
+          alt="A Singles Day campaign control room in China, operators watching a live GMV dashboard with festival numbers climbing in red"
+        />
       </div>
       <div class="cbs-hero__overlay" aria-hidden="true"></div>
       <div class="cbs-hero__grain" aria-hidden="true"></div>
@@ -127,13 +193,14 @@ const serviceJsonLd = {
         <span class="eyebrow eyebrow--on-dark cbs-reveal">Campaigns</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
           <span class="cbs-hero__title-row">Selling in China runs on campaigns.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--accent">Miss them, and you miss the year.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent"
+            >Miss them, and you miss the year.</span
+          >
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          In China, sales come in waves, tied to dates the whole country shops around.
-          Brands that plan for those waves grow. Brands that don’t tend to flatline.
-          We build the campaign, run it across every channel it needs, and stay on the
-          floor with you when it goes live.
+          In China, sales come in waves, tied to dates the whole country shops around. Brands that
+          plan for those waves grow. Brands that don’t tend to flatline. We build the campaign, run
+          it across every channel it needs, and stay on the floor with you when it goes live.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
           <a href="/contact" class="btn btn--primary cbs-magnetic">Talk to us about a campaign</a>
@@ -141,12 +208,17 @@ const serviceJsonLd = {
         </div>
 
         <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
-          {heroStats.map((s) => (
-            <div class="cbs-hero__meta-item">
-              <span class="cbs-hero__meta-num">{s.num}{s.suffix}</span>
-              <span class="cbs-hero__meta-label">{s.label}</span>
-            </div>
-          ))}
+          {
+            heroStats.map((s) => (
+              <div class="cbs-hero__meta-item">
+                <span class="cbs-hero__meta-num">
+                  {s.num}
+                  {s.suffix}
+                </span>
+                <span class="cbs-hero__meta-label">{s.label}</span>
+              </div>
+            ))
+          }
         </div>
       </div>
 
@@ -168,44 +240,38 @@ const serviceJsonLd = {
           <div class="cbs-basics__cols cbs-reveal">
             <div class="cbs-basics__col">
               <p>
-                A campaign is a coordinated push around a single moment. Usually a
-                shopping festival like 618 or Singles Day, sometimes a product launch
-                or a brand anniversary.
+                A campaign is a coordinated push around a single moment. Usually a shopping festival
+                like 618 or Singles Day, sometimes a product launch or a brand anniversary.
               </p>
               <p>
-                What it isn’t: one banner on your store page. It’s a sequence
-                that runs for weeks. A warm-up before the date, the peak event, a
-                close-out after, with pricing, content, livestream, KOL seeding,
-                customer service, and stock all aimed at the same few days.
+                What it isn’t: one banner on your store page. It’s a sequence that runs for weeks. A
+                warm-up before the date, the peak event, a close-out after, with pricing, content,
+                livestream, KOL seeding, customer service, and stock all aimed at the same few days.
               </p>
               <p>
-                And a big China campaign is a brand campaign in its own right. The
-                budget is often just as large as a brand campaign’s, and the payoff
-                isn’t only the quarter’s sales numbers; it’s
-                brand-building too.
+                And a big China campaign is a brand campaign in its own right. The budget is often
+                just as large as a brand campaign’s, and the payoff isn’t only the quarter’s sales
+                numbers; it’s brand-building too.
               </p>
             </div>
 
             <div class="cbs-basics__col">
               <p>
-                Here’s the thing brands miss. Chinese shoppers wait for festivals.
-                They fill their carts for weeks, then buy everything at once when the
-                discounts open. The platforms feed this behavior: during festival
-                periods, Tmall, JD, and Douyin steer traffic and search ranking toward
-                brands that are running official campaign mechanics. Sit out 618 and
-                Singles Day and you’ve handed the two biggest sales windows of the
-                year, and your ranking, to whoever did show up.
+                Here’s the thing brands miss. Chinese shoppers wait for festivals. They fill their
+                carts for weeks, then buy everything at once when the discounts open. The platforms
+                feed this behavior: during festival periods, Tmall, JD, and Douyin steer traffic and
+                search ranking toward brands that are running official campaign mechanics. Sit out
+                618 and Singles Day and you’ve handed the two biggest sales windows of the year, and
+                your ranking, to whoever did show up.
               </p>
               <p>
-                There’s a bigger prize on top of that. If a platform picks your
-                campaign as one of its festival standouts, it puts its own advertising
-                weight behind you. Feature placement, homepage traffic, the kind of
-                reach you simply can’t buy directly.
+                There’s a bigger prize on top of that. If a platform picks your campaign as one of
+                its festival standouts, it puts its own advertising weight behind you. Feature
+                placement, homepage traffic, the kind of reach you simply can’t buy directly.
               </p>
               <p>
-                For most of the brands we run, the festival periods are where a large
-                chunk of the annual number comes from. The quiet months pay the rent.
-                The campaigns are the year.
+                For most of the brands we run, the festival periods are where a large chunk of the
+                annual number comes from. The quiet months pay the rent. The campaigns are the year.
               </p>
             </div>
           </div>
@@ -226,52 +292,52 @@ const serviceJsonLd = {
           <span class="eyebrow">The reality</span>
           <h2>A campaign is never just the eCommerce platform</h2>
           <p class="section-header__lead">
-            This is the part most brands underestimate. Yes, the sale closes on Tmall,
-            JD, or Douyin. But the campaign that drives it lives almost everywhere else,
-            and it’s nearly always multi-channel. A typical campaign is working on
-            several fronts at the same time.
+            This is the part most brands underestimate. Yes, the sale closes on Tmall, JD, or
+            Douyin. But the campaign that drives it lives almost everywhere else, and it’s nearly
+            always multi-channel. A typical campaign is working on several fronts at the same time.
           </p>
         </header>
 
         <div class="cbs-truths cbs-truths--three">
-          {channels.map((c, i) => (
-            <article
-              class={`cbs-truth cbs-truth--compact${i % 2 === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
-              style={`--reveal-delay: ${(i % 3) * 100}ms;`}
-              data-truth-tilt
-            >
-              <div class="cbs-truth__inner">
-                <div class="cbs-truth__stage">
-                  <div class="cbs-truth__frame">
-                    <img
-                      src={c.image}
-                      alt={c.alt}
-                      loading="lazy"
-                      decoding="async"
-                      data-truth-parallax
-                    />
-                    <div class="cbs-truth__shade" aria-hidden="true"></div>
-                    <div class="cbs-truth__sheen" aria-hidden="true"></div>
+          {
+            channels.map((c, i) => (
+              <article
+                class={`cbs-truth cbs-truth--compact${i % 2 === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
+                style={`--reveal-delay: ${(i % 3) * 100}ms;`}
+                data-truth-tilt
+              >
+                <div class="cbs-truth__inner">
+                  <div class="cbs-truth__stage">
+                    <div class="cbs-truth__frame">
+                      <img
+                        src={c.image}
+                        alt={c.alt}
+                        loading="lazy"
+                        decoding="async"
+                        data-truth-parallax
+                      />
+                      <div class="cbs-truth__shade" aria-hidden="true" />
+                      <div class="cbs-truth__sheen" aria-hidden="true" />
+                    </div>
+                    <div class="cbs-truth__kicker" aria-hidden="true">
+                      <span class="cbs-truth__kicker-dot" />
+                      {c.kicker}
+                    </div>
                   </div>
-                  <div class="cbs-truth__kicker" aria-hidden="true">
-                    <span class="cbs-truth__kicker-dot"></span>
-                    {c.kicker}
-                  </div>
-                </div>
 
-                <div class="cbs-truth__content">
-                  <h3 class="cbs-truth__title">{c.title}</h3>
-                  <p class="cbs-truth__body">{c.body}</p>
+                  <div class="cbs-truth__content">
+                    <h3 class="cbs-truth__title">{c.title}</h3>
+                    <p class="cbs-truth__body">{c.body}</p>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            ))
+          }
         </div>
 
         <p class="cbs-reality__note cbs-reveal">
-          None of these is hard to run on its own. The hard part, and the part that
-          decides the result, is making them fire in the right order, all pointing at
-          the same date.
+          None of these is hard to run on its own. The hard part, and the part that decides the
+          result, is making them fire in the right order, all pointing at the same date.
         </p>
       </div>
     </section>
@@ -283,26 +349,35 @@ const serviceJsonLd = {
           <span class="eyebrow">Our approach</span>
           <h2>How we run a campaign</h2>
           <p class="section-header__lead">
-            The backbone is the same every time. The details change, the spine
-            doesn’t.
+            The backbone is the same every time. The details change, the spine doesn’t.
           </p>
         </header>
 
         <ol class="cbs-steps">
-          {steps.map((s, i) => (
-            <li class="cbs-steps__item cbs-reveal" style={`--reveal-delay: ${i * 80}ms;`}>
-              <span class="cbs-steps__check" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-              </span>
-              <h3 class="cbs-steps__title">{s.title}</h3>
-              <p class="cbs-steps__body">{s.body}</p>
-            </li>
-          ))}
+          {
+            steps.map((s, i) => (
+              <li class="cbs-steps__item cbs-reveal" style={`--reveal-delay: ${i * 80}ms;`}>
+                <span class="cbs-steps__check" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="5 12 10 17 19 8" />
+                  </svg>
+                </span>
+                <h3 class="cbs-steps__title">{s.title}</h3>
+                <p class="cbs-steps__body">{s.body}</p>
+              </li>
+            ))
+          }
         </ol>
 
         <blockquote class="cbs-quote cbs-reveal">
-          <p>We don’t hand you a deck and walk away. We run it with you.
-          That’s the difference.</p>
+          <p>We don’t hand you a deck and walk away. We run it with you. That’s the difference.</p>
         </blockquote>
 
         <div class="cbs-approach__cta cbs-reveal">
@@ -321,28 +396,26 @@ const serviceJsonLd = {
 
         <div class="cbs-prose cbs-reveal">
           <p>
-            There’s no single number for a China campaign, and anyone who hands you
-            one before asking about your category is guessing. The budget splits into a
-            few parts: the fee to plan and run it, media (usually the largest line, paid
-            traffic plus amplification on Xiaohongshu and Douyin), KOL and livestream
-            fees, content production, and the stock and discount margin that decides
-            whether the whole thing turns a profit.
+            There’s no single number for a China campaign, and anyone who hands you one before
+            asking about your category is guessing. The budget splits into a few parts: the fee to
+            plan and run it, media (usually the largest line, paid traffic plus amplification on
+            Xiaohongshu and Douyin), KOL and livestream fees, content production, and the stock and
+            discount margin that decides whether the whole thing turns a profit.
           </p>
         </div>
 
         <blockquote class="cbs-quote cbs-quote--warning cbs-reveal">
           <p>
-            One honest word of caution. Festivals are hard on margin, and not every brand
-            should chase every date. A campaign that wins GMV but loses money isn’t
-            a win. We’d rather tell you to sit a festival out than run one that
-            hurts you. That judgment is part of what you’re paying for.
+            One honest word of caution. Festivals are hard on margin, and not every brand should
+            chase every date. A campaign that wins GMV but loses money isn’t a win. We’d rather tell
+            you to sit a festival out than run one that hurts you. That judgment is part of what
+            you’re paying for.
           </p>
         </blockquote>
 
         <div class="cbs-prose cbs-reveal">
           <p>
-            Tell us the date you’re eyeing. We’ll come back with a real
-            number, not a vague range.
+            Tell us the date you’re eyeing. We’ll come back with a real number, not a vague range.
           </p>
         </div>
       </div>
@@ -355,10 +428,9 @@ const serviceJsonLd = {
           <span class="eyebrow">The calendar</span>
           <h2>The China eCommerce campaign calendar</h2>
           <p class="section-header__lead">
-            So which dates should you actually plan for? These are the ones the Chinese
-            market shops around. Not all of them are yours to chase. But every brand
-            selling in China should plan against this calendar a year out, because the
-            prep starts long before the date.
+            So which dates should you actually plan for? These are the ones the Chinese market shops
+            around. Not all of them are yours to chase. But every brand selling in China should plan
+            against this calendar a year out, because the prep starts long before the date.
           </p>
         </header>
 
@@ -375,25 +447,26 @@ const serviceJsonLd = {
                 </tr>
               </thead>
               <tbody>
-                {calendar.map((row) => (
-                  <tr>
-                    <td class="cbs-calendar__date">{row.date}</td>
-                    <td class="cbs-calendar__event">{row.event}</td>
-                    <td class="cbs-calendar__prep">{row.prep}</td>
-                    <td class="cbs-calendar__what">{row.what}</td>
-                    <td class="cbs-calendar__who">{row.who}</td>
-                  </tr>
-                ))}
+                {
+                  calendar.map((row) => (
+                    <tr>
+                      <td class="cbs-calendar__date">{row.date}</td>
+                      <td class="cbs-calendar__event">{row.event}</td>
+                      <td class="cbs-calendar__prep">{row.prep}</td>
+                      <td class="cbs-calendar__what">{row.what}</td>
+                      <td class="cbs-calendar__who">{row.who}</td>
+                    </tr>
+                  ))
+                }
               </tbody>
             </table>
           </div>
 
           <p class="cbs-compare__note">
-            How to read this calendar. You don’t run all ten. A focused brand picks
-            two or three to win properly and treats the rest as light-touch. 618 and
-            Singles Day are the non-negotiables. The rest depends on your category. And
-            look at the prep column: if a festival is less than its lead time away,
-            you’re already behind, so plan the next one.
+            How to read this calendar. You don’t run all ten. A focused brand picks two or three to
+            win properly and treats the rest as light-touch. 618 and Singles Day are the
+            non-negotiables. The rest depends on your category. And look at the prep column: if a
+            festival is less than its lead time away, you’re already behind, so plan the next one.
           </p>
         </div>
       </div>
@@ -411,22 +484,23 @@ const serviceJsonLd = {
           <article class="cbs-fit__card cbs-fit__card--yes cbs-reveal">
             <span class="cbs-fit__tag">This is for you</span>
             <p>
-              A campaign program makes sense if you’re already selling in China,
-              on Tmall, Tmall Global, JD, or Douyin, and your festival periods
-              aren’t pulling the weight they should be. It also makes sense if
-              you’re about to launch and you want your first festival to actually
-              land, instead of watching it go by.
+              A campaign program makes sense if you’re already selling in China, on Tmall, Tmall
+              Global, JD, or Douyin, and your festival periods aren’t pulling the weight they should
+              be. It also makes sense if you’re about to launch and you want your first festival to
+              actually land, instead of watching it go by.
             </p>
           </article>
 
-          <article class="cbs-fit__card cbs-fit__card--not cbs-reveal" style="--reveal-delay: 120ms;">
+          <article
+            class="cbs-fit__card cbs-fit__card--not cbs-reveal"
+            style="--reveal-delay: 120ms;"
+          >
             <span class="cbs-fit__tag">Not yet</span>
             <p>
-              It’s probably not for you yet if your store is brand new with no
-              traffic history behind it, or if your margins simply can’t take a
-              festival discount. No shame in that. It just means the groundwork comes
-              first, and the campaign comes after. Talk to us about that part instead,
-              we’d rather start you in the right place.
+              It’s probably not for you yet if your store is brand new with no traffic history
+              behind it, or if your margins simply can’t take a festival discount. No shame in that.
+              It just means the groundwork comes first, and the campaign comes after. Talk to us
+              about that part instead, we’d rather start you in the right place.
             </p>
           </article>
         </div>
@@ -440,17 +514,16 @@ const serviceJsonLd = {
           <span class="eyebrow eyebrow--on-dark">Let’s talk</span>
           <h2 class="cbs-cta__title">Ready to win China’s shopping festivals?</h2>
           <p class="cbs-cta__lead">
-            We’ve run festival campaigns for international brands across beauty,
-            skincare, food, and consumer goods. We know which dates are worth your
-            money, and which ones to skip. We know how to build the warm-up that
-            actually moves the result, and we know what the peak feels like when
-            it’s live and the numbers are coming in by the hour.
+            We’ve run festival campaigns for international brands across beauty, skincare, food, and
+            consumer goods. We know which dates are worth your money, and which ones to skip. We
+            know how to build the warm-up that actually moves the result, and we know what the peak
+            feels like when it’s live and the numbers are coming in by the hour.
           </p>
-          <p class="cbs-cta__pull">
-            We consult on the plan, and we run what we recommend.
-          </p>
+          <p class="cbs-cta__pull">We consult on the plan, and we run what we recommend.</p>
           <div class="cbs-cta__actions">
-            <a href="/contact" class="btn cbs-cta__btn-primary">Plan your campaign calendar with us</a>
+            <a href="/contact" class="btn cbs-cta__btn-primary"
+              >Plan your campaign calendar with us</a
+            >
             <a href="/work" class="btn cbs-cta__btn-ghost">See our case studies</a>
           </div>
         </div>
@@ -460,7 +533,9 @@ const serviceJsonLd = {
 
   <style is:global>
     /* ---------- Container narrow helper ---------- */
-    .cbs .container--narrow { max-width: 880px; }
+    .cbs .container--narrow {
+      max-width: 880px;
+    }
 
     /* ---------- REVEAL + MOTION ---------- */
     @media (prefers-reduced-motion: no-preference) {
@@ -471,23 +546,35 @@ const serviceJsonLd = {
           opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
           transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
       }
-      .cbs-reveal.is-in { opacity: 1; transform: translateY(0); }
+      .cbs-reveal.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
       .cbs-magnetic {
         will-change: transform;
-        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+        transition:
+          transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 220ms ease,
+          background-color 200ms ease,
+          color 200ms ease;
       }
     }
 
     /* ---------- SCROLL PROGRESS BAR ---------- */
     .cbs-progress {
-      position: fixed; top: 0; left: 0; right: 0;
-      height: 3px; z-index: 1000;
-      background: transparent; pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 1000;
+      background: transparent;
+      pointer-events: none;
     }
     .cbs-progress__bar {
-      height: 100%; width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #C8102E 100%);
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 60%, #c8102e 100%);
       box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
@@ -496,54 +583,81 @@ const serviceJsonLd = {
     .cbs-hero {
       position: relative;
       min-height: clamp(360px, 48vh, 500px);
-      display: flex; align-items: flex-start;
+      display: flex;
+      align-items: flex-start;
       padding: clamp(8px, 1.25vh, 16px) 0 clamp(48px, 7vh, 80px);
       color: var(--bbg-white);
-      overflow: hidden; isolation: isolate;
+      overflow: hidden;
+      isolation: isolate;
     }
-    body:has(.cbs-hero) .cbs-hero { padding-top: clamp(112px, 10vh, 144px); }
+    body:has(.cbs-hero) .cbs-hero {
+      padding-top: clamp(112px, 10vh, 144px);
+    }
     @media (max-width: 1024px) {
-      body:has(.cbs-hero) .cbs-hero { padding-top: clamp(96px, 9vh, 116px); }
+      body:has(.cbs-hero) .cbs-hero {
+        padding-top: clamp(96px, 9vh, 116px);
+      }
     }
-    .cbs-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .cbs-hero__bg {
+      position: absolute;
+      inset: -10% 0 0;
+      z-index: -3;
+    }
     .cbs-hero__bg img {
-      width: 100%; height: 110%;
-      object-fit: cover; object-position: center;
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
       transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
       transition: transform 80ms linear;
       filter: saturate(0.95);
     }
     .cbs-hero__overlay {
-      position: absolute; inset: 0; z-index: -2;
+      position: absolute;
+      inset: 0;
+      z-index: -2;
       background:
-        linear-gradient(110deg,
+        linear-gradient(
+          110deg,
           rgba(8, 18, 28, 0.92) 0%,
           rgba(8, 18, 28, 0.72) 42%,
-          rgba(8, 18, 28, 0.32) 100%),
-        radial-gradient(120% 80% at 0% 100%,
-          rgba(200, 16, 46, 0.28) 0%,
-          rgba(200, 16, 46, 0) 60%);
+          rgba(8, 18, 28, 0.32) 100%
+        ),
+        radial-gradient(120% 80% at 0% 100%, rgba(200, 16, 46, 0.28) 0%, rgba(200, 16, 46, 0) 60%);
     }
     .cbs-hero__grain {
-      position: absolute; inset: 0; z-index: -1;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
       background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
       background-size: 3px 3px;
-      mix-blend-mode: overlay; opacity: 0.45;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
       pointer-events: none;
     }
-    .cbs-hero__inner { max-width: 980px; position: relative; }
+    .cbs-hero__inner {
+      max-width: 980px;
+      position: relative;
+    }
     .cbs-hero__crumbs {
       margin-bottom: var(--space-4);
       font-size: var(--fs-small);
-      display: flex; gap: 0.5rem; align-items: center;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
       color: rgba(255, 255, 255, 0.7);
     }
-    .cbs-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
-    .cbs-hero__crumbs a:hover { color: var(--bbg-white); }
+    .cbs-hero__crumbs a {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+    .cbs-hero__crumbs a:hover {
+      color: var(--bbg-white);
+    }
     .cbs-hero__inner .eyebrow--on-dark {
       display: inline-block;
       margin-bottom: var(--space-3);
-      color: #C8102E;
+      color: #c8102e;
     }
     .cbs-hero__title {
       font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
@@ -553,13 +667,18 @@ const serviceJsonLd = {
       margin: 0 0 var(--space-4);
       max-width: 22ch;
       font-weight: 700;
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: 0.05em;
     }
-    .cbs-hero__title-row { display: block; }
+    .cbs-hero__title-row {
+      display: block;
+    }
     .cbs-hero__title-row--accent {
-      color: #C8102E; font-weight: 500;
-      font-style: italic; letter-spacing: -0.018em;
+      color: #c8102e;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -0.018em;
     }
     .cbs-hero__lead {
       font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
@@ -568,31 +687,46 @@ const serviceJsonLd = {
       max-width: 58ch;
       margin: 0 0 var(--space-5);
     }
-    .cbs-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
-    .cbs-magnetic:hover { transform: translateY(-2px); }
+    .cbs-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+    .cbs-magnetic:hover {
+      transform: translateY(-2px);
+    }
 
     .cbs-hero__meta {
-      display: flex; flex-wrap: nowrap;
+      display: flex;
+      flex-wrap: nowrap;
       gap: clamp(var(--space-3), 3vw, var(--space-6));
       padding-top: var(--space-5);
       border-top: 1px solid rgba(255, 255, 255, 0.14);
       max-width: none;
     }
     .cbs-hero__meta-item {
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: 0.2rem;
       min-width: 0;
       flex: 1 1 0;
     }
     @media (max-width: 720px) {
-      .cbs-hero__meta { flex-wrap: wrap; }
-      .cbs-hero__meta-item { flex: 1 1 auto; }
+      .cbs-hero__meta {
+        flex-wrap: wrap;
+      }
+      .cbs-hero__meta-item {
+        flex: 1 1 auto;
+      }
     }
     .cbs-hero__meta-num {
       font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
-      font-weight: 700; letter-spacing: -0.02em;
-      line-height: 1; color: var(--bbg-white);
-      font-feature-settings: "tnum";
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: 'tnum';
     }
     .cbs-hero__meta-label {
       font-size: 0.85rem;
@@ -604,30 +738,52 @@ const serviceJsonLd = {
       position: absolute;
       bottom: var(--space-5);
       right: clamp(var(--space-5), 4vw, var(--space-7));
-      display: flex; flex-direction: column;
-      align-items: center; gap: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
       color: rgba(255, 255, 255, 0.7);
-      font-size: 0.7rem; letter-spacing: 0.18em;
-      text-transform: uppercase; font-weight: 600;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
       transition: color 200ms ease;
     }
-    .cbs-hero__scroll:hover { color: var(--bbg-white); }
+    .cbs-hero__scroll:hover {
+      color: var(--bbg-white);
+    }
     .cbs-hero__scroll-line {
-      width: 1px; height: 40px;
+      width: 1px;
+      height: 40px;
       background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
     .cbs-hero__scroll-line::after {
-      content: ""; position: absolute;
-      top: -100%; left: 0; right: 0;
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
       height: 50%;
       background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
       animation: cbs-scroll-tick 1.8s ease-in-out infinite;
     }
-    @keyframes cbs-scroll-tick { 0% { top: -50%; } 100% { top: 100%; } }
+    @keyframes cbs-scroll-tick {
+      0% {
+        top: -50%;
+      }
+      100% {
+        top: 100%;
+      }
+    }
     @media (max-width: 720px) {
-      .cbs-hero__scroll { display: none; }
-      .cbs-hero__meta { gap: var(--space-4); }
+      .cbs-hero__scroll {
+        display: none;
+      }
+      .cbs-hero__meta {
+        gap: var(--space-4);
+      }
     }
 
     /* ---------- PROSE BLOCK ---------- */
@@ -637,9 +793,15 @@ const serviceJsonLd = {
       font-size: 1.0625rem;
       margin: 0 0 var(--space-4);
     }
-    .cbs-prose p:last-child { margin-bottom: 0; }
-    .cbs-prose + .cbs-quote { margin-top: var(--space-5); }
-    .cbs-quote + .cbs-prose { margin-top: var(--space-5); }
+    .cbs-prose p:last-child {
+      margin-bottom: 0;
+    }
+    .cbs-prose + .cbs-quote {
+      margin-top: var(--space-5);
+    }
+    .cbs-quote + .cbs-prose {
+      margin-top: var(--space-5);
+    }
 
     /* ---------- BASICS (two-column read) ---------- */
     .cbs-basics {
@@ -669,9 +831,14 @@ const serviceJsonLd = {
       line-height: 1.75;
       margin: 0 0 var(--space-4);
     }
-    .cbs-basics__col p:last-child { margin-bottom: 0; }
+    .cbs-basics__col p:last-child {
+      margin-bottom: 0;
+    }
     @media (max-width: 820px) {
-      .cbs-basics__cols { grid-template-columns: 1fr; gap: var(--space-4); }
+      .cbs-basics__cols {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
     }
 
     .cbs-reality__note {
@@ -685,7 +852,9 @@ const serviceJsonLd = {
 
     /* ---------- STEPS (no number badges, check-icon led) ---------- */
     .cbs-steps {
-      list-style: none; padding: 0; margin: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: var(--space-5);
@@ -696,17 +865,23 @@ const serviceJsonLd = {
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
       padding: var(--space-5);
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-3);
       position: relative;
-      transition: border-color 260ms ease, box-shadow 260ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 260ms ease,
+        box-shadow 260ms ease,
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-steps__item::before {
-      content: "";
+      content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       transform: scaleX(0);
       transform-origin: left center;
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -717,16 +892,24 @@ const serviceJsonLd = {
       border-color: var(--bbg-blue);
       box-shadow: 0 16px 32px -20px rgba(200, 16, 46, 0.4);
     }
-    .cbs-steps__item:hover::before { transform: scaleX(1); }
+    .cbs-steps__item:hover::before {
+      transform: scaleX(1);
+    }
     .cbs-steps__check {
-      width: 36px; height: 36px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       background: var(--bbg-blue-light);
       color: var(--bbg-blue);
-      display: inline-flex; align-items: center; justify-content: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       flex-shrink: 0;
     }
-    .cbs-steps__check svg { width: 18px; height: 18px; }
+    .cbs-steps__check svg {
+      width: 18px;
+      height: 18px;
+    }
     .cbs-steps__title {
       font-size: 1.0625rem;
       line-height: 1.25;
@@ -741,10 +924,14 @@ const serviceJsonLd = {
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .cbs-steps { grid-template-columns: repeat(2, 1fr); }
+      .cbs-steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (max-width: 640px) {
-      .cbs-steps { grid-template-columns: 1fr; }
+      .cbs-steps {
+        grid-template-columns: 1fr;
+      }
     }
 
     .cbs-approach__cta {
@@ -757,7 +944,7 @@ const serviceJsonLd = {
       margin: var(--space-6) auto 0;
       max-width: 760px;
       padding: var(--space-5) var(--space-6);
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.10) 100%);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.1) 100%);
       border-left: 4px solid var(--bbg-blue);
       border-radius: 0 var(--radius-md) var(--radius-md) 0;
     }
@@ -770,10 +957,14 @@ const serviceJsonLd = {
       font-style: italic;
     }
     .cbs-quote--warning {
-      background: linear-gradient(135deg, #FFF6E5 0%, #FFEDC9 100%);
-      border-left-color: #D89B2A;
+      background: linear-gradient(135deg, #fff6e5 0%, #ffedc9 100%);
+      border-left-color: #d89b2a;
     }
-    .cbs-quote--warning p { color: #5B3E0A; font-style: normal; font-weight: 500; }
+    .cbs-quote--warning p {
+      color: #5b3e0a;
+      font-style: normal;
+      font-weight: 500;
+    }
 
     /* ---------- CALENDAR TABLE ---------- */
     .cbs-compare {
@@ -783,7 +974,9 @@ const serviceJsonLd = {
       padding: clamp(var(--space-4), 2vw + 1rem, var(--space-6));
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
     }
-    .cbs-compare__table-wrap { overflow-x: auto; }
+    .cbs-compare__table-wrap {
+      overflow-x: auto;
+    }
     .cbs-calendar {
       width: 100%;
       border-collapse: separate;
@@ -814,8 +1007,12 @@ const serviceJsonLd = {
       color: var(--bbg-ink);
       line-height: 1.55;
     }
-    .cbs-calendar tbody tr:last-child td { border-bottom: none; }
-    .cbs-calendar tbody tr:hover td { background: rgba(200, 16, 46, 0.03); }
+    .cbs-calendar tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .cbs-calendar tbody tr:hover td {
+      background: rgba(200, 16, 46, 0.03);
+    }
     .cbs-calendar__date {
       font-weight: 700;
       color: var(--bbg-ink);
@@ -859,10 +1056,14 @@ const serviceJsonLd = {
       border-radius: var(--radius-lg);
       border: 1px solid var(--bbg-border);
       background: var(--bbg-white);
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-3);
       position: relative;
-      transition: border-color 260ms ease, box-shadow 260ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 260ms ease,
+        box-shadow 260ms ease,
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-fit__card:hover {
       transform: translateY(-3px);
@@ -872,11 +1073,15 @@ const serviceJsonLd = {
       background: linear-gradient(160deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.08) 100%);
       border-color: rgba(200, 16, 46, 0.35);
     }
-    .cbs-fit__card--yes:hover { border-color: var(--bbg-blue); }
+    .cbs-fit__card--yes:hover {
+      border-color: var(--bbg-blue);
+    }
     .cbs-fit__tag {
       align-self: flex-start;
-      font-size: 0.72rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       padding: 0.35em 0.85em;
       border-radius: 999px;
     }
@@ -895,9 +1100,13 @@ const serviceJsonLd = {
       line-height: 1.65;
       margin: 0;
     }
-    .cbs-fit__card--not p { color: var(--bbg-text); }
+    .cbs-fit__card--not p {
+      color: var(--bbg-text);
+    }
     @media (max-width: 1024px) {
-      .cbs-fit { grid-template-columns: 1fr; }
+      .cbs-fit {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- FINAL CTA ---------- */
@@ -907,13 +1116,21 @@ const serviceJsonLd = {
       color: var(--bbg-white);
       border-radius: var(--radius-lg);
       text-align: center;
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
     .cbs-cta::before {
-      content: ""; position: absolute;
-      top: -40%; right: -10%;
-      width: 420px; height: 420px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 65%
+      );
       pointer-events: none;
     }
     .cbs-cta .eyebrow--on-dark {
@@ -948,7 +1165,8 @@ const serviceJsonLd = {
       position: relative;
     }
     .cbs-cta__actions {
-      display: flex; flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
       gap: var(--space-3);
       justify-content: center;
       position: relative;
@@ -983,14 +1201,17 @@ const serviceJsonLd = {
         if (reduced || !('IntersectionObserver' in window)) {
           revealEls.forEach((el) => el.classList.add('is-in'));
         } else {
-          const io = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-in');
-                io.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-in');
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+          );
           revealEls.forEach((el) => io.observe(el));
         }
       }
@@ -1007,7 +1228,7 @@ const serviceJsonLd = {
           if (parallaxEl && heroEl && !reduced) {
             const heroH = heroEl.offsetHeight;
             if (scrollY < heroH) {
-              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+              parallaxEl.style.setProperty('--parallax-y', scrollY * 0.18 + 'px');
             }
           }
           if (progressEl) {

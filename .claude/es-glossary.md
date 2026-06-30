@@ -173,7 +173,7 @@ Avoid AI tells: "no solo... sino también", balanced triads everywhere, "no se t
 | `/insights` | `/es/analisis` |
 | `/insights/<slug>` | `/es/analisis/<slug>` (slug unchanged until ES blog ships) |
 
-External brand subsites stay on their own domain (no /es/ prefix): `beyondcompass.beyondbordergroup.com`, `hubstudio.ai`, `chinawebfoundry.com`, `nuvora.studio`, `theredscroll.com`.
+External brand subsites stay on their own domain (no /es/ prefix): `compass.bearingbridge.com`, `hubstudio.ai`, `chinawebfoundry.com`, `nuvora.studio`, `theredscroll.com`.
 
 ### Image paths
 

@@ -32,77 +32,82 @@ const counts = categoryOrder
       <span class="eyebrow">Our work</span>
       <h1>How international brands grow in China</h1>
       <p class="lead">
-        Selected client work across marketing, commerce and distribution in China.
-        Brand launches, Tmall and JD operations, social commerce on Douyin, WeChat
-        and RED, retail distribution, China-side websites, and training for teams
-        new to the market.
+        Selected client work across marketing, commerce and distribution in China. Brand launches,
+        Tmall and JD operations, social commerce on Douyin, WeChat and RED, retail distribution,
+        China-side websites, and training for teams new to the market.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      {counts.length > 1 && (
-        <div class="work-filter" role="tablist" aria-label="Filter by service">
-          <button
-            type="button"
-            class="work-filter__btn is-active"
-            data-category="all"
-            role="tab"
-            aria-selected="true"
-          >
-            All <span class="work-filter__count">{sorted.length}</span>
-          </button>
-          {counts.map((c) => (
+      {
+        counts.length > 1 && (
+          <div class="work-filter" role="tablist" aria-label="Filter by service">
             <button
               type="button"
-              class="work-filter__btn"
-              data-category={c.name}
+              class="work-filter__btn is-active"
+              data-category="all"
               role="tab"
-              aria-selected="false"
+              aria-selected="true"
             >
-              {c.name} <span class="work-filter__count">{c.count}</span>
+              All <span class="work-filter__count">{sorted.length}</span>
             </button>
-          ))}
-        </div>
-      )}
+            {counts.map((c) => (
+              <button
+                type="button"
+                class="work-filter__btn"
+                data-category={c.name}
+                role="tab"
+                aria-selected="false"
+              >
+                {c.name} <span class="work-filter__count">{c.count}</span>
+              </button>
+            ))}
+          </div>
+        )
+      }
 
       <div class="grid grid-3 work-grid">
-        {sorted.map((c) => (
-          <a href={`/work/${c.id}`} class="work-card" data-category={c.data.category}>
-            <div class="work-card__image">
-              <img
-                src={c.data.heroImage}
-                alt={c.data.heroImageAlt || `${c.data.brand} case study`}
-                loading="lazy"
-                decoding="async"
-                width="600"
-                height="400"
-              />
-            </div>
-            <div class="work-card__body">
-              <span class="work-card__tag">{c.data.category}</span>
-              <h3 class="work-card__title">{c.data.brand}</h3>
-              <p class="work-card__summary">{c.data.title}</p>
-              {c.data.metric && (
-                <p class="work-card__metric">{c.data.metric}</p>
-              )}
-              {c.data.services.length > 0 && (
-                <ul class="work-card__services" aria-label="Services">
-                  {c.data.services.slice(0, 4).map((s) => <li>{s}</li>)}
-                  {c.data.services.length > 4 && (
-                    <li class="work-card__services-more">+{c.data.services.length - 4}</li>
-                  )}
-                </ul>
-              )}
-            </div>
-          </a>
-        ))}
+        {
+          sorted.map((c) => (
+            <a href={`/work/${c.id}`} class="work-card" data-category={c.data.category}>
+              <div class="work-card__image">
+                <img
+                  src={c.data.heroImage}
+                  alt={c.data.heroImageAlt || `${c.data.brand} case study`}
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
+                />
+              </div>
+              <div class="work-card__body">
+                <span class="work-card__tag">{c.data.category}</span>
+                <h3 class="work-card__title">{c.data.brand}</h3>
+                <p class="work-card__summary">{c.data.title}</p>
+                {c.data.metric && <p class="work-card__metric">{c.data.metric}</p>}
+                {c.data.services.length > 0 && (
+                  <ul class="work-card__services" aria-label="Services">
+                    {c.data.services.slice(0, 4).map((s) => (
+                      <li>{s}</li>
+                    ))}
+                    {c.data.services.length > 4 && (
+                      <li class="work-card__services-more">+{c.data.services.length - 4}</li>
+                    )}
+                  </ul>
+                )}
+              </div>
+            </a>
+          ))
+        }
       </div>
 
-      {sorted.length === 0 && (
-        <p class="work-empty">We're moving older case studies over. Check back in a few days.</p>
-      )}
+      {
+        sorted.length === 0 && (
+          <p class="work-empty">We're moving older case studies over. Check back in a few days.</p>
+        )
+      }
     </div>
   </section>
 
@@ -113,8 +118,8 @@ const counts = categoryOrder
           <span class="eyebrow">Say hi</span>
           <h2>Want your brand to be the next case study? Let's grab a coffee.</h2>
           <p class="cta-card__lead">
-            Tell us where you are now and where you want to get to. A senior member of
-            the team will reply, not a chatbot and not a sales funnel.
+            Tell us where you are now and where you want to get to. A senior member of the team will
+            reply, not a chatbot and not a sales funnel.
           </p>
           <div class="cta-card__actions">
             <a href="/contact" class="btn btn--primary">Start a conversation</a>
@@ -159,8 +164,15 @@ const counts = categoryOrder
       padding: var(--space-8) 0 var(--space-6);
       text-align: center;
     }
-    .work-intro .eyebrow { display: inline-block; margin-bottom: var(--space-4); }
-    .work-intro h1 { max-width: 22ch; margin-inline: auto; margin-bottom: var(--space-4); }
+    .work-intro .eyebrow {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+    }
+    .work-intro h1 {
+      max-width: 22ch;
+      margin-inline: auto;
+      margin-bottom: var(--space-4);
+    }
     .work-intro .lead {
       max-width: 66ch;
       margin-inline: auto;
@@ -205,7 +217,9 @@ const counts = categoryOrder
       font-weight: 600;
       opacity: 0.7;
     }
-    .work-filter__btn.is-active .work-filter__count { opacity: 0.9; }
+    .work-filter__btn.is-active .work-filter__count {
+      opacity: 0.9;
+    }
 
     .work-grid {
       gap: var(--space-6) var(--space-5);
@@ -218,15 +232,26 @@ const counts = categoryOrder
     }
 
     @media (max-width: 1024px) {
-      .work-intro { padding: var(--space-7) 0 var(--space-5); }
+      .work-intro {
+        padding: var(--space-7) 0 var(--space-5);
+      }
     }
     @media (max-width: 768px) {
-      .work-intro { padding: var(--space-6) 0 var(--space-4); }
-      .work-filter { justify-content: flex-start; margin-bottom: var(--space-6); }
-      .work-filter__btn { padding: 0.45rem 0.85rem; }
+      .work-intro {
+        padding: var(--space-6) 0 var(--space-4);
+      }
+      .work-filter {
+        justify-content: flex-start;
+        margin-bottom: var(--space-6);
+      }
+      .work-filter__btn {
+        padding: 0.45rem 0.85rem;
+      }
     }
     @media (max-width: 480px) {
-      .work-filter__count { display: none; }
+      .work-filter__count {
+        display: none;
+      }
     }
   </style>
 </Layout>

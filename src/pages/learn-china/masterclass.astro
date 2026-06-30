@@ -2,7 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 
 const heroBadges = [
-  'HEC MBA', 'ESCP MBA', 'EU Chamber', 'AmCham', 'Business France', 'SJTU Executive MBA',
+  'HEC MBA',
+  'ESCP MBA',
+  'EU Chamber',
+  'AmCham',
+  'Business France',
+  'SJTU Executive MBA',
 ];
 
 const heroStats = [
@@ -44,9 +49,11 @@ const takeaways = [
 ];
 
 const moduleIcon: Record<string, string> = {
-  compass: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',
+  compass:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',
   grid: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>',
-  target: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+  target:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
 };
 
 const modules = [
@@ -55,7 +62,8 @@ const modules = [
     tab: 'Ecosystem',
     tabSub: 'Map of the market',
     image: '/Images/learn-china/masterclass/ecosystem.png',
-    imageAlt: 'Chinese eCommerce shopper holding a smartphone showing Tmall and Douyin app interfaces, Shanghai cityscape in the background',
+    imageAlt:
+      'Chinese eCommerce shopper holding a smartphone showing Tmall and Douyin app interfaces, Shanghai cityscape in the background',
     title: "China's digital and eCommerce ecosystem",
     lead: 'The map of the market. Who uses what, how the platforms make money, where your category fits.',
     topics: [
@@ -92,7 +100,8 @@ const modules = [
     tab: 'Platforms',
     tabSub: 'How each one works',
     image: '/Images/learn-china/masterclass/platforms.png',
-    imageAlt: 'Flat-lay of several smartphones showing Tmall, JD, Douyin, WeChat and Xiaohongshu eCommerce app interfaces',
+    imageAlt:
+      'Flat-lay of several smartphones showing Tmall, JD, Douyin, WeChat and Xiaohongshu eCommerce app interfaces',
     title: 'Platforms',
     lead: 'The rules of each platform, the kind of brand it rewards, and what it actually costs to operate.',
     topics: [
@@ -132,7 +141,8 @@ const modules = [
     tab: 'Best practice',
     tabSub: 'What good brands do',
     image: '/Images/learn-china/masterclass/best-practice.png',
-    imageAlt: 'Chinese livestream eCommerce studio scene with a host presenting a product on camera, sales graph and viewer count overlaid',
+    imageAlt:
+      'Chinese livestream eCommerce studio scene with a host presenting a product on camera, sales graph and viewer count overlaid',
     title: 'Best practice and case studies',
     lead: 'What the good brands actually do. What the failed launches got wrong. A plan you can take back to the office.',
     topics: [
@@ -176,44 +186,152 @@ const modules = [
 ];
 
 const formatIcon: Record<string, string> = {
-  layers: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
+  layers:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
   pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
-  clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
-  package: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>',
-  globe: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+  clock:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+  package:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>',
+  globe:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
   life: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/></svg>',
 };
 
 const format = [
-  { icon: 'layers', label: 'Content', body: 'Customised for your industry. Beauty, food and beverage, tourism, automotive, luxury, services. We rewrite examples and case studies to match the category you actually sell in.' },
-  { icon: 'pin', label: 'Venue', body: 'Our consultants travel. Shanghai, Hong Kong, Paris, your office, your offsite. In person or remote.' },
-  { icon: 'clock', label: 'Duration', body: 'Full day (8 hours), half day (4 hours), or a multi-session format spread across weeks.' },
-  { icon: 'package', label: 'Deliverables', body: 'Complete course materials, the session deck, and access to the trainers for follow-up questions after the workshop.' },
-  { icon: 'globe', label: 'Languages', body: 'English, French and Mandarin. Bilingual sessions are standard, not an upsell.' },
-  { icon: 'life', label: 'Post-training', body: '30 days of follow-up support for in-house training: email Q&A, two video call sessions, and ongoing access to our market updates.' },
+  {
+    icon: 'layers',
+    label: 'Content',
+    body: 'Customised for your industry. Beauty, food and beverage, tourism, automotive, luxury, services. We rewrite examples and case studies to match the category you actually sell in.',
+  },
+  {
+    icon: 'pin',
+    label: 'Venue',
+    body: 'Our consultants travel. Shanghai, Hong Kong, Paris, your office, your offsite. In person or remote.',
+  },
+  {
+    icon: 'clock',
+    label: 'Duration',
+    body: 'Full day (8 hours), half day (4 hours), or a multi-session format spread across weeks.',
+  },
+  {
+    icon: 'package',
+    label: 'Deliverables',
+    body: 'Complete course materials, the session deck, and access to the trainers for follow-up questions after the workshop.',
+  },
+  {
+    icon: 'globe',
+    label: 'Languages',
+    body: 'English, French and Mandarin. Bilingual sessions are standard, not an upsell.',
+  },
+  {
+    icon: 'life',
+    label: 'Post-training',
+    body: '30 days of follow-up support for in-house training: email Q&A, two video call sessions, and ongoing access to our market updates.',
+  },
 ];
 
 const faqs = [
-  { cat: 'Programme', q: 'Do you customise the programme?', a: 'Yes. We start from your goals, your industry and your current level of China exposure, then build the programme around that. A short briefing call before the session is enough to tailor the modules, examples and case studies.' },
-  { cat: 'Engagement', q: 'Can we work with you as consultants rather than trainers?', a: 'Yes. We also run strategic and operational consulting: digital audits, market entry strategy, distributor selection, eCommerce setup. The training often becomes the starting point of a longer engagement.' },
-  { cat: 'Programme', q: 'Can we pick specific modules?', a: 'Yes. The programme is modular. Clients often run half-day sessions focused on WeChat, eCommerce platforms, social commerce, or KOL and influencer marketing alone.' },
-  { cat: 'Programme', q: 'Can you go deeper on a specific topic?', a: 'Yes. We can spend a full session on Tmall Global strategy, livestream commerce, Douyin closed-loop, Xiaohongshu for beauty, or any other topic your team needs to dig into.' },
-  { cat: 'Engagement', q: 'Do you run in-house corporate training?', a: 'Yes. We come to your office, adapt the content to your internal context, and run the session for your full team. In-house formats unlock the best discussions because everyone is working on the same business.' },
-  { cat: 'Format', q: 'In which languages do you train?', a: 'English, French and Mandarin. Trainers are bilingual or trilingual, which helps on cultural and commercial nuance.' },
-  { cat: 'Engagement', q: 'What support do you offer after the session?', a: 'For in-house training, 30 days of post-session support: email Q&A, two video call sessions for the team, and access to our market updates.' },
-  { cat: 'Programme', q: 'What does a typical training day look like?', a: 'A mix of content modules, live case studies, structured Q&A, working exercises tied to your business, and a closing action plan. We keep the pace high and break regularly.' },
-  { cat: 'Audience', q: 'Any prerequisites?', a: 'No technical prerequisites. A basic familiarity with digital marketing helps. A real project or interest in the Chinese market is the only thing we really need from the room.' },
-  { cat: 'Pricing', q: 'How much does it cost?', a: 'Fees depend on format, duration, location and number of participants. Contact us for a tailored quote.' },
-  { cat: 'Format', q: 'How many people can attend?', a: 'Between 8 and 30 in a working session. Smaller than 8, the room loses energy on discussion. Larger than 30, the exercises and breakouts stop working properly. For full-company days or conference keynotes (50 to 300 people) we run a lecture-format version with structured Q&A instead of group work.' },
-  { cat: 'Format', q: 'How quickly can you run a session?', a: 'Two weeks of lead time is the comfortable range. We have run sessions on five working days notice when a board meeting moved. Tighter turnarounds cost flexibility on dates and trainer pairing, not on content quality.' },
-  { cat: 'Format', q: 'Does it work remotely, or only in person?', a: 'Both. About half of in-house sessions now run remote or hybrid. Remote works best in 3 to 4 hour blocks across two days rather than one long Zoom marathon. In person still wins when the team needs to break into working groups or whiteboard a strategy.' },
-  { cat: 'Format', q: 'Can we record the session for colleagues who cannot attend?', a: 'Yes, for internal use. We ask that the recording stays inside your company, off public channels, and is not repackaged into external commercial content. Slides and supporting materials come with you either way.' },
-  { cat: 'Programme', q: 'What should we prepare beforehand?', a: 'A short brief on your current China activity, what you do not know yet, and the three or four questions you most want answered. Plus any internal data you are happy to share: channel mix, current agency setup, recent campaign results, distributor structure. The more concrete the input, the sharper the working session output.' },
-  { cat: 'Audience', q: 'Which industries have you trained?', a: 'Beauty, fashion, luxury, food and beverage, tourism, automotive, professional services, B2B industrial, large tech and SaaS players. Platform mechanics are mostly the same across categories. What changes is the case studies, benchmarks and tactics we plug in.' },
-  { cat: 'Audience', q: 'We are completely new to China. Is this too advanced?', a: 'No. Module 1 is built for teams starting from zero. We calibrate depth during the briefing call. A beginner room spends more time on platform basics and consumer behaviour. A senior room moves faster through the map and digs into operations and budget allocation.' },
-  { cat: 'Audience', q: 'We already run a China office. Is there anything in this for us?', a: 'Yes. A good share of our in-house clients are teams who have been operating in market for years. For them the value sits in benchmarking, fresh category data, and an outside diagnostic on the parts of their setup that are quietly under-performing. The agenda tilts toward audit and operations, away from introduction.' },
-  { cat: 'Engagement', q: 'Do you sign NDAs?', a: 'Yes. Before any briefing call that touches your numbers. Internal data and strategy stay in the room. Nothing surfaces in another client deck or public case study.' },
-  { cat: 'Programme', q: 'How current is the material?', a: 'Refreshed before every session. Anything older than the most recent full quarter gets flagged or removed. Chinese platforms change fees, formats and algorithms several times a year, so we treat stale slides as a real risk and plan the prep around it.' },
+  {
+    cat: 'Programme',
+    q: 'Do you customise the programme?',
+    a: 'Yes. We start from your goals, your industry and your current level of China exposure, then build the programme around that. A short briefing call before the session is enough to tailor the modules, examples and case studies.',
+  },
+  {
+    cat: 'Engagement',
+    q: 'Can we work with you as consultants rather than trainers?',
+    a: 'Yes. We also run strategic and operational consulting: digital audits, market entry strategy, distributor selection, eCommerce setup. The training often becomes the starting point of a longer engagement.',
+  },
+  {
+    cat: 'Programme',
+    q: 'Can we pick specific modules?',
+    a: 'Yes. The programme is modular. Clients often run half-day sessions focused on WeChat, eCommerce platforms, social commerce, or KOL and influencer marketing alone.',
+  },
+  {
+    cat: 'Programme',
+    q: 'Can you go deeper on a specific topic?',
+    a: 'Yes. We can spend a full session on Tmall Global strategy, livestream commerce, Douyin closed-loop, Xiaohongshu for beauty, or any other topic your team needs to dig into.',
+  },
+  {
+    cat: 'Engagement',
+    q: 'Do you run in-house corporate training?',
+    a: 'Yes. We come to your office, adapt the content to your internal context, and run the session for your full team. In-house formats unlock the best discussions because everyone is working on the same business.',
+  },
+  {
+    cat: 'Format',
+    q: 'In which languages do you train?',
+    a: 'English, French and Mandarin. Trainers are bilingual or trilingual, which helps on cultural and commercial nuance.',
+  },
+  {
+    cat: 'Engagement',
+    q: 'What support do you offer after the session?',
+    a: 'For in-house training, 30 days of post-session support: email Q&A, two video call sessions for the team, and access to our market updates.',
+  },
+  {
+    cat: 'Programme',
+    q: 'What does a typical training day look like?',
+    a: 'A mix of content modules, live case studies, structured Q&A, working exercises tied to your business, and a closing action plan. We keep the pace high and break regularly.',
+  },
+  {
+    cat: 'Audience',
+    q: 'Any prerequisites?',
+    a: 'No technical prerequisites. A basic familiarity with digital marketing helps. A real project or interest in the Chinese market is the only thing we really need from the room.',
+  },
+  {
+    cat: 'Pricing',
+    q: 'How much does it cost?',
+    a: 'Fees depend on format, duration, location and number of participants. Contact us for a tailored quote.',
+  },
+  {
+    cat: 'Format',
+    q: 'How many people can attend?',
+    a: 'Between 8 and 30 in a working session. Smaller than 8, the room loses energy on discussion. Larger than 30, the exercises and breakouts stop working properly. For full-company days or conference keynotes (50 to 300 people) we run a lecture-format version with structured Q&A instead of group work.',
+  },
+  {
+    cat: 'Format',
+    q: 'How quickly can you run a session?',
+    a: 'Two weeks of lead time is the comfortable range. We have run sessions on five working days notice when a board meeting moved. Tighter turnarounds cost flexibility on dates and trainer pairing, not on content quality.',
+  },
+  {
+    cat: 'Format',
+    q: 'Does it work remotely, or only in person?',
+    a: 'Both. About half of in-house sessions now run remote or hybrid. Remote works best in 3 to 4 hour blocks across two days rather than one long Zoom marathon. In person still wins when the team needs to break into working groups or whiteboard a strategy.',
+  },
+  {
+    cat: 'Format',
+    q: 'Can we record the session for colleagues who cannot attend?',
+    a: 'Yes, for internal use. We ask that the recording stays inside your company, off public channels, and is not repackaged into external commercial content. Slides and supporting materials come with you either way.',
+  },
+  {
+    cat: 'Programme',
+    q: 'What should we prepare beforehand?',
+    a: 'A short brief on your current China activity, what you do not know yet, and the three or four questions you most want answered. Plus any internal data you are happy to share: channel mix, current agency setup, recent campaign results, distributor structure. The more concrete the input, the sharper the working session output.',
+  },
+  {
+    cat: 'Audience',
+    q: 'Which industries have you trained?',
+    a: 'Beauty, fashion, luxury, food and beverage, tourism, automotive, professional services, B2B industrial, large tech and SaaS players. Platform mechanics are mostly the same across categories. What changes is the case studies, benchmarks and tactics we plug in.',
+  },
+  {
+    cat: 'Audience',
+    q: 'We are completely new to China. Is this too advanced?',
+    a: 'No. Module 1 is built for teams starting from zero. We calibrate depth during the briefing call. A beginner room spends more time on platform basics and consumer behaviour. A senior room moves faster through the map and digs into operations and budget allocation.',
+  },
+  {
+    cat: 'Audience',
+    q: 'We already run a China office. Is there anything in this for us?',
+    a: 'Yes. A good share of our in-house clients are teams who have been operating in market for years. For them the value sits in benchmarking, fresh category data, and an outside diagnostic on the parts of their setup that are quietly under-performing. The agenda tilts toward audit and operations, away from introduction.',
+  },
+  {
+    cat: 'Engagement',
+    q: 'Do you sign NDAs?',
+    a: 'Yes. Before any briefing call that touches your numbers. Internal data and strategy stay in the room. Nothing surfaces in another client deck or public case study.',
+  },
+  {
+    cat: 'Programme',
+    q: 'How current is the material?',
+    a: 'Refreshed before every session. Anything older than the most recent full quarter gets flagged or removed. Chinese platforms change fees, formats and algorithms several times a year, so we treat stale slides as a real risk and plan the prep around it.',
+  },
 ];
 
 const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', 'Pricing'];
@@ -226,11 +344,13 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
   <div class="mc-progress" aria-hidden="true"><div class="mc-progress__bar"></div></div>
 
   <article class="mc">
-
     {/* ---------- HERO (cinematic) ---------- */}
     <section class="mc-hero cbs-hero" data-hero>
       <div class="mc-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/CyrilMasterclass.jpg" alt="Cyril Drouin on stage at the Shanghai International MCN Conference" />
+        <img
+          src="/Images/CyrilMasterclass.jpg"
+          alt="Cyril Drouin on stage at the Shanghai International MCN Conference"
+        />
       </div>
       <div class="mc-hero__overlay" aria-hidden="true"></div>
       <div class="mc-hero__grain" aria-hidden="true"></div>
@@ -252,9 +372,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
         </h1>
 
         <p class="mc-hero__lead mc-reveal" style="--reveal-delay: 200ms;">
-          A concentrated training programme on China's digital and eCommerce ecosystem.
-          Platforms, consumer behaviour, campaign mechanics. Tailored to your industry,
-          delivered by operators with 20 years on the ground.
+          A concentrated training programme on China's digital and eCommerce ecosystem. Platforms,
+          consumer behaviour, campaign mechanics. Tailored to your industry, delivered by operators
+          with 20 years on the ground.
         </p>
 
         <div class="mc-hero__actions mc-reveal" style="--reveal-delay: 280ms;">
@@ -263,16 +383,24 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
         </div>
 
         <div class="mc-hero__meta mc-reveal" style="--reveal-delay: 360ms;">
-          {heroStats.map((s) => (
-            <div class="mc-hero__meta-item">
-              <span class="mc-hero__meta-num" data-counter={s.value} data-suffix={s.suffix}>0</span>
-              <span class="mc-hero__meta-label">{s.label}</span>
-            </div>
-          ))}
+          {
+            heroStats.map((s) => (
+              <div class="mc-hero__meta-item">
+                <span class="mc-hero__meta-num" data-counter={s.value} data-suffix={s.suffix}>
+                  0
+                </span>
+                <span class="mc-hero__meta-label">{s.label}</span>
+              </div>
+            ))
+          }
         </div>
 
-        <ul class="mc-hero__badges mc-reveal" aria-label="Where we have trained" style="--reveal-delay: 440ms;">
-          {heroBadges.map(b => <li>{b}</li>)}
+        <ul
+          class="mc-hero__badges mc-reveal"
+          aria-label="Where we have trained"
+          style="--reveal-delay: 440ms;"
+        >
+          {heroBadges.map((b) => <li>{b}</li>)}
         </ul>
       </div>
 
@@ -290,29 +418,43 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
             <span class="eyebrow">Why this training</span>
             <h2>Understand how China really works, not how a report says it works.</h2>
             <p>
-              This is a deep dive into how China's digital and online shopping ecosystem
-              operates in practice. You leave with a clear view of the platforms, the
-              consumer behaviour that moves sales, and the mechanics of a campaign that
-              actually converts.
+              This is a deep dive into how China's digital and online shopping ecosystem operates in
+              practice. You leave with a clear view of the platforms, the consumer behaviour that
+              moves sales, and the mechanics of a campaign that actually converts.
             </p>
             <p>
-              No recycled trend slides. No playbook translated from the US. Numbers get
-              refreshed before every session because the market moves fast enough that
-              last quarter's deck is already wrong.
+              No recycled trend slides. No playbook translated from the US. Numbers get refreshed
+              before every session because the market moves fast enough that last quarter's deck is
+              already wrong.
             </p>
           </div>
 
-          <aside class="mc-promise mc-reveal" style="--reveal-delay: 120ms;" aria-label="Who this training is for">
+          <aside
+            class="mc-promise mc-reveal"
+            style="--reveal-delay: 120ms;"
+            aria-label="Who this training is for"
+          >
             <span class="eyebrow">Who it's for</span>
             <ul class="mc-promise__list">
-              {audience.map((a) => (
-                <li class="mc-promise__item">
-                  <span class="mc-promise__check" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                  </span>
-                  <span>{a}</span>
-                </li>
-              ))}
+              {
+                audience.map((a) => (
+                  <li class="mc-promise__item">
+                    <span class="mc-promise__check" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="5 12 10 17 19 8" />
+                      </svg>
+                    </span>
+                    <span>{a}</span>
+                  </li>
+                ))
+              }
             </ul>
           </aside>
         </div>
@@ -326,44 +468,56 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
           <span class="eyebrow">What you take away</span>
           <h2>Training that stays useful after you leave the room.</h2>
           <p class="section-header__lead">
-            Five reasons teams keep coming back. The first one is what most other trainings cannot offer.
+            Five reasons teams keep coming back. The first one is what most other trainings cannot
+            offer.
           </p>
         </header>
 
         <div class="mc-bento">
-          {takeaways.map((t, i) => t.feature ? (
-            <article class="mc-bento__card mc-bento__card--feature mc-reveal">
-              <img
-                class="mc-bento__feature-img"
-                src="/Images/work/pierre-fabre.png"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="mc-bento__feature-bg" aria-hidden="true"></div>
-              <div class="mc-bento__feature-body">
-                <span class="mc-bento__chip">The difference</span>
-                <h3>{t.h}</h3>
-                <p>{t.p}</p>
-                <ul class="mc-bento__feature-stats">
-                  <li>
-                    <span class="mc-bento__stat-num">20<span>+</span></span>
-                    <span class="mc-bento__stat-label">years on the ground</span>
-                  </li>
-                  <li>
-                    <span class="mc-bento__stat-num">100<span>%</span></span>
-                    <span class="mc-bento__stat-label">operator-led, every session</span>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          ) : (
-            <article class="mc-bento__card mc-bento__card--small mc-reveal" style={`--reveal-delay: ${i * 70}ms;`}>
-              <h3>{t.h}</h3>
-              <p>{t.p}</p>
-            </article>
-          ))}
+          {
+            takeaways.map((t, i) =>
+              t.feature ? (
+                <article class="mc-bento__card mc-bento__card--feature mc-reveal">
+                  <img
+                    class="mc-bento__feature-img"
+                    src="/Images/work/pierre-fabre.png"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="mc-bento__feature-bg" aria-hidden="true" />
+                  <div class="mc-bento__feature-body">
+                    <span class="mc-bento__chip">The difference</span>
+                    <h3>{t.h}</h3>
+                    <p>{t.p}</p>
+                    <ul class="mc-bento__feature-stats">
+                      <li>
+                        <span class="mc-bento__stat-num">
+                          20<span>+</span>
+                        </span>
+                        <span class="mc-bento__stat-label">years on the ground</span>
+                      </li>
+                      <li>
+                        <span class="mc-bento__stat-num">
+                          100<span>%</span>
+                        </span>
+                        <span class="mc-bento__stat-label">operator-led, every session</span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              ) : (
+                <article
+                  class="mc-bento__card mc-bento__card--small mc-reveal"
+                  style={`--reveal-delay: ${i * 70}ms;`}
+                >
+                  <h3>{t.h}</h3>
+                  <p>{t.p}</p>
+                </article>
+              ),
+            )
+          }
         </div>
       </div>
     </section>
@@ -375,90 +529,116 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
           <span class="eyebrow">Curriculum</span>
           <h2>Three modules. Your pick of depth, your pick of format.</h2>
           <p class="section-header__lead">
-            Delivered as a full day, split across half-day sessions, or configured
-            into a longer programme. Depth on the topics that matter to your
-            category, summary on the ones that do not.
+            Delivered as a full day, split across half-day sessions, or configured into a longer
+            programme. Depth on the topics that matter to your category, summary on the ones that do
+            not.
           </p>
         </header>
 
         <div class="mc-curriculum mc-reveal" data-mc-tabs>
           <div class="mc-curriculum__nav" role="tablist" aria-label="Curriculum modules">
-            {modules.map((m, i) => (
-              <button
-                type="button"
-                class={`mc-curriculum__tab${i === 0 ? ' is-active' : ''}`}
-                role="tab"
-                aria-selected={i === 0 ? 'true' : 'false'}
-                aria-controls={`mc-module-panel-${i}`}
-                id={`mc-module-tab-${i}`}
-                data-tab-target={`mc-module-panel-${i}`}
-              >
-                <span class="mc-curriculum__tab-icon" aria-hidden="true" set:html={moduleIcon[m.icon]} />
-                <span class="mc-curriculum__tab-body">
-                  <span class="mc-curriculum__tab-label">{m.tab}</span>
-                  <span class="mc-curriculum__tab-sub">{m.tabSub}</span>
-                </span>
-              </button>
-            ))}
+            {
+              modules.map((m, i) => (
+                <button
+                  type="button"
+                  class={`mc-curriculum__tab${i === 0 ? ' is-active' : ''}`}
+                  role="tab"
+                  aria-selected={i === 0 ? 'true' : 'false'}
+                  aria-controls={`mc-module-panel-${i}`}
+                  id={`mc-module-tab-${i}`}
+                  data-tab-target={`mc-module-panel-${i}`}
+                >
+                  <span
+                    class="mc-curriculum__tab-icon"
+                    aria-hidden="true"
+                    set:html={moduleIcon[m.icon]}
+                  />
+                  <span class="mc-curriculum__tab-body">
+                    <span class="mc-curriculum__tab-label">{m.tab}</span>
+                    <span class="mc-curriculum__tab-sub">{m.tabSub}</span>
+                  </span>
+                </button>
+              ))
+            }
             <span class="mc-curriculum__indicator" aria-hidden="true"></span>
           </div>
 
           <div class="mc-curriculum__panels">
-            {modules.map((m, i) => (
-              <div
-                class={`mc-curriculum__panel${i === 0 ? ' is-active' : ''}`}
-                role="tabpanel"
-                id={`mc-module-panel-${i}`}
-                aria-labelledby={`mc-module-tab-${i}`}
-                hidden={i !== 0}
-              >
-                <div class="mc-curriculum__panel-grid">
-                  <aside class="mc-curriculum__lead" data-tilt>
-                    <figure class="mc-curriculum__lead-figure">
-                      <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" width="640" height="800" />
-                      <span class="mc-curriculum__lead-tag">
-                        <span class="mc-curriculum__lead-tag-icon" aria-hidden="true" set:html={moduleIcon[m.icon]} />
-                        <span class="mc-curriculum__lead-tag-text">{m.tab}</span>
-                      </span>
-                      <div class="mc-curriculum__lead-poster">
-                        <span class="mc-curriculum__lead-eyebrow">Module</span>
-                        <h3 class="mc-curriculum__lead-title">{m.title}</h3>
-                      </div>
-                    </figure>
+            {
+              modules.map((m, i) => (
+                <div
+                  class={`mc-curriculum__panel${i === 0 ? ' is-active' : ''}`}
+                  role="tabpanel"
+                  id={`mc-module-panel-${i}`}
+                  aria-labelledby={`mc-module-tab-${i}`}
+                  hidden={i !== 0}
+                >
+                  <div class="mc-curriculum__panel-grid">
+                    <aside class="mc-curriculum__lead" data-tilt>
+                      <figure class="mc-curriculum__lead-figure">
+                        <img
+                          src={m.image}
+                          alt={m.imageAlt}
+                          loading="lazy"
+                          decoding="async"
+                          width="640"
+                          height="800"
+                        />
+                        <span class="mc-curriculum__lead-tag">
+                          <span
+                            class="mc-curriculum__lead-tag-icon"
+                            aria-hidden="true"
+                            set:html={moduleIcon[m.icon]}
+                          />
+                          <span class="mc-curriculum__lead-tag-text">{m.tab}</span>
+                        </span>
+                        <div class="mc-curriculum__lead-poster">
+                          <span class="mc-curriculum__lead-eyebrow">Module</span>
+                          <h3 class="mc-curriculum__lead-title">{m.title}</h3>
+                        </div>
+                      </figure>
 
-                    <div class="mc-curriculum__lead-body">
-                      <p class="mc-curriculum__lead-desc">{m.lead}</p>
-                      <div class="mc-curriculum__lead-meta">
-                        <span class="mc-curriculum__lead-meta-stat">
-                          <span class="mc-curriculum__lead-meta-num">{m.topics.length}</span>
-                          <span class="mc-curriculum__lead-meta-label">topics</span>
-                        </span>
-                        <span class="mc-curriculum__lead-meta-divider" aria-hidden="true"></span>
-                        <span class="mc-curriculum__lead-meta-stat">
-                          <span class="mc-curriculum__lead-meta-num">½ &middot; 1</span>
-                          <span class="mc-curriculum__lead-meta-label">day formats</span>
-                        </span>
+                      <div class="mc-curriculum__lead-body">
+                        <p class="mc-curriculum__lead-desc">{m.lead}</p>
+                        <div class="mc-curriculum__lead-meta">
+                          <span class="mc-curriculum__lead-meta-stat">
+                            <span class="mc-curriculum__lead-meta-num">{m.topics.length}</span>
+                            <span class="mc-curriculum__lead-meta-label">topics</span>
+                          </span>
+                          <span class="mc-curriculum__lead-meta-divider" aria-hidden="true" />
+                          <span class="mc-curriculum__lead-meta-stat">
+                            <span class="mc-curriculum__lead-meta-num">½ &middot; 1</span>
+                            <span class="mc-curriculum__lead-meta-label">day formats</span>
+                          </span>
+                        </div>
+                        <a
+                          href="/contact"
+                          class="btn btn--primary btn--sm mc-magnetic mc-curriculum__lead-cta"
+                        >
+                          <span>Tailor this module</span>
+                          <span class="mc-curriculum__lead-cta-arrow" aria-hidden="true">
+                            →
+                          </span>
+                        </a>
                       </div>
-                      <a href="/contact" class="btn btn--primary btn--sm mc-magnetic mc-curriculum__lead-cta">
-                        <span>Tailor this module</span>
-                        <span class="mc-curriculum__lead-cta-arrow" aria-hidden="true">→</span>
-                      </a>
+                    </aside>
+
+                    <div class="mc-curriculum__topics">
+                      {m.topics.map((t) => (
+                        <div class="mc-curriculum__topic">
+                          <h4 class="mc-curriculum__topic-title">{t.h}</h4>
+                          <ul class="mc-curriculum__topic-list">
+                            {t.items.map((i) => (
+                              <li>{i}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
                     </div>
-                  </aside>
-
-                  <div class="mc-curriculum__topics">
-                    {m.topics.map((t) => (
-                      <div class="mc-curriculum__topic">
-                        <h4 class="mc-curriculum__topic-title">{t.h}</h4>
-                        <ul class="mc-curriculum__topic-list">
-                          {t.items.map((i) => <li>{i}</li>)}
-                        </ul>
-                      </div>
-                    ))}
                   </div>
                 </div>
-              </div>
-            ))}
+              ))
+            }
           </div>
         </div>
       </div>
@@ -472,11 +652,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
             <span class="eyebrow">Who teaches it</span>
             <h2>Operators, not academics.</h2>
             <p>
-              Cyril has been training executives on China's digital market in English
-              and French for more than a decade. Liyan runs the same programme for
-              Mandarin-speaking audiences. Together they have trained at HEC MBA,
-              ESCP MBA, the European Chamber of Commerce in China, the American
-              Chamber, Business France and Shanghai Jiaotong Executive MBA.
+              Cyril has been training executives on China's digital market in English and French for
+              more than a decade. Liyan runs the same programme for Mandarin-speaking audiences.
+              Together they have trained at HEC MBA, ESCP MBA, the European Chamber of Commerce in
+              China, the American Chamber, Business France and Shanghai Jiaotong Executive MBA.
             </p>
             <div class="mc-trainers__actions">
               <a href="/about" class="btn btn--secondary">Meet the team</a>
@@ -484,7 +663,11 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
             </div>
           </div>
 
-          <ul class="mc-trainers__list mc-reveal" style="--reveal-delay: 120ms;" aria-label="Lead trainers">
+          <ul
+            class="mc-trainers__list mc-reveal"
+            style="--reveal-delay: 120ms;"
+            aria-label="Lead trainers"
+          >
             <li class="mc-trainer">
               <span class="mc-trainer__avatar">
                 <img
@@ -529,8 +712,8 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
           <span class="eyebrow">Format and logistics</span>
           <h2>Built around your team's schedule.</h2>
           <p class="section-header__lead">
-            Six knobs you turn before we walk in the room. Content, venue, timing,
-            language, deliverables, and what we keep doing after the session ends.
+            Six knobs you turn before we walk in the room. Content, venue, timing, language,
+            deliverables, and what we keep doing after the session ends.
           </p>
         </header>
 
@@ -538,22 +721,30 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
           <div class="mc-spec__header" aria-hidden="true">
             <span class="mc-spec__header-eyebrow">Programme sheet</span>
             <span class="mc-spec__header-dot"></span>
-            <span class="mc-spec__header-eyebrow mc-spec__header-eyebrow--muted">Six variables, fully flexible</span>
+            <span class="mc-spec__header-eyebrow mc-spec__header-eyebrow--muted"
+              >Six variables, fully flexible</span
+            >
           </div>
           <dl class="mc-spec__list">
-            {format.map((f, i) => (
-              <div class="mc-spec__row" style={`--row-delay: ${i * 40}ms;`}>
-                <dt class="mc-spec__key">
-                  <span class="mc-spec__icon" aria-hidden="true" set:html={formatIcon[f.icon]} />
-                  <span class="mc-spec__label">{f.label}</span>
-                </dt>
-                <dd class="mc-spec__value">{f.body}</dd>
-              </div>
-            ))}
+            {
+              format.map((f, i) => (
+                <div class="mc-spec__row" style={`--row-delay: ${i * 40}ms;`}>
+                  <dt class="mc-spec__key">
+                    <span class="mc-spec__icon" aria-hidden="true" set:html={formatIcon[f.icon]} />
+                    <span class="mc-spec__label">{f.label}</span>
+                  </dt>
+                  <dd class="mc-spec__value">{f.body}</dd>
+                </div>
+              ))
+            }
           </dl>
           <footer class="mc-spec__footer">
-            <span class="mc-spec__footer-text">Need a different shape? We will build the brief around it.</span>
-            <a href="/contact" class="mc-spec__footer-link">Talk to us <span aria-hidden="true">→</span></a>
+            <span class="mc-spec__footer-text"
+              >Need a different shape? We will build the brief around it.</span
+            >
+            <a href="/contact" class="mc-spec__footer-link"
+              >Talk to us <span aria-hidden="true">→</span></a
+            >
           </footer>
         </div>
       </div>
@@ -570,41 +761,61 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
           </p>
         </header>
 
-        <div class="mc-faq-filter mc-reveal" data-faq-filter role="tablist" aria-label="Filter FAQs by category">
-          {faqCategories.map((c, i) => (
-            <button
-              type="button"
-              class={`mc-faq-chip${i === 0 ? ' is-active' : ''}`}
-              role="tab"
-              aria-selected={i === 0 ? 'true' : 'false'}
-              data-faq-cat={c}
-            >
-              <span class="mc-faq-chip__label">{c}</span>
-              <span class="mc-faq-chip__count">{c === 'All' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
-            </button>
-          ))}
+        <div
+          class="mc-faq-filter mc-reveal"
+          data-faq-filter
+          role="tablist"
+          aria-label="Filter FAQs by category"
+        >
+          {
+            faqCategories.map((c, i) => (
+              <button
+                type="button"
+                class={`mc-faq-chip${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                data-faq-cat={c}
+              >
+                <span class="mc-faq-chip__label">{c}</span>
+                <span class="mc-faq-chip__count">
+                  {c === 'All' ? faqs.length : faqs.filter((f) => f.cat === c).length}
+                </span>
+              </button>
+            ))
+          }
         </div>
 
         <div class="mc-faq" data-faq-list>
-          {faqs.map((f, i) => (
-            <details
-              class="mc-faq__item mc-reveal"
-              data-faq-cat={f.cat}
-              open={i === 0}
-              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
-            >
-              <summary class="mc-faq__q">
-                <span class="mc-faq__cat-tag">{f.cat}</span>
-                <span class="mc-faq__q-text">{f.q}</span>
-                <span class="mc-faq__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </span>
-              </summary>
-              <div class="mc-faq__a">
-                <p>{f.a}</p>
-              </div>
-            </details>
-          ))}
+          {
+            faqs.map((f, i) => (
+              <details
+                class="mc-faq__item mc-reveal"
+                data-faq-cat={f.cat}
+                open={i === 0}
+                style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+              >
+                <summary class="mc-faq__q">
+                  <span class="mc-faq__cat-tag">{f.cat}</span>
+                  <span class="mc-faq__q-text">{f.q}</span>
+                  <span class="mc-faq__icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </summary>
+                <div class="mc-faq__a">
+                  <p>{f.a}</p>
+                </div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -616,8 +827,8 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
           <span class="eyebrow eyebrow--on-dark">Get in touch</span>
           <h2 class="mc-cta__title">Thinking about a China masterclass for your team?</h2>
           <p class="mc-cta__lead">
-            Tell us about your team, your category and what you want to walk away with.
-            We will come back within one business day with a tailored programme.
+            Tell us about your team, your category and what you want to walk away with. We will come
+            back within one business day with a tailored programme.
           </p>
           <div class="mc-cta__actions">
             <a href="/contact" class="btn mc-cta__btn-primary">Book a masterclass</a>
@@ -626,14 +837,14 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
         </div>
       </div>
     </section>
-
   </article>
-
 </Layout>
 
 <style is:global>
   /* ---------- Container helper ---------- */
-  .mc .container--narrow { max-width: 880px; }
+  .mc .container--narrow {
+    max-width: 880px;
+  }
 
   /* ---------- REVEAL + MOTION ---------- */
   @media (prefers-reduced-motion: no-preference) {
@@ -650,16 +861,23 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     }
     .mc-magnetic {
       will-change: transform;
-      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-                  box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      transition:
+        transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        box-shadow 220ms ease,
+        background-color 200ms ease,
+        color 200ms ease;
     }
-    .mc-magnetic:hover { transform: translateY(-2px); }
+    .mc-magnetic:hover {
+      transform: translateY(-2px);
+    }
   }
 
   /* ---------- SCROLL PROGRESS BAR ---------- */
   .mc-progress {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 3px;
     z-index: 1000;
     background: transparent;
@@ -668,7 +886,7 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
   .mc-progress__bar {
     height: 100%;
     width: var(--progress, 0%);
-    background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #C8102E 100%);
+    background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 60%, #c8102e 100%);
     box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
     transition: width 80ms linear;
   }
@@ -689,7 +907,11 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
   body:has(.mc-hero.cbs-hero) .mc-hero.cbs-hero {
     padding-top: clamp(130px, 14vh, 170px);
   }
-  .mc-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+  .mc-hero__bg {
+    position: absolute;
+    inset: -10% 0 0;
+    z-index: -3;
+  }
   .mc-hero__bg img {
     width: 100%;
     height: 110%;
@@ -700,25 +922,32 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     filter: saturate(0.92);
   }
   .mc-hero__overlay {
-    position: absolute; inset: 0; z-index: -2;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
     background:
-      linear-gradient(110deg,
+      linear-gradient(
+        110deg,
         rgba(8, 18, 28, 0.92) 0%,
         rgba(8, 18, 28, 0.72) 42%,
-        rgba(8, 18, 28, 0.34) 100%),
-      radial-gradient(120% 80% at 0% 100%,
-        rgba(200, 16, 46, 0.28) 0%,
-        rgba(200, 16, 46, 0) 60%);
+        rgba(8, 18, 28, 0.34) 100%
+      ),
+      radial-gradient(120% 80% at 0% 100%, rgba(200, 16, 46, 0.28) 0%, rgba(200, 16, 46, 0) 60%);
   }
   .mc-hero__grain {
-    position: absolute; inset: 0; z-index: -1;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
     background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
     background-size: 3px 3px;
     mix-blend-mode: overlay;
     opacity: 0.45;
     pointer-events: none;
   }
-  .mc-hero__inner { max-width: 980px; position: relative; }
+  .mc-hero__inner {
+    max-width: 980px;
+    position: relative;
+  }
   .mc-hero__crumbs {
     margin-bottom: var(--space-4);
     font-size: var(--fs-small);
@@ -727,12 +956,17 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     align-items: center;
     color: rgba(255, 255, 255, 0.7);
   }
-  .mc-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
-  .mc-hero__crumbs a:hover { color: var(--bbg-white); }
+  .mc-hero__crumbs a {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+  }
+  .mc-hero__crumbs a:hover {
+    color: var(--bbg-white);
+  }
   .mc-hero__inner .eyebrow--on-dark {
     display: inline-block;
     margin-bottom: var(--space-3);
-    color: #C8102E;
+    color: #c8102e;
   }
   .mc-hero__title {
     font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
@@ -746,9 +980,11 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     flex-direction: column;
     gap: 0.05em;
   }
-  .mc-hero__title-row { display: block; }
+  .mc-hero__title-row {
+    display: block;
+  }
   .mc-hero__title-row--accent {
-    color: #C8102E;
+    color: #c8102e;
     font-weight: 500;
     font-style: italic;
     letter-spacing: -0.018em;
@@ -760,20 +996,25 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     padding: 0 0.15em;
   }
   .mc-hero__title-row--highlight::before {
-    content: "";
+    content: '';
     position: absolute;
-    left: 0; right: 0;
+    left: 0;
+    right: 0;
     bottom: 0.04em;
     height: 0.18em;
-    background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+    background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
     border-radius: 2px;
     transform-origin: left center;
     animation: mc-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
     z-index: -1;
   }
   @keyframes mc-underline {
-    from { transform: scaleX(0); }
-    to { transform: scaleX(1); }
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
   }
   .mc-hero__lead {
     font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
@@ -797,14 +1038,18 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     border-top: 1px solid rgba(255, 255, 255, 0.14);
     max-width: 720px;
   }
-  .mc-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+  .mc-hero__meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
   .mc-hero__meta-num {
     font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1;
     color: var(--bbg-white);
-    font-feature-settings: "tnum";
+    font-feature-settings: 'tnum';
   }
   .mc-hero__meta-label {
     font-size: 0.85rem;
@@ -846,7 +1091,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     font-weight: 600;
     transition: color 200ms ease;
   }
-  .mc-hero__scroll:hover { color: var(--bbg-white); }
+  .mc-hero__scroll:hover {
+    color: var(--bbg-white);
+  }
   .mc-hero__scroll-line {
     width: 1px;
     height: 40px;
@@ -855,21 +1102,30 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     overflow: hidden;
   }
   .mc-hero__scroll-line::after {
-    content: "";
+    content: '';
     position: absolute;
     top: -100%;
-    left: 0; right: 0;
+    left: 0;
+    right: 0;
     height: 50%;
     background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
     animation: mc-scroll-tick 1.8s ease-in-out infinite;
   }
   @keyframes mc-scroll-tick {
-    0% { top: -50%; }
-    100% { top: 100%; }
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 100%;
+    }
   }
   @media (max-width: 720px) {
-    .mc-hero__scroll { display: none; }
-    .mc-hero__meta { gap: var(--space-4); }
+    .mc-hero__scroll {
+      display: none;
+    }
+    .mc-hero__meta {
+      gap: var(--space-4);
+    }
   }
 
   /* ---------- VALUE + AUDIENCE ---------- */
@@ -891,7 +1147,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     font-size: 1.0625rem;
     margin: 0 0 var(--space-5);
   }
-  .mc-value__copy p:last-child { margin-bottom: 0; }
+  .mc-value__copy p:last-child {
+    margin-bottom: 0;
+  }
   .mc-promise {
     list-style: none;
     padding: var(--space-6);
@@ -904,13 +1162,16 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     overflow: hidden;
   }
   .mc-promise::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0 0 auto 0;
     height: 4px;
     background: linear-gradient(90deg, var(--bbg-blue), var(--bbg-blue-dark));
   }
-  .mc-promise .eyebrow { display: block; margin-bottom: var(--space-4); }
+  .mc-promise .eyebrow {
+    display: block;
+    margin-bottom: var(--space-4);
+  }
   .mc-promise__list {
     list-style: none;
     padding: 0;
@@ -929,7 +1190,8 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     line-height: 1.55;
   }
   .mc-promise__check {
-    width: 28px; height: 28px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     background: var(--bbg-blue-light);
     color: var(--bbg-blue);
@@ -939,13 +1201,22 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     flex-shrink: 0;
     margin-top: 2px;
   }
-  .mc-promise__check svg { width: 14px; height: 14px; }
+  .mc-promise__check svg {
+    width: 14px;
+    height: 14px;
+  }
   @media (max-width: 1024px) {
-    .mc-value { grid-template-columns: 1fr; gap: var(--space-6); }
+    .mc-value {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
   }
 
   /* ---------- TAKEAWAYS BENTO ---------- */
-  .mc-take-section { position: relative; isolation: isolate; }
+  .mc-take-section {
+    position: relative;
+    isolation: isolate;
+  }
   .mc-bento {
     display: grid;
     grid-template-columns: 1.2fr 1fr 1fr;
@@ -960,8 +1231,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     padding: var(--space-6);
     overflow: hidden;
     isolation: isolate;
-    transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
-                border-color 280ms ease, box-shadow 280ms ease;
+    transition:
+      transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 280ms ease,
+      box-shadow 280ms ease;
   }
   .mc-bento__card:hover {
     transform: translateY(-4px);
@@ -978,9 +1251,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     padding-top: var(--space-3);
   }
   .mc-bento__card--small h3::before {
-    content: "";
+    content: '';
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 28px;
     height: 3px;
     background: var(--bbg-blue);
@@ -1024,21 +1298,29 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     opacity: 0.82;
     filter: saturate(0.95) contrast(0.98);
     transform: scale(1.02);
-    transition: transform 900ms cubic-bezier(0.16, 1, 0.3, 1), opacity 600ms ease;
+    transition:
+      transform 900ms cubic-bezier(0.16, 1, 0.3, 1),
+      opacity 600ms ease;
   }
   .mc-bento__feature-bg {
     position: absolute;
     inset: 0;
     z-index: -1;
     background:
-      linear-gradient(120deg,
+      linear-gradient(
+        120deg,
         rgba(8, 18, 28, 0.78) 0%,
         rgba(8, 18, 28, 0.55) 45%,
-        rgba(8, 18, 28, 0.28) 100%),
+        rgba(8, 18, 28, 0.28) 100%
+      ),
       radial-gradient(70% 80% at 0% 100%, rgba(8, 18, 28, 0.55) 0%, rgba(8, 18, 28, 0) 60%),
       radial-gradient(80% 60% at 100% 0%, rgba(200, 16, 46, 0.22) 0%, rgba(200, 16, 46, 0) 60%);
   }
-  .mc-bento__feature-body { display: flex; flex-direction: column; gap: var(--space-3); }
+  .mc-bento__feature-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
   .mc-bento__chip {
     display: inline-block;
     align-self: flex-start;
@@ -1046,7 +1328,7 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #C8102E;
+    color: #c8102e;
     background: rgba(200, 16, 46, 0.18);
     padding: 0.4em 0.85em;
     border-radius: 999px;
@@ -1073,14 +1355,18 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     gap: var(--space-6);
     border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
-  .mc-bento__feature-stats li { display: flex; flex-direction: column; gap: 0.25rem; }
+  .mc-bento__feature-stats li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
   .mc-bento__stat-num {
     font-size: clamp(1.625rem, 1.4vw + 1rem, 2.125rem);
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1;
-    color: #C8102E;
-    font-feature-settings: "tnum";
+    color: #c8102e;
+    font-feature-settings: 'tnum';
   }
   .mc-bento__stat-num span {
     font-size: 0.7em;
@@ -1094,12 +1380,22 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     line-height: 1.4;
   }
   @media (max-width: 1024px) {
-    .mc-bento { grid-template-columns: 1fr 1fr; }
-    .mc-bento__card--feature { grid-column: 1 / -1; grid-row: auto; }
+    .mc-bento {
+      grid-template-columns: 1fr 1fr;
+    }
+    .mc-bento__card--feature {
+      grid-column: 1 / -1;
+      grid-row: auto;
+    }
   }
   @media (max-width: 560px) {
-    .mc-bento { grid-template-columns: 1fr; }
-    .mc-bento__feature-stats { gap: var(--space-4); flex-wrap: wrap; }
+    .mc-bento {
+      grid-template-columns: 1fr;
+    }
+    .mc-bento__feature-stats {
+      gap: var(--space-4);
+      flex-wrap: wrap;
+    }
   }
 
   /* ---------- CURRICULUM (tabbed showcase) ---------- */
@@ -1129,11 +1425,18 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     font-family: inherit;
     text-align: left;
     color: var(--bbg-text);
-    transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+    transition:
+      background var(--dur) var(--ease),
+      color var(--dur) var(--ease);
     position: relative;
   }
-  .mc-curriculum__tab:last-child { border-right: 0; }
-  .mc-curriculum__tab:hover { background: var(--bbg-white); color: var(--bbg-ink); }
+  .mc-curriculum__tab:last-child {
+    border-right: 0;
+  }
+  .mc-curriculum__tab:hover {
+    background: var(--bbg-white);
+    color: var(--bbg-ink);
+  }
   .mc-curriculum__tab.is-active {
     background: var(--bbg-white);
     color: var(--bbg-ink);
@@ -1152,15 +1455,26 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     background: var(--bbg-blue-light);
     color: var(--bbg-blue);
     flex-shrink: 0;
-    transition: background var(--dur) var(--ease), color var(--dur) var(--ease), transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    transition:
+      background var(--dur) var(--ease),
+      color var(--dur) var(--ease),
+      transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .mc-curriculum__tab-icon svg { width: 22px; height: 22px; }
+  .mc-curriculum__tab-icon svg {
+    width: 22px;
+    height: 22px;
+  }
   .mc-curriculum__tab.is-active .mc-curriculum__tab-icon {
     background: linear-gradient(135deg, var(--bbg-blue) 0%, var(--bbg-blue-dark) 100%);
     color: var(--bbg-white);
     transform: scale(1.04);
   }
-  .mc-curriculum__tab-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .mc-curriculum__tab-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
   .mc-curriculum__tab-label {
     font-weight: 700;
     font-size: 1.0625rem;
@@ -1178,7 +1492,7 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     left: 0;
     height: 3px;
     width: 33.333%;
-    background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+    background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
     border-radius: 2px 2px 0 0;
     transform: translateX(0);
     transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1191,10 +1505,18 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
   .mc-curriculum__panel {
     animation: mc-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .mc-curriculum__panel[hidden] { display: none; }
+  .mc-curriculum__panel[hidden] {
+    display: none;
+  }
   @keyframes mc-tab-in {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   .mc-curriculum__panel-grid {
     display: grid;
@@ -1220,7 +1542,7 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     isolation: isolate;
   }
   .mc-curriculum__lead::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(200, 16, 46, 0.12) 0%, rgba(200, 16, 46, 0) 35%);
@@ -1235,7 +1557,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
       0 1px 0 rgba(8, 18, 28, 0.04),
       0 32px 60px -22px rgba(200, 16, 46, 0.38);
   }
-  .mc-curriculum__lead:hover::before { opacity: 1; }
+  .mc-curriculum__lead:hover::before {
+    opacity: 1;
+  }
 
   .mc-curriculum__lead-figure {
     position: relative;
@@ -1251,7 +1575,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     object-fit: cover;
     display: block;
     transform: scale(1.02);
-    transition: transform 1100ms cubic-bezier(0.16, 1, 0.3, 1), filter 700ms ease;
+    transition:
+      transform 1100ms cubic-bezier(0.16, 1, 0.3, 1),
+      filter 700ms ease;
     filter: saturate(0.96);
   }
   .mc-curriculum__lead:hover .mc-curriculum__lead-figure img {
@@ -1259,17 +1585,17 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     filter: saturate(1.05);
   }
   .mc-curriculum__lead-figure::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(180deg,
+      linear-gradient(
+        180deg,
         rgba(8, 18, 28, 0) 30%,
         rgba(8, 18, 28, 0.42) 62%,
-        rgba(8, 18, 28, 0.88) 100%),
-      radial-gradient(60% 50% at 100% 0%,
-        rgba(200, 16, 46, 0.3) 0%,
-        rgba(200, 16, 46, 0) 70%);
+        rgba(8, 18, 28, 0.88) 100%
+      ),
+      radial-gradient(60% 50% at 100% 0%, rgba(200, 16, 46, 0.3) 0%, rgba(200, 16, 46, 0) 70%);
     pointer-events: none;
     z-index: 1;
   }
@@ -1294,7 +1620,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     box-shadow: 0 8px 22px -10px rgba(8, 18, 28, 0.35);
     transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .mc-curriculum__lead:hover .mc-curriculum__lead-tag { transform: translateY(-2px); }
+  .mc-curriculum__lead:hover .mc-curriculum__lead-tag {
+    transform: translateY(-2px);
+  }
   .mc-curriculum__lead-tag-icon {
     display: inline-flex;
     width: 28px;
@@ -1307,7 +1635,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     flex-shrink: 0;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
   }
-  .mc-curriculum__lead-tag-icon svg { width: 15px; height: 15px; }
+  .mc-curriculum__lead-tag-icon svg {
+    width: 15px;
+    height: 15px;
+  }
 
   .mc-curriculum__lead-poster {
     position: absolute;
@@ -1321,7 +1652,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     color: var(--bbg-white);
     transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .mc-curriculum__lead:hover .mc-curriculum__lead-poster { transform: translateY(-3px); }
+  .mc-curriculum__lead:hover .mc-curriculum__lead-poster {
+    transform: translateY(-3px);
+  }
   .mc-curriculum__lead-eyebrow {
     display: inline-block;
     align-self: flex-start;
@@ -1329,18 +1662,18 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     font-weight: 700;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: #C8102E;
+    color: #c8102e;
     padding-bottom: 0.35rem;
     position: relative;
   }
   .mc-curriculum__lead-eyebrow::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     width: 24px;
     height: 2px;
-    background: #C8102E;
+    background: #c8102e;
     border-radius: 1px;
   }
   .mc-curriculum__lead-title {
@@ -1383,15 +1716,19 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     flex: 1;
     padding: 0 var(--space-2);
   }
-  .mc-curriculum__lead-meta-stat:first-child { padding-left: 0; }
-  .mc-curriculum__lead-meta-stat:last-of-type { padding-right: 0; }
+  .mc-curriculum__lead-meta-stat:first-child {
+    padding-left: 0;
+  }
+  .mc-curriculum__lead-meta-stat:last-of-type {
+    padding-right: 0;
+  }
   .mc-curriculum__lead-meta-num {
     font-size: 1.375rem;
     font-weight: 700;
     line-height: 1;
     letter-spacing: -0.015em;
     color: var(--bbg-blue);
-    font-feature-settings: "tnum";
+    font-feature-settings: 'tnum';
   }
   .mc-curriculum__lead-meta-label {
     font-size: 0.72rem;
@@ -1418,7 +1755,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     display: inline-block;
     transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .mc-curriculum__lead-cta:hover .mc-curriculum__lead-cta-arrow { transform: translateX(4px); }
+  .mc-curriculum__lead-cta:hover .mc-curriculum__lead-cta-arrow {
+    transform: translateX(4px);
+  }
 
   .mc-curriculum__topics {
     display: grid;
@@ -1430,9 +1769,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     padding-top: var(--space-3);
   }
   .mc-curriculum__topic::before {
-    content: "";
+    content: '';
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 28px;
     height: 3px;
     background: var(--bbg-blue);
@@ -1460,31 +1800,48 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     line-height: 1.55;
   }
   .mc-curriculum__topic-list li::before {
-    content: "";
+    content: '';
     position: absolute;
-    left: 0; top: 9px;
-    width: 8px; height: 1px;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 1px;
     background: var(--bbg-blue);
   }
   @media (max-width: 1024px) {
-    .mc-curriculum__panel-grid { grid-template-columns: 1fr; }
+    .mc-curriculum__panel-grid {
+      grid-template-columns: 1fr;
+    }
   }
   @media (max-width: 720px) {
-    .mc-curriculum__nav { grid-template-columns: 1fr; }
+    .mc-curriculum__nav {
+      grid-template-columns: 1fr;
+    }
     .mc-curriculum__tab {
       border-right: 0;
       border-bottom: 1px solid var(--bbg-border);
     }
-    .mc-curriculum__tab:last-child { border-bottom: 0; }
-    .mc-curriculum__indicator { display: none; }
-    .mc-curriculum__topics { grid-template-columns: 1fr; }
-    .mc-curriculum__lead-figure { aspect-ratio: 4 / 3; }
+    .mc-curriculum__tab:last-child {
+      border-bottom: 0;
+    }
+    .mc-curriculum__indicator {
+      display: none;
+    }
+    .mc-curriculum__topics {
+      grid-template-columns: 1fr;
+    }
+    .mc-curriculum__lead-figure {
+      aspect-ratio: 4 / 3;
+    }
   }
 
   /* ---------- TRAINERS ---------- */
-  .mc-trainers-section { position: relative; overflow: hidden; }
+  .mc-trainers-section {
+    position: relative;
+    overflow: hidden;
+  }
   .mc-trainers-section::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -10%;
     right: -5%;
@@ -1502,8 +1859,14 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     gap: var(--space-7);
     align-items: start;
   }
-  .mc-trainers__copy p { color: var(--bbg-text); line-height: 1.7; font-size: 1.0625rem; }
-  .mc-trainers__copy p + p { margin-top: var(--space-4); }
+  .mc-trainers__copy p {
+    color: var(--bbg-text);
+    line-height: 1.7;
+    font-size: 1.0625rem;
+  }
+  .mc-trainers__copy p + p {
+    margin-top: var(--space-4);
+  }
   .mc-trainers__copy h2 {
     font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
     line-height: 1.15;
@@ -1534,7 +1897,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     border: 1px solid var(--bbg-border);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
-    transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    transition:
+      transform var(--dur) var(--ease),
+      border-color var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease);
   }
   .mc-trainer:hover {
     border-color: var(--bbg-blue);
@@ -1542,7 +1908,8 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     box-shadow: 0 18px 38px -22px rgba(200, 16, 46, 0.4);
   }
   .mc-trainer__avatar {
-    width: 72px; height: 72px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
     overflow: hidden;
     background: var(--bbg-blue-light);
@@ -1551,14 +1918,31 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     flex-shrink: 0;
   }
   .mc-trainer__avatar img {
-    width: 100%; height: 100%;
-    object-fit: cover; object-position: 50% 20%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
     display: block;
   }
-  .mc-trainer__body { display: flex; flex-direction: column; gap: 2px; }
-  .mc-trainer__name { font-weight: 600; color: var(--bbg-ink); font-size: 1.125rem; }
-  .mc-trainer__role { font-size: var(--fs-small); color: var(--bbg-blue); font-weight: 600; }
-  .mc-trainer__meta { font-size: var(--fs-small); color: var(--bbg-text-muted); }
+  .mc-trainer__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .mc-trainer__name {
+    font-weight: 600;
+    color: var(--bbg-ink);
+    font-size: 1.125rem;
+  }
+  .mc-trainer__role {
+    font-size: var(--fs-small);
+    color: var(--bbg-blue);
+    font-weight: 600;
+  }
+  .mc-trainer__meta {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
   .mc-trainer__langs {
     font-size: 0.75rem;
     color: var(--bbg-text-muted);
@@ -1567,7 +1951,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     margin-top: 4px;
   }
   @media (max-width: 1024px) {
-    .mc-trainers { grid-template-columns: 1fr; }
+    .mc-trainers {
+      grid-template-columns: 1fr;
+    }
   }
 
   /* ---------- FORMAT (programme spec sheet) ---------- */
@@ -1595,7 +1981,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     text-transform: uppercase;
     color: var(--bbg-blue-dark);
   }
-  .mc-spec__header-eyebrow--muted { color: var(--bbg-text-muted); font-weight: 600; }
+  .mc-spec__header-eyebrow--muted {
+    color: var(--bbg-text-muted);
+    font-weight: 600;
+  }
   .mc-spec__header-dot {
     width: 4px;
     height: 4px;
@@ -1617,11 +2006,15 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     transition: background 220ms ease;
     position: relative;
   }
-  .mc-spec__row:first-child { border-top: 0; }
+  .mc-spec__row:first-child {
+    border-top: 0;
+  }
   .mc-spec__row::before {
-    content: "";
+    content: '';
     position: absolute;
-    left: 0; top: 0; bottom: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
     width: 3px;
     background: var(--bbg-blue);
     transform: scaleY(0);
@@ -1631,7 +2024,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
   .mc-spec__row:hover {
     background: var(--bbg-surface);
   }
-  .mc-spec__row:hover::before { transform: scaleY(1); }
+  .mc-spec__row:hover::before {
+    transform: scaleY(1);
+  }
   .mc-spec__row:hover .mc-spec__icon {
     background: var(--bbg-blue);
     color: var(--bbg-white);
@@ -1654,9 +2049,15 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     color: var(--bbg-blue);
     flex-shrink: 0;
     box-shadow: inset 0 0 0 1px rgba(200, 16, 46, 0.15);
-    transition: background 280ms ease, color 280ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+    transition:
+      background 280ms ease,
+      color 280ms ease,
+      transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .mc-spec__icon svg { width: 22px; height: 22px; }
+  .mc-spec__icon svg {
+    width: 22px;
+    height: 22px;
+  }
   .mc-spec__label {
     font-size: 0.75rem;
     font-weight: 700;
@@ -1691,17 +2092,27 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     text-decoration: none;
     transition: color var(--dur) var(--ease);
   }
-  .mc-spec__footer-link:hover { color: var(--bbg-blue-dark); }
-  .mc-spec__footer-link:hover span { display: inline-block; transform: translateX(3px); transition: transform var(--dur) var(--ease); }
+  .mc-spec__footer-link:hover {
+    color: var(--bbg-blue-dark);
+  }
+  .mc-spec__footer-link:hover span {
+    display: inline-block;
+    transform: translateX(3px);
+    transition: transform var(--dur) var(--ease);
+  }
   @media (max-width: 720px) {
-    .mc-spec__header { padding: var(--space-3) var(--space-5); }
+    .mc-spec__header {
+      padding: var(--space-3) var(--space-5);
+    }
     .mc-spec__row {
       grid-template-columns: 1fr;
       gap: var(--space-3);
       padding: var(--space-5);
       align-items: start;
     }
-    .mc-spec__footer { padding: var(--space-4) var(--space-5); }
+    .mc-spec__footer {
+      padding: var(--space-4) var(--space-5);
+    }
   }
 
   /* ---------- FAQ FILTER CHIPS ---------- */
@@ -1727,7 +2138,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     transition: all 220ms ease;
     font-family: inherit;
   }
-  .mc-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+  .mc-faq-chip:hover {
+    border-color: var(--bbg-blue);
+    color: var(--bbg-blue);
+  }
   .mc-faq-chip.is-active {
     background: var(--bbg-blue);
     border-color: var(--bbg-blue);
@@ -1742,7 +2156,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     color: var(--bbg-text-muted);
     transition: all 220ms ease;
   }
-  .mc-faq-chip:hover .mc-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+  .mc-faq-chip:hover .mc-faq-chip__count {
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+  }
   .mc-faq-chip.is-active .mc-faq-chip__count {
     background: rgba(255, 255, 255, 0.2);
     color: var(--bbg-white);
@@ -1759,7 +2176,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     border: 1px solid var(--bbg-border);
     border-radius: var(--radius-md);
     overflow: hidden;
-    transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+    transition:
+      border-color 240ms ease,
+      box-shadow 240ms ease,
+      transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
   }
   .mc-faq__item:hover {
     transform: translateX(2px);
@@ -1769,7 +2189,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     border-color: var(--bbg-blue);
     box-shadow: 0 8px 22px -14px rgba(200, 16, 46, 0.4);
   }
-  .mc-faq__item.is-hidden { display: none; }
+  .mc-faq__item.is-hidden {
+    display: none;
+  }
   .mc-faq__q {
     cursor: pointer;
     padding: var(--space-5);
@@ -1783,9 +2205,15 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     list-style: none;
     transition: color var(--dur) var(--ease);
   }
-  .mc-faq__q::-webkit-details-marker { display: none; }
-  .mc-faq__q::marker { display: none; }
-  .mc-faq__item:hover .mc-faq__q { color: var(--bbg-blue); }
+  .mc-faq__q::-webkit-details-marker {
+    display: none;
+  }
+  .mc-faq__q::marker {
+    display: none;
+  }
+  .mc-faq__item:hover .mc-faq__q {
+    color: var(--bbg-blue);
+  }
   .mc-faq__cat-tag {
     display: inline-block;
     font-size: 0.68rem;
@@ -1798,7 +2226,9 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     border-radius: 4px;
     flex-shrink: 0;
   }
-  .mc-faq__q-text { flex-grow: 1; }
+  .mc-faq__q-text {
+    flex-grow: 1;
+  }
   .mc-faq__icon {
     flex-shrink: 0;
     width: 28px;
@@ -1809,9 +2239,10 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     border-radius: 50%;
     background: var(--bbg-surface);
     color: var(--bbg-text-muted);
-    transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
-                color var(--dur) var(--ease),
-                background var(--dur) var(--ease);
+    transition:
+      transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+      color var(--dur) var(--ease),
+      background var(--dur) var(--ease);
   }
   .mc-faq__item[open] .mc-faq__icon {
     transform: rotate(180deg);
@@ -1826,13 +2257,26 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     animation: mc-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
   }
   @keyframes mc-faq-in {
-    from { opacity: 0; transform: translateY(-4px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  .mc-faq__a p { margin: 0; max-width: 72ch; }
+  .mc-faq__a p {
+    margin: 0;
+    max-width: 72ch;
+  }
   @media (max-width: 560px) {
-    .mc-faq__q { flex-wrap: wrap; }
-    .mc-faq__q-text { flex-basis: 100%; }
+    .mc-faq__q {
+      flex-wrap: wrap;
+    }
+    .mc-faq__q-text {
+      flex-basis: 100%;
+    }
   }
 
   /* ---------- FINAL CTA ---------- */
@@ -1846,13 +2290,17 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     overflow: hidden;
   }
   .mc-cta::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -40%;
     right: -10%;
     width: 420px;
     height: 420px;
-    background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.18) 0%,
+      rgba(255, 255, 255, 0) 65%
+    );
     pointer-events: none;
   }
   .mc-cta .eyebrow--on-dark {
@@ -1914,14 +2362,17 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
       if (reduced || !('IntersectionObserver' in window)) {
         revealEls.forEach((el) => el.classList.add('is-in'));
       } else {
-        const io = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-in');
-              io.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+        );
         revealEls.forEach((el) => io.observe(el));
       }
     }
@@ -1943,14 +2394,17 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
         };
         requestAnimationFrame(tick);
       };
-      const counterIo = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animate(entry.target);
-            counterIo.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.5 });
+      const counterIo = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              counterIo.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
       counters.forEach((el) => counterIo.observe(el));
     } else {
       counters.forEach((el) => {
@@ -1973,7 +2427,7 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
         if (parallaxEl && heroEl && !reduced) {
           const heroH = heroEl.offsetHeight;
           if (scrollY < heroH) {
-            parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+            parallaxEl.style.setProperty('--parallax-y', scrollY * 0.18 + 'px');
           }
         }
 
@@ -2086,5 +2540,3 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     }
   })();
 </script>
-</content>
-</invoke>

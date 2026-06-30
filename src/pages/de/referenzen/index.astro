@@ -21,10 +21,10 @@ const categoryOrder = [
 const categoryLabelsDe: Record<(typeof categoryOrder)[number], string> = {
   'Brand & Design': 'Marke und Design',
   'Social & Content': 'Social und Content',
-  'eCommerce': 'eCommerce',
-  'Website': 'Websites',
-  'Distribution': 'Vertrieb',
-  'Training': 'Schulung',
+  eCommerce: 'eCommerce',
+  Website: 'Websites',
+  Distribution: 'Vertrieb',
+  Training: 'Schulung',
 };
 
 const counts = categoryOrder
@@ -41,71 +41,84 @@ const counts = categoryOrder
       <span class="eyebrow">Referenzen</span>
       <h1>Internationale Marken im chinesischen Markt aufgebaut</h1>
       <p class="lead">
-        Eine Auswahl aktueller Mandate aus Marketing, eCommerce und Vertrieb. Markenlaunches, Steuerung der Tmall- und JD-Shops, Social Commerce auf Douyin, WeChat und Xiaohongshu, Retail-Vertrieb, Websites für das chinesische Internet, Schulung von Teams für den ersten Schritt in den Markt.
+        Eine Auswahl aktueller Mandate aus Marketing, eCommerce und Vertrieb. Markenlaunches,
+        Steuerung der Tmall- und JD-Shops, Social Commerce auf Douyin, WeChat und Xiaohongshu,
+        Retail-Vertrieb, Websites für das chinesische Internet, Schulung von Teams für den ersten
+        Schritt in den Markt.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      {counts.length > 1 && (
-        <div class="work-filter" role="tablist" aria-label="Nach Expertise filtern">
-          <button
-            type="button"
-            class="work-filter__btn is-active"
-            data-category="all"
-            role="tab"
-            aria-selected="true"
-          >
-            Alle <span class="work-filter__count">{sorted.length}</span>
-          </button>
-          {counts.map((c) => (
+      {
+        counts.length > 1 && (
+          <div class="work-filter" role="tablist" aria-label="Nach Expertise filtern">
             <button
               type="button"
-              class="work-filter__btn"
-              data-category={c.name}
+              class="work-filter__btn is-active"
+              data-category="all"
               role="tab"
-              aria-selected="false"
+              aria-selected="true"
             >
-              {categoryLabelsDe[c.name]} <span class="work-filter__count">{c.count}</span>
+              Alle <span class="work-filter__count">{sorted.length}</span>
             </button>
-          ))}
-        </div>
-      )}
+            {counts.map((c) => (
+              <button
+                type="button"
+                class="work-filter__btn"
+                data-category={c.name}
+                role="tab"
+                aria-selected="false"
+              >
+                {categoryLabelsDe[c.name]} <span class="work-filter__count">{c.count}</span>
+              </button>
+            ))}
+          </div>
+        )
+      }
 
       <div class="grid grid-3 work-grid">
-        {sorted.map((c) => (
-          <a href={`/de/referenzen/${c.id}`} class="work-card" data-category={c.data.category}>
-            <div class="work-card__image">
-              <img
-                src={c.data.heroImage}
-                alt={c.data.heroImageAlt || `Fallstudie ${c.data.brand}`}
-                loading="lazy"
-                decoding="async"
-                width="600"
-                height="400"
-              />
-            </div>
-            <div class="work-card__body">
-              <span class="work-card__tag">{categoryLabelsDe[c.data.category]}</span>
-              <h3 class="work-card__title">{c.data.brand}</h3>
-              <p class="work-card__summary">{c.data.title}</p>
-              {c.data.services.length > 0 && (
-                <ul class="work-card__services" aria-label="Leistungen">
-                  {c.data.services.slice(0, 4).map((s) => <li>{s}</li>)}
-                  {c.data.services.length > 4 && (
-                    <li class="work-card__services-more">+{c.data.services.length - 4}</li>
-                  )}
-                </ul>
-              )}
-            </div>
-          </a>
-        ))}
+        {
+          sorted.map((c) => (
+            <a href={`/de/referenzen/${c.id}`} class="work-card" data-category={c.data.category}>
+              <div class="work-card__image">
+                <img
+                  src={c.data.heroImage}
+                  alt={c.data.heroImageAlt || `Fallstudie ${c.data.brand}`}
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
+                />
+              </div>
+              <div class="work-card__body">
+                <span class="work-card__tag">{categoryLabelsDe[c.data.category]}</span>
+                <h3 class="work-card__title">{c.data.brand}</h3>
+                <p class="work-card__summary">{c.data.title}</p>
+                {c.data.services.length > 0 && (
+                  <ul class="work-card__services" aria-label="Leistungen">
+                    {c.data.services.slice(0, 4).map((s) => (
+                      <li>{s}</li>
+                    ))}
+                    {c.data.services.length > 4 && (
+                      <li class="work-card__services-more">+{c.data.services.length - 4}</li>
+                    )}
+                  </ul>
+                )}
+              </div>
+            </a>
+          ))
+        }
       </div>
 
-      {sorted.length === 0 && (
-        <p class="work-empty">Das Archiv wird gerade umgezogen. Neue Fallstudien folgen in den kommenden Tagen.</p>
-      )}
+      {
+        sorted.length === 0 && (
+          <p class="work-empty">
+            Das Archiv wird gerade umgezogen. Neue Fallstudien folgen in den kommenden Tagen.
+          </p>
+        )
+      }
     </div>
   </section>
 
@@ -116,7 +129,8 @@ const counts = categoryOrder
           <span class="eyebrow">Schreiben Sie uns</span>
           <h2>Schreiben Sie die nächste Etappe Ihrer Marke in diese Seite hinein.</h2>
           <p class="cta-card__lead">
-            Schildern Sie Ihre aktuelle Lage und das Feld, das Sie abdecken wollen. Ein Senior aus der Agentur antwortet persönlich, kein automatisiertes Formular.
+            Schildern Sie Ihre aktuelle Lage und das Feld, das Sie abdecken wollen. Ein Senior aus
+            der Agentur antwortet persönlich, kein automatisiertes Formular.
           </p>
           <div class="cta-card__actions">
             <a href="/de/kontakt" class="btn btn--primary">Gespräch beginnen</a>
@@ -161,8 +175,15 @@ const counts = categoryOrder
       padding: var(--space-8) 0 var(--space-6);
       text-align: center;
     }
-    .work-intro .eyebrow { display: inline-block; margin-bottom: var(--space-4); }
-    .work-intro h1 { max-width: 22ch; margin-inline: auto; margin-bottom: var(--space-4); }
+    .work-intro .eyebrow {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+    }
+    .work-intro h1 {
+      max-width: 22ch;
+      margin-inline: auto;
+      margin-bottom: var(--space-4);
+    }
     .work-intro .lead {
       max-width: 66ch;
       margin-inline: auto;
@@ -207,7 +228,9 @@ const counts = categoryOrder
       font-weight: 600;
       opacity: 0.7;
     }
-    .work-filter__btn.is-active .work-filter__count { opacity: 0.9; }
+    .work-filter__btn.is-active .work-filter__count {
+      opacity: 0.9;
+    }
 
     .work-grid {
       gap: var(--space-6) var(--space-5);

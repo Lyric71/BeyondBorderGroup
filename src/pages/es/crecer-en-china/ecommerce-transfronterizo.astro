@@ -3,230 +3,252 @@ import Layout from '../../../layouts/Layout.astro';
 
 const promises = [
   {
-    title: "Operadores sénior encima de su cuenta cada día",
-    desc: "Cyril o Liyan están en el kickoff, en la revisión mensual y en la sala de crisis. No solo en el pitch.",
+    title: 'Operadores sénior encima de su cuenta cada día',
+    desc: 'Cyril o Liyan están en el kickoff, en la revisión mensual y en la sala de crisis. No solo en el pitch.',
   },
   {
-    title: "Un único equipo para tienda, medios, contenido y livestream",
-    desc: "Ni cuatro agencias, ni cuatro briefs, ni cuatro facturas. Un único responsable del P&L.",
+    title: 'Un único equipo para tienda, medios, contenido y livestream',
+    desc: 'Ni cuatro agencias, ni cuatro briefs, ni cuatro facturas. Un único responsable del P&L.',
   },
   {
-    title: "Honorarios a la vista, sin comisiones camufladas de plataforma",
-    desc: "Nos paga usted. No nos paga Alimama. No nos paga JD. No nos pagan las agencias de KOL. Su margen se queda en su bolsillo.",
+    title: 'Honorarios a la vista, sin comisiones camufladas de plataforma',
+    desc: 'Nos paga usted. No nos paga Alimama. No nos paga JD. No nos pagan las agencias de KOL. Su margen se queda en su bolsillo.',
   },
 ];
 
 const models = [
   {
-    name: "Modelo TP",
-    tag: "Usted carga con el stock, nosotros llevamos la tienda",
-    desc: "El stock se queda en su balance y el cliente, a su nombre. Operamos como su Tmall Partner, JD Partner o partner de Douyin EC. Operaciones, contenido, medios, livestream, atención al cliente: lo lleva todo nuestro equipo bajo su marca.",
-    when: "Quiere consolidar el P&L chino en sus libros, levantar capital de marca a largo plazo en China y tiene el circulante para financiar el stock en depósito franco.",
+    name: 'Modelo TP',
+    tag: 'Usted carga con el stock, nosotros llevamos la tienda',
+    desc: 'El stock se queda en su balance y el cliente, a su nombre. Operamos como su Tmall Partner, JD Partner o partner de Douyin EC. Operaciones, contenido, medios, livestream, atención al cliente: lo lleva todo nuestro equipo bajo su marca.',
+    when: 'Quiere consolidar el P&L chino en sus libros, levantar capital de marca a largo plazo en China y tiene el circulante para financiar el stock en depósito franco.',
     owns: [
-      { label: "Stock", value: "Suyo, en depósito franco" },
-      { label: "Licencia de tienda", value: "A su nombre" },
-      { label: "Datos de cliente", value: "Suyos" },
-      { label: "Contenido, medios, contratos", value: "Suyos" },
-      { label: "Inversión en medios", value: "Financiada al 100 % por usted" },
-      { label: "Ingresos", value: "GMV direct-to-consumer, en sus libros" },
+      { label: 'Stock', value: 'Suyo, en depósito franco' },
+      { label: 'Licencia de tienda', value: 'A su nombre' },
+      { label: 'Datos de cliente', value: 'Suyos' },
+      { label: 'Contenido, medios, contratos', value: 'Suyos' },
+      { label: 'Inversión en medios', value: 'Financiada al 100 % por usted' },
+      { label: 'Ingresos', value: 'GMV direct-to-consumer, en sus libros' },
     ],
     yourSide: [
-      "Margen retail completo en cada venta",
-      "Acceso directo al dato de cliente y al CRM",
-      "Mando sobre toda la tienda",
-      "Revisión mensual del P&L con los responsables sénior",
+      'Margen retail completo en cada venta',
+      'Acceso directo al dato de cliente y al CRM',
+      'Mando sobre toda la tienda',
+      'Revisión mensual del P&L con los responsables sénior',
     ],
     ourSide: [
-      "Día a día de la tienda, merchandising y actualización de fichas",
-      "Compra de medios en Alimama, JD media y Douyin Qianchuan",
-      "Campañas de livestream, KOL y KOC dentro de las plataformas eCommerce",
-      "Atención al cliente en mandarín y moderación de reseñas",
-      "Cumplimiento de la plataforma, retiradas y negociación de sanciones",
+      'Día a día de la tienda, merchandising y actualización de fichas',
+      'Compra de medios en Alimama, JD media y Douyin Qianchuan',
+      'Campañas de livestream, KOL y KOC dentro de las plataformas eCommerce',
+      'Atención al cliente en mandarín y moderación de reseñas',
+      'Cumplimiento de la plataforma, retiradas y negociación de sanciones',
     ],
     image: '/Images/grow-in-china/decision-tp-unboxing.png',
-    imageAlt: "Una estudiante china en un piso de una ciudad de segundo nivel desempaqueta en el suelo un envío cross-border con productos importados",
+    imageAlt:
+      'Una estudiante china en un piso de una ciudad de segundo nivel desempaqueta en el suelo un envío cross-border con productos importados',
   },
   {
-    name: "Modelo distribuidor",
-    tag: "Cargamos con el stock y llevamos la tienda",
-    desc: "Le compramos el producto a precio mayorista y cargamos con el stock en China. La tienda opera bajo nuestra licencia, el inventario está en nuestro balance y el riesgo comercial lo asumimos nosotros. Usted nos vende, nosotros vendemos al consumidor.",
-    when: "Su marca ya suena en China, quiere ingresos sin complicación operativa, no quiere financiar inventario ni cargar con riesgo de stock y prefiere un único interlocutor que le compre y le revenda el producto. Las marcas que entran de cero rara vez encajan aquí.",
+    name: 'Modelo distribuidor',
+    tag: 'Cargamos con el stock y llevamos la tienda',
+    desc: 'Le compramos el producto a precio mayorista y cargamos con el stock en China. La tienda opera bajo nuestra licencia, el inventario está en nuestro balance y el riesgo comercial lo asumimos nosotros. Usted nos vende, nosotros vendemos al consumidor.',
+    when: 'Su marca ya suena en China, quiere ingresos sin complicación operativa, no quiere financiar inventario ni cargar con riesgo de stock y prefiere un único interlocutor que le compre y le revenda el producto. Las marcas que entran de cero rara vez encajan aquí.',
     owns: [
-      { label: "Stock", value: "Nuestro" },
-      { label: "Licencia de tienda", value: "Nuestra" },
-      { label: "Datos de cliente", value: "Nuestros" },
-      { label: "Contenido, medios, contratos", value: "Nuestros" },
-      { label: "Inversión en medios", value: "Presupuesto de marca + coinversión TheChinaPath" },
-      { label: "Ingresos", value: "Factura mayorista, reconocida como B2B" },
+      { label: 'Stock', value: 'Nuestro' },
+      { label: 'Licencia de tienda', value: 'Nuestra' },
+      { label: 'Datos de cliente', value: 'Nuestros' },
+      { label: 'Contenido, medios, contratos', value: 'Nuestros' },
+      { label: 'Inversión en medios', value: 'Presupuesto de marca + coinversión TheChinaPath' },
+      { label: 'Ingresos', value: 'Factura mayorista, reconocida como B2B' },
     ],
     yourSide: [
-      "Ingresos mayoristas sin riesgo de stock",
-      "Una sola factura B2B en vez de un P&L direct-to-consumer complejo",
-      "Sin circulante atrapado en inventario chino",
-      "Reporting de rendimiento agregado y lectura de la categoría",
+      'Ingresos mayoristas sin riesgo de stock',
+      'Una sola factura B2B en vez de un P&L direct-to-consumer complejo',
+      'Sin circulante atrapado en inventario chino',
+      'Reporting de rendimiento agregado y lectura de la categoría',
     ],
     ourSide: [
-      "Compra, financiación y almacenaje del stock",
-      "Todo el perímetro del modelo TP, más el riesgo comercial",
-      "Política de precios entre plataformas dentro de las reglas acordadas con la marca",
-      "Devoluciones, reembolsos y responsabilidad sobre la atención al cliente",
+      'Compra, financiación y almacenaje del stock',
+      'Todo el perímetro del modelo TP, más el riesgo comercial',
+      'Política de precios entre plataformas dentro de las reglas acordadas con la marca',
+      'Devoluciones, reembolsos y responsabilidad sobre la atención al cliente',
     ],
     image: '/Images/grow-in-china/decision-distributor-mother.png',
-    imageAlt: "Una madre china joven en el sofá ve un livestream de venta en su tablet mientras su hija juega cerca",
+    imageAlt:
+      'Una madre china joven en el sofá ve un livestream de venta en su tablet mientras su hija juega cerca',
     highlight: false,
   },
 ];
 
 const compareRows = [
-  { label: "Quién asume el stock", tp: "Usted", dist: "TheChinaPath" },
-  { label: "Quién es dueño de la tienda y de los datos", tp: "Usted", dist: "TheChinaPath" },
-  { label: "Circulante que aporta", tp: "Elevado", dist: "Ninguno" },
-  { label: "Ingresos que registra", tp: "GMV retail menos comisiones", dist: "Precio mayorista" },
-  { label: "Recorrido de margen", tp: "Margen retail íntegro", dist: "Limitado al precio mayorista" },
-  { label: "Riesgo que asume", tp: "Stock y demanda", dist: "Ninguno sobre el inventario" },
-  { label: "Coste de medios y promoción", tp: "100 % a su cargo", dist: "Presupuesto de marca + coinversión TheChinaPath" },
-  { label: "Capital de marca en China", tp: "Suyo, íntegro", dist: "Suyo, construido a través nuestro" },
-  { label: "Más indicado para", tp: "Marcas que construyen un P&L chino a largo plazo", dist: "Marcas ya conocidas en China" },
+  { label: 'Quién asume el stock', tp: 'Usted', dist: 'TheChinaPath' },
+  { label: 'Quién es dueño de la tienda y de los datos', tp: 'Usted', dist: 'TheChinaPath' },
+  { label: 'Circulante que aporta', tp: 'Elevado', dist: 'Ninguno' },
+  { label: 'Ingresos que registra', tp: 'GMV retail menos comisiones', dist: 'Precio mayorista' },
+  {
+    label: 'Recorrido de margen',
+    tp: 'Margen retail íntegro',
+    dist: 'Limitado al precio mayorista',
+  },
+  { label: 'Riesgo que asume', tp: 'Stock y demanda', dist: 'Ninguno sobre el inventario' },
+  {
+    label: 'Coste de medios y promoción',
+    tp: '100 % a su cargo',
+    dist: 'Presupuesto de marca + coinversión TheChinaPath',
+  },
+  {
+    label: 'Capital de marca en China',
+    tp: 'Suyo, íntegro',
+    dist: 'Suyo, construido a través nuestro',
+  },
+  {
+    label: 'Más indicado para',
+    tp: 'Marcas que construyen un P&L chino a largo plazo',
+    dist: 'Marcas ya conocidas en China',
+  },
 ];
 
 const costLedger = {
   tp: {
-    label: "Modelo TP",
-    sub: "La tienda es suya. Nosotros la operamos.",
+    label: 'Modelo TP',
+    sub: 'La tienda es suya. Nosotros la operamos.',
     agency: {
-      tag: "Línea agencia",
-      headlineLead: "Desde",
+      tag: 'Línea agencia',
+      headlineLead: 'Desde',
       headlineNum: 7500,
       headlinePrefix: '$',
       headlineSuffix: '',
-      headlineUnit: "al mes",
-      pill: "+ 10 % sobre el GMV",
-      body: "Retainer mensual desde 7.500 $ con una participación del 10 % sobre el GMV, que sube o baja según la categoría y las plataformas cubiertas. Medios y producción de contenido se facturan a coste real.",
-      footer: "Rara vez aceptamos marcas que entran de cero como distribuidor. Construir notoriedad desde la nada sale demasiado caro si no se compromete un fondo de lanzamiento serio. Para la mayoría de los recién llegados, el modelo TP es la respuesta correcta.",
+      headlineUnit: 'al mes',
+      pill: '+ 10 % sobre el GMV',
+      body: 'Retainer mensual desde 7.500 $ con una participación del 10 % sobre el GMV, que sube o baja según la categoría y las plataformas cubiertas. Medios y producción de contenido se facturan a coste real.',
+      footer:
+        'Rara vez aceptamos marcas que entran de cero como distribuidor. Construir notoriedad desde la nada sale demasiado caro si no se compromete un fondo de lanzamiento serio. Para la mayoría de los recién llegados, el modelo TP es la respuesta correcta.',
     },
     brand: {
-      tag: "Presupuesto de marca",
+      tag: 'Presupuesto de marca',
       headlineNum: 100,
       headlinePrefix: '',
       headlineSuffix: '%',
-      headlineUnit: "a su cargo",
-      pill: "Desde 120K $ el primer año",
-      body: "Usted financia el 100 % de medios, contenido y promoción. Nosotros ejecutamos contra el presupuesto aprobado. Cada yuan pasa por su cuenta de plataforma, con visibilidad total.",
-      footer: "Rangos habituales: compra de medios desde 120.000 $ a lo largo de los doce primeros meses. El contenido se factura a coste, con una pequeña comisión de gestión. KOL y KOC los factura la agencia de talento. Nunca cobramos comisión por recomendación sobre la inversión en KOL.",
+      headlineUnit: 'a su cargo',
+      pill: 'Desde 120K $ el primer año',
+      body: 'Usted financia el 100 % de medios, contenido y promoción. Nosotros ejecutamos contra el presupuesto aprobado. Cada yuan pasa por su cuenta de plataforma, con visibilidad total.',
+      footer:
+        'Rangos habituales: compra de medios desde 120.000 $ a lo largo de los doce primeros meses. El contenido se factura a coste, con una pequeña comisión de gestión. KOL y KOC los factura la agencia de talento. Nunca cobramos comisión por recomendación sobre la inversión en KOL.',
     },
   },
   distributor: {
-    label: "Modelo distribuidor",
-    sub: "Nosotros compramos. Nosotros vendemos. Usted envía.",
+    label: 'Modelo distribuidor',
+    sub: 'Nosotros compramos. Nosotros vendemos. Usted envía.',
     agency: {
-      tag: "Línea agencia",
+      tag: 'Línea agencia',
       headlineLead: '',
       headlineNum: 0,
       headlinePrefix: '$',
       headlineSuffix: '',
-      headlineUnit: "retainer",
-      pill: "El margen va dentro del precio de venta",
-      body: "Sin retainer, sin participación sobre los ingresos. Nuestro margen está en el precio de venta. Las condiciones mayoristas dependen del volumen comprometido, la exclusividad y el calendario de campañas.",
-      footer: "Las condiciones de distribuidor encajan con marcas ya conocidas en China. Quien entra de cero suele empezar en TP y dar el salto más tarde, cuando la notoriedad justifica el compromiso de volumen.",
+      headlineUnit: 'retainer',
+      pill: 'El margen va dentro del precio de venta',
+      body: 'Sin retainer, sin participación sobre los ingresos. Nuestro margen está en el precio de venta. Las condiciones mayoristas dependen del volumen comprometido, la exclusividad y el calendario de campañas.',
+      footer:
+        'Las condiciones de distribuidor encajan con marcas ya conocidas en China. Quien entra de cero suele empezar en TP y dar el salto más tarde, cuando la notoriedad justifica el compromiso de volumen.',
     },
     brand: {
-      tag: "Presupuesto de marca",
-      headlineText: "Cofinanciado",
-      headlineUnit: "marca + TheChinaPath",
-      pill: "Esfuerzo intenso en 618 y 11.11",
-      body: "La marca aporta un presupuesto de marketing anual y lo desplegamos contra un plan acordado. TheChinaPath suele coinvertir desde el margen retail, sobre todo en medios always-on y mecánicas promocionales para 618 y 11.11.",
-      footer: "La coinversión sale del margen mayorista que percibimos. Usted ve el plan, lo firma, y rendimos cuentas línea por línea.",
+      tag: 'Presupuesto de marca',
+      headlineText: 'Cofinanciado',
+      headlineUnit: 'marca + TheChinaPath',
+      pill: 'Esfuerzo intenso en 618 y 11.11',
+      body: 'La marca aporta un presupuesto de marketing anual y lo desplegamos contra un plan acordado. TheChinaPath suele coinvertir desde el margen retail, sobre todo en medios always-on y mecánicas promocionales para 618 y 11.11.',
+      footer:
+        'La coinversión sale del margen mayorista que percibimos. Usted ve el plan, lo firma, y rendimos cuentas línea por línea.',
     },
   },
 };
 
 const platformLedger = {
-  tag: "Comisiones de plataforma",
+  tag: 'Comisiones de plataforma',
   headlineNum: 5,
   headlinePrefix: '~',
   headlineSuffix: '%',
-  headlineUnit: "de comisión, parte alta",
-  pill: "Repercutido, nunca con margen añadido",
-  body: "Las comisiones de Tmall Global y JD Worldwide salen directamente del tarifario oficial publicado en chino, sin estimaciones. Hay tres partidas que conviene anticipar.",
+  headlineUnit: 'de comisión, parte alta',
+  pill: 'Repercutido, nunca con margen añadido',
+  body: 'Las comisiones de Tmall Global y JD Worldwide salen directamente del tarifario oficial publicado en chino, sin estimaciones. Hay tres partidas que conviene anticipar.',
   buckets: [
     {
-      title: "Cuota anual de plataforma",
-      sub: "Cuota anual fija más un depósito reembolsable en Tmall Global. JD Worldwide trabaja con tramos parecidos.",
-      meter: "Fija",
+      title: 'Cuota anual de plataforma',
+      sub: 'Cuota anual fija más un depósito reembolsable en Tmall Global. JD Worldwide trabaja con tramos parecidos.',
+      meter: 'Fija',
       meterPct: 35,
     },
     {
-      title: "Comisión por transacción",
-      sub: "Entre el 2 % y el 5 % por venta. Belleza y suplementos en la parte alta. Bienes duraderos en la baja.",
-      meter: "2 a 5 %",
+      title: 'Comisión por transacción',
+      sub: 'Entre el 2 % y el 5 % por venta. Belleza y suplementos en la parte alta. Bienes duraderos en la baja.',
+      meter: '2 a 5 %',
       meterPct: 80,
     },
     {
-      title: "Pasarela de pago",
-      sub: "Alipay y WeChat Pay se llevan un pequeño porcentaje en cada operación.",
-      meter: "Por operación",
+      title: 'Pasarela de pago',
+      sub: 'Alipay y WeChat Pay se llevan un pequeño porcentaje en cada operación.',
+      meter: 'Por operación',
       meterPct: 22,
     },
   ],
-  footer: "Son las mismas cifras que paga cualquier marca. Nunca las marcamos al alza.",
+  footer: 'Son las mismas cifras que paga cualquier marca. Nunca las marcamos al alza.',
 };
 
 const steps = [
   {
     icon: 'compass',
-    phase: "Fase uno",
-    duration: "2 a 3 semanas",
-    title: "Auditoría y diagnóstico de crecimiento",
-    desc: "Abrimos la tienda en canal y reconstruimos la lectura completa: tráfico, conversión, retención, contenido y eficacia de medios. Al final de la fase, su equipo se lleva tres palancas de crecimiento jerarquizadas, las cifras que las sostienen y un plan de prioridades a noventa días.",
+    phase: 'Fase uno',
+    duration: '2 a 3 semanas',
+    title: 'Auditoría y diagnóstico de crecimiento',
+    desc: 'Abrimos la tienda en canal y reconstruimos la lectura completa: tráfico, conversión, retención, contenido y eficacia de medios. Al final de la fase, su equipo se lleva tres palancas de crecimiento jerarquizadas, las cifras que las sostienen y un plan de prioridades a noventa días.',
   },
   {
     icon: 'palette',
-    phase: "Fase dos",
-    duration: "4 a 6 semanas",
-    title: "Rediseño de tienda y contenido",
-    desc: "Fichas de producto, banners y vídeos nuevos, más un plató de livestream operativo. La tienda empieza a parecerse a una que vende en 2026, no en 2021, y el contenido aguanta los cambios de algoritmo.",
+    phase: 'Fase dos',
+    duration: '4 a 6 semanas',
+    title: 'Rediseño de tienda y contenido',
+    desc: 'Fichas de producto, banners y vídeos nuevos, más un plató de livestream operativo. La tienda empieza a parecerse a una que vende en 2026, no en 2021, y el contenido aguanta los cambios de algoritmo.',
   },
   {
     icon: 'rocket',
-    phase: "Fase tres",
-    duration: "4 a 8 semanas",
-    title: "Activación de medios y tráfico",
-    desc: "Search de pago, display de pago, livestream patrocinado, KOL y KOC. Abrimos el grifo en Alimama, JD media y Douyin Qianchuan, con seeding en RED alimentando la parte alta del embudo. Cada yuan vinculado a una conversión.",
+    phase: 'Fase tres',
+    duration: '4 a 8 semanas',
+    title: 'Activación de medios y tráfico',
+    desc: 'Search de pago, display de pago, livestream patrocinado, KOL y KOC. Abrimos el grifo en Alimama, JD media y Douyin Qianchuan, con seeding en RED alimentando la parte alta del embudo. Cada yuan vinculado a una conversión.',
   },
   {
     icon: 'trend',
-    phase: "Fase cuatro",
-    duration: "Always-on, reset anual",
-    title: "Operaciones y escala",
-    desc: "Operación diaria, optimización semanal, revisión mensual de negocio, planificación trimestral de campañas. Llevamos el calendario chino (618, 99, 11.11, Doble 12, Año Nuevo Chino) y reescribimos la lista de prioridades con una auditoría nueva cada doce meses.",
+    phase: 'Fase cuatro',
+    duration: 'Always-on, reset anual',
+    title: 'Operaciones y escala',
+    desc: 'Operación diaria, optimización semanal, revisión mensual de negocio, planificación trimestral de campañas. Llevamos el calendario chino (618, 99, 11.11, Doble 12, Año Nuevo Chino) y reescribimos la lista de prioridades con una auditoría nueva cada doce meses.',
   },
 ];
 
 const sisterPackages = [
   {
-    title: "Always-on social",
-    desc: "WeChat, RED, Douyin y Weibo a diario, en paralelo a su tienda principal. Para marcas con la tienda en marcha que necesitan combustible de contenido constante.",
+    title: 'Always-on social',
+    desc: 'WeChat, RED, Douyin y Weibo a diario, en paralelo a su tienda principal. Para marcas con la tienda en marcha que necesitan combustible de contenido constante.',
   },
   {
-    title: "Sprint de lanzamiento",
-    desc: "Tres meses intensivos en los cuatro canales en torno a un lanzamiento de Tmall Global o JD Worldwide. Para la primera ola.",
+    title: 'Sprint de lanzamiento',
+    desc: 'Tres meses intensivos en los cuatro canales en torno a un lanzamiento de Tmall Global o JD Worldwide. Para la primera ola.',
   },
   {
-    title: "Empuje de festival",
-    desc: "Activación social específica para 618, 11.11, Doble 12 o Año Nuevo Chino. Para marcas donde la fecha pesa más que la cadencia always-on.",
+    title: 'Empuje de festival',
+    desc: 'Activación social específica para 618, 11.11, Doble 12 o Año Nuevo Chino. Para marcas donde la fecha pesa más que la cadencia always-on.',
   },
 ];
 
 const contextCards = [
   {
     image: '/Images/grow-in-china/truth-comparing-products.png',
-    alt: "Un hombre chino de unos 35 años compara dos cajas de productos importados mientras mira una app de eCommerce china en un café tranquilo",
-    kicker: "Un solo techo",
-    title: "El equipo que escribe el plan sigue al frente de la tienda",
-    body: "La mayoría de agencias separan estrategia de ejecución. Nosotros mantenemos las dos bajo el mismo techo. El sénior que firma el plan lleva la reunión semanal de operaciones.",
-    flow: ["Estrategia", "Planificación", "Operaciones"],
-    chipLabel: "Reunión semanal de ops",
-    chipSub: "Estrategia y operaciones en la misma sala",
+    alt: 'Un hombre chino de unos 35 años compara dos cajas de productos importados mientras mira una app de eCommerce china en un café tranquilo',
+    kicker: 'Un solo techo',
+    title: 'El equipo que escribe el plan sigue al frente de la tienda',
+    body: 'La mayoría de agencias separan estrategia de ejecución. Nosotros mantenemos las dos bajo el mismo techo. El sénior que firma el plan lleva la reunión semanal de operaciones.',
+    flow: ['Estrategia', 'Planificación', 'Operaciones'],
+    chipLabel: 'Reunión semanal de ops',
+    chipSub: 'Estrategia y operaciones en la misma sala',
     avatars: [
       { letter: 'L', tone: 'blue' },
       { letter: 'C', tone: 'dark' },
@@ -234,47 +256,135 @@ const contextCards = [
       { letter: 'M', tone: 'amber' },
     ],
     extraAvatars: '+3',
-    pinLabel: "Dashboard en directo",
-    pinValue: "Abierto a cualquier hora",
+    pinLabel: 'Dashboard en directo',
+    pinValue: 'Abierto a cualquier hora',
   },
   {
     image: '/Images/enter-china/team.png',
-    alt: "El equipo de operaciones de eCommerce de TheChinaPath trabajando en una oficina abierta",
-    kicker: "Cicatrices de plataforma",
-    title: "Operadores primero, estrategas después",
-    body: "Nuestros sénior llevaron tiendas en Tmall y JD en Publicis Commerce China. Han perdido un Doble 11 y ganado el siguiente.",
-    credentials: ["Belleza", "Gran consumo", "Lifestyle", "Suplementos"],
-    chipLabel: "Ex-Publicis Commerce",
-    chipSub: "Sénior, diez años sobre las plataformas",
-    badge: "Ganado el 11.11 siguiente",
-    badgeSub: "Después de perder uno. La lección quedó.",
+    alt: 'El equipo de operaciones de eCommerce de TheChinaPath trabajando en una oficina abierta',
+    kicker: 'Cicatrices de plataforma',
+    title: 'Operadores primero, estrategas después',
+    body: 'Nuestros sénior llevaron tiendas en Tmall y JD en Publicis Commerce China. Han perdido un Doble 11 y ganado el siguiente.',
+    credentials: ['Belleza', 'Gran consumo', 'Lifestyle', 'Suplementos'],
+    chipLabel: 'Ex-Publicis Commerce',
+    chipSub: 'Sénior, diez años sobre las plataformas',
+    badge: 'Ganado el 11.11 siguiente',
+    badgeSub: 'Después de perder uno. La lección quedó.',
   },
 ];
 
 const faqs = [
-  { cat: "Operaciones", q: "¿Qué implica de verdad llevar una tienda Tmall Global en el día a día?", a: "Más de lo que la gente espera. Actualizaciones diarias de tienda, cambios de banner, montaje de promociones, sincronización de inventario con el depósito aduanero, atención al cliente en mandarín, comprobación de pedidos, devoluciones, moderación de reseñas, preparación de livestream. Una tienda principal abandonada una semana pierde posicionamiento. Abandonada un mes, pierde posición de categoría. El trabajo es constante, no glamuroso, y es lo que separa a las tiendas que crecen de las que solo existen." },
-  { cat: "Operaciones", q: "¿Cuánto tardan en tomar el relevo de una tienda existente?", a: "De dos a cuatro semanas para auditoría y traspaso limpio. Más si el partner saliente no coopera (ocurre). Primero rescatamos todo: acceso al backend, cuentas de medios, datos de cliente, biblioteca de contenido, contratos con proveedores. Luego mapeamos lo que falta. Trabajamos dos semanas en paralelo antes del corte, así no se pierde una ventana de campaña en la transición." },
-  { cat: "Operaciones", q: "¿Atienden al cliente en mandarín?", a: "Sí. Equipo nativo en mandarín en horario de plataforma (9:00 a 23:00 hora local, más durante 11.11). Tmall Global, JD Worldwide y Douyin EC Global miden el tiempo de respuesta y lo incorporan a la puntuación de la tienda. Mantenemos el tiempo bajo 30 segundos y la nota por encima de la media de la plataforma." },
-  { cat: "Operaciones", q: "¿Cómo gestionan logística y depósito aduanero?", a: "Nos coordinamos con su proveedor actual de depósito aduanero o le presentamos uno si no lo tiene. La mayoría de las marcas en Tmall Global trabajan a través de los depósitos aduaneros de Cainiao. Para JD Worldwide, la red propia de JD suele ser la vía más rápida. Seguimos stock, presentamos aduanas, gestionamos devoluciones y perseguimos retrasos. La logística no es glamurosa. Es la diferencia entre una nota de tienda de 4,9 y una de 4,5." },
-  { cat: "Operaciones", q: "¿Y si un SKU se agota en plena campaña?", a: "Lo señalamos antes de que ocurra. El dashboard tiene alertas de reposición. Si no se puede reponer a tiempo, desviamos el peso de la campaña a un SKU hermano, redirigimos los medios pagados y protegemos la nota de tienda con una página de espera clara. El peor escenario es la rotura silenciosa, y nos aseguramos de que no pase." },
-  { cat: "Operaciones", q: "¿Cómo gestionan devoluciones y reseñas falsas?", a: "Las devoluciones las gestiona el partner del depósito aduanero bajo nuestra coordinación. Las tasas suelen rondar el 8 % al 15 % en belleza, el 15 % al 25 % en moda, por debajo del 5 % en F&B y suplementos. Las reseñas falsas y los ataques de review-bombing ocurren, sobre todo después de un viral. Vigilamos a diario, pedimos la retirada a la plataforma y alimentamos reseñas genuinas a través de nuestra red de KOC." },
-  { cat: "Plataformas", q: "¿Por qué plataforma debería empezar?", a: "Depende de la categoría, la madurez de la marca y la madurez de contenido. Tmall Global es la opción por defecto en belleza, suplementos, F&B y lifestyle, donde la confianza pesa más. JD Worldwide gana en electrónica, hogar, categorías con sesgo masculino y consumibles que se benefician de la logística JD. Douyin EC Global tiene sentido cuando el contenido es su fuerza y puede producir livestream a diario. Lo decidimos en la Fase uno, no por inercia." },
-  { cat: "Plataformas", q: "¿Podemos llevar Tmall Global y JD Worldwide a la vez?", a: "Sí, y la mayoría de marcas a escala lo hacen. Tmall Global suele albergar el flagship de marca. JD Worldwide recoge categorías sensibles a la logística y al comprador masculino. Prepárese para el doble de carga operativa, el doble de cadencia de campaña y una política de precios clara entre las dos. Operamos cuentas multiplataforma cada día." },
-  { cat: "Plataformas", q: "¿Y Douyin EC Global?", a: "Crece rápido. Douyin redujo distancias con Tmall Global en belleza, F&B y lifestyle entre 2025 y 2026, porque el livestream es el formato donde la conversión es más alta. La contrapartida está en la producción de contenido: livestream diario, refresco creativo semanal, vídeo corto constante. Las marcas sin disciplina de contenido queman presupuesto en Douyin. Las que la tienen, ganan." },
-  { cat: "Plataformas", q: "¿Dónde encaja RED (Xiaohongshu)?", a: "En descubrimiento, no en transacción. RED es donde el consumidor chino investiga antes de comprar en Tmall Global, JD Worldwide o Douyin EC Global. Lo usamos para seeding de KOC, reputación de marca y creación de demanda. El comercio in-app de RED sigue siendo pequeño en cross-border. La jugada habitual es RED para influencia y Tmall Global o JD Worldwide para conversión, aunque algunas categorías ya invierten ese orden." },
-  { cat: "Rendimiento", q: "¿Qué crecimiento debo esperar el primer año?", a: "Depende de categoría, punto de partida y presupuesto. Las flagship recién abiertas en Tmall Global o JD Worldwide suelen cerrar el primer año completo entre 400.000 $ y unos pocos millones de GMV, según la inversión en medios y la categoría. Las tiendas relanzadas sobre una base existente suelen crecer del 30 % al 80 % en los doce primeros meses bajo nuestra operación. Quien le da una cifra única sin ver su categoría y su presupuesto está vendiéndole, no asesorándole." },
-  { cat: "Rendimiento", q: "¿Cuándo se ven resultados?", a: "Los primeros indicadores se mueven en la semana seis (conversión, mix de tráfico, engagement). Los cambios en ingresos suelen aterrizar en el mes tres o cuatro. La primera gran ventana de campaña tras el traspaso (618, 99, 11.11) es cuando se imprime la cifra de verdad. El cross-border en China premia la paciencia, no la impaciencia." },
-  { cat: "Rendimiento", q: "¿Cómo reportan?", a: "Dashboard en directo abierto a cualquier hora (tráfico, GMV, ROAS, conversión, recompra). Resumen escrito semanal de lo que se movió y de lo próximo. Revisión mensual sénior por vídeo con Cyril o Liyan. Sesión trimestral de planificación. Sin PDFs que llegan tarde. Compartimos el mismo dashboard que usamos por dentro." },
-  { cat: "Cumplimiento", q: "¿Y si mi producto no puede venderse por cross-border?", a: "Se lo decimos antes de firmar. Algunos productos no califican (categorías restringidas, ciertas claims médicas, problemas de formulación). Si el suyo es uno, se lo decimos en la semana uno y le ayudamos a reposicionar o le recomendamos otra ruta de entrada. No operamos tiendas para productos que van a salir de plataforma a los seis meses." },
-  { cat: "Cumplimiento", q: "¿Y las retiradas o sanciones de plataforma?", a: "Las llevamos nosotros. Una notificación de sanción en Tmall Global o JD Worldwide hay que responderla entre 24 y 72 horas, según la gravedad. Nuestro equipo de ops redacta la respuesta, el plan de subsanación y la negociación con la plataforma. Las sanciones pasan, incluso a las marcas mejor estructuradas. Lo que cuenta es la velocidad de recuperación." },
-  { cat: "Contrato", q: "¿Cuál es el compromiso mínimo?", a: "Doce meses en el modelo TP. Veinticuatro meses en el modelo distribuidor. Las tiendas cross-border necesitan tiempo de rampa, sobre todo a través de la primera gran ventana, y un compromiso de stock requiere una pista más larga para amortizarse. Caben compromisos más cortos en trabajos por proyecto (sprint 618, sprint 11.11, sprint de lanzamiento) pero no para operación always-on. Quien promete resultados always-on en menos de tres meses le está firmando un mal final." },
-  { cat: "Contrato", q: "¿Quién es dueño de la licencia de tienda, los datos de cliente y el contenido?", a: "Depende del modelo. En TP, todo es suyo: licencia de tienda, datos de cliente, biblioteca de contenido, cuentas de medios y contratos con proveedores. Operamos bajo su marca y con sus activos. Nada se transfiere a la salida porque nada fue nuestro. En distribuidor, todo es nuestro: la tienda, el inventario, los datos de cliente, el contenido y las cuentas de medios. Usted nos vende, nosotros vendemos al consumidor. La propiedad intelectual y las marcas registradas siguen siendo suyas, por supuesto, pero la infraestructura comercial china queda de nuestro lado." },
-  { cat: "Equipo", q: "¿Quién lleva mi cuenta cada día?", a: "Un director de cuenta sénior dedicado, un responsable de operaciones de tienda, un productor de contenido y un media buyer. Están a tiempo completo en cross-border China, no repartiendo sus horas entre cinco clientes. Cyril o Liyan entran en la revisión mensual y en las conversaciones comerciales." },
-  { cat: "Equipo", q: "¿Dónde está el equipo?", a: "Equipo nativo en China continental, en horario de plataforma. La dirección sénior reparte tiempo entre China, Hong Kong y París. Recibe una bandeja de entrada, un canal de Slack y una jornada de trabajo que solapa con China y Europa." },
-  { cat: "Equipo", q: "¿Trabajan con mi agencia global o con mi equipo interno?", a: "Sí. Encajamos en los marcos de marca existentes y devolvemos a su equipo global lo que aprendemos. No nos colamos en trabajos que ya cubre otro. El encargo desde la semana uno es operar las tiendas chinas, no rehacer el plan global." },
+  {
+    cat: 'Operaciones',
+    q: '¿Qué implica de verdad llevar una tienda Tmall Global en el día a día?',
+    a: 'Más de lo que la gente espera. Actualizaciones diarias de tienda, cambios de banner, montaje de promociones, sincronización de inventario con el depósito aduanero, atención al cliente en mandarín, comprobación de pedidos, devoluciones, moderación de reseñas, preparación de livestream. Una tienda principal abandonada una semana pierde posicionamiento. Abandonada un mes, pierde posición de categoría. El trabajo es constante, no glamuroso, y es lo que separa a las tiendas que crecen de las que solo existen.',
+  },
+  {
+    cat: 'Operaciones',
+    q: '¿Cuánto tardan en tomar el relevo de una tienda existente?',
+    a: 'De dos a cuatro semanas para auditoría y traspaso limpio. Más si el partner saliente no coopera (ocurre). Primero rescatamos todo: acceso al backend, cuentas de medios, datos de cliente, biblioteca de contenido, contratos con proveedores. Luego mapeamos lo que falta. Trabajamos dos semanas en paralelo antes del corte, así no se pierde una ventana de campaña en la transición.',
+  },
+  {
+    cat: 'Operaciones',
+    q: '¿Atienden al cliente en mandarín?',
+    a: 'Sí. Equipo nativo en mandarín en horario de plataforma (9:00 a 23:00 hora local, más durante 11.11). Tmall Global, JD Worldwide y Douyin EC Global miden el tiempo de respuesta y lo incorporan a la puntuación de la tienda. Mantenemos el tiempo bajo 30 segundos y la nota por encima de la media de la plataforma.',
+  },
+  {
+    cat: 'Operaciones',
+    q: '¿Cómo gestionan logística y depósito aduanero?',
+    a: 'Nos coordinamos con su proveedor actual de depósito aduanero o le presentamos uno si no lo tiene. La mayoría de las marcas en Tmall Global trabajan a través de los depósitos aduaneros de Cainiao. Para JD Worldwide, la red propia de JD suele ser la vía más rápida. Seguimos stock, presentamos aduanas, gestionamos devoluciones y perseguimos retrasos. La logística no es glamurosa. Es la diferencia entre una nota de tienda de 4,9 y una de 4,5.',
+  },
+  {
+    cat: 'Operaciones',
+    q: '¿Y si un SKU se agota en plena campaña?',
+    a: 'Lo señalamos antes de que ocurra. El dashboard tiene alertas de reposición. Si no se puede reponer a tiempo, desviamos el peso de la campaña a un SKU hermano, redirigimos los medios pagados y protegemos la nota de tienda con una página de espera clara. El peor escenario es la rotura silenciosa, y nos aseguramos de que no pase.',
+  },
+  {
+    cat: 'Operaciones',
+    q: '¿Cómo gestionan devoluciones y reseñas falsas?',
+    a: 'Las devoluciones las gestiona el partner del depósito aduanero bajo nuestra coordinación. Las tasas suelen rondar el 8 % al 15 % en belleza, el 15 % al 25 % en moda, por debajo del 5 % en F&B y suplementos. Las reseñas falsas y los ataques de review-bombing ocurren, sobre todo después de un viral. Vigilamos a diario, pedimos la retirada a la plataforma y alimentamos reseñas genuinas a través de nuestra red de KOC.',
+  },
+  {
+    cat: 'Plataformas',
+    q: '¿Por qué plataforma debería empezar?',
+    a: 'Depende de la categoría, la madurez de la marca y la madurez de contenido. Tmall Global es la opción por defecto en belleza, suplementos, F&B y lifestyle, donde la confianza pesa más. JD Worldwide gana en electrónica, hogar, categorías con sesgo masculino y consumibles que se benefician de la logística JD. Douyin EC Global tiene sentido cuando el contenido es su fuerza y puede producir livestream a diario. Lo decidimos en la Fase uno, no por inercia.',
+  },
+  {
+    cat: 'Plataformas',
+    q: '¿Podemos llevar Tmall Global y JD Worldwide a la vez?',
+    a: 'Sí, y la mayoría de marcas a escala lo hacen. Tmall Global suele albergar el flagship de marca. JD Worldwide recoge categorías sensibles a la logística y al comprador masculino. Prepárese para el doble de carga operativa, el doble de cadencia de campaña y una política de precios clara entre las dos. Operamos cuentas multiplataforma cada día.',
+  },
+  {
+    cat: 'Plataformas',
+    q: '¿Y Douyin EC Global?',
+    a: 'Crece rápido. Douyin redujo distancias con Tmall Global en belleza, F&B y lifestyle entre 2025 y 2026, porque el livestream es el formato donde la conversión es más alta. La contrapartida está en la producción de contenido: livestream diario, refresco creativo semanal, vídeo corto constante. Las marcas sin disciplina de contenido queman presupuesto en Douyin. Las que la tienen, ganan.',
+  },
+  {
+    cat: 'Plataformas',
+    q: '¿Dónde encaja RED (Xiaohongshu)?',
+    a: 'En descubrimiento, no en transacción. RED es donde el consumidor chino investiga antes de comprar en Tmall Global, JD Worldwide o Douyin EC Global. Lo usamos para seeding de KOC, reputación de marca y creación de demanda. El comercio in-app de RED sigue siendo pequeño en cross-border. La jugada habitual es RED para influencia y Tmall Global o JD Worldwide para conversión, aunque algunas categorías ya invierten ese orden.',
+  },
+  {
+    cat: 'Rendimiento',
+    q: '¿Qué crecimiento debo esperar el primer año?',
+    a: 'Depende de categoría, punto de partida y presupuesto. Las flagship recién abiertas en Tmall Global o JD Worldwide suelen cerrar el primer año completo entre 400.000 $ y unos pocos millones de GMV, según la inversión en medios y la categoría. Las tiendas relanzadas sobre una base existente suelen crecer del 30 % al 80 % en los doce primeros meses bajo nuestra operación. Quien le da una cifra única sin ver su categoría y su presupuesto está vendiéndole, no asesorándole.',
+  },
+  {
+    cat: 'Rendimiento',
+    q: '¿Cuándo se ven resultados?',
+    a: 'Los primeros indicadores se mueven en la semana seis (conversión, mix de tráfico, engagement). Los cambios en ingresos suelen aterrizar en el mes tres o cuatro. La primera gran ventana de campaña tras el traspaso (618, 99, 11.11) es cuando se imprime la cifra de verdad. El cross-border en China premia la paciencia, no la impaciencia.',
+  },
+  {
+    cat: 'Rendimiento',
+    q: '¿Cómo reportan?',
+    a: 'Dashboard en directo abierto a cualquier hora (tráfico, GMV, ROAS, conversión, recompra). Resumen escrito semanal de lo que se movió y de lo próximo. Revisión mensual sénior por vídeo con Cyril o Liyan. Sesión trimestral de planificación. Sin PDFs que llegan tarde. Compartimos el mismo dashboard que usamos por dentro.',
+  },
+  {
+    cat: 'Cumplimiento',
+    q: '¿Y si mi producto no puede venderse por cross-border?',
+    a: 'Se lo decimos antes de firmar. Algunos productos no califican (categorías restringidas, ciertas claims médicas, problemas de formulación). Si el suyo es uno, se lo decimos en la semana uno y le ayudamos a reposicionar o le recomendamos otra ruta de entrada. No operamos tiendas para productos que van a salir de plataforma a los seis meses.',
+  },
+  {
+    cat: 'Cumplimiento',
+    q: '¿Y las retiradas o sanciones de plataforma?',
+    a: 'Las llevamos nosotros. Una notificación de sanción en Tmall Global o JD Worldwide hay que responderla entre 24 y 72 horas, según la gravedad. Nuestro equipo de ops redacta la respuesta, el plan de subsanación y la negociación con la plataforma. Las sanciones pasan, incluso a las marcas mejor estructuradas. Lo que cuenta es la velocidad de recuperación.',
+  },
+  {
+    cat: 'Contrato',
+    q: '¿Cuál es el compromiso mínimo?',
+    a: 'Doce meses en el modelo TP. Veinticuatro meses en el modelo distribuidor. Las tiendas cross-border necesitan tiempo de rampa, sobre todo a través de la primera gran ventana, y un compromiso de stock requiere una pista más larga para amortizarse. Caben compromisos más cortos en trabajos por proyecto (sprint 618, sprint 11.11, sprint de lanzamiento) pero no para operación always-on. Quien promete resultados always-on en menos de tres meses le está firmando un mal final.',
+  },
+  {
+    cat: 'Contrato',
+    q: '¿Quién es dueño de la licencia de tienda, los datos de cliente y el contenido?',
+    a: 'Depende del modelo. En TP, todo es suyo: licencia de tienda, datos de cliente, biblioteca de contenido, cuentas de medios y contratos con proveedores. Operamos bajo su marca y con sus activos. Nada se transfiere a la salida porque nada fue nuestro. En distribuidor, todo es nuestro: la tienda, el inventario, los datos de cliente, el contenido y las cuentas de medios. Usted nos vende, nosotros vendemos al consumidor. La propiedad intelectual y las marcas registradas siguen siendo suyas, por supuesto, pero la infraestructura comercial china queda de nuestro lado.',
+  },
+  {
+    cat: 'Equipo',
+    q: '¿Quién lleva mi cuenta cada día?',
+    a: 'Un director de cuenta sénior dedicado, un responsable de operaciones de tienda, un productor de contenido y un media buyer. Están a tiempo completo en cross-border China, no repartiendo sus horas entre cinco clientes. Cyril o Liyan entran en la revisión mensual y en las conversaciones comerciales.',
+  },
+  {
+    cat: 'Equipo',
+    q: '¿Dónde está el equipo?',
+    a: 'Equipo nativo en China continental, en horario de plataforma. La dirección sénior reparte tiempo entre China, Hong Kong y París. Recibe una bandeja de entrada, un canal de Slack y una jornada de trabajo que solapa con China y Europa.',
+  },
+  {
+    cat: 'Equipo',
+    q: '¿Trabajan con mi agencia global o con mi equipo interno?',
+    a: 'Sí. Encajamos en los marcos de marca existentes y devolvemos a su equipo global lo que aprendemos. No nos colamos en trabajos que ya cubre otro. El encargo desde la semana uno es operar las tiendas chinas, no rehacer el plan global.',
+  },
 ];
 
-const faqCategories = ["Todas", "Operaciones", "Plataformas", "Rendimiento", "Cumplimiento", "Contrato", "Equipo"];
+const faqCategories = [
+  'Todas',
+  'Operaciones',
+  'Plataformas',
+  'Rendimiento',
+  'Cumplimiento',
+  'Contrato',
+  'Equipo',
+];
 
 const icons: Record<string, string> = {
   compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16 8 13 13 8 16 11 11 16 8"/></svg>`,
@@ -295,11 +405,13 @@ const icons: Record<string, string> = {
 >
   <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
   <article class="cbs">
-
     {/* ---------- HERO ---------- */}
     <section class="cbs-hero" data-hero>
       <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/grow-in-china/hero-livestream-shopper.png" alt="Una joven china desliza un livestream de venta en su móvil por la noche durante un festival del eCommerce chino" />
+        <img
+          src="/Images/grow-in-china/hero-livestream-shopper.png"
+          alt="Una joven china desliza un livestream de venta en su móvil por la noche durante un festival del eCommerce chino"
+        />
       </div>
       <div class="cbs-hero__overlay" aria-hidden="true"></div>
       <div class="cbs-hero__grain" aria-hidden="true"></div>
@@ -313,12 +425,17 @@ const icons: Record<string, string> = {
         <span class="eyebrow eyebrow--on-dark cbs-reveal">Cross-Border eCommerce</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
           <span class="cbs-hero__title-row">Abrir la tienda lleva semanas.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--accent">Hacerla crecer lleva años.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">Nosotros ponemos los años.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent"
+            >Hacerla crecer lleva años.</span
+          >
+          <span class="cbs-hero__title-row cbs-hero__title-row--highlight"
+            >Nosotros ponemos los años.</span
+          >
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          La mayoría de las marcas extranjeras tienen tienda en Tmall Global o JD Worldwide. Pocas la tienen
-          creciendo. Operamos tiendas flagship cada día, con un responsable sénior siempre al teléfono.
+          La mayoría de las marcas extranjeras tienen tienda en Tmall Global o JD Worldwide. Pocas
+          la tienen creciendo. Operamos tiendas flagship cada día, con un responsable sénior siempre
+          al teléfono.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
           <a href="/es/contacto" class="btn btn--primary cbs-magnetic">Hablemos</a>
@@ -360,129 +477,202 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Nuestro enfoque</span>
           <h2>Dos cosas que conviene saber antes de tocar su tienda</h2>
           <p class="section-header__lead">
-            Una tienda cross-border en China es un producto diario, no un proyecto trimestral. Así trabajamos.
+            Una tienda cross-border en China es un producto diario, no un proyecto trimestral. Así
+            trabajamos.
           </p>
         </header>
 
         <div class="cbs-truths" data-truths>
-          {contextCards.map((c, i) => (
-            <article
-              class={`cbs-truth${i === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
-              style={`--reveal-delay: ${i * 140}ms;`}
-              data-truth-tilt
-            >
-              <div class="cbs-truth__inner">
-                <div class="cbs-truth__stage">
-                  <div class="cbs-truth__frame">
-                    <img
-                      src={c.image}
-                      alt={c.alt}
-                      loading="lazy"
-                      decoding="async"
-                      data-truth-parallax
-                    />
-                    <div class="cbs-truth__shade" aria-hidden="true"></div>
-                    <div class="cbs-truth__sheen" aria-hidden="true"></div>
-                  </div>
-
-                  <div class="cbs-truth__kicker" aria-hidden="true">
-                    <span class="cbs-truth__kicker-dot"></span>
-                    {c.kicker}
-                  </div>
-
-                  {i === 0 && (
-                    <div class="cbs-truth__chip cbs-truth__chip--bl" data-float="1">
-                      <div class="cbs-truth__chip-row">
-                        <span class="cbs-truth__pulse" aria-hidden="true"></span>
-                        <span class="cbs-truth__chip-label">{c.chipLabel}</span>
-                      </div>
-                      <p class="cbs-truth__chip-sub">{c.chipSub}</p>
-                      <div class="cbs-truth__avatars">
-                        {c.avatars && c.avatars.map((a) => (
-                          <span class={`cbs-truth__avatar cbs-truth__avatar--${a.tone}`}>{a.letter}</span>
-                        ))}
-                        <span class="cbs-truth__avatar cbs-truth__avatar--more">{c.extraAvatars}</span>
-                      </div>
+          {
+            contextCards.map((c, i) => (
+              <article
+                class={`cbs-truth${i === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
+                style={`--reveal-delay: ${i * 140}ms;`}
+                data-truth-tilt
+              >
+                <div class="cbs-truth__inner">
+                  <div class="cbs-truth__stage">
+                    <div class="cbs-truth__frame">
+                      <img
+                        src={c.image}
+                        alt={c.alt}
+                        loading="lazy"
+                        decoding="async"
+                        data-truth-parallax
+                      />
+                      <div class="cbs-truth__shade" aria-hidden="true" />
+                      <div class="cbs-truth__sheen" aria-hidden="true" />
                     </div>
-                  )}
 
-                  {i === 0 && (
-                    <div class="cbs-truth__pin" data-float="2">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <polyline points="3 17 9 11 13 15 21 7"></polyline>
-                        <polyline points="15 7 21 7 21 13"></polyline>
-                      </svg>
-                      <div class="cbs-truth__pin-text">
-                        <span class="cbs-truth__pin-label">{c.pinLabel}</span>
-                        <span class="cbs-truth__pin-value">{c.pinValue}</span>
-                      </div>
+                    <div class="cbs-truth__kicker" aria-hidden="true">
+                      <span class="cbs-truth__kicker-dot" />
+                      {c.kicker}
                     </div>
-                  )}
 
-                  {i === 1 && (
-                    <div class="cbs-truth__chip cbs-truth__chip--tr" data-float="1">
-                      <div class="cbs-truth__chip-row">
-                        <svg class="cbs-truth__chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                          <path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3L12 16.8 6.5 19.5l1-6.3L3 8.9 9 8z"/>
+                    {i === 0 && (
+                      <div class="cbs-truth__chip cbs-truth__chip--bl" data-float="1">
+                        <div class="cbs-truth__chip-row">
+                          <span class="cbs-truth__pulse" aria-hidden="true" />
+                          <span class="cbs-truth__chip-label">{c.chipLabel}</span>
+                        </div>
+                        <p class="cbs-truth__chip-sub">{c.chipSub}</p>
+                        <div class="cbs-truth__avatars">
+                          {c.avatars &&
+                            c.avatars.map((a) => (
+                              <span class={`cbs-truth__avatar cbs-truth__avatar--${a.tone}`}>
+                                {a.letter}
+                              </span>
+                            ))}
+                          <span class="cbs-truth__avatar cbs-truth__avatar--more">
+                            {c.extraAvatars}
+                          </span>
+                        </div>
+                      </div>
+                    )}
+
+                    {i === 0 && (
+                      <div class="cbs-truth__pin" data-float="2">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <polyline points="3 17 9 11 13 15 21 7" />
+                          <polyline points="15 7 21 7 21 13" />
                         </svg>
-                        <span class="cbs-truth__chip-label">{c.chipLabel}</span>
+                        <div class="cbs-truth__pin-text">
+                          <span class="cbs-truth__pin-label">{c.pinLabel}</span>
+                          <span class="cbs-truth__pin-value">{c.pinValue}</span>
+                        </div>
                       </div>
-                      <p class="cbs-truth__chip-sub">{c.chipSub}</p>
-                    </div>
-                  )}
+                    )}
 
-                  {i === 1 && (
-                    <div class="cbs-truth__badge" data-float="2">
-                      <span class="cbs-truth__badge-eyebrow">Trayectoria</span>
-                      <span class="cbs-truth__badge-title">{c.badge}</span>
-                      <span class="cbs-truth__badge-sub">{c.badgeSub}</span>
-                    </div>
-                  )}
-                </div>
+                    {i === 1 && (
+                      <div class="cbs-truth__chip cbs-truth__chip--tr" data-float="1">
+                        <div class="cbs-truth__chip-row">
+                          <svg
+                            class="cbs-truth__chip-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                          >
+                            <path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3L12 16.8 6.5 19.5l1-6.3L3 8.9 9 8z" />
+                          </svg>
+                          <span class="cbs-truth__chip-label">{c.chipLabel}</span>
+                        </div>
+                        <p class="cbs-truth__chip-sub">{c.chipSub}</p>
+                      </div>
+                    )}
 
-                <div class="cbs-truth__content">
-                  <h3 class="cbs-truth__title">{c.title}</h3>
-                  <p class="cbs-truth__body">{c.body}</p>
+                    {i === 1 && (
+                      <div class="cbs-truth__badge" data-float="2">
+                        <span class="cbs-truth__badge-eyebrow">Trayectoria</span>
+                        <span class="cbs-truth__badge-title">{c.badge}</span>
+                        <span class="cbs-truth__badge-sub">{c.badgeSub}</span>
+                      </div>
+                    )}
+                  </div>
 
-                  {i === 0 && c.flow && (
-                    <ol class="cbs-truth__flow" aria-label="Estrategia, planificación y operaciones bajo un mismo techo">
-                      {c.flow.map((step, idx) => (
-                        <>
-                          <li class="cbs-truth__flow-step" style={`--flow-delay: ${idx * 90}ms`}>
-                            <span class="cbs-truth__flow-bubble">
-                              {idx === 0 && (
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polygon points="16 8 13 13 8 16 11 11 16 8"/></svg>
-                              )}
-                              {idx === 1 && (
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
-                              )}
-                              {idx === 2 && (
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3h0a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8v0a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
-                              )}
-                            </span>
-                            <span class="cbs-truth__flow-label">{step}</span>
-                          </li>
-                          {idx < c.flow.length - 1 && (
-                            <li class="cbs-truth__flow-arrow" aria-hidden="true">
-                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                  <div class="cbs-truth__content">
+                    <h3 class="cbs-truth__title">{c.title}</h3>
+                    <p class="cbs-truth__body">{c.body}</p>
+
+                    {i === 0 && c.flow && (
+                      <ol
+                        class="cbs-truth__flow"
+                        aria-label="Estrategia, planificación y operaciones bajo un mismo techo"
+                      >
+                        {c.flow.map((step, idx) => (
+                          <>
+                            <li class="cbs-truth__flow-step" style={`--flow-delay: ${idx * 90}ms`}>
+                              <span class="cbs-truth__flow-bubble">
+                                {idx === 0 && (
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                  >
+                                    <circle cx="12" cy="12" r="9" />
+                                    <polygon points="16 8 13 13 8 16 11 11 16 8" />
+                                  </svg>
+                                )}
+                                {idx === 1 && (
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                  >
+                                    <rect x="3" y="4" width="18" height="17" rx="2" />
+                                    <path d="M3 9h18M8 3v4M16 3v4" />
+                                  </svg>
+                                )}
+                                {idx === 2 && (
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                  >
+                                    <circle cx="12" cy="12" r="3" />
+                                    <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3h0a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8v0a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" />
+                                  </svg>
+                                )}
+                              </span>
+                              <span class="cbs-truth__flow-label">{step}</span>
                             </li>
-                          )}
-                        </>
-                      ))}
-                    </ol>
-                  )}
+                            {idx < c.flow.length - 1 && (
+                              <li class="cbs-truth__flow-arrow" aria-hidden="true">
+                                <svg
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg>
+                              </li>
+                            )}
+                          </>
+                        ))}
+                      </ol>
+                    )}
 
-                  {i === 1 && c.credentials && (
-                    <ul class="cbs-truth__tags" aria-label="Categorías que el equipo ha operado en plataforma">
-                      {c.credentials.map((tag) => (
-                        <li class="cbs-truth__tag">{tag}</li>
-                      ))}
-                    </ul>
-                  )}
+                    {i === 1 && c.credentials && (
+                      <ul
+                        class="cbs-truth__tags"
+                        aria-label="Categorías que el equipo ha operado en plataforma"
+                      >
+                        {c.credentials.map((tag) => (
+                          <li class="cbs-truth__tag">{tag}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -497,104 +687,129 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Punto de decisión</span>
           <h2>¿Quién asume el stock? Dos formas de operar su tienda.</h2>
           <p class="section-header__lead">
-            La primera pregunta comercial en cualquier tienda cross-border es quién asume el inventario en el
-            depósito aduanero. Esa respuesta determina el contrato, el margen y cómo registra los ingresos chinos.
-            Trabajamos con dos modelos. Elija el que encaje con la forma en que quiere ver China en sus libros.
+            La primera pregunta comercial en cualquier tienda cross-border es quién asume el
+            inventario en el depósito aduanero. Esa respuesta determina el contrato, el margen y
+            cómo registra los ingresos chinos. Trabajamos con dos modelos. Elija el que encaje con
+            la forma en que quiere ver China en sus libros.
           </p>
         </header>
 
         <div class="cbs-tabs cbs-tabs--two cbs-reveal" data-tabs>
           <div class="cbs-tabs__nav" role="tablist">
-            {models.map((m, i) => (
-              <button
-                type="button"
-                class={`cbs-tabs__tab${i === 0 ? ' is-active' : ''}`}
-                role="tab"
-                aria-selected={i === 0 ? 'true' : 'false'}
-                aria-controls={`model-panel-${i}`}
-                id={`model-tab-${i}`}
-                data-tab-target={`model-panel-${i}`}
-              >
-                <span class="cbs-tabs__tab-label">{m.name}</span>
-                <span class="cbs-tabs__tab-tag">{m.tag}</span>
-                {m.highlight && <span class="cbs-tabs__tab-pop">El más habitual</span>}
-              </button>
-            ))}
+            {
+              models.map((m, i) => (
+                <button
+                  type="button"
+                  class={`cbs-tabs__tab${i === 0 ? ' is-active' : ''}`}
+                  role="tab"
+                  aria-selected={i === 0 ? 'true' : 'false'}
+                  aria-controls={`model-panel-${i}`}
+                  id={`model-tab-${i}`}
+                  data-tab-target={`model-panel-${i}`}
+                >
+                  <span class="cbs-tabs__tab-label">{m.name}</span>
+                  <span class="cbs-tabs__tab-tag">{m.tag}</span>
+                  {m.highlight && <span class="cbs-tabs__tab-pop">El más habitual</span>}
+                </button>
+              ))
+            }
             <span class="cbs-tabs__indicator" aria-hidden="true"></span>
           </div>
 
           <div class="cbs-tabs__panels">
-            {models.map((m, i) => (
-              <div
-                class={`cbs-tabs__panel${i === 0 ? ' is-active' : ''}`}
-                role="tabpanel"
-                id={`model-panel-${i}`}
-                aria-labelledby={`model-tab-${i}`}
-                hidden={i !== 0}
-              >
-                <div class="cbs-tabs__panel-grid cbs-tabs__panel-grid--with-image">
-                  <div class="cbs-tabs__lead">
-                    <span class="cbs-tabs__pillset">
-                      <span class="cbs-tabs__pill">{m.tag}</span>
-                    </span>
-                    <h3 class="cbs-tabs__title">{m.name}</h3>
-                    <p class="cbs-tabs__desc">{m.desc}</p>
-                    <div class="cbs-tabs__when">
-                      <span class="cbs-tabs__when-label">Encaja cuando</span>
-                      <p>{m.when}</p>
+            {
+              models.map((m, i) => (
+                <div
+                  class={`cbs-tabs__panel${i === 0 ? ' is-active' : ''}`}
+                  role="tabpanel"
+                  id={`model-panel-${i}`}
+                  aria-labelledby={`model-tab-${i}`}
+                  hidden={i !== 0}
+                >
+                  <div class="cbs-tabs__panel-grid cbs-tabs__panel-grid--with-image">
+                    <div class="cbs-tabs__lead">
+                      <span class="cbs-tabs__pillset">
+                        <span class="cbs-tabs__pill">{m.tag}</span>
+                      </span>
+                      <h3 class="cbs-tabs__title">{m.name}</h3>
+                      <p class="cbs-tabs__desc">{m.desc}</p>
+                      <div class="cbs-tabs__when">
+                        <span class="cbs-tabs__when-label">Encaja cuando</span>
+                        <p>{m.when}</p>
+                      </div>
+
+                      <div class="cbs-owns">
+                        <span class="cbs-owns__label">Quién asume qué</span>
+                        <ul class="cbs-owns__list">
+                          {m.owns.map((o) => (
+                            <li>
+                              <span class="cbs-owns__key">{o.label}</span>
+                              <span class="cbs-owns__val">{o.value}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <a href="/es/contacto" class="btn btn--primary cbs-magnetic">
+                        Hablar del {m.name}
+                      </a>
                     </div>
 
-                    <div class="cbs-owns">
-                      <span class="cbs-owns__label">Quién asume qué</span>
-                      <ul class="cbs-owns__list">
-                        {m.owns.map((o) => (
-                          <li>
-                            <span class="cbs-owns__key">{o.label}</span>
-                            <span class="cbs-owns__val">{o.value}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    <div class="cbs-tabs__body">
+                      <figure class="cbs-tabs__image">
+                        <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" />
+                      </figure>
 
-                    <a href="/es/contacto" class="btn btn--primary cbs-magnetic">Hablar del {m.name}</a>
-                  </div>
+                      <div class="cbs-tabs__list-wrap">
+                        <span class="cbs-tabs__list-label">Lo que recibe</span>
+                        <ul class="cbs-tabs__list">
+                          {m.yourSide.map((b) => (
+                            <li>
+                              <span class="cbs-tabs__check" aria-hidden="true">
+                                <svg
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2.4"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <polyline points="5 12 10 17 19 8" />
+                                </svg>
+                              </span>
+                              <span>{b}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
 
-                  <div class="cbs-tabs__body">
-                    <figure class="cbs-tabs__image">
-                      <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" />
-                    </figure>
-
-                    <div class="cbs-tabs__list-wrap">
-                      <span class="cbs-tabs__list-label">Lo que recibe</span>
-                      <ul class="cbs-tabs__list">
-                        {m.yourSide.map((b) => (
-                          <li>
-                            <span class="cbs-tabs__check" aria-hidden="true">
-                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                            </span>
-                            <span>{b}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div class="cbs-tabs__list-wrap cbs-tabs__list-wrap--alt">
-                      <span class="cbs-tabs__list-label">Lo que llevamos</span>
-                      <ul class="cbs-tabs__list">
-                        {m.ourSide.map((b) => (
-                          <li>
-                            <span class="cbs-tabs__check cbs-tabs__check--alt" aria-hidden="true">
-                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                            </span>
-                            <span>{b}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      <div class="cbs-tabs__list-wrap cbs-tabs__list-wrap--alt">
+                        <span class="cbs-tabs__list-label">Lo que llevamos</span>
+                        <ul class="cbs-tabs__list">
+                          {m.ourSide.map((b) => (
+                            <li>
+                              <span class="cbs-tabs__check cbs-tabs__check--alt" aria-hidden="true">
+                                <svg
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2.4"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <polyline points="5 12 10 17 19 8" />
+                                </svg>
+                              </span>
+                              <span>{b}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))
+            }
           </div>
         </div>
 
@@ -603,7 +818,10 @@ const icons: Record<string, string> = {
           <div class="cbs-compare__intro">
             <span class="eyebrow">Cómo elegir</span>
             <h3>Una pregunta, dos respuestas</h3>
-            <p>¿Quiere ser dueño de la relación con el cliente en China o prefiere una salida mayorista limpia? Eso decide el modelo.</p>
+            <p>
+              ¿Quiere ser dueño de la relación con el cliente en China o prefiere una salida
+              mayorista limpia? Eso decide el modelo.
+            </p>
           </div>
           <div class="cbs-compare__table-wrap">
             <table class="cbs-compare__table">
@@ -621,22 +839,27 @@ const icons: Record<string, string> = {
                 </tr>
               </thead>
               <tbody>
-                {compareRows.map((r) => (
-                  <tr>
-                    <th scope="row" class="cbs-compare__row-label">{r.label}</th>
-                    <td class="cbs-compare__cell cbs-compare__cell--tp">{r.tp}</td>
-                    <td class="cbs-compare__cell cbs-compare__cell--dist">{r.dist}</td>
-                  </tr>
-                ))}
+                {
+                  compareRows.map((r) => (
+                    <tr>
+                      <th scope="row" class="cbs-compare__row-label">
+                        {r.label}
+                      </th>
+                      <td class="cbs-compare__cell cbs-compare__cell--tp">{r.tp}</td>
+                      <td class="cbs-compare__cell cbs-compare__cell--dist">{r.dist}</td>
+                    </tr>
+                  ))
+                }
               </tbody>
             </table>
           </div>
           <p class="cbs-compare__note">
-            El modelo que encaja depende de dos cosas: cuánto peso quiere que tenga China en sus ingresos globales y
-            cuánto circulante puede poner detrás de esa ambición. Las marcas con alto recorrido y circulante para
-            financiar stock y medios suelen elegir TP. Las que buscan ingresos chinos estables sin atar caja suelen
-            elegir distribuidor. Algunas marcas operan los dos en paralelo en categorías distintas. Nada de esto es
-            una escalera de madurez.
+            El modelo que encaja depende de dos cosas: cuánto peso quiere que tenga China en sus
+            ingresos globales y cuánto circulante puede poner detrás de esa ambición. Las marcas con
+            alto recorrido y circulante para financiar stock y medios suelen elegir TP. Las que
+            buscan ingresos chinos estables sin atar caja suelen elegir distribuidor. Algunas marcas
+            operan los dos en paralelo en categorías distintas. Nada de esto es una escalera de
+            madurez.
           </p>
         </div>
       </div>
@@ -650,12 +873,13 @@ const icons: Record<string, string> = {
             <span class="eyebrow">La categoría manda</span>
             <h2>Un país, diez playbooks</h2>
             <p>
-              Belleza necesita seeding en RED y flagship en Tmall Global. Los suplementos viven en JD Worldwide.
-              La F&B premium gana en livestream de Douyin. La electrónica, en JD. Cada categoría tiene su lógica
-              de plataforma.
+              Belleza necesita seeding en RED y flagship en Tmall Global. Los suplementos viven en
+              JD Worldwide. La F&B premium gana en livestream de Douyin. La electrónica, en JD. Cada
+              categoría tiene su lógica de plataforma.
             </p>
             <p>
-              El modelo que encaja depende de lo que venda. Las plataformas cross-border no premian un playbook único.
+              El modelo que encaja depende de lo que venda. Las plataformas cross-border no premian
+              un playbook único.
             </p>
           </div>
 
@@ -663,12 +887,30 @@ const icons: Record<string, string> = {
             <li>
               <span class="eyebrow">Dónde aterriza cada categoría</span>
             </li>
-            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Belleza</span><span class="cbs-cat-row__home">Seeding en RED + flagship en Tmall Global</span></li>
-            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Suplementos</span><span class="cbs-cat-row__home">JD Worldwide por la señal de confianza</span></li>
-            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">F&B premium</span><span class="cbs-cat-row__home">Livestream en Douyin EC Global</span></li>
-            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Moda</span><span class="cbs-cat-row__home">Tmall Global + influencia en RED</span></li>
-            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Electrónica</span><span class="cbs-cat-row__home">JD Worldwide</span></li>
-            <li class="cbs-cat-row"><span class="cbs-cat-row__cat">Mascotas, hogar, lifestyle</span><span class="cbs-cat-row__home">Mezcla de plataformas según la categoría</span></li>
+            <li class="cbs-cat-row">
+              <span class="cbs-cat-row__cat">Belleza</span><span class="cbs-cat-row__home"
+                >Seeding en RED + flagship en Tmall Global</span>
+            </li>
+            <li class="cbs-cat-row">
+              <span class="cbs-cat-row__cat">Suplementos</span><span class="cbs-cat-row__home"
+                >JD Worldwide por la señal de confianza</span>
+            </li>
+            <li class="cbs-cat-row">
+              <span class="cbs-cat-row__cat">F&B premium</span><span class="cbs-cat-row__home"
+                >Livestream en Douyin EC Global</span>
+            </li>
+            <li class="cbs-cat-row">
+              <span class="cbs-cat-row__cat">Moda</span><span class="cbs-cat-row__home"
+                >Tmall Global + influencia en RED</span>
+            </li>
+            <li class="cbs-cat-row">
+              <span class="cbs-cat-row__cat">Electrónica</span><span class="cbs-cat-row__home"
+                >JD Worldwide</span>
+            </li>
+            <li class="cbs-cat-row">
+              <span class="cbs-cat-row__cat">Mascotas, hogar, lifestyle</span><span
+                class="cbs-cat-row__home">Mezcla de plataformas según la categoría</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -686,8 +928,8 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Lo que cuesta</span>
           <h2>Las tres líneas que entran en su P&L</h2>
           <p class="section-header__lead">
-            Agencia, plataforma, marca. Todo P&L cross-border vive sobre esas tres líneas. Ponemos cifras reales en
-            las tres antes de que firme nada.
+            Agencia, plataforma, marca. Todo P&L cross-border vive sobre esas tres líneas. Ponemos
+            cifras reales en las tres antes de que firme nada.
           </p>
         </header>
 
@@ -736,16 +978,34 @@ const icons: Record<string, string> = {
                 <span
                   class="cbs-ledger__num"
                   data-counter={costLedger.tp.agency.headlineNum}
-                  data-counter-format="comma"
-                >0</span>
+                  data-counter-format="comma">0</span
+                >
                 <span class="cbs-ledger__suffix">{costLedger.tp.agency.headlineSuffix}</span>
               </div>
-              <p class="cbs-ledger__unit" data-cost-field="agency.unit">{costLedger.tp.agency.headlineUnit}</p>
-              <span class="cbs-ledger__pill" data-cost-field="agency.pill">{costLedger.tp.agency.pill}</span>
-              <p class="cbs-ledger__body" data-cost-field="agency.body">{costLedger.tp.agency.body}</p>
+              <p class="cbs-ledger__unit" data-cost-field="agency.unit">
+                {costLedger.tp.agency.headlineUnit}
+              </p>
+              <span class="cbs-ledger__pill" data-cost-field="agency.pill"
+                >{costLedger.tp.agency.pill}</span
+              >
+              <p class="cbs-ledger__body" data-cost-field="agency.body">
+                {costLedger.tp.agency.body}
+              </p>
               <footer class="cbs-ledger__foot">
                 <span class="cbs-ledger__foot-mark" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><circle cx="12" cy="16.5" r="0.6" fill="currentColor"/></svg>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><circle cx="12" cy="12" r="9"></circle><path d="M12 7v6"></path><circle
+                      cx="12"
+                      cy="16.5"
+                      r="0.6"
+                      fill="currentColor"></circle></svg
+                  >
                 </span>
                 <p data-cost-field="agency.footer">{costLedger.tp.agency.footer}</p>
               </footer>
@@ -756,7 +1016,11 @@ const icons: Record<string, string> = {
               <div class="cbs-ledger__sheen" aria-hidden="true"></div>
               <span class="cbs-ledger__corner" aria-hidden="true"></span>
               <header class="cbs-ledger__top">
-                <span class="cbs-ledger__icon" aria-hidden="true" set:html={icons['platform-fee']} />
+                <span
+                  class="cbs-ledger__icon"
+                  aria-hidden="true"
+                  set:html={icons['platform-fee']}
+                />
                 <span class="cbs-ledger__tag cbs-ledger__tag--universal">
                   {platformLedger.tag}
                   <span class="cbs-ledger__tag-dot" aria-hidden="true"></span>
@@ -766,32 +1030,39 @@ const icons: Record<string, string> = {
               <h3 class="cbs-ledger__title">Lo que paga a las plataformas</h3>
               <div class="cbs-ledger__headline">
                 <span class="cbs-ledger__prefix">{platformLedger.headlinePrefix}</span>
-                <span
-                  class="cbs-ledger__num"
-                  data-counter={platformLedger.headlineNum}
-                >0</span>
+                <span class="cbs-ledger__num" data-counter={platformLedger.headlineNum}>0</span>
                 <span class="cbs-ledger__suffix">{platformLedger.headlineSuffix}</span>
               </div>
               <p class="cbs-ledger__unit">{platformLedger.headlineUnit}</p>
               <span class="cbs-ledger__pill">{platformLedger.pill}</span>
               <p class="cbs-ledger__body">{platformLedger.body}</p>
               <ul class="cbs-ledger__buckets">
-                {platformLedger.buckets.map((b) => (
-                  <li class="cbs-bucket" style={`--meter: ${b.meterPct}%;`}>
-                    <div class="cbs-bucket__row">
-                      <span class="cbs-bucket__title">{b.title}</span>
-                      <span class="cbs-bucket__chip">{b.meter}</span>
-                    </div>
-                    <p class="cbs-bucket__sub">{b.sub}</p>
-                    <span class="cbs-bucket__meter" aria-hidden="true">
-                      <span class="cbs-bucket__meter-fill"></span>
-                    </span>
-                  </li>
-                ))}
+                {
+                  platformLedger.buckets.map((b) => (
+                    <li class="cbs-bucket" style={`--meter: ${b.meterPct}%;`}>
+                      <div class="cbs-bucket__row">
+                        <span class="cbs-bucket__title">{b.title}</span>
+                        <span class="cbs-bucket__chip">{b.meter}</span>
+                      </div>
+                      <p class="cbs-bucket__sub">{b.sub}</p>
+                      <span class="cbs-bucket__meter" aria-hidden="true">
+                        <span class="cbs-bucket__meter-fill" />
+                      </span>
+                    </li>
+                  ))
+                }
               </ul>
               <footer class="cbs-ledger__foot">
                 <span class="cbs-ledger__foot-mark" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><circle cx="12" cy="12" r="9"></circle><path d="M8 12l3 3 5-6"></path></svg
+                  >
                 </span>
                 <p>{platformLedger.footer}</p>
               </footer>
@@ -810,18 +1081,30 @@ const icons: Record<string, string> = {
               <h3 class="cbs-ledger__title">Lo que pone detrás de la marca</h3>
               <div class="cbs-ledger__headline" data-cost-field="brand.headline">
                 <span class="cbs-ledger__prefix">{costLedger.tp.brand.headlinePrefix}</span>
-                <span
-                  class="cbs-ledger__num"
-                  data-counter={costLedger.tp.brand.headlineNum}
-                >0</span>
+                <span class="cbs-ledger__num" data-counter={costLedger.tp.brand.headlineNum}>0</span
+                >
                 <span class="cbs-ledger__suffix">{costLedger.tp.brand.headlineSuffix}</span>
               </div>
-              <p class="cbs-ledger__unit" data-cost-field="brand.unit">{costLedger.tp.brand.headlineUnit}</p>
-              <span class="cbs-ledger__pill" data-cost-field="brand.pill">{costLedger.tp.brand.pill}</span>
-              <p class="cbs-ledger__body" data-cost-field="brand.body">{costLedger.tp.brand.body}</p>
+              <p class="cbs-ledger__unit" data-cost-field="brand.unit">
+                {costLedger.tp.brand.headlineUnit}
+              </p>
+              <span class="cbs-ledger__pill" data-cost-field="brand.pill"
+                >{costLedger.tp.brand.pill}</span
+              >
+              <p class="cbs-ledger__body" data-cost-field="brand.body">
+                {costLedger.tp.brand.body}
+              </p>
               <footer class="cbs-ledger__foot">
                 <span class="cbs-ledger__foot-mark" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14l4-8 4 6 4-4 4 7"/><path d="M3 19h18"/></svg>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path d="M4 14l4-8 4 6 4-4 4 7"></path><path d="M3 19h18"></path></svg
+                  >
                 </span>
                 <p data-cost-field="brand.footer">{costLedger.tp.brand.footer}</p>
               </footer>
@@ -833,39 +1116,66 @@ const icons: Record<string, string> = {
             data-cost-data
             data-tp={JSON.stringify(costLedger.tp)}
             data-distributor={JSON.stringify(costLedger.distributor)}
-          ></div>
+          >
+          </div>
         </div>
 
         <div class="cbs-pledge cbs-reveal">
           <div class="cbs-pledge__mark" aria-hidden="true">
-            <svg viewBox="0 0 32 24" fill="currentColor"><path d="M8 0H0v12c0 6.6 5.4 12 12 12V20c-2.2 0-4-1.8-4-4v-4h4V0H8zm20 0h-8v12c0 6.6 5.4 12 12 12V20c-2.2 0-4-1.8-4-4v-4h4V0h-4z"/></svg>
+            <svg viewBox="0 0 32 24" fill="currentColor"
+              ><path
+                d="M8 0H0v12c0 6.6 5.4 12 12 12V20c-2.2 0-4-1.8-4-4v-4h4V0H8zm20 0h-8v12c0 6.6 5.4 12 12 12V20c-2.2 0-4-1.8-4-4v-4h4V0h-4z"
+              ></path></svg
+            >
           </div>
           <p class="cbs-pledge__line">
-            Su margen sigue siendo suyo. En TP cobramos honorarios; en distribuidor el margen va dentro del precio de venta.
+            Su margen sigue siendo suyo. En TP cobramos honorarios; en distribuidor el margen va
+            dentro del precio de venta.
           </p>
           <ul class="cbs-pledge__never" aria-label="Lo que nunca aceptaremos">
             <li>
               <span class="cbs-pledge__x" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6l-12 12"/></svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"><path d="M6 6l12 12M18 6l-12 12"></path></svg
+                >
               </span>
               <span>Comisiones encubiertas de Alimama</span>
             </li>
             <li>
               <span class="cbs-pledge__x" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6l-12 12"/></svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"><path d="M6 6l12 12M18 6l-12 12"></path></svg
+                >
               </span>
               <span>Comisiones de JD</span>
             </li>
             <li>
               <span class="cbs-pledge__x" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6l-12 12"/></svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"><path d="M6 6l12 12M18 6l-12 12"></path></svg
+                >
               </span>
               <span>Rebates de agencias de KOL</span>
             </li>
           </ul>
         </div>
 
-        <p class="cbs-cost-note">Las cifras exactas y el reparto las modelamos para su categoría en la Fase uno del proyecto, antes de cualquier compromiso.</p>
+        <p class="cbs-cost-note">
+          Las cifras exactas y el reparto las modelamos para su categoría en la Fase uno del
+          proyecto, antes de cualquier compromiso.
+        </p>
       </div>
     </section>
 
@@ -879,9 +1189,9 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Cómo trabajamos</span>
           <h2>Cuatro fases, de la tienda a la escala</h2>
           <p class="section-header__lead">
-            Un proyecto estructurado que le mueve de "tenemos tienda" a una tienda que crece mes a mes. Las fases
-            uno a tres son secuenciales. La fase cuatro corre en bucle, y revisamos la fase uno cada doce meses
-            dentro de ese bucle.
+            Un proyecto estructurado que le mueve de "tenemos tienda" a una tienda que crece mes a
+            mes. Las fases uno a tres son secuenciales. La fase cuatro corre en bucle, y revisamos
+            la fase uno cada doce meses dentro de ese bucle.
           </p>
         </header>
 
@@ -891,21 +1201,29 @@ const icons: Record<string, string> = {
             <div class="cbs-journey__rail-fill" data-journey-fill></div>
           </div>
           <ol class="cbs-journey__list">
-            {steps.map((s, i) => (
-              <li class="cbs-journey__item cbs-reveal" data-journey-item style={`--reveal-delay: ${i * 80}ms;`}>
-                <span class="cbs-journey__dot" aria-hidden="true">
-                  <span class="cbs-journey__dot-inner"></span>
-                </span>
-                <span class="cbs-journey__phase">{s.phase} <span class="cbs-journey__duration">({s.duration})</span></span>
-                <div class="cbs-journey__card">
-                  <span class="cbs-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
-                  <div>
-                    <h3 class="cbs-journey__title">{s.title}</h3>
-                    <p class="cbs-journey__desc">{s.desc}</p>
+            {
+              steps.map((s, i) => (
+                <li
+                  class="cbs-journey__item cbs-reveal"
+                  data-journey-item
+                  style={`--reveal-delay: ${i * 80}ms;`}
+                >
+                  <span class="cbs-journey__dot" aria-hidden="true">
+                    <span class="cbs-journey__dot-inner" />
+                  </span>
+                  <span class="cbs-journey__phase">
+                    {s.phase} <span class="cbs-journey__duration">({s.duration})</span>
+                  </span>
+                  <div class="cbs-journey__card">
+                    <span class="cbs-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
+                    <div>
+                      <h3 class="cbs-journey__title">{s.title}</h3>
+                      <p class="cbs-journey__desc">{s.desc}</p>
+                    </div>
                   </div>
-                </div>
-              </li>
-            ))}
+                </li>
+              ))
+            }
           </ol>
         </div>
       </div>
@@ -918,9 +1236,10 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Si quiere añadir social commerce</span>
           <h2>Con TheRedScroll detrás</h2>
           <p class="section-header__lead">
-            Nuestras tiendas cross-border convierten mejor cuando el contenido está vivo en todo el stack social
-            chino. TheRedScroll es nuestra agencia hermana para la operación diaria de WeChat, RED, Douyin y
-            Weibo. Hecha para alimentar su tienda con atención, no solo con impresiones.
+            Nuestras tiendas cross-border convierten mejor cuando el contenido está vivo en todo el
+            stack social chino. TheRedScroll es nuestra agencia hermana para la operación diaria de
+            WeChat, RED, Douyin y Weibo. Hecha para alimentar su tienda con atención, no solo con
+            impresiones.
           </p>
         </header>
 
@@ -929,38 +1248,53 @@ const icons: Record<string, string> = {
             <span class="cbs-sister__chip">Agencia hermana</span>
             <h3 class="cbs-sister__title">Lleve la tienda y el social al mismo ritmo.</h3>
             <p class="cbs-sister__desc">
-              El cross-border deja de funcionar cuando el contenido se calla. TheRedScroll mantiene los canales
-              fuera de plataforma activos cada día, mientras nosotros operamos las tiendas. Mismo grupo, mismos
-              estándares, marca aparte.
+              El cross-border deja de funcionar cuando el contenido se calla. TheRedScroll mantiene
+              los canales fuera de plataforma activos cada día, mientras nosotros operamos las
+              tiendas. Mismo grupo, mismos estándares, marca aparte.
             </p>
             <ul class="cbs-sister__stats">
               <li>
                 <span class="cbs-sister__stat-num">25+</span>
-                <span class="cbs-sister__stat-label">años de experiencia en social chino dentro del grupo</span>
+                <span class="cbs-sister__stat-label"
+                  >años de experiencia en social chino dentro del grupo</span
+                >
               </li>
               <li>
                 <span class="cbs-sister__stat-num">4</span>
-                <span class="cbs-sister__stat-label">canales cubiertos: WeChat, RED, Douyin, Weibo</span>
+                <span class="cbs-sister__stat-label"
+                  >canales cubiertos: WeChat, RED, Douyin, Weibo</span
+                >
               </li>
               <li>
                 <span class="cbs-sister__stat-num">In-house</span>
-                <span class="cbs-sister__stat-label">equipo nativo, contenido rodado en estudio</span>
+                <span class="cbs-sister__stat-label"
+                  >equipo nativo, contenido rodado en estudio</span
+                >
               </li>
             </ul>
             <div class="cbs-sister__actions">
-              <a href="https://theredscroll.com" target="_blank" rel="noopener" class="btn cbs-sister__btn-primary">Visitar TheRedScroll</a>
-              <a href="/es/contacto" class="btn cbs-sister__btn-ghost">Cuéntenos su brief de social commerce</a>
+              <a
+                href="https://theredscroll.com"
+                target="_blank"
+                rel="noopener"
+                class="btn cbs-sister__btn-primary">Visitar TheRedScroll</a
+              >
+              <a href="/es/contacto" class="btn cbs-sister__btn-ghost"
+                >Cuéntenos su brief de social commerce</a
+              >
             </div>
           </div>
 
           <div class="cbs-sister__packs">
-            {sisterPackages.map((p) => (
-              <article class="cbs-sister__pack">
-                <span class="cbs-sister__pack-icon" aria-hidden="true" set:html={icons.scroll} />
-                <h4>{p.title}</h4>
-                <p>{p.desc}</p>
-              </article>
-            ))}
+            {
+              sisterPackages.map((p) => (
+                <article class="cbs-sister__pack">
+                  <span class="cbs-sister__pack-icon" aria-hidden="true" set:html={icons.scroll} />
+                  <h4>{p.title}</h4>
+                  <p>{p.desc}</p>
+                </article>
+              ))
+            }
           </div>
         </div>
       </div>
@@ -972,36 +1306,54 @@ const icons: Record<string, string> = {
         <div class="cbs-value">
           <div class="cbs-value__copy">
             <span class="eyebrow">Por qué nos eligen las marcas</span>
-            <h2>La mayoría de las agencias le entrega un account manager. Nosotros le entregamos un operador.</h2>
+            <h2>
+              La mayoría de las agencias le entrega un account manager. Nosotros le entregamos un
+              operador.
+            </h2>
             <p>
-              Nuestro equipo viene de Publicis Commerce China, donde llevamos el eCommerce para marcas globales
-              en Tmall, JD, Douyin y RED. Operamos lo que recomendamos.
+              Nuestro equipo viene de Publicis Commerce China, donde llevamos el eCommerce para
+              marcas globales en Tmall, JD, Douyin y RED. Operamos lo que recomendamos.
             </p>
             <blockquote class="cbs-quote cbs-quote--inline">
-              <p>El sénior que escribe el plan está al teléfono cuando la tienda tiene un problema.</p>
+              <p>
+                El sénior que escribe el plan está al teléfono cuando la tienda tiene un problema.
+              </p>
             </blockquote>
             <p>
-              Probamos cada semana lo que las plataformas premian. Reservamos en directo a los KOL que recomendamos.
-              Rodamos el contenido que vende en nuestro propio estudio.
+              Probamos cada semana lo que las plataformas premian. Reservamos en directo a los KOL
+              que recomendamos. Rodamos el contenido que vende en nuestro propio estudio.
             </p>
-            <a href="/es/quienes-somos#team" class="btn btn--secondary cbs-magnetic">Conocer al equipo</a>
+            <a href="/es/quienes-somos#team" class="btn btn--secondary cbs-magnetic"
+              >Conocer al equipo</a
+            >
           </div>
 
           <ul class="cbs-promise">
             <li>
               <span class="eyebrow">Lo que puede esperar</span>
             </li>
-            {promises.map((p) => (
-              <li class="cbs-promise__item">
-                <span class="cbs-promise__check" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                </span>
-                <div>
-                  <h4>{p.title}</h4>
-                  <p>{p.desc}</p>
-                </div>
-              </li>
-            ))}
+            {
+              promises.map((p) => (
+                <li class="cbs-promise__item">
+                  <span class="cbs-promise__check" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="5 12 10 17 19 8" />
+                    </svg>
+                  </span>
+                  <div>
+                    <h4>{p.title}</h4>
+                    <p>{p.desc}</p>
+                  </div>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
@@ -1014,46 +1366,66 @@ const icons: Record<string, string> = {
           <span class="eyebrow">FAQ</span>
           <h2>Veinte preguntas, respuestas claras</h2>
           <p class="section-header__lead">
-            Las preguntas prácticas que nos llegan de brand managers, directores de eCommerce y fundadores
-            llevando cross-border en China. Filtre por tema.
+            Las preguntas prácticas que nos llegan de brand managers, directores de eCommerce y
+            fundadores llevando cross-border en China. Filtre por tema.
           </p>
         </header>
 
-        <div class="cbs-faq-filter cbs-reveal" data-faq-filter role="tablist" aria-label="Filtrar FAQ por categoría">
-          {faqCategories.map((c, i) => (
-            <button
-              type="button"
-              class={`cbs-faq-chip${i === 0 ? ' is-active' : ''}`}
-              role="tab"
-              aria-selected={i === 0 ? 'true' : 'false'}
-              data-faq-cat={c}
-            >
-              <span class="cbs-faq-chip__label">{c}</span>
-              <span class="cbs-faq-chip__count">{c === "Todas" ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
-            </button>
-          ))}
+        <div
+          class="cbs-faq-filter cbs-reveal"
+          data-faq-filter
+          role="tablist"
+          aria-label="Filtrar FAQ por categoría"
+        >
+          {
+            faqCategories.map((c, i) => (
+              <button
+                type="button"
+                class={`cbs-faq-chip${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                data-faq-cat={c}
+              >
+                <span class="cbs-faq-chip__label">{c}</span>
+                <span class="cbs-faq-chip__count">
+                  {c === 'Todas' ? faqs.length : faqs.filter((f) => f.cat === c).length}
+                </span>
+              </button>
+            ))
+          }
         </div>
 
         <div class="cbs-faq" data-faq-list>
-          {faqs.map((f, i) => (
-            <details
-              class="cbs-faq__item cbs-reveal"
-              data-faq-cat={f.cat}
-              open={i === 0}
-              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
-            >
-              <summary class="cbs-faq__q">
-                <span class="cbs-faq__cat-tag">{f.cat}</span>
-                <span class="cbs-faq__q-text">{f.q}</span>
-                <span class="cbs-faq__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </span>
-              </summary>
-              <div class="cbs-faq__a">
-                <p>{f.a}</p>
-              </div>
-            </details>
-          ))}
+          {
+            faqs.map((f, i) => (
+              <details
+                class="cbs-faq__item cbs-reveal"
+                data-faq-cat={f.cat}
+                open={i === 0}
+                style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+              >
+                <summary class="cbs-faq__q">
+                  <span class="cbs-faq__cat-tag">{f.cat}</span>
+                  <span class="cbs-faq__q-text">{f.q}</span>
+                  <span class="cbs-faq__icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </summary>
+                <div class="cbs-faq__a">
+                  <p>{f.a}</p>
+                </div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -1065,8 +1437,9 @@ const icons: Record<string, string> = {
           <span class="eyebrow eyebrow--on-dark">Hablemos</span>
           <h2 class="cbs-cta__title">¿Operando una tienda hoy, o a punto de abrir una?</h2>
           <p class="cbs-cta__lead">
-            Cuéntenos en qué punto está la tienda y qué debería estar haciendo dentro de seis meses. Un
-            miembro sénior del equipo responde en menos de un día hábil. Sin embudo. Sin contestador automático.
+            Cuéntenos en qué punto está la tienda y qué debería estar haciendo dentro de seis meses.
+            Un miembro sénior del equipo responde en menos de un día hábil. Sin embudo. Sin
+            contestador automático.
           </p>
           <div class="cbs-cta__actions">
             <a href="/es/contacto" class="btn cbs-cta__btn-primary">Empezar la conversación</a>
@@ -1079,7 +1452,9 @@ const icons: Record<string, string> = {
 
   <style is:global>
     /* ---------- Container narrow helper ---------- */
-    .cbs .container--narrow { max-width: 880px; }
+    .cbs .container--narrow {
+      max-width: 880px;
+    }
 
     /* ---------- REVEAL + MOTION ---------- */
     @media (prefers-reduced-motion: no-preference) {
@@ -1090,23 +1465,35 @@ const icons: Record<string, string> = {
           opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
           transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
       }
-      .cbs-reveal.is-in { opacity: 1; transform: translateY(0); }
+      .cbs-reveal.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
       .cbs-magnetic {
         will-change: transform;
-        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+        transition:
+          transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 220ms ease,
+          background-color 200ms ease,
+          color 200ms ease;
       }
     }
 
     /* ---------- SCROLL PROGRESS BAR ---------- */
     .cbs-progress {
-      position: fixed; top: 0; left: 0; right: 0;
-      height: 3px; z-index: 1000;
-      background: transparent; pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 1000;
+      background: transparent;
+      pointer-events: none;
     }
     .cbs-progress__bar {
-      height: 100%; width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #C8102E 100%);
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 60%, #c8102e 100%);
       box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
@@ -1115,54 +1502,81 @@ const icons: Record<string, string> = {
     .cbs-hero {
       position: relative;
       min-height: clamp(360px, 48vh, 500px);
-      display: flex; align-items: flex-start;
+      display: flex;
+      align-items: flex-start;
       padding: clamp(8px, 1.25vh, 16px) 0 clamp(48px, 7vh, 80px);
       color: var(--bbg-white);
-      overflow: hidden; isolation: isolate;
+      overflow: hidden;
+      isolation: isolate;
     }
-    body:has(.cbs-hero) .cbs-hero { padding-top: clamp(112px, 10vh, 144px); }
+    body:has(.cbs-hero) .cbs-hero {
+      padding-top: clamp(112px, 10vh, 144px);
+    }
     @media (max-width: 1024px) {
-      body:has(.cbs-hero) .cbs-hero { padding-top: clamp(96px, 9vh, 116px); }
+      body:has(.cbs-hero) .cbs-hero {
+        padding-top: clamp(96px, 9vh, 116px);
+      }
     }
-    .cbs-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .cbs-hero__bg {
+      position: absolute;
+      inset: -10% 0 0;
+      z-index: -3;
+    }
     .cbs-hero__bg img {
-      width: 100%; height: 110%;
-      object-fit: cover; object-position: center;
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
       transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
       transition: transform 80ms linear;
       filter: saturate(0.95);
     }
     .cbs-hero__overlay {
-      position: absolute; inset: 0; z-index: -2;
+      position: absolute;
+      inset: 0;
+      z-index: -2;
       background:
-        linear-gradient(110deg,
+        linear-gradient(
+          110deg,
           rgba(8, 18, 28, 0.92) 0%,
           rgba(8, 18, 28, 0.72) 42%,
-          rgba(8, 18, 28, 0.32) 100%),
-        radial-gradient(120% 80% at 0% 100%,
-          rgba(200, 16, 46, 0.28) 0%,
-          rgba(200, 16, 46, 0) 60%);
+          rgba(8, 18, 28, 0.32) 100%
+        ),
+        radial-gradient(120% 80% at 0% 100%, rgba(200, 16, 46, 0.28) 0%, rgba(200, 16, 46, 0) 60%);
     }
     .cbs-hero__grain {
-      position: absolute; inset: 0; z-index: -1;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
       background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
       background-size: 3px 3px;
-      mix-blend-mode: overlay; opacity: 0.45;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
       pointer-events: none;
     }
-    .cbs-hero__inner { max-width: 980px; position: relative; }
+    .cbs-hero__inner {
+      max-width: 980px;
+      position: relative;
+    }
     .cbs-hero__crumbs {
       margin-bottom: var(--space-4);
       font-size: var(--fs-small);
-      display: flex; gap: 0.5rem; align-items: center;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
       color: rgba(255, 255, 255, 0.7);
     }
-    .cbs-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
-    .cbs-hero__crumbs a:hover { color: var(--bbg-white); }
+    .cbs-hero__crumbs a {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+    .cbs-hero__crumbs a:hover {
+      color: var(--bbg-white);
+    }
     .cbs-hero__inner .eyebrow--on-dark {
       display: inline-block;
       margin-bottom: var(--space-3);
-      color: #C8102E;
+      color: #c8102e;
     }
     .cbs-hero__title {
       font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
@@ -1172,29 +1586,46 @@ const icons: Record<string, string> = {
       margin: 0 0 var(--space-4);
       max-width: 22ch;
       font-weight: 700;
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: 0.05em;
     }
-    .cbs-hero__title-row { display: block; }
+    .cbs-hero__title-row {
+      display: block;
+    }
     .cbs-hero__title-row--accent {
-      color: #C8102E; font-weight: 500;
-      font-style: italic; letter-spacing: -0.018em;
+      color: #c8102e;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -0.018em;
     }
     .cbs-hero__title-row--highlight {
-      position: relative; display: inline-block;
-      align-self: flex-start; padding: 0 0.15em;
+      position: relative;
+      display: inline-block;
+      align-self: flex-start;
+      padding: 0 0.15em;
     }
     .cbs-hero__title-row--highlight::before {
-      content: ""; position: absolute;
-      left: 0; right: 0; bottom: 0.04em;
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0.04em;
       height: 0.18em;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px;
       transform-origin: left center;
       animation: cbs-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
       z-index: -1;
     }
-    @keyframes cbs-underline { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes cbs-underline {
+      from {
+        transform: scaleX(0);
+      }
+      to {
+        transform: scaleX(1);
+      }
+    }
     .cbs-hero__lead {
       font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
       line-height: 1.55;
@@ -1202,31 +1633,46 @@ const icons: Record<string, string> = {
       max-width: 58ch;
       margin: 0 0 var(--space-5);
     }
-    .cbs-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
-    .cbs-magnetic:hover { transform: translateY(-2px); }
+    .cbs-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+    .cbs-magnetic:hover {
+      transform: translateY(-2px);
+    }
 
     .cbs-hero__meta {
-      display: flex; flex-wrap: nowrap;
+      display: flex;
+      flex-wrap: nowrap;
       gap: clamp(var(--space-3), 3vw, var(--space-6));
       padding-top: var(--space-5);
       border-top: 1px solid rgba(255, 255, 255, 0.14);
       max-width: none;
     }
     .cbs-hero__meta-item {
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: 0.2rem;
       min-width: 0;
       flex: 1 1 0;
     }
     @media (max-width: 720px) {
-      .cbs-hero__meta { flex-wrap: wrap; }
-      .cbs-hero__meta-item { flex: 1 1 auto; }
+      .cbs-hero__meta {
+        flex-wrap: wrap;
+      }
+      .cbs-hero__meta-item {
+        flex: 1 1 auto;
+      }
     }
     .cbs-hero__meta-num {
       font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
-      font-weight: 700; letter-spacing: -0.02em;
-      line-height: 1; color: var(--bbg-white);
-      font-feature-settings: "tnum";
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: 'tnum';
     }
     .cbs-hero__meta-label {
       font-size: 0.85rem;
@@ -1238,32 +1684,53 @@ const icons: Record<string, string> = {
       position: absolute;
       bottom: var(--space-5);
       right: clamp(var(--space-5), 4vw, var(--space-7));
-      display: flex; flex-direction: column;
-      align-items: center; gap: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
       color: rgba(255, 255, 255, 0.7);
-      font-size: 0.7rem; letter-spacing: 0.18em;
-      text-transform: uppercase; font-weight: 600;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
       transition: color 200ms ease;
     }
-    .cbs-hero__scroll:hover { color: var(--bbg-white); }
+    .cbs-hero__scroll:hover {
+      color: var(--bbg-white);
+    }
     .cbs-hero__scroll-line {
-      width: 1px; height: 40px;
+      width: 1px;
+      height: 40px;
       background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
     .cbs-hero__scroll-line::after {
-      content: ""; position: absolute;
-      top: -100%; left: 0; right: 0;
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
       height: 50%;
       background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
       animation: cbs-scroll-tick 1.8s ease-in-out infinite;
     }
-    @keyframes cbs-scroll-tick { 0% { top: -50%; } 100% { top: 100%; } }
-    @media (max-width: 720px) {
-      .cbs-hero__scroll { display: none; }
-      .cbs-hero__meta { gap: var(--space-4); }
+    @keyframes cbs-scroll-tick {
+      0% {
+        top: -50%;
+      }
+      100% {
+        top: 100%;
+      }
     }
-
+    @media (max-width: 720px) {
+      .cbs-hero__scroll {
+        display: none;
+      }
+      .cbs-hero__meta {
+        gap: var(--space-4);
+      }
+    }
 
     /* ---------- VALUE + PROMISES ---------- */
     .cbs-value {
@@ -1274,23 +1741,33 @@ const icons: Record<string, string> = {
     }
     .cbs-value__copy h2 {
       font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
-      line-height: 1.15; letter-spacing: -0.015em;
+      line-height: 1.15;
+      letter-spacing: -0.015em;
       margin: var(--space-3) 0 var(--space-4);
     }
     .cbs-value__copy p {
-      color: var(--bbg-text); line-height: 1.7;
-      font-size: 1.0625rem; margin: 0 0 var(--space-4);
+      color: var(--bbg-text);
+      line-height: 1.7;
+      font-size: 1.0625rem;
+      margin: 0 0 var(--space-4);
     }
-    .cbs-value__copy .btn { margin-top: var(--space-4); }
+    .cbs-value__copy .btn {
+      margin-top: var(--space-4);
+    }
     .cbs-promise {
-      list-style: none; padding: var(--space-6); margin: 0;
+      list-style: none;
+      padding: var(--space-6);
+      margin: 0;
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-5);
     }
-    .cbs-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .cbs-promise > li:first-child .eyebrow {
+      margin-bottom: 0;
+    }
     .cbs-promise__item {
       display: grid;
       grid-template-columns: 32px 1fr;
@@ -1298,21 +1775,31 @@ const icons: Record<string, string> = {
       align-items: start;
     }
     .cbs-promise__check {
-      width: 32px; height: 32px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       background: var(--bbg-blue-light);
       color: var(--bbg-blue);
-      display: inline-flex; align-items: center; justify-content: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       flex-shrink: 0;
     }
-    .cbs-promise__check svg { width: 16px; height: 16px; }
+    .cbs-promise__check svg {
+      width: 16px;
+      height: 16px;
+    }
     .cbs-promise__item h4 {
-      font-size: 1.125rem; margin: 0 0 var(--space-2);
-      letter-spacing: -0.005em; color: var(--bbg-ink);
+      font-size: 1.125rem;
+      margin: 0 0 var(--space-2);
+      letter-spacing: -0.005em;
+      color: var(--bbg-ink);
     }
     .cbs-promise__item p {
-      font-size: 0.975rem; line-height: 1.55;
-      color: var(--bbg-text); margin: 0;
+      font-size: 0.975rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
     }
 
     /* Category rows inside promise */
@@ -1324,9 +1811,12 @@ const icons: Record<string, string> = {
       border-bottom: 1px solid var(--bbg-border);
       align-items: baseline;
     }
-    .cbs-cat-row:last-child { border-bottom: none; }
+    .cbs-cat-row:last-child {
+      border-bottom: none;
+    }
     .cbs-cat-row__cat {
-      font-weight: 700; color: var(--bbg-ink);
+      font-weight: 700;
+      color: var(--bbg-ink);
       font-size: 0.95rem;
     }
     .cbs-cat-row__home {
@@ -1336,15 +1826,24 @@ const icons: Record<string, string> = {
     }
 
     @media (max-width: 1024px) {
-      .cbs-value { grid-template-columns: 1fr; gap: var(--space-6); }
+      .cbs-value {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
     }
 
     /* ---------- BUSINESS MODELS BG ---------- */
-    .cbs-models-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-models-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .cbs-models-section__bg {
       position: absolute;
-      top: 0; right: -8%;
-      width: 55%; height: 100%;
+      top: 0;
+      right: -8%;
+      width: 55%;
+      height: 100%;
       z-index: -1;
       opacity: 0.18;
       mask-image: radial-gradient(ellipse at right center, black 0%, transparent 65%);
@@ -1352,11 +1851,17 @@ const icons: Record<string, string> = {
       pointer-events: none;
     }
     .cbs-models-section__bg img {
-      width: 100%; height: 100%;
-      object-fit: cover; object-position: center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       filter: saturate(0.6);
     }
-    @media (max-width: 900px) { .cbs-models-section__bg { display: none; } }
+    @media (max-width: 900px) {
+      .cbs-models-section__bg {
+        display: none;
+      }
+    }
 
     /* ---------- BUSINESS MODELS TABS ---------- */
     .cbs-tabs {
@@ -1374,34 +1879,58 @@ const icons: Record<string, string> = {
       background: linear-gradient(180deg, var(--bbg-surface) 0%, var(--bbg-white) 100%);
       border-bottom: 1px solid var(--bbg-border);
     }
-    .cbs-tabs--two .cbs-tabs__nav { grid-template-columns: repeat(2, 1fr); }
+    .cbs-tabs--two .cbs-tabs__nav {
+      grid-template-columns: repeat(2, 1fr);
+    }
     .cbs-tabs__tab {
-      position: relative; background: transparent; border: none;
+      position: relative;
+      background: transparent;
+      border: none;
       padding: var(--space-5) var(--space-4);
-      text-align: left; cursor: pointer;
-      display: flex; flex-direction: column;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
       gap: 0.35rem;
       color: var(--bbg-text-muted);
-      transition: color 240ms ease, background 240ms ease;
+      transition:
+        color 240ms ease,
+        background 240ms ease;
       border-right: 1px solid var(--bbg-border);
     }
-    .cbs-tabs__tab:last-child { border-right: none; }
-    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(200, 16, 46, 0.04); }
-    .cbs-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .cbs-tabs__tab:last-child {
+      border-right: none;
+    }
+    .cbs-tabs__tab:hover {
+      color: var(--bbg-ink);
+      background: rgba(200, 16, 46, 0.04);
+    }
+    .cbs-tabs__tab.is-active {
+      color: var(--bbg-ink);
+      background: var(--bbg-white);
+    }
     .cbs-tabs__tab-label {
-      font-size: 1.0625rem; font-weight: 700;
-      letter-spacing: -0.005em; line-height: 1.2;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+      line-height: 1.2;
     }
     .cbs-tabs__tab-tag {
-      font-size: 0.78rem; color: var(--bbg-text-muted);
+      font-size: 0.78rem;
+      color: var(--bbg-text-muted);
       line-height: 1.35;
     }
-    .cbs-tabs__tab.is-active .cbs-tabs__tab-tag { color: var(--bbg-blue); }
+    .cbs-tabs__tab.is-active .cbs-tabs__tab-tag {
+      color: var(--bbg-blue);
+    }
     .cbs-tabs__tab-pop {
       position: absolute;
-      top: var(--space-3); right: var(--space-3);
-      font-size: 0.65rem; font-weight: 700;
-      letter-spacing: 0.08em; text-transform: uppercase;
+      top: var(--space-3);
+      right: var(--space-3);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: var(--bbg-blue);
       background: var(--bbg-blue-light);
       padding: 2px 8px;
@@ -1409,35 +1938,58 @@ const icons: Record<string, string> = {
     }
     .cbs-tabs__indicator {
       position: absolute;
-      bottom: -1px; left: 0;
-      width: 25%; height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      bottom: -1px;
+      left: 0;
+      width: 25%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px 2px 0 0;
       transform: translateX(0);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
     }
-    .cbs-tabs--two .cbs-tabs__indicator { width: 50%; }
-    .cbs-tabs__panels { background: var(--bbg-white); }
+    .cbs-tabs--two .cbs-tabs__indicator {
+      width: 50%;
+    }
+    .cbs-tabs__panels {
+      background: var(--bbg-white);
+    }
     .cbs-tabs__panel {
       padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
       animation: cbs-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes cbs-tab-in {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .cbs-tabs__panel[hidden] { display: none; }
+    .cbs-tabs__panel[hidden] {
+      display: none;
+    }
     .cbs-tabs__panel-grid {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       gap: clamp(var(--space-5), 3vw, var(--space-7));
       align-items: start;
     }
-    .cbs-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
-    .cbs-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .cbs-tabs__lead {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .cbs-tabs__pillset {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
     .cbs-tabs__pill {
-      font-size: 0.78rem; font-weight: 600;
+      font-size: 0.78rem;
+      font-weight: 600;
       padding: 0.35em 0.85em;
       border-radius: 999px;
       background: var(--bbg-blue-light);
@@ -1446,12 +1998,15 @@ const icons: Record<string, string> = {
     }
     .cbs-tabs__title {
       font-size: clamp(1.625rem, 1.8vw + 1rem, 2.25rem);
-      line-height: 1.1; margin: 0;
+      line-height: 1.1;
+      margin: 0;
       letter-spacing: -0.015em;
     }
     .cbs-tabs__desc {
-      font-size: 1rem; line-height: 1.6;
-      color: var(--bbg-text); margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--bbg-text);
+      margin: 0;
     }
     .cbs-tabs__when {
       padding: var(--space-4);
@@ -1461,13 +2016,24 @@ const icons: Record<string, string> = {
     }
     .cbs-tabs__when-label {
       display: block;
-      font-size: 0.72rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       color: var(--bbg-blue);
       margin-bottom: 0.35rem;
     }
-    .cbs-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
-    .cbs-tabs__body { display: flex; flex-direction: column; gap: var(--space-4); }
+    .cbs-tabs__when p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    .cbs-tabs__body {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
     .cbs-tabs__image {
       margin: 0;
       aspect-ratio: 16 / 10;
@@ -1476,8 +2042,10 @@ const icons: Record<string, string> = {
       background: var(--bbg-border);
     }
     .cbs-tabs__image img {
-      width: 100%; height: 100%;
-      object-fit: cover; display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
     .cbs-tabs__list-wrap {
       background: var(--bbg-surface);
@@ -1489,15 +2057,22 @@ const icons: Record<string, string> = {
     }
     .cbs-tabs__list-label {
       display: block;
-      font-size: 0.72rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       color: var(--bbg-text-muted);
       margin-bottom: var(--space-3);
     }
-    .cbs-tabs__list-wrap--alt .cbs-tabs__list-label { color: var(--bbg-blue-dark); }
+    .cbs-tabs__list-wrap--alt .cbs-tabs__list-label {
+      color: var(--bbg-blue-dark);
+    }
     .cbs-tabs__list {
-      list-style: none; padding: 0; margin: 0;
-      display: flex; flex-direction: column;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-3);
     }
     .cbs-tabs__list li {
@@ -1505,23 +2080,31 @@ const icons: Record<string, string> = {
       grid-template-columns: 24px 1fr;
       gap: 0.75rem;
       align-items: start;
-      font-size: 0.95rem; line-height: 1.5;
+      font-size: 0.95rem;
+      line-height: 1.5;
       color: var(--bbg-text);
     }
     .cbs-tabs__check {
-      width: 22px; height: 22px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
       background: var(--bbg-blue);
       color: var(--bbg-white);
-      display: inline-flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-top: 1px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
     }
     .cbs-tabs__check--alt {
       background: var(--bbg-white);
       color: var(--bbg-blue);
       box-shadow: inset 0 0 0 1.5px var(--bbg-blue);
     }
-    .cbs-tabs__check svg { width: 12px; height: 12px; }
+    .cbs-tabs__check svg {
+      width: 12px;
+      height: 12px;
+    }
 
     .cbs-owns {
       padding: var(--space-4);
@@ -1531,14 +2114,19 @@ const icons: Record<string, string> = {
     }
     .cbs-owns__label {
       display: block;
-      font-size: 0.72rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       color: var(--bbg-text-muted);
       margin-bottom: var(--space-3);
     }
     .cbs-owns__list {
-      list-style: none; padding: 0; margin: 0;
-      display: flex; flex-direction: column;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
       gap: 0.6rem;
     }
     .cbs-owns__list li {
@@ -1551,15 +2139,32 @@ const icons: Record<string, string> = {
       font-size: 0.9rem;
       line-height: 1.45;
     }
-    .cbs-owns__list li:last-child { border-bottom: none; padding-bottom: 0; }
-    .cbs-owns__key { color: var(--bbg-text-muted); font-weight: 600; }
-    .cbs-owns__val { color: var(--bbg-ink); }
+    .cbs-owns__list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .cbs-owns__key {
+      color: var(--bbg-text-muted);
+      font-weight: 600;
+    }
+    .cbs-owns__val {
+      color: var(--bbg-ink);
+    }
 
     @media (max-width: 1024px) {
-      .cbs-tabs--two .cbs-tabs__nav { grid-template-columns: 1fr; }
-      .cbs-tabs__tab { border-right: none; border-bottom: 1px solid var(--bbg-border); }
-      .cbs-tabs--two .cbs-tabs__indicator { display: none; }
-      .cbs-tabs__panel-grid { grid-template-columns: 1fr; }
+      .cbs-tabs--two .cbs-tabs__nav {
+        grid-template-columns: 1fr;
+      }
+      .cbs-tabs__tab {
+        border-right: none;
+        border-bottom: 1px solid var(--bbg-border);
+      }
+      .cbs-tabs--two .cbs-tabs__indicator {
+        display: none;
+      }
+      .cbs-tabs__panel-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- COMPARISON TABLE ---------- */
@@ -1571,7 +2176,10 @@ const icons: Record<string, string> = {
       padding: clamp(var(--space-5), 3vw + 1rem, var(--space-7));
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
     }
-    .cbs-compare__intro { text-align: center; margin-bottom: var(--space-6); }
+    .cbs-compare__intro {
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
     .cbs-compare__intro h3 {
       font-size: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
       margin: var(--space-2) 0 var(--space-3);
@@ -1579,12 +2187,17 @@ const icons: Record<string, string> = {
     }
     .cbs-compare__intro p {
       color: var(--bbg-text);
-      max-width: 60ch; margin: 0 auto;
-      line-height: 1.6; font-size: 1rem;
+      max-width: 60ch;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 1rem;
     }
-    .cbs-compare__table-wrap { overflow-x: auto; }
+    .cbs-compare__table-wrap {
+      overflow-x: auto;
+    }
     .cbs-compare__table {
-      width: 100%; border-collapse: separate;
+      width: 100%;
+      border-collapse: separate;
       border-spacing: 0;
       min-width: 640px;
     }
@@ -1595,11 +2208,16 @@ const icons: Record<string, string> = {
       vertical-align: top;
       border-bottom: 1px solid var(--bbg-border);
     }
-    .cbs-compare__head--tp { border-bottom-color: var(--bbg-blue); }
-    .cbs-compare__head--dist { border-bottom-color: var(--bbg-blue-dark); }
+    .cbs-compare__head--tp {
+      border-bottom-color: var(--bbg-blue);
+    }
+    .cbs-compare__head--dist {
+      border-bottom-color: var(--bbg-blue-dark);
+    }
     .cbs-compare__head-label {
       display: block;
-      font-size: 1rem; font-weight: 700;
+      font-size: 1rem;
+      font-weight: 700;
       color: var(--bbg-ink);
       letter-spacing: -0.005em;
     }
@@ -1676,17 +2294,20 @@ const icons: Record<string, string> = {
     }
     .cbs-cost-section__glow {
       position: absolute;
-      width: 520px; height: 520px;
+      width: 520px;
+      height: 520px;
       border-radius: 50%;
       filter: blur(80px);
       opacity: 0.55;
     }
     .cbs-cost-section__glow--a {
-      top: -120px; left: -100px;
+      top: -120px;
+      left: -100px;
       background: radial-gradient(circle, rgba(200, 16, 46, 0.22) 0%, transparent 70%);
     }
     .cbs-cost-section__glow--b {
-      bottom: -150px; right: -120px;
+      bottom: -150px;
+      right: -120px;
       background: radial-gradient(circle, rgba(91, 194, 240, 0.18) 0%, transparent 70%);
     }
 
@@ -1714,18 +2335,19 @@ const icons: Record<string, string> = {
     }
     .cbs-cost__switcher-pill {
       position: absolute;
-      top: 6px; left: 6px;
+      top: 6px;
+      left: 6px;
       width: calc(50% - 6px);
       height: calc(100% - 12px);
       border-radius: 999px;
-      background: linear-gradient(135deg, var(--bbg-blue) 0%, #A50C26 100%);
+      background: linear-gradient(135deg, var(--bbg-blue) 0%, #a50c26 100%);
       box-shadow:
         0 6px 18px -8px rgba(200, 16, 46, 0.6),
         0 1px 0 rgba(255, 255, 255, 0.3) inset;
       transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
       z-index: 0;
     }
-    .cbs-cost__switcher[data-active="distributor"] .cbs-cost__switcher-pill {
+    .cbs-cost__switcher[data-active='distributor'] .cbs-cost__switcher-pill {
       transform: translateX(100%);
     }
     .cbs-cost__switcher-tab {
@@ -1773,7 +2395,9 @@ const icons: Record<string, string> = {
       gap: var(--space-5);
       perspective: 1400px;
     }
-    .cbs-cost__data { display: none; }
+    .cbs-cost__data {
+      display: none;
+    }
 
     /* Ledger card */
     .cbs-ledger {
@@ -1782,8 +2406,7 @@ const icons: Record<string, string> = {
       flex-direction: column;
       gap: 0.85rem;
       padding: 28px 28px 24px;
-      background:
-        linear-gradient(180deg, #ffffff 0%, #fafdff 100%);
+      background: linear-gradient(180deg, #ffffff 0%, #fafdff 100%);
       border: 1px solid rgba(200, 16, 46, 0.18);
       border-radius: 22px;
       overflow: hidden;
@@ -1791,12 +2414,9 @@ const icons: Record<string, string> = {
       box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.9) inset,
         0 24px 48px -34px rgba(15, 50, 85, 0.18),
-        0 6px 16px -10px rgba(200, 16, 46, 0.10);
+        0 6px 16px -10px rgba(200, 16, 46, 0.1);
       transform-style: preserve-3d;
-      transform:
-        perspective(1200px)
-        rotateX(var(--rx, 0deg))
-        rotateY(var(--ry, 0deg))
+      transform: perspective(1200px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg))
         translateY(var(--lift, 0px));
       transition:
         transform 420ms cubic-bezier(0.16, 1, 0.3, 1),
@@ -1804,11 +2424,13 @@ const icons: Record<string, string> = {
         box-shadow 320ms ease;
     }
     .cbs-ledger::before {
-      content: "";
+      content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 50%, var(--bbg-blue) 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 50%, var(--bbg-blue) 100%);
       background-size: 200% 100%;
       animation: cbs-stripe 6s linear infinite;
       transform-origin: left;
@@ -1816,8 +2438,12 @@ const icons: Record<string, string> = {
       transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes cbs-stripe {
-      from { background-position: 0% 0; }
-      to { background-position: 200% 0; }
+      from {
+        background-position: 0% 0;
+      }
+      to {
+        background-position: 200% 0;
+      }
     }
     .cbs-ledger:hover {
       --lift: -6px;
@@ -1834,12 +2460,11 @@ const icons: Record<string, string> = {
       position: absolute;
       inset: 0;
       pointer-events: none;
-      background:
-        radial-gradient(
-          240px circle at var(--mx, 50%) var(--my, 0%),
-          rgba(200, 16, 46, 0.12) 0%,
-          transparent 60%
-        );
+      background: radial-gradient(
+        240px circle at var(--mx, 50%) var(--my, 0%),
+        rgba(200, 16, 46, 0.12) 0%,
+        transparent 60%
+      );
       opacity: 0;
       transition: opacity 320ms ease;
       z-index: 0;
@@ -1849,15 +2474,20 @@ const icons: Record<string, string> = {
     }
     .cbs-ledger__corner {
       position: absolute;
-      top: 14px; right: 14px;
-      width: 8px; height: 8px;
+      top: 14px;
+      right: 14px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background: var(--bbg-blue);
       box-shadow:
         0 0 0 4px rgba(200, 16, 46, 0.14),
         0 0 14px rgba(200, 16, 46, 0.4);
     }
-    .cbs-ledger > * { position: relative; z-index: 1; }
+    .cbs-ledger > * {
+      position: relative;
+      z-index: 1;
+    }
 
     .cbs-ledger__top {
       display: flex;
@@ -1868,17 +2498,27 @@ const icons: Record<string, string> = {
     }
     .cbs-ledger__icon {
       display: inline-flex;
-      width: 44px; height: 44px;
-      align-items: center; justify-content: center;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
       border-radius: 14px;
-      background:
-        linear-gradient(135deg, rgba(232, 244, 252, 0.95) 0%, rgba(200, 16, 46, 0.18) 100%);
+      background: linear-gradient(
+        135deg,
+        rgba(232, 244, 252, 0.95) 0%,
+        rgba(200, 16, 46, 0.18) 100%
+      );
       color: var(--bbg-blue);
       box-shadow: 0 4px 12px -6px rgba(200, 16, 46, 0.45);
     }
-    .cbs-ledger__icon svg { width: 20px; height: 20px; }
+    .cbs-ledger__icon svg {
+      width: 20px;
+      height: 20px;
+    }
     .cbs-ledger__tag {
-      display: inline-flex; align-items: center; gap: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       padding: 5px 11px;
       font-size: 0.7rem;
       font-weight: 700;
@@ -1896,7 +2536,9 @@ const icons: Record<string, string> = {
     }
     .cbs-ledger__tag-dot {
       display: inline-block;
-      width: 4px; height: 4px; border-radius: 50%;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
       background: currentColor;
       opacity: 0.65;
     }
@@ -1933,12 +2575,14 @@ const icons: Record<string, string> = {
       text-transform: uppercase;
       margin-right: 8px;
       padding: 4px 8px;
-      background: rgba(200, 16, 46, 0.10);
+      background: rgba(200, 16, 46, 0.1);
       border-radius: 6px;
       align-self: center;
       transform: translateY(-4px);
     }
-    .cbs-ledger__lead:empty { display: none; }
+    .cbs-ledger__lead:empty {
+      display: none;
+    }
     .cbs-ledger__prefix,
     .cbs-ledger__suffix {
       font-size: 0.65em;
@@ -1954,8 +2598,14 @@ const icons: Record<string, string> = {
       animation: cbs-num-flash 480ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes cbs-num-flash {
-      0% { transform: translateY(8px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
+      0% {
+        transform: translateY(8px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
     .cbs-ledger__unit {
       font-size: 0.95rem;
@@ -1979,8 +2629,9 @@ const icons: Record<string, string> = {
       box-shadow: 0 2px 6px -4px rgba(200, 16, 46, 0.35);
     }
     .cbs-ledger__pill::before {
-      content: "";
-      width: 6px; height: 6px;
+      content: '';
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background: var(--bbg-blue);
       box-shadow: 0 0 8px rgba(200, 16, 46, 0.6);
@@ -1994,14 +2645,18 @@ const icons: Record<string, string> = {
 
     /* Platform card buckets */
     .cbs-ledger__buckets {
-      list-style: none; margin: 8px 0 0; padding: 0;
-      display: flex; flex-direction: column;
+      list-style: none;
+      margin: 8px 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
       gap: 12px;
       padding-top: 14px;
       border-top: 1px dashed rgba(200, 16, 46, 0.22);
     }
     .cbs-bucket {
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: 4px;
     }
     .cbs-bucket__row {
@@ -2044,7 +2699,7 @@ const icons: Record<string, string> = {
       position: absolute;
       inset: 0;
       width: 0;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 4px;
       transition: width 1100ms cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -2062,12 +2717,17 @@ const icons: Record<string, string> = {
     }
     .cbs-ledger__foot-mark {
       display: inline-flex;
-      align-items: center; justify-content: center;
-      width: 22px; height: 22px;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
       color: var(--bbg-blue);
       opacity: 0.85;
     }
-    .cbs-ledger__foot svg { width: 14px; height: 14px; }
+    .cbs-ledger__foot svg {
+      width: 14px;
+      height: 14px;
+    }
     .cbs-ledger__foot p {
       margin: 0;
       font-size: 0.82rem;
@@ -2077,22 +2737,25 @@ const icons: Record<string, string> = {
 
     /* Variant accents */
     .cbs-ledger--platform {
-      background:
-        linear-gradient(180deg, #fbfffd 0%, #f3fbf7 100%);
+      background: linear-gradient(180deg, #fbfffd 0%, #f3fbf7 100%);
       border-color: rgba(38, 165, 110, 0.22);
     }
     .cbs-ledger--platform::before {
-      background: linear-gradient(90deg, #2EA56C 0%, #6FD7A6 50%, #2EA56C 100%);
+      background: linear-gradient(90deg, #2ea56c 0%, #6fd7a6 50%, #2ea56c 100%);
       background-size: 200% 100%;
     }
     .cbs-ledger--platform .cbs-ledger__corner {
-      background: #2EA56C;
+      background: #2ea56c;
       box-shadow:
         0 0 0 4px rgba(46, 165, 108, 0.14),
         0 0 14px rgba(46, 165, 108, 0.4);
     }
     .cbs-ledger--platform .cbs-ledger__icon {
-      background: linear-gradient(135deg, rgba(220, 245, 232, 0.95) 0%, rgba(46, 165, 108, 0.2) 100%);
+      background: linear-gradient(
+        135deg,
+        rgba(220, 245, 232, 0.95) 0%,
+        rgba(46, 165, 108, 0.2) 100%
+      );
       color: #1f6f4a;
       box-shadow: 0 4px 12px -6px rgba(46, 165, 108, 0.45);
     }
@@ -2105,13 +2768,13 @@ const icons: Record<string, string> = {
       background: rgba(220, 245, 232, 0.75);
     }
     .cbs-ledger--platform .cbs-bucket__meter-fill {
-      background: linear-gradient(90deg, #2EA56C 0%, #6FD7A6 100%);
+      background: linear-gradient(90deg, #2ea56c 0%, #6fd7a6 100%);
     }
     .cbs-ledger--platform .cbs-ledger__pill {
       border-color: rgba(46, 165, 108, 0.28);
     }
     .cbs-ledger--platform .cbs-ledger__pill::before {
-      background: #2EA56C;
+      background: #2ea56c;
       box-shadow: 0 0 8px rgba(46, 165, 108, 0.5);
     }
     .cbs-ledger--platform:hover {
@@ -2122,49 +2785,53 @@ const icons: Record<string, string> = {
         0 10px 24px -12px rgba(46, 165, 108, 0.25);
     }
     .cbs-ledger--platform .cbs-ledger__sheen {
-      background:
-        radial-gradient(
-          240px circle at var(--mx, 50%) var(--my, 0%),
-          rgba(46, 165, 108, 0.14) 0%,
-          transparent 60%
-        );
+      background: radial-gradient(
+        240px circle at var(--mx, 50%) var(--my, 0%),
+        rgba(46, 165, 108, 0.14) 0%,
+        transparent 60%
+      );
     }
-    .cbs-ledger--platform .cbs-ledger__foot-mark { color: #1f6f4a; }
+    .cbs-ledger--platform .cbs-ledger__foot-mark {
+      color: #1f6f4a;
+    }
 
     .cbs-ledger--brand {
-      background:
-        linear-gradient(180deg, #fefbff 0%, #faf4ff 100%);
+      background: linear-gradient(180deg, #fefbff 0%, #faf4ff 100%);
       border-color: rgba(200, 16, 46, 0.22);
     }
     .cbs-ledger--brand::before {
-      background: linear-gradient(90deg, #C8102E 0%, #E84A60 50%, #C8102E 100%);
+      background: linear-gradient(90deg, #c8102e 0%, #e84a60 50%, #c8102e 100%);
       background-size: 200% 100%;
     }
     .cbs-ledger--brand .cbs-ledger__corner {
-      background: #C8102E;
+      background: #c8102e;
       box-shadow:
         0 0 0 4px rgba(200, 16, 46, 0.14),
         0 0 14px rgba(200, 16, 46, 0.4);
     }
     .cbs-ledger--brand .cbs-ledger__icon {
-      background: linear-gradient(135deg, rgba(251, 233, 236, 0.95) 0%, rgba(200, 16, 46, 0.2) 100%);
-      color: #C8102E;
+      background: linear-gradient(
+        135deg,
+        rgba(251, 233, 236, 0.95) 0%,
+        rgba(200, 16, 46, 0.2) 100%
+      );
+      color: #c8102e;
       box-shadow: 0 4px 12px -6px rgba(200, 16, 46, 0.45);
     }
     .cbs-ledger--brand .cbs-ledger__tag {
-      color: #C8102E;
+      color: #c8102e;
       background: rgba(251, 233, 236, 0.85);
       border-color: rgba(200, 16, 46, 0.25);
     }
     .cbs-ledger--brand .cbs-ledger__prefix,
     .cbs-ledger--brand .cbs-ledger__suffix {
-      color: #C8102E;
+      color: #c8102e;
     }
     .cbs-ledger--brand .cbs-ledger__pill {
       border-color: rgba(200, 16, 46, 0.28);
     }
     .cbs-ledger--brand .cbs-ledger__pill::before {
-      background: #C8102E;
+      background: #c8102e;
       box-shadow: 0 0 8px rgba(200, 16, 46, 0.5);
     }
     .cbs-ledger--brand:hover {
@@ -2175,14 +2842,15 @@ const icons: Record<string, string> = {
         0 10px 24px -12px rgba(200, 16, 46, 0.28);
     }
     .cbs-ledger--brand .cbs-ledger__sheen {
-      background:
-        radial-gradient(
-          240px circle at var(--mx, 50%) var(--my, 0%),
-          rgba(200, 16, 46, 0.13) 0%,
-          transparent 60%
-        );
+      background: radial-gradient(
+        240px circle at var(--mx, 50%) var(--my, 0%),
+        rgba(200, 16, 46, 0.13) 0%,
+        transparent 60%
+      );
     }
-    .cbs-ledger--brand .cbs-ledger__foot-mark { color: #C8102E; }
+    .cbs-ledger--brand .cbs-ledger__foot-mark {
+      color: #c8102e;
+    }
 
     /* Pledge block */
     .cbs-pledge {
@@ -2203,24 +2871,30 @@ const icons: Record<string, string> = {
         0 1px 0 rgba(255, 255, 255, 0.06) inset;
     }
     .cbs-pledge::before {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
-      background-image:
-        radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
       background-size: 24px 24px;
       mask-image: radial-gradient(ellipse 80% 70% at 80% 30%, #000 30%, transparent 80%);
       -webkit-mask-image: radial-gradient(ellipse 80% 70% at 80% 30%, #000 30%, transparent 80%);
       pointer-events: none;
       z-index: 0;
     }
-    .cbs-pledge > * { position: relative; z-index: 1; }
+    .cbs-pledge > * {
+      position: relative;
+      z-index: 1;
+    }
     .cbs-pledge__mark {
-      width: 38px; height: 28px;
+      width: 38px;
+      height: 28px;
       color: rgba(255, 255, 255, 0.32);
       margin-bottom: 10px;
     }
-    .cbs-pledge__mark svg { width: 100%; height: 100%; }
+    .cbs-pledge__mark svg {
+      width: 100%;
+      height: 100%;
+    }
     .cbs-pledge__line {
       margin: 0;
       font-size: clamp(1.15rem, 1.6vw, 1.5rem);
@@ -2254,11 +2928,16 @@ const icons: Record<string, string> = {
     }
     .cbs-pledge__x {
       display: inline-flex;
-      align-items: center; justify-content: center;
-      width: 16px; height: 16px;
-      color: #FF8B7A;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      color: #ff8b7a;
     }
-    .cbs-pledge__x svg { width: 100%; height: 100%; }
+    .cbs-pledge__x svg {
+      width: 100%;
+      height: 100%;
+    }
 
     .cbs-cost-note {
       margin: var(--space-5) auto 0;
@@ -2275,43 +2954,84 @@ const icons: Record<string, string> = {
       animation: cbs-field-swap 360ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes cbs-field-swap {
-      0% { opacity: 0; transform: translateY(6px); }
-      100% { opacity: 1; transform: translateY(0); }
+      0% {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @media (max-width: 1024px) {
-      .cbs-cost__grid { grid-template-columns: 1fr; gap: var(--space-4); }
-      .cbs-cost__switcher { max-width: 100%; }
+      .cbs-cost__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
+      .cbs-cost__switcher {
+        max-width: 100%;
+      }
     }
     @media (max-width: 640px) {
-      .cbs-cost__switcher-sub { display: none; }
-      .cbs-pledge { padding: 26px 22px 22px; }
-      .cbs-ledger { padding: 22px 22px 20px; }
+      .cbs-cost__switcher-sub {
+        display: none;
+      }
+      .cbs-pledge {
+        padding: 26px 22px 22px;
+      }
+      .cbs-ledger {
+        padding: 22px 22px 20px;
+      }
     }
     @media (prefers-reduced-motion: reduce) {
-      .cbs-ledger { transform: none !important; transition: none; }
-      .cbs-ledger__sheen { display: none; }
-      .cbs-bucket__meter-fill { transition: none; }
-      .cbs-cost__switcher-pill { transition: none; }
+      .cbs-ledger {
+        transform: none !important;
+        transition: none;
+      }
+      .cbs-ledger__sheen {
+        display: none;
+      }
+      .cbs-bucket__meter-fill {
+        transition: none;
+      }
+      .cbs-cost__switcher-pill {
+        transition: none;
+      }
     }
 
     /* ---------- JOURNEY (vertical timeline) ---------- */
-    .cbs-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-journey-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .cbs-journey-section__bg {
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       z-index: -2;
-      opacity: 0.10;
+      opacity: 0.1;
       pointer-events: none;
     }
     .cbs-journey-section__bg::after {
-      content: ""; position: absolute; inset: 0;
-      background: linear-gradient(180deg, var(--bbg-white) 0%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.7) 100%);
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        var(--bbg-white) 0%,
+        rgba(255, 255, 255, 0.4) 40%,
+        rgba(255, 255, 255, 0.7) 100%
+      );
     }
     .cbs-journey-section__bg img {
-      width: 100%; height: 100%;
-      object-fit: cover; object-position: center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       filter: saturate(0.55);
     }
     .cbs-journey {
@@ -2322,47 +3042,66 @@ const icons: Record<string, string> = {
     }
     .cbs-journey__rail {
       position: absolute;
-      top: 0; bottom: 0;
-      left: 22px; width: 2px;
+      top: 0;
+      bottom: 0;
+      left: 22px;
+      width: 2px;
     }
     .cbs-journey__rail-track {
-      position: absolute; inset: 0;
+      position: absolute;
+      inset: 0;
       background: var(--bbg-border);
       border-radius: 2px;
     }
     .cbs-journey__rail-fill {
       position: absolute;
-      top: 0; left: 0; width: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: var(--journey-progress, 0%);
-      background: linear-gradient(180deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px;
       transition: height 120ms linear;
       box-shadow: 0 0 8px rgba(200, 16, 46, 0.4);
     }
     .cbs-journey__list {
-      list-style: none; padding: 0; margin: 0;
-      display: flex; flex-direction: column;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-7);
     }
-    .cbs-journey__item { position: relative; }
+    .cbs-journey__item {
+      position: relative;
+    }
     .cbs-journey__dot {
       position: absolute;
-      left: -56px; top: 0;
-      width: 44px; height: 44px;
+      left: -56px;
+      top: 0;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
       background: var(--bbg-white);
       border: 2px solid var(--bbg-border);
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       z-index: 2;
       transition: border-color 320ms ease;
     }
     .cbs-journey__dot-inner {
-      width: 14px; height: 14px;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
       background: var(--bbg-border);
-      transition: background 320ms ease, transform 320ms ease;
+      transition:
+        background 320ms ease,
+        transform 320ms ease;
     }
-    .cbs-journey__item.is-active .cbs-journey__dot { border-color: var(--bbg-blue); }
+    .cbs-journey__item.is-active .cbs-journey__dot {
+      border-color: var(--bbg-blue);
+    }
     .cbs-journey__item.is-active .cbs-journey__dot-inner {
       background: var(--bbg-blue);
       transform: scale(1.1);
@@ -2370,8 +3109,10 @@ const icons: Record<string, string> = {
     }
     .cbs-journey__phase {
       display: inline-block;
-      font-size: 0.72rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       color: var(--bbg-text-muted);
       margin-bottom: var(--space-2);
       transition: color 320ms ease;
@@ -2382,15 +3123,21 @@ const icons: Record<string, string> = {
       letter-spacing: 0.04em;
       text-transform: none;
     }
-    .cbs-journey__item.is-active .cbs-journey__phase { color: var(--bbg-blue); }
+    .cbs-journey__item.is-active .cbs-journey__phase {
+      color: var(--bbg-blue);
+    }
     .cbs-journey__card {
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
       padding: var(--space-5) var(--space-6);
-      display: flex; align-items: flex-start;
+      display: flex;
+      align-items: flex-start;
       gap: var(--space-4);
-      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 320ms ease,
+        box-shadow 320ms ease,
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-journey__item:hover .cbs-journey__card,
     .cbs-journey__item.is-active .cbs-journey__card {
@@ -2400,29 +3147,51 @@ const icons: Record<string, string> = {
     }
     .cbs-journey__icon {
       display: inline-flex;
-      width: 48px; height: 48px;
-      align-items: center; justify-content: center;
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      justify-content: center;
       border-radius: 14px;
       background: var(--bbg-blue-light);
       color: var(--bbg-blue);
       flex-shrink: 0;
     }
-    .cbs-journey__icon svg { width: 24px; height: 24px; }
+    .cbs-journey__icon svg {
+      width: 24px;
+      height: 24px;
+    }
     .cbs-journey__title {
-      font-size: 1.25rem; line-height: 1.25;
+      font-size: 1.25rem;
+      line-height: 1.25;
       margin: 0 0 0.4rem;
       letter-spacing: -0.005em;
     }
     .cbs-journey__desc {
-      font-size: 0.95rem; line-height: 1.55;
-      color: var(--bbg-text); margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+      margin: 0;
     }
     @media (max-width: 600px) {
-      .cbs-journey { padding-left: 40px; }
-      .cbs-journey__rail { left: 16px; }
-      .cbs-journey__dot { left: -40px; width: 32px; height: 32px; }
-      .cbs-journey__dot-inner { width: 10px; height: 10px; }
-      .cbs-journey__card { flex-direction: column; gap: var(--space-3); }
+      .cbs-journey {
+        padding-left: 40px;
+      }
+      .cbs-journey__rail {
+        left: 16px;
+      }
+      .cbs-journey__dot {
+        left: -40px;
+        width: 32px;
+        height: 32px;
+      }
+      .cbs-journey__dot-inner {
+        width: 10px;
+        height: 10px;
+      }
+      .cbs-journey__card {
+        flex-direction: column;
+        gap: var(--space-3);
+      }
     }
 
     /* ---------- SISTER PRODUCT ---------- */
@@ -2440,12 +3209,15 @@ const icons: Record<string, string> = {
       border-radius: 24px;
       overflow: hidden;
       isolation: isolate;
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-4);
     }
     .cbs-sister__hero::before {
-      content: "";
-      position: absolute; inset: 0; z-index: -1;
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
       background:
         radial-gradient(60% 80% at 100% 0%, rgba(255, 90, 130, 0.25) 0%, transparent 60%),
         radial-gradient(40% 60% at 0% 100%, rgba(255, 60, 100, 0.18) 0%, transparent 60%);
@@ -2453,9 +3225,11 @@ const icons: Record<string, string> = {
     .cbs-sister__chip {
       display: inline-block;
       align-self: flex-start;
-      font-size: 0.7rem; font-weight: 700;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      color: #FFC2D1;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #ffc2d1;
       background: rgba(255, 90, 130, 0.18);
       padding: 0.4em 0.85em;
       border-radius: 999px;
@@ -2469,14 +3243,17 @@ const icons: Record<string, string> = {
       color: var(--bbg-white);
     }
     .cbs-sister__desc {
-      font-size: 1rem; line-height: 1.6;
+      font-size: 1rem;
+      line-height: 1.6;
       color: rgba(255, 255, 255, 0.82);
       margin: 0;
     }
     .cbs-sister__stats {
-      list-style: none; padding: var(--space-4) 0 0;
+      list-style: none;
+      padding: var(--space-4) 0 0;
       margin: 0;
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-3);
       border-top: 1px solid rgba(255, 255, 255, 0.14);
     }
@@ -2489,9 +3266,9 @@ const icons: Record<string, string> = {
     .cbs-sister__stat-num {
       font-size: 1.25rem;
       font-weight: 700;
-      color: #FFC2D1;
+      color: #ffc2d1;
       letter-spacing: -0.01em;
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .cbs-sister__stat-label {
       font-size: 0.9rem;
@@ -2499,7 +3276,9 @@ const icons: Record<string, string> = {
       line-height: 1.5;
     }
     .cbs-sister__actions {
-      display: flex; flex-wrap: wrap; gap: var(--space-3);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
       margin-top: var(--space-3);
     }
     .cbs-sister__btn-primary {
@@ -2508,7 +3287,8 @@ const icons: Record<string, string> = {
       border: 1px solid var(--bbg-white);
     }
     .cbs-sister__btn-primary:hover {
-      background: #FFC2D1; color: #2a1530;
+      background: #ffc2d1;
+      color: #2a1530;
     }
     .cbs-sister__btn-ghost {
       background: transparent;
@@ -2521,7 +3301,8 @@ const icons: Record<string, string> = {
       color: var(--bbg-white);
     }
     .cbs-sister__packs {
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-4);
     }
     .cbs-sister__pack {
@@ -2529,9 +3310,13 @@ const icons: Record<string, string> = {
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
       padding: var(--space-5);
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-2);
-      transition: border-color 280ms ease, box-shadow 280ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 280ms ease,
+        box-shadow 280ms ease,
+        transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-sister__pack:hover {
       transform: translateY(-3px);
@@ -2540,14 +3325,19 @@ const icons: Record<string, string> = {
     }
     .cbs-sister__pack-icon {
       display: inline-flex;
-      width: 36px; height: 36px;
-      align-items: center; justify-content: center;
+      width: 36px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
       border-radius: 10px;
       background: var(--bbg-blue-light);
       color: var(--bbg-blue);
       margin-bottom: 0.4rem;
     }
-    .cbs-sister__pack-icon svg { width: 18px; height: 18px; }
+    .cbs-sister__pack-icon svg {
+      width: 18px;
+      height: 18px;
+    }
     .cbs-sister__pack h4 {
       font-size: 1.0625rem;
       margin: 0;
@@ -2561,12 +3351,15 @@ const icons: Record<string, string> = {
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .cbs-sister { grid-template-columns: 1fr; }
+      .cbs-sister {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- FAQ ---------- */
     .cbs-faq {
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-3);
     }
     .cbs-faq__item {
@@ -2574,7 +3367,10 @@ const icons: Record<string, string> = {
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-md);
       overflow: hidden;
-      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 240ms ease,
+        box-shadow 240ms ease,
+        transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-faq__item:hover {
       transform: translateX(2px);
@@ -2587,29 +3383,40 @@ const icons: Record<string, string> = {
     .cbs-faq__q {
       cursor: pointer;
       padding: var(--space-5);
-      display: flex; align-items: center;
+      display: flex;
+      align-items: center;
       justify-content: space-between;
       gap: var(--space-4);
       font-weight: 600;
-      font-size: 1.0625rem; line-height: 1.3;
+      font-size: 1.0625rem;
+      line-height: 1.3;
       color: var(--bbg-ink);
       list-style: none;
       transition: color var(--dur) var(--ease);
     }
-    .cbs-faq__q::-webkit-details-marker { display: none; }
-    .cbs-faq__q::marker { display: none; }
-    .cbs-faq__item:hover .cbs-faq__q { color: var(--bbg-blue); }
+    .cbs-faq__q::-webkit-details-marker {
+      display: none;
+    }
+    .cbs-faq__q::marker {
+      display: none;
+    }
+    .cbs-faq__item:hover .cbs-faq__q {
+      color: var(--bbg-blue);
+    }
     .cbs-faq__icon {
       flex-shrink: 0;
-      width: 28px; height: 28px;
+      width: 28px;
+      height: 28px;
       display: inline-flex;
-      align-items: center; justify-content: center;
+      align-items: center;
+      justify-content: center;
       border-radius: 50%;
       background: var(--bbg-surface);
       color: var(--bbg-text-muted);
-      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
-                  color var(--dur) var(--ease),
-                  background var(--dur) var(--ease);
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        color var(--dur) var(--ease),
+        background var(--dur) var(--ease);
     }
     .cbs-faq__item[open] .cbs-faq__icon {
       transform: rotate(180deg);
@@ -2624,19 +3431,30 @@ const icons: Record<string, string> = {
       animation: cbs-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes cbs-faq-in {
-      from { opacity: 0; transform: translateY(-4px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .cbs-faq__a p { margin: 0; }
+    .cbs-faq__a p {
+      margin: 0;
+    }
 
     /* ---------- FAQ FILTER ---------- */
     .cbs-faq-filter {
-      display: flex; flex-wrap: wrap;
-      gap: 0.5rem; justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
       margin-bottom: var(--space-6);
     }
     .cbs-faq-chip {
-      display: inline-flex; align-items: center;
+      display: inline-flex;
+      align-items: center;
       gap: 0.5rem;
       padding: 0.5rem 0.95rem;
       background: var(--bbg-white);
@@ -2649,29 +3467,38 @@ const icons: Record<string, string> = {
       transition: all 220ms ease;
       font-family: inherit;
     }
-    .cbs-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .cbs-faq-chip:hover {
+      border-color: var(--bbg-blue);
+      color: var(--bbg-blue);
+    }
     .cbs-faq-chip.is-active {
       background: var(--bbg-blue);
       border-color: var(--bbg-blue);
       color: var(--bbg-white);
     }
     .cbs-faq-chip__count {
-      font-size: 0.72rem; font-weight: 700;
+      font-size: 0.72rem;
+      font-weight: 700;
       padding: 0.15em 0.5em;
       border-radius: 999px;
       background: var(--bbg-surface);
       color: var(--bbg-text-muted);
       transition: all 220ms ease;
     }
-    .cbs-faq-chip:hover .cbs-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .cbs-faq-chip:hover .cbs-faq-chip__count {
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+    }
     .cbs-faq-chip.is-active .cbs-faq-chip__count {
       background: rgba(255, 255, 255, 0.2);
       color: var(--bbg-white);
     }
     .cbs-faq__cat-tag {
       display: inline-block;
-      font-size: 0.68rem; font-weight: 700;
-      letter-spacing: 0.08em; text-transform: uppercase;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: var(--bbg-blue);
       background: var(--bbg-blue-light);
       padding: 0.25em 0.6em;
@@ -2679,8 +3506,12 @@ const icons: Record<string, string> = {
       margin-right: var(--space-3);
       flex-shrink: 0;
     }
-    .cbs-faq__q-text { flex-grow: 1; }
-    .cbs-faq__item.is-hidden { display: none; }
+    .cbs-faq__q-text {
+      flex-grow: 1;
+    }
+    .cbs-faq__item.is-hidden {
+      display: none;
+    }
 
     /* ---------- FINAL CTA ---------- */
     .cbs-cta {
@@ -2689,13 +3520,21 @@ const icons: Record<string, string> = {
       color: var(--bbg-white);
       border-radius: var(--radius-lg);
       text-align: center;
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
     .cbs-cta::before {
-      content: ""; position: absolute;
-      top: -40%; right: -10%;
-      width: 420px; height: 420px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 65%
+      );
       pointer-events: none;
     }
     .cbs-cta .eyebrow--on-dark {
@@ -2718,7 +3557,8 @@ const icons: Record<string, string> = {
       line-height: 1.55;
     }
     .cbs-cta__actions {
-      display: flex; flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
       gap: var(--space-3);
       justify-content: center;
       position: relative;
@@ -2754,14 +3594,17 @@ const icons: Record<string, string> = {
         if (reduced || !('IntersectionObserver' in window)) {
           revealEls.forEach((el) => el.classList.add('is-in'));
         } else {
-          const io = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-in');
-                io.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-in');
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+          );
           revealEls.forEach((el) => io.observe(el));
         }
       }
@@ -2790,14 +3633,17 @@ const icons: Record<string, string> = {
           };
           requestAnimationFrame(tick);
         };
-        const counterIo = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animate(entry.target);
-              counterIo.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.5 });
+        const counterIo = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animate(entry.target);
+                counterIo.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
         counters.forEach((el) => counterIo.observe(el));
       } else {
         counters.forEach((el) => {
@@ -2821,7 +3667,7 @@ const icons: Record<string, string> = {
           if (parallaxEl && heroEl && !reduced) {
             const heroH = heroEl.offsetHeight;
             if (scrollY < heroH) {
-              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+              parallaxEl.style.setProperty('--parallax-y', scrollY * 0.18 + 'px');
             }
           }
           if (progressEl) {
@@ -2894,11 +3740,13 @@ const icons: Record<string, string> = {
             if (e.key === 'ArrowRight') {
               e.preventDefault();
               const next = tabs[(idx + 1) % tabs.length];
-              next.focus(); setActive(next);
+              next.focus();
+              setActive(next);
             } else if (e.key === 'ArrowLeft') {
               e.preventDefault();
               const prev = tabs[(idx - 1 + tabs.length) % tabs.length];
-              prev.focus(); setActive(prev);
+              prev.focus();
+              setActive(prev);
             }
           });
         });
@@ -3021,14 +3869,17 @@ const icons: Record<string, string> = {
 
         // Reveal cards (drives meter fill)
         if ('IntersectionObserver' in window) {
-          const ledgerIo = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-in');
-                ledgerIo.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.18 });
+          const ledgerIo = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-in');
+                  ledgerIo.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.18 },
+          );
           ledgerCards.forEach((c) => ledgerIo.observe(c));
         } else {
           ledgerCards.forEach((c) => c.classList.add('is-in'));
@@ -3039,7 +3890,8 @@ const icons: Record<string, string> = {
         const switcher = costRoot.querySelector('.cbs-cost__switcher');
         const dataEl = costRoot.querySelector('[data-cost-data]');
         const grid = costRoot.querySelector('.cbs-cost__grid');
-        let dataTp = {}, dataDist = {};
+        let dataTp = {},
+          dataDist = {};
         try {
           if (dataEl) {
             dataTp = JSON.parse(dataEl.getAttribute('data-tp') || '{}');

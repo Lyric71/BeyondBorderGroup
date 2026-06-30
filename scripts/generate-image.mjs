@@ -21,7 +21,9 @@ if (outFlagIdx !== -1 && args[outFlagIdx + 1]) {
 const prompt = args.join(' ');
 
 if (!prompt) {
-  console.error('Usage: node scripts/generate-image.mjs [--size 16:9] [--out path/to/file.png] <prompt>');
+  console.error(
+    'Usage: node scripts/generate-image.mjs [--size 16:9] [--out path/to/file.png] <prompt>',
+  );
   process.exit(1);
 }
 
@@ -32,7 +34,7 @@ async function generate() {
   const submitRes = await fetch(`${API_URL}/${MODEL}`, {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${API_KEY}`,
+      Authorization: `Bearer ${API_KEY}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ prompt, output_format: 'png', quality: '1K', size, aspect_ratio: size }),
@@ -52,7 +54,7 @@ async function generate() {
     process.stdout.write('.');
 
     const statusRes = await fetch(`${API_URL}/predictions/${taskId}/result`, {
-      headers: { 'Authorization': `Bearer ${API_KEY}` },
+      headers: { Authorization: `Bearer ${API_KEY}` },
     });
 
     const statusData = await statusRes.json();
@@ -64,9 +66,10 @@ async function generate() {
       const imgRes = await fetch(imageUrl);
       const buffer = Buffer.from(await imgRes.arrayBuffer());
       const filename = outPath ?? `generated-${Date.now()}.png`;
-      const dir = filename.includes('/') || filename.includes('\\')
-        ? filename.replace(/[\\/][^\\/]*$/, '')
-        : null;
+      const dir =
+        filename.includes('/') || filename.includes('\\')
+          ? filename.replace(/[\\/][^\\/]*$/, '')
+          : null;
       if (dir) fs.mkdirSync(dir, { recursive: true });
       fs.writeFileSync(filename, buffer);
 

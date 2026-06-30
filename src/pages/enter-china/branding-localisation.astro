@@ -4,22 +4,19 @@ import Layout from '../../layouts/Layout.astro';
 const pillars = [
   {
     h: 'Understand the Chinese consumer',
-    body:
-      'Chinese consumers are not one audience. Preferences shift by city tier, age and platform. We research the nuances first, then build the brand on top.',
+    body: 'Chinese consumers are not one audience. Preferences shift by city tier, age and platform. We research the nuances first, then build the brand on top.',
     image: '/Images/branding/positioning.png',
     alt: 'Research, planning and consumer insight materials for a China brand build',
   },
   {
     h: 'Get the Chinese name right',
-    body:
-      'Most Chinese consumers do not read foreign languages. The right name is easy to say and carries positive meaning. The wrong one is a permanent ceiling on growth.',
+    body: 'Most Chinese consumers do not read foreign languages. The right name is easy to say and carries positive meaning. The wrong one is a permanent ceiling on growth.',
     image: '/Images/branding/naming.png',
     alt: 'Chinese brand naming exploration with characters and notes',
   },
   {
     h: 'Transcreate, do not translate',
-    body:
-      'Adapting a brand for China is more than language. Story, imagery and experience all need to fit local taste. The result feels native, not imported.',
+    body: 'Adapting a brand for China is more than language. Story, imagery and experience all need to fit local taste. The result feels native, not imported.',
     image: '/Images/branding/visual-identity.webp',
     alt: 'Visual identity layouts adapted for Chinese platforms and packaging',
   },
@@ -289,7 +286,16 @@ const faqs = [
   },
 ];
 
-const faqCategories = ['All', 'Strategy', 'Naming', 'Identity', 'Assets', 'Process', 'Cost', 'Pitfalls'];
+const faqCategories = [
+  'All',
+  'Strategy',
+  'Naming',
+  'Identity',
+  'Assets',
+  'Process',
+  'Cost',
+  'Pitfalls',
+];
 
 const icons: Record<string, string> = {
   target: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>`,
@@ -308,11 +314,13 @@ const icons: Record<string, string> = {
 >
   <div class="bl-progress" aria-hidden="true"><div class="bl-progress__bar"></div></div>
   <article class="bl">
-
     {/* ---------- HERO ---------- */}
     <section class="bl-hero" data-hero>
       <div class="bl-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/branding/hero.png" alt="Brand assets in market, packaging and visual identity on display" />
+        <img
+          src="/Images/branding/hero.png"
+          alt="Brand assets in market, packaging and visual identity on display"
+        />
       </div>
       <div class="bl-hero__overlay" aria-hidden="true"></div>
       <div class="bl-hero__grain" aria-hidden="true"></div>
@@ -375,17 +383,19 @@ const icons: Record<string, string> = {
         </header>
 
         <div class="bl-pillars">
-          {pillars.map((p, i) => (
-            <article class="bl-pillar bl-reveal" style={`--reveal-delay: ${i * 100}ms;`}>
-              <figure class="bl-pillar__media">
-                <img src={p.image} alt={p.alt} loading="lazy" decoding="async" />
-              </figure>
-              <div class="bl-pillar__body">
-                <h3>{p.h}</h3>
-                <p>{p.body}</p>
-              </div>
-            </article>
-          ))}
+          {
+            pillars.map((p, i) => (
+              <article class="bl-pillar bl-reveal" style={`--reveal-delay: ${i * 100}ms;`}>
+                <figure class="bl-pillar__media">
+                  <img src={p.image} alt={p.alt} loading="lazy" decoding="async" />
+                </figure>
+                <div class="bl-pillar__body">
+                  <h3>{p.h}</h3>
+                  <p>{p.body}</p>
+                </div>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -403,24 +413,35 @@ const icons: Record<string, string> = {
             </p>
             <p>
               Fifteen years in the Chinese market. Beauty, F&amp;B, automotive, fashion and tech.
-              Launches, relaunches, missteps fixed and identities that hold up against intense
-              local competition.
+              Launches, relaunches, missteps fixed and identities that hold up against intense local
+              competition.
             </p>
           </div>
 
           <ul class="bl-promise bl-reveal" style="--reveal-delay: 100ms;">
             <li><span class="eyebrow">What you can expect</span></li>
-            {promises.map((p) => (
-              <li class="bl-promise__item">
-                <span class="bl-promise__check" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                </span>
-                <div>
-                  <h4>{p.title}</h4>
-                  <p>{p.desc}</p>
-                </div>
-              </li>
-            ))}
+            {
+              promises.map((p) => (
+                <li class="bl-promise__item">
+                  <span class="bl-promise__check" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="5 12 10 17 19 8" />
+                    </svg>
+                  </span>
+                  <div>
+                    <h4>{p.title}</h4>
+                    <p>{p.desc}</p>
+                  </div>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
@@ -441,30 +462,41 @@ const icons: Record<string, string> = {
         </header>
 
         <div class="bl-svc-grid">
-          {services.map((s, i) => (
-            <article
-              class="bl-svc-card bl-reveal"
-              style={`--svc-color: ${s.color}; --svc-soft: ${s.colorSoft}; --reveal-delay: ${i * 80}ms;`}
-            >
-              <div class="bl-svc-card__head">
-                <span class="bl-svc-card__icon" set:html={icons[s.icon]} />
-                <span class="bl-svc-card__short">{s.short}</span>
-              </div>
-              <h3 class="bl-svc-card__title">{s.title}</h3>
-              <p class="bl-svc-card__desc">{s.desc}</p>
-              <ul class="bl-svc-card__points">
-                {s.points.map((b) => (
-                  <li>
-                    <span class="bl-svc-card__bullet" aria-hidden="true"></span>
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
-              <span class="bl-svc-card__arrow" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </span>
-            </article>
-          ))}
+          {
+            services.map((s, i) => (
+              <article
+                class="bl-svc-card bl-reveal"
+                style={`--svc-color: ${s.color}; --svc-soft: ${s.colorSoft}; --reveal-delay: ${i * 80}ms;`}
+              >
+                <div class="bl-svc-card__head">
+                  <span class="bl-svc-card__icon" set:html={icons[s.icon]} />
+                  <span class="bl-svc-card__short">{s.short}</span>
+                </div>
+                <h3 class="bl-svc-card__title">{s.title}</h3>
+                <p class="bl-svc-card__desc">{s.desc}</p>
+                <ul class="bl-svc-card__points">
+                  {s.points.map((b) => (
+                    <li>
+                      <span class="bl-svc-card__bullet" aria-hidden="true" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+                <span class="bl-svc-card__arrow" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </span>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -484,69 +516,84 @@ const icons: Record<string, string> = {
 
         <div class="bl-tabs bl-reveal" data-tabs>
           <div class="bl-tabs__nav" role="tablist">
-            {starts.map((m, i) => (
-              <button
-                type="button"
-                class={`bl-tabs__tab${i === 1 ? ' is-active' : ''}`}
-                role="tab"
-                aria-selected={i === 1 ? 'true' : 'false'}
-                aria-controls={`start-panel-${i}`}
-                id={`start-tab-${i}`}
-                data-tab-target={`start-panel-${i}`}
-              >
-                <span class="bl-tabs__tab-label">{m.name}</span>
-                <span class="bl-tabs__tab-tag">{m.tag}</span>
-                {m.highlight && <span class="bl-tabs__tab-pop">Most common</span>}
-              </button>
-            ))}
+            {
+              starts.map((m, i) => (
+                <button
+                  type="button"
+                  class={`bl-tabs__tab${i === 1 ? ' is-active' : ''}`}
+                  role="tab"
+                  aria-selected={i === 1 ? 'true' : 'false'}
+                  aria-controls={`start-panel-${i}`}
+                  id={`start-tab-${i}`}
+                  data-tab-target={`start-panel-${i}`}
+                >
+                  <span class="bl-tabs__tab-label">{m.name}</span>
+                  <span class="bl-tabs__tab-tag">{m.tag}</span>
+                  {m.highlight && <span class="bl-tabs__tab-pop">Most common</span>}
+                </button>
+              ))
+            }
             <span class="bl-tabs__indicator" aria-hidden="true"></span>
           </div>
 
           <div class="bl-tabs__panels">
-            {starts.map((m, i) => (
-              <div
-                class={`bl-tabs__panel${i === 1 ? ' is-active' : ''}`}
-                role="tabpanel"
-                id={`start-panel-${i}`}
-                aria-labelledby={`start-tab-${i}`}
-                hidden={i !== 1}
-              >
-                <div class="bl-tabs__panel-grid">
-                  <div class="bl-tabs__lead">
-                    <span class="bl-tabs__pillset">
-                      <span class="bl-tabs__pill">{m.tag}</span>
-                    </span>
-                    <h3 class="bl-tabs__title">{m.name}</h3>
-                    <p class="bl-tabs__desc">{m.desc}</p>
-                    <div class="bl-tabs__when">
-                      <span class="bl-tabs__when-label">Best when</span>
-                      <p>{m.when}</p>
+            {
+              starts.map((m, i) => (
+                <div
+                  class={`bl-tabs__panel${i === 1 ? ' is-active' : ''}`}
+                  role="tabpanel"
+                  id={`start-panel-${i}`}
+                  aria-labelledby={`start-tab-${i}`}
+                  hidden={i !== 1}
+                >
+                  <div class="bl-tabs__panel-grid">
+                    <div class="bl-tabs__lead">
+                      <span class="bl-tabs__pillset">
+                        <span class="bl-tabs__pill">{m.tag}</span>
+                      </span>
+                      <h3 class="bl-tabs__title">{m.name}</h3>
+                      <p class="bl-tabs__desc">{m.desc}</p>
+                      <div class="bl-tabs__when">
+                        <span class="bl-tabs__when-label">Best when</span>
+                        <p>{m.when}</p>
+                      </div>
+                      <a href="/contact" class="btn btn--primary bl-magnetic">
+                        Talk to us about {m.name.toLowerCase()}
+                      </a>
                     </div>
-                    <a href="/contact" class="btn btn--primary bl-magnetic">Talk to us about {m.name.toLowerCase()}</a>
-                  </div>
 
-                  <div class="bl-tabs__body">
-                    <div class="bl-tabs__list-wrap">
-                      <span class="bl-tabs__list-label">What we deliver</span>
-                      <ul class="bl-tabs__list">
-                        {m.bullets.map((b) => (
-                          <li>
-                            <span class="bl-tabs__check" aria-hidden="true">
-                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                            </span>
-                            <span>{b}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="bl-tabs__pricing">
-                      <span class="bl-tabs__pricing-label">Pricing</span>
-                      <span class="bl-tabs__pricing-value">{m.pricing}</span>
+                    <div class="bl-tabs__body">
+                      <div class="bl-tabs__list-wrap">
+                        <span class="bl-tabs__list-label">What we deliver</span>
+                        <ul class="bl-tabs__list">
+                          {m.bullets.map((b) => (
+                            <li>
+                              <span class="bl-tabs__check" aria-hidden="true">
+                                <svg
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2.4"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <polyline points="5 12 10 17 19 8" />
+                                </svg>
+                              </span>
+                              <span>{b}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div class="bl-tabs__pricing">
+                        <span class="bl-tabs__pricing-label">Pricing</span>
+                        <span class="bl-tabs__pricing-value">{m.pricing}</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))
+            }
           </div>
         </div>
       </div>
@@ -557,7 +604,9 @@ const icons: Record<string, string> = {
       <div class="container">
         <div class="bl-trs bl-reveal">
           <div class="bl-trs__text">
-            <span class="eyebrow"><span class="bl-trs__bar" aria-hidden="true"></span>Content production</span>
+            <span class="eyebrow"
+              ><span class="bl-trs__bar" aria-hidden="true"></span>Content production</span
+            >
             <h2 class="bl-trs__title">
               A production house built for what
               <span class="bl-trs__title-emph">content has become.</span>
@@ -572,24 +621,55 @@ const icons: Record<string, string> = {
               turnarounds used to be impossible. Now they are the floor we work from.
             </p>
             <ul class="bl-trs__list">
-              {hubPoints.map((point) => (
-                <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg>
-                  <span>{point}</span>
-                </li>
-              ))}
+              {
+                hubPoints.map((point) => (
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 12.5l5 5L20 6" />
+                    </svg>
+                    <span>{point}</span>
+                  </li>
+                ))
+              }
             </ul>
             <div class="bl-trs__actions">
-              <a class="bl-trs__cta" href="https://hubstudio.ai" target="_blank" rel="noopener noreferrer">
+              <a
+                class="bl-trs__cta"
+                href="https://hubstudio.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>Visit hubStudio</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg
+                >
               </a>
               <span class="bl-trs__meta">hubStudio · Shanghai</span>
             </div>
           </div>
 
           <aside class="bl-trs__aside" aria-label="hubStudio at a glance">
-            <a class="bl-trs__frame" href="https://hubstudio.ai" target="_blank" rel="noopener noreferrer" aria-label="Open hubStudio in a new tab">
+            <a
+              class="bl-trs__frame"
+              href="https://hubstudio.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open hubStudio in a new tab"
+            >
               <span class="bl-trs__chrome" aria-hidden="true">
                 <span class="bl-trs__dot"></span>
                 <span class="bl-trs__dot"></span>
@@ -637,21 +717,29 @@ const icons: Record<string, string> = {
             <div class="bl-journey__rail-fill" data-journey-fill></div>
           </div>
           <ol class="bl-journey__list">
-            {steps.map((s, i) => (
-              <li class="bl-journey__item bl-reveal" data-journey-item style={`--reveal-delay: ${i * 80}ms;`}>
-                <span class="bl-journey__dot" aria-hidden="true">
-                  <span class="bl-journey__dot-inner"></span>
-                </span>
-                <span class="bl-journey__phase">Phase {i === 0 ? 'one' : i === 1 ? 'two' : 'three'}</span>
-                <div class="bl-journey__card">
-                  <span class="bl-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
-                  <div>
-                    <h3 class="bl-journey__title">{s.title}</h3>
-                    <p class="bl-journey__desc">{s.desc}</p>
+            {
+              steps.map((s, i) => (
+                <li
+                  class="bl-journey__item bl-reveal"
+                  data-journey-item
+                  style={`--reveal-delay: ${i * 80}ms;`}
+                >
+                  <span class="bl-journey__dot" aria-hidden="true">
+                    <span class="bl-journey__dot-inner" />
+                  </span>
+                  <span class="bl-journey__phase">
+                    Phase {i === 0 ? 'one' : i === 1 ? 'two' : 'three'}
+                  </span>
+                  <div class="bl-journey__card">
+                    <span class="bl-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
+                    <div>
+                      <h3 class="bl-journey__title">{s.title}</h3>
+                      <p class="bl-journey__desc">{s.desc}</p>
+                    </div>
                   </div>
-                </div>
-              </li>
-            ))}
+                </li>
+              ))
+            }
           </ol>
         </div>
       </div>
@@ -669,41 +757,61 @@ const icons: Record<string, string> = {
           </p>
         </header>
 
-        <div class="bl-faq-filter bl-reveal" data-faq-filter role="tablist" aria-label="Filter FAQs by category">
-          {faqCategories.map((c, i) => (
-            <button
-              type="button"
-              class={`bl-faq-chip${i === 0 ? ' is-active' : ''}`}
-              role="tab"
-              aria-selected={i === 0 ? 'true' : 'false'}
-              data-faq-cat={c}
-            >
-              <span class="bl-faq-chip__label">{c}</span>
-              <span class="bl-faq-chip__count">{c === 'All' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
-            </button>
-          ))}
+        <div
+          class="bl-faq-filter bl-reveal"
+          data-faq-filter
+          role="tablist"
+          aria-label="Filter FAQs by category"
+        >
+          {
+            faqCategories.map((c, i) => (
+              <button
+                type="button"
+                class={`bl-faq-chip${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                data-faq-cat={c}
+              >
+                <span class="bl-faq-chip__label">{c}</span>
+                <span class="bl-faq-chip__count">
+                  {c === 'All' ? faqs.length : faqs.filter((f) => f.cat === c).length}
+                </span>
+              </button>
+            ))
+          }
         </div>
 
         <div class="bl-faq" data-faq-list>
-          {faqs.map((f, i) => (
-            <details
-              class="bl-faq__item bl-reveal"
-              data-faq-cat={f.cat}
-              open={i === 0}
-              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
-            >
-              <summary class="bl-faq__q">
-                <span class="bl-faq__cat-tag">{f.cat}</span>
-                <span class="bl-faq__q-text">{f.q}</span>
-                <span class="bl-faq__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </span>
-              </summary>
-              <div class="bl-faq__a">
-                <p>{f.a}</p>
-              </div>
-            </details>
-          ))}
+          {
+            faqs.map((f, i) => (
+              <details
+                class="bl-faq__item bl-reveal"
+                data-faq-cat={f.cat}
+                open={i === 0}
+                style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+              >
+                <summary class="bl-faq__q">
+                  <span class="bl-faq__cat-tag">{f.cat}</span>
+                  <span class="bl-faq__q-text">{f.q}</span>
+                  <span class="bl-faq__icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </summary>
+                <div class="bl-faq__a">
+                  <p>{f.a}</p>
+                </div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -728,7 +836,9 @@ const icons: Record<string, string> = {
   </article>
 
   <style is:global>
-    .bl .container--narrow { max-width: 880px; }
+    .bl .container--narrow {
+      max-width: 880px;
+    }
 
     @media (prefers-reduced-motion: no-preference) {
       .bl-reveal {
@@ -744,15 +854,20 @@ const icons: Record<string, string> = {
       }
       .bl-magnetic {
         will-change: transform;
-        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+        transition:
+          transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 220ms ease,
+          background-color 200ms ease,
+          color 200ms ease;
       }
     }
 
     /* ---------- SCROLL PROGRESS BAR ---------- */
     .bl-progress {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 3px;
       z-index: 1000;
       background: transparent;
@@ -761,7 +876,7 @@ const icons: Record<string, string> = {
     .bl-progress__bar {
       height: 100%;
       width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #C8102E 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 60%, #c8102e 100%);
       box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
@@ -777,11 +892,19 @@ const icons: Record<string, string> = {
       overflow: hidden;
       isolation: isolate;
     }
-    body:has(.bl-hero) .bl-hero { padding-top: clamp(112px, 10vh, 144px); }
-    @media (max-width: 1024px) {
-      body:has(.bl-hero) .bl-hero { padding-top: clamp(96px, 9vh, 116px); }
+    body:has(.bl-hero) .bl-hero {
+      padding-top: clamp(112px, 10vh, 144px);
     }
-    .bl-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    @media (max-width: 1024px) {
+      body:has(.bl-hero) .bl-hero {
+        padding-top: clamp(96px, 9vh, 116px);
+      }
+    }
+    .bl-hero__bg {
+      position: absolute;
+      inset: -10% 0 0;
+      z-index: -3;
+    }
     .bl-hero__bg img {
       width: 100%;
       height: 110%;
@@ -792,26 +915,32 @@ const icons: Record<string, string> = {
       filter: saturate(0.95);
     }
     .bl-hero__overlay {
-      position: absolute; inset: 0; z-index: -2;
+      position: absolute;
+      inset: 0;
+      z-index: -2;
       background:
-        linear-gradient(110deg,
+        linear-gradient(
+          110deg,
           rgba(8, 18, 28, 0.92) 0%,
           rgba(8, 18, 28, 0.72) 42%,
-          rgba(8, 18, 28, 0.32) 100%),
-        radial-gradient(120% 80% at 0% 100%,
-          rgba(200, 16, 46, 0.28) 0%,
-          rgba(200, 16, 46, 0) 60%);
+          rgba(8, 18, 28, 0.32) 100%
+        ),
+        radial-gradient(120% 80% at 0% 100%, rgba(200, 16, 46, 0.28) 0%, rgba(200, 16, 46, 0) 60%);
     }
     .bl-hero__grain {
-      position: absolute; inset: 0; z-index: -1;
-      background-image:
-        radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
       background-size: 3px 3px;
       mix-blend-mode: overlay;
       opacity: 0.45;
       pointer-events: none;
     }
-    .bl-hero__inner { max-width: 980px; position: relative; }
+    .bl-hero__inner {
+      max-width: 980px;
+      position: relative;
+    }
     .bl-hero__crumbs {
       margin-bottom: var(--space-4);
       font-size: var(--fs-small);
@@ -820,12 +949,17 @@ const icons: Record<string, string> = {
       align-items: center;
       color: rgba(255, 255, 255, 0.7);
     }
-    .bl-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
-    .bl-hero__crumbs a:hover { color: var(--bbg-white); }
+    .bl-hero__crumbs a {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+    .bl-hero__crumbs a:hover {
+      color: var(--bbg-white);
+    }
     .bl-hero__inner .eyebrow--on-dark {
       display: inline-block;
       margin-bottom: var(--space-3);
-      color: #C8102E;
+      color: #c8102e;
     }
     .bl-hero__title {
       font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
@@ -839,9 +973,11 @@ const icons: Record<string, string> = {
       flex-direction: column;
       gap: 0.05em;
     }
-    .bl-hero__title-row { display: block; }
+    .bl-hero__title-row {
+      display: block;
+    }
     .bl-hero__title-row--accent {
-      color: #C8102E;
+      color: #c8102e;
       font-weight: 500;
       font-style: italic;
       letter-spacing: -0.018em;
@@ -853,20 +989,25 @@ const icons: Record<string, string> = {
       padding: 0 0.15em;
     }
     .bl-hero__title-row--highlight::before {
-      content: "";
+      content: '';
       position: absolute;
-      left: 0; right: 0;
+      left: 0;
+      right: 0;
       bottom: 0.04em;
       height: 0.18em;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px;
       transform-origin: left center;
       animation: bl-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
       z-index: -1;
     }
     @keyframes bl-underline {
-      from { transform: scaleX(0); }
-      to { transform: scaleX(1); }
+      from {
+        transform: scaleX(0);
+      }
+      to {
+        transform: scaleX(1);
+      }
     }
     .bl-hero__lead {
       font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
@@ -875,8 +1016,15 @@ const icons: Record<string, string> = {
       max-width: 58ch;
       margin: 0 0 var(--space-5);
     }
-    .bl-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
-    .bl-magnetic:hover { transform: translateY(-2px); }
+    .bl-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+    .bl-magnetic:hover {
+      transform: translateY(-2px);
+    }
 
     .bl-hero__meta {
       display: flex;
@@ -886,14 +1034,18 @@ const icons: Record<string, string> = {
       border-top: 1px solid rgba(255, 255, 255, 0.14);
       max-width: 720px;
     }
-    .bl-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .bl-hero__meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
     .bl-hero__meta-num {
       font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1;
       color: var(--bbg-white);
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .bl-hero__meta-label {
       font-size: 0.85rem;
@@ -916,7 +1068,9 @@ const icons: Record<string, string> = {
       font-weight: 600;
       transition: color 200ms ease;
     }
-    .bl-hero__scroll:hover { color: var(--bbg-white); }
+    .bl-hero__scroll:hover {
+      color: var(--bbg-white);
+    }
     .bl-hero__scroll-line {
       width: 1px;
       height: 40px;
@@ -925,21 +1079,30 @@ const icons: Record<string, string> = {
       overflow: hidden;
     }
     .bl-hero__scroll-line::after {
-      content: "";
+      content: '';
       position: absolute;
       top: -100%;
-      left: 0; right: 0;
+      left: 0;
+      right: 0;
       height: 50%;
       background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
       animation: bl-scroll-tick 1.8s ease-in-out infinite;
     }
     @keyframes bl-scroll-tick {
-      0% { top: -50%; }
-      100% { top: 100%; }
+      0% {
+        top: -50%;
+      }
+      100% {
+        top: 100%;
+      }
     }
     @media (max-width: 720px) {
-      .bl-hero__scroll { display: none; }
-      .bl-hero__meta { gap: var(--space-4); }
+      .bl-hero__scroll {
+        display: none;
+      }
+      .bl-hero__meta {
+        gap: var(--space-4);
+      }
     }
 
     /* ---------- THREE THINGS ---------- */
@@ -955,7 +1118,10 @@ const icons: Record<string, string> = {
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease),
+        transform var(--dur) var(--ease);
     }
     .bl-pillar:hover {
       transform: translateY(-4px);
@@ -975,8 +1141,12 @@ const icons: Record<string, string> = {
       display: block;
       transition: transform 600ms var(--ease);
     }
-    .bl-pillar:hover .bl-pillar__media img { transform: scale(1.04); }
-    .bl-pillar__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+    .bl-pillar:hover .bl-pillar__media img {
+      transform: scale(1.04);
+    }
+    .bl-pillar__body {
+      padding: var(--space-5) var(--space-6) var(--space-6);
+    }
     .bl-pillar__body h3 {
       font-size: clamp(1.125rem, 0.5vw + 0.9rem, 1.375rem);
       line-height: 1.25;
@@ -991,10 +1161,14 @@ const icons: Record<string, string> = {
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .bl-pillars { grid-template-columns: repeat(2, 1fr); }
+      .bl-pillars {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (max-width: 640px) {
-      .bl-pillars { grid-template-columns: 1fr; }
+      .bl-pillars {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- VALUE + PROMISES ---------- */
@@ -1027,7 +1201,9 @@ const icons: Record<string, string> = {
       flex-direction: column;
       gap: var(--space-5);
     }
-    .bl-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .bl-promise > li:first-child .eyebrow {
+      margin-bottom: 0;
+    }
     .bl-promise__item {
       display: grid;
       grid-template-columns: 32px 1fr;
@@ -1045,7 +1221,10 @@ const icons: Record<string, string> = {
       justify-content: center;
       flex-shrink: 0;
     }
-    .bl-promise__check svg { width: 16px; height: 16px; }
+    .bl-promise__check svg {
+      width: 16px;
+      height: 16px;
+    }
     .bl-promise__item h4 {
       font-size: 1.125rem;
       margin: 0 0 var(--space-2);
@@ -1059,11 +1238,18 @@ const icons: Record<string, string> = {
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .bl-value { grid-template-columns: 1fr; gap: var(--space-6); }
+      .bl-value {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
     }
 
     /* ---------- SERVICES BENTO ---------- */
-    .bl-svc-section .section-header--split { align-items: end; gap: var(--space-6); margin-bottom: var(--space-6); }
+    .bl-svc-section .section-header--split {
+      align-items: end;
+      gap: var(--space-6);
+      margin-bottom: var(--space-6);
+    }
     .bl-svc-lead {
       max-width: 44ch;
       font-size: 1rem;
@@ -1094,24 +1280,32 @@ const icons: Record<string, string> = {
         box-shadow 280ms ease;
     }
     .bl-svc-card::before {
-      content: "";
+      content: '';
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 4px;
-      background: linear-gradient(90deg, var(--svc-color, #C8102E) 0%, var(--svc-color, #C8102E) 50%, transparent 100%);
+      background: linear-gradient(
+        90deg,
+        var(--svc-color, #c8102e) 0%,
+        var(--svc-color, #c8102e) 50%,
+        transparent 100%
+      );
       transform: scaleX(0.3);
       transform-origin: left center;
       transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
       z-index: 1;
     }
     .bl-svc-card::after {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(140% 90% at 100% 0%,
-        color-mix(in srgb, var(--svc-color, #C8102E) 14%, transparent) 0%,
-        transparent 55%);
+      background: radial-gradient(
+        140% 90% at 100% 0%,
+        color-mix(in srgb, var(--svc-color, #c8102e) 14%, transparent) 0%,
+        transparent 55%
+      );
       opacity: 0;
       transition: opacity 360ms ease;
       z-index: -1;
@@ -1119,20 +1313,29 @@ const icons: Record<string, string> = {
     }
     .bl-svc-card:hover {
       transform: translateY(-6px);
-      border-color: color-mix(in srgb, var(--svc-color, #C8102E) 55%, var(--bbg-border));
-      box-shadow: 0 22px 50px -26px color-mix(in srgb, var(--svc-color, #C8102E) 50%, transparent),
-                  0 6px 14px -8px rgba(0, 0, 0, 0.08);
+      border-color: color-mix(in srgb, var(--svc-color, #c8102e) 55%, var(--bbg-border));
+      box-shadow:
+        0 22px 50px -26px color-mix(in srgb, var(--svc-color, #c8102e) 50%, transparent),
+        0 6px 14px -8px rgba(0, 0, 0, 0.08);
     }
-    .bl-svc-card:hover::before { transform: scaleX(1); }
-    .bl-svc-card:hover::after { opacity: 1; }
+    .bl-svc-card:hover::before {
+      transform: scaleX(1);
+    }
+    .bl-svc-card:hover::after {
+      opacity: 1;
+    }
     .bl-svc-card:hover .bl-svc-card__icon {
       transform: scale(1.06) rotate(-4deg);
       background: var(--svc-color, var(--bbg-blue));
       color: var(--bbg-white);
-      box-shadow: 0 12px 24px -14px color-mix(in srgb, var(--svc-color, #C8102E) 70%, transparent),
-                  inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #C8102E) 30%, transparent);
+      box-shadow:
+        0 12px 24px -14px color-mix(in srgb, var(--svc-color, #c8102e) 70%, transparent),
+        inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #c8102e) 30%, transparent);
     }
-    .bl-svc-card:hover .bl-svc-card__arrow { transform: translateX(4px); color: var(--svc-color, var(--bbg-blue)); }
+    .bl-svc-card:hover .bl-svc-card__arrow {
+      transform: translateX(4px);
+      color: var(--svc-color, var(--bbg-blue));
+    }
     .bl-svc-card__head {
       display: flex;
       align-items: center;
@@ -1148,12 +1351,18 @@ const icons: Record<string, string> = {
       border-radius: 16px;
       background: var(--svc-soft, var(--bbg-blue-light));
       color: var(--svc-color, var(--bbg-blue));
-      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #C8102E) 18%, transparent);
-      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
-                  background 320ms ease, color 320ms ease, box-shadow 320ms ease;
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #c8102e) 18%, transparent);
+      transition:
+        transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        background 320ms ease,
+        color 320ms ease,
+        box-shadow 320ms ease;
       flex-shrink: 0;
     }
-    .bl-svc-card__icon svg { width: 28px; height: 28px; }
+    .bl-svc-card__icon svg {
+      width: 28px;
+      height: 28px;
+    }
     .bl-svc-card__short {
       font-size: 0.72rem;
       letter-spacing: 0.1em;
@@ -1208,14 +1417,26 @@ const icons: Record<string, string> = {
       bottom: var(--space-6);
       right: var(--space-6);
       color: var(--bbg-text-muted);
-      transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1), color 200ms ease;
+      transition:
+        transform 280ms cubic-bezier(0.16, 1, 0.3, 1),
+        color 200ms ease;
       pointer-events: none;
     }
-    .bl-svc-card__arrow svg { width: 22px; height: 22px; }
+    .bl-svc-card__arrow svg {
+      width: 22px;
+      height: 22px;
+    }
     @media (max-width: 720px) {
-      .bl-svc-grid { grid-template-columns: 1fr; }
-      .bl-svc-card { min-height: 0; }
-      .bl-svc-section .section-header--split { flex-direction: column; align-items: flex-start; }
+      .bl-svc-grid {
+        grid-template-columns: 1fr;
+      }
+      .bl-svc-card {
+        min-height: 0;
+      }
+      .bl-svc-section .section-header--split {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
     /* ---------- STARTING POINTS TABS ---------- */
@@ -1245,13 +1466,23 @@ const icons: Record<string, string> = {
       flex-direction: column;
       gap: 0.35rem;
       color: var(--bbg-text-muted);
-      transition: color 240ms ease, background 240ms ease;
+      transition:
+        color 240ms ease,
+        background 240ms ease;
       border-right: 1px solid var(--bbg-border);
       font-family: inherit;
     }
-    .bl-tabs__tab:last-child { border-right: none; }
-    .bl-tabs__tab:hover { color: var(--bbg-ink); background: rgba(200, 16, 46, 0.04); }
-    .bl-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .bl-tabs__tab:last-child {
+      border-right: none;
+    }
+    .bl-tabs__tab:hover {
+      color: var(--bbg-ink);
+      background: rgba(200, 16, 46, 0.04);
+    }
+    .bl-tabs__tab.is-active {
+      color: var(--bbg-ink);
+      background: var(--bbg-white);
+    }
     .bl-tabs__tab-label {
       font-size: 1.0625rem;
       font-weight: 700;
@@ -1263,7 +1494,9 @@ const icons: Record<string, string> = {
       color: var(--bbg-text-muted);
       line-height: 1.35;
     }
-    .bl-tabs__tab.is-active .bl-tabs__tab-tag { color: var(--bbg-blue); }
+    .bl-tabs__tab.is-active .bl-tabs__tab-tag {
+      color: var(--bbg-blue);
+    }
     .bl-tabs__tab-pop {
       position: absolute;
       top: var(--space-3);
@@ -1283,30 +1516,48 @@ const icons: Record<string, string> = {
       left: 0;
       width: 25%;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px 2px 0 0;
       transform: translateX(0);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
     }
-    .bl-tabs__panels { background: var(--bbg-white); }
+    .bl-tabs__panels {
+      background: var(--bbg-white);
+    }
     .bl-tabs__panel {
       padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
       animation: bl-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes bl-tab-in {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .bl-tabs__panel[hidden] { display: none; }
+    .bl-tabs__panel[hidden] {
+      display: none;
+    }
     .bl-tabs__panel-grid {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       gap: clamp(var(--space-5), 3vw, var(--space-7));
       align-items: start;
     }
-    .bl-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
-    .bl-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .bl-tabs__lead {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .bl-tabs__pillset {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
     .bl-tabs__pill {
       font-size: 0.78rem;
       font-weight: 600;
@@ -1343,7 +1594,12 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
       margin-bottom: 0.35rem;
     }
-    .bl-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
+    .bl-tabs__when p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
     .bl-tabs__body {
       display: flex;
       flex-direction: column;
@@ -1392,7 +1648,10 @@ const icons: Record<string, string> = {
       flex-shrink: 0;
       margin-top: 1px;
     }
-    .bl-tabs__check svg { width: 12px; height: 12px; }
+    .bl-tabs__check svg {
+      width: 12px;
+      height: 12px;
+    }
     .bl-tabs__pricing {
       display: flex;
       align-items: baseline;
@@ -1417,29 +1676,52 @@ const icons: Record<string, string> = {
       line-height: 1.4;
     }
     @media (max-width: 1024px) {
-      .bl-tabs__nav { grid-template-columns: repeat(2, 1fr); }
-      .bl-tabs__tab { border-bottom: 1px solid var(--bbg-border); }
-      .bl-tabs__tab:nth-child(2) { border-right: none; }
-      .bl-tabs__indicator { display: none; }
-      .bl-tabs__panel-grid { grid-template-columns: 1fr; }
+      .bl-tabs__nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .bl-tabs__tab {
+        border-bottom: 1px solid var(--bbg-border);
+      }
+      .bl-tabs__tab:nth-child(2) {
+        border-right: none;
+      }
+      .bl-tabs__indicator {
+        display: none;
+      }
+      .bl-tabs__panel-grid {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 560px) {
-      .bl-tabs__nav { grid-template-columns: 1fr; }
-      .bl-tabs__tab { border-right: none; }
+      .bl-tabs__nav {
+        grid-template-columns: 1fr;
+      }
+      .bl-tabs__tab {
+        border-right: none;
+      }
     }
 
     /* ---------- CASES CTA ---------- */
-    .bl-cases-cta { display: flex; justify-content: center; }
+    .bl-cases-cta {
+      display: flex;
+      justify-content: center;
+    }
 
     /* ---------- CONTENT PRODUCTION (TheRedScroll editorial) ---------- */
-    .bl-trs-section { position: relative; isolation: isolate; overflow: hidden; }
+    .bl-trs-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .bl-trs {
       display: grid;
       grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
       gap: clamp(var(--space-6), 4vw, var(--space-8));
       align-items: center;
     }
-    .bl-trs__text { max-width: 60ch; }
+    .bl-trs__text {
+      max-width: 60ch;
+    }
     .bl-trs__text .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -1513,15 +1795,23 @@ const icons: Record<string, string> = {
       font-weight: 600;
       font-size: 0.95rem;
       letter-spacing: 0.01em;
-      transition: background 200ms ease, transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+      transition:
+        background 200ms ease,
+        transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
     }
     .bl-trs__cta:hover {
       background: var(--bbg-blue);
       color: var(--bbg-white);
       transform: translateY(-2px);
     }
-    .bl-trs__cta svg { width: 18px; height: 18px; }
-    .bl-trs__cta:hover svg { transform: translateX(2px); transition: transform 200ms ease; }
+    .bl-trs__cta svg {
+      width: 18px;
+      height: 18px;
+    }
+    .bl-trs__cta:hover svg {
+      transform: translateX(2px);
+      transition: transform 200ms ease;
+    }
     .bl-trs__meta {
       font-size: 0.78rem;
       font-weight: 600;
@@ -1543,24 +1833,27 @@ const icons: Record<string, string> = {
       overflow: hidden;
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
-      box-shadow: 0 24px 60px -28px rgba(8, 18, 28, 0.28),
-                  0 6px 18px -10px rgba(8, 18, 28, 0.12);
-      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
-                  box-shadow 320ms ease,
-                  border-color 240ms ease;
+      box-shadow:
+        0 24px 60px -28px rgba(8, 18, 28, 0.28),
+        0 6px 18px -10px rgba(8, 18, 28, 0.12);
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 320ms ease,
+        border-color 240ms ease;
     }
     .bl-trs__frame:hover {
       transform: translateY(-4px);
       border-color: rgba(200, 16, 46, 0.4);
-      box-shadow: 0 32px 70px -28px rgba(200, 16, 46, 0.32),
-                  0 8px 22px -10px rgba(8, 18, 28, 0.14);
+      box-shadow:
+        0 32px 70px -28px rgba(200, 16, 46, 0.32),
+        0 8px 22px -10px rgba(8, 18, 28, 0.14);
     }
     .bl-trs__chrome {
       display: flex;
       align-items: center;
       gap: 0.4rem;
       padding: 0.55rem 0.8rem;
-      background: linear-gradient(180deg, #F2F4F7 0%, #E9ECF1 100%);
+      background: linear-gradient(180deg, #f2f4f7 0%, #e9ecf1 100%);
       border-bottom: 1px solid var(--bbg-border);
     }
     .bl-trs__dot {
@@ -1568,11 +1861,17 @@ const icons: Record<string, string> = {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #D6D9DE;
+      background: #d6d9de;
     }
-    .bl-trs__dot:nth-child(1) { background: #FF5F57; }
-    .bl-trs__dot:nth-child(2) { background: #FEBC2E; }
-    .bl-trs__dot:nth-child(3) { background: #28C840; }
+    .bl-trs__dot:nth-child(1) {
+      background: #ff5f57;
+    }
+    .bl-trs__dot:nth-child(2) {
+      background: #febc2e;
+    }
+    .bl-trs__dot:nth-child(3) {
+      background: #28c840;
+    }
     .bl-trs__url {
       margin-left: auto;
       margin-right: auto;
@@ -1583,7 +1882,7 @@ const icons: Record<string, string> = {
       padding: 0.1em 0.7em;
       background: var(--bbg-white);
       border-radius: 999px;
-      border: 1px solid rgba(0,0,0,0.04);
+      border: 1px solid rgba(0, 0, 0, 0.04);
       transform: translateX(-1.5rem);
     }
     .bl-trs__frame img {
@@ -1598,9 +1897,19 @@ const icons: Record<string, string> = {
 
     .bl-trs__rule {
       height: 1px;
-      background: linear-gradient(90deg, transparent 0%, var(--bbg-border) 30%, var(--bbg-border) 70%, transparent 100%);
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--bbg-border) 30%,
+        var(--bbg-border) 70%,
+        transparent 100%
+      );
     }
-    .bl-trs__stat { display: flex; flex-direction: column; gap: 0.35rem; }
+    .bl-trs__stat {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
     .bl-trs__stat-label {
       font-size: 0.72rem;
       font-weight: 700;
@@ -1619,7 +1928,7 @@ const icons: Record<string, string> = {
     }
     .bl-trs__stat-num {
       font-size: clamp(2.5rem, 2.4vw + 1rem, 3.25rem);
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .bl-trs__stat-unit {
       font-size: clamp(1.5rem, 1.4vw + 0.6rem, 2rem);
@@ -1634,15 +1943,26 @@ const icons: Record<string, string> = {
     }
 
     @media (max-width: 1024px) {
-      .bl-trs { grid-template-columns: 1fr; }
-      .bl-trs__aside { order: -1; }
+      .bl-trs {
+        grid-template-columns: 1fr;
+      }
+      .bl-trs__aside {
+        order: -1;
+      }
     }
     @media (max-width: 540px) {
-      .bl-trs__url { transform: none; margin: 0 auto; }
+      .bl-trs__url {
+        transform: none;
+        margin: 0 auto;
+      }
     }
 
     /* ---------- JOURNEY ---------- */
-    .bl-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .bl-journey-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .bl-journey {
       position: relative;
       max-width: 880px;
@@ -1651,33 +1971,39 @@ const icons: Record<string, string> = {
     }
     .bl-journey__rail {
       position: absolute;
-      top: 0; bottom: 0;
+      top: 0;
+      bottom: 0;
       left: 22px;
       width: 2px;
     }
     .bl-journey__rail-track {
-      position: absolute; inset: 0;
+      position: absolute;
+      inset: 0;
       background: var(--bbg-border);
       border-radius: 2px;
     }
     .bl-journey__rail-fill {
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: var(--journey-progress, 0%);
-      background: linear-gradient(180deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px;
       transition: height 120ms linear;
       box-shadow: 0 0 8px rgba(200, 16, 46, 0.4);
     }
     .bl-journey__list {
       list-style: none;
-      padding: 0; margin: 0;
+      padding: 0;
+      margin: 0;
       display: flex;
       flex-direction: column;
       gap: var(--space-7);
     }
-    .bl-journey__item { position: relative; }
+    .bl-journey__item {
+      position: relative;
+    }
     .bl-journey__dot {
       position: absolute;
       left: -56px;
@@ -1698,9 +2024,13 @@ const icons: Record<string, string> = {
       height: 14px;
       border-radius: 50%;
       background: var(--bbg-border);
-      transition: background 320ms ease, transform 320ms ease;
+      transition:
+        background 320ms ease,
+        transform 320ms ease;
     }
-    .bl-journey__item.is-active .bl-journey__dot { border-color: var(--bbg-blue); }
+    .bl-journey__item.is-active .bl-journey__dot {
+      border-color: var(--bbg-blue);
+    }
     .bl-journey__item.is-active .bl-journey__dot-inner {
       background: var(--bbg-blue);
       transform: scale(1.1);
@@ -1716,7 +2046,9 @@ const icons: Record<string, string> = {
       margin-bottom: var(--space-2);
       transition: color 320ms ease;
     }
-    .bl-journey__item.is-active .bl-journey__phase { color: var(--bbg-blue); }
+    .bl-journey__item.is-active .bl-journey__phase {
+      color: var(--bbg-blue);
+    }
     .bl-journey__card {
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
@@ -1725,7 +2057,10 @@ const icons: Record<string, string> = {
       display: flex;
       align-items: flex-start;
       gap: var(--space-4);
-      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 320ms ease,
+        box-shadow 320ms ease,
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .bl-journey__item:hover .bl-journey__card,
     .bl-journey__item.is-active .bl-journey__card {
@@ -1744,7 +2079,10 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
       flex-shrink: 0;
     }
-    .bl-journey__icon svg { width: 24px; height: 24px; }
+    .bl-journey__icon svg {
+      width: 24px;
+      height: 24px;
+    }
     .bl-journey__title {
       font-size: 1.25rem;
       line-height: 1.25;
@@ -1758,11 +2096,25 @@ const icons: Record<string, string> = {
       margin: 0;
     }
     @media (max-width: 600px) {
-      .bl-journey { padding-left: 40px; }
-      .bl-journey__rail { left: 16px; }
-      .bl-journey__dot { left: -40px; width: 32px; height: 32px; }
-      .bl-journey__dot-inner { width: 10px; height: 10px; }
-      .bl-journey__card { flex-direction: column; gap: var(--space-3); }
+      .bl-journey {
+        padding-left: 40px;
+      }
+      .bl-journey__rail {
+        left: 16px;
+      }
+      .bl-journey__dot {
+        left: -40px;
+        width: 32px;
+        height: 32px;
+      }
+      .bl-journey__dot-inner {
+        width: 10px;
+        height: 10px;
+      }
+      .bl-journey__card {
+        flex-direction: column;
+        gap: var(--space-3);
+      }
     }
 
     /* ---------- FAQ FILTER ---------- */
@@ -1788,7 +2140,10 @@ const icons: Record<string, string> = {
       transition: all 220ms ease;
       font-family: inherit;
     }
-    .bl-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .bl-faq-chip:hover {
+      border-color: var(--bbg-blue);
+      color: var(--bbg-blue);
+    }
     .bl-faq-chip.is-active {
       background: var(--bbg-blue);
       border-color: var(--bbg-blue);
@@ -1803,7 +2158,10 @@ const icons: Record<string, string> = {
       color: var(--bbg-text-muted);
       transition: all 220ms ease;
     }
-    .bl-faq-chip:hover .bl-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .bl-faq-chip:hover .bl-faq-chip__count {
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+    }
     .bl-faq-chip.is-active .bl-faq-chip__count {
       background: rgba(255, 255, 255, 0.2);
       color: var(--bbg-white);
@@ -1819,7 +2177,10 @@ const icons: Record<string, string> = {
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-md);
       overflow: hidden;
-      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 240ms ease,
+        box-shadow 240ms ease,
+        transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .bl-faq__item:hover {
       transform: translateX(2px);
@@ -1843,9 +2204,15 @@ const icons: Record<string, string> = {
       list-style: none;
       transition: color var(--dur) var(--ease);
     }
-    .bl-faq__q::-webkit-details-marker { display: none; }
-    .bl-faq__q::marker { display: none; }
-    .bl-faq__item:hover .bl-faq__q { color: var(--bbg-blue); }
+    .bl-faq__q::-webkit-details-marker {
+      display: none;
+    }
+    .bl-faq__q::marker {
+      display: none;
+    }
+    .bl-faq__item:hover .bl-faq__q {
+      color: var(--bbg-blue);
+    }
     .bl-faq__cat-tag {
       display: inline-block;
       font-size: 0.68rem;
@@ -1859,7 +2226,9 @@ const icons: Record<string, string> = {
       margin-right: var(--space-3);
       flex-shrink: 0;
     }
-    .bl-faq__q-text { flex-grow: 1; }
+    .bl-faq__q-text {
+      flex-grow: 1;
+    }
     .bl-faq__icon {
       flex-shrink: 0;
       width: 28px;
@@ -1870,9 +2239,10 @@ const icons: Record<string, string> = {
       border-radius: 50%;
       background: var(--bbg-surface);
       color: var(--bbg-text-muted);
-      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
-                  color var(--dur) var(--ease),
-                  background var(--dur) var(--ease);
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        color var(--dur) var(--ease),
+        background var(--dur) var(--ease);
     }
     .bl-faq__item[open] .bl-faq__icon {
       transform: rotate(180deg);
@@ -1887,11 +2257,21 @@ const icons: Record<string, string> = {
       animation: bl-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes bl-faq-in {
-      from { opacity: 0; transform: translateY(-4px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .bl-faq__a p { margin: 0; }
-    .bl-faq__item.is-hidden { display: none; }
+    .bl-faq__a p {
+      margin: 0;
+    }
+    .bl-faq__item.is-hidden {
+      display: none;
+    }
 
     /* ---------- FINAL CTA ---------- */
     .bl-cta {
@@ -1904,13 +2284,17 @@ const icons: Record<string, string> = {
       overflow: hidden;
     }
     .bl-cta::before {
-      content: "";
+      content: '';
       position: absolute;
       top: -40%;
       right: -10%;
       width: 420px;
       height: 420px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 65%
+      );
       pointer-events: none;
     }
     .bl-cta .eyebrow--on-dark {
@@ -1970,14 +2354,17 @@ const icons: Record<string, string> = {
         if (reduced || !('IntersectionObserver' in window)) {
           revealEls.forEach((el) => el.classList.add('is-in'));
         } else {
-          const io = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-in');
-                io.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-in');
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+          );
           revealEls.forEach((el) => io.observe(el));
         }
       }
@@ -1999,14 +2386,17 @@ const icons: Record<string, string> = {
           };
           requestAnimationFrame(tick);
         };
-        const counterIo = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animate(entry.target);
-              counterIo.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.5 });
+        const counterIo = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animate(entry.target);
+                counterIo.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
         counters.forEach((el) => counterIo.observe(el));
       } else {
         counters.forEach((el) => {
@@ -2027,7 +2417,7 @@ const icons: Record<string, string> = {
           if (parallaxEl && heroEl && !reduced) {
             const heroH = heroEl.offsetHeight;
             if (scrollY < heroH) {
-              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+              parallaxEl.style.setProperty('--parallax-y', scrollY * 0.18 + 'px');
             }
           }
           if (progressEl) {

@@ -17,13 +17,13 @@ const offices = [
 ];
 
 const bgWords = [
-  { text: '你好',    cls: 'w-1' },
-  { text: '上海',    cls: 'w-2' },
+  { text: '你好', cls: 'w-1' },
+  { text: '上海', cls: 'w-2' },
   { text: 'Bonjour', cls: 'w-3' },
-  { text: '香港',    cls: 'w-4' },
-  { text: 'Hello',   cls: 'w-5' },
-  { text: '巴黎',    cls: 'w-6' },
-  { text: '你好',    cls: 'w-7' },
+  { text: '香港', cls: 'w-4' },
+  { text: 'Hello', cls: 'w-5' },
+  { text: '巴黎', cls: 'w-6' },
+  { text: '你好', cls: 'w-7' },
 ];
 
 const serviceGroups = [
@@ -38,36 +38,21 @@ const serviceGroups = [
   },
   {
     title: 'Se développer en Chine',
-    items: [
-      'Cross-Border eCommerce',
-      'Social Commerce',
-      'Campagnes',
-      'Médias',
-      'Influence et KOL',
-    ],
+    items: ['Cross-Border eCommerce', 'Social Commerce', 'Campagnes', 'Médias', 'Influence et KOL'],
   },
   {
     title: 'Comprendre la Chine',
-    items: [
-      'Masterclass',
-      'Expéditions terrain',
-    ],
+    items: ['Masterclass', 'Expéditions terrain'],
   },
 ];
 
 const budgetOptions = [
-  { value: '<10k',    label: 'Moins de 10 000 €' },
+  { value: '<10k', label: 'Moins de 10 000 €' },
   { value: '10k-50k', label: 'De 10 000 à 50 000 €' },
-  { value: '>50k',    label: 'Plus de 50 000 €' },
+  { value: '>50k', label: 'Plus de 50 000 €' },
 ];
 
-const profileOptions = [
-  'Marque',
-  'Retailer',
-  'Agence',
-  'Cabinet de conseil',
-  'Fabricant',
-];
+const profileOptions = ['Marque', 'Retailer', 'Agence', 'Cabinet de conseil', 'Fabricant'];
 ---
 
 <Layout
@@ -94,14 +79,13 @@ const profileOptions = [
         <span class="eyebrow eyebrow--on-dark">Contact</span>
         <h1 class="contact__title">Parlons de votre projet en Chine.</h1>
         <p class="lead contact__lead">
-          Nos équipes de Shanghai répondent sous un jour ouvré, du lundi au vendredi.
-          Pas besoin de tout dire dès le premier message : on revient vers vous avec des questions précises,
-          et, dès qu'on peut, des pistes concrètes calées sur votre marché.
+          Nos équipes de Shanghai répondent sous un jour ouvré, du lundi au vendredi. Pas besoin de
+          tout dire dès le premier message : on revient vers vous avec des questions précises, et,
+          dès qu'on peut, des pistes concrètes calées sur votre marché.
         </p>
       </header>
 
       <div class="contact__layout contact__layout--stacked">
-
         {/* ---------- White form card, full width ---------- */}
         <div class="contact__form-card">
           <h2 class="contact__form-title">Présentez-nous votre projet en quelques mots</h2>
@@ -109,51 +93,107 @@ const profileOptions = [
           <form class="form" id="contact-form" novalidate>
             <div class="form__row form__row--2">
               <div class="field">
-                <label class="field__label" for="firstName">Prénom <span aria-hidden="true">*</span></label>
-                <input class="field__input" type="text" id="firstName" name="firstName" autocomplete="given-name" required />
+                <label class="field__label" for="firstName"
+                  >Prénom <span aria-hidden="true">*</span></label
+                >
+                <input
+                  class="field__input"
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  autocomplete="given-name"
+                  required
+                />
               </div>
               <div class="field">
-                <label class="field__label" for="lastName">Nom <span aria-hidden="true">*</span></label>
-                <input class="field__input" type="text" id="lastName" name="lastName" autocomplete="family-name" required />
+                <label class="field__label" for="lastName"
+                  >Nom <span aria-hidden="true">*</span></label
+                >
+                <input
+                  class="field__input"
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  autocomplete="family-name"
+                  required
+                />
               </div>
             </div>
 
             <div class="form__row form__row--2">
               <div class="field">
-                <label class="field__label" for="email">Courriel professionnel <span aria-hidden="true">*</span></label>
-                <input class="field__input" type="email" id="email" name="email" autocomplete="email" required />
+                <label class="field__label" for="email"
+                  >Courriel professionnel <span aria-hidden="true">*</span></label
+                >
+                <input
+                  class="field__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
               </div>
               <div class="field">
-                <label class="field__label" for="company">Société <span aria-hidden="true">*</span></label>
-                <input class="field__input" type="text" id="company" name="company" autocomplete="organization" required />
+                <label class="field__label" for="company"
+                  >Société <span aria-hidden="true">*</span></label
+                >
+                <input
+                  class="field__input"
+                  type="text"
+                  id="company"
+                  name="company"
+                  autocomplete="organization"
+                  required
+                />
               </div>
             </div>
 
             <div class="field">
               <label class="field__label" for="website">Site web</label>
-              <input class="field__input" type="url" id="website" name="website" autocomplete="url" placeholder="https://" />
+              <input
+                class="field__input"
+                type="url"
+                id="website"
+                name="website"
+                autocomplete="url"
+                placeholder="https://"
+              />
             </div>
 
             <fieldset class="field field--group">
               <legend class="field__label">Les services qui vous intéressent</legend>
               <p class="field__hint">Cochez tout ce qui colle, on affine ensemble.</p>
               <div class="services">
-                {serviceGroups.map((group) => (
-                  <div class="services__group">
-                    <span class="services__group-title">{group.title}</span>
-                    <ul class="services__list">
-                      {group.items.map((item) => {
-                        const id = `svc-${item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
-                        return (
-                          <li class="services__item">
-                            <input class="check__input" type="checkbox" id={id} name="services" value={`${group.title} : ${item}`} />
-                            <label class="check__label" for={id}>{item}</label>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                ))}
+                {
+                  serviceGroups.map((group) => (
+                    <div class="services__group">
+                      <span class="services__group-title">{group.title}</span>
+                      <ul class="services__list">
+                        {group.items.map((item) => {
+                          const id = `svc-${item
+                            .toLowerCase()
+                            .replace(/[^a-z0-9]+/g, '-')
+                            .replace(/^-|-$/g, '')}`;
+                          return (
+                            <li class="services__item">
+                              <input
+                                class="check__input"
+                                type="checkbox"
+                                id={id}
+                                name="services"
+                                value={`${group.title} : ${item}`}
+                              />
+                              <label class="check__label" for={id}>
+                                {item}
+                              </label>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  ))
+                }
               </div>
             </fieldset>
 
@@ -161,32 +201,61 @@ const profileOptions = [
               <fieldset class="field field--group">
                 <legend class="field__label">Le budget que vous envisagez, à ce stade</legend>
                 <div class="choices">
-                  {budgetOptions.map((opt) => {
-                    const id = `budget-${opt.value.replace(/[^a-zA-Z0-9]+/g, '-')}`;
-                    return (
-                      <div class="choice">
-                        <input class="choice__input" type="radio" id={id} name="budget" value={opt.label} />
-                        <label class="choice__label" for={id}>{opt.label}</label>
-                      </div>
-                    );
-                  })}
+                  {
+                    budgetOptions.map((opt) => {
+                      const id = `budget-${opt.value.replace(/[^a-zA-Z0-9]+/g, '-')}`;
+                      return (
+                        <div class="choice">
+                          <input
+                            class="choice__input"
+                            type="radio"
+                            id={id}
+                            name="budget"
+                            value={opt.label}
+                          />
+                          <label class="choice__label" for={id}>
+                            {opt.label}
+                          </label>
+                        </div>
+                      );
+                    })
+                  }
                 </div>
               </fieldset>
 
               <fieldset class="field field--group">
                 <legend class="field__label">Quelques mots sur votre structure</legend>
                 <div class="choices">
-                  {profileOptions.map((opt) => {
-                    const id = `profile-${opt.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
-                    return (
-                      <div class="choice">
-                        <input class="choice__input" type="radio" id={id} name="profile" value={opt} />
-                        <label class="choice__label" for={id}>{opt}</label>
-                      </div>
-                    );
-                  })}
+                  {
+                    profileOptions.map((opt) => {
+                      const id = `profile-${opt
+                        .toLowerCase()
+                        .replace(/[^a-z0-9]+/g, '-')
+                        .replace(/^-|-$/g, '')}`;
+                      return (
+                        <div class="choice">
+                          <input
+                            class="choice__input"
+                            type="radio"
+                            id={id}
+                            name="profile"
+                            value={opt}
+                          />
+                          <label class="choice__label" for={id}>
+                            {opt}
+                          </label>
+                        </div>
+                      );
+                    })
+                  }
                   <div class="choice choice--other">
-                    <input class="choice__input" type="radio" id="profile-other" name="profile" value="Autre" />
+                    <input
+                      class="choice__input"
+                      type="radio"
+                      id="profile-other"
+                      name="profile"
+                      value="Autre"
+                    />
                     <label class="choice__label" for="profile-other">Autre</label>
                     <input
                       class="field__input field__input--inline"
@@ -202,13 +271,23 @@ const profileOptions = [
             </div>
 
             <div class="field">
-              <label class="field__label" for="message">Quelques lignes pour nous présenter votre projet <span aria-hidden="true">*</span></label>
-              <textarea class="field__input field__input--textarea" id="message" name="message" rows="5" required></textarea>
+              <label class="field__label" for="message"
+                >Quelques lignes pour nous présenter votre projet <span aria-hidden="true">*</span
+                ></label
+              >
+              <textarea
+                class="field__input field__input--textarea"
+                id="message"
+                name="message"
+                rows="5"
+                required></textarea>
             </div>
 
             <div class="field field--captcha">
               <label class="field__label" for="captcha">
-                Petite vérification anti-robot : combien font <span id="captchaA">?</span> + <span id="captchaB">?</span> ?
+                Petite vérification anti-robot : combien font <span id="captchaA">?</span> + <span
+                  id="captchaB">?</span
+                > ?
                 <span aria-hidden="true">*</span>
               </label>
               <input
@@ -226,7 +305,13 @@ const profileOptions = [
             {/* honeypot, bots fill this, humans don't see it */}
             <div class="form__honeypot" aria-hidden="true">
               <label for="website_url">Ne rien renseigner ici</label>
-              <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
+              <input
+                type="text"
+                id="website_url"
+                name="website_url"
+                tabindex="-1"
+                autocomplete="off"
+              />
             </div>
 
             <div class="form__footer">
@@ -234,7 +319,8 @@ const profileOptions = [
                 Envoyer le message
               </button>
               <p class="form__note">
-                En envoyant ce formulaire, vous nous autorisez à revenir vers vous au sujet de votre demande. Vos coordonnées ne quittent pas notre équipe.
+                En envoyant ce formulaire, vous nous autorisez à revenir vers vous au sujet de votre
+                demande. Vos coordonnées ne quittent pas notre équipe.
               </p>
             </div>
 
@@ -253,22 +339,25 @@ const profileOptions = [
 
           <div class="contact-block">
             <span class="eyebrow eyebrow--on-dark">Délai de réponse</span>
-            <p class="contact-block__text">Sous un jour ouvré, du lundi au vendredi, heure de Chine.</p>
+            <p class="contact-block__text">
+              Sous un jour ouvré, du lundi au vendredi, heure de Chine.
+            </p>
           </div>
 
           <div class="contact-block">
             <span class="eyebrow eyebrow--on-dark">Nos implantations</span>
             <ul class="offices">
-              {offices.map(o => (
-                <li class="office">
-                  <h3 class="office__city">{o.city}</h3>
-                  <address class="office__address">{o.address}</address>
-                </li>
-              ))}
+              {
+                offices.map((o) => (
+                  <li class="office">
+                    <h3 class="office__city">{o.city}</h3>
+                    <address class="office__address">{o.address}</address>
+                  </li>
+                ))
+              }
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -319,9 +408,8 @@ const profileOptions = [
       const services = data.getAll('services').map((v) => String(v));
       const profileValue = String(data.get('profile') || '').trim();
       const profileOtherVal = String(data.get('profileOther') || '').trim();
-      const profile = profileValue === 'Autre' && profileOtherVal
-        ? `Autre : ${profileOtherVal}`
-        : profileValue;
+      const profile =
+        profileValue === 'Autre' && profileOtherVal ? `Autre : ${profileOtherVal}` : profileValue;
       const payload = {
         name: [firstName, lastName].filter(Boolean).join(' '),
         email: String(data.get('email') || '').trim(),
@@ -345,7 +433,7 @@ const profileOptions = [
       }
 
       if (!payload.name || !payload.email || !payload.message) {
-        status.textContent = "Il nous faut au minimum votre nom, votre courriel et un message.";
+        status.textContent = 'Il nous faut au minimum votre nom, votre courriel et un message.';
         status.classList.add('form__status--error');
         return;
       }
@@ -360,7 +448,11 @@ const profileOptions = [
           body: JSON.stringify(payload),
         });
         const body = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(body.error || "L'envoi n'a pas abouti. Merci de réessayer dans un instant. En cas de difficulté, vous pouvez nous écrire directement à hello@thechinapath.com.");
+        if (!res.ok)
+          throw new Error(
+            body.error ||
+              "L'envoi n'a pas abouti. Merci de réessayer dans un instant. En cas de difficulté, vous pouvez nous écrire directement à hello@thechinapath.com.",
+          );
 
         form.reset();
         rollCaptcha();
@@ -369,7 +461,10 @@ const profileOptions = [
         window.location.assign('/fr/merci');
         return;
       } catch (err) {
-        status.textContent = err && err.message ? err.message : "L'envoi n'a pas abouti. Merci de réessayer dans un instant. En cas de difficulté, vous pouvez nous écrire directement à hello@thechinapath.com.";
+        status.textContent =
+          err && err.message
+            ? err.message
+            : "L'envoi n'a pas abouti. Merci de réessayer dans un instant. En cas de difficulté, vous pouvez nous écrire directement à hello@thechinapath.com.";
         status.classList.add('form__status--error');
       } finally {
         submit.disabled = false;

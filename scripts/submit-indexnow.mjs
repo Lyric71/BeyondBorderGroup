@@ -70,4 +70,7 @@ async function main() {
   for (const batch of batches) await submit(batch);
 }
 
-main().catch((e) => { console.error(e); process.exit(1); });
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});

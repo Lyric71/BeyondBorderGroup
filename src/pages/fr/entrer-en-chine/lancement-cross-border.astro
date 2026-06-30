@@ -4,15 +4,15 @@ import { getCollection } from 'astro:content';
 
 const promises = [
   {
-    title: "Une entrée de marché ancrée dans les chiffres",
+    title: 'Une entrée de marché ancrée dans les chiffres',
     desc: "Stratégie, positionnement et tarification s'appuient sur les données de catégorie et le fonctionnement réel des plateformes. Aucune hypothèse non vérifiée.",
   },
   {
-    title: "Une lecture juste du consommateur chinois",
+    title: 'Une lecture juste du consommateur chinois',
     desc: "Nous connaissons les ressorts d'achat sur Tmall, JD, Douyin, RED et WeChat, ainsi que les déclencheurs qui font basculer un acheteur d'une marque vers une autre.",
   },
   {
-    title: "Un accès direct aux plateformes",
+    title: 'Un accès direct aux plateformes',
     desc: "Quinze années passées aux côtés des plateformes et des distributeurs ouvrent les portes plus rapidement et permettent d'identifier les interlocuteurs qui tiennent parole.",
   },
 ];
@@ -31,8 +31,12 @@ const services = [
     icon: 'bag',
     title: 'DTC, vente directe au consommateur',
     short: 'WeChat · Mini-programmes · CRM',
-    desc: "Génération de trafic vers votre boutique DTC, en organique, en payant et en relais, articulée autour de WeChat et du trafic privé.",
-    points: ['Boutiques mini-programmes WeChat', 'CRM et trafic privé', 'Fidélisation et cycle de vie'],
+    desc: 'Génération de trafic vers votre boutique DTC, en organique, en payant et en relais, articulée autour de WeChat et du trafic privé.',
+    points: [
+      'Boutiques mini-programmes WeChat',
+      'CRM et trafic privé',
+      'Fidélisation et cycle de vie',
+    ],
     color: '#0EA46C',
     colorSoft: '#E6F5EE',
   },
@@ -40,8 +44,12 @@ const services = [
     icon: 'truck',
     title: 'Distribution',
     short: 'En ligne · En magasin · Toute la Chine',
-    desc: "Distributeurs en ligne et physiques, sélectionnés région par région et alignés sur votre catégorie.",
-    points: ['Sourcing et audit des distributeurs', 'Cartographie de couverture régionale', 'Intégration O2O'],
+    desc: 'Distributeurs en ligne et physiques, sélectionnés région par région et alignés sur votre catégorie.',
+    points: [
+      'Sourcing et audit des distributeurs',
+      'Cartographie de couverture régionale',
+      'Intégration O2O',
+    ],
     color: '#C8102E',
     colorSoft: '#FCEAEF',
   },
@@ -49,7 +57,7 @@ const services = [
     icon: 'broadcast',
     title: 'Social commerce',
     short: 'Douyin · Xiaohongshu · KOL',
-    desc: "Le moteur de croissance du e-commerce chinois. Campagnes KOL et KOC sur Douyin et TikTok, pensées pour convertir, non pour faire du bruit.",
+    desc: 'Le moteur de croissance du e-commerce chinois. Campagnes KOL et KOC sur Douyin et TikTok, pensées pour convertir, non pour faire du bruit.',
     points: ['Douyin shop et livestream', 'Seeding Xiaohongshu', 'Programmes KOL et KOC'],
     color: '#E54B6E',
     colorSoft: '#FCEAEF',
@@ -63,12 +71,12 @@ const models = [
     desc: "Vous conservez la main sur l'opération chinoise. Nous alimentons le moteur marketing qui la soutient.",
     when: "Pertinent lorsque vous travaillez déjà avec un distributeur, un TP ou une équipe interne qui vend en Chine, et qu'il vous manque un partenaire marketing senior pour bâtir la marque et défendre son capital.",
     bullets: [
-      "Stratégie de marque et production de contenus pour Tmall, JD, Douyin et Xiaohongshu",
-      "Pilotage des campagnes 11.11, 6.18, Nouvel An chinois et autres temps forts de catégorie",
-      "Programmes KOL et KOC, achat média et CRM sur WeChat",
-      "Reporting de performance connecté à vos canaux de vente",
+      'Stratégie de marque et production de contenus pour Tmall, JD, Douyin et Xiaohongshu',
+      'Pilotage des campagnes 11.11, 6.18, Nouvel An chinois et autres temps forts de catégorie',
+      'Programmes KOL et KOC, achat média et CRM sur WeChat',
+      'Reporting de performance connecté à vos canaux de vente',
     ],
-    pricing: "Honoraires calibrés sur le périmètre. Forfait mensuel ou facturation au projet.",
+    pricing: 'Honoraires calibrés sur le périmètre. Forfait mensuel ou facturation au projet.',
     highlight: false,
   },
   {
@@ -77,43 +85,43 @@ const models = [
     desc: "Vous souhaitez vendre via un distributeur chinois sans savoir à qui confier votre marque. Nous identifions le bon profil, l'auditons en profondeur, puis négocions l'accord.",
     when: "Pertinent lorsque vous cherchez un accès rapide au marché sans monter votre propre opération, et qu'il vous faut un interlocuteur de votre côté de la table au moment des discussions avec les distributeurs.",
     bullets: [
-      "Cartographie des distributeurs qualifiés sur votre catégorie, en ligne et hors ligne",
+      'Cartographie des distributeurs qualifiés sur votre catégorie, en ligne et hors ligne',
       "Sélection d'une short-list de 15 à 30 candidats au parcours vérifié",
-      "Présentation en mandarin, conduite des rendez-vous, négociation des conditions",
-      "Revue contractuelle et logistique de la première commande",
+      'Présentation en mandarin, conduite des rendez-vous, négociation des conditions',
+      'Revue contractuelle et logistique de la première commande',
       "Suivi terrain après signature, pour préserver l'engagement du partenaire",
     ],
-    pricing: "Forfait projet couvrant la recherche et la négociation.",
+    pricing: 'Forfait projet couvrant la recherche et la négociation.',
     highlight: false,
   },
   {
     name: 'TP, partenaire opérateur',
     tag: 'Nous tenons les ventes, vous tenez le stock',
-    desc: "Nous opérons vos boutiques de bout en bout sur Tmall, JD et Douyin, sous nos licences chinoises. La marque, le stock et la donnée client demeurent entre vos mains.",
+    desc: 'Nous opérons vos boutiques de bout en bout sur Tmall, JD et Douyin, sous nos licences chinoises. La marque, le stock et la donnée client demeurent entre vos mains.',
     when: "Pertinent lorsque vous voulez une boutique phare chinoise pleinement sous votre contrôle, sans constituer d'entité ni recruter immédiatement une équipe locale.",
     bullets: [
-      "Conception des boutiques, contenus, merchandising et pages de campagne",
-      "Opérations quotidiennes, achat média et traitement des commandes",
-      "Entreposage et logistique via notre réseau de partenaires",
-      "Service client et après-vente en mandarin",
-      "Reporting mensuel relié à votre équipe commerciale globale",
+      'Conception des boutiques, contenus, merchandising et pages de campagne',
+      'Opérations quotidiennes, achat média et traitement des commandes',
+      'Entreposage et logistique via notre réseau de partenaires',
+      'Service client et après-vente en mandarin',
+      'Reporting mensuel relié à votre équipe commerciale globale',
     ],
-    pricing: "Forfait mensuel fixe par boutique, complété par une commission sur les ventes.",
+    pricing: 'Forfait mensuel fixe par boutique, complété par une commission sur les ventes.',
     highlight: true,
   },
   {
     name: 'Distributeur exclusif',
     tag: 'Nous tenons les ventes, nous portons le stock',
-    desc: "Nous agissons comme votre distributeur maître en Chine. Achat du produit, portage du stock, commercialisation en ligne comme en magasin.",
-    when: "Pertinent lorsque vous cherchez un interlocuteur unique sur le P&L chinois et que vous préférez ne pas investir vous-même dans le volet commercial.",
+    desc: 'Nous agissons comme votre distributeur maître en Chine. Achat du produit, portage du stock, commercialisation en ligne comme en magasin.',
+    when: 'Pertinent lorsque vous cherchez un interlocuteur unique sur le P&L chinois et que vous préférez ne pas investir vous-même dans le volet commercial.',
     bullets: [
-      "Pleine propriété du P&L chinois, de bout en bout",
-      "Marketing, ventes, logistique et gestion du stock",
-      "Distribution en ligne et hors ligne, en direct comme en indirect",
-      "Conformité, affaires réglementaires et relations avec les plateformes",
-      "Reporting des ventes, du sell-through et des indicateurs de santé de marque",
+      'Pleine propriété du P&L chinois, de bout en bout',
+      'Marketing, ventes, logistique et gestion du stock',
+      'Distribution en ligne et hors ligne, en direct comme en indirect',
+      'Conformité, affaires réglementaires et relations avec les plateformes',
+      'Reporting des ventes, du sell-through et des indicateurs de santé de marque',
     ],
-    pricing: "Marge produit fixée dès la signature.",
+    pricing: 'Marge produit fixée dès la signature.',
     highlight: false,
   },
 ];
@@ -131,7 +139,7 @@ const platforms = [
   {
     name: 'Tmall',
     cn: '天猫',
-    sub: "Plus de quinze années sur la plateforme, statut TP certifié. Boutiques phares, brand zone et activations de festivals.",
+    sub: 'Plus de quinze années sur la plateforme, statut TP certifié. Boutiques phares, brand zone et activations de festivals.',
     logo: '/Images/platforms/tmall-logo.svg',
     href: '/fr/comprendre-la-chine/plateformes',
     brandColor: '#FF0036',
@@ -149,7 +157,7 @@ const platforms = [
   {
     name: 'WeChat',
     cn: '微信',
-    sub: "Mini-programmes e-commerce et de fidélité. CRM, trafic privé et commerce par canal.",
+    sub: 'Mini-programmes e-commerce et de fidélité. CRM, trafic privé et commerce par canal.',
     logo: '/Images/platforms/wechat-logo.svg',
     href: '/fr/comprendre-la-chine/plateformes',
     brandColor: '#07C160',
@@ -161,12 +169,12 @@ const steps = [
   {
     icon: 'compass',
     title: 'Plan et recherche',
-    desc: "Nous croisons vos objectifs, votre expertise sectorielle et votre produit avec nos données pour bâtir la stratégie e-commerce adaptée.",
+    desc: 'Nous croisons vos objectifs, votre expertise sectorielle et votre produit avec nos données pour bâtir la stratégie e-commerce adaptée.',
   },
   {
     icon: 'rocket',
     title: 'Lancement et activation',
-    desc: "Conception et ouverture de vos canaux de vente en Chine, puis génération de trafic via KOL, KOC, achat média et contenus.",
+    desc: 'Conception et ouverture de vos canaux de vente en Chine, puis génération de trafic via KOL, KOC, achat média et contenus.',
   },
   {
     icon: 'trend',
@@ -178,70 +186,158 @@ const steps = [
 const aiBenefits = [
   {
     icon: 'heart',
-    title: "Une expérience client supérieure",
+    title: 'Une expérience client supérieure',
     desc: "L'IA personnalise l'ensemble du parcours, fait progresser la conversion comme la satisfaction.",
   },
   {
     icon: 'coin',
-    title: "Des coûts opérationnels en repli",
+    title: 'Des coûts opérationnels en repli',
     desc: "L'IA optimise la chaîne logistique, réduit les pertes et libère de la marge.",
   },
   {
     icon: 'avatar',
-    title: "Humains numériques",
-    desc: "Des hôtes virtuels animent les livestreams en continu et dialoguent en direct avec les acheteurs.",
+    title: 'Humains numériques',
+    desc: 'Des hôtes virtuels animent les livestreams en continu et dialoguent en direct avec les acheteurs.',
   },
   {
     icon: 'bubble',
-    title: "Chatbots IA",
-    desc: "Le service client allège sa facture dès lors que le bot prend en charge les questions courantes, les retours et le suivi de commande.",
+    title: 'Chatbots IA',
+    desc: 'Le service client allège sa facture dès lors que le bot prend en charge les questions courantes, les retours et le suivi de commande.',
   },
   {
     icon: 'spark',
-    title: "Contenus AIGC",
-    desc: "Les contenus générés par IA déclinent à grande échelle les pages produit, les annonces publicitaires et les briefs créateurs.",
+    title: 'Contenus AIGC',
+    desc: 'Les contenus générés par IA déclinent à grande échelle les pages produit, les annonces publicitaires et les briefs créateurs.',
   },
 ];
 
 const contextCards = [
   {
     image: '/Images/enter-china/social-commerce-phone.png',
-    alt: "Mains tenant un smartphone qui diffuse un livestream e-commerce chinois",
-    title: "Localiser un e-commerce dépasse de loin la simple traduction",
-    body: "La localisation ne se limite pas à la langue. Les acheteurs chinois transitent par le social commerce et le livestream. La présence doit donc se révéler native jusque dans ses détails les plus fins.",
+    alt: 'Mains tenant un smartphone qui diffuse un livestream e-commerce chinois',
+    title: 'Localiser un e-commerce dépasse de loin la simple traduction',
+    body: 'La localisation ne se limite pas à la langue. Les acheteurs chinois transitent par le social commerce et le livestream. La présence doit donc se révéler native jusque dans ses détails les plus fins.',
   },
   {
     image: '/Images/platforms/tmall-scene.webp',
     alt: "Vitrine Tmall qui illustre l'échelle de la concurrence sur les plateformes en Chine",
-    title: "Une concurrence locale rapide, agile et solidement financée",
-    body: "Alibaba, JD, Douyin et Pinduoduo imposent le tempo, et les marques locales suivent au même rythme. Demeurer visible suppose de bouger en permanence.",
+    title: 'Une concurrence locale rapide, agile et solidement financée',
+    body: 'Alibaba, JD, Douyin et Pinduoduo imposent le tempo, et les marques locales suivent au même rythme. Demeurer visible suppose de bouger en permanence.',
   },
 ];
 
 const faqs = [
-  { cat: 'Lancement', q: 'Combien de temps faut-il pour ouvrir sur Tmall ou JD ?', a: "Comptez 8 à 12 semaines en cross-border, 12 à 16 semaines en domestique. L'essentiel du calendrier se concentre sur la production de contenus, la conception de la boutique et l'audit de marque. Le dossier plateforme ne représente qu'une fraction du chantier." },
-  { cat: 'Stratégie', q: "Tmall, JD ou Douyin en premier ?", a: "Tout dépend de la catégorie. La beauté, la mode et le lifestyle s'installent généralement sur Tmall ou Douyin. La maison, l'électronique et la puériculture trouvent leur terrain de jeu sur JD. Les marques premium de niche bâtissent souvent six à douze mois de seeding sur Xiaohongshu avant d'ouvrir une boutique phare." },
-  { cat: 'Lancement', q: 'Cross-border ou domestique, comment trancher ?', a: "Le cross-border accélère l'ouverture, allège la conformité et expédie depuis l'entrepôt sous douane ou en envoi direct. Il plafonne toutefois à quelques centaines de millions de RMB dans certaines catégories. Le domestique débloque le retail complet et un marketing plus ample, en contrepartie d'une entité juridique, d'une structure fiscale et de dossiers NMPA ou SAMR." },
-  { cat: 'Coûts', q: "Quel volume de ventes faut-il viser pour atteindre l'équilibre ?", a: "Ordre de grandeur : 5 à 8 millions de RMB de GMV annuel pour qu'une boutique phare s'autofinance, frais TP, contenus, média et commissions plateforme absorbés. Moins lorsque les marges sont fortes. Davantage dans les catégories à forte intensité promotionnelle." },
-  { cat: 'Coûts', q: "Quelle est la facture réelle d'un TP ?", a: "Deux strates de coût. Un forfait mensuel par boutique, en général compris entre 30 000 et 80 000 RMB selon le périmètre. Puis une commission sur les ventes nettes, située entre 5 et 12 %. Le setup, la production de contenus et le média se facturent séparément." },
-  { cat: 'Opérations', q: 'Comment sélectionner le bon TP ?', a: "L'examen porte d'abord sur les antécédents dans votre catégorie, puis sur le nombre de boutiques opérées, la taille des équipes et la qualité de l'accès aux interlocuteurs plateforme. Exigez des cas dans votre catégorie précise et des références joignables. Tenez à distance les opérateurs qui imposent des modèles tout faits avant d'avoir écouté la stratégie." },
-  { cat: 'Opérations', q: "Au départ d'un TP, que devient la marque ?", a: "La boutique, la marque déposée et la donnée client demeurent votre propriété. Le TP reste un prestataire. Le transfert se cadre dans le contrat dès le premier jour : identifiants de boutique, export des données, liste des fournisseurs et droits sur les contenus reviennent dans votre périmètre à la sortie." },
-  { cat: 'Juridique', q: 'Faut-il déposer la marque en Chine avant le lancement ?', a: "Oui, sans réserve. Déposez la marque et les sous-marques clés en mandarin et en alphabet latin avant l'ouverture. La Chine applique le principe du premier déposant. Les squatteurs déposent vite et obligent ensuite la marque à racheter son propre nom, procédure longue et coûteuse." },
-  { cat: 'Opérations', q: "Quel régime régit les retours et remboursements sur Tmall et JD ?", a: "Tmall impose sept jours de retour sans motif. JD applique des règles voisines. Cette contrainte s'intègre directement aux marges unitaires. Le taux de retour oscille entre 5 et 25 % selon la catégorie, le textile et la chaussure se positionnant dans le haut du tableau." },
-  { cat: 'Marketing', q: "Quel est le coût d'une collaboration KOL ?", a: "Les nano-créateurs Xiaohongshu se rémunèrent à hauteur de quelques milliers de RMB par publication. Les comptes intermédiaires se situent entre quelques dizaines et quelques centaines de milliers. Les top KOL Douyin peuvent dépasser le million de RMB par créneau de livestream. Mieux vaut étager les budgets que tout miser sur un seul nom." },
-  { cat: 'Stratégie', q: 'Douyin et TikTok, quelle est la différence ?', a: "Même socle technique, deux marchés distincts. Douyin embarque l'intégralité du e-commerce, du livestream et de la stack publicitaire à l'intérieur de la Chine. TikTok Shop opère aux États-Unis, au Royaume-Uni, en Asie du Sud-Est et dans une poignée d'autres marchés. La sélection se fait selon le pays de résidence de l'acheteur, jamais selon une préférence d'application." },
-  { cat: 'Opérations', q: 'Peut-on opérer sa boutique Tmall sans TP ?', a: "Oui, à condition de disposer d'une entité chinoise, d'une équipe sinophone et d'une expertise interne des opérations plateforme. La plupart des marques étrangères tentent l'expérience une fois, puis basculent vers un TP au lendemain de leur premier 11.11." },
-  { cat: 'Juridique', q: 'Comment percevoir le produit des ventes réalisées en Chine ?', a: "Les plateformes cross-border règlent en USD ou en EUR sur votre compte domestique, généralement à fréquence mensuelle. Les boutiques domestiques règlent en RMB sur un compte bancaire chinois. Le rapatriement des fonds suppose la bonne structure d'entité, une raison commerciale réelle et des déclarations fiscales irréprochables." },
-  { cat: 'Juridique', q: "Quelles catégories exigent un agrément ?", a: "Cosmétiques, compléments alimentaires, alimentaire, dispositifs médicaux, produits chimiques à double usage et, plus largement, tout ce qui s'ingère ou s'applique sur la peau. Les procédures NMPA, SAMR ou douanes courent sur 3 à 12 mois. Cartographiez la catégorie tôt, faute de quoi la fenêtre de lancement se referme." },
-  { cat: 'Marketing', q: "Quel poids accorder à Xiaohongshu avant un lancement ?", a: "Un poids déterminant pour les marques premium et lifestyle. Les acheteurs chinois s'informent sur Xiaohongshu avant de finaliser sur Tmall ou Douyin. Un plan de seeding de 6 à 12 mois, mobilisant 50 à 200 créateurs, constitue une véritable chauffe avant l'ouverture d'une boutique phare." },
-  { cat: 'Coûts', q: "Quel besoin en fonds de roulement anticiper ?", a: "Six à neuf mois de coûts d'exploitation, en complément du stock d'ouverture. De quoi couvrir l'écart entre les dépenses de lancement et le premier cash-flow stable, retours, remboursements et délais de règlement plateforme inclus." },
-  { cat: 'Marketing', q: "Le livestream commerce mérite-t-il l'investissement ?", a: "Dans plusieurs catégories, il s'impose désormais comme le canal par défaut. La beauté, l'alimentaire, le textile et la maison vendent massivement en direct. Tablez sur 8 à 20 sessions mensuelles pour une boutique phare, en alternant émissions internes et émissions de KOL. Trois mois au minimum sont nécessaires avant de juger le ROI." },
-  { cat: 'Stratégie', q: 'Pourquoi tant de marques étrangères échouent-elles en Chine ?', a: "Deux causes reviennent. Le sous-investissement marketing, motivé par la conviction que la marque jouit déjà d'une notoriété acquise. Ou le déploiement du produit global sans adaptation du goût, du format ni du prix au marché local. Les deux écueils étouffent la traction dès la première année." },
-  { cat: 'Stratégie', q: "Comment mesurer le succès d'une boutique phare ?", a: "La croissance des ventes et la marge de contribution priment. Viennent ensuite le taux de réachat, le rang en recherche organique sur la plateforme, la part de voix dans la catégorie et la santé de marque mesurée en étude. Les semaines de festival racontent une histoire. Les mois creux entre deux racontent la vérité." },
-  { cat: 'Coûts', q: 'Comment maîtriser les coûts opérationnels ?', a: "IA appliquée au service client, IA dans la supply chain, création automatisée et discipline média. Le véritable levier réside néanmoins dans le choix du modèle dès le départ : agence marketing, TP ou distributeur, en fonction du stade et de l'ambition." },
+  {
+    cat: 'Lancement',
+    q: 'Combien de temps faut-il pour ouvrir sur Tmall ou JD ?',
+    a: "Comptez 8 à 12 semaines en cross-border, 12 à 16 semaines en domestique. L'essentiel du calendrier se concentre sur la production de contenus, la conception de la boutique et l'audit de marque. Le dossier plateforme ne représente qu'une fraction du chantier.",
+  },
+  {
+    cat: 'Stratégie',
+    q: 'Tmall, JD ou Douyin en premier ?',
+    a: "Tout dépend de la catégorie. La beauté, la mode et le lifestyle s'installent généralement sur Tmall ou Douyin. La maison, l'électronique et la puériculture trouvent leur terrain de jeu sur JD. Les marques premium de niche bâtissent souvent six à douze mois de seeding sur Xiaohongshu avant d'ouvrir une boutique phare.",
+  },
+  {
+    cat: 'Lancement',
+    q: 'Cross-border ou domestique, comment trancher ?',
+    a: "Le cross-border accélère l'ouverture, allège la conformité et expédie depuis l'entrepôt sous douane ou en envoi direct. Il plafonne toutefois à quelques centaines de millions de RMB dans certaines catégories. Le domestique débloque le retail complet et un marketing plus ample, en contrepartie d'une entité juridique, d'une structure fiscale et de dossiers NMPA ou SAMR.",
+  },
+  {
+    cat: 'Coûts',
+    q: "Quel volume de ventes faut-il viser pour atteindre l'équilibre ?",
+    a: "Ordre de grandeur : 5 à 8 millions de RMB de GMV annuel pour qu'une boutique phare s'autofinance, frais TP, contenus, média et commissions plateforme absorbés. Moins lorsque les marges sont fortes. Davantage dans les catégories à forte intensité promotionnelle.",
+  },
+  {
+    cat: 'Coûts',
+    q: "Quelle est la facture réelle d'un TP ?",
+    a: 'Deux strates de coût. Un forfait mensuel par boutique, en général compris entre 30 000 et 80 000 RMB selon le périmètre. Puis une commission sur les ventes nettes, située entre 5 et 12 %. Le setup, la production de contenus et le média se facturent séparément.',
+  },
+  {
+    cat: 'Opérations',
+    q: 'Comment sélectionner le bon TP ?',
+    a: "L'examen porte d'abord sur les antécédents dans votre catégorie, puis sur le nombre de boutiques opérées, la taille des équipes et la qualité de l'accès aux interlocuteurs plateforme. Exigez des cas dans votre catégorie précise et des références joignables. Tenez à distance les opérateurs qui imposent des modèles tout faits avant d'avoir écouté la stratégie.",
+  },
+  {
+    cat: 'Opérations',
+    q: "Au départ d'un TP, que devient la marque ?",
+    a: 'La boutique, la marque déposée et la donnée client demeurent votre propriété. Le TP reste un prestataire. Le transfert se cadre dans le contrat dès le premier jour : identifiants de boutique, export des données, liste des fournisseurs et droits sur les contenus reviennent dans votre périmètre à la sortie.',
+  },
+  {
+    cat: 'Juridique',
+    q: 'Faut-il déposer la marque en Chine avant le lancement ?',
+    a: "Oui, sans réserve. Déposez la marque et les sous-marques clés en mandarin et en alphabet latin avant l'ouverture. La Chine applique le principe du premier déposant. Les squatteurs déposent vite et obligent ensuite la marque à racheter son propre nom, procédure longue et coûteuse.",
+  },
+  {
+    cat: 'Opérations',
+    q: 'Quel régime régit les retours et remboursements sur Tmall et JD ?',
+    a: "Tmall impose sept jours de retour sans motif. JD applique des règles voisines. Cette contrainte s'intègre directement aux marges unitaires. Le taux de retour oscille entre 5 et 25 % selon la catégorie, le textile et la chaussure se positionnant dans le haut du tableau.",
+  },
+  {
+    cat: 'Marketing',
+    q: "Quel est le coût d'une collaboration KOL ?",
+    a: 'Les nano-créateurs Xiaohongshu se rémunèrent à hauteur de quelques milliers de RMB par publication. Les comptes intermédiaires se situent entre quelques dizaines et quelques centaines de milliers. Les top KOL Douyin peuvent dépasser le million de RMB par créneau de livestream. Mieux vaut étager les budgets que tout miser sur un seul nom.',
+  },
+  {
+    cat: 'Stratégie',
+    q: 'Douyin et TikTok, quelle est la différence ?',
+    a: "Même socle technique, deux marchés distincts. Douyin embarque l'intégralité du e-commerce, du livestream et de la stack publicitaire à l'intérieur de la Chine. TikTok Shop opère aux États-Unis, au Royaume-Uni, en Asie du Sud-Est et dans une poignée d'autres marchés. La sélection se fait selon le pays de résidence de l'acheteur, jamais selon une préférence d'application.",
+  },
+  {
+    cat: 'Opérations',
+    q: 'Peut-on opérer sa boutique Tmall sans TP ?',
+    a: "Oui, à condition de disposer d'une entité chinoise, d'une équipe sinophone et d'une expertise interne des opérations plateforme. La plupart des marques étrangères tentent l'expérience une fois, puis basculent vers un TP au lendemain de leur premier 11.11.",
+  },
+  {
+    cat: 'Juridique',
+    q: 'Comment percevoir le produit des ventes réalisées en Chine ?',
+    a: "Les plateformes cross-border règlent en USD ou en EUR sur votre compte domestique, généralement à fréquence mensuelle. Les boutiques domestiques règlent en RMB sur un compte bancaire chinois. Le rapatriement des fonds suppose la bonne structure d'entité, une raison commerciale réelle et des déclarations fiscales irréprochables.",
+  },
+  {
+    cat: 'Juridique',
+    q: 'Quelles catégories exigent un agrément ?',
+    a: "Cosmétiques, compléments alimentaires, alimentaire, dispositifs médicaux, produits chimiques à double usage et, plus largement, tout ce qui s'ingère ou s'applique sur la peau. Les procédures NMPA, SAMR ou douanes courent sur 3 à 12 mois. Cartographiez la catégorie tôt, faute de quoi la fenêtre de lancement se referme.",
+  },
+  {
+    cat: 'Marketing',
+    q: 'Quel poids accorder à Xiaohongshu avant un lancement ?',
+    a: "Un poids déterminant pour les marques premium et lifestyle. Les acheteurs chinois s'informent sur Xiaohongshu avant de finaliser sur Tmall ou Douyin. Un plan de seeding de 6 à 12 mois, mobilisant 50 à 200 créateurs, constitue une véritable chauffe avant l'ouverture d'une boutique phare.",
+  },
+  {
+    cat: 'Coûts',
+    q: 'Quel besoin en fonds de roulement anticiper ?',
+    a: "Six à neuf mois de coûts d'exploitation, en complément du stock d'ouverture. De quoi couvrir l'écart entre les dépenses de lancement et le premier cash-flow stable, retours, remboursements et délais de règlement plateforme inclus.",
+  },
+  {
+    cat: 'Marketing',
+    q: "Le livestream commerce mérite-t-il l'investissement ?",
+    a: "Dans plusieurs catégories, il s'impose désormais comme le canal par défaut. La beauté, l'alimentaire, le textile et la maison vendent massivement en direct. Tablez sur 8 à 20 sessions mensuelles pour une boutique phare, en alternant émissions internes et émissions de KOL. Trois mois au minimum sont nécessaires avant de juger le ROI.",
+  },
+  {
+    cat: 'Stratégie',
+    q: 'Pourquoi tant de marques étrangères échouent-elles en Chine ?',
+    a: "Deux causes reviennent. Le sous-investissement marketing, motivé par la conviction que la marque jouit déjà d'une notoriété acquise. Ou le déploiement du produit global sans adaptation du goût, du format ni du prix au marché local. Les deux écueils étouffent la traction dès la première année.",
+  },
+  {
+    cat: 'Stratégie',
+    q: "Comment mesurer le succès d'une boutique phare ?",
+    a: 'La croissance des ventes et la marge de contribution priment. Viennent ensuite le taux de réachat, le rang en recherche organique sur la plateforme, la part de voix dans la catégorie et la santé de marque mesurée en étude. Les semaines de festival racontent une histoire. Les mois creux entre deux racontent la vérité.',
+  },
+  {
+    cat: 'Coûts',
+    q: 'Comment maîtriser les coûts opérationnels ?',
+    a: "IA appliquée au service client, IA dans la supply chain, création automatisée et discipline média. Le véritable levier réside néanmoins dans le choix du modèle dès le départ : agence marketing, TP ou distributeur, en fonction du stade et de l'ambition.",
+  },
 ];
 
-const faqCategories = ['Tout', 'Lancement', 'Coûts', 'Opérations', 'Stratégie', 'Marketing', 'Juridique'];
+const faqCategories = [
+  'Tout',
+  'Lancement',
+  'Coûts',
+  'Opérations',
+  'Stratégie',
+  'Marketing',
+  'Juridique',
+];
 
 const allInsights = await getCollection('insights', ({ data }) => !data.draft);
 const highlightedSlugs = [
@@ -275,11 +371,13 @@ const icons: Record<string, string> = {
 >
   <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
   <article class="cbs">
-
     {/* ---------- HERO ---------- */}
     <section class="cbs-hero" data-hero>
       <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/enter-china/hero-shopper-tier3.png" alt="Une acheteuse dans une ville chinoise de tier 3 consulte un e-commerce sur son smartphone, à la maison" />
+        <img
+          src="/Images/enter-china/hero-shopper-tier3.png"
+          alt="Une acheteuse dans une ville chinoise de tier 3 consulte un e-commerce sur son smartphone, à la maison"
+        />
       </div>
       <div class="cbs-hero__overlay" aria-hidden="true"></div>
       <div class="cbs-hero__grain" aria-hidden="true"></div>
@@ -295,15 +393,21 @@ const icons: Record<string, string> = {
           <span class="cbs-hero__title-row">Le e-commerce chinois reste</span>
           <span class="cbs-hero__title-row cbs-hero__title-row--accent">exigeant et coûteux.</span>
           <span class="cbs-hero__title-row">Il demeure aussi votre</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--highlight">principal levier de croissance.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--highlight"
+            >principal levier de croissance.</span
+          >
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
           On bâtit et on déploie votre présence e-commerce en Chine. Tmall Global, JD Worldwide,
           Douyin, WeChat, RED. Quinze ans sur le terrain derrière chaque recommandation.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
-          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Échanger avec un senior</a>
-          <a href="#how-we-work" class="btn btn--ghost-light cbs-magnetic">Découvrir notre méthode</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic"
+            >Échanger avec un senior</a
+          >
+          <a href="#how-we-work" class="btn btn--ghost-light cbs-magnetic"
+            >Découvrir notre méthode</a
+          >
         </div>
 
         <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
@@ -335,22 +439,28 @@ const icons: Record<string, string> = {
           <span class="eyebrow">eCommerce en Chine</span>
           <h2>Deux réalités à intégrer avant tout lancement</h2>
           <p class="section-header__lead">
-            La plupart des marques abordent la Chine avec les stratégies qui marchaient ailleurs. Voilà ce qui change la donne sur le terrain.
+            La plupart des marques abordent la Chine avec les stratégies qui marchaient ailleurs.
+            Voilà ce qui change la donne sur le terrain.
           </p>
         </header>
 
         <div class="cbs-context">
-          {contextCards.map((c, i) => (
-            <article class={`cbs-context__card${i === 1 ? ' cbs-context__card--alt' : ''} cbs-reveal`} style={`--reveal-delay: ${i * 120}ms;`}>
-              <figure class="cbs-context__media">
-                <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
-              </figure>
-              <div class="cbs-context__body">
-                <h3>{c.title}</h3>
-                <p>{c.body}</p>
-              </div>
-            </article>
-          ))}
+          {
+            contextCards.map((c, i) => (
+              <article
+                class={`cbs-context__card${i === 1 ? ' cbs-context__card--alt' : ''} cbs-reveal`}
+                style={`--reveal-delay: ${i * 120}ms;`}
+              >
+                <figure class="cbs-context__media">
+                  <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
+                </figure>
+                <div class="cbs-context__body">
+                  <h3>{c.title}</h3>
+                  <p>{c.body}</p>
+                </div>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -363,7 +473,10 @@ const icons: Record<string, string> = {
             <span class="eyebrow">Notre périmètre</span>
             <h2>Nous bâtissons et développons votre e-commerce en Chine.</h2>
             <p>
-              Quinze années d'opérations à la tête de boutiques phares et de shops DTC en Chine, pour des marques internationales comme pour des PME. Des relations directes avec les plateformes et un achat média discipliné convertissent la stratégie en chiffre d'affaires.
+              Quinze années d'opérations à la tête de boutiques phares et de shops DTC en Chine,
+              pour des marques internationales comme pour des PME. Des relations directes avec les
+              plateformes et un achat média discipliné convertissent la stratégie en chiffre
+              d'affaires.
             </p>
           </div>
 
@@ -371,17 +484,28 @@ const icons: Record<string, string> = {
             <li>
               <span class="eyebrow">Ce qui vous revient</span>
             </li>
-            {promises.map((p) => (
-              <li class="cbs-promise__item">
-                <span class="cbs-promise__check" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                </span>
-                <div>
-                  <h4>{p.title}</h4>
-                  <p>{p.desc}</p>
-                </div>
-              </li>
-            ))}
+            {
+              promises.map((p) => (
+                <li class="cbs-promise__item">
+                  <span class="cbs-promise__check" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="5 12 10 17 19 8" />
+                    </svg>
+                  </span>
+                  <div>
+                    <h4>{p.title}</h4>
+                    <p>{p.desc}</p>
+                  </div>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
@@ -396,36 +520,48 @@ const icons: Record<string, string> = {
             <h2>Quatre leviers, un seul moteur de croissance</h2>
           </div>
           <p class="cbs-svc-lead">
-            Nous ouvrons la boutique, captons le trafic, vendons à grande échelle et convertissons le social en chiffre d'affaires. Survolez une tuile pour explorer le moteur sous-jacent.
+            Nous ouvrons la boutique, captons le trafic, vendons à grande échelle et convertissons
+            le social en chiffre d'affaires. Survolez une tuile pour explorer le moteur sous-jacent.
           </p>
         </header>
 
         <div class="cbs-svc-grid">
-          {services.map((s, i) => (
-            <article
-              class="cbs-svc-card cbs-reveal"
-              style={`--svc-color: ${s.color}; --svc-soft: ${s.colorSoft}; --reveal-delay: ${i * 80}ms;`}
-              data-svc-card
-            >
-              <div class="cbs-svc-card__head">
-                <span class="cbs-svc-card__icon" set:html={icons[s.icon]} />
-                <span class="cbs-svc-card__short">{s.short}</span>
-              </div>
-              <h3 class="cbs-svc-card__title">{s.title}</h3>
-              <p class="cbs-svc-card__desc">{s.desc}</p>
-              <ul class="cbs-svc-card__points">
-                {s.points.map((p) => (
-                  <li>
-                    <span class="cbs-svc-card__bullet" aria-hidden="true"></span>
-                    <span>{p}</span>
-                  </li>
-                ))}
-              </ul>
-              <span class="cbs-svc-card__arrow" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </span>
-            </article>
-          ))}
+          {
+            services.map((s, i) => (
+              <article
+                class="cbs-svc-card cbs-reveal"
+                style={`--svc-color: ${s.color}; --svc-soft: ${s.colorSoft}; --reveal-delay: ${i * 80}ms;`}
+                data-svc-card
+              >
+                <div class="cbs-svc-card__head">
+                  <span class="cbs-svc-card__icon" set:html={icons[s.icon]} />
+                  <span class="cbs-svc-card__short">{s.short}</span>
+                </div>
+                <h3 class="cbs-svc-card__title">{s.title}</h3>
+                <p class="cbs-svc-card__desc">{s.desc}</p>
+                <ul class="cbs-svc-card__points">
+                  {s.points.map((p) => (
+                    <li>
+                      <span class="cbs-svc-card__bullet" aria-hidden="true" />
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+                <span class="cbs-svc-card__arrow" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </span>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -440,76 +576,95 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Modèles d'engagement</span>
           <h2>Quatre façons de travailler à nos côtés</h2>
           <p class="section-header__lead">
-            Chaque marque aborde la Chine à un stade différent, avec un budget et un appétit pour le risque qui lui sont propres. Sélectionnez le montage adapté à votre point de départ. La plupart de nos clients transitent d'un modèle à l'autre au fil du temps.
+            Chaque marque aborde la Chine à un stade différent, avec un budget et un appétit pour le
+            risque qui lui sont propres. Sélectionnez le montage adapté à votre point de départ. La
+            plupart de nos clients transitent d'un modèle à l'autre au fil du temps.
           </p>
         </header>
 
         <div class="cbs-tabs cbs-reveal" data-tabs>
           <div class="cbs-tabs__nav" role="tablist">
-            {models.map((m, i) => (
-              <button
-                type="button"
-                class={`cbs-tabs__tab${i === 2 ? ' is-active' : ''}`}
-                role="tab"
-                aria-selected={i === 2 ? 'true' : 'false'}
-                aria-controls={`model-panel-${i}`}
-                id={`model-tab-${i}`}
-                data-tab-target={`model-panel-${i}`}
-              >
-                <span class="cbs-tabs__tab-label">{m.name}</span>
-                <span class="cbs-tabs__tab-tag">{m.tag}</span>
-                {m.highlight && <span class="cbs-tabs__tab-pop">Le plus retenu</span>}
-              </button>
-            ))}
+            {
+              models.map((m, i) => (
+                <button
+                  type="button"
+                  class={`cbs-tabs__tab${i === 2 ? ' is-active' : ''}`}
+                  role="tab"
+                  aria-selected={i === 2 ? 'true' : 'false'}
+                  aria-controls={`model-panel-${i}`}
+                  id={`model-tab-${i}`}
+                  data-tab-target={`model-panel-${i}`}
+                >
+                  <span class="cbs-tabs__tab-label">{m.name}</span>
+                  <span class="cbs-tabs__tab-tag">{m.tag}</span>
+                  {m.highlight && <span class="cbs-tabs__tab-pop">Le plus retenu</span>}
+                </button>
+              ))
+            }
             <span class="cbs-tabs__indicator" aria-hidden="true"></span>
           </div>
 
           <div class="cbs-tabs__panels">
-            {models.map((m, i) => (
-              <div
-                class={`cbs-tabs__panel${i === 2 ? ' is-active' : ''}`}
-                role="tabpanel"
-                id={`model-panel-${i}`}
-                aria-labelledby={`model-tab-${i}`}
-                hidden={i !== 2}
-              >
-                <div class="cbs-tabs__panel-grid">
-                  <div class="cbs-tabs__lead">
-                    <span class="cbs-tabs__pillset">
-                      <span class="cbs-tabs__pill">{m.tag.split(',')[0].trim()}</span>
-                      <span class="cbs-tabs__pill">{m.tag.split(',')[1] ? m.tag.split(',')[1].trim() : ''}</span>
-                    </span>
-                    <h3 class="cbs-tabs__title">{m.name}</h3>
-                    <p class="cbs-tabs__desc">{m.desc}</p>
-                    <div class="cbs-tabs__when">
-                      <span class="cbs-tabs__when-label">Quand y recourir</span>
-                      <p>{m.when.replace(/^Pertinent lorsque\s*/, '')}</p>
+            {
+              models.map((m, i) => (
+                <div
+                  class={`cbs-tabs__panel${i === 2 ? ' is-active' : ''}`}
+                  role="tabpanel"
+                  id={`model-panel-${i}`}
+                  aria-labelledby={`model-tab-${i}`}
+                  hidden={i !== 2}
+                >
+                  <div class="cbs-tabs__panel-grid">
+                    <div class="cbs-tabs__lead">
+                      <span class="cbs-tabs__pillset">
+                        <span class="cbs-tabs__pill">{m.tag.split(',')[0].trim()}</span>
+                        <span class="cbs-tabs__pill">
+                          {m.tag.split(',')[1] ? m.tag.split(',')[1].trim() : ''}
+                        </span>
+                      </span>
+                      <h3 class="cbs-tabs__title">{m.name}</h3>
+                      <p class="cbs-tabs__desc">{m.desc}</p>
+                      <div class="cbs-tabs__when">
+                        <span class="cbs-tabs__when-label">Quand y recourir</span>
+                        <p>{m.when.replace(/^Pertinent lorsque\s*/, '')}</p>
+                      </div>
+                      <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">
+                        Discuter du modèle {m.name}
+                      </a>
                     </div>
-                    <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Discuter du modèle {m.name}</a>
-                  </div>
 
-                  <div class="cbs-tabs__body">
-                    <div class="cbs-tabs__list-wrap">
-                      <span class="cbs-tabs__list-label">Notre périmètre opérationnel</span>
-                      <ul class="cbs-tabs__list">
-                        {m.bullets.map((b) => (
-                          <li>
-                            <span class="cbs-tabs__check" aria-hidden="true">
-                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                            </span>
-                            <span>{b}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div class="cbs-tabs__pricing">
-                      <span class="cbs-tabs__pricing-label">Tarification</span>
-                      <span class="cbs-tabs__pricing-value">{m.pricing}</span>
+                    <div class="cbs-tabs__body">
+                      <div class="cbs-tabs__list-wrap">
+                        <span class="cbs-tabs__list-label">Notre périmètre opérationnel</span>
+                        <ul class="cbs-tabs__list">
+                          {m.bullets.map((b) => (
+                            <li>
+                              <span class="cbs-tabs__check" aria-hidden="true">
+                                <svg
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2.4"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <polyline points="5 12 10 17 19 8" />
+                                </svg>
+                              </span>
+                              <span>{b}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div class="cbs-tabs__pricing">
+                        <span class="cbs-tabs__pricing-label">Tarification</span>
+                        <span class="cbs-tabs__pricing-value">{m.pricing}</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))
+            }
           </div>
         </div>
 
@@ -517,35 +672,87 @@ const icons: Record<string, string> = {
           <div class="cbs-matrix__intro">
             <span class="eyebrow">Comment trancher</span>
             <h3>Deux questions, quatre réponses</h3>
-            <p>Qui pilote l'activité commerciale au quotidien, et qui porte le stock ? Les réponses dessinent le montage. Survolez une case pour faire ressortir la ligne et la colonne correspondantes.</p>
+            <p>
+              Qui pilote l'activité commerciale au quotidien, et qui porte le stock ? Les réponses
+              dessinent le montage. Survolez une case pour faire ressortir la ligne et la colonne
+              correspondantes.
+            </p>
           </div>
-          <div class="cbs-matrix__grid" role="table" aria-label="Matrice de choix du modèle d'engagement">
+          <div
+            class="cbs-matrix__grid"
+            role="table"
+            aria-label="Matrice de choix du modèle d'engagement"
+          >
             <div class="cbs-matrix__corner" role="presentation"></div>
-            <div class="cbs-matrix__head" role="columnheader" data-col="1">Vous tenez les ventes</div>
-            <div class="cbs-matrix__head" role="columnheader" data-col="2">Nous tenons les ventes</div>
+            <div class="cbs-matrix__head" role="columnheader" data-col="1">
+              Vous tenez les ventes
+            </div>
+            <div class="cbs-matrix__head" role="columnheader" data-col="2">
+              Nous tenons les ventes
+            </div>
 
-            <div class="cbs-matrix__row-head" role="rowheader" data-row="1">Vous tenez le stock</div>
-            <button type="button" class="cbs-matrix__cell" role="cell" data-row="1" data-col="1" data-tab-jump="model-tab-0">
+            <div class="cbs-matrix__row-head" role="rowheader" data-row="1">
+              Vous tenez le stock
+            </div>
+            <button
+              type="button"
+              class="cbs-matrix__cell"
+              role="cell"
+              data-row="1"
+              data-col="1"
+              data-tab-jump="model-tab-0"
+            >
               <span class="cbs-matrix__cell-label">Agence marketing</span>
               <span class="cbs-matrix__cell-sub">Nous portons la marque. Vous vendez.</span>
             </button>
-            <button type="button" class="cbs-matrix__cell" role="cell" data-row="1" data-col="2" data-tab-jump="model-tab-2">
+            <button
+              type="button"
+              class="cbs-matrix__cell"
+              role="cell"
+              data-row="1"
+              data-col="2"
+              data-tab-jump="model-tab-2"
+            >
               <span class="cbs-matrix__cell-label">TP, partenaire opérateur</span>
-              <span class="cbs-matrix__cell-sub">Nous opérons votre boutique phare sous nos licences.</span>
+              <span class="cbs-matrix__cell-sub"
+                >Nous opérons votre boutique phare sous nos licences.</span
+              >
             </button>
 
-            <div class="cbs-matrix__row-head" role="rowheader" data-row="2">Nous portons le stock</div>
-            <button type="button" class="cbs-matrix__cell" role="cell" data-row="2" data-col="1" data-tab-jump="model-tab-1">
+            <div class="cbs-matrix__row-head" role="rowheader" data-row="2">
+              Nous portons le stock
+            </div>
+            <button
+              type="button"
+              class="cbs-matrix__cell"
+              role="cell"
+              data-row="2"
+              data-col="1"
+              data-tab-jump="model-tab-1"
+            >
               <span class="cbs-matrix__cell-label">Agent commercial</span>
               <span class="cbs-matrix__cell-sub">Nous identifions le distributeur adapté.</span>
             </button>
-            <button type="button" class="cbs-matrix__cell" role="cell" data-row="2" data-col="2" data-tab-jump="model-tab-3">
+            <button
+              type="button"
+              class="cbs-matrix__cell"
+              role="cell"
+              data-row="2"
+              data-col="2"
+              data-tab-jump="model-tab-3"
+            >
               <span class="cbs-matrix__cell-label">Distributeur exclusif</span>
-              <span class="cbs-matrix__cell-sub">Nous achetons, stockons, vendons. Un seul P&L.</span>
+              <span class="cbs-matrix__cell-sub"
+                >Nous achetons, stockons, vendons. Un seul P&L.</span
+              >
             </button>
           </div>
           <p class="cbs-matrix__note">
-            La plupart des marques démarrent dans une case avant d'en rejoindre une autre. Une marque arrivée par un distributeur ouvre fréquemment sa propre boutique phare avec nous comme TP, une fois la catégorie validée. Inversement, une marque qui pilote déjà sa boutique nous confie parfois la distribution pour activer le retail physique lorsque les enseignes s'ouvrent.
+            La plupart des marques démarrent dans une case avant d'en rejoindre une autre. Une
+            marque arrivée par un distributeur ouvre fréquemment sa propre boutique phare avec nous
+            comme TP, une fois la catégorie validée. Inversement, une marque qui pilote déjà sa
+            boutique nous confie parfois la distribution pour activer le retail physique lorsque les
+            enseignes s'ouvrent.
           </p>
         </div>
       </div>
@@ -555,7 +762,9 @@ const icons: Record<string, string> = {
     <section class="section section--tight">
       <div class="container">
         <div class="cbs-cases-cta">
-          <a href="/fr/nos-realisations" class="btn btn--secondary">Consulter nos références e-commerce</a>
+          <a href="/fr/nos-realisations" class="btn btn--secondary"
+            >Consulter nos références e-commerce</a
+          >
         </div>
       </div>
     </section>
@@ -567,30 +776,37 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Plateformes</span>
           <h2>Nos plateformes e-commerce en Chine</h2>
           <p class="section-header__lead">
-            Opérateur certifié sur les plateformes qui pèsent réellement. Nous calibrons la combinaison adaptée à votre catégorie et à votre ambition, puis nous l'exécutons.
+            Opérateur certifié sur les plateformes qui pèsent réellement. Nous calibrons la
+            combinaison adaptée à votre catégorie et à votre ambition, puis nous l'exécutons.
           </p>
         </header>
 
         <div class="cbs-platforms">
-          {platforms.map((p, i) => (
-            <a
-              href={p.href}
-              class="cbs-platform cbs-reveal"
-              style={`--platform-color: ${p.brandColor}; --platform-accent: ${p.accent}; --reveal-delay: ${i * 90}ms;`}
-            >
-              <div class="cbs-platform__head">
-                <div class="cbs-platform__logo">
-                  <img src={p.logo} alt={`Logo ${p.name}`} loading="lazy" decoding="async" />
+          {
+            platforms.map((p, i) => (
+              <a
+                href={p.href}
+                class="cbs-platform cbs-reveal"
+                style={`--platform-color: ${p.brandColor}; --platform-accent: ${p.accent}; --reveal-delay: ${i * 90}ms;`}
+              >
+                <div class="cbs-platform__head">
+                  <div class="cbs-platform__logo">
+                    <img src={p.logo} alt={`Logo ${p.name}`} loading="lazy" decoding="async" />
+                  </div>
+                  <span class="cbs-platform__cn" aria-hidden="true">
+                    {p.cn}
+                  </span>
                 </div>
-                <span class="cbs-platform__cn" aria-hidden="true">{p.cn}</span>
-              </div>
-              <div class="cbs-platform__body">
-                <h3 class="cbs-platform__title">{p.name}</h3>
-                <p class="cbs-platform__sub">{p.sub}</p>
-              </div>
-              <span class="cbs-platform__cta">En savoir plus <span aria-hidden="true">→</span></span>
-            </a>
-          ))}
+                <div class="cbs-platform__body">
+                  <h3 class="cbs-platform__title">{p.name}</h3>
+                  <p class="cbs-platform__sub">{p.sub}</p>
+                </div>
+                <span class="cbs-platform__cta">
+                  En savoir plus <span aria-hidden="true">→</span>
+                </span>
+              </a>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -605,7 +821,8 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Notre méthode</span>
           <h2>Du plan au pic du festival</h2>
           <p class="section-header__lead">
-            Trois phases qui transforment un lancement en activité pérenne. Le détail se déploie au fil de la lecture.
+            Trois phases qui transforment un lancement en activité pérenne. Le détail se déploie au
+            fil de la lecture.
           </p>
         </header>
 
@@ -615,19 +832,27 @@ const icons: Record<string, string> = {
             <div class="cbs-journey__rail-fill" data-journey-fill></div>
           </div>
           <ol class="cbs-journey__list">
-            {steps.map((s, i) => (
-              <li class="cbs-journey__item cbs-reveal" data-journey-item style={`--reveal-delay: ${i * 80}ms;`}>
-                <span class="cbs-journey__dot" aria-hidden="true">
-                  <span class="cbs-journey__dot-inner"></span>
-                </span>
-                <span class="cbs-journey__phase">{i === 0 ? 'Première étape' : i === 1 ? 'Deuxième étape' : 'Troisième étape'}</span>
-                <div class="cbs-journey__card">
-                  <span class="cbs-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
-                  <h3 class="cbs-journey__title">{s.title}</h3>
-                  <p class="cbs-journey__desc">{s.desc}</p>
-                </div>
-              </li>
-            ))}
+            {
+              steps.map((s, i) => (
+                <li
+                  class="cbs-journey__item cbs-reveal"
+                  data-journey-item
+                  style={`--reveal-delay: ${i * 80}ms;`}
+                >
+                  <span class="cbs-journey__dot" aria-hidden="true">
+                    <span class="cbs-journey__dot-inner" />
+                  </span>
+                  <span class="cbs-journey__phase">
+                    {i === 0 ? 'Première étape' : i === 1 ? 'Deuxième étape' : 'Troisième étape'}
+                  </span>
+                  <div class="cbs-journey__card">
+                    <span class="cbs-journey__icon" aria-hidden="true" set:html={icons[s.icon]} />
+                    <h3 class="cbs-journey__title">{s.title}</h3>
+                    <p class="cbs-journey__desc">{s.desc}</p>
+                  </div>
+                </li>
+              ))
+            }
           </ol>
         </div>
       </div>
@@ -640,7 +865,9 @@ const icons: Record<string, string> = {
           <span class="eyebrow">L'IA dans l'eCommerce</span>
           <h2>Comment nous mobilisons l'IA pour opérer en Chine</h2>
           <p class="section-header__lead">
-            L'IA ne relève plus du chantier annexe. Elle structure désormais notre méthode pour contenir les coûts, industrialiser la production de contenus et personnaliser le parcours d'achat sur l'ensemble des boutiques que nous opérons.
+            L'IA ne relève plus du chantier annexe. Elle structure désormais notre méthode pour
+            contenir les coûts, industrialiser la production de contenus et personnaliser le
+            parcours d'achat sur l'ensemble des boutiques que nous opérons.
           </p>
         </header>
 
@@ -650,7 +877,11 @@ const icons: Record<string, string> = {
             <div class="cbs-ai-bento__feature-body">
               <span class="cbs-ai-bento__chip">En continu</span>
               <h3>Personnalisation IA sur l'ensemble du parcours</h3>
-              <p>De la recommandation produit aux pages de destination dynamiques, l'IA améliore la conversion à chaque étape. Même boutique, même budget média, davantage de chiffre d'affaires.</p>
+              <p>
+                De la recommandation produit aux pages de destination dynamiques, l'IA améliore la
+                conversion à chaque étape. Même boutique, même budget média, davantage de chiffre
+                d'affaires.
+              </p>
               <ul class="cbs-ai-bento__feature-stats">
                 <li>
                   <span class="cbs-ai-bento__stat-num" data-counter="22" data-suffix="%">0</span>
@@ -662,16 +893,25 @@ const icons: Record<string, string> = {
                 </li>
               </ul>
             </div>
-            <span class="cbs-ai-bento__icon-large" aria-hidden="true" set:html={icons[aiBenefits[0].icon]} />
+            <span
+              class="cbs-ai-bento__icon-large"
+              aria-hidden="true"
+              set:html={icons[aiBenefits[0].icon]}
+            />
           </article>
 
-          {aiBenefits.slice(1).map((b, i) => (
-            <article class={`cbs-ai-bento__card cbs-ai-bento__card--small cbs-reveal`} style={`--reveal-delay: ${i * 80}ms;`}>
-              <span class="cbs-ai-bento__icon" aria-hidden="true" set:html={icons[b.icon]} />
-              <h3>{b.title}</h3>
-              <p>{b.desc}</p>
-            </article>
-          ))}
+          {
+            aiBenefits.slice(1).map((b, i) => (
+              <article
+                class={`cbs-ai-bento__card cbs-ai-bento__card--small cbs-reveal`}
+                style={`--reveal-delay: ${i * 80}ms;`}
+              >
+                <span class="cbs-ai-bento__icon" aria-hidden="true" set:html={icons[b.icon]} />
+                <h3>{b.title}</h3>
+                <p>{b.desc}</p>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -683,92 +923,129 @@ const icons: Record<string, string> = {
           <span class="eyebrow">FAQ</span>
           <h2>Questions fréquentes sur l'eCommerce en Chine</h2>
           <p class="section-header__lead">
-            Vingt questions concrètes que nous adressent les opérateurs en préparation d'un lancement chinois. Filtrez par thématique.
+            Vingt questions concrètes que nous adressent les opérateurs en préparation d'un
+            lancement chinois. Filtrez par thématique.
           </p>
         </header>
 
-        <div class="cbs-faq-filter cbs-reveal" data-faq-filter role="tablist" aria-label="Filtrer les questions par catégorie">
-          {faqCategories.map((c, i) => (
-            <button
-              type="button"
-              class={`cbs-faq-chip${i === 0 ? ' is-active' : ''}`}
-              role="tab"
-              aria-selected={i === 0 ? 'true' : 'false'}
-              data-faq-cat={c}
-            >
-              <span class="cbs-faq-chip__label">{c}</span>
-              <span class="cbs-faq-chip__count">{c === 'Tout' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
-            </button>
-          ))}
+        <div
+          class="cbs-faq-filter cbs-reveal"
+          data-faq-filter
+          role="tablist"
+          aria-label="Filtrer les questions par catégorie"
+        >
+          {
+            faqCategories.map((c, i) => (
+              <button
+                type="button"
+                class={`cbs-faq-chip${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                data-faq-cat={c}
+              >
+                <span class="cbs-faq-chip__label">{c}</span>
+                <span class="cbs-faq-chip__count">
+                  {c === 'Tout' ? faqs.length : faqs.filter((f) => f.cat === c).length}
+                </span>
+              </button>
+            ))
+          }
         </div>
 
         <div class="cbs-faq" data-faq-list>
-          {faqs.map((f, i) => (
-            <details
-              class="cbs-faq__item cbs-reveal"
-              data-faq-cat={f.cat}
-              open={i === 0}
-              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
-            >
-              <summary class="cbs-faq__q">
-                <span class="cbs-faq__cat-tag">{f.cat}</span>
-                <span class="cbs-faq__q-text">{f.q}</span>
-                <span class="cbs-faq__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </span>
-              </summary>
-              <div class="cbs-faq__a">
-                <p>{f.a}</p>
-              </div>
-            </details>
-          ))}
+          {
+            faqs.map((f, i) => (
+              <details
+                class="cbs-faq__item cbs-reveal"
+                data-faq-cat={f.cat}
+                open={i === 0}
+                style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+              >
+                <summary class="cbs-faq__q">
+                  <span class="cbs-faq__cat-tag">{f.cat}</span>
+                  <span class="cbs-faq__q-text">{f.q}</span>
+                  <span class="cbs-faq__icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </summary>
+                <div class="cbs-faq__a">
+                  <p>{f.a}</p>
+                </div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </section>
 
     {/* ---------- INSIGHTS ---------- */}
-    {pageInsights.length > 0 && (
-      <section class="section">
-        <div class="container">
-          <header class="section-header section-header--split">
-            <div>
-              <span class="eyebrow">Décryptages</span>
-              <h2>Lectures de marché en Chine</h2>
-            </div>
-            <a href="/fr/decryptages" class="btn btn--secondary btn--sm">Voir plus de décryptages</a>
-          </header>
-
-          <div class="grid grid-3">
-            {pageInsights.map((post) => (
-              <a href={`/fr/decryptages/${post.id}`} class="insight-card">
-                <div class="insight-card__image">
-                  {post.data.heroImage && (
-                    <img src={post.data.heroImage} alt={post.data.heroImageAlt} loading="lazy" decoding="async" width="600" height="400" />
-                  )}
-                </div>
-                <div class="insight-card__body">
-                  <span class="insight-card__tag">{post.data.category}</span>
-                  <h3 class="insight-card__title">{post.data.title}</h3>
-                </div>
+    {
+      pageInsights.length > 0 && (
+        <section class="section">
+          <div class="container">
+            <header class="section-header section-header--split">
+              <div>
+                <span class="eyebrow">Décryptages</span>
+                <h2>Lectures de marché en Chine</h2>
+              </div>
+              <a href="/fr/decryptages" class="btn btn--secondary btn--sm">
+                Voir plus de décryptages
               </a>
-            ))}
+            </header>
+
+            <div class="grid grid-3">
+              {pageInsights.map((post) => (
+                <a href={`/fr/decryptages/${post.id}`} class="insight-card">
+                  <div class="insight-card__image">
+                    {post.data.heroImage && (
+                      <img
+                        src={post.data.heroImage}
+                        alt={post.data.heroImageAlt}
+                        loading="lazy"
+                        decoding="async"
+                        width="600"
+                        height="400"
+                      />
+                    )}
+                  </div>
+                  <div class="insight-card__body">
+                    <span class="insight-card__tag">{post.data.category}</span>
+                    <h3 class="insight-card__title">{post.data.title}</h3>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-    )}
+        </section>
+      )
+    }
 
     {/* ---------- FINAL CTA ---------- */}
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">
           <span class="eyebrow eyebrow--on-dark">Engager la conversation</span>
-          <h2 class="cbs-cta__title">Vous envisagez de porter votre marque ou votre activité en Chine ?</h2>
+          <h2 class="cbs-cta__title">
+            Vous envisagez de porter votre marque ou votre activité en Chine ?
+          </h2>
           <p class="cbs-cta__lead">
-            Précisez votre point de départ et la trajectoire visée. Un senior de l'équipe vous répond sous un jour ouvré. Aucun auto-répondeur, aucun tunnel commercial.
+            Précisez votre point de départ et la trajectoire visée. Un senior de l'équipe vous
+            répond sous un jour ouvré. Aucun auto-répondeur, aucun tunnel commercial.
           </p>
           <div class="cbs-cta__actions">
             <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Nous contacter</a>
-            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Consulter nos références</a>
+            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost"
+              >Consulter nos références</a
+            >
           </div>
         </div>
       </div>
@@ -777,7 +1054,9 @@ const icons: Record<string, string> = {
 
   <style is:global>
     /* ---------- Container narrow helper (re-used pattern) ---------- */
-    .cbs .container--narrow { max-width: 880px; }
+    .cbs .container--narrow {
+      max-width: 880px;
+    }
 
     /* ---------- REVEAL + MOTION (global) ---------- */
     @media (prefers-reduced-motion: no-preference) {
@@ -794,8 +1073,11 @@ const icons: Record<string, string> = {
       }
       .cbs-magnetic {
         will-change: transform;
-        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+        transition:
+          transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 220ms ease,
+          background-color 200ms ease,
+          color 200ms ease;
       }
     }
 
@@ -813,7 +1095,7 @@ const icons: Record<string, string> = {
     .cbs-progress__bar {
       height: 100%;
       width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #C8102E 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 60%, #c8102e 100%);
       box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
@@ -831,11 +1113,19 @@ const icons: Record<string, string> = {
     }
     /* Tighten the bleed: hero starts right under the sticky nav, content sits closer to the top.
        Matches the spacing used on /learn-china/learning-expeditions. */
-    body:has(.cbs-hero) .cbs-hero { padding-top: clamp(112px, 10vh, 144px); }
-    @media (max-width: 1024px) {
-      body:has(.cbs-hero) .cbs-hero { padding-top: clamp(96px, 9vh, 116px); }
+    body:has(.cbs-hero) .cbs-hero {
+      padding-top: clamp(112px, 10vh, 144px);
     }
-    .cbs-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    @media (max-width: 1024px) {
+      body:has(.cbs-hero) .cbs-hero {
+        padding-top: clamp(96px, 9vh, 116px);
+      }
+    }
+    .cbs-hero__bg {
+      position: absolute;
+      inset: -10% 0 0;
+      z-index: -3;
+    }
     .cbs-hero__bg img {
       width: 100%;
       height: 110%;
@@ -846,26 +1136,32 @@ const icons: Record<string, string> = {
       filter: saturate(0.95);
     }
     .cbs-hero__overlay {
-      position: absolute; inset: 0; z-index: -2;
+      position: absolute;
+      inset: 0;
+      z-index: -2;
       background:
-        linear-gradient(110deg,
+        linear-gradient(
+          110deg,
           rgba(8, 18, 28, 0.92) 0%,
           rgba(8, 18, 28, 0.72) 42%,
-          rgba(8, 18, 28, 0.32) 100%),
-        radial-gradient(120% 80% at 0% 100%,
-          rgba(200, 16, 46, 0.28) 0%,
-          rgba(200, 16, 46, 0) 60%);
+          rgba(8, 18, 28, 0.32) 100%
+        ),
+        radial-gradient(120% 80% at 0% 100%, rgba(200, 16, 46, 0.28) 0%, rgba(200, 16, 46, 0) 60%);
     }
     .cbs-hero__grain {
-      position: absolute; inset: 0; z-index: -1;
-      background-image:
-        radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
       background-size: 3px 3px;
       mix-blend-mode: overlay;
       opacity: 0.45;
       pointer-events: none;
     }
-    .cbs-hero__inner { max-width: 980px; position: relative; }
+    .cbs-hero__inner {
+      max-width: 980px;
+      position: relative;
+    }
     .cbs-hero__crumbs {
       margin-bottom: var(--space-4);
       font-size: var(--fs-small);
@@ -874,12 +1170,17 @@ const icons: Record<string, string> = {
       align-items: center;
       color: rgba(255, 255, 255, 0.7);
     }
-    .cbs-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
-    .cbs-hero__crumbs a:hover { color: var(--bbg-white); }
+    .cbs-hero__crumbs a {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+    .cbs-hero__crumbs a:hover {
+      color: var(--bbg-white);
+    }
     .cbs-hero__inner .eyebrow--on-dark {
       display: inline-block;
       margin-bottom: var(--space-3);
-      color: #C8102E;
+      color: #c8102e;
     }
     .cbs-hero__title {
       font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
@@ -893,9 +1194,11 @@ const icons: Record<string, string> = {
       flex-direction: column;
       gap: 0.05em;
     }
-    .cbs-hero__title-row { display: block; }
+    .cbs-hero__title-row {
+      display: block;
+    }
     .cbs-hero__title-row--accent {
-      color: #C8102E;
+      color: #c8102e;
       font-weight: 500;
       font-style: italic;
       letter-spacing: -0.018em;
@@ -907,21 +1210,25 @@ const icons: Record<string, string> = {
       padding: 0 0.15em;
     }
     .cbs-hero__title-row--highlight::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0.04em;
       height: 0.18em;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px;
       transform-origin: left center;
       animation: cbs-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
       z-index: -1;
     }
     @keyframes cbs-underline {
-      from { transform: scaleX(0); }
-      to { transform: scaleX(1); }
+      from {
+        transform: scaleX(0);
+      }
+      to {
+        transform: scaleX(1);
+      }
     }
     .cbs-hero__lead {
       font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
@@ -930,8 +1237,15 @@ const icons: Record<string, string> = {
       max-width: 58ch;
       margin: 0 0 var(--space-5);
     }
-    .cbs-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
-    .cbs-magnetic:hover { transform: translateY(-2px); }
+    .cbs-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+    .cbs-magnetic:hover {
+      transform: translateY(-2px);
+    }
 
     .cbs-hero__meta {
       display: flex;
@@ -941,14 +1255,18 @@ const icons: Record<string, string> = {
       border-top: 1px solid rgba(255, 255, 255, 0.14);
       max-width: 720px;
     }
-    .cbs-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .cbs-hero__meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
     .cbs-hero__meta-num {
       font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1;
       color: var(--bbg-white);
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .cbs-hero__meta-label {
       font-size: 0.85rem;
@@ -971,7 +1289,9 @@ const icons: Record<string, string> = {
       font-weight: 600;
       transition: color 200ms ease;
     }
-    .cbs-hero__scroll:hover { color: var(--bbg-white); }
+    .cbs-hero__scroll:hover {
+      color: var(--bbg-white);
+    }
     .cbs-hero__scroll-line {
       width: 1px;
       height: 40px;
@@ -980,7 +1300,7 @@ const icons: Record<string, string> = {
       overflow: hidden;
     }
     .cbs-hero__scroll-line::after {
-      content: "";
+      content: '';
       position: absolute;
       top: -100%;
       left: 0;
@@ -990,12 +1310,20 @@ const icons: Record<string, string> = {
       animation: cbs-scroll-tick 1.8s ease-in-out infinite;
     }
     @keyframes cbs-scroll-tick {
-      0% { top: -50%; }
-      100% { top: 100%; }
+      0% {
+        top: -50%;
+      }
+      100% {
+        top: 100%;
+      }
     }
     @media (max-width: 720px) {
-      .cbs-hero__scroll { display: none; }
-      .cbs-hero__meta { gap: var(--space-4); }
+      .cbs-hero__scroll {
+        display: none;
+      }
+      .cbs-hero__meta {
+        gap: var(--space-4);
+      }
     }
 
     /* ---------- CONTEXT (two truths) ---------- */
@@ -1011,7 +1339,9 @@ const icons: Record<string, string> = {
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
     }
     .cbs-context__card:hover {
       border-color: var(--bbg-blue);
@@ -1053,8 +1383,12 @@ const icons: Record<string, string> = {
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .cbs-context { grid-template-columns: 1fr; }
-      .cbs-context__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+      .cbs-context {
+        grid-template-columns: 1fr;
+      }
+      .cbs-context__body {
+        padding: var(--space-5) var(--space-6) var(--space-6);
+      }
     }
 
     /* ---------- VALUE + PROMISES ---------- */
@@ -1091,7 +1425,7 @@ const icons: Record<string, string> = {
       line-height: 1;
       letter-spacing: -0.02em;
       margin-bottom: 0.5rem;
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .cbs-value__stat-label {
       display: block;
@@ -1110,7 +1444,9 @@ const icons: Record<string, string> = {
       flex-direction: column;
       gap: var(--space-5);
     }
-    .cbs-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .cbs-promise > li:first-child .eyebrow {
+      margin-bottom: 0;
+    }
     .cbs-promise__item {
       display: grid;
       grid-template-columns: 32px 1fr;
@@ -1128,7 +1464,10 @@ const icons: Record<string, string> = {
       justify-content: center;
       flex-shrink: 0;
     }
-    .cbs-promise__check svg { width: 16px; height: 16px; }
+    .cbs-promise__check svg {
+      width: 16px;
+      height: 16px;
+    }
     .cbs-promise__item h4 {
       font-size: 1.125rem;
       margin: 0 0 var(--space-2);
@@ -1142,11 +1481,18 @@ const icons: Record<string, string> = {
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .cbs-value { grid-template-columns: 1fr; gap: var(--space-6); }
-      .cbs-value__stats { grid-template-columns: 1fr 1fr; }
+      .cbs-value {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
+      .cbs-value__stats {
+        grid-template-columns: 1fr 1fr;
+      }
     }
     @media (max-width: 640px) {
-      .cbs-value__stats { grid-template-columns: 1fr; }
+      .cbs-value__stats {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- SERVICES ---------- */
@@ -1169,12 +1515,14 @@ const icons: Record<string, string> = {
         box-shadow 280ms ease;
     }
     .cbs-service::before {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(120% 80% at 100% 0%,
-        rgba(200, 16, 46, 0.10) 0%,
-        rgba(200, 16, 46, 0) 55%);
+      background: radial-gradient(
+        120% 80% at 100% 0%,
+        rgba(200, 16, 46, 0.1) 0%,
+        rgba(200, 16, 46, 0) 55%
+      );
       opacity: 0;
       transition: opacity 320ms ease;
       z-index: -1;
@@ -1182,11 +1530,16 @@ const icons: Record<string, string> = {
     .cbs-service:hover {
       transform: translateY(-6px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 18px 38px -22px rgba(200, 16, 46, 0.45),
-                  0 4px 10px -6px rgba(0, 0, 0, 0.08);
+      box-shadow:
+        0 18px 38px -22px rgba(200, 16, 46, 0.45),
+        0 4px 10px -6px rgba(0, 0, 0, 0.08);
     }
-    .cbs-service:hover::before { opacity: 1; }
-    .cbs-service:hover .cbs-service__icon { transform: scale(1.08) rotate(-3deg); }
+    .cbs-service:hover::before {
+      opacity: 1;
+    }
+    .cbs-service:hover .cbs-service__icon {
+      transform: scale(1.08) rotate(-3deg);
+    }
     .cbs-service__icon {
       display: inline-flex;
       width: 52px;
@@ -1200,7 +1553,10 @@ const icons: Record<string, string> = {
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
       box-shadow: inset 0 0 0 1px rgba(200, 16, 46, 0.15);
     }
-    .cbs-service__icon svg { width: 26px; height: 26px; }
+    .cbs-service__icon svg {
+      width: 26px;
+      height: 26px;
+    }
     .cbs-service h3 {
       font-size: 1.1875rem;
       line-height: 1.25;
@@ -1213,11 +1569,23 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
       margin: 0;
     }
-    @media (max-width: 1024px) { .cbs-services { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 560px) { .cbs-services { grid-template-columns: 1fr; } }
+    @media (max-width: 1024px) {
+      .cbs-services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 560px) {
+      .cbs-services {
+        grid-template-columns: 1fr;
+      }
+    }
 
     /* ---------- BUSINESS MODELS SECTION BACKGROUND ---------- */
-    .cbs-models-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-models-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .cbs-models-section__bg {
       position: absolute;
       top: 0;
@@ -1237,10 +1605,18 @@ const icons: Record<string, string> = {
       object-position: center;
       filter: saturate(0.6);
     }
-    @media (max-width: 900px) { .cbs-models-section__bg { display: none; } }
+    @media (max-width: 900px) {
+      .cbs-models-section__bg {
+        display: none;
+      }
+    }
 
     /* ---------- HOW WE WORK SECTION BACKGROUND ---------- */
-    .cbs-steps-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-steps-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .cbs-steps-section__bg {
       position: absolute;
       top: 0;
@@ -1248,17 +1624,19 @@ const icons: Record<string, string> = {
       width: 100%;
       height: 100%;
       z-index: -2;
-      opacity: 0.10;
+      opacity: 0.1;
       pointer-events: none;
     }
     .cbs-steps-section__bg::after {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg,
+      background: linear-gradient(
+        180deg,
         var(--bbg-white) 0%,
         rgba(255, 255, 255, 0.4) 40%,
-        rgba(255, 255, 255, 0.7) 100%);
+        rgba(255, 255, 255, 0.7) 100%
+      );
       pointer-events: none;
     }
     .cbs-steps-section__bg img {
@@ -1285,7 +1663,9 @@ const icons: Record<string, string> = {
       display: flex;
       flex-direction: column;
       gap: var(--space-4);
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
     }
     .cbs-model:hover {
       border-color: var(--bbg-blue);
@@ -1371,7 +1751,7 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
     }
     .cbs-model__list li::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0.55em;
@@ -1380,7 +1760,11 @@ const icons: Record<string, string> = {
       border-radius: 50%;
       background: var(--bbg-blue);
     }
-    .cbs-model__pricing { display: flex; flex-direction: column; gap: 0.25rem; }
+    .cbs-model__pricing {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
     .cbs-model__pricing-label {
       font-size: var(--fs-label);
       font-weight: 600;
@@ -1394,10 +1778,17 @@ const icons: Record<string, string> = {
       font-weight: 600;
       line-height: 1.4;
     }
-    .cbs-model__cta { align-self: flex-start; margin-top: auto; }
+    .cbs-model__cta {
+      align-self: flex-start;
+      margin-top: auto;
+    }
     @media (max-width: 1024px) {
-      .cbs-models { grid-template-columns: 1fr; }
-      .cbs-model { padding: var(--space-6); }
+      .cbs-models {
+        grid-template-columns: 1fr;
+      }
+      .cbs-model {
+        padding: var(--space-6);
+      }
     }
 
     /* ---------- MATRIX (How to pick) ---------- */
@@ -1409,7 +1800,10 @@ const icons: Record<string, string> = {
       padding: clamp(var(--space-5), 3vw + 1rem, var(--space-7));
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
     }
-    .cbs-matrix__intro { text-align: center; margin-bottom: var(--space-6); }
+    .cbs-matrix__intro {
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
     .cbs-matrix__intro h3 {
       font-size: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
       margin: var(--space-2) 0 var(--space-3);
@@ -1438,7 +1832,9 @@ const icons: Record<string, string> = {
       background: var(--bbg-white);
       padding: var(--space-4);
     }
-    .cbs-matrix__corner { background: var(--bbg-surface); }
+    .cbs-matrix__corner {
+      background: var(--bbg-surface);
+    }
     .cbs-matrix__head {
       background: var(--bbg-surface);
       font-size: 0.85rem;
@@ -1468,7 +1864,9 @@ const icons: Record<string, string> = {
       transition: background var(--dur) var(--ease);
       cursor: default;
     }
-    .cbs-matrix__cell:hover { background: var(--bbg-blue-light); }
+    .cbs-matrix__cell:hover {
+      background: var(--bbg-blue-light);
+    }
     .cbs-matrix__cell-label {
       font-size: 1.05rem;
       font-weight: 700;
@@ -1492,8 +1890,13 @@ const icons: Record<string, string> = {
       .cbs-matrix__grid {
         grid-template-columns: 1fr 1fr;
       }
-      .cbs-matrix__corner { display: none; }
-      .cbs-matrix__head { font-size: 0.75rem; padding: var(--space-3); }
+      .cbs-matrix__corner {
+        display: none;
+      }
+      .cbs-matrix__head {
+        font-size: 0.75rem;
+        padding: var(--space-3);
+      }
       .cbs-matrix__row-head {
         grid-column: 1 / -1;
         background: var(--bbg-blue-light);
@@ -1512,7 +1915,10 @@ const icons: Record<string, string> = {
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
       padding: var(--space-6);
-      transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      transition:
+        transform var(--dur) var(--ease),
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
       color: var(--bbg-ink);
     }
     .cbs-case:hover {
@@ -1548,10 +1954,17 @@ const icons: Record<string, string> = {
       font-weight: 600;
       margin-top: var(--space-2);
     }
-    .cbs-case:hover .cbs-case__cta span { display: inline-block; transform: translateX(4px); transition: transform var(--dur) var(--ease); }
+    .cbs-case:hover .cbs-case__cta span {
+      display: inline-block;
+      transform: translateX(4px);
+      transition: transform var(--dur) var(--ease);
+    }
 
     /* ---------- CASES CTA ---------- */
-    .cbs-cases-cta { display: flex; justify-content: center; }
+    .cbs-cases-cta {
+      display: flex;
+      justify-content: center;
+    }
 
     /* ---------- PLATFORMS ---------- */
     .cbs-platforms {
@@ -1571,31 +1984,36 @@ const icons: Record<string, string> = {
       color: var(--bbg-ink);
       overflow: hidden;
       isolation: isolate;
-      transition: transform var(--dur) var(--ease),
-                  border-color var(--dur) var(--ease),
-                  box-shadow var(--dur) var(--ease);
+      transition:
+        transform var(--dur) var(--ease),
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
     }
     .cbs-platform::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       height: 4px;
-      background: linear-gradient(90deg,
+      background: linear-gradient(
+        90deg,
         var(--platform-color, var(--bbg-blue)) 0%,
-        var(--platform-accent, var(--bbg-blue-dark)) 100%);
+        var(--platform-accent, var(--bbg-blue-dark)) 100%
+      );
       transform: scaleX(0.4);
       transform-origin: left center;
       transition: transform var(--dur) var(--ease);
     }
     .cbs-platform::after {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 100% 0%,
-        color-mix(in srgb, var(--platform-color, #C8102E) 12%, transparent) 0%,
-        transparent 55%);
+      background: radial-gradient(
+        circle at 100% 0%,
+        color-mix(in srgb, var(--platform-color, #c8102e) 12%, transparent) 0%,
+        transparent 55%
+      );
       opacity: 0;
       transition: opacity var(--dur) var(--ease);
       z-index: -1;
@@ -1603,13 +2021,18 @@ const icons: Record<string, string> = {
     }
     .cbs-platform:hover {
       transform: translateY(-6px);
-      border-color: color-mix(in srgb, var(--platform-color, #C8102E) 60%, var(--bbg-border));
-      box-shadow: 0 18px 40px -22px color-mix(in srgb, var(--platform-color, #C8102E) 55%, transparent),
-                  0 4px 12px -6px rgba(0, 0, 0, 0.08);
+      border-color: color-mix(in srgb, var(--platform-color, #c8102e) 60%, var(--bbg-border));
+      box-shadow:
+        0 18px 40px -22px color-mix(in srgb, var(--platform-color, #c8102e) 55%, transparent),
+        0 4px 12px -6px rgba(0, 0, 0, 0.08);
       color: var(--bbg-ink);
     }
-    .cbs-platform:hover::before { transform: scaleX(1); }
-    .cbs-platform:hover::after { opacity: 1; }
+    .cbs-platform:hover::before {
+      transform: scaleX(1);
+    }
+    .cbs-platform:hover::after {
+      opacity: 1;
+    }
     .cbs-platform__head {
       display: flex;
       align-items: center;
@@ -1627,10 +2050,12 @@ const icons: Record<string, string> = {
       border: 1px solid var(--bbg-border);
       padding: 14px;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-      transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        transform var(--dur) var(--ease);
     }
     .cbs-platform:hover .cbs-platform__logo {
-      border-color: color-mix(in srgb, var(--platform-color, #C8102E) 35%, var(--bbg-border));
+      border-color: color-mix(in srgb, var(--platform-color, #c8102e) 35%, var(--bbg-border));
       transform: scale(1.04);
     }
     .cbs-platform__logo img {
@@ -1641,12 +2066,17 @@ const icons: Record<string, string> = {
     .cbs-platform__cn {
       font-size: 1.5rem;
       font-weight: 700;
-      color: color-mix(in srgb, var(--platform-color, #C8102E) 75%, var(--bbg-ink));
+      color: color-mix(in srgb, var(--platform-color, #c8102e) 75%, var(--bbg-ink));
       line-height: 1;
       letter-spacing: 0.02em;
       opacity: 0.85;
     }
-    .cbs-platform__body { display: flex; flex-direction: column; gap: var(--space-2); flex-grow: 1; }
+    .cbs-platform__body {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      flex-grow: 1;
+    }
     .cbs-platform__title {
       font-size: 1.375rem;
       line-height: 1.2;
@@ -1670,9 +2100,21 @@ const icons: Record<string, string> = {
       align-items: center;
       gap: 0.25rem;
     }
-    .cbs-platform:hover .cbs-platform__cta span { display: inline-block; transform: translateX(4px); transition: transform var(--dur) var(--ease); }
-    @media (max-width: 1024px) { .cbs-platforms { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 560px) { .cbs-platforms { grid-template-columns: 1fr; } }
+    .cbs-platform:hover .cbs-platform__cta span {
+      display: inline-block;
+      transform: translateX(4px);
+      transition: transform var(--dur) var(--ease);
+    }
+    @media (max-width: 1024px) {
+      .cbs-platforms {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 560px) {
+      .cbs-platforms {
+        grid-template-columns: 1fr;
+      }
+    }
 
     /* ---------- HOW WE WORK / STEPS ---------- */
     .cbs-steps {
@@ -1696,18 +2138,22 @@ const icons: Record<string, string> = {
         left: 12%;
         right: 12%;
         height: 2px;
-        background: linear-gradient(90deg,
+        background: linear-gradient(
+          90deg,
           rgba(200, 16, 46, 0) 0%,
           rgba(200, 16, 46, 0.35) 12%,
           rgba(200, 16, 46, 0.55) 50%,
           rgba(200, 16, 46, 0.35) 88%,
-          rgba(200, 16, 46, 0) 100%);
+          rgba(200, 16, 46, 0) 100%
+        );
         z-index: 0;
         transform: scaleX(0);
         transform-origin: left center;
         transition: transform 1200ms cubic-bezier(0.16, 1, 0.3, 1);
       }
-      .cbs-steps.is-in .cbs-steps__line { transform: scaleX(1); }
+      .cbs-steps.is-in .cbs-steps__line {
+        transform: scaleX(1);
+      }
     }
     .cbs-step {
       background: var(--bbg-white);
@@ -1724,8 +2170,9 @@ const icons: Record<string, string> = {
     .cbs-step:hover {
       transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 16px 32px -20px rgba(200, 16, 46, 0.4),
-                  0 4px 10px -6px rgba(0, 0, 0, 0.06);
+      box-shadow:
+        0 16px 32px -20px rgba(200, 16, 46, 0.4),
+        0 4px 10px -6px rgba(0, 0, 0, 0.06);
     }
     .cbs-step__icon {
       display: inline-flex;
@@ -1737,11 +2184,18 @@ const icons: Record<string, string> = {
       background: var(--bbg-white);
       color: var(--bbg-blue);
       margin-bottom: var(--space-4);
-      box-shadow: 0 0 0 3px var(--bbg-blue-light), inset 0 0 0 1px rgba(200, 16, 46, 0.18);
+      box-shadow:
+        0 0 0 3px var(--bbg-blue-light),
+        inset 0 0 0 1px rgba(200, 16, 46, 0.18);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .cbs-step:hover .cbs-step__icon { transform: scale(1.06) rotate(4deg); }
-    .cbs-step__icon svg { width: 26px; height: 26px; }
+    .cbs-step:hover .cbs-step__icon {
+      transform: scale(1.06) rotate(4deg);
+    }
+    .cbs-step__icon svg {
+      width: 26px;
+      height: 26px;
+    }
     .cbs-step__title {
       font-size: 1.375rem;
       line-height: 1.25;
@@ -1754,7 +2208,11 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
       margin: 0;
     }
-    @media (max-width: 1024px) { .cbs-steps { grid-template-columns: 1fr; } }
+    @media (max-width: 1024px) {
+      .cbs-steps {
+        grid-template-columns: 1fr;
+      }
+    }
 
     /* ---------- AI ---------- */
     .cbs-ai {
@@ -1776,13 +2234,13 @@ const icons: Record<string, string> = {
         box-shadow 280ms ease;
     }
     .cbs-ai__card::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       height: 2px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 50%, var(--bbg-blue) 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 50%, var(--bbg-blue) 100%);
       transform: scaleX(0);
       transform-origin: left center;
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1790,10 +2248,13 @@ const icons: Record<string, string> = {
     .cbs-ai__card:hover {
       transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 14px 30px -18px rgba(200, 16, 46, 0.42),
-                  0 4px 10px -6px rgba(0, 0, 0, 0.06);
+      box-shadow:
+        0 14px 30px -18px rgba(200, 16, 46, 0.42),
+        0 4px 10px -6px rgba(0, 0, 0, 0.06);
     }
-    .cbs-ai__card:hover::before { transform: scaleX(1); }
+    .cbs-ai__card:hover::before {
+      transform: scaleX(1);
+    }
     .cbs-ai__icon {
       display: inline-flex;
       width: 44px;
@@ -1807,8 +2268,13 @@ const icons: Record<string, string> = {
       box-shadow: inset 0 0 0 1px rgba(200, 16, 46, 0.12);
       transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .cbs-ai__card:hover .cbs-ai__icon { transform: scale(1.08) rotate(-4deg); }
-    .cbs-ai__icon svg { width: 20px; height: 20px; }
+    .cbs-ai__card:hover .cbs-ai__icon {
+      transform: scale(1.08) rotate(-4deg);
+    }
+    .cbs-ai__icon svg {
+      width: 20px;
+      height: 20px;
+    }
     .cbs-ai__card h3 {
       font-size: 1.0625rem;
       line-height: 1.3;
@@ -1822,10 +2288,14 @@ const icons: Record<string, string> = {
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .cbs-ai { grid-template-columns: repeat(2, 1fr); }
+      .cbs-ai {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (max-width: 560px) {
-      .cbs-ai { grid-template-columns: 1fr; }
+      .cbs-ai {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- FAQ ---------- */
@@ -1839,7 +2309,10 @@ const icons: Record<string, string> = {
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-md);
       overflow: hidden;
-      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 240ms ease,
+        box-shadow 240ms ease,
+        transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-faq__item:hover {
       transform: translateX(2px);
@@ -1863,9 +2336,15 @@ const icons: Record<string, string> = {
       list-style: none;
       transition: color var(--dur) var(--ease);
     }
-    .cbs-faq__q::-webkit-details-marker { display: none; }
-    .cbs-faq__q::marker { display: none; }
-    .cbs-faq__item:hover .cbs-faq__q { color: var(--bbg-blue); }
+    .cbs-faq__q::-webkit-details-marker {
+      display: none;
+    }
+    .cbs-faq__q::marker {
+      display: none;
+    }
+    .cbs-faq__item:hover .cbs-faq__q {
+      color: var(--bbg-blue);
+    }
     .cbs-faq__icon {
       flex-shrink: 0;
       width: 28px;
@@ -1876,9 +2355,10 @@ const icons: Record<string, string> = {
       border-radius: 50%;
       background: var(--bbg-surface);
       color: var(--bbg-text-muted);
-      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
-                  color var(--dur) var(--ease),
-                  background var(--dur) var(--ease);
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        color var(--dur) var(--ease),
+        background var(--dur) var(--ease);
     }
     .cbs-faq__item[open] .cbs-faq__icon {
       transform: rotate(180deg);
@@ -1893,10 +2373,18 @@ const icons: Record<string, string> = {
       animation: cbs-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes cbs-faq-in {
-      from { opacity: 0; transform: translateY(-4px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .cbs-faq__a p { margin: 0; }
+    .cbs-faq__a p {
+      margin: 0;
+    }
 
     /* ---------- FINAL CTA ---------- */
     .cbs-cta {
@@ -1909,13 +2397,17 @@ const icons: Record<string, string> = {
       overflow: hidden;
     }
     .cbs-cta::before {
-      content: "";
+      content: '';
       position: absolute;
       top: -40%;
       right: -10%;
       width: 420px;
       height: 420px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 65%
+      );
       pointer-events: none;
     }
     .cbs-cta .eyebrow--on-dark {
@@ -1969,7 +2461,11 @@ const icons: Record<string, string> = {
     /* ================================================== */
 
     /* ---------- SERVICES (balanced 2x2) ---------- */
-    .cbs-svc-section .section-header--split { align-items: end; gap: var(--space-6); margin-bottom: var(--space-6); }
+    .cbs-svc-section .section-header--split {
+      align-items: end;
+      gap: var(--space-6);
+      margin-bottom: var(--space-6);
+    }
     .cbs-svc-lead {
       max-width: 44ch;
       font-size: 1rem;
@@ -2000,24 +2496,32 @@ const icons: Record<string, string> = {
         box-shadow 280ms ease;
     }
     .cbs-svc-card::before {
-      content: "";
+      content: '';
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 4px;
-      background: linear-gradient(90deg, var(--svc-color, #C8102E) 0%, var(--svc-color, #C8102E) 50%, transparent 100%);
+      background: linear-gradient(
+        90deg,
+        var(--svc-color, #c8102e) 0%,
+        var(--svc-color, #c8102e) 50%,
+        transparent 100%
+      );
       transform: scaleX(0.3);
       transform-origin: left center;
       transition: transform 480ms cubic-bezier(0.16, 1, 0.3, 1);
       z-index: 1;
     }
     .cbs-svc-card::after {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(140% 90% at 100% 0%,
-        color-mix(in srgb, var(--svc-color, #C8102E) 14%, transparent) 0%,
-        transparent 55%);
+      background: radial-gradient(
+        140% 90% at 100% 0%,
+        color-mix(in srgb, var(--svc-color, #c8102e) 14%, transparent) 0%,
+        transparent 55%
+      );
       opacity: 0;
       transition: opacity 360ms ease;
       z-index: -1;
@@ -2025,20 +2529,29 @@ const icons: Record<string, string> = {
     }
     .cbs-svc-card:hover {
       transform: translateY(-6px);
-      border-color: color-mix(in srgb, var(--svc-color, #C8102E) 55%, var(--bbg-border));
-      box-shadow: 0 22px 50px -26px color-mix(in srgb, var(--svc-color, #C8102E) 50%, transparent),
-                  0 6px 14px -8px rgba(0, 0, 0, 0.08);
+      border-color: color-mix(in srgb, var(--svc-color, #c8102e) 55%, var(--bbg-border));
+      box-shadow:
+        0 22px 50px -26px color-mix(in srgb, var(--svc-color, #c8102e) 50%, transparent),
+        0 6px 14px -8px rgba(0, 0, 0, 0.08);
     }
-    .cbs-svc-card:hover::before { transform: scaleX(1); }
-    .cbs-svc-card:hover::after { opacity: 1; }
+    .cbs-svc-card:hover::before {
+      transform: scaleX(1);
+    }
+    .cbs-svc-card:hover::after {
+      opacity: 1;
+    }
     .cbs-svc-card:hover .cbs-svc-card__icon {
       transform: scale(1.06) rotate(-4deg);
       background: var(--svc-color, var(--bbg-blue));
       color: var(--bbg-white);
-      box-shadow: 0 12px 24px -14px color-mix(in srgb, var(--svc-color, #C8102E) 70%, transparent),
-                  inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #C8102E) 30%, transparent);
+      box-shadow:
+        0 12px 24px -14px color-mix(in srgb, var(--svc-color, #c8102e) 70%, transparent),
+        inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #c8102e) 30%, transparent);
     }
-    .cbs-svc-card:hover .cbs-svc-card__arrow { transform: translateX(4px); color: var(--svc-color, var(--bbg-blue)); }
+    .cbs-svc-card:hover .cbs-svc-card__arrow {
+      transform: translateX(4px);
+      color: var(--svc-color, var(--bbg-blue));
+    }
 
     .cbs-svc-card__head {
       display: flex;
@@ -2055,12 +2568,18 @@ const icons: Record<string, string> = {
       border-radius: 16px;
       background: var(--svc-soft, var(--bbg-blue-light));
       color: var(--svc-color, var(--bbg-blue));
-      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #C8102E) 18%, transparent);
-      transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
-                  background 320ms ease, color 320ms ease, box-shadow 320ms ease;
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--svc-color, #c8102e) 18%, transparent);
+      transition:
+        transform 360ms cubic-bezier(0.16, 1, 0.3, 1),
+        background 320ms ease,
+        color 320ms ease,
+        box-shadow 320ms ease;
       flex-shrink: 0;
     }
-    .cbs-svc-card__icon svg { width: 28px; height: 28px; }
+    .cbs-svc-card__icon svg {
+      width: 28px;
+      height: 28px;
+    }
     .cbs-svc-card__short {
       font-size: 0.72rem;
       letter-spacing: 0.1em;
@@ -2115,14 +2634,26 @@ const icons: Record<string, string> = {
       bottom: var(--space-6);
       right: var(--space-6);
       color: var(--bbg-text-muted);
-      transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1), color 200ms ease;
+      transition:
+        transform 280ms cubic-bezier(0.16, 1, 0.3, 1),
+        color 200ms ease;
       pointer-events: none;
     }
-    .cbs-svc-card__arrow svg { width: 22px; height: 22px; }
+    .cbs-svc-card__arrow svg {
+      width: 22px;
+      height: 22px;
+    }
     @media (max-width: 720px) {
-      .cbs-svc-grid { grid-template-columns: 1fr; }
-      .cbs-svc-card { min-height: 0; }
-      .cbs-svc-section .section-header--split { flex-direction: column; align-items: flex-start; }
+      .cbs-svc-grid {
+        grid-template-columns: 1fr;
+      }
+      .cbs-svc-card {
+        min-height: 0;
+      }
+      .cbs-svc-section .section-header--split {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
     /* ---------- BUSINESS MODELS TABS ---------- */
@@ -2152,12 +2683,22 @@ const icons: Record<string, string> = {
       flex-direction: column;
       gap: 0.35rem;
       color: var(--bbg-text-muted);
-      transition: color 240ms ease, background 240ms ease;
+      transition:
+        color 240ms ease,
+        background 240ms ease;
       border-right: 1px solid var(--bbg-border);
     }
-    .cbs-tabs__tab:last-child { border-right: none; }
-    .cbs-tabs__tab:hover { color: var(--bbg-ink); background: rgba(200, 16, 46, 0.04); }
-    .cbs-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .cbs-tabs__tab:last-child {
+      border-right: none;
+    }
+    .cbs-tabs__tab:hover {
+      color: var(--bbg-ink);
+      background: rgba(200, 16, 46, 0.04);
+    }
+    .cbs-tabs__tab.is-active {
+      color: var(--bbg-ink);
+      background: var(--bbg-white);
+    }
     .cbs-tabs__tab-label {
       font-size: 1.0625rem;
       font-weight: 700;
@@ -2169,7 +2710,9 @@ const icons: Record<string, string> = {
       color: var(--bbg-text-muted);
       line-height: 1.35;
     }
-    .cbs-tabs__tab.is-active .cbs-tabs__tab-tag { color: var(--bbg-blue); }
+    .cbs-tabs__tab.is-active .cbs-tabs__tab-tag {
+      color: var(--bbg-blue);
+    }
     .cbs-tabs__tab-pop {
       position: absolute;
       top: var(--space-3);
@@ -2189,30 +2732,48 @@ const icons: Record<string, string> = {
       left: 0;
       width: 25%;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px 2px 0 0;
       transform: translateX(0);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
     }
-    .cbs-tabs__panels { background: var(--bbg-white); }
+    .cbs-tabs__panels {
+      background: var(--bbg-white);
+    }
     .cbs-tabs__panel {
       padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
       animation: cbs-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes cbs-tab-in {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .cbs-tabs__panel[hidden] { display: none; }
+    .cbs-tabs__panel[hidden] {
+      display: none;
+    }
     .cbs-tabs__panel-grid {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       gap: clamp(var(--space-5), 3vw, var(--space-7));
       align-items: start;
     }
-    .cbs-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
-    .cbs-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .cbs-tabs__lead {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .cbs-tabs__pillset {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
     .cbs-tabs__pill {
       font-size: 0.78rem;
       font-weight: 600;
@@ -2249,7 +2810,12 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
       margin-bottom: 0.35rem;
     }
-    .cbs-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
+    .cbs-tabs__when p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
     .cbs-tabs__body {
       display: flex;
       flex-direction: column;
@@ -2298,7 +2864,10 @@ const icons: Record<string, string> = {
       flex-shrink: 0;
       margin-top: 1px;
     }
-    .cbs-tabs__check svg { width: 12px; height: 12px; }
+    .cbs-tabs__check svg {
+      width: 12px;
+      height: 12px;
+    }
     .cbs-tabs__pricing {
       display: flex;
       align-items: baseline;
@@ -2323,15 +2892,29 @@ const icons: Record<string, string> = {
       line-height: 1.4;
     }
     @media (max-width: 1024px) {
-      .cbs-tabs__nav { grid-template-columns: repeat(2, 1fr); }
-      .cbs-tabs__tab { border-bottom: 1px solid var(--bbg-border); }
-      .cbs-tabs__tab:nth-child(2) { border-right: none; }
-      .cbs-tabs__indicator { display: none; }
-      .cbs-tabs__panel-grid { grid-template-columns: 1fr; }
+      .cbs-tabs__nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .cbs-tabs__tab {
+        border-bottom: 1px solid var(--bbg-border);
+      }
+      .cbs-tabs__tab:nth-child(2) {
+        border-right: none;
+      }
+      .cbs-tabs__indicator {
+        display: none;
+      }
+      .cbs-tabs__panel-grid {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 560px) {
-      .cbs-tabs__nav { grid-template-columns: 1fr; }
-      .cbs-tabs__tab { border-right: none; }
+      .cbs-tabs__nav {
+        grid-template-columns: 1fr;
+      }
+      .cbs-tabs__tab {
+        border-right: none;
+      }
     }
 
     /* Matrix interactive cells */
@@ -2345,11 +2928,18 @@ const icons: Record<string, string> = {
       outline: 3px solid var(--bbg-blue);
       outline-offset: -3px;
     }
-    .cbs-matrix__grid.is-hover-row .cbs-matrix__cell { opacity: 0.4; }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__cell {
+      opacity: 0.4;
+    }
     .cbs-matrix__grid.is-hover-row .cbs-matrix__cell.is-row-active,
-    .cbs-matrix__grid.is-hover-row .cbs-matrix__cell.is-col-active { opacity: 1; background: var(--bbg-blue-light); }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__cell.is-col-active {
+      opacity: 1;
+      background: var(--bbg-blue-light);
+    }
     .cbs-matrix__grid.is-hover-row .cbs-matrix__row-head,
-    .cbs-matrix__grid.is-hover-row .cbs-matrix__head { opacity: 0.4; }
+    .cbs-matrix__grid.is-hover-row .cbs-matrix__head {
+      opacity: 0.4;
+    }
     .cbs-matrix__grid.is-hover-row .cbs-matrix__row-head.is-active,
     .cbs-matrix__grid.is-hover-row .cbs-matrix__head.is-active {
       opacity: 1;
@@ -2358,24 +2948,37 @@ const icons: Record<string, string> = {
     }
 
     /* ---------- HOW WE WORK / JOURNEY (vertical timeline) ---------- */
-    .cbs-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .cbs-journey-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .cbs-journey-section__bg {
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       z-index: -2;
-      opacity: 0.10;
+      opacity: 0.1;
       pointer-events: none;
     }
     .cbs-journey-section__bg::after {
-      content: "";
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, var(--bbg-white) 0%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.7) 100%);
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        var(--bbg-white) 0%,
+        rgba(255, 255, 255, 0.4) 40%,
+        rgba(255, 255, 255, 0.7) 100%
+      );
     }
     .cbs-journey-section__bg img {
-      width: 100%; height: 100%;
-      object-fit: cover; object-position: center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       filter: saturate(0.55);
     }
 
@@ -2393,7 +2996,8 @@ const icons: Record<string, string> = {
       width: 2px;
     }
     .cbs-journey__rail-track {
-      position: absolute; inset: 0;
+      position: absolute;
+      inset: 0;
       background: var(--bbg-border);
       border-radius: 2px;
     }
@@ -2403,7 +3007,7 @@ const icons: Record<string, string> = {
       left: 0;
       width: 100%;
       height: var(--journey-progress, 0%);
-      background: linear-gradient(180deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px;
       transition: height 120ms linear;
       box-shadow: 0 0 8px rgba(200, 16, 46, 0.4);
@@ -2416,7 +3020,9 @@ const icons: Record<string, string> = {
       flex-direction: column;
       gap: var(--space-7);
     }
-    .cbs-journey__item { position: relative; }
+    .cbs-journey__item {
+      position: relative;
+    }
     .cbs-journey__dot {
       position: absolute;
       left: -56px;
@@ -2437,9 +3043,13 @@ const icons: Record<string, string> = {
       height: 14px;
       border-radius: 50%;
       background: var(--bbg-border);
-      transition: background 320ms ease, transform 320ms ease;
+      transition:
+        background 320ms ease,
+        transform 320ms ease;
     }
-    .cbs-journey__item.is-active .cbs-journey__dot { border-color: var(--bbg-blue); }
+    .cbs-journey__item.is-active .cbs-journey__dot {
+      border-color: var(--bbg-blue);
+    }
     .cbs-journey__item.is-active .cbs-journey__dot-inner {
       background: var(--bbg-blue);
       transform: scale(1.1);
@@ -2455,7 +3065,9 @@ const icons: Record<string, string> = {
       margin-bottom: var(--space-2);
       transition: color 320ms ease;
     }
-    .cbs-journey__item.is-active .cbs-journey__phase { color: var(--bbg-blue); }
+    .cbs-journey__item.is-active .cbs-journey__phase {
+      color: var(--bbg-blue);
+    }
     .cbs-journey__card {
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
@@ -2464,7 +3076,10 @@ const icons: Record<string, string> = {
       display: flex;
       align-items: flex-start;
       gap: var(--space-4);
-      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 320ms ease,
+        box-shadow 320ms ease,
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-journey__item:hover .cbs-journey__card,
     .cbs-journey__item.is-active .cbs-journey__card {
@@ -2483,7 +3098,10 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
       flex-shrink: 0;
     }
-    .cbs-journey__icon svg { width: 24px; height: 24px; }
+    .cbs-journey__icon svg {
+      width: 24px;
+      height: 24px;
+    }
     .cbs-journey__title {
       font-size: 1.25rem;
       line-height: 1.25;
@@ -2497,11 +3115,25 @@ const icons: Record<string, string> = {
       margin: 0;
     }
     @media (max-width: 600px) {
-      .cbs-journey { padding-left: 40px; }
-      .cbs-journey__rail { left: 16px; }
-      .cbs-journey__dot { left: -40px; width: 32px; height: 32px; }
-      .cbs-journey__dot-inner { width: 10px; height: 10px; }
-      .cbs-journey__card { flex-direction: column; gap: var(--space-3); }
+      .cbs-journey {
+        padding-left: 40px;
+      }
+      .cbs-journey__rail {
+        left: 16px;
+      }
+      .cbs-journey__dot {
+        left: -40px;
+        width: 32px;
+        height: 32px;
+      }
+      .cbs-journey__dot-inner {
+        width: 10px;
+        height: 10px;
+      }
+      .cbs-journey__card {
+        flex-direction: column;
+        gap: var(--space-3);
+      }
     }
 
     /* ---------- AI BENTO ---------- */
@@ -2519,7 +3151,10 @@ const icons: Record<string, string> = {
       padding: var(--space-5);
       overflow: hidden;
       isolation: isolate;
-      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
     }
     .cbs-ai-bento__card:hover {
       transform: translateY(-4px);
@@ -2549,7 +3184,9 @@ const icons: Record<string, string> = {
       justify-content: space-between;
       gap: var(--space-5);
     }
-    .cbs-ai-bento__card--feature:hover { border-color: rgba(155, 217, 245, 0.4); }
+    .cbs-ai-bento__card--feature:hover {
+      border-color: rgba(155, 217, 245, 0.4);
+    }
     .cbs-ai-bento__feature-bg {
       position: absolute;
       inset: 0;
@@ -2558,7 +3195,11 @@ const icons: Record<string, string> = {
         radial-gradient(80% 60% at 100% 0%, rgba(200, 16, 46, 0.32) 0%, rgba(200, 16, 46, 0) 60%),
         radial-gradient(60% 50% at 0% 100%, rgba(200, 16, 46, 0.18) 0%, rgba(200, 16, 46, 0) 60%);
     }
-    .cbs-ai-bento__feature-body { display: flex; flex-direction: column; gap: var(--space-3); }
+    .cbs-ai-bento__feature-body {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
     .cbs-ai-bento__chip {
       display: inline-block;
       align-self: flex-start;
@@ -2566,7 +3207,7 @@ const icons: Record<string, string> = {
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #C8102E;
+      color: #c8102e;
       background: rgba(200, 16, 46, 0.18);
       padding: 0.4em 0.85em;
       border-radius: 999px;
@@ -2593,14 +3234,18 @@ const icons: Record<string, string> = {
       gap: var(--space-6);
       border-top: 1px solid rgba(255, 255, 255, 0.12);
     }
-    .cbs-ai-bento__feature-stats li { display: flex; flex-direction: column; gap: 0.25rem; }
+    .cbs-ai-bento__feature-stats li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
     .cbs-ai-bento__stat-num {
       font-size: clamp(1.625rem, 1.4vw + 1rem, 2.125rem);
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1;
-      color: #C8102E;
-      font-feature-settings: "tnum";
+      color: #c8102e;
+      font-feature-settings: 'tnum';
     }
     .cbs-ai-bento__stat-label {
       font-size: 0.78rem;
@@ -2617,7 +3262,10 @@ const icons: Record<string, string> = {
       opacity: 0.7;
       pointer-events: none;
     }
-    .cbs-ai-bento__icon-large svg { width: 100%; height: 100%; }
+    .cbs-ai-bento__icon-large svg {
+      width: 100%;
+      height: 100%;
+    }
     .cbs-ai-bento__icon {
       display: inline-flex;
       width: 40px;
@@ -2629,14 +3277,27 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
       margin-bottom: var(--space-3);
     }
-    .cbs-ai-bento__icon svg { width: 20px; height: 20px; }
+    .cbs-ai-bento__icon svg {
+      width: 20px;
+      height: 20px;
+    }
     @media (max-width: 1024px) {
-      .cbs-ai-bento { grid-template-columns: 1fr 1fr; }
-      .cbs-ai-bento__card--feature { grid-column: 1 / -1; grid-row: auto; }
+      .cbs-ai-bento {
+        grid-template-columns: 1fr 1fr;
+      }
+      .cbs-ai-bento__card--feature {
+        grid-column: 1 / -1;
+        grid-row: auto;
+      }
     }
     @media (max-width: 560px) {
-      .cbs-ai-bento { grid-template-columns: 1fr; }
-      .cbs-ai-bento__feature-stats { gap: var(--space-4); flex-wrap: wrap; }
+      .cbs-ai-bento {
+        grid-template-columns: 1fr;
+      }
+      .cbs-ai-bento__feature-stats {
+        gap: var(--space-4);
+        flex-wrap: wrap;
+      }
     }
 
     /* ---------- FAQ FILTER CHIPS ---------- */
@@ -2662,7 +3323,10 @@ const icons: Record<string, string> = {
       transition: all 220ms ease;
       font-family: inherit;
     }
-    .cbs-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .cbs-faq-chip:hover {
+      border-color: var(--bbg-blue);
+      color: var(--bbg-blue);
+    }
     .cbs-faq-chip.is-active {
       background: var(--bbg-blue);
       border-color: var(--bbg-blue);
@@ -2677,7 +3341,10 @@ const icons: Record<string, string> = {
       color: var(--bbg-text-muted);
       transition: all 220ms ease;
     }
-    .cbs-faq-chip:hover .cbs-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .cbs-faq-chip:hover .cbs-faq-chip__count {
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+    }
     .cbs-faq-chip.is-active .cbs-faq-chip__count {
       background: rgba(255, 255, 255, 0.2);
       color: var(--bbg-white);
@@ -2695,8 +3362,12 @@ const icons: Record<string, string> = {
       margin-right: var(--space-3);
       flex-shrink: 0;
     }
-    .cbs-faq__q-text { flex-grow: 1; }
-    .cbs-faq__item.is-hidden { display: none; }
+    .cbs-faq__q-text {
+      flex-grow: 1;
+    }
+    .cbs-faq__item.is-hidden {
+      display: none;
+    }
   </style>
 
   <script is:inline>
@@ -2709,14 +3380,17 @@ const icons: Record<string, string> = {
         if (reduced || !('IntersectionObserver' in window)) {
           revealEls.forEach((el) => el.classList.add('is-in'));
         } else {
-          const io = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-in');
-                io.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-in');
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+          );
           revealEls.forEach((el) => io.observe(el));
         }
       }
@@ -2724,14 +3398,17 @@ const icons: Record<string, string> = {
       // 2. Reveal the steps connecting line when the steps list enters view
       const stepsList = document.querySelector('.cbs-steps');
       if (stepsList && !reduced && 'IntersectionObserver' in window) {
-        const stepsIo = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-in');
-              stepsIo.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.2 });
+        const stepsIo = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-in');
+                stepsIo.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.2 },
+        );
         stepsIo.observe(stepsList);
       } else if (stepsList) {
         stepsList.classList.add('is-in');
@@ -2754,14 +3431,17 @@ const icons: Record<string, string> = {
           };
           requestAnimationFrame(tick);
         };
-        const counterIo = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animate(entry.target);
-              counterIo.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.5 });
+        const counterIo = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animate(entry.target);
+                counterIo.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
         counters.forEach((el) => counterIo.observe(el));
       } else {
         counters.forEach((el) => {
@@ -2785,7 +3465,7 @@ const icons: Record<string, string> = {
           if (parallaxEl && heroEl && !reduced) {
             const heroH = heroEl.offsetHeight;
             if (scrollY < heroH) {
-              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+              parallaxEl.style.setProperty('--parallax-y', scrollY * 0.18 + 'px');
             }
           }
 

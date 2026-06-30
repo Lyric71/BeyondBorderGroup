@@ -91,7 +91,7 @@ const insightRedirects = Object.fromEntries(
   insightSlugs.map((slug) => [
     `/${slug}`,
     { status: /** @type {const} */ (301), destination: `/insights/${slug}` },
-  ])
+  ]),
 );
 
 /**
@@ -105,7 +105,10 @@ const caseStudyRedirectPairs = [
   ['case-study-roc-skincares-china-market-success', 'roc'],
   ['case-study-master-martinis-social-media-success', 'master-martini'],
   ['case-study-iguzzinis-luxury-lighting-success-in-china', 'iguzzini'],
-  ['chery-automotive-with-chery-with-love-co-create-friday-campaign-cross-border-marketing', 'chery'],
+  [
+    'chery-automotive-with-chery-with-love-co-create-friday-campaign-cross-border-marketing',
+    'chery',
+  ],
   ['case-study-valios-successful-entry-into-china', 'valio'],
   ['case-study-marriotts-super-brand-day-huge-success-in-china', 'marriott'],
   ['viessmann-tmall-ecommerce-in-china-for-heating-boiling-solutions', 'viessmann'],
@@ -121,7 +124,10 @@ const caseStudyRedirectPairs = [
   ['pierre-fabre-china-masterclass-digital-ecomm', 'pierre-fabre'],
   ['shiseido-rq-pyology-china-brand-launch-case-study', 'shiseido-rq-pyology'],
   ['case-study-beyondtiktoks-dedicated-tiktok-success', 'beyondtiktok'],
-  ['kerry-food-ecommerce-china-tmalfor-davinci-gourmet-syrups-sauces-and-smoothies', 'kerry-davinci'],
+  [
+    'kerry-food-ecommerce-china-tmalfor-davinci-gourmet-syrups-sauces-and-smoothies',
+    'kerry-davinci',
+  ],
   ['case-study-exeeds-successful-global-pr-launch', 'exeed'],
   ['case-study-sohomds-digital-health-transformation', 'sohomd'],
 ];
@@ -130,7 +136,7 @@ const caseStudyRedirects = Object.fromEntries(
   caseStudyRedirectPairs.map(([wpSlug, astroSlug]) => [
     `/case-study/${wpSlug}`,
     { status: /** @type {const} */ (301), destination: `/work/${astroSlug}` },
-  ])
+  ]),
 );
 
 /**
@@ -143,7 +149,10 @@ const enServiceRedirectPairs = [
   ['/wordpress-agency-in-china-design-coding-content-hosting', '/grow-in-china/website'],
   ['/website', '/grow-in-china/website'],
   ['/wechat-marketing-agency-in-china-content-advertising-mini-program', '/grow-in-china/website'],
-  ['/red-little-red-book-marketing-agency-in-china-content-commerce-influencers', '/grow-in-china/influencers-kols'],
+  [
+    '/red-little-red-book-marketing-agency-in-china-content-commerce-influencers',
+    '/grow-in-china/influencers-kols',
+  ],
   ['/influencer-agency-in-china-campaigns-and-ecommerce', '/grow-in-china/influencers-kols'],
   ['/social-media-agency-in-china-kols-and-brand-content', '/grow-in-china/influencers-kols'],
   ['/douyin-marketing-agency-in-china-content-ads-influencers', '/grow-in-china/social-commerce'],
@@ -151,11 +160,20 @@ const enServiceRedirectPairs = [
   ['/media-and-marketing-agency-in-china', '/grow-in-china/media'],
   ['/pr', '/grow-in-china/media'],
   ['/creative-agency-china-production-studio-content-factory', '/grow-in-china/production-studio'],
-  ['/artificial-intelligence-generated-content-for-marketing-in-china', '/grow-in-china/production-studio'],
+  [
+    '/artificial-intelligence-generated-content-for-marketing-in-china',
+    '/grow-in-china/production-studio',
+  ],
   ['/event-trade-show-agency-in-china', '/grow-in-china/campaigns'],
-  ['/tmall-ecommerce-agency-in-china-sell-your-products-in-china', '/grow-in-china/cross-border-ecommerce'],
+  [
+    '/tmall-ecommerce-agency-in-china-sell-your-products-in-china',
+    '/grow-in-china/cross-border-ecommerce',
+  ],
   ['/jd-ecommerce-agency-in-china-cross-border-ecommerce', '/grow-in-china/cross-border-ecommerce'],
-  ['/ecommerce-agency-in-china-sell-your-products-in-china', '/grow-in-china/cross-border-ecommerce'],
+  [
+    '/ecommerce-agency-in-china-sell-your-products-in-china',
+    '/grow-in-china/cross-border-ecommerce',
+  ],
   ['/branding-and-design-agency-in-china', '/enter-china/branding-localisation'],
   ['/offline-product-distribution-services-in-china', '/enter-china/distribution'],
   ['/china-learning-expeditions-ecommerce-digital-ai', '/learn-china/learning-expeditions'],
@@ -172,15 +190,36 @@ const frServiceRedirectPairs = [
   ['/agence-marketing-chine-bonne-pratiques-et-analyses-digital-et-commerce', '/fr/decryptages'],
   ['/agence-marketing-digitale-media-et-ecommerce-en-chine', '/fr/se-developper-en-chine/medias'],
   ['/agence-de-relations-presse-en-chine-rp-medias', '/fr/se-developper-en-chine/medias'],
-  ['/agence-de-social-media-en-chine-kols-et-contenu-de-marque', '/fr/se-developper-en-chine/influence-et-kol'],
+  [
+    '/agence-de-social-media-en-chine-kols-et-contenu-de-marque',
+    '/fr/se-developper-en-chine/influence-et-kol',
+  ],
   ['/agence-evenementielle-salons-en-chine', '/fr/se-developper-en-chine/campagnes'],
-  ['/agence-creative-chine-studio-de-production-usine-de-contenu', '/fr/se-developper-en-chine/studio-de-production'],
-  ['/agence-wordpress-en-chine-design-dev-contenu-hebergement', '/fr/se-developper-en-chine/site-web'],
+  [
+    '/agence-creative-chine-studio-de-production-usine-de-contenu',
+    '/fr/se-developper-en-chine/studio-de-production',
+  ],
+  [
+    '/agence-wordpress-en-chine-design-dev-contenu-hebergement',
+    '/fr/se-developper-en-chine/site-web',
+  ],
   ['/agence-web-et-mini-programme-wechat-en-chine', '/fr/se-developper-en-chine/site-web'],
-  ['/agence-ecommerce-en-chine-vendez-vos-produits-en-chine', '/fr/se-developper-en-chine/ecommerce-transfrontalier'],
-  ['/agence-ecommerce-tmall-en-chine-vendez-vos-produits-en-chine', '/fr/se-developper-en-chine/ecommerce-transfrontalier'],
-  ['/agence-ecommerce-jd-en-chine-cross-border-ecommerce', '/fr/se-developper-en-chine/ecommerce-transfrontalier'],
-  ['/ecommerce-transfrontalier-en-chine-strategie-dentree-sur-le-marche', '/fr/entrer-en-chine/lancement-cross-border'],
+  [
+    '/agence-ecommerce-en-chine-vendez-vos-produits-en-chine',
+    '/fr/se-developper-en-chine/ecommerce-transfrontalier',
+  ],
+  [
+    '/agence-ecommerce-tmall-en-chine-vendez-vos-produits-en-chine',
+    '/fr/se-developper-en-chine/ecommerce-transfrontalier',
+  ],
+  [
+    '/agence-ecommerce-jd-en-chine-cross-border-ecommerce',
+    '/fr/se-developper-en-chine/ecommerce-transfrontalier',
+  ],
+  [
+    '/ecommerce-transfrontalier-en-chine-strategie-dentree-sur-le-marche',
+    '/fr/entrer-en-chine/lancement-cross-border',
+  ],
   ['/agence-branding-et-design-en-chine', '/fr/entrer-en-chine/marque-et-localisation'],
   ['/formation-au-digital-et-a-lecommerce-en-chine', '/fr/comprendre-la-chine/masterclass'],
   ['/learning-expedition-chine-ecommerce-ia', '/fr/comprendre-la-chine/expeditions-terrain'],
@@ -200,19 +239,58 @@ const frServiceRedirectPairs = [
  */
 const frInsightDest = (/** @type {string} */ enSlug) => `/fr/decryptages/${insightEnToFr[enSlug]}`;
 const frInsightRedirectPairs = [
-  ['/marques-etrangeres-en-chine-pourquoi-ca-echoue', frInsightDest('foreign-brands-in-china-why-most-market-tests-fail')],
-  ['/defis-et-opportunites-du-e-commerce-pour-les-marques-francaises-en-chine', frInsightDest('foreign-brands-in-china-why-most-market-tests-fail')],
-  ['/pipl-chine-loi-protection-donnees-conformite-marques', frInsightDest('pipl-compliance-in-china-diors-wake-up-call-for-global-brands')],
-  ['/qr-codes-wechat-loutil-clef-succes-garanti-en-chine', frInsightDest('the-power-of-wechat-qr-codes-for-businesses-in-china')],
-  ['/les-influenceurs-e-commerce-incontournables-en-chine-en-2025', frInsightDest('top-ecommerce-influencers-in-china-2024')],
-  ['/les-reseaux-sociaux-les-plus-influents-en-chine-en-2025', frInsightDest('top-chinese-social-media-platforms-for-2024-marketing')],
-  ['/top-5-plateformes-video-et-livestreaming-chine', frInsightDest('top-5-video-and-livestreaming-platforms-in-china')],
-  ['/guide-du-marketing-sur-weibo-maitriser-le-social-commerce-en-chine', frInsightDest('weibo-marketing-guide-mastering-social-commerce-in-china')],
-  ['/xianyu-plateforme-ideale-pour-jeunes-entrepreneurs-en-chine', frInsightDest('how-xianyu-powers-young-entrepreneurs-side-hustles-in-china')],
-  ['/trouver-un-distributeur-en-chine-guide-pratique-2025', frInsightDest('how-to-find-a-distributor-for-your-products-in-china-in-2024')],
-  ['/le-cout-des-kol-chinois-etudes-de-cas-et-tendances-marketing', frInsightDest('the-cost-of-chinese-kols-case-studies-and-marketing-insights')],
-  ['/une-comparaison-entre-tmall-et-amazon', frInsightDest('a-comparison-between-tmall-and-amazon')],
-  ['/creation-de-contenu-marketing-assiste-par-intelligence-artificielle-en-chine', frInsightDest('ai-revolutionizing-ecommerce-in-china')],
+  [
+    '/marques-etrangeres-en-chine-pourquoi-ca-echoue',
+    frInsightDest('foreign-brands-in-china-why-most-market-tests-fail'),
+  ],
+  [
+    '/defis-et-opportunites-du-e-commerce-pour-les-marques-francaises-en-chine',
+    frInsightDest('foreign-brands-in-china-why-most-market-tests-fail'),
+  ],
+  [
+    '/pipl-chine-loi-protection-donnees-conformite-marques',
+    frInsightDest('pipl-compliance-in-china-diors-wake-up-call-for-global-brands'),
+  ],
+  [
+    '/qr-codes-wechat-loutil-clef-succes-garanti-en-chine',
+    frInsightDest('the-power-of-wechat-qr-codes-for-businesses-in-china'),
+  ],
+  [
+    '/les-influenceurs-e-commerce-incontournables-en-chine-en-2025',
+    frInsightDest('top-ecommerce-influencers-in-china-2024'),
+  ],
+  [
+    '/les-reseaux-sociaux-les-plus-influents-en-chine-en-2025',
+    frInsightDest('top-chinese-social-media-platforms-for-2024-marketing'),
+  ],
+  [
+    '/top-5-plateformes-video-et-livestreaming-chine',
+    frInsightDest('top-5-video-and-livestreaming-platforms-in-china'),
+  ],
+  [
+    '/guide-du-marketing-sur-weibo-maitriser-le-social-commerce-en-chine',
+    frInsightDest('weibo-marketing-guide-mastering-social-commerce-in-china'),
+  ],
+  [
+    '/xianyu-plateforme-ideale-pour-jeunes-entrepreneurs-en-chine',
+    frInsightDest('how-xianyu-powers-young-entrepreneurs-side-hustles-in-china'),
+  ],
+  [
+    '/trouver-un-distributeur-en-chine-guide-pratique-2025',
+    frInsightDest('how-to-find-a-distributor-for-your-products-in-china-in-2024'),
+  ],
+  [
+    '/le-cout-des-kol-chinois-etudes-de-cas-et-tendances-marketing',
+    frInsightDest('the-cost-of-chinese-kols-case-studies-and-marketing-insights'),
+  ],
+  [
+    '/une-comparaison-entre-tmall-et-amazon',
+    frInsightDest('a-comparison-between-tmall-and-amazon'),
+  ],
+  [
+    '/creation-de-contenu-marketing-assiste-par-intelligence-artificielle-en-chine',
+    frInsightDest('ai-revolutionizing-ecommerce-in-china'),
+  ],
   // Qixi article was not ported. Falls back to the FR insights listing until
   // the article is rewritten in French.
   ['/qixi-2025-strategie-marques-luxe-chine-post-romantisme', '/fr/decryptages'],
@@ -225,11 +303,17 @@ const frInsightRedirectPairs = [
  */
 const frCaseStudyRedirectPairs = [
   ['/case-study/roc-soins-de-la-peau-premium-de-la-france-a-la-chine', '/fr/nos-realisations/roc'],
-  ['/case-study/campagne-du-super-brand-day-pour-les-hotels-marriot-en-chine', '/fr/nos-realisations/marriott'],
+  [
+    '/case-study/campagne-du-super-brand-day-pour-les-hotels-marriot-en-chine',
+    '/fr/nos-realisations/marriott',
+  ],
   ['/case-study/chery-automobile-campagne-with-chery-with-love', '/fr/nos-realisations/chery'],
   ['/case-study/pierre-fabre-masterclass-chine-digital-aigc', '/fr/nos-realisations/pierre-fabre'],
   ['/case-study/langnese-chine-stopper-le-declin-commercial', '/fr/nos-realisations/langnese'],
-  ['/case-study/croissance-des-reseaux-sociaux-chinois-pour-land-rover', '/fr/nos-realisations/jaguar-land-rover'],
+  [
+    '/case-study/croissance-des-reseaux-sociaux-chinois-pour-land-rover',
+    '/fr/nos-realisations/jaguar-land-rover',
+  ],
   ['/case-study/macusee-cross-border-ecommerce-et-sante-oculaire-en-chine', '/fr/nos-realisations'],
   // EN Macusee case was also not ported.
   ['/case-study/macusee-capturing-a-2b-white-space-in-chinas-eye-health-market', '/work'],
@@ -239,13 +323,13 @@ const enServiceRedirects = Object.fromEntries(
   enServiceRedirectPairs.map(([from, to]) => [
     from,
     { status: /** @type {const} */ (301), destination: to },
-  ])
+  ]),
 );
 const frServiceRedirects = Object.fromEntries(
   frServiceRedirectPairs.map(([from, to]) => [
     from,
     { status: /** @type {const} */ (301), destination: to },
-  ])
+  ]),
 );
 /**
  * Resolve an `/fr/decryptages/<en-slug>` destination from the legacy WP map
@@ -294,9 +378,7 @@ const staticEnToFr = {
   '/cookie-policy': '/fr/politique-de-cookies',
   '/terms-of-service': '/fr/conditions-d-utilisation',
 };
-const staticFrToEn = Object.fromEntries(
-  Object.entries(staticEnToFr).map(([en, fr]) => [fr, en])
-);
+const staticFrToEn = Object.fromEntries(Object.entries(staticEnToFr).map(([en, fr]) => [fr, en]));
 
 /**
  * Static EN -> DE slug pairs for the sitemap serialize hook. Mirrors the
@@ -331,9 +413,7 @@ const staticEnToDe = {
   '/cookie-policy': '/de/cookie-richtlinie',
   '/terms-of-service': '/de/nutzungsbedingungen',
 };
-const staticDeToEn = Object.fromEntries(
-  Object.entries(staticEnToDe).map(([en, de]) => [de, en])
-);
+const staticDeToEn = Object.fromEntries(Object.entries(staticEnToDe).map(([en, de]) => [de, en]));
 
 /**
  * Static EN -> ES slug pairs for the sitemap serialize hook. Mirrors the
@@ -368,9 +448,7 @@ const staticEnToEs = {
   '/cookie-policy': '/es/politica-de-cookies',
   '/terms-of-service': '/es/condiciones-de-uso',
 };
-const staticEsToEn = Object.fromEntries(
-  Object.entries(staticEnToEs).map(([en, es]) => [es, en])
-);
+const staticEsToEn = Object.fromEntries(Object.entries(staticEnToEs).map(([en, es]) => [es, en]));
 
 /**
  * Reduce a built page path to its canonical English equivalent.
@@ -477,13 +555,13 @@ const frInsightRedirects = Object.fromEntries(
   frInsightRedirectPairs.map(([from, to]) => [
     from,
     { status: /** @type {const} */ (301), destination: resolveFrInsightDest(to) },
-  ])
+  ]),
 );
 const frCaseStudyRedirects = Object.fromEntries(
   frCaseStudyRedirectPairs.map(([from, to]) => [
     from,
     { status: /** @type {const} */ (301), destination: to },
-  ])
+  ]),
 );
 
 /**
@@ -496,7 +574,7 @@ const frInsightSlugRenameRedirects = Object.fromEntries(
   Object.entries(insightEnToFr).map(([enSlug, frSlug]) => [
     `/fr/decryptages/${enSlug}`,
     { status: /** @type {const} */ (301), destination: `/fr/decryptages/${frSlug}` },
-  ])
+  ]),
 );
 
 // https://astro.build/config
@@ -508,7 +586,7 @@ export default defineConfig({
   trailingSlash: 'never',
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
 
   adapter: vercel(),

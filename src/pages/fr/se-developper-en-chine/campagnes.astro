@@ -2,49 +2,61 @@
 import Layout from '../../../layouts/Layout.astro';
 
 const heroStats = [
-  { num: '20', suffix: '+', label: "années consacrées au pilotage de campagnes festival pour les marques internationales" },
-  { num: '10', suffix: '', label: "fenêtres festival rythment chaque année le calendrier commercial chinois" },
-  { num: "Une équipe", suffix: '', label: "Stratégie, contenu, livestream, achat média et hors ligne, pilotés de bout en bout" },
+  {
+    num: '20',
+    suffix: '+',
+    label: 'années consacrées au pilotage de campagnes festival pour les marques internationales',
+  },
+  {
+    num: '10',
+    suffix: '',
+    label: 'fenêtres festival rythment chaque année le calendrier commercial chinois',
+  },
+  {
+    num: 'Une équipe',
+    suffix: '',
+    label: 'Stratégie, contenu, livestream, achat média et hors ligne, pilotés de bout en bout',
+  },
 ];
 
 const channels = [
   {
-    kicker: "Plateforme",
-    title: "La plateforme eCommerce",
-    body: "Habillage de la boutique, grille tarifaire, dispositifs de coupons, mécaniques officielles du festival, trafic payant orchestré sur Zhitongche et Wanxiangtai.",
+    kicker: 'Plateforme',
+    title: 'La plateforme eCommerce',
+    body: 'Habillage de la boutique, grille tarifaire, dispositifs de coupons, mécaniques officielles du festival, trafic payant orchestré sur Zhitongche et Wanxiangtai.',
     image: '/Images/grow-in-china/campaigns/channel-platform-storefront.png',
     alt: "Un téléphone affiche la vitrine festival Tmall d'une marque en pleine campagne, tenu d'une main dans un bureau chinois",
   },
   {
-    kicker: "Contenu",
-    title: "Contenu et social",
+    kicker: 'Contenu',
+    title: 'Contenu et social',
     body: "Xiaohongshu, Douyin et WeChat installent la demande dans les semaines qui précèdent l'échéance, adossés à une production photo et vidéo dédiée.",
     image: '/Images/grow-in-china/campaigns/channel-content-shoot.png',
-    alt: "Un petit studio tourne une vidéo courte festival, produit sur une table éclairée, téléphone sur stabilisateur, plan de tournage en mandarin scotché au mur",
+    alt: 'Un petit studio tourne une vidéo courte festival, produit sur une table éclairée, téléphone sur stabilisateur, plan de tournage en mandarin scotché au mur',
   },
   {
-    kicker: "Créateurs",
-    title: "KOL et KOC",
+    kicker: 'Créateurs',
+    title: 'KOL et KOC',
     body: "Créateurs d'audience et consommateurs avertis bâtissent la preuve sociale et structurent la demande à l'approche du pic.",
     image: '/Images/grow-in-china/campaigns/channel-kol-review.png',
     alt: "Une créatrice chinoise de mid-tier filme un avis produit pour un pic festival, chez elle près d'une fenêtre, ring light et lumière d'après-midi mêlées",
   },
   {
-    kicker: "Live",
-    title: "Livestream",
+    kicker: 'Live',
+    title: 'Livestream',
     body: "Studio de marque en propre ou plateau d'animateur partenaire. Premier moteur des ventes le jour J, dans la grande majorité des cas.",
     image: '/Images/grow-in-china/campaigns/channel-livestream-room.png',
     alt: "Un plateau livestream Douyin en pleine session festival, l'animatrice s'adresse à la caméra, le compte à rebours s'affiche sur un moniteur latéral",
   },
   {
-    kicker: "Privé",
-    title: "Trafic privé",
-    body: "Groupes WeChat et base de membres de la marque. Des audiences activables en direct, sans intermédiation média.",
+    kicker: 'Privé',
+    title: 'Trafic privé',
+    body: 'Groupes WeChat et base de membres de la marque. Des audiences activables en direct, sans intermédiation média.',
     image: '/Images/grow-in-china/campaigns/channel-wechat-groups.png',
     alt: "L'écran d'une community manager affiche des groupes WeChat actifs avec un bon festival épinglé, téléphone et ordinateur portable côte à côte",
   },
   {
-    kicker: "Offline",
+    kicker: 'Offline',
     title: "Hors ligne, lorsque la catégorie l'exige",
     body: "Pop-up, partenariat retail, événement physique. Sur certaines catégories, le rendez-vous en présentiel vient légitimer l'ensemble du dispositif en ligne.",
     image: '/Images/grow-in-china/campaigns/channel-offline-popup.png',
@@ -54,7 +66,7 @@ const channels = [
 
 const steps = [
   {
-    title: "Choisir le moment",
+    title: 'Choisir le moment',
     body: "Aucune marque ne couvre la totalité des festivals. Lorsqu'une date ne se justifie pas, nous le signalons dès la première séance. La sélection s'opère au regard de votre catégorie, de votre niveau de stock et de votre structure de marges.",
   },
   {
@@ -62,30 +74,90 @@ const steps = [
     body: "Une grande campagne chinoise relève de la communication de marque, et non d'une simple opération promotionnelle. Elle réclame une idée, un produit héros, une signature visuelle. Étape la plus souvent escamotée, et pourtant celle qui capte l'attention bien avant la première vente enregistrée.",
   },
   {
-    title: "Conduire la montée en charge",
+    title: 'Conduire la montée en charge',
     body: "Quatre à six semaines avant l'échéance, le contenu se déploie et le seeding KOL entre en piste. Les paniers se garnissent. La pression sur les requêtes s'intensifie. Travail invisible, et le plus souvent décisif sur l'issue de l'opération.",
   },
   {
-    title: "Tenir le pic",
-    body: "La fenêtre événement à proprement parler. Livestream, ajustements de trafic et de prix en temps réel, service client à plein régime. Présence heure par heure aux côtés des équipes : la journée file, et chaque arbitrage fin pèse sur le résultat final.",
+    title: 'Tenir le pic',
+    body: 'La fenêtre événement à proprement parler. Livestream, ajustements de trafic et de prix en temps réel, service client à plein régime. Présence heure par heure aux côtés des équipes : la journée file, et chaque arbitrage fin pèse sur le résultat final.',
   },
   {
-    title: "Clôturer et tirer les enseignements",
+    title: 'Clôturer et tirer les enseignements',
     body: "Offres de clôture, puis bilan sans complaisance : ce que la campagne a réellement rapporté, et les arbitrages à corriger pour l'édition suivante.",
   },
 ];
 
 const calendar = [
-  { date: "Janv. / févr.", event: "Nouvel An chinois", prep: "8 à 10 semaines à l'avance", what: "Premier rendez-vous culturel de l'année. Cadeaux, enveloppes rouges, retrouvailles familiales. Les ventes refluent durant la fête elle-même, après une montée vigoureuse en amont.", who: "Catégories cadeaux, alimentaire, beauté, premium" },
-  { date: "8 mars", event: "Journée des femmes / Queen's Day", prep: "6 semaines à l'avance", what: "Temps fort shopping au registre féminin, particulièrement actif en beauté et en mode.", who: "Beauté, mode, joaillerie, wellness" },
-  { date: "Avril / mai", event: "Fête du travail (1er mai)", prep: "6 semaines à l'avance", what: "Pic voyage et art de vivre, doublé d'un relais commercial utile en milieu de printemps.", who: "Voyage, outdoor, lifestyle, grande consommation" },
-  { date: "Mai au 18 juin", event: "Festival 618", prep: "10 à 12 semaines à l'avance", what: "Deuxième grand festival de l'année. Initié par JD, il s'étend désormais à l'ensemble des plateformes. Les préventes s'ouvrent à la mi-mai.", who: "Toute marque vendant en Chine" },
-  { date: "19 juin (2026)", event: "Fête des bateaux-dragons", prep: "5 semaines à l'avance", what: "Rendez-vous culturel articulé autour du cadeau et de la cuisine traditionnelle.", who: "Alimentaire, cadeau, marques d'héritage" },
-  { date: "8 août", event: "8.8 / Festival 88VIP", prep: "6 semaines à l'avance", what: "Rendez-vous Tmall Global dédié aux marques internationales et à la fidélisation des membres.", who: "Marques cross-border, marques disposant d'une base de membres" },
-  { date: "19 août (2026)", event: "Festival Qixi", prep: "5 à 6 semaines à l'avance", what: "Équivalent chinois de la Saint-Valentin. Le registre du cadeau romantique domine.", who: "Beauté, joaillerie, mode, cadeau" },
-  { date: "Sept. / oct.", event: "Mi-automne et Golden Week", prep: "6 à 8 semaines à l'avance", what: "Saison du cadeau, conjuguée à une longue semaine nationale, marquée par un pic voyage et consommation.", who: "Alimentaire, cadeau, voyage, lifestyle" },
-  { date: "Fin oct. au 11 nov.", event: "Singles Day (Double 11)", prep: "12 à 14 semaines à l'avance", what: "Premier événement de e-commerce au monde. L'opération s'étale désormais sur plusieurs semaines à partir de fin octobre. La campagne structurante de l'année.", who: "Toute marque vendant en Chine" },
-  { date: "12 décembre", event: "Double 12 / clôture de fin d'année", prep: "5 semaines à l'avance", what: "Dernier pic de l'année. Particulièrement porteur pour les marques de taille intermédiaire et pour l'écoulement des stocks.", who: "Marques de taille intermédiaire, déstockage, opérations de rattrapage" },
+  {
+    date: 'Janv. / févr.',
+    event: 'Nouvel An chinois',
+    prep: "8 à 10 semaines à l'avance",
+    what: "Premier rendez-vous culturel de l'année. Cadeaux, enveloppes rouges, retrouvailles familiales. Les ventes refluent durant la fête elle-même, après une montée vigoureuse en amont.",
+    who: 'Catégories cadeaux, alimentaire, beauté, premium',
+  },
+  {
+    date: '8 mars',
+    event: "Journée des femmes / Queen's Day",
+    prep: "6 semaines à l'avance",
+    what: 'Temps fort shopping au registre féminin, particulièrement actif en beauté et en mode.',
+    who: 'Beauté, mode, joaillerie, wellness',
+  },
+  {
+    date: 'Avril / mai',
+    event: 'Fête du travail (1er mai)',
+    prep: "6 semaines à l'avance",
+    what: "Pic voyage et art de vivre, doublé d'un relais commercial utile en milieu de printemps.",
+    who: 'Voyage, outdoor, lifestyle, grande consommation',
+  },
+  {
+    date: 'Mai au 18 juin',
+    event: 'Festival 618',
+    prep: "10 à 12 semaines à l'avance",
+    what: "Deuxième grand festival de l'année. Initié par JD, il s'étend désormais à l'ensemble des plateformes. Les préventes s'ouvrent à la mi-mai.",
+    who: 'Toute marque vendant en Chine',
+  },
+  {
+    date: '19 juin (2026)',
+    event: 'Fête des bateaux-dragons',
+    prep: "5 semaines à l'avance",
+    what: 'Rendez-vous culturel articulé autour du cadeau et de la cuisine traditionnelle.',
+    who: "Alimentaire, cadeau, marques d'héritage",
+  },
+  {
+    date: '8 août',
+    event: '8.8 / Festival 88VIP',
+    prep: "6 semaines à l'avance",
+    what: 'Rendez-vous Tmall Global dédié aux marques internationales et à la fidélisation des membres.',
+    who: "Marques cross-border, marques disposant d'une base de membres",
+  },
+  {
+    date: '19 août (2026)',
+    event: 'Festival Qixi',
+    prep: "5 à 6 semaines à l'avance",
+    what: 'Équivalent chinois de la Saint-Valentin. Le registre du cadeau romantique domine.',
+    who: 'Beauté, joaillerie, mode, cadeau',
+  },
+  {
+    date: 'Sept. / oct.',
+    event: 'Mi-automne et Golden Week',
+    prep: "6 à 8 semaines à l'avance",
+    what: 'Saison du cadeau, conjuguée à une longue semaine nationale, marquée par un pic voyage et consommation.',
+    who: 'Alimentaire, cadeau, voyage, lifestyle',
+  },
+  {
+    date: 'Fin oct. au 11 nov.',
+    event: 'Singles Day (Double 11)',
+    prep: "12 à 14 semaines à l'avance",
+    what: "Premier événement de e-commerce au monde. L'opération s'étale désormais sur plusieurs semaines à partir de fin octobre. La campagne structurante de l'année.",
+    who: 'Toute marque vendant en Chine',
+  },
+  {
+    date: '12 décembre',
+    event: "Double 12 / clôture de fin d'année",
+    prep: "5 semaines à l'avance",
+    what: "Dernier pic de l'année. Particulièrement porteur pour les marques de taille intermédiaire et pour l'écoulement des stocks.",
+    who: 'Marques de taille intermédiaire, déstockage, opérations de rattrapage',
+  },
 ];
 
 const serviceJsonLd = {
@@ -109,11 +181,13 @@ const serviceJsonLd = {
 
   <div class="cbs-progress" aria-hidden="true"><div class="cbs-progress__bar"></div></div>
   <article class="cbs">
-
     {/* ---------- HERO ---------- */}
     <section class="cbs-hero" data-hero>
       <div class="cbs-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/grow-in-china/campaigns/hero-campaign-warroom.png" alt="Une salle de pilotage de campagne Singles Day en Chine, des opérateurs suivent un tableau GMV en direct, les chiffres festival grimpent en rouge" />
+        <img
+          src="/Images/grow-in-china/campaigns/hero-campaign-warroom.png"
+          alt="Une salle de pilotage de campagne Singles Day en Chine, des opérateurs suivent un tableau GMV en direct, les chiffres festival grimpent en rouge"
+        />
       </div>
       <div class="cbs-hero__overlay" aria-hidden="true"></div>
       <div class="cbs-hero__grain" aria-hidden="true"></div>
@@ -127,27 +201,35 @@ const serviceJsonLd = {
         <span class="eyebrow eyebrow--on-dark cbs-reveal">Campagnes</span>
         <h1 class="cbs-hero__title cbs-reveal" style="--reveal-delay: 80ms;">
           <span class="cbs-hero__title-row">En Chine, la vente se joue par campagnes.</span>
-          <span class="cbs-hero__title-row cbs-hero__title-row--accent">Les manquer revient à manquer l'année.</span>
+          <span class="cbs-hero__title-row cbs-hero__title-row--accent"
+            >Les manquer revient à manquer l'année.</span
+          >
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
-          Le commerce chinois avance par vagues, calées sur quelques dates où le pays tout
-          entier consomme. Les marques qui anticipent ces séquences gagnent du terrain. Les
-          autres voient l'année leur filer entre les doigts. On bâtit la campagne, on l'orchestre
-          sur tous les canaux qui pèsent, et on reste en première ligne quand
-          l'opération bascule en direct.
+          Le commerce chinois avance par vagues, calées sur quelques dates où le pays tout entier
+          consomme. Les marques qui anticipent ces séquences gagnent du terrain. Les autres voient
+          l'année leur filer entre les doigts. On bâtit la campagne, on l'orchestre sur tous les
+          canaux qui pèsent, et on reste en première ligne quand l'opération bascule en direct.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
-          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic">Discuter d'une campagne</a>
+          <a href="/fr/nous-contacter" class="btn btn--primary cbs-magnetic"
+            >Discuter d'une campagne</a
+          >
           <a href="#calendar" class="btn btn--ghost-light cbs-magnetic">Consulter le calendrier</a>
         </div>
 
         <div class="cbs-hero__meta cbs-reveal" style="--reveal-delay: 360ms;">
-          {heroStats.map((s) => (
-            <div class="cbs-hero__meta-item">
-              <span class="cbs-hero__meta-num">{s.num}{s.suffix}</span>
-              <span class="cbs-hero__meta-label">{s.label}</span>
-            </div>
-          ))}
+          {
+            heroStats.map((s) => (
+              <div class="cbs-hero__meta-item">
+                <span class="cbs-hero__meta-num">
+                  {s.num}
+                  {s.suffix}
+                </span>
+                <span class="cbs-hero__meta-label">{s.label}</span>
+              </div>
+            ))
+          }
         </div>
       </div>
 
@@ -170,44 +252,43 @@ const serviceJsonLd = {
             <div class="cbs-basics__col">
               <p>
                 Une campagne se définit comme un effort coordonné autour d'une échéance unique.
-                Festival commercial le plus souvent, 618 ou Singles Day en tête, parfois
-                lancement produit ou anniversaire de marque.
+                Festival commercial le plus souvent, 618 ou Singles Day en tête, parfois lancement
+                produit ou anniversaire de marque.
               </p>
               <p>
-                Une campagne ne se résume pas à une bannière en tête de boutique. Il s'agit
-                d'une séquence qui s'étale sur plusieurs semaines : montée préparatoire,
-                événement à son apogée, phase de clôture. Prix, contenu, livestream, seeding
-                KOL, service client et niveaux de stock convergent tous vers les mêmes journées.
+                Une campagne ne se résume pas à une bannière en tête de boutique. Il s'agit d'une
+                séquence qui s'étale sur plusieurs semaines : montée préparatoire, événement à son
+                apogée, phase de clôture. Prix, contenu, livestream, seeding KOL, service client et
+                niveaux de stock convergent tous vers les mêmes journées.
               </p>
               <p>
-                Une grande campagne chinoise relève pleinement de la communication de marque.
-                Le budget engagé approche celui d'une opération corporate, et le retour ne se
-                mesure pas au seul chiffre du trimestre : il s'inscrit aussi dans la
-                construction durable de notoriété.
+                Une grande campagne chinoise relève pleinement de la communication de marque. Le
+                budget engagé approche celui d'une opération corporate, et le retour ne se mesure
+                pas au seul chiffre du trimestre : il s'inscrit aussi dans la construction durable
+                de notoriété.
               </p>
             </div>
 
             <div class="cbs-basics__col">
               <p>
                 Voilà ce qui échappe à nombre d'enseignes. Le consommateur chinois guette les
-                festivals. Il remplit son panier pendant des semaines, puis valide d'un seul
-                geste à l'ouverture des remises. Les plateformes entretiennent ce réflexe :
-                durant les fenêtres festival, Tmall, JD et Douyin orientent trafic et
-                classements de recherche vers les marques qui activent les mécaniques officielles.
-                Faire l'impasse sur 618 et Singles Day revient à céder les deux plus grandes
-                fenêtres de l'année, ainsi que son référencement, aux concurrents présents le
-                jour dit.
+                festivals. Il remplit son panier pendant des semaines, puis valide d'un seul geste à
+                l'ouverture des remises. Les plateformes entretiennent ce réflexe : durant les
+                fenêtres festival, Tmall, JD et Douyin orientent trafic et classements de recherche
+                vers les marques qui activent les mécaniques officielles. Faire l'impasse sur 618 et
+                Singles Day revient à céder les deux plus grandes fenêtres de l'année, ainsi que son
+                référencement, aux concurrents présents le jour dit.
               </p>
               <p>
-                L'enjeu va plus loin encore. Dès lors que la plateforme retient votre campagne
-                parmi ses temps forts, elle engage son propre poids publicitaire à vos côtés :
-                mises en avant, trafic en page d'accueil. Une couverture qu'aucun achat média
-                direct ne permet d'égaler.
+                L'enjeu va plus loin encore. Dès lors que la plateforme retient votre campagne parmi
+                ses temps forts, elle engage son propre poids publicitaire à vos côtés : mises en
+                avant, trafic en page d'accueil. Une couverture qu'aucun achat média direct ne
+                permet d'égaler.
               </p>
               <p>
-                Chez la plupart des marques que nous accompagnons, les fenêtres festival
-                concentrent une part déterminante du chiffre annuel. Les mois plus calmes
-                couvrent les charges. Les campagnes, elles, font l'exercice.
+                Chez la plupart des marques que nous accompagnons, les fenêtres festival concentrent
+                une part déterminante du chiffre annuel. Les mois plus calmes couvrent les charges.
+                Les campagnes, elles, font l'exercice.
               </p>
             </div>
           </div>
@@ -228,52 +309,54 @@ const serviceJsonLd = {
           <span class="eyebrow">La réalité</span>
           <h2>Une campagne déborde toujours largement la plateforme eCommerce</h2>
           <p class="section-header__lead">
-            Le pan que la plupart des marques sous-estiment. La transaction, certes, se conclut
-            sur Tmall, JD ou Douyin. Mais la campagne qui la déclenche se joue presque
-            entièrement ailleurs, et toujours sur plusieurs canaux. Une campagne type avance de
-            front sur plusieurs terrains à la fois.
+            Le pan que la plupart des marques sous-estiment. La transaction, certes, se conclut sur
+            Tmall, JD ou Douyin. Mais la campagne qui la déclenche se joue presque entièrement
+            ailleurs, et toujours sur plusieurs canaux. Une campagne type avance de front sur
+            plusieurs terrains à la fois.
           </p>
         </header>
 
         <div class="cbs-truths cbs-truths--three">
-          {channels.map((c, i) => (
-            <article
-              class={`cbs-truth cbs-truth--compact${i % 2 === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
-              style={`--reveal-delay: ${(i % 3) * 100}ms;`}
-              data-truth-tilt
-            >
-              <div class="cbs-truth__inner">
-                <div class="cbs-truth__stage">
-                  <div class="cbs-truth__frame">
-                    <img
-                      src={c.image}
-                      alt={c.alt}
-                      loading="lazy"
-                      decoding="async"
-                      data-truth-parallax
-                    />
-                    <div class="cbs-truth__shade" aria-hidden="true"></div>
-                    <div class="cbs-truth__sheen" aria-hidden="true"></div>
+          {
+            channels.map((c, i) => (
+              <article
+                class={`cbs-truth cbs-truth--compact${i % 2 === 1 ? ' cbs-truth--alt' : ''} cbs-reveal`}
+                style={`--reveal-delay: ${(i % 3) * 100}ms;`}
+                data-truth-tilt
+              >
+                <div class="cbs-truth__inner">
+                  <div class="cbs-truth__stage">
+                    <div class="cbs-truth__frame">
+                      <img
+                        src={c.image}
+                        alt={c.alt}
+                        loading="lazy"
+                        decoding="async"
+                        data-truth-parallax
+                      />
+                      <div class="cbs-truth__shade" aria-hidden="true" />
+                      <div class="cbs-truth__sheen" aria-hidden="true" />
+                    </div>
+                    <div class="cbs-truth__kicker" aria-hidden="true">
+                      <span class="cbs-truth__kicker-dot" />
+                      {c.kicker}
+                    </div>
                   </div>
-                  <div class="cbs-truth__kicker" aria-hidden="true">
-                    <span class="cbs-truth__kicker-dot"></span>
-                    {c.kicker}
-                  </div>
-                </div>
 
-                <div class="cbs-truth__content">
-                  <h3 class="cbs-truth__title">{c.title}</h3>
-                  <p class="cbs-truth__body">{c.body}</p>
+                  <div class="cbs-truth__content">
+                    <h3 class="cbs-truth__title">{c.title}</h3>
+                    <p class="cbs-truth__body">{c.body}</p>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            ))
+          }
         </div>
 
         <p class="cbs-reality__note cbs-reveal">
-          Aucun de ces leviers ne pose de réelle difficulté pris isolément. Tout l'enjeu, et
-          tout le résultat, consiste à les déclencher dans le bon ordre et à les converger
-          vers une seule et même échéance.
+          Aucun de ces leviers ne pose de réelle difficulté pris isolément. Tout l'enjeu, et tout le
+          résultat, consiste à les déclencher dans le bon ordre et à les converger vers une seule et
+          même échéance.
         </p>
       </div>
     </section>
@@ -285,30 +368,45 @@ const serviceJsonLd = {
           <span class="eyebrow">Notre approche</span>
           <h2>La méthode appliquée à chaque campagne</h2>
           <p class="section-header__lead">
-            L'ossature ne varie pas d'une campagne à l'autre. Seuls les détails s'ajustent.
-            La colonne vertébrale, elle, tient.
+            L'ossature ne varie pas d'une campagne à l'autre. Seuls les détails s'ajustent. La
+            colonne vertébrale, elle, tient.
           </p>
         </header>
 
         <ol class="cbs-steps">
-          {steps.map((s, i) => (
-            <li class="cbs-steps__item cbs-reveal" style={`--reveal-delay: ${i * 80}ms;`}>
-              <span class="cbs-steps__check" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-              </span>
-              <h3 class="cbs-steps__title">{s.title}</h3>
-              <p class="cbs-steps__body">{s.body}</p>
-            </li>
-          ))}
+          {
+            steps.map((s, i) => (
+              <li class="cbs-steps__item cbs-reveal" style={`--reveal-delay: ${i * 80}ms;`}>
+                <span class="cbs-steps__check" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="5 12 10 17 19 8" />
+                  </svg>
+                </span>
+                <h3 class="cbs-steps__title">{s.title}</h3>
+                <p class="cbs-steps__body">{s.body}</p>
+              </li>
+            ))
+          }
         </ol>
 
         <blockquote class="cbs-quote cbs-reveal">
-          <p>Nous ne livrons pas une présentation pour disparaître ensuite. La campagne, nous
-          l'exécutons à vos côtés. Toute la différence est là.</p>
+          <p>
+            Nous ne livrons pas une présentation pour disparaître ensuite. La campagne, nous
+            l'exécutons à vos côtés. Toute la différence est là.
+          </p>
         </blockquote>
 
         <div class="cbs-approach__cta cbs-reveal">
-          <a href="/fr/nous-contacter" class="btn btn--ghost">Étudier notre plan pour votre prochain festival</a>
+          <a href="/fr/nous-contacter" class="btn btn--ghost"
+            >Étudier notre plan pour votre prochain festival</a
+          >
         </div>
       </div>
     </section>
@@ -323,29 +421,29 @@ const serviceJsonLd = {
 
         <div class="cbs-prose cbs-reveal">
           <p>
-            Aucun chiffre unique ne vaut pour une campagne chinoise, et quiconque en avance un
-            avant d'avoir examiné votre catégorie improvise. Le budget se ventile sur plusieurs
-            postes : honoraires de conception et de pilotage, achat média (souvent la première
-            ligne, entre trafic payant et amplification sur Xiaohongshu et Douyin), engagements
-            KOL et livestream, production de contenu. À cela s'ajoute la marge stock et remise,
-            qui conditionne en dernier ressort la rentabilité de l'ensemble.
+            Aucun chiffre unique ne vaut pour une campagne chinoise, et quiconque en avance un avant
+            d'avoir examiné votre catégorie improvise. Le budget se ventile sur plusieurs postes :
+            honoraires de conception et de pilotage, achat média (souvent la première ligne, entre
+            trafic payant et amplification sur Xiaohongshu et Douyin), engagements KOL et
+            livestream, production de contenu. À cela s'ajoute la marge stock et remise, qui
+            conditionne en dernier ressort la rentabilité de l'ensemble.
           </p>
         </div>
 
         <blockquote class="cbs-quote cbs-quote--warning cbs-reveal">
           <p>
             Un avertissement, sans détour. Les festivals pèsent sur la marge. Toutes les marques
-            n'ont pas vocation à viser chaque date. Une campagne qui gonfle le GMV au prix de
-            pertes financières ne constitue pas une victoire. Mieux vaut renoncer à un festival
-            que d'en mener un qui fragilise la rentabilité. Ce discernement fait partie
-            intégrante de la prestation que nous facturons.
+            n'ont pas vocation à viser chaque date. Une campagne qui gonfle le GMV au prix de pertes
+            financières ne constitue pas une victoire. Mieux vaut renoncer à un festival que d'en
+            mener un qui fragilise la rentabilité. Ce discernement fait partie intégrante de la
+            prestation que nous facturons.
           </p>
         </blockquote>
 
         <div class="cbs-prose cbs-reveal">
           <p>
-            Indiquez-nous la date visée. La réponse vous parviendra sous forme d'un chiffre
-            concret, et non d'une fourchette vague.
+            Indiquez-nous la date visée. La réponse vous parviendra sous forme d'un chiffre concret,
+            et non d'une fourchette vague.
           </p>
         </div>
       </div>
@@ -358,10 +456,10 @@ const serviceJsonLd = {
           <span class="eyebrow">Le calendrier</span>
           <h2>Le calendrier des campagnes eCommerce chinoises</h2>
           <p class="section-header__lead">
-            Quelles échéances justifient réellement une préparation ? Voici celles autour
-            desquelles le marché chinois s'organise. Aucune marque n'a vocation à toutes les
-            couvrir. Mais toute enseigne qui vend en Chine devrait caler sa planification sur ce
-            calendrier un an en amont : la préparation s'engage bien avant la date elle-même.
+            Quelles échéances justifient réellement une préparation ? Voici celles autour desquelles
+            le marché chinois s'organise. Aucune marque n'a vocation à toutes les couvrir. Mais
+            toute enseigne qui vend en Chine devrait caler sa planification sur ce calendrier un an
+            en amont : la préparation s'engage bien avant la date elle-même.
           </p>
         </header>
 
@@ -378,26 +476,28 @@ const serviceJsonLd = {
                 </tr>
               </thead>
               <tbody>
-                {calendar.map((row) => (
-                  <tr>
-                    <td class="cbs-calendar__date">{row.date}</td>
-                    <td class="cbs-calendar__event">{row.event}</td>
-                    <td class="cbs-calendar__prep">{row.prep}</td>
-                    <td class="cbs-calendar__what">{row.what}</td>
-                    <td class="cbs-calendar__who">{row.who}</td>
-                  </tr>
-                ))}
+                {
+                  calendar.map((row) => (
+                    <tr>
+                      <td class="cbs-calendar__date">{row.date}</td>
+                      <td class="cbs-calendar__event">{row.event}</td>
+                      <td class="cbs-calendar__prep">{row.prep}</td>
+                      <td class="cbs-calendar__what">{row.what}</td>
+                      <td class="cbs-calendar__who">{row.who}</td>
+                    </tr>
+                  ))
+                }
               </tbody>
             </table>
           </div>
 
           <p class="cbs-compare__note">
             Mode d'emploi. Nul ne tient l'ensemble des dix échéances. Une marque concentrée en
-            retient deux ou trois à conquérir pleinement, et traite les autres en activation
-            légère. 618 et Singles Day demeurent les rendez-vous incontournables. Le reste se
-            décide en fonction de la catégorie. Un point d'attention : la colonne préparation.
-            Lorsqu'une date approche en deçà du délai requis, le retard est consommé ; il faut
-            alors viser le festival suivant.
+            retient deux ou trois à conquérir pleinement, et traite les autres en activation légère.
+            618 et Singles Day demeurent les rendez-vous incontournables. Le reste se décide en
+            fonction de la catégorie. Un point d'attention : la colonne préparation. Lorsqu'une date
+            approche en deçà du délai requis, le retard est consommé ; il faut alors viser le
+            festival suivant.
           </p>
         </div>
       </div>
@@ -416,21 +516,23 @@ const serviceJsonLd = {
             <span class="cbs-fit__tag">Vous êtes concerné</span>
             <p>
               Un programme de campagne se justifie pleinement si vous vendez déjà en Chine, sur
-              Tmall, Tmall Global, JD ou Douyin, et si vos fenêtres festival ne pèsent pas
-              autant qu'elles le devraient. Il se justifie tout autant à l'orée d'un lancement,
-              lorsque l'enjeu consiste à faire compter le premier festival plutôt que de le
-              laisser filer.
+              Tmall, Tmall Global, JD ou Douyin, et si vos fenêtres festival ne pèsent pas autant
+              qu'elles le devraient. Il se justifie tout autant à l'orée d'un lancement, lorsque
+              l'enjeu consiste à faire compter le premier festival plutôt que de le laisser filer.
             </p>
           </article>
 
-          <article class="cbs-fit__card cbs-fit__card--not cbs-reveal" style="--reveal-delay: 120ms;">
+          <article
+            class="cbs-fit__card cbs-fit__card--not cbs-reveal"
+            style="--reveal-delay: 120ms;"
+          >
             <span class="cbs-fit__tag">Pas encore</span>
             <p>
-              L'approche n'est sans doute pas encore la vôtre si la boutique vient d'ouvrir,
-              sans historique de trafic, ou si les marges ne supportent pas une remise festival.
-              Aucun jugement à en tirer. Le travail de fond passe d'abord, la campagne ensuite.
-              Mieux vaut alors ouvrir la conversation sur les fondations : démarrer au bon
-              endroit nous tient à cœur.
+              L'approche n'est sans doute pas encore la vôtre si la boutique vient d'ouvrir, sans
+              historique de trafic, ou si les marges ne supportent pas une remise festival. Aucun
+              jugement à en tirer. Le travail de fond passe d'abord, la campagne ensuite. Mieux vaut
+              alors ouvrir la conversation sur les fondations : démarrer au bon endroit nous tient à
+              cœur.
             </p>
           </article>
         </div>
@@ -444,18 +546,22 @@ const serviceJsonLd = {
           <span class="eyebrow eyebrow--on-dark">Échangeons</span>
           <h2 class="cbs-cta__title">Prêts à conquérir les festivals chinois ?</h2>
           <p class="cbs-cta__lead">
-            Nous avons orchestré des campagnes festival pour des marques internationales en
-            beauté, soin, alimentaire et grande consommation. Nous savons quelles dates méritent
-            un budget et lesquelles laisser passer. Nous savons bâtir la montée qui déplace
-            réellement le résultat. Et nous connaissons la tension du pic, lorsque l'événement
-            court en direct et que les chiffres tombent heure par heure.
+            Nous avons orchestré des campagnes festival pour des marques internationales en beauté,
+            soin, alimentaire et grande consommation. Nous savons quelles dates méritent un budget
+            et lesquelles laisser passer. Nous savons bâtir la montée qui déplace réellement le
+            résultat. Et nous connaissons la tension du pic, lorsque l'événement court en direct et
+            que les chiffres tombent heure par heure.
           </p>
           <p class="cbs-cta__pull">
             Nous concevons le plan, puis nous exécutons ce que nous recommandons.
           </p>
           <div class="cbs-cta__actions">
-            <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary">Bâtir ensemble votre calendrier de campagnes</a>
-            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost">Consulter nos études de cas</a>
+            <a href="/fr/nous-contacter" class="btn cbs-cta__btn-primary"
+              >Bâtir ensemble votre calendrier de campagnes</a
+            >
+            <a href="/fr/nos-realisations" class="btn cbs-cta__btn-ghost"
+              >Consulter nos études de cas</a
+            >
           </div>
         </div>
       </div>
@@ -464,7 +570,9 @@ const serviceJsonLd = {
 
   <style is:global>
     /* ---------- Container narrow helper ---------- */
-    .cbs .container--narrow { max-width: 880px; }
+    .cbs .container--narrow {
+      max-width: 880px;
+    }
 
     /* ---------- REVEAL + MOTION ---------- */
     @media (prefers-reduced-motion: no-preference) {
@@ -475,23 +583,35 @@ const serviceJsonLd = {
           opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
           transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
       }
-      .cbs-reveal.is-in { opacity: 1; transform: translateY(0); }
+      .cbs-reveal.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
       .cbs-magnetic {
         will-change: transform;
-        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+        transition:
+          transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 220ms ease,
+          background-color 200ms ease,
+          color 200ms ease;
       }
     }
 
     /* ---------- SCROLL PROGRESS BAR ---------- */
     .cbs-progress {
-      position: fixed; top: 0; left: 0; right: 0;
-      height: 3px; z-index: 1000;
-      background: transparent; pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      z-index: 1000;
+      background: transparent;
+      pointer-events: none;
     }
     .cbs-progress__bar {
-      height: 100%; width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #C8102E 100%);
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 60%, #c8102e 100%);
       box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
@@ -500,54 +620,81 @@ const serviceJsonLd = {
     .cbs-hero {
       position: relative;
       min-height: clamp(360px, 48vh, 500px);
-      display: flex; align-items: flex-start;
+      display: flex;
+      align-items: flex-start;
       padding: clamp(8px, 1.25vh, 16px) 0 clamp(48px, 7vh, 80px);
       color: var(--bbg-white);
-      overflow: hidden; isolation: isolate;
+      overflow: hidden;
+      isolation: isolate;
     }
-    body:has(.cbs-hero) .cbs-hero { padding-top: clamp(112px, 10vh, 144px); }
+    body:has(.cbs-hero) .cbs-hero {
+      padding-top: clamp(112px, 10vh, 144px);
+    }
     @media (max-width: 1024px) {
-      body:has(.cbs-hero) .cbs-hero { padding-top: clamp(96px, 9vh, 116px); }
+      body:has(.cbs-hero) .cbs-hero {
+        padding-top: clamp(96px, 9vh, 116px);
+      }
     }
-    .cbs-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .cbs-hero__bg {
+      position: absolute;
+      inset: -10% 0 0;
+      z-index: -3;
+    }
     .cbs-hero__bg img {
-      width: 100%; height: 110%;
-      object-fit: cover; object-position: center;
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
       transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.04);
       transition: transform 80ms linear;
       filter: saturate(0.95);
     }
     .cbs-hero__overlay {
-      position: absolute; inset: 0; z-index: -2;
+      position: absolute;
+      inset: 0;
+      z-index: -2;
       background:
-        linear-gradient(110deg,
+        linear-gradient(
+          110deg,
           rgba(8, 18, 28, 0.92) 0%,
           rgba(8, 18, 28, 0.72) 42%,
-          rgba(8, 18, 28, 0.32) 100%),
-        radial-gradient(120% 80% at 0% 100%,
-          rgba(200, 16, 46, 0.28) 0%,
-          rgba(200, 16, 46, 0) 60%);
+          rgba(8, 18, 28, 0.32) 100%
+        ),
+        radial-gradient(120% 80% at 0% 100%, rgba(200, 16, 46, 0.28) 0%, rgba(200, 16, 46, 0) 60%);
     }
     .cbs-hero__grain {
-      position: absolute; inset: 0; z-index: -1;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
       background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
       background-size: 3px 3px;
-      mix-blend-mode: overlay; opacity: 0.45;
+      mix-blend-mode: overlay;
+      opacity: 0.45;
       pointer-events: none;
     }
-    .cbs-hero__inner { max-width: 980px; position: relative; }
+    .cbs-hero__inner {
+      max-width: 980px;
+      position: relative;
+    }
     .cbs-hero__crumbs {
       margin-bottom: var(--space-4);
       font-size: var(--fs-small);
-      display: flex; gap: 0.5rem; align-items: center;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
       color: rgba(255, 255, 255, 0.7);
     }
-    .cbs-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
-    .cbs-hero__crumbs a:hover { color: var(--bbg-white); }
+    .cbs-hero__crumbs a {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+    .cbs-hero__crumbs a:hover {
+      color: var(--bbg-white);
+    }
     .cbs-hero__inner .eyebrow--on-dark {
       display: inline-block;
       margin-bottom: var(--space-3);
-      color: #C8102E;
+      color: #c8102e;
     }
     .cbs-hero__title {
       font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
@@ -557,13 +704,18 @@ const serviceJsonLd = {
       margin: 0 0 var(--space-4);
       max-width: 22ch;
       font-weight: 700;
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: 0.05em;
     }
-    .cbs-hero__title-row { display: block; }
+    .cbs-hero__title-row {
+      display: block;
+    }
     .cbs-hero__title-row--accent {
-      color: #C8102E; font-weight: 500;
-      font-style: italic; letter-spacing: -0.018em;
+      color: #c8102e;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -0.018em;
     }
     .cbs-hero__lead {
       font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
@@ -572,31 +724,46 @@ const serviceJsonLd = {
       max-width: 58ch;
       margin: 0 0 var(--space-5);
     }
-    .cbs-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
-    .cbs-magnetic:hover { transform: translateY(-2px); }
+    .cbs-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+    .cbs-magnetic:hover {
+      transform: translateY(-2px);
+    }
 
     .cbs-hero__meta {
-      display: flex; flex-wrap: nowrap;
+      display: flex;
+      flex-wrap: nowrap;
       gap: clamp(var(--space-3), 3vw, var(--space-6));
       padding-top: var(--space-5);
       border-top: 1px solid rgba(255, 255, 255, 0.14);
       max-width: none;
     }
     .cbs-hero__meta-item {
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: 0.2rem;
       min-width: 0;
       flex: 1 1 0;
     }
     @media (max-width: 720px) {
-      .cbs-hero__meta { flex-wrap: wrap; }
-      .cbs-hero__meta-item { flex: 1 1 auto; }
+      .cbs-hero__meta {
+        flex-wrap: wrap;
+      }
+      .cbs-hero__meta-item {
+        flex: 1 1 auto;
+      }
     }
     .cbs-hero__meta-num {
       font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
-      font-weight: 700; letter-spacing: -0.02em;
-      line-height: 1; color: var(--bbg-white);
-      font-feature-settings: "tnum";
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--bbg-white);
+      font-feature-settings: 'tnum';
     }
     .cbs-hero__meta-label {
       font-size: 0.85rem;
@@ -608,30 +775,52 @@ const serviceJsonLd = {
       position: absolute;
       bottom: var(--space-5);
       right: clamp(var(--space-5), 4vw, var(--space-7));
-      display: flex; flex-direction: column;
-      align-items: center; gap: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
       color: rgba(255, 255, 255, 0.7);
-      font-size: 0.7rem; letter-spacing: 0.18em;
-      text-transform: uppercase; font-weight: 600;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
       transition: color 200ms ease;
     }
-    .cbs-hero__scroll:hover { color: var(--bbg-white); }
+    .cbs-hero__scroll:hover {
+      color: var(--bbg-white);
+    }
     .cbs-hero__scroll-line {
-      width: 1px; height: 40px;
+      width: 1px;
+      height: 40px;
       background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
     .cbs-hero__scroll-line::after {
-      content: ""; position: absolute;
-      top: -100%; left: 0; right: 0;
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
       height: 50%;
       background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
       animation: cbs-scroll-tick 1.8s ease-in-out infinite;
     }
-    @keyframes cbs-scroll-tick { 0% { top: -50%; } 100% { top: 100%; } }
+    @keyframes cbs-scroll-tick {
+      0% {
+        top: -50%;
+      }
+      100% {
+        top: 100%;
+      }
+    }
     @media (max-width: 720px) {
-      .cbs-hero__scroll { display: none; }
-      .cbs-hero__meta { gap: var(--space-4); }
+      .cbs-hero__scroll {
+        display: none;
+      }
+      .cbs-hero__meta {
+        gap: var(--space-4);
+      }
     }
 
     /* ---------- PROSE BLOCK ---------- */
@@ -641,9 +830,15 @@ const serviceJsonLd = {
       font-size: 1.0625rem;
       margin: 0 0 var(--space-4);
     }
-    .cbs-prose p:last-child { margin-bottom: 0; }
-    .cbs-prose + .cbs-quote { margin-top: var(--space-5); }
-    .cbs-quote + .cbs-prose { margin-top: var(--space-5); }
+    .cbs-prose p:last-child {
+      margin-bottom: 0;
+    }
+    .cbs-prose + .cbs-quote {
+      margin-top: var(--space-5);
+    }
+    .cbs-quote + .cbs-prose {
+      margin-top: var(--space-5);
+    }
 
     /* ---------- BASICS (two-column read) ---------- */
     .cbs-basics {
@@ -673,9 +868,14 @@ const serviceJsonLd = {
       line-height: 1.75;
       margin: 0 0 var(--space-4);
     }
-    .cbs-basics__col p:last-child { margin-bottom: 0; }
+    .cbs-basics__col p:last-child {
+      margin-bottom: 0;
+    }
     @media (max-width: 820px) {
-      .cbs-basics__cols { grid-template-columns: 1fr; gap: var(--space-4); }
+      .cbs-basics__cols {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
     }
 
     .cbs-reality__note {
@@ -689,7 +889,9 @@ const serviceJsonLd = {
 
     /* ---------- STEPS (no number badges, check-icon led) ---------- */
     .cbs-steps {
-      list-style: none; padding: 0; margin: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: var(--space-5);
@@ -700,17 +902,23 @@ const serviceJsonLd = {
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
       padding: var(--space-5);
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-3);
       position: relative;
-      transition: border-color 260ms ease, box-shadow 260ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 260ms ease,
+        box-shadow 260ms ease,
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-steps__item::before {
-      content: "";
+      content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       transform: scaleX(0);
       transform-origin: left center;
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -721,16 +929,24 @@ const serviceJsonLd = {
       border-color: var(--bbg-blue);
       box-shadow: 0 16px 32px -20px rgba(200, 16, 46, 0.4);
     }
-    .cbs-steps__item:hover::before { transform: scaleX(1); }
+    .cbs-steps__item:hover::before {
+      transform: scaleX(1);
+    }
     .cbs-steps__check {
-      width: 36px; height: 36px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       background: var(--bbg-blue-light);
       color: var(--bbg-blue);
-      display: inline-flex; align-items: center; justify-content: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       flex-shrink: 0;
     }
-    .cbs-steps__check svg { width: 18px; height: 18px; }
+    .cbs-steps__check svg {
+      width: 18px;
+      height: 18px;
+    }
     .cbs-steps__title {
       font-size: 1.0625rem;
       line-height: 1.25;
@@ -745,10 +961,14 @@ const serviceJsonLd = {
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .cbs-steps { grid-template-columns: repeat(2, 1fr); }
+      .cbs-steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (max-width: 640px) {
-      .cbs-steps { grid-template-columns: 1fr; }
+      .cbs-steps {
+        grid-template-columns: 1fr;
+      }
     }
 
     .cbs-approach__cta {
@@ -761,7 +981,7 @@ const serviceJsonLd = {
       margin: var(--space-6) auto 0;
       max-width: 760px;
       padding: var(--space-5) var(--space-6);
-      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.10) 100%);
+      background: linear-gradient(135deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.1) 100%);
       border-left: 4px solid var(--bbg-blue);
       border-radius: 0 var(--radius-md) var(--radius-md) 0;
     }
@@ -774,10 +994,14 @@ const serviceJsonLd = {
       font-style: italic;
     }
     .cbs-quote--warning {
-      background: linear-gradient(135deg, #FFF6E5 0%, #FFEDC9 100%);
-      border-left-color: #D89B2A;
+      background: linear-gradient(135deg, #fff6e5 0%, #ffedc9 100%);
+      border-left-color: #d89b2a;
     }
-    .cbs-quote--warning p { color: #5B3E0A; font-style: normal; font-weight: 500; }
+    .cbs-quote--warning p {
+      color: #5b3e0a;
+      font-style: normal;
+      font-weight: 500;
+    }
 
     /* ---------- CALENDAR TABLE ---------- */
     .cbs-compare {
@@ -787,7 +1011,9 @@ const serviceJsonLd = {
       padding: clamp(var(--space-4), 2vw + 1rem, var(--space-6));
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
     }
-    .cbs-compare__table-wrap { overflow-x: auto; }
+    .cbs-compare__table-wrap {
+      overflow-x: auto;
+    }
     .cbs-calendar {
       width: 100%;
       border-collapse: separate;
@@ -818,8 +1044,12 @@ const serviceJsonLd = {
       color: var(--bbg-ink);
       line-height: 1.55;
     }
-    .cbs-calendar tbody tr:last-child td { border-bottom: none; }
-    .cbs-calendar tbody tr:hover td { background: rgba(200, 16, 46, 0.03); }
+    .cbs-calendar tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .cbs-calendar tbody tr:hover td {
+      background: rgba(200, 16, 46, 0.03);
+    }
     .cbs-calendar__date {
       font-weight: 700;
       color: var(--bbg-ink);
@@ -863,10 +1093,14 @@ const serviceJsonLd = {
       border-radius: var(--radius-lg);
       border: 1px solid var(--bbg-border);
       background: var(--bbg-white);
-      display: flex; flex-direction: column;
+      display: flex;
+      flex-direction: column;
       gap: var(--space-3);
       position: relative;
-      transition: border-color 260ms ease, box-shadow 260ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 260ms ease,
+        box-shadow 260ms ease,
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .cbs-fit__card:hover {
       transform: translateY(-3px);
@@ -876,11 +1110,15 @@ const serviceJsonLd = {
       background: linear-gradient(160deg, var(--bbg-blue-light) 0%, rgba(200, 16, 46, 0.08) 100%);
       border-color: rgba(200, 16, 46, 0.35);
     }
-    .cbs-fit__card--yes:hover { border-color: var(--bbg-blue); }
+    .cbs-fit__card--yes:hover {
+      border-color: var(--bbg-blue);
+    }
     .cbs-fit__tag {
       align-self: flex-start;
-      font-size: 0.72rem; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       padding: 0.35em 0.85em;
       border-radius: 999px;
     }
@@ -899,9 +1137,13 @@ const serviceJsonLd = {
       line-height: 1.65;
       margin: 0;
     }
-    .cbs-fit__card--not p { color: var(--bbg-text); }
+    .cbs-fit__card--not p {
+      color: var(--bbg-text);
+    }
     @media (max-width: 1024px) {
-      .cbs-fit { grid-template-columns: 1fr; }
+      .cbs-fit {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- FINAL CTA ---------- */
@@ -911,13 +1153,21 @@ const serviceJsonLd = {
       color: var(--bbg-white);
       border-radius: var(--radius-lg);
       text-align: center;
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
     .cbs-cta::before {
-      content: ""; position: absolute;
-      top: -40%; right: -10%;
-      width: 420px; height: 420px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 65%
+      );
       pointer-events: none;
     }
     .cbs-cta .eyebrow--on-dark {
@@ -952,7 +1202,8 @@ const serviceJsonLd = {
       position: relative;
     }
     .cbs-cta__actions {
-      display: flex; flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
       gap: var(--space-3);
       justify-content: center;
       position: relative;
@@ -987,14 +1238,17 @@ const serviceJsonLd = {
         if (reduced || !('IntersectionObserver' in window)) {
           revealEls.forEach((el) => el.classList.add('is-in'));
         } else {
-          const io = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-in');
-                io.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-in');
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+          );
           revealEls.forEach((el) => io.observe(el));
         }
       }
@@ -1011,7 +1265,7 @@ const serviceJsonLd = {
           if (parallaxEl && heroEl && !reduced) {
             const heroH = heroEl.offsetHeight;
             if (scrollY < heroH) {
-              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+              parallaxEl.style.setProperty('--parallax-y', scrollY * 0.18 + 'px');
             }
           }
           if (progressEl) {

@@ -13,7 +13,7 @@ const phaseIcons: Record<string, string> = {
 const promises = [
   {
     title: 'Una agenda de socios fuera del alcance de la competencia',
-    desc: 'BeyondCompass reúne quince años de relaciones verificadas con distribuidores en belleza, alimentación y bebidas, moda, wellness y mascotas. Cada contacto está cualificado a mano, visto en persona y al día. Nada que ver con listas raspadas de Alibaba.',
+    desc: 'Compass reúne quince años de relaciones verificadas con distribuidores en belleza, alimentación y bebidas, moda, wellness y mascotas. Cada contacto está cualificado a mano, visto en persona y al día. Nada que ver con listas raspadas de Alibaba.',
   },
   {
     title: 'Cero comisión de los distribuidores. Nunca.',
@@ -32,7 +32,8 @@ const phases = [
     duration: '1 a 2 semanas',
     title: 'Brief y encuadre',
     image: '/Images/enter-china/dist-phase-1-scoping.png',
-    imageAlt: 'Un fundador de marca extranjera y un consultor chino de distribución revisan un brief de categoría en una sala de reuniones en Shanghái',
+    imageAlt:
+      'Un fundador de marca extranjera y un consultor chino de distribución revisan un brief de categoría en una sala de reuniones en Shanghái',
     intro:
       'Primera sesión conjunta para cerrar categoría, posicionamiento, volúmenes, márgenes y el perfil de socio que encaja. El brief que sale de esta reunión marca todo lo que viene detrás.',
     outcome: 'Un brief de categoría firmado por ambas partes, con un perfil de socio nítido.',
@@ -52,14 +53,15 @@ const phases = [
     icon: 'diagnosis',
     phase: 'Fase dos',
     duration: '2 a 3 semanas',
-    title: 'Longlist desde BeyondCompass',
+    title: 'Longlist desde Compass',
     image: '/Images/enter-china/dist-phase-2-longlist.png',
-    imageAlt: 'Un consultor sénior revisa entre ocho y doce perfiles de distribuidores sobre su mesa y su portátil en Shanghái',
+    imageAlt:
+      'Un consultor sénior revisa entre ocho y doce perfiles de distribuidores sobre su mesa y su portátil en Shanghái',
     intro:
-      'Sacamos de BeyondCompass, nuestra agenda de socios, una longlist de 8 a 12 candidatos. Distribuidores con los que tratamos en persona, vistos en los últimos doce meses, con credenciales de retail o de plataforma vigentes.',
+      'Sacamos de Compass, nuestra agenda de socios, una longlist de 8 a 12 candidatos. Distribuidores con los que tratamos en persona, vistos en los últimos doce meses, con credenciales de retail o de plataforma vigentes.',
     outcome: 'Una longlist de 8 a 12 nombres cualificados, cada uno con una ficha de una página.',
     does: [
-      'Selección de candidatos desde BeyondCompass por categoría y canal',
+      'Selección de candidatos desde Compass por categoría y canal',
       'Verificación de credenciales de retail o plataforma en vigor',
       'Confirmación de encaje de categoría, escala y apetito de SKU',
       'Actualización del expediente si algún socio pasó a silencio en el último trimestre',
@@ -76,10 +78,12 @@ const phases = [
     duration: '3 a 4 semanas',
     title: 'Shortlist, entrevistas y due diligence',
     image: '/Images/enter-china/dist-phase-3-shortlist.png',
-    imageAlt: 'Una videollamada entre un equipo de marca extranjera y un distribuidor chino candidato, con impresiones de la shortlist sobre la mesa',
+    imageAlt:
+      'Una videollamada entre un equipo de marca extranjera y un distribuidor chino candidato, con impresiones de la shortlist sobre la mesa',
     intro:
       'Reducimos a tres o cinco finalistas, llevamos las llamadas a su lado, traducimos cuando toca y pasamos a cada candidato por verificación financiera, de licencias y de referencias.',
-    outcome: 'Tres a cinco finalistas con un expediente de due diligence completo, listos para negociar.',
+    outcome:
+      'Tres a cinco finalistas con un expediente de due diligence completo, listos para negociar.',
     does: [
       'Entrevistas de shortlist (nos sentamos de su lado y traducimos en directo)',
       'Verificación financiera y de licencias',
@@ -99,10 +103,12 @@ const phases = [
     duration: 'Variable',
     title: 'Negociación y firma',
     image: '/Images/enter-china/dist-phase-4-negotiation.png',
-    imageAlt: 'Una negociación contractual entre dos partes sobre una mesa pulida en un despacho de abogados de Shanghái',
+    imageAlt:
+      'Una negociación contractual entre dos partes sobre una mesa pulida en un despacho de abogados de Shanghái',
     intro:
       'Territorio, exclusividad, precios, MOQ, condiciones de pago, contribución de marketing, protección de marca, resolución. Nos sentamos a la mesa con usted, en mandarín y en inglés, hasta que el contrato cuadra para las dos partes.',
-    outcome: 'Un contrato de distribución firmado, defendible ante un juez. Y un plan de traspaso limpio.',
+    outcome:
+      'Un contrato de distribución firmado, defendible ante un juez. Y un plan de traspaso limpio.',
     does: [
       'Redacción del term sheet y negociación bilingüe',
       'Cláusulas de exclusividad, territorio y reparto por canal',
@@ -132,7 +138,8 @@ const models = [
     tag: 'Misión cerrada por proyecto',
     tagline: 'Encontramos al socio. Devolvemos las llaves.',
     image: '/Images/enter-china/dist-route-agent.png',
-    imageAlt: 'Un comercial chino repasa informes de distribuidor con un operador de marca extranjera en una oficina de Shanghái',
+    imageAlt:
+      'Un comercial chino repasa informes de distribuidor con un operador de marca extranjera en una oficina de Shanghái',
     desc: 'Nos hacemos cargo de todo el sourcing, del brief al contrato firmado. Cuando el distribuidor está dentro, devolvemos las llaves y nos retiramos. La relación queda en sus manos.',
     when: 'Encaja cuando ya tiene un referente en China en plantilla, quiere contener el presupuesto de pilotaje o necesita al socio que toca sin un compromiso largo.',
     split: { you: 80, them: 20, themLabel: 'TheChinaPath' },
@@ -142,9 +149,20 @@ const models = [
       { label: 'Presencia local después', value: 'Baja', level: 1 },
       { label: 'Control de marca', value: 'Total', level: 5 },
     ],
-    youGet: ['Contrato de distribución firmado', 'Shortlist de finalistas verificados', 'Apoyo de negociación bilingüe', 'Plan de traspaso con KPI'],
-    they: ['Brief y encuadre', 'Longlist desde BeyondCompass', 'Due diligence y verificación de referencias', 'Negociación y redacción del contrato'],
-    pricing: 'Tarifa cerrada de proyecto. Presupuesto fijado en la primera llamada, una vez claro el brief. Cero comisión de los distribuidores.',
+    youGet: [
+      'Contrato de distribución firmado',
+      'Shortlist de finalistas verificados',
+      'Apoyo de negociación bilingüe',
+      'Plan de traspaso con KPI',
+    ],
+    they: [
+      'Brief y encuadre',
+      'Longlist desde Compass',
+      'Due diligence y verificación de referencias',
+      'Negociación y redacción del contrato',
+    ],
+    pricing:
+      'Tarifa cerrada de proyecto. Presupuesto fijado en la primera llamada, una vez claro el brief. Cero comisión de los distribuidores.',
     highlight: false,
     ctaText: 'Hablar de un sourcing por proyecto',
   },
@@ -153,7 +171,8 @@ const models = [
     tag: 'Alianza de largo recorrido',
     tagline: 'Encontramos al socio. Sostenemos la marca.',
     image: '/Images/enter-china/dist-route-agency.png',
-    imageAlt: 'Un equipo chino de marketing opera Tmall y Douyin para una marca extranjera en una oficina de Shanghái',
+    imageAlt:
+      'Un equipo chino de marketing opera Tmall y Douyin para una marca extranjera en una oficina de Shanghái',
     desc: 'Encontramos al distribuidor y nos quedamos como su equipo local. Guardián de marca, operador de marketing, revisiones mensuales de negocio. El contrato abre la relación, no la cierra.',
     when: 'Encaja cuando no tiene equipo en Asia, la P&L de China es estratégica o el último contrato con distribuidor se le torció y necesita a alguien sobre el terreno protegiendo la marca.',
     split: { you: 30, them: 70, themLabel: 'TheChinaPath' },
@@ -163,9 +182,20 @@ const models = [
       { label: 'Presencia local después', value: 'Alta', level: 5 },
       { label: 'Control de marca', value: 'Compartido', level: 3 },
     ],
-    youGet: ['Todo lo de la misión por proyecto', 'Revisiones mensuales de negocio', 'Defensa de precios y de PI como guardián de marca', 'Marketing, KOL y campañas de plataforma'],
-    they: ['Sourcing de la fase uno a la cuatro', 'Retainer continuo como guardián de marca', 'Marketing en Tmall, JD, Douyin, RED y WeChat', 'Planificación de campañas 11.11 y 6.18'],
-    pricing: 'Tarifa cerrada de sourcing más retainer mensual. El retainer crece según el alcance, normalmente entre 40 000 y 150 000 RMB.',
+    youGet: [
+      'Todo lo de la misión por proyecto',
+      'Revisiones mensuales de negocio',
+      'Defensa de precios y de PI como guardián de marca',
+      'Marketing, KOL y campañas de plataforma',
+    ],
+    they: [
+      'Sourcing de la fase uno a la cuatro',
+      'Retainer continuo como guardián de marca',
+      'Marketing en Tmall, JD, Douyin, RED y WeChat',
+      'Planificación de campañas 11.11 y 6.18',
+    ],
+    pricing:
+      'Tarifa cerrada de sourcing más retainer mensual. El retainer crece según el alcance, normalmente entre 40 000 y 150 000 RMB.',
     highlight: true,
     ctaText: 'Hablar de una alianza continuada',
   },
@@ -175,7 +205,7 @@ const faqs = [
   {
     cat: 'Sourcing',
     q: '¿Cómo encuentran distribuidores que la competencia no tiene?',
-    a: 'BeyondCompass, nuestra agenda de socios. Quince años de reuniones cara a cara desde nuestras oficinas en China, Hong Kong y París, y a través de nuestros representantes en todas las grandes categorías de consumo en las que operamos. La mayoría de las firmas de sourcing entregan un export raspado de 1688 y lo presentan como lista escogida. Nosotros entregamos una shortlist de socios a los que conocemos por su nombre, vistos el último trimestre, y por los que pondríamos la mano en el fuego. Ahí está toda la diferencia.',
+    a: 'Compass, nuestra agenda de socios. Quince años de reuniones cara a cara desde nuestras oficinas en China, Hong Kong y París, y a través de nuestros representantes en todas las grandes categorías de consumo en las que operamos. La mayoría de las firmas de sourcing entregan un export raspado de 1688 y lo presentan como lista escogida. Nosotros entregamos una shortlist de socios a los que conocemos por su nombre, vistos el último trimestre, y por los que pondríamos la mano en el fuego. Ahí está toda la diferencia.',
   },
   {
     cat: 'Sourcing',
@@ -190,7 +220,7 @@ const faqs = [
   {
     cat: 'Sourcing',
     q: '¿Y si mi categoría es de nicho?',
-    a: 'Es justo donde BeyondCompass enseña su valor. Las firmas genéricas solo conocen a los treinta primeros distribuidores en belleza y en alimentación. Para wellness de mascotas, menaje premium, complementos especializados o un B2B de nicho, el socio bueno puede ser el nombre número ochenta y tres de una lista, y el único dispuesto a decir que sí. Esos nombres los tenemos. No están en internet.',
+    a: 'Es justo donde Compass enseña su valor. Las firmas genéricas solo conocen a los treinta primeros distribuidores en belleza y en alimentación. Para wellness de mascotas, menaje premium, complementos especializados o un B2B de nicho, el socio bueno puede ser el nombre número ochenta y tres de una lista, y el único dispuesto a decir que sí. Esos nombres los tenemos. No están en internet.',
   },
   {
     cat: 'Sourcing',
@@ -240,7 +270,7 @@ const faqs = [
   {
     cat: 'Operaciones',
     q: '¿Qué pasa si el distribuidor rinde por debajo de lo esperado?',
-    a: 'Lo detectamos pronto, en las revisiones mensuales, si trabaja bajo Encontrar y quedarse. Si las cifras no se recuperan, lanzamos un sourcing de reemplazo. Las marcas que esperan demasiado con un socio débil pierden más que las que cambian. BeyondCompass mantiene candidatos de reemplazo al día, así que la segunda ronda suele avanzar más rápido que la primera.',
+    a: 'Lo detectamos pronto, en las revisiones mensuales, si trabaja bajo Encontrar y quedarse. Si las cifras no se recuperan, lanzamos un sourcing de reemplazo. Las marcas que esperan demasiado con un socio débil pierden más que las que cambian. Compass mantiene candidatos de reemplazo al día, así que la segunda ronda suele avanzar más rápido que la primera.',
   },
   {
     cat: 'Operaciones',
@@ -274,7 +304,15 @@ const faqs = [
   },
 ];
 
-const faqCategories = ['Todo', 'Sourcing', 'Canales', 'Negociación', 'Operaciones', 'Legal', 'Precios'];
+const faqCategories = [
+  'Todo',
+  'Sourcing',
+  'Canales',
+  'Negociación',
+  'Operaciones',
+  'Legal',
+  'Precios',
+];
 
 const contextCards = [
   {
@@ -294,15 +332,17 @@ const contextCards = [
 
 <Layout
   title="Distribución de producto en China | TheChinaPath"
-  description="Encuentre al distribuidor adecuado en China, online y offline. Fichero de socios BeyondCompass, negociación bilingüe, retainer de guardián de marca. Más de quince años sobre el terreno."
+  description="Encuentre al distribuidor adecuado en China, online y offline. Fichero de socios Compass, negociación bilingüe, retainer de guardián de marca. Más de quince años sobre el terreno."
 >
   <div class="dis-progress" aria-hidden="true"><div class="dis-progress__bar"></div></div>
   <article class="dis">
-
     {/* ---------- HERO (dark, parallax) ---------- */}
     <section class="dis-hero" data-hero>
       <div class="dis-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/enter-china/dist-hero-warehouse.webp" alt="Interior de un almacén moderno de distribución en China al anochecer, con cajas de marca sobre cintas transportadoras y estanterías" />
+        <img
+          src="/Images/enter-china/dist-hero-warehouse.webp"
+          alt="Interior de un almacén moderno de distribución en China al anochecer, con cajas de marca sobre cintas transportadoras y estanterías"
+        />
       </div>
       <div class="dis-hero__overlay" aria-hidden="true"></div>
       <div class="dis-hero__grain" aria-hidden="true"></div>
@@ -318,13 +358,15 @@ const contextCards = [
           <span class="dis-hero__title-row">El distribuidor adecuado,</span>
           <span class="dis-hero__title-row dis-hero__title-row--accent">online y offline.</span>
           <span class="dis-hero__title-row">Y el equipo que</span>
-          <span class="dis-hero__title-row dis-hero__title-row--highlight">le mantiene en orden.</span>
+          <span class="dis-hero__title-row dis-hero__title-row--highlight"
+            >le mantiene en orden.</span
+          >
         </h1>
         <p class="dis-hero__lead dis-reveal" style="--reveal-delay: 200ms;">
-          Sacamos sus distribuidores de BeyondCompass, nuestro fichero de socios construido
-          en quince años. Negociamos en dos idiomas. Y nos quedamos como guardián de marca
-          cuando se firma el contrato. La mayoría de los despachos domina una de estas tres
-          piezas. Nosotros, las tres.
+          Sacamos sus distribuidores de Compass, nuestro fichero de socios construido en
+          quince años. Negociamos en dos idiomas. Y nos quedamos como guardián de marca cuando se
+          firma el contrato. La mayoría de los despachos domina una de estas tres piezas. Nosotros,
+          las tres.
         </p>
         <div class="dis-hero__actions dis-reveal" style="--reveal-delay: 280ms;">
           <a href="/es/contacto" class="btn btn--primary dis-magnetic">Hablemos</a>
@@ -338,7 +380,9 @@ const contextCards = [
           </div>
           <div class="dis-hero__meta-item">
             <span class="dis-hero__meta-num">Todas</span>
-            <span class="dis-hero__meta-label">las grandes categorías de consumo, online y offline</span>
+            <span class="dis-hero__meta-label"
+              >las grandes categorías de consumo, online y offline</span
+            >
           </div>
           <div class="dis-hero__meta-item">
             <span class="dis-hero__meta-num">Cero</span>
@@ -360,23 +404,29 @@ const contextCards = [
           <span class="eyebrow">Dos verdades primero</span>
           <h2>Dos cosas que conviene saber antes de firmar</h2>
           <p class="section-header__lead">
-            La mayoría de las marcas extranjeras se cruza con los mismos doce distribuidores
-            en cada feria. La mayoría de los contratos firmados se apaga en dos trimestres.
-            Esto es lo que más mueve el resultado, según nuestra experiencia.</p>
+            La mayoría de las marcas extranjeras se cruza con los mismos doce distribuidores en cada
+            feria. La mayoría de los contratos firmados se apaga en dos trimestres. Esto es lo que
+            más mueve el resultado, según nuestra experiencia.
+          </p>
         </header>
 
         <div class="dis-context">
-          {contextCards.map((c, i) => (
-            <article class={`dis-context__card${i === 1 ? ' dis-context__card--alt' : ''} dis-reveal`} style={`--reveal-delay: ${i * 120}ms;`}>
-              <figure class="dis-context__media">
-                <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
-              </figure>
-              <div class="dis-context__body">
-                <h3>{c.title}</h3>
-                <p>{c.body}</p>
-              </div>
-            </article>
-          ))}
+          {
+            contextCards.map((c, i) => (
+              <article
+                class={`dis-context__card${i === 1 ? ' dis-context__card--alt' : ''} dis-reveal`}
+                style={`--reveal-delay: ${i * 120}ms;`}
+              >
+                <figure class="dis-context__media">
+                  <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
+                </figure>
+                <div class="dis-context__body">
+                  <h3>{c.title}</h3>
+                  <p>{c.body}</p>
+                </div>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -386,14 +436,13 @@ const contextCards = [
       <div class="container">
         <header class="section-header section-header--center dis-reveal">
           <span class="eyebrow">Lo que nos diferencia</span>
-          <h2>Cada shortlist sale de BeyondCompass</h2>
+          <h2>Cada shortlist sale de Compass</h2>
           <p class="section-header__lead">
-            La mayor parte del sourcing de distribuidores en China consiste en una lista
-            raspada de 1688 o Alibaba con un margen encima. La nuestra no. BeyondCompass es
-            la base de relaciones que hemos construido durante quince años en nuestras
-            oficinas y a través de nuestros representantes. Distribuidores, terceros de
-            Tmall, socios de Douyin, importadores. Verificados a mano, vistos en persona,
-            mantenidos al día.
+            La mayor parte del sourcing de distribuidores en China consiste en una lista raspada de
+            1688 o Alibaba con un margen encima. La nuestra no. Compass es la base de
+            relaciones que hemos construido durante quince años en nuestras oficinas y a través de
+            nuestros representantes. Distribuidores, terceros de Tmall, socios de Douyin,
+            importadores. Verificados a mano, vistos en persona, mantenidos al día.
           </p>
         </header>
 
@@ -404,8 +453,8 @@ const contextCards = [
               <div class="dis-compass__head">
                 <div class="dis-compass__logo">
                   <img
-                    src="/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp"
-                    alt="Logo de BeyondCompass"
+                    src="/Images/AgencyLogos/Compass%20-%20Horizontal.svg"
+                    alt="Logo de Compass"
                     loading="lazy"
                     decoding="async"
                   />
@@ -414,17 +463,18 @@ const contextCards = [
               </div>
 
               <p class="dis-compass__pitch">
-                Ahorre tres meses de malas presentaciones. Empiece desde una lista de socios que ya conocemos.
+                Ahorre tres meses de malas presentaciones. Empiece desde una lista de socios que ya
+                conocemos.
               </p>
 
               <p class="dis-compass__body">
                 Las firmas de sourcing genéricas raspan 1688 y Alibaba, le ponen un margen al
-                fichero y lo llaman shortlist curada. Mil nombres antes de comer, casi ninguno
-                bueno para su categoría. Nosotros no trabajamos así. BeyondCompass son quince
-                años de reuniones presenciales, refrescados cada trimestre, organizados por
-                cada gran categoría de consumo en la que operamos. Cuando aplicamos los cuatro
-                filtros a la shortlist, los aplicamos sobre socios a los que nuestro equipo ya
-                conoce por su nombre.
+                fichero y lo llaman shortlist curada. Mil nombres antes de comer, casi ninguno bueno
+                para su categoría. Nosotros no trabajamos así. Compass son quince años de
+                reuniones presenciales, refrescados cada trimestre, organizados por cada gran
+                categoría de consumo en la que operamos. Cuando aplicamos los cuatro filtros a la
+                shortlist, los aplicamos sobre socios a los que nuestro equipo ya conoce por su
+                nombre.
               </p>
 
               <ul class="dis-compass__stats">
@@ -434,22 +484,25 @@ const contextCards = [
                 </li>
                 <li>
                   <span class="dis-compass__stat-num">Todas</span>
-                  <span class="dis-compass__stat-label">las grandes categorías de consumo en las que operamos</span>
+                  <span class="dis-compass__stat-label"
+                    >las grandes categorías de consumo en las que operamos</span
+                  >
                 </li>
                 <li>
                   <span class="dis-compass__stat-num">Cero</span>
-                  <span class="dis-compass__stat-label">comisión de los distribuidores. Nunca.</span>
+                  <span class="dis-compass__stat-label">comisión de los distribuidores. Nunca.</span
+                  >
                 </li>
               </ul>
 
               <div class="dis-compass__actions">
                 <a
-                  href="https://beyondcompass.beyondbordergroup.com/en"
+                  href="https://compass.bearingbridge.com/es"
                   class="btn dis-compass__btn-primary"
                   target="_blank"
                   rel="noopener"
                 >
-                  Explorar BeyondCompass
+                  Explorar Compass
                   <span aria-hidden="true" class="dis-compass__btn-arrow">&#8599;</span>
                 </a>
                 <a href="/es/contacto" class="btn dis-compass__btn-ghost">
@@ -459,115 +512,299 @@ const contextCards = [
             </div>
 
             <div class="dis-compass__art" aria-hidden="true">
-              <svg viewBox="0 0 440 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pila de fichas de socios verificados con sellos de check y un sello del 100% verificado">
+              <svg
+                viewBox="0 0 440 480"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Pila de fichas de socios verificados con sellos de check y un sello del 100% verificado"
+              >
                 <defs>
                   <pattern id="cmp-grid" width="22" height="22" patternUnits="userSpaceOnUse">
-                    <circle cx="1" cy="1" r="1" fill="#C8102E" fill-opacity="0.10"/>
+                    <circle cx="1" cy="1" r="1" fill="#C8102E" fill-opacity="0.10"></circle>
                   </pattern>
                   <linearGradient id="cmp-card-soft" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#13283b"/>
-                    <stop offset="100%" stop-color="#0c1c2b"/>
+                    <stop offset="0%" stop-color="#13283b"></stop>
+                    <stop offset="100%" stop-color="#0c1c2b"></stop>
                   </linearGradient>
                   <linearGradient id="cmp-card-active" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#C8102E"/>
-                    <stop offset="100%" stop-color="#A50C26"/>
+                    <stop offset="0%" stop-color="#C8102E"></stop>
+                    <stop offset="100%" stop-color="#A50C26"></stop>
                   </linearGradient>
                   <linearGradient id="cmp-fade" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#0e2030" stop-opacity="0"/>
-                    <stop offset="100%" stop-color="#0e2030" stop-opacity="0.85"/>
+                    <stop offset="0%" stop-color="#0e2030" stop-opacity="0"></stop>
+                    <stop offset="100%" stop-color="#0e2030" stop-opacity="0.85"></stop>
                   </linearGradient>
                   <filter id="cmp-glow" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur stdDeviation="6"/>
-                    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                    <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                    <feMerge
+                      ><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"
+                      ></feMergeNode></feMerge
+                    >
                   </filter>
                 </defs>
 
                 {/* Grid background */}
-                <rect width="440" height="480" fill="url(#cmp-grid)"/>
+                <rect width="440" height="480" fill="url(#cmp-grid)"></rect>
 
                 {/* Scraped pile (faded reject stack at the bottom) */}
                 <g class="cmp-scraped" opacity="0.35">
-                  <rect x="40" y="380" width="280" height="14" rx="4" fill="#3a4a5c"/>
-                  <rect x="60" y="402" width="240" height="12" rx="4" fill="#33424f"/>
-                  <rect x="48" y="422" width="270" height="11" rx="4" fill="#2b3946"/>
-                  <rect x="70" y="441" width="200" height="10" rx="4" fill="#243140"/>
-                  <line x1="40" y1="368" x2="370" y2="368" stroke="#E84A60" stroke-opacity="0.25" stroke-dasharray="2 4" stroke-width="1"/>
-                  <text x="40" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.12em" font-weight="700" fill="#E84A60" fill-opacity="0.55">RASPADO, NO GUARDADO</text>
+                  <rect x="40" y="380" width="280" height="14" rx="4" fill="#3a4a5c"></rect>
+                  <rect x="60" y="402" width="240" height="12" rx="4" fill="#33424f"></rect>
+                  <rect x="48" y="422" width="270" height="11" rx="4" fill="#2b3946"></rect>
+                  <rect x="70" y="441" width="200" height="10" rx="4" fill="#243140"></rect>
+                  <line
+                    x1="40"
+                    y1="368"
+                    x2="370"
+                    y2="368"
+                    stroke="#E84A60"
+                    stroke-opacity="0.25"
+                    stroke-dasharray="2 4"
+                    stroke-width="1"></line>
+                  <text
+                    x="40"
+                    y="362"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="10"
+                    letter-spacing="0.12em"
+                    font-weight="700"
+                    fill="#E84A60"
+                    fill-opacity="0.55">RASPADO, NO GUARDADO</text
+                  >
                 </g>
-                <rect x="0" y="340" width="440" height="140" fill="url(#cmp-fade)" pointer-events="none"/>
+                <rect
+                  x="0"
+                  y="340"
+                  width="440"
+                  height="140"
+                  fill="url(#cmp-fade)"
+                  pointer-events="none"></rect>
 
                 {/* Database label */}
-                <text x="40" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.18em" font-weight="700" fill="#C8102E">FICHERO BEYONDCOMPASS</text>
-                <line x1="40" y1="58" x2="200" y2="58" stroke="#C8102E" stroke-opacity="0.4" stroke-width="1"/>
+                <text
+                  x="40"
+                  y="48"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                  font-size="10"
+                  letter-spacing="0.18em"
+                  font-weight="700"
+                  fill="#C8102E">FICHERO BEYONDCOMPASS</text
+                >
+                <line
+                  x1="40"
+                  y1="58"
+                  x2="200"
+                  y2="58"
+                  stroke="#C8102E"
+                  stroke-opacity="0.4"
+                  stroke-width="1"></line>
 
                 {/* Card 4 (back) */}
                 <g class="cmp-card cmp-card--4" transform="translate(50 78)">
-                  <rect width="320" height="56" rx="10" fill="url(#cmp-card-soft)" stroke="#E84A60" stroke-opacity="0.18"/>
-                  <circle cx="30" cy="28" r="12" fill="#E84A60" fill-opacity="0.35"/>
-                  <text x="30" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#fff" fill-opacity="0.55" text-anchor="middle">M</text>
-                  <rect x="54" y="16" width="160" height="9" rx="2" fill="#fff" fill-opacity="0.45"/>
-                  <rect x="54" y="32" width="100" height="7" rx="2" fill="#fff" fill-opacity="0.22"/>
+                  <rect
+                    width="320"
+                    height="56"
+                    rx="10"
+                    fill="url(#cmp-card-soft)"
+                    stroke="#E84A60"
+                    stroke-opacity="0.18"></rect>
+                  <circle cx="30" cy="28" r="12" fill="#E84A60" fill-opacity="0.35"></circle>
+                  <text
+                    x="30"
+                    y="32"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="11"
+                    font-weight="700"
+                    fill="#fff"
+                    fill-opacity="0.55"
+                    text-anchor="middle">M</text
+                  >
+                  <rect x="54" y="16" width="160" height="9" rx="2" fill="#fff" fill-opacity="0.45"
+                  ></rect>
+                  <rect x="54" y="32" width="100" height="7" rx="2" fill="#fff" fill-opacity="0.22"
+                  ></rect>
                   <g class="cmp-check">
-                    <circle cx="290" cy="28" r="11" fill="#C8102E"/>
-                    <path d="M284 28 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="290" cy="28" r="11" fill="#C8102E"></circle>
+                    <path
+                      d="M284 28 l4 4 l8 -8"
+                      stroke="#fff"
+                      stroke-width="2.2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
                   </g>
                 </g>
 
                 {/* Card 3 */}
                 <g class="cmp-card cmp-card--3" transform="translate(35 142)">
-                  <rect width="340" height="58" rx="10" fill="url(#cmp-card-soft)" stroke="#E84A60" stroke-opacity="0.22"/>
-                  <circle cx="32" cy="29" r="13" fill="#E84A60" fill-opacity="0.45"/>
-                  <text x="32" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#fff" fill-opacity="0.7" text-anchor="middle">J</text>
-                  <rect x="58" y="16" width="180" height="9" rx="2" fill="#fff" fill-opacity="0.6"/>
-                  <rect x="58" y="33" width="120" height="7" rx="2" fill="#fff" fill-opacity="0.3"/>
+                  <rect
+                    width="340"
+                    height="58"
+                    rx="10"
+                    fill="url(#cmp-card-soft)"
+                    stroke="#E84A60"
+                    stroke-opacity="0.22"></rect>
+                  <circle cx="32" cy="29" r="13" fill="#E84A60" fill-opacity="0.45"></circle>
+                  <text
+                    x="32"
+                    y="33"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="12"
+                    font-weight="700"
+                    fill="#fff"
+                    fill-opacity="0.7"
+                    text-anchor="middle">J</text
+                  >
+                  <rect x="58" y="16" width="180" height="9" rx="2" fill="#fff" fill-opacity="0.6"
+                  ></rect>
+                  <rect x="58" y="33" width="120" height="7" rx="2" fill="#fff" fill-opacity="0.3"
+                  ></rect>
                   <g class="cmp-check">
-                    <circle cx="310" cy="29" r="12" fill="#C8102E"/>
-                    <path d="M304 29 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="310" cy="29" r="12" fill="#C8102E"></circle>
+                    <path
+                      d="M304 29 l4 4 l8 -8"
+                      stroke="#fff"
+                      stroke-width="2.2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
                   </g>
                 </g>
 
                 {/* Card 2 */}
                 <g class="cmp-card cmp-card--2" transform="translate(50 210)">
-                  <rect width="320" height="58" rx="10" fill="url(#cmp-card-soft)" stroke="#E84A60" stroke-opacity="0.3"/>
-                  <circle cx="32" cy="29" r="13" fill="#E84A60" fill-opacity="0.6"/>
-                  <text x="32" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#fff" fill-opacity="0.85" text-anchor="middle">Z</text>
-                  <rect x="58" y="16" width="170" height="9" rx="2" fill="#fff" fill-opacity="0.75"/>
-                  <rect x="58" y="33" width="110" height="7" rx="2" fill="#fff" fill-opacity="0.38"/>
+                  <rect
+                    width="320"
+                    height="58"
+                    rx="10"
+                    fill="url(#cmp-card-soft)"
+                    stroke="#E84A60"
+                    stroke-opacity="0.3"></rect>
+                  <circle cx="32" cy="29" r="13" fill="#E84A60" fill-opacity="0.6"></circle>
+                  <text
+                    x="32"
+                    y="33"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="12"
+                    font-weight="700"
+                    fill="#fff"
+                    fill-opacity="0.85"
+                    text-anchor="middle">Z</text
+                  >
+                  <rect x="58" y="16" width="170" height="9" rx="2" fill="#fff" fill-opacity="0.75"
+                  ></rect>
+                  <rect x="58" y="33" width="110" height="7" rx="2" fill="#fff" fill-opacity="0.38"
+                  ></rect>
                   <g class="cmp-check">
-                    <circle cx="290" cy="29" r="12" fill="#C8102E"/>
-                    <path d="M284 29 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="290" cy="29" r="12" fill="#C8102E"></circle>
+                    <path
+                      d="M284 29 l4 4 l8 -8"
+                      stroke="#fff"
+                      stroke-width="2.2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
                   </g>
                 </g>
 
                 {/* Card 1 (front, highlighted) */}
-                <g class="cmp-card cmp-card--1" transform="translate(28 278)" filter="url(#cmp-glow)">
-                  <rect width="360" height="68" rx="12" fill="url(#cmp-card-active)"/>
-                  <circle cx="36" cy="34" r="16" fill="#fff" fill-opacity="0.95"/>
-                  <text x="36" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#A50C26" text-anchor="middle">å¤©</text>
-                  <rect x="64" y="19" width="200" height="11" rx="2" fill="#fff" fill-opacity="0.96"/>
-                  <rect x="64" y="38" width="140" height="9" rx="2" fill="#fff" fill-opacity="0.65"/>
+                <g
+                  class="cmp-card cmp-card--1"
+                  transform="translate(28 278)"
+                  filter="url(#cmp-glow)"
+                >
+                  <rect width="360" height="68" rx="12" fill="url(#cmp-card-active)"></rect>
+                  <circle cx="36" cy="34" r="16" fill="#fff" fill-opacity="0.95"></circle>
+                  <text
+                    x="36"
+                    y="39"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="14"
+                    font-weight="700"
+                    fill="#A50C26"
+                    text-anchor="middle">å¤©</text
+                  >
+                  <rect x="64" y="19" width="200" height="11" rx="2" fill="#fff" fill-opacity="0.96"
+                  ></rect>
+                  <rect x="64" y="38" width="140" height="9" rx="2" fill="#fff" fill-opacity="0.65"
+                  ></rect>
                   <g class="cmp-check cmp-check--big">
-                    <circle cx="328" cy="34" r="15" fill="#fff"/>
-                    <path d="M320 34 l5 5 l11 -10" stroke="#C8102E" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="328" cy="34" r="15" fill="#fff"></circle>
+                    <path
+                      d="M320 34 l5 5 l11 -10"
+                      stroke="#C8102E"
+                      stroke-width="3"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
                   </g>
                   {/* "live / kept current" pulse dot */}
-                  <circle class="cmp-live" cx="349" cy="13" r="4" fill="#E84A60"/>
+                  <circle class="cmp-live" cx="349" cy="13" r="4" fill="#E84A60"></circle>
                 </g>
 
                 {/* 100% VETTED seal, outside the cards, top-right */}
                 <g class="cmp-seal" transform="translate(322 24)">
-                  <circle cx="46" cy="46" r="46" fill="none" stroke="#E84A60" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="3 5"/>
-                  <circle cx="46" cy="46" r="36" fill="#0a1a28" stroke="#E84A60" stroke-opacity="0.6" stroke-width="1.5"/>
-                  <text x="46" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0.04em">100%</text>
-                  <line x1="22" y1="46" x2="70" y2="46" stroke="#E84A60" stroke-opacity="0.5" stroke-width="1"/>
-                  <text x="46" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#C8102E" text-anchor="middle" letter-spacing="0.22em">VERIFICADO</text>
+                  <circle
+                    cx="46"
+                    cy="46"
+                    r="46"
+                    fill="none"
+                    stroke="#E84A60"
+                    stroke-opacity="0.5"
+                    stroke-width="1"
+                    stroke-dasharray="3 5"></circle>
+                  <circle
+                    cx="46"
+                    cy="46"
+                    r="36"
+                    fill="#0a1a28"
+                    stroke="#E84A60"
+                    stroke-opacity="0.6"
+                    stroke-width="1.5"></circle>
+                  <text
+                    x="46"
+                    y="40"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="14"
+                    font-weight="800"
+                    fill="#fff"
+                    text-anchor="middle"
+                    letter-spacing="0.04em">100%</text
+                  >
+                  <line
+                    x1="22"
+                    y1="46"
+                    x2="70"
+                    y2="46"
+                    stroke="#E84A60"
+                    stroke-opacity="0.5"
+                    stroke-width="1"></line>
+                  <text
+                    x="46"
+                    y="60"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="9"
+                    font-weight="700"
+                    fill="#C8102E"
+                    text-anchor="middle"
+                    letter-spacing="0.22em">VERIFICADO</text
+                  >
                 </g>
               </svg>
 
               <ul class="dis-compass__art-key">
-                <li><span class="dis-compass__art-dot dis-compass__art-dot--vetted"></span>Verificado a mano, visto en persona</li>
-                <li><span class="dis-compass__art-dot dis-compass__art-dot--live"></span>Relaciones mantenidas al día</li>
-                <li><span class="dis-compass__art-dot dis-compass__art-dot--reject"></span>Listas raspadas, fuera de nuestro fichero</li>
+                <li>
+                  <span class="dis-compass__art-dot dis-compass__art-dot--vetted"></span>Verificado
+                  a mano, visto en persona
+                </li>
+                <li>
+                  <span class="dis-compass__art-dot dis-compass__art-dot--live"></span>Relaciones
+                  mantenidas al día
+                </li>
+                <li>
+                  <span class="dis-compass__art-dot dis-compass__art-dot--reject"></span>Listas
+                  raspadas, fuera de nuestro fichero
+                </li>
               </ul>
             </div>
           </div>
@@ -576,18 +813,32 @@ const contextCards = [
         <div class="dis-compass-tiers">
           <article class="dis-compass-tier dis-reveal">
             <span class="dis-compass-tier__label">Shortlist</span>
-            <p class="dis-compass-tier__lead">Tres a cinco nombres verificados, ajustados a su categoría y a su momento. Entregada en dos o tres semanas.</p>
-            <span class="dis-compass-tier__when">Cuando ya tiene el brief y necesita las presentaciones, rápido.</span>
+            <p class="dis-compass-tier__lead">
+              Tres a cinco nombres verificados, ajustados a su categoría y a su momento. Entregada
+              en dos o tres semanas.
+            </p>
+            <span class="dis-compass-tier__when"
+              >Cuando ya tiene el brief y necesita las presentaciones, rápido.</span
+            >
           </article>
           <article class="dis-compass-tier dis-reveal" style="--reveal-delay: 80ms;">
             <span class="dis-compass-tier__label">Mapa de mercado</span>
-            <p class="dis-compass-tier__lead">De quince a veinte opciones comparables en todo el panorama. Entregado en tres a seis semanas.</p>
-            <span class="dis-compass-tier__when">Cuando quiere la foto completa antes de comprometerse.</span>
+            <p class="dis-compass-tier__lead">
+              De quince a veinte opciones comparables en todo el panorama. Entregado en tres a seis
+              semanas.
+            </p>
+            <span class="dis-compass-tier__when"
+              >Cuando quiere la foto completa antes de comprometerse.</span
+            >
           </article>
           <article class="dis-compass-tier dis-reveal" style="--reveal-delay: 160ms;">
             <span class="dis-compass-tier__label">Reemplazo</span>
-            <p class="dis-compass-tier__lead">Desligar a un socio que rinde por debajo. Encontrar al siguiente. Pilotar el traspaso.</p>
-            <span class="dis-compass-tier__when">Cuando la relación ha dejado de funcionar y necesita una salida limpia.</span>
+            <p class="dis-compass-tier__lead">
+              Desligar a un socio que rinde por debajo. Encontrar al siguiente. Pilotar el traspaso.
+            </p>
+            <span class="dis-compass-tier__when"
+              >Cuando la relación ha dejado de funcionar y necesita una salida limpia.</span
+            >
           </article>
         </div>
       </div>
@@ -604,123 +855,198 @@ const contextCards = [
           <h2>Encuentre al socio. Después decida cuánto nos necesita.</h2>
           <p class="section-header__lead">
             Las dos misiones siguen el mismo proceso de sourcing: brief, longlist desde
-            BeyondCompass, shortlist, due diligence, negociación. La diferencia está en lo
-            que ocurre después de la firma.
+            Compass, shortlist, due diligence, negociación. La diferencia está en lo que
+            ocurre después de la firma.
           </p>
         </header>
 
         <div class="dis-routes dis-reveal">
-          {models.map((m, i) => (
-            <article class={`dis-route${m.highlight ? ' dis-route--featured' : ''}`} style={`--reveal-delay: ${i * 100}ms;`}>
-              <div class="dis-route__media">
-                <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" />
-                <span class="dis-route__pill">{m.name}</span>
-              </div>
-
-              <div class="dis-route__body">
-                <header class="dis-route__head">
-                  <h3 class="dis-route__title">{m.tag}</h3>
-                  <p class="dis-route__tagline">{m.tagline}</p>
-                </header>
-
-                <p class="dis-route__desc">{m.desc}</p>
-
-                <div class="dis-route__split" aria-label={`Reparto de operación: usted ${m.split.you}%, ${m.split.themLabel.toLowerCase()} ${m.split.them}%`}>
-                  <div class="dis-route__split-labels">
-                    <span><strong>Usted</strong> {m.split.you}%</span>
-                    <span class="dis-route__split-label-end">{m.split.themLabel} <strong>{m.split.them}%</strong></span>
-                  </div>
-                  <div class="dis-route__split-bar">
-                    <span class="dis-route__split-bar-you" style={`--w: ${m.split.you}%;`}></span>
-                    <span class="dis-route__split-bar-them" style={`--w: ${m.split.them}%;`}></span>
-                  </div>
-                  <span class="dis-route__split-caption">Quién opera el día a día en China</span>
+          {
+            models.map((m, i) => (
+              <article
+                class={`dis-route${m.highlight ? ' dis-route--featured' : ''}`}
+                style={`--reveal-delay: ${i * 100}ms;`}
+              >
+                <div class="dis-route__media">
+                  <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" />
+                  <span class="dis-route__pill">{m.name}</span>
                 </div>
 
-                <ul class="dis-route__dims">
-                  {m.dims.map((d) => (
-                    <li class="dis-route__dim">
-                      <span class="dis-route__dim-label">{d.label}</span>
-                      <span class="dis-route__dim-dots" aria-label={`${d.value}, ${d.level} sobre 5`}>
-                        {[1, 2, 3, 4, 5].map((n) => (
-                          <span class={`dis-route__dim-dot${n <= d.level ? ' is-on' : ''}`}></span>
-                        ))}
+                <div class="dis-route__body">
+                  <header class="dis-route__head">
+                    <h3 class="dis-route__title">{m.tag}</h3>
+                    <p class="dis-route__tagline">{m.tagline}</p>
+                  </header>
+
+                  <p class="dis-route__desc">{m.desc}</p>
+
+                  <div
+                    class="dis-route__split"
+                    aria-label={`Reparto de operación: usted ${m.split.you}%, ${m.split.themLabel.toLowerCase()} ${m.split.them}%`}
+                  >
+                    <div class="dis-route__split-labels">
+                      <span>
+                        <strong>Usted</strong> {m.split.you}%
                       </span>
-                      <span class="dis-route__dim-value">{d.value}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div class="dis-route__lists">
-                  <div class="dis-route__list">
-                    <span class="dis-route__list-label">Usted recibe</span>
-                    <ul>
-                      {m.youGet.map((b) => (
-                        <li>
-                          <span class="dis-route__check" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                          </span>
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
+                      <span class="dis-route__split-label-end">
+                        {m.split.themLabel} <strong>{m.split.them}%</strong>
+                      </span>
+                    </div>
+                    <div class="dis-route__split-bar">
+                      <span class="dis-route__split-bar-you" style={`--w: ${m.split.you}%;`} />
+                      <span class="dis-route__split-bar-them" style={`--w: ${m.split.them}%;`} />
+                    </div>
+                    <span class="dis-route__split-caption">Quién opera el día a día en China</span>
                   </div>
-                  <div class="dis-route__list dis-route__list--muted">
-                    <span class="dis-route__list-label">Nosotros nos encargamos</span>
-                    <ul>
-                      {m.they.map((b) => (
-                        <li>
-                          <span class="dis-route__dash" aria-hidden="true"></span>
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
+
+                  <ul class="dis-route__dims">
+                    {m.dims.map((d) => (
+                      <li class="dis-route__dim">
+                        <span class="dis-route__dim-label">{d.label}</span>
+                        <span
+                          class="dis-route__dim-dots"
+                          aria-label={`${d.value}, ${d.level} sobre 5`}
+                        >
+                          {[1, 2, 3, 4, 5].map((n) => (
+                            <span class={`dis-route__dim-dot${n <= d.level ? ' is-on' : ''}`} />
+                          ))}
+                        </span>
+                        <span class="dis-route__dim-value">{d.value}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div class="dis-route__lists">
+                    <div class="dis-route__list">
+                      <span class="dis-route__list-label">Usted recibe</span>
+                      <ul>
+                        {m.youGet.map((b) => (
+                          <li>
+                            <span class="dis-route__check" aria-hidden="true">
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <polyline points="5 12 10 17 19 8" />
+                              </svg>
+                            </span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="dis-route__list dis-route__list--muted">
+                      <span class="dis-route__list-label">Nosotros nos encargamos</span>
+                      <ul>
+                        {m.they.map((b) => (
+                          <li>
+                            <span class="dis-route__dash" aria-hidden="true" />
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </div>
 
-                <div class="dis-route__when">
-                  <span class="dis-route__when-label">Encaja cuando</span>
-                  <p>{m.when}</p>
-                </div>
+                  <div class="dis-route__when">
+                    <span class="dis-route__when-label">Encaja cuando</span>
+                    <p>{m.when}</p>
+                  </div>
 
-                <a href="/es/contacto" class="btn btn--primary dis-route__cta">
-                  {m.ctaText}
-                  <span class="dis-route__cta-arrow" aria-hidden="true">&#8594;</span>
-                </a>
-              </div>
-            </article>
-          ))}
+                  <a href="/es/contacto" class="btn btn--primary dis-route__cta">
+                    {m.ctaText}
+                    <span class="dis-route__cta-arrow" aria-hidden="true">
+                      &#8594;
+                    </span>
+                  </a>
+                </div>
+              </article>
+            ))
+          }
         </div>
 
         <div class="dis-matrix dis-reveal" data-matrix>
           <div class="dis-matrix__intro">
             <span class="eyebrow">Cómo elegir</span>
             <h3>Dos preguntas, una respuesta</h3>
-            <p>¿Tiene ya un referente en China en plantilla o parte de cero? ¿Y quiere defender la marca cada mes o prefiere llevarla usted? Eso decide qué ruta encaja.</p>
+            <p>
+              ¿Tiene ya un referente en China en plantilla o parte de cero? ¿Y quiere defender la
+              marca cada mes o prefiere llevarla usted? Eso decide qué ruta encaja.
+            </p>
           </div>
-          <div class="dis-matrix__grid" role="table" aria-label="Matriz de selección de misión de distribución">
+          <div
+            class="dis-matrix__grid"
+            role="table"
+            aria-label="Matriz de selección de misión de distribución"
+          >
             <div class="dis-matrix__corner" role="presentation"></div>
             <div class="dis-matrix__head" role="columnheader" data-col="1">Sin equipo en China</div>
-            <div class="dis-matrix__head" role="columnheader" data-col="2">Referente en China ya en plantilla</div>
+            <div class="dis-matrix__head" role="columnheader" data-col="2">
+              Referente en China ya en plantilla
+            </div>
 
-            <div class="dis-matrix__row-head" role="rowheader" data-row="1">Quiere defensa activa de marca</div>
-            <button type="button" class="dis-matrix__cell" role="cell" data-row="1" data-col="1" data-tab-jump="model-tab-0">
+            <div class="dis-matrix__row-head" role="rowheader" data-row="1">
+              Quiere defensa activa de marca
+            </div>
+            <button
+              type="button"
+              class="dis-matrix__cell"
+              role="cell"
+              data-row="1"
+              data-col="1"
+              data-tab-jump="model-tab-0"
+            >
               <span class="dis-matrix__cell-label">Encontrar y quedarse</span>
-              <span class="dis-matrix__cell-sub">Encontramos, nos quedamos y asumimos la defensa de marca.</span>
+              <span class="dis-matrix__cell-sub"
+                >Encontramos, nos quedamos y asumimos la defensa de marca.</span
+              >
             </button>
-            <button type="button" class="dis-matrix__cell" role="cell" data-row="1" data-col="2" data-tab-jump="model-tab-0">
+            <button
+              type="button"
+              class="dis-matrix__cell"
+              role="cell"
+              data-row="1"
+              data-col="2"
+              data-tab-jump="model-tab-0"
+            >
               <span class="dis-matrix__cell-label">Encontrar y quedarse, ligero</span>
-              <span class="dis-matrix__cell-sub">Su referente lleva el día a día. Nosotros protegemos la marca.</span>
+              <span class="dis-matrix__cell-sub"
+                >Su referente lleva el día a día. Nosotros protegemos la marca.</span
+              >
             </button>
 
-            <div class="dis-matrix__row-head" role="rowheader" data-row="2">Prefiere llevarla usted</div>
-            <button type="button" class="dis-matrix__cell" role="cell" data-row="2" data-col="1" data-tab-jump="model-tab-1">
+            <div class="dis-matrix__row-head" role="rowheader" data-row="2">
+              Prefiere llevarla usted
+            </div>
+            <button
+              type="button"
+              class="dis-matrix__cell"
+              role="cell"
+              data-row="2"
+              data-col="1"
+              data-tab-jump="model-tab-1"
+            >
               <span class="dis-matrix__cell-label">Encontrar y soltar, con traspaso</span>
-              <span class="dis-matrix__cell-sub">Encontramos. Formamos a su equipo. Nos retiramos.</span>
+              <span class="dis-matrix__cell-sub"
+                >Encontramos. Formamos a su equipo. Nos retiramos.</span
+              >
             </button>
-            <button type="button" class="dis-matrix__cell" role="cell" data-row="2" data-col="2" data-tab-jump="model-tab-1">
+            <button
+              type="button"
+              class="dis-matrix__cell"
+              role="cell"
+              data-row="2"
+              data-col="2"
+              data-tab-jump="model-tab-1"
+            >
               <span class="dis-matrix__cell-label">Encontrar y soltar</span>
-              <span class="dis-matrix__cell-sub">Encontramos. Su referente coge las llaves. Listo.</span>
+              <span class="dis-matrix__cell-sub"
+                >Encontramos. Su referente coge las llaves. Listo.</span
+              >
             </button>
           </div>
         </div>
@@ -734,102 +1060,146 @@ const contextCards = [
           <span class="eyebrow">Cómo trabajamos</span>
           <h2>Cuatro fases del brief al contrato firmado</h2>
           <p class="section-header__lead">
-            Tres a cinco meses de media. Cada fase termina con entregables sobre los que se
-            puede actuar, no con diapositivas que hay que traducir. Estamos en su lado de la
-            mesa todo el tiempo.
+            Tres a cinco meses de media. Cada fase termina con entregables sobre los que se puede
+            actuar, no con diapositivas que hay que traducir. Estamos en su lado de la mesa todo el
+            tiempo.
           </p>
         </header>
 
         <div class="dis-tabs dis-tabs--phases dis-reveal" data-tabs>
           <div class="dis-tabs__nav dis-tabs__nav--phases" role="tablist">
-            {phases.map((p, i) => (
-              <button
-                type="button"
-                class={`dis-tabs__tab${i === 0 ? ' is-active' : ''}`}
-                role="tab"
-                aria-selected={i === 0 ? 'true' : 'false'}
-                aria-controls={`phase-panel-${i}`}
-                id={`phase-tab-${i}`}
-                data-tab-target={`phase-panel-${i}`}
-              >
-                <span class="dis-tabs__tab-eyebrow">{p.phase}</span>
-                <span class="dis-tabs__tab-label">{p.title}</span>
-              </button>
-            ))}
+            {
+              phases.map((p, i) => (
+                <button
+                  type="button"
+                  class={`dis-tabs__tab${i === 0 ? ' is-active' : ''}`}
+                  role="tab"
+                  aria-selected={i === 0 ? 'true' : 'false'}
+                  aria-controls={`phase-panel-${i}`}
+                  id={`phase-tab-${i}`}
+                  data-tab-target={`phase-panel-${i}`}
+                >
+                  <span class="dis-tabs__tab-eyebrow">{p.phase}</span>
+                  <span class="dis-tabs__tab-label">{p.title}</span>
+                </button>
+              ))
+            }
             <span class="dis-tabs__indicator" aria-hidden="true"></span>
           </div>
 
           <div class="dis-tabs__panels">
-            {phases.map((p, i) => (
-              <div
-                class={`dis-tabs__panel dis-phase-panel${i === 0 ? ' is-active' : ''}`}
-                role="tabpanel"
-                id={`phase-panel-${i}`}
-                aria-labelledby={`phase-tab-${i}`}
-                hidden={i !== 0}
-              >
-                <div class="dis-phase">
-                  <figure class="dis-phase__media">
-                    <img src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
-                    <div class="dis-phase__media-overlay">
-                      <span class="dis-phase__media-phase">{p.phase}</span>
-                      <span class="dis-phase__media-duration">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-                        {p.duration}
-                      </span>
-                    </div>
-                  </figure>
-
-                  <div class="dis-phase__content">
-                    <div class="dis-phase__head">
-                      <span class="dis-phase__icon" aria-hidden="true" set:html={phaseIcons[p.icon]} />
-                      <div>
-                        <span class="dis-phase__phase-label">{p.phase}</span>
-                        <h3 class="dis-phase__title">{p.title}</h3>
+            {
+              phases.map((p, i) => (
+                <div
+                  class={`dis-tabs__panel dis-phase-panel${i === 0 ? ' is-active' : ''}`}
+                  role="tabpanel"
+                  id={`phase-panel-${i}`}
+                  aria-labelledby={`phase-tab-${i}`}
+                  hidden={i !== 0}
+                >
+                  <div class="dis-phase">
+                    <figure class="dis-phase__media">
+                      <img src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
+                      <div class="dis-phase__media-overlay">
+                        <span class="dis-phase__media-phase">{p.phase}</span>
+                        <span class="dis-phase__media-duration">
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.75"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                          >
+                            <>
+                              <circle cx="12" cy="12" r="9" />
+                              <path d="M12 7v5l3 2" />
+                            </>
+                          </svg>
+                          {p.duration}
+                        </span>
                       </div>
-                    </div>
+                    </figure>
 
-                    <p class="dis-phase__intro">{p.intro}</p>
-
-                    <div class="dis-phase__outcome">
-                      <span class="dis-phase__outcome-label">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                        Resultado
-                      </span>
-                      <p>{p.outcome}</p>
-                    </div>
-
-                    <div class="dis-phase__columns">
-                      <div class="dis-phase__col">
-                        <span class="dis-phase__col-label">Qué hacemos</span>
-                        <ul class="dis-phase__checks">
-                          {p.does.map((b, j) => (
-                            <li style={`--seq: ${j};`}>
-                              <span class="dis-phase__check" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                              </span>
-                              <span>{b}</span>
-                            </li>
-                          ))}
-                        </ul>
+                    <div class="dis-phase__content">
+                      <div class="dis-phase__head">
+                        <span
+                          class="dis-phase__icon"
+                          aria-hidden="true"
+                          set:html={phaseIcons[p.icon]}
+                        />
+                        <div>
+                          <span class="dis-phase__phase-label">{p.phase}</span>
+                          <h3 class="dis-phase__title">{p.title}</h3>
+                        </div>
                       </div>
 
-                      <div class="dis-phase__col">
-                        <span class="dis-phase__col-label">Entregables</span>
-                        <ul class="dis-phase__docs">
-                          {p.deliverables.map((d, j) => (
-                            <li class="dis-phase__doc" style={`--seq: ${j};`}>
-                              <span class="dis-phase__doc-icon" aria-hidden="true" set:html={docIcons[d.kind]} />
-                              <span class="dis-phase__doc-name">{d.name}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <p class="dis-phase__intro">{p.intro}</p>
+
+                      <div class="dis-phase__outcome">
+                        <span class="dis-phase__outcome-label">
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                          >
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                          </svg>
+                          Resultado
+                        </span>
+                        <p>{p.outcome}</p>
+                      </div>
+
+                      <div class="dis-phase__columns">
+                        <div class="dis-phase__col">
+                          <span class="dis-phase__col-label">Qué hacemos</span>
+                          <ul class="dis-phase__checks">
+                            {p.does.map((b, j) => (
+                              <li style={`--seq: ${j};`}>
+                                <span class="dis-phase__check" aria-hidden="true">
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <polyline points="5 12 10 17 19 8" />
+                                  </svg>
+                                </span>
+                                <span>{b}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div class="dis-phase__col">
+                          <span class="dis-phase__col-label">Entregables</span>
+                          <ul class="dis-phase__docs">
+                            {p.deliverables.map((d, j) => (
+                              <li class="dis-phase__doc" style={`--seq: ${j};`}>
+                                <span
+                                  class="dis-phase__doc-icon"
+                                  aria-hidden="true"
+                                  set:html={docIcons[d.kind]}
+                                />
+                                <span class="dis-phase__doc-name">{d.name}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))
+            }
           </div>
         </div>
       </div>
@@ -842,46 +1212,66 @@ const contextCards = [
           <span class="eyebrow">FAQ</span>
           <h2>Veinte preguntas, respondidas en claro</h2>
           <p class="section-header__lead">
-            Las preguntas prácticas que recibimos de fundadores y operadores que buscan a su
-            primer o quinto distribuidor en China. Filtre por tema.
+            Las preguntas prácticas que recibimos de fundadores y operadores que buscan a su primer
+            o quinto distribuidor en China. Filtre por tema.
           </p>
         </header>
 
-        <div class="dis-faq-filter dis-reveal" data-faq-filter role="tablist" aria-label="Filtrar preguntas por categoría">
-          {faqCategories.map((c, i) => (
-            <button
-              type="button"
-              class={`dis-faq-chip${i === 0 ? ' is-active' : ''}`}
-              role="tab"
-              aria-selected={i === 0 ? 'true' : 'false'}
-              data-faq-cat={c}
-            >
-              <span class="dis-faq-chip__label">{c}</span>
-              <span class="dis-faq-chip__count">{c === 'Todo' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
-            </button>
-          ))}
+        <div
+          class="dis-faq-filter dis-reveal"
+          data-faq-filter
+          role="tablist"
+          aria-label="Filtrar preguntas por categoría"
+        >
+          {
+            faqCategories.map((c, i) => (
+              <button
+                type="button"
+                class={`dis-faq-chip${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                data-faq-cat={c}
+              >
+                <span class="dis-faq-chip__label">{c}</span>
+                <span class="dis-faq-chip__count">
+                  {c === 'Todo' ? faqs.length : faqs.filter((f) => f.cat === c).length}
+                </span>
+              </button>
+            ))
+          }
         </div>
 
         <div class="dis-faq" data-faq-list>
-          {faqs.map((f, i) => (
-            <details
-              class="dis-faq__item dis-reveal"
-              data-faq-cat={f.cat}
-              open={i === 0}
-              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
-            >
-              <summary class="dis-faq__q">
-                <span class="dis-faq__cat-tag">{f.cat}</span>
-                <span class="dis-faq__q-text">{f.q}</span>
-                <span class="dis-faq__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </span>
-              </summary>
-              <div class="dis-faq__a">
-                <p>{f.a}</p>
-              </div>
-            </details>
-          ))}
+          {
+            faqs.map((f, i) => (
+              <details
+                class="dis-faq__item dis-reveal"
+                data-faq-cat={f.cat}
+                open={i === 0}
+                style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+              >
+                <summary class="dis-faq__q">
+                  <span class="dis-faq__cat-tag">{f.cat}</span>
+                  <span class="dis-faq__q-text">{f.q}</span>
+                  <span class="dis-faq__icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </summary>
+                <div class="dis-faq__a">
+                  <p>{f.a}</p>
+                </div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -894,8 +1284,8 @@ const contextCards = [
           <h2 class="dis-cta__title">¿Necesita un distribuidor en China? ¿O cambiar al actual?</h2>
           <p class="dis-cta__lead">
             Cuéntenos su categoría, sus volúmenes y dónde está hoy. Un sénior del equipo le
-            responderá en menos de un día hábil con dos o tres nombres con los que merece la
-            pena reunirse. Sin embudo comercial, sin autorespondedor.
+            responderá en menos de un día hábil con dos o tres nombres con los que merece la pena
+            reunirse. Sin embudo comercial, sin autorespondedor.
           </p>
           <div class="dis-cta__actions">
             <a href="/es/contacto" class="btn dis-cta__btn-primary">Empezar la conversación</a>
@@ -908,7 +1298,9 @@ const contextCards = [
 
   <style is:global>
     /* ---------- Container narrow helper ---------- */
-    .dis .container--narrow { max-width: 880px; }
+    .dis .container--narrow {
+      max-width: 880px;
+    }
 
     /* ---------- REVEAL + MOTION ---------- */
     @media (prefers-reduced-motion: no-preference) {
@@ -925,8 +1317,11 @@ const contextCards = [
       }
       .dis-magnetic {
         will-change: transform;
-        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+        transition:
+          transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 220ms ease,
+          background-color 200ms ease,
+          color 200ms ease;
       }
     }
 
@@ -944,7 +1339,7 @@ const contextCards = [
     .dis-progress__bar {
       height: 100%;
       width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #C8102E 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 60%, #c8102e 100%);
       box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
@@ -960,14 +1355,25 @@ const contextCards = [
       overflow: hidden;
       isolation: isolate;
     }
-    body:has(.dis-hero) .dis-hero { padding-top: clamp(140px, 14vh, 180px); }
+    body:has(.dis-hero) .dis-hero {
+      padding-top: clamp(140px, 14vh, 180px);
+    }
     @media (max-width: 1024px) {
-      body:has(.dis-hero) .dis-hero { padding-top: clamp(120px, 12vh, 148px); }
+      body:has(.dis-hero) .dis-hero {
+        padding-top: clamp(120px, 12vh, 148px);
+      }
     }
     @media (max-width: 720px) {
-      .dis-hero { min-height: clamp(520px, 80vh, 680px); padding-bottom: clamp(64px, 9vh, 96px); }
+      .dis-hero {
+        min-height: clamp(520px, 80vh, 680px);
+        padding-bottom: clamp(64px, 9vh, 96px);
+      }
     }
-    .dis-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .dis-hero__bg {
+      position: absolute;
+      inset: -10% 0 0;
+      z-index: -3;
+    }
     .dis-hero__bg img {
       width: 100%;
       height: 110%;
@@ -978,26 +1384,33 @@ const contextCards = [
       filter: saturate(0.95);
     }
     .dis-hero__overlay {
-      position: absolute; inset: 0; z-index: -2;
+      position: absolute;
+      inset: 0;
+      z-index: -2;
       background:
-        linear-gradient(110deg,
+        linear-gradient(
+          110deg,
           rgba(6, 14, 22, 0.94) 0%,
           rgba(6, 14, 22, 0.82) 38%,
           rgba(6, 14, 22, 0.55) 80%,
-          rgba(6, 14, 22, 0.4) 100%),
-        radial-gradient(120% 80% at 0% 100%,
-          rgba(200, 16, 46, 0.3) 0%,
-          rgba(200, 16, 46, 0) 60%);
+          rgba(6, 14, 22, 0.4) 100%
+        ),
+        radial-gradient(120% 80% at 0% 100%, rgba(200, 16, 46, 0.3) 0%, rgba(200, 16, 46, 0) 60%);
     }
     .dis-hero__grain {
-      position: absolute; inset: 0; z-index: -1;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
       background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
       background-size: 3px 3px;
       mix-blend-mode: overlay;
       opacity: 0.45;
       pointer-events: none;
     }
-    .dis-hero__inner { max-width: 980px; position: relative; }
+    .dis-hero__inner {
+      max-width: 980px;
+      position: relative;
+    }
     .dis-hero__crumbs {
       margin-bottom: var(--space-4);
       font-size: var(--fs-small);
@@ -1006,12 +1419,17 @@ const contextCards = [
       align-items: center;
       color: rgba(255, 255, 255, 0.7);
     }
-    .dis-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
-    .dis-hero__crumbs a:hover { color: var(--bbg-white); }
+    .dis-hero__crumbs a {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+    .dis-hero__crumbs a:hover {
+      color: var(--bbg-white);
+    }
     .dis-hero__inner .eyebrow--on-dark {
       display: inline-block;
       margin-bottom: var(--space-3);
-      color: #C8102E;
+      color: #c8102e;
     }
     .dis-hero__title {
       font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
@@ -1025,9 +1443,11 @@ const contextCards = [
       flex-direction: column;
       gap: 0.05em;
     }
-    .dis-hero__title-row { display: block; }
+    .dis-hero__title-row {
+      display: block;
+    }
     .dis-hero__title-row--accent {
-      color: #C8102E;
+      color: #c8102e;
       font-weight: 500;
       font-style: italic;
       letter-spacing: -0.018em;
@@ -1039,21 +1459,25 @@ const contextCards = [
       padding: 0 0.15em;
     }
     .dis-hero__title-row--highlight::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0.04em;
       height: 0.18em;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px;
       transform-origin: left center;
       animation: dis-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
       z-index: -1;
     }
     @keyframes dis-underline {
-      from { transform: scaleX(0); }
-      to { transform: scaleX(1); }
+      from {
+        transform: scaleX(0);
+      }
+      to {
+        transform: scaleX(1);
+      }
     }
     .dis-hero__lead {
       font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
@@ -1062,8 +1486,15 @@ const contextCards = [
       max-width: 58ch;
       margin: 0 0 var(--space-5);
     }
-    .dis-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
-    .dis-magnetic:hover { transform: translateY(-2px); }
+    .dis-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+    .dis-magnetic:hover {
+      transform: translateY(-2px);
+    }
     .dis-hero__meta {
       display: flex;
       flex-wrap: wrap;
@@ -1072,14 +1503,18 @@ const contextCards = [
       border-top: 1px solid rgba(255, 255, 255, 0.14);
       max-width: 720px;
     }
-    .dis-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .dis-hero__meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
     .dis-hero__meta-num {
       font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1;
       color: var(--bbg-white);
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .dis-hero__meta-label {
       font-size: 0.85rem;
@@ -1101,7 +1536,9 @@ const contextCards = [
       font-weight: 600;
       transition: color 200ms ease;
     }
-    .dis-hero__scroll:hover { color: var(--bbg-white); }
+    .dis-hero__scroll:hover {
+      color: var(--bbg-white);
+    }
     .dis-hero__scroll-line {
       width: 1px;
       height: 40px;
@@ -1110,7 +1547,7 @@ const contextCards = [
       overflow: hidden;
     }
     .dis-hero__scroll-line::after {
-      content: "";
+      content: '';
       position: absolute;
       top: -100%;
       left: 0;
@@ -1120,12 +1557,20 @@ const contextCards = [
       animation: dis-scroll-tick 1.8s ease-in-out infinite;
     }
     @keyframes dis-scroll-tick {
-      0% { top: -50%; }
-      100% { top: 100%; }
+      0% {
+        top: -50%;
+      }
+      100% {
+        top: 100%;
+      }
     }
     @media (max-width: 720px) {
-      .dis-hero__scroll { display: none; }
-      .dis-hero__meta { gap: var(--space-4); }
+      .dis-hero__scroll {
+        display: none;
+      }
+      .dis-hero__meta {
+        gap: var(--space-4);
+      }
     }
 
     /* ---------- SECTION HEADER LEAD ---------- */
@@ -1150,7 +1595,9 @@ const contextCards = [
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
     }
     .dis-context__card:hover {
       border-color: var(--bbg-blue);
@@ -1173,8 +1620,12 @@ const contextCards = [
       display: block;
       transition: transform 600ms var(--ease);
     }
-    .dis-context__card:hover .dis-context__media img { transform: scale(1.03); }
-    .dis-context__body { padding: var(--space-6) var(--space-7) var(--space-7); }
+    .dis-context__card:hover .dis-context__media img {
+      transform: scale(1.03);
+    }
+    .dis-context__body {
+      padding: var(--space-6) var(--space-7) var(--space-7);
+    }
     .dis-context__card h3 {
       font-size: clamp(1.25rem, 1vw + 0.75rem, 1.625rem);
       line-height: 1.25;
@@ -1188,8 +1639,12 @@ const contextCards = [
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .dis-context { grid-template-columns: 1fr; }
-      .dis-context__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+      .dis-context {
+        grid-template-columns: 1fr;
+      }
+      .dis-context__body {
+        padding: var(--space-5) var(--space-6) var(--space-6);
+      }
     }
 
     /* ---------- VALUE + PROMISES ---------- */
@@ -1235,7 +1690,9 @@ const contextCards = [
       flex-direction: column;
       gap: var(--space-5);
     }
-    .dis-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .dis-promise > li:first-child .eyebrow {
+      margin-bottom: 0;
+    }
     .dis-promise__item {
       display: grid;
       grid-template-columns: 32px 1fr;
@@ -1253,7 +1710,10 @@ const contextCards = [
       justify-content: center;
       flex-shrink: 0;
     }
-    .dis-promise__check svg { width: 16px; height: 16px; }
+    .dis-promise__check svg {
+      width: 16px;
+      height: 16px;
+    }
     .dis-promise__item h4 {
       font-size: 1.125rem;
       margin: 0 0 var(--space-2);
@@ -1267,11 +1727,18 @@ const contextCards = [
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .dis-value { grid-template-columns: 1fr; gap: var(--space-6); }
+      .dis-value {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
     }
 
     /* ---------- MODELS SECTION BACKGROUND ---------- */
-    .dis-models-section { position: relative; isolation: isolate; overflow: hidden; }
+    .dis-models-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .dis-models-section__bg {
       position: absolute;
       top: 0;
@@ -1291,7 +1758,11 @@ const contextCards = [
       object-position: center;
       filter: saturate(0.6);
     }
-    @media (max-width: 900px) { .dis-models-section__bg { display: none; } }
+    @media (max-width: 900px) {
+      .dis-models-section__bg {
+        display: none;
+      }
+    }
 
     /* ---------- SELL IN / SELL OUT ROUTES ---------- */
     .dis-routes {
@@ -1308,20 +1779,32 @@ const contextCards = [
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: transform 380ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+      transition:
+        transform 380ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
     }
     .dis-route:hover {
       transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 24px 50px -28px rgba(200, 16, 46, 0.45), 0 6px 14px -8px rgba(0, 0, 0, 0.08);
+      box-shadow:
+        0 24px 50px -28px rgba(200, 16, 46, 0.45),
+        0 6px 14px -8px rgba(0, 0, 0, 0.08);
     }
     /* Dim the other route on hover */
-    .dis-routes:hover .dis-route { opacity: 0.7; transition: opacity 280ms ease; }
-    .dis-routes .dis-route:hover { opacity: 1; }
-    .dis-route--featured { border-color: rgba(200, 16, 46, 0.35); }
+    .dis-routes:hover .dis-route {
+      opacity: 0.7;
+      transition: opacity 280ms ease;
+    }
+    .dis-routes .dis-route:hover {
+      opacity: 1;
+    }
+    .dis-route--featured {
+      border-color: rgba(200, 16, 46, 0.35);
+    }
     .dis-route--featured::before {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
       pointer-events: none;
@@ -1342,7 +1825,9 @@ const contextCards = [
       display: block;
       transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .dis-route:hover .dis-route__media img { transform: scale(1.04); }
+    .dis-route:hover .dis-route__media img {
+      transform: scale(1.04);
+    }
     .dis-route__pill {
       position: absolute;
       top: var(--space-4);
@@ -1385,7 +1870,11 @@ const contextCards = [
       flex-grow: 1;
       z-index: 2;
     }
-    .dis-route__head { display: flex; flex-direction: column; gap: 0.4rem; }
+    .dis-route__head {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
     .dis-route__title {
       font-size: clamp(1.5rem, 1.4vw + 1rem, 1.875rem);
       line-height: 1.15;
@@ -1428,7 +1917,9 @@ const contextCards = [
       color: var(--bbg-ink);
       font-weight: 700;
     }
-    .dis-route__split-label-end { color: var(--bbg-text-muted); }
+    .dis-route__split-label-end {
+      color: var(--bbg-text-muted);
+    }
     .dis-route__split-bar {
       display: flex;
       height: 12px;
@@ -1439,21 +1930,33 @@ const contextCards = [
     }
     .dis-route__split-bar-you {
       width: var(--w, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 6px 0 0 6px;
       animation: route-grow 800ms cubic-bezier(0.16, 1, 0.3, 1) 200ms both;
     }
     .dis-route__split-bar-them {
       width: var(--w, 0%);
-      background: repeating-linear-gradient(45deg, var(--bbg-text-muted) 0 4px, rgba(107, 107, 107, 0.6) 4px 8px);
+      background: repeating-linear-gradient(
+        45deg,
+        var(--bbg-text-muted) 0 4px,
+        rgba(107, 107, 107, 0.6) 4px 8px
+      );
       border-radius: 0 6px 6px 0;
       animation: route-grow 800ms cubic-bezier(0.16, 1, 0.3, 1) 300ms both;
     }
     .dis-route__split-bar-you:only-child,
-    .dis-route__split-bar-them:only-child { border-radius: 6px; }
+    .dis-route__split-bar-them:only-child {
+      border-radius: 6px;
+    }
     @keyframes route-grow {
-      from { transform: scaleX(0); transform-origin: left center; }
-      to { transform: scaleX(1); transform-origin: left center; }
+      from {
+        transform: scaleX(0);
+        transform-origin: left center;
+      }
+      to {
+        transform: scaleX(1);
+        transform-origin: left center;
+      }
     }
     .dis-route__split-caption {
       font-size: 0.72rem;
@@ -1482,7 +1985,9 @@ const contextCards = [
       padding: 0.55rem 0;
       border-bottom: 1px solid var(--bbg-border);
     }
-    .dis-route__dim:last-child { border-bottom: none; }
+    .dis-route__dim:last-child {
+      border-bottom: none;
+    }
     .dis-route__dim-label {
       color: var(--bbg-text);
       font-weight: 500;
@@ -1499,7 +2004,9 @@ const contextCards = [
       background: var(--bbg-border);
       transition: background 240ms ease;
     }
-    .dis-route__dim-dot.is-on { background: var(--bbg-blue); }
+    .dis-route__dim-dot.is-on {
+      background: var(--bbg-blue);
+    }
     .dis-route__dim-value {
       font-size: 0.85rem;
       font-weight: 700;
@@ -1510,7 +2017,10 @@ const contextCards = [
       flex-shrink: 0;
     }
     @media (max-width: 640px) {
-      .dis-route__dim-value { min-width: 0; font-size: 0.8rem; }
+      .dis-route__dim-value {
+        min-width: 0;
+        font-size: 0.8rem;
+      }
     }
 
     /* Lists block */
@@ -1530,7 +2040,9 @@ const contextCards = [
       color: var(--bbg-blue);
       margin-bottom: var(--space-3);
     }
-    .dis-route__list--muted .dis-route__list-label { color: var(--bbg-text-muted); }
+    .dis-route__list--muted .dis-route__list-label {
+      color: var(--bbg-text-muted);
+    }
     .dis-route__list ul {
       list-style: none;
       padding: 0;
@@ -1559,7 +2071,10 @@ const contextCards = [
       justify-content: center;
       margin-top: 1px;
     }
-    .dis-route__check svg { width: 11px; height: 11px; }
+    .dis-route__check svg {
+      width: 11px;
+      height: 11px;
+    }
     .dis-route__dash {
       display: inline-block;
       width: 12px;
@@ -1605,14 +2120,22 @@ const contextCards = [
       display: inline-block;
       transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
     }
-    .dis-route__cta:hover .dis-route__cta-arrow { transform: translateX(4px); }
+    .dis-route__cta:hover .dis-route__cta-arrow {
+      transform: translateX(4px);
+    }
 
     @media (max-width: 1024px) {
-      .dis-routes { grid-template-columns: 1fr; }
+      .dis-routes {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 560px) {
-      .dis-route__lists { grid-template-columns: 1fr; }
-      .dis-route__body { padding: var(--space-5); }
+      .dis-route__lists {
+        grid-template-columns: 1fr;
+      }
+      .dis-route__body {
+        padding: var(--space-5);
+      }
     }
 
     /* ---------- BUSINESS MODELS TABS ---------- */
@@ -1642,13 +2165,23 @@ const contextCards = [
       flex-direction: column;
       gap: 0.35rem;
       color: var(--bbg-text-muted);
-      transition: color 240ms ease, background 240ms ease;
+      transition:
+        color 240ms ease,
+        background 240ms ease;
       border-right: 1px solid var(--bbg-border);
       font-family: inherit;
     }
-    .dis-tabs__tab:last-child { border-right: none; }
-    .dis-tabs__tab:hover { color: var(--bbg-ink); background: rgba(200, 16, 46, 0.04); }
-    .dis-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .dis-tabs__tab:last-child {
+      border-right: none;
+    }
+    .dis-tabs__tab:hover {
+      color: var(--bbg-ink);
+      background: rgba(200, 16, 46, 0.04);
+    }
+    .dis-tabs__tab.is-active {
+      color: var(--bbg-ink);
+      background: var(--bbg-white);
+    }
     .dis-tabs__tab-label {
       font-size: 1.0625rem;
       font-weight: 700;
@@ -1660,7 +2193,9 @@ const contextCards = [
       color: var(--bbg-text-muted);
       line-height: 1.35;
     }
-    .dis-tabs__tab.is-active .dis-tabs__tab-tag { color: var(--bbg-blue); }
+    .dis-tabs__tab.is-active .dis-tabs__tab-tag {
+      color: var(--bbg-blue);
+    }
     .dis-tabs__tab-pop {
       position: absolute;
       top: var(--space-3);
@@ -1680,30 +2215,48 @@ const contextCards = [
       left: 0;
       width: 50%;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px 2px 0 0;
       transform: translateX(0);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
     }
-    .dis-tabs__panels { background: var(--bbg-white); }
+    .dis-tabs__panels {
+      background: var(--bbg-white);
+    }
     .dis-tabs__panel {
       padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
       animation: dis-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes dis-tab-in {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .dis-tabs__panel[hidden] { display: none; }
+    .dis-tabs__panel[hidden] {
+      display: none;
+    }
     .dis-tabs__panel-grid {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       gap: clamp(var(--space-5), 3vw, var(--space-7));
       align-items: start;
     }
-    .dis-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
-    .dis-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .dis-tabs__lead {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .dis-tabs__pillset {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
     .dis-tabs__pill {
       font-size: 0.78rem;
       font-weight: 600;
@@ -1744,14 +2297,26 @@ const contextCards = [
       color: var(--bbg-blue);
       margin-bottom: 0.35rem;
     }
-    .dis-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
-    .dis-tabs__body { display: flex; flex-direction: column; gap: var(--space-4); }
+    .dis-tabs__when p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    .dis-tabs__body {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
     .dis-tabs__list-wrap {
       background: var(--bbg-surface);
       border-radius: var(--radius-md);
       padding: var(--space-5);
     }
-    .dis-tabs__list-wrap--muted { background: var(--bbg-white); border: 1px solid var(--bbg-border); }
+    .dis-tabs__list-wrap--muted {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+    }
     .dis-tabs__list-label {
       display: block;
       font-size: 0.72rem;
@@ -1790,8 +2355,13 @@ const contextCards = [
       flex-shrink: 0;
       margin-top: 1px;
     }
-    .dis-tabs__check svg { width: 12px; height: 12px; }
-    .dis-tabs__list--muted li { grid-template-columns: 14px 1fr; }
+    .dis-tabs__check svg {
+      width: 12px;
+      height: 12px;
+    }
+    .dis-tabs__list--muted li {
+      grid-template-columns: 14px 1fr;
+    }
     .dis-tabs__dot {
       display: inline-block;
       width: 8px;
@@ -1825,17 +2395,30 @@ const contextCards = [
       line-height: 1.4;
     }
     @media (max-width: 1024px) {
-      .dis-tabs__nav { grid-template-columns: repeat(2, 1fr); }
-      .dis-tabs__panel-grid { grid-template-columns: 1fr; }
+      .dis-tabs__nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .dis-tabs__panel-grid {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 560px) {
-      .dis-tabs__nav { grid-template-columns: 1fr; }
-      .dis-tabs__tab { border-right: none; border-bottom: 1px solid var(--bbg-border); }
-      .dis-tabs__indicator { display: none; }
+      .dis-tabs__nav {
+        grid-template-columns: 1fr;
+      }
+      .dis-tabs__tab {
+        border-right: none;
+        border-bottom: 1px solid var(--bbg-border);
+      }
+      .dis-tabs__indicator {
+        display: none;
+      }
     }
 
     /* ---------- PHASE PANEL (new visual layout) ---------- */
-    .dis-phase-panel { padding: 0 !important; }
+    .dis-phase-panel {
+      padding: 0 !important;
+    }
     .dis-phase {
       display: grid;
       grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
@@ -1857,7 +2440,7 @@ const contextCards = [
       display: block;
     }
     .dis-phase__media::after {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
       background: linear-gradient(180deg, rgba(8, 18, 28, 0) 50%, rgba(8, 18, 28, 0.75) 100%);
@@ -1898,7 +2481,10 @@ const contextCards = [
       border-radius: 999px;
       box-shadow: 0 4px 12px -4px rgba(8, 18, 28, 0.35);
     }
-    .dis-phase__media-duration svg { width: 14px; height: 14px; }
+    .dis-phase__media-duration svg {
+      width: 14px;
+      height: 14px;
+    }
 
     .dis-phase__content {
       padding: clamp(var(--space-5), 2.4vw + 1rem, var(--space-7));
@@ -1923,7 +2509,10 @@ const contextCards = [
       color: var(--bbg-blue);
       box-shadow: inset 0 0 0 1px rgba(200, 16, 46, 0.15);
     }
-    .dis-phase__icon svg { width: 26px; height: 26px; }
+    .dis-phase__icon svg {
+      width: 26px;
+      height: 26px;
+    }
     .dis-phase__phase-label {
       display: block;
       font-size: 0.7rem;
@@ -2031,7 +2620,10 @@ const contextCards = [
       justify-content: center;
       margin-top: 1px;
     }
-    .dis-phase__check svg { width: 11px; height: 11px; }
+    .dis-phase__check svg {
+      width: 11px;
+      height: 11px;
+    }
 
     /* Document tiles */
     .dis-phase__docs {
@@ -2051,7 +2643,10 @@ const contextCards = [
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
       border-radius: 10px;
-      transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+      transition:
+        border-color 220ms ease,
+        transform 220ms ease,
+        box-shadow 220ms ease;
       animation: phase-fade-in 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
       animation-delay: calc(var(--seq, 0) * 90ms + 200ms);
     }
@@ -2071,7 +2666,10 @@ const contextCards = [
       color: var(--bbg-blue);
       flex-shrink: 0;
     }
-    .dis-phase__doc-icon svg { width: 18px; height: 18px; }
+    .dis-phase__doc-icon svg {
+      width: 18px;
+      height: 18px;
+    }
     .dis-phase__doc-name {
       font-size: 0.9rem;
       line-height: 1.35;
@@ -2081,28 +2679,47 @@ const contextCards = [
     }
 
     @keyframes phase-fade-in {
-      from { opacity: 0; transform: translateY(6px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     @media (prefers-reduced-motion: reduce) {
       .dis-phase__checks li,
-      .dis-phase__doc { animation: none; }
+      .dis-phase__doc {
+        animation: none;
+      }
     }
 
     @media (max-width: 1024px) {
-      .dis-phase { grid-template-columns: 1fr; }
-      .dis-phase__media img { min-height: 0; aspect-ratio: 16 / 9; }
+      .dis-phase {
+        grid-template-columns: 1fr;
+      }
+      .dis-phase__media img {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+      }
     }
     @media (max-width: 600px) {
-      .dis-phase__columns { grid-template-columns: 1fr; }
+      .dis-phase__columns {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- TABS â€” PHASES VARIANT (4 columns, eyebrow above label) ---------- */
-    .dis-tabs__nav--phases { grid-template-columns: repeat(4, 1fr); }
+    .dis-tabs__nav--phases {
+      grid-template-columns: repeat(4, 1fr);
+    }
     .dis-tabs__nav--phases + .dis-tabs__panels {
       /* keep panel layout shared */
     }
-    .dis-tabs--phases .dis-tabs__tab { gap: 0.5rem; }
+    .dis-tabs--phases .dis-tabs__tab {
+      gap: 0.5rem;
+    }
     .dis-tabs__tab-eyebrow {
       font-size: 0.68rem;
       font-weight: 700;
@@ -2135,14 +2752,23 @@ const contextCards = [
       flex-shrink: 0;
       box-shadow: inset 0 0 0 1px rgba(200, 16, 46, 0.15);
     }
-    .dis-phase-head__icon svg { width: 22px; height: 22px; }
-    .dis-phase-head .dis-tabs__title { margin: 0; }
+    .dis-phase-head__icon svg {
+      width: 22px;
+      height: 22px;
+    }
+    .dis-phase-head .dis-tabs__title {
+      margin: 0;
+    }
 
     @media (max-width: 1024px) {
-      .dis-tabs__nav--phases { grid-template-columns: repeat(2, 1fr); }
+      .dis-tabs__nav--phases {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (max-width: 560px) {
-      .dis-tabs__nav--phases { grid-template-columns: 1fr; }
+      .dis-tabs__nav--phases {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- MATRIX ---------- */
@@ -2154,7 +2780,10 @@ const contextCards = [
       padding: clamp(var(--space-5), 3vw + 1rem, var(--space-7));
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
     }
-    .dis-matrix__intro { text-align: center; margin-bottom: var(--space-6); }
+    .dis-matrix__intro {
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
     .dis-matrix__intro h3 {
       font-size: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
       margin: var(--space-2) 0 var(--space-3);
@@ -2183,7 +2812,9 @@ const contextCards = [
       background: var(--bbg-white);
       padding: var(--space-4);
     }
-    .dis-matrix__corner { background: var(--bbg-surface); }
+    .dis-matrix__corner {
+      background: var(--bbg-surface);
+    }
     .dis-matrix__head {
       background: var(--bbg-surface);
       font-size: 0.85rem;
@@ -2216,7 +2847,9 @@ const contextCards = [
       text-align: left;
       font-family: inherit;
     }
-    .dis-matrix__cell:hover { background: var(--bbg-blue-light); }
+    .dis-matrix__cell:hover {
+      background: var(--bbg-blue-light);
+    }
     .dis-matrix__cell:focus-visible {
       outline: 3px solid var(--bbg-blue);
       outline-offset: -3px;
@@ -2240,11 +2873,18 @@ const contextCards = [
       line-height: 1.65;
       font-size: 0.975rem;
     }
-    .dis-matrix__grid.is-hover-row .dis-matrix__cell { opacity: 0.4; }
+    .dis-matrix__grid.is-hover-row .dis-matrix__cell {
+      opacity: 0.4;
+    }
     .dis-matrix__grid.is-hover-row .dis-matrix__cell.is-row-active,
-    .dis-matrix__grid.is-hover-row .dis-matrix__cell.is-col-active { opacity: 1; background: var(--bbg-blue-light); }
+    .dis-matrix__grid.is-hover-row .dis-matrix__cell.is-col-active {
+      opacity: 1;
+      background: var(--bbg-blue-light);
+    }
     .dis-matrix__grid.is-hover-row .dis-matrix__row-head,
-    .dis-matrix__grid.is-hover-row .dis-matrix__head { opacity: 0.4; }
+    .dis-matrix__grid.is-hover-row .dis-matrix__head {
+      opacity: 0.4;
+    }
     .dis-matrix__grid.is-hover-row .dis-matrix__row-head.is-active,
     .dis-matrix__grid.is-hover-row .dis-matrix__head.is-active {
       opacity: 1;
@@ -2252,9 +2892,16 @@ const contextCards = [
       color: var(--bbg-white);
     }
     @media (max-width: 720px) {
-      .dis-matrix__grid { grid-template-columns: 1fr 1fr; }
-      .dis-matrix__corner { display: none; }
-      .dis-matrix__head { font-size: 0.75rem; padding: var(--space-3); }
+      .dis-matrix__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .dis-matrix__corner {
+        display: none;
+      }
+      .dis-matrix__head {
+        font-size: 0.75rem;
+        padding: var(--space-3);
+      }
       .dis-matrix__row-head {
         grid-column: 1 / -1;
         background: var(--bbg-blue-light);
@@ -2265,24 +2912,37 @@ const contextCards = [
     }
 
     /* ---------- JOURNEY (vertical timeline) ---------- */
-    .dis-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .dis-journey-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .dis-journey-section__bg {
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       z-index: -2;
-      opacity: 0.10;
+      opacity: 0.1;
       pointer-events: none;
     }
     .dis-journey-section__bg::after {
-      content: "";
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, var(--bbg-surface) 0%, rgba(247, 249, 251, 0.6) 40%, rgba(247, 249, 251, 0.9) 100%);
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        var(--bbg-surface) 0%,
+        rgba(247, 249, 251, 0.6) 40%,
+        rgba(247, 249, 251, 0.9) 100%
+      );
     }
     .dis-journey-section__bg img {
-      width: 100%; height: 100%;
-      object-fit: cover; object-position: center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       filter: saturate(0.55);
     }
 
@@ -2300,7 +2960,8 @@ const contextCards = [
       width: 2px;
     }
     .dis-journey__rail-track {
-      position: absolute; inset: 0;
+      position: absolute;
+      inset: 0;
       background: var(--bbg-border);
       border-radius: 2px;
     }
@@ -2310,7 +2971,7 @@ const contextCards = [
       left: 0;
       width: 100%;
       height: var(--journey-progress, 0%);
-      background: linear-gradient(180deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px;
       transition: height 120ms linear;
       box-shadow: 0 0 8px rgba(200, 16, 46, 0.4);
@@ -2323,7 +2984,9 @@ const contextCards = [
       flex-direction: column;
       gap: var(--space-7);
     }
-    .dis-journey__item { position: relative; }
+    .dis-journey__item {
+      position: relative;
+    }
     .dis-journey__dot {
       position: absolute;
       left: -64px;
@@ -2344,9 +3007,13 @@ const contextCards = [
       height: 16px;
       border-radius: 50%;
       background: var(--bbg-border);
-      transition: background 320ms ease, transform 320ms ease;
+      transition:
+        background 320ms ease,
+        transform 320ms ease;
     }
-    .dis-journey__item.is-active .dis-journey__dot { border-color: var(--bbg-blue); }
+    .dis-journey__item.is-active .dis-journey__dot {
+      border-color: var(--bbg-blue);
+    }
     .dis-journey__item.is-active .dis-journey__dot-inner {
       background: var(--bbg-blue);
       transform: scale(1.1);
@@ -2362,7 +3029,9 @@ const contextCards = [
       margin-bottom: var(--space-3);
       transition: color 320ms ease;
     }
-    .dis-journey__item.is-active .dis-journey__phase { color: var(--bbg-blue); }
+    .dis-journey__item.is-active .dis-journey__phase {
+      color: var(--bbg-blue);
+    }
     .dis-journey__card {
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
@@ -2371,7 +3040,10 @@ const contextCards = [
       display: flex;
       flex-direction: column;
       gap: var(--space-4);
-      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 320ms ease,
+        box-shadow 320ms ease,
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .dis-journey__item:hover .dis-journey__card,
     .dis-journey__item.is-active .dis-journey__card {
@@ -2395,7 +3067,10 @@ const contextCards = [
       color: var(--bbg-blue);
       flex-shrink: 0;
     }
-    .dis-journey__icon svg { width: 24px; height: 24px; }
+    .dis-journey__icon svg {
+      width: 24px;
+      height: 24px;
+    }
     .dis-journey__title {
       font-size: clamp(1.25rem, 1vw + 0.875rem, 1.625rem);
       line-height: 1.2;
@@ -2426,7 +3101,9 @@ const contextCards = [
       color: var(--bbg-text-muted);
       margin-bottom: var(--space-3);
     }
-    .dis-journey__label--blue { color: var(--bbg-blue); }
+    .dis-journey__label--blue {
+      color: var(--bbg-blue);
+    }
     .dis-journey__bullets {
       list-style: none;
       padding: 0;
@@ -2443,7 +3120,7 @@ const contextCards = [
       font-size: 0.95rem;
     }
     .dis-journey__bullets li::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0.55em;
@@ -2452,15 +3129,34 @@ const contextCards = [
       border-radius: 50%;
       background: var(--bbg-border);
     }
-    .dis-journey__bullets--blue li::before { background: var(--bbg-blue); }
+    .dis-journey__bullets--blue li::before {
+      background: var(--bbg-blue);
+    }
 
     @media (max-width: 720px) {
-      .dis-journey { padding-left: 40px; }
-      .dis-journey__rail { left: 16px; }
-      .dis-journey__dot { left: -40px; width: 36px; height: 36px; top: 4px; }
-      .dis-journey__dot-inner { width: 12px; height: 12px; }
-      .dis-journey__card { padding: var(--space-5); }
-      .dis-journey__grid { grid-template-columns: 1fr; gap: var(--space-4); }
+      .dis-journey {
+        padding-left: 40px;
+      }
+      .dis-journey__rail {
+        left: 16px;
+      }
+      .dis-journey__dot {
+        left: -40px;
+        width: 36px;
+        height: 36px;
+        top: 4px;
+      }
+      .dis-journey__dot-inner {
+        width: 12px;
+        height: 12px;
+      }
+      .dis-journey__card {
+        padding: var(--space-5);
+      }
+      .dis-journey__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
     }
 
     /* ---------- BEYONDCOMPASS ---------- */
@@ -2517,7 +3213,9 @@ const contextCards = [
       display: block;
     }
     @media (max-width: 1024px) {
-      .dis-compass__grid { grid-template-columns: 1fr; }
+      .dis-compass__grid {
+        grid-template-columns: 1fr;
+      }
     }
     .dis-compass__chip {
       display: inline-block;
@@ -2525,7 +3223,7 @@ const contextCards = [
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #C8102E;
+      color: #c8102e;
       background: rgba(200, 16, 46, 0.18);
       padding: 0.4em 0.85em;
       border-radius: 999px;
@@ -2566,8 +3264,8 @@ const contextCards = [
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1;
-      color: #C8102E;
-      font-feature-settings: "tnum";
+      color: #c8102e;
+      font-feature-settings: 'tnum';
     }
     .dis-compass__stat-label {
       font-size: 0.85rem;
@@ -2611,10 +3309,15 @@ const contextCards = [
       color: var(--bbg-white);
     }
     @media (max-width: 1024px) {
-      .dis-compass__stats { grid-template-columns: repeat(2, 1fr); }
+      .dis-compass__stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (max-width: 560px) {
-      .dis-compass__stats { grid-template-columns: 1fr; gap: var(--space-4); }
+      .dis-compass__stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
     }
 
     /* ---------- COMPASS ART (vetted database SVG) ---------- */
@@ -2639,17 +3342,33 @@ const contextCards = [
     .dis-compass__art .cmp-card {
       animation: cmp-fade-in 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
     }
-    .dis-compass__art .cmp-card--4 { animation-delay: 80ms; }
-    .dis-compass__art .cmp-card--3 { animation-delay: 200ms; }
-    .dis-compass__art .cmp-card--2 { animation-delay: 320ms; }
-    .dis-compass__art .cmp-card--1 { animation-delay: 460ms; }
+    .dis-compass__art .cmp-card--4 {
+      animation-delay: 80ms;
+    }
+    .dis-compass__art .cmp-card--3 {
+      animation-delay: 200ms;
+    }
+    .dis-compass__art .cmp-card--2 {
+      animation-delay: 320ms;
+    }
+    .dis-compass__art .cmp-card--1 {
+      animation-delay: 460ms;
+    }
     .dis-compass__art .cmp-check {
       animation: cmp-fade-in 500ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
     }
-    .dis-compass__art .cmp-card--4 .cmp-check { animation-delay: 360ms; }
-    .dis-compass__art .cmp-card--3 .cmp-check { animation-delay: 480ms; }
-    .dis-compass__art .cmp-card--2 .cmp-check { animation-delay: 600ms; }
-    .dis-compass__art .cmp-card--1 .cmp-check { animation-delay: 740ms; }
+    .dis-compass__art .cmp-card--4 .cmp-check {
+      animation-delay: 360ms;
+    }
+    .dis-compass__art .cmp-card--3 .cmp-check {
+      animation-delay: 480ms;
+    }
+    .dis-compass__art .cmp-card--2 .cmp-check {
+      animation-delay: 600ms;
+    }
+    .dis-compass__art .cmp-card--1 .cmp-check {
+      animation-delay: 740ms;
+    }
     .dis-compass__art .cmp-seal {
       animation: cmp-fade-in 800ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
     }
@@ -2657,18 +3376,29 @@ const contextCards = [
       animation: cmp-live-pulse 2.2s ease-in-out 1.5s infinite;
     }
     @keyframes cmp-fade-in {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
     @keyframes cmp-live-pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.35; }
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.35;
+      }
     }
     @media (prefers-reduced-motion: reduce) {
       .dis-compass__art .cmp-card,
       .dis-compass__art .cmp-check,
       .dis-compass__art .cmp-seal,
-      .dis-compass__art .cmp-live { animation: none; }
+      .dis-compass__art .cmp-live {
+        animation: none;
+      }
     }
     .dis-compass__art-key {
       list-style: none;
@@ -2698,16 +3428,27 @@ const contextCards = [
       background: var(--bbg-blue);
       box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.2);
     }
-    .dis-compass__art-dot--vetted { background: #fff; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15); }
-    .dis-compass__art-dot--live { background: #E84A60; box-shadow: 0 0 0 3px rgba(91, 194, 240, 0.25); }
+    .dis-compass__art-dot--vetted {
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15);
+    }
+    .dis-compass__art-dot--live {
+      background: #e84a60;
+      box-shadow: 0 0 0 3px rgba(91, 194, 240, 0.25);
+    }
     .dis-compass__art-dot--reject {
       background: transparent;
       border: 1px dashed rgba(255, 255, 255, 0.4);
       box-shadow: none;
     }
     @media (max-width: 900px) {
-      .dis-compass__art > svg { max-width: 100%; margin: 0 auto; }
-      .dis-compass__art-key { margin: 0 auto; }
+      .dis-compass__art > svg {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .dis-compass__art-key {
+        margin: 0 auto;
+      }
     }
 
     /* ---------- COMPASS TIERS ---------- */
@@ -2726,16 +3467,19 @@ const contextCards = [
       display: flex;
       flex-direction: column;
       gap: var(--space-3);
-      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
     }
     .dis-compass-tier::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: var(--space-6);
       right: var(--space-6);
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       transform: scaleX(0.3);
       transform-origin: left center;
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -2746,7 +3490,9 @@ const contextCards = [
       border-color: var(--bbg-blue);
       box-shadow: 0 16px 32px -20px rgba(200, 16, 46, 0.4);
     }
-    .dis-compass-tier:hover::before { transform: scaleX(1); }
+    .dis-compass-tier:hover::before {
+      transform: scaleX(1);
+    }
     .dis-compass-tier__label {
       font-size: 0.72rem;
       font-weight: 700;
@@ -2769,10 +3515,14 @@ const contextCards = [
       margin-top: auto;
     }
     @media (max-width: 1024px) {
-      .dis-compass-tiers { grid-template-columns: repeat(2, 1fr); }
+      .dis-compass-tiers {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (max-width: 600px) {
-      .dis-compass-tiers { grid-template-columns: 1fr; }
+      .dis-compass-tiers {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- FAQ FILTER ---------- */
@@ -2798,7 +3548,10 @@ const contextCards = [
       transition: all 220ms ease;
       font-family: inherit;
     }
-    .dis-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .dis-faq-chip:hover {
+      border-color: var(--bbg-blue);
+      color: var(--bbg-blue);
+    }
     .dis-faq-chip.is-active {
       background: var(--bbg-blue);
       border-color: var(--bbg-blue);
@@ -2813,7 +3566,10 @@ const contextCards = [
       color: var(--bbg-text-muted);
       transition: all 220ms ease;
     }
-    .dis-faq-chip:hover .dis-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .dis-faq-chip:hover .dis-faq-chip__count {
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+    }
     .dis-faq-chip.is-active .dis-faq-chip__count {
       background: rgba(255, 255, 255, 0.2);
       color: var(--bbg-white);
@@ -2830,7 +3586,10 @@ const contextCards = [
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-md);
       overflow: hidden;
-      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 240ms ease,
+        box-shadow 240ms ease,
+        transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .dis-faq__item:hover {
       transform: translateX(2px);
@@ -2840,7 +3599,9 @@ const contextCards = [
       border-color: var(--bbg-blue);
       box-shadow: 0 8px 22px -14px rgba(200, 16, 46, 0.4);
     }
-    .dis-faq__item.is-hidden { display: none; }
+    .dis-faq__item.is-hidden {
+      display: none;
+    }
     .dis-faq__q {
       cursor: pointer;
       padding: var(--space-5);
@@ -2855,9 +3616,15 @@ const contextCards = [
       list-style: none;
       transition: color var(--dur) var(--ease);
     }
-    .dis-faq__q::-webkit-details-marker { display: none; }
-    .dis-faq__q::marker { display: none; }
-    .dis-faq__item:hover .dis-faq__q { color: var(--bbg-blue); }
+    .dis-faq__q::-webkit-details-marker {
+      display: none;
+    }
+    .dis-faq__q::marker {
+      display: none;
+    }
+    .dis-faq__item:hover .dis-faq__q {
+      color: var(--bbg-blue);
+    }
     .dis-faq__cat-tag {
       display: inline-block;
       font-size: 0.68rem;
@@ -2871,7 +3638,9 @@ const contextCards = [
       margin-right: var(--space-3);
       flex-shrink: 0;
     }
-    .dis-faq__q-text { flex-grow: 1; }
+    .dis-faq__q-text {
+      flex-grow: 1;
+    }
     .dis-faq__icon {
       flex-shrink: 0;
       width: 28px;
@@ -2882,7 +3651,10 @@ const contextCards = [
       border-radius: 50%;
       background: var(--bbg-surface);
       color: var(--bbg-text-muted);
-      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), color var(--dur) var(--ease), background var(--dur) var(--ease);
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        color var(--dur) var(--ease),
+        background var(--dur) var(--ease);
     }
     .dis-faq__item[open] .dis-faq__icon {
       transform: rotate(180deg);
@@ -2897,10 +3669,18 @@ const contextCards = [
       animation: dis-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes dis-faq-in {
-      from { opacity: 0; transform: translateY(-4px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .dis-faq__a p { margin: 0; }
+    .dis-faq__a p {
+      margin: 0;
+    }
 
     /* ---------- FINAL CTA ---------- */
     .dis-cta {
@@ -2913,13 +3693,17 @@ const contextCards = [
       overflow: hidden;
     }
     .dis-cta::before {
-      content: "";
+      content: '';
       position: absolute;
       top: -40%;
       right: -10%;
       width: 420px;
       height: 420px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 65%
+      );
       pointer-events: none;
     }
     .dis-cta .eyebrow--on-dark {
@@ -2979,14 +3763,17 @@ const contextCards = [
         if (reduced || !('IntersectionObserver' in window)) {
           revealEls.forEach((el) => el.classList.add('is-in'));
         } else {
-          const io = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-in');
-                io.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-in');
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+          );
           revealEls.forEach((el) => io.observe(el));
         }
       }
@@ -3008,14 +3795,17 @@ const contextCards = [
           };
           requestAnimationFrame(tick);
         };
-        const counterIo = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animate(entry.target);
-              counterIo.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.5 });
+        const counterIo = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animate(entry.target);
+                counterIo.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
         counters.forEach((el) => counterIo.observe(el));
       } else {
         counters.forEach((el) => {
@@ -3036,7 +3826,7 @@ const contextCards = [
           if (parallaxEl && heroEl && !reduced) {
             const heroH = heroEl.offsetHeight;
             if (scrollY < heroH) {
-              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+              parallaxEl.style.setProperty('--parallax-y', scrollY * 0.18 + 'px');
             }
           }
           if (progressEl) {
@@ -3076,8 +3866,12 @@ const contextCards = [
 
       // 6. Tabs (business models + phases) â€” supports multiple [data-tabs] instances
       document.querySelectorAll('[data-tabs]').forEach((tabsRoot) => {
-        const tabs = Array.from(tabsRoot.querySelectorAll(':scope > .dis-tabs__nav .dis-tabs__tab'));
-        const panels = Array.from(tabsRoot.querySelectorAll(':scope > .dis-tabs__panels > .dis-tabs__panel'));
+        const tabs = Array.from(
+          tabsRoot.querySelectorAll(':scope > .dis-tabs__nav .dis-tabs__tab'),
+        );
+        const panels = Array.from(
+          tabsRoot.querySelectorAll(':scope > .dis-tabs__panels > .dis-tabs__panel'),
+        );
         const indicator = tabsRoot.querySelector(':scope > .dis-tabs__nav > .dis-tabs__indicator');
         if (!tabs.length || !panels.length) return;
         const setActive = (tab) => {

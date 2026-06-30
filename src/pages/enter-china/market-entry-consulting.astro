@@ -78,7 +78,8 @@ const phases = [
     duration: '4 to 6 weeks',
     title: 'Competitor deep-dive',
     image: '/Images/enter-china/phase-3-competitors.png',
-    imageAlt: 'A market analyst reviewing competitor dashboards on three monitors in an evening Shanghai office',
+    imageAlt:
+      'A market analyst reviewing competitor dashboards on three monitors in an evening Shanghai office',
     intro:
       'We analyze how successful brands operate in your category across the dimensions that move the needle.',
     outcome: "You know who you're up against, how they price, and where the white space is.",
@@ -101,7 +102,8 @@ const phases = [
     duration: '3 to 4 weeks',
     title: 'Financial model and strategy blueprint',
     image: '/Images/enter-china/phase-4-financial.png',
-    imageAlt: 'A finance analyst reviewing a Tmall Global financial model on a desktop in a Shanghai office',
+    imageAlt:
+      'A finance analyst reviewing a Tmall Global financial model on a desktop in a Shanghai office',
     intro:
       'We build the complete business case with transparent cost structures and a decision-ready recommendation.',
     outcome: 'You have a board-ready Go or No-Go with the numbers behind it.',
@@ -134,7 +136,8 @@ const models = [
     tag: 'Distributor partnership',
     tagline: 'Validate without committing.',
     image: '/Images/enter-china/route-sellin.png',
-    imageAlt: 'A Chinese eCommerce distributor team reviewing inventory in a Shanghai fulfillment warehouse',
+    imageAlt:
+      'A Chinese eCommerce distributor team reviewing inventory in a Shanghai fulfillment warehouse',
     desc: 'You sell products to a qualified CBEC distributor at wholesale pricing. They purchase inventory, own operational risk, and manage all in-market operations.',
     when: 'You are validating market fit, you do not have an Asia team, or your category calls for specialised local expertise you would rather rent than build.',
     split: { you: 20, them: 80, themLabel: 'Distributor' },
@@ -144,9 +147,20 @@ const models = [
       { label: 'Time to market', value: 'Fast', level: 4 },
       { label: 'Brand control', value: 'Shared', level: 2 },
     ],
-    youGet: ['Wholesale revenue', 'Zero inventory risk', 'Immediate cash flow', 'Limited capital commitment'],
-    they: ['Platform operations on Tmall Global, JD Worldwide, Douyin', 'Marketing and content', 'Logistics and bonded warehouse', 'Customer service in Mandarin'],
-    pricing: 'Wholesale margin agreed upfront. We earn from your engagement fee, not from the distributor.',
+    youGet: [
+      'Wholesale revenue',
+      'Zero inventory risk',
+      'Immediate cash flow',
+      'Limited capital commitment',
+    ],
+    they: [
+      'Platform operations on Tmall Global, JD Worldwide, Douyin',
+      'Marketing and content',
+      'Logistics and bonded warehouse',
+      'Customer service in Mandarin',
+    ],
+    pricing:
+      'Wholesale margin agreed upfront. We earn from your engagement fee, not from the distributor.',
     highlight: true,
     ctaText: 'Talk about sell in',
   },
@@ -155,7 +169,8 @@ const models = [
     tag: 'Direct operations',
     tagline: 'Commit to control.',
     image: '/Images/enter-china/route-sellout.png',
-    imageAlt: 'A foreign brand manager and Chinese operator reviewing a Tmall flagship dashboard in a Shanghai office',
+    imageAlt:
+      'A foreign brand manager and Chinese operator reviewing a Tmall flagship dashboard in a Shanghai office',
     desc: 'Your brand owns the complete China operation. You finance inventory, control all touchpoints, and manage platform and logistics relationships.',
     when: 'You have proven demand, the China P&L is a strategic priority, and full control of pricing, customer data and brand positioning justifies the capital and the complexity.',
     split: { you: 100, them: 0, themLabel: 'External' },
@@ -165,9 +180,20 @@ const models = [
       { label: 'Time to market', value: 'Slow', level: 2 },
       { label: 'Brand control', value: 'Full', level: 5 },
     ],
-    youGet: ['Full retail revenue', 'Complete brand control', 'Customer data ownership', 'Pricing autonomy'],
-    they: ['Inventory financing', 'Platform fees and operations', 'Marketing execution and media', 'Operational costs (warehouse, returns, service)'],
-    pricing: 'You carry every cost line. The model in Phase 4 shows you the full picture before you commit.',
+    youGet: [
+      'Full retail revenue',
+      'Complete brand control',
+      'Customer data ownership',
+      'Pricing autonomy',
+    ],
+    they: [
+      'Inventory financing',
+      'Platform fees and operations',
+      'Marketing execution and media',
+      'Operational costs (warehouse, returns, service)',
+    ],
+    pricing:
+      'You carry every cost line. The model in Phase 4 shows you the full picture before you commit.',
     highlight: false,
     ctaText: 'Talk about sell out',
   },
@@ -177,7 +203,7 @@ const faqs = [
   {
     cat: 'Strategy',
     q: 'What is Cross-Border eCommerce (CBEC)?',
-    a: "CBEC lets you sell to Chinese consumers without setting up a Chinese entity. Products ship from bonded warehouses or by direct mail, and customs clears at the consumer level. You get access to JD Worldwide, Tmall Global, Douyin and RED. You do not get offline retail, and you do not get domestic eCommerce until you complete NMPA or SAMR registration. Most brands use it as a lighter way to test demand before committing to full infrastructure.",
+    a: 'CBEC lets you sell to Chinese consumers without setting up a Chinese entity. Products ship from bonded warehouses or by direct mail, and customs clears at the consumer level. You get access to JD Worldwide, Tmall Global, Douyin and RED. You do not get offline retail, and you do not get domestic eCommerce until you complete NMPA or SAMR registration. Most brands use it as a lighter way to test demand before committing to full infrastructure.',
   },
   {
     cat: 'Strategy',
@@ -300,11 +326,13 @@ const contextCards = [
 >
   <div class="mec-progress" aria-hidden="true"><div class="mec-progress__bar"></div></div>
   <article class="mec">
-
     {/* ---------- HERO (dark, parallax) ---------- */}
     <section class="mec-hero" data-hero>
       <div class="mec-hero__bg" aria-hidden="true" data-parallax>
-        <img src="/Images/enter-china/hero-tier3-mall.png" alt="Families and shoppers inside a busy shopping mall in a tier-3 Chinese city" />
+        <img
+          src="/Images/enter-china/hero-tier3-mall.png"
+          alt="Families and shoppers inside a busy shopping mall in a tier-3 Chinese city"
+        />
       </div>
       <div class="mec-hero__overlay" aria-hidden="true"></div>
       <div class="mec-hero__grain" aria-hidden="true"></div>
@@ -320,12 +348,14 @@ const contextCards = [
           <span class="mec-hero__title-row">China market entry is</span>
           <span class="mec-hero__title-row mec-hero__title-row--accent">complex and crowded.</span>
           <span class="mec-hero__title-row">We make the path</span>
-          <span class="mec-hero__title-row mec-hero__title-row--highlight">clear before you build.</span>
+          <span class="mec-hero__title-row mec-hero__title-row--highlight"
+            >clear before you build.</span
+          >
         </h1>
         <p class="mec-hero__lead mec-reveal" style="--reveal-delay: 200ms;">
-          We design China market entry blueprints for global brands. Feasibility,
-          financial models, competitor analysis, and distributor partnerships. The
-          architecture before the construction.
+          We design China market entry blueprints for global brands. Feasibility, financial models,
+          competitor analysis, and distributor partnerships. The architecture before the
+          construction.
         </p>
         <div class="mec-hero__actions mec-reveal" style="--reveal-delay: 280ms;">
           <a href="/contact" class="btn btn--primary mec-magnetic">Talk to us</a>
@@ -361,23 +391,28 @@ const contextCards = [
           <span class="eyebrow">Our approach</span>
           <h2>Two things to know before we start</h2>
           <p class="section-header__lead">
-            Most brands approach China the way they approach any new market. China
-            does not reward that approach. Here is what shapes how we work.
+            Most brands approach China the way they approach any new market. China does not reward
+            that approach. Here is what shapes how we work.
           </p>
         </header>
 
         <div class="mec-context">
-          {contextCards.map((c, i) => (
-            <article class={`mec-context__card${i === 1 ? ' mec-context__card--alt' : ''} mec-reveal`} style={`--reveal-delay: ${i * 120}ms;`}>
-              <figure class="mec-context__media">
-                <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
-              </figure>
-              <div class="mec-context__body">
-                <h3>{c.title}</h3>
-                <p>{c.body}</p>
-              </div>
-            </article>
-          ))}
+          {
+            contextCards.map((c, i) => (
+              <article
+                class={`mec-context__card${i === 1 ? ' mec-context__card--alt' : ''} mec-reveal`}
+                style={`--reveal-delay: ${i * 120}ms;`}
+              >
+                <figure class="mec-context__media">
+                  <img src={c.image} alt={c.alt} loading="lazy" decoding="async" />
+                </figure>
+                <div class="mec-context__body">
+                  <h3>{c.title}</h3>
+                  <p>{c.body}</p>
+                </div>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -390,16 +425,15 @@ const contextCards = [
             <span class="eyebrow">Why brands choose us</span>
             <h2>Most China consultants have never run operations there. We have.</h2>
             <p>
-              Our team comes from Publicis Commerce China. We built the eCommerce
-              practices for GSK, Nestlé, Ferrero and Beiersdorf across Tmall, JD,
-              Douyin and RED.
+              Our team comes from Publicis Commerce China. We built the eCommerce practices for GSK,
+              Nestlé, Ferrero and Beiersdorf across Tmall, JD, Douyin and RED.
             </p>
             <blockquote class="mec-value__quote">
               We consult based on operational experience, not research reports.
             </blockquote>
             <p>
-              We know which distributors perform because we have evaluated them. We
-              know what platforms require because we filed the applications ourselves.
+              We know which distributors perform because we have evaluated them. We know what
+              platforms require because we filed the applications ourselves.
             </p>
             <a href="/about" class="btn btn--secondary btn--sm">Meet the team</a>
           </div>
@@ -408,17 +442,28 @@ const contextCards = [
             <li>
               <span class="eyebrow">What you can expect</span>
             </li>
-            {promises.map((p) => (
-              <li class="mec-promise__item">
-                <span class="mec-promise__check" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                </span>
-                <div>
-                  <h4>{p.title}</h4>
-                  <p>{p.desc}</p>
-                </div>
-              </li>
-            ))}
+            {
+              promises.map((p) => (
+                <li class="mec-promise__item">
+                  <span class="mec-promise__check" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="5 12 10 17 19 8" />
+                    </svg>
+                  </span>
+                  <div>
+                    <h4>{p.title}</h4>
+                    <p>{p.desc}</p>
+                  </div>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
@@ -434,124 +479,192 @@ const contextCards = [
           <span class="eyebrow">Decision point</span>
           <h2>Sell in, or sell out. Two routes into China.</h2>
           <p class="section-header__lead">
-            Your China market entry strategy hinges on one decision: partner with a
-            distributor, or build your own operations. We help you choose the route
-            that fits your capital, timeline and ambition.
+            Your China market entry strategy hinges on one decision: partner with a distributor, or
+            build your own operations. We help you choose the route that fits your capital, timeline
+            and ambition.
           </p>
         </header>
 
         <div class="mec-routes mec-reveal">
-          {models.map((m, i) => (
-            <article class={`mec-route${m.highlight ? ' mec-route--featured' : ''}`} style={`--reveal-delay: ${i * 100}ms;`}>
-              <div class="mec-route__media">
-                <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" />
-                <span class="mec-route__pill">{m.name}</span>
-              </div>
-
-              <div class="mec-route__body">
-                <header class="mec-route__head">
-                  <h3 class="mec-route__title">{m.tag}</h3>
-                  <p class="mec-route__tagline">{m.tagline}</p>
-                </header>
-
-                <p class="mec-route__desc">{m.desc}</p>
-
-                <div class="mec-route__split" aria-label={`Operation split: you ${m.split.you}%, ${m.split.themLabel.toLowerCase()} ${m.split.them}%`}>
-                  <div class="mec-route__split-labels">
-                    <span><strong>You</strong> {m.split.you}%</span>
-                    <span class="mec-route__split-label-end">{m.split.themLabel} <strong>{m.split.them}%</strong></span>
-                  </div>
-                  <div class="mec-route__split-bar">
-                    <span class="mec-route__split-bar-you" style={`--w: ${m.split.you}%;`}></span>
-                    <span class="mec-route__split-bar-them" style={`--w: ${m.split.them}%;`}></span>
-                  </div>
-                  <span class="mec-route__split-caption">Who runs the China operation</span>
+          {
+            models.map((m, i) => (
+              <article
+                class={`mec-route${m.highlight ? ' mec-route--featured' : ''}`}
+                style={`--reveal-delay: ${i * 100}ms;`}
+              >
+                <div class="mec-route__media">
+                  <img src={m.image} alt={m.imageAlt} loading="lazy" decoding="async" />
+                  <span class="mec-route__pill">{m.name}</span>
                 </div>
 
-                <ul class="mec-route__dims">
-                  {m.dims.map((d) => (
-                    <li class="mec-route__dim">
-                      <span class="mec-route__dim-label">{d.label}</span>
-                      <span class="mec-route__dim-dots" aria-label={`${d.value}, ${d.level} out of 5`}>
-                        {[1, 2, 3, 4, 5].map((n) => (
-                          <span class={`mec-route__dim-dot${n <= d.level ? ' is-on' : ''}`}></span>
-                        ))}
+                <div class="mec-route__body">
+                  <header class="mec-route__head">
+                    <h3 class="mec-route__title">{m.tag}</h3>
+                    <p class="mec-route__tagline">{m.tagline}</p>
+                  </header>
+
+                  <p class="mec-route__desc">{m.desc}</p>
+
+                  <div
+                    class="mec-route__split"
+                    aria-label={`Operation split: you ${m.split.you}%, ${m.split.themLabel.toLowerCase()} ${m.split.them}%`}
+                  >
+                    <div class="mec-route__split-labels">
+                      <span>
+                        <strong>You</strong> {m.split.you}%
                       </span>
-                      <span class="mec-route__dim-value">{d.value}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div class="mec-route__lists">
-                  <div class="mec-route__list">
-                    <span class="mec-route__list-label">You receive</span>
-                    <ul>
-                      {m.youGet.map((b) => (
-                        <li>
-                          <span class="mec-route__check" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                          </span>
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
+                      <span class="mec-route__split-label-end">
+                        {m.split.themLabel} <strong>{m.split.them}%</strong>
+                      </span>
+                    </div>
+                    <div class="mec-route__split-bar">
+                      <span class="mec-route__split-bar-you" style={`--w: ${m.split.you}%;`} />
+                      <span class="mec-route__split-bar-them" style={`--w: ${m.split.them}%;`} />
+                    </div>
+                    <span class="mec-route__split-caption">Who runs the China operation</span>
                   </div>
-                  <div class="mec-route__list mec-route__list--muted">
-                    <span class="mec-route__list-label">{m.name === 'Sell in' ? 'Distributor handles' : 'You manage'}</span>
-                    <ul>
-                      {m.they.map((b) => (
-                        <li>
-                          <span class="mec-route__dash" aria-hidden="true"></span>
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
+
+                  <ul class="mec-route__dims">
+                    {m.dims.map((d) => (
+                      <li class="mec-route__dim">
+                        <span class="mec-route__dim-label">{d.label}</span>
+                        <span
+                          class="mec-route__dim-dots"
+                          aria-label={`${d.value}, ${d.level} out of 5`}
+                        >
+                          {[1, 2, 3, 4, 5].map((n) => (
+                            <span class={`mec-route__dim-dot${n <= d.level ? ' is-on' : ''}`} />
+                          ))}
+                        </span>
+                        <span class="mec-route__dim-value">{d.value}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div class="mec-route__lists">
+                    <div class="mec-route__list">
+                      <span class="mec-route__list-label">You receive</span>
+                      <ul>
+                        {m.youGet.map((b) => (
+                          <li>
+                            <span class="mec-route__check" aria-hidden="true">
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <polyline points="5 12 10 17 19 8" />
+                              </svg>
+                            </span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div class="mec-route__list mec-route__list--muted">
+                      <span class="mec-route__list-label">
+                        {m.name === 'Sell in' ? 'Distributor handles' : 'You manage'}
+                      </span>
+                      <ul>
+                        {m.they.map((b) => (
+                          <li>
+                            <span class="mec-route__dash" aria-hidden="true" />
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </div>
 
-                <div class="mec-route__when">
-                  <span class="mec-route__when-label">Best when</span>
-                  <p>{m.when}</p>
-                </div>
+                  <div class="mec-route__when">
+                    <span class="mec-route__when-label">Best when</span>
+                    <p>{m.when}</p>
+                  </div>
 
-                <a href="/contact" class="btn btn--primary mec-route__cta">
-                  {m.ctaText}
-                  <span class="mec-route__cta-arrow" aria-hidden="true">→</span>
-                </a>
-              </div>
-            </article>
-          ))}
+                  <a href="/contact" class="btn btn--primary mec-route__cta">
+                    {m.ctaText}
+                    <span class="mec-route__cta-arrow" aria-hidden="true">
+                      →
+                    </span>
+                  </a>
+                </div>
+              </article>
+            ))
+          }
         </div>
 
         <div class="mec-matrix mec-reveal" data-matrix>
           <div class="mec-matrix__intro">
             <span class="eyebrow">How to pick</span>
             <h3>One question, two answers</h3>
-            <p>Are you validating, or are you committing? That tells you which route to take. Most brands start in one and move to the other once the case is proven.</p>
+            <p>
+              Are you validating, or are you committing? That tells you which route to take. Most
+              brands start in one and move to the other once the case is proven.
+            </p>
           </div>
-          <div class="mec-matrix__grid" role="table" aria-label="Distribution model selection matrix">
+          <div
+            class="mec-matrix__grid"
+            role="table"
+            aria-label="Distribution model selection matrix"
+          >
             <div class="mec-matrix__corner" role="presentation"></div>
-            <div class="mec-matrix__head" role="columnheader" data-col="1">Validating the market</div>
+            <div class="mec-matrix__head" role="columnheader" data-col="1">
+              Validating the market
+            </div>
             <div class="mec-matrix__head" role="columnheader" data-col="2">Committing to scale</div>
 
             <div class="mec-matrix__row-head" role="rowheader" data-row="1">Capital light</div>
-            <button type="button" class="mec-matrix__cell" role="cell" data-row="1" data-col="1" data-tab-jump="model-tab-0">
+            <button
+              type="button"
+              class="mec-matrix__cell"
+              role="cell"
+              data-row="1"
+              data-col="1"
+              data-tab-jump="model-tab-0"
+            >
               <span class="mec-matrix__cell-label">Sell in</span>
-              <span class="mec-matrix__cell-sub">Distributor buys, sells and carries the risk.</span>
+              <span class="mec-matrix__cell-sub">Distributor buys, sells and carries the risk.</span
+              >
             </button>
-            <button type="button" class="mec-matrix__cell" role="cell" data-row="1" data-col="2" data-tab-jump="model-tab-0">
+            <button
+              type="button"
+              class="mec-matrix__cell"
+              role="cell"
+              data-row="1"
+              data-col="2"
+              data-tab-jump="model-tab-0"
+            >
               <span class="mec-matrix__cell-label">Sell in, then transition</span>
-              <span class="mec-matrix__cell-sub">Prove the case first, then bring it in-house.</span>
+              <span class="mec-matrix__cell-sub">Prove the case first, then bring it in-house.</span
+              >
             </button>
 
             <div class="mec-matrix__row-head" role="rowheader" data-row="2">Full control</div>
-            <button type="button" class="mec-matrix__cell" role="cell" data-row="2" data-col="1" data-tab-jump="model-tab-1">
+            <button
+              type="button"
+              class="mec-matrix__cell"
+              role="cell"
+              data-row="2"
+              data-col="1"
+              data-tab-jump="model-tab-1"
+            >
               <span class="mec-matrix__cell-label">Sell out, pilot scope</span>
               <span class="mec-matrix__cell-sub">Direct setup limited to one platform first.</span>
             </button>
-            <button type="button" class="mec-matrix__cell" role="cell" data-row="2" data-col="2" data-tab-jump="model-tab-1">
+            <button
+              type="button"
+              class="mec-matrix__cell"
+              role="cell"
+              data-row="2"
+              data-col="2"
+              data-tab-jump="model-tab-1"
+            >
               <span class="mec-matrix__cell-label">Sell out</span>
-              <span class="mec-matrix__cell-sub">Own the operation. Own the data. Own the P&L.</span>
+              <span class="mec-matrix__cell-sub">Own the operation. Own the data. Own the P&L.</span
+              >
             </button>
           </div>
         </div>
@@ -565,101 +678,145 @@ const contextCards = [
           <span class="eyebrow">How we work</span>
           <h2>Four phases from question to answer</h2>
           <p class="section-header__lead">
-            A structured engagement that moves you from "should we enter China" to
-            a decision-ready plan. Each phase ends with deliverables you can act on.
+            A structured engagement that moves you from "should we enter China" to a decision-ready
+            plan. Each phase ends with deliverables you can act on.
           </p>
         </header>
 
         <div class="mec-tabs mec-tabs--phases mec-reveal" data-tabs>
           <div class="mec-tabs__nav mec-tabs__nav--phases" role="tablist">
-            {phases.map((p, i) => (
-              <button
-                type="button"
-                class={`mec-tabs__tab${i === 0 ? ' is-active' : ''}`}
-                role="tab"
-                aria-selected={i === 0 ? 'true' : 'false'}
-                aria-controls={`phase-panel-${i}`}
-                id={`phase-tab-${i}`}
-                data-tab-target={`phase-panel-${i}`}
-              >
-                <span class="mec-tabs__tab-eyebrow">{p.phase}</span>
-                <span class="mec-tabs__tab-label">{p.title}</span>
-              </button>
-            ))}
+            {
+              phases.map((p, i) => (
+                <button
+                  type="button"
+                  class={`mec-tabs__tab${i === 0 ? ' is-active' : ''}`}
+                  role="tab"
+                  aria-selected={i === 0 ? 'true' : 'false'}
+                  aria-controls={`phase-panel-${i}`}
+                  id={`phase-tab-${i}`}
+                  data-tab-target={`phase-panel-${i}`}
+                >
+                  <span class="mec-tabs__tab-eyebrow">{p.phase}</span>
+                  <span class="mec-tabs__tab-label">{p.title}</span>
+                </button>
+              ))
+            }
             <span class="mec-tabs__indicator" aria-hidden="true"></span>
           </div>
 
           <div class="mec-tabs__panels">
-            {phases.map((p, i) => (
-              <div
-                class={`mec-tabs__panel mec-phase-panel${i === 0 ? ' is-active' : ''}`}
-                role="tabpanel"
-                id={`phase-panel-${i}`}
-                aria-labelledby={`phase-tab-${i}`}
-                hidden={i !== 0}
-              >
-                <div class="mec-phase">
-                  <figure class="mec-phase__media">
-                    <img src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
-                    <div class="mec-phase__media-overlay">
-                      <span class="mec-phase__media-phase">{p.phase}</span>
-                      <span class="mec-phase__media-duration">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-                        {p.duration}
-                      </span>
-                    </div>
-                  </figure>
-
-                  <div class="mec-phase__content">
-                    <div class="mec-phase__head">
-                      <span class="mec-phase__icon" aria-hidden="true" set:html={phaseIcons[p.icon]} />
-                      <div>
-                        <span class="mec-phase__phase-label">{p.phase}</span>
-                        <h3 class="mec-phase__title">{p.title}</h3>
+            {
+              phases.map((p, i) => (
+                <div
+                  class={`mec-tabs__panel mec-phase-panel${i === 0 ? ' is-active' : ''}`}
+                  role="tabpanel"
+                  id={`phase-panel-${i}`}
+                  aria-labelledby={`phase-tab-${i}`}
+                  hidden={i !== 0}
+                >
+                  <div class="mec-phase">
+                    <figure class="mec-phase__media">
+                      <img src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
+                      <div class="mec-phase__media-overlay">
+                        <span class="mec-phase__media-phase">{p.phase}</span>
+                        <span class="mec-phase__media-duration">
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.75"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                          >
+                            <>
+                              <circle cx="12" cy="12" r="9" />
+                              <path d="M12 7v5l3 2" />
+                            </>
+                          </svg>
+                          {p.duration}
+                        </span>
                       </div>
-                    </div>
+                    </figure>
 
-                    <p class="mec-phase__intro">{p.intro}</p>
-
-                    <div class="mec-phase__outcome">
-                      <span class="mec-phase__outcome-label">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                        Outcome
-                      </span>
-                      <p>{p.outcome}</p>
-                    </div>
-
-                    <div class="mec-phase__columns">
-                      <div class="mec-phase__col">
-                        <span class="mec-phase__col-label">What we do</span>
-                        <ul class="mec-phase__checks">
-                          {p.does.map((b, j) => (
-                            <li style={`--seq: ${j};`}>
-                              <span class="mec-phase__check" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>
-                              </span>
-                              <span>{b}</span>
-                            </li>
-                          ))}
-                        </ul>
+                    <div class="mec-phase__content">
+                      <div class="mec-phase__head">
+                        <span
+                          class="mec-phase__icon"
+                          aria-hidden="true"
+                          set:html={phaseIcons[p.icon]}
+                        />
+                        <div>
+                          <span class="mec-phase__phase-label">{p.phase}</span>
+                          <h3 class="mec-phase__title">{p.title}</h3>
+                        </div>
                       </div>
 
-                      <div class="mec-phase__col">
-                        <span class="mec-phase__col-label">Deliverables</span>
-                        <ul class="mec-phase__docs">
-                          {p.deliverables.map((d, j) => (
-                            <li class="mec-phase__doc" style={`--seq: ${j};`}>
-                              <span class="mec-phase__doc-icon" aria-hidden="true" set:html={docIcons[d.kind]} />
-                              <span class="mec-phase__doc-name">{d.name}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <p class="mec-phase__intro">{p.intro}</p>
+
+                      <div class="mec-phase__outcome">
+                        <span class="mec-phase__outcome-label">
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                          >
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                          </svg>
+                          Outcome
+                        </span>
+                        <p>{p.outcome}</p>
+                      </div>
+
+                      <div class="mec-phase__columns">
+                        <div class="mec-phase__col">
+                          <span class="mec-phase__col-label">What we do</span>
+                          <ul class="mec-phase__checks">
+                            {p.does.map((b, j) => (
+                              <li style={`--seq: ${j};`}>
+                                <span class="mec-phase__check" aria-hidden="true">
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <polyline points="5 12 10 17 19 8" />
+                                  </svg>
+                                </span>
+                                <span>{b}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div class="mec-phase__col">
+                          <span class="mec-phase__col-label">Deliverables</span>
+                          <ul class="mec-phase__docs">
+                            {p.deliverables.map((d, j) => (
+                              <li class="mec-phase__doc" style={`--seq: ${j};`}>
+                                <span
+                                  class="mec-phase__doc-icon"
+                                  aria-hidden="true"
+                                  set:html={docIcons[d.kind]}
+                                />
+                                <span class="mec-phase__doc-name">{d.name}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))
+            }
           </div>
         </div>
       </div>
@@ -670,12 +827,12 @@ const contextCards = [
       <div class="container">
         <header class="section-header section-header--center mec-reveal">
           <span class="eyebrow">If you choose sell in</span>
-          <h2>Powered by BeyondCompass</h2>
+          <h2>Powered by Compass</h2>
           <p class="section-header__lead">
-            Choose the sell-in route and the next question is which Chinese distributor to
-            trust. BeyondCompass is our answer. A partner database built over twenty years.
-            Distributors, Tmall third-party providers, Douyin partners, importers.
-            Hand-vetted, met in person, kept current.
+            Choose the sell-in route and the next question is which Chinese distributor to trust.
+            Compass is our answer. A partner database built over twenty years. Distributors,
+            Tmall third-party providers, Douyin partners, importers. Hand-vetted, met in person,
+            kept current.
           </p>
         </header>
 
@@ -686,8 +843,8 @@ const contextCards = [
               <div class="mec-compass__head">
                 <div class="mec-compass__logo">
                   <img
-                    src="/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp"
-                    alt="BeyondCompass logo"
+                    src="/Images/AgencyLogos/Compass%20-%20Horizontal.svg"
+                    alt="Compass logo"
                     loading="lazy"
                     decoding="async"
                   />
@@ -700,10 +857,10 @@ const contextCards = [
               </p>
 
               <p class="mec-compass__body">
-                Most distributor lists in China are scraped. A thousand names by lunchtime,
-                almost none right for your brand. BeyondCompass replaces that with a curated
-                shortlist, backed by two decades of meetings across five categories:
-                beauty, food and beverage, fashion, wellness, pet.
+                Most distributor lists in China are scraped. A thousand names by lunchtime, almost
+                none right for your brand. Compass replaces that with a curated shortlist,
+                backed by two decades of meetings across five categories: beauty, food and beverage,
+                fashion, wellness, pet.
               </p>
 
               <ul class="mec-compass__stats">
@@ -713,140 +870,326 @@ const contextCards = [
                 </li>
                 <li>
                   <span class="mec-compass__stat-num">Five</span>
-                  <span class="mec-compass__stat-label">categories: beauty, F&amp;B, fashion, wellness, pet</span>
+                  <span class="mec-compass__stat-label"
+                    >categories: beauty, F&amp;B, fashion, wellness, pet</span
+                  >
                 </li>
                 <li>
                   <span class="mec-compass__stat-num">Seven</span>
-                  <span class="mec-compass__stat-label">offices and reps in China, Europe and the US</span>
+                  <span class="mec-compass__stat-label"
+                    >offices and reps in China, Europe and the US</span
+                  >
                 </li>
               </ul>
 
               <div class="mec-compass__actions">
                 <a
-                  href="https://beyondcompass.beyondbordergroup.com/en"
+                  href="https://compass.bearingbridge.com/en"
                   class="btn mec-compass__btn-primary"
                   target="_blank"
                   rel="noopener"
                 >
-                  Explore BeyondCompass
+                  Explore Compass
                   <span aria-hidden="true" class="mec-compass__btn-arrow">↗</span>
                 </a>
-                <a href="/contact" class="btn mec-compass__btn-ghost">
-                  Brief us on your search
-                </a>
+                <a href="/contact" class="btn mec-compass__btn-ghost"> Brief us on your search </a>
               </div>
             </div>
 
             <div class="mec-compass__art" aria-hidden="true">
-              <svg viewBox="0 0 440 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A stack of vetted partner records with verified check badges and a 100% vetted seal">
+              <svg
+                viewBox="0 0 440 480"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="A stack of vetted partner records with verified check badges and a 100% vetted seal"
+              >
                 <defs>
                   <pattern id="cmp-grid" width="22" height="22" patternUnits="userSpaceOnUse">
-                    <circle cx="1" cy="1" r="1" fill="#C8102E" fill-opacity="0.10"/>
+                    <circle cx="1" cy="1" r="1" fill="#C8102E" fill-opacity="0.10"></circle>
                   </pattern>
                   <linearGradient id="cmp-card-soft" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#13283b"/>
-                    <stop offset="100%" stop-color="#0c1c2b"/>
+                    <stop offset="0%" stop-color="#13283b"></stop>
+                    <stop offset="100%" stop-color="#0c1c2b"></stop>
                   </linearGradient>
                   <linearGradient id="cmp-card-active" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#C8102E"/>
-                    <stop offset="100%" stop-color="#A50C26"/>
+                    <stop offset="0%" stop-color="#C8102E"></stop>
+                    <stop offset="100%" stop-color="#A50C26"></stop>
                   </linearGradient>
                   <linearGradient id="cmp-fade" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#0e2030" stop-opacity="0"/>
-                    <stop offset="100%" stop-color="#0e2030" stop-opacity="0.85"/>
+                    <stop offset="0%" stop-color="#0e2030" stop-opacity="0"></stop>
+                    <stop offset="100%" stop-color="#0e2030" stop-opacity="0.85"></stop>
                   </linearGradient>
                   <filter id="cmp-glow" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur stdDeviation="6"/>
-                    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                    <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                    <feMerge
+                      ><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"
+                      ></feMergeNode></feMerge
+                    >
                   </filter>
                 </defs>
 
                 {/* Grid background */}
-                <rect width="440" height="480" fill="url(#cmp-grid)"/>
+                <rect width="440" height="480" fill="url(#cmp-grid)"></rect>
 
                 {/* Scraped pile (faded reject stack at the bottom) */}
                 <g class="cmp-scraped" opacity="0.35">
-                  <rect x="40" y="380" width="280" height="14" rx="4" fill="#3a4a5c"/>
-                  <rect x="60" y="402" width="240" height="12" rx="4" fill="#33424f"/>
-                  <rect x="48" y="422" width="270" height="11" rx="4" fill="#2b3946"/>
-                  <rect x="70" y="441" width="200" height="10" rx="4" fill="#243140"/>
-                  <line x1="40" y1="368" x2="370" y2="368" stroke="#E84A60" stroke-opacity="0.25" stroke-dasharray="2 4" stroke-width="1"/>
-                  <text x="40" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.12em" font-weight="700" fill="#E84A60" fill-opacity="0.55">SCRAPED, NOT KEPT</text>
+                  <rect x="40" y="380" width="280" height="14" rx="4" fill="#3a4a5c"></rect>
+                  <rect x="60" y="402" width="240" height="12" rx="4" fill="#33424f"></rect>
+                  <rect x="48" y="422" width="270" height="11" rx="4" fill="#2b3946"></rect>
+                  <rect x="70" y="441" width="200" height="10" rx="4" fill="#243140"></rect>
+                  <line
+                    x1="40"
+                    y1="368"
+                    x2="370"
+                    y2="368"
+                    stroke="#E84A60"
+                    stroke-opacity="0.25"
+                    stroke-dasharray="2 4"
+                    stroke-width="1"></line>
+                  <text
+                    x="40"
+                    y="362"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="10"
+                    letter-spacing="0.12em"
+                    font-weight="700"
+                    fill="#E84A60"
+                    fill-opacity="0.55">SCRAPED, NOT KEPT</text
+                  >
                 </g>
-                <rect x="0" y="340" width="440" height="140" fill="url(#cmp-fade)" pointer-events="none"/>
+                <rect
+                  x="0"
+                  y="340"
+                  width="440"
+                  height="140"
+                  fill="url(#cmp-fade)"
+                  pointer-events="none"></rect>
 
                 {/* Database label */}
-                <text x="40" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" letter-spacing="0.18em" font-weight="700" fill="#C8102E">BEYONDCOMPASS DATABASE</text>
-                <line x1="40" y1="58" x2="200" y2="58" stroke="#C8102E" stroke-opacity="0.4" stroke-width="1"/>
+                <text
+                  x="40"
+                  y="48"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                  font-size="10"
+                  letter-spacing="0.18em"
+                  font-weight="700"
+                  fill="#C8102E">BEYONDCOMPASS DATABASE</text
+                >
+                <line
+                  x1="40"
+                  y1="58"
+                  x2="200"
+                  y2="58"
+                  stroke="#C8102E"
+                  stroke-opacity="0.4"
+                  stroke-width="1"></line>
 
                 {/* Card 4 (back) */}
                 <g class="cmp-card cmp-card--4" transform="translate(50 78)">
-                  <rect width="320" height="56" rx="10" fill="url(#cmp-card-soft)" stroke="#E84A60" stroke-opacity="0.18"/>
-                  <circle cx="30" cy="28" r="12" fill="#E84A60" fill-opacity="0.35"/>
-                  <text x="30" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#fff" fill-opacity="0.55" text-anchor="middle">M</text>
-                  <rect x="54" y="16" width="160" height="9" rx="2" fill="#fff" fill-opacity="0.45"/>
-                  <rect x="54" y="32" width="100" height="7" rx="2" fill="#fff" fill-opacity="0.22"/>
+                  <rect
+                    width="320"
+                    height="56"
+                    rx="10"
+                    fill="url(#cmp-card-soft)"
+                    stroke="#E84A60"
+                    stroke-opacity="0.18"></rect>
+                  <circle cx="30" cy="28" r="12" fill="#E84A60" fill-opacity="0.35"></circle>
+                  <text
+                    x="30"
+                    y="32"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="11"
+                    font-weight="700"
+                    fill="#fff"
+                    fill-opacity="0.55"
+                    text-anchor="middle">M</text
+                  >
+                  <rect x="54" y="16" width="160" height="9" rx="2" fill="#fff" fill-opacity="0.45"
+                  ></rect>
+                  <rect x="54" y="32" width="100" height="7" rx="2" fill="#fff" fill-opacity="0.22"
+                  ></rect>
                   <g class="cmp-check">
-                    <circle cx="290" cy="28" r="11" fill="#C8102E"/>
-                    <path d="M284 28 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="290" cy="28" r="11" fill="#C8102E"></circle>
+                    <path
+                      d="M284 28 l4 4 l8 -8"
+                      stroke="#fff"
+                      stroke-width="2.2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
                   </g>
                 </g>
 
                 {/* Card 3 */}
                 <g class="cmp-card cmp-card--3" transform="translate(35 142)">
-                  <rect width="340" height="58" rx="10" fill="url(#cmp-card-soft)" stroke="#E84A60" stroke-opacity="0.22"/>
-                  <circle cx="32" cy="29" r="13" fill="#E84A60" fill-opacity="0.45"/>
-                  <text x="32" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#fff" fill-opacity="0.7" text-anchor="middle">J</text>
-                  <rect x="58" y="16" width="180" height="9" rx="2" fill="#fff" fill-opacity="0.6"/>
-                  <rect x="58" y="33" width="120" height="7" rx="2" fill="#fff" fill-opacity="0.3"/>
+                  <rect
+                    width="340"
+                    height="58"
+                    rx="10"
+                    fill="url(#cmp-card-soft)"
+                    stroke="#E84A60"
+                    stroke-opacity="0.22"></rect>
+                  <circle cx="32" cy="29" r="13" fill="#E84A60" fill-opacity="0.45"></circle>
+                  <text
+                    x="32"
+                    y="33"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="12"
+                    font-weight="700"
+                    fill="#fff"
+                    fill-opacity="0.7"
+                    text-anchor="middle">J</text
+                  >
+                  <rect x="58" y="16" width="180" height="9" rx="2" fill="#fff" fill-opacity="0.6"
+                  ></rect>
+                  <rect x="58" y="33" width="120" height="7" rx="2" fill="#fff" fill-opacity="0.3"
+                  ></rect>
                   <g class="cmp-check">
-                    <circle cx="310" cy="29" r="12" fill="#C8102E"/>
-                    <path d="M304 29 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="310" cy="29" r="12" fill="#C8102E"></circle>
+                    <path
+                      d="M304 29 l4 4 l8 -8"
+                      stroke="#fff"
+                      stroke-width="2.2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
                   </g>
                 </g>
 
                 {/* Card 2 */}
                 <g class="cmp-card cmp-card--2" transform="translate(50 210)">
-                  <rect width="320" height="58" rx="10" fill="url(#cmp-card-soft)" stroke="#E84A60" stroke-opacity="0.3"/>
-                  <circle cx="32" cy="29" r="13" fill="#E84A60" fill-opacity="0.6"/>
-                  <text x="32" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#fff" fill-opacity="0.85" text-anchor="middle">Z</text>
-                  <rect x="58" y="16" width="170" height="9" rx="2" fill="#fff" fill-opacity="0.75"/>
-                  <rect x="58" y="33" width="110" height="7" rx="2" fill="#fff" fill-opacity="0.38"/>
+                  <rect
+                    width="320"
+                    height="58"
+                    rx="10"
+                    fill="url(#cmp-card-soft)"
+                    stroke="#E84A60"
+                    stroke-opacity="0.3"></rect>
+                  <circle cx="32" cy="29" r="13" fill="#E84A60" fill-opacity="0.6"></circle>
+                  <text
+                    x="32"
+                    y="33"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="12"
+                    font-weight="700"
+                    fill="#fff"
+                    fill-opacity="0.85"
+                    text-anchor="middle">Z</text
+                  >
+                  <rect x="58" y="16" width="170" height="9" rx="2" fill="#fff" fill-opacity="0.75"
+                  ></rect>
+                  <rect x="58" y="33" width="110" height="7" rx="2" fill="#fff" fill-opacity="0.38"
+                  ></rect>
                   <g class="cmp-check">
-                    <circle cx="290" cy="29" r="12" fill="#C8102E"/>
-                    <path d="M284 29 l4 4 l8 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="290" cy="29" r="12" fill="#C8102E"></circle>
+                    <path
+                      d="M284 29 l4 4 l8 -8"
+                      stroke="#fff"
+                      stroke-width="2.2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
                   </g>
                 </g>
 
                 {/* Card 1 (front, highlighted) */}
-                <g class="cmp-card cmp-card--1" transform="translate(28 278)" filter="url(#cmp-glow)">
-                  <rect width="360" height="68" rx="12" fill="url(#cmp-card-active)"/>
-                  <circle cx="36" cy="34" r="16" fill="#fff" fill-opacity="0.95"/>
-                  <text x="36" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#A50C26" text-anchor="middle">天</text>
-                  <rect x="64" y="19" width="200" height="11" rx="2" fill="#fff" fill-opacity="0.96"/>
-                  <rect x="64" y="38" width="140" height="9" rx="2" fill="#fff" fill-opacity="0.65"/>
+                <g
+                  class="cmp-card cmp-card--1"
+                  transform="translate(28 278)"
+                  filter="url(#cmp-glow)"
+                >
+                  <rect width="360" height="68" rx="12" fill="url(#cmp-card-active)"></rect>
+                  <circle cx="36" cy="34" r="16" fill="#fff" fill-opacity="0.95"></circle>
+                  <text
+                    x="36"
+                    y="39"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="14"
+                    font-weight="700"
+                    fill="#A50C26"
+                    text-anchor="middle">天</text
+                  >
+                  <rect x="64" y="19" width="200" height="11" rx="2" fill="#fff" fill-opacity="0.96"
+                  ></rect>
+                  <rect x="64" y="38" width="140" height="9" rx="2" fill="#fff" fill-opacity="0.65"
+                  ></rect>
                   <g class="cmp-check cmp-check--big">
-                    <circle cx="328" cy="34" r="15" fill="#fff"/>
-                    <path d="M320 34 l5 5 l11 -10" stroke="#C8102E" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="328" cy="34" r="15" fill="#fff"></circle>
+                    <path
+                      d="M320 34 l5 5 l11 -10"
+                      stroke="#C8102E"
+                      stroke-width="3"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
                   </g>
                   {/* "live / kept current" pulse dot */}
-                  <circle class="cmp-live" cx="349" cy="13" r="4" fill="#E84A60"/>
+                  <circle class="cmp-live" cx="349" cy="13" r="4" fill="#E84A60"></circle>
                 </g>
 
                 {/* 100% VETTED seal — outside the cards, top-right */}
                 <g class="cmp-seal" transform="translate(322 24)">
-                  <circle cx="46" cy="46" r="46" fill="none" stroke="#E84A60" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="3 5"/>
-                  <circle cx="46" cy="46" r="36" fill="#0a1a28" stroke="#E84A60" stroke-opacity="0.6" stroke-width="1.5"/>
-                  <text x="46" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0.04em">100%</text>
-                  <line x1="22" y1="46" x2="70" y2="46" stroke="#E84A60" stroke-opacity="0.5" stroke-width="1"/>
-                  <text x="46" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#C8102E" text-anchor="middle" letter-spacing="0.22em">VETTED</text>
+                  <circle
+                    cx="46"
+                    cy="46"
+                    r="46"
+                    fill="none"
+                    stroke="#E84A60"
+                    stroke-opacity="0.5"
+                    stroke-width="1"
+                    stroke-dasharray="3 5"></circle>
+                  <circle
+                    cx="46"
+                    cy="46"
+                    r="36"
+                    fill="#0a1a28"
+                    stroke="#E84A60"
+                    stroke-opacity="0.6"
+                    stroke-width="1.5"></circle>
+                  <text
+                    x="46"
+                    y="40"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="14"
+                    font-weight="800"
+                    fill="#fff"
+                    text-anchor="middle"
+                    letter-spacing="0.04em">100%</text
+                  >
+                  <line
+                    x1="22"
+                    y1="46"
+                    x2="70"
+                    y2="46"
+                    stroke="#E84A60"
+                    stroke-opacity="0.5"
+                    stroke-width="1"></line>
+                  <text
+                    x="46"
+                    y="60"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                    font-size="9"
+                    font-weight="700"
+                    fill="#C8102E"
+                    text-anchor="middle"
+                    letter-spacing="0.22em">VETTED</text
+                  >
                 </g>
               </svg>
 
               <ul class="mec-compass__art-key">
-                <li><span class="mec-compass__art-dot mec-compass__art-dot--vetted"></span>Hand-vetted, met in person</li>
-                <li><span class="mec-compass__art-dot mec-compass__art-dot--live"></span>Relationships kept current</li>
-                <li><span class="mec-compass__art-dot mec-compass__art-dot--reject"></span>Scraped lists, not in our database</li>
+                <li>
+                  <span class="mec-compass__art-dot mec-compass__art-dot--vetted"
+                  ></span>Hand-vetted, met in person
+                </li>
+                <li>
+                  <span class="mec-compass__art-dot mec-compass__art-dot--live"></span>Relationships
+                  kept current
+                </li>
+                <li>
+                  <span class="mec-compass__art-dot mec-compass__art-dot--reject"></span>Scraped
+                  lists, not in our database
+                </li>
               </ul>
             </div>
           </div>
@@ -855,18 +1198,32 @@ const contextCards = [
         <div class="mec-compass-tiers">
           <article class="mec-compass-tier mec-reveal">
             <span class="mec-compass-tier__label">Shortlist</span>
-            <p class="mec-compass-tier__lead">Three to five vetted names, tuned to your category and stage. Delivered in two to three weeks.</p>
-            <span class="mec-compass-tier__when">Right when you know the brief and need the introductions, fast.</span>
+            <p class="mec-compass-tier__lead">
+              Three to five vetted names, tuned to your category and stage. Delivered in two to
+              three weeks.
+            </p>
+            <span class="mec-compass-tier__when"
+              >Right when you know the brief and need the introductions, fast.</span
+            >
           </article>
           <article class="mec-compass-tier mec-reveal" style="--reveal-delay: 80ms;">
             <span class="mec-compass-tier__label">Market map</span>
-            <p class="mec-compass-tier__lead">Fifteen to twenty comparable options across the landscape. Delivered in three to six weeks.</p>
-            <span class="mec-compass-tier__when">Right when you want the full picture before you commit.</span>
+            <p class="mec-compass-tier__lead">
+              Fifteen to twenty comparable options across the landscape. Delivered in three to six
+              weeks.
+            </p>
+            <span class="mec-compass-tier__when"
+              >Right when you want the full picture before you commit.</span
+            >
           </article>
           <article class="mec-compass-tier mec-reveal" style="--reveal-delay: 160ms;">
             <span class="mec-compass-tier__label">Replacement</span>
-            <p class="mec-compass-tier__lead">Unwind an underperforming partner. Source the next one. Manage the handover.</p>
-            <span class="mec-compass-tier__when">Right when the relationship has stopped working and you need a clean exit.</span>
+            <p class="mec-compass-tier__lead">
+              Unwind an underperforming partner. Source the next one. Manage the handover.
+            </p>
+            <span class="mec-compass-tier__when"
+              >Right when the relationship has stopped working and you need a clean exit.</span
+            >
           </article>
         </div>
       </div>
@@ -879,46 +1236,66 @@ const contextCards = [
           <span class="eyebrow">FAQ</span>
           <h2>Twenty questions, answered straight</h2>
           <p class="section-header__lead">
-            The practical questions we field from founders and operators
-            considering a China entry. Filter by topic.
+            The practical questions we field from founders and operators considering a China entry.
+            Filter by topic.
           </p>
         </header>
 
-        <div class="mec-faq-filter mec-reveal" data-faq-filter role="tablist" aria-label="Filter FAQs by category">
-          {faqCategories.map((c, i) => (
-            <button
-              type="button"
-              class={`mec-faq-chip${i === 0 ? ' is-active' : ''}`}
-              role="tab"
-              aria-selected={i === 0 ? 'true' : 'false'}
-              data-faq-cat={c}
-            >
-              <span class="mec-faq-chip__label">{c}</span>
-              <span class="mec-faq-chip__count">{c === 'All' ? faqs.length : faqs.filter((f) => f.cat === c).length}</span>
-            </button>
-          ))}
+        <div
+          class="mec-faq-filter mec-reveal"
+          data-faq-filter
+          role="tablist"
+          aria-label="Filter FAQs by category"
+        >
+          {
+            faqCategories.map((c, i) => (
+              <button
+                type="button"
+                class={`mec-faq-chip${i === 0 ? ' is-active' : ''}`}
+                role="tab"
+                aria-selected={i === 0 ? 'true' : 'false'}
+                data-faq-cat={c}
+              >
+                <span class="mec-faq-chip__label">{c}</span>
+                <span class="mec-faq-chip__count">
+                  {c === 'All' ? faqs.length : faqs.filter((f) => f.cat === c).length}
+                </span>
+              </button>
+            ))
+          }
         </div>
 
         <div class="mec-faq" data-faq-list>
-          {faqs.map((f, i) => (
-            <details
-              class="mec-faq__item mec-reveal"
-              data-faq-cat={f.cat}
-              open={i === 0}
-              style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
-            >
-              <summary class="mec-faq__q">
-                <span class="mec-faq__cat-tag">{f.cat}</span>
-                <span class="mec-faq__q-text">{f.q}</span>
-                <span class="mec-faq__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </span>
-              </summary>
-              <div class="mec-faq__a">
-                <p>{f.a}</p>
-              </div>
-            </details>
-          ))}
+          {
+            faqs.map((f, i) => (
+              <details
+                class="mec-faq__item mec-reveal"
+                data-faq-cat={f.cat}
+                open={i === 0}
+                style={`--reveal-delay: ${Math.min(i, 6) * 40}ms;`}
+              >
+                <summary class="mec-faq__q">
+                  <span class="mec-faq__cat-tag">{f.cat}</span>
+                  <span class="mec-faq__q-text">{f.q}</span>
+                  <span class="mec-faq__icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </summary>
+                <div class="mec-faq__a">
+                  <p>{f.a}</p>
+                </div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -930,9 +1307,8 @@ const contextCards = [
           <span class="eyebrow eyebrow--on-dark">Let's talk</span>
           <h2 class="mec-cta__title">Thinking about expanding your brand to China?</h2>
           <p class="mec-cta__lead">
-            Tell us where you are today and where you would like to be. A senior
-            member of the team will reply within one working day. No sales funnel,
-            no auto-responder.
+            Tell us where you are today and where you would like to be. A senior member of the team
+            will reply within one working day. No sales funnel, no auto-responder.
           </p>
           <div class="mec-cta__actions">
             <a href="/contact" class="btn mec-cta__btn-primary">Start the conversation</a>
@@ -945,7 +1321,9 @@ const contextCards = [
 
   <style is:global>
     /* ---------- Container narrow helper ---------- */
-    .mec .container--narrow { max-width: 880px; }
+    .mec .container--narrow {
+      max-width: 880px;
+    }
 
     /* ---------- REVEAL + MOTION ---------- */
     @media (prefers-reduced-motion: no-preference) {
@@ -962,8 +1340,11 @@ const contextCards = [
       }
       .mec-magnetic {
         will-change: transform;
-        transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-                    box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+        transition:
+          transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          box-shadow 220ms ease,
+          background-color 200ms ease,
+          color 200ms ease;
       }
     }
 
@@ -981,7 +1362,7 @@ const contextCards = [
     .mec-progress__bar {
       height: 100%;
       width: var(--progress, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #C8102E 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 60%, #c8102e 100%);
       box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
       transition: width 80ms linear;
     }
@@ -997,14 +1378,25 @@ const contextCards = [
       overflow: hidden;
       isolation: isolate;
     }
-    body:has(.mec-hero) .mec-hero { padding-top: clamp(140px, 14vh, 180px); }
+    body:has(.mec-hero) .mec-hero {
+      padding-top: clamp(140px, 14vh, 180px);
+    }
     @media (max-width: 1024px) {
-      body:has(.mec-hero) .mec-hero { padding-top: clamp(120px, 12vh, 148px); }
+      body:has(.mec-hero) .mec-hero {
+        padding-top: clamp(120px, 12vh, 148px);
+      }
     }
     @media (max-width: 720px) {
-      .mec-hero { min-height: clamp(520px, 80vh, 680px); padding-bottom: clamp(64px, 9vh, 96px); }
+      .mec-hero {
+        min-height: clamp(520px, 80vh, 680px);
+        padding-bottom: clamp(64px, 9vh, 96px);
+      }
     }
-    .mec-hero__bg { position: absolute; inset: -10% 0 0; z-index: -3; }
+    .mec-hero__bg {
+      position: absolute;
+      inset: -10% 0 0;
+      z-index: -3;
+    }
     .mec-hero__bg img {
       width: 100%;
       height: 110%;
@@ -1015,26 +1407,33 @@ const contextCards = [
       filter: saturate(0.95);
     }
     .mec-hero__overlay {
-      position: absolute; inset: 0; z-index: -2;
+      position: absolute;
+      inset: 0;
+      z-index: -2;
       background:
-        linear-gradient(110deg,
+        linear-gradient(
+          110deg,
           rgba(6, 14, 22, 0.94) 0%,
           rgba(6, 14, 22, 0.82) 38%,
           rgba(6, 14, 22, 0.55) 80%,
-          rgba(6, 14, 22, 0.4) 100%),
-        radial-gradient(120% 80% at 0% 100%,
-          rgba(200, 16, 46, 0.3) 0%,
-          rgba(200, 16, 46, 0) 60%);
+          rgba(6, 14, 22, 0.4) 100%
+        ),
+        radial-gradient(120% 80% at 0% 100%, rgba(200, 16, 46, 0.3) 0%, rgba(200, 16, 46, 0) 60%);
     }
     .mec-hero__grain {
-      position: absolute; inset: 0; z-index: -1;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
       background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
       background-size: 3px 3px;
       mix-blend-mode: overlay;
       opacity: 0.45;
       pointer-events: none;
     }
-    .mec-hero__inner { max-width: 980px; position: relative; }
+    .mec-hero__inner {
+      max-width: 980px;
+      position: relative;
+    }
     .mec-hero__crumbs {
       margin-bottom: var(--space-4);
       font-size: var(--fs-small);
@@ -1043,12 +1442,17 @@ const contextCards = [
       align-items: center;
       color: rgba(255, 255, 255, 0.7);
     }
-    .mec-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
-    .mec-hero__crumbs a:hover { color: var(--bbg-white); }
+    .mec-hero__crumbs a {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+    .mec-hero__crumbs a:hover {
+      color: var(--bbg-white);
+    }
     .mec-hero__inner .eyebrow--on-dark {
       display: inline-block;
       margin-bottom: var(--space-3);
-      color: #C8102E;
+      color: #c8102e;
     }
     .mec-hero__title {
       font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
@@ -1062,9 +1466,11 @@ const contextCards = [
       flex-direction: column;
       gap: 0.05em;
     }
-    .mec-hero__title-row { display: block; }
+    .mec-hero__title-row {
+      display: block;
+    }
     .mec-hero__title-row--accent {
-      color: #C8102E;
+      color: #c8102e;
       font-weight: 500;
       font-style: italic;
       letter-spacing: -0.018em;
@@ -1076,21 +1482,25 @@ const contextCards = [
       padding: 0 0.15em;
     }
     .mec-hero__title-row--highlight::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0.04em;
       height: 0.18em;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px;
       transform-origin: left center;
       animation: mec-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
       z-index: -1;
     }
     @keyframes mec-underline {
-      from { transform: scaleX(0); }
-      to { transform: scaleX(1); }
+      from {
+        transform: scaleX(0);
+      }
+      to {
+        transform: scaleX(1);
+      }
     }
     .mec-hero__lead {
       font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
@@ -1099,8 +1509,15 @@ const contextCards = [
       max-width: 58ch;
       margin: 0 0 var(--space-5);
     }
-    .mec-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-6); }
-    .mec-magnetic:hover { transform: translateY(-2px); }
+    .mec-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+    .mec-magnetic:hover {
+      transform: translateY(-2px);
+    }
     .mec-hero__meta {
       display: flex;
       flex-wrap: wrap;
@@ -1109,14 +1526,18 @@ const contextCards = [
       border-top: 1px solid rgba(255, 255, 255, 0.14);
       max-width: 720px;
     }
-    .mec-hero__meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .mec-hero__meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
     .mec-hero__meta-num {
       font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1;
       color: var(--bbg-white);
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .mec-hero__meta-label {
       font-size: 0.85rem;
@@ -1138,7 +1559,9 @@ const contextCards = [
       font-weight: 600;
       transition: color 200ms ease;
     }
-    .mec-hero__scroll:hover { color: var(--bbg-white); }
+    .mec-hero__scroll:hover {
+      color: var(--bbg-white);
+    }
     .mec-hero__scroll-line {
       width: 1px;
       height: 40px;
@@ -1147,7 +1570,7 @@ const contextCards = [
       overflow: hidden;
     }
     .mec-hero__scroll-line::after {
-      content: "";
+      content: '';
       position: absolute;
       top: -100%;
       left: 0;
@@ -1157,12 +1580,20 @@ const contextCards = [
       animation: mec-scroll-tick 1.8s ease-in-out infinite;
     }
     @keyframes mec-scroll-tick {
-      0% { top: -50%; }
-      100% { top: 100%; }
+      0% {
+        top: -50%;
+      }
+      100% {
+        top: 100%;
+      }
     }
     @media (max-width: 720px) {
-      .mec-hero__scroll { display: none; }
-      .mec-hero__meta { gap: var(--space-4); }
+      .mec-hero__scroll {
+        display: none;
+      }
+      .mec-hero__meta {
+        gap: var(--space-4);
+      }
     }
 
     /* ---------- SECTION HEADER LEAD ---------- */
@@ -1187,7 +1618,9 @@ const contextCards = [
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
     }
     .mec-context__card:hover {
       border-color: var(--bbg-blue);
@@ -1210,8 +1643,12 @@ const contextCards = [
       display: block;
       transition: transform 600ms var(--ease);
     }
-    .mec-context__card:hover .mec-context__media img { transform: scale(1.03); }
-    .mec-context__body { padding: var(--space-6) var(--space-7) var(--space-7); }
+    .mec-context__card:hover .mec-context__media img {
+      transform: scale(1.03);
+    }
+    .mec-context__body {
+      padding: var(--space-6) var(--space-7) var(--space-7);
+    }
     .mec-context__card h3 {
       font-size: clamp(1.25rem, 1vw + 0.75rem, 1.625rem);
       line-height: 1.25;
@@ -1225,8 +1662,12 @@ const contextCards = [
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .mec-context { grid-template-columns: 1fr; }
-      .mec-context__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+      .mec-context {
+        grid-template-columns: 1fr;
+      }
+      .mec-context__body {
+        padding: var(--space-5) var(--space-6) var(--space-6);
+      }
     }
 
     /* ---------- VALUE + PROMISES ---------- */
@@ -1272,7 +1713,9 @@ const contextCards = [
       flex-direction: column;
       gap: var(--space-5);
     }
-    .mec-promise > li:first-child .eyebrow { margin-bottom: 0; }
+    .mec-promise > li:first-child .eyebrow {
+      margin-bottom: 0;
+    }
     .mec-promise__item {
       display: grid;
       grid-template-columns: 32px 1fr;
@@ -1290,7 +1733,10 @@ const contextCards = [
       justify-content: center;
       flex-shrink: 0;
     }
-    .mec-promise__check svg { width: 16px; height: 16px; }
+    .mec-promise__check svg {
+      width: 16px;
+      height: 16px;
+    }
     .mec-promise__item h4 {
       font-size: 1.125rem;
       margin: 0 0 var(--space-2);
@@ -1304,11 +1750,18 @@ const contextCards = [
       margin: 0;
     }
     @media (max-width: 1024px) {
-      .mec-value { grid-template-columns: 1fr; gap: var(--space-6); }
+      .mec-value {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
     }
 
     /* ---------- MODELS SECTION BACKGROUND ---------- */
-    .mec-models-section { position: relative; isolation: isolate; overflow: hidden; }
+    .mec-models-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .mec-models-section__bg {
       position: absolute;
       top: 0;
@@ -1328,7 +1781,11 @@ const contextCards = [
       object-position: center;
       filter: saturate(0.6);
     }
-    @media (max-width: 900px) { .mec-models-section__bg { display: none; } }
+    @media (max-width: 900px) {
+      .mec-models-section__bg {
+        display: none;
+      }
+    }
 
     /* ---------- SELL IN / SELL OUT ROUTES ---------- */
     .mec-routes {
@@ -1345,20 +1802,32 @@ const contextCards = [
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: transform 380ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+      transition:
+        transform 380ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
     }
     .mec-route:hover {
       transform: translateY(-4px);
       border-color: var(--bbg-blue);
-      box-shadow: 0 24px 50px -28px rgba(200, 16, 46, 0.45), 0 6px 14px -8px rgba(0, 0, 0, 0.08);
+      box-shadow:
+        0 24px 50px -28px rgba(200, 16, 46, 0.45),
+        0 6px 14px -8px rgba(0, 0, 0, 0.08);
     }
     /* Dim the other route on hover */
-    .mec-routes:hover .mec-route { opacity: 0.7; transition: opacity 280ms ease; }
-    .mec-routes .mec-route:hover { opacity: 1; }
-    .mec-route--featured { border-color: rgba(200, 16, 46, 0.35); }
+    .mec-routes:hover .mec-route {
+      opacity: 0.7;
+      transition: opacity 280ms ease;
+    }
+    .mec-routes .mec-route:hover {
+      opacity: 1;
+    }
+    .mec-route--featured {
+      border-color: rgba(200, 16, 46, 0.35);
+    }
     .mec-route--featured::before {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
       pointer-events: none;
@@ -1379,7 +1848,9 @@ const contextCards = [
       display: block;
       transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .mec-route:hover .mec-route__media img { transform: scale(1.04); }
+    .mec-route:hover .mec-route__media img {
+      transform: scale(1.04);
+    }
     .mec-route__pill {
       position: absolute;
       top: var(--space-4);
@@ -1422,7 +1893,11 @@ const contextCards = [
       flex-grow: 1;
       z-index: 2;
     }
-    .mec-route__head { display: flex; flex-direction: column; gap: 0.4rem; }
+    .mec-route__head {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
     .mec-route__title {
       font-size: clamp(1.5rem, 1.4vw + 1rem, 1.875rem);
       line-height: 1.15;
@@ -1465,7 +1940,9 @@ const contextCards = [
       color: var(--bbg-ink);
       font-weight: 700;
     }
-    .mec-route__split-label-end { color: var(--bbg-text-muted); }
+    .mec-route__split-label-end {
+      color: var(--bbg-text-muted);
+    }
     .mec-route__split-bar {
       display: flex;
       height: 12px;
@@ -1476,21 +1953,33 @@ const contextCards = [
     }
     .mec-route__split-bar-you {
       width: var(--w, 0%);
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 6px 0 0 6px;
       animation: route-grow 800ms cubic-bezier(0.16, 1, 0.3, 1) 200ms both;
     }
     .mec-route__split-bar-them {
       width: var(--w, 0%);
-      background: repeating-linear-gradient(45deg, var(--bbg-text-muted) 0 4px, rgba(107, 107, 107, 0.6) 4px 8px);
+      background: repeating-linear-gradient(
+        45deg,
+        var(--bbg-text-muted) 0 4px,
+        rgba(107, 107, 107, 0.6) 4px 8px
+      );
       border-radius: 0 6px 6px 0;
       animation: route-grow 800ms cubic-bezier(0.16, 1, 0.3, 1) 300ms both;
     }
     .mec-route__split-bar-you:only-child,
-    .mec-route__split-bar-them:only-child { border-radius: 6px; }
+    .mec-route__split-bar-them:only-child {
+      border-radius: 6px;
+    }
     @keyframes route-grow {
-      from { transform: scaleX(0); transform-origin: left center; }
-      to { transform: scaleX(1); transform-origin: left center; }
+      from {
+        transform: scaleX(0);
+        transform-origin: left center;
+      }
+      to {
+        transform: scaleX(1);
+        transform-origin: left center;
+      }
     }
     .mec-route__split-caption {
       font-size: 0.72rem;
@@ -1519,7 +2008,9 @@ const contextCards = [
       padding: 0.55rem 0;
       border-bottom: 1px solid var(--bbg-border);
     }
-    .mec-route__dim:last-child { border-bottom: none; }
+    .mec-route__dim:last-child {
+      border-bottom: none;
+    }
     .mec-route__dim-label {
       color: var(--bbg-text);
       font-weight: 500;
@@ -1536,7 +2027,9 @@ const contextCards = [
       background: var(--bbg-border);
       transition: background 240ms ease;
     }
-    .mec-route__dim-dot.is-on { background: var(--bbg-blue); }
+    .mec-route__dim-dot.is-on {
+      background: var(--bbg-blue);
+    }
     .mec-route__dim-value {
       font-size: 0.85rem;
       font-weight: 700;
@@ -1547,7 +2040,10 @@ const contextCards = [
       flex-shrink: 0;
     }
     @media (max-width: 640px) {
-      .mec-route__dim-value { min-width: 0; font-size: 0.8rem; }
+      .mec-route__dim-value {
+        min-width: 0;
+        font-size: 0.8rem;
+      }
     }
 
     /* Lists block */
@@ -1567,7 +2063,9 @@ const contextCards = [
       color: var(--bbg-blue);
       margin-bottom: var(--space-3);
     }
-    .mec-route__list--muted .mec-route__list-label { color: var(--bbg-text-muted); }
+    .mec-route__list--muted .mec-route__list-label {
+      color: var(--bbg-text-muted);
+    }
     .mec-route__list ul {
       list-style: none;
       padding: 0;
@@ -1596,7 +2094,10 @@ const contextCards = [
       justify-content: center;
       margin-top: 1px;
     }
-    .mec-route__check svg { width: 11px; height: 11px; }
+    .mec-route__check svg {
+      width: 11px;
+      height: 11px;
+    }
     .mec-route__dash {
       display: inline-block;
       width: 12px;
@@ -1642,14 +2143,22 @@ const contextCards = [
       display: inline-block;
       transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
     }
-    .mec-route__cta:hover .mec-route__cta-arrow { transform: translateX(4px); }
+    .mec-route__cta:hover .mec-route__cta-arrow {
+      transform: translateX(4px);
+    }
 
     @media (max-width: 1024px) {
-      .mec-routes { grid-template-columns: 1fr; }
+      .mec-routes {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 560px) {
-      .mec-route__lists { grid-template-columns: 1fr; }
-      .mec-route__body { padding: var(--space-5); }
+      .mec-route__lists {
+        grid-template-columns: 1fr;
+      }
+      .mec-route__body {
+        padding: var(--space-5);
+      }
     }
 
     /* ---------- BUSINESS MODELS TABS ---------- */
@@ -1679,13 +2188,23 @@ const contextCards = [
       flex-direction: column;
       gap: 0.35rem;
       color: var(--bbg-text-muted);
-      transition: color 240ms ease, background 240ms ease;
+      transition:
+        color 240ms ease,
+        background 240ms ease;
       border-right: 1px solid var(--bbg-border);
       font-family: inherit;
     }
-    .mec-tabs__tab:last-child { border-right: none; }
-    .mec-tabs__tab:hover { color: var(--bbg-ink); background: rgba(200, 16, 46, 0.04); }
-    .mec-tabs__tab.is-active { color: var(--bbg-ink); background: var(--bbg-white); }
+    .mec-tabs__tab:last-child {
+      border-right: none;
+    }
+    .mec-tabs__tab:hover {
+      color: var(--bbg-ink);
+      background: rgba(200, 16, 46, 0.04);
+    }
+    .mec-tabs__tab.is-active {
+      color: var(--bbg-ink);
+      background: var(--bbg-white);
+    }
     .mec-tabs__tab-label {
       font-size: 1.0625rem;
       font-weight: 700;
@@ -1697,7 +2216,9 @@ const contextCards = [
       color: var(--bbg-text-muted);
       line-height: 1.35;
     }
-    .mec-tabs__tab.is-active .mec-tabs__tab-tag { color: var(--bbg-blue); }
+    .mec-tabs__tab.is-active .mec-tabs__tab-tag {
+      color: var(--bbg-blue);
+    }
     .mec-tabs__tab-pop {
       position: absolute;
       top: var(--space-3);
@@ -1717,30 +2238,48 @@ const contextCards = [
       left: 0;
       width: 50%;
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px 2px 0 0;
       transform: translateX(0);
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
     }
-    .mec-tabs__panels { background: var(--bbg-white); }
+    .mec-tabs__panels {
+      background: var(--bbg-white);
+    }
     .mec-tabs__panel {
       padding: clamp(var(--space-5), 4vw + 1rem, var(--space-7));
       animation: mec-tab-in 360ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes mec-tab-in {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .mec-tabs__panel[hidden] { display: none; }
+    .mec-tabs__panel[hidden] {
+      display: none;
+    }
     .mec-tabs__panel-grid {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       gap: clamp(var(--space-5), 3vw, var(--space-7));
       align-items: start;
     }
-    .mec-tabs__lead { display: flex; flex-direction: column; gap: var(--space-4); }
-    .mec-tabs__pillset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .mec-tabs__lead {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .mec-tabs__pillset {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
     .mec-tabs__pill {
       font-size: 0.78rem;
       font-weight: 600;
@@ -1781,14 +2320,26 @@ const contextCards = [
       color: var(--bbg-blue);
       margin-bottom: 0.35rem;
     }
-    .mec-tabs__when p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--bbg-text); }
-    .mec-tabs__body { display: flex; flex-direction: column; gap: var(--space-4); }
+    .mec-tabs__when p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    .mec-tabs__body {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
     .mec-tabs__list-wrap {
       background: var(--bbg-surface);
       border-radius: var(--radius-md);
       padding: var(--space-5);
     }
-    .mec-tabs__list-wrap--muted { background: var(--bbg-white); border: 1px solid var(--bbg-border); }
+    .mec-tabs__list-wrap--muted {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+    }
     .mec-tabs__list-label {
       display: block;
       font-size: 0.72rem;
@@ -1827,8 +2378,13 @@ const contextCards = [
       flex-shrink: 0;
       margin-top: 1px;
     }
-    .mec-tabs__check svg { width: 12px; height: 12px; }
-    .mec-tabs__list--muted li { grid-template-columns: 14px 1fr; }
+    .mec-tabs__check svg {
+      width: 12px;
+      height: 12px;
+    }
+    .mec-tabs__list--muted li {
+      grid-template-columns: 14px 1fr;
+    }
     .mec-tabs__dot {
       display: inline-block;
       width: 8px;
@@ -1862,17 +2418,30 @@ const contextCards = [
       line-height: 1.4;
     }
     @media (max-width: 1024px) {
-      .mec-tabs__nav { grid-template-columns: repeat(2, 1fr); }
-      .mec-tabs__panel-grid { grid-template-columns: 1fr; }
+      .mec-tabs__nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .mec-tabs__panel-grid {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 560px) {
-      .mec-tabs__nav { grid-template-columns: 1fr; }
-      .mec-tabs__tab { border-right: none; border-bottom: 1px solid var(--bbg-border); }
-      .mec-tabs__indicator { display: none; }
+      .mec-tabs__nav {
+        grid-template-columns: 1fr;
+      }
+      .mec-tabs__tab {
+        border-right: none;
+        border-bottom: 1px solid var(--bbg-border);
+      }
+      .mec-tabs__indicator {
+        display: none;
+      }
     }
 
     /* ---------- PHASE PANEL (new visual layout) ---------- */
-    .mec-phase-panel { padding: 0 !important; }
+    .mec-phase-panel {
+      padding: 0 !important;
+    }
     .mec-phase {
       display: grid;
       grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
@@ -1894,7 +2463,7 @@ const contextCards = [
       display: block;
     }
     .mec-phase__media::after {
-      content: "";
+      content: '';
       position: absolute;
       inset: 0;
       background: linear-gradient(180deg, rgba(8, 18, 28, 0) 50%, rgba(8, 18, 28, 0.75) 100%);
@@ -1935,7 +2504,10 @@ const contextCards = [
       border-radius: 999px;
       box-shadow: 0 4px 12px -4px rgba(8, 18, 28, 0.35);
     }
-    .mec-phase__media-duration svg { width: 14px; height: 14px; }
+    .mec-phase__media-duration svg {
+      width: 14px;
+      height: 14px;
+    }
 
     .mec-phase__content {
       padding: clamp(var(--space-5), 2.4vw + 1rem, var(--space-7));
@@ -1960,7 +2532,10 @@ const contextCards = [
       color: var(--bbg-blue);
       box-shadow: inset 0 0 0 1px rgba(200, 16, 46, 0.15);
     }
-    .mec-phase__icon svg { width: 26px; height: 26px; }
+    .mec-phase__icon svg {
+      width: 26px;
+      height: 26px;
+    }
     .mec-phase__phase-label {
       display: block;
       font-size: 0.7rem;
@@ -2068,7 +2643,10 @@ const contextCards = [
       justify-content: center;
       margin-top: 1px;
     }
-    .mec-phase__check svg { width: 11px; height: 11px; }
+    .mec-phase__check svg {
+      width: 11px;
+      height: 11px;
+    }
 
     /* Document tiles */
     .mec-phase__docs {
@@ -2088,7 +2666,10 @@ const contextCards = [
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
       border-radius: 10px;
-      transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+      transition:
+        border-color 220ms ease,
+        transform 220ms ease,
+        box-shadow 220ms ease;
       animation: phase-fade-in 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
       animation-delay: calc(var(--seq, 0) * 90ms + 200ms);
     }
@@ -2108,7 +2689,10 @@ const contextCards = [
       color: var(--bbg-blue);
       flex-shrink: 0;
     }
-    .mec-phase__doc-icon svg { width: 18px; height: 18px; }
+    .mec-phase__doc-icon svg {
+      width: 18px;
+      height: 18px;
+    }
     .mec-phase__doc-name {
       font-size: 0.9rem;
       line-height: 1.35;
@@ -2118,28 +2702,47 @@ const contextCards = [
     }
 
     @keyframes phase-fade-in {
-      from { opacity: 0; transform: translateY(6px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     @media (prefers-reduced-motion: reduce) {
       .mec-phase__checks li,
-      .mec-phase__doc { animation: none; }
+      .mec-phase__doc {
+        animation: none;
+      }
     }
 
     @media (max-width: 1024px) {
-      .mec-phase { grid-template-columns: 1fr; }
-      .mec-phase__media img { min-height: 0; aspect-ratio: 16 / 9; }
+      .mec-phase {
+        grid-template-columns: 1fr;
+      }
+      .mec-phase__media img {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+      }
     }
     @media (max-width: 600px) {
-      .mec-phase__columns { grid-template-columns: 1fr; }
+      .mec-phase__columns {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- TABS — PHASES VARIANT (4 columns, eyebrow above label) ---------- */
-    .mec-tabs__nav--phases { grid-template-columns: repeat(4, 1fr); }
+    .mec-tabs__nav--phases {
+      grid-template-columns: repeat(4, 1fr);
+    }
     .mec-tabs__nav--phases + .mec-tabs__panels {
       /* keep panel layout shared */
     }
-    .mec-tabs--phases .mec-tabs__tab { gap: 0.5rem; }
+    .mec-tabs--phases .mec-tabs__tab {
+      gap: 0.5rem;
+    }
     .mec-tabs__tab-eyebrow {
       font-size: 0.68rem;
       font-weight: 700;
@@ -2172,14 +2775,23 @@ const contextCards = [
       flex-shrink: 0;
       box-shadow: inset 0 0 0 1px rgba(200, 16, 46, 0.15);
     }
-    .mec-phase-head__icon svg { width: 22px; height: 22px; }
-    .mec-phase-head .mec-tabs__title { margin: 0; }
+    .mec-phase-head__icon svg {
+      width: 22px;
+      height: 22px;
+    }
+    .mec-phase-head .mec-tabs__title {
+      margin: 0;
+    }
 
     @media (max-width: 1024px) {
-      .mec-tabs__nav--phases { grid-template-columns: repeat(2, 1fr); }
+      .mec-tabs__nav--phases {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (max-width: 560px) {
-      .mec-tabs__nav--phases { grid-template-columns: 1fr; }
+      .mec-tabs__nav--phases {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- MATRIX ---------- */
@@ -2191,7 +2803,10 @@ const contextCards = [
       padding: clamp(var(--space-5), 3vw + 1rem, var(--space-7));
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
     }
-    .mec-matrix__intro { text-align: center; margin-bottom: var(--space-6); }
+    .mec-matrix__intro {
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
     .mec-matrix__intro h3 {
       font-size: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
       margin: var(--space-2) 0 var(--space-3);
@@ -2220,7 +2835,9 @@ const contextCards = [
       background: var(--bbg-white);
       padding: var(--space-4);
     }
-    .mec-matrix__corner { background: var(--bbg-surface); }
+    .mec-matrix__corner {
+      background: var(--bbg-surface);
+    }
     .mec-matrix__head {
       background: var(--bbg-surface);
       font-size: 0.85rem;
@@ -2253,7 +2870,9 @@ const contextCards = [
       text-align: left;
       font-family: inherit;
     }
-    .mec-matrix__cell:hover { background: var(--bbg-blue-light); }
+    .mec-matrix__cell:hover {
+      background: var(--bbg-blue-light);
+    }
     .mec-matrix__cell:focus-visible {
       outline: 3px solid var(--bbg-blue);
       outline-offset: -3px;
@@ -2277,11 +2896,18 @@ const contextCards = [
       line-height: 1.65;
       font-size: 0.975rem;
     }
-    .mec-matrix__grid.is-hover-row .mec-matrix__cell { opacity: 0.4; }
+    .mec-matrix__grid.is-hover-row .mec-matrix__cell {
+      opacity: 0.4;
+    }
     .mec-matrix__grid.is-hover-row .mec-matrix__cell.is-row-active,
-    .mec-matrix__grid.is-hover-row .mec-matrix__cell.is-col-active { opacity: 1; background: var(--bbg-blue-light); }
+    .mec-matrix__grid.is-hover-row .mec-matrix__cell.is-col-active {
+      opacity: 1;
+      background: var(--bbg-blue-light);
+    }
     .mec-matrix__grid.is-hover-row .mec-matrix__row-head,
-    .mec-matrix__grid.is-hover-row .mec-matrix__head { opacity: 0.4; }
+    .mec-matrix__grid.is-hover-row .mec-matrix__head {
+      opacity: 0.4;
+    }
     .mec-matrix__grid.is-hover-row .mec-matrix__row-head.is-active,
     .mec-matrix__grid.is-hover-row .mec-matrix__head.is-active {
       opacity: 1;
@@ -2289,9 +2915,16 @@ const contextCards = [
       color: var(--bbg-white);
     }
     @media (max-width: 720px) {
-      .mec-matrix__grid { grid-template-columns: 1fr 1fr; }
-      .mec-matrix__corner { display: none; }
-      .mec-matrix__head { font-size: 0.75rem; padding: var(--space-3); }
+      .mec-matrix__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .mec-matrix__corner {
+        display: none;
+      }
+      .mec-matrix__head {
+        font-size: 0.75rem;
+        padding: var(--space-3);
+      }
       .mec-matrix__row-head {
         grid-column: 1 / -1;
         background: var(--bbg-blue-light);
@@ -2302,24 +2935,37 @@ const contextCards = [
     }
 
     /* ---------- JOURNEY (vertical timeline) ---------- */
-    .mec-journey-section { position: relative; isolation: isolate; overflow: hidden; }
+    .mec-journey-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
     .mec-journey-section__bg {
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       z-index: -2;
-      opacity: 0.10;
+      opacity: 0.1;
       pointer-events: none;
     }
     .mec-journey-section__bg::after {
-      content: "";
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, var(--bbg-surface) 0%, rgba(247, 249, 251, 0.6) 40%, rgba(247, 249, 251, 0.9) 100%);
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        var(--bbg-surface) 0%,
+        rgba(247, 249, 251, 0.6) 40%,
+        rgba(247, 249, 251, 0.9) 100%
+      );
     }
     .mec-journey-section__bg img {
-      width: 100%; height: 100%;
-      object-fit: cover; object-position: center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       filter: saturate(0.55);
     }
 
@@ -2337,7 +2983,8 @@ const contextCards = [
       width: 2px;
     }
     .mec-journey__rail-track {
-      position: absolute; inset: 0;
+      position: absolute;
+      inset: 0;
       background: var(--bbg-border);
       border-radius: 2px;
     }
@@ -2347,7 +2994,7 @@ const contextCards = [
       left: 0;
       width: 100%;
       height: var(--journey-progress, 0%);
-      background: linear-gradient(180deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(180deg, var(--bbg-blue) 0%, #e84a60 100%);
       border-radius: 2px;
       transition: height 120ms linear;
       box-shadow: 0 0 8px rgba(200, 16, 46, 0.4);
@@ -2360,7 +3007,9 @@ const contextCards = [
       flex-direction: column;
       gap: var(--space-7);
     }
-    .mec-journey__item { position: relative; }
+    .mec-journey__item {
+      position: relative;
+    }
     .mec-journey__dot {
       position: absolute;
       left: -64px;
@@ -2381,9 +3030,13 @@ const contextCards = [
       height: 16px;
       border-radius: 50%;
       background: var(--bbg-border);
-      transition: background 320ms ease, transform 320ms ease;
+      transition:
+        background 320ms ease,
+        transform 320ms ease;
     }
-    .mec-journey__item.is-active .mec-journey__dot { border-color: var(--bbg-blue); }
+    .mec-journey__item.is-active .mec-journey__dot {
+      border-color: var(--bbg-blue);
+    }
     .mec-journey__item.is-active .mec-journey__dot-inner {
       background: var(--bbg-blue);
       transform: scale(1.1);
@@ -2399,7 +3052,9 @@ const contextCards = [
       margin-bottom: var(--space-3);
       transition: color 320ms ease;
     }
-    .mec-journey__item.is-active .mec-journey__phase { color: var(--bbg-blue); }
+    .mec-journey__item.is-active .mec-journey__phase {
+      color: var(--bbg-blue);
+    }
     .mec-journey__card {
       background: var(--bbg-white);
       border: 1px solid var(--bbg-border);
@@ -2408,7 +3063,10 @@ const contextCards = [
       display: flex;
       flex-direction: column;
       gap: var(--space-4);
-      transition: border-color 320ms ease, box-shadow 320ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 320ms ease,
+        box-shadow 320ms ease,
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .mec-journey__item:hover .mec-journey__card,
     .mec-journey__item.is-active .mec-journey__card {
@@ -2432,7 +3090,10 @@ const contextCards = [
       color: var(--bbg-blue);
       flex-shrink: 0;
     }
-    .mec-journey__icon svg { width: 24px; height: 24px; }
+    .mec-journey__icon svg {
+      width: 24px;
+      height: 24px;
+    }
     .mec-journey__title {
       font-size: clamp(1.25rem, 1vw + 0.875rem, 1.625rem);
       line-height: 1.2;
@@ -2463,7 +3124,9 @@ const contextCards = [
       color: var(--bbg-text-muted);
       margin-bottom: var(--space-3);
     }
-    .mec-journey__label--blue { color: var(--bbg-blue); }
+    .mec-journey__label--blue {
+      color: var(--bbg-blue);
+    }
     .mec-journey__bullets {
       list-style: none;
       padding: 0;
@@ -2480,7 +3143,7 @@ const contextCards = [
       font-size: 0.95rem;
     }
     .mec-journey__bullets li::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0.55em;
@@ -2489,15 +3152,34 @@ const contextCards = [
       border-radius: 50%;
       background: var(--bbg-border);
     }
-    .mec-journey__bullets--blue li::before { background: var(--bbg-blue); }
+    .mec-journey__bullets--blue li::before {
+      background: var(--bbg-blue);
+    }
 
     @media (max-width: 720px) {
-      .mec-journey { padding-left: 40px; }
-      .mec-journey__rail { left: 16px; }
-      .mec-journey__dot { left: -40px; width: 36px; height: 36px; top: 4px; }
-      .mec-journey__dot-inner { width: 12px; height: 12px; }
-      .mec-journey__card { padding: var(--space-5); }
-      .mec-journey__grid { grid-template-columns: 1fr; gap: var(--space-4); }
+      .mec-journey {
+        padding-left: 40px;
+      }
+      .mec-journey__rail {
+        left: 16px;
+      }
+      .mec-journey__dot {
+        left: -40px;
+        width: 36px;
+        height: 36px;
+        top: 4px;
+      }
+      .mec-journey__dot-inner {
+        width: 12px;
+        height: 12px;
+      }
+      .mec-journey__card {
+        padding: var(--space-5);
+      }
+      .mec-journey__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
     }
 
     /* ---------- BEYONDCOMPASS ---------- */
@@ -2554,7 +3236,9 @@ const contextCards = [
       display: block;
     }
     @media (max-width: 1024px) {
-      .mec-compass__grid { grid-template-columns: 1fr; }
+      .mec-compass__grid {
+        grid-template-columns: 1fr;
+      }
     }
     .mec-compass__chip {
       display: inline-block;
@@ -2562,7 +3246,7 @@ const contextCards = [
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #C8102E;
+      color: #c8102e;
       background: rgba(200, 16, 46, 0.18);
       padding: 0.4em 0.85em;
       border-radius: 999px;
@@ -2603,8 +3287,8 @@ const contextCards = [
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1;
-      color: #C8102E;
-      font-feature-settings: "tnum";
+      color: #c8102e;
+      font-feature-settings: 'tnum';
     }
     .mec-compass__stat-label {
       font-size: 0.85rem;
@@ -2648,10 +3332,15 @@ const contextCards = [
       color: var(--bbg-white);
     }
     @media (max-width: 1024px) {
-      .mec-compass__stats { grid-template-columns: repeat(2, 1fr); }
+      .mec-compass__stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (max-width: 560px) {
-      .mec-compass__stats { grid-template-columns: 1fr; gap: var(--space-4); }
+      .mec-compass__stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
     }
 
     /* ---------- COMPASS ART (vetted database SVG) ---------- */
@@ -2676,17 +3365,33 @@ const contextCards = [
     .mec-compass__art .cmp-card {
       animation: cmp-fade-in 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
     }
-    .mec-compass__art .cmp-card--4 { animation-delay: 80ms; }
-    .mec-compass__art .cmp-card--3 { animation-delay: 200ms; }
-    .mec-compass__art .cmp-card--2 { animation-delay: 320ms; }
-    .mec-compass__art .cmp-card--1 { animation-delay: 460ms; }
+    .mec-compass__art .cmp-card--4 {
+      animation-delay: 80ms;
+    }
+    .mec-compass__art .cmp-card--3 {
+      animation-delay: 200ms;
+    }
+    .mec-compass__art .cmp-card--2 {
+      animation-delay: 320ms;
+    }
+    .mec-compass__art .cmp-card--1 {
+      animation-delay: 460ms;
+    }
     .mec-compass__art .cmp-check {
       animation: cmp-fade-in 500ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
     }
-    .mec-compass__art .cmp-card--4 .cmp-check { animation-delay: 360ms; }
-    .mec-compass__art .cmp-card--3 .cmp-check { animation-delay: 480ms; }
-    .mec-compass__art .cmp-card--2 .cmp-check { animation-delay: 600ms; }
-    .mec-compass__art .cmp-card--1 .cmp-check { animation-delay: 740ms; }
+    .mec-compass__art .cmp-card--4 .cmp-check {
+      animation-delay: 360ms;
+    }
+    .mec-compass__art .cmp-card--3 .cmp-check {
+      animation-delay: 480ms;
+    }
+    .mec-compass__art .cmp-card--2 .cmp-check {
+      animation-delay: 600ms;
+    }
+    .mec-compass__art .cmp-card--1 .cmp-check {
+      animation-delay: 740ms;
+    }
     .mec-compass__art .cmp-seal {
       animation: cmp-fade-in 800ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
     }
@@ -2694,18 +3399,29 @@ const contextCards = [
       animation: cmp-live-pulse 2.2s ease-in-out 1.5s infinite;
     }
     @keyframes cmp-fade-in {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
     @keyframes cmp-live-pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.35; }
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.35;
+      }
     }
     @media (prefers-reduced-motion: reduce) {
       .mec-compass__art .cmp-card,
       .mec-compass__art .cmp-check,
       .mec-compass__art .cmp-seal,
-      .mec-compass__art .cmp-live { animation: none; }
+      .mec-compass__art .cmp-live {
+        animation: none;
+      }
     }
     .mec-compass__art-key {
       list-style: none;
@@ -2735,16 +3451,27 @@ const contextCards = [
       background: var(--bbg-blue);
       box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.2);
     }
-    .mec-compass__art-dot--vetted { background: #fff; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15); }
-    .mec-compass__art-dot--live { background: #E84A60; box-shadow: 0 0 0 3px rgba(91, 194, 240, 0.25); }
+    .mec-compass__art-dot--vetted {
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15);
+    }
+    .mec-compass__art-dot--live {
+      background: #e84a60;
+      box-shadow: 0 0 0 3px rgba(91, 194, 240, 0.25);
+    }
     .mec-compass__art-dot--reject {
       background: transparent;
       border: 1px dashed rgba(255, 255, 255, 0.4);
       box-shadow: none;
     }
     @media (max-width: 900px) {
-      .mec-compass__art > svg { max-width: 100%; margin: 0 auto; }
-      .mec-compass__art-key { margin: 0 auto; }
+      .mec-compass__art > svg {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .mec-compass__art-key {
+        margin: 0 auto;
+      }
     }
 
     /* ---------- COMPASS TIERS ---------- */
@@ -2763,16 +3490,19 @@ const contextCards = [
       display: flex;
       flex-direction: column;
       gap: var(--space-3);
-      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), border-color 280ms ease, box-shadow 280ms ease;
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 280ms ease,
+        box-shadow 280ms ease;
     }
     .mec-compass-tier::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: var(--space-6);
       right: var(--space-6);
       height: 3px;
-      background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+      background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
       transform: scaleX(0.3);
       transform-origin: left center;
       transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -2783,7 +3513,9 @@ const contextCards = [
       border-color: var(--bbg-blue);
       box-shadow: 0 16px 32px -20px rgba(200, 16, 46, 0.4);
     }
-    .mec-compass-tier:hover::before { transform: scaleX(1); }
+    .mec-compass-tier:hover::before {
+      transform: scaleX(1);
+    }
     .mec-compass-tier__label {
       font-size: 0.72rem;
       font-weight: 700;
@@ -2806,10 +3538,14 @@ const contextCards = [
       margin-top: auto;
     }
     @media (max-width: 1024px) {
-      .mec-compass-tiers { grid-template-columns: repeat(2, 1fr); }
+      .mec-compass-tiers {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (max-width: 600px) {
-      .mec-compass-tiers { grid-template-columns: 1fr; }
+      .mec-compass-tiers {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- FAQ FILTER ---------- */
@@ -2835,7 +3571,10 @@ const contextCards = [
       transition: all 220ms ease;
       font-family: inherit;
     }
-    .mec-faq-chip:hover { border-color: var(--bbg-blue); color: var(--bbg-blue); }
+    .mec-faq-chip:hover {
+      border-color: var(--bbg-blue);
+      color: var(--bbg-blue);
+    }
     .mec-faq-chip.is-active {
       background: var(--bbg-blue);
       border-color: var(--bbg-blue);
@@ -2850,7 +3589,10 @@ const contextCards = [
       color: var(--bbg-text-muted);
       transition: all 220ms ease;
     }
-    .mec-faq-chip:hover .mec-faq-chip__count { background: var(--bbg-blue-light); color: var(--bbg-blue); }
+    .mec-faq-chip:hover .mec-faq-chip__count {
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue);
+    }
     .mec-faq-chip.is-active .mec-faq-chip__count {
       background: rgba(255, 255, 255, 0.2);
       color: var(--bbg-white);
@@ -2867,7 +3609,10 @@ const contextCards = [
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-md);
       overflow: hidden;
-      transition: border-color 240ms ease, box-shadow 240ms ease, transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+      transition:
+        border-color 240ms ease,
+        box-shadow 240ms ease,
+        transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     .mec-faq__item:hover {
       transform: translateX(2px);
@@ -2877,7 +3622,9 @@ const contextCards = [
       border-color: var(--bbg-blue);
       box-shadow: 0 8px 22px -14px rgba(200, 16, 46, 0.4);
     }
-    .mec-faq__item.is-hidden { display: none; }
+    .mec-faq__item.is-hidden {
+      display: none;
+    }
     .mec-faq__q {
       cursor: pointer;
       padding: var(--space-5);
@@ -2892,9 +3639,15 @@ const contextCards = [
       list-style: none;
       transition: color var(--dur) var(--ease);
     }
-    .mec-faq__q::-webkit-details-marker { display: none; }
-    .mec-faq__q::marker { display: none; }
-    .mec-faq__item:hover .mec-faq__q { color: var(--bbg-blue); }
+    .mec-faq__q::-webkit-details-marker {
+      display: none;
+    }
+    .mec-faq__q::marker {
+      display: none;
+    }
+    .mec-faq__item:hover .mec-faq__q {
+      color: var(--bbg-blue);
+    }
     .mec-faq__cat-tag {
       display: inline-block;
       font-size: 0.68rem;
@@ -2908,7 +3661,9 @@ const contextCards = [
       margin-right: var(--space-3);
       flex-shrink: 0;
     }
-    .mec-faq__q-text { flex-grow: 1; }
+    .mec-faq__q-text {
+      flex-grow: 1;
+    }
     .mec-faq__icon {
       flex-shrink: 0;
       width: 28px;
@@ -2919,7 +3674,10 @@ const contextCards = [
       border-radius: 50%;
       background: var(--bbg-surface);
       color: var(--bbg-text-muted);
-      transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), color var(--dur) var(--ease), background var(--dur) var(--ease);
+      transition:
+        transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+        color var(--dur) var(--ease),
+        background var(--dur) var(--ease);
     }
     .mec-faq__item[open] .mec-faq__icon {
       transform: rotate(180deg);
@@ -2934,10 +3692,18 @@ const contextCards = [
       animation: mec-faq-in 320ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     @keyframes mec-faq-in {
-      from { opacity: 0; transform: translateY(-4px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .mec-faq__a p { margin: 0; }
+    .mec-faq__a p {
+      margin: 0;
+    }
 
     /* ---------- FINAL CTA ---------- */
     .mec-cta {
@@ -2950,13 +3716,17 @@ const contextCards = [
       overflow: hidden;
     }
     .mec-cta::before {
-      content: "";
+      content: '';
       position: absolute;
       top: -40%;
       right: -10%;
       width: 420px;
       height: 420px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 65%
+      );
       pointer-events: none;
     }
     .mec-cta .eyebrow--on-dark {
@@ -3016,14 +3786,17 @@ const contextCards = [
         if (reduced || !('IntersectionObserver' in window)) {
           revealEls.forEach((el) => el.classList.add('is-in'));
         } else {
-          const io = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-in');
-                io.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-in');
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+          );
           revealEls.forEach((el) => io.observe(el));
         }
       }
@@ -3045,14 +3818,17 @@ const contextCards = [
           };
           requestAnimationFrame(tick);
         };
-        const counterIo = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animate(entry.target);
-              counterIo.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.5 });
+        const counterIo = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animate(entry.target);
+                counterIo.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
         counters.forEach((el) => counterIo.observe(el));
       } else {
         counters.forEach((el) => {
@@ -3073,7 +3849,7 @@ const contextCards = [
           if (parallaxEl && heroEl && !reduced) {
             const heroH = heroEl.offsetHeight;
             if (scrollY < heroH) {
-              parallaxEl.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+              parallaxEl.style.setProperty('--parallax-y', scrollY * 0.18 + 'px');
             }
           }
           if (progressEl) {
@@ -3113,8 +3889,12 @@ const contextCards = [
 
       // 6. Tabs (business models + phases) — supports multiple [data-tabs] instances
       document.querySelectorAll('[data-tabs]').forEach((tabsRoot) => {
-        const tabs = Array.from(tabsRoot.querySelectorAll(':scope > .mec-tabs__nav .mec-tabs__tab'));
-        const panels = Array.from(tabsRoot.querySelectorAll(':scope > .mec-tabs__panels > .mec-tabs__panel'));
+        const tabs = Array.from(
+          tabsRoot.querySelectorAll(':scope > .mec-tabs__nav .mec-tabs__tab'),
+        );
+        const panels = Array.from(
+          tabsRoot.querySelectorAll(':scope > .mec-tabs__panels > .mec-tabs__panel'),
+        );
         const indicator = tabsRoot.querySelector(':scope > .mec-tabs__nav > .mec-tabs__indicator');
         if (!tabs.length || !panels.length) return;
         const setActive = (tab) => {

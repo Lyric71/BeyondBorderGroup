@@ -45,13 +45,17 @@ function buildEntry(slug, fm, body) {
     fm.author ? `Author: ${fm.author}` : null,
     fm.category ? `Category: ${fm.category}` : null,
     fm.description ? `\n${fm.description}` : null,
-  ].filter(Boolean).join('\n');
+  ]
+    .filter(Boolean)
+    .join('\n');
   return `${header}\n\n${body}\n\n---\n`;
 }
 
 function main() {
   const entries = [];
-  const files = readdirSync(SOURCE_DIR).filter((f) => f.endsWith('.md')).sort();
+  const files = readdirSync(SOURCE_DIR)
+    .filter((f) => f.endsWith('.md'))
+    .sort();
   for (const file of files) {
     const slug = file.replace(/\.md$/, '');
     const { frontmatter, body } = parseFrontmatter(readFileSync(join(SOURCE_DIR, file), 'utf8'));
@@ -67,7 +71,9 @@ function main() {
     '',
   ].join('\n');
   writeFileSync(TARGET, head + entries.join(''));
-  console.log(`Wrote ${TARGET} (${entries.length} articles, ${(head.length + entries.join('').length).toLocaleString()} bytes)`);
+  console.log(
+    `Wrote ${TARGET} (${entries.length} articles, ${(head.length + entries.join('').length).toLocaleString()} bytes)`,
+  );
 }
 
 main();

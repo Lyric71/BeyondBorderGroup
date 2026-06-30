@@ -35,10 +35,16 @@ const company = [
 
 const network = [
   {
-    name: 'NuvoraStudio.com',
-    href: 'https://nuvora.studio',
-    logo: '/Images/AgencyLogos/Nuvora%20PNG.webp',
-    desc: t('footer.net.nuvora.desc'),
+    name: 'BeyondBridge',
+    href: 'https://beyondbridge.com',
+    logo: '/Images/AgencyLogos/BeyondBridge-%20Logo-EN-4K-Transparent.webp',
+    desc: t('footer.net.beyondbridge.desc'),
+  },
+  {
+    name: 'BearingBridge AI',
+    href: 'https://www.bearingbridge.com',
+    logo: '/Images/AgencyLogos/BearingBridgeAI-horizontal.svg',
+    desc: t('footer.net.bearingbridgeai.desc'),
   },
   {
     name: 'ChinaWebFoundry.com',
@@ -47,16 +53,22 @@ const network = [
     desc: t('footer.net.chinawebfoundry.desc'),
   },
   {
-    name: 'BeyondCompass.com',
-    href: 'https://beyondcompass.beyondbordergroup.com',
-    logo: '/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp',
-    desc: t('footer.net.beyondcompass.desc'),
-  },
-  {
     name: 'TheRedScroll.com',
     href: 'https://theredscroll.com',
     logo: '/Images/AgencyLogos/TheredScroll%20PNG.webp',
     desc: t('footer.net.redscroll.desc'),
+  },
+  {
+    name: 'Compass',
+    href: 'https://compass.bearingbridge.com/en',
+    logo: '/Images/AgencyLogos/Compass%20-%20Horizontal.svg',
+    desc: t('footer.net.beyondcompass.desc'),
+  },
+  {
+    name: 'NuvoraStudio.com',
+    href: 'https://nuvora.studio',
+    logo: '/Images/AgencyLogos/Nuvora%20PNG.webp',
+    desc: t('footer.net.nuvora.desc'),
   },
   {
     name: 'HubStudio.ai',
@@ -71,19 +83,35 @@ const year = new Date().getFullYear();
 
 <footer class="footer">
   <div class="container">
-
     <div class="footer__top">
       <div class="footer__brand">
         <a href={lp('/')} class="footer__logo" aria-label={t('footer.aria.brand')}>
-          <img src="/Images/thechinapath-horizontal-light.png" alt="TheChinaPath" width="1205" height="518" />
+          <img
+            src="/Images/thechinapath-horizontal-light.png"
+            alt="TheChinaPath"
+            width="1205"
+            height="518"
+          />
         </a>
         <p class="footer__pitch">{t('footer.pitch')}</p>
         <p class="footer__cities">{t('footer.cities')}</p>
         <div class="footer__social">
-          <a href="https://www.linkedin.com/company/beyondbordergroup/" target="_blank" rel="noopener" aria-label={t('footer.social.linkedinAria')} class="footer__social-link">
+          <a
+            href="https://www.linkedin.com/company/beyondbordergroup/"
+            target="_blank"
+            rel="noopener"
+            aria-label={t('footer.social.linkedinAria')}
+            class="footer__social-link"
+          >
             <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="#0A66C2" d="M22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
-              <path fill="#FFFFFF" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/>
+              <path
+                fill="#0A66C2"
+                d="M22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"
+              ></path>
+              <path
+                fill="#FFFFFF"
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"
+              ></path>
             </svg>
             <span>{t('footer.social.linkedin')}</span>
           </a>
@@ -94,25 +122,49 @@ const year = new Date().getFullYear();
         <div class="footer__col">
           <h3>{t('footer.col.enter')}</h3>
           <ul>
-            {enterChina.map(item => <li><a href={item.href}>{item.label}</a></li>)}
+            {
+              enterChina.map((item) => (
+                <li>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))
+            }
           </ul>
         </div>
         <div class="footer__col">
           <h3>{t('footer.col.grow')}</h3>
           <ul>
-            {growChina.map(item => <li><a href={item.href}>{item.label}</a></li>)}
+            {
+              growChina.map((item) => (
+                <li>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))
+            }
           </ul>
         </div>
         <div class="footer__col">
           <h3>{t('footer.col.learn')}</h3>
           <ul>
-            {learnChina.map(item => <li><a href={item.href}>{item.label}</a></li>)}
+            {
+              learnChina.map((item) => (
+                <li>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))
+            }
           </ul>
         </div>
         <div class="footer__col">
           <h3>{t('footer.col.company')}</h3>
           <ul>
-            {company.map(item => <li><a href={item.href}>{item.label}</a></li>)}
+            {
+              company.map((item) => (
+                <li>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
@@ -121,30 +173,23 @@ const year = new Date().getFullYear();
     <section class="footer__network" aria-label={t('footer.network.aria')}>
       <span class="footer__network-label">{t('footer.network.label')}</span>
       <div class="footer__network-grid">
-        {network.map(agency => (
-          <a class="footer__network-card" href={agency.href} target="_blank" rel="noopener">
-            <span class="footer__network-card-logo">
-              <img src={agency.logo} alt={agency.name} width="320" height="80" loading="lazy" />
-            </span>
-            <span class="footer__network-card-name">{agency.name}</span>
-            <span class="footer__network-card-desc">{agency.desc}</span>
-          </a>
-        ))}
+        {
+          network.map((agency) => (
+            <a
+              class="footer__network-card"
+              href={agency.href}
+              target="_blank"
+              rel="noopener"
+              aria-label={agency.name}
+            >
+              <span class="footer__network-card-logo">
+                <img src={agency.logo} alt={agency.name} width="320" height="80" loading="lazy" />
+              </span>
+              <span class="footer__network-card-desc">{agency.desc}</span>
+            </a>
+          ))
+        }
       </div>
-
-      <a class="footer__parent" href="https://www.thechinapath.com/" target="_blank" rel="noopener">
-        <span class="footer__parent-logo">
-          <img src="/Images/AgencyLogos/thechinapath.png" alt="TheChinaPath" width="1205" height="518" loading="lazy" />
-        </span>
-        <span class="footer__parent-body">
-          <span class="footer__parent-eyebrow">{t('footer.parent.eyebrow')}</span>
-          <span class="footer__parent-name">{t('footer.parent.name')}</span>
-          <span class="footer__parent-desc">{t('footer.parent.desc')}</span>
-        </span>
-        <span class="footer__parent-cta">
-          {t('footer.parent.cta')} <span aria-hidden="true">→</span>
-        </span>
-      </a>
     </section>
 
     <div class="footer__bottom">
@@ -157,6 +202,5 @@ const year = new Date().getFullYear();
         <a href={lp('/cookie-policy')}>{t('footer.legal.cookie')}</a>
       </p>
     </div>
-
   </div>
 </footer>

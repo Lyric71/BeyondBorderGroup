@@ -33,7 +33,6 @@ const leadership = [
   title="Über TheChinaPath | Unsere Agentur in China"
   description="TheChinaPath ist eine Marketing- und eCommerce-Agentur mit Sitz in Shanghai, Hongkong und Paris. Zwanzig Jahre Erfahrung im chinesischen Markt, geführt von Senior-Praktikern."
 >
-
   <section class="hero-fullbleed">
     <picture>
       <img
@@ -52,9 +51,14 @@ const leadership = [
     <div class="container hero-fullbleed__inner">
       <div class="hero-fullbleed__copy">
         <span class="eyebrow eyebrow--on-dark">Über uns</span>
-        <h1 class="hero-fullbleed__title">Eine Agentur, geführt von Senior-Praktikern, die Tag für Tag im chinesischen Markt mitarbeiten.</h1>
+        <h1 class="hero-fullbleed__title">
+          Eine Agentur, geführt von Senior-Praktikern, die Tag für Tag im chinesischen Markt
+          mitarbeiten.
+        </h1>
         <p class="hero-fullbleed__lead">
-          TheChinaPath bringt internationale Marken nach China und führt sie dort durchs Tagesgeschäft auf Tmall, JD, Douyin, WeChat und RED. Drei Büros: Shanghai, Hongkong, Paris.
+          TheChinaPath bringt internationale Marken nach China und führt sie dort durchs
+          Tagesgeschäft auf Tmall, JD, Douyin, WeChat und RED. Drei Büros: Shanghai, Hongkong,
+          Paris.
         </p>
         <div class="hero-fullbleed__actions">
           <a class="btn btn--primary" href="/de/kontakt">Kontakt aufnehmen</a>
@@ -73,13 +77,22 @@ const leadership = [
 
       <article class="prose">
         <p>
-          Die Senioren bei TheChinaPath kommen aus vielen Jahren bei Publicis Shanghai und aus Fortune-500-Konzernen mit China-Geschäft. Markenstrategie, Media-Einkauf, eCommerce-Betrieb, Social Commerce auf Douyin, WeChat und RED, Produktlokalisierung. Markteintritt vom Geschäftsmodell über die Wahl des Vertriebspartners bis zur regulatorischen Umsetzung. Content-Produktion im grossen Stil, klassisch im Studio wie über KI-Pipelines.
+          Die Senioren bei TheChinaPath kommen aus vielen Jahren bei Publicis Shanghai und aus
+          Fortune-500-Konzernen mit China-Geschäft. Markenstrategie, Media-Einkauf,
+          eCommerce-Betrieb, Social Commerce auf Douyin, WeChat und RED, Produktlokalisierung.
+          Markteintritt vom Geschäftsmodell über die Wahl des Vertriebspartners bis zur
+          regulatorischen Umsetzung. Content-Produktion im grossen Stil, klassisch im Studio wie
+          über KI-Pipelines.
         </p>
         <p>
-          Wir arbeiten auf den Plattformen, mit den Budgets, unter Zeitdruck. Vom Spielfeldrand zu beraten ist nicht unser Geschäft. Wir steigen mit dem Team in Shanghai dort ein, wo die Entscheidung fällt, und bleiben dabei, bis der Verkauf im System steht.
+          Wir arbeiten auf den Plattformen, mit den Budgets, unter Zeitdruck. Vom Spielfeldrand zu
+          beraten ist nicht unser Geschäft. Wir steigen mit dem Team in Shanghai dort ein, wo die
+          Entscheidung fällt, und bleiben dabei, bis der Verkauf im System steht.
         </p>
         <p>
-          2023 haben wir uns selbständig gemacht, um Strategie und Umsetzung unter ein Dach zu bringen. Dieselben Senioren führen beide Bereiche. Die Erfahrung bleibt. Nur die Struktur ist neu.
+          2023 haben wir uns selbständig gemacht, um Strategie und Umsetzung unter ein Dach zu
+          bringen. Dieselben Senioren führen beide Bereiche. Die Erfahrung bleibt. Nur die Struktur
+          ist neu.
         </p>
       </article>
     </div>
@@ -91,18 +104,21 @@ const leadership = [
         <span class="eyebrow">Standorte</span>
         <h2>Drei Büros, eine Gruppe.</h2>
         <p class="section-header__lead">
-          Shanghai ist das operative Herz. Hongkong trägt die Cross-Border-Architektur. Paris ist der erste Kontaktpunkt für europäische Marken auf dem Weg nach China.
+          Shanghai ist das operative Herz. Hongkong trägt die Cross-Border-Architektur. Paris ist
+          der erste Kontaktpunkt für europäische Marken auf dem Weg nach China.
         </p>
       </header>
 
       <div class="offices-grid">
-        {offices.map((o) => (
-          <div class="office-card">
-            <span class="office-card__city">{o.city}</span>
-            <span class="office-card__role">{o.role}</span>
-            <p class="office-card__desc">{o.desc}</p>
-          </div>
-        ))}
+        {
+          offices.map((o) => (
+            <div class="office-card">
+              <span class="office-card__city">{o.city}</span>
+              <span class="office-card__role">{o.role}</span>
+              <p class="office-card__desc">{o.desc}</p>
+            </div>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -114,18 +130,27 @@ const leadership = [
         <h2>An der Spitze des Teams.</h2>
       </header>
 
-      {leadership.map((l) => (
-        <div class="leader-card">
-          <div class="leader-card__photo">
-            <img src={l.image} alt={l.name} loading="lazy" decoding="async" width="320" height="320" />
+      {
+        leadership.map((l) => (
+          <div class="leader-card">
+            <div class="leader-card__photo">
+              <img
+                src={l.image}
+                alt={l.name}
+                loading="lazy"
+                decoding="async"
+                width="320"
+                height="320"
+              />
+            </div>
+            <div class="leader-card__body">
+              <h3 class="leader-card__name">{l.name}</h3>
+              <span class="leader-card__role">{l.role}</span>
+              <p class="leader-card__bio">{l.bio}</p>
+            </div>
           </div>
-          <div class="leader-card__body">
-            <h3 class="leader-card__name">{l.name}</h3>
-            <span class="leader-card__role">{l.role}</span>
-            <p class="leader-card__bio">{l.bio}</p>
-          </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </section>
 
@@ -135,9 +160,7 @@ const leadership = [
         <div class="cta-card__copy">
           <span class="eyebrow">Sprechen wir</span>
           <h2>Sie denken über China nach? Reden wir bei einem Kaffee darüber.</h2>
-          <p>
-            Es antwortet jemand aus dem Senior-Team. Kein Chatbot, kein Verkaufstrichter.
-          </p>
+          <p>Es antwortet jemand aus dem Senior-Team. Kein Chatbot, kein Verkaufstrichter.</p>
           <div class="cta-card__actions">
             <a href="/de/kontakt" class="btn btn--primary">Gespräch beginnen</a>
           </div>
@@ -217,8 +240,14 @@ const leadership = [
   }
 
   @media (max-width: 800px) {
-    .offices-grid { grid-template-columns: 1fr; }
-    .leader-card { grid-template-columns: 1fr; }
-    .leader-card__photo img { max-width: 200px; }
+    .offices-grid {
+      grid-template-columns: 1fr;
+    }
+    .leader-card {
+      grid-template-columns: 1fr;
+    }
+    .leader-card__photo img {
+      max-width: 200px;
+    }
   }
 </style>

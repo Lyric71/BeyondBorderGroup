@@ -2,13 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 
 const bgWords = [
-  { text: '谢谢',    cls: 'w-1' },
-  { text: '上海',    cls: 'w-2' },
-  { text: 'Danke',   cls: 'w-3' },
-  { text: '香港',    cls: 'w-4' },
-  { text: 'Thanks',  cls: 'w-5' },
-  { text: 'Paris',   cls: 'w-6' },
-  { text: '谢谢',    cls: 'w-7' },
+  { text: '谢谢', cls: 'w-1' },
+  { text: '上海', cls: 'w-2' },
+  { text: 'Danke', cls: 'w-3' },
+  { text: '香港', cls: 'w-4' },
+  { text: 'Thanks', cls: 'w-5' },
+  { text: 'Paris', cls: 'w-6' },
+  { text: '谢谢', cls: 'w-7' },
 ];
 ---
 
@@ -40,9 +40,11 @@ const bgWords = [
       <p class="thanks__sub">Sie liegt jetzt in Shanghai auf dem Tisch.</p>
 
       <p class="thanks__body">
-        Jemand aus dem Strategie-Team liest sie noch heute und meldet sich binnen eines
-        Arbeitstages zurück, Montag bis Freitag, chinesischer Zeit. Wenn es eilt, schreiben Sie uns
-        direkt an <a class="thanks__mail" href="mailto:hello@thechinapath.com">hello@thechinapath.com</a>.
+        Jemand aus dem Strategie-Team liest sie noch heute und meldet sich binnen eines Arbeitstages
+        zurück, Montag bis Freitag, chinesischer Zeit. Wenn es eilt, schreiben Sie uns direkt an <a
+          class="thanks__mail"
+          href="mailto:hello@thechinapath.com">hello@thechinapath.com</a
+        >.
       </p>
 
       <div class="thanks__cta">
@@ -58,7 +60,8 @@ const bgWords = [
             <a href="/de/analysen" class="thanks__link">
               <span class="thanks__link-title">Analysen</span>
               <span class="thanks__link-text">
-                Was unser Team zu Tmall, Douyin und RED beobachtet, und was eine Marke in China tatsächlich wachsen lässt.
+                Was unser Team zu Tmall, Douyin und RED beobachtet, und was eine Marke in China
+                tatsächlich wachsen lässt.
               </span>
             </a>
           </li>
@@ -107,8 +110,8 @@ const bgWords = [
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(120% 80% at 70% 10%, rgba(200, 16, 46,0.18) 0%, rgba(0,0,0,0) 55%),
-      linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.85) 100%);
+      radial-gradient(120% 80% at 70% 10%, rgba(200, 16, 46, 0.18) 0%, rgba(0, 0, 0, 0) 55%),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.85) 100%);
   }
   .thanks__bg-words {
     position: absolute;
@@ -116,7 +119,7 @@ const bgWords = [
     margin: 0;
     padding: 0;
     list-style: none;
-    color: rgba(255,255,255,0.05);
+    color: rgba(255, 255, 255, 0.05);
     font-weight: 700;
     letter-spacing: -0.02em;
     user-select: none;
@@ -126,13 +129,41 @@ const bgWords = [
     line-height: 1;
     white-space: nowrap;
   }
-  .thanks__bg-words .w-1 { top:   6%; left:   4%; font-size: clamp(80px, 14vw, 220px); }
-  .thanks__bg-words .w-2 { top:  72%; left:   3%; font-size: clamp(70px, 11vw, 180px); }
-  .thanks__bg-words .w-3 { top:  18%; right:  4%; font-size: clamp(60px, 9vw, 150px); }
-  .thanks__bg-words .w-4 { top:  82%; right:  6%; font-size: clamp(70px, 12vw, 200px); }
-  .thanks__bg-words .w-5 { top:  46%; right: 18%; font-size: clamp(50px, 8vw, 130px); }
-  .thanks__bg-words .w-6 { top:  38%; left:  22%; font-size: clamp(45px, 7vw, 120px); }
-  .thanks__bg-words .w-7 { top:   2%; left:  55%; font-size: clamp(55px, 9vw, 140px); }
+  .thanks__bg-words .w-1 {
+    top: 6%;
+    left: 4%;
+    font-size: clamp(80px, 14vw, 220px);
+  }
+  .thanks__bg-words .w-2 {
+    top: 72%;
+    left: 3%;
+    font-size: clamp(70px, 11vw, 180px);
+  }
+  .thanks__bg-words .w-3 {
+    top: 18%;
+    right: 4%;
+    font-size: clamp(60px, 9vw, 150px);
+  }
+  .thanks__bg-words .w-4 {
+    top: 82%;
+    right: 6%;
+    font-size: clamp(70px, 12vw, 200px);
+  }
+  .thanks__bg-words .w-5 {
+    top: 46%;
+    right: 18%;
+    font-size: clamp(50px, 8vw, 130px);
+  }
+  .thanks__bg-words .w-6 {
+    top: 38%;
+    left: 22%;
+    font-size: clamp(45px, 7vw, 120px);
+  }
+  .thanks__bg-words .w-7 {
+    top: 2%;
+    left: 55%;
+    font-size: clamp(55px, 9vw, 140px);
+  }
 
   .thanks__container {
     position: relative;
@@ -165,7 +196,7 @@ const bgWords = [
   .thanks__body {
     font-size: var(--fs-lead);
     line-height: 1.6;
-    color: rgba(255,255,255,0.78);
+    color: rgba(255, 255, 255, 0.78);
     max-width: 620px;
     margin: 0 0 var(--space-6);
   }
@@ -175,7 +206,9 @@ const bgWords = [
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
   }
-  .thanks__mail:hover { color: var(--bbg-blue-light); }
+  .thanks__mail:hover {
+    color: var(--bbg-blue-light);
+  }
 
   .thanks__cta {
     display: flex;
@@ -184,16 +217,20 @@ const bgWords = [
     gap: var(--space-5);
     margin-bottom: var(--space-8);
   }
-  .thanks__btn { min-width: 200px; }
+  .thanks__btn {
+    min-width: 200px;
+  }
   .thanks__ghost {
     color: var(--bbg-white);
     padding: 0.875rem 0;
   }
-  .thanks__ghost:hover { color: var(--bbg-blue-light); }
+  .thanks__ghost:hover {
+    color: var(--bbg-blue-light);
+  }
 
   .thanks__while {
     padding-top: var(--space-5);
-    border-top: 1px solid rgba(255,255,255,0.12);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
     max-width: 720px;
   }
   .thanks__while .eyebrow {
@@ -210,17 +247,18 @@ const bgWords = [
   .thanks__link {
     display: block;
     padding: var(--space-4) var(--space-5);
-    border: 1px solid rgba(255,255,255,0.14);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: var(--radius-md);
     color: var(--bbg-white);
-    background: rgba(255,255,255,0.02);
-    transition: border-color var(--dur) var(--ease),
-                background var(--dur) var(--ease),
-                transform var(--dur) var(--ease);
+    background: rgba(255, 255, 255, 0.02);
+    transition:
+      border-color var(--dur) var(--ease),
+      background var(--dur) var(--ease),
+      transform var(--dur) var(--ease);
   }
   .thanks__link:hover {
     border-color: var(--bbg-blue);
-    background: rgba(200, 16, 46,0.08);
+    background: rgba(200, 16, 46, 0.08);
     transform: translateY(-2px);
     color: var(--bbg-white);
   }
@@ -234,18 +272,31 @@ const bgWords = [
   .thanks__link-text {
     display: block;
     font-size: var(--fs-small);
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     line-height: 1.5;
   }
 
   @media (max-width: 640px) {
-    .thanks { min-height: 0; padding-top: var(--space-7); padding-bottom: var(--space-7); }
-    .thanks__cta { gap: var(--space-4); }
-    .thanks__btn { width: 100%; min-width: 0; }
+    .thanks {
+      min-height: 0;
+      padding-top: var(--space-7);
+      padding-bottom: var(--space-7);
+    }
+    .thanks__cta {
+      gap: var(--space-4);
+    }
+    .thanks__btn {
+      width: 100%;
+      min-width: 0;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .thanks__link { transition: none; }
-    .thanks__link:hover { transform: none; }
+    .thanks__link {
+      transition: none;
+    }
+    .thanks__link:hover {
+      transform: none;
+    }
   }
 </style>

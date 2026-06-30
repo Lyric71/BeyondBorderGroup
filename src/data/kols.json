@@ -54,21 +54,13 @@
           "name_en": "Li Jiaqi / Austin Li",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "taobao-live"
-          ],
+          "platforms": ["douyin", "taobao-live"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 35M+ ; Weibo 7M+",
           "specialty": "Lipstick King; livestream beauty commerce, color cosmetics",
           "profile_url": "https://www.douyin.com/user/MS4wLjABAAAA5ZrIrbgva_HMeHuwQPnPnG7czHnY0Bvg4Q-Z3pTYcms",
-          "notable_brands": [
-            "L'Oreal",
-            "YSL Beauty",
-            "Estee Lauder",
-            "Lancome"
-          ],
+          "notable_brands": ["L'Oreal", "YSL Beauty", "Estee Lauder", "Lancome"],
           "source_note": "Source: Jiemian / Launchmetrics 2024 ranking",
           "avatar_initials": "李佳"
         },
@@ -79,22 +71,13 @@
           "name_en": "Doudou Babe",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu"
-          ],
+          "platforms": ["douyin", "xiaohongshu"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 12.5M ; XHS 4M",
           "specialty": "Cross-cultural makeup parodies, transformation looks",
           "profile_url": "https://www.douyin.com/user/doudoubabe",
-          "notable_brands": [
-            "Lancome",
-            "Charlotte Tilbury",
-            "YSL",
-            "Chanel",
-            "OLAY"
-          ],
+          "notable_brands": ["Lancome", "Charlotte Tilbury", "YSL", "Chanel", "OLAY"],
           "source_note": "Source: Baidu Baike Nov 2023",
           "avatar_initials": "豆豆"
         },
@@ -105,20 +88,13 @@
           "name_en": "Luo Wangyu",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu"
-          ],
+          "platforms": ["douyin", "xiaohongshu"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 17M+",
           "specialty": "Skincare reviews, foundation analysis; former Tom Ford artist",
           "profile_url": "https://www.douyin.com/user/luowangyu",
-          "notable_brands": [
-            "Tom Ford",
-            "Helena Rubinstein",
-            "Estee Lauder"
-          ],
+          "notable_brands": ["Tom Ford", "Helena Rubinstein", "Estee Lauder"],
           "source_note": "Source: Sina Tech Oct 2024",
           "avatar_initials": "骆王"
         },
@@ -129,23 +105,13 @@
           "name_en": "Ximen Dasao",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "weibo",
-            "wechat"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "weibo", "wechat"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "All-network 22M+",
           "specialty": "Premium/luxury beauty seeding, skincare + fashion editorial",
           "profile_url": "https://weibo.com/ximendasao",
-          "notable_brands": [
-            "YSL Beauty",
-            "Estee Lauder",
-            "Burberry Beauty",
-            "逐本"
-          ],
+          "notable_brands": ["YSL Beauty", "Estee Lauder", "Burberry Beauty", "逐本"],
           "source_note": "Source: Xiguaji / public KOL data",
           "avatar_initials": "原来"
         },
@@ -156,23 +122,13 @@
           "name_en": "Midnight Teacher Xu",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu",
-            "weibo",
-            "wechat"
-          ],
+          "platforms": ["xiaohongshu", "weibo", "wechat"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "All-network ~10M ; Douyin 10M",
           "specialty": "Approachable everyday makeup, dupes, mass-market beauty",
           "profile_url": "https://weibo.com/shenyexulaoshi",
-          "notable_brands": [
-            "Estee Lauder",
-            "Tom Ford",
-            "Guerlain",
-            "Dior",
-            "L'Oreal"
-          ],
+          "notable_brands": ["Estee Lauder", "Tom Ford", "Guerlain", "Dior", "L'Oreal"],
           "source_note": "Source: CBNData / WeChat 深夜发媸",
           "avatar_initials": "深夜"
         },
@@ -183,19 +139,13 @@
           "name_en": "Pan Yurun",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 8.2M",
           "specialty": "#4 Douyin beauty livestream GMV (~620M RMB/year peak)",
           "profile_url": "https://www.douyin.com/user/panyurun",
-          "notable_brands": [
-            "Proya (珀莱雅)",
-            "Winona (薇诺娜)",
-            "韩束"
-          ],
+          "notable_brands": ["Proya (珀莱雅)", "Winona (薇诺娜)", "韩束"],
           "source_note": "Source: 美妆头条 / 163.com",
           "avatar_initials": "潘雨"
         },
@@ -206,21 +156,13 @@
           "name_en": "Dr. Big Mouth / Hao Yu",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "weibo"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 3.5M ; Weibo 1.7M",
           "specialty": "Science-based skincare; HKU PhD chemistry; ingredient analysis",
           "profile_url": "https://weibo.com/dazuiboshi",
-          "notable_brands": [
-            "Winona",
-            "华熙生物",
-            "L'Oreal science content"
-          ],
+          "notable_brands": ["Winona", "华熙生物", "L'Oreal science content"],
           "source_note": "Source: Weibo verified profile May 2025",
           "avatar_initials": "大嘴"
         },
@@ -231,19 +173,13 @@
           "name_en": "Jizhi de Dangmei",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "bilibili",
-            "weibo"
-          ],
+          "platforms": ["bilibili", "weibo"],
           "primary_platform": "bilibili",
           "primary_platform_label": "Bilibili (B站)",
           "followers_text": "Bilibili 6.8M peak",
           "specialty": "Cosplay/Hanfu transformation, Lolita, SFX makeup",
           "profile_url": "https://space.bilibili.com/7053884",
-          "notable_brands": [
-            "Perfect Diary (完美日记)",
-            "Florasis (花西子)"
-          ],
+          "notable_brands": ["Perfect Diary (完美日记)", "Florasis (花西子)"],
           "source_note": "Source: Bilibili / The Paper",
           "avatar_initials": "机智"
         },
@@ -254,21 +190,13 @@
           "name_en": "Benny Dong Zichu",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu",
-            "bilibili",
-            "weibo"
-          ],
+          "platforms": ["xiaohongshu", "bilibili", "weibo"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "Bilibili 1.2M ; all-network 5M+",
           "specialty": "Sharp/critical color cosmetics reviews; men's beauty perspective",
           "profile_url": "https://space.bilibili.com/2056481",
-          "notable_brands": [
-            "Maybelline",
-            "NARS (historical)",
-            "indie color cosmetics"
-          ],
+          "notable_brands": ["Maybelline", "NARS (historical)", "indie color cosmetics"],
           "source_note": "Source: Sohu / Zhihu",
           "avatar_initials": "Be"
         },
@@ -279,20 +207,13 @@
           "name_en": "PONY (Park Hye-min)",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu",
-            "weibo"
-          ],
+          "platforms": ["xiaohongshu", "weibo"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 4.56M",
           "specialty": "K-beauty makeup tutorials, beauty entrepreneur (PONY EFFECT)",
           "profile_url": "https://www.xiaohongshu.com/user/profile/pony",
-          "notable_brands": [
-            "PONY EFFECT (own brand)",
-            "Memebox",
-            "Etude House"
-          ],
+          "notable_brands": ["PONY EFFECT (own brand)", "Memebox", "Etude House"],
           "source_note": "Source: Xiaohongshu profile / 36Kr",
           "avatar_initials": "PO"
         }
@@ -312,11 +233,7 @@
           "name_en": "Tao Liang",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu",
-            "weibo",
-            "wechat"
-          ],
+          "platforms": ["xiaohongshu", "weibo", "wechat"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "Weibo 3.5M ; all 7M+",
@@ -339,22 +256,13 @@
           "name_en": "Thomas Ye / 叶嗣",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu",
-            "weibo",
-            "wechat"
-          ],
+          "platforms": ["xiaohongshu", "weibo", "wechat"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "Weibo 7.2M",
           "specialty": "Red-carpet critique, runway commentary, luxury fashion",
           "profile_url": "https://www.weibo.com/gogoboi",
-          "notable_brands": [
-            "Givenchy",
-            "Burberry",
-            "Gucci",
-            "Bottega Veneta"
-          ],
+          "notable_brands": ["Givenchy", "Burberry", "Gucci", "Bottega Veneta"],
           "source_note": "Source: BoF 500 (2014-18), Digitaling",
           "avatar_initials": "TH"
         },
@@ -365,11 +273,7 @@
           "name_en": "Fang Yimin",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu",
-            "weibo",
-            "wechat"
-          ],
+          "platforms": ["xiaohongshu", "weibo", "wechat"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "WeChat 3M+ ; Weibo 5.3M",
@@ -392,21 +296,13 @@
           "name_en": "Xu Yan",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "weibo"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 10M+",
           "specialty": "Luxury brand-ambassador interviews (Dior, Chanel, Cartier)",
           "profile_url": "https://www.douyin.com/user/shenyexulaoshi",
-          "notable_brands": [
-            "Dior",
-            "Chanel",
-            "YSL ambassador interviews; Cartier"
-          ],
+          "notable_brands": ["Dior", "Chanel", "YSL ambassador interviews; Cartier"],
           "source_note": "Source: Miaozhen 2024 luxury report",
           "avatar_initials": "深夜"
         },
@@ -417,18 +313,13 @@
           "name_en": "Cheung Siu-Wai",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 1M+",
           "specialty": "Luxury lifestyle, high-end skincare & fashion curation",
           "profile_url": "https://www.xiaohongshu.com/user/profile/zhangxiaohui",
-          "notable_brands": [
-            "Bvlgari",
-            "Loewe seeding; own 玫瑰是玫瑰 label"
-          ],
+          "notable_brands": ["Bvlgari", "Loewe seeding; own 玫瑰是玫瑰 label"],
           "source_note": "Source: Jiemian 2024 , RMB 100M+ livestream GMV",
           "avatar_initials": "章小"
         },
@@ -439,19 +330,13 @@
           "name_en": "Zhao He",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "bilibili"
-          ],
+          "platforms": ["douyin", "bilibili"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 10M+",
           "specialty": "Luxury watches , Rolex, Patek, AP, Omega expert reviews",
           "profile_url": "https://www.douyin.com/user/daneng",
-          "notable_brands": [
-            "Geneva Watch Days",
-            "Rolex / Omega / Patek content series"
-          ],
+          "notable_brands": ["Geneva Watch Days", "Rolex / Omega / Patek content series"],
           "source_note": "Source: 36Kr; GQ China PUGC creator of the year 2020",
           "avatar_initials": "大能"
         },
@@ -462,21 +347,13 @@
           "name_en": "Tansuanyinliao Baibai",
           "tier": "rising",
           "tier_label": "Mid → Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu"
-          ],
+          "platforms": ["douyin", "xiaohongshu"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "XHS 1M+",
           "specialty": "Gen-Z luxury street style; #1 booked luxury KOL 2024",
           "profile_url": "https://www.xiaohongshu.com/user/profile/tansuanyinliaobaibai",
-          "notable_brands": [
-            "Louis Vuitton PFW campaign",
-            "Miu Miu",
-            "Chanel",
-            "Balenciaga"
-          ],
+          "notable_brands": ["Louis Vuitton PFW campaign", "Miu Miu", "Chanel", "Balenciaga"],
           "source_note": "Source: CBNData 2025 / 品牌星球",
           "avatar_initials": "碳酸"
         },
@@ -487,22 +364,13 @@
           "name_en": "Fan Nana",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu",
-            "weibo",
-            "wechat"
-          ],
+          "platforms": ["xiaohongshu", "weibo", "wechat"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "Weibo ~600K",
           "specialty": "First-gen Chinese fashion blogger; luxury RTW",
           "profile_url": "https://www.weibo.com/AnnyFan",
-          "notable_brands": [
-            "Louis Vuitton",
-            "Gucci",
-            "Valentino",
-            "Tiffany & Co."
-          ],
+          "notable_brands": ["Louis Vuitton", "Gucci", "Valentino", "Tiffany & Co."],
           "source_note": "Source: FashionNetwork CN , signed by The Society 2019",
           "avatar_initials": "FA"
         },
@@ -513,11 +381,7 @@
           "name_en": "Guo Xinqi",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu",
-            "bilibili",
-            "weibo"
-          ],
+          "platforms": ["xiaohongshu", "bilibili", "weibo"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "Weibo ~400K ; B站 mid",
@@ -538,22 +402,13 @@
           "name_en": "Wan Baobao",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu",
-            "weibo",
-            "wechat"
-          ],
+          "platforms": ["xiaohongshu", "weibo", "wechat"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "Weibo ~700K",
           "specialty": "High jewelry; founder Bao Bao Wan Fine Jewellery",
           "profile_url": "https://weibo.com/wanbaobao",
-          "notable_brands": [
-            "Cartier",
-            "Dior Joaillerie",
-            "Hermes",
-            "Lamborghini"
-          ],
+          "notable_brands": ["Cartier", "Dior Joaillerie", "Hermes", "Lamborghini"],
           "source_note": "Source: Wikipedia, Toodaylab , Paris Bal des Debutantes 2003",
           "avatar_initials": "万宝"
         }
@@ -573,20 +428,13 @@
           "name_en": "Fang Qi Kiki",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "weibo"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 23.7M ; XHS 1M+",
           "specialty": "Lyrical travel storytelling, boutique stays, luxury resorts",
           "profile_url": "https://www.douyin.com/user/fangqikiki",
-          "notable_brands": [
-            "Xiamen Tourism Board",
-            "resort/destination campaigns"
-          ],
+          "notable_brands": ["Xiamen Tourism Board", "resort/destination campaigns"],
           "source_note": "Source: 卢松松, 数英 (1 sponsored placement / 1.3 videos)",
           "avatar_initials": "房琪"
         },
@@ -597,11 +445,7 @@
           "name_en": "Xiao Xiao Sha Lao Shi",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "weibo"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 6.5M ; Weibo 2.6M ; XHS 903K",
@@ -623,20 +467,13 @@
           "name_en": "Mao Li Molly / Wang Zichuan",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu",
-            "weibo",
-            "instagram"
-          ],
+          "platforms": ["xiaohongshu", "weibo", "instagram"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "Weibo 7M+ ; IG 694K",
           "specialty": "Global travel + boutique/luxury hotels, design-forward resorts",
           "profile_url": "https://www.weibo.com/smilemolly",
-          "notable_brands": [
-            "OPPO 'Enjoy Freedom'; partner of Marriott",
-            "Hilton via 懒猫旅行"
-          ],
+          "notable_brands": ["OPPO 'Enjoy Freedom'; partner of Marriott", "Hilton via 懒猫旅行"],
           "source_note": "Source: Baidu Baike, 36Kr",
           "avatar_initials": "猫力"
         },
@@ -647,17 +484,13 @@
           "name_en": "Yu Han",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "weibo"
-          ],
+          "platforms": ["weibo"],
           "primary_platform": "weibo",
           "primary_platform_label": "Weibo (微博)",
           "followers_text": "Weibo 4.5M",
           "specialty": "Food & travel; hotel experience specialist (酒店体验专家)",
           "profile_url": "https://www.weibo.com/yuhan",
-          "notable_brands": [
-            "5-star international chains press stays"
-          ],
+          "notable_brands": ["5-star international chains press stays"],
           "source_note": "Source: HI-COM 中国34大KOL 2021",
           "avatar_initials": "羽晗"
         },
@@ -668,20 +501,13 @@
           "name_en": "Bai Ling Xiao Hao",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "bilibili"
-          ],
+          "platforms": ["douyin", "bilibili"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Bilibili 1M+",
           "specialty": "In-depth video hotel reviews; luxury vs budget comparisons; 野奢",
           "profile_url": "https://space.bilibili.com/baixiaohao",
-          "notable_brands": [
-            "Niccolo Chongqing",
-            "Hong Kong Peninsula",
-            "wilderness resorts"
-          ],
+          "notable_brands": ["Niccolo Chongqing", "Hong Kong Peninsula", "wilderness resorts"],
           "source_note": "Source: Bilibili, 腾讯新闻",
           "avatar_initials": "白凌"
         },
@@ -692,18 +518,13 @@
           "name_en": "Yang Er Xiaojie",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS ~200K+",
           "specialty": "Hotel & B&B guides; sea-view rooms; regional luxury value",
           "profile_url": "https://www.xiaohongshu.com/user/profile/yangerxiaojie",
-          "notable_brands": [
-            "Dali boutique hotels",
-            "regional resort partners"
-          ],
+          "notable_brands": ["Dali boutique hotels", "regional resort partners"],
           "source_note": "Source: 青瓜传媒, 知乎 万字干货",
           "avatar_initials": "杨二"
         },
@@ -714,19 +535,13 @@
           "name_en": "Minsu Xiao Hong Shu",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS ~300K+",
           "specialty": "B&B (民宿) expert; Jiangsu/Zhejiang/Shanghai region",
           "profile_url": "https://www.xiaohongshu.com/user/profile/minsuxiaohongshu",
-          "notable_brands": [
-            "冶园民宿",
-            "苏州西山民宿",
-            "江浙沪 B&B brands"
-          ],
+          "notable_brands": ["冶园民宿", "苏州西山民宿", "江浙沪 B&B brands"],
           "source_note": "Source: suyoupin.com, CSDN",
           "avatar_initials": "民宿"
         },
@@ -737,17 +552,13 @@
           "name_en": "Su You Pin",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS ~500K (matrix)",
           "specialty": "Yangtze Delta B&B recommendations; XHS official B&B partner",
           "profile_url": "https://www.xiaohongshu.com/user/profile/suyoupin",
-          "notable_brands": [
-            "200+ B&B brands via XHS direct-connect booking"
-          ],
+          "notable_brands": ["200+ B&B brands via XHS direct-connect booking"],
           "source_note": "Source: suyoupin.com, 青瓜传媒",
           "avatar_initials": "宿优"
         },
@@ -758,19 +569,13 @@
           "name_en": "En En Ma Mi",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "douyin",
-            "xiaohongshu"
-          ],
+          "platforms": ["douyin", "xiaohongshu"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "XHS 100K-500K",
           "specialty": "Family/parent-child hotels & resorts; 宝妈主理人 persona",
           "profile_url": "https://www.xiaohongshu.com/user/profile/enenmami",
-          "notable_brands": [
-            "Sanya Tianyu",
-            "Chengdu Intercontinental family resort stays"
-          ],
+          "notable_brands": ["Sanya Tianyu", "Chengdu Intercontinental family resort stays"],
           "source_note": "Source: newrank.cn 2024 百大买手 / 知乎",
           "avatar_initials": "恩恩"
         },
@@ -781,17 +586,13 @@
           "name_en": "Zui Shi Guang Lvyou",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS ~200-400K",
           "specialty": "Hotel & B&B guides; professional review-format content",
           "profile_url": "https://www.xiaohongshu.com/user/profile/zuishiguang",
-          "notable_brands": [
-            "Domestic resort brand partnerships"
-          ],
+          "notable_brands": ["Domestic resort brand partnerships"],
           "source_note": "Source: 青瓜传媒, 知乎",
           "avatar_initials": "醉时"
         }
@@ -811,22 +612,13 @@
           "name_en": "Li Ziqi",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "bilibili",
-            "weibo",
-            "kuaishou"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "bilibili", "weibo", "kuaishou"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 61M ; Weibo 27.9M ; Bilibili 10M ; Kuaishou 10.3M",
           "specialty": "Rural cooking, traditional Chinese cuisine, 非遗 heritage",
           "profile_url": "https://www.douyin.com/user/liziqi",
-          "notable_brands": [
-            "Li Ziqi brand 螺蛳粉 (Tmall flagship)",
-            "CCTV Spring Gala 2025"
-          ],
+          "notable_brands": ["Li Ziqi brand 螺蛳粉 (Tmall flagship)", "CCTV Spring Gala 2025"],
           "source_note": "Source: 21jingji / Tencent News Jan 2025",
           "avatar_initials": "李子"
         },
@@ -837,18 +629,13 @@
           "name_en": "Ma La De Zi",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 34.6M ; 390M likes",
           "specialty": "Quick home-style Chinese cooking; Northeast cuisine",
           "profile_url": "https://www.douyin.com/user/dz0528",
-          "notable_brands": [
-            "Suning livestream (10.5M RMB GMV / 3hr)",
-            "Supor (苏泊尔)"
-          ],
+          "notable_brands": ["Suning livestream (10.5M RMB GMV / 3hr)", "Supor (苏泊尔)"],
           "source_note": "Source: ctoutiao / Baidu Baike Jan 2025",
           "avatar_initials": "麻辣"
         },
@@ -859,19 +646,13 @@
           "name_en": "Mi Zi Jun",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "weibo"
-          ],
+          "platforms": ["douyin", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 14.8M ; Weibo 18M",
           "specialty": "Restaurant 探店 + food reviews (pivoted from mukbang post-2021)",
           "profile_url": "https://www.douyin.com/user/mizijun",
-          "notable_brands": [
-            "Want Want (旺旺)",
-            "Master Kong (康师傅)"
-          ],
+          "notable_brands": ["Want Want (旺旺)", "Master Kong (康师傅)"],
           "source_note": "Source: woshipm.com Jan 2025",
           "avatar_initials": "密子"
         },
@@ -882,20 +663,13 @@
           "name_en": "Wang Gang",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "bilibili",
-            "toutiao"
-          ],
+          "platforms": ["douyin", "bilibili", "toutiao"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Bilibili 6.85M ; Toutiao 9.47M ; Douyin 4.93M",
           "specialty": "Authentic Sichuan restaurant-style cooking; pro chef techniques",
           "profile_url": "https://space.bilibili.com/290526283",
-          "notable_brands": [
-            "Shi Ba Zi Zuo (十八子作) knives",
-            "Luhua (鲁花) cooking oil"
-          ],
+          "notable_brands": ["Shi Ba Zi Zuo (十八子作) knives", "Luhua (鲁花) cooking oil"],
           "source_note": "Source: Baidu Baike / Wikipedia Jan 2025",
           "avatar_initials": "美食"
         },
@@ -906,19 +680,13 @@
           "name_en": "Mian Yang Liao Li",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "bilibili"
-          ],
+          "platforms": ["bilibili"],
           "primary_platform": "bilibili",
           "primary_platform_label": "Bilibili (B站)",
           "followers_text": "Bilibili 11.9M",
           "specialty": "High-difficulty historical/lost recipes; ancient royal cuisine",
           "profile_url": "https://space.bilibili.com/14387072",
-          "notable_brands": [
-            "Vivo X series",
-            "Haidilao (海底捞)",
-            "Bilibili branded"
-          ],
+          "notable_brands": ["Vivo X series", "Haidilao (海底捞)", "Bilibili branded"],
           "source_note": "Source: Baidu Baike Jan 2026; 6x 百大UP主",
           "avatar_initials": "绵羊"
         },
@@ -929,21 +697,13 @@
           "name_en": "Dao Yue She",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "bilibili"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "bilibili"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Bilibili 8.21M",
           "specialty": "Late-night street food 探店; regional food + human-interest",
           "profile_url": "https://space.bilibili.com/9458053",
-          "notable_brands": [
-            "Meituan",
-            "Ele.me",
-            "Mengniu (蒙牛) night-snack"
-          ],
+          "notable_brands": ["Meituan", "Ele.me", "Mengniu (蒙牛) night-snack"],
           "source_note": "Source: Baidu Baike Mar 2025; 6x 百大UP主",
           "avatar_initials": "盗月"
         },
@@ -954,19 +714,13 @@
           "name_en": "Gao Wenqi",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "bilibili"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "bilibili"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "All-network ~4M",
           "specialty": "High-end restaurant 探店; documentary-style food journalism",
           "profile_url": "https://www.xiaohongshu.com/user/profile/gaowenqi",
-          "notable_brands": [
-            "Zwilling (双立人) , declines paid 探店"
-          ],
+          "notable_brands": ["Zwilling (双立人) , declines paid 探店"],
           "source_note": "Source: Tencent News May 2025",
           "avatar_initials": "真探"
         },
@@ -977,19 +731,13 @@
           "name_en": "Shi Pin Dao",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "bilibili"
-          ],
+          "platforms": ["bilibili"],
           "primary_platform": "bilibili",
           "primary_platform_label": "Bilibili (B站)",
           "followers_text": "Bilibili 9M+",
           "specialty": "International food exploration; geo-political food documentaries",
           "profile_url": "https://space.bilibili.com/21625293",
-          "notable_brands": [
-            "Bilibili Originals",
-            "Trip.com (携程)",
-            "Huawei (华为)"
-          ],
+          "notable_brands": ["Bilibili Originals", "Trip.com (携程)", "Huawei (华为)"],
           "source_note": "Source: Bilibili 2025 百大UP主",
           "avatar_initials": "食贫"
         },
@@ -1000,20 +748,13 @@
           "name_en": "Amanda's Kitchen",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "weibo"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "500K-800K each",
           "specialty": "Home cooking: baking, Japanese, Chinese home-style",
           "profile_url": "https://weibo.com/xiaoyamanda",
-          "notable_brands": [
-            "KitchenAid (凯膳怡)",
-            "Anchor (安佳) dairy"
-          ],
+          "notable_brands": ["KitchenAid (凯膳怡)", "Anchor (安佳) dairy"],
           "source_note": "Source: Weibo @xiaoyamanda",
           "avatar_initials": "Am"
         },
@@ -1024,21 +765,13 @@
           "name_en": "Ri Shi Ji / Jiang Lao Dao",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "bilibili",
-            "weibo",
-            "wechat"
-          ],
+          "platforms": ["douyin", "bilibili", "weibo", "wechat"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Aggregate 50M+",
           "specialty": "Healing-style (治愈系) cinematic cooking; cat mascot Sue 酥饼",
           "profile_url": "https://space.bilibili.com/2034133",
-          "notable_brands": [
-            "Lipton (立顿)",
-            "Want Want (旺旺); own DTC 日食记严选"
-          ],
+          "notable_brands": ["Lipton (立顿)", "Want Want (旺旺); own DTC 日食记严选"],
           "source_note": "Source: Sohu, Digitaling; 罐头场 MCN founder",
           "avatar_initials": "日食"
         }
@@ -1058,18 +791,13 @@
           "name_en": "Hui Shuo Hua De Liu Er Dou",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 30M+",
           "specialty": "Cat content: comedic dubbing of British Shorthairs 二豆 + 瓜子",
           "profile_url": "https://www.douyin.com/user/liuerdou",
-          "notable_brands": [
-            "Royal Canin (皇家)",
-            "麦富迪 (Myfoodie) ~520K RMB / video"
-          ],
+          "notable_brands": ["Royal Canin (皇家)", "麦富迪 (Myfoodie) ~520K RMB / video"],
           "source_note": "Source: petslib.cn , 4大宠物KOL",
           "avatar_initials": "会说"
         },
@@ -1080,18 +808,13 @@
           "name_en": "Pan Hong Ai Wan Gou",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 16.6M (pre-suspension)",
           "specialty": "Dog training/behavior rehab; runs 潘宏乐园 facility",
           "profile_url": "https://www.douyin.com/user/panhong",
-          "notable_brands": [
-            "美伊天祺 (own)",
-            "麦富迪 , 250K-500K RMB / video"
-          ],
+          "notable_brands": ["美伊天祺 (own)", "麦富迪 , 250K-500K RMB / video"],
           "source_note": "Source: 澎湃新闻 Feb 2025 (acct suspended pending investigation)",
           "avatar_initials": "潘宏"
         },
@@ -1102,19 +825,13 @@
           "name_en": "Hui Yi Zhuan Yong Xiao Ma Jia",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "weibo"
-          ],
+          "platforms": ["weibo"],
           "primary_platform": "weibo",
           "primary_platform_label": "Weibo (微博)",
           "followers_text": "Weibo 36.4M",
           "specialty": "Cat+dog lifestyle photography (Samoyed 妞妞 + Scottish Fold 端午)",
           "profile_url": "https://www.weibo.com/u/3217179555",
-          "notable_brands": [
-            "Royal Canin",
-            "Nestle Purina (雀巢冠能)",
-            "麦富迪"
-          ],
+          "notable_brands": ["Royal Canin", "Nestle Purina (雀巢冠能)", "麦富迪"],
           "source_note": "Source: Baidu Baike Jan 2025 , #1 pet KOL on Weibo",
           "avatar_initials": "回忆"
         },
@@ -1125,21 +842,13 @@
           "name_en": "Wang Pao Fu",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu",
-            "kuaishou"
-          ],
+          "platforms": ["xiaohongshu", "kuaishou"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 5M+ ; cross-platform 50M+",
           "specialty": "Cat content (British Shorthair 泡芙); lifestyle, livestreaming",
           "profile_url": "https://www.xiaohongshu.com/user/profile/wangpaofu",
-          "notable_brands": [
-            "Petio",
-            "麦富迪; cross-vertical (jewelry",
-            "home",
-            "banking)"
-          ],
+          "notable_brands": ["Petio", "麦富迪; cross-vertical (jewelry", "home", "banking)"],
           "source_note": "Source: Newrank , only XHS pet KOL above 5M",
           "avatar_initials": "王泡"
         },
@@ -1150,20 +859,13 @@
           "name_en": "Hua Hua Yu San Mao",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "bilibili"
-          ],
+          "platforms": ["douyin", "bilibili"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Bilibili 2.6M ; cross-platform 10M+",
           "specialty": "Cat content + cat care education; long-form videos",
           "profile_url": "https://space.bilibili.com/4856023",
-          "notable_brands": [
-            "Royal Canin",
-            "卫仕 (Vetreska)",
-            "蓝氏 (Lanshi)"
-          ],
+          "notable_brands": ["Royal Canin", "卫仕 (Vetreska)", "蓝氏 (Lanshi)"],
           "source_note": "Source: Zhihu , 4大宠物KOL on B站",
           "avatar_initials": "花花"
         },
@@ -1174,18 +876,13 @@
           "name_en": "Lun Tai Ba Ba",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "kuaishou"
-          ],
+          "platforms": ["kuaishou"],
           "primary_platform": "kuaishou",
           "primary_platform_label": "Kuaishou (快手)",
           "followers_text": "Kuaishou 20M",
           "specialty": "Dog content: Golden Retriever 轮胎 doing tricks; livestream e-com",
           "profile_url": "https://live.kuaishou.com/profile/luntaibaba",
-          "notable_brands": [
-            "麦富迪",
-            "顽皮 (Wanpy); livestream cross-vertical 6M RMB/session"
-          ],
+          "notable_brands": ["麦富迪", "顽皮 (Wanpy); livestream cross-vertical 6M RMB/session"],
           "source_note": "Source: Baidu Baike , Kuaishou #1 pet KOL",
           "avatar_initials": "轮胎"
         },
@@ -1196,18 +893,13 @@
           "name_en": "Man Tou Ta Die",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 3.1M",
           "specialty": "Cat content (Silver Tabby British Shorthair 馒头); daily life",
           "profile_url": "https://www.douyin.com/user/mantoutadie",
-          "notable_brands": [
-            "蓝氏 (Lanshi)",
-            "Petio"
-          ],
+          "notable_brands": ["蓝氏 (Lanshi)", "Petio"],
           "source_note": "Source: Newrank",
           "avatar_initials": "馒头"
         },
@@ -1218,18 +910,13 @@
           "name_en": "Fen Tou Er",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 3.1M",
           "specialty": "Cat content (Silver tabby 邪恶银渐层); comedic + livestream",
           "profile_url": "https://www.douyin.com/user/fentouer",
-          "notable_brands": [
-            "蓝氏",
-            "Petio , livestream GMV 5-7.5M RMB / session"
-          ],
+          "notable_brands": ["蓝氏", "Petio , livestream GMV 5-7.5M RMB / session"],
           "source_note": "Source: 36Kr , +1.54M followers in 30 days",
           "avatar_initials": "芬头"
         },
@@ -1240,18 +927,13 @@
           "name_en": "Xiao Shuai Jia",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 3M+",
           "specialty": "Large dogs (Malamutes/Huskies); lifestyle/home integration",
           "profile_url": "https://www.xiaohongshu.com/user/profile/xiaoshuaijia",
-          "notable_brands": [
-            "Dyson V12 (20.4M views Aug 2023)",
-            "麦富迪"
-          ],
+          "notable_brands": ["Dyson V12 (20.4M views Aug 2023)", "麦富迪"],
           "source_note": "Source: 38度传媒 MCN; fastest-growing XHS pet KOL",
           "avatar_initials": "小帅"
         },
@@ -1262,20 +944,13 @@
           "name_en": "Jiang Die",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu",
-            "bilibili"
-          ],
+          "platforms": ["xiaohongshu", "bilibili"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 300-500K",
           "specialty": "Exotic pets (异宠) , scientific hamster care; 仓鼠专家",
           "profile_url": "https://www.xiaohongshu.com/user/profile/jiangdie",
-          "notable_brands": [
-            "Carno",
-            "Jolly Pets",
-            "cage/bedding brands"
-          ],
+          "notable_brands": ["Carno", "Jolly Pets", "cage/bedding brands"],
           "source_note": "Source: Xinhua , 异宠 market analysis",
           "avatar_initials": "将蝶"
         }
@@ -1295,19 +970,13 @@
           "name_en": "Zhang Wenhong",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "weibo",
-            "toutiao"
-          ],
+          "platforms": ["douyin", "weibo", "toutiao"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin/Toutiao 2.4M ; Weibo multi-M",
           "specialty": "Infectious disease; Director, Huashan Hospital ID Dept; CPPCC member",
           "profile_url": "https://www.weibo.com/u/zhangwenhongyisheng",
-          "notable_brands": [
-            "Public-health spokesperson (no commercial deals , regulatory)"
-          ],
+          "notable_brands": ["Public-health spokesperson (no commercial deals , regulatory)"],
           "source_note": "Source: Baidu Baike / 澎湃新闻",
           "avatar_initials": "张文"
         },
@@ -1318,19 +987,13 @@
           "name_en": "Yilu Xiangqian Weizi / Gao Wei",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "weibo",
-            "kuaishou"
-          ],
+          "platforms": ["douyin", "weibo", "kuaishou"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 24-25M ; all 40M",
           "specialty": "Emergency medicine first-aid education; PKU First Hospital Miyun",
           "profile_url": "https://www.douyin.com/user/yiluxiangqianweizi",
-          "notable_brands": [
-            "Douyin 2024 Healthcare 人气先锋; Red Cross-style campaigns"
-          ],
+          "notable_brands": ["Douyin 2024 Healthcare 人气先锋; Red Cross-style campaigns"],
           "source_note": "Source: Baike / Beijing Daily",
           "avatar_initials": "医路"
         },
@@ -1341,19 +1004,13 @@
           "name_en": "Cui Yutao",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "weibo",
-            "wechat"
-          ],
+          "platforms": ["douyin", "weibo", "wechat"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Weibo 7M+",
           "specialty": "Pediatrics, parenting, infant nutrition; founder 育学园",
           "profile_url": "https://www.weibo.com/cuiyutao",
-          "notable_brands": [
-            "Author 崔玉涛育儿百科; China Nutrition Society committee"
-          ],
+          "notable_brands": ["Author 崔玉涛育儿百科; China Nutrition Society committee"],
           "source_note": "Source: Baidu Baike",
           "avatar_initials": "崔玉"
         },
@@ -1364,21 +1021,13 @@
           "name_en": "DXY Doctor",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "weibo",
-            "wechat"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "weibo", "wechat"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Weibo 6M ; matrix 35M+",
           "specialty": "General medical science popularization (multi-disciplinary)",
           "profile_url": "https://www.weibo.com/dxydoctor",
-          "notable_brands": [
-            "Owns 丁香妈妈",
-            "丁香生活研究所; exposed Quanjian scam"
-          ],
+          "notable_brands": ["Owns 丁香妈妈", "丁香生活研究所; exposed Quanjian scam"],
           "source_note": "Source: Tencent News / Sohu",
           "avatar_initials": "丁香"
         },
@@ -1389,19 +1038,13 @@
           "name_en": "Bo Shining",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "bilibili",
-            "weibo"
-          ],
+          "platforms": ["douyin", "bilibili", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Cross-platform 4M+",
           "specialty": "Critical care medicine, medical philosophy; PKU Third Hospital ICU",
           "profile_url": "https://www.douyin.com/user/boshining",
-          "notable_brands": [
-            "Author 薄世宁医学通识讲义; Dedao (得到) lecturer"
-          ],
+          "notable_brands": ["Author 薄世宁医学通识讲义; Dedao (得到) lecturer"],
           "source_note": "Source: Boya Media / PKU News",
           "avatar_initials": "薄世"
         },
@@ -1412,17 +1055,13 @@
           "name_en": "Dermatology Auntie Liu",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 2.11M",
           "specialty": "Dermatology, sensitive-skin care; 40-yr dermatologist Soochow Univ",
           "profile_url": "https://www.xiaohongshu.com/user/profile/pifukeliuyi",
-          "notable_brands": [
-            "#1 XHS Top 100 医美医生 list Jan 2026"
-          ],
+          "notable_brands": ["#1 XHS Top 100 医美医生 list Jan 2026"],
           "source_note": "Source: NetEase / Newrank",
           "avatar_initials": "皮肤"
         },
@@ -1433,18 +1072,13 @@
           "name_en": "Duan Tao",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "weibo"
-          ],
+          "platforms": ["douyin", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Weibo 1M+",
           "specialty": "OB/GYN; former Pres. Shanghai 1st Maternity & Infant Hospital",
           "profile_url": "https://www.weibo.com/u/duantaoyisheng",
-          "notable_brands": [
-            "Douyin 2024 科普创作领航先锋; obstetrics policy advocate"
-          ],
+          "notable_brands": ["Douyin 2024 科普创作领航先锋; obstetrics policy advocate"],
           "source_note": "Source: Huxiu",
           "avatar_initials": "段涛"
         },
@@ -1455,18 +1089,13 @@
           "name_en": "Tan Xianjie",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "douyin",
-            "weibo"
-          ],
+          "platforms": ["douyin", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Weibo 1.3M ; Douyin 480K+",
           "specialty": "Gynecologic oncology; Deputy Director OB/GYN PUMCH (协和)",
           "profile_url": "https://www.weibo.com/xiehetanxianjie",
-          "notable_brands": [
-            "Author 话说生命之宫; 2024 Beijing Role Model"
-          ],
+          "notable_brands": ["Author 话说生命之宫; 2024 Beijing Role Model"],
           "source_note": "Source: Xinhua / Cn-healthcare",
           "avatar_initials": "谭先"
         },
@@ -1477,18 +1106,13 @@
           "name_en": "Tao Yong",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "douyin",
-            "weibo"
-          ],
+          "platforms": ["douyin", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Weibo 1M+",
           "specialty": "Ophthalmology; Director, Beijing Chaoyang Hospital",
           "profile_url": "https://www.weibo.com/drtaoyong",
-          "notable_brands": [
-            "Co-founded Rainbow Volunteer w/ Beijing Red Cross; AI screening"
-          ],
+          "notable_brands": ["Co-founded Rainbow Volunteer w/ Beijing Red Cross; AI screening"],
           "source_note": "Source: Beijing Chaoyang Hospital",
           "avatar_initials": "陶勇"
         },
@@ -1499,17 +1123,13 @@
           "name_en": "He Qin",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 904K",
           "specialty": "Pediatric dermatology, mom-doctor crossover positioning",
           "profile_url": "https://www.xiaohongshu.com/user/profile/heqin",
-          "notable_brands": [
-            "XHS Top 100 医美医生 list Jan 2026"
-          ],
+          "notable_brands": ["XHS Top 100 医美医生 list Jan 2026"],
           "source_note": "Source: NetEase / Newrank",
           "avatar_initials": "三甲"
         }
@@ -1529,18 +1149,13 @@
           "name_en": "Will Liu",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 60.8M",
           "specialty": "Live HIIT/aerobic dance (本草纲目 jumping jacks)",
           "profile_url": "https://www.douyin.com/user/liugenghong",
-          "notable_brands": [
-            "Own VIVICYCLE activewear; FENDI",
-            "Anta (historical)"
-          ],
+          "notable_brands": ["Own VIVICYCLE activewear; FENDI", "Anta (historical)"],
           "source_note": "Source: Sina Finance Apr 2025",
           "avatar_initials": "刘畊"
         },
@@ -1551,22 +1166,13 @@
           "name_en": "Pamela Reif",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "bilibili"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "bilibili"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 18.4M ; cross-platform 50M+",
           "specialty": "No-equipment HIIT; silent follow-along workouts",
           "profile_url": "https://www.douyin.com/user/pamelarf1",
-          "notable_brands": [
-            "Puma (global)",
-            "Maia Active (CN)",
-            "Keep",
-            "元气森林"
-          ],
+          "notable_brands": ["Puma (global)", "Maia Active (CN)", "Keep", "元气森林"],
           "source_note": "Source: Jiemian / The Paper / CBNData Dec 2025",
           "avatar_initials": "帕梅"
         },
@@ -1577,22 +1183,13 @@
           "name_en": "Zhou Liuye",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu",
-            "bilibili",
-            "weibo"
-          ],
+          "platforms": ["xiaohongshu", "bilibili", "weibo"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "Bilibili 7.84M ; XHS 1.3M",
           "specialty": "Beginner-friendly fat-loss & body-shaping (5-15 min sessions)",
           "profile_url": "https://space.bilibili.com/62540916",
-          "notable_brands": [
-            "Maia Active",
-            "Adidas",
-            "Keep",
-            "Particle Fever (粒子狂热)"
-          ],
+          "notable_brands": ["Maia Active", "Adidas", "Keep", "Particle Fever (粒子狂热)"],
           "source_note": "Source: Yunyingpai / Woshipm",
           "avatar_initials": "周六"
         },
@@ -1603,20 +1200,13 @@
           "name_en": "Li Weigang",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 11M+",
           "specialty": "Hardcore strength training; competition-level bodybuilding & nutrition",
           "profile_url": "https://www.douyin.com/user/liweigang",
-          "notable_brands": [
-            "Myprotein",
-            "西王食品",
-            "Anta strength",
-            "own 维刚 supplements"
-          ],
+          "notable_brands": ["Myprotein", "西王食品", "Anta strength", "own 维刚 supplements"],
           "source_note": "Source: Maigoo / Douyin",
           "avatar_initials": "李维"
         },
@@ -1627,21 +1217,13 @@
           "name_en": "Ouyang Chunxiao",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu",
-            "bilibili"
-          ],
+          "platforms": ["xiaohongshu", "bilibili"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "Bilibili 4M+",
           "specialty": "5-10 min beginner home fitness; ballet-inspired sculpting",
           "profile_url": "https://space.bilibili.com/ouyangchunxiao",
-          "notable_brands": [
-            "Lululemon",
-            "Maia Active",
-            "SK-II",
-            "Keep"
-          ],
+          "notable_brands": ["Lululemon", "Maia Active", "SK-II", "Keep"],
           "source_note": "Source: Baidu Baike , 百大UP主",
           "avatar_initials": "欧阳"
         },
@@ -1652,20 +1234,13 @@
           "name_en": "Nikko Da Ning",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 1.9M",
           "specialty": "ACE-CPT trainer; women's strength + nutrition + healthy cooking",
           "profile_url": "https://www.xiaohongshu.com/user/profile/nikkodaning",
-          "notable_brands": [
-            "Myprotein",
-            "Li-Ning (李宁)",
-            "Adidas",
-            "Lorna Jane"
-          ],
+          "notable_brands": ["Myprotein", "Li-Ning (李宁)", "Adidas", "Lorna Jane"],
           "source_note": "Source: Zhihu / Maimai KOL rankings",
           "avatar_initials": "Ni"
         },
@@ -1676,21 +1251,13 @@
           "name_en": "Han Xiao Si",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "douyin",
-            "bilibili",
-            "weibo"
-          ],
+          "platforms": ["douyin", "bilibili", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Bilibili 800K ; Weibo 500K",
           "specialty": "Short follow-along leg-slimming & arm-toning",
           "profile_url": "https://m.weibo.cn/u/6330651957",
-          "notable_brands": [
-            "Maia Active",
-            "Particle Fever",
-            "Decathlon (迪卡侬)"
-          ],
+          "notable_brands": ["Maia Active", "Particle Fever", "Decathlon (迪卡侬)"],
           "source_note": "Source: Weibo / Bilibili / Hupu",
           "avatar_initials": "韩小"
         },
@@ -1701,18 +1268,13 @@
           "name_en": "Ouyang Hui",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 500K+",
           "specialty": "TCM 中医养生 dietary therapy; qi/blood replenishment",
           "profile_url": "https://www.xiaohongshu.com/user/profile/ouyanghui",
-          "notable_brands": [
-            "Own brand 禾未养生 (40M RMB/yr); 同仁堂",
-            "东阿阿胶"
-          ],
+          "notable_brands": ["Own brand 禾未养生 (40M RMB/yr); 同仁堂", "东阿阿胶"],
           "source_note": "Source: Tencent News / 36Kr Q1 2025",
           "avatar_initials": "欧阳"
         },
@@ -1723,19 +1285,13 @@
           "name_en": "SU (Meditation)",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 126K+",
           "specialty": "Meditation / mindfulness; paid retreats & online courses",
           "profile_url": "https://www.xiaohongshu.com/user/profile/su",
-          "notable_brands": [
-            "lululemon meditation events",
-            "Now app",
-            "潮汐 (Tide app)"
-          ],
+          "notable_brands": ["lululemon meditation events", "Now app", "潮汐 (Tide app)"],
           "source_note": "Source: Sina Finance / 36Kr",
           "avatar_initials": "满世"
         },
@@ -1746,21 +1302,13 @@
           "name_en": "De Huan Gladys",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "xiaohongshu"
-          ],
+          "platforms": ["xiaohongshu"],
           "primary_platform": "xiaohongshu",
           "primary_platform_label": "Xiaohongshu (小红书)",
           "followers_text": "XHS 1.7M",
           "specialty": "Healthy eating (减脂餐) + women's home strength training",
           "profile_url": "https://www.xiaohongshu.com/user/profile/dehuangladys",
-          "notable_brands": [
-            "Maia Active",
-            "MUJI",
-            "Keep",
-            "三顿半",
-            "An Action a Day"
-          ],
+          "notable_brands": ["Maia Active", "MUJI", "Keep", "三顿半", "An Action a Day"],
           "source_note": "Source: Zhihu KOL 投放策略",
           "avatar_initials": "的欢"
         }
@@ -1780,17 +1328,13 @@
           "name_en": "Fang Qi Kiki",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 23.6M ; XHS 2.15M",
           "specialty": "Domestic travel; female solo; lyrical scenic storytelling",
           "profile_url": "https://www.douyin.com/user/fangqikiki",
-          "notable_brands": [
-            "100+ partnerships via Xingtu; 13M+ RMB cumulative ad revenue"
-          ],
+          "notable_brands": ["100+ partnerships via Xingtu; 13M+ RMB cumulative ad revenue"],
           "source_note": "Source: Newrank / Zhiduomai 2023-24",
           "avatar_initials": "房琪"
         },
@@ -1801,20 +1345,13 @@
           "name_en": "Hu Yuan Xing / Ma Zhuang",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 21.4M",
           "specialty": "Solo cycling 31 countries Asia/Europe/Africa, 75K+ km",
           "profile_url": "https://www.douyin.com/user/huyuanxing",
-          "notable_brands": [
-            "Giant (捷安特)",
-            "GoPro",
-            "outdoor gear",
-            "Bank of China"
-          ],
+          "notable_brands": ["Giant (捷安特)", "GoPro", "outdoor gear", "Bank of China"],
           "source_note": "Source: mydrivers.com Mar 2024",
           "avatar_initials": "湖远"
         },
@@ -1825,20 +1362,13 @@
           "name_en": "Xiamen Abo / Xu Shunbo",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 16-20M",
           "specialty": "Xiamen-focused tour guide turned national travel KOL",
           "profile_url": "https://www.douyin.com/user/xiamenabo",
-          "notable_brands": [
-            "Xiamen 文旅局",
-            "Fujian tourism",
-            "Mafengwo",
-            "local hotel/F&B"
-          ],
+          "notable_brands": ["Xiamen 文旅局", "Fujian tourism", "Mafengwo", "local hotel/F&B"],
           "source_note": "Source: Newrank 2024",
           "avatar_initials": "厦门"
         },
@@ -1849,21 +1379,13 @@
           "name_en": "Adventurer Lei / Chen Lei",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "bilibili",
-            "weibo"
-          ],
+          "platforms": ["douyin", "bilibili", "weibo"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "All-platform 12M+",
           "specialty": "Adventure/extreme outbound; Afghanistan, catacombs, Amazon",
           "profile_url": "https://www.weibo.com/u/3053315777",
-          "notable_brands": [
-            "Tencent Video docs",
-            "Naturehike",
-            "Land Rover"
-          ],
+          "notable_brands": ["Tencent Video docs", "Naturehike", "Land Rover"],
           "source_note": "Source: Baidu Baike",
           "avatar_initials": "冒险"
         },
@@ -1874,19 +1396,13 @@
           "name_en": "itsRae",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 9.6M peak",
           "specialty": "Outbound vlog; photography-focused; NYU-educated solo female",
           "profile_url": "https://www.douyin.com/user/itsrae",
-          "notable_brands": [
-            "OPPO",
-            "Estee Lauder travel campaign",
-            "Trip.com (携程)"
-          ],
+          "notable_brands": ["OPPO", "Estee Lauder travel campaign", "Trip.com (携程)"],
           "source_note": "Source: Woshipm / Baidu Baike",
           "avatar_initials": "IT"
         },
@@ -1897,17 +1413,13 @@
           "name_en": "Du Ke",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 4M+ (gained 3.36M in 30 days)",
           "specialty": "Outbound travel; humanitarian/cultural storytelling (Bangladesh)",
           "profile_url": "https://www.douyin.com/user/dukehuanyou",
-          "notable_brands": [
-            "Douyin platform creator program; Bangladesh tourism content"
-          ],
+          "notable_brands": ["Douyin platform creator program; Bangladesh tourism content"],
           "source_note": "Source: 36Kr / Tencent News Mar 2025",
           "avatar_initials": "杜克"
         },
@@ -1918,22 +1430,13 @@
           "name_en": "Jiang Shi Yi",
           "tier": "top",
           "tier_label": "Top",
-          "platforms": [
-            "douyin",
-            "xiaohongshu",
-            "bilibili",
-            "kuaishou"
-          ],
+          "platforms": ["douyin", "xiaohongshu", "bilibili", "kuaishou"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 2.2M ; B站 1.3M ; XHS 1.04M",
           "specialty": "Photography; cinematic landscape/风光 with poetic captions",
           "profile_url": "https://www.xiaohongshu.com/user/profile/jiangshiyi",
-          "notable_brands": [
-            "Wei Long (卫龙) seaside sunrise video (2.5M likes)",
-            "Sony",
-            "OPPO"
-          ],
+          "notable_brands": ["Wei Long (卫龙) seaside sunrise video (2.5M likes)", "Sony", "OPPO"],
           "source_note": "Source: The Paper 2024",
           "avatar_initials": "姜时"
         },
@@ -1944,19 +1447,13 @@
           "name_en": "Xu Yun",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "bilibili"
-          ],
+          "platforms": ["bilibili"],
           "primary_platform": "bilibili",
           "primary_platform_label": "Bilibili (B站)",
           "followers_text": "Bilibili 1.8M",
           "specialty": "Budget adventure; cycled around China 2.5yr on 30K RMB (raw authentic)",
           "profile_url": "https://space.bilibili.com/xuyun",
-          "notable_brands": [
-            "Decathlon (迪卡侬)",
-            "Naturehike (挪客)",
-            "B站 incentive"
-          ],
+          "notable_brands": ["Decathlon (迪卡侬)", "Naturehike (挪客)", "B站 incentive"],
           "source_note": "Source: Woshipm / 36Kr 2023",
           "avatar_initials": "徐云"
         },
@@ -1967,21 +1464,13 @@
           "name_en": "Zhang Xinyu & Liang Hong",
           "tier": "mid",
           "tier_label": "Mid",
-          "platforms": [
-            "bilibili",
-            "weibo"
-          ],
+          "platforms": ["bilibili", "weibo"],
           "primary_platform": "bilibili",
           "primary_platform_label": "Bilibili (B站)",
           "followers_text": "B站 370K ; Weibo 5M+ combined",
           "specialty": "Extreme adventure couple; war zones, Arctic, Antarctica",
           "profile_url": "https://www.weibo.com/270couple",
-          "notable_brands": [
-            "Land Rover",
-            "Mercedes-Benz",
-            "Tencent Video docs",
-            "Trip.com polar"
-          ],
+          "notable_brands": ["Land Rover", "Mercedes-Benz", "Tencent Video docs", "Trip.com polar"],
           "source_note": "Source: Zhihu / SMZDM 2024",
           "avatar_initials": "侣行"
         },
@@ -1992,9 +1481,7 @@
           "name_en": "Da Tou Xiao Tou",
           "tier": "rising",
           "tier_label": "Mid → Top",
-          "platforms": [
-            "douyin"
-          ],
+          "platforms": ["douyin"],
           "primary_platform": "douyin",
           "primary_platform_label": "Douyin (抖音)",
           "followers_text": "Douyin 2.81M",

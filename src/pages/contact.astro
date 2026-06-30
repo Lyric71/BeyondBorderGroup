@@ -17,13 +17,13 @@ const offices = [
 ];
 
 const bgWords = [
-  { text: '你好',    cls: 'w-1' },
-  { text: '上海',    cls: 'w-2' },
+  { text: '你好', cls: 'w-1' },
+  { text: '上海', cls: 'w-2' },
   { text: 'Bonjour', cls: 'w-3' },
-  { text: '香港',    cls: 'w-4' },
-  { text: 'Hello',   cls: 'w-5' },
-  { text: '巴黎',    cls: 'w-6' },
-  { text: '你好',    cls: 'w-7' },
+  { text: '香港', cls: 'w-4' },
+  { text: 'Hello', cls: 'w-5' },
+  { text: '巴黎', cls: 'w-6' },
+  { text: '你好', cls: 'w-7' },
 ];
 
 const serviceGroups = [
@@ -48,26 +48,17 @@ const serviceGroups = [
   },
   {
     title: 'Learn China',
-    items: [
-      'Masterclass',
-      'Learning Expeditions',
-    ],
+    items: ['Masterclass', 'Learning Expeditions'],
   },
 ];
 
 const budgetOptions = [
-  { value: '<10k',    label: 'Less than 10k USD' },
+  { value: '<10k', label: 'Less than 10k USD' },
   { value: '10k-50k', label: '10k to 50k USD' },
-  { value: '>50k',    label: 'More than 50k USD' },
+  { value: '>50k', label: 'More than 50k USD' },
 ];
 
-const profileOptions = [
-  'Brand',
-  'Retailer',
-  'Agency',
-  'Consultancy',
-  'Manufacturer',
-];
+const profileOptions = ['Brand', 'Retailer', 'Agency', 'Consultancy', 'Manufacturer'];
 ---
 
 <Layout
@@ -94,15 +85,13 @@ const profileOptions = [
         <span class="eyebrow eyebrow--on-dark">Contact</span>
         <h1 class="contact__title">We'd be glad to talk about your project in China.</h1>
         <p class="lead contact__lead">
-          Our teams based in Shanghai reply within one business day, Monday to Friday.
-          You don't need to lay everything out in the first message. We'll come back
-          to you with focused questions and, as soon as we can, with concrete starting
-          points suited to your market.
+          Our teams based in Shanghai reply within one business day, Monday to Friday. You don't
+          need to lay everything out in the first message. We'll come back to you with focused
+          questions and, as soon as we can, with concrete starting points suited to your market.
         </p>
       </header>
 
       <div class="contact__layout contact__layout--stacked">
-
         {/* ---------- White form card, full width ---------- */}
         <div class="contact__form-card">
           <h2 class="contact__form-title">Tell us a few words about your project</h2>
@@ -110,51 +99,109 @@ const profileOptions = [
           <form class="form" id="contact-form" novalidate>
             <div class="form__row form__row--2">
               <div class="field">
-                <label class="field__label" for="firstName">First name <span aria-hidden="true">*</span></label>
-                <input class="field__input" type="text" id="firstName" name="firstName" autocomplete="given-name" required />
+                <label class="field__label" for="firstName"
+                  >First name <span aria-hidden="true">*</span></label
+                >
+                <input
+                  class="field__input"
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  autocomplete="given-name"
+                  required
+                />
               </div>
               <div class="field">
-                <label class="field__label" for="lastName">Last name <span aria-hidden="true">*</span></label>
-                <input class="field__input" type="text" id="lastName" name="lastName" autocomplete="family-name" required />
+                <label class="field__label" for="lastName"
+                  >Last name <span aria-hidden="true">*</span></label
+                >
+                <input
+                  class="field__input"
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  autocomplete="family-name"
+                  required
+                />
               </div>
             </div>
 
             <div class="form__row form__row--2">
               <div class="field">
-                <label class="field__label" for="email">Work email <span aria-hidden="true">*</span></label>
-                <input class="field__input" type="email" id="email" name="email" autocomplete="email" required />
+                <label class="field__label" for="email"
+                  >Work email <span aria-hidden="true">*</span></label
+                >
+                <input
+                  class="field__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
               </div>
               <div class="field">
-                <label class="field__label" for="company">Company <span aria-hidden="true">*</span></label>
-                <input class="field__input" type="text" id="company" name="company" autocomplete="organization" required />
+                <label class="field__label" for="company"
+                  >Company <span aria-hidden="true">*</span></label
+                >
+                <input
+                  class="field__input"
+                  type="text"
+                  id="company"
+                  name="company"
+                  autocomplete="organization"
+                  required
+                />
               </div>
             </div>
 
             <div class="field">
               <label class="field__label" for="website">Website</label>
-              <input class="field__input" type="url" id="website" name="website" autocomplete="url" placeholder="https://" />
+              <input
+                class="field__input"
+                type="url"
+                id="website"
+                name="website"
+                autocomplete="url"
+                placeholder="https://"
+              />
             </div>
 
             <fieldset class="field field--group">
               <legend class="field__label">The services you'd like to explore</legend>
-              <p class="field__hint">Tick anything that feels relevant, we will narrow it down together.</p>
+              <p class="field__hint">
+                Tick anything that feels relevant, we will narrow it down together.
+              </p>
               <div class="services">
-                {serviceGroups.map((group) => (
-                  <div class="services__group">
-                    <span class="services__group-title">{group.title}</span>
-                    <ul class="services__list">
-                      {group.items.map((item) => {
-                        const id = `svc-${item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
-                        return (
-                          <li class="services__item">
-                            <input class="check__input" type="checkbox" id={id} name="services" value={`${group.title}: ${item}`} />
-                            <label class="check__label" for={id}>{item}</label>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                ))}
+                {
+                  serviceGroups.map((group) => (
+                    <div class="services__group">
+                      <span class="services__group-title">{group.title}</span>
+                      <ul class="services__list">
+                        {group.items.map((item) => {
+                          const id = `svc-${item
+                            .toLowerCase()
+                            .replace(/[^a-z0-9]+/g, '-')
+                            .replace(/^-|-$/g, '')}`;
+                          return (
+                            <li class="services__item">
+                              <input
+                                class="check__input"
+                                type="checkbox"
+                                id={id}
+                                name="services"
+                                value={`${group.title}: ${item}`}
+                              />
+                              <label class="check__label" for={id}>
+                                {item}
+                              </label>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  ))
+                }
               </div>
             </fieldset>
 
@@ -162,32 +209,58 @@ const profileOptions = [
               <fieldset class="field field--group">
                 <legend class="field__label">The budget you have in mind, at this stage</legend>
                 <div class="choices">
-                  {budgetOptions.map((opt) => {
-                    const id = `budget-${opt.value.replace(/[^a-zA-Z0-9]+/g, '-')}`;
-                    return (
-                      <div class="choice">
-                        <input class="choice__input" type="radio" id={id} name="budget" value={opt.label} />
-                        <label class="choice__label" for={id}>{opt.label}</label>
-                      </div>
-                    );
-                  })}
+                  {
+                    budgetOptions.map((opt) => {
+                      const id = `budget-${opt.value.replace(/[^a-zA-Z0-9]+/g, '-')}`;
+                      return (
+                        <div class="choice">
+                          <input
+                            class="choice__input"
+                            type="radio"
+                            id={id}
+                            name="budget"
+                            value={opt.label}
+                          />
+                          <label class="choice__label" for={id}>
+                            {opt.label}
+                          </label>
+                        </div>
+                      );
+                    })
+                  }
                 </div>
               </fieldset>
 
               <fieldset class="field field--group">
                 <legend class="field__label">A few words about your organisation</legend>
                 <div class="choices">
-                  {profileOptions.map((opt) => {
-                    const id = `profile-${opt.toLowerCase()}`;
-                    return (
-                      <div class="choice">
-                        <input class="choice__input" type="radio" id={id} name="profile" value={opt} />
-                        <label class="choice__label" for={id}>{opt}</label>
-                      </div>
-                    );
-                  })}
+                  {
+                    profileOptions.map((opt) => {
+                      const id = `profile-${opt.toLowerCase()}`;
+                      return (
+                        <div class="choice">
+                          <input
+                            class="choice__input"
+                            type="radio"
+                            id={id}
+                            name="profile"
+                            value={opt}
+                          />
+                          <label class="choice__label" for={id}>
+                            {opt}
+                          </label>
+                        </div>
+                      );
+                    })
+                  }
                   <div class="choice choice--other">
-                    <input class="choice__input" type="radio" id="profile-other" name="profile" value="Other" />
+                    <input
+                      class="choice__input"
+                      type="radio"
+                      id="profile-other"
+                      name="profile"
+                      value="Other"
+                    />
                     <label class="choice__label" for="profile-other">Other</label>
                     <input
                       class="field__input field__input--inline"
@@ -203,13 +276,22 @@ const profileOptions = [
             </div>
 
             <div class="field">
-              <label class="field__label" for="message">A few lines to introduce your project <span aria-hidden="true">*</span></label>
-              <textarea class="field__input field__input--textarea" id="message" name="message" rows="5" required></textarea>
+              <label class="field__label" for="message"
+                >A few lines to introduce your project <span aria-hidden="true">*</span></label
+              >
+              <textarea
+                class="field__input field__input--textarea"
+                id="message"
+                name="message"
+                rows="5"
+                required></textarea>
             </div>
 
             <div class="field field--captcha">
               <label class="field__label" for="captcha">
-                A quick check to keep bots out: what is <span id="captchaA">?</span> + <span id="captchaB">?</span>?
+                A quick check to keep bots out: what is <span id="captchaA">?</span> + <span
+                  id="captchaB">?</span
+                >?
                 <span aria-hidden="true">*</span>
               </label>
               <input
@@ -227,7 +309,13 @@ const profileOptions = [
             {/* honeypot, bots fill this, humans don't see it */}
             <div class="form__honeypot" aria-hidden="true">
               <label for="website_url">Leave this field empty</label>
-              <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
+              <input
+                type="text"
+                id="website_url"
+                name="website_url"
+                tabindex="-1"
+                autocomplete="off"
+              />
             </div>
 
             <div class="form__footer">
@@ -235,7 +323,8 @@ const profileOptions = [
                 Send the message
               </button>
               <p class="form__note">
-                By sending this form, you allow us to come back to you about your enquiry. Your details stay strictly with our team.
+                By sending this form, you allow us to come back to you about your enquiry. Your
+                details stay strictly with our team.
               </p>
             </div>
 
@@ -254,22 +343,25 @@ const profileOptions = [
 
           <div class="contact-block">
             <span class="eyebrow eyebrow--on-dark">Response time</span>
-            <p class="contact-block__text">Within twenty-four business hours, Monday to Friday, China time.</p>
+            <p class="contact-block__text">
+              Within twenty-four business hours, Monday to Friday, China time.
+            </p>
           </div>
 
           <div class="contact-block">
             <span class="eyebrow eyebrow--on-dark">Our offices</span>
             <ul class="offices">
-              {offices.map(o => (
-                <li class="office">
-                  <h3 class="office__city">{o.city}</h3>
-                  <address class="office__address">{o.address}</address>
-                </li>
-              ))}
+              {
+                offices.map((o) => (
+                  <li class="office">
+                    <h3 class="office__city">{o.city}</h3>
+                    <address class="office__address">{o.address}</address>
+                  </li>
+                ))
+              }
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -321,9 +413,8 @@ const profileOptions = [
       const services = data.getAll('services').map((v) => String(v));
       const profileValue = String(data.get('profile') || '').trim();
       const profileOtherVal = String(data.get('profileOther') || '').trim();
-      const profile = profileValue === 'Other' && profileOtherVal
-        ? `Other: ${profileOtherVal}`
-        : profileValue;
+      const profile =
+        profileValue === 'Other' && profileOtherVal ? `Other: ${profileOtherVal}` : profileValue;
       const payload = {
         name: [firstName, lastName].filter(Boolean).join(' '),
         email: String(data.get('email') || '').trim(),
@@ -340,7 +431,8 @@ const profileOptions = [
       const captchaNum = parseInt(payload.captcha, 10);
       const expectedNum = parseInt(payload.captchaExpected, 10);
       if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
-        status.textContent = 'That result is not quite right. The numbers have just refreshed, please try again.';
+        status.textContent =
+          'That result is not quite right. The numbers have just refreshed, please try again.';
         status.classList.add('form__status--error');
         rollCaptcha();
         return;
@@ -362,7 +454,11 @@ const profileOptions = [
           body: JSON.stringify(payload),
         });
         const body = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(body.error || 'The message did not go through. Please try again in a moment. If it keeps failing, you can write to us directly at hello@thechinapath.com.');
+        if (!res.ok)
+          throw new Error(
+            body.error ||
+              'The message did not go through. Please try again in a moment. If it keeps failing, you can write to us directly at hello@thechinapath.com.',
+          );
 
         form.reset();
         rollCaptcha();
@@ -371,7 +467,10 @@ const profileOptions = [
         window.location.assign('/thank-you');
         return;
       } catch (err) {
-        status.textContent = err && err.message ? err.message : 'The message did not go through. Please try again in a moment. If it keeps failing, you can write to us directly at hello@thechinapath.com.';
+        status.textContent =
+          err && err.message
+            ? err.message
+            : 'The message did not go through. Please try again in a moment. If it keeps failing, you can write to us directly at hello@thechinapath.com.';
         status.classList.add('form__status--error');
       } finally {
         submit.disabled = false;

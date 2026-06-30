@@ -2,10 +2,10 @@
 import Layout from '../../../layouts/Layout.astro';
 
 const outcomes = [
-  "El tiempo de carga baja de ocho o quince segundos a menos de uno en China continental",
-  "Baidu arranca a indexar en las semanas siguientes a la concesión del ICP",
-  "Asoman las primeras citas en los motores de IA chinos a medida que rastrean el contenido nuevo",
-  "El GMV del mini-programa de WeChat se sigue desde el día uno",
+  'El tiempo de carga baja de ocho o quince segundos a menos de uno en China continental',
+  'Baidu arranca a indexar en las semanas siguientes a la concesión del ICP',
+  'Asoman las primeras citas en los motores de IA chinos a medida que rastrean el contenido nuevo',
+  'El GMV del mini-programa de WeChat se sigue desde el día uno',
 ];
 
 const aiEngines = [
@@ -17,82 +17,82 @@ const aiEngines = [
 ];
 
 const geoBullets = [
-  "Datos estructurados (schema.org, JSON-LD) para que los modelos recorran sus páginas sin tropiezos",
-  "Contenido denso y factual: los motores de IA citan lo que pueden respaldar; el lenguaje de folleto se lo saltan",
-  "Páginas redactadas en chino e indexadas por Baidu y por Sogou",
-  "Construcción de la entidad de marca en Baidu Baike y fuentes de referencia equivalentes",
-  "Seguimiento de qué motores citan la marca y de cómo la describen",
+  'Datos estructurados (schema.org, JSON-LD) para que los modelos recorran sus páginas sin tropiezos',
+  'Contenido denso y factual: los motores de IA citan lo que pueden respaldar; el lenguaje de folleto se lo saltan',
+  'Páginas redactadas en chino e indexadas por Baidu y por Sogou',
+  'Construcción de la entidad de marca en Baidu Baike y fuentes de referencia equivalentes',
+  'Seguimiento de qué motores citan la marca y de cómo la describen',
 ];
 
 const wechatSurfaces = [
   {
-    tag: "Cuenta oficial",
+    tag: 'Cuenta oficial',
     cn: '公众号',
-    title: "La redacción de su marca, dentro de WeChat",
-    body: "Cuenta de servicio o de suscripción que envía artículos a los suscriptores, lleva la atención al cliente y aloja un puñado de páginas clave. Mantiene viva la relación entre compras.",
-    bullet: "Artículos publicados, atención al cliente, páginas clave",
+    title: 'La redacción de su marca, dentro de WeChat',
+    body: 'Cuenta de servicio o de suscripción que envía artículos a los suscriptores, lleva la atención al cliente y aloja un puñado de páginas clave. Mantiene viva la relación entre compras.',
+    bullet: 'Artículos publicados, atención al cliente, páginas clave',
   },
   {
-    tag: "Mini-programa",
+    tag: 'Mini-programa',
     cn: '小程序',
-    title: "Una aplicación completa dentro de WeChat, a dos toques",
-    body: "Catálogo, pago con WeChat Pay, tarjetas de socio y programas por niveles caben aquí. Es donde de verdad se anudan eCommerce, fidelización y membresía.",
-    bullet: "eCommerce, fidelización y membresía en uno",
+    title: 'Una aplicación completa dentro de WeChat, a dos toques',
+    body: 'Catálogo, pago con WeChat Pay, tarjetas de socio y programas por niveles caben aquí. Es donde de verdad se anudan eCommerce, fidelización y membresía.',
+    bullet: 'eCommerce, fidelización y membresía en uno',
     highlight: true,
   },
 ];
 
 const techPaths = [
   {
-    name: "WordPress",
-    sub: "Orientado a contenido, editado en local",
-    when: "Encaja cuando el equipo local quiere llevar el sitio por su cuenta: campañas, artículos, lanzamientos de producto, cambios frecuentes. Interfaz familiar, base tecnológica probada. Su responsable de marketing en Shanghái publica un martes sin pedirle nada al equipo de desarrollo.",
+    name: 'WordPress',
+    sub: 'Orientado a contenido, editado en local',
+    when: 'Encaja cuando el equipo local quiere llevar el sitio por su cuenta: campañas, artículos, lanzamientos de producto, cambios frecuentes. Interfaz familiar, base tecnológica probada. Su responsable de marketing en Shanghái publica un martes sin pedirle nada al equipo de desarrollo.',
     bullets: [
-      "Google Fonts sustituidas por CDN chinas equivalentes",
-      "Plugins bloqueados reemplazados por alternativas locales",
-      "CDN local conectada, ICP tramitado, SEO Baidu cerrado",
-      "Indicado para equipos que reivindican su autonomía editorial",
+      'Google Fonts sustituidas por CDN chinas equivalentes',
+      'Plugins bloqueados reemplazados por alternativas locales',
+      'CDN local conectada, ICP tramitado, SEO Baidu cerrado',
+      'Indicado para equipos que reivindican su autonomía editorial',
     ],
-    timeline: "6 a 10 semanas",
+    timeline: '6 a 10 semanas',
   },
   {
-    name: "Astro",
-    sub: "Sitio de marca, rendimiento sostenido",
-    when: "Encaja cuando el sitio es escaparate de marca y producto, sin un ritmo intenso de cambios. Astro produce HTML estrictamente estático: carga por debajo de un segundo incluso detrás del Firewall, coste de alojamiento casi nulo y superficie de ataque mucho menor.",
+    name: 'Astro',
+    sub: 'Sitio de marca, rendimiento sostenido',
+    when: 'Encaja cuando el sitio es escaparate de marca y producto, sin un ritmo intenso de cambios. Astro produce HTML estrictamente estático: carga por debajo de un segundo incluso detrás del Firewall, coste de alojamiento casi nulo y superficie de ataque mucho menor.',
     bullets: [
-      "Carga por debajo de un segundo en China continental",
-      "Sin base de datos ni PHP, huella mínima en servidor",
-      "Sin componentes dinámicos explotables ni plugins que parchear",
-      "Indicado para sitios de marketing de marca, sin transacción",
+      'Carga por debajo de un segundo en China continental',
+      'Sin base de datos ni PHP, huella mínima en servidor',
+      'Sin componentes dinámicos explotables ni plugins que parchear',
+      'Indicado para sitios de marketing de marca, sin transacción',
     ],
-    timeline: "4 a 8 semanas",
+    timeline: '4 a 8 semanas',
     highlight: true,
   },
 ];
 
 const hostingOptions = [
   {
-    where: "China continental",
-    note: "ICP obligatorio",
-    load: "< 1 segundo",
-    seo: "Muy favorable",
-    verdict: "La única opción defendible de verdad",
+    where: 'China continental',
+    note: 'ICP obligatorio',
+    load: '< 1 segundo',
+    seo: 'Muy favorable',
+    verdict: 'La única opción defendible de verdad',
     status: 'go',
   },
   {
-    where: "Hong Kong",
-    note: "Sin ICP",
-    load: "De 2 a 4 segundos",
-    seo: "Marginal",
-    verdict: "Lento y penalizado por Baidu",
+    where: 'Hong Kong',
+    note: 'Sin ICP',
+    load: 'De 2 a 4 segundos',
+    seo: 'Marginal',
+    verdict: 'Lento y penalizado por Baidu',
     status: 'warn',
   },
   {
-    where: "Estados Unidos o Unión Europea",
-    note: "Sin ICP",
-    load: "De 8 a 15 segundos, a veces más",
-    seo: "Inexistente",
-    verdict: "Inviable en la práctica",
+    where: 'Estados Unidos o Unión Europea',
+    note: 'Sin ICP',
+    load: 'De 8 a 15 segundos, a veces más',
+    seo: 'Inexistente',
+    verdict: 'Inviable en la práctica',
     status: 'stop',
   },
 ];
@@ -100,75 +100,75 @@ const hostingOptions = [
 const deliverables = [
   {
     icon: 'design',
-    title: "Un diseño pensado para el lector chino",
-    desc: "Páginas más densas, arquitectura recogida, códigos QR sistemáticos, primacía móvil: el 95 % del tráfico pasa por ahí. Construimos para esa realidad, no para los códigos occidentales de la web, pulidos en Estocolmo y rotos en Shanghái.",
+    title: 'Un diseño pensado para el lector chino',
+    desc: 'Páginas más densas, arquitectura recogida, códigos QR sistemáticos, primacía móvil: el 95 % del tráfico pasa por ahí. Construimos para esa realidad, no para los códigos occidentales de la web, pulidos en Estocolmo y rotos en Shanghái.',
   },
   {
     icon: 'code',
-    title: "Un código que convive con el Gran Firewall",
-    desc: "Nada de Google Fonts, ni CDN bloqueadas, ni llamadas a la API de Maps que se quedan colgadas, ni embeds de YouTube. Cada dependencia se sustituye por su equivalente local. Sin brillo aparente, pero esa es la diferencia entre un sitio que aparece y un sitio que se queda congelado.",
+    title: 'Un código que convive con el Gran Firewall',
+    desc: 'Nada de Google Fonts, ni CDN bloqueadas, ni llamadas a la API de Maps que se quedan colgadas, ni embeds de YouTube. Cada dependencia se sustituye por su equivalente local. Sin brillo aparente, pero esa es la diferencia entre un sitio que aparece y un sitio que se queda congelado.',
   },
   {
     icon: 'server',
-    title: "Un alojamiento estable y probado",
-    desc: "Disponibilidad superior al 99 %, atención a incidencias en menos de dos horas, siete días a la semana. Actualización del stack, copias nocturnas, cumplimiento PIPL desde el primer día. La monitorización corre desde dentro del Firewall, que es donde las anomalías aparecen de verdad.",
+    title: 'Un alojamiento estable y probado',
+    desc: 'Disponibilidad superior al 99 %, atención a incidencias en menos de dos horas, siete días a la semana. Actualización del stack, copias nocturnas, cumplimiento PIPL desde el primer día. La monitorización corre desde dentro del Firewall, que es donde las anomalías aparecen de verdad.',
   },
   {
     icon: 'phone',
-    title: "Mini-programas calibrados para convertir",
-    desc: "Diseñados sobre el stack de Tencent (WXML, WXSS, WeChat JS). Pagos nativos, integración con CRM, programas de niveles, notificaciones push. Una década de mini-programas para marcas que tratan WeChat como canal de venta, no como un folleto.",
+    title: 'Mini-programas calibrados para convertir',
+    desc: 'Diseñados sobre el stack de Tencent (WXML, WXSS, WeChat JS). Pagos nativos, integración con CRM, programas de niveles, notificaciones push. Una década de mini-programas para marcas que tratan WeChat como canal de venta, no como un folleto.',
   },
   {
     icon: 'pen',
-    title: "Copywriting en el idioma que toca",
-    desc: "Contenido en chino escrito directamente por nuestro equipo interno, nunca traducido del inglés. Versiones en español e inglés cuando la comunicación corporativa, los materiales de inversores o la coherencia del grupo lo exigen.",
+    title: 'Copywriting en el idioma que toca',
+    desc: 'Contenido en chino escrito directamente por nuestro equipo interno, nunca traducido del inglés. Versiones en español e inglés cuando la comunicación corporativa, los materiales de inversores o la coherencia del grupo lo exigen.',
   },
 ];
 
 const faqs = [
   {
-    q: "¿Qué es GEO y por qué importa?",
-    a: "GEO, Generative Engine Optimization, es el SEO aplicado a la búsqueda por IA. Los internautas chinos consultan cada vez más a los asistentes de IA (Doubao, Kimi, DeepSeek, Qwen) en lugar de hacer una búsqueda clásica. Esos modelos necesitan sitios creíbles, indexados, que puedan citar. Sin alojamiento en China, no hay visibilidad en esa nueva capa de búsqueda.",
+    q: '¿Qué es GEO y por qué importa?',
+    a: 'GEO, Generative Engine Optimization, es el SEO aplicado a la búsqueda por IA. Los internautas chinos consultan cada vez más a los asistentes de IA (Doubao, Kimi, DeepSeek, Qwen) en lugar de hacer una búsqueda clásica. Esos modelos necesitan sitios creíbles, indexados, que puedan citar. Sin alojamiento en China, no hay visibilidad en esa nueva capa de búsqueda.',
   },
   {
-    q: "¿WordPress o Astro?",
-    a: "WordPress si el equipo actualiza el sitio con frecuencia y quiere mantener su autonomía editorial. Astro si el sitio permanece relativamente estable entre lanzamientos y las prioridades son velocidad, seguridad y control del coste de alojamiento.",
+    q: '¿WordPress o Astro?',
+    a: 'WordPress si el equipo actualiza el sitio con frecuencia y quiere mantener su autonomía editorial. Astro si el sitio permanece relativamente estable entre lanzamientos y las prioridades son velocidad, seguridad y control del coste de alojamiento.',
   },
   {
-    q: "¿Cuál es el presupuesto de un sitio diseñado para China?",
-    a: "Depende del alcance, la escala y el número de integraciones. Los sitios de marca en Astro están en la parte baja del rango. Los proyectos WordPress con funcionalidades de eCommerce o integración con WeChat están más arriba. Cada proyecto se presupuesta a medida.",
+    q: '¿Cuál es el presupuesto de un sitio diseñado para China?',
+    a: 'Depende del alcance, la escala y el número de integraciones. Los sitios de marca en Astro están en la parte baja del rango. Los proyectos WordPress con funcionalidades de eCommerce o integración con WeChat están más arriba. Cada proyecto se presupuesta a medida.',
   },
   {
-    q: "¿Cuánto dura el proyecto?",
+    q: '¿Cuánto dura el proyecto?',
     a: "De cuatro a diez semanas para diseño y desarrollo, más el trámite del ICP. Bei'an: dos a cuatro semanas. Licencia comercial: dos a tres meses, a veces más. Diseño y desarrollo corren en paralelo a los trámites de ICP para evitar parones.",
   },
   {
-    q: "¿De quién es el código y el ICP?",
-    a: "De la marca, sin reservas. El código es suyo. El ICP queda a nombre de su entidad china, o de la entidad partner montada conjuntamente. Sin bloqueos operativos.",
+    q: '¿De quién es el código y el ICP?',
+    a: 'De la marca, sin reservas. El código es suyo. El ICP queda a nombre de su entidad china, o de la entidad partner montada conjuntamente. Sin bloqueos operativos.',
   },
   {
-    q: "¿Pueden migrar un sitio existente?",
-    a: "Sí. Auditamos el sitio actual, señalamos los componentes que fallan en China y migramos limpio o reconstruimos las partes que no funcionan. En la mayoría de casos sale más rápido y más barato que rehacerlo entero.",
+    q: '¿Pueden migrar un sitio existente?',
+    a: 'Sí. Auditamos el sitio actual, señalamos los componentes que fallan en China y migramos limpio o reconstruimos las partes que no funcionan. En la mayoría de casos sale más rápido y más barato que rehacerlo entero.',
   },
   {
-    q: "¿De verdad hace falta alojar en China?",
-    a: "Para velocidad de carga, posicionamiento en Baidu, citas de los motores de IA y fiabilidad, sí. Hong Kong funciona como una pasarela imperfecta. Servir el sitio desde Europa o Estados Unidos equivale a ofrecer una experiencia rota a los usuarios chinos.",
+    q: '¿De verdad hace falta alojar en China?',
+    a: 'Para velocidad de carga, posicionamiento en Baidu, citas de los motores de IA y fiabilidad, sí. Hong Kong funciona como una pasarela imperfecta. Servir el sitio desde Europa o Estados Unidos equivale a ofrecer una experiencia rota a los usuarios chinos.',
   },
   {
-    q: "¿Qué es una licencia ICP?",
+    q: '¿Qué es una licencia ICP?',
     a: "Un trámite obligatorio ante el Ministerio chino de Industria y Tecnologías de la Información. Conviven dos regímenes. El Bei'an cubre los sitios informativos. La licencia comercial cubre eCommerce y plataformas transaccionales. Se exige para cualquier alojamiento en China continental.",
   },
   {
-    q: "¿Puede un mini-programa de WeChat sustituir al sitio?",
-    a: "En eCommerce y fidelización, a menudo sí. Para descubrimiento, SEO y credibilidad de marca, el sitio sigue siendo indispensable. La mayoría de los clientes opera los dos en paralelo.",
+    q: '¿Puede un mini-programa de WeChat sustituir al sitio?',
+    a: 'En eCommerce y fidelización, a menudo sí. Para descubrimiento, SEO y credibilidad de marca, el sitio sigue siendo indispensable. La mayoría de los clientes opera los dos en paralelo.',
   },
   {
-    q: "¿Cómo condiciona la PIPL el sitio?",
-    a: "La PIPL es el equivalente chino del RGPD. El sitio debe indicar con claridad qué datos recoge, obtener consentimiento explícito y conservar los datos personales con seguridad. Integramos el cumplimiento PIPL desde el arranque del proyecto.",
+    q: '¿Cómo condiciona la PIPL el sitio?',
+    a: 'La PIPL es el equivalente chino del RGPD. El sitio debe indicar con claridad qué datos recoge, obtener consentimiento explícito y conservar los datos personales con seguridad. Integramos el cumplimiento PIPL desde el arranque del proyecto.',
   },
   {
-    q: "¿En qué consiste la auditoría gratuita?",
-    a: "Probamos el sitio actual desde dentro de China: tiempos de carga, recursos bloqueados, visibilidad en Baidu, citas en los motores de IA. Le mandamos un resumen escrito al terminar. Sin compromiso.",
+    q: '¿En qué consiste la auditoría gratuita?',
+    a: 'Probamos el sitio actual desde dentro de China: tiempos de carga, recursos bloqueados, visibilidad en Baidu, citas en los motores de IA. Le mandamos un resumen escrito al terminar. Sin compromiso.',
   },
 ];
 
@@ -187,11 +187,13 @@ const icons: Record<string, string> = {
   description="Diseñamos y alojamos sitios y mini-programas de WeChat que cargan, posicionan en Baidu y son citados por los motores de IA chinos. Más de veinte años en China."
 >
   <article class="web">
-
     {/* ---------- HERO ---------- */}
     <section class="web-hero">
       <div class="web-hero__bg" aria-hidden="true">
-        <img src="/Images/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact.jpg" alt="" />
+        <img
+          src="/Images/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact.jpg"
+          alt=""
+        />
       </div>
       <div class="web-hero__overlay" aria-hidden="true"></div>
 
@@ -204,16 +206,17 @@ const icons: Record<string, string> = {
         <span class="eyebrow eyebrow--on-dark">Sitios web en China</span>
         <h1 class="web-hero__title">Sitios que cargan, posicionan y venden de verdad en China.</h1>
         <p class="web-hero__lead">
-          Diseñamos, desarrollamos y alojamos sitios y mini-programas de WeChat para el mercado chino.
-          Carga por debajo del segundo, cumplimiento ICP, indexación en Baidu y presencia en los motores de
-          IA que los consumidores chinos usan ya para descubrir marcas.
+          Diseñamos, desarrollamos y alojamos sitios y mini-programas de WeChat para el mercado
+          chino. Carga por debajo del segundo, cumplimiento ICP, indexación en Baidu y presencia en
+          los motores de IA que los consumidores chinos usan ya para descubrir marcas.
         </p>
         <p class="web-hero__support">
-          Más de veinte años en China. Oficinas en Shanghái, Hong Kong y París. Un equipo que ha trabajado
-          para grupos internacionales y para retadores locales.
+          Más de veinte años en China. Oficinas en Shanghái, Hong Kong y París. Un equipo que ha
+          trabajado para grupos internacionales y para retadores locales.
         </p>
         <div class="web-hero__actions">
-          <a href="/es/contacto" class="btn btn--primary">Auditoría gratuita de su sitio en China</a>
+          <a href="/es/contacto" class="btn btn--primary">Auditoría gratuita de su sitio en China</a
+          >
           <a href="/es/proyectos" class="btn btn--ghost-light">Ver nuestros casos</a>
         </div>
       </div>
@@ -227,27 +230,33 @@ const icons: Record<string, string> = {
             <span class="eyebrow">Diseñado para la internet china, no traspuesto</span>
             <h2>Casi todos los sitios internacionales se rompen al llegar a China.</h2>
             <p>
-              La carga se alarga, hasta no mostrar nada. Los servicios de Google siguen bloqueados. Baidu
-              no indexa. Los motores de IA siguen su camino sin pararse.
+              La carga se alarga, hasta no mostrar nada. Los servicios de Google siguen bloqueados.
+              Baidu no indexa. Los motores de IA siguen su camino sin pararse.
             </p>
             <p>
-              Diseñamos sitios y mini-programas de WeChat que encuentran su sitio dentro de la web china.
-              El stack tecnológico encaja con las limitaciones del mercado, el alojamiento está donde tiene
-              que estar, el SEO está calibrado para Baidu y los motores de IA en los que se apoyan ahora
-              los consumidores chinos recogen el contenido. Para que le encuentren, y para vender.
+              Diseñamos sitios y mini-programas de WeChat que encuentran su sitio dentro de la web
+              china. El stack tecnológico encaja con las limitaciones del mercado, el alojamiento
+              está donde tiene que estar, el SEO está calibrado para Baidu y los motores de IA en
+              los que se apoyan ahora los consumidores chinos recogen el contenido. Para que le
+              encuentren, y para vender.
             </p>
           </div>
 
-          <aside class="web-outcomes" aria-label="Resultados observados en los primeros noventa días">
+          <aside
+            class="web-outcomes"
+            aria-label="Resultados observados en los primeros noventa días"
+          >
             <span class="web-outcomes__tag">Primeros noventa días</span>
             <h3>Lo que cambia cuando la ejecución es rigurosa</h3>
             <ul>
-              {outcomes.map((o) => (
-                <li>
-                  <span class="web-outcomes__check" aria-hidden="true" set:html={icons.check} />
-                  <span>{o}</span>
-                </li>
-              ))}
+              {
+                outcomes.map((o) => (
+                  <li>
+                    <span class="web-outcomes__check" aria-hidden="true" set:html={icons.check} />
+                    <span>{o}</span>
+                  </li>
+                ))
+              }
             </ul>
           </aside>
         </div>
@@ -261,44 +270,51 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Un sitio en China, condición innegociable en 2026</span>
           <h2>GEO: que la IA le cite, no solo posicionar en Baidu</h2>
           <p class="section-header__lead">
-            GEO, Generative Engine Optimization, es el SEO en la era de la IA. El consumidor chino se salta
-            la barra de búsqueda y pregunta directamente a los modelos.
+            GEO, Generative Engine Optimization, es el SEO en la era de la IA. El consumidor chino
+            se salta la barra de búsqueda y pregunta directamente a los modelos.
           </p>
         </header>
 
         <div class="web-geo">
           <div class="web-geo__copy">
             <p>
-              Doubao, Kimi, DeepSeek, Qwen y una lista que no para de crecer responden tirando de los sitios
-              que han indexado y considerado creíbles. Sin sitio alojado en China, esos motores no tienen
-              ninguna fuente que citar sobre su marca. La consecuencia es mecánica: su marca queda fuera de
-              la conversación.
+              Doubao, Kimi, DeepSeek, Qwen y una lista que no para de crecer responden tirando de
+              los sitios que han indexado y considerado creíbles. Sin sitio alojado en China, esos
+              motores no tienen ninguna fuente que citar sobre su marca. La consecuencia es
+              mecánica: su marca queda fuera de la conversación.
             </p>
             <h3 class="web-geo__h3">Lo que hacemos en GEO, en concreto</h3>
             <ul class="web-geo__list">
-              {geoBullets.map((b) => (
-                <li>
-                  <span class="web-geo__bullet" aria-hidden="true" set:html={icons.check} />
-                  <span>{b}</span>
-                </li>
-              ))}
+              {
+                geoBullets.map((b) => (
+                  <li>
+                    <span class="web-geo__bullet" aria-hidden="true" set:html={icons.check} />
+                    <span>{b}</span>
+                  </li>
+                ))
+              }
             </ul>
           </div>
 
           <div class="web-engines" aria-label="Motores de IA chinos">
             <span class="web-engines__tag">Los motores que ahora deciden la visibilidad</span>
             <div class="web-engines__grid">
-              {aiEngines.map((e) => (
-                <div class="web-engine">
-                  <span class="web-engine__cn" lang="zh-Hans">{e.cn}</span>
-                  <span class="web-engine__name">{e.name}</span>
-                  <span class="web-engine__maker">{e.maker}</span>
-                </div>
-              ))}
+              {
+                aiEngines.map((e) => (
+                  <div class="web-engine">
+                    <span class="web-engine__cn" lang="zh-Hans">
+                      {e.cn}
+                    </span>
+                    <span class="web-engine__name">{e.name}</span>
+                    <span class="web-engine__maker">{e.maker}</span>
+                  </div>
+                ))
+              }
             </div>
             <p class="web-engines__note">
-              Un sitio alojado en China y redactado en chino es el activo de base que alimenta a Baidu y al
-              conjunto de motores de IA que hoy moldean cómo descubren productos los consumidores chinos.
+              Un sitio alojado en China y redactado en chino es el activo de base que alimenta a
+              Baidu y al conjunto de motores de IA que hoy moldean cómo descubren productos los
+              consumidores chinos.
             </p>
           </div>
         </div>
@@ -323,24 +339,30 @@ const icons: Record<string, string> = {
         </header>
 
         <div class="web-surfaces">
-          {wechatSurfaces.map((s) => (
-            <article class={`web-surface${s.highlight ? ' web-surface--highlight' : ''}`}>
-              {s.highlight && <span class="web-surface__badge">El punto de inflexión de la conversión</span>}
-              <div class="web-surface__head">
-                <span class="web-surface__cn" lang="zh-Hans">{s.cn}</span>
-                <span class="web-surface__tag">{s.tag}</span>
-              </div>
-              <h3 class="web-surface__title">{s.title}</h3>
-              <p class="web-surface__body">{s.body}</p>
-              <span class="web-surface__bullet">{s.bullet}</span>
-            </article>
-          ))}
+          {
+            wechatSurfaces.map((s) => (
+              <article class={`web-surface${s.highlight ? ' web-surface--highlight' : ''}`}>
+                {s.highlight && (
+                  <span class="web-surface__badge">El punto de inflexión de la conversión</span>
+                )}
+                <div class="web-surface__head">
+                  <span class="web-surface__cn" lang="zh-Hans">
+                    {s.cn}
+                  </span>
+                  <span class="web-surface__tag">{s.tag}</span>
+                </div>
+                <h3 class="web-surface__title">{s.title}</h3>
+                <p class="web-surface__body">{s.body}</p>
+                <span class="web-surface__bullet">{s.bullet}</span>
+              </article>
+            ))
+          }
         </div>
 
         <p class="web-surfaces__note">
-          La mayoría de las marcas con las que trabajamos usan las dos superficies. La cuenta oficial
-          sostiene la relación. El mini-programa es donde se cierra la conversión. Juntas cubren el
-          recorrido entero, del descubrimiento a la compra.
+          La mayoría de las marcas con las que trabajamos usan las dos superficies. La cuenta
+          oficial sostiene la relación. El mini-programa es donde se cierra la conversión. Juntas
+          cubren el recorrido entero, del descubrimiento a la compra.
         </p>
       </div>
     </section>
@@ -352,33 +374,41 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Dos vías técnicas</span>
           <h2>WordPress o Astro: la decisión depende de cómo trabaja su equipo.</h2>
           <p class="section-header__lead">
-            Sin guerras de capilla. La elección correcta depende de la frecuencia de publicación, de quién
-            empuja las actualizaciones y de si hay que gestionar transacciones.
+            Sin guerras de capilla. La elección correcta depende de la frecuencia de publicación, de
+            quién empuja las actualizaciones y de si hay que gestionar transacciones.
           </p>
         </header>
 
         <div class="web-tech">
-          {techPaths.map((t) => (
-            <article class={`web-tech-card${t.highlight ? ' web-tech-card--highlight' : ''}`}>
-              <div class="web-tech-card__head">
-                <h3 class="web-tech-card__name">{t.name}</h3>
-                <span class="web-tech-card__sub">{t.sub}</span>
-              </div>
-              <p class="web-tech-card__when">{t.when}</p>
-              <ul class="web-tech-card__list">
-                {t.bullets.map((b) => (
-                  <li>
-                    <span class="web-tech-card__check" aria-hidden="true" set:html={icons.check} />
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
-              <div class="web-tech-card__footer">
-                <span class="web-tech-card__timeline-label">Calendario</span>
-                <span class="web-tech-card__timeline-value">{t.timeline}, más el trámite del ICP</span>
-              </div>
-            </article>
-          ))}
+          {
+            techPaths.map((t) => (
+              <article class={`web-tech-card${t.highlight ? ' web-tech-card--highlight' : ''}`}>
+                <div class="web-tech-card__head">
+                  <h3 class="web-tech-card__name">{t.name}</h3>
+                  <span class="web-tech-card__sub">{t.sub}</span>
+                </div>
+                <p class="web-tech-card__when">{t.when}</p>
+                <ul class="web-tech-card__list">
+                  {t.bullets.map((b) => (
+                    <li>
+                      <span
+                        class="web-tech-card__check"
+                        aria-hidden="true"
+                        set:html={icons.check}
+                      />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div class="web-tech-card__footer">
+                  <span class="web-tech-card__timeline-label">Calendario</span>
+                  <span class="web-tech-card__timeline-value">
+                    {t.timeline}, más el trámite del ICP
+                  </span>
+                </div>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -390,31 +420,34 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Alojamiento en China</span>
           <h2>El alojamiento es la decisión más estructural del proyecto.</h2>
           <p class="section-header__lead">
-            Y la respuesta, a decir verdad, es una: alojar dentro de China. Cualquier otra opción es un
-            compromiso que se paga. Carga lenta, peor posicionamiento en Baidu, experiencia de usuario rota.
+            Y la respuesta, a decir verdad, es una: alojar dentro de China. Cualquier otra opción es
+            un compromiso que se paga. Carga lenta, peor posicionamiento en Baidu, experiencia de
+            usuario rota.
           </p>
         </header>
 
         <div class="web-hosting">
-          {hostingOptions.map((h) => (
-            <article class={`web-host web-host--${h.status}`}>
-              <header class="web-host__head">
-                <h3>{h.where}</h3>
-                <span class="web-host__note">{h.note}</span>
-              </header>
-              <dl class="web-host__metrics">
-                <div>
-                  <dt>Tiempo de carga en China</dt>
-                  <dd>{h.load}</dd>
-                </div>
-                <div>
-                  <dt>Impacto en SEO Baidu</dt>
-                  <dd>{h.seo}</dd>
-                </div>
-              </dl>
-              <p class={`web-host__verdict web-host__verdict--${h.status}`}>{h.verdict}</p>
-            </article>
-          ))}
+          {
+            hostingOptions.map((h) => (
+              <article class={`web-host web-host--${h.status}`}>
+                <header class="web-host__head">
+                  <h3>{h.where}</h3>
+                  <span class="web-host__note">{h.note}</span>
+                </header>
+                <dl class="web-host__metrics">
+                  <div>
+                    <dt>Tiempo de carga en China</dt>
+                    <dd>{h.load}</dd>
+                  </div>
+                  <div>
+                    <dt>Impacto en SEO Baidu</dt>
+                    <dd>{h.seo}</dd>
+                  </div>
+                </dl>
+                <p class={`web-host__verdict web-host__verdict--${h.status}`}>{h.verdict}</p>
+              </article>
+            ))
+          }
         </div>
 
         <div class="web-icp">
@@ -422,19 +455,24 @@ const icons: Record<string, string> = {
             <span class="eyebrow">El trámite ICP, el capítulo del que nadie habla</span>
             <h3>Bei'an: dos a cuatro semanas. Licencia comercial: dos a tres meses.</h3>
             <p>
-              Alojar en China continental supone tener una licencia ICP y montar el servidor en Alibaba
-              Cloud, Tencent Cloud o Huawei Cloud. Nos hacemos cargo del trámite completo del ICP. Bei'an
-              para sitios informativos, licencia comercial para eCommerce y plataformas transaccionales.
+              Alojar en China continental supone tener una licencia ICP y montar el servidor en
+              Alibaba Cloud, Tencent Cloud o Huawei Cloud. Nos hacemos cargo del trámite completo
+              del ICP. Bei'an para sitios informativos, licencia comercial para eCommerce y
+              plataformas transaccionales.
             </p>
             <p>
-              También configuramos el servidor, la CDN, la monitorización desde dentro de China (la mayoría
-              de las herramientas vigilan el estado del sitio desde fuera del Firewall y se pierden los
-              incidentes reales) y las copias diarias. Si no hay entidad china, existen varias vías. Las
-              explicamos en detalle.
+              También configuramos el servidor, la CDN, la monitorización desde dentro de China (la
+              mayoría de las herramientas vigilan el estado del sitio desde fuera del Firewall y se
+              pierden los incidentes reales) y las copias diarias. Si no hay entidad china, existen
+              varias vías. Las explicamos en detalle.
             </p>
           </div>
           <div class="web-icp__visual">
-            <img src="/Images/insights/how-to-apply-for-an-icp-license-for-your-website.png" alt="Proceso de licencia ICP para sitios web en China" loading="lazy" />
+            <img
+              src="/Images/insights/how-to-apply-for-an-icp-license-for-your-website.png"
+              alt="Proceso de licencia ICP para sitios web en China"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -446,11 +484,13 @@ const icons: Record<string, string> = {
         <article class="web-cwf">
           <div class="web-cwf__copy">
             <span class="eyebrow">Agencia hermana</span>
-            <h2 class="web-cwf__title">ChinaWebFoundry: una agencia dedicada a sitios para el mercado chino.</h2>
+            <h2 class="web-cwf__title">
+              ChinaWebFoundry: una agencia dedicada a sitios para el mercado chino.
+            </h2>
             <p>
               Cuando el sitio en sí es el entregable principal, operamos una agencia hermana pensada
-              específicamente para el mercado chino. Cubrimos todas las bases técnicas: WordPress, Astro,
-              estático, desarrollo a medida.
+              específicamente para el mercado chino. Cubrimos todas las bases técnicas: WordPress,
+              Astro, estático, desarrollo a medida.
             </p>
             <ul class="web-cwf__list">
               <li>Estrategia, auditoría y migración detrás del Firewall</li>
@@ -460,10 +500,16 @@ const icons: Record<string, string> = {
               <li>Posicionamiento en Baidu, redacción en chino y mantenimiento continuo</li>
             </ul>
             <p class="web-cwf__same">
-              El mismo equipo. Más de veinte años de experiencia acumulada en China. Una puerta de entrada
-              concreta cuando la prioridad es un sitio que funcione de verdad en China continental.
+              El mismo equipo. Más de veinte años de experiencia acumulada en China. Una puerta de
+              entrada concreta cuando la prioridad es un sitio que funcione de verdad en China
+              continental.
             </p>
-            <a href="https://www.chinawebfoundry.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            <a
+              href="https://www.chinawebfoundry.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary"
+            >
               Visitar ChinaWebFoundry <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -501,13 +547,15 @@ const icons: Record<string, string> = {
         </header>
 
         <div class="web-deliver">
-          {deliverables.map((d) => (
-            <article class="web-deliver-card">
-              <span class="web-deliver-card__icon" set:html={icons[d.icon]} />
-              <h3 class="web-deliver-card__title">{d.title}</h3>
-              <p class="web-deliver-card__desc">{d.desc}</p>
-            </article>
-          ))}
+          {
+            deliverables.map((d) => (
+              <article class="web-deliver-card">
+                <span class="web-deliver-card__icon" set:html={icons[d.icon]} />
+                <h3 class="web-deliver-card__title">{d.title}</h3>
+                <p class="web-deliver-card__desc">{d.desc}</p>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -517,7 +565,9 @@ const icons: Record<string, string> = {
       <div class="container container--narrow">
         <header class="section-header section-header--center">
           <span class="eyebrow">Para quién diseñamos</span>
-          <h2>Marcas que quieren un sitio que aguanta en China, no un sitio bonito en otro sitio.</h2>
+          <h2>
+            Marcas que quieren un sitio que aguanta en China, no un sitio bonito en otro sitio.
+          </h2>
         </header>
 
         <div class="web-who">
@@ -526,7 +576,9 @@ const icons: Record<string, string> = {
             <li>Marcas cuyo sitio actual es demasiado lento para pesar en China continental</li>
             <li>Equipos atascados en su primer trámite de ICP</li>
             <li>Operadores de eCommerce que buscan alojamiento rápido y en regla</li>
-            <li>Marcas chinas que se abren al exterior y necesitan un sitio en inglés que funcione</li>
+            <li>
+              Marcas chinas que se abren al exterior y necesitan un sitio en inglés que funcione
+            </li>
           </ul>
           <p class="web-who__cta">Casos de estudio bajo petición.</p>
         </div>
@@ -542,19 +594,30 @@ const icons: Record<string, string> = {
         </header>
 
         <div class="web-faq">
-          {faqs.map((f, i) => (
-            <details class="web-faq__item" open={i === 0}>
-              <summary class="web-faq__q">
-                <span>{f.q}</span>
-                <span class="web-faq__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </span>
-              </summary>
-              <div class="web-faq__a">
-                <p>{f.a}</p>
-              </div>
-            </details>
-          ))}
+          {
+            faqs.map((f, i) => (
+              <details class="web-faq__item" open={i === 0}>
+                <summary class="web-faq__q">
+                  <span>{f.q}</span>
+                  <span class="web-faq__icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </summary>
+                <div class="web-faq__a">
+                  <p>{f.a}</p>
+                </div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -566,8 +629,8 @@ const icons: Record<string, string> = {
           <span class="eyebrow eyebrow--on-dark">Hablemos de su sitio en China</span>
           <h2 class="web-cta__title">Cuéntenos qué tiene montado, qué necesita y a qué plazo.</h2>
           <p class="web-cta__lead">
-            Le devolvemos una recomendación ajustada a su calendario, su audiencia y su presupuesto. Sin
-            decks genéricos, sin presentaciones de cuarenta diapositivas. Un plan y nada más.
+            Le devolvemos una recomendación ajustada a su calendario, su audiencia y su presupuesto.
+            Sin decks genéricos, sin presentaciones de cuarenta diapositivas. Un plan y nada más.
           </p>
           <div class="web-cta__actions">
             <a href="/es/contacto" class="btn web-cta__btn-primary">Empezar la conversación</a>
@@ -576,11 +639,12 @@ const icons: Record<string, string> = {
         </div>
       </div>
     </section>
-
   </article>
 
   <style is:global>
-    .web .container--narrow { max-width: 880px; }
+    .web .container--narrow {
+      max-width: 880px;
+    }
 
     /* ---------- HERO ---------- */
     .web-hero {
@@ -593,16 +657,32 @@ const icons: Record<string, string> = {
       overflow: hidden;
       isolation: isolate;
     }
-    .web-hero__bg { position: absolute; inset: 0; z-index: -2; }
-    .web-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .web-hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+    }
+    .web-hero__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
     .web-hero__overlay {
-      position: absolute; inset: 0; z-index: -1;
-      background: linear-gradient(110deg,
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(
+        110deg,
         rgba(8, 20, 32, 0.92) 0%,
         rgba(8, 20, 32, 0.72) 50%,
-        rgba(8, 20, 32, 0.4) 100%);
+        rgba(8, 20, 32, 0.4) 100%
+      );
     }
-    .web-hero__inner { max-width: 920px; position: relative; }
+    .web-hero__inner {
+      max-width: 920px;
+      position: relative;
+    }
     .web-hero__crumbs {
       margin-bottom: var(--space-5);
       font-size: var(--fs-small);
@@ -611,12 +691,17 @@ const icons: Record<string, string> = {
       align-items: center;
       color: rgba(255, 255, 255, 0.75);
     }
-    .web-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
-    .web-hero__crumbs a:hover { color: var(--bbg-white); }
+    .web-hero__crumbs a {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+    .web-hero__crumbs a:hover {
+      color: var(--bbg-white);
+    }
     .web-hero__inner .eyebrow--on-dark {
       display: inline-block;
       margin-bottom: var(--space-4);
-      color: #C8102E;
+      color: #c8102e;
     }
     .web-hero__title {
       font-size: clamp(2.25rem, 3.6vw + 1rem, 4rem);
@@ -641,7 +726,11 @@ const icons: Record<string, string> = {
       max-width: 56ch;
       margin: 0 0 var(--space-6);
     }
-    .web-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+    .web-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
 
     /* ---------- INTRO + 90-DAY OUTCOMES ---------- */
     .web-intro {
@@ -662,7 +751,9 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
       margin-bottom: var(--space-4);
     }
-    .web-intro__copy p:last-child { margin-bottom: 0; }
+    .web-intro__copy p:last-child {
+      margin-bottom: 0;
+    }
 
     .web-outcomes {
       background: var(--bbg-ink);
@@ -673,13 +764,13 @@ const icons: Record<string, string> = {
       overflow: hidden;
     }
     .web-outcomes::before {
-      content: "";
+      content: '';
       position: absolute;
       top: -30%;
       right: -20%;
       width: 280px;
       height: 280px;
-      background: radial-gradient(circle, rgba(200, 16, 46,0.32) 0%, rgba(200, 16, 46,0) 65%);
+      background: radial-gradient(circle, rgba(200, 16, 46, 0.32) 0%, rgba(200, 16, 46, 0) 65%);
       pointer-events: none;
     }
     .web-outcomes__tag {
@@ -688,7 +779,7 @@ const icons: Record<string, string> = {
       font-weight: 700;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #C8102E;
+      color: #c8102e;
       margin-bottom: var(--space-3);
     }
     .web-outcomes h3 {
@@ -713,7 +804,7 @@ const icons: Record<string, string> = {
       align-items: start;
       font-size: 0.9375rem;
       line-height: 1.5;
-      color: rgba(255,255,255,0.9);
+      color: rgba(255, 255, 255, 0.9);
     }
     .web-outcomes__check {
       width: 22px;
@@ -727,9 +818,15 @@ const icons: Record<string, string> = {
       flex-shrink: 0;
       margin-top: 1px;
     }
-    .web-outcomes__check svg { width: 12px; height: 12px; }
+    .web-outcomes__check svg {
+      width: 12px;
+      height: 12px;
+    }
     @media (max-width: 1024px) {
-      .web-intro { grid-template-columns: 1fr; gap: var(--space-5); }
+      .web-intro {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+      }
     }
 
     /* ---------- GEO ---------- */
@@ -779,7 +876,10 @@ const icons: Record<string, string> = {
       flex-shrink: 0;
       margin-top: 1px;
     }
-    .web-geo__bullet svg { width: 14px; height: 14px; }
+    .web-geo__bullet svg {
+      width: 14px;
+      height: 14px;
+    }
 
     .web-engines {
       background: var(--bbg-white);
@@ -809,7 +909,10 @@ const icons: Record<string, string> = {
       display: flex;
       flex-direction: column;
       gap: 4px;
-      transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease), transform var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        background var(--dur) var(--ease),
+        transform var(--dur) var(--ease);
     }
     .web-engine:hover {
       border-color: var(--bbg-blue);
@@ -817,7 +920,12 @@ const icons: Record<string, string> = {
       transform: translateY(-2px);
     }
     .web-engine__cn {
-      font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family:
+        'PingFang SC',
+        'Microsoft YaHei',
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
       font-size: 1.5rem;
       font-weight: 600;
       color: var(--bbg-ink);
@@ -844,10 +952,14 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
     }
     @media (max-width: 1024px) {
-      .web-geo { grid-template-columns: 1fr; }
+      .web-geo {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 560px) {
-      .web-engines__grid { grid-template-columns: 1fr; }
+      .web-engines__grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- WECHAT SURFACES ---------- */
@@ -865,7 +977,7 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
       line-height: 1;
       letter-spacing: -0.025em;
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .web-wechat-stat__label {
       font-size: 0.95rem;
@@ -892,7 +1004,9 @@ const icons: Record<string, string> = {
       display: flex;
       flex-direction: column;
       gap: var(--space-4);
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
     }
     .web-surface:hover {
       border-color: var(--bbg-blue);
@@ -923,7 +1037,7 @@ const icons: Record<string, string> = {
       flex-wrap: wrap;
     }
     .web-surface__cn {
-      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
       font-size: 1.75rem;
       font-weight: 600;
       color: var(--bbg-ink);
@@ -960,7 +1074,9 @@ const icons: Record<string, string> = {
       border-radius: 999px;
       letter-spacing: 0.02em;
     }
-    .web-surface--highlight .web-surface__bullet { background: var(--bbg-white); }
+    .web-surface--highlight .web-surface__bullet {
+      background: var(--bbg-white);
+    }
     .web-surfaces__note {
       max-width: 720px;
       margin: var(--space-5) 0 0;
@@ -969,7 +1085,9 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
     }
     @media (max-width: 1024px) {
-      .web-surfaces { grid-template-columns: 1fr; }
+      .web-surfaces {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- TWO TECH PATHS ---------- */
@@ -987,7 +1105,9 @@ const icons: Record<string, string> = {
       display: flex;
       flex-direction: column;
       gap: var(--space-5);
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
     }
     .web-tech-card:hover {
       border-color: var(--bbg-blue);
@@ -998,7 +1118,12 @@ const icons: Record<string, string> = {
       border-color: var(--bbg-blue);
       box-shadow: var(--shadow-md);
     }
-    .web-tech-card__head { display: flex; align-items: baseline; flex-wrap: wrap; gap: var(--space-3); }
+    .web-tech-card__head {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
     .web-tech-card__name {
       font-size: 1.75rem;
       letter-spacing: -0.015em;
@@ -1046,8 +1171,15 @@ const icons: Record<string, string> = {
       justify-content: center;
       flex-shrink: 0;
     }
-    .web-tech-card__check svg { width: 12px; height: 12px; }
-    .web-tech-card__footer { display: flex; flex-direction: column; gap: 4px; }
+    .web-tech-card__check svg {
+      width: 12px;
+      height: 12px;
+    }
+    .web-tech-card__footer {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
     .web-tech-card__timeline-label {
       font-size: var(--fs-label);
       font-weight: 600;
@@ -1061,8 +1193,12 @@ const icons: Record<string, string> = {
       font-weight: 600;
     }
     @media (max-width: 1024px) {
-      .web-tech { grid-template-columns: 1fr; }
-      .web-tech-card { padding: var(--space-6); }
+      .web-tech {
+        grid-template-columns: 1fr;
+      }
+      .web-tech-card {
+        padding: var(--space-6);
+      }
     }
 
     /* ---------- HOSTING ---------- */
@@ -1082,10 +1218,21 @@ const icons: Record<string, string> = {
       gap: var(--space-4);
       border-top: 4px solid var(--bbg-border);
     }
-    .web-host--go { border-top-color: #2BA767; }
-    .web-host--warn { border-top-color: #E0A91B; }
-    .web-host--stop { border-top-color: #C9402F; }
-    .web-host__head { display: flex; align-items: baseline; gap: var(--space-3); flex-wrap: wrap; }
+    .web-host--go {
+      border-top-color: #2ba767;
+    }
+    .web-host--warn {
+      border-top-color: #e0a91b;
+    }
+    .web-host--stop {
+      border-top-color: #c9402f;
+    }
+    .web-host__head {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+    }
     .web-host__head h3 {
       font-size: 1.25rem;
       letter-spacing: -0.01em;
@@ -1115,7 +1262,10 @@ const icons: Record<string, string> = {
       padding-bottom: var(--space-3);
       border-bottom: 1px solid var(--bbg-border);
     }
-    .web-host__metrics > div:last-child { border-bottom: none; padding-bottom: 0; }
+    .web-host__metrics > div:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
     .web-host__metrics dt {
       font-size: var(--fs-label);
       font-weight: 600;
@@ -1129,7 +1279,7 @@ const icons: Record<string, string> = {
       color: var(--bbg-ink);
       margin: 0;
       letter-spacing: -0.005em;
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .web-host__verdict {
       margin: 0;
@@ -1138,9 +1288,18 @@ const icons: Record<string, string> = {
       padding: var(--space-3);
       border-radius: var(--radius-md);
     }
-    .web-host__verdict--go { background: rgba(43,167,103,0.12); color: #1F7E4D; }
-    .web-host__verdict--warn { background: rgba(224,169,27,0.12); color: #8A6610; }
-    .web-host__verdict--stop { background: rgba(201,64,47,0.12); color: #952D20; }
+    .web-host__verdict--go {
+      background: rgba(43, 167, 103, 0.12);
+      color: #1f7e4d;
+    }
+    .web-host__verdict--warn {
+      background: rgba(224, 169, 27, 0.12);
+      color: #8a6610;
+    }
+    .web-host__verdict--stop {
+      background: rgba(201, 64, 47, 0.12);
+      color: #952d20;
+    }
 
     .web-icp {
       display: grid;
@@ -1163,17 +1322,29 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
       margin-bottom: var(--space-4);
     }
-    .web-icp__copy p:last-child { margin-bottom: 0; }
+    .web-icp__copy p:last-child {
+      margin-bottom: 0;
+    }
     .web-icp__visual {
       border-radius: var(--radius-md);
       overflow: hidden;
       box-shadow: var(--shadow-md);
       aspect-ratio: 16 / 11;
     }
-    .web-icp__visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .web-icp__visual img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     @media (max-width: 1024px) {
-      .web-hosting { grid-template-columns: 1fr; }
-      .web-icp { grid-template-columns: 1fr; padding: var(--space-6); }
+      .web-hosting {
+        grid-template-columns: 1fr;
+      }
+      .web-icp {
+        grid-template-columns: 1fr;
+        padding: var(--space-6);
+      }
     }
 
     /* ---------- CHINAWEBFOUNDRY ---------- */
@@ -1216,7 +1387,7 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
     }
     .web-cwf__list li::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0.55em;
@@ -1230,7 +1401,10 @@ const icons: Record<string, string> = {
       color: var(--bbg-text-muted);
     }
 
-    .web-cwf__visual { display: flex; justify-content: center; }
+    .web-cwf__visual {
+      display: flex;
+      justify-content: center;
+    }
     .web-cwf__browser {
       width: 100%;
       max-width: 460px;
@@ -1252,17 +1426,23 @@ const icons: Record<string, string> = {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #D4D4D4;
+      background: #d4d4d4;
     }
-    .web-cwf__dot:nth-child(1) { background: #FF5F57; }
-    .web-cwf__dot:nth-child(2) { background: #FEBC2E; }
-    .web-cwf__dot:nth-child(3) { background: #28C840; }
+    .web-cwf__dot:nth-child(1) {
+      background: #ff5f57;
+    }
+    .web-cwf__dot:nth-child(2) {
+      background: #febc2e;
+    }
+    .web-cwf__dot:nth-child(3) {
+      background: #28c840;
+    }
     .web-cwf__url {
       margin-left: 12px;
       font-size: 0.75rem;
       color: var(--bbg-text-muted);
       letter-spacing: 0.03em;
-      font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+      font-family: ui-monospace, 'SFMono-Regular', Consolas, monospace;
     }
     .web-cwf__browser-body {
       padding: var(--space-6) var(--space-5);
@@ -1304,7 +1484,10 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
     }
     @media (max-width: 1024px) {
-      .web-cwf { grid-template-columns: 1fr; padding: var(--space-6); }
+      .web-cwf {
+        grid-template-columns: 1fr;
+        padding: var(--space-6);
+      }
     }
 
     /* ---------- DELIVERABLES ---------- */
@@ -1318,7 +1501,10 @@ const icons: Record<string, string> = {
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
       padding: var(--space-6);
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease),
+        transform var(--dur) var(--ease);
     }
     .web-deliver-card:hover {
       border-color: var(--bbg-blue);
@@ -1336,7 +1522,10 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
       margin-bottom: var(--space-4);
     }
-    .web-deliver-card__icon svg { width: 24px; height: 24px; }
+    .web-deliver-card__icon svg {
+      width: 24px;
+      height: 24px;
+    }
     .web-deliver-card__title {
       font-size: 1.1875rem;
       line-height: 1.25;
@@ -1349,8 +1538,16 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
       margin: 0;
     }
-    @media (max-width: 1024px) { .web-deliver { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 560px) { .web-deliver { grid-template-columns: 1fr; } }
+    @media (max-width: 1024px) {
+      .web-deliver {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 560px) {
+      .web-deliver {
+        grid-template-columns: 1fr;
+      }
+    }
 
     /* ---------- WHO WE BUILD FOR ---------- */
     .web-who {
@@ -1376,7 +1573,7 @@ const icons: Record<string, string> = {
       font-weight: 500;
     }
     .web-who li::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0.7em;
@@ -1404,7 +1601,9 @@ const icons: Record<string, string> = {
       overflow: hidden;
       transition: border-color var(--dur) var(--ease);
     }
-    .web-faq__item[open] { border-color: var(--bbg-blue); }
+    .web-faq__item[open] {
+      border-color: var(--bbg-blue);
+    }
     .web-faq__q {
       cursor: pointer;
       padding: var(--space-5);
@@ -1419,9 +1618,15 @@ const icons: Record<string, string> = {
       list-style: none;
       transition: color var(--dur) var(--ease);
     }
-    .web-faq__q::-webkit-details-marker { display: none; }
-    .web-faq__q::marker { display: none; }
-    .web-faq__item:hover .web-faq__q { color: var(--bbg-blue); }
+    .web-faq__q::-webkit-details-marker {
+      display: none;
+    }
+    .web-faq__q::marker {
+      display: none;
+    }
+    .web-faq__item:hover .web-faq__q {
+      color: var(--bbg-blue);
+    }
     .web-faq__icon {
       flex-shrink: 0;
       width: 24px;
@@ -1430,7 +1635,9 @@ const icons: Record<string, string> = {
       align-items: center;
       justify-content: center;
       color: var(--bbg-text-muted);
-      transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+      transition:
+        transform var(--dur) var(--ease),
+        color var(--dur) var(--ease);
     }
     .web-faq__item[open] .web-faq__icon {
       transform: rotate(180deg);
@@ -1442,7 +1649,9 @@ const icons: Record<string, string> = {
       line-height: 1.65;
       font-size: 1rem;
     }
-    .web-faq__a p { margin: 0; }
+    .web-faq__a p {
+      margin: 0;
+    }
 
     /* ---------- FINAL CTA ---------- */
     .web-cta {
@@ -1455,13 +1664,17 @@ const icons: Record<string, string> = {
       overflow: hidden;
     }
     .web-cta::before {
-      content: "";
+      content: '';
       position: absolute;
       top: -40%;
       right: -10%;
       width: 420px;
       height: 420px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 65%
+      );
       pointer-events: none;
     }
     .web-cta .eyebrow--on-dark {

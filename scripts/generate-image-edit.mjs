@@ -13,7 +13,9 @@ const args = process.argv.slice(2);
 const doubleDashIdx = args.indexOf('--');
 
 if (doubleDashIdx < 2 || doubleDashIdx >= args.length - 1) {
-  console.error('Usage: node scripts/generate-image-edit.mjs <output-filename> <prompt> -- <image1> [image2] ...');
+  console.error(
+    'Usage: node scripts/generate-image-edit.mjs <output-filename> <prompt> -- <image1> [image2] ...',
+  );
   process.exit(1);
 }
 
@@ -40,7 +42,7 @@ async function generate() {
   const submitRes = await fetch(`${API_URL}/${MODEL}`, {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${API_KEY}`,
+      Authorization: `Bearer ${API_KEY}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
@@ -67,7 +69,7 @@ async function generate() {
     process.stdout.write('.');
 
     const statusRes = await fetch(`${API_URL}/predictions/${taskId}/result`, {
-      headers: { 'Authorization': `Bearer ${API_KEY}` },
+      headers: { Authorization: `Bearer ${API_KEY}` },
     });
 
     const statusData = await statusRes.json();

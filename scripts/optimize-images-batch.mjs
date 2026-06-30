@@ -20,13 +20,13 @@
 //     original is left untouched. This protects already-optimized files.
 //   - Prints a per-file line and a total report at the end.
 
-import { argv, exit, cwd } from "node:process";
-import { readFile, stat, writeFile, readdir } from "node:fs/promises";
-import path from "node:path";
-import sharp from "sharp";
+import { argv, exit, cwd } from 'node:process';
+import { readFile, stat, writeFile, readdir } from 'node:fs/promises';
+import path from 'node:path';
+import sharp from 'sharp';
 
-const RASTER_EXT = new Set([".jpg", ".jpeg", ".png", ".webp"]);
-const SKIP_EXT = new Set([".svg", ".avif", ".gif", ".ico"]);
+const RASTER_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp']);
+const SKIP_EXT = new Set(['.svg', '.avif', '.gif', '.ico']);
 
 const DEFAULTS = {
   maxWidth: 2000,
@@ -37,18 +37,18 @@ const DEFAULTS = {
   alphaThreshold: 0.995,
   dry: false,
   force: false,
-  root: "public/Images",
+  root: 'public/Images',
 };
 
 function parseArgs(rawArgs) {
   const opts = { ...DEFAULTS };
   const positional = [];
   for (const arg of rawArgs) {
-    if (arg === "--dry") opts.dry = true;
-    else if (arg === "--force") opts.force = true;
-    else if (arg.startsWith("--max-width=")) opts.maxWidth = Number(arg.split("=")[1]);
-    else if (arg.startsWith("--min-size=")) opts.minSizeKB = Number(arg.split("=")[1]);
-    else if (arg.startsWith("--")) {
+    if (arg === '--dry') opts.dry = true;
+    else if (arg === '--force') opts.force = true;
+    else if (arg.startsWith('--max-width=')) opts.maxWidth = Number(arg.split('=')[1]);
+    else if (arg.startsWith('--min-size=')) opts.minSizeKB = Number(arg.split('=')[1]);
+    else if (arg.startsWith('--')) {
       console.error(`Unknown flag: ${arg}`);
       exit(2);
     } else {
@@ -99,17 +99,17 @@ async function hasMeaningfulAlpha(pipeline, meta, threshold) {
 
 async function optimizeOne(file, opts) {
   const ext = path.extname(file).toLowerCase();
-  if (SKIP_EXT.has(ext)) return { file, skipped: "vector/other" };
-  if (!RASTER_EXT.has(ext)) return { file, skipped: "not raster" };
+  if (SKIP_EXT.has(ext)) return { file, skipped: 'vector/other' };
+  if (!RASTER_EXT.has(ext)) return { file, skipped: 'not raster' };
 
   const srcStat = await stat(file);
   const srcBytes = srcStat.size;
   if (srcBytes < opts.minSizeKB * 1024) {
-    return { file, srcBytes, skipped: "small" };
+    return { file, srcBytes, skipped: 'small' };
   }
 
   const srcBuf = await readFile(file);
-  const probe = sharp(srcBuf, { failOn: "error" }).rotate();
+  const probe = sharp(srcBuf, { failOn: 'error' }).rotate();
   let meta;
   try {
     meta = await probe.metadata();
@@ -123,19 +123,19 @@ async function optimizeOne(file, opts) {
 
   let outBuf;
   try {
-    if (ext === ".jpg" || ext === ".jpeg") {
+    if (ext === '.jpg' || ext === '.jpeg') {
       outBuf = await resizer(sharp(srcBuf).rotate())
-        .flatten({ background: "#ffffff" })
+        .flatten({ background: '#ffffff' })
         .jpeg({ quality: opts.jpgQuality, mozjpeg: true, progressive: true })
         .toBuffer();
-    } else if (ext === ".png") {
+    } else if (ext === '.png') {
       const alpha = await hasMeaningfulAlpha(probe, meta, opts.alphaThreshold);
       let pipe = resizer(sharp(srcBuf).rotate());
-      if (!alpha) pipe = pipe.flatten({ background: "#ffffff" });
+      if (!alpha) pipe = pipe.flatten({ background: '#ffffff' });
       outBuf = await pipe
         .png({ palette: true, quality: opts.pngQuality, compressionLevel: 9, effort: 10 })
         .toBuffer();
-    } else if (ext === ".webp") {
+    } else if (ext === '.webp') {
       outBuf = await resizer(sharp(srcBuf).rotate())
         .webp({ quality: opts.webpQuality, effort: 6 })
         .toBuffer();
@@ -144,7 +144,7 @@ async function optimizeOne(file, opts) {
     return { file, srcBytes, error: `encode: ${err.message}` };
   }
 
-  if (!outBuf) return { file, srcBytes, skipped: "no output" };
+  if (!outBuf) return { file, srcBytes, skipped: 'no output' };
 
   const saved = srcBytes - outBuf.length;
   const ratio = saved / srcBytes;
@@ -178,14 +178,12 @@ async function main() {
   const opts = parseArgs(argv.slice(2));
   const root = path.resolve(opts.root);
   console.log(
-    `Scanning: ${path.relative(cwd(), root) || "."}  (max-width=${opts.maxWidth}, min-size=${opts.minSizeKB} KB${opts.dry ? ", DRY RUN" : ""})`,
+    `Scanning: ${path.relative(cwd(), root) || '.'}  (max-width=${opts.maxWidth}, min-size=${opts.minSizeKB} KB${opts.dry ? ', DRY RUN' : ''})`,
   );
 
-  const files = (await walk(root)).filter((f) =>
-    RASTER_EXT.has(path.extname(f).toLowerCase()),
-  );
+  const files = (await walk(root)).filter((f) => RASTER_EXT.has(path.extname(f).toLowerCase()));
   if (files.length === 0) {
-    console.log("No raster images found.");
+    console.log('No raster images found.');
     return;
   }
 
@@ -218,20 +216,18 @@ async function main() {
     totalSrc += r.srcBytes;
     totalOut += r.outBytes;
     const pct = (r.ratio * 100).toFixed(0);
-    const flags = r.resized ? " [resized]" : "";
-    console.log(
-      `  ${rel}  ${fmtBytes(r.srcBytes)} -> ${fmtBytes(r.outBytes)}  (-${pct}%)${flags}`,
-    );
+    const flags = r.resized ? ' [resized]' : '';
+    console.log(`  ${rel}  ${fmtBytes(r.srcBytes)} -> ${fmtBytes(r.outBytes)}  (-${pct}%)${flags}`);
   }
 
   const totalSaved = totalSrc - totalOut;
-  const pct = totalSrc > 0 ? ((totalSaved / totalSrc) * 100).toFixed(1) : "0.0";
-  console.log("");
+  const pct = totalSrc > 0 ? ((totalSaved / totalSrc) * 100).toFixed(1) : '0.0';
+  console.log('');
   console.log(
     `Done: ${optimized} optimized, ${kept} kept (no gain), ${skipped} skipped, ${errored} errored.`,
   );
   console.log(
-    `Total: ${fmtBytes(totalSrc)} -> ${fmtBytes(totalOut)}  (${fmtBytes(totalSaved)} saved, -${pct}%)${opts.dry ? "  [DRY RUN, nothing written]" : ""}`,
+    `Total: ${fmtBytes(totalSrc)} -> ${fmtBytes(totalOut)}  (${fmtBytes(totalSaved)} saved, -${pct}%)${opts.dry ? '  [DRY RUN, nothing written]' : ''}`,
   );
 }
 

@@ -21,14 +21,6 @@ const team = [
     bio: '18 years running eCommerce and digital for global brands in China. Former operations director at Publicis China. Owns the platforms and the day-to-day on every account.',
     linkedin: 'https://www.linkedin.com/in/echo-peng-aa241751/',
   },
-  {
-    name: 'Liyan Ye',
-    role: 'Senior Director',
-    base: 'Shanghai',
-    photo: '/Images/team/liyan-ye.jpg',
-    bio: '20 years marketing Fortune 500 brands in China. Leads brand building and campaigns, and turns platform activity into something a customer actually remembers.',
-    linkedin: 'https://www.linkedin.com/in/liyanye/',
-  },
 ];
 
 const credentials = [
@@ -72,97 +64,102 @@ const principles = [
   },
   {
     title: 'We think cross-border, not export',
-    body: "China is not your home market translated. Payment rails, platforms and consumer habits run on rules of their own, and a brand that misses that ships pretty work that nobody buys.",
+    body: 'China is not your home market translated. Payment rails, platforms and consumer habits run on rules of their own, and a brand that misses that ships pretty work that nobody buys.',
     icon: 'globe',
   },
   {
     title: 'We know the mechanics inside out',
-    body: "Tmall ranking, Xiaohongshu moderation, WeChat tracking. We have broken these platforms, fixed them and scaled through them for 15 years.",
+    body: 'Tmall ranking, Xiaohongshu moderation, WeChat tracking. We have broken these platforms, fixed them and scaled through them for 15 years.',
     icon: 'gears',
   },
   {
     title: 'We have the phone numbers',
-    body: "25 years in China means we know who to call when a platform changes the rules overnight. Distributors who pick up, TP partners who do not ghost after onboarding, KOL agencies that actually vet their talent.",
+    body: '25 years in China means we know who to call when a platform changes the rules overnight. Distributors who pick up, TP partners who do not ghost after onboarding, KOL agencies that actually vet their talent.',
     icon: 'network',
   },
   {
     title: 'We have sat in your chair',
-    body: "Before TheChinaPath, we ran commerce teams at Publicis. Flagship store P&Ls. Platform penalties negotiated at 3am Beijing time.",
+    body: 'Before TheChinaPath, we ran commerce teams at Publicis. Flagship store P&Ls. Platform penalties negotiated at 3am Beijing time.',
     icon: 'chair',
   },
 ];
 
 const principleIcon: Record<string, string> = {
-  hands:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5a1.5 1.5 0 0 1 3 0v5"/><path d="M12 10V4a1.5 1.5 0 0 1 3 0v7"/><path d="M15 11V6a1.5 1.5 0 0 1 3 0v9"/><path d="M18 11V8a1.5 1.5 0 0 1 3 0v7a6 6 0 0 1-6 6H9a5 5 0 0 1-4.5-2.8L2 13.5a1.5 1.5 0 0 1 2.6-1.4L6 14"/></svg>',
-  target:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/></svg>',
-  globe:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a13 13 0 0 1 0 18"/><path d="M12 3a13 13 0 0 0 0 18"/></svg>',
-  gears:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="9.5" r="3"/><path d="M9.5 2v2M9.5 15v2M2 9.5h2M15 9.5h2M4.2 4.2l1.4 1.4M13.4 13.4l1.4 1.4M4.2 14.8l1.4-1.4M13.4 5.6l1.4-1.4"/><circle cx="17" cy="17" r="2.2"/><path d="M17 12v1.5M17 20.5V22M12 17h1.5M20.5 17H22"/></svg>',
-  network: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7l4 10M17 7l-4 10M7.5 6h9M6 8v8M18 8v8"/></svg>',
-  chair:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v8h14V3"/><path d="M3 11h18"/><path d="M5 11v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6"/><path d="M7 20l-1 2M17 20l1 2"/></svg>',
+  hands:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5a1.5 1.5 0 0 1 3 0v5"/><path d="M12 10V4a1.5 1.5 0 0 1 3 0v7"/><path d="M15 11V6a1.5 1.5 0 0 1 3 0v9"/><path d="M18 11V8a1.5 1.5 0 0 1 3 0v7a6 6 0 0 1-6 6H9a5 5 0 0 1-4.5-2.8L2 13.5a1.5 1.5 0 0 1 2.6-1.4L6 14"/></svg>',
+  target:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/></svg>',
+  globe:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a13 13 0 0 1 0 18"/><path d="M12 3a13 13 0 0 0 0 18"/></svg>',
+  gears:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="9.5" r="3"/><path d="M9.5 2v2M9.5 15v2M2 9.5h2M15 9.5h2M4.2 4.2l1.4 1.4M13.4 13.4l1.4 1.4M4.2 14.8l1.4-1.4M13.4 5.6l1.4-1.4"/><circle cx="17" cy="17" r="2.2"/><path d="M17 12v1.5M17 20.5V22M12 17h1.5M20.5 17H22"/></svg>',
+  network:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7l4 10M17 7l-4 10M7.5 6h9M6 8v8M18 8v8"/></svg>',
+  chair:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v8h14V3"/><path d="M3 11h18"/><path d="M5 11v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6"/><path d="M7 20l-1 2M17 20l1 2"/></svg>',
 };
 
 const metrics = [
-  { target: 15,  suffix: '+', label: 'Years building brands in China' },
-  { target: 60,  suffix: '+', label: 'Brands grown across eCommerce, media and distribution' },
+  { target: 15, suffix: '+', label: 'Years building brands in China' },
+  { target: 60, suffix: '+', label: 'Brands grown across eCommerce, media and distribution' },
   { target: 100, suffix: '+', label: 'Campaigns delivered on Chinese platforms' },
-  { target: 50,  suffix: '+', label: 'Consulting engagements for global brands' },
+  { target: 50, suffix: '+', label: 'Consulting engagements for global brands' },
 ];
 
 const clients = [
-  { name: 'Shiseido',       logo: '/Images/Clients%20Logos/shiseiso-black-scaled.png' },
-  { name: 'Pierre Fabre',   logo: '/Images/Clients%20Logos/pierre-black.png' },
-  { name: 'iFlytek',        logo: '/Images/Clients%20Logos/iflytek-black.png' },
-  { name: 'Camper',         logo: '/Images/Clients%20Logos/camper_black.png' },
-  { name: 'Into You',       logo: '/Images/Clients%20Logos/LogoIntoYou.png' },
-  { name: 'Estée Lauder',   logo: '/Images/Clients%20Logos/Estee%20Lauder.png' },
-  { name: 'Gucci',          logo: '/Images/Clients%20Logos/Gucci.png' },
-  { name: 'Huawei',         logo: '/Images/Clients%20Logos/Huawei.png' },
-  { name: 'Honor',          logo: '/Images/Clients%20Logos/Honor.png' },
-  { name: 'P&G',            logo: '/Images/Clients%20Logos/PG.png' },
-  { name: 'Sanofi',         logo: '/Images/Clients%20Logos/Sanofi.png' },
-  { name: 'Danone',         logo: '/Images/Clients%20Logos/Danone.png' },
-  { name: 'Heineken',       logo: '/Images/Clients%20Logos/Heineken.png' },
-  { name: 'Bacardi',        logo: '/Images/Clients%20Logos/Bacardi.png' },
-  { name: 'Martini',        logo: '/Images/Clients%20Logos/martini.png' },
-  { name: 'Lavazza',        logo: '/Images/Clients%20Logos/Lavazza.png' },
-  { name: 'Nescafé',        logo: '/Images/Clients%20Logos/Nescaf%C3%A9.png' },
-  { name: 'Costa Coffee',   logo: '/Images/Clients%20Logos/Costa.png' },
-  { name: 'Ferrero',        logo: '/Images/Clients%20Logos/Ferrero.png' },
-  { name: 'Kraft Heinz',    logo: '/Images/Clients%20Logos/KraftHeinz.png' },
-  { name: 'Maltesers',      logo: '/Images/Clients%20Logos/maltesers.png' },
-  { name: 'Kerry',          logo: '/Images/Clients%20Logos/Kerry.png' },
-  { name: 'Valio',          logo: '/Images/Clients%20Logos/Valio.png' },
-  { name: 'a2 Milk',        logo: '/Images/Clients%20Logos/a2.png' },
-  { name: 'Langnese',       logo: '/Images/Clients%20Logos/Langnese_International_Logo_v2.svg' },
-  { name: 'Marriott',       logo: '/Images/Clients%20Logos/Marriot.png' },
-  { name: 'Cigna',          logo: '/Images/Clients%20Logos/Cigna.png' },
-  { name: 'Electrolux',     logo: '/Images/Clients%20Logos/Electrolux.png' },
-  { name: 'Viessmann',      logo: '/Images/Clients%20Logos/Viessman.png' },
-  { name: 'Chery',          logo: '/Images/Clients%20Logos/Chery.png' },
-  { name: 'JAC Motors',     logo: '/Images/Clients%20Logos/JAC.png' },
+  { name: 'Shiseido', logo: '/Images/Clients%20Logos/shiseiso-black-scaled.png' },
+  { name: 'Pierre Fabre', logo: '/Images/Clients%20Logos/pierre-black.png' },
+  { name: 'iFlytek', logo: '/Images/Clients%20Logos/iflytek-black.png' },
+  { name: 'Camper', logo: '/Images/Clients%20Logos/camper_black.png' },
+  { name: 'Into You', logo: '/Images/Clients%20Logos/LogoIntoYou.png' },
+  { name: 'Estée Lauder', logo: '/Images/Clients%20Logos/Estee%20Lauder.png' },
+  { name: 'Gucci', logo: '/Images/Clients%20Logos/Gucci.png' },
+  { name: 'Huawei', logo: '/Images/Clients%20Logos/Huawei.png' },
+  { name: 'Honor', logo: '/Images/Clients%20Logos/Honor.png' },
+  { name: 'P&G', logo: '/Images/Clients%20Logos/PG.png' },
+  { name: 'Sanofi', logo: '/Images/Clients%20Logos/Sanofi.png' },
+  { name: 'Danone', logo: '/Images/Clients%20Logos/Danone.png' },
+  { name: 'Heineken', logo: '/Images/Clients%20Logos/Heineken.png' },
+  { name: 'Bacardi', logo: '/Images/Clients%20Logos/Bacardi.png' },
+  { name: 'Martini', logo: '/Images/Clients%20Logos/martini.png' },
+  { name: 'Lavazza', logo: '/Images/Clients%20Logos/Lavazza.png' },
+  { name: 'Nescafé', logo: '/Images/Clients%20Logos/Nescaf%C3%A9.png' },
+  { name: 'Costa Coffee', logo: '/Images/Clients%20Logos/Costa.png' },
+  { name: 'Ferrero', logo: '/Images/Clients%20Logos/Ferrero.png' },
+  { name: 'Kraft Heinz', logo: '/Images/Clients%20Logos/KraftHeinz.png' },
+  { name: 'Maltesers', logo: '/Images/Clients%20Logos/maltesers.png' },
+  { name: 'Kerry', logo: '/Images/Clients%20Logos/Kerry.png' },
+  { name: 'Valio', logo: '/Images/Clients%20Logos/Valio.png' },
+  { name: 'a2 Milk', logo: '/Images/Clients%20Logos/a2.png' },
+  { name: 'Langnese', logo: '/Images/Clients%20Logos/Langnese_International_Logo_v2.svg' },
+  { name: 'Marriott', logo: '/Images/Clients%20Logos/Marriot.png' },
+  { name: 'Cigna', logo: '/Images/Clients%20Logos/Cigna.png' },
+  { name: 'Electrolux', logo: '/Images/Clients%20Logos/Electrolux.png' },
+  { name: 'Viessmann', logo: '/Images/Clients%20Logos/Viessman.png' },
+  { name: 'Chery', logo: '/Images/Clients%20Logos/Chery.png' },
+  { name: 'JAC Motors', logo: '/Images/Clients%20Logos/JAC.png' },
   { name: 'Bowers & Wilkins', logo: '/Images/Clients%20Logos/Bowers.png' },
-  { name: 'iGuzzini',       logo: '/Images/Clients%20Logos/iGuzzini.png' },
-  { name: 'Pigeon',         logo: '/Images/Clients%20Logos/Pigeon.png' },
-  { name: 'Pilot',          logo: '/Images/Clients%20Logos/Pilot.png' },
-  { name: 'Eucerin',        logo: '/Images/Clients%20Logos/Eucerin.png' },
-  { name: 'RoC',            logo: '/Images/Clients%20Logos/Roc.png' },
-  { name: 'Shu Uemura',     logo: '/Images/Clients%20Logos/Shu.png' },
-  { name: 'Age 20’s',  logo: '/Images/Clients%20Logos/Age20.png' },
-  { name: 'Codex Beauty',   logo: '/Images/Clients%20Logos/Codex.png' },
-  { name: 'Skarlett Blue',  logo: '/Images/Clients%20Logos/Skarlett%20Blue.png' },
-  { name: 'Magpie',         logo: '/Images/Clients%20Logos/MagPie.png' },
-  { name: 'Macusee',        logo: '/Images/Clients%20Logos/Logo-Macusee.png' },
-  { name: 'Zeinley',        logo: '/Images/Clients%20Logos/Zeinley.png' },
-  { name: 'Mission',        logo: '/Images/Clients%20Logos/Mission.png' },
-  { name: 'Russell',        logo: '/Images/Clients%20Logos/Russell.png' },
-  { name: 'BO',             logo: '/Images/Clients%20Logos/BO.png' },
-  { name: 'Blue',           logo: '/Images/Clients%20Logos/Blue.png' },
+  { name: 'iGuzzini', logo: '/Images/Clients%20Logos/iGuzzini.png' },
+  { name: 'Pigeon', logo: '/Images/Clients%20Logos/Pigeon.png' },
+  { name: 'Pilot', logo: '/Images/Clients%20Logos/Pilot.png' },
+  { name: 'Eucerin', logo: '/Images/Clients%20Logos/Eucerin.png' },
+  { name: 'RoC', logo: '/Images/Clients%20Logos/Roc.png' },
+  { name: 'Shu Uemura', logo: '/Images/Clients%20Logos/Shu.png' },
+  { name: 'Age 20’s', logo: '/Images/Clients%20Logos/Age20.png' },
+  { name: 'Codex Beauty', logo: '/Images/Clients%20Logos/Codex.png' },
+  { name: 'Skarlett Blue', logo: '/Images/Clients%20Logos/Skarlett%20Blue.png' },
+  { name: 'Magpie', logo: '/Images/Clients%20Logos/MagPie.png' },
+  { name: 'Macusee', logo: '/Images/Clients%20Logos/Logo-Macusee.png' },
+  { name: 'Zeinley', logo: '/Images/Clients%20Logos/Zeinley.png' },
+  { name: 'Mission', logo: '/Images/Clients%20Logos/Mission.png' },
+  { name: 'Russell', logo: '/Images/Clients%20Logos/Russell.png' },
+  { name: 'BO', logo: '/Images/Clients%20Logos/BO.png' },
+  { name: 'Blue', logo: '/Images/Clients%20Logos/Blue.png' },
 ];
 
 const halfIndex = Math.ceil(clients.length / 2);
 const clientsRowA = clients.slice(0, halfIndex);
 const clientsRowB = clients.slice(halfIndex);
-
 
 const speakingPhotos = [
   '/Images/public-speaking/17b417b78e0a412bc58482b29ac8c6b.jpg',
@@ -207,16 +204,6 @@ const aboutSchema = [
     sameAs: ['https://www.linkedin.com/in/echo-peng-aa241751/'],
     workLocations: ['Shanghai'],
   }),
-  personSchema({
-    id: PERSON_IDS.liyan,
-    name: 'Liyan Ye',
-    jobTitle: 'Senior Director',
-    description:
-      '20 years marketing Fortune 500 brands in China. Leads brand building and campaigns.',
-    image: '/Images/team/liyan-ye.jpg',
-    sameAs: ['https://www.linkedin.com/in/liyanye/'],
-    workLocations: ['Shanghai'],
-  }),
 ];
 ---
 
@@ -225,7 +212,6 @@ const aboutSchema = [
   description="A senior China agency team founded by Cyril Drouin, former CEO of Publicis Commerce and Performance Marketing for China and North Asia. Offices in Shanghai, Hong Kong and Paris."
   schema={aboutSchema}
 >
-
   {/* ---------- SCROLL PROGRESS ---------- */}
   <div class="home-progress" aria-hidden="true"><div class="home-progress__bar"></div></div>
 
@@ -250,12 +236,16 @@ const aboutSchema = [
 
       <h1 class="home-hero__title home-reveal" style="--reveal-delay: 80ms;">
         <span class="home-hero__title-row">We are on the ground in China.</span>
-        <span class="home-hero__title-row home-hero__title-row--accent">We advise, we plan, we run,</span>
-        <span class="home-hero__title-row home-hero__title-row--highlight">and we keep learning.</span>
+        <span class="home-hero__title-row home-hero__title-row--accent"
+          >We advise, we plan, we run,</span
+        >
+        <span class="home-hero__title-row home-hero__title-row--highlight"
+          >and we keep learning.</span
+        >
       </h1>
       <p class="home-hero__lead home-reveal" style="--reveal-delay: 200ms;">
-        A complete team based in China: strategists, platform operators, content and creative.
-        We build your plan and we run it.
+        A complete team based in China: strategists, platform operators, content and creative. We
+        build your plan and we run it.
       </p>
       <div class="home-hero__actions home-reveal" style="--reveal-delay: 280ms;">
         <a class="btn btn--primary home-magnetic" href="/contact">Talk to us</a>
@@ -292,19 +282,18 @@ const aboutSchema = [
           <span class="eyebrow">Why we exist</span>
           <h2>Experience you can't Google.</h2>
           <p class="lead">
-            TheChinaPath was founded by former Publicis executives who spent 15 years
-            growing global brands across China. We worked inside Tmall dashboards, Douyin
-            studios and distributor back rooms, a long way from any boardroom.
+            TheChinaPath was founded by former Publicis executives who spent 15 years growing global
+            brands across China. We worked inside Tmall dashboards, Douyin studios and distributor
+            back rooms, a long way from any boardroom.
           </p>
           <p>
-            The same pattern showed up everywhere. Brands paid for sharp China strategies,
-            then watched junior teams fumble the work that mattered. Beautiful decks,
-            mediocre numbers.
+            The same pattern showed up everywhere. Brands paid for sharp China strategies, then
+            watched junior teams fumble the work that mattered. Beautiful decks, mediocre numbers.
           </p>
           <p>
-            So we built something different. We write the plan and we run it. Same senior
-            people from the first workshop to the monthly P&L review. Nobody to hand off to,
-            and nobody else to blame when things get hard.
+            So we built something different. We write the plan and we run it. Same senior people
+            from the first workshop to the monthly P&L review. Nobody to hand off to, and nobody
+            else to blame when things get hard.
           </p>
         </div>
 
@@ -335,62 +324,79 @@ const aboutSchema = [
         <span class="eyebrow">Our leadership</span>
         <h2>We learned China marketing by launching brands there.</h2>
         <p class="lead">
-          Former 4A directors who also ran the P&L, took the platform calls,
-          and signed off the budgets. Three operators, one team, one phone number.
+          Former 4A directors who also ran the P&L, took the platform calls, and signed off the
+          budgets. Two operators, one team, one phone number.
         </p>
       </header>
 
       <div class="grid grid-3 team-grid">
-        {team.map((t) => (
-          <article class="team-card" id={t.name.toLowerCase().replace(/\s+/g, '-')}>
-            <div class="team-card__photo">
-              <img
-                src={t.photo}
-                alt={`${t.name}, ${t.role}`}
-                loading="lazy"
-                decoding="async"
-                width="480"
-                height="480"
-              />
-            </div>
-            <div class="team-card__body">
-              <h3 class="team-card__name">{t.name}</h3>
-              <span class="team-card__role">{t.role}</span>
-              <span class="team-card__base">{t.base}</span>
-              <p>{t.bio}</p>
+        {
+          team.map((t) => (
+            <article class="team-card" id={t.name.toLowerCase().replace(/\s+/g, '-')}>
+              <div class="team-card__photo">
+                <img
+                  src={t.photo}
+                  alt={`${t.name}, ${t.role}`}
+                  loading="lazy"
+                  decoding="async"
+                  width="480"
+                  height="480"
+                />
+              </div>
+              <div class="team-card__body">
+                <h3 class="team-card__name">{t.name}</h3>
+                <span class="team-card__role">{t.role}</span>
+                <span class="team-card__base">{t.base}</span>
+                <p>{t.bio}</p>
 
-              <ul class="team-card__links" aria-label={`${t.name} profiles`}>
-                {t.linkedin && (
-                  <li>
-                    <a href={t.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${t.name} on LinkedIn`}>
-                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.82H5.67v8.52h2.67zm-1.33-9.7a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.66c0-2.5-1.34-3.66-3.12-3.66a2.7 2.7 0 0 0-2.44 1.34h-.04V9.82h-2.56v8.52h2.67v-4.22c0-1.11.21-2.18 1.59-2.18s1.38 1.27 1.38 2.25v4.15h2.52z"/>
-                      </svg>
-                    </a>
-                  </li>
-                )}
-                {t.twitter && (
-                  <li>
-                    <a href={t.twitter} target="_blank" rel="noopener noreferrer" aria-label={`${t.name} on X / Twitter`}>
-                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                      </svg>
-                    </a>
-                  </li>
-                )}
-                {t.substack && (
-                  <li>
-                    <a href={t.substack} target="_blank" rel="noopener noreferrer" aria-label={`${t.name} on Substack`}>
-                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
-                      </svg>
-                    </a>
-                  </li>
-                )}
-              </ul>
-            </div>
-          </article>
-        ))}
+                <ul class="team-card__links" aria-label={`${t.name} profiles`}>
+                  {t.linkedin && (
+                    <li>
+                      <a
+                        href={t.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${t.name} on LinkedIn`}
+                      >
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                          <path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.82H5.67v8.52h2.67zm-1.33-9.7a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.66c0-2.5-1.34-3.66-3.12-3.66a2.7 2.7 0 0 0-2.44 1.34h-.04V9.82h-2.56v8.52h2.67v-4.22c0-1.11.21-2.18 1.59-2.18s1.38 1.27 1.38 2.25v4.15h2.52z" />
+                        </svg>
+                      </a>
+                    </li>
+                  )}
+                  {t.twitter && (
+                    <li>
+                      <a
+                        href={t.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${t.name} on X / Twitter`}
+                      >
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                      </a>
+                    </li>
+                  )}
+                  {t.substack && (
+                    <li>
+                      <a
+                        href={t.substack}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${t.name} on Substack`}
+                      >
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                          <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+                        </svg>
+                      </a>
+                    </li>
+                  )}
+                </ul>
+              </div>
+            </article>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -404,57 +410,88 @@ const aboutSchema = [
 
     <div class="container">
       <header class="section-header creds__header" data-creds-reveal>
-        <span class="eyebrow"><span class="creds__eyebrow-bar" aria-hidden="true"></span>Strategic leadership, operational depth</span>
+        <span class="eyebrow"
+          ><span class="creds__eyebrow-bar" aria-hidden="true"></span>Strategic leadership,
+          operational depth</span
+        >
         <h2>Each of us has 15 years in China marketing, digital and eCommerce.</h2>
         <p class="lead creds__lead">
-          We used to write the strategy decks, sit in the room when they got
-          approved, then ship the work the following Monday. Here is what that
-          actually buys you.
+          We used to write the strategy decks, sit in the room when they got approved, then ship the
+          work the following Monday. Here is what that actually buys you.
         </p>
       </header>
 
       <div class="creds__stage" data-creds data-creds-reveal>
         <div class="cred-feature" data-feature>
-          {credentials.map((c, i) => (
-            <article
-              class={`cred-feature__slide${i === 0 ? ' is-active' : ''}`}
-              data-slide={i}
-              aria-hidden={i === 0 ? 'false' : 'true'}
-            >
-              <figure class="cred-feature__visual">
-                <img src={c.image} alt="" width="1200" height="800" loading={i === 0 ? 'eager' : 'lazy'} decoding="async" />
-                <span class="cred-feature__chip" aria-hidden="true">{c.title}</span>
-              </figure>
-              <div class="cred-feature__body">
-                <span class="cred-feature__eyebrow">Why it matters</span>
-                <h3 class="cred-feature__title">{c.title}</h3>
-                <p class="cred-feature__copy">{c.body}</p>
-              </div>
-            </article>
-          ))}
+          {
+            credentials.map((c, i) => (
+              <article
+                class={`cred-feature__slide${i === 0 ? ' is-active' : ''}`}
+                data-slide={i}
+                aria-hidden={i === 0 ? 'false' : 'true'}
+              >
+                <figure class="cred-feature__visual">
+                  <img
+                    src={c.image}
+                    alt=""
+                    width="1200"
+                    height="800"
+                    loading={i === 0 ? 'eager' : 'lazy'}
+                    decoding="async"
+                  />
+                  <span class="cred-feature__chip" aria-hidden="true">
+                    {c.title}
+                  </span>
+                </figure>
+                <div class="cred-feature__body">
+                  <span class="cred-feature__eyebrow">Why it matters</span>
+                  <h3 class="cred-feature__title">{c.title}</h3>
+                  <p class="cred-feature__copy">{c.body}</p>
+                </div>
+              </article>
+            ))
+          }
           <div class="cred-feature__progress" aria-hidden="true"><span></span></div>
         </div>
 
         <ol class="cred-rail" role="tablist" aria-label="Strategic credentials">
-          {credentials.map((c, i) => (
-            <li class="cred-rail__item">
-              <button
-                class={`cred-thumb${i === 0 ? ' is-active' : ''}`}
-                role="tab"
-                type="button"
-                data-thumb={i}
-                aria-selected={i === 0 ? 'true' : 'false'}
-              >
-                <span class="cred-thumb__visual" aria-hidden="true">
-                  <img src={c.image} alt="" width="600" height="400" loading="lazy" decoding="async" />
-                </span>
-                <span class="cred-thumb__title">{c.title}</span>
-                <span class="cred-thumb__arrow" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </span>
-              </button>
-            </li>
-          ))}
+          {
+            credentials.map((c, i) => (
+              <li class="cred-rail__item">
+                <button
+                  class={`cred-thumb${i === 0 ? ' is-active' : ''}`}
+                  role="tab"
+                  type="button"
+                  data-thumb={i}
+                  aria-selected={i === 0 ? 'true' : 'false'}
+                >
+                  <span class="cred-thumb__visual" aria-hidden="true">
+                    <img
+                      src={c.image}
+                      alt=""
+                      width="600"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </span>
+                  <span class="cred-thumb__title">{c.title}</span>
+                  <span class="cred-thumb__arrow" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                  </span>
+                </button>
+              </li>
+            ))
+          }
         </ol>
       </div>
     </div>
@@ -469,15 +506,17 @@ const aboutSchema = [
       </header>
 
       <div class="grid grid-3 principles">
-        {principles.map((p) => (
-          <article class="card principle">
-            <div class="principle__head">
-              <span class="principle__icon" aria-hidden="true" set:html={principleIcon[p.icon]} />
-            </div>
-            <h3 class="card__title">{p.title}</h3>
-            <p>{p.body}</p>
-          </article>
-        ))}
+        {
+          principles.map((p) => (
+            <article class="card principle">
+              <div class="principle__head">
+                <span class="principle__icon" aria-hidden="true" set:html={principleIcon[p.icon]} />
+              </div>
+              <h3 class="card__title">{p.title}</h3>
+              <p>{p.body}</p>
+            </article>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -491,52 +530,78 @@ const aboutSchema = [
       </header>
 
       <div class="proof-metrics">
-        {metrics.map((m) => (
-          <div class="proof-metric">
-            <span class="proof-metric__value" data-counter data-target={m.target}>
-              <span class="proof-metric__num">{m.target}</span><span class="proof-metric__suffix">{m.suffix}</span>
-            </span>
-            <span class="proof-metric__label">{m.label}</span>
-          </div>
-        ))}
+        {
+          metrics.map((m) => (
+            <div class="proof-metric">
+              <span class="proof-metric__value" data-counter data-target={m.target}>
+                <>
+                  <span class="proof-metric__num">{m.target}</span>
+                  <span class="proof-metric__suffix">{m.suffix}</span>
+                </>
+              </span>
+              <span class="proof-metric__label">{m.label}</span>
+            </div>
+          ))
+        }
       </div>
     </div>
 
     <div class="client-ticker" role="region" aria-label="A sample of brands we have worked with">
       <div class="client-ticker__row">
         <div class="client-ticker__track">
-          {clientsRowA.map((c) => (
-            <div class="client-ticker__item">
-              <img src={c.logo} alt={c.name} width="240" height="80" loading="lazy" decoding="async" />
-            </div>
-          ))}
-          {clientsRowA.map((c) => (
-            <div class="client-ticker__item" aria-hidden="true">
-              <img src={c.logo} alt="" width="240" height="80" loading="lazy" decoding="async" />
-            </div>
-          ))}
+          {
+            clientsRowA.map((c) => (
+              <div class="client-ticker__item">
+                <img
+                  src={c.logo}
+                  alt={c.name}
+                  width="240"
+                  height="80"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            ))
+          }
+          {
+            clientsRowA.map((c) => (
+              <div class="client-ticker__item" aria-hidden="true">
+                <img src={c.logo} alt="" width="240" height="80" loading="lazy" decoding="async" />
+              </div>
+            ))
+          }
         </div>
       </div>
       <div class="client-ticker__row client-ticker__row--reverse">
         <div class="client-ticker__track">
-          {clientsRowB.map((c) => (
-            <div class="client-ticker__item">
-              <img src={c.logo} alt={c.name} width="240" height="80" loading="lazy" decoding="async" />
-            </div>
-          ))}
-          {clientsRowB.map((c) => (
-            <div class="client-ticker__item" aria-hidden="true">
-              <img src={c.logo} alt="" width="240" height="80" loading="lazy" decoding="async" />
-            </div>
-          ))}
+          {
+            clientsRowB.map((c) => (
+              <div class="client-ticker__item">
+                <img
+                  src={c.logo}
+                  alt={c.name}
+                  width="240"
+                  height="80"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            ))
+          }
+          {
+            clientsRowB.map((c) => (
+              <div class="client-ticker__item" aria-hidden="true">
+                <img src={c.logo} alt="" width="240" height="80" loading="lazy" decoding="async" />
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
 
     <div class="container">
       <p class="proof-note">
-        Global and Chinese brands across beauty, F&amp;B, fashion, automotive,
-        and technology.
+        Global and Chinese brands across beauty, F&amp;B, fashion, automotive, and technology.
       </p>
     </div>
   </section>
@@ -545,12 +610,14 @@ const aboutSchema = [
   <section class="section section--tight speaking" data-speak-root>
     <div class="container">
       <header class="speaking__header" data-speak-reveal>
-        <span class="eyebrow"><span class="creds__eyebrow-bar" aria-hidden="true"></span>Industry recognition</span>
+        <span class="eyebrow"
+          ><span class="creds__eyebrow-bar" aria-hidden="true"></span>Industry recognition</span
+        >
         <h2 class="speaking__title">Invited to the rooms where China gets discussed.</h2>
         <p class="lead speaking__lead">
-          Brand summits, platform conferences, chambers of commerce. Stages in
-          Shanghai, Paris and New York, usually because the organizer ran out of
-          people who have actually shipped the work.
+          Brand summits, platform conferences, chambers of commerce. Stages in Shanghai, Paris and
+          New York, usually because the organizer ran out of people who have actually shipped the
+          work.
           <a href="/insights">Read what we have been saying.</a>
         </p>
         <div class="speaking__meta" aria-hidden="true">
@@ -571,16 +638,20 @@ const aboutSchema = [
       <div class="speak-ticker" role="region" aria-label="Speaking engagements">
         <div class="speak-ticker__row">
           <div class="speak-ticker__track">
-            {speakingPhotos.map((src) => (
-              <figure class="speak-ticker__item">
-                <img src={src} alt="" width="800" height="600" loading="lazy" decoding="async" />
-              </figure>
-            ))}
-            {speakingPhotos.map((src) => (
-              <figure class="speak-ticker__item" aria-hidden="true">
-                <img src={src} alt="" width="800" height="600" loading="lazy" decoding="async" />
-              </figure>
-            ))}
+            {
+              speakingPhotos.map((src) => (
+                <figure class="speak-ticker__item">
+                  <img src={src} alt="" width="800" height="600" loading="lazy" decoding="async" />
+                </figure>
+              ))
+            }
+            {
+              speakingPhotos.map((src) => (
+                <figure class="speak-ticker__item" aria-hidden="true">
+                  <img src={src} alt="" width="800" height="600" loading="lazy" decoding="async" />
+                </figure>
+              ))
+            }
           </div>
         </div>
       </div>
@@ -590,12 +661,7 @@ const aboutSchema = [
   {/* ---------- CLOSING CTA ---------- */}
   <section class="section section--dark cta cta-team">
     <div class="cta-team__bg" aria-hidden="true">
-      <img
-        src="/Images/team/team-photo.png"
-        alt=""
-        loading="lazy"
-        decoding="async"
-      />
+      <img src="/Images/team/team-photo.png" alt="" loading="lazy" decoding="async" />
     </div>
     <div class="cta-team__overlay" aria-hidden="true"></div>
 
@@ -603,8 +669,8 @@ const aboutSchema = [
       <span class="eyebrow">Get in touch</span>
       <h2>Thinking about taking your brand to China?</h2>
       <p class="lead cta__lead">
-        Tell us where you are today and where you want to be. A senior partner
-        will write back inside one working day, not a form-letter from an intake bot.
+        Tell us where you are today and where you want to be. A senior partner will write back
+        inside one working day, not a form-letter from an intake bot.
       </p>
       <a href="/contact" class="btn btn--primary">Contact us</a>
     </div>
@@ -619,14 +685,17 @@ const aboutSchema = [
         if (reduced || !('IntersectionObserver' in window)) {
           revealEls.forEach((el) => el.classList.add('is-in'));
         } else {
-          const io = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-in');
-                io.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-in');
+                  io.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+          );
           revealEls.forEach((el) => io.observe(el));
         }
       }
@@ -647,14 +716,17 @@ const aboutSchema = [
           };
           requestAnimationFrame(tick);
         };
-        const counterIo = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animate(entry.target);
-              counterIo.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.5 });
+        const counterIo = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animate(entry.target);
+                counterIo.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
         counters.forEach((el) => counterIo.observe(el));
       } else {
         counters.forEach((el) => {
@@ -674,7 +746,7 @@ const aboutSchema = [
           if (parallaxImg && heroEl && !reduced) {
             const heroH = heroEl.offsetHeight;
             if (scrollY < heroH) {
-              parallaxImg.style.setProperty('--parallax-y', (scrollY * 0.18) + 'px');
+              parallaxImg.style.setProperty('--parallax-y', scrollY * 0.18 + 'px');
             }
           }
           if (progressEl) {
@@ -709,7 +781,10 @@ const aboutSchema = [
       /* ---- Counter animation ---- */
       const counters = document.querySelectorAll('[data-counter]');
       const animateCounter = (numEl, target) => {
-        if (reduced) { numEl.textContent = target.toString(); return; }
+        if (reduced) {
+          numEl.textContent = target.toString();
+          return;
+        }
         const duration = 1600;
         const start = performance.now();
         const tick = (now) => {
@@ -721,18 +796,21 @@ const aboutSchema = [
         requestAnimationFrame(tick);
       };
 
-      const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          const el = entry.target;
-          const target = parseInt(el.dataset.target, 10);
-          const numEl = el.querySelector('.proof-metric__num');
-          if (!Number.isFinite(target) || !numEl) return;
-          numEl.textContent = reduced ? target.toString() : '0';
-          animateCounter(numEl, target);
-          counterObserver.unobserve(el);
-        });
-      }, { threshold: 0.35 });
+      const counterObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            const target = parseInt(el.dataset.target, 10);
+            const numEl = el.querySelector('.proof-metric__num');
+            if (!Number.isFinite(target) || !numEl) return;
+            numEl.textContent = reduced ? target.toString() : '0';
+            animateCounter(numEl, target);
+            counterObserver.unobserve(el);
+          });
+        },
+        { threshold: 0.35 },
+      );
       counters.forEach((el) => counterObserver.observe(el));
 
       /* ---- Credentials rotator ---- */
@@ -764,7 +842,10 @@ const aboutSchema = [
         };
 
         const tick = (now) => {
-          if (paused) { requestAnimationFrame(tick); return; }
+          if (paused) {
+            requestAnimationFrame(tick);
+            return;
+          }
           const elapsed = now - timerStart;
           if (progress) progress.style.width = Math.min(100, (elapsed / ROTATE_MS) * 100) + '%';
           if (elapsed >= ROTATE_MS) {
@@ -775,17 +856,28 @@ const aboutSchema = [
 
         thumbs.forEach((t, i) => {
           t.addEventListener('click', () => activate(i));
-          t.addEventListener('mouseenter', () => { paused = true; activate(i); });
-          t.addEventListener('mouseleave', () => { paused = false; });
-          t.addEventListener('focus', () => { paused = true; activate(i); });
-          t.addEventListener('blur', () => { paused = false; });
+          t.addEventListener('mouseenter', () => {
+            paused = true;
+            activate(i);
+          });
+          t.addEventListener('mouseleave', () => {
+            paused = false;
+          });
+          t.addEventListener('focus', () => {
+            paused = true;
+            activate(i);
+          });
+          t.addEventListener('blur', () => {
+            paused = false;
+          });
         });
 
         credsRoot.addEventListener('keydown', (e) => {
           if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-          const next = e.key === 'ArrowRight'
-            ? (activeIdx + 1) % slides.length
-            : (activeIdx - 1 + slides.length) % slides.length;
+          const next =
+            e.key === 'ArrowRight'
+              ? (activeIdx + 1) % slides.length
+              : (activeIdx - 1 + slides.length) % slides.length;
           activate(next);
           const target = thumbs[next];
           if (target instanceof HTMLElement) target.focus();
@@ -793,15 +885,18 @@ const aboutSchema = [
         });
 
         if (!reduced) {
-          const startObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (!entry.isIntersecting || started) return;
-              started = true;
-              timerStart = performance.now();
-              requestAnimationFrame(tick);
-              startObserver.unobserve(credsRoot);
-            });
-          }, { threshold: 0.2 });
+          const startObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (!entry.isIntersecting || started) return;
+                started = true;
+                timerStart = performance.now();
+                requestAnimationFrame(tick);
+                startObserver.unobserve(credsRoot);
+              });
+            },
+            { threshold: 0.2 },
+          );
           startObserver.observe(credsRoot);
         }
       }
@@ -812,13 +907,16 @@ const aboutSchema = [
         if (reduced) {
           credsReveals.forEach((el) => el.classList.add('is-revealed'));
         } else {
-          const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (!entry.isIntersecting) return;
-              entry.target.classList.add('is-revealed');
-              revealObserver.unobserve(entry.target);
-            });
-          }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+          const revealObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('is-revealed');
+                revealObserver.unobserve(entry.target);
+              });
+            },
+            { threshold: 0.15, rootMargin: '0px 0px -60px 0px' },
+          );
           credsReveals.forEach((el) => revealObserver.observe(el));
         }
       }
@@ -829,19 +927,21 @@ const aboutSchema = [
         if (reduced) {
           speakReveals.forEach((el) => el.classList.add('is-revealed'));
         } else {
-          const speakObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (!entry.isIntersecting) return;
-              entry.target.classList.add('is-revealed');
-              speakObserver.unobserve(entry.target);
-            });
-          }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+          const speakObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('is-revealed');
+                speakObserver.unobserve(entry.target);
+              });
+            },
+            { threshold: 0.15, rootMargin: '0px 0px -60px 0px' },
+          );
           speakReveals.forEach((el) => speakObserver.observe(el));
         }
       }
     })();
   </script>
-
 </Layout>
 
 <style>
@@ -859,7 +959,7 @@ const aboutSchema = [
   :global(.home-progress__bar) {
     height: 100%;
     width: var(--progress, 0%);
-    background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 60%, #C8102E 100%);
+    background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 60%, #c8102e 100%);
     box-shadow: 0 0 12px rgba(200, 16, 46, 0.55);
     transition: width 80ms linear;
   }
@@ -883,7 +983,11 @@ const aboutSchema = [
       padding-top: clamp(112px, 12vh, 140px);
     }
   }
-  :global(.home-hero__bg) { position: absolute; inset: -10% 0 0; z-index: -3; }
+  :global(.home-hero__bg) {
+    position: absolute;
+    inset: -10% 0 0;
+    z-index: -3;
+  }
   :global(.home-hero__bg img) {
     display: block;
     width: 100%;
@@ -895,30 +999,36 @@ const aboutSchema = [
     filter: saturate(0.95);
   }
   :global(.home-hero__overlay) {
-    position: absolute; inset: 0; z-index: -2;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
     background:
-      linear-gradient(110deg,
+      linear-gradient(
+        110deg,
         rgba(8, 18, 28, 0.92) 0%,
         rgba(8, 18, 28, 0.72) 42%,
-        rgba(8, 18, 28, 0.32) 100%),
-      radial-gradient(120% 80% at 0% 100%,
-        rgba(200, 16, 46, 0.28) 0%,
-        rgba(200, 16, 46, 0) 60%);
+        rgba(8, 18, 28, 0.32) 100%
+      ),
+      radial-gradient(120% 80% at 0% 100%, rgba(200, 16, 46, 0.28) 0%, rgba(200, 16, 46, 0) 60%);
   }
   :global(.home-hero__grain) {
-    position: absolute; inset: 0; z-index: -1;
-    background-image:
-      radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
     background-size: 3px 3px;
     mix-blend-mode: overlay;
     opacity: 0.45;
     pointer-events: none;
   }
-  :global(.home-hero__inner) { max-width: 980px; position: relative; }
+  :global(.home-hero__inner) {
+    max-width: 980px;
+    position: relative;
+  }
   :global(.home-hero__inner .eyebrow--on-dark) {
     display: inline-block;
     margin-bottom: var(--space-3);
-    color: #C8102E;
+    color: #c8102e;
   }
   :global(.home-hero__title) {
     font-size: clamp(2.25rem, 4vw + 1rem, 4.25rem);
@@ -932,9 +1042,11 @@ const aboutSchema = [
     flex-direction: column;
     gap: 0.05em;
   }
-  :global(.home-hero__title-row) { display: block; }
+  :global(.home-hero__title-row) {
+    display: block;
+  }
   :global(.home-hero__title-row--accent) {
-    color: #C8102E;
+    color: #c8102e;
     font-weight: 500;
     font-style: italic;
     letter-spacing: -0.018em;
@@ -946,21 +1058,25 @@ const aboutSchema = [
     padding: 0 0.15em;
   }
   :global(.home-hero__title-row--highlight::before) {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0.04em;
     height: 0.18em;
-    background: linear-gradient(90deg, var(--bbg-blue) 0%, #E84A60 100%);
+    background: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
     border-radius: 2px;
     transform-origin: left center;
     animation: about-home-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
     z-index: -1;
   }
   @keyframes about-home-underline {
-    from { transform: scaleX(0); }
-    to { transform: scaleX(1); }
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
   }
   :global(.home-hero__lead) {
     font-size: clamp(1.0625rem, 0.5vw + 1rem, 1.25rem);
@@ -984,14 +1100,18 @@ const aboutSchema = [
     border-top: 1px solid rgba(255, 255, 255, 0.14);
     max-width: 760px;
   }
-  :global(.home-hero__meta-item) { display: flex; flex-direction: column; gap: 0.2rem; }
+  :global(.home-hero__meta-item) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
   :global(.home-hero__meta-num) {
     font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1;
     color: var(--bbg-white);
-    font-feature-settings: "tnum";
+    font-feature-settings: 'tnum';
   }
   :global(.home-hero__meta-label) {
     font-size: 0.85rem;
@@ -1014,7 +1134,9 @@ const aboutSchema = [
     font-weight: 600;
     transition: color 200ms ease;
   }
-  :global(.home-hero__scroll:hover) { color: var(--bbg-white); }
+  :global(.home-hero__scroll:hover) {
+    color: var(--bbg-white);
+  }
   :global(.home-hero__scroll-line) {
     width: 1px;
     height: 40px;
@@ -1023,7 +1145,7 @@ const aboutSchema = [
     overflow: hidden;
   }
   :global(.home-hero__scroll-line::after) {
-    content: "";
+    content: '';
     position: absolute;
     top: -100%;
     left: 0;
@@ -1033,12 +1155,20 @@ const aboutSchema = [
     animation: about-home-scroll-tick 1.8s ease-in-out infinite;
   }
   @keyframes about-home-scroll-tick {
-    0% { top: -50%; }
-    100% { top: 100%; }
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 100%;
+    }
   }
   @media (max-width: 720px) {
-    :global(.home-hero__scroll) { display: none; }
-    :global(.home-hero__meta) { gap: var(--space-4); }
+    :global(.home-hero__scroll) {
+      display: none;
+    }
+    :global(.home-hero__meta) {
+      gap: var(--space-4);
+    }
   }
 
   /* Reveal motion + magnetic hover (scoped to hero) */
@@ -1056,10 +1186,15 @@ const aboutSchema = [
     }
     :global(.home-hero .home-magnetic) {
       will-change: transform;
-      transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-                  box-shadow 220ms ease, background-color 200ms ease, color 200ms ease;
+      transition:
+        transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        box-shadow 220ms ease,
+        background-color 200ms ease,
+        color 200ms ease;
     }
-    :global(.home-hero .home-magnetic:hover) { transform: translateY(-2px); }
+    :global(.home-hero .home-magnetic:hover) {
+      transform: translateY(-2px);
+    }
   }
 
   /* ---------- Why we exist: split with signature ---------- */
@@ -1069,7 +1204,9 @@ const aboutSchema = [
     gap: var(--space-7);
     align-items: center;
   }
-  .about-split__copy { max-width: 62ch; }
+  .about-split__copy {
+    max-width: 62ch;
+  }
 
   .about-signature {
     background: var(--bbg-white);
@@ -1078,7 +1215,9 @@ const aboutSchema = [
     padding: var(--space-6);
     border-left: 3px solid var(--bbg-blue);
   }
-  .about-signature figure { margin: 0; }
+  .about-signature figure {
+    margin: 0;
+  }
   .about-signature img {
     display: block;
     width: 100%;
@@ -1105,11 +1244,18 @@ const aboutSchema = [
   }
 
   @media (max-width: 1024px) {
-    .about-split { grid-template-columns: 1fr; }
+    .about-split {
+      grid-template-columns: 1fr;
+    }
   }
 
   /* ---------- Team cards ---------- */
-  .team-grid { gap: var(--space-6); }
+  .team-grid {
+    gap: var(--space-6);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 760px;
+    margin-inline: auto;
+  }
   .team-card {
     background: var(--bbg-white);
     border: 1px solid var(--bbg-border);
@@ -1117,7 +1263,10 @@ const aboutSchema = [
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    transition:
+      transform var(--dur) var(--ease),
+      border-color var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease);
   }
   .team-card:hover {
     transform: translateY(-4px);
@@ -1136,9 +1285,13 @@ const aboutSchema = [
     object-position: center top;
     transition: transform 400ms var(--ease);
   }
-  .team-card:hover .team-card__photo img { transform: scale(1.03); }
+  .team-card:hover .team-card__photo img {
+    transform: scale(1.03);
+  }
 
-  .team-card__body { padding: var(--space-5) var(--space-6) var(--space-6); }
+  .team-card__body {
+    padding: var(--space-5) var(--space-6) var(--space-6);
+  }
   .team-card__name {
     font-size: var(--fs-h3);
     margin-bottom: 2px;
@@ -1180,14 +1333,20 @@ const aboutSchema = [
     border-radius: var(--radius-sm);
     background: var(--bbg-blue-light);
     color: var(--bbg-blue);
-    transition: background var(--dur) var(--ease), color var(--dur) var(--ease), transform var(--dur) var(--ease);
+    transition:
+      background var(--dur) var(--ease),
+      color var(--dur) var(--ease),
+      transform var(--dur) var(--ease);
   }
   .team-card__links a:hover {
     background: var(--bbg-blue);
     color: var(--bbg-white);
     transform: translateY(-2px);
   }
-  .team-card__links svg { width: 16px; height: 16px; }
+  .team-card__links svg {
+    width: 16px;
+    height: 16px;
+  }
 
   /* ============================================================
      Strategic leadership / Credentials rotator
@@ -1206,12 +1365,24 @@ const aboutSchema = [
     top: 0;
     bottom: 0;
     width: 1px;
-    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.06) 30%, rgba(0, 0, 0, 0.06) 70%, transparent 100%);
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.06) 30%,
+      rgba(0, 0, 0, 0.06) 70%,
+      transparent 100%
+    );
   }
-  .creds__decor-rule:nth-child(1) { left: 12%; }
-  .creds__decor-rule:nth-child(2) { right: 12%; }
+  .creds__decor-rule:nth-child(1) {
+    left: 12%;
+  }
+  .creds__decor-rule:nth-child(2) {
+    right: 12%;
+  }
 
-  .creds__header { max-width: 880px; }
+  .creds__header {
+    max-width: 880px;
+  }
   .creds__eyebrow-bar {
     display: inline-block;
     width: 28px;
@@ -1230,7 +1401,9 @@ const aboutSchema = [
   [data-creds-reveal] {
     opacity: 0;
     transform: translate3d(0, 18px, 0);
-    transition: opacity 650ms var(--ease), transform 650ms var(--ease);
+    transition:
+      opacity 650ms var(--ease),
+      transform 650ms var(--ease);
   }
   [data-creds-reveal].is-revealed {
     opacity: 1;
@@ -1264,7 +1437,10 @@ const aboutSchema = [
     opacity: 0;
     visibility: hidden;
     transform: scale(1.01);
-    transition: opacity 600ms var(--ease), transform 800ms var(--ease), visibility 600ms;
+    transition:
+      opacity 600ms var(--ease),
+      transform 800ms var(--ease),
+      visibility 600ms;
     pointer-events: none;
   }
   .cred-feature__slide.is-active {
@@ -1293,7 +1469,7 @@ const aboutSchema = [
     transform: scale(1.12);
   }
   .cred-feature__visual::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(110deg, transparent 55%, rgba(255, 255, 255, 0.6) 100%);
@@ -1347,14 +1523,14 @@ const aboutSchema = [
     left: 0;
     right: 0;
     height: 3px;
-    background: rgba(200, 16, 46, 0.10);
+    background: rgba(200, 16, 46, 0.1);
     z-index: 3;
   }
   .cred-feature__progress span {
     display: block;
     height: 100%;
     width: 0%;
-    background: linear-gradient(90deg, var(--bbg-blue), #C8102E);
+    background: linear-gradient(90deg, var(--bbg-blue), #c8102e);
     transition: width 100ms linear;
   }
 
@@ -1367,7 +1543,9 @@ const aboutSchema = [
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: var(--space-3);
   }
-  .cred-rail__item { display: flex; }
+  .cred-rail__item {
+    display: flex;
+  }
   .cred-thumb {
     position: relative;
     width: 100%;
@@ -1382,7 +1560,11 @@ const aboutSchema = [
     text-align: left;
     font: inherit;
     color: var(--bbg-ink);
-    transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), background var(--dur) var(--ease);
+    transition:
+      border-color var(--dur) var(--ease),
+      transform var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease),
+      background var(--dur) var(--ease);
   }
   .cred-thumb:hover {
     border-color: var(--bbg-blue);
@@ -1408,7 +1590,9 @@ const aboutSchema = [
     object-fit: cover;
     display: block;
     filter: saturate(0.85);
-    transition: filter var(--dur) var(--ease), transform var(--dur) var(--ease);
+    transition:
+      filter var(--dur) var(--ease),
+      transform var(--dur) var(--ease);
   }
   .cred-thumb:hover .cred-thumb__visual img,
   .cred-thumb.is-active .cred-thumb__visual img {
@@ -1426,9 +1610,14 @@ const aboutSchema = [
     align-items: center;
     justify-content: flex-end;
     color: rgba(0, 0, 0, 0.3);
-    transition: color var(--dur) var(--ease), transform var(--dur) var(--ease);
+    transition:
+      color var(--dur) var(--ease),
+      transform var(--dur) var(--ease);
   }
-  .cred-thumb__arrow svg { width: 16px; height: 16px; }
+  .cred-thumb__arrow svg {
+    width: 16px;
+    height: 16px;
+  }
   .cred-thumb:hover .cred-thumb__arrow,
   .cred-thumb.is-active .cred-thumb__arrow {
     color: var(--bbg-blue);
@@ -1438,8 +1627,12 @@ const aboutSchema = [
   /* Restack the feature slide at tablet portrait too — at 721-1024 the
      1.05fr/1fr split crushed the visual to ~50% of an 800px viewport. */
   @media (max-width: 1024px) {
-    .cred-rail { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .cred-feature { min-height: auto; }
+    .cred-rail {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .cred-feature {
+      min-height: auto;
+    }
     .cred-feature__slide {
       position: relative;
       grid-template-columns: 1fr;
@@ -1449,25 +1642,51 @@ const aboutSchema = [
       pointer-events: auto;
       display: none;
     }
-    .cred-feature__slide.is-active { display: grid; }
-    .cred-feature__visual { aspect-ratio: 16 / 10; }
-    .cred-feature__visual img { transform: none; }
-    .cred-feature__slide.is-active .cred-feature__visual img { transform: none; }
+    .cred-feature__slide.is-active {
+      display: grid;
+    }
+    .cred-feature__visual {
+      aspect-ratio: 16 / 10;
+    }
+    .cred-feature__visual img {
+      transform: none;
+    }
+    .cred-feature__slide.is-active .cred-feature__visual img {
+      transform: none;
+    }
   }
   @media (max-width: 720px) {
-    .cred-rail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cred-rail {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    [data-creds-reveal] { opacity: 1; transform: none; transition: none; }
+    [data-creds-reveal] {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
     .cred-feature__visual img,
-    .cred-feature__slide.is-active .cred-feature__visual img { transform: none !important; transition: none !important; }
-    .cred-feature__slide { transition: opacity 200ms linear, visibility 200ms; transform: none; }
-    .cred-feature__progress span { transition: none; }
+    .cred-feature__slide.is-active .cred-feature__visual img {
+      transform: none !important;
+      transition: none !important;
+    }
+    .cred-feature__slide {
+      transition:
+        opacity 200ms linear,
+        visibility 200ms;
+      transform: none;
+    }
+    .cred-feature__progress span {
+      transition: none;
+    }
   }
 
   /* ---------- Principles ---------- */
-  .principles { gap: var(--space-5); }
+  .principles {
+    gap: var(--space-5);
+  }
   .principle {
     padding: var(--space-6);
     display: flex;
@@ -1486,7 +1705,9 @@ const aboutSchema = [
     border-radius: var(--radius-sm);
     background: var(--bbg-blue-light);
     color: var(--bbg-blue);
-    transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+    transition:
+      background var(--dur) var(--ease),
+      color var(--dur) var(--ease);
   }
   .principle__icon svg {
     width: 26px;
@@ -1511,7 +1732,12 @@ const aboutSchema = [
     border: 1px solid var(--bbg-border);
     border-radius: var(--radius-md);
   }
-  .proof-metric { display: flex; flex-direction: column; gap: var(--space-2); text-align: center; }
+  .proof-metric {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: center;
+  }
   .proof-metric__value {
     font-size: clamp(2rem, 2.4vw + 1rem, 3rem);
     font-weight: 700;
@@ -1523,8 +1749,12 @@ const aboutSchema = [
     align-items: baseline;
     justify-content: center;
   }
-  .proof-metric__num { display: inline-block; }
-  .proof-metric__suffix { display: inline-block; }
+  .proof-metric__num {
+    display: inline-block;
+  }
+  .proof-metric__suffix {
+    display: inline-block;
+  }
   .proof-metric__label {
     font-size: var(--fs-small);
     color: var(--bbg-text-muted);
@@ -1540,8 +1770,14 @@ const aboutSchema = [
     margin: var(--space-5) 0 var(--space-4);
     overflow: hidden;
     position: relative;
-    -webkit-mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%);
-            mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      black 12%,
+      black 88%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(to right, transparent 0, black 12%, black 88%, transparent 100%);
   }
   .client-ticker__row {
     overflow: hidden;
@@ -1580,7 +1816,9 @@ const aboutSchema = [
     object-fit: contain;
     opacity: 0.5;
     filter: grayscale(1);
-    transition: opacity var(--dur) var(--ease), filter var(--dur) var(--ease);
+    transition:
+      opacity var(--dur) var(--ease),
+      filter var(--dur) var(--ease);
   }
   .client-ticker .client-ticker__item:hover img {
     opacity: 1;
@@ -1588,8 +1826,12 @@ const aboutSchema = [
   }
 
   @keyframes client-ticker-scroll {
-    from { transform: translate3d(0, 0, 0); }
-    to   { transform: translate3d(calc(-50% - (var(--ticker-gap) / 2)), 0, 0); }
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(calc(-50% - (var(--ticker-gap) / 2)), 0, 0);
+    }
   }
 
   @media (max-width: 1024px) {
@@ -1606,10 +1848,13 @@ const aboutSchema = [
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .client-ticker__track { animation: none; transform: none !important; }
+    .client-ticker__track {
+      animation: none;
+      transform: none !important;
+    }
     .client-ticker {
       -webkit-mask-image: none;
-              mask-image: none;
+      mask-image: none;
       overflow-x: auto;
     }
   }
@@ -1623,19 +1868,32 @@ const aboutSchema = [
   }
 
   @media (max-width: 1024px) {
-    .proof-metrics { grid-template-columns: repeat(2, 1fr); }
+    .proof-metrics {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   @media (max-width: 480px) {
-    .proof-metrics { grid-template-columns: 1fr; }
+    .proof-metrics {
+      grid-template-columns: 1fr;
+    }
   }
 
   /* ============================================================
      Industry recognition / Speaking slider
      ============================================================ */
-  .speaking { position: relative; }
-  .speaking__header { max-width: 820px; }
-  .speaking__title { margin-bottom: var(--space-4); }
-  .speaking__lead { color: var(--bbg-text); margin-bottom: var(--space-4); }
+  .speaking {
+    position: relative;
+  }
+  .speaking__header {
+    max-width: 820px;
+  }
+  .speaking__title {
+    margin-bottom: var(--space-4);
+  }
+  .speaking__lead {
+    color: var(--bbg-text);
+    margin-bottom: var(--space-4);
+  }
   .speaking__lead a {
     color: var(--bbg-blue);
     border-bottom: 1px solid currentColor;
@@ -1664,14 +1922,18 @@ const aboutSchema = [
   [data-speak-reveal] {
     opacity: 0;
     transform: translate3d(0, 18px, 0);
-    transition: opacity 700ms var(--ease), transform 700ms var(--ease);
+    transition:
+      opacity 700ms var(--ease),
+      transform 700ms var(--ease);
   }
   [data-speak-reveal].is-revealed {
     opacity: 1;
     transform: none;
   }
 
-  .speaking__wrap { margin-top: var(--space-7); }
+  .speaking__wrap {
+    margin-top: var(--space-7);
+  }
 
   /* ---- Ticker (two rows, opposite directions) ---- */
   .speak-ticker {
@@ -1683,8 +1945,14 @@ const aboutSchema = [
     display: flex;
     flex-direction: column;
     gap: var(--speak-gap);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
-            mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 6%,
+      black 94%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
   }
   .speak-ticker__row {
     overflow: hidden;
@@ -1710,7 +1978,10 @@ const aboutSchema = [
     background: var(--bbg-surface);
     border: 1px solid var(--bbg-border);
     box-shadow: var(--shadow-sm);
-    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+    transition:
+      transform var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease),
+      border-color var(--dur) var(--ease);
   }
   .speak-ticker__item img {
     height: 100%;
@@ -1718,7 +1989,9 @@ const aboutSchema = [
     max-width: none;
     object-fit: cover;
     display: block;
-    transition: transform 500ms var(--ease), filter var(--dur) var(--ease);
+    transition:
+      transform 500ms var(--ease),
+      filter var(--dur) var(--ease);
     filter: saturate(0.9);
   }
   .speak-ticker__item:hover {
@@ -1732,31 +2005,59 @@ const aboutSchema = [
   }
 
   @keyframes speak-ticker-scroll {
-    from { transform: translate3d(0, 0, 0); }
-    to   { transform: translate3d(calc(-50% - (var(--speak-gap) / 2)), 0, 0); }
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(calc(-50% - (var(--speak-gap) / 2)), 0, 0);
+    }
   }
 
   @media (max-width: 720px) {
-    .speak-ticker { --speak-row-h: 160px; --speak-duration: 48s; }
+    .speak-ticker {
+      --speak-row-h: 160px;
+      --speak-duration: 48s;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .speak-ticker__track { animation: none; transform: none !important; }
+    .speak-ticker__track {
+      animation: none;
+      transform: none !important;
+    }
     .speak-ticker {
       -webkit-mask-image: none;
-              mask-image: none;
+      mask-image: none;
       overflow-x: auto;
     }
-    [data-speak-reveal] { opacity: 1; transform: none; transition: none; }
+    [data-speak-reveal] {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
   }
 
   /* ---------- CTA ---------- */
-  .cta .eyebrow { color: var(--bbg-blue); }
-  .cta__lead { max-width: 640px; margin-left: auto; margin-right: auto; color: var(--bbg-white); opacity: 0.9; }
-  .text-center { text-align: center; }
+  .cta .eyebrow {
+    color: var(--bbg-blue);
+  }
+  .cta__lead {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--bbg-white);
+    opacity: 0.9;
+  }
+  .text-center {
+    text-align: center;
+  }
 
   /* CTA with team photo background */
-  .cta-team { position: relative; overflow: hidden; isolation: isolate; }
+  .cta-team {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
   .cta-team__bg {
     position: absolute;
     inset: 0;
@@ -1772,9 +2073,14 @@ const aboutSchema = [
     position: absolute;
     inset: 0;
     z-index: -1;
-    background:
-      linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.65) 50%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
   }
-  .cta-team__inner { position: relative; }
-
+  .cta-team__inner {
+    position: relative;
+  }
 </style>

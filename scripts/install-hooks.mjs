@@ -5,12 +5,12 @@
 // Idempotent: re-running just overwrites the files in .git/hooks/. Skips with a
 // warning if .git/hooks/ doesn't exist (e.g. running from a tarball).
 
-import { copyFile, readdir, chmod, stat } from "node:fs/promises";
-import path from "node:path";
-import process from "node:process";
+import { copyFile, readdir, chmod, stat } from 'node:fs/promises';
+import path from 'node:path';
+import process from 'node:process';
 
-const SRC = path.resolve("scripts/hooks");
-const DST = path.resolve(".git/hooks");
+const SRC = path.resolve('scripts/hooks');
+const DST = path.resolve('.git/hooks');
 
 async function main() {
   try {
@@ -25,7 +25,7 @@ async function main() {
     const from = path.join(SRC, name);
     const to = path.join(DST, name);
     await copyFile(from, to);
-    if (process.platform !== "win32") {
+    if (process.platform !== 'win32') {
       await chmod(to, 0o755);
     }
     console.log(`installed: ${path.relative(process.cwd(), to)}`);

@@ -153,13 +153,21 @@ const prefixMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, st
  * back to its canonical English path. Built once at module load.
  */
 const reverseSlugMap = Object.fromEntries(
-  (Object.entries(slugMap) as [Exclude<Locale, typeof defaultLocale>, Record<string, string>][])
-    .map(([loc, map]) => [loc, Object.fromEntries(Object.entries(map).map(([en, native]) => [native, en]))]),
+  (
+    Object.entries(slugMap) as [Exclude<Locale, typeof defaultLocale>, Record<string, string>][]
+  ).map(([loc, map]) => [
+    loc,
+    Object.fromEntries(Object.entries(map).map(([en, native]) => [native, en])),
+  ]),
 ) as Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>>;
 
 const reversePrefixMap = Object.fromEntries(
-  (Object.entries(prefixMap) as [Exclude<Locale, typeof defaultLocale>, Record<string, string>][])
-    .map(([loc, map]) => [loc, Object.fromEntries(Object.entries(map).map(([en, native]) => [native, en]))]),
+  (
+    Object.entries(prefixMap) as [Exclude<Locale, typeof defaultLocale>, Record<string, string>][]
+  ).map(([loc, map]) => [
+    loc,
+    Object.fromEntries(Object.entries(map).map(([en, native]) => [native, en])),
+  ]),
 ) as Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>>;
 
 /**

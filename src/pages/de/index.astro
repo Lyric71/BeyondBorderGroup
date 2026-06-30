@@ -5,70 +5,77 @@ import { getCollection } from 'astro:content';
 
 const dayStops = [
   {
-    time:   '07:30',
+    time: '07:30',
     moment: 'Kurz nach dem Aufstehen',
-    name:   'WeChat',
-    zh:     '微信',
-    photo:  '/Images/platforms/wechat.webp',
-    logo:   '/Images/platforms/wechat-logo.svg',
+    name: 'WeChat',
+    zh: '微信',
+    photo: '/Images/platforms/wechat.webp',
+    logo: '/Images/platforms/wechat-logo.svg',
   },
   {
-    time:   '10:15',
+    time: '10:15',
     moment: 'Vormittagspause',
-    name:   'RED',
-    zh:     '小红书',
-    photo:  '/Images/platforms/rednote.webp',
-    logo:   '/Images/platforms/rednote-logo.svg',
+    name: 'RED',
+    zh: '小红书',
+    photo: '/Images/platforms/rednote.webp',
+    logo: '/Images/platforms/rednote-logo.svg',
   },
   {
-    time:   '12:40',
+    time: '12:40',
     moment: 'Mittagspause, der Warenkorb füllt sich',
-    name:   'Tmall',
-    zh:     '天猫',
-    photo:  '/Images/platforms/tmall-scene.webp',
-    logo:   '/Images/platforms/tmall-logo.svg',
+    name: 'Tmall',
+    zh: '天猫',
+    photo: '/Images/platforms/tmall-scene.webp',
+    logo: '/Images/platforms/tmall-logo.svg',
   },
   {
-    time:   '15:50',
+    time: '15:50',
     moment: 'Sammelbestellung am Nachmittag',
-    name:   'Pinduoduo',
-    zh:     '拼多多',
-    photo:  '/Images/platforms/pdd-scene.webp',
-    logo:   '/Images/platforms/pdd-logo.svg',
+    name: 'Pinduoduo',
+    zh: '拼多多',
+    photo: '/Images/platforms/pdd-scene.webp',
+    logo: '/Images/platforms/pdd-logo.svg',
   },
   {
-    time:   '19:20',
+    time: '19:20',
     moment: 'Bestellung wird am Abend geliefert',
-    name:   'JD',
-    zh:     '京东',
-    photo:  '/Images/platforms/jd-scene.webp',
-    logo:   '/Images/platforms/jd-logo.webp',
+    name: 'JD',
+    zh: '京东',
+    photo: '/Images/platforms/jd-scene.webp',
+    logo: '/Images/platforms/jd-logo.webp',
   },
   {
-    time:   '21:45',
+    time: '21:45',
     moment: 'Shoppen im Livestream',
-    name:   'Douyin',
-    zh:     '抖音',
-    photo:  '/Images/platforms/douyin.webp',
-    logo:   '/Images/platforms/douyin-logo.svg',
+    name: 'Douyin',
+    zh: '抖音',
+    photo: '/Images/platforms/douyin.webp',
+    logo: '/Images/platforms/douyin-logo.svg',
   },
 ];
 
 const svcIcon: Record<string, string> = {
-  compass:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',
-  tag:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>',
-  store:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg>',
-  truck:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
-  bag:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>',
-  chat:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>',
-  broadcast: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.5 7.5a6 6 0 0 1 0 9M7.5 7.5a6 6 0 0 0 0 9"/><path d="M19.5 4.5a10 10 0 0 1 0 15M4.5 4.5a10 10 0 0 0 0 15"/></svg>',
-  monitor:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
-  megaphone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-8v18L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>',
-  calendar:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
-  cap:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>',
-  pin:       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
-  bulb:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>',
-  grid:      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>',
+  compass:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',
+  tag: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>',
+  store:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg>',
+  truck:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+  bag: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>',
+  chat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>',
+  broadcast:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.5 7.5a6 6 0 0 1 0 9M7.5 7.5a6 6 0 0 0 0 9"/><path d="M19.5 4.5a10 10 0 0 1 0 15M4.5 4.5a10 10 0 0 0 0 15"/></svg>',
+  monitor:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
+  megaphone:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-8v18L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>',
+  calendar:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+  cap: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>',
+  pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+  bulb: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>',
+  grid: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>',
 };
 
 const servicesByStage = [
@@ -84,7 +91,8 @@ const servicesByStage = [
         tagline: 'Strategie und Geschäftsmodell',
         desc: 'Bevor der erste Yuan in eine Plattform oder einen Partner fliesst, muss das Modell stehen. Eines, das zur Marke passt, zur Kategorie und zum Budget. Wir legen das Fundament: wo verkauft wird, wie verkauft wird, mit wem.',
         image: '/Images/enter-china/ops-strategy-desk.webp',
-        imageAlt: 'Strategie-Session in einem chinesischen Büro, Markteintritts-Fahrplan liegt auf dem Tisch',
+        imageAlt:
+          'Strategie-Session in einem chinesischen Büro, Markteintritts-Fahrplan liegt auf dem Tisch',
         href: '/de/nach-china/markteintrittsberatung',
         featured: true,
       },
@@ -112,7 +120,8 @@ const servicesByStage = [
         tagline: 'Name, Identität, Tonalität',
         desc: 'Ihre Marke ist für westliche Kunden gemacht. In China wird sie anders gelesen. Naming, visuelle Identität, Verpackung, Tonalität. Diese Arbeit gehört vor den Launch, nicht hinterher.',
         image: '/Images/branding/visual-identity.webp',
-        imageAlt: 'Markenidentitäts-Boards angepasst für den chinesischen Markt, Schriften und Farbpaletten',
+        imageAlt:
+          'Markenidentitäts-Boards angepasst für den chinesischen Markt, Schriften und Farbpaletten',
         href: '/de/nach-china/marke-und-lokalisierung',
       },
     ],
@@ -139,7 +148,8 @@ const servicesByStage = [
         tagline: 'Douyin, WeChat, RED',
         desc: 'Livestream-Verkauf, KOL-Kooperationen, Shops direkt in der App. Inhalte, die in derselben Session verkaufen, in der sie Reichweite aufbauen.',
         image: '/Images/grow-in-china/social-commerce/hero-douyin-livestream.png',
-        imageAlt: 'Eine Douyin-Livestream-Session mit einem Markenprodukt, Moderatorin live auf Sendung',
+        imageAlt:
+          'Eine Douyin-Livestream-Session mit einem Markenprodukt, Moderatorin live auf Sendung',
         href: '/de/in-china-wachsen/social-commerce',
       },
       {
@@ -148,7 +158,8 @@ const servicesByStage = [
         tagline: '618, Double 11, Chinesisches Neujahr',
         desc: 'Die grossen Verkaufstage machen einen erheblichen Teil des Jahresumsatzes aus. Wir wählen die Momente, für die es sich zu kämpfen lohnt, bauen die Kreation, fahren das Warm-up und bleiben in der Peak-Phase Stunde für Stunde dran.',
         image: '/Images/grow-in-china/campaigns/hero-campaign-warroom.png',
-        imageAlt: 'Ein Kampagnen-Warroom während eines chinesischen Shopping-Festivals, Bildschirme tracken Livestream und Umsatz',
+        imageAlt:
+          'Ein Kampagnen-Warroom während eines chinesischen Shopping-Festivals, Bildschirme tracken Livestream und Umsatz',
         href: '/de/in-china-wachsen/kampagnen',
       },
       {
@@ -157,7 +168,8 @@ const servicesByStage = [
         tagline: 'Bezahlt, geplant, attribuiert',
         desc: 'Douyin, WeChat, RED, Baidu, Tmall, JD und Programmatic. Ein Team plant und bucht über alle chinesischen Plattformen hinweg. Alles wird an der eCommerce-Performance gemessen.',
         image: '/Images/grow-in-china/media/hero-media-buying.png',
-        imageAlt: 'Ein Media-Buying-Dashboard mit Kampagnen auf chinesischen Plattformen und Live-Performance-Daten',
+        imageAlt:
+          'Ein Media-Buying-Dashboard mit Kampagnen auf chinesischen Plattformen und Live-Performance-Daten',
         href: '/de/in-china-wachsen/media',
       },
       {
@@ -166,7 +178,8 @@ const servicesByStage = [
         tagline: 'Casting, Briefing, Reporting',
         desc: 'Chinesische Käufer recherchieren, entscheiden und kaufen im selben Scroll. Wir casten aus unserer eigenen KOC-Datenbank, briefen mit Spielraum für den Creator und messen den Umsatz Creator für Creator.',
         image: '/Images/grow-in-china/influencers-kols/hero-kol-livestream.png',
-        imageAlt: 'Eine chinesische KOL an einem Livestream-Set, Markenprodukt im Bild, Kommentare scrollen vorbei',
+        imageAlt:
+          'Eine chinesische KOL an einem Livestream-Set, Markenprodukt im Bild, Kommentare scrollen vorbei',
         href: '/de/in-china-wachsen/influencer-und-kol',
       },
     ],
@@ -175,7 +188,8 @@ const servicesByStage = [
     key: 'learn',
     label: 'China verstehen',
     href: '/de/china-verstehen',
-    intro: 'Entscheiden Sie über China nach dem aktuellen Stand, nicht nach einem Playbook von vorgestern.',
+    intro:
+      'Entscheiden Sie über China nach dem aktuellen Stand, nicht nach einem Playbook von vorgestern.',
     services: [
       {
         title: 'Plattformen',
@@ -183,7 +197,8 @@ const servicesByStage = [
         tagline: 'Wie jede wirklich funktioniert',
         desc: 'Tmall, JD, Douyin, WeChat, RED. Andere Zielgruppen, andere Regeln, andere Wege, auf denen das Geld tatsächlich fliesst. Eine klare Karte, bevor Sie Budget binden.',
         image: '/Images/learn-china/platforms/hero.png',
-        imageAlt: 'Eine Übersicht chinesischer eCommerce- und Social-Plattformen auf Smartphone-Bildschirmen',
+        imageAlt:
+          'Eine Übersicht chinesischer eCommerce- und Social-Plattformen auf Smartphone-Bildschirmen',
         href: '/de/china-verstehen/plattformen',
         featured: true,
       },
@@ -202,7 +217,8 @@ const servicesByStage = [
         tagline: 'Vor Ort sehen, was läuft',
         desc: 'Kommen Sie nach China. Besuche im laufenden eCommerce-Betrieb, Treffen mit Plattform-Teams, Livestream-Sessions live mitverfolgt. Gemacht für Entscheider, die den Markt mit eigenen Augen sehen wollen.',
         image: '/Images/learn-china/hero-livestream-expedition.png',
-        imageAlt: 'Internationale Führungskräfte auf einer Studienreise, Besuch in einem Livestream-Studio in Shanghai',
+        imageAlt:
+          'Internationale Führungskräfte auf einer Studienreise, Besuch in einem Livestream-Studio in Shanghai',
         href: '/de/china-verstehen/studienreisen',
       },
       {
@@ -211,7 +227,8 @@ const servicesByStage = [
         tagline: 'Was der Markt gerade denkt',
         desc: 'Artikel und Analysen, geschrieben von Leuten, die täglich in China arbeiten. Was die Plattformen tun, wohin sich die Kunden bewegen, was das für internationale Marken heisst.',
         image: '/Images/learn-china/ai-discovery-shenzhen.png',
-        imageAlt: 'Ein Recherche-Moment in Shenzhen, Analyst prüft chinesische Plattformdaten auf dem Laptop',
+        imageAlt:
+          'Ein Recherche-Moment in Shenzhen, Analyst prüft chinesische Plattformdaten auf dem Laptop',
         href: '/de/analysen',
       },
     ],
@@ -225,12 +242,18 @@ const pillars = [
     title: 'Nach China',
     teaser: 'Das Produkt haben Sie. Was fehlt, ist der Eintritt.',
     image: '/Images/pillars/enter-china.webp',
-    imageAlt: 'Brand Director in einem modernen chinesischen Büro, prüft Premium-Verpackungsmuster, im Hintergrund ein Tmall-Shop auf einem Laptop',
+    imageAlt:
+      'Brand Director in einem modernen chinesischen Büro, prüft Premium-Verpackungsmuster, im Hintergrund ein Tmall-Shop auf einem Laptop',
     lead: 'Sie haben ein Produkt, das in China seinen Markt finden kann. Bisher kein Team vor Ort, keine Gesellschaft, noch kein Shop auf irgendeiner Plattform.',
     paragraphs: [
       'Marken, die früh Fuss fassen, wählen das passende Eintrittsmodell. Cross-Border eCommerce, kombiniert mit einem starken Vertriebspartner: erste Umsätze in Monaten statt Jahren, das Risiko nach unten bleibt überschaubar.',
     ],
-    tactics: ['Cross-Border eCommerce', 'Das richtige Eintrittsmodell', 'Vertriebspartner', 'Markenlokalisierung'],
+    tactics: [
+      'Cross-Border eCommerce',
+      'Das richtige Eintrittsmodell',
+      'Vertriebspartner',
+      'Markenlokalisierung',
+    ],
     close: 'So sieht ein sauber aufgesetzter China-Launch aus.',
     href: '/de/nach-china',
   },
@@ -240,7 +263,8 @@ const pillars = [
     title: 'In China wachsen',
     teaser: 'Sie verkaufen bereits. Sie wollen, dass die Kurve wieder steigt.',
     image: '/Images/pillars/grow-in-china.webp',
-    imageAlt: 'Chinesische Livestream-Commerce-Moderatorin in einem aufgeräumten Studio, Pflegeprodukte auf einem Holzregal, Smartphone auf einem Stativ',
+    imageAlt:
+      'Chinesische Livestream-Commerce-Moderatorin in einem aufgeräumten Studio, Pflegeprodukte auf einem Holzregal, Smartphone auf einem Stativ',
     lead: 'Sie sind im Markt und verkaufen. Das Wachstum stockt.',
     paragraphs: [
       'In der Regel hakt es an der Organisation. Vier Agenturen, keine spricht mit der anderen. Texte, die nach Übersetzung klingen, weil sie eine sind. Bündelt man eCommerce, Social, Media und Marke in einem Team, dreht die Kurve.',
@@ -255,7 +279,8 @@ const pillars = [
     title: 'China verstehen',
     teaser: 'Entscheiden Sie nach der heutigen Realität, nicht nach der von vorgestern.',
     image: '/Images/pillars/learn-china.webp',
-    imageAlt: 'Zwei internationale Führungskräfte gehen im Nachmittagslicht durch einen chinesischen Tee- und Design-Markt',
+    imageAlt:
+      'Zwei internationale Führungskräfte gehen im Nachmittagslicht durch einen chinesischen Tee- und Design-Markt',
     lead: 'Die Regeln der Plattformen verschieben sich laufend. Die Gewohnheiten von vor drei Jahren sind weg.',
     paragraphs: [
       'Wenn die China-Entscheidung bei Ihnen auf dem Tisch liegt, sind veraltete Informationen das Teuerste, das Sie haben können. Studienreisen, Masterclasses von Praktikern, frische Marktdaten.',
@@ -269,7 +294,8 @@ const pillars = [
 const pillarIcons: Record<string, string> = {
   enter: '<path d="M15 3h6v18h-6"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>',
   grow: '<path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/>',
-  learn: '<path d="M2 4h7a3 3 0 0 1 3 3v13"/><path d="M22 4h-7a3 3 0 0 0-3 3v13"/><path d="M2 4v15h7a3 3 0 0 1 3 3"/><path d="M22 4v15h-7a3 3 0 0 0-3 3"/>',
+  learn:
+    '<path d="M2 4h7a3 3 0 0 1 3 3v13"/><path d="M22 4h-7a3 3 0 0 0-3 3v13"/><path d="M2 4v15h7a3 3 0 0 1 3 3"/><path d="M22 4v15h-7a3 3 0 0 0-3 3"/>',
 };
 
 const allCases = await getCollection('casesDe', ({ data }) => !data.draft);
@@ -280,9 +306,8 @@ const featuredCases = allCases
 
 const allInsights = await getCollection('insightsDe', ({ data }) => !data.draft);
 
-
 const insightCategoryDe: Record<string, string> = {
-  'Platforms': 'Plattformen',
+  Platforms: 'Plattformen',
   'E-Commerce': 'eCommerce',
   'KOLs & Livestream': 'KOL und Livestream',
   'Brand & Localization': 'Marke und Lokalisierung',
@@ -310,7 +335,6 @@ function formatInsightDate(d?: Date) {
   if (!d) return '';
   return d.toLocaleDateString('de-DE', { month: 'short', year: 'numeric' });
 }
-
 ---
 
 <Layout
@@ -318,7 +342,6 @@ function formatInsightDate(d?: Date) {
   description="Marketing-, eCommerce- und Vertriebsagentur für internationale Marken in China. Wir führen Tmall, JD, Douyin, WeChat und RED im Tagesgeschäft. Shanghai, Hongkong, Paris."
   preloadImage="/Images/hero-livestream.webp"
 >
-
   {/* ---------- SCROLL PROGRESS ---------- */}
   <div class="home-progress" aria-hidden="true"><div class="home-progress__bar"></div></div>
 
@@ -349,12 +372,13 @@ function formatInsightDate(d?: Date) {
         <span class="home-hero__title-row home-hero__title-row--highlight">China verstehen.</span>
       </h1>
       <p class="home-hero__lead home-reveal" style="--reveal-delay: 200ms;">
-        Wir bringen Marken in China auf den Markt. Shops auf Tmall und JD, Social Commerce
-        auf Douyin und RED, dazu der passende Vertriebspartner für Ihre Kategorie.
+        Wir bringen Marken in China auf den Markt. Shops auf Tmall und JD, Social Commerce auf
+        Douyin und RED, dazu der passende Vertriebspartner für Ihre Kategorie.
       </p>
       <div class="home-hero__actions home-reveal" style="--reveal-delay: 280ms;">
         <a class="btn btn--primary home-magnetic" href="/de/kontakt">Sprechen wir</a>
-        <a class="btn btn--ghost-light home-magnetic" href="/de/referenzen">Unsere Arbeit ansehen</a>
+        <a class="btn btn--ghost-light home-magnetic" href="/de/referenzen">Unsere Arbeit ansehen</a
+        >
       </div>
 
       <div class="home-hero__meta home-reveal" style="--reveal-delay: 360ms;">
@@ -386,30 +410,32 @@ function formatInsightDate(d?: Date) {
         <span class="eyebrow">Ein Tag im chinesischen Handel</span>
         <h2>Ihre Marke, in jedem Moment des Tages</h2>
         <p class="section-header__lead">
-          Vom Morgen bis spät in den Abend springen chinesische Kunden zwischen einem halben
-          Dutzend Apps hin und her. Jede mit eigenem Publikum, eigenen Regeln, eigenem Rhythmus.
+          Vom Morgen bis spät in den Abend springen chinesische Kunden zwischen einem halben Dutzend
+          Apps hin und her. Jede mit eigenem Publikum, eigenen Regeln, eigenem Rhythmus.
         </p>
       </header>
 
       <ol class="day-timeline" aria-label="Ein Tag auf chinesischen Plattformen">
-        {dayStops.map((s) => (
-          <li class="day-stop">
-            <figure class="day-stop__photo">
-              <img src={s.photo} alt="" loading="lazy" decoding="async" />
-            </figure>
-            <div class="day-stop__info">
-              <span class="day-stop__time">{s.time}</span>
-              <span class="day-stop__moment">{s.moment}</span>
-              <span class="day-stop__platform">
-                <img class="day-stop__logo" src={s.logo} alt="" loading="lazy" decoding="async" />
-                <span class="day-stop__platform-text">
-                  <span class="day-stop__name">{s.name}</span>
-                  <span class="day-stop__zh">{s.zh}</span>
+        {
+          dayStops.map((s) => (
+            <li class="day-stop">
+              <figure class="day-stop__photo">
+                <img src={s.photo} alt="" loading="lazy" decoding="async" />
+              </figure>
+              <div class="day-stop__info">
+                <span class="day-stop__time">{s.time}</span>
+                <span class="day-stop__moment">{s.moment}</span>
+                <span class="day-stop__platform">
+                  <img class="day-stop__logo" src={s.logo} alt="" loading="lazy" decoding="async" />
+                  <span class="day-stop__platform-text">
+                    <span class="day-stop__name">{s.name}</span>
+                    <span class="day-stop__zh">{s.zh}</span>
+                  </span>
                 </span>
-              </span>
-            </div>
-          </li>
-        ))}
+              </div>
+            </li>
+          ))
+        }
       </ol>
 
       <div class="day-timeline__cta">
@@ -432,54 +458,114 @@ function formatInsightDate(d?: Date) {
         <span class="eyebrow">Wo anfangen</span>
         <h2 class="pillars-header__title">China hat mehr als einen Eingang</h2>
         <p class="pillars-header__lead">
-          Drei mögliche Wege hinein. Wählen Sie den, der zu Ihrer tatsächlichen Lage passt, nicht zu der, die Sie sich wünschen.
+          Drei mögliche Wege hinein. Wählen Sie den, der zu Ihrer tatsächlichen Lage passt, nicht zu
+          der, die Sie sich wünschen.
         </p>
       </header>
 
       <div class="stage-panels" data-active="enter" data-stage-panels>
-        {pillars.map((p, i) => (
-          <article class={`stage-panel${i === 0 ? ' is-active' : ''}`} data-stage={p.key} style={`--stage-index: ${i};`}>
-            <button
-              class="stage-panel__hit"
-              type="button"
-              data-stage-trigger={p.key}
-              aria-pressed={i === 0 ? 'true' : 'false'}
-              aria-label={`${p.title} anzeigen`}
-            ></button>
-            <img class="stage-panel__img" src={p.image} alt={p.imageAlt} loading="lazy" decoding="async" />
-            <div class="stage-panel__scrim" aria-hidden="true"></div>
-            <span class="stage-panel__rail" aria-hidden="true"></span>
+        {
+          pillars.map((p, i) => (
+            <article
+              class={`stage-panel${i === 0 ? ' is-active' : ''}`}
+              data-stage={p.key}
+              style={`--stage-index: ${i};`}
+            >
+              <button
+                class="stage-panel__hit"
+                type="button"
+                data-stage-trigger={p.key}
+                aria-pressed={i === 0 ? 'true' : 'false'}
+                aria-label={`${p.title} anzeigen`}
+              />
+              <img
+                class="stage-panel__img"
+                src={p.image}
+                alt={p.imageAlt}
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="stage-panel__scrim" aria-hidden="true" />
+              <span class="stage-panel__rail" aria-hidden="true" />
 
-            <div class="stage-panel__top">
-              <span class="stage-panel__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" set:html={pillarIcons[p.key]} />
-              </span>
-              <span class="stage-panel__plus" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </span>
-            </div>
-
-            <span class="stage-panel__hint" aria-hidden="true">
-              <span class="stage-panel__hint-text">Öffnen</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </span>
-
-            <div class="stage-panel__body">
-              <span class="stage-panel__eyebrow">{p.stage}</span>
-              <h3 class="stage-panel__title">{p.title}</h3>
-              <div class="stage-panel__reveal">
-                <p class="stage-panel__lead">{p.lead}</p>
-                <ul class="stage-panel__tactics" aria-label="Was dazugehört">
-                  {p.tactics.map((t) => <li>{t}</li>)}
-                </ul>
-                <a class="stage-panel__cta" href="#services" data-stage-jump={p.key}>
-                  <span>{p.title} erkunden</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </a>
+              <div class="stage-panel__top">
+                <span class="stage-panel__icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    set:html={pillarIcons[p.key]}
+                  />
+                </span>
+                <span class="stage-panel__plus" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <>
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                    </>
+                  </svg>
+                </span>
               </div>
-            </div>
-          </article>
-        ))}
+
+              <span class="stage-panel__hint" aria-hidden="true">
+                <span class="stage-panel__hint-text">Öffnen</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <>
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </>
+                </svg>
+              </span>
+
+              <div class="stage-panel__body">
+                <span class="stage-panel__eyebrow">{p.stage}</span>
+                <h3 class="stage-panel__title">{p.title}</h3>
+                <div class="stage-panel__reveal">
+                  <p class="stage-panel__lead">{p.lead}</p>
+                  <ul class="stage-panel__tactics" aria-label="Was dazugehört">
+                    {p.tactics.map((t) => (
+                      <li>{t}</li>
+                    ))}
+                  </ul>
+                  <a class="stage-panel__cta" href="#services" data-stage-jump={p.key}>
+                    <span>{p.title} erkunden</span>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <>
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -496,87 +582,127 @@ function formatInsightDate(d?: Date) {
       <header class="section-header section-header--center svc-section__header">
         <span class="eyebrow">Leistungen</span>
         <h2>Alle Leistungen, die Sie brauchen, in jeder Phase</h2>
-        <p class="svc-section__sub">Vom ersten Tmall-Shop bis zur Marke, die der chinesische Kunde von sich aus beim Namen nennt. Drei Phasen, alle Leistungen unter einem Dach.</p>
+        <p class="svc-section__sub">
+          Vom ersten Tmall-Shop bis zur Marke, die der chinesische Kunde von sich aus beim Namen
+          nennt. Drei Phasen, alle Leistungen unter einem Dach.
+        </p>
       </header>
 
       <div class="svc-tabs-wrap" data-svc-sticky>
         <div class="svc-tabs" role="tablist" aria-label="Leistungen nach Phase">
           <span class="svc-tabs__indicator" aria-hidden="true"></span>
-          {servicesByStage.map((stage, i) => (
-            <button
-              type="button"
-              role="tab"
-              class={`svc-tab${i === 0 ? ' is-active' : ''}`}
-              aria-selected={i === 0 ? 'true' : 'false'}
-              aria-controls={`svc-panel-${stage.key}`}
-              data-stage={stage.key}
-              id={`svc-tab-${stage.key}`}
-            >
-              <span class="svc-tab__num" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  {stage.key === 'enter' && <><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></>}
-                  {stage.key === 'grow' && <><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-6"/></>}
-                  {stage.key === 'learn' && <><path d="M2 9 12 5l10 4-10 4z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></>}
-                </svg>
-              </span>
-              <span class="svc-tab__label">{stage.label}</span>
-            </button>
-          ))}
+          {
+            servicesByStage.map((stage, i) => (
+              <button
+                type="button"
+                role="tab"
+                class={`svc-tab${i === 0 ? ' is-active' : ''}`}
+                aria-selected={i === 0 ? 'true' : 'false'}
+                aria-controls={`svc-panel-${stage.key}`}
+                data-stage={stage.key}
+                id={`svc-tab-${stage.key}`}
+              >
+                <span class="svc-tab__num" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    {stage.key === 'enter' && (
+                      <>
+                        <circle cx="12" cy="12" r="10" />
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                      </>
+                    )}
+                    {stage.key === 'grow' && (
+                      <>
+                        <path d="M12 20V10" />
+                        <path d="M18 20V4" />
+                        <path d="M6 20v-6" />
+                      </>
+                    )}
+                    {stage.key === 'learn' && (
+                      <>
+                        <path d="M2 9 12 5l10 4-10 4z" />
+                        <path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" />
+                      </>
+                    )}
+                  </svg>
+                </span>
+                <span class="svc-tab__label">{stage.label}</span>
+              </button>
+            ))
+          }
         </div>
       </div>
 
-      {servicesByStage.map((stage, i) => (
-        <div
-          class={`svc-panel${i === 0 ? ' is-active' : ''}`}
-          role="tabpanel"
-          id={`svc-panel-${stage.key}`}
-          aria-labelledby={`svc-tab-${stage.key}`}
-          data-stage={stage.key}
-        >
-          <p class="svc-panel__intro">{stage.intro}</p>
+      {
+        servicesByStage.map((stage, i) => (
+          <div
+            class={`svc-panel${i === 0 ? ' is-active' : ''}`}
+            role="tabpanel"
+            id={`svc-panel-${stage.key}`}
+            aria-labelledby={`svc-tab-${stage.key}`}
+            data-stage={stage.key}
+          >
+            <p class="svc-panel__intro">{stage.intro}</p>
 
-          <div class="svc-bento" data-svc-bento>
-            {stage.services.map((s, idx) => (
-              <a
-                href={s.href}
-                class={`svc-tile${s.featured ? ' svc-tile--featured' : ''}`}
-                data-svc-tile
-                style={`--svc-delay: ${idx * 70}ms;`}
-              >
-                <div class="svc-tile__media">
-                  <div class="svc-tile__image" data-svc-parallax>
-                    <img src={s.image} alt={s.imageAlt} loading="lazy" decoding="async" />
-                  </div>
-                  <div class="svc-tile__media-overlay" aria-hidden="true"></div>
-                  <div class="svc-tile__media-grain" aria-hidden="true"></div>
-                  <span class="svc-tile__chip" aria-hidden="true">
-                    <span class="svc-tile__chip-icon" set:html={svcIcon[s.icon]} />
-                  </span>
-                  <span class="svc-tile__tag">{s.tagline}</span>
-                </div>
-
-                <div class="svc-tile__body">
-                  <h3 class="svc-tile__title">
-                    <span class="svc-tile__title-text">{s.title}</span>
-                    <span class="svc-tile__title-underline" aria-hidden="true"></span>
-                  </h3>
-                  <p class="svc-tile__desc">{s.desc}</p>
-
-                  <span class="svc-tile__cta">
-                    <span class="svc-tile__cta-text">Mehr erfahren</span>
-                    <span class="svc-tile__cta-arrow" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <div class="svc-bento" data-svc-bento>
+              {stage.services.map((s, idx) => (
+                <a
+                  href={s.href}
+                  class={`svc-tile${s.featured ? ' svc-tile--featured' : ''}`}
+                  data-svc-tile
+                  style={`--svc-delay: ${idx * 70}ms;`}
+                >
+                  <div class="svc-tile__media">
+                    <div class="svc-tile__image" data-svc-parallax>
+                      <img src={s.image} alt={s.imageAlt} loading="lazy" decoding="async" />
+                    </div>
+                    <div class="svc-tile__media-overlay" aria-hidden="true" />
+                    <div class="svc-tile__media-grain" aria-hidden="true" />
+                    <span class="svc-tile__chip" aria-hidden="true">
+                      <span class="svc-tile__chip-icon" set:html={svcIcon[s.icon]} />
                     </span>
-                  </span>
-                </div>
+                    <span class="svc-tile__tag">{s.tagline}</span>
+                  </div>
 
-                <span class="svc-tile__spotlight" aria-hidden="true"></span>
-                <span class="svc-tile__corner" aria-hidden="true"></span>
-              </a>
-            ))}
+                  <div class="svc-tile__body">
+                    <h3 class="svc-tile__title">
+                      <span class="svc-tile__title-text">{s.title}</span>
+                      <span class="svc-tile__title-underline" aria-hidden="true" />
+                    </h3>
+                    <p class="svc-tile__desc">{s.desc}</p>
+
+                    <span class="svc-tile__cta">
+                      <span class="svc-tile__cta-text">Mehr erfahren</span>
+                      <span class="svc-tile__cta-arrow" aria-hidden="true">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <line x1="5" y1="12" x2="19" y2="12" />
+                          <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                      </span>
+                    </span>
+                  </div>
+
+                  <span class="svc-tile__spotlight" aria-hidden="true" />
+                  <span class="svc-tile__corner" aria-hidden="true" />
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </section>
 
@@ -594,60 +720,108 @@ function formatInsightDate(d?: Date) {
         <span class="eyebrow eyebrow--on-dark bc-copy__eyebrow">Unser Vorteil</span>
         <div class="bc-copy__brand">
           <img
-            src="/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp"
-            alt="BeyondCompass"
+            src="/Images/AgencyLogos/Compass%20-%20Horizontal.svg"
+            alt="Compass"
             class="bc-copy__logo"
             width="420"
             height="100"
             loading="lazy"
           />
         </div>
-        <h2 class="bc-copy__title">Die Partnerdatenbank, die wir ursprünglich für uns selbst gebaut haben.</h2>
+        <h2 class="bc-copy__title">
+          Die Partnerdatenbank, die wir ursprünglich für uns selbst gebaut haben.
+        </h2>
         <p class="bc-copy__lead">
-          Jeder Vertriebspartner, der durch unsere Hände gegangen ist. Jeder TP, jeder DP, mit
-          dem wir je zusammengearbeitet haben. Jeder Kanalbetreiber, den wir beim Vornamen kennen. Zwanzig
-          Jahre Beziehungen, in eine Datenbank überführt. Ab jetzt für Ihre Suche.
+          Jeder Vertriebspartner, der durch unsere Hände gegangen ist. Jeder TP, jeder DP, mit dem
+          wir je zusammengearbeitet haben. Jeder Kanalbetreiber, den wir beim Vornamen kennen.
+          Zwanzig Jahre Beziehungen, in eine Datenbank überführt. Ab jetzt für Ihre Suche.
         </p>
 
         <ul class="bc-features">
           <li class="bc-feature">
             <span class="bc-feature__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.16 0 4.13.76 5.68 2.03"/></svg>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ><path d="M9 12l2 2 4-4"></path><path
+                  d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.16 0 4.13.76 5.68 2.03"
+                ></path></svg
+              >
             </span>
             <div class="bc-feature__text">
               <h3>Vom Team persönlich geprüft</h3>
-              <p>Jeder Partner muss durch unseren Filter, bevor er aufgenommen wird. Referenzen, die sich nachprüfen lassen, Kontakte, die man tatsächlich anrufen kann.</p>
+              <p>
+                Jeder Partner muss durch unseren Filter, bevor er aufgenommen wird. Referenzen, die
+                sich nachprüfen lassen, Kontakte, die man tatsächlich anrufen kann.
+              </p>
             </div>
           </li>
           <li class="bc-feature">
             <span class="bc-feature__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.5V19l4 2v-8.5L22 3z"/></svg>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"><path d="M22 3H2l8 9.5V19l4 2v-8.5L22 3z"></path></svg
+              >
             </span>
             <div class="bc-feature__text">
               <h3>Gefiltert nach Ihren Suchkriterien</h3>
-              <p>Kategorie, Region, Kanal, Preisstufe, Markenportfolio. Was nicht passt, fällt vor dem ersten Anruf raus.</p>
+              <p>
+                Kategorie, Region, Kanal, Preisstufe, Markenportfolio. Was nicht passt, fällt vor
+                dem ersten Anruf raus.
+              </p>
             </div>
           </li>
           <li class="bc-feature">
             <span class="bc-feature__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"
+                ></polyline><path
+                  d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                ></path></svg
+              >
             </span>
             <div class="bc-feature__text">
               <h3>Jedes Quartal nachgezogen</h3>
-              <p>Das Team, das BeyondCompass in Kundenmandaten einsetzt, ist dasselbe Team, das die Datenbank pflegt.</p>
+              <p>
+                Das Team, das Compass in Kundenmandaten einsetzt, ist dasselbe Team, das die
+                Datenbank pflegt.
+              </p>
             </div>
           </li>
         </ul>
 
         <a
           class="bc-cta"
-          href="https://beyondcompass.beyondbordergroup.com"
+          href="https://compass.bearingbridge.com/de"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span class="bc-cta__text">BeyondCompass entdecken</span>
+          <span class="bc-cta__text">Compass entdecken</span>
           <span class="bc-cta__arrow" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"
+              ></polyline></svg
+            >
           </span>
           <span class="bc-cta__ring" aria-hidden="true"></span>
         </a>
@@ -670,18 +844,27 @@ function formatInsightDate(d?: Date) {
             <span class="bc-mock__dot bc-mock__dot--r"></span>
             <span class="bc-mock__dot bc-mock__dot--y"></span>
             <span class="bc-mock__dot bc-mock__dot--g"></span>
-            <span class="bc-mock__url">beyondcompass.beyondbordergroup.com</span>
+            <span class="bc-mock__url">compass.bearingbridge.com/de</span>
           </div>
           <div class="bc-mock__body">
             <div class="bc-mock__header">
-              <span class="bc-mock__brand">BeyondCompass</span>
+              <span class="bc-mock__brand">Compass</span>
               <span class="bc-mock__count">
                 <span class="bc-mock__count-dot"></span>
                 Datenbank aktuell
               </span>
             </div>
             <div class="bc-mock__search">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"
+                ></line></svg
+              >
               <span class="bc-mock__search-text">Beauty-Vertriebspartner, Tier-1-Städte</span>
               <span class="bc-mock__search-cursor"></span>
             </div>
@@ -729,20 +912,10 @@ function formatInsightDate(d?: Date) {
       <div class="home-about">
         <div class="home-about__gallery" aria-hidden="true">
           <figure class="home-about__tile">
-            <img
-              src="/Images/team/china-office.png"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
+            <img src="/Images/team/china-office.png" alt="" loading="lazy" decoding="async" />
           </figure>
           <figure class="home-about__tile">
-            <img
-              src="/Images/team/team-photo.png"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
+            <img src="/Images/team/team-photo.png" alt="" loading="lazy" decoding="async" />
           </figure>
         </div>
 
@@ -755,20 +928,19 @@ function formatInsightDate(d?: Date) {
             Fortune-500-Konzernen mit China-Geschäft.
           </p>
           <p>
-            Markenstrategie, Media-Einkauf, eCommerce-Betrieb, Social Commerce auf
-            Douyin, WeChat und RED, Produktlokalisierung für den chinesischen Kunden.
-            Markteintrittsberatung, vom Geschäftsmodell über die Wahl des Vertriebspartners bis
-            zur regulatorischen Umsetzung. Content-Produktion im grossen Stil, klassisch
-            im Studio wie über KI-Pipelines.
+            Markenstrategie, Media-Einkauf, eCommerce-Betrieb, Social Commerce auf Douyin, WeChat
+            und RED, Produktlokalisierung für den chinesischen Kunden. Markteintrittsberatung, vom
+            Geschäftsmodell über die Wahl des Vertriebspartners bis zur regulatorischen Umsetzung.
+            Content-Produktion im grossen Stil, klassisch im Studio wie über KI-Pipelines.
           </p>
           <p class="home-about__punchline">
-            Wir arbeiten auf den Plattformen, mit den Budgets, unter Zeitdruck. Vom Spielfeldrand
-            zu beraten ist nicht unser Geschäft.
+            Wir arbeiten auf den Plattformen, mit den Budgets, unter Zeitdruck. Vom Spielfeldrand zu
+            beraten ist nicht unser Geschäft.
           </p>
           <p>
-            2023 haben wir uns selbständig gemacht, um Strategie und Umsetzung unter ein Dach
-            zu bringen. Dieselben Senioren führen beide Bereiche an. Die Erfahrung bleibt.
-            Nur die Struktur ist neu.
+            2023 haben wir uns selbständig gemacht, um Strategie und Umsetzung unter ein Dach zu
+            bringen. Dieselben Senioren führen beide Bereiche an. Die Erfahrung bleibt. Nur die
+            Struktur ist neu.
           </p>
 
           <a href="/de/ueber-uns" class="btn btn--ghost home-about__cta">Team kennenlernen</a>
@@ -787,7 +959,6 @@ function formatInsightDate(d?: Date) {
       <div class="studio__grain" aria-hidden="true"></div>
 
       <div class="studio__inner">
-
         {/* ----- Top strip ----- */}
         <div class="studio__topbar" data-reveal>
           <a
@@ -855,9 +1026,9 @@ function formatInsightDate(d?: Date) {
               für die chinesischen Plattformen.
             </h2>
             <p class="studio__lead">
-              Hub Studio ist das Team hinter allem, was bei uns auf den Markt geht. Foto,
-              Film, Social, Livestream, Verpackung, OOH. Gemacht für die chinesischen Plattformen,
-              von Leuten, die dort selbst Woche für Woche posten.
+              Hub Studio ist das Team hinter allem, was bei uns auf den Markt geht. Foto, Film,
+              Social, Livestream, Verpackung, OOH. Gemacht für die chinesischen Plattformen, von
+              Leuten, die dort selbst Woche für Woche posten.
             </p>
 
             <div class="studio__credits">
@@ -963,8 +1134,8 @@ function formatInsightDate(d?: Date) {
                 </span>
                 <h3 class="studio__panel-title">Konzept und Art-Direction.</h3>
                 <p class="studio__panel-body">
-                  Key Visuals, Kampagnenideen, Verpackung, OOH. Konzipiert für Xiaohongshu,
-                  Douyin, WeChat und Tmall, also dort, wo Ihre Käufer tatsächlich unterwegs sind.
+                  Key Visuals, Kampagnenideen, Verpackung, OOH. Konzipiert für Xiaohongshu, Douyin,
+                  WeChat und Tmall, also dort, wo Ihre Käufer tatsächlich unterwegs sind.
                 </p>
                 <ul class="studio__list">
                   <li>Kreativ-Direktion im Dienst der Marke</li>
@@ -983,7 +1154,12 @@ function formatInsightDate(d?: Date) {
               hidden
             >
               <div class="studio__panel-visual">
-                <img src="/Images/hub-studio/production.jpg" alt="" loading="lazy" decoding="async" />
+                <img
+                  src="/Images/hub-studio/production.jpg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div class="studio__tags">
                   <span>Foto</span>
                   <span>Film</span>
@@ -997,9 +1173,8 @@ function formatInsightDate(d?: Date) {
                 </span>
                 <h3 class="studio__panel-title">Foto, Film, Livestream.</h3>
                 <p class="studio__panel-body">
-                  Festes Team in Shanghai. Drehs in Peking, Shenzhen oder Guangzhou,
-                  wenn das Briefing es verlangt. Studiotage, Aussendrehs, Crew und Schnitt
-                  bleiben im Haus.
+                  Festes Team in Shanghai. Drehs in Peking, Shenzhen oder Guangzhou, wenn das
+                  Briefing es verlangt. Studiotage, Aussendrehs, Crew und Schnitt bleiben im Haus.
                 </p>
                 <ul class="studio__list">
                   <li>Studio- und Aussendrehs</li>
@@ -1032,10 +1207,9 @@ function formatInsightDate(d?: Date) {
                 </span>
                 <h3 class="studio__panel-title">AIGC, auf den besten Modellen.</h3>
                 <p class="studio__panel-body">
-                  KI-generierte Inhalte, gefahren auf den besten Text-zu-Bild- und
-                  Video-Modellen am Markt. Produkt, Mode, Lifestyle, Social, eCommerce in
-                  hoher Stückzahl. Jedes Bild läuft vor der Veröffentlichung über ein
-                  menschliches Auge.
+                  KI-generierte Inhalte, gefahren auf den besten Text-zu-Bild- und Video-Modellen am
+                  Markt. Produkt, Mode, Lifestyle, Social, eCommerce in hoher Stückzahl. Jedes Bild
+                  läuft vor der Veröffentlichung über ein menschliches Auge.
                 </p>
                 <ul class="studio__list">
                   <li>Aktuelle Text-zu-Bild- und Video-Modelle</li>
@@ -1057,7 +1231,9 @@ function formatInsightDate(d?: Date) {
             <span class="studio__chip"><span class="studio__chip-bullet"></span>Packaging</span>
             <span class="studio__chip"><span class="studio__chip-bullet"></span>OOH</span>
             <span class="studio__chip"><span class="studio__chip-bullet"></span>Markenvisuals</span>
-            <span class="studio__chip"><span class="studio__chip-bullet"></span>Social-first-Schnitte</span>
+            <span class="studio__chip"
+              ><span class="studio__chip-bullet"></span>Social-first-Schnitte</span
+            >
             <span class="studio__chip"><span class="studio__chip-bullet"></span>Foto</span>
             <span class="studio__chip"><span class="studio__chip-bullet"></span>Film</span>
             <span class="studio__chip"><span class="studio__chip-bullet"></span>Livestream</span>
@@ -1065,20 +1241,30 @@ function formatInsightDate(d?: Date) {
             <span class="studio__chip"><span class="studio__chip-bullet"></span>Packaging</span>
             <span class="studio__chip"><span class="studio__chip-bullet"></span>OOH</span>
             <span class="studio__chip"><span class="studio__chip-bullet"></span>Markenvisuals</span>
-            <span class="studio__chip"><span class="studio__chip-bullet"></span>Social-first-Schnitte</span>
+            <span class="studio__chip"
+              ><span class="studio__chip-bullet"></span>Social-first-Schnitte</span
+            >
           </div>
         </div>
 
         {/* ----- Footer CTA ----- */}
         <div class="studio__foot" data-reveal>
-          <a
-            class="studio__cta"
-            href="/de/in-china-wachsen/produktionsstudio"
-          >
+          <a class="studio__cta" href="/de/in-china-wachsen/produktionsstudio">
             <span class="studio__cta-text">Produktionen ansehen</span>
             <span class="studio__cta-arrow" aria-hidden="true">
-              <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 7H21M21 7L15 1M21 7L15 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              <svg
+                width="22"
+                height="14"
+                viewBox="0 0 22 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 7H21M21 7L15 1M21 7L15 13"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
               </svg>
             </span>
           </a>
@@ -1108,25 +1294,27 @@ function formatInsightDate(d?: Date) {
       </header>
 
       <div class="grid grid-3">
-        {featuredCases.map((c) => (
-          <a href={`/de/referenzen/${c.id}`} class="work-card">
-            <div class="work-card__image">
-              <img
-                src={c.data.heroImage}
-                alt={c.data.heroImageAlt || `Fallstudie ${c.data.brand}`}
-                loading="lazy"
-                decoding="async"
-                width="600"
-                height="400"
-              />
-            </div>
-            <div class="work-card__body">
-              <span class="work-card__tag">{c.data.category}</span>
-              <h3 class="work-card__title">{c.data.brand}</h3>
-              <p class="work-card__summary">{c.data.title}</p>
-            </div>
-          </a>
-        ))}
+        {
+          featuredCases.map((c) => (
+            <a href={`/de/referenzen/${c.id}`} class="work-card">
+              <div class="work-card__image">
+                <img
+                  src={c.data.heroImage}
+                  alt={c.data.heroImageAlt || `Fallstudie ${c.data.brand}`}
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
+                />
+              </div>
+              <div class="work-card__body">
+                <span class="work-card__tag">{c.data.category}</span>
+                <h3 class="work-card__title">{c.data.brand}</h3>
+                <p class="work-card__summary">{c.data.title}</p>
+              </div>
+            </a>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -1141,35 +1329,41 @@ function formatInsightDate(d?: Date) {
       </header>
 
       <div class="grid grid-3">
-        {latestInsights.map((post) => (
-          <a href={`/de/analysen/${post.id}`} class="insight-card">
-            <div class="insight-card__image">
-              {post.data.heroImage && (
-                <img
-                  src={post.data.heroImage}
-                  alt={post.data.heroImageAlt}
-                  loading="lazy"
-                  decoding="async"
-                  width="600"
-                  height="400"
-                />
-              )}
-            </div>
-            <div class="insight-card__body">
-              <span class="insight-card__tag">{insightCategoryDe[post.data.category] ?? post.data.category}</span>
-              <h3 class="insight-card__title">{post.data.title}</h3>
-              <div class="insight-card__meta">
-                <span>{readingTime(post.body)}</span>
-                {post.data.pubDate && (
-                  <>
-                    <span class="insight-card__meta-sep" aria-hidden="true">|</span>
-                    <span>{formatInsightDate(post.data.pubDate)}</span>
-                  </>
+        {
+          latestInsights.map((post) => (
+            <a href={`/de/analysen/${post.id}`} class="insight-card">
+              <div class="insight-card__image">
+                {post.data.heroImage && (
+                  <img
+                    src={post.data.heroImage}
+                    alt={post.data.heroImageAlt}
+                    loading="lazy"
+                    decoding="async"
+                    width="600"
+                    height="400"
+                  />
                 )}
               </div>
-            </div>
-          </a>
-        ))}
+              <div class="insight-card__body">
+                <span class="insight-card__tag">
+                  {insightCategoryDe[post.data.category] ?? post.data.category}
+                </span>
+                <h3 class="insight-card__title">{post.data.title}</h3>
+                <div class="insight-card__meta">
+                  <span>{readingTime(post.body)}</span>
+                  {post.data.pubDate && (
+                    <>
+                      <span class="insight-card__meta-sep" aria-hidden="true">
+                        |
+                      </span>
+                      <span>{formatInsightDate(post.data.pubDate)}</span>
+                    </>
+                  )}
+                </div>
+              </div>
+            </a>
+          ))
+        }
       </div>
     </div>
   </section>
@@ -1201,7 +1395,10 @@ function formatInsightDate(d?: Date) {
                 </div>
                 <span class="hello-card__dot" title="online"></span>
               </header>
-              <p class="hello-card__hi"><span class="hello-card__zh">你好</span> <span class="hello-card__latin">Nǐ hǎo</span></p>
+              <p class="hello-card__hi">
+                <span class="hello-card__zh">你好</span>
+                <span class="hello-card__latin">Nǐ hǎo</span>
+              </p>
             </article>
 
             <article class="hello-card hello-card--2">
@@ -1213,7 +1410,10 @@ function formatInsightDate(d?: Date) {
                 </div>
                 <span class="hello-card__dot" title="online"></span>
               </header>
-              <p class="hello-card__hi"><span class="hello-card__zh">你好</span> <span class="hello-card__latin">Neih hóu</span></p>
+              <p class="hello-card__hi">
+                <span class="hello-card__zh">你好</span>
+                <span class="hello-card__latin">Neih hóu</span>
+              </p>
             </article>
 
             <article class="hello-card hello-card--3">

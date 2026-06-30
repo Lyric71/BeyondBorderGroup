@@ -27,25 +27,70 @@ const icon = {
 };
 
 const enterChina = [
-  { label: t('nav.enter.marketEntry.label'), desc: t('nav.enter.marketEntry.desc'), href: lp('/enter-china/market-entry-consulting'), svg: icon.compass },
-  { label: t('nav.enter.crossBorder.label'), desc: t('nav.enter.crossBorder.desc'), href: lp('/enter-china/cross-border-setup'), svg: icon.store },
-  { label: t('nav.enter.distribution.label'), desc: t('nav.enter.distribution.desc'), href: lp('/enter-china/distribution'), svg: icon.truck },
-  { label: t('nav.enter.branding.label'), desc: t('nav.enter.branding.desc'), href: lp('/enter-china/branding-localisation'), svg: icon.tag },
+  {
+    label: t('nav.enter.marketEntry.label'),
+    desc: t('nav.enter.marketEntry.desc'),
+    href: lp('/enter-china/market-entry-consulting'),
+    svg: icon.compass,
+  },
+  {
+    label: t('nav.enter.crossBorder.label'),
+    desc: t('nav.enter.crossBorder.desc'),
+    href: lp('/enter-china/cross-border-setup'),
+    svg: icon.store,
+  },
+  {
+    label: t('nav.enter.distribution.label'),
+    desc: t('nav.enter.distribution.desc'),
+    href: lp('/enter-china/distribution'),
+    svg: icon.truck,
+  },
+  {
+    label: t('nav.enter.branding.label'),
+    desc: t('nav.enter.branding.desc'),
+    href: lp('/enter-china/branding-localisation'),
+    svg: icon.tag,
+  },
 ];
 
 const enterChinaFeature = {
-  label: 'BeyondCompass',
+  label: 'Compass',
   desc: t('nav.feature.beyondcompass.desc'),
-  href: 'https://beyondcompass.beyondbordergroup.com',
-  logo: '/Images/AgencyLogos/BeyondCompass%20-%20Transparent%20-%204K.webp',
+  href: 'https://compass.bearingbridge.com/en',
+  logo: '/Images/AgencyLogos/Compass%20-%20Horizontal.svg',
 };
 
 const growChina = [
-  { label: t('nav.grow.ecommerce.label'), desc: t('nav.grow.ecommerce.desc'), href: lp('/grow-in-china/cross-border-ecommerce'), svg: icon.bag },
-  { label: t('nav.grow.social.label'), desc: t('nav.grow.social.desc'), href: lp('/grow-in-china/social-commerce'), svg: icon.chat },
-  { label: t('nav.grow.campaigns.label'), desc: t('nav.grow.campaigns.desc'), href: lp('/grow-in-china/campaigns'), svg: icon.tag },
-  { label: t('nav.grow.media.label'), desc: t('nav.grow.media.desc'), href: lp('/grow-in-china/media'), svg: icon.broadcast },
-  { label: t('nav.grow.kols.label'), desc: t('nav.grow.kols.desc'), href: lp('/grow-in-china/influencers-kols'), svg: icon.megaphone },
+  {
+    label: t('nav.grow.ecommerce.label'),
+    desc: t('nav.grow.ecommerce.desc'),
+    href: lp('/grow-in-china/cross-border-ecommerce'),
+    svg: icon.bag,
+  },
+  {
+    label: t('nav.grow.social.label'),
+    desc: t('nav.grow.social.desc'),
+    href: lp('/grow-in-china/social-commerce'),
+    svg: icon.chat,
+  },
+  {
+    label: t('nav.grow.campaigns.label'),
+    desc: t('nav.grow.campaigns.desc'),
+    href: lp('/grow-in-china/campaigns'),
+    svg: icon.tag,
+  },
+  {
+    label: t('nav.grow.media.label'),
+    desc: t('nav.grow.media.desc'),
+    href: lp('/grow-in-china/media'),
+    svg: icon.broadcast,
+  },
+  {
+    label: t('nav.grow.kols.label'),
+    desc: t('nav.grow.kols.desc'),
+    href: lp('/grow-in-china/influencers-kols'),
+    svg: icon.megaphone,
+  },
 ];
 
 const growChinaFeature = {
@@ -63,16 +108,54 @@ const growChinaFeatureHub = {
 };
 
 const learnChina = [
-  { label: t('nav.learn.platforms.label'), desc: t('nav.learn.platforms.desc'), href: lp('/learn-china/platforms'), svg: icon.grid },
-  { label: t('nav.learn.masterclass.label'), desc: t('nav.learn.masterclass.desc'), href: lp('/learn-china/masterclass'), svg: icon.cap },
-  { label: t('nav.learn.expeditions.label'), desc: t('nav.learn.expeditions.desc'), href: lp('/learn-china/learning-expeditions'), svg: icon.pin },
-  { label: t('nav.learn.insights.label'), desc: t('nav.learn.insights.desc'), href: lp('/insights'), svg: icon.bulb },
+  {
+    label: t('nav.learn.platforms.label'),
+    desc: t('nav.learn.platforms.desc'),
+    href: lp('/learn-china/platforms'),
+    svg: icon.grid,
+  },
+  {
+    label: t('nav.learn.masterclass.label'),
+    desc: t('nav.learn.masterclass.desc'),
+    href: lp('/learn-china/masterclass'),
+    svg: icon.cap,
+  },
+  {
+    label: t('nav.learn.expeditions.label'),
+    desc: t('nav.learn.expeditions.desc'),
+    href: lp('/learn-china/learning-expeditions'),
+    svg: icon.pin,
+  },
+  {
+    label: t('nav.learn.insights.label'),
+    desc: t('nav.learn.insights.desc'),
+    href: lp('/insights'),
+    svg: icon.bulb,
+  },
 ];
 
 const sections = [
-  { key: 'enter', label: t('nav.section.enter'), href: lp('/enter-china'), intro: t('nav.enter.intro'), items: enterChina },
-  { key: 'grow', label: t('nav.section.grow'), href: lp('/grow-in-china'), intro: t('nav.grow.intro'), items: growChina },
-  { key: 'learn', label: t('nav.section.learn'), href: lp('/learn-china'), intro: t('nav.learn.intro'), items: learnChina },
+  {
+    key: 'enter',
+    label: t('nav.section.enter'),
+    href: lp('/enter-china'),
+    intro: t('nav.enter.intro'),
+    items: enterChina,
+  },
+  {
+    key: 'grow',
+    label: t('nav.section.grow'),
+    href: lp('/grow-in-china'),
+    intro: t('nav.grow.intro'),
+    items: growChina,
+  },
+  {
+    key: 'learn',
+    label: t('nav.section.learn'),
+    href: lp('/learn-china'),
+    intro: t('nav.learn.intro'),
+    items: learnChina,
+  },
 ];
 
 // Country flags used by the language switcher. USA stands in for English;
@@ -87,7 +170,13 @@ const flags: Record<Locale, string> = {
 
 // Build a sibling URL for each available locale, used by the language switcher.
 const otherLocales = (locales as readonly Locale[]).filter((l) => l !== locale);
-const switcherCurrent = { code: locale, label: localeLabels[locale], name: localeNamesNative[locale], href: localizePath(Astro.url.pathname, locale), flag: flags[locale] };
+const switcherCurrent = {
+  code: locale,
+  label: localeLabels[locale],
+  name: localeNamesNative[locale],
+  href: localizePath(Astro.url.pathname, locale),
+  flag: flags[locale],
+};
 const switcherOthers = otherLocales.map((l) => ({
   code: l,
   label: localeLabels[l],
@@ -100,61 +189,136 @@ const switcherOthers = otherLocales.map((l) => ({
 <header class="nav" id="site-nav">
   <div class="container nav__inner">
     <a href={lp('/')} class="nav__logo" aria-label={t('footer.aria.brand')}>
-      <img class="nav__logo-img nav__logo-img--default" src="/Images/thechinapath-horizontal.png" alt="TheChinaPath" width="1205" height="518" />
-      <img class="nav__logo-img nav__logo-img--light" src="/Images/thechinapath-horizontal-light.png" alt="" aria-hidden="true" width="1205" height="518" />
+      <img
+        class="nav__logo-img nav__logo-img--default"
+        src="/Images/thechinapath-horizontal.png"
+        alt="TheChinaPath"
+        width="1205"
+        height="518"
+      />
+      <img
+        class="nav__logo-img nav__logo-img--light"
+        src="/Images/thechinapath-horizontal-light.png"
+        alt=""
+        aria-hidden="true"
+        width="1205"
+        height="518"
+      />
     </a>
 
     <nav class="nav__primary" aria-label={t('nav.aria.primary')}>
       <ul class="nav__links">
-        {sections.map(section => (
-          <li class="nav__item nav__item--mega">
-            <a href={section.href} class="nav__link" aria-haspopup="true">{section.label}</a>
-            <div class="mega" role="menu" aria-label={section.label}>
-              <div class="container mega__inner">
-                <div class="mega__head">
-                  <span class="mega__eyebrow">{section.label}</span>
-                  <p class="mega__intro">{section.intro}</p>
-                  <a href={section.href} class="btn btn--ghost mega__cta">{t('nav.allServices', { section: section.label })}</a>
-                </div>
-                <div class={`mega__grid ${section.key === 'grow' ? 'mega__grid--grow' : section.items.length > 3 ? 'mega__grid--6' : 'mega__grid--3'}`}>
-                  {section.items.map(item => (
-                    <a href={item.href} class="mega-item">
-                      <span class="mega-item__icon" set:html={item.svg} />
-                      <span class="mega-item__body">
-                        <span class="mega-item__title">{item.label}</span>
-                        <span class="mega-item__desc">{item.desc}</span>
-                      </span>
+        {
+          sections.map((section) => (
+            <li class="nav__item nav__item--mega">
+              <a href={section.href} class="nav__link" aria-haspopup="true">
+                {section.label}
+              </a>
+              <div class="mega" role="menu" aria-label={section.label}>
+                <div class="container mega__inner">
+                  <div class="mega__head">
+                    <span class="mega__eyebrow">{section.label}</span>
+                    <p class="mega__intro">{section.intro}</p>
+                    <a href={section.href} class="btn btn--ghost mega__cta">
+                      {t('nav.allServices', { section: section.label })}
                     </a>
-                  ))}
-                  {section.key === 'enter' && (
-                    <a href={enterChinaFeature.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature" data-spotlight aria-label={t('nav.opensInNewTab', { name: enterChinaFeature.label, desc: enterChinaFeature.desc })}>
-                      <span class="mega-feature__logobox">
-                        <img src={enterChinaFeature.logo} alt={enterChinaFeature.label} loading="lazy" width="320" height="80" />
-                      </span>
-                      <span class="mega-item__desc mega-feature__desc">{enterChinaFeature.desc}</span>
-                    </a>
-                  )}
-                  {section.key === 'grow' && (
-                    <a href={growChinaFeature.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature mega-item--feature-cwf" data-spotlight aria-label={t('nav.opensInNewTab', { name: growChinaFeature.label, desc: growChinaFeature.desc })}>
-                      <span class="mega-feature__logobox">
-                        <img src={growChinaFeature.logo} alt={growChinaFeature.label} loading="lazy" width="320" height="80" />
-                      </span>
-                      <span class="mega-item__desc mega-feature__desc">{growChinaFeature.desc}</span>
-                    </a>
-                  )}
-                  {section.key === 'grow' && (
-                    <a href={growChinaFeatureHub.href} target="_blank" rel="noopener noreferrer" class="mega-item mega-item--feature mega-item--feature-hub" data-spotlight aria-label={t('nav.opensInNewTab', { name: growChinaFeatureHub.label, desc: growChinaFeatureHub.desc })}>
-                      <span class="mega-feature__logobox">
-                        <img src={growChinaFeatureHub.logo} alt={growChinaFeatureHub.label} loading="lazy" width="320" height="80" />
-                      </span>
-                      <span class="mega-item__desc mega-feature__desc">{growChinaFeatureHub.desc}</span>
-                    </a>
-                  )}
+                  </div>
+                  <div
+                    class={`mega__grid ${section.key === 'grow' ? 'mega__grid--grow' : section.items.length > 3 ? 'mega__grid--6' : 'mega__grid--3'}`}
+                  >
+                    {section.items.map((item) => (
+                      <a href={item.href} class="mega-item">
+                        <span class="mega-item__icon" set:html={item.svg} />
+                        <span class="mega-item__body">
+                          <span class="mega-item__title">{item.label}</span>
+                          <span class="mega-item__desc">{item.desc}</span>
+                        </span>
+                      </a>
+                    ))}
+                    {section.key === 'enter' && (
+                      <a
+                        href={enterChinaFeature.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mega-item mega-item--feature"
+                        data-spotlight
+                        aria-label={t('nav.opensInNewTab', {
+                          name: enterChinaFeature.label,
+                          desc: enterChinaFeature.desc,
+                        })}
+                      >
+                        <span class="mega-feature__logobox">
+                          <img
+                            src={enterChinaFeature.logo}
+                            alt={enterChinaFeature.label}
+                            loading="lazy"
+                            width="320"
+                            height="80"
+                          />
+                        </span>
+                        <span class="mega-item__desc mega-feature__desc">
+                          {enterChinaFeature.desc}
+                        </span>
+                      </a>
+                    )}
+                    {section.key === 'grow' && (
+                      <a
+                        href={growChinaFeature.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mega-item mega-item--feature mega-item--feature-cwf"
+                        data-spotlight
+                        aria-label={t('nav.opensInNewTab', {
+                          name: growChinaFeature.label,
+                          desc: growChinaFeature.desc,
+                        })}
+                      >
+                        <span class="mega-feature__logobox">
+                          <img
+                            src={growChinaFeature.logo}
+                            alt={growChinaFeature.label}
+                            loading="lazy"
+                            width="320"
+                            height="80"
+                          />
+                        </span>
+                        <span class="mega-item__desc mega-feature__desc">
+                          {growChinaFeature.desc}
+                        </span>
+                      </a>
+                    )}
+                    {section.key === 'grow' && (
+                      <a
+                        href={growChinaFeatureHub.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mega-item mega-item--feature mega-item--feature-hub"
+                        data-spotlight
+                        aria-label={t('nav.opensInNewTab', {
+                          name: growChinaFeatureHub.label,
+                          desc: growChinaFeatureHub.desc,
+                        })}
+                      >
+                        <span class="mega-feature__logobox">
+                          <img
+                            src={growChinaFeatureHub.logo}
+                            alt={growChinaFeatureHub.label}
+                            loading="lazy"
+                            width="320"
+                            height="80"
+                          />
+                        </span>
+                        <span class="mega-item__desc mega-feature__desc">
+                          {growChinaFeatureHub.desc}
+                        </span>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        ))}
+            </li>
+          ))
+        }
 
         <li class="nav__item">
           <a href={lp('/work')} class="nav__link">{t('nav.work')}</a>
@@ -167,30 +331,51 @@ const switcherOthers = otherLocales.map((l) => ({
 
     <div class="nav__right">
       <div class="nav__lang" data-lang-switch>
-        <button class="nav__lang-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label={t('lang.switch.aria')}>
+        <button
+          class="nav__lang-trigger"
+          type="button"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-label={t('lang.switch.aria')}
+        >
           <span class="nav__lang-flag" set:html={switcherCurrent.flag} />
           <span class="nav__lang-current">{switcherCurrent.label}</span>
-          <svg class="nav__lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polyline points="6 9 12 15 18 9"/>
+          <svg
+            class="nav__lang-caret"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         </button>
         <ul class="nav__lang-menu" role="listbox" aria-label={t('lang.switch.aria')}>
           <li role="option" aria-selected="true">
-            <a class="nav__lang-option is-current" href={switcherCurrent.href} hreflang={switcherCurrent.code}>
+            <a
+              class="nav__lang-option is-current"
+              href={switcherCurrent.href}
+              hreflang={switcherCurrent.code}
+            >
               <span class="nav__lang-flag" set:html={switcherCurrent.flag} />
               <span class="nav__lang-option-code">{switcherCurrent.label}</span>
               <span class="nav__lang-option-name">{switcherCurrent.name}</span>
             </a>
           </li>
-          {switcherOthers.map((opt) => (
-            <li role="option" aria-selected="false">
-              <a class="nav__lang-option" href={opt.href} hreflang={opt.code}>
-                <span class="nav__lang-flag" set:html={opt.flag} />
-                <span class="nav__lang-option-code">{opt.label}</span>
-                <span class="nav__lang-option-name">{opt.name}</span>
-              </a>
-            </li>
-          ))}
+          {
+            switcherOthers.map((opt) => (
+              <li role="option" aria-selected="false">
+                <a class="nav__lang-option" href={opt.href} hreflang={opt.code}>
+                  <span class="nav__lang-flag" set:html={opt.flag} />
+                  <span class="nav__lang-option-code">{opt.label}</span>
+                  <span class="nav__lang-option-name">{opt.name}</span>
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </div>
       <a href={lp('/contact')} class="btn btn--primary btn--sm">{t('nav.contact')}</a>
@@ -231,7 +416,9 @@ const switcherOthers = otherLocales.map((l) => ({
     const htmlLang = document.documentElement.lang;
     const needsWide = htmlLang === 'fr' || htmlLang === 'de' || htmlLang === 'es';
     const mq = window.matchMedia(needsWide ? '(min-width: 1181px)' : '(min-width: 1025px)');
-    const onMq = (e) => { if (e.matches) closeDrawer(); };
+    const onMq = (e) => {
+      if (e.matches) closeDrawer();
+    };
     if (mq.addEventListener) mq.addEventListener('change', onMq);
     else mq.addListener(onMq);
 

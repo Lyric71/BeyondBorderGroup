@@ -6,25 +6,22 @@
 // run repeatedly: the batch optimizer keeps the original buffer if it can't
 // shrink it.
 
-import { execSync } from "node:child_process";
-import path from "node:path";
+import { execSync } from 'node:child_process';
+import path from 'node:path';
 
-const RASTER_EXT = new Set([".jpg", ".jpeg", ".png", ".webp"]);
-const ROOT_PREFIX = "public/Images/";
+const RASTER_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp']);
+const ROOT_PREFIX = 'public/Images/';
 
 function staged() {
   // -z + null parser keeps paths with spaces intact.
-  const out = execSync("git diff --cached --name-only --diff-filter=ACMR -z", {
-    encoding: "buffer",
+  const out = execSync('git diff --cached --name-only --diff-filter=ACMR -z', {
+    encoding: 'buffer',
   });
-  return out
-    .toString("utf8")
-    .split("\0")
-    .filter(Boolean);
+  return out.toString('utf8').split('\0').filter(Boolean);
 }
 
 function isTargetImage(p) {
-  const norm = p.replace(/\\/g, "/");
+  const norm = p.replace(/\\/g, '/');
   if (!norm.startsWith(ROOT_PREFIX)) return false;
   return RASTER_EXT.has(path.extname(norm).toLowerCase());
 }
@@ -36,8 +33,8 @@ function main() {
   console.log(`[pre-commit] optimizing ${files.length} image(s)...`);
   for (const f of files) {
     try {
-      execSync(`node scripts/optimize-images-batch.mjs "${f}"`, { stdio: "inherit" });
-      execSync(`git add -- "${f}"`, { stdio: "inherit" });
+      execSync(`node scripts/optimize-images-batch.mjs "${f}"`, { stdio: 'inherit' });
+      execSync(`git add -- "${f}"`, { stdio: 'inherit' });
     } catch (err) {
       console.error(`[pre-commit] failed to optimize ${f}: ${err.message}`);
       process.exit(1);

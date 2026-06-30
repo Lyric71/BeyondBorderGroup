@@ -14,18 +14,25 @@ const MAX_LINKS = 3;
 // Per-article link plan. Ordered by priority. Each entry tries its anchors in
 // order. First anchor found in body wins. Stop after MAX_LINKS placements.
 const PLAN = {
-  '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event': [
-    { url: '/grow-in-china/cross-border-ecommerce', anchors: ['cross-border e-commerce', 'Tmall'] },
-    { url: '/grow-in-china/campaigns', anchors: ['marketing campaigns', 'campaigns'] },
-    { url: '/grow-in-china/influencers-kols', anchors: ['KOL marketing', 'KOLs', 'KOL'] },
-  ],
+  '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event':
+    [
+      {
+        url: '/grow-in-china/cross-border-ecommerce',
+        anchors: ['cross-border e-commerce', 'Tmall'],
+      },
+      { url: '/grow-in-china/campaigns', anchors: ['marketing campaigns', 'campaigns'] },
+      { url: '/grow-in-china/influencers-kols', anchors: ['KOL marketing', 'KOLs', 'KOL'] },
+    ],
   'a-comparison-between-tmall-and-amazon': [
     { url: '/grow-in-china/cross-border-ecommerce', anchors: ['Tmall', 'e-commerce platform'] },
     { url: '/enter-china/cross-border-setup', anchors: ['cross-border', 'CBEC'] },
     { url: '/grow-in-china/media', anchors: ['advertising', 'media costs'] },
   ],
   'ai-revolutionizing-ecommerce-in-china': [
-    { url: '/grow-in-china/cross-border-ecommerce', anchors: ['eCommerce in China', 'eCommerce', 'e-commerce'] },
+    {
+      url: '/grow-in-china/cross-border-ecommerce',
+      anchors: ['eCommerce in China', 'eCommerce', 'e-commerce'],
+    },
     { url: '/grow-in-china/campaigns', anchors: ['marketing campaigns', 'campaigns'] },
     { url: '/grow-in-china/influencers-kols', anchors: ['livestream', 'KOL'] },
   ],
@@ -35,18 +42,27 @@ const PLAN = {
     { url: '/enter-china/distribution', anchors: ['distribution', 'distributor'] },
   ],
   'best-practices-for-finding-a-chinese-name-for-a-brand-in-china': [
-    { url: '/enter-china/branding-localisation', anchors: ['brand localization', 'brand localisation', 'localization'] },
+    {
+      url: '/enter-china/branding-localisation',
+      anchors: ['brand localization', 'brand localisation', 'localization'],
+    },
     { url: '/enter-china/market-entry-consulting', anchors: ['market entry', 'entering China'] },
     { url: '/grow-in-china/campaigns', anchors: ['marketing campaigns', 'campaigns'] },
   ],
   'best-practices-for-koc-marketing-in-china': [
-    { url: '/grow-in-china/influencers-kols', anchors: ['KOC marketing', 'KOC', 'KOL', 'influencer'] },
+    {
+      url: '/grow-in-china/influencers-kols',
+      anchors: ['KOC marketing', 'KOC', 'KOL', 'influencer'],
+    },
     { url: '/grow-in-china/social-commerce', anchors: ['social commerce'] },
     { url: '/grow-in-china/campaigns', anchors: ['marketing campaigns', 'campaigns'] },
   ],
   'best-practices-for-successful-e-commerce-livestreaming-in-china': [
     { url: '/grow-in-china/influencers-kols', anchors: ['KOL', 'influencer'] },
-    { url: '/grow-in-china/production-studio', anchors: ['production studio', 'livestream production', 'production'] },
+    {
+      url: '/grow-in-china/production-studio',
+      anchors: ['production studio', 'livestream production', 'production'],
+    },
     { url: '/grow-in-china/cross-border-ecommerce', anchors: ['Tmall', 'e-commerce'] },
   ],
   'best-practices-to-launch-a-crm-program-in-china': [
@@ -65,7 +81,10 @@ const PLAN = {
     { url: '/grow-in-china/influencers-kols', anchors: ['KOL', 'influencer'] },
   ],
   'boost-your-brand-in-china-the-ultimate-kuaishou-short-video-marketing-guide': [
-    { url: '/grow-in-china/influencers-kols', anchors: ['influencer marketing', 'KOL', 'influencer'] },
+    {
+      url: '/grow-in-china/influencers-kols',
+      anchors: ['influencer marketing', 'KOL', 'influencer'],
+    },
     { url: '/grow-in-china/campaigns', anchors: ['marketing campaigns', 'campaigns'] },
     { url: '/grow-in-china/production-studio', anchors: ['video production', 'production'] },
   ],
@@ -75,7 +94,10 @@ const PLAN = {
     { url: '/enter-china/market-entry-consulting', anchors: ['market entry', 'China market'] },
   ],
   'brand-localization-for-china-without-losing-your-dna': [
-    { url: '/enter-china/branding-localisation', anchors: ['brand localization', 'brand localisation', 'localization'] },
+    {
+      url: '/enter-china/branding-localisation',
+      anchors: ['brand localization', 'brand localisation', 'localization'],
+    },
     { url: '/enter-china/market-entry-consulting', anchors: ['market entry', 'entering China'] },
     { url: '/work', anchors: ['case studies', 'our work'] },
   ],
@@ -91,12 +113,18 @@ const PLAN = {
   ],
   'china-is-no-longer-one-market-a-localized-growth-strategy-for-2025': [
     { url: '/enter-china/market-entry-consulting', anchors: ['market entry', 'China market'] },
-    { url: '/enter-china/branding-localisation', anchors: ['localisation', 'localization', 'localised', 'localized'] },
+    {
+      url: '/enter-china/branding-localisation',
+      anchors: ['localisation', 'localization', 'localised', 'localized'],
+    },
     { url: '/work', anchors: ['case studies', 'playbook'] },
   ],
   'china-is-no-longer-one-market-why-local-bets-beat-national-plans': [
     { url: '/enter-china/market-entry-consulting', anchors: ['market entry', 'China market'] },
-    { url: '/enter-china/branding-localisation', anchors: ['localisation', 'localization', 'localised', 'localized'] },
+    {
+      url: '/enter-china/branding-localisation',
+      anchors: ['localisation', 'localization', 'localised', 'localized'],
+    },
     { url: '/work', anchors: ['case studies', 'playbook'] },
   ],
   'china-social-media-and-kol-strategies-for-ecommerce-brands': [
@@ -120,7 +148,10 @@ const PLAN = {
     { url: '/grow-in-china/cross-border-ecommerce', anchors: ['JD', 'e-commerce'] },
   ],
   'double-11-2025-ai-ecommerce-efficiency-china': [
-    { url: '/grow-in-china/cross-border-ecommerce', anchors: ['e-commerce', 'eCommerce', 'JD', 'Taobao'] },
+    {
+      url: '/grow-in-china/cross-border-ecommerce',
+      anchors: ['e-commerce', 'eCommerce', 'JD', 'Taobao'],
+    },
     { url: '/grow-in-china/influencers-kols', anchors: ['livestream', 'KOL'] },
     { url: '/grow-in-china/production-studio', anchors: ['production'] },
   ],
@@ -180,12 +211,18 @@ const PLAN = {
     { url: '/grow-in-china/campaigns', anchors: ['marketing'] },
   ],
   'how-to-localize-a-brand-for-china': [
-    { url: '/enter-china/branding-localisation', anchors: ['brand localization', 'brand localisation', 'localize'] },
+    {
+      url: '/enter-china/branding-localisation',
+      anchors: ['brand localization', 'brand localisation', 'localize'],
+    },
     { url: '/enter-china/market-entry-consulting', anchors: ['market entry', 'entering China'] },
     { url: '/grow-in-china/campaigns', anchors: ['marketing campaigns', 'campaigns'] },
   ],
   'how-to-localize-brand-content-for-china': [
-    { url: '/enter-china/branding-localisation', anchors: ['brand localization', 'localization', 'localize'] },
+    {
+      url: '/enter-china/branding-localisation',
+      anchors: ['brand localization', 'localization', 'localize'],
+    },
     { url: '/grow-in-china/campaigns', anchors: ['campaigns', 'content marketing'] },
     { url: '/grow-in-china/social-commerce', anchors: ['WeChat', 'social commerce'] },
   ],
@@ -215,17 +252,26 @@ const PLAN = {
     { url: '/grow-in-china/campaigns', anchors: ['campaigns', 'marketing'] },
   ],
   'marketing-strategies-revolutionizing-ai-integrated-pcs-in-china': [
-    { url: '/grow-in-china/campaigns', anchors: ['marketing strategy', 'marketing campaigns', 'campaigns'] },
+    {
+      url: '/grow-in-china/campaigns',
+      anchors: ['marketing strategy', 'marketing campaigns', 'campaigns'],
+    },
     { url: '/grow-in-china/influencers-kols', anchors: ['KOL', 'influencer'] },
     { url: '/grow-in-china/social-commerce', anchors: ['social commerce', 'WeChat'] },
   ],
   'navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin': [
-    { url: '/enter-china/cross-border-setup', anchors: ['cross-border commerce', 'cross-border', 'CBEC'] },
+    {
+      url: '/enter-china/cross-border-setup',
+      anchors: ['cross-border commerce', 'cross-border', 'CBEC'],
+    },
     { url: '/about', anchors: ['TheChinaPath', 'our team'] },
     { url: '/grow-in-china/influencers-kols', anchors: ['livestream', 'KOL'] },
   ],
   'optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china': [
-    { url: '/grow-in-china/influencers-kols', anchors: ['influencer marketing', 'influencer', 'KOL'] },
+    {
+      url: '/grow-in-china/influencers-kols',
+      anchors: ['influencer marketing', 'influencer', 'KOL'],
+    },
     { url: '/grow-in-china/campaigns', anchors: ['brand strategy', 'campaigns'] },
     { url: '/grow-in-china/social-commerce', anchors: ['social media'] },
   ],
@@ -245,7 +291,10 @@ const PLAN = {
     { url: '/grow-in-china/influencers-kols', anchors: ['KOL', 'influencer', 'livestream'] },
   ],
   'storytelling-in-b2b-marketing-enhancing-brand-connection-in-china': [
-    { url: '/enter-china/branding-localisation', anchors: ['brand connection', 'branding', 'brand'] },
+    {
+      url: '/enter-china/branding-localisation',
+      anchors: ['brand connection', 'branding', 'brand'],
+    },
     { url: '/grow-in-china/campaigns', anchors: ['marketing', 'campaigns'] },
     { url: '/work', anchors: ['case studies'] },
   ],
@@ -272,7 +321,10 @@ const PLAN = {
   'the-ultimate-guide-to-wechat-channels-for-brands': [
     { url: '/grow-in-china/social-commerce', anchors: ['WeChat', 'social commerce'] },
     { url: '/grow-in-china/influencers-kols', anchors: ['KOL', 'influencer'] },
-    { url: '/grow-in-china/production-studio', anchors: ['live streaming', 'livestream', 'production'] },
+    {
+      url: '/grow-in-china/production-studio',
+      anchors: ['live streaming', 'livestream', 'production'],
+    },
   ],
   'top-5-video-and-livestreaming-platforms-in-china': [
     { url: '/learn-china/platforms', anchors: ['platforms'] },
@@ -321,7 +373,10 @@ const PLAN = {
   ],
   'unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers': [
     { url: '/enter-china/branding-localisation', anchors: ['branding', 'brand', 'localisation'] },
-    { url: '/enter-china/market-entry-consulting', anchors: ['Chinese consumer', 'China market', 'global brands'] },
+    {
+      url: '/enter-china/market-entry-consulting',
+      anchors: ['Chinese consumer', 'China market', 'global brands'],
+    },
     { url: '/grow-in-china/campaigns', anchors: ['marketing', 'campaigns'] },
   ],
   'ux-design-for-global-markets-chinese-vs-western-approaches': [
@@ -350,15 +405,56 @@ const PLAN = {
 // generic words don't displace topical anchors but still salvage articles
 // where the specific phrasing isn't present.
 const FALLBACK_ANCHORS = {
-  '/enter-china/market-entry-consulting': ['China market', 'Chinese market', 'global brands', 'foreign brands', 'enter China', 'entering China'],
-  '/enter-china/branding-localisation': ['brand identity', 'brand strategy', 'localisation', 'localization', 'localise', 'localize', 'naming', 'Chinese consumers'],
+  '/enter-china/market-entry-consulting': [
+    'China market',
+    'Chinese market',
+    'global brands',
+    'foreign brands',
+    'enter China',
+    'entering China',
+  ],
+  '/enter-china/branding-localisation': [
+    'brand identity',
+    'brand strategy',
+    'localisation',
+    'localization',
+    'localise',
+    'localize',
+    'naming',
+    'Chinese consumers',
+  ],
   '/enter-china/cross-border-setup': ['cross-border', 'CBEC', 'cross border'],
   '/enter-china/distribution': ['distribution', 'distributor', 'distributors', 'retail partners'],
-  '/grow-in-china/cross-border-ecommerce': ['e-commerce', 'eCommerce', 'ecommerce', 'online stores', 'marketplaces', 'Tmall Global'],
-  '/grow-in-china/social-commerce': ['social commerce', 'social media', 'mini-program', 'WeChat Channels'],
-  '/grow-in-china/campaigns': ['marketing', 'campaign', 'campaigns', 'marketing campaign', 'brand campaign'],
+  '/grow-in-china/cross-border-ecommerce': [
+    'e-commerce',
+    'eCommerce',
+    'ecommerce',
+    'online stores',
+    'marketplaces',
+    'Tmall Global',
+  ],
+  '/grow-in-china/social-commerce': [
+    'social commerce',
+    'social media',
+    'mini-program',
+    'WeChat Channels',
+  ],
+  '/grow-in-china/campaigns': [
+    'marketing',
+    'campaign',
+    'campaigns',
+    'marketing campaign',
+    'brand campaign',
+  ],
   '/grow-in-china/media': ['media spend', 'paid media', 'media planning', 'advertising'],
-  '/grow-in-china/influencers-kols': ['influencer', 'KOL', 'KOC', 'livestream', 'livestreaming', 'live streaming'],
+  '/grow-in-china/influencers-kols': [
+    'influencer',
+    'KOL',
+    'KOC',
+    'livestream',
+    'livestreaming',
+    'live streaming',
+  ],
   '/grow-in-china/website': ['website', 'hosting', 'WordPress', 'UX'],
   '/grow-in-china/production-studio': ['video production', 'content production', 'production'],
   '/learn-china/platforms': ['Chinese platforms', 'platforms'],

@@ -159,8 +159,8 @@ export function organizationSchema(): SchemaObject {
     subOrganization: [
       {
         '@type': 'Organization',
-        name: 'BeyondCompass',
-        url: 'https://beyondcompass.beyondbordergroup.com',
+        name: 'Compass',
+        url: 'https://compass.bearingbridge.com/en',
       },
       { '@type': 'Organization', name: 'Hub Studio', url: 'https://hubstudio.ai' },
       { '@type': 'Organization', name: 'ChinaWebFoundry', url: 'https://chinawebfoundry.com' },
@@ -345,7 +345,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     en: {
       name: 'China Market Entry Consulting',
       description:
-        "Strategic consulting covering channel selection, business model design, distributor mapping, and regulatory setup for foreign brands entering China.",
+        'Strategic consulting covering channel selection, business model design, distributor mapping, and regulatory setup for foreign brands entering China.',
     },
     fr: {
       name: 'Conseil en entrée de marché Chine',
@@ -374,7 +374,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     fr: {
       name: 'Lancement cross-border eCommerce',
       description:
-        "Mise en place complète de boutiques Tmall Global ou JD Worldwide : entrepôt sous douane, dédouanement et conformité plateforme. Sans entité chinoise.",
+        'Mise en place complète de boutiques Tmall Global ou JD Worldwide : entrepôt sous douane, dédouanement et conformité plateforme. Sans entité chinoise.',
     },
     de: {
       name: 'Cross-Border-eCommerce-Aufbau',
@@ -398,7 +398,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     fr: {
       name: 'Distribution en Chine',
       description:
-        "Distribution B2B et DTC en Chine. Nous sourçons et qualifions les distributeurs par catégorie et région, ou prenons directement le rôle de distributeur.",
+        'Distribution B2B et DTC en Chine. Nous sourçons et qualifions les distributeurs par catégorie et région, ou prenons directement le rôle de distributeur.',
     },
     de: {
       name: 'Vertrieb in China',
@@ -446,7 +446,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     fr: {
       name: 'Opérations eCommerce transfrontalier',
       description:
-        "Pilotage quotidien des boutiques Tmall Global et JD Worldwide : fiches produits, contenus, service client, achat média, livestream et reporting.",
+        'Pilotage quotidien des boutiques Tmall Global et JD Worldwide : fiches produits, contenus, service client, achat média, livestream et reporting.',
     },
     de: {
       name: 'Cross-Border-eCommerce-Betrieb',
@@ -470,7 +470,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     fr: {
       name: 'Social commerce sur Douyin, WeChat et RED',
       description:
-        "Livestream commercial, partenariats KOL et pilotage des boutiques in-app sur Douyin, WeChat et Xiaohongshu (RED). Modèles DP et Distributeur disponibles.",
+        'Livestream commercial, partenariats KOL et pilotage des boutiques in-app sur Douyin, WeChat et Xiaohongshu (RED). Modèles DP et Distributeur disponibles.',
     },
     de: {
       name: 'Social Commerce auf Douyin, WeChat und RED',
@@ -494,7 +494,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     fr: {
       name: 'Campagnes festivals e-commerce Chine',
       description:
-        "Stratégie et exécution des campagnes pour les grands rendez-vous chinois : 618, Double 11, Nouvel An chinois. Plan KOL, achat média, création et reporting.",
+        'Stratégie et exécution des campagnes pour les grands rendez-vous chinois : 618, Double 11, Nouvel An chinois. Plan KOL, achat média, création et reporting.',
     },
     de: {
       name: 'Kampagnen für die grossen E-Commerce-Festivals in China',
@@ -518,7 +518,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     fr: {
       name: 'Achat média sur les plateformes chinoises',
       description:
-        "Achat média performance et marque sur les plateformes Tencent, ByteDance, Alibaba et Xiaohongshu, avec un reporting lisible par vos équipes.",
+        'Achat média performance et marque sur les plateformes Tencent, ByteDance, Alibaba et Xiaohongshu, avec un reporting lisible par vos équipes.',
     },
     de: {
       name: 'Media-Einkauf auf chinesischen Plattformen',
@@ -542,7 +542,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     fr: {
       name: 'Marketing KOL et influence en Chine',
       description:
-        "Casting KOL et KOC, briefs, opérations payées et reporting performance, depuis notre base influence Chine en propre.",
+        'Casting KOL et KOC, briefs, opérations payées et reporting performance, depuis notre base influence Chine en propre.',
     },
     de: {
       name: 'Influencer- und KOL-Marketing in China',
@@ -566,7 +566,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     fr: {
       name: 'Studio de production de contenu (Hub Studio)',
       description:
-        "Production de contenu en Chine : photo, film, plateaux livestream, packaging, OOH et AIGC. Équipes à Shanghai, Shenzhen, Changsha et Hangzhou.",
+        'Production de contenu en Chine : photo, film, plateaux livestream, packaging, OOH et AIGC. Équipes à Shanghai, Shenzhen, Changsha et Hangzhou.',
     },
     de: {
       name: 'Content-Produktionsstudio (Hub Studio)',
@@ -614,7 +614,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     fr: {
       name: 'Panorama des plateformes chinoises',
       description:
-        "Briefings plateforme par plateforme sur Tmall, JD, Douyin, WeChat, RED et Pinduoduo. Comment chacune fonctionne, à qui elle parle, et où placer le budget.",
+        'Briefings plateforme par plateforme sur Tmall, JD, Douyin, WeChat, RED et Pinduoduo. Comment chacune fonctionne, à qui elle parle, et où placer le budget.',
     },
     de: {
       name: 'Überblick über die chinesischen Plattformen',
@@ -662,7 +662,7 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
     fr: {
       name: 'Expéditions terrain en Chine',
       description:
-        "Programmes immersifs à Shanghai, Shenzhen et au-delà. Sur le terrain avec vos équipes, au contact des plateformes, des opérateurs et des distributeurs.",
+        'Programmes immersifs à Shanghai, Shenzhen et au-delà. Sur le terrain avec vos équipes, au contact des plateformes, des opérateurs et des distributeurs.',
     },
     de: {
       name: 'China-Studienreisen',
@@ -769,10 +769,7 @@ const HOME_LABELS: Record<'en' | 'fr' | 'de' | 'es', string> = {
 };
 
 /** Resolve the locale-aware URL for a canonical English path. */
-function localizeUrl(
-  canonicalPath: string,
-  inLanguage: 'en' | 'fr' | 'de' | 'es',
-): string {
+function localizeUrl(canonicalPath: string, inLanguage: 'en' | 'fr' | 'de' | 'es'): string {
   if (inLanguage === 'en') return SITE_URL + canonicalPath;
   const map = SERVICE_PATH_BY_LOCALE[inLanguage];
   return SITE_URL + (map[canonicalPath] ?? canonicalPath);
@@ -795,8 +792,7 @@ function serviceBreadcrumb(
   ];
   const hub = hubs.find((h) => canonicalPath.startsWith(`${h}/`));
   if (!hub) return undefined;
-  const homeUrl =
-    inLanguage === 'en' ? `${SITE_URL}/` : `${SITE_URL}/${inLanguage}`;
+  const homeUrl = inLanguage === 'en' ? `${SITE_URL}/` : `${SITE_URL}/${inLanguage}`;
   return [
     { name: HOME_LABELS[inLanguage], url: homeUrl },
     {
@@ -851,19 +847,19 @@ const HUB_DESCRIPTIONS: Record<
 > = {
   '/enter-china': {
     en: 'Market entry, cross-border eCommerce setup, distribution and brand localisation for foreign brands launching in China.',
-    fr: "Implantation en Chine : conseil en entrée de marché, lancement cross-border, distribution et localisation de marque pour les marques étrangères.",
+    fr: 'Implantation en Chine : conseil en entrée de marché, lancement cross-border, distribution et localisation de marque pour les marques étrangères.',
     de: 'Markteintritt, Cross-Border-eCommerce-Aufbau, Vertrieb und Markenlokalisierung für ausländische Marken, die in China starten.',
     es: 'Entrada en el mercado chino: consultoría estratégica, lanzamiento cross-border, distribución y localización de marca para marcas extranjeras.',
   },
   '/grow-in-china': {
     en: 'eCommerce operations, social commerce, paid media, campaigns and content production for brands already selling in China.',
-    fr: "Opérations eCommerce, social commerce, achat média, campagnes et production de contenu pour les marques déjà présentes en Chine.",
+    fr: 'Opérations eCommerce, social commerce, achat média, campagnes et production de contenu pour les marques déjà présentes en Chine.',
     de: 'eCommerce-Betrieb, Social Commerce, Media-Einkauf, Kampagnen und Content-Produktion für Marken, die bereits in China verkaufen.',
     es: 'Operaciones eCommerce, social commerce, compra de medios, campañas y producción de contenido para marcas que ya venden en China.',
   },
   '/learn-china': {
     en: 'China platforms tour, marketing masterclasses and on-the-ground learning expeditions for international leadership teams.',
-    fr: "Panorama des plateformes chinoises, masterclass marketing et expéditions terrain pour les dirigeants internationaux.",
+    fr: 'Panorama des plateformes chinoises, masterclass marketing et expéditions terrain pour les dirigeants internationaux.',
     de: 'Überblick über chinesische Plattformen, Marketing-Masterclasses und Studienreisen vor Ort für internationale Führungsteams.',
     es: 'Panorama de las plataformas chinas, masterclasses de marketing y programas de inmersión sobre el terreno para equipos directivos internacionales.',
   },
@@ -881,8 +877,7 @@ export function getServiceHubSchema(
     return null;
   }
   const url = localizeUrl(canonicalPath, inLanguage);
-  const homeUrl =
-    inLanguage === 'en' ? `${SITE_URL}/` : `${SITE_URL}/${inLanguage}`;
+  const homeUrl = inLanguage === 'en' ? `${SITE_URL}/` : `${SITE_URL}/${inLanguage}`;
   const name = HUB_LABELS[inLanguage][canonicalPath];
   return [
     {

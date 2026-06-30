@@ -62,33 +62,57 @@ const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >
   <section class="section">
     <div class="container">
       <div class="insights-controls">
-        {categories.length > 1 && (
-          <div class="insights-filter" role="tablist" aria-label="Filter by category">
-            <button type="button" class="insights-filter__btn is-active" data-category="all" role="tab" aria-selected="true">
-              <span class="insights-filter__label">All</span>
-              <span class="insights-filter__count" aria-hidden="true">{sorted.length}</span>
-            </button>
-            {categories.map((c) => (
-              <button type="button" class="insights-filter__btn" data-category={c.value} role="tab" aria-selected="false">
-                <span class="insights-filter__label">{c.value}</span>
-                <span class="insights-filter__count" aria-hidden="true">{c.count}</span>
+        {
+          categories.length > 1 && (
+            <div class="insights-filter" role="tablist" aria-label="Filter by category">
+              <button
+                type="button"
+                class="insights-filter__btn is-active"
+                data-category="all"
+                role="tab"
+                aria-selected="true"
+              >
+                <span class="insights-filter__label">All</span>
+                <span class="insights-filter__count" aria-hidden="true">
+                  {sorted.length}
+                </span>
               </button>
-            ))}
-          </div>
-        )}
+              {categories.map((c) => (
+                <button
+                  type="button"
+                  class="insights-filter__btn"
+                  data-category={c.value}
+                  role="tab"
+                  aria-selected="false"
+                >
+                  <span class="insights-filter__label">{c.value}</span>
+                  <span class="insights-filter__count" aria-hidden="true">
+                    {c.count}
+                  </span>
+                </button>
+              ))}
+            </div>
+          )
+        }
 
-        {platforms.length > 1 && (
-          <div class="insights-platforms" role="group" aria-label="Filter by platform">
-            <span class="insights-platforms__label">Platform</span>
-            <button type="button" class="insights-platforms__btn is-active" data-platform="all">All</button>
-            {platforms.map((p) => (
-              <button type="button" class="insights-platforms__btn" data-platform={p.value}>
-                {p.value}
-                <span class="insights-platforms__count" aria-hidden="true">{p.count}</span>
+        {
+          platforms.length > 1 && (
+            <div class="insights-platforms" role="group" aria-label="Filter by platform">
+              <span class="insights-platforms__label">Platform</span>
+              <button type="button" class="insights-platforms__btn is-active" data-platform="all">
+                All
               </button>
-            ))}
-          </div>
-        )}
+              {platforms.map((p) => (
+                <button type="button" class="insights-platforms__btn" data-platform={p.value}>
+                  {p.value}
+                  <span class="insights-platforms__count" aria-hidden="true">
+                    {p.count}
+                  </span>
+                </button>
+              ))}
+            </div>
+          )
+        }
 
         <div class="insights-sort">
           <label for="insights-sort-select" class="insights-sort__label">Sort</label>
@@ -100,56 +124,72 @@ const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >
       </div>
 
       <div class="grid grid-3 insights-grid">
-        {sorted.map((post) => (
-          <a
-            href={`/insights/${post.id}`}
-            class="insight-card"
-            data-category={post.data.category}
-            data-platforms={(post.data.platforms ?? []).join('|')}
-            data-pubdate={post.data.pubDate ? post.data.pubDate.valueOf() : 0}
-            data-title={post.data.title}
-          >
-            <div class="insight-card__image">
-              {post.data.heroImage && (
-                <img
-                  src={post.data.heroImage}
-                  alt={post.data.heroImageAlt}
-                  loading="lazy"
-                  decoding="async"
-                  width="600"
-                  height="400"
-                />
-              )}
-            </div>
-            <div class="insight-card__body">
-              <span class="insight-card__tag">{post.data.category}</span>
-              <h3 class="insight-card__title">{post.data.title}</h3>
-              <div class="insight-card__meta">
-                <span>{readingTime(post.body)}</span>
-                {post.data.pubDate && (
-                  <>
-                    <span class="insight-card__meta-sep" aria-hidden="true">|</span>
-                    <span>{formatDate(post.data.pubDate)}</span>
-                  </>
+        {
+          sorted.map((post) => (
+            <a
+              href={`/insights/${post.id}`}
+              class="insight-card"
+              data-category={post.data.category}
+              data-platforms={(post.data.platforms ?? []).join('|')}
+              data-pubdate={post.data.pubDate ? post.data.pubDate.valueOf() : 0}
+              data-title={post.data.title}
+            >
+              <div class="insight-card__image">
+                {post.data.heroImage && (
+                  <img
+                    src={post.data.heroImage}
+                    alt={post.data.heroImageAlt}
+                    loading="lazy"
+                    decoding="async"
+                    width="600"
+                    height="400"
+                  />
                 )}
               </div>
-            </div>
-          </a>
-        ))}
+              <div class="insight-card__body">
+                <span class="insight-card__tag">{post.data.category}</span>
+                <h3 class="insight-card__title">{post.data.title}</h3>
+                <div class="insight-card__meta">
+                  <span>{readingTime(post.body)}</span>
+                  {post.data.pubDate && (
+                    <>
+                      <span class="insight-card__meta-sep" aria-hidden="true">
+                        |
+                      </span>
+                      <span>{formatDate(post.data.pubDate)}</span>
+                    </>
+                  )}
+                </div>
+              </div>
+            </a>
+          ))
+        }
       </div>
 
       <p class="insights-empty" hidden={sorted.length !== 0}>
-        {sorted.length === 0
-          ? "We're moving older articles over. Check back in a few days."
-          : 'Nothing here for this filter combination. Try another.'}
+        {
+          sorted.length === 0
+            ? "We're moving older articles over. Check back in a few days."
+            : 'Nothing here for this filter combination. Try another.'
+        }
       </p>
 
       <nav class="insights-pagination" aria-label="Insights pagination" hidden>
-        <button type="button" class="insights-pagination__btn" data-page-prev aria-label="Previous page">
+        <button
+          type="button"
+          class="insights-pagination__btn"
+          data-page-prev
+          aria-label="Previous page"
+        >
           <span aria-hidden="true">&larr;</span> Prev
         </button>
         <ol class="insights-pagination__pages" data-page-list></ol>
-        <button type="button" class="insights-pagination__btn" data-page-next aria-label="Next page">
+        <button
+          type="button"
+          class="insights-pagination__btn"
+          data-page-next
+          aria-label="Next page"
+        >
           Next <span aria-hidden="true">&rarr;</span>
         </button>
       </nav>
@@ -192,7 +232,12 @@ const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >
         else params.delete('sort');
         const qs = params.toString();
         const url = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
-        const state = { page: currentPage, category: currentCategory, platform: currentPlatform, sort: currentSort };
+        const state = {
+          page: currentPage,
+          category: currentCategory,
+          platform: currentPlatform,
+          sort: currentSort,
+        };
         if (push) history.pushState(state, '', url);
         else history.replaceState(state, '', url);
       }
@@ -217,7 +262,9 @@ const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >
 
       function getFiltered() {
         const filtered = cards.filter(
-          (c) => (currentCategory === 'all' || c.dataset.category === currentCategory) && cardMatchesPlatform(c)
+          (c) =>
+            (currentCategory === 'all' || c.dataset.category === currentCategory) &&
+            cardMatchesPlatform(c),
         );
         filtered.sort((a, b) => {
           const da = parseInt(a.dataset.pubdate || '0', 10);
@@ -361,9 +408,20 @@ const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >
       padding: var(--space-8) 0 var(--space-6);
       text-align: center;
     }
-    .insights-intro .eyebrow { display: inline-block; margin-bottom: var(--space-4); }
-    .insights-intro h1 { max-width: 18ch; margin-inline: auto; margin-bottom: var(--space-4); }
-    .insights-intro .lead { max-width: 60ch; margin-inline: auto; color: var(--bbg-text); }
+    .insights-intro .eyebrow {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+    }
+    .insights-intro h1 {
+      max-width: 18ch;
+      margin-inline: auto;
+      margin-bottom: var(--space-4);
+    }
+    .insights-intro .lead {
+      max-width: 60ch;
+      margin-inline: auto;
+      color: var(--bbg-text);
+    }
 
     .insights-controls {
       margin-bottom: var(--space-7);
@@ -481,8 +539,12 @@ const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >
       font-weight: 500;
       color: var(--bbg-ink);
       cursor: pointer;
-      background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
-      background-position: calc(100% - 14px) 50%, calc(100% - 9px) 50%;
+      background-image:
+        linear-gradient(45deg, transparent 50%, currentColor 50%),
+        linear-gradient(135deg, currentColor 50%, transparent 50%);
+      background-position:
+        calc(100% - 14px) 50%,
+        calc(100% - 9px) 50%;
       background-size: 5px 5px;
       background-repeat: no-repeat;
       transition: border-color var(--dur) var(--ease);
@@ -503,20 +565,39 @@ const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >
     }
 
     @media (max-width: 1024px) {
-      .insights-intro { padding: var(--space-7) 0 var(--space-5); }
-      .insights-controls { margin-bottom: var(--space-6); }
+      .insights-intro {
+        padding: var(--space-7) 0 var(--space-5);
+      }
+      .insights-controls {
+        margin-bottom: var(--space-6);
+      }
     }
     @media (max-width: 768px) {
-      .insights-intro { padding: var(--space-6) 0 var(--space-4); }
-      .insights-intro h1 { max-width: 24ch; }
-      .insights-filter { justify-content: flex-start; }
-      .insights-platforms { justify-content: flex-start; gap: 0.4rem; }
-      .insights-sort { justify-content: flex-start; }
-      .insights-filter__btn { padding: 0.45rem 0.85rem; }
+      .insights-intro {
+        padding: var(--space-6) 0 var(--space-4);
+      }
+      .insights-intro h1 {
+        max-width: 24ch;
+      }
+      .insights-filter {
+        justify-content: flex-start;
+      }
+      .insights-platforms {
+        justify-content: flex-start;
+        gap: 0.4rem;
+      }
+      .insights-sort {
+        justify-content: flex-start;
+      }
+      .insights-filter__btn {
+        padding: 0.45rem 0.85rem;
+      }
     }
     @media (max-width: 480px) {
       .insights-filter__count,
-      .insights-platforms__count { display: none; }
+      .insights-platforms__count {
+        display: none;
+      }
     }
   </style>
 
@@ -531,7 +612,9 @@ const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >
       padding-top: var(--space-6);
       border-top: 1px solid var(--bbg-border);
     }
-    .insights-pagination[hidden] { display: none; }
+    .insights-pagination[hidden] {
+      display: none;
+    }
     .insights-pagination__btn {
       appearance: none;
       border: 1px solid var(--bbg-border);

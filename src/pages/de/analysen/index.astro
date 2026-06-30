@@ -16,7 +16,7 @@ const sorted = allInsights.sort((a, b) => {
 });
 
 const categoryLabelsDe: Record<string, string> = {
-  'Platforms': 'Plattformen',
+  Platforms: 'Plattformen',
   'E-Commerce': 'eCommerce',
   'KOLs & Livestream': 'KOL und Livestream',
   'Brand & Localization': 'Marke und Lokalisierung',
@@ -60,62 +60,87 @@ const slugFor = (enSlug: string) => slugMap[enSlug] ?? enSlug;
       <span class="eyebrow">Analysen</span>
       <h1>China, direkt aus dem Tagesgeschäft.</h1>
       <p class="lead">
-        Das Team, das Marken auf Tmall, JD, Douyin, WeChat und RED steuert, schreibt selbst. Aus Shanghai, Hongkong und Paris. Nie aus dem Elfenbeinturm.
+        Das Team, das Marken auf Tmall, JD, Douyin, WeChat und RED steuert, schreibt selbst. Aus
+        Shanghai, Hongkong und Paris. Nie aus dem Elfenbeinturm.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      {categories.length > 1 && (
-        <div class="insights-filter" role="tablist" aria-label="Nach Kategorie filtern">
-          <button type="button" class="insights-filter__btn is-active" data-category="all" role="tab" aria-selected="true">
-            <span class="insights-filter__label">Alle</span>
-            <span class="insights-filter__count" aria-hidden="true">{sorted.length}</span>
-          </button>
-          {categories.map((c) => (
-            <button type="button" class="insights-filter__btn" data-category={c.value} role="tab" aria-selected="false">
-              <span class="insights-filter__label">{c.label}</span>
-              <span class="insights-filter__count" aria-hidden="true">{c.count}</span>
+      {
+        categories.length > 1 && (
+          <div class="insights-filter" role="tablist" aria-label="Nach Kategorie filtern">
+            <button
+              type="button"
+              class="insights-filter__btn is-active"
+              data-category="all"
+              role="tab"
+              aria-selected="true"
+            >
+              <span class="insights-filter__label">Alle</span>
+              <span class="insights-filter__count" aria-hidden="true">
+                {sorted.length}
+              </span>
             </button>
-          ))}
-        </div>
-      )}
+            {categories.map((c) => (
+              <button
+                type="button"
+                class="insights-filter__btn"
+                data-category={c.value}
+                role="tab"
+                aria-selected="false"
+              >
+                <span class="insights-filter__label">{c.label}</span>
+                <span class="insights-filter__count" aria-hidden="true">
+                  {c.count}
+                </span>
+              </button>
+            ))}
+          </div>
+        )
+      }
 
       <div class="grid grid-3 insights-grid">
-        {sorted.map((post) => (
-          <a
-            href={`/de/analysen/${slugFor(post.id)}`}
-            class="insight-card"
-            data-category={post.data.category}
-          >
-            <div class="insight-card__image">
-              {post.data.heroImage && (
-                <img
-                  src={post.data.heroImage}
-                  alt={post.data.heroImageAlt}
-                  loading="lazy"
-                  decoding="async"
-                  width="600"
-                  height="400"
-                />
-              )}
-            </div>
-            <div class="insight-card__body">
-              <span class="insight-card__tag">{categoryLabelsDe[post.data.category] ?? post.data.category}</span>
-              <h3 class="insight-card__title">{post.data.title}</h3>
-              <div class="insight-card__meta">
-                <span>{readingTime(post.body)}</span>
-                {post.data.pubDate && (
-                  <>
-                    <span class="insight-card__meta-sep" aria-hidden="true">|</span>
-                    <span>{formatDate(post.data.pubDate)}</span>
-                  </>
+        {
+          sorted.map((post) => (
+            <a
+              href={`/de/analysen/${slugFor(post.id)}`}
+              class="insight-card"
+              data-category={post.data.category}
+            >
+              <div class="insight-card__image">
+                {post.data.heroImage && (
+                  <img
+                    src={post.data.heroImage}
+                    alt={post.data.heroImageAlt}
+                    loading="lazy"
+                    decoding="async"
+                    width="600"
+                    height="400"
+                  />
                 )}
               </div>
-            </div>
-          </a>
-        ))}
+              <div class="insight-card__body">
+                <span class="insight-card__tag">
+                  {categoryLabelsDe[post.data.category] ?? post.data.category}
+                </span>
+                <h3 class="insight-card__title">{post.data.title}</h3>
+                <div class="insight-card__meta">
+                  <span>{readingTime(post.body)}</span>
+                  {post.data.pubDate && (
+                    <>
+                      <span class="insight-card__meta-sep" aria-hidden="true">
+                        |
+                      </span>
+                      <span>{formatDate(post.data.pubDate)}</span>
+                    </>
+                  )}
+                </div>
+              </div>
+            </a>
+          ))
+        }
       </div>
 
       <p class="insights-empty" hidden={sorted.length !== 0}>
@@ -142,10 +167,24 @@ const slugFor = (enSlug: string) => slugMap[enSlug] ?? enSlug;
   </script>
 
   <style>
-    .insights-intro { padding: var(--space-8) 0 var(--space-6); text-align: center; }
-    .insights-intro .eyebrow { display: inline-block; margin-bottom: var(--space-4); }
-    .insights-intro h1 { max-width: 22ch; margin-inline: auto; margin-bottom: var(--space-4); }
-    .insights-intro .lead { max-width: 66ch; margin-inline: auto; color: var(--bbg-text); }
+    .insights-intro {
+      padding: var(--space-8) 0 var(--space-6);
+      text-align: center;
+    }
+    .insights-intro .eyebrow {
+      display: inline-block;
+      margin-bottom: var(--space-4);
+    }
+    .insights-intro h1 {
+      max-width: 22ch;
+      margin-inline: auto;
+      margin-bottom: var(--space-4);
+    }
+    .insights-intro .lead {
+      max-width: 66ch;
+      margin-inline: auto;
+      color: var(--bbg-text);
+    }
 
     .insights-filter {
       display: flex;

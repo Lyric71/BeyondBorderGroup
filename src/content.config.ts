@@ -94,7 +94,7 @@ const caseBaseSchema = z.object({
         src: z.string(),
         alt: z.string().default(''),
         caption: z.string().optional(),
-      })
+      }),
     )
     .default([]),
   order: z.number().default(100),
@@ -128,4 +128,13 @@ const casesEs = defineCollection({
   schema: caseFrSchema,
 });
 
-export const collections = { insights, insightsFr, insightsDe, insightsEs, cases, casesFr, casesDe, casesEs };
+export const collections = {
+  insights,
+  insightsFr,
+  insightsDe,
+  insightsEs,
+  cases,
+  casesFr,
+  casesDe,
+  casesEs,
+};

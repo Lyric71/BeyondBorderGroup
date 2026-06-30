@@ -1,6 +1,6 @@
 # Beyond Border Group
 
-> Beyond Border Group (BBG) is a B2B marketing and eCommerce agency that helps global brands enter, grow, and win in China. Founded by Cyril Drouin (former CEO of Publicis China), the agency operates from Shanghai, Hong Kong, and Paris. Services span market entry consulting, cross-border eCommerce setup on Tmall Global and JD Worldwide, distribution, branding and localisation, social commerce on Douyin/WeChat/RED, KOL and influencer management, paid media, content production (Hub Studio), and China intelligence programmes. The agency also operates BeyondCompass, a vetted database of China distributors and trade partners.
+> Beyond Border Group (BBG) is a B2B marketing and eCommerce agency that helps global brands enter, grow, and win in China. Founded by Cyril Drouin (former CEO of Publicis China), the agency operates from Shanghai, Hong Kong, and Paris. Services span market entry consulting, cross-border eCommerce setup on Tmall Global and JD Worldwide, distribution, branding and localisation, social commerce on Douyin/WeChat/RED, KOL and influencer management, paid media, content production (Hub Studio), and China intelligence programmes. The agency also operates Compass, a vetted database of China distributors and trade partners.
 
 ## Primary Pages
 
@@ -19,7 +19,7 @@
 - [Social Commerce](https://beyondbordergroup.com/grow-in-china/social-commerce): Livestream selling, KOL partnerships, and in-app shop management on Douyin, WeChat, and RED.
 - [Campaigns](https://beyondbordergroup.com/grow-in-china/campaigns): Campaign planning and execution for China's major shopping festivals: 618, Double 11, and Chinese New Year.
 - [Influencers and KOLs](https://beyondbordergroup.com/grow-in-china/influencers-kols): KOL and KOC casting, briefing, and performance reporting from BBG's proprietary influencer database.
-- [BeyondCompass](https://beyondcompass.beyondbordergroup.com): Vetted database of China distributors, trade partners, and channel operators. Filterable by category, region, channel, and price tier.
+- [Compass](https://compass.bearingbridge.com/en): Vetted database of China distributors, trade partners, and channel operators. Filterable by category, region, channel, and price tier.
 - [Hub Studio](https://hubstudio.ai): BBG's in-China content production studio. Photo, film, livestream, packaging, OOH, and AI-generated content (AIGC). Crews in Shanghai, Shenzhen, Changsha, and Hangzhou.
 
 ## Insights

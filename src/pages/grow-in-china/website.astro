@@ -187,11 +187,13 @@ const icons: Record<string, string> = {
   description="We build and host websites and WeChat mini-programs that load, rank on Baidu, and get cited by Chinese AI engines. 20+ years in China."
 >
   <article class="web">
-
     {/* ---------- HERO ---------- */}
     <section class="web-hero">
       <div class="web-hero__bg" aria-hidden="true">
-        <img src="/Images/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact.jpg" alt="" />
+        <img
+          src="/Images/insights/how-to-host-your-website-in-china-for-maximum-marketing-impact.jpg"
+          alt=""
+        />
       </div>
       <div class="web-hero__overlay" aria-hidden="true"></div>
 
@@ -227,14 +229,14 @@ const icons: Record<string, string> = {
             <span class="eyebrow">Built for the Chinese internet, not bolted on</span>
             <h2>Most global websites break inside China.</h2>
             <p>
-              They load slowly, sometimes not at all. Google services stay blocked.
-              Baidu does not index them. And the AI engines skip right over them.
+              They load slowly, sometimes not at all. Google services stay blocked. Baidu does not
+              index them. And the AI engines skip right over them.
             </p>
             <p>
-              We build sites and WeChat mini-programs that live inside the Chinese web.
-              The tech fits the market, the hosting sits in the right place, the SEO is
-              built for Baidu, and the content gets picked up by the AI engines Chinese
-              consumers now lean on. So you can be found. And so you can sell.
+              We build sites and WeChat mini-programs that live inside the Chinese web. The tech
+              fits the market, the hosting sits in the right place, the SEO is built for Baidu, and
+              the content gets picked up by the AI engines Chinese consumers now lean on. So you can
+              be found. And so you can sell.
             </p>
           </div>
 
@@ -242,12 +244,14 @@ const icons: Record<string, string> = {
             <span class="web-outcomes__tag">First 90 days</span>
             <h3>What changes when you do this right</h3>
             <ul>
-              {outcomes.map((o) => (
-                <li>
-                  <span class="web-outcomes__check" aria-hidden="true" set:html={icons.check} />
-                  <span>{o}</span>
-                </li>
-              ))}
+              {
+                outcomes.map((o) => (
+                  <li>
+                    <span class="web-outcomes__check" aria-hidden="true" set:html={icons.check} />
+                    <span>{o}</span>
+                  </li>
+                ))
+              }
             </ul>
           </aside>
         </div>
@@ -261,44 +265,50 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Why a China website is non-negotiable in 2026</span>
           <h2>GEO: getting cited by AI, not just ranked by Baidu</h2>
           <p class="section-header__lead">
-            GEO stands for Generative Engine Optimization. Basically SEO for the AI era.
-            Chinese consumers are skipping the search bar and asking models instead.
+            GEO stands for Generative Engine Optimization. Basically SEO for the AI era. Chinese
+            consumers are skipping the search bar and asking models instead.
           </p>
         </header>
 
         <div class="web-geo">
           <div class="web-geo__copy">
             <p>
-              Doubao, Kimi, DeepSeek, Qwen and a growing list of others answer by pulling
-              from websites they have indexed and deemed credible. If you do not have a
-              China-hosted site, they have nothing to cite about your brand. Which means
-              you are not in the conversation.
+              Doubao, Kimi, DeepSeek, Qwen and a growing list of others answer by pulling from
+              websites they have indexed and deemed credible. If you do not have a China-hosted
+              site, they have nothing to cite about your brand. Which means you are not in the
+              conversation.
             </p>
             <h3 class="web-geo__h3">What we actually do for GEO</h3>
             <ul class="web-geo__list">
-              {geoBullets.map((b) => (
-                <li>
-                  <span class="web-geo__bullet" aria-hidden="true" set:html={icons.check} />
-                  <span>{b}</span>
-                </li>
-              ))}
+              {
+                geoBullets.map((b) => (
+                  <li>
+                    <span class="web-geo__bullet" aria-hidden="true" set:html={icons.check} />
+                    <span>{b}</span>
+                  </li>
+                ))
+              }
             </ul>
           </div>
 
           <div class="web-engines" aria-label="Chinese AI engines">
             <span class="web-engines__tag">The engines that now decide visibility</span>
             <div class="web-engines__grid">
-              {aiEngines.map((e) => (
-                <div class="web-engine">
-                  <span class="web-engine__cn" lang="zh-Hans">{e.cn}</span>
-                  <span class="web-engine__name">{e.name}</span>
-                  <span class="web-engine__maker">{e.maker}</span>
-                </div>
-              ))}
+              {
+                aiEngines.map((e) => (
+                  <div class="web-engine">
+                    <span class="web-engine__cn" lang="zh-Hans">
+                      {e.cn}
+                    </span>
+                    <span class="web-engine__name">{e.name}</span>
+                    <span class="web-engine__maker">{e.maker}</span>
+                  </div>
+                ))
+              }
             </div>
             <p class="web-engines__note">
-              A Chinese-hosted, Chinese-language website is the foundation asset that feeds
-              Baidu and every AI engine now shaping how Chinese consumers find products.
+              A Chinese-hosted, Chinese-language website is the foundation asset that feeds Baidu
+              and every AI engine now shaping how Chinese consumers find products.
             </p>
           </div>
         </div>
@@ -323,24 +333,28 @@ const icons: Record<string, string> = {
         </header>
 
         <div class="web-surfaces">
-          {wechatSurfaces.map((s) => (
-            <article class={`web-surface${s.highlight ? ' web-surface--highlight' : ''}`}>
-              {s.highlight && <span class="web-surface__badge">Where conversion happens</span>}
-              <div class="web-surface__head">
-                <span class="web-surface__cn" lang="zh-Hans">{s.cn}</span>
-                <span class="web-surface__tag">{s.tag}</span>
-              </div>
-              <h3 class="web-surface__title">{s.title}</h3>
-              <p class="web-surface__body">{s.body}</p>
-              <span class="web-surface__bullet">{s.bullet}</span>
-            </article>
-          ))}
+          {
+            wechatSurfaces.map((s) => (
+              <article class={`web-surface${s.highlight ? ' web-surface--highlight' : ''}`}>
+                {s.highlight && <span class="web-surface__badge">Where conversion happens</span>}
+                <div class="web-surface__head">
+                  <span class="web-surface__cn" lang="zh-Hans">
+                    {s.cn}
+                  </span>
+                  <span class="web-surface__tag">{s.tag}</span>
+                </div>
+                <h3 class="web-surface__title">{s.title}</h3>
+                <p class="web-surface__body">{s.body}</p>
+                <span class="web-surface__bullet">{s.bullet}</span>
+              </article>
+            ))
+          }
         </div>
 
         <p class="web-surfaces__note">
-          Most brands on our roster run both. The account keeps the relationship warm.
-          The mini-program is where the conversion happens. Together they cover discovery
-          through to purchase.
+          Most brands on our roster run both. The account keeps the relationship warm. The
+          mini-program is where the conversion happens. Together they cover discovery through to
+          purchase.
         </p>
       </div>
     </section>
@@ -352,33 +366,39 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Two tech paths</span>
           <h2>WordPress or Astro. We pick based on how your team works.</h2>
           <p class="section-header__lead">
-            Not a religion war. The right call depends on how often you publish, who pushes
-            updates, and whether the site needs to do transactions.
+            Not a religion war. The right call depends on how often you publish, who pushes updates,
+            and whether the site needs to do transactions.
           </p>
         </header>
 
         <div class="web-tech">
-          {techPaths.map((t) => (
-            <article class={`web-tech-card${t.highlight ? ' web-tech-card--highlight' : ''}`}>
-              <div class="web-tech-card__head">
-                <h3 class="web-tech-card__name">{t.name}</h3>
-                <span class="web-tech-card__sub">{t.sub}</span>
-              </div>
-              <p class="web-tech-card__when">{t.when}</p>
-              <ul class="web-tech-card__list">
-                {t.bullets.map((b) => (
-                  <li>
-                    <span class="web-tech-card__check" aria-hidden="true" set:html={icons.check} />
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
-              <div class="web-tech-card__footer">
-                <span class="web-tech-card__timeline-label">Timeline</span>
-                <span class="web-tech-card__timeline-value">{t.timeline}, plus ICP filing</span>
-              </div>
-            </article>
-          ))}
+          {
+            techPaths.map((t) => (
+              <article class={`web-tech-card${t.highlight ? ' web-tech-card--highlight' : ''}`}>
+                <div class="web-tech-card__head">
+                  <h3 class="web-tech-card__name">{t.name}</h3>
+                  <span class="web-tech-card__sub">{t.sub}</span>
+                </div>
+                <p class="web-tech-card__when">{t.when}</p>
+                <ul class="web-tech-card__list">
+                  {t.bullets.map((b) => (
+                    <li>
+                      <span
+                        class="web-tech-card__check"
+                        aria-hidden="true"
+                        set:html={icons.check}
+                      />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div class="web-tech-card__footer">
+                  <span class="web-tech-card__timeline-label">Timeline</span>
+                  <span class="web-tech-card__timeline-value">{t.timeline}, plus ICP filing</span>
+                </div>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -390,31 +410,33 @@ const icons: Record<string, string> = {
           <span class="eyebrow">Hosting in China</span>
           <h2>Hosting is the single most important call you'll make.</h2>
           <p class="section-header__lead">
-            And there is really only one answer: host inside China. Everything else is a
-            compromise that hurts you. Slow load times, weak Baidu rankings, broken UX.
+            And there is really only one answer: host inside China. Everything else is a compromise
+            that hurts you. Slow load times, weak Baidu rankings, broken UX.
           </p>
         </header>
 
         <div class="web-hosting">
-          {hostingOptions.map((h) => (
-            <article class={`web-host web-host--${h.status}`}>
-              <header class="web-host__head">
-                <h3>{h.where}</h3>
-                <span class="web-host__note">{h.note}</span>
-              </header>
-              <dl class="web-host__metrics">
-                <div>
-                  <dt>Load time in China</dt>
-                  <dd>{h.load}</dd>
-                </div>
-                <div>
-                  <dt>Baidu SEO impact</dt>
-                  <dd>{h.seo}</dd>
-                </div>
-              </dl>
-              <p class={`web-host__verdict web-host__verdict--${h.status}`}>{h.verdict}</p>
-            </article>
-          ))}
+          {
+            hostingOptions.map((h) => (
+              <article class={`web-host web-host--${h.status}`}>
+                <header class="web-host__head">
+                  <h3>{h.where}</h3>
+                  <span class="web-host__note">{h.note}</span>
+                </header>
+                <dl class="web-host__metrics">
+                  <div>
+                    <dt>Load time in China</dt>
+                    <dd>{h.load}</dd>
+                  </div>
+                  <div>
+                    <dt>Baidu SEO impact</dt>
+                    <dd>{h.seo}</dd>
+                  </div>
+                </dl>
+                <p class={`web-host__verdict web-host__verdict--${h.status}`}>{h.verdict}</p>
+              </article>
+            ))
+          }
         </div>
 
         <div class="web-icp">
@@ -422,19 +444,22 @@ const icons: Record<string, string> = {
             <span class="eyebrow">ICP filing, the part nobody warns you about</span>
             <h3>Bei'an in 2 to 4 weeks. Commercial license in 2 to 3 months.</h3>
             <p>
-              Mainland hosting means an ICP license and a server with Alibaba Cloud, Tencent
-              Cloud or Huawei Cloud. We take care of the full ICP filing. Bei'an
-              (informational) for content sites. Commercial license for eCommerce and
-              transactional platforms.
+              Mainland hosting means an ICP license and a server with Alibaba Cloud, Tencent Cloud
+              or Huawei Cloud. We take care of the full ICP filing. Bei'an (informational) for
+              content sites. Commercial license for eCommerce and transactional platforms.
             </p>
             <p>
-              We also handle server config, CDN, monitoring from inside China (most tools
-              check from outside the Firewall and miss the real problems), and daily backups.
-              No Chinese entity yet? There are workarounds. We will walk you through them.
+              We also handle server config, CDN, monitoring from inside China (most tools check from
+              outside the Firewall and miss the real problems), and daily backups. No Chinese entity
+              yet? There are workarounds. We will walk you through them.
             </p>
           </div>
           <div class="web-icp__visual">
-            <img src="/Images/insights/how-to-apply-for-an-icp-license-for-your-website.png" alt="ICP licensing process for websites in China" loading="lazy" />
+            <img
+              src="/Images/insights/how-to-apply-for-an-icp-license-for-your-website.png"
+              alt="ICP licensing process for websites in China"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -448,9 +473,9 @@ const icons: Record<string, string> = {
             <span class="eyebrow">Sister agency</span>
             <h2 class="web-cwf__title">ChinaWebFoundry: a dedicated website agency for China.</h2>
             <p>
-              When the website itself is the main deliverable, we run a dedicated sister
-              agency built specifically for the Chinese market. Any tech stack: WordPress,
-              Astro, static, custom.
+              When the website itself is the main deliverable, we run a dedicated sister agency
+              built specifically for the Chinese market. Any tech stack: WordPress, Astro, static,
+              custom.
             </p>
             <ul class="web-cwf__list">
               <li>Strategy, audit and migration behind the Firewall</li>
@@ -460,10 +485,15 @@ const icons: Record<string, string> = {
               <li>Baidu SEO, Chinese content, ongoing maintenance</li>
             </ul>
             <p class="web-cwf__same">
-              Same team. Same 20+ years in China. A focused front door when your priority
-              is a website that actually works inside the mainland.
+              Same team. Same 20+ years in China. A focused front door when your priority is a
+              website that actually works inside the mainland.
             </p>
-            <a href="https://www.chinawebfoundry.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            <a
+              href="https://www.chinawebfoundry.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary"
+            >
               Visit ChinaWebFoundry <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -501,13 +531,15 @@ const icons: Record<string, string> = {
         </header>
 
         <div class="web-deliver">
-          {deliverables.map((d) => (
-            <article class="web-deliver-card">
-              <span class="web-deliver-card__icon" set:html={icons[d.icon]} />
-              <h3 class="web-deliver-card__title">{d.title}</h3>
-              <p class="web-deliver-card__desc">{d.desc}</p>
-            </article>
-          ))}
+          {
+            deliverables.map((d) => (
+              <article class="web-deliver-card">
+                <span class="web-deliver-card__icon" set:html={icons[d.icon]} />
+                <h3 class="web-deliver-card__title">{d.title}</h3>
+                <p class="web-deliver-card__desc">{d.desc}</p>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -542,19 +574,30 @@ const icons: Record<string, string> = {
         </header>
 
         <div class="web-faq">
-          {faqs.map((f, i) => (
-            <details class="web-faq__item" open={i === 0}>
-              <summary class="web-faq__q">
-                <span>{f.q}</span>
-                <span class="web-faq__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </span>
-              </summary>
-              <div class="web-faq__a">
-                <p>{f.a}</p>
-              </div>
-            </details>
-          ))}
+          {
+            faqs.map((f, i) => (
+              <details class="web-faq__item" open={i === 0}>
+                <summary class="web-faq__q">
+                  <span>{f.q}</span>
+                  <span class="web-faq__icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </summary>
+                <div class="web-faq__a">
+                  <p>{f.a}</p>
+                </div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -564,10 +607,12 @@ const icons: Record<string, string> = {
       <div class="container container--narrow">
         <div class="web-cta">
           <span class="eyebrow eyebrow--on-dark">Let's talk about your China website</span>
-          <h2 class="web-cta__title">Tell us what you have, what you need, and where you want to be.</h2>
+          <h2 class="web-cta__title">
+            Tell us what you have, what you need, and where you want to be.
+          </h2>
           <p class="web-cta__lead">
-            We will come back with a recommendation that fits your timeline, your audience
-            and your budget. No generic decks, no 40-slide intro. Just a plan.
+            We will come back with a recommendation that fits your timeline, your audience and your
+            budget. No generic decks, no 40-slide intro. Just a plan.
           </p>
           <div class="web-cta__actions">
             <a href="/contact" class="btn web-cta__btn-primary">Contact us</a>
@@ -576,11 +621,12 @@ const icons: Record<string, string> = {
         </div>
       </div>
     </section>
-
   </article>
 
   <style is:global>
-    .web .container--narrow { max-width: 880px; }
+    .web .container--narrow {
+      max-width: 880px;
+    }
 
     /* ---------- HERO ---------- */
     .web-hero {
@@ -593,16 +639,32 @@ const icons: Record<string, string> = {
       overflow: hidden;
       isolation: isolate;
     }
-    .web-hero__bg { position: absolute; inset: 0; z-index: -2; }
-    .web-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .web-hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+    }
+    .web-hero__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
     .web-hero__overlay {
-      position: absolute; inset: 0; z-index: -1;
-      background: linear-gradient(110deg,
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(
+        110deg,
         rgba(8, 20, 32, 0.92) 0%,
         rgba(8, 20, 32, 0.72) 50%,
-        rgba(8, 20, 32, 0.4) 100%);
+        rgba(8, 20, 32, 0.4) 100%
+      );
     }
-    .web-hero__inner { max-width: 920px; position: relative; }
+    .web-hero__inner {
+      max-width: 920px;
+      position: relative;
+    }
     .web-hero__crumbs {
       margin-bottom: var(--space-5);
       font-size: var(--fs-small);
@@ -611,12 +673,17 @@ const icons: Record<string, string> = {
       align-items: center;
       color: rgba(255, 255, 255, 0.75);
     }
-    .web-hero__crumbs a { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
-    .web-hero__crumbs a:hover { color: var(--bbg-white); }
+    .web-hero__crumbs a {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+    .web-hero__crumbs a:hover {
+      color: var(--bbg-white);
+    }
     .web-hero__inner .eyebrow--on-dark {
       display: inline-block;
       margin-bottom: var(--space-4);
-      color: #C8102E;
+      color: #c8102e;
     }
     .web-hero__title {
       font-size: clamp(2.25rem, 3.6vw + 1rem, 4rem);
@@ -641,7 +708,11 @@ const icons: Record<string, string> = {
       max-width: 56ch;
       margin: 0 0 var(--space-6);
     }
-    .web-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+    .web-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
 
     /* ---------- INTRO + 90-DAY OUTCOMES ---------- */
     .web-intro {
@@ -662,7 +733,9 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
       margin-bottom: var(--space-4);
     }
-    .web-intro__copy p:last-child { margin-bottom: 0; }
+    .web-intro__copy p:last-child {
+      margin-bottom: 0;
+    }
 
     .web-outcomes {
       background: var(--bbg-ink);
@@ -673,13 +746,13 @@ const icons: Record<string, string> = {
       overflow: hidden;
     }
     .web-outcomes::before {
-      content: "";
+      content: '';
       position: absolute;
       top: -30%;
       right: -20%;
       width: 280px;
       height: 280px;
-      background: radial-gradient(circle, rgba(200, 16, 46,0.32) 0%, rgba(200, 16, 46,0) 65%);
+      background: radial-gradient(circle, rgba(200, 16, 46, 0.32) 0%, rgba(200, 16, 46, 0) 65%);
       pointer-events: none;
     }
     .web-outcomes__tag {
@@ -688,7 +761,7 @@ const icons: Record<string, string> = {
       font-weight: 700;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #C8102E;
+      color: #c8102e;
       margin-bottom: var(--space-3);
     }
     .web-outcomes h3 {
@@ -713,7 +786,7 @@ const icons: Record<string, string> = {
       align-items: start;
       font-size: 0.9375rem;
       line-height: 1.5;
-      color: rgba(255,255,255,0.9);
+      color: rgba(255, 255, 255, 0.9);
     }
     .web-outcomes__check {
       width: 22px;
@@ -727,9 +800,15 @@ const icons: Record<string, string> = {
       flex-shrink: 0;
       margin-top: 1px;
     }
-    .web-outcomes__check svg { width: 12px; height: 12px; }
+    .web-outcomes__check svg {
+      width: 12px;
+      height: 12px;
+    }
     @media (max-width: 1024px) {
-      .web-intro { grid-template-columns: 1fr; gap: var(--space-5); }
+      .web-intro {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+      }
     }
 
     /* ---------- GEO ---------- */
@@ -779,7 +858,10 @@ const icons: Record<string, string> = {
       flex-shrink: 0;
       margin-top: 1px;
     }
-    .web-geo__bullet svg { width: 14px; height: 14px; }
+    .web-geo__bullet svg {
+      width: 14px;
+      height: 14px;
+    }
 
     .web-engines {
       background: var(--bbg-white);
@@ -809,7 +891,10 @@ const icons: Record<string, string> = {
       display: flex;
       flex-direction: column;
       gap: 4px;
-      transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease), transform var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        background var(--dur) var(--ease),
+        transform var(--dur) var(--ease);
     }
     .web-engine:hover {
       border-color: var(--bbg-blue);
@@ -817,7 +902,12 @@ const icons: Record<string, string> = {
       transform: translateY(-2px);
     }
     .web-engine__cn {
-      font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family:
+        'PingFang SC',
+        'Microsoft YaHei',
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
       font-size: 1.5rem;
       font-weight: 600;
       color: var(--bbg-ink);
@@ -844,10 +934,14 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
     }
     @media (max-width: 1024px) {
-      .web-geo { grid-template-columns: 1fr; }
+      .web-geo {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 560px) {
-      .web-engines__grid { grid-template-columns: 1fr; }
+      .web-engines__grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- WECHAT SURFACES ---------- */
@@ -865,7 +959,7 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
       line-height: 1;
       letter-spacing: -0.025em;
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .web-wechat-stat__label {
       font-size: 0.95rem;
@@ -892,7 +986,9 @@ const icons: Record<string, string> = {
       display: flex;
       flex-direction: column;
       gap: var(--space-4);
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
     }
     .web-surface:hover {
       border-color: var(--bbg-blue);
@@ -923,7 +1019,7 @@ const icons: Record<string, string> = {
       flex-wrap: wrap;
     }
     .web-surface__cn {
-      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
       font-size: 1.75rem;
       font-weight: 600;
       color: var(--bbg-ink);
@@ -960,7 +1056,9 @@ const icons: Record<string, string> = {
       border-radius: 999px;
       letter-spacing: 0.02em;
     }
-    .web-surface--highlight .web-surface__bullet { background: var(--bbg-white); }
+    .web-surface--highlight .web-surface__bullet {
+      background: var(--bbg-white);
+    }
     .web-surfaces__note {
       max-width: 720px;
       margin: var(--space-5) 0 0;
@@ -969,7 +1067,9 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
     }
     @media (max-width: 1024px) {
-      .web-surfaces { grid-template-columns: 1fr; }
+      .web-surfaces {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- TWO TECH PATHS ---------- */
@@ -987,7 +1087,9 @@ const icons: Record<string, string> = {
       display: flex;
       flex-direction: column;
       gap: var(--space-5);
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
     }
     .web-tech-card:hover {
       border-color: var(--bbg-blue);
@@ -998,7 +1100,12 @@ const icons: Record<string, string> = {
       border-color: var(--bbg-blue);
       box-shadow: var(--shadow-md);
     }
-    .web-tech-card__head { display: flex; align-items: baseline; flex-wrap: wrap; gap: var(--space-3); }
+    .web-tech-card__head {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
     .web-tech-card__name {
       font-size: 1.75rem;
       letter-spacing: -0.015em;
@@ -1046,8 +1153,15 @@ const icons: Record<string, string> = {
       justify-content: center;
       flex-shrink: 0;
     }
-    .web-tech-card__check svg { width: 12px; height: 12px; }
-    .web-tech-card__footer { display: flex; flex-direction: column; gap: 4px; }
+    .web-tech-card__check svg {
+      width: 12px;
+      height: 12px;
+    }
+    .web-tech-card__footer {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
     .web-tech-card__timeline-label {
       font-size: var(--fs-label);
       font-weight: 600;
@@ -1061,8 +1175,12 @@ const icons: Record<string, string> = {
       font-weight: 600;
     }
     @media (max-width: 1024px) {
-      .web-tech { grid-template-columns: 1fr; }
-      .web-tech-card { padding: var(--space-6); }
+      .web-tech {
+        grid-template-columns: 1fr;
+      }
+      .web-tech-card {
+        padding: var(--space-6);
+      }
     }
 
     /* ---------- HOSTING ---------- */
@@ -1082,10 +1200,21 @@ const icons: Record<string, string> = {
       gap: var(--space-4);
       border-top: 4px solid var(--bbg-border);
     }
-    .web-host--go { border-top-color: #2BA767; }
-    .web-host--warn { border-top-color: #E0A91B; }
-    .web-host--stop { border-top-color: #C9402F; }
-    .web-host__head { display: flex; align-items: baseline; gap: var(--space-3); flex-wrap: wrap; }
+    .web-host--go {
+      border-top-color: #2ba767;
+    }
+    .web-host--warn {
+      border-top-color: #e0a91b;
+    }
+    .web-host--stop {
+      border-top-color: #c9402f;
+    }
+    .web-host__head {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+    }
     .web-host__head h3 {
       font-size: 1.25rem;
       letter-spacing: -0.01em;
@@ -1115,7 +1244,10 @@ const icons: Record<string, string> = {
       padding-bottom: var(--space-3);
       border-bottom: 1px solid var(--bbg-border);
     }
-    .web-host__metrics > div:last-child { border-bottom: none; padding-bottom: 0; }
+    .web-host__metrics > div:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
     .web-host__metrics dt {
       font-size: var(--fs-label);
       font-weight: 600;
@@ -1129,7 +1261,7 @@ const icons: Record<string, string> = {
       color: var(--bbg-ink);
       margin: 0;
       letter-spacing: -0.005em;
-      font-feature-settings: "tnum";
+      font-feature-settings: 'tnum';
     }
     .web-host__verdict {
       margin: 0;
@@ -1138,9 +1270,18 @@ const icons: Record<string, string> = {
       padding: var(--space-3);
       border-radius: var(--radius-md);
     }
-    .web-host__verdict--go { background: rgba(43,167,103,0.12); color: #1F7E4D; }
-    .web-host__verdict--warn { background: rgba(224,169,27,0.12); color: #8A6610; }
-    .web-host__verdict--stop { background: rgba(201,64,47,0.12); color: #952D20; }
+    .web-host__verdict--go {
+      background: rgba(43, 167, 103, 0.12);
+      color: #1f7e4d;
+    }
+    .web-host__verdict--warn {
+      background: rgba(224, 169, 27, 0.12);
+      color: #8a6610;
+    }
+    .web-host__verdict--stop {
+      background: rgba(201, 64, 47, 0.12);
+      color: #952d20;
+    }
 
     .web-icp {
       display: grid;
@@ -1163,20 +1304,34 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
       margin-bottom: var(--space-4);
     }
-    .web-icp__copy p:last-child { margin-bottom: 0; }
+    .web-icp__copy p:last-child {
+      margin-bottom: 0;
+    }
     .web-icp__visual {
       border-radius: var(--radius-md);
       overflow: hidden;
       box-shadow: var(--shadow-md);
       aspect-ratio: 16 / 11;
     }
-    .web-icp__visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .web-icp__visual img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     @media (max-width: 1024px) {
-      .web-hosting { grid-template-columns: repeat(2, 1fr); }
-      .web-icp { grid-template-columns: 1fr; padding: var(--space-6); }
+      .web-hosting {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .web-icp {
+        grid-template-columns: 1fr;
+        padding: var(--space-6);
+      }
     }
     @media (max-width: 640px) {
-      .web-hosting { grid-template-columns: 1fr; }
+      .web-hosting {
+        grid-template-columns: 1fr;
+      }
     }
     /* Hero had no responsive override; min-height clamped at 540px
        leaves landscape phones with a wall of black. */
@@ -1227,7 +1382,7 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
     }
     .web-cwf__list li::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0.55em;
@@ -1241,7 +1396,10 @@ const icons: Record<string, string> = {
       color: var(--bbg-text-muted);
     }
 
-    .web-cwf__visual { display: flex; justify-content: center; }
+    .web-cwf__visual {
+      display: flex;
+      justify-content: center;
+    }
     .web-cwf__browser {
       width: 100%;
       max-width: 460px;
@@ -1263,17 +1421,23 @@ const icons: Record<string, string> = {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #D4D4D4;
+      background: #d4d4d4;
     }
-    .web-cwf__dot:nth-child(1) { background: #FF5F57; }
-    .web-cwf__dot:nth-child(2) { background: #FEBC2E; }
-    .web-cwf__dot:nth-child(3) { background: #28C840; }
+    .web-cwf__dot:nth-child(1) {
+      background: #ff5f57;
+    }
+    .web-cwf__dot:nth-child(2) {
+      background: #febc2e;
+    }
+    .web-cwf__dot:nth-child(3) {
+      background: #28c840;
+    }
     .web-cwf__url {
       margin-left: 12px;
       font-size: 0.75rem;
       color: var(--bbg-text-muted);
       letter-spacing: 0.03em;
-      font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+      font-family: ui-monospace, 'SFMono-Regular', Consolas, monospace;
     }
     .web-cwf__browser-body {
       padding: var(--space-6) var(--space-5);
@@ -1315,7 +1479,10 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
     }
     @media (max-width: 1024px) {
-      .web-cwf { grid-template-columns: 1fr; padding: var(--space-6); }
+      .web-cwf {
+        grid-template-columns: 1fr;
+        padding: var(--space-6);
+      }
     }
 
     /* ---------- DELIVERABLES ---------- */
@@ -1329,7 +1496,10 @@ const icons: Record<string, string> = {
       border: 1px solid var(--bbg-border);
       border-radius: var(--radius-lg);
       padding: var(--space-6);
-      transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+      transition:
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease),
+        transform var(--dur) var(--ease);
     }
     .web-deliver-card:hover {
       border-color: var(--bbg-blue);
@@ -1347,7 +1517,10 @@ const icons: Record<string, string> = {
       color: var(--bbg-blue);
       margin-bottom: var(--space-4);
     }
-    .web-deliver-card__icon svg { width: 24px; height: 24px; }
+    .web-deliver-card__icon svg {
+      width: 24px;
+      height: 24px;
+    }
     .web-deliver-card__title {
       font-size: 1.1875rem;
       line-height: 1.25;
@@ -1360,8 +1533,16 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
       margin: 0;
     }
-    @media (max-width: 1024px) { .web-deliver { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 560px) { .web-deliver { grid-template-columns: 1fr; } }
+    @media (max-width: 1024px) {
+      .web-deliver {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 560px) {
+      .web-deliver {
+        grid-template-columns: 1fr;
+      }
+    }
 
     /* ---------- WHO WE BUILD FOR ---------- */
     .web-who {
@@ -1387,7 +1568,7 @@ const icons: Record<string, string> = {
       font-weight: 500;
     }
     .web-who li::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0.7em;
@@ -1415,7 +1596,9 @@ const icons: Record<string, string> = {
       overflow: hidden;
       transition: border-color var(--dur) var(--ease);
     }
-    .web-faq__item[open] { border-color: var(--bbg-blue); }
+    .web-faq__item[open] {
+      border-color: var(--bbg-blue);
+    }
     .web-faq__q {
       cursor: pointer;
       padding: var(--space-5);
@@ -1430,9 +1613,15 @@ const icons: Record<string, string> = {
       list-style: none;
       transition: color var(--dur) var(--ease);
     }
-    .web-faq__q::-webkit-details-marker { display: none; }
-    .web-faq__q::marker { display: none; }
-    .web-faq__item:hover .web-faq__q { color: var(--bbg-blue); }
+    .web-faq__q::-webkit-details-marker {
+      display: none;
+    }
+    .web-faq__q::marker {
+      display: none;
+    }
+    .web-faq__item:hover .web-faq__q {
+      color: var(--bbg-blue);
+    }
     .web-faq__icon {
       flex-shrink: 0;
       width: 24px;
@@ -1441,7 +1630,9 @@ const icons: Record<string, string> = {
       align-items: center;
       justify-content: center;
       color: var(--bbg-text-muted);
-      transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+      transition:
+        transform var(--dur) var(--ease),
+        color var(--dur) var(--ease);
     }
     .web-faq__item[open] .web-faq__icon {
       transform: rotate(180deg);
@@ -1453,7 +1644,9 @@ const icons: Record<string, string> = {
       line-height: 1.65;
       font-size: 1rem;
     }
-    .web-faq__a p { margin: 0; }
+    .web-faq__a p {
+      margin: 0;
+    }
 
     /* ---------- FINAL CTA ---------- */
     .web-cta {
@@ -1466,13 +1659,17 @@ const icons: Record<string, string> = {
       overflow: hidden;
     }
     .web-cta::before {
-      content: "";
+      content: '';
       position: absolute;
       top: -40%;
       right: -10%;
       width: 420px;
       height: 420px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 65%);
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.18) 0%,
+        rgba(255, 255, 255, 0) 65%
+      );
       pointer-events: none;
     }
     .web-cta .eyebrow--on-dark {
