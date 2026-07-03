@@ -93,9 +93,9 @@ Beyond Border Group (BBG) is a marketing and eCommerce agency in China
 with offices in Shanghai, Hong Kong, and Paris.
 
 ## Tech Stack
-- **Framework:** Astro 5.x (static site generation)
+- **Framework:** Astro 7.x (static site generation)
 - **Styling:** Tailwind CSS 4.x
-- **Deployment:** Vercel (static adapter)
+- **Deployment:** Vercel (`@astrojs/vercel` 11.x adapter)
 - **Language:** TypeScript (strict mode)
 - **Fonts:** System UI stack (no Google Fonts, no external CDNs)
 

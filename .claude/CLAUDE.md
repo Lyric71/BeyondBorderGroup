@@ -276,10 +276,15 @@ Rebuild of beyondbordergroup.com in Astro. The existing site runs on WordPress w
 
 ## 8. Tech stack
 
-- **Framework:** Astro 5.x (static site generation)
-- **Styling:** Tailwind CSS 4.x
-- **Deployment:** Vercel (static adapter)
-- **Language:** TypeScript (strict mode)
+- **Runtime:** Node.js >= 22.12
+- **Framework:** Astro 7.x (static site generation)
+- **Styling:** Tailwind CSS 4.x (via `@tailwindcss/vite`)
+- **Deployment:** Vercel (`@astrojs/vercel` 11.x adapter)
+- **Language:** TypeScript (strict mode); type checking via `@astrojs/check` + `astro check`
+- **Sitemap:** `@astrojs/sitemap` 3.x
+- **Email:** Resend 6.x (contact form delivery)
+- **Analytics:** Vercel Analytics (`@vercel/analytics`)
+- **Formatting:** Prettier 3.x with `prettier-plugin-astro`
 - **Fonts:** System UI stack (no Google Fonts, no external CDNs)
 
 ---

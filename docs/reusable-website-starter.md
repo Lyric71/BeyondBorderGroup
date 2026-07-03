@@ -20,7 +20,7 @@ claude --version
 claude login                       # or: export ANTHROPIC_API_KEY=sk-ant-...
 ```
 
-- **Framework:** Astro 6.x (static site generation)
+- **Framework:** Astro 7.x (static site generation)
 - **Styling:** Tailwind CSS 4.x (via `@tailwindcss/vite`)
 - **Deployment:** Vercel (`@astrojs/vercel` adapter)
 - **Language:** TypeScript, strict mode
