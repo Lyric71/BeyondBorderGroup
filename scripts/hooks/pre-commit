@@ -1,6 +1,8 @@
 #!/bin/bash
-# Auto-optimize any staged raster images under public/Images/.
-# Installed by `npm run hooks:install`. See scripts/pre-commit-optimize-images.mjs.
+# Pre-commit steps:
+#   1. Auto-optimize any staged raster images under public/Images/.
+#   2. Rebuild + snapshot the sitemap when routing-relevant files change.
+# Installed by `npm run hooks:install`. See the scripts/pre-commit-*.mjs files.
 
 set -e
 
@@ -8,3 +10,6 @@ ROOT="$(git rev-parse --show-toplevel)"
 cd "$ROOT"
 
 node scripts/pre-commit-optimize-images.mjs
+
+# Rebuild + snapshot the sitemap when a commit touches routing-relevant files.
+node scripts/pre-commit-sitemap.mjs

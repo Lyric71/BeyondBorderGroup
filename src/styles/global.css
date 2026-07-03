@@ -1282,7 +1282,9 @@ body:has(.nav.nav--open) {
   padding: var(--space-8) 0 var(--space-6);
 }
 .footer h3 {
-  color: var(--bbg-blue);
+  /* Lighter China-red tint: brand #c8102e only hits 3.56:1 on black (fails
+     WCAG AA for these 13px labels). #ef596b clears 6.3:1 in the same hue. */
+  color: #ef596b;
   font-size: var(--fs-label);
   font-weight: 600;
   text-transform: uppercase;

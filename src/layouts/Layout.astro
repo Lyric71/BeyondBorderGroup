@@ -69,7 +69,8 @@ const OG_LOCALE: Record<typeof locale, string> = {
   es: 'es_ES',
 };
 const ogLocale = OG_LOCALE[locale] ?? 'en_US';
-const ogLocaleAlt = locale === 'en' ? 'fr_FR' : 'en_US';
+// Every other locale we publish, so the social/AI preview resolves all four.
+const ogLocaleAlternates = locales.filter((l) => l !== locale).map((l) => OG_LOCALE[l]);
 const absoluteOgImage = ogImage.startsWith('http') ? ogImage : SITE_URL + ogImage;
 
 const toIsoMaybe = (d?: Date | string) => {
@@ -177,7 +178,7 @@ const graph = schemaGraph(
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content={ogLocale} />
-    <meta property="og:locale:alternate" content={ogLocaleAlt} />
+    {ogLocaleAlternates.map((l) => <meta property="og:locale:alternate" content={l} />)}
     {
       ogType === 'article' && publishedIso && (
         <meta property="article:published_time" content={publishedIso} />
@@ -210,9 +211,5 @@ const graph = schemaGraph(
       <slot />
     </main>
     <Footer />
-    <script>
-      import { inject } from '@vercel/analytics';
-      inject();
-    </script>
   </body>
 </html>

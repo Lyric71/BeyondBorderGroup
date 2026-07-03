@@ -153,7 +153,7 @@ export function organizationSchema(): SchemaObject {
       availableLanguage: ['English', 'French'],
     },
     sameAs: [
-      'https://www.linkedin.com/company/beyondbordergroup/',
+      'https://www.linkedin.com/company/bearingbridgegroup/',
       'https://cyrildrouin.substack.com',
     ],
     subOrganization: [

@@ -589,6 +589,17 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
+  // Fold all page CSS into <style> tags in the <head> instead of emitting
+  // <link rel="stylesheet"> requests. Removes the render-blocking round-trip
+  // for CSS: the browser gets HTML + styles in a single response and can paint
+  // immediately. This is the biggest LCP lever for visitors on high-latency
+  // connections (notably from inside China). Trade-off accepted: the shared
+  // design-system CSS is no longer cached across navigations and rides along in
+  // every page's HTML (~28 KB gzip). First-paint speed is the priority here.
+  build: {
+    inlineStylesheets: 'always',
+  },
+
   adapter: vercel(),
 
   integrations: [
