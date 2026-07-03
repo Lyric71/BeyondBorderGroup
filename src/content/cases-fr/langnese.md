@@ -28,7 +28,7 @@ Langnese est la première marque de miel en Allemagne, forte d'un siècle de mé
 
 ## Le défi
 
-Les ventes reculaient mois après mois, alors que la distribution se maintenait. Le diagnostic tenait en une équation simple : aucun consommateur chinois n'avait de raison explicite de payer près du double pour un pot Langnese quand un miel local trônait juste à côté en rayon. Le marché s'était transformé, porté par de nouveaux formats, de nouveaux canaux et de nouvelles occasions de consommation, et le playbook chinois de la marque n'avait pas suivi.
+Les ventes reculaient mois après mois, alors que la distribution se maintenait. Le diagnostic tenait en une équation simple : aucun consommateur chinois n'avait de raison explicite de payer près du double pour un pot Langnese quand un miel local trônait juste à côté en rayon. Le marché s'était transformé, porté par de nouveaux formats, de nouveaux canaux et de nouvelles occasions de consommation, et la méthode chinoise de la marque n'avait pas suivi.
 
 ## Notre approche
 

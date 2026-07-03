@@ -374,8 +374,8 @@ Keep subtle. 200ms ease for hover states. Section entrance: fade + 12px rise, 40
 
 ## 16. Testing
 
-- Run `npm run build` before committing to catch build errors.
-- Run `npx astro check` for TypeScript validation.
+- Do NOT run `npm run build` automatically. Build only when the user explicitly asks (see section 19).
+- `npx astro check` for TypeScript validation is fine on request, but do not trigger builds on your own.
 - Verify responsive at 375px, 768px, 1280px.
 - Test with Chinese characters to confirm the system font stack falls through to PingFang SC / Microsoft YaHei.
 
@@ -385,7 +385,7 @@ Keep subtle. 200ms ease for hover states. Section entrance: fade + 12px rise, 40
 
 - Commit messages: conventional commits (`feat:`, `fix:`, `chore:`, `docs:`, `style:`).
 - Branch naming: `feature/description`, `fix/description`.
-- Always run build before pushing.
+- Do not build automatically before pushing. Build only if the user asks (see section 19).
 
 ---
 
@@ -419,3 +419,17 @@ Every raster image (`.jpg`, `.jpeg`, `.png`, `.webp`) added under `public/Images
 **Why:** Half the site weight was photos. From inside China the difference between a 9 MB PNG and a 400 KB PNG is the difference between a page that loads and a page that doesn't. The optimizer keeps quality high enough that the saving is invisible to the eye but cuts payload by 60-90% on most files. Enforcing it via a git hook means we cannot accidentally ship an unoptimized asset.
 
 **How to apply (for future Claude work):** Whenever the user asks for new imagery, generated images, or imports a screenshot/photo, run the batch optimizer on the file before reporting the task as done. Treat unoptimized images the same way you treat em dashes: never ship them.
+
+---
+
+## 19. No automatic builds (MANDATORY, permanent)
+
+Never run `npm run build`, `astro build`, or any build command on your own initiative. Build ONLY when the user explicitly asks for it.
+
+**Why:** User directive. Builds are slow and the user wants to control when they happen, not have them triggered as a side effect of edits, commits, or task completion.
+
+**How to apply:**
+- Finish edits and report them without triggering a build.
+- Do not build to "verify" a change, before committing, or before pushing.
+- Wait for an explicit request ("build", "run the build", "npm run build") before running any build.
+- This rule overrides the build guidance previously implied in sections 16 and 17.

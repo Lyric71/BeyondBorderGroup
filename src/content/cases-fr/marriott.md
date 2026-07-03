@@ -31,7 +31,7 @@ Le Super Brand Day de Tmall reste le grand rendez-vous d'Alibaba : un partenaire
 
 La campagne s'est articulée autour d'une proposition phare : une carte noire exclusive, qui ouvre l'accès à des privilèges dans les hôtels Marriott du monde entier, dont une édition limitée donnant droit à des nuits et à des repas offerts dans plusieurs adresses de luxe.
 
-Sur ces bases, un plan full-funnel a été déployé dans l'écosystème Alibaba et au-delà :
+Sur ces bases, un plan couvrant tout le tunnel de conversion a été déployé dans l'écosystème Alibaba et au-delà :
 
 - Endossement par une célébrité pour ancrer la notoriété et démultiplier la portée
 - Partenariats avec des KOL et influenceurs sociaux pour convertir l'offre en recommandations crédibles
@@ -44,4 +44,4 @@ Chaque livrable a été pensé pour le contexte Tmall, de la hiérarchie créati
 
 ## Résultats
 
-La campagne signe un GMV à huit chiffres en RMB sur Tmall le jour du Super Brand Day, et une vague d'adhésions Bonvoy à six chiffres en vingt-quatre heures. La carte noire part en sell-out avant la fin de la journée. Le suivi de marque post-opération confirme un gain mesurable sur la considération et la disposition à payer chez les voyageurs chinois aisés. Le dispositif devient le format de référence pour les prochains rendez-vous Marriott chez Alibaba.
+La campagne signe un GMV à huit chiffres en RMB sur Tmall le jour du Super Brand Day, et une vague d'adhésions Bonvoy à six chiffres en vingt-quatre heures. La carte noire est épuisée avant la fin de la journée. Le suivi de marque post-opération confirme un gain mesurable sur la considération et la disposition à payer chez les voyageurs chinois aisés. Le dispositif devient le format de référence pour les prochains rendez-vous Marriott chez Alibaba.

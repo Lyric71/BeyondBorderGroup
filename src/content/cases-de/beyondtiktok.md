@@ -28,7 +28,7 @@ Das neue Angebot brauchte ein eigenes Zuhause im Web. Der Auftrag war klar: eine
 
 ## Unser Vorgehen
 
-Wir haben die Seite wie ein Produkt zur Lead-Generierung gebaut, nicht wie eine Imagebroschüre. Die Informationsarchitektur folgt den Fragen, die Interessenten tatsächlich stellen, wenn sie einen TikTok-Partner prüfen: klare Service-Aufschlüsselung, regionale Abdeckung, Belege schnell griffbereit. Die visuelle Sprache trägt das BeyondTikTok-System über jede Bildschirmgrösse.
+Wir haben die Seite wie ein Produkt zur Lead-Generierung gebaut, nicht wie eine Imagebroschüre. Die Informationsarchitektur folgt den Fragen, die Interessenten wirklich stellen, wenn sie einen TikTok-Partner prüfen: klare Aufschlüsselung der Leistungen, regionale Abdeckung, Belege schnell griffbereit. Die visuelle Sprache trägt das BeyondTikTok-System über jede Bildschirmgröße.
 
 Auf der Performance-Seite stand das SEO-Fundament vom ersten Tag an: Metadaten, semantische Auszeichnung, Ladezeit und eine Keyword-Karte, abgestimmt auf die Such-Intentionen rund um die Leistungen. Darüber haben wir Google-Ads-Kampagnen auf hochintentionale Anfragen gelegt. Paid und Organic verstärken sich gegenseitig, statt sich Konkurrenz zu machen.
 

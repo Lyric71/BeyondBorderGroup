@@ -9,7 +9,7 @@ tags: ["stratégie marché Chine", "localisation", "marketing par ville", "compo
 heroImage: "/Images/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans.png"
 heroImageAlt: "Cartographie d'une stratégie de localisation par bassin urbain"
 keyTakeaways:
-  - "Le playbook national ne fonctionne plus. Croissance qui ralentit, consommateurs plus prudents, marques chinoises plus fortes : le SKU phare plus la célébrité unique n'imprime plus."
+  - "La méthode nationale ne fonctionne plus. Croissance qui ralentit, consommateurs plus prudents, marques chinoises plus fortes : le SKU phare plus la célébrité unique n'imprime plus."
   - "La fierté domestique a basculé la beauté, les EV et le sportswear. Le logo étranger seul ne tire plus le premium."
   - "La bonne question n'est plus « Comment gagner la Chine ? » mais « Où méritons-nous de compter, et pourquoi ? »"
   - "Trois régions, trois moments de catégorie. Vraiment financés. Le reste du pays touche la distribution, pas le budget."

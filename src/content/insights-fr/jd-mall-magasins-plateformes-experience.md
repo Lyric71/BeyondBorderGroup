@@ -88,7 +88,7 @@ Quelques mouvements concrets :
 
 Chez TheChinaPath, nous accompagnons les marques internationales pour traduire l'écosystème JD en décisions concrètes : la place de JD Mall dans le portefeuille chinois, les villes et les formats à prioriser, la structuration de pilotes plutôt que de déploiements uniformes.
 
-Nous concevons avec les marques des expériences en magasin, des accroches communautaires locales et des playbooks d'équipe qui tiennent sur le terrain. Du flux de démo aux formats d'atelier, jusqu'aux angles Xiaohongshu qui sonnent natif pour les consommateurs chinois, jamais importés.
+Nous concevons avec les marques des expériences en magasin, des accroches communautaires locales et des modes d'emploi d'équipe qui tiennent sur le terrain. Du flux de démo aux formats d'atelier, jusqu'aux angles Xiaohongshu qui sonnent natif pour les consommateurs chinois, jamais importés.
 
 Parce que le volume de contenu pèse désormais lourd, en particulier lorsque chaque salarié devient créateur, nous travaillons aussi avec des partenaires nativement IA comme HubStudio pour produire visuels et vidéos à grande échelle, dans la charte et à la bonne cadence.
 

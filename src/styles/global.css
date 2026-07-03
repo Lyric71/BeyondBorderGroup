@@ -8052,3 +8052,235 @@ body:has(.nav.nav--open) {
     font-size: 1rem;
   }
 }
+
+/* =========================================================
+   Tools / Calculators — shared design system
+   Used by /tools (hub) and /tools/* (individual calculators).
+   ========================================================= */
+
+/* ---- Branded hero (image-free, China-safe) ---- */
+.tool-hero {
+  position: relative;
+  overflow: hidden;
+  background: #101012;
+  color: var(--bbg-white);
+  padding: var(--space-7) 0 var(--space-8);
+}
+.tool-hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 60vw;
+  height: 60vw;
+  max-width: 760px;
+  max-height: 760px;
+  background: radial-gradient(circle, rgba(200, 16, 46, 0.55) 0%, rgba(200, 16, 46, 0) 65%);
+  pointer-events: none;
+}
+.tool-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at 70% 20%, black, transparent 75%);
+  pointer-events: none;
+}
+.tool-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+}
+.tool-hero__crumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-small);
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: var(--space-5);
+}
+.tool-hero__crumbs a {
+  color: rgba(255, 255, 255, 0.75);
+}
+.tool-hero__crumbs a:hover {
+  color: var(--bbg-white);
+}
+.tool-hero__crumbs span[aria-hidden] {
+  opacity: 0.5;
+}
+.tool-hero .eyebrow {
+  color: #ff5a72;
+}
+.tool-hero__title {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--space-4);
+  color: var(--bbg-white);
+}
+.tool-hero__title em {
+  font-style: normal;
+  color: #ff5a72;
+}
+.tool-hero__lead {
+  font-size: var(--fs-lead);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 60ch;
+  margin: 0;
+}
+.tool-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+.tool-hero__meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.tool-hero__meta-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--bbg-white);
+  line-height: 1.1;
+}
+.tool-hero__meta-label {
+  font-size: var(--fs-small);
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 22ch;
+}
+
+/* ---- Calculator hub cards ---- */
+.tool-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-5);
+}
+.tool-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--bbg-white);
+  border: 1px solid var(--bbg-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform var(--dur) var(--ease),
+    border-color var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease);
+}
+a.tool-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--bbg-blue);
+  box-shadow: var(--shadow-md);
+}
+.tool-card__icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--bbg-blue-light);
+  color: var(--bbg-blue);
+  margin-bottom: var(--space-4);
+}
+.tool-card__icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.tool-card__title {
+  font-size: var(--fs-h4);
+  font-weight: 700;
+  color: var(--bbg-ink);
+  margin: 0 0 var(--space-2);
+}
+.tool-card__desc {
+  font-size: var(--fs-small);
+  color: var(--bbg-text);
+  line-height: 1.6;
+  margin: 0 0 var(--space-5);
+}
+.tool-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 var(--space-5);
+}
+.tool-card__tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--bbg-text-muted);
+  background: var(--bbg-surface);
+  border: 1px solid var(--bbg-border);
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+}
+.tool-card__foot {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: var(--bbg-blue);
+  font-size: var(--fs-small);
+}
+.tool-card__foot::after {
+  content: '→';
+  transition: transform var(--dur) var(--ease);
+}
+a.tool-card:hover .tool-card__foot::after {
+  transform: translateX(4px);
+}
+.tool-card--soon {
+  opacity: 0.75;
+}
+.tool-card--soon .tool-card__icon {
+  background: var(--bbg-surface);
+  color: var(--bbg-text-muted);
+}
+.tool-card__pill {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--bbg-text-muted);
+  background: var(--bbg-surface);
+  border: 1px solid var(--bbg-border);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+/* Image-backed hero variant (used on the /tools hub). The generated art
+   already carries the red glow, faint grid and skyline, so we suppress the
+   CSS glow/grid and lay a left-to-right dark gradient for text contrast. */
+.tool-hero--image {
+  background-color: #101012;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(16, 16, 18, 0.94) 0%,
+      rgba(16, 16, 18, 0.82) 38%,
+      rgba(16, 16, 18, 0.4) 72%,
+      rgba(16, 16, 18, 0.25) 100%
+    ),
+    var(--tool-hero-img, none);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+.tool-hero--image::before,
+.tool-hero--image::after {
+  display: none;
+}

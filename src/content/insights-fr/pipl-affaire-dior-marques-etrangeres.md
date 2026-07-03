@@ -11,8 +11,8 @@ heroImageAlt: "Visuel de couverture sur la conformité PIPL"
 keyTakeaways:
   - "PIPL n'est plus un risque sur le papier. La sanction CAC contre Dior signale le début des amendes réelles sur le transfert transfrontalier de données."
   - "Les parcours de consentement valables sous des cadres type RGPD ne couvrent pas la règle PIPL de consentement séparé pour les données sensibles."
-  - "La plupart des marques étrangères tournent sur des stacks marketing (Salesforce, HubSpot, Adobe) hébergés à l'étranger, traversés par des données de consommateurs chinois. C'est là que se loge l'exposition."
-  - "Stack China-first (instance régionale, résidence locale, consentement séparé) : c'est désormais le minimum pour toute marque qui opère un flagship Tmall ou WeChat."
+  - "La plupart des marques étrangères tournent sur des piles marketing (Salesforce, HubSpot, Adobe) hébergées à l'étranger, traversées par des données de consommateurs chinois. C'est là que se loge l'exposition."
+  - "Pile China-first (instance régionale, résidence locale, consentement séparé) : c'est désormais le minimum pour toute marque qui opère un flagship Tmall ou WeChat."
 ---
 
 ## PIPL : l'affaire Dior met les marques étrangères en alerte
@@ -49,13 +49,13 @@ Trois questions deviennent incontournables pour toute marque internationale acti
 
 ### 1. Quelles données doivent vraiment quitter la Chine ?
 
-Beaucoup de groupes envoient encore par défaut leurs données clients chinoises vers les CRM, CDP, outils d'analyse et de personnalisation du siège. Sous le PIPL, ce réflexe « tout remonter » devient risqué. La cartographie s'impose : quelles données personnelles doivent franchir la frontière, et quelles informations peuvent rester en Chine, avec seulement des insights agrégés ou anonymisés partagés à l'échelle mondiale.
+Beaucoup de groupes envoient encore par défaut leurs données clients chinoises vers les CRM, CDP, outils d'analyse et de personnalisation du siège. Sous le PIPL, ce réflexe « tout remonter » devient risqué. La cartographie s'impose : quelles données personnelles doivent franchir la frontière, et quelles informations peuvent rester en Chine, avec seulement des analyses agrégées ou anonymisées partagées à l'échelle mondiale.
 
 ### 2. Comment expliquer et prouver le consentement ?
 
-Le PIPL exige un consentement explicite, éclairé et distinct pour les transferts transfrontaliers et certains traitements à des fins de profilage. Une mention noyée dans un footer global ne suffit pas. Les parcours de consentement doivent rester cohérents entre mini-programmes, applications de marque, sites web et formulaires physiques, et s'adosser à des logs vraiment consultables en cas d'audit.
+Le PIPL exige un consentement explicite, éclairé et distinct pour les transferts transfrontaliers et certains traitements à des fins de profilage. Une mention noyée dans un pied de page global ne suffit pas. Les parcours de consentement doivent rester cohérents entre mini-programmes, applications de marque, sites web et formulaires physiques, et s'adosser à des journaux vraiment consultables en cas d'audit.
 
-### 3. La stack tient-elle dans une logique « China-first » ?
+### 3. La pile tient-elle dans une logique « China-first » ?
 
 Quand les plateformes marketing cœur sont hébergées à l'étranger, les campagnes appuyées sur des données utilisateurs identifiées tombent en général sous le coup des règles de transfert. D'où, chez nombre de marques, l'étude d'instances chinoises pour leurs outils principaux, voire le recours à des solutions locales, pour mener des parcours segmentés et mesurer la performance tout en gardant la donnée client dans un cadre conforme.
 

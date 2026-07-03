@@ -1,6 +1,6 @@
 ---
 brand: "Age 20's"
-title: "Little Milk Brick Cushion: Launch-Kampagne auf Social Media und eCommerce"
+title: "Little Milk Brick Cushion: Markteinführung auf Social Media und eCommerce"
 summary: "Stufenweise Markteinführung der neuen Cushion Foundation von Age 20's auf Xiaohongshu und Douyin. Impressions-Ziele um bis zu 287 % übertroffen, die Verpackung wurde zum Spitznamen."
 metric: "Douyin-Impressions +287 % gegenüber Ziel. 750.000 Xiaohongshu-Reichweite bei 300.000 Ziel."
 category: "Social & Content"
@@ -24,7 +24,7 @@ images:
 
 ## Die Marke
 
-Age 20's ist eine koreanische Beautymarke, vor allem bekannt für ihre Cushion Foundations. Mit diesem Launch wollte die Marke vom funktionalen Cushion-Anbieter zum Premium-Lifestyle-Kauf für junge chinesische Berufstätige werden. Getragen von einer neuen Foundation-Linie in einer Verpackung, die an ein Stück Dessert erinnert.
+Age 20's ist eine koreanische Beautymarke, vor allem bekannt für ihre Cushion Foundations. Mit dieser Markteinführung wollte die Marke den Sprung schaffen: vom funktionalen Cushion-Anbieter zur Premium-Wahl für junge chinesische Berufstätige. Getragen von einer neuen Foundation-Linie in einer Verpackung, die an ein Stück Dessert erinnert.
 
 ## Die Aufgabe
 
@@ -32,7 +32,7 @@ Die chinesische Cushion-Kategorie ist eng besetzt. Lokale und internationale Mar
 
 ## Unser Vorgehen
 
-Die Kampagne wurde rund um die Identität „Little Milk Brick" gebaut. Die Verpackung diente als visueller Anker, den die Käufer erkennen, benennen und weitergeben konnten. Von dort aus haben wir eine stufenweise Kampagne auf den beiden Plattformen gefahren, die in dieser Kategorie zählen.
+Die Kampagne wurde rund um die Identität „Little Milk Brick“ aufgebaut. Die Verpackung diente als visueller Anker, den die Käufer erkennen, benennen und weitergeben konnten. Von dort aus haben wir eine stufenweise Kampagne auf den beiden Plattformen gefahren, die in dieser Kategorie zählen.
 
 - Aufmerksamkeitsphase, um die Little-Milk-Brick-Identität zu setzen
 - Produkt-Storys aus dem Büroalltag, abgestimmt auf die professionelle Anwendungssituation
@@ -43,4 +43,4 @@ Die Anpassung an die Plattform war bewusst: Xiaohongshu lebte von Anwendungs-Tut
 
 ## Ergebnisse
 
-Die Kampagne übertraf alle Ziele. Xiaohongshu kam auf 750.000 Impressions bei 300.000 als Ziel, also 150 % über Plan. Douyin lag bei 3,87 Millionen Impressions gegen 1 Million Ziel, 287 % über Plan. Der ROI landete bei 3,3 % und damit über dem Kategorie-Benchmark. Der Spitzname „Little Milk Brick" zog organisch unter den Käufern Kreise. Das deutlichste Zeichen, dass die Identität gesessen hat.
+Die Kampagne übertraf alle Ziele. Xiaohongshu kam auf 750.000 Impressions bei 300.000 als Ziel, also 150 % über Plan. Douyin lag bei 3,87 Millionen Impressions gegen 1 Million Ziel, 287 % über Plan. Der ROI landete bei 3,3 % und damit über dem Kategorie-Benchmark. Der Spitzname „Little Milk Brick“ zog organisch unter den Käufern Kreise. Das deutlichste Zeichen, dass die Identität gesessen hat.

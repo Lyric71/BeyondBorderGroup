@@ -9,7 +9,7 @@ tags: ["e-commerce", "marketing digital Chine", "commerce instantané", "IA gén
 keyTakeaways:
   - "Le commerce instantané grignote l'e-commerce classique. Meituan dépasse déjà les 2 milliards de commandes par an, et soin, compléments et produits du quotidien migrent en premier vers la livraison sous 30 minutes."
   - "Les tarifs des KOL et KOC grimpent de 30 à 50 % en 2026. Les voix humaines authentiques deviennent l'antidote au déluge de contenus IA sur Xiaohongshu, Weibo et Douyin."
-  - "Les campagnes pilotes tournent désormais avec plus de 50 variantes créatives IA par budget. Le prompt engineering remplace la taille du budget comme variable clé."
+  - "Les campagnes pilotes tournent désormais avec plus de 50 variantes créatives IA par budget. L'ingénierie de prompt remplace la taille du budget comme variable clé."
   - "Les marges nettes des marchands Tmall et JD oscillent entre 3 et 8 %. Le coût média y bute sur un plafond structurel, pas sur une retenue des plateformes."
   - "Xiaohongshu installe la découverte. Tmall conclut la transaction. Le passage de relais entre les deux remplace le tout-Tmall."
   - "Les festivals d'achat perdent leur tranchant stratégique, sauf comme fenêtres de lancement. À traiter en tests de charge, pas en moteur de croissance."
@@ -91,7 +91,7 @@ Cette connexion va se renforcer au fil de l'année. Les deux plateformes y voien
 
 > Les marques qui maîtriseront ce relais surperformeront massivement celles qui traitent le social et le commerce comme des silos séparés.
 
-Le playbook : du contenu authentique sur Xiaohongshu construit le désir, des liens fluides permettent l'achat en un clic sur Tmall, le contenu post-achat alimente la boucle de découverte.
+La méthode : du contenu authentique sur Xiaohongshu construit le désir, des liens fluides permettent l'achat en un clic sur Tmall, le contenu post-achat alimente la boucle de découverte.
 
 ## Les festivals shopping perdent leur magie (sauf pour les lancements)
 
@@ -103,8 +103,8 @@ Ces festivals conservent une vraie valeur sur un point : lancer une nouvelle mar
 
 ---
 
-**Voici la vérité qui dérange : la plupart des marques occidentales fonctionnent encore avec un playbook de 2023 dans un marché qui vit déjà en 2026. Il ne s'agit pas de tendances spéculatives, mais de schémas qui se déploient déjà dans les métropoles de premier rang.**
+**Voici la vérité qui dérange : la plupart des marques occidentales fonctionnent encore avec une méthode de 2023 dans un marché qui vit déjà en 2026. Il ne s'agit pas de tendances spéculatives, mais de schémas qui se déploient déjà dans les métropoles de premier rang.**
 
-Les marques qui gagnent en Chine ne sont pas celles qui ont les plus gros budgets ou les noms les plus connus. Ce sont celles qui acceptent d'avancer à la vitesse chinoise, qui adoptent des technologies que leur service juridique examine encore, et qui comprennent que les meilleures pratiques d'hier sont les commodités d'aujourd'hui.
+Les marques qui gagnent en Chine ne sont pas celles qui ont les plus gros budgets ou les noms les plus connus. Ce sont celles qui acceptent d'avancer à la vitesse chinoise, qui adoptent des technologies que leur service juridique examine encore, et qui comprennent que les meilleures pratiques d'hier sont devenues la norme d'aujourd'hui.
 
 Une stratégie chinoise qui ressemble à celle d'il y a deux ans ne tient plus la position. Elle recule.

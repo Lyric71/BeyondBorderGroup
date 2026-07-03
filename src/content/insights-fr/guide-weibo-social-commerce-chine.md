@@ -123,7 +123,7 @@ La Lucky Roulette est une promotion ludique : l'utilisateur fait tourner une rou
 **Mécanique :**
 
 - Participation gratuite à un tirage en faisant tourner la roue.
-- Les gagnants sont redirigés vers la landing page de la marque pour la suite.
+- Les gagnants sont redirigés vers la page de destination de la marque pour la suite.
 
 **Bénéfices clés :**
 
@@ -230,4 +230,4 @@ Les dépenses publicitaires sur Weibo varient selon le type de campagne, les opt
 
 ## En conclusion
 
-Weibo est une plateforme vivante qui ouvre un vrai terrain de jeu pour les marques qui veulent toucher la base massive du consommateur chinois connecté. Lire ses fonctions, mobiliser ses outils, s'aligner sur les tendances locales : voilà la combinaison qui produit des résultats solides. Que la marque débute sur le marché chinois ou cherche à affiner sa stratégie, Weibo reste une pièce maîtresse du playbook.
+Weibo est une plateforme vivante qui ouvre un vrai terrain de jeu pour les marques qui veulent toucher la base massive du consommateur chinois connecté. Lire ses fonctions, mobiliser ses outils, s'aligner sur les tendances locales : voilà la combinaison qui produit des résultats solides. Que la marque débute sur le marché chinois ou cherche à affiner sa stratégie, Weibo reste une pièce maîtresse du dispositif.

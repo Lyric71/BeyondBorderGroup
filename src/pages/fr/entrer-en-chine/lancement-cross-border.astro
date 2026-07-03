@@ -86,7 +86,7 @@ const models = [
     when: "Pertinent lorsque vous cherchez un accès rapide au marché sans monter votre propre opération, et qu'il vous faut un interlocuteur de votre côté de la table au moment des discussions avec les distributeurs.",
     bullets: [
       'Cartographie des distributeurs qualifiés sur votre catégorie, en ligne et hors ligne',
-      "Sélection d'une short-list de 15 à 30 candidats au parcours vérifié",
+      "Sélection d'une liste restreinte de 15 à 30 candidats au parcours vérifié",
       'Présentation en mandarin, conduite des rendez-vous, négociation des conditions',
       'Revue contractuelle et logistique de la première commande',
       "Suivi terrain après signature, pour préserver l'engagement du partenaire",
@@ -250,7 +250,7 @@ const faqs = [
   {
     cat: 'Coûts',
     q: "Quelle est la facture réelle d'un TP ?",
-    a: 'Deux strates de coût. Un forfait mensuel par boutique, en général compris entre 30 000 et 80 000 RMB selon le périmètre. Puis une commission sur les ventes nettes, située entre 5 et 12 %. Le setup, la production de contenus et le média se facturent séparément.',
+    a: 'Deux strates de coût. Un forfait mensuel par boutique, en général compris entre 30 000 et 80 000 RMB selon le périmètre. Puis une commission sur les ventes nettes, située entre 5 et 12 %. La mise en place, la production de contenus et le média se facturent séparément.',
   },
   {
     cat: 'Opérations',
@@ -339,11 +339,11 @@ const faqCategories = [
   'Juridique',
 ];
 
-const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+const allInsights = await getCollection('insightsFr', ({ data }) => !data.draft);
 const highlightedSlugs = [
-  'foreign-brands-in-china-why-most-market-tests-fail',
-  'science-emotion-chinas-new-brand-playbook',
-  'douyin-live-commerce-2025-store-led-livestream-strategy',
+  'marques-etrangeres-chine-tests-marche-echouent',
+  'science-emotion-grammaire-marques-chine',
+  'douyin-live-commerce-studios-marque',
 ];
 const pageInsights = highlightedSlugs
   .map((slug) => allInsights.find((i) => i.id === slug))

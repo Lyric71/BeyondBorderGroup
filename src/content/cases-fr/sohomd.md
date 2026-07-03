@@ -33,10 +33,10 @@ SohoMD voulait gonfler le flux de leads patients et offrir une expérience de ma
 
 ## Notre approche
 
-Une revitalisation complète a été menée : nouveaux assets visuels, site redessiné, exploitation continue, plan publicitaire offensif, SEO structuré. La direction de design a privilégié la simplicité, une mise en page contemporaine et une palette apaisante, fidèle à la mission bien-être de la plateforme, pour effacer les frictions du parcours d'admission.
+Une revitalisation complète a été menée : nouveaux éléments visuels, site redessiné, exploitation continue, plan publicitaire offensif, SEO structuré. La direction de design a privilégié la simplicité, une mise en page contemporaine et une palette apaisante, fidèle à la mission bien-être de la plateforme, pour effacer les frictions du parcours d'admission.
 
-Côté performance, des campagnes Google Ads ont été ciblées sur les requêtes à forte intention autour de la dépression, de l'anxiété et de la prise en charge du TDAH, en parallèle d'un chantier SEO portant sur un noyau de 150 mots-clés. Les deux canaux ont été pilotés ensemble, pour que le paid ne vienne pas cannibaliser la croissance organique.
+Côté performance, des campagnes Google Ads ont été ciblées sur les requêtes à forte intention autour de la dépression, de l'anxiété et de la prise en charge du TDAH, en parallèle d'un chantier SEO portant sur un noyau de 150 mots-clés. Les deux canaux ont été pilotés ensemble, pour que le payant ne vienne pas cannibaliser la croissance organique.
 
 ## Résultats
 
-Au lendemain du lancement, SohoMD a constaté une amélioration de ses taux de conversion et un meilleur ROI sur la marque, le site et le média. Le programme SEO visait un doublement du trafic Google organique en six mois, soit un canal d'acquisition cumulatif venant appuyer le paid dans la durée.
+Au lendemain du lancement, SohoMD a constaté une amélioration de ses taux de conversion et un meilleur ROI sur la marque, le site et le média. Le programme SEO visait un doublement du trafic Google organique en six mois, soit un canal d'acquisition cumulatif venant appuyer le payant dans la durée.

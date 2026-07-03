@@ -1,6 +1,6 @@
 ---
 title: "La Chine n'est plus un marché unique : les paris locaux battent les plans nationaux"
-description: "Croissance ralentie, consommateurs plus prudents, concurrence locale plus rude. Le vieux playbook national ne tient plus. Les marques qui gagnent ne cherchent plus à couvrir la Chine. Elles choisissent où mériter de compter."
+description: "Croissance ralentie, consommateurs plus prudents, concurrence locale plus rude. La vieille méthode nationale ne tient plus. Les marques qui gagnent ne cherchent plus à couvrir la Chine. Elles choisissent où mériter de compter."
 author: "Cyril Drouin"
 category: "Market Strategy"
 tags: ["stratégie marché Chine", "localisation", "comportement consommateur", "approche portefeuille", "clusters de villes"]
@@ -15,13 +15,13 @@ keyTakeaways:
 
 ## La Chine n'est plus un marché unique : les paris locaux battent les plans nationaux
 
-À pratiquer la Chine au quotidien, le constat s'impose. Le vieux playbook s'éteint, doucement.
+À pratiquer la Chine au quotidien, le constat s'impose. La vieille méthode s'éteint, doucement.
 
 Pendant des années, beaucoup de [marques internationales](/fr/entrer-en-chine/conseil-en-entree-de-marche) ont traité la Chine comme une grosse machine à croissance. Un SKU phare, une célébrité, un déploiement national, l'échelle se chargeait du reste. Sur un marché en forte expansion, la méthode pouvait encore livrer.
 
 En 2025, cette recette expose surtout ses faiblesses.
 
-Croissance ralentie, consommateurs plus prudents, concurrents locaux plus solides. Le vieux playbook ne colle plus. Les marques qui s'accrochent à une réponse nationale unique peuvent dépenser beaucoup et peiner à exister.
+Croissance ralentie, consommateurs plus prudents, concurrents locaux plus solides. La vieille méthode ne colle plus. Les marques qui s'accrochent à une réponse nationale unique peuvent dépenser beaucoup et peiner à exister.
 
 ### Du message national à la pertinence locale
 

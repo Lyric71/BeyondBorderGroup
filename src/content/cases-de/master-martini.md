@@ -29,10 +29,10 @@ Wir haben die Social-Accounts von Master Martini Asia in Malaysia, Hongkong, Sin
 
 ## Unser Vorgehen
 
-Wir haben eine abgestimmte Strategie auf Instagram und Facebook gefahren, die Köchen zeigt, wie sie Master-Martini-Produkte in der eigenen Küche einsetzen. Im Zentrum: Rezepte, die gut aussehen und sich leicht nachkochen lassen, mit viel Fotografie und Schritt-für-Schritt-Video. Live-Sessions mit bekannten Köchen demonstrierten die Produkte in echten Gerichten und beantworteten Fragen aus dem Publikum in Echtzeit. Das hat die Marke präsent und nahbar gemacht.
+Wir haben eine abgestimmte Strategie auf Instagram und Facebook gefahren, die Köchen zeigt, wie sie Master-Martini-Produkte in der eigenen Küche einsetzen. Im Zentrum: Rezepte, die gut aussehen und sich leicht nachkochen lassen, mit viel Fotografie und Schritt-für-Schritt-Video. Livestreams mit bekannten Köchen demonstrierten die Produkte in echten Gerichten und beantworteten Fragen aus dem Publikum in Echtzeit. Das hat die Marke präsent und nahbar gemacht.
 
-Dazu kamen Wettbewerbe, bei denen Köche ihre mit Master-Martini-Produkten zubereiteten Gerichte unter einem eigenen Hashtag teilten, mit Preisen als Anreiz. Daraus entstand ein stetiger Strom nutzergenerierter Inhalte und Mundpropaganda. Online-Klassen und Workshops zu aktuellen Techniken und Trends gaben den Teilnehmenden etwas Konkretes mit, das sie am nächsten Morgen anwenden konnten.
+Dazu kamen Wettbewerbe, bei denen Köche ihre mit Master-Martini-Produkten zubereiteten Gerichte unter einem eigenen Hashtag teilten, mit Preisen als Anreiz. Daraus entstand ein stetiger Strom nutzergenerierter Inhalte und Mundpropaganda. Online-Kurse und Workshops zu aktuellen Techniken und Trends gaben den Teilnehmenden etwas Konkretes mit, das sie am nächsten Morgen anwenden konnten.
 
 ## Ergebnisse
 
-Als der Plan lief, lernten mehr Köche Master Martini kennen. Die Bekanntheit stieg, ein stetiger Strom neuer Follower stellte sich ein. Die Sichtbarkeit zahlte auf das Geschäft ein, mehr Anfragen und mehr Bestellungen liefen durch den Vertrieb. Die Inhalte haben der Marke ausserdem geholfen, neue Märkte in der Region zu erreichen und Profis in Gebieten anzusprechen, die zuvor unerschlossen waren.
+Als der Plan lief, lernten mehr Köche Master Martini kennen. Die Bekanntheit stieg, ein stetiger Strom neuer Follower stellte sich ein. Die Sichtbarkeit zahlte auf das Geschäft ein, mehr Anfragen und mehr Bestellungen liefen durch den Vertrieb. Die Inhalte haben der Marke außerdem geholfen, neue Märkte in der Region zu erreichen und Profis in Gebieten anzusprechen, die zuvor unerschlossen waren.

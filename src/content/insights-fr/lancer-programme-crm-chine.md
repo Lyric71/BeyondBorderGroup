@@ -78,7 +78,7 @@ Concentrez-vous sur WeChat, QQ et Weibo pour dialoguer avec les clients. Message
 
 ### Donner la priorité au mobile
 
-Concevez des interfaces pensées pour le mobile, puisque les consommateurs chinois interagissent massivement via smartphone. Mobilisez les mini-programmes WeChat et des landing pages adaptées au mobile.
+Concevez des interfaces pensées pour le mobile, puisque les consommateurs chinois interagissent massivement via smartphone. Mobilisez les mini-programmes WeChat et des pages de destination adaptées au mobile.
 
 ### S'aligner sur les moyens de paiement locaux
 

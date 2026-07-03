@@ -12,8 +12,8 @@ heroImageAlt: "Plateau de livestream e-commerce"
 keyTakeaways:
   - "Douyin ne se joue plus en livestream de célébrité. La croissance répétable vient de studios marque qui tournent comme des plateaux quotidiens."
   - "Zara a fait tourner sur Douyin des shows hebdomadaires de plusieurs heures, puis a exporté le format ailleurs. Pensez live comme commerce permanent, pas comme événement campagne."
-  - "La stack publicitaire de Douyin se branche désormais directement sur les opérations e-commerce. Trafic payé et conversion magasin se pilotent ensemble."
-  - "Construisez un rythme : 3 à 5 lives par semaine, 10 à 15 vidéos courtes, un étage paid en dessous. La capitalisation tient au calendrier, pas au coup d'éclat."
+  - "La pile publicitaire de Douyin se branche désormais directement sur les opérations e-commerce. Trafic payant et conversion magasin se pilotent ensemble."
+  - "Construisez un rythme : 3 à 5 lives par semaine, 10 à 15 vidéos courtes, un étage payant en dessous. La capitalisation tient au calendrier, pas au coup d'éclat."
 ---
 
 Douyin n'est plus la plateforme où l'on programme un gros [livestream](/fr/se-developper-en-chine/influence-et-kol) une fois par trimestre.
@@ -32,7 +32,7 @@ Le studio de boutique offre un contrôle complet. La marque calibre ses argument
 
 C'est aussi le terrain sur lequel Douyin engage ses investissements produit. La plateforme rapproche sa pile publicitaire de la performance e-commerce, avec une intégration plus serrée pour soutenir la conversion et contenir la déperdition de trafic.
 
-Le « store-led » n'est plus un registre de contenu. C'est un modèle de trading.
+Le « store-led » n'est plus un registre de contenu. C'est un modèle commercial.
 
 ![](/Images/insights/2026/01/ecommerce-3.png)
 
@@ -68,7 +68,7 @@ La plupart des marques internationales tiennent les fondamentaux : un animateur,
 
 **3) Penser le trafic comme trois moteurs distincts**
 
-* Le feed de recommandation : découper les temps forts du live en vidéos courtes pour nourrir la distribution.
+* Le fil de recommandation : découper les temps forts du live en vidéos courtes pour nourrir la distribution.
 * La recherche : titre du studio, nommage produit, tags clés façonnent le trafic d'intention.
 * L'amplification payante : Qianchuan sert à stabiliser les gagnants, clips à forte rétention et SKU éprouvés. Jamais à sauver une création faible.
 
@@ -86,7 +86,7 @@ Voilà pourquoi les studios de marque gagnent du terrain. Le modèle s'industria
 
 * La possession du client sur Douyin n'a rien de comparable à celle de WeChat. La valeur cumulative se construit néanmoins par :
   * Des incitations à suivre la marque et des avantages réservés aux membres
-  * Du retargeting sur les spectateurs et les cliqueurs de fiches produits
+  * Du reciblage sur les spectateurs et les cliqueurs de fiches produits
   * Une bibliothèque de contenus qui se reconvertit vite en création publicitaire
 
 ![](/Images/insights/2026/01/ecommerce-2.png)
@@ -99,4 +99,4 @@ Pour les marques internationales, la conformité n'est plus un détail juridique
 
 Reste que la vraie question n'est plus de savoir si le live commerce vaut la peine sur Douyin.
 
-Elle est de savoir si l'entreprise peut tenir Douyin en canal retail permanent, où la création et le trading avancent à la même cadence.
+Elle est de savoir si l'entreprise peut tenir Douyin en canal retail permanent, où la création et le commerce avancent à la même cadence.

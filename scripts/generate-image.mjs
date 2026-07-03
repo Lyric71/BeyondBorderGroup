@@ -2,7 +2,7 @@ import 'dotenv/config';
 import fs from 'fs';
 
 const API_URL = 'https://api.wavespeed.ai/api/v3';
-const MODEL = 'google/nano-banana-2/text-to-image';
+const MODEL = 'openai/gpt-image-2/text-to-image';
 const API_KEY = process.env.WAVESPEED_API_KEY;
 
 const args = process.argv.slice(2);
@@ -37,7 +37,7 @@ async function generate() {
       Authorization: `Bearer ${API_KEY}`,
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ prompt, output_format: 'png', quality: '1K', size, aspect_ratio: size }),
+    body: JSON.stringify({ prompt, output_format: 'png', quality: 'high', aspect_ratio: size }),
   });
 
   const submitData = await submitRes.json();

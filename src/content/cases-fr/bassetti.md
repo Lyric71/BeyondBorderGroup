@@ -18,7 +18,7 @@ Bassetti compte parmi les acteurs européens de la transformation numérique ind
 
 ## Le défi
 
-Bassetti voulait un site dédié à son marché chinois. La plateforme internationale reposait sur WordPress et Elementor, deux briques familières du web mondial. Or l'internet chinois obéit à ses propres règles. Hébergements occidentaux, intégrations Google et API courantes se heurtent au pare-feu national, jusqu'à ralentir la page à l'extrême ou à l'empêcher de s'afficher. L'objectif paraissait simple sur le papier : dupliquer le site pour les utilisateurs chinois, en mandarin, accessible depuis la Chine continentale. Dans les faits, il fallait reconstruire l'ensemble pour qu'il tienne derrière le Great Firewall.
+Bassetti voulait un site dédié à son marché chinois. La plateforme internationale reposait sur WordPress et Elementor, deux briques familières du web mondial. Or l'internet chinois obéit à ses propres règles. Hébergements occidentaux, intégrations Google et API courantes se heurtent au pare-feu national, jusqu'à ralentir la page à l'extrême ou à l'empêcher de s'afficher. L'objectif paraissait simple sur le papier : dupliquer le site pour les utilisateurs chinois, en mandarin, accessible depuis la Chine continentale. Dans les faits, il fallait reconstruire l'ensemble pour qu'il tienne derrière le Grand Firewall.
 
 ## Notre approche
 

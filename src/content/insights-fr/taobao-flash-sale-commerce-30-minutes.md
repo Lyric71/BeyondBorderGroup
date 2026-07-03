@@ -64,7 +64,7 @@ Le consommateur prend goût à ce rythme, et la barre monte pour tous les acteur
 
 Trois pressions expliquent ce virage.
 
-**1) La concurrence se joue désormais full-stack.**
+**1) La concurrence se joue désormais sur toute la chaîne.**
 Meituan tient les services locaux. JD investit massivement dans la quick commerce. Tant que Taobao reste « marketplace national avant tout », le groupe risque de perdre les moments à haute fréquence qui forgent les habitudes quotidiennes.
 
 **2) Le marché déborde l'alimentation.**
@@ -133,7 +133,7 @@ Taobao Flash Sale n'est pas « un onglet de plus ».
 
 C'est une voie avec son rythme, ses indicateurs et ses contraintes.
 
-À traiter en playbook neuf :
+À aborder avec une méthode neuve :
 
 * Revue hebdomadaire de l'assortiment et des stocks.
 * Calendriers promotionnels au niveau magasin ou ville.

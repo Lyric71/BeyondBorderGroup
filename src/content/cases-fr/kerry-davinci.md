@@ -31,9 +31,9 @@ DaVinci Gourmet, filiale du groupe Kerry, fournit sirops, sauces et bases smooth
 
 ## Notre approche
 
-Nous avons pris la responsabilité bout en bout des stores Tmall et JD : production de contenus, opérations de vente, marketing, achat média, service client. Les boutiques ont été reconstruites autour d'une identité visuelle rafraîchie et d'un positionnement net, calibré pour les communautés foodservice et baristas chinoises.
+Nous avons pris la responsabilité bout en bout des boutiques Tmall et JD : production de contenus, opérations de vente, marketing, achat média, service client. Les boutiques ont été reconstruites autour d'une identité visuelle rafraîchie et d'un positionnement net, calibré pour les communautés de la restauration et des baristas chinoises.
 
-En parallèle, la grille tarifaire a été harmonisée entre Tmall et le réseau de distribution, pour que les canaux en ligne et hors ligne cessent de se neutraliser. Un rythme coordonné de campagnes et de livestreams a porté l'essai sur les sirops, les sauces et la gamme smoothies. Un chantier dédié a enfin pris en charge contrefaçons et fraude, par l'enforcement plateforme et l'hygiène des fiches produits.
+En parallèle, la grille tarifaire a été harmonisée entre Tmall et le réseau de distribution, pour que les canaux en ligne et hors ligne cessent de se neutraliser. Un rythme coordonné de campagnes et de livestreams a porté l'essai sur les sirops, les sauces et la gamme smoothies. Un chantier dédié a enfin pris en charge contrefaçons et fraude, par l'application des règles plateforme et l'hygiène des fiches produits.
 
 ## Résultats
 

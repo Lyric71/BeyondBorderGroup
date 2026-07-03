@@ -1,7 +1,7 @@
 ---
 brand: "Blue Insurance"
 title: "Hongkongs erster digitaler Lebensversicherer"
-summary: "Zweisprachige Website und Launch-Kampagne für Hongkongs ersten digitalen Lebensversicherer. 10.000 Social-Follower im ersten Monat, 3.000 Anmeldungen in der ersten Woche."
+summary: "Zweisprachige Website und Einführungskampagne für Hongkongs ersten digitalen Lebensversicherer. 10.000 Social-Follower im ersten Monat, 3.000 Anmeldungen in der ersten Woche."
 metric: "10.000 Social-Follower im ersten Monat. 3.000 Newsletter-Anmeldungen in Woche eins."
 category: "Website"
 services:
@@ -19,7 +19,7 @@ order: 11
 
 ## Die Marke
 
-Blue ist Hongkongs erster digitaler Lebensversicherer. Das Versprechen: die Reibung klassischer Lebensversicherung abräumen. Keine langen Formulare, kein Fachjargon, keine Papierberge. Kunden beantworten eine kurze Reihe Online-Fragen und sind in wenigen Minuten versichert, direkt auf Mobile oder Desktop.
+Blue ist Hongkongs erster digitaler Lebensversicherer. Das Versprechen: die Reibung klassischer Lebensversicherung beseitigen. Keine langen Formulare, kein Fachjargon, keine Papierberge. Kunden beantworten eine kurze Reihe Online-Fragen und sind in wenigen Minuten versichert, direkt auf Mobile oder Desktop.
 
 ## Die Aufgabe
 
@@ -27,10 +27,10 @@ Den ersten digitalen Lebensversicherer in einem Markt zu starten, der von agente
 
 ## Unser Vorgehen
 
-Wir haben Website und Launch-Kampagne als ein einziges Produkt verstanden.
+Wir haben Website und Einführungskampagne als ein einziges Produkt verstanden.
 
 - Zweisprachige Website auf Chinesisch und Englisch, optimiert für Mobile und Desktop
-- Intuitive Oberfläche rund um den kurzen Quote- und Anmeldeprozess
+- Intuitive Oberfläche rund um den kurzen Angebots- und Anmeldeprozess
 - SEO-orientierte Inhalte, um bei hochintentionalen Versicherungs-Suchanfragen mitzuspielen
 - Social Media und digitale Werbung, um Reichweite aufzubauen und den Funnel zu speisen
 - Kampagne entlang der Lead-Generierung, jede Kreation zeigt einen klaren nächsten Schritt

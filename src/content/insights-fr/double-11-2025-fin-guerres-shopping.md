@@ -30,7 +30,7 @@ Les enseignes appuient plus fort sur les promotions et les incitations. Les ache
 
 Quelque part en route, le jeu a changé de nature. L'édition 2025 ressemble dangereusement à un point de rupture.
 
-Voici The Last 11.11 Playbook. Pas parce que le festival disparaît, mais parce qu'une marque ne peut plus se permettre de le traiter en coup d'éclat. Dans un pays où l'acheteur est devenu un professionnel du retail, le calcul change.
+Voici le dernier mode d'emploi du 11.11. Pas parce que le festival disparaît, mais parce qu'une marque ne peut plus se permettre de le traiter en coup d'éclat. Dans un pays où l'acheteur est devenu un professionnel du retail, le calcul change.
 
 ## La genèse du phénomène (et ce qui a fonctionné)
 
@@ -131,4 +131,4 @@ Voilà à quoi ressemble un jeu qui entraîne tout le monde vers le bas.
 
 Pas un krach. Un équilibre laborieux, épuisant, où personne ne veut être le premier à quitter la guerre.
 
-C'est précisément le bon moment pour rédiger votre propre Last 11.11 Playbook.
+C'est précisément le bon moment pour rédiger votre propre mode d'emploi du 11.11.

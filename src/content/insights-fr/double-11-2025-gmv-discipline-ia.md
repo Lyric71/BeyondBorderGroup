@@ -63,7 +63,7 @@ La confiance et la personnalité convertissent. Le déclic de 2025 tient à la d
 
 * Studios opérés par la marque, logique de prix constante, plages horaires élargies.
 
-* Pré-production assistée par IA : shot lists, storyboards, points de discussion, montages instantanés pour le retargeting en quelques minutes.
+* Pré-production assistée par IA : listes de plans, storyboards, points de discussion, montages instantanés pour le reciblage en quelques minutes.
 
 Pour mémoire, le [livestream](/fr/se-developper-en-chine/influence-et-kol) avait atteint 332,5 milliards de yuans de GMV durant le Double 11 2024 (+54,6 % en glissement annuel). Les chiffres 2025 sont en cours de consolidation. L'avantage structurel du commerce live, lui, tient : confiance, clarté, conversion documentée.
 
@@ -71,7 +71,7 @@ Pour mémoire, le [livestream](/fr/se-developper-en-chine/influence-et-kol) avai
 
 * Boucles offline ↔ online : tickets QR, démos en magasin, pop-ups qui débloquent des offres digitales, écrans en magasin synchronisés avec le même Creative OS qui alimente fiches produit et publicités.
 
-* Pensé pour le cross-border : talents juridiquement nets, visuels et politiques localisés, attentes de dernier kilomètre intégrées dès la conception des assets. Le playbook voyage. En 2025, Taobao a localisé ses promotions 11.11 sur une vingtaine de marchés, AliExpress a poursuivi ses offensives sur les États-Unis et l'international, JD Worldwide a renforcé son soutien aux marchands transfrontaliers.
+* Pensé pour le cross-border : talents juridiquement nets, visuels et politiques localisés, attentes de dernier kilomètre intégrées dès la conception des supports. La méthode voyage. En 2025, Taobao a localisé ses promotions 11.11 sur une vingtaine de marchés, AliExpress a poursuivi ses offensives sur les États-Unis et l'international, JD Worldwide a renforcé son soutien aux marchands transfrontaliers.
 
 * Ambassadeurs IA quand le contexte le justifie : conformes à la marque, cohérents, conçus pour un usage multi-marchés.
 

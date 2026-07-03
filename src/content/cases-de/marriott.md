@@ -21,7 +21,7 @@ order: 7
 
 ## Die Marke
 
-Marriott betreibt eines der grössten Hotelportfolios weltweit, von Luxus bis Select Service, über mehr als dreissig Marken. In China geht es dem Konzern darum, wohlhabende Reisende über das Bonvoy-Treueprogramm und hochwertige On-Property-Erlebnisse im Marriott-Ökosystem zu halten.
+Marriott betreibt eines der größten Hotelportfolios weltweit, von Luxus bis Select Service, über mehr als dreißig Marken. In China geht es dem Konzern darum, wohlhabende Reisende über das Bonvoy-Treueprogramm und hochwertige On-Property-Erlebnisse im Marriott-Ökosystem zu halten.
 
 ## Die Aufgabe
 
@@ -31,11 +31,11 @@ Der Tmall Super Brand Day ist Alibabas Flaggschiff-Markenmoment, pro Kategorie u
 
 Wir haben die Kampagne um ein Hero-Angebot gebaut: eine exklusive Black Card mit Privilegien in den Marriott-Hotels weltweit, in einer limitierten Stufe mit kostenfreien Aufenthalten und Dining in ausgewählten Luxushäusern.
 
-Von dort haben wir einen Full-Funnel-Push innerhalb und ausserhalb des Alibaba-Ökosystems orchestriert:
+Von dort haben wir einen Full-Funnel-Push innerhalb und außerhalb des Alibaba-Ökosystems orchestriert:
 
 - Celebrity-Endorsement als Anker für Aufmerksamkeit und Reichweite
 - Kooperationen mit KOL und Social-Influencern, um das Angebot in glaubwürdige Empfehlungen zu übersetzen
-- Paid-Media-Platzierungen auf Alibaba und ausserhalb
+- Paid-Media-Platzierungen auf Alibaba und außerhalb
 - Eigene eCommerce-Landingpages, abgestimmt auf den Super-Brand-Day-Traffic
 - Offline-Aktivierungen, die das Online-Interesse in physische Markenmomente überführen
 - PR-Unterstützung, um die Berichterstattung über den Tag zu tragen

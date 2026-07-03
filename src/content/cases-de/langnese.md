@@ -34,12 +34,12 @@ Die Umsätze gingen Monat für Monat zurück, obwohl die Distribution stand. Die
 
 Wir haben das Bild von Grund auf neu gezeichnet, statt am bestehenden Plan zu schrauben.
 
-- Die gesamte Vertriebskette vom Import über Grosshandel bis in den Einzelhandel kartiert
-- Lokale Wettbewerber nach Positionierung, Preisen und Content auf den grossen Plattformen gebenchmarkt
-- Konsumentenforschung in Tier-1- und Tier-2-Städten gefahren, um die tatsächlichen Kauftreiber zu isolieren
+- Die gesamte Vertriebskette vom Import über Großhandel bis in den Einzelhandel kartiert
+- Lokale Wettbewerber nach Positionierung, Preisen und Content auf den großen Plattformen verglichen
+- Konsumentenforschung in Tier-1- und Tier-2-Städten gefahren, um die echten Kauftreiber zu isolieren
 - Unterversorgte Segmente und neue Konsumanlässe identifiziert, in denen ein europäischer Premium-Honig wirklich gewinnen kann
 
-Daraus haben wir gemeinsam mit Kunde und Vertriebspartner den Marktangang neu gebaut: neue Vertriebskanäle, neue Produktformate, abgestimmt darauf, wie chinesische Käufer Honig tatsächlich verwenden, und plattformspezifische Inhalte, die das Premium-Argument glaubwürdig erzählen.
+Daraus haben wir gemeinsam mit Kunde und Vertriebspartner den Marktangang neu gebaut: neue Vertriebskanäle, neue Produktformate, abgestimmt darauf, wie chinesische Käufer Honig im Alltag verwenden, und plattformspezifische Inhalte, die das Premium-Argument glaubwürdig erzählen.
 
 ## Ergebnisse
 

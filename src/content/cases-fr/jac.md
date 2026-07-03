@@ -1,6 +1,6 @@
 ---
 brand: "JAC"
-title: "Production d'assets globaux, au pixel près"
+title: "Production de visuels globaux, au pixel près"
 summary: "Production intégrale de plus de 250 visuels extérieurs et intérieurs pour le nouveau véhicule électrique de JAC, livrés au pixel près pour ses réseaux internationaux de partenaires et de revendeurs."
 metric: "Plus de 250 visuels EV (extérieurs et intérieurs) produits pour les revendeurs et partenaires mondiaux."
 category: "Brand & Design"
@@ -27,16 +27,16 @@ JAC est un constructeur automobile chinois dont la gamme électrique s'étoffe, 
 
 ## Le défi
 
-La production d'assets globaux ne tolère pas l'à-peu-près. Un même véhicule doit garder sa cohérence sur les sites concessionnaires, les configurateurs, les supports print, les réseaux sociaux et les campagnes régionales. Marché par marché, résolution par résolution. JAC voulait des visuels au pixel près sur l'extérieur comme sur l'intérieur du nouveau modèle, prêts à entrer dans des systèmes partenaires très contrastés sans rien perdre de leur intention.
+La production de visuels globaux ne tolère pas l'à-peu-près. Un même véhicule doit garder sa cohérence sur les sites concessionnaires, les configurateurs, les supports imprimés, les réseaux sociaux et les campagnes régionales. Marché par marché, résolution par résolution. JAC voulait des visuels au pixel près sur l'extérieur comme sur l'intérieur du nouveau modèle, prêts à entrer dans des systèmes partenaires très contrastés sans rien perdre de leur intention.
 
 ## Notre approche
 
-Le shooting a d'abord été pensé comme un projet de design, et seulement ensuite comme un projet photographique. La direction artistique a été arrêtée en amont, alignée sur le récit produit que nous voulions porter auprès des partenaires, puis tenue dans chaque set-up sur le plateau.
+Le shooting a d'abord été pensé comme un projet de design, et seulement ensuite comme un projet photographique. La direction artistique a été arrêtée en amont, alignée sur le récit produit que nous voulions porter auprès des partenaires, puis tenue dans chaque mise en place sur le plateau.
 
 - Prises de vues sur place, lumière et mise en scène strictement maîtrisées
 - Direction artistique couvrant l'extérieur, l'intérieur et les détails
 - Post-production poussée pour protéger la cohérence de toute la collection
-- Chaîne de livraison conçue à partir de l'usage que font réellement les partenaires globaux des assets
+- Chaîne de livraison conçue à partir de l'usage que font réellement les partenaires globaux des visuels
 
 ## Résultats
 

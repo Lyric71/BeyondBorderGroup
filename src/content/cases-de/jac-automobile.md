@@ -20,15 +20,15 @@ order: 13
 
 ## Die Marke
 
-JAC zählt zu den grössten Automobilherstellern Chinas und blickt auf über drei Jahrzehnte Branchenerfahrung zurück. Das Unternehmen baut ein breites Spektrum, von Pkw bis Nutzfahrzeuge, klassisch wie elektrisch. Mit über 10 Millionen weltweit verkauften Fahrzeugen und 34 Jahren Präsenz in zahlreichen Ländern ist JAC ein zentraler Akteur, der die chinesische Automobilindustrie ins Ausland trägt.
+JAC zählt zu den größten Automobilherstellern Chinas und blickt auf über drei Jahrzehnte Branchenerfahrung zurück. Das Unternehmen baut ein breites Spektrum, von Pkw bis Nutzfahrzeuge, klassisch wie elektrisch. Mit über 10 Millionen weltweit verkauften Fahrzeugen und 34 Jahren Präsenz in zahlreichen Ländern ist JAC ein zentraler Akteur, der die chinesische Automobilindustrie ins Ausland trägt.
 
 ## Die Aufgabe
 
-Massgeschneiderter Content für JAC Motors auf den chinesischen Social-Plattformen WeChat, Xiaohongshu (RED) und Weibo, um Marke und Community enger zu verzahnen. Ziel war, JAC als führende Branchenreferenz zu etablieren und zugleich die Werte Vertrauen und Zusammenhalt der JAC-Automobile-Familie sichtbar zu machen.
+Maßgeschneiderter Content für JAC Motors auf den chinesischen Social-Plattformen WeChat, Xiaohongshu (RED) und Weibo, um Marke und Community enger zu verzahnen. Ziel war, JAC als führende Branchenreferenz zu etablieren und zugleich die Werte Vertrauen und Zusammenhalt der JAC-Automobile-Familie sichtbar zu machen.
 
 ## Unser Vorgehen
 
-Wir haben JACs digitale Präsenz umgebaut und eine tatsächlich interaktive Community auf WeChat, RED und Weibo aufgesetzt. Drei Säulen tragen den Ansatz: Auto-Expertise, menschenzentriertes Storytelling, Community-Engagement. KI war ein zentraler Hebel, sowohl für personalisierten Content als auch für plattformübergreifende Interaktionsanalysen. Unser Kreativteam produzierte Kurzvideos und moderne Visuals, jeweils passend für jeden Kanal, und hat JAC ein innovatives, kundenzugewandtes Bild in China gegeben. Aus klassischem Content-Management ist ein dynamisches, plattformübergreifendes Community-Engagement geworden. KI hat dabei Wirkung und Performance Kanal für Kanal gehoben.
+Wir haben JACs digitale Präsenz umgebaut und eine wirklich interaktive Community auf WeChat, RED und Weibo aufgesetzt. Drei Säulen tragen den Ansatz: Auto-Expertise, menschenzentriertes Storytelling, Community-Engagement. KI war ein zentraler Hebel, sowohl für personalisierten Content als auch für plattformübergreifende Interaktionsanalysen. Unser Kreativteam produzierte Kurzvideos und moderne Visuals, jeweils passend für jeden Kanal, und hat JAC ein innovatives, kundenzugewandtes Bild in China gegeben. Aus klassischem Content-Management ist ein dynamisches, plattformübergreifendes Community-Engagement geworden. KI hat dabei Wirkung und Performance Kanal für Kanal gehoben.
 
 ## Ergebnisse
 

@@ -14,7 +14,7 @@ keyTakeaways:
   - "La matrice de KOL milieu de gamme alliant rigueur scientifique et résonance émotionnelle a porté 60 % de l'acquisition de nouveaux clients de Collgene."
   - "Trois plateformes, trois missions. Tmall et JD protègent la confiance et le réachat. Douyin découvre. Xiaohongshu construit recherche et communauté. Diffuser le même message sur les trois, c'est gâcher un budget Chine."
 heroImage: "/Images/insights/science-emotion-chinas-new-brand-playbook.jpg"
-heroImageAlt: "Science et émotion, le nouveau playbook des marques en Chine"
+heroImageAlt: "Science et émotion, la nouvelle méthode des marques en Chine"
 ---
 
 ## Une marque gagne 47 % au Double 11. Sa rivale directe en perd 57. Même linéaire, mêmes plateformes, même clientèle. L'écart se loge dans l'architecture.
@@ -73,4 +73,4 @@ Tmall et JD bâtissent la confiance et protègent le réachat. Douyin découvre 
 
 Les marques que TheChinaPath accompagne et qui croissent dans la durée partagent un trait. Elles savent quelle mission chaque plateforme doit remplir, et elles dotent chacune de moyens et d'équipes différents.
 
-Voilà le playbook. La question n'est pas de choisir entre science et émotion. Tout l'enjeu, c'est de savoir où chacune trouve sa place.
+Voilà la méthode. La question n'est pas de choisir entre science et émotion. Tout l'enjeu, c'est de savoir où chacune trouve sa place.

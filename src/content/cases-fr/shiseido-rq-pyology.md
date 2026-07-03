@@ -31,7 +31,7 @@ Lancer une marque dermo-cosmétique premium en Chine demande plus qu'une campagn
 
 ## Notre approche
 
-Le chantier a débuté par le positionnement et la stratégie, avant tout asset de campagne. Nous avons défini une audience attachée à la transparence des ingrédients et à l'efficacité clinique, puis bâti une identité de marque autour de cette promesse. Le langage visuel tire vers le clinique et le précis : typographie sobre, palette inspirée du laboratoire, photographie qui montre une peau vraie plutôt qu'une perfection filtrée. Packaging, gabarits eCommerce et assets sociaux ont été calés pour que chaque point de contact appuie le récit ancré dans la science.
+Le chantier a débuté par le positionnement et la stratégie, avant tout élément de campagne. Nous avons défini une audience attachée à la transparence des ingrédients et à l'efficacité clinique, puis bâti une identité de marque autour de cette promesse. Le langage visuel tire vers le clinique et le précis : typographie sobre, palette inspirée du laboratoire, photographie qui montre une peau vraie plutôt qu'une perfection filtrée. Packaging, gabarits eCommerce et créations sociales ont été calés pour que chaque point de contact appuie le récit ancré dans la science.
 
 L'activation de lancement y a superposé un plan éditorial coordonné, des programmes d'échantillonnage taillés pour déclencher l'essai, et une campagne qui traduit les revendications cliniques dans un langage que les consommatrices peuvent réellement ressentir.
 

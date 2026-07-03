@@ -87,6 +87,97 @@ export async function sendContactEmail(payload: ContactPayload) {
   return data;
 }
 
+export interface CalculatorLeadPayload {
+  name: string;
+  email: string;
+  company?: string;
+  /** Human-readable summary of the inputs the visitor entered. */
+  inputs: { label: string; value: string }[];
+  /** Human-readable summary of the results they unlocked. */
+  results: { label: string; value: string }[];
+}
+
+export async function sendCalculatorLead(payload: CalculatorLeadPayload) {
+  const apiKey = import.meta.env.RESEND_API_KEY ?? process.env.RESEND_API_KEY;
+  const to = import.meta.env.CONTACT_TO_EMAIL ?? process.env.CONTACT_TO_EMAIL;
+
+  if (!apiKey) throw new Error('RESEND_API_KEY is not configured.');
+  if (!to) throw new Error('CONTACT_TO_EMAIL is not configured.');
+
+  const { name, email, company, inputs, results } = payload;
+  const resend = new Resend(apiKey);
+
+  const rows = (pairs: { label: string; value: string }[]) =>
+    pairs
+      .map(
+        (p) => `
+			<tr style="border-top: 1px solid #E5E5E5;">
+				<td style="padding: 8px 0; font-size: 13px; color: #6B6B6B; width: 60%; vertical-align: top;">${escapeHtml(p.label)}</td>
+				<td style="padding: 8px 0; font-size: 14px; color: #1A1A1A; font-weight: 600; text-align: right;">${escapeHtml(p.value)}</td>
+			</tr>`,
+      )
+      .join('');
+
+  const html = `
+		<div style="font-family: -apple-system, 'Segoe UI', Arial, sans-serif; max-width: 620px; margin: 0 auto; background: #F7F9FB; padding: 32px;">
+			<div style="background: #C8102E; border-radius: 8px; padding: 24px 28px; margin-bottom: 20px;">
+				<h1 style="color: #ffffff; font-size: 20px; margin: 0;">New Douyin cost calculator lead</h1>
+			</div>
+			<div style="background: #ffffff; border: 1px solid #E5E5E5; border-radius: 8px; padding: 24px 28px; margin-bottom: 16px;">
+				<table style="width: 100%; border-collapse: collapse;">
+					<tr>
+						<td style="padding: 8px 0; font-size: 13px; color: #6B6B6B; width: 120px;">Name</td>
+						<td style="padding: 8px 0; font-size: 14px; color: #1A1A1A; font-weight: 600;">${escapeHtml(name)}</td>
+					</tr>
+					<tr style="border-top: 1px solid #E5E5E5;">
+						<td style="padding: 8px 0; font-size: 13px; color: #6B6B6B;">Email</td>
+						<td style="padding: 8px 0; font-size: 14px;"><a href="mailto:${escapeHtml(email)}" style="color: #C8102E;">${escapeHtml(email)}</a></td>
+					</tr>
+					<tr style="border-top: 1px solid #E5E5E5;">
+						<td style="padding: 8px 0; font-size: 13px; color: #6B6B6B;">Company</td>
+						<td style="padding: 8px 0; font-size: 14px; color: #1A1A1A;">${escapeHtml(company ?? '-') || '-'}</td>
+					</tr>
+				</table>
+			</div>
+			<div style="background: #ffffff; border: 1px solid #E5E5E5; border-radius: 8px; padding: 24px 28px; margin-bottom: 16px;">
+				<h2 style="font-size: 14px; color: #6B6B6B; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 8px;">Inputs</h2>
+				<table style="width: 100%; border-collapse: collapse;">${rows(inputs)}</table>
+			</div>
+			<div style="background: #ffffff; border: 1px solid #E5E5E5; border-radius: 8px; padding: 24px 28px;">
+				<h2 style="font-size: 14px; color: #6B6B6B; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 8px;">Results unlocked</h2>
+				<table style="width: 100%; border-collapse: collapse;">${rows(results)}</table>
+			</div>
+		</div>
+	`;
+
+  const text = [
+    `Name: ${name}`,
+    `Email: ${email}`,
+    `Company: ${company || '-'}`,
+    '',
+    'INPUTS',
+    ...inputs.map((p) => `  ${p.label}: ${p.value}`),
+    '',
+    'RESULTS',
+    ...results.map((p) => `  ${p.label}: ${p.value}`),
+  ].join('\n');
+
+  const { data, error } = await resend.emails.send({
+    from: FROM_ADDRESS,
+    to,
+    replyTo: email,
+    subject: `Douyin calculator lead - ${name}${company ? ` (${company})` : ''}`,
+    html,
+    text,
+  });
+
+  if (error) {
+    console.error('[resend] calculator lead send failed', { from: FROM_ADDRESS, to, error });
+    throw new Error(error.message ?? 'Resend send failed.');
+  }
+  return data;
+}
+
 function escapeHtml(input: string) {
   return input
     .replace(/&/g, '&amp;')

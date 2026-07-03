@@ -1,0 +1,137 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const icon = {
+  douyin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M9 4c.4 2.4 2.2 4.2 4.6 4.6"/></svg>`,
+  cart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/><path d="M2 3h3l2.5 12.5a1 1 0 0 0 1 .8h8.4a1 1 0 0 0 1-.8L21 7H6"/></svg>`,
+  note: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l5 5v13a0 0 0 0 1 0 0H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M15 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>`,
+  chart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg>`,
+};
+
+const calculators = [
+  {
+    title: 'Douyin cross-border cost',
+    desc: 'Full first-year cost of running a food or health brand on Douyin through a distributor partner, on the bonded cross-border model. Setup, logistics, media, tax and KOL commission, in RMB and USD.',
+    href: '/tools/douyin-cost-calculator',
+    icon: icon.douyin,
+    tags: ['Douyin', 'Cross-border', 'Food & health'],
+    live: true,
+  },
+  {
+    title: 'Tmall Global landed cost',
+    desc: 'What it costs to list and fulfil on Tmall Global: deposit, annual fee, commission, bonded logistics and comprehensive tax, mapped against your target GMV.',
+    icon: icon.cart,
+    tags: ['Tmall Global', 'Marketplace'],
+    live: false,
+  },
+  {
+    title: 'Xiaohongshu campaign budget',
+    desc: 'Plan a Xiaohongshu launch: note seeding, KOC and KOL mix, paid amplification and expected reach for a given spend.',
+    icon: icon.note,
+    tags: ['Xiaohongshu', 'Campaigns'],
+    live: false,
+  },
+  {
+    title: 'Livestream and KOL ROI',
+    desc: 'Model the return on a livestream or KOL programme: pit fee, commission, GMV, returns and net contribution per session.',
+    icon: icon.chart,
+    tags: ['KOL', 'Livestream'],
+    live: false,
+  },
+];
+---
+
+<Layout
+  title="China go-to-market calculators | TheChinaPath"
+  description="Free calculators for brands entering China. Estimate the real cost of Douyin cross-border, Tmall Global, Xiaohongshu campaigns and KOL programmes before you commit a budget."
+>
+  <section
+    class="tool-hero tool-hero--image"
+    style="--tool-hero-img: url('/Images/tools/tools-hero-bg.png')"
+  >
+    <div class="container tool-hero__inner">
+      <nav class="tool-hero__crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">/</span>
+        <span>Calculators</span>
+      </nav>
+      <span class="eyebrow">Tools</span>
+      <h1 class="tool-hero__title">Know the number <em>before</em> you commit the budget.</h1>
+      <p class="tool-hero__lead">
+        Practical calculators for brands going into China. Each one is built on how the channel
+        actually bills you, not a rough rule of thumb. Pick a model, set your assumptions, and see
+        the full cost in RMB and USD.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="tool-cards">
+        {
+          calculators.map((c) =>
+            c.live ? (
+              <a class="tool-card" href={c.href}>
+                <span class="tool-card__icon" set:html={c.icon} />
+                <h2 class="tool-card__title">{c.title}</h2>
+                <p class="tool-card__desc">{c.desc}</p>
+                <div class="tool-card__tags">
+                  {c.tags.map((t) => (
+                    <span class="tool-card__tag">{t}</span>
+                  ))}
+                </div>
+                <span class="tool-card__foot">Open calculator</span>
+              </a>
+            ) : (
+              <div class="tool-card tool-card--soon">
+                <span class="tool-card__pill">In the works</span>
+                <span class="tool-card__icon" set:html={c.icon} />
+                <h2 class="tool-card__title">{c.title}</h2>
+                <p class="tool-card__desc">{c.desc}</p>
+                <div class="tool-card__tags">
+                  {c.tags.map((t) => (
+                    <span class="tool-card__tag">{t}</span>
+                  ))}
+                </div>
+                <span class="tool-card__foot" style="color: var(--bbg-text-muted); pointer-events: none;">
+                  Coming soon
+                </span>
+              </div>
+            ),
+          )
+        }
+      </div>
+
+      <div class="tool-hub-cta">
+        <p>Need a model that is not here yet, or one built around your own numbers?</p>
+        <a class="btn btn--secondary" href="/contact">Ask our China team</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .tool-hub-cta {
+    margin-top: var(--space-7);
+    padding: var(--space-5) var(--space-6);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .tool-hub-cta p {
+    margin: 0;
+    font-weight: 600;
+    color: var(--bbg-ink);
+  }
+  .tool-card__foot::after {
+    /* Coming-soon cards keep no arrow. */
+  }
+  .tool-card--soon .tool-card__foot::after {
+    content: '';
+  }
+</style>

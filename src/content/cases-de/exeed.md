@@ -25,13 +25,13 @@ Exeed ist die Premiummarke der chinesischen Chery Group und baut ihre Präsenz i
 
 ## Die Aufgabe
 
-Der Auftrag: Exeeds globale Präsenz heben und die öffentliche Wahrnehmung in Märkten neu zeichnen, in denen chinesische Premium-Automobilmarken noch eine junge Kategorie sind. Das hiess glaubwürdige PR im grossen Stil über sehr unterschiedliche Medienlandschaften hinweg, dazu eine Markengeschichte, die sich gegen europäische Traditionsmarken behaupten kann.
+Der Auftrag: Exeeds globale Präsenz heben und die öffentliche Wahrnehmung in Märkten neu zeichnen, in denen chinesische Premium-Automobilmarken noch eine junge Kategorie sind. Das hieß glaubwürdige PR im großen Stil über sehr unterschiedliche Medienlandschaften hinweg, dazu eine Markengeschichte, die sich gegen europäische Traditionsmarken behaupten kann.
 
 ## Unser Vorgehen
 
-Seit August 2023 läuft ein durchgängiges PR-Programm aus Earned Media, Content und Sichtbarkeit der Geschäftsführung. Dazu gehört Original-Redaktion, Advertorials, Interview-Planung, Q&A-Formate, Krisenkommunikation, CEO-Reden und Auftritte auf den grossen Branchenbühnen.
+Seit August 2023 läuft ein durchgängiges PR-Programm aus Earned Media, Content und Sichtbarkeit der Geschäftsführung. Dazu gehören eigene redaktionelle Beiträge, Advertorials, Interview-Planung, Q&A-Formate, Krisenkommunikation, CEO-Reden und Auftritte auf den großen Branchenbühnen.
 
-Branding und digitale Innovationsdenke haben wir über die klassische PR-Umsetzung gelegt, damit die Botschaft vom Messestand über den Social Post bis zur CEO-Keynote dieselbe bleibt. Die Leitmomente waren der Genfer Auto-Salon, die Global Co-creation Ecological Conference und die EXLANTIX-Pre-Launch-Kampagnen. Jeder Moment wurde als verstärkendes Kapitel desselben Narrativs gebaut, nicht als Einzelaktivierung.
+Branding und digitales Innovationsdenken haben wir über die klassische PR-Umsetzung gelegt, damit die Botschaft vom Messestand über den Social Post bis zur CEO-Keynote dieselbe bleibt. Die Leitmomente waren der Genfer Auto-Salon, die Global Co-creation Ecological Conference und die EXLANTIX-Pre-Launch-Kampagnen. Jeder Moment wurde als verstärkendes Kapitel desselben Narrativs gebaut, nicht als Einzelaktivierung.
 
 ## Ergebnisse
 

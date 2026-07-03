@@ -1,6 +1,6 @@
 ---
 title: "E-commerce chinois 2025 : la carte des plateformes, et le retour du local"
-description: "Online et offline fusionnent désormais dans une même boucle opérationnelle. Chaque plateforme majeure capte une habitude de consommation précise et un segment du tunnel d'achat. Cartographie."
+description: "En ligne et hors ligne fusionnent désormais dans une même boucle opérationnelle. Chaque plateforme majeure capte une habitude de consommation précise et un segment du tunnel d'achat. Cartographie."
 pubDate: "2025-12-22"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -18,7 +18,7 @@ keyTakeaways:
 
 ## Le marché chinois donne toujours le tempo. La raison tient à l'intégration, pas à la taille.
 
-Le basculement actuel du retail tient en une idée. Online et offline convergent dans une seule boucle opérationnelle. Découverte, conversion, livraison, service : tout se conçoit en parcours unifié, souvent à l'intérieur d'une même application.
+Le basculement actuel du retail tient en une idée. En ligne et hors ligne convergent dans une seule boucle opérationnelle. Découverte, conversion, livraison, service : tout se conçoit en parcours unifié, souvent à l'intérieur d'une même application.
 
 La Chine dispose en outre de la masse critique qui rend l'intégration viable. Le pays comptait plus de 1,12 milliard d'internautes en juin 2025.
 
@@ -45,7 +45,7 @@ Les grandes [plateformes](/fr/comprendre-la-chine/plateformes) chinoises ont cha
 ### **Douyin e-commerce**
 
 * Douyin offre l'illustration la plus nette d'une fusion entre contenu et commerce dans une même interface.
-* Les 3 500 milliards de yuans de GMV rapportés en 2024 donnent la mesure de la conversion in-app.
+* Les 3 500 milliards de yuans de GMV rapportés en 2024 donnent la mesure de la conversion dans l'application.
 
 ### **Kuaishou e-commerce**
 
@@ -77,7 +77,7 @@ Le commerce instantané n'est pas une « livraison rapide » en option. C'est un
 
 Les ventes en commerce instantané atteindront 1 003 milliards de yuans en 2025, avec une croissance plus rapide que celle du e-commerce retail global.
 
-**C'est là que l'intégration entre online et offline devient structurelle :**
+**C'est là que l'intégration entre en ligne et hors ligne devient structurelle :**
 
 * Les magasins fonctionnent comme des mini-entrepôts.
 * Les flottes de livreurs jouent le rôle d'infrastructure retail.

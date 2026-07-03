@@ -1,7 +1,7 @@
 ---
 brand: "ROC Skincare"
 title: "Skincare premium, de la France à la Chine"
-summary: "Localisation d'une marque skincare dermo-cosmétique française d'héritage pour le consommateur chinois : récit de marque, naming, identité visuelle et guidelines packaging."
+summary: "Localisation d'une marque skincare dermo-cosmétique française d'héritage pour le consommateur chinois : récit de marque, naming, identité visuelle et chartes packaging."
 metric: "Nom chinois, récit de marque et système d'identité visuelle complet livrés pour ROC dermo-cosmétique."
 category: "Brand & Design"
 services:
@@ -26,11 +26,11 @@ ROC Skincare est une marque de soin française bâtie sur des produits cliniquem
 
 ## Le défi
 
-En qualité d'agence de branding, nous avions la charge de localiser ROC Skincare pour le marché chinois. Le mandat couvrait un périmètre large : adapter le récit de marque, l'expérience, l'identité visuelle, le logo et le naming, mais aussi fixer les guidelines pour la photographie, la vidéo et le webdesign. ROC voulait en Chine une présence ressentie comme authentiquement française sans paraître étrangère, et authentiquement locale sans s'éloigner de la marque globale.
+En qualité d'agence de branding, nous avions la charge de localiser ROC Skincare pour le marché chinois. Le mandat couvrait un périmètre large : adapter le récit de marque, l'expérience, l'identité visuelle, le logo et le naming, mais aussi fixer les chartes pour la photographie, la vidéo et le webdesign. ROC voulait en Chine une présence ressentie comme authentiquement française sans paraître étrangère, et authentiquement locale sans s'éloigner de la marque globale.
 
 ## Notre approche
 
-L'approche s'est appuyée sur une lecture fine de l'élégance française et des nuances culturelles chinoises, pour préserver l'ADN de la marque tout en le rendant pertinent et désirable côté consommateur chinois. Chaque strate de l'identité a été reconstruite dans l'ordre : positionnement et récit d'abord, naming ensuite, système d'identité visuelle, puis packaging et guidelines d'application. Chaque décision a été passée au crible d'une question simple. Le consommateur chinois la perçoit-il comme premium, efficace, cliniquement crédible ?
+L'approche s'est appuyée sur une lecture fine de l'élégance française et des nuances culturelles chinoises, pour préserver l'ADN de la marque tout en le rendant pertinent et désirable côté consommateur chinois. Chaque strate de l'identité a été reconstruite dans l'ordre : positionnement et récit d'abord, naming ensuite, système d'identité visuelle, puis packaging et chartes d'application. Chaque décision a été passée au crible d'une question simple. Le consommateur chinois la perçoit-il comme premium, efficace, cliniquement crédible ?
 
 ## Résultats
 

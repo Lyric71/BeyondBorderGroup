@@ -33,7 +33,7 @@ L'achat d'un équipement de chauffage ou d'eau chaude relève d'une décision r�
 
 TheChinaPath a été missionné pour construire et exploiter les boutiques Tmall et JD de Viessmann, bout en bout. Le périmètre couvrait :
 
-- Le développement des contenus, du design du store aux fiches produits pensées pour les comportements d'achat chinois
+- Le développement des contenus, du design de la boutique aux fiches produits pensées pour les comportements d'achat chinois
 - Les ventes et l'exploitation, pour tenir les boutiques debout aux pics commerciaux comme au quotidien
 - La stratégie marketing : campagnes, média always-on, temps forts de marque
 - Les programmes livestream et KOL, pour incarner les produits et répondre aux questions réelles des consommateurs

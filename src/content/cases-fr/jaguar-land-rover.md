@@ -30,7 +30,7 @@ Engager les jeunes publics par des contenus sociaux sur mesure, capables de rapp
 
 ## Notre approche
 
-Le programme tenait sur trois piliers. D'abord, des contenus iconiques qui font vivre l'héritage et le langage design de Jaguar Land Rover, en vidéos courtes et en visuels d'impact, calés sur la sensibilité esthétique de la jeune génération. Ensuite, des récits de marque sur mesure, qui traduisent innovation, aventure et luxe pour le public chinois : publications, mini-documentaires, expériences immersives sur les plateformes sociales. Enfin, des campagnes UGC qui invitent les fans à raconter leur expérience des véhicules, à coups de hashtags, de challenges et de concours qui récompensent créativité et authenticité. Les passionnés deviennent ambassadeurs.
+Le programme tenait sur trois piliers. D'abord, des contenus iconiques qui font vivre l'héritage et le langage design de Jaguar Land Rover, en vidéos courtes et en visuels d'impact, calés sur la sensibilité esthétique de la jeune génération. Ensuite, des récits de marque sur mesure, qui traduisent innovation, aventure et luxe pour le public chinois : publications, mini-documentaires, expériences immersives sur les plateformes sociales. Enfin, des campagnes UGC qui invitent les fans à raconter leur expérience des véhicules, à coups de hashtags, de défis et de concours qui récompensent créativité et authenticité. Les passionnés deviennent ambassadeurs.
 
 ## Résultats
 

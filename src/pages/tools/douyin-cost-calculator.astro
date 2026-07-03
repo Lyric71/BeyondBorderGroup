@@ -1,0 +1,2404 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// ---- Key drivers, shown as sliders at the top of the calculator ----
+type Driver = {
+  id: string;
+  label: string;
+  value: string;
+  kind: 'money' | 'percent' | 'number';
+  min: string;
+  max: string;
+  step: string;
+  hint?: string;
+};
+
+const drivers: Driver[] = [
+  { id: 'gmv', label: 'Target Year 1 GMV', value: '2000000', kind: 'money', min: '200000', max: '10000000', step: '100000' },
+  { id: 'aov', label: 'Average order value', value: '100', kind: 'money', min: '20', max: '500', step: '5' },
+  { id: 'paidShare', label: 'Share of GMV from paid media', value: '40', kind: 'percent', min: '0', max: '100', step: '5' },
+  { id: 'kolCommission', label: 'KOL commission rate', value: '20', kind: 'percent', min: '0', max: '40', step: '1' },
+  { id: 'roasA', label: 'Scenario A ROAS (early months)', value: '1.5', kind: 'number', min: '0.5', max: '6', step: '0.1' },
+  { id: 'roasB', label: 'Scenario B ROAS (warmed up)', value: '3', kind: 'number', min: '0.5', max: '6', step: '0.1' },
+];
+
+// ---- Advanced inputs, grouped in the collapsible section ----
+type Field = {
+  id: string;
+  label: string;
+  value: string;
+  kind: 'money' | 'percent' | 'number';
+  step?: string;
+  hint?: string;
+  fx?: boolean;
+};
+
+const gicon = {
+  tax: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+  platform: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>`,
+  kol: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 15z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>`,
+  logistics: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>`,
+  media: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h2l9 5V4L6 9H4a1 1 0 0 0-1 1z"/><path d="M18 9a4 4 0 0 1 0 6"/></svg>`,
+  margin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg>`,
+};
+
+const groups: { title: string; icon: string; note?: string; fields: Field[] }[] = [
+  {
+    title: 'FX and tax',
+    icon: gicon.tax,
+    fields: [
+      { id: 'fx', label: 'USD / RMB exchange rate', value: '7.1', kind: 'number', step: '0.01', fx: true },
+      { id: 'vatServices', label: 'VAT on China services', value: '6', kind: 'percent', step: '0.1' },
+      { id: 'cbecTax', label: 'CBEC comprehensive import tax', value: '11.2', kind: 'percent', step: '0.1', hint: '13% VAT on 70% of retail value, no consumption tax on honey.' },
+    ],
+  },
+  {
+    title: 'Platform and DP',
+    icon: gicon.platform,
+    fields: [
+      { id: 'platformDeposit', label: 'Douyin 全球购 platform deposit', value: '50000', kind: 'money', hint: 'Refundable when the store closes.' },
+      { id: 'techFee', label: 'Platform tech service fee', value: '4', kind: 'percent', step: '0.1' },
+      { id: 'agentFee', label: 'Mainland 境内代理人 annual fee', value: '60000', kind: 'money' },
+      { id: 'trademark', label: 'CN trademark registration', value: '8000', kind: 'money' },
+      { id: 'brandSetup', label: 'Brand setup contribution', value: '80000', kind: 'money' },
+      { id: 'coFund', label: 'Brand marketing co-fund to the DP', value: '120000', kind: 'money' },
+    ],
+  },
+  {
+    title: 'KOL',
+    icon: gicon.kol,
+    fields: [
+      { id: 'kolShare', label: 'Share of GMV through KOL livestream or video', value: '80', kind: 'percent' },
+    ],
+  },
+  {
+    title: 'Logistics',
+    icon: gicon.logistics,
+    fields: [
+      { id: 'whDeposit', label: 'Bonded warehouse deposit', value: '100000', kind: 'money' },
+      { id: 'whTaxPrepay', label: 'Bonded warehouse tax prepayment', value: '300000', kind: 'money' },
+      { id: 'storage', label: 'Warehouse storage per unit per month', value: '0.8', kind: 'number', step: '0.1' },
+      { id: 'shipping', label: 'Last-mile shipping per parcel', value: '11', kind: 'money' },
+      { id: 'returnRate', label: 'Return rate', value: '5', kind: 'percent', step: '0.1' },
+      { id: 'returnHandling', label: 'Return handling per parcel', value: '15', kind: 'money' },
+    ],
+  },
+  {
+    title: 'Media',
+    icon: gicon.media,
+    fields: [
+      { id: 'adBuyFee', label: 'Ad-buying service fee (of media spend)', value: '15', kind: 'percent' },
+    ],
+  },
+  {
+    title: 'Your economics',
+    icon: gicon.margin,
+    note: 'Add your gross margin to unlock breakeven GMV and contribution.',
+    fields: [
+      { id: 'grossMargin', label: 'Your gross margin on Year 1 GMV', value: '', kind: 'percent' },
+    ],
+  },
+];
+
+const steps = [
+  {
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18M7 15h4"/></svg>`,
+    title: 'You fund',
+    body: 'Platform and bonded deposits, trademark, launch content. The one-time money that gets the store live.',
+  },
+  {
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>`,
+    title: 'The DP runs',
+    body: 'A Douyin Partner (DP) owns the team and runs the storefront and livestreams day to day.',
+  },
+  {
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M9 4c.4 2.4 2.2 4.2 4.6 4.6"/></svg>`,
+    title: 'Creators sell',
+    body: 'KOLs move the volume on commission. Paid media on 千川 warms the algorithm and fills the room.',
+  },
+  {
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 2 5-6"/></svg>`,
+    title: 'You measure',
+    body: 'The calculator totals every line, splits setup from running cost, and flags what comes back on exit.',
+  },
+];
+
+const perks = [
+  'Two ROAS scenarios, side by side',
+  'Full cost stack in RMB and USD',
+  'Cost per order vs your AOV',
+  'Refundable deposits vs real burn',
+  'Breakeven GMV from your margin',
+];
+
+// Plain-English explanation for every field, shown in the overlay bubble.
+const help: Record<string, string> = {
+  gmv: 'Gross Merchandise Value is the total sales you expect the Douyin channel to bring in over its first twelve months, before any cost is taken out. It is the top line the whole model scales from. If you are unsure, start with a conservative target and raise it once the channel proves itself.',
+  aov: 'The average amount a shopper spends in a single order. Take your expected first-year sales and divide by the number of orders and you land here. It decides how many parcels you ship, which in turn drives your logistics and returns cost.',
+  paidShare:
+    "The slice of your sales pushed by paid advertising on Douyin's ad platform (千川 Qianchuan), rather than by organic reach or a creator's own following. Turn it up and you spend more on ads to hit the same sales number.",
+  kolCommission:
+    'The cut a livestream host or short-video creator keeps on each sale they drive. It is pure commission, paid only when they actually sell. Food and agricultural products tend to sit around 8 to 20 percent; beauty and luxury run higher.',
+  roasA:
+    'Return On Ad Spend is sales divided by ad spend. A ROAS of 1.5 means every 1 RMB of ads returns 1.5 RMB of sales. Scenario A is the cautious early-months figure for a brand-new account, before the algorithm has learned who to show you to.',
+  roasB:
+    'The same Return On Ad Spend, but for a warmed-up account later in the year. A ROAS of 3.0 means every 1 RMB of ads returns 3 RMB of sales. Better efficiency means less media spend for the same sales.',
+  fx: 'How many RMB one US dollar buys. It only affects the USD figure shown at the end; every calculation runs in RMB. Use the refresh button to pull today’s live rate.',
+  vatServices:
+    'Value-added tax on the China-side service fees you pay (agency, marketing co-fund, platform tech fee, ad-buying). It is added on top of those fees, not taken out of your sales. Six percent is the standard rate for these services.',
+  cbecTax:
+    'The cross-border e-commerce import tax on goods sold through the bonded model. It is 13 percent VAT applied to 70 percent of the retail price, which lands near 11.2 percent of sales for most food. Honey carries no consumption tax.',
+  platformDeposit:
+    'A security deposit Douyin holds while your store is open, returned when you close in good standing. The food and health flagship base is 50,000 RMB, though a February 2025 reform lets qualified merchants enter far lower. Worth asking your DP.',
+  techFee:
+    'A technology service fee Douyin charges on sales in the cross-border food and health category, taken as a share of GMV. Four percent is the usual rate.',
+  agentFee:
+    'The yearly fee for a mainland customs agent (境内代理人), the licensed local entity required to clear cross-border parcels in your name. It is a fixed annual cost, not tied to how much you sell.',
+  trademark:
+    'A one-time cost to register your brand as a trademark in China, in the relevant class. Doing it early protects the name before anyone else can claim it. Roughly 8,000 RMB for a single class.',
+  brandSetup:
+    'The upfront cost to build the store and its launch content: banner, product listings, a hero photo or video shoot. Paid once, at the start.',
+  coFund:
+    "Cash you put in each year toward the Douyin Partner's marketing on your behalf. The DP runs its own team; this joint fund tops up campaigns and content made specifically for your brand.",
+  kolShare:
+    'The share of total sales that flows through creators (livestream and short video), rather than your own store page or ads. It sets how much KOL commission you end up paying.',
+  whDeposit:
+    'A refundable deposit the bonded warehouse holds as working capital while your goods are stored there. You get it back on exit, so it is recoverable rather than sunk.',
+  whTaxPrepay:
+    'Money paid into the bonded warehouse up front against the import tax on goods as they clear. It is drawn down as shipments enter China, so treat it as recoverable working capital, not a sunk cost.',
+  storage:
+    'What the bonded warehouse charges to store one unit for one month. Multiplied by your order volume and an average two-month dwell time, it becomes your storage bill.',
+  shipping:
+    "The last-mile delivery cost per parcel, from the bonded warehouse to the shopper's door. Multiply by the number of orders to get the yearly shipping bill.",
+  returnRate:
+    'The share of orders that come back. Food and CBEC returns are usually low, around five percent. Each return carries a handling cost.',
+  returnHandling:
+    'What it costs to process one returned parcel: inspection, then restocking or disposal. Multiplied by your return rate and order volume.',
+  adBuyFee:
+    'If the DP outsources the Qianchuan ad buying, this is the agency fee, taken as a share of the media spend. Set it to zero if the buying is handled in-house at no extra charge.',
+  grossMargin:
+    'Your gross margin on the sales, after the cost of the product itself but before the Douyin channel costs in this model. Enter it to unlock breakeven GMV, the sales level needed to cover the full first-year bill, and your contribution.',
+};
+
+const notes = [
+  'Honey sits on the CBEC Positive List but bonded-warehouse only. Direct mail is not allowed, so the warehouse deposit and tax prepayment are unavoidable. Source: 国务院 正面清单, 2022.',
+  'The distributor partner runs Douyin only. Their team cost comes out of the wholesale margin they take on your product, so it is not in this model. The marketing co-fund is the usual brand-side cash contribution.',
+  'Scenario A at ROAS 1.5x is the realistic number for months one to six on a fresh Douyin account. Scenario B at ROAS 3.0x is where a warmed-up account tends to land later in the year.',
+  'The platform deposit of RMB 50,000 is the food and health flagship base. Under the February 2025 reform, qualified merchants can enter at RMB 500. Worth asking your DP about.',
+  'Year 1 runs at a loss in every scenario at RMB 2M GMV. Use breakeven GMV to see the scale needed for gross profit to cover the full first-year bill.',
+];
+
+const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>`;
+---
+
+<Layout
+  title="Douyin cross-border cost calculator | TheChinaPath"
+  description="Estimate what it costs to set up and run a cross-border Douyin channel in China through a Douyin Partner. Works for any product category. Bonded logistics, KOL commission, paid media, tax and platform fees, in RMB and USD."
+>
+  <section
+    class="tool-hero tool-hero--image"
+    style="--tool-hero-img: url('/Images/tools/douyin-hero-bg.png')"
+  >
+    <div class="container tool-hero__inner">
+      <nav class="tool-hero__crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="/tools">Calculators</a>
+        <span aria-hidden="true">/</span>
+        <span>Douyin cross-border cost</span>
+      </nav>
+      <span class="eyebrow">Cost calculator</span>
+      <h1 class="tool-hero__title">What a cross-border Douyin channel <em>really</em> costs.</h1>
+      <p class="tool-hero__lead">
+        Model the full first-year cost of selling on Douyin through a Douyin Partner (DP), on the
+        cross-border bonded model (抖音全球购). It works for any product category.
+      </p>
+      <div class="tool-hero__meta">
+        <div class="tool-hero__meta-item">
+          <span class="tool-hero__meta-num">Two</span>
+          <span class="tool-hero__meta-label">ROAS scenarios, side by side</span>
+        </div>
+        <div class="tool-hero__meta-item">
+          <span class="tool-hero__meta-num">RMB + USD</span>
+          <span class="tool-hero__meta-label">the full cost stack, both currencies</span>
+        </div>
+        <div class="tool-hero__meta-item">
+          <span class="tool-hero__meta-num">Live</span>
+          <span class="tool-hero__meta-label">every assumption is yours to change</span>
+        </div>
+      </div>
+      <a href="#calculator" class="tool-hero__scroll">
+        <span>Start calculating</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  {/* ---------- How it works ---------- */}
+  <section class="section calc-how">
+    <div class="container">
+      <div class="calc-how__head reveal">
+        <span class="eyebrow">How the model works</span>
+        <h2 class="calc-how__title">Four moving parts, one first-year number.</h2>
+      </div>
+      <ol class="calc-flow">
+        {
+          steps.map((s, idx) => (
+            <li class="calc-flow__step reveal" style={`--i:${idx}`}>
+              <span class="calc-flow__icon" set:html={s.icon} />
+              <h3 class="calc-flow__step-title">{s.title}</h3>
+              <p class="calc-flow__step-body">{s.body}</p>
+            </li>
+          ))
+        }
+      </ol>
+      <div class="calc-perks reveal">
+        <span class="calc-perks__label">What you get</span>
+        <ul class="calc-perks__list">
+          {
+            perks.map((p) => (
+              <li class="calc-perks__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8" /></svg>
+                {p}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- Calculator ---------- */}
+  <section class="section section--alt calc" id="calculator">
+    <div class="container">
+      <div class="calc__head reveal">
+        <span class="eyebrow">The calculator</span>
+        <h2 class="calc__title">Set your assumptions</h2>
+        <p class="calc__sub">
+          The defaults describe a RMB 2M first-year run for a honey brand. Drag the sliders or type
+          your own figures. Fine-tune the detail below.
+        </p>
+      </div>
+
+      <form class="calc-form" id="calc-form" novalidate>
+        <div class="calc-shell">
+          <div class="calc-main">
+            {/* Key drivers as sliders */}
+            <div class="calc-card calc-drivers reveal">
+              <div class="calc-card__head">
+                <h3 class="calc-card__title">Key assumptions</h3>
+                <span class="calc-card__hint">The six numbers that move the total most.</span>
+              </div>
+              <div class="calc-drivers__grid">
+                {
+                  drivers.map((d) => (
+                    <div class="driver" data-driver>
+                      <div class="driver__top">
+                        <span class="calc-label-wrap">
+                          <label class="driver__label" for={d.id}>
+                            {d.label}
+                          </label>
+                          {help[d.id] && (
+                            <button
+                              type="button"
+                              class="calc-help__btn"
+                              data-help={help[d.id]}
+                              aria-label={`What is ${d.label}?`}
+                            >
+                              ?
+                            </button>
+                          )}
+                        </span>
+                        <span class="driver__value">
+                          <input
+                            class="driver__num"
+                            type="number"
+                            id={d.id}
+                            name={d.id}
+                            value={d.value}
+                            data-kind={d.kind}
+                            data-label={d.label}
+                            step={d.step}
+                            min={d.min}
+                            max={d.max}
+                          />
+                          <span class="driver__unit">{d.kind === 'percent' ? '%' : d.kind === 'money' ? 'RMB' : 'x'}</span>
+                        </span>
+                      </div>
+                      <input
+                        class="driver__range"
+                        type="range"
+                        min={d.min}
+                        max={d.max}
+                        step={d.step}
+                        value={d.value}
+                        data-target={d.id}
+                        aria-hidden="true"
+                        tabindex="-1"
+                      />
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+
+            {/* Advanced inputs, collapsible */}
+            <div class="calc-card calc-advanced reveal">
+              <button type="button" class="calc-advanced__toggle" id="advanced-toggle" aria-expanded="false" aria-controls="advanced-body">
+                <span class="calc-advanced__toggle-text">
+                  <span class="calc-advanced__toggle-title">Fine-tune every input</span>
+                  <span class="calc-advanced__toggle-sub">Fees, deposits, logistics, tax and margin</span>
+                </span>
+                <span class="calc-advanced__chevron" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+                </span>
+              </button>
+              <div class="calc-advanced__body" id="advanced-body" hidden>
+                <div class="calc-tabs" role="tablist" aria-label="Input groups">
+                  {
+                    groups.map((group, idx) => (
+                      <button
+                        type="button"
+                        class:list={['calc-tab', { 'is-active': idx === 0 }]}
+                        role="tab"
+                        id={`tab-${idx}`}
+                        data-tab={idx}
+                        aria-controls={`panel-${idx}`}
+                        aria-selected={idx === 0 ? 'true' : 'false'}
+                      >
+                        <span class="calc-tab__icon" set:html={group.icon} />
+                        <span class="calc-tab__label">{group.title}</span>
+                      </button>
+                    ))
+                  }
+                </div>
+                <div class="calc-tabpanels">
+                  {
+                    groups.map((group, idx) => (
+                      <div
+                        class:list={['calc-tabpanel', { 'is-active': idx === 0 }]}
+                        id={`panel-${idx}`}
+                        data-panel={idx}
+                        role="tabpanel"
+                        aria-labelledby={`tab-${idx}`}
+                        hidden={idx !== 0}
+                      >
+                        {group.note && <p class="calc-group__note">{group.note}</p>}
+                        <div class="calc-tabpanel__fields">
+                          {group.fields.map((f) => (
+                            <div class="calc-field">
+                              <span class="calc-label-wrap">
+                                <label class="calc-field__label" for={f.id}>
+                                  {f.label}
+                                </label>
+                                {help[f.id] && (
+                                  <button
+                                    type="button"
+                                    class="calc-help__btn"
+                                    data-help={help[f.id]}
+                                    aria-label={`What is ${f.label}?`}
+                                  >
+                                    ?
+                                  </button>
+                                )}
+                              </span>
+                              <div class="calc-input-wrap" data-kind={f.kind}>
+                                {f.kind === 'money' && <span class="calc-input-affix">RMB</span>}
+                                <input
+                                  class="calc-input"
+                                  type="number"
+                                  inputmode="decimal"
+                                  id={f.id}
+                                  name={f.id}
+                                  value={f.value}
+                                  data-kind={f.kind}
+                                  data-label={f.label}
+                                  step={f.step ?? '1'}
+                                  min="0"
+                                  placeholder={f.kind === 'percent' ? '%' : ''}
+                                />
+                                {f.kind === 'percent' && <span class="calc-input-affix calc-input-affix--suffix">%</span>}
+                              </div>
+                              {f.fx && (
+                                <button type="button" class="calc-fx-link" id="fx-refresh">
+                                  <span class="calc-fx-link__icon" set:html={refreshIcon} />
+                                  Refresh live rate
+                                </button>
+                              )}
+                              {f.hint && <p class="calc-field__hint">{f.hint}</p>}
+                              {f.fx && <p class="calc-field__hint" id="fx-note"></p>}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Sticky live preview rail */}
+          <aside class="calc-rail reveal">
+            <div class="calc-preview">
+              <div class="calc-preview__glow" aria-hidden="true"></div>
+              <span class="calc-preview__eyebrow">Live preview</span>
+              <div class="calc-preview__orders">
+                <span class="calc-preview__orders-num" id="live-orders" data-pulse>20,000</span>
+                <span class="calc-preview__orders-label">orders a year at your inputs</span>
+              </div>
+
+              <div class="calc-preview__locked">
+                <div class="calc-preview__locked-row">
+                  <span>Total Year 1 cost</span>
+                  <span class="calc-preview__blur">RMB 0,000,000</span>
+                </div>
+                <div class="calc-preview__locked-row">
+                  <span>Net sunk cost</span>
+                  <span class="calc-preview__blur">RMB 0,000,000</span>
+                </div>
+                <div class="calc-preview__locked-row">
+                  <span>Cost per order</span>
+                  <span class="calc-preview__blur">RMB 000</span>
+                </div>
+                <div class="calc-preview__lock" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary calc-preview__cta" id="calc-submit">
+                See my full breakdown
+              </button>
+              <p class="calc-preview__note">
+                One work email unlocks the full breakdown here. Export it to PDF when you're done.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </form>
+
+      {/* ---------- Results, hidden until the email gate is cleared ---------- */}
+      <div class="calc-results" id="calc-results" hidden>
+        <div class="calc-results__head reveal">
+          <div class="calc-results__head-text">
+            <span class="eyebrow">Your estimate</span>
+            <h2 class="calc-results__title">First-year cost breakdown</h2>
+            <p class="calc-results__sub" id="calc-results-sub"></p>
+          </div>
+          <button type="button" class="btn btn--secondary btn--sm calc-results__pdf" id="calc-pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            Export to PDF
+          </button>
+        </div>
+
+        <div class="calc-scenario reveal">
+          <div class="calc-scenario__tabs" role="tablist" aria-label="Scenario">
+            <button type="button" class="calc-scenario__tab is-active" data-scenario="a" role="tab" aria-selected="true">
+              <span class="calc-scenario__tab-name">Scenario A</span>
+              <span class="calc-scenario__tab-sub">ROAS 1.5x, early months</span>
+            </button>
+            <button type="button" class="calc-scenario__tab" data-scenario="b" role="tab" aria-selected="false">
+              <span class="calc-scenario__tab-name">Scenario B</span>
+              <span class="calc-scenario__tab-sub">ROAS 3.0x, warmed up</span>
+            </button>
+          </div>
+
+          <div class="calc-focus">
+            <div class="calc-focus__hero">
+              <span class="calc-focus__hero-label">Total Year 1 cost</span>
+              <span class="calc-focus__hero-num" id="focus-total">RMB 0</span>
+              <span class="calc-focus__hero-usd" id="focus-usd">$0</span>
+            </div>
+            <div class="calc-focus__stats">
+              <div class="calc-stat">
+                <span class="calc-stat__label">Net sunk cost</span>
+                <span class="calc-stat__value" id="focus-sunk">RMB 0</span>
+                <span class="calc-stat__foot">after refundable deposits</span>
+              </div>
+              <div class="calc-stat">
+                <span class="calc-stat__label">Cost per order</span>
+                <span class="calc-stat__value" id="focus-cpo">RMB 0</span>
+                <span class="calc-stat__foot" id="focus-cpo-foot">vs your AOV</span>
+              </div>
+              <div class="calc-stat">
+                <span class="calc-stat__label">Cost as % of GMV</span>
+                <span class="calc-stat__value" id="focus-pct">0%</span>
+                <span class="calc-stat__foot">burn against revenue</span>
+              </div>
+              <div class="calc-stat" id="focus-be-wrap">
+                <span class="calc-stat__label">Breakeven GMV</span>
+                <span class="calc-stat__value" id="focus-be">Add margin</span>
+                <span class="calc-stat__foot">to cover the full year</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Animated cost composition bar */}
+          <div class="calc-compo">
+            <div class="calc-compo__head">
+              <h3 class="calc-compo__title">Where the money goes</h3>
+              <span class="calc-compo__total" id="compo-total"></span>
+            </div>
+            <div class="calc-compo__bar" id="compo-bar" role="img" aria-label="Cost composition"></div>
+            <ul class="calc-compo__legend" id="compo-legend"></ul>
+          </div>
+        </div>
+
+        <details class="calc-detail reveal">
+          <summary class="calc-detail__summary">
+            <span>See the full line-by-line breakdown</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+          </summary>
+          <div class="calc-table-wrap">
+            <table class="calc-table" id="calc-table">
+              <thead>
+                <tr>
+                  <th scope="col">Cost item</th>
+                  <th scope="col">Scenario A<span>ROAS 1.5x</span></th>
+                  <th scope="col">Scenario B<span>ROAS 3.0x</span></th>
+                </tr>
+              </thead>
+              <tbody id="calc-table-body"></tbody>
+            </table>
+          </div>
+        </details>
+
+        <div class="calc-notes reveal">
+          <h3 class="calc-notes__title">Reading the numbers</h3>
+          <ul class="calc-notes__list">
+            {notes.map((n) => <li>{n}</li>)}
+          </ul>
+        </div>
+
+        <div class="calc-cta reveal">
+          <p>Want us to pressure-test these assumptions against your own brief?</p>
+          <a class="btn btn--secondary" href="/contact">Talk to our China team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- Email gate ---------- */}
+  <div class="calc-gate" id="calc-gate" hidden aria-hidden="true">
+    <div class="calc-gate__backdrop" data-close></div>
+    <div class="calc-gate__panel" role="dialog" aria-modal="true" aria-labelledby="calc-gate-title">
+      <button class="calc-gate__close" type="button" data-close aria-label="Close">×</button>
+      <span class="eyebrow">One step</span>
+      <h2 class="calc-gate__title" id="calc-gate-title">Unlock your full breakdown</h2>
+      <p class="calc-gate__lead">
+        Your numbers are ready. Add your work email and we'll open the full breakdown right here on
+        the page. You can export it to PDF once it's on screen.
+      </p>
+
+      <form class="calc-gate__form" id="calc-gate-form" novalidate>
+        <div class="calc-field">
+          <label class="calc-field__label" for="lead-name">Name</label>
+          <input class="calc-input calc-input--text" type="text" id="lead-name" name="name" autocomplete="name" required />
+        </div>
+        <div class="calc-field">
+          <label class="calc-field__label" for="lead-email">Work email</label>
+          <input class="calc-input calc-input--text" type="email" id="lead-email" name="email" autocomplete="email" required />
+        </div>
+        <div class="calc-field">
+          <label class="calc-field__label" for="lead-company">Company</label>
+          <input class="calc-input calc-input--text" type="text" id="lead-company" name="company" autocomplete="organization" />
+        </div>
+
+        <button type="submit" class="btn btn--primary calc-gate__submit" id="lead-submit">
+          Show my results
+        </button>
+        <p class="calc-gate__note">
+          We use your email to follow up and, now and then, share notes on selling in China. No
+          spam, and you can opt out any time.
+        </p>
+        <p class="calc-gate__status" id="lead-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  {/* Shared field-explanation bubble, positioned by JS to dodge clipping */}
+  <div class="field-pop" id="field-pop" role="tooltip" hidden></div>
+</Layout>
+
+<script is:inline>
+  (function () {
+    const form = document.getElementById('calc-form');
+    const gate = document.getElementById('calc-gate');
+    const gateForm = document.getElementById('calc-gate-form');
+    const gateStatus = document.getElementById('lead-status');
+    const leadSubmit = document.getElementById('lead-submit');
+    const results = document.getElementById('calc-results');
+    if (!form || !gate || !gateForm) return;
+
+    const prefersReduced =
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // ---- number helpers ----
+    const rmb0 = (n) => 'RMB ' + Math.round(n).toLocaleString('en-US');
+    const usd0 = (n) => '$' + Math.round(n).toLocaleString('en-US');
+    const pct1 = (n) => (n * 100).toFixed(1) + '%';
+
+    // ---------- scroll reveal ----------
+    if ('IntersectionObserver' in window && !prefersReduced) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add('is-in');
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in'));
+    }
+
+    // ---------- slider <-> number sync + fill ----------
+    function paintRange(range) {
+      const min = parseFloat(range.min || '0');
+      const max = parseFloat(range.max || '100');
+      const val = parseFloat(range.value || '0');
+      const pct = max > min ? ((val - min) / (max - min)) * 100 : 0;
+      range.style.setProperty('--pct', pct + '%');
+    }
+    document.querySelectorAll('.driver__range').forEach((range) => {
+      const num = document.getElementById(range.getAttribute('data-target'));
+      paintRange(range);
+      range.addEventListener('input', () => {
+        if (num) {
+          num.value = range.value;
+          num.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+        paintRange(range);
+      });
+      if (num) {
+        num.addEventListener('input', () => {
+          range.value = num.value;
+          paintRange(range);
+        });
+      }
+    });
+
+    // ---------- live preview ----------
+    const liveOrders = document.getElementById('live-orders');
+    function updatePreview() {
+      const gmv = parseFloat(document.getElementById('gmv').value) || 0;
+      const aov = parseFloat(document.getElementById('aov').value) || 0;
+      const orders = aov > 0 ? gmv / aov : 0;
+      if (liveOrders) {
+        liveOrders.textContent = Math.round(orders).toLocaleString('en-US');
+        if (!prefersReduced) {
+          liveOrders.classList.remove('is-pulse');
+          void liveOrders.offsetWidth;
+          liveOrders.classList.add('is-pulse');
+        }
+      }
+    }
+    form.addEventListener('input', updatePreview);
+    updatePreview();
+
+    // ---------- advanced accordion ----------
+    const advToggle = document.getElementById('advanced-toggle');
+    const advBody = document.getElementById('advanced-body');
+    if (advToggle && advBody) {
+      advToggle.addEventListener('click', () => {
+        const open = advToggle.getAttribute('aria-expanded') === 'true';
+        advToggle.setAttribute('aria-expanded', String(!open));
+        if (open) {
+          advBody.style.maxHeight = advBody.scrollHeight + 'px';
+          void advBody.offsetWidth;
+          advBody.style.maxHeight = '0px';
+          advBody.addEventListener(
+            'transitionend',
+            () => {
+              if (advToggle.getAttribute('aria-expanded') === 'false') advBody.hidden = true;
+            },
+            { once: true },
+          );
+        } else {
+          advBody.hidden = false;
+          advBody.style.maxHeight = advBody.scrollHeight + 'px';
+          advBody.addEventListener(
+            'transitionend',
+            () => {
+              if (advToggle.getAttribute('aria-expanded') === 'true') advBody.style.maxHeight = 'none';
+            },
+            { once: true },
+          );
+        }
+      });
+    }
+
+    // ---------- fine-tune tabs ----------
+    const tabs = Array.from(document.querySelectorAll('.calc-tab'));
+    const panels = Array.from(document.querySelectorAll('.calc-tabpanel'));
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const idx = tab.getAttribute('data-tab');
+        tabs.forEach((t) => {
+          const on = t === tab;
+          t.classList.toggle('is-active', on);
+          t.setAttribute('aria-selected', String(on));
+        });
+        panels.forEach((p) => {
+          const on = p.getAttribute('data-panel') === idx;
+          p.classList.toggle('is-active', on);
+          p.hidden = !on;
+        });
+        // panel height may differ; let the open accordion grow to fit
+        if (advBody && advToggle && advToggle.getAttribute('aria-expanded') === 'true') {
+          advBody.style.maxHeight = 'none';
+        }
+      });
+    });
+
+    // ---------- field help bubbles ----------
+    const pop = document.getElementById('field-pop');
+    let popTrigger = null;
+    function showPop(btn) {
+      pop.textContent = btn.getAttribute('data-help') || '';
+      pop.hidden = false;
+      const pw = Math.min(320, window.innerWidth - 24);
+      pop.style.width = pw + 'px';
+      const r = btn.getBoundingClientRect();
+      let left = r.left + r.width / 2 - pw / 2;
+      left = Math.max(12, Math.min(left, window.innerWidth - pw - 12));
+      pop.style.left = left + 'px';
+      const ph = pop.offsetHeight;
+      let top = r.bottom + 8;
+      if (top + ph > window.innerHeight - 8) top = r.top - ph - 8;
+      pop.style.top = Math.max(8, top) + 'px';
+      pop.classList.add('is-open');
+      btn.setAttribute('aria-expanded', 'true');
+      popTrigger = btn;
+    }
+    let popPinned = false;
+    function hidePop() {
+      if (!pop) return;
+      pop.hidden = true;
+      pop.classList.remove('is-open');
+      if (popTrigger) popTrigger.setAttribute('aria-expanded', 'false');
+      popTrigger = null;
+      popPinned = false;
+    }
+    if (pop) {
+      const canHover = window.matchMedia && window.matchMedia('(hover: hover)').matches;
+      document.querySelectorAll('.calc-help__btn').forEach((btn) => {
+        btn.setAttribute('aria-expanded', 'false');
+        // click pins the bubble open (works on touch too)
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (popTrigger === btn && popPinned) {
+            hidePop();
+          } else {
+            showPop(btn);
+            popPinned = true;
+          }
+        });
+        // hover shows it transiently on pointer devices
+        if (canHover) {
+          btn.addEventListener('mouseenter', () => {
+            if (!popPinned) showPop(btn);
+          });
+          btn.addEventListener('mouseleave', () => {
+            if (!popPinned) hidePop();
+          });
+          btn.addEventListener('focus', () => {
+            if (!popPinned) showPop(btn);
+          });
+          btn.addEventListener('blur', () => {
+            if (!popPinned) hidePop();
+          });
+        }
+      });
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest || !e.target.closest('.calc-help__btn')) hidePop();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') hidePop();
+      });
+      window.addEventListener('scroll', hidePop, true);
+      window.addEventListener('resize', hidePop);
+    }
+
+    // ---------- FX live rate ----------
+    const fxBtn = document.getElementById('fx-refresh');
+    const fxNote = document.getElementById('fx-note');
+    if (fxBtn) {
+      fxBtn.addEventListener('click', async () => {
+        fxBtn.classList.add('is-spinning');
+        if (fxNote) {
+          fxNote.textContent = 'Fetching the live rate…';
+          fxNote.className = 'calc-field__hint';
+        }
+        try {
+          const res = await fetch('/api/fx-rate');
+          const data = await res.json().catch(() => ({}));
+          if (!res.ok || !data.rate) throw new Error(data.error || 'No rate returned.');
+          const fxInput = document.getElementById('fx');
+          fxInput.value = data.rate;
+          fxInput.dispatchEvent(new Event('input', { bubbles: true }));
+          if (fxNote) {
+            fxNote.textContent = 'Live rate: 1 USD = ' + data.rate + ' RMB.';
+            fxNote.className = 'calc-field__hint calc-field__hint--ok';
+          }
+        } catch (err) {
+          if (fxNote) {
+            fxNote.textContent = 'Could not fetch a live rate. Keeping your value.';
+            fxNote.className = 'calc-field__hint calc-field__hint--err';
+          }
+        } finally {
+          fxBtn.classList.remove('is-spinning');
+        }
+      });
+    }
+
+    // ---------- compute (faithful port of the one-pager) ----------
+    function readInputs() {
+      const out = {};
+      form.querySelectorAll('input[data-kind]').forEach((el) => {
+        const kind = el.getAttribute('data-kind');
+        const raw = el.value.trim();
+        if (raw === '') {
+          out[el.name] = null;
+          return;
+        }
+        let v = parseFloat(raw);
+        if (!Number.isFinite(v)) v = 0;
+        if (kind === 'percent') v = v / 100;
+        out[el.name] = v;
+      });
+      return out;
+    }
+
+    function compute(i) {
+      const gmv = i.gmv || 0;
+      const aov = i.aov || 1;
+      const orders = gmv / aov;
+
+      const setup = {
+        'Platform deposit (refundable)': i.platformDeposit || 0,
+        'Bonded warehouse deposit (refundable)': i.whDeposit || 0,
+        'Bonded warehouse tax prepayment': i.whTaxPrepay || 0,
+        'CN trademark registration': i.trademark || 0,
+        'Brand setup contribution': i.brandSetup || 0,
+      };
+      const setupTotal = Object.values(setup).reduce((a, b) => a + b, 0);
+
+      function scenario(roas) {
+        const media = roas > 0 ? (gmv * (i.paidShare || 0)) / roas : 0;
+        const adBuy = media * (i.adBuyFee || 0);
+        const op = {
+          'Mainland agent (境内代理人)': i.agentFee || 0,
+          'Brand marketing co-fund': i.coFund || 0,
+          'Paid media (千川 Qianchuan)': media,
+          'Ad-buying service fee': adBuy,
+          'KOL commission': gmv * (i.kolShare || 0) * (i.kolCommission || 0),
+          'Platform tech service fee': gmv * (i.techFee || 0),
+          'Bonded warehouse storage': orders * (i.storage || 0) * 2,
+          'Last-mile shipping': orders * (i.shipping || 0),
+          'Returns handling': orders * (i.returnRate || 0) * (i.returnHandling || 0),
+          'CBEC comprehensive import tax': gmv * (i.cbecTax || 0),
+          'VAT on China services':
+            ((i.agentFee || 0) + (i.coFund || 0) + gmv * (i.techFee || 0) + adBuy) *
+            (i.vatServices || 0),
+        };
+        const opTotal = Object.values(op).reduce((a, b) => a + b, 0);
+        const total = setupTotal + opTotal;
+        const refundable = (i.platformDeposit || 0) + (i.whDeposit || 0) + (i.whTaxPrepay || 0);
+        const netSunk = total - refundable;
+        const totalUSD = i.fx > 0 ? total / i.fx : 0;
+        const costPerOrder = orders > 0 ? total / orders : 0;
+        const totalPctGmv = gmv > 0 ? total / gmv : 0;
+        const opPctGmv = gmv > 0 ? opTotal / gmv : 0;
+
+        let breakeven = null;
+        let contribution = null;
+        if (i.grossMargin != null) {
+          contribution = gmv * i.grossMargin - total;
+          const denom = i.grossMargin - opPctGmv;
+          breakeven = denom <= 0 ? 'GM too low' : setupTotal / denom;
+        }
+
+        // Buckets for the composition bar
+        const buckets = [
+          { key: 'Setup', color: '#c8102e', value: setupTotal },
+          { key: 'Paid media', color: '#e2683b', value: op['Paid media (千川 Qianchuan)'] + op['Ad-buying service fee'] },
+          { key: 'KOL commission', color: '#f4b740', value: op['KOL commission'] },
+          { key: 'Tax and VAT', color: '#7b61a8', value: op['CBEC comprehensive import tax'] + op['VAT on China services'] + op['Platform tech service fee'] },
+          { key: 'Logistics', color: '#3aa0c8', value: op['Bonded warehouse storage'] + op['Last-mile shipping'] + op['Returns handling'] },
+          { key: 'Fixed services', color: '#2fb67f', value: op['Mainland agent (境内代理人)'] + op['Brand marketing co-fund'] },
+        ];
+
+        return { op, opTotal, total, refundable, netSunk, totalUSD, costPerOrder, totalPctGmv, opPctGmv, breakeven, contribution, buckets };
+      }
+
+      return {
+        orders,
+        aov,
+        gmv,
+        setup,
+        setupTotal,
+        a: scenario(i.roasA || 0),
+        b: scenario(i.roasB || 0),
+        hasGm: i.grossMargin != null,
+      };
+    }
+
+    // ---------- count-up ----------
+    function animateCount(el, target, fmt) {
+      if (prefersReduced) {
+        el.textContent = fmt(target);
+        return;
+      }
+      const start = performance.now();
+      const dur = 850;
+      function tick(now) {
+        const p = Math.min(1, (now - start) / dur);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = fmt(target * eased);
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    // ---------- results rendering ----------
+    let state = null; // { i, r }
+    let active = 'a';
+
+    function renderFocus() {
+      if (!state) return;
+      const r = state.r;
+      const s = r[active];
+      const i = state.i;
+
+      animateCount(document.getElementById('focus-total'), s.total, rmb0);
+      animateCount(document.getElementById('focus-usd'), s.totalUSD, usd0);
+      animateCount(document.getElementById('focus-sunk'), s.netSunk, rmb0);
+      animateCount(document.getElementById('focus-cpo'), s.costPerOrder, rmb0);
+      document.getElementById('focus-cpo-foot').textContent = 'vs ' + rmb0(i.aov || 0) + ' AOV';
+      document.getElementById('focus-pct').textContent = pct1(s.totalPctGmv);
+
+      const be = document.getElementById('focus-be');
+      const beWrap = document.getElementById('focus-be-wrap');
+      if (r.hasGm) {
+        be.textContent = typeof s.breakeven === 'string' ? s.breakeven : rmb0(s.breakeven);
+        beWrap.classList.remove('is-muted');
+      } else {
+        be.textContent = 'Add margin';
+        beWrap.classList.add('is-muted');
+      }
+
+      // composition bar
+      const bar = document.getElementById('compo-bar');
+      const legend = document.getElementById('compo-legend');
+      document.getElementById('compo-total').textContent = rmb0(s.total) + ' total';
+      const total = s.total || 1;
+      bar.innerHTML = s.buckets
+        .map((b) => {
+          const w = (b.value / total) * 100;
+          return (
+            '<span class="calc-compo__seg" style="--w:' +
+            w +
+            '%;--c:' +
+            b.color +
+            '" title="' +
+            b.key +
+            ': ' +
+            rmb0(b.value) +
+            '"></span>'
+          );
+        })
+        .join('');
+      // trigger width transition
+      if (!prefersReduced) {
+        requestAnimationFrame(() => {
+          bar.querySelectorAll('.calc-compo__seg').forEach((seg) => seg.classList.add('is-grown'));
+        });
+      } else {
+        bar.querySelectorAll('.calc-compo__seg').forEach((seg) => seg.classList.add('is-grown'));
+      }
+      legend.innerHTML = s.buckets
+        .map(
+          (b) =>
+            '<li class="calc-compo__legend-item"><span class="calc-compo__dot" style="background:' +
+            b.color +
+            '"></span><span class="calc-compo__legend-key">' +
+            b.key +
+            '</span><span class="calc-compo__legend-val">' +
+            rmb0(b.value) +
+            ' · ' +
+            ((b.value / total) * 100).toFixed(0) +
+            '%</span></li>',
+        )
+        .join('');
+    }
+
+    function renderTable() {
+      const r = state.r;
+      const body = document.getElementById('calc-table-body');
+      const sectionRow = (label) =>
+        '<tr class="calc-table__section"><td colspan="3">' + label + '</td></tr>';
+      const dataRow = (label, va, vb, strong) =>
+        '<tr' + (strong ? ' class="calc-table__total"' : '') + '><td>' + label + '</td><td>' + rmb0(va) + '</td><td>' + rmb0(vb) + '</td></tr>';
+      let rows = sectionRow('Setup, one-time');
+      Object.keys(r.setup).forEach((k) => {
+        rows += dataRow(k, r.setup[k], r.setup[k], false);
+      });
+      rows += dataRow('Subtotal setup', r.setupTotal, r.setupTotal, true);
+      rows += sectionRow('Operating, annual');
+      Object.keys(r.a.op).forEach((k) => {
+        rows += dataRow(k, r.a.op[k], r.b.op[k], false);
+      });
+      rows += dataRow('Subtotal operating', r.a.opTotal, r.b.opTotal, true);
+      rows += sectionRow('Totals');
+      rows += dataRow('Total Year 1 (RMB)', r.a.total, r.b.total, true);
+      rows += dataRow('Of which refundable', r.a.refundable, r.b.refundable, false);
+      rows += dataRow('Net sunk cost', r.a.netSunk, r.b.netSunk, true);
+      rows +=
+        '<tr class="calc-table__total"><td>Total Year 1 (USD)</td><td>' + usd0(r.a.totalUSD) + '</td><td>' + usd0(r.b.totalUSD) + '</td></tr>';
+      body.innerHTML = rows;
+    }
+
+    function renderResults() {
+      const i = state.i;
+      const r = state.r;
+      document.getElementById('calc-results-sub').textContent =
+        'Based on ' + rmb0(i.gmv || 0) + ' GMV, ' + Math.round(r.orders).toLocaleString('en-US') + ' orders a year at ' + rmb0(i.aov || 0) + ' average order value.';
+      renderFocus();
+      renderTable();
+      results.hidden = false;
+      results.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in'));
+    }
+
+    // export to PDF via the browser print dialog (no dependency, China-safe)
+    const pdfBtn = document.getElementById('calc-pdf');
+    if (pdfBtn) {
+      pdfBtn.addEventListener('click', () => {
+        const detail = document.querySelector('.calc-detail');
+        if (detail) detail.open = true; // make sure the full table prints
+        window.print();
+      });
+    }
+
+    // scenario tabs
+    document.querySelectorAll('.calc-scenario__tab').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        active = tab.getAttribute('data-scenario');
+        document.querySelectorAll('.calc-scenario__tab').forEach((t) => {
+          const on = t === tab;
+          t.classList.toggle('is-active', on);
+          t.setAttribute('aria-selected', String(on));
+        });
+        renderFocus();
+      });
+    });
+
+    // ---------- lead payload ----------
+    function leadPayloadExtras(r) {
+      const inputs = [];
+      form.querySelectorAll('input[data-kind]').forEach((el) => {
+        const label = el.getAttribute('data-label') || el.name;
+        const kind = el.getAttribute('data-kind');
+        let val = el.value.trim();
+        if (val === '') val = '—not set—';
+        else if (kind === 'money') val = 'RMB ' + Number(val).toLocaleString('en-US');
+        else if (kind === 'percent') val = val + '%';
+        inputs.push({ label, value: val });
+      });
+      const out = [
+        { label: 'Total Year 1 (A, ROAS 1.5x)', value: rmb0(r.a.total) + ' / ' + usd0(r.a.totalUSD) },
+        { label: 'Total Year 1 (B, ROAS 3.0x)', value: rmb0(r.b.total) + ' / ' + usd0(r.b.totalUSD) },
+        { label: 'Net sunk cost (A)', value: rmb0(r.a.netSunk) },
+        { label: 'Net sunk cost (B)', value: rmb0(r.b.netSunk) },
+        { label: 'Cost per order (A)', value: rmb0(r.a.costPerOrder) },
+        { label: 'Cost as % of GMV (A)', value: pct1(r.a.totalPctGmv) },
+      ];
+      if (r.hasGm) {
+        const beA = typeof r.a.breakeven === 'string' ? r.a.breakeven : rmb0(r.a.breakeven);
+        out.push({ label: 'Breakeven GMV (A)', value: beA });
+      }
+      return { inputs, results: out };
+    }
+
+    // ---------- gate ----------
+    let lastFocus = null;
+    function openGate() {
+      lastFocus = document.activeElement;
+      gate.hidden = false;
+      gate.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      const first = document.getElementById('lead-name');
+      if (first) first.focus();
+    }
+    function closeGate() {
+      gate.hidden = true;
+      gate.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+    gate.querySelectorAll('[data-close]').forEach((el) => el.addEventListener('click', closeGate));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !gate.hidden) closeGate();
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const i = readInputs();
+      state = { i, r: compute(i) };
+      openGate();
+    });
+
+    const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    gateForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      gateStatus.textContent = '';
+      gateStatus.className = 'calc-gate__status';
+      const data = new FormData(gateForm);
+      const name = String(data.get('name') || '').trim();
+      const email = String(data.get('email') || '').trim();
+      const company = String(data.get('company') || '').trim();
+      if (!name || !EMAIL_RE.test(email)) {
+        gateStatus.textContent = 'Please add your name and a valid work email.';
+        gateStatus.classList.add('calc-gate__status--error');
+        return;
+      }
+
+      // Capture the lead in the background. The reveal never waits on it, so a
+      // mail-backend hiccup can't block the visitor from seeing their numbers.
+      const extras = state ? leadPayloadExtras(state.r) : { inputs: [], results: [] };
+      fetch('/api/calculator-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, company, inputs: extras.inputs, results: extras.results }),
+      }).catch(() => {
+        /* lead capture is best-effort; ignore failures */
+      });
+
+      // Reveal the Cost Stack results immediately.
+      closeGate();
+      renderResults();
+      results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  })();
+</script>
+
+<style>
+  /* ---------- scroll reveal ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.6s var(--ease),
+      transform 0.6s var(--ease);
+  }
+  .reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+  .calc-flow__step.reveal {
+    transition-delay: calc(var(--i) * 90ms);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  /* ---------- hero scroll cue ---------- */
+  .tool-hero__scroll {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: var(--space-6);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--fs-small);
+    font-weight: 600;
+  }
+  .tool-hero__scroll:hover {
+    color: #fff;
+  }
+  .tool-hero__scroll svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    animation: heroBob 1.8s ease-in-out infinite;
+  }
+  @keyframes heroBob {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(4px);
+    }
+  }
+
+  /* ---------- how it works ---------- */
+  .calc-how__head {
+    max-width: 60ch;
+    margin-bottom: var(--space-6);
+  }
+  .calc-how__title {
+    margin: 0;
+  }
+  .calc-flow {
+    list-style: none;
+    margin: 0 0 var(--space-6);
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-5);
+    position: relative;
+  }
+  .calc-flow__step {
+    position: relative;
+    padding: var(--space-5);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-lg);
+    transition:
+      transform var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease),
+      border-color var(--dur) var(--ease);
+  }
+  .calc-flow__step:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--bbg-blue);
+  }
+  .calc-flow__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-md);
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+    margin-bottom: var(--space-4);
+  }
+  .calc-flow__icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .calc-flow__step-title {
+    font-size: var(--fs-h4);
+    margin: 0 0 var(--space-2);
+    color: var(--bbg-ink);
+  }
+  .calc-flow__step-body {
+    margin: 0;
+    font-size: var(--fs-small);
+    color: var(--bbg-text);
+    line-height: 1.6;
+  }
+  .calc-perks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-5);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(120deg, #101012, #23131a);
+    color: #fff;
+  }
+  .calc-perks__label {
+    font-size: var(--fs-label);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ff5a72;
+  }
+  .calc-perks__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-5);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .calc-perks__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--fs-small);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .calc-perks__item svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    color: #2fb67f;
+    flex-shrink: 0;
+  }
+
+  /* ---------- calculator head ---------- */
+  .calc__head {
+    max-width: 60ch;
+    margin-bottom: var(--space-6);
+  }
+  .calc__title {
+    margin: 0 0 var(--space-2);
+  }
+  .calc__sub {
+    color: var(--bbg-text-muted);
+    margin: 0;
+  }
+
+  /* ---------- shell: main + sticky rail ---------- */
+  .calc-shell {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    align-items: start;
+  }
+  @media (min-width: 960px) {
+    .calc-shell {
+      grid-template-columns: minmax(0, 1fr) 340px;
+    }
+  }
+  .calc-main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    min-width: 0;
+  }
+  .calc-card {
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+  }
+  .calc-card__head {
+    margin-bottom: var(--space-5);
+  }
+  .calc-card__title {
+    font-size: var(--fs-h4);
+    margin: 0;
+    color: var(--bbg-ink);
+  }
+  .calc-card__hint {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
+
+  /* ---------- drivers (sliders) ---------- */
+  .calc-drivers__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-5);
+  }
+  .driver__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-bottom: 0.65rem;
+    flex-wrap: wrap;
+  }
+  .driver__label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--bbg-ink);
+    line-height: 1.3;
+  }
+  .driver__value {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    background: var(--bbg-surface);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-sm);
+    padding: 0.3rem 0.5rem;
+    flex-shrink: 0;
+  }
+  .driver__num {
+    width: 9ch;
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--bbg-ink);
+    text-align: right;
+    padding: 0;
+    -moz-appearance: textfield;
+  }
+  .driver__num::-webkit-outer-spin-button,
+  .driver__num::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .driver__num:focus {
+    outline: none;
+  }
+  .driver__unit {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--bbg-text-muted);
+  }
+  .driver__range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 999px;
+    background: linear-gradient(
+      90deg,
+      var(--bbg-blue) var(--pct, 20%),
+      var(--bbg-border) var(--pct, 20%)
+    );
+    cursor: pointer;
+  }
+  .driver__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--bbg-blue);
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: transform var(--dur) var(--ease);
+  }
+  .driver__range::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+  }
+  .driver__range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--bbg-blue);
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+  }
+
+  /* ---------- advanced accordion ---------- */
+  .calc-advanced {
+    padding: 0;
+    overflow: hidden;
+  }
+  .calc-advanced__toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+  }
+  .calc-advanced__toggle-title {
+    display: block;
+    font-size: var(--fs-h4);
+    font-weight: 600;
+    color: var(--bbg-ink);
+  }
+  .calc-advanced__toggle-sub {
+    display: block;
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
+  .calc-advanced__chevron {
+    display: inline-flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--bbg-surface);
+    color: var(--bbg-ink);
+    flex-shrink: 0;
+    transition: transform var(--dur) var(--ease);
+  }
+  .calc-advanced__chevron svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .calc-advanced__toggle[aria-expanded='true'] .calc-advanced__chevron {
+    transform: rotate(180deg);
+    background: var(--bbg-blue);
+    color: #fff;
+  }
+  .calc-advanced__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease);
+  }
+  /* tabs inside the fine-tune panel */
+  .calc-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.4rem;
+    padding: var(--space-4) var(--space-5) 0;
+    border-bottom: 1px solid var(--bbg-border);
+  }
+  .calc-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 0.85rem;
+    border: 0;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: var(--bbg-text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      color var(--dur) var(--ease),
+      background var(--dur) var(--ease),
+      border-color var(--dur) var(--ease);
+  }
+  .calc-tab:hover {
+    background: var(--bbg-surface);
+  }
+  .calc-tab:hover {
+    color: var(--bbg-ink);
+  }
+  .calc-tab.is-active {
+    color: var(--bbg-blue);
+    border-bottom-color: var(--bbg-blue);
+  }
+  .calc-tab__icon {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--bbg-surface);
+    color: inherit;
+    flex-shrink: 0;
+    transition: background var(--dur) var(--ease);
+  }
+  .calc-tab.is-active .calc-tab__icon {
+    background: var(--bbg-blue-light);
+  }
+  .calc-tab__icon svg {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+  .calc-tabpanels {
+    padding: var(--space-5);
+  }
+  .calc-tabpanel {
+    animation: tabIn 0.35s var(--ease);
+  }
+  .calc-tabpanel[hidden] {
+    display: none;
+  }
+  @keyframes tabIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+  .calc-tabpanel__fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-4) var(--space-5);
+  }
+  .calc-group__icon {
+    display: inline-flex;
+    width: 1.75rem;
+    height: 1.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+  }
+  .calc-group__icon svg {
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+  .calc-group__note {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    margin: 0 0 var(--space-3);
+  }
+  .calc-group__fields {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-top: var(--space-3);
+  }
+  .calc-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .calc-field__label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--bbg-ink);
+  }
+
+  /* help trigger + bubble */
+  .calc-label-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-width: 0;
+  }
+  .calc-help__btn {
+    width: 1.1rem;
+    height: 1.1rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid var(--bbg-border);
+    background: var(--bbg-surface);
+    color: var(--bbg-text-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--dur) var(--ease);
+  }
+  .calc-help__btn:hover,
+  .calc-help__btn[aria-expanded='true'] {
+    background: var(--bbg-blue);
+    color: #fff;
+    border-color: var(--bbg-blue);
+  }
+  .field-pop {
+    position: fixed;
+    z-index: 1200;
+    max-width: 320px;
+    background: var(--bbg-ink);
+    color: #fff;
+    padding: 0.85rem 0.95rem;
+    border-radius: var(--radius-md);
+    font-size: var(--fs-small);
+    font-weight: 400;
+    line-height: 1.55;
+    box-shadow: var(--shadow-lg);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition:
+      opacity 0.16s var(--ease),
+      transform 0.16s var(--ease);
+  }
+  .field-pop[hidden] {
+    display: none;
+  }
+  .field-pop.is-open {
+    opacity: 1;
+    transform: none;
+  }
+  .calc-field__hint {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    margin: 0;
+  }
+  .calc-field__hint--ok {
+    color: var(--bbg-success);
+    font-weight: 600;
+  }
+  .calc-field__hint--err {
+    color: var(--bbg-danger);
+    font-weight: 600;
+  }
+  .calc-input-wrap {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-sm);
+    background: var(--bbg-white);
+    overflow: hidden;
+    transition:
+      border-color var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease);
+  }
+  .calc-input-wrap:focus-within {
+    border-color: var(--bbg-blue);
+    box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.18);
+  }
+  .calc-input-affix {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.7rem;
+    background: var(--bbg-surface);
+    color: var(--bbg-text-muted);
+    font-size: var(--fs-small);
+    font-weight: 600;
+    border-right: 1px solid var(--bbg-border);
+  }
+  .calc-input-affix--suffix {
+    border-right: 0;
+    border-left: 1px solid var(--bbg-border);
+  }
+  .calc-input {
+    flex: 1;
+    width: 100%;
+    border: 0;
+    padding: 0.7rem 0.8rem;
+    font-size: 1rem;
+    color: var(--bbg-ink);
+    background: transparent;
+    min-width: 0;
+  }
+  .calc-input:focus {
+    outline: none;
+  }
+  .calc-fx-link {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.6rem;
+    margin-top: 0.15rem;
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+      background var(--dur) var(--ease),
+      border-color var(--dur) var(--ease);
+  }
+  .calc-fx-link:hover {
+    border-color: var(--bbg-blue);
+  }
+  .calc-fx-link__icon {
+    display: inline-flex;
+  }
+  .calc-fx-link__icon svg {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+  .calc-fx-link.is-spinning .calc-fx-link__icon {
+    animation: fxspin 0.7s linear infinite;
+  }
+  @keyframes fxspin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .calc-input--text {
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-sm);
+    width: 100%;
+    padding: 0.85rem 1rem;
+  }
+  .calc-input--text:focus {
+    border-color: var(--bbg-blue);
+    box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.18);
+  }
+
+  /* ---------- sticky preview rail ---------- */
+  .calc-rail {
+    position: relative;
+  }
+  @media (min-width: 960px) {
+    .calc-rail {
+      position: sticky;
+      top: calc(var(--nav-h) + var(--space-4));
+    }
+  }
+  .calc-preview {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    background: linear-gradient(160deg, #14141a 0%, #1f1013 100%);
+    color: #fff;
+    box-shadow: var(--shadow-lg);
+  }
+  .calc-preview__glow {
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    width: 70%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(200, 16, 46, 0.5), transparent 65%);
+    pointer-events: none;
+  }
+  .calc-preview__eyebrow {
+    position: relative;
+    font-size: var(--fs-label);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ff5a72;
+  }
+  .calc-preview__orders {
+    position: relative;
+    margin: var(--space-3) 0 var(--space-5);
+    display: flex;
+    flex-direction: column;
+  }
+  .calc-preview__orders-num {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .calc-preview__orders-num.is-pulse {
+    animation: pulseNum 0.4s var(--ease);
+  }
+  @keyframes pulseNum {
+    0% {
+      transform: scale(1);
+      color: #fff;
+    }
+    40% {
+      transform: scale(1.06);
+      color: #ff8a9b;
+    }
+    100% {
+      transform: scale(1);
+      color: #fff;
+    }
+  }
+  .calc-preview__orders-label {
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.65);
+    margin-top: 0.35rem;
+  }
+  .calc-preview__locked {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: var(--space-5);
+  }
+  .calc-preview__locked-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .calc-preview__blur {
+    filter: blur(6px);
+    font-weight: 700;
+    color: #fff;
+    user-select: none;
+  }
+  .calc-preview__lock {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .calc-preview__lock svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .calc-preview__cta {
+    position: relative;
+    width: 100%;
+  }
+  .calc-preview__note {
+    position: relative;
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.55);
+    margin: var(--space-3) 0 0;
+  }
+
+  /* ---------- results ---------- */
+  .calc-results {
+    margin-top: var(--space-8);
+    padding-top: var(--space-7);
+    border-top: 1px solid var(--bbg-border);
+  }
+  .calc-results__head {
+    margin-bottom: var(--space-6);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .calc-results__pdf {
+    flex-shrink: 0;
+  }
+  .calc-results__pdf svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  .calc-results__title {
+    margin: 0 0 var(--space-2);
+  }
+  .calc-results__sub {
+    color: var(--bbg-text-muted);
+    margin: 0;
+  }
+  .calc-scenario__tabs {
+    display: inline-flex;
+    gap: 0.35rem;
+    padding: 0.35rem;
+    background: var(--bbg-surface);
+    border: 1px solid var(--bbg-border);
+    border-radius: 999px;
+    margin-bottom: var(--space-5);
+  }
+  .calc-scenario__tab {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    padding: 0.55rem 1.1rem;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    transition: all var(--dur) var(--ease);
+  }
+  .calc-scenario__tab-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--bbg-ink);
+  }
+  .calc-scenario__tab-sub {
+    font-size: 0.72rem;
+    color: var(--bbg-text-muted);
+  }
+  .calc-scenario__tab.is-active {
+    background: var(--bbg-blue);
+    box-shadow: var(--shadow-sm);
+  }
+  .calc-scenario__tab.is-active .calc-scenario__tab-name,
+  .calc-scenario__tab.is-active .calc-scenario__tab-sub {
+    color: #fff;
+  }
+
+  .calc-focus {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+  }
+  @media (min-width: 820px) {
+    .calc-focus {
+      grid-template-columns: 320px 1fr;
+    }
+  }
+  .calc-focus__hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: var(--space-6) var(--space-5);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(160deg, #14141a, #23131a);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .calc-focus__hero::after {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -20%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(200, 16, 46, 0.55), transparent 65%);
+  }
+  .calc-focus__hero-label {
+    position: relative;
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+  }
+  .calc-focus__hero-num {
+    position: relative;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+  .calc-focus__hero-usd {
+    position: relative;
+    font-size: var(--fs-lead);
+    color: #ff8a9b;
+    font-weight: 600;
+  }
+  .calc-focus__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-4);
+  }
+  .calc-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: var(--space-4);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    transition:
+      transform var(--dur) var(--ease),
+      border-color var(--dur) var(--ease);
+  }
+  .calc-stat:hover {
+    transform: translateY(-3px);
+    border-color: var(--bbg-blue);
+  }
+  .calc-stat.is-muted {
+    opacity: 0.6;
+  }
+  .calc-stat__label {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    font-weight: 600;
+  }
+  .calc-stat__value {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--bbg-ink);
+    line-height: 1.1;
+  }
+  .calc-stat__foot {
+    font-size: 0.78rem;
+    color: var(--bbg-text-muted);
+  }
+
+  /* ---------- composition bar ---------- */
+  .calc-compo {
+    padding: var(--space-5);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-6);
+  }
+  .calc-compo__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+  }
+  .calc-compo__title {
+    font-size: var(--fs-h4);
+    margin: 0;
+    color: var(--bbg-ink);
+  }
+  .calc-compo__total {
+    font-size: var(--fs-small);
+    font-weight: 700;
+    color: var(--bbg-text-muted);
+  }
+  .calc-compo__bar {
+    display: flex;
+    height: 28px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: var(--bbg-surface);
+  }
+  .calc-compo__seg {
+    width: 0;
+    background: var(--c);
+    transition: width 0.8s var(--ease);
+  }
+  .calc-compo__seg.is-grown {
+    width: var(--w);
+  }
+  .calc-compo__legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.6rem var(--space-4);
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .calc-compo__legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--fs-small);
+  }
+  .calc-compo__dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .calc-compo__legend-key {
+    color: var(--bbg-text);
+    font-weight: 600;
+  }
+  .calc-compo__legend-val {
+    margin-left: auto;
+    color: var(--bbg-text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- detail table ---------- */
+  .calc-detail {
+    margin-bottom: var(--space-6);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    background: var(--bbg-white);
+  }
+  .calc-detail__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--bbg-ink);
+    list-style: none;
+  }
+  .calc-detail__summary::-webkit-details-marker {
+    display: none;
+  }
+  .calc-detail__summary svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: transform var(--dur) var(--ease);
+  }
+  .calc-detail[open] .calc-detail__summary svg {
+    transform: rotate(180deg);
+  }
+  .calc-table-wrap {
+    overflow-x: auto;
+    border-top: 1px solid var(--bbg-border);
+  }
+  .calc-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 560px;
+  }
+  .calc-table th,
+  .calc-table td {
+    text-align: right;
+    padding: 0.7rem 1rem;
+    font-size: var(--fs-small);
+  }
+  .calc-table th:first-child,
+  .calc-table td:first-child {
+    text-align: left;
+  }
+  .calc-table thead th {
+    background: var(--bbg-surface);
+    color: var(--bbg-ink);
+    font-weight: 700;
+    vertical-align: bottom;
+  }
+  .calc-table thead th span {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--bbg-text-muted);
+  }
+  .calc-table tbody td {
+    border-top: 1px solid var(--bbg-border);
+    color: var(--bbg-text);
+    font-variant-numeric: tabular-nums;
+  }
+  .calc-table__section td {
+    background: var(--bbg-surface);
+    font-weight: 700;
+    color: var(--bbg-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.72rem;
+  }
+  .calc-table__total td {
+    font-weight: 700;
+    color: var(--bbg-ink);
+  }
+
+  /* ---------- notes + cta ---------- */
+  .calc-notes {
+    margin-bottom: var(--space-6);
+  }
+  .calc-notes__title {
+    font-size: var(--fs-h4);
+    margin: 0 0 var(--space-4);
+  }
+  .calc-notes__list {
+    margin: 0;
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    color: var(--bbg-text);
+    max-width: 78ch;
+  }
+  .calc-notes__list li {
+    font-size: var(--fs-small);
+    line-height: 1.6;
+  }
+  .calc-cta {
+    padding: var(--space-5);
+    background: linear-gradient(120deg, #101012, #23131a);
+    color: #fff;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .calc-cta p {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  /* ---------- email gate ---------- */
+  .calc-gate {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+  }
+  .calc-gate[hidden] {
+    display: none;
+  }
+  .calc-gate__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(16, 16, 18, 0.6);
+    backdrop-filter: blur(3px);
+    animation: fadeIn 0.25s var(--ease);
+  }
+  .calc-gate__panel {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    background: var(--bbg-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6) var(--space-5);
+    box-shadow: var(--shadow-lg);
+    max-height: 92vh;
+    overflow-y: auto;
+    animation: gatePop 0.3s var(--ease);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes gatePop {
+    from {
+      opacity: 0;
+      transform: translateY(16px) scale(0.98);
+    }
+  }
+  .calc-gate__close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 2rem;
+    height: 2rem;
+    border: 0;
+    background: transparent;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--bbg-text-muted);
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+  }
+  .calc-gate__close:hover {
+    background: var(--bbg-surface);
+    color: var(--bbg-ink);
+  }
+  .calc-gate__title {
+    font-size: var(--fs-h3);
+    margin: 0 0 var(--space-3);
+    color: var(--bbg-ink);
+  }
+  .calc-gate__lead {
+    color: var(--bbg-text);
+    margin: 0 0 var(--space-5);
+  }
+  .calc-gate__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .calc-gate__submit {
+    width: 100%;
+    margin-top: var(--space-2);
+  }
+  .calc-gate__note {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    margin: 0;
+  }
+  .calc-gate__status {
+    margin: 0;
+    font-size: var(--fs-small);
+    min-height: 1.2em;
+  }
+  .calc-gate__status--error {
+    color: var(--bbg-danger);
+  }
+
+  @media (max-width: 640px) {
+    .calc-cta,
+    .calc-compo__head {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+<style is:global>
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    #calc-results,
+    #calc-results * {
+      visibility: visible;
+    }
+    #calc-results {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+    .calc-results__pdf {
+      display: none !important;
+    }
+    /* keep the detail table open and printed */
+    .calc-detail__summary {
+      display: none;
+    }
+    /* preserve chart and card colours in the PDF */
+    .calc-compo__bar,
+    .calc-compo__seg,
+    .calc-compo__dot,
+    .calc-focus__hero,
+    .calc-scenario__tab.is-active {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @page {
+      margin: 1.5cm;
+    }
+  }
+</style>
