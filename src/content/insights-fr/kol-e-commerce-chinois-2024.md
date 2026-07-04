@@ -79,7 +79,7 @@ La beauté demeure la catégorie reine du e-commerce chinois. Tutoriels, tests, 
 * **Plateforme** : Xiaohongshu
 * **Abonnés** : 4,4 millions
 
-Yimoney teste sans détour. Du luxe au drugstore abordable, elle livre des avis francs et des tutoriels précis. Pour viser une cible passionnée de beauté, les marques la placent en tête de leur shortlist, souvent par l'intermédiaire d'une agence digitale locale.
+Yimoney teste sans détour. Du luxe au drugstore abordable, elle livre des avis francs et des tutoriels précis. Pour viser une cible passionnée de beauté, les marques la placent en tête de leur liste restreinte, souvent par l'intermédiaire d'une agence digitale locale.
 
 ![Yimoney, tests beauté](/Images/insights/2024/12/yim-final.png)
 

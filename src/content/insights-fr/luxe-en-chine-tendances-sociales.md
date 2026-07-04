@@ -46,7 +46,7 @@ Le social commerce monte en puissance en Chine. Le consommateur apprécie la com
 
 ## Bâtir le capital marque via le contenu
 
-Le content marketing reste essentiel pour bâtir le capital marque et tisser un lien plus profond avec les consommateurs. Les maisons de luxe produisent des contenus de haute qualité qui reflètent leurs valeurs et résonnent avec leur public cible. Storytelling, coulisses, formats interactifs : autant de leviers qui musclent la perception de marque et la fidélité.
+Le marketing de contenu reste essentiel pour bâtir le capital marque et tisser un lien plus profond avec les consommateurs. Les maisons de luxe produisent des contenus de haute qualité qui reflètent leurs valeurs et résonnent avec leur public cible. Storytelling, coulisses, formats interactifs : autant de leviers qui musclent la perception de marque et la fidélité.
 
 ## Personnalisation et expérience client
 

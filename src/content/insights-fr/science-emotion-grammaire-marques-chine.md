@@ -33,9 +33,9 @@ Un tel écart ne tient pas à une formule. Il survient quand une [marque](/fr/en
 
 Les deux maisons revendiquaient des partenariats hospitaliers, une distribution en pharmacie sur des milliers de points de vente et des références cliniques solides. Sur le papier, des pairs.
 
-La structure tranchait. Kefumei concentrait 75 % de son chiffre dans des livestreams de KOL stars. Aucun domaine privé. Aucun CRM. Aucune communauté. Quand le coût du trafic a flambé pendant le Double 11 et que les algorithmes ont pivoté, l'édifice s'est effondré. Rien ne retenait les clients en bas du funnel.
+La structure tranchait. Kefumei concentrait 75 % de son chiffre dans des livestreams de KOL stars. Aucun domaine privé. Aucun CRM. Aucune communauté. Quand le coût du trafic a flambé pendant le Double 11 et que les algorithmes ont pivoté, l'édifice s'est effondré. Rien ne retenait les clients en bas de l'entonnoir.
 
-C'est l'une des erreurs les plus fréquentes des marques internationales qui entrent en Chine. Le livestream pris pour un canal de distribution, alors qu'il relève du haut de funnel. Le dispositif marche. Jusqu'au jour où il ne marche plus.
+C'est l'une des erreurs les plus fréquentes des marques internationales qui entrent en Chine. Le livestream pris pour un canal de distribution, alors qu'il relève du haut de l'entonnoir. Le dispositif marche. Jusqu'au jour où il ne marche plus.
 
 ## Bâtir d'abord la couche de confiance
 

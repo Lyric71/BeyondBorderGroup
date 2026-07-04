@@ -107,7 +107,7 @@ Travaillez avec une agence digitale en Chine pour décortiquer les indicateurs c
 
 ### Intégrer le KOC dans une stratégie plus large
 
-Combinez les actions KOC aux autres leviers du marketing digital : SEO, paid media, emailing. L'intégration amplifie l'effet global des campagnes.
+Combinez les actions KOC aux autres leviers du marketing digital : SEO, média payant, emailing. L'intégration amplifie l'effet global des campagnes.
 
 ### Suivre les tendances et les retours
 
