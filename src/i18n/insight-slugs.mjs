@@ -68,6 +68,7 @@ export const insightEnToFr = {
     'xianyu-side-hustles-jeunesse-chinoise',
   'independent-chinese-designers-2024-trends-marketing-and-commerce-insights':
     'createurs-chinois-independants-mode-2024',
+  'jd-double-subsidy-plan-supply-chain-play': 'jd-double-subvention-chaine-logistique',
   'luxury-brand-trends-mastering-social-media-in-china': 'luxe-en-chine-tendances-sociales',
   'marketing-strategies-revolutionizing-ai-integrated-pcs-in-china': 'pc-ia-chine-marketing',
   'navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin':
@@ -188,6 +189,7 @@ export const insightEnToDe = {
     'xianyu-nebenverdienst-junge-chinesen',
   'independent-chinese-designers-2024-trends-marketing-and-commerce-insights':
     'unabhaengige-chinesische-designer-mode-2024',
+  'jd-double-subsidy-plan-supply-chain-play': 'jd-doppelsubvention-lieferketten-strategie',
   'luxury-brand-trends-mastering-social-media-in-china': 'luxus-china-social-media-trends',
   'marketing-strategies-revolutionizing-ai-integrated-pcs-in-china': 'ki-pc-china-marketing',
   'navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin':
@@ -304,6 +306,7 @@ export const insightEnToEs = {
     'xianyu-side-hustles-juventud-china',
   'independent-chinese-designers-2024-trends-marketing-and-commerce-insights':
     'disenadores-chinos-independientes-moda-2024',
+  'jd-double-subsidy-plan-supply-chain-play': 'jd-doble-subvencion-cadena-suministro',
   'luxury-brand-trends-mastering-social-media-in-china': 'lujo-china-tendencias-redes-sociales',
   'marketing-strategies-revolutionizing-ai-integrated-pcs-in-china': 'pc-ia-china-marketing',
   'navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin':
