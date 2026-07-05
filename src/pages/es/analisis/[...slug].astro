@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 const {
   title,
   description,
@@ -54,6 +54,18 @@ const KNOWN_AUTHORS: Record<string, AuthorInfo> = {
 };
 const authorInfo: AuthorInfo | undefined = KNOWN_AUTHORS[author];
 const authorLink = authorInfo?.url;
+
+// Índice a partir de los títulos renderizados. H2 y H3, descartando un título
+// inicial que solo repita el título del artículo.
+const normalizeHeading = (s: string) =>
+  s
+    .trim()
+    .replace(/[‘’]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/\s+/g, ' ');
+const toc = headings.filter(
+  (h) => (h.depth === 2 || h.depth === 3) && normalizeHeading(h.text) !== normalizeHeading(title),
+);
 
 const articleJsonLd = articleSchema({
   url: `/es/analisis/${post.id}`,
@@ -148,48 +160,76 @@ const categoryLabel = categoryLabelsEs[category] ?? category;
     }
 
     <div class="insight-article__body">
-      <div class="container container--narrow">
-        {
-          keyTakeaways && keyTakeaways.length > 0 && (
-            <aside class="insight-article__takeaways" aria-label="Lo esencial">
-              <span class="eyebrow">Lo esencial</span>
-              <ul>
-                {keyTakeaways.map((t) => (
-                  <li>{t}</li>
-                ))}
-              </ul>
-            </aside>
-          )
-        }
-        <div class="prose">
-          <Content />
-        </div>
+      <div class="container">
+        <div class="insight-article__layout">
+          {
+            toc.length > 0 && (
+              <aside class="insight-article__toc" aria-label="Tabla de contenidos">
+                <p class="insight-article__toc-title eyebrow">En esta página</p>
+                <nav>
+                  <ul>
+                    {toc.map((h) => (
+                      <li
+                        class:list={[
+                          'insight-article__toc-item',
+                          h.depth === 3 && 'insight-article__toc-item--sub',
+                        ]}
+                      >
+                        <a href={`#${h.slug}`} data-toc-link={h.slug}>
+                          {h.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </aside>
+            )
+          }
 
-        {
-          tags && tags.length > 0 && (
-            <div class="insight-article__tags">
-              <span class="eyebrow">Etiquetas</span>
-              <ul>
-                {tags.map((t) => (
-                  <li>{t}</li>
-                ))}
-              </ul>
+          <div class="insight-article__main">
+            {
+              keyTakeaways && keyTakeaways.length > 0 && (
+                <aside class="insight-article__takeaways" aria-label="Lo esencial">
+                  <span class="eyebrow">Lo esencial</span>
+                  <ul>
+                    {keyTakeaways.map((t) => (
+                      <li>{t}</li>
+                    ))}
+                  </ul>
+                </aside>
+              )
+            }
+            <div class="prose">
+              <Content />
             </div>
-          )
-        }
 
-        {
-          updatedDate && (
-            <p class="insight-article__updated">Actualizado el {formatDate(updatedDate)}</p>
-          )
-        }
+            {
+              tags && tags.length > 0 && (
+                <div class="insight-article__tags">
+                  <span class="eyebrow">Etiquetas</span>
+                  <ul>
+                    {tags.map((t) => (
+                      <li>{t}</li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            }
 
-        <div class="insight-article__cta">
-          <h2>¿Un proyecto en China? Tomemos un café.</h2>
-          <p>Cuéntenos dónde está hoy y a dónde quiere llegar.</p>
-          <div class="insight-article__cta-actions">
-            <a href="/es/contacto" class="btn btn--primary">Iniciar la conversación</a>
-            <a href="/es/analisis" class="btn btn--secondary">Más análisis</a>
+            {
+              updatedDate && (
+                <p class="insight-article__updated">Actualizado el {formatDate(updatedDate)}</p>
+              )
+            }
+
+            <div class="insight-article__cta">
+              <h2>¿Un proyecto en China? Tomemos un café.</h2>
+              <p>Cuéntenos dónde está hoy y a dónde quiere llegar.</p>
+              <div class="insight-article__cta-actions">
+                <a href="/es/contacto" class="btn btn--primary">Iniciar la conversación</a>
+                <a href="/es/analisis" class="btn btn--secondary">Más análisis</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -254,6 +294,73 @@ const categoryLabel = categoryLabelsEs[category] ?? category;
     .container--narrow {
       max-width: 760px;
       margin-inline: auto;
+    }
+
+    /* Cuerpo a dos columnas: el texto sigue centrado a 760px, el índice va en
+       el margen izquierdo sin desplazarlo. */
+    .insight-article__layout {
+      display: grid;
+      grid-template-columns: 1fr min(760px, 100%) 1fr;
+      gap: 0 var(--space-6);
+      align-items: start;
+    }
+    .insight-article__main {
+      grid-column: 2;
+      min-width: 0;
+    }
+
+    .insight-article__toc {
+      grid-column: 1;
+      justify-self: end;
+      width: 100%;
+      max-width: 240px;
+      position: sticky;
+      top: calc(var(--nav-h) + var(--space-5));
+      max-height: calc(100vh - var(--nav-h) - var(--space-6));
+      overflow-y: auto;
+      padding-right: var(--space-4);
+    }
+    .insight-article__toc-title {
+      display: block;
+      margin-bottom: var(--space-3);
+    }
+    .insight-article__toc ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-left: 1px solid var(--bbg-border);
+    }
+    .insight-article__toc-item a {
+      display: block;
+      padding: 0.3rem 0 0.3rem var(--space-4);
+      margin-left: -1px;
+      border-left: 2px solid transparent;
+      color: var(--bbg-text-muted);
+      font-size: 0.9rem;
+      line-height: 1.4;
+      text-decoration: none;
+      transition:
+        color var(--dur, 200ms) var(--ease, ease),
+        border-color var(--dur, 200ms) var(--ease, ease);
+    }
+    .insight-article__toc-item--sub a {
+      padding-left: calc(var(--space-4) + var(--space-4));
+      font-size: 0.85rem;
+    }
+    .insight-article__toc-item a:hover {
+      color: var(--bbg-blue);
+    }
+    .insight-article__toc-item a.is-active {
+      color: var(--bbg-blue-dark);
+      border-left-color: var(--bbg-blue);
+      font-weight: 600;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    .prose :is(h2, h3) {
+      scroll-margin-top: calc(var(--nav-h) + var(--space-4));
     }
 
     .insight-article__header {
@@ -519,6 +626,25 @@ const categoryLabel = categoryLabelsEs[category] ?? category;
       justify-content: center;
     }
 
+    @media (max-width: 1100px) {
+      .insight-article__layout {
+        display: block;
+      }
+      .insight-article__toc {
+        display: none;
+      }
+      .insight-article__main {
+        max-width: 760px;
+        margin-inline: auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
     @media (max-width: 1024px) {
       .insight-article__hero img {
         max-height: 480px;
@@ -551,4 +677,41 @@ const categoryLabel = categoryLabelsEs[category] ?? category;
       }
     }
   </style>
+
+  <script>
+    // Resalta la sección actual en el índice a medida que se desplaza la página.
+    const links = Array.from(
+      document.querySelectorAll<HTMLAnchorElement>('.insight-article__toc a[data-toc-link]'),
+    );
+    if (links.length > 0) {
+      const byId = new Map(links.map((a) => [a.dataset.tocLink, a]));
+      const headings = links
+        .map((a) => document.getElementById(a.dataset.tocLink ?? ''))
+        .filter((el): el is HTMLElement => el !== null);
+
+      let active: HTMLAnchorElement | null = null;
+      const setActive = (id: string | undefined) => {
+        if (!id) return;
+        const next = byId.get(id) ?? null;
+        if (next === active) return;
+        active?.classList.remove('is-active');
+        next?.classList.add('is-active');
+        active = next;
+      };
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((e) => e.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+          if (visible.length > 0) {
+            setActive(visible[0].target.id);
+          }
+        },
+        { rootMargin: '-20% 0px -70% 0px', threshold: 0 },
+      );
+
+      headings.forEach((h) => observer.observe(h));
+    }
+  </script>
 </Layout>
