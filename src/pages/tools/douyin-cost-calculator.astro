@@ -16,8 +16,9 @@ type Driver = {
 const drivers: Driver[] = [
   { id: 'gmv', label: 'Target Year 1 GMV', value: '2000000', kind: 'money', min: '200000', max: '10000000', step: '100000' },
   { id: 'aov', label: 'Average order value', value: '100', kind: 'money', min: '20', max: '500', step: '5' },
+  { id: 'dpRetainer', label: 'DP monthly retainer', value: '80000', kind: 'money', min: '40000', max: '150000', step: '5000' },
+  { id: 'dpCommission', label: 'DP commission on GMV', value: '6', kind: 'percent', min: '0', max: '12', step: '0.5' },
   { id: 'paidShare', label: 'Share of GMV from paid media', value: '40', kind: 'percent', min: '0', max: '100', step: '5' },
-  { id: 'kolCommission', label: 'KOL commission rate', value: '20', kind: 'percent', min: '0', max: '40', step: '1' },
   { id: 'roasA', label: 'Scenario A ROAS (early months)', value: '1.5', kind: 'number', min: '0.5', max: '6', step: '0.1' },
   { id: 'roasB', label: 'Scenario B ROAS (warmed up)', value: '3', kind: 'number', min: '0.5', max: '6', step: '0.1' },
 ];
@@ -27,11 +28,42 @@ type Field = {
   id: string;
   label: string;
   value: string;
-  kind: 'money' | 'percent' | 'number';
+  kind: 'money' | 'percent' | 'number' | 'select';
   step?: string;
   hint?: string;
   fx?: boolean;
+  options?: { value: string; label: string; deposit?: string; fee?: string }[];
 };
+
+// CBEC 抖音全球购 categories. Each one sets the platform deposit and the tech
+// service fee, the only two model inputs that move with product category
+// (see Section 8 of the model spec). Fee is the mid of the published band.
+const categories: { value: string; label: string; deposit: string; fee: string }[] = [
+  { value: 'food-packaged', label: 'Packaged food (grain, oil, dry goods, seasoning)', deposit: '50000', fee: '4' },
+  { value: 'snacks', label: 'Snacks, nuts, specialty', deposit: '50000', fee: '5' },
+  { value: 'drinks', label: 'Coffee, oats, drink powders', deposit: '50000', fee: '5' },
+  { value: 'tea', label: 'Tea', deposit: '50000', fee: '2' },
+  { value: 'supplements', label: 'Dietary supplements', deposit: '50000', fee: '4' },
+  { value: 'tonics', label: "Traditional tonics (bird's nest and the like)", deposit: '200000', fee: '5' },
+  { value: 'alcohol', label: 'Alcohol', deposit: '100000', fee: '5' },
+  { value: 'skincare', label: 'Skincare', deposit: '100000', fee: '5' },
+  { value: 'makeup', label: 'Makeup, fragrance', deposit: '100000', fee: '5' },
+  { value: 'beauty-device', label: 'Beauty and personal-care devices', deposit: '100000', fee: '4' },
+  { value: 'personal-care', label: 'Personal care', deposit: '50000', fee: '4' },
+  { value: 'home', label: 'Home, bedding, kitchenware', deposit: '50000', fee: '3' },
+  { value: 'appliances', label: 'Small appliances', deposit: '75000', fee: '4' },
+  { value: '3c', label: '3C accessories, cameras', deposit: '50000', fee: '4' },
+  { value: 'phones', label: 'Phones, laptops, tablets', deposit: '100000', fee: '2.5' },
+  { value: 'apparel', label: 'Apparel, underwear', deposit: '100000', fee: '5' },
+  { value: 'footwear', label: 'Footwear', deposit: '100000', fee: '5' },
+  { value: 'bags', label: 'Bags, belts, accessories', deposit: '100000', fee: '5' },
+  { value: 'jewellery', label: 'Fashion jewellery', deposit: '100000', fee: '5.5' },
+  { value: 'sports', label: 'Sports, outdoor', deposit: '75000', fee: '5' },
+  { value: 'infant-formula', label: 'Infant formula', deposit: '100000', fee: '4' },
+  { value: 'baby', label: 'Baby products, toys', deposit: '50000', fee: '5' },
+  { value: 'pet', label: 'Pet food, supplies', deposit: '50000', fee: '5' },
+  { value: 'custom', label: 'Custom (set the deposit and fee by hand)', deposit: '', fee: '' },
+];
 
 const gicon = {
   tax: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
@@ -44,31 +76,46 @@ const gicon = {
 
 const groups: { title: string; icon: string; note?: string; fields: Field[] }[] = [
   {
+    title: 'Category',
+    icon: gicon.platform,
+    note: 'Pick your product category. On 抖音全球购 the deposit and the tech service fee both move with the category, so this sets the two numbers below. Your DP may quote something different; override by hand if so.',
+    fields: [
+      {
+        id: 'category',
+        label: 'Product category (CBEC 抖音全球购)',
+        value: 'food-packaged',
+        kind: 'select',
+        options: categories,
+      },
+    ],
+  },
+  {
     title: 'FX and tax',
     icon: gicon.tax,
     fields: [
       { id: 'fx', label: 'USD / RMB exchange rate', value: '7.1', kind: 'number', step: '0.01', fx: true },
       { id: 'vatServices', label: 'VAT on China services', value: '6', kind: 'percent', step: '0.1' },
-      { id: 'cbecTax', label: 'CBEC comprehensive import tax', value: '11.2', kind: 'percent', step: '0.1', hint: '13% VAT on 70% of retail value, no consumption tax on honey.' },
+      { id: 'cbecTax', label: 'CBEC comprehensive import tax', value: '11.2', kind: 'percent', step: '0.1', hint: '13% VAT on 70% of retail value. Most food and home goods carry no consumption tax.' },
     ],
   },
   {
     title: 'Platform and DP',
     icon: gicon.platform,
     fields: [
-      { id: 'platformDeposit', label: 'Douyin 全球购 platform deposit', value: '50000', kind: 'money', hint: 'Refundable when the store closes.' },
-      { id: 'techFee', label: 'Platform tech service fee', value: '4', kind: 'percent', step: '0.1' },
+      { id: 'platformDeposit', label: 'Douyin 全球购 platform deposit', value: '50000', kind: 'money', hint: 'Refundable when the store closes. Set by your category above.' },
+      { id: 'techFee', label: 'Platform tech service fee', value: '4', kind: 'percent', step: '0.1', hint: 'Taken on each sale. Set by your category above.' },
       { id: 'agentFee', label: 'Mainland 境内代理人 annual fee', value: '60000', kind: 'money' },
       { id: 'trademark', label: 'CN trademark registration', value: '8000', kind: 'money' },
       { id: 'brandSetup', label: 'Brand setup contribution', value: '80000', kind: 'money' },
-      { id: 'coFund', label: 'Brand marketing co-fund to the DP', value: '120000', kind: 'money' },
+      { id: 'coFund', label: 'Campaign co-fund (Double 11, launches)', value: '60000', kind: 'money' },
     ],
   },
   {
     title: 'KOL',
     icon: gicon.kol,
     fields: [
-      { id: 'kolShare', label: 'Share of GMV through KOL livestream or video', value: '80', kind: 'percent' },
+      { id: 'kolShare', label: 'Share of GMV through KOL livestream or video', value: '60', kind: 'percent' },
+      { id: 'kolCommission', label: 'KOL commission rate', value: '12', kind: 'percent', step: '0.5' },
     ],
   },
   {
@@ -137,6 +184,12 @@ const help: Record<string, string> = {
   aov: 'The average amount a shopper spends in a single order. Take your expected first-year sales and divide by the number of orders and you land here. It decides how many parcels you ship, which in turn drives your logistics and returns cost.',
   paidShare:
     "The slice of your sales pushed by paid advertising on Douyin's ad platform (千川 Qianchuan), rather than by organic reach or a creator's own following. Turn it up and you spend more on ads to hit the same sales number.",
+  dpRetainer:
+    'The flat monthly fee your Douyin Partner charges to run the channel: the storefront, the livestream calendar, ad operations, customer service. It is the single biggest line in the model over a year. The international-brand tier runs 60,000 to 100,000 RMB a month.',
+  dpCommission:
+    'A percentage the DP takes on the sales they generate, on top of the retainer. The international-brand tier sits at 5 to 8 percent, and the industry caps it near 10 percent. This is separate from the paid media you fund directly.',
+  category:
+    'Your product category on the cross-border store (抖音全球购). It sets two numbers: the platform deposit and the tech service fee, which both change by category. Pick the closest fit and the fields below fill in. Choose Custom to type your own.',
   kolCommission:
     'The cut a livestream host or short-video creator keeps on each sale they drive. It is pure commission, paid only when they actually sell. Food and agricultural products tend to sit around 8 to 20 percent; beauty and luxury run higher.',
   roasA:
@@ -147,11 +200,11 @@ const help: Record<string, string> = {
   vatServices:
     'Value-added tax on the China-side service fees you pay (agency, marketing co-fund, platform tech fee, ad-buying). It is added on top of those fees, not taken out of your sales. Six percent is the standard rate for these services.',
   cbecTax:
-    'The cross-border e-commerce import tax on goods sold through the bonded model. It is 13 percent VAT applied to 70 percent of the retail price, which lands near 11.2 percent of sales for most food. Honey carries no consumption tax.',
+    'The cross-border e-commerce import tax on goods sold through the bonded model. It is 13 percent VAT applied to 70 percent of the retail price, which lands near 11.2 percent of sales. Most food and home goods carry no consumption tax; cosmetics and alcohol pay more.',
   platformDeposit:
-    'A security deposit Douyin holds while your store is open, returned when you close in good standing. The food and health flagship base is 50,000 RMB, though a February 2025 reform lets qualified merchants enter far lower. Worth asking your DP.',
+    'A security deposit Douyin holds while your store is open, returned when you close in good standing. The cross-border baseline is 50,000 RMB, and some categories run to 100,000 or 200,000. The category picker sets it for you.',
   techFee:
-    'A technology service fee Douyin charges on sales in the cross-border food and health category, taken as a share of GMV. Four percent is the usual rate.',
+    'A technology service fee Douyin charges on each sale, taken as a share of GMV. It runs from about 2 to 6 percent depending on the category. The category picker sets it for you.',
   agentFee:
     'The yearly fee for a mainland customs agent (境内代理人), the licensed local entity required to clear cross-border parcels in your name. It is a fixed annual cost, not tied to how much you sell.',
   trademark:
@@ -159,7 +212,7 @@ const help: Record<string, string> = {
   brandSetup:
     'The upfront cost to build the store and its launch content: banner, product listings, a hero photo or video shoot. Paid once, at the start.',
   coFund:
-    "Cash you put in each year toward the Douyin Partner's marketing on your behalf. The DP runs its own team; this joint fund tops up campaigns and content made specifically for your brand.",
+    'A yearly joint fund on top of the DP retainer, earmarked for big moments: Double 11, a brand launch, a hero campaign. It pays for work that sits outside the day-to-day the retainer already covers.',
   kolShare:
     'The share of total sales that flows through creators (livestream and short video), rather than your own store page or ads. It sets how much KOL commission you end up paying.',
   whDeposit:
@@ -181,11 +234,12 @@ const help: Record<string, string> = {
 };
 
 const notes = [
-  'Honey sits on the CBEC Positive List but bonded-warehouse only. Direct mail is not allowed, so the warehouse deposit and tax prepayment are unavoidable. Source: 国务院 正面清单, 2022.',
-  'The distributor partner runs Douyin only. Their team cost comes out of the wholesale margin they take on your product, so it is not in this model. The marketing co-fund is the usual brand-side cash contribution.',
+  'The model runs cross-border only, through the bonded warehouse (抖音全球购). The warehouse deposit and the tax prepayment come back to you on exit, so the calculator counts them as working capital, not sunk cost.',
+  'The DP retainer plus its commission on GMV is the bulk of the bill. Paid media on 千川 is funded by you directly into the ad account, not billed through the DP. That split is deliberate: DPs that try to front the ad spend tend to fall over.',
+  'The DP runs Douyin only. Their team cost sits inside the retainer and the commission, so there is no separate headcount line. KOL commission is billed apart, on sales the creators actually drive.',
   'Scenario A at ROAS 1.5x is the realistic number for months one to six on a fresh Douyin account. Scenario B at ROAS 3.0x is where a warmed-up account tends to land later in the year.',
-  'The platform deposit of RMB 50,000 is the food and health flagship base. Under the February 2025 reform, qualified merchants can enter at RMB 500. Worth asking your DP about.',
-  'Year 1 runs at a loss in every scenario at RMB 2M GMV. Use breakeven GMV to see the scale needed for gross profit to cover the full first-year bill.',
+  'The platform deposit and the tech service fee move with your product category. Pick a category in the fine-tune panel and both fill in from the published cross-border bands.',
+  'Year 1 runs at a loss in every scenario at RMB 2M GMV. Breakeven GMV shows the scale you need for gross profit to cover the full first-year bill, and it usually lands several times above a first-year target.',
 ];
 
 const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>`;
@@ -275,8 +329,9 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         <span class="eyebrow">The calculator</span>
         <h2 class="calc__title">Set your assumptions</h2>
         <p class="calc__sub">
-          The defaults describe a RMB 2M first-year run for a honey brand. Drag the sliders or type
-          your own figures. Fine-tune the detail below.
+          The defaults describe a RMB 2M first-year run for an imported packaged-food brand. Drag
+          the sliders or type your own figures, then pick your category and fine-tune the detail
+          below.
         </p>
       </div>
 
@@ -287,7 +342,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             <div class="calc-card calc-drivers reveal">
               <div class="calc-card__head">
                 <h3 class="calc-card__title">Key assumptions</h3>
-                <span class="calc-card__hint">The six numbers that move the total most.</span>
+                <span class="calc-card__hint">The seven numbers that move the total most.</span>
               </div>
               <div class="calc-drivers__grid">
                 {
@@ -354,6 +409,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                 </span>
               </button>
               <div class="calc-advanced__body" id="advanced-body" hidden>
+                <div class="calc-advanced__body-inner">
                 <div class="calc-tabs" role="tablist" aria-label="Input groups">
                   {
                     groups.map((group, idx) => (
@@ -402,28 +458,58 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                                   </button>
                                 )}
                               </span>
-                              <div class="calc-input-wrap" data-kind={f.kind}>
-                                {f.kind === 'money' && <span class="calc-input-affix">RMB</span>}
-                                <input
-                                  class="calc-input"
-                                  type="number"
-                                  inputmode="decimal"
-                                  id={f.id}
-                                  name={f.id}
-                                  value={f.value}
-                                  data-kind={f.kind}
-                                  data-label={f.label}
-                                  step={f.step ?? '1'}
-                                  min="0"
-                                  placeholder={f.kind === 'percent' ? '%' : ''}
-                                />
-                                {f.kind === 'percent' && <span class="calc-input-affix calc-input-affix--suffix">%</span>}
-                              </div>
+                              {f.kind === 'select' ? (
+                                <select class="calc-select" id={f.id} name={f.id}>
+                                  {(f.options ?? []).map((o) => (
+                                    <option
+                                      value={o.value}
+                                      data-deposit={o.deposit}
+                                      data-fee={o.fee}
+                                      selected={o.value === f.value}
+                                    >
+                                      {o.label}
+                                    </option>
+                                  ))}
+                                </select>
+                              ) : (
+                                <div class="calc-input-wrap" data-kind={f.kind}>
+                                  {f.kind === 'money' && <span class="calc-input-affix">RMB</span>}
+                                  <input
+                                    class="calc-input"
+                                    type="number"
+                                    inputmode="decimal"
+                                    id={f.id}
+                                    name={f.id}
+                                    value={f.value}
+                                    data-kind={f.kind}
+                                    data-label={f.label}
+                                    step={f.step ?? '1'}
+                                    min="0"
+                                    placeholder={f.kind === 'percent' ? '%' : ''}
+                                  />
+                                  {f.kind === 'percent' && <span class="calc-input-affix calc-input-affix--suffix">%</span>}
+                                </div>
+                              )}
                               {f.fx && (
                                 <button type="button" class="calc-fx-link" id="fx-refresh">
                                   <span class="calc-fx-link__icon" set:html={refreshIcon} />
                                   Refresh live rate
                                 </button>
+                              )}
+                              {f.kind === 'select' && (
+                                <div class="calc-impact" id="category-impact" aria-live="polite" hidden>
+                                  <span class="calc-impact__label">Updates below</span>
+                                  <span class="calc-impact__chips">
+                                    <span class="calc-impact__chip">
+                                      Platform deposit
+                                      <strong id="impact-deposit"></strong>
+                                    </span>
+                                    <span class="calc-impact__chip">
+                                      Tech service fee
+                                      <strong id="impact-fee"></strong>
+                                    </span>
+                                  </span>
+                                </div>
                               )}
                               {f.hint && <p class="calc-field__hint">{f.hint}</p>}
                               {f.fx && <p class="calc-field__hint" id="fx-note"></p>}
@@ -433,6 +519,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                       </div>
                     ))
                   }
+                </div>
                 </div>
               </div>
             </div>
@@ -528,7 +615,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
               <div class="calc-stat" id="focus-be-wrap">
                 <span class="calc-stat__label">Breakeven GMV</span>
                 <span class="calc-stat__value" id="focus-be">Add margin</span>
-                <span class="calc-stat__foot">to cover the full year</span>
+                <span class="calc-stat__foot" id="focus-be-foot">to cover the full year</span>
               </div>
             </div>
           </div>
@@ -575,6 +662,14 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
           <a class="btn btn--secondary" href="/contact">Talk to our China team</a>
         </div>
       </div>
+
+      <p class="calc-disclaimer">
+        A quick note. These figures are a planning estimate, not a quote. The model runs on public
+        benchmarks and the numbers you type in, so the output is directional only. We don't
+        guarantee the totals, the assumptions, or the math behind them. It's here for demo and info,
+        nothing more. Before you commit real money, check every line against actual quotes from your
+        DP, your warehouse, and the platform.
+      </p>
     </div>
   </section>
 
@@ -827,36 +922,80 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     // ---------- FX live rate ----------
     const fxBtn = document.getElementById('fx-refresh');
     const fxNote = document.getElementById('fx-note');
-    if (fxBtn) {
-      fxBtn.addEventListener('click', async () => {
-        fxBtn.classList.add('is-spinning');
+    async function refreshFx() {
+      if (fxBtn) fxBtn.classList.add('is-spinning');
+      if (fxNote) {
+        fxNote.textContent = 'Fetching the live rate…';
+        fxNote.className = 'calc-field__hint';
+      }
+      try {
+        const res = await fetch('/api/fx-rate');
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || !data.rate) throw new Error(data.error || 'No rate returned.');
+        const fxInput = document.getElementById('fx');
+        fxInput.value = data.rate;
+        fxInput.dispatchEvent(new Event('input', { bubbles: true }));
         if (fxNote) {
-          fxNote.textContent = 'Fetching the live rate…';
-          fxNote.className = 'calc-field__hint';
+          fxNote.textContent = 'Live rate: 1 USD = ' + data.rate + ' RMB.';
+          fxNote.className = 'calc-field__hint calc-field__hint--ok';
         }
-        try {
-          const res = await fetch('/api/fx-rate');
-          const data = await res.json().catch(() => ({}));
-          if (!res.ok || !data.rate) throw new Error(data.error || 'No rate returned.');
-          const fxInput = document.getElementById('fx');
-          fxInput.value = data.rate;
-          fxInput.dispatchEvent(new Event('input', { bubbles: true }));
-          if (fxNote) {
-            fxNote.textContent = 'Live rate: 1 USD = ' + data.rate + ' RMB.';
-            fxNote.className = 'calc-field__hint calc-field__hint--ok';
-          }
-        } catch (err) {
-          if (fxNote) {
-            fxNote.textContent = 'Could not fetch a live rate. Keeping your value.';
-            fxNote.className = 'calc-field__hint calc-field__hint--err';
-          }
-        } finally {
-          fxBtn.classList.remove('is-spinning');
+      } catch (err) {
+        if (fxNote) {
+          fxNote.textContent = 'Could not fetch a live rate. Keeping your value.';
+          fxNote.className = 'calc-field__hint calc-field__hint--err';
         }
-      });
+      } finally {
+        if (fxBtn) fxBtn.classList.remove('is-spinning');
+      }
+    }
+    if (fxBtn) fxBtn.addEventListener('click', refreshFx);
+    // Pull today's rate on load so the USD figure starts current.
+    refreshFx();
+
+    // ---------- category picker sets deposit + tech fee ----------
+    const catSelect = document.getElementById('category');
+    if (catSelect) {
+      const impactBox = document.getElementById('category-impact');
+      const impactDeposit = document.getElementById('impact-deposit');
+      const impactFee = document.getElementById('impact-fee');
+
+      function applyCategory(fillForm) {
+        const opt = catSelect.options[catSelect.selectedIndex];
+        const deposit = opt.getAttribute('data-deposit');
+        const fee = opt.getAttribute('data-fee');
+        // Custom leaves both fields untouched, so there is nothing to preview.
+        if (!deposit && !fee) {
+          if (impactBox) impactBox.hidden = true;
+          return;
+        }
+        if (fillForm && deposit) {
+          const dep = document.getElementById('platformDeposit');
+          if (dep) {
+            dep.value = deposit;
+            dep.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        }
+        if (fillForm && fee) {
+          const tf = document.getElementById('techFee');
+          if (tf) {
+            tf.value = fee;
+            tf.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        }
+        if (impactBox) {
+          if (impactDeposit && deposit)
+            impactDeposit.textContent = 'RMB ' + Number(deposit).toLocaleString('en-US');
+          if (impactFee && fee) impactFee.textContent = fee + '%';
+          impactBox.hidden = false;
+        }
+      }
+
+      catSelect.addEventListener('change', () => applyCategory(true));
+      // Show what the default category drives, without overwriting the fields.
+      applyCategory(false);
     }
 
-    // ---------- compute (faithful port of the one-pager) ----------
+    // ---------- compute (faithful port of the DP cost model spec) ----------
     function readInputs() {
       const out = {};
       form.querySelectorAll('input[data-kind]').forEach((el) => {
@@ -888,23 +1027,42 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       };
       const setupTotal = Object.values(setup).reduce((a, b) => a + b, 0);
 
+      // Fixed and per-order coefficients for break-even (Section 9 of the spec).
+      // Refundable capital is left out on purpose: it comes back on exit, so it
+      // is not a P&L cost.
+      const dpRetainerAnnual = (i.dpRetainer || 0) * 12;
+      const fixedServices = (i.agentFee || 0) + dpRetainerAnnual + (i.coFund || 0);
+      const F =
+        fixedServices +
+        (i.trademark || 0) +
+        (i.brandSetup || 0) +
+        (i.vatServices || 0) * fixedServices;
+      const vQ = (i.storage || 0) * 2 + (i.shipping || 0) + (i.returnRate || 0) * (i.returnHandling || 0);
+
       function scenario(roas) {
         const media = roas > 0 ? (gmv * (i.paidShare || 0)) / roas : 0;
         const adBuy = media * (i.adBuyFee || 0);
+        const dpCommission = gmv * (i.dpCommission || 0);
+        const techFee = gmv * (i.techFee || 0);
+        // VAT applies to China-based service fees: agent, DP retainer, DP
+        // commission, campaign co-fund, platform tech fee, ad-buying fee. Not
+        // to media spend, KOL commission, logistics or import tax.
+        const vatBase =
+          (i.agentFee || 0) + dpRetainerAnnual + dpCommission + (i.coFund || 0) + techFee + adBuy;
         const op = {
           'Mainland agent (境内代理人)': i.agentFee || 0,
-          'Brand marketing co-fund': i.coFund || 0,
+          'DP monthly retainer (× 12)': dpRetainerAnnual,
+          'DP commission on GMV': dpCommission,
+          'Campaign co-fund': i.coFund || 0,
           'Paid media (千川 Qianchuan)': media,
           'Ad-buying service fee': adBuy,
           'KOL commission': gmv * (i.kolShare || 0) * (i.kolCommission || 0),
-          'Platform tech service fee': gmv * (i.techFee || 0),
+          'Platform tech service fee': techFee,
           'Bonded warehouse storage': orders * (i.storage || 0) * 2,
           'Last-mile shipping': orders * (i.shipping || 0),
           'Returns handling': orders * (i.returnRate || 0) * (i.returnHandling || 0),
           'CBEC comprehensive import tax': gmv * (i.cbecTax || 0),
-          'VAT on China services':
-            ((i.agentFee || 0) + (i.coFund || 0) + gmv * (i.techFee || 0) + adBuy) *
-            (i.vatServices || 0),
+          'VAT on China services': vatBase * (i.vatServices || 0),
         };
         const opTotal = Object.values(op).reduce((a, b) => a + b, 0);
         const total = setupTotal + opTotal;
@@ -915,25 +1073,45 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         const totalPctGmv = gmv > 0 ? total / gmv : 0;
         const opPctGmv = gmv > 0 ? opTotal / gmv : 0;
 
+        // %-of-GMV variable rate for this ROAS (Section 9.3).
+        const paidRate = roas > 0 ? (i.paidShare || 0) / roas : 0;
+        const vG =
+          (i.dpCommission || 0) +
+          (i.kolShare || 0) * (i.kolCommission || 0) +
+          (i.techFee || 0) +
+          (i.cbecTax || 0) +
+          paidRate +
+          paidRate * (i.adBuyFee || 0) +
+          (i.vatServices || 0) * ((i.dpCommission || 0) + (i.techFee || 0) + paidRate * (i.adBuyFee || 0));
+
         let breakeven = null;
+        let breakevenMonthly = null;
+        let breakevenOrders = null;
         let contribution = null;
         if (i.grossMargin != null) {
           contribution = gmv * i.grossMargin - total;
-          const denom = i.grossMargin - opPctGmv;
-          breakeven = denom <= 0 ? 'GM too low' : setupTotal / denom;
+          const denom = i.grossMargin - vG - (aov > 0 ? vQ / aov : 0);
+          if (denom <= 0) {
+            breakeven = 'GM too low';
+          } else {
+            breakeven = F / denom;
+            breakevenMonthly = breakeven / 12;
+            breakevenOrders = aov > 0 ? breakeven / aov : 0;
+          }
         }
 
         // Buckets for the composition bar
         const buckets = [
           { key: 'Setup', color: '#c8102e', value: setupTotal },
-          { key: 'Paid media', color: '#e2683b', value: op['Paid media (千川 Qianchuan)'] + op['Ad-buying service fee'] },
+          { key: 'DP retainer + commission', color: '#e2683b', value: op['DP monthly retainer (× 12)'] + op['DP commission on GMV'] },
+          { key: 'Paid media', color: '#f4874b', value: op['Paid media (千川 Qianchuan)'] + op['Ad-buying service fee'] },
           { key: 'KOL commission', color: '#f4b740', value: op['KOL commission'] },
           { key: 'Tax and VAT', color: '#7b61a8', value: op['CBEC comprehensive import tax'] + op['VAT on China services'] + op['Platform tech service fee'] },
           { key: 'Logistics', color: '#3aa0c8', value: op['Bonded warehouse storage'] + op['Last-mile shipping'] + op['Returns handling'] },
-          { key: 'Fixed services', color: '#2fb67f', value: op['Mainland agent (境内代理人)'] + op['Brand marketing co-fund'] },
+          { key: 'Agent + co-fund', color: '#2fb67f', value: op['Mainland agent (境内代理人)'] + op['Campaign co-fund'] },
         ];
 
-        return { op, opTotal, total, refundable, netSunk, totalUSD, costPerOrder, totalPctGmv, opPctGmv, breakeven, contribution, buckets };
+        return { op, opTotal, total, refundable, netSunk, totalUSD, costPerOrder, totalPctGmv, opPctGmv, vG, breakeven, breakevenMonthly, breakevenOrders, contribution, buckets };
       }
 
       return {
@@ -942,6 +1120,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         gmv,
         setup,
         setupTotal,
+        F,
+        vQ,
         a: scenario(i.roasA || 0),
         b: scenario(i.roasB || 0),
         hasGm: i.grossMargin != null,
@@ -984,11 +1164,24 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 
       const be = document.getElementById('focus-be');
       const beWrap = document.getElementById('focus-be-wrap');
+      const beFoot = document.getElementById('focus-be-foot');
       if (r.hasGm) {
-        be.textContent = typeof s.breakeven === 'string' ? s.breakeven : rmb0(s.breakeven);
+        if (typeof s.breakeven === 'string') {
+          be.textContent = s.breakeven;
+          beFoot.textContent = 'lift your margin first';
+        } else {
+          be.textContent = rmb0(s.breakeven);
+          beFoot.textContent =
+            'about ' +
+            rmb0(s.breakevenMonthly) +
+            '/mo · ' +
+            Math.round(s.breakevenOrders).toLocaleString('en-US') +
+            ' orders/yr';
+        }
         beWrap.classList.remove('is-muted');
       } else {
         be.textContent = 'Add margin';
+        beFoot.textContent = 'to cover the full year';
         beWrap.classList.add('is-muted');
       }
 
@@ -1060,6 +1253,13 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       rows += dataRow('Net sunk cost', r.a.netSunk, r.b.netSunk, true);
       rows +=
         '<tr class="calc-table__total"><td>Total Year 1 (USD)</td><td>' + usd0(r.a.totalUSD) + '</td><td>' + usd0(r.b.totalUSD) + '</td></tr>';
+      if (r.hasGm) {
+        const beCell = (s) => (typeof s.breakeven === 'string' ? s.breakeven : rmb0(s.breakeven));
+        rows += sectionRow('Your economics');
+        rows += dataRow('Contribution (gross profit less Year 1 cost)', r.a.contribution, r.b.contribution, true);
+        rows +=
+          '<tr><td>Breakeven GMV</td><td>' + beCell(r.a) + '</td><td>' + beCell(r.b) + '</td></tr>';
+      }
       body.innerHTML = rows;
     }
 
@@ -1104,7 +1304,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         const label = el.getAttribute('data-label') || el.name;
         const kind = el.getAttribute('data-kind');
         let val = el.value.trim();
-        if (val === '') val = '—not set—';
+        if (val === '') val = '(not set)';
         else if (kind === 'money') val = 'RMB ' + Number(val).toLocaleString('en-US');
         else if (kind === 'percent') val = val + '%';
         inputs.push({ label, value: val });
@@ -1389,8 +1589,18 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   /* ---------- drivers (sliders) ---------- */
   .calc-drivers__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: 1fr;
     gap: var(--space-5);
+  }
+  @media (min-width: 640px) {
+    .calc-drivers__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    /* GMV is the top line the model scales from: give it the full row so the
+       remaining six sliders pair up cleanly and the two ROAS sit together. */
+    .calc-drivers__grid > .driver:first-child {
+      grid-column: 1 / -1;
+    }
   }
   .driver__top {
     display: flex;
@@ -1531,7 +1741,13 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     overflow: hidden;
     transition: max-height 0.4s var(--ease);
   }
-  /* tabs inside the fine-tune panel */
+  /* tabs inside the fine-tune panel: vertical sidebar on desktop */
+  @media (min-width: 720px) {
+    .calc-advanced__body-inner {
+      display: flex;
+      align-items: stretch;
+    }
+  }
   .calc-tabs {
     display: flex;
     flex-wrap: wrap;
@@ -1542,7 +1758,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   .calc-tab {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.55rem;
     padding: 0.65rem 0.85rem;
     border: 0;
     border-radius: var(--radius-sm) var(--radius-sm) 0 0;
@@ -1560,13 +1776,35 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   }
   .calc-tab:hover {
     background: var(--bbg-surface);
-  }
-  .calc-tab:hover {
     color: var(--bbg-ink);
   }
   .calc-tab.is-active {
     color: var(--bbg-blue);
     border-bottom-color: var(--bbg-blue);
+  }
+  @media (min-width: 720px) {
+    .calc-tabs {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 0.15rem;
+      padding: var(--space-4);
+      border-bottom: 0;
+      border-right: 1px solid var(--bbg-border);
+      min-width: 200px;
+      flex-shrink: 0;
+    }
+    .calc-tab {
+      width: 100%;
+      justify-content: flex-start;
+      border-radius: var(--radius-sm);
+      border-bottom: 0;
+      border-left: 2px solid transparent;
+    }
+    .calc-tab.is-active {
+      background: var(--bbg-surface);
+      border-bottom-color: transparent;
+      border-left-color: var(--bbg-blue);
+    }
   }
   .calc-tab__icon {
     display: inline-flex;
@@ -1589,6 +1827,12 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   }
   .calc-tabpanels {
     padding: var(--space-5);
+  }
+  @media (min-width: 720px) {
+    .calc-tabpanels {
+      flex: 1;
+      min-width: 0;
+    }
   }
   .calc-tabpanel {
     animation: tabIn 0.35s var(--ease);
@@ -1753,6 +1997,70 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   }
   .calc-input:focus {
     outline: none;
+  }
+  .calc-select {
+    width: 100%;
+    padding: 0.7rem 2.2rem 0.7rem 0.8rem;
+    font-size: 1rem;
+    color: var(--bbg-ink);
+    background-color: var(--bbg-white);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B6B6B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem center;
+    background-size: 1.1rem;
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-sm);
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition:
+      border-color var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease);
+  }
+  .calc-select:focus {
+    outline: none;
+    border-color: var(--bbg-blue);
+    box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.18);
+  }
+  .calc-impact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+    padding: 0.7rem 0.8rem;
+    background: var(--bbg-surface);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-sm);
+  }
+  .calc-impact[hidden] {
+    display: none;
+  }
+  .calc-impact__label {
+    font-size: var(--fs-label);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bbg-text-muted);
+  }
+  .calc-impact__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .calc-impact__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.6rem;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: 999px;
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
+  .calc-impact__chip strong {
+    color: var(--bbg-ink);
+    font-variant-numeric: tabular-nums;
   }
   .calc-fx-link {
     align-self: flex-start;
@@ -2259,6 +2567,17 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   .calc-cta p {
     margin: 0;
     font-weight: 600;
+  }
+
+  /* ---------- disclaimer ---------- */
+  .calc-disclaimer {
+    margin: var(--space-6) 0 0;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--bbg-border);
+    max-width: 80ch;
+    font-size: var(--fs-small);
+    line-height: 1.6;
+    color: var(--bbg-text-muted);
   }
 
   /* ---------- email gate ---------- */
