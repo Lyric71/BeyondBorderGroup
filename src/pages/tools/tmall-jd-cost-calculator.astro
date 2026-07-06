@@ -1,0 +1,3575 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// ---- Global inputs, shared across both platforms (sliders up top) ----
+type Driver = {
+  id: string;
+  label: string;
+  value: string;
+  kind: 'money' | 'number';
+  min: string;
+  max: string;
+  step: string;
+  unit?: string;
+};
+
+const drivers: Driver[] = [
+  { id: 'retailPrice', label: 'Retail price per unit', value: '299', kind: 'money', min: '20', max: '3000', step: '10' },
+  { id: 'volume', label: 'Monthly sales volume', value: '1000', kind: 'number', min: '50', max: '20000', step: '50', unit: 'units' },
+  { id: 'landedCost', label: 'Landed cost per unit', value: '90', kind: 'money', min: '10', max: '2000', step: '5' },
+];
+
+// ---- Per-platform inputs. Same nine keys down both columns, different
+// defaults. Every value is editable, because traffic cost and TP fees move
+// by platform and by category. Defaults verified against 天猫国际 fee guides,
+// 京东全球购 rules on jdw-rule.jd.hk, and Chinese customs CBEC policy. ----
+type Row = {
+  key: string;
+  label: string;
+  kind: 'money' | 'percent' | 'select';
+  tmall: string;
+  jd: string;
+  step?: string;
+  options?: { value: string; label: string }[];
+  jdNote?: string; // small live note shown under the JD cell
+  usdAnchor?: { tmall?: number; jd?: number }; // seed money field from USD × fx on load
+};
+
+const rows: Row[] = [
+  { key: 'commissionPct', label: 'Platform commission', kind: 'percent', tmall: '5.0', jd: '5.0', step: '0.1' },
+  { key: 'paymentPct', label: 'Payment / gateway fee', kind: 'percent', tmall: '1.0', jd: '0.9', step: '0.1' },
+  { key: 'cbecTaxPct', label: 'Cross-border tax rate', kind: 'percent', tmall: '9.1', jd: '9.1', step: '0.1' },
+  {
+    key: 'cbecTaxPayer',
+    label: 'Who pays the cross-border tax',
+    kind: 'select',
+    tmall: 'consumer',
+    jd: 'consumer',
+    options: [
+      { value: 'consumer', label: 'Consumer pays' },
+      { value: 'brand', label: 'Brand pays' },
+    ],
+  },
+  { key: 'tpFeePct', label: 'TP / operating service fee', kind: 'percent', tmall: '12.0', jd: '12.0', step: '0.5' },
+  { key: 'fulfillmentPerUnit', label: 'Fulfillment per order', kind: 'money', tmall: '8', jd: '8', step: '1' },
+  { key: 'marketingPct', label: 'Marketing / traffic', kind: 'percent', tmall: '20.0', jd: '20.0', step: '1' },
+  {
+    key: 'annualFee',
+    label: 'Annual platform fee',
+    kind: 'money',
+    tmall: '60000',
+    jd: '7200',
+    step: '1000',
+    usdAnchor: { jd: 1000 },
+    jdNote: 'about US$1,000 a year',
+  },
+  {
+    key: 'deposit',
+    label: 'Security deposit (refundable)',
+    kind: 'money',
+    tmall: '50000',
+    jd: '36000',
+    step: '1000',
+    usdAnchor: { jd: 5000 },
+    jdNote: 'about US$5,000, first tier',
+  },
+];
+
+const gicon = {
+  price: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+  box: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>`,
+  tax: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10a1 1 0 0 1 1 1v17l-3-2-3 2-3-2-3 2V4a1 1 0 0 1 1-1z"/><path d="M14.5 9.5l-5 5"/></svg>`,
+  margin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg>`,
+};
+
+const steps = [
+  {
+    icon: gicon.price,
+    title: 'The shelf price',
+    body: 'What the shopper pays for one unit. Every fee below comes off this number, so it sets the whole model.',
+  },
+  {
+    icon: gicon.box,
+    title: 'Your landed cost',
+    body: 'Factory cost plus freight into the bonded warehouse. The one line that has nothing to do with the platform.',
+  },
+  {
+    icon: gicon.tax,
+    title: 'Platform and tax',
+    body: 'Commission, the payment fee, and the cross-border comprehensive tax. Tmall Global and JD Worldwide bill these differently.',
+  },
+  {
+    icon: gicon.margin,
+    title: 'What is left',
+    body: 'Take off the TP fee, fulfillment and traffic and you have contribution. Scale it by volume, subtract the annual fee, and you have profit.',
+  },
+];
+
+const perks = [
+  'Tmall Global and JD Worldwide, side by side',
+  'Every fee in RMB and USD, on the live rate',
+  'Contribution and net margin per platform',
+  'Break-even volume from your own numbers',
+  'The stronger platform called, with the gap',
+];
+
+// Plain-English explanation for every field, shown in the overlay bubble.
+const help: Record<string, string> = {
+  retailPrice:
+    'The price a shopper pays for one unit, tax included when the consumer carries the cross-border tax. It is the top line every fee is taken from. Keep it under 5,000 RMB to stay inside the single-order cross-border quota; above that the order is taxed as general trade at the full rate.',
+  volume:
+    'How many units you expect to sell in a month. It scales contribution into monthly profit and decides how many break-even units each platform needs.',
+  landedCost:
+    'Your all-in cost to get one unit into the bonded warehouse: factory cost plus international freight and import handling. This is the same on both platforms, so it is entered once up top.',
+  fx: 'How many RMB one US dollar buys. The math runs in RMB; this only sets the USD figure shown beside each line. JD Worldwide quotes its deposit and annual fee in dollars, so the rate also seeds those two defaults. Hit refresh for today figure.',
+  commissionPct:
+    'The cut the platform keeps on each sale. On Tmall Global it is the 技术服务费, capped around 5 percent and often 2 or 5 by category. On JD Worldwide it is the 运营支持服务费, usually 2 to 6 percent.',
+  paymentPct:
+    'The payment or gateway fee on each order. Tmall Global runs on Alipay at roughly 1 percent. JD Worldwide charges a flat 0.9 percent transaction service fee.',
+  cbecTaxPct:
+    'The cross-border comprehensive tax on goods sold through the bonded model. For general goods it is 13 percent VAT charged on 70 percent of the price, which lands at 9.1 percent. Categories that carry consumption tax, like cosmetics, perfume or alcohol, run higher, so edit it if that is you.',
+  cbecTaxPayer:
+    'Who actually absorbs the cross-border tax. In most flagship setups the consumer pays it on top of the shelf price, so it is not a cost to you. Switch to brand pays and the model takes it straight off your contribution.',
+  tpFeePct:
+    'What your TP, the third-party partner that runs the store day to day, charges as a share of sales. It usually sits between 8 and 15 percent and can differ between the two platforms, so it is editable in each column.',
+  fulfillmentPerUnit:
+    'Pick, pack and domestic last-mile for one order, out of the bonded warehouse. Roughly 5 to 15 RMB depending on size and destination.',
+  marketingPct:
+    'Traffic and promotion as a share of sales. This is a placeholder for planning, not an execution plan. Flagship stores often spend 15 to 30 percent to hold their position, and the two platforms rarely cost the same.',
+  annualFee:
+    'The yearly platform or technical fee, billed whether you sell or not. Tmall Global sets it by first-level category, 30,000 or 60,000 RMB. JD Worldwide charges a platform usage fee of about US$1,000, so its default is seeded from the live rate.',
+  deposit:
+    'A refundable security deposit the platform holds while the store is open. It is working capital, not a cost, so it sits apart from the profit math. Tmall Global runs 50,000 for an R-trademark flagship and up. JD Worldwide uses a tiered deposit that starts near US$5,000 and steps up with sales.',
+};
+
+const notes = [
+  'Contribution per unit is the shelf price less everything variable: product, commission, payment, the TP fee, fulfillment, marketing, and the cross-border tax when you carry it. Scale that by monthly volume, take off the annual fee split over twelve months, and you have monthly operating profit.',
+  'The security deposit is refundable, so it never enters the profit line. It shows up on its own as working capital, the cash you need to park to open the store. JD Worldwide sets it in tiers that climb with cumulative sales, so treat the first-tier figure as a floor.',
+  'The cross-border comprehensive tax for general goods works out to 9.1 percent: 13 percent VAT levied on 70 percent of the price, with no consumption tax. Categories that carry consumption tax, cosmetics, perfume, alcohol, produce a higher effective rate, so edit the tax field if you sell one of those.',
+  'Two quota rules sit outside this model. A single cross-border order is capped at 5,000 RMB and a person can bring in 26,000 RMB a year. Cross either line, or ship one indivisible item over 5,000, and the order is taxed as general trade at the full rate, which changes the economics for high-ticket goods.',
+  'JD Worldwide also runs a personal-store route (个人店) with no entry fee, no deposit and no commission. It is a cheaper way to pilot the channel. This calculator models the standard brand flagship on both platforms, so bear that lighter option in mind for a first test.',
+  'JD Worldwide prices its deposit and annual fee in US dollars. Both defaults are seeded from the live rate on load and labelled in dollars. Edit either RMB figure and the model keeps what you typed.',
+];
+
+const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>`;
+---
+
+<Layout
+  title="Tmall Global vs JD Worldwide cost calculator | TheChinaPath"
+  description="Compare the flagship-store unit economics of Tmall Global and JD Worldwide side by side. Deposit, annual fee, commission, payment, bonded fulfillment and the cross-border comprehensive tax, in RMB and USD, on a live rate."
+>
+  <section
+    class="tool-hero tool-hero--image"
+    style="--tool-hero-img: url('/Images/tools/tmall-jd-hero-bg.png')"
+  >
+    <div class="container tool-hero__inner">
+      <nav class="tool-hero__crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="/tools">Calculators</a>
+        <span aria-hidden="true">/</span>
+        <span>Tmall Global vs JD Worldwide</span>
+      </nav>
+      <span class="eyebrow">Cost calculator</span>
+      <h1 class="tool-hero__title">Two flagship stores, <em>one</em> honest comparison.</h1>
+      <p class="tool-hero__lead">
+        Run your own cross-border unit economics on Tmall Global and JD Worldwide at the same time.
+        Deposit, annual fee, commission, payment, bonded fulfillment and the comprehensive tax, all
+        in RMB and USD, on today rate.
+      </p>
+      <div class="tool-hero__meta">
+        <div class="tool-hero__meta-item">
+          <span class="tool-hero__meta-num">Side by side</span>
+          <span class="tool-hero__meta-label">both platforms, line by line</span>
+        </div>
+        <div class="tool-hero__meta-item">
+          <span class="tool-hero__meta-num">RMB + USD</span>
+          <span class="tool-hero__meta-label">every figure, on the live rate</span>
+        </div>
+        <div class="tool-hero__meta-item">
+          <span class="tool-hero__meta-num">Live</span>
+          <span class="tool-hero__meta-label">every assumption is yours to change</span>
+        </div>
+      </div>
+      <a href="#calculator" class="tool-hero__scroll">
+        <span>Start comparing</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  {/* ---------- How it works ---------- */}
+  <section class="section calc-how">
+    <div class="container">
+      <div class="calc-how__head reveal">
+        <span class="eyebrow">How the model works</span>
+        <h2 class="calc-how__title">From shelf price to profit, on both platforms.</h2>
+      </div>
+      <ol class="calc-flow">
+        {
+          steps.map((s, idx) => (
+            <li class="calc-flow__step reveal" style={`--i:${idx}`}>
+              <span class="calc-flow__icon" set:html={s.icon} />
+              <h3 class="calc-flow__step-title">{s.title}</h3>
+              <p class="calc-flow__step-body">{s.body}</p>
+            </li>
+          ))
+        }
+      </ol>
+      <div class="calc-perks reveal">
+        <span class="calc-perks__label">What you get</span>
+        <ul class="calc-perks__list">
+          {
+            perks.map((p) => (
+              <li class="calc-perks__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8" /></svg>
+                {p}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* ---------- Calculator ---------- */}
+  <section class="section section--alt calc" id="calculator">
+    <div class="container">
+      <div class="calc__head reveal">
+        <span class="eyebrow">The calculator</span>
+        <h2 class="calc__title">Set your assumptions</h2>
+      </div>
+
+      <form class="calc-form" id="calc-form" novalidate>
+        <div class="calc-shell">
+          <div class="calc-main">
+            {/* Global inputs as sliders */}
+            <div class="calc-card calc-drivers reveal">
+              <div class="calc-card__head">
+                <h3 class="calc-card__title">Your product</h3>
+                <span class="calc-card__hint">The three numbers both platforms share.</span>
+              </div>
+              <div class="calc-drivers__grid">
+                {
+                  drivers.map((d) => (
+                    <div class="driver" data-driver>
+                      <div class="driver__top">
+                        <span class="calc-label-wrap">
+                          <label class="driver__label" for={d.id}>
+                            {d.label}
+                          </label>
+                          {help[d.id] && (
+                            <button
+                              type="button"
+                              class="calc-help__btn"
+                              data-help={help[d.id]}
+                              aria-label={`What is ${d.label}?`}
+                            >
+                              ?
+                            </button>
+                          )}
+                        </span>
+                        <span class="driver__value">
+                          <input
+                            class="driver__num"
+                            type="number"
+                            id={d.id}
+                            name={d.id}
+                            value={d.value}
+                            data-kind={d.kind}
+                            data-label={d.label}
+                            step={d.step}
+                            min={d.min}
+                            max={d.max}
+                          />
+                          <span class="driver__unit">{d.kind === 'money' ? 'RMB' : (d.unit ?? '')}</span>
+                        </span>
+                      </div>
+                      <input
+                        class="driver__range"
+                        type="range"
+                        min={d.min}
+                        max={d.max}
+                        step={d.step}
+                        value={d.value}
+                        data-target={d.id}
+                        aria-hidden="true"
+                        tabindex="-1"
+                      />
+                      {d.kind === 'money' && <span class="driver__usd" data-usd-for={d.id}></span>}
+                    </div>
+                  ))
+                }
+              </div>
+
+              {/* FX widget */}
+              <div class="calc-fxrow">
+                <div class="calc-fxrow__field">
+                  <span class="calc-label-wrap">
+                    <label class="driver__label" for="fx">USD to RMB rate</label>
+                    <button type="button" class="calc-help__btn" data-help={help.fx} aria-label="What is the exchange rate?">?</button>
+                  </span>
+                  <div class="calc-input-wrap" data-kind="number">
+                    <span class="calc-input-affix">1 USD</span>
+                    <input class="calc-input" type="number" inputmode="decimal" id="fx" name="fx" value="7.1" data-kind="number" data-label="USD to RMB rate" step="0.01" min="0" />
+                    <span class="calc-input-affix calc-input-affix--suffix">RMB</span>
+                  </div>
+                </div>
+                <button type="button" class="calc-fx-link" id="fx-refresh">
+                  <span class="calc-fx-link__icon" set:html={refreshIcon} />
+                  Refresh live rate
+                </button>
+                <p class="calc-field__hint" id="fx-note"></p>
+              </div>
+
+              {/* High-ticket quota warning */}
+              <p class="calc-warn" id="ticket-warn" hidden>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.3 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.3a2 2 0 0 0-3.4 0z"/></svg>
+                <span></span>
+              </p>
+            </div>
+
+            {/* Per-platform inputs, two columns aligned line by line */}
+            <div class="calc-card reveal">
+              <div class="calc-card__head">
+                <h3 class="calc-card__title">Platform assumptions</h3>
+                <span class="calc-card__hint">Defaults are directional 2025 benchmarks. Confirm your category rate at onboarding.</span>
+              </div>
+
+              <div class="vs-grid">
+                <span class="vs-grid__corner" aria-hidden="true"></span>
+                <span class="vs-grid__plat vs-grid__plat--tmall">Tmall Global</span>
+                <span class="vs-grid__plat vs-grid__plat--jd">JD Worldwide</span>
+                {
+                  rows.map((r) => (
+                    <Fragment>
+                      <span class="vs-grid__label">
+                        <span class="calc-label-wrap">
+                          <span class="vs-grid__label-text">{r.label}</span>
+                          {help[r.key] && (
+                            <button type="button" class="calc-help__btn" data-help={help[r.key]} aria-label={`What is ${r.label}?`}>?</button>
+                          )}
+                        </span>
+                      </span>
+                      {(['tmall', 'jd'] as const).map((plat) => (
+                        <div class="vs-grid__cell">
+                          {r.kind === 'select' ? (
+                            <select class="calc-select" id={`${plat}-${r.key}`} name={`${plat}-${r.key}`}>
+                              {(r.options ?? []).map((o) => (
+                                <option value={o.value} selected={o.value === r[plat]}>{o.label}</option>
+                              ))}
+                            </select>
+                          ) : (
+                            <div class="calc-input-wrap" data-kind={r.kind}>
+                              {r.kind === 'money' && <span class="calc-input-affix">RMB</span>}
+                              <input
+                                class="calc-input"
+                                type="number"
+                                inputmode="decimal"
+                                id={`${plat}-${r.key}`}
+                                name={`${plat}-${r.key}`}
+                                value={r[plat]}
+                                data-kind={r.kind}
+                                data-label={`${r.label} (${plat === 'tmall' ? 'Tmall Global' : 'JD Worldwide'})`}
+                                data-usd-anchor={r.usdAnchor && r.usdAnchor[plat] ? String(r.usdAnchor[plat]) : undefined}
+                                step={r.step ?? '1'}
+                                min="0"
+                              />
+                              {r.kind === 'percent' && <span class="calc-input-affix calc-input-affix--suffix">%</span>}
+                            </div>
+                          )}
+                          {r.kind === 'money' && <span class="vs-grid__usd" data-usd-for={`${plat}-${r.key}`}></span>}
+                          {plat === 'jd' && r.jdNote && <span class="vs-grid__note">{r.jdNote}</span>}
+                        </div>
+                      ))}
+                    </Fragment>
+                  ))
+                }
+              </div>
+
+              <p class="vs-foot">
+                JD Worldwide also offers a personal-store route (个人店) with no entry fee, no deposit
+                and no commission. This model covers the standard brand flagship on both platforms.
+              </p>
+            </div>
+          </div>
+
+          {/* Sticky live preview rail */}
+          <aside class="calc-rail reveal">
+            <div class="calc-preview">
+              <div class="calc-preview__glow" aria-hidden="true"></div>
+              <span class="calc-preview__eyebrow">Live preview</span>
+              <div class="calc-preview__orders">
+                <span class="calc-preview__orders-num" id="live-rev" data-pulse>RMB 299,000</span>
+                <span class="calc-preview__orders-label">monthly revenue at your inputs</span>
+              </div>
+
+              <div class="calc-preview__locked">
+                <div class="calc-preview__locked-row">
+                  <span>Stronger platform</span>
+                  <span class="calc-preview__blur">Tmall Global</span>
+                </div>
+                <div class="calc-preview__locked-row">
+                  <span>Operating profit / mo</span>
+                  <span class="calc-preview__blur">RMB 00,000</span>
+                </div>
+                <div class="calc-preview__locked-row">
+                  <span>Net margin</span>
+                  <span class="calc-preview__blur">00.0%</span>
+                </div>
+                <div class="calc-preview__lock" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary calc-preview__cta" id="calc-submit">
+                See the full comparison
+              </button>
+              <p class="calc-preview__note">
+                One work email opens the full comparison here. Export it to PDF when you are done.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </form>
+
+      {/* ---------- Results, hidden until the email gate is cleared ---------- */}
+      <div class="calc-results" id="calc-results" hidden>
+        {/* Print-only header: brand mark on the exported PDF */}
+        <div class="calc-print calc-print__head" aria-hidden="true">
+          <img src="/Images/thechinapath-horizontal.png" alt="TheChinaPath" class="calc-print__logo" />
+          <div class="calc-print__meta">
+            <span>Tmall Global vs JD Worldwide flagship cost comparison</span>
+            <span>thechinapath.com · hello@thechinapath.com</span>
+          </div>
+        </div>
+
+        <div class="calc-results__head reveal">
+          <div class="calc-results__head-text">
+            <span class="eyebrow">Your comparison</span>
+            <h2 class="calc-results__title">Tmall Global vs JD Worldwide</h2>
+            <p class="calc-results__sub" id="calc-results-sub"></p>
+          </div>
+          <button type="button" class="btn btn--secondary btn--sm calc-results__pdf" id="calc-pdf" data-export-pdf>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            Export to PDF
+          </button>
+        </div>
+
+        <div class="calc-scenario reveal">
+          {/* Verdict + the two platform metric columns */}
+          <div class="calc-focus">
+            <div class="calc-focus__hero">
+              <span class="calc-focus__hero-label" id="verdict-label">Stronger at these inputs</span>
+              <span class="calc-focus__hero-num" id="verdict-name">Tmall Global</span>
+              <span class="calc-focus__hero-usd" id="verdict-line"></span>
+            </div>
+
+            <div class="calc-vs">
+              <article class="calc-vs__col" data-plat="tmall">
+                <header class="calc-vs__head">
+                  <span class="calc-vs__name">Tmall Global</span>
+                  <span class="calc-vs__badge" hidden>Best</span>
+                </header>
+                <p class="calc-vs__loss" hidden>Loss per unit. Break-even not reachable at these fees.</p>
+                <dl class="calc-vs__metrics">
+                  <div class="calc-vs__metric calc-vs__metric--lead">
+                    <dt>Operating profit / mo</dt>
+                    <dd><span data-m="opProfit">RMB 0</span><span class="calc-vs__usd" data-m="opProfitUsd">$0</span></dd>
+                  </div>
+                  <div class="calc-vs__metric"><dt>Net margin</dt><dd data-m="netMargin">0%</dd></div>
+                  <div class="calc-vs__metric"><dt>Contribution / unit</dt><dd data-m="contribUnit">RMB 0</dd></div>
+                  <div class="calc-vs__metric"><dt>Contribution margin</dt><dd data-m="contribMargin">0%</dd></div>
+                  <div class="calc-vs__metric"><dt>Break-even / mo</dt><dd data-m="breakEven">0 units</dd></div>
+                  <div class="calc-vs__metric"><dt>Deposit (working capital)</dt><dd data-m="deposit">RMB 0</dd></div>
+                </dl>
+              </article>
+
+              <article class="calc-vs__col" data-plat="jd">
+                <header class="calc-vs__head">
+                  <span class="calc-vs__name">JD Worldwide</span>
+                  <span class="calc-vs__badge" hidden>Best</span>
+                </header>
+                <p class="calc-vs__loss" hidden>Loss per unit. Break-even not reachable at these fees.</p>
+                <dl class="calc-vs__metrics">
+                  <div class="calc-vs__metric calc-vs__metric--lead">
+                    <dt>Operating profit / mo</dt>
+                    <dd><span data-m="opProfit">RMB 0</span><span class="calc-vs__usd" data-m="opProfitUsd">$0</span></dd>
+                  </div>
+                  <div class="calc-vs__metric"><dt>Net margin</dt><dd data-m="netMargin">0%</dd></div>
+                  <div class="calc-vs__metric"><dt>Contribution / unit</dt><dd data-m="contribUnit">RMB 0</dd></div>
+                  <div class="calc-vs__metric"><dt>Contribution margin</dt><dd data-m="contribMargin">0%</dd></div>
+                  <div class="calc-vs__metric"><dt>Break-even / mo</dt><dd data-m="breakEven">0 units</dd></div>
+                  <div class="calc-vs__metric"><dt>Deposit (working capital)</dt><dd data-m="deposit">RMB 0</dd></div>
+                </dl>
+              </article>
+            </div>
+          </div>
+
+          {/* Per-unit price breakdown, one platform at a time */}
+          <div class="calc-compo" id="calc-compo">
+            <div class="calc-compo__head">
+              <div class="calc-compo__head-text">
+                <h3 class="calc-compo__title">Where the shelf price goes</h3>
+                <p class="calc-compo__sub" id="compo-sub">One unit, broken into cost and contribution.</p>
+                <div class="calc-period__tabs calc-period__tabs--sm" role="tablist" aria-label="Platform">
+                  <button type="button" class="calc-period__tab is-active" data-plat="tmall" role="tab" aria-selected="true">Tmall Global</button>
+                  <button type="button" class="calc-period__tab" data-plat="jd" role="tab" aria-selected="false">JD Worldwide</button>
+                </div>
+              </div>
+              <div class="calc-compo__total-wrap">
+                <span class="calc-compo__total-label" id="compo-total-label">Shelf price</span>
+                <span class="calc-compo__total" id="compo-total">RMB 0</span>
+              </div>
+            </div>
+            <div class="calc-compo__spine" id="compo-bar" role="img" aria-label="Price composition">
+              <div class="calc-compo__tip" id="compo-tip" aria-hidden="true"></div>
+            </div>
+            <div class="calc-compo__cards" id="compo-cards"></div>
+          </div>
+        </div>
+
+        <details class="calc-detail reveal">
+          <summary class="calc-detail__summary">
+            <span>See the full line-by-line breakdown</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
+          </summary>
+          <div class="calc-table-bar">
+            <span class="calc-table-bar__label">Both platforms, per unit and per month</span>
+            <button type="button" class="btn btn--secondary btn--sm calc-table-bar__pdf" data-export-pdf>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+              Export this table to PDF
+            </button>
+          </div>
+          <div class="calc-table-wrap">
+            <table class="calc-table" id="calc-table">
+              <thead>
+                <tr>
+                  <th scope="col">Line</th>
+                  <th scope="col">Tmall Global</th>
+                  <th scope="col">JD Worldwide</th>
+                </tr>
+              </thead>
+              <tbody id="calc-table-body"></tbody>
+            </table>
+          </div>
+        </details>
+
+        <div class="calc-notes reveal">
+          <h3 class="calc-notes__title">Reading the numbers</h3>
+          <ul class="calc-notes__list">
+            {notes.map((n) => <li>{n}</li>)}
+          </ul>
+        </div>
+
+        <div class="calc-cta reveal">
+          <p>Want us to pressure-test these assumptions against your own brief?</p>
+          <a class="btn btn--secondary" href="/contact">Talk to our China team</a>
+        </div>
+
+        {/* Print-only footer: contact + disclaimer on the exported PDF */}
+        <div class="calc-print calc-print__foot" aria-hidden="true">
+          <div class="calc-print__foot-brand">
+            <img src="/Images/thechinapath-horizontal.png" alt="TheChinaPath" class="calc-print__logo" />
+            <span>thechinapath.com · hello@thechinapath.com</span>
+          </div>
+          <p class="calc-print__disclaimer">
+            Planning estimate, not a quote. Built from public benchmarks and the figures you entered,
+            so the output is directional only. TheChinaPath does not guarantee the totals, the
+            assumptions or the math. For information only. Check every line against real quotes from
+            your TP, your warehouse and the platform before you commit.
+          </p>
+        </div>
+      </div>
+
+      <p class="calc-disclaimer">
+        A quick note. These figures are a planning estimate, not a quote. The model runs on public
+        benchmarks and the numbers you type in, so the output is directional only. We don't
+        guarantee the totals, the assumptions, or the math behind them. It's here for demo and info,
+        nothing more. Before you commit real money, check every line against actual quotes from your
+        TP, your warehouse, and the platform.
+      </p>
+    </div>
+  </section>
+
+  {/* ---------- Email gate ---------- */}
+  <div class="calc-gate" id="calc-gate" hidden aria-hidden="true">
+    <div class="calc-gate__backdrop" data-close></div>
+    <div class="calc-gate__panel" role="dialog" aria-modal="true" aria-labelledby="calc-gate-title">
+      <button class="calc-gate__close" type="button" data-close aria-label="Close">×</button>
+      <span class="eyebrow">One step</span>
+      <h2 class="calc-gate__title" id="calc-gate-title">Unlock your full comparison</h2>
+      <p class="calc-gate__lead">
+        Your numbers are ready. Add your work email and we'll open the full comparison right here on
+        the page. You can export it to PDF once it's on screen.
+      </p>
+
+      <form class="calc-gate__form" id="calc-gate-form" novalidate>
+        <div class="calc-field">
+          <label class="calc-field__label" for="lead-name">Name</label>
+          <input class="calc-input calc-input--text" type="text" id="lead-name" name="name" autocomplete="name" required />
+        </div>
+        <div class="calc-field">
+          <label class="calc-field__label" for="lead-email">Work email</label>
+          <input class="calc-input calc-input--text" type="email" id="lead-email" name="email" autocomplete="email" required />
+        </div>
+        <div class="calc-field">
+          <label class="calc-field__label" for="lead-company">Company</label>
+          <input class="calc-input calc-input--text" type="text" id="lead-company" name="company" autocomplete="organization" />
+        </div>
+
+        <button type="submit" class="btn btn--primary calc-gate__submit" id="lead-submit">
+          Show my comparison
+        </button>
+        <p class="calc-gate__note">
+          We use your email to follow up and, now and then, share notes on selling in China. No
+          spam, and you can opt out any time.
+        </p>
+        <p class="calc-gate__status" id="lead-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  {/* Shared field-explanation bubble, positioned by JS to dodge clipping */}
+  <div class="field-pop" id="field-pop" role="tooltip" hidden></div>
+</Layout>
+
+<script is:inline>
+  (function () {
+    const form = document.getElementById('calc-form');
+    const gate = document.getElementById('calc-gate');
+    const gateForm = document.getElementById('calc-gate-form');
+    const gateStatus = document.getElementById('lead-status');
+    const results = document.getElementById('calc-results');
+    if (!form || !gate || !gateForm) return;
+
+    const prefersReduced =
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const PLAT_LABEL = { tmall: 'Tmall Global', jd: 'JD Worldwide' };
+
+    // ---- number helpers ----
+    const rmb0 = (n) => 'RMB ' + Math.round(n).toLocaleString('en-US');
+    const rmb2 = (n) => 'RMB ' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const usd0 = (n) => '$' + Math.round(n).toLocaleString('en-US');
+    const pct1 = (n) => (n * 100).toFixed(1) + '%';
+
+    // ---------- scroll reveal ----------
+    if ('IntersectionObserver' in window && !prefersReduced) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add('is-in');
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in'));
+    }
+
+    // ---------- slider <-> number sync + fill ----------
+    function paintRange(range) {
+      const min = parseFloat(range.min || '0');
+      const max = parseFloat(range.max || '100');
+      const val = parseFloat(range.value || '0');
+      const pct = max > min ? ((val - min) / (max - min)) * 100 : 0;
+      range.style.setProperty('--pct', pct + '%');
+    }
+    document.querySelectorAll('.driver__range').forEach((range) => {
+      const num = document.getElementById(range.getAttribute('data-target'));
+      paintRange(range);
+      range.addEventListener('input', () => {
+        if (num) {
+          num.value = range.value;
+          num.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+        paintRange(range);
+      });
+      if (num) {
+        num.addEventListener('input', () => {
+          range.value = num.value;
+          paintRange(range);
+        });
+      }
+    });
+
+    // ---------- USD helpers under money inputs ----------
+    function paintUsd() {
+      const fx = parseFloat(document.getElementById('fx').value) || 0;
+      document.querySelectorAll('[data-usd-for]').forEach((el) => {
+        const src = document.getElementById(el.getAttribute('data-usd-for'));
+        if (!src) return;
+        const v = parseFloat(src.value) || 0;
+        el.textContent = fx > 0 ? '≈ ' + usd0(v / fx) : '';
+      });
+    }
+
+    // ---------- live preview ----------
+    const liveRev = document.getElementById('live-rev');
+    const ticketWarn = document.getElementById('ticket-warn');
+    function updatePreview() {
+      const price = parseFloat(document.getElementById('retailPrice').value) || 0;
+      const vol = parseFloat(document.getElementById('volume').value) || 0;
+      const rev = price * vol;
+      if (liveRev) {
+        liveRev.textContent = rmb0(rev);
+        if (!prefersReduced) {
+          liveRev.classList.remove('is-pulse');
+          void liveRev.offsetWidth;
+          liveRev.classList.add('is-pulse');
+        }
+      }
+      // high-ticket quota warning
+      if (ticketWarn) {
+        if (price > 5000) {
+          ticketWarn.querySelector('span').textContent =
+            'At ' + rmb0(price) + ' a unit you are over the 5,000 RMB single-order cross-border quota. Above that line the order is taxed as general trade at the full rate, not the 9.1 percent bonded rate, which changes the math below.';
+          ticketWarn.hidden = false;
+        } else {
+          ticketWarn.hidden = true;
+        }
+      }
+      paintUsd();
+    }
+    form.addEventListener('input', updatePreview);
+
+    // ---------- field help bubbles ----------
+    const pop = document.getElementById('field-pop');
+    let popTrigger = null;
+    function showPop(btn) {
+      pop.textContent = btn.getAttribute('data-help') || '';
+      pop.hidden = false;
+      const pw = Math.min(320, window.innerWidth - 24);
+      pop.style.width = pw + 'px';
+      const r = btn.getBoundingClientRect();
+      let left = r.left + r.width / 2 - pw / 2;
+      left = Math.max(12, Math.min(left, window.innerWidth - pw - 12));
+      pop.style.left = left + 'px';
+      const ph = pop.offsetHeight;
+      let top = r.bottom + 8;
+      if (top + ph > window.innerHeight - 8) top = r.top - ph - 8;
+      pop.style.top = Math.max(8, top) + 'px';
+      pop.classList.add('is-open');
+      btn.setAttribute('aria-expanded', 'true');
+      popTrigger = btn;
+    }
+    let popPinned = false;
+    function hidePop() {
+      if (!pop) return;
+      pop.hidden = true;
+      pop.classList.remove('is-open');
+      if (popTrigger) popTrigger.setAttribute('aria-expanded', 'false');
+      popTrigger = null;
+      popPinned = false;
+    }
+    if (pop) {
+      const canHover = window.matchMedia && window.matchMedia('(hover: hover)').matches;
+      document.querySelectorAll('.calc-help__btn').forEach((btn) => {
+        btn.setAttribute('aria-expanded', 'false');
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (popTrigger === btn && popPinned) {
+            hidePop();
+          } else {
+            showPop(btn);
+            popPinned = true;
+          }
+        });
+        if (canHover) {
+          btn.addEventListener('mouseenter', () => {
+            if (!popPinned) showPop(btn);
+          });
+          btn.addEventListener('mouseleave', () => {
+            if (!popPinned) hidePop();
+          });
+          btn.addEventListener('focus', () => {
+            if (!popPinned) showPop(btn);
+          });
+          btn.addEventListener('blur', () => {
+            if (!popPinned) hidePop();
+          });
+        }
+      });
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest || !e.target.closest('.calc-help__btn')) hidePop();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') hidePop();
+      });
+      window.addEventListener('scroll', hidePop, true);
+      window.addEventListener('resize', hidePop);
+    }
+
+    // ---------- FX live rate + JD USD-anchored defaults ----------
+    const fxBtn = document.getElementById('fx-refresh');
+    const fxNote = document.getElementById('fx-note');
+    // JD deposit and annual fee are quoted in USD, so we seed them from the rate
+    // on load. Once a visitor edits one by hand we leave it alone.
+    const usdFields = Array.from(document.querySelectorAll('[data-usd-anchor]'));
+    usdFields.forEach((el) => {
+      el.addEventListener('input', () => {
+        el.dataset.dirty = '1';
+      });
+    });
+    function reseedUsdFields(fx) {
+      if (!(fx > 0)) return;
+      usdFields.forEach((el) => {
+        if (el.dataset.dirty === '1') return;
+        const anchor = parseFloat(el.getAttribute('data-usd-anchor')) || 0;
+        el.value = String(Math.round(anchor * fx));
+      });
+    }
+    async function refreshFx() {
+      if (fxBtn) fxBtn.classList.add('is-spinning');
+      if (fxNote) {
+        fxNote.textContent = 'Fetching the live rate…';
+        fxNote.className = 'calc-field__hint';
+      }
+      try {
+        const res = await fetch('/api/fx-rate');
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || !data.rate) throw new Error(data.error || 'No rate returned.');
+        const fxInput = document.getElementById('fx');
+        fxInput.value = data.rate;
+        reseedUsdFields(parseFloat(data.rate) || 0);
+        fxInput.dispatchEvent(new Event('input', { bubbles: true }));
+        if (fxNote) {
+          fxNote.textContent = 'Live rate: 1 USD = ' + data.rate + ' RMB.';
+          fxNote.className = 'calc-field__hint calc-field__hint--ok';
+        }
+      } catch (err) {
+        if (fxNote) {
+          fxNote.textContent = 'Could not fetch a live rate. Keeping your value.';
+          fxNote.className = 'calc-field__hint calc-field__hint--err';
+        }
+      } finally {
+        if (fxBtn) fxBtn.classList.remove('is-spinning');
+      }
+    }
+    if (fxBtn) fxBtn.addEventListener('click', refreshFx);
+    updatePreview();
+    refreshFx();
+
+    // ---------- compute (3P model spec, per platform) ----------
+    function num(id) {
+      const el = document.getElementById(id);
+      if (!el) return 0;
+      const raw = (el.value || '').trim();
+      if (raw === '') return 0;
+      const v = parseFloat(raw);
+      return Number.isFinite(v) ? v : 0;
+    }
+    function pctv(id) {
+      return num(id) / 100;
+    }
+    function selv(id) {
+      const el = document.getElementById(id);
+      return el ? el.value : '';
+    }
+
+    function readGlobal() {
+      return {
+        retailPrice: num('retailPrice'),
+        volume: num('volume'),
+        landedCost: num('landedCost'),
+        fx: num('fx'),
+      };
+    }
+    function readPlat(pre) {
+      return {
+        commissionPct: pctv(pre + '-commissionPct'),
+        paymentPct: pctv(pre + '-paymentPct'),
+        cbecTaxPct: pctv(pre + '-cbecTaxPct'),
+        cbecTaxPayer: selv(pre + '-cbecTaxPayer'),
+        tpFeePct: pctv(pre + '-tpFeePct'),
+        fulfillmentPerUnit: num(pre + '-fulfillmentPerUnit'),
+        marketingPct: pctv(pre + '-marketingPct'),
+        annualFee: num(pre + '-annualFee'),
+        deposit: num(pre + '-deposit'),
+      };
+    }
+
+    // colour + icon per price bucket
+    const BUCKETS = [
+      { key: 'Product (COGS)', color: '#7b61a8' },
+      { key: 'Commission', color: '#c8102e' },
+      { key: 'Payment fee', color: '#e2683b' },
+      { key: 'Cross-border tax', color: '#f4874b' },
+      { key: 'TP / operating fee', color: '#3aa0c8' },
+      { key: 'Fulfillment', color: '#6b7280' },
+      { key: 'Marketing', color: '#f4b740' },
+      { key: 'Contribution', color: '#1c9e6a' },
+    ];
+
+    function calcPlatform(g, p) {
+      const price = g.retailPrice;
+      const vol = g.volume;
+      const commission = price * p.commissionPct;
+      const payment = price * p.paymentPct;
+      const tpFee = price * p.tpFeePct;
+      const marketing = price * p.marketingPct;
+      const fulfillment = p.fulfillmentPerUnit;
+      const cbecTax = p.cbecTaxPayer === 'brand' ? price * p.cbecTaxPct : 0;
+      const cogs = g.landedCost;
+
+      const variable = cogs + commission + payment + tpFee + marketing + fulfillment + cbecTax;
+      const contributionUnit = price - variable;
+      const contributionMargin = price > 0 ? contributionUnit / price : 0;
+
+      const revenueMonth = price * vol;
+      const contributionMonth = contributionUnit * vol;
+      const fixedMonth = p.annualFee / 12;
+      const opProfit = contributionMonth - fixedMonth;
+      const netMargin = revenueMonth > 0 ? opProfit / revenueMonth : 0;
+      const breakEven = contributionUnit > 0 ? Math.ceil(fixedMonth / contributionUnit) : Infinity;
+      const opUSD = g.fx > 0 ? opProfit / g.fx : 0;
+
+      const lines = {
+        'Product (COGS)': cogs,
+        Commission: commission,
+        'Payment fee': payment,
+        'Cross-border tax': cbecTax,
+        'TP / operating fee': tpFee,
+        Fulfillment: fulfillment,
+        Marketing: marketing,
+      };
+      const buckets = BUCKETS.map((b) => ({
+        key: b.key,
+        color: b.color,
+        value: b.key === 'Contribution' ? Math.max(0, contributionUnit) : lines[b.key],
+      }));
+
+      return {
+        price,
+        vol,
+        cogs,
+        commission,
+        payment,
+        tpFee,
+        marketing,
+        fulfillment,
+        cbecTax,
+        cbecTaxPayer: p.cbecTaxPayer,
+        variable,
+        contributionUnit,
+        contributionMargin,
+        revenueMonth,
+        contributionMonth,
+        fixedMonth,
+        annualFee: p.annualFee,
+        deposit: p.deposit,
+        opProfit,
+        opUSD,
+        netMargin,
+        breakEven,
+        buckets,
+        loss: contributionUnit <= 0,
+      };
+    }
+
+    // ---------- count-up ----------
+    function animateCount(el, target, fmt) {
+      if (!Number.isFinite(target)) {
+        el.textContent = fmt(0);
+        return;
+      }
+      if (prefersReduced) {
+        el.textContent = fmt(target);
+        return;
+      }
+      const start = performance.now();
+      const dur = 850;
+      function tick(now) {
+        const t = Math.min(1, (now - start) / dur);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = fmt(target * eased);
+        if (t < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    // ---------- results state ----------
+    let state = null; // { g, tmall, jd, winner, valid }
+    let activePlat = 'tmall';
+    let unlocked = false;
+    try {
+      unlocked = sessionStorage.getItem('flagshipCalcUnlocked') === '1';
+    } catch (_) {
+      /* private mode */
+    }
+    function paintCta() {
+      const cta = document.getElementById('calc-submit');
+      const note = document.querySelector('.calc-preview__note');
+      if (unlocked && cta) cta.textContent = 'Update my comparison';
+      if (unlocked && note) note.textContent = 'Change any assumption above, then re-run. No need to sign in again.';
+    }
+    paintCta();
+
+    function fillCol(plat, m, g, isWinner) {
+      const col = document.querySelector('.calc-vs__col[data-plat="' + plat + '"]');
+      if (!col) return;
+      const badge = col.querySelector('.calc-vs__badge');
+      const lossEl = col.querySelector('.calc-vs__loss');
+      col.classList.toggle('is-best', isWinner && !m.loss && state.valid);
+      col.classList.toggle('is-loss', m.loss && state.valid);
+      if (badge) badge.hidden = !(isWinner && !m.loss && state.valid);
+      if (lossEl) lossEl.hidden = !(m.loss && state.valid);
+
+      const set = (key, text) => {
+        const el = col.querySelector('[data-m="' + key + '"]');
+        if (el) el.textContent = text;
+      };
+      if (!state.valid) {
+        ['opProfit', 'opProfitUsd', 'netMargin', 'contribUnit', 'contribMargin', 'breakEven', 'deposit'].forEach((k) => set(k, '—'));
+        return;
+      }
+      set('opProfit', (m.opProfit >= 0 ? '' : '') + rmb0(m.opProfit));
+      set('opProfitUsd', g.fx > 0 ? usd0(m.opUSD) : '');
+      set('netMargin', m.loss ? '—' : pct1(m.netMargin));
+      set('contribUnit', rmb2(m.contributionUnit));
+      set('contribMargin', m.loss ? '—' : pct1(m.contributionMargin));
+      set('breakEven', m.loss ? 'not reachable' : Math.round(m.breakEven).toLocaleString('en-US') + ' units');
+      set('deposit', rmb0(m.deposit));
+
+      // colour the lead profit number
+      const lead = col.querySelector('[data-m="opProfit"]');
+      if (lead) {
+        lead.classList.remove('is-profit', 'is-loss');
+        lead.classList.add(m.opProfit >= 0 ? 'is-profit' : 'is-loss');
+      }
+    }
+
+    function renderVerdict() {
+      const nameEl = document.getElementById('verdict-name');
+      const lineEl = document.getElementById('verdict-line');
+      const labelEl = document.getElementById('verdict-label');
+      if (!state.valid) {
+        labelEl.textContent = 'Add a price and a volume';
+        nameEl.textContent = '—';
+        lineEl.textContent = 'Enter a retail price and monthly volume to compare the two platforms.';
+        return;
+      }
+      const w = state[state.winner];
+      const l = state[state.winner === 'tmall' ? 'jd' : 'tmall'];
+      const gap = w.opProfit - l.opProfit;
+      const pp = (w.netMargin - l.netMargin) * 100;
+      labelEl.textContent = 'Stronger at these inputs';
+      nameEl.textContent = PLAT_LABEL[state.winner];
+      if (Math.abs(gap) < 1) {
+        lineEl.textContent = 'The two platforms land within a rounding error of each other on monthly profit.';
+      } else {
+        lineEl.textContent =
+          PLAT_LABEL[state.winner] +
+          ' returns ' +
+          rmb0(Math.abs(gap)) +
+          ' more a month, about ' +
+          Math.abs(pp).toFixed(1) +
+          ' points of margin, at the numbers you entered.';
+      }
+    }
+
+    // line icons keyed by bucket
+    const BUCKET_ICONS = {
+      'Product (COGS)':
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg>',
+      Commission:
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>',
+      'Payment fee':
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>',
+      'Cross-border tax':
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10a1 1 0 0 1 1 1v17l-3-2-3 2-3-2-3 2V4a1 1 0 0 1 1-1z"/><path d="M14.5 9.5l-5 5"/></svg>',
+      'TP / operating fee':
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V21a2 2 0 1 1-4 0v-.1A1.6 1.6 0 0 0 7 19.4a1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H1a2 2 0 1 1 0-4h.1A1.6 1.6 0 0 0 2.6 7a1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.6 1.6 0 0 0 7 2.6h.1A1.6 1.6 0 0 0 8.1 1V1a2 2 0 1 1 4 0v.1A1.6 1.6 0 0 0 15 2.6a1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8v.1A1.6 1.6 0 0 0 22.9 10H23a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/></svg>',
+      Fulfillment:
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>',
+      Marketing:
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h2l9 5V4L6 9H4a1 1 0 0 0-1 1z"/><path d="M18 9a4 4 0 0 1 0 6"/></svg>',
+      Contribution:
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 2 5-6"/></svg>',
+    };
+
+    let compoTipHideT = null;
+    function renderCompo(buckets, grandTotal) {
+      const bar = document.getElementById('compo-bar');
+      const cards = document.getElementById('compo-cards');
+      const tip = document.getElementById('compo-tip');
+      const totalEl = document.getElementById('compo-total');
+      if (!bar || !cards) return;
+      const total = grandTotal || 1;
+      animateCount(totalEl, grandTotal, rmb0);
+
+      const items = buckets
+        .filter((b) => b.value > 0)
+        .slice()
+        .sort((a, b) => b.value - a.value)
+        .map((b) => ({ ...b, pct: (b.value / total) * 100 }));
+
+      bar.querySelectorAll('.calc-compo__seg').forEach((el) => el.remove());
+      items.forEach((b) => {
+        const seg = document.createElement('span');
+        seg.className = 'calc-compo__seg';
+        seg.dataset.key = b.key;
+        seg.style.setProperty('--w', b.pct + '%');
+        seg.style.setProperty('--c', b.color);
+        bar.appendChild(seg);
+      });
+
+      cards.innerHTML = items
+        .map((b, idx) => {
+          const icon = BUCKET_ICONS[b.key] || '';
+          return (
+            '<article class="cost-card" data-key="' +
+            b.key +
+            '" style="--c:' +
+            b.color +
+            ';--i:' +
+            idx +
+            '">' +
+            '<span class="cost-card__icon">' +
+            icon +
+            '</span>' +
+            '<div class="cost-card__body">' +
+            '<div class="cost-card__top"><span class="cost-card__name">' +
+            b.key +
+            '</span><span class="cost-card__pct">' +
+            b.pct.toFixed(0) +
+            '%</span></div>' +
+            '<span class="cost-card__value" data-val="' +
+            b.value +
+            '">' +
+            rmb2(b.value) +
+            '</span>' +
+            '<div class="cost-card__meter"><span class="cost-card__meter-fill" style="--w:' +
+            b.pct +
+            '%"></span></div>' +
+            '</div>' +
+            '</article>'
+          );
+        })
+        .join('');
+
+      const segEls = Array.from(bar.querySelectorAll('.calc-compo__seg'));
+      const cardEls = Array.from(cards.querySelectorAll('.cost-card'));
+
+      const grow = () => {
+        segEls.forEach((el) => el.classList.add('is-grown'));
+        cardEls.forEach((el, idx) => {
+          el.classList.add('is-in');
+          const fill = el.querySelector('.cost-card__meter-fill');
+          if (fill) fill.classList.add('is-grown');
+          const valEl = el.querySelector('.cost-card__value');
+          if (valEl) {
+            const target = parseFloat(valEl.getAttribute('data-val')) || 0;
+            if (prefersReduced) valEl.textContent = rmb2(target);
+            else setTimeout(() => animateCount(valEl, target, rmb2), 120 + idx * 60);
+          }
+        });
+      };
+      if (prefersReduced) grow();
+      else requestAnimationFrame(grow);
+
+      const focus = (key, on) => {
+        segEls.forEach((el) => {
+          el.classList.toggle('is-focus', on && el.dataset.key === key);
+          el.classList.toggle('is-dim', on && el.dataset.key !== key);
+        });
+        cardEls.forEach((el) => {
+          el.classList.toggle('is-focus', on && el.dataset.key === key);
+          el.classList.toggle('is-dim', on && el.dataset.key !== key);
+        });
+      };
+      const showTip = (seg) => {
+        if (!tip) return;
+        if (compoTipHideT) clearTimeout(compoTipHideT);
+        const item = items.find((x) => x.key === seg.dataset.key);
+        if (!item) return;
+        tip.innerHTML =
+          '<span class="calc-compo__tip-key">' +
+          item.key +
+          '</span><span class="calc-compo__tip-val">' +
+          rmb2(item.value) +
+          ' · ' +
+          item.pct.toFixed(1) +
+          '%</span>';
+        tip.style.left = seg.offsetLeft + seg.offsetWidth / 2 + 'px';
+        tip.classList.add('is-open');
+      };
+      const hideTip = () => {
+        if (!tip) return;
+        compoTipHideT = setTimeout(() => tip.classList.remove('is-open'), 60);
+      };
+      segEls.forEach((seg) => {
+        seg.addEventListener('mouseenter', () => {
+          focus(seg.dataset.key, true);
+          showTip(seg);
+        });
+        seg.addEventListener('mouseleave', () => {
+          focus(seg.dataset.key, false);
+          hideTip();
+        });
+      });
+      cardEls.forEach((card) => {
+        card.addEventListener('mouseenter', () => focus(card.dataset.key, true));
+        card.addEventListener('mouseleave', () => focus(card.dataset.key, false));
+      });
+    }
+
+    function renderCompoActive() {
+      const m = state[activePlat];
+      const sub = document.getElementById('compo-sub');
+      if (sub)
+        sub.textContent =
+          'One unit on ' +
+          PLAT_LABEL[activePlat] +
+          ', broken into cost and contribution' +
+          (m.cbecTaxPayer === 'consumer' ? '. The consumer carries the cross-border tax here.' : '.');
+      const shown = m.buckets.filter((b) => b.value > 0);
+      const total = shown.reduce((a, b) => a + b.value, 0);
+      renderCompo(m.buckets, total || m.price || 1);
+    }
+
+    function renderTable() {
+      const t = state.tmall;
+      const j = state.jd;
+      const g = state.g;
+      const body = document.getElementById('calc-table-body');
+      const sectionRow = (label) =>
+        '<tr class="calc-table__section"><td colspan="3">' + label + '</td></tr>';
+      const row = (label, a, b, fmt, strong) =>
+        '<tr' +
+        (strong ? ' class="calc-table__total"' : '') +
+        '><td>' +
+        label +
+        '</td><td>' +
+        fmt(a) +
+        '</td><td>' +
+        fmt(b) +
+        '</td></tr>';
+      const plCell = (n) => {
+        const cls = n >= 0 ? 'calc-pl--pos' : 'calc-pl--neg';
+        const sign = n >= 0 ? '+' : '−';
+        return '<td class="calc-pl ' + cls + '">' + sign + rmb0(Math.abs(n)) + '</td>';
+      };
+
+      let rows = sectionRow('Per unit');
+      rows += row('Shelf price', t.price, j.price, rmb2, true);
+      rows += row('Product (COGS)', t.cogs, j.cogs, rmb2, false);
+      rows += row('Commission', t.commission, j.commission, rmb2, false);
+      rows += row('Payment fee', t.payment, j.payment, rmb2, false);
+      rows +=
+        '<tr><td>Cross-border tax</td><td>' +
+        (t.cbecTaxPayer === 'brand' ? rmb2(t.cbecTax) : 'consumer pays') +
+        '</td><td>' +
+        (j.cbecTaxPayer === 'brand' ? rmb2(j.cbecTax) : 'consumer pays') +
+        '</td></tr>';
+      rows += row('TP / operating fee', t.tpFee, j.tpFee, rmb2, false);
+      rows += row('Fulfillment', t.fulfillment, j.fulfillment, rmb2, false);
+      rows += row('Marketing', t.marketing, j.marketing, rmb2, false);
+      rows += row('Variable cost', t.variable, j.variable, rmb2, true);
+      rows +=
+        '<tr class="calc-table__total calc-table__pl"><td>Contribution / unit</td>' +
+        plCell(t.contributionUnit) +
+        plCell(j.contributionUnit) +
+        '</tr>';
+      rows += row('Contribution margin', t.contributionMargin, j.contributionMargin, (n) => (state.valid ? pct1(n) : '—'), false);
+
+      rows += sectionRow('Per month, at ' + Math.round(g.volume).toLocaleString('en-US') + ' units');
+      rows += row('Revenue', t.revenueMonth, j.revenueMonth, rmb0, false);
+      rows += row('Contribution', t.contributionMonth, j.contributionMonth, rmb0, false);
+      rows += row('Annual fee ÷ 12', t.fixedMonth, j.fixedMonth, rmb0, false);
+      rows +=
+        '<tr class="calc-table__total calc-table__pl"><td>Operating profit</td>' +
+        plCell(t.opProfit) +
+        plCell(j.opProfit) +
+        '</tr>';
+      if (g.fx > 0) {
+        rows += row('Operating profit (USD)', t.opUSD, j.opUSD, usd0, false);
+      }
+      rows += row('Net margin', t.netMargin, j.netMargin, (n) => (state.valid ? pct1(n) : '—'), false);
+      rows +=
+        '<tr><td>Break-even volume</td><td>' +
+        (t.loss ? 'not reachable' : Math.round(t.breakEven).toLocaleString('en-US') + ' units') +
+        '</td><td>' +
+        (j.loss ? 'not reachable' : Math.round(j.breakEven).toLocaleString('en-US') + ' units') +
+        '</td></tr>';
+
+      rows += sectionRow('Working capital (refundable, not a cost)');
+      rows += row('Security deposit', t.deposit, j.deposit, rmb0, false);
+      rows += row('Annual platform fee', t.annualFee, j.annualFee, rmb0, false);
+
+      body.innerHTML = rows;
+    }
+
+    function renderResults() {
+      const g = state.g;
+      document.getElementById('calc-results-sub').textContent = state.valid
+        ? 'Based on a ' +
+          rmb0(g.retailPrice) +
+          ' shelf price, ' +
+          Math.round(g.volume).toLocaleString('en-US') +
+          ' units a month, ' +
+          rmb0(g.landedCost) +
+          ' landed cost, at 1 USD = ' +
+          g.fx +
+          ' RMB.'
+        : 'Enter a retail price and a monthly volume to run the comparison.';
+
+      renderVerdict();
+      fillCol('tmall', state.tmall, g, state.winner === 'tmall');
+      fillCol('jd', state.jd, g, state.winner === 'jd');
+      // count-up on the two lead profit numbers
+      if (state.valid) {
+        ['tmall', 'jd'].forEach((plat) => {
+          const el = document.querySelector('.calc-vs__col[data-plat="' + plat + '"] [data-m="opProfit"]');
+          if (el) animateCount(el, state[plat].opProfit, rmb0);
+        });
+      }
+      renderCompoActive();
+      renderTable();
+
+      results.hidden = false;
+      results.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in'));
+    }
+
+    // ---------- platform toggle on the composition ----------
+    document.querySelectorAll('.calc-period__tab[data-plat]').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        activePlat = tab.getAttribute('data-plat');
+        document.querySelectorAll('.calc-period__tab[data-plat]').forEach((t) => {
+          const on = t.getAttribute('data-plat') === activePlat;
+          t.classList.toggle('is-active', on);
+          t.setAttribute('aria-selected', String(on));
+        });
+        if (state) renderCompoActive();
+      });
+    });
+
+    // export to PDF via the browser print dialog
+    function exportPdf() {
+      const detail = document.querySelector('.calc-detail');
+      if (detail) detail.open = true;
+      window.print();
+    }
+    document.querySelectorAll('[data-export-pdf]').forEach((btn) => btn.addEventListener('click', exportPdf));
+
+    // ---------- lead payload ----------
+    function leadPayloadExtras() {
+      const inputs = [];
+      form.querySelectorAll('input[data-kind], select').forEach((el) => {
+        const label = el.getAttribute('data-label') || el.name;
+        if (!label) return;
+        const kind = el.getAttribute('data-kind');
+        let val = (el.value || '').trim();
+        if (val === '') val = '(not set)';
+        else if (kind === 'money') val = 'RMB ' + Number(val).toLocaleString('en-US');
+        else if (kind === 'percent') val = val + '%';
+        inputs.push({ label, value: val });
+      });
+      const fmtProfit = (m) => rmb0(m.opProfit) + (state.g.fx > 0 ? ' / ' + usd0(m.opUSD) : '');
+      const out = [
+        { label: 'Stronger platform', value: state.valid ? PLAT_LABEL[state.winner] : '(not set)' },
+        { label: 'Tmall Global operating profit / mo', value: fmtProfit(state.tmall) },
+        { label: 'JD Worldwide operating profit / mo', value: fmtProfit(state.jd) },
+        { label: 'Tmall Global net margin', value: state.tmall.loss ? 'loss per unit' : pct1(state.tmall.netMargin) },
+        { label: 'JD Worldwide net margin', value: state.jd.loss ? 'loss per unit' : pct1(state.jd.netMargin) },
+      ];
+      return { inputs, results: out };
+    }
+
+    // ---------- gate ----------
+    let lastFocus = null;
+    function openGate() {
+      lastFocus = document.activeElement;
+      gate.hidden = false;
+      gate.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      const first = document.getElementById('lead-name');
+      if (first) first.focus();
+    }
+    function closeGate() {
+      gate.hidden = true;
+      gate.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+    gate.querySelectorAll('[data-close]').forEach((el) => el.addEventListener('click', closeGate));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !gate.hidden) closeGate();
+    });
+
+    function buildState() {
+      const g = readGlobal();
+      const tmall = calcPlatform(g, readPlat('tmall'));
+      const jd = calcPlatform(g, readPlat('jd'));
+      const valid = g.retailPrice > 0 && g.volume > 0;
+      const winner = tmall.opProfit >= jd.opProfit ? 'tmall' : 'jd';
+      return { g, tmall, jd, valid, winner };
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      state = buildState();
+      if (unlocked) {
+        renderResults();
+        results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        openGate();
+      }
+    });
+
+    const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    gateForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      gateStatus.textContent = '';
+      gateStatus.className = 'calc-gate__status';
+      const data = new FormData(gateForm);
+      const name = String(data.get('name') || '').trim();
+      const email = String(data.get('email') || '').trim();
+      const company = String(data.get('company') || '').trim();
+      if (!name || !EMAIL_RE.test(email)) {
+        gateStatus.textContent = 'Please add your name and a valid work email.';
+        gateStatus.classList.add('calc-gate__status--error');
+        return;
+      }
+
+      const extras = state ? leadPayloadExtras() : { inputs: [], results: [] };
+      fetch('/api/calculator-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, company, inputs: extras.inputs, results: extras.results }),
+      }).catch(() => {
+        /* lead capture is best-effort */
+      });
+
+      unlocked = true;
+      try {
+        sessionStorage.setItem('flagshipCalcUnlocked', '1');
+      } catch (_) {
+        /* storage disabled */
+      }
+      paintCta();
+
+      closeGate();
+      renderResults();
+      results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  })();
+</script>
+
+<style is:global>
+  /* Styles are global on purpose: much of this UI (cost cards, the spine bar,
+     the results table body, the channel-mix note) is built with innerHTML at
+     runtime, and Astro's scoped styles never reach nodes created after render.
+     A page's CSS ships only with that page, so global here stays on this page. */
+
+  /* ---------- scroll reveal ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.6s var(--ease),
+      transform 0.6s var(--ease);
+  }
+  .reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+  .calc-flow__step.reveal {
+    transition-delay: calc(var(--i) * 90ms);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  /* ---------- hero scroll cue ---------- */
+  .tool-hero__scroll {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: var(--space-6);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--fs-small);
+    font-weight: 600;
+  }
+  .tool-hero__scroll:hover {
+    color: #fff;
+  }
+  .tool-hero__scroll svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    animation: heroBob 1.8s ease-in-out infinite;
+  }
+  @keyframes heroBob {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(4px);
+    }
+  }
+
+  /* ---------- how it works ---------- */
+  .calc-how__head {
+    max-width: 60ch;
+    margin-bottom: var(--space-6);
+  }
+  .calc-how__title {
+    margin: 0;
+  }
+  .calc-flow {
+    list-style: none;
+    margin: 0 0 var(--space-6);
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-5);
+    position: relative;
+  }
+  .calc-flow__step {
+    position: relative;
+    padding: var(--space-5);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-lg);
+    transition:
+      transform var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease),
+      border-color var(--dur) var(--ease);
+  }
+  .calc-flow__step:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--bbg-blue);
+  }
+  .calc-flow__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-md);
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+    margin-bottom: var(--space-4);
+  }
+  .calc-flow__icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .calc-flow__step-title {
+    font-size: var(--fs-h4);
+    margin: 0 0 var(--space-2);
+    color: var(--bbg-ink);
+  }
+  .calc-flow__step-body {
+    margin: 0;
+    font-size: var(--fs-small);
+    color: var(--bbg-text);
+    line-height: 1.6;
+  }
+  .calc-perks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-5);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(120deg, #101012, #23131a);
+    color: #fff;
+  }
+  .calc-perks__label {
+    font-size: var(--fs-label);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ff5a72;
+  }
+  .calc-perks__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-5);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .calc-perks__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--fs-small);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .calc-perks__item svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    color: #2fb67f;
+    flex-shrink: 0;
+  }
+
+  /* ---------- calculator head ---------- */
+  .calc__head {
+    max-width: 60ch;
+    margin-bottom: var(--space-6);
+  }
+  .calc__title {
+    margin: 0 0 var(--space-2);
+  }
+  .calc__sub {
+    color: var(--bbg-text-muted);
+    margin: 0;
+  }
+
+  /* ---------- shell: main + sticky rail ---------- */
+  .calc-shell {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    align-items: start;
+  }
+  @media (min-width: 960px) {
+    .calc-shell {
+      grid-template-columns: minmax(0, 1fr) 340px;
+    }
+  }
+  .calc-main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    min-width: 0;
+  }
+  .calc-card {
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+  }
+  .calc-card__head {
+    margin-bottom: var(--space-5);
+  }
+  .calc-card__title {
+    font-size: var(--fs-h4);
+    margin: 0;
+    color: var(--bbg-ink);
+  }
+  .calc-card__hint {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
+
+  /* ---------- drivers (sliders) ---------- */
+  .calc-drivers__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+  @media (min-width: 640px) {
+    .calc-drivers__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    /* GMV is the top line the model scales from: give it the full row so the
+       remaining six sliders pair up cleanly two-by-two. */
+    .calc-drivers__grid > .driver:first-child {
+      grid-column: 1 / -1;
+    }
+  }
+  .driver__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-bottom: 0.65rem;
+    flex-wrap: wrap;
+  }
+  .driver__label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--bbg-ink);
+    line-height: 1.3;
+  }
+  .driver__value {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    background: var(--bbg-surface);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-sm);
+    padding: 0.3rem 0.5rem;
+    flex-shrink: 0;
+  }
+  .driver__num {
+    width: 9ch;
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--bbg-ink);
+    text-align: right;
+    padding: 0;
+    -moz-appearance: textfield;
+  }
+  .driver__num::-webkit-outer-spin-button,
+  .driver__num::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .driver__num:focus {
+    outline: none;
+  }
+  .driver__unit {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--bbg-text-muted);
+  }
+  .driver__range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 999px;
+    background: linear-gradient(
+      90deg,
+      var(--bbg-blue) var(--pct, 20%),
+      var(--bbg-border) var(--pct, 20%)
+    );
+    cursor: pointer;
+  }
+  .driver__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--bbg-blue);
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: transform var(--dur) var(--ease);
+  }
+  .driver__range::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+  }
+  .driver__range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--bbg-blue);
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+  }
+
+  /* ---------- channel mix group ---------- */
+  .driver-group {
+    margin-top: var(--space-5);
+    padding: var(--space-5);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    background:
+      linear-gradient(180deg, rgba(200, 16, 46, 0.03), transparent 60%),
+      var(--bbg-surface);
+  }
+  .driver-group__head {
+    margin-bottom: var(--space-4);
+  }
+  .driver-group__title {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bbg-ink);
+  }
+  .driver-group__sub {
+    display: block;
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    margin-top: 0.15rem;
+  }
+  .driver-group__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+  @media (min-width: 560px) {
+    .driver-group__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  /* stack label, value and slider the same way in every column so the three
+     rows line up across paid / KOL / organic */
+  .driver-group__grid .driver__top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.45rem;
+    margin-bottom: 0.6rem;
+  }
+  .driver-group__grid .driver__label {
+    min-height: 1.3em;
+  }
+  .driver-group__grid .driver__value {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  /* tint each share slider to match its mix colour */
+  .driver-group__grid .driver--share:nth-child(1) .driver__range {
+    background: linear-gradient(90deg, #f4874b var(--pct, 0%), var(--bbg-border) var(--pct, 0%));
+  }
+  .driver-group__grid .driver--share:nth-child(2) .driver__range {
+    background: linear-gradient(90deg, #f4b740 var(--pct, 0%), var(--bbg-border) var(--pct, 0%));
+  }
+  .driver-group__grid .driver--share:nth-child(3) .driver__range {
+    background: linear-gradient(90deg, #2fb67f var(--pct, 0%), var(--bbg-border) var(--pct, 0%));
+  }
+  .driver-group__grid .driver--share:nth-child(1) .driver__range::-webkit-slider-thumb {
+    border-color: #f4874b;
+  }
+  .driver-group__grid .driver--share:nth-child(2) .driver__range::-webkit-slider-thumb {
+    border-color: #f4b740;
+  }
+  .driver-group__grid .driver--share:nth-child(3) .driver__range::-webkit-slider-thumb {
+    border-color: #2fb67f;
+  }
+  .driver-group__grid .driver--share:nth-child(1) .driver__range::-moz-range-thumb {
+    border-color: #f4874b;
+  }
+  .driver-group__grid .driver--share:nth-child(2) .driver__range::-moz-range-thumb {
+    border-color: #f4b740;
+  }
+  .driver-group__grid .driver--share:nth-child(3) .driver__range::-moz-range-thumb {
+    border-color: #2fb67f;
+  }
+  .calc-mix {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.1rem;
+    margin: var(--space-4) 0 0;
+    padding-top: var(--space-3);
+    border-top: 1px dashed var(--bbg-border);
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--bbg-ink);
+  }
+  .calc-mix__seg {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .calc-mix__dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .calc-mix__seg--paidShare .calc-mix__dot {
+    background: #f4874b;
+  }
+  .calc-mix__seg--kolShare .calc-mix__dot {
+    background: #f4b740;
+  }
+  .calc-mix__seg--organicShare .calc-mix__dot {
+    background: #2fb67f;
+  }
+  .calc-mix__status {
+    margin-left: auto;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .calc-mix__status--ok {
+    color: var(--bbg-success, #1c9e6a);
+    background: color-mix(in srgb, var(--bbg-success, #1c9e6a) 12%, white);
+  }
+  .calc-mix__status--bad {
+    color: var(--bbg-danger, #d33a3a);
+    background: color-mix(in srgb, var(--bbg-danger, #d33a3a) 12%, white);
+  }
+  .calc-mix--bad {
+    border-top-color: var(--bbg-danger, #d33a3a);
+  }
+  .calc-mix--shake {
+    animation: mixShake 0.4s var(--ease);
+  }
+  @keyframes mixShake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+  }
+
+  /* ---------- advanced accordion ---------- */
+  .calc-advanced {
+    padding: 0;
+    overflow: hidden;
+  }
+  .calc-advanced__toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+  }
+  .calc-advanced__toggle-title {
+    display: block;
+    font-size: var(--fs-h4);
+    font-weight: 600;
+    color: var(--bbg-ink);
+  }
+  .calc-advanced__toggle-sub {
+    display: block;
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
+  .calc-advanced__chevron {
+    display: inline-flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--bbg-surface);
+    color: var(--bbg-ink);
+    flex-shrink: 0;
+    transition: transform var(--dur) var(--ease);
+  }
+  .calc-advanced__chevron svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .calc-advanced__toggle[aria-expanded='true'] .calc-advanced__chevron {
+    transform: rotate(180deg);
+    background: var(--bbg-blue);
+    color: #fff;
+  }
+  .calc-advanced__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease);
+  }
+  /* tabs inside the fine-tune panel: vertical sidebar on desktop */
+  @media (min-width: 720px) {
+    .calc-advanced__body-inner {
+      display: flex;
+      align-items: stretch;
+    }
+  }
+  .calc-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.4rem;
+    padding: var(--space-4) var(--space-5) 0;
+    border-bottom: 1px solid var(--bbg-border);
+  }
+  .calc-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.65rem 0.85rem;
+    border: 0;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: var(--bbg-text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      color var(--dur) var(--ease),
+      background var(--dur) var(--ease),
+      border-color var(--dur) var(--ease);
+  }
+  .calc-tab:hover {
+    background: var(--bbg-surface);
+    color: var(--bbg-ink);
+  }
+  .calc-tab.is-active {
+    color: var(--bbg-blue);
+    border-bottom-color: var(--bbg-blue);
+  }
+  @media (min-width: 720px) {
+    .calc-tabs {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 0.15rem;
+      padding: var(--space-4);
+      border-bottom: 0;
+      border-right: 1px solid var(--bbg-border);
+      min-width: 200px;
+      flex-shrink: 0;
+    }
+    .calc-tab {
+      width: 100%;
+      justify-content: flex-start;
+      border-radius: var(--radius-sm);
+      border-bottom: 0;
+      border-left: 2px solid transparent;
+    }
+    .calc-tab.is-active {
+      background: var(--bbg-surface);
+      border-bottom-color: transparent;
+      border-left-color: var(--bbg-blue);
+    }
+  }
+  .calc-tab__icon {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--bbg-surface);
+    color: inherit;
+    flex-shrink: 0;
+    transition: background var(--dur) var(--ease);
+  }
+  .calc-tab.is-active .calc-tab__icon {
+    background: var(--bbg-blue-light);
+  }
+  .calc-tab__icon svg {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+  .calc-tabpanels {
+    padding: var(--space-5);
+  }
+  @media (min-width: 720px) {
+    .calc-tabpanels {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+  .calc-tabpanel {
+    animation: tabIn 0.35s var(--ease);
+  }
+  .calc-tabpanel[hidden] {
+    display: none;
+  }
+  @keyframes tabIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+  .calc-tabpanel__fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-4) var(--space-5);
+  }
+  .calc-group__icon {
+    display: inline-flex;
+    width: 1.75rem;
+    height: 1.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+  }
+  .calc-group__icon svg {
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+  .calc-group__note {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    margin: 0 0 var(--space-3);
+  }
+  .calc-group__fields {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-top: var(--space-3);
+  }
+  .calc-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .calc-field__label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--bbg-ink);
+  }
+
+  /* help trigger + bubble */
+  .calc-label-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-width: 0;
+  }
+  .calc-help__btn {
+    width: 1.1rem;
+    height: 1.1rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid var(--bbg-border);
+    background: var(--bbg-surface);
+    color: var(--bbg-text-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--dur) var(--ease);
+  }
+  .calc-help__btn:hover,
+  .calc-help__btn[aria-expanded='true'] {
+    background: var(--bbg-blue);
+    color: #fff;
+    border-color: var(--bbg-blue);
+  }
+  .field-pop {
+    position: fixed;
+    z-index: 1200;
+    max-width: 320px;
+    background: var(--bbg-ink);
+    color: #fff;
+    padding: 0.85rem 0.95rem;
+    border-radius: var(--radius-md);
+    font-size: var(--fs-small);
+    font-weight: 400;
+    line-height: 1.55;
+    box-shadow: var(--shadow-lg);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition:
+      opacity 0.16s var(--ease),
+      transform 0.16s var(--ease);
+  }
+  .field-pop[hidden] {
+    display: none;
+  }
+  .field-pop.is-open {
+    opacity: 1;
+    transform: none;
+  }
+  .calc-field__hint {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    margin: 0;
+  }
+  .calc-field__hint--ok {
+    color: var(--bbg-success);
+    font-weight: 600;
+  }
+  .calc-field__hint--err {
+    color: var(--bbg-danger);
+    font-weight: 600;
+  }
+  .calc-input-wrap {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-sm);
+    background: var(--bbg-white);
+    overflow: hidden;
+    transition:
+      border-color var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease);
+  }
+  .calc-input-wrap:focus-within {
+    border-color: var(--bbg-blue);
+    box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.18);
+  }
+  .calc-input-affix {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.7rem;
+    background: var(--bbg-surface);
+    color: var(--bbg-text-muted);
+    font-size: var(--fs-small);
+    font-weight: 600;
+    border-right: 1px solid var(--bbg-border);
+  }
+  .calc-input-affix--suffix {
+    border-right: 0;
+    border-left: 1px solid var(--bbg-border);
+  }
+  .calc-input {
+    flex: 1;
+    width: 100%;
+    border: 0;
+    padding: 0.7rem 0.8rem;
+    font-size: 1rem;
+    color: var(--bbg-ink);
+    background: transparent;
+    min-width: 0;
+  }
+  .calc-input:focus {
+    outline: none;
+  }
+  .calc-select {
+    width: 100%;
+    padding: 0.7rem 2.2rem 0.7rem 0.8rem;
+    font-size: 1rem;
+    color: var(--bbg-ink);
+    background-color: var(--bbg-white);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B6B6B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem center;
+    background-size: 1.1rem;
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-sm);
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition:
+      border-color var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease);
+  }
+  .calc-select:focus {
+    outline: none;
+    border-color: var(--bbg-blue);
+    box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.18);
+  }
+  .calc-impact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+    padding: 0.7rem 0.8rem;
+    background: var(--bbg-surface);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-sm);
+  }
+  .calc-impact[hidden] {
+    display: none;
+  }
+  .calc-impact__label {
+    font-size: var(--fs-label);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bbg-text-muted);
+  }
+  .calc-impact__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .calc-impact__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.6rem;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: 999px;
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
+  .calc-impact__chip strong {
+    color: var(--bbg-ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .calc-fx-link {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.6rem;
+    margin-top: 0.15rem;
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+      background var(--dur) var(--ease),
+      border-color var(--dur) var(--ease);
+  }
+  .calc-fx-link:hover {
+    border-color: var(--bbg-blue);
+  }
+  .calc-fx-link__icon {
+    display: inline-flex;
+  }
+  .calc-fx-link__icon svg {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+  .calc-fx-link.is-spinning .calc-fx-link__icon {
+    animation: fxspin 0.7s linear infinite;
+  }
+  @keyframes fxspin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .calc-input--text {
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-sm);
+    width: 100%;
+    padding: 0.85rem 1rem;
+  }
+  .calc-input--text:focus {
+    border-color: var(--bbg-blue);
+    box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.18);
+  }
+
+  /* ---------- sticky preview rail ---------- */
+  .calc-rail {
+    position: relative;
+  }
+  @media (min-width: 960px) {
+    .calc-rail {
+      position: sticky;
+      top: calc(var(--nav-h) + var(--space-4));
+    }
+  }
+  .calc-preview {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    background: linear-gradient(160deg, #14141a 0%, #1f1013 100%);
+    color: #fff;
+    box-shadow: var(--shadow-lg);
+  }
+  .calc-preview__glow {
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    width: 70%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(200, 16, 46, 0.5), transparent 65%);
+    pointer-events: none;
+  }
+  .calc-preview__eyebrow {
+    position: relative;
+    font-size: var(--fs-label);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ff5a72;
+  }
+  .calc-preview__orders {
+    position: relative;
+    margin: var(--space-3) 0 var(--space-5);
+    display: flex;
+    flex-direction: column;
+  }
+  .calc-preview__orders-num {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .calc-preview__orders-num.is-pulse {
+    animation: pulseNum 0.4s var(--ease);
+  }
+  @keyframes pulseNum {
+    0% {
+      transform: scale(1);
+      color: #fff;
+    }
+    40% {
+      transform: scale(1.06);
+      color: #ff8a9b;
+    }
+    100% {
+      transform: scale(1);
+      color: #fff;
+    }
+  }
+  .calc-preview__orders-label {
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.65);
+    margin-top: 0.35rem;
+  }
+  .calc-preview__locked {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: var(--space-5);
+  }
+  .calc-preview__locked-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .calc-preview__blur {
+    filter: blur(6px);
+    font-weight: 700;
+    color: #fff;
+    user-select: none;
+  }
+  .calc-preview__lock {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .calc-preview__lock svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .calc-preview__cta {
+    position: relative;
+    width: 100%;
+  }
+  .calc-preview__note {
+    position: relative;
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.55);
+    margin: var(--space-3) 0 0;
+  }
+
+  /* ---------- results ---------- */
+  .calc-results {
+    margin-top: var(--space-8);
+    padding-top: var(--space-7);
+    border-top: 1px solid var(--bbg-border);
+  }
+  .calc-results__head {
+    margin-bottom: var(--space-6);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .calc-results__pdf {
+    flex-shrink: 0;
+  }
+  .calc-results__pdf svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  .calc-results__title {
+    margin: 0 0 var(--space-2);
+  }
+  .calc-results__sub {
+    color: var(--bbg-text-muted);
+    margin: 0;
+  }
+  .calc-view-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
+  }
+  .calc-table__na {
+    color: var(--bbg-text-muted);
+  }
+  /* Year 1 / Year 2 segmented control */
+  .calc-period__tabs {
+    display: inline-flex;
+    gap: 0.35rem;
+    padding: 0.35rem;
+    background: var(--bbg-surface);
+    border: 1px solid var(--bbg-border);
+    border-radius: 999px;
+  }
+  .calc-period__tab {
+    padding: 0.55rem 1.25rem;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--bbg-text-muted);
+    cursor: pointer;
+    transition: all var(--dur) var(--ease);
+  }
+  .calc-period__tab:not(.is-active):hover {
+    background: var(--bbg-blue-light);
+    color: var(--bbg-ink);
+  }
+  .calc-period__tab.is-active {
+    background: var(--bbg-blue);
+    color: #fff;
+    box-shadow: var(--shadow-sm);
+  }
+  /* smaller variant sitting inside the "Where the money goes" header */
+  .calc-period__tabs--sm {
+    margin-top: var(--space-3);
+  }
+  .calc-period__tabs--sm .calc-period__tab {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .calc-focus {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+  }
+  @media (min-width: 820px) {
+    .calc-focus {
+      grid-template-columns: 320px 1fr;
+    }
+  }
+  .calc-focus__hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: var(--space-6) var(--space-5);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(160deg, #14141a, #23131a);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .calc-focus__hero::after {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -20%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(200, 16, 46, 0.55), transparent 65%);
+  }
+  .calc-focus__hero-label {
+    position: relative;
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+  }
+  .calc-focus__hero-num {
+    position: relative;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+  .calc-focus__hero-usd {
+    position: relative;
+    font-size: var(--fs-lead);
+    color: #ff8a9b;
+    font-weight: 600;
+  }
+  .calc-focus__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+  @media (min-width: 1080px) {
+    .calc-focus__stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .calc-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 0;
+    min-height: 132px;
+    padding: var(--space-4);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    transition:
+      transform var(--dur) var(--ease),
+      border-color var(--dur) var(--ease);
+  }
+  .calc-stat:hover {
+    transform: translateY(-3px);
+    border-color: var(--bbg-blue);
+  }
+  .calc-stat.is-muted {
+    opacity: 0.6;
+  }
+  .calc-stat__label {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    font-weight: 600;
+    line-height: 1.3;
+    /* reserve two lines so single-line labels still push the value to the
+       same baseline, keeping the numbers aligned across every card */
+    min-height: 2.6em;
+  }
+  .calc-stat__value {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--bbg-ink);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .calc-stat__foot {
+    font-size: 0.78rem;
+    color: var(--bbg-text-muted);
+    line-height: 1.35;
+    /* pin the footnote to the bottom so one- and two-line notes stay level */
+    margin-top: auto;
+    padding-top: 0.35rem;
+  }
+  /* profit / loss stat cards */
+  .calc-stat--pl {
+    background: var(--bbg-surface);
+    border-style: solid;
+  }
+  .calc-stat--pl .calc-stat__value {
+    font-variant-numeric: tabular-nums;
+  }
+  .calc-stat__value.is-profit {
+    color: var(--bbg-success, #1c9e6a);
+  }
+  .calc-stat__value.is-loss {
+    color: var(--bbg-danger, #d33a3a);
+  }
+  .calc-stat--pl:has(.is-profit) {
+    border-color: color-mix(in srgb, var(--bbg-success, #1c9e6a) 45%, var(--bbg-border));
+    background: color-mix(in srgb, var(--bbg-success, #1c9e6a) 7%, var(--bbg-white));
+  }
+  .calc-stat--pl:has(.is-loss) {
+    border-color: color-mix(in srgb, var(--bbg-danger, #d33a3a) 40%, var(--bbg-border));
+    background: color-mix(in srgb, var(--bbg-danger, #d33a3a) 6%, var(--bbg-white));
+  }
+
+  /* ---------- cost composition ---------- */
+  .calc-compo {
+    position: relative;
+    padding: var(--space-6) var(--space-5);
+    background:
+      radial-gradient(120% 80% at 100% 0%, rgba(200, 16, 46, 0.05), transparent 60%),
+      var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-6);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+  .calc-compo__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-bottom: var(--space-5);
+    flex-wrap: wrap;
+  }
+  .calc-compo__title {
+    font-size: var(--fs-h4);
+    margin: 0;
+    color: var(--bbg-ink);
+  }
+  .calc-compo__sub {
+    margin: 0.25rem 0 0;
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
+  .calc-compo__total-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+  .calc-compo__total-label {
+    font-size: var(--fs-label);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bbg-text-muted);
+  }
+  .calc-compo__total {
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--bbg-ink);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.1;
+  }
+
+  /* segmented spine */
+  .calc-compo__spine {
+    position: relative;
+    display: flex;
+    gap: 3px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 999px;
+    background: var(--bbg-surface);
+    border: 1px solid var(--bbg-border);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  .calc-compo__seg {
+    position: relative;
+    width: 0;
+    border-radius: 999px;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--c) 82%, white), var(--c));
+    transition:
+      width 0.9s var(--ease),
+      opacity 0.25s var(--ease),
+      transform 0.25s var(--ease),
+      filter 0.25s var(--ease);
+    cursor: pointer;
+  }
+  .calc-compo__seg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), transparent 45%);
+  }
+  .calc-compo__seg.is-grown {
+    width: var(--w);
+  }
+  .calc-compo__seg.is-focus {
+    transform: scaleY(1.12);
+    filter: saturate(1.15) brightness(1.03);
+    z-index: 2;
+  }
+  .calc-compo__seg.is-dim {
+    opacity: 0.32;
+  }
+  .calc-compo__tip {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0;
+    transform: translate(-50%, 6px);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0.5rem 0.7rem;
+    background: var(--bbg-ink);
+    color: #fff;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      opacity 0.16s var(--ease),
+      transform 0.16s var(--ease);
+    z-index: 5;
+  }
+  .calc-compo__tip.is-open {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  .calc-compo__tip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--bbg-ink);
+  }
+  .calc-compo__tip-key {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .calc-compo__tip-val {
+    font-size: var(--fs-small);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ranked cost cards */
+  .calc-compo__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-5);
+  }
+  .cost-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: var(--space-4);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(14px);
+    transition:
+      opacity 0.5s var(--ease),
+      transform 0.5s var(--ease),
+      border-color var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease);
+    transition-delay: calc(var(--i) * 60ms);
+  }
+  .cost-card.is-in {
+    opacity: 1;
+    transform: none;
+  }
+  .cost-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--c);
+    transform: scaleY(0.4);
+    transform-origin: top;
+    transition: transform var(--dur) var(--ease);
+  }
+  .cost-card:hover,
+  .cost-card.is-focus {
+    border-color: color-mix(in srgb, var(--c) 55%, var(--bbg-border));
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+  }
+  .cost-card:hover::before,
+  .cost-card.is-focus::before {
+    transform: scaleY(1);
+  }
+  .cost-card.is-dim {
+    opacity: 0.45;
+  }
+  .cost-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: var(--radius-sm);
+    color: var(--c);
+    background: color-mix(in srgb, var(--c) 12%, white);
+  }
+  .cost-card__icon svg {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+  .cost-card__body {
+    flex: 1;
+    min-width: 0;
+  }
+  .cost-card__top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .cost-card__name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--bbg-ink);
+    line-height: 1.3;
+  }
+  .cost-card__pct {
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--c);
+    font-variant-numeric: tabular-nums;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--c) 12%, white);
+  }
+  .cost-card__value {
+    display: block;
+    margin: 0.35rem 0 0.6rem;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--bbg-ink);
+    letter-spacing: -0.01em;
+    font-variant-numeric: tabular-nums;
+  }
+  .cost-card__meter {
+    height: 6px;
+    border-radius: 999px;
+    background: var(--bbg-surface);
+    overflow: hidden;
+  }
+  .cost-card__meter-fill {
+    display: block;
+    width: 0;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--c) 65%, white), var(--c));
+    transition: width 0.9s var(--ease);
+    transition-delay: calc(var(--i, 0) * 60ms + 150ms);
+  }
+  .cost-card__meter-fill.is-grown {
+    width: var(--w);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cost-card {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .calc-compo__seg,
+    .cost-card__meter-fill {
+      transition: none;
+    }
+  }
+
+  /* ---------- detail table ---------- */
+  .calc-detail {
+    margin-bottom: var(--space-6);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    background: var(--bbg-white);
+  }
+  .calc-detail__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--bbg-ink);
+    list-style: none;
+  }
+  .calc-detail__summary::-webkit-details-marker {
+    display: none;
+  }
+  .calc-detail__summary svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: transform var(--dur) var(--ease);
+  }
+  .calc-detail[open] .calc-detail__summary svg {
+    transform: rotate(180deg);
+  }
+  .calc-table-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    padding: var(--space-3) var(--space-5);
+    border-top: 1px solid var(--bbg-border);
+    background: var(--bbg-surface);
+  }
+  .calc-table-bar__label {
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--bbg-text-muted);
+  }
+  .calc-table-bar__pdf svg {
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+  /* print-only branding blocks, hidden on screen */
+  .calc-print {
+    display: none;
+  }
+  .calc-table-wrap {
+    overflow-x: auto;
+    border-top: 1px solid var(--bbg-border);
+  }
+  .calc-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 580px;
+  }
+  .calc-table th,
+  .calc-table td {
+    text-align: right;
+    padding: 0.7rem 1.1rem;
+    font-size: var(--fs-small);
+  }
+  .calc-table th:first-child,
+  .calc-table td:first-child {
+    text-align: left;
+  }
+  .calc-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--bbg-ink);
+    color: #fff;
+    font-weight: 700;
+    vertical-align: bottom;
+  }
+  .calc-table thead th:not(:first-child) {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .calc-table thead th span {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .calc-table tbody td {
+    border-bottom: 1px solid var(--bbg-border);
+    color: var(--bbg-text);
+    font-variant-numeric: tabular-nums;
+    transition: background var(--dur) var(--ease);
+  }
+  .calc-table tbody td:first-child {
+    color: var(--bbg-ink);
+    font-weight: 500;
+  }
+  .calc-table tbody tr:hover td {
+    background: var(--bbg-blue-light);
+  }
+  .calc-table__section td {
+    background: var(--bbg-surface);
+    font-weight: 700;
+    color: var(--bbg-ink);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.7rem;
+    border-bottom: 0;
+    box-shadow: inset 3px 0 0 var(--bbg-blue);
+  }
+  .calc-table__section:hover td {
+    background: var(--bbg-surface);
+  }
+  .calc-table__total td {
+    font-weight: 800;
+    color: var(--bbg-ink);
+    background: color-mix(in srgb, var(--bbg-blue-light) 55%, white);
+  }
+  .calc-table__total:hover td {
+    background: var(--bbg-blue-light);
+  }
+  .calc-table__pl td {
+    background: var(--bbg-surface);
+  }
+  .calc-table__pl:hover td {
+    background: var(--bbg-surface);
+  }
+  .calc-pl {
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+  .calc-pl--pos {
+    color: var(--bbg-success, #1c9e6a);
+  }
+  .calc-pl--neg {
+    color: var(--bbg-danger, #d33a3a);
+  }
+
+  /* ---------- notes + cta ---------- */
+  .calc-notes {
+    margin-bottom: var(--space-6);
+  }
+  .calc-notes__title {
+    font-size: var(--fs-h4);
+    margin: 0 0 var(--space-4);
+  }
+  .calc-notes__list {
+    margin: 0;
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    color: var(--bbg-text);
+    max-width: 78ch;
+  }
+  .calc-notes__list li {
+    font-size: var(--fs-small);
+    line-height: 1.6;
+  }
+  .calc-cta {
+    padding: var(--space-5);
+    background: linear-gradient(120deg, #101012, #23131a);
+    color: #fff;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .calc-cta p {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  /* ---------- disclaimer ---------- */
+  .calc-disclaimer {
+    margin: var(--space-6) 0 0;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--bbg-border);
+    max-width: 80ch;
+    font-size: var(--fs-small);
+    line-height: 1.6;
+    color: var(--bbg-text-muted);
+  }
+
+  /* ---------- email gate ---------- */
+  .calc-gate {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+  }
+  .calc-gate[hidden] {
+    display: none;
+  }
+  .calc-gate__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(16, 16, 18, 0.6);
+    backdrop-filter: blur(3px);
+    animation: fadeIn 0.25s var(--ease);
+  }
+  .calc-gate__panel {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    background: var(--bbg-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6) var(--space-5);
+    box-shadow: var(--shadow-lg);
+    max-height: 92vh;
+    overflow-y: auto;
+    animation: gatePop 0.3s var(--ease);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes gatePop {
+    from {
+      opacity: 0;
+      transform: translateY(16px) scale(0.98);
+    }
+  }
+  .calc-gate__close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 2rem;
+    height: 2rem;
+    border: 0;
+    background: transparent;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--bbg-text-muted);
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+  }
+  .calc-gate__close:hover {
+    background: var(--bbg-surface);
+    color: var(--bbg-ink);
+  }
+  .calc-gate__title {
+    font-size: var(--fs-h3);
+    margin: 0 0 var(--space-3);
+    color: var(--bbg-ink);
+  }
+  .calc-gate__lead {
+    color: var(--bbg-text);
+    margin: 0 0 var(--space-5);
+  }
+  .calc-gate__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .calc-gate__submit {
+    width: 100%;
+    margin-top: var(--space-2);
+  }
+  .calc-gate__note {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    margin: 0;
+  }
+  .calc-gate__status {
+    margin: 0;
+    font-size: var(--fs-small);
+    min-height: 1.2em;
+  }
+  .calc-gate__status--error {
+    color: var(--bbg-danger);
+  }
+
+  @media (max-width: 640px) {
+    .calc-cta,
+    .calc-compo__head {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  /* ---------- USD helper under money sliders ---------- */
+  .driver__usd {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--bbg-text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- FX row ---------- */
+  .calc-fxrow {
+    margin-top: var(--space-5);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--bbg-border);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: var(--space-3) var(--space-4);
+  }
+  .calc-fxrow__field {
+    flex: 1;
+    min-width: 220px;
+  }
+  .calc-fxrow .calc-label-wrap {
+    margin-bottom: 0.4rem;
+  }
+  .calc-fxrow__field .calc-input-wrap {
+    max-width: 280px;
+  }
+  .calc-fxrow #fx-note {
+    flex-basis: 100%;
+  }
+
+  /* ---------- high-ticket warning ---------- */
+  .calc-warn {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    margin: var(--space-4) 0 0;
+    padding: 0.8rem 1rem;
+    border-radius: var(--radius-sm);
+    background: color-mix(in srgb, #f4874b 12%, white);
+    border: 1px solid color-mix(in srgb, #f4874b 35%, var(--bbg-border));
+    color: var(--bbg-ink);
+    font-size: var(--fs-small);
+    line-height: 1.5;
+  }
+  .calc-warn[hidden] {
+    display: none;
+  }
+  .calc-warn svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+    color: #d9682f;
+    margin-top: 0.1rem;
+  }
+
+  /* ---------- two-column platform input grid ---------- */
+  .vs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 0.75rem;
+    align-items: center;
+  }
+  .vs-grid__corner {
+    display: none;
+  }
+  .vs-grid__plat {
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.45rem 0.5rem;
+    border-radius: var(--radius-sm);
+  }
+  .vs-grid__plat--tmall {
+    color: #c8102e;
+    background: color-mix(in srgb, #c8102e 10%, white);
+  }
+  .vs-grid__plat--jd {
+    color: #1e7db0;
+    background: var(--bbg-blue-light);
+  }
+  .vs-grid__label {
+    grid-column: 1 / -1;
+    margin-top: 0.55rem;
+  }
+  .vs-grid__label-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--bbg-ink);
+  }
+  .vs-grid__cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
+  }
+  .vs-grid__usd {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--bbg-text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .vs-grid__note {
+    font-size: 0.72rem;
+    color: var(--bbg-text-muted);
+  }
+  @media (min-width: 720px) {
+    .vs-grid {
+      grid-template-columns: minmax(170px, 1.15fr) 1fr 1fr;
+      column-gap: var(--space-4);
+      row-gap: 0.6rem;
+    }
+    .vs-grid__corner {
+      display: block;
+    }
+    .vs-grid__label {
+      grid-column: auto;
+      margin-top: 0;
+    }
+  }
+  .vs-foot {
+    margin: var(--space-4) 0 0;
+    padding-top: var(--space-3);
+    border-top: 1px dashed var(--bbg-border);
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    line-height: 1.6;
+  }
+
+  /* ---------- results: verdict line + two platform columns ---------- */
+  #verdict-line {
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .calc-vs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+  @media (max-width: 560px) {
+    .calc-vs {
+      grid-template-columns: 1fr;
+    }
+  }
+  .calc-vs__col {
+    position: relative;
+    padding: var(--space-4);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    transition:
+      border-color var(--dur) var(--ease),
+      box-shadow var(--dur) var(--ease);
+  }
+  .calc-vs__col.is-best {
+    border-color: color-mix(in srgb, var(--bbg-success, #1c9e6a) 45%, var(--bbg-border));
+    background: color-mix(in srgb, var(--bbg-success, #1c9e6a) 5%, var(--bbg-white));
+  }
+  .calc-vs__col.is-loss {
+    border-color: color-mix(in srgb, var(--bbg-danger, #d33a3a) 40%, var(--bbg-border));
+    background: color-mix(in srgb, var(--bbg-danger, #d33a3a) 4%, var(--bbg-white));
+  }
+  .calc-vs__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: var(--space-3);
+  }
+  .calc-vs__name {
+    font-weight: 800;
+    font-size: 1.05rem;
+  }
+  .calc-vs__col[data-plat='tmall'] .calc-vs__name {
+    color: #c8102e;
+  }
+  .calc-vs__col[data-plat='jd'] .calc-vs__name {
+    color: #1e7db0;
+  }
+  .calc-vs__badge {
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--bbg-success, #1c9e6a);
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+  }
+  .calc-vs__badge[hidden] {
+    display: none;
+  }
+  .calc-vs__loss {
+    margin: 0 0 var(--space-3);
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--bbg-danger, #d33a3a);
+  }
+  .calc-vs__loss[hidden] {
+    display: none;
+  }
+  .calc-vs__metrics {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .calc-vs__metric {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--bbg-border);
+  }
+  .calc-vs__metric:last-child {
+    border-bottom: 0;
+  }
+  .calc-vs__metric dt {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--bbg-text-muted);
+  }
+  .calc-vs__metric dd {
+    margin: 0;
+    font-weight: 700;
+    color: var(--bbg-ink);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+  .calc-vs__metric--lead {
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+  .calc-vs__metric--lead dd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.1rem;
+  }
+  .calc-vs__metric--lead [data-m='opProfit'] {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .calc-vs__metric--lead [data-m='opProfit'].is-profit {
+    color: var(--bbg-success, #1c9e6a);
+  }
+  .calc-vs__metric--lead [data-m='opProfit'].is-loss {
+    color: var(--bbg-danger, #d33a3a);
+  }
+  .calc-vs__usd {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--bbg-text-muted);
+  }
+</style>
+
+<style is:global>
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    #calc-results,
+    #calc-results * {
+      visibility: visible;
+    }
+    #calc-results {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+    .calc-results__pdf,
+    .calc-table-bar,
+    .calc-cta {
+      display: none !important;
+    }
+    /* keep the detail table open and printed */
+    .calc-detail__summary {
+      display: none;
+    }
+    /* show the print-only brand header and footer */
+    .calc-print {
+      display: block !important;
+      visibility: visible !important;
+    }
+    .calc-print * {
+      visibility: visible !important;
+    }
+    .calc-print__head {
+      display: flex !important;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid #c8102e;
+    }
+    .calc-print__logo {
+      height: 34px;
+      width: auto;
+    }
+    .calc-print__meta {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      font-size: 10px;
+      color: #333;
+      line-height: 1.5;
+    }
+    .calc-print__foot {
+      margin-top: 1.4rem;
+      padding-top: 0.7rem;
+      border-top: 1px solid #ccc;
+    }
+    .calc-print__foot-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 10px;
+      color: #333;
+      margin-bottom: 0.4rem;
+    }
+    .calc-print__foot-brand .calc-print__logo {
+      height: 22px;
+    }
+    .calc-print__disclaimer {
+      margin: 0;
+      font-size: 9px;
+      line-height: 1.5;
+      color: #666;
+    }
+    /* preserve chart and card colours in the PDF */
+    .calc-compo__spine,
+    .calc-compo__seg,
+    .cost-card,
+    .cost-card__icon,
+    .cost-card__meter-fill,
+    .calc-focus__hero,
+    .calc-period__tab.is-active,
+    .calc-print__head {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @page {
+      margin: 1.2cm;
+    }
+  }
+</style>
