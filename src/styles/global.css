@@ -596,14 +596,23 @@ body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-her
 /* French labels run roughly 60-70% longer than English ("Se développer en
    Chine", "Nous contacter"). Tighten the inter-item gap so the row still
    fits inside the 1200px container without crowding the right cluster. */
-html[lang='fr'] .nav__links {
+html[lang='fr'] .nav__links,
+html[lang='de'] .nav__links,
+html[lang='es'] .nav__links {
   --nav-gap: var(--space-5);
 }
-@media (min-width: 1025px) and (max-width: 1199px) {
-  html[lang='fr'] .nav__links {
+/* Tightest desktop band (1181-1279): the long-label locales pull the gap in
+   further so the inline row still clears the logo and the right-hand CTA
+   cluster before the layout hits the full 1280px comfort width. */
+@media (min-width: 1181px) and (max-width: 1279px) {
+  html[lang='fr'] .nav__links,
+  html[lang='de'] .nav__links,
+  html[lang='es'] .nav__links {
     --nav-gap: var(--space-4);
   }
-  html[lang='fr'] .nav__link {
+  html[lang='fr'] .nav__link,
+  html[lang='de'] .nav__link,
+  html[lang='es'] .nav__link {
     letter-spacing: 0;
   }
 }
@@ -1064,21 +1073,6 @@ body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-her
   transition: transform var(--dur) var(--ease);
 }
 
-/* French labels are long enough that even with the tightened gap the inline
-   nav crowds the right cluster between 1025-1180px. Switch to the burger
-   drawer a band earlier so the desktop row only shows when there's real room. */
-@media (min-width: 1025px) and (max-width: 1180px) {
-  html[lang='fr'] .nav__primary {
-    display: none;
-  }
-  html[lang='fr'] .nav__burger {
-    display: flex;
-  }
-  html[lang='fr'] .mega {
-    display: none;
-  }
-}
-
 @media (max-width: 1024px) {
   :root {
     --nav-h: 80px;
@@ -1089,6 +1083,14 @@ body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-her
   .nav__logo .nav__logo-img--light {
     height: 26px;
   }
+}
+
+/* The inline desktop nav needs real room for the links plus the right-hand
+   CTA cluster (language switcher, Budget Calculator, Contact). Below 1181px
+   the row crowds the logo and the buttons (worst on the long-label locales,
+   but English overlaps too once the Budget Calculator button is in play), so
+   every locale drops to the burger drawer and the inline CTAs move inside it. */
+@media (max-width: 1180px) {
   .nav__primary {
     display: none;
   }
@@ -1096,6 +1098,10 @@ body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-her
     display: flex;
   }
   .mega {
+    display: none;
+  }
+  .nav__calc,
+  .nav__contact {
     display: none;
   }
 }
@@ -1200,6 +1206,23 @@ body:has(.hero-fullbleed, .home-hero, .cbs-hero, .mec-hero, .dist-hero, .web-her
 }
 .nav.nav--open .mega-feature__desc {
   color: var(--bbg-text) !important;
+}
+
+/* Drawer CTAs: the Budget Calculator and Contact buttons live in the top bar
+   on desktop, but move into the bottom of the burger drawer once the inline
+   versions are hidden (<=1180px) so both stay reachable on tablet and mobile. */
+.nav__drawer-cta {
+  display: none;
+}
+.nav.nav--open .nav__drawer-cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 720px;
+  margin: var(--space-5) auto 0;
+}
+.nav.nav--open .nav__drawer-cta .btn {
+  width: 100%;
 }
 
 /* Burger → X */
@@ -8159,7 +8182,9 @@ body:has(.nav.nav--open) {
 /* ---- Calculator hub cards ---- */
 .tool-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  /* min() guards the track so it never forces a width wider than the
+     container on sub-360px phones (would otherwise overflow horizontally). */
+  grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
   gap: var(--space-5);
 }
 .tool-card {

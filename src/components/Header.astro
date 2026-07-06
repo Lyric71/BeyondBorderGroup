@@ -327,6 +327,10 @@ const switcherOthers = otherLocales.map((l) => ({
           <a href={lp('/about')} class="nav__link">{t('nav.about')}</a>
         </li>
       </ul>
+      <div class="nav__drawer-cta">
+        <a href="/tools" class="btn btn--primary">Budget Calculator</a>
+        <a href={lp('/contact')} class="btn btn--primary">{t('nav.contact')}</a>
+      </div>
     </nav>
 
     <div class="nav__right">
@@ -379,7 +383,7 @@ const switcherOthers = otherLocales.map((l) => ({
         </ul>
       </div>
       <a href="/tools" class="btn btn--primary btn--sm nav__calc"> Budget Calculator </a>
-      <a href={lp('/contact')} class="btn btn--primary btn--sm">{t('nav.contact')}</a>
+      <a href={lp('/contact')} class="btn btn--primary btn--sm nav__contact">{t('nav.contact')}</a>
       <button class="nav__burger" type="button" aria-label={t('nav.menu')} aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -411,12 +415,10 @@ const switcherOthers = otherLocales.map((l) => ({
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && nav.classList.contains('nav--open')) closeDrawer();
     });
-    // Close when the viewport grows past the breakpoint where the desktop
-    // nav takes over. FR, DE and ES carry longer labels than EN, so they
-    // keep the burger up to 1180px before the desktop nav takes over.
-    const htmlLang = document.documentElement.lang;
-    const needsWide = htmlLang === 'fr' || htmlLang === 'de' || htmlLang === 'es';
-    const mq = window.matchMedia(needsWide ? '(min-width: 1181px)' : '(min-width: 1025px)');
+    // Close the drawer once the viewport grows past the breakpoint where the
+    // inline desktop nav takes over. Every locale switches at the same width
+    // (1181px): below it the CTA cluster crowds the row, so the burger stays.
+    const mq = window.matchMedia('(min-width: 1181px)');
     const onMq = (e) => {
       if (e.matches) closeDrawer();
     };
