@@ -1369,10 +1369,15 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     }
     // When they're already unlocked, the CTA is a re-run, not a locked gate.
     function paintCta() {
+      if (!unlocked) return;
       const cta = document.getElementById('calc-submit');
       const note = document.querySelector('.calc-preview__note');
-      if (unlocked && cta) cta.textContent = 'Update my breakdown';
-      if (unlocked && note) note.textContent = 'Change any assumption above, then re-run. No need to sign in again.';
+      // The blurred teaser only makes sense while the numbers are still hidden.
+      // Once they are on the page, the rail is just a re-run button.
+      const locked = document.querySelector('.calc-preview__locked');
+      if (locked) locked.remove();
+      if (cta) cta.textContent = 'Update my breakdown';
+      if (note) note.textContent = 'Change any assumption above, then re-run. No need to sign in again.';
     }
     paintCta();
 
