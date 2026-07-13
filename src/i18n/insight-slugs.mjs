@@ -71,6 +71,7 @@ export const insightEnToFr = {
   'jd-double-subsidy-plan-supply-chain-play': 'jd-double-subvention-chaine-logistique',
   'luxury-brand-trends-mastering-social-media-in-china': 'luxe-en-chine-tendances-sociales',
   'marketing-strategies-revolutionizing-ai-integrated-pcs-in-china': 'pc-ia-chine-marketing',
+  'meituan-instant-retail-china-ecommerce-strategy': 'meituan-commerce-instantane-e-commerce-chinois',
   'navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin':
     'cyril-drouin-live-commerce-cross-border',
   'optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china':
@@ -193,6 +194,7 @@ export const insightEnToDe = {
   'jd-double-subsidy-plan-supply-chain-play': 'jd-doppelsubvention-lieferketten-strategie',
   'luxury-brand-trends-mastering-social-media-in-china': 'luxus-china-social-media-trends',
   'marketing-strategies-revolutionizing-ai-integrated-pcs-in-china': 'ki-pc-china-marketing',
+  'meituan-instant-retail-china-ecommerce-strategy': 'meituan-instant-retail-china-e-commerce-strategie',
   'navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin':
     'cyril-drouin-live-commerce-cross-border',
   'optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china':
@@ -311,6 +313,7 @@ export const insightEnToEs = {
   'jd-double-subsidy-plan-supply-chain-play': 'jd-doble-subvencion-cadena-suministro',
   'luxury-brand-trends-mastering-social-media-in-china': 'lujo-china-tendencias-redes-sociales',
   'marketing-strategies-revolutionizing-ai-integrated-pcs-in-china': 'pc-ia-china-marketing',
+  'meituan-instant-retail-china-ecommerce-strategy': 'meituan-comercio-instantaneo-ecommerce-chino',
   'navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin':
     'cyril-drouin-live-commerce-cross-border',
   'optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china':
