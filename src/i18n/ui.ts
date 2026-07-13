@@ -142,7 +142,9 @@ export const ui = {
     // Header / nav
     'nav.aria.primary': 'Principale',
     'nav.contact': 'Contact',
-    'nav.calculator': 'Calculateur de budget',
+    // Kept in English on purpose: the CTA label stays "Budget Calculator" in
+    // every locale, only its link is localized.
+    'nav.calculator': 'Budget Calculator',
     'nav.menu': 'Menu',
     'nav.allServices': 'Voir tous les services',
     'nav.opensInNewTab': "{name} : {desc}. S'ouvre dans un nouvel onglet.",
@@ -254,7 +256,7 @@ export const ui = {
     // Header / nav
     'nav.aria.primary': 'Hauptnavigation',
     'nav.contact': 'Kontakt',
-    'nav.calculator': 'Budgetrechner',
+    'nav.calculator': 'Budget Calculator',
     'nav.menu': 'Menü',
     'nav.allServices': 'Alle Leistungen ansehen',
     'nav.opensInNewTab': '{name}: {desc}. Öffnet in einem neuen Tab.',
@@ -364,7 +366,7 @@ export const ui = {
     // Header / nav
     'nav.aria.primary': 'Principal',
     'nav.contact': 'Contacto',
-    'nav.calculator': 'Calculadora de presupuesto',
+    'nav.calculator': 'Budget Calculator',
     'nav.menu': 'Menú',
     'nav.allServices': 'Ver todos los servicios',
     'nav.opensInNewTab': '{name}: {desc}. Se abre en una pestaña nueva.',
