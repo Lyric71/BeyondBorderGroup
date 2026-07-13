@@ -85,6 +85,7 @@ export const insightEnToFr = {
   'taobao-flash-sale-and-chinas-30-minute-retail': 'taobao-flash-sale-commerce-30-minutes',
   'taobao-transforming-shopping-and-merchant-support-with-ai-in-ecommerce-china':
     'alibaba-taobao-tmall-ia-e-commerce',
+  'tmall-global-2025-overseas-brands': 'tmall-global-2025-marques-etrangeres',
   'the-cost-of-chinese-kols-case-studies-and-marketing-insights':
     'prix-kol-chinois-grilles-tarifaires',
   'the-power-of-wechat-qr-codes-for-businesses-in-china': 'qr-codes-wechat-marques-chine',
@@ -206,6 +207,7 @@ export const insightEnToDe = {
   'taobao-flash-sale-and-chinas-30-minute-retail': 'taobao-flash-sale-handel-30-minuten',
   'taobao-transforming-shopping-and-merchant-support-with-ai-in-ecommerce-china':
     'alibaba-taobao-tmall-ki-e-commerce',
+  'tmall-global-2025-overseas-brands': 'tmall-global-2025-auslaendische-marken',
   'the-cost-of-chinese-kols-case-studies-and-marketing-insights':
     'chinesische-kol-preise-tarifraster',
   'the-power-of-wechat-qr-codes-for-businesses-in-china': 'wechat-qr-codes-marken-china',
@@ -323,6 +325,7 @@ export const insightEnToEs = {
   'taobao-flash-sale-and-chinas-30-minute-retail': 'taobao-flash-sale-comercio-30-minutos',
   'taobao-transforming-shopping-and-merchant-support-with-ai-in-ecommerce-china':
     'alibaba-taobao-tmall-ia-ecommerce',
+  'tmall-global-2025-overseas-brands': 'tmall-global-2025-marcas-extranjeras',
   'the-cost-of-chinese-kols-case-studies-and-marketing-insights': 'precio-kol-chinos-tarifas',
   'the-power-of-wechat-qr-codes-for-businesses-in-china': 'qr-codes-wechat-marcas-china',
   'the-ultimate-guide-to-wechat-channels-for-brands': 'wechat-channels-guia-marcas',
