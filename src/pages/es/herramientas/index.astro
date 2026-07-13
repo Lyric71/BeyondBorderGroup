@@ -1,0 +1,146 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const icon = {
+  douyin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M9 4c.4 2.4 2.2 4.2 4.6 4.6"/></svg>`,
+  cart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/><path d="M2 3h3l2.5 12.5a1 1 0 0 0 1 .8h8.4a1 1 0 0 0 1-.8L21 7H6"/></svg>`,
+  note: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l5 5v13a0 0 0 0 1 0 0H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M15 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>`,
+  chart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg>`,
+};
+
+const calculators = [
+  {
+    title: 'Coste de Douyin cross-border',
+    desc: 'Lo que cuesta el primer año a una marca de alimentación o salud que vende en Douyin a través de un distribuidor, con el modelo cross-border en zona franca. Alta, logística, medios, impuestos y comisión de KOL, en RMB y en USD.',
+    href: '/es/herramientas/calculadora-de-costes-douyin',
+    icon: icon.douyin,
+    tags: ['Douyin', 'Cross-border', 'Alimentación y salud'],
+    live: true,
+  },
+  {
+    title: 'Tmall Global: alta y operación',
+    desc: 'Lo que cuesta el primer año de una flagship en Tmall Global: depósito, cuota anual y comisión según categoría, retainer y comisión del TP, almacén en zona franca, transporte y el IVA cross-border, en RMB y en USD.',
+    href: '/es/herramientas/calculadora-de-costes-tmall-global',
+    icon: icon.cart,
+    tags: ['Tmall Global', 'Cross-border', 'Marketplace'],
+    live: true,
+  },
+  {
+    title: 'JD Worldwide: alta y operación',
+    desc: 'Lo que cuesta el primer año de una tienda en JD Worldwide: depósito y comisión por tramos según categoría, la tasa del 0,9 % por transacción, retainer y comisión del TP, almacén en zona franca, transporte y el IVA cross-border, en RMB y en USD.',
+    href: '/es/herramientas/calculadora-de-costes-jd-worldwide',
+    icon: icon.cart,
+    tags: ['JD Worldwide', 'Cross-border', 'Marketplace'],
+    live: true,
+  },
+  {
+    title: 'Presupuesto de campaña en Xiaohongshu',
+    desc: 'Planifique un lanzamiento en Xiaohongshu: siembra de notas, reparto entre KOC y KOL, amplificación de pago y alcance previsto para una inversión dada.',
+    icon: icon.note,
+    tags: ['Xiaohongshu', 'Campañas'],
+    live: false,
+  },
+  {
+    title: 'ROI de livestream y KOL',
+    desc: 'Calcule el retorno de un livestream o de un programa de KOL: pit fee, comisión, GMV, devoluciones y contribución neta por sesión.',
+    icon: icon.chart,
+    tags: ['KOL', 'Livestream'],
+    live: false,
+  },
+];
+---
+
+<Layout
+  title="Calculadoras para entrar en China | TheChinaPath"
+  description="Calculadoras gratuitas para marcas que entran en China. Estime el coste real de Douyin cross-border, Tmall Global, las campañas en Xiaohongshu y los programas de KOL antes de comprometer presupuesto."
+>
+  <section
+    class="tool-hero tool-hero--image"
+    style="--tool-hero-img: url('/Images/tools/tools-hero-bg.png')"
+  >
+    <div class="container tool-hero__inner">
+      <nav class="tool-hero__crumbs" aria-label="Breadcrumb">
+        <a href="/es">Inicio</a>
+        <span aria-hidden="true">/</span>
+        <span>Calculadoras</span>
+      </nav>
+      <span class="eyebrow">Herramientas</span>
+      <h1 class="tool-hero__title">Sepa cuánto cuesta <em>antes</em> de comprometer el presupuesto.</h1>
+      <p class="tool-hero__lead">
+        Calculadoras para marcas que entran en China. Cada una reproduce cómo factura el canal en la
+        práctica, no una regla aproximada. Elija un modelo, fije sus hipótesis y verá el coste
+        completo en RMB y en USD.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="tool-cards">
+        {
+          calculators.map((c) =>
+            c.live ? (
+              <a class="tool-card" href={c.href}>
+                <span class="tool-card__icon" set:html={c.icon} />
+                <h2 class="tool-card__title">{c.title}</h2>
+                <p class="tool-card__desc">{c.desc}</p>
+                <div class="tool-card__tags">
+                  {c.tags.map((t) => (
+                    <span class="tool-card__tag">{t}</span>
+                  ))}
+                </div>
+                <span class="tool-card__foot">Abrir la calculadora</span>
+              </a>
+            ) : (
+              <div class="tool-card tool-card--soon">
+                <span class="tool-card__pill">En preparación</span>
+                <span class="tool-card__icon" set:html={c.icon} />
+                <h2 class="tool-card__title">{c.title}</h2>
+                <p class="tool-card__desc">{c.desc}</p>
+                <div class="tool-card__tags">
+                  {c.tags.map((t) => (
+                    <span class="tool-card__tag">{t}</span>
+                  ))}
+                </div>
+                <span class="tool-card__foot" style="color: var(--bbg-text-muted); pointer-events: none;">
+                  Próximamente
+                </span>
+              </div>
+            ),
+          )
+        }
+      </div>
+
+      <div class="tool-hub-cta">
+        <p>¿Necesita un modelo que todavía no está aquí, o uno hecho con sus propias cifras?</p>
+        <a class="btn btn--secondary" href="/es/contacto">Consulte a nuestro equipo en China</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .tool-hub-cta {
+    margin-top: var(--space-7);
+    padding: var(--space-5) var(--space-6);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .tool-hub-cta p {
+    margin: 0;
+    font-weight: 600;
+    color: var(--bbg-ink);
+  }
+  .tool-card__foot::after {
+    /* Coming-soon cards keep no arrow. */
+  }
+  .tool-card--soon .tool-card__foot::after {
+    content: '';
+  }
+</style>

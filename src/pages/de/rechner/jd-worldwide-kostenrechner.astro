@@ -14,22 +14,35 @@ type Driver = {
 };
 
 const drivers: Driver[] = [
-  { id: 'gmv', label: 'GMV visé (année 1)', value: '2000000', kind: 'money', min: '200000', max: '10000000', step: '100000' },
-  { id: 'aov', label: 'Panier moyen', value: '250', kind: 'money', min: '20', max: '500', step: '5' },
-  { id: 'dpRetainer', label: 'Honoraires mensuels du DP', value: '30000', kind: 'money', min: '20000', max: '150000', step: '5000' },
-  { id: 'coFund', label: 'Cofinancement de campagne', value: '0', kind: 'money', min: '0', max: '300000', step: '10000' },
-  { id: 'dpCommission', label: 'Commission du DP sur le GMV', value: '5', kind: 'percent', min: '0', max: '12', step: '0.5' },
-  { id: 'paidShare', label: 'Média payant', value: '0', kind: 'percent', min: '0', max: '100', step: '1' },
-  { id: 'kolShare', label: 'KOL', value: '100', kind: 'percent', min: '0', max: '100', step: '1' },
-  { id: 'organicShare', label: 'Organique', value: '0', kind: 'percent', min: '0', max: '100', step: '1' },
-  { id: 'kolCommission', label: 'Taux de commission KOL', value: '20', kind: 'percent', min: '0', max: '40', step: '1' },
-  { id: 'roas', label: 'ROAS (retour sur dépense publicitaire)', value: '1.3', kind: 'number', min: '0.5', max: '6', step: '0.1' },
+  { id: 'gmv', label: 'GMV-Ziel im ersten Jahr', value: '3500000', kind: 'money', min: '200000', max: '10000000', step: '100000' },
+  { id: 'aov', label: 'Durchschnittlicher Bestellwert', value: '250', kind: 'money', min: '20', max: '2000', step: '5' },
+  { id: 'gmvGrowth', label: 'GMV-Wachstum in Jahr 2', value: '50', kind: 'percent', min: '0', max: '200', step: '5' },
+  { id: 'dpRetainer', label: 'Monatlicher Retainer des TP', value: '35000', kind: 'money', min: '0', max: '200000', step: '5000' },
+  { id: 'coFund', label: 'Kampagnen-Cofunding', value: '0', kind: 'money', min: '0', max: '500000', step: '10000' },
+  { id: 'dpCommission', label: 'Provision des TP auf den GMV', value: '10', kind: 'percent', min: '0', max: '20', step: '0.5' },
+  { id: 'paidShare', label: 'Paid Media', value: '60', kind: 'percent', min: '0', max: '100', step: '1' },
+  { id: 'kolShare', label: 'KOL und Livestream', value: '20', kind: 'percent', min: '0', max: '100', step: '1' },
+  { id: 'organicShare', label: 'Organisch', value: '20', kind: 'percent', min: '0', max: '100', step: '1' },
+  { id: 'kolCommission', label: 'Provisionssatz der KOL', value: '20', kind: 'percent', min: '0', max: '40', step: '1' },
+  { id: 'roas', label: 'ROAS (Return on Ad Spend)', value: '2', kind: 'number', min: '0.5', max: '8', step: '0.1' },
 ];
 
 // The three channel shares are grouped together and must always total 100%.
 const shareIds = ['paidShare', 'kolShare', 'organicShare'];
 const mainDrivers = drivers.filter((d) => !shareIds.includes(d.id));
 const shareDrivers = drivers.filter((d) => shareIds.includes(d.id));
+
+// Year 2 carries its own mix: organic normally climbs once the store has
+// reviews and repeat buyers, which is what makes the second year cheaper to run.
+const shareDrivers2: Driver[] = [
+  { id: 'paidShare2', label: 'Paid Media', value: '50', kind: 'percent', min: '0', max: '100', step: '1' },
+  { id: 'kolShare2', label: 'KOL und Livestream', value: '20', kind: 'percent', min: '0', max: '100', step: '1' },
+  { id: 'organicShare2', label: 'Organisch', value: '30', kind: 'percent', min: '0', max: '100', step: '1' },
+];
+const mixRows = [
+  { year: '1', title: 'Jahr 1', drivers: shareDrivers, noteId: 'mix-note' },
+  { year: '2', title: 'Jahr 2', drivers: shareDrivers2, noteId: 'mix-note-2' },
+];
 
 // ---- Advanced inputs, grouped in the collapsible section ----
 type Field = {
@@ -40,37 +53,41 @@ type Field = {
   step?: string;
   hint?: string;
   fx?: boolean;
-  options?: { value: string; label: string; deposit?: string; fee?: string }[];
+  readonly?: boolean;
+  suffix?: string;
+  options?: { value: string; label: string; deposit?: string; fee?: string; annual?: string }[];
 };
 
-// CBEC 抖音全球购 categories. Each one sets the platform deposit and the tech
-// service fee, the only two model inputs that move with product category
-// (see Section 8 of the model spec). Fee is the mid of the published band.
-const categories: { value: string; label: string; deposit: string; fee: string }[] = [
-  { value: 'food-packaged', label: 'Alimentaire emballé (céréales, huile, épicerie sèche, condiments)', deposit: '50000', fee: '4' },
-  { value: 'snacks', label: 'Snacks, fruits secs, spécialités régionales', deposit: '50000', fee: '5' },
-  { value: 'drinks', label: 'Café, céréales, boissons en poudre', deposit: '50000', fee: '5' },
-  { value: 'tea', label: 'Thé', deposit: '50000', fee: '2' },
-  { value: 'supplements', label: 'Compléments alimentaires', deposit: '50000', fee: '4' },
-  { value: 'tonics', label: 'Toniques traditionnels (nid d\'hirondelle et assimilés)', deposit: '200000', fee: '5' },
-  { value: 'alcohol', label: 'Alcools', deposit: '100000', fee: '5' },
-  { value: 'skincare', label: 'Soins de la peau', deposit: '100000', fee: '5' },
-  { value: 'makeup', label: 'Maquillage, parfums', deposit: '100000', fee: '5' },
-  { value: 'beauty-device', label: 'Appareils de beauté', deposit: '100000', fee: '4' },
-  { value: 'personal-care', label: 'Hygiène et soins du corps', deposit: '50000', fee: '4' },
-  { value: 'home', label: 'Maison, linge de lit, art de la table', deposit: '50000', fee: '3' },
-  { value: 'appliances', label: 'Petit électroménager', deposit: '75000', fee: '4' },
-  { value: '3c', label: 'Accessoires 3C, appareils photo', deposit: '50000', fee: '4' },
-  { value: 'phones', label: 'Téléphones, ordinateurs portables, tablettes', deposit: '100000', fee: '2.5' },
-  { value: 'apparel', label: 'Vêtements, sous-vêtements', deposit: '100000', fee: '5' },
-  { value: 'footwear', label: 'Chaussures', deposit: '100000', fee: '5' },
-  { value: 'bags', label: 'Sacs, ceintures, accessoires', deposit: '100000', fee: '5' },
-  { value: 'jewellery', label: 'Bijoux fantaisie', deposit: '100000', fee: '5.5' },
-  { value: 'sports', label: 'Sport, plein air', deposit: '75000', fee: '5' },
-  { value: 'infant-formula', label: 'Lait infantile', deposit: '100000', fee: '4' },
-  { value: 'baby', label: 'Puériculture, jouets', deposit: '50000', fee: '5' },
-  { value: 'pet', label: 'Alimentation et accessoires animaliers', deposit: '50000', fee: '5' },
-  { value: 'custom', label: 'Personnalisé (dépôt et frais saisis à la main)', deposit: '', fee: '' },
+// JD Worldwide (京东全球购) categories. Each one sets the security deposit and the
+// platform commission (运营支持服务费, 2%-6% band) that move with the product
+// category. JD quotes the deposit in a TIERED USD ladder that steps up with
+// cumulative sales; the RMB figures here seed the entry tier at about 7.1 to the
+// dollar (US$5,000 for most categories, US$2,000 for fresh, US$15,000 for
+// high-value electronics, US$40,000 for pharma). The annual platform usage fee
+// is a flat US$1,000. Directional 2025 bands; confirm the exact rate at onboarding.
+const categories: { value: string; label: string; deposit: string; fee: string; annual: string }[] = [
+  { value: 'fresh', label: 'Frischeprodukte (生鲜)', deposit: '14200', fee: '4', annual: '7100' },
+  { value: 'food', label: 'Verpackte Lebensmittel, Getreide, Öl, Snacks', deposit: '35500', fee: '4', annual: '7100' },
+  { value: 'tea', label: 'Tee und Getränkepulver', deposit: '35500', fee: '4', annual: '7100' },
+  { value: 'alcohol', label: 'Alkoholische Getränke', deposit: '35500', fee: '4', annual: '7100' },
+  { value: 'supplements', label: 'Nahrungsergänzungsmittel', deposit: '35500', fee: '5', annual: '7100' },
+  { value: 'baby', label: 'Mutter, Baby und Säuglingsnahrung', deposit: '35500', fee: '3', annual: '7100' },
+  { value: 'skincare', label: 'Hautpflege', deposit: '35500', fee: '5', annual: '7100' },
+  { value: 'makeup', label: 'Make-up und Düfte', deposit: '35500', fee: '5', annual: '7100' },
+  { value: 'personal-care', label: 'Körperpflege', deposit: '35500', fee: '4', annual: '7100' },
+  { value: 'apparel', label: 'Bekleidung', deposit: '35500', fee: '5', annual: '7100' },
+  { value: 'footwear', label: 'Schuhe', deposit: '35500', fee: '5', annual: '7100' },
+  { value: 'bags', label: 'Taschen und Koffer', deposit: '35500', fee: '5', annual: '7100' },
+  { value: 'jewellery', label: 'Modeschmuck', deposit: '35500', fee: '5', annual: '7100' },
+  { value: 'watches', label: 'Uhren (höhere Kautionsstufe)', deposit: '106500', fee: '5', annual: '7100' },
+  { value: '3c', label: '3C und Elektronikzubehör', deposit: '35500', fee: '4', annual: '7100' },
+  { value: 'phones', label: 'Smartphones und Computer (höhere Kautionsstufe)', deposit: '106500', fee: '3', annual: '7100' },
+  { value: 'home', label: 'Haushalt, Küche, Küchenbedarf', deposit: '35500', fee: '5', annual: '7100' },
+  { value: 'appliances', label: 'Kleingeräte', deposit: '35500', fee: '4', annual: '7100' },
+  { value: 'sports', label: 'Sport und Outdoor', deposit: '35500', fee: '5', annual: '7100' },
+  { value: 'pet', label: 'Tiernahrung und Heimtierbedarf', deposit: '35500', fee: '4', annual: '7100' },
+  { value: 'pharma', label: 'Pharma (医药, höchste Kautionsstufe)', deposit: '284000', fee: '5', annual: '7100' },
+  { value: 'custom', label: 'Individuell (Kaution und Provision selbst eintragen)', deposit: '', fee: '', annual: '' },
 ];
 
 const gicon = {
@@ -84,56 +101,62 @@ const gicon = {
 
 const groups: { title: string; icon: string; note?: string; fields: Field[] }[] = [
   {
-    title: 'Catégorie',
+    title: 'Kategorie',
     icon: gicon.platform,
-    note: 'Choisissez votre catégorie de produit. Sur 抖音全球购, le dépôt et les frais de service technique varient selon la catégorie : les deux champs ci-dessous se remplissent seuls. Si votre DP vous annonce d\'autres montants, corrigez-les à la main.',
+    note: 'Wählen Sie Ihre Produktkategorie. Auf JD Worldwide hängen sowohl die Kaution als auch die Plattformprovision an der Kategorie, beide Felder unten werden also von hier aus gesetzt. Die Kaution ist gestaffelt und wird in US-Dollar ausgewiesen; der RMB-Betrag zeigt die Einstiegsstufe. Ihr TP nennt womöglich andere Zahlen. Dann tragen Sie sie einfach von Hand ein.',
     fields: [
       {
         id: 'category',
-        label: 'Catégorie de produit (CBEC 抖音全球购)',
-        value: 'food-packaged',
+        label: 'Produktkategorie (京东全球购)',
+        value: 'food',
         kind: 'select',
         options: categories,
       },
     ],
   },
   {
-    title: 'Change et taxes',
+    title: 'Wechselkurs und Steuern',
     icon: gicon.tax,
     fields: [
-      { id: 'fx', label: 'Taux de change USD / RMB', value: '7.1', kind: 'number', step: '0.01', fx: true },
-      { id: 'cbecTax', label: 'Taxe à l\'import cross-border (综合税)', value: '9.1', kind: 'percent', step: '0.1', hint: 'TVA de 13 % appliquée à 70 % du prix de vente. La plupart des produits alimentaires et de maison échappent à la taxe à la consommation.' },
+      { id: 'fx', label: 'Wechselkurs USD / RMB', value: '7.1', kind: 'number', step: '0.01', fx: true },
+      { id: 'cbecTax', label: 'Cross-Border-Einfuhrsteuer (综合税)', value: '9.1', kind: 'percent', step: '0.1', hint: '13 % Mehrwertsteuer auf 70 % des Verkaufspreises, macht 9,1 % für normale Waren. Kosmetik, Parfum und Alkohol tragen zusätzlich Verbrauchsteuer und liegen höher.' },
+      { id: 'cbecTaxPayer', label: 'Wer die Einfuhrsteuer trägt', value: 'consumer', kind: 'select', options: [ { value: 'consumer', label: 'Der Kunde zahlt sie zusätzlich zum Preis' }, { value: 'brand', label: 'Die Marke übernimmt sie' } ] },
     ],
   },
   {
-    title: 'Plateforme et DP',
+    title: 'Plattform und TP',
     icon: gicon.platform,
     fields: [
-      { id: 'platformDeposit', label: 'Dépôt plateforme Douyin 全球购', value: '50000', kind: 'money', hint: 'Remboursable à la fermeture de la boutique. Défini par la catégorie choisie ci-dessus.' },
-      { id: 'techFee', label: 'Frais de service technique de la plateforme', value: '4', kind: 'percent', step: '0.1', hint: 'Prélevés sur chaque vente. Définis par la catégorie choisie ci-dessus.' },
-      { id: 'agentFee', label: 'Frais annuels du 境内代理人 (agent local)', value: '60000', kind: 'money' },
-      { id: 'trademark', label: 'Enregistrement de la marque en Chine', value: '0', kind: 'money' },
-      { id: 'brandSetup', label: 'Contribution à la création de la boutique', value: '25000', kind: 'money' },
+      { id: 'period', label: 'Laufzeit', value: '12', kind: 'number', readonly: true, suffix: 'Monate', hint: 'Fest eingestellt. Das Modell rechnet zwölf volle Monate durch, alle Jahreswerte beziehen sich auf dieses Fenster.' },
+      { id: 'platformDeposit', label: 'Kaution bei JD Worldwide', value: '35500', kind: 'money', hint: 'Rückzahlbar, gestaffelt nach kumuliertem Umsatz und in US-Dollar ausgewiesen. Die Einstiegsstufe liegt bei rund 5.000 US-Dollar für die meisten Kategorien, bei 2.000 US-Dollar für Frischeprodukte und höher für hochwertige Ware. Wird von Ihrer Kategorie oben gesetzt.' },
+      { id: 'techFee', label: 'Plattformprovision (运营支持服务费)', value: '4', kind: 'percent', step: '0.1', hint: 'Fällt auf jeden Verkauf an, je nach Kategorie zwischen 2 % und 6 %. Wird von Ihrer Kategorie oben gesetzt.' },
+      { id: 'paymentFee', label: 'Transaktionsgebühr (交易服务费)', value: '0.9', kind: 'percent', step: '0.1', hint: 'Auf JD Worldwide pauschal 0,9 % je Bestellung, quer über alle Kategorien.' },
+      { id: 'annualFee', label: 'Plattformnutzungsgebühr (平台使用费)', value: '7100', kind: 'money', hint: 'Pauschal rund 1.000 US-Dollar im Jahr. Einzelne Kategorien bekommen befristet einen Erlass, klären Sie das beim Onboarding.' },
+      { id: 'agentFee', label: 'Zollagent, jährlich', value: '0', kind: 'money', hint: 'Optional. Viele Marken lassen die Zollabwicklung vom TP oder vom Lager erledigen. Setzen Sie hier nur dann einen Betrag ein, wenn Sie einen eigenen 境内代理人 mandatieren.' },
+      { id: 'trademark', label: 'Markenanmeldung in China', value: '0', kind: 'money' },
+      { id: 'brandSetup', label: 'Store-Aufbau und Launch-Content', value: '25000', kind: 'money' },
     ],
   },
   {
-    title: 'Logistique',
+    title: 'Logistik',
     icon: gicon.logistics,
     fields: [
-      { id: 'whDeposit', label: 'Dépôt entrepôt sous douane', value: '100000', kind: 'money' },
-      { id: 'whTaxPrepay', label: 'Avance de taxe à l\'entrepôt sous douane', value: '300000', kind: 'money' },
-      { id: 'storage', label: 'Stockage par unité et par mois', value: '0.8', kind: 'number', step: '0.1' },
-      { id: 'shipping', label: 'Livraison du dernier kilomètre par colis', value: '11', kind: 'money' },
-      { id: 'returnRate', label: 'Taux de retour', value: '5', kind: 'percent', step: '0.1' },
-      { id: 'returnHandling', label: 'Traitement des retours par colis', value: '15', kind: 'money' },
+      { id: 'whDeposit', label: 'Kaution im Bonded Warehouse', value: '100000', kind: 'money' },
+      { id: 'whTaxPrepay', label: 'Steuervorauszahlung im Bonded Warehouse', value: '300000', kind: 'money' },
+      { id: 'storage', label: 'Lagerkosten je Einheit und Monat', value: '0.8', kind: 'number', step: '0.1' },
+      { id: 'fulfillment', label: 'Fulfillment je Bestellung (Pick and Pack)', value: '4', kind: 'money', step: '0.5' },
+      { id: 'shipping', label: 'Zustellung je Paket (Last Mile)', value: '11', kind: 'money' },
+      { id: 'returnRate', label: 'Retourenquote', value: '5', kind: 'percent', step: '0.1' },
+      { id: 'returnHandling', label: 'Bearbeitung je Retoure', value: '15', kind: 'money' },
     ],
   },
   {
-    title: 'Votre rentabilité',
+    title: 'Ihre Kalkulation',
     icon: gicon.margin,
-    note: 'Renseignez votre marge brute par commande pour afficher le résultat, le GMV de rentabilité et la contribution.',
+    note: 'Tragen Sie Ihre Bruttomarge je Bestellung ein, dann rechnet das Modell das Betriebsergebnis beider Jahre und Ihren Break-even-GMV aus. Store-Aufbau und Markenanmeldung werden über die Abschreibungsdauer unten verteilt; die rückzahlbaren Kautionen tauchen in der GuV nie auf.',
     fields: [
-      { id: 'grossMargin', label: 'Marge brute par commande', value: '75', kind: 'percent' },
+      { id: 'grossMargin', label: 'Bruttomarge je Bestellung', value: '75', kind: 'percent' },
+      { id: 'amortYears', label: 'Abschreibungsdauer des Aufbaus', value: '3', kind: 'number', step: '1', suffix: 'Jahre', hint: 'Store-Aufbau und Markenanmeldung werden zu gleichen Teilen über so viele Jahre abgeschrieben. Drei Jahre sind üblich.' },
     ],
   },
 ];
@@ -141,135 +164,157 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
 const steps = [
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18M7 15h4"/></svg>`,
-    title: 'Vous financez',
-    body: 'Dépôts plateforme et entrepôt, dépôt de marque, contenus de lancement. La mise de départ qui met la boutique en ligne.',
+    title: 'Sie finanzieren',
+    body: 'Kautionen bei Plattform und Bonded Warehouse, Markenanmeldung, Launch-Content. Das einmalige Geld, das den Store überhaupt erst online bringt.',
   },
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>`,
-    title: 'Le DP opère',
-    body: 'Un Douyin Partner (DP) fournit l\'équipe, tient la boutique et anime les lives au quotidien.',
+    title: 'Der TP betreibt',
+    body: 'Ein Partner (TP) stellt das Team und führt den Store auf JD Worldwide im Tagesgeschäft. Bezahlt wird er über einen festen Monatsretainer plus eine Provision auf den Umsatz.',
   },
   {
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M9 4c.4 2.4 2.2 4.2 4.6 4.6"/></svg>`,
-    title: 'Les créateurs vendent',
-    body: 'Les KOL font le volume, à la commission. Le média payant sur 千川 réchauffe l\'algorithme et remplit le live.',
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 15z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>`,
+    title: 'Traffic verkauft',
+    body: 'Bezahlte Suche und Display (JD 快车) füllen den Store. Livestream und KOL bewegen zusätzliches Volumen, bezahlt auf Provisionsbasis.',
   },
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 2 5-6"/></svg>`,
-    title: 'Vous mesurez',
-    body: 'Le calculateur additionne chaque poste, sépare l\'investissement de départ des coûts récurrents et signale ce qui revient à la sortie.',
+    title: 'Sie messen',
+    body: 'Der Rechner addiert jede Position, trennt den Aufbau vom laufenden Betrieb und weist aus, was beim Ausstieg zurückfließt.',
   },
 ];
 
 const perks = [
-  'Année 1 et année 2, côte à côte',
-  'Toute la structure de coûts, en RMB et en USD',
-  'Le coût par commande, comparé à votre panier moyen',
-  'Les dépôts remboursables, séparés de la dépense réelle',
-  'Le GMV de rentabilité, selon votre marge',
+  'Jahr 1 und Jahr 2 nebeneinander',
+  'Die komplette Kostenstruktur in RMB und USD',
+  'Kaution und Provision je Kategorie',
+  'Rückzahlbare Kautionen gegen echten Mittelabfluss',
+  'Break-even-GMV aus Ihrer Marge',
 ];
 
 // Plain-English explanation for every field, shown in the overlay bubble.
 const help: Record<string, string> = {
-  gmv: 'Le GMV (Gross Merchandise Value) correspond au chiffre d\'affaires total que vous attendez du canal Douyin sur ses douze premiers mois, avant le moindre coût. C\'est la ligne de tête. Tout le modèle se dimensionne à partir de cette valeur. En cas de doute, partez d\'un objectif prudent et relevez-le une fois le canal éprouvé.',
-  aov: 'Le montant moyen dépensé par un client sur une seule commande. Prenez le chiffre d\'affaires attendu la première année, divisez-le par le nombre de commandes attendues. Il détermine le nombre de colis expédiés, donc vos coûts de logistique et de retours.',
+  gmv: 'Der Gross Merchandise Value ist der gesamte Umsatz, den Sie dem Store auf JD Worldwide in den ersten zwölf Monaten zutrauen, vor Abzug jeder Kosten. Er ist die Größe, an der das ganze Modell hängt. Wenn Sie unsicher sind, setzen Sie das Ziel konservativ an und erhöhen Sie es, sobald der Store liefert.',
+  aov: 'Der Betrag, den ein Kunde im Schnitt in einer einzelnen Bestellung ausgibt. Umsatz des ersten Jahres geteilt durch die Zahl der Bestellungen, und Sie sind hier. Der Wert bestimmt, wie viele Pakete Sie versenden, und damit Ihre Kosten für Fulfillment, Zustellung und Retouren.',
   paidShare:
-    'La part de vos ventes portée par la publicité payante sur la régie de Douyin (千川 Qianchuan), plutôt que par la portée organique ou l\'audience propre d\'un créateur. Montez ce curseur et vous dépensez davantage en publicité pour atteindre le même chiffre.',
+    'Der Anteil Ihres Umsatzes, den bezahlte Werbung bringt, also die Such- und Display-Werkzeuge von JD (JD 快车), und nicht organische Reichweite oder ein Creator. Je höher Sie diesen Regler ziehen, desto mehr Media-Budget brauchen Sie für denselben Umsatz.',
   dpRetainer:
-    'Les honoraires mensuels fixes que votre Douyin Partner facture pour opérer le canal : la boutique, le calendrier des lives, la gestion des campagnes, le service client. Sur une année, c\'est souvent la ligne la plus lourde. Les honoraires vont d\'environ 30 000 RMB par mois pour une structure légère à 100 000 pour le niveau des marques internationales.',
+    'Das feste Monatshonorar, das Ihr Partner (TP) für den Betrieb des Stores berechnet: Storefront, Kampagnenkalender, Ad Operations, Kundenservice. In der Regel der größte Fixposten überhaupt. Für eine ernsthaft aufgestellte internationale Marke liegen rund 35.000 RMB im Monat im üblichen Rahmen, bei größerem Setup mehr.',
   dpCommission:
-    'Un pourcentage que le DP prélève sur les ventes qu\'il génère, en plus des honoraires. Le niveau des marques internationales se situe entre 5 et 8 %, et le secteur plafonne autour de 10 %. C\'est distinct du média payant que vous financez directement.',
+    'Ein Prozentsatz, den der Partner zusätzlich zum Retainer auf den erzielten Umsatz einbehält. Zehn Prozent sind gängig. Das Media-Budget, das Sie direkt in Ihr Werbekonto einzahlen, ist davon getrennt.',
   category:
-    'Votre catégorie de produit sur la boutique cross-border (抖音全球购). Elle règle deux chiffres : le dépôt plateforme et les frais de service technique, qui varient tous deux selon la catégorie. Choisissez la plus proche et les champs ci-dessous se remplissent. Sélectionnez Personnalisé pour saisir les vôtres.',
+    'Ihre Produktkategorie auf JD Worldwide (京东全球购). Sie setzt zwei Werte, die je nach Kategorie schwanken: die Kaution und die Plattformprovision (运营支持服务费). Wählen Sie die passendste Kategorie, dann füllen sich die Felder unten. Für eigene Werte nehmen Sie „Individuell“.',
   kolCommission:
-    'La part qu\'un animateur de live ou un créateur de vidéos courtes conserve sur chaque vente qu\'il génère. C\'est de la pure commission, versée seulement quand il vend vraiment. L\'alimentaire et les produits agricoles tournent autour de 8 à 20 % ; la beauté et le luxe montent plus haut.',
+    'Der Anteil, den ein Livestream-Host oder ein Kurzvideo-Creator von jedem Verkauf behält, den er auslöst. Reine Provision, fällig nur bei tatsächlichem Verkauf. Bei Lebensmitteln und Alltagsware liegen 8 bis 20 Prozent im Rahmen, Beauty und Luxus liegen darüber.',
   roas:
-    'Le ROAS (Return On Ad Spend) est le rapport entre les ventes et la dépense publicitaire. Un ROAS de 1,5 signifie que chaque RMB de publicité rapporte 1,5 RMB de ventes. Un compte Douyin récent démarre bas les premiers mois, puis grimpe à mesure que l\'algorithme apprend à qui vous montrer. Indiquez la valeur que vous attendez en moyenne sur la première année.',
-  fx: 'Le nombre de RMB qu\'achète un dollar américain. Le taux n\'agit que sur le montant en USD affiché à la fin ; tous les calculs tournent en RMB. Le bouton récupère le taux du jour.',
+    'Return on Ad Spend ist Umsatz geteilt durch Media-Ausgaben. Ein ROAS von 2 heißt: Jeder RMB Werbung bringt 2 RMB Umsatz zurück. Als Faustregel für den Break-even gilt in China 1 geteilt durch die Bruttomarge. Bei 50 % Marge brauchen Sie also 2, allein um die Produktrechnung zu decken, und margenschwächere Kategorien brauchen mehr. Bezahlte Suche auf JD reift meist schneller als ein kalter Social-Account, weil der Kunde schon mit Kaufabsicht ankommt. Tragen Sie den Wert ein, den Sie über das erste Jahr im Schnitt erwarten.',
+  fx: 'Wie viele RMB ein US-Dollar kauft. Der Kurs betrifft nur den USD-Wert am Ende, gerechnet wird durchgängig in RMB. Über den Button holen Sie den tagesaktuellen Kurs.',
   cbecTax:
-    'La taxe à l\'importation du e-commerce transfrontalier sur les produits vendus en régime sous douane. C\'est une TVA de 13 % appliquée à 70 % du prix de vente, soit 9,1 % des ventes pour la plupart des produits alimentaires et de maison, qui ne portent pas de taxe à la consommation. Cosmétiques, parfums et alcools déclenchent la taxe à la consommation et montent plus haut, autour de 23 %.',
+    'Die kombinierte Cross-Border-Steuer, faktisch eine Einfuhrumsatzsteuer auf Ware, die über das Bonded-Modell verkauft wird. Erhoben werden 13 Prozent Mehrwertsteuer auf 70 Prozent des Verkaufspreises, was für normale Waren ohne Verbrauchsteuer bei 9,1 Prozent des Umsatzes landet. Kosmetik, Parfum und Alkohol lösen zusätzlich Verbrauchsteuer aus und liegen höher.',
+  cbecTaxPayer:
+    'Wer die Cross-Border-Steuer trägt. In den meisten Store-Setups zahlt der Kunde sie an der Kasse oben auf den Preis, dann ist sie für Sie keine Kosten und bleibt im Modell außen vor. Stellen Sie auf „Die Marke übernimmt sie“ um, zieht der Rechner sie direkt von Ihrer Rechnung ab.',
   platformDeposit:
-    'Un dépôt de garantie que Douyin conserve tant que votre boutique est ouverte, restitué à la fermeture en règle. La base cross-border est de 50 000 RMB, et certaines catégories vont jusqu\'à 100 000 ou 200 000. Le sélecteur de catégorie le règle pour vous.',
+    'Eine rückzahlbare Kaution, die JD Worldwide hält, solange Ihr Store läuft, und bei geordnetem Ausstieg erstattet. Sie ist gestaffelt, wird in US-Dollar ausgewiesen und steigt mit dem kumulierten Umsatz. Die Einstiegsstufe liegt bei rund 5.000 US-Dollar für die meisten Kategorien, bei 2.000 US-Dollar für Frischeprodukte, höher für hochwertige Ware oder Pharma. Die Kategorieauswahl setzt den Einstiegsbetrag in RMB.',
   techFee:
-    'Des frais de service technique que Douyin prélève sur chaque vente, sous forme d\'une part du GMV. Ils vont d\'environ 2 à 6 % selon la catégorie. Le sélecteur de catégorie les règle pour vous.',
+    'Die Plattformprovision (运营支持服务费), die JD Worldwide auf jeden Verkauf erhebt, als Anteil am GMV. Je nach Kategorie liegt sie zwischen 2 und 6 Prozent. Sie ist unabhängig von der Transaktionsgebühr von 0,9 Prozent. Die Kategorieauswahl setzt den Wert.',
+  paymentFee:
+    'Die Transaktionsgebühr (交易服务费) auf jede Bestellung, auf JD Worldwide pauschal 0,9 Prozent, berechnet als Anteil am GMV.',
+  annualFee:
+    'Die jährliche Plattformnutzungsgebühr (平台使用费), die JD Worldwide erhebt, ob Sie verkaufen oder nicht. Sie liegt bei rund 1.000 US-Dollar, der RMB-Standardwert kommt entsprechend aus dem Kurs. Einzelne Kategorien bekommen befristet einen Erlass, klären Sie Ihren Fall beim Onboarding.',
   agentFee:
-    'Les frais annuels d\'un agent douanier local (境内代理人), l\'entité chinoise agréée qui doit dédouaner les colis transfrontaliers en votre nom. C\'est un coût annuel fixe, indépendant de votre volume de ventes.',
+    'Eine optionale Jahresgebühr für einen Zollagenten auf dem Festland (境内代理人). Im Bonded-Modell übernimmt oft der TP oder das Lager die Abwicklung, deshalb lassen viele Marken den Wert auf null. Tragen Sie nur dann etwas ein, wenn Sie einen eigenen Agenten mandatieren.',
   trademark:
-    'Un coût unique pour déposer votre marque en Chine, dans la classe concernée. Le faire tôt protège le nom avant que quelqu\'un d\'autre ne le revendique. Environ 8 000 RMB pour une seule classe.',
+    'Einmalige Kosten, um Ihre Marke in China in der passenden Klasse anzumelden. Wer früh anmeldet, sichert den Namen, bevor ihn jemand anderes beansprucht. Für eine einzelne Klasse rund 8.000 RMB.',
   brandSetup:
-    'Le coût initial pour construire la boutique et ses contenus de lancement : bannière, fiches produits, une séance photo ou vidéo phare. Payé une seule fois, au démarrage.',
+    'Die Anfangskosten für den Store und seinen Launch-Content: Banner, Produktseiten, ein Foto- oder Videodreh für das Key Visual. Wird einmal bezahlt, am Anfang.',
   coFund:
-    'Un fonds commun annuel qui s\'ajoute aux honoraires du DP, réservé aux grands rendez-vous : Double 11, un lancement de marque, une campagne phare. Il finance le travail qui sort du quotidien déjà couvert par les honoraires.',
+    'Ein jährlicher gemeinsamer Topf zusätzlich zum Retainer des TP, reserviert für die großen Momente: Double 11, ein Markenlaunch, eine Leitkampagne. Er finanziert Arbeit, die außerhalb des Tagesgeschäfts liegt, das der Retainer ohnehin abdeckt.',
   kolShare:
-    'La part des ventes totales qui passe par les créateurs (lives et vidéos courtes), plutôt que par votre propre page boutique ou vos publicités. Elle détermine le montant de commission KOL que vous finissez par payer.',
+    'Der Anteil am Gesamtumsatz, der über Creator läuft (Livestream und Kurzvideo) statt über Ihre eigene Storeseite oder die bezahlte Suche. Er bestimmt, wie viel KOL-Provision am Ende anfällt.',
   organicShare:
-    'Les ventes qui arrivent sans publicité payante ni commission de créateur : votre propre page boutique, la recherche, vos abonnés, les repartages. C\'est ce qui reste après le média payant et les KOL. Une part organique qui grimpe, c\'est ce qui rend l\'année 2 moins chère que l\'année 1.',
+    'Umsätze, hinter denen weder bezahlte Werbung noch eine Creator-Provision steht: Ihre eigene Storeseite, die Suche, Follower, Wiederkäufer. Es ist schlicht das, was nach Paid Media und KOL übrig bleibt. Ein steigender organischer Anteil ist der Grund, warum Jahr 2 günstiger ausfällt als Jahr 1.',
+  gmvGrowth:
+    'Wie viel mehr der Store in Jahr 2 verkauft als in Jahr 1. Ein Store, der sein erstes Jahr übersteht, legt meist zu: Er hat Bewertungen, Follower und Wiederkäufer, und sein Suchgewicht innerhalb von JD verbessert sich. 50 % sind ein vernünftiger Planwert für einen Store, der Tritt gefasst hat. Auf null gesetzt, wiederholt das Modell Jahr 1 unverändert. Jede umsatzabhängige Position in der Spalte für Jahr 2 skaliert mit diesem Wert.',
+  paidShare2:
+    'Der Anteil des Umsatzes in Jahr 2, der von bezahlter Werbung kommt. Bis dahin hat der Store Historie, Bewertungen und Follower, deshalb halten viele Marken diese Position oder fahren sie zurück, während Organisch übernimmt.',
+  kolShare2:
+    'Der Anteil des Umsatzes in Jahr 2, der über Creator läuft. Die meisten Marken behalten Livestream und KOL im Mix, nur weniger dominant, sobald Storeseite und Wiederkäufer von allein verkaufen.',
+  organicShare2:
+    'Der Anteil in Jahr 2, der ohne Media-Budget und ohne Creator-Provision hereinkommt: Storeseite, Suche auf JD, Follower, Wiederkäufer. Dieser Wert sollte steigen, und er ist der Hauptgrund, warum Jahr 2 günstiger läuft als Jahr 1.',
+  period:
+    'Das Modell rechnet mit einer Laufzeit von zwölf Monaten. GMV-Ziel, Retainer des TP, Plattformnutzungsgebühr und Cofunding decken jeweils ein volles Jahr ab, und Jahr 2 in den Ergebnissen zeigt dieselben zwölf Monate ohne den einmaligen Aufbau. Der Wert steht hier, damit die Annahme sichtbar ist. Ändern lässt er sich nicht.',
   whDeposit:
-    'Un dépôt remboursable que l\'entrepôt sous douane conserve comme fonds de roulement pendant que vos marchandises y sont stockées. Vous le récupérez à la sortie : il est recouvrable, pas perdu.',
+    'Eine rückzahlbare Kaution, die das Bonded Warehouse als Sicherheit hält, solange Ihre Ware dort liegt. Sie bekommen sie beim Ausstieg zurück, sie ist also gebundenes, kein verlorenes Geld.',
   whTaxPrepay:
-    'Une somme versée d\'avance à l\'entrepôt sous douane pour couvrir la taxe à l\'importation au fur et à mesure du dédouanement. Elle se consomme à l\'entrée des marchandises en Chine, donc traitez-la comme de l\'argent que vous récupérez plus tard, pas comme une dépense.',
+    'Geld, das Sie im Voraus an das Bonded Warehouse zahlen, um die Einfuhrsteuer der Ware bei der Zollabfertigung zu decken. Es wird abgebaut, sobald Sendungen nach China eingehen. Betrachten Sie es als Geld, das später zurückkommt, nicht als Ausgabe.',
   storage:
-    'Ce que l\'entrepôt sous douane facture pour stocker une unité pendant un mois. Multiplié par votre volume de commandes et une durée moyenne de séjour de deux mois, cela devient votre facture de stockage.',
+    'Was das Bonded Warehouse für die Lagerung einer Einheit im Monat berechnet. Multipliziert mit Ihrem Bestellvolumen und einer durchschnittlichen Liegezeit von zwei Monaten ergibt sich Ihre Lagerrechnung.',
+  fulfillment:
+    'Was Kommissionierung, Verpackung und Handling einer Bestellung im Bonded Warehouse kosten, bevor sie rausgeht. Die Zustellung auf der letzten Meile kommt separat dazu. Mal Zahl der Bestellungen ergibt die Fulfillment-Rechnung des Jahres.',
   shipping:
-    'Le coût de livraison du dernier kilomètre par colis, de l\'entrepôt sous douane jusqu\'à la porte du client. Multipliez par le nombre de commandes pour obtenir la facture annuelle d\'expédition.',
+    'Die Zustellkosten je Paket auf der letzten Meile, vom Bonded Warehouse bis zur Haustür des Kunden. Mal Zahl der Bestellungen ergibt die Versandrechnung des Jahres. Sie kommt zur Fulfillment-Gebühr hinzu.',
   returnRate:
-    'La part des commandes qui reviennent. Les retours en alimentaire et en cross-border restent faibles, autour de 5 %. Chaque retour porte un coût de traitement.',
+    'Der Anteil der Bestellungen, der zurückkommt. Im Cross-Border-Geschäft sind Retouren meist niedrig, rund fünf Prozent. Jede Retoure verursacht Bearbeitungskosten.',
   returnHandling:
-    'Ce que coûte le traitement d\'un colis retourné : contrôle, puis remise en stock ou destruction. Multiplié par votre taux de retour et votre volume de commandes.',
+    'Was die Bearbeitung eines zurückgeschickten Pakets kostet: Prüfung, danach Wiedereinlagerung oder Entsorgung. Multipliziert mit Retourenquote und Bestellvolumen.',
   grossMargin:
-    'Votre marge brute sur une seule commande : la part du prix de vente qui reste après le coût produit, mais avant les coûts du canal Douyin dans ce modèle. Le même pourcentage s\'applique à chaque commande. Renseignez-la pour débloquer le résultat des années 1 et 2, le GMV de rentabilité et votre contribution.',
+    'Ihre Bruttomarge auf eine einzelne Bestellung: der Anteil des Verkaufspreises, der nach Wareneinsatz übrig bleibt, aber vor den Kanalkosten dieses Modells. Derselbe Prozentsatz gilt für jede Bestellung. Tragen Sie ihn ein, dann rechnet das Modell das Betriebsergebnis beider Jahre und Ihren Break-even-GMV aus.',
+  amortYears:
+    'Über wie viele Jahre der einmalige Aufbau abgeschrieben wird. Store-Aufbau und Markenanmeldung sind echte Kosten, deshalb verteilt die Buchhaltung sie auf die Jahre, in denen sie sich auszahlen, statt die ganze Rechnung Jahr 1 aufzubürden. Drei Jahre sind bei einer solchen Investition üblich. Kautionen und Steuervorauszahlung stecken nicht in dieser Zahl: Sie bekommen sie zurück, das ist gebundenes Kapital, keine Kosten.',
 };
 
 const notes = [
-  'Le modèle tourne uniquement en cross-border, via l\'entrepôt sous douane (抖音全球购). Le dépôt d\'entrepôt et l\'avance de taxe vous reviennent à la sortie, donc le calculateur les compte comme de l\'argent que vous récupérez, pas comme une dépense.',
-  'Les honoraires du DP et sa commission sur le GMV forment l\'une des lignes les plus lourdes, à égalité avec le média payant. Le média payant sur 千川, c\'est vous qui l\'alimentez directement dans le compte publicitaire, il ne transite pas par le DP. Ce partage est voulu : les DP qui essaient d\'avancer le budget publicitaire finissent par caler.',
-  'Le DP opère Douyin, rien d\'autre. Le coût de son équipe est déjà inclus dans les honoraires et la commission, il n\'y a donc pas de ligne de personnel à part. La commission KOL est facturée séparément, sur les ventes que les créateurs génèrent réellement.',
-  'Ici, le ROAS est un seul chiffre : celui que vous attendez en moyenne sur la première année. Un compte Douyin récent démarre bas les premiers mois, puis grimpe une fois que l\'algorithme apprend à qui vous montrer ; visez donc une valeur mélangée plutôt qu\'un scénario idéal.',
-  'Le dépôt plateforme et les frais de service technique dépendent de votre catégorie de produit. Choisissez une catégorie dans le panneau de réglage et les deux se remplissent à partir des barèmes cross-border publiés.',
-  'L\'année 1 se solde en général par une perte à 2 M de RMB de GMV. Le tableau oppose l\'année 1 à l\'année 2, quand l\'investissement de départ disparaît. Le GMV de rentabilité indique l\'échelle nécessaire pour que la marge brute couvre la facture, et il se situe souvent à plusieurs fois un objectif de première année.',
+  'Der Aufbau wird einmal bezahlt, ist aber nicht in voller Höhe eine Belastung für Jahr 1. Store-Aufbau und Markenanmeldung werden über die von Ihnen gesetzte Abschreibungsdauer verteilt. Jedes Jahr trägt seinen Anteil, und das Betriebsergebnis wird nicht von einer Rechnung erdrückt, von der es jahrelang profitiert. Bei Kautionen und Steuervorauszahlung liegt der Fall anders: Sie kommen beim Ausstieg zurück, sind also gebundenes Kapital und erreichen die GuV nie. Deshalb weichen die Cash-Spalte und die Ergebnisspalte voneinander ab, und beide haben recht.',
+  'Das Modell rechnet ausschließlich Cross-Border, über das Bonded Warehouse (京东全球购). Die Kaution des Lagers und die Steuervorauszahlung fließen beim Ausstieg an Sie zurück, deshalb führt der Rechner sie als Geld, das wiederkommt, nicht als Ausgabe.',
+  'Der Retainer des TP samt seiner Provision auf den GMV ist neben Paid Media einer der größten Posten. Das Media-Budget zahlen Sie direkt in Ihr Werbekonto ein, es läuft nicht über die Rechnung des TP. Diese Trennung ist Absicht: Partner, die das Media-Budget vorstrecken wollen, geraten schnell ins Straucheln.',
+  'JD Worldwide berechnet auf jeden Verkauf zwei getrennte Posten: die Plattformprovision (运营支持服务费) mit 2 bis 6 Prozent je nach Kategorie und eine pauschale Transaktionsgebühr von 0,9 Prozent (交易服务费). Beide stecken im Modell. Die jährliche Plattformnutzungsgebühr liegt bei rund 1.000 US-Dollar und wird aus dem tagesaktuellen Kurs abgeleitet.',
+  'Die Kaution ist gestaffelt, wird in US-Dollar ausgewiesen und steigt mit dem kumulierten Umsatz. Die meisten Kategorien starten bei etwa 5.000 US-Dollar, Frischeprodukte bei rund 2.000 US-Dollar, hochwertige Elektronik und Pharma deutlich darüber. Die Kategorieauswahl setzt die Einstiegsstufe in RMB. Da die Kaution zurückfließt, steht sie als gebundenes Kapital außerhalb der Ergebnisrechnung.',
+  'Die Cross-Border-Steuer beträgt 9,1 Prozent des Umsatzes für normale Waren: 13 Prozent Mehrwertsteuer auf 70 Prozent des Preises. In den meisten Store-Setups zahlt der Kunde sie an der Kasse, deshalb bleibt sie standardmäßig außerhalb Ihrer Kosten. Stellen Sie den Träger auf die Marke um, wenn Sie sie übernehmen. Und beachten Sie: Kosmetik, Parfum und Alkohol liegen höher.',
+  'Bei 3,5 Mio. RMB GMV schreibt Jahr 1 in aller Regel rote Zahlen. Die Tabelle stellt Jahr 1 gegen Jahr 2, wenn der einmalige Aufbau wegfällt, der Kanalmix auf Ihre Regler für Jahr 2 umschaltet und der GMV um Ihre Wachstumsannahme steigt. Der Break-even-GMV zeigt, welche Größenordnung nötig ist, damit der Rohertrag die Rechnung deckt. Häufig liegt er um ein Mehrfaches über dem Ziel des ersten Jahres.',
 ];
 
 const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>`;
 ---
 
 <Layout
-  title="Calculateur de coûts Douyin cross-border | TheChinaPath"
-  description="Chiffrez le coût réel d'un canal Douyin cross-border : honoraires du DP, média payant, commission KOL, logistique sous douane, taxes et frais de plateforme. Résultat en RMB et en USD."
+  title="JD Worldwide: Kostenrechner für Aufbau und Betrieb | TheChinaPath"
+  description="Was ein Store auf JD Worldwide im ersten Jahr kostet: gestaffelte Kaution und Provision je Kategorie, 0,9 % Transaktionsgebühr, Retainer und Provision des TP, Bonded-Fulfillment, Versand und Cross-Border-Einfuhrsteuer. In RMB und USD."
 >
   <section
     class="tool-hero tool-hero--image"
-    style="--tool-hero-img: url('/Images/tools/douyin-hero-bg.png')"
+    style="--tool-hero-img: url('/Images/tools/tmall-jd-hero-bg.png')"
   >
     <div class="container tool-hero__inner">
-      <nav class="tool-hero__crumbs" aria-label="Fil d'Ariane">
-        <a href="/fr">Accueil</a>
+      <nav class="tool-hero__crumbs" aria-label="Breadcrumb">
+        <a href="/de">Home</a>
         <span aria-hidden="true">/</span>
-        <a href="/fr/outils">Calculateurs</a>
+        <a href="/de/rechner">Rechner</a>
         <span aria-hidden="true">/</span>
-        <span>Coût Douyin cross-border</span>
+        <span>JD Worldwide: Aufbau und Betrieb</span>
       </nav>
-      <span class="eyebrow">Calculateur de coûts</span>
-      <h1 class="tool-hero__title">Ce qu'un canal Douyin cross-border coûte <em>vraiment</em>.</h1>
+      <span class="eyebrow">Kostenrechner</span>
+      <h1 class="tool-hero__title">Was ein Store auf JD Worldwide <em>wirklich</em> kostet.</h1>
       <p class="tool-hero__lead">
-        Modélisez le coût complet d'une première année de vente sur Douyin avec un Douyin Partner (DP),
-        en cross-border sous douane (抖音全球购). Vaut pour toute catégorie de produit.
+        Was kostet ein Store auf JD Worldwide, wenn ihn ein Partner (TP) im
+        Cross-Border-Bonded-Modell (京东全球购) betreibt? Rechnen Sie die ersten beiden Jahre durch.
+        Kaution und Provision sind gestaffelt und hängen an Ihrer Kategorie.
       </p>
       <div class="tool-hero__meta">
         <div class="tool-hero__meta-item">
-          <span class="tool-hero__meta-num">Années 1 + 2</span>
-          <span class="tool-hero__meta-label">la structure de coûts, côte à côte</span>
+          <span class="tool-hero__meta-num">Jahr 1 + 2</span>
+          <span class="tool-hero__meta-label">die Kostenstruktur im Vergleich</span>
         </div>
         <div class="tool-hero__meta-item">
           <span class="tool-hero__meta-num">RMB + USD</span>
-          <span class="tool-hero__meta-label">l'intégralité des coûts, dans les deux devises</span>
+          <span class="tool-hero__meta-label">die volle Kostenstruktur, beide Währungen</span>
         </div>
         <div class="tool-hero__meta-item">
-          <span class="tool-hero__meta-num">En direct</span>
-          <span class="tool-hero__meta-label">chaque hypothèse est modifiable</span>
+          <span class="tool-hero__meta-num">Live</span>
+          <span class="tool-hero__meta-label">jede Annahme können Sie ändern</span>
         </div>
       </div>
       <a href="#calculator" class="tool-hero__scroll">
-        <span>Lancer le calcul</span>
+        <span>Jetzt rechnen</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
       </a>
     </div>
@@ -279,8 +324,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   <section class="section calc-how">
     <div class="container">
       <div class="calc-how__head reveal">
-        <span class="eyebrow">Comment fonctionne le modèle</span>
-        <h2 class="calc-how__title">Quatre rouages, un seul chiffre pour la première année.</h2>
+        <span class="eyebrow">So rechnet das Modell</span>
+        <h2 class="calc-how__title">Vier Stellschrauben, zwei Jahre Kosten.</h2>
       </div>
       <ol class="calc-flow">
         {
@@ -294,7 +339,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         }
       </ol>
       <div class="calc-perks reveal">
-        <span class="calc-perks__label">Ce que vous obtenez</span>
+        <span class="calc-perks__label">Das bekommen Sie</span>
         <ul class="calc-perks__list">
           {
             perks.map((p) => (
@@ -313,8 +358,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   <section class="section section--alt calc" id="calculator">
     <div class="container">
       <div class="calc__head reveal">
-        <span class="eyebrow">Le calculateur</span>
-        <h2 class="calc__title">Réglez vos hypothèses</h2>
+        <span class="eyebrow">Der Rechner</span>
+        <h2 class="calc__title">Ihre Annahmen</h2>
       </div>
 
       <form class="calc-form" id="calc-form" novalidate>
@@ -323,8 +368,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             {/* Key drivers as sliders */}
             <div class="calc-card calc-drivers reveal">
               <div class="calc-card__head">
-                <h3 class="calc-card__title">Hypothèses clés</h3>
-                <span class="calc-card__hint">Les chiffres qui pèsent le plus sur le total.</span>
+                <h3 class="calc-card__title">Zentrale Annahmen</h3>
+                <span class="calc-card__hint">Die Werte mit dem größten Hebel auf die Summe.</span>
               </div>
               <div class="calc-drivers__grid">
                 {
@@ -340,7 +385,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                               type="button"
                               class="calc-help__btn"
                               data-help={help[d.id]}
-                              aria-label={`Qu'est-ce que ${d.label} ?`}
+                              aria-label={`Was bedeutet ${d.label}?`}
                             >
                               ?
                             </button>
@@ -378,64 +423,69 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                 }
               </div>
 
-              {/* Channel mix: paid + KOL + organic, always 100% of GMV */}
+              {/* Channel mix: paid + KOL + organic, 100% of GMV, one row per year */}
               <div class="driver-group">
                 <div class="driver-group__head">
-                  <span class="driver-group__title">Répartition des canaux</span>
-                  <span class="driver-group__sub">D'où viennent les ventes. Ces trois curseurs totalisent toujours 100 % du GMV.</span>
+                  <span class="driver-group__title">Kanalmix</span>
+                  <span class="driver-group__sub">Woher die Umsätze kommen, Jahr für Jahr. Jede Zeile ergibt 100 % des GMV.</span>
                 </div>
-                <div class="driver-group__grid">
-                  {
-                    shareDrivers.map((d) => (
-                      <div class="driver driver--share" data-driver>
-                        <div class="driver__top">
-                          <span class="calc-label-wrap">
-                            <label class="driver__label" for={d.id}>
-                              {d.label}
-                            </label>
-                            {help[d.id] && (
-                              <button
-                                type="button"
-                                class="calc-help__btn"
-                                data-help={help[d.id]}
-                                aria-label={`Qu'est-ce que ${d.label} ?`}
-                              >
-                                ?
-                              </button>
-                            )}
-                          </span>
-                          <span class="driver__value">
+                {
+                  mixRows.map((row) => (
+                    <div class="driver-group__row">
+                      <span class="driver-group__year">{row.title}</span>
+                      <div class="driver-group__grid">
+                        {row.drivers.map((d) => (
+                          <div class="driver driver--share" data-driver>
+                            <div class="driver__top">
+                              <span class="calc-label-wrap">
+                                <label class="driver__label" for={d.id}>
+                                  {d.label}
+                                </label>
+                                {help[d.id] && (
+                                  <button
+                                    type="button"
+                                    class="calc-help__btn"
+                                    data-help={help[d.id]}
+                                    aria-label={`Was bedeutet ${d.label} (${row.title})?`}
+                                  >
+                                    ?
+                                  </button>
+                                )}
+                              </span>
+                              <span class="driver__value">
+                                <input
+                                  class="driver__num"
+                                  type="number"
+                                  id={d.id}
+                                  name={d.id}
+                                  value={d.value}
+                                  data-kind={d.kind}
+                                  data-label={`${d.label} (${row.title})`}
+                                  step={d.step}
+                                  min={d.min}
+                                  max={d.max}
+                                />
+                                <span class="driver__unit">%</span>
+                              </span>
+                            </div>
                             <input
-                              class="driver__num"
-                              type="number"
-                              id={d.id}
-                              name={d.id}
-                              value={d.value}
-                              data-kind={d.kind}
-                              data-label={d.label}
-                              step={d.step}
+                              class="driver__range"
+                              type="range"
                               min={d.min}
                               max={d.max}
+                              step={d.step}
+                              value={d.value}
+                              data-target={d.id}
+                              aria-hidden="true"
+                              tabindex="-1"
                             />
-                            <span class="driver__unit">%</span>
-                          </span>
-                        </div>
-                        <input
-                          class="driver__range"
-                          type="range"
-                          min={d.min}
-                          max={d.max}
-                          step={d.step}
-                          value={d.value}
-                          data-target={d.id}
-                          aria-hidden="true"
-                          tabindex="-1"
-                        />
+                          </div>
+                        ))}
                       </div>
-                    ))
-                  }
-                </div>
-                <p class="calc-mix" id="mix-note" aria-live="polite"></p>
+                      <p class="calc-mix" id={row.noteId} aria-live="polite"></p>
+                    </div>
+                  ))
+                }
               </div>
             </div>
 
@@ -443,8 +493,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             <div class="calc-card calc-advanced reveal">
               <button type="button" class="calc-advanced__toggle" id="advanced-toggle" aria-expanded="false" aria-controls="advanced-body">
                 <span class="calc-advanced__toggle-text">
-                  <span class="calc-advanced__toggle-title">Ajuster chaque paramètre</span>
-                  <span class="calc-advanced__toggle-sub">Frais, dépôts, logistique, taxes et marge</span>
+                  <span class="calc-advanced__toggle-title">Alle Werte feinjustieren</span>
+                  <span class="calc-advanced__toggle-sub">Gebühren, Kautionen, Logistik, Steuern und Marge</span>
                 </span>
                 <span class="calc-advanced__chevron" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
@@ -452,7 +502,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
               </button>
               <div class="calc-advanced__body" id="advanced-body" hidden>
                 <div class="calc-advanced__body-inner">
-                <div class="calc-tabs" role="tablist" aria-label="Groupes de paramètres">
+                <div class="calc-tabs" role="tablist" aria-label="Eingabegruppen">
                   {
                     groups.map((group, idx) => (
                       <button
@@ -494,7 +544,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                                     type="button"
                                     class="calc-help__btn"
                                     data-help={help[f.id]}
-                                    aria-label={`Qu'est-ce que ${f.label} ?`}
+                                    aria-label={`Was bedeutet ${f.label}?`}
                                   >
                                     ?
                                   </button>
@@ -507,6 +557,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                                       value={o.value}
                                       data-deposit={o.deposit}
                                       data-fee={o.fee}
+                                      data-annual={o.annual}
                                       selected={o.value === f.value}
                                     >
                                       {o.label}
@@ -517,7 +568,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                                 <div class="calc-input-wrap" data-kind={f.kind}>
                                   {f.kind === 'money' && <span class="calc-input-affix">RMB</span>}
                                   <input
-                                    class="calc-input"
+                                    class:list={['calc-input', { 'calc-input--static': f.readonly }]}
                                     type="number"
                                     inputmode="decimal"
                                     id={f.id}
@@ -528,27 +579,35 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                                     step={f.step ?? '1'}
                                     min="0"
                                     placeholder={f.kind === 'percent' ? '%' : ''}
+                                    readonly={f.readonly}
+                                    tabindex={f.readonly ? '-1' : undefined}
+                                    aria-readonly={f.readonly ? 'true' : undefined}
                                   />
                                   {f.kind === 'percent' && <span class="calc-input-affix calc-input-affix--suffix">%</span>}
+                                  {f.suffix && <span class="calc-input-affix calc-input-affix--suffix">{f.suffix}</span>}
                                 </div>
                               )}
                               {f.fx && (
                                 <button type="button" class="calc-fx-link" id="fx-refresh">
                                   <span class="calc-fx-link__icon" set:html={refreshIcon} />
-                                  Actualiser le taux
+                                  Aktuellen Kurs abrufen
                                 </button>
                               )}
-                              {f.kind === 'select' && (
+                              {f.id === 'category' && (
                                 <div class="calc-impact" id="category-impact" aria-live="polite" hidden>
-                                  <span class="calc-impact__label">Met à jour ci-dessous</span>
+                                  <span class="calc-impact__label">Wird unten übernommen</span>
                                   <span class="calc-impact__chips">
                                     <span class="calc-impact__chip">
-                                      Dépôt plateforme
+                                      Kaution
                                       <strong id="impact-deposit"></strong>
                                     </span>
                                     <span class="calc-impact__chip">
-                                      Frais de service technique
+                                      Provision
                                       <strong id="impact-fee"></strong>
+                                    </span>
+                                    <span class="calc-impact__chip">
+                                      Jahresgebühr
+                                      <strong id="impact-annual"></strong>
                                     </span>
                                   </span>
                                 </div>
@@ -571,23 +630,23 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
           <aside class="calc-rail reveal">
             <div class="calc-preview">
               <div class="calc-preview__glow" aria-hidden="true"></div>
-              <span class="calc-preview__eyebrow">Aperçu en direct</span>
+              <span class="calc-preview__eyebrow">Live-Vorschau</span>
               <div class="calc-preview__orders">
-                <span class="calc-preview__orders-num" id="live-orders" data-pulse>20 000</span>
-                <span class="calc-preview__orders-label">commandes par an selon vos hypothèses</span>
+                <span class="calc-preview__orders-num" id="live-orders" data-pulse>20.000</span>
+                <span class="calc-preview__orders-label">Bestellungen pro Jahr bei Ihren Annahmen</span>
               </div>
 
               <div class="calc-preview__locked">
                 <div class="calc-preview__locked-row">
-                  <span>Coût total année 1</span>
-                  <span class="calc-preview__blur">RMB 0 000 000</span>
+                  <span>Gesamtkosten Jahr 1</span>
+                  <span class="calc-preview__blur">RMB 0.000.000</span>
                 </div>
                 <div class="calc-preview__locked-row">
-                  <span>Dépense réelle</span>
-                  <span class="calc-preview__blur">RMB 0 000 000</span>
+                  <span>Tatsächlich ausgegeben</span>
+                  <span class="calc-preview__blur">RMB 0.000.000</span>
                 </div>
                 <div class="calc-preview__locked-row">
-                  <span>Coût par commande</span>
+                  <span>Kosten je Bestellung</span>
                   <span class="calc-preview__blur">RMB 000</span>
                 </div>
                 <div class="calc-preview__lock" aria-hidden="true">
@@ -596,10 +655,11 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
               </div>
 
               <button type="submit" class="btn btn--primary calc-preview__cta" id="calc-submit">
-                Voir le détail complet
+                Vollständige Aufstellung ansehen
               </button>
               <p class="calc-preview__note">
-                Une adresse professionnelle débloque le détail complet, ici même. Vous pourrez ensuite l'exporter en PDF.
+                Eine geschäftliche E-Mail-Adresse genügt, dann steht die volle Aufstellung hier.
+                Exportieren können Sie sie anschließend als PDF.
               </p>
             </div>
           </aside>
@@ -612,67 +672,72 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         <div class="calc-print calc-print__head" aria-hidden="true">
           <img src="/Images/thechinapath-horizontal.png" alt="TheChinaPath" class="calc-print__logo" />
           <div class="calc-print__meta">
-            <span>Estimation du coût d'un canal Douyin cross-border</span>
+            <span>Kostenschätzung für einen Store auf JD Worldwide</span>
             <span>thechinapath.com · hello@thechinapath.com</span>
           </div>
         </div>
 
         <div class="calc-results__head reveal">
           <div class="calc-results__head-text">
-            <span class="eyebrow">Votre estimation</span>
-            <h2 class="calc-results__title">Détail des coûts de la première année</h2>
+            <span class="eyebrow">Ihre Schätzung</span>
+            <h2 class="calc-results__title">Kostenaufstellung für Jahr 1 und Jahr 2</h2>
             <p class="calc-results__sub" id="calc-results-sub"></p>
           </div>
           <button type="button" class="btn btn--secondary btn--sm calc-results__pdf" id="calc-pdf" data-export-pdf>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
-            Exporter en PDF
+            Als PDF exportieren
           </button>
         </div>
 
         <div class="calc-scenario reveal">
           <div class="calc-view-toolbar">
-            <div class="calc-period__tabs" role="tablist" aria-label="Année">
-              <button type="button" class="calc-period__tab is-active" data-year="1" role="tab" aria-selected="true">Année 1</button>
-              <button type="button" class="calc-period__tab" data-year="2" role="tab" aria-selected="false">Année 2</button>
+            <div class="calc-period__tabs" role="tablist" aria-label="Jahr">
+              <button type="button" class="calc-period__tab is-active" data-year="1" role="tab" aria-selected="true">Jahr 1</button>
+              <button type="button" class="calc-period__tab" data-year="2" role="tab" aria-selected="false">Jahr 2</button>
             </div>
           </div>
 
           <div class="calc-focus">
             <div class="calc-focus__hero">
-              <span class="calc-focus__hero-label" id="focus-hero-label">Coût total année 1</span>
+              <span class="calc-focus__hero-label" id="focus-hero-label">Gesamtkosten Jahr 1</span>
               <span class="calc-focus__hero-num" id="focus-total">RMB 0</span>
               <span class="calc-focus__hero-usd" id="focus-usd">$0</span>
             </div>
             <div class="calc-focus__stats">
               <div class="calc-stat calc-stat--pl" id="focus-pl1-wrap">
-                <span class="calc-stat__label" id="focus-pl1-label">Résultat</span>
-                <span class="calc-stat__value" id="focus-pl1">Ajouter la marge</span>
-                <span class="calc-stat__foot" id="focus-pl1-foot">selon votre marge brute</span>
+                <span class="calc-stat__label" id="focus-pl1-label">Betriebsergebnis</span>
+                <span class="calc-stat__value" id="focus-pl1">Marge eintragen</span>
+                <span class="calc-stat__foot" id="focus-pl1-foot">bei Ihrer Bruttomarge, ohne Aufbau</span>
               </div>
               <div class="calc-stat">
-                <span class="calc-stat__label">Marge nette du canal</span>
+                <span class="calc-stat__label">Netto-Kanalmarge</span>
                 <span class="calc-stat__value" id="focus-ncm">RMB 0</span>
-                <span class="calc-stat__foot" id="focus-ncm-foot">GMV moins dépense réelle, avant coût produit</span>
+                <span class="calc-stat__foot" id="focus-ncm-foot">GMV abzüglich laufender Kosten, vor Wareneinsatz</span>
+              </div>
+              <div class="calc-stat calc-stat--capex" id="focus-capex-wrap">
+                <span class="calc-stat__label">Abschreibung des Aufbaus</span>
+                <span class="calc-stat__value" id="focus-capex">RMB 0</span>
+                <span class="calc-stat__foot" id="focus-capex-foot">Anteil dieses Jahres am Aufbau</span>
               </div>
               <div class="calc-stat">
-                <span class="calc-stat__label">Dépense réelle</span>
+                <span class="calc-stat__label">Tatsächlich ausgegeben</span>
                 <span class="calc-stat__value" id="focus-sunk">RMB 0</span>
-                <span class="calc-stat__foot" id="focus-sunk-foot">après dépôts remboursables</span>
+                <span class="calc-stat__foot" id="focus-sunk-foot">nach Abzug der rückzahlbaren Kautionen</span>
               </div>
               <div class="calc-stat">
-                <span class="calc-stat__label">Coût par commande</span>
+                <span class="calc-stat__label">Kosten je Bestellung</span>
                 <span class="calc-stat__value" id="focus-cpo">RMB 0</span>
-                <span class="calc-stat__foot" id="focus-cpo-foot">face à votre panier moyen</span>
+                <span class="calc-stat__foot" id="focus-cpo-foot">gegenüber Ihrem Bestellwert</span>
               </div>
               <div class="calc-stat">
-                <span class="calc-stat__label">Coût en % du GMV</span>
-                <span class="calc-stat__value" id="focus-pct">0 %</span>
-                <span class="calc-stat__foot">la dépense rapportée au chiffre d'affaires</span>
+                <span class="calc-stat__label">Kosten in % des GMV</span>
+                <span class="calc-stat__value" id="focus-pct">0 %</span>
+                <span class="calc-stat__foot">Mittelverbrauch gegenüber Umsatz</span>
               </div>
               <div class="calc-stat" id="focus-be-wrap">
-                <span class="calc-stat__label">GMV de rentabilité</span>
-                <span class="calc-stat__value" id="focus-be">Ajouter la marge</span>
-                <span class="calc-stat__foot" id="focus-be-foot">pour couvrir l'année entière</span>
+                <span class="calc-stat__label">Break-even-GMV</span>
+                <span class="calc-stat__value" id="focus-be">Marge eintragen</span>
+                <span class="calc-stat__foot" id="focus-be-foot">um das ganze Jahr zu decken</span>
               </div>
             </div>
           </div>
@@ -681,19 +746,19 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
           <div class="calc-compo" id="calc-compo">
             <div class="calc-compo__head">
               <div class="calc-compo__head-text">
-                <h3 class="calc-compo__title">Où part l'argent</h3>
-                <p class="calc-compo__sub" id="compo-sub">Votre coût de première année, du plus élevé au plus faible.</p>
-                <div class="calc-period__tabs calc-period__tabs--sm" role="tablist" aria-label="Année">
-                  <button type="button" class="calc-period__tab is-active" data-year="1" role="tab" aria-selected="true">Année 1</button>
-                  <button type="button" class="calc-period__tab" data-year="2" role="tab" aria-selected="false">Année 2</button>
+                <h3 class="calc-compo__title">Wohin das Geld fließt</h3>
+                <p class="calc-compo__sub" id="compo-sub">Ihre Kosten im ersten Jahr, vom größten zum kleinsten Posten.</p>
+                <div class="calc-period__tabs calc-period__tabs--sm" role="tablist" aria-label="Jahr">
+                  <button type="button" class="calc-period__tab is-active" data-year="1" role="tab" aria-selected="true">Jahr 1</button>
+                  <button type="button" class="calc-period__tab" data-year="2" role="tab" aria-selected="false">Jahr 2</button>
                 </div>
               </div>
               <div class="calc-compo__total-wrap">
-                <span class="calc-compo__total-label" id="compo-total-label">Total année 1</span>
+                <span class="calc-compo__total-label" id="compo-total-label">Gesamt Jahr 1</span>
                 <span class="calc-compo__total" id="compo-total">RMB 0</span>
               </div>
             </div>
-            <div class="calc-compo__spine" id="compo-bar" role="img" aria-label="Composition des coûts">
+            <div class="calc-compo__spine" id="compo-bar" role="img" aria-label="Zusammensetzung der Kosten">
               <div class="calc-compo__tip" id="compo-tip" aria-hidden="true"></div>
             </div>
             <div class="calc-compo__cards" id="compo-cards"></div>
@@ -702,23 +767,23 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 
         <details class="calc-detail reveal">
           <summary class="calc-detail__summary">
-            <span>Voir le détail ligne par ligne</span>
+            <span>Die Aufstellung Posten für Posten ansehen</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
           </summary>
           <div class="calc-table-bar">
-            <span class="calc-table-bar__label">Détail complet année 1 et année 2</span>
+            <span class="calc-table-bar__label">Komplette Aufstellung für Jahr 1 und Jahr 2</span>
             <button type="button" class="btn btn--secondary btn--sm calc-table-bar__pdf" data-export-pdf>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
-              Exporter ce tableau en PDF
+              Tabelle als PDF exportieren
             </button>
           </div>
           <div class="calc-table-wrap">
             <table class="calc-table" id="calc-table">
               <thead>
                 <tr>
-                  <th scope="col">Poste de coût</th>
-                  <th scope="col">Année 1</th>
-                  <th scope="col">Année 2</th>
+                  <th scope="col">Kostenposition</th>
+                  <th scope="col">Jahr 1</th>
+                  <th scope="col">Jahr 2</th>
                 </tr>
               </thead>
               <tbody id="calc-table-body"></tbody>
@@ -727,15 +792,15 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         </details>
 
         <div class="calc-notes reveal">
-          <h3 class="calc-notes__title">Comment lire les chiffres</h3>
+          <h3 class="calc-notes__title">Die Zahlen lesen</h3>
           <ul class="calc-notes__list">
             {notes.map((n) => <li>{n}</li>)}
           </ul>
         </div>
 
         <div class="calc-cta reveal">
-          <p>Envie qu'on confronte ces hypothèses à votre propre cahier des charges ?</p>
-          <a class="btn btn--secondary" href="/fr/nous-contacter">Parler à notre équipe Chine</a>
+          <p>Sollen wir diese Annahmen gegen Ihr eigenes Briefing prüfen?</p>
+          <a class="btn btn--secondary" href="/de/kontakt">Sprechen Sie mit unserem China-Team</a>
         </div>
 
         {/* Print-only footer: contact + disclaimer on the exported PDF */}
@@ -745,20 +810,22 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             <span>thechinapath.com · hello@thechinapath.com</span>
           </div>
           <p class="calc-print__disclaimer">
-            Estimation de planification, pas un devis. Elle repose sur des références publiques et sur les
-            chiffres que vous avez saisis : la sortie n'est donc qu'indicative. TheChinaPath ne garantit
-            ni les totaux, ni les hypothèses, ni les calculs. Document d'information. Confrontez chaque
-            ligne à de vrais devis de votre DP, de votre entrepôt et de la plateforme avant de vous engager.
+            Planungsschätzung, kein Angebot. Grundlage sind öffentliche Benchmarks und die Werte, die
+            Sie eingetragen haben, das Ergebnis liefert also nur eine Größenordnung. TheChinaPath
+            übernimmt keine Gewähr für die Summen, die Annahmen oder die Rechnung. Dient allein der
+            Information. Prüfen Sie jede Position gegen echte Angebote Ihres TP, Ihres Lagers und der
+            Plattform, bevor Sie sich festlegen.
           </p>
         </div>
       </div>
 
       <p class="calc-disclaimer">
-        Une précision. Ces chiffres sont une estimation de planification, pas un devis. Le modèle
-        s'appuie sur des références publiques et sur les valeurs que vous saisissez : la sortie n'est
-        donc qu'indicative. Nous ne garantissons ni les totaux, ni les hypothèses, ni les calculs qui les
-        sous-tendent. Le tout reste une démonstration, rien de plus. Avant d'engager de l'argent réel,
-        confrontez chaque ligne à de vrais devis de votre DP, de votre entrepôt et de la plateforme.
+        Ein kurzer Hinweis. Diese Zahlen sind eine Planungsschätzung, kein Angebot. Das Modell läuft
+        auf öffentlichen Benchmarks und den Werten, die Sie eintippen, das Ergebnis liefert also nur
+        eine Größenordnung. Für die Summen, die Annahmen und die Rechnung dahinter übernehmen wir
+        keine Gewähr. Es steht hier zur Demonstration und zur Information, mehr nicht. Bevor Sie
+        echtes Geld einsetzen, prüfen Sie jede Position gegen die tatsächlichen Angebote Ihres TP,
+        Ihres Lagers und der Plattform.
       </p>
     </div>
   </section>
@@ -767,34 +834,35 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   <div class="calc-gate" id="calc-gate" hidden aria-hidden="true">
     <div class="calc-gate__backdrop" data-close></div>
     <div class="calc-gate__panel" role="dialog" aria-modal="true" aria-labelledby="calc-gate-title">
-      <button class="calc-gate__close" type="button" data-close aria-label="Fermer">×</button>
-      <span class="eyebrow">Une étape</span>
-      <h2 class="calc-gate__title" id="calc-gate-title">Débloquez votre détail complet</h2>
+      <button class="calc-gate__close" type="button" data-close aria-label="Schließen">×</button>
+      <span class="eyebrow">Ein Schritt</span>
+      <h2 class="calc-gate__title" id="calc-gate-title">Ihre vollständige Aufstellung freischalten</h2>
       <p class="calc-gate__lead">
-        Vos chiffres sont prêts. Indiquez votre e-mail professionnel et nous ouvrons le détail complet
-        directement sur cette page. Vous pourrez l'exporter en PDF une fois affiché.
+        Ihre Zahlen stehen. Tragen Sie Ihre geschäftliche E-Mail-Adresse ein, dann öffnen wir die
+        volle Aufstellung direkt hier auf der Seite. Steht sie erst einmal auf dem Schirm, geht sie
+        per Klick als PDF hinaus.
       </p>
 
       <form class="calc-gate__form" id="calc-gate-form" novalidate>
         <div class="calc-field">
-          <label class="calc-field__label" for="lead-name">Nom</label>
+          <label class="calc-field__label" for="lead-name">Name</label>
           <input class="calc-input calc-input--text" type="text" id="lead-name" name="name" autocomplete="name" required />
         </div>
         <div class="calc-field">
-          <label class="calc-field__label" for="lead-email">E-mail professionnel</label>
+          <label class="calc-field__label" for="lead-email">Geschäftliche E-Mail</label>
           <input class="calc-input calc-input--text" type="email" id="lead-email" name="email" autocomplete="email" required />
         </div>
         <div class="calc-field">
-          <label class="calc-field__label" for="lead-company">Entreprise</label>
+          <label class="calc-field__label" for="lead-company">Unternehmen</label>
           <input class="calc-input calc-input--text" type="text" id="lead-company" name="company" autocomplete="organization" />
         </div>
 
         <button type="submit" class="btn btn--primary calc-gate__submit" id="lead-submit">
-          Afficher mes résultats
+          Ergebnisse anzeigen
         </button>
         <p class="calc-gate__note">
-          Nous utilisons votre e-mail pour vous recontacter et, de temps en temps, partager des notes sur
-          la vente en Chine. Pas de spam, et vous pouvez vous désinscrire à tout moment.
+          Wir nutzen Ihre Adresse, um nachzufassen, und schicken hin und wieder Notizen zum Verkauf
+          in China. Kein Spam, und Sie können sich jederzeit abmelden.
         </p>
         <p class="calc-gate__status" id="lead-status" role="status" aria-live="polite"></p>
       </form>
@@ -819,9 +887,9 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     // ---- number helpers ----
-    const rmb0 = (n) => 'RMB ' + Math.round(n).toLocaleString('fr-FR');
-    const usd0 = (n) => '$' + Math.round(n).toLocaleString('fr-FR');
-    const pct1 = (n) => (n * 100).toFixed(1).replace('.', ',') + ' %';
+    const rmb0 = (n) => 'RMB ' + Math.round(n).toLocaleString('de-DE');
+    const usd0 = (n) => '$' + Math.round(n).toLocaleString('de-DE');
+    const pct1 = (n) => (n * 100).toFixed(1).replace('.', ',') + ' %';
 
     // ---------- scroll reveal ----------
     if ('IntersectionObserver' in window && !prefersReduced) {
@@ -874,7 +942,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const aov = parseFloat(document.getElementById('aov').value) || 0;
       const orders = aov > 0 ? gmv / aov : 0;
       if (liveOrders) {
-        liveOrders.textContent = Math.round(orders).toLocaleString('fr-FR');
+        liveOrders.textContent = Math.round(orders).toLocaleString('de-DE');
         if (!prefersReduced) {
           liveOrders.classList.remove('is-pulse');
           void liveOrders.offsetWidth;
@@ -885,42 +953,45 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     form.addEventListener('input', updatePreview);
     updatePreview();
 
-    // ---------- channel mix: check the three shares total 100% (no auto-edit) ----------
+    // ---------- channel mix: each year's three shares must total 100% (no auto-edit) ----------
     let mixIs100 = true;
-    (function () {
-      const ids = ['paidShare', 'kolShare', 'organicShare'];
-      const labels = ['média payant', 'KOL', 'organique'];
+    let mix2Is100 = true;
+    function wireMix(ids, noteId, setOk) {
+      const labels = ['Paid Media', 'KOL', 'Organisch'];
       const els = ids.map((id) => document.getElementById(id));
       if (els.some((e) => !e)) return;
-      const mixNote = document.getElementById('mix-note');
+      const mixNote = document.getElementById(noteId);
       function validateMix() {
         const v = els.map((e) => Math.max(0, Math.round(parseFloat(e.value) || 0)));
         const sum = v[0] + v[1] + v[2];
-        mixIs100 = sum === 100;
+        const ok = sum === 100;
+        setOk(ok);
         if (!mixNote) return;
         const chips = ids
           .map(
             (id, k) =>
               '<span class="calc-mix__seg calc-mix__seg--' +
-              id +
+              id.replace(/2$/, '') +
               '"><span class="calc-mix__dot"></span>' +
               v[k] +
-              ' % ' +
+              ' % ' +
               labels[k] +
               '</span>',
           )
           .join('');
-        const status = mixIs100
-          ? '<span class="calc-mix__status calc-mix__status--ok">Total 100 % ✓</span>'
-          : '<span class="calc-mix__status calc-mix__status--bad">Total ' +
+        const status = ok
+          ? '<span class="calc-mix__status calc-mix__status--ok">Summe 100 % ✓</span>'
+          : '<span class="calc-mix__status calc-mix__status--bad">Summe ' +
             sum +
-            ' %, doit faire 100 %</span>';
+            ' %, muss 100 % ergeben</span>';
         mixNote.innerHTML = chips + status;
-        mixNote.classList.toggle('calc-mix--bad', !mixIs100);
+        mixNote.classList.toggle('calc-mix--bad', !ok);
       }
       els.forEach((e) => e.addEventListener('input', validateMix));
       validateMix();
-    })();
+    }
+    wireMix(['paidShare', 'kolShare', 'organicShare'], 'mix-note', (ok) => (mixIs100 = ok));
+    wireMix(['paidShare2', 'kolShare2', 'organicShare2'], 'mix-note-2', (ok) => (mix2Is100 = ok));
 
     // ---------- advanced accordion ----------
     const advToggle = document.getElementById('advanced-toggle');
@@ -1052,23 +1123,23 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     async function refreshFx() {
       if (fxBtn) fxBtn.classList.add('is-spinning');
       if (fxNote) {
-        fxNote.textContent = 'Récupération du taux…';
+        fxNote.textContent = 'Aktueller Kurs wird geladen …';
         fxNote.className = 'calc-field__hint';
       }
       try {
         const res = await fetch('/api/fx-rate');
         const data = await res.json().catch(() => ({}));
-        if (!res.ok || !data.rate) throw new Error(data.error || 'No rate returned.');
+        if (!res.ok || !data.rate) throw new Error(data.error || 'Kein Kurs erhalten.');
         const fxInput = document.getElementById('fx');
         fxInput.value = data.rate;
         fxInput.dispatchEvent(new Event('input', { bubbles: true }));
         if (fxNote) {
-          fxNote.textContent = 'Taux du jour : 1 USD = ' + data.rate + ' RMB.';
+          fxNote.textContent = 'Aktueller Kurs: 1 USD = ' + data.rate + ' RMB.';
           fxNote.className = 'calc-field__hint calc-field__hint--ok';
         }
       } catch (err) {
         if (fxNote) {
-          fxNote.textContent = 'Impossible de récupérer le taux. Votre valeur est conservée.';
+          fxNote.textContent = 'Der aktuelle Kurs ließ sich nicht abrufen. Ihr Wert bleibt stehen.';
           fxNote.className = 'calc-field__hint calc-field__hint--err';
         }
       } finally {
@@ -1079,40 +1150,43 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     // Pull today's rate on load so the USD figure starts current.
     refreshFx();
 
-    // ---------- category picker sets deposit + tech fee ----------
+    // ---------- category picker sets deposit + commission + annual fee ----------
     const catSelect = document.getElementById('category');
     if (catSelect) {
       const impactBox = document.getElementById('category-impact');
       const impactDeposit = document.getElementById('impact-deposit');
       const impactFee = document.getElementById('impact-fee');
+      const impactAnnual = document.getElementById('impact-annual');
 
       function applyCategory(fillForm) {
         const opt = catSelect.options[catSelect.selectedIndex];
         const deposit = opt.getAttribute('data-deposit');
         const fee = opt.getAttribute('data-fee');
-        // Custom leaves both fields untouched, so there is nothing to preview.
-        if (!deposit && !fee) {
+        const annual = opt.getAttribute('data-annual');
+        // Custom leaves the fields untouched, so there is nothing to preview.
+        if (!deposit && !fee && !annual) {
           if (impactBox) impactBox.hidden = true;
           return;
         }
-        if (fillForm && deposit) {
-          const dep = document.getElementById('platformDeposit');
-          if (dep) {
-            dep.value = deposit;
-            dep.dispatchEvent(new Event('input', { bubbles: true }));
+        const setField = (id, val) => {
+          if (!val) return;
+          const el = document.getElementById(id);
+          if (el) {
+            el.value = val;
+            el.dispatchEvent(new Event('input', { bubbles: true }));
           }
-        }
-        if (fillForm && fee) {
-          const tf = document.getElementById('techFee');
-          if (tf) {
-            tf.value = fee;
-            tf.dispatchEvent(new Event('input', { bubbles: true }));
-          }
+        };
+        if (fillForm) {
+          setField('platformDeposit', deposit);
+          setField('techFee', fee);
+          setField('annualFee', annual);
         }
         if (impactBox) {
           if (impactDeposit && deposit)
-            impactDeposit.textContent = 'RMB ' + Number(deposit).toLocaleString('fr-FR');
-          if (impactFee && fee) impactFee.textContent = String(fee).replace('.', ',') + ' %';
+            impactDeposit.textContent = 'RMB ' + Number(deposit).toLocaleString('de-DE');
+          if (impactFee && fee) impactFee.textContent = fee + ' %';
+          if (impactAnnual && annual)
+            impactAnnual.textContent = 'RMB ' + Number(annual).toLocaleString('de-DE');
           impactBox.hidden = false;
         }
       }
@@ -1144,72 +1218,144 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const gmv = i.gmv || 0;
       const aov = i.aov || 1;
       const orders = gmv / aov;
+      const taxPayer = (document.getElementById('cbecTaxPayer') || {}).value || 'consumer';
+      const brandPaysTax = taxPayer === 'brand';
+      // Year 2 sells more: its stack scales off Year 1 GMV grown by the
+      // "Year 2 GMV growth" assumption.
+      const gmv2 = gmv * (1 + (i.gmvGrowth || 0));
+      const orders2 = gmv2 / aov;
 
       const setup = {
-        'Dépôt plateforme (remboursable)': i.platformDeposit || 0,
-        'Dépôt entrepôt sous douane (remboursable)': i.whDeposit || 0,
-        'Avance de taxe à l\'entrepôt sous douane': i.whTaxPrepay || 0,
-        'Enregistrement de la marque en Chine': i.trademark || 0,
-        'Contribution à la création de la boutique': i.brandSetup || 0,
+        'Plattformkaution (rückzahlbar)': i.platformDeposit || 0,
+        'Kaution im Bonded Warehouse (rückzahlbar)': i.whDeposit || 0,
+        'Steuervorauszahlung im Bonded Warehouse': i.whTaxPrepay || 0,
+        'Markenanmeldung in China': i.trademark || 0,
+        'Store-Aufbau und Launch-Content': i.brandSetup || 0,
       };
       const setupTotal = Object.values(setup).reduce((a, b) => a + b, 0);
 
-      // Fixed and per-order coefficients for break-even (Section 9 of the spec).
-      // Refundable capital is left out on purpose: it comes back on exit, so it
-      // is not a P&L cost.
-      const dpRetainerAnnual = (i.dpRetainer || 0) * 12;
-      // Service-side VAT (agency, DP, platform, ad-buying) is assumed to be baked
-      // into the DP fee quote, so it is not modelled as a separate line.
-      const fixedServices = (i.agentFee || 0) + dpRetainerAnnual + (i.coFund || 0);
-      const F = fixedServices + (i.trademark || 0) + (i.brandSetup || 0);
-      // Year 2 fixed cost: the one-time sunk setup (trademark + brand setup) is gone.
-      const F2 = fixedServices;
-      const vQ = (i.storage || 0) * 2 + (i.shipping || 0) + (i.returnRate || 0) * (i.returnHandling || 0);
+      // Setup splits in two. The deposits and the tax prepayment come back on
+      // exit, so they are working capital and never touch the P&L. The trademark
+      // and the store build are spent for good: a real cost, but one that earns
+      // over several years, so it is amortized rather than charged to Year 1.
+      const refundableCapex = (i.platformDeposit || 0) + (i.whDeposit || 0) + (i.whTaxPrepay || 0);
+      const sunkCapex = (i.trademark || 0) + (i.brandSetup || 0);
+      const amortYears = Math.max(1, Math.round(i.amortYears || 1));
+      const amortAnnual = sunkCapex / amortYears;
+      // A one-year write-off is fully expensed in Year 1, so Year 2 carries none.
+      const amortY1 = amortAnnual;
+      const amortY2 = amortYears >= 2 ? amortAnnual : 0;
+      const amortLabel =
+        'Abschreibung des Aufbaus (über ' +
+        amortYears +
+        (amortYears === 1 ? ' Jahr' : ' Jahre') +
+        ')';
+
+      // Fixed and per-order coefficients for break-even. The fixed side is the
+      // running services plus the year's amortization: break-even asks what GMV
+      // covers the annual bill the P&L actually carries.
+      const tpRetainerAnnual = (i.dpRetainer || 0) * 12;
+      // The platform annual fee, the TP retainer, the co-fund and any clearance
+      // agent are the fixed running cost. Service-side VAT on those fees is
+      // assumed baked into the quotes, so it is not modelled separately.
+      const fixedServices =
+        (i.agentFee || 0) + tpRetainerAnnual + (i.coFund || 0) + (i.annualFee || 0);
+      const F = fixedServices + amortY1;
+      const F2 = fixedServices + amortY2;
+      const vQ =
+        (i.storage || 0) * 2 +
+        (i.fulfillment || 0) +
+        (i.shipping || 0) +
+        (i.returnRate || 0) * (i.returnHandling || 0);
 
       function scenario(roas) {
-        const media = roas > 0 ? (gmv * (i.paidShare || 0)) / roas : 0;
-        const dpCommission = gmv * (i.dpCommission || 0);
-        const techFee = gmv * (i.techFee || 0);
-        const op = {
-          'Agent local (境内代理人)': i.agentFee || 0,
-          'Honoraires mensuels du DP (× 12)': dpRetainerAnnual,
-          'Commission du DP sur le GMV': dpCommission,
-          'Cofinancement de campagne': i.coFund || 0,
-          'Média payant (千川 Qianchuan)': media,
-          'Commission KOL': gmv * (i.kolShare || 0) * (i.kolCommission || 0),
-          'Frais de service technique de la plateforme': techFee,
-          'Stockage entrepôt sous douane': orders * (i.storage || 0) * 2,
-          'Livraison dernier kilomètre': orders * (i.shipping || 0),
-          'Traitement des retours': orders * (i.returnRate || 0) * (i.returnHandling || 0),
-          'Taxe à l\'import cross-border (综合税)': gmv * (i.cbecTax || 0),
-        };
-        const opTotal = Object.values(op).reduce((a, b) => a + b, 0);
-        const total = setupTotal + opTotal;
-        const refundable = (i.platformDeposit || 0) + (i.whDeposit || 0) + (i.whTaxPrepay || 0);
+        // One operating stack per year. Year 2 differs on three inputs: its own
+        // channel mix (paid vs KOL vs organic), a grown GMV, and the share of
+        // the setup write-off it still carries.
+        function opStack(paidShare, kolShare, g, o, amort) {
+          const media = roas > 0 ? (g * (paidShare || 0)) / roas : 0;
+          const tpCommission = g * (i.dpCommission || 0);
+          const commission = g * (i.techFee || 0);
+          const payment = g * (i.paymentFee || 0);
+          const vat = brandPaysTax ? g * (i.cbecTax || 0) : 0;
+          const op = {
+            'Monatlicher Retainer des TP (× 12)': tpRetainerAnnual,
+            'Provision des TP auf den GMV': tpCommission,
+            'Jahresgebühr der Plattform': i.annualFee || 0,
+            'Plattformprovision (运营支持服务费)': commission,
+            'Zahlungsgebühr': payment,
+            'Paid Media (JD 快车 und Display)': media,
+            'Provisionen für KOL und Livestream': g * (kolShare || 0) * (i.kolCommission || 0),
+            'Kampagnen-Cofunding': i.coFund || 0,
+            'Zollagent': i.agentFee || 0,
+            'Lagerung im Bonded Warehouse': o * (i.storage || 0) * 2,
+            'Fulfillment (Pick and Pack)': o * (i.fulfillment || 0),
+            'Zustellung (Last Mile)': o * (i.shipping || 0),
+            'Retourenbearbeitung': o * (i.returnRate || 0) * (i.returnHandling || 0),
+          };
+          // Consumer carries the VAT in most store setups, so it only lands on
+          // the brand P&L when the payer toggle says so.
+          if (brandPaysTax) op['Cross-Border-Einfuhrsteuer (综合税)'] = vat;
+
+          // Cash leaving the building this year, before the write-off.
+          const cashOp = Object.values(op).reduce((a, b) => a + b, 0);
+          // The write-off is a P&L cost with no cash behind it: the money was
+          // already paid at setup. It is charged here and nowhere else, so the
+          // cash column and the profit column never double-count it.
+          op[amortLabel] = amort;
+          const opTotal = cashOp + amort;
+
+          // %-of-GMV variable rate for this ROAS and mix.
+          const paidRate = roas > 0 ? (paidShare || 0) / roas : 0;
+          const vG =
+            (i.dpCommission || 0) +
+            (kolShare || 0) * (i.kolCommission || 0) +
+            (i.techFee || 0) +
+            (i.paymentFee || 0) +
+            (brandPaysTax ? i.cbecTax || 0 : 0) +
+            paidRate;
+
+          // Buckets for the composition bar
+          const buckets = [
+            { key: 'Aufbau', color: '#c8102e', value: setupTotal },
+            { key: 'Retainer und Provision des TP', color: '#e2683b', value: tpRetainerAnnual + tpCommission },
+            { key: 'Paid Media', color: '#f4874b', value: op['Paid Media (JD 快车 und Display)'] },
+            { key: 'KOL und Livestream', color: '#f4b740', value: op['Provisionen für KOL und Livestream'] },
+            { key: 'Plattform- und Zahlungsgebühren', color: '#7b61a8', value: op['Plattformprovision (运营支持服务费)'] + op['Zahlungsgebühr'] + (op['Jahresgebühr der Plattform'] || 0) },
+            { key: 'Cross-Border-Einfuhrsteuer', color: '#9b5bb0', value: vat },
+            { key: 'Logistik', color: '#3aa0c8', value: op['Lagerung im Bonded Warehouse'] + op['Fulfillment (Pick and Pack)'] + op['Zustellung (Last Mile)'] + op['Retourenbearbeitung'] },
+            { key: 'Zollagent und Cofunding', color: '#2fb67f', value: op['Zollagent'] + op['Kampagnen-Cofunding'] },
+          ];
+          return { op, opTotal, cashOp, vG, buckets };
+        }
+
+        const y1 = opStack(i.paidShare, i.kolShare, gmv, orders, amortY1);
+        const y2 = opStack(i.paidShare2, i.kolShare2, gmv2, orders2, amortY2);
+
+        const opTotal = y1.opTotal;
+        const vG = y1.vG;
+        // total = every RMB that leaves the building in Year 1: the setup cheque
+        // in full, plus the running cash. The write-off is excluded here, since
+        // the cash it represents is already in setupTotal.
+        const total = setupTotal + y1.cashOp;
+        const refundable = refundableCapex;
         const netSunk = total - refundable;
         const totalUSD = i.fx > 0 ? total / i.fx : 0;
         const costPerOrder = orders > 0 ? total / orders : 0;
         const totalPctGmv = gmv > 0 ? total / gmv : 0;
         const opPctGmv = gmv > 0 ? opTotal / gmv : 0;
 
-        // %-of-GMV variable rate for this ROAS (Section 9.3).
-        const paidRate = roas > 0 ? (i.paidShare || 0) / roas : 0;
-        const vG =
-          (i.dpCommission || 0) +
-          (i.kolShare || 0) * (i.kolCommission || 0) +
-          (i.techFee || 0) +
-          (i.cbecTax || 0) +
-          paidRate;
-
         let breakeven = null;
         let breakevenMonthly = null;
         let breakevenOrders = null;
         let contribution = null;
         if (i.grossMargin != null) {
-          contribution = gmv * i.grossMargin - total;
+          // Operating P&L: gross profit less the running cost and this year's
+          // share of the setup write-off.
+          contribution = gmv * i.grossMargin - opTotal;
           const denom = i.grossMargin - vG - (aov > 0 ? vQ / aov : 0);
           if (denom <= 0) {
-            breakeven = 'Marge trop faible';
+            breakeven = 'Marge zu niedrig';
           } else {
             breakeven = F / denom;
             breakevenMonthly = breakeven / 12;
@@ -1217,26 +1363,44 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
           }
         }
 
-        // Buckets for the composition bar
-        const buckets = [
-          { key: 'Investissement de départ', color: '#c8102e', value: setupTotal },
-          { key: 'Honoraires + commission DP', color: '#e2683b', value: op['Honoraires mensuels du DP (× 12)'] + op['Commission du DP sur le GMV'] },
-          { key: 'Média payant', color: '#f4874b', value: op['Média payant (千川 Qianchuan)'] },
-          { key: 'Commission KOL', color: '#f4b740', value: op['Commission KOL'] },
-          { key: 'Taxes et frais de plateforme', color: '#7b61a8', value: op['Taxe à l\'import cross-border (综合税)'] + op['Frais de service technique de la plateforme'] },
-          { key: 'Logistique', color: '#3aa0c8', value: op['Stockage entrepôt sous douane'] + op['Livraison dernier kilomètre'] + op['Traitement des retours'] },
-          { key: 'Agent + cofinancement', color: '#2fb67f', value: op['Agent local (境内代理人)'] + op['Cofinancement de campagne'] },
-        ];
-
-        return { op, opTotal, total, refundable, netSunk, totalUSD, costPerOrder, totalPctGmv, opPctGmv, vG, breakeven, breakevenMonthly, breakevenOrders, contribution, buckets };
+        return {
+          op: y1.op,
+          opTotal,
+          cashOp: y1.cashOp,
+          vG,
+          buckets: y1.buckets,
+          op2: y2.op,
+          opTotal2: y2.opTotal,
+          cashOp2: y2.cashOp,
+          vG2: y2.vG,
+          buckets2: y2.buckets,
+          total,
+          refundable,
+          netSunk,
+          totalUSD,
+          costPerOrder,
+          totalPctGmv,
+          opPctGmv,
+          breakeven,
+          breakevenMonthly,
+          breakevenOrders,
+          contribution,
+        };
       }
 
       return {
         orders,
         aov,
         gmv,
+        gmv2,
+        orders2,
         setup,
         setupTotal,
+        refundableCapex,
+        sunkCapex,
+        amortYears,
+        amortY1,
+        amortY2,
         F,
         F2,
         vQ,
@@ -1270,16 +1434,21 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     // to the browser session: a refresh keeps them in, a new session re-gates.
     let unlocked = false;
     try {
-      unlocked = sessionStorage.getItem('douyinCalcUnlocked') === '1';
+      unlocked = sessionStorage.getItem('jdCalcUnlocked') === '1';
     } catch (_) {
       /* private mode or storage disabled: fall back to in-session unlock */
     }
     // When they're already unlocked, the CTA is a re-run, not a locked gate.
     function paintCta() {
+      if (!unlocked) return;
       const cta = document.getElementById('calc-submit');
       const note = document.querySelector('.calc-preview__note');
-      if (unlocked && cta) cta.textContent = 'Mettre à jour mon détail';
-      if (unlocked && note) note.textContent = 'Modifiez une hypothèse ci-dessus, puis relancez. Pas besoin de vous réidentifier.';
+      // The blurred teaser only makes sense while the numbers are still hidden.
+      // Once they are on the page, the rail is just a re-run button.
+      const locked = document.querySelector('.calc-preview__locked');
+      if (locked) locked.remove();
+      if (cta) cta.textContent = 'Aufstellung aktualisieren';
+      if (note) note.textContent = 'Ändern Sie oben eine Annahme und rechnen Sie neu. Ein erneutes Eintragen Ihrer Daten ist nicht nötig.';
     }
     paintCta();
 
@@ -1290,106 +1459,147 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const i = state.i;
       const y2 = activeYear === '2';
 
-      // period-dependent figures. Year 2 drops the one-time setup, so its cost
-      // is the operating stack only, and no refundable capital is in play.
-      const cost = y2 ? s.opTotal : s.total;
+      // period-dependent figures, on a CASH basis: Year 2 writes no setup cheque
+      // and runs on its own channel mix, so its cash cost is the Year 2 running
+      // stack. The amortization is a P&L line and is deliberately not in here.
+      const cost = y2 ? s.cashOp2 : s.total;
       const costUSD = i.fx > 0 ? cost / i.fx : 0;
-      const cash = y2 ? s.opTotal : s.netSunk;
-      const cpo = r.orders > 0 ? cost / r.orders : 0;
-      const pctGmv = r.gmv > 0 ? cost / r.gmv : 0;
+      const cash = y2 ? s.cashOp2 : s.netSunk;
+      // Year 2 runs on grown GMV, so its per-order and %-of-GMV figures
+      // divide by the Year 2 volumes.
+      const gmvYear = y2 ? r.gmv2 : r.gmv;
+      const ordersYear = y2 ? r.orders2 : r.orders;
+      const cpo = ordersYear > 0 ? cost / ordersYear : 0;
+      const pctGmv = gmvYear > 0 ? cost / gmvYear : 0;
 
-      document.getElementById('focus-hero-label').textContent = y2 ? 'Coût total année 2' : 'Coût total année 1';
+      document.getElementById('focus-hero-label').textContent = y2
+        ? 'Gesamtkosten Jahr 2'
+        : 'Mittelabfluss Jahr 1 (Aufbau plus Betrieb)';
       animateCount(document.getElementById('focus-total'), cost, rmb0);
       animateCount(document.getElementById('focus-usd'), costUSD, usd0);
       animateCount(document.getElementById('focus-sunk'), cash, rmb0);
       document.getElementById('focus-sunk-foot').textContent = y2
-        ? 'coûts récurrents, dépôts déjà immobilisés'
-        : 'après dépôts remboursables';
+        ? 'laufende Kosten, Kautionen liegen bereits hinterlegt'
+        : 'nach Abzug der rückzahlbaren Kautionen';
       animateCount(document.getElementById('focus-cpo'), cpo, rmb0);
-      document.getElementById('focus-cpo-foot').textContent = 'face à ' + rmb0(i.aov || 0) + ' de panier moyen';
+      document.getElementById('focus-cpo-foot').textContent =
+        'gegenüber ' + rmb0(i.aov || 0) + ' Bestellwert';
       document.getElementById('focus-pct').textContent = pct1(pctGmv);
 
-      // breakeven, year aware (Year 2 fixed cost drops the sunk setup)
+      // breakeven, year aware (Year 2 drops the sunk setup and runs its own mix)
       const Fyear = y2 ? r.F2 : r.F;
       const be = document.getElementById('focus-be');
       const beWrap = document.getElementById('focus-be-wrap');
       const beFoot = document.getElementById('focus-be-foot');
       if (r.hasGm) {
-        const denom = i.grossMargin - s.vG - (r.aov > 0 ? r.vQ / r.aov : 0);
+        const denom = i.grossMargin - (y2 ? s.vG2 : s.vG) - (r.aov > 0 ? r.vQ / r.aov : 0);
         if (denom <= 0) {
-          be.textContent = 'Marge trop faible';
-          beFoot.textContent = 'relevez d\'abord votre marge';
+          be.textContent = 'Marge zu niedrig';
+          beFoot.textContent = 'zuerst die Marge anheben';
         } else {
           const beVal = Fyear / denom;
           be.textContent = rmb0(beVal);
           beFoot.textContent =
-            'environ ' +
+            'rund ' +
             rmb0(beVal / 12) +
-            '/mois · ' +
-            Math.round(r.aov > 0 ? beVal / r.aov : 0).toLocaleString('fr-FR') +
-            ' commandes/an';
+            ' pro Monat · ' +
+            Math.round(r.aov > 0 ? beVal / r.aov : 0).toLocaleString('de-DE') +
+            ' Bestellungen im Jahr';
         }
         beWrap.classList.remove('is-muted');
       } else {
-        be.textContent = 'Ajouter la marge';
-        beFoot.textContent = 'pour couvrir l\'année';
+        be.textContent = 'Marge eintragen';
+        beFoot.textContent = 'um das Jahr zu decken';
         beWrap.classList.add('is-muted');
       }
 
-      // single profit or loss card, switched by the year tab
+      // Operating profit or loss: gross profit less the running cost and this
+      // year's share of the setup write-off. The refundable deposits stay out.
+      const opYear = y2 ? s.opTotal2 : s.opTotal;
       const plEl = document.getElementById('focus-pl1');
       const plFoot = document.getElementById('focus-pl1-foot');
       const plWrap = document.getElementById('focus-pl1-wrap');
       plEl.classList.remove('is-profit', 'is-loss');
       if (r.hasGm) {
-        const grossProfit = (i.gmv || 0) * i.grossMargin;
-        const amount = y2 ? grossProfit - s.opTotal : s.contribution;
+        const grossProfit = gmvYear * i.grossMargin;
+        const amount = grossProfit - opYear;
         const sign = amount >= 0 ? '+' : '−';
         plEl.textContent = sign + rmb0(Math.abs(amount));
         plEl.classList.add(amount >= 0 ? 'is-profit' : 'is-loss');
         plFoot.textContent =
-          (amount >= 0 ? 'bénéfice. ' : 'perte. ') + (y2 ? 'sans investissement de départ' : 'selon votre marge brute');
+          (amount >= 0 ? 'Gewinn. ' : 'Verlust. ') +
+          'nach laufenden Kosten und Abschreibung des Aufbaus';
         plWrap.classList.remove('is-muted');
       } else {
-        plEl.textContent = 'Ajouter la marge';
-        plFoot.textContent = 'renseignez la marge brute par commande';
+        plEl.textContent = 'Marge eintragen';
+        plFoot.textContent = 'Bruttomarge je Bestellung setzen';
         plWrap.classList.add('is-muted');
       }
 
-      // Net channel margin: GMV less cash actually spent (refundable deposits
-      // excluded, they come back on exit), before product cost.
-      const ncm = (i.gmv || 0) - cash;
+      // Setup capex: the cheque is written in Year 1, but the P&L only carries
+      // the year's amortized share, which is what this card reports per year.
+      const capexEl = document.getElementById('focus-capex');
+      const capexFoot = document.getElementById('focus-capex-foot');
+      const capexWrap = document.getElementById('focus-capex-wrap');
+      const amortYear = y2 ? r.amortY2 : r.amortY1;
+      if (y2) {
+        animateCount(capexEl, amortYear, rmb0);
+        capexFoot.textContent =
+          amortYear > 0
+            ? 'abgeschriebener Anteil, kein Mittelabfluss. Der Aufbau wurde in Jahr 1 bezahlt'
+            : 'in Jahr 1 vollständig abgeschrieben, es bleibt nichts zu verrechnen';
+        capexWrap.classList.add('is-muted');
+      } else {
+        animateCount(capexEl, amortYear, rmb0);
+        capexFoot.textContent =
+          'Anteil dieses Jahres an ' +
+          rmb0(r.sunkCapex) +
+          ', abgeschrieben über ' +
+          r.amortYears +
+          (r.amortYears === 1 ? ' Jahr' : ' Jahre') +
+          '. ' +
+          rmb0(r.refundableCapex) +
+          ' an Kautionen kommen zurück';
+        capexWrap.classList.remove('is-muted');
+      }
+
+      // Net channel margin: GMV less the operating cost (which now carries the
+      // write-off), before product cost.
+      const ncm = gmvYear - opYear;
       const ncmEl = document.getElementById('focus-ncm');
       ncmEl.classList.remove('is-profit', 'is-loss');
       ncmEl.textContent = (ncm >= 0 ? '+' : '−') + rmb0(Math.abs(ncm));
       ncmEl.classList.add(ncm >= 0 ? 'is-profit' : 'is-loss');
-      document.getElementById('focus-ncm-foot').textContent = y2
-        ? 'GMV moins coûts récurrents, avant coût produit'
-        : 'GMV moins dépense réelle, avant coût produit';
+      document.getElementById('focus-ncm-foot').textContent =
+        'GMV abzüglich laufender Kosten, vor Wareneinsatz';
 
       document.getElementById('compo-sub').textContent = y2
-        ? 'Votre coût récurrent de l\'année 2, du plus élevé au plus faible.'
-        : 'Votre coût de première année, du plus élevé au plus faible.';
-      document.getElementById('compo-total-label').textContent = y2 ? 'Total année 2' : 'Total année 1';
-      const compoBuckets = y2 ? s.buckets.filter((b) => b.key !== 'Investissement de départ') : s.buckets;
-      renderCompo(compoBuckets, y2 ? s.opTotal : s.total);
+        ? 'Ihre laufenden Kosten in Jahr 2, vom größten zum kleinsten Posten.'
+        : 'Ihre Kosten im ersten Jahr, vom größten zum kleinsten Posten.';
+      document.getElementById('compo-total-label').textContent = y2 ? 'Gesamt Jahr 2' : 'Gesamt Jahr 1';
+      // The composition bar is a cash picture: Year 1 shows the setup cheque in
+      // full, Year 2 shows running cash only. The write-off is not a bucket.
+      const compoBuckets = y2 ? s.buckets2.filter((b) => b.key !== 'Aufbau') : s.buckets;
+      renderCompo(compoBuckets, y2 ? s.cashOp2 : s.total);
     }
 
     // line icons keyed by bucket, drawn in currentColor
     const BUCKET_ICONS = {
-      'Investissement de départ':
+      Aufbau:
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-4.5A2 2 0 0 1 6.4 3h11.2a2 2 0 0 1 1.9 1.5L21 9"/><path d="M3 9v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9"/><path d="M3 9h18"/><path d="M9 13h6"/></svg>',
-      'Honoraires + commission DP':
+      'Retainer und Provision des TP':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 20a7 7 0 0 1 14 0"/><path d="M16 6a3 3 0 0 1 0 6"/><path d="M20 20a6 6 0 0 0-4-5.6"/></svg>',
-      'Média payant':
+      'Paid Media':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg>',
-      'Commission KOL':
+      'KOL und Livestream':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h2l9 5V4L6 9H4a1 1 0 0 0-1 1z"/><path d="M18 9a4 4 0 0 1 0 6"/></svg>',
-      'Taxes et frais de plateforme':
+      'Plattform- und Zahlungsgebühren':
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>',
+      'Cross-Border-Einfuhrsteuer':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10a1 1 0 0 1 1 1v17l-3-2-3 2-3-2-3 2V4a1 1 0 0 1 1-1z"/><path d="M14.5 9.5l-5 5"/><circle cx="9.7" cy="9.7" r=".6"/><circle cx="14.3" cy="14.3" r=".6"/></svg>',
-      'Logistique':
+      Logistik:
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>',
-      'Agent + cofinancement':
+      'Zollagent und Cofunding':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>',
     };
 
@@ -1440,7 +1650,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             b.key +
             '</span><span class="cost-card__pct">' +
             b.pct.toFixed(0) +
-            ' %</span></div>' +
+            '%</span></div>' +
             '<span class="cost-card__value" data-val="' +
             b.value +
             '">' +
@@ -1498,8 +1708,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
           '</span><span class="calc-compo__tip-val">' +
           rmb0(item.value) +
           ' · ' +
-          item.pct.toFixed(1).replace('.', ',') +
-          ' %</span>';
+          item.pct.toFixed(1) +
+          '%</span>';
         tip.style.left = seg.offsetLeft + seg.offsetWidth / 2 + 'px';
         tip.classList.add('is-open');
       };
@@ -1545,49 +1755,71 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const plRow = (label, y1, y2) =>
         '<tr class="calc-table__total calc-table__pl"><td>' + label + '</td>' + plCell(y1) + plCell(y2) + '</tr>';
 
-      // Setup and refundable deposits are Year 1 only: they drop off in Year 2.
-      let rows = sectionRow('Investissement de départ, ponctuel');
+      // The setup cheque is written once, in Year 1. Part of it comes back on
+      // exit; the rest is amortized into the operating lines below.
+      let rows = sectionRow('Aufbau, einmalige Zahlung (Jahr 1)');
       Object.keys(r.setup).forEach((k) => {
         rows += dataRow(k, r.setup[k], null, false);
       });
-      rows += dataRow('Sous-total investissement', r.setupTotal, null, true);
+      rows += dataRow('Zwischensumme Aufbau', r.setupTotal, null, true);
+      rows += dataRow('Davon rückzahlbar beim Ausstieg (nie ein Aufwand in der GuV)', r.refundableCapex, null, false);
+      rows += dataRow(
+        'Davon endgültig ausgegeben (abgeschrieben über ' + r.amortYears + (r.amortYears === 1 ? ' Jahr' : ' Jahre') + ')',
+        r.sunkCapex,
+        null,
+        false,
+      );
 
-      // Operating cost recurs, so it fills both columns.
-      rows += sectionRow('Exploitation, annuel');
+      // Operating cost recurs, but Year 2 runs on its own channel mix and a
+      // grown GMV, so the sales-driven lines differ between the two columns.
+      // The last line is the write-off: a cost with no cash behind it.
+      rows += sectionRow('Betrieb, jährlich (die GuV)');
       Object.keys(s.op).forEach((k) => {
-        rows += dataRow(k, s.op[k], s.op[k], false);
+        rows += dataRow(k, s.op[k], s.op2[k], false);
       });
-      rows += dataRow('Sous-total exploitation', s.opTotal, s.opTotal, true);
+      rows += dataRow('Zwischensumme Betrieb', s.opTotal, s.opTotal2, true);
 
-      rows += sectionRow('Totaux');
-      rows += dataRow('Coût total (RMB)', s.total, s.opTotal, true);
-      rows += dataRow('Dont remboursable', s.refundable, null, false);
-      rows += dataRow('Dépense réelle', s.netSunk, s.opTotal, true);
+      rows += sectionRow('Cash-Sicht (ohne Abschreibung, sie bewegt kein Geld)');
+      rows += dataRow('Angenommener GMV', gmv, r.gmv2, false);
+      rows += dataRow('Mittelabfluss gesamt (Aufbau plus Betrieb)', s.total, s.cashOp2, true);
+      rows += dataRow('Tatsächlich ausgegeben, nach Rückzahlungen', s.netSunk, s.cashOp2, true);
       if (fx) {
         rows +=
-          '<tr class="calc-table__total"><td>Coût total (USD)</td><td>' +
+          '<tr class="calc-table__total"><td>Mittelabfluss gesamt (USD)</td><td>' +
           usd0(s.totalUSD) +
           '</td><td>' +
-          usd0(s.opTotal / fx) +
+          usd0(s.cashOp2 / fx) +
           '</td></tr>';
       }
-      rows += dataRow("Économie entre l'année 1 et l'année 2", s.total - s.opTotal, null, false);
-      rows += plRow('Marge nette du canal (avant coût produit)', gmv - s.netSunk, gmv - s.opTotal);
+      rows += dataRow('Ersparnis von Jahr 1 zu Jahr 2', s.total - s.cashOp2, null, false);
+      rows += plRow(
+        'Netto-Kanalmarge (GMV abzüglich Betriebskosten, vor Wareneinsatz)',
+        gmv - s.opTotal,
+        r.gmv2 - s.opTotal2,
+      );
 
-      rows += sectionRow('Résultat selon votre marge');
+      rows += sectionRow('Betriebsergebnis bei Ihrer Marge');
       if (r.hasGm) {
-        // Breakeven differs by year: Year 2 carries the lower fixed cost (F2), so
-        // its breakeven GMV is lower. Both share the same contribution margin.
-        const denom = i.grossMargin - s.vG - (r.aov > 0 ? r.vQ / r.aov : 0);
-        const beCell = (F) => (denom <= 0 ? 'Marge trop faible' : rmb0(F / denom));
+        // Break-even asks what GMV covers the running bill, so the fixed side is
+        // services only. The two years differ on their channel mix (vG vs vG2).
+        const beCell = (F, vG) => {
+          const denom = i.grossMargin - vG - (r.aov > 0 ? r.vQ / r.aov : 0);
+          return denom <= 0 ? 'Marge zu niedrig' : rmb0(F / denom);
+        };
         const grossProfit = gmv * i.grossMargin;
-        rows += dataRow('Marge brute (GMV × marge)', grossProfit, grossProfit, false);
-        rows += plRow('Résultat (bénéfice ou perte)', s.contribution, grossProfit - s.opTotal);
+        const grossProfit2 = r.gmv2 * i.grossMargin;
+        rows += dataRow('Rohertrag (GMV × Marge)', grossProfit, grossProfit2, false);
+        rows += dataRow('Abzüglich Betriebskosten (inkl. Abschreibung des Aufbaus)', s.opTotal, s.opTotal2, false);
+        rows += plRow('Betriebsergebnis (Gewinn oder Verlust)', s.contribution, grossProfit2 - s.opTotal2);
         rows +=
-          '<tr><td>GMV de rentabilité</td><td>' + beCell(r.F) + '</td><td>' + beCell(r.F2) + '</td></tr>';
+          '<tr><td>Break-even-GMV</td><td>' + beCell(r.F, s.vG) + '</td><td>' + beCell(r.F2, s.vG2) + '</td></tr>';
+        rows +=
+          '<tr class="calc-table__memo"><td>Nachrichtlich: rückzahlbare Kautionen, Mittelabfluss, aber nie ein Aufwand</td><td>' +
+          rmb0(r.refundableCapex) +
+          '</td><td><span class="calc-table__na">-</span></td></tr>';
       } else {
         rows +=
-          '<tr class="calc-table__prompt"><td colspan="3">Ajoutez votre marge brute ci-dessous (ouvrez « Ajuster chaque paramètre », puis l\'onglet « Votre rentabilité ») pour voir le résultat des années 1 et 2.</td></tr>';
+          '<tr class="calc-table__prompt"><td colspan="3">Tragen Sie unten Ihre Bruttomarge ein (auf „Alle Werte feinjustieren“ klicken, dann den Reiter „Ihre Kalkulation“ öffnen), um das Betriebsergebnis für Jahr 1 und Jahr 2 zu sehen.</td></tr>';
       }
       body.innerHTML = rows;
     }
@@ -1597,7 +1829,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const r = state.r;
       const roas = i.roas || 0;
       document.getElementById('calc-results-sub').textContent =
-        'Sur la base de ' + rmb0(i.gmv || 0) + ' de GMV, ' + Math.round(r.orders).toLocaleString('fr-FR') + ' commandes par an à ' + rmb0(i.aov || 0) + ' de panier moyen, ROAS ' + roas + 'x.';
+        'Grundlage: ' + rmb0(i.gmv || 0) + ' GMV, ' + Math.round(r.orders).toLocaleString('de-DE') + ' Bestellungen im Jahr bei ' + rmb0(i.aov || 0) + ' durchschnittlichem Bestellwert, ROAS ' + roas + 'x. Jahr 2 unterstellt ' + rmb0(r.gmv2) + ' GMV (+' + Math.round((i.gmvGrowth || 0) * 100) + ' %).';
       renderFocus();
       renderTable();
       results.hidden = false;
@@ -1635,21 +1867,26 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         const label = el.getAttribute('data-label') || el.name;
         const kind = el.getAttribute('data-kind');
         let val = el.value.trim();
-        if (val === '') val = '(non renseigné)';
-        else if (kind === 'money') val = 'RMB ' + Number(val).toLocaleString('fr-FR');
-        else if (kind === 'percent') val = String(val).replace('.', ',') + ' %';
+        if (val === '') val = '(nicht gesetzt)';
+        else if (kind === 'money') val = 'RMB ' + Number(val).toLocaleString('de-DE');
+        else if (kind === 'percent') val = val + ' %';
         inputs.push({ label, value: val });
       });
       const out = [
-        { label: 'Total année 1', value: rmb0(r.s.total) + ' / ' + usd0(r.s.totalUSD) },
-        { label: 'Total année 2', value: rmb0(r.s.opTotal) },
-        { label: 'Dépense réelle, année 1', value: rmb0(r.s.netSunk) },
-        { label: 'Coût par commande', value: rmb0(r.s.costPerOrder) },
-        { label: 'Coût en % du GMV', value: pct1(r.s.totalPctGmv) },
+        { label: 'Mittelabfluss gesamt, Jahr 1', value: rmb0(r.s.total) + ' / ' + usd0(r.s.totalUSD) },
+        { label: 'Aufbau, einmalige Zahlung', value: rmb0(r.setupTotal) + ', davon ' + rmb0(r.refundableCapex) + ' rückzahlbar' },
+        { label: 'Abschreibung des Aufbaus, pro Jahr', value: rmb0(r.amortY1) + ' über ' + r.amortYears + ' Jahre' },
+        { label: 'Betriebskosten Jahr 1 (inkl. Abschreibung)', value: rmb0(r.s.opTotal) },
+        { label: 'Betriebskosten Jahr 2 (inkl. Abschreibung)', value: rmb0(r.s.opTotal2) },
+        { label: 'Angenommener GMV in Jahr 2', value: rmb0(r.gmv2) },
+        { label: 'Tatsächlich ausgegeben, Jahr 1', value: rmb0(r.s.netSunk) },
+        { label: 'Kosten je Bestellung', value: rmb0(r.s.costPerOrder) },
+        { label: 'Kosten in % des GMV', value: pct1(r.s.totalPctGmv) },
       ];
       if (r.hasGm) {
         const be = typeof r.s.breakeven === 'string' ? r.s.breakeven : rmb0(r.s.breakeven);
-        out.push({ label: 'GMV de rentabilité', value: be });
+        out.push({ label: 'Betriebsergebnis Jahr 1 (inkl. Abschreibung)', value: rmb0(r.s.contribution) });
+        out.push({ label: 'Break-even-GMV', value: be });
       }
       return { inputs, results: out };
     }
@@ -1677,8 +1914,9 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      if (!mixIs100) {
-        const note = document.getElementById('mix-note');
+      const badMixNote = !mixIs100 ? 'mix-note' : !mix2Is100 ? 'mix-note-2' : null;
+      if (badMixNote) {
+        const note = document.getElementById(badMixNote);
         if (note) {
           note.classList.add('calc-mix--shake');
           note.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -1707,7 +1945,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const email = String(data.get('email') || '').trim();
       const company = String(data.get('company') || '').trim();
       if (!name || !EMAIL_RE.test(email)) {
-        gateStatus.textContent = 'Indiquez votre nom et une adresse e-mail professionnelle valide.';
+        gateStatus.textContent = 'Bitte tragen Sie Ihren Namen und eine gültige geschäftliche E-Mail-Adresse ein.';
         gateStatus.classList.add('calc-gate__status--error');
         return;
       }
@@ -1726,7 +1964,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       // Remember the visitor so re-runs never ask again.
       unlocked = true;
       try {
-        sessionStorage.setItem('douyinCalcUnlocked', '1');
+        sessionStorage.setItem('jdCalcUnlocked', '1');
       } catch (_) {
         /* storage disabled: unlock still holds for this session */
       }
@@ -2072,6 +2310,21 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     font-size: var(--fs-small);
     color: var(--bbg-text-muted);
     margin-top: 0.15rem;
+  }
+  /* one mix row per year */
+  .driver-group__row + .driver-group__row {
+    margin-top: var(--space-5);
+    padding-top: var(--space-5);
+    border-top: 1px dashed var(--bbg-border);
+  }
+  .driver-group__year {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bbg-blue);
+    margin-bottom: var(--space-3);
   }
   .driver-group__grid {
     display: grid;
@@ -2496,6 +2749,19 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   .calc-input:focus {
     outline: none;
   }
+  /* fixed FYI value (engagement period): shown, never edited */
+  .calc-input--static {
+    color: var(--bbg-text-muted);
+    background: var(--bbg-surface);
+    cursor: default;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  .calc-input--static::-webkit-outer-spin-button,
+  .calc-input--static::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
   .calc-select {
     width: 100%;
     padding: 0.7rem 2.2rem 0.7rem 0.8rem;
@@ -2763,6 +3029,12 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   .calc-table__na {
     color: var(--bbg-text-muted);
   }
+  /* memo line: shown for reference, deliberately not part of the result above it */
+  .calc-table__memo td {
+    color: var(--bbg-text-muted);
+    font-style: italic;
+    border-top: 1px dashed var(--bbg-border);
+  }
   /* Year 1 / Year 2 segmented control */
   .calc-period__tabs {
     display: inline-flex;
@@ -2928,6 +3200,11 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   .calc-stat--pl:has(.is-loss) {
     border-color: color-mix(in srgb, var(--bbg-danger, #d33a3a) 40%, var(--bbg-border));
     background: color-mix(in srgb, var(--bbg-danger, #d33a3a) 6%, var(--bbg-white));
+  }
+  /* the write-off is a neutral aside, not a win or a loss: never green or red */
+  .calc-stat--capex {
+    border-style: dashed;
+    background: var(--bbg-surface);
   }
 
   /* ---------- cost composition ---------- */

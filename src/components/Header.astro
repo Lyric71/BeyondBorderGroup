@@ -328,7 +328,7 @@ const switcherOthers = otherLocales.map((l) => ({
         </li>
       </ul>
       <div class="nav__drawer-cta">
-        <a href="/tools" class="btn btn--primary">Budget Calculator</a>
+        <a href={lp('/tools')} class="btn btn--primary">{t('nav.calculator')}</a>
         <a href={lp('/contact')} class="btn btn--primary">{t('nav.contact')}</a>
       </div>
     </nav>
@@ -382,7 +382,7 @@ const switcherOthers = otherLocales.map((l) => ({
           }
         </ul>
       </div>
-      <a href="/tools" class="btn btn--primary btn--sm nav__calc"> Budget Calculator </a>
+      <a href={lp('/tools')} class="btn btn--primary btn--sm nav__calc">{t('nav.calculator')}</a>
       <a href={lp('/contact')} class="btn btn--primary btn--sm nav__contact">{t('nav.contact')}</a>
       <button class="nav__burger" type="button" aria-label={t('nav.menu')} aria-expanded="false">
         <span></span><span></span><span></span>

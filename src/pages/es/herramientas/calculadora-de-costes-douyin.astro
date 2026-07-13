@@ -14,16 +14,16 @@ type Driver = {
 };
 
 const drivers: Driver[] = [
-  { id: 'gmv', label: 'Target Year 1 GMV', value: '2000000', kind: 'money', min: '200000', max: '10000000', step: '100000' },
-  { id: 'aov', label: 'Average order value', value: '250', kind: 'money', min: '20', max: '500', step: '5' },
-  { id: 'dpRetainer', label: 'DP monthly retainer', value: '30000', kind: 'money', min: '20000', max: '150000', step: '5000' },
-  { id: 'coFund', label: 'Campaign co-fund', value: '0', kind: 'money', min: '0', max: '300000', step: '10000' },
-  { id: 'dpCommission', label: 'DP commission on GMV', value: '5', kind: 'percent', min: '0', max: '12', step: '0.5' },
-  { id: 'paidShare', label: 'Paid media', value: '0', kind: 'percent', min: '0', max: '100', step: '1' },
-  { id: 'kolShare', label: 'KOLs', value: '100', kind: 'percent', min: '0', max: '100', step: '1' },
-  { id: 'organicShare', label: 'Organic', value: '0', kind: 'percent', min: '0', max: '100', step: '1' },
-  { id: 'kolCommission', label: 'KOL commission rate', value: '20', kind: 'percent', min: '0', max: '40', step: '1' },
-  { id: 'roas', label: 'ROAS (return on ad spend)', value: '1.3', kind: 'number', min: '0.5', max: '6', step: '0.1' },
+  { id: 'gmv', label: 'GMV objetivo del año 1', value: '2000000', kind: 'money', min: '200000', max: '10000000', step: '100000' },
+  { id: 'aov', label: 'Ticket medio', value: '250', kind: 'money', min: '20', max: '500', step: '5' },
+  { id: 'dpRetainer', label: 'Fee mensual del DP', value: '30000', kind: 'money', min: '20000', max: '150000', step: '5000' },
+  { id: 'coFund', label: 'Cofinanciación de campañas', value: '0', kind: 'money', min: '0', max: '300000', step: '10000' },
+  { id: 'dpCommission', label: 'Comisión del DP sobre el GMV', value: '5', kind: 'percent', min: '0', max: '12', step: '0.5' },
+  { id: 'paidShare', label: 'Medios pagados', value: '0', kind: 'percent', min: '0', max: '100', step: '1' },
+  { id: 'kolShare', label: 'KOL', value: '100', kind: 'percent', min: '0', max: '100', step: '1' },
+  { id: 'organicShare', label: 'Orgánico', value: '0', kind: 'percent', min: '0', max: '100', step: '1' },
+  { id: 'kolCommission', label: 'Comisión del KOL', value: '20', kind: 'percent', min: '0', max: '40', step: '1' },
+  { id: 'roas', label: 'ROAS (retorno de la inversión publicitaria)', value: '1.3', kind: 'number', min: '0.5', max: '6', step: '0.1' },
 ];
 
 // The three channel shares are grouped together and must always total 100%.
@@ -47,30 +47,30 @@ type Field = {
 // service fee, the only two model inputs that move with product category
 // (see Section 8 of the model spec). Fee is the mid of the published band.
 const categories: { value: string; label: string; deposit: string; fee: string }[] = [
-  { value: 'food-packaged', label: 'Packaged food (grain, oil, dry goods, seasoning)', deposit: '50000', fee: '4' },
-  { value: 'snacks', label: 'Snacks, nuts, specialty', deposit: '50000', fee: '5' },
-  { value: 'drinks', label: 'Coffee, oats, drink powders', deposit: '50000', fee: '5' },
-  { value: 'tea', label: 'Tea', deposit: '50000', fee: '2' },
-  { value: 'supplements', label: 'Dietary supplements', deposit: '50000', fee: '4' },
-  { value: 'tonics', label: "Traditional tonics (bird's nest and the like)", deposit: '200000', fee: '5' },
-  { value: 'alcohol', label: 'Alcohol', deposit: '100000', fee: '5' },
-  { value: 'skincare', label: 'Skincare', deposit: '100000', fee: '5' },
-  { value: 'makeup', label: 'Makeup, fragrance', deposit: '100000', fee: '5' },
-  { value: 'beauty-device', label: 'Beauty and personal-care devices', deposit: '100000', fee: '4' },
-  { value: 'personal-care', label: 'Personal care', deposit: '50000', fee: '4' },
-  { value: 'home', label: 'Home, bedding, kitchenware', deposit: '50000', fee: '3' },
-  { value: 'appliances', label: 'Small appliances', deposit: '75000', fee: '4' },
-  { value: '3c', label: '3C accessories, cameras', deposit: '50000', fee: '4' },
-  { value: 'phones', label: 'Phones, laptops, tablets', deposit: '100000', fee: '2.5' },
-  { value: 'apparel', label: 'Apparel, underwear', deposit: '100000', fee: '5' },
-  { value: 'footwear', label: 'Footwear', deposit: '100000', fee: '5' },
-  { value: 'bags', label: 'Bags, belts, accessories', deposit: '100000', fee: '5' },
-  { value: 'jewellery', label: 'Fashion jewellery', deposit: '100000', fee: '5.5' },
-  { value: 'sports', label: 'Sports, outdoor', deposit: '75000', fee: '5' },
-  { value: 'infant-formula', label: 'Infant formula', deposit: '100000', fee: '4' },
-  { value: 'baby', label: 'Baby products, toys', deposit: '50000', fee: '5' },
-  { value: 'pet', label: 'Pet food, supplies', deposit: '50000', fee: '5' },
-  { value: 'custom', label: 'Custom (set the deposit and fee by hand)', deposit: '', fee: '' },
+  { value: 'food-packaged', label: 'Alimentación envasada (cereales, aceite, secos, condimentos)', deposit: '50000', fee: '4' },
+  { value: 'snacks', label: 'Aperitivos, frutos secos, gourmet', deposit: '50000', fee: '5' },
+  { value: 'drinks', label: 'Café, avena, bebidas en polvo', deposit: '50000', fee: '5' },
+  { value: 'tea', label: 'Té', deposit: '50000', fee: '2' },
+  { value: 'supplements', label: 'Complementos alimenticios', deposit: '50000', fee: '4' },
+  { value: 'tonics', label: 'Tónicos tradicionales (nido de golondrina y similares)', deposit: '200000', fee: '5' },
+  { value: 'alcohol', label: 'Bebidas alcohólicas', deposit: '100000', fee: '5' },
+  { value: 'skincare', label: 'Cuidado de la piel', deposit: '100000', fee: '5' },
+  { value: 'makeup', label: 'Maquillaje y perfumería', deposit: '100000', fee: '5' },
+  { value: 'beauty-device', label: 'Aparatos de belleza e higiene personal', deposit: '100000', fee: '4' },
+  { value: 'personal-care', label: 'Higiene y cuidado personal', deposit: '50000', fee: '4' },
+  { value: 'home', label: 'Hogar, ropa de cama, menaje', deposit: '50000', fee: '3' },
+  { value: 'appliances', label: 'Pequeño electrodoméstico', deposit: '75000', fee: '4' },
+  { value: '3c', label: 'Accesorios 3C y cámaras', deposit: '50000', fee: '4' },
+  { value: 'phones', label: 'Móviles, portátiles, tabletas', deposit: '100000', fee: '2.5' },
+  { value: 'apparel', label: 'Moda y ropa interior', deposit: '100000', fee: '5' },
+  { value: 'footwear', label: 'Calzado', deposit: '100000', fee: '5' },
+  { value: 'bags', label: 'Bolsos, cinturones, complementos', deposit: '100000', fee: '5' },
+  { value: 'jewellery', label: 'Bisutería', deposit: '100000', fee: '5.5' },
+  { value: 'sports', label: 'Deporte y aire libre', deposit: '75000', fee: '5' },
+  { value: 'infant-formula', label: 'Leche infantil', deposit: '100000', fee: '4' },
+  { value: 'baby', label: 'Puericultura y juguetes', deposit: '50000', fee: '5' },
+  { value: 'pet', label: 'Alimentación y accesorios para mascotas', deposit: '50000', fee: '5' },
+  { value: 'custom', label: 'Personalizado (fije usted la fianza y la comisión)', deposit: '', fee: '' },
 ];
 
 const gicon = {
@@ -84,13 +84,13 @@ const gicon = {
 
 const groups: { title: string; icon: string; note?: string; fields: Field[] }[] = [
   {
-    title: 'Category',
+    title: 'Categoría',
     icon: gicon.platform,
-    note: 'Pick your product category. On 抖音全球购 the deposit and the tech service fee both move with the category, so this sets the two numbers below. Your DP may quote something different; override by hand if so.',
+    note: 'Elija su categoría de producto. En 抖音全球购, la fianza y la comisión por servicio técnico dependen de la categoría, así que esta selección rellena los dos campos de abajo. Si su DP le pasa otras cifras, sobrescríbalas a mano.',
     fields: [
       {
         id: 'category',
-        label: 'Product category (CBEC 抖音全球购)',
+        label: 'Categoría de producto (cross-border 抖音全球购)',
         value: 'food-packaged',
         kind: 'select',
         options: categories,
@@ -98,42 +98,42 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
     ],
   },
   {
-    title: 'FX and tax',
+    title: 'Divisa e impuestos',
     icon: gicon.tax,
     fields: [
-      { id: 'fx', label: 'USD / RMB exchange rate', value: '7.1', kind: 'number', step: '0.01', fx: true },
-      { id: 'cbecTax', label: 'Cross-border import tax (综合税)', value: '9.1', kind: 'percent', step: '0.1', hint: '13% VAT on 70% of retail value. Most food and home goods carry no consumption tax.' },
+      { id: 'fx', label: 'Tipo de cambio USD / RMB', value: '7.1', kind: 'number', step: '0.01', fx: true },
+      { id: 'cbecTax', label: 'Impuesto de importación cross-border (综合税)', value: '9.1', kind: 'percent', step: '0.1', hint: 'IVA del 13 % sobre el 70 % del precio de venta. La mayoría de la alimentación y del hogar no paga impuesto sobre consumos específicos.' },
     ],
   },
   {
-    title: 'Platform and DP',
+    title: 'Plataforma y DP',
     icon: gicon.platform,
     fields: [
-      { id: 'platformDeposit', label: 'Douyin 全球购 platform deposit', value: '50000', kind: 'money', hint: 'Refundable when the store closes. Set by your category above.' },
-      { id: 'techFee', label: 'Platform tech service fee', value: '4', kind: 'percent', step: '0.1', hint: 'Taken on each sale. Set by your category above.' },
-      { id: 'agentFee', label: 'Mainland 境内代理人 annual fee', value: '60000', kind: 'money' },
-      { id: 'trademark', label: 'CN trademark registration', value: '0', kind: 'money' },
-      { id: 'brandSetup', label: 'Brand setup contribution', value: '25000', kind: 'money' },
+      { id: 'platformDeposit', label: 'Fianza de la plataforma Douyin 全球购', value: '50000', kind: 'money', hint: 'Se devuelve al cerrar la tienda. La fija la categoría que ha elegido arriba.' },
+      { id: 'techFee', label: 'Comisión por servicio técnico de la plataforma', value: '4', kind: 'percent', step: '0.1', hint: 'Se aplica sobre cada venta. La fija la categoría que ha elegido arriba.' },
+      { id: 'agentFee', label: 'Agente en China continental (境内代理人), cuota anual', value: '60000', kind: 'money' },
+      { id: 'trademark', label: 'Registro de marca en China', value: '0', kind: 'money' },
+      { id: 'brandSetup', label: 'Aportación al montaje de la tienda', value: '25000', kind: 'money' },
     ],
   },
   {
-    title: 'Logistics',
+    title: 'Logística',
     icon: gicon.logistics,
     fields: [
-      { id: 'whDeposit', label: 'Bonded warehouse deposit', value: '100000', kind: 'money' },
-      { id: 'whTaxPrepay', label: 'Bonded warehouse tax prepayment', value: '300000', kind: 'money' },
-      { id: 'storage', label: 'Warehouse storage per unit per month', value: '0.8', kind: 'number', step: '0.1' },
-      { id: 'shipping', label: 'Last-mile shipping per parcel', value: '11', kind: 'money' },
-      { id: 'returnRate', label: 'Return rate', value: '5', kind: 'percent', step: '0.1' },
-      { id: 'returnHandling', label: 'Return handling per parcel', value: '15', kind: 'money' },
+      { id: 'whDeposit', label: 'Fianza del almacén en zona franca', value: '100000', kind: 'money' },
+      { id: 'whTaxPrepay', label: 'Anticipo de impuestos al almacén en zona franca', value: '300000', kind: 'money' },
+      { id: 'storage', label: 'Almacenaje por unidad y mes', value: '0.8', kind: 'number', step: '0.1' },
+      { id: 'shipping', label: 'Envío de última milla por paquete', value: '11', kind: 'money' },
+      { id: 'returnRate', label: 'Tasa de devoluciones', value: '5', kind: 'percent', step: '0.1' },
+      { id: 'returnHandling', label: 'Gestión de cada devolución', value: '15', kind: 'money' },
     ],
   },
   {
-    title: 'Your economics',
+    title: 'Su economía',
     icon: gicon.margin,
-    note: 'Add your gross margin per order to unlock profit or loss, breakeven GMV and contribution.',
+    note: 'Introduzca su margen bruto por pedido y se desbloquean el resultado, el GMV de equilibrio y la contribución.',
     fields: [
-      { id: 'grossMargin', label: 'Gross margin per order', value: '75', kind: 'percent' },
+      { id: 'grossMargin', label: 'Margen bruto por pedido', value: '75', kind: 'percent' },
     ],
   },
 ];
@@ -141,135 +141,135 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
 const steps = [
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18M7 15h4"/></svg>`,
-    title: 'You fund',
-    body: 'Platform and bonded deposits, trademark, launch content. The one-time money that gets the store live.',
+    title: 'Usted financia',
+    body: 'Fianzas de plataforma y de almacén en zona franca, registro de marca, contenido de lanzamiento. El dinero que se paga una sola vez para abrir la tienda.',
   },
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>`,
-    title: 'The DP runs',
-    body: 'A Douyin Partner (DP) owns the team and runs the storefront and livestreams day to day.',
+    title: 'El DP opera',
+    body: 'Un Douyin Partner (DP) pone el equipo y lleva la tienda y los directos, día tras día.',
   },
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M9 4c.4 2.4 2.2 4.2 4.6 4.6"/></svg>`,
-    title: 'Creators sell',
-    body: 'KOLs move the volume on commission. Paid media on 千川 warms the algorithm and fills the room.',
+    title: 'Los creadores venden',
+    body: 'Los KOL mueven el volumen a comisión. Los medios pagados en 千川 calientan el algoritmo y llenan la sala.',
   },
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 2 5-6"/></svg>`,
-    title: 'You measure',
-    body: 'The calculator totals every line, splits setup from running cost, and flags what comes back on exit.',
+    title: 'Usted mide',
+    body: 'La calculadora suma cada línea, separa la puesta en marcha del coste corriente y señala qué dinero vuelve a su bolsillo cuando salga.',
   },
 ];
 
 const perks = [
-  'Year 1 and Year 2, side by side',
-  'Full cost stack in RMB and USD',
-  'Cost per order vs your AOV',
-  'Refundable deposits vs real burn',
-  'Breakeven GMV from your margin',
+  'El año 1 y el año 2, uno al lado del otro',
+  'Toda la estructura de costes, en RMB y en USD',
+  'El coste por pedido frente a su ticket medio',
+  'Las fianzas recuperables frente a la caja quemada',
+  'El GMV de equilibrio a partir de su margen',
 ];
 
 // Plain-English explanation for every field, shown in the overlay bubble.
 const help: Record<string, string> = {
-  gmv: 'Gross Merchandise Value is the total sales you expect the Douyin channel to bring in over its first twelve months, before any cost is taken out. It is the top line the whole model scales from. If you are unsure, start with a conservative target and raise it once the channel proves itself.',
-  aov: 'The average amount a shopper spends in a single order. Take your expected first-year sales and divide by the number of orders and you land here. It decides how many parcels you ship, which in turn drives your logistics and returns cost.',
+  gmv: 'El Gross Merchandise Value es la venta total que espera generar el canal Douyin en sus primeros doce meses, antes de descontar ningún coste. Es la cifra de la que arranca todo el modelo. Si no lo tiene claro, empiece por un objetivo prudente y súbalo cuando el canal se lo haya ganado.',
+  aov: 'Lo que gasta de media un comprador en un solo pedido. Divida la venta prevista del primer año entre el número de pedidos y llega a esta cifra. De ella depende cuántos paquetes envía, y de ahí salen el coste logístico y el de las devoluciones.',
   paidShare:
-    "The slice of your sales pushed by paid advertising on Douyin's ad platform (千川 Qianchuan), rather than by organic reach or a creator's own following. Turn it up and you spend more on ads to hit the same sales number.",
+    'La parte de sus ventas que empuja la publicidad de pago en la plataforma de anuncios de Douyin (千川 Qianchuan), y no el alcance orgánico ni la comunidad de un creador. Si la sube, gasta más en anuncios para llegar a la misma cifra de ventas.',
   dpRetainer:
-    'The flat monthly fee your Douyin Partner charges to run the channel: the storefront, the livestream calendar, ad operations, customer service. Over a year it is usually the single biggest line. Retainers run from about 30,000 RMB a month for a lean setup to 100,000 for the international-brand tier.',
+    'El fee fijo mensual que le cobra su Douyin Partner por llevar el canal: la tienda, el calendario de directos, la operación publicitaria, la atención al cliente. En el cómputo del año suele ser la mayor partida de todas. Las tarifas arrancan en unos 30.000 RMB al mes para un montaje ligero y llegan a 100.000 en el escalón de marca internacional.',
   dpCommission:
-    'A percentage the DP takes on the sales they generate, on top of the retainer. The international-brand tier sits at 5 to 8 percent, and the industry caps it near 10 percent. This is separate from the paid media you fund directly.',
+    'Un porcentaje que se lleva el DP sobre las ventas que genera, además del fee. El escalón de marca internacional se mueve entre el 5 % y el 8 %, y el sector pone el techo cerca del 10 %. No incluye los medios pagados, que financia usted directamente.',
   category:
-    'Your product category on the cross-border store (抖音全球购). It sets two numbers: the platform deposit and the tech service fee, which both change by category. Pick the closest fit and the fields below fill in. Choose Custom to type your own.',
+    'Su categoría de producto en la tienda cross-border (抖音全球购). Fija dos cifras: la fianza de la plataforma y la comisión por servicio técnico, que cambian con cada categoría. Elija la que más se acerque y los campos de abajo se rellenan solos. Con Personalizado los escribe usted.',
   kolCommission:
-    'The cut a livestream host or short-video creator keeps on each sale they drive. It is pure commission, paid only when they actually sell. Food and agricultural products tend to sit around 8 to 20 percent; beauty and luxury run higher.',
+    'Lo que se queda un presentador de directos o un creador de vídeo corto por cada venta que consigue. Es comisión pura: solo cobra si vende. En alimentación y producto agrícola suele rondar el 8 % o el 20 %; en belleza y lujo sube.',
   roas:
-    'Return On Ad Spend is sales divided by ad spend. A ROAS of 1.5 means every 1 RMB of ads returns 1.5 RMB of sales. A fresh Douyin account tends to run low in the early months, then climbs as the algorithm learns who to show you to. Set the figure you expect to average across the first year.',
-  fx: 'How many RMB one US dollar buys. It only affects the USD figure shown at the end; every calculation runs in RMB. Use the refresh button to pull today’s live rate.',
+    'El Return On Ad Spend son las ventas divididas entre la inversión publicitaria. Un ROAS de 1,5 significa que cada RMB invertido en anuncios devuelve 1,5 RMB de ventas. Una cuenta nueva de Douyin rinde poco los primeros meses y luego remonta, a medida que el algoritmo aprende a quién enseñarle su producto. Ponga la cifra que espera promediar a lo largo del primer año.',
+  fx: 'Cuántos RMB compra un dólar. Solo afecta a la cifra en USD que aparece al final: todos los cálculos se hacen en RMB. Pulse el botón de actualizar para traer el tipo de cambio de hoy.',
   cbecTax:
-    'The cross-border e-commerce import tax on goods sold through the bonded model. It is 13 percent VAT charged on 70 percent of the retail price, which lands at 9.1 percent of sales for most food and home goods, since they carry no consumption tax. Cosmetics, perfume and alcohol trigger consumption tax and run higher, near 23 percent.',
+    'El impuesto de importación que grava el comercio electrónico cross-border en el modelo de almacén en zona franca. Es un IVA del 13 % aplicado sobre el 70 % del precio de venta, lo que deja un 9,1 % de la venta en la mayoría de la alimentación y del hogar, porque no pagan impuesto sobre consumos específicos. La cosmética, la perfumería y el alcohol sí lo pagan y se van cerca del 23 %.',
   platformDeposit:
-    'A security deposit Douyin holds while your store is open, returned when you close in good standing. The cross-border baseline is 50,000 RMB, and some categories run to 100,000 or 200,000. The category picker sets it for you.',
+    'Una fianza que Douyin retiene mientras su tienda está abierta y le devuelve cuando la cierra sin incidencias. La base cross-border son 50.000 RMB, y algunas categorías llegan a 100.000 o a 200.000. El selector de categoría se la fija.',
   techFee:
-    'A technology service fee Douyin charges on each sale, taken as a share of GMV. It runs from about 2 to 6 percent depending on the category. The category picker sets it for you.',
+    'La comisión por servicio técnico que Douyin cobra en cada venta, como porcentaje del GMV. Va del 2 % al 6 % según la categoría. El selector de categoría se la fija.',
   agentFee:
-    'The yearly fee for a mainland customs agent (境内代理人), the licensed local entity required to clear cross-border parcels in your name. It is a fixed annual cost, not tied to how much you sell.',
+    'La cuota anual del agente aduanero en China continental (境内代理人), la entidad local con licencia que despacha en su nombre los paquetes cross-border. Es un coste fijo del año: no depende de cuánto venda.',
   trademark:
-    'A one-time cost to register your brand as a trademark in China, in the relevant class. Doing it early protects the name before anyone else can claim it. Roughly 8,000 RMB for a single class.',
+    'El coste único de registrar su marca en China, en la clase que le corresponda. Hacerlo pronto protege el nombre antes de que otro lo reclame. Unos 8.000 RMB por una sola clase.',
   brandSetup:
-    'The upfront cost to build the store and its launch content: banner, product listings, a hero photo or video shoot. Paid once, at the start.',
+    'El coste inicial de montar la tienda y su contenido de lanzamiento: cabecera, fichas de producto, una sesión de foto o de vídeo. Se paga una vez, al principio.',
   coFund:
-    'A yearly joint fund on top of the DP retainer, earmarked for big moments: Double 11, a brand launch, a hero campaign. It pays for work that sits outside the day-to-day the retainer already covers.',
+    'Un fondo anual conjunto, aparte del fee del DP, reservado para los grandes momentos: el Doble 11, el lanzamiento de una marca, una campaña de peso. Cubre lo que queda fuera del día a día que el fee ya paga.',
   kolShare:
-    'The share of total sales that flows through creators (livestream and short video), rather than your own store page or ads. It sets how much KOL commission you end up paying.',
+    'La parte de la venta total que pasa por los creadores (directo y vídeo corto) en lugar de por su propia tienda o por los anuncios. Determina cuánta comisión de KOL acaba pagando.',
   organicShare:
-    'Sales that come without paid ads or a creator commission behind them: your own store page, search, followers, reposts. It is whatever is left after paid media and KOLs. A rising organic share is what makes Year 2 cheaper than Year 1.',
+    'La venta que llega sin anuncios de pago ni comisión de creador detrás: su tienda, el buscador, los seguidores, los reenvíos. Es lo que queda después de los medios pagados y de los KOL. Que esta parte crezca es lo que abarata el año 2 frente al año 1.',
   whDeposit:
-    'A refundable deposit the bonded warehouse holds as working capital while your goods are stored there. You get it back on exit, so it is recoverable rather than sunk.',
+    'Una fianza que el almacén en zona franca retiene como circulante mientras su mercancía está allí. La recupera cuando sale, así que es dinero recuperable, no dinero quemado.',
   whTaxPrepay:
-    'Money paid into the bonded warehouse up front against the import tax on goods as they clear. It is drawn down as shipments enter China, so treat it as money you get back later, not money you spend.',
+    'Dinero que se adelanta al almacén en zona franca a cuenta del impuesto de importación que devengará la mercancía al despacharse. Se va consumiendo según entran los envíos en China, así que trátelo como dinero que vuelve, no como gasto.',
   storage:
-    'What the bonded warehouse charges to store one unit for one month. Multiplied by your order volume and an average two-month dwell time, it becomes your storage bill.',
+    'Lo que cobra el almacén en zona franca por guardar una unidad durante un mes. Multiplicado por su volumen de pedidos y por una permanencia media de dos meses, sale su factura de almacenaje.',
   shipping:
-    "The last-mile delivery cost per parcel, from the bonded warehouse to the shopper's door. Multiply by the number of orders to get the yearly shipping bill.",
+    'El coste de la entrega de última milla por paquete, del almacén en zona franca a la puerta del comprador. Multiplíquelo por el número de pedidos y tiene la factura anual de transporte.',
   returnRate:
-    'The share of orders that come back. Food and CBEC returns are usually low, around five percent. Each return carries a handling cost.',
+    'La parte de los pedidos que vuelve. En alimentación y en cross-border las devoluciones suelen ser bajas, en torno al 5 %. Cada una arrastra un coste de gestión.',
   returnHandling:
-    'What it costs to process one returned parcel: inspection, then restocking or disposal. Multiplied by your return rate and order volume.',
+    'Lo que cuesta procesar un paquete devuelto: inspeccionarlo y luego reponerlo o destruirlo. Se multiplica por su tasa de devoluciones y por el volumen de pedidos.',
   grossMargin:
-    'Your gross margin on a single order: the share of the sale price left after the product cost, but before the Douyin channel costs in this model. The same percentage applies across every order. Enter it to unlock Year 1 and Year 2 profit or loss, breakeven GMV and your contribution.',
+    'Su margen bruto sobre un pedido: lo que queda del precio de venta después del coste del producto, pero antes de los costes del canal Douyin que recoge este modelo. El mismo porcentaje se aplica a todos los pedidos. Introdúzcalo y se desbloquean el resultado del año 1 y del año 2, el GMV de equilibrio y su contribución.',
 };
 
 const notes = [
-  'The model runs cross-border only, through the bonded warehouse (抖音全球购). The warehouse deposit and the tax prepayment come back to you on exit, so the calculator counts them as money you get back, not money you spend.',
-  'The DP retainer plus its commission on GMV is one of the largest lines, alongside paid media. Paid media on 千川 is funded by you directly into the ad account, not billed through the DP. That split is deliberate: DPs that try to front the ad spend tend to fall over.',
-  'The DP runs Douyin only. Their team cost sits inside the retainer and the commission, so there is no separate headcount line. KOL commission is billed apart, on sales the creators actually drive.',
-  'ROAS is one number here: what you expect the account to average across the first year. A fresh Douyin account runs low in the early months and climbs once the algorithm learns who to show you to, so set a blended figure rather than a best case.',
-  'The platform deposit and the tech service fee move with your product category. Pick a category in the fine-tune panel and both fill in from the published cross-border bands.',
-  'Year 1 usually runs at a loss at RMB 2M GMV. The table sets Year 1 against Year 2, when the one-time setup drops off. Breakeven GMV shows the scale you need for gross profit to cover the bill, and it often lands several times above a first-year target.',
+  'El modelo trabaja solo en cross-border, a través del almacén en zona franca (抖音全球购). La fianza del almacén y el anticipo de impuestos vuelven a usted cuando sale, así que la calculadora los cuenta como dinero recuperable, no como gasto.',
+  'El fee del DP y su comisión sobre el GMV forman una de las partidas más pesadas, junto con los medios pagados. La inversión en 千川 la mete usted directamente en la cuenta publicitaria: no la factura el DP. La separación es deliberada, porque los DP que intentan adelantar la inversión publicitaria acaban tropezando.',
+  'El DP se ocupa de Douyin y de nada más. El coste de su equipo va dentro del fee y de la comisión, así que no hay una línea de personal aparte. La comisión de KOL se factura al margen, sobre las ventas que los creadores traen de verdad.',
+  'Aquí el ROAS es una sola cifra: lo que espera que promedie la cuenta a lo largo del primer año. Una cuenta nueva de Douyin rinde poco los primeros meses y remonta cuando el algoritmo aprende a quién enseñarle su producto, así que ponga una media, no el mejor de los casos.',
+  'La fianza de la plataforma y la comisión por servicio técnico dependen de su categoría de producto. Elíjala en el panel de ajuste fino y las dos se rellenan con las bandas cross-border publicadas.',
+  'Con 2 millones de RMB de GMV, el año 1 casi siempre cierra en pérdidas. La tabla enfrenta el año 1 con el año 2, cuando la puesta en marcha ya no pesa. El GMV de equilibrio le dice a qué escala tiene que operar para que el margen bruto cubra la factura, y suele quedar varias veces por encima del objetivo del primer año.',
 ];
 
 const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>`;
 ---
 
 <Layout
-  title="Douyin cross-border cost calculator | TheChinaPath"
-  description="Estimate what it costs to set up and run a cross-border Douyin channel in China through a Douyin Partner. Works for any product category. Bonded logistics, KOL commission, paid media, tax and platform fees, in RMB and USD."
+  title="Calculadora de costes de Douyin cross-border | TheChinaPath"
+  description="Calcule lo que cuesta abrir y operar un canal Douyin cross-border en China con un Douyin Partner: almacén en zona franca, comisiones de KOL, medios pagados, impuestos y tasas de plataforma, en RMB y en USD."
 >
   <section
     class="tool-hero tool-hero--image"
     style="--tool-hero-img: url('/Images/tools/douyin-hero-bg.png')"
   >
     <div class="container tool-hero__inner">
-      <nav class="tool-hero__crumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a>
+      <nav class="tool-hero__crumbs" aria-label="Ruta de navegación">
+        <a href="/es">Inicio</a>
         <span aria-hidden="true">/</span>
-        <a href="/tools">Calculators</a>
+        <a href="/es/herramientas">Calculadoras</a>
         <span aria-hidden="true">/</span>
-        <span>Douyin cross-border cost</span>
+        <span>Coste de Douyin cross-border</span>
       </nav>
-      <span class="eyebrow">Cost calculator</span>
-      <h1 class="tool-hero__title">What a cross-border Douyin channel <em>really</em> costs.</h1>
+      <span class="eyebrow">Calculadora de costes</span>
+      <h1 class="tool-hero__title">Lo que <em>de verdad</em> cuesta un canal Douyin cross-border.</h1>
       <p class="tool-hero__lead">
-        Model the full first-year cost of selling on Douyin through a Douyin Partner (DP), on the
-        cross-border bonded model (抖音全球购). It works for any product category.
+        Calcule el coste completo del primer año vendiendo en Douyin con un Douyin Partner (DP), en
+        el modelo cross-border de almacén en zona franca (抖音全球购). Sirve para cualquier categoría de producto.
       </p>
       <div class="tool-hero__meta">
         <div class="tool-hero__meta-item">
-          <span class="tool-hero__meta-num">Year 1 + 2</span>
-          <span class="tool-hero__meta-label">the cost stack, side by side</span>
+          <span class="tool-hero__meta-num">Año 1 + 2</span>
+          <span class="tool-hero__meta-label">la estructura de costes, en paralelo</span>
         </div>
         <div class="tool-hero__meta-item">
           <span class="tool-hero__meta-num">RMB + USD</span>
-          <span class="tool-hero__meta-label">the full cost stack, both currencies</span>
+          <span class="tool-hero__meta-label">toda la estructura de costes, en las dos divisas</span>
         </div>
         <div class="tool-hero__meta-item">
-          <span class="tool-hero__meta-num">Live</span>
-          <span class="tool-hero__meta-label">every assumption is yours to change</span>
+          <span class="tool-hero__meta-num">En vivo</span>
+          <span class="tool-hero__meta-label">cada supuesto es suyo y lo puede cambiar</span>
         </div>
       </div>
       <a href="#calculator" class="tool-hero__scroll">
-        <span>Start calculating</span>
+        <span>Empezar a calcular</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
       </a>
     </div>
@@ -279,8 +279,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   <section class="section calc-how">
     <div class="container">
       <div class="calc-how__head reveal">
-        <span class="eyebrow">How the model works</span>
-        <h2 class="calc-how__title">Four moving parts, one first-year number.</h2>
+        <span class="eyebrow">Cómo funciona el modelo</span>
+        <h2 class="calc-how__title">Cuatro piezas móviles, una cifra para el primer año.</h2>
       </div>
       <ol class="calc-flow">
         {
@@ -294,7 +294,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         }
       </ol>
       <div class="calc-perks reveal">
-        <span class="calc-perks__label">What you get</span>
+        <span class="calc-perks__label">Lo que se lleva</span>
         <ul class="calc-perks__list">
           {
             perks.map((p) => (
@@ -313,8 +313,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   <section class="section section--alt calc" id="calculator">
     <div class="container">
       <div class="calc__head reveal">
-        <span class="eyebrow">The calculator</span>
-        <h2 class="calc__title">Set your assumptions</h2>
+        <span class="eyebrow">La calculadora</span>
+        <h2 class="calc__title">Fije sus supuestos</h2>
       </div>
 
       <form class="calc-form" id="calc-form" novalidate>
@@ -323,8 +323,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             {/* Key drivers as sliders */}
             <div class="calc-card calc-drivers reveal">
               <div class="calc-card__head">
-                <h3 class="calc-card__title">Key assumptions</h3>
-                <span class="calc-card__hint">The numbers that move the total most.</span>
+                <h3 class="calc-card__title">Supuestos clave</h3>
+                <span class="calc-card__hint">Los números que más mueven el total.</span>
               </div>
               <div class="calc-drivers__grid">
                 {
@@ -340,7 +340,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                               type="button"
                               class="calc-help__btn"
                               data-help={help[d.id]}
-                              aria-label={`What is ${d.label}?`}
+                              aria-label={`¿Qué es ${d.label}?`}
                             >
                               ?
                             </button>
@@ -381,8 +381,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
               {/* Channel mix: paid + KOL + organic, always 100% of GMV */}
               <div class="driver-group">
                 <div class="driver-group__head">
-                  <span class="driver-group__title">Channel mix</span>
-                  <span class="driver-group__sub">Where the sales come from. These three always add up to 100% of GMV.</span>
+                  <span class="driver-group__title">Mix de canales</span>
+                  <span class="driver-group__sub">De dónde salen las ventas. Estos tres suman siempre el 100 % del GMV.</span>
                 </div>
                 <div class="driver-group__grid">
                   {
@@ -398,7 +398,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                                 type="button"
                                 class="calc-help__btn"
                                 data-help={help[d.id]}
-                                aria-label={`What is ${d.label}?`}
+                                aria-label={`¿Qué es ${d.label}?`}
                               >
                                 ?
                               </button>
@@ -443,8 +443,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             <div class="calc-card calc-advanced reveal">
               <button type="button" class="calc-advanced__toggle" id="advanced-toggle" aria-expanded="false" aria-controls="advanced-body">
                 <span class="calc-advanced__toggle-text">
-                  <span class="calc-advanced__toggle-title">Fine-tune every input</span>
-                  <span class="calc-advanced__toggle-sub">Fees, deposits, logistics, tax and margin</span>
+                  <span class="calc-advanced__toggle-title">Ajuste fino de cada dato</span>
+                  <span class="calc-advanced__toggle-sub">Comisiones, fianzas, logística, impuestos y margen</span>
                 </span>
                 <span class="calc-advanced__chevron" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
@@ -452,7 +452,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
               </button>
               <div class="calc-advanced__body" id="advanced-body" hidden>
                 <div class="calc-advanced__body-inner">
-                <div class="calc-tabs" role="tablist" aria-label="Input groups">
+                <div class="calc-tabs" role="tablist" aria-label="Grupos de datos">
                   {
                     groups.map((group, idx) => (
                       <button
@@ -494,7 +494,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                                     type="button"
                                     class="calc-help__btn"
                                     data-help={help[f.id]}
-                                    aria-label={`What is ${f.label}?`}
+                                    aria-label={`¿Qué es ${f.label}?`}
                                   >
                                     ?
                                   </button>
@@ -535,19 +535,19 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                               {f.fx && (
                                 <button type="button" class="calc-fx-link" id="fx-refresh">
                                   <span class="calc-fx-link__icon" set:html={refreshIcon} />
-                                  Refresh live rate
+                                  Actualizar el tipo de cambio
                                 </button>
                               )}
                               {f.kind === 'select' && (
                                 <div class="calc-impact" id="category-impact" aria-live="polite" hidden>
-                                  <span class="calc-impact__label">Updates below</span>
+                                  <span class="calc-impact__label">Se actualiza abajo</span>
                                   <span class="calc-impact__chips">
                                     <span class="calc-impact__chip">
-                                      Platform deposit
+                                      Fianza de la plataforma
                                       <strong id="impact-deposit"></strong>
                                     </span>
                                     <span class="calc-impact__chip">
-                                      Tech service fee
+                                      Comisión por servicio técnico
                                       <strong id="impact-fee"></strong>
                                     </span>
                                   </span>
@@ -571,23 +571,23 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
           <aside class="calc-rail reveal">
             <div class="calc-preview">
               <div class="calc-preview__glow" aria-hidden="true"></div>
-              <span class="calc-preview__eyebrow">Live preview</span>
+              <span class="calc-preview__eyebrow">Vista en vivo</span>
               <div class="calc-preview__orders">
-                <span class="calc-preview__orders-num" id="live-orders" data-pulse>20,000</span>
-                <span class="calc-preview__orders-label">orders a year at your inputs</span>
+                <span class="calc-preview__orders-num" id="live-orders" data-pulse>20.000</span>
+                <span class="calc-preview__orders-label">pedidos al año con sus datos</span>
               </div>
 
               <div class="calc-preview__locked">
                 <div class="calc-preview__locked-row">
-                  <span>Total Year 1 cost</span>
-                  <span class="calc-preview__blur">RMB 0,000,000</span>
+                  <span>Coste total del año 1</span>
+                  <span class="calc-preview__blur">RMB 0.000.000</span>
                 </div>
                 <div class="calc-preview__locked-row">
-                  <span>Real cash spent</span>
-                  <span class="calc-preview__blur">RMB 0,000,000</span>
+                  <span>Gasto real de caja</span>
+                  <span class="calc-preview__blur">RMB 0.000.000</span>
                 </div>
                 <div class="calc-preview__locked-row">
-                  <span>Cost per order</span>
+                  <span>Coste por pedido</span>
                   <span class="calc-preview__blur">RMB 000</span>
                 </div>
                 <div class="calc-preview__lock" aria-hidden="true">
@@ -596,10 +596,11 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
               </div>
 
               <button type="submit" class="btn btn--primary calc-preview__cta" id="calc-submit">
-                See my full breakdown
+                Ver mi desglose completo
               </button>
               <p class="calc-preview__note">
-                One work email unlocks the full breakdown here. Export it to PDF when you're done.
+                Con un correo de trabajo se abre aquí mismo el desglose completo. Cuando lo tenga en
+                pantalla, puede exportarlo a PDF.
               </p>
             </div>
           </aside>
@@ -612,67 +613,67 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         <div class="calc-print calc-print__head" aria-hidden="true">
           <img src="/Images/thechinapath-horizontal.png" alt="TheChinaPath" class="calc-print__logo" />
           <div class="calc-print__meta">
-            <span>Cross-border Douyin channel cost estimate</span>
+            <span>Estimación de coste de un canal Douyin cross-border</span>
             <span>thechinapath.com · hello@thechinapath.com</span>
           </div>
         </div>
 
         <div class="calc-results__head reveal">
           <div class="calc-results__head-text">
-            <span class="eyebrow">Your estimate</span>
-            <h2 class="calc-results__title">First-year cost breakdown</h2>
+            <span class="eyebrow">Su estimación</span>
+            <h2 class="calc-results__title">Desglose de costes del primer año</h2>
             <p class="calc-results__sub" id="calc-results-sub"></p>
           </div>
           <button type="button" class="btn btn--secondary btn--sm calc-results__pdf" id="calc-pdf" data-export-pdf>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
-            Export to PDF
+            Exportar a PDF
           </button>
         </div>
 
         <div class="calc-scenario reveal">
           <div class="calc-view-toolbar">
-            <div class="calc-period__tabs" role="tablist" aria-label="Year">
-              <button type="button" class="calc-period__tab is-active" data-year="1" role="tab" aria-selected="true">Year 1</button>
-              <button type="button" class="calc-period__tab" data-year="2" role="tab" aria-selected="false">Year 2</button>
+            <div class="calc-period__tabs" role="tablist" aria-label="Año">
+              <button type="button" class="calc-period__tab is-active" data-year="1" role="tab" aria-selected="true">Año 1</button>
+              <button type="button" class="calc-period__tab" data-year="2" role="tab" aria-selected="false">Año 2</button>
             </div>
           </div>
 
           <div class="calc-focus">
             <div class="calc-focus__hero">
-              <span class="calc-focus__hero-label" id="focus-hero-label">Total Year 1 cost</span>
+              <span class="calc-focus__hero-label" id="focus-hero-label">Coste total del año 1</span>
               <span class="calc-focus__hero-num" id="focus-total">RMB 0</span>
               <span class="calc-focus__hero-usd" id="focus-usd">$0</span>
             </div>
             <div class="calc-focus__stats">
               <div class="calc-stat calc-stat--pl" id="focus-pl1-wrap">
-                <span class="calc-stat__label" id="focus-pl1-label">Profit or loss</span>
-                <span class="calc-stat__value" id="focus-pl1">Add margin</span>
-                <span class="calc-stat__foot" id="focus-pl1-foot">at your gross margin</span>
+                <span class="calc-stat__label" id="focus-pl1-label">Beneficio o pérdida</span>
+                <span class="calc-stat__value" id="focus-pl1">Añada su margen</span>
+                <span class="calc-stat__foot" id="focus-pl1-foot">con su margen bruto</span>
               </div>
               <div class="calc-stat">
-                <span class="calc-stat__label">Net channel margin</span>
+                <span class="calc-stat__label">Margen neto del canal</span>
                 <span class="calc-stat__value" id="focus-ncm">RMB 0</span>
-                <span class="calc-stat__foot" id="focus-ncm-foot">GMV less real cash spent, before product cost</span>
+                <span class="calc-stat__foot" id="focus-ncm-foot">GMV menos el gasto real de caja, antes del coste del producto</span>
               </div>
               <div class="calc-stat">
-                <span class="calc-stat__label">Real cash spent</span>
+                <span class="calc-stat__label">Gasto real de caja</span>
                 <span class="calc-stat__value" id="focus-sunk">RMB 0</span>
-                <span class="calc-stat__foot" id="focus-sunk-foot">after refundable deposits</span>
+                <span class="calc-stat__foot" id="focus-sunk-foot">descontadas las fianzas recuperables</span>
               </div>
               <div class="calc-stat">
-                <span class="calc-stat__label">Cost per order</span>
+                <span class="calc-stat__label">Coste por pedido</span>
                 <span class="calc-stat__value" id="focus-cpo">RMB 0</span>
-                <span class="calc-stat__foot" id="focus-cpo-foot">vs your AOV</span>
+                <span class="calc-stat__foot" id="focus-cpo-foot">frente a su ticket medio</span>
               </div>
               <div class="calc-stat">
-                <span class="calc-stat__label">Cost as % of GMV</span>
+                <span class="calc-stat__label">Coste sobre el GMV</span>
                 <span class="calc-stat__value" id="focus-pct">0%</span>
-                <span class="calc-stat__foot">burn against revenue</span>
+                <span class="calc-stat__foot">la quema frente a los ingresos</span>
               </div>
               <div class="calc-stat" id="focus-be-wrap">
-                <span class="calc-stat__label">Breakeven GMV</span>
-                <span class="calc-stat__value" id="focus-be">Add margin</span>
-                <span class="calc-stat__foot" id="focus-be-foot">to cover the full year</span>
+                <span class="calc-stat__label">GMV de equilibrio</span>
+                <span class="calc-stat__value" id="focus-be">Añada su margen</span>
+                <span class="calc-stat__foot" id="focus-be-foot">para cubrir el año entero</span>
               </div>
             </div>
           </div>
@@ -681,19 +682,19 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
           <div class="calc-compo" id="calc-compo">
             <div class="calc-compo__head">
               <div class="calc-compo__head-text">
-                <h3 class="calc-compo__title">Where the money goes</h3>
-                <p class="calc-compo__sub" id="compo-sub">Your first-year cost, ranked biggest to smallest.</p>
-                <div class="calc-period__tabs calc-period__tabs--sm" role="tablist" aria-label="Year">
-                  <button type="button" class="calc-period__tab is-active" data-year="1" role="tab" aria-selected="true">Year 1</button>
-                  <button type="button" class="calc-period__tab" data-year="2" role="tab" aria-selected="false">Year 2</button>
+                <h3 class="calc-compo__title">Adónde va el dinero</h3>
+                <p class="calc-compo__sub" id="compo-sub">Su coste del primer año, de mayor a menor.</p>
+                <div class="calc-period__tabs calc-period__tabs--sm" role="tablist" aria-label="Año">
+                  <button type="button" class="calc-period__tab is-active" data-year="1" role="tab" aria-selected="true">Año 1</button>
+                  <button type="button" class="calc-period__tab" data-year="2" role="tab" aria-selected="false">Año 2</button>
                 </div>
               </div>
               <div class="calc-compo__total-wrap">
-                <span class="calc-compo__total-label" id="compo-total-label">Total Year 1</span>
+                <span class="calc-compo__total-label" id="compo-total-label">Total del año 1</span>
                 <span class="calc-compo__total" id="compo-total">RMB 0</span>
               </div>
             </div>
-            <div class="calc-compo__spine" id="compo-bar" role="img" aria-label="Cost composition">
+            <div class="calc-compo__spine" id="compo-bar" role="img" aria-label="Composición del coste">
               <div class="calc-compo__tip" id="compo-tip" aria-hidden="true"></div>
             </div>
             <div class="calc-compo__cards" id="compo-cards"></div>
@@ -702,23 +703,23 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 
         <details class="calc-detail reveal">
           <summary class="calc-detail__summary">
-            <span>See the full line-by-line breakdown</span>
+            <span>Ver el desglose línea a línea</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
           </summary>
           <div class="calc-table-bar">
-            <span class="calc-table-bar__label">Full first-year and Year 2 breakdown</span>
+            <span class="calc-table-bar__label">Desglose completo del año 1 y del año 2</span>
             <button type="button" class="btn btn--secondary btn--sm calc-table-bar__pdf" data-export-pdf>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
-              Export this table to PDF
+              Exportar esta tabla a PDF
             </button>
           </div>
           <div class="calc-table-wrap">
             <table class="calc-table" id="calc-table">
               <thead>
                 <tr>
-                  <th scope="col">Cost item</th>
-                  <th scope="col">Year 1</th>
-                  <th scope="col">Year 2</th>
+                  <th scope="col">Partida</th>
+                  <th scope="col">Año 1</th>
+                  <th scope="col">Año 2</th>
                 </tr>
               </thead>
               <tbody id="calc-table-body"></tbody>
@@ -727,15 +728,15 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         </details>
 
         <div class="calc-notes reveal">
-          <h3 class="calc-notes__title">Reading the numbers</h3>
+          <h3 class="calc-notes__title">Cómo leer los números</h3>
           <ul class="calc-notes__list">
             {notes.map((n) => <li>{n}</li>)}
           </ul>
         </div>
 
         <div class="calc-cta reveal">
-          <p>Want us to pressure-test these assumptions against your own brief?</p>
-          <a class="btn btn--secondary" href="/contact">Talk to our China team</a>
+          <p>¿Quiere que pongamos a prueba estos supuestos con su propio brief?</p>
+          <a class="btn btn--secondary" href="/es/contacto">Hable con nuestro equipo en China</a>
         </div>
 
         {/* Print-only footer: contact + disclaimer on the exported PDF */}
@@ -745,20 +746,22 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             <span>thechinapath.com · hello@thechinapath.com</span>
           </div>
           <p class="calc-print__disclaimer">
-            Planning estimate, not a quote. Built from public benchmarks and the figures you entered,
-            so the output is directional only. TheChinaPath does not guarantee the totals, the
-            assumptions or the math. For information only. Check every line against real quotes from
-            your DP, your warehouse and the platform before you commit.
+            Estimación de planificación, no un presupuesto. Se construye con referencias públicas y
+            con las cifras que usted ha introducido, así que el resultado es orientativo.
+            TheChinaPath no garantiza los totales, ni los supuestos, ni los cálculos. Solo a título
+            informativo. Contraste cada línea con presupuestos reales de su DP, de su almacén y de la
+            plataforma antes de comprometerse.
           </p>
         </div>
       </div>
 
       <p class="calc-disclaimer">
-        A quick note. These figures are a planning estimate, not a quote. The model runs on public
-        benchmarks and the numbers you type in, so the output is directional only. We don't
-        guarantee the totals, the assumptions, or the math behind them. It's here for demo and info,
-        nothing more. Before you commit real money, check every line against actual quotes from your
-        DP, your warehouse, and the platform.
+        Un apunte rápido. Estas cifras son una estimación de planificación, no un presupuesto. El
+        modelo funciona con referencias públicas y con los números que usted teclea, así que el
+        resultado es orientativo. No garantizamos los totales, ni los supuestos, ni los cálculos que
+        hay detrás. Está aquí para enseñar y para informar, nada más. Antes de comprometer dinero de
+        verdad, contraste cada línea con presupuestos reales de su DP, de su almacén y de la
+        plataforma.
       </p>
     </div>
   </section>
@@ -767,34 +770,34 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   <div class="calc-gate" id="calc-gate" hidden aria-hidden="true">
     <div class="calc-gate__backdrop" data-close></div>
     <div class="calc-gate__panel" role="dialog" aria-modal="true" aria-labelledby="calc-gate-title">
-      <button class="calc-gate__close" type="button" data-close aria-label="Close">×</button>
-      <span class="eyebrow">One step</span>
-      <h2 class="calc-gate__title" id="calc-gate-title">Unlock your full breakdown</h2>
+      <button class="calc-gate__close" type="button" data-close aria-label="Cerrar">×</button>
+      <span class="eyebrow">Un paso más</span>
+      <h2 class="calc-gate__title" id="calc-gate-title">Desbloquee su desglose completo</h2>
       <p class="calc-gate__lead">
-        Your numbers are ready. Add your work email and we'll open the full breakdown right here on
-        the page. You can export it to PDF once it's on screen.
+        Sus números están listos. Déjenos su correo de trabajo y le abrimos el desglose completo aquí
+        mismo. Una vez en pantalla, puede exportarlo a PDF.
       </p>
 
       <form class="calc-gate__form" id="calc-gate-form" novalidate>
         <div class="calc-field">
-          <label class="calc-field__label" for="lead-name">Name</label>
+          <label class="calc-field__label" for="lead-name">Nombre</label>
           <input class="calc-input calc-input--text" type="text" id="lead-name" name="name" autocomplete="name" required />
         </div>
         <div class="calc-field">
-          <label class="calc-field__label" for="lead-email">Work email</label>
+          <label class="calc-field__label" for="lead-email">Correo de trabajo</label>
           <input class="calc-input calc-input--text" type="email" id="lead-email" name="email" autocomplete="email" required />
         </div>
         <div class="calc-field">
-          <label class="calc-field__label" for="lead-company">Company</label>
+          <label class="calc-field__label" for="lead-company">Empresa</label>
           <input class="calc-input calc-input--text" type="text" id="lead-company" name="company" autocomplete="organization" />
         </div>
 
         <button type="submit" class="btn btn--primary calc-gate__submit" id="lead-submit">
-          Show my results
+          Ver mis resultados
         </button>
         <p class="calc-gate__note">
-          We use your email to follow up and, now and then, share notes on selling in China. No
-          spam, and you can opt out any time.
+          Usamos su correo para hacer seguimiento y, de vez en cuando, mandarle apuntes sobre vender
+          en China. Sin spam, y puede darse de baja cuando quiera.
         </p>
         <p class="calc-gate__status" id="lead-status" role="status" aria-live="polite"></p>
       </form>
@@ -819,8 +822,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     // ---- number helpers ----
-    const rmb0 = (n) => 'RMB ' + Math.round(n).toLocaleString('en-US');
-    const usd0 = (n) => '$' + Math.round(n).toLocaleString('en-US');
+    const rmb0 = (n) => 'RMB ' + Math.round(n).toLocaleString('es-ES');
+    const usd0 = (n) => '$' + Math.round(n).toLocaleString('es-ES');
     const pct1 = (n) => (n * 100).toFixed(1) + '%';
 
     // ---------- scroll reveal ----------
@@ -874,7 +877,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const aov = parseFloat(document.getElementById('aov').value) || 0;
       const orders = aov > 0 ? gmv / aov : 0;
       if (liveOrders) {
-        liveOrders.textContent = Math.round(orders).toLocaleString('en-US');
+        liveOrders.textContent = Math.round(orders).toLocaleString('es-ES');
         if (!prefersReduced) {
           liveOrders.classList.remove('is-pulse');
           void liveOrders.offsetWidth;
@@ -889,7 +892,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     let mixIs100 = true;
     (function () {
       const ids = ['paidShare', 'kolShare', 'organicShare'];
-      const labels = ['paid media', 'KOLs', 'organic'];
+      const labels = ['medios pagados', 'KOL', 'orgánico'];
       const els = ids.map((id) => document.getElementById(id));
       if (els.some((e) => !e)) return;
       const mixNote = document.getElementById('mix-note');
@@ -911,10 +914,10 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
           )
           .join('');
         const status = mixIs100
-          ? '<span class="calc-mix__status calc-mix__status--ok">Total 100% ✓</span>'
+          ? '<span class="calc-mix__status calc-mix__status--ok">Total 100 % ✓</span>'
           : '<span class="calc-mix__status calc-mix__status--bad">Total ' +
             sum +
-            '%, needs to be 100%</span>';
+            ' %, tiene que sumar 100 %</span>';
         mixNote.innerHTML = chips + status;
         mixNote.classList.toggle('calc-mix--bad', !mixIs100);
       }
@@ -1052,23 +1055,23 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     async function refreshFx() {
       if (fxBtn) fxBtn.classList.add('is-spinning');
       if (fxNote) {
-        fxNote.textContent = 'Fetching the live rate…';
+        fxNote.textContent = 'Buscando el tipo de cambio…';
         fxNote.className = 'calc-field__hint';
       }
       try {
         const res = await fetch('/api/fx-rate');
         const data = await res.json().catch(() => ({}));
-        if (!res.ok || !data.rate) throw new Error(data.error || 'No rate returned.');
+        if (!res.ok || !data.rate) throw new Error(data.error || 'No se ha recibido ningún tipo de cambio.');
         const fxInput = document.getElementById('fx');
         fxInput.value = data.rate;
         fxInput.dispatchEvent(new Event('input', { bubbles: true }));
         if (fxNote) {
-          fxNote.textContent = 'Live rate: 1 USD = ' + data.rate + ' RMB.';
+          fxNote.textContent = 'Tipo de cambio en vivo: 1 USD = ' + data.rate + ' RMB.';
           fxNote.className = 'calc-field__hint calc-field__hint--ok';
         }
       } catch (err) {
         if (fxNote) {
-          fxNote.textContent = 'Could not fetch a live rate. Keeping your value.';
+          fxNote.textContent = 'No se ha podido cargar el tipo de cambio. Se mantiene su valor.';
           fxNote.className = 'calc-field__hint calc-field__hint--err';
         }
       } finally {
@@ -1111,7 +1114,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         }
         if (impactBox) {
           if (impactDeposit && deposit)
-            impactDeposit.textContent = 'RMB ' + Number(deposit).toLocaleString('en-US');
+            impactDeposit.textContent = 'RMB ' + Number(deposit).toLocaleString('es-ES');
           if (impactFee && fee) impactFee.textContent = fee + '%';
           impactBox.hidden = false;
         }
@@ -1146,11 +1149,11 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const orders = gmv / aov;
 
       const setup = {
-        'Platform deposit (refundable)': i.platformDeposit || 0,
-        'Bonded warehouse deposit (refundable)': i.whDeposit || 0,
-        'Bonded warehouse tax prepayment': i.whTaxPrepay || 0,
-        'CN trademark registration': i.trademark || 0,
-        'Brand setup contribution': i.brandSetup || 0,
+        'Fianza de la plataforma (recuperable)': i.platformDeposit || 0,
+        'Fianza del almacén en zona franca (recuperable)': i.whDeposit || 0,
+        'Anticipo de impuestos al almacén en zona franca': i.whTaxPrepay || 0,
+        'Registro de marca en China': i.trademark || 0,
+        'Aportación al montaje de la tienda': i.brandSetup || 0,
       };
       const setupTotal = Object.values(setup).reduce((a, b) => a + b, 0);
 
@@ -1171,17 +1174,17 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         const dpCommission = gmv * (i.dpCommission || 0);
         const techFee = gmv * (i.techFee || 0);
         const op = {
-          'Mainland agent (境内代理人)': i.agentFee || 0,
-          'DP monthly retainer (× 12)': dpRetainerAnnual,
-          'DP commission on GMV': dpCommission,
-          'Campaign co-fund': i.coFund || 0,
-          'Paid media (千川 Qianchuan)': media,
-          'KOL commission': gmv * (i.kolShare || 0) * (i.kolCommission || 0),
-          'Platform tech service fee': techFee,
-          'Bonded warehouse storage': orders * (i.storage || 0) * 2,
-          'Last-mile shipping': orders * (i.shipping || 0),
-          'Returns handling': orders * (i.returnRate || 0) * (i.returnHandling || 0),
-          'Cross-border import tax (综合税)': gmv * (i.cbecTax || 0),
+          'Agente en China continental (境内代理人)': i.agentFee || 0,
+          'Fee mensual del DP (× 12)': dpRetainerAnnual,
+          'Comisión del DP sobre el GMV': dpCommission,
+          'Cofinanciación de campañas': i.coFund || 0,
+          'Medios pagados (千川 Qianchuan)': media,
+          'Comisión de KOL': gmv * (i.kolShare || 0) * (i.kolCommission || 0),
+          'Comisión por servicio técnico de la plataforma': techFee,
+          'Almacenaje en zona franca': orders * (i.storage || 0) * 2,
+          'Envío de última milla': orders * (i.shipping || 0),
+          'Gestión de devoluciones': orders * (i.returnRate || 0) * (i.returnHandling || 0),
+          'Impuesto de importación cross-border (综合税)': gmv * (i.cbecTax || 0),
         };
         const opTotal = Object.values(op).reduce((a, b) => a + b, 0);
         const total = setupTotal + opTotal;
@@ -1209,7 +1212,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
           contribution = gmv * i.grossMargin - total;
           const denom = i.grossMargin - vG - (aov > 0 ? vQ / aov : 0);
           if (denom <= 0) {
-            breakeven = 'GM too low';
+            breakeven = 'Margen insuficiente';
           } else {
             breakeven = F / denom;
             breakevenMonthly = breakeven / 12;
@@ -1219,13 +1222,13 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 
         // Buckets for the composition bar
         const buckets = [
-          { key: 'Setup', color: '#c8102e', value: setupTotal },
-          { key: 'DP retainer + commission', color: '#e2683b', value: op['DP monthly retainer (× 12)'] + op['DP commission on GMV'] },
-          { key: 'Paid media', color: '#f4874b', value: op['Paid media (千川 Qianchuan)'] },
-          { key: 'KOL commission', color: '#f4b740', value: op['KOL commission'] },
-          { key: 'Tax and platform fee', color: '#7b61a8', value: op['Cross-border import tax (综合税)'] + op['Platform tech service fee'] },
-          { key: 'Logistics', color: '#3aa0c8', value: op['Bonded warehouse storage'] + op['Last-mile shipping'] + op['Returns handling'] },
-          { key: 'Agent + co-fund', color: '#2fb67f', value: op['Mainland agent (境内代理人)'] + op['Campaign co-fund'] },
+          { key: 'Puesta en marcha', color: '#c8102e', value: setupTotal },
+          { key: 'Fee + comisión del DP', color: '#e2683b', value: op['Fee mensual del DP (× 12)'] + op['Comisión del DP sobre el GMV'] },
+          { key: 'Medios pagados', color: '#f4874b', value: op['Medios pagados (千川 Qianchuan)'] },
+          { key: 'Comisión de KOL', color: '#f4b740', value: op['Comisión de KOL'] },
+          { key: 'Impuestos y tasas de plataforma', color: '#7b61a8', value: op['Impuesto de importación cross-border (综合税)'] + op['Comisión por servicio técnico de la plataforma'] },
+          { key: 'Logística', color: '#3aa0c8', value: op['Almacenaje en zona franca'] + op['Envío de última milla'] + op['Gestión de devoluciones'] },
+          { key: 'Agente + cofinanciación', color: '#2fb67f', value: op['Agente en China continental (境内代理人)'] + op['Cofinanciación de campañas'] },
         ];
 
         return { op, opTotal, total, refundable, netSunk, totalUSD, costPerOrder, totalPctGmv, opPctGmv, vG, breakeven, breakevenMonthly, breakevenOrders, contribution, buckets };
@@ -1278,8 +1281,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     function paintCta() {
       const cta = document.getElementById('calc-submit');
       const note = document.querySelector('.calc-preview__note');
-      if (unlocked && cta) cta.textContent = 'Update my breakdown';
-      if (unlocked && note) note.textContent = 'Change any assumption above, then re-run. No need to sign in again.';
+      if (unlocked && cta) cta.textContent = 'Actualizar mi desglose';
+      if (unlocked && note) note.textContent = 'Cambie cualquier supuesto de arriba y vuelva a calcular. No hace falta identificarse otra vez.';
     }
     paintCta();
 
@@ -1298,15 +1301,16 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const cpo = r.orders > 0 ? cost / r.orders : 0;
       const pctGmv = r.gmv > 0 ? cost / r.gmv : 0;
 
-      document.getElementById('focus-hero-label').textContent = y2 ? 'Total Year 2 cost' : 'Total Year 1 cost';
+      document.getElementById('focus-hero-label').textContent = y2 ? 'Coste total del año 2' : 'Coste total del año 1';
       animateCount(document.getElementById('focus-total'), cost, rmb0);
       animateCount(document.getElementById('focus-usd'), costUSD, usd0);
       animateCount(document.getElementById('focus-sunk'), cash, rmb0);
       document.getElementById('focus-sunk-foot').textContent = y2
-        ? 'running costs, deposits already parked'
-        : 'after refundable deposits';
+        ? 'costes corrientes, las fianzas ya están puestas'
+        : 'descontadas las fianzas recuperables';
       animateCount(document.getElementById('focus-cpo'), cpo, rmb0);
-      document.getElementById('focus-cpo-foot').textContent = 'vs ' + rmb0(i.aov || 0) + ' AOV';
+      document.getElementById('focus-cpo-foot').textContent =
+        'frente a un ticket medio de ' + rmb0(i.aov || 0);
       document.getElementById('focus-pct').textContent = pct1(pctGmv);
 
       // breakeven, year aware (Year 2 fixed cost drops the sunk setup)
@@ -1317,22 +1321,22 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       if (r.hasGm) {
         const denom = i.grossMargin - s.vG - (r.aov > 0 ? r.vQ / r.aov : 0);
         if (denom <= 0) {
-          be.textContent = 'GM too low';
-          beFoot.textContent = 'lift your margin first';
+          be.textContent = 'Margen insuficiente';
+          beFoot.textContent = 'suba antes su margen';
         } else {
           const beVal = Fyear / denom;
           be.textContent = rmb0(beVal);
           beFoot.textContent =
-            'about ' +
+            'unos ' +
             rmb0(beVal / 12) +
-            '/mo · ' +
-            Math.round(r.aov > 0 ? beVal / r.aov : 0).toLocaleString('en-US') +
-            ' orders/yr';
+            '/mes · ' +
+            Math.round(r.aov > 0 ? beVal / r.aov : 0).toLocaleString('es-ES') +
+            ' pedidos/año';
         }
         beWrap.classList.remove('is-muted');
       } else {
-        be.textContent = 'Add margin';
-        beFoot.textContent = 'to cover the year';
+        be.textContent = 'Añada su margen';
+        beFoot.textContent = 'para cubrir el año';
         beWrap.classList.add('is-muted');
       }
 
@@ -1348,11 +1352,12 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         plEl.textContent = sign + rmb0(Math.abs(amount));
         plEl.classList.add(amount >= 0 ? 'is-profit' : 'is-loss');
         plFoot.textContent =
-          (amount >= 0 ? 'profit. ' : 'loss. ') + (y2 ? 'setup gone' : 'at your gross margin');
+          (amount >= 0 ? 'beneficio. ' : 'pérdida. ') +
+          (y2 ? 'sin la puesta en marcha' : 'con su margen bruto');
         plWrap.classList.remove('is-muted');
       } else {
-        plEl.textContent = 'Add margin';
-        plFoot.textContent = 'set gross margin per order';
+        plEl.textContent = 'Añada su margen';
+        plFoot.textContent = 'fije el margen bruto por pedido';
         plWrap.classList.add('is-muted');
       }
 
@@ -1364,32 +1369,32 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       ncmEl.textContent = (ncm >= 0 ? '+' : '−') + rmb0(Math.abs(ncm));
       ncmEl.classList.add(ncm >= 0 ? 'is-profit' : 'is-loss');
       document.getElementById('focus-ncm-foot').textContent = y2
-        ? 'GMV less running costs, before product cost'
-        : 'GMV less real cash spent, before product cost';
+        ? 'GMV menos los costes corrientes, antes del coste del producto'
+        : 'GMV menos el gasto real de caja, antes del coste del producto';
 
       document.getElementById('compo-sub').textContent = y2
-        ? 'Your Year 2 running cost, ranked biggest to smallest.'
-        : 'Your first-year cost, ranked biggest to smallest.';
-      document.getElementById('compo-total-label').textContent = y2 ? 'Total Year 2' : 'Total Year 1';
-      const compoBuckets = y2 ? s.buckets.filter((b) => b.key !== 'Setup') : s.buckets;
+        ? 'Su coste corriente del año 2, de mayor a menor.'
+        : 'Su coste del primer año, de mayor a menor.';
+      document.getElementById('compo-total-label').textContent = y2 ? 'Total del año 2' : 'Total del año 1';
+      const compoBuckets = y2 ? s.buckets.filter((b) => b.key !== 'Puesta en marcha') : s.buckets;
       renderCompo(compoBuckets, y2 ? s.opTotal : s.total);
     }
 
     // line icons keyed by bucket, drawn in currentColor
     const BUCKET_ICONS = {
-      Setup:
+      'Puesta en marcha':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-4.5A2 2 0 0 1 6.4 3h11.2a2 2 0 0 1 1.9 1.5L21 9"/><path d="M3 9v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9"/><path d="M3 9h18"/><path d="M9 13h6"/></svg>',
-      'DP retainer + commission':
+      'Fee + comisión del DP':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 20a7 7 0 0 1 14 0"/><path d="M16 6a3 3 0 0 1 0 6"/><path d="M20 20a6 6 0 0 0-4-5.6"/></svg>',
-      'Paid media':
+      'Medios pagados':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg>',
-      'KOL commission':
+      'Comisión de KOL':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h2l9 5V4L6 9H4a1 1 0 0 0-1 1z"/><path d="M18 9a4 4 0 0 1 0 6"/></svg>',
-      'Tax and platform fee':
+      'Impuestos y tasas de plataforma':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10a1 1 0 0 1 1 1v17l-3-2-3 2-3-2-3 2V4a1 1 0 0 1 1-1z"/><path d="M14.5 9.5l-5 5"/><circle cx="9.7" cy="9.7" r=".6"/><circle cx="14.3" cy="14.3" r=".6"/></svg>',
-      Logistics:
+      'Logística':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>',
-      'Agent + co-fund':
+      'Agente + cofinanciación':
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>',
     };
 
@@ -1533,7 +1538,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const sectionRow = (label) =>
         '<tr class="calc-table__section"><td colspan="3">' + label + '</td></tr>';
       // A null year-2 value means the line does not recur (setup, deposits).
-      const cell = (v) => (v === null ? '<span class="calc-table__na">—</span>' : rmb0(v));
+      const cell = (v) => (v === null ? '<span class="calc-table__na">-</span>' : rmb0(v));
       const dataRow = (label, y1, y2, strong) =>
         '<tr' + (strong ? ' class="calc-table__total"' : '') + '><td>' + label + '</td><td>' + cell(y1) + '</td><td>' + cell(y2) + '</td></tr>';
       // signed profit/loss cell, coloured by sign
@@ -1546,48 +1551,48 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         '<tr class="calc-table__total calc-table__pl"><td>' + label + '</td>' + plCell(y1) + plCell(y2) + '</tr>';
 
       // Setup and refundable deposits are Year 1 only: they drop off in Year 2.
-      let rows = sectionRow('Setup, one-time');
+      let rows = sectionRow('Puesta en marcha, pago único');
       Object.keys(r.setup).forEach((k) => {
         rows += dataRow(k, r.setup[k], null, false);
       });
-      rows += dataRow('Subtotal setup', r.setupTotal, null, true);
+      rows += dataRow('Subtotal de puesta en marcha', r.setupTotal, null, true);
 
       // Operating cost recurs, so it fills both columns.
-      rows += sectionRow('Operating, annual');
+      rows += sectionRow('Costes operativos, anuales');
       Object.keys(s.op).forEach((k) => {
         rows += dataRow(k, s.op[k], s.op[k], false);
       });
-      rows += dataRow('Subtotal operating', s.opTotal, s.opTotal, true);
+      rows += dataRow('Subtotal operativo', s.opTotal, s.opTotal, true);
 
-      rows += sectionRow('Totals');
-      rows += dataRow('Total cost (RMB)', s.total, s.opTotal, true);
-      rows += dataRow('Of which refundable', s.refundable, null, false);
-      rows += dataRow('Real cash spent', s.netSunk, s.opTotal, true);
+      rows += sectionRow('Totales');
+      rows += dataRow('Coste total (RMB)', s.total, s.opTotal, true);
+      rows += dataRow('Del cual, recuperable', s.refundable, null, false);
+      rows += dataRow('Gasto real de caja', s.netSunk, s.opTotal, true);
       if (fx) {
         rows +=
-          '<tr class="calc-table__total"><td>Total cost (USD)</td><td>' +
+          '<tr class="calc-table__total"><td>Coste total (USD)</td><td>' +
           usd0(s.totalUSD) +
           '</td><td>' +
           usd0(s.opTotal / fx) +
           '</td></tr>';
       }
-      rows += dataRow('Year 1 to Year 2 saving', s.total - s.opTotal, null, false);
-      rows += plRow('Net channel margin (before product cost)', gmv - s.netSunk, gmv - s.opTotal);
+      rows += dataRow('Ahorro del año 1 al año 2', s.total - s.opTotal, null, false);
+      rows += plRow('Margen neto del canal (antes del coste del producto)', gmv - s.netSunk, gmv - s.opTotal);
 
-      rows += sectionRow('Profit or loss at your margin');
+      rows += sectionRow('Beneficio o pérdida con su margen');
       if (r.hasGm) {
         // Breakeven differs by year: Year 2 carries the lower fixed cost (F2), so
         // its breakeven GMV is lower. Both share the same contribution margin.
         const denom = i.grossMargin - s.vG - (r.aov > 0 ? r.vQ / r.aov : 0);
-        const beCell = (F) => (denom <= 0 ? 'GM too low' : rmb0(F / denom));
+        const beCell = (F) => (denom <= 0 ? 'Margen insuficiente' : rmb0(F / denom));
         const grossProfit = gmv * i.grossMargin;
-        rows += dataRow('Gross profit (GMV × margin)', grossProfit, grossProfit, false);
-        rows += plRow('Result (profit or loss)', s.contribution, grossProfit - s.opTotal);
+        rows += dataRow('Beneficio bruto (GMV × margen)', grossProfit, grossProfit, false);
+        rows += plRow('Resultado (beneficio o pérdida)', s.contribution, grossProfit - s.opTotal);
         rows +=
-          '<tr><td>Breakeven GMV</td><td>' + beCell(r.F) + '</td><td>' + beCell(r.F2) + '</td></tr>';
+          '<tr><td>GMV de equilibrio</td><td>' + beCell(r.F) + '</td><td>' + beCell(r.F2) + '</td></tr>';
       } else {
         rows +=
-          '<tr class="calc-table__prompt"><td colspan="3">Add your gross margin below (open "Fine-tune every input", then the "Your economics" tab) to see Year 1 and Year 2 profit or loss.</td></tr>';
+          '<tr class="calc-table__prompt"><td colspan="3">Introduzca su margen bruto más abajo (abra «Ajuste fino de cada dato» y luego la pestaña «Su economía») para ver el beneficio o la pérdida del año 1 y del año 2.</td></tr>';
       }
       body.innerHTML = rows;
     }
@@ -1597,7 +1602,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const r = state.r;
       const roas = i.roas || 0;
       document.getElementById('calc-results-sub').textContent =
-        'Based on ' + rmb0(i.gmv || 0) + ' GMV, ' + Math.round(r.orders).toLocaleString('en-US') + ' orders a year at ' + rmb0(i.aov || 0) + ' average order value, ROAS ' + roas + 'x.';
+        'Sobre ' + rmb0(i.gmv || 0) + ' de GMV, ' + Math.round(r.orders).toLocaleString('es-ES') + ' pedidos al año con un ticket medio de ' + rmb0(i.aov || 0) + ' y un ROAS de ' + roas + 'x.';
       renderFocus();
       renderTable();
       results.hidden = false;
@@ -1635,21 +1640,21 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         const label = el.getAttribute('data-label') || el.name;
         const kind = el.getAttribute('data-kind');
         let val = el.value.trim();
-        if (val === '') val = '(not set)';
-        else if (kind === 'money') val = 'RMB ' + Number(val).toLocaleString('en-US');
+        if (val === '') val = '(sin definir)';
+        else if (kind === 'money') val = 'RMB ' + Number(val).toLocaleString('es-ES');
         else if (kind === 'percent') val = val + '%';
         inputs.push({ label, value: val });
       });
       const out = [
-        { label: 'Total Year 1', value: rmb0(r.s.total) + ' / ' + usd0(r.s.totalUSD) },
-        { label: 'Total Year 2', value: rmb0(r.s.opTotal) },
-        { label: 'Real cash spent, Year 1', value: rmb0(r.s.netSunk) },
-        { label: 'Cost per order', value: rmb0(r.s.costPerOrder) },
-        { label: 'Cost as % of GMV', value: pct1(r.s.totalPctGmv) },
+        { label: 'Total del año 1', value: rmb0(r.s.total) + ' / ' + usd0(r.s.totalUSD) },
+        { label: 'Total del año 2', value: rmb0(r.s.opTotal) },
+        { label: 'Gasto real de caja, año 1', value: rmb0(r.s.netSunk) },
+        { label: 'Coste por pedido', value: rmb0(r.s.costPerOrder) },
+        { label: 'Coste sobre el GMV', value: pct1(r.s.totalPctGmv) },
       ];
       if (r.hasGm) {
         const be = typeof r.s.breakeven === 'string' ? r.s.breakeven : rmb0(r.s.breakeven);
-        out.push({ label: 'Breakeven GMV', value: be });
+        out.push({ label: 'GMV de equilibrio', value: be });
       }
       return { inputs, results: out };
     }
@@ -1707,7 +1712,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const email = String(data.get('email') || '').trim();
       const company = String(data.get('company') || '').trim();
       if (!name || !EMAIL_RE.test(email)) {
-        gateStatus.textContent = 'Please add your name and a valid work email.';
+        gateStatus.textContent = 'Indique su nombre y un correo de trabajo válido.';
         gateStatus.classList.add('calc-gate__status--error');
         return;
       }

@@ -1,0 +1,147 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const icon = {
+  douyin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M9 4c.4 2.4 2.2 4.2 4.6 4.6"/></svg>`,
+  cart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/><path d="M2 3h3l2.5 12.5a1 1 0 0 0 1 .8h8.4a1 1 0 0 0 1-.8L21 7H6"/></svg>`,
+  note: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l5 5v13a0 0 0 0 1 0 0H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M15 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>`,
+  chart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg>`,
+};
+
+const calculators = [
+  {
+    title: 'Coût d\'un canal Douyin cross-border',
+    desc: 'Ce que coûte une première année sur Douyin à une marque alimentaire ou santé, opérée par un Douyin Partner en cross-border sous douane : ouverture du canal, logistique, média payant, taxes et commission KOL. Résultat en RMB et en USD.',
+    href: '/fr/outils/calculateur-de-couts-douyin',
+    icon: icon.douyin,
+    tags: ['Douyin', 'Cross-border', 'Alimentaire et santé'],
+    live: true,
+  },
+  {
+    title: 'Ouvrir un flagship Tmall Global',
+    desc: 'Dépôt de garantie, redevance annuelle, commission par catégorie, honoraires et commission du TP, logistique sous douane, livraison et taxe à l\'import cross-border : le coût d\'une première année de flagship, en RMB et en USD.',
+    href: '/fr/outils/calculateur-de-couts-tmall-global',
+    icon: icon.cart,
+    tags: ['Tmall Global', 'Cross-border', 'Place de marché'],
+    live: true,
+  },
+  {
+    title: 'Ouvrir une boutique JD Worldwide',
+    desc: 'Dépôt de garantie et commission selon le palier de catégorie, les 0,9 % de frais de transaction, honoraires et commission du TP, logistique sous douane, livraison et taxe à l\'import cross-border. Le coût d\'une première année, en RMB et en USD.',
+    href: '/fr/outils/calculateur-de-couts-jd-worldwide',
+    icon: icon.cart,
+    tags: ['JD Worldwide', 'Cross-border', 'Place de marché'],
+    live: true,
+  },
+  {
+    title: 'Budget d\'une campagne Xiaohongshu',
+    desc: 'Cadrez un lancement sur Xiaohongshu : semis de notes, équilibre entre KOC et KOL, amplification payante et portée attendue pour un budget donné.',
+    icon: icon.note,
+    tags: ['Xiaohongshu', 'Campagnes'],
+    live: false,
+  },
+  {
+    title: 'Rendement d\'un live et d\'un programme KOL',
+    desc: 'Modélisez un live ou un programme KOL : cachet fixe, commission sur ventes, GMV généré, retours produits et contribution nette par session.',
+    icon: icon.chart,
+    tags: ['KOL', 'Live shopping'],
+    live: false,
+  },
+];
+---
+
+<Layout
+  title="Calculateurs de coûts pour vendre en Chine | TheChinaPath"
+  description="Douyin cross-border, Tmall Global, JD Worldwide, Xiaohongshu, KOL : des calculateurs gratuits qui chiffrent la première année d'une marque en Chine, en RMB et en USD, avant d'engager le budget."
+>
+  <section
+    class="tool-hero tool-hero--image"
+    style="--tool-hero-img: url('/Images/tools/tools-hero-bg.png')"
+  >
+    <div class="container tool-hero__inner">
+      <nav class="tool-hero__crumbs" aria-label="Fil d'Ariane">
+        <a href="/fr">Accueil</a>
+        <span aria-hidden="true">/</span>
+        <span>Calculateurs</span>
+      </nav>
+      <span class="eyebrow">Outils</span>
+      <h1 class="tool-hero__title">Chiffrez la Chine <em>avant</em> d'engager le budget.</h1>
+      <p class="tool-hero__lead">
+        Chaque modèle s'appuie sur la grille tarifaire réelle du canal, dépôt de garantie,
+        commission, logistique sous douane et taxe à l'import, plutôt que sur une estimation au
+        jugé. Posez vos hypothèses, le calculateur affiche le coût complet de la première année, en
+        RMB et en USD.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="tool-cards">
+        {
+          calculators.map((c) =>
+            c.live ? (
+              <a class="tool-card" href={c.href}>
+                <span class="tool-card__icon" set:html={c.icon} />
+                <h2 class="tool-card__title">{c.title}</h2>
+                <p class="tool-card__desc">{c.desc}</p>
+                <div class="tool-card__tags">
+                  {c.tags.map((t) => (
+                    <span class="tool-card__tag">{t}</span>
+                  ))}
+                </div>
+                <span class="tool-card__foot">Ouvrir le calculateur</span>
+              </a>
+            ) : (
+              <div class="tool-card tool-card--soon">
+                <span class="tool-card__pill">En chantier</span>
+                <span class="tool-card__icon" set:html={c.icon} />
+                <h2 class="tool-card__title">{c.title}</h2>
+                <p class="tool-card__desc">{c.desc}</p>
+                <div class="tool-card__tags">
+                  {c.tags.map((t) => (
+                    <span class="tool-card__tag">{t}</span>
+                  ))}
+                </div>
+                <span class="tool-card__foot" style="color: var(--bbg-text-muted); pointer-events: none;">
+                  Bientôt disponible
+                </span>
+              </div>
+            ),
+          )
+        }
+      </div>
+
+      <div class="tool-hub-cta">
+        <p>Il vous manque un modèle, ou vous en voulez un bâti sur vos propres chiffres ?</p>
+        <a class="btn btn--secondary" href="/fr/nous-contacter">Parler à notre équipe Chine</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .tool-hub-cta {
+    margin-top: var(--space-7);
+    padding: var(--space-5) var(--space-6);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .tool-hub-cta p {
+    margin: 0;
+    font-weight: 600;
+    color: var(--bbg-ink);
+  }
+  .tool-card__foot::after {
+    /* Coming-soon cards keep no arrow. */
+  }
+  .tool-card--soon .tool-card__foot::after {
+    content: '';
+  }
+</style>

@@ -42,6 +42,7 @@ export const ui = {
     // Header / nav
     'nav.aria.primary': 'Primary',
     'nav.contact': 'Contact',
+    'nav.calculator': 'Budget Calculator',
     'nav.menu': 'Menu',
     'nav.allServices': 'All {section} services',
     'nav.opensInNewTab': '{name} (opens in new tab): {desc}',
@@ -141,6 +142,7 @@ export const ui = {
     // Header / nav
     'nav.aria.primary': 'Principale',
     'nav.contact': 'Contact',
+    'nav.calculator': 'Calculateur de budget',
     'nav.menu': 'Menu',
     'nav.allServices': 'Voir tous les services',
     'nav.opensInNewTab': "{name} : {desc}. S'ouvre dans un nouvel onglet.",
@@ -252,6 +254,7 @@ export const ui = {
     // Header / nav
     'nav.aria.primary': 'Hauptnavigation',
     'nav.contact': 'Kontakt',
+    'nav.calculator': 'Budgetrechner',
     'nav.menu': 'Menü',
     'nav.allServices': 'Alle Leistungen ansehen',
     'nav.opensInNewTab': '{name}: {desc}. Öffnet in einem neuen Tab.',
@@ -361,6 +364,7 @@ export const ui = {
     // Header / nav
     'nav.aria.primary': 'Principal',
     'nav.contact': 'Contacto',
+    'nav.calculator': 'Calculadora de presupuesto',
     'nav.menu': 'Menú',
     'nav.allServices': 'Ver todos los servicios',
     'nav.opensInNewTab': '{name}: {desc}. Se abre en una pestaña nueva.',

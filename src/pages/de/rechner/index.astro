@@ -1,0 +1,146 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const icon = {
+  douyin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M9 4c.4 2.4 2.2 4.2 4.6 4.6"/></svg>`,
+  cart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/><path d="M2 3h3l2.5 12.5a1 1 0 0 0 1 .8h8.4a1 1 0 0 0 1-.8L21 7H6"/></svg>`,
+  note: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l5 5v13a0 0 0 0 1 0 0H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M15 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>`,
+  chart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg>`,
+};
+
+const calculators = [
+  {
+    title: 'Douyin Cross-Border: Aufbau und Betrieb',
+    desc: 'Was das erste Jahr auf Douyin eine Lebensmittel- oder Gesundheitsmarke kostet, wenn ein Douyin Partner den Kanal im Bonded-Cross-Border-Modell führt: Kanalaufbau, Logistik, Media, Steuern und KOL-Provisionen, in RMB und USD.',
+    href: '/de/rechner/douyin-kostenrechner',
+    icon: icon.douyin,
+    tags: ['Douyin', 'Cross-Border', 'Lebensmittel und Gesundheit'],
+    live: true,
+  },
+  {
+    title: 'Tmall Global: Aufbau und Betrieb',
+    desc: 'Was ein Flagship Store auf Tmall Global im ersten Jahr kostet: Kaution, Jahresgebühr und Provision je Kategorie, Retainer und Provision des TP, Bonded-Fulfillment, Versand und die Cross-Border-Einfuhrsteuer, in RMB und USD.',
+    href: '/de/rechner/tmall-global-kostenrechner',
+    icon: icon.cart,
+    tags: ['Tmall Global', 'Cross-Border', 'Marktplatz'],
+    live: true,
+  },
+  {
+    title: 'JD Worldwide: Aufbau und Betrieb',
+    desc: 'Was ein Store auf JD Worldwide im ersten Jahr kostet: gestaffelte Kaution und Provision je Kategorie, die Transaktionsgebühr von 0,9 %, Retainer und Provision des TP, Bonded-Fulfillment, Versand und die Cross-Border-Einfuhrsteuer, in RMB und USD.',
+    href: '/de/rechner/jd-worldwide-kostenrechner',
+    icon: icon.cart,
+    tags: ['JD Worldwide', 'Cross-Border', 'Marktplatz'],
+    live: true,
+  },
+  {
+    title: 'Xiaohongshu: Kampagnenbudget',
+    desc: 'Einen Launch auf Xiaohongshu planen: Seeding von Notes, die Mischung aus KOC und KOL, bezahlte Verstärkung und die Reichweite, die ein bestimmtes Budget realistisch bringt.',
+    icon: icon.note,
+    tags: ['Xiaohongshu', 'Kampagnen'],
+    live: false,
+  },
+  {
+    title: 'Livestream- und KOL-ROI',
+    desc: 'Was ein Livestream oder ein KOL-Programm am Ende einbringt: Pit Fee, Provision, GMV, Retouren und Deckungsbeitrag je Session.',
+    icon: icon.chart,
+    tags: ['KOL', 'Livestream'],
+    live: false,
+  },
+];
+---
+
+<Layout
+  title="Kostenrechner für den China-Einstieg | TheChinaPath"
+  description="Kostenlose Rechner für Marken mit China-Plänen: Was Douyin Cross-Border, Tmall Global, JD Worldwide und Kampagnen auf Xiaohongshu wirklich kosten, bevor Sie ein Budget freigeben."
+>
+  <section
+    class="tool-hero tool-hero--image"
+    style="--tool-hero-img: url('/Images/tools/tools-hero-bg.png')"
+  >
+    <div class="container tool-hero__inner">
+      <nav class="tool-hero__crumbs" aria-label="Breadcrumb">
+        <a href="/de">Startseite</a>
+        <span aria-hidden="true">/</span>
+        <span>Rechner</span>
+      </nav>
+      <span class="eyebrow">Tools</span>
+      <h1 class="tool-hero__title">Erst rechnen, <em>dann</em> das Budget freigeben.</h1>
+      <p class="tool-hero__lead">
+        Rechner aus der Praxis für Marken, die nach China gehen. Jeder folgt der Logik, nach der
+        die Plattform tatsächlich abrechnet, nicht einer Faustregel. Modell wählen, Annahmen setzen,
+        die Gesamtkosten in RMB und USD ablesen.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="tool-cards">
+        {
+          calculators.map((c) =>
+            c.live ? (
+              <a class="tool-card" href={c.href}>
+                <span class="tool-card__icon" set:html={c.icon} />
+                <h2 class="tool-card__title">{c.title}</h2>
+                <p class="tool-card__desc">{c.desc}</p>
+                <div class="tool-card__tags">
+                  {c.tags.map((t) => (
+                    <span class="tool-card__tag">{t}</span>
+                  ))}
+                </div>
+                <span class="tool-card__foot">Rechner öffnen</span>
+              </a>
+            ) : (
+              <div class="tool-card tool-card--soon">
+                <span class="tool-card__pill">In Arbeit</span>
+                <span class="tool-card__icon" set:html={c.icon} />
+                <h2 class="tool-card__title">{c.title}</h2>
+                <p class="tool-card__desc">{c.desc}</p>
+                <div class="tool-card__tags">
+                  {c.tags.map((t) => (
+                    <span class="tool-card__tag">{t}</span>
+                  ))}
+                </div>
+                <span class="tool-card__foot" style="color: var(--bbg-text-muted); pointer-events: none;">
+                  Bald verfügbar
+                </span>
+              </div>
+            ),
+          )
+        }
+      </div>
+
+      <div class="tool-hub-cta">
+        <p>Ein Modell fehlt, oder Sie wollen mit Ihren eigenen Zahlen rechnen?</p>
+        <a class="btn btn--secondary" href="/de/kontakt">Unser China-Team fragen</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .tool-hub-cta {
+    margin-top: var(--space-7);
+    padding: var(--space-5) var(--space-6);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .tool-hub-cta p {
+    margin: 0;
+    font-weight: 600;
+    color: var(--bbg-ink);
+  }
+  .tool-card__foot::after {
+    /* Coming-soon cards keep no arrow. */
+  }
+  .tool-card--soon .tool-card__foot::after {
+    content: '';
+  }
+</style>
