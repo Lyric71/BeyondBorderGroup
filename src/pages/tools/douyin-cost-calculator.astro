@@ -127,7 +127,7 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
       { id: 'period', label: 'Engagement period', value: '12', kind: 'number', readonly: true, suffix: 'months', hint: 'Fixed. The model prices a full twelve-month run; every yearly figure follows this window.' },
       { id: 'platformDeposit', label: 'Douyin 全球购 platform deposit', value: '50000', kind: 'money', hint: 'Refundable when the store closes. Set by your category above.' },
       { id: 'techFee', label: 'Platform tech service fee', value: '4', kind: 'percent', step: '0.1', hint: 'Taken on each sale. Set by your category above.' },
-      { id: 'agentFee', label: 'Mainland 境内代理人 annual fee', value: '60000', kind: 'money' },
+      { id: 'agentFee', label: 'Customs clearance agent, annual', value: '0', kind: 'money', hint: 'Optional. Many brands let the DP or the bonded warehouse act as the 境内代理人, so leave it at zero unless you retain a separate one.' },
       { id: 'trademark', label: 'CN trademark registration', value: '0', kind: 'money' },
       { id: 'brandSetup', label: 'Brand setup contribution', value: '25000', kind: 'money' },
     ],
@@ -139,6 +139,7 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
       { id: 'whDeposit', label: 'Bonded warehouse deposit', value: '100000', kind: 'money' },
       { id: 'whTaxPrepay', label: 'Bonded warehouse tax prepayment', value: '300000', kind: 'money' },
       { id: 'storage', label: 'Warehouse storage per unit per month', value: '0.8', kind: 'number', step: '0.1' },
+      { id: 'fulfillment', label: 'Fulfillment per order (pick and pack)', value: '4', kind: 'money', step: '0.5' },
       { id: 'shipping', label: 'Last-mile shipping per parcel', value: '11', kind: 'money' },
       { id: 'returnRate', label: 'Return rate', value: '5', kind: 'percent', step: '0.1' },
       { id: 'returnHandling', label: 'Return handling per parcel', value: '15', kind: 'money' },
@@ -147,9 +148,10 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
   {
     title: 'Your economics',
     icon: gicon.margin,
-    note: 'Add your gross margin per order to unlock profit or loss, breakeven GMV and contribution.',
+    note: 'Add your gross margin per order to unlock the operating profit or loss for both years and your breakeven GMV. The launch content and the trademark are written off over the amortization period below; the refundable deposits never hit the P&L.',
     fields: [
       { id: 'grossMargin', label: 'Gross margin per order', value: '75', kind: 'percent' },
+      { id: 'amortYears', label: 'Setup amortization period', value: '3', kind: 'number', step: '1', suffix: 'years', hint: 'The launch content and the trademark are written off in equal parts over this many years. Three is the common convention.' },
     ],
   },
 ];
@@ -211,7 +213,7 @@ const help: Record<string, string> = {
   techFee:
     'A technology service fee Douyin charges on each sale, taken as a share of GMV. It runs from about 2 to 6 percent depending on the category. The category picker sets it for you.',
   agentFee:
-    'The yearly fee for a mainland customs agent (境内代理人), the licensed local entity required to clear cross-border parcels in your name. It is a fixed annual cost, not tied to how much you sell.',
+    'An optional yearly fee for a mainland customs agent (境内代理人). Selling cross-border from an offshore entity, you do need a China-registered company to file with customs in your name and carry the liability that comes with it. What you do not need is a separate one: on the bonded model the DP or the warehouse usually takes the role and folds it into their fees, which is why most brands leave this at zero. Add a figure only if you retain a standalone agent.',
   trademark:
     'A one-time cost to register your brand as a trademark in China, in the relevant class. Doing it early protects the name before anyone else can claim it. Roughly 8,000 RMB for a single class.',
   brandSetup:
@@ -236,18 +238,22 @@ const help: Record<string, string> = {
     'Money paid into the bonded warehouse up front against the import tax on goods as they clear. It is drawn down as shipments enter China, so treat it as money you get back later, not money you spend.',
   storage:
     'What the bonded warehouse charges to store one unit for one month. Multiplied by your order volume and an average two-month dwell time, it becomes your storage bill.',
+  fulfillment:
+    'The pick, pack and handling cost inside the bonded warehouse for one order, before it ships. This is separate from the last-mile shipping below. Multiply by the number of orders to get the yearly fulfillment bill.',
   shipping:
-    "The last-mile delivery cost per parcel, from the bonded warehouse to the shopper's door. Multiply by the number of orders to get the yearly shipping bill.",
+    "The last-mile delivery cost per parcel, from the bonded warehouse to the shopper's door. Multiply by the number of orders to get the yearly shipping bill. It sits on top of the fulfillment fee.",
   returnRate:
     'The share of orders that come back. Food and CBEC returns are usually low, around five percent. Each return carries a handling cost.',
   returnHandling:
     'What it costs to process one returned parcel: inspection, then restocking or disposal. Multiplied by your return rate and order volume.',
   grossMargin:
-    'Your gross margin on a single order: the share of the sale price left after the product cost, but before the Douyin channel costs in this model. The same percentage applies across every order. Enter it to unlock the operating profit or loss for both years and your breakeven GMV. The result compares gross profit to running costs only, since setup is capex and sits outside the P&L.',
+    'Your gross margin on a single order: the share of the sale price left after the product cost, but before the Douyin channel costs in this model. The same percentage applies across every order. Enter it to unlock the operating profit or loss for both years and your breakeven GMV.',
+  amortYears:
+    'How many years the one-time setup is written off over. The launch content and the trademark are real costs, so accounting spreads them across the years they earn their keep rather than dumping the whole bill on Year 1. Three years is the usual convention for this kind of investment. The deposits and the tax prepayment are not in this figure: you get them back, so they are working capital, not cost.',
 };
 
 const notes = [
-  'Setup is capex, so it stays out of the profit and loss. The deposits, the tax prepayment, the trademark and the launch content are cash you commit to open the channel, not a cost of running it. They are reported on their own line, and the profit or loss you see compares gross profit against running costs only. Judge the year on that number, then look at the capex as the cheque you write to get in.',
+  'Setup is paid once but it is not all a Year 1 cost. The launch content and the trademark are written off over the amortization period you set, so each year carries its share and the operating result is not crushed by a bill it will benefit from for years. The deposits and the tax prepayment are different: you get them back on exit, so they are working capital and never reach the profit and loss at all. That is why the cash column and the profit column disagree, and both are right.',
   'The model runs cross-border only, through the bonded warehouse (抖音全球购). The warehouse deposit and the tax prepayment come back to you on exit, so the calculator counts them as money you get back, not money you spend.',
   'The DP retainer plus its commission on GMV is one of the largest lines, alongside paid media. Paid media on 千川 is funded by you directly into the ad account, not billed through the DP. That split is deliberate: DPs that try to front the ad spend tend to fall over.',
   'The DP runs Douyin only. Their team cost sits inside the retainer and the commission, so there is no separate headcount line. KOL commission is billed apart, on sales the creators actually drive.',
@@ -692,9 +698,9 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                 <span class="calc-stat__foot" id="focus-ncm-foot">GMV less running costs, before product cost</span>
               </div>
               <div class="calc-stat calc-stat--capex" id="focus-capex-wrap">
-                <span class="calc-stat__label">Setup capex</span>
+                <span class="calc-stat__label">Setup amortization</span>
                 <span class="calc-stat__value" id="focus-capex">RMB 0</span>
-                <span class="calc-stat__foot" id="focus-capex-foot">one-time cash, outside the P&L</span>
+                <span class="calc-stat__foot" id="focus-capex-foot">this year's share of the setup</span>
               </div>
               <div class="calc-stat">
                 <span class="calc-stat__label">Real cash spent</span>
@@ -1203,32 +1209,44 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       };
       const setupTotal = Object.values(setup).reduce((a, b) => a + b, 0);
 
-      // Setup is capex, not P&L. The deposits and the tax prepayment come back
-      // on exit; the trademark and the launch content are one-time investment.
-      // Either way the whole block sits outside profit or loss, so it is
-      // reported on its own and never nets against gross profit.
+      // Setup splits in two. The deposits and the tax prepayment come back on
+      // exit, so they are working capital and never touch the P&L. The trademark
+      // and the launch content are spent for good: a real cost, but one that
+      // earns over several years, so it is amortized, not charged to Year 1.
       const refundableCapex = (i.platformDeposit || 0) + (i.whDeposit || 0) + (i.whTaxPrepay || 0);
       const sunkCapex = (i.trademark || 0) + (i.brandSetup || 0);
+      const amortYears = Math.max(1, Math.round(i.amortYears || 1));
+      const amortAnnual = sunkCapex / amortYears;
+      // A one-year write-off is fully expensed in Year 1, so Year 2 carries none.
+      const amortY1 = amortAnnual;
+      const amortY2 = amortYears >= 2 ? amortAnnual : 0;
+      const amortLabel = 'Setup amortization (' + amortYears + '-year)';
 
       // Fixed and per-order coefficients for break-even (Section 9 of the spec).
-      // Capex is excluded: break-even asks what GMV covers the running bill.
+      // The fixed side is the running services plus the year's amortization:
+      // break-even asks what GMV covers the annual bill the P&L carries.
       const dpRetainerAnnual = (i.dpRetainer || 0) * 12;
       // Service-side VAT (agency, DP, platform, ad-buying) is assumed to be baked
       // into the DP fee quote, so it is not modelled as a separate line.
       const fixedServices = (i.agentFee || 0) + dpRetainerAnnual + (i.coFund || 0);
-      const F = fixedServices;
-      const F2 = fixedServices;
-      const vQ = (i.storage || 0) * 2 + (i.shipping || 0) + (i.returnRate || 0) * (i.returnHandling || 0);
+      const F = fixedServices + amortY1;
+      const F2 = fixedServices + amortY2;
+      const vQ =
+        (i.storage || 0) * 2 +
+        (i.fulfillment || 0) +
+        (i.shipping || 0) +
+        (i.returnRate || 0) * (i.returnHandling || 0);
 
       function scenario(roas) {
-        // One operating stack per year. Year 2 differs on two inputs: its own
-        // channel mix (paid vs KOL vs organic) and a grown GMV.
-        function opStack(paidShare, kolShare, g, o) {
+        // One operating stack per year. Year 2 differs on three inputs: its own
+        // channel mix (paid vs KOL vs organic), a grown GMV, and the share of
+        // the setup write-off it still carries.
+        function opStack(paidShare, kolShare, g, o, amort) {
           const media = roas > 0 ? (g * (paidShare || 0)) / roas : 0;
           const dpCommission = g * (i.dpCommission || 0);
           const techFee = g * (i.techFee || 0);
           const op = {
-            'Mainland agent (境内代理人)': i.agentFee || 0,
+            'Customs clearance agent': i.agentFee || 0,
             'DP monthly retainer (× 12)': dpRetainerAnnual,
             'DP commission on GMV': dpCommission,
             'Campaign co-fund': i.coFund || 0,
@@ -1236,11 +1254,19 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             'KOL commission': g * (kolShare || 0) * (i.kolCommission || 0),
             'Platform tech service fee': techFee,
             'Bonded warehouse storage': o * (i.storage || 0) * 2,
+            'Fulfillment (pick and pack)': o * (i.fulfillment || 0),
             'Last-mile shipping': o * (i.shipping || 0),
             'Returns handling': o * (i.returnRate || 0) * (i.returnHandling || 0),
             'Cross-border import tax (综合税)': g * (i.cbecTax || 0),
           };
-          const opTotal = Object.values(op).reduce((a, b) => a + b, 0);
+
+          // Cash leaving the building this year, before the write-off.
+          const cashOp = Object.values(op).reduce((a, b) => a + b, 0);
+          // The write-off is a P&L cost with no cash behind it: the money was
+          // already paid at setup. It is charged here and nowhere else, so the
+          // cash column and the profit column never double-count it.
+          op[amortLabel] = amort;
+          const opTotal = cashOp + amort;
 
           // %-of-GMV variable rate for this ROAS and mix (Section 9.3).
           const paidRate = roas > 0 ? (paidShare || 0) / roas : 0;
@@ -1258,20 +1284,21 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             { key: 'Paid media', color: '#f4874b', value: op['Paid media (千川 Qianchuan)'] },
             { key: 'KOL commission', color: '#f4b740', value: op['KOL commission'] },
             { key: 'Tax and platform fee', color: '#7b61a8', value: op['Cross-border import tax (综合税)'] + op['Platform tech service fee'] },
-            { key: 'Logistics', color: '#3aa0c8', value: op['Bonded warehouse storage'] + op['Last-mile shipping'] + op['Returns handling'] },
-            { key: 'Agent + co-fund', color: '#2fb67f', value: op['Mainland agent (境内代理人)'] + op['Campaign co-fund'] },
+            { key: 'Logistics', color: '#3aa0c8', value: op['Bonded warehouse storage'] + op['Fulfillment (pick and pack)'] + op['Last-mile shipping'] + op['Returns handling'] },
+            { key: 'Agent + co-fund', color: '#2fb67f', value: op['Customs clearance agent'] + op['Campaign co-fund'] },
           ];
-          return { op, opTotal, vG, buckets };
+          return { op, opTotal, cashOp, vG, buckets };
         }
 
-        const y1 = opStack(i.paidShare, i.kolShare, gmv, orders);
-        const y2 = opStack(i.paidShare2, i.kolShare2, gmv2, orders2);
+        const y1 = opStack(i.paidShare, i.kolShare, gmv, orders, amortY1);
+        const y2 = opStack(i.paidShare2, i.kolShare2, gmv2, orders2, amortY2);
 
         const opTotal = y1.opTotal;
         const vG = y1.vG;
-        // total = every RMB that leaves the building in Year 1 (capex + running).
-        // It is the cash view, not the P&L view.
-        const total = setupTotal + opTotal;
+        // total = every RMB that leaves the building in Year 1: the setup cheque
+        // in full, plus the running cash. The write-off is excluded here, since
+        // the cash it represents is already in setupTotal.
+        const total = setupTotal + y1.cashOp;
         const refundable = refundableCapex;
         const netSunk = total - refundable;
         const totalUSD = i.fx > 0 ? total / i.fx : 0;
@@ -1284,8 +1311,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         let breakevenOrders = null;
         let contribution = null;
         if (i.grossMargin != null) {
-          // Operating P&L: gross profit less the running cost. Setup capex is
-          // deliberately left out; it is investment, not cost of the year.
+          // Operating P&L: gross profit less the running cost and this year's
+          // share of the setup write-off.
           contribution = gmv * i.grossMargin - opTotal;
           const denom = i.grossMargin - vG - (aov > 0 ? vQ / aov : 0);
           if (denom <= 0) {
@@ -1300,10 +1327,12 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         return {
           op: y1.op,
           opTotal,
+          cashOp: y1.cashOp,
           vG,
           buckets: y1.buckets,
           op2: y2.op,
           opTotal2: y2.opTotal,
+          cashOp2: y2.cashOp,
           vG2: y2.vG,
           buckets2: y2.buckets,
           total,
@@ -1330,6 +1359,9 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         setupTotal,
         refundableCapex,
         sunkCapex,
+        amortYears,
+        amortY1,
+        amortY2,
         F,
         F2,
         vQ,
@@ -1388,12 +1420,12 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const i = state.i;
       const y2 = activeYear === '2';
 
-      // period-dependent figures. Year 2 drops the one-time setup and runs on
-      // its own channel mix, so its cost is the Year 2 operating stack only,
-      // and no refundable capital is in play.
-      const cost = y2 ? s.opTotal2 : s.total;
+      // period-dependent figures, on a CASH basis: Year 2 writes no setup cheque
+      // and runs on its own channel mix, so its cash cost is the Year 2 running
+      // stack. The amortization is a P&L line and is deliberately not in here.
+      const cost = y2 ? s.cashOp2 : s.total;
       const costUSD = i.fx > 0 ? cost / i.fx : 0;
-      const cash = y2 ? s.opTotal2 : s.netSunk;
+      const cash = y2 ? s.cashOp2 : s.netSunk;
       // Year 2 runs on grown GMV, so its per-order and %-of-GMV figures
       // divide by the Year 2 volumes.
       const gmvYear = y2 ? r.gmv2 : r.gmv;
@@ -1441,8 +1473,8 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         beWrap.classList.add('is-muted');
       }
 
-      // Operating profit or loss. Setup capex never nets against gross profit:
-      // it is investment, so both years compare gross profit to running cost.
+      // Operating profit or loss: gross profit less the running cost and this
+      // year's share of the setup write-off. The refundable deposits stay out.
       const opYear = y2 ? s.opTotal2 : s.opTotal;
       const plEl = document.getElementById('focus-pl1');
       const plFoot = document.getElementById('focus-pl1-foot');
@@ -1455,7 +1487,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         plEl.textContent = sign + rmb0(Math.abs(amount));
         plEl.classList.add(amount >= 0 ? 'is-profit' : 'is-loss');
         plFoot.textContent =
-          (amount >= 0 ? 'profit. ' : 'loss. ') + 'gross profit less running costs';
+          (amount >= 0 ? 'profit. ' : 'loss. ') + 'after running costs and setup amortization';
         plWrap.classList.remove('is-muted');
       } else {
         plEl.textContent = 'Add margin';
@@ -1463,24 +1495,35 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         plWrap.classList.add('is-muted');
       }
 
-      // Setup capex: Year 1 only, and reported on its own. It is cash out, but
-      // it sits outside the P&L, so it is not netted anywhere above.
+      // Setup capex: the cheque is written in Year 1, but the P&L only carries
+      // the year's amortized share, which is what this card reports per year.
       const capexEl = document.getElementById('focus-capex');
       const capexFoot = document.getElementById('focus-capex-foot');
       const capexWrap = document.getElementById('focus-capex-wrap');
+      const amortYear = y2 ? r.amortY2 : r.amortY1;
       if (y2) {
-        capexEl.textContent = 'None';
-        capexFoot.textContent = 'setup was paid in Year 1';
+        animateCount(capexEl, amortYear, rmb0);
+        capexFoot.textContent =
+          amortYear > 0
+            ? 'amortized share, no cash out. Setup was paid in Year 1'
+            : 'written off in full in Year 1, nothing left to charge';
         capexWrap.classList.add('is-muted');
       } else {
-        animateCount(capexEl, r.setupTotal, rmb0);
+        animateCount(capexEl, amortYear, rmb0);
         capexFoot.textContent =
-          rmb0(r.refundableCapex) + ' comes back, ' + rmb0(r.sunkCapex) + ' is spent for good';
+          "this year's share of " +
+          rmb0(r.sunkCapex) +
+          ' written off over ' +
+          r.amortYears +
+          (r.amortYears === 1 ? ' year' : ' years') +
+          '. ' +
+          rmb0(r.refundableCapex) +
+          ' of deposits comes back';
         capexWrap.classList.remove('is-muted');
       }
 
-      // Net channel margin: GMV less the running cost, before product cost.
-      // Capex is out of this figure too.
+      // Net channel margin: GMV less the operating cost (which now carries the
+      // write-off), before product cost.
       const ncm = gmvYear - opYear;
       const ncmEl = document.getElementById('focus-ncm');
       ncmEl.classList.remove('is-profit', 'is-loss');
@@ -1493,8 +1536,10 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         ? 'Your Year 2 running cost, ranked biggest to smallest.'
         : 'Your first-year cost, ranked biggest to smallest.';
       document.getElementById('compo-total-label').textContent = y2 ? 'Total Year 2' : 'Total Year 1';
+      // The composition bar is a cash picture: Year 1 shows the setup cheque in
+      // full, Year 2 shows running cash only. The write-off is not a bucket.
       const compoBuckets = y2 ? s.buckets2.filter((b) => b.key !== 'Setup') : s.buckets;
-      renderCompo(compoBuckets, y2 ? s.opTotal2 : s.total);
+      renderCompo(compoBuckets, y2 ? s.cashOp2 : s.total);
     }
 
     // line icons keyed by bucket, drawn in currentColor
@@ -1667,44 +1712,50 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const plRow = (label, y1, y2) =>
         '<tr class="calc-table__total calc-table__pl"><td>' + label + '</td>' + plCell(y1) + plCell(y2) + '</tr>';
 
-      // Capex: Year 1 only, and outside the P&L. It is cash you commit to open
-      // the channel, so it is reported apart from the operating lines below.
-      let rows = sectionRow('Setup capex, one-time (outside the P&L)');
+      // The setup cheque is written once, in Year 1. Part of it comes back on
+      // exit; the rest is amortized into the operating lines below.
+      let rows = sectionRow('Setup, one-time cash (Year 1)');
       Object.keys(r.setup).forEach((k) => {
         rows += dataRow(k, r.setup[k], null, false);
       });
-      rows += dataRow('Subtotal setup capex', r.setupTotal, null, true);
-      rows += dataRow('Of which refundable on exit', r.refundableCapex, null, false);
-      rows += dataRow('Of which spent for good', r.sunkCapex, null, false);
+      rows += dataRow('Subtotal setup', r.setupTotal, null, true);
+      rows += dataRow('Of which refundable on exit (never a P&L cost)', r.refundableCapex, null, false);
+      rows += dataRow(
+        'Of which spent for good (amortized over ' + r.amortYears + (r.amortYears === 1 ? ' year' : ' years') + ')',
+        r.sunkCapex,
+        null,
+        false,
+      );
 
-      // Operating cost recurs, but Year 2 runs on its own channel mix, so the
-      // paid media and KOL lines can differ between the two columns.
+      // Operating cost recurs, but Year 2 runs on its own channel mix and a
+      // grown GMV, so the sales-driven lines differ between the two columns.
+      // The last line is the write-off: a cost with no cash behind it.
       rows += sectionRow('Operating, annual (the P&L)');
       Object.keys(s.op).forEach((k) => {
         rows += dataRow(k, s.op[k], s.op2[k], false);
       });
       rows += dataRow('Subtotal operating', s.opTotal, s.opTotal2, true);
 
-      rows += sectionRow('Cash view');
+      rows += sectionRow('Cash view (amortization excluded, it moves no cash)');
       rows += dataRow('Assumed GMV', gmv, r.gmv2, false);
-      rows += dataRow('Total cash out (capex + operating)', s.total, s.opTotal2, true);
-      rows += dataRow('Real cash spent', s.netSunk, s.opTotal2, true);
+      rows += dataRow('Total cash out (setup + running)', s.total, s.cashOp2, true);
+      rows += dataRow('Real cash spent, after refunds', s.netSunk, s.cashOp2, true);
       if (fx) {
         rows +=
           '<tr class="calc-table__total"><td>Total cash out (USD)</td><td>' +
           usd0(s.totalUSD) +
           '</td><td>' +
-          usd0(s.opTotal2 / fx) +
+          usd0(s.cashOp2 / fx) +
           '</td></tr>';
       }
-      rows += dataRow('Year 1 to Year 2 saving', s.total - s.opTotal2, null, false);
+      rows += dataRow('Year 1 to Year 2 saving', s.total - s.cashOp2, null, false);
       rows += plRow(
-        'Net channel margin (GMV less running costs, before product cost)',
+        'Net channel margin (GMV less operating cost, before product cost)',
         gmv - s.opTotal,
         r.gmv2 - s.opTotal2,
       );
 
-      rows += sectionRow('Operating profit or loss at your margin (capex excluded)');
+      rows += sectionRow('Operating profit or loss at your margin');
       if (r.hasGm) {
         // Break-even asks what GMV covers the running bill, so the fixed side is
         // services only. The two years differ on their channel mix (vG vs vG2).
@@ -1715,13 +1766,13 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         const grossProfit = gmv * i.grossMargin;
         const grossProfit2 = r.gmv2 * i.grossMargin;
         rows += dataRow('Gross profit (GMV × margin)', grossProfit, grossProfit2, false);
-        rows += dataRow('Less operating cost', s.opTotal, s.opTotal2, false);
+        rows += dataRow('Less operating cost (incl. setup amortization)', s.opTotal, s.opTotal2, false);
         rows += plRow('Operating result (profit or loss)', s.contribution, grossProfit2 - s.opTotal2);
         rows +=
           '<tr><td>Breakeven GMV</td><td>' + beCell(r.F, s.vG) + '</td><td>' + beCell(r.F2, s.vG2) + '</td></tr>';
         rows +=
-          '<tr class="calc-table__memo"><td>Memo: setup capex, not in the result above</td><td>' +
-          rmb0(r.setupTotal) +
+          '<tr class="calc-table__memo"><td>Memo: refundable deposits, cash out but never a cost</td><td>' +
+          rmb0(r.refundableCapex) +
           '</td><td><span class="calc-table__na">—</span></td></tr>';
       } else {
         rows +=
@@ -1780,9 +1831,10 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       });
       const out = [
         { label: 'Total Year 1 cash out', value: rmb0(r.s.total) + ' / ' + usd0(r.s.totalUSD) },
-        { label: 'Setup capex, Year 1 (outside the P&L)', value: rmb0(r.setupTotal) + ', of which ' + rmb0(r.refundableCapex) + ' refundable' },
-        { label: 'Operating cost, Year 1', value: rmb0(r.s.opTotal) },
-        { label: 'Operating cost, Year 2', value: rmb0(r.s.opTotal2) },
+        { label: 'Setup, one-time cash', value: rmb0(r.setupTotal) + ', of which ' + rmb0(r.refundableCapex) + ' refundable' },
+        { label: 'Setup amortization, per year', value: rmb0(r.amortY1) + ' over ' + r.amortYears + ' years' },
+        { label: 'Operating cost, Year 1 (incl. amortization)', value: rmb0(r.s.opTotal) },
+        { label: 'Operating cost, Year 2 (incl. amortization)', value: rmb0(r.s.opTotal2) },
         { label: 'Year 2 GMV assumed', value: rmb0(r.gmv2) },
         { label: 'Real cash spent, Year 1', value: rmb0(r.s.netSunk) },
         { label: 'Cost per order', value: rmb0(r.s.costPerOrder) },
@@ -1790,7 +1842,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       ];
       if (r.hasGm) {
         const be = typeof r.s.breakeven === 'string' ? r.s.breakeven : rmb0(r.s.breakeven);
-        out.push({ label: 'Operating result, Year 1 (capex excluded)', value: rmb0(r.s.contribution) });
+        out.push({ label: 'Operating result, Year 1 (incl. amortization)', value: rmb0(r.s.contribution) });
         out.push({ label: 'Breakeven GMV', value: be });
       }
       return { inputs, results: out };
@@ -3106,7 +3158,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     border-color: color-mix(in srgb, var(--bbg-danger, #d33a3a) 40%, var(--bbg-border));
     background: color-mix(in srgb, var(--bbg-danger, #d33a3a) 6%, var(--bbg-white));
   }
-  /* capex sits outside the P&L, so it reads as a neutral aside, never green or red */
+  /* the write-off is a neutral aside, not a win or a loss: never green or red */
   .calc-stat--capex {
     border-style: dashed;
     background: var(--bbg-surface);

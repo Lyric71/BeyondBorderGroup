@@ -14,9 +14,10 @@ type Driver = {
 };
 
 const drivers: Driver[] = [
-  { id: 'gmv', label: 'Target Year 1 GMV', value: '2000000', kind: 'money', min: '200000', max: '10000000', step: '100000' },
+  { id: 'gmv', label: 'Target Year 1 GMV', value: '3500000', kind: 'money', min: '200000', max: '10000000', step: '100000' },
   { id: 'aov', label: 'Average order value', value: '250', kind: 'money', min: '20', max: '2000', step: '5' },
-  { id: 'dpRetainer', label: 'TP monthly retainer', value: '40000', kind: 'money', min: '0', max: '200000', step: '5000' },
+  { id: 'gmvGrowth', label: 'Year 2 GMV growth', value: '50', kind: 'percent', min: '0', max: '200', step: '5' },
+  { id: 'dpRetainer', label: 'TP monthly retainer', value: '35000', kind: 'money', min: '0', max: '200000', step: '5000' },
   { id: 'coFund', label: 'Campaign co-fund', value: '0', kind: 'money', min: '0', max: '500000', step: '10000' },
   { id: 'dpCommission', label: 'TP commission on GMV', value: '10', kind: 'percent', min: '0', max: '20', step: '0.5' },
   { id: 'paidShare', label: 'Paid media', value: '60', kind: 'percent', min: '0', max: '100', step: '1' },
@@ -31,6 +32,18 @@ const shareIds = ['paidShare', 'kolShare', 'organicShare'];
 const mainDrivers = drivers.filter((d) => !shareIds.includes(d.id));
 const shareDrivers = drivers.filter((d) => shareIds.includes(d.id));
 
+// Year 2 carries its own mix: organic normally climbs once the store has
+// reviews and repeat buyers, which is what makes the second year cheaper to run.
+const shareDrivers2: Driver[] = [
+  { id: 'paidShare2', label: 'Paid media', value: '50', kind: 'percent', min: '0', max: '100', step: '1' },
+  { id: 'kolShare2', label: 'KOLs and livestream', value: '20', kind: 'percent', min: '0', max: '100', step: '1' },
+  { id: 'organicShare2', label: 'Organic', value: '30', kind: 'percent', min: '0', max: '100', step: '1' },
+];
+const mixRows = [
+  { year: '1', title: 'Year 1', drivers: shareDrivers, noteId: 'mix-note' },
+  { year: '2', title: 'Year 2', drivers: shareDrivers2, noteId: 'mix-note-2' },
+];
+
 // ---- Advanced inputs, grouped in the collapsible section ----
 type Field = {
   id: string;
@@ -40,6 +53,8 @@ type Field = {
   step?: string;
   hint?: string;
   fx?: boolean;
+  readonly?: boolean;
+  suffix?: string;
   options?: { value: string; label: string; deposit?: string; fee?: string; annual?: string }[];
 };
 
@@ -112,6 +127,7 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
     title: 'Platform and TP',
     icon: gicon.platform,
     fields: [
+      { id: 'period', label: 'Engagement period', value: '12', kind: 'number', readonly: true, suffix: 'months', hint: 'Fixed. The model prices a full twelve-month run; every yearly figure follows this window.' },
       { id: 'platformDeposit', label: 'JD Worldwide security deposit', value: '35500', kind: 'money', hint: 'Refundable, tiered by cumulative sales and quoted in US dollars. Entry tier is about US$5,000 for most categories, US$2,000 for fresh, more for high-value goods. Set by your category above.' },
       { id: 'techFee', label: 'Platform commission (运营支持服务费)', value: '4', kind: 'percent', step: '0.1', hint: 'Taken on each sale, in a 2% to 6% band by category. Set by your category above.' },
       { id: 'paymentFee', label: 'Transaction fee (交易服务费)', value: '0.9', kind: 'percent', step: '0.1', hint: 'A flat 0.9% per order on JD Worldwide, across categories.' },
@@ -137,9 +153,10 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
   {
     title: 'Your economics',
     icon: gicon.margin,
-    note: 'Add your gross margin per order to unlock profit or loss, breakeven GMV and contribution.',
+    note: 'Add your gross margin per order to unlock the operating profit or loss for both years and your breakeven GMV. The store build and the trademark are written off over the amortization period below; the refundable deposits never hit the P&L.',
     fields: [
       { id: 'grossMargin', label: 'Gross margin per order', value: '75', kind: 'percent' },
+      { id: 'amortYears', label: 'Setup amortization period', value: '3', kind: 'number', step: '1', suffix: 'years', hint: 'The store build and the trademark are written off in equal parts over this many years. Three is the common convention.' },
     ],
   },
 ];
@@ -182,7 +199,7 @@ const help: Record<string, string> = {
   paidShare:
     'The slice of your sales pushed by paid advertising, the JD search and display tools (JD 快车), rather than by organic reach or a creator. Turn it up and you spend more on ads to hit the same sales number.',
   dpRetainer:
-    'The flat monthly fee your partner (TP) charges to run the store: the storefront, the campaign calendar, ad operations, customer service. It is usually the single biggest fixed line. A common figure for a serious international brand is about 40,000 RMB a month, more for a heavier setup.',
+    'The flat monthly fee your partner (TP) charges to run the store: the storefront, the campaign calendar, ad operations, customer service. It is usually the single biggest fixed line. A common figure for a serious international brand is about 35,000 RMB a month, more for a heavier setup.',
   dpCommission:
     'A percentage the partner takes on the sales they generate, on top of the retainer. Ten percent is a common figure. It is separate from the paid media you fund directly into the ad account.',
   category:
@@ -190,7 +207,7 @@ const help: Record<string, string> = {
   kolCommission:
     'The cut a livestream host or short-video creator keeps on each sale they drive. It is pure commission, paid only when they actually sell. Food and everyday goods tend to sit around 8 to 20 percent; beauty and luxury run higher.',
   roas:
-    'Return On Ad Spend is sales divided by ad spend. A ROAS of 2 means every 1 RMB of ads returns 2 RMB of sales. JD paid search tends to mature faster than a cold social account, so a blended first-year figure of about 2 is a reasonable starting point. Set what you expect to average.',
+    'Return On Ad Spend is sales divided by ad spend. A ROAS of 2 means every 1 RMB of ads brings back 2 RMB of sales. The breakeven rule of thumb used across the industry in China is 1 divided by your gross margin: at a 50% margin you need 2 just to cover the product economics, and thinner-margin categories need more. JD paid search tends to mature faster than a cold social account, since the shopper already arrives with intent. Set the figure you expect to average across the first year.',
   fx: 'How many RMB one US dollar buys. It only affects the USD figure shown at the end; every calculation runs in RMB. Use the refresh button to pull today’s live rate.',
   cbecTax:
     'The cross-border comprehensive tax, effectively an import VAT, on goods sold through the bonded model. It is 13 percent VAT charged on 70 percent of the retail price, which lands at 9.1 percent of sales for general goods that carry no consumption tax. Cosmetics, perfume and alcohol trigger consumption tax and run higher.',
@@ -216,6 +233,16 @@ const help: Record<string, string> = {
     'The share of total sales that flows through creators (livestream and short video), rather than your own store page or paid search. It sets how much KOL commission you end up paying.',
   organicShare:
     'Sales that come without paid ads or a creator commission behind them: your own store page, search, followers, repeat buyers. It is whatever is left after paid media and KOLs. A rising organic share is what makes Year 2 cheaper than Year 1.',
+  gmvGrowth:
+    'How much more the store sells in Year 2 than in Year 1. A store that survives its first year usually compounds: it has reviews, followers and repeat buyers working for it, and its search weight inside JD improves. 50% is a reasonable planning figure for a store that found its footing; set it to zero to model a flat repeat of Year 1. Every sales-driven cost in the Year 2 column scales with it.',
+  paidShare2:
+    'The share of Year 2 sales pushed by paid ads. By then the store has history, reviews and a following, so many brands hold or trim this line while organic picks up the slack.',
+  kolShare2:
+    'The share of Year 2 sales that flows through creators. Most brands keep livestream and KOL work in the mix, just less dominant, as the store page and repeat buyers start selling on their own.',
+  organicShare2:
+    'The Year 2 share that arrives without ad spend or creator commission: store page, JD search, followers, repeat buyers. This is the number that should climb, and it is the main reason Year 2 runs cheaper than Year 1.',
+  period:
+    'The model is built on a twelve-month engagement. The GMV target, the TP retainer, the platform usage fee and the co-fund all cover one full year, and Year 2 in the results shows the same twelve months without the one-time setup. It sits here so the assumption is explicit; it is not adjustable.',
   whDeposit:
     'A refundable deposit the bonded warehouse holds as working capital while your goods are stored there. You get it back on exit, so it is recoverable rather than sunk.',
   whTaxPrepay:
@@ -231,16 +258,19 @@ const help: Record<string, string> = {
   returnHandling:
     'What it costs to process one returned parcel: inspection, then restocking or disposal. Multiplied by your return rate and order volume.',
   grossMargin:
-    'Your gross margin on a single order: the share of the sale price left after the product cost, but before the channel costs in this model. The same percentage applies across every order. Enter it to unlock Year 1 and Year 2 profit or loss, breakeven GMV and your contribution.',
+    'Your gross margin on a single order: the share of the sale price left after the product cost, but before the channel costs in this model. The same percentage applies across every order. Enter it to unlock the operating profit or loss for both years and your breakeven GMV.',
+  amortYears:
+    'How many years the one-time setup is written off over. The store build and the trademark are real costs, so accounting spreads them across the years they earn their keep rather than dumping the whole bill on Year 1. Three years is the usual convention for this kind of investment. The deposits and the tax prepayment are not in this figure: you get them back, so they are working capital, not cost.',
 };
 
 const notes = [
+  'Setup is paid once but it is not all a Year 1 cost. The store build and the trademark are written off over the amortization period you set, so each year carries its share and the operating result is not crushed by a bill it will benefit from for years. The deposits and the tax prepayment are different: you get them back on exit, so they are working capital and never reach the profit and loss at all. That is why the cash column and the profit column disagree, and both are right.',
   'The model runs cross-border only, through the bonded warehouse (京东全球购). The warehouse deposit and the tax prepayment come back to you on exit, so the calculator counts them as money you get back, not money you spend.',
   'The TP retainer plus its commission on GMV is one of the largest lines, alongside paid media. Paid media is funded by you directly into the ad account, not billed through the TP. That split is deliberate: partners that try to front the ad spend tend to fall over.',
   'JD Worldwide bills two separate lines on each sale: the platform commission (运营支持服务费), 2 to 6 percent by category, and a flat 0.9 percent transaction fee (交易服务费). Both are in the model. The annual platform usage fee is about US$1,000, seeded from the live rate.',
   'The security deposit is tiered and quoted in US dollars, stepping up with cumulative sales. Most categories start near US$5,000, fresh food near US$2,000, high-value electronics and pharma higher. The category picker seeds the entry tier in RMB; it is refundable, so it sits apart from the profit math as working capital.',
   'The cross-border VAT is 9.1 percent of sales for general goods, 13 percent VAT levied on 70 percent of the price. In most store setups the consumer carries it at checkout, so it is left out of your cost by default. Switch the payer to brand if you absorb it, and note that cosmetics, perfume and alcohol run higher.',
-  'Year 1 usually runs at a loss at RMB 2M GMV. The table sets Year 1 against Year 2, when the one-time setup drops off. Breakeven GMV shows the scale you need for gross profit to cover the bill, and it often lands several times above a first-year target.',
+  'Year 1 usually runs at a loss at RMB 3.5M GMV. The table sets Year 1 against Year 2, when the one-time setup drops off, the channel mix switches to your Year 2 sliders and GMV steps up by your growth assumption. Breakeven GMV shows the scale you need for gross profit to cover the bill, and it often lands several times above a first-year target.',
 ];
 
 const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>`;
@@ -265,9 +295,9 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       <span class="eyebrow">Cost calculator</span>
       <h1 class="tool-hero__title">What a JD Worldwide store <em>really</em> costs.</h1>
       <p class="tool-hero__lead">
-        Model the full first-year cost of a JD Worldwide store run through a partner (TP), on the
-        cross-border bonded model (京东全球购). The tiered deposit and the commission move with your
-        category.
+        Model what a JD Worldwide store costs to run through a partner (TP), on the cross-border
+        bonded model (京东全球购), across your first two years. The tiered deposit and the
+        commission move with your category.
       </p>
       <div class="tool-hero__meta">
         <div class="tool-hero__meta-item">
@@ -295,7 +325,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     <div class="container">
       <div class="calc-how__head reveal">
         <span class="eyebrow">How the model works</span>
-        <h2 class="calc-how__title">Four moving parts, one first-year number.</h2>
+        <h2 class="calc-how__title">Four moving parts, two years of cost.</h2>
       </div>
       <ol class="calc-flow">
         {
@@ -393,64 +423,69 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                 }
               </div>
 
-              {/* Channel mix: paid + KOL + organic, always 100% of GMV */}
+              {/* Channel mix: paid + KOL + organic, 100% of GMV, one row per year */}
               <div class="driver-group">
                 <div class="driver-group__head">
                   <span class="driver-group__title">Channel mix</span>
-                  <span class="driver-group__sub">Where the sales come from. These three always add up to 100% of GMV.</span>
+                  <span class="driver-group__sub">Where the sales come from, year by year. Each row adds up to 100% of GMV.</span>
                 </div>
-                <div class="driver-group__grid">
-                  {
-                    shareDrivers.map((d) => (
-                      <div class="driver driver--share" data-driver>
-                        <div class="driver__top">
-                          <span class="calc-label-wrap">
-                            <label class="driver__label" for={d.id}>
-                              {d.label}
-                            </label>
-                            {help[d.id] && (
-                              <button
-                                type="button"
-                                class="calc-help__btn"
-                                data-help={help[d.id]}
-                                aria-label={`What is ${d.label}?`}
-                              >
-                                ?
-                              </button>
-                            )}
-                          </span>
-                          <span class="driver__value">
+                {
+                  mixRows.map((row) => (
+                    <div class="driver-group__row">
+                      <span class="driver-group__year">{row.title}</span>
+                      <div class="driver-group__grid">
+                        {row.drivers.map((d) => (
+                          <div class="driver driver--share" data-driver>
+                            <div class="driver__top">
+                              <span class="calc-label-wrap">
+                                <label class="driver__label" for={d.id}>
+                                  {d.label}
+                                </label>
+                                {help[d.id] && (
+                                  <button
+                                    type="button"
+                                    class="calc-help__btn"
+                                    data-help={help[d.id]}
+                                    aria-label={`What is ${d.label} (${row.title})?`}
+                                  >
+                                    ?
+                                  </button>
+                                )}
+                              </span>
+                              <span class="driver__value">
+                                <input
+                                  class="driver__num"
+                                  type="number"
+                                  id={d.id}
+                                  name={d.id}
+                                  value={d.value}
+                                  data-kind={d.kind}
+                                  data-label={`${d.label} (${row.title})`}
+                                  step={d.step}
+                                  min={d.min}
+                                  max={d.max}
+                                />
+                                <span class="driver__unit">%</span>
+                              </span>
+                            </div>
                             <input
-                              class="driver__num"
-                              type="number"
-                              id={d.id}
-                              name={d.id}
-                              value={d.value}
-                              data-kind={d.kind}
-                              data-label={d.label}
-                              step={d.step}
+                              class="driver__range"
+                              type="range"
                               min={d.min}
                               max={d.max}
+                              step={d.step}
+                              value={d.value}
+                              data-target={d.id}
+                              aria-hidden="true"
+                              tabindex="-1"
                             />
-                            <span class="driver__unit">%</span>
-                          </span>
-                        </div>
-                        <input
-                          class="driver__range"
-                          type="range"
-                          min={d.min}
-                          max={d.max}
-                          step={d.step}
-                          value={d.value}
-                          data-target={d.id}
-                          aria-hidden="true"
-                          tabindex="-1"
-                        />
+                          </div>
+                        ))}
                       </div>
-                    ))
-                  }
-                </div>
-                <p class="calc-mix" id="mix-note" aria-live="polite"></p>
+                      <p class="calc-mix" id={row.noteId} aria-live="polite"></p>
+                    </div>
+                  ))
+                }
               </div>
             </div>
 
@@ -533,7 +568,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                                 <div class="calc-input-wrap" data-kind={f.kind}>
                                   {f.kind === 'money' && <span class="calc-input-affix">RMB</span>}
                                   <input
-                                    class="calc-input"
+                                    class:list={['calc-input', { 'calc-input--static': f.readonly }]}
                                     type="number"
                                     inputmode="decimal"
                                     id={f.id}
@@ -544,8 +579,12 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                                     step={f.step ?? '1'}
                                     min="0"
                                     placeholder={f.kind === 'percent' ? '%' : ''}
+                                    readonly={f.readonly}
+                                    tabindex={f.readonly ? '-1' : undefined}
+                                    aria-readonly={f.readonly ? 'true' : undefined}
                                   />
                                   {f.kind === 'percent' && <span class="calc-input-affix calc-input-affix--suffix">%</span>}
+                                  {f.suffix && <span class="calc-input-affix calc-input-affix--suffix">{f.suffix}</span>}
                                 </div>
                               )}
                               {f.fx && (
@@ -640,7 +679,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         <div class="calc-results__head reveal">
           <div class="calc-results__head-text">
             <span class="eyebrow">Your estimate</span>
-            <h2 class="calc-results__title">First-year cost breakdown</h2>
+            <h2 class="calc-results__title">Year 1 and Year 2 cost breakdown</h2>
             <p class="calc-results__sub" id="calc-results-sub"></p>
           </div>
           <button type="button" class="btn btn--secondary btn--sm calc-results__pdf" id="calc-pdf" data-export-pdf>
@@ -665,14 +704,19 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             </div>
             <div class="calc-focus__stats">
               <div class="calc-stat calc-stat--pl" id="focus-pl1-wrap">
-                <span class="calc-stat__label" id="focus-pl1-label">Profit or loss</span>
+                <span class="calc-stat__label" id="focus-pl1-label">Operating profit or loss</span>
                 <span class="calc-stat__value" id="focus-pl1">Add margin</span>
-                <span class="calc-stat__foot" id="focus-pl1-foot">at your gross margin</span>
+                <span class="calc-stat__foot" id="focus-pl1-foot">at your gross margin, setup excluded</span>
               </div>
               <div class="calc-stat">
                 <span class="calc-stat__label">Net channel margin</span>
                 <span class="calc-stat__value" id="focus-ncm">RMB 0</span>
-                <span class="calc-stat__foot" id="focus-ncm-foot">GMV less real cash spent, before product cost</span>
+                <span class="calc-stat__foot" id="focus-ncm-foot">GMV less running costs, before product cost</span>
+              </div>
+              <div class="calc-stat calc-stat--capex" id="focus-capex-wrap">
+                <span class="calc-stat__label">Setup amortization</span>
+                <span class="calc-stat__value" id="focus-capex">RMB 0</span>
+                <span class="calc-stat__foot" id="focus-capex-foot">this year's share of the setup</span>
               </div>
               <div class="calc-stat">
                 <span class="calc-stat__label">Real cash spent</span>
@@ -726,7 +770,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
           </summary>
           <div class="calc-table-bar">
-            <span class="calc-table-bar__label">Full first-year and Year 2 breakdown</span>
+            <span class="calc-table-bar__label">Full Year 1 and Year 2 breakdown</span>
             <button type="button" class="btn btn--secondary btn--sm calc-table-bar__pdf" data-export-pdf>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
               Export this table to PDF
@@ -905,24 +949,25 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     form.addEventListener('input', updatePreview);
     updatePreview();
 
-    // ---------- channel mix: check the three shares total 100% (no auto-edit) ----------
+    // ---------- channel mix: each year's three shares must total 100% (no auto-edit) ----------
     let mixIs100 = true;
-    (function () {
-      const ids = ['paidShare', 'kolShare', 'organicShare'];
+    let mix2Is100 = true;
+    function wireMix(ids, noteId, setOk) {
       const labels = ['paid media', 'KOLs', 'organic'];
       const els = ids.map((id) => document.getElementById(id));
       if (els.some((e) => !e)) return;
-      const mixNote = document.getElementById('mix-note');
+      const mixNote = document.getElementById(noteId);
       function validateMix() {
         const v = els.map((e) => Math.max(0, Math.round(parseFloat(e.value) || 0)));
         const sum = v[0] + v[1] + v[2];
-        mixIs100 = sum === 100;
+        const ok = sum === 100;
+        setOk(ok);
         if (!mixNote) return;
         const chips = ids
           .map(
             (id, k) =>
               '<span class="calc-mix__seg calc-mix__seg--' +
-              id +
+              id.replace(/2$/, '') +
               '"><span class="calc-mix__dot"></span>' +
               v[k] +
               '% ' +
@@ -930,17 +975,19 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
               '</span>',
           )
           .join('');
-        const status = mixIs100
+        const status = ok
           ? '<span class="calc-mix__status calc-mix__status--ok">Total 100% ✓</span>'
           : '<span class="calc-mix__status calc-mix__status--bad">Total ' +
             sum +
             '%, needs to be 100%</span>';
         mixNote.innerHTML = chips + status;
-        mixNote.classList.toggle('calc-mix--bad', !mixIs100);
+        mixNote.classList.toggle('calc-mix--bad', !ok);
       }
       els.forEach((e) => e.addEventListener('input', validateMix));
       validateMix();
-    })();
+    }
+    wireMix(['paidShare', 'kolShare', 'organicShare'], 'mix-note', (ok) => (mixIs100 = ok));
+    wireMix(['paidShare2', 'kolShare2', 'organicShare2'], 'mix-note-2', (ok) => (mix2Is100 = ok));
 
     // ---------- advanced accordion ----------
     const advToggle = document.getElementById('advanced-toggle');
@@ -1169,6 +1216,10 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const orders = gmv / aov;
       const taxPayer = (document.getElementById('cbecTaxPayer') || {}).value || 'consumer';
       const brandPaysTax = taxPayer === 'brand';
+      // Year 2 sells more: its stack scales off Year 1 GMV grown by the
+      // "Year 2 GMV growth" assumption.
+      const gmv2 = gmv * (1 + (i.gmvGrowth || 0));
+      const orders2 = gmv2 / aov;
 
       const setup = {
         'Platform deposit (refundable)': i.platformDeposit || 0,
@@ -1179,17 +1230,30 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       };
       const setupTotal = Object.values(setup).reduce((a, b) => a + b, 0);
 
-      // Fixed and per-order coefficients for break-even. Refundable capital is
-      // left out on purpose: it comes back on exit, so it is not a P&L cost.
+      // Setup splits in two. The deposits and the tax prepayment come back on
+      // exit, so they are working capital and never touch the P&L. The trademark
+      // and the store build are spent for good: a real cost, but one that earns
+      // over several years, so it is amortized rather than charged to Year 1.
+      const refundableCapex = (i.platformDeposit || 0) + (i.whDeposit || 0) + (i.whTaxPrepay || 0);
+      const sunkCapex = (i.trademark || 0) + (i.brandSetup || 0);
+      const amortYears = Math.max(1, Math.round(i.amortYears || 1));
+      const amortAnnual = sunkCapex / amortYears;
+      // A one-year write-off is fully expensed in Year 1, so Year 2 carries none.
+      const amortY1 = amortAnnual;
+      const amortY2 = amortYears >= 2 ? amortAnnual : 0;
+      const amortLabel = 'Setup amortization (' + amortYears + '-year)';
+
+      // Fixed and per-order coefficients for break-even. The fixed side is the
+      // running services plus the year's amortization: break-even asks what GMV
+      // covers the annual bill the P&L actually carries.
       const tpRetainerAnnual = (i.dpRetainer || 0) * 12;
       // The platform annual fee, the TP retainer, the co-fund and any clearance
       // agent are the fixed running cost. Service-side VAT on those fees is
       // assumed baked into the quotes, so it is not modelled separately.
       const fixedServices =
         (i.agentFee || 0) + tpRetainerAnnual + (i.coFund || 0) + (i.annualFee || 0);
-      const F = fixedServices + (i.trademark || 0) + (i.brandSetup || 0);
-      // Year 2 fixed cost: the one-time sunk setup (trademark + store build) is gone.
-      const F2 = fixedServices;
+      const F = fixedServices + amortY1;
+      const F2 = fixedServices + amortY2;
       const vQ =
         (i.storage || 0) * 2 +
         (i.fulfillment || 0) +
@@ -1197,55 +1261,90 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         (i.returnRate || 0) * (i.returnHandling || 0);
 
       function scenario(roas) {
-        const media = roas > 0 ? (gmv * (i.paidShare || 0)) / roas : 0;
-        const tpCommission = gmv * (i.dpCommission || 0);
-        const commission = gmv * (i.techFee || 0);
-        const payment = gmv * (i.paymentFee || 0);
-        const vat = brandPaysTax ? gmv * (i.cbecTax || 0) : 0;
-        const op = {
-          'TP monthly retainer (× 12)': tpRetainerAnnual,
-          'TP commission on GMV': tpCommission,
-          'Platform annual fee': i.annualFee || 0,
-          'Platform commission (运营支持服务费)': commission,
-          'Payment fee': payment,
-          'Paid media (JD 快车 and display)': media,
-          'KOL and livestream commission': gmv * (i.kolShare || 0) * (i.kolCommission || 0),
-          'Campaign co-fund': i.coFund || 0,
-          'Customs clearance agent': i.agentFee || 0,
-          'Bonded warehouse storage': orders * (i.storage || 0) * 2,
-          'Fulfillment (pick and pack)': orders * (i.fulfillment || 0),
-          'Last-mile shipping': orders * (i.shipping || 0),
-          'Returns handling': orders * (i.returnRate || 0) * (i.returnHandling || 0),
-        };
-        // Consumer carries the VAT in most flagship setups, so it only lands on
-        // the brand P&L when the payer toggle says so.
-        if (brandPaysTax) op['Cross-border VAT (综合税)'] = vat;
+        // One operating stack per year. Year 2 differs on three inputs: its own
+        // channel mix (paid vs KOL vs organic), a grown GMV, and the share of
+        // the setup write-off it still carries.
+        function opStack(paidShare, kolShare, g, o, amort) {
+          const media = roas > 0 ? (g * (paidShare || 0)) / roas : 0;
+          const tpCommission = g * (i.dpCommission || 0);
+          const commission = g * (i.techFee || 0);
+          const payment = g * (i.paymentFee || 0);
+          const vat = brandPaysTax ? g * (i.cbecTax || 0) : 0;
+          const op = {
+            'TP monthly retainer (× 12)': tpRetainerAnnual,
+            'TP commission on GMV': tpCommission,
+            'Platform annual fee': i.annualFee || 0,
+            'Platform commission (运营支持服务费)': commission,
+            'Payment fee': payment,
+            'Paid media (JD 快车 and display)': media,
+            'KOL and livestream commission': g * (kolShare || 0) * (i.kolCommission || 0),
+            'Campaign co-fund': i.coFund || 0,
+            'Customs clearance agent': i.agentFee || 0,
+            'Bonded warehouse storage': o * (i.storage || 0) * 2,
+            'Fulfillment (pick and pack)': o * (i.fulfillment || 0),
+            'Last-mile shipping': o * (i.shipping || 0),
+            'Returns handling': o * (i.returnRate || 0) * (i.returnHandling || 0),
+          };
+          // Consumer carries the VAT in most store setups, so it only lands on
+          // the brand P&L when the payer toggle says so.
+          if (brandPaysTax) op['Cross-border VAT (综合税)'] = vat;
 
-        const opTotal = Object.values(op).reduce((a, b) => a + b, 0);
-        const total = setupTotal + opTotal;
-        const refundable = (i.platformDeposit || 0) + (i.whDeposit || 0) + (i.whTaxPrepay || 0);
+          // Cash leaving the building this year, before the write-off.
+          const cashOp = Object.values(op).reduce((a, b) => a + b, 0);
+          // The write-off is a P&L cost with no cash behind it: the money was
+          // already paid at setup. It is charged here and nowhere else, so the
+          // cash column and the profit column never double-count it.
+          op[amortLabel] = amort;
+          const opTotal = cashOp + amort;
+
+          // %-of-GMV variable rate for this ROAS and mix.
+          const paidRate = roas > 0 ? (paidShare || 0) / roas : 0;
+          const vG =
+            (i.dpCommission || 0) +
+            (kolShare || 0) * (i.kolCommission || 0) +
+            (i.techFee || 0) +
+            (i.paymentFee || 0) +
+            (brandPaysTax ? i.cbecTax || 0 : 0) +
+            paidRate;
+
+          // Buckets for the composition bar
+          const buckets = [
+            { key: 'Setup', color: '#c8102e', value: setupTotal },
+            { key: 'TP retainer + commission', color: '#e2683b', value: tpRetainerAnnual + tpCommission },
+            { key: 'Paid media', color: '#f4874b', value: op['Paid media (JD 快车 and display)'] },
+            { key: 'KOL and livestream', color: '#f4b740', value: op['KOL and livestream commission'] },
+            { key: 'Platform and payment fee', color: '#7b61a8', value: op['Platform commission (运营支持服务费)'] + op['Payment fee'] + (op['Platform annual fee'] || 0) },
+            { key: 'Cross-border VAT', color: '#9b5bb0', value: vat },
+            { key: 'Logistics', color: '#3aa0c8', value: op['Bonded warehouse storage'] + op['Fulfillment (pick and pack)'] + op['Last-mile shipping'] + op['Returns handling'] },
+            { key: 'Agent + co-fund', color: '#2fb67f', value: op['Customs clearance agent'] + op['Campaign co-fund'] },
+          ];
+          return { op, opTotal, cashOp, vG, buckets };
+        }
+
+        const y1 = opStack(i.paidShare, i.kolShare, gmv, orders, amortY1);
+        const y2 = opStack(i.paidShare2, i.kolShare2, gmv2, orders2, amortY2);
+
+        const opTotal = y1.opTotal;
+        const vG = y1.vG;
+        // total = every RMB that leaves the building in Year 1: the setup cheque
+        // in full, plus the running cash. The write-off is excluded here, since
+        // the cash it represents is already in setupTotal.
+        const total = setupTotal + y1.cashOp;
+        const refundable = refundableCapex;
         const netSunk = total - refundable;
         const totalUSD = i.fx > 0 ? total / i.fx : 0;
         const costPerOrder = orders > 0 ? total / orders : 0;
         const totalPctGmv = gmv > 0 ? total / gmv : 0;
         const opPctGmv = gmv > 0 ? opTotal / gmv : 0;
 
-        // %-of-GMV variable rate for this ROAS.
-        const paidRate = roas > 0 ? (i.paidShare || 0) / roas : 0;
-        const vG =
-          (i.dpCommission || 0) +
-          (i.kolShare || 0) * (i.kolCommission || 0) +
-          (i.techFee || 0) +
-          (i.paymentFee || 0) +
-          (brandPaysTax ? i.cbecTax || 0 : 0) +
-          paidRate;
-
         let breakeven = null;
         let breakevenMonthly = null;
         let breakevenOrders = null;
         let contribution = null;
         if (i.grossMargin != null) {
-          contribution = gmv * i.grossMargin - total;
+          // Operating P&L: gross profit less the running cost and this year's
+          // share of the setup write-off.
+          contribution = gmv * i.grossMargin - opTotal;
           const denom = i.grossMargin - vG - (aov > 0 ? vQ / aov : 0);
           if (denom <= 0) {
             breakeven = 'GM too low';
@@ -1256,27 +1355,44 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
           }
         }
 
-        // Buckets for the composition bar
-        const buckets = [
-          { key: 'Setup', color: '#c8102e', value: setupTotal },
-          { key: 'TP retainer + commission', color: '#e2683b', value: op['TP monthly retainer (× 12)'] + op['TP commission on GMV'] },
-          { key: 'Paid media', color: '#f4874b', value: op['Paid media (JD 快车 and display)'] },
-          { key: 'KOL and livestream', color: '#f4b740', value: op['KOL and livestream commission'] },
-          { key: 'Platform and payment fee', color: '#7b61a8', value: op['Platform commission (运营支持服务费)'] + op['Payment fee'] + (op['Platform annual fee'] || 0) },
-          { key: 'Cross-border VAT', color: '#9b5bb0', value: vat },
-          { key: 'Logistics', color: '#3aa0c8', value: op['Bonded warehouse storage'] + op['Fulfillment (pick and pack)'] + op['Last-mile shipping'] + op['Returns handling'] },
-          { key: 'Agent + co-fund', color: '#2fb67f', value: op['Customs clearance agent'] + op['Campaign co-fund'] },
-        ];
-
-        return { op, opTotal, total, refundable, netSunk, totalUSD, costPerOrder, totalPctGmv, opPctGmv, vG, breakeven, breakevenMonthly, breakevenOrders, contribution, buckets };
+        return {
+          op: y1.op,
+          opTotal,
+          cashOp: y1.cashOp,
+          vG,
+          buckets: y1.buckets,
+          op2: y2.op,
+          opTotal2: y2.opTotal,
+          cashOp2: y2.cashOp,
+          vG2: y2.vG,
+          buckets2: y2.buckets,
+          total,
+          refundable,
+          netSunk,
+          totalUSD,
+          costPerOrder,
+          totalPctGmv,
+          opPctGmv,
+          breakeven,
+          breakevenMonthly,
+          breakevenOrders,
+          contribution,
+        };
       }
 
       return {
         orders,
         aov,
         gmv,
+        gmv2,
+        orders2,
         setup,
         setupTotal,
+        refundableCapex,
+        sunkCapex,
+        amortYears,
+        amortY1,
+        amortY2,
         F,
         F2,
         vQ,
@@ -1316,10 +1432,15 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     }
     // When they're already unlocked, the CTA is a re-run, not a locked gate.
     function paintCta() {
+      if (!unlocked) return;
       const cta = document.getElementById('calc-submit');
       const note = document.querySelector('.calc-preview__note');
-      if (unlocked && cta) cta.textContent = 'Update my breakdown';
-      if (unlocked && note) note.textContent = 'Change any assumption above, then re-run. No need to sign in again.';
+      // The blurred teaser only makes sense while the numbers are still hidden.
+      // Once they are on the page, the rail is just a re-run button.
+      const locked = document.querySelector('.calc-preview__locked');
+      if (locked) locked.remove();
+      if (cta) cta.textContent = 'Update my breakdown';
+      if (note) note.textContent = 'Change any assumption above, then re-run. No need to sign in again.';
     }
     paintCta();
 
@@ -1330,15 +1451,22 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const i = state.i;
       const y2 = activeYear === '2';
 
-      // period-dependent figures. Year 2 drops the one-time setup, so its cost
-      // is the operating stack only, and no refundable capital is in play.
-      const cost = y2 ? s.opTotal : s.total;
+      // period-dependent figures, on a CASH basis: Year 2 writes no setup cheque
+      // and runs on its own channel mix, so its cash cost is the Year 2 running
+      // stack. The amortization is a P&L line and is deliberately not in here.
+      const cost = y2 ? s.cashOp2 : s.total;
       const costUSD = i.fx > 0 ? cost / i.fx : 0;
-      const cash = y2 ? s.opTotal : s.netSunk;
-      const cpo = r.orders > 0 ? cost / r.orders : 0;
-      const pctGmv = r.gmv > 0 ? cost / r.gmv : 0;
+      const cash = y2 ? s.cashOp2 : s.netSunk;
+      // Year 2 runs on grown GMV, so its per-order and %-of-GMV figures
+      // divide by the Year 2 volumes.
+      const gmvYear = y2 ? r.gmv2 : r.gmv;
+      const ordersYear = y2 ? r.orders2 : r.orders;
+      const cpo = ordersYear > 0 ? cost / ordersYear : 0;
+      const pctGmv = gmvYear > 0 ? cost / gmvYear : 0;
 
-      document.getElementById('focus-hero-label').textContent = y2 ? 'Total Year 2 cost' : 'Total Year 1 cost';
+      document.getElementById('focus-hero-label').textContent = y2
+        ? 'Total Year 2 cost'
+        : 'Total Year 1 cash out (setup + running)';
       animateCount(document.getElementById('focus-total'), cost, rmb0);
       animateCount(document.getElementById('focus-usd'), costUSD, usd0);
       animateCount(document.getElementById('focus-sunk'), cash, rmb0);
@@ -1349,13 +1477,13 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       document.getElementById('focus-cpo-foot').textContent = 'vs ' + rmb0(i.aov || 0) + ' AOV';
       document.getElementById('focus-pct').textContent = pct1(pctGmv);
 
-      // breakeven, year aware (Year 2 fixed cost drops the sunk setup)
+      // breakeven, year aware (Year 2 drops the sunk setup and runs its own mix)
       const Fyear = y2 ? r.F2 : r.F;
       const be = document.getElementById('focus-be');
       const beWrap = document.getElementById('focus-be-wrap');
       const beFoot = document.getElementById('focus-be-foot');
       if (r.hasGm) {
-        const denom = i.grossMargin - s.vG - (r.aov > 0 ? r.vQ / r.aov : 0);
+        const denom = i.grossMargin - (y2 ? s.vG2 : s.vG) - (r.aov > 0 ? r.vQ / r.aov : 0);
         if (denom <= 0) {
           be.textContent = 'GM too low';
           beFoot.textContent = 'lift your margin first';
@@ -1376,19 +1504,21 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         beWrap.classList.add('is-muted');
       }
 
-      // single profit or loss card, switched by the year tab
+      // Operating profit or loss: gross profit less the running cost and this
+      // year's share of the setup write-off. The refundable deposits stay out.
+      const opYear = y2 ? s.opTotal2 : s.opTotal;
       const plEl = document.getElementById('focus-pl1');
       const plFoot = document.getElementById('focus-pl1-foot');
       const plWrap = document.getElementById('focus-pl1-wrap');
       plEl.classList.remove('is-profit', 'is-loss');
       if (r.hasGm) {
-        const grossProfit = (i.gmv || 0) * i.grossMargin;
-        const amount = y2 ? grossProfit - s.opTotal : s.contribution;
+        const grossProfit = gmvYear * i.grossMargin;
+        const amount = grossProfit - opYear;
         const sign = amount >= 0 ? '+' : '−';
         plEl.textContent = sign + rmb0(Math.abs(amount));
         plEl.classList.add(amount >= 0 ? 'is-profit' : 'is-loss');
         plFoot.textContent =
-          (amount >= 0 ? 'profit. ' : 'loss. ') + (y2 ? 'setup gone' : 'at your gross margin');
+          (amount >= 0 ? 'profit. ' : 'loss. ') + 'after running costs and setup amortization';
         plWrap.classList.remove('is-muted');
       } else {
         plEl.textContent = 'Add margin';
@@ -1396,23 +1526,51 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         plWrap.classList.add('is-muted');
       }
 
-      // Net channel margin: GMV less cash actually spent (refundable deposits
-      // excluded, they come back on exit), before product cost.
-      const ncm = (i.gmv || 0) - cash;
+      // Setup capex: the cheque is written in Year 1, but the P&L only carries
+      // the year's amortized share, which is what this card reports per year.
+      const capexEl = document.getElementById('focus-capex');
+      const capexFoot = document.getElementById('focus-capex-foot');
+      const capexWrap = document.getElementById('focus-capex-wrap');
+      const amortYear = y2 ? r.amortY2 : r.amortY1;
+      if (y2) {
+        animateCount(capexEl, amortYear, rmb0);
+        capexFoot.textContent =
+          amortYear > 0
+            ? 'amortized share, no cash out. Setup was paid in Year 1'
+            : 'written off in full in Year 1, nothing left to charge';
+        capexWrap.classList.add('is-muted');
+      } else {
+        animateCount(capexEl, amortYear, rmb0);
+        capexFoot.textContent =
+          "this year's share of " +
+          rmb0(r.sunkCapex) +
+          ' written off over ' +
+          r.amortYears +
+          (r.amortYears === 1 ? ' year' : ' years') +
+          '. ' +
+          rmb0(r.refundableCapex) +
+          ' of deposits comes back';
+        capexWrap.classList.remove('is-muted');
+      }
+
+      // Net channel margin: GMV less the operating cost (which now carries the
+      // write-off), before product cost.
+      const ncm = gmvYear - opYear;
       const ncmEl = document.getElementById('focus-ncm');
       ncmEl.classList.remove('is-profit', 'is-loss');
       ncmEl.textContent = (ncm >= 0 ? '+' : '−') + rmb0(Math.abs(ncm));
       ncmEl.classList.add(ncm >= 0 ? 'is-profit' : 'is-loss');
-      document.getElementById('focus-ncm-foot').textContent = y2
-        ? 'GMV less running costs, before product cost'
-        : 'GMV less real cash spent, before product cost';
+      document.getElementById('focus-ncm-foot').textContent =
+        'GMV less running costs, before product cost';
 
       document.getElementById('compo-sub').textContent = y2
         ? 'Your Year 2 running cost, ranked biggest to smallest.'
         : 'Your first-year cost, ranked biggest to smallest.';
       document.getElementById('compo-total-label').textContent = y2 ? 'Total Year 2' : 'Total Year 1';
-      const compoBuckets = y2 ? s.buckets.filter((b) => b.key !== 'Setup') : s.buckets;
-      renderCompo(compoBuckets, y2 ? s.opTotal : s.total);
+      // The composition bar is a cash picture: Year 1 shows the setup cheque in
+      // full, Year 2 shows running cash only. The write-off is not a bucket.
+      const compoBuckets = y2 ? s.buckets2.filter((b) => b.key !== 'Setup') : s.buckets;
+      renderCompo(compoBuckets, y2 ? s.cashOp2 : s.total);
     }
 
     // line icons keyed by bucket, drawn in currentColor
@@ -1587,49 +1745,71 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const plRow = (label, y1, y2) =>
         '<tr class="calc-table__total calc-table__pl"><td>' + label + '</td>' + plCell(y1) + plCell(y2) + '</tr>';
 
-      // Setup and refundable deposits are Year 1 only: they drop off in Year 2.
-      let rows = sectionRow('Setup, one-time');
+      // The setup cheque is written once, in Year 1. Part of it comes back on
+      // exit; the rest is amortized into the operating lines below.
+      let rows = sectionRow('Setup, one-time cash (Year 1)');
       Object.keys(r.setup).forEach((k) => {
         rows += dataRow(k, r.setup[k], null, false);
       });
       rows += dataRow('Subtotal setup', r.setupTotal, null, true);
+      rows += dataRow('Of which refundable on exit (never a P&L cost)', r.refundableCapex, null, false);
+      rows += dataRow(
+        'Of which spent for good (amortized over ' + r.amortYears + (r.amortYears === 1 ? ' year' : ' years') + ')',
+        r.sunkCapex,
+        null,
+        false,
+      );
 
-      // Operating cost recurs, so it fills both columns.
-      rows += sectionRow('Operating, annual');
+      // Operating cost recurs, but Year 2 runs on its own channel mix and a
+      // grown GMV, so the sales-driven lines differ between the two columns.
+      // The last line is the write-off: a cost with no cash behind it.
+      rows += sectionRow('Operating, annual (the P&L)');
       Object.keys(s.op).forEach((k) => {
-        rows += dataRow(k, s.op[k], s.op[k], false);
+        rows += dataRow(k, s.op[k], s.op2[k], false);
       });
-      rows += dataRow('Subtotal operating', s.opTotal, s.opTotal, true);
+      rows += dataRow('Subtotal operating', s.opTotal, s.opTotal2, true);
 
-      rows += sectionRow('Totals');
-      rows += dataRow('Total cost (RMB)', s.total, s.opTotal, true);
-      rows += dataRow('Of which refundable', s.refundable, null, false);
-      rows += dataRow('Real cash spent', s.netSunk, s.opTotal, true);
+      rows += sectionRow('Cash view (amortization excluded, it moves no cash)');
+      rows += dataRow('Assumed GMV', gmv, r.gmv2, false);
+      rows += dataRow('Total cash out (setup + running)', s.total, s.cashOp2, true);
+      rows += dataRow('Real cash spent, after refunds', s.netSunk, s.cashOp2, true);
       if (fx) {
         rows +=
-          '<tr class="calc-table__total"><td>Total cost (USD)</td><td>' +
+          '<tr class="calc-table__total"><td>Total cash out (USD)</td><td>' +
           usd0(s.totalUSD) +
           '</td><td>' +
-          usd0(s.opTotal / fx) +
+          usd0(s.cashOp2 / fx) +
           '</td></tr>';
       }
-      rows += dataRow('Year 1 to Year 2 saving', s.total - s.opTotal, null, false);
-      rows += plRow('Net channel margin (before product cost)', gmv - s.netSunk, gmv - s.opTotal);
+      rows += dataRow('Year 1 to Year 2 saving', s.total - s.cashOp2, null, false);
+      rows += plRow(
+        'Net channel margin (GMV less operating cost, before product cost)',
+        gmv - s.opTotal,
+        r.gmv2 - s.opTotal2,
+      );
 
-      rows += sectionRow('Profit or loss at your margin');
+      rows += sectionRow('Operating profit or loss at your margin');
       if (r.hasGm) {
-        // Breakeven differs by year: Year 2 carries the lower fixed cost (F2), so
-        // its breakeven GMV is lower. Both share the same contribution margin.
-        const denom = i.grossMargin - s.vG - (r.aov > 0 ? r.vQ / r.aov : 0);
-        const beCell = (F) => (denom <= 0 ? 'GM too low' : rmb0(F / denom));
+        // Break-even asks what GMV covers the running bill, so the fixed side is
+        // services only. The two years differ on their channel mix (vG vs vG2).
+        const beCell = (F, vG) => {
+          const denom = i.grossMargin - vG - (r.aov > 0 ? r.vQ / r.aov : 0);
+          return denom <= 0 ? 'GM too low' : rmb0(F / denom);
+        };
         const grossProfit = gmv * i.grossMargin;
-        rows += dataRow('Gross profit (GMV × margin)', grossProfit, grossProfit, false);
-        rows += plRow('Result (profit or loss)', s.contribution, grossProfit - s.opTotal);
+        const grossProfit2 = r.gmv2 * i.grossMargin;
+        rows += dataRow('Gross profit (GMV × margin)', grossProfit, grossProfit2, false);
+        rows += dataRow('Less operating cost (incl. setup amortization)', s.opTotal, s.opTotal2, false);
+        rows += plRow('Operating result (profit or loss)', s.contribution, grossProfit2 - s.opTotal2);
         rows +=
-          '<tr><td>Breakeven GMV</td><td>' + beCell(r.F) + '</td><td>' + beCell(r.F2) + '</td></tr>';
+          '<tr><td>Breakeven GMV</td><td>' + beCell(r.F, s.vG) + '</td><td>' + beCell(r.F2, s.vG2) + '</td></tr>';
+        rows +=
+          '<tr class="calc-table__memo"><td>Memo: refundable deposits, cash out but never a cost</td><td>' +
+          rmb0(r.refundableCapex) +
+          '</td><td><span class="calc-table__na">—</span></td></tr>';
       } else {
         rows +=
-          '<tr class="calc-table__prompt"><td colspan="3">Add your gross margin below (open "Fine-tune every input", then the "Your economics" tab) to see Year 1 and Year 2 profit or loss.</td></tr>';
+          '<tr class="calc-table__prompt"><td colspan="3">Add your gross margin below (open "Fine-tune every input", then the "Your economics" tab) to see Year 1 and Year 2 operating profit or loss.</td></tr>';
       }
       body.innerHTML = rows;
     }
@@ -1639,7 +1819,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
       const r = state.r;
       const roas = i.roas || 0;
       document.getElementById('calc-results-sub').textContent =
-        'Based on ' + rmb0(i.gmv || 0) + ' GMV, ' + Math.round(r.orders).toLocaleString('en-US') + ' orders a year at ' + rmb0(i.aov || 0) + ' average order value, ROAS ' + roas + 'x.';
+        'Based on ' + rmb0(i.gmv || 0) + ' GMV, ' + Math.round(r.orders).toLocaleString('en-US') + ' orders a year at ' + rmb0(i.aov || 0) + ' average order value, ROAS ' + roas + 'x. Year 2 assumes ' + rmb0(r.gmv2) + ' GMV (+' + Math.round((i.gmvGrowth || 0) * 100) + '%).';
       renderFocus();
       renderTable();
       results.hidden = false;
@@ -1683,14 +1863,19 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         inputs.push({ label, value: val });
       });
       const out = [
-        { label: 'Total Year 1', value: rmb0(r.s.total) + ' / ' + usd0(r.s.totalUSD) },
-        { label: 'Total Year 2', value: rmb0(r.s.opTotal) },
+        { label: 'Total Year 1 cash out', value: rmb0(r.s.total) + ' / ' + usd0(r.s.totalUSD) },
+        { label: 'Setup, one-time cash', value: rmb0(r.setupTotal) + ', of which ' + rmb0(r.refundableCapex) + ' refundable' },
+        { label: 'Setup amortization, per year', value: rmb0(r.amortY1) + ' over ' + r.amortYears + ' years' },
+        { label: 'Operating cost, Year 1 (incl. amortization)', value: rmb0(r.s.opTotal) },
+        { label: 'Operating cost, Year 2 (incl. amortization)', value: rmb0(r.s.opTotal2) },
+        { label: 'Year 2 GMV assumed', value: rmb0(r.gmv2) },
         { label: 'Real cash spent, Year 1', value: rmb0(r.s.netSunk) },
         { label: 'Cost per order', value: rmb0(r.s.costPerOrder) },
         { label: 'Cost as % of GMV', value: pct1(r.s.totalPctGmv) },
       ];
       if (r.hasGm) {
         const be = typeof r.s.breakeven === 'string' ? r.s.breakeven : rmb0(r.s.breakeven);
+        out.push({ label: 'Operating result, Year 1 (incl. amortization)', value: rmb0(r.s.contribution) });
         out.push({ label: 'Breakeven GMV', value: be });
       }
       return { inputs, results: out };
@@ -1719,8 +1904,9 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      if (!mixIs100) {
-        const note = document.getElementById('mix-note');
+      const badMixNote = !mixIs100 ? 'mix-note' : !mix2Is100 ? 'mix-note-2' : null;
+      if (badMixNote) {
+        const note = document.getElementById(badMixNote);
         if (note) {
           note.classList.add('calc-mix--shake');
           note.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -2114,6 +2300,21 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
     font-size: var(--fs-small);
     color: var(--bbg-text-muted);
     margin-top: 0.15rem;
+  }
+  /* one mix row per year */
+  .driver-group__row + .driver-group__row {
+    margin-top: var(--space-5);
+    padding-top: var(--space-5);
+    border-top: 1px dashed var(--bbg-border);
+  }
+  .driver-group__year {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bbg-blue);
+    margin-bottom: var(--space-3);
   }
   .driver-group__grid {
     display: grid;
@@ -2538,6 +2739,19 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   .calc-input:focus {
     outline: none;
   }
+  /* fixed FYI value (engagement period): shown, never edited */
+  .calc-input--static {
+    color: var(--bbg-text-muted);
+    background: var(--bbg-surface);
+    cursor: default;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  .calc-input--static::-webkit-outer-spin-button,
+  .calc-input--static::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
   .calc-select {
     width: 100%;
     padding: 0.7rem 2.2rem 0.7rem 0.8rem;
@@ -2805,6 +3019,12 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   .calc-table__na {
     color: var(--bbg-text-muted);
   }
+  /* memo line: shown for reference, deliberately not part of the result above it */
+  .calc-table__memo td {
+    color: var(--bbg-text-muted);
+    font-style: italic;
+    border-top: 1px dashed var(--bbg-border);
+  }
   /* Year 1 / Year 2 segmented control */
   .calc-period__tabs {
     display: inline-flex;
@@ -2970,6 +3190,11 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
   .calc-stat--pl:has(.is-loss) {
     border-color: color-mix(in srgb, var(--bbg-danger, #d33a3a) 40%, var(--bbg-border));
     background: color-mix(in srgb, var(--bbg-danger, #d33a3a) 6%, var(--bbg-white));
+  }
+  /* the write-off is a neutral aside, not a win or a loss: never green or red */
+  .calc-stat--capex {
+    border-style: dashed;
+    background: var(--bbg-surface);
   }
 
   /* ---------- cost composition ---------- */
