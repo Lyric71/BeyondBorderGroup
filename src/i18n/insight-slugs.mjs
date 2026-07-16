@@ -7,6 +7,7 @@
  * When adding a new FR-translated insight, append it here and rebuild.
  */
 export const insightEnToFr = {
+  'ai-brand-micro-drama-china': 'micro-series-ia-marques-chine',
   '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event':
     'singles-day-11-11-e-commerce-chinois',
   'a-comparison-between-tmall-and-amazon': 'tmall-amazon-deux-modeles',
@@ -129,6 +130,7 @@ export const insightFrToEn = Object.fromEntries(
  * per CLAUDE.md §6.11. Brand and platform names stay canonical per §6.8.
  */
 export const insightEnToDe = {
+  'ai-brand-micro-drama-china': 'ki-mikrodrama-marken-china',
   '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event':
     'singles-day-11-11-e-commerce-china',
   'a-comparison-between-tmall-and-amazon': 'tmall-amazon-zwei-modelle',
@@ -251,6 +253,7 @@ export const insightDeToEn = Object.fromEntries(
  * Brand and platform names stay canonical per CLAUDE.md §6.8.
  */
 export const insightEnToEs = {
+  'ai-brand-micro-drama-china': 'microdramas-ia-marcas-china',
   '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event':
     'singles-day-11-11-marcas-globales',
   'a-comparison-between-tmall-and-amazon': 'tmall-vs-amazon-comparativa',
