@@ -192,6 +192,27 @@ When the user requests a content or copy change, default to editing **only the f
 - Applies to: copy changes, hero rewrites, section reworks, button labels, taglines, alt text, meta descriptions, error messages, and any user-visible text.
 - Does NOT apply to shared infrastructure changes (CSS in `global.css`, shared Astro components, route helpers, layout files, `astro.config.mjs`); those changes are technically global by nature.
 
+### 6.9b Currency: euros in FR, ES and DE (MANDATORY, permanent)
+
+Every price, budget, fee or monetary amount in French, Spanish and German
+content is expressed in **euros**. Never leave a USD figure in an FR/ES/DE
+page.
+
+- Convert USD amounts at a sensible rate and round them (`3,000 to 5,000 USD a
+  month` becomes `2 500 à 4 500 euros par mois`). Keep the qualifier
+  ("environ", "rund", "unos").
+- RMB amounts stay in RMB. When the English source pairs an RMB figure with a
+  USD equivalent, the locale version pairs it with the euro equivalent instead.
+- The English page keeps USD.
+- Applies to body copy, tables, key takeaways, meta descriptions, card copy and
+  CTA microcopy.
+- Locale number formatting still applies: `180 000 euros` (FR),
+  `180.000 Euro` (DE), `180.000 euros` (ES).
+
+**Why:** these locales serve European readers. A dollar figure reads as an
+untranslated American page and makes the reader do the conversion. The user
+made this a permanent project rule.
+
 ### 6.10 What to avoid
 
 - Full retranslation of an existing locale page from English.

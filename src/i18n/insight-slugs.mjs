@@ -7,6 +7,7 @@
  * When adding a new FR-translated insight, append it here and rebuild.
  */
 export const insightEnToFr = {
+  'china-platform-trends-2026-foreign-brands': 'plateformes-chinoises-2026-marques-etrangeres',
   'ai-brand-micro-drama-china': 'micro-series-ia-marques-chine',
   '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event':
     'singles-day-11-11-e-commerce-chinois',
@@ -130,6 +131,7 @@ export const insightFrToEn = Object.fromEntries(
  * per CLAUDE.md §6.11. Brand and platform names stay canonical per §6.8.
  */
 export const insightEnToDe = {
+  'china-platform-trends-2026-foreign-brands': 'chinas-plattformtrends-2026-auslaendische-marken',
   'ai-brand-micro-drama-china': 'ki-mikrodrama-marken-china',
   '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event':
     'singles-day-11-11-e-commerce-china',
@@ -253,6 +255,7 @@ export const insightDeToEn = Object.fromEntries(
  * Brand and platform names stay canonical per CLAUDE.md §6.8.
  */
 export const insightEnToEs = {
+  'china-platform-trends-2026-foreign-brands': 'plataformas-chinas-2026-marcas-extranjeras',
   'ai-brand-micro-drama-china': 'microdramas-ia-marcas-china',
   '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event':
     'singles-day-11-11-marcas-globales',
