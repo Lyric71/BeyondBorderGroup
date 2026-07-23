@@ -1336,7 +1336,6 @@ body:has(.nav.nav--open) {
   grid-template-columns: 1.2fr 2.8fr;
   gap: var(--space-7);
   padding-bottom: var(--space-7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer__brand {
   max-width: 360px;
@@ -1390,61 +1389,58 @@ body:has(.nav.nav--open) {
   gap: var(--space-5);
 }
 
+/* Sister-agency strip. Sits on its own light band so the group logos keep
+   their real colours: on black they would flatten to white silhouettes. */
 .footer__network {
-  padding: var(--space-6) 0 var(--space-7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bbg-surface);
+  padding: var(--space-6) 0;
 }
-.footer__network-label {
-  display: block;
+.footer p.footer__network-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: var(--fs-label);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--bbg-text-muted);
   margin-bottom: var(--space-5);
+}
+.footer__network-label a {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+.footer__network-label img {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
 }
 .footer__network-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: var(--space-4);
+  gap: var(--space-5) var(--space-4);
+  align-items: center;
+  justify-items: center;
 }
-.footer__network-card {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-  color: rgba(255, 255, 255, 0.75);
-  text-decoration: none;
-  transition: transform 200ms ease;
-}
-.footer__network-card:hover {
-  transform: translateY(-2px);
-  color: rgba(255, 255, 255, 0.75);
-}
-.footer__network-card-logo {
-  display: flex;
+.footer__network-logo {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
-  border-radius: 8px;
-  padding: var(--space-4) var(--space-5);
-  height: 92px;
-  transition: box-shadow 200ms ease;
 }
-.footer__network-card:hover .footer__network-card-logo {
-  box-shadow: 0 8px 24px rgba(200, 16, 46, 0.18);
-}
-.footer__network-card-logo img {
-  max-height: 44px;
-  max-width: 100%;
+.footer__network-logo img {
+  height: var(--logo-h, 30px);
   width: auto;
-  height: auto;
+  max-width: 100%;
   object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.65;
+  transition:
+    opacity 200ms ease,
+    filter 200ms ease;
 }
-.footer__network-card-desc {
-  font-size: var(--fs-small);
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.55);
+.footer__network-logo:hover img {
+  filter: none;
+  opacity: 1;
 }
-
 .footer__parent {
   display: grid;
   grid-template-columns: auto 1fr auto;

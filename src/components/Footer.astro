@@ -33,48 +33,50 @@ const company = [
   { label: t('nav.contact'), href: lp('/contact') },
 ];
 
+// Sister agencies in the BearingBridge network. `height` tunes each logo's
+// optical weight so the strip reads as one line rather than seven sizes.
 const network = [
+  {
+    name: 'hubStudio',
+    href: 'https://hubstudio.ai',
+    logo: '/Images/AgencyLogos/hubStudio%20(2).webp',
+    height: 26,
+  },
+  {
+    name: 'ChinaWebFoundry',
+    href: 'https://chinawebfoundry.com',
+    logo: '/Images/AgencyLogos/Logo-ChinaWebFoundry-transparent.webp',
+    height: 30,
+  },
   {
     name: 'BeyondBridge',
     href: 'https://beyondbridge.com',
     logo: '/Images/AgencyLogos/BeyondBridge-%20Logo-EN-4K-Transparent.webp',
-    desc: t('footer.net.beyondbridge.desc'),
+    height: 30,
   },
   {
-    name: 'BearingBridge AI',
-    href: 'https://www.bearingbridge.com',
-    logo: '/Images/AgencyLogos/BearingBridgeAI-horizontal.svg',
-    desc: t('footer.net.bearingbridgeai.desc'),
-  },
-  {
-    name: 'ChinaWebFoundry.com',
-    href: 'https://chinawebfoundry.com',
-    logo: '/Images/AgencyLogos/Logo-ChinaWebFoundry-transparent.webp',
-    desc: t('footer.net.chinawebfoundry.desc'),
-  },
-  {
-    name: 'TheRedScroll.com',
+    name: 'TheRedScroll',
     href: 'https://theredscroll.com',
     logo: '/Images/AgencyLogos/TheredScroll%20PNG.webp',
-    desc: t('footer.net.redscroll.desc'),
+    height: 30,
   },
   {
     name: 'Compass',
     href: 'https://compass.bearingbridge.com/en',
     logo: '/Images/AgencyLogos/Compass%20-%20Horizontal.svg',
-    desc: t('footer.net.beyondcompass.desc'),
+    height: 26,
   },
   {
-    name: 'NuvoraStudio.com',
+    name: 'Nuvora Studio',
     href: 'https://nuvora.studio',
     logo: '/Images/AgencyLogos/Nuvora%20PNG.webp',
-    desc: t('footer.net.nuvora.desc'),
+    height: 28,
   },
   {
-    name: 'HubStudio.ai',
-    href: 'https://hubstudio.ai',
-    logo: '/Images/AgencyLogos/hubStudio%20(2).webp',
-    desc: t('footer.net.hubstudio.desc'),
+    name: 'BearingBridge AI',
+    href: 'https://bearingbridge.ai',
+    logo: '/Images/AgencyLogos/bearingbridge-ai.svg',
+    height: 20,
   },
 ];
 
@@ -169,29 +171,54 @@ const year = new Date().getFullYear();
         </div>
       </div>
     </div>
+  </div>
 
-    <section class="footer__network" aria-label={t('footer.network.aria')}>
-      <span class="footer__network-label">{t('footer.network.label')}</span>
+  <section class="footer__network" aria-label={t('footer.network.aria')}>
+    <div class="container">
+      <p class="footer__network-label">
+        {t('footer.network.label')}
+        <a
+          href="https://www.bearingbridge.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="BearingBridge"
+        >
+          <img
+            src="/Images/AgencyLogos/BearingBridge-horizontal.webp"
+            alt="BearingBridge"
+            width="900"
+            height="140"
+            loading="lazy"
+          />
+        </a>
+      </p>
       <div class="footer__network-grid">
         {
           network.map((agency) => (
             <a
-              class="footer__network-card"
+              class="footer__network-logo"
               href={agency.href}
               target="_blank"
               rel="noopener"
               aria-label={agency.name}
+              title={agency.name}
             >
-              <span class="footer__network-card-logo">
-                <img src={agency.logo} alt={agency.name} width="320" height="80" loading="lazy" />
-              </span>
-              <span class="footer__network-card-desc">{agency.desc}</span>
+              <img
+                src={agency.logo}
+                alt={agency.name}
+                width="320"
+                height="80"
+                loading="lazy"
+                style={`--logo-h:${agency.height}px`}
+              />
             </a>
           ))
         }
       </div>
-    </section>
+    </div>
+  </section>
 
+  <div class="container">
     <div class="footer__bottom">
       <p>{t('footer.copyright', { year })}</p>
       <p>
