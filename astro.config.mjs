@@ -349,6 +349,8 @@ const resolveFrInsightDest = (/** @type {string} */ dest) => {
  * Static EN -> FR slug pairs for the sitemap serialize hook. Mirrors the
  * `slugMap` in `src/i18n/utils.ts`; kept duplicated here because importing
  * the .ts file from the config is not portable across Astro's loader.
+ *
+ * @type {Record<string, string>}
  */
 const staticEnToFr = {
   '/': '/fr',
@@ -384,6 +386,8 @@ const staticFrToEn = Object.fromEntries(Object.entries(staticEnToFr).map(([en, f
  * Static EN -> DE slug pairs for the sitemap serialize hook. Mirrors the
  * `slugMap.de` block in `src/i18n/utils.ts`. Native German slugs per CLAUDE.md §6.11
  * (umlauts replaced ae/oe/ue/ss).
+ *
+ * @type {Record<string, string>}
  */
 const staticEnToDe = {
   '/': '/de',
@@ -419,6 +423,8 @@ const staticDeToEn = Object.fromEntries(Object.entries(staticEnToDe).map(([en, d
  * Static EN -> ES slug pairs for the sitemap serialize hook. Mirrors the
  * `slugMap.es` block in `src/i18n/utils.ts`. Native Spanish slugs per CLAUDE.md §6.11
  * (ñ → n, accents stripped on slug, kept in body copy).
+ *
+ * @type {Record<string, string>}
  */
 const staticEnToEs = {
   '/': '/es',

@@ -5,8 +5,12 @@
  *
  * Brand and platform names stay canonical per CLAUDE.md §6.8.
  * When adding a new FR-translated insight, append it here and rebuild.
+ *
+ * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'china-cross-border-ecommerce-140-million-shoppers':
+    'e-commerce-transfrontalier-chine-140-millions-acheteurs',
   'china-platform-trends-2026-foreign-brands': 'plateformes-chinoises-2026-marques-etrangeres',
   'ai-brand-micro-drama-china': 'micro-series-ia-marques-chine',
   '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event':
@@ -129,8 +133,12 @@ export const insightFrToEn = Object.fromEntries(
  * Canonical English insight slug -> native German slug.
  * Same routing convention as the FR table above. Umlauts replaced (ae, oe, ue, ss)
  * per CLAUDE.md §6.11. Brand and platform names stay canonical per §6.8.
+ *
+ * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'china-cross-border-ecommerce-140-million-shoppers':
+    'grenzueberschreitender-e-commerce-china-140-millionen-kaeufer',
   'china-platform-trends-2026-foreign-brands': 'chinas-plattformtrends-2026-auslaendische-marken',
   'ai-brand-micro-drama-china': 'ki-mikrodrama-marken-china',
   '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event':
@@ -253,8 +261,12 @@ export const insightDeToEn = Object.fromEntries(
 /**
  * Canonical English insight slug -> native Spanish slug.
  * Brand and platform names stay canonical per CLAUDE.md §6.8.
+ *
+ * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'china-cross-border-ecommerce-140-million-shoppers':
+    'ecommerce-transfronterizo-china-140-millones-compradores',
   'china-platform-trends-2026-foreign-brands': 'plataformas-chinas-2026-marcas-extranjeras',
   'ai-brand-micro-drama-china': 'microdramas-ia-marcas-china',
   '11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event':

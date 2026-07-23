@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import HomeAssets from '../../components/home/HomeAssets.astro';
 import { getCollection } from 'astro:content';
+import { insightEnToDe } from '../../i18n/insight-slugs.mjs';
 
 const dayStops = [
   {
@@ -305,6 +306,11 @@ const featuredCases = allCases
   .slice(0, 6);
 
 const allInsights = await getCollection('insightsDe', ({ data }) => !data.draft);
+
+// DE article files keep the canonical English id; the public URL uses the
+// native German slug. Same mapping the /de/analysen index applies.
+const deSlugMap = insightEnToDe as Record<string, string>;
+const slugFor = (enSlug: string) => deSlugMap[enSlug] ?? enSlug;
 
 const insightCategoryDe: Record<string, string> = {
   Platforms: 'Plattformen',
@@ -1332,7 +1338,7 @@ function formatInsightDate(d?: Date) {
       <div class="grid grid-3">
         {
           latestInsights.map((post) => (
-            <a href={`/de/analysen/${post.id}`} class="insight-card">
+            <a href={`/de/analysen/${slugFor(post.id)}`} class="insight-card">
               <div class="insight-card__image">
                 {post.data.heroImage && (
                   <img
