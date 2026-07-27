@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'tmall-2026-strategy-foreign-brands': 'tmall-2026-strategie-marques-etrangeres',
   'china-cross-border-ecommerce-140-million-shoppers':
     'e-commerce-transfrontalier-chine-140-millions-acheteurs',
   'china-platform-trends-2026-foreign-brands': 'plateformes-chinoises-2026-marques-etrangeres',
@@ -137,6 +138,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'tmall-2026-strategy-foreign-brands': 'tmall-2026-strategie-auslaendische-marken',
   'china-cross-border-ecommerce-140-million-shoppers':
     'grenzueberschreitender-e-commerce-china-140-millionen-kaeufer',
   'china-platform-trends-2026-foreign-brands': 'chinas-plattformtrends-2026-auslaendische-marken',
@@ -265,6 +267,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'tmall-2026-strategy-foreign-brands': 'tmall-2026-estrategia-marcas-extranjeras',
   'china-cross-border-ecommerce-140-million-shoppers':
     'ecommerce-transfronterizo-china-140-millones-compradores',
   'china-platform-trends-2026-foreign-brands': 'plataformas-chinas-2026-marcas-extranjeras',
