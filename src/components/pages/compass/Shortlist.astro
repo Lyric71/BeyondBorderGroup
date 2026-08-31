@@ -1,0 +1,396 @@
+---
+/**
+ * WO-2.1 and WO-2.2 — /compass/shortlist, shared across every locale.
+ * 301 target for compass.bearingbridge.com/en/contact.
+ *
+ * The brief form posts to /api/contact, the site's existing handler, so
+ * submissions land in the same inbox as every other enquiry and no new form
+ * service is introduced. The `source` field tags it as a Compass brief on
+ * arrival. Captcha, honeypot and status behaviour match /contact.astro
+ * deliberately: one pattern, one set of bugs.
+ *
+ * The strings the inline script needs (validation messages, the button's two
+ * states, the thank-you URL) are handed to it through define:vars so the
+ * locale copy object drives them.
+ */
+import Layout from '../../../layouts/Layout.astro';
+import { getLocaleFromUrl, localizePath } from '../../../i18n/utils';
+import { APP_URL } from '../../../data/compass';
+import type { CompassCopy } from '../../../content/pages/compass/types';
+
+interface Props {
+  copy: CompassCopy;
+}
+
+const { copy } = Astro.props;
+const { facts, shortlist: c } = copy;
+
+const locale = getLocaleFromUrl(Astro.url);
+const thankYouHref = localizePath('/thank-you', locale);
+const appHost = APP_URL.replace(/^https?:\/\//, '');
+
+const js = {
+  thankYou: thankYouHref,
+  submit: c.submit,
+  submitting: c.submitting,
+  errCaptcha: c.errors.captcha,
+  errRequired: c.errors.required,
+  errMessage: c.errors.message,
+  errNetwork: c.errors.network,
+  success: c.success,
+};
+---
+
+<Layout title={c.title} description={c.description}>
+  <section class="section section--dark cmp-hero">
+    <div class="container">
+      <span class="eyebrow">{c.eyebrow}</span>
+      <h1 class="h1">{c.h1}</h1>
+      <p class="lead cmp-hero__lead">{c.lead}</p>
+      <p class="cmp-hero__body">{facts.noCommission}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container sl-layout">
+      <!-- The form -->
+      <div class="sl-form-card">
+        <h2 class="sl-form-title">{c.formTitle}</h2>
+        <form class="form" id="shortlist-form" novalidate>
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label class="field__label" for="name"
+                >{c.fields.name} <span aria-hidden="true">*</span></label
+              >
+              <input
+                class="field__input"
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label class="field__label" for="email"
+                >{c.fields.email} <span aria-hidden="true">*</span></label
+              >
+              <input
+                class="field__input"
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label class="field__label" for="company"
+                >{c.fields.company} <span aria-hidden="true">*</span></label
+              >
+              <input
+                class="field__input"
+                type="text"
+                id="company"
+                name="company"
+                autocomplete="organization"
+                required
+              />
+            </div>
+            <div class="field">
+              <label class="field__label" for="website">{c.fields.website}</label>
+              <input
+                class="field__input"
+                type="url"
+                id="website"
+                name="website"
+                autocomplete="url"
+                placeholder="https://"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="category"
+              >{c.fields.category} <span aria-hidden="true">*</span></label
+            >
+            <select class="field__input" id="category" name="category" required>
+              <option value="">{c.fields.categoryPlaceholder}</option>
+              {facts.categories.map((cat) => <option value={cat}>{cat}</option>)}
+              <option value="Other">{c.fields.categoryOther}</option>
+            </select>
+          </div>
+
+          <fieldset class="field field--fieldset">
+            <legend class="field__label">
+              {c.fields.stage} <span aria-hidden="true">*</span>
+            </legend>
+            {
+              c.stages.map((s, i) => (
+                <label class="sl-radio">
+                  <input type="radio" name="stage" value={s} required={i === 0} />
+                  <span>{s}</span>
+                </label>
+              ))
+            }
+          </fieldset>
+
+          <div class="field">
+            <label class="field__label" for="message"
+              >{c.fields.message} <span aria-hidden="true">*</span></label
+            >
+            <textarea
+              class="field__input field__textarea"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder={c.fields.messagePlaceholder}
+              required></textarea>
+          </div>
+
+          <div class="field field--captcha">
+            <label class="field__label" for="captcha">
+              {c.fields.captchaBefore}<span id="captchaA">?</span> + <span id="captchaB">?</span
+              >{c.fields.captchaAfter}
+              <span aria-hidden="true">*</span>
+            </label>
+            <input
+              class="field__input field__input--captcha"
+              type="text"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              id="captcha"
+              name="captcha"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          {/* honeypot, bots fill this, humans don't see it */}
+          <div class="form__honeypot" aria-hidden="true">
+            <label for="website_url">{c.fields.honeypot}</label>
+            <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="form__footer">
+            <button type="submit" class="btn btn--primary form__submit" id="shortlist-submit">
+              {c.submit}
+            </button>
+            <p class="form__note">{c.consent}</p>
+          </div>
+
+          <p class="form__status" id="shortlist-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- What happens next -->
+      <aside class="sl-aside">
+        <span class="eyebrow">{c.asideEyebrow}</span>
+        <h2 class="h3">{c.asideTitle}</h2>
+        <div class="sl-steps">
+          {
+            facts.steps.items.map((step) => (
+              <div class="sl-step">
+                <p class="sl-step__label">{step.label}</p>
+                <p class="sl-step__body">{step.body}</p>
+              </div>
+            ))
+          }
+        </div>
+        <p class="sl-aside__note">
+          {facts.signInPrompt.before}<a href={APP_URL}>{appHost}</a>{facts.signInPrompt.after}
+        </p>
+      </aside>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline define:vars={{ js }}>
+  (function () {
+    const form = document.getElementById('shortlist-form');
+    if (!form) return;
+    const status = document.getElementById('shortlist-status');
+    const submit = document.getElementById('shortlist-submit');
+    const captchaA = document.getElementById('captchaA');
+    const captchaB = document.getElementById('captchaB');
+    const captchaInput = document.getElementById('captcha');
+
+    function rollCaptcha() {
+      const a = 1 + Math.floor(Math.random() * 9);
+      const b = 1 + Math.floor(Math.random() * 9);
+      captchaA.textContent = a;
+      captchaB.textContent = b;
+      form.dataset.captchaSum = String(a + b);
+      if (captchaInput) captchaInput.value = '';
+    }
+    rollCaptcha();
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = '';
+      status.className = 'form__status';
+
+      const data = new FormData(form);
+      if (data.get('website_url')) return; // honeypot tripped, silently drop
+
+      const category = String(data.get('category') || '').trim();
+      const stage = String(data.get('stage') || '').trim();
+
+      const payload = {
+        source: 'Compass shortlist',
+        name: String(data.get('name') || '').trim(),
+        email: String(data.get('email') || '').trim(),
+        company: String(data.get('company') || '').trim(),
+        website: String(data.get('website') || '').trim(),
+        services: category ? [category] : [],
+        budget: '',
+        profile: stage,
+        message: String(data.get('message') || '').trim(),
+        captcha: String(data.get('captcha') || '').trim(),
+        captchaExpected: String(form.dataset.captchaSum || ''),
+      };
+
+      const captchaNum = parseInt(payload.captcha, 10);
+      const expectedNum = parseInt(payload.captchaExpected, 10);
+      if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
+        status.textContent = js.errCaptcha;
+        status.classList.add('form__status--error');
+        rollCaptcha();
+        return;
+      }
+
+      if (!payload.name || !payload.email || !payload.company || !category || !stage) {
+        status.textContent = js.errRequired;
+        status.classList.add('form__status--error');
+        return;
+      }
+      if (!payload.message) {
+        status.textContent = js.errMessage;
+        status.classList.add('form__status--error');
+        return;
+      }
+
+      submit.disabled = true;
+      submit.textContent = js.submitting;
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const body = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(body.error || js.errNetwork);
+
+        form.reset();
+        rollCaptcha();
+        status.textContent = js.success;
+        status.classList.add('form__status--success');
+        window.location.assign(js.thankYou);
+        return;
+      } catch (err) {
+        status.textContent = err && err.message ? err.message : js.errNetwork;
+        status.classList.add('form__status--error');
+      } finally {
+        submit.disabled = false;
+        submit.textContent = js.submit;
+      }
+    });
+  })();
+</script>
+
+<style>
+  .cmp-hero .h1 {
+    max-width: 18ch;
+  }
+
+  .sl-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: var(--space-7);
+    align-items: start;
+  }
+  @media (max-width: 980px) {
+    .sl-layout {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+  }
+
+  .sl-form-card {
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+  }
+  @media (max-width: 560px) {
+    .sl-form-card {
+      padding: var(--space-5);
+    }
+  }
+  .sl-form-title {
+    font-size: var(--fs-h3);
+    font-weight: 600;
+    margin-bottom: var(--space-5);
+  }
+
+  .field--fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 var(--space-5);
+  }
+  .sl-radio {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-3) 0;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+  .sl-radio input {
+    margin-top: 0.3em;
+    accent-color: var(--bbg-blue);
+  }
+
+  .sl-aside {
+    position: sticky;
+    top: 7rem;
+  }
+  @media (max-width: 980px) {
+    .sl-aside {
+      position: static;
+    }
+  }
+  .sl-steps {
+    margin-top: var(--space-5);
+  }
+  .sl-step {
+    border-top: 2px solid var(--bbg-blue);
+    padding-top: var(--space-3);
+    margin-bottom: var(--space-5);
+  }
+  .sl-step__label {
+    font-weight: 600;
+    color: var(--bbg-ink);
+    margin-bottom: var(--space-2);
+  }
+  .sl-step__body {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    line-height: 1.6;
+  }
+  .sl-aside__note {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--bbg-border);
+  }
+  .sl-aside__note a {
+    color: var(--bbg-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

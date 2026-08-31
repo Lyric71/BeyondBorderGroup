@@ -12,7 +12,7 @@ heroImageAlt: "Livestream und Video-Content-Erstellung"
 
 ## Der Aufstieg des Livestreams in China
 
-[Livestream](/de/in-china-wachsen/influencer-und-kol) in China ist exponentiell gewachsen, zum Eckpfeiler des chinesischen eCommerce-Ökosystems. Die [Plattformen](/de/china-verstehen/plattformen) sind weit mehr als Unterhaltung. Sie sind Werkzeuge für direkte Interaktion mit Käufern, Produkt-Demos und Verkäufe im Live-Modus.
+[Livestream](/de/chinesische-social-media) in China ist exponentiell gewachsen, zum Eckpfeiler des chinesischen eCommerce-Ökosystems. Die [Plattformen](/de/china-verstehen/plattformen) sind weit mehr als Unterhaltung. Sie sind Werkzeuge für direkte Interaktion mit Käufern, Produkt-Demos und Verkäufe im Live-Modus.
 
 Der GMV der chinesischen Livestream-Industrie soll bis 2026 die Marke von 1 Billion US-Dollar überschreiten. Treiber sind ein digital affiner Bevölkerungsteil, innovative Technologien und die nahtlose Verzahnung von Social und Shopping. Die Popularität des Douyin-Livestreams zeigt, wie Käufer diese dynamische Form des Handels annehmen.
 

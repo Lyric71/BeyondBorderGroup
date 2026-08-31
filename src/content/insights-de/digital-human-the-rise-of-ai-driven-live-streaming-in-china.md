@@ -12,7 +12,7 @@ heroImageAlt: "KI-Online-Verkäufer"
 
 ## Schnelle Zuschauerbindung
 
-Am 16. April 2024 stellte [JD](/de/in-china-wachsen/cross-border-ecommerce).com einen neuartigen digitalen Avatar seines Gründers Liu Qiangdong vor. Der Auftritt zog während eines [Livestreams](/de/in-china-wachsen/influencer-und-kol) enorme Aufmerksamkeit auf sich. In den ersten 30 Minuten schalteten sich über 10 Millionen Zuschauer ein, nach 40 Minuten waren es 13 Millionen. Mit knapp 20 Millionen Zuschauern in der ersten Stunde setzte das Event einen neuen Rekord und zeigte, wie weit KI grosse Publika bindet.
+Am 16. April 2024 stellte [JD](/de/in-china-wachsen/cross-border-ecommerce).com einen neuartigen digitalen Avatar seines Gründers Liu Qiangdong vor. Der Auftritt zog während eines [Livestreams](/de/chinesische-social-media) enorme Aufmerksamkeit auf sich. In den ersten 30 Minuten schalteten sich über 10 Millionen Zuschauer ein, nach 40 Minuten waren es 13 Millionen. Mit knapp 20 Millionen Zuschauern in der ersten Stunde setzte das Event einen neuen Rekord und zeigte, wie weit KI grosse Publika bindet.
 
 ## Lebensnahe Interaktion hält Zuschauer länger
 

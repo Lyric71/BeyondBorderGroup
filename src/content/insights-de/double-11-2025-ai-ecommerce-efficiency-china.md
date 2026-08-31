@@ -65,7 +65,7 @@ Vertrauen und Persönlichkeit konvertieren. Der Hebel 2025 sind Format-Disziplin
 
 * KI-unterstützte Vorproduktion: Shotlisten, Storyboards, Talking Points; sofortige Cut-Downs für Retargeting in Minuten.
 
-Zum Kontext: Der [Livestream](/de/in-china-wachsen/influencer-und-kol)-GMV erreichte zum Double 11 2024 RMB 332,5 Milliarden (+54,6 Prozent gegenüber Vorjahr). Die Ergebnisse 2025 werden noch erfasst, der strukturelle Vorteil des Live Commerce bleibt: Vertrauen plus Klarheit plus belegte Konversion.
+Zum Kontext: Der [Livestream](/de/chinesische-social-media)-GMV erreichte zum Double 11 2024 RMB 332,5 Milliarden (+54,6 Prozent gegenüber Vorjahr). Die Ergebnisse 2025 werden noch erfasst, der strukturelle Vorteil des Live Commerce bleibt: Vertrauen plus Klarheit plus belegte Konversion.
 
 ### Omnichannel, das wirklich verbindet, auch über Grenzen
 

@@ -41,7 +41,7 @@ Douyin ist eine der führenden Kurzvideo-Plattformen Chinas. Die von ByteDance e
 
 #### Warum Marken Douyin nutzen
 
-Douyin ist stark, wenn es um junge Städter geht, die stylische, visuell starke Inhalte suchen. Viele Unternehmen arbeiten mit einer Marketing-Agentur in China zusammen, um überzeugenden Content zu bauen und [Influencer](/de/in-china-wachsen/influencer-und-kol)-Partnerschaften zu fahren. Die Plattform führt Nutzer reibungslos von der Unterhaltung zum Kauf.
+Douyin ist stark, wenn es um junge Städter geht, die stylische, visuell starke Inhalte suchen. Viele Unternehmen arbeiten mit einer Marketing-Agentur in China zusammen, um überzeugenden Content zu bauen und [Influencer](/de/chinesische-social-media)-Partnerschaften zu fahren. Die Plattform führt Nutzer reibungslos von der Unterhaltung zum Kauf.
 
 ### Kuaishou
 

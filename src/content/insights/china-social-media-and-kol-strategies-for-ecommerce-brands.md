@@ -15,7 +15,7 @@ legacyUrl: "https://beyondbordergroup.com/china-social-media-and-kol-strategies-
 
 ### What is a KOL in China?
 
-A Key Opinion Leader ([KOL](/grow-in-china/influencers-kols)) in China is an influencer with a substantial following who holds significant sway over their audience's opinions and purchasing decisions. Unlike Western influencers, KOLs in China are seen as trusted experts who offer advice and product recommendations across various categories, from beauty and fashion to tech and lifestyle.
+A Key Opinion Leader ([KOL](/social-in-china)) in China is an influencer with a substantial following who holds significant sway over their audience's opinions and purchasing decisions. Unlike Western influencers, KOLs in China are seen as trusted experts who offer advice and product recommendations across various categories, from beauty and fashion to tech and lifestyle.
 
 ### Why KOLs are Essential for Brands in China
 

@@ -16,7 +16,7 @@ heroImageAlt: "Social-Media-Plattformen-Banner"
 
 ## Bedeutung der chinesischen Social-Plattformen
 
-Mit über 1,4 Milliarden Menschen und rascher Digital-Adoption ist China ein zentraler Markt für globale Marken. Chinas Social-Plattformen bieten Wege für Markenbekanntheit, [Influencer](/de/in-china-wachsen/influencer-und-kol)-Marketing und direkten Käufer-Kontakt, essenziell für Vertrauen und Loyalität.
+Mit über 1,4 Milliarden Menschen und rascher Digital-Adoption ist China ein zentraler Markt für globale Marken. Chinas Social-Plattformen bieten Wege für Markenbekanntheit, [Influencer](/de/chinesische-social-media)-Marketing und direkten Käufer-Kontakt, essenziell für Vertrauen und Loyalität.
 
 Chinesische Nutzer sind stark engagiert und verbringen im Schnitt 2,25 Stunden pro Tag auf diesen Plattformen. Die Plattformen tragen Bild, Video, Livestream und interaktive Funktionen, das erlaubt vielfältigen, einbindenden Content.
 

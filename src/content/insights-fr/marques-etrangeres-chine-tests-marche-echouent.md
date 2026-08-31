@@ -29,7 +29,7 @@ Sur le papier, l'opération paraît rapide et abordable. Dans les faits, elle n'
 
 > La marque doit malgré tout déployer une infrastructure complète et une équipe pour opérer en Chine. Les coûts dérapent à cet endroit précis.
 
-Quasi toutes les marques étrangères passent par ce que le secteur appelle un TP, un Trade Partner. C'est une agence locale qui fait tourner la boutique en ligne au quotidien : configuration, fiches produits, contenu, service client, achat média, exécution des campagnes, partenariats [KOL](/fr/se-developper-en-chine/influence-et-kol) et coordination logistique. Tout se joue en mandarin, aux heures chinoises, sur des plateformes qui modifient leurs règles sans préavis. Aucun siège étranger ne pilote cela à distance.
+Quasi toutes les marques étrangères passent par ce que le secteur appelle un TP, un Trade Partner. C'est une agence locale qui fait tourner la boutique en ligne au quotidien : configuration, fiches produits, contenu, service client, achat média, exécution des campagnes, partenariats [KOL](/fr/reseaux-sociaux-chinois) et coordination logistique. Tout se joue en mandarin, aux heures chinoises, sur des plateformes qui modifient leurs règles sans préavis. Aucun siège étranger ne pilote cela à distance.
 
 Un bon TP facture un forfait mensuel et une commission sur les ventes. Ajoutez les frais de plateforme, l'investissement média, la logistique en entrepôt sous douane. Comptez 30 à 40 % du chiffre d'affaires annuel visé absorbés par les opérations pendant les deux à trois premières années. J'ai vu des marques européennes de taille intermédiaire budgéter 500 000 dollars pour un lancement chinois et tout dépenser en six mois sans rien à montrer. Pour celles aux marges serrées, l'équation casse avant même de commencer.
 

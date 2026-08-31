@@ -12,7 +12,7 @@ heroImageAlt: "Social e-commerce en Chine"
 
 ## Le paysage du social commerce chinois
 
-En 2021, le [social commerce](/fr/se-developper-en-chine/commerce-social) chinois pesait déjà 2 500 milliards de yuans, soit près de 374 milliards de dollars, et embarquait 800 millions de participants. Aucun autre marché ne combine à ce point réseaux sociaux, paiement mobile et marketing [KOL](/fr/se-developper-en-chine/influence-et-kol). Le parcours d'achat ne sort plus de l'écran. Découverte, recommandation, transaction tiennent dans une même fenêtre.
+En 2021, le [social commerce](/fr/se-developper-en-chine/commerce-social) chinois pesait déjà 2 500 milliards de yuans, soit près de 374 milliards de dollars, et embarquait 800 millions de participants. Aucun autre marché ne combine à ce point réseaux sociaux, paiement mobile et marketing [KOL](/fr/reseaux-sociaux-chinois). Le parcours d'achat ne sort plus de l'écran. Découverte, recommandation, transaction tiennent dans une même fenêtre.
 
 Pour exister dans cet environnement saturé, la connaissance des principales [plateformes](/fr/comprendre-la-chine/plateformes) reste un préalable. Voici les cinq qui font le marché.
 

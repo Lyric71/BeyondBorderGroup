@@ -161,6 +161,6 @@ Con plataformas como Bilibili y Pinduoduo ganando terreno, diversificar se vuelv
 
 ## Conclusión
 
-El marketing con [KOL](/es/crecer-en-china/influencia-y-kol) sigue siendo una pieza central en la estrategia de marca y de marketing digital en China. De los micro-influencers a las colaboraciones con celebridades, el coste varía, pero el retorno se sostiene cuando hay buena gestión detrás. Trabajar con una agencia de branding, de social media o de marketing digital en China ayuda a moverse en un terreno complejo y a montar campañas con impacto real, alineadas con los objetivos.
+El marketing con [KOL](/es/redes-sociales-chinas) sigue siendo una pieza central en la estrategia de marca y de marketing digital en China. De los micro-influencers a las colaboraciones con celebridades, el coste varía, pero el retorno se sostiene cuando hay buena gestión detrás. Trabajar con una agencia de branding, de social media o de marketing digital en China ayuda a moverse en un terreno complejo y a montar campañas con impacto real, alineadas con los objetivos.
 
 Aprender de los casos y leer bien el comportamiento del consumidor chino abre la puerta a un potencial enorme en el mayor mercado de eCommerce del mundo.

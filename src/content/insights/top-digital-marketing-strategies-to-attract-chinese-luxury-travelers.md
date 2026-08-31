@@ -59,7 +59,7 @@ Xiaohongshu, known as China's lifestyle search engine, is a vital platform for t
 
 ### Social Media Influence
 
-Social media platforms like Douyin (TikTok) and Weibo play a significant role in shaping travel preferences among Chinese luxury travelers. Brands that effectively utilize these platforms can inspire and influence travel decisions through engaging content and [influencer](/grow-in-china/influencers-kols) collaborations. Douyin's short-form videos are particularly effective in showcasing destinations and experiences in a dynamic and visually appealing way, while live streams on Weibo can provide real-time insights and interactions that resonate with potential travelers.
+Social media platforms like Douyin (TikTok) and Weibo play a significant role in shaping travel preferences among Chinese luxury travelers. Brands that effectively utilize these platforms can inspire and influence travel decisions through engaging content and [influencer](/social-in-china) collaborations. Douyin's short-form videos are particularly effective in showcasing destinations and experiences in a dynamic and visually appealing way, while live streams on Weibo can provide real-time insights and interactions that resonate with potential travelers.
 
 ## Creating Emotional Connections
 

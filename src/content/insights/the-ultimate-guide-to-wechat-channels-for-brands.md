@@ -57,7 +57,7 @@ Live streaming on Channels allows brands to engage directly with followers, answ
 
 ## Influencer and Key Opinion Leader Marketing
 
-Partnering with China influencers and Key Opinion Leaders (KOLs) is a proven way for brands to expand their reach on WeChat Channels. [KOL](/grow-in-china/influencers-kols) marketing in China offers brands credibility and access to targeted audiences, as followers trust KOLs' recommendations, making it easier to capture engagement and build brand affinity.
+Partnering with China influencers and Key Opinion Leaders (KOLs) is a proven way for brands to expand their reach on WeChat Channels. [KOL](/social-in-china) marketing in China offers brands credibility and access to targeted audiences, as followers trust KOLs' recommendations, making it easier to capture engagement and build brand affinity.
 
 * **KOL Partnerships:** By collaborating with KOLs who specialize in areas relevant to the brand, such as beauty, fashion, or technology, brands can achieve high engagement.
 * **Paid Ads with KOLs:** WeChat Channels offers native ads that appear within users' video feeds, influencer ads, and CPC/CPM ads, giving brands flexibility to increase brand visibility with targeted audiences.

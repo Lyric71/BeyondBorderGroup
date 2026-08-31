@@ -16,7 +16,7 @@ keyTakeaways:
   - "Hay que presupuestar un ritmo de contenido: entre tres y cinco directos semanales, de diez a quince vídeos cortos, y una capa de pago debajo. El efecto compuesto vive en el calendario, no en un momento estrella."
 ---
 
-Douyin ya no es "un canal donde se hace un [livestream](/es/crecer-en-china/influencia-y-kol) gordo".
+Douyin ya no es "un canal donde se hace un [livestream](/es/redes-sociales-chinas) gordo".
 
 En 2026 se comporta como un sistema operativo de retail. El contenido genera demanda, la publicidad la amplifica, la búsqueda la captura y el checkout pasa dentro del mismo bucle. Si lo trata como una campaña puntual, quemará presupuesto rápido y aprenderá despacio.
 

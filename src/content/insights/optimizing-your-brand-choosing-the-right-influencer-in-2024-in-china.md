@@ -10,7 +10,7 @@ heroImageAlt: "Professional woman smiling at camera"
 legacyUrl: "https://beyondbordergroup.com/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china/"
 ---
 
-[Influencer marketing](/grow-in-china/influencers-kols) has emerged as a powerhouse strategy, especially with the surge of platforms like Instagram and TikTok. As business owners navigate this dynamic advertising space, the key to success lies in finding the right influencers to elevate their brand's reach and engagement. However, success in influencer marketing hinges on one crucial factor: choosing the right influencers for your brand.
+[Influencer marketing](/social-in-china) has emerged as a powerhouse strategy, especially with the surge of platforms like Instagram and TikTok. As business owners navigate this dynamic advertising space, the key to success lies in finding the right influencers to elevate their brand's reach and engagement. However, success in influencer marketing hinges on one crucial factor: choosing the right influencers for your brand.
 
 Let's look into the essential aspects of influencer marketing and guide you through the process of selecting the perfect influencer for your brand.
 

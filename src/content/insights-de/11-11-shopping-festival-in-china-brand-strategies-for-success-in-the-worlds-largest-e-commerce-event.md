@@ -56,7 +56,7 @@ Wer Social-Strategien und Performance-Marketing in China sauber verzahnt, leitet
 
 ### b) Mit KOL (Key Opinion Leaders) zusammenarbeiten
 
-Influencer-Marketing oder [KOL-Marketing](/de/in-china-wachsen/influencer-und-kol) gehört zu den stärksten Werkzeugen, um am 11.11 Reichweite zu gewinnen. Chinesische KOL mit grosser Gefolgschaft heben Sichtbarkeit und Glaubwürdigkeit deutlich.
+Influencer-Marketing oder [KOL-Marketing](/de/chinesische-social-media) gehört zu den stärksten Werkzeugen, um am 11.11 Reichweite zu gewinnen. Chinesische KOL mit grosser Gefolgschaft heben Sichtbarkeit und Glaubwürdigkeit deutlich.
 
 KOL haben das Vertrauen ihrer Follower, das macht Empfehlungen wirksam. Modemarken arbeiten mit Lifestyle-Influencern auf Xiaohongshu, Tech-Marken mit Gadget-Rezensenten auf Weibo.
 

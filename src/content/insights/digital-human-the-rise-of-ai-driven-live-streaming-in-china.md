@@ -13,7 +13,7 @@ legacyUrl: "https://beyondbordergroup.com/digital-human-the-rise-of-ai-driven-li
 
 ## Rapid Viewer Engagement
 
-On April 16, 2024, [JD](/grow-in-china/cross-border-ecommerce).com introduced a novel digital avatar of its founder, Liu Qiangdong, which attracted massive attention during a [livestream](/grow-in-china/influencers-kols). Within the first 30 minutes, over 10 million viewers tuned in, and by the 40-minute mark, the audience grew to 13 million. The event set a new record by drawing nearly 20 million viewers in the first hour, showcasing the vast potential of AI in engaging large audiences effectively.
+On April 16, 2024, [JD](/grow-in-china/cross-border-ecommerce).com introduced a novel digital avatar of its founder, Liu Qiangdong, which attracted massive attention during a [livestream](/social-in-china). Within the first 30 minutes, over 10 million viewers tuned in, and by the 40-minute mark, the audience grew to 13 million. The event set a new record by drawing nearly 20 million viewers in the first hour, showcasing the vast potential of AI in engaging large audiences effectively.
 
 ## Lifelike Interaction Increases Viewer Retention
 

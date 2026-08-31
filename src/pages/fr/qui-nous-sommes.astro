@@ -613,6 +613,37 @@ const aboutSchema = [
     </div>
   </section>
 
+  {/* ---------- THE GROUP (WO-3.4) ---------- */}
+  <section class="section group-section">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Le groupe</span>
+        <h2>Trois sociétés. Une seule route vers la Chine.</h2>
+        <p class="lead">L’essentiel du travail se fait chez nous. Deux volets non, et nous préférons le dire plutôt que prétendre exceller partout.</p>
+      </header>
+
+      <div class="grid grid-3">
+        <a class="card group-card" href="/fr/entrer-en-chine">
+          <h3 class="card__title">TheChinaPath</h3>
+          <p>Implantation, distribution et e-commerce. Où vendre, avec qui vendre, et comment circule vraiment l’argent une fois la marque en rayon.</p>
+          <span class="card__footer btn btn--ghost">Voir le travail d’implantation</span>
+        </a>
+        <a class="card group-card" href="/fr/site-web-et-wechat-en-chine">
+          <h3 class="card__title">ChinaWebFoundry</h3>
+          <p>Votre site, conçu à Shanghai pour l’internet chinois. Licence ICP, hébergement derrière le pare-feu, Baidu, et les moteurs d’IA que les acheteurs interrogent désormais en premier.</p>
+          <span class="card__footer btn btn--ghost">Voir le travail web</span>
+        </a>
+        <a class="card group-card" href="/fr/reseaux-sociaux-chinois">
+          <h3 class="card__title">TheRedScroll</h3>
+          <p>WeChat, Douyin, RedNote et Weibo, animés au quotidien. Comptes, contenus, créateurs, communauté. La part du marketing chinois qui ne dort jamais.</p>
+          <span class="card__footer btn btn--ghost">Voir le travail social</span>
+        </a>
+      </div>
+
+      <p class="group-close">Même fondateur, mêmes bureaux à Shanghai, Hong Kong et Paris, même exigence. Vous pouvez travailler avec l’une des trois ou avec les trois. Dans tous les cas, personne ne se renvoie la balle.</p>
+    </div>
+  </section>
+
   {/* ---------- RECOGNITION / SLIDER ---------- */}
   <section class="section section--tight speaking" data-speak-root>
     <div class="container">
@@ -2134,5 +2165,24 @@ const aboutSchema = [
     .about-hero__founder-bio {
       font-size: 0.78rem;
     }
+  }
+
+  /* WO-3.4: the three-company section. */
+  .group-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .group-card .card__title {
+    color: var(--bbg-ink);
+  }
+  .group-card p {
+    flex: 1;
+  }
+  .group-close {
+    margin-top: var(--space-6);
+    max-width: 72ch;
+    color: var(--bbg-text-muted);
   }
 </style>

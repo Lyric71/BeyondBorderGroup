@@ -65,7 +65,7 @@ La confiance et la personnalité convertissent. Le déclic de 2025 tient à la d
 
 * Pré-production assistée par IA : listes de plans, storyboards, points de discussion, montages instantanés pour le reciblage en quelques minutes.
 
-Pour mémoire, le [livestream](/fr/se-developper-en-chine/influence-et-kol) avait atteint 332,5 milliards de yuans de GMV durant le Double 11 2024 (+54,6 % en glissement annuel). Les chiffres 2025 sont en cours de consolidation. L'avantage structurel du commerce live, lui, tient : confiance, clarté, conversion documentée.
+Pour mémoire, le [livestream](/fr/reseaux-sociaux-chinois) avait atteint 332,5 milliards de yuans de GMV durant le Double 11 2024 (+54,6 % en glissement annuel). Les chiffres 2025 sont en cours de consolidation. L'avantage structurel du commerce live, lui, tient : confiance, clarté, conversion documentée.
 
 ### Un omnicanal qui relie réellement et passe les frontières
 

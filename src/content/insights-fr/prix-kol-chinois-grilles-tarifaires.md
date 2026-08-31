@@ -161,6 +161,6 @@ La montée en puissance de Bilibili et de Pinduoduo impose une logique de divers
 
 ## Pour conclure
 
-Le marketing [KOL](/fr/se-developper-en-chine/influence-et-kol) en Chine reste un pilier des stratégies de marque et de marketing digital. Du micro-influenceur à la star planétaire, les budgets varient fortement. Le rendement, lui, suit dès que la campagne est pilotée avec rigueur. L'appui d'une agence de branding chinoise, d'une agence sociale spécialisée ou d'une agence de marketing digital aide à lire un paysage complexe et à bâtir des dispositifs alignés sur les objectifs commerciaux.
+Le marketing [KOL](/fr/reseaux-sociaux-chinois) en Chine reste un pilier des stratégies de marque et de marketing digital. Du micro-influenceur à la star planétaire, les budgets varient fortement. Le rendement, lui, suit dès que la campagne est pilotée avec rigueur. L'appui d'une agence de branding chinoise, d'une agence sociale spécialisée ou d'une agence de marketing digital aide à lire un paysage complexe et à bâtir des dispositifs alignés sur les objectifs commerciaux.
 
 Croisées avec une connaissance fine du consommateur chinois, ces études de cas ouvrent un terrain d'expérimentation immense sur le premier marché e-commerce mondial.

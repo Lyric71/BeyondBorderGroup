@@ -29,7 +29,7 @@ Sobre el papel, es rápido y asequible. En la práctica, no.
 
 > La marca sigue necesitando una infraestructura completa y un equipo que opere en China. Ahí es donde se disparan los costes.
 
-Las marcas extranjeras casi siempre necesitan lo que el sector llama un TP, un Trade Partner. El TP es una agencia local que lleva la tienda online día a día: alta, fichas, contenido, atención al cliente, compra de medios, ejecución de campañas, acuerdos con [KOL](/es/crecer-en-china/influencia-y-kol) y coordinación logística. Todo se hace en mandarín, en horario chino y sobre plataformas que cambian las reglas sin avisar. Ninguna sede extranjera puede llevar esto en remoto.
+Las marcas extranjeras casi siempre necesitan lo que el sector llama un TP, un Trade Partner. El TP es una agencia local que lleva la tienda online día a día: alta, fichas, contenido, atención al cliente, compra de medios, ejecución de campañas, acuerdos con [KOL](/es/redes-sociales-chinas) y coordinación logística. Todo se hace en mandarín, en horario chino y sobre plataformas que cambian las reglas sin avisar. Ninguna sede extranjera puede llevar esto en remoto.
 
 Un TP solvente cobra una retainer mensual y una comisión sobre las ventas. Súmense los gastos de plataforma, la compra de medios y la logística de depósito franco y se llega al 30, 40 por ciento de los ingresos anuales previstos comidos por la operativa los primeros dos o tres años. He visto a marcas europeas de tamaño medio presupuestar 500.000 dólares para un lanzamiento en China y agotarlos en seis meses sin nada que enseñar. Si la marca trabaja con márgenes finos, esas cuentas no salen ni sobre el papel.
 

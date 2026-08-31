@@ -81,6 +81,11 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  /* Off-canvas furniture (the mobile nav drawer, the mega panel's edge
+     bleeds, decorative glows) must never widen the document and let the
+     page drag sideways. clip, not hidden: hidden would create a scroll
+     container and break position: sticky descendants. */
+  overflow-x: clip;
 }
 body {
   margin: 0;
@@ -565,6 +570,11 @@ h4,
   left: 0;
   right: 0;
   top: var(--nav-bottom, 76px);
+  /* The spine and feature columns bleed toward the viewport edges with
+     negative (100vw - 100%) margins that overshoot, because 100% resolves
+     against their own grid column. Clip the overshoot here so the closed
+     panel cannot widen the document and let the page scroll sideways. */
+  overflow-x: clip;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-8px);

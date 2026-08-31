@@ -11,7 +11,7 @@ heroImageAlt: "Le PDG de NIO en livestream face à ses clients"
 
 ## L'avènement du PDG livestreamer
 
-Lei Jun chez Xiaomi, Zhou Hongyi chez 360 Company : les patrons chinois s'installent désormais face caméra pour animer eux-mêmes leurs sessions de [livestream](/fr/se-developper-en-chine/influence-et-kol). Elon Musk avait posé le précédent à l'international. En Chine, le format s'industrialise. Ces dirigeants ne se contentent pas de présenter un produit. Ils incarnent la marque, la rendent accessible, presque familière, auprès d'une génération née le smartphone à la main.
+Lei Jun chez Xiaomi, Zhou Hongyi chez 360 Company : les patrons chinois s'installent désormais face caméra pour animer eux-mêmes leurs sessions de [livestream](/fr/reseaux-sociaux-chinois). Elon Musk avait posé le précédent à l'international. En Chine, le format s'industrialise. Ces dirigeants ne se contentent pas de présenter un produit. Ils incarnent la marque, la rendent accessible, presque familière, auprès d'une génération née le smartphone à la main.
 
 ## Lire les règles du jeu
 

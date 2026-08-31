@@ -38,7 +38,7 @@ Tmall (天猫) and JD.com (京东) are racing to build competing infrastructure,
 
 Here's the paradox GenAI creates: as synthetic content floods Xiaohongshu/RED (小红书), Weibo (微博), and Douyin (抖音), authentic human voices become exponentially more valuable.
 
-I'm watching brands scramble to lock in long-term relationships with proven KOLs and KOCs before their rates skyrocket. The economics are straightforward: when every brand can generate thousands of AI [influencer](/grow-in-china/influencers-kols) posts for pennies, the humans who can move purchase intent become strategic assets.
+I'm watching brands scramble to lock in long-term relationships with proven KOLs and KOCs before their rates skyrocket. The economics are straightforward: when every brand can generate thousands of AI [influencer](/social-in-china) posts for pennies, the humans who can move purchase intent become strategic assets.
 
 > Expect KOL fees to increase 30-50% in 2026 for creators who can demonstrate genuine community trust and conversion metrics.
 

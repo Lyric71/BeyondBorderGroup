@@ -65,7 +65,7 @@ Confianza y personalidad convierten. La clave en 2025 es disciplina de formato y
 
 * Preproducción asistida por IA: listas de planos, storyboards, talking points; recortes inmediatos para retargeting en minutos.
 
-Para situarlo en contexto, el GMV de [livestream](/es/crecer-en-china/influencia-y-kol) alcanzó 332.500 millones de RMB durante Double 11 de 2024 (+54,6 % interanual). Los datos de 2025 aún se están consolidando, pero la ventaja estructural del live commerce sigue intacta: confianza, claridad y conversión probada.
+Para situarlo en contexto, el GMV de [livestream](/es/redes-sociales-chinas) alcanzó 332.500 millones de RMB durante Double 11 de 2024 (+54,6 % interanual). Los datos de 2025 aún se están consolidando, pero la ventaja estructural del live commerce sigue intacta: confianza, claridad y conversión probada.
 
 ### Una omnicanalidad que conecta y cruza fronteras
 

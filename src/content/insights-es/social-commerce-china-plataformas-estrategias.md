@@ -103,7 +103,7 @@ A Weibo se la suele comparar con Twitter, y ha sabido reinventarse como platafor
 **Características de Weibo:**
 
 * Presencia consolidada: la longevidad y la capacidad de adaptación de Weibo la mantienen como una de las grandes redes sociales chinas, con un público demográficamente muy amplio.
-* Marketing con [KOL](/es/crecer-en-china/influencia-y-kol): es un terreno ideal para encontrar y colaborar con KOL capaces de impulsar visibilidad y ventas.
+* Marketing con [KOL](/es/redes-sociales-chinas): es un terreno ideal para encontrar y colaborar con KOL capaces de impulsar visibilidad y ventas.
 * Comunicación ágil: facilita el diálogo directo entre marcas y clientes, lo que mejora la atención y la relación con la audiencia.
 * Gestión de eCommerce: Weibo Xiaodian permite operar la venta online dentro de la propia plataforma, con una experiencia integrada para el usuario.
 

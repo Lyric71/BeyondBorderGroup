@@ -1,0 +1,422 @@
+---
+/**
+ * Shared hero for the Compass pages, cloned from the section's model layout
+ * on /enter-china/market-entry-consulting (mec-hero) so the four "Find a
+ * partner" pages read as one family: full-bleed photograph with parallax,
+ * dark gradient overlay plus grain, breadcrumbs, painted title rows, lead,
+ * two actions, a stat strip and a scroll cue.
+ *
+ * Copy comes in as props from the page's locale object; this component owns
+ * only markup, styles and the hero's own motion (parallax, counters, reveal),
+ * all behind a prefers-reduced-motion guard.
+ */
+import type { HeroStat, HeroTitleRow } from '../../../content/pages/compass/types';
+
+interface Props {
+  crumbs: { label: string; href: string }[];
+  eyebrow: string;
+  rows: HeroTitleRow[];
+  lead: string;
+  primary: { label: string; href: string };
+  secondary: { label: string; href: string };
+  stats: HeroStat[];
+  image: { src: string; alt: string };
+  scrollCue: string;
+  scrollTarget: string;
+}
+
+const { crumbs, eyebrow, rows, lead, primary, secondary, stats, image, scrollCue, scrollTarget } =
+  Astro.props;
+---
+
+<section class="cph-hero" data-cph-hero>
+  <div class="cph-hero__bg" aria-hidden="true">
+    <img src={image.src} alt={image.alt} data-cph-bg fetchpriority="high" />
+  </div>
+  <div class="cph-hero__overlay" aria-hidden="true"></div>
+  <div class="cph-hero__grain" aria-hidden="true"></div>
+
+  <div class="container cph-hero__inner">
+    <nav class="cph-hero__crumbs" aria-label="Breadcrumb">
+      {crumbs.map((crumb, i) => (
+        <>
+          {i > 0 && <span aria-hidden="true">/</span>}
+          <a href={crumb.href}>{crumb.label}</a>
+        </>
+      ))}
+    </nav>
+    <span class="eyebrow eyebrow--on-dark cph-reveal">{eyebrow}</span>
+    <h1 class="cph-hero__title cph-reveal" style="--cph-d: 80ms;">
+      {rows.map((row) => (
+        <span
+          class:list={[
+            'cph-hero__title-row',
+            row.style === 'accent' && 'cph-hero__title-row--accent',
+            row.style === 'highlight' && 'cph-hero__title-row--highlight',
+          ]}
+        >
+          {row.style === 'highlight' ? (
+            <span class="cph-hero__title-hl">{row.text}</span>
+          ) : (
+            row.text
+          )}
+        </span>
+      ))}
+    </h1>
+    <p class="cph-hero__lead cph-reveal" style="--cph-d: 200ms;">{lead}</p>
+    <div class="cph-hero__actions cph-reveal" style="--cph-d: 280ms;">
+      <a href={primary.href} class="btn btn--primary">{primary.label}</a>
+      <a href={secondary.href} class="btn btn--ghost-light">{secondary.label}</a>
+    </div>
+
+    <div class="cph-hero__meta cph-reveal" style="--cph-d: 360ms;">
+      {stats.map((stat) => (
+        <div class="cph-hero__meta-item">
+          {stat.counter !== undefined ? (
+            <span class="cph-hero__meta-num" data-cph-counter={stat.counter} data-suffix={stat.suffix || ''}>
+              {stat.value}{stat.suffix || ''}
+            </span>
+          ) : (
+            <span class="cph-hero__meta-num">{stat.value}</span>
+          )}
+          <span class="cph-hero__meta-label">{stat.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <a href={scrollTarget} class="cph-hero__scroll" aria-label={scrollCue}>
+    <span class="cph-hero__scroll-line"></span>
+    <span class="cph-hero__scroll-text">{scrollCue}</span>
+  </a>
+</section>
+
+<style>
+  .cph-hero {
+    position: relative;
+    min-height: clamp(560px, 72vh, 760px);
+    display: flex;
+    align-items: center;
+    padding: clamp(8px, 1.25vh, 16px) 0 clamp(72px, 10vh, 120px);
+    color: var(--bbg-white);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  body:has(.cph-hero) .cph-hero {
+    padding-top: clamp(140px, 14vh, 180px);
+  }
+  @media (max-width: 1024px) {
+    body:has(.cph-hero) .cph-hero {
+      padding-top: clamp(120px, 12vh, 148px);
+    }
+  }
+  @media (max-width: 720px) {
+    .cph-hero {
+      min-height: clamp(520px, 80vh, 680px);
+      padding-bottom: clamp(64px, 9vh, 96px);
+    }
+  }
+  .cph-hero__bg {
+    position: absolute;
+    inset: -10% 0 0;
+    z-index: -3;
+  }
+  .cph-hero__bg img {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    object-position: center;
+    transform: translate3d(0, var(--cph-parallax, 0px), 0) scale(1.04);
+    transition: transform 80ms linear;
+    filter: saturate(0.95);
+  }
+  .cph-hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background:
+      linear-gradient(
+        110deg,
+        rgba(6, 14, 22, 0.94) 0%,
+        rgba(6, 14, 22, 0.82) 38%,
+        rgba(6, 14, 22, 0.55) 80%,
+        rgba(6, 14, 22, 0.4) 100%
+      ),
+      radial-gradient(120% 80% at 0% 100%, rgba(200, 16, 46, 0.3) 0%, rgba(200, 16, 46, 0) 60%);
+  }
+  .cph-hero__grain {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 3px 3px;
+    mix-blend-mode: overlay;
+    opacity: 0.45;
+    pointer-events: none;
+  }
+  .cph-hero__inner {
+    max-width: 980px;
+    position: relative;
+  }
+  .cph-hero__crumbs {
+    margin-bottom: var(--space-4);
+    font-size: var(--fs-small);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .cph-hero__crumbs a {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+  }
+  .cph-hero__crumbs a:hover {
+    color: var(--bbg-white);
+  }
+  .cph-hero__inner .eyebrow--on-dark {
+    display: inline-block;
+    margin-bottom: var(--space-3);
+    color: #c8102e;
+  }
+  .cph-hero__title {
+    font-size: clamp(2rem, 3.4vw + 1rem, 3.75rem);
+    line-height: 1.06;
+    letter-spacing: -0.025em;
+    color: var(--bbg-white);
+    margin: 0 0 var(--space-4);
+    max-width: 22ch;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 0.05em;
+  }
+  .cph-hero__title-row {
+    display: block;
+  }
+  .cph-hero__title-row--accent {
+    color: #c8102e;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: -0.018em;
+  }
+  .cph-hero__title-row--highlight {
+    align-self: flex-start;
+    /* The title runs at 1.06 for a tight stack, which leaves the underline
+       nowhere to go: a bar drawn below the baseline lands on the cap height of
+       the next line and reads as a strikethrough. A highlighted row that wraps
+       needs the extra leading; rows without a bar keep the tight setting. */
+    line-height: 1.26;
+  }
+  /* The underline is a background on an inline span so a row that wraps gets
+     a bar under every line, not one detached rule under the block. */
+  .cph-hero__title-hl {
+    padding: 0 0.15em;
+    background-image: linear-gradient(90deg, var(--bbg-blue) 0%, #e84a60 100%);
+    background-repeat: no-repeat;
+    background-position: 0 1.04em;
+    background-size: 0% 0.18em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    animation: cph-underline 900ms cubic-bezier(0.16, 1, 0.3, 1) 600ms both;
+  }
+  @keyframes cph-underline {
+    from {
+      background-size: 0% 0.18em;
+    }
+    to {
+      background-size: 100% 0.18em;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cph-hero__title-hl {
+      animation: none;
+      background-size: 100% 0.18em;
+    }
+  }
+  .cph-hero__lead {
+    font-size: clamp(1rem, 0.5vw + 1rem, 1.1875rem);
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.86);
+    max-width: 58ch;
+    margin: 0 0 var(--space-5);
+  }
+  .cph-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+  }
+  .cph-hero__actions .btn:hover {
+    transform: translateY(-2px);
+  }
+  .cph-hero__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(var(--space-4), 4vw, var(--space-7));
+    padding-top: var(--space-5);
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    max-width: 720px;
+  }
+  .cph-hero__meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .cph-hero__meta-num {
+    font-size: clamp(1.625rem, 1.2vw + 1rem, 2.125rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--bbg-white);
+    font-feature-settings: 'tnum';
+  }
+  .cph-hero__meta-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.66);
+    letter-spacing: 0.02em;
+  }
+  .cph-hero__scroll {
+    position: absolute;
+    bottom: var(--space-5);
+    right: clamp(var(--space-5), 4vw, var(--space-7));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 200ms ease;
+  }
+  .cph-hero__scroll:hover {
+    color: var(--bbg-white);
+  }
+  .cph-hero__scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.6) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .cph-hero__scroll-line::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, transparent 0%, var(--bbg-white) 100%);
+    animation: cph-scroll-tick 1.8s ease-in-out infinite;
+  }
+  @keyframes cph-scroll-tick {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cph-hero__scroll-line::after {
+      animation: none;
+    }
+  }
+  @media (max-width: 720px) {
+    .cph-hero__scroll {
+      display: none;
+    }
+    .cph-hero__meta {
+      gap: var(--space-4);
+    }
+  }
+
+  .cph-reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+      opacity 700ms cubic-bezier(0.2, 0.8, 0.2, 1) var(--cph-d, 0ms),
+      transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1) var(--cph-d, 0ms);
+  }
+  .cph-reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cph-reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const hero = document.querySelector('[data-cph-hero]');
+    if (!hero) return;
+
+    // Entrance reveal for the hero's own elements.
+    const revealEls = hero.querySelectorAll('.cph-reveal');
+    if (reduced || !('IntersectionObserver' in window)) {
+      revealEls.forEach((el) => el.classList.add('is-in'));
+    } else {
+      requestAnimationFrame(() => {
+        revealEls.forEach((el) => el.classList.add('is-in'));
+      });
+    }
+
+    // Parallax on the background photograph.
+    const bg = hero.querySelector('[data-cph-bg]');
+    if (bg && !reduced) {
+      let ticking = false;
+      const update = () => {
+        ticking = false;
+        const y = Math.min(window.scrollY, window.innerHeight);
+        bg.style.setProperty('--cph-parallax', y * 0.18 + 'px');
+      };
+      window.addEventListener(
+        'scroll',
+        () => {
+          if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(update);
+          }
+        },
+        { passive: true },
+      );
+    }
+
+    // Stat counters.
+    const counters = hero.querySelectorAll('[data-cph-counter]');
+    if (counters.length && !reduced && 'IntersectionObserver' in window) {
+      const animate = (el) => {
+        const target = parseFloat(el.dataset.cphCounter || '0');
+        const suffix = el.dataset.suffix || '';
+        const duration = 1200;
+        const start = performance.now();
+        const tick = (now) => {
+          const t = Math.min(1, (now - start) / duration);
+          const eased = 1 - Math.pow(1 - t, 3);
+          el.textContent = Math.round(target * eased) + suffix;
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animate(entry.target);
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      counters.forEach((el) => io.observe(el));
+    }
+  })();
+</script>

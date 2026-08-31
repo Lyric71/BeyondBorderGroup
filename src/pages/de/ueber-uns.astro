@@ -154,6 +154,37 @@ const leadership = [
     </div>
   </section>
 
+  {/* ---------- THE GROUP (WO-3.4) ---------- */}
+  <section class="section group-section">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">Die Gruppe</span>
+        <h2>Drei Unternehmen. Ein Weg nach China.</h2>
+        <p class="lead">Der größte Teil der Arbeit liegt bei uns. Zwei Bereiche nicht, und das sagen wir lieber offen, als so zu tun, als könnten wir alles.</p>
+      </header>
+
+      <div class="grid grid-3">
+        <a class="card group-card" href="/de/nach-china">
+          <h3 class="card__title">TheChinaPath</h3>
+          <p>Markteintritt, Vertrieb und E-Commerce. Wo verkauft wird, mit wem verkauft wird und wie das Geld tatsächlich fließt, sobald die Marke im Regal steht.</p>
+          <span class="card__footer btn btn--ghost">Zur Markteintrittsarbeit</span>
+        </a>
+        <a class="card group-card" href="/de/website-und-wechat-in-china">
+          <h3 class="card__title">ChinaWebFoundry</h3>
+          <p>Ihre Website, in Shanghai für das chinesische Internet gebaut. ICP-Lizenz, Hosting hinter der Firewall, Baidu und die KI-Systeme, die Käufer inzwischen zuerst fragen.</p>
+          <span class="card__footer btn btn--ghost">Zur Webarbeit</span>
+        </a>
+        <a class="card group-card" href="/de/chinesische-social-media">
+          <h3 class="card__title">TheRedScroll</h3>
+          <p>WeChat, Douyin, RedNote und Weibo, täglich betreut. Accounts, Inhalte, Creator, Community. Der Teil des China-Marketings, der nie schläft.</p>
+          <span class="card__footer btn btn--ghost">Zur Social-Arbeit</span>
+        </a>
+      </div>
+
+      <p class="group-close">Derselbe Gründer, dieselben Büros in Shanghai, Hongkong und Paris, derselbe Anspruch. Sie können mit einem von uns arbeiten oder mit allen dreien. In keinem Fall werden Sie weitergereicht.</p>
+    </div>
+  </section>
+
   <section class="section section--tight section--alt">
     <div class="container">
       <div class="cta-card">
@@ -249,5 +280,24 @@ const leadership = [
     .leader-card__photo img {
       max-width: 200px;
     }
+  }
+
+  /* WO-3.4: the three-company section. */
+  .group-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .group-card .card__title {
+    color: var(--bbg-ink);
+  }
+  .group-card p {
+    flex: 1;
+  }
+  .group-close {
+    margin-top: var(--space-6);
+    max-width: 72ch;
+    color: var(--bbg-text-muted);
   }
 </style>

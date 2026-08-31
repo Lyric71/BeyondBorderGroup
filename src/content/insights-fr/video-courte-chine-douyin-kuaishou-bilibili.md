@@ -41,7 +41,7 @@ Douyin règne sur la vidéo courte. Développée par ByteDance, la plateforme ra
 
 #### Ce qui attire les marques
 
-Douyin parle aux jeunes urbains, sensibles à l'esthétique et au tempo. Beaucoup d'enseignes s'appuient sur une agence marketing en Chine pour produire le contenu et orchestrer les partenariats avec des [influenceurs](/fr/se-developper-en-chine/influence-et-kol). Visionnage, clic, achat. Le parcours ne se rompt jamais.
+Douyin parle aux jeunes urbains, sensibles à l'esthétique et au tempo. Beaucoup d'enseignes s'appuient sur une agence marketing en Chine pour produire le contenu et orchestrer les partenariats avec des [influenceurs](/fr/reseaux-sociaux-chinois). Visionnage, clic, achat. Le parcours ne se rompt jamais.
 
 ### Kuaishou
 

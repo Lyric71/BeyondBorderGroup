@@ -12,7 +12,7 @@ heroImageAlt: "Livestream y creación de contenido en vídeo"
 
 ## El despegue del livestream en China
 
-El [livestream](/es/crecer-en-china/influencia-y-kol) ha crecido en China a una velocidad de vértigo y se ha consolidado como una pieza central del eCommerce chino. Más allá del entretenimiento, estas [plataformas](/es/conocer-china/plataformas) funcionan como herramientas potentes para que las marcas hablen directamente con el consumidor, enseñen producto y cierren ventas en plena emisión.
+El [livestream](/es/redes-sociales-chinas) ha crecido en China a una velocidad de vértigo y se ha consolidado como una pieza central del eCommerce chino. Más allá del entretenimiento, estas [plataformas](/es/conocer-china/plataformas) funcionan como herramientas potentes para que las marcas hablen directamente con el consumidor, enseñen producto y cierren ventas en plena emisión.
 
 El GMV del livestream chino superará el billón de dólares en 2026, según las previsiones. Detrás de ese crecimiento están una población muy digital, una innovación tecnológica constante y la integración fluida entre lo social y la compra. La popularidad de plataformas como Douyin refleja cómo el consumidor abraza esta forma dinámica de comercio.
 

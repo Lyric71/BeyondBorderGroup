@@ -56,7 +56,7 @@ Le format en direct ouvre un dialogue immédiat entre la marque et ses abonnés.
 
 ## Marketing d'influence et KOL
 
-Collaborer avec les influenceurs et les Key Opinion Leaders chinois reste un raccourci efficace pour étendre la portée d'une marque sur Channels. Le [marketing KOL](/fr/se-developper-en-chine/influence-et-kol) chinois apporte une crédibilité immédiate et un accès direct à des audiences ciblées. Le consommateur accorde son crédit aux recommandations de ses KOL de référence, ce qui se traduit par un engagement et une affinité supérieurs.
+Collaborer avec les influenceurs et les Key Opinion Leaders chinois reste un raccourci efficace pour étendre la portée d'une marque sur Channels. Le [marketing KOL](/fr/reseaux-sociaux-chinois) chinois apporte une crédibilité immédiate et un accès direct à des audiences ciblées. Le consommateur accorde son crédit aux recommandations de ses KOL de référence, ce qui se traduit par un engagement et une affinité supérieurs.
 
 * **Partenariats KOL :** l'association à des influenceurs spécialisés sur la verticale de la marque (beauté, mode, technologie) génère des taux d'engagement élevés.
 * **Publicités avec KOL :** Channels propose des annonces natives dans le fil vidéo, des annonces avec influenceurs et des formats CPC/CPM. Les marques disposent d'un véritable catalogue pour gagner en visibilité auprès de cibles précises.

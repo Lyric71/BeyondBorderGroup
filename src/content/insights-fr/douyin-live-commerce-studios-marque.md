@@ -16,7 +16,7 @@ keyTakeaways:
   - "Construisez un rythme : 3 à 5 lives par semaine, 10 à 15 vidéos courtes, un étage payant en dessous. La capitalisation tient au calendrier, pas au coup d'éclat."
 ---
 
-Douyin n'est plus la plateforme où l'on programme un gros [livestream](/fr/se-developper-en-chine/influence-et-kol) une fois par trimestre.
+Douyin n'est plus la plateforme où l'on programme un gros [livestream](/fr/reseaux-sociaux-chinois) une fois par trimestre.
 
 L'application fonctionne désormais comme un système d'exploitation pour le retail. Le contenu fabrique la demande, la publicité l'amplifie, la recherche la capte, l'achat boucle le tout dans la même fenêtre. Traiter Douyin comme une opération coup de poing revient à brûler son budget vite et à apprendre lentement.
 

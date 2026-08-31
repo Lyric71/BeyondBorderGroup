@@ -56,7 +56,7 @@ El livestream en Channels permite a la marca dialogar directamente con sus segui
 
 ## Marketing con influencers y KOL
 
-Trabajar con influencers chinos y KOL es una vía contrastada para que la marca amplíe su alcance en WeChat Channels. El [marketing](/es/crecer-en-china/influencia-y-kol) con KOL en China aporta credibilidad y permite acceder a audiencias muy concretas, porque el seguidor confía en la recomendación del KOL. Eso facilita captar engagement y construir afinidad de marca.
+Trabajar con influencers chinos y KOL es una vía contrastada para que la marca amplíe su alcance en WeChat Channels. El [marketing](/es/redes-sociales-chinas) con KOL en China aporta credibilidad y permite acceder a audiencias muy concretas, porque el seguidor confía en la recomendación del KOL. Eso facilita captar engagement y construir afinidad de marca.
 
 * **Colaboraciones con KOL:** trabajar con KOL especializados en áreas afines a la marca, como belleza, moda o tecnología, garantiza un engagement alto.
 * **Anuncios pagados con KOL:** WeChat Channels ofrece anuncios nativos que aparecen en el feed de vídeo, anuncios de influencer y formatos CPC/CPM, lo que da a la marca flexibilidad para subir visibilidad ante una audiencia segmentada.

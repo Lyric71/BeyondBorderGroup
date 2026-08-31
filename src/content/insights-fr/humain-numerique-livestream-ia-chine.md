@@ -12,7 +12,7 @@ heroImageAlt: "Présentateurs virtuels animant un livestream commercial"
 
 ## Une audience captée en quelques minutes
 
-Le 16 avril 2024, [JD](/fr/se-developper-en-chine/ecommerce-transfrontalier).com a déployé un avatar numérique inédit de son fondateur, Liu Qiangdong. Effet immédiat sur le [livestream](/fr/se-developper-en-chine/influence-et-kol) : 10 millions de spectateurs en moins de trente minutes. 13 millions au bout de quarante. Près de 20 millions dans la première heure. Le record tombe et confirme la puissance d'attraction des dispositifs pilotés par IA.
+Le 16 avril 2024, [JD](/fr/se-developper-en-chine/ecommerce-transfrontalier).com a déployé un avatar numérique inédit de son fondateur, Liu Qiangdong. Effet immédiat sur le [livestream](/fr/reseaux-sociaux-chinois) : 10 millions de spectateurs en moins de trente minutes. 13 millions au bout de quarante. Près de 20 millions dans la première heure. Le record tombe et confirme la puissance d'attraction des dispositifs pilotés par IA.
 
 ## Une interaction crédible qui retient le spectateur
 

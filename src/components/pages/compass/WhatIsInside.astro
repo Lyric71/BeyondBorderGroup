@@ -1,0 +1,142 @@
+---
+/**
+ * WO-2.1 — /compass/what-is-inside, shared across every locale.
+ * 301 target for compass.bearingbridge.com/en/what-you-can-find.
+ *
+ * The partner types, the nine profile field groups and the category list are
+ * ported facts. The "why we do not sell it as a product" section does the work
+ * the spec's guardrail asks for: Compass is how a shortlist gets built, not a
+ * subscription.
+ */
+import Layout from '../../../layouts/Layout.astro';
+import { getLocaleFromUrl, localizePath } from '../../../i18n/utils';
+import { APP_URL } from '../../../data/compass';
+import type { CompassCopy } from '../../../content/pages/compass/types';
+
+interface Props {
+  copy: CompassCopy;
+}
+
+const { copy } = Astro.props;
+const { facts, whatIsInside: c } = copy;
+
+const locale = getLocaleFromUrl(Astro.url);
+const shortlistHref = localizePath('/compass/shortlist', locale);
+const howItWorksHref = localizePath('/compass/how-it-works', locale);
+const appHost = APP_URL.replace(/^https?:\/\//, '');
+---
+
+<Layout title={c.title} description={c.description}>
+  <section class="section section--dark cmp-hero">
+    <div class="container">
+      <span class="eyebrow">{c.eyebrow}</span>
+      <h1 class="h1">{c.h1}</h1>
+      <p class="lead cmp-hero__lead">{c.lead}</p>
+      <p class="cmp-hero__body">{c.body}</p>
+      <div class="cmp-hero__cta">
+        <a href={shortlistHref} class="btn btn--primary">{c.ctaPrimary}</a>
+        <a href={howItWorksHref} class="btn btn--ghost">{c.ctaSecondary}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is in it -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">{c.whoEyebrow}</span>
+        <h2 class="h2">{c.whoTitle}</h2>
+        <p class="lead">{c.whoLead}</p>
+      </div>
+      <div class="grid grid-4">
+        {
+          facts.partnerTypes.map((t) => (
+            <article class="card">
+              <h3 class="card__title">{t.name}</h3>
+              <p>{t.body}</p>
+            </article>
+          ))
+        }
+      </div>
+
+      <div class="wii-coverage">
+        <p class="wii-coverage__label">{c.coverageLabel}</p>
+        <div class="cmp-pills">
+          {facts.categories.map((cat) => <span class="cmp-pill">{cat}</span>)}
+        </div>
+        <p class="wii-note">{facts.categoriesClosing}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we record -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">{c.fieldsEyebrow}</span>
+        <h2 class="h2">{c.fieldsTitle}</h2>
+        <p class="lead">{c.fieldsLead}</p>
+      </div>
+      <figure class="cmp-figure cmp-figure--wide">
+        <img
+          src="/Images/compass/what-is-inside.png"
+          alt={c.figureAlt}
+          loading="lazy"
+          width="1536"
+          height="1024"
+        />
+        <figcaption>{c.figureCaption}</figcaption>
+      </figure>
+
+      <div class="grid grid-3">
+        {
+          facts.profileFields.map((f) => (
+            <article class="card">
+              <h3 class="card__title">{f.name}</h3>
+              <p>{f.body}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Why it is not a product -->
+  <section class="section">
+    <div class="container cmp-narrow">
+      <span class="eyebrow">{c.notProductEyebrow}</span>
+      <h2 class="h2">{c.notProductTitle}</h2>
+      {c.notProductBody.map((p) => <p>{p}</p>)}
+      <p>
+        {c.notProductClosing.before}<a href={APP_URL}>{appHost}</a>{c.notProductClosing.after}
+      </p>
+      <div class="cmp-next">
+        <a href={shortlistHref} class="btn btn--primary">{c.nextCtaPrimary}</a>
+        <a href={howItWorksHref} class="btn btn--ghost">{c.nextCtaSecondary}</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cmp-hero .h1 {
+    max-width: 18ch;
+  }
+  .wii-coverage {
+    margin-top: var(--space-7);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--bbg-border);
+  }
+  .wii-coverage__label {
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bbg-blue);
+    margin-bottom: var(--space-4);
+  }
+  .wii-note {
+    margin-top: var(--space-4);
+    color: var(--bbg-text-muted);
+  }
+</style>

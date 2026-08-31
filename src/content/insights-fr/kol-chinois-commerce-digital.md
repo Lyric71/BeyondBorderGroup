@@ -14,7 +14,7 @@ heroImageAlt: "Cartographie du marketing d'influence en Chine"
 
 ### Ce qu'est un KOL en Chine
 
-Un Key Opinion Leader ([KOL](/fr/se-developper-en-chine/influence-et-kol)) chinois agrège une large audience et pèse directement sur les arbitrages d'achat de ses abonnés. L'influenceur occidental met en scène un style de vie. Le KOL chinois, lui, passe pour un expert de sa catégorie. Il tranche, prescrit, recommande, sur la beauté, la mode, la tech ou le lifestyle.
+Un Key Opinion Leader ([KOL](/fr/reseaux-sociaux-chinois)) chinois agrège une large audience et pèse directement sur les arbitrages d'achat de ses abonnés. L'influenceur occidental met en scène un style de vie. Le KOL chinois, lui, passe pour un expert de sa catégorie. Il tranche, prescrit, recommande, sur la beauté, la mode, la tech ou le lifestyle.
 
 ### Pourquoi les marques en dépendent
 

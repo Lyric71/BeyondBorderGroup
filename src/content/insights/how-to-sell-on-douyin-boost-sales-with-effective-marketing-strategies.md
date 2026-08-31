@@ -80,7 +80,7 @@ Live streaming not only enhances user engagement but also offers real-time feedb
 
 ## Collaborating with Key Opinion Leaders (KOLs)
 
-In social commerce in China, [KOL](/grow-in-china/influencers-kols) marketing is an essential strategy for building credibility and expanding reach. By collaborating with China KOLs, brands can tap into their vast followings to reach targeted demographics more effectively.
+In social commerce in China, [KOL](/social-in-china) marketing is an essential strategy for building credibility and expanding reach. By collaborating with China KOLs, brands can tap into their vast followings to reach targeted demographics more effectively.
 
 ### How to Work with KOLs:
 

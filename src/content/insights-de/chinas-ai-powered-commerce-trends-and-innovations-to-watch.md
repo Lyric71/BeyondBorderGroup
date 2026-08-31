@@ -48,7 +48,7 @@ Social Commerce wächst in China kräftig. WeChat und Douyin integrieren KI, um 
 
 - **Content-Personalisierung:** Nutzer sehen Anzeigen und Produkte, die zu ihren Vorlieben passen.
 - **Livestream-Shopping:** KI hebt Live-Erlebnisse, mit Echtzeit-Analytik und Interaktion.
-- **[Influencer](/de/in-china-wachsen/influencer-und-kol)-Marketing:** Algorithmen identifizieren passende Influencer und maximieren die Kampagnenwirkung.
+- **[Influencer](/de/chinesische-social-media)-Marketing:** Algorithmen identifizieren passende Influencer und maximieren die Kampagnenwirkung.
 
 Diese Entwicklungen erlauben Social-Media-Agenturen in China, innovative Marketing-Strategien zu schaffen und neu zu definieren, wie Produkte entdeckt und verkauft werden.
 

@@ -48,7 +48,7 @@ Le social commerce avance à plein régime en Chine. WeChat et Douyin embarquent
 
 - **Le contenu personnalisé.** L'IA aligne publicités et produits sur les préférences de chaque utilisateur.
 - **Le live shopping.** L'IA enrichit la vente en direct grâce à des analyses en temps réel et à des outils d'interaction avancés.
-- **Le marketing d'[influence](/fr/se-developper-en-chine/influence-et-kol).** Les algorithmes ciblent les bons profils pour chaque marque et amplifient l'impact des activations.
+- **Le marketing d'[influence](/fr/reseaux-sociaux-chinois).** Les algorithmes ciblent les bons profils pour chaque marque et amplifient l'impact des activations.
 
 Tout cela ouvre aux agences social media chinoises un champ stratégique inédit. La façon dont un produit se découvre et se vend s'en trouve redessinée.
 

@@ -41,7 +41,7 @@ Douyin es la versión china de TikTok y una de las plataformas líderes del víd
 
 #### Por qué las marcas usan Douyin
 
-Douyin destaca como plataforma de marketing para marcas que apuntan al consumidor urbano joven, enganchado al contenido visualmente potente y con estilo. Muchas empresas trabajan con una agencia de marketing en China para crear contenidos sólidos y orquestar colaboraciones con [influencers](/es/crecer-en-china/influencia-y-kol). La plataforma deja al usuario pasar del entretenimiento a la compra sin sobresaltos.
+Douyin destaca como plataforma de marketing para marcas que apuntan al consumidor urbano joven, enganchado al contenido visualmente potente y con estilo. Muchas empresas trabajan con una agencia de marketing en China para crear contenidos sólidos y orquestar colaboraciones con [influencers](/es/redes-sociales-chinas). La plataforma deja al usuario pasar del entretenimiento a la compra sin sobresaltos.
 
 ### Kuaishou
 

@@ -29,7 +29,7 @@ Auf dem Papier schnell und bezahlbar. In der Praxis weder noch.
 
 > Die Marke braucht trotzdem eine vollständige Infrastruktur und ein Team, das in China operiert. Dort eskalieren die Kosten.
 
-Ausländische Marken brauchen fast immer einen TP, einen Trade Partner. Ein TP ist eine lokale Agentur, die den Online-Shop täglich führt: Aufbau, Produktlistings, Content, Kundenservice, Media-Einkauf, Kampagnenausführung, [KOL](/de/in-china-wachsen/influencer-und-kol)-Partnerschaften, Logistik-Koordination. Alles auf Mandarin, in chinesischen Geschäftszeiten, auf Plattformen, deren Regeln sich ohne Vorwarnung ändern. Aus einer ausländischen Zentrale lässt sich das nicht steuern.
+Ausländische Marken brauchen fast immer einen TP, einen Trade Partner. Ein TP ist eine lokale Agentur, die den Online-Shop täglich führt: Aufbau, Produktlistings, Content, Kundenservice, Media-Einkauf, Kampagnenausführung, [KOL](/de/chinesische-social-media)-Partnerschaften, Logistik-Koordination. Alles auf Mandarin, in chinesischen Geschäftszeiten, auf Plattformen, deren Regeln sich ohne Vorwarnung ändern. Aus einer ausländischen Zentrale lässt sich das nicht steuern.
 
 Ein guter TP verlangt einen monatlichen Retainer und eine Verkaufsprovision. Rechnen Sie Plattformgebühren, Mediaausgaben und Zolllager-Logistik dazu, und Sie landen bei 30 bis 40 Prozent Ihres anvisierten Jahresumsatzes, die in den ersten zwei bis drei Jahren in den Betrieb fliessen. Ich habe mittelgrosse europäische Marken gesehen, die 500.000 US-Dollar für einen China-Launch einplanen und in sechs Monaten ohne sichtbare Wirkung aufgebraucht haben. Bei dünnen Margen bricht die Rechnung, bevor sie startet.
 

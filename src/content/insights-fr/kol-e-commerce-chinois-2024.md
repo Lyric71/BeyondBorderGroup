@@ -110,7 +110,7 @@ Fei Zhu Zhu partage recettes express et astuces de cuisine inventives. Vitrine i
 * **Plateforme** : Douyin
 * **Abonnés** : 738 000
 
-Bacon Diary fait figure de référence dans l'[influence](/fr/se-developper-en-chine/influence-et-kol) culinaire. Esthétique soignée, récits qui parlent au plus grand nombre, cuisine traditionnelle revisitée avec des techniques modernes, et une dose d'humour. La recette d'une communauté massive.
+Bacon Diary fait figure de référence dans l'[influence](/fr/reseaux-sociaux-chinois) culinaire. Esthétique soignée, récits qui parlent au plus grand nombre, cuisine traditionnelle revisitée avec des techniques modernes, et une dose d'humour. La recette d'une communauté massive.
 
 ![Bacon Diary, food sur Douyin](/Images/insights/2024/12/bacon-final.png)
 

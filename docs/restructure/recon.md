@@ -289,3 +289,45 @@ Reported under the "if a step conflicts with the repo, the repo wins" rule.
    dropdown item pointing at another domain, and the new "Find a partner" group points at
    `/compass`, which WO-2.1 creates. Shipping WO-1.1 before WO-2.1 would wire the nav to a 404.
    The pages are therefore built before the nav is rewired. End state is unchanged.
+
+---
+
+## Decisions taken (Phase 3)
+
+5. **WO-3.1 narrowing: structural only.** The standalone KOL page is retired in
+   all four locales, 301s to `/social-in-china`, and the two surfaces that
+   promoted it (the Grow in China hub card, the homepage service rail) now point
+   at the social door. The spec also asked to narrow `social-commerce`,
+   `campaigns` and `media`. Those are 2,987 / 1,309 / 2,093 lines each, times
+   four locales, with creator content woven through the body rather than sitting
+   in removable sections. Excising it on a guess would gut three pages that read
+   well, so the body copy is unchanged and this is flagged for a decision.
+
+6. **WO-3.4 is an addition, and it names three companies, not four.** The About
+   page had no ecosystem list to trim (conflict 1 above), so a "The group"
+   section was added in all four locales: TheChinaPath, ChinaWebFoundry,
+   TheRedScroll. The footer strip stays at four logos on the founder's
+   instruction, and the two lists are deliberately different: the strip is the
+   wider network, the About section is the route a client actually walks.
+   Compass appears in neither, because it is a capability rather than a company.
+
+7. **WO-3.2 found a live bug, not just drift.** `beyondbridge.com` in the footer
+   returned 404 on every page of the site; the canonical host is
+   `www.beyondbridge.ai`. Three more sister links cost a 308 hop each. All are
+   normalised, and `npm run check:links` now fails the build on a repeat, in
+   this repo and in chinawebfoundry and theredscroll.
+
+8. **WO-3.6 found three more.** 14 internal links in insight bodies pointed at
+   WordPress-era paths that no longer exist; the Spanish cross-border page read
+   the English insight collection and built three links to
+   `/es/analisis/<english-slug>`; and the insight slug table claimed a German
+   article that was never written, which put a 404 in the sitemap and broke the
+   hreflang cluster for the English, French and Spanish versions of that piece.
+   All fixed. `npm run audit:build` asserts all four conditions after a build.
+
+9. **Compass copy is one contract across four locales.**
+   `src/content/pages/compass/types.ts` is the single shape; a locale that falls
+   behind fails `astro check` rather than shipping a half-translated page. Slugs
+   are native per locale (`/fr/compass/pourquoi-cette-base`,
+   `/de/compass/warum-geprueft`, `/es/compass/que-contiene`), with `compass`
+   itself kept as a brand name per house rule 6.8.

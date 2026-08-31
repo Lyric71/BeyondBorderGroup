@@ -161,6 +161,6 @@ Mit aufstrebenden Plattformen wie Bilibili und Pinduoduo wird Diversifikation wi
 
 ## Fazit
 
-[KOL](/de/in-china-wachsen/influencer-und-kol)-Marketing in China ist Eckpfeiler erfolgreicher Markenführung und Digital-Strategie. Vom Mikro-Influencer bis zum Celebrity, Kosten variieren, doch der Ertrag ist bei sauberer Steuerung hoch. Mit einer Branding-, Social-Media- oder Digital-Marketing-Agentur in China lassen sich diese komplexen Wege gut führen und wirkungsstarke Kampagnen entwickeln.
+[KOL](/de/chinesische-social-media)-Marketing in China ist Eckpfeiler erfolgreicher Markenführung und Digital-Strategie. Vom Mikro-Influencer bis zum Celebrity, Kosten variieren, doch der Ertrag ist bei sauberer Steuerung hoch. Mit einer Branding-, Social-Media- oder Digital-Marketing-Agentur in China lassen sich diese komplexen Wege gut führen und wirkungsstarke Kampagnen entwickeln.
 
 Wer aus Fallstudien lernt und das chinesische Konsumverhalten genau liest, schöpft Potenzial im grössten eCommerce-Markt der Welt aus.

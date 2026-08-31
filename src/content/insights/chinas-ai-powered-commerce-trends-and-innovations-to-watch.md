@@ -49,7 +49,7 @@ Social commerce is a booming sector in China, with platforms like WeChat and Dou
 
 - **Content Personalization:** AI ensures users see ads and products that align with their preferences.
 - **Livestream Shopping:** AI enhances live shopping experiences by providing real-time analytics and interaction tools.
-- **[Influencer](/grow-in-china/influencers-kols) Marketing:** Algorithms identify suitable influencers for brands, maximizing campaign impact.
+- **[Influencer](/social-in-china) Marketing:** Algorithms identify suitable influencers for brands, maximizing campaign impact.
 
 These developments empower social media agencies in China to create innovative marketing strategies, redefining how products are discovered and sold.
 

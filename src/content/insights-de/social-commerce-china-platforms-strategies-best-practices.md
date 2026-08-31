@@ -103,7 +103,7 @@ Mit Weibo Xiaodian zur Social-Commerce-Bühne geworden. Marken steuern Bestände
 **Wichtige Funktionen:**
 
 * Starke Präsenz über viele Demografien.
-* [KOL](/de/in-china-wachsen/influencer-und-kol)-Marketing als Treiber für Sichtbarkeit und Umsatz.
+* [KOL](/de/chinesische-social-media)-Marketing als Treiber für Sichtbarkeit und Umsatz.
 * Direkte Kommunikation zwischen Marken und Kunden.
 * eCommerce-Management innerhalb der Plattform, mit reibungslosem Einkaufserlebnis.
 

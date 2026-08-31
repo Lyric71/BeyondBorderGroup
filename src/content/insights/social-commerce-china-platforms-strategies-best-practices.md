@@ -104,7 +104,7 @@ Weibo, often likened to Twitter, has successfully transitioned into a powerful s
 **Key Features of Weibo:**
 
 * Strong Presence: Weibo's longevity and adaptability have cemented its position as a major social media platform in China, appealing to a wide range of demographics.
-* [KOL](/grow-in-china/influencers-kols) Marketing: The platform is ideal for finding and collaborating with KOLs, who can significantly boost brand visibility and sales through their influence.
+* [KOL](/social-in-china) Marketing: The platform is ideal for finding and collaborating with KOLs, who can significantly boost brand visibility and sales through their influence.
 * Smooth Communication: Weibo facilitates direct communication between brands and customers, enhancing engagement and customer service.
 * E-Commerce Management: Weibo Xiaodian allows brands to control their e-commerce operations within the platform, providing a smooth and integrated shopping experience for users.
 

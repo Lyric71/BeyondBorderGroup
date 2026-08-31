@@ -56,7 +56,7 @@ Articuler ces réseaux sociaux à une logique de performance marketing, c'est g�
 
 ### b) S'associer aux Key Opinion Leaders pour amplifier la portée
 
-Le [marketing d'influence](/fr/se-developper-en-chine/influence-et-kol), ou KOL marketing, demeure l'un des leviers les plus puissants du 11.11. S'allier à des KOL chinois aux audiences consolidées multiplie la visibilité d'une marque et conforte sa crédibilité.
+Le [marketing d'influence](/fr/reseaux-sociaux-chinois), ou KOL marketing, demeure l'un des leviers les plus puissants du 11.11. S'allier à des KOL chinois aux audiences consolidées multiplie la visibilité d'une marque et conforte sa crédibilité.
 
 Les influenceurs chinois cumulent un capital confiance considérable auprès de leurs abonnés, ce qui donne à leurs recommandations une force de prescription rare. Une maison de mode trouvera son public chez les créateurs lifestyle de Xiaohongshu. Un acteur tech préférera les testeurs de gadgets actifs sur Weibo.
 

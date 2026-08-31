@@ -79,7 +79,7 @@ Le livestream muscle l'engagement, fournit un retour immédiat et installe la co
 
 ## Travailler avec les KOL (Key Opinion Leaders)
 
-Dans le social commerce chinois, le marketing [KOL](/fr/se-developper-en-chine/influence-et-kol) reste une stratégie clé pour bâtir la crédibilité et pousser la portée. Le partenariat avec un KOL chinois ouvre l'accès à des communautés massives et affine le ciblage.
+Dans le social commerce chinois, le marketing [KOL](/fr/reseaux-sociaux-chinois) reste une stratégie clé pour bâtir la crédibilité et pousser la portée. Le partenariat avec un KOL chinois ouvre l'accès à des communautés massives et affine le ciblage.
 
 ### Les règles du jeu
 

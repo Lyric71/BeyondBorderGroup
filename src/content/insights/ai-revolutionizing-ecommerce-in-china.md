@@ -26,7 +26,7 @@ AI helps eCommerce businesses in China reduce operational costs. Alibaba, for ex
 
 ## Digital Human Integration
 
-Digital humans are becoming integral in AI-driven eCommerce strategies. For example, Li Jiaqi, a well-known virtual [influencer](/grow-in-china/influencers-kols), collaborates with brands to promote products through live-streaming. These AI-powered influencers interact with consumers in real-time, offering personalized recommendations and creating a more engaging shopping experience.
+Digital humans are becoming integral in AI-driven eCommerce strategies. For example, Li Jiaqi, a well-known virtual [influencer](/social-in-china), collaborates with brands to promote products through live-streaming. These AI-powered influencers interact with consumers in real-time, offering personalized recommendations and creating a more engaging shopping experience.
 
 ## Comprehensive AI Integration
 

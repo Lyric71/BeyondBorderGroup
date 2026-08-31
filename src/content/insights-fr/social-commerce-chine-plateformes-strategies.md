@@ -103,7 +103,7 @@ Souvent comparé à Twitter, Weibo a basculé dans le social commerce avec Weibo
 **Ce que propose Weibo :**
 
 * Présence installée : la longévité et la capacité d'adaptation de Weibo en font un acteur social majeur en Chine, qui parle à un public très varié.
-* Marketing [KOL](/fr/se-developper-en-chine/influence-et-kol) : la plateforme reste un terrain de chasse idéal pour repérer et activer des créateurs capables d'amplifier visibilité et ventes.
+* Marketing [KOL](/fr/reseaux-sociaux-chinois) : la plateforme reste un terrain de chasse idéal pour repérer et activer des créateurs capables d'amplifier visibilité et ventes.
 * Communication directe : Weibo facilite l'échange entre marques et clients, ce qui solidifie l'engagement et la qualité de service.
 * Pilotage e-commerce : Weibo Xiaodian permet aux marques de gérer leurs opérations en interne, pour une expérience intégrée côté utilisateur.
 

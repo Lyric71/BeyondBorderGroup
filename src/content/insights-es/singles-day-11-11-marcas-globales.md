@@ -56,7 +56,7 @@ Articular estas redes sociales con una lógica de performance marketing signific
 
 ### b) Aliarse con los Key Opinion Leaders para amplificar el alcance
 
-El [marketing de influencia](/es/crecer-en-china/influencia-y-kol), o KOL marketing, sigue siendo una de las palancas más potentes del 11.11. Aliarse con KOL chinos de audiencias consolidadas multiplica la visibilidad de la marca y refuerza su credibilidad.
+El [marketing de influencia](/es/redes-sociales-chinas), o KOL marketing, sigue siendo una de las palancas más potentes del 11.11. Aliarse con KOL chinos de audiencias consolidadas multiplica la visibilidad de la marca y refuerza su credibilidad.
 
 Los influencers chinos acumulan un capital de confianza considerable entre sus seguidores, lo que dota a sus recomendaciones de una fuerza de prescripción poco común. Una casa de moda encontrará a su público entre los creadores de lifestyle de Xiaohongshu. Un actor tecnológico preferirá a los probadores de gadgets activos en Weibo.
 

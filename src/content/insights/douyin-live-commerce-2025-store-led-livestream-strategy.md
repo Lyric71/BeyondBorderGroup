@@ -17,7 +17,7 @@ keyTakeaways:
   - "Budget for a content rhythm: 3 to 5 live sessions per week, 10 to 15 short videos, a paid layer underneath. The compounding sits in the calendar, not in a hero moment."
 ---
 
-Douyin is no longer "a channel where you do a big [livestream](/grow-in-china/influencers-kols)."
+Douyin is no longer "a channel where you do a big [livestream](/social-in-china)."
 
 In 2026, it behaves like a retail operating system. Content creates demand, ads amplify it, search captures it, and checkout happens inside the same loop. If you treat it like a one-off campaign, you will burn budget fast and learn slowly.
 

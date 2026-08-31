@@ -12,7 +12,7 @@ heroImageAlt: "Création de contenu vidéo et live streaming"
 
 ## La trajectoire fulgurante du live commerce chinois
 
-Le [live commerce](/fr/se-developper-en-chine/influence-et-kol) chinois a accéléré à toute vitesse avant de s'installer parmi les piliers de l'e-commerce local. Bien au-delà du divertissement, ces [plateformes](/fr/comprendre-la-chine/plateformes) donnent aux marques les outils pour dialoguer directement avec le consommateur, démontrer un produit et boucler la vente dans la session même.
+Le [live commerce](/fr/reseaux-sociaux-chinois) chinois a accéléré à toute vitesse avant de s'installer parmi les piliers de l'e-commerce local. Bien au-delà du divertissement, ces [plateformes](/fr/comprendre-la-chine/plateformes) donnent aux marques les outils pour dialoguer directement avec le consommateur, démontrer un produit et boucler la vente dans la session même.
 
 Le volume d'affaires du live commerce chinois doit franchir la barre des 1 000 milliards de dollars d'ici 2026. La courbe repose sur trois piliers : une population de digital natives, un terreau technologique inventif, une intégration fluide entre social et shopping. L'engouement pour le live Douyin résume à lui seul la rapidité d'appropriation du format par le consommateur.
 

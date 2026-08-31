@@ -37,7 +37,7 @@ Tmall (天猫) y JD.com (京东) corren para montar una infraestructura competid
 
 Esta es la paradoja que crea la IA generativa: a medida que el contenido sintético inunda Xiaohongshu/RED (小红书), Weibo (微博) y Douyin (抖音), las voces humanas auténticas multiplican su valor.
 
-Veo a marcas peleándose por cerrar relaciones de largo recorrido con KOL y KOC probados antes de que sus tarifas se disparen. La cuenta es sencilla: cuando cualquiera puede generar miles de posts de [influencia](/es/crecer-en-china/influencia-y-kol) con IA por céntimos, los humanos que sí mueven la intención de compra se convierten en activos estratégicos.
+Veo a marcas peleándose por cerrar relaciones de largo recorrido con KOL y KOC probados antes de que sus tarifas se disparen. La cuenta es sencilla: cuando cualquiera puede generar miles de posts de [influencia](/es/redes-sociales-chinas) con IA por céntimos, los humanos que sí mueven la intención de compra se convierten en activos estratégicos.
 
 > Las tarifas de KOL crecerán entre un 30 % y un 50 % en 2026 para creadores que puedan demostrar confianza real de comunidad y métricas de conversión.
 

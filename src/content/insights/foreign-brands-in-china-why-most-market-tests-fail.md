@@ -30,7 +30,7 @@ On paper, it is fast and affordable. In practice, it is neither.
 
 > The brand still needs a full infrastructure and a team to operate in China. That is where costs spiral.
 
-Foreign brands almost always need what the industry calls a TP, a Trade Partner. A TP is a local agency that runs your online store day to day: setup, product listings, content creation, customer service, media buying, campaign execution, [KOL](/grow-in-china/influencers-kols) partnerships, and logistics coordination. Everything happens in Mandarin, during Chinese business hours, on platforms that change rules without notice. No foreign headquarters can manage this remotely.
+Foreign brands almost always need what the industry calls a TP, a Trade Partner. A TP is a local agency that runs your online store day to day: setup, product listings, content creation, customer service, media buying, campaign execution, [KOL](/social-in-china) partnerships, and logistics coordination. Everything happens in Mandarin, during Chinese business hours, on platforms that change rules without notice. No foreign headquarters can manage this remotely.
 
 A quality TP charges a monthly retainer plus a commission on sales. Add the platform fees, the media spend, and the bonded warehouse logistics, and you are looking at 30 to 40 percent of your targeted annual revenue eaten up by operations in the first two to three years. I have seen mid-size European brands budget $500,000 for a China launch and burn through it in six months with almost nothing to show. For brands with thin margins, this math breaks before it starts.
 

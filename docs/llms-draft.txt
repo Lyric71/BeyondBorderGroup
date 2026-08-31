@@ -1,46 +1,75 @@
-# Beyond Border Group
+# TheChinaPath
 
-> Beyond Border Group (BBG) is a B2B marketing and eCommerce agency that helps global brands enter, grow, and win in China. Founded by Cyril Drouin (former CEO of Publicis China), the agency operates from Shanghai, Hong Kong, and Paris. Services span market entry consulting, cross-border eCommerce setup on Tmall Global and JD Worldwide, distribution, branding and localisation, social commerce on Douyin/WeChat/RED, KOL and influencer management, paid media, content production (Hub Studio), and China intelligence programmes. The agency also operates Compass, a vetted database of China distributors and trade partners.
+> TheChinaPath is a B2B marketing and eCommerce agency that helps global brands enter, grow, and win in China. Founded by Cyril Drouin (former CEO of Publicis Commerce and Performance Marketing for China and North Asia), the agency works out of Shanghai, Hong Kong, and Paris, with fifteen years on the ground. Services span market entry consulting, cross-border eCommerce setup on Tmall Global and JD Worldwide, distribution, branding and localisation, social commerce on Douyin, WeChat and RED, paid media, content production, and China intelligence programmes. The agency also runs Compass, a private database of vetted China distributors and trade partners, and works alongside two sister companies: ChinaWebFoundry for websites built for the Chinese internet, and TheRedScroll for day-to-day Chinese social media.
 
 ## Primary Pages
 
-- [Home](https://beyondbordergroup.com/): Overview of BBG's three service pillars: Enter China, Grow in China, Learn China. Includes hero stats (20+ years in China, 75+ brand launches, millions in GMV under management).
-- [Enter China](https://beyondbordergroup.com/enter-china): Hub page for the four entry services: market entry consulting, cross-border eCommerce setup (Tmall Global / JD Worldwide), distribution, and branding and localisation.
-- [Grow in China](https://beyondbordergroup.com/grow-in-china): Hub for growth services: cross-border eCommerce operations, social commerce (Douyin, WeChat, RED), campaigns (618, Double 11, CNY), paid media, and KOL/influencer programmes.
-- [Learn China](https://beyondbordergroup.com/learn-china): Training and intelligence offering: platform masterclasses, learning expeditions to China, and market insights.
-- [About](https://beyondbordergroup.com/about): Team bios for founder Cyril Drouin (25 years in digital/advertising/commerce, former CEO Publicis Commerce North Asia), Echo Peng (Senior Director, 18 years eCommerce China), and Liyan Ye (Senior Director, 20 years Fortune 500 China marketing).
-- [Work / Case Studies](https://beyondbordergroup.com/work): Portfolio of client engagements across beauty, automotive, FMCG, luxury, hospitality, and B2B categories.
-- [Insights](https://beyondbordergroup.com/insights): 60+ analysis articles on China eCommerce, platforms, market strategy, KOLs, livestream, and consumer trends.
-- [Contact](https://beyondbordergroup.com/contact): Direct contact for new business. Senior team responds, not automated sales tools.
-- [Market Entry Consulting](https://beyondbordergroup.com/enter-china/market-entry-consulting): Strategic consulting service covering channel selection, business model design, distributor mapping, and regulatory setup for foreign brands entering China.
-- [Cross-Border eCommerce Setup](https://beyondbordergroup.com/enter-china/cross-border-setup): End-to-end setup of Tmall Global or JD Worldwide storefronts, including bonded warehouse, customs clearance, and platform compliance. No Chinese entity required.
-- [Distribution](https://beyondbordergroup.com/enter-china/distribution): B2B and DTC distribution in China. BBG sources and vets distributors by category and region, or acts as the distributor directly.
-- [Branding and Localisation](https://beyondbordergroup.com/enter-china/branding-localisation): Chinese brand naming, visual identity adaptation, packaging, and tone of voice for the Chinese market.
-- [Social Commerce](https://beyondbordergroup.com/grow-in-china/social-commerce): Livestream selling, KOL partnerships, and in-app shop management on Douyin, WeChat, and RED.
-- [Campaigns](https://beyondbordergroup.com/grow-in-china/campaigns): Campaign planning and execution for China's major shopping festivals: 618, Double 11, and Chinese New Year.
-- [Influencers and KOLs](https://beyondbordergroup.com/grow-in-china/influencers-kols): KOL and KOC casting, briefing, and performance reporting from BBG's proprietary influencer database.
-- [Compass](https://compass.bearingbridge.com/en): Vetted database of China distributors, trade partners, and channel operators. Filterable by category, region, channel, and price tier.
-- [Hub Studio](https://hubstudio.ai): BBG's in-China content production studio. Photo, film, livestream, packaging, OOH, and AI-generated content (AIGC). Crews in Shanghai, Shenzhen, Changsha, and Hangzhou.
+- [Home](https://www.thechinapath.com/): Overview of the five things brands come here for: entering China, growing there, finding a partner, the website, and Chinese social.
+- [Enter China](https://www.thechinapath.com/enter-china): Hub for the four entry services: market entry consulting, cross-border eCommerce setup (Tmall Global / JD Worldwide), distribution, and branding and localisation.
+- [Grow in China](https://www.thechinapath.com/grow-in-china): Hub for growth services: cross-border eCommerce operations, social commerce, campaigns (618, Double 11, CNY), paid media, and content production.
+- [Learn China](https://www.thechinapath.com/learn-china): Platform masterclasses, learning expeditions to China, and market intelligence.
+- [About](https://www.thechinapath.com/about): Team bios for founder Cyril Drouin, Echo Peng (Senior Director, eCommerce China), and Liyan Ye (Senior Director, Fortune 500 China marketing), plus the three-company group structure.
+- [Work / Case Studies](https://www.thechinapath.com/work): Client engagements across beauty, automotive, FMCG, luxury, hospitality, and B2B.
+- [Insights](https://www.thechinapath.com/insights): 60+ analysis articles on China eCommerce, platforms, market strategy, KOLs, livestream, and consumer trends.
+- [Contact](https://www.thechinapath.com/contact): Direct contact for new business. A senior person replies, not an automated sales tool.
+
+## Services
+
+- [Market Entry Consulting](https://www.thechinapath.com/enter-china/market-entry-consulting): Channel selection, business model design, distributor mapping, and regulatory setup for foreign brands entering China.
+- [Cross-Border eCommerce Setup](https://www.thechinapath.com/enter-china/cross-border-setup): End-to-end setup of Tmall Global or JD Worldwide storefronts, including bonded warehouse, customs clearance, and platform compliance. No Chinese entity required.
+- [Distribution](https://www.thechinapath.com/enter-china/distribution): B2B and DTC distribution in China. TheChinaPath sources and vets distributors by category and region, or acts as the distributor directly.
+- [Branding and Localisation](https://www.thechinapath.com/enter-china/branding-localisation): Chinese brand naming, visual identity adaptation, packaging, and tone of voice.
+- [Social Commerce](https://www.thechinapath.com/grow-in-china/social-commerce): Livestream selling, creator partnerships, and in-app shop management on Douyin, WeChat, and RED.
+- [Campaigns](https://www.thechinapath.com/grow-in-china/campaigns): Planning and execution for China's shopping festivals: 618, Double 11, and Chinese New Year.
+- [Media](https://www.thechinapath.com/grow-in-china/media): Performance and brand media buying across Tencent, ByteDance, Alibaba, and Xiaohongshu.
+
+## Compass: the vetted partner database
+
+Compass is not a subscription and there is no public access to the records. It is the database the team works from when a brand briefs them, and what the brand receives is a shortlist with a written view on each name.
+
+- [Compass](https://www.thechinapath.com/compass): What the database is and how a shortlist gets built from it.
+- [Why vetted](https://www.thechinapath.com/compass/why-vetted): How the database was built, one meeting at a time, over fifteen years, and what the wrong partner costs a brand.
+- [What is inside](https://www.thechinapath.com/compass/what-is-inside): Distributors, Tmall and Douyin Partners, importers and channel specialists, and the nine field groups recorded for each.
+- [How a shortlist is built](https://www.thechinapath.com/compass/how-it-works): From the first brief to a warm introduction, in two or three weeks.
+- [Get your shortlist](https://www.thechinapath.com/compass/shortlist): The brief form.
+- [Become a partner](https://www.thechinapath.com/compass/partners): For China-domestic distributors and platform partners applying to join the database. English and Chinese only.
+
+## The two doors
+
+- [Build in China](https://www.thechinapath.com/build-in-china): Why a Western website fails in China, and what it takes to fix it. ICP filing, hosting inside the firewall, Baidu, and the AI engines Chinese buyers now ask first. Delivered by ChinaWebFoundry.
+- [Social in China](https://www.thechinapath.com/social-in-china): WeChat, Douyin, RedNote and Weibo, run day to day. Accounts, content, creators, community. Delivered by TheRedScroll.
+
+## The group
+
+- [ChinaWebFoundry](https://www.chinawebfoundry.com): Web agency in Shanghai, building and maintaining sites for international brands operating in mainland China.
+- [TheRedScroll](https://www.theredscroll.com): Chinese social media agency. WeChat, Douyin, RedNote, Weibo.
+- [hubStudio](https://www.hubstudio.ai): The in-China content production studio. Photo, film, livestream, packaging, OOH, and AI-generated content. Crews in Shanghai, Shenzhen, Changsha, and Hangzhou.
 
 ## Insights
 
-- [How Foreign Brands Test the Chinese Market. And Why Most Get It Wrong.](https://beyondbordergroup.com/insights/foreign-brands-in-china-why-most-market-tests-fail): CEO Cyril Drouin explains why cross-border eCommerce costs 30-40% of targeted annual revenue in years one to three, why Douyin is now the correct first test channel, and why the "1.4 billion shoppers" pitch fails every time.
-- [Navigating Cross-Border Commerce Livestreaming: Insights from CEO Cyril Drouin](https://beyondbordergroup.com/insights/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin): Cyril Drouin interviewed at MCN International Shanghai on live commerce, brand localisation, KOL evolution, and the divergence between Chinese and Western eCommerce models.
-- [China 2026: 8 eCommerce and Marketing Predictions](https://beyondbordergroup.com/insights/china-2026-8-ecommerce-marketing-predictions): Forward-looking analysis of platform dynamics, AI-driven commerce, and consumer behaviour shifts heading into 2026.
-- [Double 11 2025: The End of China's Shopping Wars](https://beyondbordergroup.com/insights/double-11-2025-the-end-of-chinas-shopping-wars): Analysis of how China's biggest shopping festival is maturing and what it means for international brand strategy.
-- [China eCommerce Platforms 2025](https://beyondbordergroup.com/insights/china-e-commerce-platforms-2025): Comparative guide to Tmall, JD, Douyin, RED, WeChat, and Pinduoduo for foreign brands deciding where to invest.
-- [China Is No Longer One Market: A Localised Growth Strategy for 2025](https://beyondbordergroup.com/insights/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025): Regional segmentation strategy for brands moving beyond Tier 1 cities.
-- [Douyin Live Commerce 2025: Store-Led Livestream Strategy](https://beyondbordergroup.com/insights/douyin-live-commerce-2025-store-led-livestream-strategy): Tactical guide to store-anchored livestream selling on Douyin, the fastest-growing commerce format in China.
-- [Science and Emotion: China's New Brand Playbook](https://beyondbordergroup.com/insights/science-emotion-chinas-new-brand-playbook): How domestic Chinese competitors are combining product efficacy claims with emotional storytelling to outmanoeuvre foreign brands.
-- [AI Revolutionizing eCommerce in China](https://beyondbordergroup.com/insights/ai-revolutionizing-ecommerce-in-china): How AI is reshaping product discovery, customer service, content production, and campaign optimisation on Chinese platforms.
-- [Brand Localization for China Without Losing Your DNA](https://beyondbordergroup.com/insights/brand-localization-for-china-without-losing-your-dna): Framework for adapting a Western brand for Chinese consumers without eroding its core identity.
+- [How Foreign Brands Test the Chinese Market. And Why Most Get It Wrong.](https://www.thechinapath.com/insights/foreign-brands-in-china-why-most-market-tests-fail): Why cross-border eCommerce costs 30-40% of targeted annual revenue in years one to three, why Douyin is now the correct first test channel, and why the "1.4 billion shoppers" pitch fails every time.
+- [Navigating Cross-Border Commerce Livestreaming: Insights from CEO Cyril Drouin](https://www.thechinapath.com/insights/navigating-cross-border-commerce-insights-from-beyondbordergroups-ceo-cyril-drouin): Cyril Drouin at MCN International Shanghai on live commerce, brand localisation, KOL evolution, and the divergence between Chinese and Western eCommerce models.
+- [China 2026: 8 eCommerce and Marketing Predictions](https://www.thechinapath.com/insights/china-2026-8-ecommerce-marketing-predictions): Platform dynamics, AI-driven commerce, and consumer behaviour shifts heading into 2026.
+- [Double 11 2025: The End of China's Shopping Wars](https://www.thechinapath.com/insights/double-11-2025-the-end-of-chinas-shopping-wars): How China's biggest shopping festival is maturing and what it means for international brand strategy.
+- [China eCommerce Platforms 2025](https://www.thechinapath.com/insights/china-e-commerce-platforms-2025): Comparative guide to Tmall, JD, Douyin, RED, WeChat, and Pinduoduo for foreign brands deciding where to invest.
+- [China Is No Longer One Market: A Localised Growth Strategy for 2025](https://www.thechinapath.com/insights/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025): Regional segmentation for brands moving beyond Tier 1 cities.
+- [Douyin Live Commerce 2025: Store-Led Livestream Strategy](https://www.thechinapath.com/insights/douyin-live-commerce-2025-store-led-livestream-strategy): Store-anchored livestream selling on Douyin, the fastest-growing commerce format in China.
+- [Science and Emotion: China's New Brand Playbook](https://www.thechinapath.com/insights/science-emotion-chinas-new-brand-playbook): How domestic Chinese competitors combine product efficacy claims with emotional storytelling to outmanoeuvre foreign brands.
+- [AI Revolutionizing eCommerce in China](https://www.thechinapath.com/insights/ai-revolutionizing-ecommerce-in-china): How AI is reshaping product discovery, customer service, content production, and campaign optimisation on Chinese platforms.
+- [Brand Localization for China Without Losing Your DNA](https://www.thechinapath.com/insights/brand-localization-for-china-without-losing-your-dna): Adapting a Western brand for Chinese consumers without eroding its core identity.
 
 ## Case Studies
 
-- [Marriott Hotel](https://beyondbordergroup.com/work/marriott): Integrated Tmall Super Brand Day campaign combining celebrity, KOL, and offline activations to drive millions in sales and loyalty sign-ups.
-- [Pierre Fabre](https://beyondbordergroup.com/work/pierre-fabre): China digital, eCommerce, and AIGC masterclass for Pierre Fabre's leadership team, built around live case studies from the market.
-- [Camper](https://beyondbordergroup.com/work/camper): Grew Camper's WeChat, Weibo, and RedNote presence by over 330% through craft-led storytelling, design partnerships, and micro-influencer activation.
-- [Jaguar Land Rover](https://beyondbordergroup.com/work/jaguar-land-rover): Year-round integrated social programme for JLR in China, engaging younger audiences through iconic content and UGC campaigns.
-- [Valio](https://beyondbordergroup.com/work/valio): Introduced Valio's eila sub-brand to China with a localized Chinese name, competitive positioning, and a full visual identity system from logo to packaging.
-- [Shiseido RQ/Pyology](https://beyondbordergroup.com/work/shiseido-rq-pyology): Skincare brand launch programme on Chinese platforms for a Shiseido Group brand.
-- [Mission Foods](https://beyondbordergroup.com/work/mission-foods): China market entry and eCommerce activation for a global food brand entering the Chinese retail channel.
+- [Marriott Hotel](https://www.thechinapath.com/work/marriott): Integrated Tmall Super Brand Day campaign combining celebrity, KOL, and offline activations to drive sales and loyalty sign-ups.
+- [Pierre Fabre](https://www.thechinapath.com/work/pierre-fabre): China digital, eCommerce, and AIGC masterclass for Pierre Fabre's leadership team, built around live case studies from the market.
+- [Camper](https://www.thechinapath.com/work/camper): Grew Camper's WeChat, Weibo, and RedNote presence by over 330% through craft-led storytelling, design partnerships, and micro-influencer activation.
+- [Jaguar Land Rover](https://www.thechinapath.com/work/jaguar-land-rover): Year-round integrated social programme for JLR in China, engaging younger audiences through iconic content and UGC campaigns.
+- [Valio](https://www.thechinapath.com/work/valio): Introduced Valio's eila sub-brand to China with a localized Chinese name, competitive positioning, and a full visual identity system from logo to packaging.
+- [Shiseido RQ/Pyology](https://www.thechinapath.com/work/shiseido-rq-pyology): Skincare brand launch programme on Chinese platforms for a Shiseido Group brand.
+- [Mission Foods](https://www.thechinapath.com/work/mission-foods): China market entry and eCommerce activation for a global food brand entering the Chinese retail channel.
+
+## Notes
+
+- The site is published in English, French, German, and Spanish. Locale pages use native-language URLs, for example /fr/entrer-en-chine and /de/nach-china.
+- The Compass partner application is the one exception: it also ships in Chinese, at /zh/compass/partners.
+- The Compass application itself sits at compass.thechinapath.com. It is gated, noindex, and for account holders only.

@@ -1,0 +1,184 @@
+---
+/**
+ * WO-2.1 — /compass/why-vetted, shared across every locale.
+ * 301 target for compass.bearingbridge.com/en/why-this-database.
+ *
+ * The three failure stories, the six deciding questions and the comparison
+ * table are ported facts and live in the locale copy object's `facts` branch,
+ * so this page and the pillar page always quote the same wording.
+ */
+import Layout from '../../../layouts/Layout.astro';
+import { getLocaleFromUrl, localizePath } from '../../../i18n/utils';
+import type { CompassCopy } from '../../../content/pages/compass/types';
+
+interface Props {
+  copy: CompassCopy;
+}
+
+const { copy } = Astro.props;
+const { facts, whyVetted: c } = copy;
+
+const locale = getLocaleFromUrl(Astro.url);
+const shortlistHref = localizePath('/compass/shortlist', locale);
+const whatIsInsideHref = localizePath('/compass/what-is-inside', locale);
+---
+
+<Layout title={c.title} description={c.description}>
+  <section class="section section--dark cmp-hero">
+    <div class="container">
+      <span class="eyebrow">{c.eyebrow}</span>
+      <h1 class="h1">{c.h1}</h1>
+      <p class="lead cmp-hero__lead">{c.lead}</p>
+      <p class="cmp-hero__body">{c.body}</p>
+      <div class="cmp-hero__cta">
+        <a href={shortlistHref} class="btn btn--primary">{c.ctaPrimary}</a>
+        <a href={whatIsInsideHref} class="btn btn--ghost">{c.ctaSecondary}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The question everyone asks -->
+  <section class="section">
+    <div class="container cmp-narrow">
+      <span class="eyebrow">{c.questionEyebrow}</span>
+      <h2 class="h2">{c.questionTitle}</h2>
+      <p class="wv-question">{c.questionPull}</p>
+      <p>{c.questionBody}</p>
+      <p>{facts.headline}</p>
+    </div>
+  </section>
+
+  <!-- Three ways it goes wrong -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">{c.storiesEyebrow}</span>
+        <h2 class="h2">{c.storiesTitle}</h2>
+      </div>
+      <div class="grid grid-3">
+        {
+          facts.failureStories.map((s) => (
+            <article class="card">
+              <h3 class="card__title">{s.kind}</h3>
+              <p>{s.story}</p>
+            </article>
+          ))
+        }
+      </div>
+      <figure class="cmp-figure">
+        <img
+          src="/Images/compass/why-vetted.png"
+          alt={c.figureAlt}
+          loading="lazy"
+          width="1536"
+          height="1024"
+        />
+        <figcaption>{c.figureCaption}</figcaption>
+      </figure>
+
+      <p class="wv-cost">{c.storiesCost}</p>
+    </div>
+  </section>
+
+  <!-- What we have been building -->
+  <section class="section">
+    <div class="container cmp-narrow">
+      <span class="eyebrow">{c.buildingEyebrow}</span>
+      <h2 class="h2">{c.buildingTitle}</h2>
+      {c.buildingBody.map((p) => <p>{p}</p>)}
+    </div>
+  </section>
+
+  <!-- From directory to database -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">{c.questionsEyebrow}</span>
+        <h2 class="h2">{c.questionsTitle}</h2>
+        <p class="lead">{c.questionsLead}</p>
+      </div>
+      <ul class="cmp-list wv-questions">
+        {facts.decidingQuestions.map((q) => <li>{q}</li>)}
+      </ul>
+      <p class="wv-cost">{c.questionsCost}</p>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">{facts.comparison.eyebrow}</span>
+        <h2 class="h2">{facts.comparison.title}</h2>
+      </div>
+      <div class="cmp-table-wrap">
+        <table class="cmp-table">
+          <thead>
+            <tr>
+              <th scope="col"><span class="sr-only">{facts.comparison.axisHeader}</span></th>
+              <th scope="col">{facts.comparison.columnHeaders.scraped}</th>
+              <th scope="col">{facts.comparison.columnHeaders.ours}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              facts.comparison.rows.map((row) => (
+                <tr>
+                  <th scope="row">{row.label}</th>
+                  <td data-col={facts.comparison.columnHeaders.scraped}>{row.scraped}</td>
+                  <td data-col={facts.comparison.columnHeaders.ours}>{row.ours}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cmp-next">
+        <a href={shortlistHref} class="btn btn--primary">{c.nextCtaPrimary}</a>
+        <a href={whatIsInsideHref} class="btn btn--ghost">{c.nextCtaSecondary}</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cmp-hero .h1 {
+    max-width: 20ch;
+  }
+  .wv-question {
+    font-size: var(--fs-lead);
+    font-weight: 600;
+    color: var(--bbg-ink);
+    margin-top: var(--space-5);
+  }
+  .wv-cost {
+    margin-top: var(--space-6);
+    max-width: 70ch;
+    color: var(--bbg-text-muted);
+  }
+  .wv-questions {
+    columns: 2;
+    column-gap: var(--space-7);
+    max-width: 900px;
+  }
+  .wv-questions li {
+    break-inside: avoid;
+  }
+  @media (max-width: 720px) {
+    .wv-questions {
+      columns: 1;
+    }
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>

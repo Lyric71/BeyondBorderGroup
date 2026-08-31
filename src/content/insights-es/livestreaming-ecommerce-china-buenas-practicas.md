@@ -12,7 +12,7 @@ heroImageAlt: "Plano medio de una influencer de talla grande"
 
 ## El ascenso del livestream eCommerce en China
 
-El [livestream](/es/crecer-en-china/influencia-y-kol) en el [eCommerce](/es/crecer-en-china/ecommerce-transfronterizo) chino no es una moda pasajera. Es una fuerza dominante dentro del retail. Taobao Live, Douyin (la versión china de TikTok) y Kuaishou han convertido la compra tradicional en una experiencia interactiva y entretenida. El comprador ve demostraciones en directo, pregunta y compra sin sobresaltos. El resultado: un recorrido de compra mejor informado y mucho más enganchante.
+El [livestream](/es/redes-sociales-chinas) en el [eCommerce](/es/crecer-en-china/ecommerce-transfronterizo) chino no es una moda pasajera. Es una fuerza dominante dentro del retail. Taobao Live, Douyin (la versión china de TikTok) y Kuaishou han convertido la compra tradicional en una experiencia interactiva y entretenida. El comprador ve demostraciones en directo, pregunta y compra sin sobresaltos. El resultado: un recorrido de compra mejor informado y mucho más enganchante.
 
 El crecimiento se explica por varios factores:
 

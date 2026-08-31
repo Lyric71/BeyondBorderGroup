@@ -58,7 +58,7 @@ Xiaohongshu, conocida como el "buscador de lifestyle" chino, es una plataforma d
 
 ### El peso de las redes sociales
 
-Plataformas como Douyin (TikTok) y Weibo juegan un papel determinante en la decisión de viaje del cliente chino de lujo. Las marcas que apalancan bien estas plataformas pueden inspirar e influir en la elección de destino con contenido atractivo y colaboraciones con [influencers](/es/crecer-en-china/influencia-y-kol). El vídeo corto de Douyin resulta especialmente eficaz para mostrar destinos y experiencias con un tratamiento dinámico y visualmente potente, mientras que los livestreams en Weibo aportan insights y conversación en tiempo real que resuenan con el viajero potencial.
+Plataformas como Douyin (TikTok) y Weibo juegan un papel determinante en la decisión de viaje del cliente chino de lujo. Las marcas que apalancan bien estas plataformas pueden inspirar e influir en la elección de destino con contenido atractivo y colaboraciones con [influencers](/es/redes-sociales-chinas). El vídeo corto de Douyin resulta especialmente eficaz para mostrar destinos y experiencias con un tratamiento dinámico y visualmente potente, mientras que los livestreams en Weibo aportan insights y conversación en tiempo real que resuenan con el viajero potencial.
 
 ## Construir conexión emocional
 

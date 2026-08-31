@@ -12,11 +12,11 @@ heroImageAlt: "Jeune entrepreneure asiatique au travail dans sa petite entrepris
 
 ## La poussée des entrepreneures sur le numérique chinois
 
-L'essor du [commerce numérique en Chine](https://www.thechinapath.com/ecommerce-services-in-china/) rebat les cartes pour les fondatrices, et 2024 confirme la bascule. Les plateformes ont fait sauter le verrou du capital initial, les outils marketing se démocratisent, de nouvelles voies s'ouvrent aux femmes pour lancer puis faire grandir leur affaire. Le mouvement déborde le cadre individuel. Il irrigue la croissance économique au sens large.
+L'essor du [commerce numérique en Chine](/fr/se-developper-en-chine/ecommerce-transfrontalier) rebat les cartes pour les fondatrices, et 2024 confirme la bascule. Les plateformes ont fait sauter le verrou du capital initial, les outils marketing se démocratisent, de nouvelles voies s'ouvrent aux femmes pour lancer puis faire grandir leur affaire. Le mouvement déborde le cadre individuel. Il irrigue la croissance économique au sens large.
 
 ## Des plateformes qui rebattent les cartes
 
-Les sociétés dirigées par des femmes avancent vite dans le paysage de l'[e-commerce chinois](https://www.thechinapath.com/ecommerce-services-in-china/). Sur [Taobao](/fr/se-developper-en-chine/ecommerce-transfrontalier), elles figurent parmi les meilleurs vendeurs et occupent plus de la moitié du top 100 des boutiques les plus actives. La dynamique épouse une tendance mondiale : les femmes prennent la tête de jeunes structures à un rythme inédit.
+Les sociétés dirigées par des femmes avancent vite dans le paysage de l'[e-commerce chinois](/fr/se-developper-en-chine/ecommerce-transfrontalier). Sur [Taobao](/fr/se-developper-en-chine/ecommerce-transfrontalier), elles figurent parmi les meilleurs vendeurs et occupent plus de la moitié du top 100 des boutiques les plus actives. La dynamique épouse une tendance mondiale : les femmes prennent la tête de jeunes structures à un rythme inédit.
 
 Les chiffres frappent par leur ampleur. L'an dernier, plus de 30 % des nouvelles boutiques ouvertes sur Taobao appartenaient à des femmes nées après 2000. Une part conséquente venait de villes de troisième ou quatrième rang. Preuve, s'il en fallait, que le commerce numérique démocratise l'accès aux affaires bien au-delà des grandes métropoles.
 
@@ -28,7 +28,7 @@ En Chine, les fondatrices s'appuient sur les plateformes pour contourner les bar
 
 ## Le commerce numérique resserre l'écart
 
-Des plateformes comme [Taobao](https://www.thechinapath.com/ecommerce-services-in-china/) ou Lazada égalisent les chances. Le ticket d'entrée reste bas. Les futures patronnes peuvent vendre dès le premier mois avec un investissement minimal. Le modèle profite d'abord aux femmes, plus souvent privées de financements et de réseaux.
+Des plateformes comme [Taobao](/fr/se-developper-en-chine/ecommerce-transfrontalier) ou Lazada égalisent les chances. Le ticket d'entrée reste bas. Les futures patronnes peuvent vendre dès le premier mois avec un investissement minimal. Le modèle profite d'abord aux femmes, plus souvent privées de financements et de réseaux.
 
 L'histoire de Lorina Tan illustre la bascule. Cette ancienne marketeuse philippine a cofondé la marque de soins pour bébés Tiny Buds en s'appuyant sur les ressources de Lazada. De tels parcours rappellent ce que le commerce numérique rend possible : bâtir et faire grandir des marques solides.
 

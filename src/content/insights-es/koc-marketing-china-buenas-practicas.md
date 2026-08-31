@@ -23,7 +23,7 @@ Esta guía recorre las buenas prácticas para trabajar con KOC en China, hacer c
 
 Los KOC son microinfluencers que priorizan la autenticidad y la cercanía. A diferencia de los KOL, con grandes audiencias pero menos compromiso, los KOC asientan su credibilidad compartiendo experiencias personales y reseñas honestas. Suelen operar dentro de nichos, dirigidos a comunidades con intereses o necesidades muy concretas.
 
-Con la ayuda de una agencia de marketing en China, una marca puede identificar a los KOC que mejor encajan con sus objetivos y garantizar campañas auténticas y efectivas. El consumidor chino busca cada vez más recomendaciones genuinas, por encima del endoso de celebridades, y eso ha convertido al [marketing KOC](/es/crecer-en-china/influencia-y-kol) en una estrategia imprescindible.
+Con la ayuda de una agencia de marketing en China, una marca puede identificar a los KOC que mejor encajan con sus objetivos y garantizar campañas auténticas y efectivas. El consumidor chino busca cada vez más recomendaciones genuinas, por encima del endoso de celebridades, y eso ha convertido al [marketing KOC](/es/redes-sociales-chinas) en una estrategia imprescindible.
 
 ## Ventajas del marketing KOC para el eCommerce chino
 

@@ -58,7 +58,7 @@ Xiaohongshu, oft als Chinas Lifestyle-Suchmaschine bezeichnet, ist eine zentrale
 
 ### Social-Influencer
 
-Douyin (TikTok) und Weibo prägen Reisevorlieben stark. Wer diese Plattformen mit kreativem Content und [Influencer](/de/in-china-wachsen/influencer-und-kol)-Partnerschaften nutzt, bewegt Entscheidungen. Douyins Kurzvideos zeigen Ziele dynamisch und visuell, Weibo-Livestreams liefern Echtzeit-Einblicke.
+Douyin (TikTok) und Weibo prägen Reisevorlieben stark. Wer diese Plattformen mit kreativem Content und [Influencer](/de/chinesische-social-media)-Partnerschaften nutzt, bewegt Entscheidungen. Douyins Kurzvideos zeigen Ziele dynamisch und visuell, Weibo-Livestreams liefern Echtzeit-Einblicke.
 
 ## Emotionale Verbindungen schaffen
 

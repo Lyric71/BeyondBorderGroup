@@ -24,7 +24,7 @@ This guide explores the best practices for using KOCs in China to grow your busi
 
 KOCs are micro-influencers who prioritize authenticity and relatability. Unlike KOLs, who often have a large but less engaged audience, KOCs establish credibility by sharing personal experiences and honest product reviews. They typically operate within niche markets, targeting specific communities with shared interests or needs.
 
-With the help of a marketing agency in China, brands can identify the right KOCs to align with their goals, ensuring campaigns are both authentic and effective. As Chinese consumers increasingly seek genuine recommendations over celebrity endorsements, [KOC marketing](/grow-in-china/influencers-kols) has become an essential strategy.
+With the help of a marketing agency in China, brands can identify the right KOCs to align with their goals, ensuring campaigns are both authentic and effective. As Chinese consumers increasingly seek genuine recommendations over celebrity endorsements, [KOC marketing](/social-in-china) has become an essential strategy.
 
 ## Benefits of KOC Marketing for eCommerce in China
 

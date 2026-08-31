@@ -37,7 +37,7 @@ Tmall (天猫) und JD.com (京东) rüsten dagegen, aber sie ziehen Systeme nach
 
 Das Paradox von GenAI: Während synthetischer Content Xiaohongshu/RED (小红书), Weibo (微博) und Douyin (抖音) überschwemmt, wird die echte menschliche Stimme exponentiell wertvoller.
 
-Ich sehe, wie Marken jetzt nach Langzeitverträgen mit bewährten KOL und KOC greifen, bevor die Honorare durch die Decke schiessen. Die Logik ist einfach: Wenn jede Marke Tausende KI-[Influencer](/de/in-china-wachsen/influencer-und-kol)-Posts für Pfennige produzieren kann, werden die Menschen, die Kaufabsicht bewegen können, zum strategischen Asset.
+Ich sehe, wie Marken jetzt nach Langzeitverträgen mit bewährten KOL und KOC greifen, bevor die Honorare durch die Decke schiessen. Die Logik ist einfach: Wenn jede Marke Tausende KI-[Influencer](/de/chinesische-social-media)-Posts für Pfennige produzieren kann, werden die Menschen, die Kaufabsicht bewegen können, zum strategischen Asset.
 
 > Erwarten Sie 2026 einen Anstieg der KOL-Honorare um 30 bis 50 Prozent bei Creators, die echtes Community-Vertrauen und Konversion belegen.
 

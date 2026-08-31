@@ -37,7 +37,7 @@ Tmall (天猫) et JD.com (京东) courent derrière pour bâtir des infrastructu
 
 Voici le paradoxe que produit l'IA générative. À mesure que le contenu synthétique inonde Xiaohongshu/RED (小红书), Weibo (微博) et Douyin (抖音), la voix humaine authentique prend une valeur exponentielle.
 
-Les marques se précipitent déjà pour verrouiller des contrats longue durée avec des KOL et des KOC éprouvés, avant que les cachets ne s'envolent. L'économie tient sur une ligne. Quand n'importe quelle marque peut générer des milliers de posts d'[influenceurs](/fr/se-developper-en-chine/influence-et-kol) IA pour quelques centimes, les humains capables de déplacer l'intention d'achat deviennent des actifs stratégiques.
+Les marques se précipitent déjà pour verrouiller des contrats longue durée avec des KOL et des KOC éprouvés, avant que les cachets ne s'envolent. L'économie tient sur une ligne. Quand n'importe quelle marque peut générer des milliers de posts d'[influenceurs](/fr/reseaux-sociaux-chinois) IA pour quelques centimes, les humains capables de déplacer l'intention d'achat deviennent des actifs stratégiques.
 
 > Tablez sur une hausse de 30 à 50 % des cachets KOL en 2026 pour les créateurs capables de prouver la confiance réelle de leur communauté et leurs chiffres de conversion.
 

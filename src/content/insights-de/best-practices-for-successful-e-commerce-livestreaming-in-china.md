@@ -12,7 +12,7 @@ heroImageAlt: "Plus-Size-Influencerin im mittleren Bildausschnitt"
 
 ## Der Aufstieg des Livestream-eCommerce in China
 
-[Livestream](/de/in-china-wachsen/influencer-und-kol)-[eCommerce](/de/in-china-wachsen/cross-border-ecommerce) in China ist kein Trend, er ist eine dominierende Kraft im Handel. Plattformen wie Taobao Live, Douyin (das chinesische Pendant zu TikTok) und Kuaishou haben den klassischen Einkauf in ein interaktives, unterhaltsames Erlebnis verwandelt. Käufer sehen Produkte in Echtzeit, stellen Fragen und kaufen reibungslos, eine informierte und einbindende Kauferfahrung.
+[Livestream](/de/chinesische-social-media)-[eCommerce](/de/in-china-wachsen/cross-border-ecommerce) in China ist kein Trend, er ist eine dominierende Kraft im Handel. Plattformen wie Taobao Live, Douyin (das chinesische Pendant zu TikTok) und Kuaishou haben den klassischen Einkauf in ein interaktives, unterhaltsames Erlebnis verwandelt. Käufer sehen Produkte in Echtzeit, stellen Fragen und kaufen reibungslos, eine informierte und einbindende Kauferfahrung.
 
 Mehrere Faktoren tragen dieses Wachstum:
 

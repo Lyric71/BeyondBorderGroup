@@ -43,7 +43,7 @@ Es uno de los errores más comunes que vemos entre las marcas internacionales qu
 
 Collgene utilizó [Tmall](/es/crecer-en-china/ecommerce-transfronterizo) y JD como base de confianza. Antes de pisar el acelerador en inversión, montó la optimización de búsqueda, la arquitectura de SKU, los planes de cuidado personalizado y los flujos de recompra. ¿El resultado? Una tasa de recompra del 42 %, quince puntos por encima de la media del sector.
 
-Así es como debería funcionar el eCommerce de lineal. No como capa transaccional, sino como activo de credibilidad. El consumidor que descubre una marca en [Douyin](/es/crecer-en-china/influencia-y-kol) la buscará en Tmall antes de comprar. Lo que encuentre allí, cierra la venta o la mata.
+Así es como debería funcionar el eCommerce de lineal. No como capa transaccional, sino como activo de credibilidad. El consumidor que descubre una marca en [Douyin](/es/redes-sociales-chinas) la buscará en Tmall antes de comprar. Lo que encuentre allí, cierra la venta o la mata.
 
 ![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
 

@@ -44,7 +44,7 @@ This is one of the most common mistakes we see international brands make when en
 
 Collgene ran [Tmall](/grow-in-china/cross-border-ecommerce) and JD as their trust base. Search optimization, SKU architecture, personalized skincare plans, and repurchase flows were all built before they scaled spend. The result was a 42% repurchase rate, 15 points above the industry average.
 
-This is how shelf eCommerce is supposed to work. Not as a transaction layer, but as a credibility asset. Consumers who discover a brand on [Douyin](/grow-in-china/influencers-kols) will search for it on Tmall before they buy. What they find there either closes the sale or kills it.
+This is how shelf eCommerce is supposed to work. Not as a transaction layer, but as a credibility asset. Consumers who discover a brand on [Douyin](/social-in-china) will search for it on Tmall before they buy. What they find there either closes the sale or kills it.
 
 ![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
 

@@ -56,7 +56,7 @@ Livestreams erlauben direkten Austausch mit Followern, Fragen in Echtzeit, Produ
 
 ## Influencer- und KOL-Marketing
 
-Partnerschaften mit chinesischen [KOL](/de/in-china-wachsen/influencer-und-kol) sind ein bewährter Weg, die Reichweite auf Channels zu heben. Empfehlungen aus dem Kreis dieser vertrauten Stimmen treffen das Publikum direkter.
+Partnerschaften mit chinesischen [KOL](/de/chinesische-social-media) sind ein bewährter Weg, die Reichweite auf Channels zu heben. Empfehlungen aus dem Kreis dieser vertrauten Stimmen treffen das Publikum direkter.
 
 * **KOL-Partnerschaften:** Spezialisten in Beauty, Mode oder Tech bringen starkes Engagement.
 * **Bezahlte Anzeigen mit KOL:** Native Ads im Video-Feed, Influencer-Anzeigen und CPC/CPM-Modelle bieten Flexibilität.

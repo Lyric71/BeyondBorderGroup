@@ -12,7 +12,7 @@ heroImageAlt: "Plan moyen d'une influenceuse plus-size"
 
 ## Comprendre la montée du livestream e-commerce en Chine
 
-Sur Taobao Live, plus de 70 % du livestream marchand chinois passe par les flux d'Alibaba. Le format a quitté depuis longtemps le rayon des modes passagères : c'est devenu la force dominante de la distribution. Avec Douyin (la version chinoise de TikTok) et Kuaishou, le [livestream](/fr/se-developper-en-chine/influence-et-kol) [e-commerce](/fr/se-developper-en-chine/ecommerce-transfrontalier) a transformé l'achat en expérience interactive et divertissante. L'acheteur assiste à la démo en temps réel, pose ses questions, passe à l'acte sans couture, dans un parcours plus informé et plus vivant.
+Sur Taobao Live, plus de 70 % du livestream marchand chinois passe par les flux d'Alibaba. Le format a quitté depuis longtemps le rayon des modes passagères : c'est devenu la force dominante de la distribution. Avec Douyin (la version chinoise de TikTok) et Kuaishou, le [livestream](/fr/reseaux-sociaux-chinois) [e-commerce](/fr/se-developper-en-chine/ecommerce-transfrontalier) a transformé l'achat en expérience interactive et divertissante. L'acheteur assiste à la démo en temps réel, pose ses questions, passe à l'acte sans couture, dans un parcours plus informé et plus vivant.
 
 Trois forces alimentent cette croissance :
 

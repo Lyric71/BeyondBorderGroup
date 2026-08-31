@@ -156,12 +156,48 @@ export function organizationSchema(): SchemaObject {
       'https://www.linkedin.com/company/thechinapath/',
       'https://cyrildrouin.substack.com',
     ],
+    // WO-3.3. Kept in step with the footer network strip, and each entry
+    // carries the same @id the sister site uses for itself so the three graphs
+    // resolve to one entity rather than three lookalikes. Compass is
+    // deliberately absent: it is a capability of this agency now, described on
+    // /compass, not a company of its own.
     subOrganization: [
-      { '@type': 'Organization', name: 'Hub Studio', url: 'https://hubstudio.ai' },
-      { '@type': 'Organization', name: 'ChinaWebFoundry', url: 'https://chinawebfoundry.com' },
-      { '@type': 'Organization', name: 'NuvoraStudio', url: 'https://nuvora.studio' },
-      { '@type': 'Organization', name: 'The Red Scroll', url: 'https://theredscroll.com' },
+      {
+        '@type': 'Organization',
+        '@id': 'https://www.hubstudio.ai/#organization',
+        name: 'hubStudio',
+        url: 'https://www.hubstudio.ai',
+      },
+      {
+        '@type': 'Organization',
+        '@id': 'https://www.chinawebfoundry.com/#organization',
+        name: 'ChinaWebFoundry',
+        url: 'https://www.chinawebfoundry.com',
+      },
+      {
+        '@type': 'Organization',
+        '@id': 'https://www.beyondbridge.ai/#organization',
+        name: 'BeyondBridge',
+        url: 'https://www.beyondbridge.ai',
+      },
+      {
+        '@type': 'Organization',
+        '@id': 'https://www.theredscroll.com/#organization',
+        name: 'TheRedScroll',
+        url: 'https://www.theredscroll.com',
+      },
     ],
+    // The private partner database. Named as a product of the agency so the
+    // /compass pages inherit the entity, and the application subdomain is
+    // discoverable without being mistaken for a separate brand.
+    owns: {
+      '@type': 'Product',
+      '@id': `${SITE_URL}/#compass`,
+      name: 'Compass',
+      url: `${SITE_URL}/compass`,
+      description:
+        'A private database of vetted China distributors, Tmall Partners, Douyin Partners and importers, used to build partner shortlists for consumer brands.',
+    },
   };
 }
 
@@ -526,30 +562,6 @@ const SERVICE_PAGE_DATA: Record<string, ServicePageEntry> = {
         'Compra de medios de rendimiento y de marca en las plataformas de Tencent, ByteDance, Alibaba y Xiaohongshu, con un reporting que su equipo puede leer de verdad.',
     },
   },
-  '/grow-in-china/influencers-kols': {
-    serviceType: 'Influencer Marketing',
-    areaServed: 'China',
-    en: {
-      name: 'KOL and Influencer Marketing in China',
-      description:
-        'KOL and KOC casting, briefing, paid drops, and performance reporting from our proprietary China influencer database.',
-    },
-    fr: {
-      name: 'Marketing KOL et influence en Chine',
-      description:
-        'Casting KOL et KOC, briefs, opérations payées et reporting performance, depuis notre base influence Chine en propre.',
-    },
-    de: {
-      name: 'Influencer- und KOL-Marketing in China',
-      description:
-        'KOL- und KOC-Casting, Briefings, bezahlte Aktivierungen und Performance-Reporting aus unserer eigenen China-Influencer-Datenbank.',
-    },
-    es: {
-      name: 'Marketing de influencia y KOL en China',
-      description:
-        'Casting de KOL y KOC, briefings, activaciones pagadas y reporting de rendimiento desde nuestra base propia de influencia en China.',
-    },
-  },
   '/grow-in-china/production-studio': {
     serviceType: 'Content Production',
     areaServed: 'China',
@@ -683,7 +695,6 @@ const SERVICE_PATH_BY_LOCALE: Record<'fr' | 'de' | 'es', Record<string, string>>
     '/grow-in-china/social-commerce': '/fr/se-developper-en-chine/commerce-social',
     '/grow-in-china/campaigns': '/fr/se-developper-en-chine/campagnes',
     '/grow-in-china/media': '/fr/se-developper-en-chine/medias',
-    '/grow-in-china/influencers-kols': '/fr/se-developper-en-chine/influence-et-kol',
     '/grow-in-china/production-studio': '/fr/se-developper-en-chine/studio-de-production',
     '/grow-in-china/website': '/fr/se-developper-en-chine/site-web',
     '/learn-china/platforms': '/fr/comprendre-la-chine/plateformes',
@@ -699,7 +710,6 @@ const SERVICE_PATH_BY_LOCALE: Record<'fr' | 'de' | 'es', Record<string, string>>
     '/grow-in-china/social-commerce': '/de/in-china-wachsen/social-commerce',
     '/grow-in-china/campaigns': '/de/in-china-wachsen/kampagnen',
     '/grow-in-china/media': '/de/in-china-wachsen/media',
-    '/grow-in-china/influencers-kols': '/de/in-china-wachsen/influencer-und-kol',
     '/grow-in-china/production-studio': '/de/in-china-wachsen/produktionsstudio',
     '/grow-in-china/website': '/de/in-china-wachsen/website',
     '/learn-china/platforms': '/de/china-verstehen/plattformen',
@@ -715,7 +725,6 @@ const SERVICE_PATH_BY_LOCALE: Record<'fr' | 'de' | 'es', Record<string, string>>
     '/grow-in-china/social-commerce': '/es/crecer-en-china/comercio-social',
     '/grow-in-china/campaigns': '/es/crecer-en-china/campanas',
     '/grow-in-china/media': '/es/crecer-en-china/medios',
-    '/grow-in-china/influencers-kols': '/es/crecer-en-china/influencia-y-kol',
     '/grow-in-china/production-studio': '/es/crecer-en-china/estudio-de-produccion',
     '/grow-in-china/website': '/es/crecer-en-china/sitio-web',
     '/learn-china/platforms': '/es/conocer-china/plataformas',

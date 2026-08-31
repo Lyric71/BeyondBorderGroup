@@ -42,7 +42,7 @@ The Chinese TikTok version, Douyin stands as one of China's leading short video 
 
 #### Why Brands Use Douyin
 
-Douyin excels as a marketing platform for brands aiming to reach young urbanites who are drawn to stylish and visually stimulating content. Many businesses collaborate with a marketing agency China to create compelling content and execute [influencer](/grow-in-china/influencers-kols) partnerships. The platform allows users to effortlessly move from viewing entertaining content to completing a purchase through its smooth e-commerce experience.
+Douyin excels as a marketing platform for brands aiming to reach young urbanites who are drawn to stylish and visually stimulating content. Many businesses collaborate with a marketing agency China to create compelling content and execute [influencer](/social-in-china) partnerships. The platform allows users to effortlessly move from viewing entertaining content to completing a purchase through its smooth e-commerce experience.
 
 ### Kuaishou
 

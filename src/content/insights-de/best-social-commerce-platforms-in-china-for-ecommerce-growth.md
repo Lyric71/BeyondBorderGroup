@@ -12,7 +12,7 @@ heroImageAlt: "Chinesischer Social-eCommerce"
 
 ## Social Commerce in China: das Marktbild
 
-[Social Commerce](/de/in-china-wachsen/social-commerce) hat die Art, wie Käufer einkaufen, neu sortiert. Soziale Interaktion und direkter Kauf verschmelzen. Nirgendwo ist dieser Wandel ausgeprägter als im chinesischen eCommerce, dem grössten Online-Markt der Welt. Trends wie Livestream, Mobile Payment und [KOL](/de/in-china-wachsen/influencer-und-kol)-Marketing treiben ihn. 2021 hat der Social-Commerce-Markt in China 2,5 Billionen Yuan überschritten (rund 374 Milliarden US-Dollar) und zählt fast 800 Millionen Teilnehmer.
+[Social Commerce](/de/in-china-wachsen/social-commerce) hat die Art, wie Käufer einkaufen, neu sortiert. Soziale Interaktion und direkter Kauf verschmelzen. Nirgendwo ist dieser Wandel ausgeprägter als im chinesischen eCommerce, dem grössten Online-Markt der Welt. Trends wie Livestream, Mobile Payment und [KOL](/de/chinesische-social-media)-Marketing treiben ihn. 2021 hat der Social-Commerce-Markt in China 2,5 Billionen Yuan überschritten (rund 374 Milliarden US-Dollar) und zählt fast 800 Millionen Teilnehmer.
 
 Wer im Wettbewerb gewinnen will, muss die führenden [Plattformen](/de/china-verstehen/plattformen) Chinas kennen. Hier die wichtigsten Social-Commerce-Plattformen, die Ihre China-Marketing-Strategie und das Wachstum Ihrer Marke tragen.
 

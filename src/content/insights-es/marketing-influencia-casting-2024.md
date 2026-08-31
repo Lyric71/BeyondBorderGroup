@@ -9,7 +9,7 @@ heroImage: "/Images/insights/optimizing-your-brand-choosing-the-right-influencer
 heroImageAlt: "Mujer profesional sonriendo a cámara"
 ---
 
-El [marketing de influencia](/es/crecer-en-china/influencia-y-kol) se ha consolidado como una estrategia de peso, sobre todo con el auge de plataformas como Instagram o TikTok. En este espacio publicitario dinámico, la clave para los responsables de marca pasa por encontrar a los influencers que tocan para amplificar alcance y engagement. Y todo gira alrededor de un factor crítico: acertar con el influencer para la marca.
+El [marketing de influencia](/es/redes-sociales-chinas) se ha consolidado como una estrategia de peso, sobre todo con el auge de plataformas como Instagram o TikTok. En este espacio publicitario dinámico, la clave para los responsables de marca pasa por encontrar a los influencers que tocan para amplificar alcance y engagement. Y todo gira alrededor de un factor crítico: acertar con el influencer para la marca.
 
 Vamos a repasar los puntos esenciales del marketing de influencia y a guiarle por el proceso de elegir al perfil que mejor encaje con su marca.
 

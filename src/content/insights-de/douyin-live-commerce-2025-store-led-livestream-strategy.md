@@ -16,7 +16,7 @@ keyTakeaways:
   - "Planen Sie einen Content-Rhythmus: 3 bis 5 Live-Sessions pro Woche, 10 bis 15 Kurzvideos, eine bezahlte Schicht darunter. Die Zinseszinsen sitzen im Kalender, nicht im einzelnen Hero-Moment."
 ---
 
-Douyin ist nicht länger „ein Kanal, auf dem man einen grossen [Livestream](/de/in-china-wachsen/influencer-und-kol) macht."
+Douyin ist nicht länger „ein Kanal, auf dem man einen grossen [Livestream](/de/chinesische-social-media) macht."
 
 2026 verhält sich die Plattform wie ein Retail-Betriebssystem. Content erzeugt Nachfrage, Werbung verstärkt sie, Suche fängt sie ein, der Kauf passiert im selben Loop. Wer das wie eine Einzelkampagne behandelt, verbrennt schnell Budget und lernt langsam.
 

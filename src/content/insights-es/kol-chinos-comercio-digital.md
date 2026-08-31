@@ -14,7 +14,7 @@ heroImageAlt: "Ilustración sobre marketing con KOL"
 
 ### Qué es un KOL en China
 
-Un Key Opinion Leader ([KOL](/es/crecer-en-china/influencia-y-kol)) en China es un influencer con una comunidad amplia, capaz de mover opiniones y decisiones de compra. A diferencia del influencer occidental, el KOL chino funciona como un experto de confianza al que se le piden consejo y recomendaciones de producto en categorías muy variadas, desde belleza y moda hasta tecnología o estilo de vida.
+Un Key Opinion Leader ([KOL](/es/redes-sociales-chinas)) en China es un influencer con una comunidad amplia, capaz de mover opiniones y decisiones de compra. A diferencia del influencer occidental, el KOL chino funciona como un experto de confianza al que se le piden consejo y recomendaciones de producto en categorías muy variadas, desde belleza y moda hasta tecnología o estilo de vida.
 
 ### Por qué son imprescindibles para las marcas
 

@@ -168,8 +168,6 @@ export const insightEnToDe = {
   'china-e-commerce-platforms-2025': 'chinesischer-e-commerce-2025-plattformen',
   'china-is-no-longer-one-market-a-localized-growth-strategy-for-2025':
     'china-kein-einheitsmarkt-lokale-strategien-2025',
-  'china-is-no-longer-one-market-why-local-bets-beat-national-plans':
-    'china-lokale-wetten-statt-nationaler-pläne',
   'china-social-media-and-kol-strategies-for-ecommerce-brands': 'chinesische-kol-digitalhandel',
   'chinas-ai-powered-commerce-trends-and-innovations-to-watch':
     'chinesischer-handel-ki-trends-innovationen',

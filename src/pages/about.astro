@@ -607,6 +607,37 @@ const aboutSchema = [
     </div>
   </section>
 
+  {/* ---------- THE GROUP (WO-3.4) ---------- */}
+  <section class="section group-section">
+    <div class="container">
+      <header class="section-header">
+        <span class="eyebrow">The group</span>
+        <h2>Three companies. One route into China.</h2>
+        <p class="lead">Most of the work sits with us. Two pieces do not, and we would rather say that out loud than pretend we are good at everything.</p>
+      </header>
+
+      <div class="grid grid-3">
+        <a class="card group-card" href="/enter-china">
+          <h3 class="card__title">TheChinaPath</h3>
+          <p>Entry, distribution and eCommerce. Where to sell, who to sell with, and how the money actually moves once you are on the shelf.</p>
+          <span class="card__footer btn btn--ghost">See the entry work</span>
+        </a>
+        <a class="card group-card" href="/build-in-china">
+          <h3 class="card__title">ChinaWebFoundry</h3>
+          <p>Your site, built in Shanghai for the Chinese internet. ICP filing, hosting inside the firewall, Baidu, and the AI engines buyers now ask first.</p>
+          <span class="card__footer btn btn--ghost">See the web work</span>
+        </a>
+        <a class="card group-card" href="/social-in-china">
+          <h3 class="card__title">TheRedScroll</h3>
+          <p>WeChat, Douyin, RedNote and Weibo, run day to day. Accounts, content, creators, community. The part of China marketing that never sleeps.</p>
+          <span class="card__footer btn btn--ghost">See the social work</span>
+        </a>
+      </div>
+
+      <p class="group-close">Same founder, same offices in Shanghai, Hong Kong and Paris, same standard of work. Hire one of us or all three. Either way nobody gets passed around.</p>
+    </div>
+  </section>
+
   {/* ---------- RECOGNITION / SLIDER ---------- */}
   <section class="section section--tight speaking" data-speak-root>
     <div class="container">
@@ -2083,5 +2114,24 @@ const aboutSchema = [
   }
   .cta-team__inner {
     position: relative;
+  }
+
+  /* WO-3.4: the three-company section. */
+  .group-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .group-card .card__title {
+    color: var(--bbg-ink);
+  }
+  .group-card p {
+    flex: 1;
+  }
+  .group-close {
+    margin-top: var(--space-6);
+    max-width: 72ch;
+    color: var(--bbg-text-muted);
   }
 </style>

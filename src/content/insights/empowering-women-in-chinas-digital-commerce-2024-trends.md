@@ -13,11 +13,11 @@ legacyUrl: "https://beyondbordergroup.com/empowering-women-in-chinas-digital-com
 
 ## The Rise of Women Entrepreneurs in China's Digital Commerce Scene
 
-The rise of [digital commerce in China](https://www.thechinapath.com/ecommerce-services-in-china/) has been a game-changer for women entrepreneurs, especially in 2024. With the advent of accessible online platforms and evolving eCommerce strategies, women are finding new opportunities to launch and grow their businesses. This shift is transforming individual lives and driving economic growth globally.
+The rise of [digital commerce in China](/grow-in-china/cross-border-ecommerce) has been a game-changer for women entrepreneurs, especially in 2024. With the advent of accessible online platforms and evolving eCommerce strategies, women are finding new opportunities to launch and grow their businesses. This shift is transforming individual lives and driving economic growth globally.
 
 ## Empowering Women Entrepreneurs through Digital Platforms
 
-Women-owned businesses are making significant strides in the [eCommerce China](https://www.thechinapath.com/ecommerce-services-in-china/) landscape. On platforms like [Taobao](/grow-in-china/cross-border-ecommerce), women have emerged as leading sellers, accounting for over half of the top 100 best-selling stores. This trend reflects a broader global movement where women are increasingly taking the helm of early-stage businesses.
+Women-owned businesses are making significant strides in the [eCommerce China](/grow-in-china/cross-border-ecommerce) landscape. On platforms like [Taobao](/grow-in-china/cross-border-ecommerce), women have emerged as leading sellers, accounting for over half of the top 100 best-selling stores. This trend reflects a broader global movement where women are increasingly taking the helm of early-stage businesses.
 
 The success stories of young women entrepreneurs in China, particularly on Alibaba's Taobao, are remarkable. Last year, over 30% of new businesses on Taobao were owned by women born after 2000. Many of these entrepreneurs hail from third and fourth-tier cities, illustrating that digital commerce is democratizing business opportunities beyond metropolitan areas.
 
@@ -29,7 +29,7 @@ In China, women entrepreneurs are using digital platforms to overcome traditiona
 
 ## The Role of Digital Commerce in Bridging the Gender Gap
 
-Digital commerce platforms like [Taobao](https://www.thechinapath.com/ecommerce-services-in-china/) and Lazada are instrumental in leveling the playing field for women entrepreneurs. These platforms offer low barriers to entry, enabling aspiring business owners to start selling their goods with minimal initial investment. This model has proven especially beneficial for women, who often face greater challenges in securing funding and resources.
+Digital commerce platforms like [Taobao](/grow-in-china/cross-border-ecommerce) and Lazada are instrumental in leveling the playing field for women entrepreneurs. These platforms offer low barriers to entry, enabling aspiring business owners to start selling their goods with minimal initial investment. This model has proven especially beneficial for women, who often face greater challenges in securing funding and resources.
 
 For instance, Lorina Tan, a Filipino marketer-turned-entrepreneur, co-founded the baby-care brand Tiny Buds using knowledge gained from the e-commerce platform Lazada. Stories like Tan's underscore the transformative power of digital commerce in empowering women to build and scale successful businesses.
 

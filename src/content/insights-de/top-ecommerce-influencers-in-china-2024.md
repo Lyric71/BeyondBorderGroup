@@ -130,7 +130,7 @@ Livestream, interaktive Videos und persönlicher Content bringen Direkt-Käufe, 
 
 ### Cross-Plattform-Stärke
 
-[Influencer](/de/in-china-wachsen/influencer-und-kol) brillieren plattformübergreifend, ideal für Marken, die mit einer Media-Buying-Agentur in China Cross-Promotion fahren.
+[Influencer](/de/chinesische-social-media) brillieren plattformübergreifend, ideal für Marken, die mit einer Media-Buying-Agentur in China Cross-Promotion fahren.
 
 ## Fazit
 

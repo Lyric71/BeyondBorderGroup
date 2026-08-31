@@ -66,7 +66,7 @@ Trust and personality convert. The unlock in 2025 is format discipline and studi
 
 * AI‑assisted pre‑production: shot lists, storyboards, talking points; instant cut‑downs for retargeting within minutes.
 
-For context, [livestream](/grow-in-china/influencers-kols) GMV reached RMB 332.5B during Double 11 in 2024 (+54.6% YoY). 2025 results are still being compiled, but the structural advantage of live commerce remains: trust + clarity + proven conversion.
+For context, [livestream](/social-in-china) GMV reached RMB 332.5B during Double 11 in 2024 (+54.6% YoY). 2025 results are still being compiled, but the structural advantage of live commerce remains: trust + clarity + proven conversion.
 
 ### Omnichannel that actually connects & crosses borders
 

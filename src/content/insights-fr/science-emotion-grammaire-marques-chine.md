@@ -43,7 +43,7 @@ C'est l'une des erreurs les plus fréquentes des marques internationales qui ent
 
 Collgene a posé [Tmall](/fr/se-developper-en-chine/ecommerce-transfrontalier) et JD en socle de confiance. Optimisation des requêtes, architecture des SKU, plans de soin personnalisés, parcours de réachat : tout en place avant l'accélération du budget média. Au bout du compte, un taux de réachat de 42 %, soit 15 points au-dessus de la moyenne du secteur.
 
-Voilà comment un shelf eCommerce doit travailler. Pas en couche transactionnelle, mais en actif de crédibilité. Le consommateur qui découvre une marque sur [Douyin](/fr/se-developper-en-chine/influence-et-kol) ira la vérifier sur Tmall avant d'acheter. Ce qu'il trouve à cet instant précis conclut la vente. Ou la tue.
+Voilà comment un shelf eCommerce doit travailler. Pas en couche transactionnelle, mais en actif de crédibilité. Le consommateur qui découvre une marque sur [Douyin](/fr/reseaux-sociaux-chinois) ira la vérifier sur Tmall avant d'acheter. Ce qu'il trouve à cet instant précis conclut la vente. Ou la tue.
 
 ![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
 

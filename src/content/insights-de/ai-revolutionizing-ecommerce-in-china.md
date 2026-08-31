@@ -25,7 +25,7 @@ KI hilft eCommerce-Unternehmen in China, die Betriebskosten zu senken. Alibaba e
 
 ## Digitale Menschen im Einsatz
 
-Digitale Menschen werden zum festen Teil der KI-getriebenen eCommerce-Strategien. Beispielsweise arbeitet die bekannte virtuelle [Influencerin](/de/in-china-wachsen/influencer-und-kol)-Linie rund um Li Jiaqi mit Marken zusammen, um Produkte im Livestream zu bewerben. KI-gestützte Influencer treten in Echtzeit mit Käufern in Kontakt, geben persönliche Empfehlungen und gestalten ein lebendigeres Einkaufserlebnis.
+Digitale Menschen werden zum festen Teil der KI-getriebenen eCommerce-Strategien. Beispielsweise arbeitet die bekannte virtuelle [Influencerin](/de/chinesische-social-media)-Linie rund um Li Jiaqi mit Marken zusammen, um Produkte im Livestream zu bewerben. KI-gestützte Influencer treten in Echtzeit mit Käufern in Kontakt, geben persönliche Empfehlungen und gestalten ein lebendigeres Einkaufserlebnis.
 
 ## Umfassende KI-Integration
 

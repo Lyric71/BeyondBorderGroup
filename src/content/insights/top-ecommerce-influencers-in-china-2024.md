@@ -111,7 +111,7 @@ Fei Zhu Zhu shares quick and easy recipes, along with creative food hacks. Her c
 * **Platform**: Douyin
 * **Followers**: 738K
 
-Bacon Diary is a juggernaut in the food [influencer](/grow-in-china/influencers-kols) space, combining visually stunning content with relatable narratives. His focus on traditional Chinese dishes, modern cooking techniques, and humor has garnered him a massive following.
+Bacon Diary is a juggernaut in the food [influencer](/social-in-china) space, combining visually stunning content with relatable narratives. His focus on traditional Chinese dishes, modern cooking techniques, and humor has garnered him a massive following.
 
 ![Bacon Diary food content Douyin](/Images/insights/2024/12/bacon-final.png)
 

@@ -11,7 +11,7 @@ heroImageAlt: "NIO-CEO im Livestream"
 
 ## Der Aufstieg der CEO-Livestreamer
 
-In Chinas digitalem Markt formiert sich ein auffälliger Trend: Vorstandschefs schlüpfen selbst in die Rolle von [Livestream](/de/in-china-wachsen/influencer-und-kol)-Influencern. Der Schritt erinnert an die Taktik globaler Tech-Stars wie Elon Musk. CEOs wie Lei Jun von Xiaomi oder Zhou Hongyi von 360 Company nutzen Livestreams, um Sichtbarkeit und Umsatz ihrer Marken deutlich zu steigern. Sie präsentieren nicht nur Produkte. Sie personalisieren das Markenbild, machen es nahbar und zugänglich für ein digital sozialisiertes Publikum.
+In Chinas digitalem Markt formiert sich ein auffälliger Trend: Vorstandschefs schlüpfen selbst in die Rolle von [Livestream](/de/chinesische-social-media)-Influencern. Der Schritt erinnert an die Taktik globaler Tech-Stars wie Elon Musk. CEOs wie Lei Jun von Xiaomi oder Zhou Hongyi von 360 Company nutzen Livestreams, um Sichtbarkeit und Umsatz ihrer Marken deutlich zu steigern. Sie präsentieren nicht nur Produkte. Sie personalisieren das Markenbild, machen es nahbar und zugänglich für ein digital sozialisiertes Publikum.
 
 ## Die Mechanik der Livestream-Bühne
 

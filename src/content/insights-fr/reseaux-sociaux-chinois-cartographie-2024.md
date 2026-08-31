@@ -16,7 +16,7 @@ Le paysage digital chinois poursuit sa mue en 2024. Les marques internationales 
 
 ## Les enjeux pour les marques internationales
 
-La démographie chinoise et son adoption fulgurante du digital placent le pays au rang des marchés stratégiques. 1,4 milliard d'habitants pour un réservoir d'audience hors norme. Les réseaux locaux ouvrent un accès direct à la notoriété, au marketing d'[influence](/fr/se-developper-en-chine/influence-et-kol) et à l'engagement consommateur, autant de leviers indispensables à la fabrique de la confiance et de la fidélisation.
+La démographie chinoise et son adoption fulgurante du digital placent le pays au rang des marchés stratégiques. 1,4 milliard d'habitants pour un réservoir d'audience hors norme. Les réseaux locaux ouvrent un accès direct à la notoriété, au marketing d'[influence](/fr/reseaux-sociaux-chinois) et à l'engagement consommateur, autant de leviers indispensables à la fabrique de la confiance et de la fidélisation.
 
 L'utilisateur chinois consacre en moyenne 2 h 15 par jour à ces plateformes. Les formats foisonnent : image, vidéo, live streaming, fonctions interactives. La palette éditoriale est large.
 

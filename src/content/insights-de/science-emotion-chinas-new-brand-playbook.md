@@ -43,7 +43,7 @@ Das ist einer der häufigsten Fehler, den wir bei internationalen Marken sehen, 
 
 Collgene führte [Tmall](/de/in-china-wachsen/cross-border-ecommerce) und JD als Vertrauensbasis. Suchoptimierung, SKU-Architektur, personalisierte Hautpflege-Pläne und Wiederkauf-Flows waren gebaut, bevor sie die Ausgaben hochzogen. Das Ergebnis: eine Wiederkaufrate von 42 Prozent, fünfzehn Punkte über dem Branchenmittel.
 
-So soll Shelf-eCommerce funktionieren. Nicht als Transaktions-Schicht, sondern als Glaubwürdigkeits-Asset. Käufer, die eine Marke auf [Douyin](/de/in-china-wachsen/influencer-und-kol) entdecken, suchen sie auf Tmall, bevor sie kaufen. Was sie dort finden, schliesst den Kauf ab oder bringt ihn zum Erliegen.
+So soll Shelf-eCommerce funktionieren. Nicht als Transaktions-Schicht, sondern als Glaubwürdigkeits-Asset. Käufer, die eine Marke auf [Douyin](/de/chinesische-social-media) entdecken, suchen sie auf Tmall, bevor sie kaufen. Was sie dort finden, schliesst den Kauf ab oder bringt ihn zum Erliegen.
 
 ![](/Images/insights/2026/03/Science-plus-emotion-china-new-brand-playbook-2-1024x683.webp)
 

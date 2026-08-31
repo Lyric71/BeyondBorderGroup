@@ -57,7 +57,7 @@ By integrating social media strategies with a focus on China performance marketi
 
 ### b) Partnering with Key Opinion Leaders (KOLs) for Greater Impact
 
-Influencer marketing, or [KOL marketing](/grow-in-china/influencers-kols), is one of the most powerful tools for brands looking to expand their reach during the 11.11 Festival. Collaborating with China KOLs, Key Opinion Leaders, who have strong followings can significantly amplify a brand's visibility and credibility.
+Influencer marketing, or [KOL marketing](/social-in-china), is one of the most powerful tools for brands looking to expand their reach during the 11.11 Festival. Collaborating with China KOLs, Key Opinion Leaders, who have strong followings can significantly amplify a brand's visibility and credibility.
 
 China influencers have the trust of their followers, making their endorsements highly effective. For instance, fashion brands can partner with lifestyle influencers on Little Red Book, while tech companies may collaborate with gadget reviewers on platforms like Weibo.
 

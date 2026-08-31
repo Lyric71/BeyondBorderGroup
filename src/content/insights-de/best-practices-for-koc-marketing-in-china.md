@@ -23,7 +23,7 @@ Dieser Leitfaden zeigt die bewährte Praxis im KOC-Einsatz, um Geschäft wachsen
 
 KOC sind Mikro-Influencer, die Authentizität und Nähe an erste Stelle setzen. Anders als KOL mit grossen, oft weniger engagierten Communities bauen KOC ihre Glaubwürdigkeit über persönliche Erfahrungen und ehrliche Reviews auf. Sie bewegen sich meist in Nischen mit klar definierten Interessen.
 
-Mit einer Marketing-Agentur in China lassen sich die passenden KOC identifizieren, damit Kampagnen authentisch und wirksam laufen. Da chinesische Käufer zunehmend ehrliche Empfehlungen statt Promi-Endorsements suchen, ist [KOC-Marketing](/de/in-china-wachsen/influencer-und-kol) zur Pflichtdisziplin geworden.
+Mit einer Marketing-Agentur in China lassen sich die passenden KOC identifizieren, damit Kampagnen authentisch und wirksam laufen. Da chinesische Käufer zunehmend ehrliche Empfehlungen statt Promi-Endorsements suchen, ist [KOC-Marketing](/de/chinesische-social-media) zur Pflichtdisziplin geworden.
 
 ## Vorteile des KOC-Marketings für den chinesischen eCommerce
 

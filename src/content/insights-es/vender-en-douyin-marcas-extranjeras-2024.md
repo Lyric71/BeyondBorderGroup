@@ -79,7 +79,7 @@ El livestream eleva el engagement, da feedback en tiempo real y ayuda a construi
 
 ## Trabajar con KOL (Key Opinion Leaders)
 
-En el social commerce chino, el marketing con [KOL](/es/crecer-en-china/influencia-y-kol) es una pieza esencial para ganar credibilidad y ampliar alcance. Al colaborar con KOL chinos, una marca puede llegar de forma más eficaz a los perfiles de público que le interesan, apoyándose en sus comunidades.
+En el social commerce chino, el marketing con [KOL](/es/redes-sociales-chinas) es una pieza esencial para ganar credibilidad y ampliar alcance. Al colaborar con KOL chinos, una marca puede llegar de forma más eficaz a los perfiles de público que le interesan, apoyándose en sus comunidades.
 
 ### Cómo trabajar con KOL:
 

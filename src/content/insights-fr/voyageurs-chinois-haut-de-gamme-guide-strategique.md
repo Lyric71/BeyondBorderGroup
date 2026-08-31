@@ -58,7 +58,7 @@ WeChat et Weibo restent incontournables pour engager le voyageur aisé chinois. 
 
 ### L'influence sociale comme moteur
 
-Douyin et Weibo pèsent lourd sur les choix de voyage. La marque qui les active avec intelligence inspire et oriente les décisions à travers contenu engageant et collaborations [influenceurs](/fr/se-developper-en-chine/influence-et-kol). Les vidéos courtes Douyin valorisent destinations et expériences avec une vraie force visuelle, tandis que les lives Weibo livrent des coulisses qui résonnent auprès de l'audience.
+Douyin et Weibo pèsent lourd sur les choix de voyage. La marque qui les active avec intelligence inspire et oriente les décisions à travers contenu engageant et collaborations [influenceurs](/fr/reseaux-sociaux-chinois). Les vidéos courtes Douyin valorisent destinations et expériences avec une vraie force visuelle, tandis que les lives Weibo livrent des coulisses qui résonnent auprès de l'audience.
 
 ## Tisser un lien émotionnel
 

@@ -16,7 +16,7 @@ En 2024, el ecosistema digital chino sigue moviéndose y abre a las marcas globa
 
 ## Por qué las redes sociales chinas pesan para las marcas globales
 
-La población china y su adopción digital fulminante hacen de este país un mercado decisivo para las marcas globales. Con más de 1.400 millones de personas, el alcance potencial es inmenso. Las plataformas chinas abren vías únicas para la notoriedad, el marketing con [influencers](/es/crecer-en-china/influencia-y-kol) y la relación directa con el consumidor, todas ellas claves para construir confianza y fidelidad.
+La población china y su adopción digital fulminante hacen de este país un mercado decisivo para las marcas globales. Con más de 1.400 millones de personas, el alcance potencial es inmenso. Las plataformas chinas abren vías únicas para la notoriedad, el marketing con [influencers](/es/redes-sociales-chinas) y la relación directa con el consumidor, todas ellas claves para construir confianza y fidelidad.
 
 El usuario chino de redes sociales es altamente implicado y dedica una media de 2,25 horas diarias a estas plataformas. Soportan formatos muy variados, desde imagen y vídeo hasta livestream y funcionalidades interactivas, lo que permite a la marca crear contenido diverso y con gancho.
 

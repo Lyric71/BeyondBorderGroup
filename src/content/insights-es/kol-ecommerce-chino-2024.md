@@ -110,7 +110,7 @@ Fei Zhu Zhu comparte recetas rápidas, trucos de cocina y pequeñas ideas para r
 * **Plataforma**: Douyin
 * **Seguidores**: 738.000
 
-Bacon Diary es una de las grandes fuerzas del sector food, con un contenido visualmente impecable y una voz cercana. Su mezcla de cocina tradicional china, técnicas modernas y humor le ha valido una comunidad masiva en el ámbito de los [influencers](/es/crecer-en-china/influencia-y-kol).
+Bacon Diary es una de las grandes fuerzas del sector food, con un contenido visualmente impecable y una voz cercana. Su mezcla de cocina tradicional china, técnicas modernas y humor le ha valido una comunidad masiva en el ámbito de los [influencers](/es/redes-sociales-chinas).
 
 ![Bacon Diary, contenido gastronómico en Douyin](/Images/insights/2024/12/bacon-final.png)
 

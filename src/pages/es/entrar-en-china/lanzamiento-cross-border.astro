@@ -339,11 +339,13 @@ const faqCategories = [
   'Legal',
 ];
 
-const allInsights = await getCollection('insights', ({ data }) => !data.draft);
+// The Spanish collection, not the English one: reading `insights` here built
+// three links to /es/analisis/<english-slug>, which are not pages.
+const allInsights = await getCollection('insightsEs', ({ data }) => !data.draft);
 const highlightedSlugs = [
-  'foreign-brands-in-china-why-most-market-tests-fail',
-  'science-emotion-chinas-new-brand-playbook',
-  'douyin-live-commerce-2025-store-led-livestream-strategy',
+  'marcas-extranjeras-china-tests-mercado-fracasan',
+  'ciencia-emocion-gramatica-marcas-china',
+  'douyin-live-commerce-estudios-marca',
 ];
 const pageInsights = highlightedSlugs
   .map((slug) => allInsights.find((i) => i.id === slug))

@@ -25,7 +25,7 @@ L'IA aide les acteurs chinois de l'e-commerce à serrer leurs coûts. Alibaba s'
 
 ## L'arrivée des humains numériques
 
-Les humains numériques gagnent du terrain dans les stratégies pilotées par IA. Li Jiaqi, [influenceur](/fr/se-developper-en-chine/influence-et-kol) virtuel notoire, travaille avec des marques pour promouvoir leurs produits en livestream. Ces avatars dialoguent avec les consommateurs en temps réel, livrent des conseils personnalisés et installent une dimension plus vivante dans l'acte d'achat.
+Les humains numériques gagnent du terrain dans les stratégies pilotées par IA. Li Jiaqi, [influenceur](/fr/reseaux-sociaux-chinois) virtuel notoire, travaille avec des marques pour promouvoir leurs produits en livestream. Ces avatars dialoguent avec les consommateurs en temps réel, livrent des conseils personnalisés et installent une dimension plus vivante dans l'acte d'achat.
 
 ## Une intégration sur toute la chaîne de valeur
 

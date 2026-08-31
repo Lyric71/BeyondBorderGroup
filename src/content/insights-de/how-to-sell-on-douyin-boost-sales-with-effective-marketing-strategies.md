@@ -79,7 +79,7 @@ Livestream stärkt Engagement, liefert direktes Feedback und baut Vertrauen.
 
 ## Mit KOL arbeiten
 
-Im Social Commerce in China ist [KOL](/de/in-china-wachsen/influencer-und-kol)-Marketing zentral, um Glaubwürdigkeit und Reichweite zu heben.
+Im Social Commerce in China ist [KOL](/de/chinesische-social-media)-Marketing zentral, um Glaubwürdigkeit und Reichweite zu heben.
 
 ### Wie zusammenarbeiten
 

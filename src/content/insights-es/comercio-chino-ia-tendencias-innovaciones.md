@@ -48,7 +48,7 @@ El comercio social vive un boom en China, y plataformas como WeChat y Douyin int
 
 - **Personalización de contenido:** la IA asegura que el usuario vea anuncios y productos alineados con sus preferencias.
 - **Compra por livestream:** la IA enriquece la experiencia de directo con analítica en tiempo real y herramientas de interacción.
-- **Marketing de [influencia](/es/crecer-en-china/influencia-y-kol):** los algoritmos identifican al influencer más adecuado para cada marca y maximizan el impacto de la campaña.
+- **Marketing de [influencia](/es/redes-sociales-chinas):** los algoritmos identifican al influencer más adecuado para cada marca y maximizan el impacto de la campaña.
 
 Estos desarrollos permiten a las agencias de social media en China diseñar estrategias innovadoras y redefinir cómo se descubre y se vende un producto.
 

@@ -151,10 +151,10 @@ const enServiceRedirectPairs = [
   ['/wechat-marketing-agency-in-china-content-advertising-mini-program', '/grow-in-china/website'],
   [
     '/red-little-red-book-marketing-agency-in-china-content-commerce-influencers',
-    '/grow-in-china/influencers-kols',
+    '/social-in-china',
   ],
-  ['/influencer-agency-in-china-campaigns-and-ecommerce', '/grow-in-china/influencers-kols'],
-  ['/social-media-agency-in-china-kols-and-brand-content', '/grow-in-china/influencers-kols'],
+  ['/influencer-agency-in-china-campaigns-and-ecommerce', '/social-in-china'],
+  ['/social-media-agency-in-china-kols-and-brand-content', '/social-in-china'],
   ['/douyin-marketing-agency-in-china-content-ads-influencers', '/grow-in-china/social-commerce'],
   ['/social-commerce-in-china', '/grow-in-china/social-commerce'],
   ['/media-and-marketing-agency-in-china', '/grow-in-china/media'],
@@ -192,7 +192,7 @@ const frServiceRedirectPairs = [
   ['/agence-de-relations-presse-en-chine-rp-medias', '/fr/se-developper-en-chine/medias'],
   [
     '/agence-de-social-media-en-chine-kols-et-contenu-de-marque',
-    '/fr/se-developper-en-chine/influence-et-kol',
+    '/fr/reseaux-sociaux-chinois',
   ],
   ['/agence-evenementielle-salons-en-chine', '/fr/se-developper-en-chine/campagnes'],
   [
@@ -353,6 +353,11 @@ const resolveFrInsightDest = (/** @type {string} */ dest) => {
  * @type {Record<string, string>}
  */
 const staticEnToFr = {
+  '/compass': '/fr/compass',
+  '/compass/why-vetted': '/fr/compass/pourquoi-cette-base',
+  '/compass/what-is-inside': '/fr/compass/ce-quon-y-trouve',
+  '/compass/how-it-works': '/fr/compass/comment-on-etablit-la-liste',
+  '/compass/shortlist': '/fr/compass/demander-sa-liste',
   '/social-in-china': '/fr/reseaux-sociaux-chinois',
   '/build-in-china': '/fr/site-web-et-wechat-en-chine',
   '/': '/fr',
@@ -370,7 +375,6 @@ const staticEnToFr = {
   '/grow-in-china/social-commerce': '/fr/se-developper-en-chine/commerce-social',
   '/grow-in-china/campaigns': '/fr/se-developper-en-chine/campagnes',
   '/grow-in-china/media': '/fr/se-developper-en-chine/medias',
-  '/grow-in-china/influencers-kols': '/fr/se-developper-en-chine/influence-et-kol',
   '/grow-in-china/production-studio': '/fr/se-developper-en-chine/studio-de-production',
   '/grow-in-china/website': '/fr/se-developper-en-chine/site-web',
   '/learn-china': '/fr/comprendre-la-chine',
@@ -392,6 +396,11 @@ const staticFrToEn = Object.fromEntries(Object.entries(staticEnToFr).map(([en, f
  * @type {Record<string, string>}
  */
 const staticEnToDe = {
+  '/compass': '/de/compass',
+  '/compass/why-vetted': '/de/compass/warum-geprueft',
+  '/compass/what-is-inside': '/de/compass/was-drinsteht',
+  '/compass/how-it-works': '/de/compass/so-entsteht-die-liste',
+  '/compass/shortlist': '/de/compass/liste-anfordern',
   '/social-in-china': '/de/chinesische-social-media',
   '/build-in-china': '/de/website-und-wechat-in-china',
   '/': '/de',
@@ -409,7 +418,6 @@ const staticEnToDe = {
   '/grow-in-china/social-commerce': '/de/in-china-wachsen/social-commerce',
   '/grow-in-china/campaigns': '/de/in-china-wachsen/kampagnen',
   '/grow-in-china/media': '/de/in-china-wachsen/media',
-  '/grow-in-china/influencers-kols': '/de/in-china-wachsen/influencer-und-kol',
   '/grow-in-china/production-studio': '/de/in-china-wachsen/produktionsstudio',
   '/grow-in-china/website': '/de/in-china-wachsen/website',
   '/learn-china': '/de/china-verstehen',
@@ -431,6 +439,11 @@ const staticDeToEn = Object.fromEntries(Object.entries(staticEnToDe).map(([en, d
  * @type {Record<string, string>}
  */
 const staticEnToEs = {
+  '/compass': '/es/compass',
+  '/compass/why-vetted': '/es/compass/por-que-verificada',
+  '/compass/what-is-inside': '/es/compass/que-contiene',
+  '/compass/how-it-works': '/es/compass/como-creamos-la-lista',
+  '/compass/shortlist': '/es/compass/solicitar-la-lista',
   '/social-in-china': '/es/redes-sociales-chinas',
   '/build-in-china': '/es/web-y-wechat-en-china',
   '/': '/es',
@@ -448,7 +461,6 @@ const staticEnToEs = {
   '/grow-in-china/social-commerce': '/es/crecer-en-china/comercio-social',
   '/grow-in-china/campaigns': '/es/crecer-en-china/campanas',
   '/grow-in-china/media': '/es/crecer-en-china/medios',
-  '/grow-in-china/influencers-kols': '/es/crecer-en-china/influencia-y-kol',
   '/grow-in-china/production-studio': '/es/crecer-en-china/estudio-de-produccion',
   '/grow-in-china/website': '/es/crecer-en-china/sitio-web',
   '/learn-china': '/es/conocer-china',
@@ -743,6 +755,14 @@ export default defineConfig({
   // Legacy WordPress URL redirects. 301 to preserve SEO equity.
   // Mirror every entry in docs/redirection-plan.md for submission to Google.
   redirects: {
+    // WO-3.1: the standalone KOL service page is retired. Creator work is
+    // TheRedScroll's specialism and /social-in-china is the door onto it,
+    // so the old path consolidates there rather than competing with it.
+    '/grow-in-china/influencers-kols': { status: 301, destination: '/social-in-china' },
+    '/fr/se-developper-en-chine/influence-et-kol': { status: 301, destination: '/fr/reseaux-sociaux-chinois' },
+    '/de/in-china-wachsen/influencer-und-kol': { status: 301, destination: '/de/chinesische-social-media' },
+    '/es/crecer-en-china/influencia-y-kol': { status: 301, destination: '/es/redes-sociales-chinas' },
+
     '/china-digital-china-e-commerce-training-masterclass': {
       status: 301,
       destination: '/learn-china/masterclass',

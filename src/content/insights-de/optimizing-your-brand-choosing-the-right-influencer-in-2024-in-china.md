@@ -9,7 +9,7 @@ heroImage: "/Images/insights/optimizing-your-brand-choosing-the-right-influencer
 heroImageAlt: "Professionelle Frau lächelt in die Kamera"
 ---
 
-[Influencer-Marketing](/de/in-china-wachsen/influencer-und-kol) ist zu einer Schlüsselstrategie geworden, getragen vom Aufstieg von Instagram und TikTok. Wer als Unternehmen darin gewinnen will, braucht den richtigen Influencer, der Reichweite und Engagement der Marke trägt. Erfolg hängt davon ab, die passenden Persönlichkeiten zu wählen.
+[Influencer-Marketing](/de/chinesische-social-media) ist zu einer Schlüsselstrategie geworden, getragen vom Aufstieg von Instagram und TikTok. Wer als Unternehmen darin gewinnen will, braucht den richtigen Influencer, der Reichweite und Engagement der Marke trägt. Erfolg hängt davon ab, die passenden Persönlichkeiten zu wählen.
 
 Hier die zentralen Aspekte und ein Leitfaden, wie Sie den richtigen Influencer für Ihre Marke finden.
 
