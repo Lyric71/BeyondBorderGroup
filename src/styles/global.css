@@ -8735,3 +8735,38 @@ a.tool-card:hover .tool-card__foot::after {
   flex-wrap: wrap;
   margin-top: var(--space-6);
 }
+
+/* Shared figure for the Compass pages, so the four photographs sit the same way
+   on every one of them. */
+.cmp-figure {
+  margin: var(--space-6) 0 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--bbg-border);
+  background: var(--bbg-white);
+}
+.cmp-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.cmp-figure figcaption {
+  padding: var(--space-4);
+  font-size: var(--fs-small);
+  line-height: 1.55;
+  color: var(--bbg-text-muted);
+  border-top: 1px solid var(--bbg-border);
+}
+.cmp-figure--wide {
+  margin-bottom: var(--space-6);
+  margin-top: 0;
+}
+.cmp-figure--wide img {
+  max-height: 420px;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  .cmp-figure--wide img {
+    max-height: 260px;
+  }
+}

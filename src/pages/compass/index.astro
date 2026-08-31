@@ -33,8 +33,9 @@ const description =
 
 <Layout title={title} description={description}>
   <!-- Hero -->
-  <section class="section section--dark cmp-hero">
-    <div class="container">
+  <section class="section section--dark cmp-hero cmp-hero--split">
+    <div class="container cmp-hero__grid">
+     <div>
       <span class="eyebrow">Find a partner</span>
       <h1 class="h1">Skip three months of partner search.</h1>
       <p class="lead cmp-hero__lead">
@@ -54,6 +55,17 @@ const description =
         <span class="cmp-hero__years">{YEARS}</span>
         <span class="cmp-hero__years-label">{YEARS_LABEL}</span>
       </p>
+     </div>
+
+      <figure class="cmp-hero__figure">
+        <img
+          src="/Images/compass/compass-hero.png"
+          alt="Two managers walking a consumer-goods distribution warehouse in Shanghai, mid-conversation"
+          width="1536"
+          height="1024"
+          fetchpriority="high"
+        />
+      </figure>
     </div>
   </section>
 
@@ -190,6 +202,34 @@ const description =
 <style>
   .cmp-hero .h1 {
     max-width: 16ch;
+  }
+  .cmp-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: var(--space-7);
+    align-items: center;
+  }
+  @media (max-width: 980px) {
+    .cmp-hero__grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+  }
+  .cmp-hero__figure {
+    margin: 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 40px 80px -50px rgba(0, 0, 0, 0.9);
+  }
+  .cmp-hero__figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 700px) {
+    .cmp-hero__figure {
+      display: none;
+    }
   }
   .cmp-hero__meta {
     display: flex;
