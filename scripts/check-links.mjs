@@ -5,8 +5,9 @@
  * Three things drift silently and cost real traffic:
  *
  *  1. A sister site linked on a non-canonical host. Every one of those costs a
- *     redirect hop, and one of them (beyondbridge.com) was a plain 404 sitting
- *     in the footer of every page until this check was written.
+ *     redirect hop, and one of them was worse than that: the footer pointed at
+ *     beyondbridge.com on every page of the site, which does not resolve. The
+ *     group site is www.bearingbridge.com.
  *  2. A link to a retired host. Compass moved off bearingbridge.com; anything
  *     still pointing there sends visitors through somebody else's redirect.
  *  3. An internal link to a path that now only exists as a 301. Those work, but
@@ -29,14 +30,16 @@ const CANONICAL_HOSTS = {
   'chinawebfoundry.com': 'https://www.chinawebfoundry.com',
   'theredscroll.com': 'https://www.theredscroll.com',
   'hubstudio.ai': 'https://www.hubstudio.ai',
-  'beyondbridge.ai': 'https://www.beyondbridge.ai',
+  'bearingbridge.com': 'https://www.bearingbridge.com',
 };
 
 /** Hosts that must not appear at all any more. */
 const RETIRED_HOSTS = [
   'compass.bearingbridge.com',
   'beyondcompass.beyondbordergroup.com',
+  // Does not resolve. The group site is www.bearingbridge.com.
   'beyondbridge.com',
+  'beyondbridge.ai',
 ];
 
 /** Internal paths that now only answer with a 301. */

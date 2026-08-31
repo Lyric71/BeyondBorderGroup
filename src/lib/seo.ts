@@ -176,9 +176,9 @@ export function organizationSchema(): SchemaObject {
       },
       {
         '@type': 'Organization',
-        '@id': 'https://www.beyondbridge.ai/#organization',
+        '@id': 'https://www.bearingbridge.com/#organization',
         name: 'BeyondBridge',
-        url: 'https://www.beyondbridge.ai',
+        url: 'https://www.bearingbridge.com',
       },
       {
         '@type': 'Organization',
