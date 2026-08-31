@@ -95,6 +95,82 @@ export const ui = {
     'nav.feature.chinawebfoundry.desc': 'A website built in Shanghai for China.',
     'nav.feature.hubstudio.desc': 'The creative production house.',
 
+
+    // WO-1.1: the five top-level groups. Labels name the visitor's need, not
+    // the brand, so the nav reads as a set of questions rather than an org chart.
+    'nav.talkToUs': 'Talk to us',
+    'nav.cta.sell': 'Everything we run for you in China',
+    'nav.cta.learn': 'All programmes and research',
+    'nav.section.find': 'Find a partner',
+    'nav.section.sell': 'Sell in China',
+    'nav.section.web': 'Website and social',
+
+    'nav.find.intro':
+      'The right distributor, the right platform partner, the right operator. Chosen from people we have actually met.',
+    'nav.sell.intro':
+      'Stores, campaigns and media. One team running your Tmall, JD, Douyin and WeChat commerce.',
+    'nav.web.intro':
+      'Your site, your accounts, your content. Built and run by the two teams down the hall.',
+
+    'nav.find.compass.label': 'Compass, the partner database',
+    'nav.find.compass.desc':
+      'Vetted China distributors, Tmall TPs and Douyin partners, met in person.',
+    'nav.find.shortlist.label': 'How a shortlist is built',
+    'nav.find.shortlist.desc': 'From the first brief to a warm introduction, in weeks not months.',
+
+    'nav.sell.tmalljd.label': 'Tmall and JD operations',
+    'nav.sell.tmalljd.desc': 'Run your Tmall Global and JD Worldwide stores end-to-end.',
+    'nav.sell.campaigns.label': 'Campaigns and media',
+    'nav.sell.campaigns.desc': '618, Double 11, CNY, and the media buying that feeds the store.',
+
+    'nav.web.website.label': 'Website, WeChat and mini program',
+    'nav.web.website.desc': 'Baidu, ICP filing and the five gaps that keep foreign sites invisible.',
+    'nav.web.social.label': 'Chinese social media',
+    'nav.web.social.desc': 'WeChat, RedNote, Douyin and Weibo. What each one is actually for.',
+    'nav.web.production.label': 'Content production',
+    'nav.web.production.desc': 'hubStudio, the creative production house.',
+
+    'footer.col.find': 'Find a partner',
+    'footer.col.sell': 'Sell in China',
+    'footer.col.web': 'Website and social',
+    'footer.partners': 'Become a Compass partner',
+    'footer.signin': 'Partner sign-in',
+
+
+    // Mega panel: the promise on the spine, one line per group.
+    'nav.sell.title': 'Your stores, run by the people who opened them.',
+    'nav.web.title': 'Two teams, one floor, in Shanghai.',
+    'nav.find.title': 'The shortlist comes from people we have met.',
+    'nav.learn.title': 'Read the market before you bet on it.',
+
+    // Mega panel: feature card
+    'nav.feature.platforms.label': 'Where we operate',
+    'nav.feature.platforms.note':
+      'Storefronts, content commerce and livestream, on the platforms that carry the volume.',
+    'nav.feature.teams.label': 'Who does the work',
+    'nav.feature.cwf.line':
+      'ChinaWebFoundry, our web team in Shanghai. Baidu, ICP filing, WeChat and mini programs.',
+    'nav.feature.trs.line':
+      'TheRedScroll, our social agency. Daily content, community and KOL work in Chinese.',
+    'nav.feature.compass.label': 'Compass',
+    'nav.feature.compass.title': 'A database, not another directory',
+    'nav.feature.compass.line':
+      'Fifteen years of distributor meetings, written down and kept current.',
+    'nav.feature.compass.cta': 'See how it works',
+    'nav.feature.compass.alt':
+      'Two managers walking a distribution warehouse in Shanghai, mid-conversation',
+    'nav.feature.learn.label': 'Masterclass',
+    'nav.feature.learn.title': 'Taught by people who run China every day',
+    'nav.feature.learn.line': 'A working session, not a keynote. Recent cases, real numbers.',
+    'nav.feature.learn.cta': 'See the programme',
+    'nav.feature.learn.alt': 'A masterclass session in progress with the room facing the speaker',
+
+
+    'footer.call.eyebrow': 'Next step',
+    'footer.call.title': 'Tell us where you are, and where you want to be.',
+    'footer.call.note':
+      'A senior partner will write back inside one working day, not a form-letter from an intake bot.',
+
     // Language switcher
     'lang.switch.aria': 'Change language',
     'lang.current': 'Language',
@@ -102,7 +178,7 @@ export const ui = {
     // Footer
     'footer.aria.brand': 'TheChinaPath Home',
     'footer.pitch':
-      'We help brands Enter China, Grow in China, and Learn China. 20 years of doing the work, not pitching it.',
+      'We help brands Enter China, Grow in China, and Learn China. 15 years of doing the work, not pitching it.',
     'footer.cities': 'Shanghai · Hong Kong · Paris',
     'footer.social.linkedin': 'LinkedIn',
     'footer.social.linkedinAria': 'TheChinaPath on LinkedIn',
@@ -207,6 +283,83 @@ export const ui = {
       "Des sites pensés à Shanghai pour l'écosystème internet chinois.",
     'nav.feature.hubstudio.desc': 'Studio de création et de production, installé en Chine.',
 
+
+    // WO-1.1
+    'nav.talkToUs': 'Parlons-en',
+    'nav.cta.sell': 'Tout ce que nous pilotons pour vous en Chine',
+    'nav.cta.learn': 'Tous les programmes et analyses',
+    'nav.section.find': 'Trouver un partenaire',
+    'nav.section.sell': 'Vendre en Chine',
+    'nav.section.web': 'Site et réseaux sociaux',
+
+    'nav.find.intro':
+      'Le bon distributeur, le bon opérateur de plateforme. Des partenaires que nous avons rencontrés nous-mêmes, sur place.',
+    'nav.sell.intro':
+      'Boutiques, campagnes et plans média. Une seule équipe pilote vos ventes sur Tmall, JD, Douyin et WeChat.',
+    'nav.web.intro':
+      'Votre site, vos comptes, vos contenus. Deux équipes du groupe, à Shanghai, les prennent en charge.',
+
+    'nav.find.compass.label': 'Compass, la base de partenaires',
+    'nav.find.compass.desc':
+      'Distributeurs, TP Tmall et partenaires Douyin qualifiés, rencontrés un par un.',
+    'nav.find.shortlist.label': 'Comment se construit une short-list',
+    'nav.find.shortlist.desc':
+      "Du premier brief à la mise en relation, en quelques semaines plutôt qu'un trimestre.",
+
+    'nav.sell.tmalljd.label': 'Opérations Tmall et JD',
+    'nav.sell.tmalljd.desc': 'Gestion intégrale de vos boutiques Tmall Global et JD Worldwide.',
+    'nav.sell.campaigns.label': 'Campagnes et média',
+    'nav.sell.campaigns.desc':
+      '618, Double 11, Nouvel An chinois, et les achats média qui alimentent la boutique.',
+
+    'nav.web.website.label': 'Site web, WeChat et mini-programme',
+    'nav.web.website.desc':
+      'Baidu, licence ICP et les cinq écarts qui rendent un site étranger invisible en Chine.',
+    'nav.web.social.label': 'Réseaux sociaux chinois',
+    'nav.web.social.desc': 'WeChat, RED, Douyin, Weibo. À quoi sert vraiment chaque plateforme.',
+    'nav.web.production.label': 'Production de contenus',
+    'nav.web.production.desc': 'hubStudio, la maison de production créative.',
+
+    'footer.col.find': 'Trouver un partenaire',
+    'footer.col.sell': 'Vendre en Chine',
+    'footer.col.web': 'Site et réseaux sociaux',
+    'footer.partners': 'Devenir partenaire Compass',
+    'footer.signin': 'Espace partenaires',
+
+
+    // Mega panel
+    'nav.sell.title': 'Vos boutiques, tenues par ceux qui les ont ouvertes.',
+    'nav.web.title': 'Deux équipes, un même étage, à Shanghai.',
+    'nav.find.title': 'La short-list vient de gens que nous avons rencontrés.',
+    'nav.learn.title': 'Lire le marché avant de miser dessus.',
+
+    'nav.feature.platforms.label': 'Nos terrains',
+    'nav.feature.platforms.note':
+      'Boutiques, commerce de contenu et livestream, sur les plateformes qui font le volume.',
+    'nav.feature.teams.label': 'Qui exécute',
+    'nav.feature.cwf.line':
+      'ChinaWebFoundry, notre équipe web à Shanghai. Baidu, licence ICP, WeChat et mini-programmes.',
+    'nav.feature.trs.line':
+      'TheRedScroll, notre agence social. Contenu quotidien, communauté et KOL, en chinois.',
+    'nav.feature.compass.label': 'Compass',
+    'nav.feature.compass.title': 'Une base de données, pas un annuaire',
+    'nav.feature.compass.line':
+      'Quinze ans de rendez-vous avec des distributeurs, consignés et tenus à jour.',
+    'nav.feature.compass.cta': 'Voir le fonctionnement',
+    'nav.feature.compass.alt':
+      'Deux responsables traversent un entrepôt de distribution à Shanghai en discutant',
+    'nav.feature.learn.label': 'Masterclass',
+    'nav.feature.learn.title': 'Animé par des praticiens en activité',
+    'nav.feature.learn.line': 'Une session de travail, pas une conférence. Cas récents, chiffres réels.',
+    'nav.feature.learn.cta': 'Voir le programme',
+    'nav.feature.learn.alt': "Une session de masterclass en cours, la salle tournée vers l'intervenant",
+
+
+    'footer.call.eyebrow': 'Prochaine étape',
+    'footer.call.title': 'Dites-nous où vous en êtes, et où vous voulez aller.',
+    'footer.call.note':
+      'Un associé vous répond personnellement sous un jour ouvré. Pas un accusé de réception automatique.',
+
     // Language switcher
     'lang.switch.aria': 'Changer de langue',
     'lang.current': 'Langue',
@@ -214,7 +367,7 @@ export const ui = {
     // Footer
     'footer.aria.brand': 'Accueil TheChinaPath',
     'footer.pitch':
-      "S'implanter en Chine, s'y développer, la décrypter. Vingt années d'opérations conduites depuis le terrain.",
+      "S'implanter en Chine, s'y développer, la décrypter. Quinze années d'opérations conduites depuis le terrain.",
     'footer.cities': 'Shanghai · Hong Kong · Paris',
     'footer.social.linkedin': 'LinkedIn',
     'footer.social.linkedinAria': 'TheChinaPath sur LinkedIn',
@@ -317,6 +470,83 @@ export const ui = {
       'Websites, in Shanghai gebaut für das chinesische Internet.',
     'nav.feature.hubstudio.desc': 'Studio für Kreation und Produktion, ansässig in China.',
 
+
+    // WO-1.1
+    'nav.talkToUs': 'Sprechen wir',
+    'nav.cta.sell': 'Alles, was wir für Sie in China betreiben',
+    'nav.cta.learn': 'Alle Programme und Analysen',
+    'nav.section.find': 'Partner finden',
+    'nav.section.sell': 'In China verkaufen',
+    'nav.section.web': 'Website und Social Media',
+
+    'nav.find.intro':
+      'Der passende Distributor, der passende Plattformpartner. Ausgewählt aus Unternehmen, die wir persönlich kennen.',
+    'nav.sell.intro':
+      'Shops, Kampagnen, Media. Ein Team führt Ihr Geschäft auf Tmall, JD, Douyin und WeChat.',
+    'nav.web.intro':
+      'Ihre Website, Ihre Accounts, Ihre Inhalte. Zwei Teams der Gruppe in Shanghai übernehmen das.',
+
+    'nav.find.compass.label': 'Compass, die Partnerdatenbank',
+    'nav.find.compass.desc':
+      'Geprüfte China-Distributoren, Tmall TPs und Douyin-Partner. Jeder persönlich getroffen.',
+    'nav.find.shortlist.label': 'So entsteht eine Shortlist',
+    'nav.find.shortlist.desc':
+      'Vom ersten Briefing bis zur Empfehlung, in Wochen statt in einem Quartal.',
+
+    'nav.sell.tmalljd.label': 'Tmall- und JD-Betrieb',
+    'nav.sell.tmalljd.desc': 'Wir führen Ihre Stores auf Tmall Global und JD Worldwide komplett.',
+    'nav.sell.campaigns.label': 'Kampagnen und Media',
+    'nav.sell.campaigns.desc':
+      '618, Double 11, Neujahrsfest, dazu der Mediaeinkauf, der den Store versorgt.',
+
+    'nav.web.website.label': 'Website, WeChat und Mini-Programm',
+    'nav.web.website.desc':
+      'Baidu, ICP-Lizenz und die fünf Lücken, an denen ausländische Websites in China scheitern.',
+    'nav.web.social.label': 'Chinesische Social Media',
+    'nav.web.social.desc': 'WeChat, RedNote, Douyin, Weibo. Wofür jede Plattform wirklich taugt.',
+    'nav.web.production.label': 'Content-Produktion',
+    'nav.web.production.desc': 'hubStudio, das Kreativstudio der Gruppe.',
+
+    'footer.col.find': 'Partner finden',
+    'footer.col.sell': 'In China verkaufen',
+    'footer.col.web': 'Website und Social Media',
+    'footer.partners': 'Compass-Partner werden',
+    'footer.signin': 'Partner-Login',
+
+
+    // Mega panel
+    'nav.sell.title': 'Ihre Stores, geführt von denen, die sie eröffnet haben.',
+    'nav.web.title': 'Zwei Teams, eine Etage, in Shanghai.',
+    'nav.find.title': 'Die Shortlist kommt von Leuten, die wir kennen.',
+    'nav.learn.title': 'Den Markt lesen, bevor Sie auf ihn setzen.',
+
+    'nav.feature.platforms.label': 'Wo wir arbeiten',
+    'nav.feature.platforms.note':
+      'Stores, Content Commerce und Livestream, auf den Plattformen mit dem Volumen.',
+    'nav.feature.teams.label': 'Wer es umsetzt',
+    'nav.feature.cwf.line':
+      'ChinaWebFoundry, unser Web-Team in Shanghai. Baidu, ICP-Lizenz, WeChat und Mini-Programme.',
+    'nav.feature.trs.line':
+      'TheRedScroll, unsere Social-Agentur. Tägliche Inhalte, Community und KOL, auf Chinesisch.',
+    'nav.feature.compass.label': 'Compass',
+    'nav.feature.compass.title': 'Eine Datenbank, kein weiteres Verzeichnis',
+    'nav.feature.compass.line':
+      'Fünfzehn Jahre Distributorentermine, aufgeschrieben und aktuell gehalten.',
+    'nav.feature.compass.cta': 'So funktioniert es',
+    'nav.feature.compass.alt':
+      'Zwei Manager gehen im Gespräch durch ein Distributionslager in Shanghai',
+    'nav.feature.learn.label': 'Masterclass',
+    'nav.feature.learn.title': 'Von Praktikern, die China täglich betreiben',
+    'nav.feature.learn.line': 'Eine Arbeitssitzung, keine Keynote. Aktuelle Fälle, echte Zahlen.',
+    'nav.feature.learn.cta': 'Zum Programm',
+    'nav.feature.learn.alt': 'Eine laufende Masterclass, der Raum dem Referenten zugewandt',
+
+
+    'footer.call.eyebrow': 'Nächster Schritt',
+    'footer.call.title': 'Sagen Sie uns, wo Sie stehen und wohin Sie wollen.',
+    'footer.call.note':
+      'Ein Partner antwortet Ihnen persönlich innerhalb eines Werktags. Keine automatische Eingangsbestätigung.',
+
     // Language switcher
     'lang.switch.aria': 'Sprache wechseln',
     'lang.current': 'Sprache',
@@ -324,7 +554,7 @@ export const ui = {
     // Footer
     'footer.aria.brand': 'TheChinaPath Startseite',
     'footer.pitch':
-      'Nach China kommen, in China wachsen, China verstehen. Zwanzig Jahre operative Arbeit vor Ort, nicht aus dem Pitch-Deck.',
+      'Nach China kommen, in China wachsen, China verstehen. Fünfzehn Jahre operative Arbeit vor Ort, nicht aus dem Pitch-Deck.',
     'footer.cities': 'Shanghai · Hongkong · Paris',
     'footer.social.linkedin': 'LinkedIn',
     'footer.social.linkedinAria': 'TheChinaPath auf LinkedIn',
@@ -428,6 +658,84 @@ export const ui = {
     'nav.feature.chinawebfoundry.desc': 'Sitios web pensados en Shanghái para el internet chino.',
     'nav.feature.hubstudio.desc': 'Estudio creativo y de producción, con sede en China.',
 
+
+    // WO-1.1
+    'nav.talkToUs': 'Hablemos',
+    'nav.cta.sell': 'Todo lo que gestionamos por usted en China',
+    'nav.cta.learn': 'Todos los programas y análisis',
+    'nav.section.find': 'Encontrar un socio',
+    'nav.section.sell': 'Vender en China',
+    'nav.section.web': 'Web y redes sociales',
+
+    'nav.find.intro':
+      'El distribuidor adecuado, el operador de plataforma adecuado. Elegidos entre empresas que hemos visitado en persona.',
+    'nav.sell.intro':
+      'Tiendas, campañas y medios. Un mismo equipo gestiona sus ventas en Tmall, JD, Douyin y WeChat.',
+    'nav.web.intro':
+      'Su web, sus cuentas, sus contenidos. Los llevan dos equipos del grupo en Shanghái.',
+
+    'nav.find.compass.label': 'Compass, la base de socios',
+    'nav.find.compass.desc':
+      'Distribuidores, TP de Tmall y socios de Douyin verificados, uno a uno y en persona.',
+    'nav.find.shortlist.label': 'Cómo se arma una lista corta',
+    'nav.find.shortlist.desc':
+      'Del primer briefing a la presentación, en semanas y no en un trimestre.',
+
+    'nav.sell.tmalljd.label': 'Operación de Tmall y JD',
+    'nav.sell.tmalljd.desc':
+      'Gestionamos sus tiendas de Tmall Global y JD Worldwide de principio a fin.',
+    'nav.sell.campaigns.label': 'Campañas y medios',
+    'nav.sell.campaigns.desc':
+      '618, Doble 11, Año Nuevo chino, y la compra de medios que alimenta la tienda.',
+
+    'nav.web.website.label': 'Web, WeChat y mini programa',
+    'nav.web.website.desc':
+      'Baidu, licencia ICP y las cinco brechas que dejan invisible a una web extranjera.',
+    'nav.web.social.label': 'Redes sociales chinas',
+    'nav.web.social.desc': 'WeChat, RedNote, Douyin y Weibo. Para qué sirve realmente cada una.',
+    'nav.web.production.label': 'Producción de contenidos',
+    'nav.web.production.desc': 'hubStudio, la productora creativa del grupo.',
+
+    'footer.col.find': 'Encontrar un socio',
+    'footer.col.sell': 'Vender en China',
+    'footer.col.web': 'Web y redes sociales',
+    'footer.partners': 'Ser socio de Compass',
+    'footer.signin': 'Acceso de socios',
+
+
+    // Mega panel
+    'nav.sell.title': 'Sus tiendas, en manos de quienes las abrieron.',
+    'nav.web.title': 'Dos equipos, una misma planta, en Shanghai.',
+    'nav.find.title': 'La lista corta sale de gente que hemos visitado.',
+    'nav.learn.title': 'Leer el mercado antes de apostar por él.',
+
+    'nav.feature.platforms.label': 'Dónde operamos',
+    'nav.feature.platforms.note':
+      'Tiendas, comercio de contenido y livestream, en las plataformas que mueven el volumen.',
+    'nav.feature.teams.label': 'Quién lo ejecuta',
+    'nav.feature.cwf.line':
+      'ChinaWebFoundry, nuestro equipo web en Shanghai. Baidu, licencia ICP, WeChat y mini programas.',
+    'nav.feature.trs.line':
+      'TheRedScroll, nuestra agencia social. Contenido diario, comunidad y KOL, en chino.',
+    'nav.feature.compass.label': 'Compass',
+    'nav.feature.compass.title': 'Una base de datos, no otro directorio',
+    'nav.feature.compass.line':
+      'Quince años de reuniones con distribuidores, anotadas y mantenidas al día.',
+    'nav.feature.compass.cta': 'Ver cómo funciona',
+    'nav.feature.compass.alt':
+      'Dos responsables recorren un almacén de distribución en Shanghai mientras conversan',
+    'nav.feature.learn.label': 'Masterclass',
+    'nav.feature.learn.title': 'Impartida por gente que opera China a diario',
+    'nav.feature.learn.line': 'Una sesión de trabajo, no una conferencia. Casos recientes, cifras reales.',
+    'nav.feature.learn.cta': 'Ver el programa',
+    'nav.feature.learn.alt': 'Una masterclass en curso, la sala orientada hacia el ponente',
+
+
+    'footer.call.eyebrow': 'Siguiente paso',
+    'footer.call.title': 'Cuéntenos dónde está y adónde quiere llegar.',
+    'footer.call.note':
+      'Un socio le responde personalmente en un día hábil. No un acuse de recibo automático.',
+
     // Language switcher
     'lang.switch.aria': 'Cambiar de idioma',
     'lang.current': 'Idioma',
@@ -435,7 +743,7 @@ export const ui = {
     // Footer
     'footer.aria.brand': 'Inicio TheChinaPath',
     'footer.pitch':
-      'Implantarse en China, crecer en China, entender China. Veinte años de operaciones desde el terreno.',
+      'Implantarse en China, crecer en China, entender China. Quince años de operaciones desde el terreno.',
     'footer.cities': 'Shanghái · Hong Kong · París',
     'footer.social.linkedin': 'LinkedIn',
     'footer.social.linkedinAria': 'TheChinaPath en LinkedIn',

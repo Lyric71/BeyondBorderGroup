@@ -1,0 +1,203 @@
+---
+/**
+ * WO-2.1 — /compass/why-vetted
+ * 301 target for compass.bearingbridge.com/en/why-this-database.
+ *
+ * Ported from the Compass "why this database" page. The three failure stories,
+ * the six deciding questions and the comparison table travel across. The
+ * surrounding copy is rewritten in TheChinaPath's voice.
+ */
+import Layout from '../../layouts/Layout.astro';
+import {
+  HEADLINE,
+  FAILURE_STORIES,
+  DECIDING_QUESTIONS,
+  COMPARISON,
+  YEARS,
+} from '../../data/compass';
+
+const title = 'Why a vetted China distributor database | Compass | TheChinaPath';
+const description =
+  'Most China distributor databases are scraped lists. Compass was built one meeting at a time, over fifteen years, by the team that puts consumer brands into Chinese distribution.';
+---
+
+<Layout title={title} description={description}>
+  <section class="section section--dark cmp-hero">
+    <div class="container">
+      <span class="eyebrow">Why vetted</span>
+      <h1 class="h1">Most "China distributor databases" are scraped lists. This one is not.</h1>
+      <p class="lead cmp-hero__lead">
+        Compass was built one meeting at a time, by a team that has spent {YEARS} years putting
+        consumer brands into China's distribution and eCommerce channels. Every name on the list has
+        been vetted in person, visited on site, or worked with directly on a real brand engagement.
+      </p>
+      <p class="cmp-hero__body">
+        It is the difference between knowing a partner exists and knowing whether they actually fit
+        your brand.
+      </p>
+      <div class="cmp-hero__cta">
+        <a href="/compass/shortlist" class="btn btn--primary">Talk to us about your shortlist</a>
+        <a href="/compass/what-is-inside" class="btn btn--ghost">See what is inside</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The question everyone asks -->
+  <section class="section">
+    <div class="container cmp-narrow">
+      <span class="eyebrow">The problem we kept running into</span>
+      <h2 class="h2">Every brand entering China asks the same question.</h2>
+      <p class="wv-question">Who do we sell with?</p>
+      <p>
+        Distributors, TPs, importers, cross-border operators, category specialists. The list runs
+        long, the names turn over fast, and from outside China they all look the same. A deck is a
+        deck. Every one of them has a warehouse photo, a client logo wall and a very confident
+        account director.
+      </p>
+      <p>{HEADLINE}</p>
+    </div>
+  </section>
+
+  <!-- Three ways it goes wrong -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Three ways it goes wrong</span>
+        <h2 class="h2">We have watched each of these happen more than once.</h2>
+      </div>
+      <div class="grid grid-3">
+        {
+          FAILURE_STORIES.map((s) => (
+            <article class="card">
+              <h3 class="card__title">{s.kind}</h3>
+              <p>{s.story}</p>
+            </article>
+          ))
+        }
+      </div>
+      <p class="wv-cost">
+        The damage rarely stops at one bad year. Lost shelf. Burned listings. A China entry that has
+        to start again from scratch.
+      </p>
+    </div>
+  </section>
+
+  <!-- What we have been building -->
+  <section class="section">
+    <div class="container cmp-narrow">
+      <span class="eyebrow">What we have been building</span>
+      <h2 class="h2">Fifteen years of meetings, written down.</h2>
+      <p>
+        The database was not a plan. It was a by-product. Our leadership team has spent fifteen
+        years doing distribution and eCommerce work inside China, and somewhere along the way that
+        work threw off something nobody had budgeted for: a lot of data.
+      </p>
+      <p>
+        Every distributor we vetted. Every TP we briefed. Every warehouse we walked. We wrote down
+        what they actually do, not what their deck claims. Real categories. Real volume. The
+        reputation they carry with the brands they have worked with before. The ones we would
+        recommend in a heartbeat, and the ones we would quietly steer a client away from.
+      </p>
+      <p>After a few years of spreadsheets and shared documents, the whole thing became Compass.</p>
+    </div>
+  </section>
+
+  <!-- From directory to database -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Why a database</span>
+        <h2 class="h2">A directory lists names. A database answers questions.</h2>
+        <p class="lead">
+          These are the questions that actually decide a partnership, and not one of them is
+          answerable from a company website.
+        </p>
+      </div>
+      <ul class="cmp-list wv-questions">
+        {DECIDING_QUESTIONS.map((q) => <li>{q}</li>)}
+      </ul>
+      <p class="wv-cost">
+        The database does not make the decision for you. What it does is shorten the list, and make
+        sure the names left on it are worth your time in the first place.
+      </p>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">{COMPARISON.eyebrow}</span>
+        <h2 class="h2">{COMPARISON.title}</h2>
+      </div>
+      <div class="cmp-table-wrap">
+        <table class="cmp-table">
+          <thead>
+            <tr>
+              <th scope="col"><span class="sr-only">What we compare</span></th>
+              <th scope="col">{COMPARISON.columnHeaders.scraped}</th>
+              <th scope="col">{COMPARISON.columnHeaders.ours}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              COMPARISON.rows.map((row) => (
+                <tr>
+                  <th scope="row">{row.label}</th>
+                  <td data-col={COMPARISON.columnHeaders.scraped}>{row.scraped}</td>
+                  <td data-col={COMPARISON.columnHeaders.ours}>{row.ours}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cmp-next">
+        <a href="/compass/shortlist" class="btn btn--primary">Talk to us about your shortlist</a>
+        <a href="/compass/what-is-inside" class="btn btn--ghost">Next: what is inside</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cmp-hero .h1 {
+    max-width: 20ch;
+  }
+  .wv-question {
+    font-size: var(--fs-lead);
+    font-weight: 600;
+    color: var(--bbg-ink);
+    margin-top: var(--space-5);
+  }
+  .wv-cost {
+    margin-top: var(--space-6);
+    max-width: 70ch;
+    color: var(--bbg-text-muted);
+  }
+  .wv-questions {
+    columns: 2;
+    column-gap: var(--space-7);
+    max-width: 900px;
+  }
+  .wv-questions li {
+    break-inside: avoid;
+  }
+  @media (max-width: 720px) {
+    .wv-questions {
+      columns: 1;
+    }
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>

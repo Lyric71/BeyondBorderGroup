@@ -1,0 +1,9 @@
+---
+/** WO-1.2 — version française de /build-in-china. Le balisage, les styles et le
+ *  script vivent dans le composant partagé ; cette route ne fournit que la
+ *  copie française. */
+import BuildInChina from '../../components/pages/BuildInChina.astro';
+import copy from '../../content/pages/build-in-china/fr';
+---
+
+<BuildInChina copy={copy} contactHref="/fr/nous-contacter" />

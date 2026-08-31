@@ -1,43 +1,75 @@
 ---
+/**
+ * Site header and mega menu.
+ *
+ * Design note. The logo is a map pin on a winding path, and the whole brand
+ * rests on that one idea: a route through a market. So the nav is built as a
+ * route rather than as a row of dropdowns. A hairline rail runs under the top
+ * level, a red marker travels along it to whichever stop you are on, and when a
+ * panel opens the rail drops into it as the vertical spine the rows hang off.
+ * That is the one place this component spends its boldness. Everything else,
+ * the rows, the type, the spacing, stays quiet.
+ *
+ * Structure per panel: a dark spine on the left carrying the group's promise, a
+ * readable list of rows in the middle, and a feature card on the right that
+ * shows rather than tells. Partner logos live in that third zone.
+ *
+ * WO-1.1 — five top-level groups, labels naming the visitor's need. "Who We Are"
+ * sits in the footer and "Insights" sits under Learn China.
+ *
+ * Link policy. Every row points at thechinapath.com except one, the hubStudio
+ * row. The Compass pages and the two door pages are English only, so they use
+ * raw paths: localizePath would send a French visitor to /fr, which is not where
+ * the page is. Labels are translated, destinations are the English page.
+ */
 import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
 import { locales, localeLabels, localeNamesNative, type Locale } from '../i18n/ui';
+import { localesForPath } from '../i18n/route-locales';
 
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
 const lp = (path: string) => localizePath(path, locale);
+const enPath = (path: string) => path;
 
 const icon = {
-  compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5.5-5.5 2 2-5.5z"/></svg>`,
-  store: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/><path d="M4 9h16"/></svg>`,
-  truck: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>`,
-  bag: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>`,
-  chat: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-4a8 8 0 1 1 16-4z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg>`,
-  network: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M7 8l4 8M17 8l-4 8"/></svg>`,
-  tag: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="8" cy="9" r="1.5"/></svg>`,
-  broadcast: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.5 7.5a6 6 0 0 1 0 9M7.5 7.5a6 6 0 0 0 0 9"/><path d="M19.5 4.5a10 10 0 0 1 0 15M4.5 4.5a10 10 0 0 0 0 15"/></svg>`,
-  monitor: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18"/><circle cx="6" cy="6.5" r=".5" fill="currentColor"/><circle cx="8" cy="6.5" r=".5" fill="currentColor"/><circle cx="10" cy="6.5" r=".5" fill="currentColor"/></svg>`,
-  cap: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 5l10 4-10 4z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v5"/></svg>`,
-  pin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-7-7-7-13a7 7 0 1 1 14 0c0 6-7 13-7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>`,
-  bulb: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10c1 1 1.5 2 1.5 3h5c0-1 .5-2 1.5-3a6 6 0 0 0-4-10z"/></svg>`,
-  grid: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`,
-  camera: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h3l2-3h8l2 3h3v12H3z"/><circle cx="12" cy="13" r="4"/></svg>`,
-  megaphone: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h2l9 5V4L6 9H4a1 1 0 0 0-1 1z"/><path d="M18 9a4 4 0 0 1 0 6"/><path d="M7 15v3a2 2 0 0 0 4 0v-2"/></svg>`,
-  newspaper: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h14v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M18 8h2v11a2 2 0 0 1-2 2"/><path d="M7 9h8M7 13h8M7 17h5"/></svg>`,
-  globe: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>`,
+  compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5.5-5.5 2 2-5.5z"/></svg>`,
+  store: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/><path d="M4 9h16"/></svg>`,
+  truck: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h12v9H2z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>`,
+  bag: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>`,
+  chat: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-4a8 8 0 1 1 16-4z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg>`,
+  network: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M7 8l4 8M17 8l-4 8"/></svg>`,
+  tag: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="8" cy="9" r="1.5"/></svg>`,
+  broadcast: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.5 7.5a6 6 0 0 1 0 9M7.5 7.5a6 6 0 0 0 0 9"/><path d="M19.5 4.5a10 10 0 0 1 0 15M4.5 4.5a10 10 0 0 0 0 15"/></svg>`,
+  monitor: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18"/><path d="M9 21h6"/><path d="M12 18v3"/></svg>`,
+  cap: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 5l10 4-10 4z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v5"/></svg>`,
+  pin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-7-7-7-13a7 7 0 1 1 14 0c0 6-7 13-7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>`,
+  grid: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`,
+  camera: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h3l2-3h8l2 3h3v12H3z"/><circle cx="12" cy="13" r="4"/></svg>`,
+  megaphone: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h2l9 5V4L6 9H4a1 1 0 0 0-1 1z"/><path d="M18 9a4 4 0 0 1 0 6"/><path d="M7 15v3a2 2 0 0 0 4 0v-2"/></svg>`,
+  bulb: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10c1 1 1.5 2 1.5 3h5c0-1 .5-2 1.5-3a6 6 0 0 0-4-10z"/></svg>`,
 };
 
-const enterChina = [
+interface NavItem {
+  label: string;
+  desc: string;
+  href: string;
+  svg: string;
+  /** Set only on rows that leave thechinapath.com. There is exactly one. */
+  external?: boolean;
+}
+
+const findPartner: NavItem[] = [
   {
-    label: t('nav.enter.marketEntry.label'),
-    desc: t('nav.enter.marketEntry.desc'),
-    href: lp('/enter-china/market-entry-consulting'),
+    label: t('nav.find.compass.label'),
+    desc: t('nav.find.compass.desc'),
+    href: enPath('/compass'),
     svg: icon.compass,
   },
   {
-    label: t('nav.enter.crossBorder.label'),
-    desc: t('nav.enter.crossBorder.desc'),
-    href: lp('/enter-china/cross-border-setup'),
-    svg: icon.store,
+    label: t('nav.find.shortlist.label'),
+    desc: t('nav.find.shortlist.desc'),
+    href: enPath('/compass/how-it-works'),
+    svg: icon.network,
   },
   {
     label: t('nav.enter.distribution.label'),
@@ -46,24 +78,23 @@ const enterChina = [
     svg: icon.truck,
   },
   {
-    label: t('nav.enter.branding.label'),
-    desc: t('nav.enter.branding.desc'),
-    href: lp('/enter-china/branding-localisation'),
-    svg: icon.tag,
+    label: t('nav.enter.marketEntry.label'),
+    desc: t('nav.enter.marketEntry.desc'),
+    href: lp('/enter-china/market-entry-consulting'),
+    svg: icon.pin,
   },
 ];
 
-const enterChinaFeature = {
-  label: 'Compass',
-  desc: t('nav.feature.beyondcompass.desc'),
-  href: 'https://compass.bearingbridge.com/en',
-  logo: '/Images/AgencyLogos/Compass%20-%20Horizontal.svg',
-};
-
-const growChina = [
+const sellInChina: NavItem[] = [
   {
-    label: t('nav.grow.ecommerce.label'),
-    desc: t('nav.grow.ecommerce.desc'),
+    label: t('nav.enter.crossBorder.label'),
+    desc: t('nav.enter.crossBorder.desc'),
+    href: lp('/enter-china/cross-border-setup'),
+    svg: icon.store,
+  },
+  {
+    label: t('nav.sell.tmalljd.label'),
+    desc: t('nav.sell.tmalljd.desc'),
     href: lp('/grow-in-china/cross-border-ecommerce'),
     svg: icon.bag,
   },
@@ -74,46 +105,42 @@ const growChina = [
     svg: icon.chat,
   },
   {
-    label: t('nav.grow.campaigns.label'),
-    desc: t('nav.grow.campaigns.desc'),
+    label: t('nav.sell.campaigns.label'),
+    desc: t('nav.sell.campaigns.desc'),
     href: lp('/grow-in-china/campaigns'),
-    svg: icon.tag,
-  },
-  {
-    label: t('nav.grow.media.label'),
-    desc: t('nav.grow.media.desc'),
-    href: lp('/grow-in-china/media'),
-    svg: icon.broadcast,
-  },
-  {
-    label: t('nav.grow.kols.label'),
-    desc: t('nav.grow.kols.desc'),
-    href: lp('/grow-in-china/influencers-kols'),
     svg: icon.megaphone,
+  },
+  {
+    label: t('nav.enter.branding.label'),
+    desc: t('nav.enter.branding.desc'),
+    href: lp('/enter-china/branding-localisation'),
+    svg: icon.tag,
   },
 ];
 
-const growChinaFeature = {
-  label: 'ChinaWebFoundry',
-  desc: t('nav.feature.chinawebfoundry.desc'),
-  href: 'https://chinawebfoundry.com',
-  logo: '/Images/AgencyLogos/Logo-ChinaWebFoundry-transparent.webp',
-};
-
-const growChinaFeatureHub = {
-  label: 'hubStudio',
-  desc: t('nav.feature.hubstudio.desc'),
-  href: 'https://hubstudio.ai',
-  logo: '/Images/AgencyLogos/hubStudio%20(2).webp',
-};
-
-const learnChina = [
+const websiteAndSocial: NavItem[] = [
   {
-    label: t('nav.learn.platforms.label'),
-    desc: t('nav.learn.platforms.desc'),
-    href: lp('/learn-china/platforms'),
-    svg: icon.grid,
+    label: t('nav.web.website.label'),
+    desc: t('nav.web.website.desc'),
+    href: enPath('/build-in-china'),
+    svg: icon.monitor,
   },
+  {
+    label: t('nav.web.social.label'),
+    desc: t('nav.web.social.desc'),
+    href: enPath('/social-in-china'),
+    svg: icon.broadcast,
+  },
+  {
+    label: t('nav.web.production.label'),
+    desc: t('nav.web.production.desc'),
+    href: 'https://hubstudio.ai',
+    svg: icon.camera,
+    external: true,
+  },
+];
+
+const learnChina: NavItem[] = [
   {
     label: t('nav.learn.masterclass.label'),
     desc: t('nav.learn.masterclass.desc'),
@@ -127,6 +154,12 @@ const learnChina = [
     svg: icon.pin,
   },
   {
+    label: t('nav.learn.platforms.label'),
+    desc: t('nav.learn.platforms.desc'),
+    href: lp('/learn-china/platforms'),
+    svg: icon.grid,
+  },
+  {
     label: t('nav.learn.insights.label'),
     desc: t('nav.learn.insights.desc'),
     href: lp('/insights'),
@@ -134,33 +167,142 @@ const learnChina = [
   },
 ];
 
-const sections = [
+/**
+ * The third zone of each panel. One kind per group, because each group has a
+ * different thing worth showing: the platforms we operate on, the two sister
+ * teams, the database, the room a masterclass happens in.
+ */
+type Feature =
+  | { kind: 'logos'; label: string; note: string; logos: { src: string; alt: string }[] }
+  | {
+      kind: 'partners';
+      label: string;
+      cards: { src: string; alt: string; name: string; line: string; href: string }[];
+    }
+  | { kind: 'image'; label: string; title: string; line: string; href: string; cta: string; src: string; alt: string };
+
+const features: Record<string, Feature> = {
+  sell: {
+    kind: 'logos',
+    label: t('nav.feature.platforms.label'),
+    note: t('nav.feature.platforms.note'),
+    logos: [
+      { src: '/Images/platforms/tmall-logo.svg', alt: 'Tmall' },
+      { src: '/Images/platforms/jd-logo.webp', alt: 'JD.com' },
+      { src: '/Images/platforms/douyin-logo.svg', alt: 'Douyin' },
+      { src: '/Images/platforms/wechat-logo.svg', alt: 'WeChat' },
+      { src: '/Images/platforms/rednote-logo.svg', alt: 'RedNote' },
+      { src: '/Images/platforms/pdd-logo.svg', alt: 'Pinduoduo' },
+    ],
+  },
+  web: {
+    kind: 'partners',
+    label: t('nav.feature.teams.label'),
+    cards: [
+      {
+        src: '/Images/AgencyLogos/Logo-ChinaWebFoundry-transparent.webp',
+        alt: 'ChinaWebFoundry',
+        name: 'ChinaWebFoundry',
+        line: t('nav.feature.cwf.line'),
+        href: enPath('/build-in-china'),
+      },
+      {
+        src: '/Images/AgencyLogos/TheredScroll%20PNG.webp',
+        alt: 'TheRedScroll',
+        name: 'TheRedScroll',
+        line: t('nav.feature.trs.line'),
+        href: enPath('/social-in-china'),
+      },
+    ],
+  },
+  find: {
+    kind: 'image',
+    label: t('nav.feature.compass.label'),
+    title: t('nav.feature.compass.title'),
+    line: t('nav.feature.compass.line'),
+    href: enPath('/compass'),
+    cta: t('nav.feature.compass.cta'),
+    src: '/Images/compass/compass-hero.png',
+    alt: t('nav.feature.compass.alt'),
+  },
+  learn: {
+    kind: 'image',
+    label: t('nav.feature.learn.label'),
+    title: t('nav.feature.learn.title'),
+    line: t('nav.feature.learn.line'),
+    href: lp('/learn-china/masterclass'),
+    cta: t('nav.feature.learn.cta'),
+    src: '/Images/masterclass.jpg',
+    alt: t('nav.feature.learn.alt'),
+  },
+};
+
+interface NavSection {
+  key: string;
+  label: string;
+  href: string;
+  title: string;
+  intro: string;
+  cta: { label: string; href: string } | null;
+  items: NavItem[];
+}
+
+const sections: NavSection[] = [
   {
-    key: 'enter',
-    label: t('nav.section.enter'),
-    href: lp('/enter-china'),
-    intro: t('nav.enter.intro'),
-    items: enterChina,
+    key: 'sell',
+    label: t('nav.section.sell'),
+    href: lp('/grow-in-china'),
+    title: t('nav.sell.title'),
+    intro: t('nav.sell.intro'),
+    cta: { label: t('nav.cta.sell'), href: lp('/grow-in-china') },
+    items: sellInChina,
   },
   {
-    key: 'grow',
-    label: t('nav.section.grow'),
-    href: lp('/grow-in-china'),
-    intro: t('nav.grow.intro'),
-    items: growChina,
+    key: 'web',
+    label: t('nav.section.web'),
+    href: enPath('/build-in-china'),
+    title: t('nav.web.title'),
+    intro: t('nav.web.intro'),
+    cta: null,
+    items: websiteAndSocial,
+  },
+  {
+    key: 'find',
+    label: t('nav.section.find'),
+    href: enPath('/compass'),
+    title: t('nav.find.title'),
+    intro: t('nav.find.intro'),
+    cta: null,
+    items: findPartner,
   },
   {
     key: 'learn',
     label: t('nav.section.learn'),
     href: lp('/learn-china'),
+    title: t('nav.learn.title'),
     intro: t('nav.learn.intro'),
+    cta: { label: t('nav.cta.learn'), href: lp('/learn-china') },
     items: learnChina,
   },
 ];
 
-// Country flags used by the language switcher. USA stands in for English;
-// the other locales use their national flag. Inline SVG keeps the asset
-// fast, China-safe (no external CDN), and crisp at any size.
+/**
+ * Which stop the rail marker rests on when the page loads. Matched on the
+ * canonical English path so it works identically in every locale.
+ */
+const here = localizePath(Astro.url.pathname, 'en');
+const sectionRoots: Record<string, string[]> = {
+  sell: ['/grow-in-china', '/enter-china'],
+  web: ['/build-in-china', '/social-in-china'],
+  find: ['/compass'],
+  learn: ['/learn-china', '/insights'],
+};
+const activeKey =
+  Object.keys(sectionRoots).find((k) => sectionRoots[k].some((r) => here === r || here.startsWith(r + '/'))) ??
+  (here === '/work' || here.startsWith('/work/') ? 'work' : null);
+
+// Country flags for the language switcher. Inline SVG keeps the asset fast,
+// China-safe (no external CDN) and crisp at any size.
 const flags: Record<Locale, string> = {
   en: `<svg viewBox="0 0 7410 3900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="7410" height="3900" fill="#B22234"/><g fill="#FFFFFF"><rect y="300" width="7410" height="300"/><rect y="900" width="7410" height="300"/><rect y="1500" width="7410" height="300"/><rect y="2100" width="7410" height="300"/><rect y="2700" width="7410" height="300"/><rect y="3300" width="7410" height="300"/></g><rect width="2964" height="2100" fill="#3C3B6E"/></svg>`,
   fr: `<svg viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="1" height="2" fill="#002395"/><rect x="1" width="1" height="2" fill="#FFFFFF"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg>`,
@@ -168,8 +310,11 @@ const flags: Record<Locale, string> = {
   es: `<svg viewBox="0 0 6 4" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="6" height="4" fill="#AA151B"/><rect y="1" width="6" height="2" fill="#F1BF00"/></svg>`,
 };
 
-// Build a sibling URL for each available locale, used by the language switcher.
-const otherLocales = (locales as readonly Locale[]).filter((l) => l !== locale);
+// WO-2.3: the locale set is per route. Every page keeps EN, FR, DE, ES; only
+// the routes in route-locales.ts differ. This is what keeps 中文 off the
+// homepage and off every service page.
+const offered = localesForPath(Astro.url.pathname);
+const otherLocales = (offered as readonly Locale[]).filter((l) => l !== locale);
 const switcherCurrent = {
   code: locale,
   label: localeLabels[locale],
@@ -186,262 +331,432 @@ const switcherOthers = otherLocales.map((l) => ({
 }));
 ---
 
-<header class="nav" id="site-nav">
-  <div class="container nav__inner">
-    <a href={lp('/')} class="nav__logo" aria-label={t('footer.aria.brand')}>
-      <img
-        class="nav__logo-img nav__logo-img--default"
-        src="/Images/thechinapath-horizontal.png"
-        alt="TheChinaPath"
-        width="440"
-        height="189"
-      />
-      <img
-        class="nav__logo-img nav__logo-img--light"
-        src="/Images/thechinapath-horizontal-light.png"
-        alt=""
-        aria-hidden="true"
-        width="440"
-        height="189"
-      />
-    </a>
+<div class="nav-progress" aria-hidden="true"><span data-progress></span></div>
 
-    <nav class="nav__primary" aria-label={t('nav.aria.primary')}>
-      <ul class="nav__links">
-        {
-          sections.map((section) => (
-            <li class="nav__item nav__item--mega">
-              <a href={section.href} class="nav__link" aria-haspopup="true">
-                {section.label}
-              </a>
-              <div class="mega" role="menu" aria-label={section.label}>
-                <div class="container mega__inner">
-                  <div class="mega__head">
-                    <span class="mega__eyebrow">{section.label}</span>
-                    <p class="mega__intro">{section.intro}</p>
-                    <a href={section.href} class="btn btn--ghost mega__cta">
-                      {t('nav.allServices', { section: section.label })}
-                    </a>
-                  </div>
-                  <div
-                    class={`mega__grid ${section.key === 'grow' ? 'mega__grid--grow' : section.items.length > 3 ? 'mega__grid--6' : 'mega__grid--3'}`}
-                  >
-                    {section.items.map((item) => (
-                      <a href={item.href} class="mega-item">
-                        <span class="mega-item__icon" set:html={item.svg} />
-                        <span class="mega-item__body">
-                          <span class="mega-item__title">{item.label}</span>
-                          <span class="mega-item__desc">{item.desc}</span>
-                        </span>
-                      </a>
-                    ))}
-                    {section.key === 'enter' && (
-                      <a
-                        href={enterChinaFeature.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="mega-item mega-item--feature"
-                        data-spotlight
-                        aria-label={t('nav.opensInNewTab', {
-                          name: enterChinaFeature.label,
-                          desc: enterChinaFeature.desc,
-                        })}
-                      >
-                        <span class="mega-feature__logobox">
-                          <img
-                            src={enterChinaFeature.logo}
-                            alt={enterChinaFeature.label}
-                            loading="lazy"
-                            width="320"
-                            height="80"
-                          />
-                        </span>
-                        <span class="mega-item__desc mega-feature__desc">
-                          {enterChinaFeature.desc}
-                        </span>
-                      </a>
-                    )}
-                    {section.key === 'grow' && (
-                      <a
-                        href={growChinaFeature.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="mega-item mega-item--feature mega-item--feature-cwf"
-                        data-spotlight
-                        aria-label={t('nav.opensInNewTab', {
-                          name: growChinaFeature.label,
-                          desc: growChinaFeature.desc,
-                        })}
-                      >
-                        <span class="mega-feature__logobox">
-                          <img
-                            src={growChinaFeature.logo}
-                            alt={growChinaFeature.label}
-                            loading="lazy"
-                            width="320"
-                            height="80"
-                          />
-                        </span>
-                        <span class="mega-item__desc mega-feature__desc">
-                          {growChinaFeature.desc}
-                        </span>
-                      </a>
-                    )}
-                    {section.key === 'grow' && (
-                      <a
-                        href={growChinaFeatureHub.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="mega-item mega-item--feature mega-item--feature-hub"
-                        data-spotlight
-                        aria-label={t('nav.opensInNewTab', {
-                          name: growChinaFeatureHub.label,
-                          desc: growChinaFeatureHub.desc,
-                        })}
-                      >
-                        <span class="mega-feature__logobox">
-                          <img
-                            src={growChinaFeatureHub.logo}
-                            alt={growChinaFeatureHub.label}
-                            loading="lazy"
-                            width="320"
-                            height="80"
-                          />
-                        </span>
-                        <span class="mega-item__desc mega-feature__desc">
-                          {growChinaFeatureHub.desc}
-                        </span>
-                      </a>
-                    )}
+<header class="nav" id="site-nav" data-nav>
+  <div class="nav__bar">
+    <div class="container nav__inner">
+      <a href={lp('/')} class="nav__logo" aria-label={t('footer.aria.brand')}>
+        <img
+          class="nav__logo-img"
+          src="/Images/thechinapath-horizontal.png"
+          alt="TheChinaPath"
+          width="440"
+          height="189"
+        />
+      </a>
+
+      <nav class="nav__primary" aria-label={t('nav.aria.primary')}>
+        <ul class="nav__links" data-rail-scope>
+          {
+            sections.map((section) => (
+              <li
+                class="nav__item"
+                data-mega={section.key}
+                data-active={activeKey === section.key ? 'true' : undefined}
+              >
+                <a
+                  href={section.href}
+                  class="nav__link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls={`mega-${section.key}`}
+                >
+                  <span>{section.label}</span>
+                  <svg class="nav__chev" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="m7 10 5 5 5-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+
+                <div class="mega" id={`mega-${section.key}`} data-panel>
+                  <div class="mega__sheet">
+                    <div class="container mega__grid">
+                      {/* Zone one: the spine the rail drops into */}
+                      <div class="mega__spine">
+                        <span class="mega__eyebrow">{section.label}</span>
+                        <p class="mega__title">{section.title}</p>
+                        <p class="mega__intro">{section.intro}</p>
+                        {section.cta && (
+                          <a href={section.cta.href} class="mega__cta">
+                            {section.cta.label}
+                          </a>
+                        )}
+                      </div>
+
+                      {/* Zone two: the rows */}
+                      <ul class="mega__rows">
+                        {section.items.map((item, i) => (
+                          <li style={`--i:${i}`}>
+                            <a
+                              href={item.href}
+                              class="mega-row"
+                              target={item.external ? '_blank' : undefined}
+                              rel={item.external ? 'noopener noreferrer' : undefined}
+                              aria-label={
+                                item.external
+                                  ? t('nav.opensInNewTab', { name: item.label, desc: item.desc })
+                                  : undefined
+                              }
+                            >
+                              <span class="mega-row__icon" set:html={item.svg} />
+                              <span class="mega-row__body">
+                                <span class="mega-row__title">
+                                  {item.label}
+                                  {item.external && (
+                                    <svg class="mega-row__ext" viewBox="0 0 24 24" aria-hidden="true">
+                                      <path
+                                        d="M7 17 17 7M9 7h8v8"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  )}
+                                </span>
+                                <span class="mega-row__desc">{item.desc}</span>
+                              </span>
+                              <span class="mega-row__go" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                  <path
+                                    d="M5 12h13M12 5l7 7-7 7"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+
+                      {/* Zone three: show, do not tell */}
+                      <div class="mega__feature" data-spotlight>
+                        {features[section.key]?.kind === 'logos' && (
+                          <div class="feat feat--logos">
+                            <span class="feat__label">{(features[section.key] as any).label}</span>
+                            <div class="feat__logos">
+                              {(features[section.key] as any).logos.map((l: any) => (
+                                <span class="feat__logo">
+                                  <img src={l.src} alt={l.alt} loading="lazy" width="120" height="40" />
+                                </span>
+                              ))}
+                            </div>
+                            <p class="feat__note">{(features[section.key] as any).note}</p>
+                          </div>
+                        )}
+
+                        {features[section.key]?.kind === 'partners' && (
+                          <div class="feat feat--partners">
+                            <span class="feat__label">{(features[section.key] as any).label}</span>
+                            {(features[section.key] as any).cards.map((c: any) => (
+                              <a href={c.href} class="feat-partner">
+                                <span class="feat-partner__logo">
+                                  <img src={c.src} alt={c.alt} loading="lazy" width="200" height="60" />
+                                </span>
+                                <span class="feat-partner__line">{c.line}</span>
+                              </a>
+                            ))}
+                          </div>
+                        )}
+
+                        {features[section.key]?.kind === 'image' && (
+                          <a href={(features[section.key] as any).href} class="feat feat--image">
+                            <span class="feat__media">
+                              <img
+                                src={(features[section.key] as any).src}
+                                alt={(features[section.key] as any).alt}
+                                loading="lazy"
+                                width="640"
+                                height="420"
+                              />
+                            </span>
+                            <span class="feat__label feat__label--on-media">
+                              {(features[section.key] as any).label}
+                            </span>
+                            <span class="feat__body">
+                              <span class="feat__title">{(features[section.key] as any).title}</span>
+                              <span class="feat__note">{(features[section.key] as any).line}</span>
+                              <span class="feat__cta">{(features[section.key] as any).cta}</span>
+                            </span>
+                          </a>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-          ))
-        }
-
-        <li class="nav__item">
-          <a href={lp('/work')} class="nav__link">{t('nav.work')}</a>
-        </li>
-        <li class="nav__item">
-          <a href={lp('/about')} class="nav__link">{t('nav.about')}</a>
-        </li>
-      </ul>
-      <div class="nav__drawer-cta">
-        <a href={lp('/tools')} class="btn btn--primary">{t('nav.calculator')}</a>
-        <a href={lp('/contact')} class="btn btn--primary">{t('nav.contact')}</a>
-      </div>
-    </nav>
-
-    <div class="nav__right">
-      <div class="nav__lang" data-lang-switch>
-        <button
-          class="nav__lang-trigger"
-          type="button"
-          aria-haspopup="listbox"
-          aria-expanded="false"
-          aria-label={t('lang.switch.aria')}
-        >
-          <span class="nav__lang-flag" set:html={switcherCurrent.flag} />
-          <span class="nav__lang-current">{switcherCurrent.label}</span>
-          <svg
-            class="nav__lang-caret"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </button>
-        <ul class="nav__lang-menu" role="listbox" aria-label={t('lang.switch.aria')}>
-          <li role="option" aria-selected="true">
-            <a
-              class="nav__lang-option is-current"
-              href={switcherCurrent.href}
-              hreflang={switcherCurrent.code}
-            >
-              <span class="nav__lang-flag" set:html={switcherCurrent.flag} />
-              <span class="nav__lang-option-code">{switcherCurrent.label}</span>
-              <span class="nav__lang-option-name">{switcherCurrent.name}</span>
-            </a>
-          </li>
-          {
-            switcherOthers.map((opt) => (
-              <li role="option" aria-selected="false">
-                <a class="nav__lang-option" href={opt.href} hreflang={opt.code}>
-                  <span class="nav__lang-flag" set:html={opt.flag} />
-                  <span class="nav__lang-option-code">{opt.label}</span>
-                  <span class="nav__lang-option-name">{opt.name}</span>
-                </a>
               </li>
             ))
           }
+
+          <li class="nav__item" data-active={activeKey === 'work' ? 'true' : undefined}>
+            <a href={lp('/work')} class="nav__link"><span>{t('nav.work')}</span></a>
+          </li>
+
+          <span class="nav__rail" data-rail aria-hidden="true"></span>
         </ul>
+
+        <div class="nav__drawer-cta">
+          <a href={lp('/tools')} class="btn btn--secondary">{t('nav.calculator')}</a>
+          <a href={lp('/contact')} class="btn btn--primary">{t('nav.talkToUs')}</a>
+        </div>
+      </nav>
+
+      <div class="nav__right">
+        <div class="nav__lang" data-lang-switch>
+          <button
+            class="nav__lang-trigger"
+            type="button"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            aria-label={t('lang.switch.aria')}
+          >
+            <span class="nav__lang-flag" set:html={switcherCurrent.flag} />
+            <span class="nav__lang-current">{switcherCurrent.label}</span>
+            <svg class="nav__chev" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="m7 10 5 5 5-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <ul class="nav__lang-menu" role="listbox" aria-label={t('lang.switch.aria')}>
+            <li role="option" aria-selected="true">
+              <a
+                class="nav__lang-option is-current"
+                href={switcherCurrent.href}
+                hreflang={switcherCurrent.code}
+              >
+                <span class="nav__lang-flag" set:html={switcherCurrent.flag} />
+                <span class="nav__lang-option-code">{switcherCurrent.label}</span>
+                <span class="nav__lang-option-name">{switcherCurrent.name}</span>
+              </a>
+            </li>
+            {
+              switcherOthers.map((opt) => (
+                <li role="option" aria-selected="false">
+                  <a class="nav__lang-option" href={opt.href} hreflang={opt.code}>
+                    <span class="nav__lang-flag" set:html={opt.flag} />
+                    <span class="nav__lang-option-code">{opt.label}</span>
+                    <span class="nav__lang-option-name">{opt.name}</span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+
+        <a href={lp('/tools')} class="btn btn--secondary btn--sm nav__calc">{t('nav.calculator')}</a>
+        <a href={lp('/contact')} class="btn btn--primary btn--sm nav__contact">{t('nav.talkToUs')}</a>
+
+        <button class="nav__burger" type="button" aria-label={t('nav.menu')} aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <a href={lp('/tools')} class="btn btn--primary btn--sm nav__calc">{t('nav.calculator')}</a>
-      <a href={lp('/contact')} class="btn btn--primary btn--sm nav__contact">{t('nav.contact')}</a>
-      <button class="nav__burger" type="button" aria-label={t('nav.menu')} aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </div>
+
+  <div class="nav__scrim" data-scrim aria-hidden="true"></div>
 </header>
 
 <script is:inline>
   (function () {
     const nav = document.getElementById('site-nav');
-    const onScroll = () => nav.classList.toggle('nav--scrolled', window.scrollY > 4);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
+    if (!nav) return;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const desktop = window.matchMedia('(min-width: 1181px)');
 
+    /* ---------- scroll: progress hairline, condense, hide on the way down --- */
+    const progress = document.querySelector('[data-progress]');
+    let lastY = window.scrollY;
+    let ticking = false;
+
+    function onScroll() {
+      const y = window.scrollY;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      if (progress) progress.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
+
+      nav.classList.toggle('nav--scrolled', y > 8);
+      // Panels are fixed, so they need the bar's live bottom edge.
+      const bar = nav.querySelector('.nav__bar');
+      if (bar) nav.style.setProperty('--nav-bottom', bar.getBoundingClientRect().bottom + 'px');
+
+      // Only retreat once well past the fold, and never while a panel is open
+      // or the drawer is out.
+      const busy = nav.classList.contains('nav--mega') || nav.classList.contains('nav--open');
+      if (!busy && y > 420 && y > lastY + 6) nav.classList.add('nav--tucked');
+      else if (y < lastY - 6 || y < 200) nav.classList.remove('nav--tucked');
+      lastY = y;
+      ticking = false;
+    }
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(onScroll);
+        }
+      },
+      { passive: true },
+    );
+    onScroll();
+
+    /* ---------- the rail marker ------------------------------------------- */
+    const scope = nav.querySelector('[data-rail-scope]');
+    const rail = nav.querySelector('[data-rail]');
+    const items = Array.from(nav.querySelectorAll('.nav__item'));
+    const home = items.find((i) => i.dataset.active === 'true') || null;
+
+    function moveRail(el) {
+      if (!rail || !scope || !el) return;
+      const a = el.querySelector('.nav__link');
+      if (!a) return;
+      const r = a.getBoundingClientRect();
+      const s = scope.getBoundingClientRect();
+      rail.style.setProperty('--rail-x', r.left - s.left + 'px');
+      rail.style.setProperty('--rail-w', r.width + 'px');
+      rail.classList.add('is-on');
+    }
+    function restRail() {
+      if (home) moveRail(home);
+      else if (rail) rail.classList.remove('is-on');
+    }
+    items.forEach((it) => {
+      it.addEventListener('pointerenter', () => desktop.matches && moveRail(it));
+      it.addEventListener('focusin', () => desktop.matches && moveRail(it));
+    });
+    scope?.addEventListener('pointerleave', () => desktop.matches && restRail());
+    window.addEventListener('resize', () => {
+      restRail();
+      onScroll();
+    });
+    nav.querySelector('.nav__bar')?.addEventListener('transitionend', onScroll);
+    restRail();
+
+    /* ---------- mega panels: open on intent, close on leave ---------------- */
+    let openTimer = null;
+    let closeTimer = null;
+
+    function openPanel(li) {
+      clearTimeout(closeTimer);
+      items.forEach((i) => {
+        if (i !== li) {
+          i.classList.remove('is-open');
+          i.querySelector('.nav__link')?.setAttribute('aria-expanded', 'false');
+        }
+      });
+      li.classList.add('is-open');
+      li.querySelector('.nav__link')?.setAttribute('aria-expanded', 'true');
+      nav.classList.add('nav--mega');
+    }
+    function closePanels() {
+      items.forEach((i) => {
+        i.classList.remove('is-open');
+        i.querySelector('.nav__link')?.setAttribute('aria-expanded', 'false');
+      });
+      nav.classList.remove('nav--mega');
+    }
+
+    items.forEach((li) => {
+      if (!li.dataset.mega) return;
+      li.addEventListener('pointerenter', () => {
+        if (!desktop.matches) return;
+        clearTimeout(closeTimer);
+        // A short delay so a cursor crossing the row on its way elsewhere does
+        // not flash three panels open behind it.
+        openTimer = setTimeout(() => openPanel(li), reduce ? 0 : 90);
+      });
+      li.addEventListener('pointerleave', () => {
+        if (!desktop.matches) return;
+        clearTimeout(openTimer);
+        closeTimer = setTimeout(closePanels, 140);
+      });
+      li.addEventListener('focusin', () => desktop.matches && openPanel(li));
+    });
+
+    nav.addEventListener('focusout', (e) => {
+      if (desktop.matches && !nav.contains(e.relatedTarget)) closePanels();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      closePanels();
+      closeDrawer();
+      restRail();
+    });
+
+    /* ---------- drawer ----------------------------------------------------- */
     const burger = nav.querySelector('.nav__burger');
-    const closeDrawer = () => {
+    const scrim = nav.querySelector('[data-scrim]');
+
+    function closeDrawer() {
       nav.classList.remove('nav--open');
       burger?.setAttribute('aria-expanded', 'false');
-    };
+      document.documentElement.style.removeProperty('overflow');
+    }
     burger?.addEventListener('click', () => {
       const open = nav.classList.toggle('nav--open');
       burger.setAttribute('aria-expanded', String(open));
+      document.documentElement.style.overflow = open ? 'hidden' : '';
     });
-    // Close drawer when a nav link is tapped
-    nav.querySelectorAll('.nav__primary a').forEach((a) => {
-      a.addEventListener('click', closeDrawer);
+    scrim?.addEventListener('click', closeDrawer);
+    nav.querySelectorAll('.nav__primary a').forEach((a) => a.addEventListener('click', closeDrawer));
+
+    // In the drawer each group is a disclosure rather than a hover panel.
+    nav.querySelectorAll('.nav__item[data-mega] > .nav__link').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        if (desktop.matches) return;
+        e.preventDefault();
+        e.stopPropagation();
+        const li = link.parentElement;
+        const wasOpen = li.classList.contains('is-open');
+        items.forEach((i) => i.classList.remove('is-open'));
+        if (!wasOpen) {
+          li.classList.add('is-open');
+          link.setAttribute('aria-expanded', 'true');
+        } else {
+          link.setAttribute('aria-expanded', 'false');
+        }
+      });
     });
-    // Close on Escape
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && nav.classList.contains('nav--open')) closeDrawer();
-    });
-    // Close the drawer once the viewport grows past the breakpoint where the
-    // inline desktop nav takes over. Every locale switches at the same width
-    // (1181px): below it the CTA cluster crowds the row, so the burger stays.
-    const mq = window.matchMedia('(min-width: 1181px)');
+
     const onMq = (e) => {
       if (e.matches) closeDrawer();
+      else closePanels();
+      restRail();
     };
-    if (mq.addEventListener) mq.addEventListener('change', onMq);
-    else mq.addListener(onMq);
+    if (desktop.addEventListener) desktop.addEventListener('change', onMq);
+    else desktop.addListener(onMq);
 
-    nav.querySelectorAll('[data-spotlight]').forEach((el) => {
-      const onMove = (e) => {
-        const rect = el.getBoundingClientRect();
-        const x = ((e.clientX - rect.left) / rect.width) * 100;
-        const y = ((e.clientY - rect.top) / rect.height) * 100;
-        el.style.setProperty('--mx', x + '%');
-        el.style.setProperty('--my', y + '%');
-      };
-      const onLeave = () => {
-        el.style.setProperty('--mx', '50%');
-        el.style.setProperty('--my', '50%');
-      };
-      el.addEventListener('pointermove', onMove);
-      el.addEventListener('pointerleave', onLeave);
-    });
+    /* ---------- pointer spotlight on the feature card ---------------------- */
+    if (!reduce) {
+      nav.querySelectorAll('[data-spotlight]').forEach((el) => {
+        el.addEventListener('pointermove', (e) => {
+          const r = el.getBoundingClientRect();
+          el.style.setProperty('--mx', ((e.clientX - r.left) / r.width) * 100 + '%');
+          el.style.setProperty('--my', ((e.clientY - r.top) / r.height) * 100 + '%');
+        });
+        el.addEventListener('pointerleave', () => {
+          el.style.setProperty('--mx', '50%');
+          el.style.setProperty('--my', '50%');
+        });
+      });
+    }
 
-    // Language switcher: click-to-toggle dropdown, click-away to close.
+    /* ---------- language switcher ------------------------------------------ */
     const lang = nav.querySelector('[data-lang-switch]');
     if (lang) {
       const trigger = lang.querySelector('.nav__lang-trigger');
@@ -457,9 +772,7 @@ const switcherOthers = otherLocales.map((l) => ({
       document.addEventListener('click', (e) => {
         if (!lang.contains(e.target)) close();
       });
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') close();
-      });
+      document.addEventListener('keydown', (e) => e.key === 'Escape' && close());
     }
   })();
 </script>

@@ -1,0 +1,272 @@
+---
+/**
+ * WO-2.1 — /compass/how-it-works
+ * 301 target for compass.bearingbridge.com/en/how-we-use-it.
+ * Also the nav row "How a shortlist is built" under Find a partner.
+ *
+ * The three-step sequence is ported verbatim. Shortlist and longlist shapes,
+ * deliverables and the honesty section come across with the pricing stripped:
+ * the source page had a "one project, one fee" section, and the spec bans any
+ * amount, rate or range. The replacement says how the commercial works without
+ * putting a number on it.
+ */
+import Layout from '../../layouts/Layout.astro';
+import { STEPS, NO_COMMISSION } from '../../data/compass';
+
+const phases = [
+  {
+    title: 'The brief',
+    body: "A video call to kick things off, half an hour to an hour. We ask about your category, your stage, your channel priorities, your timeline and the constraints you're already working around.",
+  },
+  {
+    title: 'The database',
+    body: 'We pull the names that match the brief, then check each one against where the partner actually is right now. A profile written eighteen months ago can already be out of date. Things move quickly here.',
+  },
+  {
+    title: 'The delivery',
+    body: 'A document covering the partner list, the profiles and our read on each one. Plus a working session to walk through it together, page by page.',
+  },
+];
+
+const options = [
+  {
+    label: 'Shortlist',
+    tagline: 'Three to five names',
+    body: 'Briefed in detail and ready to meet. For brands moving fast, with a decision pencilled in for the next month or two.',
+  },
+  {
+    label: 'Longlist',
+    tagline: 'Fifteen to twenty names',
+    body: 'A wider view across categories, channels or regions, with a structured side-by-side. For brands earlier in the process, still working out what distribution should actually look like.',
+  },
+];
+
+const deliverables = [
+  {
+    name: 'A profile per partner',
+    body: "Real categories, channels, footprint, commercial terms, brands they've worked with and our view on each. Enough to walk into a meeting knowing exactly what to ask and what to watch for.",
+  },
+  {
+    name: 'A working session',
+    body: "We sit down with you and talk through the whole thing. Why this name. Why not that one. Where we'd push in negotiation. The list doesn't count for much if you don't trust the thinking behind it.",
+  },
+  {
+    name: 'Warm introductions',
+    body: 'If you want them, we make them. Most of these partners already know us, so you tend to get the A-team in the room rather than the pitch team.',
+  },
+];
+
+const timing = [
+  {
+    label: 'Pre-launch',
+    body: "Before you've signed anything. The cleanest case of all. The database has room to earn its keep.",
+  },
+  {
+    label: 'Replacing a partner',
+    body: "A distributor sitting on inventory. A TP that can't shift the category. We know who fits and who doesn't.",
+  },
+  {
+    label: 'After a wrong signing',
+    body: 'Some brands only come to us later. Same shortlist work, sharper urgency, far less room to maneuver.',
+  },
+];
+
+const title = 'How a China partner shortlist gets built | Compass | TheChinaPath';
+const description =
+  'You brief us. We work the database and come back in two or three weeks with a shortlist of China distributors and platform partners actually worth meeting.';
+---
+
+<Layout title={title} description={description}>
+  <section class="section section--dark cmp-hero">
+    <div class="container">
+      <span class="eyebrow">How a shortlist is built</span>
+      <h1 class="h1">A serious starting point, in weeks rather than months.</h1>
+      <p class="lead cmp-hero__lead">
+        You brief us. We work the database and come back quickly with a shortlist or a longlist of
+        partners worth meeting. Names that fit your category, your stage and what you are really
+        trying to do in China.
+      </p>
+      <p class="cmp-hero__body">
+        We cannot promise any partnership works out. No partner search really can. What we can
+        promise is that you will start from a far stronger list than most brands ever assemble on
+        their own.
+      </p>
+      <div class="cmp-hero__cta">
+        <a href="/compass/shortlist" class="btn btn--primary">Book a 30-minute call</a>
+        <a href="#engagement" class="btn btn--ghost">See the process</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The three steps, ported -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">{STEPS.eyebrow}</span>
+        <h2 class="h2">{STEPS.title}</h2>
+      </div>
+      <div class="cmp-steps">
+        {
+          STEPS.items.map((step) => (
+            <div class="cmp-step">
+              <p class="cmp-step__label">{step.label}</p>
+              <p class="cmp-step__body">{step.body}</p>
+            </div>
+          ))
+        }
+      </div>
+      <blockquote class="cmp-quote">{STEPS.quote}</blockquote>
+    </div>
+  </section>
+
+  <!-- How the engagement runs -->
+  <section class="section section--alt" id="engagement">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">How the engagement works</span>
+        <h2 class="h2">From first call to shortlist.</h2>
+        <p class="lead">
+          Three steps. Two or three weeks. One document and a working session at the end. Quicker
+          when the brief is tight, a little longer when the scope is broad.
+        </p>
+      </div>
+      <div class="cmp-steps">
+        {
+          phases.map((p) => (
+            <div class="cmp-step">
+              <p class="cmp-step__label">{p.title}</p>
+              <p class="cmp-step__body">{p.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Shortlist or longlist -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Shortlist, longlist or both</span>
+        <h2 class="h2">Depending on where you are.</h2>
+      </div>
+      <div class="grid grid-2">
+        {
+          options.map((o) => (
+            <article class="card">
+              <h3 class="card__title">{o.label}</h3>
+              <p class="hiw-tagline">{o.tagline}</p>
+              <p>{o.body}</p>
+            </article>
+          ))
+        }
+      </div>
+      <p class="hiw-note">A few brands want both. The brief is what decides.</p>
+    </div>
+  </section>
+
+  <!-- What you get -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">What you get</span>
+        <h2 class="h2">A document, a conversation, and warm introductions if you want them.</h2>
+      </div>
+      <div class="grid grid-3">
+        {
+          deliverables.map((d) => (
+            <article class="card">
+              <h3 class="card__title">{d.name}</h3>
+              <p>{d.body}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Honest about the limits -->
+  <section class="section">
+    <div class="container cmp-narrow">
+      <span class="eyebrow">What we can and cannot tell you</span>
+      <h2 class="h2">Honest about the limits.</h2>
+      <p>
+        What we can do: tell you who fits, based on what we have actually seen and worked on
+        ourselves, and make sure the names on your list have earned their place there.
+      </p>
+      <p>
+        What we cannot: tell you how the partnership will look two years in. That depends on the
+        deal you negotiate, the team they put on your account and a lot of other things that happen
+        after the contract is signed.
+      </p>
+      <p>
+        Worth saying anyway. Most China entries that go sideways go sideways at the choice of
+        partner, not at the execution.
+      </p>
+    </div>
+  </section>
+
+  <!-- Commercials, no numbers -->
+  <section class="section section--alt">
+    <div class="container cmp-narrow">
+      <span class="eyebrow">How the engagement is priced</span>
+      <h2 class="h2">One project, one fee.</h2>
+      <p>
+        A single project, not a retainer. Scope and fee are both pinned down before any work starts,
+        and the fee is quoted after the first call once the brief is clear. Three shapes: shortlist
+        only, longlist only, or both with market mapping on top.
+      </p>
+      <p>
+        <strong>{NO_COMMISSION}</strong> The distributor does not pay us a referral fee. That is
+        deliberate and it is written into the contract, because a commission would flip our
+        incentive toward closing a deal instead of finding the right partner.
+      </p>
+      <p>
+        The first call is really about fit. By the end of it you will know whether this is the right
+        kind of help for you, and we will know whether we can actually move the needle.
+      </p>
+    </div>
+  </section>
+
+  <!-- When to come to us -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">When to come to us</span>
+        <h2 class="h2">Earlier is better.</h2>
+      </div>
+      <div class="grid grid-3">
+        {
+          timing.map((t) => (
+            <article class="card">
+              <h3 class="card__title">{t.label}</h3>
+              <p>{t.body}</p>
+            </article>
+          ))
+        }
+      </div>
+      <div class="cmp-next">
+        <a href="/compass/shortlist" class="btn btn--primary">Book a 30-minute call</a>
+        <a href="/compass/what-is-inside" class="btn btn--ghost">Back to: what is inside</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cmp-hero .h1 {
+    max-width: 18ch;
+  }
+  .hiw-tagline {
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bbg-blue);
+    margin-bottom: var(--space-3);
+  }
+  .hiw-note {
+    margin-top: var(--space-5);
+    color: var(--bbg-text-muted);
+  }
+</style>

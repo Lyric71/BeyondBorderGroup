@@ -1,0 +1,155 @@
+---
+/**
+ * WO-2.1 — /compass/what-is-inside
+ * 301 target for compass.bearingbridge.com/en/what-you-can-find.
+ *
+ * The partner types, the nine profile field groups and the category coverage
+ * list are ported. The "why we do not sell it as a product" framing is written
+ * here in TheChinaPath's voice, and it does the work the spec's guardrail asks
+ * for: Compass is how a shortlist gets built, not a subscription.
+ */
+import Layout from '../../layouts/Layout.astro';
+import {
+  PARTNER_TYPES,
+  PROFILE_FIELDS,
+  CATEGORIES,
+  CATEGORIES_CLOSING,
+  APP_URL,
+} from '../../data/compass';
+
+const title = 'What is inside Compass | TheChinaPath';
+const description =
+  'Profiles of vetted China distributors, Tmall and Douyin Partners, importers and channel specialists. Real categories, real volume, real commercial terms, and our read on each one.';
+---
+
+<Layout title={title} description={description}>
+  <section class="section section--dark cmp-hero">
+    <div class="container">
+      <span class="eyebrow">What is inside</span>
+      <h1 class="h1">Not names and email addresses.</h1>
+      <p class="lead cmp-hero__lead">
+        Distributors, Tmall Partners, Douyin Partners, importers and channel specialists across
+        China. Each one gets a structured profile: the real categories they run, real volume,
+        commercial terms, operational capacity and our team's read on whether to recommend them,
+        and for what kind of brand.
+      </p>
+      <p class="cmp-hero__body">
+        It is the kind of detail that actually decides whether a partner is the right fit, and it is
+        the kind that never makes it into a pitch deck.
+      </p>
+      <div class="cmp-hero__cta">
+        <a href="/compass/shortlist" class="btn btn--primary">Talk to us about your shortlist</a>
+        <a href="/compass/how-it-works" class="btn btn--ghost">See how a shortlist is built</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who is in it -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Who is in it</span>
+        <h2 class="h2">Distributors, TPs, importers and channel specialists across China.</h2>
+        <p class="lead">
+          Domestic and cross-border. Online and offline. Niche category specialists in the mix. A
+          name only goes in when we have a real reason to know it.
+        </p>
+      </div>
+      <div class="grid grid-4">
+        {
+          PARTNER_TYPES.map((t) => (
+            <article class="card">
+              <h3 class="card__title">{t.name}</h3>
+              <p>{t.body}</p>
+            </article>
+          ))
+        }
+      </div>
+
+      <div class="wii-coverage">
+        <p class="wii-coverage__label">Categories covered</p>
+        <div class="cmp-pills">
+          {CATEGORIES.map((c) => <span class="cmp-pill">{c}</span>)}
+        </div>
+        <p class="wii-note">{CATEGORIES_CLOSING}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we record -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">What we record</span>
+        <h2 class="h2">The fields that decide whether a partnership fits.</h2>
+        <p class="lead">
+          Nine groups of fields make up every profile. Together they cover the ground a sales deck
+          rarely does, and the last one is the one clients read first.
+        </p>
+      </div>
+      <div class="grid grid-3">
+        {
+          PROFILE_FIELDS.map((f) => (
+            <article class="card">
+              <h3 class="card__title">{f.name}</h3>
+              <p>{f.body}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Why it is not a product -->
+  <section class="section">
+    <div class="container cmp-narrow">
+      <span class="eyebrow">A fair question</span>
+      <h2 class="h2">Why we do not sell you access to it.</h2>
+      <p>
+        People ask, reasonably, whether they can just have a login and browse. The answer is no, and
+        the reason is not commercial. A profile is a judgement, and a judgement without the context
+        behind it is worse than no information at all. "Recommend with caveats" means nothing until
+        somebody tells you what the caveats are and whether they apply to a brand shaped like yours.
+      </p>
+      <p>
+        There is a shelf-life problem too. A profile written eighteen months ago can already be
+        wrong. Partners lose accounts, change categories, get bought, lose the one person who made
+        them good. The work of a shortlist is half retrieval and half re-checking, and the
+        re-checking is the part a subscription cannot do for you.
+      </p>
+      <p>
+        So Compass is not a product with tiers. It is the thing our team works from when you brief
+        us, and what you receive is the output of that work: a short list of partners, a written
+        view on each, and a conversation about why. Partners who already have an account with us
+        sign in at <a href={APP_URL}>compass.thechinapath.com</a>.
+      </p>
+      <div class="cmp-next">
+        <a href="/compass/shortlist" class="btn btn--primary">Brief us on your category</a>
+        <a href="/compass/how-it-works" class="btn btn--ghost">Next: how a shortlist is built</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cmp-hero .h1 {
+    max-width: 18ch;
+  }
+  .wii-coverage {
+    margin-top: var(--space-7);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--bbg-border);
+  }
+  .wii-coverage__label {
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bbg-blue);
+    margin-bottom: var(--space-4);
+  }
+  .wii-note {
+    margin-top: var(--space-4);
+    color: var(--bbg-text-muted);
+  }
+</style>

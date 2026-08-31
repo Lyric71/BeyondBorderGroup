@@ -153,15 +153,10 @@ export function organizationSchema(): SchemaObject {
       availableLanguage: ['English', 'French'],
     },
     sameAs: [
-      'https://www.linkedin.com/company/bearingbridgegroup/',
+      'https://www.linkedin.com/company/thechinapath/',
       'https://cyrildrouin.substack.com',
     ],
     subOrganization: [
-      {
-        '@type': 'Organization',
-        name: 'Compass',
-        url: 'https://compass.bearingbridge.com/en',
-      },
       { '@type': 'Organization', name: 'Hub Studio', url: 'https://hubstudio.ai' },
       { '@type': 'Organization', name: 'ChinaWebFoundry', url: 'https://chinawebfoundry.com' },
       { '@type': 'Organization', name: 'NuvoraStudio', url: 'https://nuvora.studio' },

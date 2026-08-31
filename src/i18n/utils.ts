@@ -47,6 +47,8 @@ export function stripLocale(pathname: string): string {
  */
 const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>> = {
   fr: {
+    '/social-in-china': '/reseaux-sociaux-chinois',
+    '/build-in-china': '/site-web-et-wechat-en-chine',
     '/about': '/qui-nous-sommes',
     '/enter-china': '/entrer-en-chine',
     '/enter-china/market-entry-consulting': '/entrer-en-chine/conseil-en-entree-de-marche',
@@ -78,6 +80,8 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
     '/terms-of-service': '/conditions-d-utilisation',
   },
   de: {
+    '/social-in-china': '/chinesische-social-media',
+    '/build-in-china': '/website-und-wechat-in-china',
     '/about': '/ueber-uns',
     '/enter-china': '/nach-china',
     '/enter-china/market-entry-consulting': '/nach-china/markteintrittsberatung',
@@ -109,6 +113,8 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
     '/terms-of-service': '/nutzungsbedingungen',
   },
   es: {
+    '/social-in-china': '/redes-sociales-chinas',
+    '/build-in-china': '/web-y-wechat-en-china',
     '/about': '/quienes-somos',
     '/enter-china': '/entrar-en-china',
     '/enter-china/market-entry-consulting': '/entrar-en-china/estrategia-de-entrada',

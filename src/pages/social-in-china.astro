@@ -1,0 +1,8 @@
+---
+/** WO-1.3 — /social-in-china. Markup, styles and behaviour live in the shared
+ *  shell; this route only picks the locale's copy. */
+import SocialInChina from '../components/pages/SocialInChina.astro';
+import copy from '../content/pages/social-in-china/en';
+---
+
+<SocialInChina copy={copy} contactHref="/contact" />

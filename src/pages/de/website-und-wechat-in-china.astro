@@ -1,0 +1,8 @@
+---
+/** WO-1.2 — deutsche Fassung von /build-in-china. Markup, Styles und Skript
+ *  liegen in der gemeinsamen Komponente; diese Route liefert nur die Texte. */
+import BuildInChina from '../../components/pages/BuildInChina.astro';
+import copy from '../../content/pages/build-in-china/de';
+---
+
+<BuildInChina copy={copy} contactHref="/de/kontakt" />

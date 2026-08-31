@@ -1,29 +1,47 @@
 ---
 import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
+import { APP_URL } from '../data/compass';
 
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
 const lp = (path: string) => localizePath(path, locale);
 
-const enterChina = [
-  { label: t('nav.enter.marketEntry.label'), href: lp('/enter-china/market-entry-consulting') },
-  { label: t('nav.enter.crossBorder.label'), href: lp('/enter-china/cross-border-setup') },
+/**
+ * WO-1.1 — the footer mirrors the header's five groups.
+ *
+ * Same link policy as the header: rows pointing at English-only pages use the
+ * raw path, because localizePath would send a locale visitor to the locale home
+ * rather than to the page.
+ *
+ * "Who We Are" lives here now, having moved out of the top nav. The Compass
+ * partner page is deliberately kept out of the main nav and reachable from here
+ * and from direct links, and the partner sign-in points straight at the
+ * application subdomain so the old login URL is a single hop, not two.
+ */
+const findPartner = [
+  { label: t('nav.find.compass.label'), href: '/compass' },
+  { label: t('nav.find.shortlist.label'), href: '/compass/how-it-works' },
   { label: t('nav.enter.distribution.label'), href: lp('/enter-china/distribution') },
+  { label: t('nav.enter.marketEntry.label'), href: lp('/enter-china/market-entry-consulting') },
+];
+
+const sellInChina = [
+  { label: t('nav.enter.crossBorder.label'), href: lp('/enter-china/cross-border-setup') },
+  { label: t('nav.sell.tmalljd.label'), href: lp('/grow-in-china/cross-border-ecommerce') },
+  { label: t('nav.grow.social.label'), href: lp('/grow-in-china/social-commerce') },
+  { label: t('nav.sell.campaigns.label'), href: lp('/grow-in-china/campaigns') },
   { label: t('nav.enter.branding.label'), href: lp('/enter-china/branding-localisation') },
 ];
 
-const growChina = [
-  { label: t('nav.grow.ecommerce.label'), href: lp('/grow-in-china/cross-border-ecommerce') },
-  { label: t('nav.grow.social.label'), href: lp('/grow-in-china/social-commerce') },
-  { label: t('nav.grow.campaigns.label'), href: lp('/grow-in-china/campaigns') },
-  { label: t('nav.grow.media.label'), href: lp('/grow-in-china/media') },
-  { label: t('nav.grow.kols.label'), href: lp('/grow-in-china/influencers-kols') },
+const websiteAndSocial = [
+  { label: t('nav.web.website.label'), href: '/build-in-china' },
+  { label: t('nav.web.social.label'), href: '/social-in-china' },
 ];
 
 const learnChina = [
-  { label: t('nav.learn.platforms.label'), href: lp('/learn-china/platforms') },
   { label: t('nav.learn.masterclass.label'), href: lp('/learn-china/masterclass') },
   { label: t('nav.learn.expeditions.label'), href: lp('/learn-china/learning-expeditions') },
+  { label: t('nav.learn.platforms.label'), href: lp('/learn-china/platforms') },
   { label: t('nav.learn.insights.label'), href: lp('/insights') },
 ];
 
@@ -31,10 +49,12 @@ const company = [
   { label: t('nav.about'), href: lp('/about') },
   { label: t('nav.work'), href: lp('/work') },
   { label: t('nav.contact'), href: lp('/contact') },
+  { label: t('footer.partners'), href: '/compass/partners' },
+  { label: t('footer.signin'), href: APP_URL },
 ];
 
 // Sister agencies in the BearingBridge network. `height` tunes each logo's
-// optical weight so the strip reads as one line rather than seven sizes.
+// optical weight so the strip reads as one line rather than four sizes.
 const network = [
   {
     name: 'hubStudio',
@@ -60,33 +80,37 @@ const network = [
     logo: '/Images/AgencyLogos/TheredScroll%20PNG.webp',
     height: 30,
   },
-  {
-    name: 'Compass',
-    href: 'https://compass.bearingbridge.com/en',
-    logo: '/Images/AgencyLogos/Compass%20-%20Horizontal.svg',
-    height: 26,
-  },
-  {
-    name: 'Nuvora Studio',
-    href: 'https://nuvora.studio',
-    logo: '/Images/AgencyLogos/Nuvora%20PNG.webp',
-    height: 28,
-  },
-  {
-    name: 'BearingBridge AI',
-    href: 'https://bearingbridge.ai',
-    logo: '/Images/AgencyLogos/bearingbridge-ai.svg',
-    height: 20,
-  },
 ];
+
+/** Rendered as one loop rather than five near-identical blocks. */
+const columns = [
+  { title: t('footer.col.sell'), items: sellInChina },
+  { title: t('footer.col.web'), items: websiteAndSocial },
+  { title: t('footer.col.find'), items: findPartner },
+  { title: t('footer.col.learn'), items: learnChina },
+  { title: t('footer.col.company'), items: company },
+];
+
+/** Split so each city can carry its own pin, the mark the brand is built on. */
+const cities = t('footer.cities')
+  .split('·')
+  .map((c) => c.trim())
+  .filter(Boolean);
 
 const year = new Date().getFullYear();
 ---
 
-<footer class="footer">
+<footer class="footer" data-footer>
+  <!-- The rail, one last time. It runs the full width and ends the route. -->
+  <div class="footer__rail" aria-hidden="true"></div>
+
+  <!-- The character from the logo, set huge and almost invisible. It is the
+       brand's own glyph rather than an abstract shape. -->
+  <span class="footer__glyph" aria-hidden="true">路</span>
+
   <div class="container">
     <div class="footer__top">
-      <div class="footer__brand">
+      <div class="footer__brand" data-reveal>
         <a href={lp('/')} class="footer__logo" aria-label={t('footer.aria.brand')}>
           <img
             src="/Images/thechinapath-horizontal-light.png"
@@ -96,79 +120,64 @@ const year = new Date().getFullYear();
           />
         </a>
         <p class="footer__pitch">{t('footer.pitch')}</p>
-        <p class="footer__cities">{t('footer.cities')}</p>
-        <div class="footer__social">
-          <a
-            href="https://www.linkedin.com/company/bearingbridgegroup/"
-            target="_blank"
-            rel="noopener"
-            aria-label={t('footer.social.linkedinAria')}
-            class="footer__social-link"
-          >
-            <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                fill="#0A66C2"
-                d="M22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"
-              ></path>
-              <path
-                fill="#FFFFFF"
-                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"
-              ></path>
-            </svg>
-            <span>{t('footer.social.linkedin')}</span>
-          </a>
-        </div>
+
+        <ul class="footer__cities">
+          {
+            cities.map((city) => (
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 22s-7-7-7-13a7 7 0 1 1 14 0c0 6-7 13-7 13z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                  />
+                  <circle cx="12" cy="9" r="2.4" fill="currentColor" />
+                </svg>
+                {city}
+              </li>
+            ))
+          }
+        </ul>
+
+        <a
+          href="https://www.linkedin.com/company/thechinapath/"
+          target="_blank"
+          rel="noopener"
+          aria-label={t('footer.social.linkedinAria')}
+          class="footer__social-link"
+        >
+          <svg class="footer__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="#0A66C2"
+              d="M22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"
+            ></path>
+            <path
+              fill="#FFFFFF"
+              d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"
+            ></path>
+          </svg>
+          <span>{t('footer.social.linkedin')}</span>
+        </a>
       </div>
 
       <div class="footer__nav">
-        <div class="footer__col">
-          <h3>{t('footer.col.enter')}</h3>
-          <ul>
-            {
-              enterChina.map((item) => (
-                <li>
-                  <a href={item.href}>{item.label}</a>
-                </li>
-              ))
-            }
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3>{t('footer.col.grow')}</h3>
-          <ul>
-            {
-              growChina.map((item) => (
-                <li>
-                  <a href={item.href}>{item.label}</a>
-                </li>
-              ))
-            }
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3>{t('footer.col.learn')}</h3>
-          <ul>
-            {
-              learnChina.map((item) => (
-                <li>
-                  <a href={item.href}>{item.label}</a>
-                </li>
-              ))
-            }
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3>{t('footer.col.company')}</h3>
-          <ul>
-            {
-              company.map((item) => (
-                <li>
-                  <a href={item.href}>{item.label}</a>
-                </li>
-              ))
-            }
-          </ul>
-        </div>
+        {
+          columns.map((col, ci) => (
+            <div class="footer__col" data-reveal style={`--d:${ci * 60}ms`}>
+              <h3>{col.title}</h3>
+              <ul>
+                {col.items.map((item) => (
+                  <li>
+                    <a href={item.href}>
+                      <span>{item.label}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
       </div>
     </div>
   </div>
@@ -178,7 +187,7 @@ const year = new Date().getFullYear();
       <p class="footer__network-label">
         {t('footer.network.label')}
         <a
-          href="https://www.bearingbridge.com"
+          href="https://www.bearingbridge.org"
           target="_blank"
           rel="noopener"
           aria-label="BearingBridge"
@@ -198,8 +207,8 @@ const year = new Date().getFullYear();
             <a
               class="footer__network-logo"
               href={agency.href}
-              target="_blank"
-              rel="noopener"
+              target={agency.href.startsWith('http') ? '_blank' : undefined}
+              rel={agency.href.startsWith('http') ? 'noopener' : undefined}
               aria-label={agency.name}
               title={agency.name}
             >
@@ -221,13 +230,40 @@ const year = new Date().getFullYear();
   <div class="container">
     <div class="footer__bottom">
       <p>{t('footer.copyright', { year })}</p>
-      <p>
+      <p class="footer__legal">
         <a href={lp('/terms-of-service')}>{t('footer.legal.terms')}</a>
-        <span aria-hidden="true"> · </span>
+        <span aria-hidden="true">·</span>
         <a href={lp('/privacy-policy')}>{t('footer.legal.privacy')}</a>
-        <span aria-hidden="true"> · </span>
+        <span aria-hidden="true">·</span>
         <a href={lp('/cookie-policy')}>{t('footer.legal.cookie')}</a>
       </p>
     </div>
   </div>
 </footer>
+
+<script is:inline>
+  (function () {
+    var f = document.querySelector('[data-footer]');
+    if (!f) return;
+    var targets = f.querySelectorAll('[data-reveal]');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      targets.forEach(function (el) {
+        el.classList.add('is-in');
+      });
+      return;
+    }
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        });
+      },
+      { rootMargin: '0px 0px -12% 0px', threshold: 0.15 },
+    );
+    targets.forEach(function (el) {
+      io.observe(el);
+    });
+  })();
+</script>

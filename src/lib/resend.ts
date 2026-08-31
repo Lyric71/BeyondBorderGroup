@@ -9,6 +9,18 @@ export interface ContactPayload {
   budget?: string;
   profile?: string;
   message: string;
+  /**
+   * Which form the enquiry came from. Optional so the main contact form is
+   * unchanged; the Compass shortlist brief sets it so the same inbox can tell
+   * a partner-search brief from a general enquiry at a glance.
+   */
+  source?: string;
+  /**
+   * WeChat ID. Optional, and only collected by the Compass partner form:
+   * China-domestic distributors answer on WeChat far more reliably than on
+   * email, so the inbox needs somewhere to put it.
+   */
+  wechat?: string;
 }
 
 const FROM_ADDRESS = 'TheChinaPath <onboarding@resend.dev>';
@@ -20,7 +32,8 @@ export async function sendContactEmail(payload: ContactPayload) {
   if (!apiKey) throw new Error('RESEND_API_KEY is not configured.');
   if (!to) throw new Error('CONTACT_TO_EMAIL is not configured.');
 
-  const { name, email, company, website, services, budget, profile, message } = payload;
+  const { name, email, company, website, services, budget, profile, message, source, wechat } =
+    payload;
   const resend = new Resend(apiKey);
 
   const servicesList = services && services.length > 0 ? services : null;
@@ -47,6 +60,8 @@ export async function sendContactEmail(payload: ContactPayload) {
 						<td style="padding: 10px 0; font-size: 13px; color: #6B6B6B; width: 120px;">Name</td>
 						<td style="padding: 10px 0; font-size: 14px; color: #1A1A1A; font-weight: 600;">${escapeHtml(name)}</td>
 					</tr>
+					${source ? row('Source', escapeHtml(source)) : ''}
+					${wechat ? row('WeChat', escapeHtml(wechat)) : ''}
 					${row('Email', `<a href="mailto:${escapeHtml(email)}" style="color: #C8102E;">${escapeHtml(email)}</a>`)}
 					${row('Company', escapeHtml(company ?? '-'))}
 					${row('Website', website ? `<a href="${escapeHtml(website)}" style="color: #C8102E;">${escapeHtml(website)}</a>` : '-')}
@@ -60,8 +75,10 @@ export async function sendContactEmail(payload: ContactPayload) {
 	`;
 
   const text = [
+    source ? `Source: ${source}` : null,
     `Name: ${name}`,
     `Email: ${email}`,
+    wechat ? `WeChat: ${wechat}` : null,
     `Company: ${company || '-'}`,
     `Website: ${website || '-'}`,
     `Profile: ${profile || '-'}`,
@@ -75,7 +92,7 @@ export async function sendContactEmail(payload: ContactPayload) {
     from: FROM_ADDRESS,
     to,
     replyTo: email,
-    subject: `New enquiry from ${name}${company ? ` - ${company}` : ''}`,
+    subject: `${source ? `[${source}] ` : ''}New enquiry from ${name}${company ? ` - ${company}` : ''}`,
     html,
     text,
   });

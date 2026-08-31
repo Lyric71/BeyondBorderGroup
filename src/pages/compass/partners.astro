@@ -1,0 +1,343 @@
+---
+/**
+ * WO-2.3 — /compass/partners (English)
+ * 301 target for compass.bearingbridge.com/en/become-partner.
+ *
+ * The English half of a two-page EN/ZH cluster. The Chinese page at
+ * /zh/compass/partners is written for a China-domestic distributor, not
+ * translated from this one; this page is for the English-reading operator, the
+ * cross-border agent and the TP with an international desk.
+ *
+ * Indexable, and deliberately absent from the main nav. Reachable from the
+ * footer and from direct links.
+ */
+import PartnerLayout from '../../layouts/PartnerLayout.astro';
+import { CATEGORIES, NO_COMMISSION, APP_URL } from '../../data/compass';
+
+/**
+ * WeChat is the alternative contact path. Email alone underperforms badly with
+ * this audience.
+ *
+ * WECHAT_QR points at an image that still has to be added to the repo. Until it
+ * lands, the block renders the ID on its own and the page is still correct;
+ * drop the PNG at the path below and it appears with no other change.
+ * Run `npm run img:batch public/Images/compass/` after adding it.
+ */
+const WECHAT_ID = 'TheChinaPath';
+const WECHAT_QR: string | null = null; // '/Images/compass/wechat-qr.png'
+
+const title = 'Become a Compass partner | TheChinaPath';
+const description =
+  'Distributors, Tmall and Douyin Partners, importers and offline operators: get listed in Compass and reach the international brands we place in China. No fee, no commission.';
+---
+
+<PartnerLayout title={title} description={description} locale="en" enPath="/compass/partners">
+  <section class="pt-hero">
+    <div class="container">
+      <span class="pt-hero__claim">{NO_COMMISSION}</span>
+      <h1 class="h1">Get in front of the brands, before they pick someone else.</h1>
+      <p class="lead pt-hero__lead">
+        Compass is the database our team works from when an international brand asks who they should
+        sell with in China. If you distribute, operate stores or import for a living, this is how
+        you get onto that list.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container pt-layout">
+      <!-- Content -->
+      <div>
+        <div class="pt-block">
+          <h2 class="h2">What being listed costs you.</h2>
+          <p>
+            Nothing. There is no listing fee, no membership, no paid tier, and no commission on any
+            deal that comes out of an introduction. We bill the brand for the search work. You are
+            never invoiced and you never owe us a referral cut.
+          </p>
+          <p>
+            That is deliberate, and it is the reason the database is worth anything. The moment a
+            partner can pay to move up a list, the list stops being a recommendation and starts
+            being an ad. Brands work that out quickly.
+          </p>
+        </div>
+
+        <div class="pt-block">
+          <h2 class="h2">Who we list.</h2>
+          <p>
+            Distributors across general trade, bonded zones and cross-border eCommerce. Tmall and
+            Douyin Partners running flagship stores, content commerce and livestream. Importers with
+            licences, customs setup and warehousing. Offline operators with real shelf access: KA
+            buyers, regional wholesalers, group-buying operators.
+          </p>
+          <p>
+            The consumer categories we place into most often:
+          </p>
+          <div class="cmp-pills">
+            {CATEGORIES.map((c) => <span class="cmp-pill">{c}</span>)}
+          </div>
+          <p>
+            Mostly B2C, with B2B when the buyer is in China. If your category is not on that list it
+            is worth writing anyway, because the brief that arrives next month decides what we go
+            looking for.
+          </p>
+        </div>
+
+        <div class="pt-block">
+          <h2 class="h2">What happens after you write.</h2>
+          <p>
+            Somebody from the team reads it and comes back. If there is a fit, we set up a call and
+            then, wherever we can, a visit. A profile in Compass is built from a meeting, not from a
+            form, which is the whole point of the thing. Expect questions about the categories you
+            actually run rather than the ones on your website, the channels where you have real
+            volume, your commercial terms, and the brands you have worked with.
+          </p>
+          <p>
+            We do not publish the brands we have placed. Our clients did not sign up to be a
+            reference wall, and a distributor list that doubles as a client list is a fast way to
+            lose both. On a call we can be specific about categories, channels and the kind of
+            mandate that tends to come through.
+          </p>
+          <p>
+            Being listed is not a promise of introductions. It means that when a brief lands in your
+            category, your name is in the room.
+          </p>
+        </div>
+
+        <div class="pt-block">
+          <h2 class="h2">Already a partner?</h2>
+          <p>
+            If you already have an account, sign in at <a href={APP_URL}>compass.thechinapath.com</a>
+            to keep your profile current. A profile written eighteen months ago is usually wrong by
+            now, and out-of-date profiles get passed over.
+          </p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="pt-form-card">
+        <h2 class="pt-form-title">Tell us about your company</h2>
+        <p class="pt-form-note">
+          A senior partner will write back inside one working day, not a form-letter from an intake
+          bot.
+        </p>
+
+        <form class="form" id="partner-form" novalidate>
+          <div class="field">
+            <label class="field__label" for="company"
+              >Company <span aria-hidden="true">*</span></label
+            >
+            <input class="field__input" type="text" id="company" name="company" required />
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="name"
+              >Your name <span aria-hidden="true">*</span></label
+            >
+            <input
+              class="field__input"
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label class="field__label" for="email"
+                >Email <span aria-hidden="true">*</span></label
+              >
+              <input
+                class="field__input"
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label class="field__label" for="wechat">WeChat ID</label>
+              <input class="field__input" type="text" id="wechat" name="wechat" autocomplete="off" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="category"
+              >Main category <span aria-hidden="true">*</span></label
+            >
+            <select class="field__input" id="category" name="category" required>
+              <option value="">Choose a category</option>
+              {CATEGORIES.map((c) => <option value={c}>{c}</option>)}
+              <option value="Other">Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="message"
+              >What do you run? <span aria-hidden="true">*</span></label
+            >
+            <textarea
+              class="field__input field__textarea"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Channels where you have real volume, the regions you cover, and the kind of brand you work best with."
+              required></textarea>
+          </div>
+
+          <div class="field field--captcha">
+            <label class="field__label" for="captcha">
+              A quick check to keep bots out: what is <span id="captchaA">?</span> + <span
+                id="captchaB">?</span
+              >?
+              <span aria-hidden="true">*</span>
+            </label>
+            <input
+              class="field__input field__input--captcha"
+              type="text"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              id="captcha"
+              name="captcha"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form__honeypot" aria-hidden="true">
+            <label for="website_url">Leave this field empty</label>
+            <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="form__footer">
+            <button type="submit" class="btn btn--primary form__submit" id="partner-submit">
+              Send
+            </button>
+          </div>
+
+          <p class="form__status" id="partner-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="pt-wechat">
+          {
+            WECHAT_QR && (
+              <img
+                class="pt-wechat__qr"
+                src={WECHAT_QR}
+                alt={`WeChat QR code for ${WECHAT_ID}`}
+                width="116"
+                height="116"
+                loading="lazy"
+              />
+            )
+          }
+          <div>
+            <p class="pt-wechat__label">Or reach us on WeChat</p>
+            <p class="pt-wechat__id">{WECHAT_ID}</p>
+            <p class="pt-wechat__body">
+              Scan or search the ID. Most partners find this faster than email, and so do we.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</PartnerLayout>
+
+<script is:inline>
+  (function () {
+    const form = document.getElementById('partner-form');
+    if (!form) return;
+    const status = document.getElementById('partner-status');
+    const submit = document.getElementById('partner-submit');
+    const captchaA = document.getElementById('captchaA');
+    const captchaB = document.getElementById('captchaB');
+    const captchaInput = document.getElementById('captcha');
+    const t = JSON.parse(form.dataset.copy || 'null') || {
+      captcha: 'That result is not quite right. The numbers have just refreshed, please try again.',
+      required: 'Please fill in your company, name, email, category and a short description.',
+      sending: 'Sending…',
+      send: 'Send',
+      fail: 'That did not go through. Please try again, or reach us on WeChat.',
+      ok: 'Received. We will come back to you shortly.',
+      next: '/compass/partners/thank-you',
+    };
+
+    function rollCaptcha() {
+      const a = 1 + Math.floor(Math.random() * 9);
+      const b = 1 + Math.floor(Math.random() * 9);
+      captchaA.textContent = a;
+      captchaB.textContent = b;
+      form.dataset.captchaSum = String(a + b);
+      if (captchaInput) captchaInput.value = '';
+    }
+    rollCaptcha();
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = '';
+      status.className = 'form__status';
+
+      const data = new FormData(form);
+      if (data.get('website_url')) return;
+
+      const category = String(data.get('category') || '').trim();
+      const payload = {
+        source: 'Compass partner',
+        name: String(data.get('name') || '').trim(),
+        email: String(data.get('email') || '').trim(),
+        wechat: String(data.get('wechat') || '').trim(),
+        company: String(data.get('company') || '').trim(),
+        website: '',
+        services: category ? [category] : [],
+        budget: '',
+        profile: 'Distributor / partner application',
+        message: String(data.get('message') || '').trim(),
+        captcha: String(data.get('captcha') || '').trim(),
+        captchaExpected: String(form.dataset.captchaSum || ''),
+      };
+
+      const captchaNum = parseInt(payload.captcha, 10);
+      const expectedNum = parseInt(payload.captchaExpected, 10);
+      if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
+        status.textContent = t.captcha;
+        status.classList.add('form__status--error');
+        rollCaptcha();
+        return;
+      }
+      if (!payload.company || !payload.name || !payload.email || !category || !payload.message) {
+        status.textContent = t.required;
+        status.classList.add('form__status--error');
+        return;
+      }
+
+      submit.disabled = true;
+      submit.textContent = t.sending;
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const body = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(body.error || t.fail);
+        form.reset();
+        rollCaptcha();
+        status.textContent = t.ok;
+        status.classList.add('form__status--success');
+        window.location.assign(t.next);
+        return;
+      } catch (err) {
+        status.textContent = (err && err.message) || t.fail;
+        status.classList.add('form__status--error');
+      } finally {
+        submit.disabled = false;
+        submit.textContent = t.send;
+      }
+    });
+  })();
+</script>

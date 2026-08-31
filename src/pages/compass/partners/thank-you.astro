@@ -1,0 +1,38 @@
+---
+/**
+ * WO-2.3 — /compass/partners/thank-you
+ * Confirmation for the English partner form. noindex, like every other
+ * thank-you page on the site.
+ */
+import PartnerLayout from '../../../layouts/PartnerLayout.astro';
+import { APP_URL } from '../../../data/compass';
+
+const WECHAT_ID = 'TheChinaPath';
+---
+
+<PartnerLayout
+  title="Thanks, we have it | Compass partners | TheChinaPath"
+  description="Your partner application has reached us. Someone from the team will come back to you inside one working day."
+  locale="en"
+  enPath="/compass/partners/thank-you"
+  noindex
+>
+  <section class="pt-thanks">
+    <div class="container">
+      <span class="eyebrow">Received</span>
+      <h1 class="h1">Thanks. It landed.</h1>
+      <p class="lead">
+        Someone from the team reads every one of these, and you will hear back inside one working
+        day. If there is a fit we will set up a call, and after that, wherever we can, a visit.
+      </p>
+      <p>
+        In a hurry, or would rather talk on WeChat? Add <strong>{WECHAT_ID}</strong> and mention
+        that you have just written in.
+      </p>
+      <div class="pt-thanks__cta">
+        <a href="/compass" class="btn btn--secondary">What Compass is</a>
+        <a href={APP_URL} class="btn btn--ghost">Already a partner, sign in</a>
+      </div>
+    </div>
+  </section>
+</PartnerLayout>

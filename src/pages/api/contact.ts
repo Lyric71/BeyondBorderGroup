@@ -21,6 +21,8 @@ export const POST: APIRoute = async ({ request }) => {
   const budget = stringField(body.budget);
   const profile = stringField(body.profile);
   const message = stringField(body.message);
+  const source = stringField(body.source);
+  const wechat = stringField(body.wechat);
   const captcha = stringField(body.captcha);
   const captchaExpected = stringField(body.captchaExpected);
 
@@ -44,7 +46,18 @@ export const POST: APIRoute = async ({ request }) => {
   }
 
   try {
-    await sendContactEmail({ name, email, company, website, services, budget, profile, message });
+    await sendContactEmail({
+      name,
+      email,
+      company,
+      website,
+      services,
+      budget,
+      profile,
+      message,
+      source,
+      wechat,
+    });
     return json({ success: true }, 200);
   } catch (err) {
     const detail = err instanceof Error ? `${err.name}: ${err.message}` : String(err);

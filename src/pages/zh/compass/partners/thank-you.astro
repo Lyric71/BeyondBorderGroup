@@ -1,0 +1,35 @@
+---
+/**
+ * WO-2.3 — /zh/compass/partners/thank-you
+ * Confirmation for the Chinese partner form. noindex.
+ */
+import PartnerLayout from '../../../../layouts/PartnerLayout.astro';
+import { APP_URL } from '../../../../data/compass';
+
+const WECHAT_ID = 'TheChinaPath';
+---
+
+<PartnerLayout
+  title="已收到 | Compass 合作伙伴 | TheChinaPath"
+  description="您的合作申请已经送达，我们会在一个工作日之内回复。"
+  locale="zh"
+  enPath="/compass/partners/thank-you"
+  noindex
+>
+  <section class="pt-thanks">
+    <div class="container">
+      <span class="eyebrow">已收到</span>
+      <h1 class="h1">收到了，谢谢。</h1>
+      <p class="lead">
+        每一封团队都会读，一个工作日之内给您回复。合适的话先约电话，之后尽量安排上门拜访。
+      </p>
+      <p>
+        着急，或者更习惯用微信谈，可以直接加 <strong>{WECHAT_ID}</strong>，说明刚提交过申请就行。
+      </p>
+      <div class="pt-thanks__cta">
+        <a href="/zh/compass/partners" class="btn btn--secondary">返回合作伙伴页</a>
+        <a href={APP_URL} class="btn btn--ghost">已有账号，登录</a>
+      </div>
+    </div>
+  </section>
+</PartnerLayout>

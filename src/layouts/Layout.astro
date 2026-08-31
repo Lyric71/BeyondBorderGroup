@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import SchemaGraph from '../components/SchemaGraph.astro';
 import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
 import { locales, defaultLocale } from '../i18n/ui';
+import { localesForPath } from '../i18n/route-locales';
 import {
   SITE_URL,
   organizationSchema,
@@ -92,7 +93,9 @@ const isLocaleHome = (p: string) => p === '/' || locales.some((l) => p === `/${l
 type Alt = { code: string; href: string };
 const alternates: Alt[] = [];
 if (!noAlternate) {
-  for (const l of locales) {
+  // WO-2.3: the locale set is per-route. Ordinary pages get the site-wide four;
+  // the Compass partner routes get a two-entry EN/ZH cluster and nothing else.
+  for (const l of localesForPath(currentPath) as readonly (typeof locales)[number][]) {
     const mapped = localizePath(currentPath, l);
     const localeHome = l === defaultLocale ? '/' : `/${l}`;
     if (mapped === localeHome && !isLocaleHome(currentPath)) continue;

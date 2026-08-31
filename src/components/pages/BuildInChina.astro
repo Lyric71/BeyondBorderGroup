@@ -1,0 +1,2515 @@
+---
+/**
+ * /build-in-china, shared across every locale.
+ *
+ * The page carries a ~1,200 line stylesheet and an interactive picker. Holding
+ * one copy of that here, and letting each locale supply only a copy object,
+ * keeps the four language versions from drifting apart and means a style fix
+ * happens once. See src/content/pages/build-in-china/types.ts for the shape.
+ *
+ * Guardrails from the build spec, and they hold in every language:
+ *  - do not sell web development in TheChinaPath's own voice
+ *  - no pricing anywhere
+ *  - one outbound target, chinawebfoundry.com, reachable from two places
+ *  - "WeChat mini program", "ICP filing" and "Baidu" appear in body copy and in
+ *    the meta description
+ */
+import Layout from '../../layouts/Layout.astro';
+import type { BuildInChinaCopy } from '../../content/pages/build-in-china/types';
+
+interface Props {
+  copy: BuildInChinaCopy;
+  /** Locale-correct path for the "talk to us instead" fallback. */
+  contactHref: string;
+}
+
+const { copy, contactHref } = Astro.props;
+const c = copy;
+
+const CWF = 'https://chinawebfoundry.com';
+
+/** Handed to the picker script so the verdict text is not hard-coded English. */
+const verdicts = {
+  empty: { title: c.choose.verdictEmptyTitle, body: c.choose.verdictEmptyBody },
+  mp: { title: c.choose.verdictMp, body: c.choose.verdictMpBody },
+  site: { title: c.choose.verdictSite, body: c.choose.verdictSiteBody },
+  even: { title: c.choose.verdictEven, body: c.choose.verdictEvenBody },
+  partial: { title: c.choose.verdictPartial, body: c.choose.verdictPartialBody },
+};
+
+const icons: Record<string, string> = {
+  content: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"/><path d="M4 10h10"/><path d="M4 15h13"/><path d="M4 20h7"/></svg>`,
+  ux: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 6h4"/><path d="M9 11h6"/><path d="M9 15h4"/></svg>`,
+  baidu: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.5-4.5"/></svg>`,
+  ai: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4"/><circle cx="9.5" cy="13" r="1.2"/><circle cx="14.5" cy="13" r="1.2"/><path d="M2 12h3"/><path d="M19 12h3"/></svg>`,
+  infra: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01"/><path d="M7 17h.01"/></svg>`,
+  lock: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>`,
+  check: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 10 17 19 8"/></svg>`,
+};
+---
+
+<Layout title={c.meta.title} description={c.meta.description}>
+  <div class="bic-progress" aria-hidden="true"><div class="bic-progress__bar"></div></div>
+
+  <article class="bic">
+    <!-- 1. Hero -->
+    <section class="bic-hero" data-hero>
+      <div class="bic-hero__glow" aria-hidden="true" data-parallax></div>
+      <div class="bic-hero__grid-lines" aria-hidden="true"></div>
+
+      <div class="container bic-hero__inner">
+        <div class="bic-hero__copy">
+          <nav class="bic-crumbs" aria-label="Breadcrumb">
+            <a href="/">{c.hero.crumbHome}</a>
+            <span aria-hidden="true">/</span>
+            <span>{c.hero.crumbSection}</span>
+          </nav>
+          <span class="eyebrow bic-reveal">{c.hero.eyebrow}</span>
+          <h1 class="bic-hero__title bic-reveal" style="--reveal-delay: 60ms;">
+            {c.hero.titleBefore}<em>{c.hero.titleEm}</em>{c.hero.titleAfter}
+          </h1>
+          <p class="bic-hero__lead bic-reveal" style="--reveal-delay: 140ms;">{c.hero.lead}</p>
+          <p class="bic-hero__body bic-reveal" style="--reveal-delay: 220ms;">
+            {c.hero.bodyBefore}<a href={CWF}>{c.hero.cwfAnchor}</a>{c.hero.bodyAfter}
+          </p>
+          <div class="bic-hero__cta bic-reveal" style="--reveal-delay: 300ms;">
+            <a href={CWF} class="btn btn--primary bic-magnetic">{c.hero.ctaPrimary}</a>
+            <a href="#choose" class="btn btn--ghost-light bic-magnetic">{c.hero.ctaSecondary}</a>
+          </div>
+        </div>
+
+        <a
+          class="bic-door__frame bic-hero__shot bic-reveal"
+          href={CWF}
+          data-tilt
+          aria-label={c.hero.shotAria}
+          style="--reveal-delay: 180ms;"
+        >
+          <span class="bic-door__chrome" aria-hidden="true">
+            <i></i><i></i><i></i>
+            <span class="bic-door__url">chinawebfoundry.com</span>
+          </span>
+          <img
+            src="/Images/doors/chinawebfoundry-home.png"
+            alt={c.hero.shotAlt}
+            width="1440"
+            height="900"
+            fetchpriority="high"
+          />
+          <span class="bic-door__cta">{c.hero.shotCta} <span aria-hidden="true">&#8594;</span></span
+          >
+        </a>
+      </div>
+
+      <a href="#gaps" class="bic-scroll" aria-label={c.hero.scrollAria}>
+        <span class="bic-scroll__line"></span>
+        <span>{c.hero.scrollLabel}</span>
+      </a>
+    </section>
+
+    <!-- 2. The five gaps -->
+    <section class="section bic-gapsec" id="gaps">
+      <div class="container bic-split">
+        <div class="bic-split__rail">
+          <div class="bic-split__sticky bic-reveal">
+            <span class="eyebrow">{c.gapsSection.eyebrow}</span>
+            <h2 class="h2">{c.gapsSection.title}</h2>
+            <p class="lead">{c.gapsSection.lead}</p>
+            <p class="bic-split__hint" data-gap-hint>{c.gapsSection.hint}</p>
+            <figure class="bic-figure bic-reveal" style="--reveal-delay:160ms">
+              <img
+                src="/Images/website/five-gaps.png"
+                alt={c.gapsSection.figureAlt}
+                loading="lazy"
+                width="1536"
+                height="1024"
+              />
+              <figcaption>{c.gapsSection.figureCaption}</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="bic-accordion" data-accordion>
+          {
+            c.gaps.map((gap, i) => (
+              <div class="bic-acc bic-reveal" style={`--reveal-delay:${i * 60}ms`}>
+                <button
+                  class="bic-acc__head"
+                  type="button"
+                  aria-expanded={i === 0 ? 'true' : 'false'}
+                  aria-controls={`gap-${gap.id}`}
+                >
+                  <span class="bic-acc__icon" set:html={icons[gap.icon]} />
+                  <span class="bic-acc__heads">
+                    <span class="bic-acc__tag">{gap.tag}</span>
+                    <span class="bic-acc__title">{gap.title}</span>
+                  </span>
+                  <span class="bic-acc__chev" aria-hidden="true" />
+                </button>
+                <div class="bic-acc__wrap" id={`gap-${gap.id}`}>
+                  <div class="bic-acc__inner">
+                    <p>{gap.body}</p>
+                    {gap.cite && <p class="bic-acc__cite">{gap.cite}</p>}
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ICP filing -->
+    <section class="section section--alt bic-icp">
+      <div class="container">
+        <div class="section-header bic-reveal">
+          <span class="eyebrow">{c.icp.eyebrow}</span>
+          <h2 class="h2">{c.icp.title}</h2>
+          <p class="lead">{c.icp.lead}</p>
+        </div>
+
+        <ol class="bic-timeline bic-reveal" data-timeline>
+          <span class="bic-timeline__rail" aria-hidden="true"><i></i></span>
+          {
+            c.icp.steps.map((s, i) => (
+              <li class="bic-timeline__step" style={`--step-delay:${i * 140}ms`}>
+                <span class="bic-timeline__dot" aria-hidden="true" />
+                <span class="bic-timeline__name">{s.step}</span>
+                <span class="bic-timeline__detail">{s.detail}</span>
+              </li>
+            ))
+          }
+        </ol>
+
+        <figure class="bic-figure bic-figure--icp bic-reveal" style="--reveal-delay:200ms">
+          <div class="bic-shot" role="img" aria-label={c.icp.figureAlt}>
+            <div class="bic-shot__bar" aria-hidden="true">
+              <span class="bic-shot__dots"><i></i><i></i><i></i></span>
+              <span class="bic-shot__url">example.com.cn</span>
+            </div>
+            <div class="bic-shot__foot" aria-hidden="true">
+              <p class="bic-shot__copy">© 2026 上海示例品牌管理有限公司</p>
+              <p class="bic-shot__reg">
+                <span class="bic-shot__link">沪ICP备2023012345号-2</span>
+                <span class="bic-shot__sep"></span>
+                <span class="bic-shot__gov">
+                  <span class="bic-shot__badge"></span>沪公网安备 31010502001234号
+                </span>
+              </p>
+            </div>
+          </div>
+          <figcaption>
+            {c.icp.figureCaption}
+          </figcaption>
+        </figure>
+
+        <div class="bic-icp__grid">
+          <div class="bic-icp__card bic-icp__card--unlock bic-reveal">
+            <h3 class="bic-icp__h3">
+              <span class="bic-icp__ico" set:html={icons.check} />{c.icp.unlockTitle}
+            </h3>
+            <ul class="bic-ticks">
+              {c.icp.unlocks.map((u) => <li>{u}</li>)}
+            </ul>
+          </div>
+          <div class="bic-icp__card bic-icp__card--warn bic-reveal" style="--reveal-delay:80ms">
+            <h3 class="bic-icp__h3">
+              <span class="bic-icp__ico" set:html={icons.lock} />{c.icp.trapTitle}
+            </h3>
+            <p>{c.icp.trapBody}</p>
+            <p class="bic-icp__kicker">{c.icp.trapKicker}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Mini program or mobile site -->
+    <section class="section bic-choose" id="choose">
+      <div class="container">
+        <div class="section-header bic-reveal">
+          <span class="eyebrow">{c.choose.eyebrow}</span>
+          <h2 class="h2">{c.choose.title}</h2>
+          <p class="lead">{c.choose.lead}</p>
+        </div>
+
+        <figure class="bic-figure bic-figure--phone bic-reveal" style="--reveal-delay:120ms">
+          <div class="bic-mp" role="img" aria-label={c.choose.figureAlt}>
+            <div class="bic-mp__phone">
+              <div class="bic-mp__status" aria-hidden="true">
+                <span class="bic-mp__time">9:41</span>
+                <span class="bic-mp__sys">
+                  <span class="bic-mp__sig"><i></i><i></i><i></i><i></i></span>
+                  <span class="bic-mp__wifi"></span>
+                  <span class="bic-mp__batt"><i></i></span>
+                </span>
+              </div>
+
+              <div class="bic-mp__nav" aria-hidden="true">
+                <span class="bic-mp__back"></span>
+                <span class="bic-mp__title">示例美妆 官方旗舰店</span>
+                <span class="bic-mp__capsule"><b>···</b><s></s><em></em></span>
+              </div>
+
+              <div class="bic-mp__screen" aria-hidden="true">
+                <div class="bic-mp__search">
+                  <span class="bic-mp__glass"></span>搜索商品、品类或关键词
+                </div>
+
+                <div class="bic-mp__banner">
+                  <span class="bic-mp__tagline">双十一预售</span>
+                  <span class="bic-mp__sub">定金翻倍 · 前 1000 名赠正装小样</span>
+                  <span class="bic-mp__cta">立即抢购</span>
+                  <span class="bic-mp__dots"><i class="on"></i><i></i><i></i></span>
+                </div>
+
+                <div class="bic-mp__cats">
+                  <span><span class="bic-mp__ico bic-mp__ico--a"></span>新品首发</span>
+                  <span><span class="bic-mp__ico bic-mp__ico--b"></span>爆款榜单</span>
+                  <span><span class="bic-mp__ico bic-mp__ico--c"></span>会员专享</span>
+                  <span><span class="bic-mp__ico bic-mp__ico--d"></span>门店自提</span>
+                </div>
+
+                <div class="bic-mp__notice">
+                  <span class="bic-mp__horn"></span>会员日 8 折,今晚 24 点结束
+                </div>
+
+                <div class="bic-mp__rowhead">
+                  <span class="bic-mp__h">为你推荐</span>
+                  <span class="bic-mp__more">查看全部 ›</span>
+                </div>
+
+                <div class="bic-mp__grid">
+                  <div class="bic-mp__card">
+                    <span class="bic-mp__thumb bic-mp__thumb--one"></span>
+                    <span class="bic-mp__name">水光润泽精华露 30ml</span>
+                    <span class="bic-mp__tags"><i>顺丰包邮</i><i>七天无理由</i></span>
+                    <span class="bic-mp__price">¥ 389<s>¥ 459</s></span>
+                    <span class="bic-mp__sales">已售 2.3 万件</span>
+                  </div>
+                  <div class="bic-mp__card">
+                    <span class="bic-mp__thumb bic-mp__thumb--two"></span>
+                    <span class="bic-mp__name">舒缓修护面霜 50g</span>
+                    <span class="bic-mp__tags"><i>直播价</i><i>赠小样</i></span>
+                    <span class="bic-mp__price">¥ 268<s>¥ 320</s></span>
+                    <span class="bic-mp__sales">已售 8624 件</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bic-mp__tabs" aria-hidden="true">
+                <span class="on"><i class="bic-mp__tico bic-mp__tico--home"></i>首页</span>
+                <span><i class="bic-mp__tico bic-mp__tico--cat"></i>分类</span>
+                <span><i class="bic-mp__tico bic-mp__tico--cart"><b>3</b></i>购物车</span>
+                <span><i class="bic-mp__tico bic-mp__tico--me"></i>我的</span>
+              </div>
+              <span class="bic-mp__bar" aria-hidden="true"></span>
+            </div>
+          </div>
+          <figcaption>
+            {c.choose.figureCaption}
+          </figcaption>
+        </figure>
+
+        <div class="bic-picker" data-picker>
+          <div class="bic-picker__qs">
+            {
+              c.choose.questions.map((q, i) => (
+                <div class="bic-picker__q bic-reveal" style={`--reveal-delay:${i * 60}ms`} data-q>
+                  <div class="bic-picker__qtext">
+                    <span class="bic-picker__hint">{q.hint}</span>
+                    <p>{q.q}</p>
+                  </div>
+                  <div class="bic-seg" role="group" aria-label={q.q}>
+                    <button type="button" class="bic-seg__btn" data-answer="yes" data-yes={q.yes}>
+                      {c.choose.yes}
+                    </button>
+                    <button type="button" class="bic-seg__btn" data-answer="no" data-yes={q.yes}>
+                      {c.choose.no}
+                    </button>
+                    <span class="bic-seg__thumb" aria-hidden="true" />
+                  </div>
+                </div>
+              ))
+            }
+            <button type="button" class="bic-picker__reset" data-reset>{c.choose.reset}</button>
+          </div>
+
+          <aside class="bic-verdict bic-reveal is-empty" aria-live="polite">
+            <span class="bic-verdict__eyebrow">{c.choose.verdictEyebrow}</span>
+            <p class="bic-verdict__answer" data-verdict-title>{c.choose.verdictEmptyTitle}</p>
+            <p class="bic-verdict__body" data-verdict-body>{c.choose.verdictEmptyBody}</p>
+            <div class="bic-verdict__meter" aria-hidden="true">
+              <span class="bic-verdict__meter-label">{c.choose.meterLeft}</span>
+              <span class="bic-verdict__bar"><i data-verdict-fill style="--v:50%"></i></span>
+              <span class="bic-verdict__meter-label bic-verdict__meter-label--right">
+                {c.choose.meterRight}
+              </span>
+            </div>
+            <p class="bic-verdict__rule">{c.choose.rule}</p>
+          </aside>
+        </div>
+
+        <div class="bic-surfaces">
+          {
+            c.choose.surfaces.map((s, i) => (
+              <article
+                class="bic-surface bic-reveal"
+                data-surface={s.key}
+                style={`--reveal-delay:${i * 80}ms`}
+              >
+                <header class="bic-surface__head">
+                  <h3 class="bic-surface__name">
+                    {s.name} <span class="bic-surface__cn">{s.cn}</span>
+                  </h3>
+                  <p class="bic-surface__blurb">{s.blurb}</p>
+                </header>
+                <p class="bic-surface__label">{c.choose.rightWhen}</p>
+                <ul class="bic-list">
+                  {s.right.map((r) => (
+                    <li>{r}</li>
+                  ))}
+                </ul>
+                <p class="bic-surface__label bic-surface__label--muted">{c.choose.wrongWhen}</p>
+                <ul class="bic-list bic-list--muted">
+                  {s.wrong.map((w) => (
+                    <li>{w}</li>
+                  ))}
+                </ul>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Proof -->
+    <section class="section section--alt bic-proofsec">
+      <div class="container">
+        <div class="section-header bic-reveal">
+          <span class="eyebrow">{c.proof.eyebrow}</span>
+          <h2 class="h2">{c.proof.title}</h2>
+        </div>
+
+        <div class="bic-proof">
+          <div class="bic-proof__item bic-reveal">
+            <span class="bic-proof__figure"
+              ><span data-counter="1.2" data-decimals="1">0.0</span>s</span
+            >
+            <p class="bic-proof__label">{c.proof.loadLabel}</p>
+          </div>
+
+          <div class="bic-proof__item bic-proof__item--ba bic-reveal" style="--reveal-delay:100ms">
+            <span class="bic-proof__figure">
+              <span data-counter="82" data-suffix="%">0%</span>
+              <span class="bic-proof__arrow" aria-hidden="true">&#8594;</span>
+              <span class="bic-proof__figure--good" data-counter="31" data-suffix="%">0%</span>
+            </span>
+            <p class="bic-proof__label">{c.proof.bounceLabel}</p>
+            <div class="bic-bars" aria-hidden="true">
+              <span class="bic-bars__row"><i class="is-before" style="--w:82%"></i></span>
+              <span class="bic-bars__row"><i class="is-after" style="--w:31%"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <p class="bic-source">{c.proof.source}</p>
+      </div>
+    </section>
+
+    <!-- 6. The handoff -->
+    <section class="section bic-door" id="the-handoff">
+      <div class="container bic-door__grid">
+        <div class="bic-door__copy bic-reveal">
+          <span class="eyebrow">{c.door.eyebrow}</span>
+          <h2 class="h2">{c.door.title}</h2>
+          <p>
+            {c.door.bodyOneBefore}<a href={CWF}>{c.door.cwfAnchor}</a>{c.door.bodyOneAfter}
+          </p>
+          <p>{c.door.bodyTwo}</p>
+          <div class="bic-hero__cta">
+            <a href={CWF} class="btn btn--primary bic-magnetic">{c.door.ctaPrimary}</a>
+            <a href={contactHref} class="btn btn--secondary bic-magnetic">{c.door.ctaSecondary}</a>
+          </div>
+        </div>
+
+        <aside
+          class="bic-scan bic-reveal"
+          style="--reveal-delay: 140ms;"
+          aria-label={c.door.scanAria}
+        >
+          <header class="bic-scan__head">
+            <span class="bic-scan__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="bic-scan__title">{c.door.scanTitle}</span>
+            <span class="bic-scan__live"><i aria-hidden="true"></i>{c.door.scanLive}</span>
+          </header>
+          <div class="bic-scan__body">
+            {
+              c.door.scanRows.map((r, i) => (
+                <div class={`bic-scan__row is-${r.tone}`} style={`--row-delay:${i * 220 + 400}ms`}>
+                  <span class="bic-scan__label">{r.label}</span>
+                  <span
+                    class="bic-scan__value"
+                    data-counter={r.to}
+                    data-decimals={r.decimals}
+                    data-suffix={r.suffix}
+                  >
+                    0{r.suffix}
+                  </span>
+                  <span class="bic-scan__track">
+                    <i style={`--fill:${r.pct}%`} />
+                  </span>
+                  <span class="bic-scan__note">{r.note}</span>
+                </div>
+              ))
+            }
+            <div class="bic-scan__row is-bad" style="--row-delay:1060ms">
+              <span class="bic-scan__label">{c.door.scanAiLabel}</span>
+              <span class="bic-scan__value bic-scan__value--word">{c.door.scanAiValue}</span>
+              <span class="bic-scan__track"><i style="--fill:88%"></i></span>
+              <span class="bic-scan__note">{c.door.scanAiNote}</span>
+            </div>
+          </div>
+          <footer class="bic-scan__foot">{c.door.scanFoot}</footer>
+        </aside>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    /* ============================================================
+       /build-in-china
+       ============================================================ */
+    .bic {
+      overflow-x: clip;
+    }
+
+    /* ---------- Figures ---------- */
+    .bic-figure {
+      margin: var(--space-5) 0 0;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--bbg-border);
+      background: #fff;
+    }
+    .bic-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .bic-figure figcaption {
+      padding: var(--space-4);
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .bic-figure--icp {
+      margin: var(--space-6) auto 0;
+      max-width: 620px;
+      background: var(--bbg-surface);
+    }
+    .bic-shot {
+      background: #fff;
+    }
+    .bic-shot__bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      background: #f1f3f5;
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .bic-shot__dots {
+      display: inline-flex;
+      gap: 6px;
+    }
+    .bic-shot__dots i {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #d5d9dd;
+    }
+    .bic-shot__url {
+      font-size: 12px;
+      color: var(--bbg-text-muted);
+      background: #fff;
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      padding: 3px 12px;
+    }
+    .bic-shot__foot {
+      background: #16181b;
+      color: #c8ccd1;
+      padding: 26px 24px 28px;
+      text-align: center;
+    }
+    .bic-shot__copy {
+      margin: 0 0 10px;
+      font-size: 13px;
+      color: #8b9198;
+    }
+    .bic-shot__reg {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .bic-shot__link {
+      color: #9fc6dd;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .bic-shot__sep {
+      width: 1px;
+      height: 12px;
+      background: #3a3f45;
+    }
+    .bic-shot__gov {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .bic-shot__badge {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      background: #c0392b;
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.35);
+    }
+    @media (max-width: 480px) {
+      .bic-shot__foot {
+        padding: 20px 16px 22px;
+      }
+      .bic-shot__reg {
+        font-size: 12px;
+        gap: 6px;
+      }
+      .bic-shot__sep {
+        display: none;
+      }
+    }
+    .bic-figure--phone {
+      margin: var(--space-6) auto var(--space-6);
+      max-width: 360px;
+      background: var(--bbg-surface);
+    }
+    .bic-mp {
+      padding: 22px 22px 0;
+      background: linear-gradient(160deg, #eef2f5 0%, #e2e8ed 100%);
+    }
+    .bic-mp__phone {
+      width: 100%;
+      border-radius: 26px 26px 0 0;
+      background: #ededed;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(20, 30, 40, 0.16);
+      font-size: 12px;
+      color: #1a1a1a;
+      line-height: 1.4;
+    }
+    .bic-mp__status {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px 4px;
+      background: #ededed;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .bic-mp__sys {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .bic-mp__sig {
+      display: inline-flex;
+      align-items: flex-end;
+      gap: 1.5px;
+    }
+    .bic-mp__sig i {
+      width: 2.5px;
+      background: #1a1a1a;
+      border-radius: 1px;
+    }
+    .bic-mp__sig i:nth-child(1) {
+      height: 4px;
+    }
+    .bic-mp__sig i:nth-child(2) {
+      height: 6px;
+    }
+    .bic-mp__sig i:nth-child(3) {
+      height: 8px;
+    }
+    .bic-mp__sig i:nth-child(4) {
+      height: 10px;
+    }
+    .bic-mp__wifi {
+      width: 12px;
+      height: 9px;
+      background: #1a1a1a;
+      clip-path: polygon(50% 100%, 0 30%, 20% 12%, 50% 0, 80% 12%, 100% 30%);
+    }
+    .bic-mp__batt {
+      position: relative;
+      width: 20px;
+      height: 10px;
+      border: 1px solid rgba(26, 26, 26, 0.5);
+      border-radius: 3px;
+      padding: 1.5px;
+    }
+    .bic-mp__batt i {
+      display: block;
+      width: 70%;
+      height: 100%;
+      background: #1a1a1a;
+      border-radius: 1px;
+    }
+    .bic-mp__nav {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 12px 12px;
+      background: #ededed;
+    }
+    .bic-mp__back {
+      position: absolute;
+      left: 16px;
+      width: 8px;
+      height: 8px;
+      border-left: 1.6px solid #1a1a1a;
+      border-bottom: 1.6px solid #1a1a1a;
+      transform: rotate(45deg);
+    }
+    .bic-mp__title {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .bic-mp__capsule {
+      position: absolute;
+      right: 12px;
+      display: inline-flex;
+      align-items: center;
+      height: 26px;
+      padding: 0 2px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.65);
+    }
+    .bic-mp__capsule b {
+      width: 30px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1;
+      letter-spacing: 1px;
+    }
+    .bic-mp__capsule s {
+      width: 1px;
+      height: 14px;
+      background: rgba(0, 0, 0, 0.12);
+    }
+    .bic-mp__capsule em {
+      width: 30px;
+      height: 12px;
+      background: radial-gradient(
+        circle at 50% 50%,
+        transparent 3.2px,
+        #1a1a1a 3.2px,
+        #1a1a1a 4.4px,
+        transparent 4.6px
+      );
+    }
+    .bic-mp__screen {
+      background: #f5f6f7;
+      padding: 10px 10px 12px;
+      display: grid;
+      gap: 9px;
+    }
+    .bic-mp__search {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #fff;
+      border-radius: 999px;
+      padding: 7px 12px;
+      color: #9aa0a6;
+      font-size: 11px;
+    }
+    .bic-mp__glass {
+      width: 10px;
+      height: 10px;
+      border: 1.4px solid #b6bbc0;
+      border-radius: 50%;
+      position: relative;
+    }
+    .bic-mp__glass::after {
+      content: ' ';
+      position: absolute;
+      right: -3px;
+      bottom: -2px;
+      width: 4px;
+      height: 1.4px;
+      background: #b6bbc0;
+      transform: rotate(45deg);
+    }
+    .bic-mp__banner {
+      position: relative;
+      border-radius: 10px;
+      padding: 16px 14px 20px;
+      color: #fff;
+      background: linear-gradient(120deg, #b4242c 0%, #e0525a 55%, #f08a6a 100%);
+      display: grid;
+      gap: 5px;
+      justify-items: start;
+    }
+    .bic-mp__tagline {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .bic-mp__sub {
+      font-size: 10px;
+      opacity: 0.92;
+    }
+    .bic-mp__cta {
+      margin-top: 4px;
+      font-size: 10px;
+      font-weight: 600;
+      background: #fff;
+      color: #b4242c;
+      border-radius: 999px;
+      padding: 4px 12px;
+    }
+    .bic-mp__dots {
+      position: absolute;
+      right: 10px;
+      bottom: 8px;
+      display: inline-flex;
+      gap: 4px;
+    }
+    .bic-mp__dots i {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.45);
+    }
+    .bic-mp__dots i.on {
+      width: 10px;
+      border-radius: 999px;
+      background: #fff;
+    }
+    .bic-mp__cats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 12px 6px;
+    }
+    .bic-mp__cats > span {
+      display: grid;
+      justify-items: center;
+      gap: 6px;
+      font-size: 10px;
+      color: #4a4a4a;
+    }
+    .bic-mp__ico {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    .bic-mp__ico--a {
+      background: linear-gradient(140deg, #ffd9c0, #ff9a76);
+    }
+    .bic-mp__ico--b {
+      background: linear-gradient(140deg, #ffd2d6, #f0666f);
+    }
+    .bic-mp__ico--c {
+      background: linear-gradient(140deg, #e2dcff, #9b8cf0);
+    }
+    .bic-mp__ico--d {
+      background: linear-gradient(140deg, #cfe9d8, #5cb87f);
+    }
+    .bic-mp__notice {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #fff6e5;
+      color: #a06b12;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 10px;
+    }
+    .bic-mp__horn {
+      width: 11px;
+      height: 9px;
+      background: #e0a234;
+      clip-path: polygon(0 32%, 42% 32%, 100% 0, 100% 100%, 42% 68%, 0 68%);
+    }
+    .bic-mp__rowhead {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 2px 2px 0;
+    }
+    .bic-mp__h {
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .bic-mp__more {
+      font-size: 10px;
+      color: #9aa0a6;
+    }
+    .bic-mp__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .bic-mp__card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      display: grid;
+      gap: 3px;
+      padding-bottom: 9px;
+    }
+    .bic-mp__thumb {
+      display: block;
+      height: 92px;
+      margin-bottom: 5px;
+    }
+    .bic-mp__thumb--one {
+      background: linear-gradient(150deg, #f3e7dd 0%, #dcc3ad 100%);
+    }
+    .bic-mp__thumb--two {
+      background: linear-gradient(150deg, #e4ecf2 0%, #b9cbd8 100%);
+    }
+    .bic-mp__name {
+      padding: 0 8px;
+      font-size: 11px;
+      line-height: 1.35;
+      color: #1a1a1a;
+    }
+    .bic-mp__tags {
+      display: flex;
+      gap: 4px;
+      padding: 1px 8px 2px;
+    }
+    .bic-mp__tags i {
+      font-style: normal;
+      font-size: 8px;
+      color: #c0392b;
+      border: 1px solid rgba(192, 57, 43, 0.35);
+      border-radius: 3px;
+      padding: 0 3px;
+      line-height: 1.5;
+    }
+    .bic-mp__price {
+      padding: 0 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #c0392b;
+    }
+    .bic-mp__price s {
+      margin-left: 5px;
+      font-size: 9px;
+      font-weight: 400;
+      color: #b0b5ba;
+    }
+    .bic-mp__sales {
+      padding: 0 8px;
+      font-size: 9px;
+      color: #9aa0a6;
+    }
+    .bic-mp__tabs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: #fafafa;
+      border-top: 1px solid #e3e3e3;
+      padding: 7px 0 4px;
+    }
+    .bic-mp__tabs > span {
+      display: grid;
+      justify-items: center;
+      gap: 3px;
+      font-size: 9px;
+      color: #9aa0a6;
+    }
+    .bic-mp__tabs > span.on {
+      color: #07c160;
+    }
+    .bic-mp__tico {
+      position: relative;
+      width: 17px;
+      height: 17px;
+      background: currentColor;
+      opacity: 0.85;
+    }
+    .bic-mp__tico--home {
+      clip-path: polygon(50% 0, 100% 45%, 88% 45%, 88% 100%, 12% 100%, 12% 45%, 0 45%);
+    }
+    .bic-mp__tico--cat {
+      background: none;
+      box-shadow:
+        inset 0 0 0 40px transparent,
+        0 0 0 0 transparent;
+      background-image:
+        linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor),
+        linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
+      background-size: 44% 44%;
+      background-position:
+        0 0,
+        100% 0,
+        0 100%,
+        100% 100%;
+      background-repeat: no-repeat;
+    }
+    .bic-mp__tico--cart {
+      clip-path: polygon(0 8%, 20% 8%, 30% 60%, 96% 60%, 96% 74%, 22% 74%, 12% 22%, 0 22%);
+    }
+    .bic-mp__tico--cart b {
+      display: none;
+    }
+    .bic-mp__tico--me {
+      background: none;
+    }
+    .bic-mp__tico--me::before {
+      content: ' ';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 46%;
+      height: 46%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      background: currentColor;
+    }
+    .bic-mp__tico--me::after {
+      content: ' ';
+      position: absolute;
+      left: 8%;
+      bottom: 4%;
+      width: 84%;
+      height: 40%;
+      background: currentColor;
+      border-radius: 50% 50% 0 0;
+    }
+    .bic-mp__bar {
+      display: block;
+      width: 108px;
+      height: 4px;
+      margin: 4px auto 7px;
+      border-radius: 999px;
+      background: #1a1a1a;
+      opacity: 0.75;
+    }
+    @media (max-width: 420px) {
+      .bic-mp {
+        padding: 14px 14px 0;
+      }
+    }
+
+    /* ---------- Reveal + motion primitives ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .bic-reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .bic-reveal.is-in {
+        opacity: 1;
+        transform: none;
+      }
+      .bic-magnetic {
+        will-change: transform;
+        transition:
+          transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          background-color 200ms ease,
+          color 200ms ease,
+          border-color 200ms ease;
+      }
+    }
+
+    /* ---------- Scroll progress ---------- */
+    .bic-progress {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: 3px;
+      z-index: 1000;
+      pointer-events: none;
+    }
+    .bic-progress__bar {
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, #c8102e 0%, #e8556c 100%);
+      box-shadow: 0 0 12px rgba(200, 16, 46, 0.5);
+      transition: width 90ms linear;
+    }
+
+    /* ---------- HERO ---------- */
+    .bic-hero {
+      position: relative;
+      background: #07090c;
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+      padding: clamp(88px, 10vh, 128px) 0 clamp(96px, 12vh, 140px);
+    }
+    .bic-hero__glow {
+      position: absolute;
+      inset: -20% -10% 0;
+      z-index: -2;
+      background:
+        radial-gradient(60% 55% at 78% 18%, rgba(200, 16, 46, 0.42) 0%, rgba(200, 16, 46, 0) 62%),
+        radial-gradient(70% 60% at 8% 92%, rgba(38, 154, 218, 0.16) 0%, rgba(0, 0, 0, 0) 60%);
+      transform: translate3d(0, var(--parallax-y, 0px), 0);
+      transition: transform 80ms linear;
+    }
+    .bic-hero__grid-lines {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: radial-gradient(90% 70% at 50% 30%, #000 0%, transparent 78%);
+      -webkit-mask-image: radial-gradient(90% 70% at 50% 30%, #000 0%, transparent 78%);
+      pointer-events: none;
+    }
+    .bic-hero__inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: clamp(2rem, 5vw, 4.5rem);
+      align-items: center;
+    }
+    @media (max-width: 980px) {
+      .bic-hero__inner {
+        grid-template-columns: 1fr;
+        gap: var(--space-7);
+      }
+    }
+    .bic-crumbs {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: var(--fs-small);
+      color: rgba(255, 255, 255, 0.55);
+      margin-bottom: var(--space-4);
+    }
+    .bic-crumbs a {
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+    }
+    .bic-crumbs a:hover {
+      color: var(--bbg-white);
+    }
+    .bic-hero .eyebrow {
+      color: #ff5c74;
+    }
+    .bic-hero__title {
+      font-size: clamp(2.25rem, 3.6vw + 1rem, 3.9rem);
+      line-height: 1.04;
+      letter-spacing: -0.028em;
+      color: var(--bbg-white);
+      margin-bottom: var(--space-5);
+      max-width: 17ch;
+    }
+    .bic-hero__title em {
+      font-style: normal;
+      color: #ff5c74;
+    }
+    .bic-hero__lead {
+      font-size: var(--fs-lead);
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 46ch;
+    }
+    .bic-hero__body {
+      color: rgba(255, 255, 255, 0.62);
+      max-width: 50ch;
+      font-size: var(--fs-small);
+      line-height: 1.7;
+    }
+    .bic-hero__body a,
+    .bic-hero__body a:visited {
+      color: var(--bbg-white);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: rgba(255, 255, 255, 0.4);
+    }
+    .bic-hero__body a:hover {
+      text-decoration-color: var(--bbg-white);
+    }
+    .bic-hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      align-items: center;
+      margin-top: var(--space-5);
+    }
+
+    /* ---------- Hero diagnostic panel ---------- */
+    .bic-scan {
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: linear-gradient(180deg, #191d22 0%, #0f1115 100%);
+      box-shadow:
+        0 24px 48px rgba(15, 20, 28, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.07);
+      overflow: hidden;
+    }
+    .bic-scan__head {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+      background: rgba(0, 0, 0, 0.25);
+    }
+    .bic-scan__dots {
+      display: inline-flex;
+      gap: 6px;
+    }
+    .bic-scan__dots i {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.18);
+    }
+    .bic-scan__dots i:first-child {
+      background: rgba(255, 92, 116, 0.65);
+    }
+    .bic-scan__title {
+      font-size: var(--fs-small);
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.85);
+      letter-spacing: 0.01em;
+    }
+    .bic-scan__live {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .bic-scan__live i {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #2fb67f;
+      box-shadow: 0 0 0 0 rgba(47, 182, 127, 0.6);
+      animation: bic-pulse 2s ease-out infinite;
+    }
+    @keyframes bic-pulse {
+      70% {
+        box-shadow: 0 0 0 8px rgba(47, 182, 127, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(47, 182, 127, 0);
+      }
+    }
+    .bic-scan__body {
+      padding: 0.5rem 1rem 0.75rem;
+    }
+    .bic-scan__row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-areas:
+        'label value'
+        'track track'
+        'note note';
+      gap: 0.35rem 1rem;
+      padding: 0.95rem 0;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.09);
+      animation: bic-row-in 600ms cubic-bezier(0.16, 1, 0.3, 1) var(--row-delay, 0ms) backwards;
+    }
+    .bic-scan__row:last-child {
+      border-bottom: 0;
+    }
+    @keyframes bic-row-in {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+    }
+    .bic-scan__label {
+      grid-area: label;
+      font-size: var(--fs-small);
+      color: rgba(255, 255, 255, 0.72);
+    }
+    .bic-scan__value {
+      grid-area: value;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+      color: #ff6b81;
+    }
+    .is-warn .bic-scan__value {
+      color: #f4b740;
+    }
+    .bic-scan__track {
+      grid-area: track;
+      display: block;
+      height: 4px;
+      border-radius: 99px;
+      background: rgba(255, 255, 255, 0.09);
+      overflow: hidden;
+    }
+    .bic-scan__track i {
+      display: block;
+      height: 100%;
+      width: var(--fill, 50%);
+      border-radius: 99px;
+      background: linear-gradient(90deg, rgba(255, 107, 129, 0.55), #ff4d67);
+      animation: bic-fill 1100ms cubic-bezier(0.16, 1, 0.3, 1) calc(var(--row-delay, 0ms) + 180ms)
+        backwards;
+    }
+    .is-warn .bic-scan__track i {
+      background: linear-gradient(90deg, rgba(244, 183, 64, 0.5), #f4b740);
+    }
+    @keyframes bic-fill {
+      from {
+        width: 0;
+      }
+    }
+    .bic-scan__note {
+      grid-area: note;
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+    .bic-scan__foot {
+      padding: 0.85rem 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.09);
+      background: rgba(0, 0, 0, 0.22);
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    /* ---------- Scroll cue ---------- */
+    .bic-scroll {
+      position: absolute;
+      left: 50%;
+      bottom: 1.6rem;
+      transform: translateX(-50%);
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.45);
+    }
+    .bic-scroll:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .bic-scroll__line {
+      width: 1px;
+      height: 42px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
+      animation: bic-drop 2.4s ease-in-out infinite;
+      transform-origin: top;
+    }
+    @keyframes bic-drop {
+      0%,
+      100% {
+        transform: scaleY(0.45);
+        opacity: 0.4;
+      }
+      50% {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+    @media (max-width: 980px) {
+      .bic-scroll {
+        display: none;
+      }
+    }
+
+    /* ---------- Section 2: sticky rail + accordion ---------- */
+    .bic-split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: clamp(2rem, 5vw, 4.5rem);
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .bic-split {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
+    }
+    .bic-split__sticky {
+      position: sticky;
+      top: calc(var(--nav-h) + 2rem);
+    }
+    @media (max-width: 900px) {
+      .bic-split__sticky {
+        position: static;
+      }
+    }
+    .bic-split__hint {
+      margin-top: var(--space-5);
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .bic-split__hint::before {
+      content: '';
+      width: 22px;
+      height: 1px;
+      background: var(--bbg-blue);
+    }
+
+    .bic-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-top: 1px solid var(--bbg-border);
+    }
+    .bic-acc {
+      border-bottom: 1px solid var(--bbg-border);
+      transition: border-color var(--dur) var(--ease);
+    }
+    .bic-acc.is-open {
+      border-bottom-color: rgba(200, 16, 46, 0.35);
+    }
+    .bic-acc__head {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: var(--space-4);
+      width: 100%;
+      padding: var(--space-5) 0;
+      background: none;
+      border: 0;
+      cursor: pointer;
+      text-align: left;
+      color: inherit;
+    }
+    .bic-acc__icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      border: 1px solid var(--bbg-border);
+      color: var(--bbg-text-muted);
+      background: var(--bbg-white);
+      transition:
+        color var(--dur) var(--ease),
+        border-color var(--dur) var(--ease),
+        background var(--dur) var(--ease),
+        transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
+      flex-shrink: 0;
+    }
+    .bic-acc__icon svg {
+      width: 22px;
+      height: 22px;
+    }
+    .bic-acc:hover .bic-acc__icon,
+    .bic-acc.is-open .bic-acc__icon {
+      color: var(--bbg-blue);
+      border-color: rgba(200, 16, 46, 0.4);
+      background: var(--bbg-blue-light);
+      transform: translateY(-2px);
+    }
+    .bic-acc__heads {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      min-width: 0;
+    }
+    .bic-acc__tag {
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      transition: color var(--dur) var(--ease);
+    }
+    .bic-acc.is-open .bic-acc__tag {
+      color: var(--bbg-blue);
+    }
+    .bic-acc__title {
+      font-size: clamp(1.1rem, 0.7vw + 0.95rem, 1.35rem);
+      font-weight: 600;
+      color: var(--bbg-ink);
+      line-height: 1.3;
+    }
+    .bic-acc__chev {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--bbg-border);
+      flex-shrink: 0;
+      transition:
+        border-color var(--dur) var(--ease),
+        background var(--dur) var(--ease),
+        transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .bic-acc__chev::before,
+    .bic-acc__chev::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 11px;
+      height: 1.5px;
+      background: var(--bbg-ink);
+      transform: translate(-50%, -50%);
+      transition: transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .bic-acc__chev::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+    .bic-acc.is-open .bic-acc__chev {
+      background: var(--bbg-blue);
+      border-color: var(--bbg-blue);
+      transform: rotate(180deg);
+    }
+    .bic-acc.is-open .bic-acc__chev::before,
+    .bic-acc.is-open .bic-acc__chev::after {
+      background: var(--bbg-white);
+    }
+    .bic-acc.is-open .bic-acc__chev::after {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    .bic-acc__wrap {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bic-acc.is-open .bic-acc__wrap {
+      grid-template-rows: 1fr;
+    }
+    .bic-acc__inner {
+      overflow: hidden;
+    }
+    .bic-acc__inner > p {
+      max-width: 62ch;
+      padding-left: calc(44px + var(--space-4));
+      opacity: 0;
+      transform: translateY(6px);
+      transition:
+        opacity 320ms ease 120ms,
+        transform 320ms ease 120ms;
+    }
+    .bic-acc.is-open .bic-acc__inner > p {
+      opacity: 1;
+      transform: none;
+    }
+    .bic-acc__inner > p:last-child {
+      margin-bottom: var(--space-5);
+    }
+    .bic-acc__cite {
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      border-left: 2px solid var(--bbg-blue);
+      padding-left: var(--space-4) !important;
+      margin-left: calc(44px + var(--space-4));
+    }
+    @media (max-width: 560px) {
+      .bic-acc__inner > p {
+        padding-left: 0;
+      }
+      .bic-acc__cite {
+        margin-left: 0;
+      }
+      .bic-acc__icon {
+        width: 38px;
+        height: 38px;
+      }
+    }
+
+    /* ---------- Section 3: ICP ---------- */
+    .bic-timeline {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--space-7);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-5);
+      position: relative;
+    }
+    .bic-timeline__rail {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 9px;
+      height: 2px;
+      background: var(--bbg-border);
+      overflow: hidden;
+    }
+    .bic-timeline__rail i {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--bbg-blue), #e8556c);
+      transition: width 1400ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bic-timeline.is-in .bic-timeline__rail i {
+      width: 100%;
+    }
+    .bic-timeline__step {
+      position: relative;
+      padding-top: 2rem;
+    }
+    .bic-timeline__dot {
+      position: absolute;
+      top: 3px;
+      left: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--bbg-white);
+      border: 2px solid var(--bbg-border);
+      transition:
+        border-color 300ms ease var(--step-delay, 0ms),
+        box-shadow 300ms ease var(--step-delay, 0ms),
+        transform 300ms cubic-bezier(0.2, 0.8, 0.2, 1) var(--step-delay, 0ms);
+    }
+    .bic-timeline.is-in .bic-timeline__dot {
+      border-color: var(--bbg-blue);
+      box-shadow: 0 0 0 4px rgba(200, 16, 46, 0.12);
+      transform: scale(1.1);
+    }
+    .bic-timeline__name {
+      display: block;
+      font-weight: 600;
+      color: var(--bbg-ink);
+      margin-bottom: 0.35rem;
+    }
+    .bic-timeline__detail {
+      display: block;
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      line-height: 1.6;
+    }
+    @media (max-width: 780px) {
+      .bic-timeline {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+        padding-left: 1.6rem;
+      }
+      .bic-timeline__rail {
+        left: 6px;
+        right: auto;
+        top: 6px;
+        bottom: 6px;
+        width: 2px;
+        height: auto;
+      }
+      .bic-timeline__rail i {
+        width: 100%;
+        height: 0;
+        transition: height 1400ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .bic-timeline.is-in .bic-timeline__rail i {
+        height: 100%;
+      }
+      .bic-timeline__step {
+        padding-top: 0;
+      }
+      .bic-timeline__dot {
+        top: 4px;
+        left: -1.6rem;
+      }
+    }
+
+    .bic-icp__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    @media (max-width: 780px) {
+      .bic-icp__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .bic-icp__card {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+      position: relative;
+      overflow: hidden;
+      transition:
+        transform var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease),
+        border-color var(--dur) var(--ease);
+    }
+    .bic-icp__card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .bic-icp__card::before {
+      content: '';
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 3px;
+      background: var(--bbg-blue);
+    }
+    .bic-icp__card--warn::before {
+      background: var(--bbg-warning);
+    }
+    .bic-icp__h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: var(--fs-h4);
+      margin-bottom: var(--space-4);
+    }
+    .bic-icp__ico {
+      display: grid;
+      place-items: center;
+      width: 26px;
+      height: 26px;
+      color: var(--bbg-blue);
+      flex-shrink: 0;
+    }
+    .bic-icp__card--warn .bic-icp__ico {
+      color: #b8860b;
+    }
+    .bic-icp__ico svg {
+      width: 20px;
+      height: 20px;
+    }
+    .bic-icp__card p {
+      font-size: var(--fs-small);
+      line-height: 1.7;
+      color: var(--bbg-text);
+    }
+    .bic-icp__kicker {
+      margin: var(--space-4) 0 0;
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--bbg-border);
+      color: var(--bbg-text-muted) !important;
+      font-weight: 500;
+    }
+    .bic-ticks {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .bic-ticks li {
+      position: relative;
+      padding-left: 1.7rem;
+      margin-bottom: var(--space-3);
+      font-size: var(--fs-small);
+      line-height: 1.6;
+    }
+    .bic-ticks li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.28em;
+      width: 15px;
+      height: 8px;
+      border-left: 2px solid var(--bbg-blue);
+      border-bottom: 2px solid var(--bbg-blue);
+      transform: rotate(-45deg);
+    }
+
+    /* ---------- Section 4: decision picker ---------- */
+    .bic-picker {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+      gap: clamp(1.5rem, 4vw, 3rem);
+      align-items: start;
+      margin-bottom: var(--space-7);
+    }
+    @media (max-width: 900px) {
+      .bic-picker {
+        grid-template-columns: 1fr;
+      }
+    }
+    .bic-picker__qs {
+      border-top: 1px solid var(--bbg-border);
+    }
+    .bic-picker__q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-5);
+      padding: var(--space-5) 0;
+      border-bottom: 1px solid var(--bbg-border);
+      transition: background 220ms ease;
+    }
+    .bic-picker__q.is-answered .bic-picker__hint {
+      color: var(--bbg-blue);
+    }
+    .bic-picker__qtext p {
+      margin: 0;
+      font-weight: 500;
+      color: var(--bbg-ink);
+      max-width: 42ch;
+      line-height: 1.5;
+    }
+    .bic-picker__hint {
+      display: block;
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: 0.3rem;
+      transition: color var(--dur) var(--ease);
+    }
+    @media (max-width: 560px) {
+      .bic-picker__q {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-4);
+      }
+    }
+    .bic-seg {
+      position: relative;
+      display: inline-flex;
+      background: var(--bbg-surface);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      padding: 4px;
+      flex-shrink: 0;
+    }
+    .bic-seg__btn {
+      position: relative;
+      z-index: 1;
+      border: 0;
+      background: none;
+      cursor: pointer;
+      padding: 0.5rem 1.4rem;
+      border-radius: 999px;
+      font-size: var(--fs-small);
+      font-weight: 600;
+      color: var(--bbg-text-muted);
+      transition: color 220ms ease;
+    }
+    .bic-seg__btn.is-active {
+      color: var(--bbg-white);
+    }
+    .bic-seg__thumb {
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      left: 0;
+      width: var(--thumb-w, 0px);
+      border-radius: 999px;
+      background: var(--bbg-blue);
+      opacity: 0;
+      transform: translateX(var(--thumb-x, 0px));
+      transition:
+        transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        width 320ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        opacity 200ms ease;
+      pointer-events: none;
+    }
+    .bic-seg.is-set .bic-seg__thumb {
+      opacity: 1;
+    }
+    .bic-picker__reset {
+      margin-top: var(--space-4);
+      background: none;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      font-size: var(--fs-small);
+      font-weight: 600;
+      color: var(--bbg-text-muted);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .bic-picker__reset:hover {
+      color: var(--bbg-blue);
+    }
+
+    .bic-verdict {
+      position: sticky;
+      top: calc(var(--nav-h) + 2rem);
+      background: #0c0f14;
+      color: var(--bbg-white);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .bic-verdict::before {
+      content: '';
+      position: absolute;
+      inset: -40% -20% auto;
+      height: 70%;
+      z-index: -1;
+      background: radial-gradient(60% 100% at 70% 0%, rgba(200, 16, 46, 0.45), transparent 70%);
+    }
+    @media (max-width: 900px) {
+      .bic-verdict {
+        position: static;
+      }
+    }
+    .bic-verdict__eyebrow {
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .bic-verdict__answer {
+      font-size: clamp(1.4rem, 1.6vw + 1rem, 1.9rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--bbg-white);
+      margin: var(--space-3) 0 var(--space-3);
+      transition: opacity 200ms ease;
+    }
+    .bic-verdict__answer.is-swapping {
+      opacity: 0;
+    }
+    .bic-verdict__body {
+      font-size: var(--fs-small);
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.68);
+      min-height: 4.2em;
+    }
+    .bic-verdict__meter {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-areas:
+        'left right'
+        'bar bar';
+      align-items: center;
+      gap: 0.5rem;
+      margin: var(--space-5) 0;
+    }
+    .bic-verdict__meter-label {
+      grid-area: left;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.45);
+    }
+    .bic-verdict__meter-label--right {
+      grid-area: right;
+      text-align: right;
+    }
+    .bic-verdict__bar {
+      grid-area: bar;
+      display: block;
+      height: 6px;
+      border-radius: 99px;
+      background: rgba(255, 255, 255, 0.12);
+      overflow: hidden;
+      position: relative;
+    }
+    .bic-verdict__bar i {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: var(--v, 50%);
+      border-radius: 99px;
+      background: linear-gradient(90deg, #ff5c74, #c8102e);
+      transition:
+        width 480ms cubic-bezier(0.16, 1, 0.3, 1),
+        background 300ms ease;
+    }
+    .bic-verdict.is-empty .bic-verdict__bar i {
+      background: rgba(255, 255, 255, 0.22);
+    }
+    .bic-verdict__rule {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.5);
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: var(--space-4);
+      margin: 0;
+    }
+
+    /* ---------- Surfaces comparison ---------- */
+    .bic-surfaces {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-5);
+    }
+    @media (max-width: 780px) {
+      .bic-surfaces {
+        grid-template-columns: 1fr;
+      }
+    }
+    .bic-surface {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+      transition:
+        transform var(--dur) var(--ease),
+        border-color var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
+    }
+    .bic-surface:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .bic-surface.is-picked {
+      border-color: var(--bbg-blue);
+      box-shadow:
+        0 0 0 3px rgba(200, 16, 46, 0.1),
+        var(--shadow-md);
+    }
+    .bic-surface.is-dimmed {
+      opacity: 0.5;
+    }
+    .bic-surface__head {
+      padding-bottom: var(--space-4);
+      margin-bottom: var(--space-5);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .bic-surface__name {
+      font-size: var(--fs-h3);
+      margin-bottom: 0.4rem;
+    }
+    .bic-surface__cn {
+      font-size: var(--fs-small);
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+      margin-left: 0.35em;
+    }
+    .bic-surface__blurb {
+      margin: 0;
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+    }
+    .bic-surface__label {
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-3);
+    }
+    .bic-surface__label--muted {
+      color: var(--bbg-text-muted);
+      margin-top: var(--space-5);
+    }
+    .bic-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .bic-list li {
+      position: relative;
+      padding-left: 1.35rem;
+      margin-bottom: var(--space-3);
+      line-height: 1.6;
+      font-size: var(--fs-small);
+    }
+    .bic-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.58em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+    }
+    .bic-list--muted li {
+      color: var(--bbg-text-muted);
+    }
+    .bic-list--muted li::before {
+      background: var(--bbg-border);
+    }
+
+    /* ---------- Section 5: proof ---------- */
+    .bic-proof {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(1.5rem, 4vw, 3.5rem);
+      align-items: start;
+    }
+    @media (max-width: 780px) {
+      .bic-proof {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
+    }
+    .bic-proof__item {
+      border-left: 3px solid var(--bbg-blue);
+      padding-left: var(--space-5);
+    }
+    .bic-proof__figure {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      font-size: clamp(2.5rem, 5.5vw, 3.75rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--bbg-ink);
+      font-variant-numeric: tabular-nums;
+    }
+    .bic-proof__arrow {
+      font-size: 0.45em;
+      color: var(--bbg-text-muted);
+      font-weight: 400;
+    }
+    .bic-proof__figure--good {
+      color: var(--bbg-blue);
+    }
+    .bic-proof__label {
+      margin-top: var(--space-3);
+      max-width: 36ch;
+      color: var(--bbg-text);
+    }
+    .bic-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: var(--space-4);
+      max-width: 420px;
+    }
+    .bic-bars__row {
+      display: block;
+      height: 10px;
+      border-radius: 99px;
+      background: rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+    }
+    .bic-bars__row i {
+      display: block;
+      height: 100%;
+      width: 0;
+      border-radius: 99px;
+      transition: width 1200ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bic-bars__row i.is-before {
+      background: #cfd4da;
+    }
+    .bic-bars__row i.is-after {
+      background: linear-gradient(90deg, #ff5c74, var(--bbg-blue));
+      transition-delay: 180ms;
+    }
+    .bic-reveal.is-in .bic-bars__row i {
+      width: var(--w);
+    }
+    .bic-source {
+      margin-top: var(--space-6);
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      max-width: 70ch;
+    }
+
+    /* ---------- Section 6: the door ---------- */
+    .bic-door__grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .bic-door__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .bic-door__copy p {
+      max-width: 54ch;
+      color: var(--bbg-text);
+    }
+    .bic-door__copy a:not(.btn) {
+      color: var(--bbg-blue);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+    .bic-door__frame {
+      display: block;
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #14161a;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-lg);
+      transform: perspective(1100px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(0);
+      transition:
+        transform 400ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        box-shadow 400ms ease;
+      will-change: transform;
+    }
+    .bic-door__frame:hover {
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.28);
+    }
+    .bic-door__chrome {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0.65rem 0.85rem;
+      background: #1c1f25;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .bic-door__chrome i {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .bic-door__url {
+      margin-left: 0.75rem;
+      flex: 1;
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 99px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.72rem;
+      color: rgba(255, 255, 255, 0.55);
+    }
+    .bic-door__frame img {
+      width: 100%;
+      display: block;
+      transition: transform 600ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .bic-door__frame:hover img {
+      transform: scale(1.02);
+    }
+    .bic-door__cta {
+      position: absolute;
+      left: 50%;
+      bottom: 1.25rem;
+      transform: translate(-50%, 12px);
+      opacity: 0;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      font-weight: 600;
+      font-size: var(--fs-small);
+      padding: 0.65rem 1.35rem;
+      border-radius: 999px;
+      white-space: nowrap;
+      transition:
+        opacity 260ms ease,
+        transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+      box-shadow: 0 10px 26px rgba(200, 16, 46, 0.4);
+    }
+    .bic-door__frame:hover .bic-door__cta,
+    .bic-door__frame:focus-visible .bic-door__cta {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .bic-scan__row,
+      .bic-scroll__line,
+      .bic-scan__live i {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .bic-scan__track i {
+        animation: none !important;
+        width: var(--fill, 100%);
+      }
+      .bic-door__frame {
+        transform: none !important;
+      }
+    }
+  </style>
+
+  <script is:inline define:vars={{ verdicts }}>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ---- 1. Reveal on scroll ---- */
+      const revealEls = document.querySelectorAll('.bic-reveal');
+      if (reduced || !('IntersectionObserver' in window)) {
+        revealEls.forEach((el) => el.classList.add('is-in'));
+      } else {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-in');
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -6% 0px' },
+        );
+        revealEls.forEach((el) => io.observe(el));
+      }
+
+      /* ---- 2. Counters (decimal aware) ---- */
+      const counters = document.querySelectorAll('[data-counter]');
+      const runCounter = (el) => {
+        const target = parseFloat(el.dataset.counter || '0');
+        const dec = parseInt(el.dataset.decimals || '0', 10);
+        const suffix = el.dataset.suffix || '';
+        const start = performance.now();
+        const dur = 1500;
+        const tick = (now) => {
+          const t = Math.min(1, (now - start) / dur);
+          const eased = 1 - Math.pow(1 - t, 3);
+          el.textContent = (target * eased).toFixed(dec) + suffix;
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+      if (reduced || !('IntersectionObserver' in window)) {
+        counters.forEach((el) => {
+          const dec = parseInt(el.dataset.decimals || '0', 10);
+          el.textContent =
+            parseFloat(el.dataset.counter || '0').toFixed(dec) + (el.dataset.suffix || '');
+        });
+      } else {
+        const cio = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                runCounter(e.target);
+                cio.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.6 },
+        );
+        counters.forEach((el) => cio.observe(el));
+      }
+
+      /* ---- 3. Timeline rail fill ---- */
+      const timeline = document.querySelector('[data-timeline]');
+      if (timeline) {
+        if (reduced || !('IntersectionObserver' in window)) {
+          timeline.classList.add('is-in');
+        } else {
+          const tio = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((e) => {
+                if (e.isIntersecting) {
+                  e.target.classList.add('is-in');
+                  tio.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.35 },
+          );
+          tio.observe(timeline);
+        }
+      }
+
+      /* ---- 4. Hero parallax + scroll progress ---- */
+      const parallax = document.querySelector('[data-parallax]');
+      const bar = document.querySelector('.bic-progress__bar');
+      const hero = document.querySelector('[data-hero]');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const y = window.scrollY || window.pageYOffset;
+          if (parallax && hero && !reduced && y < hero.offsetHeight) {
+            parallax.style.setProperty('--parallax-y', y * 0.16 + 'px');
+          }
+          if (bar) {
+            const h = document.documentElement.scrollHeight - window.innerHeight;
+            bar.style.setProperty('--progress', (h > 0 ? Math.min(100, (y / h) * 100) : 0) + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      /* ---- 5. Gap accordion ---- */
+      const accordion = document.querySelector('[data-accordion]');
+      if (accordion) {
+        const items = Array.from(accordion.querySelectorAll('.bic-acc'));
+        const hint = document.querySelector('[data-gap-hint]');
+        const open = (item) => {
+          items.forEach((other) => {
+            const on = other === item;
+            other.classList.toggle('is-open', on);
+            const btn = other.querySelector('.bic-acc__head');
+            if (btn) btn.setAttribute('aria-expanded', on ? 'true' : 'false');
+          });
+          if (hint) {
+            const title = item.querySelector('.bic-acc__tag');
+            hint.textContent = title ? 'Reading: ' + title.textContent : '';
+          }
+        };
+        items.forEach((item) => {
+          const btn = item.querySelector('.bic-acc__head');
+          if (!btn) return;
+          btn.addEventListener('click', () => {
+            if (item.classList.contains('is-open')) {
+              item.classList.remove('is-open');
+              btn.setAttribute('aria-expanded', 'false');
+              if (hint) hint.textContent = 'Open a gap to read it.';
+            } else {
+              open(item);
+            }
+          });
+        });
+        if (items[0]) open(items[0]);
+      }
+
+      /* ---- 6. Mini program vs mobile site picker ---- */
+      const picker = document.querySelector('[data-picker]');
+      if (picker) {
+        const rows = Array.from(picker.querySelectorAll('[data-q]'));
+        const titleEl = picker.querySelector('[data-verdict-title]');
+        const bodyEl = picker.querySelector('[data-verdict-body]');
+        const fillEl = picker.querySelector('[data-verdict-fill]');
+        const resetBtn = picker.querySelector('[data-reset]');
+        const surfaces = Array.from(document.querySelectorAll('[data-surface]'));
+        const state = new Map();
+
+        // Verdict text comes from the locale copy object, handed in by the
+        // component, so this picker speaks whatever language the page is in.
+        const copy = {
+          none: { t: verdicts.empty.title, b: verdicts.empty.body },
+          mp: { t: verdicts.mp.title, b: verdicts.mp.body },
+          site: { t: verdicts.site.title, b: verdicts.site.body },
+          tie: { t: verdicts.even.title, b: verdicts.even.body },
+          partial: { t: verdicts.partial.title, b: verdicts.partial.body },
+        };
+
+        const verdictEl = picker.querySelector('.bic-verdict');
+        const render = () => {
+          let mp = 0;
+          let site = 0;
+          state.forEach((v) => (v === 'mp' ? mp++ : site++));
+          const answered = state.size;
+          const total = mp + site;
+          const pct = total ? Math.round((mp / total) * 100) : 50;
+          if (fillEl) fillEl.style.setProperty('--v', pct + '%');
+          if (verdictEl) verdictEl.classList.toggle('is-empty', answered === 0);
+
+          let key = 'none';
+          if (answered === 0) key = 'none';
+          else if (answered < rows.length) key = 'partial';
+          else if (mp > site) key = 'mp';
+          else if (site > mp) key = 'site';
+          else key = 'tie';
+
+          let t = copy[key].t;
+          let b = copy[key].b;
+          if (key === 'partial') {
+            if (mp === site) {
+              t = 'Too close to call';
+              b = 'Even so far. The remaining answers decide it.';
+            } else {
+              t = 'Leaning ' + (mp > site ? 'mini program' : 'mobile site');
+              b = 'Keep going. A couple more answers and this settles.';
+            }
+          }
+
+          if (titleEl && titleEl.textContent !== t) {
+            titleEl.classList.add('is-swapping');
+            setTimeout(() => {
+              titleEl.textContent = t;
+              titleEl.classList.remove('is-swapping');
+            }, 160);
+          }
+          if (bodyEl) bodyEl.textContent = b;
+
+          const decided =
+            answered === rows.length && mp !== site ? (mp > site ? 'mp' : 'site') : null;
+          surfaces.forEach((s) => {
+            s.classList.toggle('is-picked', decided === s.dataset.surface);
+            s.classList.toggle('is-dimmed', decided !== null && decided !== s.dataset.surface);
+          });
+        };
+
+        rows.forEach((row, i) => {
+          const seg = row.querySelector('.bic-seg');
+          const btns = Array.from(row.querySelectorAll('.bic-seg__btn'));
+          btns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const answer = btn.dataset.answer;
+              const yesSide = btn.dataset.yes;
+              const side = answer === 'yes' ? yesSide : yesSide === 'mp' ? 'site' : 'mp';
+              state.set(i, side);
+              btns.forEach((b) => b.classList.toggle('is-active', b === btn));
+              if (seg) {
+                seg.classList.add('is-set');
+                const thumb = seg.querySelector('.bic-seg__thumb');
+                if (thumb) {
+                  thumb.style.setProperty('--thumb-w', btn.offsetWidth + 'px');
+                  thumb.style.setProperty('--thumb-x', btn.offsetLeft + 'px');
+                }
+              }
+              row.classList.add('is-answered');
+              render();
+            });
+          });
+        });
+
+        if (resetBtn) {
+          resetBtn.addEventListener('click', () => {
+            state.clear();
+            rows.forEach((row) => {
+              row.classList.remove('is-answered');
+              const seg = row.querySelector('.bic-seg');
+              if (seg) seg.classList.remove('is-set');
+              row.querySelectorAll('.bic-seg__btn').forEach((b) => b.classList.remove('is-active'));
+            });
+            render();
+          });
+        }
+      }
+
+      /* ---- 7. Tilt on the partner-site door ---- */
+      const tilt = document.querySelector('[data-tilt]');
+      if (tilt && !reduced && window.matchMedia('(hover: hover)').matches) {
+        tilt.addEventListener('mousemove', (e) => {
+          const r = tilt.getBoundingClientRect();
+          const px = (e.clientX - r.left) / r.width - 0.5;
+          const py = (e.clientY - r.top) / r.height - 0.5;
+          tilt.style.setProperty('--ry', (px * 7).toFixed(2) + 'deg');
+          tilt.style.setProperty('--rx', (-py * 5).toFixed(2) + 'deg');
+        });
+        tilt.addEventListener('mouseleave', () => {
+          tilt.style.setProperty('--ry', '0deg');
+          tilt.style.setProperty('--rx', '0deg');
+        });
+      }
+
+      /* ---- 8. Magnetic buttons ---- */
+      if (!reduced && window.matchMedia('(hover: hover)').matches) {
+        document.querySelectorAll('.bic-magnetic').forEach((el) => {
+          el.addEventListener('mousemove', (e) => {
+            const r = el.getBoundingClientRect();
+            const x = e.clientX - r.left - r.width / 2;
+            const y = e.clientY - r.top - r.height / 2;
+            el.style.transform = `translate(${x * 0.12}px, ${y * 0.18}px)`;
+          });
+          el.addEventListener('mouseleave', () => {
+            el.style.transform = '';
+          });
+        });
+      }
+
+      /* ---- 9. Smooth in-page anchors ---- */
+      document.querySelectorAll('.bic a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+    })();
+  </script>
+</Layout>

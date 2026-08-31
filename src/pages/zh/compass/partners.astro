@@ -1,0 +1,313 @@
+---
+/**
+ * WO-2.3 — /zh/compass/partners (Chinese)
+ *
+ * Written for a China-domestic distributor, not translated from the English
+ * page. Different reader, different questions, different order. The English
+ * page sells "get in front of the brands"; this one answers the three things a
+ * Chinese distributor actually wants to know first: 收不收费, 做哪些品类,
+ * 合作的是什么样的品牌.
+ *
+ * Leads with the no-commission line, per the build spec.
+ *
+ * This and its thank-you page are the only two /zh/ URLs on the site. 中文 is
+ * offered nowhere else: see src/i18n/route-locales.ts and PartnerLayout.astro.
+ */
+import PartnerLayout from '../../../layouts/PartnerLayout.astro';
+import { APP_URL } from '../../../data/compass';
+
+/** Same asset note as the English page: drop the PNG in and it renders. */
+const WECHAT_ID = 'TheChinaPath';
+const WECHAT_QR: string | null = null; // '/Images/compass/wechat-qr.png'
+
+/** Category labels, written for the Chinese market rather than translated. */
+const categories = [
+  '美妆个护',
+  '食品饮料',
+  '服饰鞋包',
+  '家居生活',
+  '健康保健',
+  '母婴',
+  '宠物',
+  '膳食营养',
+];
+
+const title = '成为 Compass 合作伙伴 | TheChinaPath';
+const description =
+  '经销商、天猫与抖音服务商、进口商、线下渠道商，登录 Compass 数据库，对接我们正在为其寻找中国合作方的海外品牌。不收费，不抽佣。';
+---
+
+<PartnerLayout title={title} description={description} locale="zh" enPath="/compass/partners">
+  <section class="pt-hero">
+    <div class="container">
+      <span class="pt-hero__claim">我们不向经销商收取任何佣金。</span>
+      <h1 class="h1">海外品牌在找中国合作方，我们负责递名单。</h1>
+      <p class="lead pt-hero__lead">
+        Compass 是我们内部使用的合作方数据库。海外品牌来问"在中国该跟谁合作"，我们从这里出名单。如果您做经销、做店铺代运营、做进口，这一页就是入库的入口。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container pt-layout">
+      <div>
+        <div class="pt-block">
+          <h2 class="h2">入库要花多少钱</h2>
+          <p>
+            不花钱。没有入库费，没有会员费，没有付费排名，成交之后也不抽佣。这项工作的费用由品牌方承担，我们只向品牌方开票。您这边不会收到任何账单，也不欠我们任何介绍费。
+          </p>
+          <p>
+            这条规矩是特意定下来的，数据库的价值全在这里。只要能花钱往前排，名单就不再是推荐，而是广告。品牌方分辨得很快。
+          </p>
+        </div>
+
+        <div class="pt-block">
+          <h2 class="h2">我们收录哪些公司</h2>
+          <p>
+            一般贸易、保税区、跨境电商三条线上的全国性和区域性经销商；运营天猫、抖音旗舰店，做内容电商和直播的服务商；有资质、有清关能力、有仓储的进口商；以及真正握着货架的线下渠道方，包括 KA 采购、区域批发商和社区团购运营方。
+          </p>
+          <p>常年出单最多的消费品类：</p>
+          <div class="cmp-pills">
+            {categories.map((c) => <span class="cmp-pill">{c}</span>)}
+          </div>
+          <p>
+            以 B2C 为主，采购方在中国境内的 B2B 也做。品类不在上面这几项，一样可以写信过来。下个月进来的需求会决定我们接着找什么。
+          </p>
+        </div>
+
+        <div class="pt-block">
+          <h2 class="h2">是什么样的品牌</h2>
+          <p>
+            中型到大型的海外消费品牌，多数来自欧洲、北美和澳新。有的第一次进中国，要找第一个经销商或者第一家 TP；有的已经在卖，正在换人，因为原来的伙伴压着库存或者做不动品类。
+          </p>
+          <p>
+            我们不公开已经促成合作的品牌名单。客户不是为了当案例墙才签的合同，一份经销商名单同时兼作客户名单，两头都会丢。电话里可以讲得很具体：什么品类、什么渠道、通常是什么样的授权范围。
+          </p>
+          <p>
+            入库不等于承诺给您介绍生意。它的意思是，下一次有您这个品类的需求进来，桌上有您的名字。
+          </p>
+        </div>
+
+        <div class="pt-block">
+          <h2 class="h2">写信之后会发生什么</h2>
+          <p>
+            团队里会有人读，然后回信。合适的话先约一次电话，之后尽量安排上门。Compass 里的档案是见过面才写的，不是表格填出来的，这一点没得商量。会问到的问题，大多是您实际在跑的品类，而不是官网上列的品类；有真实体量的渠道；商务条件；以及合作过的品牌。
+          </p>
+        </div>
+
+        <div class="pt-block">
+          <h2 class="h2">已经是合作伙伴</h2>
+          <p>
+            已有账号的，请到 <a href={APP_URL}>compass.thechinapath.com</a> 登录，把资料更新一下。十八个月前写的档案，现在多半已经不准了，过期的档案在出名单的时候会被跳过去。
+          </p>
+        </div>
+      </div>
+
+      <!-- 表单 -->
+      <div class="pt-form-card">
+        <h2 class="pt-form-title">介绍一下贵公司</h2>
+        <p class="pt-form-note">一个工作日之内会有负责人亲自回复，不是自动回执。</p>
+
+        <form
+          class="form"
+          id="partner-form"
+          novalidate
+          data-copy={JSON.stringify({
+            captcha: '结果不对。题目已经刷新，请再试一次。',
+            required: '请填写公司名称、联系人、邮箱、主营品类和简要说明。',
+            sending: '发送中…',
+            send: '提交',
+            fail: '提交没有成功，请重试，或者直接加微信联系我们。',
+            ok: '已收到，我们会尽快回复。',
+            next: '/zh/compass/partners/thank-you',
+          })}
+        >
+          <div class="field">
+            <label class="field__label" for="company">公司名称 <span aria-hidden="true">*</span></label>
+            <input class="field__input" type="text" id="company" name="company" required />
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="name">联系人 <span aria-hidden="true">*</span></label>
+            <input class="field__input" type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label class="field__label" for="email">邮箱 <span aria-hidden="true">*</span></label>
+              <input
+                class="field__input"
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label class="field__label" for="wechat">微信号</label>
+              <input class="field__input" type="text" id="wechat" name="wechat" autocomplete="off" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="category">主营品类 <span aria-hidden="true">*</span></label>
+            <select class="field__input" id="category" name="category" required>
+              <option value="">请选择</option>
+              {categories.map((c) => <option value={c}>{c}</option>)}
+              <option value="其他">其他</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="message">主要做什么 <span aria-hidden="true">*</span></label>
+            <textarea
+              class="field__input field__textarea"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="有真实体量的渠道、覆盖的区域，以及最擅长做的品牌类型。"
+              required></textarea>
+          </div>
+
+          <div class="field field--captcha">
+            <label class="field__label" for="captcha">
+              简单验证一下，防机器人：<span id="captchaA">?</span> + <span id="captchaB">?</span> 等于几？
+              <span aria-hidden="true">*</span>
+            </label>
+            <input
+              class="field__input field__input--captcha"
+              type="text"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              id="captcha"
+              name="captcha"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form__honeypot" aria-hidden="true">
+            <label for="website_url">请留空</label>
+            <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="form__footer">
+            <button type="submit" class="btn btn--primary form__submit" id="partner-submit">
+              提交
+            </button>
+          </div>
+
+          <p class="form__status" id="partner-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="pt-wechat">
+          {
+            WECHAT_QR && (
+              <img
+                class="pt-wechat__qr"
+                src={WECHAT_QR}
+                alt={`${WECHAT_ID} 微信二维码`}
+                width="116"
+                height="116"
+                loading="lazy"
+              />
+            )
+          }
+          <div>
+            <p class="pt-wechat__label">也可以直接加微信</p>
+            <p class="pt-wechat__id">{WECHAT_ID}</p>
+            <p class="pt-wechat__body">扫码或搜索微信号。这条路通常比邮件快，我们这边也一样。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</PartnerLayout>
+
+<script is:inline>
+  (function () {
+    const form = document.getElementById('partner-form');
+    if (!form) return;
+    const status = document.getElementById('partner-status');
+    const submit = document.getElementById('partner-submit');
+    const captchaA = document.getElementById('captchaA');
+    const captchaB = document.getElementById('captchaB');
+    const captchaInput = document.getElementById('captcha');
+    const t = JSON.parse(form.dataset.copy || '{}');
+
+    function rollCaptcha() {
+      const a = 1 + Math.floor(Math.random() * 9);
+      const b = 1 + Math.floor(Math.random() * 9);
+      captchaA.textContent = a;
+      captchaB.textContent = b;
+      form.dataset.captchaSum = String(a + b);
+      if (captchaInput) captchaInput.value = '';
+    }
+    rollCaptcha();
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = '';
+      status.className = 'form__status';
+
+      const data = new FormData(form);
+      if (data.get('website_url')) return;
+
+      const category = String(data.get('category') || '').trim();
+      const payload = {
+        source: 'Compass partner (ZH)',
+        name: String(data.get('name') || '').trim(),
+        email: String(data.get('email') || '').trim(),
+        wechat: String(data.get('wechat') || '').trim(),
+        company: String(data.get('company') || '').trim(),
+        website: '',
+        services: category ? [category] : [],
+        budget: '',
+        profile: 'Distributor / partner application',
+        message: String(data.get('message') || '').trim(),
+        captcha: String(data.get('captcha') || '').trim(),
+        captchaExpected: String(form.dataset.captchaSum || ''),
+      };
+
+      const captchaNum = parseInt(payload.captcha, 10);
+      const expectedNum = parseInt(payload.captchaExpected, 10);
+      if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
+        status.textContent = t.captcha;
+        status.classList.add('form__status--error');
+        rollCaptcha();
+        return;
+      }
+      if (!payload.company || !payload.name || !payload.email || !category || !payload.message) {
+        status.textContent = t.required;
+        status.classList.add('form__status--error');
+        return;
+      }
+
+      submit.disabled = true;
+      submit.textContent = t.sending;
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const body = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(body.error || t.fail);
+        form.reset();
+        rollCaptcha();
+        status.textContent = t.ok;
+        status.classList.add('form__status--success');
+        window.location.assign(t.next);
+        return;
+      } catch (err) {
+        status.textContent = (err && err.message) || t.fail;
+        status.classList.add('form__status--error');
+      } finally {
+        submit.disabled = false;
+        submit.textContent = t.send;
+      }
+    });
+  })();
+</script>

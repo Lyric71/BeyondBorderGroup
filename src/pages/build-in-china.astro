@@ -1,0 +1,8 @@
+---
+/** WO-1.2 — /build-in-china. Markup, styles and behaviour live in the shared
+ *  shell; this route only picks the locale's copy. */
+import BuildInChina from '../components/pages/BuildInChina.astro';
+import copy from '../content/pages/build-in-china/en';
+---
+
+<BuildInChina copy={copy} contactHref="/contact" />

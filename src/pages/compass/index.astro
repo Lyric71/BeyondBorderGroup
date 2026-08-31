@@ -1,0 +1,241 @@
+---
+/**
+ * WO-2.1 — /compass, the pillar page.
+ *
+ * Ported from the Compass marketing site, rebuilt on TheChinaPath's own layout
+ * and section vocabulary. Nothing of the Compass site's own navigation, footer
+ * or brand furniture travels: this is a TheChinaPath page about a TheChinaPath
+ * capability.
+ *
+ * Framing guardrail from the spec: Compass is how the shortlist gets built. It
+ * is never a product with access tiers. No plan names, no signup language, no
+ * price, and the CTA is a brief or a call, never a login.
+ *
+ * Every ported string comes from src/data/compass.ts, which records its origin.
+ */
+import Layout from '../../layouts/Layout.astro';
+import {
+  HEADLINE,
+  PROBLEM_BODY,
+  COMPARISON,
+  STEPS,
+  CATEGORIES,
+  CATEGORIES_CLOSING,
+  NO_COMMISSION,
+  YEARS,
+  YEARS_LABEL,
+} from '../../data/compass';
+
+const title = 'Compass: the vetted China partner database | TheChinaPath';
+const description =
+  'Compass is our private database of vetted China distributors, Tmall and Douyin Partners and importers. It is how we build your shortlist, in weeks instead of a quarter.';
+---
+
+<Layout title={title} description={description}>
+  <!-- Hero -->
+  <section class="section section--dark cmp-hero">
+    <div class="container">
+      <span class="eyebrow">Find a partner</span>
+      <h1 class="h1">Skip three months of partner search.</h1>
+      <p class="lead cmp-hero__lead">
+        Compass is our private database of distributors, Tmall Partners, Douyin Partners and
+        importers. We have met every one in person, vetted them on site and, in plenty of cases,
+        worked alongside them on real brand projects.
+      </p>
+      <p class="cmp-hero__body">
+        The wrong partner in China can cost you two years. Some brands never really recover from
+        it. That is the part we help you skip.
+      </p>
+      <div class="cmp-hero__cta">
+        <a href="/compass/shortlist" class="btn btn--primary">Get your shortlist</a>
+        <a href="/compass/how-it-works" class="btn btn--ghost">See how a shortlist is built</a>
+      </div>
+      <p class="cmp-hero__meta">
+        <span class="cmp-hero__years">{YEARS}</span>
+        <span class="cmp-hero__years-label">{YEARS_LABEL}</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- The problem -->
+  <section class="section">
+    <div class="container cmp-narrow">
+      <span class="eyebrow">The problem</span>
+      <h2 class="h2">{HEADLINE}</h2>
+      {PROBLEM_BODY.map((p) => <p>{p}</p>)}
+    </div>
+  </section>
+
+  <!-- How it works, the three steps -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">{STEPS.eyebrow}</span>
+        <h2 class="h2">{STEPS.title}</h2>
+      </div>
+      <div class="cmp-steps">
+        {
+          STEPS.items.map((step) => (
+            <div class="cmp-step">
+              <p class="cmp-step__label">{step.label}</p>
+              <p class="cmp-step__body">{step.body}</p>
+            </div>
+          ))
+        }
+      </div>
+      <blockquote class="cmp-quote">{STEPS.quote}</blockquote>
+    </div>
+  </section>
+
+  <!-- The comparison table -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">{COMPARISON.eyebrow}</span>
+        <h2 class="h2">{COMPARISON.title}</h2>
+      </div>
+      <div class="cmp-table-wrap">
+        <table class="cmp-table">
+          <thead>
+            <tr>
+              <th scope="col"><span class="sr-only">What we compare</span></th>
+              <th scope="col">{COMPARISON.columnHeaders.scraped}</th>
+              <th scope="col">{COMPARISON.columnHeaders.ours}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              COMPARISON.rows.map((row) => (
+                <tr>
+                  <th scope="row">{row.label}</th>
+                  <td data-col={COMPARISON.columnHeaders.scraped}>{row.scraped}</td>
+                  <td data-col={COMPARISON.columnHeaders.ours}>{row.ours}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">What it covers</span>
+        <h2 class="h2">Consumer categories, domestic and cross-border.</h2>
+        <p class="lead">
+          Distributors, Tmall Partners, Douyin Partners, importers and channel specialists across
+          China. Online and offline, national and regional, with niche category specialists in the
+          mix. A name only goes in when we have a real reason to know it.
+        </p>
+      </div>
+      <div class="cmp-pills">
+        {CATEGORIES.map((c) => <span class="cmp-pill">{c}</span>)}
+      </div>
+      <p class="cmp-coverage__closing">{CATEGORIES_CLOSING}</p>
+    </div>
+  </section>
+
+  <!-- Read more -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Read more</span>
+        <h2 class="h2">The longer answer, in three parts.</h2>
+      </div>
+      <div class="grid grid-3">
+        <a href="/compass/why-vetted" class="card cmp-card">
+          <h3 class="card__title">Why vetted</h3>
+          <p>What the database is, and what it actually costs a brand when the wrong partner gets
+            picked.</p>
+          <span class="card__footer btn btn--ghost">Read</span>
+        </a>
+        <a href="/compass/what-is-inside" class="card cmp-card">
+          <h3 class="card__title">What is inside</h3>
+          <p>Who is in there, what we record about each one, and why we do not sell it as a
+            product.</p>
+          <span class="card__footer btn btn--ghost">Read</span>
+        </a>
+        <a href="/compass/how-it-works" class="card cmp-card">
+          <h3 class="card__title">How a shortlist is built</h3>
+          <p>From the first brief to a warm introduction, in weeks instead of months.</p>
+          <span class="card__footer btn btn--ghost">Read</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--dark">
+    <div class="container cmp-narrow">
+      <span class="eyebrow">Get in touch</span>
+      <h2 class="h2">No obligation. No long pitch.</h2>
+      <p class="cmp-hero__lead">
+        Entering China? Replacing a partner that has stopped pulling its weight? Still working out
+        the right shape for distribution in your category? The first call is short. Most people know
+        inside half an hour whether this is the right kind of help for them. If it is not, we can
+        usually point you to someone whose work is.
+      </p>
+      <p class="cmp-hero__body">{NO_COMMISSION}</p>
+      <div class="cmp-hero__cta">
+        <a href="/compass/shortlist" class="btn btn--primary">Brief us on your category</a>
+        <a href="/enter-china/distribution" class="btn btn--ghost">See the distribution service</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cmp-hero .h1 {
+    max-width: 16ch;
+  }
+  .cmp-hero__meta {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    margin-top: var(--space-7);
+    padding-top: var(--space-5);
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+  .cmp-hero__years {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--bbg-white);
+  }
+  .cmp-hero__years-label {
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .cmp-coverage__closing {
+    margin-top: var(--space-5);
+    color: var(--bbg-text-muted);
+  }
+
+  .cmp-card {
+    text-decoration: none;
+    color: inherit;
+  }
+  .cmp-card .card__title {
+    color: var(--bbg-ink);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>

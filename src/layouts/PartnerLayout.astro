@@ -1,0 +1,209 @@
+---
+/**
+ * WO-2.3 — layout for the Compass partner pages only.
+ *
+ * Why these pages do not use the site Layout. The audience is China-domestic
+ * distributors, the pages ship in English and Chinese, and the rest of the site
+ * ships in English, French, German and Spanish. Rendering the full site header
+ * on a Chinese page would put a nav in front of the reader whose every link
+ * leads to a page that does not exist in Chinese. So the partner pages get
+ * their own minimal chrome: the logo, a two-way EN / 中文 switch between the two
+ * partner pages, and a slim footer.
+ *
+ * That also keeps the containment guarantee simple. 中文 is offered here and
+ * nowhere else, because this is the only layout that renders it, and the
+ * hreflang cluster is written here as a two-entry EN/ZH pair with x-default on
+ * the English page.
+ *
+ * These pages are indexable. They are kept out of the main nav on purpose and
+ * are reachable from the footer and from direct links.
+ */
+import '../styles/global.css';
+import SchemaGraph from '../components/SchemaGraph.astro';
+import { SITE_URL, organizationSchema, schemaGraph } from '../lib/seo';
+import { routeLocalePath, type AnyLocale } from '../i18n/route-locales';
+
+interface Props {
+  title: string;
+  description: string;
+  /** 'en' or 'zh'. Drives <html lang>, the switcher state and og:locale. */
+  locale: AnyLocale;
+  /** Canonical English path for this page, used to resolve the locale pair. */
+  enPath: string;
+  /** Set on the thank-you pages, which must not enter the index. */
+  noindex?: boolean;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const { title, description, locale, enPath, noindex = false, schema: pageSchema } = Astro.props;
+
+const enHref = SITE_URL + routeLocalePath(enPath, 'en');
+const zhHref = SITE_URL + routeLocalePath(enPath, 'zh');
+const canonicalHref = locale === 'zh' ? zhHref : enHref;
+
+const OG_IMAGE = SITE_URL + '/Images/hero-livestream.jpg';
+const ogLocale = locale === 'zh' ? 'zh_CN' : 'en_US';
+const ogLocaleAlternate = locale === 'zh' ? 'en_US' : 'zh_CN';
+
+const isZh = locale === 'zh';
+const copy = isZh
+  ? {
+      skip: '跳到主要内容',
+      home: 'TheChinaPath 首页',
+      switchAria: '切换语言',
+      other: 'English',
+      otherHref: routeLocalePath(enPath, 'en') ?? '/compass/partners',
+      cities: '上海 · 香港 · 巴黎',
+      back: '返回 TheChinaPath',
+      privacy: '隐私政策',
+    }
+  : {
+      skip: 'Skip to content',
+      home: 'TheChinaPath Home',
+      switchAria: 'Change language',
+      other: '中文',
+      otherHref: routeLocalePath(enPath, 'zh') ?? '/zh/compass/partners',
+      cities: 'Shanghai · Hong Kong · Paris',
+      back: 'Back to TheChinaPath',
+      privacy: 'Privacy Policy',
+    };
+
+const pageSchemaList = pageSchema ? (Array.isArray(pageSchema) ? pageSchema : [pageSchema]) : [];
+const graph = schemaGraph(organizationSchema(), ...pageSchemaList);
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang={isZh ? 'zh-Hans' : 'en'}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#C8102E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalHref} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    {/* Two-entry cluster. x-default sits on the English page. Nothing else on
+        the site emits a zh hreflang. */}
+    {!noindex && <link rel="alternate" hreflang="en" href={enHref} />}
+    {!noindex && <link rel="alternate" hreflang="zh" href={zhHref} />}
+    {!noindex && <link rel="alternate" hreflang="x-default" href={enHref} />}
+
+    <meta property="og:site_name" content="TheChinaPath" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalHref} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={OG_IMAGE} />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content={ogLocaleAlternate} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={OG_IMAGE} />
+
+    <SchemaGraph schema={graph} />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">{copy.skip}</a>
+
+    <header class="pl-nav">
+      <div class="container pl-nav__inner">
+        <a href="/" class="pl-nav__logo" aria-label={copy.home}>
+          <img
+            src="/Images/thechinapath-horizontal.png"
+            alt="TheChinaPath"
+            width="440"
+            height="189"
+          />
+        </a>
+        <a class="pl-nav__lang" href={copy.otherHref} hreflang={isZh ? 'en' : 'zh'} aria-label={copy.switchAria}>
+          {copy.other}
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="pl-footer">
+      <div class="container pl-footer__inner">
+        <p class="pl-footer__cities">{copy.cities}</p>
+        <p class="pl-footer__links">
+          <a href="/">{copy.back}</a>
+          <span aria-hidden="true">·</span>
+          <a href="/privacy-policy">{copy.privacy}</a>
+        </p>
+        <p class="pl-footer__copy">© TheChinaPath {year}</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .pl-nav {
+    border-bottom: 1px solid var(--bbg-border);
+    background: var(--bbg-white);
+  }
+  .pl-nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-5);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+  }
+  .pl-nav__logo img {
+    height: 34px;
+    width: auto;
+    display: block;
+  }
+  .pl-nav__lang {
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--bbg-ink);
+    border: 1px solid var(--bbg-border);
+    border-radius: 999px;
+    padding: 0.45rem 1rem;
+    transition: all var(--dur) var(--ease);
+  }
+  .pl-nav__lang:hover {
+    border-color: var(--bbg-blue);
+    color: var(--bbg-blue);
+  }
+
+  .pl-footer {
+    background: var(--bbg-black);
+    color: rgba(255, 255, 255, 0.7);
+    padding: var(--space-6) 0;
+    margin-top: var(--space-8);
+  }
+  .pl-footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4) var(--space-6);
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--fs-small);
+  }
+  .pl-footer__links {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+  }
+  .pl-footer a {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .pl-footer a:hover {
+    color: var(--bbg-white);
+    text-decoration: underline;
+  }
+</style>

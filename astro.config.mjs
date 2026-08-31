@@ -353,6 +353,8 @@ const resolveFrInsightDest = (/** @type {string} */ dest) => {
  * @type {Record<string, string>}
  */
 const staticEnToFr = {
+  '/social-in-china': '/fr/reseaux-sociaux-chinois',
+  '/build-in-china': '/fr/site-web-et-wechat-en-chine',
   '/': '/fr',
   '/about': '/fr/qui-nous-sommes',
   '/contact': '/fr/nous-contacter',
@@ -390,6 +392,8 @@ const staticFrToEn = Object.fromEntries(Object.entries(staticEnToFr).map(([en, f
  * @type {Record<string, string>}
  */
 const staticEnToDe = {
+  '/social-in-china': '/de/chinesische-social-media',
+  '/build-in-china': '/de/website-und-wechat-in-china',
   '/': '/de',
   '/about': '/de/ueber-uns',
   '/contact': '/de/kontakt',
@@ -427,6 +431,8 @@ const staticDeToEn = Object.fromEntries(Object.entries(staticEnToDe).map(([en, d
  * @type {Record<string, string>}
  */
 const staticEnToEs = {
+  '/social-in-china': '/es/redes-sociales-chinas',
+  '/build-in-china': '/es/web-y-wechat-en-china',
   '/': '/es',
   '/about': '/es/quienes-somos',
   '/contact': '/es/contacto',
@@ -455,6 +461,19 @@ const staticEnToEs = {
   '/terms-of-service': '/es/condiciones-de-uso',
 };
 const staticEsToEn = Object.fromEntries(Object.entries(staticEnToEs).map(([en, es]) => [es, en]));
+
+/**
+ * The ZH partner cluster (WO-2.3). These are the only two Chinese URLs on the
+ * site. Kept here rather than imported so this config stays dependency-free,
+ * and mirrored in src/i18n/route-locales.ts, which is the runtime source of
+ * truth for the switcher and the hreflang tags.
+ */
+/** @type {Record<string, string>} */
+const staticEnToZh = {
+  '/compass/partners': '/zh/compass/partners',
+  '/compass/partners/thank-you': '/zh/compass/partners/thank-you',
+};
+const staticZhToEn = Object.fromEntries(Object.entries(staticEnToZh).map(([en, zh]) => [zh, en]));
 
 /**
  * Reduce a built page path to its canonical English equivalent.
@@ -490,6 +509,7 @@ const canonicalize = (/** @type {string} */ path) => {
     if (path === '/de/referenzen') return '/work';
     return staticDeToEn[path] ?? null;
   }
+  if (path.startsWith('/zh')) return staticZhToEn[path] ?? null;
   if (path.startsWith('/es')) {
     if (path.startsWith('/es/analisis/')) {
       const tail = path.slice('/es/analisis/'.length);
@@ -618,6 +638,7 @@ export default defineConfig({
         !page.includes('/fr/merci') &&
         !page.includes('/de/danke') &&
         !page.includes('/es/gracias') &&
+        !page.includes('/compass/partners/thank-you') &&
         !page.includes('/api/'),
       changefreq: 'weekly',
       priority: 0.7,
@@ -632,10 +653,26 @@ export default defineConfig({
         const url = new URL(item.url);
         const path = url.pathname === '/' ? '/' : url.pathname.replace(/\/$/, '');
         const enPath = canonicalize(path);
+        if (!enPath) return item;
+        // WO-2.3: the partner routes are a two-entry EN/ZH cluster and nothing
+        // else. Handled before the FR/DE/ES lookup so no zh hreflang can leak
+        // onto another page and no fr/de/es hreflang can land on this one.
+        const zhPath = staticEnToZh[enPath];
+        if (zhPath) {
+          const enOnly = SITE + enPath;
+          return {
+            ...item,
+            url: path.startsWith('/zh') ? SITE + zhPath : enOnly,
+            links: [
+              { lang: 'en', url: enOnly },
+              { lang: 'zh', url: SITE + zhPath },
+              { lang: 'x-default', url: enOnly },
+            ],
+          };
+        }
         const frPath = enToFr(enPath);
         const dePath = enToDe(enPath);
         const esPath = enToEs(enPath);
-        if (!enPath) return item;
         // Match the canonical URL convention from Layout.astro: no trailing
         // slash except root. The sitemap <loc> and xhtml:link href must agree
         // so Google does not see them as different URLs.

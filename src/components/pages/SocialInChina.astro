@@ -1,0 +1,1646 @@
+---
+/**
+ * /social-in-china, shared across every locale.
+ *
+ * The page carries a large inline stylesheet, a platform tab switcher and a
+ * filter bar. Holding that once here, and letting each locale supply only a
+ * copy object, keeps the four language versions from drifting and means a fix
+ * happens in one place. Shape: src/content/pages/social-in-china/types.ts.
+ *
+ * Guardrails from the build spec, in every language:
+ *  - no pricing (fixed scope and fixed price is the offer shape, never a figure)
+ *  - one outbound target, theredscroll.com, reachable from two places
+ */
+import Layout from '../../layouts/Layout.astro';
+import type { SocialInChinaCopy } from '../../content/pages/social-in-china/types';
+
+interface Props {
+  copy: SocialInChinaCopy;
+  /** Locale-correct path for the "talk to us instead" fallback. */
+  contactHref: string;
+}
+
+const { copy, contactHref } = Astro.props;
+const c = copy;
+const TRS = 'https://theredscroll.com';
+const stages = c.stages;
+---
+
+<Layout title={c.meta.title} description={c.meta.description}>
+  <div class="sic-progress" aria-hidden="true"><div class="sic-progress__bar"></div></div>
+
+  <article class="sic">
+    <!-- 1. Hero -->
+    <section class="sic-hero" data-hero>
+      <div class="sic-hero__bg" aria-hidden="true" data-parallax>
+        <img
+          src="/Images/social/douyin.png"
+          alt=""
+          width="1536"
+          height="1024"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="sic-hero__veil" aria-hidden="true"></div>
+      <div class="sic-hero__grain" aria-hidden="true"></div>
+
+      <div class="container sic-hero__inner">
+        <div class="sic-hero__copy">
+          <nav class="sic-crumbs" aria-label="Breadcrumb">
+            <a href="/">{c.hero.crumbHome}</a>
+            <span aria-hidden="true">/</span>
+            <span>{c.hero.crumbSection}</span>
+          </nav>
+          <span class="eyebrow sic-reveal">{c.hero.eyebrow}</span>
+          <h1 class="sic-hero__title sic-reveal" style="--reveal-delay:60ms">
+            {c.hero.titleBefore}<em>{c.hero.titleEm}</em>{c.hero.titleAfter}
+          </h1>
+          <p class="sic-hero__lead sic-reveal" style="--reveal-delay:140ms">{c.hero.lead}</p>
+          <p class="sic-hero__body sic-reveal" style="--reveal-delay:210ms">
+            {c.hero.bodyBefore}<a href={TRS}>{c.hero.trsAnchor}</a>{c.hero.bodyAfter}
+          </p>
+          <div class="sic-hero__cta sic-reveal" style="--reveal-delay:280ms">
+            <a href={TRS} class="btn btn--primary sic-magnetic">{c.hero.ctaPrimary}</a>
+            <a href="#the-split" class="btn btn--ghost-light sic-magnetic">{c.hero.ctaSecondary}</a>
+          </div>
+
+          <div class="sic-hero__strip sic-reveal" style="--reveal-delay:360ms">
+            {
+              c.platforms.map((p) => (
+                <button class="sic-chip" type="button" data-jump={p.key}>
+                  <span class="sic-chip__logo" style={`--logo:url(${p.logo})`} aria-hidden="true" />
+                  <span class="sic-chip__name">{p.name}</span>
+                  <span class="sic-chip__cn">{p.cn}</span>
+                </button>
+              ))
+            }
+          </div>
+        </div>
+
+        <a
+          class="sic-door__frame sic-hero__shot sic-reveal"
+          href={TRS}
+          data-tilt
+          aria-label={c.hero.shotAria}
+          style="--reveal-delay:300ms"
+        >
+          <span class="sic-door__chrome" aria-hidden="true">
+            <i></i><i></i><i></i>
+            <span class="sic-door__url">theredscroll.com</span>
+          </span>
+          <img
+            src="/Images/doors/theredscroll-home.png"
+            alt={c.hero.shotAlt}
+            width="1440"
+            height="756"
+            fetchpriority="high"
+          />
+          <span class="sic-door__cta">{c.hero.shotCta} <span aria-hidden="true">&#8594;</span></span>
+        </a>
+      </div>
+
+      <a href="#platform-map" class="sic-scroll" aria-label={c.hero.scrollAria}>
+        <span class="sic-scroll__line"></span>
+        <span>{c.hero.scrollLabel}</span>
+      </a>
+    </section>
+
+    <!-- 2. The platform map -->
+    <section class="section sic-mapsec" id="platform-map">
+      <div class="container">
+        <div class="section-header sic-reveal">
+          <span class="eyebrow">{c.map.eyebrow}</span>
+          <h2 class="h2">{c.map.title}</h2>
+          <p class="lead">{c.map.lead}</p>
+        </div>
+
+        <div class="sic-switch" data-switch>
+          <div class="sic-switch__rail" role="tablist" aria-label={c.map.tablistAria}>
+            {
+              c.platforms.map((p, i) => (
+                <button
+                  class={`sic-tab${i === 0 ? ' is-active' : ''}`}
+                  type="button"
+                  role="tab"
+                  id={`tab-${p.key}`}
+                  aria-selected={i === 0 ? 'true' : 'false'}
+                  aria-controls={`panel-${p.key}`}
+                  data-tab={p.key}
+                  style={`--tint:${p.tint}`}
+                >
+                  <span class="sic-tab__logo" style={`--logo:url(${p.logo})`} aria-hidden="true" />
+                  <span class="sic-tab__text">
+                    <span class="sic-tab__name">{p.name}</span>
+                    <span class="sic-tab__cn">{p.cn}</span>
+                  </span>
+                  <span class="sic-tab__role">{p.role}</span>
+                </button>
+              ))
+            }
+            <span class="sic-switch__thumb" aria-hidden="true"></span>
+          </div>
+
+          <div class="sic-switch__stage">
+            {
+              c.platforms.map((p, i) => (
+                <div
+                  class={`sic-panel${i === 0 ? ' is-active' : ''}`}
+                  id={`panel-${p.key}`}
+                  role="tabpanel"
+                  aria-labelledby={`tab-${p.key}`}
+                  hidden={i !== 0}
+                  style={`--tint:${p.tint}`}
+                >
+                  <figure class="sic-panel__media">
+                    <img src={p.image} alt={p.alt} loading={i === 0 ? 'eager' : 'lazy'} />
+                    <figcaption>
+                      <span class="sic-panel__badge">{p.cn}</span>
+                    </figcaption>
+                  </figure>
+
+                  <div class="sic-panel__copy">
+                    <span class="sic-panel__role">{p.role}</span>
+                    <h3 class="sic-panel__name">{p.name}</h3>
+                    <p class="sic-panel__body">{p.body}</p>
+
+                    <div class="sic-funnel" aria-hidden="true">
+                      <span class="sic-funnel__title">{c.map.funnelTitle}</span>
+                      <div class="sic-funnel__track">
+                        {p.weights.map((w, j) => (
+                          <span
+                            class={`sic-funnel__cell is-w${w}`}
+                            style={`--cell-delay:${j * 70}ms`}
+                          >
+                            <i />
+                            <em>{stages[j]}</em>
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <p class="sic-panel__owner">
+                      <span class="sic-panel__owner-dot" aria-hidden="true" />
+                      <span class="sic-panel__owner-text">
+                        {p.owner === 'Split' ? c.map.ownerSplit : c.map.ownerTrs}{' '}
+                        <a href="#the-split">{c.map.ownerLink}</a>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+
+        <!-- Long tail -->
+        <div class="sic-tail sic-reveal">
+          <div class="sic-tail__intro">
+            <h3 class="sic-tail__h3">{c.map.tailTitle}</h3>
+            <p>{c.map.tailBody}</p>
+          </div>
+          <ul class="sic-tail__grid">
+            {
+              c.longTail.map((t, i) => (
+                <li class="sic-tail__chip" style={`--chip-delay:${i * 55}ms`}>
+                  <span class="sic-tail__logo" style={`--logo:url(${t.logo})`} aria-hidden="true" />
+                  <span class="sic-tail__name">
+                    {t.name} <b>{t.cn}</b>
+                  </span>
+                  <span class="sic-tail__who">{t.who}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Where social sells and where it only builds -->
+    <section class="section sic-splitsec" id="the-split">
+      <div class="container">
+        <div class="section-header section-header--center sic-reveal">
+          <span class="eyebrow">{c.splitSection.eyebrow}</span>
+          <h2 class="h2">{c.splitSection.title}</h2>
+          <p class="lead">{c.splitSection.lead}</p>
+        </div>
+
+        <div class="sic-testbar sic-reveal" data-test>
+          <span class="sic-testbar__label">{c.splitSection.testLabel}</span>
+          <div class="sic-seg" role="group" aria-label={c.splitSection.filterAria}>
+            <button type="button" class="sic-seg__btn is-active" data-side="both">
+              {c.splitSection.filterBoth}
+            </button>
+            <button type="button" class="sic-seg__btn" data-side="gmv">
+              {c.splitSection.filterGmv}
+            </button>
+            <button type="button" class="sic-seg__btn" data-side="audience">
+              {c.splitSection.filterAudience}
+            </button>
+            <span class="sic-seg__thumb" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="sic-board" data-board>
+          {
+            c.split.map((s, i) => (
+              <article
+                class="sic-col sic-reveal"
+                data-col={s.key}
+                style={`--reveal-delay:${i * 90}ms`}
+              >
+                <header class="sic-col__head">
+                  <span class="sic-col__owner">{s.owner}</span>
+                  <h3 class="sic-col__title">{s.title}</h3>
+                  <span class="sic-col__metric">{s.metric}</span>
+                </header>
+                <ul class="sic-list">
+                  {s.items.map((it, j) => (
+                    <li style={`--li-delay:${j * 60}ms`}>{it}</li>
+                  ))}
+                </ul>
+                <p class="sic-col__why">{s.why}</p>
+              </article>
+            ))
+          }
+          <span class="sic-board__seam" aria-hidden="true"></span>
+        </div>
+
+        <p class="sic-note sic-reveal">{c.splitSection.note}</p>
+      </div>
+    </section>
+
+    <!-- 4. Proof -->
+    <section class="section section--alt sic-proofsec">
+      <div class="container">
+        <div class="section-header sic-reveal">
+          <span class="eyebrow">{c.proof.eyebrow}</span>
+          <h2 class="h2">{c.proof.title}</h2>
+        </div>
+
+        <div class="sic-proof">
+          <div class="sic-proof__item sic-reveal">
+            <span class="sic-proof__figure">
+              <span class="sic-proof__from">43K</span>
+              <span class="sic-proof__arrow" aria-hidden="true">&#8594;</span>
+              <span data-counter="187" data-suffix="K">0K</span>
+            </span>
+            <p class="sic-proof__label">{c.proof.followersLabel}</p>
+            <span class="sic-proof__track" aria-hidden="true"><i style="--w:100%"></i></span>
+          </div>
+
+          <div class="sic-proof__item sic-reveal" style="--reveal-delay:90ms">
+            <span class="sic-proof__figure">
+              <span class="sic-proof__plus">+</span><span data-counter="31" data-suffix="%">0%</span>
+            </span>
+            <p class="sic-proof__label">{c.proof.sameStoreLabel}</p>
+            <span class="sic-proof__track" aria-hidden="true"><i style="--w:62%"></i></span>
+          </div>
+
+          <div class="sic-proof__item sic-reveal" style="--reveal-delay:180ms">
+            <span class="sic-proof__figure"><span data-counter="10000" data-group="1">0</span></span>
+            <p class="sic-proof__label">{c.proof.blueLabel}</p>
+            <span class="sic-proof__track" aria-hidden="true"><i style="--w:78%"></i></span>
+          </div>
+        </div>
+
+        <p class="sic-source">{c.proof.source}</p>
+      </div>
+    </section>
+
+    <!-- 5. The handoff -->
+    <section class="section sic-door" id="handoff">
+      <div class="container sic-door__grid sic-door__grid--single">
+        <div class="sic-door__copy sic-reveal">
+          <span class="eyebrow">{c.door.eyebrow}</span>
+          <h2 class="h2">{c.door.title}</h2>
+          <p>
+            {c.door.bodyOneBefore}<a href={TRS}>{c.door.trsAnchor}</a>{c.door.bodyOneAfter}
+          </p>
+          <p>{c.door.bodyTwo}</p>
+          <div class="sic-hero__cta">
+            <a href={TRS} class="btn btn--primary sic-magnetic">{c.door.ctaPrimary}</a>
+            <a href={contactHref} class="btn btn--secondary sic-magnetic">{c.door.ctaSecondary}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <style is:global>
+    /* ============================================================
+       /social-in-china
+       ============================================================ */
+    .sic {
+      overflow-x: clip;
+    }
+
+    /* ---------- Reveal + motion primitives ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .sic-reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition:
+          opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+          transform 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+      }
+      .sic-reveal.is-in {
+        opacity: 1;
+        transform: none;
+      }
+      .sic-magnetic {
+        will-change: transform;
+        transition:
+          transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          background-color 200ms ease,
+          color 200ms ease,
+          border-color 200ms ease;
+      }
+    }
+
+    /* ---------- Scroll progress ---------- */
+    .sic-progress {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: 3px;
+      z-index: 1000;
+      pointer-events: none;
+    }
+    .sic-progress__bar {
+      height: 100%;
+      width: var(--progress, 0%);
+      background: linear-gradient(90deg, #c8102e 0%, #ff5c74 100%);
+      box-shadow: 0 0 12px rgba(200, 16, 46, 0.5);
+      transition: width 90ms linear;
+    }
+
+    /* ---------- HERO ---------- */
+    .sic-hero {
+      position: relative;
+      min-height: clamp(600px, 82vh, 820px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: var(--bbg-white);
+      overflow: hidden;
+      isolation: isolate;
+      padding: clamp(88px, 10vh, 128px) 0 clamp(96px, 12vh, 132px);
+    }
+    .sic-hero__bg {
+      position: absolute;
+      inset: -8% 0 0;
+      z-index: -3;
+    }
+    .sic-hero__bg img {
+      width: 100%;
+      height: 112%;
+      object-fit: cover;
+      object-position: 62% 45%;
+      transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.05);
+      transition: transform 80ms linear;
+    }
+    .sic-hero__veil {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          104deg,
+          rgba(6, 8, 12, 0.95) 0%,
+          rgba(6, 8, 12, 0.86) 34%,
+          rgba(6, 8, 12, 0.5) 72%,
+          rgba(6, 8, 12, 0.35) 100%
+        ),
+        radial-gradient(110% 80% at 0% 100%, rgba(200, 16, 46, 0.34) 0%, rgba(200, 16, 46, 0) 62%);
+    }
+    .sic-hero__grain {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+      background-size: 3px 3px;
+      mix-blend-mode: overlay;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    .sic-hero__inner {
+      position: relative;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+      align-items: center;
+      gap: clamp(2rem, 4vw, 3.5rem);
+    }
+    .sic-hero__copy {
+      min-width: 0;
+    }
+
+    /* The screenshot, framed as a browser window. It is the primary action in
+       the hero: the page hands this work to TheRedScroll, so show the place it
+       goes before making the argument. */
+    .sic-hero__shot {
+      align-self: center;
+    }
+    .sic-hero__shot img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 1024px) {
+      .sic-hero__inner {
+        grid-template-columns: 1fr;
+      }
+      .sic-hero__shot {
+        max-width: 640px;
+      }
+    }
+    @media (max-width: 700px) {
+      .sic-hero__shot {
+        display: none;
+      }
+    }
+
+    .sic-door__grid--single {
+      grid-template-columns: 1fr !important;
+      max-width: 820px;
+    }
+    .sic-crumbs {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: var(--fs-small);
+      color: rgba(255, 255, 255, 0.55);
+      margin-bottom: var(--space-4);
+    }
+    .sic-crumbs a {
+      color: rgba(255, 255, 255, 0.82);
+      font-weight: 500;
+    }
+    .sic-crumbs a:hover {
+      color: var(--bbg-white);
+    }
+    .sic-hero .eyebrow {
+      color: #ff6b81;
+    }
+    .sic-hero__title {
+      font-size: clamp(2.4rem, 4vw + 1rem, 4.25rem);
+      line-height: 1.03;
+      letter-spacing: -0.03em;
+      color: var(--bbg-white);
+      max-width: 13ch;
+      margin-bottom: var(--space-5);
+    }
+    .sic-hero__title em {
+      font-style: italic;
+      color: #ff6b81;
+    }
+    .sic-hero__lead {
+      font-size: var(--fs-lead);
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.88);
+      max-width: 48ch;
+    }
+    .sic-hero__body {
+      color: rgba(255, 255, 255, 0.62);
+      max-width: 50ch;
+      font-size: var(--fs-small);
+      line-height: 1.7;
+    }
+    .sic-hero__body a,
+    .sic-hero__body a:visited {
+      color: var(--bbg-white);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: rgba(255, 255, 255, 0.4);
+    }
+    .sic-hero__body a:hover {
+      text-decoration-color: var(--bbg-white);
+    }
+    .sic-hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      align-items: center;
+      margin-top: var(--space-5);
+    }
+
+    /* Platform chips under the hero copy: a preview of the section below */
+    .sic-hero__strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: var(--space-7);
+      padding-top: var(--space-5);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      max-width: 640px;
+    }
+    .sic-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.05);
+      color: rgba(255, 255, 255, 0.82);
+      cursor: pointer;
+      font-size: var(--fs-small);
+      font-weight: 600;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      transition:
+        background 220ms ease,
+        border-color 220ms ease,
+        transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        color 220ms ease;
+    }
+    .sic-chip:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.35);
+      color: var(--bbg-white);
+      transform: translateY(-2px);
+    }
+    .sic-chip__logo {
+      width: 18px;
+      height: 18px;
+      background-color: currentColor;
+      -webkit-mask-image: var(--logo);
+      mask-image: var(--logo);
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      flex-shrink: 0;
+    }
+    .sic-chip__cn {
+      color: rgba(255, 255, 255, 0.45);
+      font-weight: 500;
+    }
+
+    /* ---------- Scroll cue ---------- */
+    .sic-scroll {
+      position: absolute;
+      left: 50%;
+      bottom: 1.5rem;
+      transform: translateX(-50%);
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.45);
+    }
+    .sic-scroll:hover {
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .sic-scroll__line {
+      width: 1px;
+      height: 42px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65));
+      transform-origin: top;
+      animation: sic-drop 2.4s ease-in-out infinite;
+    }
+    @keyframes sic-drop {
+      0%,
+      100% {
+        transform: scaleY(0.45);
+        opacity: 0.4;
+      }
+      50% {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+    @media (max-width: 900px) {
+      .sic-scroll {
+        display: none;
+      }
+    }
+
+    /* ---------- Section 2: platform switcher ---------- */
+    .sic-switch {
+      display: grid;
+      grid-template-columns: minmax(240px, 0.62fr) minmax(0, 1.38fr);
+      gap: clamp(1.5rem, 3.5vw, 3rem);
+      align-items: start;
+    }
+    @media (max-width: 960px) {
+      .sic-switch {
+        grid-template-columns: 1fr;
+      }
+    }
+    .sic-switch__rail {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      border-left: 2px solid var(--bbg-border);
+    }
+    .sic-switch__thumb {
+      position: absolute;
+      left: -2px;
+      width: 2px;
+      background: var(--bbg-blue);
+      border-radius: 2px;
+      top: 0;
+      height: 0;
+      transition:
+        transform 380ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        height 380ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .sic-tab {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-areas:
+        'logo text'
+        'logo role';
+      gap: 0.15rem 0.85rem;
+      align-items: center;
+      text-align: left;
+      width: 100%;
+      padding: var(--space-4) var(--space-4) var(--space-4) var(--space-5);
+      background: none;
+      border: 0;
+      cursor: pointer;
+      color: var(--bbg-text-muted);
+      transition:
+        background 240ms ease,
+        color 240ms ease;
+    }
+    .sic-tab:hover {
+      background: var(--bbg-surface);
+      color: var(--bbg-ink);
+    }
+    .sic-tab.is-active {
+      background: var(--bbg-surface);
+      color: var(--bbg-ink);
+    }
+    .sic-tab__logo {
+      grid-area: logo;
+      width: 30px;
+      height: 30px;
+      background-color: currentColor;
+      -webkit-mask-image: var(--logo);
+      mask-image: var(--logo);
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      opacity: 0.45;
+      transition:
+        opacity 240ms ease,
+        background-color 240ms ease,
+        transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .sic-tab.is-active .sic-tab__logo,
+    .sic-tab:hover .sic-tab__logo {
+      opacity: 1;
+      background-color: var(--tint);
+      transform: scale(1.06);
+    }
+    .sic-tab__text {
+      grid-area: text;
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+    }
+    .sic-tab__name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--bbg-ink);
+    }
+    .sic-tab__cn {
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+    }
+    .sic-tab__role {
+      grid-area: role;
+      font-size: var(--fs-small);
+      line-height: 1.4;
+      color: var(--bbg-text-muted);
+    }
+    .sic-tab.is-active .sic-tab__role {
+      color: var(--bbg-text);
+    }
+    @media (max-width: 960px) {
+      .sic-switch__rail {
+        flex-direction: row;
+        overflow-x: auto;
+        border-left: 0;
+        border-bottom: 2px solid var(--bbg-border);
+        gap: 0;
+        scrollbar-width: none;
+      }
+      .sic-switch__rail::-webkit-scrollbar {
+        display: none;
+      }
+      .sic-switch__thumb {
+        left: 0;
+        top: auto;
+        bottom: -2px;
+        height: 2px !important;
+        width: 0;
+        transition:
+          transform 380ms cubic-bezier(0.2, 0.8, 0.2, 1),
+          width 380ms cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      .sic-tab {
+        grid-template-areas: 'logo text';
+        grid-template-columns: auto auto;
+        justify-content: flex-start;
+        padding: var(--space-4);
+        width: auto;
+        flex: 0 0 auto;
+      }
+      .sic-tab__role {
+        display: none;
+      }
+    }
+
+    /* ---- Panel ---- */
+    .sic-switch__stage {
+      position: relative;
+    }
+    .sic-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: clamp(1.25rem, 3vw, 2.5rem);
+      align-items: center;
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--bbg-white);
+      box-shadow: var(--shadow-sm);
+    }
+    .sic-panel[hidden] {
+      display: none;
+    }
+    .sic-panel.is-active {
+      animation: sic-panel-in 520ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes sic-panel-in {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+    }
+    @media (max-width: 700px) {
+      .sic-panel {
+        grid-template-columns: 1fr;
+      }
+    }
+    .sic-panel__media {
+      position: relative;
+      margin: 0;
+      align-self: stretch;
+      min-height: 320px;
+      overflow: hidden;
+    }
+    .sic-panel__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: sic-zoom 900ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes sic-zoom {
+      from {
+        transform: scale(1.07);
+      }
+    }
+    .sic-panel__media figcaption {
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+    }
+    .sic-panel__badge {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.55);
+      color: #fff;
+      font-size: var(--fs-small);
+      font-weight: 600;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+    @media (max-width: 700px) {
+      .sic-panel__media {
+        min-height: 220px;
+        max-height: 260px;
+      }
+    }
+    .sic-panel__copy {
+      padding: var(--space-5) var(--space-5) var(--space-5) 0;
+    }
+    @media (max-width: 700px) {
+      .sic-panel__copy {
+        padding: var(--space-5);
+      }
+    }
+    .sic-panel__role {
+      display: inline-block;
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--tint);
+      margin-bottom: var(--space-2);
+    }
+    .sic-panel__name {
+      font-size: var(--fs-h3);
+      margin-bottom: var(--space-3);
+    }
+    .sic-panel__body {
+      font-size: var(--fs-small);
+      line-height: 1.75;
+      color: var(--bbg-text);
+      max-width: 46ch;
+    }
+
+    /* ---- Funnel meter ---- */
+    .sic-funnel {
+      margin: var(--space-5) 0 var(--space-4);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .sic-funnel__title {
+      display: block;
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+      margin-bottom: var(--space-3);
+    }
+    .sic-funnel__track {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+    }
+    .sic-funnel__cell {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .sic-funnel__cell i {
+      display: block;
+      height: 8px;
+      border-radius: 99px;
+      background: var(--bbg-border);
+      transform-origin: left;
+      transform: scaleX(0.06);
+      animation: sic-cell 620ms cubic-bezier(0.16, 1, 0.3, 1) var(--cell-delay, 0ms) forwards;
+    }
+    @keyframes sic-cell {
+      to {
+        transform: scaleX(1);
+      }
+    }
+    .sic-funnel__cell.is-w1 i {
+      background: color-mix(in srgb, var(--tint) 38%, var(--bbg-border));
+    }
+    .sic-funnel__cell.is-w2 i {
+      background: var(--tint);
+      height: 8px;
+      box-shadow: 0 2px 10px color-mix(in srgb, var(--tint) 45%, transparent);
+    }
+    .sic-funnel__cell em {
+      font-style: normal;
+      font-size: 0.7rem;
+      letter-spacing: 0.04em;
+      color: var(--bbg-text-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .sic-funnel__cell.is-w2 em {
+      color: var(--bbg-ink);
+    }
+    .sic-funnel__cell.is-w0 em {
+      opacity: 0.45;
+    }
+
+    .sic-panel__owner {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .sic-panel__owner-dot {
+      width: 7px;
+      height: 7px;
+      margin-top: 0.55em;
+      border-radius: 50%;
+      background: var(--tint);
+      flex-shrink: 0;
+    }
+    .sic-panel__owner a {
+      color: var(--bbg-blue);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ---- Long tail ---- */
+    .sic-tail {
+      margin-top: var(--space-8);
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(1.5rem, 4vw, 3.5rem);
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .sic-tail {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+      }
+    }
+    .sic-tail__h3 {
+      font-size: var(--fs-h4);
+      margin-bottom: var(--space-3);
+      max-width: 24ch;
+    }
+    .sic-tail__intro p {
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      line-height: 1.7;
+      max-width: 44ch;
+      margin: 0;
+    }
+    .sic-tail__grid {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    @media (max-width: 700px) {
+      .sic-tail__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 420px) {
+      .sic-tail__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .sic-tail__chip {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      padding: var(--space-4);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-md);
+      background: var(--bbg-white);
+      transition:
+        transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        border-color 220ms ease,
+        box-shadow 220ms ease;
+    }
+    .sic-tail__chip:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .sic-tail__logo {
+      width: 24px;
+      height: 24px;
+      background-color: var(--bbg-text-muted);
+      -webkit-mask-image: var(--logo);
+      mask-image: var(--logo);
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      margin-bottom: 0.35rem;
+      transition: background-color 220ms ease;
+    }
+    .sic-tail__chip:hover .sic-tail__logo {
+      background-color: var(--bbg-blue);
+    }
+    .sic-tail__name {
+      font-weight: 600;
+      color: var(--bbg-ink);
+      font-size: 0.95rem;
+    }
+    .sic-tail__name b {
+      font-weight: 500;
+      color: var(--bbg-text-muted);
+      font-size: var(--fs-small);
+      margin-left: 0.25rem;
+    }
+    .sic-tail__who {
+      font-size: 0.78rem;
+      color: var(--bbg-text-muted);
+      line-height: 1.45;
+    }
+
+    /* ---------- Section 3: the split board ---------- */
+    .sic-splitsec {
+      background: var(--bbg-surface);
+    }
+    .sic-testbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-4) var(--space-5);
+      margin-bottom: var(--space-6);
+    }
+    .sic-testbar__label {
+      font-size: var(--fs-small);
+      font-weight: 600;
+      color: var(--bbg-text-muted);
+    }
+    .sic-seg {
+      position: relative;
+      display: inline-flex;
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: 999px;
+      padding: 4px;
+    }
+    .sic-seg__btn {
+      position: relative;
+      z-index: 1;
+      border: 0;
+      background: none;
+      cursor: pointer;
+      padding: 0.5rem 1.25rem;
+      border-radius: 999px;
+      font-size: var(--fs-small);
+      font-weight: 600;
+      color: var(--bbg-text-muted);
+      transition: color 220ms ease;
+    }
+    .sic-seg__btn.is-active {
+      color: var(--bbg-white);
+    }
+    .sic-seg__thumb {
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      left: 0;
+      width: var(--thumb-w, 0px);
+      transform: translateX(var(--thumb-x, 0px));
+      border-radius: 999px;
+      background: var(--bbg-blue);
+      transition:
+        transform 340ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        width 340ms cubic-bezier(0.2, 0.8, 0.2, 1);
+      pointer-events: none;
+    }
+
+    .sic-board {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(1.25rem, 3vw, 2.5rem);
+    }
+    @media (max-width: 820px) {
+      .sic-board {
+        grid-template-columns: 1fr;
+      }
+    }
+    .sic-board__seam {
+      position: absolute;
+      left: 50%;
+      top: 8%;
+      bottom: 8%;
+      width: 1px;
+      background: linear-gradient(
+        180deg,
+        transparent,
+        var(--bbg-border) 15%,
+        var(--bbg-border) 85%,
+        transparent
+      );
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+    @media (max-width: 820px) {
+      .sic-board__seam {
+        display: none;
+      }
+    }
+    .sic-col {
+      background: var(--bbg-white);
+      border: 1px solid var(--bbg-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      transition:
+        opacity 320ms ease,
+        transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        box-shadow 320ms ease,
+        border-color 320ms ease;
+    }
+    .sic-col.is-focus {
+      border-color: var(--bbg-blue);
+      box-shadow:
+        0 0 0 3px rgba(200, 16, 46, 0.09),
+        var(--shadow-md);
+      transform: translateY(-4px);
+    }
+    .sic-col.is-faded {
+      opacity: 0.38;
+    }
+    .sic-col__head {
+      padding-bottom: var(--space-4);
+      margin-bottom: var(--space-5);
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .sic-col__owner {
+      display: inline-block;
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-blue);
+      margin-bottom: var(--space-3);
+    }
+    .sic-col__title {
+      font-size: var(--fs-h3);
+      margin-bottom: var(--space-3);
+    }
+    .sic-col__metric {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 0.28rem 0.7rem;
+      border-radius: 999px;
+      background: var(--bbg-blue-light);
+      color: var(--bbg-blue-dark);
+    }
+    .sic-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sic-list li {
+      position: relative;
+      padding-left: 1.4rem;
+      margin-bottom: var(--space-3);
+      line-height: 1.6;
+      font-size: var(--fs-small);
+    }
+    .sic-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+      transition: transform 300ms cubic-bezier(0.2, 0.8, 0.2, 1) var(--li-delay, 0ms);
+    }
+    .sic-col.is-focus .sic-list li::before {
+      transform: scale(1.55);
+    }
+    .sic-col__why {
+      margin: var(--space-5) 0 0;
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--bbg-border);
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      line-height: 1.7;
+    }
+    .sic-note {
+      max-width: 74ch;
+      margin: var(--space-6) auto 0;
+      text-align: center;
+      color: var(--bbg-text-muted);
+      font-size: var(--fs-small);
+      line-height: 1.75;
+    }
+
+    /* ---------- Section 4: proof ---------- */
+    .sic-proof {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(1.5rem, 4vw, 3rem);
+    }
+    @media (max-width: 900px) {
+      .sic-proof {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
+    }
+    .sic-proof__item {
+      border-left: 3px solid var(--bbg-blue);
+      padding-left: var(--space-5);
+    }
+    .sic-proof__figure {
+      display: flex;
+      align-items: baseline;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      font-size: clamp(2rem, 3.6vw, 2.9rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--bbg-ink);
+      font-variant-numeric: tabular-nums;
+    }
+    .sic-proof__from {
+      color: var(--bbg-text-muted);
+      font-size: 0.62em;
+    }
+    .sic-proof__arrow {
+      color: var(--bbg-text-muted);
+      font-size: 0.5em;
+      font-weight: 400;
+    }
+    .sic-proof__plus {
+      color: var(--bbg-blue);
+    }
+    .sic-proof__label {
+      margin-top: var(--space-3);
+      max-width: 32ch;
+      font-size: var(--fs-small);
+      color: var(--bbg-text);
+    }
+    .sic-proof__track {
+      display: block;
+      height: 5px;
+      border-radius: 99px;
+      background: rgba(0, 0, 0, 0.07);
+      overflow: hidden;
+      margin-top: var(--space-4);
+      max-width: 260px;
+    }
+    .sic-proof__track i {
+      display: block;
+      height: 100%;
+      width: 0;
+      border-radius: 99px;
+      background: linear-gradient(90deg, #ff6b81, var(--bbg-blue));
+      transition: width 1300ms cubic-bezier(0.16, 1, 0.3, 1) 200ms;
+    }
+    .sic-reveal.is-in .sic-proof__track i {
+      width: var(--w);
+    }
+    .sic-source {
+      margin-top: var(--space-6);
+      font-size: var(--fs-small);
+      color: var(--bbg-text-muted);
+      max-width: 76ch;
+    }
+
+    /* ---------- Section 5: the door ---------- */
+    .sic-door__grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .sic-door__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .sic-door__copy p {
+      max-width: 54ch;
+      color: var(--bbg-text);
+    }
+    .sic-door__copy a:not(.btn) {
+      color: var(--bbg-blue);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+    .sic-door__frame {
+      display: block;
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #14161a;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-lg);
+      transform: perspective(1100px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+      transition:
+        transform 400ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        box-shadow 400ms ease;
+      will-change: transform;
+    }
+    .sic-door__frame:hover {
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.28);
+    }
+    .sic-door__chrome {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0.65rem 0.85rem;
+      background: #1c1f25;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .sic-door__chrome i {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .sic-door__url {
+      margin-left: 0.75rem;
+      flex: 1;
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 99px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.72rem;
+      color: rgba(255, 255, 255, 0.55);
+    }
+    .sic-door__frame img {
+      width: 100%;
+      display: block;
+      transition: transform 600ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .sic-door__frame:hover img {
+      transform: scale(1.02);
+    }
+    .sic-door__cta {
+      position: absolute;
+      left: 50%;
+      bottom: 1.25rem;
+      transform: translate(-50%, 12px);
+      opacity: 0;
+      background: var(--bbg-blue);
+      color: var(--bbg-white);
+      font-weight: 600;
+      font-size: var(--fs-small);
+      padding: 0.65rem 1.35rem;
+      border-radius: 999px;
+      white-space: nowrap;
+      box-shadow: 0 10px 26px rgba(200, 16, 46, 0.4);
+      transition:
+        opacity 260ms ease,
+        transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .sic-door__frame:hover .sic-door__cta,
+    .sic-door__frame:focus-visible .sic-door__cta {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sic-scroll__line,
+      .sic-panel.is-active,
+      .sic-panel__media img,
+      .sic-funnel__cell i {
+        animation: none !important;
+        transform: none !important;
+      }
+      .sic-door__frame {
+        transform: none !important;
+      }
+    }
+  </style>
+
+  <script is:inline>
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ---- 1. Reveal on scroll ---- */
+      const revealEls = document.querySelectorAll('.sic-reveal');
+      if (reduced || !('IntersectionObserver' in window)) {
+        revealEls.forEach((el) => el.classList.add('is-in'));
+      } else {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-in');
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -6% 0px' },
+        );
+        revealEls.forEach((el) => io.observe(el));
+      }
+
+      /* ---- 2. Counters ---- */
+      const counters = document.querySelectorAll('[data-counter]');
+      const format = (n, el) =>
+        el.dataset.group ? Math.round(n).toLocaleString('en-US') : String(Math.round(n));
+      const runCounter = (el) => {
+        const target = parseFloat(el.dataset.counter || '0');
+        const suffix = el.dataset.suffix || '';
+        const start = performance.now();
+        const dur = 1500;
+        const tick = (now) => {
+          const t = Math.min(1, (now - start) / dur);
+          const eased = 1 - Math.pow(1 - t, 3);
+          el.textContent = format(target * eased, el) + suffix;
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+      if (reduced || !('IntersectionObserver' in window)) {
+        counters.forEach((el) => {
+          el.textContent = format(parseFloat(el.dataset.counter || '0'), el) + (el.dataset.suffix || '');
+        });
+      } else {
+        const cio = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                runCounter(e.target);
+                cio.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.6 },
+        );
+        counters.forEach((el) => cio.observe(el));
+      }
+
+      /* ---- 3. Hero parallax + scroll progress ---- */
+      const parallax = document.querySelector('[data-parallax]');
+      const bar = document.querySelector('.sic-progress__bar');
+      const hero = document.querySelector('[data-hero]');
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const y = window.scrollY || window.pageYOffset;
+          if (parallax && hero && !reduced && y < hero.offsetHeight) {
+            parallax.style.setProperty('--parallax-y', y * 0.18 + 'px');
+          }
+          if (bar) {
+            const h = document.documentElement.scrollHeight - window.innerHeight;
+            bar.style.setProperty('--progress', (h > 0 ? Math.min(100, (y / h) * 100) : 0) + '%');
+          }
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      /* ---- 4. Platform switcher ---- */
+      const sw = document.querySelector('[data-switch]');
+      if (sw) {
+        const rail = sw.querySelector('.sic-switch__rail');
+        const thumb = sw.querySelector('.sic-switch__thumb');
+        const tabs = Array.from(sw.querySelectorAll('.sic-tab'));
+        const panels = Array.from(sw.querySelectorAll('.sic-panel'));
+        const vertical = () => window.matchMedia('(min-width: 961px)').matches;
+
+        const moveThumb = (tab) => {
+          if (!thumb || !rail) return;
+          if (vertical()) {
+            thumb.style.width = '';
+            thumb.style.height = tab.offsetHeight + 'px';
+            thumb.style.transform = `translateY(${tab.offsetTop}px)`;
+          } else {
+            thumb.style.height = '';
+            thumb.style.width = tab.offsetWidth + 'px';
+            thumb.style.transform = `translateX(${tab.offsetLeft - rail.scrollLeft}px)`;
+          }
+        };
+
+        const activate = (key, focus) => {
+          const tab = tabs.find((t) => t.dataset.tab === key);
+          if (!tab) return;
+          tabs.forEach((t) => {
+            const on = t === tab;
+            t.classList.toggle('is-active', on);
+            t.setAttribute('aria-selected', on ? 'true' : 'false');
+          });
+          panels.forEach((p) => {
+            const on = p.id === 'panel-' + key;
+            p.classList.toggle('is-active', on);
+            if (on) p.removeAttribute('hidden');
+            else p.setAttribute('hidden', '');
+          });
+          moveThumb(tab);
+          if (focus) tab.focus();
+        };
+
+        tabs.forEach((tab, i) => {
+          tab.addEventListener('click', () => activate(tab.dataset.tab));
+          tab.addEventListener('keydown', (e) => {
+            if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft' && e.key !== 'ArrowDown' && e.key !== 'ArrowUp')
+              return;
+            e.preventDefault();
+            const step = e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : -1;
+            const next = tabs[(i + step + tabs.length) % tabs.length];
+            activate(next.dataset.tab, true);
+          });
+        });
+
+        if (rail) rail.addEventListener('scroll', () => {
+          const active = tabs.find((t) => t.classList.contains('is-active'));
+          if (active) moveThumb(active);
+        }, { passive: true });
+
+        window.addEventListener('resize', () => {
+          const active = tabs.find((t) => t.classList.contains('is-active'));
+          if (active) moveThumb(active);
+        });
+
+        // Hero chips jump into the switcher
+        document.querySelectorAll('[data-jump]').forEach((chip) => {
+          chip.addEventListener('click', () => {
+            activate(chip.dataset.jump);
+            sw.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+          });
+        });
+
+        requestAnimationFrame(() => {
+          const active = tabs.find((t) => t.classList.contains('is-active')) || tabs[0];
+          if (active) moveThumb(active);
+        });
+      }
+
+      /* ---- 5. The split: highlight by what the work is measured on ---- */
+      const test = document.querySelector('[data-test]');
+      const board = document.querySelector('[data-board]');
+      if (test && board) {
+        const btns = Array.from(test.querySelectorAll('.sic-seg__btn'));
+        const thumb = test.querySelector('.sic-seg__thumb');
+        const cols = Array.from(board.querySelectorAll('[data-col]'));
+        const moveThumb = (btn) => {
+          if (!thumb) return;
+          thumb.style.setProperty('--thumb-w', btn.offsetWidth + 'px');
+          thumb.style.setProperty('--thumb-x', btn.offsetLeft + 'px');
+        };
+        btns.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const side = btn.dataset.side;
+            btns.forEach((b) => b.classList.toggle('is-active', b === btn));
+            moveThumb(btn);
+            cols.forEach((c) => {
+              const on = side === 'both' || c.dataset.col === side;
+              c.classList.toggle('is-focus', side !== 'both' && on);
+              c.classList.toggle('is-faded', side !== 'both' && !on);
+            });
+          });
+        });
+        const settle = () => {
+          const active = btns.find((b) => b.classList.contains('is-active')) || btns[0];
+          if (active) moveThumb(active);
+        };
+        requestAnimationFrame(settle);
+        window.addEventListener('resize', settle);
+      }
+
+      /* ---- 6. Tilt on the partner-site door ---- */
+      const tilt = document.querySelector('[data-tilt]');
+      if (tilt && !reduced && window.matchMedia('(hover: hover)').matches) {
+        tilt.addEventListener('mousemove', (e) => {
+          const r = tilt.getBoundingClientRect();
+          const px = (e.clientX - r.left) / r.width - 0.5;
+          const py = (e.clientY - r.top) / r.height - 0.5;
+          tilt.style.setProperty('--ry', (px * 7).toFixed(2) + 'deg');
+          tilt.style.setProperty('--rx', (-py * 5).toFixed(2) + 'deg');
+        });
+        tilt.addEventListener('mouseleave', () => {
+          tilt.style.setProperty('--ry', '0deg');
+          tilt.style.setProperty('--rx', '0deg');
+        });
+      }
+
+      /* ---- 7. Magnetic buttons ---- */
+      if (!reduced && window.matchMedia('(hover: hover)').matches) {
+        document.querySelectorAll('.sic-magnetic').forEach((el) => {
+          el.addEventListener('mousemove', (e) => {
+            const r = el.getBoundingClientRect();
+            const x = e.clientX - r.left - r.width / 2;
+            const y = e.clientY - r.top - r.height / 2;
+            el.style.transform = `translate(${x * 0.12}px, ${y * 0.18}px)`;
+          });
+          el.addEventListener('mouseleave', () => {
+            el.style.transform = '';
+          });
+        });
+      }
+
+      /* ---- 8. Smooth in-page anchors ---- */
+      document.querySelectorAll('.sic a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const id = link.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+    })();
+  </script>
+</Layout>
