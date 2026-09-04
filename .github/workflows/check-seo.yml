@@ -1,0 +1,34 @@
+name: SEO assertions
+
+# Runs scripts/check-seo.mjs against a deployed URL. Two triggers:
+# - deployment_status: fires when Vercel marks a deployment successful, and
+#   checks that exact preview or production URL. This is the one that matters.
+# - workflow_dispatch: run by hand against any URL.
+#
+# The check needs a live deployment, so it does not run on bare pushes: at push
+# time the new build is not deployed yet and the script would only re-test the
+# previous one.
+
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      base:
+        description: 'Base URL to check'
+        required: false
+        default: 'https://www.thechinapath.com'
+
+jobs:
+  check:
+    if: github.event_name == 'workflow_dispatch' || github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run SEO assertions
+        env:
+          BASE: ${{ github.event.inputs.base || github.event.deployment_status.environment_url }}
+          VERCEL_BYPASS: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
+        run: node scripts/check-seo.mjs

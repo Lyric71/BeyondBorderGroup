@@ -19,7 +19,8 @@
     "indexnow": "node scripts/submit-indexnow.mjs",
     "llms:full": "node scripts/generate-llms-full.mjs",
     "check:links": "node scripts/check-links.mjs",
-    "audit:build": "node scripts/audit-build.mjs"
+    "audit:build": "node scripts/audit-build.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
