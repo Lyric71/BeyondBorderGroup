@@ -225,10 +225,9 @@ const copy: CompassCopy = {
     closingCtaPrimary: 'Nous briefer sur votre catégorie',
     closingCtaSecondary: 'Voir l’offre distribution',
     toolsLine: {
-      before: 'Le volet plateforme reste à chiffrer ? Nos ',
+      before: 'Le budget plateforme n’est pas encore arrêté ? Nos ',
       link: 'calculateurs de coûts gratuits',
-      after:
-        ' donnent un chiffre pour la première année sur Tmall Global, JD Worldwide et Douyin, avant même de nous briefer.',
+      after: ' chiffrent la première année sur Tmall Global, JD Worldwide et Douyin, avant même le premier brief.',
     },
   },
 

@@ -219,9 +219,9 @@ const copy: CompassCopy = {
     closingCtaPrimary: 'Briefen Sie uns zu Ihrer Kategorie',
     closingCtaSecondary: 'Zum Vertriebsangebot',
     toolsLine: {
-      before: 'Die Plattformseite ist noch nicht durchgerechnet? Unsere ',
-      link: 'kostenlosen Kostenrechner',
-      after: ' liefern eine Erstjahreszahl für Tmall Global, JD Worldwide und Douyin, noch bevor Sie uns briefen.',
+      before: 'Das Plattformbudget steht noch nicht? Unsere ',
+      link: 'kostenlosen Rechner',
+      after: ' beziffern das erste Jahr auf Tmall Global, JD Worldwide und Douyin, noch vor dem ersten Briefing.',
     },
   },
 

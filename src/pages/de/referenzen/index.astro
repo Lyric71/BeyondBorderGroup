@@ -46,14 +46,14 @@ const industryOrder = [
 ] as const;
 const industryLabels: Record<(typeof industryOrder)[number], string> = {
   "Automotive": "Automobil",
-  "Beauty & Personal Care": "Beauty und Pflege",
+  "Beauty & Personal Care": "Beauty und Kosmetik",
   "Food & Beverage": "Lebensmittel und Getränke",
-  "Hospitality & Travel": "Hotellerie und Reise",
+  "Hospitality & Travel": "Hotellerie und Reisen",
   "Home & Design": "Wohnen und Design",
   "Financial Services": "Finanzdienstleistungen",
-  "Healthcare": "Gesundheit",
+  "Healthcare": "Gesundheitswesen",
   "Fashion & Footwear": "Mode und Schuhe",
-  "Digital Services": "Digitale Dienste",
+  "Digital Services": "Digitale Dienstleistungen",
 };
 const industryCounts = industryOrder
   .map((i) => ({ name: i, count: sorted.filter((x) => x.data.industry === i).length }))

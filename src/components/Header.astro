@@ -715,7 +715,14 @@ const switcherOthers = otherLocales.map((l) => ({
       document.documentElement.style.overflow = open ? 'hidden' : '';
     });
     scrim?.addEventListener('click', closeDrawer);
-    nav.querySelectorAll('.nav__primary a').forEach((a) => a.addEventListener('click', closeDrawer));
+    // Group headers are disclosures in the drawer (see below), so they must
+    // not shut it. Only real links close the drawer.
+    nav.querySelectorAll('.nav__primary a').forEach((a) =>
+      a.addEventListener('click', () => {
+        if (!desktop.matches && a.matches('.nav__item[data-mega] > .nav__link')) return;
+        closeDrawer();
+      }),
+    );
 
     // In the drawer each group is a disclosure rather than a hover panel.
     nav.querySelectorAll('.nav__item[data-mega] > .nav__link').forEach((link) => {
