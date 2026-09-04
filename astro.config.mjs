@@ -652,8 +652,8 @@ export default defineConfig({
         !page.includes('/es/gracias') &&
         !page.includes('/compass/partners/thank-you') &&
         !page.includes('/api/'),
-      changefreq: 'weekly',
-      priority: 0.7,
+      // No changefreq, priority or lastmod. Google ignores the first two, and a
+      // build-time lastmod on every URL would only teach it to ignore the third.
       // Rewrite each URL into the locale pair the slugMap actually dictates.
       // @astrojs/sitemap's built-in i18n option only handles simple prefix
       // routing (e.g. /about -> /fr/about), which is wrong for this site:
