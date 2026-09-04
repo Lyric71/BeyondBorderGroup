@@ -4,6 +4,7 @@ title: "With Chery With Love: co-create Friday campaign"
 summary: "A global co-creation campaign that turned Chery fans into designers of branded gifts and premiums, reaching two million weekly impressions."
 metric: "2M weekly impressions. 100+ fan-submitted designs per week."
 category: "Social & Content"
+industry: "Automotive"
 services:
   - "Brand Experience"
   - "Brand Strategy"

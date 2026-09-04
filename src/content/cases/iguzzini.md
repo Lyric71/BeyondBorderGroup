@@ -4,6 +4,7 @@ title: "Luxury lights from Italian designers to China"
 summary: "Launching and running Iguzzini's cross-border Tmall store to win Chinese designers and luxury consumers without diluting the B2B heritage."
 metric: "Cross-border Tmall flagship live for the lighting brand, designed for Chinese architects and luxury consumers."
 category: "eCommerce"
+industry: "Home & Design"
 services:
   - "Brand Experience"
   - "Campaign"

@@ -4,6 +4,7 @@ title: "The partner of pastry chefs, chocolatiers and bakers. Social for South E
 summary: "Running Master Martini's South East Asia social accounts to turn professional bakers and chefs into an engaged, product-literate community."
 metric: "Professional baker community built across South East Asia social accounts."
 category: "Social & Content"
+industry: "Food & Beverage"
 services:
   - "Campaign"
   - "Design"

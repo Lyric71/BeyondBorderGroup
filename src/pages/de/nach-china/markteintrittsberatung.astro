@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 ---
 
 <Layout
@@ -69,7 +70,14 @@ import Layout from '../../../layouts/Layout.astro';
           Tmall Global, JD Worldwide, Douyin Shop, WeChat-Mini-Programme, klassischer
           Offline-Vertrieb. Wir zeichnen die Kanäle nach, in denen Ihre Kategorie wirklich Umsatz
           macht, und legen, wo nötig, eine Shortlist geprüfter Vertriebspartner aus unserer eigenen
-          Datenbank vor.
+          Datenbank vor. Und wir legen die Zahlen offen: Sie können die <a
+            href="/de/rechner/tmall-global-kostenrechner"
+            >Erstjahreskosten eines Tmall-Global-Flagship-Stores überschlagen</a
+          >, <a href="/de/rechner/jd-worldwide-kostenrechner"
+            >einen JD-Worldwide-Shop durchrechnen</a
+          > oder <a href="/de/rechner/douyin-kostenrechner"
+            >einen Cross-Border-Kanal auf Douyin durchkalkulieren</a
+          >, noch bevor wir das erste Mal telefonieren.
         </p>
 
         <h3>Regulatorischer Rahmen</h3>
@@ -88,6 +96,8 @@ import Layout from '../../../layouts/Layout.astro';
       </article>
     </div>
   </section>
+
+  <CaseStudyStrip slugs={["langnese","viessmann","valio"]} />
 
   <section class="section section--tight section--alt">
     <div class="container">

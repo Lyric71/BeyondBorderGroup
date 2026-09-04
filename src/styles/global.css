@@ -1502,7 +1502,7 @@ h4,
 
 .footer__nav {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: var(--space-5);
 }
 .footer__col h3 {
@@ -8779,4 +8779,31 @@ a.tool-card:hover .tool-card__foot::after {
   .cmp-figure--wide img {
     max-height: 260px;
   }
+}
+
+/* WO-P4. Cross-links between the three calculators, and the calculator line
+   under the homepage Compass block. Body-sized, red link, nothing shouty. */
+.calc-more {
+  margin: var(--space-4) 0 0;
+  max-width: 80ch;
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--bbg-text);
+}
+.calc-more a,
+.bc-tools a {
+  color: var(--bbg-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.calc-more a:hover,
+.bc-tools a:hover {
+  color: var(--bbg-blue-dark);
+}
+.bc-tools {
+  margin: var(--space-4) 0 0;
+  max-width: 48ch;
+  font-size: var(--fs-small);
+  line-height: 1.6;
+  color: var(--bbg-text-muted);
 }

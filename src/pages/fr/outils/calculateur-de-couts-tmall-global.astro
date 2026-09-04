@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import { webApplicationSchema } from '../../../lib/seo';
 
 // ---- Key drivers, shown as sliders at the top of the calculator ----
 type Driver = {
@@ -271,9 +272,23 @@ const notes = [
 ];
 
 const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>`;
+
+// WO-P3. WebApplication node plus breadcrumb, merged into the site graph by Layout.
+const calcSchema = webApplicationSchema({
+  url: Astro.url.pathname,
+  name: "Calculateur de coûts Tmall Global",
+  description: "Chiffrez le coût réel d'une boutique Tmall Global : dépôt, forfait annuel et commission selon la catégorie, honoraires et commission du TP, logistique sous douane, expédition et TVA cross-border. Résultat en RMB et en USD.",
+  inLanguage: 'fr',
+  breadcrumb: [
+    { name: "Accueil", url: "/fr" },
+    { name: "Calculateurs", url: "/fr/outils" },
+    { name: "Calculateur de coûts Tmall Global", url: Astro.url.pathname },
+  ],
+});
 ---
 
 <Layout
+  schema={calcSchema}
   title="Calculateur de coûts Tmall Global | TheChinaPath"
   description="Chiffrez le coût réel d'une boutique Tmall Global : dépôt, forfait annuel et commission selon la catégorie, honoraires et commission du TP, logistique sous douane, expédition et TVA cross-border. Résultat en RMB et en USD."
 >
@@ -820,6 +835,13 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         qu'indicative. Nous ne garantissons ni les totaux, ni les hypothèses, ni les calculs qui les
         sous-tendent. C'est ici pour la démonstration et l'information, rien de plus. Avant d'engager de
         l'argent réel, vérifiez chaque ligne face à de vrais devis de votre TP, de votre entrepôt et de la plateforme.
+      </p>
+      <p class="calc-more">
+        Vous hésitez entre plusieurs plateformes ? Vous pouvez aussi <a
+          href="/fr/outils/calculateur-de-couts-jd-worldwide">chiffrer une boutique JD Worldwide</a
+        > ou <a href="/fr/outils/calculateur-de-couts-douyin"
+          >modéliser un canal Douyin cross-border</a
+        >, avec le même type de ventilation.
       </p>
     </div>
   </section>

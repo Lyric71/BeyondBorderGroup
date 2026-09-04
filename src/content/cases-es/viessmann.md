@@ -4,6 +4,7 @@ title: "Soluciones climáticas: eCommerce en Tmall para calefacción y agua cali
 summary: "Operación completa de Tmall y JD para las soluciones climáticas de Viessmann, cubriendo contenido, medios, livestream y servicio a lo largo de todo el embudo online."
 metric: "Tiendas de Tmall y JD operadas de principio a fin para las soluciones climáticas de Viessmann: contenido, medios, livestream y servicio."
 category: "eCommerce"
+industry: "Home & Design"
 services:
   - "Campañas"
   - "eCommerce"

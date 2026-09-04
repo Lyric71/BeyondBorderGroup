@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
 const promises = [
   {
@@ -527,7 +528,10 @@ const serviceJsonLd = {
           <p class="section-header__lead">
             La plupart des marques abordent Douyin et RedNote comme un marché de plus à conquérir.
             Aucune des deux plateformes ne récompense ce réflexe. Deux principes guident, en amont,
-            notre méthode.
+            notre méthode. Et avant de briefer qui que ce soit, vous pouvez <a
+              href="/fr/outils/calculateur-de-couts-douyin"
+              >estimer ce que coûte un canal Douyin cross-border, du lancement à l'exploitation</a
+            >.
           </p>
         </header>
 
@@ -1299,6 +1303,8 @@ const serviceJsonLd = {
     </section>
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["camper","age-20s","jaguar-land-rover"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">

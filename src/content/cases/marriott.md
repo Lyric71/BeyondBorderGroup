@@ -4,6 +4,7 @@ title: "Social, eCommerce and media campaign for Super Brand Day"
 summary: "An integrated Tmall Super Brand Day campaign for Marriott that pulled together celebrity, KOL, and offline activations to drive eight-figure RMB GMV and a six-figure wave of Bonvoy enrolments."
 metric: "Eight-figure RMB GMV on Tmall Super Brand Day. Six-figure Bonvoy enrolments in 24 hours."
 category: "eCommerce"
+industry: "Hospitality & Travel"
 services:
   - "Social"
   - "eCommerce"

@@ -4,6 +4,7 @@ title: "Trendwende im chinesischen Honigmarkt"
 summary: "Vollständiger Neuaufbau von Langneses China-Marktangang, von Vertrieb und Produktformaten bis zu Inhalten. Ein langjähriger Umsatzrückgang gedreht, neue Regionalkanäle geöffnet."
 metric: "Langjähriger Umsatzrückgang gedreht. Neue Regionalkanäle in China geöffnet."
 category: "Distribution"
+industry: "Food & Beverage"
 services:
   - "Markenstrategie"
   - "Beratung"

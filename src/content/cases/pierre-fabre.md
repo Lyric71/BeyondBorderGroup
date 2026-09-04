@@ -4,6 +4,7 @@ title: "China insights masterclass: digital, eCommerce and AIGC"
 summary: "Strategic masterclass for Pierre Fabre's leadership, decoding China's beauty market through live case studies on digital, eCommerce and AIGC."
 metric: "3D Digital Growth Model and a competitive intelligence pack delivered to Pierre Fabre leadership."
 category: "Training"
+industry: "Beauty & Personal Care"
 services:
   - "Consulting"
   - "Masterclass"

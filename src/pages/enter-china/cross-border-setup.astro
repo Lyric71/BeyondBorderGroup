@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 import { getCollection } from 'astro:content';
 
 const promises = [
@@ -383,7 +384,10 @@ const icons: Record<string, string> = {
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
           We set up and grow your eCommerce presence in China. Tmall Global, JD Worldwide, Douyin,
-          WeChat and RED. 15 years of operations behind every recommendation.
+          WeChat and RED. 15 years of operations behind every recommendation. Want the number
+          first? <a href="/tools/tmall-global-setup-and-run"
+            >Estimate the first-year cost of a Tmall Global flagship</a
+          > or <a href="/tools/jd-worldwide-setup-and-run">price a JD Worldwide store</a>.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
           <a href="/contact" class="btn btn--primary cbs-magnetic">Talk to us</a>
@@ -1009,6 +1013,8 @@ const icons: Record<string, string> = {
     }
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["iguzzini","viessmann","kerry-davinci"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">

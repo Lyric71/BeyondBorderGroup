@@ -4,6 +4,7 @@ title: "PR for the new car launch overseas, Chery Group Automotive"
 summary: "Drove Exeed's global PR program for Chery Group, combining media, content and event activation across Geneva, EXLANTIX pre-launch and key industry moments."
 metric: "2.5B+ impressions on the co-creation conference. 60M+ at Geneva, 50M+ on EXLANTIX launch."
 category: "Social & Content"
+industry: "Automotive"
 services:
   - "Campaign"
   - "Media"

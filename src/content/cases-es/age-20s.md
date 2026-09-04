@@ -4,6 +4,7 @@ title: "Little Milk Brick Cushion: campaña de lanzamiento social y eCommerce"
 summary: "Lanzamiento por fases en Xiaohongshu y Douyin del nuevo cushion de Age 20's. Las impresiones superaron el objetivo hasta en un 287 % y el packaging acabó dándole nombre al producto entre las consumidoras."
 metric: "Impresiones en Douyin +287 % sobre objetivo. 750.000 de alcance en Xiaohongshu frente a una meta de 300.000."
 category: "Social & Content"
+industry: "Beauty & Personal Care"
 services:
   - "Campañas"
   - "eCommerce"

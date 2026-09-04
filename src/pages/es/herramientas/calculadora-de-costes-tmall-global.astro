@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import { webApplicationSchema } from '../../../lib/seo';
 
 // ---- Key drivers, shown as sliders at the top of the calculator ----
 type Driver = {
@@ -271,9 +272,23 @@ const notes = [
 ];
 
 const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>`;
+
+// WO-P3. WebApplication node plus breadcrumb, merged into the site graph by Layout.
+const calcSchema = webApplicationSchema({
+  url: Astro.url.pathname,
+  name: "Calculadora de costes de Tmall Global",
+  description: "Calcule lo que cuesta el primer año de una flagship en Tmall Global: depósito, cuota anual y comisión según categoría, retainer y comisión del TP, almacén en zona franca, transporte y el IVA cross-border, en RMB y en USD.",
+  inLanguage: 'es',
+  breadcrumb: [
+    { name: "Inicio", url: "/es" },
+    { name: "Calculadoras", url: "/es/herramientas" },
+    { name: "Calculadora de costes de Tmall Global", url: Astro.url.pathname },
+  ],
+});
 ---
 
 <Layout
+  schema={calcSchema}
   title="Calculadora de costes de Tmall Global | TheChinaPath"
   description="Calcule lo que cuesta el primer año de una flagship en Tmall Global: depósito, cuota anual y comisión según categoría, retainer y comisión del TP, almacén en zona franca, transporte y el IVA cross-border, en RMB y en USD."
 >
@@ -823,6 +838,14 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         que hay detrás. Está aquí para enseñar y para informar, nada más. Antes de poner dinero de
         verdad, contraste cada línea con presupuestos reales de su TP, de su almacén y de la
         plataforma.
+      </p>
+      <p class="calc-more">
+        ¿Está comparando plataformas? También puede <a
+          href="/es/herramientas/calculadora-de-costes-jd-worldwide"
+          >calcular lo que cuesta una tienda en JD Worldwide</a
+        > o <a href="/es/herramientas/calculadora-de-costes-douyin"
+          >modelar un canal cross-border en Douyin</a
+        > con el mismo tipo de desglose.
       </p>
     </div>
   </section>

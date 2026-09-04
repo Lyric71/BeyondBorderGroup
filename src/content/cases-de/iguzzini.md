@@ -4,6 +4,7 @@ title: "Italienische Designerleuchten für China"
 summary: "Aufbau und Betrieb von Iguzzinis Cross-Border-Tmall-Shop, um chinesische Architekten und Luxuskäufer zu gewinnen, ohne das B2B-Erbe zu verwässern."
 metric: "Cross-Border-Flagship auf Tmall live für die Leuchtenmarke, gebaut für chinesische Architekten und Luxuskäufer."
 category: "eCommerce"
+industry: "Home & Design"
 services:
   - "Markenerlebnis"
   - "Kampagne"

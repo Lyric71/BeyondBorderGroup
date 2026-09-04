@@ -218,6 +218,11 @@ const copy: CompassCopy = {
       'Sie gehen nach China? Sie ersetzen einen Partner, der nicht mehr liefert? Sie suchen noch die richtige Vertriebsform für Ihre Kategorie? Das erste Gespräch ist kurz. Die meisten wissen nach einer halben Stunde, ob das die richtige Unterstützung für sie ist. Wenn nicht, können wir meist sagen, wer besser passt.',
     closingCtaPrimary: 'Briefen Sie uns zu Ihrer Kategorie',
     closingCtaSecondary: 'Zum Vertriebsangebot',
+    toolsLine: {
+      before: 'Die Plattformseite ist noch nicht durchgerechnet? Unsere ',
+      link: 'kostenlosen Kostenrechner',
+      after: ' liefern eine Erstjahreszahl für Tmall Global, JD Worldwide und Douyin, noch bevor Sie uns briefen.',
+    },
   },
 
   whyVetted: {

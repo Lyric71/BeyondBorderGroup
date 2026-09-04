@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 import { getCollection } from 'astro:content';
 
 const promises = [
@@ -401,7 +402,12 @@ const icons: Record<string, string> = {
         </h1>
         <p class="cbs-hero__lead cbs-reveal" style="--reveal-delay: 200ms;">
           Lanzamos y hacemos crecer su presencia de eCommerce en China. Tmall Global, JD Worldwide,
-          Douyin, WeChat y RED. Quince años de operaciones detrás de cada recomendación.
+          Douyin, WeChat y RED. Quince años de operaciones detrás de cada recomendación. ¿Prefiere
+          ver la cifra primero? <a href="/es/herramientas/calculadora-de-costes-tmall-global"
+            >Estime el coste del primer año de una flagship en Tmall Global</a
+          > o <a href="/es/herramientas/calculadora-de-costes-jd-worldwide"
+            >calcule lo que cuesta una tienda en JD Worldwide</a
+          >.
         </p>
         <div class="cbs-hero__actions cbs-reveal" style="--reveal-delay: 280ms;">
           <a href="/es/contacto" class="btn btn--primary cbs-magnetic">Hablemos</a>
@@ -1013,6 +1019,8 @@ const icons: Record<string, string> = {
     }
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["iguzzini","viessmann","kerry-davinci"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">

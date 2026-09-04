@@ -4,6 +4,7 @@ title: "PR für den Auslandsstart der Marke, Chery Group Automotive"
 summary: "Steuerung des globalen PR-Programms für Exeed innerhalb der Chery Group: Medien, Content und Event-Aktivierung in Genf, beim EXLANTIX-Pre-Launch und an zentralen Branchenterminen."
 metric: "Über 2,5 Mrd. Impressions zur Co-Creation-Konferenz. 60 Mio.+ in Genf, 50 Mio.+ zum EXLANTIX-Launch."
 category: "Social & Content"
+industry: "Automotive"
 services:
   - "Kampagne"
   - "Media"

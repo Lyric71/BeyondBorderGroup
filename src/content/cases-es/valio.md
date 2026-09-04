@@ -4,6 +4,7 @@ title: "De los campos finlandeses al lineal chino"
 summary: "Presentamos en China la sub-marca 'eila' de Valio, con un posicionamiento competitivo, un nombre chino propio y un sistema completo de identidad visual, desde el logo hasta el packaging."
 metric: "Sub-marca eila lanzada con nombre chino propio y un sistema completo de identidad visual."
 category: "Brand & Design"
+industry: "Food & Beverage"
 services:
   - "Experiencia de marca"
   - "Estrategia de marca"

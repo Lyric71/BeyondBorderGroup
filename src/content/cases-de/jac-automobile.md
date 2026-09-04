@@ -4,6 +4,7 @@ title: "Jahres-Kampagne auf WeChat, RED und Weibo, gestützt von KI"
 summary: "Jahres-Social-Programm auf WeChat, RED und Weibo, das mit KI personalisierten Content skaliert und die JAC-Community in China wachsen lässt."
 metric: "Olympic-J-Bot-Kampagne von JACs internationalen Teams auf Facebook und Instagram eigenständig aufgegriffen."
 category: "Social & Content"
+industry: "Automotive"
 services:
   - "Kampagne"
   - "Content"

@@ -9,9 +9,8 @@ const lp = (path: string) => localizePath(path, locale);
 /**
  * WO-1.1 — the footer mirrors the header's five groups.
  *
- * Same link policy as the header: rows pointing at English-only pages use the
- * raw path, because localizePath would send a locale visitor to the locale home
- * rather than to the page.
+ * Same link policy as the header: every row goes through localizePath (WO-P2).
+ * The only raw path left is the partner sign-up, which is EN/ZH by design.
  *
  * "Who We Are" lives here now, having moved out of the top nav. The Compass
  * partner page is deliberately kept out of the main nav and reachable from here
@@ -19,8 +18,8 @@ const lp = (path: string) => localizePath(path, locale);
  * application subdomain so the old login URL is a single hop, not two.
  */
 const findPartner = [
-  { label: t('nav.find.compass.label'), href: '/compass' },
-  { label: t('nav.find.shortlist.label'), href: '/compass/how-it-works' },
+  { label: t('nav.find.compass.label'), href: lp('/compass') },
+  { label: t('nav.find.shortlist.label'), href: lp('/compass/how-it-works') },
   { label: t('nav.enter.distribution.label'), href: lp('/enter-china/distribution') },
   { label: t('nav.enter.marketEntry.label'), href: lp('/enter-china/market-entry-consulting') },
 ];
@@ -34,8 +33,8 @@ const sellInChina = [
 ];
 
 const websiteAndSocial = [
-  { label: t('nav.web.website.label'), href: '/build-in-china' },
-  { label: t('nav.web.social.label'), href: '/social-in-china' },
+  { label: t('nav.web.website.label'), href: lp('/build-in-china') },
+  { label: t('nav.web.social.label'), href: lp('/social-in-china') },
 ];
 
 const learnChina = [
@@ -43,6 +42,15 @@ const learnChina = [
   { label: t('nav.learn.expeditions.label'), href: lp('/learn-china/learning-expeditions') },
   { label: t('nav.learn.platforms.label'), href: lp('/learn-china/platforms') },
   { label: t('nav.learn.insights.label'), href: lp('/insights') },
+];
+
+// WO-P4. The calculators are the one asset no competitor has a current answer
+// to, so they get their own column rather than a line under "Learn".
+const freeTools = [
+  { label: t('nav.calculator'), href: lp('/tools') },
+  { label: t('footer.tools.tmall'), href: lp('/tools/tmall-global-setup-and-run') },
+  { label: t('footer.tools.jd'), href: lp('/tools/jd-worldwide-setup-and-run') },
+  { label: t('footer.tools.douyin'), href: lp('/tools/douyin-cost-calculator') },
 ];
 
 const company = [
@@ -88,6 +96,7 @@ const columns = [
   { title: t('footer.col.web'), items: websiteAndSocial },
   { title: t('footer.col.find'), items: findPartner },
   { title: t('footer.col.learn'), items: learnChina },
+  { title: t('footer.col.tools'), items: freeTools },
   { title: t('footer.col.company'), items: company },
 ];
 

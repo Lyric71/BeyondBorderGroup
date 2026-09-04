@@ -4,6 +4,7 @@ title: "Markeneinführung in China"
 summary: "Eine hochpreisige Dermo-Kosmetikmarke für Shiseido von Grund auf gebaut: Positionierung, Identität, Packaging und Launch-Aktivierung in China."
 metric: "Neue Dermo-Kosmetikmarke für Shiseido End-to-End gebaut, von der Positionierung bis zum Packaging."
 category: "Brand & Design"
+industry: "Beauty & Personal Care"
 services:
   - "Markenerlebnis"
   - "Markenstrategie"

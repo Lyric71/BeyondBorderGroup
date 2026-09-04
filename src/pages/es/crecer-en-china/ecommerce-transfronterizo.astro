@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
 const promises = [
   {
@@ -478,7 +479,12 @@ const icons: Record<string, string> = {
           <h2>Dos cosas que conviene saber antes de tocar su tienda</h2>
           <p class="section-header__lead">
             Una tienda cross-border en China es un producto diario, no un proyecto trimestral. Así
-            trabajamos.
+            trabajamos. Si aún está eligiendo plataforma, puede <a
+              href="/es/herramientas/calculadora-de-costes-tmall-global"
+              >estimar el coste del primer año de una flagship en Tmall Global</a
+            > o <a href="/es/herramientas/calculadora-de-costes-jd-worldwide"
+              >calcular lo que cuesta una tienda en JD Worldwide</a
+            > antes de que hablemos.
           </p>
         </header>
 
@@ -1431,6 +1437,8 @@ const icons: Record<string, string> = {
     </section>
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["viessmann","iguzzini","marriott"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">

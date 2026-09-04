@@ -52,10 +52,14 @@ export function localBusinessSchemas(): SchemaObject[] {
       name: 'TheChinaPath, Shanghai',
       parentOrganization: { '@id': ORG_ID },
       url: `${SITE_URL}/contact`,
+      // WO-P3. Same street address ChinaWebFoundry publishes for the group's
+      // Shanghai office, so the two graphs agree.
       address: {
         '@type': 'PostalAddress',
+        streetAddress: '19th Floor, Trinity Plaza, 868 Changshou Road',
         addressLocality: 'Shanghai',
-        addressRegion: 'Shanghai',
+        addressRegion: 'Putuo District',
+        postalCode: '200060',
         addressCountry: 'CN',
       },
       areaServed: { '@type': 'Country', name: 'China' },
@@ -152,10 +156,21 @@ export function organizationSchema(): SchemaObject {
       areaServed: ['CN', 'HK', 'FR', 'GB', 'US', 'DE', 'AU', 'ES'],
       availableLanguage: ['English', 'French'],
     },
+    // WO-P3. Social profiles first, then the sister sites, in the same order
+    // ChinaWebFoundry and TheRedScroll list them, so the three graphs read as
+    // one entity set.
     sameAs: [
       'https://www.linkedin.com/company/thechinapath/',
       'https://cyrildrouin.substack.com',
+      'https://www.chinawebfoundry.com',
+      'https://www.theredscroll.com',
+      'https://www.hubstudio.ai',
+      'https://www.beyondbridge.ai',
     ],
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'BeyondBorder Group Ltd',
+    },
     // WO-3.3. Kept in step with the footer network strip, and each entry
     // carries the same @id the sister site uses for itself so the three graphs
     // resolve to one entity rather than three lookalikes. Compass is
@@ -254,6 +269,7 @@ export function resolveAuthor(name: string): SchemaObject {
         '@type': 'Person',
         '@id': PERSON_IDS.cyril,
         name: 'Cyril Drouin',
+        jobTitle: 'Founder and CEO',
         url: `${SITE_URL}/about#cyril-drouin`,
         sameAs: [
           'https://www.linkedin.com/in/cyril-d-68835729/',
@@ -266,6 +282,7 @@ export function resolveAuthor(name: string): SchemaObject {
         '@type': 'Person',
         '@id': PERSON_IDS.echo,
         name: 'Echo Peng',
+        jobTitle: 'Senior Director and Partner',
         url: `${SITE_URL}/about#echo-peng`,
         sameAs: ['https://www.linkedin.com/in/echo-peng-aa241751/'],
       };
@@ -274,6 +291,7 @@ export function resolveAuthor(name: string): SchemaObject {
         '@type': 'Person',
         '@id': PERSON_IDS.liyan,
         name: 'Liyan Ye',
+        jobTitle: 'Senior Director',
         url: `${SITE_URL}/about#liyan-ye`,
         sameAs: ['https://www.linkedin.com/in/liyanye/'],
       };
@@ -936,17 +954,23 @@ export function caseStudySchema(c: CaseStudyInput): SchemaObject {
       ? c.image
       : SITE_URL + c.image
     : undefined;
+  // WO-P5. Article rather than CreativeWork so the case studies sit in the
+  // same type Google actually surfaces, with the client named as the subject.
   return {
-    '@type': 'CreativeWork',
+    '@type': 'Article',
     '@id': `${absoluteUrl}#casestudy`,
+    headline: c.name,
     name: c.name,
     description: c.description,
     url: absoluteUrl,
-    creator: { '@id': ORG_ID },
+    mainEntityOfPage: absoluteUrl,
+    author: { '@id': ORG_ID },
+    publisher: { '@id': ORG_ID },
+    isPartOf: { '@id': WEBSITE_ID },
     ...(c.brand
       ? {
           about: {
-            '@type': 'Brand',
+            '@type': 'Organization',
             name: c.brand,
             ...(c.brandUrl ? { sameAs: c.brandUrl } : {}),
           },
@@ -990,4 +1014,37 @@ export function schemaGraph(...entities: SchemaObject[]): SchemaObject {
     '@context': 'https://schema.org',
     '@graph': entities,
   };
+}
+
+/**
+ * WO-P3. The /tools calculators are genuine web applications, so they get
+ * their own node instead of a generic WebPage. No `offers` and no price
+ * field: the tools are free and the site publishes no pricing.
+ */
+export interface WebApplicationInput {
+  url: string;
+  name: string;
+  description: string;
+  inLanguage: 'en' | 'fr' | 'de' | 'es';
+  breadcrumb?: BreadcrumbItem[];
+}
+
+export function webApplicationSchema(w: WebApplicationInput): SchemaObject[] {
+  const absoluteUrl = w.url.startsWith('http') ? w.url : SITE_URL + w.url;
+  const app: SchemaObject = {
+    '@type': 'WebApplication',
+    '@id': `${absoluteUrl}#app`,
+    name: w.name,
+    description: w.description,
+    url: absoluteUrl,
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Web',
+    isAccessibleForFree: true,
+    browserRequirements: 'Requires JavaScript',
+    author: { '@id': ORG_ID },
+    publisher: { '@id': ORG_ID },
+    isPartOf: { '@id': WEBSITE_ID },
+    inLanguage: w.inLanguage,
+  };
+  return w.breadcrumb ? [app, breadcrumbList(w.breadcrumb)] : [app];
 }

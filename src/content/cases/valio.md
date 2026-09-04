@@ -4,6 +4,7 @@ title: "From Finnish fields to Chinese shelves"
 summary: "Introducing Valio's 'eila' sub-brand to China with competitive positioning, a localized name, and a full visual identity system from logo to packaging."
 metric: "Eila sub-brand launched with localized Chinese name and a full visual identity system."
 category: "Brand & Design"
+industry: "Food & Beverage"
 services:
   - "Brand Experience"
   - "Brand Strategy"

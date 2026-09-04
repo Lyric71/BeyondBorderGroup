@@ -4,6 +4,7 @@ title: "Annual social campaign on WeChat, RED and Weibo, powered by AI"
 summary: "Annual social program across WeChat, RED and Weibo, using AI to scale personalized content and grow a JAC brand community in China."
 metric: "Olympic J-Bot AI campaign picked up by JAC international teams on Facebook and Instagram on their own."
 category: "Social & Content"
+industry: "Automotive"
 services:
   - "Campaign"
   - "Content"

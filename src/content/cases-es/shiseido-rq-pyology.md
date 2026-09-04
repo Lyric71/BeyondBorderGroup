@@ -4,6 +4,7 @@ title: "Campaña de lanzamiento de marca en China"
 summary: "Construimos de cero una marca dermocosmética de alta gama para Shiseido: posicionamiento, identidad, packaging y activación de lanzamiento en China."
 metric: "Nueva marca dermocosmética desarrollada de principio a fin para Shiseido, desde el posicionamiento hasta el packaging."
 category: "Brand & Design"
+industry: "Beauty & Personal Care"
 services:
   - "Experiencia de marca"
   - "Estrategia de marca"

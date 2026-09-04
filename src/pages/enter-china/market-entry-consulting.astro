@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 
 const phaseIcons: Record<string, string> = {
   diagnosis: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><line x1="20" y1="20" x2="15.5" y2="15.5"/></svg>`,
@@ -433,7 +434,12 @@ const contextCards = [
             </blockquote>
             <p>
               We know which distributors perform because we have evaluated them. We know what
-              platforms require because we filed the applications ourselves.
+              platforms require because we filed the applications ourselves. And we publish the
+              numbers: you can <a href="/tools/tmall-global-setup-and-run"
+                >estimate the first-year cost of a Tmall Global flagship</a
+              >, <a href="/tools/jd-worldwide-setup-and-run">price a JD Worldwide store</a> or <a
+                href="/tools/douyin-cost-calculator">model a cross-border Douyin channel</a
+              > before we ever get on a call.
             </p>
             <a href="/about" class="btn btn--secondary btn--sm">Meet the team</a>
           </div>
@@ -1299,6 +1305,8 @@ const contextCards = [
     </section>
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["langnese","viessmann","valio"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="mec-cta">

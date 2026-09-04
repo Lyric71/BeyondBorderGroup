@@ -4,6 +4,7 @@ title: "Dedicated TikTok offer"
 summary: "Designed and built the BeyondTikTok website as a lead-generation hub for TikTok services, backed by SEO and Google Ads to drive qualified traffic."
 metric: "Lead-generation site built for TikTok services with SEO and Google Ads driving qualified traffic."
 category: "Website"
+industry: "Digital Services"
 services:
   - "Brand Experience"
   - "Design"

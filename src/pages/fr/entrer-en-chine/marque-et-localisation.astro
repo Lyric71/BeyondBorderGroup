@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
 const pillars = [
   {
@@ -843,6 +844,8 @@ const phaseLabels = ['Première phase', 'Deuxième phase', 'Troisième phase'];
     </section>
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["valio","roc","shiseido-rq-pyology"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="bl-cta">

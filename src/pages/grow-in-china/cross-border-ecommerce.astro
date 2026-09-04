@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 
 const promises = [
   {
@@ -467,7 +468,11 @@ const icons: Record<string, string> = {
           <h2>Two things to know before we touch your store</h2>
           <p class="section-header__lead">
             A cross-border store in China is a daily product, not a quarterly project. Here is how
-            that shapes the way we work.
+            that shapes the way we work. If you're still choosing a platform, you can <a
+              href="/tools/tmall-global-setup-and-run"
+              >estimate the first-year cost of a Tmall Global flagship</a
+            > or <a href="/tools/jd-worldwide-setup-and-run">price a JD Worldwide store</a> before
+            we talk.
           </p>
         </header>
 
@@ -1406,6 +1411,8 @@ const icons: Record<string, string> = {
     </section>
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["viessmann","iguzzini","marriott"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">

@@ -224,6 +224,12 @@ const copy: CompassCopy = {
       'Vous entrez en Chine ? Vous remplacez un partenaire qui ne tire plus son poids ? Vous cherchez encore la bonne forme de distribution pour votre catégorie ? Le premier échange est court. La plupart de nos interlocuteurs savent en une demi-heure si c’est le bon type d’aide pour eux. Sinon, nous savons en général vers qui les orienter.',
     closingCtaPrimary: 'Nous briefer sur votre catégorie',
     closingCtaSecondary: 'Voir l’offre distribution',
+    toolsLine: {
+      before: 'Le volet plateforme reste à chiffrer ? Nos ',
+      link: 'calculateurs de coûts gratuits',
+      after:
+        ' donnent un chiffre pour la première année sur Tmall Global, JD Worldwide et Douyin, avant même de nous briefer.',
+    },
   },
 
   whyVetted: {

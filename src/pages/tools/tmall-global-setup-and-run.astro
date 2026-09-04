@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { webApplicationSchema } from '../../lib/seo';
 
 // ---- Key drivers, shown as sliders at the top of the calculator ----
 type Driver = {
@@ -271,9 +272,23 @@ const notes = [
 ];
 
 const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>`;
+
+// WO-P3. WebApplication node plus breadcrumb, merged into the site graph by Layout.
+const calcSchema = webApplicationSchema({
+  url: Astro.url.pathname,
+  name: "Tmall Global setup and run cost calculator",
+  description: "Estimate the first-year cost of a Tmall Global flagship: deposit, annual fee and commission by category, TP retainer and commission, bonded fulfillment, shipping and the cross-border VAT, in RMB and USD.",
+  inLanguage: 'en',
+  breadcrumb: [
+    { name: "Home", url: "/" },
+    { name: "Calculators", url: "/tools" },
+    { name: "Tmall Global setup and run cost calculator", url: Astro.url.pathname },
+  ],
+});
 ---
 
 <Layout
+  schema={calcSchema}
   title="Tmall Global setup and run cost calculator | TheChinaPath"
   description="Estimate the first-year cost of a Tmall Global flagship: deposit, annual fee and commission by category, TP retainer and commission, bonded fulfillment, shipping and the cross-border VAT, in RMB and USD."
 >
@@ -820,6 +835,10 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
         guarantee the totals, the assumptions, or the math behind them. It's here for demo and info,
         nothing more. Before you commit real money, check every line against actual quotes from your
         TP, your warehouse, and the platform.
+      </p>
+
+      <p class="calc-more">
+        Weighing platforms? You can also <a href="/tools/jd-worldwide-setup-and-run">price a JD Worldwide store</a> or <a href="/tools/douyin-cost-calculator">model a cross-border Douyin channel</a> with the same kind of breakdown.
       </p>
     </div>
   </section>

@@ -4,6 +4,7 @@ title: "Snack Forward : le bond digital de Mission Foods en Chine"
 summary: "Programme de lancement social-first pour les corn chips Mission Foods en Chine, qui engage la génération Z par des contenus culturellement pertinents sur WeChat, Weibo et Xiaohongshu."
 metric: "Le lancement Halloween a porté la croissance des abonnés sur WeChat, Weibo et RED avec un contenu Gen Z."
 category: "Social & Content"
+industry: "Food & Beverage"
 services:
   - "Campagne"
   - "eCommerce"

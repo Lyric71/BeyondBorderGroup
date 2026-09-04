@@ -4,6 +4,7 @@ title: "Eine Design-Community auf chinesischen Social-Plattformen aufbauen"
 summary: "330 % Wachstum für Campers Präsenz auf WeChat, Weibo und RedNote, getragen von handwerklichem Storytelling, Design-Kooperationen und einem Netz aus Mikro-Influencern."
 metric: "Kombinierte Follower von 43k auf 187k. RedNote bringt 38 % des eCommerce-Traffics."
 category: "Social & Content"
+industry: "Fashion & Footwear"
 services:
   - "Markenerlebnis"
   - "Kampagne"

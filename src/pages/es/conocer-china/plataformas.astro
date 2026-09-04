@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
 const heroStats = [
   { value: '1380 M', label: 'usuarios mensuales de WeChat' },
@@ -1013,6 +1014,8 @@ const icons: Record<string, string> = {
     </section>
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["pierre-fabre","camper","marriott"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="lcp-cta">

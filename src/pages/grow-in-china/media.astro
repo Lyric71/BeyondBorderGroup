@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 
 const whereYouAre = [
   {
@@ -806,6 +807,8 @@ const serviceJsonLd = {
     </section>
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["blue-insurance","mission-foods","jaguar-land-rover"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">

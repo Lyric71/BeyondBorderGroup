@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
 const outcomes = [
   'El tiempo de carga baja de ocho o quince segundos a menos de uno en China continental',
@@ -623,6 +624,8 @@ const icons: Record<string, string> = {
     </section>
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["bassetti","sohomd","blue-insurance"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="web-cta">

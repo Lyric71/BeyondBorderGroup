@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 ---
 
 <Layout
@@ -52,7 +53,12 @@ import Layout from '../../../layouts/Layout.astro';
         <p>
           Tägliche Pflege Ihres Tmall-Global- oder JD-Worldwide-Storefronts: Banner, Aktionen,
           Saisonkampagnen, neue SKUs, Cross-Selling. Ein Team aus Designern, Textern und Praktikern,
-          das in der Logik der Plattform denkt.
+          das in der Logik der Plattform denkt. Falls die Plattform bei Ihnen noch offen ist: Sie
+          können vorab die <a href="/de/rechner/tmall-global-kostenrechner"
+            >Erstjahreskosten eines Tmall-Global-Flagship-Stores überschlagen</a
+          > oder <a href="/de/rechner/jd-worldwide-kostenrechner"
+            >einen JD-Worldwide-Shop durchrechnen</a
+          >, bevor wir miteinander sprechen.
         </p>
 
         <h3>Kundenservice</h3>
@@ -83,6 +89,8 @@ import Layout from '../../../layouts/Layout.astro';
       </article>
     </div>
   </section>
+
+  <CaseStudyStrip slugs={["viessmann","iguzzini","marriott"]} />
 
   <section class="section section--tight section--alt">
     <div class="container">

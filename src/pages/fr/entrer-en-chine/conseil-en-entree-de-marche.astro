@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
 const phaseIcons: Record<string, string> = {
   diagnosis: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><line x1="20" y1="20" x2="15.5" y2="15.5"/></svg>`,
@@ -450,7 +451,14 @@ const contextCards = [
             <p>
               Nous identifions les distributeurs performants parce que nous les avons audités. Nous
               connaissons les exigences des plateformes parce que nous avons déposé les dossiers
-              nous-mêmes.
+              nous-mêmes. Et nous publions les chiffres : vous pouvez <a
+                href="/fr/outils/calculateur-de-couts-tmall-global"
+                >estimer le coût de la première année d'un flagship Tmall Global</a
+              >, <a href="/fr/outils/calculateur-de-couts-jd-worldwide"
+                >chiffrer une boutique JD Worldwide</a
+              > ou <a href="/fr/outils/calculateur-de-couts-douyin"
+                >modéliser un canal Douyin cross-border</a
+              > avant le moindre appel.
             </p>
             <a href="/fr/qui-nous-sommes" class="btn btn--secondary btn--sm">Rencontrer l'équipe</a>
           </div>
@@ -1332,6 +1340,8 @@ const contextCards = [
     </section>
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["langnese","viessmann","valio"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="mec-cta">

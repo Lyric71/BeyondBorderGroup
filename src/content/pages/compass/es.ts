@@ -219,6 +219,11 @@ const copy: CompassCopy = {
       '¿Entra en China? ¿Sustituye a un socio que ya no responde? ¿Sigue buscando la forma adecuada de distribución para su categoría? La primera conversación es corta. La mayoría sabe en media hora si esta es la ayuda que necesita. Si no lo es, casi siempre podemos indicarle a quién acudir.',
     closingCtaPrimary: 'Háblenos de su categoría',
     closingCtaSecondary: 'Ver el servicio de distribución',
+    toolsLine: {
+      before: '¿Sigue calculando la parte de plataforma? Nuestras ',
+      link: 'calculadoras de costes gratuitas',
+      after: ' ponen una cifra al primer año en Tmall Global, JD Worldwide y Douyin antes de que nos pase el brief.',
+    },
   },
 
   whyVetted: {

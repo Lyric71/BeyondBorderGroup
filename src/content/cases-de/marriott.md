@@ -4,6 +4,7 @@ title: "Social-, eCommerce- und Media-Kampagne zum Super Brand Day"
 summary: "Integrierte Tmall-Super-Brand-Day-Kampagne für Marriott. Celebrity, KOL und Offline-Aktivierungen gebündelt. Achtstelliger RMB-GMV und sechsstellige Welle neuer Bonvoy-Anmeldungen."
 metric: "Achtstelliger RMB-GMV am Tmall Super Brand Day. Sechsstellige Bonvoy-Anmeldungen in 24 Stunden."
 category: "eCommerce"
+industry: "Hospitality & Travel"
 services:
   - "Social"
   - "eCommerce"

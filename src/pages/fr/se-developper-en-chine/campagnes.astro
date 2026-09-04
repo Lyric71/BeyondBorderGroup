@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
 const heroStats = [
   {
@@ -540,6 +541,8 @@ const serviceJsonLd = {
     </section>
 
     {/* ---------- CLOSING ---------- */}
+    <CaseStudyStrip slugs={["chery","master-martini","exeed"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">
