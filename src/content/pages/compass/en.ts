@@ -215,6 +215,11 @@ const copy: CompassCopy = {
       'Entering China? Replacing a partner that has stopped pulling its weight? Still working out the right shape for distribution in your category? The first call is short. Most people know inside half an hour whether this is the right kind of help for them. If it is not, we can usually point you to someone whose work is.',
     closingCtaPrimary: 'Brief us on your category',
     closingCtaSecondary: 'See the distribution service',
+    toolsLine: {
+      before: 'Still costing the platform side? Our ',
+      link: 'free cost calculators',
+      after: ' put a first-year number on Tmall Global, JD Worldwide and Douyin before you brief us.',
+    },
   },
 
   whyVetted: {

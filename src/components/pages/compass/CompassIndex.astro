@@ -28,6 +28,7 @@ const { facts, index: c } = copy;
 const locale = getLocaleFromUrl(Astro.url);
 const homeHref = localizePath('/', locale);
 const shortlistHref = localizePath('/compass/shortlist', locale);
+const toolsHref = localizePath('/tools', locale);
 const howItWorksHref = localizePath('/compass/how-it-works', locale);
 const cardHrefs = [
   localizePath('/compass/why-vetted', locale),
@@ -262,6 +263,15 @@ const cardImages = [
       <span class="eyebrow cx-reveal">{c.closingEyebrow}</span>
       <h2 class="h2 cx-reveal" style="--cx-d: 80ms">{c.closingTitle}</h2>
       <p class="cx-cta__lead cx-reveal" style="--cx-d: 160ms">{c.closingLead}</p>
+      {
+        c.toolsLine && (
+          <p class="cx-cta__tools cx-reveal" style="--cx-d: 200ms">
+            {c.toolsLine.before}
+            <a href={toolsHref}>{c.toolsLine.link}</a>
+            {c.toolsLine.after}
+          </p>
+        )
+      }
       <p class="cx-cta__stamp cx-reveal" style="--cx-d: 240ms">{facts.noCommission}</p>
       <div class="cx-cta__actions cx-reveal" style="--cx-d: 320ms">
         <a href={shortlistHref} class="btn btn--primary">{c.closingCtaPrimary}</a>
@@ -821,6 +831,17 @@ const cardImages = [
     color: rgba(255, 255, 255, 0.82);
     font-size: var(--fs-lead);
     line-height: 1.5;
+  }
+  .cx-cta__tools {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: var(--fs-small);
+    line-height: 1.6;
+    max-width: 56ch;
+  }
+  .cx-cta__tools a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
   .cx-cta__stamp {
     display: inline-block;

@@ -45,6 +45,15 @@ const learnChina = [
   { label: t('nav.learn.insights.label'), href: lp('/insights') },
 ];
 
+// WO-P4. The calculators are the one asset no competitor has a current answer
+// to, so they get their own column rather than a line under "Learn".
+const freeTools = [
+  { label: t('nav.calculator'), href: lp('/tools') },
+  { label: t('footer.tools.tmall'), href: lp('/tools/tmall-global-setup-and-run') },
+  { label: t('footer.tools.jd'), href: lp('/tools/jd-worldwide-setup-and-run') },
+  { label: t('footer.tools.douyin'), href: lp('/tools/douyin-cost-calculator') },
+];
+
 const company = [
   { label: t('nav.about'), href: lp('/about') },
   { label: t('nav.work'), href: lp('/work') },
@@ -88,6 +97,7 @@ const columns = [
   { title: t('footer.col.web'), items: websiteAndSocial },
   { title: t('footer.col.find'), items: findPartner },
   { title: t('footer.col.learn'), items: learnChina },
+  { title: t('footer.col.tools'), items: freeTools },
   { title: t('footer.col.company'), items: company },
 ];
 

@@ -119,6 +119,9 @@ export interface CompassIndexCopy {
   closingLead: string;
   closingCtaPrimary: string;
   closingCtaSecondary: string;
+  /** WO-P4. One line under the closing lead pointing at the cost calculators.
+   * Split around the link so each locale controls its own word order. */
+  toolsLine?: { before: string; link: string; after: string };
 }
 
 export interface WhyVettedCopy {

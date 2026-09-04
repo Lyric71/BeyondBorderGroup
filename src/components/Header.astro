@@ -299,7 +299,8 @@ const sectionRoots: Record<string, string[]> = {
 };
 const activeKey =
   Object.keys(sectionRoots).find((k) => sectionRoots[k].some((r) => here === r || here.startsWith(r + '/'))) ??
-  (here === '/work' || here.startsWith('/work/') ? 'work' : null);
+  (here === '/work' || here.startsWith('/work/') ? 'work' : null) ??
+  (here === '/tools' || here.startsWith('/tools/') ? 'tools' : null);
 
 // Country flags for the language switcher. Inline SVG keeps the asset fast,
 // China-safe (no external CDN) and crisp at any size.
@@ -504,11 +505,14 @@ const switcherOthers = otherLocales.map((l) => ({
             <a href={lp('/work')} class="nav__link"><span>{t('nav.work')}</span></a>
           </li>
 
+          <li class="nav__item" data-active={activeKey === 'tools' ? 'true' : undefined}>
+            <a href={lp('/tools')} class="nav__link"><span>{t('nav.calculator')}</span></a>
+          </li>
+
           <span class="nav__rail" data-rail aria-hidden="true"></span>
         </ul>
 
         <div class="nav__drawer-cta">
-          <a href={lp('/tools')} class="btn btn--secondary">{t('nav.calculator')}</a>
           <a href={lp('/contact')} class="btn btn--primary">{t('nav.talkToUs')}</a>
         </div>
       </nav>
@@ -560,7 +564,6 @@ const switcherOthers = otherLocales.map((l) => ({
           </ul>
         </div>
 
-        <a href={lp('/tools')} class="btn btn--secondary btn--sm nav__calc">{t('nav.calculator')}</a>
         <a href={lp('/contact')} class="btn btn--primary btn--sm nav__contact">{t('nav.talkToUs')}</a>
 
         <button class="nav__burger" type="button" aria-label={t('nav.menu')} aria-expanded="false">
