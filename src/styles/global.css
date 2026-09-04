@@ -420,23 +420,39 @@ h4,
      switcher stay reachable while the drawer is out. The drawer pads its top
      by --nav-h for exactly this reason. */
   z-index: 4;
-  background: rgba(255, 255, 255, 0.86);
-  backdrop-filter: saturate(1.4) blur(14px);
-  -webkit-backdrop-filter: saturate(1.4) blur(14px);
   border-bottom: 1px solid transparent;
   transition:
-    background 240ms var(--ease),
     box-shadow 240ms var(--ease),
     border-color 240ms var(--ease);
 }
+/* The frosted surface lives on a pseudo-element, not on the bar. A
+   backdrop-filter turns its element into the containing block for every
+   fixed descendant, which trapped the mobile drawer and the mega panels
+   inside the 76px bar. On the pseudo-element the blur is purely paint. */
+.nav__bar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  transition: background 240ms var(--ease);
+}
 .nav--scrolled .nav__bar {
-  background: rgba(255, 255, 255, 0.96);
   border-bottom-color: var(--bbg-border);
   box-shadow: 0 10px 30px -22px rgba(15, 15, 18, 0.45);
 }
-.nav--mega .nav__bar {
-  background: #fff;
+.nav--scrolled .nav__bar::before {
+  background: rgba(255, 255, 255, 0.96);
+}
+.nav--mega .nav__bar,
+.nav--open .nav__bar {
   border-bottom-color: var(--bbg-border);
+}
+.nav--mega .nav__bar::before,
+.nav--open .nav__bar::before {
+  background: #fff;
 }
 
 /* Retreat on the way down, return on the way up. */
@@ -1060,6 +1076,15 @@ h4,
     gap: var(--space-4);
   }
 }
+/* Measured at 1181px: the French row overshoots the viewport by about 120px,
+   German and Spanish by 40 to 50px, English fits. Up to 1340px the localized
+   rows only fit once the contact button steps out; it stays in every mega
+   panel, the footer and the drawer. */
+@media (min-width: 1181px) and (max-width: 1340px) {
+  html:not(:lang(en)) .nav__contact {
+    display: none;
+  }
+}
 
 @media (max-width: 1180px) {
   .nav--tucked {
@@ -1105,10 +1130,26 @@ h4,
     transform: translateX(100%);
     transition: transform 340ms cubic-bezier(0.22, 1, 0.36, 1);
     box-shadow: -24px 0 48px -30px rgba(15, 15, 18, 0.6);
-    z-index: 3;
+    z-index: 2;
   }
   .nav--open .nav__primary {
     transform: none;
+  }
+  /* The drawer is a child of the bar, so the bar's own z-index cannot lift
+     the burger above it. Stack inside the bar instead: scrim (in .nav) <
+     drawer 2 < bar surface 3 < logo and controls 4. */
+  .nav__bar::before {
+    z-index: 3;
+  }
+  .nav__logo,
+  .nav__right {
+    position: relative;
+    z-index: 4;
+  }
+  /* On desktop the primary nav pushes this group to the right edge. Below
+     1181px that nav is the off-canvas drawer, so the group needs its own push. */
+  .nav__right {
+    margin-left: auto;
   }
 
   .nav__links {
@@ -8809,4 +8850,18 @@ a.tool-card:hover .tool-card__foot::after {
   font-size: var(--fs-small);
   line-height: 1.6;
   color: var(--bbg-text-muted);
+}
+
+/* Editorial tables. Markdown tables in insights and guides are wrapped in
+   <div class="table-scroll"> by the editorial pipeline (editorial/SPEC.md) so
+   a six-column fee table scrolls sideways on a phone instead of breaking
+   the page width. */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.75em 0;
+}
+.table-scroll table {
+  margin: 0;
+  min-width: 560px;
 }

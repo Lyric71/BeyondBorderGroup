@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'china-distributor-vs-own-store': 'distributeur-ou-boutique-en-propre-en-chine',
   'tmall-2026-strategy-foreign-brands': 'tmall-2026-strategie-marques-etrangeres',
   'china-cross-border-ecommerce-140-million-shoppers':
     'e-commerce-transfrontalier-chine-140-millions-acheteurs',
@@ -138,6 +139,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'china-distributor-vs-own-store': 'distributor-oder-eigener-shop-china',
   'tmall-2026-strategy-foreign-brands': 'tmall-2026-strategie-auslaendische-marken',
   'china-cross-border-ecommerce-140-million-shoppers':
     'grenzueberschreitender-e-commerce-china-140-millionen-kaeufer',
@@ -267,6 +269,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'china-distributor-vs-own-store': 'distribuidor-o-tienda-propia-china',
   'tmall-2026-strategy-foreign-brands': 'tmall-2026-estrategia-marcas-extranjeras',
   'china-cross-border-ecommerce-140-million-shoppers':
     'ecommerce-transfronterizo-china-140-millones-compradores',

@@ -26,3 +26,6 @@ pnpm-debug.log*
 
 # WaveSpeed generated images (text-to-image script default output)
 generated-*.png
+
+# editorial pipeline console output (regenerable)
+editorial/logs/runs/
