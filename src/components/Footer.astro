@@ -19,8 +19,8 @@ const lp = (path: string) => localizePath(path, locale);
  * application subdomain so the old login URL is a single hop, not two.
  */
 const findPartner = [
-  { label: t('nav.find.compass.label'), href: '/compass' },
-  { label: t('nav.find.shortlist.label'), href: '/compass/how-it-works' },
+  { label: t('nav.find.compass.label'), href: lp('/compass') },
+  { label: t('nav.find.shortlist.label'), href: lp('/compass/how-it-works') },
   { label: t('nav.enter.distribution.label'), href: lp('/enter-china/distribution') },
   { label: t('nav.enter.marketEntry.label'), href: lp('/enter-china/market-entry-consulting') },
 ];
@@ -34,8 +34,8 @@ const sellInChina = [
 ];
 
 const websiteAndSocial = [
-  { label: t('nav.web.website.label'), href: '/build-in-china' },
-  { label: t('nav.web.social.label'), href: '/social-in-china' },
+  { label: t('nav.web.website.label'), href: lp('/build-in-china') },
+  { label: t('nav.web.social.label'), href: lp('/social-in-china') },
 ];
 
 const learnChina = [

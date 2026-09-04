@@ -29,7 +29,6 @@ import { localesForPath } from '../i18n/route-locales';
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
 const lp = (path: string) => localizePath(path, locale);
-const enPath = (path: string) => path;
 
 const icon = {
   compass: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5.5-5.5 2 2-5.5z"/></svg>`,
@@ -62,13 +61,13 @@ const findPartner: NavItem[] = [
   {
     label: t('nav.find.compass.label'),
     desc: t('nav.find.compass.desc'),
-    href: enPath('/compass'),
+    href: lp('/compass'),
     svg: icon.compass,
   },
   {
     label: t('nav.find.shortlist.label'),
     desc: t('nav.find.shortlist.desc'),
-    href: enPath('/compass/how-it-works'),
+    href: lp('/compass/how-it-works'),
     svg: icon.network,
   },
   {
@@ -122,13 +121,13 @@ const websiteAndSocial: NavItem[] = [
   {
     label: t('nav.web.website.label'),
     desc: t('nav.web.website.desc'),
-    href: enPath('/build-in-china'),
+    href: lp('/build-in-china'),
     svg: icon.monitor,
   },
   {
     label: t('nav.web.social.label'),
     desc: t('nav.web.social.desc'),
-    href: enPath('/social-in-china'),
+    href: lp('/social-in-china'),
     svg: icon.broadcast,
   },
   {
@@ -204,14 +203,14 @@ const features: Record<string, Feature> = {
         alt: 'ChinaWebFoundry',
         name: 'ChinaWebFoundry',
         line: t('nav.feature.cwf.line'),
-        href: enPath('/build-in-china'),
+        href: lp('/build-in-china'),
       },
       {
         src: '/Images/AgencyLogos/TheredScroll%20PNG.webp',
         alt: 'TheRedScroll',
         name: 'TheRedScroll',
         line: t('nav.feature.trs.line'),
-        href: enPath('/social-in-china'),
+        href: lp('/social-in-china'),
       },
     ],
   },
@@ -220,7 +219,7 @@ const features: Record<string, Feature> = {
     label: t('nav.feature.compass.label'),
     title: t('nav.feature.compass.title'),
     line: t('nav.feature.compass.line'),
-    href: enPath('/compass'),
+    href: lp('/compass'),
     cta: t('nav.feature.compass.cta'),
     src: '/Images/compass/compass-hero.png',
     alt: t('nav.feature.compass.alt'),
@@ -260,7 +259,7 @@ const sections: NavSection[] = [
   {
     key: 'web',
     label: t('nav.section.web'),
-    href: enPath('/build-in-china'),
+    href: lp('/build-in-china'),
     title: t('nav.web.title'),
     intro: t('nav.web.intro'),
     cta: null,
@@ -269,7 +268,7 @@ const sections: NavSection[] = [
   {
     key: 'find',
     label: t('nav.section.find'),
-    href: enPath('/compass'),
+    href: lp('/compass'),
     title: t('nav.find.title'),
     intro: t('nav.find.intro'),
     cta: null,
