@@ -18,9 +18,9 @@
  * sits in the footer and "Insights" sits under Learn China.
  *
  * Link policy. Every row points at thechinapath.com except one, the hubStudio
- * row. The Compass pages and the two door pages are English only, so they use
- * raw paths: localizePath would send a French visitor to /fr, which is not where
- * the page is. Labels are translated, destinations are the English page.
+ * row. WO-P2: the Compass pages and the two door pages now ship in every
+ * locale, so every row goes through localizePath and a German reader stays on
+ * German pages from the German menu.
  */
 import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
 import { locales, localeLabels, localeNamesNative, type Locale } from '../i18n/ui';
