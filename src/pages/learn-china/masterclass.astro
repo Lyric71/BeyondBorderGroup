@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 
 const heroBadges = [
   'HEC MBA',
@@ -821,6 +822,8 @@ const faqCategories = ['All', 'Programme', 'Format', 'Audience', 'Engagement', '
     </section>
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["pierre-fabre","langnese","valio"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="mc-cta">

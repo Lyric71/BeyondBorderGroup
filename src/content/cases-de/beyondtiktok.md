@@ -4,6 +4,7 @@ title: "Eigenständiges TikTok-Angebot"
 summary: "Konzeption und Aufbau der BeyondTikTok-Website als Plattform für Lead-Generierung rund um TikTok-Services. SEO und Google Ads bringen qualifizierten Traffic."
 metric: "Lead-Site für TikTok-Services, SEO und Google Ads bringen qualifizierten Traffic."
 category: "Website"
+industry: "Digital Services"
 services:
   - "Markenerlebnis"
   - "Design"

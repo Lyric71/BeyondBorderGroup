@@ -4,6 +4,7 @@ title: "Services annuels intégrés en marketing sur les réseaux sociaux"
 summary: "Programme social annuel intégré pour Jaguar Land Rover en Chine, pensé pour engager les jeunes publics par des contenus iconiques et un volume de contenus utilisateurs."
 metric: "Programme social annuel, hausse mesurable de l'engagement et communauté de jeunes fans en Chine."
 category: "Social & Content"
+industry: "Automotive"
 services:
   - "Campagne"
   - "eCommerce"

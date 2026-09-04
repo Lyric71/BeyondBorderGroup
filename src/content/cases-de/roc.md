@@ -4,6 +4,7 @@ title: "Premium-Hautpflege aus Frankreich für China"
 summary: "Lokalisierung einer traditionsreichen französischen Dermo-Skincare-Marke für chinesische Verbraucher: Markenstory, Namensgebung, visuelle Identität und Verpackungs-Leitlinien."
 metric: "Lokalisierter chinesischer Name, Markenstory und vollständiges Identitätssystem für ROC Dermo-Skincare ausgeliefert."
 category: "Brand & Design"
+industry: "Beauty & Personal Care"
 services:
   - "Markenerlebnis"
   - "Design"

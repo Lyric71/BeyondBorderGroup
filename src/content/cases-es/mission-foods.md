@@ -4,6 +4,7 @@ title: "Snack Forward: el salto digital de Mission Foods en China"
 summary: "Programa de lanzamiento social-first para las patatas de maíz de Mission Foods en China, conectando con la Generación Z mediante contenido culturalmente relevante en WeChat, Weibo y RED."
 metric: "El lanzamiento de Halloween impulsó el crecimiento de seguidores en WeChat, Weibo y RED con contenido de snacking dirigido a la Generación Z."
 category: "Social & Content"
+industry: "Food & Beverage"
 services:
   - "Campañas"
   - "eCommerce"

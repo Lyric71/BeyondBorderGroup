@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 import { getCollection } from 'astro:content';
 
 const promises = [
@@ -1012,6 +1013,8 @@ const icons: Record<string, string> = {
     }
 
     {/* ---------- FINAL CTA ---------- */}
+    <CaseStudyStrip slugs={["iguzzini","viessmann","kerry-davinci"]} />
+
     <section class="section section--tight">
       <div class="container container--narrow">
         <div class="cbs-cta">

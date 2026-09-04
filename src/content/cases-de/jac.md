@@ -4,6 +4,7 @@ title: "Globale Asset-Produktion, pixelgenau"
 summary: "Komplette Produktion von über 250 Außen- und Innenaufnahmen für JACs neues E-Modell, pixelgenau für den Einsatz in globalen Partner- und Händlernetzen."
 metric: "250+ Außen- und Innenaufnahmen des E-Modells, produziert für Händler- und Partnernutzung weltweit."
 category: "Brand & Design"
+industry: "Automotive"
 services:
   - "Markenerlebnis"
   - "Markenstrategie"

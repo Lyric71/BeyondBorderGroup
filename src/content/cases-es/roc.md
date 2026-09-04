@@ -4,6 +4,7 @@ title: "Una marca premium de skincare, de Francia a China"
 summary: "Localización para el consumidor chino de una marca francesa de dermocosmética con tradición, mediante historia de marca, nombre chino, identidad visual y guidelines de packaging."
 metric: "Nombre chino, historia de marca y sistema completo de identidad visual entregados para la dermocosmética ROC."
 category: "Brand & Design"
+industry: "Beauty & Personal Care"
 services:
   - "Experiencia de marca"
   - "Diseño"

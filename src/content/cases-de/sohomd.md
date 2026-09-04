@@ -4,6 +4,7 @@ title: "Innovative Lösungen für digitale Gesundheit"
 summary: "Markenerlebnis aufgefrischt, Website neu gebaut, SEO und Google Ads ausgerollt. Organischer Traffic verdoppelt, Lead-Generierung auf der Tele-Psychiatrie-Plattform gehoben."
 metric: "Organischer Traffic verdoppelt. Lead-Generierung über die Tele-Psychiatrie-Plattform deutlich gesteigert."
 category: "Website"
+industry: "Healthcare"
 services:
   - "Kampagne"
   - "Design"

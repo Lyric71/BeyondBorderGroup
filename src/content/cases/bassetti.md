@@ -4,6 +4,7 @@ title: "WordPress and Elementor behind the firewall: migrating Bassetti's websit
 summary: "Dedicated Chinese website for Bassetti built on WordPress and Elementor, re-engineered for China hosting, ICP compliance and local performance."
 metric: "Bassetti.cn relaunched on China-hosted WordPress with ICP and local performance."
 category: "Website"
+industry: "Home & Design"
 services:
   - "Design"
   - "Website"

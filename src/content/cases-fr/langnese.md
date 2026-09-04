@@ -4,6 +4,7 @@ title: "Inverser le déclin sur le marché chinois du miel"
 summary: "Refonte intégrale du go-to-market chinois de Langnese, depuis la distribution jusqu'aux formats et aux contenus, qui a inversé une longue érosion des ventes et ouvert de nouveaux canaux régionaux."
 metric: "Déclin commercial durable inversé. Nouveaux canaux régionaux ouverts en Chine."
 category: "Distribution"
+industry: "Food & Beverage"
 services:
   - "Stratégie de marque"
   - "Conseil"

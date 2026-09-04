@@ -4,6 +4,7 @@ title: "Campagne sociale annuelle sur WeChat, Xiaohongshu et Weibo, augmentée p
 summary: "Programme social annuel déployé sur WeChat, Xiaohongshu et Weibo, qui mobilise l'intelligence artificielle pour démultiplier des contenus personnalisés et élargir la communauté JAC en Chine."
 metric: "Campagne IA J-Bot olympique reprise spontanément par les équipes JAC internationales sur Facebook et Instagram."
 category: "Social & Content"
+industry: "Automotive"
 services:
   - "Campagne"
   - "Contenu"

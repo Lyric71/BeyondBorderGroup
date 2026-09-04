@@ -71,6 +71,20 @@ const insightsEs = defineCollection({
   schema: insightFrSchema,
 });
 
+/** WO-P5. Client sector, used by the industry filter on /work. Stored as the
+ * English key in every locale; the index pages carry the translated labels. */
+export const CASE_INDUSTRIES = [
+  'Automotive',
+  'Beauty & Personal Care',
+  'Food & Beverage',
+  'Hospitality & Travel',
+  'Home & Design',
+  'Financial Services',
+  'Healthcare',
+  'Fashion & Footwear',
+  'Digital Services',
+] as const;
+
 const caseBaseSchema = z.object({
   brand: z.string(),
   title: z.string(),
@@ -83,6 +97,7 @@ const caseBaseSchema = z.object({
     'Distribution',
     'Training',
   ]),
+  industry: z.enum(CASE_INDUSTRIES).optional(),
   services: z.array(z.string()).default([]),
   /** Short outcome line shown on /work cards. Specific numbers preferred. */
   metric: z.string().optional(),

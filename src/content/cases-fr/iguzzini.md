@@ -4,6 +4,7 @@ title: "Le luminaire italien haut de gamme à la conquête de la Chine"
 summary: "Lancement et pilotage de la boutique cross-border d'Iguzzini sur Tmall, pour conquérir designers et consommateurs chinois du luxe sans diluer l'héritage B2B de la maison."
 metric: "Flagship Tmall cross-border lancé pour la marque d'éclairage, pensé pour les architectes et consommateurs premium chinois."
 category: "eCommerce"
+industry: "Home & Design"
 services:
   - "Expérience de marque"
   - "Campagne"

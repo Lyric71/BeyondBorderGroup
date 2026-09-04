@@ -4,6 +4,7 @@ title: "Relations presse pour le lancement international du groupe Chery"
 summary: "Pilotage du programme global de relations presse d'Exeed, articulé entre médias, contenus et événements à Genève, autour du pré-lancement EXLANTIX et des grands rendez-vous sectoriels."
 metric: "2,5 Mds d'impressions sur la conférence co-création. 60 M+ à Genève, 50 M+ sur le lancement EXLANTIX."
 category: "Social & Content"
+industry: "Automotive"
 services:
   - "Campagne"
   - "Média"

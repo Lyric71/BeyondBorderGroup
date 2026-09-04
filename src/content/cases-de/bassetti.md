@@ -4,6 +4,7 @@ title: "WordPress und Elementor hinter der Great Firewall: Bassettis Website-Umz
 summary: "Eigene chinesische Website für Bassetti auf WordPress und Elementor, neu aufgesetzt für lokales Hosting, ICP-Konformität und Performance vor Ort."
 metric: "Bassetti.cn neu live, gehostet in China auf WordPress, mit ICP und lokaler Performance."
 category: "Website"
+industry: "Home & Design"
 services:
   - "Design"
   - "Website"

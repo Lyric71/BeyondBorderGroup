@@ -4,6 +4,7 @@ title: "Little Milk Brick Cushion: social media and eCommerce launch campaign"
 summary: "A phased Xiaohongshu and Douyin launch for Age 20's new cushion foundation that beat impression targets by up to 287% and turned the pack into a nickname."
 metric: "Douyin impressions +287% vs target. 750k Xiaohongshu reach on a 300k target."
 category: "Social & Content"
+industry: "Beauty & Personal Care"
 services:
   - "Campaign"
   - "eCommerce"

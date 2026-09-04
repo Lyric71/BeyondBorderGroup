@@ -4,6 +4,7 @@ title: "Le premier assureur vie digital de Hong Kong"
 summary: "Site bilingue et campagne de lancement pour le premier assureur vie digital de Hong Kong : 10 000 abonnés sociaux acquis en un mois, 3 000 inscriptions dès la première semaine."
 metric: "10 000 abonnés sociaux en un mois. 3 000 inscriptions newsletter en semaine un."
 category: "Website"
+industry: "Financial Services"
 services:
   - "Campagne"
   - "Design"

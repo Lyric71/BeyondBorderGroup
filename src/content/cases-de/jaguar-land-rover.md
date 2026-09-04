@@ -4,6 +4,7 @@ title: "Integriertes Social-Media-Marketing über das Jahr"
 summary: "Ganzjähriges integriertes Social-Programm für Jaguar Land Rover in China. Jüngere Zielgruppen über ikonische Inhalte und UGC angesprochen."
 metric: "Ganzjähriges Social-Programm mit messbarem Engagement-Sprung und einer jungen chinesischen Fan-Community."
 category: "Social & Content"
+industry: "Automotive"
 services:
   - "Kampagne"
   - "eCommerce"

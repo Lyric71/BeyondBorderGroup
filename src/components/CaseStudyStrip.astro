@@ -1,0 +1,163 @@
+---
+/**
+ * WO-P5. Two or three case studies dropped onto a service page, so the page
+ * shows proof next to the claim. Pass the case ids in the order you want them;
+ * the strip reads the right locale collection and links into the localized
+ * /work path. Renders nothing when no id resolves, so a typo cannot ship an
+ * empty section.
+ */
+import { getCollection } from 'astro:content';
+import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
+
+interface Props {
+  slugs: string[];
+  /** Override the eyebrow/title pair when the page needs a tighter fit. */
+  eyebrow?: string;
+  title?: string;
+}
+
+const { slugs, eyebrow, title } = Astro.props;
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+
+const COLLECTION = { en: 'cases', fr: 'casesFr', de: 'casesDe', es: 'casesEs' } as const;
+const all = await getCollection(COLLECTION[locale], ({ data }) => !data.draft);
+const byId = new Map(all.map((c) => [c.id, c]));
+const picks = slugs.map((s) => byId.get(s)).filter((c): c is NonNullable<typeof c> => !!c);
+
+const workBase = localizePath('/work', locale);
+const hrefFor = (id: string) => `${workBase}/${id}`;
+---
+
+{
+  picks.length > 0 && (
+    <section class="section cs-strip" aria-labelledby="cs-strip-title">
+      <div class="container">
+        <header class="cs-strip__head">
+          <span class="eyebrow">{eyebrow ?? t('work.strip.eyebrow')}</span>
+          <h2 id="cs-strip-title">{title ?? t('work.strip.title')}</h2>
+        </header>
+        <ul class="cs-strip__grid" role="list">
+          {picks.map((c) => (
+            <li>
+              <a href={hrefFor(c.id)} class="cs-strip__card">
+                <span class="cs-strip__image">
+                  <img
+                    src={c.data.heroImage}
+                    alt={c.data.heroImageAlt || c.data.brand}
+                    loading="lazy"
+                    decoding="async"
+                    width="600"
+                    height="400"
+                  />
+                </span>
+                <span class="cs-strip__body">
+                  <span class="cs-strip__brand">{c.data.brand}</span>
+                  <span class="cs-strip__title">{c.data.title}</span>
+                  {c.data.metric && <span class="cs-strip__metric">{c.data.metric}</span>}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p class="cs-strip__all">
+          <a href={workBase} class="btn btn--ghost">{t('work.strip.all')}</a>
+        </p>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .cs-strip__head {
+    max-width: 62ch;
+    margin-bottom: var(--space-6);
+  }
+  .cs-strip__head h2 {
+    margin-top: var(--space-2);
+  }
+  .cs-strip__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+  .cs-strip__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+    border: 1px solid var(--bbg-border);
+    border-radius: 8px;
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none;
+    transition:
+      transform 200ms ease,
+      border-color 200ms ease,
+      box-shadow 200ms ease;
+  }
+  .cs-strip__card:hover {
+    transform: translateY(-4px);
+    border-color: var(--bbg-blue);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  }
+  .cs-strip__image {
+    display: block;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background: var(--bbg-surface);
+  }
+  .cs-strip__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .cs-strip__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-4);
+  }
+  .cs-strip__brand {
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bbg-blue);
+  }
+  .cs-strip__title {
+    font-size: var(--fs-h4);
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--bbg-ink);
+  }
+  .cs-strip__metric {
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
+  .cs-strip__all {
+    margin: var(--space-6) 0 0;
+  }
+  @media (max-width: 900px) {
+    .cs-strip__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 600px) {
+    .cs-strip__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cs-strip__card {
+      transition: none;
+    }
+    .cs-strip__card:hover {
+      transform: none;
+    }
+  }
+</style>

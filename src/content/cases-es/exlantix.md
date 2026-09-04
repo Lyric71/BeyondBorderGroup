@@ -4,6 +4,7 @@ title: "Marca premium de automoción, Chery Group"
 summary: "Identidad visual y experiencia de marca para Exlantix, la nueva línea premium de automoción de Chery Group, pensada para audiencia global."
 metric: "Sistema de identidad visual y experiencia de marca entregado para la línea premium EXLANTIX."
 category: "Brand & Design"
+industry: "Automotive"
 services:
   - "Experiencia de marca"
   - "Diseño"

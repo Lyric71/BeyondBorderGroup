@@ -4,6 +4,7 @@ title: "Hong Kong's first digital life insurer"
 summary: "A bilingual website and launch campaign for Hong Kong's first digital life insurer, delivering 10,000 social followers in one month and 3,000 sign-ups in week one."
 metric: "10,000 social followers in month one. 3,000 newsletter sign-ups in week one."
 category: "Website"
+industry: "Financial Services"
 services:
   - "Campaign"
   - "Design"

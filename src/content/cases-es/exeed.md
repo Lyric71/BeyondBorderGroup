@@ -4,6 +4,7 @@ title: "Relaciones públicas para el lanzamiento internacional del nuevo coche, 
 summary: "Dirigimos el programa global de PR de Exeed para Chery Group, combinando medios, contenidos y activación en eventos en Ginebra, el prelanzamiento de EXLANTIX y citas clave del sector."
 metric: "Más de 2.500 millones de impresiones en la conferencia de cocreación. Más de 60 millones en Ginebra y más de 50 millones en el lanzamiento de EXLANTIX."
 category: "Social & Content"
+industry: "Automotive"
 services:
   - "Campañas"
   - "Medios"

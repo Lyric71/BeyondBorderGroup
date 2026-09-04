@@ -4,6 +4,7 @@ title: "La primera aseguradora digital de vida de Hong Kong"
 summary: "Web bilingüe y campaña de lanzamiento para la primera aseguradora digital de vida de Hong Kong: 10.000 seguidores en un mes y 3.000 altas en la primera semana."
 metric: "10.000 seguidores en redes el primer mes. 3.000 altas a la newsletter la primera semana."
 category: "Website"
+industry: "Financial Services"
 services:
   - "Campañas"
   - "Diseño"

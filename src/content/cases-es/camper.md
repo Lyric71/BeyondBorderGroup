@@ -4,6 +4,7 @@ title: "Construir una comunidad de diseño en las redes sociales chinas"
 summary: "Crecimiento de más del 330 % en la presencia de Camper en WeChat, Weibo y RedNote, apoyado en una narrativa de oficio, colaboraciones de diseño y microinfluencia."
 metric: "Comunidad combinada de 43.000 a 187.000 seguidores. RedNote aportó el 38 % del tráfico eCommerce."
 category: "Social & Content"
+industry: "Fashion & Footwear"
 services:
   - "Experiencia de marca"
   - "Campañas"

@@ -4,6 +4,7 @@ title: "Partner für Patissiers, Chocolatiers und Bäcker. Social für Südostas
 summary: "Steuerung der Master-Martini-Social-Accounts in Südostasien, um Berufsbäcker und -köche in eine engagierte, produktkundige Community zu verwandeln."
 metric: "Berufsbäcker-Community über die südostasiatischen Social-Accounts aufgebaut."
 category: "Social & Content"
+industry: "Food & Beverage"
 services:
   - "Kampagne"
   - "Design"

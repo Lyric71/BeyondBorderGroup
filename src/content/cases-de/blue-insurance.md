@@ -4,6 +4,7 @@ title: "Hongkongs erster digitaler Lebensversicherer"
 summary: "Zweisprachige Website und Einführungskampagne für Hongkongs ersten digitalen Lebensversicherer. 10.000 Social-Follower im ersten Monat, 3.000 Anmeldungen in der ersten Woche."
 metric: "10.000 Social-Follower im ersten Monat. 3.000 Newsletter-Anmeldungen in Woche eins."
 category: "Website"
+industry: "Financial Services"
 services:
   - "Kampagne"
   - "Design"

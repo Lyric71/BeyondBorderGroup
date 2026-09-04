@@ -4,6 +4,7 @@ title: "Una oferta dedicada a TikTok"
 summary: "Diseñamos y construimos la web de BeyondTikTok como hub de generación de leads para servicios de TikTok, apoyada en SEO y Google Ads para traer tráfico cualificado."
 metric: "Sitio de captación de leads para servicios de TikTok, con SEO y Google Ads alimentando tráfico cualificado."
 category: "Website"
+industry: "Digital Services"
 services:
   - "Experiencia de marca"
   - "Diseño"

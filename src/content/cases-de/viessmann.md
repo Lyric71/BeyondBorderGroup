@@ -4,6 +4,7 @@ title: "Klimalösungen: Tmall-eCommerce in China für Heizen und Warmwasser"
 summary: "End-to-End-Betrieb der Tmall- und JD-Shops für Viessmanns Klimalösungen. Content, Media, Livestream und Service über den gesamten Online-Funnel."
 metric: "Tmall- und JD-Shops End-to-End geführt für Viessmanns Klimalösungen: Content, Media, Livestream, Service."
 category: "eCommerce"
+industry: "Home & Design"
 services:
   - "Kampagne"
   - "eCommerce"

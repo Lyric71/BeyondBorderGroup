@@ -30,6 +30,34 @@ const categoryLabelsEs: Record<(typeof categoryOrder)[number], string> = {
 const counts = categoryOrder
   .map((c) => ({ name: c, count: sorted.filter((x) => x.data.category === c).length }))
   .filter((c) => c.count > 0);
+
+// WO-P5. Second filter axis: the client sector, stored as the English key on
+// every locale and labelled here.
+const industryOrder = [
+  "Automotive",
+  "Beauty & Personal Care",
+  "Food & Beverage",
+  "Hospitality & Travel",
+  "Home & Design",
+  "Financial Services",
+  "Healthcare",
+  "Fashion & Footwear",
+  "Digital Services",
+] as const;
+const industryLabels: Record<(typeof industryOrder)[number], string> = {
+  "Automotive": "Automoción",
+  "Beauty & Personal Care": "Belleza y cuidado personal",
+  "Food & Beverage": "Alimentación y bebidas",
+  "Hospitality & Travel": "Hostelería y viajes",
+  "Home & Design": "Hogar y diseño",
+  "Financial Services": "Servicios financieros",
+  "Healthcare": "Salud",
+  "Fashion & Footwear": "Moda y calzado",
+  "Digital Services": "Servicios digitales",
+};
+const industryCounts = industryOrder
+  .map((i) => ({ name: i, count: sorted.filter((x) => x.data.industry === i).length }))
+  .filter((c) => c.count > 0);
 ---
 
 <Layout
@@ -78,10 +106,38 @@ const counts = categoryOrder
         )
       }
 
+      {
+        industryCounts.length > 1 && (
+          <div class="work-filter work-filter--industry" role="tablist" aria-label="Filtrar por sector">
+            <button
+              type="button"
+              class="work-filter__btn is-active"
+              data-industry="all"
+              role="tab"
+              aria-selected="true"
+            >
+              Todos los sectores
+            </button>
+            {industryCounts.map((c) => (
+              <button
+                type="button"
+                class="work-filter__btn"
+                data-industry={c.name}
+                role="tab"
+                aria-selected="false"
+              >
+                {industryLabels[c.name]} <span class="work-filter__count">{c.count}</span>
+              </button>
+            ))}
+          </div>
+        )
+      }
+
       <div class="grid grid-3 work-grid">
         {
           sorted.map((c) => (
-            <a href={`/es/proyectos/${c.id}`} class="work-card" data-category={c.data.category}>
+            <a href={`/es/proyectos/${c.id}`} class="work-card" data-category={c.data.category}
+              data-industry={c.data.industry ?? ''}>
               <div class="work-card__image">
                 <img
                   src={c.data.heroImage}
@@ -155,18 +211,27 @@ const counts = categoryOrder
       grid.appendChild(frag);
     })();
 
+    // WO-P5. Two axes, service and industry, combined with AND. Every card is
+// in the HTML before this runs, so the unfiltered list is crawlable.
+const state = { category: 'all', industry: 'all' };
+    const applyFilters = () => {
+      document.querySelectorAll('.work-card').forEach((card) => {
+        const okCategory = state.category === 'all' || card.dataset.category === state.category;
+        const okIndustry = state.industry === 'all' || card.dataset.industry === state.industry;
+        card.style.display = okCategory && okIndustry ? '' : 'none';
+      });
+    };
     document.querySelectorAll('.work-filter__btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        const cat = btn.dataset.category;
-        document.querySelectorAll('.work-filter__btn').forEach((b) => {
+        const axis = btn.dataset.industry !== undefined ? 'industry' : 'category';
+        state[axis] = axis === 'industry' ? btn.dataset.industry : btn.dataset.category;
+        const row = btn.closest('.work-filter');
+        (row ? row.querySelectorAll('.work-filter__btn') : []).forEach((b) => {
           const on = b === btn;
           b.classList.toggle('is-active', on);
           b.setAttribute('aria-selected', on ? 'true' : 'false');
         });
-        document.querySelectorAll('.work-card').forEach((card) => {
-          const show = cat === 'all' || card.dataset.category === cat;
-          card.style.display = show ? '' : 'none';
-        });
+        applyFilters();
       });
     });
   </script>
@@ -199,6 +264,9 @@ const counts = categoryOrder
       margin-bottom: var(--space-7);
       padding-bottom: var(--space-4);
       border-bottom: 1px solid var(--bbg-border);
+    }
+    .work-filter--industry {
+      margin-top: var(--space-3);
     }
     .work-filter__btn {
       appearance: none;

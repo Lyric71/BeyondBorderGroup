@@ -4,6 +4,7 @@ title: "Social, eCommerce et plan média pour le Super Brand Day"
 summary: "Dispositif intégré pour le Super Brand Day de Tmall : célébrité, KOL et activations terrain conjugués pour générer un GMV à huit chiffres en RMB et des inscriptions Bonvoy par centaines de milliers en vingt-quatre heures."
 metric: "GMV à huit chiffres en RMB sur le Super Brand Day Tmall. Inscriptions Bonvoy à six chiffres en 24 h."
 category: "eCommerce"
+industry: "Hospitality & Travel"
 services:
   - "Social"
   - "eCommerce"
