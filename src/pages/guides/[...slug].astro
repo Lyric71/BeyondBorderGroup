@@ -1,0 +1,170 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides', ({ data }) => !data.draft);
+  return guides.map((guide) => ({
+    params: { slug: guide.id },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+const { title, description, pubDate, updatedDate, author, format, relatedInsight, heroImage, heroImageAlt } =
+  guide.data;
+
+function formatDate(d?: Date) {
+  if (!d) return '';
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+---
+
+<Layout
+  title={`${title} | TheChinaPath`}
+  description={description}
+  noAlternate
+  ogType="article"
+  ogImage={heroImage}
+  ogImageAlt={heroImageAlt || title}
+  publishedTime={pubDate}
+  modifiedTime={updatedDate}
+  articleAuthor={author}
+>
+  <article class="guide">
+    <header class="guide__head">
+      <div class="container">
+        <p class="eyebrow">Guide{format ? `: ${format}` : ''}</p>
+        <h1>{title}</h1>
+        <p class="guide__lead">{description}</p>
+        <p class="guide__meta">
+          <span>{author}</span>
+          {pubDate && <span>{formatDate(pubDate)}</span>}
+          {updatedDate && <span>Updated {formatDate(updatedDate)}</span>}
+        </p>
+        <div class="guide__actions">
+          <button type="button" class="guide__print" onclick="window.print()">Print this guide</button>
+          {relatedInsight && (
+            <a class="guide__related" href={`/insights/${relatedInsight}`}>Read the article it comes from</a>
+          )}
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="guide__body prose">
+        <Content />
+      </div>
+    </div>
+  </article>
+
+  <style is:global>
+    .guide__head {
+      padding: clamp(48px, 8vw, 96px) 0 32px;
+      border-bottom: 1px solid var(--bbg-border);
+    }
+    .guide__head h1 {
+      max-width: 22ch;
+      margin: 0 0 16px;
+    }
+    .guide__lead {
+      max-width: 60ch;
+      font-size: var(--fs-lead, 20px);
+      line-height: 1.5;
+      color: var(--bbg-text, #333);
+      margin: 0 0 16px;
+    }
+    .guide__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      font-size: 14px;
+      color: var(--bbg-text-muted, #6b6b6b);
+      margin: 0 0 24px;
+    }
+    .guide__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+    .guide__print {
+      background: var(--bbg-blue, #269ada);
+      color: #fff;
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 200ms ease;
+    }
+    .guide__print:hover {
+      background: var(--bbg-blue-dark, #1e7db0);
+    }
+    .guide__related {
+      color: var(--bbg-blue, #269ada);
+      font-weight: 600;
+    }
+    .guide__body {
+      max-width: 760px;
+      padding: 40px 0 clamp(64px, 10vw, 120px);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--bbg-text, #333);
+    }
+    .guide__body h2 {
+      margin: 2em 0 0.75em;
+    }
+    .guide__body h3 {
+      margin: 1.5em 0 0.5em;
+    }
+    .guide__body ul,
+    .guide__body ol {
+      padding-left: 1.4em;
+    }
+    .guide__body li {
+      margin: 0.4em 0;
+    }
+    .guide__body input[type='checkbox'] {
+      margin-right: 0.5em;
+    }
+    .guide__body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.75em 0;
+      font-size: 0.95em;
+    }
+    .guide__body th,
+    .guide__body td {
+      padding: 0.75em 1em;
+      border: 1px solid var(--bbg-border);
+      text-align: left;
+      vertical-align: top;
+    }
+    .guide__body th {
+      background: var(--bbg-surface);
+      font-weight: 600;
+      color: var(--bbg-ink);
+    }
+    @media print {
+      header:not(.guide__head),
+      footer,
+      nav,
+      .guide__actions {
+        display: none !important;
+      }
+      .guide__head {
+        padding: 0 0 16px;
+      }
+      .guide__body {
+        max-width: none;
+        padding: 16px 0;
+        font-size: 12pt;
+      }
+      .guide__body a::after {
+        content: '';
+      }
+    }
+  </style>
+</Layout>

@@ -1858,7 +1858,11 @@ const icons: Record<string, string> = {
     }
     @media (max-width: 900px) {
       .bic-verdict {
-        position: static;
+        /* relative, not static: the card must stay the containing block for
+           its ::before glow, or the glow escapes overflow: hidden and widens
+           the page by 20vw. */
+        position: relative;
+        top: auto;
       }
     }
     .bic-verdict__eyebrow {

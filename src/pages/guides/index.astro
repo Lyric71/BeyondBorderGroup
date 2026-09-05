@@ -1,0 +1,113 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort(
+  (a, b) => (b.data.pubDate?.getTime() ?? 0) - (a.data.pubDate?.getTime() ?? 0),
+);
+
+function formatDate(d?: Date) {
+  if (!d) return '';
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+---
+
+<Layout
+  title="Guides and checklists for selling in China | TheChinaPath"
+  description="Printable checklists, run sheets and calendars for brands selling in China: Double 11, 618, Chinese New Year cut-offs, labeling and distributor questions."
+  noAlternate
+>
+  <section class="guides-hero">
+    <div class="container">
+      <p class="eyebrow">Guides</p>
+      <h1>Checklists you can print and hand to the team</h1>
+      <p class="guides-hero__lead">
+        Each one comes from an article on this site and carries the same dates and owners. No marketing copy, one item per line.
+      </p>
+    </div>
+  </section>
+
+  <section class="guides-list">
+    <div class="container">
+      {guides.length === 0 ? (
+        <p class="guides-list__empty">The first guide publishes with the Double 11 checklist. Check back in September.</p>
+      ) : (
+        <ul class="guides-list__grid">
+          {guides.map((g) => (
+            <li class="guide-card">
+              <a href={`/guides/${g.id}`}>
+                {g.data.format && <p class="eyebrow">{g.data.format}</p>}
+                <h2>{g.data.title}</h2>
+                <p>{g.data.description}</p>
+                <p class="guide-card__meta">{formatDate(g.data.updatedDate ?? g.data.pubDate)}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+
+  <style>
+    .guides-hero {
+      padding: clamp(48px, 8vw, 96px) 0 40px;
+    }
+    .guides-hero h1 {
+      max-width: 20ch;
+      margin: 0 0 16px;
+    }
+    .guides-hero__lead {
+      max-width: 60ch;
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--bbg-text, #333);
+    }
+    .guides-list {
+      padding: 0 0 clamp(64px, 10vw, 120px);
+    }
+    .guides-list__empty {
+      color: var(--bbg-text-muted, #6b6b6b);
+    }
+    .guides-list__grid {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .guide-card a {
+      display: block;
+      height: 100%;
+      background: #fff;
+      border: 1px solid var(--bbg-border);
+      border-radius: 8px;
+      padding: 24px;
+      color: inherit;
+      text-decoration: none;
+      transition:
+        transform 200ms ease,
+        border-color 200ms ease,
+        box-shadow 200ms ease;
+    }
+    .guide-card a:hover {
+      transform: translateY(-4px);
+      border-color: var(--bbg-blue, #269ada);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+    .guide-card h2 {
+      font-size: 24px;
+      line-height: 1.25;
+      margin: 8px 0 12px;
+    }
+    .guide-card p {
+      margin: 0;
+      color: var(--bbg-text, #333);
+    }
+    .guide-card__meta {
+      margin-top: 16px !important;
+      font-size: 14px;
+      color: var(--bbg-text-muted, #6b6b6b) !important;
+    }
+  </style>
+</Layout>

@@ -143,11 +143,33 @@ const casesEs = defineCollection({
   schema: caseFrSchema,
 });
 
+/** Printable assets from the editorial plan (checklists, run sheets,
+ * calendars). Written by the pipeline in `editorial/`, English only, rendered
+ * at `/guides/<slug>/`. Each one belongs to an Anchor insight. */
+const guides = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    author: z.string().default('TheChinaPath'),
+    /** The asset format from the brief: "Printable checklist", "Day-by-day run sheet", ... */
+    format: z.string().optional(),
+    /** Slug of the insight this asset was published with. */
+    relatedInsight: z.string().optional(),
+    heroImage: z.string().optional(),
+    heroImageAlt: z.string().default(''),
+    draft: z.boolean().default(false),
+  }),
+});
+
 export const collections = {
   insights,
   insightsFr,
   insightsDe,
   insightsEs,
+  guides,
   cases,
   casesFr,
   casesDe,

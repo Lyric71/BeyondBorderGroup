@@ -454,3 +454,15 @@ Never run `npm run build`, `astro build`, or any build command on your own initi
 - Do not build to "verify" a change, before committing, or before pushing.
 - Wait for an explicit request ("build", "run the build", "npm run build") before running any build.
 - This rule overrides the build guidance previously implied in sections 16 and 17.
+
+---
+
+## 20. Editorial system (four slots a week, Sept 7, 2026 to Sept 2, 2027)
+
+The article pipeline lives in `editorial/`, wired the same way as TheRedScroll's. When the user says "Draft today's slot", "Draft brief 04A" or "Publish <slug>", read `editorial/CLAUDE.md` and `editorial/SPEC.md` first and follow `editorial/RUNBOOK.md`. The master plan is `public/content/editorial-briefs.md`; `node editorial/scripts/build-briefs.mjs` regenerates `editorial/briefs/` and `editorial/schedule.csv` from it.
+
+Pipeline, in order, none optional: Chinese deep research with every source validated twice, `/createarticle` (house version at `.claude/skills/createarticle/`, iteration 7 is a cadence pass, never planted errors), `/content-quality-us` on every piece, `/generate-image-openai` for the hero image, then `/createblogarticle` plus `/deep-translate` (FR, DE, ES) from the scheduled publish run or when a person asks to publish, then one email via `editorial/scripts/notify-publish.mjs` (Resend) when the publish is done. House SEO ceilings are title 52, meta 152, excerpt 25 words. Hero images go to `public/Images/insights/<slug>.webp`. Printable assets publish to `src/content/guides/` (English only, `/guides/<slug>/`).
+
+Two standing rules: when the runbook asks for something the repo cannot do, use what the repo has and log the substitution. Every pipeline step runs on the most capable model available, never a faster or smaller mode; images use gpt-image-2 at high quality.
+
+The scheduled publish run (`editorial/scripts/run-daily.ps1 -Mode publish`) is the explicit build request that section 19 requires. Section 6.9's single-locale default does not apply inside that run: the publish step propagates to FR, DE and ES by design.
