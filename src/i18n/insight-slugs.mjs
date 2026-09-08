@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'cost-to-sell-footwear-in-china': 'ce-que-coute-vendre-des-chaussures-en-chine',
   'china-distributor-vs-own-store': 'distributeur-ou-boutique-en-propre-en-chine',
   'tmall-2026-strategy-foreign-brands': 'tmall-2026-strategie-marques-etrangeres',
   'china-cross-border-ecommerce-140-million-shoppers':
@@ -139,6 +140,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'cost-to-sell-footwear-in-china': 'was-schuhe-verkaufen-in-china-kostet',
   'china-distributor-vs-own-store': 'distributor-oder-eigener-shop-china',
   'tmall-2026-strategy-foreign-brands': 'tmall-2026-strategie-auslaendische-marken',
   'china-cross-border-ecommerce-140-million-shoppers':
@@ -269,6 +271,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'cost-to-sell-footwear-in-china': 'lo-que-cuesta-vender-calzado-en-china',
   'china-distributor-vs-own-store': 'distribuidor-o-tienda-propia-china',
   'tmall-2026-strategy-foreign-brands': 'tmall-2026-estrategia-marcas-extranjeras',
   'china-cross-border-ecommerce-140-million-shoppers':
