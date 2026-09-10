@@ -219,3 +219,115 @@ and Ledger needs one.
 - Verified 2: 2026-09-09
 - Used in: cost-to-sell-footwear-in-china
 - Notes: CCTV did not name the institution behind the figure and no footwear-specific rate was published anywhere. The 80% figure is APPAREL LIVESTREAM, not footwear. Always label it as such and present it as a planning ceiling, never as a footwear return rate.
+
+## Brand entry teardowns
+
+### Allbirds China entry: first store, price band, team size, own-team decision
+- Value: first Asia store opened at 上海兴业太古汇 (HKRI Taikoo Hui, Shanghai) in April 2019, with the Tmall flagship in trial and the China site live; shoes priced 899 to 1,099 RMB; a 25-person Shanghai team; the co-founders said on the record that the conventional route would have been a regional partner or a joint venture and that they chose their own team instead
+- As of: April 2019
+- Source: Jiemian (界面新闻)
+- URL: https://www.jiemian.com/article/3043672.html
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (re-fetched before the draft was finished; page live, dated 2019/04/16 08:00, 产品价格在899到1099元不等 and 组建一支25人的上海团队 both confirmed)
+- Used in: how-allbirds-entered-china
+- Notes: the founders' words reach this page in Chinese translation, so the article paraphrases them in English rather than re-translating a translation. The mall is a Swire property, consistent with the 36Kr store plan below, but do not take a street address from this page.
+
+### Allbirds China channel opening order and the 2019 store plan
+- Value: official Xiaohongshu and WeChat accounts opened February 2019; plan to open stores in Shanghai, Beijing, Guangzhou and Chengdu that year with Swire; the China market had been studied for about two years before launch
+- As of: April 2019
+- Source: 36Kr (36氪)
+- URL: https://www.36kr.com/p/1723508817921
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (re-fetched; page live, 在今年 2 月，Allbirds 就已经开通了官方的小红书和微信公众账号 confirmed)
+- Used in: how-allbirds-entered-china
+- Notes: two of the four planned cities (Guangzhou, Chengdu) never opened. Pair with the Sina Tech entry below for the cities that actually had stores in 2024.
+
+### Allbirds China store count, cities and the Tmall operating-entity change
+- Value: six directly operated stores as of July 2024, in Shanghai, Beijing, Hangzhou and Shenzhen; the Tmall flagship operating entity changed on July 4, 2024 from 欧布斯（上海）贸易有限公司 to 凡尚服饰（上海）有限公司, a wholly owned Belle Fashion subsidiary; licence term 10 years, effective June 28, 2024
+- As of: July 2024
+- Source: Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/roll/2024-07-27/doc-incfqazc6472819.shtml
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (re-fetched; page live, 授权期限为10年，生效时间从2024年6月28日起 confirmed)
+- Used in: how-allbirds-entered-china
+- Notes: the same page carries Allbirds group loss figures (2021 to 2023 cumulative net loss near $300m; Q1 2024 revenue down 27.6% to $39.3m). Those were not used; the group figures in the article come from the company's own results releases instead.
+
+### Allbirds and On store and follower gap in China, and Belle Fashion's network size
+- Value: Allbirds 6 China stores and 230,000 Tmall flagship followers; On 22 stores by end-2023 and 720,000 Tmall followers; Belle Fashion runs more than 8,000 directly operated stores in China
+- As of: August 2024
+- Source: Sina Finance (新浪财经)
+- URL: https://finance.sina.com.cn/stock/hkstock/ggscyd/2024-08-06/doc-inchsrzh0104012.shtml
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (re-fetched; page live, published 2024-08-06 11:51, 8000多家直营店 and both follower counts confirmed)
+- Used in: how-allbirds-entered-china
+- Notes: the follower counts are an August 2024 snapshot and are not re-checkable today, because the Tmall store page needs a Taobao login. Always date them in copy.
+
+### Allbirds China store count at end-2025, IPO valuation and the AXNY sale
+- Value: 7 China stores at the end of 2025; Nasdaq listing November 2021 at $15 a share, $4.1bn market value on the first day; brand and IP sale to AXNY announced March 30, 2026 at about $39m
+- As of: April 2026
+- Source: Sports Business (体育大生意), on NetEase (网易)
+- URL: https://www.163.com/dy/article/KQA9RCBQ0529818P.html
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (re-fetched; page live, published 2026-04-12, 截至2025年底，Allbirds在中国有7家门店 confirmed)
+- Used in: how-allbirds-entered-china
+- Notes: the IPO valuation is reported elsewhere as about $4.2bn at the intraday peak. This page says first day, so copy citing this URL must say first day. The 7-store figure is the only post-handover China store count found in any source.
+
+### Allbirds sells its China subsidiary's net assets
+- Value: asset purchase agreement dated August 6, 2024 for the net assets of Allbirds (Shanghai) Trading Co., LTD; total consideration $2.1m, net book value of transferred net assets $2.2m, loss about $0.2m. International net revenue for the nine months ended September 30: $36.004m in 2024 against $46.520m in 2023
+- As of: November 2024 (10-Q for the quarter ended September 30, 2024)
+- Source: Allbirds, Inc. Form 10-Q, US Securities and Exchange Commission
+- URL: https://www.sec.gov/Archives/edgar/data/1653909/000162828024045882/bird-20240930.htm
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (re-fetched; filing live, the sentence and all three dollar figures confirmed)
+- Used in: how-allbirds-entered-china
+- Notes: this is the only China-specific figure in Allbirds' filings; China revenue was never broken out. The consideration covers net assets only and no licence fee is disclosed. Do not present $2.1m as the value of the China business as a whole.
+
+### Belle Fashion appointed exclusive distributor and licensee for Greater China
+- Value: exclusive distributor and licensee in mainland China, Macau and Taiwan, effective June 28, 2024, across retail, online and wholesale channels; CFO Annie Mitchell quoted; "Allbirds first launched in China in 2019"
+- As of: August 2024 (release dated August 2, 2024)
+- Source: Allbirds, Inc. press release, GlobeNewswire
+- URL: https://www.globenewswire.com/news-release/2024/08/02/2923520/0/en/Allbirds-Announces-Agreement-with-Belle-Fashion-Group-in-China.html
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (re-fetched; page live, effective date, territory and channels confirmed)
+- Used in: how-allbirds-entered-china
+- Notes: the release does not state the ten-year term; for that, cite the Sina Tech entry above. ir.allbirds.com no longer resolves (checked 2026-09-10), so the GlobeNewswire copy is the citable version of this release.
+
+### Allbirds full year 2024 revenue and net loss
+- Value: full year net revenue down 25.3% to $189.8m; full year net loss $93.3m, or $11.87 per basic and diluted share
+- As of: March 2025 (results released March 11, 2025)
+- Source: Allbirds, Inc. fourth quarter and full year 2024 results, GlobeNewswire
+- URL: https://www.globenewswire.com/news-release/2025/03/11/3041000/0/en/Allbirds-Reports-Fourth-Quarter-and-Full-Year-2024-Financial-Results.html
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (re-fetched; page live, both figures quoted verbatim)
+- Used in: how-allbirds-entered-china
+- Notes: group figures, not China. Never present either number as a China result.
+
+### Allbirds' own risk language on relying on distributors
+- Value: "We have limited ability to control how distributors represent our brand, manage customer experience, or adhere to our sustainability and ESG standards." Risk factor heading: "Our reliance on third-party distributors for international sales may negatively impact our operating results and brand value."
+- As of: March 2026 (Form 10-K for fiscal 2025, filed March 31, 2026)
+- Source: Allbirds, Inc. Form 10-K, US Securities and Exchange Commission
+- URL: https://www.sec.gov/Archives/edgar/data/1653909/000162828026022192/bird-20251231.htm
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (re-fetched; filing live, the sentence confirmed in the risk factors)
+- Used in: how-allbirds-entered-china
+- Notes: the same filing carries "In 2024, we entered into agreements with unaffiliated distributors in Japan, Australasia, and China to acquire certain assets related to our operations in these regions." Useful for any later piece on distributor transitions.
+
+### Allbirds brand and IP sold to American Exchange Group; registrant renamed
+- Value: agreement to sell the intellectual property and certain other assets and liabilities for an estimated $39m, announced March 30, 2026, closing expected in Q2 2026. The registrant now files as Smartbird, Inc., "formerly: Allbirds, Inc. (filings through 2026-06-15)"
+- As of: April 2026 (World Footwear), and September 2026 for the EDGAR name check
+- Source: World Footwear; SEC EDGAR company filings index, CIK 0001653909
+- URL: https://www.worldfootwear.com/news/american-exchange-group-agrees-to-acquire-allbirds-assets/11382.html and https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001653909&type=10-K
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (both re-fetched; World Footwear live and dated April 2, 2026; EDGAR shows the current and former names)
+- Used in: how-allbirds-entered-china
+- Notes: the bare EDGAR company URL without a `type` parameter renders an empty JavaScript landing page to a non-browser fetch and FAILED check 2 on 2026-09-10. Always cite the browse-edgar URL with `&type=10-K`. ir.allbirds.com no longer resolves, so the company's own page for this deal is gone.
+
+### Allbirds China storefronts observable on the day
+- Value: Allbirds官方旗舰店 live on JD Worldwide; allbirds.tmall.com returns a 302 to allbirds.world.tmall.com, which then requires a Taobao login; Belle International's corporate site carries an allbirds brand page
+- As of: September 10, 2026 (observation date)
+- Source: direct fetch of the storefront and corporate URLs
+- URL: https://mall.jd.hk/index-10089444.html and https://allbirds.tmall.com/ and https://www.belleintl.com/Allbirds
+- Verified 1: 2026-09-10
+- Verified 2: 2026-09-10 (re-checked in the same session before the draft was finished)
+- Used in: how-allbirds-entered-china
+- Notes: assortment size, price positioning and review counts could NOT be read. mall.jd.com returns a bot-risk interstitial and the Tmall store needs a login. allbirdscn.com closed the socket on two attempts. Any future teardown needing storefront metrics has to collect them from a browser session, not a fetch.

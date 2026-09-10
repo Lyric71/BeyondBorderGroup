@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'how-allbirds-entered-china': 'allbirds-en-chine-ce-que-l-entree-a-coute',
   'cost-to-sell-footwear-in-china': 'ce-que-coute-vendre-des-chaussures-en-chine',
   'china-distributor-vs-own-store': 'distributeur-ou-boutique-en-propre-en-chine',
   'tmall-2026-strategy-foreign-brands': 'tmall-2026-strategie-marques-etrangeres',
@@ -140,6 +141,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'how-allbirds-entered-china': 'allbirds-in-china-was-der-markteintritt-kostete',
   'cost-to-sell-footwear-in-china': 'was-schuhe-verkaufen-in-china-kostet',
   'china-distributor-vs-own-store': 'distributor-oder-eigener-shop-china',
   'tmall-2026-strategy-foreign-brands': 'tmall-2026-strategie-auslaendische-marken',
@@ -271,6 +273,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'how-allbirds-entered-china': 'allbirds-en-china-lo-que-costo-entrar',
   'cost-to-sell-footwear-in-china': 'lo-que-cuesta-vender-calzado-en-china',
   'china-distributor-vs-own-store': 'distribuidor-o-tienda-propia-china',
   'tmall-2026-strategy-foreign-brands': 'tmall-2026-estrategia-marcas-extranjeras',
