@@ -1,27 +1,35 @@
 ---
 title: "Tmall vs Amazon: what a brand actually pays"
+slug: a-comparison-between-tmall-and-amazon
 description: "Amazon has had no China marketplace since 2019. Here is what Tmall Global charges instead, next to Amazon's own fee sheet, with the tax math."
-pubDate: "2023-02-02"
-updatedDate: "2026-09-17"
-author: "TheChinaPath"
-category: "Platforms"
-platforms: ["Tmall", "JD"]
+excerpt: "Amazon closed its China seller business in 2019. What Tmall Global costs a foreign brand instead, next to Amazon's fees, with the cross-border tax."
+template: refresh
+author: TheChinaPath
+pubDate: 2023-02-02
+updatedDate: 2026-09-17
+category: Platforms
+platforms: [Tmall, JD]
 tags: ["Tmall Global", "Amazon", "JD Worldwide", "cross-border ecommerce", "platform fees", "market entry"]
+heroImage: /Images/insights/a-comparison-between-tmall-and-amazon.webp
+heroImageAlt: "A cross-border operations manager in a Ningbo bonded-warehouse office checks a Chinese Tmall Global storefront on a smudged monitor while a colleague scans cartons behind her."
 keyTakeaways:
   - "Amazon stopped serving third-party sellers on its China site on July 18, 2019, so a brand cannot choose between Tmall and Amazon for Chinese shoppers."
   - "Tmall Global commission runs 2% to 5% and averages 3.4% across the nineteen categories in our calculator, against 8% to 15% on Amazon."
   - "The gap is in fixed cost: 80,000 to 110,000 RMB of deposit and annual fee before the first order, against no deposit and US$39.99 a month on Amazon."
   - "A Tmall Partner retainer and its commission on GMV push the real China take rate above Amazon's, which is what most cost comparisons miss."
   - "Cross-border retail import tax is 9.1% on general goods, inside a 5,000 RMB per order and 26,000 RMB per year quota per shopper."
-heroImage: "/Images/insights/a-comparison-between-tmall-and-amazon.webp"
-heroImageAlt: "A cross-border operations manager in a Ningbo bonded-warehouse office checks a Chinese Tmall Global storefront on a smudged monitor while a colleague scans cartons behind her."
-legacyUrl: "https://beyondbordergroup.com/a-comparison-between-tmall-and-amazon/"
 ---
+
+<!-- HERO SECTION -->
+
+# Tmall vs Amazon: what a brand actually pays
 
 Amazon has not run a marketplace for third-party sellers in China since July
 2019. So the choice is not Tmall or Amazon. It is Tmall Global against JD
 Worldwide and Douyin. Tmall Global's commission runs 2% to 5%, well under
 Amazon's 8% to 15%. The fixed money is where China costs more.
+
+<!-- INTRODUCTION -->
 
 Updated September 17, 2026. The February 2023 version of this page compared
 the two platforms as though a brand could pick either door. It could not,
@@ -57,6 +65,8 @@ because that is the one most brands reading this already run.
 Health supplements sit outside that range on Tmall Global, at a 300,000 RMB
 deposit. Everything else lands on one of two rungs.
 
+<!-- SECTION: AMAZON LEFT THE CHINA MARKETPLACE IN 2019 -->
+
 ## Amazon left the China marketplace in 2019
 
 In April 2019, Amazon told Chinese media it would stop providing seller
@@ -72,6 +82,8 @@ export seller program, Kindle and cloud.
 
 Seven years later, plenty of brands still ask which of the two to open first.
 The honest answer is that one of them is not open.
+
+<!-- SECTION: WHAT AMAZON STILL RUNS IN CHINA -->
 
 ## What Amazon still runs in China
 
@@ -104,6 +116,8 @@ So when a China agency, a forum thread or a competitor's blog compares Tmall
 to Amazon, check which Amazon they mean. Usually it is the one that helps a
 Shenzhen factory reach Ohio.
 
+<!-- SECTION: THE COMMISSION GAP RUNS THE OTHER WAY -->
+
 ## The commission gap runs the other way
 
 Most people assume China takes a bigger cut. On the platform line, it does
@@ -123,6 +137,8 @@ eleven of the nineteen categories and 110,000 RMB in the other seven, before
 a single order ships. Amazon asks for US$39.99 and a credit card. A brand
 that wants to test a market cheaply is not choosing between two similar
 things.
+
+<!-- SECTION: THE LINE THAT REVERSES THE COMPARISON -->
 
 ## The line that reverses the comparison
 
@@ -151,6 +167,8 @@ before you take anyone's word for a monthly number, including ours. The
 [JD Worldwide setup and run calculator](/tools/jd-worldwide-setup-and-run)
 does the same for the other big cross-border marketplace, and JD's entry
 rung is cheaper.
+
+<!-- SECTION: THE TAX YOUR SHOPPER PAYS -->
 
 ## The tax your shopper pays
 
@@ -191,6 +209,8 @@ That is a different business, and it is the one our
 [cross-border setup team](/enter-china/cross-border-setup) spends most of its
 time mapping before a brand commits.
 
+<!-- SECTION: WHO IS ACTUALLY DOING THIS -->
+
 ## Who is actually doing this
 
 The route is crowded, which is usually a good sign about whether it works.
@@ -212,6 +232,8 @@ partner, that decision usually costs more than the platform fee. Our
 [cross-border ecommerce team](/grow-in-china/cross-border-ecommerce) runs
 stores on both sides of that choice and the tradeoff is rarely about money
 alone.
+
+<!-- SECTION: FAQ -->
 
 ## Common questions
 
@@ -243,5 +265,114 @@ onto Amazon's 20-plus sites outside China, and its published 2026 priorities
 are all about export. It is useful to a Chinese manufacturer, not to a
 European or American brand looking for Chinese buyers.
 
-If you want a vetted shortlist of the operators who could actually run your
-category in China, [request a Compass shortlist](/compass/shortlist).
+<!-- CTA -->
+
+CTA: If you want a vetted shortlist of the operators who could actually run
+your category in China, [request a Compass shortlist](/compass/shortlist).
+
+<!-- =====================================================================
+FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
+
+Generate the feature (hero) image from the prompt below with the
+generate-image-openai skill, convert to webp, then wire it in as the
+article's heroImage and OG image.
+
+- Save to:    public/Images/insights/a-comparison-between-tmall-and-amazon.webp
+- Reference:  /Images/insights/a-comparison-between-tmall-and-amazon.webp
+- Format:     .webp, landscape 3:2, web-optimized (China CDN friendly)
+- Style rule: candid normal-life photo with real-life defects, China
+              setting, only Chinese people, the Chinese commerce surface
+              the piece is about visible on screen (Tmall Global). No AI
+              polish, no diagrams, no infographics, no watermark.
+
+IMAGE PROMPT (use verbatim):
+
+A candid handheld photograph taken from the doorway of a cramped operations
+office inside a bonded warehouse in Ningbo, China, late afternoon, where a
+Chinese woman in her early thirties wearing a grey fleece over a company
+polo sits at a cluttered desk and leans toward a slightly smudged 24-inch
+monitor showing a Chinese cross-border marketplace storefront page with
+dense simplified Chinese product titles, red and orange price tags, a
+vertical column of category links down the left side and a half-loaded
+product grid, her right hand mid-gesture pointing at a row on the screen
+while her left hand rests on a mouse, a second older monitor beside it
+showing a plain warehouse inventory spreadsheet in Chinese, the desk covered
+with a chipped enamel tea mug, a tangle of black USB cables, a stack of
+printed customs declaration forms with a stapler on top, a torn cardboard
+carton flap and a pair of scanning guns on a charging cradle, behind her
+through a wide interior window a Chinese man in a navy work jacket scanning
+plain unmarked brown cartons stacked on blue pallets under flickering
+fluorescent tubes, the light in the room mixed and uneven with cold
+fluorescent overhead and warm low sun coming through a dusty window at
+frame right, slight motion blur on her hand, mild camera shake, visible
+sensor noise in the shadows, imperfect white balance leaning green, the
+frame slightly tilted and cropping the edge of a filing cabinet in the
+foreground, shot as if quickly by a colleague on a phone, documentary
+reportage feel, no retouching, no studio lighting, no color grading, no
+symmetry, no flawless skin, no title text, no captions, no watermark, no
+real brand names or company logos anywhere in the frame or on any packaging
+or clothing.
+===================================================================== -->
+
+<!-- SCHEMA
+Type: Article
+FAQPage: yes, 4 questions
+Breadcrumb: Home > Insights > Tmall vs Amazon: what a brand actually pays
+Author: TheChinaPath
+datePublished: 2023-02-02
+dateModified: 2026-09-17
+-->
+
+<!-- ASSET BRIEF
+TABLES:
+  1. Cost comparison table, in the introduction. Year-one cost lines for the
+     Amazon US marketplace against Tmall Global: security deposit, annual
+     platform fee, account fee, commission per sale, operating partner, cash
+     in before the first order. Amazon column from Amazon Global Selling's
+     own Chinese-language fee pages (July 2024 and January 2026). Tmall
+     Global column from TheChinaPath calculator category data, September
+     2026.
+CHARTS: none ship with this page. A stacked bar of the real take rate
+     (platform commission, TP commission, payment fee, returns) against
+     Amazon's referral fee would chart well on a later piece.
+SCREENSHOTS: none.
+DOWNLOADS: none. Week 02 carries no asset.
+INTERNAL LINKS:
+  Tmall Global setup and run calculator -> /tools/tmall-global-setup-and-run
+  JD Worldwide setup and run calculator -> /tools/jd-worldwide-setup-and-run
+  cross-border setup team -> /enter-china/cross-border-setup
+  cross-border ecommerce team -> /grow-in-china/cross-border-ecommerce
+  request a Compass shortlist -> /compass/shortlist
+  All five are on the PREAMBLE target list. No /insights or /work links are
+  used in this piece.
+PROPRIETARY NUMBER:
+  Primary: across the nineteen real categories in the Tmall Global picker,
+  platform commission runs 2% to 5% and averages 3.4%, with eight categories
+  at 2% and none above 5%. Deposit plus annual fee is 80,000 RMB in eleven
+  categories and 110,000 RMB in the other seven, with health supplements the
+  single outlier at a 300,000 RMB deposit (330,000 RMB with the annual fee).
+  Labeled in copy as "TheChinaPath calculator data, September 2026" and as
+  "our own calculators". Source: the category array in
+  src/pages/tools/tmall-global-setup-and-run.astro.
+  Secondary, also ours: the Tmall Global calculator's TP defaults, a 35,000
+  RMB monthly retainer plus 10% of GMV. Labeled in copy as the calculator's
+  default, not as a market rate, because it is a modeling assumption.
+HAND-OFFS: TheRedScroll once, for the seeding side of Xiaohongshu and Douyin
+  discovery, using the canonical anchor text "TheRedScroll, the group's China
+  social media agency". ChinaWebFoundry not mentioned; nothing here touches
+  Baidu SEO, ICP filing or hosting.
+CLIENT SIGN-OFF NEEDED: none. No client is named and no client figure is
+  used.
+REFRESH NOTES FOR THE PUBLISH STEP:
+  This replaces src/content/insights/a-comparison-between-tmall-and-amazon.md
+  in place, and its FR, DE and ES siblings
+  (tmall-amazon-deux-modeles, tmall-amazon-zwei-modelle,
+  tmall-vs-amazon-comparativa). The slug does not change, so no redirect is
+  needed and the locale slug maps in src/i18n/insight-slugs.mjs stay as they
+  are. Keep the existing legacyUrl field on the English file. The hero moves
+  from the legacy .png to the new .webp at the same slug; delete or leave the
+  old .png, but update heroImage. pubDate stays 2023-02-02 and updatedDate
+  moves to the actual publish day. Title and H1 change from "A comparison
+  between Tmall and Amazon"; this is flagged in the run log as an
+  SEO-sensitive change made under the Anchor acceptance spec.
+-->

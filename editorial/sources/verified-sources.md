@@ -487,3 +487,55 @@ and Ledger needs one.
 - Used in: none yet. Researched for 02L, dropped for length.
 - Notes: Ebrun attributes the figures to its own compilation (亿邦动力统计) rather than naming 海关总署 on the page. If this is used later, say "Ebrun's compilation of customs data" and not "customs data", or find the GACC original first.
 
+
+## Tmall vs Amazon research, September 17, 2026
+
+### Amazon stopped serving third-party sellers on its China site
+- Value: seller services for third-party sellers on the Amazon China website ended July 18, 2019; Amazon kept Amazon Global Store (亚马逊海外购), Amazon Global Selling (亚马逊全球开店), Kindle and cloud
+- As of: April 2019 (published April 19, 2019)
+- Source: China Daily (中国日报网), carrying China News Service (中国新闻网)
+- URL: https://qiye.chinadaily.com.cn/a/201904/19/WS5cb92e4ca310e7f8b1577840.html
+- Verified 1: 2026-09-17 (page fetched, date, cut-off date and retained-business list all on the page)
+- Verified 2: 2026-09-17 (re-fetched at iteration 8, unchanged)
+- Used in: a-comparison-between-tmall-and-amazon
+- Notes: the announcement was made to media on April 18 and carried on April 19. Cite the month, not the day, unless you re-check which date the source actually prints. This page does NOT say Amazon left China; it says the opposite. Never use it for a "Amazon exited China" claim.
+
+### Amazon Global Store: desktop shopping and Prime in China ended
+- Value: from January 27, 2024, amazon.cn stopped desktop shopping and stopped offering Prime membership in China; shopping moved to the 亚马逊购物 app and the Amazon Global Store WeChat mini program
+- As of: effective January 27, 2024 (notice carried on amazon.cn)
+- Source: Amazon China (亚马逊中国), notice on amazon.cn
+- URL: https://www.amazon.cn/
+- Verified 1: 2026-09-17 (notice fetched, both clauses and the date confirmed on the page)
+- Verified 2: 2026-09-17 (re-fetched at iteration 8, unchanged)
+- Used in: a-comparison-between-tmall-and-amazon
+- Notes: verbatim clauses are 电脑端将不再提供购物服务 and 自2024年1月27日起，我们将不再提供Prime会员服务. This is a homepage notice, so it can move; re-verify before reuse. Amazon Global Store is Amazon's own import retail. Do not describe it as a marketplace a brand can join.
+
+### Amazon Global Selling is an export program, not a China import route
+- Value: Amazon's 20-plus international sites across the Americas, Europe, Asia and Oceania are fully open to Chinese sellers; the four announced 2026 priorities are all export-facing; 2025 sales by Chinese sellers grew 15%+ on mature sites and 30%+ on emerging ones
+- As of: December 2025 (published December 4, 2025)
+- Source: Amazon Global Selling (亚马逊全球开店), official news release
+- URL: https://globalselling.amazon.com/en/news/news-brand-251204
+- Verified 1: 2026-09-17
+- Verified 2: 2026-09-17 (re-fetched at iteration 8, unchanged)
+- Used in: a-comparison-between-tmall-and-amazon
+- Notes: verbatim clause is 亚马逊位于美洲、欧洲、亚洲、大洋洲的20余大国际站点已经面向中国卖家全面开放. Use this to show the direction of travel (Chinese goods out), never as evidence about foreign brands selling in.
+
+### Amazon seller fees: no deposit, monthly plan fee, referral fee band
+- Value: no security deposit to open a store; Professional plan US$39.99 a month (Individual US$0.99 per item sold); referral fee 8% to 15% of the sale in most categories, with the full range running to 45% on some
+- As of: July 2024 (the no-deposit page) and January 2026 (the fee-structure page)
+- Source: Amazon Global Selling (亚马逊全球开店), Chinese-language seller knowledge pages
+- URL: https://globalselling.amazon.com/zhishi/article-240523 and https://globalselling.amazon.com/en/zhishi/article-260113-2
+- Verified 1: 2026-09-17 (both pages fetched, figures and their stated publication months confirmed)
+- Verified 2: 2026-09-17 (both re-fetched at iteration 8, unchanged)
+- Used in: a-comparison-between-tmall-and-amazon
+- Notes: verbatim no-deposit clause is 首先在亚马逊开店是不需要押金的. These are US-marketplace figures from Amazon's own China-facing seller site, which is the right source for a China-audience comparison. sellercentral.amazon.com sits behind a login and cannot be fetched. sell.amazon.com/pricing carries the same numbers but prints NO DATE, so it does not qualify under the ledger's rule 1; do not cite it.
+
+### Tmall Global category fee spread and the cash floor, all nineteen categories
+- Value: across the nineteen real categories in the Tmall Global picker, commission runs 2% to 5% and averages 3.395% (rounded to 3.4% in copy); eight categories sit at 2%, seven at 5%, two at 4%, one at 3%, one at 2.5%; deposit plus annual fee is 80,000 RMB in eleven categories, 110,000 RMB in seven, and 330,000 RMB for health supplements (300,000 deposit plus 30,000 annual fee). Calculator defaults for the operating partner: 35,000 RMB monthly retainer plus 10% of GMV.
+- As of: September 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro)
+- Label in copy: "TheChinaPath calculator data, September 2026"
+- Verified 1: 2026-09-17 (category array read directly from the .astro file and the aggregates recomputed from it)
+- Verified 2: 2026-09-17 (re-read and recomputed before the draft was finished)
+- Used in: a-comparison-between-tmall-and-amazon
+- Notes: this is the whole-picker view of the same array the Ledger pieces slice by category, so it does not duplicate a published fee table. The 35,000 RMB retainer and the 10% TP commission are MODEL DEFAULTS, not a sourced market rate. Always label them as the calculator's defaults, never as what TPs charge.
