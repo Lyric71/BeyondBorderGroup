@@ -331,3 +331,46 @@ and Ledger needs one.
 - Verified 2: 2026-09-10 (re-checked in the same session before the draft was finished)
 - Used in: how-allbirds-entered-china
 - Notes: assortment size, price positioning and review counts could NOT be read. mall.jd.com returns a bot-risk interstitial and the Tmall store needs a login. allbirdscn.com closed the socket on two attempts. Any future teardown needing storefront metrics has to collect them from a browser session, not a fetch.
+
+
+## Livestream room cost research, September 15, 2026
+
+### Historical dedicated-host event fee example
+- Value: RMB 1 million to RMB 3 million per dedicated top-host event; roughly 10% to 20% commission, as reported by a Yalu representative about prior collaborations.
+- As of: August 4, 2024
+- Source: Xinhua (新华网), original interviews
+- URL: https://www.news.cn/fortune/20240804/ec11b5b85b514e8b9332998d0b23b020/c.html
+- Verified 1: 2026-09-15, fetched; date, unit, attribution and 专场费用 wording confirmed.
+- Verified 2: 2026-09-15, re-fetched during createarticle iteration 8; same date and figures present.
+- Used in: china-livestream-cost-for-brands
+- Notes: historical interview evidence, not a national rate or a current quote. Dedicated event, not a single product slot. The draft's RMB 100,000 test fee is an independent scenario input, not derived from this range.
+
+### Historical livestream room rental estimates
+- Value: 100-300 square meters, RMB 20,000-50,000/month in noncore first-tier locations, RMB 150-500/hour.
+- As of: September 25, 2024
+- Source: Liubai Space (留白空间), venue supplier
+- URL: https://www.liubaikongjian.com/news/198.html
+- Verified 1: 2026-09-15, fetched; date, area, monthly/hourly units and explicit estimate disclaimer confirmed.
+- Verified 2: 2026-09-15, re-fetched during createarticle iteration 8; figures and disclaimer remain present.
+- Used in: china-livestream-cost-for-brands
+- Notes: supplier's historical estimates, not an independent survey, current quote or platform fact. No other claims from this page used.
+
+### Historical Hangzhou host salary and hourly-pay interviews
+- Value: womenswear hosts with 1-2 years of experience at RMB 15,000-20,000/month; a separate experienced host reported RMB 400/hour offers.
+- As of: April 3, 2025
+- Source: Cailian Press (财联社), original reporting by Luo Yichen (罗祎辰)
+- URL: https://www.cls.cn/detail/1992813
+- Verified 1: 2026-09-15, original page fetched; date, occupation, location, experience, units and interview attribution confirmed.
+- Verified 2: 2026-09-15, re-fetched during createarticle iteration 8; salary and hourly passages unchanged.
+- Used in: china-livestream-cost-for-brands
+- Notes: dated interview evidence, not a 2026 salary survey; co-host allowances and crew budgets in the article are separate planning inputs.
+
+### Proprietary calculator marketing-cost scenarios and category allowance
+- Value: at RMB 2M annual sales, RMB 250 basket and ROAS 2.5, selected store-led mix (40% paid, 10% creators at 20% commission) gives RMB 320,000 media + RMB 40,000 creator fees = RMB 45 per placed order. Selected creator-heavy mix (15% paid, 80% creators at 30%) gives RMB 120,000 + RMB 480,000 = RMB 75 per placed order. 8,000 placed orders in either case. Packaged-food fee model input 4%; planning FX RMB 7.10/USD.
+- As of: September 2026, repository model read September 15
+- Source: TheChinaPath calculator data, src/pages/tools/douyin-cost-calculator.astro, categories and compute() opStack formulas
+- Label in copy: TheChinaPath calculator data, September 2026
+- Verified 1: 2026-09-15, read category, FX and compute() formulas directly.
+- Verified 2: 2026-09-15, re-read those source lines during createarticle iteration 8; formula outputs recomputed in the final arithmetic check.
+- Used in: china-livestream-cost-for-brands
+- Notes: scenario outputs, not observed client performance, market averages, total channel cost or a celebrity event. 4% is the calculator allowance, not independently verified as the current official cross-border fee. Room budgets exclude wider channel costs. Replaces the unavailable managed-room comparison under editorial/CLAUDE.md source option 2.
