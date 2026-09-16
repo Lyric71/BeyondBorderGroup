@@ -374,3 +374,116 @@ and Ledger needs one.
 - Verified 2: 2026-09-15, re-read those source lines during createarticle iteration 8; formula outputs recomputed in the final arithmetic check.
 - Used in: china-livestream-cost-for-brands
 - Notes: scenario outputs, not observed client performance, market averages, total channel cost or a celebrity event. 4% is the calculator allowance, not independently verified as the current official cross-border fee. Room budgets exclude wider channel costs. Replaces the unavailable managed-room comparison under editorial/CLAUDE.md source option 2.
+
+## Facial skincare cost research, September 16, 2026
+
+### Facial skincare category fee data and the cash floor it produces
+- Value: Tmall Global deposit 50,000 RMB / annual fee 30,000 RMB / commission 4%; JD Worldwide 35,500 RMB (US$5,000 entry rung) / 7,100 RMB (US$1,000) / 5% plus a flat 0.9% transaction fee; Douyin cross-border 100,000 RMB / no annual fee / 5%. Cash in before the first sale: 80,000 / 42,600 / 100,000 RMB. Cost per kept order at a 5% return rate: 31 RMB on a 280 RMB 200ml toner, 51 RMB on a 680 RMB 30ml serum.
+- As of: September 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, jd-worldwide-setup-and-run.astro, douyin-cost-calculator.astro)
+- Label in copy: "TheChinaPath calculator data, September 2026"
+- Verified 1: 2026-09-16 (category arrays read directly from the three .astro files)
+- Verified 2: 2026-09-16 (re-read before the draft was finished)
+- Used in: cost-to-sell-facial-skincare-in-china
+- Notes: the JD and Douyin rows are IDENTICAL to footwear (35,500 / 7,100 / 5% and 100,000 / none / 5%); only the Tmall column differs (4% not 5%, 30,000 not 60,000, 80,000 not 110,000 of cash). That difference is what kept the Ledger kill condition from firing. The per-kept-order figures are derived from the Tmall Global model's per-order defaults (pick and pack 4 RMB, last mile 11 RMB, return handling 15 RMB, payment 1%) at the calculator's 5% return rate, against two ASSUMED baskets, not a sourced AOV. Makeup shares the 4% / 30,000 Tmall row, so brief 22L (beauty devices) and any makeup Ledger must check the kill condition against this entry.
+
+### Tmall Global commission bands: skincare and makeup are the only 4% categories
+- Value: of the nineteen real product categories in the Tmall Global calculator picker, only skincare and makeup sit at a 4% commission; the rest sit at 2, 2.5, 3 or 5. Personal care (wash and clean) carries 2.5% with a 60,000 RMB annual fee, which crosses skincare's 4% with 30,000 RMB at exactly 2,000,000 RMB of GMV a year.
+- As of: September 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, the `categories` array)
+- Label in copy: "TheChinaPath calculator data, September 2026"
+- Verified 1: 2026-09-16 (array counted line by line)
+- Verified 2: 2026-09-16 (recounted, and the crossover solved: 30,000 + 0.04G = 60,000 + 0.025G, G = 2,000,000)
+- Used in: cost-to-sell-facial-skincare-in-china
+- Notes: the crossover is arithmetic on our own published bands, not a platform statement. A merchant does not choose the category; the product does. Use it to explain what a classification costs, never to advise gaming one.
+
+### Cosmetics Supervision and Administration Regulation: special vs general cosmetics
+- Value: 特殊化妆品 are cosmetics for hair dye, perming, spot-lightening and whitening, sun protection and anti-hair-loss, plus anything claiming a new efficacy; everything else is 普通化妆品. Special cosmetics need NMPA registration before manufacture or import. Imported general cosmetics need an NMPA filing before import. An overseas registrant or filer must appoint a Chinese legal person to handle registration or filing, adverse reaction monitoring and recalls.
+- As of: promulgated June 16, 2020, in force January 1, 2021
+- Source: State Council Gazette (国务院公报), 化妆品监督管理条例, State Council Decree No. 727, articles 16, 17 and 23
+- URL: https://www.gov.cn/gongbao/content/2020/content_5525087.htm
+- Verified 1: 2026-09-16
+- Verified 2: 2026-09-16
+- Used in: cost-to-sell-facial-skincare-in-china
+- Notes: article 16 verbatim is 用于染发、烫发、祛斑美白、防晒、防脱发的化妆品以及宣称新功效的化妆品为特殊化妆品. This governs GENERAL TRADE. It does not apply to goods entering on the cross-border retail import route, which 商财发〔2018〕486号 exempts. Never cite this page for a cross-border claim.
+
+### Cosmetics consumption tax: 15% on high-end, and the 10 RMB per millilitre line
+- Value: consumption tax on ordinary beauty and decorative cosmetics was cancelled; the tax item was renamed 高档化妆品 and the rate set at 15%. 高档护肤类化妆品 is defined as a production (import) stage sale (duty-paid) price excluding VAT of 10 RMB per millilitre (gram), or 15 RMB per piece (sheet), and above.
+- As of: issued September 30, 2016, effective October 1, 2016
+- Source: Ministry of Finance and State Administration of Taxation (财政部 国家税务总局), 财税〔2016〕103号, via the Shanghai Municipal Tax Service (国家税务总局上海市税务局)
+- URL: https://shanghai.chinatax.gov.cn/zcfw/zcfgk/xfs/201610/t427459.html
+- Verified 1: 2026-09-16
+- Verified 2: 2026-09-16
+- Used in: cost-to-sell-facial-skincare-in-china
+- Notes: verbatim threshold is 生产（进口）环节销售（完税）价格（不含增值税）在10元/毫升（克）或15元/片（张）及以上. Pair with 财关税〔2016〕18号 (cross-border dutiable value is the 实际交易价格, duty 0%, VAT and consumption tax at 70% of statutory) and the 13% VAT entry to get the composite: [(15% + 13%) / (1 - 15%)] x 70% = 23.06% for a skincare item over the line, against 9.1% under it. The 23.06% is OUR ARITHMETIC on two cited rules, not a rate quoted by either source. Show the calculation in copy; do not cite a blog for the number.
+
+### Animal testing exemption for imported general cosmetics
+- Value: an imported general cosmetic may be exempted from submitting the toxicology test report where the manufacturer holds a quality management system certificate issued by the government authority of its own country or region AND the product safety risk assessment fully confirms the product is safe. Three exclusions: products claimed for infants and children; products using a cosmetic new ingredient still under safety monitoring; a filer, domestic responsible person or manufacturer listed as a key supervision target on the quantified grading score.
+- As of: NMPA Announcement 2021 No. 32, in force May 1, 2021
+- Source: NMPA (国家药监局), 化妆品注册备案资料管理规定, article 33(2), via the Fujian Provincial Medical Products Administration
+- URL: https://yjj.scjgj.fujian.gov.cn/hzp/flfg/202106/t20210608_5616054.htm
+- Verified 1: 2026-09-16
+- Verified 2: 2026-09-16
+- Used in: cost-to-sell-facial-skincare-in-china
+- Notes: applies to GENERAL cosmetics only, never to special cosmetics. NMPA's own copy of this document at nmpa.gov.cn returns HTTP 412 to a fetch; the Fujian provincial page carries the full text and is the citable URL. Do not write "China ended animal testing" without the two conditions and the three exclusions.
+
+### Cosmetics efficacy claim evaluation
+- Value: from January 1, 2022, a registrant or filer applying for special-cosmetics registration or general-cosmetics filing must evaluate the product's efficacy claims under the 规范 and upload a summary of the evidence to the website the NMPA designates.
+- As of: NMPA Announcement 2021 No. 50, published April 8, 2021, in force May 1, 2021
+- Source: NMPA (国家药监局), 化妆品功效宣称评价规范, carried by China Quality News (中国质量新闻网)
+- URL: https://www.cqn.com.cn/ms/content/2021-04/09/content_8681664.htm
+- Verified 1: 2026-09-16
+- Verified 2: 2026-09-16
+- Used in: cost-to-sell-facial-skincare-in-china
+- Notes: the NMPA original 412s on fetch, so China Quality News carrying the release is the citable page. The page does NOT list which claims need a human efficacy trial versus a literature review; that detail sits in the annexed 规范 itself. Do not cite this URL for the per-claim test matrix.
+
+### Chinese label required on cosmetics sold inside China
+- Value: 化妆品应当有中文标签. The visible face of the sales packaging must carry the Chinese product name, the special-cosmetics registration certificate number, the registrant or filer name and address, the manufacturer name and address, the full ingredient list, net content, use-by date, method of use and the necessary safety warnings. Mandatory for anything registered or filed from May 1, 2022; products already on the register had to be relabeled by May 1, 2023.
+- As of: NMPA Announcement 2021 No. 77, issued May 31, 2021
+- Source: State Council Gazette (国务院公报), 化妆品标签管理办法
+- URL: https://www.gov.cn/gongbao/content/2021/content_5631831.htm
+- Verified 1: 2026-09-16
+- Verified 2: 2026-09-16
+- Used in: cost-to-sell-facial-skincare-in-china
+- Notes: this binds goods 在中华人民共和国境内生产经营, so general trade. Cross-border retail import goods ship in original packaging; 商财发〔2018〕486号 article 4(1)3 instead makes the platform serve a risk notice stating 相关商品直接购自境外，可能无中文标签，消费者可通过网站查看商品中文电子标签. Cite 486号, not this page, for the cross-border position.
+
+### Cross-border risk notice and the Chinese electronic label
+- Value: the cross-border e-commerce enterprise, with the platform, must give the consumer a risk notice on the order page or another conspicuous place, stating that the goods meet the origin country's quality, safety, hygiene, environmental and labelling standards or technical specifications but may differ from China's, that the consumer carries the risk, and that the goods are bought directly from overseas and 可能无中文标签, with a Chinese electronic label viewable on the website.
+- As of: issued November 28, 2018, effective January 1, 2019
+- Source: MOFCOM and five other bodies (商务部 发展改革委 财政部 海关总署 税务总局 市场监管总局), 商财发〔2018〕486号, article 4(1)3, on 中国政府网
+- URL: https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5437823.htm
+- Verified 1: 2026-09-16
+- Verified 2: 2026-09-16
+- Used in: cost-to-sell-facial-skincare-in-china
+- Notes: same document as the "Cross-border retail imports supervised as personal-use goods" entry above, different article. That entry covers article 3 (no first-import permit, registration or filing). This one covers the labelling and disclosure duty in article 4. Cite the article you mean.
+
+### Cosmetics are on the cross-border retail import positive list
+- Value: the list runs to 1,142 eight-digit tariff lines and expressly covers 部分化妆品 among the consumer goods it admits
+- As of: April 2016 (list published April 7, 2016 by 11 departments)
+- Source: Cyberspace Administration of China (中央网信办), carrying People's Daily (人民日报)
+- URL: https://www.cac.gov.cn/2016-04/08/c_1118561924.htm
+- Verified 1: 2026-09-16
+- Verified 2: 2026-09-16
+- Used in: cost-to-sell-facial-skincare-in-china
+- Notes: same page as the footwear positive-list entry above; the sentence names 部分食品饮料、服装鞋帽、家用电器以及部分化妆品、纸尿裤、儿童玩具、保温杯等, so one URL supports both the footwear and the cosmetics coverage claim. The edition in force is the 2019 list as optimised by 财政部等八部门公告2022年第7号, issued January 28, 2022, effective March 1, 2022, https://www.mof.gov.cn/jrttts/202202/t20220221_3788894.htm, verified twice on 2026-09-16. The per-line annex is a PDF and was not fetchable, so never cite either URL for a specific HS code.
+
+### Chinese cosmetics retail growth, 2025 (RESEARCHED, NOT YET USED)
+- Value: retail sales of cosmetics at above-quota-size units grew 5.1% in 2025
+- As of: published February 28, 2026
+- Source: National Bureau of Statistics (国家统计局), 中华人民共和国2025年国民经济和社会发展统计公报
+- URL: https://www.stats.gov.cn/zwfwck/sjfb/202602/t20260228_1962662.html
+- Verified 1: 2026-09-16
+- Verified 2: 2026-09-16 (same fetch confirmed the amount is absent)
+- Used in: none yet. Researched for 02L, dropped because a Ledger is a cost page and the line would have been padding against a hard word ceiling.
+- Notes: the communique carries the GROWTH RATE ONLY. The 4,653亿元 amount circulating in trade coverage is NOT on this page; confirmed by fetch. Do not attribute that amount to the NBS communique.
+
+### Imported beauty and skincare turned up in H1 2025 (RESEARCHED, NOT YET USED)
+- Value: January to June 2025 imports of beauty cosmetics and skincare rose 8.6% by volume and 0.7% by value year on year, after four straight years of decline from 2021 to 2024; average import price about 349,000 RMB a tonne in 2025 against 377,000 RMB a year earlier
+- As of: August 26, 2025
+- Source: Ebrun (亿邦动力), by 张从容
+- URL: https://m.ebrun.com/595543.html
+- Verified 1: 2026-09-16
+- Verified 2: 2026-09-16
+- Used in: none yet. Researched for 02L, dropped for length.
+- Notes: Ebrun attributes the figures to its own compilation (亿邦动力统计) rather than naming 海关总署 on the page. If this is used later, say "Ebrun's compilation of customs data" and not "customs data", or find the GACC original first.
+
