@@ -3,10 +3,10 @@
   Registers (or re-registers) the two Windows scheduled tasks that run the
   TheChinaPath editorial pipeline on this machine.
 
-  TheChinaPath Editorial Draft    Mon, Tue, Wed, Thu at 15:00 local (Shanghai)
-  TheChinaPath Editorial Publish  every day at 17:30 local
+  TheChinaPath Editorial Draft    Mon, Tue, Wed, Thu at 01:00 local (Shanghai, night)
+  TheChinaPath Editorial Publish  every day at 04:30 local
 
-  The hours sit after the TheRedScroll tasks (11:00 draft, 13:00 publish) so
+  The hours sit after the TheRedScroll tasks (00:30 draft, 04:00 publish) so
   the two pipelines never run the Claude CLI at the same time on this machine.
 
   Run from any PowerShell prompt:
@@ -18,8 +18,8 @@
   Change the hour by editing $DraftTime / $PublishTime and rerunning.
 #>
 param(
-  [string]$DraftTime = '15:00',
-  [string]$PublishTime = '17:30'
+  [string]$DraftTime = '01:00',
+  [string]$PublishTime = '04:30'
 )
 
 $ErrorActionPreference = 'Stop'

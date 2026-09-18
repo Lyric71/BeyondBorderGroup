@@ -24,7 +24,7 @@ pnpm-debug.log*
 .idea/
 .vercel
 
-# WaveSpeed generated images (text-to-image script default output)
+# Generated images (text-to-image script default output)
 generated-*.png
 
 # editorial pipeline console output (regenerable)

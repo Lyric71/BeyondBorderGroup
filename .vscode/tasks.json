@@ -2,7 +2,7 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "WaveSpeed: Generate image",
+			"label": "OpenAI: Generate image",
 			"type": "shell",
 			"command": "node",
 			"args": ["scripts/generate-image.mjs", "${input:prompt}"],
@@ -15,7 +15,7 @@
 			"problemMatcher": []
 		},
 		{
-			"label": "WaveSpeed: Edit image",
+			"label": "OpenAI: Edit image",
 			"type": "shell",
 			"command": "node",
 			"args": [

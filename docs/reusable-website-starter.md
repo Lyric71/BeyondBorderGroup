@@ -123,8 +123,8 @@ generated-*.png
 Commit this, never commit `.env`:
 
 ```dotenv
-# WaveSpeed AI — text-to-image generation (https://wavespeed.ai)
-WAVESPEED_API_KEY=
+# OpenAI Images: text-to-image generation (https://platform.openai.com/api-keys)
+OPENAI_API_KEY=
 
 # Resend — transactional email (https://resend.com/api-keys)
 RESEND_API_KEY=
@@ -476,16 +476,18 @@ transactional mail. Validate input server-side:
 examples plus an error-handling table are in
 [integrate-resend-api.md](integrate-resend-api.md).
 
-### WaveSpeed (text-to-image)
+### OpenAI Images (text-to-image)
 
-No SDK needed, plain `fetch`. Two-step async pattern: POST to submit a task,
-get a task ID, then poll `GET .../predictions/{taskId}/result` once per second
-until `status` is `completed` or `failed`. Timeout 60s for web, 120s for CLI.
-A copy-paste `generateImage()` utility, an Express route, a standalone CLI
-script, and an error-handling table are in
-[integrate-wavespeed-api.md](integrate-wavespeed-api.md). `scripts/generate-image.mjs`
-and `scripts/generate-image-edit.mjs` are the working CLI versions
-(`npm run gen`, `npm run gen:edit`).
+No SDK needed, plain `fetch`. One synchronous POST to
+`https://api.openai.com/v1/images/generations`: the response carries the image
+inline as base64 (`b64_json`), so there is no task ID and nothing to poll.
+`scripts/generate-image.mjs` and `scripts/generate-image-edit.mjs` are the
+working CLI versions (`npm run gen`, `npm run gen:edit`), both copies of the
+portable `generate-image-openai` skill.
+
+Editorial tooling only. Never call the image API from client code or from a
+public API route: the endpoint is billed per request, so an open route is an
+open tab on your OpenAI account.
 
 ---
 
