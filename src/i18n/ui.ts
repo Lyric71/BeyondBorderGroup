@@ -42,7 +42,7 @@ export const ui = {
     // Header / nav
     'nav.aria.primary': 'Primary',
     'nav.contact': 'Contact',
-    'nav.calculator': 'Cost calculators',
+    'nav.calculator': 'Budget Calculator',
     'nav.menu': 'Menu',
     'nav.allServices': 'All {section} services',
     'nav.opensInNewTab': '{name} (opens in new tab): {desc}',
@@ -87,8 +87,10 @@ export const ui = {
     'nav.learn.masterclass.desc': 'Workshops led by people who run China every day.',
     'nav.learn.expeditions.label': 'Learning Expeditions',
     'nav.learn.expeditions.desc': 'On-the-ground programmes in Shanghai and beyond.',
-    'nav.learn.insights.label': 'Insights',
-    'nav.learn.insights.desc': 'Articles, reports and analysis from the frontlines.',
+    'nav.learn.insights.label': 'Trends',
+    'nav.learn.insights.desc': 'Platform shifts, shopping festivals and where the market is heading.',
+    'nav.learn.industries.label': 'Industry Insights',
+    'nav.learn.industries.desc': "What it takes to sell your category in China, and who's already tried.",
 
     'nav.feature.beyondcompass.desc':
       'Database of vetted China distributors, Tmall partners and channel operators.',
@@ -165,6 +167,22 @@ export const ui = {
     'nav.feature.learn.cta': 'See the programme',
     'nav.feature.learn.alt': 'A masterclass session in progress with the room facing the speaker',
 
+    // "Our Work" panel. The Header shows this panel only
+    // in locales where /how-we-work has a native twin in the slug table.
+    'nav.work.title': 'What we have done, and how we do it.',
+    'nav.work.intro':
+      'The brands we have taken into China, and a plain account of how we work with yours.',
+    'nav.work.cases.label': 'Client cases',
+    'nav.work.cases.desc': 'Brands we have worked with in China, and what came of it.',
+    'nav.work.howWeWork.label': 'How we work',
+    'nav.work.howWeWork.desc': 'Why we work this way, who does what, and how we find your TP or DP.',
+    'nav.feature.work.label': 'Client case',
+    'nav.feature.work.title': 'Iguzzini on Tmall Global',
+    'nav.feature.work.line':
+      'A cross-border flagship for the Italian lighting brand, built for Chinese architects and luxury buyers.',
+    'nav.feature.work.cta': 'Read the case',
+    'nav.feature.work.alt': 'Close-up of a black and copper Iguzzini light fixture',
+
 
     'footer.call.eyebrow': 'Next step',
     'footer.call.title': 'Tell us where you are, and where you want to be.',
@@ -227,7 +245,7 @@ export const ui = {
     'nav.contact': 'Contact',
     // Kept in English on purpose: the CTA label stays "Budget Calculator" in
     // every locale, only its link is localized.
-    'nav.calculator': 'Calculateurs de coûts',
+    'nav.calculator': 'Calculateur de budget',
     'nav.menu': 'Menu',
     'nav.allServices': 'Voir tous les services',
     'nav.opensInNewTab': "{name} : {desc}. S'ouvre dans un nouvel onglet.",
@@ -236,6 +254,17 @@ export const ui = {
     'nav.section.grow': 'Se développer en Chine',
     'nav.section.learn': 'Comprendre la Chine',
     'nav.work': 'Réalisations',
+    'nav.work.title': 'Nos réalisations, et la méthode qui les porte.',
+    'nav.work.intro': 'Les marques que nous avons conduites en Chine, et un exposé sans détour de notre façon de travailler avec la vôtre.',
+    'nav.work.cases.label': 'Références clients',
+    'nav.work.cases.desc': 'Les marques accompagnées en Chine, et ce qu’il en est ressorti.',
+    'nav.work.howWeWork.label': 'Notre méthode',
+    'nav.work.howWeWork.desc': 'Nos raisons, le rôle de chacun et la façon dont nous trouvons votre TP ou DP.',
+    'nav.feature.work.label': 'Référence client',
+    'nav.feature.work.title': 'Iguzzini sur Tmall Global',
+    'nav.feature.work.line': 'Une boutique phare cross-border pour la marque italienne d’éclairage, pensée pour les architectes chinois et la clientèle du luxe.',
+    'nav.feature.work.cta': 'Lire l’étude de cas',
+    'nav.feature.work.alt': 'Gros plan sur un luminaire Iguzzini noir et cuivre',
     'nav.about': 'À propos',
 
     'nav.enter.intro':
@@ -281,8 +310,10 @@ export const ui = {
     'nav.learn.expeditions.label': 'Expéditions terrain',
     'nav.learn.expeditions.desc':
       "Shanghai, Shenzhen, Hangzhou : observer l'écosystème depuis le terrain chinois.",
-    'nav.learn.insights.label': 'Décryptages',
-    'nav.learn.insights.desc': 'Articles, notes et analyses produits depuis le terrain chinois.',
+    'nav.learn.insights.label': 'Tendances',
+    'nav.learn.insights.desc': 'Évolution des plateformes, grandes fêtes commerciales et orientations du marché.',
+    'nav.learn.industries.label': 'Décryptages sectoriels',
+    'nav.learn.industries.desc': 'Ce que coûte la vente de votre catégorie en Chine, et qui s’y est déjà essayé.',
 
     'nav.feature.beyondcompass.desc':
       'Notre vivier de distributeurs, partenaires Tmall et opérateurs de canaux. Chaque profil vérifié en amont.',
@@ -423,7 +454,7 @@ export const ui = {
     // Header / nav
     'nav.aria.primary': 'Hauptnavigation',
     'nav.contact': 'Kontakt',
-    'nav.calculator': 'Kostenrechner',
+    'nav.calculator': 'Budgetrechner',
     'nav.menu': 'Menü',
     'nav.allServices': 'Alle Leistungen ansehen',
     'nav.opensInNewTab': '{name}: {desc}. Öffnet in einem neuen Tab.',
@@ -432,6 +463,17 @@ export const ui = {
     'nav.section.grow': 'In China wachsen',
     'nav.section.learn': 'China verstehen',
     'nav.work': 'Referenzen',
+    'nav.work.title': 'Was wir bewegt haben und wie wir arbeiten.',
+    'nav.work.intro': 'Marken, die wir nach China gebracht haben, und eine nüchterne Darstellung, wie wir mit Ihrer Marke arbeiten.',
+    'nav.work.cases.label': 'Kundenprojekte',
+    'nav.work.cases.desc': 'Marken, die wir in China begleitet haben, und was daraus wurde.',
+    'nav.work.howWeWork.label': 'So arbeiten wir',
+    'nav.work.howWeWork.desc': 'Warum wir so arbeiten, wer was übernimmt und wie wir Ihren TP oder DP finden.',
+    'nav.feature.work.label': 'Kundenprojekt',
+    'nav.feature.work.title': 'Iguzzini auf Tmall Global',
+    'nav.feature.work.line': 'Ein Cross-Border-Flagship-Store für den italienischen Leuchtenhersteller, zugeschnitten auf chinesische Architekten und eine Luxusklientel.',
+    'nav.feature.work.cta': 'Zum Projekt',
+    'nav.feature.work.alt': 'Nahaufnahme einer schwarz-kupfernen Leuchte von Iguzzini',
     'nav.about': 'Über uns',
 
     'nav.enter.intro':
@@ -475,8 +517,10 @@ export const ui = {
     'nav.learn.expeditions.label': 'Studienreisen',
     'nav.learn.expeditions.desc':
       'Shanghai, Shenzhen, Hangzhou. Den chinesischen Markt vom Boden aus beobachten.',
-    'nav.learn.insights.label': 'Analysen',
-    'nav.learn.insights.desc': 'Artikel, Notizen und Untersuchungen, erstellt vor Ort in China.',
+    'nav.learn.insights.label': 'Trends',
+    'nav.learn.insights.desc': 'Plattformwandel, Shoppingfeste und die Richtung, in die sich der Markt bewegt.',
+    'nav.learn.industries.label': 'Branchenanalysen',
+    'nav.learn.industries.desc': 'Was der Verkauf Ihrer Kategorie in China kostet und wer es schon versucht hat.',
 
     'nav.feature.beyondcompass.desc':
       'Unser Pool aus geprüften Vertriebspartnern, Tmall-Partneragenturen und Kanalbetreibern in China.',
@@ -617,7 +661,7 @@ export const ui = {
     // Header / nav
     'nav.aria.primary': 'Principal',
     'nav.contact': 'Contacto',
-    'nav.calculator': 'Calculadoras de costes',
+    'nav.calculator': 'Calculadora de presupuesto',
     'nav.menu': 'Menú',
     'nav.allServices': 'Ver todos los servicios',
     'nav.opensInNewTab': '{name}: {desc}. Se abre en una pestaña nueva.',
@@ -626,6 +670,17 @@ export const ui = {
     'nav.section.grow': 'Crecer en China',
     'nav.section.learn': 'Conocer China',
     'nav.work': 'Proyectos',
+    'nav.work.title': 'Lo que hemos hecho y cómo lo hacemos.',
+    'nav.work.intro': 'Las marcas que hemos llevado a China y una explicación clara de cómo trabajamos con la suya.',
+    'nav.work.cases.label': 'Casos de clientes',
+    'nav.work.cases.desc': 'Marcas a las que hemos acompañado en China y lo que salió de ese trabajo.',
+    'nav.work.howWeWork.label': 'Cómo trabajamos',
+    'nav.work.howWeWork.desc': 'Por qué trabajamos así, quién hace qué y cómo encontramos a su TP o DP.',
+    'nav.feature.work.label': 'Caso de cliente',
+    'nav.feature.work.title': 'Iguzzini en Tmall Global',
+    'nav.feature.work.line': 'Un flagship cross-border para la marca italiana de iluminación, pensado para arquitectos y compradores de lujo chinos.',
+    'nav.feature.work.cta': 'Leer el caso',
+    'nav.feature.work.alt': 'Primer plano de una luminaria Iguzzini en negro y cobre',
     'nav.about': 'Quiénes somos',
 
     'nav.enter.intro':
@@ -671,8 +726,10 @@ export const ui = {
     'nav.learn.expeditions.label': 'Inmersión China',
     'nav.learn.expeditions.desc':
       'Shanghái, Shenzhen, Hangzhou: leer el mercado desde el propio terreno.',
-    'nav.learn.insights.label': 'Análisis',
-    'nav.learn.insights.desc': 'Artículos, informes y análisis escritos desde el terreno chino.',
+    'nav.learn.insights.label': 'Tendencias',
+    'nav.learn.insights.desc': 'Cambios en las plataformas, grandes campañas comerciales y rumbo del mercado.',
+    'nav.learn.industries.label': 'Análisis sectoriales',
+    'nav.learn.industries.desc': 'Lo que cuesta vender su categoría en China y quién lo ha intentado ya.',
 
     'nav.feature.beyondcompass.desc':
       'Nuestra base de distribuidores, socios Tmall y operadores de canal. Cada perfil verificado uno a uno.',

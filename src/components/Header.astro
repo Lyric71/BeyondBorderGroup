@@ -15,7 +15,8 @@
  * shows rather than tells. Partner logos live in that third zone.
  *
  * WO-1.1 — five top-level groups, labels naming the visitor's need. "Who We Are"
- * sits in the footer and "Insights" sits under Learn China.
+ * sits in the footer. Articles sit under Learn China in two rows: "Industry
+ * Insights" (/insights/industries) and "Trends" (/insights), in every locale.
  *
  * Link policy. Every row points at thechinapath.com except one, the hubStudio
  * row. WO-P2: the Compass pages and the two door pages now ship in every
@@ -45,7 +46,10 @@ const icon = {
   grid: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`,
   camera: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h3l2-3h8l2 3h3v12H3z"/><circle cx="12" cy="13" r="4"/></svg>`,
   megaphone: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 0 0 1 1h2l9 5V4L6 9H4a1 1 0 0 0-1 1z"/><path d="M18 9a4 4 0 0 1 0 6"/><path d="M7 15v3a2 2 0 0 0 4 0v-2"/></svg>`,
+  layers: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg>`,
   bulb: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10c1 1 1.5 2 1.5 3h5c0-1 .5-2 1.5-3a6 6 0 0 0-4-10z"/></svg>`,
+  briefcase: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><path d="M3 13h18"/></svg>`,
+  handshake: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4L14 8H9.5L7 10.5"/><path d="M3 11.5 7 7.5l3.5 1"/><path d="m21 12-3-3"/><path d="M8.5 13.5 11 16"/><path d="M6.5 15.5 9 18"/><path d="M3 11.5 5 13.5"/></svg>`,
 };
 
 interface NavItem {
@@ -159,12 +163,40 @@ const learnChina: NavItem[] = [
     svg: icon.grid,
   },
   {
+    label: t('nav.learn.industries.label'),
+    desc: t('nav.learn.industries.desc'),
+    href: lp('/insights/industries'),
+    svg: icon.layers,
+  },
+  {
     label: t('nav.learn.insights.label'),
     desc: t('nav.learn.insights.desc'),
     href: lp('/insights'),
     svg: icon.bulb,
   },
 ];
+
+const ourWork: NavItem[] = [
+  {
+    label: t('nav.work.cases.label'),
+    desc: t('nav.work.cases.desc'),
+    href: lp('/work'),
+    svg: icon.briefcase,
+  },
+  {
+    label: t('nav.work.howWeWork.label'),
+    desc: t('nav.work.howWeWork.desc'),
+    href: lp('/how-we-work'),
+    svg: icon.handshake,
+  },
+];
+
+/**
+ * The "Our Work" panel only opens in locales where /how-we-work has a native
+ * twin. Elsewhere localizePath falls back to the locale home, and the item
+ * stays a plain link to the case studies until the page is translated.
+ */
+const workHasPanel = lp('/how-we-work') !== lp('/');
 
 /**
  * The third zone of each panel. One kind per group, because each group has a
@@ -234,6 +266,16 @@ const features: Record<string, Feature> = {
     src: '/Images/masterclass.jpg',
     alt: t('nav.feature.learn.alt'),
   },
+  work: {
+    kind: 'image',
+    label: t('nav.feature.work.label'),
+    title: t('nav.feature.work.title'),
+    line: t('nav.feature.work.line'),
+    href: lp('/work/iguzzini'),
+    cta: t('nav.feature.work.cta'),
+    src: '/Images/work/iguzzini.jpg',
+    alt: t('nav.feature.work.alt'),
+  },
 };
 
 interface NavSection {
@@ -283,6 +325,19 @@ const sections: NavSection[] = [
     cta: { label: t('nav.cta.learn'), href: lp('/learn-china') },
     items: learnChina,
   },
+  ...(workHasPanel
+    ? [
+        {
+          key: 'work',
+          label: t('nav.work'),
+          href: lp('/work'),
+          title: t('nav.work.title'),
+          intro: t('nav.work.intro'),
+          cta: null,
+          items: ourWork,
+        },
+      ]
+    : []),
 ];
 
 /**
@@ -295,10 +350,10 @@ const sectionRoots: Record<string, string[]> = {
   web: ['/build-in-china', '/social-in-china'],
   find: ['/compass'],
   learn: ['/learn-china', '/insights'],
+  work: ['/work', '/how-we-work'],
 };
 const activeKey =
   Object.keys(sectionRoots).find((k) => sectionRoots[k].some((r) => here === r || here.startsWith(r + '/'))) ??
-  (here === '/work' || here.startsWith('/work/') ? 'work' : null) ??
   (here === '/tools' || here.startsWith('/tools/') ? 'tools' : null);
 
 // Country flags for the language switcher. Inline SVG keeps the asset fast,
@@ -500,12 +555,24 @@ const switcherOthers = otherLocales.map((l) => ({
             ))
           }
 
-          <li class="nav__item" data-active={activeKey === 'work' ? 'true' : undefined}>
-            <a href={lp('/work')} class="nav__link"><span>{t('nav.work')}</span></a>
-          </li>
+          {
+            !workHasPanel && (
+              <li class="nav__item" data-active={activeKey === 'work' ? 'true' : undefined}>
+                <a href={lp('/work')} class="nav__link">
+                  <span>{t('nav.work')}</span>
+                </a>
+              </li>
+            )
+          }
 
-          <li class="nav__item" data-active={activeKey === 'tools' ? 'true' : undefined}>
-            <a href={lp('/tools')} class="nav__link"><span>{t('nav.calculator')}</span></a>
+          {/* The calculator sits in the row as a button, not a link, so the rail
+              marker skips it and the active state fills the button instead. */}
+          <li class="nav__item nav__item--btn" data-active={activeKey === 'tools' ? 'true' : undefined}>
+            <a
+              href={lp('/tools')}
+              class="btn btn--secondary nav__btn"
+              aria-current={activeKey === 'tools' ? 'page' : undefined}>{t('nav.calculator')}</a
+            >
           </li>
 
           <span class="nav__rail" data-rail aria-hidden="true"></span>
@@ -620,7 +687,7 @@ const switcherOthers = otherLocales.map((l) => ({
     /* ---------- the rail marker ------------------------------------------- */
     const scope = nav.querySelector('[data-rail-scope]');
     const rail = nav.querySelector('[data-rail]');
-    const items = Array.from(nav.querySelectorAll('.nav__item'));
+    const items = Array.from(nav.querySelectorAll('.nav__item:not(.nav__item--btn)'));
     const home = items.find((i) => i.dataset.active === 'true') || null;
 
     function moveRail(el) {
