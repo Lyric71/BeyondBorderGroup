@@ -4,6 +4,7 @@ description: "La integración de la IA convierte al ordenador personal en un asi
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "AI & Innovation"
+industry: "Electronics & Appliances"
 tags: ["PC con IA", "mercado chino", "estrategia de marketing", "educación del consumidor", "posicionamiento de producto"]
 heroImage: "/Images/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china.jpg"
 heroImageAlt: "Puesto de trabajo profesional con equipo informático moderno"

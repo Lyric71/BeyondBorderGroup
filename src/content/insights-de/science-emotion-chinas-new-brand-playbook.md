@@ -5,6 +5,7 @@ pubDate: "2026-03-12"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
 category: "Market Strategy"
+industry: "Beauty & Personal Care"
 platforms: ["Tmall", "Douyin"]
 tags: ["China eCommerce", "Markenstrategie", "Douyin", "Tmall", "Plattform-Architektur"]
 keyTakeaways:

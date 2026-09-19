@@ -10,6 +10,7 @@ title: "How to sell wine and spirits in China"
 slug: sell-wine-spirits-china
 primary_query: "sell wine spirits china"
 difficulty: HELD
+industry: "Food & Beverage"
 word_count: "2,200 to 2,400"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/sell-wine-spirits-china.md` |
 | Primary query | `sell wine spirits china` |
 | Difficulty | HELD |
+| Industry | `Food & Beverage`, set as `industry` in the insight frontmatter |
 | Body length | 2,200 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

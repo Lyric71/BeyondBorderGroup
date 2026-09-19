@@ -254,6 +254,287 @@
       gap: var(--space-4);
     }
   }
+
+  /* ---------- How we work ---------- */
+  .hww-head {
+    max-width: 780px;
+    margin: 0 auto var(--space-7);
+    text-align: center;
+  }
+  .hww-head__title {
+    margin: 0 0 var(--space-4);
+    text-wrap: balance;
+  }
+  .hww-head__lead {
+    margin: 0 auto;
+    max-width: 660px;
+    font-size: var(--fs-body);
+    line-height: 1.65;
+    color: var(--bbg-text);
+  }
+
+  .hww-compare {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: stretch;
+  }
+  .hww-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(24px, 3vw, 40px);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    border-radius: var(--radius-lg);
+  }
+  .hww-card--fit {
+    border: 2px solid var(--bbg-blue);
+    box-shadow: 0 24px 48px -24px rgba(200, 16, 46, 0.35);
+  }
+  .hww-card__tag {
+    align-self: flex-start;
+    font-size: var(--fs-label);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bbg-text-muted);
+    margin-bottom: var(--space-3);
+  }
+  .hww-card--fit .hww-card__tag {
+    color: var(--bbg-blue);
+  }
+  .hww-card__title {
+    margin: 0 0 var(--space-5);
+    font-size: var(--fs-h3);
+    line-height: 1.25;
+    color: var(--bbg-ink);
+  }
+  .hww-card__points {
+    list-style: none;
+    margin: 0 0 var(--space-5);
+    padding: 0;
+    display: grid;
+    gap: var(--space-3);
+  }
+  .hww-card__point {
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: var(--space-3);
+    align-items: start;
+    font-size: var(--fs-body);
+    line-height: 1.5;
+    color: var(--bbg-text);
+  }
+  .hww-card__point .hww-sr {
+    grid-column: 1;
+  }
+  .hww-card__mark {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    margin-top: 1px;
+    border-radius: 50%;
+  }
+  .hww-card__mark svg {
+    width: 14px;
+    height: 14px;
+  }
+  .hww-card__point.is-ok .hww-card__mark {
+    background: var(--bbg-blue-light);
+    color: var(--bbg-blue);
+  }
+  .hww-card--yes .hww-card__point.is-ok .hww-card__mark {
+    background: #eeeeee;
+    color: var(--bbg-text-muted);
+  }
+  .hww-card__point.is-no .hww-card__mark {
+    background: #eeeeee;
+    color: #8a8a8a;
+  }
+  .hww-card__point.is-no {
+    color: var(--bbg-text-muted);
+  }
+
+  .hww-curve {
+    margin: auto 0 0;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--bbg-border);
+  }
+  .hww-curve__label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--bbg-text-muted);
+    margin-bottom: var(--space-3);
+  }
+  .hww-curve__plot {
+    position: relative;
+  }
+  .hww-curve__svg {
+    display: block;
+    width: 100%;
+    height: 84px;
+    overflow: visible;
+  }
+  .hww-curve__line {
+    fill: none;
+    stroke: #9a9a9a;
+    stroke-width: 2.5;
+    vector-effect: non-scaling-stroke;
+  }
+  .hww-curve__area {
+    fill: rgba(0, 0, 0, 0.05);
+  }
+  .hww-card--fit .hww-curve__line {
+    stroke: var(--bbg-blue);
+  }
+  .hww-card--fit .hww-curve__area {
+    fill: rgba(200, 16, 46, 0.08);
+  }
+  .hww-curve__stop {
+    stroke: var(--bbg-text-muted);
+    stroke-width: 1;
+    stroke-dasharray: 3 4;
+    vector-effect: non-scaling-stroke;
+  }
+  .hww-curve__stop-label {
+    position: absolute;
+    top: 0;
+    left: calc(140 / 240 * 100% + 6px);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--bbg-text-muted);
+    line-height: 1;
+  }
+  .hww-card__outcome {
+    margin: var(--space-4) 0 0;
+    font-size: var(--fs-small);
+    font-weight: 500;
+    line-height: 1.55;
+    color: var(--bbg-ink);
+  }
+  .hww-compare__note {
+    max-width: 1000px;
+    margin: var(--space-3) auto 0;
+    font-size: 0.75rem;
+    color: var(--bbg-text-muted);
+    text-align: center;
+  }
+
+  .hww-how {
+    max-width: 1000px;
+    margin: var(--space-8) auto 0;
+  }
+  .hww-how__title {
+    margin: 0 0 var(--space-5);
+    font-size: var(--fs-h4);
+    font-weight: 600;
+    color: var(--bbg-ink);
+    text-align: center;
+  }
+  .hww-how__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-6);
+  }
+  .hww-how__icon {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-bottom: var(--space-4);
+    border-radius: 12px;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    color: var(--bbg-blue);
+  }
+  .hww-how__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .hww-how__item-title {
+    margin: 0 0 var(--space-2);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--bbg-ink);
+  }
+  .hww-how__item-body {
+    margin: 0;
+    font-size: var(--fs-small);
+    line-height: 1.6;
+    color: var(--bbg-text);
+  }
+
+  .hww-foot {
+    max-width: 1000px;
+    margin: var(--space-7) auto 0;
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--bbg-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-5) var(--space-6);
+  }
+  .hww-foot__stance {
+    margin: 0;
+    max-width: 520px;
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    color: var(--bbg-ink);
+  }
+  .hww-foot__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-5);
+    flex-shrink: 0;
+  }
+  .hww-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (max-width: 900px) {
+    .hww-compare {
+      grid-template-columns: 1fr;
+      max-width: 560px;
+    }
+    .hww-how__list {
+      grid-template-columns: 1fr;
+      max-width: 560px;
+      margin: 0 auto;
+      gap: var(--space-5);
+    }
+    .hww-how__item {
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr);
+      column-gap: var(--space-4);
+    }
+    .hww-how__icon {
+      grid-row: span 2;
+      margin-bottom: 0;
+    }
+    .hww-foot {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 560px;
+    }
+  }
 </style>
 
 <script is:inline>

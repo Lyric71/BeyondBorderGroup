@@ -9,6 +9,7 @@ content_type: Ledger A
 title: "What it costs to sell stationery and office products in China"
 slug: cost-to-sell-stationery-and-office-products-in-china
 primary_query: ""
+industry: "Sports & Leisure"
 word_count: "1,100 to 1,400"
 variant: A
 proof: "none"
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Slug | `/insights/cost-to-sell-stationery-and-office-products-in-china/` |
 | Output file | `output/cost-to-sell-stationery-and-office-products-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Sports & Leisure`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
 | Proof | none |

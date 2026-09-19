@@ -10,6 +10,7 @@ title: "How to sell consumer electronics and small appliances in China"
 slug: sell-electronics-appliances-china
 primary_query: "sell electronics appliances china"
 difficulty: MED
+industry: "Electronics & Appliances"
 word_count: "2,200 to 2,400"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/sell-electronics-appliances-china.md` |
 | Primary query | `sell electronics appliances china` |
 | Difficulty | MED |
+| Industry | `Electronics & Appliances`, set as `industry` in the insight frontmatter |
 | Body length | 2,200 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

@@ -9,6 +9,8 @@ Companion to the Four-Slot Week plan. This is the file you hand to Claude Code.
 - Part 3: full briefs, weeks 1 to 13
 - Part 4: the four slot templates that generate everything else
 
+**Industry coverage rule.** Every Anchor and Ledger row in Part 2 carries an Industry, one of `INSIGHT_INDUSTRIES` in `src/content.config.ts` or `none` for cross-industry pieces. It becomes the `industry` frontmatter of the published insight and decides where the piece lists on `/insights/industries`. An industry with no published piece shows there as "Guide in the works". The Ledger queue for weeks 3 to 10 is ordered so each of the eight industries that were still in the works on September 19, 2026 gets its first piece in turn: Food & Beverage (W3), Home & Living (W4), Automotive (W5), Pets (W6), Financial & Professional Services (W7), Mother & Baby (W8), Sports & Leisure (W9), Health & Wellness (W10). Case-study Ledgers the reorder displaced moved to W11, W12, W18, W26 and W29.
+
 **Ledger scheduling rule.** A category that also has a CAT anchor is scheduled at least eight weeks away from it, and the two interlink. The Ledger answers "what it costs to sell X"; the anchor answers "how to sell X". Different queries, different pages, never adjacent weeks.
 
 **What is not listed and why.** Signals (46) and Teardowns (22) are deliberately not pre-titled. A Signal that exists in a spreadsheet in September is not a Signal, it is a guess about the news. A Teardown has to be picked on whether the entry is observable today. Both run from the templates in Part 4 against their watch list and criteria.
@@ -95,60 +97,60 @@ The revised wave 1 below reflects this.
 
 Difficulty from the September 2026 baseline. OPEN means no incumbent answers the query.
 
-| Wk | Title | Target query | Diff |
-|---|---|---|---|
-| 1 | Distributor or your own store in China: the honest comparison | china distributor vs own store | OPEN |
-| 2 | What a livestream room actually costs | china livestream cost for brands | OPEN |
-| 3 | Double 11 2026: the 60-day operator checklist | double 11 preparation checklist | SEAS |
-| 4 | What Chinese social media costs a foreign brand per month | china social media marketing cost per month | OPEN |
-| 5 | Douyin store or Douyin as media: which one you actually need | douyin store vs douyin ads | OPEN |
-| 6 | Opening a RedNote store as a foreign brand | xiaohongshu store setup overseas brand | WEAK |
-| 7 | How to tell a real China distributor from a trading company | find distributor china verify | WEAK |
-| 8 | Double 11: the last fourteen days | double 11 last minute checklist | SEAS |
-| 9 | RedNote seeding: what it costs and what comes back | xiaohongshu koc seeding cost | WEAK |
-| 10 | Double 11 live: what is actually moving | double 11 2026 results | SEAS |
-| 11 | Double 11 2026 from inside the stores we run | double 11 2026 brand performance | OPEN |
-| 12 | What a China eCommerce P&L actually looks like | china ecommerce margin profitability | OPEN |
-| 13 | What a Tmall Global store costs in year one | tmall global cost fees | HELD |
-| 14 | Selling home and kitchen brands into China | sell home kitchen products china | OPEN |
-| 15 | Selling outdoor and sports gear into China | sell outdoor sports gear china | OPEN |
-| 16 | Chinese New Year: what to lock before the country closes | cny ecommerce planning | SEAS |
-| 17 | How to sell coffee and specialty food in China | sell coffee specialty food china | WEAK |
-| 18 | Cross-border or general trade: the decision that sets your cost base | cbec vs general trade china | WEAK |
-| 19 | What a Douyin cross-border store costs in year one | douyin cross border store cost | WEAK |
-| 20 | Month one on Tmall Global: what actually happens | tmall global store launch timeline | OPEN |
-| 21 | Labeling and testing: what stops a shipment at Chinese customs | china import labeling requirements | WEAK |
-| 22 | What a JD Worldwide store costs in year one | jd worldwide fees cost | MED |
-| 23 | China platform fee benchmark 2027 | china marketplace fees comparison | HELD |
-| 24 | How to sell pet products in China | sell pet products china | MED |
-| 25 | What a China distribution agreement actually contains | china distribution agreement terms | OPEN |
-| 26 | Tmall Global vs JD Worldwide vs Douyin: which store first | tmall vs jd vs douyin | HELD |
-| 27 | 618 2027: the 100-day plan | 618 festival preparation | SEAS |
-| 28 | What a WeChat presence costs a foreign brand | wechat official account cost | WEAK |
-| 29 | How to sell health supplements in China without a Blue Hat | sell supplements china cross-border | HELD |
-| 30 | RedNote for foreign brands: what the platform is actually for | rednote marketing foreign brands | HELD |
-| 31 | PIPL and your China store: what a brand actually has to do | pipl compliance foreign brand | WEAK |
-| 32 | How to sell wine and spirits in China | sell wine spirits china | HELD |
-| 33 | The monthly content load a China store actually needs | china ecommerce content requirements | OPEN |
-| 34 | Tmall Partner, in-house or agency: who should run the store | tmall partner vs in house team | HELD |
-| 35 | How to sell beauty and skincare in China in 2027 | sell cosmetics china foreign brand | HELD |
-| 36 | What it costs foreign brands to launch in China: 2027 benchmark | china market entry cost benchmark | OPEN |
-| 37 | 618: the last three weeks | 618 last minute strategy | SEAS |
-| 38 | Twelve questions to ask before signing a China distributor | questions to ask china distributor | OPEN |
-| 39 | Tmall Global or Tmall Classic: when to move onshore | tmall global vs tmall classic | HELD |
-| 40 | Running 618: an operator's log | 618 how it works brands | OPEN |
-| 41 | How to sell maternity and baby products in China | sell baby products china | HELD |
-| 42 | 618 2027 from inside the stores we run | 618 2027 results brands | OPEN |
-| 43 | How to sell luxury and premium goods in China now | luxury brand china strategy | HELD |
-| 44 | How to sell B2B and industrial products in China | b2b marketing china industrial | MED |
-| 45 | What China market entry costs before you take a single order | china market entry cost | WEAK |
-| 46 | Trademark first: the China IP sequence nobody follows | china trademark registration brand | MED |
-| 47 | The twelve-month China launch timeline | china launch timeline brands | OPEN |
-| 48 | The RedNote year: what changed and what it does to budgets | xiaohongshu trends 2027 brands | MED |
-| 49 | How to sell consumer electronics and small appliances in China | sell electronics appliances china | MED |
-| 50 | China marketplace fee benchmark, mid-year | china platform fees 2027 | HELD |
-| 51 | Double 11 2027: the 80-day plan | double 11 2027 preparation | SEAS |
-| 52 | The year-one China channel decision, revisited | how to enter china market brands | HELD |
+| Wk | Title | Target query | Diff | Industry |
+|---|---|---|---|---|
+| 1 | Distributor or your own store in China: the honest comparison | china distributor vs own store | OPEN | none |
+| 2 | What a livestream room actually costs | china livestream cost for brands | OPEN | none |
+| 3 | Double 11 2026: the 60-day operator checklist | double 11 preparation checklist | SEAS | none |
+| 4 | What Chinese social media costs a foreign brand per month | china social media marketing cost per month | OPEN | none |
+| 5 | Douyin store or Douyin as media: which one you actually need | douyin store vs douyin ads | OPEN | none |
+| 6 | Opening a RedNote store as a foreign brand | xiaohongshu store setup overseas brand | WEAK | none |
+| 7 | How to tell a real China distributor from a trading company | find distributor china verify | WEAK | none |
+| 8 | Double 11: the last fourteen days | double 11 last minute checklist | SEAS | none |
+| 9 | RedNote seeding: what it costs and what comes back | xiaohongshu koc seeding cost | WEAK | none |
+| 10 | Double 11 live: what is actually moving | double 11 2026 results | SEAS | none |
+| 11 | Double 11 2026 from inside the stores we run | double 11 2026 brand performance | OPEN | none |
+| 12 | What a China eCommerce P&L actually looks like | china ecommerce margin profitability | OPEN | none |
+| 13 | What a Tmall Global store costs in year one | tmall global cost fees | HELD | none |
+| 14 | Selling home and kitchen brands into China | sell home kitchen products china | OPEN | Home & Living |
+| 15 | Selling outdoor and sports gear into China | sell outdoor sports gear china | OPEN | Sports & Leisure |
+| 16 | Chinese New Year: what to lock before the country closes | cny ecommerce planning | SEAS | none |
+| 17 | How to sell coffee and specialty food in China | sell coffee specialty food china | WEAK | Food & Beverage |
+| 18 | Cross-border or general trade: the decision that sets your cost base | cbec vs general trade china | WEAK | none |
+| 19 | What a Douyin cross-border store costs in year one | douyin cross border store cost | WEAK | none |
+| 20 | Month one on Tmall Global: what actually happens | tmall global store launch timeline | OPEN | none |
+| 21 | Labeling and testing: what stops a shipment at Chinese customs | china import labeling requirements | WEAK | none |
+| 22 | What a JD Worldwide store costs in year one | jd worldwide fees cost | MED | none |
+| 23 | China platform fee benchmark 2027 | china marketplace fees comparison | HELD | none |
+| 24 | How to sell pet products in China | sell pet products china | MED | Pets |
+| 25 | What a China distribution agreement actually contains | china distribution agreement terms | OPEN | none |
+| 26 | Tmall Global vs JD Worldwide vs Douyin: which store first | tmall vs jd vs douyin | HELD | none |
+| 27 | 618 2027: the 100-day plan | 618 festival preparation | SEAS | none |
+| 28 | What a WeChat presence costs a foreign brand | wechat official account cost | WEAK | none |
+| 29 | How to sell health supplements in China without a Blue Hat | sell supplements china cross-border | HELD | Health & Wellness |
+| 30 | RedNote for foreign brands: what the platform is actually for | rednote marketing foreign brands | HELD | none |
+| 31 | PIPL and your China store: what a brand actually has to do | pipl compliance foreign brand | WEAK | none |
+| 32 | How to sell wine and spirits in China | sell wine spirits china | HELD | Food & Beverage |
+| 33 | The monthly content load a China store actually needs | china ecommerce content requirements | OPEN | none |
+| 34 | Tmall Partner, in-house or agency: who should run the store | tmall partner vs in house team | HELD | none |
+| 35 | How to sell beauty and skincare in China in 2027 | sell cosmetics china foreign brand | HELD | Beauty & Personal Care |
+| 36 | What it costs foreign brands to launch in China: 2027 benchmark | china market entry cost benchmark | OPEN | none |
+| 37 | 618: the last three weeks | 618 last minute strategy | SEAS | none |
+| 38 | Twelve questions to ask before signing a China distributor | questions to ask china distributor | OPEN | none |
+| 39 | Tmall Global or Tmall Classic: when to move onshore | tmall global vs tmall classic | HELD | none |
+| 40 | Running 618: an operator's log | 618 how it works brands | OPEN | none |
+| 41 | How to sell maternity and baby products in China | sell baby products china | HELD | Mother & Baby |
+| 42 | 618 2027 from inside the stores we run | 618 2027 results brands | OPEN | none |
+| 43 | How to sell luxury and premium goods in China now | luxury brand china strategy | HELD | Fashion & Luxury |
+| 44 | How to sell B2B and industrial products in China | b2b marketing china industrial | MED | B2B & Industrial |
+| 45 | What China market entry costs before you take a single order | china market entry cost | WEAK | none |
+| 46 | Trademark first: the China IP sequence nobody follows | china trademark registration brand | MED | none |
+| 47 | The twelve-month China launch timeline | china launch timeline brands | OPEN | none |
+| 48 | The RedNote year: what changed and what it does to budgets | xiaohongshu trends 2027 brands | MED | none |
+| 49 | How to sell consumer electronics and small appliances in China | sell electronics appliances china | MED | Electronics & Appliances |
+| 50 | China marketplace fee benchmark, mid-year | china platform fees 2027 | HELD | none |
+| 51 | Double 11 2027: the 80-day plan | double 11 2027 preparation | SEAS | none |
+| 52 | The year-one China channel decision, revisited | how to enter china market brands | HELD | none |
 
 ## The 52 Ledgers
 
@@ -156,60 +158,60 @@ Title pattern, Ledger A: `What it costs to sell [category] in China`. Ledger B: 
 
 Order resolved so no Ledger sits within eight weeks of the CAT anchor covering the same category.
 
-| Wk | Variant | Title | Proof |
-|---|---|---|---|
-| 1 | A | What it costs to sell footwear in China | Camper. Use only what is already published on `/work/camper`. Do not add figures. |
-| 2 | A | What it costs to sell facial skincare in China | ROC, Shiseido RQ Pyology, Pierre Fabre, Age 20's. Published figures only. |
-| 3 | A | What it costs to sell dairy and spreads in China | Valio, Langnese. Published figures only. |
-| 4 | A | What it costs to sell bakery and food ingredients in China | Master Martini, Kerry DaVinci Gourmet. |
-| 5 | A | What it costs to sell packaged food in China | Mission Foods. |
-| 6 | A | What it costs to sell home textiles and bedding in China | Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page. |
-| 7 | A | What it costs to sell lighting and home design in China | iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`. |
-| 8 | B | How automotive and EV brands actually reach buyers in China | Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`. |
-| 9 | B | How building systems and HVAC brands actually reach buyers in China | Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`. |
-| 10 | B | How hotel groups actually reach Chinese travellers | Marriott, including the published Tmall Super Brand Day and Bonvoy enrolment figures. Channels: Fliggy and Ctrip, WeChat mini programme for direct booking, RedNote for consideration, and the loyalty programme as the actual asset. This is the one Ledger B with a marketplace component, so it can carry a partial fee table for Fliggy. |
-| 11 | B | How insurance and financial services reach customers in China | Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is. |
-| 12 | B | How telehealth and wellness services reach patients in China | SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite. |
-| 13 | A | What it costs to sell beauty devices and tools in China | none |
-| 14 | A | What it costs to sell furniture in China | none |
-| 15 | A | What it costs to sell eyewear in China | none |
-| 16 | A | What it costs to sell bags and luggage in China | none |
-| 17 | A | What it costs to sell garden and outdoor living products in China | none |
-| 18 | A | What it costs to sell toys and games in China | none |
-| 19 | A | What it costs to sell stationery and office products in China | none |
-| 20 | A | What it costs to sell musical instruments in China | none |
-| 21 | A | What it costs to sell cleaning and household products in China | none |
-| 22 | A | What it costs to sell home and kitchen products in China | none |
-| 23 | A | What it costs to sell outdoor and sports gear in China | none |
-| 24 | A | What it costs to sell consumer electronics in China | none |
-| 25 | A | What it costs to sell coffee and specialty food in China | none |
-| 26 | B | How professional services and consulting reach clients in China | none |
-| 27 | A | What it costs to sell colour cosmetics in China | none |
-| 28 | A | What it costs to sell personal care and body products in China | none |
-| 29 | A | What it costs to sell oral care in China | none |
-| 30 | A | What it costs to sell apparel in China | none |
-| 31 | A | What it costs to sell jewellery in China | none |
-| 32 | A | What it costs to sell watches in China | none |
-| 33 | A | What it costs to sell luxury leather goods in China | none |
-| 34 | A | What it costs to sell medical devices and home diagnostics in China | none |
-| 35 | A | What it costs to sell fragrance in China | none |
-| 36 | A | What it costs to sell sun care in China | none |
-| 37 | A | What it costs to sell hair care in China | none |
-| 38 | A | What it costs to sell pet food in China | none |
-| 39 | A | What it costs to sell pet accessories and hardware in China | none |
-| 40 | A | What it costs to sell health supplements in China | none |
-| 41 | A | What it costs to sell sports nutrition in China | none |
-| 42 | A | What it costs to sell wine in China | none |
-| 43 | A | What it costs to sell spirits in China | none |
-| 44 | A | What it costs to sell beer and ready-to-drink in China | none |
-| 45 | A | What it costs to sell tea and beverages in China | none |
-| 46 | A | What it costs to sell auto parts and accessories in China | none |
-| 47 | A | What it costs to sell bath and sanitaryware in China | none |
-| 48 | B | What it costs to sell education and training services in China | none |
-| 49 | A | What it costs to sell maternity products in China | none |
-| 50 | A | What it costs to sell infant formula in China | none |
-| 51 | A | What it costs to sell baby care and hygiene products in China | none |
-| 52 | B | What it costs to sell industrial equipment and components in China | none |
+| Wk | Variant | Title | Proof | Industry |
+|---|---|---|---|---|
+| 1 | A | What it costs to sell footwear in China | Camper. Use only what is already published on `/work/camper`. Do not add figures. | Fashion & Luxury |
+| 2 | A | What it costs to sell facial skincare in China | ROC, Shiseido RQ Pyology, Pierre Fabre, Age 20's. Published figures only. | Beauty & Personal Care |
+| 3 | A | What it costs to sell dairy and spreads in China | Valio, Langnese. Published figures only. | Food & Beverage |
+| 4 | A | What it costs to sell home textiles and bedding in China | Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page. | Home & Living |
+| 5 | B | How automotive and EV brands actually reach buyers in China | Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`. | Automotive |
+| 6 | A | What it costs to sell pet food in China | none | Pets |
+| 7 | B | How insurance and financial services reach customers in China | Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is. | Financial & Professional Services |
+| 8 | A | What it costs to sell baby care and hygiene products in China | none | Mother & Baby |
+| 9 | A | What it costs to sell toys and games in China | none | Sports & Leisure |
+| 10 | B | How telehealth and wellness services reach patients in China | SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite. | Health & Wellness |
+| 11 | A | What it costs to sell lighting and home design in China | iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`. | Home & Living |
+| 12 | B | How building systems and HVAC brands actually reach buyers in China | Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`. | B2B & Industrial |
+| 13 | A | What it costs to sell beauty devices and tools in China | none | Beauty & Personal Care |
+| 14 | A | What it costs to sell furniture in China | none | Home & Living |
+| 15 | A | What it costs to sell eyewear in China | none | Fashion & Luxury |
+| 16 | A | What it costs to sell bags and luggage in China | none | Fashion & Luxury |
+| 17 | A | What it costs to sell garden and outdoor living products in China | none | Home & Living |
+| 18 | B | How hotel groups actually reach Chinese travellers | Marriott, including the published Tmall Super Brand Day and Bonvoy enrolment figures. Channels: Fliggy and Ctrip, WeChat mini programme for direct booking, RedNote for consideration, and the loyalty programme as the actual asset. This is the one Ledger B with a marketplace component, so it can carry a partial fee table for Fliggy. | Travel & Hospitality |
+| 19 | A | What it costs to sell stationery and office products in China | none | Sports & Leisure |
+| 20 | A | What it costs to sell musical instruments in China | none | Sports & Leisure |
+| 21 | A | What it costs to sell cleaning and household products in China | none | Home & Living |
+| 22 | A | What it costs to sell home and kitchen products in China | none | Home & Living |
+| 23 | A | What it costs to sell outdoor and sports gear in China | none | Sports & Leisure |
+| 24 | A | What it costs to sell consumer electronics in China | none | Electronics & Appliances |
+| 25 | A | What it costs to sell coffee and specialty food in China | none | Food & Beverage |
+| 26 | A | What it costs to sell bakery and food ingredients in China | Master Martini, Kerry DaVinci Gourmet. | Food & Beverage |
+| 27 | A | What it costs to sell colour cosmetics in China | none | Beauty & Personal Care |
+| 28 | A | What it costs to sell personal care and body products in China | none | Beauty & Personal Care |
+| 29 | A | What it costs to sell packaged food in China | Mission Foods. | Food & Beverage |
+| 30 | A | What it costs to sell apparel in China | none | Fashion & Luxury |
+| 31 | A | What it costs to sell jewellery in China | none | Fashion & Luxury |
+| 32 | A | What it costs to sell watches in China | none | Fashion & Luxury |
+| 33 | A | What it costs to sell luxury leather goods in China | none | Fashion & Luxury |
+| 34 | A | What it costs to sell medical devices and home diagnostics in China | none | Health & Wellness |
+| 35 | A | What it costs to sell fragrance in China | none | Beauty & Personal Care |
+| 36 | A | What it costs to sell sun care in China | none | Beauty & Personal Care |
+| 37 | A | What it costs to sell hair care in China | none | Beauty & Personal Care |
+| 38 | B | How professional services and consulting reach clients in China | none | Financial & Professional Services |
+| 39 | A | What it costs to sell pet accessories and hardware in China | none | Pets |
+| 40 | A | What it costs to sell health supplements in China | none | Health & Wellness |
+| 41 | A | What it costs to sell sports nutrition in China | none | Health & Wellness |
+| 42 | A | What it costs to sell wine in China | none | Food & Beverage |
+| 43 | A | What it costs to sell spirits in China | none | Food & Beverage |
+| 44 | A | What it costs to sell beer and ready-to-drink in China | none | Food & Beverage |
+| 45 | A | What it costs to sell tea and beverages in China | none | Food & Beverage |
+| 46 | A | What it costs to sell auto parts and accessories in China | none | Automotive |
+| 47 | A | What it costs to sell bath and sanitaryware in China | none | Home & Living |
+| 48 | B | What it costs to sell education and training services in China | none | Financial & Professional Services |
+| 49 | A | What it costs to sell maternity products in China | none | Mother & Baby |
+| 50 | A | What it costs to sell infant formula in China | none | Mother & Baby |
+| 51 | A | What it costs to sell oral care in China | none | Beauty & Personal Care |
+| 52 | B | What it costs to sell industrial equipment and components in China | none | B2B & Industrial |
 
 ## The 12 Assets and Reports
 
@@ -387,11 +389,9 @@ Block 3 carries the weight: dairy is one of the most tightly controlled import c
 
 ## W04 · WED · LEDGER A
 
-**Title:** What it costs to sell bakery and food ingredients in China
+**Title:** What it costs to sell home textiles and bedding in China
 **Word count:** 1,100 to 1,400
-
-This one is partly B2B, so block 5 splits: marketplace for consumer-facing SKUs, distributor for foodservice. Say so plainly, it is the honest answer and it links to `/enter-china/distribution`.
-**Proof.** Master Martini, Kerry DaVinci Gourmet.
+**Proof.** Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page.
 
 ---
 
@@ -422,13 +422,18 @@ This one is partly B2B, so block 5 splits: marketplace for consumer-facing SKUs,
 
 ---
 
-## W05 · WED · LEDGER A
+## W05 · WED · LEDGER B
 
-**Title:** What it costs to sell packaged food in China
-**Word count:** 1,100 to 1,400
+**Title:** How automotive and EV brands actually reach buyers in China
+**Word count:** 1,200 to 1,500
 
-Block 3 leads: cross-border positive list status, shelf-life-on-arrival rule, and Chinese labelling. This is the category where shipments actually get stopped, so the route block is the reason to read the page.
-**Proof.** Mission Foods.
+**Ledger B variant.** No fee table. The table is channel by channel: what it reaches, what it costs to run monthly, what a qualified lead costs, and who owns it.
+
+Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi as the vertical portals, WeChat for dealer handoff, and offline events. Say plainly that the vehicle is not sold cross-border and that this is a demand-generation and dealer-handoff problem, not a marketplace one.
+
+**Proof.** Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`.
+**Internal links.** `/grow-in-china/campaigns`, `/grow-in-china/media`, `/social-in-china`
+**CTA.** Talk to us.
 
 ---
 
@@ -462,9 +467,12 @@ Block 3 leads: cross-border positive list status, shelf-life-on-arrival rule, an
 
 ## W06 · WED · LEDGER A
 
-**Title:** What it costs to sell home textiles and bedding in China
+**Title:** What it costs to sell pet food in China
 **Word count:** 1,100 to 1,400
-**Proof.** Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page.
+
+Block 3 carries this one and nothing else comes close. Pet food entering China is a facility-level question before it is a product-level one: the manufacturing plant itself has to be registered and approved, which means the cost and the timeline sit with your producer, not with you, and a brand using a contract manufacturer that has never registered is looking at a multi-quarter delay it cannot shorten with budget. Writer must verify and cite the current GACC facility registration requirement for imported pet food, the quarantine and inspection permit process, whether cross-border ecommerce changes the requirement, and the current positive list status for pet food categories. Block 4 should be built on bulk: dry food is heavy and priced low, so model the pack size and multi-pack structure that make an order profitable. Pairs with the W24 pet anchor, which ships later. Nothing to link back to yet: the W24 anchor links to this page when it publishes.
+
+**Proof.** None available. Use the block 6 honesty line.
 
 ---
 
@@ -493,11 +501,11 @@ Block 3 leads: cross-border positive list status, shelf-life-on-arrival rule, an
 
 ---
 
-## W07 · WED · LEDGER A
+## W07 · WED · LEDGER B
 
-**Title:** What it costs to sell lighting and home design in China
-**Word count:** 1,100 to 1,400
-**Proof.** iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`.
+**Title:** How insurance and financial services reach customers in China
+**Word count:** 1,200 to 1,500
+**Proof.** Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is.
 
 ---
 
@@ -514,18 +522,14 @@ Block 3 leads: cross-border positive list status, shelf-life-on-arrival rule, an
 
 ---
 
-## W08 · WED · LEDGER B
+## W08 · WED · LEDGER A
 
-**Title:** How automotive and EV brands actually reach buyers in China
-**Word count:** 1,200 to 1,500
+**Title:** What it costs to sell baby care and hygiene products in China
+**Word count:** 1,100 to 1,400
 
-**Ledger B variant.** No fee table. The table is channel by channel: what it reaches, what it costs to run monthly, what a qualified lead costs, and who owns it.
+Block 3 carries this, and the specific trap is that a product marketed for children or infants can face a stricter regime than the same formulation marketed for adults. Instruct the writer to verify and cite the current Chinese regulatory treatment of children's cosmetics, including whether a separate registration or filing track and a distinct safety assessment apply, whether the cross-border route changes that, and the labelling and claims restrictions that apply to products aimed at infants. Diapers and wipes need their own check, since they may fall under different product standards from wash and skincare, and the writer should confirm and cite rather than group them. Block 4 should note that this is a high-repeat, low-ticket category, so breakeven is a subscription-like calculation and should be modelled on repeat rate, not on first order value.
 
-Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi as the vertical portals, WeChat for dealer handoff, and offline events. Say plainly that the vehicle is not sold cross-border and that this is a demand-generation and dealer-handoff problem, not a marketplace one.
-
-**Proof.** Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`.
-**Internal links.** `/grow-in-china/campaigns`, `/grow-in-china/media`, `/social-in-china`
-**CTA.** Talk to us.
+**Proof.** None available. Use the block 6 honesty line.
 
 ---
 
@@ -557,11 +561,14 @@ Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi 
 
 ---
 
-## W09 · WED · LEDGER B
+## W09 · WED · LEDGER A
 
-**Title:** How building systems and HVAC brands actually reach buyers in China
-**Word count:** 1,200 to 1,500
-**Proof.** Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`.
+**Title:** What it costs to sell toys and games in China
+**Word count:** 1,100 to 1,400
+
+Block 3 is the load-bearing block, because toys is a certification category. The writer must verify which toy types fall under China's mandatory product certification scheme, what a cross-border sale does and does not exempt, and how age grading and warning text have to appear, citing SAMR or the certification body directly rather than restating a summary found on an agency blog. Two more traps to name: battery-powered toys inherit air freight restrictions that change the landed cost model, and licensed character product needs its China territory rights confirmed before a listing goes live, because platform IP complaints on licensed toys are fast and unforgiving. Block 4 should show a low average order value fighting a fixed cost per order, and block 5 should say that toys usually needs bundling or a gifting angle before the unit economics work.
+
+**Proof.** None available. Use the block 6 honesty line.
 
 ---
 
@@ -580,9 +587,9 @@ Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi 
 
 ## W10 · WED · LEDGER B
 
-**Title:** How hotel groups actually reach Chinese travellers
+**Title:** How telehealth and wellness services reach patients in China
 **Word count:** 1,200 to 1,500
-**Proof.** Marriott, including the published Tmall Super Brand Day and Bonvoy enrolment figures. Channels: Fliggy and Ctrip, WeChat mini programme for direct booking, RedNote for consideration, and the loyalty programme as the actual asset. This is the one Ledger B with a marketplace component, so it can carry a partial fee table for Fliggy.
+**Proof.** SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite.
 
 ---
 
@@ -611,11 +618,11 @@ Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi 
 
 ---
 
-## W11 · WED · LEDGER B
+## W11 · WED · LEDGER A
 
-**Title:** How insurance and financial services reach customers in China
-**Word count:** 1,200 to 1,500
-**Proof.** Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is.
+**Title:** What it costs to sell lighting and home design in China
+**Word count:** 1,100 to 1,400
+**Proof.** iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`.
 
 ---
 
@@ -647,9 +654,9 @@ Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi 
 
 ## W12 · WED · LEDGER B
 
-**Title:** How telehealth and wellness services reach patients in China
+**Title:** How building systems and HVAC brands actually reach buyers in China
 **Word count:** 1,200 to 1,500
-**Proof.** SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite.
+**Proof.** Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`.
 
 ---
 
@@ -717,6 +724,8 @@ Block 3 carries the weight. Beauty devices sit on the line between cosmetics and
 **CTA.** Run the Tmall Global first-year calculator with home and kitchen selected.
 **Do not.** Do not let the H1, the first 20 words, the meta description or the intro sit in sourcing territory: the opening sentence must say outright that this is about selling a foreign home and kitchen brand to Chinese consumers, not about finding a Chinese factory, and the word "supplier" should not appear above the fold. Do not treat "small appliances" as one thing; a kettle and an air fryer have different certification paths and the writer must verify each rather than generalizing.
 
+---
+
 ## W14 · WED · LEDGER A
 
 **Title:** What it costs to sell furniture in China
@@ -725,6 +734,8 @@ Block 3 carries the weight. Beauty devices sit on the line between cosmetics and
 Block 4 carries this one. Furniture is the category where freight, not platform fees, decides whether the P&L works, so the unit economics block has to run volumetric weight against typical order value before it says anything about commission, and the fee table in block 2 should be presented as the smaller number it actually is. The trap to name is that cross-border parcel economics collapse above roughly the weight and dimension bands a bonded warehouse is built for, which pushes most furniture to general trade and sea freight, and separately that panel and upholstery products face emission and flammability requirements the writer must verify with GACC or SAMR sourcing before stating any threshold. Block 5 should land on general trade with a distributor for anything larger than a side table, and say plainly that last-mile delivery and installation in China is a service the brand does not own.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W15 · TUE · ANCHOR
 
@@ -752,6 +763,8 @@ Block 4 carries this one. Furniture is the category where freight, not platform 
 **Do not.** Do not slide into sourcing language: the H1 and the first 20 words must state that the reader is selling gear into China, and no paragraph should describe Chinese manufacturing capacity. Do not write the community section as an influencer plan.
 **Territory guard.** Seeding, creator relationships and community management sit with TheRedScroll, so this piece names the demand pattern and links to /social-in-china rather than describing seeding as a TheChinaPath service.
 
+---
+
 ## W15 · WED · LEDGER A
 
 **Title:** What it costs to sell eyewear in China
@@ -760,6 +773,8 @@ Block 4 carries this one. Furniture is the category where freight, not platform 
 Block 3 carries this one, because eyewear is three regulatory products wearing the same name. Sunglasses and non-prescription frames travel one route, prescription lenses another, and contact lenses and their care solutions are regulated as medical devices, so the writer must verify the current NMPA classification and registration requirement for each and cite it rather than describing the tier from memory. The second trap is claims: UV protection, blue light and polarization language on a Chinese listing is regulated advertising copy, and the writer should say the claim set must be checked before the storefront copy is written, not after. Block 4 should show why a high-margin, low-weight product survives cross-border freight comfortably and why the real cost sits in brand authorization documents and trademark checks at platform onboarding.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W16 · TUE · ANCHOR + ASSET
 
@@ -786,6 +801,8 @@ Block 3 carries this one, because eyewear is three regulatory products wearing t
 **CTA.** Download the cut-off calendar and check it against your own stock plan.
 **Do not.** Do not write a cultural explainer about the holiday. No red envelope symbolism, no zodiac paragraph, no gifting-culture section. Do not print a single date without sourcing it to the official holiday announcement for the year the piece is published, and add a visible last-updated line because this piece is refreshed annually.
 
+---
+
 ## W16 · WED · LEDGER A
 
 **Title:** What it costs to sell bags and luggage in China
@@ -794,6 +811,8 @@ Block 3 carries this one, because eyewear is three regulatory products wearing t
 Block 2 does the work here, because bags and luggage is a category where platform commission and the brand authorization gate matter more than logistics. The trap is documentation and IP: marketplace onboarding for a bag brand triggers trademark and authorization checks that stop applications cold, and the writer must verify the current Chinese trademark position requirement for a cross-border flagship and cite the platform's own published rule rather than paraphrasing it. Second trap, name it plainly: any exotic skin or animal-derived trim raises a CITES and quarantine question that has to be answered before the shipment is booked, not at customs. Block 4 should compare a hard-shell suitcase, which is bulky and freight-heavy, against a leather handbag, which is small and high value, and show that the two do not belong in the same channel plan.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W17 · TUE · ANCHOR
 
@@ -820,6 +839,8 @@ Block 2 does the work here, because bags and luggage is a category where platfor
 **CTA.** Run the Tmall Global first-year calculator with food and beverage selected.
 **Do not.** Do not state any GACC decree number, registration validity period, or minimum remaining shelf life percentage as fact. Every one of those is an instruction to the writer to verify with the current official source and cite it inline. Do not write health or functional claims into example listing copy, because food advertising claims in China are regulated and an illustrative line can become a compliance problem when a reader copies it.
 
+---
+
 ## W17 · WED · LEDGER A
 
 **Title:** What it costs to sell garden and outdoor living products in China
@@ -828,6 +849,8 @@ Block 2 does the work here, because bags and luggage is a category where platfor
 Block 3 carries this, because half of what a garden brand sells cannot cross the border at all. Anything living, including seeds, bulbs, plants and soil, sits under plant quarantine rules, and pesticides, fertilizers and treated wood each carry their own registration question the writer must verify with the relevant Chinese authority and cite. The commercial trap is the rest of the range: planters, furniture, grills and gas appliances are bulky, seasonal and freight-heavy, so block 4 should run the volumetric weight math and show that a garden brand's China business is usually the small, dense, giftable end of its catalogue. Block 5 should say the honest thing, which is that a full garden range needs a domestic distribution partner and a general trade route rather than a cross-border store.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W18 · TUE · ANCHOR
 
@@ -854,14 +877,15 @@ Block 3 carries this, because half of what a garden brand sells cannot cross the
 **CTA.** Run the first-year calculator for your category under both routes.
 **Do not.** Do not state the cross-border transaction and annual purchase limits, the composite tax rate, or the positive list category count from memory or from a competitor page. Each one is verified live and cited, with the check date visible. Do not present cross-border as the beginner option and general trade as the grown-up one; the piece is a cost comparison and the recommendation has to fall out of the numbers.
 
-## W18 · WED · LEDGER A
+---
 
-**Title:** What it costs to sell toys and games in China
-**Word count:** 1,100 to 1,400
+## W18 · WED · LEDGER B
 
-Block 3 is the load-bearing block, because toys is a certification category. The writer must verify which toy types fall under China's mandatory product certification scheme, what a cross-border sale does and does not exempt, and how age grading and warning text have to appear, citing SAMR or the certification body directly rather than restating a summary found on an agency blog. Two more traps to name: battery-powered toys inherit air freight restrictions that change the landed cost model, and licensed character product needs its China territory rights confirmed before a listing goes live, because platform IP complaints on licensed toys are fast and unforgiving. Block 4 should show a low average order value fighting a fixed cost per order, and block 5 should say that toys usually needs bundling or a gifting angle before the unit economics work.
+**Title:** How hotel groups actually reach Chinese travellers
+**Word count:** 1,200 to 1,500
+**Proof.** Marriott, including the published Tmall Super Brand Day and Bonvoy enrolment figures. Channels: Fliggy and Ctrip, WeChat mini programme for direct booking, RedNote for consideration, and the loyalty programme as the actual asset. This is the one Ledger B with a marketplace component, so it can carry a partial fee table for Fliggy.
 
-**Proof.** None available. Use the block 6 honesty line.
+---
 
 ## W19 · TUE · ANCHOR
 
@@ -889,6 +913,8 @@ Block 3 is the load-bearing block, because toys is a certification category. The
 **Do not.** Do not quote deposit or commission figures without pulling them from Douyin's current published merchant rules and citing them, with a visible check date, because these move.
 **Territory guard.** Creator seeding, agency-run KOL programs and daily content production belong to TheRedScroll, so the content cost section prices the work as a line item and links to /social-in-china instead of pitching it.
 
+---
+
 ## W19 · WED · LEDGER A
 
 **Title:** What it costs to sell stationery and office products in China
@@ -897,6 +923,8 @@ Block 3 is the load-bearing block, because toys is a certification category. The
 Block 4 carries this one because stationery is the clearest case in the whole ledger series of a category killed by cost per order. A single notebook or pen cannot absorb cross-border parcel cost, so the unit economics block has to work in bundles and sets from the first line and show the average order value the category needs before it clears breakeven. The regulatory trap is student stationery: products aimed at school-age users fall under a national safety standard the writer must verify and cite, and solvent-based markers and correction fluid raise a dangerous goods question at air freight booking. Block 5 should conclude that stationery works as a gifting and design-led play with a strong set proposition, and that a plain functional range should not open a store at all.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W20 · TUE · ANCHOR
 
@@ -923,6 +951,8 @@ Block 4 carries this one because stationery is the clearest case in the whole le
 **CTA.** Run the Tmall Global first-year calculator before you commit to a launch date.
 **Do not.** Do not present the timeline as a guarantee. Say which steps are inside the brand's control and which sit in a platform review queue whose duration nobody outside Alibaba can promise. Do not describe the store opening as a marketing launch; the marketing sequence is a separate piece and this one stops at first orders.
 
+---
+
 ## W20 · WED · LEDGER A
 
 **Title:** What it costs to sell musical instruments in China
@@ -931,6 +961,8 @@ Block 4 carries this one because stationery is the clearest case in the whole le
 Block 3 carries this, and the trap is wood. Instruments containing rosewood, ebony or other listed species raise a CITES documentation question on every single shipment, and the writer must verify the current listing status and the permit process with the relevant authority and cite it, because a guitar held at customs for a missing certificate is the most common failure in this category. Second trap: digital pianos, amplifiers and anything with a mains power supply pull in electrical certification, and wireless instrument gear pulls in radio type approval. Block 4 should show that oversized, fragile freight plus a high average order value makes this a category where returns and damage rates decide the margin, and block 5 should point toward a specialist dealer relationship rather than a marketplace-first plan for large instruments.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W21 · TUE · ANCHOR + ASSET
 
@@ -957,6 +989,8 @@ Block 3 carries this, and the trap is wood. Instruments containing rosewood, ebo
 **CTA.** Book a pre-shipment label and document review before your first inbound.
 **Do not.** Do not state a single labeling requirement, font size, mandatory field, standard number or certificate validity as fact. Every one is verified against the current official source and cited with the date checked, and the piece carries a visible line saying requirements change and the reader should confirm before shipping. Do not write this as a general compliance essay; the value is entirely in the per-category table.
 
+---
+
 ## W21 · WED · LEDGER A
 
 **Title:** What it costs to sell cleaning and household products in China
@@ -965,6 +999,8 @@ Block 3 carries this, and the trap is wood. Instruments containing rosewood, ebo
 Block 3 carries this one, because chemistry decides everything downstream. Detergents, disinfectants and anything with an antibacterial claim sit under registration and filing regimes the writer must verify and cite, and a product that makes a disinfection claim is a different regulatory object from the same liquid sold as a cleaner. The operational trap is freight: liquids, aerosols and flammable formulations face air transport restrictions and hazardous goods classification, which pushes the category to sea freight and general trade and makes the replenishment cycle long. Block 4 should show a low average order value against heavy, restricted freight and be honest that this category rarely clears breakeven as a cross-border store without a multi-product basket.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W22 · TUE · ANCHOR
 
@@ -991,6 +1027,8 @@ Block 3 carries this one, because chemistry decides everything downstream. Deter
 **CTA.** Run the JD Worldwide first-year calculator with your category and target GMV.
 **Do not.** Do not carry any deposit, annual fee or commission figure over from an older TheChinaPath piece or a competitor page. Pull them from JD's current published terms, cite them, and stamp the check date on the table. Do not let the piece become a JD versus Tmall comparison; that is the week 26 anchor, and this one links to it rather than duplicating it.
 
+---
+
 ## W22 · WED · LEDGER A
 
 **Title:** What it costs to sell home and kitchen products in China
@@ -999,6 +1037,8 @@ Block 3 carries this one, because chemistry decides everything downstream. Deter
 Blocks 2 and 3 share the weight here, because home and kitchen is a category where the fee table is straightforward and the route question splits the catalogue in two. Anything with a plug carries an electrical certification and a 220V question, and anything that touches food carries a food contact material requirement, both of which the writer must verify and cite rather than summarize, while textiles and non-powered kitchenware move cross-border with no such gate. The disambiguation rule from the week 14 anchor applies in full: the opening 60 words must make clear this is about selling a foreign home and kitchen brand into China, not about sourcing from Chinese factories, and the piece links back to the week 14 anchor in the first two paragraphs. Block 5 should say Tmall Global for brand-led ranges and JD Worldwide where delivery speed and appliance credibility matter more than brand storytelling.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W23 · TUE · ANCHOR + REPORT
 
@@ -1025,6 +1065,8 @@ Blocks 2 and 3 share the weight here, because home and kitchen is a category whe
 **CTA.** Get the maintained fee sheet and the update notice when a platform moves a rate.
 **Do not.** Do not publish a single fee figure without a footnote pointing at the platform's own current terms, and do not fill a gap with a competitor's number or an estimate; leave the cell marked "not published" instead. Do not write this as a one-time article. The page states its update cadence, carries a changelog, and every internal reference to it points here rather than restating the figures elsewhere.
 
+---
+
 ## W23 · WED · LEDGER A
 
 **Title:** What it costs to sell outdoor and sports gear in China
@@ -1033,6 +1075,8 @@ Blocks 2 and 3 share the weight here, because home and kitchen is a category whe
 Block 5 carries this one, because outdoor is the category where the platform verdict genuinely flips depending on which half of the catalogue leads. Apparel and packs run cleanly on Tmall Global with a brand story, while technical hardware, batteries, radio devices and anything with a protective claim need the route checked first, so the fee table in block 2 has to be read alongside the compliance answer rather than ahead of it. The specific trap to name: a GPS watch, a headlamp with a lithium cell and a camping stove each fail at a different step, radio type approval, air freight classification and fuel restriction, and all three are verify-and-cite items. Link back to the week 15 anchor in the first two paragraphs, and keep the sourcing disambiguation in the opening lines.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W24 · TUE · ANCHOR
 
@@ -1059,6 +1103,9 @@ Block 5 carries this one, because outdoor is the category where the platform ver
 **CTA.** Request a Compass shortlist of vetted pet category distributors.
 **Do not.** Do not state the pet food registration requirement, the quarantine permit process, or any ingredient restriction as settled fact. Each is verified against the current requirement and cited.
 **Territory guard.** Pet is a category where community and creator content drives demand, and that work sits with TheRedScroll, so the piece names the pattern and links to /social-in-china rather than describing seeding as a service offered here.
+**Link forward.** The W06 Ledger on what it costs to sell pet food in China ships first. Link to it from section 2 with descriptive anchor text, and add the reciprocal link from that Ledger back to this page.
+
+---
 
 ## W24 · WED · LEDGER A
 
@@ -1068,6 +1115,8 @@ Block 5 carries this one, because outdoor is the category where the platform ver
 Block 3 carries this by a distance, because consumer electronics stacks three separate approvals: mandatory product certification for the device class, radio type approval for anything with wireless, and a network access requirement for certain connected devices, all of which the writer must verify and cite with the issuing body named. The second trap is shipping and after-sales: lithium batteries carry air freight documentation requirements, and China's consumer repair and replacement obligations mean a brand needs a domestic service answer before it lists, which most cross-border sellers discover after their first defect. Block 4 should show a strong average order value fighting a high return rate and a real warranty liability, and block 5 should point to JD Worldwide first for the delivery and after-sales credibility the category is judged on.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W25 · TUE · ANCHOR
 
@@ -1094,6 +1143,8 @@ Block 3 carries this by a distance, because consumer electronics stacks three se
 **CTA.** Request a Compass shortlist before you sign anything exclusive.
 **Do not.** Do not give legal advice or draft clause language. The piece explains what each clause does commercially and tells the reader to have a China-qualified lawyer draft and review, and it says so in the first section rather than in a footer disclaimer. Do not treat the distributor as an adversary throughout; the honest position is that a well-drafted agreement protects both sides and a one-sided one gets ignored in practice.
 
+---
+
 ## W25 · WED · LEDGER A
 
 **Title:** What it costs to sell coffee and specialty food in China
@@ -1102,6 +1153,8 @@ Block 3 carries this by a distance, because consumer electronics stacks three se
 Block 3 carries this one, and it is the longest block in the piece: overseas facility registration, import record filing, the Chinese label and the remaining shelf life rule together decide whether this category can trade at all, and every one of them is a verify-and-cite item sourced to GACC or SAMR. The commercial trap is shelf life against replenishment time, because a product with a short window loses most of its sellable life to freight and clearance, which is what turns a healthy margin into a write-off. Block 4 should show the freshness-driven inventory model, small frequent shipments at a higher per-unit freight cost, and block 5 should recommend cross-border to test demand and general trade once volume supports a domestic importer. Link back to the week 17 anchor early.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W26 · TUE · ANCHOR
 
@@ -1128,15 +1181,15 @@ Block 3 carries this one, and it is the longest block in the piece: overseas fac
 **CTA.** Run all three calculators with the same category and target GMV and compare the totals.
 **Do not.** Do not declare an overall winner. This query is held by pages that hedge, and the way to beat them is to answer per category and per buyer behavior, with a named condition that flips each recommendation. Do not restate the fee tables from the week 19, 22 and 23 pieces at length; summarize, cite, and link, so the benchmark stays the single source that gets updated.
 
-## W26 · WED · LEDGER B
+---
 
-**Title:** How professional services and consulting reach clients in China
+## W26 · WED · LEDGER A
+
+**Title:** What it costs to sell bakery and food ingredients in China
 **Word count:** 1,100 to 1,400
 
-This is a Ledger B, so the channel table replaces the fee table and does the heaviest lifting: one row each for WeChat official account and long-form articles, RedNote, industry trade shows and conferences, direct outbound through introductions, trade association and chamber membership, and paid search, with what each reaches, monthly cost to run, cost per qualified lead, and who owns the relationship when the engagement ends. The licensing constraint in block 3 is the real trap: a foreign company cannot invoice a Chinese client without a local entity or a compliant arrangement, so the writer must verify the current position on business scope, fapiao issuance and cross-border payment for services, and cite it, because a signed contract the client cannot expense is a dead deal. Block 4 replaces unit economics with cost per qualified lead and sales cycle length, and should be honest that a China services sale is measured in quarters and that the relationship, not the channel, closes it.
-**Territory guard.** Baidu SEO, website build and hosting sit with ChinaWebFoundry and daily content and community sit with TheRedScroll, so those rows in the channel table name the cost and link out rather than describing the work as a service offered here.
-
-**Proof.** None available. Use the block 6 honesty line.
+This one is partly B2B, so block 5 splits: marketplace for consumer-facing SKUs, distributor for foodservice. Say so plainly, it is the honest answer and it links to `/enter-china/distribution`.
+**Proof.** Master Martini, Kerry DaVinci Gourmet.
 
 ---
 
@@ -1166,6 +1219,8 @@ This is a Ledger B, so the channel table replaces the fee table and does the hea
 **Do not.** Do not write a generic festival explainer that opens with the history of 618 and JD's anniversary. Start at T-100 and stay operational. Do not turn the creator workstream into a how-to on seeding and creator relationship building.
 **Territory guard.** The creative and creator workstreams are named as dependencies with owners and deadlines only. Creator seeding, community management and daily content production hand off to TheRedScroll. One line, in the T-45 section.
 
+---
+
 ## W27 · WED · LEDGER A
 
 **Title:** What it costs to sell colour cosmetics in China
@@ -1174,6 +1229,8 @@ This is a Ledger B, so the channel table replaces the fee table and does the hea
 Blocks 3 and 4 carry this one. Colour cosmetics is where the shade count destroys the model: a lipstick line is not one product, it is twenty SKUs, and the filing, the Chinese label, the test report and the minimum inbound quantity apply per shade, so a range that looks affordable at line level is brutal at SKU level. Writer must verify and cite the current NMPA position on whether colour cosmetics fall under general filing or special registration, whether cross-border sales change that obligation, and what the animal testing exemption currently requires, then build block 4 on a per-shade cost rather than a per-line cost. Show the breakeven twice: full range, and a five-shade launch set. Link forward to the W35 beauty anchor as the category-wide view.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W28 · TUE · ANCHOR
 
@@ -1201,6 +1258,8 @@ Blocks 3 and 4 carry this one. Colour cosmetics is where the shade count destroy
 **Do not.** Do not publish a step-by-step account registration walkthrough. Every incumbent already ranks for that and it is the wrong buyer. Do not quote a single number for "a WeChat account"; the whole value of this piece is the split.
 **Territory guard.** Content production, community management and ongoing editorial for the account are named as recurring cost lines with a band, then handed to TheRedScroll. ICP filing and hosting for anything outside the mini program hand to ChinaWebFoundry. One line each.
 
+---
+
 ## W28 · WED · LEDGER A
 
 **Title:** What it costs to sell personal care and body products in China
@@ -1209,6 +1268,8 @@ Blocks 3 and 4 carry this one. Colour cosmetics is where the shade count destroy
 Block 4 carries this one, because personal care is the category where physics beats strategy: body wash and body lotion ship heavy and sell cheap, so freight and bonded handling eat a share of order value that would be a rounding error on a serum. Build the unit economics on chargeable weight, not on units, and show the basket size at which a cross-border order stops losing money. Writer must verify and cite where the boundary sits between a product regulated as a cosmetic and one treated as an ordinary consumer good in this category, since that classification changes the filing and label work in block 3, and must confirm the current cross-border positive list status for body and bath items. Block 5 verdict should be blunt about bundling and multi-unit packs as the only route to a workable order value.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W29 · TUE · ANCHOR
 
@@ -1235,14 +1296,17 @@ Block 4 carries this one, because personal care is the category where physics be
 **CTA.** Shortlist distributors in Compass who already hold registration records in your subcategory.
 **Do not.** Do not state any ingredient or claim rule as settled fact. Every regulatory line in this piece is the writer's to verify, cite and date. Do not imply cross-border is a loophole; frame it as a channel with a defined boundary.
 
+---
+
 ## W29 · WED · LEDGER A
 
-**Title:** What it costs to sell oral care in China
+**Title:** What it costs to sell packaged food in China
 **Word count:** 1,100 to 1,400
 
-Block 3 carries this one. Oral care is a classification trap: the regulatory treatment of toothpaste changed, and whether a product is handled as a cosmetic, an ordinary consumer good, or something with an efficacy claim depends on what the pack says, so a whitening or anti-sensitivity claim can pull an otherwise simple SKU into a heavier filing and substantiation path. Writer must verify and cite the current rule set governing toothpaste specifically, including any filing or record requirement and any efficacy substantiation obligation for whitening and gum health claims, and must show the cost difference in block 4 between a plain-claim SKU and a claims SKU. Block 5 should say which claims are worth paying for at this category's order value and which are not.
+Block 3 leads: cross-border positive list status, shelf-life-on-arrival rule, and Chinese labelling. This is the category where shipments actually get stopped, so the route block is the reason to read the page.
+**Proof.** Mission Foods.
 
-**Proof.** None available. Use the block 6 honesty line.
+---
 
 ## W30 · TUE · ANCHOR
 
@@ -1270,6 +1334,8 @@ Block 3 carries this one. Oral care is a classification trap: the regulatory tre
 **Do not.** Do not write a listicle of RedNote content formats. Do not present creator marketing as the service on offer; this piece is about platform strategy, storefront and commerce.
 **Territory guard.** Creator seeding, note production and community management are named as required inputs with a cost band, then handed to TheRedScroll. One line, in section five.
 
+---
+
 ## W30 · WED · LEDGER A
 
 **Title:** What it costs to sell apparel in China
@@ -1278,6 +1344,8 @@ Block 3 carries this one. Oral care is a classification trap: the regulatory tre
 Block 4 carries this one, and the line that decides it is returns. Apparel is the category where a healthy gross margin dies at the return rate, so the unit economics section has to model cost per delivered order at three return rates and show what happens to breakeven GMV at each, including the cost of a returned cross-border unit that cannot be resold from a bonded warehouse. Writer must verify and cite the current Chinese textile labelling and fibre content requirements, including whether a test report is needed and who can issue it, and must confirm current cross-border positive list treatment for garments. Block 5 should turn on assortment depth: a size-and-colour matrix multiplies SKU count faster than any other category on this ledger.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W31 · TUE · ANCHOR
 
@@ -1305,6 +1373,8 @@ Block 4 carries this one, and the line that decides it is returns. Apparel is th
 **Do not.** Do not restate the statute section by section. The reason to write this is that every ranking page reads like a law firm memo and none of them tell an operator what to change on Monday. Do not offer a legal opinion; every rule statement carries a citation and a checked date.
 **Territory guard.** ICP filing, hosting location and anything about where a corporate website is served hand off to ChinaWebFoundry. One line, in section two.
 
+---
+
 ## W31 · WED · LEDGER A
 
 **Title:** What it costs to sell jewellery in China
@@ -1313,6 +1383,8 @@ Block 4 carries this one, and the line that decides it is returns. Apparel is th
 Blocks 2 and 3 carry this one together. Jewellery sits in the platform tier where deposits and category qualification are heavier than the beauty and apparel numbers most brands have seen quoted, and the route is complicated by precious metal purity verification and by tax treatment that differs by material and price point. Writer must verify and cite the current platform deposit and commission tiers for fine jewellery versus fashion jewellery on Tmall Global and JD Worldwide, the current requirement for purity or hallmark testing and who issues an accepted report, and whether consumption tax applies to any item type in this category. Block 4 should model a low-volume, high-order-value business, where the fixed annual platform cost is the number that decides everything, and block 5 should name the annual GMV below which no marketplace flagship makes sense.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W32 · TUE · ANCHOR
 
@@ -1339,6 +1411,8 @@ Blocks 2 and 3 carry this one together. Jewellery sits in the platform tier wher
 **CTA.** Build a shortlist of alcohol importers in Compass, filtered by the provinces you actually need.
 **Do not.** Do not write the "China loves wine" market-size opener. The incumbent at position one already owns that piece and it is not what a brand with a shipment to price needs. Do not assert a single tax rate without a citation and a date.
 
+---
+
 ## W32 · WED · LEDGER A
 
 **Title:** What it costs to sell watches in China
@@ -1347,6 +1421,8 @@ Blocks 2 and 3 carry this one together. Jewellery sits in the platform tier wher
 Blocks 3 and 5 carry this one. Watches carry a tax exposure that most consumer categories do not, and the writer must verify and cite whether consumption tax applies above a stated retail price threshold, what that threshold currently is, and how it interacts with the cross-border versus general trade choice, because that single line moves the delivered cost by more than the platform commission does. The second trap is price policing: a watch brand with grey market supply already in China is competing against its own product at a lower price, and block 4 should model that by showing cost per order at both the intended price and the observed market price. Block 5 verdict should turn on whether the brand can service and authenticate in China, since after-sales capability, not platform choice, is what closes the sale at this order value.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W33 · TUE · ANCHOR + ASSET
 
@@ -1374,6 +1450,8 @@ Blocks 3 and 5 carry this one. Watches carry a tax exposure that most consumer c
 **Do not.** Do not slide into a how-to on producing the content. The value here is the load, the count and the owner. Do not present the numbers as universal; state that they come from a named portfolio with a stated size.
 **Territory guard.** Daily content production, editorial calendars and community management hand off to TheRedScroll. This piece specifies the requirement and the owner, not the production service. One line, in section six.
 
+---
+
 ## W33 · WED · LEDGER A
 
 **Title:** What it costs to sell luxury leather goods in China
@@ -1382,6 +1460,8 @@ Blocks 3 and 5 carry this one. Watches carry a tax exposure that most consumer c
 Block 3 carries this one, and the specific trap is material. Exotic skins pull a handbag into wildlife trade documentation, and any item above a retail threshold may attract consumption tax, so two visually identical bags can land at very different costs depending on the leather and the price tag. Writer must verify and cite the current CITES documentation requirement for exotic-skin goods entering China, the consumption tax position for luxury leather items and its threshold, and whether the cross-border channel changes either. The second trap is counterfeit exposure: block 5 should treat platform brand protection enrolment and authorised-channel proof as a cost line, not an afterthought, because an unpoliced listing environment sets your effective price. Pairs with the W43 luxury anchor; link forward.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W34 · TUE · ANCHOR
 
@@ -1408,6 +1488,8 @@ Block 3 carries this one, and the specific trap is material. Exotic skins pull a
 **CTA.** Model your own crossover point with the Tmall Global setup and run calculator.
 **Do not.** Do not write an anti-TP piece; the incumbents at one and two are TPs and the honest answer is that TPs win below the crossover. Do not quote fee percentages without sourcing them or presenting them as observed bands.
 
+---
+
 ## W34 · WED · LEDGER A
 
 **Title:** What it costs to sell medical devices and home diagnostics in China
@@ -1416,6 +1498,8 @@ Block 3 carries this one, and the specific trap is material. Exotic skins pull a
 Block 3 is the whole piece. Everything in this category turns on device classification, because a class I product and a class II or III product live in different worlds: one may be sellable through a normal route, the other needs a registration certificate held by a qualified entity, and the platform will demand licence documentation from the seller before the store opens. Writer must verify and cite the current NMPA device classification framework, which classes are and are not eligible on the cross-border positive list, what registration certificate and operating licence the platform requires from a cross-border seller, and realistic timelines for each class. Block 4 should show that for a class II or III device, the compliance timeline, not the marketing budget, is the dominant year one cost, and block 5 should say plainly which brands should not start here at all.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W35 · TUE · ANCHOR
 
@@ -1443,6 +1527,8 @@ Block 3 is the whole piece. Everything in this category turns on device classifi
 **Do not.** Do not open with market size or a growth statistic; the incumbent at position one owns that framing and it is a research page, not an operator page. Do not treat beauty as one category anywhere in the piece. Link back to the W2 ledger for the facial skincare cost detail rather than repeating it, and forward to the W27 colour cosmetics ledger and the W36 sun care ledger.
 **Territory guard.** Creator seeding and content production appear only as budget lines in section five, with a hand-off to TheRedScroll. One line.
 
+---
+
 ## W35 · WED · LEDGER A
 
 **Title:** What it costs to sell fragrance in China
@@ -1451,6 +1537,8 @@ Block 3 is the whole piece. Everything in this category turns on device classifi
 Blocks 3 and 4 carry this one, and the trap is logistics, not regulation. Alcohol-based fragrance is a restricted good for air transport and for some bonded warehouse handling, which limits carrier choice, raises freight cost per unit and can rule out direct mail fulfilment entirely, so the route section has to lead with shipping mode before it gets to filing. Writer must verify and cite the current dangerous goods handling rules for alcohol-based cosmetics in cross-border ecommerce, whether bonded warehouses in the main pilot zones accept them and under what conditions, and the current filing path for fragrance as a cosmetic. Block 4 should show cost per order at both sea-freight-to-bonded and direct mail, since for this category the gap between the two decides the business.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W36 · TUE · ANCHOR + REPORT
 
@@ -1477,6 +1565,8 @@ Blocks 3 and 4 carry this one, and the trap is logistics, not regulation. Alcoho
 **CTA.** Get the full 2027 benchmark report, with the distribution, the category cuts and the methodology.
 **Do not.** Do not present modelled costs as observed outcomes anywhere in the piece; the credibility of the whole asset depends on that distinction being stated in the first three hundred words. Do not include any pricing for TheChinaPath's own services in the cost tables; agency cost appears as a market band with a stated source basis.
 
+---
+
 ## W36 · WED · LEDGER A
 
 **Title:** What it costs to sell sun care in China
@@ -1485,6 +1575,8 @@ Blocks 3 and 4 carry this one, and the trap is logistics, not regulation. Alcoho
 Block 3 carries this one, and it is the single most expensive block on any beauty ledger. Sunscreen is treated more heavily than ordinary skincare, which means a registration path rather than a simple filing, an SPF and PA test result that a Chinese authority will accept, and a lead time long enough to miss an entire selling season if the clock starts in spring. Writer must verify and cite the current classification of sunscreen under the special cosmetics regime, what efficacy testing is required and whether an overseas test report is accepted, and the realistic approval timeline, then build block 4 around the fact that this compliance cost is fixed per SKU and must be amortised across a small hero range. Block 5 verdict: launch one or two SPF SKUs, not a range, and start the clock a full season ahead.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W37 · TUE · ANCHOR
 
@@ -1512,6 +1604,8 @@ Block 3 carries this one, and it is the single most expensive block on any beaut
 **Do not.** Do not repeat the 100-day plan; link back to it and stay inside the three-week window. Do not promise recovery moves that require a platform registration that has already closed.
 **Territory guard.** Livestream host booking and creator activation appear as execution dependencies with owners and deadlines. Creator relationships and content production hand off to TheRedScroll. One line, in section four.
 
+---
+
 ## W37 · WED · LEDGER A
 
 **Title:** What it costs to sell hair care in China
@@ -1520,6 +1614,8 @@ Block 3 carries this one, and it is the single most expensive block on any beaut
 Blocks 3 and 4 split this one. Hair care looks like a single category but splits on claims: a plain shampoo and an anti-dandruff or anti-hair-loss product may sit under different regulatory paths, and the claim that makes the product sellable is exactly the claim that makes it expensive to file. Writer must verify and cite where anti-dandruff and hair-loss claims currently fall between general cosmetics filing and special cosmetics registration, what substantiation is required, and whether cross-border changes it. The second problem is weight: shampoo and conditioner ship heavy against a modest order value, so block 4 must model chargeable weight per order and show the bundle size that makes the maths work, the same physics problem as the personal care ledger. Block 5 should recommend leading with the treatment SKU, not the wash SKU.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W38 · TUE · ANCHOR + ASSET
 
@@ -1547,14 +1643,19 @@ Blocks 3 and 4 split this one. Hair care looks like a single category but splits
 **CTA.** Download the twelve-question sheet, then build a shortlist in Compass filtered by the coverage you actually need.
 **Do not.** Do not write generic partner-selection advice that would apply in any market. Every question must be China-specific, and the ecommerce rights and licence-holding questions carry the piece. Do not name or characterise real distributors.
 
-## W38 · WED · LEDGER A
+---
 
-**Title:** What it costs to sell pet food in China
+## W38 · WED · LEDGER B
+
+**Title:** How professional services and consulting reach clients in China
 **Word count:** 1,100 to 1,400
 
-Block 3 carries this one and nothing else comes close. Pet food entering China is a facility-level question before it is a product-level one: the manufacturing plant itself has to be registered and approved, which means the cost and the timeline sit with your producer, not with you, and a brand using a contract manufacturer that has never registered is looking at a multi-quarter delay it cannot shorten with budget. Writer must verify and cite the current GACC facility registration requirement for imported pet food, the quarantine and inspection permit process, whether cross-border ecommerce changes the requirement, and the current positive list status for pet food categories. Block 4 should be built on bulk: dry food is heavy and priced low, so model the pack size and multi-pack structure that make an order profitable. Pairs with the W24 pet anchor; link back.
+This is a Ledger B, so the channel table replaces the fee table and does the heaviest lifting: one row each for WeChat official account and long-form articles, RedNote, industry trade shows and conferences, direct outbound through introductions, trade association and chamber membership, and paid search, with what each reaches, monthly cost to run, cost per qualified lead, and who owns the relationship when the engagement ends. The licensing constraint in block 3 is the real trap: a foreign company cannot invoice a Chinese client without a local entity or a compliant arrangement, so the writer must verify the current position on business scope, fapiao issuance and cross-border payment for services, and cite it, because a signed contract the client cannot expense is a dead deal. Block 4 replaces unit economics with cost per qualified lead and sales cycle length, and should be honest that a China services sale is measured in quarters and that the relationship, not the channel, closes it.
+**Territory guard.** Baidu SEO, website build and hosting sit with ChinaWebFoundry and daily content and community sit with TheRedScroll, so those rows in the channel table name the cost and link out rather than describing the work as a service offered here.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W39 · TUE · ANCHOR
 
@@ -1580,6 +1681,8 @@ Block 3 carries this one and nothing else comes close. Pet food entering China i
 **Internal links.** /tools/tmall-global-setup-and-run, /grow-in-china/cross-border-ecommerce, /enter-china/cross-border-setup, /enter-china/market-entry-consulting, /enter-china/distribution
 **CTA.** Model cost per order on both channels with the Tmall Global setup and run calculator.
 **Do not.** Do not frame Classic as the mature, serious option and Global as a starter channel. The incumbent holding both top positions writes it that way and it is wrong for most categories. Do not state any Tmall Classic entity or licence requirement without a citation and a date checked.
+
+---
 
 ## W39 · WED · LEDGER A
 
@@ -1618,6 +1721,8 @@ Blocks 4 and 2 carry this one, because unlike pet food there is no facility regi
 **Do not.** Do not turn the log into a 618 explainer with a history of Jingdong; the format is the value and the first paragraph must already be inside an operating hour. Do not name or make identifiable any brand whose store is in the log, including by category plus country of origin.
 **Territory guard.** The livestream host handover and any KOL slot appear in the log only as an operating cost and a schedule dependency. Anything about selecting hosts, briefing creators or seeding content links out to TheRedScroll and is not explained here.
 
+---
+
 ## W40 · WED · LEDGER A
 
 **Title:** What it costs to sell health supplements in China
@@ -1628,6 +1733,8 @@ Block 3 carries this entire page. Supplements are the category where the route d
 **Proof.** None available. Use the block 6 honesty line.
 
 **Link back.** The W29 anchor on selling supplements in China without a Blue Hat is the sibling page. Link to it from block 3 with descriptive anchor text, and add a reciprocal link from that anchor to this ledger.
+
+---
 
 ## W41 · TUE · ANCHOR
 
@@ -1653,6 +1760,9 @@ Block 3 carries this entire page. Supplements are the category where the route d
 **Internal links.** /enter-china/cross-border-setup, /compass/shortlist, /enter-china/distribution, /tools/tmall-global-setup-and-run, /enter-china/branding-localisation
 **CTA.** Request a Compass shortlist of vetted maternity and baby distributors.
 **Do not.** Do not write a single set of rules for the whole category; the incumbents' pages fail exactly there and the matrix is how this page beats them. Do not assert any registration requirement, timeline or fee without a cited primary source and an access date.
+**Link forward.** The W08 Ledger on what it costs to sell baby care and hygiene products in China ships first. Link to it from section 2 with descriptive anchor text, and add the reciprocal link from that Ledger back to this page.
+
+---
 
 ## W41 · WED · LEDGER A
 
@@ -1662,6 +1772,8 @@ Block 3 carries this entire page. Supplements are the category where the route d
 Blocks 3 and 4 split the weight here. Sports nutrition is the category where the ingredient, not the product, decides the route: dairy-derived protein and animal-origin ingredients pull the shipment into a different regime from a plant protein or an amino acid powder, and the writer must verify and cite the current requirements for overseas manufacturer or facility registration for food exporters to China, which ingredient classes trigger it, and whether the products in scope appear on the cross-border positive list. Block 4 is the second trap and the one competitors skip: a two kilogram tub is a freight problem, so cost per order on a cross-border route can eat a fifth of the order value, and the ledger must show that number rather than describe it. Note in block 5 that this is one of the few categories where bulk weight, not regulation, is what flips the verdict toward general trade.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W42 · TUE · ANCHOR + REPORT
 
@@ -1688,6 +1800,8 @@ Blocks 3 and 4 split the weight here. Sports nutrition is the category where the
 **CTA.** Download the full 618 2027 store-level report.
 **Do not.** Do not publish any figure before the anonymisation and client clearance pass is signed off; a row with fewer than five stores, a category with a single dominant brand, or any combination of country of origin plus category that identifies a client does not ship. Do not compare against platform-published totals as if the samples were equivalent; state the method difference plainly and cite any third-party total you reference.
 
+---
+
 ## W42 · WED · LEDGER A
 
 **Title:** What it costs to sell wine in China
@@ -1698,6 +1812,8 @@ Block 4 carries this one, with block 3 close behind. Wine is the category where 
 **Proof.** None available. Use the block 6 honesty line.
 
 **Link back.** Pairs with the W32 wine and spirits anchor. Link from block 5, and add the reciprocal link.
+
+---
 
 ## W43 · TUE · ANCHOR
 
@@ -1725,6 +1841,8 @@ Block 4 carries this one, with block 3 close behind. Wine is the category where 
 **Do not.** Do not write about Chinese luxury consumer psychology; that is the incumbent page and it converts nothing. Do not assert current cross-border personal transaction limits or duty treatment for high-value items from memory; verify against a primary source and cite it with an access date.
 **Territory guard.** RedNote and Douyin appear here only as storefronts with a transaction attached. Creator seeding, community building and daily content for luxury accounts belong to TheRedScroll and get a single outbound link, not a section.
 
+---
+
 ## W43 · WED · LEDGER A
 
 **Title:** What it costs to sell spirits in China
@@ -1733,6 +1851,8 @@ Block 4 carries this one, with block 3 close behind. Wine is the category where 
 Block 3 and block 5 carry this. Spirits differ from wine on two axes that change the whole page: the tax treatment on distilled alcohol, which the writer must verify and cite alongside the labelling requirements and any importer licensing condition, and the platform side, where alcohol carries advertising, livestream and promotion restrictions that limit the tactics a brand can actually run once the store is open. Instruct the writer to verify and cite each platform's current published policy on alcohol listings and alcohol promotion rather than describing it from general knowledge. Block 4 should show cost per order on a 700ml bottle at a stated price point, because the freight and breakage line is what makes small-basket spirits sales unworkable and pushes brands toward multi-bottle sets.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W44 · TUE · ANCHOR
 
@@ -1760,6 +1880,8 @@ Block 3 and block 5 carry this. Spirits differ from wine on two axes that change
 **Do not.** Do not import consumer marketplace logic; a page that recommends Tmall to a valve manufacturer is a failed page. Do not assert what a foreign company may do without a China entity, including invoicing, hiring and contracting; frame every one of those as a point the writer verifies with a named source and cites.
 **Territory guard.** Baidu visibility and the Chinese-language website build are named as dependencies and handed to ChinaWebFoundry with one link each. This page does not explain Baidu SEO, ICP filing or hosting.
 
+---
+
 ## W44 · WED · LEDGER A
 
 **Title:** What it costs to sell beer and ready-to-drink in China
@@ -1768,6 +1890,8 @@ Block 3 and block 5 carry this. Spirits differ from wine on two axes that change
 Block 4 kills this category and the ledger should say so in the first sixty words. Beer and RTD combine low unit value, high weight, glass or can packaging and short shelf life, which is the one combination cross-border ecommerce cannot carry: cost per order exceeds a meaningful share of order value unless the basket is a case, and the breakeven GMV calculation should be run at case level to show it. Block 3 still needs work, so instruct the writer to verify and cite the labelling requirements for imported beer and pre-mixed alcoholic drinks, shelf-life declaration rules, and the platform policies on alcohol promotion. Block 5 verdict should land on general trade through an importer with cold chain and city coverage, with the flipping condition stated as a specific price point and basket size.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W45 · TUE · ANCHOR + ASSET
 
@@ -1794,6 +1918,8 @@ Block 4 kills this category and the ledger should say so in the first sixty word
 **CTA.** Run your own pre-revenue cost estimate in the combined market entry calculator.
 **Do not.** Do not publish a single headline number without the band and the basis attached; a number without a basis is what makes the competitor pages worthless and it is also what an AI assistant will misquote. Do not state any government fee, filing fee or tax figure without a cited primary source and an access date.
 
+---
+
 ## W45 · WED · LEDGER A
 
 **Title:** What it costs to sell tea and beverages in China
@@ -1802,6 +1928,8 @@ Block 4 kills this category and the ledger should say so in the first sixty word
 Block 3 carries this, and the trap is that foreign brands assume tea is culturally impossible and therefore skip the compliance question entirely, when the actual barrier is food-category paperwork. Instruct the writer to verify and cite whether the specific product form, loose leaf, tea bag, instant powder, ready to drink, is on the cross-border positive list, the shelf-life and production-date declaration rules for imported food, and whether any product with added functional ingredients crosses out of ordinary food into a registration regime. Block 4 is the second half of the page: low unit value plus low weight makes tea a viable cross-border product where beer is not, so run the breakeven at a multi-pack basket and show the repeat purchase assumption openly, since it is the whole model.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W46 · TUE · ANCHOR
 
@@ -1828,6 +1956,8 @@ Block 3 carries this, and the trap is that foreign brands assume tea is cultural
 **CTA.** Talk to us about your entry sequence before the first distributor conversation.
 **Do not.** Do not write legal advice or state the outcome of an opposition or invalidation process; every procedural claim, class structure, filing fee, examination timeline and appeal route is a verify-and-cite instruction to the writer, sourced to the Chinese trademark authority or an equivalent primary source, with an access date. Do not compete with the law firms on procedural depth; the sequencing and the cost of lateness is the ground where this page wins.
 
+---
+
 ## W46 · WED · LEDGER A
 
 **Title:** What it costs to sell auto parts and accessories in China
@@ -1836,6 +1966,8 @@ Block 3 carries this, and the trap is that foreign brands assume tea is cultural
 Block 3 carries this, and the trap is the split inside the category: a cabin air filter, a brake pad and a phone mount face completely different requirements, because safety-relevant components pull in compulsory certification while accessories generally do not. Instruct the writer to verify and cite which auto part categories fall inside the China Compulsory Certification catalogue, what the certification process involves in time and cost, and whether the cross-border route changes that answer for parts sold to a consumer rather than imported for assembly. Block 2 matters more here than in most categories because the platform picture is unusual: name in block 5 that this is a category where JD's logistics and installation network and the domestic vertical platforms carry weight that Tmall does not, and state the condition that flips it.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W47 · TUE · ANCHOR + ASSET
 
@@ -1862,6 +1994,8 @@ Block 3 carries this, and the trap is the split inside the category: a cabin air
 **CTA.** Download the twelve-month launch Gantt with dependencies.
 **Do not.** Do not present the timeline as universal; state the category assumption in the opening and mark the rows where a regulated category doubles a duration. Do not assert platform approval times or regulatory review periods from experience alone; where the timeline depends on an official processing period, instruct the writer to cite the published figure and separately label what the stores under management actually observed.
 
+---
+
 ## W47 · WED · LEDGER A
 
 **Title:** What it costs to sell bath and sanitaryware in China
@@ -1870,6 +2004,8 @@ Block 3 carries this, and the trap is the split inside the category: a cabin air
 Block 4 decides this category and block 3 supplies the trap. A basin, a shower system or a smart toilet seat is heavy, bulky and often installed rather than unboxed, so cross-border freight per order and the absence of an installation network make the marketplace route structurally weak, and the unit economics block must show cost per order on a stated product weight and dimension rather than as a percentage. On block 3, instruct the writer to verify and cite whether the products in scope fall under compulsory certification or under water-efficiency labelling requirements for sanitary products sold in China, and what documentation an importer must hold. Block 5 should say plainly that this is a distributor and project-channel category first, with the brand's own store serving as a showroom and a price reference, and name the condition that flips it toward direct.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W48 · TUE · ANCHOR
 
@@ -1897,6 +2033,8 @@ Block 4 decides this category and block 3 supplies the trap. A basin, a shower s
 **Do not.** Do not write a trends listicle; every section must end in a number that changes a budget line. Do not assert platform commission rates, ad product pricing models or policy changes from memory; each is verified against the platform's own published policy or a cited source, with the access date shown.
 **Territory guard.** Creator seeding, KOC programmes, note production and community management are named as budget lines in the table only. The how of running them belongs to TheRedScroll, which gets one outbound link. This page covers the storefront and the paid media that ends in a transaction.
 
+---
+
 ## W48 · WED · LEDGER B
 
 **Title:** What it costs to sell education and training services in China
@@ -1907,6 +2045,8 @@ This is a Ledger B: there is no marketplace route, and the licensing constraint 
 **Proof.** None available. Use the block 6 honesty line.
 
 **Block 7.** Link to /compass and /enter-china/market-entry-consulting rather than a calculator.
+
+---
 
 ## W49 · TUE · ANCHOR
 
@@ -1933,6 +2073,8 @@ This is a Ledger B: there is no marketplace route, and the licensing constraint 
 **CTA.** Compare your subcategory's first-year cost in the JD Worldwide calculator.
 **Do not.** Do not state that any specific product does or does not require certification; the writer names the product type, points to the official catalogue and instructs the reader to confirm against it, with the source cited. Do not skip after-sales; it is the section every competing page omits and it is where this category's margin actually goes.
 
+---
+
 ## W49 · WED · LEDGER A
 
 **Title:** What it costs to sell maternity products in China
@@ -1943,6 +2085,8 @@ Blocks 2 and 3 share the load, and the trap is that maternity sits at the bounda
 **Proof.** None available. Use the block 6 honesty line.
 
 **Link back.** Pairs with the W41 anchor on maternity and baby products. Link from block 1 and add the reciprocal link from the anchor.
+
+---
 
 ## W50 · TUE · ANCHOR + REPORT
 
@@ -1969,6 +2113,8 @@ Blocks 2 and 3 share the load, and the trap is that maternity sits at the bounda
 **CTA.** Download the full mid-year fee benchmark, or run your category in the calculators.
 **Do not.** Do not out-length TMO; the win is that every figure is dated, sourced and comparable to a prior edition, and their page is not. Do not carry any figure forward from the first edition without re-verifying it against the platform's current published policy this cycle; a stale number in a benchmark destroys the asset.
 
+---
+
 ## W50 · WED · LEDGER A
 
 **Title:** What it costs to sell infant formula in China
@@ -1977,6 +2123,8 @@ Blocks 2 and 3 share the load, and the trap is that maternity sits at the bounda
 Block 3 is nearly the entire page and the honest answer in block 1 may be that most brands cannot do this at all in year one. Infant formula is the most heavily regulated category in this series, and the writer must verify and cite, from primary Chinese regulatory sources, the product formula registration requirement for infant and follow-on formula, whether it applies to the cross-border channel as well as general trade, the overseas manufacturer registration requirement, the Chinese labelling rules specific to infant formula, and the current treatment of formula on the cross-border positive list. Nothing in this ledger is asserted, every requirement is presented as a sourced statement with an access date, and the page states plainly that the timeline and cost of registration, not the platform fee, is what decides entry. Block 5 verdict is a sequencing verdict rather than a platform verdict.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W51 · TUE · ANCHOR
 
@@ -2004,14 +2152,18 @@ Block 3 is nearly the entire page and the honest answer in block 1 may be that m
 **Do not.** Do not republish the year-one checklist with a new year in the title; the improvement is the deadline typing, the point-of-no-return marking and the cost of missing each one, and the piece must visibly carry both the original publication date and this year's update date. Do not state platform submission deadlines as fact this far out; instruct the writer to give last cycle's dates as the planning basis, cite them, and tell the reader to confirm against the platform's own merchant calendar when it is published.
 **Territory guard.** Creator briefing and content production schedules appear in the run table as dependencies with owners and dates. How to run them is TheRedScroll's, one link, no section.
 
+---
+
 ## W51 · WED · LEDGER A
 
-**Title:** What it costs to sell baby care and hygiene products in China
+**Title:** What it costs to sell oral care in China
 **Word count:** 1,100 to 1,400
 
-Block 3 carries this, and the specific trap is that a product marketed for children or infants can face a stricter regime than the same formulation marketed for adults. Instruct the writer to verify and cite the current Chinese regulatory treatment of children's cosmetics, including whether a separate registration or filing track and a distinct safety assessment apply, whether the cross-border route changes that, and the labelling and claims restrictions that apply to products aimed at infants. Diapers and wipes need their own check, since they may fall under different product standards from wash and skincare, and the writer should confirm and cite rather than group them. Block 4 should note that this is a high-repeat, low-ticket category, so breakeven is a subscription-like calculation and should be modelled on repeat rate, not on first order value.
+Block 3 carries this one. Oral care is a classification trap: the regulatory treatment of toothpaste changed, and whether a product is handled as a cosmetic, an ordinary consumer good, or something with an efficacy claim depends on what the pack says, so a whitening or anti-sensitivity claim can pull an otherwise simple SKU into a heavier filing and substantiation path. Writer must verify and cite the current rule set governing toothpaste specifically, including any filing or record requirement and any efficacy substantiation obligation for whitening and gum health claims, and must show the cost difference in block 4 between a plain-claim SKU and a claims SKU. Block 5 should say which claims are worth paying for at this category's order value and which are not.
 
 **Proof.** None available. Use the block 6 honesty line.
+
+---
 
 ## W52 · TUE · ANCHOR
 
@@ -2038,6 +2190,8 @@ Block 3 carries this, and the specific trap is that a product marketed for child
 **CTA.** Request a Compass shortlist, or run your route in the market entry calculator.
 **Do not.** Do not write this as a year in review; it is a decision page that happens to be evidenced by a year of publishing, and the first sixty words must contain the decision, not the retrospective. Do not restate any regulatory point from the year's pieces; link to the piece that carries the sourced version instead.
 
+---
+
 ## W52 · WED · LEDGER B
 
 **Title:** What it costs to sell industrial equipment and components in China
@@ -2050,9 +2204,6 @@ Ledger B, no marketplace route, and the load sits on the channel table and on th
 **Block 7.** Link to /compass and /enter-china/distribution.
 
 **Link back.** Pairs with the W44 B2B and industrial anchor. Link from block 1, and add the reciprocal link from the anchor.agentId: aa532f1b7bd3f8ccc (use SendMessage with to: 'aa532f1b7bd3f8ccc', summary: '<5-10 word recap>' to continue this agent)
-<usage>subagent_tokens: 85315
-tool_uses: 2
-duration_ms: 280900</usage>
 
 ---
 

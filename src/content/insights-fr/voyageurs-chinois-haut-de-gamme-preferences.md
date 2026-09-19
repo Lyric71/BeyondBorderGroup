@@ -4,6 +4,7 @@ description: "90 % des grandes fortunes chinoises veulent intensifier leurs dép
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Travel & Hospitality"
 tags: ["voyageurs chinois haut de gamme", "préférences de voyage", "consommateurs aisés", "voyage expérientiel", "sensibilité culturelle"]
 heroImage: "/Images/insights/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers.jpg"
 heroImageAlt: "Voyageur chinois haut de gamme sur une destination prestige"

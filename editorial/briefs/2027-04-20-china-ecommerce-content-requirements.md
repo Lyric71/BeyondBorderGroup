@@ -40,6 +40,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/china-ecommerce-content-requirements.md` |
 | Primary query | `china ecommerce content requirements` |
 | Difficulty | OPEN |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,100 to 2,400 (body only, per the char-count rule) |
 | Asset | `output/guides/china-ecommerce-content-requirements.md`, publishes to `/guides/china-ecommerce-content-requirements/` (Assets per month per channel, with owners) |
 

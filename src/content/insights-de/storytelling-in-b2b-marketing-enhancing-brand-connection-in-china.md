@@ -4,6 +4,7 @@ description: "Storytelling steht im Mittelpunkt des chinesischen B2B-Marketings.
 pubDate: "2024-04-16"
 author: "TheChinaPath"
 category: "Brand & Localization"
+industry: "B2B & Industrial"
 tags: ["B2B-Marketing", "Storytelling", "China-Markt", "Markenbindung", "Kundenengagement"]
 heroImage: "/Images/insights/storytelling-in-b2b-marketing-enhancing-brand-connection-in-china.webp"
 heroImageAlt: "B2B-Storytelling für Marken in China"

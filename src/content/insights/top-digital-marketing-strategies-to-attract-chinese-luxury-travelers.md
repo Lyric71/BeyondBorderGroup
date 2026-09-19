@@ -4,6 +4,7 @@ description: "Chinese luxury travelers increasingly seek authentic cultural imme
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Travel & Hospitality"
 platforms: ["WeChat"]
 tags: ["Chinese luxury travelers", "cultural immersion", "personalized travel", "digital engagement", "WeChat marketing"]
 heroImage: "/Images/insights/top-digital-marketing-strategies-to-attract-chinese-luxury-travelers.jpg"

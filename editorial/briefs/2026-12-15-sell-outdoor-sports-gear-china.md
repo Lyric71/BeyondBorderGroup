@@ -10,6 +10,7 @@ title: "Selling outdoor and sports gear into China"
 slug: sell-outdoor-sports-gear-china
 primary_query: "sell outdoor sports gear china"
 difficulty: OPEN
+industry: "Sports & Leisure"
 word_count: "1,900 to 2,300"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/sell-outdoor-sports-gear-china.md` |
 | Primary query | `sell outdoor sports gear china` |
 | Difficulty | OPEN |
+| Industry | `Sports & Leisure`, set as `industry` in the insight frontmatter |
 | Body length | 1,900 to 2,300 (body only, per the char-count rule) |
 
 ## The brief

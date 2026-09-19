@@ -4,6 +4,7 @@ description: "JD.com y un centenar de marcas ponen 10.000 millones de yuanes det
 pubDate: "2026-07-05"
 author: "Cyril Drouin"
 category: "E-Commerce"
+industry: "Electronics & Appliances"
 platforms: ["JD"]
 tags: ["JD", "prima de renovación", "electrodomésticos", "cadena de suministro", "e-commerce China"]
 heroImage: "/Images/insights/jd-double-subsidy-plan-supply-chain-play.png"

@@ -294,6 +294,59 @@ const pillarIcons: Record<string, string> = {
     '<path d="M2 4h7a3 3 0 0 1 3 3v13"/><path d="M22 4h-7a3 3 0 0 0-3 3v13"/><path d="M2 4v15h7a3 3 0 0 1 3 3"/><path d="M22 4v15h-7a3 3 0 0 0-3 3"/>',
 };
 
+const hwwPartners = [
+  {
+    key: 'yes',
+    tag: 'The generalist that said yes',
+    title: 'Takes any category, buys the traffic',
+    points: [
+      { ok: true, text: 'Can run the store' },
+      { ok: false, text: 'Spread across whatever brands will sign' },
+      { ok: false, text: 'Learns your category on your dime' },
+      { ok: false, text: 'Rents its shoppers with your ad budget' },
+    ],
+    outcome:
+      'Two years in: a tidy flagship, a big media bill, and few shoppers who come back unless an ad pulls them in.',
+  },
+  {
+    key: 'fit',
+    tag: 'The hyper-specialist we look for',
+    title: 'Lives in a few categories, owns their audience',
+    points: [
+      { ok: true, text: 'Focused on a few categories, yours among them' },
+      { ok: true, text: 'Knows the price bands, search terms, and creators that sell in it' },
+      { ok: true, text: 'Its stores and livestream rooms already pull your buyers' },
+      { ok: true, text: 'Can run the store' },
+    ],
+    outcome: 'Two years in: shoppers who keep buying after the ads go quiet.',
+  },
+];
+
+const hwwSteps = [
+  {
+    icon: 'search',
+    title: 'We find the specialist in your category',
+    body: "The search starts in Compass, our database of TPs, DPs, and distributors we've met in person. We shortlist partners that focus on your category and already sell to its buyers.",
+  },
+  {
+    icon: 'door',
+    title: 'We get you through the door',
+    body: "The strongest partners are swamped and turn most brands down. We build your pitch and help you set the investment number they'll ask for.",
+  },
+  {
+    icon: 'launch',
+    title: 'We build demand alongside them',
+    body: "Once you've signed, we run store content, eCommerce campaigns, and your social accounts with the partner. Offline events too, when they're worth it.",
+  },
+];
+
+const hwwIcons: Record<string, string> = {
+  search: '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/>',
+  door: '<path d="M14 3h5a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>',
+  launch:
+    '<path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M16 8.5a4 4 0 0 1 0 7"/><path d="M19 5.5a8 8 0 0 1 0 13"/>',
+};
+
 const allCases = await getCollection('cases', ({ data }) => !data.draft);
 const featuredCases = allCases
   .slice()
@@ -715,6 +768,148 @@ function formatInsightDate(d?: Date) {
     </div>
   </section>
 
+  {/* ---------- HOW WE WORK ---------- */}
+  <section class="section section--alt hww-section" id="how-we-work" aria-labelledby="hww-title">
+    <div class="container">
+      <header class="hww-head">
+        <span class="eyebrow">How we work</span>
+        <h2 id="hww-title" class="hww-head__title">
+          In China, the TPs that win are hyper-specialized
+        </h2>
+        <p class="hww-head__lead">
+          A TP (trade partner) runs your store on Tmall and JD. A DP does the same job on Douyin.
+          Generalists take on any category and buy traffic for it, and plenty of brands sign with
+          the first one that says yes. The ones that win go deep on a few categories and already own
+          the shoppers in them. Finding the one built around yours is our job.
+        </p>
+      </header>
+
+      <div class="hww-compare">
+        {
+          hwwPartners.map((p) => (
+            <article class={`hww-card hww-card--${p.key} home-reveal`}>
+              <span class="hww-card__tag">{p.tag}</span>
+              <h3 class="hww-card__title">{p.title}</h3>
+              <ul class="hww-card__points">
+                {p.points.map((pt) => (
+                  <li class={`hww-card__point${pt.ok ? ' is-ok' : ' is-no'}`}>
+                    <span class="hww-card__mark" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        {pt.ok ? (
+                          <polyline points="5 12.5 10 17 19 7" />
+                        ) : (
+                          <>
+                            <line x1="7" y1="7" x2="17" y2="17" />
+                            <line x1="17" y1="7" x2="7" y2="17" />
+                          </>
+                        )}
+                      </svg>
+                    </span>
+                    <span class="hww-sr">{pt.ok ? 'Yes: ' : 'No: '}</span>
+                    {pt.text}
+                  </li>
+                ))}
+              </ul>
+
+              <figure class="hww-curve">
+                <figcaption class="hww-curve__label">
+                  Store traffic when the ad budget stops
+                </figcaption>
+                <div class="hww-curve__plot">
+                  <svg
+                    class="hww-curve__svg"
+                    viewBox="0 0 240 84"
+                    preserveAspectRatio="none"
+                    role="img"
+                    aria-label={
+                      p.key === 'fit'
+                        ? 'Traffic holds after the ad budget stops'
+                        : 'Traffic falls away after the ad budget stops'
+                    }
+                  >
+                    <line class="hww-curve__stop" x1="140" y1="0" x2="140" y2="84" />
+                    {p.key === 'fit' ? (
+                      <>
+                        <path
+                          class="hww-curve__area"
+                          d="M0 62 C40 54 90 42 140 32 C175 28 205 27 240 25 L240 84 L0 84 Z"
+                        />
+                        <path
+                          class="hww-curve__line"
+                          d="M0 62 C40 54 90 42 140 32 C175 28 205 27 240 25"
+                        />
+                      </>
+                    ) : (
+                      <>
+                        <path
+                          class="hww-curve__area"
+                          d="M0 62 C40 54 90 42 140 32 C165 50 190 70 240 76 L240 84 L0 84 Z"
+                        />
+                        <path
+                          class="hww-curve__line"
+                          d="M0 62 C40 54 90 42 140 32 C165 50 190 70 240 76"
+                        />
+                      </>
+                    )}
+                  </svg>
+                  <span class="hww-curve__stop-label" aria-hidden="true">
+                    Ads stop
+                  </span>
+                </div>
+              </figure>
+
+              <p class="hww-card__outcome">{p.outcome}</p>
+            </article>
+          ))
+        }
+      </div>
+      <p class="hww-compare__note">The curves show the pattern we see, not client data.</p>
+
+      <div class="hww-how">
+        <h3 class="hww-how__title">How we find that partner for you</h3>
+        <ul class="hww-how__list">
+          {
+            hwwSteps.map((s, idx) => (
+              <li class="hww-how__item home-reveal" style={`--reveal-delay: ${idx * 80}ms;`}>
+                <span class="hww-how__icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    set:html={hwwIcons[s.icon]}
+                  />
+                </span>
+                <h4 class="hww-how__item-title">{s.title}</h4>
+                <p class="hww-how__item-body">{s.body}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="hww-foot">
+        <p class="hww-foot__stance">
+          We don't run a TP or DP team of our own, so there's no roster we need to fill. The only
+          question we ask is which partner fits your brand.
+        </p>
+        <div class="hww-foot__actions">
+          <a href="/how-we-work" class="btn btn--primary">See how we work</a>
+          <a href="/how-we-work#the-right-partner" class="btn btn--ghost">What we look for</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   {/* ---------- BEYONDCOMPASS: STANDOUT FEATURE ---------- */}
   <section class="bc-section" id="beyondcompass" data-bc-section>
     <div class="bc-bg" aria-hidden="true">
@@ -803,17 +998,12 @@ function formatInsightDate(d?: Date) {
             </span>
             <div class="bc-feature__text">
               <h3>Kept current, quarterly</h3>
-              <p>
-                The team using Compass on live projects is the same team keeping it current.
-              </p>
+              <p>The team using Compass on live projects is the same team keeping it current.</p>
             </div>
           </li>
         </ul>
 
-        <a
-          class="bc-cta"
-          href="/compass/shortlist"
-        >
+        <a class="bc-cta" href="/compass/shortlist">
           <span class="bc-cta__text">Get your shortlist</span>
           <span class="bc-cta__arrow" aria-hidden="true">
             <svg
@@ -830,7 +1020,7 @@ function formatInsightDate(d?: Date) {
           <span class="bc-cta__ring" aria-hidden="true"></span>
         </a>
         <p class="bc-tools">
-          Pricing a platform before the partner? Our <a href="/tools">free cost calculators</a> put
+          Pricing a platform before the partner? Our <a href="/tools">free budget calculators</a> put
           a first-year number on Tmall Global, JD Worldwide and Douyin.
         </p>
       </div>

@@ -4,6 +4,7 @@ description: "JD et une centaine de marques placent 10 milliards de yuans derri�
 pubDate: "2026-07-05"
 author: "Cyril Drouin"
 category: "E-Commerce"
+industry: "Electronics & Appliances"
 platforms: ["JD"]
 tags: ["JD", "prime à la reprise", "électroménager", "chaîne logistique", "e-commerce Chine"]
 heroImage: "/Images/insights/jd-double-subsidy-plan-supply-chain-play.png"

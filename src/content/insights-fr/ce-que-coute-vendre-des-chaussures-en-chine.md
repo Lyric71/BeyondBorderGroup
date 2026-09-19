@@ -5,6 +5,7 @@ pubDate: "2026-09-09"
 updatedDate: "2026-09-09"
 author: "TheChinaPath"
 category: "E-Commerce"
+industry: "Fashion & Luxury"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Chaussure", "Tmall Global", "JD Worldwide", "Douyin", "E-commerce transfrontalier", "Frais de plateforme", "Retours"]
 keyTakeaways:

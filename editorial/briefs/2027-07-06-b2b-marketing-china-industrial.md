@@ -10,6 +10,7 @@ title: "How to sell B2B and industrial products in China"
 slug: b2b-marketing-china-industrial
 primary_query: "b2b marketing china industrial"
 difficulty: MED
+industry: "B2B & Industrial"
 word_count: "2,200 to 2,400"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/b2b-marketing-china-industrial.md` |
 | Primary query | `b2b marketing china industrial` |
 | Difficulty | MED |
+| Industry | `B2B & Industrial`, set as `industry` in the insight frontmatter |
 | Body length | 2,200 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

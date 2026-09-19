@@ -1,0 +1,566 @@
+---
+/**
+ * Trends hub, every locale: the insights index minus the articles tagged with
+ * an industry (those live on the Industry Insights hub).
+ *
+ *   1. Dark hero with live counters, same system as Industry Insights.
+ *   2. Latest: the newest article large, the next three beside it.
+ *   3. Archive: search, quick topics, category tabs with a sliding indicator,
+ *      platform logo filters, sort, and a "show more" grid. Filters live in the
+ *      URL (?q, ?category, ?platform, ?sort, ?page) so a filtered view can be
+ *      shared, and older links with ?category or ?page keep working.
+ *   4. A band that sends single-category readers to Industry Insights.
+ */
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { INSIGHT_CATEGORIES, INSIGHT_INDUSTRIES, INSIGHT_PLATFORMS, industrySlug } from '../../content.config';
+import { CATEGORY_ICONS, HUB_CONFIG, PLATFORM_COLORS, TRENDS_COPY, type HubLocale } from '../../lib/insight-hubs';
+import '../../styles/insight-hubs.css';
+
+interface Props {
+  locale: HubLocale;
+}
+
+const { locale } = Astro.props;
+const cfg = HUB_CONFIG[locale];
+const c = TRENDS_COPY[locale] ?? TRENDS_COPY.en!;
+
+const all = await getCollection(cfg.collection, ({ data }) => !data.draft);
+const collator = new Intl.Collator(cfg.dateLocale);
+const posts = all
+  .filter((p) => !p.data.industry)
+  .sort((a, b) => {
+    const da = a.data.pubDate?.valueOf() ?? 0;
+    const db = b.data.pubDate?.valueOf() ?? 0;
+    return db !== da ? db - da : collator.compare(a.data.title, b.data.title);
+  });
+
+const catLabel = (k: string) => c.categories[k] ?? k;
+const categoryCounts = new Map<string, number>();
+const platformCounts = new Map<string, number>();
+for (const p of posts) {
+  categoryCounts.set(p.data.category, (categoryCounts.get(p.data.category) ?? 0) + 1);
+  for (const pl of p.data.platforms ?? []) platformCounts.set(pl, (platformCounts.get(pl) ?? 0) + 1);
+}
+const categories = INSIGHT_CATEGORIES.filter((k) => categoryCounts.has(k)).map((k) => ({
+  value: k,
+  label: catLabel(k),
+  count: categoryCounts.get(k) ?? 0,
+  icon: CATEGORY_ICONS[k] ?? '',
+}));
+const platforms = INSIGHT_PLATFORMS.filter((p) => (platformCounts.get(p) ?? 0) >= 2)
+  .map((p) => ({ value: p, count: platformCounts.get(p) ?? 0, color: PLATFORM_COLORS[p] ?? '#6b6b6b' }))
+  .sort((a, b) => b.count - a.count);
+
+const lastUpdated = posts.reduce<Date | undefined>((acc, p) => {
+  const d = p.data.updatedDate ?? p.data.pubDate;
+  return d && (!acc || d > acc) ? d : acc;
+}, undefined);
+
+// "New" is decided at build time; the site rebuilds on every publish.
+const NEW_DAYS = 14;
+const now = Date.now();
+const isNew = (d?: Date) => !!d && now - d.valueOf() < NEW_DAYS * 86_400_000;
+
+const [lead, ...nextThree] = posts.slice(0, 4);
+
+// Industry band collage: the covered industries first, then fill to four.
+const tagged = all.filter((p) => !!p.data.industry);
+const coveredIndustries = INSIGHT_INDUSTRIES.filter((i) => tagged.some((p) => p.data.industry === i));
+const collage = [...coveredIndustries, ...INSIGHT_INDUSTRIES.filter((i) => !coveredIndustries.includes(i))]
+  .slice(0, 4)
+  .map((i) => `/Images/industries/${industrySlug(i)}.webp`);
+
+const readingTime = (body: string | undefined) =>
+  body ? c.minRead(Math.max(1, Math.round(body.trim().split(/\s+/).length / 200))) : '';
+const fmtLong = (d?: Date) =>
+  d ? d.toLocaleDateString(cfg.dateLocale, { month: 'long', day: 'numeric', year: 'numeric' }) : '';
+const fmtShort = (d?: Date) => (d ? d.toLocaleDateString(cfg.dateLocale, { month: 'short', year: 'numeric' }) : '');
+
+const clientData = { showing: c.showing };
+---
+
+<Layout
+  title={c.seoTitle}
+  description={c.seoDescription}
+  ogImage="/Images/trends/hero.webp"
+  ogImageAlt={c.ogAlt}
+>
+  <div class="ix tr" data-ix data-tr>
+    {/* ---------- HERO ---------- */}
+    <section class="ix-hero">
+      <div class="ix-hero__media" aria-hidden="true">
+        <img src="/Images/trends/hero.webp" alt="" width="1536" height="1024" loading="eager" fetchpriority="high" decoding="async" />
+      </div>
+      <div class="ix-hero__glow" aria-hidden="true"></div>
+      <div class="container ix-hero__inner">
+        <span class="eyebrow eyebrow--on-dark ix-rise">{c.eyebrow}</span>
+        <h1 class="ix-hero__title ix-rise" style="--d:80ms">{c.h1}</h1>
+        <p class="ix-hero__lead ix-rise" style="--d:160ms">{c.lead}</p>
+        <div class="ix-hero__actions ix-rise" style="--d:240ms">
+          <a href="#latest" class="btn btn--primary">{c.ctaLatest}</a>
+          <a href={cfg.industriesPath} class="btn btn--ghost-light">{c.ctaIndustries}</a>
+        </div>
+        <dl class="ix-stats ix-rise" style="--d:320ms">
+          <div class="ix-stats__item">
+            <dt>{c.statArticles}</dt>
+            <dd><span data-count={posts.length}>{posts.length}</span></dd>
+          </div>
+          <div class="ix-stats__item">
+            <dt>{c.statPlatforms}</dt>
+            <dd><span data-count={platformCounts.size}>{platformCounts.size}</span></dd>
+          </div>
+          {
+            lastUpdated && (
+              <div class="ix-stats__item">
+                <dt>{c.statUpdated}</dt>
+                <dd class="ix-stats__date">
+                  <time datetime={lastUpdated.toISOString().slice(0, 10)}>{fmtLong(lastUpdated)}</time>
+                </dd>
+              </div>
+            )
+          }
+        </dl>
+        <p class="ix-hero__cred ix-rise" style="--d:400ms">{c.cred}</p>
+      </div>
+    </section>
+
+    {/* ---------- LATEST ---------- */}
+    {
+      lead && (
+        <section class="tr-latest" id="latest">
+          <div class="container">
+            <header class="tr-head" data-ix-reveal>
+              <span class="eyebrow">{c.latestEyebrow}</span>
+              <h2>{c.latestH2}</h2>
+            </header>
+            <div class="tr-bento">
+              <a href={cfg.articleHref(lead.id)} class="tr-lead" data-ix-reveal data-ix-spot data-ix-tilt>
+                <img src={lead.data.heroImage} alt={lead.data.heroImageAlt} width="1200" height="800" loading="lazy" decoding="async" />
+                <span class="tr-lead__scrim" aria-hidden="true" />
+                <span class="tr-lead__body">
+                  <span class="tr-pills">
+                    {isNew(lead.data.pubDate) && <span class="tr-new">{c.newFlag}</span>}
+                    <span class="tr-cat tr-cat--dark">
+                      <span class="tr-cat__icon" set:html={CATEGORY_ICONS[lead.data.category] ?? ''} />
+                      {catLabel(lead.data.category)}
+                    </span>
+                  </span>
+                  <h3 class="tr-lead__title">{lead.data.title}</h3>
+                  <span class="tr-lead__desc">{lead.data.description}</span>
+                  <span class="tr-lead__meta">
+                    {readingTime(lead.body)}
+                    {lead.data.pubDate && <> · {fmtShort(lead.data.pubDate)}</>}
+                  </span>
+                </span>
+              </a>
+              <ul class="tr-side" role="list">
+                {nextThree.map((p, i) => (
+                  <li data-ix-reveal style={`--d:${80 + i * 80}ms`}>
+                    <a href={cfg.articleHref(p.id)} class="tr-mini" data-ix-spot>
+                      <span class="tr-mini__thumb">
+                        <img src={p.data.heroImage} alt={p.data.heroImageAlt} width="600" height="400" loading="lazy" decoding="async" />
+                      </span>
+                      <span class="tr-mini__body">
+                        <span class="tr-pills">
+                          {isNew(p.data.pubDate) && <span class="tr-new">{c.newFlag}</span>}
+                          <span class="tr-cat">
+                            <span class="tr-cat__icon" set:html={CATEGORY_ICONS[p.data.category] ?? ''} />
+                            {catLabel(p.data.category)}
+                          </span>
+                        </span>
+                        <h3 class="tr-mini__title">{p.data.title}</h3>
+                        <span class="tr-mini__meta">
+                          {readingTime(p.body)}
+                          {p.data.pubDate && <> · {fmtShort(p.data.pubDate)}</>}
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {/* ---------- ARCHIVE ---------- */}
+    <section class="tr-archive" id="archive">
+      <div class="container">
+        <header class="tr-head" data-ix-reveal>
+          <span class="eyebrow">{c.archiveEyebrow}</span>
+          <h2>{c.archiveH2}</h2>
+        </header>
+
+        <div class="tr-controls" data-tr-controls>
+          <div class="tr-controls__top">
+            <div class="ix-search tr-search">
+              <label for="tr-search-input" class="visually-hidden">{c.searchLabel}</label>
+              <svg class="ix-search__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                <path d="m20 20-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+              <input id="tr-search-input" class="ix-search__input" type="search" autocomplete="off" spellcheck="false" placeholder={c.searchPlaceholder} data-tr-search />
+              <button type="button" class="ix-search__clear" aria-label={c.clearSearch} data-tr-clear hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="tr-quick" aria-label={c.quickLabel}>
+              <span class="tr-quick__label">{c.quickLabel}</span>
+              {c.quick.map((q) => (
+                <button type="button" class="tr-quick__btn" data-tr-quick={q.q}>{q.label}</button>
+              ))}
+            </div>
+          </div>
+
+          <div class="tr-tabs" role="group" aria-label={c.categoryAria} data-tr-tabs>
+            <span class="tr-tabs__ink" aria-hidden="true" data-tr-ink></span>
+            <button type="button" class="tr-tab is-active" data-tr-cat="all" aria-pressed="true">
+              <span>{c.all}</span>
+              <small>{posts.length}</small>
+            </button>
+            {
+              categories.map((k) => (
+                <button type="button" class="tr-tab" data-tr-cat={k.value} aria-pressed="false">
+                  <span class="tr-tab__icon" set:html={k.icon} />
+                  <span>{k.label}</span>
+                  <small>{k.count}</small>
+                </button>
+              ))
+            }
+          </div>
+
+          <div class="tr-controls__row">
+            <div class="tr-platforms" role="group" aria-label={c.platformLabel}>
+              <span class="tr-platforms__label">{c.platformLabel}</span>
+              <button type="button" class="tr-plat is-active" data-tr-plat="all" aria-pressed="true">{c.all}</button>
+              {
+                platforms.map((p) => (
+                  <button type="button" class="tr-plat" data-tr-plat={p.value} aria-pressed="false" aria-label={`${p.value} (${p.count})`}>
+                    <span class="tr-dot" style={`--c:${p.color}`} aria-hidden="true" />
+                    <span>{p.value}</span>
+                  </button>
+                ))
+              }
+            </div>
+            <div class="tr-sort">
+              <label for="tr-sort" class="tr-sort__label">{c.sortLabel}</label>
+              <select id="tr-sort" class="tr-sort__select" data-tr-sort>
+                <option value="newest">{c.sortNewest}</option>
+                <option value="oldest">{c.sortOldest}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <p class="tr-count" aria-live="polite" data-tr-count>
+          {c.showing.replace('{shown}', String(Math.min(12, posts.length))).replace('{total}', String(posts.length))}
+        </p>
+
+        <ul class="tr-grid" role="list" data-tr-grid>
+          {
+            posts.map((p) => {
+              const search = [p.data.title, p.data.description, catLabel(p.data.category), ...(p.data.tags ?? []), ...(p.data.platforms ?? [])].join(' ');
+              return (
+                <li
+                  class="tr-item"
+                  data-tr-item
+                  data-category={p.data.category}
+                  data-platforms={(p.data.platforms ?? []).join('|')}
+                  data-date={p.data.pubDate ? p.data.pubDate.valueOf() : 0}
+                  data-title={p.data.title}
+                  data-search={search}
+                >
+                  <a href={cfg.articleHref(p.id)} class="tr-card" data-ix-spot>
+                    <span class="tr-card__media">
+                      <img src={p.data.heroImage} alt={p.data.heroImageAlt} width="600" height="400" loading="lazy" decoding="async" />
+                      <span class="tr-pills tr-card__pills">
+                        {isNew(p.data.pubDate) && <span class="tr-new">{c.newFlag}</span>}
+                        <span class="tr-cat tr-cat--glass">
+                          <span class="tr-cat__icon" set:html={CATEGORY_ICONS[p.data.category] ?? ''} />
+                          {catLabel(p.data.category)}
+                        </span>
+                      </span>
+                    </span>
+                    <span class="tr-card__body">
+                      <h3 class="tr-card__title">{p.data.title}</h3>
+                      <span class="tr-card__desc">{p.data.description}</span>
+                      <span class="tr-card__foot">
+                        <span class="tr-card__plats">
+                          {(p.data.platforms ?? []).slice(0, 2).map((pl) => (
+                            <span class="tr-card__plat">
+                              <span class="tr-dot" style={`--c:${PLATFORM_COLORS[pl] ?? '#6b6b6b'}`} aria-hidden="true" />
+                              {pl}
+                            </span>
+                          ))}
+                        </span>
+                        <span class="tr-card__meta">
+                          {readingTime(p.body)}
+                          {p.data.pubDate && <> · {fmtShort(p.data.pubDate)}</>}
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              );
+            })
+          }
+        </ul>
+
+        <div class="tr-empty" data-tr-empty hidden>
+          <p>{c.empty}</p>
+          <button type="button" class="btn btn--secondary" data-tr-reset>{c.clearFilters}</button>
+        </div>
+
+        <div class="tr-more">
+          <button type="button" class="tr-more__btn" data-tr-more>
+            <span>{c.more}</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <span class="tr-more__bar" aria-hidden="true"><span data-tr-bar></span></span>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- INDUSTRY BAND ---------- */}
+    <section class="tr-band">
+      <div class="container tr-band__inner">
+        <div class="tr-band__copy" data-ix-reveal>
+          <span class="eyebrow">{c.bandEyebrow}</span>
+          <h2>{c.bandH2}</h2>
+          <p>{c.bandBody}</p>
+          <a href={cfg.industriesPath} class="btn btn--primary">{c.bandCta}</a>
+        </div>
+        <a href={cfg.industriesPath} class="tr-collage" data-ix-reveal aria-hidden="true" tabindex="-1">
+          {collage.map((src, i) => (
+            <span class="tr-collage__card" style={`--i:${i}`}>
+              <img src={src} alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+            </span>
+          ))}
+        </a>
+      </div>
+    </section>
+
+    {/* ---------- CTA ---------- */}
+    <section class="ix-cta">
+      <div class="ix-cta__glow" aria-hidden="true"></div>
+      <div class="container ix-cta__inner" data-ix-reveal>
+        <span class="eyebrow eyebrow--on-dark">{c.ctaEyebrow}</span>
+        <h2>{c.ctaH2}</h2>
+        <p>{c.ctaBody}</p>
+        <div class="ix-cta__actions">
+          <a href={cfg.contactPath} class="btn btn--primary">{c.ctaContact}</a>
+        </div>
+      </div>
+    </section>
+
+    <script type="application/json" data-tr-data set:html={JSON.stringify(clientData)} />
+  </div>
+</Layout>
+
+<script>
+  import { initReveal, initCountUp, initSpotlight, followHeader, normalize, reducedMotion } from '../../scripts/insight-hubs';
+
+  const root = document.querySelector<HTMLElement>('[data-tr]');
+  if (root) {
+    root.classList.add('ix--js');
+    initReveal(root);
+    initCountUp(root);
+    initSpotlight(root);
+    const reduced = reducedMotion();
+    const data: { showing: string } = JSON.parse(root.querySelector('[data-tr-data]')?.textContent || '{}');
+
+    const PER = 12;
+    const grid = root.querySelector<HTMLElement>('[data-tr-grid]')!;
+    const items = Array.from(root.querySelectorAll<HTMLElement>('[data-tr-item]'));
+    const index = items.map((el) => ({ el, text: normalize(el.dataset.search || '') }));
+    const input = root.querySelector<HTMLInputElement>('[data-tr-search]')!;
+    const clear = root.querySelector<HTMLButtonElement>('[data-tr-clear]')!;
+    const tabs = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-tr-cat]'));
+    const ink = root.querySelector<HTMLElement>('[data-tr-ink]');
+    const tabBar = root.querySelector<HTMLElement>('[data-tr-tabs]');
+    const plats = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-tr-plat]'));
+    const sortSel = root.querySelector<HTMLSelectElement>('[data-tr-sort]')!;
+    const count = root.querySelector<HTMLElement>('[data-tr-count]')!;
+    const empty = root.querySelector<HTMLElement>('[data-tr-empty]')!;
+    const more = root.querySelector<HTMLButtonElement>('[data-tr-more]')!;
+    const bar = root.querySelector<HTMLElement>('[data-tr-bar]');
+    followHeader(root.querySelector<HTMLElement>('[data-tr-controls]'));
+
+    const state = { q: '', cat: 'all', plat: 'all', sort: 'newest', pages: 1 };
+
+    const readUrl = () => {
+      const p = new URLSearchParams(location.search);
+      state.q = p.get('q') || '';
+      state.cat = p.get('category') || 'all';
+      state.plat = p.get('platform') || 'all';
+      state.sort = p.get('sort') === 'oldest' ? 'oldest' : 'newest';
+      const page = parseInt(p.get('page') || '1', 10);
+      state.pages = Number.isFinite(page) && page > 0 ? page : 1;
+    };
+    const writeUrl = (push: boolean) => {
+      const p = new URLSearchParams(location.search);
+      const set = (k: string, v: string, def: string) => (v && v !== def ? p.set(k, v) : p.delete(k));
+      set('q', state.q, '');
+      set('category', state.cat, 'all');
+      set('platform', state.plat, 'all');
+      set('sort', state.sort, 'newest');
+      set('page', String(state.pages), '1');
+      const qs = p.toString();
+      const url = location.pathname + (qs ? `?${qs}` : '') + location.hash;
+      if (push) history.pushState({ ...state }, '', url);
+      else history.replaceState({ ...state }, '', url);
+    };
+
+    const moveInk = () => {
+      const active = tabs.find((t) => t.classList.contains('is-active'));
+      if (!active || !ink) return;
+      ink.style.width = `${active.offsetWidth}px`;
+      ink.style.height = `${active.offsetHeight}px`;
+      ink.style.transform = `translate(${active.offsetLeft}px, ${active.offsetTop}px)`;
+      if (tabBar && tabBar.scrollWidth > tabBar.clientWidth) {
+        tabBar.scrollTo({ left: active.offsetLeft - (tabBar.clientWidth - active.offsetWidth) / 2, behavior: reduced ? 'auto' : 'smooth' });
+      }
+    };
+
+    const syncUi = () => {
+      input.value = state.q;
+      clear.hidden = !state.q;
+      tabs.forEach((t) => {
+        const on = t.dataset.trCat === state.cat;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      plats.forEach((b) => {
+        const on = b.dataset.trPlat === state.plat;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      sortSel.value = state.sort;
+      moveInk();
+    };
+
+    const matches = () => {
+      const words = normalize(state.q).split(' ').filter((w) => w.length > 1);
+      const list = index.filter(({ el, text }) => {
+        if (state.cat !== 'all' && el.dataset.category !== state.cat) return false;
+        if (state.plat !== 'all' && !(el.dataset.platforms || '').split('|').includes(state.plat)) return false;
+        return words.every((w) => text.includes(w));
+      });
+      list.sort((a, b) => {
+        const da = Number(a.el.dataset.date || 0);
+        const db = Number(b.el.dataset.date || 0);
+        const byTitle = (a.el.dataset.title || '').localeCompare(b.el.dataset.title || '');
+        return state.sort === 'oldest' ? da - db || byTitle : db - da || byTitle;
+      });
+      return list.map((m) => m.el);
+    };
+
+    let firstRender = true;
+    const render = (animateFrom = 0) => {
+      const list = matches();
+      const shown = Math.min(list.length, state.pages * PER);
+      items.forEach((el) => {
+        el.hidden = true;
+        el.style.order = '';
+      });
+      list.slice(0, shown).forEach((el, i) => {
+        el.hidden = false;
+        el.style.order = String(i);
+        if (!firstRender && !reduced && i >= animateFrom) {
+          el.classList.remove('is-entering');
+          void el.offsetWidth;
+          el.style.setProperty('--d', `${Math.min(i - animateFrom, 8) * 45}ms`);
+          el.classList.add('is-entering');
+        }
+      });
+      count.textContent = data.showing.replace('{shown}', String(shown)).replace('{total}', String(list.length));
+      empty.hidden = list.length !== 0;
+      more.parentElement!.hidden = shown >= list.length;
+      if (bar) bar.style.transform = `scaleX(${list.length ? shown / list.length : 1})`;
+      firstRender = false;
+    };
+
+    const update = (push = true, animateFrom = 0) => {
+      writeUrl(push);
+      syncUi();
+      render(animateFrom);
+    };
+
+    let timer: number | undefined;
+    input.addEventListener('input', () => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        state.q = input.value.trim();
+        state.pages = 1;
+        update(false);
+      }, 140);
+    });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        state.q = '';
+        state.pages = 1;
+        update(false);
+      }
+    });
+    clear.addEventListener('click', () => {
+      state.q = '';
+      state.pages = 1;
+      update();
+      input.focus();
+    });
+    root.querySelectorAll<HTMLButtonElement>('[data-tr-quick]').forEach((b) =>
+      b.addEventListener('click', () => {
+        state.q = b.dataset.trQuick || '';
+        state.pages = 1;
+        update();
+      }),
+    );
+    tabs.forEach((t) =>
+      t.addEventListener('click', () => {
+        state.cat = t.dataset.trCat || 'all';
+        state.pages = 1;
+        update();
+      }),
+    );
+    plats.forEach((b) =>
+      b.addEventListener('click', () => {
+        state.plat = b.dataset.trPlat || 'all';
+        state.pages = 1;
+        update();
+      }),
+    );
+    sortSel.addEventListener('change', () => {
+      state.sort = sortSel.value === 'oldest' ? 'oldest' : 'newest';
+      state.pages = 1;
+      update();
+    });
+    more.addEventListener('click', () => {
+      const from = state.pages * PER;
+      state.pages += 1;
+      update(false, from);
+    });
+    root.querySelector('[data-tr-reset]')?.addEventListener('click', () => {
+      Object.assign(state, { q: '', cat: 'all', plat: 'all', sort: 'newest', pages: 1 });
+      update();
+    });
+    window.addEventListener('popstate', () => {
+      readUrl();
+      syncUi();
+      render();
+    });
+    window.addEventListener('resize', moveInk);
+
+    readUrl();
+    syncUi();
+    render();
+    // Fonts can shift tab widths after first paint.
+    document.fonts?.ready.then(moveInk);
+    grid.classList.add('is-ready');
+  }
+</script>

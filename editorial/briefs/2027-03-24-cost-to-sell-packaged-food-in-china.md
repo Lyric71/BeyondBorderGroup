@@ -1,7 +1,7 @@
 ---
-brief_id: 05L
-publish_date: 2026-10-07
-week: 05
+brief_id: 29L
+publish_date: 2027-03-24
+week: 29
 weekday: Wed
 slot: L
 slot_name: Ledger
@@ -9,13 +9,14 @@ content_type: Ledger A
 title: "What it costs to sell packaged food in China"
 slug: cost-to-sell-packaged-food-in-china
 primary_query: ""
+industry: "Food & Beverage"
 word_count: "1,100 to 1,400"
 variant: A
 proof: "Mission Foods."
 status: not_started
 ---
 
-# BRIEF 05L: What it costs to sell packaged food in China
+# BRIEF 29L: What it costs to sell packaged food in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,7 +28,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 05 |
+| slot | Ledger, Wed of week 29 |
 | brief | this file |
 
 ## Target
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Slug | `/insights/cost-to-sell-packaged-food-in-china/` |
 | Output file | `output/cost-to-sell-packaged-food-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Food & Beverage`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
 | Proof | Mission Foods. |

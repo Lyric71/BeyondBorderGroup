@@ -4,6 +4,7 @@ description: "Le marché chinois du luxe se transforme sous l'effet conjugué de
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Fashion & Luxury"
 platforms: ["WeChat"]
 tags: ["marques de luxe", "marketing social media", "marché chinois", "KOLs", "stratégie omnicanale"]
 heroImage: "/Images/insights/luxury-brand-trends-mastering-social-media-in-china.jpg"

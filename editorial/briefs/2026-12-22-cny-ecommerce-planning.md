@@ -40,6 +40,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/cny-ecommerce-planning.md` |
 | Primary query | `cny ecommerce planning` |
 | Difficulty | SEAS |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,000 to 2,400 (body only, per the char-count rule) |
 | Asset | `output/guides/cny-ecommerce-planning.md`, publishes to `/guides/cny-ecommerce-planning/` (Dated calendar, four workstreams) |
 

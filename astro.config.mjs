@@ -499,6 +499,8 @@ const canonicalize = (/** @type {string} */ path) => {
     if (path.startsWith('/fr/decryptages/')) {
       const tail = path.slice('/fr/decryptages/'.length);
       if (!tail) return '/insights';
+      // The industry hub shares the folder with the articles.
+      if (tail === 'secteurs') return '/insights/industries';
       const enSlug = Object.entries(insightEnToFr).find(([, fr]) => fr === tail)?.[0];
       return enSlug ? `/insights/${enSlug}` : null;
     }
@@ -512,6 +514,8 @@ const canonicalize = (/** @type {string} */ path) => {
     if (path.startsWith('/de/analysen/')) {
       const tail = path.slice('/de/analysen/'.length);
       if (!tail) return '/insights';
+      // The industry hub shares the folder with the articles.
+      if (tail === 'branchen') return '/insights/industries';
       const enSlug = Object.entries(insightEnToDe).find(([, de]) => de === tail)?.[0];
       return enSlug ? `/insights/${enSlug}` : null;
     }
@@ -526,6 +530,8 @@ const canonicalize = (/** @type {string} */ path) => {
     if (path.startsWith('/es/analisis/')) {
       const tail = path.slice('/es/analisis/'.length);
       if (!tail) return '/insights';
+      // The industry hub shares the folder with the articles.
+      if (tail === 'sectores') return '/insights/industries';
       const enSlug = Object.entries(insightEnToEs).find(([, es]) => es === tail)?.[0];
       return enSlug ? `/insights/${enSlug}` : null;
     }
@@ -542,6 +548,7 @@ const canonicalize = (/** @type {string} */ path) => {
 const enToFr = (/** @type {string | null} */ enPath) => {
   if (!enPath) return null;
   if (enPath === '/') return '/fr';
+  if (enPath === '/insights/industries') return '/fr/decryptages/secteurs';
   if (enPath.startsWith('/insights/')) {
     const enSlug = enPath.slice('/insights/'.length);
     const frSlug = insightEnToFr[enSlug];
@@ -559,6 +566,7 @@ const enToFr = (/** @type {string | null} */ enPath) => {
 const enToDe = (/** @type {string | null} */ enPath) => {
   if (!enPath) return null;
   if (enPath === '/') return '/de';
+  if (enPath === '/insights/industries') return '/de/analysen/branchen';
   if (enPath.startsWith('/insights/')) {
     const enSlug = enPath.slice('/insights/'.length);
     const deSlug = insightEnToDe[enSlug];
@@ -576,6 +584,7 @@ const enToDe = (/** @type {string | null} */ enPath) => {
 const enToEs = (/** @type {string | null} */ enPath) => {
   if (!enPath) return null;
   if (enPath === '/') return '/es';
+  if (enPath === '/insights/industries') return '/es/analisis/sectores';
   if (enPath.startsWith('/insights/')) {
     const enSlug = enPath.slice('/insights/'.length);
     const esSlug = insightEnToEs[enSlug];

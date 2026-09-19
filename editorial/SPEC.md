@@ -17,6 +17,7 @@ excerpt: <= 25 words
 template: insight
 author: TheChinaPath
 category: <one of the seven insight categories>
+industry: <one of INSIGHT_INDUSTRIES in src/content.config.ts, or omit>
 platforms: [Tmall, JD, Douyin]
 tags: [..]
 keyTakeaways:
@@ -51,6 +52,17 @@ CTA: <label from the brief, linked to its target>
 <!-- SCHEMA block, see below -->
 <!-- ASSET BRIEF block, see below -->
 ```
+
+`industry` decides where an insight lists. Set it when the piece is about one
+vertical: every "What it costs to sell X" Ledger, every "How to sell X" or
+"How X brands reach buyers" Anchor, every brand Teardown. Those list on
+`/insights/industries`. Leave it out for cross-industry pieces (platform
+guides, festival plans, fee benchmarks, compliance), which list on
+`/insights` (Trends). Anchor and Ledger briefs carry the value in their
+`industry` field (and the `industry` column of `schedule.csv`); copy it
+verbatim. Teardowns take the industry of the brand picked on the day. Copy the same English value onto the FR, DE and ES files at publish; each
+locale's industry hub (`/fr/decryptages/secteurs`, `/de/analysen/branchen`,
+`/es/analisis/sectores`) reads it from there.
 
 `template` values: `insight` for `/insights/` (every Signal, Anchor, Ledger
 and Teardown), `guide` for `/guides/` (the printable assets), `refresh` when

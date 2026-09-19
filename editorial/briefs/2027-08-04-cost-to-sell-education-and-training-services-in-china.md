@@ -9,6 +9,7 @@ content_type: Ledger B
 title: "What it costs to sell education and training services in China"
 slug: cost-to-sell-education-and-training-services-in-china
 primary_query: ""
+industry: "Financial & Professional Services"
 word_count: "1,100 to 1,400"
 variant: B
 proof: "none"
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Slug | `/insights/cost-to-sell-education-and-training-services-in-china/` |
 | Output file | `output/cost-to-sell-education-and-training-services-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Financial & Professional Services`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | B |
 | Proof | none |

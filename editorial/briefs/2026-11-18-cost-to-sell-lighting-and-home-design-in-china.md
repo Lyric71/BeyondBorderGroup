@@ -1,21 +1,22 @@
 ---
-brief_id: 38L
-publish_date: 2027-05-26
-week: 38
+brief_id: 11L
+publish_date: 2026-11-18
+week: 11
 weekday: Wed
 slot: L
 slot_name: Ledger
 content_type: Ledger A
-title: "What it costs to sell pet food in China"
-slug: cost-to-sell-pet-food-in-china
+title: "What it costs to sell lighting and home design in China"
+slug: cost-to-sell-lighting-and-home-design-in-china
 primary_query: ""
+industry: "Home & Living"
 word_count: "1,100 to 1,400"
 variant: A
-proof: "none"
+proof: "iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`."
 status: not_started
 ---
 
-# BRIEF 38L: What it costs to sell pet food in China
+# BRIEF 11L: What it costs to sell lighting and home design in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,29 +28,27 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 38 |
+| slot | Ledger, Wed of week 11 |
 | brief | this file |
 
 ## Target
 
 | Field | Value |
 |---|---|
-| Working H1 | What it costs to sell pet food in China |
-| Slug | `/insights/cost-to-sell-pet-food-in-china/` |
-| Output file | `output/cost-to-sell-pet-food-in-china.md` |
+| Working H1 | What it costs to sell lighting and home design in China |
+| Slug | `/insights/cost-to-sell-lighting-and-home-design-in-china/` |
+| Output file | `output/cost-to-sell-lighting-and-home-design-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Home & Living`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
-| Proof | none |
+| Proof | iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`. |
 
 ## The brief
 
-**Title:** What it costs to sell pet food in China
+**Title:** What it costs to sell lighting and home design in China
 **Word count:** 1,100 to 1,400
-
-Block 3 carries this one and nothing else comes close. Pet food entering China is a facility-level question before it is a product-level one: the manufacturing plant itself has to be registered and approved, which means the cost and the timeline sit with your producer, not with you, and a brand using a contract manufacturer that has never registered is looking at a multi-quarter delay it cannot shorten with budget. Writer must verify and cite the current GACC facility registration requirement for imported pet food, the quarantine and inspection permit process, whether cross-border ecommerce changes the requirement, and the current positive list status for pet food categories. Block 4 should be built on bulk: dry food is heavy and priced low, so model the pack size and multi-pack structure that make an order profitable. Pairs with the W24 pet anchor; link back.
-
-**Proof.** None available. Use the block 6 honesty line.
+**Proof.** iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`.
 
 ## Slot spec
 
@@ -96,4 +95,4 @@ published, do not write this page. Merge it into that one.
 - [ ] Title under 52, meta under 152, excerpt under 25 words, all counted
 - [ ] New figures appended to `sources/verified-sources.md` with both check dates
 - [ ] Feature image block appended with the correct slug path
-- [ ] File saved as `output/cost-to-sell-pet-food-in-china.md`
+- [ ] File saved as `output/cost-to-sell-lighting-and-home-design-in-china.md`

@@ -38,6 +38,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/china-livestream-cost-for-brands.md` |
 | Primary query | `china livestream cost for brands` |
 | Difficulty | OPEN |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 1,900 to 2,300 (body only, per the char-count rule) |
 
 ## The brief

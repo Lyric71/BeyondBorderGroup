@@ -40,6 +40,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/618-festival-preparation.md` |
 | Primary query | `618 festival preparation` |
 | Difficulty | SEAS |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,100 to 2,400 (body only, per the char-count rule) |
 | Asset | `output/guides/618-festival-preparation.md`, publishes to `/guides/618-festival-preparation/` (Countdown by workstream) |
 

@@ -10,6 +10,7 @@ title: "How to sell coffee and specialty food in China"
 slug: sell-coffee-specialty-food-china
 primary_query: "sell coffee specialty food china"
 difficulty: WEAK
+industry: "Food & Beverage"
 word_count: "2,000 to 2,400"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/sell-coffee-specialty-food-china.md` |
 | Primary query | `sell coffee specialty food china` |
 | Difficulty | WEAK |
+| Industry | `Food & Beverage`, set as `industry` in the insight frontmatter |
 | Body length | 2,000 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

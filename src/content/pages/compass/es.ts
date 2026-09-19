@@ -221,7 +221,7 @@ const copy: CompassCopy = {
     closingCtaSecondary: 'Ver el servicio de distribución',
     toolsLine: {
       before: '¿Aún no ha cerrado el presupuesto de plataforma? Nuestras ',
-      link: 'calculadoras de costes gratuitas',
+      link: 'calculadoras de presupuesto gratuitas',
       after: ' cifran el primer año en Tmall Global, JD Worldwide y Douyin, antes incluso del primer brief.',
     },
   },

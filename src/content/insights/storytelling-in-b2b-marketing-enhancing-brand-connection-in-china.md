@@ -4,6 +4,7 @@ description: "Storytelling is central in China's B2B marketing landscape, transf
 pubDate: "2024-04-16"
 author: "TheChinaPath"
 category: "Brand & Localization"
+industry: "B2B & Industrial"
 tags: ["B2B marketing", "storytelling", "China market", "brand connection", "customer engagement"]
 heroImage: "/Images/insights/storytelling-in-b2b-marketing-enhancing-brand-connection-in-china.webp"
 heroImageAlt: "B2B storytelling for Brands in China"

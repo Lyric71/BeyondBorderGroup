@@ -4,6 +4,7 @@ description: "Los diseñadores chinos independientes están redefiniendo la moda
 pubDate: "2024-06-25"
 author: "TheChinaPath"
 category: "Brand & Localization"
+industry: "Fashion & Luxury"
 tags: ["diseñadores chinos", "tendencias de moda", "sostenibilidad", "innovación digital", "eCommerce en China"]
 heroImage: "/Images/insights/independent-chinese-designers-2024-trends-marketing-and-commerce-insights.jpeg"
 heroImageAlt: "Fuente: China Daily"

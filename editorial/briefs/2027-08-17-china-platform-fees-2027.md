@@ -38,6 +38,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/china-platform-fees-2027.md` |
 | Primary query | `china platform fees 2027` |
 | Difficulty | HELD |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,300 to 2,400, plus the gated report (body only, per the char-count rule) |
 
 ## The brief

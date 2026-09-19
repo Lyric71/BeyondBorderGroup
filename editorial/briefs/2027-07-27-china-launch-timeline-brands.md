@@ -40,6 +40,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/china-launch-timeline-brands.md` |
 | Primary query | `china launch timeline brands` |
 | Difficulty | OPEN |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,200 to 2,400, plus the Gantt asset (body only, per the char-count rule) |
 | Asset | `output/guides/china-launch-timeline-brands.md`, publishes to `/guides/china-launch-timeline-brands/` (Gantt, with dependencies) |
 

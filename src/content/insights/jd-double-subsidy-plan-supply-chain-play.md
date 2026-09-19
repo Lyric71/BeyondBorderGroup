@@ -4,6 +4,7 @@ description: "JD.com and 100 brands put RMB 10 billion behind appliance trade-in
 pubDate: "2026-07-05"
 author: "Cyril Drouin"
 category: "E-Commerce"
+industry: "Electronics & Appliances"
 platforms: ["JD"]
 tags: ["JD", "Trade-in Subsidy", "Appliances", "Supply Chain", "China E-commerce"]
 heroImage: "/Images/insights/jd-double-subsidy-plan-supply-chain-play.png"

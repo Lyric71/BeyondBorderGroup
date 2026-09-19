@@ -38,6 +38,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/china-ecommerce-margin-profitability.md` |
 | Primary query | `china ecommerce margin profitability` |
 | Difficulty | OPEN |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,200 to 2,600 (body only, per the char-count rule) |
 
 ## The brief

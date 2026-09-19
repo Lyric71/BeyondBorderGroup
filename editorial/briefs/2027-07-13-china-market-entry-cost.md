@@ -38,6 +38,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/china-market-entry-cost.md` |
 | Primary query | `china market entry cost` |
 | Difficulty | WEAK |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,200 to 2,400, plus the new calculator (body only, per the char-count rule) |
 
 ## The brief

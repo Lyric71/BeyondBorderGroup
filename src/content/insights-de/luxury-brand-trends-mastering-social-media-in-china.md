@@ -4,6 +4,7 @@ description: "Chinas Luxusmarkt entwickelt sich durch Technologie und demografis
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Fashion & Luxury"
 platforms: ["WeChat"]
 tags: ["Luxusmarken", "Social-Media-Marketing", "China-Markt", "KOLs", "Omnichannel-Strategie"]
 heroImage: "/Images/insights/luxury-brand-trends-mastering-social-media-in-china.jpg"

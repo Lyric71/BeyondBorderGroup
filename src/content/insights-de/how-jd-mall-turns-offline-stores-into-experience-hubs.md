@@ -5,6 +5,7 @@ pubDate: "2025-11-26"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
 category: "E-Commerce"
+industry: "Electronics & Appliances"
 platforms: ["JD"]
 tags: ["JD Mall", "Erlebnis-Retail", "Offline Commerce", "China eCommerce", "Customer Experience"]
 heroImage: "/Images/insights/how-jd-mall-turns-offline-stores-into-experience-hubs.png"

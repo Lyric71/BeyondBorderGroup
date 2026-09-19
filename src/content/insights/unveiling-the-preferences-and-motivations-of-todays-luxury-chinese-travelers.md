@@ -4,6 +4,7 @@ description: "The luxury Chinese traveler represents a growing demographic resha
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Travel & Hospitality"
 tags: ["Chinese luxury travelers", "travel preferences", "affluent consumers", "experiential travel", "cultural sensitivity"]
 heroImage: "/Images/insights/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers.jpg"
 heroImageAlt: "Luxury Chinese traveler"

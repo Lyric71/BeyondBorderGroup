@@ -9,6 +9,7 @@ content_type: Ledger A
 title: "What it costs to sell beer and ready-to-drink in China"
 slug: cost-to-sell-beer-and-ready-to-drink-in-china
 primary_query: ""
+industry: "Food & Beverage"
 word_count: "1,100 to 1,400"
 variant: A
 proof: "none"
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Slug | `/insights/cost-to-sell-beer-and-ready-to-drink-in-china/` |
 | Output file | `output/cost-to-sell-beer-and-ready-to-drink-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Food & Beverage`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
 | Proof | none |

@@ -2,6 +2,8 @@
 import Layout from '../../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 import { articleSchema } from '../../../lib/seo';
+import { industrySlug } from '../../../content.config';
+import { HUB_CONFIG, INDUSTRIES_COPY, TRENDS_COPY } from '../../../lib/insight-hubs';
 
 export async function getStaticPaths() {
   const posts = await getCollection('insightsFr', ({ data }) => !data.draft);
@@ -25,6 +27,19 @@ const {
   author,
   keyTakeaways,
 } = post.data;
+
+// Articles tagged with an industry belong to the industry hub; the rest to
+// the Trends hub (this folder's index).
+const industry = post.data.industry;
+const hubCfg = HUB_CONFIG.fr;
+const industryLabel = industry ? INDUSTRIES_COPY.fr!.industries[industry].label : '';
+const hub = industry
+  ? {
+      name: INDUSTRIES_COPY.fr!.eyebrow,
+      url: hubCfg.industriesPath,
+      back: `${hubCfg.industriesPath}#${industrySlug(industry)}`,
+    }
+  : { name: TRENDS_COPY.fr!.eyebrow, url: hubCfg.trendsPath, back: hubCfg.trendsPath };
 
 interface AuthorInfo {
   url: string;
@@ -79,7 +94,7 @@ const articleJsonLd = articleSchema({
   category,
   breadcrumb: [
     { name: 'Accueil', url: '/fr' },
-    { name: 'Décryptages', url: '/fr/decryptages' },
+    { name: hub.name, url: hub.url },
     { name: title, url: `/fr/decryptages/${post.id}` },
   ],
 });
@@ -107,11 +122,19 @@ function readingTime(body: string | undefined) {
 }
 
 const allInsights = await getCollection('insightsFr', ({ data }) => !data.draft);
-const related = allInsights
-  .filter((p) => p.id !== post.id && p.data.category === category)
-  .slice(0, 3);
+// Same industry first when there is one to show; otherwise same category.
+const sameIndustry = industry
+  ? allInsights.filter((p) => p.id !== post.id && p.data.industry === industry)
+  : [];
+const relatedByIndustry = sameIndustry.length > 0;
+const related = (
+  relatedByIndustry
+    ? sameIndustry
+    : allInsights.filter((p) => p.id !== post.id && p.data.category === category)
+).slice(0, 3);
 
 const categoryLabel = categoryLabelsFr[category] ?? category;
+const relatedLabel = relatedByIndustry ? industryLabel : categoryLabel;
 ---
 
 <Layout
@@ -129,7 +152,7 @@ const categoryLabel = categoryLabelsFr[category] ?? category;
     <header class="insight-article__header">
       <div class="container container--narrow">
         <nav class="insight-article__crumbs" aria-label="Fil d'Ariane">
-          <a href="/fr/decryptages">← Retour aux décryptages</a>
+          <a href={hub.back}>← {industry ? 'Retour aux décryptages sectoriels' : 'Retour aux tendances'}</a>
         </nav>
         <span class="eyebrow">{categoryLabel}</span>
         <h1 class="insight-article__title">{title}</h1>
@@ -242,10 +265,10 @@ const categoryLabel = categoryLabelsFr[category] ?? category;
             <header class="section-header section-header--split">
               <div>
                 <span class="eyebrow">À lire ensuite</span>
-                <h2>Plus dans {categoryLabel.toLowerCase()}</h2>
+                <h2>Plus dans {relatedLabel.toLowerCase()}</h2>
               </div>
-              <a href="/fr/decryptages" class="btn btn--secondary btn--sm">
-                Tous les décryptages
+              <a href={hub.url} class="btn btn--secondary btn--sm">
+                {industry ? 'Tous les secteurs' : 'Toutes les tendances'}
               </a>
             </header>
 

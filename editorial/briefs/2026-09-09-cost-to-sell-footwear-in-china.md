@@ -9,6 +9,7 @@ content_type: Ledger A
 title: "What it costs to sell footwear in China"
 slug: cost-to-sell-footwear-in-china
 primary_query: "sell shoes china tmall cost"
+industry: "Fashion & Luxury"
 word_count: "1,100 to 1,400"
 variant: A
 proof: "Camper. Use only what is already published on `/work/camper`. Do not add figures."
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Slug | `/insights/cost-to-sell-footwear-in-china/` |
 | Output file | `output/cost-to-sell-footwear-in-china.md` |
 | Primary query | `sell shoes china tmall cost` |
+| Industry | `Fashion & Luxury`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
 | Proof | Camper. Use only what is already published on `/work/camper`. Do not add figures. |

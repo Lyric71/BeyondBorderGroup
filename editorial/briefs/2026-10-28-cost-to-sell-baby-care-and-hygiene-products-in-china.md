@@ -1,21 +1,22 @@
 ---
-brief_id: 04L
-publish_date: 2026-09-30
-week: 04
+brief_id: 08L
+publish_date: 2026-10-28
+week: 08
 weekday: Wed
 slot: L
 slot_name: Ledger
 content_type: Ledger A
-title: "What it costs to sell bakery and food ingredients in China"
-slug: cost-to-sell-bakery-and-food-ingredients-in-china
+title: "What it costs to sell baby care and hygiene products in China"
+slug: cost-to-sell-baby-care-and-hygiene-products-in-china
 primary_query: ""
+industry: "Mother & Baby"
 word_count: "1,100 to 1,400"
 variant: A
-proof: "Master Martini, Kerry DaVinci Gourmet."
+proof: "none"
 status: not_started
 ---
 
-# BRIEF 04L: What it costs to sell bakery and food ingredients in China
+# BRIEF 08L: What it costs to sell baby care and hygiene products in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,28 +28,30 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 04 |
+| slot | Ledger, Wed of week 08 |
 | brief | this file |
 
 ## Target
 
 | Field | Value |
 |---|---|
-| Working H1 | What it costs to sell bakery and food ingredients in China |
-| Slug | `/insights/cost-to-sell-bakery-and-food-ingredients-in-china/` |
-| Output file | `output/cost-to-sell-bakery-and-food-ingredients-in-china.md` |
+| Working H1 | What it costs to sell baby care and hygiene products in China |
+| Slug | `/insights/cost-to-sell-baby-care-and-hygiene-products-in-china/` |
+| Output file | `output/cost-to-sell-baby-care-and-hygiene-products-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Mother & Baby`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
-| Proof | Master Martini, Kerry DaVinci Gourmet. |
+| Proof | none |
 
 ## The brief
 
-**Title:** What it costs to sell bakery and food ingredients in China
+**Title:** What it costs to sell baby care and hygiene products in China
 **Word count:** 1,100 to 1,400
 
-This one is partly B2B, so block 5 splits: marketplace for consumer-facing SKUs, distributor for foodservice. Say so plainly, it is the honest answer and it links to `/enter-china/distribution`.
-**Proof.** Master Martini, Kerry DaVinci Gourmet.
+Block 3 carries this, and the specific trap is that a product marketed for children or infants can face a stricter regime than the same formulation marketed for adults. Instruct the writer to verify and cite the current Chinese regulatory treatment of children's cosmetics, including whether a separate registration or filing track and a distinct safety assessment apply, whether the cross-border route changes that, and the labelling and claims restrictions that apply to products aimed at infants. Diapers and wipes need their own check, since they may fall under different product standards from wash and skincare, and the writer should confirm and cite rather than group them. Block 4 should note that this is a high-repeat, low-ticket category, so breakeven is a subscription-like calculation and should be modelled on repeat rate, not on first order value.
+
+**Proof.** None available. Use the block 6 honesty line.
 
 ## Slot spec
 
@@ -95,4 +98,4 @@ published, do not write this page. Merge it into that one.
 - [ ] Title under 52, meta under 152, excerpt under 25 words, all counted
 - [ ] New figures appended to `sources/verified-sources.md` with both check dates
 - [ ] Feature image block appended with the correct slug path
-- [ ] File saved as `output/cost-to-sell-bakery-and-food-ingredients-in-china.md`
+- [ ] File saved as `output/cost-to-sell-baby-care-and-hygiene-products-in-china.md`

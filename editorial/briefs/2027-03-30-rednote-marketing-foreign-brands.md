@@ -38,6 +38,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/rednote-marketing-foreign-brands.md` |
 | Primary query | `rednote marketing foreign brands` |
 | Difficulty | HELD |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,000 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

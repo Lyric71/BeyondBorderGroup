@@ -1,0 +1,525 @@
+---
+/**
+ * Industry Insights hub, every locale. Every insight tagged with an `industry`,
+ * grouped in the order INSIGHT_INDUSTRIES declares. Untagged articles live on
+ * the Trends hub.
+ *
+ * Built as a category finder rather than a list:
+ *   1. Dark hero with live counters.
+ *   2. "What do you sell?" search that maps product words to an industry, then
+ *      a directory of every industry: covered ones as large image tiles,
+ *      upcoming ones as compact "in the works" tiles.
+ *   3. Reading chapters with a sticky rail. A red marker travels the rail as
+ *      you scroll, the same route idea the header nav is built on.
+ *
+ * Section anchors use the English industry slug in every locale, so article
+ * back links and the finder resolve the same way everywhere.
+ */
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { INSIGHT_INDUSTRIES, industrySlug } from '../../content.config';
+import { HUB_CONFIG, INDUSTRIES_COPY, INDUSTRY_KEYWORDS, TRENDS_COPY, type HubLocale } from '../../lib/insight-hubs';
+import '../../styles/insight-hubs.css';
+
+interface Props {
+  locale: HubLocale;
+}
+
+const { locale } = Astro.props;
+const cfg = HUB_CONFIG[locale];
+const c = INDUSTRIES_COPY[locale] ?? INDUSTRIES_COPY.en!;
+const categories = (TRENDS_COPY[locale] ?? TRENDS_COPY.en!).categories;
+const catLabel = (k: string) => categories[k] ?? k;
+
+const tagged = await getCollection(cfg.collection, ({ data }) => !data.draft && !!data.industry);
+type Post = (typeof tagged)[number];
+
+const collator = new Intl.Collator(cfg.dateLocale);
+const byNewest = (a: Post, b: Post) => {
+  const da = a.data.pubDate?.valueOf() ?? 0;
+  const db = b.data.pubDate?.valueOf() ?? 0;
+  return db !== da ? db - da : collator.compare(a.data.title, b.data.title);
+};
+
+const groups = INSIGHT_INDUSTRIES.map((industry) => {
+  const posts = tagged.filter((p) => p.data.industry === industry).sort(byNewest);
+  const latest = posts.reduce<Date | undefined>((acc, p) => {
+    const d = p.data.updatedDate ?? p.data.pubDate;
+    return d && (!acc || d > acc) ? d : acc;
+  }, undefined);
+  const meta = c.industries[industry];
+  return {
+    industry,
+    slug: industrySlug(industry),
+    image: `/Images/industries/${industrySlug(industry)}.webp`,
+    ...meta,
+    posts,
+    latest,
+  };
+});
+
+const covered = groups.filter((g) => g.posts.length > 0);
+const upcoming = groups.filter((g) => g.posts.length === 0);
+const lastUpdated = covered.reduce<Date | undefined>(
+  (acc, g) => (g.latest && (!acc || g.latest > acc) ? g.latest : acc),
+  undefined,
+);
+
+/** Finder payload for the client script. */
+const finderData = {
+  contact: cfg.contactPath,
+  js: c.js,
+  index: groups.map((g) => ({
+    name: g.label,
+    slug: g.slug,
+    count: g.posts.length,
+    words: [g.label, g.industry, ...g.covers, ...INDUSTRY_KEYWORDS[g.industry], ...(g.keywords ?? [])],
+  })),
+};
+
+const readingTime = (body: string | undefined) =>
+  body ? c.minRead(Math.max(1, Math.round(body.trim().split(/\s+/).length / 200))) : '';
+const fmtLong = (d?: Date) =>
+  d ? d.toLocaleDateString(cfg.dateLocale, { month: 'long', day: 'numeric', year: 'numeric' }) : '';
+const fmtShort = (d?: Date) => (d ? d.toLocaleDateString(cfg.dateLocale, { month: 'short', year: 'numeric' }) : '');
+---
+
+<Layout
+  title={c.seoTitle}
+  description={c.seoDescription}
+  ogImage="/Images/industries/hero.webp"
+  ogImageAlt={c.ogAlt}
+>
+  <div class="ix" data-ix>
+    <section class="ix-hero">
+      <div class="ix-hero__media" aria-hidden="true">
+        <img src="/Images/industries/hero.webp" alt="" width="1536" height="1024" loading="eager" fetchpriority="high" decoding="async" />
+      </div>
+      <div class="ix-hero__glow" aria-hidden="true"></div>
+
+      <div class="container ix-hero__inner">
+        <span class="eyebrow eyebrow--on-dark ix-rise">{c.eyebrow}</span>
+        <h1 class="ix-hero__title ix-rise" style="--d:80ms">{c.h1}</h1>
+        <p class="ix-hero__lead ix-rise" style="--d:160ms">{c.lead}</p>
+        <div class="ix-hero__actions ix-rise" style="--d:240ms">
+          <a href="#finder" class="btn btn--primary">{c.ctaFind}</a>
+          <a href={cfg.trendsPath} class="btn btn--ghost-light">{c.ctaTrends}</a>
+        </div>
+
+        <dl class="ix-stats ix-rise" style="--d:320ms">
+          <div class="ix-stats__item">
+            <dt>{c.statArticles}</dt>
+            <dd><span data-count={tagged.length}>{tagged.length}</span></dd>
+          </div>
+          <div class="ix-stats__item">
+            <dt>{c.statIndustries}</dt>
+            <dd><span data-count={covered.length}>{covered.length}</span></dd>
+          </div>
+          {
+            lastUpdated && (
+              <div class="ix-stats__item">
+                <dt>{c.statUpdated}</dt>
+                <dd class="ix-stats__date">
+                  <time datetime={lastUpdated.toISOString().slice(0, 10)}>{fmtLong(lastUpdated)}</time>
+                </dd>
+              </div>
+            )
+          }
+        </dl>
+        <p class="ix-hero__cred ix-rise" style="--d:400ms">{c.cred}</p>
+      </div>
+    </section>
+
+    <section class="ix-finder" id="finder">
+      <div class="container">
+        <header class="ix-finder__head" data-ix-reveal>
+          <span class="eyebrow">{c.finderEyebrow}</span>
+          <h2>{c.finderH2}</h2>
+          <p>{c.finderLead}</p>
+        </header>
+
+        <div class="ix-search" data-ix-reveal style="--d:80ms">
+          <label for="ix-search-input" class="visually-hidden">{c.searchLabel}</label>
+          <svg class="ix-search__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+            <path d="m20 20-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+          </svg>
+          <input id="ix-search-input" class="ix-search__input" type="search" autocomplete="off" spellcheck="false" placeholder={c.searchPlaceholder} data-ix-search />
+          <button type="button" class="ix-search__clear" aria-label={c.clearSearch} data-ix-clear hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="ix-search__result" aria-live="polite" data-ix-result></div>
+
+        <div class="ix-dir__bar" data-ix-reveal style="--d:120ms">
+          <div class="ix-toggle" role="group" aria-label={c.toggleLabel}>
+            <button type="button" class="ix-toggle__btn is-active" data-ix-filter="all" aria-pressed="true">{c.toggleAll}</button>
+            <button type="button" class="ix-toggle__btn" data-ix-filter="covered" aria-pressed="false">{c.toggleCovered}</button>
+            <span class="ix-toggle__pill" aria-hidden="true"></span>
+          </div>
+          <p class="ix-dir__cadence">
+            <span class="ix-dir__pulse" aria-hidden="true"></span>
+            {c.cadence}
+          </p>
+        </div>
+
+        <h3 class="ix-dir__label">{c.coveredLabel}</h3>
+        <ul class="ix-tiles" role="list">
+          {
+            covered.map((g, i) => (
+              <li data-ix-reveal style={`--d:${i * 70}ms`}>
+                <a href={`#${g.slug}`} class="ix-tile" data-ix-tile={g.slug} data-ix-spot data-ix-tilt>
+                  <img class="ix-tile__img" src={g.image} alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+                  <span class="ix-tile__scrim" aria-hidden="true" />
+                  <span class="ix-tile__body">
+                    <span class="ix-tile__name">{g.label}</span>
+                    <span class="ix-tile__intro">{g.intro}</span>
+                    <span class="ix-tile__chips">
+                      {g.covers.slice(0, 4).map((cv) => (
+                        <span class="ix-chip">{cv}</span>
+                      ))}
+                    </span>
+                    <span class="ix-tile__foot">
+                      {c.articles(g.posts.length)}
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+
+        {
+          upcoming.length > 0 && (
+            <div class="ix-soon" data-ix-soon>
+              <h3 class="ix-dir__label">{c.soonLabel}</h3>
+              <ul class="ix-soon__grid" role="list">
+                {upcoming.map((g, i) => (
+                  <li data-ix-reveal style={`--d:${i * 40}ms`}>
+                    <a href={cfg.contactPath} class="ix-soon__tile" data-ix-tile={g.slug} data-ix-spot>
+                      <img class="ix-soon__img" src={g.image} alt="" width="1536" height="1024" loading="lazy" decoding="async" />
+                      <span class="ix-soon__body">
+                        <span class="ix-soon__name">{g.label}</span>
+                        <span class="ix-soon__state">{c.soonState}</span>
+                        <span class="ix-soon__ask">{c.soonAsk}</span>
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+      </div>
+    </section>
+
+    <section class="ix-read" id="read">
+      <div class="container">
+        <header class="ix-read__head" data-ix-reveal>
+          <span class="eyebrow">{c.readEyebrow}</span>
+          <h2>{c.readH2}</h2>
+        </header>
+
+        <div class="ix-read__layout">
+          <nav class="ix-rail" aria-label={c.railAria} data-ix-rail>
+            <p class="ix-rail__label">{c.railLabel}</p>
+            <div class="ix-rail__track">
+              <span class="ix-rail__line" aria-hidden="true"><span data-ix-progress></span></span>
+              <span class="ix-rail__marker" aria-hidden="true" data-ix-marker></span>
+              <ul role="list" data-ix-rail-list>
+                {
+                  covered.map((g) => (
+                    <li>
+                      <a href={`#${g.slug}`} class="ix-rail__link" data-ix-rail-link={g.slug}>
+                        <span>{g.label}</span>
+                        <small>{g.posts.length}</small>
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </nav>
+
+          <div class="ix-chapters">
+            {
+              covered.map((g) => {
+                const [lead, ...rest] = g.posts;
+                return (
+                  <section class="ix-chapter" id={g.slug} aria-labelledby={`${g.slug}-title`} data-ix-chapter>
+                    <figure class="ix-banner" data-ix-reveal>
+                      <img src={g.image} alt={g.imageAlt} width="1536" height="1024" loading="lazy" decoding="async" />
+                      <figcaption class="ix-banner__cap">
+                        <h2 id={`${g.slug}-title`}>{g.label}</h2>
+                        <p>{g.intro}</p>
+                        <span class="ix-banner__meta">
+                          {c.articles(g.posts.length)}
+                          {g.latest && (
+                            <>
+                              <span aria-hidden="true"> · </span>
+                              {c.latest} {fmtLong(g.latest)}
+                            </>
+                          )}
+                        </span>
+                      </figcaption>
+                    </figure>
+
+                    <a href={cfg.articleHref(lead.id)} class="ix-feature" data-ix-reveal data-ix-spot data-ix-tilt>
+                      <span class="ix-feature__media">
+                        <img src={lead.data.heroImage} alt={lead.data.heroImageAlt} width="1200" height="800" loading="lazy" decoding="async" />
+                      </span>
+                      <span class="ix-feature__body">
+                        <span class="ix-feature__flag">{c.featureFlag}</span>
+                        <span class="ix-feature__tag">{catLabel(lead.data.category)}</span>
+                        <h3 class="ix-feature__title">{lead.data.title}</h3>
+                        <span class="ix-feature__desc">{lead.data.description}</span>
+                        <span class="ix-feature__meta">
+                          {readingTime(lead.body)}
+                          {lead.data.pubDate && <> · {fmtShort(lead.data.pubDate)}</>}
+                        </span>
+                      </span>
+                      <span class="ix-feature__arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                          <path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </a>
+
+                    {rest.length > 0 && (
+                      <ul class="ix-list" role="list">
+                        {rest.map((p, i) => (
+                          <li data-ix-reveal style={`--d:${i * 60}ms`}>
+                            <a href={cfg.articleHref(p.id)} class="ix-row" data-ix-spot>
+                              <span class="ix-row__thumb">
+                                <img src={p.data.heroImage} alt={p.data.heroImageAlt} width="600" height="400" loading="lazy" decoding="async" />
+                              </span>
+                              <span class="ix-row__body">
+                                <span class="ix-row__tag">{catLabel(p.data.category)}</span>
+                                <h3 class="ix-row__title">{p.data.title}</h3>
+                                <span class="ix-row__meta">
+                                  {readingTime(p.body)}
+                                  {p.data.pubDate && <> · {fmtShort(p.data.pubDate)}</>}
+                                </span>
+                              </span>
+                              <svg class="ix-row__arrow" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </section>
+                );
+              })
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ix-cta">
+      <div class="ix-cta__glow" aria-hidden="true"></div>
+      <div class="container ix-cta__inner" data-ix-reveal>
+        <span class="eyebrow eyebrow--on-dark">{c.ctaEyebrow}</span>
+        <h2>{c.ctaH2}</h2>
+        <p>{c.ctaBody}</p>
+        <div class="ix-cta__actions">
+          <a href={cfg.contactPath} class="btn btn--primary">{c.ctaContact}</a>
+          <a href={cfg.trendsPath} class="btn btn--ghost-light">{c.ctaTrends}</a>
+        </div>
+      </div>
+    </section>
+
+    <script type="application/json" data-ix-finder-data set:html={JSON.stringify(finderData)} />
+  </div>
+</Layout>
+
+<script>
+  import { initReveal, initCountUp, initSpotlight, followHeader, normalize, escapeHtml, reducedMotion } from '../../scripts/insight-hubs';
+
+  type Entry = { name: string; slug: string; count: number; words: string[] };
+  type FinderData = { contact: string; js: Record<string, string>; index: Entry[] };
+
+  const root = document.querySelector<HTMLElement>('[data-ix]');
+  if (root) {
+    root.classList.add('ix--js');
+    initReveal(root);
+    initCountUp(root);
+    initSpotlight(root);
+    const reduced = reducedMotion();
+
+    const data: FinderData = JSON.parse(root.querySelector('[data-ix-finder-data]')?.textContent || '{}');
+    const index = (data.index || []).map((e) => ({ ...e, words: e.words.map(normalize) }));
+    const js = data.js || {};
+
+    /* ---- Directory filter ---- */
+    const soon = root.querySelector('[data-ix-soon]');
+    const toggle = root.querySelector('.ix-toggle');
+    const filterBtns = root.querySelectorAll<HTMLButtonElement>('[data-ix-filter]');
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const mode = btn.dataset.ixFilter;
+        filterBtns.forEach((b) => {
+          b.classList.toggle('is-active', b === btn);
+          b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+        });
+        toggle?.classList.toggle('is-right', mode === 'covered');
+        soon?.classList.toggle('is-hidden', mode === 'covered');
+      });
+    });
+
+    /* ---- Finder ---- */
+    const input = root.querySelector<HTMLInputElement>('[data-ix-search]')!;
+    const clear = root.querySelector<HTMLButtonElement>('[data-ix-clear]')!;
+    const result = root.querySelector<HTMLElement>('[data-ix-result]')!;
+    const tiles = root.querySelectorAll<HTMLElement>('[data-ix-tile]');
+
+    const find = (q: string) => {
+      if (q.length < 2) return [];
+      const hits: { e: Entry; score: number }[] = [];
+      index.forEach((e) => {
+        let score = 0;
+        e.words.forEach((w) => {
+          if (w === q) score = Math.max(score, 3);
+          else if (w.startsWith(q)) score = Math.max(score, 2);
+          else if (q.length >= 4 && ` ${q} `.includes(` ${w} `)) score = Math.max(score, 2);
+          else if (q.length >= 3 && w.includes(q)) score = Math.max(score, 1);
+        });
+        if (score) hits.push({ e, score });
+      });
+      hits.sort((a, b) => b.score - a.score || b.e.count - a.e.count);
+      return hits.slice(0, 3).map((h) => h.e);
+    };
+
+    const fill = (tpl: string, vars: Record<string, string | number>) =>
+      tpl.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? ''));
+
+    const render = () => {
+      const q = normalize(input.value);
+      clear.hidden = !input.value;
+      const hits = find(q);
+      const slugs = hits.map((h) => h.slug);
+      tiles.forEach((t) => {
+        const s = t.dataset.ixTile || '';
+        t.classList.toggle('is-match', q.length >= 2 && slugs.includes(s));
+        t.classList.toggle('is-dim', q.length >= 2 && !slugs.includes(s));
+      });
+      if (q.length < 2) {
+        result.innerHTML = '';
+        result.classList.remove('is-on');
+        return;
+      }
+      result.classList.add('is-on');
+      if (!hits.length) {
+        result.innerHTML = `<p class="ix-res__none">${escapeHtml(js.noneBefore)} <a href="${data.contact}">${escapeHtml(js.noneLink)}</a> ${escapeHtml(js.noneAfter)}</p>`;
+        return;
+      }
+      result.innerHTML = hits
+        .map((h) =>
+          h.count > 0
+            ? `<a class="ix-res" href="#${h.slug}"><span class="ix-res__dot"></span>${escapeHtml(fill(js.jump, { name: h.name }))}<span class="ix-res__n">${escapeHtml(h.count === 1 ? js.one : fill(js.many, { n: h.count }))}</span></a>`
+            : `<a class="ix-res ix-res--soon" href="${data.contact}"><span class="ix-res__dot"></span>${escapeHtml(fill(js.soon, { name: h.name }))}<span class="ix-res__n">${escapeHtml(js.ask)}</span></a>`,
+        )
+        .join('');
+    };
+
+    let timer: number | undefined;
+    input.addEventListener('input', () => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(render, 90);
+    });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const first = result.querySelector<HTMLAnchorElement>('a');
+        if (first) {
+          e.preventDefault();
+          first.click();
+        }
+      }
+      if (e.key === 'Escape') {
+        input.value = '';
+        render();
+      }
+    });
+    clear.addEventListener('click', () => {
+      input.value = '';
+      render();
+      input.focus();
+    });
+
+    /* ---- Rail: scroll spy, marker, progress ---- */
+    const rail = root.querySelector<HTMLElement>('[data-ix-rail]');
+    const list = root.querySelector<HTMLElement>('[data-ix-rail-list]');
+    const marker = root.querySelector<HTMLElement>('[data-ix-marker]');
+    const progress = root.querySelector<HTMLElement>('[data-ix-progress]');
+    const chapters = Array.from(root.querySelectorAll<HTMLElement>('[data-ix-chapter]'));
+    const links: Record<string, HTMLElement> = {};
+    root.querySelectorAll<HTMLElement>('[data-ix-rail-link]').forEach((a) => {
+      links[a.dataset.ixRailLink || ''] = a;
+    });
+    let activeId: string | null = null;
+    followHeader(rail);
+
+    const place = (a?: HTMLElement) => {
+      if (!a) return;
+      if (window.matchMedia('(min-width: 1024px)').matches) {
+        if (marker) marker.style.transform = `translateY(${a.offsetTop + a.offsetHeight / 2 - 5}px)`;
+      } else if (list) {
+        list.scrollTo({ left: a.offsetLeft - (list.clientWidth - a.offsetWidth) / 2, behavior: reduced ? 'auto' : 'smooth' });
+      }
+    };
+    const setActive = (id: string) => {
+      if (id === activeId) return;
+      activeId = id;
+      Object.entries(links).forEach(([k, a]) => {
+        a.classList.toggle('is-active', k === id);
+        if (k === id) a.setAttribute('aria-current', 'true');
+        else a.removeAttribute('aria-current');
+      });
+      place(links[id]);
+    };
+
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking || !chapters.length) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        const line = window.innerHeight * 0.35;
+        let current = chapters[0].id;
+        chapters.forEach((ch) => {
+          if (ch.getBoundingClientRect().top - line <= 0) current = ch.id;
+        });
+        setActive(current);
+        const first = chapters[0].getBoundingClientRect();
+        const last = chapters[chapters.length - 1].getBoundingClientRect();
+        const total = last.bottom - first.top - window.innerHeight * 0.6;
+        const done = Math.min(1, Math.max(0, (line - first.top) / Math.max(1, total)));
+        if (progress) progress.style.transform = `scaleY(${done.toFixed(3)})`;
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', () => {
+      activeId = null;
+      onScroll();
+    });
+    onScroll();
+
+    /* ---- Flash the chapter a jump lands on ---- */
+    const flash = (hash: string) => {
+      const el = hash ? document.getElementById(decodeURIComponent(hash.slice(1))) : null;
+      if (!el || !el.hasAttribute('data-ix-chapter')) return;
+      el.classList.remove('is-target');
+      void el.offsetWidth;
+      el.classList.add('is-target');
+    };
+    window.addEventListener('hashchange', () => flash(location.hash));
+    if (location.hash) flash(location.hash);
+  }
+</script>

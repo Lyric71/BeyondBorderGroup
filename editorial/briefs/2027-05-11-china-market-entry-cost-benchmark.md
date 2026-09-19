@@ -40,6 +40,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/china-market-entry-cost-benchmark.md` |
 | Primary query | `china market entry cost benchmark` |
 | Difficulty | OPEN |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,200 to 2,400 for the article, plus the gated report (body only, per the char-count rule) |
 | Report | `output/reports/china-market-entry-cost-benchmark.md`, gated PDF, assembled by a person (Gated, aggregated calculator runs) |
 

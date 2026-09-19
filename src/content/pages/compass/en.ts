@@ -217,7 +217,7 @@ const copy: CompassCopy = {
     closingCtaSecondary: 'See the distribution service',
     toolsLine: {
       before: 'Still costing the platform side? Our ',
-      link: 'free cost calculators',
+      link: 'free budget calculators',
       after: ' put a first-year number on Tmall Global, JD Worldwide and Douyin before you brief us.',
     },
   },

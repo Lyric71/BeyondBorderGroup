@@ -4,6 +4,7 @@ description: "Intégration culturelle, engagement écologique, innovation digita
 pubDate: "2024-06-25"
 author: "TheChinaPath"
 category: "Brand & Localization"
+industry: "Fashion & Luxury"
 tags: ["créateurs chinois", "tendances mode", "durabilité", "innovation digitale", "e-commerce Chine"]
 heroImage: "/Images/insights/independent-chinese-designers-2024-trends-marketing-and-commerce-insights.jpeg"
 heroImageAlt: "Source : China Daily"

@@ -4,6 +4,7 @@ description: "166,9 milliards de yuans dépensés sur cinq jours de congés. Le 
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Travel & Hospitality"
 tags: ["voyage de luxe chinois", "préférences consommateurs", "voyage expérientiel", "tourisme bien-être", "influence digitale"]
 heroImage: "/Images/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment.jpg"
 heroImageAlt: "Destination haut de gamme prisée par la clientèle chinoise"

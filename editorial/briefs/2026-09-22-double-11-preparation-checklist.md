@@ -40,6 +40,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/double-11-preparation-checklist.md` |
 | Primary query | `double 11 preparation checklist` |
 | Difficulty | SEAS |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 1,600 to 2,000, plus the checklist asset (body only, per the char-count rule) |
 | Asset | `output/guides/double-11-preparation-checklist.md`, publishes to `/guides/double-11-preparation-checklist/` (Printable checklist, owner per line) |
 

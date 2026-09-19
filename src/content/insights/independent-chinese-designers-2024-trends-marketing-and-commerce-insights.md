@@ -4,6 +4,7 @@ description: "Independent Chinese designers are reshaping the fashion landscape 
 pubDate: "2024-06-25"
 author: "TheChinaPath"
 category: "Brand & Localization"
+industry: "Fashion & Luxury"
 tags: ["Chinese designers", "fashion trends", "sustainability", "digital innovation", "eCommerce China"]
 heroImage: "/Images/insights/independent-chinese-designers-2024-trends-marketing-and-commerce-insights.jpeg"
 heroImageAlt: "Source: China Daily"

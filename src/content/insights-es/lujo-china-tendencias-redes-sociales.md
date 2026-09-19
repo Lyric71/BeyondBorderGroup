@@ -4,6 +4,7 @@ description: "El mercado del lujo en China evoluciona al ritmo de los avances te
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Fashion & Luxury"
 platforms: ["WeChat"]
 tags: ["marcas de lujo", "marketing en redes sociales", "mercado chino", "KOL", "estrategia omnicanal"]
 heroImage: "/Images/insights/luxury-brand-trends-mastering-social-media-in-china.jpg"

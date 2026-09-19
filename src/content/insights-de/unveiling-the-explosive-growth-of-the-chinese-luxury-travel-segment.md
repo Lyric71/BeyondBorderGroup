@@ -4,6 +4,7 @@ description: "Chinas Luxusreise-Markt ist im letzten Jahrzehnt stark gewachsen. 
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Travel & Hospitality"
 tags: ["Chinesischer Luxus-Tourismus", "Konsumvorlieben", "Erlebnisreisen", "Wellness-Tourismus", "Digitaler Einfluss"]
 heroImage: "/Images/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment.jpg"
 heroImageAlt: "Stimmungsbild eines Luxusreise-Ziels"

@@ -2,6 +2,8 @@
 import Layout from '../../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 import { articleSchema } from '../../../lib/seo';
+import { industrySlug } from '../../../content.config';
+import { HUB_CONFIG, INDUSTRIES_COPY, TRENDS_COPY } from '../../../lib/insight-hubs';
 import { insightEnToDe } from '../../../i18n/insight-slugs.mjs';
 
 const enToDe = insightEnToDe as Record<string, string>;
@@ -19,6 +21,19 @@ const { post } = Astro.props;
 const { Content, headings } = await render(post);
 const { title, description, heroImage, heroImageAlt, pubDate, updatedDate, category, author } =
   post.data;
+
+// Articles tagged with an industry belong to the industry hub; the rest to
+// the Trends hub (this folder's index).
+const industry = post.data.industry;
+const hubCfg = HUB_CONFIG.de;
+const industryLabel = industry ? INDUSTRIES_COPY.de!.industries[industry].label : '';
+const hub = industry
+  ? {
+      name: INDUSTRIES_COPY.de!.eyebrow,
+      url: hubCfg.industriesPath,
+      back: `${hubCfg.industriesPath}#${industrySlug(industry)}`,
+    }
+  : { name: TRENDS_COPY.de!.eyebrow, url: hubCfg.trendsPath, back: hubCfg.trendsPath };
 
 // Inhaltsverzeichnis aus den gerenderten Überschriften. H2 und H3, ohne eine
 // einleitende Überschrift, die nur den Artikeltitel wiederholt.
@@ -44,7 +59,7 @@ const articleJsonLd = articleSchema({
   category,
   breadcrumb: [
     { name: 'Startseite', url: '/de' },
-    { name: 'Analysen', url: '/de/analysen' },
+    { name: hub.name, url: hub.url },
     { name: title, url: `/de/analysen/${enToDe[post.id] ?? post.id}` },
   ],
 });
@@ -72,11 +87,19 @@ function readingTime(body: string | undefined) {
 }
 
 const allInsights = await getCollection('insightsDe', ({ data }) => !data.draft);
-const related = allInsights
-  .filter((p) => p.id !== post.id && p.data.category === category)
-  .slice(0, 3);
+// Same industry first when there is one to show; otherwise same category.
+const sameIndustry = industry
+  ? allInsights.filter((p) => p.id !== post.id && p.data.industry === industry)
+  : [];
+const relatedByIndustry = sameIndustry.length > 0;
+const related = (
+  relatedByIndustry
+    ? sameIndustry
+    : allInsights.filter((p) => p.id !== post.id && p.data.category === category)
+).slice(0, 3);
 
 const categoryLabel = categoryLabelsDe[category] ?? category;
+const relatedLabel = relatedByIndustry ? industryLabel : categoryLabel;
 const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
 ---
 
@@ -95,7 +118,7 @@ const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
     <header class="insight-article__header">
       <div class="container container--narrow">
         <nav class="insight-article__crumbs" aria-label="Brotkrumen-Navigation">
-          <a href="/de/analysen">← Zurück zu den Analysen</a>
+          <a href={hub.back}>← {industry ? 'Zurück zu den Branchenanalysen' : 'Zurück zu den Trends'}</a>
         </nav>
         <span class="eyebrow">{categoryLabel}</span>
         <h1 class="insight-article__title">{title}</h1>
@@ -159,10 +182,10 @@ const slugFor = (enSlug: string) => enToDe[enSlug] ?? enSlug;
             <header class="section-header section-header--split">
               <div>
                 <span class="eyebrow">Weiterlesen</span>
-                <h2>In derselben Kategorie: {categoryLabel}</h2>
+                <h2>{relatedByIndustry ? `In derselben Branche: ${relatedLabel}` : `In derselben Kategorie: ${relatedLabel}`}</h2>
               </div>
-              <a href="/de/analysen" class="btn btn--secondary btn--sm">
-                Alle Analysen
+              <a href={hub.url} class="btn btn--secondary btn--sm">
+                {industry ? 'Alle Branchen' : 'Alle Trends'}
               </a>
             </header>
 

@@ -10,6 +10,7 @@ title: "How to sell pet products in China"
 slug: sell-pet-products-china
 primary_query: "sell pet products china"
 difficulty: MED
+industry: "Pets"
 word_count: "2,000 to 2,400"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/sell-pet-products-china.md` |
 | Primary query | `sell pet products china` |
 | Difficulty | MED |
+| Industry | `Pets`, set as `industry` in the insight frontmatter |
 | Body length | 2,000 to 2,400 (body only, per the char-count rule) |
 
 ## The brief
@@ -65,6 +67,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 **CTA.** Request a Compass shortlist of vetted pet category distributors.
 **Do not.** Do not state the pet food registration requirement, the quarantine permit process, or any ingredient restriction as settled fact. Each is verified against the current requirement and cited.
 **Territory guard.** Pet is a category where community and creator content drives demand, and that work sits with TheRedScroll, so the piece names the pattern and links to /social-in-china rather than describing seeding as a service offered here.
+**Link forward.** The W06 Ledger on what it costs to sell pet food in China ships first. Link to it from section 2 with descriptive anchor text, and add the reciprocal link from that Ledger back to this page.
 
 ## Slot spec
 

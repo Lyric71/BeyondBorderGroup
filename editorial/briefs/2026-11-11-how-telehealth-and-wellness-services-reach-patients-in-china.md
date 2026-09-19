@@ -1,21 +1,22 @@
 ---
-brief_id: 09L
-publish_date: 2026-11-04
-week: 09
+brief_id: 10L
+publish_date: 2026-11-11
+week: 10
 weekday: Wed
 slot: L
 slot_name: Ledger
 content_type: Ledger B
-title: "How building systems and HVAC brands actually reach buyers in China"
-slug: how-building-systems-and-hvac-brands-reach-buyers-in-china
+title: "How telehealth and wellness services reach patients in China"
+slug: how-telehealth-and-wellness-services-reach-patients-in-china
 primary_query: ""
+industry: "Health & Wellness"
 word_count: "1,200 to 1,500"
 variant: B
-proof: "Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`."
+proof: "SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite."
 status: not_started
 ---
 
-# BRIEF 09L: How building systems and HVAC brands actually reach buyers in China
+# BRIEF 10L: How telehealth and wellness services reach patients in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,26 +28,27 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 09 |
+| slot | Ledger, Wed of week 10 |
 | brief | this file |
 
 ## Target
 
 | Field | Value |
 |---|---|
-| Working H1 | How building systems and HVAC brands actually reach buyers in China |
-| Slug | `/insights/how-building-systems-and-hvac-brands-reach-buyers-in-china/` |
-| Output file | `output/how-building-systems-and-hvac-brands-reach-buyers-in-china.md` |
+| Working H1 | How telehealth and wellness services reach patients in China |
+| Slug | `/insights/how-telehealth-and-wellness-services-reach-patients-in-china/` |
+| Output file | `output/how-telehealth-and-wellness-services-reach-patients-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Health & Wellness`, set as `industry` in the insight frontmatter |
 | Body length | 1,200 to 1,500 (body only, per the char-count rule) |
 | Ledger variant | B |
-| Proof | Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`. |
+| Proof | SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite. |
 
 ## The brief
 
-**Title:** How building systems and HVAC brands actually reach buyers in China
+**Title:** How telehealth and wellness services reach patients in China
 **Word count:** 1,200 to 1,500
-**Proof.** Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`.
+**Proof.** SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite.
 
 ## Slot spec
 
@@ -88,4 +90,4 @@ category content assumes a Tmall store.
 - [ ] Title under 52, meta under 152, excerpt under 25 words, all counted
 - [ ] New figures appended to `sources/verified-sources.md` with both check dates
 - [ ] Feature image block appended with the correct slug path
-- [ ] File saved as `output/how-building-systems-and-hvac-brands-reach-buyers-in-china.md`
+- [ ] File saved as `output/how-telehealth-and-wellness-services-reach-patients-in-china.md`

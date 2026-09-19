@@ -9,6 +9,7 @@ content_type: Ledger B
 title: "What it costs to sell industrial equipment and components in China"
 slug: cost-to-sell-industrial-equipment-and-components-in-china
 primary_query: ""
+industry: "B2B & Industrial"
 word_count: "1,100 to 1,400"
 variant: B
 proof: "none"
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Slug | `/insights/cost-to-sell-industrial-equipment-and-components-in-china/` |
 | Output file | `output/cost-to-sell-industrial-equipment-and-components-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `B2B & Industrial`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | B |
 | Proof | none |
@@ -54,9 +56,6 @@ Ledger B, no marketplace route, and the load sits on the channel table and on th
 **Block 7.** Link to /compass and /enter-china/distribution.
 
 **Link back.** Pairs with the W44 B2B and industrial anchor. Link from block 1, and add the reciprocal link from the anchor.agentId: aa532f1b7bd3f8ccc (use SendMessage with to: 'aa532f1b7bd3f8ccc', summary: '<5-10 word recap>' to continue this agent)
-<usage>subagent_tokens: 85315
-tool_uses: 2
-duration_ms: 280900</usage>
 
 ## Slot spec
 

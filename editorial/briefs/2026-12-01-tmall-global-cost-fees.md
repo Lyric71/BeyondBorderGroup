@@ -38,6 +38,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/tmall-global-cost-fees.md` |
 | Primary query | `tmall global cost fees` |
 | Difficulty | HELD |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,400 to 2,800 (body only, per the char-count rule) |
 
 ## The brief

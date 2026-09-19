@@ -84,11 +84,31 @@ function table(headingRe) {
   }
   return rows;
 }
+// The Industry column holds one of INSIGHT_INDUSTRIES in src/content.config.ts,
+// or `none` for a cross-industry piece. It becomes the insight's `industry`
+// frontmatter, which is what places it on /insights/industries.
+const INDUSTRIES = (() => {
+  const src = readFileSync(path.join(ROOT, 'src', 'content.config.ts'), 'utf8');
+  const block = src.match(/INSIGHT_INDUSTRIES = \[([\s\S]*?)\]/);
+  return block ? [...block[1].matchAll(/'([^']+)'/g)].map((m) => m[1]) : [];
+})();
+const industryOf = (cell) => {
+  const v = (cell || '').trim();
+  if (!v || v === 'none') return '';
+  if (!INDUSTRIES.includes(v)) throw new Error(`unknown industry in the master plan: ${v}`);
+  return v;
+};
 const anchors = Object.fromEntries(
-  table(/^## The 52 Anchors/).map(([wk, title, query, diff]) => [+wk, { title, query, diff }]),
+  table(/^## The 52 Anchors/).map(([wk, title, query, diff, industry]) => [
+    +wk,
+    { title, query, diff, industry: industryOf(industry) },
+  ]),
 );
 const ledgers = Object.fromEntries(
-  table(/^## The 52 Ledgers/).map(([wk, variant, title, proof]) => [+wk, { variant, title, proof }]),
+  table(/^## The 52 Ledgers/).map(([wk, variant, title, proof, industry]) => [
+    +wk,
+    { variant, title, proof, industry: industryOf(industry) },
+  ]),
 );
 const extras = {};
 for (const [wk, type, title, format] of table(/^## The 12 Assets and Reports/)) {
@@ -175,7 +195,7 @@ function parseCsv(text) {
 // ---------- build ----------
 const HEADER = [
   'publish_date', 'weekday', 'week', 'slot', 'slot_job', 'brief_id', 'brief_file', 'output_file',
-  'working_h1', 'primary_query', 'content_type', 'status', 'drafted_on', 'reviewed_by',
+  'working_h1', 'primary_query', 'content_type', 'industry', 'status', 'drafted_on', 'reviewed_by',
   'published_on', 'quality_passed_on', 'image_generated_on', 'notes',
 ];
 const schedule = [];
@@ -200,7 +220,7 @@ const dod = (outputFile) => `## Definition of done
 - [ ] File saved as \`${outputFile}\`
 `;
 
-function briefFile({ id, date, week, weekday, slotName, slot, section, title, slug, query, diff, wordCount, variant, proof, extra }) {
+function briefFile({ id, date, week, weekday, slotName, slot, section, title, slug, query, diff, wordCount, variant, proof, extra, industry }) {
   const outputFile = `output/${slug}.md`;
   const fm = [
     '---',
@@ -215,6 +235,7 @@ function briefFile({ id, date, week, weekday, slotName, slot, section, title, sl
     `slug: ${slug}`,
     `primary_query: ${JSON.stringify(query || '')}`,
     diff ? `difficulty: ${diff}` : null,
+    industry ? `industry: ${JSON.stringify(industry)}` : null,
     wordCount ? `word_count: ${JSON.stringify(wordCount)}` : null,
     variant ? `variant: ${variant}` : null,
     proof ? `proof: ${JSON.stringify(proof)}` : null,
@@ -231,6 +252,9 @@ function briefFile({ id, date, week, weekday, slotName, slot, section, title, sl
     `| Output file | \`${outputFile}\` |`,
     `| Primary query | \`${query || 'derive from the title'}\` |`,
     diff ? `| Difficulty | ${diff} |` : null,
+    industry
+      ? `| Industry | \`${industry}\`, set as \`industry\` in the insight frontmatter |`
+      : '| Industry | none (cross-industry), leave `industry` out of the frontmatter |',
     `| Body length | ${wordCount || (variant === 'B' ? '1,200 to 1,500 words' : variant === 'A' ? '900 to 1,400 words' : 'see brief')} (body only, per the char-count rule) |`,
     variant ? `| Ledger variant | ${variant} |` : null,
     proof ? `| Proof | ${proof} |` : null,
@@ -323,13 +347,13 @@ for (let week = 1; week <= 52; week++) {
     const wordCount = field(aSec.body, 'Word count');
     write(path.join(ED, file), briefFile({
       id: `${W}A`, date, week, weekday: 'Tue', slotName: 'Anchor', slot: 'A', section: aSec.body,
-      title: a.title, slug, query: a.query, diff: a.diff, wordCount, extra,
+      title: a.title, slug, query: a.query, diff: a.diff, wordCount, extra, industry: a.industry,
     }));
     briefCount++;
     pushRow({
       publish_date: date, weekday: 'Tue', week: W, slot: 'A', slot_job: 'anchor', brief_id: `${W}A`,
       brief_file: file, output_file: `output/${slug}.md`, working_h1: a.title, primary_query: a.query,
-      content_type: contentType('Anchor', null, extra), status: 'not_started',
+      content_type: contentType('Anchor', null, extra), industry: a.industry, status: 'not_started',
       notes: extra ? `${extra.type}: ${extra.title} (${extra.format})` : '',
     });
   }
@@ -354,13 +378,13 @@ for (let week = 1; week <= 52; week++) {
     const file = `briefs/${date}-${slug}.md`;
     write(path.join(ED, file), briefFile({
       id: `${W}L`, date, week, weekday: 'Wed', slotName: 'Ledger', slot: 'L', section: lSec.body,
-      title: l.title, slug, query, wordCount, variant: l.variant, proof: l.proof,
+      title: l.title, slug, query, wordCount, variant: l.variant, proof: l.proof, industry: l.industry,
     }));
     briefCount++;
     pushRow({
       publish_date: date, weekday: 'Wed', week: W, slot: 'L', slot_job: `ledger ${l.variant}`, brief_id: `${W}L`,
       brief_file: file, output_file: `output/${slug}.md`, working_h1: l.title, primary_query: query,
-      content_type: `Ledger ${l.variant}`, status, notes,
+      content_type: `Ledger ${l.variant}`, industry: l.industry, status, notes,
     });
   }
 
@@ -371,7 +395,7 @@ for (let week = 1; week <= 52; week++) {
     brief_id: `${W}${odd ? 'T' : 'R'}`, brief_file: odd ? 'briefs/templates/teardown.md' : 'briefs/templates/refresh.md',
     output_file: '', working_h1: '', primary_query: '', content_type: odd ? 'Teardown' : 'Refresh', status: 'not_started',
     notes: odd
-      ? 'Pick a brand that passes all four criteria in sources/teardown-criteria.md. Never a client.'
+      ? 'Pick a brand that passes all four criteria in sources/teardown-criteria.md. Never a client. Prefer an industry still shown as in the works on /insights/industries.'
       : 'Oldest insight by updatedDate first (see RUNBOOK). Year-only change = skipped.',
   });
 }

@@ -4,6 +4,7 @@ description: "JD.com und 100 Marken stellen 10 Milliarden Yuan für Altgerätepr
 pubDate: "2026-07-05"
 author: "Cyril Drouin"
 category: "E-Commerce"
+industry: "Electronics & Appliances"
 platforms: ["JD"]
 tags: ["JD", "Altgeräteprämie", "Haushaltsgeräte", "Lieferkette", "China E-Commerce"]
 heroImage: "/Images/insights/jd-double-subsidy-plan-supply-chain-play.png"

@@ -38,6 +38,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/douyin-store-vs-douyin-ads.md` |
 | Primary query | `douyin store vs douyin ads` |
 | Difficulty | OPEN |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 1,900 to 2,300 (body only, per the char-count rule) |
 
 ## The brief

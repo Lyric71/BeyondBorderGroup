@@ -4,6 +4,7 @@ description: "El viajero chino de lujo busca cada vez más inmersión cultural a
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Travel & Hospitality"
 platforms: ["WeChat"]
 tags: ["viajero chino de alta gama", "inmersión cultural", "viajes personalizados", "engagement digital", "marketing en WeChat"]
 heroImage: "/Images/insights/top-digital-marketing-strategies-to-attract-chinese-luxury-travelers.jpg"

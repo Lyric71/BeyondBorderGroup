@@ -1,21 +1,22 @@
 ---
-brief_id: 08L
-publish_date: 2026-10-28
-week: 08
+brief_id: 07L
+publish_date: 2026-10-21
+week: 07
 weekday: Wed
 slot: L
 slot_name: Ledger
 content_type: Ledger B
-title: "How automotive and EV brands actually reach buyers in China"
-slug: how-automotive-and-ev-brands-reach-buyers-in-china
+title: "How insurance and financial services reach customers in China"
+slug: how-insurance-and-financial-services-reach-customers-in-china
 primary_query: ""
+industry: "Financial & Professional Services"
 word_count: "1,200 to 1,500"
 variant: B
-proof: "Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`."
+proof: "Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is."
 status: not_started
 ---
 
-# BRIEF 08L: How automotive and EV brands actually reach buyers in China
+# BRIEF 07L: How insurance and financial services reach customers in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,33 +28,27 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 08 |
+| slot | Ledger, Wed of week 07 |
 | brief | this file |
 
 ## Target
 
 | Field | Value |
 |---|---|
-| Working H1 | How automotive and EV brands actually reach buyers in China |
-| Slug | `/insights/how-automotive-and-ev-brands-reach-buyers-in-china/` |
-| Output file | `output/how-automotive-and-ev-brands-reach-buyers-in-china.md` |
+| Working H1 | How insurance and financial services reach customers in China |
+| Slug | `/insights/how-insurance-and-financial-services-reach-customers-in-china/` |
+| Output file | `output/how-insurance-and-financial-services-reach-customers-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Financial & Professional Services`, set as `industry` in the insight frontmatter |
 | Body length | 1,200 to 1,500 (body only, per the char-count rule) |
 | Ledger variant | B |
-| Proof | Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`. |
+| Proof | Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is. |
 
 ## The brief
 
-**Title:** How automotive and EV brands actually reach buyers in China
+**Title:** How insurance and financial services reach customers in China
 **Word count:** 1,200 to 1,500
-
-**Ledger B variant.** No fee table. The table is channel by channel: what it reaches, what it costs to run monthly, what a qualified lead costs, and who owns it.
-
-Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi as the vertical portals, WeChat for dealer handoff, and offline events. Say plainly that the vehicle is not sold cross-border and that this is a demand-generation and dealer-handoff problem, not a marketplace one.
-
-**Proof.** Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`.
-**Internal links.** `/grow-in-china/campaigns`, `/grow-in-china/media`, `/social-in-china`
-**CTA.** Talk to us.
+**Proof.** Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is.
 
 ## Slot spec
 
@@ -95,4 +90,4 @@ category content assumes a Tmall store.
 - [ ] Title under 52, meta under 152, excerpt under 25 words, all counted
 - [ ] New figures appended to `sources/verified-sources.md` with both check dates
 - [ ] Feature image block appended with the correct slug path
-- [ ] File saved as `output/how-automotive-and-ev-brands-reach-buyers-in-china.md`
+- [ ] File saved as `output/how-insurance-and-financial-services-reach-customers-in-china.md`

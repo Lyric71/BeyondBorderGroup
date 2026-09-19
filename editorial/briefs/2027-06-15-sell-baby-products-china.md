@@ -10,6 +10,7 @@ title: "How to sell maternity and baby products in China"
 slug: sell-baby-products-china
 primary_query: "sell baby products china"
 difficulty: HELD
+industry: "Mother & Baby"
 word_count: "2,200 to 2,400"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/sell-baby-products-china.md` |
 | Primary query | `sell baby products china` |
 | Difficulty | HELD |
+| Industry | `Mother & Baby`, set as `industry` in the insight frontmatter |
 | Body length | 2,200 to 2,400 (body only, per the char-count rule) |
 
 ## The brief
@@ -64,6 +66,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 **Internal links.** /enter-china/cross-border-setup, /compass/shortlist, /enter-china/distribution, /tools/tmall-global-setup-and-run, /enter-china/branding-localisation
 **CTA.** Request a Compass shortlist of vetted maternity and baby distributors.
 **Do not.** Do not write a single set of rules for the whole category; the incumbents' pages fail exactly there and the matrix is how this page beats them. Do not assert any registration requirement, timeline or fee without a cited primary source and an access date.
+**Link forward.** The W08 Ledger on what it costs to sell baby care and hygiene products in China ships first. Link to it from section 2 with descriptive anchor text, and add the reciprocal link from that Ledger back to this page.
 
 ## Slot spec
 

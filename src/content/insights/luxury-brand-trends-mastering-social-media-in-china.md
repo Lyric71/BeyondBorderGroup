@@ -4,6 +4,7 @@ description: "China's luxury market evolves through technological advances and d
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Fashion & Luxury"
 platforms: ["WeChat"]
 tags: ["luxury brands", "social media marketing", "China market", "KOLs", "omnichannel strategy"]
 heroImage: "/Images/insights/luxury-brand-trends-mastering-social-media-in-china.jpg"

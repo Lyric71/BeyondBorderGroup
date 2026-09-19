@@ -4,6 +4,7 @@ description: "El mercado chino de viajes de lujo se ha multiplicado en la últim
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Travel & Hospitality"
 tags: ["viajes de lujo en China", "preferencias del consumidor", "viaje experiencial", "turismo de bienestar", "influencia digital"]
 heroImage: "/Images/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment.jpg"
 heroImageAlt: "Destino panorámico de viaje de lujo"

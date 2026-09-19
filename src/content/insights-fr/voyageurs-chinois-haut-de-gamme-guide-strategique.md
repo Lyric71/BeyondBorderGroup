@@ -4,6 +4,7 @@ description: "Le voyageur chinois aisé exige désormais immersion culturelle, s
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Travel & Hospitality"
 platforms: ["WeChat"]
 tags: ["voyageurs chinois haut de gamme", "immersion culturelle", "voyage sur mesure", "engagement digital", "marketing WeChat"]
 heroImage: "/Images/insights/top-digital-marketing-strategies-to-attract-chinese-luxury-travelers.jpg"

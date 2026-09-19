@@ -5,6 +5,7 @@ pubDate: "2026-09-16"
 updatedDate: "2026-09-16"
 author: "TheChinaPath"
 category: "E-Commerce"
+industry: "Beauty & Personal Care"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Skincare", "Tmall Global", "JD Worldwide", "Douyin", "cross-border ecommerce", "platform fees", "NMPA"]
 keyTakeaways:

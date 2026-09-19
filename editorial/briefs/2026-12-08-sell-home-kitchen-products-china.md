@@ -10,6 +10,7 @@ title: "Selling home and kitchen brands into China"
 slug: sell-home-kitchen-products-china
 primary_query: "sell home kitchen products china"
 difficulty: OPEN
+industry: "Home & Living"
 word_count: "2,000 to 2,400"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/sell-home-kitchen-products-china.md` |
 | Primary query | `sell home kitchen products china` |
 | Difficulty | OPEN |
+| Industry | `Home & Living`, set as `industry` in the insight frontmatter |
 | Body length | 2,000 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

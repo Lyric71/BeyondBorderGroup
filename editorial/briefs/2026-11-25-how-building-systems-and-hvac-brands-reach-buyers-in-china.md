@@ -1,21 +1,22 @@
 ---
-brief_id: 11L
-publish_date: 2026-11-18
-week: 11
+brief_id: 12L
+publish_date: 2026-11-25
+week: 12
 weekday: Wed
 slot: L
 slot_name: Ledger
 content_type: Ledger B
-title: "How insurance and financial services reach customers in China"
-slug: how-insurance-and-financial-services-reach-customers-in-china
+title: "How building systems and HVAC brands actually reach buyers in China"
+slug: how-building-systems-and-hvac-brands-reach-buyers-in-china
 primary_query: ""
+industry: "B2B & Industrial"
 word_count: "1,200 to 1,500"
 variant: B
-proof: "Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is."
+proof: "Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`."
 status: not_started
 ---
 
-# BRIEF 11L: How insurance and financial services reach customers in China
+# BRIEF 12L: How building systems and HVAC brands actually reach buyers in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,26 +28,27 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 11 |
+| slot | Ledger, Wed of week 12 |
 | brief | this file |
 
 ## Target
 
 | Field | Value |
 |---|---|
-| Working H1 | How insurance and financial services reach customers in China |
-| Slug | `/insights/how-insurance-and-financial-services-reach-customers-in-china/` |
-| Output file | `output/how-insurance-and-financial-services-reach-customers-in-china.md` |
+| Working H1 | How building systems and HVAC brands actually reach buyers in China |
+| Slug | `/insights/how-building-systems-and-hvac-brands-reach-buyers-in-china/` |
+| Output file | `output/how-building-systems-and-hvac-brands-reach-buyers-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `B2B & Industrial`, set as `industry` in the insight frontmatter |
 | Body length | 1,200 to 1,500 (body only, per the char-count rule) |
 | Ledger variant | B |
-| Proof | Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is. |
+| Proof | Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`. |
 
 ## The brief
 
-**Title:** How insurance and financial services reach customers in China
+**Title:** How building systems and HVAC brands actually reach buyers in China
 **Word count:** 1,200 to 1,500
-**Proof.** Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is.
+**Proof.** Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`.
 
 ## Slot spec
 
@@ -88,4 +90,4 @@ category content assumes a Tmall store.
 - [ ] Title under 52, meta under 152, excerpt under 25 words, all counted
 - [ ] New figures appended to `sources/verified-sources.md` with both check dates
 - [ ] Feature image block appended with the correct slug path
-- [ ] File saved as `output/how-insurance-and-financial-services-reach-customers-in-china.md`
+- [ ] File saved as `output/how-building-systems-and-hvac-brands-reach-buyers-in-china.md`

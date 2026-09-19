@@ -40,6 +40,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/double-11-last-minute-checklist.md` |
 | Primary query | `double 11 last minute checklist` |
 | Difficulty | SEAS |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 1,500 to 1,900, plus the run sheet asset (body only, per the char-count rule) |
 | Asset | `output/guides/double-11-last-minute-checklist.md`, publishes to `/guides/double-11-last-minute-checklist/` (Day-by-day run sheet) |
 

@@ -4,6 +4,7 @@ description: "China's luxury travel market has expanded exponentially over the p
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Travel & Hospitality"
 tags: ["Chinese luxury travel", "consumer preferences", "experiential travel", "wellness tourism", "digital influence"]
 heroImage: "/Images/insights/unveiling-the-explosive-growth-of-the-chinese-luxury-travel-segment.jpg"
 heroImageAlt: "Scenic luxury travel destination"

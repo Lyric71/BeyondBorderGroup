@@ -1,7 +1,7 @@
 ---
-brief_id: 18L
-publish_date: 2027-01-06
-week: 18
+brief_id: 09L
+publish_date: 2026-11-04
+week: 09
 weekday: Wed
 slot: L
 slot_name: Ledger
@@ -9,13 +9,14 @@ content_type: Ledger A
 title: "What it costs to sell toys and games in China"
 slug: cost-to-sell-toys-and-games-in-china
 primary_query: ""
+industry: "Sports & Leisure"
 word_count: "1,100 to 1,400"
 variant: A
 proof: "none"
 status: not_started
 ---
 
-# BRIEF 18L: What it costs to sell toys and games in China
+# BRIEF 09L: What it costs to sell toys and games in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,7 +28,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 18 |
+| slot | Ledger, Wed of week 09 |
 | brief | this file |
 
 ## Target
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Slug | `/insights/cost-to-sell-toys-and-games-in-china/` |
 | Output file | `output/cost-to-sell-toys-and-games-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Sports & Leisure`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
 | Proof | none |

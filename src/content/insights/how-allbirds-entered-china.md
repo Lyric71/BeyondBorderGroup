@@ -5,6 +5,7 @@ pubDate: "2026-09-10"
 updatedDate: "2026-09-10"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Fashion & Luxury"
 platforms: ["Tmall", "JD", "Xiaohongshu"]
 tags: ["Allbirds", "Footwear", "Market entry", "Distributor", "Tmall Global", "JD Worldwide", "Teardown"]
 keyTakeaways:

@@ -4,6 +4,7 @@ description: "Unabhängige chinesische Designer formen die Mode neu, durch kultu
 pubDate: "2024-06-25"
 author: "TheChinaPath"
 category: "Brand & Localization"
+industry: "Fashion & Luxury"
 tags: ["Chinesische Designer", "Modetrends", "Nachhaltigkeit", "Digitale Innovation", "eCommerce China"]
 heroImage: "/Images/insights/independent-chinese-designers-2024-trends-marketing-and-commerce-insights.jpeg"
 heroImageAlt: "Quelle: China Daily"

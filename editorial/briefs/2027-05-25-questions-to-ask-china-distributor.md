@@ -40,6 +40,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/questions-to-ask-china-distributor.md` |
 | Primary query | `questions to ask china distributor` |
 | Difficulty | OPEN |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,000 to 2,400 (body only, per the char-count rule) |
 | Asset | `output/guides/questions-to-ask-china-distributor.md`, publishes to `/guides/questions-to-ask-china-distributor/` (Question, good answer, red flag) |
 

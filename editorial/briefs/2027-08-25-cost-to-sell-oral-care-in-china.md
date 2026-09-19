@@ -1,21 +1,22 @@
 ---
-brief_id: 07L
-publish_date: 2026-10-21
-week: 07
+brief_id: 51L
+publish_date: 2027-08-25
+week: 51
 weekday: Wed
 slot: L
 slot_name: Ledger
 content_type: Ledger A
-title: "What it costs to sell lighting and home design in China"
-slug: cost-to-sell-lighting-and-home-design-in-china
+title: "What it costs to sell oral care in China"
+slug: cost-to-sell-oral-care-in-china
 primary_query: ""
+industry: "Beauty & Personal Care"
 word_count: "1,100 to 1,400"
 variant: A
-proof: "iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`."
+proof: "none"
 status: not_started
 ---
 
-# BRIEF 07L: What it costs to sell lighting and home design in China
+# BRIEF 51L: What it costs to sell oral care in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,26 +28,30 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 07 |
+| slot | Ledger, Wed of week 51 |
 | brief | this file |
 
 ## Target
 
 | Field | Value |
 |---|---|
-| Working H1 | What it costs to sell lighting and home design in China |
-| Slug | `/insights/cost-to-sell-lighting-and-home-design-in-china/` |
-| Output file | `output/cost-to-sell-lighting-and-home-design-in-china.md` |
+| Working H1 | What it costs to sell oral care in China |
+| Slug | `/insights/cost-to-sell-oral-care-in-china/` |
+| Output file | `output/cost-to-sell-oral-care-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Beauty & Personal Care`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
-| Proof | iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`. |
+| Proof | none |
 
 ## The brief
 
-**Title:** What it costs to sell lighting and home design in China
+**Title:** What it costs to sell oral care in China
 **Word count:** 1,100 to 1,400
-**Proof.** iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`.
+
+Block 3 carries this one. Oral care is a classification trap: the regulatory treatment of toothpaste changed, and whether a product is handled as a cosmetic, an ordinary consumer good, or something with an efficacy claim depends on what the pack says, so a whitening or anti-sensitivity claim can pull an otherwise simple SKU into a heavier filing and substantiation path. Writer must verify and cite the current rule set governing toothpaste specifically, including any filing or record requirement and any efficacy substantiation obligation for whitening and gum health claims, and must show the cost difference in block 4 between a plain-claim SKU and a claims SKU. Block 5 should say which claims are worth paying for at this category's order value and which are not.
+
+**Proof.** None available. Use the block 6 honesty line.
 
 ## Slot spec
 
@@ -93,4 +98,4 @@ published, do not write this page. Merge it into that one.
 - [ ] Title under 52, meta under 152, excerpt under 25 words, all counted
 - [ ] New figures appended to `sources/verified-sources.md` with both check dates
 - [ ] Feature image block appended with the correct slug path
-- [ ] File saved as `output/cost-to-sell-lighting-and-home-design-in-china.md`
+- [ ] File saved as `output/cost-to-sell-oral-care-in-china.md`

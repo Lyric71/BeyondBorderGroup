@@ -4,6 +4,7 @@ description: "AI integration is transforming personal computers into intelligent
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "AI & Innovation"
+industry: "Electronics & Appliances"
 tags: ["AI-integrated PCs", "China market", "marketing strategy", "consumer education", "product positioning"]
 heroImage: "/Images/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china.jpg"
 heroImageAlt: "Professional workspace with modern computer equipment"

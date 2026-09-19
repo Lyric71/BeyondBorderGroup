@@ -4,6 +4,7 @@ description: "El viajero chino de alta gama es un segmento que está reordenando
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
+industry: "Travel & Hospitality"
 tags: ["viajeros chinos de lujo", "preferencias de viaje", "consumidor de alto poder adquisitivo", "viaje experiencial", "sensibilidad cultural"]
 heroImage: "/Images/insights/unveiling-the-preferences-and-motivations-of-todays-luxury-chinese-travelers.jpg"
 heroImageAlt: "Viajero chino de alta gama"

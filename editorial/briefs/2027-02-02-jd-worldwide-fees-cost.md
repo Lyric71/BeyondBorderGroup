@@ -38,6 +38,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/jd-worldwide-fees-cost.md` |
 | Primary query | `jd worldwide fees cost` |
 | Difficulty | MED |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,000 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

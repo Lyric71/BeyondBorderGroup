@@ -4,6 +4,7 @@ description: "L'intelligence artificielle s'installe au cœur des ordinateurs pe
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "AI & Innovation"
+industry: "Electronics & Appliances"
 tags: ["PC dopés à l'IA", "marché chinois", "stratégie marketing", "pédagogie client", "positionnement produit"]
 heroImage: "/Images/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china.jpg"
 heroImageAlt: "Poste de travail professionnel équipé de matériel informatique moderne"

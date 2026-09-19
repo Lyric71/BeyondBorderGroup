@@ -10,6 +10,7 @@ title: "How to sell beauty and skincare in China in 2027"
 slug: sell-cosmetics-china-foreign-brand
 primary_query: "sell cosmetics china foreign brand"
 difficulty: HELD
+industry: "Beauty & Personal Care"
 word_count: "2,200 to 2,400"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/sell-cosmetics-china-foreign-brand.md` |
 | Primary query | `sell cosmetics china foreign brand` |
 | Difficulty | HELD |
+| Industry | `Beauty & Personal Care`, set as `industry` in the insight frontmatter |
 | Body length | 2,200 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

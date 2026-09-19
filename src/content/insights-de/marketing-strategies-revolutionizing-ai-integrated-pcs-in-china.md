@@ -4,6 +4,7 @@ description: "KI-Integration verwandelt PCs in intelligente Assistenten. Das ver
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "AI & Innovation"
+industry: "Electronics & Appliances"
 tags: ["KI-PC", "China-Markt", "Marketing-Strategie", "Konsumentenaufklärung", "Produktpositionierung"]
 heroImage: "/Images/insights/marketing-strategies-revolutionizing-ai-integrated-pcs-in-china.jpg"
 heroImageAlt: "Professioneller Arbeitsplatz mit modernem Computer"

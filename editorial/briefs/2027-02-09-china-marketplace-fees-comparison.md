@@ -40,6 +40,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/china-marketplace-fees-comparison.md` |
 | Primary query | `china marketplace fees comparison` |
 | Difficulty | HELD |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,200 to 2,400 (body only, per the char-count rule) |
 | Report | `output/reports/china-marketplace-fees-comparison.md`, gated PDF, assembled by a person (Gated sheet, every platform, every fee line) |
 

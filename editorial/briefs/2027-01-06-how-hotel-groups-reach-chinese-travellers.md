@@ -1,7 +1,7 @@
 ---
-brief_id: 10L
-publish_date: 2026-11-11
-week: 10
+brief_id: 18L
+publish_date: 2027-01-06
+week: 18
 weekday: Wed
 slot: L
 slot_name: Ledger
@@ -9,13 +9,14 @@ content_type: Ledger B
 title: "How hotel groups actually reach Chinese travellers"
 slug: how-hotel-groups-reach-chinese-travellers
 primary_query: ""
+industry: "Travel & Hospitality"
 word_count: "1,200 to 1,500"
 variant: B
 proof: "Marriott, including the published Tmall Super Brand Day and Bonvoy enrolment figures. Channels: Fliggy and Ctrip, WeChat mini programme for direct booking, RedNote for consideration, and the loyalty programme as the actual asset. This is the one Ledger B with a marketplace component, so it can carry a partial fee table for Fliggy."
 status: not_started
 ---
 
-# BRIEF 10L: How hotel groups actually reach Chinese travellers
+# BRIEF 18L: How hotel groups actually reach Chinese travellers
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,7 +28,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 10 |
+| slot | Ledger, Wed of week 18 |
 | brief | this file |
 
 ## Target
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Slug | `/insights/how-hotel-groups-reach-chinese-travellers/` |
 | Output file | `output/how-hotel-groups-reach-chinese-travellers.md` |
 | Primary query | `derive from the title` |
+| Industry | `Travel & Hospitality`, set as `industry` in the insight frontmatter |
 | Body length | 1,200 to 1,500 (body only, per the char-count rule) |
 | Ledger variant | B |
 | Proof | Marriott, including the published Tmall Super Brand Day and Bonvoy enrolment figures. Channels: Fliggy and Ctrip, WeChat mini programme for direct booking, RedNote for consideration, and the loyalty programme as the actual asset. This is the one Ledger B with a marketplace component, so it can carry a partial fee table for Fliggy. |

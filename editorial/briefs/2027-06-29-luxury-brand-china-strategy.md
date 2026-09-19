@@ -10,6 +10,7 @@ title: "How to sell luxury and premium goods in China now"
 slug: luxury-brand-china-strategy
 primary_query: "luxury brand china strategy"
 difficulty: HELD
+industry: "Fashion & Luxury"
 word_count: "2,200 to 2,400"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/luxury-brand-china-strategy.md` |
 | Primary query | `luxury brand china strategy` |
 | Difficulty | HELD |
+| Industry | `Fashion & Luxury`, set as `industry` in the insight frontmatter |
 | Body length | 2,200 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

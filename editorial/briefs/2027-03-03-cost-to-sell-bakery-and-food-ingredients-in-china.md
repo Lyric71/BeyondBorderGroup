@@ -1,21 +1,22 @@
 ---
-brief_id: 06L
-publish_date: 2026-10-14
-week: 06
+brief_id: 26L
+publish_date: 2027-03-03
+week: 26
 weekday: Wed
 slot: L
 slot_name: Ledger
 content_type: Ledger A
-title: "What it costs to sell home textiles and bedding in China"
-slug: cost-to-sell-home-textiles-and-bedding-in-china
+title: "What it costs to sell bakery and food ingredients in China"
+slug: cost-to-sell-bakery-and-food-ingredients-in-china
 primary_query: ""
+industry: "Food & Beverage"
 word_count: "1,100 to 1,400"
 variant: A
-proof: "Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page."
+proof: "Master Martini, Kerry DaVinci Gourmet."
 status: not_started
 ---
 
-# BRIEF 06L: What it costs to sell home textiles and bedding in China
+# BRIEF 26L: What it costs to sell bakery and food ingredients in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,26 +28,29 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 06 |
+| slot | Ledger, Wed of week 26 |
 | brief | this file |
 
 ## Target
 
 | Field | Value |
 |---|---|
-| Working H1 | What it costs to sell home textiles and bedding in China |
-| Slug | `/insights/cost-to-sell-home-textiles-and-bedding-in-china/` |
-| Output file | `output/cost-to-sell-home-textiles-and-bedding-in-china.md` |
+| Working H1 | What it costs to sell bakery and food ingredients in China |
+| Slug | `/insights/cost-to-sell-bakery-and-food-ingredients-in-china/` |
+| Output file | `output/cost-to-sell-bakery-and-food-ingredients-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Food & Beverage`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
-| Proof | Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page. |
+| Proof | Master Martini, Kerry DaVinci Gourmet. |
 
 ## The brief
 
-**Title:** What it costs to sell home textiles and bedding in China
+**Title:** What it costs to sell bakery and food ingredients in China
 **Word count:** 1,100 to 1,400
-**Proof.** Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page.
+
+This one is partly B2B, so block 5 splits: marketplace for consumer-facing SKUs, distributor for foodservice. Say so plainly, it is the honest answer and it links to `/enter-china/distribution`.
+**Proof.** Master Martini, Kerry DaVinci Gourmet.
 
 ## Slot spec
 
@@ -93,4 +97,4 @@ published, do not write this page. Merge it into that one.
 - [ ] Title under 52, meta under 152, excerpt under 25 words, all counted
 - [ ] New figures appended to `sources/verified-sources.md` with both check dates
 - [ ] Feature image block appended with the correct slug path
-- [ ] File saved as `output/cost-to-sell-home-textiles-and-bedding-in-china.md`
+- [ ] File saved as `output/cost-to-sell-bakery-and-food-ingredients-in-china.md`

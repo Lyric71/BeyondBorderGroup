@@ -38,6 +38,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/find-distributor-china-verify.md` |
 | Primary query | `find distributor china verify` |
 | Difficulty | WEAK |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,000 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

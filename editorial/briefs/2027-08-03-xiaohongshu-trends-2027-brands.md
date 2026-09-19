@@ -38,6 +38,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/xiaohongshu-trends-2027-brands.md` |
 | Primary query | `xiaohongshu trends 2027 brands` |
 | Difficulty | MED |
+| Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,000 to 2,300 (body only, per the char-count rule) |
 
 ## The brief

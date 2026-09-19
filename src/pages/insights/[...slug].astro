@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 import { articleSchema } from '../../lib/seo';
+import { industrySlug } from '../../content.config';
 
 export async function getStaticPaths() {
   const posts = await getCollection('insights', ({ data }) => !data.draft);
@@ -21,10 +22,17 @@ const {
   pubDate,
   updatedDate,
   category,
+  industry,
   tags,
   author,
   keyTakeaways,
 } = post.data;
+
+// Articles tagged with an industry belong to /insights/industries; the rest
+// belong to /insights, which the menu calls Trends.
+const hub = industry
+  ? { name: 'Industry Insights', url: '/insights/industries', back: `/insights/industries#${industrySlug(industry)}` }
+  : { name: 'Trends', url: '/insights', back: '/insights' };
 
 interface AuthorInfo {
   url: string;
@@ -80,7 +88,7 @@ const articleJsonLd = articleSchema({
   category,
   breadcrumb: [
     { name: 'Home', url: '/' },
-    { name: 'Insights', url: '/insights' },
+    { name: hub.name, url: hub.url },
     { name: title, url: `/insights/${post.id}` },
   ],
 });
@@ -98,9 +106,17 @@ function readingTime(body: string | undefined) {
 }
 
 const allInsights = await getCollection('insights', ({ data }) => !data.draft);
-const related = allInsights
-  .filter((p) => p.id !== post.id && p.data.category === category)
-  .slice(0, 3);
+// Same industry first when there is one to show; otherwise same category.
+const sameIndustry = industry
+  ? allInsights.filter((p) => p.id !== post.id && p.data.industry === industry)
+  : [];
+const relatedByIndustry = sameIndustry.length > 0;
+const related = (
+  relatedByIndustry
+    ? sameIndustry
+    : allInsights.filter((p) => p.id !== post.id && p.data.category === category)
+).slice(0, 3);
+const relatedLabel = relatedByIndustry ? industry : category;
 ---
 
 <Layout
@@ -118,7 +134,7 @@ const related = allInsights
     <header class="insight-article__header">
       <div class="container container--narrow">
         <nav class="insight-article__crumbs" aria-label="Breadcrumb">
-          <a href="/insights">← Back to insights</a>
+          <a href={hub.back}>← Back to {hub.name.toLowerCase()}</a>
         </nav>
         <span class="eyebrow">{category}</span>
         <h1 class="insight-article__title">{title}</h1>
@@ -227,10 +243,10 @@ const related = allInsights
             <header class="section-header section-header--split">
               <div>
                 <span class="eyebrow">Keep reading</span>
-                <h2>More in {category}</h2>
+                <h2>More in {relatedLabel}</h2>
               </div>
-              <a href="/insights" class="btn btn--secondary btn--sm">
-                All insights
+              <a href={hub.url} class="btn btn--secondary btn--sm">
+                {industry ? 'All industries' : 'All trends'}
               </a>
             </header>
 

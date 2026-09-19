@@ -1,21 +1,22 @@
 ---
-brief_id: 51L
-publish_date: 2027-08-25
-week: 51
+brief_id: 04L
+publish_date: 2026-09-30
+week: 04
 weekday: Wed
 slot: L
 slot_name: Ledger
 content_type: Ledger A
-title: "What it costs to sell baby care and hygiene products in China"
-slug: cost-to-sell-baby-care-and-hygiene-products-in-china
+title: "What it costs to sell home textiles and bedding in China"
+slug: cost-to-sell-home-textiles-and-bedding-in-china
 primary_query: ""
+industry: "Home & Living"
 word_count: "1,100 to 1,400"
 variant: A
-proof: "none"
+proof: "Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page."
 status: not_started
 ---
 
-# BRIEF 51L: What it costs to sell baby care and hygiene products in China
+# BRIEF 04L: What it costs to sell home textiles and bedding in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,29 +28,27 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 51 |
+| slot | Ledger, Wed of week 04 |
 | brief | this file |
 
 ## Target
 
 | Field | Value |
 |---|---|
-| Working H1 | What it costs to sell baby care and hygiene products in China |
-| Slug | `/insights/cost-to-sell-baby-care-and-hygiene-products-in-china/` |
-| Output file | `output/cost-to-sell-baby-care-and-hygiene-products-in-china.md` |
+| Working H1 | What it costs to sell home textiles and bedding in China |
+| Slug | `/insights/cost-to-sell-home-textiles-and-bedding-in-china/` |
+| Output file | `output/cost-to-sell-home-textiles-and-bedding-in-china.md` |
 | Primary query | `derive from the title` |
+| Industry | `Home & Living`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
-| Proof | none |
+| Proof | Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page. |
 
 ## The brief
 
-**Title:** What it costs to sell baby care and hygiene products in China
+**Title:** What it costs to sell home textiles and bedding in China
 **Word count:** 1,100 to 1,400
-
-Block 3 carries this, and the specific trap is that a product marketed for children or infants can face a stricter regime than the same formulation marketed for adults. Instruct the writer to verify and cite the current Chinese regulatory treatment of children's cosmetics, including whether a separate registration or filing track and a distinct safety assessment apply, whether the cross-border route changes that, and the labelling and claims restrictions that apply to products aimed at infants. Diapers and wipes need their own check, since they may fall under different product standards from wash and skincare, and the writer should confirm and cite rather than group them. Block 4 should note that this is a high-repeat, low-ticket category, so breakeven is a subscription-like calculation and should be modelled on repeat rate, not on first order value.
-
-**Proof.** None available. Use the block 6 honesty line.
+**Proof.** Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page.
 
 ## Slot spec
 
@@ -96,4 +95,4 @@ published, do not write this page. Merge it into that one.
 - [ ] Title under 52, meta under 152, excerpt under 25 words, all counted
 - [ ] New figures appended to `sources/verified-sources.md` with both check dates
 - [ ] Feature image block appended with the correct slug path
-- [ ] File saved as `output/cost-to-sell-baby-care-and-hygiene-products-in-china.md`
+- [ ] File saved as `output/cost-to-sell-home-textiles-and-bedding-in-china.md`

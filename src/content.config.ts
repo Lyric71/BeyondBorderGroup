@@ -23,6 +23,41 @@ export const INSIGHT_PLATFORMS = [
   'Alipay',
 ] as const;
 
+/**
+ * Sector an insight is written for. Set it only when the article is about one
+ * vertical (a "what it costs to sell X" Ledger, a brand teardown, a category
+ * guide). Articles without it are cross-industry and list on /insights
+ * (Trends); articles with it list on /insights/industries. The list is sized
+ * for the editorial plan's category series, so most entries fill up over the
+ * year; the page hides any industry with no published article.
+ */
+export const INSIGHT_INDUSTRIES = [
+  'Beauty & Personal Care',
+  'Fashion & Luxury',
+  'Food & Beverage',
+  'Health & Wellness',
+  'Mother & Baby',
+  'Home & Living',
+  'Electronics & Appliances',
+  'Sports & Leisure',
+  'Pets',
+  'Automotive',
+  'Travel & Hospitality',
+  'B2B & Industrial',
+  'Financial & Professional Services',
+] as const;
+
+export type InsightIndustry = (typeof INSIGHT_INDUSTRIES)[number];
+
+/** URL fragment for an industry, used as the section anchor on /insights/industries. */
+export function industrySlug(industry: InsightIndustry): string {
+  return industry
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 // Shared base fields for insights. The only locale-specific field is
 // `legacyUrl`: it preserves the old WordPress URL (always English) for
 // documentation and to power the 301 redirect plan. Carrying it on FR
@@ -35,6 +70,7 @@ const insightBaseSchema = z.object({
   updatedDate: z.coerce.date().optional(),
   author: z.string().default('TheChinaPath'),
   category: z.enum(INSIGHT_CATEGORIES),
+  industry: z.enum(INSIGHT_INDUSTRIES).optional(),
   platforms: z.array(z.enum(INSIGHT_PLATFORMS)).default([]),
   tags: z.array(z.string()).default([]),
   /** Short bullet list rendered above the article body. AI engines extract these. */

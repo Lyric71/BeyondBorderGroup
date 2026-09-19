@@ -10,6 +10,7 @@ title: "How to sell health supplements in China without a Blue Hat"
 slug: sell-supplements-china-cross-border
 primary_query: "sell supplements china cross-border"
 difficulty: HELD
+industry: "Health & Wellness"
 word_count: "2,100 to 2,400"
 status: not_started
 ---
@@ -38,6 +39,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Output file | `output/sell-supplements-china-cross-border.md` |
 | Primary query | `sell supplements china cross-border` |
 | Difficulty | HELD |
+| Industry | `Health & Wellness`, set as `industry` in the insight frontmatter |
 | Body length | 2,100 to 2,400 (body only, per the char-count rule) |
 
 ## The brief

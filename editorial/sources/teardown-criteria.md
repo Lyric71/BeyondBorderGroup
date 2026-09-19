@@ -46,6 +46,11 @@ listed companies with a China cross-border segment in their annual report,
 the brands the Ledger categories cover (a footwear Teardown the week before
 or after the footwear Ledger interlinks well).
 
+Industry priority. When two brands pass, pick the one whose industry still
+shows as "Guide in the works" on `/insights/industries` (any industry in
+`INSIGHT_INDUSTRIES` with no published insight tagged to it). Set that
+industry in the Teardown's frontmatter so the tile fills.
+
 ## Writing rule, repeated
 
 "The storefront shows", "the filing states", "the platform's case study

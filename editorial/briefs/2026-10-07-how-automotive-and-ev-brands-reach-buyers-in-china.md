@@ -1,21 +1,22 @@
 ---
-brief_id: 26L
-publish_date: 2027-03-03
-week: 26
+brief_id: 05L
+publish_date: 2026-10-07
+week: 05
 weekday: Wed
 slot: L
 slot_name: Ledger
 content_type: Ledger B
-title: "How professional services and consulting reach clients in China"
-slug: how-professional-services-and-consulting-reach-clients-in-china
+title: "How automotive and EV brands actually reach buyers in China"
+slug: how-automotive-and-ev-brands-reach-buyers-in-china
 primary_query: ""
-word_count: "1,100 to 1,400"
+industry: "Automotive"
+word_count: "1,200 to 1,500"
 variant: B
-proof: "none"
+proof: "Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`."
 status: not_started
 ---
 
-# BRIEF 26L: How professional services and consulting reach clients in China
+# BRIEF 05L: How automotive and EV brands actually reach buyers in China
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -27,30 +28,34 @@ They override any conflicting rule inside the skill. The standing preamble in
 |---|---|
 | website | https://www.thechinapath.com |
 | audience | people out of China |
-| slot | Ledger, Wed of week 26 |
+| slot | Ledger, Wed of week 05 |
 | brief | this file |
 
 ## Target
 
 | Field | Value |
 |---|---|
-| Working H1 | How professional services and consulting reach clients in China |
-| Slug | `/insights/how-professional-services-and-consulting-reach-clients-in-china/` |
-| Output file | `output/how-professional-services-and-consulting-reach-clients-in-china.md` |
+| Working H1 | How automotive and EV brands actually reach buyers in China |
+| Slug | `/insights/how-automotive-and-ev-brands-reach-buyers-in-china/` |
+| Output file | `output/how-automotive-and-ev-brands-reach-buyers-in-china.md` |
 | Primary query | `derive from the title` |
-| Body length | 1,100 to 1,400 (body only, per the char-count rule) |
+| Industry | `Automotive`, set as `industry` in the insight frontmatter |
+| Body length | 1,200 to 1,500 (body only, per the char-count rule) |
 | Ledger variant | B |
-| Proof | none |
+| Proof | Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`. |
 
 ## The brief
 
-**Title:** How professional services and consulting reach clients in China
-**Word count:** 1,100 to 1,400
+**Title:** How automotive and EV brands actually reach buyers in China
+**Word count:** 1,200 to 1,500
 
-This is a Ledger B, so the channel table replaces the fee table and does the heaviest lifting: one row each for WeChat official account and long-form articles, RedNote, industry trade shows and conferences, direct outbound through introductions, trade association and chamber membership, and paid search, with what each reaches, monthly cost to run, cost per qualified lead, and who owns the relationship when the engagement ends. The licensing constraint in block 3 is the real trap: a foreign company cannot invoice a Chinese client without a local entity or a compliant arrangement, so the writer must verify the current position on business scope, fapiao issuance and cross-border payment for services, and cite it, because a signed contract the client cannot expense is a dead deal. Block 4 replaces unit economics with cost per qualified lead and sales cycle length, and should be honest that a China services sale is measured in quarters and that the relationship, not the channel, closes it.
-**Territory guard.** Baidu SEO, website build and hosting sit with ChinaWebFoundry and daily content and community sit with TheRedScroll, so those rows in the channel table name the cost and link out rather than describing the work as a service offered here.
+**Ledger B variant.** No fee table. The table is channel by channel: what it reaches, what it costs to run monthly, what a qualified lead costs, and who owns it.
 
-**Proof.** None available. Use the block 6 honesty line.
+Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi as the vertical portals, WeChat for dealer handoff, and offline events. Say plainly that the vehicle is not sold cross-border and that this is a demand-generation and dealer-handoff problem, not a marketplace one.
+
+**Proof.** Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`.
+**Internal links.** `/grow-in-china/campaigns`, `/grow-in-china/media`, `/social-in-china`
+**CTA.** Talk to us.
 
 ## Slot spec
 
@@ -92,4 +97,4 @@ category content assumes a Tmall store.
 - [ ] Title under 52, meta under 152, excerpt under 25 words, all counted
 - [ ] New figures appended to `sources/verified-sources.md` with both check dates
 - [ ] Feature image block appended with the correct slug path
-- [ ] File saved as `output/how-professional-services-and-consulting-reach-clients-in-china.md`
+- [ ] File saved as `output/how-automotive-and-ev-brands-reach-buyers-in-china.md`

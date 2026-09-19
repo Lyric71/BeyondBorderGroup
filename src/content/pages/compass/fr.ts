@@ -226,7 +226,7 @@ const copy: CompassCopy = {
     closingCtaSecondary: 'Voir l’offre distribution',
     toolsLine: {
       before: 'Le budget plateforme n’est pas encore arrêté ? Nos ',
-      link: 'calculateurs de coûts gratuits',
+      link: 'calculateurs de budget gratuits',
       after: ' chiffrent la première année sur Tmall Global, JD Worldwide et Douyin, avant même le premier brief.',
     },
   },
