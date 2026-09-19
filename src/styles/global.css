@@ -5869,6 +5869,76 @@ h4,
   color: var(--bbg-ink);
   font-weight: 500;
 }
+.insights-header__lead {
+  margin: var(--space-4) 0 0;
+  max-width: 52ch;
+  color: var(--bbg-text);
+  font-size: var(--fs-body);
+}
+
+/* Home: direct links to each covered industry, under the Industry Insights cards */
+.industry-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3) var(--space-5);
+  margin-top: var(--space-7);
+}
+.industry-links__label {
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--bbg-text-muted);
+}
+.industry-links__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.industry-links__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--bbg-border);
+  border-radius: 999px;
+  background: var(--bbg-white);
+  font-size: var(--fs-small);
+  font-weight: 500;
+  color: var(--bbg-ink);
+  text-decoration: none;
+  transition:
+    border-color var(--dur) var(--ease),
+    background-color var(--dur) var(--ease),
+    color var(--dur) var(--ease);
+}
+.industry-links__chip:hover {
+  border-color: var(--bbg-blue);
+  background: var(--bbg-blue-light);
+  color: var(--bbg-blue-dark);
+}
+.industry-links__count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--bbg-text-muted);
+}
+.industry-links__all {
+  font-size: var(--fs-small);
+}
+.insights-more {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-6);
+}
+@media (max-width: 767px) {
+  .industry-links {
+    flex-direction: column;
+  }
+}
 
 .author-card {
   display: inline-flex;

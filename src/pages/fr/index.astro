@@ -2,6 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 import HomeAssets from '../../components/home/HomeAssets.astro';
 import { getCollection } from 'astro:content';
+import { INSIGHT_INDUSTRIES, industrySlug } from '../../content.config';
+import { HUB_CONFIG, INDUSTRIES_COPY } from '../../lib/insight-hubs';
 
 const dayStops = [
   {
@@ -147,7 +149,7 @@ const servicesByStage = [
         title: 'Social Commerce',
         icon: 'chat',
         tagline: 'Douyin, WeChat, RED',
-        desc: "Vente en livestream, partenariats KOL, boutiques in-app. Du contenu qui fait connaître la marque et la vend dans la même session.",
+        desc: 'Vente en livestream, partenariats KOL, boutiques in-app. Du contenu qui fait connaître la marque et la vend dans la même session.',
         image: '/Images/grow-in-china/social-commerce/hero-douyin-livestream.png',
         imageAlt:
           "Session de livestream Douyin, vente d'un produit de marque, animatrice en plein direct",
@@ -299,6 +301,85 @@ const pillarIcons: Record<string, string> = {
     '<path d="M2 4h7a3 3 0 0 1 3 3v13"/><path d="M22 4h-7a3 3 0 0 0-3 3v13"/><path d="M2 4v15h7a3 3 0 0 1 3 3"/><path d="M22 4v15h-7a3 3 0 0 0-3 3"/>',
 };
 
+const hwwPartners = [
+  {
+    key: 'yes',
+    tag: 'Le généraliste qui a dit oui',
+    title: "Prend toutes les boutiques qu'on lui confie",
+    points: [
+      {
+        ok: true,
+        text: 'Sait faire tourner la boutique',
+      },
+      {
+        ok: false,
+        text: 'Accepte des marques de toutes catégories',
+      },
+      {
+        ok: false,
+        text: 'Apprend la vôtre à vos frais',
+      },
+      {
+        ok: false,
+        text: 'Loue des clients avec votre budget publicitaire',
+      },
+    ],
+    outcome:
+      "Deux ans plus tard, vous avez une belle boutique phare et une lourde facture média, mais très peu de clients reviennent sans qu'une publicité les y ramène.",
+  },
+  {
+    key: 'fit',
+    tag: "L'hyperspécialiste que nous vous présentons",
+    title: 'Peu de catégories, une clientèle acquise',
+    points: [
+      {
+        ok: true,
+        text: 'Concentré sur quelques catégories, dont la vôtre',
+      },
+      {
+        ok: true,
+        text: 'Maîtrise les niveaux de prix et connaît les créateurs qui font vraiment vendre',
+      },
+      {
+        ok: true,
+        text: 'Ses boutiques et ses lives attirent déjà vos acheteurs',
+      },
+      {
+        ok: true,
+        text: 'Sait faire tourner la boutique',
+      },
+    ],
+    outcome:
+      "Coupez le budget publicitaire : ses clients continuent d'acheter. Ils lui étaient fidèles bien avant l'arrivée de votre marque.",
+  },
+];
+
+const hwwSteps = [
+  {
+    icon: 'network',
+    title: 'Nous connaissons déjà les spécialistes',
+    body: "Plus de quinze ans d'e-commerce chinois nous ont fait croiser la route des TP et DP qui dominent chaque catégorie. Nous les avons rencontrés en personne, et tous figurent dans Compass, notre base de partenaires. Nous retenons ceux qui correspondent à votre marque.",
+  },
+  {
+    icon: 'door',
+    title: 'Nous vous ouvrons la porte',
+    body: "Les meilleurs spécialistes refusent la plupart des marques : un e-mail à froid ne mène pas bien loin. Nous bâtissons le pitch avec vous et assurons la mise en relation. Votre montant d'investissement sera arrêté avant que le partenaire ne vous le demande.",
+  },
+  {
+    icon: 'launch',
+    title: 'Puis nous créons la demande à leurs côtés',
+    body: 'Une fois le contrat signé, nous pilotons avec votre partenaire les contenus de la boutique et les campagnes e-commerce, ainsi que vos réseaux sociaux. Des événements physiques aussi, quand ils en valent la peine.',
+  },
+];
+
+const hwwIcons: Record<string, string> = {
+  network:
+    '<circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M10.8 7.2 6.2 16.8"/><path d="m13.2 7.2 4.6 9.6"/><path d="M7.5 19h9"/>',
+  door: '<path d="M14 3h5a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>',
+  launch:
+    '<path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M16 8.5a4 4 0 0 1 0 7"/><path d="M19 5.5a8 8 0 0 1 0 13"/>',
+};
+
 const allCases = await getCollection('cases', ({ data }) => !data.draft);
 const featuredCases = allCases
   .slice()
@@ -317,14 +398,24 @@ const insightCategoryFr: Record<string, string> = {
   'Compliance & Setup': 'Conformité et installation',
 };
 
-const latestInsights = allInsights
-  .slice()
-  .sort((a, b) => {
-    const da = a.data.pubDate?.valueOf() ?? 0;
-    const db = b.data.pubDate?.valueOf() ?? 0;
-    return db - da;
-  })
-  .slice(0, 3);
+const insightsByNewest = allInsights.slice().sort((a, b) => {
+  const da = a.data.pubDate?.valueOf() ?? 0;
+  const db = b.data.pubDate?.valueOf() ?? 0;
+  return db - da;
+});
+
+// Same split as the two hubs: tagged articles live on the industries hub,
+// untagged ones on the trends hub.
+const latestTrends = insightsByNewest.filter((p) => !p.data.industry).slice(0, 3);
+const latestIndustryInsights = insightsByNewest.filter((p) => !!p.data.industry).slice(0, 3);
+
+const industryLabels = INDUSTRIES_COPY.fr!.industries;
+const coveredIndustries = INSIGHT_INDUSTRIES.map((industry) => ({
+  industry,
+  label: industryLabels[industry]?.label ?? industry,
+  href: `${HUB_CONFIG.fr.industriesPath}#${industrySlug(industry)}`,
+  count: allInsights.filter((p) => p.data.industry === industry).length,
+})).filter((i) => i.count > 0);
 
 function readingTime(body: string | undefined) {
   if (!body) return '';
@@ -711,6 +802,154 @@ function formatInsightDate(d?: Date) {
     </div>
   </section>
 
+  {/* ---------- HOW WE WORK ---------- */}
+  <section class="section section--alt hww-section" id="how-we-work" aria-labelledby="hww-title">
+    <div class="container">
+      <header class="hww-head">
+        <span class="eyebrow">Notre méthode</span>
+        <h2 id="hww-title" class="hww-head__title">
+          En Chine, ce sont les TP et DP hyperspécialisés qui l'emportent
+        </h2>
+        <p class="hww-head__lead">
+          Des TP (trade partners, sur Tmall et JD) et des DP (Douyin partners) prêts à dire oui à
+          votre marque, il n'en manque pas. La plupart sont des généralistes : ils prennent une
+          boutique dans n'importe quelle catégorie et achètent du trafic pour l'alimenter. Ceux qui
+          valent la peine se cantonnent à quelques catégories et en tiennent déjà la clientèle.
+          Notre métier : présenter votre marque à celui qui domine votre catégorie.
+        </p>
+      </header>
+
+      <div class="hww-compare">
+        {
+          hwwPartners.map((p) => (
+            <article class={`hww-card hww-card--${p.key} home-reveal`}>
+              <span class="hww-card__tag">{p.tag}</span>
+              <h3 class="hww-card__title">{p.title}</h3>
+              <ul class="hww-card__points">
+                {p.points.map((pt) => (
+                  <li class={`hww-card__point${pt.ok ? ' is-ok' : ' is-no'}`}>
+                    <span class="hww-card__mark" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        {pt.ok ? (
+                          <polyline points="5 12.5 10 17 19 7" />
+                        ) : (
+                          <>
+                            <line x1="7" y1="7" x2="17" y2="17" />
+                            <line x1="17" y1="7" x2="7" y2="17" />
+                          </>
+                        )}
+                      </svg>
+                    </span>
+                    <span class="hww-sr">{pt.ok ? 'Oui : ' : 'Non : '}</span>
+                    {pt.text}
+                  </li>
+                ))}
+              </ul>
+
+              <figure class="hww-curve">
+                <figcaption class="hww-curve__label">
+                  Trafic de la boutique quand la publicité s'arrête
+                </figcaption>
+                <div class="hww-curve__plot">
+                  <svg
+                    class="hww-curve__svg"
+                    viewBox="0 0 240 84"
+                    preserveAspectRatio="none"
+                    role="img"
+                    aria-label={
+                      p.key === 'fit'
+                        ? "Le trafic se maintient après l'arrêt de la publicité"
+                        : "Le trafic s'effondre après l'arrêt de la publicité"
+                    }
+                  >
+                    <line class="hww-curve__stop" x1="140" y1="0" x2="140" y2="84" />
+                    {p.key === 'fit' ? (
+                      <>
+                        <path
+                          class="hww-curve__area"
+                          d="M0 62 C40 54 90 42 140 32 C175 28 205 27 240 25 L240 84 L0 84 Z"
+                        />
+                        <path
+                          class="hww-curve__line"
+                          d="M0 62 C40 54 90 42 140 32 C175 28 205 27 240 25"
+                        />
+                      </>
+                    ) : (
+                      <>
+                        <path
+                          class="hww-curve__area"
+                          d="M0 62 C40 54 90 42 140 32 C165 50 190 70 240 76 L240 84 L0 84 Z"
+                        />
+                        <path
+                          class="hww-curve__line"
+                          d="M0 62 C40 54 90 42 140 32 C165 50 190 70 240 76"
+                        />
+                      </>
+                    )}
+                  </svg>
+                  <span class="hww-curve__stop-label" aria-hidden="true">
+                    Fin de la pub
+                  </span>
+                </div>
+              </figure>
+
+              <p class="hww-card__outcome">{p.outcome}</p>
+            </article>
+          ))
+        }
+      </div>
+      <p class="hww-compare__note">
+        Courbes illustratives : une tendance que nous observons, pas des données clients.
+      </p>
+
+      <div class="hww-how">
+        <h3 class="hww-how__title">Comment nous vous menons jusqu'à ce partenaire</h3>
+        <ul class="hww-how__list">
+          {
+            hwwSteps.map((s, idx) => (
+              <li class="hww-how__item home-reveal" style={`--reveal-delay: ${idx * 80}ms;`}>
+                <span class="hww-how__icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    set:html={hwwIcons[s.icon]}
+                  />
+                </span>
+                <h4 class="hww-how__item-title">{s.title}</h4>
+                <p class="hww-how__item-body">{s.body}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="hww-foot">
+        <p class="hww-foot__stance">
+          Sans équipe TP ou DP maison, nous n'avons personne à vous placer. La seule question qui
+          vaille : quel partenaire convient à votre marque ? Trouver ce partenaire fait l'objet d'un
+          forfait, chiffré après un premier échange.
+        </p>
+        <div class="hww-foot__actions">
+          <a href="/fr/notre-methode" class="btn btn--primary">Découvrir notre méthode</a>
+          <a href="/fr/notre-methode#the-right-partner" class="btn btn--ghost"
+            >Ce qui fait un bon partenaire</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
   {/* ---------- BEYONDCOMPASS: STANDOUT FEATURE ---------- */}
   <section class="bc-section" id="beyondcompass" data-bc-section>
     <div class="bc-bg" aria-hidden="true">
@@ -800,17 +1039,14 @@ function formatInsightDate(d?: Date) {
             <div class="bc-feature__text">
               <h3>Tenu à jour, trimestre par trimestre</h3>
               <p>
-                L'équipe qui se sert de Compass sur les projets clients est la même qui le met
-                à jour.
+                L'équipe qui se sert de Compass sur les projets clients est la même qui le met à
+                jour.
               </p>
             </div>
           </li>
         </ul>
 
-        <a
-          class="bc-cta"
-          href="/compass/shortlist"
-        >
+        <a class="bc-cta" href="/compass/shortlist">
           <span class="bc-cta__text">Obtenir votre short-list</span>
           <span class="bc-cta__arrow" aria-hidden="true">
             <svg
@@ -1335,18 +1571,90 @@ function formatInsightDate(d?: Date) {
     </div>
   </section>
 
-  {/* ---------- INSIGHTS ---------- */}
-  <section class="section">
+  {/* ---------- INDUSTRY INSIGHTS ---------- */}
+  <section class="section" aria-labelledby="industry-insights-title">
     <div class="container">
       <header class="insights-header">
         <span class="insights-header__rule" aria-hidden="true"></span>
-        <span class="eyebrow">Décryptages</span>
-        <h2>Notre lecture du marché chinois, à chaud.</h2>
+        <span class="eyebrow">Décryptages sectoriels</span>
+        <h2 id="industry-insights-title">Vendre en Chine, catégorie par catégorie</h2>
+        <p class="insights-header__lead">
+          Le prix réel d'une place en rayon, et les marques qui l'ont déjà conquise.
+        </p>
       </header>
 
       <div class="grid grid-3">
         {
-          latestInsights.map((post) => (
+          latestIndustryInsights.map((post) => (
+            <a href={`/fr/decryptages/${post.id}`} class="insight-card">
+              <div class="insight-card__image">
+                {post.data.heroImage && (
+                  <img
+                    src={post.data.heroImage}
+                    alt={post.data.heroImageAlt}
+                    loading="lazy"
+                    decoding="async"
+                    width="600"
+                    height="400"
+                  />
+                )}
+              </div>
+              <div class="insight-card__body">
+                <span class="insight-card__tag">
+                  {post.data.industry &&
+                    (industryLabels[post.data.industry]?.label ?? post.data.industry)}
+                </span>
+                <h3 class="insight-card__title">{post.data.title}</h3>
+                <div class="insight-card__meta">
+                  <span>{readingTime(post.body)}</span>
+                  {post.data.pubDate && (
+                    <>
+                      <span class="insight-card__meta-sep" aria-hidden="true">
+                        |
+                      </span>
+                      <span>{formatInsightDate(post.data.pubDate)}</span>
+                    </>
+                  )}
+                </div>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+
+      <nav class="industry-links" aria-label="Décryptages par secteur">
+        <span class="industry-links__label">Parcourir par secteur</span>
+        <ul class="industry-links__list">
+          {
+            coveredIndustries.map((i) => (
+              <li>
+                <a href={i.href} class="industry-links__chip">
+                  {i.label}
+                  <span class="industry-links__count">{i.count}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        <a href={HUB_CONFIG.fr.industriesPath} class="btn btn--ghost industry-links__all"
+          >Tous les secteurs</a
+        >
+      </nav>
+    </div>
+  </section>
+
+  {/* ---------- TRENDS ---------- */}
+  <section class="section section--alt" aria-labelledby="trends-title">
+    <div class="container">
+      <header class="insights-header">
+        <span class="insights-header__rule" aria-hidden="true"></span>
+        <span class="eyebrow">Tendances</span>
+        <h2 id="trends-title">Notre lecture du marché chinois, à chaud.</h2>
+      </header>
+
+      <div class="grid grid-3">
+        {
+          latestTrends.map((post) => (
             <a href={`/fr/decryptages/${post.id}`} class="insight-card">
               <div class="insight-card__image">
                 {post.data.heroImage && (
@@ -1380,6 +1688,10 @@ function formatInsightDate(d?: Date) {
             </a>
           ))
         }
+      </div>
+
+      <div class="insights-more">
+        <a href={HUB_CONFIG.fr.trendsPath} class="btn btn--ghost">Toutes les tendances</a>
       </div>
     </div>
   </section>

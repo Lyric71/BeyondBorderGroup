@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import HomeAssets from '../components/home/HomeAssets.astro';
 import { getCollection } from 'astro:content';
+import { INSIGHT_INDUSTRIES, industrySlug } from '../content.config';
+import { INDUSTRIES_COPY } from '../lib/insight-hubs';
 
 const dayStops = [
   {
@@ -298,50 +300,76 @@ const hwwPartners = [
   {
     key: 'yes',
     tag: 'The generalist that said yes',
-    title: 'Takes any category, buys the traffic',
+    title: 'Runs any store you hand it',
     points: [
-      { ok: true, text: 'Can run the store' },
-      { ok: false, text: 'Spread across whatever brands will sign' },
-      { ok: false, text: 'Learns your category on your dime' },
-      { ok: false, text: 'Rents its shoppers with your ad budget' },
+      {
+        ok: true,
+        text: 'Can run the store',
+      },
+      {
+        ok: false,
+        text: 'Takes brands from any category',
+      },
+      {
+        ok: false,
+        text: 'Learns yours on your dime',
+      },
+      {
+        ok: false,
+        text: 'Rents shoppers with your ad budget',
+      },
     ],
     outcome:
-      'Two years in: a tidy flagship, a big media bill, and few shoppers who come back unless an ad pulls them in.',
+      'Two years in, you have a tidy flagship and a big media bill, and very few shoppers come back unless an ad pulls them in.',
   },
   {
     key: 'fit',
-    tag: 'The hyper-specialist we look for',
+    tag: 'The hyper-specialist we bring you',
     title: 'Lives in a few categories, owns their audience',
     points: [
-      { ok: true, text: 'Focused on a few categories, yours among them' },
-      { ok: true, text: 'Knows the price bands, search terms, and creators that sell in it' },
-      { ok: true, text: 'Its stores and livestream rooms already pull your buyers' },
-      { ok: true, text: 'Can run the store' },
+      {
+        ok: true,
+        text: 'Focused on a few categories, yours among them',
+      },
+      {
+        ok: true,
+        text: 'Knows the price points and the creators that actually sell',
+      },
+      {
+        ok: true,
+        text: 'Its stores and livestream rooms already draw your buyers',
+      },
+      {
+        ok: true,
+        text: 'Can run the store',
+      },
     ],
-    outcome: 'Two years in: shoppers who keep buying after the ads go quiet.',
+    outcome:
+      'Cut the ad budget and its shoppers keep buying. They were its regulars long before your brand arrived.',
   },
 ];
 
 const hwwSteps = [
   {
-    icon: 'search',
-    title: 'We find the specialist in your category',
-    body: "The search starts in Compass, our database of TPs, DPs, and distributors we've met in person. We shortlist partners that focus on your category and already sell to its buyers.",
+    icon: 'network',
+    title: 'We already know the specialists',
+    body: 'More than 15 years in Chinese eCommerce put us across the table from the TPs and DPs that lead each category. We’ve met them in person, and they’re all in Compass, our partner database. We pick the ones that fit your brand.',
   },
   {
     icon: 'door',
     title: 'We get you through the door',
-    body: "The strongest partners are swamped and turn most brands down. We build your pitch and help you set the investment number they'll ask for.",
+    body: 'The best specialists turn most brands down, so a cold email rarely gets far. We build the pitch with you and make the introduction. You’ll also have your investment number ready before the partner asks for it.',
   },
   {
     icon: 'launch',
-    title: 'We build demand alongside them',
-    body: "Once you've signed, we run store content, eCommerce campaigns, and your social accounts with the partner. Offline events too, when they're worth it.",
+    title: 'Then we build demand with them',
+    body: 'Once you’ve signed, we run store content and eCommerce campaigns with your partner, plus your social accounts. Offline events too, if they’re worth the money.',
   },
 ];
 
 const hwwIcons: Record<string, string> = {
-  search: '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/>',
+  network:
+    '<circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M10.8 7.2 6.2 16.8"/><path d="m13.2 7.2 4.6 9.6"/><path d="M7.5 19h9"/>',
   door: '<path d="M14 3h5a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>',
   launch:
     '<path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M16 8.5a4 4 0 0 1 0 7"/><path d="M19 5.5a8 8 0 0 1 0 13"/>',
@@ -354,14 +382,24 @@ const featuredCases = allCases
   .slice(0, 6);
 
 const allInsights = await getCollection('insights', ({ data }) => !data.draft);
-const latestInsights = allInsights
-  .slice()
-  .sort((a, b) => {
-    const da = a.data.pubDate?.valueOf() ?? 0;
-    const db = b.data.pubDate?.valueOf() ?? 0;
-    return db - da;
-  })
-  .slice(0, 3);
+const insightsByNewest = allInsights.slice().sort((a, b) => {
+  const da = a.data.pubDate?.valueOf() ?? 0;
+  const db = b.data.pubDate?.valueOf() ?? 0;
+  return db - da;
+});
+
+// Same split as the two hubs: tagged articles live on /insights/industries,
+// untagged ones on /insights (Trends).
+const latestTrends = insightsByNewest.filter((p) => !p.data.industry).slice(0, 3);
+const latestIndustryInsights = insightsByNewest.filter((p) => !!p.data.industry).slice(0, 3);
+
+const industryLabels = INDUSTRIES_COPY.en!.industries;
+const coveredIndustries = INSIGHT_INDUSTRIES.map((industry) => ({
+  industry,
+  label: industryLabels[industry]?.label ?? industry,
+  href: `/insights/industries#${industrySlug(industry)}`,
+  count: allInsights.filter((p) => p.data.industry === industry).length,
+})).filter((i) => i.count > 0);
 
 function readingTime(body: string | undefined) {
   if (!body) return '';
@@ -774,13 +812,14 @@ function formatInsightDate(d?: Date) {
       <header class="hww-head">
         <span class="eyebrow">How we work</span>
         <h2 id="hww-title" class="hww-head__title">
-          In China, the TPs that win are hyper-specialized
+          In China, the TPs and DPs that win are hyper-specialized
         </h2>
         <p class="hww-head__lead">
-          A TP (trade partner) runs your store on Tmall and JD. A DP does the same job on Douyin.
-          Generalists take on any category and buy traffic for it, and plenty of brands sign with
-          the first one that says yes. The ones that win go deep on a few categories and already own
-          the shoppers in them. Finding the one built around yours is our job.
+          Plenty of TPs (trade partners, on Tmall and JD) and DPs (Douyin partners) will say yes to
+          your brand. Most of them are generalists. They’ll run a store in any category and buy the
+          traffic to fill it. The ones worth having stick to a few categories and already sell to
+          the shoppers there. Our job is to get your brand in front of the one that leads your
+          category.
         </p>
       </header>
 
@@ -873,7 +912,7 @@ function formatInsightDate(d?: Date) {
       <p class="hww-compare__note">The curves show the pattern we see, not client data.</p>
 
       <div class="hww-how">
-        <h3 class="hww-how__title">How we find that partner for you</h3>
+        <h3 class="hww-how__title">How we get you to that partner</h3>
         <ul class="hww-how__list">
           {
             hwwSteps.map((s, idx) => (
@@ -899,12 +938,15 @@ function formatInsightDate(d?: Date) {
 
       <div class="hww-foot">
         <p class="hww-foot__stance">
-          We don't run a TP or DP team of our own, so there's no roster we need to fill. The only
-          question we ask is which partner fits your brand.
+          We don’t run a TP or DP team of our own, so there’s no one we’re trying to steer you
+          toward. The only question we ask is which partner fits your brand. Finding your partner is
+          quoted as a project, after a first call.
         </p>
         <div class="hww-foot__actions">
           <a href="/how-we-work" class="btn btn--primary">See how we work</a>
-          <a href="/how-we-work#the-right-partner" class="btn btn--ghost">What we look for</a>
+          <a href="/how-we-work#the-right-partner" class="btn btn--ghost"
+            >What makes a good partner</a
+          >
         </div>
       </div>
     </div>
@@ -1556,18 +1598,89 @@ function formatInsightDate(d?: Date) {
     </div>
   </section>
 
-  {/* ---------- INSIGHTS ---------- */}
-  <section class="section">
+  {/* ---------- INDUSTRY INSIGHTS ---------- */}
+  <section class="section" aria-labelledby="industry-insights-title">
     <div class="container">
       <header class="insights-header">
         <span class="insights-header__rule" aria-hidden="true"></span>
-        <span class="eyebrow">Insights</span>
-        <h2>What our team is reading the market on right now</h2>
+        <span class="eyebrow">Industry Insights</span>
+        <h2 id="industry-insights-title">What it takes to sell your category in China</h2>
+        <p class="insights-header__lead">
+          Sector by sector: what it costs to get on the shelf, and which brands have already cracked
+          it.
+        </p>
       </header>
 
       <div class="grid grid-3">
         {
-          latestInsights.map((post) => (
+          latestIndustryInsights.map((post) => (
+            <a href={`/insights/${post.id}`} class="insight-card">
+              <div class="insight-card__image">
+                {post.data.heroImage && (
+                  <img
+                    src={post.data.heroImage}
+                    alt={post.data.heroImageAlt}
+                    loading="lazy"
+                    decoding="async"
+                    width="600"
+                    height="400"
+                  />
+                )}
+              </div>
+              <div class="insight-card__body">
+                <span class="insight-card__tag">
+                  {post.data.industry &&
+                    (industryLabels[post.data.industry]?.label ?? post.data.industry)}
+                </span>
+                <h3 class="insight-card__title">{post.data.title}</h3>
+                <div class="insight-card__meta">
+                  <span>{readingTime(post.body)}</span>
+                  {post.data.pubDate && (
+                    <>
+                      <span class="insight-card__meta-sep" aria-hidden="true">
+                        |
+                      </span>
+                      <span>{formatInsightDate(post.data.pubDate)}</span>
+                    </>
+                  )}
+                </div>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+
+      <nav class="industry-links" aria-label="Browse insights by industry">
+        <span class="industry-links__label">Browse by industry</span>
+        <ul class="industry-links__list">
+          {
+            coveredIndustries.map((i) => (
+              <li>
+                <a href={i.href} class="industry-links__chip">
+                  {i.label}
+                  <span class="industry-links__count">{i.count}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        <a href="/insights/industries" class="btn btn--ghost industry-links__all">All industries</a>
+      </nav>
+    </div>
+  </section>
+
+  {/* ---------- TRENDS ---------- */}
+  <section class="section section--alt" aria-labelledby="trends-title">
+    <div class="container">
+      <header class="insights-header">
+        <span class="insights-header__rule" aria-hidden="true"></span>
+        <span class="eyebrow">Trends</span>
+        <h2 id="trends-title">What our team is reading the market on right now</h2>
+      </header>
+
+      <div class="grid grid-3">
+        {
+          latestTrends.map((post) => (
             <a href={`/insights/${post.id}`} class="insight-card">
               <div class="insight-card__image">
                 {post.data.heroImage && (
@@ -1599,6 +1712,10 @@ function formatInsightDate(d?: Date) {
             </a>
           ))
         }
+      </div>
+
+      <div class="insights-more">
+        <a href="/insights" class="btn btn--ghost">All trends</a>
       </div>
     </div>
   </section>
