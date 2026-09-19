@@ -26,19 +26,25 @@ const {
   tags,
   author,
   keyTakeaways,
+  column,
 } = post.data;
 
-// Articles tagged with an industry belong to /insights/industries; the rest
-// belong to /insights, which the menu calls Trends.
-const hub = industry
-  ? { name: 'Industry Insights', url: '/insights/industries', back: `/insights/industries#${industrySlug(industry)}` }
-  : { name: 'Trends', url: '/insights', back: '/insights' };
+// Signed columns belong to /insights/ceo-opinion. Otherwise articles tagged
+// with an industry belong to /insights/industries, and the rest to /insights,
+// which the menu calls Trends.
+const hub = column
+  ? { name: "CEO's Opinion", url: '/insights/ceo-opinion', back: '/insights/ceo-opinion', backLabel: "the CEO's column", all: 'All columns' }
+  : industry
+    ? { name: 'Industry Insights', url: '/insights/industries', back: `/insights/industries#${industrySlug(industry)}`, backLabel: 'industry insights', all: 'All industries' }
+    : { name: 'Trends', url: '/insights', back: '/insights', backLabel: 'trends', all: 'All trends' };
 
 interface AuthorInfo {
   url: string;
   role: string;
   photo: string;
   linkedin: string;
+  /** Handwritten signature, shown under signed columns. */
+  signature?: string;
 }
 const KNOWN_AUTHORS: Record<string, AuthorInfo> = {
   'Cyril Drouin': {
@@ -46,6 +52,7 @@ const KNOWN_AUTHORS: Record<string, AuthorInfo> = {
     role: 'Founder & CEO',
     photo: '/Images/team/cyril-drouin.jpg',
     linkedin: 'https://www.linkedin.com/in/cyril-d-68835729/',
+    signature: '/Images/team/Cyril-Drouin-Signature-Transparent.png',
   },
   'Echo Peng': {
     url: '/about#echo-peng',
@@ -106,17 +113,26 @@ function readingTime(body: string | undefined) {
 }
 
 const allInsights = await getCollection('insights', ({ data }) => !data.draft);
-// Same industry first when there is one to show; otherwise same category.
+// A column is followed by the newest other columns. Otherwise same industry
+// first when there is one to show, then same category.
+const otherColumns = column
+  ? allInsights
+      .filter((p) => p.id !== post.id && p.data.column)
+      .sort((a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0))
+  : [];
 const sameIndustry = industry
   ? allInsights.filter((p) => p.id !== post.id && p.data.industry === industry)
   : [];
 const relatedByIndustry = sameIndustry.length > 0;
 const related = (
-  relatedByIndustry
-    ? sameIndustry
-    : allInsights.filter((p) => p.id !== post.id && p.data.category === category)
+  otherColumns.length > 0
+    ? otherColumns
+    : relatedByIndustry
+      ? sameIndustry
+      : allInsights.filter((p) => p.id !== post.id && p.data.category === category)
 ).slice(0, 3);
-const relatedLabel = relatedByIndustry ? industry : category;
+const relatedHeading =
+  otherColumns.length > 0 ? 'More columns' : `More in ${relatedByIndustry ? industry : category}`;
 ---
 
 <Layout
@@ -134,12 +150,22 @@ const relatedLabel = relatedByIndustry ? industry : category;
     <header class="insight-article__header">
       <div class="container container--narrow">
         <nav class="insight-article__crumbs" aria-label="Breadcrumb">
-          <a href={hub.back}>← Back to {hub.name.toLowerCase()}</a>
+          <a href={hub.back}>← Back to {hub.backLabel}</a>
         </nav>
         <span class="eyebrow">{category}</span>
         <h1 class="insight-article__title">{title}</h1>
         <p class="insight-article__lead">{description}</p>
         <div class="insight-article__meta">
+          {
+            authorInfo && (
+              <>
+                <span>
+                  By <a href={column ? hub.url : authorLink}>{author}</a>, {authorInfo.role}
+                </span>
+                <span aria-hidden="true">·</span>
+              </>
+            )
+          }
           {pubDate && <span>{formatDate(pubDate)}</span>}
           {pubDate && <span aria-hidden="true">·</span>}
           <span>{readingTime(post.body)}</span>
@@ -223,6 +249,23 @@ const relatedLabel = relatedByIndustry ? industry : category;
 
             {updatedDate && <p class="insight-article__updated">Updated {formatDate(updatedDate)}</p>}
 
+            {
+              column && authorInfo && (
+                <aside class="insight-article__signed" aria-label="About the author">
+                  <img class="insight-article__signed-photo" src={authorInfo.photo} alt="" width="500" height="800" loading="lazy" decoding="async" />
+                  <div>
+                    {authorInfo.signature && (
+                      <img class="insight-article__signed-sig" src={authorInfo.signature} alt={`${author}’s signature`} width="1408" height="768" loading="lazy" decoding="async" />
+                    )}
+                    <p class="insight-article__signed-name">
+                      {author}, {authorInfo.role}
+                    </p>
+                    <a href={hub.url} class="insight-article__signed-more">More columns →</a>
+                  </div>
+                </aside>
+              )
+            }
+
             <div class="insight-article__cta">
               <h2>Working on China? Let's grab a coffee.</h2>
               <p>Tell us where you are now and where you want to get to.</p>
@@ -243,10 +286,10 @@ const relatedLabel = relatedByIndustry ? industry : category;
             <header class="section-header section-header--split">
               <div>
                 <span class="eyebrow">Keep reading</span>
-                <h2>More in {relatedLabel}</h2>
+                <h2>{relatedHeading}</h2>
               </div>
               <a href={hub.url} class="btn btn--secondary btn--sm">
-                {industry ? 'All industries' : 'All trends'}
+                {hub.all}
               </a>
             </header>
 
@@ -605,6 +648,46 @@ const relatedLabel = relatedByIndustry ? industry : category;
       color: var(--bbg-text-muted);
       font-size: var(--fs-small);
       font-style: italic;
+    }
+
+    .insight-article__meta a {
+      color: var(--bbg-ink);
+      font-weight: 600;
+    }
+
+    /* Sign-off under a CEO column: portrait, signature, name. */
+    .insight-article__signed {
+      display: flex;
+      align-items: center;
+      gap: var(--space-5);
+      margin-top: var(--space-7);
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .insight-article__signed-photo {
+      flex: none;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 20%;
+    }
+    .insight-article__signed-sig {
+      display: block;
+      width: 8.5rem;
+      height: auto;
+      margin: 0 0 var(--space-2) -0.4rem;
+    }
+    .insight-article__signed-name {
+      margin: 0;
+      color: var(--bbg-ink);
+      font-weight: 600;
+    }
+    .insight-article__signed-more {
+      display: inline-block;
+      margin-top: var(--space-2);
+      font-size: var(--fs-small);
+      font-weight: 600;
     }
 
     .insight-article__cta {

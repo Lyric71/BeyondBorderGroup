@@ -4,6 +4,7 @@ description: "The platform's 2026 strategy moves money away from traffic and tow
 pubDate: "2026-07-27"
 updatedDate: "2026-07-27"
 author: "Cyril Drouin"
+column: true
 category: "E-Commerce"
 platforms: ["Tmall", "Taobao"]
 tags: ["Tmall", "China e-commerce strategy", "88VIP", "platform strategy", "AI commerce"]

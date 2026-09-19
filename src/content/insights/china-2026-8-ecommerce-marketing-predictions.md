@@ -4,6 +4,7 @@ description: "Eight predictions for China's digital marketplace in 2026, from in
 pubDate: "2026-01-02"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
+column: true
 category: "Market Strategy"
 tags: ["eCommerce", "China digital marketing", "instant commerce", "GenAI", "influencer marketing"]
 keyTakeaways:

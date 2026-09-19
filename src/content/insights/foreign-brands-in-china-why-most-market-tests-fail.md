@@ -4,6 +4,7 @@ description: "An analysis of why foreign brands fail when entering China, examin
 pubDate: "2026-03-25"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
+column: true
 category: "Market Strategy"
 platforms: []
 tags: ["China market entry", "cross-border e-commerce", "CBEC", "pricing strategy", "Douyin"]

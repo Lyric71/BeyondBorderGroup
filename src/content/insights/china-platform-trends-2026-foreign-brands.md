@@ -4,6 +4,7 @@ description: "Five China platform shifts in 2026, what each one costs a foreign 
 pubDate: "2026-07-22"
 updatedDate: "2026-07-22"
 author: "Cyril Drouin"
+column: true
 category: "Market Strategy"
 platforms: ["WeChat", "Xiaohongshu", "Tmall"]
 tags: ["China market entry", "Xiaohongshu", "WeChat Mini Shop", "Tmall Global", "Platform strategy"]

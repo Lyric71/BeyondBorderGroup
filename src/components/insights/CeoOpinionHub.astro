@@ -1,0 +1,262 @@
+---
+/**
+ * CEO's Opinion hub: every insight flagged `column: true`, newest first.
+ * Same system as the Trends and Industry hubs (dark hero with live counters,
+ * a bento for the latest pieces, a dark closing band), plus two things only a
+ * signed column needs: the columnist's portrait in the hero and a short bio
+ * with the signature under the shelf.
+ *
+ * Column pieces keep their category and still list on Trends or Industry
+ * Insights; this page is a second way in, not a move.
+ */
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORY_ICONS, CEO_COPY, HUB_CONFIG, TRENDS_COPY, type HubLocale } from '../../lib/insight-hubs';
+import '../../styles/insight-hubs.css';
+
+interface Props {
+  locale: HubLocale;
+}
+
+const { locale } = Astro.props;
+const cfg = HUB_CONFIG[locale];
+const c = CEO_COPY[locale] ?? CEO_COPY.en!;
+const categories = (TRENDS_COPY[locale] ?? TRENDS_COPY.en!).categories;
+const catLabel = (k: string) => categories[k] ?? k;
+
+const collator = new Intl.Collator(cfg.dateLocale);
+const columns = (await getCollection(cfg.collection, ({ data }) => !data.draft && data.column)).sort((a, b) => {
+  const da = a.data.pubDate?.valueOf() ?? 0;
+  const db = b.data.pubDate?.valueOf() ?? 0;
+  return db !== da ? db - da : collator.compare(a.data.title, b.data.title);
+});
+
+const minutesOf = (body: string | undefined) => (body ? Math.max(1, Math.round(body.trim().split(/\s+/).length / 200)) : 0);
+const readingTime = (body: string | undefined) => (body ? c.minRead(minutesOf(body)) : '');
+const totalMinutes = columns.reduce((sum, p) => sum + minutesOf(p.body), 0);
+const newest = columns[0]?.data.pubDate;
+
+const NEW_DAYS = 14;
+const now = Date.now();
+const isNew = (d?: Date) => !!d && now - d.valueOf() < NEW_DAYS * 86_400_000;
+
+const [lead, ...others] = columns;
+const nextThree = others.slice(0, 3);
+const shelf = others.slice(3);
+
+const fmtLong = (d?: Date) =>
+  d ? d.toLocaleDateString(cfg.dateLocale, { month: 'long', day: 'numeric', year: 'numeric' }) : '';
+const fmtShort = (d?: Date) => (d ? d.toLocaleDateString(cfg.dateLocale, { month: 'short', year: 'numeric' }) : '');
+---
+
+<Layout title={c.seoTitle} description={c.seoDescription} ogImage={lead?.data.heroImage} ogImageAlt={lead?.data.heroImageAlt}>
+  <div class="ix tr ceo" data-ix>
+    {/* ---------- HERO ---------- */}
+    <section class="ix-hero ceo-hero">
+      <div class="ix-hero__glow" aria-hidden="true"></div>
+      <div class="container ix-hero__inner ceo-hero__grid">
+        <div>
+          <span class="eyebrow eyebrow--on-dark ix-rise">{c.eyebrow}</span>
+          <h1 class="ix-hero__title ix-rise" style="--d:80ms">{c.h1}</h1>
+          <p class="ix-hero__lead ix-rise" style="--d:160ms">{c.lead}</p>
+          <div class="ix-hero__actions ix-rise" style="--d:240ms">
+            {lead && <a href="#latest" class="btn btn--primary">{c.ctaLatest}</a>}
+            <a href={cfg.trendsPath} class="btn btn--ghost-light">{c.ctaTrends}</a>
+          </div>
+          {
+            columns.length > 0 && (
+              <dl class="ix-stats ix-rise" style="--d:320ms">
+                <div class="ix-stats__item">
+                  <dt>{c.statColumns}</dt>
+                  <dd><span data-count={columns.length}>{columns.length}</span></dd>
+                </div>
+                <div class="ix-stats__item">
+                  <dt>{c.statMinutes}</dt>
+                  <dd><span data-count={totalMinutes}>{totalMinutes}</span></dd>
+                </div>
+                {newest && (
+                  <div class="ix-stats__item">
+                    <dt>{c.statNewest}</dt>
+                    <dd class="ix-stats__date">
+                      <time datetime={newest.toISOString().slice(0, 10)}>{fmtLong(newest)}</time>
+                    </dd>
+                  </div>
+                )}
+              </dl>
+            )
+          }
+          <p class="ix-hero__cred ix-rise" style="--d:400ms">{c.cred}</p>
+        </div>
+
+        <figure class="ceo-portrait ix-rise" style="--d:200ms">
+          <img src={c.columnist.photo} alt={c.portraitAlt} width="500" height="800" loading="eager" decoding="async" />
+          <figcaption>
+            <strong>{c.columnist.name}</strong>
+            <span>{c.columnist.role}</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    {/* ---------- LATEST ---------- */}
+    {
+      lead ? (
+        <section class="tr-latest" id="latest">
+          <div class="container">
+            <header class="tr-head" data-ix-reveal>
+              <span class="eyebrow">{c.latestEyebrow}</span>
+              <h2>{c.latestH2}</h2>
+            </header>
+            <div class:list={['tr-bento', nextThree.length === 0 && 'ceo-bento--solo']}>
+              <a href={cfg.articleHref(lead.id)} class="tr-lead" data-ix-reveal data-ix-spot data-ix-tilt>
+                <img src={lead.data.heroImage} alt={lead.data.heroImageAlt} width="1200" height="800" loading="lazy" decoding="async" />
+                <span class="tr-lead__scrim" aria-hidden="true" />
+                <span class="tr-lead__body">
+                  <span class="tr-pills">
+                    {isNew(lead.data.pubDate) && <span class="tr-new">{c.newFlag}</span>}
+                    <span class="tr-cat tr-cat--dark">
+                      <span class="tr-cat__icon" set:html={CATEGORY_ICONS[lead.data.category] ?? ''} />
+                      {catLabel(lead.data.category)}
+                    </span>
+                  </span>
+                  <h3 class="tr-lead__title">{lead.data.title}</h3>
+                  <span class="tr-lead__desc">{lead.data.description}</span>
+                  <span class="tr-lead__meta">
+                    {readingTime(lead.body)}
+                    {lead.data.pubDate && <> · {fmtShort(lead.data.pubDate)}</>}
+                  </span>
+                </span>
+              </a>
+              {nextThree.length > 0 && (
+                <ul class="tr-side" role="list">
+                  {nextThree.map((p, i) => (
+                    <li data-ix-reveal style={`--d:${80 + i * 80}ms`}>
+                      <a href={cfg.articleHref(p.id)} class="tr-mini" data-ix-spot>
+                        <span class="tr-mini__thumb">
+                          <img src={p.data.heroImage} alt={p.data.heroImageAlt} width="600" height="400" loading="lazy" decoding="async" />
+                        </span>
+                        <span class="tr-mini__body">
+                          <span class="tr-pills">
+                            {isNew(p.data.pubDate) && <span class="tr-new">{c.newFlag}</span>}
+                            <span class="tr-cat">
+                              <span class="tr-cat__icon" set:html={CATEGORY_ICONS[p.data.category] ?? ''} />
+                              {catLabel(p.data.category)}
+                            </span>
+                          </span>
+                          <h3 class="tr-mini__title">{p.data.title}</h3>
+                          <span class="tr-mini__meta">
+                            {readingTime(p.body)}
+                            {p.data.pubDate && <> · {fmtShort(p.data.pubDate)}</>}
+                          </span>
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+        </section>
+      ) : (
+        <section class="tr-latest" id="latest">
+          <div class="container">
+            <div class="ceo-empty" data-ix-reveal>
+              <h2>{c.emptyH2}</h2>
+              <p>{c.emptyBody}</p>
+              <a href={cfg.trendsPath} class="btn btn--secondary">{c.ctaTrends}</a>
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {/* ---------- SHELF ---------- */}
+    {
+      shelf.length > 0 && (
+        <section class="tr-archive ceo-shelf" id="shelf">
+          <div class="container">
+            <header class="tr-head" data-ix-reveal>
+              <span class="eyebrow">{c.shelfEyebrow}</span>
+              <h2>{c.shelfH2}</h2>
+            </header>
+            <ul class="tr-grid" role="list">
+              {shelf.map((p, i) => (
+                <li class="tr-item" data-ix-reveal style={`--d:${(i % 3) * 70}ms`}>
+                  <a href={cfg.articleHref(p.id)} class="tr-card" data-ix-spot>
+                    <span class="tr-card__media">
+                      <img src={p.data.heroImage} alt={p.data.heroImageAlt} width="600" height="400" loading="lazy" decoding="async" />
+                      <span class="tr-pills tr-card__pills">
+                        <span class="tr-cat tr-cat--glass">
+                          <span class="tr-cat__icon" set:html={CATEGORY_ICONS[p.data.category] ?? ''} />
+                          {catLabel(p.data.category)}
+                        </span>
+                      </span>
+                    </span>
+                    <span class="tr-card__body">
+                      <h3 class="tr-card__title">{p.data.title}</h3>
+                      <span class="tr-card__desc">{p.data.description}</span>
+                      <span class="tr-card__foot">
+                        <span class="tr-card__meta">
+                          {readingTime(p.body)}
+                          {p.data.pubDate && <> · {fmtShort(p.data.pubDate)}</>}
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )
+    }
+
+    {/* ---------- THE COLUMNIST ---------- */}
+    <section class="ceo-about" id="columnist">
+      <div class="container">
+        <div class="ceo-about__card" data-ix-reveal>
+          <img class="ceo-about__photo" src={c.columnist.photo} alt="" width="500" height="800" loading="lazy" decoding="async" />
+          <div class="ceo-about__body">
+            <span class="eyebrow">{c.aboutEyebrow}</span>
+            <h2>{c.columnist.name}</h2>
+            <p class="ceo-about__role">{c.columnist.role}</p>
+            {c.columnist.bio.map((para) => <p>{para}</p>)}
+            <img class="ceo-about__sig" src={c.columnist.signature} alt={c.signatureAlt} width="1408" height="768" loading="lazy" decoding="async" />
+            <ul class="ceo-about__links" role="list">
+              {c.columnist.links.map((l) => (
+                <li><a href={l.href} target="_blank" rel="noopener">{l.label}</a></li>
+              ))}
+              <li><a href="/about">{c.aboutMore}</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- CTA ---------- */}
+    <section class="ix-cta">
+      <div class="ix-cta__glow" aria-hidden="true"></div>
+      <div class="container ix-cta__inner" data-ix-reveal>
+        <span class="eyebrow eyebrow--on-dark">{c.ctaEyebrow}</span>
+        <h2>{c.ctaH2}</h2>
+        <p>{c.ctaBody}</p>
+        <div class="ix-cta__actions">
+          <a href={cfg.contactPath} class="btn btn--primary">{c.ctaContact}</a>
+          <a href={cfg.trendsPath} class="btn btn--ghost-light">{c.ctaTrends}</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  import { initReveal, initCountUp, initSpotlight } from '../../scripts/insight-hubs';
+
+  const root = document.querySelector<HTMLElement>('[data-ix]');
+  if (root) {
+    root.classList.add('ix--js');
+    initReveal(root);
+    initCountUp(root);
+    initSpotlight(root);
+  }
+</script>

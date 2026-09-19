@@ -4,6 +4,7 @@ description: "China now has 140 million cross-border shoppers, but imported good
 pubDate: "2026-07-23"
 updatedDate: "2026-07-23"
 author: "Cyril Drouin"
+column: true
 category: "Market Strategy"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Cross-border e-commerce", "China market entry", "Tmall Global", "JD Worldwide", "Customs"]

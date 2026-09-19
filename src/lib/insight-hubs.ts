@@ -1054,3 +1054,99 @@ TRENDS_COPY.es = {
     'Compliance & Setup': 'Cumplimiento e implantación',
   },
 };
+
+/* ------------------------------------------------------------------ */
+/* CEO's Opinion (/insights/ceo-opinion)                               */
+/* Signed columns: insights flagged `column: true`. English only for  */
+/* now; FR, DE and ES get a native slug and copy when the page is     */
+/* translated (CLAUDE.md 6.9, 6.11).                                   */
+/* ------------------------------------------------------------------ */
+
+export interface Columnist {
+  name: string;
+  role: string;
+  photo: string;
+  signature: string;
+  bio: string[];
+  links: { label: string; href: string }[];
+}
+
+export interface CeoCopy {
+  path: string;
+  seoTitle: string;
+  seoDescription: string;
+  eyebrow: string;
+  h1: string;
+  lead: string;
+  ctaLatest: string;
+  ctaTrends: string;
+  statColumns: string;
+  statMinutes: string;
+  statNewest: string;
+  cred: string;
+  portraitAlt: string;
+  signatureAlt: string;
+  latestEyebrow: string;
+  latestH2: string;
+  shelfEyebrow: string;
+  shelfH2: string;
+  newFlag: string;
+  emptyH2: string;
+  emptyBody: string;
+  aboutEyebrow: string;
+  aboutMore: string;
+  columnist: Columnist;
+  ctaEyebrow: string;
+  ctaH2: string;
+  ctaBody: string;
+  ctaContact: string;
+  minRead: (n: number) => string;
+}
+
+export const CEO_COPY: Partial<Record<HubLocale, CeoCopy>> = {
+  en: {
+    path: '/insights/ceo-opinion',
+    seoTitle: 'CEO’s Opinion: signed columns on China | TheChinaPath',
+    seoDescription:
+      'Signed columns from Cyril Drouin, founder of TheChinaPath, on how foreign brands get China wrong and where the platforms are really heading.',
+    eyebrow: 'CEO’s Opinion',
+    h1: 'Written by the person running the shop.',
+    lead: 'Cyril Drouin has worked China’s platforms for 20 years, first at Publicis, now at TheChinaPath. Here he says what he actually thinks about the market. And signs it.',
+    ctaLatest: 'Read the latest column',
+    ctaTrends: 'All trends',
+    statColumns: 'columns',
+    statMinutes: 'minutes of reading',
+    statNewest: 'newest',
+    cred: 'Every column is dated and signed. The figures in it are sourced where they appear.',
+    portraitAlt: 'Portrait of Cyril Drouin, founder and CEO of TheChinaPath',
+    signatureAlt: 'Cyril Drouin’s handwritten signature',
+    latestEyebrow: 'Latest',
+    latestH2: 'Start with the newest one.',
+    shelfEyebrow: 'Earlier columns',
+    shelfH2: 'The rest of the shelf.',
+    newFlag: 'New',
+    emptyH2: 'The first column is on its way.',
+    emptyBody: 'Until it lands, Trends has the team’s latest reading on the market.',
+    aboutEyebrow: 'The columnist',
+    aboutMore: 'Meet the team',
+    columnist: {
+      name: 'Cyril Drouin',
+      role: 'Founder & CEO, TheChinaPath',
+      photo: '/Images/team/cyril-drouin.jpg',
+      signature: '/Images/team/Cyril-Drouin-Signature-Transparent.png',
+      bio: [
+        '25 years in digital, advertising and commerce, 20 of them on the ground in China. Before TheChinaPath he was CEO of Publicis Commerce and Performance Marketing for China and North Asia.',
+        'Today he writes the strategy and runs the shop, splitting his weeks between Shanghai and Paris.',
+      ],
+      links: [
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/cyril-d-68835729/' },
+        { label: 'Substack', href: 'https://cyrildrouin.substack.com' },
+      ],
+    },
+    ctaEyebrow: 'Talk to us',
+    ctaH2: 'Want the same read on your brand?',
+    ctaBody: 'Tell us where you are in China and where you want to get to. You’ll get a straight answer, on your numbers.',
+    ctaContact: 'Start a conversation',
+    minRead: (n) => `${n} min read`,
+  },
+};

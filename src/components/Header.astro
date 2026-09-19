@@ -17,12 +17,15 @@
  * WO-1.1 — five top-level groups, labels naming the visitor's need. "Who We Are"
  * sits in the footer. Articles sit under Learn China in two rows: "Industry
  * Insights" (/insights/industries) and "Trends" (/insights), in every locale.
+ * "CEO's Opinion" (/insights/ceo-opinion) takes the Learn China feature card
+ * wherever the page exists; elsewhere the card stays on the Masterclass.
  *
  * Link policy. Every row points at thechinapath.com except one, the hubStudio
  * row. WO-P2: the Compass pages and the two door pages now ship in every
  * locale, so every row goes through localizePath and a German reader stays on
  * German pages from the German menu.
  */
+import { getCollection } from 'astro:content';
 import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
 import { locales, localeLabels, localeNamesNative, type Locale } from '../i18n/ui';
 import { localesForPath } from '../i18n/route-locales';
@@ -212,6 +215,15 @@ type Feature =
     }
   | { kind: 'image'; label: string; title: string; line: string; href: string; cta: string; src: string; alt: string };
 
+// The Learn China card shows the CEO's column wherever that page exists
+// (English only for now), fronted by the newest column's hero image.
+const hasCeoPage = lp('/insights/ceo-opinion') !== lp('/');
+const latestColumn = hasCeoPage
+  ? (await getCollection('insights', ({ data }) => !data.draft && data.column)).sort(
+      (a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0),
+    )[0]
+  : undefined;
+
 const features: Record<string, Feature> = {
   sell: {
     kind: 'logos',
@@ -256,16 +268,27 @@ const features: Record<string, Feature> = {
     src: '/Images/compass/compass-hero.png',
     alt: t('nav.feature.compass.alt'),
   },
-  learn: {
-    kind: 'image',
-    label: t('nav.feature.learn.label'),
-    title: t('nav.feature.learn.title'),
-    line: t('nav.feature.learn.line'),
-    href: lp('/learn-china/masterclass'),
-    cta: t('nav.feature.learn.cta'),
-    src: '/Images/masterclass.jpg',
-    alt: t('nav.feature.learn.alt'),
-  },
+  learn: latestColumn
+    ? {
+        kind: 'image',
+        label: t('nav.feature.ceo.label'),
+        title: t('nav.feature.ceo.title'),
+        line: `${t('nav.feature.ceo.newest')} ${latestColumn.data.title}`,
+        href: lp('/insights/ceo-opinion'),
+        cta: t('nav.feature.ceo.cta'),
+        src: latestColumn.data.heroImage,
+        alt: latestColumn.data.heroImageAlt,
+      }
+    : {
+        kind: 'image',
+        label: t('nav.feature.learn.label'),
+        title: t('nav.feature.learn.title'),
+        line: t('nav.feature.learn.line'),
+        href: lp('/learn-china/masterclass'),
+        cta: t('nav.feature.learn.cta'),
+        src: '/Images/masterclass.jpg',
+        alt: t('nav.feature.learn.alt'),
+      },
   work: {
     kind: 'image',
     label: t('nav.feature.work.label'),

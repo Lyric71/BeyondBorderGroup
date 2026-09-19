@@ -4,6 +4,7 @@ description: "Double 11, China's dominant shopping festival, is adopting televis
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
+column: true
 category: "E-Commerce"
 tags: ["Double 11", "e-commerce", "China retail", "consumer trust", "marketing strategy"]
 heroImage: "/Images/insights/double-11-2025-old-media-strategy-china-ecommerce.png"

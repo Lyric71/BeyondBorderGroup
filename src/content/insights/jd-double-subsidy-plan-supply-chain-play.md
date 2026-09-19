@@ -3,6 +3,7 @@ title: "JD's New Subsidy Plan Is Really a Supply Chain Play"
 description: "JD.com and 100 brands put RMB 10 billion behind appliance trade-ins. Why the Double Subsidy plan is a supply chain and loyalty play, not a price war."
 pubDate: "2026-07-05"
 author: "Cyril Drouin"
+column: true
 category: "E-Commerce"
 industry: "Electronics & Appliances"
 platforms: ["JD"]

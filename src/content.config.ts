@@ -77,6 +77,13 @@ const insightBaseSchema = z.object({
   keyTakeaways: z.array(z.string()).default([]),
   heroImage: z.string(),
   heroImageAlt: z.string().default(''),
+  /**
+   * A signed opinion column by the CEO. Lists the piece on
+   * /insights/ceo-opinion as well as its usual hub. Set it by hand on pieces
+   * that argue a position; a news explainer the CEO happened to write stays
+   * off the column even when `author` is "Cyril Drouin".
+   */
+  column: z.boolean().default(false),
   draft: z.boolean().default(false),
 });
 

@@ -4,6 +4,7 @@ description: "Global brands must shift from single national strategies to locali
 pubDate: "2026-01-06"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
+column: true
 category: "Market Strategy"
 tags: ["China market strategy", "localization", "city-level marketing", "consumer behavior", "portfolio approach"]
 heroImage: "/Images/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans.png"

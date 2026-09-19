@@ -2016,3 +2016,127 @@
     transform: none;
   }
 }
+
+/* ============ CEO's Opinion (/insights/ceo-opinion) ============ */
+/* Reuses the hero, bento, card and CTA of the other hubs. What is new:
+   the portrait beside the hero copy, the empty state, and the bio card. */
+.ceo-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 20rem);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+.ceo-portrait {
+  margin: 0;
+  position: relative;
+  border-radius: var(--ix-radius);
+  overflow: hidden;
+  background: var(--ix-ink-2);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.7);
+}
+.ceo-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+.ceo-portrait figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: var(--space-6) var(--space-4) var(--space-4);
+  background: linear-gradient(transparent, rgba(17, 17, 19, 0.92));
+  font-size: var(--fs-small);
+  color: rgba(255, 255, 255, 0.72);
+}
+.ceo-portrait figcaption strong {
+  color: #fff;
+  font-size: 1.0625rem;
+}
+
+.ceo-bento--solo {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.ceo-empty {
+  max-width: 36rem;
+  margin-inline: auto;
+  text-align: center;
+  padding: var(--space-6) 0;
+}
+.ceo-empty h2 {
+  margin-bottom: var(--space-3);
+}
+.ceo-empty p {
+  color: var(--bbg-text);
+  margin-bottom: var(--space-5);
+}
+
+.ceo-about {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background: var(--bbg-white);
+  border-top: 1px solid var(--bbg-border);
+}
+.ceo-about__card {
+  display: grid;
+  grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: start;
+  max-width: 56rem;
+  margin-inline: auto;
+}
+.ceo-about__photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border-radius: var(--ix-radius);
+}
+.ceo-about__body h2 {
+  margin: var(--space-3) 0 0.25rem;
+}
+.ceo-about__role {
+  color: var(--bbg-text-muted);
+  font-size: var(--fs-small);
+  font-weight: 500;
+  margin-bottom: var(--space-4);
+}
+.ceo-about__body p + p {
+  margin-top: var(--space-3);
+}
+.ceo-about__sig {
+  display: block;
+  width: 9.5rem;
+  height: auto;
+  margin: var(--space-4) 0 var(--space-3) -0.5rem;
+}
+.ceo-about__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+
+@media (max-width: 1023px) {
+  .ceo-hero__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ceo-portrait {
+    max-width: 16rem;
+  }
+}
+@media (max-width: 639px) {
+  .ceo-about__card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ceo-about__photo {
+    max-width: 12rem;
+  }
+}

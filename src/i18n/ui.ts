@@ -166,6 +166,10 @@ export const ui = {
     'nav.feature.learn.line': 'A working session, not a keynote. Recent cases, real numbers.',
     'nav.feature.learn.cta': 'See the programme',
     'nav.feature.learn.alt': 'A masterclass session in progress with the room facing the speaker',
+    'nav.feature.ceo.label': "CEO's Opinion",
+    'nav.feature.ceo.title': 'Signed columns from our founder',
+    'nav.feature.ceo.newest': 'Newest:',
+    'nav.feature.ceo.cta': 'Read the columns',
 
     // "Our Work" panel. The Header shows this panel only
     // in locales where /how-we-work has a native twin in the slug table.
