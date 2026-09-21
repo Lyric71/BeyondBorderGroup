@@ -354,9 +354,6 @@ const resolveFrInsightDest = (/** @type {string} */ dest) => {
  */
 const staticEnToFr = {
   '/compass': '/fr/compass',
-  '/compass/why-vetted': '/fr/compass/pourquoi-cette-base',
-  '/compass/what-is-inside': '/fr/compass/ce-quon-y-trouve',
-  '/compass/how-it-works': '/fr/compass/comment-on-etablit-la-liste',
   '/compass/shortlist': '/fr/compass/demander-sa-liste',
   '/social-in-china': '/fr/reseaux-sociaux-chinois',
   '/build-in-china': '/fr/site-web-et-wechat-en-chine',
@@ -397,9 +394,6 @@ const staticFrToEn = Object.fromEntries(Object.entries(staticEnToFr).map(([en, f
  */
 const staticEnToDe = {
   '/compass': '/de/compass',
-  '/compass/why-vetted': '/de/compass/warum-geprueft',
-  '/compass/what-is-inside': '/de/compass/was-drinsteht',
-  '/compass/how-it-works': '/de/compass/so-entsteht-die-liste',
   '/compass/shortlist': '/de/compass/liste-anfordern',
   '/social-in-china': '/de/chinesische-social-media',
   '/build-in-china': '/de/website-und-wechat-in-china',
@@ -440,9 +434,6 @@ const staticDeToEn = Object.fromEntries(Object.entries(staticEnToDe).map(([en, d
  */
 const staticEnToEs = {
   '/compass': '/es/compass',
-  '/compass/why-vetted': '/es/compass/por-que-verificada',
-  '/compass/what-is-inside': '/es/compass/que-contiene',
-  '/compass/how-it-works': '/es/compass/como-creamos-la-lista',
   '/compass/shortlist': '/es/compass/solicitar-la-lista',
   '/social-in-china': '/es/redes-sociales-chinas',
   '/build-in-china': '/es/web-y-wechat-en-china',
@@ -771,6 +762,21 @@ export default defineConfig({
     '/fr/se-developper-en-chine/influence-et-kol': { status: 301, destination: '/fr/reseaux-sociaux-chinois' },
     '/de/in-china-wachsen/influencer-und-kol': { status: 301, destination: '/de/chinesische-social-media' },
     '/es/crecer-en-china/influencia-y-kol': { status: 301, destination: '/es/redes-sociales-chinas' },
+
+    // The three Compass sub-pages are retired; the landing page carries the
+    // whole story now, so every old path folds back into it.
+    '/compass/why-vetted': { status: 301, destination: '/compass' },
+    '/compass/what-is-inside': { status: 301, destination: '/compass' },
+    '/compass/how-it-works': { status: 301, destination: '/compass' },
+    '/fr/compass/pourquoi-cette-base': { status: 301, destination: '/fr/compass' },
+    '/fr/compass/ce-quon-y-trouve': { status: 301, destination: '/fr/compass' },
+    '/fr/compass/comment-on-etablit-la-liste': { status: 301, destination: '/fr/compass' },
+    '/de/compass/warum-geprueft': { status: 301, destination: '/de/compass' },
+    '/de/compass/was-drinsteht': { status: 301, destination: '/de/compass' },
+    '/de/compass/so-entsteht-die-liste': { status: 301, destination: '/de/compass' },
+    '/es/compass/por-que-verificada': { status: 301, destination: '/es/compass' },
+    '/es/compass/que-contiene': { status: 301, destination: '/es/compass' },
+    '/es/compass/como-creamos-la-lista': { status: 301, destination: '/es/compass' },
 
     '/china-digital-china-e-commerce-training-masterclass': {
       status: 301,

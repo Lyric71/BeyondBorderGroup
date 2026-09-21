@@ -1,7 +1,7 @@
 /**
- * Copy shape for /compass and its four sub-pages, across every locale.
+ * Copy shape for /compass and the shortlist form page, across every locale.
  *
- * The five pages share one vocabulary: the comparison table, the three steps,
+ * The two pages share one vocabulary: the comparison table, the three steps,
  * the category list and the partner-type cards all appear on more than one
  * page. Keeping them in `facts` means a locale translates each string once and
  * every page that quotes it stays in step.
@@ -101,8 +101,25 @@ export interface CompassIndexCopy {
   problemFigureAlt: string;
   /** One-line caption under the problem photo. */
   problemCaption: string;
+  /**
+   * Three short titled beats under the problem photo. Locales without them
+   * fall back to the long-form `facts.problemBody` paragraphs.
+   */
+  problemBeats?: { title: string; body: string }[];
   /** Alt text for the three step photos, in step order. */
   stepAlts: string[];
+  /**
+   * Channel-by-channel block that replaces the three steps on the landing
+   * page. Locales without it fall back to the steps timeline.
+   */
+  channels?: {
+    eyebrow: string;
+    title: string;
+    /** Small label before each card's partner type. */
+    partnerLabel: string;
+    /** `alt` describes the channel photograph shown in the explorer panel. */
+    items: { name: string; where: string; partner: string; body: string; alt?: string }[];
+  };
   coverageEyebrow: string;
   coverageTitle: string;
   coverageLead: string;
@@ -110,12 +127,6 @@ export interface CompassIndexCopy {
   whoLabel: string;
   /** Sublabel above the category chips. */
   categoriesLabel: string;
-  readMoreEyebrow: string;
-  readMoreTitle: string;
-  readMoreCta: string;
-  cards: { title: string; body: string }[];
-  /** Alt text for the three read-more card photos, in card order. */
-  cardAlts: string[];
   closingEyebrow: string;
   closingTitle: string;
   closingLead: string;
@@ -124,118 +135,6 @@ export interface CompassIndexCopy {
   /** WO-P4. One line under the closing lead pointing at the cost calculators.
    * Split around the link so each locale controls its own word order. */
   toolsLine?: { before: string; link: string; after: string };
-}
-
-export interface WhyVettedCopy {
-  title: string;
-  description: string;
-  eyebrow: string;
-  h1: string;
-  lead: string;
-  body: string;
-  ctaPrimary: string;
-  ctaSecondary: string;
-  questionEyebrow: string;
-  questionTitle: string;
-  questionPull: string;
-  questionBody: string;
-  storiesEyebrow: string;
-  storiesTitle: string;
-  figureAlt: string;
-  figureCaption: string;
-  storiesCost: string;
-  buildingEyebrow: string;
-  buildingTitle: string;
-  buildingBody: string[];
-  questionsEyebrow: string;
-  questionsTitle: string;
-  questionsLead: string;
-  questionsCost: string;
-  nextCtaPrimary: string;
-  nextCtaSecondary: string;
-}
-
-export interface WhatIsInsideCopy {
-  title: string;
-  description: string;
-  eyebrow: string;
-  h1: string;
-  lead: string;
-  body: string;
-  ctaPrimary: string;
-  ctaSecondary: string;
-  whoEyebrow: string;
-  whoTitle: string;
-  whoLead: string;
-  coverageLabel: string;
-  fieldsEyebrow: string;
-  fieldsTitle: string;
-  fieldsLead: string;
-  figureAlt: string;
-  figureCaption: string;
-  notProductEyebrow: string;
-  notProductTitle: string;
-  notProductBody: string[];
-  /** Final paragraph, split so the app link can be rendered as an anchor. */
-  notProductClosing: { before: string; after: string };
-  nextCtaPrimary: string;
-  nextCtaSecondary: string;
-}
-
-export interface HowItWorksCopy {
-  title: string;
-  description: string;
-  eyebrow: string;
-  h1: string;
-  lead: string;
-  body: string;
-  ctaPrimary: string;
-  ctaSecondary: string;
-  /** Alt text for the hero photograph. */
-  heroAlt: string;
-  /** Small badge pinned to the hero photo. */
-  heroChip: string;
-  /** Hero title split into painted rows; together they read as `h1`. */
-  h1Rows: HeroTitleRow[];
-  /** Stat strip under the hero actions. */
-  heroStats: HeroStat[];
-  /** Breadcrumb labels above the hero eyebrow. */
-  crumbHome: string;
-  crumbSection: string;
-  /** Label on the hero's scroll cue. */
-  scrollCue: string;
-  engagementEyebrow: string;
-  engagementTitle: string;
-  engagementLead: string;
-  phases: { title: string; body: string }[];
-  /** When each phase happens, shown beside it on the process track. */
-  phaseWhen: string[];
-  /** Alt text for the three phase photographs, in phase order. */
-  phaseAlts: string[];
-  optionsEyebrow: string;
-  optionsTitle: string;
-  options: { label: string; tagline: string; body: string }[];
-  optionsNote: string;
-  deliverablesEyebrow: string;
-  deliverablesTitle: string;
-  figureAlt: string;
-  figureCaption: string;
-  deliverables: Named[];
-  /** Alt text for the warm-introduction photograph. */
-  introAlt: string;
-  limitsEyebrow: string;
-  limitsTitle: string;
-  limitsBody: string[];
-  pricingEyebrow: string;
-  pricingTitle: string;
-  pricingBody: string[];
-  /** Paragraph that opens with the no-commission line in bold. */
-  pricingCommissionTail: string;
-  timingEyebrow: string;
-  timingTitle: string;
-  timing: Labelled[];
-  nextCtaPrimary: string;
-  nextCtaSecondary: string;
 }
 
 export interface ShortlistCopy {
@@ -278,8 +177,5 @@ export interface ShortlistCopy {
 export interface CompassCopy {
   facts: CompassFacts;
   index: CompassIndexCopy;
-  whyVetted: WhyVettedCopy;
-  whatIsInside: WhatIsInsideCopy;
-  howItWorks: HowItWorksCopy;
   shortlist: ShortlistCopy;
 }

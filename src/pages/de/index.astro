@@ -1,6 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import HomeAssets from '../../components/home/HomeAssets.astro';
+import ChannelScope from '../../components/how-we-work/ChannelScope.astro';
+import GrowthChart from '../../components/how-we-work/GrowthChart.astro';
+import howWeWork from '../../i18n/how-we-work/de';
 import { getCollection } from 'astro:content';
 import { INSIGHT_INDUSTRIES, industrySlug } from '../../content.config';
 import { HUB_CONFIG, INDUSTRIES_COPY } from '../../lib/insight-hubs';
@@ -299,85 +302,6 @@ const pillarIcons: Record<string, string> = {
   grow: '<path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/>',
   learn:
     '<path d="M2 4h7a3 3 0 0 1 3 3v13"/><path d="M22 4h-7a3 3 0 0 0-3 3v13"/><path d="M2 4v15h7a3 3 0 0 1 3 3"/><path d="M22 4v15h-7a3 3 0 0 0-3 3"/>',
-};
-
-const hwwPartners = [
-  {
-    key: 'yes',
-    tag: 'Der Generalist, der zugesagt hat',
-    title: 'Betreibt jeden Shop, den man ihm gibt',
-    points: [
-      {
-        ok: true,
-        text: 'Kann den Shop betreiben',
-      },
-      {
-        ok: false,
-        text: 'Nimmt Marken aus jeder Kategorie',
-      },
-      {
-        ok: false,
-        text: 'Lernt Ihre Kategorie auf Ihre Kosten',
-      },
-      {
-        ok: false,
-        text: 'Mietet sich Kundschaft mit Ihrem Werbebudget',
-      },
-    ],
-    outcome:
-      'Zwei Jahre später haben Sie einen gepflegten Flagship-Store und eine hohe Mediarechnung, aber kaum Kunden, die ohne Anzeige wiederkommen.',
-  },
-  {
-    key: 'fit',
-    tag: 'Der Spezialist, den wir Ihnen vermitteln',
-    title: 'Wenige Kategorien, ein eigenes Publikum',
-    points: [
-      {
-        ok: true,
-        text: 'Auf wenige Kategorien fokussiert, Ihre eingeschlossen',
-      },
-      {
-        ok: true,
-        text: 'Kennt die Preisniveaus und die Creator, die wirklich verkaufen',
-      },
-      {
-        ok: true,
-        text: 'Seine Shops und Livestreams ziehen Ihre Käufer bereits an',
-      },
-      {
-        ok: true,
-        text: 'Kann den Shop betreiben',
-      },
-    ],
-    outcome:
-      'Streichen Sie das Werbebudget, und seine Kunden kaufen weiter. Sie waren Stammkunden, lange bevor Ihre Marke kam.',
-  },
-];
-
-const hwwSteps = [
-  {
-    icon: 'network',
-    title: 'Wir kennen die Spezialisten bereits',
-    body: 'In mehr als 15 Jahren chinesischem eCommerce haben wir die TPs und DPs kennengelernt, die in ihrer Kategorie den Ton angeben. Wir sind ihnen persönlich begegnet, alle stehen in Compass, unserer Partnerdatenbank. Daraus wählen wir jene, die zu Ihrer Marke passen.',
-  },
-  {
-    icon: 'door',
-    title: 'Wir öffnen Ihnen die Tür',
-    body: 'Die besten Spezialisten lehnen die meisten Marken ab, eine kalte E-Mail kommt selten weit. Wir erarbeiten den Pitch mit Ihnen und stellen den Kontakt her. Ihre Investitionssumme steht fest, bevor der Partner danach fragt.',
-  },
-  {
-    icon: 'launch',
-    title: 'Dann bauen wir mit ihnen die Nachfrage auf',
-    body: 'Nach Vertragsabschluss steuern wir gemeinsam mit Ihrem Partner Shop-Inhalte und eCommerce-Kampagnen, dazu Ihre Social-Media-Kanäle. Auch Offline-Events, sofern sie das Geld wert sind.',
-  },
-];
-
-const hwwIcons: Record<string, string> = {
-  network:
-    '<circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M10.8 7.2 6.2 16.8"/><path d="m13.2 7.2 4.6 9.6"/><path d="M7.5 19h9"/>',
-  door: '<path d="M14 3h5a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>',
-  launch:
-    '<path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M16 8.5a4 4 0 0 1 0 7"/><path d="M19 5.5a8 8 0 0 1 0 13"/>',
 };
 
 const allCases = await getCollection('casesDe', ({ data }) => !data.draft);
@@ -804,147 +728,37 @@ function formatInsightDate(d?: Date) {
     </div>
   </section>
 
+  {/* ---------- WHAT GROWTH LOOKS LIKE ---------- */}
+  {
+    howWeWork.growth && (
+      <section class="section section--alt" id="growth" aria-labelledby="growth-title">
+        <div class="container">
+          <header class="hww-head">
+            <span class="eyebrow">{howWeWork.growth.eyebrow}</span>
+            <h2 id="growth-title" class="hww-head__title">
+              {howWeWork.growth.h2}
+            </h2>
+          </header>
+          <GrowthChart g={howWeWork.growth} tone="light" hideTitle shortNote />
+        </div>
+      </section>
+    )
+  }
+
   {/* ---------- HOW WE WORK ---------- */}
-  <section class="section section--alt hww-section" id="how-we-work" aria-labelledby="hww-title">
+  <section class="section hww-section" id="how-we-work" aria-labelledby="hww-title">
     <div class="container">
       <header class="hww-head">
         <span class="eyebrow">Arbeitsweise</span>
-        <h2 id="hww-title" class="hww-head__title">
-          In China setzen sich die hochspezialisierten TPs und DPs durch
-        </h2>
-        <p class="hww-head__lead">
-          TPs (Trade Partner auf Tmall und JD) und DPs (Douyin Partner), die Ihrer Marke zusagen,
-          gibt es reichlich. Die meisten sind Generalisten: Sie betreiben Shops in jeder beliebigen
-          Kategorie und kaufen den Traffic dafür ein. Die Partner, die sich lohnen, beschränken sich
-          auf wenige Kategorien und haben deren Kundschaft längst auf ihrer Seite. Unsere Aufgabe
-          ist es, Ihre Marke dem Partner vorzustellen, der Ihre Kategorie anführt.
-        </p>
+        <h2 id="hww-title" class="hww-head__title">Was wir übernehmen, Kanal für Kanal</h2>
       </header>
 
-      <div class="hww-compare">
-        {
-          hwwPartners.map((p) => (
-            <article class={`hww-card hww-card--${p.key} home-reveal`}>
-              <span class="hww-card__tag">{p.tag}</span>
-              <h3 class="hww-card__title">{p.title}</h3>
-              <ul class="hww-card__points">
-                {p.points.map((pt) => (
-                  <li class={`hww-card__point${pt.ok ? ' is-ok' : ' is-no'}`}>
-                    <span class="hww-card__mark" aria-hidden="true">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        {pt.ok ? (
-                          <polyline points="5 12.5 10 17 19 7" />
-                        ) : (
-                          <>
-                            <line x1="7" y1="7" x2="17" y2="17" />
-                            <line x1="17" y1="7" x2="7" y2="17" />
-                          </>
-                        )}
-                      </svg>
-                    </span>
-                    <span class="hww-sr">{pt.ok ? 'Ja: ' : 'Nein: '}</span>
-                    {pt.text}
-                  </li>
-                ))}
-              </ul>
+      <ChannelScope role={howWeWork.role} tone="light" showStance={false} showSupport={false} tabbed hideHead compact />
 
-              <figure class="hww-curve">
-                <figcaption class="hww-curve__label">Shop-Traffic nach dem Werbestopp</figcaption>
-                <div class="hww-curve__plot">
-                  <svg
-                    class="hww-curve__svg"
-                    viewBox="0 0 240 84"
-                    preserveAspectRatio="none"
-                    role="img"
-                    aria-label={
-                      p.key === 'fit'
-                        ? 'Der Traffic hält sich nach dem Werbestopp'
-                        : 'Der Traffic bricht nach dem Werbestopp ein'
-                    }
-                  >
-                    <line class="hww-curve__stop" x1="140" y1="0" x2="140" y2="84" />
-                    {p.key === 'fit' ? (
-                      <>
-                        <path
-                          class="hww-curve__area"
-                          d="M0 62 C40 54 90 42 140 32 C175 28 205 27 240 25 L240 84 L0 84 Z"
-                        />
-                        <path
-                          class="hww-curve__line"
-                          d="M0 62 C40 54 90 42 140 32 C175 28 205 27 240 25"
-                        />
-                      </>
-                    ) : (
-                      <>
-                        <path
-                          class="hww-curve__area"
-                          d="M0 62 C40 54 90 42 140 32 C165 50 190 70 240 76 L240 84 L0 84 Z"
-                        />
-                        <path
-                          class="hww-curve__line"
-                          d="M0 62 C40 54 90 42 140 32 C165 50 190 70 240 76"
-                        />
-                      </>
-                    )}
-                  </svg>
-                  <span class="hww-curve__stop-label" aria-hidden="true">
-                    Werbestopp
-                  </span>
-                </div>
-              </figure>
-
-              <p class="hww-card__outcome">{p.outcome}</p>
-            </article>
-          ))
-        }
-      </div>
-      <p class="hww-compare__note">
-        Die Kurven zeigen ein Muster aus unserer Praxis, keine Kundendaten.
-      </p>
-
-      <div class="hww-how">
-        <h3 class="hww-how__title">So bringen wir Sie zu diesem Partner</h3>
-        <ul class="hww-how__list">
-          {
-            hwwSteps.map((s, idx) => (
-              <li class="hww-how__item home-reveal" style={`--reveal-delay: ${idx * 80}ms;`}>
-                <span class="hww-how__icon" aria-hidden="true">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    set:html={hwwIcons[s.icon]}
-                  />
-                </span>
-                <h4 class="hww-how__item-title">{s.title}</h4>
-                <p class="hww-how__item-body">{s.body}</p>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-
-      <div class="hww-foot">
-        <p class="hww-foot__stance">
-          Wir haben kein eigenes TP- oder DP-Team und damit niemanden, den wir Ihnen andienen
-          müssten. Wir stellen nur eine Frage: Welcher Partner passt zu Ihrer Marke? Die Vermittlung
-          rechnen wir als Projekt ab, ein Angebot erhalten Sie nach einem ersten Gespräch.
-        </p>
+      <div class="hww-foot" style="justify-content: center;">
         <div class="hww-foot__actions">
-          <a href="/de/arbeitsweise" class="btn btn--primary">Unsere Arbeitsweise</a>
-          <a href="/de/arbeitsweise#the-right-partner" class="btn btn--ghost"
-            >Was einen guten Partner ausmacht</a
-          >
+          <a href="/de/arbeitsweise#our-role" class="btn btn--primary">Unsere Arbeitsweise</a>
+          <a href="/de/arbeitsweise#who-does-what" class="btn btn--ghost">Wer macht was</a>
         </div>
       </div>
     </div>
@@ -1168,24 +982,18 @@ function formatInsightDate(d?: Date) {
           <h2 class="home-about__title">Warum Marken uns wählen</h2>
 
           <p class="home-about__lead">
-            Das Team an der Spitze von TheChinaPath hat Jahre bei Publicis Shanghai und in
-            Fortune-500-Konzernen mit China-Geschäft hinter sich.
+            Cyril Drouin gründete TheChinaPath 2023. Zuvor hatte er als CEO Publicis Commerce und
+            Performance Marketing für China und Nordasien geleitet. Das Senior-Team kam mit ihm:
+            Praktiker mit 15 Jahren auf Tmall, JD, Douyin und WeChat und mehr als 75
+            Markteinführungen, tätig in Shanghai, Hongkong und Paris.
           </p>
           <p>
-            Markenstrategie, Media-Einkauf, eCommerce-Betrieb, Social Commerce auf Douyin, WeChat
-            und RED, Produktlokalisierung für den chinesischen Kunden. Markteintrittsberatung, vom
-            Geschäftsmodell über die Wahl des Vertriebspartners bis zur regulatorischen Umsetzung.
-            Content-Produktion im großen Stil, sowohl klassisch im Studio als auch über
-            KI-Pipelines.
+            Mit der Unabhängigkeit kamen Strategie und Umsetzung unter ein Dach. Markenstrategie,
+            Media, eCommerce-Betrieb, Social Commerce, Content und Markteintritt liegen in den Händen
+            derselben Senior-Leute.
           </p>
           <p class="home-about__punchline">
-            Wir arbeiten auf den Plattformen, mit den Budgets, unter Zeitdruck. Vom Spielfeldrand zu
-            beraten ist nicht unser Geschäft.
-          </p>
-          <p>
-            2023 haben wir uns selbstständig gemacht, um Strategie und Umsetzung unter ein Dach zu
-            bringen. Dieselben Senior-Leute führen beide Bereiche an. Die Erfahrung bleibt, neu ist
-            nur die Struktur.
+            Wir arbeiten auf den Plattformen, mit den Budgets, unter Zeitdruck.
           </p>
 
           <a href="/de/ueber-uns" class="btn btn--ghost home-about__cta">Team kennenlernen</a>

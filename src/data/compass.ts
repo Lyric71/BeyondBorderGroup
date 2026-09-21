@@ -218,4 +218,8 @@ export const NO_COMMISSION = 'No commission from distributors. Ever.';
  * The app is noindex by definition, so it sits on its own subdomain and there
  * is deliberately no /compass/login path that would add a redirect hop.
  */
-export const APP_URL = 'https://compass.thechinapath.com';
+export const APP_URL = import.meta.env.DEV
+  ? // Local Compass app (`npm run dev` in BearingBridgeCompass), so unreleased
+    // app routes can be clicked through from the Astro dev server.
+    'http://127.0.0.1:3000'
+  : 'https://compass.thechinapath.com';

@@ -229,7 +229,7 @@ const copy: HowWeWorkCopy = {
     ctaSecondary: 'See why',
     proof: [
       { count: 15, suffix: '+', value: '15+', label: 'years on Tmall and JD' },
-      { count: 200, suffix: '+', value: '200+', label: 'brand launches' },
+      { count: 75, suffix: '+', value: '75+', label: 'brand launches' },
       { value: 'Compass', label: 'our partner database, open to search', href: '/compass' },
     ],
     imgAlt:
@@ -725,7 +725,7 @@ const copy: HowWeWorkCopy = {
       },
       {
         title: 'We grow the setup with you',
-        body: 'Once your partner trusts your supply chain, it may offer to become your distributor and buy stock, which is a good sign. We can step in as your exclusive online distributor, and bring in offline distributors when you want stores and wholesale.',
+        body: 'Once your partner trusts your supply chain, it may offer to become your distributor and buy stock, which is a good sign. We can step in as your exclusive online distributor, and bring in offline distributors when you want stores and wholesale, then manage them for you.',
         who: ['us', 'tp', 'offline'],
       },
     ],
@@ -794,13 +794,13 @@ const copy: HowWeWorkCopy = {
   faq: {
     eyebrow: 'Pricing and FAQ',
     h2: 'Questions brands ask us first',
-    fresh: 'Last reviewed September 19, 2026.',
+    fresh: 'Last reviewed September 21, 2026.',
     ours: {
       q: 'How do you charge?',
-      a: 'Partner search is quoted as a project. eCommerce marketing runs on a monthly retainer or per project, depending on scope. As an exclusive distributor, we earn a margin on product, agreed up front. We quote after the first conversation, once we know your category and the scope.',
+      a: 'Partner search is quoted as a project. eCommerce marketing, channel management, and social media run on a monthly retainer or per project, depending on scope. As an exclusive distributor, we earn a margin on product, agreed up front. We quote after the first conversation, once we know your category and the scope.',
       modes: [
         { label: 'Partner search', value: 'Project fee' },
-        { label: 'eCommerce marketing', value: 'Retainer or project' },
+        { label: 'Marketing and channel management', value: 'Retainer or project' },
         { label: 'Exclusive distribution', value: 'Margin on product' },
       ],
     },
@@ -833,7 +833,7 @@ const copy: HowWeWorkCopy = {
       },
       {
         q: 'Do you sell into offline retail for us?',
-        a: 'No. We never act as a sales agent for offline channels. We find the right offline distributors, and they sell into stores and wholesale.',
+        a: 'Not as a sales agent. The offline distributor sells into stores and wholesale. We pitch it on your behalf, negotiate the contract with you, then manage it day to day: content, campaigns, and the relationship.',
       },
       {
         q: 'Who handles logistics?',

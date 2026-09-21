@@ -48,9 +48,6 @@ export function stripLocale(pathname: string): string {
 const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, string>> = {
   fr: {
     '/compass': '/compass',
-    '/compass/why-vetted': '/compass/pourquoi-cette-base',
-    '/compass/what-is-inside': '/compass/ce-quon-y-trouve',
-    '/compass/how-it-works': '/compass/comment-on-etablit-la-liste',
     '/compass/shortlist': '/compass/demander-sa-liste',
     '/social-in-china': '/reseaux-sociaux-chinois',
     '/build-in-china': '/site-web-et-wechat-en-chine',
@@ -87,9 +84,6 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
   },
   de: {
     '/compass': '/compass',
-    '/compass/why-vetted': '/compass/warum-geprueft',
-    '/compass/what-is-inside': '/compass/was-drinsteht',
-    '/compass/how-it-works': '/compass/so-entsteht-die-liste',
     '/compass/shortlist': '/compass/liste-anfordern',
     '/social-in-china': '/chinesische-social-media',
     '/build-in-china': '/website-und-wechat-in-china',
@@ -126,9 +120,6 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
   },
   es: {
     '/compass': '/compass',
-    '/compass/why-vetted': '/compass/por-que-verificada',
-    '/compass/what-is-inside': '/compass/que-contiene',
-    '/compass/how-it-works': '/compass/como-creamos-la-lista',
     '/compass/shortlist': '/compass/solicitar-la-lista',
     '/social-in-china': '/redes-sociales-chinas',
     '/build-in-china': '/web-y-wechat-en-china',

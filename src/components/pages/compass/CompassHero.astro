@@ -91,13 +91,13 @@ const {
       <div class="cph-hero__account cph-reveal" style="--cph-d: 320ms;">
         <p class="cph-hero__account-item">
           <span>{account.login.prompt}</span>
-          <a href={account.login.href} class="cph-hero__account-link" rel="nofollow">
+          <a href={account.login.href} class="cph-hero__account-link" target="_blank" rel="nofollow noopener">
             {account.login.label}<span aria-hidden="true">→</span>
           </a>
         </p>
         <p class="cph-hero__account-item">
           <span>{account.register.prompt}</span>
-          <a href={account.register.href} class="cph-hero__account-link">
+          <a href={account.register.href} class="cph-hero__account-link" target="_blank" rel="noopener">
             {account.register.label}<span aria-hidden="true">→</span>
           </a>
         </p>
