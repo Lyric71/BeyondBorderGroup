@@ -54,13 +54,6 @@ const inline = (s: string) => (c.raci.lowercaseInline ? s.charAt(0).toLowerCase(
 const stepIcons = ['chat', 'doc', 'search', 'truck', 'megaphone', 'trend'];
 const steps = c.steps.items.map((s, i) => ({ ...s, icon: stepIcons[i] }));
 
-const hireMeta = [
-  { icon: 'search', href: '#the-right-partner', feature: true },
-  { icon: 'megaphone', href: '/grow-in-china', feature: false },
-  { icon: 'box', href: '/contact', feature: false },
-  { icon: 'building', href: '/enter-china/distribution', feature: false },
-];
-const hires = c.hire.items.map((h, i) => ({ ...h, ...hireMeta[i] }));
 
 const faqs = c.faq.items;
 const pricing = c.faq;
@@ -712,37 +705,6 @@ const faqJsonLd = {
             ))
           }
         </ol>
-      </div>
-    </section>
-
-    {/* ================= HIRE US ================= */}
-    <section class="hw-section">
-      <div class="container">
-        <header class="hw-head hw-head--center hw-reveal">
-          <span class="eyebrow">{c.hire.eyebrow}</span>
-          <h2>{c.hire.h2}</h2>
-          <p>{c.hire.lead}</p>
-        </header>
-
-        <div class="hw-hires">
-          {
-            hires.map((h, i) => (
-              <a
-                href={lp(h.href)}
-                class:list={['hw-hire', 'hw-reveal', 'hw-spot', { 'hw-hire--feature': h.feature }]}
-                style={`--d: ${i * 70}ms;`}
-              >
-                <span class="hw-icon" aria-hidden="true" set:html={icons[h.icon]} />
-                <span class="hw-hire__title">{h.title}</span>
-                <span class="hw-hire__body">{h.body}</span>
-                <span class="hw-hire__cta">
-                  {h.cta}
-                  <span class="hw-hire__arrow" aria-hidden="true" set:html={icons.arrow} />
-                </span>
-              </a>
-            ))
-          }
-        </div>
       </div>
     </section>
 
