@@ -37,7 +37,7 @@ export interface HowWeWorkCopy {
     h1Before: string;
     h1Mark: string;
     h1After: string;
-    lead: string;
+    lead?: string;
     ctaPrimary: string;
     ctaSecondary: string;
     proof: { count?: number; suffix?: string; value: string; label: string; href?: string }[];
@@ -225,7 +225,6 @@ const copy: HowWeWorkCopy = {
     h1Before: 'In China, the ',
     h1Mark: 'wrong partner',
     h1After: ' costs you years.',
-    lead: 'Most foreign brands in China sell through a TP (trade partner) on Tmall and JD, or a DP (Douyin partner) on Douyin. Either way, the partner runs the store. We don’t have a TP or DP team. Our job is finding the partner that should run yours and getting your brand through its door. Then we build the demand.',
     ctaPrimary: 'Talk to us',
     ctaSecondary: 'See why',
     proof: [

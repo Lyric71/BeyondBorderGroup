@@ -103,9 +103,13 @@ const faqJsonLd = {
           <h1 class="hw-hero__title hw-reveal" style="--d: 80ms;">
             {c.hero.h1Before}<span class="hw-mark">{c.hero.h1Mark}</span>{c.hero.h1After}
           </h1>
-          <p class="hw-hero__lead hw-reveal" style="--d: 160ms;">
-            {c.hero.lead}
-          </p>
+          {
+            c.hero.lead && (
+              <p class="hw-hero__lead hw-reveal" style="--d: 160ms;">
+                {c.hero.lead}
+              </p>
+            )
+          }
           <div class="hw-hero__actions hw-reveal" style="--d: 240ms;">
             <a href={lp('/contact')} class="btn btn--primary hw-btn-glow">{c.hero.ctaPrimary}</a>
             <a href="#why" class="hw-link-arrow">
