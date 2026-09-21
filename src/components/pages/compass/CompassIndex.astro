@@ -3,8 +3,12 @@
  * WO-2.1 — the /compass pillar page, shared across every locale.
  *
  * Framing guardrail from the build spec: Compass is how the shortlist gets
- * built. It is never a product with access tiers. No plan names, no signup
- * language, no price, and the CTA is a brief or a call, never a login.
+ * built. It is never a product with access tiers. No plan names, no price, and
+ * the main CTA is a brief or a call, never a login. The one exception is the
+ * small account row in the hero: "Log in" for anyone with a Compass account
+ * (staff, partners), and "Register your business" for distributors, which is
+ * the only button the partner label introduces. It renders only when the
+ * locale copy supplies it.
  *
  * Markup and styles live here once; each locale route supplies only the copy
  * object from src/content/pages/compass/<locale>.ts.
@@ -17,6 +21,7 @@ import Layout from '../../../layouts/Layout.astro';
 import CompassHero from './CompassHero.astro';
 import { getLocaleFromUrl, localizePath } from '../../../i18n/utils';
 import type { CompassCopy } from '../../../content/pages/compass/types';
+import { APP_URL } from '../../../data/compass';
 
 interface Props {
   copy: CompassCopy;
@@ -36,6 +41,19 @@ const cardHrefs = [
   howItWorksHref,
 ];
 const distributionHref = localizePath('/enter-china/distribution', locale);
+// The partner application ships in EN and ZH only, so every locale of this
+// page sends distributors to the English one. The app's login is linked at its
+// real path (/en/login) so there is no redirect hop.
+const partnersHref = '/compass/partners';
+const loginHref = `${APP_URL}/en/login`;
+const account = c.partnerAccess && {
+  login: { prompt: c.partnerAccess.loginPrompt, label: c.partnerAccess.login, href: loginHref },
+  register: {
+    prompt: c.partnerAccess.registerPrompt,
+    label: c.partnerAccess.register,
+    href: partnersHref,
+  },
+};
 
 // The ported strings stay verbatim; these splits only let the second sentence
 // carry its own colour. Handles both western and CJK sentence breaks, and
@@ -79,6 +97,7 @@ const cardImages = [
     primary={{ label: c.ctaPrimary, href: shortlistHref }}
     secondary={{ label: c.ctaSecondary, href: howItWorksHref }}
     stats={c.heroStats}
+    account={account || undefined}
     image={{ src: '/Images/compass/compass-hero.png', alt: c.heroAlt }}
     scrollCue={c.scrollCue}
     scrollTarget="#problem"

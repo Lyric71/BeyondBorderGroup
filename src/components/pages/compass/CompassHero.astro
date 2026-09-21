@@ -20,13 +20,31 @@ interface Props {
   primary: { label: string; href: string };
   secondary: { label: string; href: string };
   stats: HeroStat[];
+  /** Optional account row under the actions: a login link for anyone with a
+      Compass account and a register link for distributors, each with its
+      own short prompt. */
+  account?: {
+    login: { prompt: string; label: string; href: string };
+    register: { prompt: string; label: string; href: string };
+  };
   image: { src: string; alt: string };
   scrollCue: string;
   scrollTarget: string;
 }
 
-const { crumbs, eyebrow, rows, lead, primary, secondary, stats, image, scrollCue, scrollTarget } =
-  Astro.props;
+const {
+  crumbs,
+  eyebrow,
+  rows,
+  lead,
+  primary,
+  secondary,
+  stats,
+  account,
+  image,
+  scrollCue,
+  scrollTarget,
+} = Astro.props;
 ---
 
 <section class="cph-hero" data-cph-hero>
@@ -68,6 +86,23 @@ const { crumbs, eyebrow, rows, lead, primary, secondary, stats, image, scrollCue
       <a href={primary.href} class="btn btn--primary">{primary.label}</a>
       <a href={secondary.href} class="btn btn--ghost-light">{secondary.label}</a>
     </div>
+
+    {account && (
+      <div class="cph-hero__account cph-reveal" style="--cph-d: 320ms;">
+        <p class="cph-hero__account-item">
+          <span>{account.login.prompt}</span>
+          <a href={account.login.href} class="cph-hero__account-link" rel="nofollow">
+            {account.login.label}<span aria-hidden="true">→</span>
+          </a>
+        </p>
+        <p class="cph-hero__account-item">
+          <span>{account.register.prompt}</span>
+          <a href={account.register.href} class="cph-hero__account-link">
+            {account.register.label}<span aria-hidden="true">→</span>
+          </a>
+        </p>
+      </div>
+    )}
 
     <div class="cph-hero__meta cph-reveal" style="--cph-d: 360ms;">
       {stats.map((stat) => (
@@ -248,6 +283,62 @@ const { crumbs, eyebrow, rows, lead, primary, secondary, stats, image, scrollCue
   }
   .cph-hero__actions .btn:hover {
     transform: translateY(-2px);
+  }
+  .cph-hero__account {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-5);
+    margin: calc(var(--space-4) - var(--space-6)) 0 var(--space-6);
+  }
+  .cph-hero__account-item {
+    margin: 0;
+    font-size: var(--fs-small);
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.66);
+  }
+  .cph-hero__account-item + .cph-hero__account-item {
+    padding-left: var(--space-5);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .cph-hero__account-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    margin-left: 0.4em;
+    font-weight: 600;
+    color: var(--bbg-white);
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.35);
+    text-underline-offset: 4px;
+    transition: text-decoration-color 200ms ease;
+  }
+  .cph-hero__account-link span {
+    transition: transform 200ms ease;
+  }
+  .cph-hero__account-link:hover {
+    color: var(--bbg-white);
+    text-decoration-color: var(--bbg-white);
+  }
+  .cph-hero__account-link:hover span {
+    transform: translateX(4px);
+  }
+  .cph-hero__account-link:focus-visible {
+    outline: 3px solid var(--bbg-blue);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cph-hero__account-link span {
+      transition: none;
+    }
+  }
+  @media (max-width: 720px) {
+    .cph-hero__account {
+      flex-direction: column;
+    }
+    .cph-hero__account-item + .cph-hero__account-item {
+      padding-left: 0;
+      border-left: 0;
+    }
   }
   .cph-hero__meta {
     display: flex;

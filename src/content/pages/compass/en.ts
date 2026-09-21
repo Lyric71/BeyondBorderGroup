@@ -161,6 +161,12 @@ const copy: CompassCopy = {
     body: 'The wrong partner in China can cost you two years. Some brands never really recover from it. That is the part we help you skip.',
     ctaPrimary: 'Get your shortlist',
     ctaSecondary: 'See how a shortlist is built',
+    partnerAccess: {
+      loginPrompt: 'Have a Compass account?',
+      login: 'Log in',
+      registerPrompt: 'Distributor or platform partner in China?',
+      register: 'Register your business',
+    },
     heroAlt:
       'Two managers walking a consumer-goods distribution warehouse in Shanghai, mid-conversation',
     heroChip: 'Met in person. Vetted on site.',

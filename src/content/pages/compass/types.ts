@@ -89,6 +89,8 @@ export interface CompassIndexCopy {
   h1Rows: HeroTitleRow[];
   /** Stat strip under the hero actions. */
   heroStats: HeroStat[];
+  /** Account row in the hero: log in (any account holder) and register (distributors). Optional per locale. */
+  partnerAccess?: { loginPrompt: string; login: string; registerPrompt: string; register: string };
   /** Breadcrumb labels above the hero eyebrow. */
   crumbHome: string;
   crumbSection: string;
