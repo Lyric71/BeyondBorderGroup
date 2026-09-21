@@ -10,12 +10,12 @@ const copy: HowWeWorkCopy = {
   },
   subnavLabel: 'En esta página',
   sections: [
-    { id: 'why', label: 'Por qué' },
     { id: 'our-role', label: 'Nuestro papel' },
+    { id: 'who-does-what', label: 'Quién hace qué' },
+    { id: 'why', label: 'Por qué' },
     { id: 'tp-or-dp', label: 'TP o DP' },
     { id: 'the-right-partner', label: 'El socio adecuado' },
     { id: 'pitching', label: 'Convencer al socio' },
-    { id: 'who-does-what', label: 'Quién hace qué' },
     { id: 'the-steps', label: 'Las etapas' },
     { id: 'pricing-faq', label: 'Tarifas y preguntas' },
   ],
@@ -73,7 +73,7 @@ const copy: HowWeWorkCopy = {
   role: {
     eyebrow: 'Dónde nos situamos',
     h2: 'Quién ocupa cada silla en un lanzamiento en China',
-    lead: 'Un lanzamiento en China suele reunir a cinco actores. Seleccione uno para ver de qué responde.',
+    lead: 'Un lanzamiento en China suele reunir a seis actores. Esto es lo que asume cada uno.',
     sideOurs: 'De su lado',
     sideMarket: 'Del lado del mercado',
     parties: {
@@ -92,6 +92,11 @@ const copy: HowWeWorkCopy = {
       logistics: {
         name: 'Socio logístico',
         body: 'Solo es necesario si su TP o DP no puede gestionar envíos transfronterizos. En ese caso, salimos a buscar uno a la medida de su marca.',
+      },
+      online: {
+        name: 'Distribuidores online',
+        hint: 'JD, Tmall Supermarket, Hema, etc.',
+        body: 'Compran su stock y lo venden a través de sus propios canales: la tienda propia de JD, Tmall Supermarket, Hema y otros similares. Nosotros damos con el adecuado y le presentamos su marca. En ocasiones asumimos ese papel nosotros mismos, como su distribuidor online en exclusiva.',
       },
       offline: {
         name: 'Distribuidores offline',

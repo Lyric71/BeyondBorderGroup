@@ -10,12 +10,12 @@ const copy: HowWeWorkCopy = {
   },
   subnavLabel: 'Auf dieser Seite',
   sections: [
-    { id: 'why', label: 'Warum' },
     { id: 'our-role', label: 'Unsere Rolle' },
+    { id: 'who-does-what', label: 'Wer macht was' },
+    { id: 'why', label: 'Warum' },
     { id: 'tp-or-dp', label: 'TP oder DP' },
     { id: 'the-right-partner', label: 'Der richtige Partner' },
     { id: 'pitching', label: 'Der Pitch' },
-    { id: 'who-does-what', label: 'Wer macht was' },
     { id: 'the-steps', label: 'Ablauf' },
     { id: 'pricing-faq', label: 'Kosten und FAQ' },
   ],
@@ -73,7 +73,7 @@ const copy: HowWeWorkCopy = {
   role: {
     eyebrow: 'Unsere Position',
     h2: 'Die Sitzordnung beim Markteintritt in China',
-    lead: 'An einem Markteintritt in China sind meist fünf Parteien beteiligt. Ein Klick auf eine Partei zeigt, wofür sie zuständig ist.',
+    lead: 'An einem Markteintritt in China sind meist sechs Parteien beteiligt. Hier sehen Sie, wofür jede zuständig ist.',
     sideOurs: 'Ihre Seite',
     sideMarket: 'Die Marktseite',
     parties: {
@@ -92,6 +92,11 @@ const copy: HowWeWorkCopy = {
       logistics: {
         name: 'Logistikpartner',
         body: 'Einen Logistikpartner brauchen Sie nur, wenn Ihr TP oder DP keine Cross-Border-Logistik abwickeln kann. Dann suchen wir einen, der zu Ihrer Marke passt.',
+      },
+      online: {
+        name: 'Online-Distributoren',
+        hint: 'JD, Tmall Supermarket, Hema u. a.',
+        body: 'Sie kaufen Ihre Ware ein und verkaufen sie über eigene Handelskanäle, etwa den Eigenhandel von JD, Tmall Supermarket oder Hema. Wir finden den passenden Partner und stellen ihm Ihre Marke vor. Mitunter übernehmen wir diese Rolle selbst, als Ihr exklusiver Online-Distributor.',
       },
       offline: {
         name: 'Offline-Distributoren',

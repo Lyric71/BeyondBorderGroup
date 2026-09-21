@@ -1,0 +1,543 @@
+---
+/**
+ * "What growth looks like" chart: two years of illustrative weekly sales with
+ * festival spikes, plus the marketing investment that drives them. Used on the
+ * How we work page (dark) and the home page (light). Copy comes from the
+ * `growth` block of src/i18n/how-we-work/<locale>.ts.
+ */
+import type { HowWeWorkCopy } from '../../i18n/how-we-work/en';
+
+interface Props {
+  g: NonNullable<HowWeWorkCopy['growth']>;
+  tone?: 'dark' | 'light';
+  /** Hide the visible chart title (the host section's heading already says it). */
+  hideTitle?: boolean;
+  /** Keep only the closing advice line under the chart. */
+  shortNote?: boolean;
+}
+
+const { g, tone = 'dark', hideTitle = false, shortNote = false } = Astro.props;
+
+// Illustrative data, no client figures. Sales ride a rising trend, spike at each
+// festival, sag at Chinese New Year and dip right after the big peaks. Investment
+// is an always-on base plus a festival push that starts in the warm-up weeks.
+const W = 104;
+const VW = 720;
+const SH = 240;
+const IH = 90;
+const fests = [
+  { key: 'd38', week: 9, amp: 0.3, warm: 1 },
+  { key: 's618', week: 23, amp: 0.8, warm: 3 },
+  { key: 'd11', week: 44, amp: 1.3, warm: 3 },
+  { key: 'd12', week: 49, amp: 0.35, warm: 1 },
+];
+const trend = (w: number) => 30 + 0.4 * w;
+const weeks = Array.from({ length: W }, (_, w) => {
+  const yw = w % 52;
+  const y = Math.floor(w / 52);
+  const base = 10 + 0.06 * w;
+  let m = 1;
+  let p = 'normal';
+  let f: string | null = null;
+  let push = 0;
+  if (yw >= 4 && yw <= 7) {
+    m = yw === 5 || yw === 6 ? 0.72 : 0.86;
+    p = 'cny';
+    f = 'cny';
+  }
+  for (const F of fests) {
+    const d = yw - F.week;
+    const amp = F.amp * (y ? 1.15 : 1);
+    if (d === 0) {
+      m = 1 + amp;
+      p = 'peak';
+      f = F.key;
+      push = base * amp * 0.9;
+    } else if (d < 0 && d >= -F.warm) {
+      const k = F.warm + d + 1;
+      m = 1 + amp * 0.12 * k;
+      p = 'warmup';
+      f = F.key;
+      push = base * amp * (0.35 + 0.25 * k);
+    } else if (d > 0 && d <= 2 && F.amp > 0.5) {
+      m = d === 1 ? 0.8 : 0.92;
+      p = 'dip';
+      f = F.key;
+    }
+  }
+  m *= 1 + 0.03 * Math.sin(w * 1.7);
+  return { sales: trend(w) * m, base, push, p, f, y, mo: Math.min(11, Math.floor((yw * 12) / 52)) };
+});
+const maxS = Math.max(...weeks.map((d) => d.sales)) * 1.06;
+const maxI = Math.max(...weeks.map((d) => d.base + d.push)) * 1.08;
+const x = (w: number) => +((w / (W - 1)) * VW).toFixed(1);
+const ys = (v: number) => +(SH - (v / maxS) * SH).toFixed(1);
+const line = weeks.map((d, w) => `${w ? 'L' : 'M'} ${x(w)} ${ys(d.sales)}`).join(' ');
+const area = `${line} L ${VW} ${SH} L 0 ${SH} Z`;
+const trendPath = `M 0 ${ys(trend(0))} L ${VW} ${ys(trend(W - 1))}`;
+const bw = VW / W;
+const bar = (w: number, from: number, to: number) => {
+  const y0 = IH - (from / maxI) * IH;
+  const y1 = IH - (to / maxI) * IH;
+  return { x: +(w * bw + 1).toFixed(1), y: +y1.toFixed(1), w: +(bw - 2).toFixed(1), h: +Math.max(0, y0 - y1).toFixed(1) };
+};
+const alwaysBars = weeks.map((d, w) => bar(w, 0, d.base));
+const pushBars = weeks.flatMap((d, w) => (d.push ? [bar(w, d.base + maxI * 0.012, d.base + d.push)] : []));
+const guides = [0, 1].flatMap((y) => [23, 44].map((w) => x(w + y * 52)));
+const yearX = x(52);
+const pct = (w: number) => +((w / (W - 1)) * 100).toFixed(2);
+type FestKey = keyof typeof g.festivals;
+const labels = [0, 1].flatMap((y) =>
+  (
+    [
+      { key: 'cny', week: 5.5 },
+      { key: 's618', week: 23 },
+      { key: 'd11', week: 44 },
+    ] as { key: FestKey; week: number }[]
+  ).map((l) => ({ text: g.festivals[l.key], left: pct(l.week + y * 52), muted: l.key === 'cny' })),
+);
+const data = JSON.stringify(weeks.map((d) => ({ p: d.p, f: d.f, y: d.y, m: d.mo })));
+const gradId = `hwGrowthArea-${tone}`;
+---
+
+<div class:list={['hw-growth-wrap', `hw-growth-wrap--${tone}`]}>
+  <figure class="hw-growth" data-growth-fig>
+    <figcaption class:list={[hideTitle ? 'hw-growth__sr' : 'hw-growth__title']}>{g.chartTitle}</figcaption>
+    <p class="hw-growth__sr">{g.chartSr}</p>
+
+    <ul class="hw-growth__legend" aria-hidden="true">
+      <li><span class="hw-growth__sw hw-growth__sw--sales"></span>{g.legendSales}</li>
+      <li><span class="hw-growth__sw hw-growth__sw--trend"></span>{g.legendTrend}</li>
+      <li><span class="hw-growth__sw hw-growth__sw--always"></span>{g.legendAlwaysOn}</li>
+      <li><span class="hw-growth__sw hw-growth__sw--push"></span>{g.legendFestival}</li>
+    </ul>
+
+    <div
+      class="hw-growth__plot"
+      data-growth
+      data-weeks={data}
+      data-years={JSON.stringify(g.years)}
+      data-months={JSON.stringify(g.months)}
+      data-festivals={JSON.stringify(g.festivals)}
+      data-phases={JSON.stringify(g.phases)}
+      tabindex="0"
+      aria-hidden="true"
+    >
+      <div class="hw-growth__labels">
+        {
+          labels.map((l) => (
+            <span
+              class:list={['hw-growth__label', { 'is-muted': l.muted, 'is-end': l.left > 88 }]}
+              style={`left: ${l.left}%;`}
+            >
+              {l.text}
+            </span>
+          ))
+        }
+      </div>
+
+      <span class="hw-growth__panel">{g.salesLabel}</span>
+      <svg class="hw-growth__sales" viewBox={`0 0 ${VW} ${SH}`} preserveAspectRatio="none">
+        <defs>
+          <linearGradient id={gradId} x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" class="hw-growth__stop" stop-opacity="0.3"></stop>
+            <stop offset="100%" class="hw-growth__stop" stop-opacity="0"></stop>
+          </linearGradient>
+        </defs>
+        {[0.25, 0.5, 0.75].map((f) => <line class="hw-growth__grid" x1="0" x2={VW} y1={SH * f} y2={SH * f} />)}
+        {guides.map((gx) => <line class="hw-growth__guide" x1={gx} x2={gx} y1="0" y2={SH} />)}
+        <line class="hw-growth__year" x1={yearX} x2={yearX} y1="0" y2={SH} />
+        <path d={area} fill={`url(#${gradId})`} />
+        <path class="hw-growth__trend" d={trendPath} />
+        <path class="hw-growth__line" d={line} />
+      </svg>
+
+      <span class="hw-growth__panel">{g.investLabel}</span>
+      <svg class="hw-growth__invest" viewBox={`0 0 ${VW} ${IH}`} preserveAspectRatio="none">
+        <line class="hw-growth__year" x1={yearX} x2={yearX} y1="0" y2={IH} />
+        <g class="hw-growth__bars">
+          {alwaysBars.map((b) => <rect class="hw-growth__always" x={b.x} y={b.y} width={b.w} height={b.h} rx="1" />)}
+          {pushBars.map((b) => <rect class="hw-growth__push" x={b.x} y={b.y} width={b.w} height={b.h} rx="1" />)}
+        </g>
+      </svg>
+
+      <div class="hw-growth__axis">
+        <span>{g.years[0]}</span>
+        <span style={`left: ${pct(52)}%;`}>{g.years[1]}</span>
+      </div>
+
+      <span class="hw-growth__cross" data-growth-cross></span>
+      <div class="hw-growth__tip" data-growth-tip>
+        <strong data-growth-when></strong>
+        <span data-growth-fest></span>
+        <span data-growth-phase></span>
+      </div>
+    </div>
+
+    <p class="hw-growth__caption">{g.caption}</p>
+  </figure>
+
+  <p class="hw-growth__note">
+    {!shortNote && `${g.note} `}<strong>{g.noteStrong}</strong>
+  </p>
+</div>
+
+<style is:global>
+  .hw-growth-wrap {
+    --g-accent: #ff3b5c;
+    --g-accent-text: #ff6b84;
+    --g-ink: #ffffff;
+    --g-text: rgba(255, 255, 255, 0.8);
+    --g-muted: rgba(255, 255, 255, 0.55);
+    --g-card: rgba(255, 255, 255, 0.04);
+    --g-border: rgba(255, 255, 255, 0.12);
+    --g-grid: rgba(255, 255, 255, 0.07);
+    --g-year: rgba(255, 255, 255, 0.22);
+    --g-trend: rgba(255, 255, 255, 0.55);
+    --g-always: rgba(255, 255, 255, 0.3);
+    --g-cross: rgba(255, 255, 255, 0.6);
+    --g-tip-bg: #1c1c20;
+    --g-tip-border: rgba(255, 255, 255, 0.16);
+  }
+  .hw-growth-wrap--light {
+    --g-accent: var(--bbg-blue);
+    --g-accent-text: var(--bbg-blue);
+    --g-ink: var(--bbg-ink);
+    --g-text: var(--bbg-text);
+    --g-muted: var(--bbg-text-muted);
+    --g-card: var(--bbg-white);
+    --g-border: var(--bbg-border);
+    --g-grid: #eceef1;
+    --g-year: #cfd4da;
+    --g-trend: #6b6b6b;
+    --g-always: #c3c9d1;
+    --g-cross: #6b6b6b;
+    --g-tip-bg: var(--bbg-white);
+    --g-tip-border: var(--bbg-border);
+  }
+  .hw-growth {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: clamp(1.25rem, 3vw, 2.25rem);
+    border-radius: 20px;
+    background: var(--g-card);
+    border: 1px solid var(--g-border);
+    opacity: 0;
+    transform: translateY(12px);
+    transition:
+      opacity 500ms ease,
+      transform 500ms ease;
+  }
+  .hw-growth.is-in {
+    opacity: 1;
+    transform: none;
+  }
+  .hw-growth-wrap--light .hw-growth {
+    box-shadow: 0 24px 60px -40px rgba(0, 0, 0, 0.25);
+  }
+  .hw-growth__sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .hw-growth__title {
+    display: block;
+    margin-bottom: 0.9rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--g-ink);
+  }
+  .hw-growth__legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--g-text);
+  }
+  .hw-growth__legend li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .hw-growth__sw {
+    width: 18px;
+    height: 4px;
+    border-radius: 99px;
+  }
+  .hw-growth__sw--sales {
+    background: var(--g-accent);
+  }
+  .hw-growth__sw--trend {
+    height: 0;
+    border-top: 2px dashed var(--g-trend);
+    border-radius: 0;
+  }
+  .hw-growth__sw--always,
+  .hw-growth__sw--push {
+    width: 10px;
+    height: 12px;
+    border-radius: 2px;
+    background: var(--g-always);
+  }
+  .hw-growth__sw--push {
+    background: var(--g-accent);
+  }
+  .hw-growth__plot {
+    position: relative;
+    margin-top: 1.25rem;
+    padding-top: 1.6rem;
+    outline: none;
+  }
+  .hw-growth__plot:focus-visible {
+    outline: 3px solid var(--g-accent);
+    outline-offset: 6px;
+    border-radius: 8px;
+  }
+  .hw-growth__labels {
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1.4rem;
+  }
+  .hw-growth__label {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--g-accent-text);
+  }
+  .hw-growth__label.is-end {
+    transform: translateX(-85%);
+  }
+  .hw-growth__label.is-muted {
+    color: var(--g-muted);
+    font-weight: 600;
+  }
+  .hw-growth__panel {
+    display: block;
+    margin: 0.5rem 0 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--g-muted);
+  }
+  .hw-growth__sales,
+  .hw-growth__invest {
+    display: block;
+    width: 100%;
+    overflow: visible;
+  }
+  .hw-growth__sales {
+    height: clamp(180px, 26vw, 280px);
+  }
+  .hw-growth__invest {
+    height: clamp(64px, 8vw, 90px);
+  }
+  .hw-growth__stop {
+    stop-color: var(--g-accent);
+  }
+  .hw-growth__grid {
+    stroke: var(--g-grid);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+  }
+  .hw-growth__guide {
+    stroke: var(--g-accent);
+    stroke-opacity: 0.35;
+    stroke-width: 1;
+    stroke-dasharray: 3 5;
+    vector-effect: non-scaling-stroke;
+  }
+  .hw-growth__year {
+    stroke: var(--g-year);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+  }
+  .hw-growth__line {
+    fill: none;
+    stroke: var(--g-accent);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+  .hw-growth__trend {
+    fill: none;
+    stroke: var(--g-trend);
+    stroke-width: 2;
+    stroke-dasharray: 6 6;
+    vector-effect: non-scaling-stroke;
+  }
+  .hw-growth__always {
+    fill: var(--g-always);
+  }
+  .hw-growth__push {
+    fill: var(--g-accent);
+  }
+  .hw-growth__bars {
+    transform-box: fill-box;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 1100ms cubic-bezier(0.22, 1, 0.36, 1) 250ms;
+  }
+  .hw-growth.is-in .hw-growth__bars {
+    transform: scaleY(1);
+  }
+  .hw-growth__axis {
+    position: relative;
+    height: 1.4rem;
+    margin-top: 0.5rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--g-muted);
+  }
+  .hw-growth__axis span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 0.4rem;
+  }
+  .hw-growth__cross {
+    position: absolute;
+    top: 1.6rem;
+    bottom: 1.9rem;
+    width: 1px;
+    background: var(--g-cross);
+    pointer-events: none;
+    opacity: 0;
+  }
+  .hw-growth__tip {
+    position: absolute;
+    top: 2.2rem;
+    z-index: 2;
+    display: grid;
+    gap: 0.2rem;
+    width: max-content;
+    max-width: 240px;
+    padding: 0.65rem 0.8rem;
+    border-radius: 10px;
+    background: var(--g-tip-bg);
+    border: 1px solid var(--g-tip-border);
+    box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.45);
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--g-text);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 150ms ease;
+  }
+  .hw-growth__tip strong {
+    color: var(--g-ink);
+  }
+  .hw-growth__tip [data-growth-fest] {
+    color: var(--g-accent-text);
+    font-weight: 700;
+  }
+  .hw-growth__tip [data-growth-fest]:empty {
+    display: none;
+  }
+  .hw-growth__plot.is-hover .hw-growth__cross,
+  .hw-growth__plot.is-hover .hw-growth__tip {
+    opacity: 1;
+  }
+  .hw-growth__caption {
+    margin-top: 0.75rem;
+    font-size: 0.82rem;
+    color: var(--g-muted);
+  }
+  .hw-growth__note {
+    max-width: 760px;
+    margin: 2rem auto 0;
+    text-align: center;
+    line-height: 1.65;
+    color: var(--g-text);
+  }
+  .hw-growth__note strong {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--g-ink);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hw-growth,
+    .hw-growth__bars {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
+
+  // Reveal each chart once it scrolls into view (bars grow in).
+  const figs = Array.from(document.querySelectorAll<HTMLElement>('[data-growth-fig]'));
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        }),
+      { threshold: 0.2 },
+    );
+    figs.forEach((f) => io.observe(f));
+  } else {
+    figs.forEach((f) => f.classList.add('is-in'));
+  }
+
+  // Crosshair + tooltip, by pointer or by arrow keys.
+  document.querySelectorAll<HTMLElement>('[data-growth]').forEach((plot) => {
+    const weeks: { p: string; f: string | null; y: number; m: number }[] = JSON.parse(plot.dataset.weeks!);
+    const years: string[] = JSON.parse(plot.dataset.years!);
+    const months: string[] = JSON.parse(plot.dataset.months!);
+    const fests: Record<string, string> = JSON.parse(plot.dataset.festivals!);
+    const phases: Record<string, string> = JSON.parse(plot.dataset.phases!);
+    const cross = plot.querySelector<HTMLElement>('[data-growth-cross]')!;
+    const tip = plot.querySelector<HTMLElement>('[data-growth-tip]')!;
+    const when = plot.querySelector<HTMLElement>('[data-growth-when]')!;
+    const fest = plot.querySelector<HTMLElement>('[data-growth-fest]')!;
+    const phase = plot.querySelector<HTMLElement>('[data-growth-phase]')!;
+    let cur = 44;
+    const show = (w: number) => {
+      cur = clamp(w, 0, weeks.length - 1);
+      const d = weeks[cur];
+      const r = plot.getBoundingClientRect();
+      const px = (cur / (weeks.length - 1)) * r.width;
+      cross.style.left = `${px}px`;
+      when.textContent = `${years[d.y]}, ${months[d.m]}`;
+      fest.textContent = d.f && d.f !== 'cny' ? fests[d.f] : '';
+      phase.textContent = phases[d.p];
+      const tw = tip.offsetWidth;
+      tip.style.left = `${px + 14 + tw > r.width ? px - 14 - tw : px + 14}px`;
+      plot.classList.add('is-hover');
+    };
+    const hide = () => plot.classList.remove('is-hover');
+    plot.addEventListener('pointermove', (e) => {
+      const r = plot.getBoundingClientRect();
+      show(Math.round(((e.clientX - r.left) / r.width) * (weeks.length - 1)));
+    });
+    plot.addEventListener('pointerleave', hide);
+    plot.addEventListener('focus', () => show(cur));
+    plot.addEventListener('blur', hide);
+    plot.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') show(cur + 1);
+      else if (e.key === 'ArrowLeft') show(cur - 1);
+      else return;
+      e.preventDefault();
+    });
+  });
+</script>

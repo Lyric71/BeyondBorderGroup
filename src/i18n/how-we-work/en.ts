@@ -6,6 +6,28 @@
  */
 export type PartyKey = 'you' | 'us' | 'tp' | 'logistics' | 'offline';
 
+export interface Party {
+  name: string;
+  hint?: string;
+  body: string;
+  weDo?: string[];
+  /** What the brand gets out of our work on this channel. */
+  value?: string;
+}
+
+export interface Channel extends Party {
+  key: string;
+  /** Scope of work split by party; the entry with `us: true` is ours. `brief` is the short list for compact views. */
+  sow: { who: string; us?: boolean; items: string[]; brief?: string[] }[];
+  /** Compact-view versions of `body` and `value` (home page). */
+  summary?: string;
+  valueShort?: string;
+  /** Icon name from src/components/how-we-work/icons.ts. */
+  icon: string;
+  /** Short label for tabs; falls back to `name`. */
+  tab?: string;
+}
+
 export interface HowWeWorkCopy {
   meta: { title: string; description: string; ogImageAlt: string };
   subnavLabel: string;
@@ -37,7 +59,26 @@ export interface HowWeWorkCopy {
     lead: string;
     sideOurs: string;
     sideMarket: string;
-    parties: Record<PartyKey, { name: string; body: string }>;
+    /** Heading over each panel's `weDo` list; the list only renders when both exist. */
+    weDoLabel?: string;
+    /** `online` shows on the map only (no RACI column); locales without it skip the node. */
+    parties: Record<PartyKey, Party> & { online?: Party };
+    /**
+     * When `stance` and `scope` are both present, the panels under the map switch to
+     * the scope layout: our position, the supporting parties, then one row per channel.
+     * Locales without them keep the plain panel grid.
+     */
+    stance?: { label: string; title: string; body: string; points: string[] };
+    supportLabel?: string;
+    scope?: {
+      label: string;
+      title: string;
+      colScope: string;
+      colValue: string;
+      sowLabel: string;
+      /** One entry per sales or brand channel, in display order. */
+      channels: Channel[];
+    };
   };
   tpdp: {
     eyebrow: string;
@@ -108,8 +149,10 @@ export interface HowWeWorkCopy {
     lowercaseInline: boolean;
     /** Separator between party and status on mobile cards. Defaults to ": ". */
     inlineSep?: string;
-    cols: Record<PartyKey, string>;
-    rows: { task: string; cells: string[] }[];
+    /** `online` is optional; when present, rows carry six cells with it before `offline`. */
+    cols: Record<PartyKey, string> & { online?: string };
+    /** `group` opens a new labelled block of rows, starting with this one. */
+    rows: { task: string; cells: string[]; group?: string }[];
   };
   steps: {
     eyebrow: string;
@@ -117,6 +160,27 @@ export interface HowWeWorkCopy {
     lead: string;
     involved: string;
     items: { title: string; body: string; who: PartyKey[] }[];
+  };
+  /** Optional: locales without it skip the growth section. */
+  growth?: {
+    eyebrow: string;
+    h2: string;
+    lead: string;
+    chartTitle: string;
+    chartSr: string;
+    salesLabel: string;
+    investLabel: string;
+    legendSales: string;
+    legendTrend: string;
+    legendAlwaysOn: string;
+    legendFestival: string;
+    years: [string, string];
+    months: string[];
+    festivals: { d38: string; s618: string; d11: string; d12: string; cny: string };
+    phases: { normal: string; warmup: string; peak: string; dip: string; cny: string };
+    caption: string;
+    note: string;
+    noteStrong: string;
   };
   hire: {
     eyebrow: string;
@@ -146,13 +210,14 @@ const copy: HowWeWorkCopy = {
   },
   subnavLabel: 'On this page',
   sections: [
-    { id: 'why', label: 'Why' },
     { id: 'our-role', label: 'Our role' },
+    { id: 'who-does-what', label: 'Who does what' },
+    { id: 'why', label: 'Why' },
     { id: 'tp-or-dp', label: 'TP or DP' },
     { id: 'the-right-partner', label: 'The right partner' },
     { id: 'pitching', label: 'Pitching a partner' },
-    { id: 'who-does-what', label: 'Who does what' },
     { id: 'the-steps', label: 'The steps' },
+    { id: 'growth', label: 'Growth' },
     { id: 'pricing-faq', label: 'Pricing and FAQ' },
   ],
   hero: {
@@ -209,9 +274,10 @@ const copy: HowWeWorkCopy = {
   role: {
     eyebrow: 'Where we sit',
     h2: 'Who sits where in a China launch',
-    lead: 'Five parties usually share a China launch. Pick one to see what it owns.',
+    lead: 'Six parties usually share a China launch. Here’s what each one owns, and where we come in.',
     sideOurs: 'Your side',
     sideMarket: 'The market side',
+    weDoLabel: 'What we handle',
     parties: {
       you: {
         name: 'You, the brand',
@@ -219,20 +285,260 @@ const copy: HowWeWorkCopy = {
       },
       us: {
         name: 'Us',
-        body: 'We write the plan and find your TP or DP. Then we pitch you to it and run your eCommerce marketing alongside it. When it fits, we also act as your exclusive online distributor.',
+        body: 'We sit on your side of the table. We choose your channel partners, negotiate next to you, and manage them day to day. We also run your social media.',
       },
       tp: {
         name: 'Your TP or DP',
-        body: 'This is who runs your stores day in and day out, customer service included. A TP works on Tmall and JD, a DP on Douyin. We plan the campaigns with it. Some partners end up buying stock too, but not at the start.',
+        hint: 'Tmall, JD, Douyin',
+        body: 'This is who runs your stores day in and day out, customer service included. A TP works on Tmall and JD, a DP on Douyin. Some partners end up buying stock too, but not at the start.',
       },
       logistics: {
         name: 'Logistics partner',
         body: 'You only need one if your TP or DP can’t ship cross-border. When that happens, we go and find one that suits your brand.',
       },
+      online: {
+        name: 'Online distributors',
+        hint: 'JD, Tmall Supermarket, Hema, etc.',
+        body: 'They buy your stock and resell it through their own channels, like JD’s self-run store, Tmall Supermarket or Hema. We run the whole relationship for you. In the trade, that’s channel management.',
+      },
       offline: {
         name: 'Offline distributors',
-        body: 'Sell your brand into stores and wholesale. We find them for you. We never act as a sales agent offline.',
+        body: 'They take your brand into stores and wholesale. We manage them much the way we manage online distributors. Same channel management, different shelves.',
       },
+    },
+    stance: {
+      label: 'Where we stand',
+      title: 'On your side of the table, on every channel',
+      body: 'We don’t own stores, we don’t have a TP or DP team, and no partner pays us to bring it brands. We choose your channel partners, sit next to you when you negotiate, then manage them for you day to day. When the plan calls for it, we also become your exclusive online distributor.',
+      points: ['No partner of our own to push', 'One team across every channel', 'Campaigns that run across channels'],
+    },
+    supportLabel: 'Also at the table',
+    scope: {
+      label: 'Our scope',
+      title: 'What we handle, channel by channel',
+      colScope: 'What we handle',
+      colValue: 'What you get',
+      sowLabel: 'Who does what',
+      channels: [
+        {
+          key: 'online',
+          icon: 'cart',
+          name: 'Online distributors',
+          hint: 'JD, Tmall Supermarket, Hema, etc.',
+          body: 'They buy your stock and resell it through their own channels, like JD’s self-run store, Tmall Supermarket or Hema. We run the whole relationship for you. In the trade, that’s channel management.',
+          summary: 'They buy your stock and resell it. We manage them for you.',
+          sow: [
+            {
+              who: 'You, the brand',
+              items: [
+                'Product, supply chain, and pricing policy',
+                'Sign the distribution contract',
+                'Sign off on offers and content',
+              ],
+              brief: ['Product and pricing', 'Sign the contract'],
+            },
+            {
+              who: 'Us',
+              us: true,
+              items: [
+                'Pitch the distributor on your behalf',
+                'Negotiate the contract with you',
+                'Handle regulations and logistics in China',
+                'Create all the content it needs',
+                'Run campaigns with it: creative, pitch, media, and offer, across channels when it helps',
+                'Manage the relationship day to day',
+              ],
+              brief: ['Pitch and negotiate', 'Regulations and logistics', 'Content and campaigns', 'The relationship, day to day'],
+            },
+            {
+              who: 'The distributor',
+              items: [
+                'Buys your stock',
+                'Lists and sells it on its own platform',
+                'Handles orders, delivery, and customer service',
+                'Runs its platform promotions with us',
+              ],
+              brief: ['Buys your stock', 'Sells it on its platform', 'Orders and customer service'],
+            },
+          ],
+          value:
+            'Your brand gets its share of the distributor’s shelf and promotions, and you don’t need your own team in China to make that happen.',
+          valueShort: 'Your share of their shelf, with no team of your own in China.',
+        },
+        {
+          key: 'store',
+          icon: 'store',
+          name: 'Your own brand store on marketplaces',
+          tab: 'Your own brand store',
+          hint: 'Tmall, JD',
+          body: 'Your flagship on Tmall or JD. You own it, and a TP (trade partner) runs it day to day.',
+          summary: 'Your flagship on Tmall or JD, run by a TP.',
+          sow: [
+            {
+              who: 'You, the brand',
+              items: [
+                'Product, supply chain, and stock',
+                'Set the budget and sign with the TP',
+                'Sign off on the business plan',
+              ],
+              brief: ['Product and stock', 'Budget, and signing with the TP'],
+            },
+            {
+              who: 'Us',
+              us: true,
+              items: [
+                'Pick the right TP, from our network or through a fresh search',
+                'Pitch your brand to it',
+                'Build the portfolio strategy and the business plan',
+                'Find the best logistics setup',
+                'Produce the store setup content and the always-on content',
+                'Run campaigns on the platform and off it',
+                'Pitch Tmall or JD for free traffic during the big festivals',
+              ],
+              brief: ['Find and pitch the TP', 'Business plan and logistics', 'Store content and campaigns', 'Free festival traffic'],
+            },
+            {
+              who: 'Your TP',
+              items: [
+                'Opens and runs the store day to day',
+                'Listings, pricing, and on-platform ads',
+                'Customer service in Mandarin',
+                'Orders and fulfillment, cross-border shipping included if it’s equipped',
+                'Sales reporting',
+              ],
+              brief: ['Runs the store', 'Listings and on-platform ads', 'Customer service and orders'],
+            },
+          ],
+          value:
+            'A TP that already knows your category and has its shoppers. And at festival time, platform traffic you didn’t pay for, on top of the traffic you did.',
+          valueShort: 'A TP that knows your category, plus free traffic at festival time.',
+        },
+        {
+          key: 'social-commerce',
+          icon: 'live',
+          name: 'Social commerce',
+          hint: 'Douyin shop, livestreams, creators',
+          body: 'Your shop on Douyin, fed by short videos, livestreams, and the creators who sell for you. A DP (Douyin partner) runs it day to day.',
+          summary: 'Your Douyin shop, run by a DP.',
+          sow: [
+            {
+              who: 'You, the brand',
+              items: [
+                'Product, supply chain, and stock',
+                'Set the budget and sign with the DP',
+                'Samples for creators and livestreams',
+              ],
+              brief: ['Product and stock', 'Budget, and signing with the DP'],
+            },
+            {
+              who: 'Us',
+              us: true,
+              items: [
+                'Pick the right DP, from our network or through a fresh search',
+                'Pitch your brand to it',
+                'Build the business plan and the logistics setup',
+                'Produce the content that keeps the shop fed, always on',
+                'Run campaigns with the DP, on Douyin and off it',
+                'Pitch Douyin for free traffic during the big festivals',
+              ],
+              brief: ['Find and pitch the DP', 'Business plan and logistics', 'Content and campaigns', 'Free festival traffic'],
+            },
+            {
+              who: 'Your DP',
+              items: [
+                'Runs the Douyin shop day to day',
+                'Hosts the livestreams',
+                'Books and manages the creators who sell for you',
+                'Paid traffic on Douyin',
+                'Customer service and orders',
+              ],
+              brief: ['Runs the shop', 'Livestreams and creators', 'Customer service and orders'],
+            },
+          ],
+          value:
+            'A DP whose livestream rooms and creators already sell in your category. Your sales don’t hang on paid traffic alone.',
+          valueShort: 'Livestreams and creators that already sell in your category.',
+        },
+        {
+          key: 'offline',
+          icon: 'building',
+          name: 'Offline distributors',
+          hint: 'Stores and wholesale',
+          body: 'They take your brand into stores and wholesale. We manage them much the way we manage online distributors. Same channel management, different shelves.',
+          summary: 'They take your brand into stores and wholesale. We manage them for you.',
+          sow: [
+            {
+              who: 'You, the brand',
+              items: [
+                'Product, supply chain, and pricing policy',
+                'Sign the distribution contract',
+                'Sign off on offers and in-store material',
+              ],
+              brief: ['Product and pricing', 'Sign the contract'],
+            },
+            {
+              who: 'Us',
+              us: true,
+              items: [
+                'Pitch the distributor on your behalf',
+                'Negotiate the contract with you',
+                'Handle regulations and logistics in China',
+                'Create the content it needs',
+                'Run campaigns with it',
+                'Manage the relationship day to day',
+              ],
+              brief: ['Pitch and negotiate', 'Regulations and logistics', 'Content and campaigns', 'The relationship, day to day'],
+            },
+            {
+              who: 'The distributor',
+              items: [
+                'Buys your stock',
+                'Sells into stores and wholesale',
+                'Runs its own sales team and store accounts',
+                'Warehousing and delivery to stores',
+              ],
+              brief: ['Buys your stock', 'Sells into stores and wholesale', 'Delivery to stores'],
+            },
+          ],
+          value:
+            'Stores and wholesale without building a sales team in China. The distributor stays briefed, supplied with content, and accountable.',
+          valueShort: 'Stores and wholesale, with no sales team of your own.',
+        },
+        {
+          key: 'social',
+          icon: 'megaphone',
+          name: 'Social media',
+          hint: 'RedNote, Douyin, WeChat, Bilibili',
+          body: 'Your brand accounts, and the creators who talk about you. It’s where Chinese shoppers check out a brand before they buy it anywhere.',
+          summary: 'Your brand accounts, and the creators who talk about you.',
+          sow: [
+            {
+              who: 'You, the brand',
+              items: ['Set the budget', 'Brand guidelines and key messages', 'Sign off on campaigns'],
+              brief: ['Budget and brand guidelines', 'Sign-off on campaigns'],
+            },
+            {
+              who: 'Us',
+              us: true,
+              items: [
+                'Run your brand accounts day to day, across platforms',
+                'Plan and produce the content',
+                'Pick the KOLs and KOCs, and brief them',
+                'Run KOL and KOC brand campaigns, outside eCommerce',
+                'Report on what works, and adjust',
+              ],
+              brief: ['Accounts, day to day', 'Content', 'KOL and KOC campaigns', 'Reporting'],
+            },
+            {
+              who: 'KOLs and KOCs',
+              items: ['Create and post content about your brand', 'Follow the brief we agreed with you'],
+              brief: ['Create and post content', 'Follow the brief'],
+            },
+          ],
+          value: 'A brand people already search for. That’s what makes every other channel sell.',
+          valueShort: 'A brand people already search for.',
+        },
+      ],
     },
   },
   tpdp: {
@@ -340,22 +646,51 @@ const copy: HowWeWorkCopy = {
       us: 'Us',
       tp: 'TP or DP',
       logistics: 'Logistics partner',
+      online: 'Online distributors',
       offline: 'Offline distributors',
     },
     rows: [
-      { task: 'Brand, product, and supply chain', cells: ['L', '', '', '', ''] },
-      { task: 'Budget and investment level', cells: ['L', 'S', '', '', ''] },
-      { task: 'Business plan', cells: ['S', 'L', '', '', ''] },
-      { task: 'Brand localization', cells: ['S', 'L', '', '', ''] },
-      { task: 'Finding and pitching the TP or DP', cells: ['S', 'L', '', '', ''] },
-      { task: 'Choosing the partner and signing', cells: ['L', 'S', '', '', ''] },
-      { task: 'Store operations and customer service', cells: ['', '', 'L', '', ''] },
-      { task: 'Content for your eCommerce stores', cells: ['', 'L', 'S', '', ''] },
-      { task: 'eCommerce campaigns', cells: ['', 'L', 'L', '', ''] },
-      { task: 'Social campaigns and account management', cells: ['', 'L', '', '', ''] },
-      { task: 'Offline events', cells: ['', 'L', '', '', ''] },
-      { task: 'Cross-border logistics', cells: ['', 'Finds the partner', 'If equipped', 'Otherwise', ''] },
-      { task: 'Offline stores and wholesale', cells: ['', 'Finds them', '', '', 'L'] },
+      { group: 'Strategy and planning', task: 'Brand, product, and supply chain', cells: ['L', '', '', '', '', ''] },
+      { task: 'Budget and investment level', cells: ['L', 'S', '', '', '', ''] },
+      { task: 'Business plan, festival budgets included', cells: ['S', 'L', '', '', '', ''] },
+      { task: 'Portfolio strategy: which products go to which channel', cells: ['S', 'L', 'S', '', '', ''] },
+      { task: 'Brand localization', cells: ['S', 'L', '', '', '', ''] },
+      {
+        group: 'TP or DP, on Tmall, JD, and Douyin',
+        task: 'Finding the TP or DP, in our network or beyond it',
+        cells: ['S', 'L', '', '', '', ''],
+      },
+      { task: 'Pitching your brand to it', cells: ['S', 'L', '', '', '', ''] },
+      { task: 'Choosing the partner and signing', cells: ['L', 'S', '', '', '', ''] },
+      { task: 'Store operations and customer service', cells: ['', '', 'L', '', '', ''] },
+      { task: 'Store setup content and always-on content', cells: ['', 'L', 'S', '', '', ''] },
+      { task: 'Campaigns on the platform and off it', cells: ['', 'L', 'L', '', '', ''] },
+      { task: 'Pitching the platform for festival traffic', cells: ['', 'L', 'S', '', '', ''] },
+      {
+        group: 'Online distributors: JD, Tmall Supermarket, Hema',
+        task: 'Pitching the distributor on your behalf',
+        cells: ['S', 'L', '', '', '', ''],
+      },
+      { task: 'Negotiating and signing the contract', cells: ['L', 'S', '', '', '', ''] },
+      { task: 'Buying stock and selling it to shoppers', cells: ['', '', '', '', 'L', ''] },
+      { task: 'All the content the distributor needs', cells: ['', 'L', '', '', 'S', ''] },
+      { task: 'Joint campaigns: creative, pitch, media, and offer', cells: ['', 'L', '', '', 'S', ''] },
+      { task: 'Day-to-day relationship', cells: ['', 'L', '', '', 'S', ''] },
+      { group: 'Offline distributors', task: 'Pitching the distributor on your behalf', cells: ['S', 'L', '', '', '', ''] },
+      { task: 'Negotiating and signing the contract', cells: ['L', 'S', '', '', '', ''] },
+      { task: 'Selling into stores and wholesale', cells: ['', '', '', '', '', 'L'] },
+      { task: 'Content and campaigns with the distributor', cells: ['', 'L', '', '', '', 'S'] },
+      { task: 'Day-to-day relationship', cells: ['', 'L', '', '', '', 'S'] },
+      { group: 'Regulations and logistics', task: 'Regulations in China for distributor channels', cells: ['S', 'L', '', '', '', ''] },
+      { task: 'Cross-border logistics', cells: ['', 'Finds the partner', 'If equipped', 'Otherwise', '', ''] },
+      { task: 'Logistics in China for distributor channels', cells: ['', 'L', '', 'S', '', ''] },
+      {
+        group: 'Social media and brand campaigns',
+        task: 'Brand accounts day to day: RedNote, Douyin, WeChat, Bilibili',
+        cells: ['S', 'L', '', '', '', ''],
+      },
+      { task: 'KOL and KOC brand campaigns, outside eCommerce', cells: ['S', 'L', '', '', '', ''] },
+      { task: 'Offline events', cells: ['', 'L', '', '', '', ''] },
     ],
   },
   steps: {
@@ -395,6 +730,39 @@ const copy: HowWeWorkCopy = {
         who: ['us', 'tp', 'offline'],
       },
     ],
+  },
+  growth: {
+    eyebrow: 'What growth looks like',
+    h2: 'Sales in China climb from one festival to the next',
+    lead: 'The trend goes up. It just doesn’t go up in a straight line. A big share of the year’s sales lands in a few shopping festivals, and every one of them needs its own budget, year after year.',
+    chartTitle: 'Two years of a typical brand on Tmall and JD',
+    chartSr:
+      'Weekly sales rise over two years, with sharp peaks at 618 in June and Double 11 in November, smaller ones at 3.8 and Double 12, a slowdown around Chinese New Year and a short dip after each festival. Marketing investment follows the same rhythm: a steady always-on budget, plus a festival budget that starts in the warm-up weeks before each peak.',
+    salesLabel: 'Weekly sales',
+    investLabel: 'Marketing investment',
+    legendSales: 'Sales',
+    legendTrend: 'Underlying trend',
+    legendAlwaysOn: 'Always-on budget',
+    legendFestival: 'Festival budget',
+    years: ['Year one', 'Year two'],
+    months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    festivals: {
+      d38: '3.8 Queen’s Day',
+      s618: '618',
+      d11: 'Double 11',
+      d12: 'Double 12',
+      cny: 'Chinese New Year',
+    },
+    phases: {
+      normal: 'Always on. Content and ads keep the store ticking over.',
+      warmup: 'Warm-up. The festival budget kicks in before sales move.',
+      peak: 'Festival peak. Weeks of sales packed into a few days.',
+      dip: 'Post-festival dip. Shoppers bought ahead, so it’s quieter.',
+      cny: 'Chinese New Year. Logistics slow down and so do sales.',
+    },
+    caption: 'An illustration of the pattern, not client data.',
+    note: 'Festivals aren’t a one-off launch cost. Each one takes media, offers, and fresh creative, and the platforms hand their free festival traffic to the brands that pitched them early. Put that in the budget for every year, not just the first.',
+    noteStrong: 'Our advice: plan the festival budget in the business plan, before you sign anything.',
   },
   hire: {
     eyebrow: 'Working with us',
