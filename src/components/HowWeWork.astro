@@ -239,6 +239,23 @@ const faqJsonLd = {
       </div>
     </section>
 
+    {/* ================= GROWTH (festival rhythm) ================= */}
+    {
+      c.growth && (
+        <section id="growth" class="hw-section hw-alt hw-growth-section" data-section>
+          <div class="container">
+            <header class="hw-head hw-head--center hw-reveal">
+              <span class="eyebrow">{c.growth.eyebrow}</span>
+              <h2>{c.growth.h2}</h2>
+              <p>{c.growth.lead}</p>
+            </header>
+
+            <GrowthChart g={c.growth} tone="light" />
+          </div>
+        </section>
+      )
+    }
+
     {/* ================= OUR ROLE (the table map) ================= */}
     <section id="our-role" class="hw-section hw-dark hw-map-section" data-section>
       <div class="hw-dark__glow" aria-hidden="true"></div>
@@ -698,26 +715,8 @@ const faqJsonLd = {
       </div>
     </section>
 
-    {/* ================= GROWTH (festival rhythm) ================= */}
-    {
-      c.growth && (
-        <section id="growth" class="hw-section hw-dark hw-growth-section" data-section>
-          <div class="hw-dark__glow" aria-hidden="true" />
-          <div class="container">
-            <header class="hw-head hw-head--center hw-reveal">
-              <span class="eyebrow eyebrow--on-dark">{c.growth.eyebrow}</span>
-              <h2>{c.growth.h2}</h2>
-              <p>{c.growth.lead}</p>
-            </header>
-
-            <GrowthChart g={c.growth} tone="dark" />
-          </div>
-        </section>
-      )
-    }
-
     {/* ================= HIRE US ================= */}
-    <section class="hw-section hw-alt">
+    <section class="hw-section">
       <div class="container">
         <header class="hw-head hw-head--center hw-reveal">
           <span class="eyebrow">{c.hire.eyebrow}</span>

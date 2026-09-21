@@ -211,13 +211,13 @@ const copy: HowWeWorkCopy = {
   subnavLabel: 'On this page',
   sections: [
     { id: 'why', label: 'Why' },
+    { id: 'growth', label: 'Growth' },
     { id: 'our-role', label: 'Our role' },
     { id: 'who-does-what', label: 'Who does what' },
     { id: 'tp-or-dp', label: 'TP or DP' },
     { id: 'the-right-partner', label: 'The right partner' },
     { id: 'pitching', label: 'Pitching a partner' },
     { id: 'the-steps', label: 'The steps' },
-    { id: 'growth', label: 'Growth' },
     { id: 'pricing-faq', label: 'Pricing and FAQ' },
   ],
   hero: {
