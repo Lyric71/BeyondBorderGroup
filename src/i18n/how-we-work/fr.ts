@@ -14,9 +14,9 @@ const copy: HowWeWorkCopy = {
   },
   subnavLabel: 'Sur cette page',
   sections: [
+    { id: 'why', label: 'Pourquoi' },
     { id: 'our-role', label: 'Notre rôle' },
     { id: 'who-does-what', label: 'Qui fait quoi' },
-    { id: 'why', label: 'Pourquoi' },
     { id: 'tp-or-dp', label: 'TP ou DP' },
     { id: 'the-right-partner', label: 'Le bon partenaire' },
     { id: 'pitching', label: 'Convaincre un partenaire' },

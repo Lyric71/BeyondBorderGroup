@@ -6,7 +6,6 @@
  */
 import Layout from '../layouts/Layout.astro';
 import CaseStudyStrip from './CaseStudyStrip.astro';
-import ChannelScope from './how-we-work/ChannelScope.astro';
 import GrowthChart from './how-we-work/GrowthChart.astro';
 import { icons } from './how-we-work/icons';
 import { getLocaleFromUrl, localizePath } from '../i18n/utils';
@@ -181,6 +180,61 @@ const faqJsonLd = {
       </div>
     </nav>
 
+    {/* ================= WHY (scroll story) ================= */}
+    <section id="why" class="hw-section hw-why" data-section>
+      <div class="container">
+        <header class="hw-head hw-head--center hw-reveal">
+          <span class="eyebrow">{c.why.eyebrow}</span>
+          <h2>{c.why.h2}</h2>
+          <p>{c.why.lead}</p>
+        </header>
+
+        <div class="hw-story" data-story>
+          <div class="hw-story__visual" aria-hidden="true">
+            <div class="hw-story__stack">
+              {
+                reasons.map((r, i) => (
+                  <img
+                    src={r.img}
+                    alt=""
+                    class:list={['hw-story__img', { 'is-active': i === 0 }]}
+                    data-story-img={i}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ))
+              }
+              <div class="hw-story__shade"></div>
+              <div class="hw-story__progress">
+                {reasons.map((_, i) => <span class:list={{ 'is-active': i === 0 }} data-story-dot={i} />)}
+              </div>
+            </div>
+          </div>
+
+          <ol class="hw-story__steps">
+            {
+              reasons.map((r, i) => (
+                <li class:list={['hw-story__step', { 'is-active': i === 0 }]} data-story-step={i}>
+                  <figure class="hw-story__thumb">
+                    <img src={r.img} alt={r.alt} loading="lazy" decoding="async" />
+                  </figure>
+                  <div class="hw-story__card">
+                    <span class="hw-icon" aria-hidden="true" set:html={icons[r.icon]} />
+                    <h3>{r.title}</h3>
+                    <p>{r.body}</p>
+                  </div>
+                </li>
+              ))
+            }
+          </ol>
+        </div>
+
+        <p class="hw-verdict" data-verdict>
+          {c.why.verdict.split(' ').map((w) => <span class="hw-verdict__w">{w} </span>)}
+        </p>
+      </div>
+    </section>
+
     {/* ================= OUR ROLE (the table map) ================= */}
     <section id="our-role" class="hw-section hw-dark hw-map-section" data-section>
       <div class="hw-dark__glow" aria-hidden="true"></div>
@@ -232,9 +286,8 @@ const faqJsonLd = {
             </div>
           </div>
 
-          {c.role.stance && c.role.scope ? (
-            <ChannelScope role={c.role} tone="dark" />
-          ) : (
+          {/* Locales with the channel scope (EN) show it on the home page instead; the rest keep the party panels. */}
+          {!c.role.scope && (
           <div class="hw-map__panels">
             {
               parties.map((p) => (
@@ -359,61 +412,6 @@ const faqJsonLd = {
             }
           </ul>
         </div>
-      </div>
-    </section>
-
-    {/* ================= WHY (scroll story) ================= */}
-    <section id="why" class="hw-section hw-why" data-section>
-      <div class="container">
-        <header class="hw-head hw-head--center hw-reveal">
-          <span class="eyebrow">{c.why.eyebrow}</span>
-          <h2>{c.why.h2}</h2>
-          <p>{c.why.lead}</p>
-        </header>
-
-        <div class="hw-story" data-story>
-          <div class="hw-story__visual" aria-hidden="true">
-            <div class="hw-story__stack">
-              {
-                reasons.map((r, i) => (
-                  <img
-                    src={r.img}
-                    alt=""
-                    class:list={['hw-story__img', { 'is-active': i === 0 }]}
-                    data-story-img={i}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                ))
-              }
-              <div class="hw-story__shade"></div>
-              <div class="hw-story__progress">
-                {reasons.map((_, i) => <span class:list={{ 'is-active': i === 0 }} data-story-dot={i} />)}
-              </div>
-            </div>
-          </div>
-
-          <ol class="hw-story__steps">
-            {
-              reasons.map((r, i) => (
-                <li class:list={['hw-story__step', { 'is-active': i === 0 }]} data-story-step={i}>
-                  <figure class="hw-story__thumb">
-                    <img src={r.img} alt={r.alt} loading="lazy" decoding="async" />
-                  </figure>
-                  <div class="hw-story__card">
-                    <span class="hw-icon" aria-hidden="true" set:html={icons[r.icon]} />
-                    <h3>{r.title}</h3>
-                    <p>{r.body}</p>
-                  </div>
-                </li>
-              ))
-            }
-          </ol>
-        </div>
-
-        <p class="hw-verdict" data-verdict>
-          {c.why.verdict.split(' ').map((w) => <span class="hw-verdict__w">{w} </span>)}
-        </p>
       </div>
     </section>
 

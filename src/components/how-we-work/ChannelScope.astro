@@ -95,6 +95,7 @@ const rows = role.scope?.channels ?? [];
   {
     role.scope && (
       <div class:list={['hw-scope__channels', { 'is-tabbed': tabbed }]} data-scope-tabs={tabbed ? '' : undefined}>
+        {(!hideHead || tabbed) && (
         <div class="hw-scope__channelshead">
           {!hideHead && (
             <>
@@ -122,6 +123,7 @@ const rows = role.scope?.channels ?? [];
             </div>
           )}
         </div>
+        )}
         {rows.map((p, i) => (
           <article
             class="hw-scope__row"

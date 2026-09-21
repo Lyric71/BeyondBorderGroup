@@ -210,9 +210,9 @@ const copy: HowWeWorkCopy = {
   },
   subnavLabel: 'On this page',
   sections: [
+    { id: 'why', label: 'Why' },
     { id: 'our-role', label: 'Our role' },
     { id: 'who-does-what', label: 'Who does what' },
-    { id: 'why', label: 'Why' },
     { id: 'tp-or-dp', label: 'TP or DP' },
     { id: 'the-right-partner', label: 'The right partner' },
     { id: 'pitching', label: 'Pitching a partner' },

@@ -10,9 +10,9 @@ const copy: HowWeWorkCopy = {
   },
   subnavLabel: 'En esta página',
   sections: [
+    { id: 'why', label: 'Por qué' },
     { id: 'our-role', label: 'Nuestro papel' },
     { id: 'who-does-what', label: 'Quién hace qué' },
-    { id: 'why', label: 'Por qué' },
     { id: 'tp-or-dp', label: 'TP o DP' },
     { id: 'the-right-partner', label: 'El socio adecuado' },
     { id: 'pitching', label: 'Convencer al socio' },
