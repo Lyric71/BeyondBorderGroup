@@ -84,7 +84,7 @@ and Ledger needs one.
 - URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=65769
 - Verified 1: 2026-09-04
 - Verified 2: 2026-09-04 (re-verified for a second piece on 2026-09-09)
-- Used in: china-distributor-vs-own-store, cost-to-sell-footwear-in-china
+- Used in: china-distributor-vs-own-store, cost-to-sell-footwear-in-china, double-11-preparation-checklist (re-verified 2026-09-22, both checks)
 - Notes: the page carries the limits and the effective date. It does not carry the 70% VAT rule; do not cite this URL for that. For the 0% duty and the 70% rule use 财关税〔2016〕18号 in this file.
 
 ### Overseas food producer registration, Decree 248
@@ -135,7 +135,7 @@ and Ledger needs one.
 - URL: https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5437823.htm
 - Verified 1: 2026-09-09
 - Verified 2: 2026-09-09
-- Used in: cost-to-sell-footwear-in-china
+- Used in: cost-to-sell-footwear-in-china; re-verified 2026-09-22 for double-11-preparation-checklist (researched, not cited in the final draft)
 - Notes: verbatim clause is 对跨境电商零售进口商品按个人自用进境物品监管，不执行有关商品首次进口许可批件、注册或备案要求. The article 3 text carries exceptions for goods under quarantine control or with major quality risk; do not state the exemption as absolute for every category.
 
 ### Cross-border retail import tax: 0% duty, VAT and consumption tax at 70%
@@ -145,7 +145,7 @@ and Ledger needs one.
 - URL: http://www.mof.gov.cn/gp/xxgkml/gss/201603/t20160324_2510682.htm
 - Verified 1: 2026-09-09
 - Verified 2: 2026-09-09
-- Used in: cost-to-sell-footwear-in-china
+- Used in: cost-to-sell-footwear-in-china; re-verified 2026-09-22 for double-11-preparation-checklist (researched, not cited in the final draft)
 - Notes: this is the URL for the 0% and 70% rules. 财关税〔2018〕49号 raised the transaction limits but does NOT carry these two clauses; do not cite 49号 for them. Pair with the 13% VAT rate entry below to get 9.1% for general goods.
 
 ### General import VAT rate, 13%
@@ -155,7 +155,7 @@ and Ledger needs one.
 - URL: https://www.gov.cn/gongbao/content/2019/content_5416183.htm
 - Verified 1: 2026-09-09
 - Verified 2: 2026-09-09
-- Used in: cost-to-sell-footwear-in-china
+- Used in: cost-to-sell-footwear-in-china; re-verified 2026-09-22 for double-11-preparation-checklist (researched, not cited in the final draft)
 - Notes: 13% x 70% = 9.1%, the cross-border comprehensive rate for general goods. Cosmetics, fragrance and alcohol carry consumption tax and run higher.
 
 ### Chinese shoe size standard, GB/T 43293-2022
@@ -217,7 +217,7 @@ and Ledger needs one.
 - URL: https://news.bjd.com.cn/2026/01/11/11517038.shtml
 - Verified 1: 2026-09-09
 - Verified 2: 2026-09-09
-- Used in: cost-to-sell-footwear-in-china
+- Used in: cost-to-sell-footwear-in-china, double-11-preparation-checklist (re-verified 2026-09-22, both checks)
 - Notes: CCTV did not name the institution behind the figure and no footwear-specific rate was published anywhere. The 80% figure is APPAREL LIVESTREAM, not footwear. Always label it as such and present it as a planning ceiling, never as a footwear return rate.
 
 ## Brand entry teardowns
@@ -539,3 +539,125 @@ and Ledger needs one.
 - Verified 2: 2026-09-17 (re-read and recomputed before the draft was finished)
 - Used in: a-comparison-between-tmall-and-amazon
 - Notes: this is the whole-picker view of the same array the Ledger pieces slice by category, so it does not duplicate a published fee table. The 35,000 RMB retainer and the 10% TP commission are MODEL DEFAULTS, not a sourced market rate. Always label them as the calculator's defaults, never as what TPs charge.
+
+## Double 11 checklist research, September 22, 2026
+
+### Douyin Double 11 2026: registration date and sale window
+- Value: merchant registration opened September 14, 2026; the sale runs from October through November 11 in three phases (an October opening phase, a main phase spanning October and November, and a November peak phase)
+- As of: September 2026 (published September 19, 2026)
+- Source: Ebrun (亿邦动力), weekly e-commerce round-up carried on Tencent News
+- URL: https://news.qq.com/rain/a/20260919A088XY00
+- Verified 1: 2026-09-22 (page fetched at research time; verbatim clause 9月14日已开启报名 and the three phases on the page)
+- Verified 2: 2026-09-22 (re-fetched at iteration 8; re-fetched a third time by the 09:19 relaunch, unchanged)
+- Used in: double-11-preparation-checklist
+- Notes: Douyin's own rule page 《2026年抖音商城双11好物节招商规则》 on school.jinritemai.com returns an empty body to a non-browser fetch, so the trade publication is the citable source. Search summaries of the rule page give the window as 2026-09-14 14:00 to 2026-11-11 23:59:59; the 14:00 start is NOT printed in copy because the page could not be opened. Print only what Ebrun states.
+
+### Kuaishou Double 11 2026: recruitment opened September 15
+- Value: Kuaishou opened merchant recruitment for its 2026 Double 11 on September 15, 2026
+- As of: September 2026 (published September 16, 2026)
+- Source: 21st Century Business Herald (21世纪经济报道)
+- URL: https://www.21jingji.com/article/20260916/herald/ae0a3b105798bb224bacac429cb5487c.html
+- Verified 1: 2026-09-22
+- Verified 2: 2026-09-22 (re-fetched at iteration 8, unchanged)
+- Used in: double-11-preparation-checklist
+- Notes: cite this URL for the recruitment date only. The cycle dates are on the Ebrun page below.
+
+### Kuaishou Double 11 2026: cycle October 7 to November 15 in five phases
+- Value: 抢跑预售 Oct 7 to 13, 开门红 Oct 14 to 19, 品类日 Oct 20 to Nov 7, 收官期 Nov 8 to 11, 爆款返场 Nov 12 to 15
+- As of: September 2026 (published September 19, 2026)
+- Source: Ebrun (亿邦动力), carried on Tencent News
+- URL: https://news.qq.com/rain/a/20260919A088XY00
+- Verified 1: 2026-09-22
+- Verified 2: 2026-09-22 (re-fetched at iteration 8 and again by the 09:19 relaunch, unchanged)
+- Used in: double-11-preparation-checklist
+- Notes: same page as the Douyin entry. The draft prints the five phases as pre-sale, opening, category days, closing and an encore window, without the day ranges; the ranges are here if a later piece needs them.
+
+### Double 11 2025 platform windows: Douyin, JD and Tmall
+- Value: Douyin sold October 9 to November 11 (34 days), JD October 9 to November 14 (37 days), Tmall October 15 to November 14 (31 days); the page calls it the longest Double 11 (最长双11)
+- As of: November 2025 (published November 15, 2025)
+- Source: The Paper (澎湃新闻)
+- URL: https://m.thepaper.cn/newsDetail_forward_31971814
+- Verified 1: 2026-09-22
+- Verified 2: 2026-09-22 (re-fetched at iteration 8 and again by the 09:19 relaunch; verbatim 抖音电商从10月9日开卖，持续到11月11日 / 从10月9日至11月14日 / 从10月15日持续到11月14日 confirmed)
+- Used in: double-11-preparation-checklist
+- Notes: JD here is the whole JD platform, not JD Worldwide alone. Use these as last year's windows, never as 2026 dates. No Tmall or JD 2026 window had a citable source on 2026-09-22; aggregator blogs carrying a 2026 Tmall timetable disagreed with each other and were rejected.
+
+### Double 11 2025 total online sales, all platforms
+- Value: 1,695 billion RMB (16,950亿元) across the 2025 Double 11 period, up 14.2% year on year
+- As of: November 2025 (published November 12, 2025)
+- Source: Sina Finance (新浪财经), citing Syntun (星图数据)
+- URL: https://finance.sina.com.cn/stock/bxjj/2025-11-12/doc-infxcura4872746.shtml
+- Verified 1: 2026-09-22
+- Verified 2: 2026-09-22 (re-fetched at iteration 8, unchanged)
+- Used in: double-11-preparation-checklist
+- Notes: Syntun's 全网销售额 is a third-party estimate covering the extended sale period. Always say "citing Syntun". Platforms do not publish their own totals.
+
+### Imported brands on Tmall Global, first two weeks of Double 11 2025
+- Value: 927 imported brands doubled GMV year on year in the first two weeks; nine passed 100 million RMB; more than 1,700 new overseas brands entered Tmall Global before the sale
+- As of: October 2025 (published October 29, 2025)
+- Source: E-Commerce Daily (电商报), carried on yilantop.com
+- URL: https://www.yilantop.com/news/74594
+- Verified 1: 2026-09-22
+- Verified 2: 2026-09-22 (re-fetched at iteration 8, unchanged)
+- Used in: double-11-preparation-checklist
+- Notes: the 1,700-plus new brands figure is not printed in the draft; the ledger already carries a separate Tmall Global new-brand entry for 2025, reconcile before using both.
+
+### Tmall Global 全球探源计划 upgrade: origin, circulation and claim requirements
+- Value: overseas brands must supply proof of origin, evidence of free-sale authorization or market approval, and visual evidence of genuine overseas circulation (an unbroken video walkthrough in a foreign retailer or pharmacy, or sales screenshots from a recognized overseas platform); claims may not imply disease treatment, assert benefits without scientific support, or use misleading data or reviews; 300-plus brands enrolled since May 2026
+- As of: September 2026 (published September 15, 2026)
+- Source: Global Network (环球网), carried on Tencent News
+- URL: https://news.qq.com/rain/a/20260915A091CT00
+- Verified 1: 2026-09-22
+- Verified 2: 2026-09-22 (re-fetched at iteration 8, unchanged)
+- Used in: double-11-preparation-checklist
+- Notes: the programme page on merchant.tmall.hk sits behind a Taobao login. This is a platform programme, not a regulation; do not describe it as a legal requirement.
+
+### 网络交易平台规则监督管理办法, SAMR and CAC order 116
+- Value: published December 18, 2025, effective February 1, 2026. Article 27 bars a platform from forcing merchants to carry refund-without-return (仅退款) liability; article 12 requires 7 days' public notice before a rule change takes effect, 15 days for changes affecting many users or major interests
+- As of: December 2025
+- Source: State Administration for Market Regulation (国家市场监督管理总局)
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2026/art_85b474fc5a08494bb60ca6a280b98d7d.html
+- Verified 1: 2026-09-22
+- Verified 2: 2026-09-22 (re-fetched at iteration 8, unchanged)
+- Used in: double-11-preparation-checklist
+- Notes: governs the platform's conduct toward merchants. Cite it for notice periods and the 仅退款 clause, not for merchant pricing duties (those are order 56 and the NDRC rule below).
+
+### 直播电商监督管理办法, SAMR and CAC order 117
+- Value: published December 18, 2025, effective February 1, 2026. Article 32: where price comparison, discount or markdown promotions are used, the compared price or the calculation basis of the discount must be shown prominently. Article 37: AI-generated presenter images or video must be labelled per national rules and the operator must continuously remind viewers (持续向消费者提示) that the figure is machine generated
+- As of: December 2025 (gazette issue 12666, April 2026)
+- Source: State Council Gazette (国务院公报)
+- URL: https://www.gov.cn/gongbao/2026/issue_12666/202604/content_7065114.html
+- Verified 1: 2026-09-22
+- Verified 2: 2026-09-22 (re-fetched at iteration 8; full text of articles 32 and 37 re-fetched again by the 09:19 relaunch, verbatim 应当显著标明被比较价格或者折价、减价的计算基准 and 持续向消费者提示 confirmed)
+- Used in: double-11-preparation-checklist
+- Notes: article 37 has further paragraphs beyond the AI-presenter clause; quote only the first paragraph unless the rest has been read.
+
+### 互联网平台价格行为规则, 发改价格规〔2025〕1607号
+- Value: issued December 9, 2025, released December 20, 2025, effective April 10, 2026; issued jointly by the NDRC, SAMR and the CAC; 7 chapters, 29 articles
+- As of: December 2025
+- Source: National Development and Reform Commission (国家发展和改革委员会), 答记者问 page, with the CAC's carried copy of the notice
+- URL: https://www.ndrc.gov.cn/xxgk/jd/jd/202512/t20251220_1402517.html
+- Verified 1: 2026-09-22
+- Verified 2: 2026-09-22 (re-fetched at iteration 8, unchanged)
+- Used in: double-11-preparation-checklist
+- Notes: the rule text sits in an attached PDF/OFD on the NDRC notice page that did not parse. Cite the effective date and the issuing bodies only. Do not quote article numbers from this rule until the attachment has been read.
+
+### 明码标价和禁止价格欺诈规定, SAMR order 56, article 19
+- Value: promulgated April 14, 2022, effective July 1, 2022. Article 19(3) prohibits selling goods or services through false discounting, false markdowns or false price comparison (虚假折价、减价或者价格比较)
+- As of: April 2022
+- Source: State Council Gazette (国务院公报)
+- URL: https://www.gov.cn/gongbao/content/2022/content_5699926.htm
+- Verified 1: 2026-09-22
+- Verified 2: 2026-09-22 (re-fetched at iteration 8, unchanged)
+- Used in: double-11-preparation-checklist
+- Notes: the merchant-side pricing rule; the base-price record-keeping argument rests on it. Pair with order 117 article 32 for livestream discounts.
+
+### Bonded warehouse cash floor and per-parcel logistics defaults (proprietary)
+- Value: bonded warehouse deposit 100,000 RMB and bonded tax prepayment 300,000 RMB (400,000 RMB committed before the first order); pick and pack 4 RMB, last-mile 11 RMB, return handling 15 RMB per parcel; default return rate 5%
+- As of: September 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, advanced-input defaults)
+- Label in copy: "TheChinaPath calculator data, September 2026" / "our Tmall Global calculator"
+- Verified 1: 2026-09-22 (defaults read from the .astro file)
+- Verified 2: 2026-09-22 (re-read by the 09:19 relaunch: whDeposit 100000, whTaxPrepay 300000, fulfillment 4, shipping 11, returnRate 5, returnHandling 15 confirmed)
+- Used in: double-11-preparation-checklist
+- Notes: MODEL DEFAULTS, not a market rate. Return-drag arithmetic in the piece: a returned order costs 30 RMB (4 + 11 + 15); at a 61.5% return rate, 1,000 orders produce 615 returns and 18,450 RMB spread over 385 kept orders, about 48 RMB each; at the calculator's 5% default it is 1,500 RMB over 950 kept orders, about 1.6 RMB each. An earlier draft printed 15 RMB for the 5% case; that was wrong and was corrected on 2026-09-22.

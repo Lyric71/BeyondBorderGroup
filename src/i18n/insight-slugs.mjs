@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'double-11-preparation-checklist': 'double-11-retroplanning-50-jours',
   'cost-to-sell-facial-skincare-in-china': 'ce-que-coute-vendre-des-soins-du-visage-en-chine',
   'china-livestream-cost-for-brands': 'ce-que-coute-un-studio-live-en-chine',
   'how-allbirds-entered-china': 'allbirds-en-chine-ce-que-l-entree-a-coute',
@@ -143,6 +144,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'double-11-preparation-checklist': 'double-11-checkliste-50-tage-vorher',
   'cost-to-sell-facial-skincare-in-china': 'was-gesichtspflege-verkaufen-in-china-kostet',
   'china-livestream-cost-for-brands': 'was-ein-livestream-studio-in-china-kostet',
   'how-allbirds-entered-china': 'allbirds-in-china-was-der-markteintritt-kostete',
@@ -277,6 +279,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'double-11-preparation-checklist': 'double-11-cuenta-atras-50-dias',
   'cost-to-sell-facial-skincare-in-china': 'lo-que-cuesta-vender-cuidado-facial-en-china',
   'china-livestream-cost-for-brands': 'lo-que-cuesta-un-estudio-de-directos-en-china',
   'how-allbirds-entered-china': 'allbirds-en-china-lo-que-costo-entrar',
