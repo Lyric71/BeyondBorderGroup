@@ -31,6 +31,16 @@ Master Martini, Kerry DaVinci Gourmet, Mission Foods, Bassetti, iGuzzini,
 Chery, JAC, Exeed, Exlantix, Jaguar Land Rover, Viessmann, Marriott, Blue
 Insurance, SohoMD, BeyondTikTok, and any brand in `src/content/cases/`.
 
+Also every brand on the client logo wall in `src/pages/about.astro` (added
+2026-09-24 after a2 Milk nearly got picked): Shiseido, Pierre Fabre,
+iFlytek, Camper, Into You, Estee Lauder, Gucci, Huawei, Honor, P&G, Sanofi,
+Danone, Heineken, Bacardi, Martini, Lavazza, Nescafe, Costa Coffee, Ferrero,
+Kraft Heinz, Maltesers, Kerry, Valio, a2 Milk, Langnese, Marriott, Cigna,
+Electrolux, Viessmann, Chery, JAC Motors, Bowers & Wilkins, iGuzzini,
+Pigeon, Pilot, Eucerin, RoC, Shu Uemura, Age 20's, Codex Beauty, Skarlett
+Blue, Magpie, Macusee, Zeinley, Mission, Russell, BO, Blue. Re-read the
+file on the day; it changes.
+
 ## Candidate list
 
 Seed, September 4, 2026. Add brands as you spot them. Claude verifies the
@@ -38,6 +48,8 @@ four criteria on the day; a name here is a lead, not a clearance.
 
 | Brand | Category | Why interesting | Checked |
 |---|---|---|---|
+| Allbirds | Footwear | Own-entity entry, licensed to Belle 2024 | Used 01T, 2026-09-10 |
+| On (On Holding AG) | Sports & Leisure, running footwear | Own stores plus dealers, 38 China locations, SEC filings | Used 03T, 2026-09-24, all four criteria pass |
 | (add) | | | |
 
 Good hunting grounds: Tmall Global's own overseas-brand case studies, JD

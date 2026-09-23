@@ -758,3 +758,199 @@ and Ledger needs one.
 - China honey import volume and price: the only dated numbers found on 2026-09-23 were a Sohu self-media post (January 13, 2026) attributing 华经产业研究院 without naming the underlying statistic, and an 农小蜂 / abeedata report (October 28, 2020) whose latest complete year is 2016 and whose source is the FAO rather than Chinese customs. Neither meets the rules in this file. No honey import figure was claimed. Relevant to 25L, 26L and 29L.
 - A bonded-warehouse remaining-shelf-life gate for general food: the 1/3 and 2/3 thresholds that circulate in freight-forwarder copy had no reachable regulator or platform-documentation source on 2026-09-23. No numeric threshold was claimed for dairy or spreads. The only sourced shelf-life gate is the infant formula three-month rule above.
 - The "1,476 tariff lines" total for the positive list after the 2022 adjustment: quoted in trade coverage but not on the gov.cn announcement page, and the annex PDF was not fetchable. No tariff-line count and no HS code is claimed. Same limit the footwear piece recorded.
+
+## On China teardown research, September 24, 2026
+
+All SEC documents sit under https://www.sec.gov/Archives/edgar/data/1858985/
+(On Holding AG, CIK 0001858985). SEC pages need a User-Agent header to a
+non-browser fetch; the full text was downloaded and searched at both checks.
+
+### On entered China in 2018; China net sales 2019, 2020 and H1 2021
+- Value: entered China 2018; China net sales CHF 1.8 million (2019), CHF 5.5 million (2020, +199%); CHF 8 million in H1 2021. IPO price $24.00 a share. Tmall and JD.com counted inside DTC.
+- As of: prospectus dated September 14, 2021
+- Source: On Holding AG, prospectus (Form 424B4)
+- URL: https://www.sec.gov/Archives/edgar/data/1858985/000119312521275158/d175570d424b4.htm
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: the only China-only revenue On has filed. Every later filing reports Asia-Pacific only. The 424B4 gives both "four" and "six" China mall stores in different sections; do not cite a store count from it.
+
+### On treats Tmall and JD.com as DTC; first owned store opened late 2019 in China; IPO proceeds
+- Value: "Within China, we also consider our distribution through Tmall and JD.com as DTC." First owned store "opened in late 2019 in China, followed by our flagship location in New York City in late 2020." Eight owned China stores in Shanghai, Chengdu, Shenzhen and Beijing. IPO gross proceeds CHF 652.5 million (US$702.2 million), 29,258,125 new shares at $24.00. Subsidiary: On Running Sports Products (Shanghai) Company Ltd.
+- As of: fiscal 2021 (filed 2022-03-18)
+- Source: On Holding AG, Form 20-F for fiscal 2021
+- URL: https://www.sec.gov/Archives/edgar/data/1858985/000185898522000006/onholdingag-20211231.htm
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: the FY2025 20-F instead says the first owned store was in Tokyo in 2022 (APAC excluding China framing). Cite the FY2021/FY2022 wording for the China first store.
+
+### On China stores at end-2022, lockdown closures, Shanghai HQ grant
+- Value: 13 owned stores in China at end-2022; store and warehouse closures from COVID-19 lockdowns for most of Q2 2022; CHF 0.5 million Chinese government grant in Q4 2022 for the APAC headquarters in Shanghai.
+- As of: fiscal 2022 (filed 2023-03-21)
+- Source: On Holding AG, Form 20-F for fiscal 2022
+- URL: https://www.sec.gov/Archives/edgar/data/1858985/000185898523000011/onholdingag-20221231.htm
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: the grant sentence begins mid-sentence in the filing ("In addition, during the fourth quarter 2022 On received..."); quote from "received". Jiemian (2024-03-14) says 12 stores at end-2022; the filing's 13 wins.
+
+### On China stores at end-2023 and end-2024
+- Value: "10 own retail stores outside of China and 22 in China" (end-2023); "30 smaller format mall-based stores in China" (end-2024)
+- As of: fiscal 2023 (filed 2024-03-12) and fiscal 2024 (filed 2025-03-04)
+- Source: On Holding AG, Forms 20-F for fiscal 2023 and fiscal 2024
+- URL: https://www.sec.gov/Archives/edgar/data/1858985/000185898524000012/onholdingag-20231231.htm ; https://www.sec.gov/Archives/edgar/data/1858985/000185898525000003/onholdingag-20241231.htm
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: definitions shift year to year (owned stores; smaller mall-based stores; locations including Hong Kong from FY2025). Label the definition when charting.
+
+### On global footprint end-2025, Asia-Pacific 2025, expansion-cost risk language
+- Value: 67 retail locations, of which "38 locations in China, including Hong Kong"; Asia-Pacific net sales +96.4% to CHF 511.1 million, 17.0% of CHF 3,014.0 million, "primarily driven by strong sales growth in China and Japan across both channels"; risk factor: expansion "especially in the US and Asia-Pacific" brought "higher customs, payroll and other expenses"
+- As of: fiscal 2025 (filed 2026-03-03)
+- Source: On Holding AG, Form 20-F for fiscal 2025
+- URL: https://www.sec.gov/Archives/edgar/data/1858985/000185898526000008/onholdingag-20251231.htm
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: Exhibit 8.1 of the same filing (exhibit81_exhibit81subsidi.htm) lists On Running Sports Products (Shanghai) Company Ltd.
+
+### On full year 2025: SG&A, operating result, net income
+- Value: SG&A +27.0% to CHF 1,516.6 million; net sales +30.0% to CHF 3,014.0 million; operating result +78.2% to CHF 377.0 million; net income -15.9% to CHF 203.7 million
+- As of: full year 2025, release dated March 3, 2026
+- Source: On Holding AG, fourth quarter and full year 2025 results (6-K exhibit 99.1)
+- URL: https://www.sec.gov/Archives/edgar/data/1858985/000185898526000010/ex991pressreleasedatedmarc.htm
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: the net income fall is not tied to store costs (operating result rose 78.2%). Lanjinger (蓝鲸财经) of 04-16 reported the same SG&A and net-profit figures but prints no year on the page; use this release instead.
+
+### On Asia-Pacific Q2 2026
+- Value: Asia-Pacific net sales +43.1% to CHF 170.5 million, 20.0% of net sales; H1 2026 CHF 344.5 million, 20.5%
+- As of: quarter ended June 30, 2026, released August 11, 2026
+- Source: On Holding AG, second quarter 2026 MD&A (6-K exhibit 99.2)
+- URL: https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-exhibit992xmda.htm
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+
+### On long-term target: China 10%+ of net sales
+- Value: long-term targets include "a China share of 10%+" of overall net sales
+- As of: Investor Day release dated October 4, 2023
+- Source: On Holding AG, Investor Day 2023 release
+- URL: https://www.sec.gov/Archives/edgar/data/1858985/000185898523000045/oninvestorday2023-pressrel.htm
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: no later filing says whether the target was reached.
+
+### On China entry model: community first, own plus dealer stores
+- Value: 2018年正式进入中国市场; 率先建立社群; 直营+经销商集合模式; end-2023 22 of 32 global direct stores in China across Shanghai, Beijing, Shenzhen, Guangzhou, Chengdu
+- As of: May 30, 2024
+- Source: Lanjinger (蓝鲸财经), reporter 王涵艺
+- URL: https://www.lanjinger.com/d/232884
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+
+### On first China store, store mix late 2023, COVID-years quote
+- Value: first store 上海浦东嘉里城 (Kerry Parkside, Pudong), December 2019; 44 stores in China, 20 direct and 24 dealer; Li Meina (head of offline business, Greater China) on the three COVID years (蓄力和思考)
+- As of: December 15, 2023
+- Source: Lanxiong Sports (懒熊体育), on NetEase
+- URL: https://c.m.163.com/news/a/IM098E5K052989GA.html
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: Jiemian names 上海嘉里中心 (Jing'an Kerry Centre) instead; three sources say Pudong Kerry Parkside.
+
+### On joined Tmall in Q1 2019; Tmall growth 263% and 125%
+- Value: 2019第一季度入驻天猫; grew 263% and 125% in two consecutive years
+- As of: April 15, 2022
+- Source: Ecommerce Online (电商在线), its own Sohu account
+- URL: https://www.sohu.com/a/538204412_197955
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: the author field on the Sohu page is 电商在线 itself, so this is the publisher's own post. A "Tmall end of 2018" date circulates in search snippets only; not usable.
+
+### On Tmall followers and shoe price band, May 2024
+- Value: Tmall flagship 68万 (680,000) followers; average shoe above 1,000 RMB, upper models above 2,000 RMB
+- As of: May 16, 2024
+- Source: Southern Metropolis Daily (南方都市报), reporter 王欣
+- URL: https://m.mp.oeeee.com/a/BAAFRD000020240516953884.html
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: Sina Finance (2024-08-06, logged above under Allbirds) gives 72万 in August 2024.
+
+### On Double 11 2024 on Tmall: 85% of orders in the 1,000 to 2,000 RMB band
+- Value: On Double 11 sales up more than 40% (四成) year on year; 85% of On orders in the 1000-2000元 band (HOKA 53%), per Tmall data
+- As of: November 11, 2024
+- Source: Jiemian (界面新闻), on Sina Finance
+- URL: https://finance.sina.com.cn/jjxw/2024-11-11/doc-incvskcn0716845.shtml
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+
+### On in China, August 2026: 80+ stores, 100 targeted, never discounts
+- Value: 30多个城市布局超80家门店, 计划到今年底突破百家; co-founder David Allemann: 天猫尤为强劲，尽管我们从不打折; reporter found no On product in Tmall promotions
+- As of: August 12, 2026
+- Source: 21 Finance (21财闻汇), reporter 韩璐, on Sina Finance
+- URL: https://finance.sina.com.cn/wm/2026-08-12/doc-ininaezk5274648.shtml
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: store total includes dealer-run stores. The Allemann line is a Chinese rendering of an English call remark; paraphrase, never put it in English quote marks.
+
+### On store sizes: about 100 sqm three years ago, now 200 to 300 sqm
+- Value: Martin Hoffmann: 三年前开设的店铺可能主要集中在100平方米左右; now 200 or even 300 square meters; about 70 China stores, 30 direct (April 2025)
+- As of: April 19, 2025
+- Source: Huxiu (虎嗅), 柳柳
+- URL: https://www.huxiu.com/article/4252374.html
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+
+### On Shenzhen MixC World flagship, 802 sqm
+- Value: opened March 5, 2026; 802 square meters; On's largest store in China
+- As of: March 6, 2026
+- Source: National Business Daily (每日经济新闻), 毕媛媛
+- URL: https://www.nbd.com.cn/articles/2026-03-06/4282694.html
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+
+### On lookalike SKON: 79 to 199 RMB against 400 to 800 RMB
+- Value: genuine On T-shirt 400～800元; SKON similar items at 79, 99 and 199 RMB
+- As of: June 25, 2025
+- Source: Huxiu (虎嗅), from Lanxiong Sports (懒熊体育)
+- URL: https://m.huxiu.com/article/4503253.html
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+
+### Sports and outdoor category fee data (proprietary)
+- Value: Tmall Global deposit 50,000 RMB / annual fee 60,000 RMB / commission 5% (cash before first sale 110,000 RMB); JD Worldwide 35,500 / 7,100 / 5%; Douyin cross-border deposit 75,000 RMB / no annual fee / 5%
+- As of: September 2026
+- Source: TheChinaPath calculator data (sports rows in src/pages/tools/tmall-global-setup-and-run.astro, jd-worldwide-setup-and-run.astro, douyin-cost-calculator.astro)
+- Label in copy: "TheChinaPath calculator data, September 2026"
+- Verified 1: 2026-09-24 (category arrays read from the three files)
+- Verified 2: 2026-09-24 (re-read before the draft was finished)
+- Used in: how-on-running-entered-china
+- Notes: identical to footwear on Tmall Global and JD Worldwide; Douyin differs (sports 75,000 against footwear 100,000).
+
+### On storefronts observable on the day
+- Value: on.tmall.com 302 to on.world.tmall.com/shop/view_shop.htm, served a captcha (a nonexistent shop domain redirects to store.taobao.com/shop/noshop.htm instead); www.on-running.cn 200, title On昂跑官方商城 (JS-rendered); JD search returned a 京东验证 bot check
+- As of: September 24, 2026
+- Source: direct fetch by the draft run
+- URL: https://on.tmall.com/ ; https://www.on-running.cn/
+- Verified 1: 2026-09-24
+- Verified 2: 2026-09-24
+- Used in: how-on-running-entered-china
+- Notes: no assortment or review count obtainable. Re-check before any Refresh.
+
+### Researched, not used (On, 2026-09-24)
+- Jiemian 11920175 and 11224362 (65 stores incl. 36 dealer-run; 29 direct; Q1 2024 23 stores): no date printed on the Jiemian page; a Sina repost dated 2024-11-01 exists but was not fetched. Ledger rule 1.
+- Legal entity name 昂跑体育用品（上海）有限公司, set up 2018-05-17: only Baike and company-lookup sites. Check the national enterprise credit system before use.
+- 华夏时报 via Sina, 2026-05-15, on tier-1 saturation: attribution to analysts unclear.
+- 21世纪经济报道, 2026-03-30: Martin Hoffmann steps down May 1, 2026; not material to the entry story.
