@@ -98,7 +98,7 @@ and Ledger needs one.
 - Notes: superseded by Decree 280 from June 1, 2026 (next entry). Cite both together.
 
 ### Overseas food producer registration, Decree 280 in force
-- Value: Decree 280 in force from June 1, 2026; list of foods excluded from automatic renewal (meat, bird's nest, others)
+- Value: Decree 280 in force from June 1, 2026; only two categories are excluded from automatic renewal, 肉与肉制品 (meat and meat products) and 燕窝与燕窝制品 (bird's nest and bird's nest products). CORRECTED 2026-09-23: the earlier wording of this entry said "meat, bird's nest, others". The announcement names only those two. Do not write "others".
 - As of: March 2026 (Announcement 2026 No. 27, March 18, 2026)
 - Source: General Administration of Customs Announcement 2026 No. 27 (海关总署公告2026年第27号), on gov.cn
 - URL: https://www.gov.cn/zhengce/zhengceku/202603/content_7063537.htm
@@ -661,3 +661,100 @@ and Ledger needs one.
 - Verified 2: 2026-09-22 (re-read by the 09:19 relaunch: whDeposit 100000, whTaxPrepay 300000, fulfillment 4, shipping 11, returnRate 5, returnHandling 15 confirmed)
 - Used in: double-11-preparation-checklist
 - Notes: MODEL DEFAULTS, not a market rate. Return-drag arithmetic in the piece: a returned order costs 30 RMB (4 + 11 + 15); at a 61.5% return rate, 1,000 orders produce 615 returns and 18,450 RMB spread over 385 kept orders, about 48 RMB each; at the calculator's 5% default it is 1,500 RMB over 950 kept orders, about 1.6 RMB each. An earlier draft printed 15 RMB for the 5% case; that was wrong and was corrected on 2026-09-22.
+
+## Dairy and spreads cost research, September 23, 2026
+
+### Dairy and spreads category fee data and the cash floor it produces
+- Value: Tmall Global deposit 50,000 RMB / annual fee 30,000 RMB / commission 2%; JD Worldwide 35,500 RMB (US$5,000 entry rung) / 7,100 RMB (US$1,000) / 4%; Douyin cross-border 50,000 RMB / no annual fee / 4%. Cash in before the first sale: 80,000 / 42,600 / 50,000 RMB. Cost per kept order on the Tmall Global model at a 5% return rate: 21 RMB on a 128 RMB jar, 25 RMB on a 250 RMB basket, 32 RMB on a 498 RMB case. Breakeven about 1.15m RMB year-one GMV at a 50% gross margin, before media.
+- As of: September 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro category "food", jd-worldwide-setup-and-run.astro category "food", douyin-cost-calculator.astro category "food-packaged")
+- Label in copy: "TheChinaPath calculator data, September 2026"
+- Verified 1: 2026-09-23 (category arrays read directly from the three .astro files)
+- Verified 2: 2026-09-23 (re-read before the draft was finished)
+- Used in: cost-to-sell-dairy-and-spreads-in-china
+- Notes: the 2% Tmall Global commission is the lowest band on the platform and Douyin's 50,000 RMB food deposit is half what apparel and beauty pay, so this triple is NOT a duplicate of the footwear or facial skincare tables (Ledger kill condition checked 2026-09-23, did not fire). KILL-CONDITION WARNING for later weeks: the same Tmall "Packaged food, grain, oil, snacks" triple will be produced by 25L (coffee and specialty food), 26L (bakery and food ingredients) and 29L (packaged food). Check the kill condition on those weeks before drafting. Tea (45L) sits at Tmall 2% / Douyin 2%, close but not identical. Infant formula (50L) is a separate Tmall category. The per-kept-order figures derive from the Tmall Global model's per-order defaults (pick and pack 4 RMB, last mile 11 RMB, return handling 15 RMB, payment 1%) at the three stated baskets, which are ASSUMPTIONS, not sourced AOVs; only the 250 RMB figure is the calculator's own default.
+
+### Dairy and bee products need competent-authority recommendation for GACC registration
+- Value: 乳品 (dairy) and 蜂产品 (bee products, i.e. honey) are among the imported food categories whose overseas producers are registered on the recommendation of the competent authority of the exporting country or region
+- As of: April 2021 (Decree 248 promulgated April 12, 2021, effective January 1, 2022)
+- Source: General Administration of Customs (海关总署), Decree No. 248, Article 7, in the State Council Gazette (国务院公报)
+- URL: https://www.gov.cn/gongbao/content/2021/content_5616161.htm
+- Verified 1: 2026-09-23 (Article 7 fetched, full category list confirmed verbatim)
+- Verified 2: 2026-09-23 (re-fetched in iteration 8, Article 7, both categories and the decree dates confirmed)
+- Used in: cost-to-sell-dairy-and-spreads-in-china
+- Notes: the full Article 7 list is 肉与肉制品、肠衣、水产品、乳品、燕窝与燕窝制品、蜂产品、蛋与蛋制品、食用油脂和油料、包馅面食、食用谷物、谷物制粉工业产品和麦芽、保鲜和脱水蔬菜以及干豆、调味料、坚果与籽类、干果、未烘焙的咖啡豆与可可豆、特殊膳食食品、保健食品. Decree 248 is superseded by Decree 280 from June 1, 2026; pair this with the next entry, which is the version currently in force. This requirement is for GENERAL TRADE. Do not apply it to bonded cross-border, which is covered by 商财发〔2018〕486号.
+
+### Recommended-registration catalogue under Decree 280, dairy and bee products retained
+- Value: the catalogue of imported foods requiring registration on the recommendation of the competent authority now runs 17 categories, 肉与肉制品、肠衣、燕窝与燕窝制品、蜂产品、蛋与蛋制品、食用油脂、包馅面食、食用谷物、谷物制粉和麦芽、脱水蔬菜、调料粉、坚果与籽类、干果、特殊膳食食品、保健食品、乳品、水产品. Unroasted coffee and cocoa beans were removed; oil crops, fresh vegetables and dried beans were narrowed.
+- As of: March 2026 (Announcement 2026 No. 27, March 18, 2026; Decree 280 published October 14, 2025, in force June 1, 2026)
+- Source: General Administration of Customs Announcement 2026 No. 27 (海关总署公告2026年第27号), on gov.cn
+- URL: https://www.gov.cn/zhengce/zhengceku/202603/content_7063537.htm
+- Verified 1: 2026-09-23
+- Verified 2: 2026-09-23 (re-fetched in iteration 8, catalogue and both categories confirmed)
+- Used in: cost-to-sell-dairy-and-spreads-in-china
+- Notes: this is the list in force. Cite it, not Decree 248's Article 7, when writing about the current position; cite Article 7 only for the history or when naming the categories removed. The full annex is a .doc and .pdf download; the category list is on the HTML page itself.
+
+### Chinese label and first-import test report for imported dairy
+- Value: imported prepackaged dairy must carry a Chinese label and Chinese instructions meeting Chinese law and the national food safety standards (Article 14); a first import must supply a test report covering the items listed in the relevant national food safety standard, where "first import" means identical overseas producer, product name, formula, overseas exporter and domestic importer through the same port (Article 11, paragraph 3)
+- As of: originally issued January 24, 2013; amended November 23, 2018
+- Source: Measures for the Inspection, Quarantine and Supervision of Imported and Exported Dairy Products (进出口乳品检验检疫监督管理办法), General Administration of Customs Decree No. 243, on the MOFCOM policy database
+- URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=65699
+- Verified 1: 2026-09-23 (Articles 11 and 14 quoted verbatim)
+- Verified 2: 2026-09-23 (re-fetched in iteration 8; the page shows the decree number as 海关总署令第243号 with the 2013 promulgation and the 2018 amendment, which resolves the earlier caution about 152号 vs 243号)
+- Used in: cost-to-sell-dairy-and-spreads-in-china
+- Notes: this binds under GENERAL TRADE. It does not decide how bonded cross-border stock is labelled. Article 17 also lists what the inspection certificate must carry, including 保质期, but the measure sets NO numeric remaining-shelf-life threshold for ordinary dairy; do not cite it for one.
+
+### Imported dairy health certificate requirement
+- Value: imported dairy must be accompanied by a health certificate issued by the competent government authority of the exporting country or region; overseas producers must be registered with GACC
+- As of: December 2021 (announced December 23, 2021, effective January 1, 2022)
+- Source: General Administration of Customs Announcement 2021 No. 114 (海关总署公告2021年第114号), 关于明确进口乳品检验检疫有关要求的公告
+- URL: https://www.waizi.org.cn/doc/125909.html
+- Verified 1: 2026-09-23
+- Verified 2: 2026-09-23
+- Used in: cost-to-sell-dairy-and-spreads-in-china (health certificate claim, stated in the body without a blockquote because the dairy measure above carries the same requirement from a primary URL)
+- Notes: the URL is a regulatory mirror (郑州威驰), not customs.gov.cn. customs.gov.cn rule pages have been unreachable from this runner since 2026-09-21. Treat as a confirmation. If a customs.gov.cn URL becomes reachable, replace this one.
+
+### GB 7718-2025: eight mandatory allergen classes, including milk and nuts
+- Value: GB 7718-2025 makes eight allergen classes mandatory declarations: 含有麸质的谷物、甲壳纲类动物、鱼类、蛋类、花生、大豆、乳及乳制品（包括乳糖）、坚果及其果仁类制品
+- As of: standard published March 2025, effective March 16, 2027
+- Source: Food Mate Network (食品伙伴网), GB 7718-2025 亮点解读, quoting the standard text
+- URL: https://fsc.foodmate.net/show.php?itemid=712970
+- Verified 1: 2026-09-23 (all eight classes quoted verbatim, lettered a) to h))
+- Verified 2: 2026-09-23
+- Used in: cost-to-sell-dairy-and-spreads-in-china
+- Notes: the Beijing regulator explainer (next entry) names only peanuts and gluten cereals as examples, so it CANNOT be cited for the milk and nuts claim. Use this entry for the list and the Beijing page for the effective date and the claim ban. Sources disagree on whether the standard was published March 16 or March 27, 2025, so the draft states only the effective date. Do not print a publication date for GB 7718-2025 without resolving that first.
+
+### GB 7718-2025 effective date and the ban on zero-added claims
+- Value: effective March 16, 2027 after a two-year transition; 零添加, 不添加 and 不使用 claims are prohibited; production date and expiry date must appear together in a dedicated high-contrast area in year-month-day order
+- As of: May 2026 (explainer page dated May 7, 2026)
+- Source: Beijing Municipal Administration for Market Regulation (北京市市场监督管理局)
+- URL: https://scjgj.beijing.gov.cn/zwxx/scjgdt/202605/t20260507_4639154.html
+- Verified 1: 2026-09-23
+- Verified 2: 2026-09-23
+- Used in: cost-to-sell-dairy-and-spreads-in-china
+- Notes: applies to prepackaged food sold inside China. Relevant to honey, jam and yogurt marketing, which lean on no-added-sugar claims in Europe.
+
+### Infant formula: three-month remaining shelf life at declaration, no domestic relabelling
+- Value: imported infant formula whose declaration date is less than three months before the end of its shelf life may not be imported; the Chinese label must be printed directly on the smallest sales pack before entry and may not be stuck on inside China
+- As of: August 2023
+- Source: People's Daily Overseas Edition (人民日报海外版), 海关答疑 column
+- URL: http://paper.people.com.cn/rmrbhwb/html/2023-08/19/content_26012168.htm
+- Verified 1: 2026-09-23 (both sentences quoted verbatim)
+- Verified 2: 2026-09-23
+- Used in: cost-to-sell-dairy-and-spreads-in-china (boundary marker only, stated in the body without a blockquote)
+- Notes: applies to 婴幼儿配方乳粉 specifically. Do NOT generalise the three-month rule to butter, yogurt, cheese or honey. This is the anchor figure for brief 50L (cost to sell infant formula, week 50); find the underlying customs rule before that piece cites it as the primary source.
+
+### China dairy imports 2025, and the average price of imported packaged milk
+- Value: 2,657,400 tonnes of dairy imported in 2025, up 1.6%, worth US$12.78bn, up 13.8%. Packaged milk 371,600 tonnes, down 10.8%, worth US$389m, down 5.8%, at an average US$1,046 a tonne, up 5.5%.
+- As of: full year 2025
+- Source: Dairy Online (乳业在线), 2025年中国乳制品进出口统计, from the January 2026 Dairy Economy Observer report (奶业经济观察2026年1月分析报告) on China Customs statistics (中国海关统计)
+- URL: https://www.dairyonline.cn/13031.html
+- Verified 1: 2026-09-23
+- Verified 2: 2026-09-23 (both sentences re-quoted verbatim)
+- Used in: cost-to-sell-dairy-and-spreads-in-china
+- Notes: the article's own date line shows only "4月2日" without a year, which is why the citation in the draft is anchored to the January 2026 report rather than to the page date. US$1,046 a tonne is about 7.4 RMB a litre at 7.1 FX, which is the comparison the draft uses against the 15 RMB per-parcel cost.
+
+### NOT SOURCED, do not research again from these dead ends
+- China honey import volume and price: the only dated numbers found on 2026-09-23 were a Sohu self-media post (January 13, 2026) attributing 华经产业研究院 without naming the underlying statistic, and an 农小蜂 / abeedata report (October 28, 2020) whose latest complete year is 2016 and whose source is the FAO rather than Chinese customs. Neither meets the rules in this file. No honey import figure was claimed. Relevant to 25L, 26L and 29L.
+- A bonded-warehouse remaining-shelf-life gate for general food: the 1/3 and 2/3 thresholds that circulate in freight-forwarder copy had no reachable regulator or platform-documentation source on 2026-09-23. No numeric threshold was claimed for dairy or spreads. The only sourced shelf-life gate is the infant formula three-month rule above.
+- The "1,476 tariff lines" total for the positive list after the 2022 adjustment: quoted in trade coverage but not on the gov.cn announcement page, and the annex PDF was not fetchable. No tariff-line count and no HS code is claimed. Same limit the footwear piece recorded.

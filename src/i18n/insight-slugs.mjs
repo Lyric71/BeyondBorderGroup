@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'cost-to-sell-dairy-and-spreads-in-china': 'ce-que-coute-vendre-des-produits-laitiers-et-tartinables-en-chine',
   'double-11-preparation-checklist': 'double-11-retroplanning-50-jours',
   'cost-to-sell-facial-skincare-in-china': 'ce-que-coute-vendre-des-soins-du-visage-en-chine',
   'china-livestream-cost-for-brands': 'ce-que-coute-un-studio-live-en-chine',
@@ -144,6 +145,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'cost-to-sell-dairy-and-spreads-in-china': 'was-milchprodukte-und-aufstriche-verkaufen-in-china-kostet',
   'double-11-preparation-checklist': 'double-11-checkliste-50-tage-vorher',
   'cost-to-sell-facial-skincare-in-china': 'was-gesichtspflege-verkaufen-in-china-kostet',
   'china-livestream-cost-for-brands': 'was-ein-livestream-studio-in-china-kostet',
@@ -279,6 +281,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'cost-to-sell-dairy-and-spreads-in-china': 'lo-que-cuesta-vender-lacteos-y-untables-en-china',
   'double-11-preparation-checklist': 'double-11-cuenta-atras-50-dias',
   'cost-to-sell-facial-skincare-in-china': 'lo-que-cuesta-vender-cuidado-facial-en-china',
   'china-livestream-cost-for-brands': 'lo-que-cuesta-un-estudio-de-directos-en-china',
