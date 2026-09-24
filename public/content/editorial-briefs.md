@@ -55,7 +55,9 @@ Internal link targets available:
 /tools/tmall-global-setup-and-run
 /tools/jd-worldwide-setup-and-run
 /tools/douyin-cost-calculator
-/compass  /compass/shortlist  /compass/how-it-works
+/compass  /compass/shortlist  /insights/finding-a-partner
+/compass/find-a-distributor-in-china  /compass/find-a-tmall-partner-in-china
+/compass/find-a-douyin-partner-in-china
 /enter-china/market-entry-consulting  /enter-china/distribution
 /enter-china/cross-border-setup  /enter-china/branding-localisation
 /grow-in-china/cross-border-ecommerce  /grow-in-china/social-commerce
@@ -496,7 +498,7 @@ Block 3 carries this one and nothing else comes close. Pet food entering China i
 5. The three answers that end a conversation
 6. What a vetted shortlist actually looks like
 
-**Internal links.** `/compass`, `/compass/how-it-works`, `/enter-china/distribution`, `/work`
+**Internal links.** `/compass`, `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/work`
 **CTA.** Compass shortlist.
 
 ---
@@ -1139,7 +1141,7 @@ Block 3 carries this by a distance, because consumer electronics stacks three se
 6. Termination, and the stock sitting in their warehouse on day one after
 7. How to run the negotiation without losing the relationship
 
-**Internal links.** /enter-china/distribution, /compass, /compass/how-it-works, /enter-china/market-entry-consulting, /compass/shortlist
+**Internal links.** /enter-china/distribution, /compass, /compass/find-a-distributor-in-china, /enter-china/market-entry-consulting, /compass/shortlist
 **CTA.** Request a Compass shortlist before you sign anything exclusive.
 **Do not.** Do not give legal advice or draft clause language. The piece explains what each clause does commercially and tells the reader to have a China-qualified lawyer draft and review, and it says so in the first section rather than in a footer disclaimer. Do not treat the distributor as an adversary throughout; the honest position is that a well-drafted agreement protects both sides and a one-sided one gets ignored in practice.
 
@@ -1639,7 +1641,7 @@ Blocks 3 and 4 split this one. Hair care looks like a single category but splits
 7. Termination: stock, trademarks, and the exit you write on day one
 8. The twelve questions, in order, with the answers to walk away from
 
-**Internal links.** /compass, /compass/how-it-works, /compass/shortlist, /enter-china/distribution, /enter-china/market-entry-consulting
+**Internal links.** /compass, /compass/find-a-distributor-in-china, /compass/shortlist, /enter-china/distribution, /enter-china/market-entry-consulting
 **CTA.** Download the twelve-question sheet, then build a shortlist in Compass filtered by the coverage you actually need.
 **Do not.** Do not write generic partner-selection advice that would apply in any market. Every question must be China-specific, and the ecommerce rights and licence-holding questions carry the piece. Do not name or characterise real distributors.
 
@@ -1875,7 +1877,7 @@ Block 3 and block 5 carry this. Spirits differ from wine on two axes that change
 6. What a foreign supplier can and cannot do without a China legal entity
 7. A twelve-month build for an industrial brand with no China presence
 
-**Internal links.** /compass, /enter-china/distribution, /enter-china/market-entry-consulting, /compass/how-it-works, /work
+**Internal links.** /compass, /enter-china/distribution, /enter-china/market-entry-consulting, /compass/find-a-distributor-in-china, /work
 **CTA.** Request a Compass shortlist of vetted industrial distributors.
 **Do not.** Do not import consumer marketplace logic; a page that recommends Tmall to a valve manufacturer is a failed page. Do not assert what a foreign company may do without a China entity, including invoicing, hiring and contracting; frame every one of those as a point the writer verifies with a named source and cites.
 **Territory guard.** Baidu visibility and the Chinese-language website build are named as dependencies and handed to ChinaWebFoundry with one link each. This page does not explain Baidu SEO, ICP filing or hosting.
@@ -1952,7 +1954,7 @@ Block 3 carries this, and the trap is that foreign brands assume tea is cultural
 6. Customs recordal and platform brand registration: the two steps that only matter later, until they matter urgently
 7. What to file this month if you are entering China next year
 
-**Internal links.** /enter-china/market-entry-consulting, /enter-china/branding-localisation, /enter-china/distribution, /compass/how-it-works, /insights
+**Internal links.** /enter-china/market-entry-consulting, /enter-china/branding-localisation, /enter-china/distribution, /compass/find-a-distributor-in-china, /insights
 **CTA.** Talk to us about your entry sequence before the first distributor conversation.
 **Do not.** Do not write legal advice or state the outcome of an opposition or invalidation process; every procedural claim, class structure, filing fee, examination timeline and appeal route is a verify-and-cite instruction to the writer, sourced to the Chinese trademark authority or an equivalent primary source, with an access date. Do not compete with the law firms on procedural depth; the sequencing and the cost of lateness is the ground where this page wins.
 
@@ -2338,3 +2340,1048 @@ KILL CONDITION: if the only change would be the year in the title, do
 not ship it. Pick the next item in the queue. Re-dating without
 substantive change teaches Google to ignore dates on this domain.
 ```
+
+---
+
+# Part 5: the partner queue (Finding a partner)
+
+Fifty pieces on choosing, checking, contracting and managing a China partner
+(distributor, importer, Tmall Partner, Douyin Partner). Plan and research:
+`editorial/plans/finding-a-partner-50.md`. P01 to P15 are drafted ahead and
+publish one per weekday from September 30 to October 20, 2026. P16 to P50
+publish every other day, weekends included, from October 22 to December
+29, 2026. The daily partner run (scripts/run-daily.ps1 -Mode partner)
+drafts each one up to two days ahead.
+
+Rules for every P piece, on top of Part 0:
+
+- **Tags.** Frontmatter `tags` carries `Finding a partner` plus every topic tag
+  the brief lists (`Distributors`, `Tmall Partners`, `Douyin Partners`,
+  `Contracts`, `Due diligence`, `Managing a partner`). They drive the hub at
+  `/insights/finding-a-partner` and its filter chips.
+- **Links.** Up to the guide the brief serves, to `/compass`, and across to one
+  other published P piece when one exists. CTA: the Compass shortlist.
+- **Never cite a competitor.** No agency, consultancy or matchmaker that sells
+  China market entry, partner search or store operations: Shanghai Jungle,
+  AppInChina, GMA / Marketing to China and its sister domains, Asia Pro
+  Distribution, Daxue Consulting, China Briefing / Dezan Shira, WalktheChat,
+  TMO Group, GourmetPro, China Skinny, Up2China, Web2Asia, Azoya, ChoZan,
+  Lotus, any Chinese 代运营 agency blog (da-mai, xinshawn and the like), and any
+  搜狐号 or 知乎 post written by an agency. Such pages may point you to a
+  primary source; cite the primary source or nothing. Name no competitor in
+  the copy either.
+- **Cite, in this order:** the platform's own rules (tmall.hk, jinritemai,
+  open.alitrip), regulators and courts (NMPA, GACC, SAMR, MOF, court.gov.cn,
+  spp.gov.cn, npc.gov.cn), listed-company filings (cninfo, szse, sse, HKEX,
+  SEC), dated Chinese news media (36氪, 界面, 虎嗅, 21世纪经济报道, 第一财经,
+  财新, 新浪财经, 东方财富, 澎湃), then English news (Reuters, WWD, BoF).
+  Figures marked "lead" below still need the primary source before use.
+- **Proprietary number.** A Compass figure from
+  `sources/compass-stats.md` when it exists. Until then, TheChinaPath
+  calculator data or a published case page, per CLAUDE.md, and the log says
+  a Compass figure was unavailable. Never invent one.
+- **Body length by type.** Anchor 1,600 to 2,400 words. Explainer 1,300 to
+  1,800. Case note 1,000 to 1,300. Asset: the article 1,000 to 1,400 plus the
+  printable at `output/guides/<slug>.md`.
+
+## Template: PARTNER
+
+```
+SLOT: Partner piece (Finding a partner cluster), weekday per schedule.csv
+BRIEF: briefs/YYYY-MM-DD-<slug>.md
+
+Every partner piece must carry:
+1. A title that is the query a buyer types, or its answer.
+2. The answer inside the first 60 words.
+3. One real table with real figures, in a scrollable container.
+4. At least one number only this agency can publish, labelled as such
+   (Compass figure, else calculator or case data, per the brief).
+5. Byline TheChinaPath, published date and updated date.
+6. Links: the guide it serves, /compass, and one other published
+   partner piece when one exists. One CTA: the Compass shortlist.
+7. Tags: "Finding a partner" plus the topic tags in the brief.
+8. No competitor cited or named. Chinese primary sources first.
+
+KILL CONDITION: none. Partner pieces always ship. If a proprietary
+figure is missing, use the fallback and log it.
+```
+
+## The partner queue
+
+| ID | Publish | Title | Query | Tags | Type | Serves | Words |
+|---|---|---|---|---|---|---|---|
+| P01 | 2026-09-30 | Where to meet China distributors this season | china trade fairs find distributor | Distributors | Explainer | distributor | 1,300 to 1,800 |
+| P02 | 2026-10-01 | Changing your cosmetics responsible person in China got easier | change domestic responsible person china cosmetics | Distributors, Contracts | Case note | distributor | 1,000 to 1,300 |
+| P03 | 2026-10-02 | How to read a Chinese company report before you sign | verify chinese company qichacha | Due diligence, Distributors | Anchor + Asset | distributor | 1,600 to 2,400 |
+| P04 | 2026-10-05 | What a Douyin Partner costs: retainers, commission and creators | douyin agency cost | Douyin Partners | Anchor | dp | 1,600 to 2,400 |
+| P05 | 2026-10-06 | Who owns your Tmall store, Douyin shop and customer data | tmall partner store ownership | Tmall Partners, Douyin Partners, Contracts | Anchor | tp, dp | 1,600 to 2,400 |
+| P06 | 2026-10-07 | Tmall and Douyin partner ratings: what the stars mean | tmall partner rating douyin service provider | Due diligence, Tmall Partners, Douyin Partners | Explainer | tp, dp | 1,300 to 1,800 |
+| P07 | 2026-10-08 | Service TP or buy-out TP: who sets your price | tmall partner agency vs distributor model | Tmall Partners | Explainer | tp | 1,300 to 1,800 |
+| P08 | 2026-10-09 | The Tmall Partner contract: the clauses that decide your exit | tmall partner contract terms | Tmall Partners, Contracts | Anchor | tp | 1,600 to 2,400 |
+| P09 | 2026-10-12 | From ex-works to shelf: how a China price ladder is built | china distributor margin imported product price | Distributors | Anchor | distributor | 1,600 to 2,400 |
+| P10 | 2026-10-13 | Payment terms with a Chinese distributor | payment terms chinese distributor | Distributors, Contracts | Explainer | distributor | 1,300 to 1,800 |
+| P11 | 2026-10-14 | Sell-in is not sell-out: spotting stock pushing in China | sell in vs sell out china distributor | Managing a partner, Distributors | Anchor | distributor | 1,600 to 2,400 |
+| P12 | 2026-10-15 | Grey-market diversion in China: the clause that paid RMB 6m | china distributor price control parallel | Contracts, Distributors | Case note | distributor | 1,000 to 1,300 |
+| P13 | 2026-10-16 | When your China agency fakes orders, the brand pays | tmall agency fake orders brand liability | Due diligence, Tmall Partners, Douyin Partners | Case note | tp, dp | 1,000 to 1,300 |
+| P14 | 2026-10-19 | Douyin return rates by category, and what they cost you | douyin return rate | Douyin Partners | Explainer | dp | 1,300 to 1,800 |
+| P15 | 2026-10-20 | How to replace a China distributor without losing the shelf | replace distributor china | Managing a partner, Distributors, Contracts | Anchor | distributor | 1,600 to 2,400 |
+| P16 | 2026-10-22 | TP, DP or distributor: who to hire first in China | tmall partner vs distributor china | Distributors, Tmall Partners, Douyin Partners | Anchor | distributor, tp, dp | 1,600 to 2,400 |
+| P17 | 2026-10-24 | Douyin's dual verification: what it changes for your partner | douyin cross border brand verification | Douyin Partners | Explainer | dp | 1,300 to 1,800 |
+| P18 | 2026-11-03 | State-owned or private importer: which one to sign | china importer state owned private | Distributors | Explainer | distributor | 1,300 to 1,800 |
+| P19 | 2026-10-26 | Can one agency run your Tmall store and Douyin shop? | tmall partner douyin partner same agency | Tmall Partners, Douyin Partners | Explainer | tp, dp | 1,300 to 1,800 |
+| P20 | 2026-10-28 | Exclusivity in China: what to give, and what to keep | china distributor exclusivity | Contracts, Distributors | Anchor | distributor | 1,600 to 2,400 |
+| P21 | 2026-10-30 | Importer, distributor or TP: who you need for Tmall Global | tmall global importer of record | Distributors, Tmall Partners | Explainer | tp, distributor | 1,300 to 1,800 |
+| P22 | 2026-11-23 | Choosing a pet food partner after China's 10% tariff | pet food distributor china | Distributors | Explainer | distributor | 1,300 to 1,800 |
+| P23 | 2026-11-15 | The Double 11 review to run with your China partner | double 11 agency review | Managing a partner | Asset | tp, dp | 1,000 to 1,400 |
+| P24 | 2026-11-17 | Your distributor registered your trademark: the way back | distributor registered my trademark china | Contracts, Distributors | Case note | distributor | 1,000 to 1,300 |
+| P25 | 2026-12-09 | Choosing a supplements partner: blue hat or cross-border | supplements distributor china | Distributors, Tmall Partners | Explainer | distributor, tp | 1,300 to 1,800 |
+| P26 | 2026-11-19 | The first 90 days with a new Tmall Partner | tmall partner onboarding | Managing a partner, Tmall Partners | Explainer | tp | 1,300 to 1,800 |
+| P27 | 2026-11-21 | Supermarket fees in China: listing, barcode and end-caps | china supermarket listing fee | Distributors | Anchor | distributor | 1,600 to 2,400 |
+| P28 | 2026-11-29 | Why brands leave Tmall Global, and what it says | brands leaving tmall global | Tmall Partners | Explainer | tp | 1,300 to 1,800 |
+| P29 | 2026-11-13 | Regional or national distributor: how coverage works | regional distributor china | Distributors | Explainer | distributor | 1,300 to 1,800 |
+| P30 | 2026-12-03 | When to take eCommerce back from your Tmall Partner | take ecommerce in house china | Managing a partner, Tmall Partners | Explainer | tp | 1,300 to 1,800 |
+| P31 | 2026-12-01 | What a listed Tmall Partner earns, and why it matters | baozun business model | Tmall Partners | Explainer | tp | 1,300 to 1,800 |
+| P32 | 2026-12-11 | Choosing a China partner for a beauty brand | cosmetics distributor china | Distributors, Tmall Partners, Douyin Partners | Anchor | distributor, tp, dp | 1,600 to 2,400 |
+| P33 | 2026-11-05 | Choosing a food and drink importer in China | food importer china | Distributors | Anchor | distributor | 1,600 to 2,400 |
+| P34 | 2026-11-27 | Selling to JD self-run and Hema through a distributor | jd self operated supplier foreign brand | Distributors | Explainer | distributor | 1,300 to 1,800 |
+| P35 | 2026-11-09 | What Douyin creator commission really costs a brand | douyin affiliate commission brand | Douyin Partners | Explainer | dp | 1,300 to 1,800 |
+| P36 | 2026-11-01 | Red flags in a Tmall or Douyin agency proposal | tmall agency proposal red flags | Due diligence, Tmall Partners, Douyin Partners | Explainer | tp, dp | 1,300 to 1,800 |
+| P37 | 2026-12-13 | Choosing a mother and baby partner in China | baby products distributor china | Distributors, Tmall Partners | Explainer | distributor, tp | 1,300 to 1,800 |
+| P38 | 2026-12-07 | China eCommerce agency scams, and the checks that stop them | china ecommerce agency scam | Due diligence | Case note | tp, dp | 1,000 to 1,300 |
+| P39 | 2026-12-05 | The authorization letter: your lever over Tmall resellers | tmall brand authorization letter | Contracts, Tmall Partners | Explainer | tp | 1,300 to 1,800 |
+| P40 | 2026-11-07 | Chinese-language contracts: chops, language, arbitration | china distribution contract chinese language arbitration | Contracts | Explainer | distributor, tp, dp | 1,300 to 1,800 |
+| P41 | 2026-11-25 | First orders, minimums and consignment in China | minimum order chinese distributor | Distributors, Contracts | Explainer | distributor | 1,300 to 1,800 |
+| P42 | 2026-12-17 | A China distributor scorecard beyond the sales target | china distributor kpi | Managing a partner, Distributors | Asset | distributor | 1,000 to 1,400 |
+| P43 | 2026-12-15 | Hong Kong as a base for selling into mainland China | hong kong distributor china mainland | Distributors | Explainer | distributor | 1,300 to 1,800 |
+| P44 | 2026-12-19 | The monthly report to demand from your China partner | distributor sell out report template | Managing a partner | Asset | distributor, tp, dp | 1,000 to 1,400 |
+| P45 | 2026-12-21 | How to brief a China partner search | china distributor search brief | Due diligence | Asset | distributor, tp, dp | 1,000 to 1,400 |
+| P46 | 2026-11-11 | Livestream agency or Douyin Partner: who does what | douyin livestream agency vs dp | Douyin Partners | Explainer | dp | 1,300 to 1,800 |
+| P47 | 2026-12-27 | China distributor red flags from the Compass files | china distributor red flags | Due diligence, Distributors | Anchor | distributor | 1,600 to 2,400 |
+| P48 | 2026-12-23 | Switching Tmall Partners: the handover checklist | switch tmall partner | Managing a partner, Tmall Partners | Asset | tp | 1,000 to 1,400 |
+| P49 | 2026-12-25 | China partner glossary: 40 terms from 代运营 to 窜货 | china ecommerce partner glossary | Due diligence | Asset | distributor, tp, dp | 1,000 to 1,400 |
+| P50 | 2026-12-29 | What fifteen years of partner meetings say about success | china distribution partner success | Managing a partner | Anchor + Report | distributor, tp, dp | 1,600 to 2,400 |
+
+Guide paths for "Serves": distributor `/compass/find-a-distributor-in-china`,
+tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-in-china`.
+
+## P01 · PARTNER · EXPLAINER
+
+**Title:** Where to meet China distributors this season
+**Query:** china trade fairs find distributor · **Tags:** Distributors
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** The fairs that put a foreign brand in front of working Chinese distributors are the China Food and Drinks Fair (autumn in Nanjing, spring in Chengdu), CIIE and FHC in Shanghai for importers, CBE for beauty and SIAL China for food. Go with a shortlist of stands, not a bag of business cards.
+
+**The table it must carry.** Fair, city and 2026/2027 dates, who walks the floor (distributors, importers, retail buyers), categories it suits, what to book before you fly. Dates from the organisers' own sites, re-checked on the day of drafting.
+
+**The proprietary number.** Compass: share of partners on file first met at a fair vs through referral. Fallback: none from the calculators applies, so log the gap and use a published case page only if one fits.
+
+**Outline.**
+1. Why a fair is a filter, not a search
+2. The table
+3. Who is actually on the stand, and who you need to meet
+4. Booking meetings in advance (WeChat, the organiser's matchmaking desk)
+5. What to bring: price list in RMB, registration status, a one-page brand sheet in Chinese
+6. After the fair: the check that separates a buyer from a trader
+
+**Leads (verify, cite primary).** 糖酒会 official site tjhui.cn (115th autumn fair, Nanjing, Oct 15 to 17, 2026); ciie.org (Nov 5 to 10, 2026); FHC and ProWine Shanghai (Nov 10 to 12, 2026); CBE China Beauty Expo (May 12 to 14, 2027); SIAL China (May 18 to 20, 2027); Canton Fair phase 3 (Oct 31 to Nov 4, 2026).
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/compass`, `/enter-china/distribution`
+**CTA.** Compass shortlist.
+
+## P02 · PARTNER · CASE NOTE
+
+**Title:** Changing your cosmetics responsible person in China got easier
+**Query:** change domestic responsible person china cosmetics · **Tags:** Distributors, Contracts
+**Word count:** 1,000 to 1,300
+
+**The answer, in one line.** Until July 2026 a cosmetics brand that wanted a new domestic responsible person (境内责任人) needed its old partner's signature or a court ruling. NMPA Announcement No. 70 of 2026 removed the consent requirement, so an exiting distributor can no longer hold a brand's registrations hostage.
+
+**The table it must carry.** Before and after: what the brand files, whose consent, typical timing, what the old partner can still block.
+
+**The proprietary number.** Compass: share of beauty partners on file that hold responsible-person filings for the brands they carry. Fallback: log the gap.
+
+**Outline.**
+1. What the responsible person does and why a distributor often holds the role
+2. The old rule (化妆品注册备案资料管理规定, Art. 48) and how it trapped brands
+3. What Announcement 70 changes, from the NMPA text
+4. The table
+5. What to put in the next distribution contract anyway
+6. Where this fits in a partner switch
+
+**Leads (verify, cite primary).** NMPA Announcement No. 70 of 2026, July 29, 2026 (nmpa.gov.cn); 化妆品注册备案资料管理规定 Art. 48. Consultancy summaries may point to the text; cite the NMPA page.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/compass`, `/enter-china/cross-border-setup`
+**CTA.** Compass shortlist.
+
+## P03 · PARTNER · ANCHOR + ASSET
+
+**Title:** How to read a Chinese company report before you sign
+**Query:** verify chinese company qichacha · **Tags:** Due diligence, Distributors
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** Pull the partner's record from the national credit system (GSXT) and one commercial database (Qichacha or Tianyancha), then read eight fields: registration date, registered and paid-in capital, business scope, shareholders, branches, court judgments, the dishonest-debtor list and administrative penalties. Most bad candidates fail here, before a call.
+
+**The table it must carry.** Field, where to find it, what a real distributor's record shows, what should stop you.
+
+**The proprietary number.** Compass: share of candidates dropped at the licence and record check. Fallback: log the gap.
+
+**Asset.** `output/guides/<slug>.md`: a one-page printable field checklist with the eight fields and a pass/stop column.
+
+**Outline.**
+1. The two registries and what each is good for
+2. Reading the licence: scope (经营范围), capital, age
+3. Reading the record: 裁判文书, 失信被执行人, 行政处罚
+4. The table
+5. What the report cannot tell you, and the call that covers it
+6. The printable checklist
+
+**Leads (verify, cite primary).** gsxt.gov.cn field definitions; the Supreme People's Court dishonest-debtor list (zxgk.court.gov.cn); 裁判文书网.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/compass`, `/insights/find-distributor-china-verify` (when 07A is live)
+**CTA.** Compass shortlist.
+
+## P04 · PARTNER · ANCHOR
+
+**Title:** What a Douyin Partner costs: retainers, commission and creators
+**Query:** douyin agency cost · **Tags:** Douyin Partners
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** Most Douyin Partners charge a monthly retainer plus a commission on GMV, and the brand funds Qianchuan ads and creator commission on top. Price the whole stack at a stated GMV before comparing quotes, because commission ladders move the total more than the retainer does.
+
+**The table it must carry.** Cost line (retainer, GMV commission, creator commission, slot fees, Qianchuan, co-fund), how it is charged, a typical range with source, what to watch. Then one worked year at a stated GMV.
+
+**The proprietary number.** TheChinaPath Douyin calculator data (retainer tiers, commission, cost per kept order).
+
+**Outline.**
+1. The fee models in use (base plus commission, commission only, tiered ladders)
+2. The table
+3. A worked year at a stated GMV
+4. Commission on gross or on net of returns
+5. What the retainer should buy (live hours, videos, service)
+6. How to compare three quotes on one page
+
+**Leads (verify, cite primary).** Douyin 精选联盟 commission rules (jinritemai); 纯佣 commission settings (5% to 80%, platform rule); a tiered ladder reported by IT之家 (ithome.com/0/943/132.htm, lead); settlement T+7 or T+15 (platform rules).
+
+**Internal links.** `/compass/find-a-douyin-partner-in-china`, `/tools/douyin-cost-calculator`, `/compass`
+**CTA.** Compass shortlist.
+
+## P05 · PARTNER · ANCHOR
+
+**Title:** Who owns your Tmall store, Douyin shop and customer data
+**Query:** tmall partner store ownership · **Tags:** Tmall Partners, Douyin Partners, Contracts
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** The store belongs to whoever's company opened it, and courts read the registration, not the handshake. Open the Tmall store and the Douyin shop in your own entity, keep the ad accounts and the brand authorization in your name, and write the data handover into the contract before you sign.
+
+**The table it must carry.** Asset (store, Douyin shop, Qianchuan account, Alimama account, brand authorization, 生意参谋 data, content, customer service records), who should hold it, what happens at exit if the partner holds it.
+
+**The proprietary number.** Compass: share of TPs on file that open stores in the brand's own entity. Fallback: log the gap.
+
+**Outline.**
+1. The case: a Hunan court, a Douyin shop on the operator's licence, a brand with no claim
+2. The authorization chain on Tmall (flagship, specialty, multi-brand store)
+3. The table
+4. Sub-accounts and data access, and when to revoke them
+5. Contract lines that settle ownership
+6. What to do if your store already sits in someone else's name
+
+**Leads (verify, cite primary).** Taojiang County court case reported by 华声在线 (m.voc.com.cn/xhn/news/202504/28496327.html); Tmall store-type authorization rules (flagship 独占授权, specialty, multi-brand).
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass/find-a-douyin-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P06 · PARTNER · EXPLAINER
+
+**Title:** Tmall and Douyin partner ratings: what the stars mean
+**Query:** tmall partner rating douyin service provider · **Tags:** Due diligence, Tmall Partners, Douyin Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Tmall Global scores its partners quarterly out of 12 points and grades them three to five stars; Douyin grades rated providers Diamond, Gold or Silver. The badge tells you scale and platform standing. It says nothing about your category, so use it to build a long list and nothing more.
+
+**The table it must carry.** Platform, rating scale, how it is scored and how often, what a top rating gets the partner, what it does not tell you.
+
+**The proprietary number.** Compass: rating mix of TPs and DPs on file. Fallback: log the gap.
+
+**Outline.**
+1. Why platforms rate partners at all
+2. Tmall Global TP stars (12-point score, quarterly; only 4 and 5 stars meet brands at recruitment events)
+3. Domestic Tmall's v-partner list
+4. Douyin Diamond, Gold, Silver
+5. The table
+6. How to check a claimed rating yourself
+
+**Leads (verify, cite primary).** tmall.hk/wow/import/act/tpgrowth (official); v-partner list, 腾讯新闻 Dec 27, 2024 (news.qq.com/rain/a/20241227A067I400); Douyin H2 2023 ratings (news.qq.com/rain/a/20230915A02JQI00); 1,500 registered and 350 rated providers (网易 Jan 7, 2026, c.m.163.com/news/a/KIM90VO8055684L8.html).
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass/find-a-douyin-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P07 · PARTNER · EXPLAINER
+
+**Title:** Service TP or buy-out TP: who sets your price
+**Query:** tmall partner agency vs distributor model · **Tags:** Tmall Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** A service TP (代运营) runs your store for a fee and commission while you own the stock and set the price. A buy-out TP (经销) buys your stock, books the sales and sets the price. Pick the model for the control you need, then pick the partner.
+
+**The table it must carry.** Service vs buy-out vs consignment: who owns stock, who sets price, who holds the store, cash needed, what goes wrong.
+
+**The proprietary number.** Compass: model split of TPs on file. Fallback: TheChinaPath Tmall Global calculator data for the service-model cost line.
+
+**Outline.**
+1. The two categories in Tmall Global's own TP program
+2. The table
+3. Price control under each model
+4. Cash and inventory risk
+5. When each one fits
+6. Switching models later
+
+**Leads (verify, cite primary).** Tmall Global TP categories 经销类 and 代运营 (Feb 2021 program notice; 网易 lead 163.com/dy/article/G27NTF4N053814UB.html); listed TPs' disclosure of distribution vs service revenue (Baozun, Ruoyuchen annual reports).
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/tools/tmall-global-setup-and-run`, `/compass`
+**CTA.** Compass shortlist.
+
+## P08 · PARTNER · ANCHOR
+
+**Title:** The Tmall Partner contract: the clauses that decide your exit
+**Query:** tmall partner contract terms · **Tags:** Tmall Partners, Contracts
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** Seven clauses decide whether you can leave a Tmall Partner cleanly: store ownership, account and data handover, notice and transition period, KPIs that allow termination, the commission base, ad-spend control and a no-sabotage clause with a penalty. Settle them at signing; nobody negotiates them well at exit.
+
+**The table it must carry.** Clause, what to write, what goes wrong without it (with the case or rule behind it).
+
+**The proprietary number.** TheChinaPath Tmall Global calculator data (default retainer and commission) to price a transition month. Compass figure if available.
+
+**Outline.**
+1. The case: a TP deletes three best-selling links on its last day (Chongqing)
+2. The table
+3. Sub-accounts and 生意参谋 access: revocation dates
+4. KPIs that let you leave, and KPI refunds courts have ordered
+5. The commission base (gross, net, after returns)
+6. A transition calendar that avoids Double 11 and 618
+
+**Leads (verify, cite primary).** Chongqing No. 5 Intermediate Court judgment reported by 泰和泰 (tahota.com, lead; find the judgment on 裁判文书网); exit data practices (新浪 k.sina.cn/article_8424942191_1f62a6a6f00101hrvu.html, lead).
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/tools/tmall-global-setup-and-run`, `/compass`
+**CTA.** Compass shortlist.
+
+## P09 · PARTNER · ANCHOR
+
+**Title:** From ex-works to shelf: how a China price ladder is built
+**Query:** china distributor margin imported product price · **Tags:** Distributors
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** An imported product's shelf price in China stacks freight, duty, VAT, the importer's margin, the distributor's margin and the retailer's margin on top of your ex-works price. Build the ladder backwards from the shelf price shoppers accept before you quote anyone.
+
+**The table it must carry.** A worked ladder for one general-trade product: each step, the rate, the source, the running price. Then the same product through cross-border (9610/1210) for comparison.
+
+**The proprietary number.** TheChinaPath calculator data (duty and VAT paths, cross-border tax).
+
+**Outline.**
+1. Why the ladder starts at the shelf
+2. Duty and VAT (MOF schedule; 13% and 9% VAT bands)
+3. The table
+4. Where margins sit and why layers multiply
+5. The cross-border comparison
+6. What to cut, and what never to cut
+
+**Leads (verify, cite primary).** 财政部关税司 tariff schedule; VAT rates (State Taxation Administration); cross-border comprehensive tax rules; layered distribution markups (新浪财经 2013, history only).
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/tools/tmall-global-setup-and-run`, `/insights/china-distributor-vs-own-store`, `/compass`
+**CTA.** Compass shortlist.
+
+## P10 · PARTNER · EXPLAINER
+
+**Title:** Payment terms with a Chinese distributor
+**Query:** payment terms chinese distributor · **Tags:** Distributors, Contracts
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Ask for prepayment or a confirmed letter of credit on the first orders, move to open terms only after a payment track record, and insure the receivable when you do. Chinese distributors are short of cash, so terms are part of the negotiation, not an afterthought.
+
+**The table it must carry.** Term (prepayment, deposit plus balance, LC, open account with credit insurance, consignment), risk to the brand, cost, when it fits.
+
+**The proprietary number.** Compass: typical first-order terms on file. Fallback: log the gap.
+
+**Outline.**
+1. Why cash is tight downstream (the 2025 distributor survey)
+2. The table
+3. Letters of credit in practice
+4. Credit insurance (Sinosure and private insurers)
+5. Currency, RMB vs USD, and who carries FX
+6. When to move to open terms
+
+**Leads (verify, cite primary).** Over 40% of distributors under cash pressure (界面新闻 2025, jiemian.com/article/13003026.html, citing the China Liquor Flow Association); Sinosure product pages.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
+**CTA.** Compass shortlist.
+
+## P11 · PARTNER · ANCHOR
+
+**Title:** Sell-in is not sell-out: spotting stock pushing in China
+**Query:** sell in vs sell out china distributor · **Tags:** Managing a partner, Distributors
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** Sell-in is what your distributor buys; sell-out is what shoppers buy. When the first grows faster than the second, stock is piling up in the channel (压货) and a price war or a returns fight follows. Ask for scan or depletion data every month, and read weeks of cover, not orders.
+
+**The table it must carry.** Signal (orders vs scans, weeks of cover, discounting online, sudden promotions, late payment), what it looks like, what to ask for.
+
+**The proprietary number.** Compass: share of distributors on file that share scan or depletion data. Fallback: log the gap.
+
+**Outline.**
+1. Why distributors are refusing stock in 2025 and 2026
+2. The table
+3. Weeks of cover: the one ratio to track
+4. Where to get sell-out data (retailer portals, POS, platform backends)
+5. What to write into the contract
+6. What to do when the channel is already full
+
+**Leads (verify, cite primary).** 压货 and 动销 (虎嗅 huxiu.com/article/4873623.html; 界面 jiemian.com/article/13003026.html, one distributor's RMB 4 to 5 million of stock against under RMB 300,000 profit).
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
+**CTA.** Compass shortlist.
+
+## P12 · PARTNER · CASE NOTE
+
+**Title:** Grey-market diversion in China: the clause that paid RMB 6m
+**Query:** china distributor price control parallel · **Tags:** Contracts, Distributors
+**Word count:** 1,000 to 1,300
+
+**The answer, in one line.** A beauty brand's exclusive offline distributor scratched off anti-counterfeit codes and sold online. Because the contract set RMB 200,000 per breach, the brand won the lead case in June 2025 and 15 related cases settled for over RMB 6 million. Put a traceable code and a per-breach penalty in every distribution contract.
+
+**The table it must carry.** The control (traceability code, channel clause, per-breach penalty, audit right, platform complaint), what it does, how the case used it.
+
+**The proprietary number.** Compass: share of distributors on file with a written price and channel policy. Fallback: log the gap.
+
+**Outline.**
+1. The case (Shanghai Fengxian court)
+2. What 窜货 and 乱价 cost a brand
+3. The table
+4. What price control is still legal (Anti-Monopoly Law, 2022 amendment on resale prices)
+5. The clauses to copy
+
+**Leads (verify, cite primary).** court.gov.cn/zixun/xiangqing/507751.html; Anti-Monopoly Law 2022 text (npc.gov.cn).
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P13 · PARTNER · CASE NOTE
+
+**Title:** When your China agency fakes orders, the brand pays
+**Query:** tmall agency fake orders brand liability · **Tags:** Due diligence, Tmall Partners, Douyin Partners
+**Word count:** 1,000 to 1,300
+
+**The answer, in one line.** In a case the Supreme People's Court published in August 2026, an operating agency faked group-buy orders; regulators fined it RMB 100,000 and the platform kept the whole RMB 50,000 deposit. The store's penalties land on the account holder, which is the brand. Ban fake orders in writing and audit the traffic.
+
+**The table it must carry.** Consequence (platform deposit, store penalties and delisting, regulator fines, criminal exposure), who bears it, the source.
+
+**The proprietary number.** Compass: share of candidates declined over data integrity. Fallback: log the gap.
+
+**Outline.**
+1. The case
+2. How fake orders (刷单炒信) are run and detected
+3. The table
+4. Why the brand carries the risk
+5. Contract and audit steps
+
+**Leads (verify, cite primary).** court.gov.cn/zixun/xiangqing/507731.html (typical cases, case 4); spp.gov.cn/llyj/201704/t20170424_188821.shtml; Anti-Unfair Competition Law.
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass/find-a-douyin-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P14 · PARTNER · EXPLAINER
+
+**Title:** Douyin return rates by category, and what they cost you
+**Query:** douyin return rate · **Tags:** Douyin Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Returns on Douyin run far higher than on shelf eCommerce, and they vary by category from single digits in food to half of orders in women's apparel. Pay your partner on sales after returns, and budget cost per kept order, not per order.
+
+**The table it must carry.** Category, reported return range, source and date, what it does to cost per kept order at a stated basket.
+
+**The proprietary number.** TheChinaPath Douyin calculator (cost per kept order at 5%, 30%, 50% returns).
+
+**Outline.**
+1. Why live commerce returns more
+2. The table
+3. Douyin's own position on the numbers
+4. Cost per kept order
+5. Commission on gross vs net
+6. What a partner can do to bring returns down
+
+**Leads (verify, cite primary).** 人人都是产品经理 (woshipm.com/it/6128324.html, lead); 界面 (jiemian.com/article/9873801.html); Douyin rebuttal of the 90% story (新浪财经 June 13, 2025, finance.sina.cn/cj/2025-06-13/detail-inezxtpa5801214.d.html).
+
+**Internal links.** `/compass/find-a-douyin-partner-in-china`, `/tools/douyin-cost-calculator`, `/compass`
+**CTA.** Compass shortlist.
+
+## P15 · PARTNER · ANCHOR
+
+**Title:** How to replace a China distributor without losing the shelf
+**Query:** replace distributor china · **Tags:** Managing a partner, Distributors, Contracts
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** Line up the new partner before you give notice, send written notice under the contract, buy back or sell through the old stock, and move every registration, label, listing and authorization to the new partner in one plan. Brands lose the shelf when they switch in the wrong order.
+
+**The table it must carry.** Asset to move (stock, retail listings, product registrations, responsible person, labels, trademark licence, Tmall and Douyin authorizations, customer data), who holds it, how it moves, typical time.
+
+**The proprietary number.** Compass: median months from first meeting to a signed replacement. Fallback: log the gap.
+
+**Outline.**
+1. Why switches fail
+2. Notice: the Beijing case where missed targets did not end exclusivity without written notice
+3. The table
+4. Stock: buy-back, sell-off period, price discipline
+5. Registrations and the responsible person (link P02)
+6. A switch calendar
+
+**Leads (verify, cite primary).** Beijing No. 1 Intermediate Court (2015)一中民(商)终字第7955号 (tiantailaw.com, lead; cite the judgment); NMPA Announcement No. 70 of 2026.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
+**CTA.** Compass shortlist.
+
+## P16 · PARTNER · ANCHOR
+
+**Title:** TP, DP or distributor: who to hire first in China
+**Query:** tmall partner vs distributor china · **Tags:** Distributors, Tmall Partners, Douyin Partners
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** Hire a distributor when your product needs a shelf, a Tmall Partner when shoppers search for your category online, and a Douyin Partner when the product sells on demonstration. Most brands start with one, and the right one follows from the category, the cash and the channel.
+
+**The table it must carry.** Distributor vs TP vs DP: what they run, how they are paid, cash needed in year one, time to first sale, control you keep, best for.
+
+**The proprietary number.** TheChinaPath calculator data for the TP and DP cost lines.
+
+**Outline.** 1. Three partners, three jobs 2. The table 3. Category decides first 4. Cash and time 5. The usual second partner 6. How to test before committing
+
+**Internal links.** all three guides, `/insights/china-distributor-vs-own-store`, `/compass`
+**CTA.** Compass shortlist.
+
+## P17 · PARTNER · EXPLAINER
+
+**Title:** Douyin's dual verification: what it changes for your partner
+**Query:** douyin cross border brand verification · **Tags:** Douyin Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Since 2026 Douyin asks cross-border brands to prove both overseas production and overseas sales before they sell. Your partner can prepare the file, but only you hold the evidence, so the partner's value shifts from paperwork to operations.
+
+**The table it must carry.** Requirement, evidence accepted, what is excluded, who prepares it, timing.
+
+**The proprietary number.** TheChinaPath Douyin calculator data (cross-border deposit and commission).
+
+**Outline.** 1. The rule and its dates 2. The table 3. What counts as overseas sales 4. What your DP should and should not do 5. Tmall's parallel rule
+
+**Leads (verify, cite primary).** Douyin cross-border rule announcement (jinritemai); the Tmall parallel notice. Trade press may point to them; cite the platform text.
+
+**Internal links.** `/compass/find-a-douyin-partner-in-china`, `/tools/douyin-cost-calculator`, `/compass`
+**CTA.** Compass shortlist.
+
+## P18 · PARTNER · EXPLAINER
+
+**Title:** State-owned or private importer: which one to sign
+**Query:** china importer state owned private · **Tags:** Distributors
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** State-owned importers bring licences, credit and access to state retail, and move slowly. Private importers move fast and sell harder, and carry more credit risk. Choose on the channel you need and the checks the importer passes, not on ownership alone.
+
+**The table it must carry.** State-owned vs private: licences, speed, payment reliability, retail access, marketing effort, typical fit.
+
+**The proprietary number.** Compass: ownership split of importers on file. Fallback: log the gap.
+
+**Outline.** 1. Why the question comes up at CIIE 2. The table 3. Licences and registrations 4. Credit and payment 5. Channel access 6. Checks for both
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
+**CTA.** Compass shortlist.
+
+## P19 · PARTNER · EXPLAINER
+
+**Title:** Can one agency run your Tmall store and Douyin shop?
+**Query:** tmall partner douyin partner same agency · **Tags:** Tmall Partners, Douyin Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** One agency can run both when it has a separate live-room team with its own results in your category. Running a store and running a live room are different trades, so judge the Douyin side on its own evidence even when the contract is shared.
+
+**The table it must carry.** One agency vs two: coordination, pricing conflicts, cost, accountability, what to check.
+
+**The proprietary number.** Compass: share of TPs on file with a rated Douyin practice. Fallback: log the gap.
+
+**Outline.** 1. Why the question matters now (Tmall-first operators moving to Douyin) 2. The table 3. Price conflict between channels 4. Checking the Douyin team 5. Contract structure for one or two agencies
+
+**Leads (verify, cite primary).** Lirenlizhuang 2025 annual report (Douyin revenue +46.6%, Tmall share down; 21世纪经济报道 April 1, 2026 as lead).
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass/find-a-douyin-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P20 · PARTNER · ANCHOR
+
+**Title:** Exclusivity in China: what to give, and what to keep
+**Query:** china distributor exclusivity · **Tags:** Contracts, Distributors
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** Give exclusivity by channel and by region, tie each grant to a purchase target and a review date, and keep online channels and the right to take the grant back. Courts enforce exclusivity both ways, so write it narrowly and give notice formally.
+
+**The table it must carry.** Grant type (national, regional, channel, online, category), what the brand gives up, target to attach, exit trigger.
+
+**The proprietary number.** Compass: share of distributors on file that asked for national exclusivity at first meeting. Fallback: log the gap.
+
+**Outline.** 1. Why distributors ask for everything 2. The Beijing double-damages case 3. The table 4. Targets and take-or-pay 5. Online carve-outs 6. Notice and review
+
+**Leads (verify, cite primary).** Beijing No. 1 Intermediate Court (2015)一中民(商)终字第7955号. Interlink with 25A (distribution agreement) when live.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
+**CTA.** Compass shortlist.
+
+## P21 · PARTNER · EXPLAINER
+
+**Title:** Importer, distributor or TP: who you need for Tmall Global
+**Query:** tmall global importer of record · **Tags:** Distributors, Tmall Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Tmall Global runs on cross-border rules, so you need no Chinese importer of record, but you do need an overseas selling entity, a bonded or direct-mail logistics route and usually a TP to run the store. A distributor only enters when you move to general trade.
+
+**The table it must carry.** Role (overseas entity, TP, logistics provider, importer, distributor), needed for Tmall Global? for general trade? who usually fills it.
+
+**The proprietary number.** TheChinaPath Tmall Global calculator data.
+
+**Outline.** 1. Cross-border vs general trade in one paragraph 2. The table 3. 1210 bonded vs 9610 direct mail 4. When a distributor comes in 5. Common set-ups by brand size
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/tools/tmall-global-setup-and-run`, `/enter-china/cross-border-setup`
+**CTA.** Compass shortlist.
+
+## P22 · PARTNER · EXPLAINER
+
+**Title:** Choosing a pet food partner after China's 10% tariff
+**Query:** pet food distributor china · **Tags:** Distributors
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** China raised the tariff on imported pet food from 4% to 10% in January 2025 and imports fell. The partners who still grow imported pet food hold registrations, cold or dry logistics and online pet-channel reach; check those three before price.
+
+**The table it must carry.** Partner type (importer-distributor, online pet specialist, cross-border TP), what it holds, cost impact of the tariff, fit.
+
+**The proprietary number.** TheChinaPath calculator data (pet food category fees). Interlink with 06L pet food cost.
+
+**Leads (verify, cite primary).** Tariff change (财政部关税司 2025 tariff schedule); import volume 2024 (customs data).
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/insights/cost-to-sell-pet-food-in-china` (when live), `/compass`
+**CTA.** Compass shortlist.
+
+## P23 · PARTNER · ASSET
+
+**Title:** The Double 11 review to run with your China partner
+**Query:** double 11 agency review · **Tags:** Managing a partner
+**Word count:** 1,000 to 1,400
+
+**The answer, in one line.** Hold the review within two weeks of Double 11, on net sales after returns, ad return by campaign, new customers and stock left. Agree three changes for 618 before the meeting ends.
+
+**The table it must carry.** Metric, where the number comes from, good sign, bad sign.
+
+**The proprietary number.** Compass or case data if available, else calculator data for the cost lines.
+
+**Asset.** Printable review agenda with the metric table and a decisions box.
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass/find-a-douyin-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P24 · PARTNER · CASE NOTE
+
+**Title:** Your distributor registered your trademark: the way back
+**Query:** distributor registered my trademark china · **Tags:** Contracts, Distributors
+**Word count:** 1,000 to 1,300
+
+**The answer, in one line.** Article 15 of China's Trademark Law bars an agent or distributor from registering its principal's mark without consent, so a brand can oppose or invalidate the filing. It takes months; filing your own mark before the first meeting takes weeks.
+
+**The table it must carry.** Route (opposition, invalidation, negotiation, new mark), deadline, evidence needed, typical time.
+
+**Leads (verify, cite primary).** Trademark Law Art. 15 (npc.gov.cn); CNIPA procedures. Interlink with 46A (trademark first) when live.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/branding-localisation`, `/compass`
+**CTA.** Compass shortlist.
+
+## P25 · PARTNER · EXPLAINER
+
+**Title:** Choosing a supplements partner: blue hat or cross-border
+**Query:** supplements distributor china · **Tags:** Distributors, Tmall Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** A supplement sold in general trade needs a health-food registration or filing (the blue hat) held by you or your partner; cross-border skips it but limits you to online. Decide the route first, because it decides whether you need a distributor or a TP.
+
+**The table it must carry.** Route (registration, filing, cross-border), who holds it, time, cost range with source, channels open.
+
+**The proprietary number.** TheChinaPath calculator data (supplements category). Interlink with 29A.
+
+**Leads (verify, cite primary).** SAMR health food registration and filing rules.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/compass/find-a-tmall-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P26 · PARTNER · EXPLAINER
+
+**Title:** The first 90 days with a new Tmall Partner
+**Query:** tmall partner onboarding · **Tags:** Managing a partner, Tmall Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** In the first 90 days a Tmall Partner should hand you a store audit, a price and assortment plan, a campaign calendar and a weekly report you can read. If month two ends without them, the problem is the partner, not the platform.
+
+**The table it must carry.** Week range, what the TP delivers, what the brand provides, sign it is on track.
+
+**The proprietary number.** TheChinaPath Tmall Global calculator data (set-up timeline and cost).
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/tools/tmall-global-setup-and-run`, `/compass`
+**CTA.** Compass shortlist.
+
+## P27 · PARTNER · ANCHOR
+
+**Title:** Supermarket fees in China: listing, barcode and end-caps
+**Query:** china supermarket listing fee · **Tags:** Distributors
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** Chinese retailers charge suppliers to get in and to stay visible: listing (进场费), barcode (条码费), end-cap (堆头费) and festival fees (年节费), plus promotion support. Your distributor usually pays them upfront and recovers them from you, so agree the budget and the proof before the first listing.
+
+**The table it must carry.** Fee, what it buys, how it is charged, a sourced range (current, dated), who pays under a typical distribution deal.
+
+**The proprietary number.** Compass: share of distributors on file that pre-fund listing fees. Fallback: log the gap.
+
+**Leads (verify, cite primary).** Current retailer supplier terms; MOFCOM rules on retailer-supplier fees (零售商供应商公平交易管理办法). 2012 press figures only as history.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
+**CTA.** Compass shortlist.
+
+## P28 · PARTNER · EXPLAINER
+
+**Title:** Why brands leave Tmall Global, and what it says
+**Query:** brands leaving tmall global · **Tags:** Tmall Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Brands leave Tmall Global when acquisition costs outrun basket value and when the partner model cannot move fast enough. Read each exit for the model behind it before deciding the platform failed.
+
+**The table it must carry.** Brand, year, channel it moved to, stated reason, source.
+
+**Leads (verify, cite primary).** Inditex banners exit 2026 (WWD); Urban Outfitters 2025 (BoF); company statements.
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/tools/tmall-global-setup-and-run`, `/compass`
+**CTA.** Compass shortlist.
+
+## P29 · PARTNER · EXPLAINER
+
+**Title:** Regional or national distributor: how coverage works
+**Query:** regional distributor china · **Tags:** Distributors
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Most national coverage in China is a network of regional distributors under one contract. A regional specialist that already sells your category often beats a national name that sells everything, so map the sub-distributors before you sign.
+
+**The table it must carry.** National vs regional vs network: reach, focus, price control, cost, fit.
+
+**The proprietary number.** Compass: share of distributors on file covering one region vs several. Fallback: log the gap.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
+**CTA.** Compass shortlist.
+
+## P30 · PARTNER · EXPLAINER
+
+**Title:** When to take eCommerce back from your Tmall Partner
+**Query:** take ecommerce in house china · **Tags:** Managing a partner, Tmall Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Brands take operations back (收回运营权) when the store is large enough to staff and the know-how sits in their own team. Plan the move a year ahead, keep the partner on a transition contract, and never switch before a festival.
+
+**The table it must carry.** Signal it is time, what to build in-house first, what to keep outsourced.
+
+**Leads (verify, cite primary).** Lirenlizhuang annual reports (L'Oréal brands leaving); 人人都是产品经理 analysis as lead. Interlink with 34A.
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/grow-in-china/cross-border-ecommerce`, `/compass`
+**CTA.** Compass shortlist.
+
+## P31 · PARTNER · EXPLAINER
+
+**Title:** What a listed Tmall Partner earns, and why it matters
+**Query:** baozun business model · **Tags:** Tmall Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Listed Tmall Partners earn more and more from their own brands and product sales than from running stores. Ruoyuchen made about 70% gross margin on its own brands against 36.7% on agency work, which tells you where a partner's best people go.
+
+**The table it must carry.** Company, latest revenue, service share, own-brand share, margin by line, source.
+
+**Leads (verify, cite primary).** Baozun 2025 results (HKEX/SEC); Ruoyuchen 2025 annual report (cninfo); Lirenlizhuang 2025 annual report; 壹网壹创 2025 annual report (szse).
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P32 · PARTNER · ANCHOR
+
+**Title:** Choosing a China partner for a beauty brand
+**Query:** cosmetics distributor china · **Tags:** Distributors, Tmall Partners, Douyin Partners
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** A beauty brand's partner choice starts with registration: general trade needs an NMPA filing and a domestic responsible person, cross-border does not. From there, a TP for search-led categories, a DP for demonstration-led ones, a distributor for department stores and Watsons-type chains.
+
+**The table it must carry.** Route, registration, partner type, channels, cash, time.
+
+**The proprietary number.** TheChinaPath calculator data (skincare, colour cosmetics). Interlink with 35A and 02L.
+
+**Internal links.** all three guides, `/compass`
+**CTA.** Compass shortlist.
+
+## P33 · PARTNER · ANCHOR
+
+**Title:** Choosing a food and drink importer in China
+**Query:** food importer china · **Tags:** Distributors
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** An importer for food and drink must handle GACC registration of your factory, Chinese labelling that holds up in court, and the cold or dry chain your product needs. The label alone can cost ten times the price in damages, so check the importer's label review before its sales pitch.
+
+**The table it must carry.** Check, why it matters, the rule, the red flag.
+
+**Leads (verify, cite primary).** GACC Decree 248 (gov.cn); Food Safety Law Art. 148 (npc.gov.cn). Spring Chengdu fair hook.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
+**CTA.** Compass shortlist.
+
+## P34 · PARTNER · EXPLAINER
+
+**Title:** Selling to JD self-run and Hema through a distributor
+**Query:** jd self operated supplier foreign brand · **Tags:** Distributors
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** JD self-run, Tmall Supermarket and Hema buy stock like retailers, with a guaranteed margin, rebates and 45- to 60-day payment terms. An online distributor carries that cash gap and the buyer relationship; your job is to price the margin guarantee into the ladder.
+
+**The table it must carry.** Term (毛保, 返利, 账期, promotion support), what it means, who carries it.
+
+**Leads (verify, cite primary).** JD supplier terms; retailer annual reports. Practitioner posts as leads only.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
+**CTA.** Compass shortlist.
+
+## P35 · PARTNER · EXPLAINER
+
+**Title:** What Douyin creator commission really costs a brand
+**Query:** douyin affiliate commission brand · **Tags:** Douyin Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Creators on Douyin earn a commission on sales through the affiliate program (精选联盟), and head creators add a slot fee (坑位费). Your DP books them; you pay both, so ask for creator results on sales after returns and cost per kept order.
+
+**The table it must carry.** Creator tier, commission range, slot fee, what it buys, source.
+
+**The proprietary number.** TheChinaPath Douyin calculator data. Territory rule: transaction side only; seeding hands off to TheRedScroll.
+
+**Internal links.** `/compass/find-a-douyin-partner-in-china`, `/tools/douyin-cost-calculator`, `/compass`
+**CTA.** Compass shortlist.
+
+## P36 · PARTNER · EXPLAINER
+
+**Title:** Red flags in a Tmall or Douyin agency proposal
+**Query:** tmall agency proposal red flags · **Tags:** Due diligence, Tmall Partners, Douyin Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Guaranteed GMV, commission on gross sales, ad spend routed through the agency's account and a team you never meet are the four lines that should stop a proposal. Each one moves risk from the agency to you.
+
+**The table it must carry.** Line in the proposal, what it really means, what to ask for instead.
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass/find-a-douyin-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P37 · PARTNER · EXPLAINER
+
+**Title:** Choosing a mother and baby partner in China
+**Query:** baby products distributor china · **Tags:** Distributors, Tmall Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Mother and baby is where registration and trust decide the partner: infant formula needs a SAMR recipe registration, and shoppers buy on safety proof. Pick the route (general trade or cross-border) by product, then the partner that already holds the category's retail and platform relationships.
+
+**The table it must carry.** Product group, route, registration, partner type, channels.
+
+**Leads (verify, cite primary).** SAMR infant formula registration rules. Interlink with 41A and 08L.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/compass/find-a-tmall-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P38 · PARTNER · CASE NOTE
+
+**Title:** China eCommerce agency scams, and the checks that stop them
+**Query:** china ecommerce agency scam · **Tags:** Due diligence
+**Word count:** 1,000 to 1,300
+
+**The answer, in one line.** In November 2023 Shenzhen police broke up an operating-agency fraud ring, arresting more than 40 people. The pattern is the same every time: a large upfront fee, a guarantee and a company too young to have a record. Three checks catch it.
+
+**The table it must carry.** Warning sign, how the scam uses it, the check.
+
+**Leads (verify, cite primary).** 澎湃 (m.thepaper.cn/newsDetail_forward_27211721); Taobao service-market listing rules (RMB 50,000 deposit, six months' registration, three contracts; open.alitrip.com).
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P39 · PARTNER · EXPLAINER
+
+**Title:** The authorization letter: your lever over Tmall resellers
+**Query:** tmall brand authorization letter · **Tags:** Contracts, Tmall Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** On Tmall a flagship store needs your exclusive authorization, a specialty store a first-level one, and a multi-brand store accepts up to four levels. Every letter you sign is a store you will have to police, so issue them sparingly and with an end date.
+
+**The table it must carry.** Store type, authorization needed, levels allowed, control the brand keeps.
+
+**Leads (verify, cite primary).** Tmall store-type entry rules; Nike ending Topsports' online authorization from Jan 1, 2027 (36氪, 36kr.com/p/3913410529219721).
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P40 · PARTNER · EXPLAINER
+
+**Title:** Chinese-language contracts: chops, language, arbitration
+**Query:** china distribution contract chinese language arbitration · **Tags:** Contracts
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Sign a bilingual contract that names the Chinese version as controlling, check the company chop against the licence, and choose arbitration your partner's assets can be reached by. A contract a Chinese court cannot read or enforce protects nobody.
+
+**The table it must carry.** Choice (language, chop, signatory, governing law, CIETAC, HKIAC, courts), what to choose, why.
+
+**Leads (verify, cite primary).** Civil Code contract provisions; CIETAC and HKIAC rules; the mainland-Hong Kong arbitration arrangement. Interlink with 25A.
+
+**Internal links.** all three guides, `/compass`
+**CTA.** Compass shortlist.
+
+## P41 · PARTNER · EXPLAINER
+
+**Title:** First orders, minimums and consignment in China
+**Query:** minimum order chinese distributor · **Tags:** Distributors, Contracts
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** Size the first order to a launch plan, attach annual minimums to any exclusivity, and use consignment only for a test. Courts enforce minimum-purchase clauses, so write the number you can live with.
+
+**The table it must carry.** Structure (first order, annual minimum, take-or-pay, consignment), risk to each side, when it fits.
+
+**Leads (verify, cite primary).** Minimum-purchase judgments on 裁判文书网 (a Japanese cosmetics case, RMB 48m annual minimum, reported by a law firm as lead).
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
+**CTA.** Compass shortlist.
+
+## P42 · PARTNER · ASSET
+
+**Title:** A China distributor scorecard beyond the sales target
+**Query:** china distributor kpi · **Tags:** Managing a partner, Distributors
+**Word count:** 1,000 to 1,400
+
+**The answer, in one line.** Score a distributor quarterly on eight lines: sell-out, weeks of cover, store coverage, price discipline, payment days, marketing spend, reporting and team. Sales alone reward stock pushing.
+
+**The table it must carry.** KPI, how to measure it, target band, weight.
+
+**Asset.** Printable quarterly scorecard. Interlink with P11.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P43 · PARTNER · EXPLAINER
+
+**Title:** Hong Kong as a base for selling into mainland China
+**Query:** hong kong distributor china mainland · **Tags:** Distributors
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** A Hong Kong entity is a clean overseas seller for cross-border and a practical place to hold stock and contracts, but it does not replace a mainland importer for general trade. Use it for what it does well.
+
+**The table it must carry.** Use (cross-border seller, stock hub, contracting party, general trade), works from Hong Kong?, what else you need.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/cross-border-setup`, `/compass`
+**CTA.** Compass shortlist.
+
+## P44 · PARTNER · ASSET
+
+**Title:** The monthly report to demand from your China partner
+**Query:** distributor sell out report template · **Tags:** Managing a partner
+**Word count:** 1,000 to 1,400
+
+**The answer, in one line.** One page a month: sell-out by channel, stock and weeks of cover, price checks, returns, ad spend and return, next month's plan. If a partner cannot produce it, it cannot manage your brand either.
+
+**The table it must carry.** Line, source of the number, distributor / TP / DP variant.
+
+**Asset.** Printable monthly report template.
+
+**Internal links.** all three guides, `/compass`
+**CTA.** Compass shortlist.
+
+## P45 · PARTNER · ASSET
+
+**Title:** How to brief a China partner search
+**Query:** china distributor search brief · **Tags:** Due diligence
+**Word count:** 1,000 to 1,400
+
+**The answer, in one line.** A good partner brief fits on one page: category and price band, channels wanted, stage in China, registrations held, budget for the first year and what has been tried. It halves the time to a shortlist.
+
+**The table it must carry.** Brief field, why a partner needs it, example answer.
+
+**Asset.** Printable one-page brief that matches the `/compass/shortlist` form fields.
+
+**Internal links.** `/compass/shortlist`, `/compass`, all three guides
+**CTA.** Compass shortlist.
+
+## P46 · PARTNER · EXPLAINER
+
+**Title:** Livestream agency or Douyin Partner: who does what
+**Query:** douyin livestream agency vs dp · **Tags:** Douyin Partners
+**Word count:** 1,300 to 1,800
+
+**The answer, in one line.** A livestream agency or MCN sells creator time and sessions; a Douyin Partner runs your shop, your own live room and your ad account as one P&L. Brands that hire the first expecting the second pay slot fees and keep nothing.
+
+**The table it must carry.** Livestream agency vs DP: what they run, how paid, what you keep, when to use.
+
+**The proprietary number.** TheChinaPath Douyin calculator data. Territory rule: transaction side only.
+
+**Internal links.** `/compass/find-a-douyin-partner-in-china`, `/insights/china-livestream-cost-for-brands`, `/compass`
+**CTA.** Compass shortlist.
+
+## P47 · PARTNER · ANCHOR
+
+**Title:** China distributor red flags from the Compass files
+**Query:** china distributor red flags · **Tags:** Due diligence, Distributors
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** The red flags that most often ended a distributor candidacy in the Compass files, ranked by how often they appeared, with the check that caught each one.
+
+**The table it must carry.** Red flag, how often it appeared (Compass), the check, what it predicted.
+
+**The proprietary number.** Compass snapshot required (share of candidates dropped by reason). If `sources/compass-stats.md` has no such breakdown on the draft date, set the row to `blocked` with the reason instead of drafting.
+
+**Internal links.** `/compass/find-a-distributor-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P48 · PARTNER · ASSET
+
+**Title:** Switching Tmall Partners: the handover checklist
+**Query:** switch tmall partner · **Tags:** Managing a partner, Tmall Partners
+**Word count:** 1,000 to 1,400
+
+**The answer, in one line.** A clean TP switch moves the store, the accounts, the data, the content and the customer service history in one planned window outside a festival, with the old partner paid through the handover.
+
+**The table it must carry.** Item, owner before, owner after, deadline, check.
+
+**Asset.** Printable handover checklist. Interlink with P08 and P05.
+
+**Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass`
+**CTA.** Compass shortlist.
+
+## P49 · PARTNER · ASSET
+
+**Title:** China partner glossary: 40 terms from 代运营 to 窜货
+**Query:** china ecommerce partner glossary · **Tags:** Due diligence
+**Word count:** 1,000 to 1,400
+
+**The answer, in one line.** The forty Chinese terms a brand hears when it hires a China partner, with the characters, the plain-English meaning and why each one matters to your contract.
+
+**The table it must carry.** Term in characters, pinyin, meaning, why it matters. Characters are the subject here, so they stay.
+
+**Asset.** Printable glossary.
+
+**Internal links.** all three guides, `/compass`
+**CTA.** Compass shortlist.
+
+## P50 · PARTNER · ANCHOR + REPORT
+
+**Title:** What fifteen years of partner meetings say about success
+**Query:** china distribution partner success · **Tags:** Managing a partner
+**Word count:** 1,600 to 2,400
+
+**The answer, in one line.** The partnerships that lasted in the Compass files share a category fit, a named team, shared sell-out data and a contract with a way out. Report built on the Compass snapshot.
+
+**The table it must carry.** Factor, share of lasting partnerships with it, share of failed ones.
+
+**The proprietary number.** Compass snapshot required. Report copy to `output/reports/<slug>.md` with the gated-PDF marker. If the snapshot lacks the breakdown, set the row to `blocked`.
+
+**Internal links.** all three guides, `/compass`
+**CTA.** Compass shortlist.

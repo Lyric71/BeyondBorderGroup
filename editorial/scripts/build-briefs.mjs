@@ -138,7 +138,41 @@ for (let i = 0; i < lines.length; i++) {
   const close = lines.findIndex((l, k) => k > open && l.startsWith('```'));
   templates[m[1].trim()] = lines.slice(open + 1, close).join('\n').trim();
 }
-const tplFile = { SIGNAL: 'signal', 'LEDGER A': 'ledger-a', 'LEDGER B': 'ledger-b', TEARDOWN: 'teardown', REFRESH: 'refresh' };
+const tplFile = { SIGNAL: 'signal', 'LEDGER A': 'ledger-a', 'LEDGER B': 'ledger-b', TEARDOWN: 'teardown', REFRESH: 'refresh', PARTNER: 'partner' };
+
+// ---------- Part 5: the partner queue ----------
+// Rows `| P01 | 2026-09-30 | title | query | tags | type | serves | words |`,
+// each with a `## P01 · PARTNER · <TYPE>` section. Dated explicitly: they sit
+// outside the four-slot week and publish on their own calendar.
+const GUIDE_PATHS = {
+  distributor: '/compass/find-a-distributor-in-china',
+  tp: '/compass/find-a-tmall-partner-in-china',
+  dp: '/compass/find-a-douyin-partner-in-china',
+};
+const partners = [];
+{
+  const h = lines.findIndex((l) => /^## The partner queue/.test(l));
+  if (h !== -1) {
+    for (let i = h + 1; i < lines.length; i++) {
+      const l = lines[i];
+      if (/^\|\s*P\d\d\s*\|/.test(l)) {
+        const [id, date, title, query, tags, type, serves, words] = l.split('|').slice(1, -1).map((c) => c.trim());
+        partners.push({ id, date, title, query, tags, type, serves, words });
+      } else if (partners.length && !l.startsWith('|')) break;
+    }
+  }
+}
+const partnerSections = {};
+{
+  const pRe = /^## (P\d\d) · PARTNER · (.+)$/;
+  for (let i = 0; i < lines.length; i++) {
+    const m = lines[i].match(pRe);
+    if (!m) continue;
+    let j = i + 1;
+    while (j < lines.length && !pRe.test(lines[j]) && !/^# Part /.test(lines[j])) j++;
+    partnerSections[m[1]] = lines.slice(i + 1, j).join('\n').trim().replace(/\n---\s*$/, '').trim();
+  }
+}
 
 // The Anchor spec lives inside the preamble ("Every Anchor must carry" to the
 // link list). Pull it out so it ships as a template like the other four.
@@ -220,7 +254,7 @@ const dod = (outputFile) => `## Definition of done
 - [ ] File saved as \`${outputFile}\`
 `;
 
-function briefFile({ id, date, week, weekday, slotName, slot, section, title, slug, query, diff, wordCount, variant, proof, extra, industry }) {
+function briefFile({ id, date, week, weekday, slotName, slot, section, title, slug, query, diff, wordCount, variant, proof, extra, industry, tags, serves, partnerType }) {
   const outputFile = `output/${slug}.md`;
   const fm = [
     '---',
@@ -230,7 +264,8 @@ function briefFile({ id, date, week, weekday, slotName, slot, section, title, sl
     `weekday: ${weekday}`,
     `slot: ${slot}`,
     `slot_name: ${slotName}`,
-    `content_type: ${contentType(slotName, variant, extra)}`,
+    `content_type: ${contentType(slotName, variant, extra, partnerType)}`,
+    tags ? `tags: ${JSON.stringify(tags)}` : null,
     `title: ${JSON.stringify(title)}`,
     `slug: ${slug}`,
     `primary_query: ${JSON.stringify(query || '')}`,
@@ -256,6 +291,8 @@ function briefFile({ id, date, week, weekday, slotName, slot, section, title, sl
       ? `| Industry | \`${industry}\`, set as \`industry\` in the insight frontmatter |`
       : '| Industry | none (cross-industry), leave `industry` out of the frontmatter |',
     `| Body length | ${wordCount || (variant === 'B' ? '1,200 to 1,500 words' : variant === 'A' ? '900 to 1,400 words' : 'see brief')} (body only, per the char-count rule) |`,
+    tags ? `| Tags | ${tags.map((t) => `\`${t}\``).join(', ')} (frontmatter \`tags\`) |` : null,
+    serves ? `| Serves | ${serves} |` : null,
     variant ? `| Ledger variant | ${variant} |` : null,
     proof ? `| Proof | ${proof} |` : null,
     extra && extra.type === 'Asset' ? `| Asset | \`output/guides/${slug}.md\`, publishes to \`/guides/${slug}/\` (${extra.format}) |` : null,
@@ -263,7 +300,8 @@ function briefFile({ id, date, week, weekday, slotName, slot, section, title, sl
   ].filter(Boolean).join('\n');
 
   let template = '';
-  if (slotName === 'Anchor') template = anchorSpec;
+  if (slotName === 'Partner') template = templates.PARTNER || anchorSpec;
+  else if (slotName === 'Anchor') template = anchorSpec;
   else if (variant === 'A') template = templates['LEDGER A'];
   else if (variant === 'B') template = templates['LEDGER B'];
 
@@ -301,7 +339,8 @@ ${template}
 ${dod(outputFile)}`;
 }
 
-function contentType(slotName, variant, extra) {
+function contentType(slotName, variant, extra, partnerType) {
+  if (slotName === 'Partner') return `Partner ${partnerType}`;
   if (slotName === 'Ledger') return `Ledger ${variant}`;
   if (extra) return `Anchor + ${extra.type}`;
   return slotName;
@@ -311,6 +350,12 @@ function pushRow(o) {
   const prev = previous[o.brief_id] || {};
   const row = {
     ...o,
+    // Template slots (Signal, Teardown, Refresh) get their slug, title, query
+    // and industry from the run on the day; keep them when the plan has none.
+    output_file: o.output_file || prev.output_file || '',
+    working_h1: o.working_h1 || prev.working_h1 || '',
+    primary_query: o.primary_query || prev.primary_query || '',
+    industry: o.industry || prev.industry || '',
     status: prev.status || o.status || 'not_started',
     drafted_on: prev.drafted_on || '',
     reviewed_by: prev.reviewed_by || '',
@@ -399,6 +444,42 @@ for (let week = 1; week <= 52; week++) {
       : 'Oldest insight by updatedDate first (see RUNBOOK). Year-only change = skipped.',
   });
 }
+
+// Partner queue (Part 5): dated rows, slot P.
+for (const p of partners) {
+  const section = partnerSections[p.id];
+  if (!section) throw new Error(`partner row ${p.id} has no "## ${p.id} · PARTNER" section`);
+  const d = new Date(`${p.date}T00:00:00`);
+  if (Number.isNaN(d.getTime())) throw new Error(`bad date for ${p.id}: ${p.date}`);
+  const week = Math.floor((d - START) / (7 * 86400000)) + 1;
+  const W = String(week).padStart(2, '0');
+  let slug = slugify(p.query);
+  if (usedSlugs.has(slug)) slug = slugify(p.title);
+  if (usedSlugs.has(slug)) throw new Error(`slug clash for ${p.id}: ${slug} (also ${usedSlugs.get(slug)})`);
+  usedSlugs.set(slug, p.id);
+  const tags = ['Finding a partner', ...p.tags.split(',').map((t) => t.trim()).filter(Boolean)];
+  const serves = p.serves.split(',').map((s) => GUIDE_PATHS[s.trim()]).filter(Boolean).map((s) => `\`${s}\``).join(', ');
+  const extra = /Report/.test(p.type)
+    ? { type: 'Report', title: p.title, format: 'gated PDF' }
+    : /Asset/.test(p.type)
+      ? { type: 'Asset', title: p.title, format: 'printable page' }
+      : undefined;
+  const file = `briefs/${p.date}-${slug}.md`;
+  write(path.join(ED, file), briefFile({
+    id: p.id, date: p.date, week, weekday: DOW[d.getDay()], slotName: 'Partner', slot: 'P', section,
+    title: p.title, slug, query: p.query, wordCount: p.words, extra, tags, serves, partnerType: p.type,
+  }));
+  briefCount++;
+  pushRow({
+    publish_date: p.date, weekday: DOW[d.getDay()], week: W, slot: 'P', slot_job: 'partner', brief_id: p.id,
+    brief_file: file, output_file: `output/${slug}.md`, working_h1: p.title, primary_query: p.query,
+    content_type: `Partner ${p.type}`, industry: '', status: 'not_started',
+    notes: `Finding a partner cluster. Tags: ${tags.join(', ')}.`,
+  });
+}
+// Keep the file in date order, and the four fixed slots before P on a shared day.
+const SLOT_ORDER = { S: 0, A: 1, L: 2, T: 3, R: 3, P: 4 };
+schedule.sort((a, b) => a[0].localeCompare(b[0]) || SLOT_ORDER[a[3]] - SLOT_ORDER[b[3]]);
 
 // Standing files.
 write(path.join(BRIEFS, 'PREAMBLE.md'), `# Standing preamble (Part 0 of the master plan)

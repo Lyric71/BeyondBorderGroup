@@ -6,7 +6,7 @@ updatedDate: "2026-09-04"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "JD", "Douyin"]
-tags: ["China distributor", "own store", "Tmall Global", "market entry", "cross-border ecommerce", "distribution"]
+tags: ["China distributor", "own store", "Tmall Global", "market entry", "cross-border ecommerce", "distribution", "Finding a partner"]
 keyTakeaways:
   - "A distributor gets a foreign brand into China with no working capital and no local team. The price is margin, customer data and control of pricing and assortment."
   - "A Tmall Global flagship at 3.5 million RMB of first-year sales needs about 2.8 million RMB of cash in year one, of which 450,000 RMB comes back as refundable deposits (TheChinaPath calculator data, September 2026)."

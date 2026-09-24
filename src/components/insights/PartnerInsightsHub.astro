@@ -1,0 +1,437 @@
+---
+/**
+ * Finding a partner: the reading list behind Find a partner > Insights.
+ * Lists every English insight tagged PARTNER_INSIGHT_TAG, newest first.
+ * English only for now (no locale twins yet).
+ *
+ * Articles only. The three guides already sit in the header menu right above
+ * this entry, so the page does not repeat them.
+ *
+ * Same system as the Trends and CEO's Opinion hubs (dark hero with counters,
+ * the shared tr-* cards, a dark closing band), plus:
+ *   - the newest article's photograph drifting behind the hero
+ *   - topic chips (distributors, TPs, DPs, contracts...) read from each
+ *     article's tags, shown once two topics have articles
+ *   - the newest article as a wide feature card above the grid
+ * A second way into articles that still list on Trends or Industry Insights,
+ * never a move.
+ *
+ * One component for every locale: `locale` picks the strings in
+ * partner-guides/ui.ts, and getPartnerInsights() lists the locale's twins of
+ * the English articles that carry the partner tag.
+ */
+import Layout from '../../layouts/Layout.astro';
+import { CATEGORY_ICONS, TRENDS_COPY } from '../../lib/insight-hubs';
+import { getPartnerInsights } from '../../lib/partner-guides';
+import { GUIDE_UI, type GuideLocale } from '../../content/pages/partner-guides/ui';
+import { localizePath } from '../../i18n/utils';
+import '../../styles/insight-hubs.css';
+
+interface Props {
+  locale?: GuideLocale;
+}
+const { locale = 'en' } = Astro.props;
+const u = GUIDE_UI[locale];
+const h = u.hub;
+const lp = (p: string) => localizePath(p, locale);
+
+const categories = (TRENDS_COPY[locale] ?? TRENDS_COPY.en)!.categories;
+const catLabel = (k: string) => categories[k] ?? k;
+
+const posts = await getPartnerInsights(locale);
+const [featured, ...rest] = posts;
+
+const minutesOf = (body: string | undefined) =>
+  body ? Math.max(1, Math.round(body.trim().split(/\s+/).length / 200)) : 0;
+const totalMinutes = posts.reduce((sum, p) => sum + minutesOf(p.body), 0);
+const newest = posts[0]?.data.pubDate;
+const fmtLong = (d?: Date) =>
+  d ? d.toLocaleDateString(u.dateLocale, { month: 'long', day: 'numeric', year: 'numeric' }) : '';
+const fmtShort = (d?: Date) => (d ? d.toLocaleDateString(u.dateLocale, { month: 'short', year: 'numeric' }) : '');
+
+// Topics, matched on tags (case-insensitive). A post can sit in several.
+const TOPICS = [
+  { key: 'distributors', label: h.topics.distributors, tags: ['distributors', 'china distributor', 'distribution', 'importer'] },
+  { key: 'tp', label: h.topics.tp, tags: ['tmall partners', 'tmall partner', 'tp'] },
+  { key: 'dp', label: h.topics.dp, tags: ['douyin partners', 'douyin partner', 'dp'] },
+  { key: 'contracts', label: h.topics.contracts, tags: ['contracts', 'contract', 'distribution agreement', 'exclusivity'] },
+  { key: 'checks', label: h.topics.checks, tags: ['due diligence', 'verification'] },
+  { key: 'managing', label: h.topics.managing, tags: ['managing a partner', 'partner management'] },
+];
+const topicsOf = (tags: string[]) => {
+  const t = tags.map((x) => x.toLowerCase());
+  return TOPICS.filter((tp) => tp.tags.some((a) => t.includes(a))).map((tp) => tp.key);
+};
+// Topics read the English tags, so the chips work the same in every locale.
+const liveTopics = TOPICS.filter((tp) => posts.some((p) => topicsOf(p.enTags).includes(tp.key)));
+---
+
+<Layout
+  title={h.title}
+  description={h.description}
+  ogImage={posts[0]?.data.heroImage}
+  ogImageAlt={posts[0]?.data.heroImageAlt}
+>
+  <div class="ix tr" data-ix>
+    <section class="ix-hero">
+      <div class="ix-hero__glow" aria-hidden="true"></div>
+      {
+        featured?.data.heroImage && (
+          <div class="ix-hero__media" aria-hidden="true">
+            <img src={featured.data.heroImage} alt="" width="1200" height="800" fetchpriority="high" />
+          </div>
+        )
+      }
+      <div class="container ix-hero__inner">
+        <span class="eyebrow eyebrow--on-dark ix-rise">{h.eyebrow}</span>
+        <h1 class="ix-hero__title ix-rise" style="--d:80ms">{h.h1}</h1>
+        <p class="ix-hero__lead ix-rise" style="--d:160ms">
+          {h.lead}
+        </p>
+        <div class="ix-hero__actions ix-rise" style="--d:240ms">
+          <a href="#articles" class="btn btn--primary">{h.readArticles}</a>
+          <a href={lp('/compass')} class="btn btn--ghost-light">{u.exploreCompass}</a>
+        </div>
+        {
+          posts.length >= 3 && (
+            <dl class="ix-stats ix-rise" style="--d:320ms">
+              <div class="ix-stats__item">
+                <dt>{h.statArticles}</dt>
+                <dd><span data-count={posts.length}>{posts.length}</span></dd>
+              </div>
+              <div class="ix-stats__item">
+                <dt>{h.statMinutes}</dt>
+                <dd><span data-count={totalMinutes}>{totalMinutes}</span></dd>
+              </div>
+              {newest && (
+                <div class="ix-stats__item">
+                  <dt>{h.statLatest}</dt>
+                  <dd class="ix-stats__date">
+                    <time datetime={newest.toISOString().slice(0, 10)}>{fmtLong(newest)}</time>
+                  </dd>
+                </div>
+              )}
+            </dl>
+          )
+        }
+      </div>
+    </section>
+
+    <section class="tr-archive" id="articles" aria-labelledby="pi-articles">
+      <div class="container">
+        <header class="tr-head" data-ix-reveal>
+          <span class="eyebrow">{h.articlesEyebrow}</span>
+          <h2 id="pi-articles">{h.articlesTitle}</h2>
+          {newest && (
+            <p class="pi-fresh">{h.freshBefore} <time datetime={newest.toISOString().slice(0, 10)}>{fmtLong(newest)}</time>{h.freshAfter}</p>
+          )}
+        </header>
+        {
+          liveTopics.length > 1 && (
+            <div class="pi-topics" role="group" aria-label={h.filterAria} data-pi-topics data-ix-reveal>
+              <button type="button" class="pi-chip" data-pi-topic="" aria-pressed="true">{h.all}</button>
+              {liveTopics.map((tp) => (
+                <button type="button" class="pi-chip" data-pi-topic={tp.key} aria-pressed="false">
+                  {tp.label}
+                </button>
+              ))}
+            </div>
+          )
+        }
+        {
+          featured ? (
+            <>
+              <a
+                href={featured.href}
+                class="pi-feature"
+                data-ix-reveal
+                data-ix-spot
+                data-pi-item={topicsOf(featured.enTags).join(' ')}
+              >
+                <span class="pi-feature__media">
+                  <img
+                    src={featured.data.heroImage}
+                    alt={featured.data.heroImageAlt}
+                    width="900"
+                    height="600"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+                <span class="pi-feature__body">
+                  <span class="pi-feature__kicker">
+                    <span class="pi-feature__new">{h.latest}</span>
+                    <span class="tr-cat">
+                      <span class="tr-cat__icon" set:html={CATEGORY_ICONS[featured.data.category] ?? ''} />
+                      {catLabel(featured.data.category)}
+                    </span>
+                  </span>
+                  <span class="pi-feature__title">{featured.data.title}</span>
+                  <span class="pi-feature__desc">{featured.data.description}</span>
+                  <span class="pi-feature__foot">
+                    <span>
+                      {minutesOf(featured.body)} {h.minRead}
+                      {featured.data.pubDate && <> · {fmtShort(featured.data.pubDate)}</>}
+                    </span>
+                    <span class="pi-feature__go">
+                      {u.readArticle} <span aria-hidden="true">→</span>
+                    </span>
+                  </span>
+                </span>
+              </a>
+              {rest.length > 0 && (
+                <ul class="tr-grid pi-grid" role="list">
+                  {rest.map((p, i) => (
+                    <li
+                      class="tr-item"
+                      data-ix-reveal
+                      style={`--d:${(i % 3) * 70}ms`}
+                      data-pi-item={topicsOf(p.enTags).join(' ')}
+                    >
+                      <a href={p.href} class="tr-card" data-ix-spot>
+                        <span class="tr-card__media">
+                          <img
+                            src={p.data.heroImage}
+                            alt={p.data.heroImageAlt}
+                            width="600"
+                            height="400"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                          <span class="tr-pills tr-card__pills">
+                            <span class="tr-cat tr-cat--glass">
+                              <span class="tr-cat__icon" set:html={CATEGORY_ICONS[p.data.category] ?? ''} />
+                              {catLabel(p.data.category)}
+                            </span>
+                          </span>
+                        </span>
+                        <span class="tr-card__body">
+                          <h3 class="tr-card__title">{p.data.title}</h3>
+                          <span class="tr-card__desc">{p.data.description}</span>
+                          <span class="tr-card__foot">
+                            <span class="tr-card__meta">
+                              {minutesOf(p.body)} {h.minRead}
+                              {p.data.pubDate && <> · {fmtShort(p.data.pubDate)}</>}
+                            </span>
+                          </span>
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </>
+          ) : (
+            <p data-ix-reveal>{h.empty}</p>
+          )
+        }
+      </div>
+    </section>
+
+    <section class="ix-cta">
+      <div class="ix-cta__glow" aria-hidden="true"></div>
+      <div class="container ix-cta__inner" data-ix-reveal>
+        <span class="eyebrow eyebrow--on-dark">{h.ctaEyebrow}</span>
+        <h2>{h.ctaTitle}</h2>
+        <p>{h.ctaBody}</p>
+        <div class="ix-cta__actions">
+          <a href={lp('/compass/shortlist')} class="btn btn--primary">{h.ctaPrimary}</a>
+          <a href={lp('/how-we-work')} class="btn btn--ghost-light">{h.ctaSecondary}</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  import { initReveal, initCountUp, initSpotlight } from '../../scripts/insight-hubs';
+
+  const root = document.querySelector<HTMLElement>('[data-ix]');
+  if (root) {
+    root.classList.add('ix--js');
+    initReveal(root);
+    initCountUp(root);
+    initSpotlight(root);
+
+    // Topic chips: show the articles whose tags fall in that topic.
+    const chips = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-pi-topic]'));
+    const items = Array.from(root.querySelectorAll<HTMLElement>('[data-pi-item]'));
+    chips.forEach((chip) =>
+      chip.addEventListener('click', () => {
+        const topic = chip.dataset.piTopic || '';
+        chips.forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+        items.forEach((el) => {
+          el.hidden = !!topic && !(el.dataset.piItem || '').split(' ').includes(topic);
+          if (!el.hidden) el.classList.add('is-in');
+        });
+      }),
+    );
+  }
+</script>
+
+<style>
+  .pi-fresh {
+    margin: var(--space-2) 0 0;
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
+  /* ---------- Topic chips ---------- */
+  .pi-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: calc(var(--space-4) * -1) 0 var(--space-5);
+  }
+  .pi-chip {
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--bbg-border);
+    background: var(--bbg-white);
+    color: var(--bbg-ink);
+    font: inherit;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+      background 200ms ease,
+      border-color 200ms ease,
+      color 200ms ease,
+      transform 200ms ease;
+  }
+  .pi-chip:hover {
+    border-color: var(--bbg-blue);
+    transform: translateY(-1px);
+  }
+  .pi-chip[aria-pressed='true'] {
+    background: #111113;
+    border-color: #111113;
+    color: #fff;
+  }
+  .pi-chip:focus-visible {
+    outline: 3px solid var(--bbg-blue);
+    outline-offset: 2px;
+  }
+  [data-pi-item][hidden] {
+    display: none !important;
+  }
+
+  /* ---------- Featured article ---------- */
+  .pi-feature {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    border-radius: 24px;
+    overflow: hidden;
+    background: #111113;
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 50px 90px -60px rgba(17, 17, 19, 0.8);
+    transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .pi-feature::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(500px circle at var(--mx, 80%) var(--my, 0%), rgba(200, 16, 46, 0.25), transparent 60%);
+  }
+  .pi-feature:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-4px);
+  }
+  .pi-feature:focus-visible {
+    outline: 3px solid var(--bbg-blue);
+    outline-offset: 3px;
+  }
+  .pi-feature__media {
+    display: block;
+    min-height: 320px;
+    overflow: hidden;
+  }
+  .pi-feature__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .pi-feature:hover .pi-feature__media img {
+    transform: scale(1.05);
+  }
+  .pi-feature__body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: clamp(1.75rem, 4vw, 3rem);
+  }
+  .pi-feature__kicker {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .pi-feature__new {
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: var(--bbg-blue);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .pi-feature__title {
+    font-size: clamp(1.5rem, 1.4vw + 1rem, 2.125rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+  .pi-feature__desc {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  .pi-feature__foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-top: auto;
+    padding-top: var(--space-4);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: var(--fs-small);
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .pi-feature__go {
+    font-weight: 700;
+    color: #ff6b7f;
+  }
+  .pi-feature__go span {
+    display: inline-block;
+    transition: transform 250ms ease;
+  }
+  .pi-feature:hover .pi-feature__go span {
+    transform: translateX(5px);
+  }
+  .pi-grid {
+    margin-top: var(--space-5);
+  }
+
+  @media (max-width: 900px) {
+    .pi-feature {
+      grid-template-columns: 1fr;
+    }
+    .pi-feature__media {
+      min-height: 0;
+      aspect-ratio: 16 / 9;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pi-chip,
+    .pi-feature,
+    .pi-feature__media img {
+      animation: none;
+      transition: none;
+    }
+  }
+</style>

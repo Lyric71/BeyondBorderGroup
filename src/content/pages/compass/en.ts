@@ -148,7 +148,6 @@ const copy: CompassCopy = {
       },
     ],
     noCommission: 'No commission from distributors. Ever.',
-    signInPrompt: { before: 'Already a Compass partner? Sign in at ', after: '.' },
   },
 
   index: {
@@ -280,10 +279,10 @@ const copy: CompassCopy = {
       honeypot: 'Leave this field empty',
     },
     stages: [
-      'Not in China yet, working out the model',
-      'Entering now, need a first partner',
-      'Already selling, replacing a partner',
-      'Already selling, adding a channel or region',
+      'Not in China yet, still choosing between a distributor, a TP and a DP',
+      'Entering now, looking for a first distributor, TP or DP',
+      'Already selling, replacing a distributor, TP or DP that isn\'t delivering',
+      'Already selling, adding a distributor, TP or DP for a new channel or region',
     ],
     submit: 'Send the brief',
     submitting: 'Sending the brief…',

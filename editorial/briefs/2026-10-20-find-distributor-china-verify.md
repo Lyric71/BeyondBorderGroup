@@ -61,7 +61,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 5. The three answers that end a conversation
 6. What a vetted shortlist actually looks like
 
-**Internal links.** `/compass`, `/compass/how-it-works`, `/enter-china/distribution`, `/work`
+**Internal links.** `/compass`, `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/work`
 **CTA.** Compass shortlist.
 
 ## Slot spec

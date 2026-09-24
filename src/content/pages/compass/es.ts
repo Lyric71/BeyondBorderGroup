@@ -148,7 +148,6 @@ const copy: CompassCopy = {
       },
     ],
     noCommission: 'Ninguna comisión de los distribuidores. Nunca.',
-    signInPrompt: { before: '¿Ya es socio de Compass? Acceda en ', after: '.' },
   },
 
   index: {

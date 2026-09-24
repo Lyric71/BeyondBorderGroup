@@ -297,6 +297,7 @@ the image step.
 | Status | Set when |
 |---|---|
 | `not_started` | Default |
+| `drafting` | A run (manual or agent) has claimed the row; scheduled runs leave it alone |
 | `drafted` | createarticle finished, `output/<slug>.md` saved |
 | `quality_passed` | content-quality-us finished on the file |
 | `image_ready` | hero image checked and saved to `public/Images/insights/` |

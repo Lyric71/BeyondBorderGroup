@@ -9,13 +9,23 @@
  * arrival. Captcha, honeypot and status behaviour match /contact.astro
  * deliberately: one pattern, one set of bugs.
  *
+ * Layout: a dark photo hero, then the brief card lifted over its bottom edge
+ * with a sticky "what happens next" timeline beside it. The brief reads top to
+ * bottom the way the first call does: category (icon tiles), stage (choice
+ * cards), the problem, then who you are. A thin bar on the card fills as the
+ * required answers come in, and a missing answer is flagged on the field
+ * itself as well as in the status line.
+ *
+ * Every visible string comes from the locale copy object, so the four locales
+ * share this markup unchanged. Category and stage icons map by position; the
+ * lists run in the same order in every locale.
+ *
  * The strings the inline script needs (validation messages, the button's two
  * states, the thank-you URL) are handed to it through define:vars so the
  * locale copy object drives them.
  */
 import Layout from '../../../layouts/Layout.astro';
 import { getLocaleFromUrl, localizePath } from '../../../i18n/utils';
-import { APP_URL } from '../../../data/compass';
 import type { CompassCopy } from '../../../content/pages/compass/types';
 
 interface Props {
@@ -27,7 +37,6 @@ const { facts, shortlist: c } = copy;
 
 const locale = getLocaleFromUrl(Astro.url);
 const thankYouHref = localizePath('/thank-you', locale);
-const appHost = APP_URL.replace(/^https?:\/\//, '');
 
 const js = {
   thankYou: thankYouHref,
@@ -39,173 +48,235 @@ const js = {
   errNetwork: c.errors.network,
   success: c.success,
 };
+
+// 24px stroke icons.
+const I = {
+  shield: 'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3zM8.5 12l2.5 2.5 4.5-5',
+  user: 'M12 12a4 4 0 100-8 4 4 0 000 8zM4 21v-1a7 7 0 0114 0v1',
+  mail: 'M3 6h18v12H3zM3 7l9 6 9-6',
+  building: 'M4 21V5l8-2v18M12 8h8v13M8 8h.01M8 12h.01M8 16h.01M16 12h.01M16 16h.01M3 21h18',
+  globe: 'M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18',
+  chat: 'M21 12a8 8 0 01-12 7l-5 1 1-4a8 8 0 1116-4z',
+  compass: 'M12 21a9 9 0 100-18 9 9 0 000 18zM15.5 8.5l-2 5-5 2 2-5 5-2z',
+  handshake: 'M3 12l4-4 4 2 3-2 7 5M3 12l5 5 2-1 2 2 2-1 2 1 3-3M11 10l-2 3',
+  arrow: 'M5 12h14M13 6l6 6-6 6',
+  check: 'M5 12.5l4.5 4.5L19 7.5',
+  bot: 'M12 3v3M6 8h12a2 2 0 012 2v7a2 2 0 01-2 2H6a2 2 0 01-2-2v-7a2 2 0 012-2zM9 13h.01M15 13h.01M9.5 16.5h5',
+};
+
+// Category icons, in the order every locale lists its categories.
+const categoryIcons = [
+  'M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16z',
+  'M5 8h12v5a5 5 0 01-5 5h-2a5 5 0 01-5-5V8zM17 9h1.5a2.5 2.5 0 010 5H17M8 3v2M12 3v2M5 21h12',
+  'M8 3L3 6l2 4 2-1v12h10V9l2 1 2-4-5-3a4 4 0 01-8 0z',
+  'M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6',
+  'M5 19c0-8 5-14 15-15-1 10-7 15-15 15zM5 19l8-8',
+  'M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z',
+  'M8 7.5a1.5 2 0 100-4 1.5 2 0 000 4zM16 7.5a1.5 2 0 100-4 1.5 2 0 000 4zM4.5 12a1.5 2 0 100-4 1.5 2 0 000 4zM19.5 12a1.5 2 0 100-4 1.5 2 0 000 4zM12 11c-3 0-6 4-6 6.5 0 2 2 2.5 3 2.5 1.2 0 2-.6 3-.6s1.8.6 3 .6c1 0 3-.5 3-2.5C18 15 15 11 12 11z',
+  'M10.5 20.5a5 5 0 01-7-7l7-7a5 5 0 017 7l-7 7zM7 10l7 7',
+];
+const otherIcon = 'M5 12h.01M12 12h.01M19 12h.01';
+
+// Stage icons: still choosing, entering, replacing, adding.
+const stageIcons = [
+  I.compass,
+  'M10 17l5-5-5-5M15 12H3M14 3h5a2 2 0 012 2v14a2 2 0 01-2 2h-5',
+  'M4 4v6h6M20 20v-6h-6M19.4 9A8 8 0 006 5.3L4 7.5M4.6 15A8 8 0 0018 18.7l2-2.2',
+  'M12 21a9 9 0 100-18 9 9 0 000 18zM12 8v8M8 12h8',
+];
+
+const stepIcons = [I.chat, I.compass, I.handshake];
 ---
 
 <Layout title={c.title} description={c.description}>
-  <section class="section section--dark cmp-hero">
-    <div class="container">
-      <span class="eyebrow">{c.eyebrow}</span>
-      <h1 class="h1">{c.h1}</h1>
-      <p class="lead cmp-hero__lead">{c.lead}</p>
-      <p class="cmp-hero__body">{facts.noCommission}</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container sl-layout">
-      <!-- The form -->
-      <div class="sl-form-card">
-        <h2 class="sl-form-title">{c.formTitle}</h2>
-        <form class="form" id="shortlist-form" novalidate>
-          <div class="form__row form__row--2">
-            <div class="field">
-              <label class="field__label" for="name"
-                >{c.fields.name} <span aria-hidden="true">*</span></label
-              >
-              <input
-                class="field__input"
-                type="text"
-                id="name"
-                name="name"
-                autocomplete="name"
-                required
-              />
-            </div>
-            <div class="field">
-              <label class="field__label" for="email"
-                >{c.fields.email} <span aria-hidden="true">*</span></label
-              >
-              <input
-                class="field__input"
-                type="email"
-                id="email"
-                name="email"
-                autocomplete="email"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="form__row form__row--2">
-            <div class="field">
-              <label class="field__label" for="company"
-                >{c.fields.company} <span aria-hidden="true">*</span></label
-              >
-              <input
-                class="field__input"
-                type="text"
-                id="company"
-                name="company"
-                autocomplete="organization"
-                required
-              />
-            </div>
-            <div class="field">
-              <label class="field__label" for="website">{c.fields.website}</label>
-              <input
-                class="field__input"
-                type="url"
-                id="website"
-                name="website"
-                autocomplete="url"
-                placeholder="https://"
-              />
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="field__label" for="category"
-              >{c.fields.category} <span aria-hidden="true">*</span></label
-            >
-            <select class="field__input" id="category" name="category" required>
-              <option value="">{c.fields.categoryPlaceholder}</option>
-              {facts.categories.map((cat) => <option value={cat}>{cat}</option>)}
-              <option value="Other">{c.fields.categoryOther}</option>
-            </select>
-          </div>
-
-          <fieldset class="field field--fieldset">
-            <legend class="field__label">
-              {c.fields.stage} <span aria-hidden="true">*</span>
-            </legend>
-            {
-              c.stages.map((s, i) => (
-                <label class="sl-radio">
-                  <input type="radio" name="stage" value={s} required={i === 0} />
-                  <span>{s}</span>
-                </label>
-              ))
-            }
-          </fieldset>
-
-          <div class="field">
-            <label class="field__label" for="message"
-              >{c.fields.message} <span aria-hidden="true">*</span></label
-            >
-            <textarea
-              class="field__input field__textarea"
-              id="message"
-              name="message"
-              rows="5"
-              placeholder={c.fields.messagePlaceholder}
-              required></textarea>
-          </div>
-
-          <div class="field field--captcha">
-            <label class="field__label" for="captcha">
-              {c.fields.captchaBefore}<span id="captchaA">?</span> + <span id="captchaB">?</span
-              >{c.fields.captchaAfter}
-              <span aria-hidden="true">*</span>
-            </label>
-            <input
-              class="field__input field__input--captcha"
-              type="text"
-              inputmode="numeric"
-              pattern="[0-9]*"
-              id="captcha"
-              name="captcha"
-              autocomplete="off"
-              required
-            />
-          </div>
-
-          {/* honeypot, bots fill this, humans don't see it */}
-          <div class="form__honeypot" aria-hidden="true">
-            <label for="website_url">{c.fields.honeypot}</label>
-            <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
-          </div>
-
-          <div class="form__footer">
-            <button type="submit" class="btn btn--primary form__submit" id="shortlist-submit">
-              {c.submit}
-            </button>
-            <p class="form__note">{c.consent}</p>
-          </div>
-
-          <p class="form__status" id="shortlist-status" role="status" aria-live="polite"></p>
-        </form>
+  <div class="sl" data-sl>
+    {/* ---------- Hero ---------- */}
+    <section class="sl-hero">
+      <div class="sl-hero__media" aria-hidden="true">
+        <img src="/Images/compass/compass-hero.webp" alt="" width="1536" height="1024" fetchpriority="high" />
       </div>
-
-      <!-- What happens next -->
-      <aside class="sl-aside">
-        <span class="eyebrow">{c.asideEyebrow}</span>
-        <h2 class="h3">{c.asideTitle}</h2>
-        <div class="sl-steps">
-          {
-            facts.steps.items.map((step) => (
-              <div class="sl-step">
-                <p class="sl-step__label">{step.label}</p>
-                <p class="sl-step__body">{step.body}</p>
-              </div>
-            ))
-          }
-        </div>
-        <p class="sl-aside__note">
-          {facts.signInPrompt.before}<a href={APP_URL}>{appHost}</a>{facts.signInPrompt.after}
+      <div class="sl-hero__glow" aria-hidden="true"></div>
+      <div class="container sl-hero__inner">
+        <span class="eyebrow eyebrow--on-dark sl-rise">{c.eyebrow}</span>
+        <h1 class="sl-hero__title sl-rise" style="--d: 80ms">{c.h1}</h1>
+        <p class="sl-hero__lead sl-rise" style="--d: 160ms">{c.lead}</p>
+        <p class="sl-hero__badge sl-rise" style="--d: 240ms">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.shield} /></svg>
+          {facts.noCommission}
         </p>
-      </aside>
-    </div>
-  </section>
+      </div>
+    </section>
+
+    {/* ---------- Brief + what happens next ---------- */}
+    <section class="sl-body">
+      <div class="container sl-layout">
+        <div class="sl-card sl-rise" style="--d: 200ms">
+          <div class="sl-card__bar" aria-hidden="true"><span data-sl-progress></span></div>
+          <h2 class="sl-card__title">{c.formTitle}</h2>
+
+          <form class="sl-form" id="shortlist-form" novalidate>
+            {/* Category */}
+            <fieldset class="sl-group" data-sl-group="category">
+              <legend class="sl-q">
+                {c.fields.category} <span class="sl-req" aria-hidden="true">*</span>
+              </legend>
+              <div class="sl-tiles">
+                {facts.categories.map((cat, i) => (
+                  <label class="sl-tile">
+                    <input type="radio" name="category" value={cat} required={i === 0} />
+                    <span class="sl-tile__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24"><path d={categoryIcons[i] ?? otherIcon} /></svg>
+                    </span>
+                    <span class="sl-tile__label">{cat}</span>
+                    <span class="sl-tick" aria-hidden="true">
+                      <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
+                    </span>
+                  </label>
+                ))}
+                <label class="sl-tile">
+                  <input type="radio" name="category" value="Other" />
+                  <span class="sl-tile__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="sl-dots"><path d={otherIcon} /></svg>
+                  </span>
+                  <span class="sl-tile__label">{c.fields.categoryOther}</span>
+                  <span class="sl-tick" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            {/* Stage */}
+            <fieldset class="sl-group" data-sl-group="stage">
+              <legend class="sl-q">
+                {c.fields.stage} <span class="sl-req" aria-hidden="true">*</span>
+              </legend>
+              <div class="sl-stages">
+                {c.stages.map((s, i) => (
+                  <label class="sl-stage">
+                    <input type="radio" name="stage" value={s} required={i === 0} />
+                    <span class="sl-stage__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24"><path d={stageIcons[i % stageIcons.length]} /></svg>
+                    </span>
+                    <span class="sl-stage__label">{s}</span>
+                    <span class="sl-tick" aria-hidden="true">
+                      <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+
+            {/* The problem */}
+            <div class="sl-group" data-sl-group="message">
+              <label class="sl-q" for="message">
+                {c.fields.message} <span class="sl-req" aria-hidden="true">*</span>
+              </label>
+              <div class="sl-area">
+                <textarea
+                  class="sl-input sl-input--area"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder={c.fields.messagePlaceholder}
+                  required></textarea>
+              </div>
+            </div>
+
+            {/* Who you are */}
+            <div class="sl-grid">
+              {[
+                { id: 'name', type: 'text', auto: 'name', label: c.fields.name, icon: I.user, req: true },
+                { id: 'email', type: 'email', auto: 'email', label: c.fields.email, icon: I.mail, req: true },
+                { id: 'company', type: 'text', auto: 'organization', label: c.fields.company, icon: I.building, req: true },
+                { id: 'website', type: 'url', auto: 'url', label: c.fields.website, icon: I.globe, req: false },
+              ].map((f) => (
+                <div class="sl-group sl-field" data-sl-group={f.req ? f.id : undefined}>
+                  <label class="sl-label" for={f.id}>
+                    {f.label} {f.req && <span class="sl-req" aria-hidden="true">*</span>}
+                  </label>
+                  <div class="sl-control">
+                    <svg class="sl-control__icon" viewBox="0 0 24 24" aria-hidden="true"><path d={f.icon} /></svg>
+                    <input
+                      class="sl-input"
+                      type={f.type as 'text' | 'email' | 'url'}
+                      id={f.id}
+                      name={f.id}
+                      autocomplete={f.auto}
+                      placeholder={f.id === 'website' ? 'https://' : undefined}
+                      required={f.req}
+                    />
+                    <svg class="sl-control__ok" viewBox="0 0 24 24" aria-hidden="true"><path d={I.check} /></svg>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* honeypot, bots fill this, humans don't see it */}
+            <div class="form__honeypot" aria-hidden="true">
+              <label for="website_url">{c.fields.honeypot}</label>
+              <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="sl-foot">
+              <div class="sl-group sl-captcha" data-sl-group="captcha">
+                <span class="sl-captcha__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d={I.bot} /></svg>
+                </span>
+                <label class="sl-captcha__label" for="captcha">
+                  {c.fields.captchaBefore}<strong><span id="captchaA">?</span> + <span id="captchaB">?</span></strong
+                  >{c.fields.captchaAfter}
+                  <span class="sl-req" aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="sl-input sl-input--captcha"
+                  type="text"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  id="captcha"
+                  name="captcha"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <button type="submit" class="sl-submit" id="shortlist-submit">
+                <span data-sl-submit-label>{c.submit}</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.arrow} /></svg>
+              </button>
+            </div>
+
+            <p class="sl-consent">{c.consent}</p>
+            <p class="sl-status" id="shortlist-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        {/* What happens next */}
+        <aside class="sl-aside sl-rise" style="--d: 300ms">
+          <div class="sl-aside__card">
+            <span class="eyebrow eyebrow--on-dark">{c.asideEyebrow}</span>
+            <h2 class="sl-aside__title">{c.asideTitle}</h2>
+            <ol class="sl-timeline" role="list">
+              {facts.steps.items.map((step, i) => (
+                <li class="sl-timeline__item">
+                  <span class="sl-timeline__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d={stepIcons[i % stepIcons.length]} /></svg>
+                  </span>
+                  <div>
+                    <p class="sl-timeline__label">{step.label}</p>
+                    <p class="sl-timeline__body">{step.body}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <p class="sl-aside__promise">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.shield} /></svg>
+              {facts.noCommission}
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </div>
 </Layout>
 
 <script is:inline define:vars={{ js }}>
@@ -214,9 +285,12 @@ const js = {
     if (!form) return;
     const status = document.getElementById('shortlist-status');
     const submit = document.getElementById('shortlist-submit');
+    const submitLabel = submit.querySelector('[data-sl-submit-label]');
     const captchaA = document.getElementById('captchaA');
     const captchaB = document.getElementById('captchaB');
     const captchaInput = document.getElementById('captcha');
+    const bar = document.querySelector('[data-sl-progress]');
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     function rollCaptcha() {
       const a = 1 + Math.floor(Math.random() * 9);
@@ -228,10 +302,63 @@ const js = {
     }
     rollCaptcha();
 
+    // Which required answers are in. Keys match data-sl-group.
+    const emailOk = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    function answers() {
+      const d = new FormData(form);
+      const v = (k) => String(d.get(k) || '').trim();
+      return {
+        category: !!v('category'),
+        stage: !!v('stage'),
+        message: !!v('message'),
+        name: !!v('name'),
+        email: emailOk(v('email')),
+        company: !!v('company'),
+        captcha: !!v('captcha'),
+      };
+    }
+    function paint() {
+      const a = answers();
+      const keys = Object.keys(a);
+      const done = keys.filter((k) => a[k]).length;
+      if (bar) bar.style.transform = 'scaleX(' + done / keys.length + ')';
+      keys.forEach((k) => {
+        const g = form.querySelector('[data-sl-group="' + k + '"]');
+        if (!g) return;
+        g.classList.toggle('is-done', a[k]);
+        if (a[k]) {
+          g.classList.remove('is-missing');
+          g.querySelectorAll('[aria-invalid]').forEach((el) => el.removeAttribute('aria-invalid'));
+        }
+      });
+    }
+    function flagMissing(keys) {
+      const a = answers();
+      let first = null;
+      keys.forEach((k) => {
+        if (a[k]) return;
+        const g = form.querySelector('[data-sl-group="' + k + '"]');
+        if (!g) return;
+        g.classList.remove('is-missing');
+        void g.offsetWidth;
+        g.classList.add('is-missing');
+        g.querySelectorAll('input:not([type="radio"]), textarea').forEach((el) => el.setAttribute('aria-invalid', 'true'));
+        if (!first) first = g;
+      });
+      if (first) {
+        first.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+        const focusable = first.querySelector('input, textarea');
+        if (focusable) focusable.focus({ preventScroll: true });
+      }
+    }
+    form.addEventListener('input', paint);
+    form.addEventListener('change', paint);
+    paint();
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       status.textContent = '';
-      status.className = 'form__status';
+      status.className = 'sl-status';
 
       const data = new FormData(form);
       if (data.get('website_url')) return; // honeypot tripped, silently drop
@@ -253,28 +380,33 @@ const js = {
         captchaExpected: String(form.dataset.captchaSum || ''),
       };
 
-      const captchaNum = parseInt(payload.captcha, 10);
-      const expectedNum = parseInt(payload.captchaExpected, 10);
-      if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
-        status.textContent = js.errCaptcha;
-        status.classList.add('form__status--error');
-        rollCaptcha();
-        return;
-      }
-
       if (!payload.name || !payload.email || !payload.company || !category || !stage) {
         status.textContent = js.errRequired;
-        status.classList.add('form__status--error');
+        status.classList.add('sl-status--error');
+        flagMissing(['category', 'stage', 'name', 'email', 'company']);
         return;
       }
       if (!payload.message) {
         status.textContent = js.errMessage;
-        status.classList.add('form__status--error');
+        status.classList.add('sl-status--error');
+        flagMissing(['message']);
+        return;
+      }
+
+      const captchaNum = parseInt(payload.captcha, 10);
+      const expectedNum = parseInt(payload.captchaExpected, 10);
+      if (!Number.isFinite(captchaNum) || captchaNum !== expectedNum) {
+        status.textContent = js.errCaptcha;
+        status.classList.add('sl-status--error');
+        rollCaptcha();
+        paint();
+        flagMissing(['captcha']);
         return;
       }
 
       submit.disabled = true;
-      submit.textContent = js.submitting;
+      submit.classList.add('is-sending');
+      submitLabel.textContent = js.submitting;
 
       try {
         const res = await fetch('/api/contact', {
@@ -287,110 +419,803 @@ const js = {
 
         form.reset();
         rollCaptcha();
+        paint();
         status.textContent = js.success;
-        status.classList.add('form__status--success');
+        status.classList.add('sl-status--success');
         window.location.assign(js.thankYou);
         return;
       } catch (err) {
         status.textContent = err && err.message ? err.message : js.errNetwork;
-        status.classList.add('form__status--error');
+        status.classList.add('sl-status--error');
       } finally {
         submit.disabled = false;
-        submit.textContent = js.submit;
+        submit.classList.remove('is-sending');
+        submitLabel.textContent = js.submit;
       }
     });
   })();
 </script>
 
 <style>
-  .cmp-hero .h1 {
-    max-width: 18ch;
+  .sl {
+    --sl-ink: #111113;
+    --sl-red: var(--bbg-blue);
+    --sl-red-soft: #ff6b7f;
+    --sl-green: #1f7a55;
+    --sl-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --sl-lift: clamp(96px, 12vw, 150px);
+  }
+  .sl svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
+  /* ---------- Entrance ---------- */
+  /* CSS only, so the form never waits on a script to become visible. */
+  .sl-rise {
+    animation: sl-rise 700ms var(--sl-ease) var(--d, 0ms) both;
+  }
+  @keyframes sl-rise {
+    from {
+      opacity: 0;
+      translate: 0 18px;
+    }
+  }
+
+  /* ---------- Hero ---------- */
+  .sl-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: clip;
+    background: var(--sl-ink);
+    color: #fff;
+    padding: clamp(3.5rem, 7vw, 6rem) 0 calc(var(--sl-lift) + clamp(2.5rem, 5vw, 4rem));
+  }
+  .sl-hero__media {
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: min(62%, 1000px);
+    z-index: -2;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 45%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 45%);
+  }
+  .sl-hero__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 40%;
+    filter: grayscale(0.35) brightness(0.62);
+    animation: sl-drift 24s ease-in-out infinite alternate;
+  }
+  @keyframes sl-drift {
+    from {
+      transform: scale(1.04);
+    }
+    to {
+      transform: scale(1.12) translateX(-1.5%);
+    }
+  }
+  .sl-hero__glow {
+    position: absolute;
+    z-index: -1;
+    left: -12%;
+    bottom: -45%;
+    width: 60%;
+    aspect-ratio: 1;
+    background: radial-gradient(circle, rgba(200, 16, 46, 0.4), transparent 62%);
+    pointer-events: none;
+  }
+  .sl-hero__inner {
+    position: relative;
+  }
+  .sl-hero__title {
+    max-width: 16ch;
+    margin: var(--space-3) 0 var(--space-5);
+    color: #fff;
+    font-size: clamp(2.375rem, 4.6vw + 0.6rem, 4.25rem);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+  .sl-hero__lead {
+    max-width: 38rem;
+    margin: 0 0 var(--space-5);
+    font-size: clamp(1.0625rem, 0.5vw + 0.95rem, 1.25rem);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.82);
+  }
+  .sl-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0;
+    padding: 0.5rem 1rem 0.5rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: #fff;
+  }
+  .sl-hero__badge svg {
+    width: 18px;
+    height: 18px;
+    color: var(--sl-red-soft);
+  }
+
+  /* ---------- Layout ---------- */
+  .sl-body {
+    position: relative;
+    /* flow-root keeps the layout's negative margin from collapsing through,
+       so the card really does lift over the hero. */
+    display: flow-root;
+    padding-bottom: clamp(4rem, 8vw, 7rem);
+    background: var(--bbg-surface);
+  }
   .sl-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-    gap: var(--space-7);
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.9fr);
+    gap: clamp(1.5rem, 3.5vw, 2.75rem);
     align-items: start;
-  }
-  @media (max-width: 980px) {
-    .sl-layout {
-      grid-template-columns: 1fr;
-      gap: var(--space-6);
-    }
+    margin-top: calc(var(--sl-lift) * -1);
   }
 
-  .sl-form-card {
+  /* ---------- Brief card ---------- */
+  .sl-card {
+    position: relative;
+    z-index: 2;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border-radius: 28px;
     background: var(--bbg-white);
     border: 1px solid var(--bbg-border);
-    border-radius: var(--radius-md);
-    padding: var(--space-6);
+    box-shadow:
+      0 60px 120px -60px rgba(17, 17, 19, 0.55),
+      0 2px 6px rgba(17, 17, 19, 0.04);
+    overflow: hidden;
   }
-  @media (max-width: 560px) {
-    .sl-form-card {
-      padding: var(--space-5);
+  .sl-card__bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 4px;
+    background: #f1f1f3;
+  }
+  .sl-card__bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--sl-red), var(--sl-red-soft));
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 500ms var(--sl-ease);
+  }
+  .sl-card__title {
+    margin: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+    font-size: clamp(1.75rem, 1.6vw + 1rem, 2.375rem);
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+  }
+  .sl-form {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.75rem, 3.5vw, 2.5rem);
+  }
+  .sl-group {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .sl-q {
+    display: block;
+    margin: 0 0 var(--space-4);
+    padding: 0;
+    font-size: 1.1875rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--bbg-ink);
+  }
+  .sl-req {
+    color: var(--sl-red);
+  }
+
+  /* Missing answer: a shake and a red note on the group itself. */
+  .sl-group.is-missing {
+    animation: sl-shake 420ms ease;
+  }
+  .sl-group.is-missing .sl-q,
+  .sl-group.is-missing .sl-label,
+  .sl-group.is-missing .sl-captcha__label {
+    color: var(--sl-red);
+  }
+  .sl-group.is-missing .sl-tile,
+  .sl-group.is-missing .sl-stage,
+  .sl-group.is-missing .sl-input {
+    border-color: rgba(200, 16, 46, 0.55);
+    background-color: #fffafa;
+  }
+  @keyframes sl-shake {
+    20%,
+    60% {
+      transform: translateX(-5px);
+    }
+    40%,
+    80% {
+      transform: translateX(5px);
     }
   }
-  .sl-form-title {
-    font-size: var(--fs-h3);
-    font-weight: 600;
-    margin-bottom: var(--space-5);
+
+  /* Shared tick badge for tiles and stage cards. */
+  .sl-tick {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--sl-red);
+    color: #fff;
+    opacity: 0;
+    transform: scale(0.4);
+    transition:
+      opacity 200ms ease,
+      transform 350ms cubic-bezier(0.3, 1.6, 0.5, 1);
+  }
+  .sl-tick svg {
+    width: 14px;
+    height: 14px;
+    stroke-width: 3;
   }
 
-  .field--fieldset {
-    border: none;
-    padding: 0;
-    margin: 0 0 var(--space-5);
-  }
-  .sl-radio {
-    display: flex;
-    align-items: flex-start;
+  /* ---------- Category tiles ---------- */
+  .sl-tiles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-3);
-    padding: var(--space-3) 0;
-    line-height: 1.5;
-    cursor: pointer;
   }
-  .sl-radio input {
-    margin-top: 0.3em;
-    accent-color: var(--bbg-blue);
+  .sl-tile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 64px;
+    padding: 0.75rem 2.25rem 0.75rem 0.85rem;
+    border-radius: 16px;
+    border: 1.5px solid var(--bbg-border);
+    background: var(--bbg-white);
+    cursor: pointer;
+    transition:
+      border-color 200ms ease,
+      background 200ms ease,
+      box-shadow 250ms ease,
+      transform 250ms var(--sl-ease);
+  }
+  .sl-tile:hover {
+    border-color: #cfcfd4;
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px -24px rgba(17, 17, 19, 0.5);
+  }
+  .sl-tile input,
+  .sl-stage input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    pointer-events: none;
+  }
+  .sl-tile__icon {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--bbg-surface);
+    color: var(--bbg-text-muted);
+    transition:
+      background 250ms ease,
+      color 250ms ease,
+      transform 350ms cubic-bezier(0.3, 1.6, 0.5, 1);
+  }
+  .sl-tile__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .sl-dots {
+    stroke-width: 3.2 !important;
+  }
+  .sl-tile__label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--bbg-ink);
+  }
+  .sl-tile:has(input:checked) {
+    border-color: var(--sl-red);
+    background: #fff7f8;
+    box-shadow: 0 16px 34px -24px rgba(200, 16, 46, 0.6);
+  }
+  .sl-tile:has(input:checked) .sl-tile__icon {
+    background: var(--sl-red);
+    color: #fff;
+    transform: rotate(-8deg) scale(1.06);
+  }
+  .sl-tile:has(input:checked) .sl-tick,
+  .sl-stage:has(input:checked) .sl-tick {
+    opacity: 1;
+    transform: none;
+  }
+  .sl-tile:has(input:focus-visible),
+  .sl-stage:has(input:focus-visible) {
+    outline: 3px solid var(--sl-red);
+    outline-offset: 2px;
   }
 
+  /* ---------- Stage cards ---------- */
+  .sl-stages {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+  }
+  .sl-stage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: 1.1rem 2.5rem 1.2rem 1.1rem;
+    border-radius: 18px;
+    border: 1.5px solid var(--bbg-border);
+    background: var(--bbg-white);
+    cursor: pointer;
+    transition:
+      border-color 200ms ease,
+      background 200ms ease,
+      box-shadow 250ms ease,
+      transform 250ms var(--sl-ease);
+  }
+  .sl-stage:hover {
+    border-color: #cfcfd4;
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px -24px rgba(17, 17, 19, 0.5);
+  }
+  .sl-stage__icon {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bbg-surface);
+    color: var(--sl-red);
+    transition:
+      background 250ms ease,
+      color 250ms ease;
+  }
+  .sl-stage__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .sl-stage__label {
+    font-size: 0.975rem;
+    font-weight: 600;
+    line-height: 1.45;
+    color: var(--bbg-ink);
+  }
+  .sl-stage:has(input:checked) {
+    border-color: var(--sl-ink);
+    background: var(--sl-ink);
+    box-shadow: 0 24px 44px -28px rgba(17, 17, 19, 0.8);
+  }
+  .sl-stage:has(input:checked) .sl-stage__label {
+    color: #fff;
+  }
+  .sl-stage:has(input:checked) .sl-stage__icon {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--sl-red-soft);
+  }
+
+  /* ---------- Text inputs ---------- */
+  .sl-input {
+    width: 100%;
+    padding: 0.95rem 1.1rem;
+    border-radius: 14px;
+    border: 1.5px solid var(--bbg-border);
+    background: var(--bbg-surface);
+    color: var(--bbg-ink);
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition:
+      border-color 200ms ease,
+      background 200ms ease,
+      box-shadow 250ms ease;
+  }
+  .sl-input::placeholder {
+    color: #9a9aa2;
+  }
+  .sl-input:hover {
+    border-color: #cfcfd4;
+  }
+  .sl-input:focus {
+    outline: none;
+    border-color: var(--sl-red);
+    background: var(--bbg-white);
+    box-shadow: 0 0 0 4px rgba(200, 16, 46, 0.12);
+  }
+  .sl-input--area {
+    min-height: 150px;
+    resize: vertical;
+  }
+  .sl-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5) var(--space-4);
+    padding-top: clamp(1.75rem, 3.5vw, 2.5rem);
+    border-top: 1px dashed #dcdce0;
+  }
+  .sl-label {
+    display: block;
+    margin-bottom: 0.45rem;
+    font-size: var(--fs-small);
+    font-weight: 700;
+    color: var(--bbg-ink);
+  }
+  .sl-control {
+    position: relative;
+  }
+  .sl-control .sl-input {
+    padding-left: 2.85rem;
+    padding-right: 2.6rem;
+  }
+  .sl-control__icon,
+  .sl-control__ok {
+    position: absolute;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    pointer-events: none;
+  }
+  .sl-control__icon {
+    left: 1rem;
+    color: #9a9aa2;
+    transition: color 200ms ease;
+  }
+  .sl-control:focus-within .sl-control__icon {
+    color: var(--sl-red);
+  }
+  .sl-control__ok {
+    right: 0.95rem;
+    color: var(--sl-green);
+    stroke-width: 2.6 !important;
+    opacity: 0;
+    transform: scale(0.5);
+    transition:
+      opacity 200ms ease,
+      transform 300ms cubic-bezier(0.3, 1.6, 0.5, 1);
+  }
+  .sl-field.is-done .sl-control__ok {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ---------- Footer: captcha and send ---------- */
+  .sl-foot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4);
+    border-radius: 20px;
+    background: var(--bbg-surface);
+  }
+  .sl-captcha {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1 1 280px;
+    min-width: 0;
+  }
+  .sl-captcha__icon {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--bbg-white);
+    color: var(--bbg-text-muted);
+  }
+  .sl-captcha__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .sl-captcha__label {
+    font-size: var(--fs-small);
+    line-height: 1.4;
+    color: var(--bbg-text);
+  }
+  .sl-captcha__label strong {
+    color: var(--bbg-ink);
+    white-space: nowrap;
+  }
+  .sl-input--captcha {
+    flex: 0 0 auto;
+    width: 72px;
+    padding: 0.7rem 0.5rem;
+    text-align: center;
+    font-weight: 700;
+    background: var(--bbg-white);
+  }
+  .sl-captcha.is-done .sl-input--captcha {
+    border-color: rgba(31, 122, 85, 0.5);
+  }
+  .sl-submit {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 1rem 1.6rem;
+    border: 0;
+    border-radius: 14px;
+    background: var(--sl-red);
+    color: #fff;
+    font: inherit;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 18px 34px -18px rgba(200, 16, 46, 0.9);
+    transition:
+      background 200ms ease,
+      transform 200ms ease,
+      box-shadow 250ms ease;
+  }
+  .sl-submit::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.28) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 700ms var(--sl-ease);
+  }
+  .sl-submit:hover {
+    background: var(--bbg-blue-dark);
+    transform: translateY(-2px);
+  }
+  .sl-submit:hover::after {
+    transform: translateX(100%);
+  }
+  .sl-submit svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.2;
+    transition: transform 250ms var(--sl-ease);
+  }
+  .sl-submit:hover svg {
+    transform: translateX(4px);
+  }
+  .sl-submit:focus-visible {
+    outline: 3px solid var(--sl-red);
+    outline-offset: 3px;
+  }
+  .sl-submit:disabled {
+    cursor: progress;
+    opacity: 0.85;
+  }
+  .sl-submit.is-sending svg {
+    animation: sl-nudge 800ms ease-in-out infinite;
+  }
+  @keyframes sl-nudge {
+    50% {
+      transform: translateX(6px);
+    }
+  }
+  .sl-consent {
+    margin: calc(var(--space-4) * -1) 0 0;
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: var(--bbg-text-muted);
+  }
+  .sl-status {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .sl-status:empty {
+    display: none;
+  }
+  .sl-status--error,
+  .sl-status--success {
+    padding: 0.9rem 1.1rem;
+    border-radius: 14px;
+    font-weight: 600;
+  }
+  .sl-status--error {
+    background: #fdf0f2;
+    color: #a50c26;
+    border: 1px solid rgba(200, 16, 46, 0.25);
+  }
+  .sl-status--success {
+    background: #eff7f2;
+    color: var(--sl-green);
+    border: 1px solid rgba(31, 122, 85, 0.25);
+  }
+
+  /* ---------- What happens next ---------- */
   .sl-aside {
     position: sticky;
-    top: 7rem;
+    top: calc(var(--nav-h) + var(--space-4));
+    z-index: 1;
+    margin-top: calc(var(--sl-lift) + var(--space-5));
   }
-  @media (max-width: 980px) {
+  .sl-aside__card {
+    padding: clamp(1.5rem, 3vw, 2rem);
+    border-radius: 24px;
+    background:
+      radial-gradient(120% 70% at 100% 0%, rgba(200, 16, 46, 0.3), transparent 60%),
+      var(--sl-ink);
+    color: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 50px 90px -50px rgba(17, 17, 19, 0.7);
+  }
+  .sl-aside__title {
+    margin: 0 0 var(--space-5);
+    color: #fff;
+    font-size: clamp(1.375rem, 1vw + 1rem, 1.75rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  .sl-timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .sl-timeline::before {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 22px;
+    bottom: 22px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--sl-red), rgba(255, 255, 255, 0.08));
+  }
+  .sl-timeline__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 0.9rem;
+    padding-bottom: var(--space-5);
+  }
+  .sl-timeline__item:last-child {
+    padding-bottom: 0;
+  }
+  .sl-timeline__icon {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1d1d22;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: var(--sl-red-soft);
+  }
+  .sl-timeline__icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .sl-timeline__label {
+    margin: 0.45rem 0 0.3rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .sl-timeline__body {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.68);
+  }
+  .sl-aside__promise {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: var(--space-5) 0 0;
+    padding-top: var(--space-4);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: var(--fs-small);
+    font-weight: 700;
+    color: #fff;
+  }
+  .sl-aside__promise svg {
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    color: var(--sl-red-soft);
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1024px) {
+    .sl-layout {
+      grid-template-columns: 1fr;
+    }
     .sl-aside {
       position: static;
+      margin-top: 0;
     }
   }
-  .sl-steps {
-    margin-top: var(--space-5);
+  @media (max-width: 720px) {
+    .sl-hero__media {
+      width: 100%;
+      -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
+      mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
+      opacity: 0.45;
+    }
+    .sl-tiles {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sl-stages,
+    .sl-grid {
+      grid-template-columns: 1fr;
+    }
+    .sl-card {
+      border-radius: 22px;
+    }
+    .sl-submit {
+      width: 100%;
+    }
+    .sl-captcha {
+      flex-basis: 100%;
+    }
   }
-  .sl-step {
-    border-top: 2px solid var(--bbg-blue);
-    padding-top: var(--space-3);
-    margin-bottom: var(--space-5);
+  /* Narrow phones: icon above the label, so long category names get the full tile width. */
+  @media (max-width: 520px) {
+    .sl-tile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.55rem;
+      min-height: 0;
+      padding: 0.8rem 0.85rem 0.9rem;
+    }
+    .sl-tile__icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+    }
+    .sl-tile__label {
+      font-size: 0.9rem;
+      overflow-wrap: anywhere;
+    }
+    .sl-tick {
+      top: 8px;
+      right: 8px;
+    }
   }
-  .sl-step__label {
-    font-weight: 600;
-    color: var(--bbg-ink);
-    margin-bottom: var(--space-2);
-  }
-  .sl-step__body {
-    font-size: var(--fs-small);
-    color: var(--bbg-text-muted);
-    line-height: 1.6;
-  }
-  .sl-aside__note {
-    font-size: var(--fs-small);
-    color: var(--bbg-text-muted);
-    padding-top: var(--space-4);
-    border-top: 1px solid var(--bbg-border);
-  }
-  .sl-aside__note a {
-    color: var(--bbg-blue);
-    text-decoration: underline;
-    text-underline-offset: 3px;
+
+  @media (prefers-reduced-motion: reduce) {
+    .sl-rise,
+    .sl-hero__media img,
+    .sl-group.is-missing,
+    .sl-submit.is-sending svg {
+      animation: none;
+    }
+    .sl-tile,
+    .sl-stage,
+    .sl-submit,
+    .sl-card__bar span {
+      transition: none;
+    }
+    .sl-tile:hover,
+    .sl-stage:hover,
+    .sl-submit:hover {
+      transform: none;
+    }
   }
 </style>

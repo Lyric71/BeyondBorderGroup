@@ -66,7 +66,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 7. Termination: stock, trademarks, and the exit you write on day one
 8. The twelve questions, in order, with the answers to walk away from
 
-**Internal links.** /compass, /compass/how-it-works, /compass/shortlist, /enter-china/distribution, /enter-china/market-entry-consulting
+**Internal links.** /compass, /compass/find-a-distributor-in-china, /compass/shortlist, /enter-china/distribution, /enter-china/market-entry-consulting
 **CTA.** Download the twelve-question sheet, then build a shortlist in Compass filtered by the coverage you actually need.
 **Do not.** Do not write generic partner-selection advice that would apply in any market. Every question must be China-specific, and the ecommerce rights and licence-holding questions carry the piece. Do not name or characterise real distributors.
 

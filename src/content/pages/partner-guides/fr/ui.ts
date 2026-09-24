@@ -1,0 +1,117 @@
+/**
+ * Version française des chaînes d'interface des guides partenaires et de la
+ * liste de lecture. Réécriture native, pas une simple transposition
+ * (.claude/CLAUDE.md, section 6).
+ *
+ * ` ` est l'espace fine insécable exigée par la typographie française
+ * avant `? ! : ;` et dans les guillemets.
+ */
+import type { GuideUi } from '../ui';
+
+export const ui: GuideUi = {
+  dateLocale: 'fr-FR',
+  home: 'Accueil',
+  findPartner: 'Trouver un partenaire',
+  scroll: 'Défiler',
+  onThisPage: 'Sur cette page',
+  chapters: {
+    answer: 'En bref',
+    who: 'Qui recruter',
+    where: 'Où chercher',
+    checks: 'Les vérifications',
+    mistakes: 'Les écueils',
+    compass: 'Notre méthode',
+    faq: 'FAQ',
+  },
+  tag30s: 'À retenir en 30 secondes',
+  reviewedBefore: 'Mis à jour le',
+  reviewedAfter: ' par l’équipe Compass de TheChinaPath',
+  guideCoversAria: 'Sommaire du guide',
+  whatsInGuide: 'Au sommaire',
+  previous: 'Précédent',
+  next: 'Suivant',
+  ourRoute: 'Notre filière',
+  meterOf: 'sur',
+  meterChecked: 'cochées',
+  meterHint: 'Cochez chaque point au fil de votre lecture. Votre progression est conservée dans ce navigateur.',
+  meterWin: 'Tout est coché. Passons aux conditions du contrat.',
+  meterReset: 'Tout décocher',
+  termSheet: 'Term sheet',
+  draftStamp: 'Projet',
+  factPaid: 'Seules les marques qui nous confient une mission nous rémunèrent. Aucun nom de votre liste courte n’a acheté sa place.',
+  exploreCompass: 'Découvrir Compass',
+  howWeWork: 'Notre méthode de travail',
+  askTitle: 'Votre question ne figure pas ici ?',
+  askBody: 'Posez-la lors du premier échange : nous y répondrons sans détour.',
+  keepReading: 'À lire aussi',
+  moreTitle: 'Trouver un partenaire en Chine : nos autres guides',
+  kindGuide: 'Guide',
+  readGuide: 'Lire le guide',
+  kindInsight: 'Décryptage',
+  readArticle: 'Lire l’article',
+  kindInsights: 'Décryptages',
+  hubTitle: 'Tous nos articles sur le choix d’un partenaire',
+  hubLine: 'L’ensemble de nos publications sur la recherche d’un partenaire en Chine.',
+  seeAll: 'Voir l’ensemble',
+  closingNames: 'Trois à cinq noms, chacun assorti d’une note sur ses atouts et ses faiblesses.',
+  closingIntros: 'Des mises en relation avec des sociétés qui nous connaissent déjà.',
+  closingNoCommission: 'Aucune commission perçue auprès des partenaires. Jamais.',
+  stepAlts: [
+    'Une responsable de marque prend des notes à la main pendant un brief en visioconférence',
+    'Un consultant trace un itinéraire sur une carte de la Chine, entouré de fiches partenaires imprimées',
+    'Dans une salle de réunion à Shanghai, une responsable de marque serre la main d’un dirigeant de la distribution',
+  ],
+  guides: {
+    distributor: {
+      label: 'Trouver un distributeur',
+      line: 'Le bon distributeur vend déjà votre catégorie aux enseignes que vous visez. Où chercher les candidats, huit vérifications avant de signer et les clauses à verrouiller.',
+      channel: 'Distribution en ligne et en magasin',
+    },
+    tp: {
+      label: 'Trouver un Tmall Partner (TP)',
+      line: 'Le Tmall Partner fait tourner votre boutique au jour le jour. Ses missions, sa rémunération, sept vérifications à mener depuis un ordinateur et les pièges du contrat.',
+      channel: 'Tmall ou Tmall Global',
+    },
+    dp: {
+      label: 'Trouver un Douyin Partner (DP)',
+      line: 'Le Douyin Partner pilote votre boutique et vos lives. Ce qu’il coûte, comment le juger sur ses lives, et quels comptes doivent rester à votre nom.',
+      channel: 'Live et vidéo courte sur Douyin',
+    },
+  },
+  inChina: 'en Chine',
+  hub: {
+    title: 'Trouver un partenaire en Chine | TheChinaPath',
+    description:
+      'Choisir un distributeur, un Tmall Partner ou un Douyin Partner en Chine, le vérifier et négocier le contrat. Par l’équipe qui bâtit les listes courtes Compass.',
+    eyebrow: 'Trouver un partenaire · Décryptages',
+    h1: 'Trouver un partenaire en Chine',
+    lead: 'Comment choisir un distributeur, un Tmall Partner ou un Douyin Partner en Chine, et le passer au crible avant de signer. Par l’équipe qui fait vivre Compass.',
+    readArticles: 'Lire les articles',
+    statArticles: 'Articles',
+    statMinutes: 'Minutes de lecture',
+    statLatest: 'Dernière parution',
+    articlesEyebrow: 'Décryptages',
+    articlesTitle: 'Tous nos articles sur le choix d’un partenaire',
+    freshBefore: 'Du plus récent au plus ancien. Dernier ajout le',
+    freshAfter: '.',
+    empty: 'D’autres articles sont en préparation. D’ici là, les trois guides du menu sont le meilleur point de départ.',
+    filterAria: 'Filtrer par thème',
+    all: 'Tous',
+    topics: {
+      distributors: 'Distributeurs',
+      tp: 'Tmall Partners',
+      dp: 'Douyin Partners',
+      contracts: 'Contrats et clauses',
+      checks: 'Vérifications préalables',
+      managing: 'Piloter un partenaire',
+    },
+    latest: 'À la une',
+    minRead: 'min de lecture',
+    ctaEyebrow: 'Nous écrire',
+    ctaTitle: 'Quel partenaire vous faut-il ?',
+    ctaBody:
+      'Dites-nous ce que vous vendez, et dans quels circuits. Dès le premier échange, nous vous indiquerons le type de partenaire adapté et si nous en avons un dans nos fichiers. Nos honoraires sont fixés au projet, sur devis établi après cet appel.',
+    ctaPrimary: 'Obtenir une liste courte',
+    ctaSecondary: 'Découvrir notre méthode',
+  },
+};

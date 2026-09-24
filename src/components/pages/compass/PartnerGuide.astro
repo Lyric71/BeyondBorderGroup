@@ -1,0 +1,2932 @@
+---
+/**
+ * The "Finding a ..." guide template, shared by the three partner guides
+ * (distributor, Tmall Partner, Douyin Partner). Each route passes only its
+ * copy object from src/content/pages/partner-guides/.
+ *
+ * These pages exist to answer the query a brand types long before it has
+ * heard of Compass, and then show that Compass is the shortest honest route
+ * to the answer. So the order is fixed: the answer in the first screen after
+ * the hero, then the working detail (who, where, checks, money, failures),
+ * then Compass, FAQ and the brief.
+ *
+ * Each block has its own component shape so the page reads as a guide, not a
+ * stack of tables:
+ *   - a sticky chapter bar with scrollspy, a sliding marker and a read meter
+ *   - the short answer as a card, beside a route map of the guide
+ *   - "who you are hiring" as tabs (all panels stay in the HTML)
+ *   - routes as upside / catch cards, the Compass route on dark
+ *   - the checks as a checklist a brand can tick (kept in localStorage)
+ *   - the terms as a term sheet (a real <table>, cards below 760px)
+ *   - failures on dark, the card nearest mid-screen in focus
+ *   - the Compass steps as a journey whose line draws with the scroll
+ *   - FAQ as an animated accordion beside a sticky "ask us" card
+ *
+ * One template for every locale: the copy object carries its locale, the
+ * interface strings come from partner-guides/ui.ts, and every internal link
+ * goes through localizePath so a French guide links to French pages.
+ *
+ * No numbered badges anywhere (house rule). Everything works without JS; the
+ * html.pg-js class gates the hidden-until-revealed states, and every effect
+ * stands down under prefers-reduced-motion.
+ */
+import Layout from '../../../layouts/Layout.astro';
+import CompassHero from './CompassHero.astro';
+import type { PartnerGuideCopy } from '../../../content/pages/partner-guides/types';
+import { GUIDE_UI } from '../../../content/pages/partner-guides/ui';
+import { PARTNER_GUIDES, PARTNER_HUB_PATH, getPartnerInsights, type PartnerGuideKey } from '../../../lib/partner-guides';
+import { localizePath } from '../../../i18n/utils';
+import { SITE_URL, breadcrumbList } from '../../../lib/seo';
+
+interface Props {
+  copy: PartnerGuideCopy;
+}
+
+const { copy: c } = Astro.props;
+
+const locale = c.locale ?? 'en';
+const u = GUIDE_UI[locale];
+const lp = (p: string) => localizePath(p, locale);
+
+const path = lp(PARTNER_GUIDES.find((g) => g.key === c.key)!.path);
+const siblings = PARTNER_GUIDES.filter((g) => g.key !== c.key).map((g) => ({
+  ...g,
+  ...u.guides[g.key],
+  path: lp(g.path),
+}));
+
+const insights = (await getPartnerInsights(locale)).slice(0, 3);
+
+// 24px stroke icons.
+const I = {
+  bolt: 'M13 2L4 14h7l-1 8 9-12h-7l1-8z',
+  users: 'M9 11a4 4 0 100-8 4 4 0 000 8zM2 21v-1a6 6 0 0112 0v1M16 3.5a4 4 0 010 7.5M22 21v-1a6 6 0 00-4-5.6',
+  search: 'M11 18a7 7 0 100-14 7 7 0 000 14zM21 21l-5-5',
+  shield: 'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3zM8.5 12l2.5 2.5 4.5-5',
+  doc: 'M7 3h8l4 4v14H7zM15 3v4h4M10 12h6M10 16h6',
+  alert: 'M12 3l10 18H2L12 3zM12 10v4.5M12 17.5h.01',
+  compass: 'M12 21a9 9 0 100-18 9 9 0 000 18zM15.5 8.5l-2 5-5 2 2-5 5-2z',
+  question: 'M12 21a9 9 0 100-18 9 9 0 000 18zM9.5 9.5a2.5 2.5 0 114 2c-1 .6-1.5 1.2-1.5 2.5M12 17h.01',
+  store: 'M4 9l1.5-5h13L20 9M4 9v11h16V9M4 9h16M9.5 20v-6h5v6',
+  chat: 'M21 12a8 8 0 01-12 7l-5 1 1-4a8 8 0 1116-4z',
+  megaphone: 'M3 10v4a1 1 0 001 1h2l9 5V4L6 9H4a1 1 0 00-1 1zM18 9a4 4 0 010 6',
+  chart: 'M3 3v18h18M7 15l4-4 3 3 5-6',
+  truck: 'M2 7h12v9H2zM14 10h4l3 3v3h-7M7 19a2 2 0 100-4 2 2 0 000 4zM17 19a2 2 0 100-4 2 2 0 000 4z',
+  boxes: 'M4 13h7v7H4zM13 13h7v7h-7zM8.5 5h7v8h-7z',
+  globe: 'M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18',
+  pin: 'M12 21s-7-6.2-7-11a7 7 0 1114 0c0 4.8-7 11-7 11zM12 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z',
+  cart: 'M3 4h2l2.4 11h10.8L21 7H6.2M9 20a1 1 0 100-2 1 1 0 000 2zM18 20a1 1 0 100-2 1 1 0 000 2z',
+  live: 'M12 13a1 1 0 100-2 1 1 0 000 2zM8.5 8.5a5 5 0 000 7M15.5 8.5a5 5 0 010 7M5.6 5.6a9 9 0 000 12.8M18.4 5.6a9 9 0 010 12.8',
+  play: 'M4 5h16v14H4zM10 9l5 3-5 3z',
+  map: 'M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14',
+  plus: 'M12 5v14M5 12h14',
+  minus: 'M5 12h14',
+  check: 'M5 12.5l4.5 4.5L19 7.5',
+  flag: 'M5 21V4M5 4h11l-2 4 2 4H5',
+  info: 'M12 21a9 9 0 100-18 9 9 0 000 18zM12 11v6M12 7.5h.01',
+  clock: 'M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 2',
+  handshake: 'M3 12l4-4 4 2 3-2 7 5M3 12l5 5 2-1 2 2 2-1 2 1 3-3M11 10l-2 3',
+  arrowL: 'M15 6l-6 6 6 6',
+  arrowR: 'M9 6l6 6-6 6',
+  stack: 'M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5M3 17l9 5 9-5',
+};
+
+// "Who you are hiring" icons, matched by position within each guide.
+const roleIconSets: Record<PartnerGuideKey, string[]> = {
+  distributor: [I.boxes, I.globe, I.pin, I.cart],
+  tp: [I.store, I.chat, I.megaphone, I.chart, I.truck],
+  dp: [I.store, I.live, I.play, I.users, I.chart],
+};
+const roleIcons = roleIconSets[c.key];
+
+const chapters = [
+  { id: 'answer', label: u.chapters.answer, icon: I.bolt, title: c.answer.title },
+  { id: 'who', label: u.chapters.who, icon: I.users, title: c.role.title },
+  { id: 'where', label: u.chapters.where, icon: I.search, title: c.routes.title },
+  { id: 'checks', label: u.chapters.checks, icon: I.shield, title: c.checks.title },
+  { id: 'money', label: c.terms.eyebrow, icon: I.doc, title: c.terms.title },
+  { id: 'mistakes', label: u.chapters.mistakes, icon: I.alert, title: c.mistakes.title },
+  { id: 'compass', label: u.chapters.compass, icon: I.compass, title: c.compass.title },
+  { id: 'faq', label: u.chapters.faq, icon: I.question, title: c.faq.title },
+];
+
+const stepImages = [
+  { src: '/Images/compass/step-brief.webp', alt: u.stepAlts[0] },
+  { src: '/Images/compass/step-shortlist.webp', alt: u.stepAlts[1] },
+  { src: '/Images/compass/step-introductions.webp', alt: u.stepAlts[2] },
+];
+
+const [routeGetLabel, routeMissLabel] = c.routes.table.headers.slice(1);
+const [checkGoodLabel, checkFlagLabel] = c.checks.table.headers.slice(1);
+const termsWarnCol = c.terms.warnColumn ?? /watch/i.test(c.terms.table.headers[2] ?? '');
+
+const crumbs = [
+  { label: u.home, href: lp('/') },
+  { label: u.findPartner, href: lp('/compass') },
+  { label: c.crumb, href: path },
+];
+
+// The review date is a freshness signal on the page and in the schema.
+// `reviewedIso` is set in every locale's copy; English falls back to parsing the display date.
+const reviewedIso = c.reviewedIso ?? new Date(`${c.reviewed} 12:00 UTC`).toISOString().slice(0, 10);
+
+const schema = [
+  {
+    '@type': 'WebPage',
+    '@id': `${SITE_URL}${path}#webpage`,
+    url: `${SITE_URL}${path}`,
+    name: c.title,
+    description: c.description,
+    inLanguage: locale,
+    dateModified: reviewedIso,
+    breadcrumb: breadcrumbList(crumbs.map((x) => ({ name: x.label, url: x.href }))),
+  },
+  {
+    '@type': 'FAQPage',
+    '@id': `${SITE_URL}${path}#faq`,
+    mainEntity: c.faq.items.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+
+const formatDate = (d?: Date) =>
+  d ? d.toLocaleDateString(u.dateLocale, { month: 'short', year: 'numeric' }) : '';
+---
+
+<Layout
+  title={c.title}
+  description={c.description}
+  schema={schema}
+  ogImage={c.hero.image.src}
+  ogImageAlt={c.hero.image.alt}
+  preloadImage={c.hero.image.src}
+>
+  <script is:inline>
+    document.documentElement.classList.add('pg-js');
+  </script>
+
+  <CompassHero
+    crumbs={crumbs}
+    eyebrow={c.hero.eyebrow}
+    rows={c.hero.rows}
+    lead={c.hero.lead}
+    primary={{ label: c.hero.primary, href: lp('/compass/shortlist') }}
+    secondary={{ label: c.hero.secondary, href: lp('/compass') }}
+    stats={c.hero.stats}
+    image={c.hero.image}
+    scrollCue={u.scroll}
+    scrollTarget="#answer"
+  />
+
+  <div class="pg" data-pg data-pg-key={c.key}>
+    {/* ---------- Chapter bar ---------- */}
+    <nav class="pg-chapters" aria-label={u.onThisPage} data-pg-chapters>
+      <div class="container pg-chapters__inner">
+        <ul class="pg-chapters__list" role="list" data-pg-chapter-list>
+          <span class="pg-chapters__ink" aria-hidden="true" data-pg-ink></span>
+          {chapters.map((ch) => (
+            <li>
+              <a class="pg-chapters__link" href={`#${ch.id}`} data-pg-link={ch.id}>
+                {ch.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a class="btn btn--primary pg-chapters__cta" href={lp('/compass/shortlist')}>{c.hero.primary}</a>
+      </div>
+      <span class="pg-chapters__progress" aria-hidden="true"><span data-pg-progress></span></span>
+    </nav>
+
+    {/* ---------- The short answer ---------- */}
+    <section class="pg-sec pg-answer" id="answer">
+      <div class="container pg-answer__grid">
+        <div class="pg-answer__copy">
+          <span class="eyebrow" data-pg-reveal>{c.answer.eyebrow}</span>
+          <h2 class="pg-title" data-pg-reveal style="--pg-d: 60ms">{c.answer.title}</h2>
+          <div class="pg-answer__card" data-pg-reveal style="--pg-d: 120ms">
+            <span class="pg-answer__tag">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.bolt} /></svg>
+              {u.tag30s}
+            </span>
+            <p class="pg-answer__lead">{c.answer.body[0]}</p>
+          </div>
+          {c.answer.body.slice(1).map((p, i) => (
+            <p class="pg-answer__more" data-pg-reveal style={`--pg-d: ${180 + i * 60}ms`}>{p}</p>
+          ))}
+          <p class="pg-reviewed" data-pg-reveal>
+            {u.reviewedBefore} <time datetime={reviewedIso}>{c.reviewed}</time>{u.reviewedAfter}
+          </p>
+        </div>
+
+        <aside class="pg-map" aria-label={u.guideCoversAria} data-pg-reveal style="--pg-d: 200ms">
+          <span class="pg-map__label">{u.whatsInGuide}</span>
+          <ul class="pg-map__line" role="list">
+            {chapters.slice(1).map((ch) => (
+              <li>
+                <a class="pg-map__stop" href={`#${ch.id}`}>
+                  <span class="pg-map__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d={ch.icon} /></svg>
+                  </span>
+                  <span class="pg-map__text">
+                    <span class="pg-map__kicker">{ch.label}</span>
+                    <span class="pg-map__title">{ch.title}</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    {/* ---------- Who you are hiring ---------- */}
+    <section class="pg-sec pg-sec--alt" id="who">
+      <div class="container">
+        <header class:list={['pg-head', c.role.intro && 'pg-head--split']}>
+          <div data-pg-reveal>
+            <span class="eyebrow">{c.role.eyebrow}</span>
+            <h2 class="pg-title">{c.role.title}</h2>
+          </div>
+          {c.role.intro && <p class="pg-head__intro" data-pg-reveal style="--pg-d: 100ms">{c.role.intro}</p>}
+        </header>
+
+        <div class="pg-roles" data-pg-tabs data-pg-reveal style="--pg-d: 120ms">
+          <div class="pg-roles__tabs" role="tablist" aria-label={c.role.title} aria-orientation="vertical">
+            {c.role.items.map((item, i) => (
+              <button
+                type="button"
+                class="pg-roles__tab"
+                role="tab"
+                id={`pg-tab-${i}`}
+                aria-controls={`pg-panel-${i}`}
+                aria-selected={i === 0 ? 'true' : 'false'}
+                tabindex={i === 0 ? 0 : -1}
+              >
+                <span class="pg-roles__tab-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d={roleIcons[i % roleIcons.length]} /></svg>
+                </span>
+                <span class="pg-roles__tab-name">{item.name}</span>
+                <svg class="pg-roles__tab-go" viewBox="0 0 24 24" aria-hidden="true"><path d={I.arrowR} /></svg>
+              </button>
+            ))}
+          </div>
+
+          <div class="pg-roles__stage">
+            {c.role.items.map((item, i) => (
+              <article
+                class="pg-roles__panel"
+                role="tabpanel"
+                id={`pg-panel-${i}`}
+                aria-labelledby={`pg-tab-${i}`}
+                tabindex="0"
+              >
+                <div class="pg-roles__art" aria-hidden="true">
+                  <span class="pg-roles__ring"></span>
+                  <span class="pg-roles__ring"></span>
+                  <span class="pg-roles__ring"></span>
+                  <span class="pg-roles__medal">
+                    <svg viewBox="0 0 24 24"><path d={roleIcons[i % roleIcons.length]} /></svg>
+                  </span>
+                </div>
+                <div class="pg-roles__copy">
+                  <h3 class="pg-roles__name">{item.name}</h3>
+                  <p class="pg-roles__body">{item.body}</p>
+                  <div class="pg-roles__nav">
+                    <button type="button" class="pg-roles__btn" data-pg-step="-1" aria-label={u.previous}>
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.arrowL} /></svg>
+                    </button>
+                    <span class="pg-roles__dots" aria-hidden="true">
+                      {c.role.items.map((_, j) => (
+                        <span class:list={['pg-roles__dot', j === i && 'is-on']}></span>
+                      ))}
+                    </span>
+                    <button type="button" class="pg-roles__btn" data-pg-step="1" aria-label={u.next}>
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.arrowR} /></svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- Where brands look ---------- */}
+    <section class="pg-sec" id="where">
+      <div class="container">
+        <header class:list={['pg-head', c.routes.intro && 'pg-head--split']}>
+          <div data-pg-reveal>
+            <span class="eyebrow">{c.routes.eyebrow}</span>
+            <h2 class="pg-title">{c.routes.title}</h2>
+          </div>
+          {c.routes.intro && <p class="pg-head__intro" data-pg-reveal style="--pg-d: 100ms">{c.routes.intro}</p>}
+        </header>
+
+        <ul class="pg-routes" role="list">
+          {c.routes.table.rows.map(([name, get, miss], i) => {
+            const ours = /compass/i.test(name);
+            return (
+              <li
+                class:list={['pg-route', ours && 'pg-route--ours']}
+                data-pg-reveal
+                data-pg-spot
+                style={`--pg-d: ${(i % 3) * 80}ms`}
+              >
+                <div class="pg-route__top">
+                  <span class="pg-route__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d={ours ? I.compass : I.map} /></svg>
+                  </span>
+                  {ours && <span class="pg-route__badge">{u.ourRoute}</span>}
+                </div>
+                <h3 class="pg-route__name">{name}</h3>
+                <div class="pg-route__row pg-route__row--get">
+                  <span class="pg-route__k">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.plus} /></svg>
+                    {routeGetLabel}
+                  </span>
+                  <p>{get}</p>
+                </div>
+                <div class="pg-route__row pg-route__row--miss">
+                  <span class="pg-route__k">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.minus} /></svg>
+                    {routeMissLabel}
+                  </span>
+                  <p>{miss}</p>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </section>
+
+    {/* ---------- The checks ---------- */}
+    <section class="pg-sec pg-sec--alt" id="checks">
+      <div class="container pg-checks">
+        <div class="pg-checks__side">
+          <div class="pg-checks__sticky" data-pg-reveal>
+            <span class="eyebrow">{c.checks.eyebrow}</span>
+            <h2 class="pg-title">{c.checks.title}</h2>
+            {c.checks.intro && <p class="pg-checks__intro">{c.checks.intro}</p>}
+
+            <div class="pg-meter" data-pg-meter aria-live="polite">
+              <svg class="pg-meter__ring" viewBox="0 0 64 64" aria-hidden="true">
+                <circle class="pg-meter__track" cx="32" cy="32" r="28"></circle>
+                <circle class="pg-meter__bar" cx="32" cy="32" r="28" data-pg-ring></circle>
+                <path class="pg-meter__tick" d="M22 33l7 7 14-15"></path>
+              </svg>
+              <div class="pg-meter__text">
+                <span class="pg-meter__count">
+                  <span data-pg-done>0</span> {u.meterOf} {c.checks.table.rows.length} {u.meterChecked}
+                </span>
+                <span class="pg-meter__hint">{u.meterHint}</span>
+                <span class="pg-meter__win">{u.meterWin}</span>
+              </div>
+            </div>
+            <button type="button" class="pg-meter__reset" data-pg-reset>{u.meterReset}</button>
+          </div>
+        </div>
+
+        <ul class="pg-checklist" role="list" data-pg-checklist>
+          {c.checks.table.rows.map(([name, good, flag], i) => (
+            <li class="pg-check" data-pg-reveal style={`--pg-d: ${(i % 2) * 70}ms`}>
+              <div class="pg-check__head">
+                <input class="pg-check__box" type="checkbox" id={`pg-check-${i}`} data-pg-check />
+                <h3 class="pg-check__name"><label for={`pg-check-${i}`}>{name}</label></h3>
+              </div>
+              <div class="pg-check__cols">
+                <div class="pg-check__col pg-check__col--good">
+                  <span class="pg-check__label">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.check} /></svg>
+                    {checkGoodLabel}
+                  </span>
+                  <p>{good}</p>
+                </div>
+                <div class="pg-check__col pg-check__col--flag">
+                  <span class="pg-check__label">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.flag} /></svg>
+                    {checkFlagLabel}
+                  </span>
+                  <p>{flag}</p>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    {/* ---------- The money ---------- */}
+    <section class="pg-sec" id="money">
+      <div class="container">
+        <header class:list={['pg-head', c.terms.intro && 'pg-head--split']}>
+          <div data-pg-reveal>
+            <span class="eyebrow">{c.terms.eyebrow}</span>
+            <h2 class="pg-title">{c.terms.title}</h2>
+          </div>
+          {c.terms.intro && <p class="pg-head__intro" data-pg-reveal style="--pg-d: 100ms">{c.terms.intro}</p>}
+        </header>
+
+        <div class="pg-sheet" data-pg-reveal>
+          <div class="pg-sheet__top">
+            <span class="pg-sheet__label">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.doc} /></svg>
+              {u.termSheet}
+            </span>
+            <span class="pg-sheet__stamp" aria-hidden="true">{u.draftStamp}</span>
+          </div>
+          <div class="pg-sheet__scroll" tabindex="0" role="region" aria-label={c.terms.title}>
+            <table class="pg-sheet__table">
+              <thead>
+                <tr>
+                  {c.terms.table.headers.map((h) => (
+                    <th scope="col">{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {c.terms.table.rows.map((row, r) => (
+                  <tr style={`--pg-i: ${r}`}>
+                    {row.map((cell, i) =>
+                      i === 0 ? (
+                        <th scope="row">{cell}</th>
+                      ) : (
+                        <td
+                          data-label={c.terms.table.headers[i]}
+                          class:list={[i === 2 && termsWarnCol && 'pg-sheet__warn']}
+                        >
+                          {i === 2 && termsWarnCol && (
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.alert} /></svg>
+                          )}
+                          <span>{cell}</span>
+                        </td>
+                      ),
+                    )}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        {
+          c.terms.note && (
+            <p class="pg-note" data-pg-reveal>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.info} /></svg>
+              <span>{c.terms.note}</span>
+            </p>
+          )
+        }
+        {
+          c.terms.link && (
+            <a class="btn btn--ghost pg-note-link" href={lp(c.terms.link.href)} data-pg-reveal>
+              {c.terms.link.label}
+            </a>
+          )
+        }
+      </div>
+    </section>
+
+    {/* ---------- What goes wrong ---------- */}
+    <section class="pg-sec pg-mistakes" id="mistakes">
+      <div class="pg-mistakes__glow" aria-hidden="true"></div>
+      <div class="container pg-mistakes__grid">
+        <div class="pg-mistakes__side">
+          <div class="pg-mistakes__sticky">
+            <div data-pg-reveal>
+              <span class="eyebrow eyebrow--on-dark">{c.mistakes.eyebrow}</span>
+              <h2 class="pg-title">{c.mistakes.title}</h2>
+              {c.mistakes.intro && <p class="pg-mistakes__intro">{c.mistakes.intro}</p>}
+            </div>
+            <figure class="pg-mistakes__fig pg-zoom" data-pg-reveal style="--pg-d: 120ms">
+              <img
+                src={c.mistakes.image.src}
+                alt={c.mistakes.image.alt}
+                width="1400"
+                height="933"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
+        <ul class="pg-mistakes__list" role="list" data-pg-focus-list>
+          {c.mistakes.items.map((item, i) => (
+            <li class="pg-mistake" data-pg-reveal data-pg-focus style={`--pg-d: ${i * 60}ms`}>
+              <span class="pg-mistake__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d={I.alert} /></svg>
+              </span>
+              <div>
+                <h3>{item.name}</h3>
+                <p>{item.body}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    {/* ---------- How Compass does it ---------- */}
+    <section class="pg-sec pg-compass" id="compass">
+      <div class="container">
+        <div class="pg-compass__head">
+          <div data-pg-reveal>
+            <span class="eyebrow">{c.compass.eyebrow}</span>
+            <h2 class="pg-title">{c.compass.title}</h2>
+            <p class="pg-compass__lead">{c.compass.lead}</p>
+          </div>
+          <ul class="pg-compass__facts" role="list" data-pg-reveal style="--pg-d: 120ms">
+            <li class="pg-fact">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.clock} /></svg>
+              <span>{c.compass.timing}</span>
+            </li>
+            <li class="pg-fact">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.shield} /></svg>
+              <span>{u.factPaid}</span>
+            </li>
+          </ul>
+        </div>
+
+        <ol class="pg-journey" role="list" data-pg-journey>
+          <span class="pg-journey__track" aria-hidden="true"><span class="pg-journey__fill"></span></span>
+          {c.compass.steps.map((s, i) => (
+            <li class="pg-journey__step" data-pg-reveal data-pg-journey-step style={`--pg-d: ${i * 100}ms`}>
+              <span class="pg-journey__dot" aria-hidden="true"></span>
+              <figure class="pg-journey__img pg-zoom">
+                <img
+                  src={stepImages[i % stepImages.length].src}
+                  alt={stepImages[i % stepImages.length].alt}
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <h3 class="pg-journey__label">{s.label}</h3>
+              <p class="pg-journey__body">{s.body}</p>
+            </li>
+          ))}
+        </ol>
+
+        <div class="pg-compass__actions" data-pg-reveal>
+          <a class="btn btn--primary" href={lp('/compass/shortlist')}>{c.hero.primary}</a>
+          <a class="btn btn--secondary" href={lp('/compass')}>{u.exploreCompass}</a>
+          <a class="btn btn--ghost" href={lp('/how-we-work')}>{u.howWeWork}</a>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- FAQ ---------- */}
+    <section class="pg-sec pg-sec--alt" id="faq">
+      <div class="container pg-faq">
+        <div class="pg-faq__side">
+          <div class="pg-faq__sticky" data-pg-reveal>
+            <span class="eyebrow">{c.faq.eyebrow}</span>
+            <h2 class="pg-title">{c.faq.title}</h2>
+            <div class="pg-ask">
+              <span class="pg-ask__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d={I.chat} /></svg>
+              </span>
+              <h3>{u.askTitle}</h3>
+              <p>{u.askBody}</p>
+              <a class="btn btn--primary" href={lp('/compass/shortlist')}>{c.hero.primary}</a>
+            </div>
+          </div>
+        </div>
+        <div class="pg-faq__list" data-pg-faq>
+          {c.faq.items.map((f, i) => (
+            <details class="pg-faq__item" data-pg-reveal style={`--pg-d: ${i * 50}ms`}>
+              <summary>
+                <span>{f.q}</span>
+                <span class="pg-faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="pg-faq__a">
+                <p>{f.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- Keep reading ---------- */}
+    <section class="pg-sec" aria-labelledby="pg-more-title">
+      <div class="container">
+        <header class="pg-head">
+          <div data-pg-reveal>
+            <span class="eyebrow">{u.keepReading}</span>
+            <h2 class="pg-title" id="pg-more-title">{u.moreTitle}</h2>
+          </div>
+        </header>
+        <ul class="pg-more" role="list">
+          {siblings.map((g, i) => (
+            <li data-pg-reveal style={`--pg-d: ${i * 70}ms`}>
+              <a class="pg-card" href={g.path}>
+                <span class="pg-card__media">
+                  <img src={g.image.src} alt={g.image.alt} width="600" height="400" loading="lazy" decoding="async" />
+                </span>
+                <span class="pg-card__body">
+                  <span class="pg-card__kind">{u.kindGuide}</span>
+                  <span class="pg-card__title">{g.label} {u.inChina}</span>
+                  <span class="pg-card__line">{g.line}</span>
+                  <span class="pg-card__go">{u.readGuide} <span aria-hidden="true">→</span></span>
+                </span>
+              </a>
+            </li>
+          ))}
+          {insights.map((post, i) => (
+            <li data-pg-reveal style={`--pg-d: ${(siblings.length + i) * 70}ms`}>
+              <a class="pg-card" href={post.href}>
+                <span class="pg-card__media">
+                  {post.data.heroImage && (
+                    <img
+                      src={post.data.heroImage}
+                      alt={post.data.heroImageAlt ?? ''}
+                      width="600"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  )}
+                </span>
+                <span class="pg-card__body">
+                  <span class="pg-card__kind">
+                    {u.kindInsight}{post.data.pubDate && <> · {formatDate(post.data.pubDate)}</>}
+                  </span>
+                  <span class="pg-card__title">{post.data.title}</span>
+                  <span class="pg-card__go">{u.readArticle} <span aria-hidden="true">→</span></span>
+                </span>
+              </a>
+            </li>
+          ))}
+          <li data-pg-reveal style={`--pg-d: ${(siblings.length + insights.length) * 70}ms`}>
+            <a class="pg-card pg-card--hub" href={lp(PARTNER_HUB_PATH)}>
+              <span class="pg-card__hub-art" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d={I.stack} /></svg>
+              </span>
+              <span class="pg-card__body">
+                <span class="pg-card__kind">{u.kindInsights}</span>
+                <span class="pg-card__title">{u.hubTitle}</span>
+                <span class="pg-card__line">{u.hubLine}</span>
+                <span class="pg-card__go">{u.seeAll} <span aria-hidden="true">→</span></span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    {/* ---------- Closing ---------- */}
+    <section class="pg-closing" data-pg-spot>
+      <div class="pg-closing__glow" aria-hidden="true"></div>
+      <div class="container pg-closing__grid">
+        <div data-pg-reveal>
+          <span class="eyebrow eyebrow--on-dark">{c.closing.eyebrow}</span>
+          <h2>{c.closing.title}</h2>
+          <p>{c.closing.lead}</p>
+          <div class="pg-closing__actions">
+            <a class="btn btn--primary" href={lp('/compass/shortlist')}>{c.closing.primary}</a>
+            <a class="btn btn--ghost-light" href={lp('/how-we-work')}>{c.closing.secondary}</a>
+          </div>
+        </div>
+        <ul class="pg-closing__list" role="list" data-pg-reveal style="--pg-d: 140ms">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.check} /></svg>
+            <span>{c.compass.timing}</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.check} /></svg>
+            <span>{u.closingNames}</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.check} /></svg>
+            <span>{u.closingIntros}</span>
+          </li>
+                  </ul>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  import { followHeader } from '../../../scripts/insight-hubs';
+
+  const root = document.querySelector<HTMLElement>('[data-pg]');
+  if (root) initGuide(root);
+
+  function initGuide(root: HTMLElement) {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const clamp = (n: number) => Math.min(1, Math.max(0, n));
+
+    /* ---------- Reveal on scroll ---------- */
+    const reveals = root.querySelectorAll<HTMLElement>('[data-pg-reveal]');
+    if (reduced || !('IntersectionObserver' in window)) {
+      reveals.forEach((el) => el.classList.add('is-in'));
+    } else {
+      const io = new IntersectionObserver(
+        (entries) =>
+          entries.forEach((e) => {
+            if (!e.isIntersecting) return;
+            e.target.classList.add('is-in');
+            io.unobserve(e.target);
+          }),
+        { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+      );
+      reveals.forEach((el) => io.observe(el));
+    }
+
+    /* ---------- Chapter bar: sticky under the header, scrollspy, read meter ---------- */
+    const bar = root.querySelector<HTMLElement>('[data-pg-chapters]');
+    const list = root.querySelector<HTMLElement>('[data-pg-chapter-list]');
+    const ink = root.querySelector<HTMLElement>('[data-pg-ink]');
+    const progress = root.querySelector<HTMLElement>('[data-pg-progress]');
+    const links = Array.from(root.querySelectorAll<HTMLAnchorElement>('[data-pg-link]'));
+    const sections = links
+      .map((a) => document.getElementById(a.dataset.pgLink || ''))
+      .filter((s): s is HTMLElement => !!s);
+    followHeader(bar);
+
+    let activeId = '';
+    const moveInk = (a: HTMLAnchorElement | undefined) => {
+      if (!ink) return;
+      if (!a) {
+        ink.style.opacity = '0';
+        return;
+      }
+      ink.style.opacity = '1';
+      ink.style.width = `${a.offsetWidth}px`;
+      ink.style.transform = `translateX(${a.parentElement!.offsetLeft}px)`;
+    };
+    const setActive = (id: string) => {
+      if (id === activeId) return;
+      activeId = id;
+      let current: HTMLAnchorElement | undefined;
+      links.forEach((a) => {
+        const on = a.dataset.pgLink === id;
+        a.classList.toggle('is-active', on);
+        if (on) {
+          a.setAttribute('aria-current', 'location');
+          current = a;
+        } else a.removeAttribute('aria-current');
+      });
+      moveInk(current);
+      if (current && list && list.scrollWidth > list.clientWidth) {
+        const li = current.parentElement!;
+        list.scrollTo({
+          left: li.offsetLeft - list.clientWidth / 2 + li.offsetWidth / 2,
+          behavior: reduced ? 'auto' : 'smooth',
+        });
+      }
+    };
+
+    /* ---------- Failures: the card nearest mid-screen takes focus ---------- */
+    const focusList = root.querySelector<HTMLElement>('[data-pg-focus-list]');
+    const focusItems = Array.from(root.querySelectorAll<HTMLElement>('[data-pg-focus]'));
+    if (focusList && !reduced) focusList.classList.add('is-focusing');
+
+    /* ---------- Compass journey: the line draws as you scroll ---------- */
+    const journey = root.querySelector<HTMLElement>('[data-pg-journey]');
+    const journeySteps = Array.from(root.querySelectorAll<HTMLElement>('[data-pg-journey-step]'));
+    if (journey && !reduced) journey.classList.add('is-scrubbed');
+
+    let ticking = false;
+    const onScroll = () => {
+      ticking = false;
+      const vh = window.innerHeight;
+
+      // Read meter across the whole guide body.
+      if (progress) {
+        const r = root.getBoundingClientRect();
+        progress.style.transform = `scaleX(${clamp(-r.top / Math.max(1, r.height - vh))})`;
+      }
+      if (bar) {
+        const top = parseFloat(getComputedStyle(bar).top) || 0;
+        bar.classList.toggle('is-stuck', bar.getBoundingClientRect().top <= top + 1);
+      }
+
+      // Scrollspy: the last section whose top has passed a third of the screen.
+      let id = '';
+      for (const s of sections) if (s.getBoundingClientRect().top <= vh * 0.34) id = s.id;
+      setActive(id);
+
+      if (focusList && !reduced) {
+        const fr = focusList.getBoundingClientRect();
+        if (fr.bottom > 0 && fr.top < vh) {
+          let best: HTMLElement | null = null;
+          let bestDist = Infinity;
+          focusItems.forEach((el) => {
+            const b = el.getBoundingClientRect();
+            const d = Math.abs(b.top + b.height / 2 - vh * 0.5);
+            if (d < bestDist) {
+              bestDist = d;
+              best = el;
+            }
+          });
+          focusItems.forEach((el) => el.classList.toggle('is-active', el === best));
+        }
+      }
+
+      if (journey && !reduced) {
+        const jr = journey.getBoundingClientRect();
+        const p = clamp((vh * 0.78 - jr.top) / Math.max(1, jr.height * 0.9));
+        journey.style.setProperty('--pg-p', p.toFixed(3));
+        const n = journeySteps.length;
+        journeySteps.forEach((el, i) => el.classList.toggle('is-lit', p >= i / n + 0.02));
+      }
+    };
+    const requestTick = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(onScroll);
+    };
+    window.addEventListener('scroll', requestTick, { passive: true });
+    window.addEventListener('resize', () => {
+      activeId = '';
+      requestTick();
+    });
+    onScroll();
+
+    /* ---------- "Who you are hiring" tabs ---------- */
+    root.querySelectorAll<HTMLElement>('[data-pg-tabs]').forEach((wrap) => {
+      const tabs = Array.from(wrap.querySelectorAll<HTMLButtonElement>('[role="tab"]'));
+      const panels = Array.from(wrap.querySelectorAll<HTMLElement>('[role="tabpanel"]'));
+      let current = 0;
+      const select = (i: number, focus = false) => {
+        current = (i + tabs.length) % tabs.length;
+        tabs.forEach((t, j) => {
+          const on = j === current;
+          t.setAttribute('aria-selected', String(on));
+          t.tabIndex = on ? 0 : -1;
+        });
+        panels.forEach((p, j) => {
+          const on = j === current;
+          p.hidden = !on;
+          if (on && !reduced) {
+            p.classList.remove('is-shown');
+            void p.offsetWidth;
+            p.classList.add('is-shown');
+          }
+        });
+        if (focus) tabs[current].focus();
+      };
+      tabs.forEach((t, i) => {
+        t.addEventListener('click', () => select(i));
+        t.addEventListener('keydown', (e) => {
+          const keys: Record<string, number> = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 };
+          if (e.key in keys) {
+            e.preventDefault();
+            select(current + keys[e.key], true);
+          } else if (e.key === 'Home') {
+            e.preventDefault();
+            select(0, true);
+          } else if (e.key === 'End') {
+            e.preventDefault();
+            select(tabs.length - 1, true);
+          }
+        });
+      });
+      wrap.querySelectorAll<HTMLButtonElement>('[data-pg-step]').forEach((btn) =>
+        btn.addEventListener('click', () => select(current + Number(btn.dataset.pgStep))),
+      );
+      wrap.classList.add('is-ready');
+      select(0);
+    });
+
+    /* ---------- Checklist, remembered per guide in this browser ---------- */
+    const checklist = root.querySelector<HTMLElement>('[data-pg-checklist]');
+    if (checklist) {
+      const key = `tcp-partner-checks-${root.dataset.pgKey}`;
+      const boxes = Array.from(checklist.querySelectorAll<HTMLInputElement>('[data-pg-check]'));
+      const meter = root.querySelector<HTMLElement>('[data-pg-meter]');
+      const done = root.querySelector<HTMLElement>('[data-pg-done]');
+      const ring = root.querySelector<SVGCircleElement>('[data-pg-ring]');
+      const reset = root.querySelector<HTMLButtonElement>('[data-pg-reset]');
+      const circ = 2 * Math.PI * 28;
+      if (ring) ring.style.strokeDasharray = `${circ}`;
+
+      let saved: number[] = [];
+      try {
+        saved = JSON.parse(localStorage.getItem(key) || '[]');
+      } catch {
+        saved = [];
+      }
+      boxes.forEach((b, i) => (b.checked = Array.isArray(saved) && saved.includes(i)));
+
+      const update = (save: boolean) => {
+        const n = boxes.filter((b) => b.checked).length;
+        if (done) done.textContent = String(n);
+        if (ring) ring.style.strokeDashoffset = `${circ * (1 - n / boxes.length)}`;
+        meter?.classList.toggle('is-complete', n === boxes.length);
+        reset?.classList.toggle('is-visible', n > 0);
+        if (!save) return;
+        try {
+          localStorage.setItem(key, JSON.stringify(boxes.flatMap((b, i) => (b.checked ? [i] : []))));
+        } catch {
+          /* storage blocked: the ticks just won't persist */
+        }
+      };
+      boxes.forEach((b) => b.addEventListener('change', () => update(true)));
+      reset?.addEventListener('click', () => {
+        boxes.forEach((b) => (b.checked = false));
+        update(true);
+      });
+      update(false);
+    }
+
+    /* ---------- FAQ: animated open and close ---------- */
+    root.querySelectorAll<HTMLDetailsElement>('[data-pg-faq] details').forEach((d) => {
+      const summary = d.querySelector('summary');
+      const answer = d.querySelector<HTMLElement>('.pg-faq__a');
+      if (!summary || !answer || reduced || !('animate' in answer)) return;
+      let anim: Animation | null = null;
+      summary.addEventListener('click', (e) => {
+        e.preventDefault();
+        anim?.cancel();
+        const opts = { duration: 320, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' };
+        if (d.open) {
+          const h = answer.offsetHeight;
+          d.classList.add('is-closing');
+          anim = answer.animate([{ height: `${h}px`, opacity: 1 }, { height: '0px', opacity: 0 }], opts);
+          anim.onfinish = () => {
+            d.open = false;
+            d.classList.remove('is-closing');
+            anim = null;
+          };
+        } else {
+          d.open = true;
+          const h = answer.offsetHeight;
+          anim = answer.animate([{ height: '0px', opacity: 0 }, { height: `${h}px`, opacity: 1 }], opts);
+          anim.onfinish = () => (anim = null);
+        }
+      });
+    });
+
+    /* ---------- Cursor spotlight on cards and the closing band ---------- */
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && !reduced) {
+      root.addEventListener('pointermove', (e) => {
+        const el = (e.target as Element).closest<HTMLElement>('[data-pg-spot]');
+        if (!el) return;
+        const r = el.getBoundingClientRect();
+        el.style.setProperty('--mx', `${e.clientX - r.left}px`);
+        el.style.setProperty('--my', `${e.clientY - r.top}px`);
+      });
+    }
+  }
+</script>
+
+<style>
+  /* ============ Local tokens ============ */
+  .pg {
+    --pg-ink: #111113;
+    --pg-ink-2: #1b1b20;
+    --pg-red: var(--bbg-blue);
+    --pg-red-soft: #ff6b7f;
+    --pg-green: #1f7a55;
+    --pg-green-tint: #eff7f2;
+    --pg-red-tint: #fdf0f2;
+    --pg-radius: 20px;
+    --pg-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --pg-sticky: calc(var(--ix-top, 76px) + 84px);
+  }
+  .pg svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ============ Reveal (uses `translate`, so hover transforms stay free) ============ */
+  :global(.pg-js) [data-pg-reveal] {
+    opacity: 0;
+    translate: 0 18px;
+    transition:
+      opacity 650ms var(--pg-ease) var(--pg-d, 0ms),
+      translate 650ms var(--pg-ease) var(--pg-d, 0ms);
+  }
+  :global(.pg-js) [data-pg-reveal].is-in {
+    opacity: 1;
+    translate: none;
+  }
+  .pg-zoom {
+    overflow: hidden;
+  }
+  .pg-zoom img {
+    transition: transform 1200ms var(--pg-ease);
+  }
+  :global(.pg-js) .pg-zoom:not(.is-in) img,
+  :global(.pg-js) [data-pg-reveal]:not(.is-in) .pg-zoom img {
+    transform: scale(1.12);
+  }
+
+  /* ============ Sections and heads ============ */
+  .pg-sec {
+    padding: clamp(4.5rem, 9vw, 7.5rem) 0;
+    scroll-margin-top: calc(var(--ix-top, 76px) + 64px);
+  }
+  .pg-sec--alt {
+    background: var(--bbg-surface);
+  }
+  .pg-title {
+    font-size: clamp(1.875rem, 2.4vw + 1rem, 2.875rem);
+    line-height: 1.08;
+    letter-spacing: -0.028em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .pg-head {
+    margin-bottom: clamp(2.5rem, 5vw, 3.75rem);
+    max-width: 760px;
+  }
+  .pg-head--split {
+    max-width: none;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: var(--space-5) clamp(2rem, 6vw, 5rem);
+    align-items: end;
+  }
+  .pg-head__intro {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--bbg-text);
+    padding-left: var(--space-5);
+    border-left: 2px solid var(--bbg-border);
+  }
+
+  /* ============ Chapter bar ============ */
+  .pg-chapters {
+    position: sticky;
+    top: var(--ix-top, 76px);
+    z-index: 90;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: saturate(1.4) blur(14px);
+    -webkit-backdrop-filter: saturate(1.4) blur(14px);
+    border-bottom: 1px solid var(--bbg-border);
+    transition:
+      top 320ms var(--ease),
+      box-shadow 300ms ease;
+  }
+  .pg-chapters.is-stuck {
+    box-shadow: 0 12px 30px -22px rgba(17, 17, 19, 0.45);
+  }
+  .pg-chapters__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    min-height: 64px;
+  }
+  .pg-chapters__list {
+    position: relative;
+    display: flex;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .pg-chapters__list::-webkit-scrollbar {
+    display: none;
+  }
+  .pg-chapters__link {
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 0.5rem 0.95rem;
+    border-radius: 999px;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--bbg-text-muted);
+    transition: color 250ms ease;
+  }
+  .pg-chapters__link:hover {
+    color: var(--bbg-ink);
+  }
+  .pg-chapters__link.is-active {
+    color: var(--bbg-white);
+  }
+  .pg-chapters__link:focus-visible {
+    outline: 3px solid var(--pg-red);
+    outline-offset: -3px;
+  }
+  .pg-chapters__ink {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 36px;
+    margin-top: -18px;
+    border-radius: 999px;
+    background: var(--pg-ink);
+    opacity: 0;
+    transition:
+      transform 450ms var(--pg-ease),
+      width 450ms var(--pg-ease),
+      opacity 250ms ease;
+  }
+  .pg-chapters__cta {
+    flex: 0 0 auto;
+    padding: 0.55rem 1.1rem;
+    font-size: var(--fs-small);
+  }
+  :global(.pg-js) .pg-chapters__cta {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+    transition:
+      opacity 300ms ease,
+      transform 300ms var(--pg-ease),
+      visibility 0s linear 300ms;
+  }
+  :global(.pg-js) .pg-chapters.is-stuck .pg-chapters__cta {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition:
+      opacity 300ms ease,
+      transform 300ms var(--pg-ease),
+      visibility 0s;
+  }
+  .pg-chapters__progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 2px;
+    overflow: hidden;
+  }
+  .pg-chapters__progress span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--pg-red), var(--pg-red-soft));
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+
+  /* ============ Short answer ============ */
+  .pg-answer__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+    gap: clamp(2.5rem, 6vw, 5rem);
+    align-items: start;
+  }
+  .pg-answer__copy .pg-title {
+    margin: 0 0 var(--space-5);
+    max-width: 18ch;
+  }
+  .pg-answer__card {
+    position: relative;
+    padding: clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 3vw, 2.5rem);
+    border-radius: 24px;
+    background: linear-gradient(140deg, #fff 0%, #fff6f7 100%);
+    border: 1px solid rgba(200, 16, 46, 0.16);
+    box-shadow: 0 40px 70px -45px rgba(200, 16, 46, 0.45);
+    margin-bottom: var(--space-5);
+  }
+  .pg-answer__card::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 28px;
+    bottom: 28px;
+    width: 4px;
+    border-radius: 0 4px 4px 0;
+    background: linear-gradient(180deg, var(--pg-red), var(--pg-red-soft));
+  }
+  .pg-answer__tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.75rem;
+    margin-bottom: var(--space-4);
+    border-radius: 999px;
+    background: var(--bbg-blue-light);
+    color: var(--pg-red);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .pg-answer__tag svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+    stroke: none;
+  }
+  .pg-answer__lead {
+    margin: 0;
+    font-size: clamp(1.1875rem, 0.5vw + 1rem, 1.375rem);
+    line-height: 1.55;
+    color: var(--bbg-ink);
+  }
+  .pg-answer__more {
+    margin: 0 0 var(--space-4);
+    max-width: 62ch;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  /* Route map of the guide */
+  .pg-map {
+    position: sticky;
+    top: var(--pg-sticky);
+    padding: var(--space-5);
+    border-radius: 24px;
+    background:
+      radial-gradient(120% 70% at 100% 0%, rgba(200, 16, 46, 0.28), transparent 60%),
+      var(--pg-ink);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 40px 80px -50px rgba(17, 17, 19, 0.8);
+  }
+  .pg-map__label {
+    display: block;
+    margin-bottom: var(--space-4);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+  }
+  .pg-map__line {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pg-map__line::before {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--pg-red), rgba(255, 255, 255, 0.08));
+  }
+  .pg-map__stop {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 0.85rem;
+    align-items: center;
+    padding: 0.45rem 0;
+    color: inherit;
+  }
+  .pg-map__icon {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--pg-ink-2);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--pg-red-soft);
+    transition:
+      background 250ms ease,
+      color 250ms ease,
+      transform 250ms var(--pg-ease);
+  }
+  .pg-map__icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .pg-map__text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    transition: transform 250ms var(--pg-ease);
+  }
+  .pg-map__kicker {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .pg-map__title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.92);
+  }
+  .pg-map__stop:hover .pg-map__icon,
+  .pg-map__stop:focus-visible .pg-map__icon {
+    background: var(--pg-red);
+    color: #fff;
+    transform: scale(1.08);
+  }
+  .pg-map__stop:hover .pg-map__text {
+    transform: translateX(4px);
+  }
+  .pg-map__stop:focus-visible {
+    outline: 3px solid var(--pg-red-soft);
+    outline-offset: 2px;
+    border-radius: 12px;
+  }
+
+  /* ============ Roles (tabs) ============ */
+  .pg-roles {
+    display: grid;
+    grid-template-columns: minmax(0, 330px) minmax(0, 1fr);
+    gap: clamp(1.25rem, 3vw, 2rem);
+    align-items: stretch;
+  }
+  :global(html:not(.pg-js)) .pg-roles {
+    grid-template-columns: 1fr;
+  }
+  :global(html:not(.pg-js)) .pg-roles__tabs,
+  :global(html:not(.pg-js)) .pg-roles__nav {
+    display: none;
+  }
+  .pg-roles__tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .pg-roles__tab {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr) 18px;
+    align-items: center;
+    gap: 0.85rem;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background: transparent;
+    color: var(--bbg-ink);
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition:
+      background 250ms ease,
+      border-color 250ms ease,
+      box-shadow 250ms ease;
+  }
+  .pg-roles__tab:hover {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  .pg-roles__tab[aria-selected='true'] {
+    background: var(--bbg-white);
+    border-color: var(--bbg-border);
+    box-shadow: 0 18px 40px -26px rgba(17, 17, 19, 0.4);
+  }
+  .pg-roles__tab:focus-visible {
+    outline: 3px solid var(--pg-red);
+    outline-offset: 2px;
+  }
+  .pg-roles__tab-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    color: var(--bbg-text-muted);
+    transition:
+      background 250ms ease,
+      color 250ms ease,
+      border-color 250ms ease;
+  }
+  .pg-roles__tab-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .pg-roles__tab[aria-selected='true'] .pg-roles__tab-icon {
+    background: var(--pg-red);
+    border-color: var(--pg-red);
+    color: #fff;
+  }
+  .pg-roles__tab-go {
+    width: 18px;
+    height: 18px;
+    color: var(--pg-red);
+    opacity: 0;
+    transform: translateX(-6px);
+    transition:
+      opacity 250ms ease,
+      transform 250ms var(--pg-ease);
+  }
+  .pg-roles__tab[aria-selected='true'] .pg-roles__tab-go {
+    opacity: 1;
+    transform: none;
+  }
+  .pg-roles__stage {
+    display: grid;
+    gap: var(--space-4);
+  }
+  .pg-roles__panel {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    min-height: 360px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    box-shadow: 0 40px 80px -60px rgba(17, 17, 19, 0.5);
+  }
+  .pg-roles__panel[hidden] {
+    display: none;
+  }
+  .pg-roles__panel:focus-visible {
+    outline: 3px solid var(--pg-red);
+    outline-offset: 2px;
+  }
+  .pg-roles__panel.is-shown .pg-roles__copy {
+    animation: pg-panel-in 550ms var(--pg-ease) both;
+  }
+  .pg-roles__panel.is-shown .pg-roles__medal {
+    animation: pg-medal-in 650ms var(--pg-ease) both;
+  }
+  @keyframes pg-panel-in {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes pg-medal-in {
+    from {
+      opacity: 0;
+      transform: scale(0.7) rotate(-12deg);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .pg-roles__art {
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 50% 50%, rgba(200, 16, 46, 0.35), transparent 58%),
+      linear-gradient(160deg, var(--pg-ink-2), var(--pg-ink));
+  }
+  .pg-roles__art::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+    background-size: 18px 18px;
+    mask-image: radial-gradient(circle at 50% 50%, #000, transparent 75%);
+  }
+  .pg-roles__ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 140px;
+    margin: -70px 0 0 -70px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    animation: pg-ring 6s ease-out infinite;
+  }
+  .pg-roles__ring:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .pg-roles__ring:nth-child(3) {
+    animation-delay: 4s;
+  }
+  @keyframes pg-ring {
+    from {
+      transform: scale(0.8);
+      opacity: 0.9;
+    }
+    to {
+      transform: scale(2.3);
+      opacity: 0;
+    }
+  }
+  .pg-roles__medal {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, var(--pg-red-soft), var(--pg-red));
+    color: #fff;
+    box-shadow:
+      0 20px 50px -10px rgba(200, 16, 46, 0.65),
+      inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  }
+  .pg-roles__medal svg {
+    width: 52px;
+    height: 52px;
+    stroke-width: 1.5;
+  }
+  .pg-roles__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(1.75rem, 4vw, 3rem);
+  }
+  .pg-roles__name {
+    font-size: clamp(1.5rem, 1.2vw + 1rem, 2rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 var(--space-4);
+  }
+  .pg-roles__body {
+    margin: 0 0 var(--space-6);
+    font-size: clamp(1.0625rem, 0.4vw + 1rem, 1.25rem);
+    line-height: 1.6;
+    color: var(--bbg-text);
+    max-width: 44ch;
+  }
+  .pg-roles__nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: auto;
+  }
+  .pg-roles__btn {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--bbg-border);
+    background: var(--bbg-white);
+    color: var(--bbg-ink);
+    cursor: pointer;
+    transition:
+      background 200ms ease,
+      color 200ms ease,
+      border-color 200ms ease;
+  }
+  .pg-roles__btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  .pg-roles__btn:hover {
+    background: var(--pg-ink);
+    border-color: var(--pg-ink);
+    color: #fff;
+  }
+  .pg-roles__btn:focus-visible {
+    outline: 3px solid var(--pg-red);
+    outline-offset: 2px;
+  }
+  .pg-roles__dots {
+    display: flex;
+    gap: 6px;
+  }
+  .pg-roles__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--bbg-border);
+    transition:
+      width 300ms var(--pg-ease),
+      background 300ms ease;
+  }
+  .pg-roles__dot.is-on {
+    width: 24px;
+    background: var(--pg-red);
+  }
+
+  /* ============ Routes ============ */
+  .pg-routes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-5);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pg-route {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: clamp(1.25rem, 2.5vw, 1.75rem);
+    border-radius: var(--pg-radius);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    overflow: hidden;
+    isolation: isolate;
+    transition:
+      transform 350ms var(--pg-ease),
+      box-shadow 350ms ease,
+      border-color 350ms ease;
+  }
+  .pg-route::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 0%), rgba(200, 16, 46, 0.08), transparent 60%);
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+  .pg-route:hover {
+    transform: translateY(-6px);
+    border-color: rgba(200, 16, 46, 0.35);
+    box-shadow: 0 34px 60px -38px rgba(17, 17, 19, 0.45);
+  }
+  .pg-route:hover::after {
+    opacity: 1;
+  }
+  .pg-route__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pg-route__icon {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    background: var(--bbg-blue-light);
+    color: var(--pg-red);
+    transition: transform 350ms var(--pg-ease);
+  }
+  .pg-route__icon svg {
+    width: 22px;
+    height: 22px;
+  }
+  .pg-route:hover .pg-route__icon {
+    transform: rotate(-8deg) scale(1.06);
+  }
+  .pg-route__badge {
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: var(--pg-red);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .pg-route__name {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+  .pg-route__row {
+    padding: 0.9rem 1rem;
+    border-radius: 14px;
+  }
+  .pg-route__row p {
+    margin: 0;
+    font-size: 0.975rem;
+    line-height: 1.6;
+  }
+  .pg-route__row--get {
+    background: var(--pg-green-tint);
+  }
+  .pg-route__row--miss {
+    background: var(--pg-red-tint);
+  }
+  .pg-route__k {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .pg-route__k svg {
+    width: 14px;
+    height: 14px;
+    stroke-width: 2.4;
+  }
+  .pg-route__row--get .pg-route__k {
+    color: var(--pg-green);
+  }
+  .pg-route__row--miss .pg-route__k {
+    color: var(--pg-red);
+  }
+  /* Our own route, on dark. */
+  .pg-route--ours {
+    background:
+      radial-gradient(120% 80% at 100% 0%, rgba(200, 16, 46, 0.35), transparent 60%),
+      var(--pg-ink);
+    border-color: var(--pg-ink);
+    color: rgba(255, 255, 255, 0.82);
+  }
+  .pg-route--ours .pg-route__name {
+    color: #fff;
+  }
+  .pg-route--ours .pg-route__icon {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--pg-red-soft);
+  }
+  .pg-route--ours .pg-route__row {
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .pg-route--ours .pg-route__row--get .pg-route__k {
+    color: #6fd6a4;
+  }
+  .pg-route--ours .pg-route__row--miss .pg-route__k {
+    color: var(--pg-red-soft);
+  }
+
+  /* ============ Checklist ============ */
+  .pg-checks {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: clamp(2.5rem, 6vw, 5rem);
+    align-items: start;
+  }
+  .pg-checks__sticky {
+    position: sticky;
+    top: var(--pg-sticky);
+  }
+  .pg-checks__sticky .pg-title {
+    margin: 0 0 var(--space-4);
+  }
+  .pg-checks__intro {
+    margin: 0;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  .pg-meter {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+    padding: var(--space-4) var(--space-5);
+    border-radius: var(--pg-radius);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    box-shadow: 0 24px 50px -40px rgba(17, 17, 19, 0.5);
+    transition: border-color 400ms ease;
+  }
+  :global(html:not(.pg-js)) .pg-meter,
+  :global(html:not(.pg-js)) .pg-meter__reset {
+    display: none;
+  }
+  .pg-meter__ring {
+    flex: 0 0 auto;
+    width: 68px;
+    height: 68px;
+    transform: rotate(-90deg);
+  }
+  .pg-meter__track,
+  .pg-meter__bar {
+    fill: none;
+    stroke-width: 6;
+  }
+  .pg-meter__track {
+    stroke: #eee;
+  }
+  .pg-meter__bar {
+    stroke: var(--pg-red);
+    stroke-dashoffset: 176;
+    stroke-dasharray: 176;
+    transition:
+      stroke-dashoffset 600ms var(--pg-ease),
+      stroke 400ms ease;
+  }
+  .pg-meter__tick {
+    fill: none;
+    stroke: var(--pg-green);
+    stroke-width: 4;
+    transform: rotate(90deg);
+    transform-origin: 32px 32px;
+    stroke-dasharray: 32;
+    stroke-dashoffset: 32;
+    transition: stroke-dashoffset 400ms var(--pg-ease) 250ms;
+  }
+  .pg-meter__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .pg-meter__count {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--bbg-ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .pg-meter__hint,
+  .pg-meter__win {
+    font-size: var(--fs-small);
+    line-height: 1.45;
+    color: var(--bbg-text-muted);
+  }
+  .pg-meter__win {
+    display: none;
+    color: var(--pg-green);
+    font-weight: 600;
+  }
+  .pg-meter.is-complete {
+    border-color: rgba(31, 122, 85, 0.45);
+  }
+  .pg-meter.is-complete .pg-meter__bar {
+    stroke: var(--pg-green);
+  }
+  .pg-meter.is-complete .pg-meter__tick {
+    stroke-dashoffset: 0;
+  }
+  .pg-meter.is-complete .pg-meter__hint {
+    display: none;
+  }
+  .pg-meter.is-complete .pg-meter__win {
+    display: block;
+  }
+  .pg-meter__reset {
+    margin-top: var(--space-3);
+    padding: 0.25rem 0;
+    border: 0;
+    background: none;
+    color: var(--bbg-text-muted);
+    font-size: var(--fs-small);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms ease;
+  }
+  .pg-meter__reset.is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .pg-meter__reset:hover {
+    color: var(--bbg-ink);
+  }
+  .pg-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pg-check {
+    padding: clamp(1.25rem, 2.5vw, 1.6rem) clamp(1.25rem, 2.5vw, 1.75rem);
+    border-radius: var(--pg-radius);
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    transition:
+      border-color 300ms ease,
+      box-shadow 300ms ease,
+      transform 300ms var(--pg-ease);
+  }
+  .pg-check:hover {
+    box-shadow: 0 26px 50px -40px rgba(17, 17, 19, 0.55);
+    transform: translateY(-2px);
+  }
+  .pg-check__head {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+  .pg-check__box {
+    appearance: none;
+    -webkit-appearance: none;
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    border-radius: 50%;
+    border: 2px solid #cfcfd4;
+    background: var(--bbg-white) no-repeat center / 0 0
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E");
+    cursor: pointer;
+    transition:
+      background-color 250ms ease,
+      border-color 250ms ease,
+      background-size 300ms var(--pg-ease),
+      transform 200ms ease;
+  }
+  .pg-check__box:hover {
+    border-color: var(--pg-green);
+  }
+  .pg-check__box:active {
+    transform: scale(0.9);
+  }
+  .pg-check__box:checked {
+    background-color: var(--pg-green);
+    border-color: var(--pg-green);
+    background-size: 18px 18px;
+  }
+  .pg-check__box:focus-visible {
+    outline: 3px solid var(--pg-red);
+    outline-offset: 2px;
+  }
+  .pg-check__name {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  .pg-check__name label {
+    cursor: pointer;
+  }
+  .pg-check__cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+    transition: opacity 300ms ease;
+  }
+  .pg-check__col {
+    padding: 0.9rem 1rem;
+    border-radius: 14px;
+  }
+  .pg-check__col p {
+    margin: 0;
+    font-size: 0.975rem;
+    line-height: 1.6;
+  }
+  .pg-check__col--good {
+    background: var(--pg-green-tint);
+  }
+  .pg-check__col--flag {
+    background: var(--pg-red-tint);
+  }
+  .pg-check__label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .pg-check__label svg {
+    width: 14px;
+    height: 14px;
+    stroke-width: 2.4;
+  }
+  .pg-check__col--good .pg-check__label {
+    color: var(--pg-green);
+  }
+  .pg-check__col--flag .pg-check__label {
+    color: var(--pg-red);
+  }
+  .pg-check:has(.pg-check__box:checked) {
+    border-color: rgba(31, 122, 85, 0.4);
+  }
+  .pg-check:has(.pg-check__box:checked) .pg-check__cols {
+    opacity: 0.55;
+  }
+
+  /* ============ Term sheet ============ */
+  .pg-sheet {
+    position: relative;
+    border-radius: 24px;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    box-shadow: 0 50px 90px -60px rgba(17, 17, 19, 0.55);
+    overflow: hidden;
+  }
+  .pg-sheet__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4) clamp(1.25rem, 3vw, 1.75rem);
+    border-bottom: 1px dashed #d9d9de;
+    background: repeating-linear-gradient(-45deg, #fafafa 0 10px, #f5f5f7 10px 20px);
+  }
+  .pg-sheet__label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bbg-text-muted);
+  }
+  .pg-sheet__label svg {
+    width: 18px;
+    height: 18px;
+    color: var(--pg-red);
+  }
+  .pg-sheet__stamp {
+    padding: 0.2rem 0.7rem;
+    border: 2px solid var(--pg-red);
+    border-radius: 6px;
+    color: var(--pg-red);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    transform: rotate(-8deg);
+    opacity: 0.85;
+  }
+  :global(.pg-js) .pg-sheet:not(.is-in) .pg-sheet__stamp {
+    opacity: 0;
+    transform: rotate(-8deg) scale(1.8);
+  }
+  :global(.pg-js) .pg-sheet .pg-sheet__stamp {
+    transition:
+      opacity 300ms ease 700ms,
+      transform 400ms cubic-bezier(0.3, 1.6, 0.5, 1) 700ms;
+  }
+  .pg-sheet__scroll {
+    overflow-x: auto;
+  }
+  .pg-sheet__scroll:focus-visible {
+    outline: 3px solid var(--pg-red);
+    outline-offset: -3px;
+  }
+  .pg-sheet__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.975rem;
+    line-height: 1.6;
+  }
+  .pg-sheet__table thead th {
+    padding: 0.9rem clamp(1.25rem, 3vw, 1.75rem);
+    text-align: left;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bbg-text-muted);
+    background: var(--bbg-white);
+  }
+  .pg-sheet__table tbody th,
+  .pg-sheet__table tbody td {
+    padding: 1.2rem clamp(1.25rem, 3vw, 1.75rem);
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid var(--bbg-border);
+  }
+  .pg-sheet__table tbody th {
+    width: 22%;
+    font-weight: 700;
+    color: var(--bbg-ink);
+  }
+  .pg-sheet__table tbody tr {
+    transition: background 200ms ease;
+  }
+  .pg-sheet__table tbody tr:hover {
+    background: #fcfaf9;
+  }
+  :global(.pg-js) .pg-sheet tbody tr {
+    opacity: 0;
+    translate: -10px 0;
+    transition:
+      opacity 500ms var(--pg-ease) calc(var(--pg-i) * 70ms + 200ms),
+      translate 500ms var(--pg-ease) calc(var(--pg-i) * 70ms + 200ms),
+      background 200ms ease;
+  }
+  :global(.pg-js) .pg-sheet.is-in tbody tr {
+    opacity: 1;
+    translate: none;
+  }
+  .pg-sheet__warn {
+    position: relative;
+  }
+  .pg-sheet__warn svg {
+    position: absolute;
+    left: calc(clamp(1.25rem, 3vw, 1.75rem) - 1.55rem);
+    top: 1.45rem;
+    width: 16px;
+    height: 16px;
+    color: #b45309;
+  }
+  .pg-note {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-start;
+    max-width: 880px;
+    margin: var(--space-5) 0 0;
+    padding: var(--space-4) var(--space-5);
+    border-radius: 16px;
+    background: var(--bbg-surface);
+    font-size: 0.975rem;
+    line-height: 1.6;
+  }
+  .pg-note svg {
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    color: var(--pg-red);
+  }
+  .pg-note-link {
+    margin-top: var(--space-4);
+  }
+  /* Long labels (FR, DE, ES) wrap instead of pushing the column past the screen. */
+  .pg-note-link,
+  .pg-ask .btn {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .pg-title {
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  .pg-reviewed {
+    margin: var(--space-4) 0 0;
+    font-size: var(--fs-small);
+    color: var(--bbg-text-muted);
+  }
+  .pg-mistakes__intro {
+    max-width: 44ch;
+    margin: calc(var(--space-5) * -0.5) 0 var(--space-5);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  /* ============ What goes wrong (dark) ============ */
+  .pg-mistakes {
+    position: relative;
+    overflow: clip;
+    background: var(--pg-ink);
+    color: rgba(255, 255, 255, 0.76);
+  }
+  .pg-mistakes__glow {
+    position: absolute;
+    right: -15%;
+    top: -30%;
+    width: 60%;
+    aspect-ratio: 1;
+    background: radial-gradient(circle, rgba(200, 16, 46, 0.28), transparent 62%);
+    pointer-events: none;
+  }
+  .pg-mistakes__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: clamp(2.5rem, 6vw, 5rem);
+    align-items: start;
+  }
+  .pg-mistakes__sticky {
+    position: sticky;
+    top: var(--pg-sticky);
+  }
+  .pg-mistakes .pg-title {
+    color: #fff;
+    margin-bottom: var(--space-5);
+  }
+  .pg-mistakes__fig {
+    margin: 0;
+    border-radius: var(--pg-radius);
+    aspect-ratio: 4 / 3;
+    box-shadow: 0 40px 80px -40px rgba(0, 0, 0, 0.8);
+  }
+  .pg-mistakes__fig img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.2) contrast(1.05);
+  }
+  .pg-mistakes__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pg-mistake {
+    position: relative;
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: var(--space-4);
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border-radius: var(--pg-radius);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    transition:
+      opacity 450ms ease,
+      background 450ms ease,
+      border-color 450ms ease,
+      transform 450ms var(--pg-ease);
+  }
+  .pg-mistake::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--pg-red-soft), var(--pg-red));
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 500ms var(--pg-ease);
+  }
+  .pg-mistakes__list.is-focusing .pg-mistake {
+    opacity: 0.55;
+  }
+  .pg-mistakes__list.is-focusing .pg-mistake.is-active,
+  .pg-mistakes__list.is-focusing .pg-mistake:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 107, 127, 0.35);
+  }
+  .pg-mistakes__list.is-focusing .pg-mistake.is-active::before {
+    transform: scaleY(1);
+  }
+  .pg-mistake__icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(200, 16, 46, 0.16);
+    color: var(--pg-red-soft);
+  }
+  .pg-mistake__icon svg {
+    width: 22px;
+    height: 22px;
+  }
+  .pg-mistake h3 {
+    margin: 0.35rem 0 var(--space-2);
+    color: #fff;
+    font-size: clamp(1.1875rem, 0.6vw + 1rem, 1.375rem);
+  }
+  .pg-mistake p {
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  /* ============ Compass journey ============ */
+  .pg-compass {
+    position: relative;
+    background-image: radial-gradient(rgba(17, 17, 19, 0.07) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .pg-compass__head {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: var(--space-5) clamp(2rem, 6vw, 5rem);
+    align-items: end;
+  }
+  .pg-compass__head .pg-title {
+    margin-bottom: var(--space-4);
+  }
+  .pg-compass__lead {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 60ch;
+  }
+  .pg-compass__facts {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pg-fact {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-start;
+    padding: var(--space-4) var(--space-5);
+    border-radius: 16px;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    font-size: 0.975rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--bbg-ink);
+  }
+  .pg-fact svg {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    color: var(--pg-red);
+  }
+  .pg-journey {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1.25rem, 3vw, 2rem);
+    margin: clamp(3rem, 6vw, 4.5rem) 0 0;
+    padding: 2.75rem 0 0;
+    list-style: none;
+  }
+  .pg-journey__track {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--bbg-border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .pg-journey__fill {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--pg-red), var(--pg-red-soft));
+    transform-origin: left center;
+    transform: scaleX(var(--pg-p, 1));
+  }
+  .pg-journey__step {
+    position: relative;
+  }
+  .pg-journey__dot {
+    position: absolute;
+    top: calc(-2.75rem + 1px);
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--pg-red);
+    border: 3px solid var(--pg-red);
+    box-shadow: 0 0 0 6px rgba(200, 16, 46, 0.14);
+    transition:
+      background 350ms ease,
+      border-color 350ms ease,
+      box-shadow 350ms ease;
+  }
+  .pg-journey.is-scrubbed .pg-journey__step:not(.is-lit) .pg-journey__dot {
+    background: var(--bbg-white);
+    border-color: #d4d4d8;
+    box-shadow: none;
+  }
+  .pg-journey__img {
+    margin: 0 0 var(--space-5);
+    border-radius: 18px;
+    aspect-ratio: 3 / 2;
+    box-shadow: 0 30px 60px -40px rgba(17, 17, 19, 0.6);
+  }
+  .pg-journey__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .pg-journey__step:hover .pg-journey__img img {
+    transform: scale(1.05);
+  }
+  .pg-journey__label {
+    margin: 0 0 var(--space-2);
+    font-size: 1.3rem;
+  }
+  .pg-journey__body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  .pg-compass__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-4);
+    margin-top: clamp(2.5rem, 5vw, 3.5rem);
+  }
+
+  /* ============ FAQ ============ */
+  .pg-faq {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: clamp(2.5rem, 6vw, 5rem);
+    align-items: start;
+  }
+  .pg-faq__sticky {
+    position: sticky;
+    top: var(--pg-sticky);
+  }
+  .pg-ask {
+    margin-top: var(--space-6);
+    padding: var(--space-5);
+    border-radius: var(--pg-radius);
+    background:
+      radial-gradient(120% 90% at 100% 0%, rgba(200, 16, 46, 0.3), transparent 60%),
+      var(--pg-ink);
+    color: rgba(255, 255, 255, 0.78);
+  }
+  .pg-ask__icon {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-bottom: var(--space-4);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--pg-red-soft);
+  }
+  .pg-ask__icon svg {
+    width: 22px;
+    height: 22px;
+  }
+  .pg-ask h3 {
+    margin: 0 0 var(--space-2);
+    color: #fff;
+    font-size: 1.25rem;
+  }
+  .pg-ask p {
+    margin: 0 0 var(--space-5);
+    font-size: 0.975rem;
+    line-height: 1.6;
+  }
+  .pg-faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .pg-faq__item {
+    border-radius: 16px;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    transition:
+      border-color 250ms ease,
+      box-shadow 250ms ease;
+  }
+  .pg-faq__item:hover {
+    border-color: #d4d4d8;
+  }
+  .pg-faq__item[open]:not(.is-closing) {
+    border-color: rgba(200, 16, 46, 0.3);
+    box-shadow: 0 26px 50px -40px rgba(17, 17, 19, 0.5);
+  }
+  .pg-faq__item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: 1.2rem 1.4rem;
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--bbg-ink);
+  }
+  .pg-faq__item summary::-webkit-details-marker {
+    display: none;
+  }
+  .pg-faq__item summary:focus-visible {
+    outline: 3px solid var(--pg-red);
+    outline-offset: 2px;
+    border-radius: 16px;
+  }
+  .pg-faq__icon {
+    position: relative;
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--bbg-surface);
+    transition: background 250ms ease;
+  }
+  .pg-faq__icon::before,
+  .pg-faq__icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 2px;
+    margin: -1px 0 0 -6px;
+    border-radius: 2px;
+    background: var(--bbg-ink);
+    transition:
+      transform 300ms var(--pg-ease),
+      background 250ms ease;
+  }
+  .pg-faq__icon::after {
+    transform: rotate(90deg);
+  }
+  .pg-faq__item[open]:not(.is-closing) .pg-faq__icon {
+    background: var(--pg-red);
+  }
+  .pg-faq__item[open]:not(.is-closing) .pg-faq__icon::before,
+  .pg-faq__item[open]:not(.is-closing) .pg-faq__icon::after {
+    background: #fff;
+  }
+  .pg-faq__item[open]:not(.is-closing) .pg-faq__icon::after {
+    transform: rotate(0deg);
+  }
+  .pg-faq__a {
+    overflow: hidden;
+  }
+  .pg-faq__a p {
+    margin: 0;
+    padding: 0 1.4rem 1.4rem;
+    max-width: 70ch;
+    line-height: 1.7;
+  }
+
+  /* ============ Keep reading ============ */
+  .pg-more {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--space-5);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .pg-more > li {
+    display: flex;
+  }
+  .pg-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: var(--pg-radius);
+    overflow: hidden;
+    background: var(--bbg-white);
+    border: 1px solid var(--bbg-border);
+    color: inherit;
+    transition:
+      transform 350ms var(--pg-ease),
+      box-shadow 350ms ease,
+      border-color 350ms ease;
+  }
+  .pg-card:hover {
+    color: inherit;
+    transform: translateY(-6px);
+    border-color: rgba(200, 16, 46, 0.3);
+    box-shadow: 0 34px 60px -40px rgba(17, 17, 19, 0.5);
+  }
+  .pg-card:focus-visible {
+    outline: 3px solid var(--pg-red);
+    outline-offset: 2px;
+  }
+  .pg-card__media {
+    display: block;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--bbg-surface);
+  }
+  .pg-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 700ms var(--pg-ease);
+  }
+  .pg-card:hover .pg-card__media img {
+    transform: scale(1.06);
+  }
+  .pg-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    flex: 1;
+    padding: var(--space-5);
+  }
+  .pg-card__kind {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--pg-red);
+  }
+  .pg-card__title {
+    font-size: 1.1875rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--bbg-ink);
+  }
+  .pg-card__line {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--bbg-text);
+  }
+  .pg-card__go {
+    margin-top: auto;
+    padding-top: var(--space-3);
+    font-size: var(--fs-small);
+    font-weight: 700;
+    color: var(--pg-red);
+  }
+  .pg-card__go span {
+    display: inline-block;
+    transition: transform 250ms var(--pg-ease);
+  }
+  .pg-card:hover .pg-card__go span {
+    transform: translateX(5px);
+  }
+  .pg-card--hub {
+    background:
+      radial-gradient(120% 80% at 100% 0%, rgba(200, 16, 46, 0.35), transparent 60%),
+      var(--pg-ink);
+    border-color: var(--pg-ink);
+  }
+  .pg-card--hub .pg-card__title {
+    color: #fff;
+  }
+  .pg-card--hub .pg-card__line {
+    color: rgba(255, 255, 255, 0.72);
+  }
+  .pg-card--hub .pg-card__kind,
+  .pg-card--hub .pg-card__go {
+    color: var(--pg-red-soft);
+  }
+  .pg-card__hub-art {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 16 / 10;
+    color: rgba(255, 255, 255, 0.9);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+  .pg-card__hub-art svg {
+    width: 64px;
+    height: 64px;
+    stroke-width: 1.3;
+    transition: transform 500ms var(--pg-ease);
+  }
+  .pg-card--hub:hover .pg-card__hub-art svg {
+    transform: translateY(-6px) scale(1.06);
+  }
+
+  /* ============ Closing ============ */
+  .pg-closing {
+    position: relative;
+    overflow: clip;
+    isolation: isolate;
+    padding: clamp(5rem, 10vw, 8rem) 0;
+    background: var(--pg-ink);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .pg-closing__glow {
+    position: absolute;
+    z-index: -1;
+    left: var(--mx, 15%);
+    top: var(--my, 85%);
+    width: 720px;
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(200, 16, 46, 0.38), transparent 60%);
+    pointer-events: none;
+    transition:
+      left 900ms var(--pg-ease),
+      top 900ms var(--pg-ease);
+  }
+  .pg-closing__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: clamp(2.5rem, 6vw, 5rem);
+    align-items: center;
+  }
+  .pg-closing h2 {
+    margin: 0 0 var(--space-4);
+    color: #fff;
+    font-size: clamp(2.25rem, 3.4vw + 1rem, 3.75rem);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+  }
+  .pg-closing p {
+    margin: 0 0 var(--space-6);
+    max-width: 52ch;
+    font-size: 1.1875rem;
+    line-height: 1.6;
+  }
+  .pg-closing__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+  .pg-closing__list {
+    margin: 0;
+    padding: var(--space-5);
+    list-style: none;
+    border-radius: var(--pg-radius);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .pg-closing__list li {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-start;
+    padding: var(--space-4) 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .pg-closing__list li:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .pg-closing__list li:last-child {
+    padding-bottom: 0;
+  }
+  .pg-closing__list svg {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    padding: 4px;
+    border-radius: 50%;
+    background: var(--pg-red);
+    color: #fff;
+    stroke-width: 3;
+    margin-top: 1px;
+  }
+
+  /* ============ Responsive ============ */
+  @media (max-width: 1024px) {
+    .pg-answer__grid,
+    .pg-checks,
+    .pg-mistakes__grid,
+    .pg-faq,
+    .pg-compass__head,
+    .pg-closing__grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .pg-map,
+    .pg-checks__sticky,
+    .pg-mistakes__sticky,
+    .pg-faq__sticky {
+      position: static;
+    }
+    .pg-mistakes__fig {
+      aspect-ratio: 16 / 9;
+    }
+    .pg-roles {
+      grid-template-columns: 1fr;
+    }
+    .pg-roles__tabs {
+      flex-direction: row;
+      overflow-x: auto;
+      scrollbar-width: none;
+      scroll-snap-type: x mandatory;
+      margin: 0 calc(var(--container-pad) * -1);
+      padding: 4px var(--container-pad) 8px;
+    }
+    .pg-roles__tabs::-webkit-scrollbar {
+      display: none;
+    }
+    .pg-roles__tab {
+      width: auto;
+      flex: 0 0 auto;
+      grid-template-columns: 36px auto;
+      scroll-snap-align: start;
+      padding: 0.55rem 1rem 0.55rem 0.6rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .pg-roles__tab-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+    .pg-roles__tab-go {
+      display: none;
+    }
+  }
+  @media (max-width: 860px) {
+    .pg-head--split {
+      grid-template-columns: 1fr;
+    }
+    .pg-roles__panel {
+      grid-template-columns: 1fr;
+      min-height: 0;
+    }
+    .pg-roles__art {
+      min-height: 180px;
+    }
+    .pg-roles__medal {
+      width: 96px;
+      height: 96px;
+    }
+    .pg-roles__medal svg {
+      width: 42px;
+      height: 42px;
+    }
+    .pg-journey {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+      padding: 0 0 0 2.75rem;
+    }
+    .pg-journey__track {
+      top: 0;
+      bottom: 0;
+      left: 9px;
+      right: auto;
+      width: 2px;
+      height: auto;
+    }
+    .pg-journey__fill {
+      transform-origin: center top;
+      transform: scaleY(var(--pg-p, 1));
+    }
+    .pg-journey__dot {
+      top: 0;
+      left: calc(-2.75rem + 0px);
+    }
+    .pg-chapters__cta {
+      display: none;
+    }
+  }
+  @media (max-width: 760px) {
+    .pg-check__cols {
+      grid-template-columns: 1fr;
+    }
+    .pg-sheet__table thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+    .pg-sheet__table,
+    .pg-sheet__table tbody,
+    .pg-sheet__table tr,
+    .pg-sheet__table th,
+    .pg-sheet__table td {
+      display: block;
+      width: 100%;
+    }
+    .pg-sheet__table tbody tr {
+      padding: var(--space-4) var(--space-5);
+      border-top: 1px solid var(--bbg-border);
+    }
+    .pg-sheet__table tbody tr:first-child {
+      border-top: 0;
+    }
+    .pg-sheet__table tbody th,
+    .pg-sheet__table tbody td {
+      width: 100%;
+      padding: 0;
+      border: 0;
+    }
+    .pg-sheet__table tbody th {
+      margin-bottom: var(--space-3);
+      font-size: 1.0625rem;
+    }
+    .pg-sheet__table tbody td {
+      margin-top: var(--space-3);
+    }
+    .pg-sheet__table tbody td::before {
+      content: attr(data-label);
+      display: block;
+      margin-bottom: 0.15rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+    .pg-sheet__warn svg {
+      display: none;
+    }
+    .pg-mistake {
+      grid-template-columns: 1fr;
+      gap: var(--space-3);
+    }
+    .pg-closing__actions .btn,
+    .pg-compass__actions .btn--primary,
+    .pg-compass__actions .btn--secondary {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  /* ============ Reduced motion ============ */
+  @media (prefers-reduced-motion: reduce) {
+    :global(.pg-js) [data-pg-reveal],
+    :global(.pg-js) .pg-sheet tbody tr {
+      opacity: 1 !important;
+      translate: none !important;
+      transition: none !important;
+    }
+    .pg-zoom img,
+    :global(.pg-js) .pg-zoom:not(.is-in) img,
+    :global(.pg-js) [data-pg-reveal]:not(.is-in) .pg-zoom img {
+      transform: none !important;
+      transition: none;
+    }
+    .pg-roles__ring,
+    .pg-roles__panel.is-shown .pg-roles__copy,
+    .pg-roles__panel.is-shown .pg-roles__medal {
+      animation: none;
+    }
+    .pg-roles__ring {
+      display: none;
+    }
+    :global(.pg-js) .pg-sheet .pg-sheet__stamp {
+      opacity: 0.85;
+      transform: rotate(-8deg);
+      transition: none;
+    }
+    .pg-chapters__ink,
+    .pg-route,
+    .pg-card,
+    .pg-check,
+    .pg-mistake,
+    .pg-closing__glow {
+      transition: none;
+    }
+    .pg-route:hover,
+    .pg-card:hover,
+    .pg-check:hover {
+      transform: none;
+    }
+  }
+</style>

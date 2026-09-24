@@ -64,7 +64,7 @@ export const ui = {
     'nav.enter.crossBorder.label': 'Cross-Border eCommerce Setup',
     'nav.enter.crossBorder.desc': 'Tmall Global and JD Worldwide. No Chinese entity needed.',
     'nav.enter.distribution.label': 'Distribution',
-    'nav.enter.distribution.desc': 'Find the right distributor for your category and channel.',
+    'nav.enter.distribution.desc': 'Our distribution service. We stay with you until the terms are signed.',
     'nav.enter.branding.label': 'Branding & Localisation',
     'nav.enter.branding.desc': 'Your brand, sharpened for the Chinese consumer.',
 
@@ -119,6 +119,14 @@ export const ui = {
       'Vetted China distributors, Tmall TPs and Douyin partners, met in person.',
     'nav.find.shortlist.label': 'How a shortlist is built',
     'nav.find.shortlist.desc': 'From the first brief to a warm introduction, in weeks not months.',
+    'nav.find.distributor.label': 'Finding a distributor in China',
+    'nav.find.distributor.desc': 'Where brands look, and the answers that should end a meeting early.',
+    'nav.find.tp.label': 'Finding a TP in China',
+    'nav.find.tp.desc': 'Who runs your Tmall store day to day, and how to vet them.',
+    'nav.find.dp.label': 'Finding a DP in China',
+    'nav.find.dp.desc': 'Picking the team that books your hosts and creators on Douyin.',
+    'nav.find.insights': 'Insights',
+    'nav.find.insights.all': 'All articles on finding a partner',
 
     'nav.sell.tmalljd.label': 'Tmall and JD operations',
     'nav.sell.tmalljd.desc': 'Run your Tmall Global and JD Worldwide stores end-to-end.',
@@ -180,6 +188,8 @@ export const ui = {
     'nav.work.cases.desc': 'Brands we have worked with in China, and what came of it.',
     'nav.work.howWeWork.label': 'How we work',
     'nav.work.howWeWork.desc': 'Why we work this way, who does what, and how we find your TP or DP.',
+    'nav.work.about.label': 'Who we are',
+    'nav.work.about.desc': 'The team, with offices in Shanghai, Hong Kong, and Paris.',
     'nav.feature.work.label': 'Client case',
     'nav.feature.work.title': 'Iguzzini on Tmall Global',
     'nav.feature.work.line':
@@ -344,6 +354,14 @@ export const ui = {
     'nav.find.compass.label': 'Compass, la base de partenaires',
     'nav.find.compass.desc':
       'Distributeurs, TP Tmall et partenaires Douyin qualifiés, rencontrés un par un.',
+    'nav.find.distributor.label': 'Trouver un distributeur en Chine',
+    'nav.find.distributor.desc': 'Où chercher, et les réponses qui doivent écourter un rendez-vous.',
+    'nav.find.tp.label': 'Trouver un TP en Chine',
+    'nav.find.tp.desc': 'Qui gère votre boutique Tmall au quotidien, et comment le vérifier.',
+    'nav.find.dp.label': 'Trouver un DP en Chine',
+    'nav.find.dp.desc': 'Choisir l’équipe qui recrute vos animateurs et vos créateurs sur Douyin.',
+    'nav.find.insights': 'Décryptages',
+    'nav.find.insights.all': 'Tous les articles sur le choix d’un partenaire',
     'nav.find.shortlist.label': 'Comment se construit une short-list',
     'nav.find.shortlist.desc':
       "Du premier brief à la mise en relation, en quelques semaines plutôt qu'un trimestre.",
@@ -551,6 +569,14 @@ export const ui = {
     'nav.find.compass.label': 'Compass, die Partnerdatenbank',
     'nav.find.compass.desc':
       'Geprüfte China-Distributoren, Tmall TPs und Douyin-Partner. Jeder persönlich getroffen.',
+    'nav.find.distributor.label': 'Distributor in China finden',
+    'nav.find.distributor.desc': 'Wo Marken suchen, und bei welchen Antworten Sie ein Treffen früh beenden sollten.',
+    'nav.find.tp.label': 'TP in China finden',
+    'nav.find.tp.desc': 'Wer Ihren Tmall-Store im Tagesgeschäft führt, und wie Sie ihn prüfen.',
+    'nav.find.dp.label': 'DP in China finden',
+    'nav.find.dp.desc': 'Wie Sie das Team auswählen, das auf Douyin Ihre Hosts und Creator bucht.',
+    'nav.find.insights': 'Analysen',
+    'nav.find.insights.all': 'Alle Artikel zur Partnersuche',
     'nav.find.shortlist.label': 'So entsteht eine Shortlist',
     'nav.find.shortlist.desc':
       'Vom ersten Briefing bis zur Empfehlung, in Wochen statt in einem Quartal.',
@@ -759,6 +785,14 @@ export const ui = {
     'nav.find.compass.label': 'Compass, la base de socios',
     'nav.find.compass.desc':
       'Distribuidores, TP de Tmall y socios de Douyin verificados, uno a uno y en persona.',
+    'nav.find.distributor.label': 'Encontrar un distribuidor en China',
+    'nav.find.distributor.desc': 'Dónde buscan las marcas, y las respuestas que deberían cortar una reunión en seco.',
+    'nav.find.tp.label': 'Encontrar un TP en China',
+    'nav.find.tp.desc': 'Quién lleva el día a día de su tienda en Tmall, y cómo evaluarlo.',
+    'nav.find.dp.label': 'Encontrar un DP en China',
+    'nav.find.dp.desc': 'Cómo elegir al equipo que contrata a sus presentadores y creadores en Douyin.',
+    'nav.find.insights': 'Análisis',
+    'nav.find.insights.all': 'Todos los artículos sobre cómo encontrar un socio',
     'nav.find.shortlist.label': 'Cómo se arma una lista corta',
     'nav.find.shortlist.desc':
       'Del primer briefing a la presentación, en semanas y no en un trimestre.',

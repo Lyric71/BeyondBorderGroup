@@ -62,7 +62,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 6. Customs recordal and platform brand registration: the two steps that only matter later, until they matter urgently
 7. What to file this month if you are entering China next year
 
-**Internal links.** /enter-china/market-entry-consulting, /enter-china/branding-localisation, /enter-china/distribution, /compass/how-it-works, /insights
+**Internal links.** /enter-china/market-entry-consulting, /enter-china/branding-localisation, /enter-china/distribution, /compass/find-a-distributor-in-china, /insights
 **CTA.** Talk to us about your entry sequence before the first distributor conversation.
 **Do not.** Do not write legal advice or state the outcome of an opposition or invalidation process; every procedural claim, class structure, filing fee, examination timeline and appeal route is a verify-and-cite instruction to the writer, sourced to the Chinese trademark authority or an equivalent primary source, with an access date. Do not compete with the law firms on procedural depth; the sequencing and the cost of lateness is the ground where this page wins.
 

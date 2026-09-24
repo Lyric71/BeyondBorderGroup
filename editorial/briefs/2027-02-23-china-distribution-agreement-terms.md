@@ -62,7 +62,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 6. Termination, and the stock sitting in their warehouse on day one after
 7. How to run the negotiation without losing the relationship
 
-**Internal links.** /enter-china/distribution, /compass, /compass/how-it-works, /enter-china/market-entry-consulting, /compass/shortlist
+**Internal links.** /enter-china/distribution, /compass, /compass/find-a-distributor-in-china, /enter-china/market-entry-consulting, /compass/shortlist
 **CTA.** Request a Compass shortlist before you sign anything exclusive.
 **Do not.** Do not give legal advice or draft clause language. The piece explains what each clause does commercially and tells the reader to have a China-qualified lawyer draft and review, and it says so in the first section rather than in a footer disclaimer. Do not treat the distributor as an adversary throughout; the honest position is that a well-drafted agreement protects both sides and a one-sided one gets ignored in practice.
 

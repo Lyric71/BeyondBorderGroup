@@ -42,6 +42,7 @@ Step 2 runs on every piece, Signals included. Step 3 uses the
 | Wednesday | Ledger A or B, 900 to 1,500 words | `briefs/YYYY-MM-DD-<slug>.md`, one per week | The block-2 fee table is identical to a published category. Merge into that page, set the row to `skipped`. |
 | Thursday, odd weeks | Teardown, 1,200 to 1,600 words | `briefs/templates/teardown.md` against `sources/teardown-criteria.md` | Any of the four criteria fails, or the brand is a client. Pick another brand; if none passes, `skipped`. |
 | Thursday, even weeks | Refresh | `briefs/templates/refresh.md` against the refresh queue (see `RUNBOOK.md`) | The only change would be the year in the title. Take the next item in the queue. |
+| Every other day (P) | Partner, 1,000 to 2,400 words by type | `briefs/YYYY-MM-DD-<slug>.md`, Part 5 of the master plan, `briefs/templates/partner.md` | None. Partner pieces always ship; a missing Compass figure uses the brief's fallback. |
 
 Anchor weeks that carry an Asset (W03, W08, W16, W21, W27, W33, W38, W45,
 W47) produce a second file, `output/guides/<slug>.md`, in the same run. It
@@ -50,6 +51,12 @@ only, printable. Anchor weeks that carry a Report (W11, W23, W36, W42, W50)
 draft the report copy to `output/reports/<slug>.md` and leave a
 `TODO: gated PDF` marker; a person assembles and gates the PDF. The Anchor
 itself still publishes on schedule.
+
+The partner queue ("Finding a partner", P01 to P50, Sept 30 to Dec 29, 2026)
+runs outside the four-slot week: `scripts/run-daily.ps1 -Mode partner`
+(daily, 14:00) drafts each P row up to two days before its date, and the
+daily publish task ships it with FR, DE and ES. Plan and research:
+`plans/finding-a-partner-50.md`. Never cite or name a competitor in a P piece.
 
 When a slot is skipped, the status is `skipped`, the reason goes in `notes`,
 and the run log says so. A skipped Signal is not a failure; it is the rule

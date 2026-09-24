@@ -113,6 +113,17 @@ resolves this; do not swap Ledger weeks without checking the rule.
 If a week slips, drop the Signal, then the Thursday slot. Never drop the
 Anchor. If two weeks slip, run Anchor and Ledger only.
 
+## The partner queue
+
+Fifty "Finding a partner" pieces (P01 to P50, Part 5 of the master plan)
+publish on their own calendar: P01 to P15 every weekday from Sept 30 to
+Oct 20, 2026, then every other day, weekends included, to Dec 29. The
+`TheChinaPath Editorial Partner` task (daily, 14:00) runs
+`scripts/run-daily.ps1 -Mode partner`, which drafts every P row still
+`not_started` and due within two days. The daily publish task publishes it.
+By hand: `Draft brief P07`. A row set to `drafting` has been claimed by a
+manual run; the scheduled runs skip it.
+
 ## The refresh queue
 
 Even-week Thursdays refresh one existing insight. The queue is computed on

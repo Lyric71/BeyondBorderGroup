@@ -324,6 +324,16 @@ const gradId = `hwGrowthArea-${tone}`;
     color: var(--g-muted);
     font-weight: 600;
   }
+  /* Phones: the six festival labels collide at ~300px, so drop the two muted
+     Chinese New Year markers and tighten the rest. */
+  @media (max-width: 639px) {
+    .hw-growth__label {
+      font-size: 0.68rem;
+    }
+    .hw-growth__label.is-muted {
+      display: none;
+    }
+  }
   .hw-growth__panel {
     display: block;
     margin: 0.5rem 0 0.4rem;

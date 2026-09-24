@@ -69,8 +69,6 @@ export interface CompassFacts {
   failureStories: { kind: string; story: string }[];
   /** No referral fee from the partner side. Load-bearing, quoted on three pages. */
   noCommission: string;
-  /** "Already a partner? Sign in at compass.thechinapath.com." */
-  signInPrompt: { before: string; after: string };
 }
 
 export interface CompassIndexCopy {

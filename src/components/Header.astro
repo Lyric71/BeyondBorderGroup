@@ -29,6 +29,7 @@ import { getCollection } from 'astro:content';
 import { getLocaleFromUrl, localizePath, useTranslations } from '../i18n/utils';
 import { locales, localeLabels, localeNamesNative, type Locale } from '../i18n/ui';
 import { localesForPath } from '../i18n/route-locales';
+import { PARTNER_HUB_PATH, getPartnerInsights } from '../lib/partner-guides';
 
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
@@ -64,6 +65,13 @@ interface NavItem {
   external?: boolean;
 }
 
+/**
+ * The three "Finding a ..." guides ship in English first. A row only renders
+ * where the page has a twin in the current locale, so a French reader never
+ * lands on the French home page from a guide row.
+ */
+const hasTwin = (path: string) => lp(path) !== lp('/');
+
 const findPartner: NavItem[] = [
   {
     label: t('nav.find.compass.label'),
@@ -71,13 +79,36 @@ const findPartner: NavItem[] = [
     href: lp('/compass'),
     svg: icon.compass,
   },
+  ...[
+    { key: 'distributor', path: '/compass/find-a-distributor-in-china', svg: icon.truck },
+    { key: 'tp', path: '/compass/find-a-tmall-partner-in-china', svg: icon.store },
+    { key: 'dp', path: '/compass/find-a-douyin-partner-in-china', svg: icon.broadcast },
+  ]
+    .filter((g) => hasTwin(g.path))
+    .map((g) => ({
+      label: t(`nav.find.${g.key}.label` as 'nav.find.tp.label'),
+      desc: t(`nav.find.${g.key}.desc` as 'nav.find.tp.desc'),
+      href: lp(g.path),
+      svg: g.svg,
+    })),
   {
     label: t('nav.enter.distribution.label'),
     desc: t('nav.enter.distribution.desc'),
     href: lp('/enter-china/distribution'),
-    svg: icon.truck,
+    svg: icon.handshake,
   },
 ];
+
+/**
+ * "Insights" under the Find a partner rows: the newest partner articles in the
+ * current locale (the English file carries the tag; a locale lists its twin).
+ * The group only shows where the reading list itself exists in that locale.
+ */
+const hubHref = lp(PARTNER_HUB_PATH);
+const hasHub = locale === 'en' || hubHref !== lp('/');
+const findInsights = hasHub
+  ? (await getPartnerInsights(locale)).slice(0, 4).map((p) => ({ label: p.data.title, href: p.href }))
+  : [];
 
 const sellInChina: NavItem[] = [
   {
@@ -186,6 +217,17 @@ const ourWork: NavItem[] = [
     href: lp('/how-we-work'),
     svg: icon.handshake,
   },
+  // English only until the row copy is translated; /about itself exists everywhere.
+  ...(locale === 'en'
+    ? [
+        {
+          label: t('nav.work.about.label'),
+          desc: t('nav.work.about.desc'),
+          href: lp('/about'),
+          svg: icon.network,
+        },
+      ]
+    : []),
 ];
 
 /**
@@ -303,6 +345,8 @@ interface NavSection {
   intro: string;
   cta: { label: string; href: string } | null;
   items: NavItem[];
+  /** Optional article list under the rows. The label links to the full list. */
+  insights?: { label: string; href: string; all: string; items: { label: string; href: string }[] };
 }
 
 const sections: NavSection[] = [
@@ -316,15 +360,6 @@ const sections: NavSection[] = [
     items: sellInChina,
   },
   {
-    key: 'web',
-    label: t('nav.section.web'),
-    href: lp('/build-in-china'),
-    title: t('nav.web.title'),
-    intro: t('nav.web.intro'),
-    cta: null,
-    items: websiteAndSocial,
-  },
-  {
     key: 'find',
     label: t('nav.section.find'),
     href: lp('/compass'),
@@ -332,6 +367,23 @@ const sections: NavSection[] = [
     intro: t('nav.find.intro'),
     cta: null,
     items: findPartner,
+    insights: hasHub
+      ? {
+          label: t('nav.find.insights'),
+          href: hubHref,
+          all: t('nav.find.insights.all'),
+          items: findInsights.slice(0, 3),
+        }
+      : undefined,
+  },
+  {
+    key: 'web',
+    label: t('nav.section.web'),
+    href: lp('/build-in-china'),
+    title: t('nav.web.title'),
+    intro: t('nav.web.intro'),
+    cta: null,
+    items: websiteAndSocial,
   },
   {
     key: 'learn',
@@ -365,9 +417,9 @@ const here = localizePath(Astro.url.pathname, 'en');
 const sectionRoots: Record<string, string[]> = {
   sell: ['/grow-in-china', '/enter-china'],
   web: ['/build-in-china', '/social-in-china'],
-  find: ['/compass'],
+  find: ['/compass', '/insights/finding-a-partner'],
   learn: ['/learn-china', '/insights'],
-  work: ['/work', '/how-we-work'],
+  work: ['/work', '/how-we-work', '/about'],
 };
 const activeKey =
   Object.keys(sectionRoots).find((k) => sectionRoots[k].some((r) => here === r || here.startsWith(r + '/'))) ??
@@ -511,6 +563,27 @@ const switcherOthers = otherLocales.map((l) => ({
                             </a>
                           </li>
                         ))}
+                        {section.insights && (
+                          <li class="mega__group" style={`--i:${section.items.length}`}>
+                            <a href={section.insights.href} class="mega__group-label">
+                              {section.insights.label}
+                            </a>
+                            <ul class="mega__group-list">
+                              {section.insights.items.map((post) => (
+                                <li>
+                                  <a href={post.href} class="mega-link">
+                                    {post.label}
+                                  </a>
+                                </li>
+                              ))}
+                              <li>
+                                <a href={section.insights.href} class="mega-link mega-link--all">
+                                  {section.insights.all}
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        )}
                       </ul>
 
                       {/* Zone three: show, do not tell */}

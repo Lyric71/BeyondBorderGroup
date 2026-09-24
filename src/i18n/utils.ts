@@ -49,6 +49,10 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
   fr: {
     '/compass': '/compass',
     '/compass/shortlist': '/compass/demander-sa-liste',
+    '/compass/find-a-distributor-in-china': '/compass/trouver-un-distributeur-en-chine',
+    '/compass/find-a-tmall-partner-in-china': '/compass/trouver-un-tmall-partner-en-chine',
+    '/compass/find-a-douyin-partner-in-china': '/compass/trouver-un-douyin-partner-en-chine',
+    '/insights/finding-a-partner': '/decryptages/trouver-un-partenaire-en-chine',
     '/social-in-china': '/reseaux-sociaux-chinois',
     '/build-in-china': '/site-web-et-wechat-en-chine',
     '/about': '/qui-nous-sommes',
@@ -85,6 +89,10 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
   de: {
     '/compass': '/compass',
     '/compass/shortlist': '/compass/liste-anfordern',
+    '/compass/find-a-distributor-in-china': '/compass/vertriebspartner-in-china-finden',
+    '/compass/find-a-tmall-partner-in-china': '/compass/tmall-partner-in-china-finden',
+    '/compass/find-a-douyin-partner-in-china': '/compass/douyin-partner-in-china-finden',
+    '/insights/finding-a-partner': '/analysen/partner-in-china-finden',
     '/social-in-china': '/chinesische-social-media',
     '/build-in-china': '/website-und-wechat-in-china',
     '/about': '/ueber-uns',
@@ -121,6 +129,10 @@ const slugMap: Record<Exclude<Locale, typeof defaultLocale>, Record<string, stri
   es: {
     '/compass': '/compass',
     '/compass/shortlist': '/compass/solicitar-la-lista',
+    '/compass/find-a-distributor-in-china': '/compass/encontrar-distribuidor-en-china',
+    '/compass/find-a-tmall-partner-in-china': '/compass/encontrar-tmall-partner-en-china',
+    '/compass/find-a-douyin-partner-in-china': '/compass/encontrar-douyin-partner-en-china',
+    '/insights/finding-a-partner': '/analisis/encontrar-socio-en-china',
     '/social-in-china': '/redes-sociales-chinas',
     '/build-in-china': '/web-y-wechat-en-china',
     '/about': '/quienes-somos',

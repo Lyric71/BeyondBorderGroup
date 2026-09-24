@@ -346,54 +346,161 @@ function formatInsightDate(d?: Date) {
   <div class="home-progress" aria-hidden="true"><div class="home-progress__bar"></div></div>
 
   {/* ---------- HERO ---------- */}
-  <section class="home-hero" data-home-hero>
-    <div class="home-hero__bg" aria-hidden="true" data-home-parallax>
-      <picture>
-        <source srcset="/Images/hero-livestream.webp" type="image/webp" />
-        <img
-          src="/Images/hero-livestream.jpg"
-          alt="Chinese livestream commerce host on set, demonstrating products to a connected studio audience"
-          width="1376"
-          height="768"
-          loading="eager"
-          decoding="async"
-          fetchpriority="high"
-        />
-      </picture>
-    </div>
-    <div class="home-hero__overlay" aria-hidden="true"></div>
-    <div class="home-hero__grain" aria-hidden="true"></div>
+  {/*
+    Two slides that autoplay every 5s (a user-requested exception to the house
+    motion rule), plus tabs, arrow keys and swipe. Slides share one grid cell
+    so the hero keeps the height of the taller one and nothing jumps on
+    switch. Slide one carries the page H1.
+  */}
+  <section
+    class="home-hero home-hero--slider"
+    data-home-hero
+    data-hero-slider
+    aria-roledescription="carousel"
+    aria-label="What we do in China"
+  >
+    <div class="home-hero__slides">
+      <div
+        class="home-hero__slide is-active"
+        id="hero-slide-sell"
+        role="tabpanel"
+        aria-labelledby="hero-tab-sell"
+        data-hero-slide
+      >
+        <div class="home-hero__bg" aria-hidden="true" data-home-parallax>
+          <picture>
+            <source srcset="/Images/hero-livestream.webp" type="image/webp" />
+            <img
+              src="/Images/hero-livestream.jpg"
+              alt="Chinese livestream commerce host on set, demonstrating products to a connected studio audience"
+              width="1376"
+              height="768"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </picture>
+        </div>
+        <div class="home-hero__overlay" aria-hidden="true"></div>
+        <div class="home-hero__grain" aria-hidden="true"></div>
 
-    <div class="container home-hero__inner">
-      <span class="eyebrow eyebrow--on-dark home-reveal">Marketing and eCommerce in China</span>
-      <h1 class="home-hero__title home-reveal" style="--reveal-delay: 80ms;">
-        <span class="home-hero__title-row">Sell in China.</span>
-        <span class="home-hero__title-row home-hero__title-row--accent">Grow in China.</span>
-        <span class="home-hero__title-row home-hero__title-row--highlight">Understand China.</span>
-      </h1>
-      <p class="home-hero__lead home-reveal" style="--reveal-delay: 200ms;">
-        We get brands and companies earning revenue in China. Stores on Tmall and JD, social
-        commerce on Douyin and RED, the right distributor for your category.
-      </p>
-      <div class="home-hero__actions home-reveal" style="--reveal-delay: 280ms;">
-        <a class="btn btn--primary home-magnetic" href="/contact">Talk to us</a>
-        <a class="btn btn--primary home-magnetic" href="/tools">Budget Calculator</a>
-        <a class="btn btn--ghost-light home-magnetic" href="/work">See our work</a>
+        <div class="container home-hero__inner">
+          <span class="eyebrow eyebrow--on-dark home-reveal">Marketing and eCommerce in China</span>
+          <h1 class="home-hero__title home-reveal" style="--reveal-delay: 80ms;">
+            <span class="home-hero__title-row">Sell in China.</span>
+            <span class="home-hero__title-row home-hero__title-row--accent">Grow in China.</span>
+            <span class="home-hero__title-row home-hero__title-row--highlight">Understand China.</span>
+          </h1>
+          <p class="home-hero__lead home-reveal" style="--reveal-delay: 200ms;">
+            We get brands and companies earning revenue in China. Stores on Tmall and JD, social
+            commerce on Douyin and RED, the right distributor for your category.
+          </p>
+          <div class="home-hero__actions home-reveal" style="--reveal-delay: 280ms;">
+            <a class="btn btn--primary home-magnetic" href="/contact">Talk to us</a>
+            <a class="btn btn--primary home-magnetic" href="/tools">Budget Calculator</a>
+            <a class="btn btn--ghost-light home-magnetic" href="/work">See our work</a>
+          </div>
+
+          <div class="home-hero__meta home-reveal" style="--reveal-delay: 360ms;">
+            <div class="home-hero__meta-item">
+              <span class="home-hero__meta-num" data-home-counter="15" data-suffix="+">15+</span>
+              <span class="home-hero__meta-label">years in China</span>
+            </div>
+            <div class="home-hero__meta-item">
+              <span class="home-hero__meta-num" data-home-counter="75" data-suffix="+">75+</span>
+              <span class="home-hero__meta-label">brand launches</span>
+            </div>
+            <div class="home-hero__meta-item">
+              <span class="home-hero__meta-num">Millions</span>
+              <span class="home-hero__meta-label">of GMV under management</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="home-hero__meta home-reveal" style="--reveal-delay: 360ms;">
-        <div class="home-hero__meta-item">
-          <span class="home-hero__meta-num" data-home-counter="15" data-suffix="+">15+</span>
-          <span class="home-hero__meta-label">years in China</span>
+      <div
+        class="home-hero__slide home-hero__slide--compass"
+        id="hero-slide-compass"
+        role="tabpanel"
+        aria-labelledby="hero-tab-compass"
+        aria-hidden="true"
+        inert
+        data-hero-slide
+      >
+        <div class="home-hero__bg" aria-hidden="true" data-home-parallax>
+          <img
+            src="/Images/compass/compass-hero.webp"
+            alt=""
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
-        <div class="home-hero__meta-item">
-          <span class="home-hero__meta-num" data-home-counter="75" data-suffix="+">75+</span>
-          <span class="home-hero__meta-label">brand launches</span>
+        <div class="home-hero__overlay" aria-hidden="true"></div>
+        <div class="home-hero__grain" aria-hidden="true"></div>
+
+        <div class="container home-hero__inner">
+          <span class="eyebrow eyebrow--on-dark home-reveal">Compass, our partner database</span>
+          <h2 class="home-hero__title home-reveal" style="--reveal-delay: 80ms;">
+            <span class="home-hero__title-row">Find a distributor.</span>
+            <span class="home-hero__title-row home-hero__title-row--accent">Find a TP or DP.</span>
+            <span class="home-hero__title-row home-hero__title-row--highlight">Find the right one.</span>
+          </h2>
+          <p class="home-hero__lead home-reveal" style="--reveal-delay: 200ms;">
+            Your partner decides which shelves you reach in China. Compass is where we keep 15 years of meetings with those partners. We shortlist the three to five that already run your category.
+          </p>
+          <div class="home-hero__actions home-reveal" style="--reveal-delay: 280ms;">
+            <a class="btn btn--primary home-magnetic" href="/compass">Explore Compass</a>
+            <a class="btn btn--primary home-magnetic" href="/compass/shortlist">Get a shortlist</a>
+            <a class="btn btn--ghost-light home-magnetic" href="/how-we-work">How we work</a>
+          </div>
+
+          <div class="home-hero__meta home-reveal" style="--reveal-delay: 360ms;">
+            <div class="home-hero__meta-item">
+              <span class="home-hero__meta-num">15+</span>
+              <span class="home-hero__meta-label">years of partner meetings</span>
+            </div>
+            <div class="home-hero__meta-item">
+              <span class="home-hero__meta-num">3 to 5</span>
+              <span class="home-hero__meta-label">names on a typical shortlist</span>
+            </div>
+            <div class="home-hero__meta-item">
+              <span class="home-hero__meta-num">Zero</span>
+              <span class="home-hero__meta-label">commission from partners</span>
+            </div>
+          </div>
         </div>
-        <div class="home-hero__meta-item">
-          <span class="home-hero__meta-num">Millions</span>
-          <span class="home-hero__meta-label">of GMV under management</span>
-        </div>
+      </div>
+    </div>
+
+    <div class="container home-hero__switch-wrap">
+      <div class="home-hero__switch" role="tablist" aria-label="Choose a slide">
+        <button
+          type="button"
+          class="home-hero__tab is-active"
+          id="hero-tab-sell"
+          role="tab"
+          aria-selected="true"
+          aria-controls="hero-slide-sell"
+          data-hero-tab="0"
+        >
+          <span class="home-hero__tab-bar" aria-hidden="true"></span>
+          <span class="home-hero__tab-label">Sell and grow</span>
+        </button>
+        <button
+          type="button"
+          class="home-hero__tab"
+          id="hero-tab-compass"
+          role="tab"
+          aria-selected="false"
+          aria-controls="hero-slide-compass"
+          tabindex="-1"
+          data-hero-tab="1"
+        >
+          <span class="home-hero__tab-bar" aria-hidden="true"></span>
+          <span class="home-hero__tab-label">Find a partner</span>
+        </button>
       </div>
     </div>
 

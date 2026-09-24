@@ -16,6 +16,10 @@
              image_ready and whose publish_date is today or earlier, then
              sends the Resend email. Runs daily, two and a half hours after
              the draft. That gap is the review window.
+    partner  Drafts every "Finding a partner" row (slot P) that is still
+             not_started and due within the next two days. Same steps 0 to
+             3, stops at image_ready. Runs daily, weekends included; the
+             partner queue publishes every other day.
 
   Output of each run is written to editorial/logs/runs/<date>-<mode>.txt.
   Register with editorial/scripts/register-tasks.ps1.
@@ -24,7 +28,7 @@
   draft (default) or publish.
 #>
 param(
-  [ValidateSet('draft', 'publish')]
+  [ValidateSet('draft', 'publish', 'partner')]
   [string]$Mode = 'draft',
   # Manual test run: ignore the plan-start date, the weekday guard and, in
   # publish mode, the publish_date filter.
@@ -59,8 +63,8 @@ if ($Mode -eq 'draft' -and -not $Force) {
   }
 }
 
-# The shared runner uses: Fable, Opus, GPT-6 Astra, then GPT-5.6 Sol.
-$Model = 'fable'
+# The shared runner uses: Opus 5.5, then Fable, GPT-6 Astra and GPT-5.6 Sol as fallbacks.
+$Model = 'claude-opus-5-5'
 
 if ($Mode -eq 'draft') {
   $Prompt = @'
@@ -69,7 +73,7 @@ Draft today's slot.
 Read editorial/CLAUDE.md, editorial/SPEC.md and editorial/RUNBOOK.md first and
 follow them exactly. Find today's row in editorial/schedule.csv (Signal on
 Monday, Anchor on Tuesday, Ledger on Wednesday, Teardown or Refresh on
-Thursday). Run steps 0 to 3 of the pipeline: Chinese deep research with every
+Thursday). Ignore rows with slot P: the partner run drafts those. Run steps 0 to 3 of the pipeline: Chinese deep research with every
 source validated twice, /createarticle from the brief (or from the slot
 template for a Signal, Teardown or Refresh), /content-quality-us on the
 finished draft, /generate-image-openai for the hero image. For an Anchor +
@@ -81,6 +85,28 @@ reason in notes, and nothing is drafted. Update editorial/schedule.csv and
 write the run log. Stop at image_ready. Do not publish. Do not build. Do not
 commit. This run is unattended: never ask a question, decide from the specs
 and note the decision in the run log.
+'@
+} elseif ($Mode -eq 'partner') {
+  $Prompt = @'
+Draft the partner pieces that are due.
+
+Read editorial/CLAUDE.md, editorial/SPEC.md and editorial/RUNBOOK.md first and
+follow them exactly. In editorial/schedule.csv, find every row with slot P
+(the "Finding a partner" queue, Part 5 of public/content/editorial-briefs.md)
+whose status is not_started and whose publish_date is within the next two
+days (today, tomorrow or the day after), oldest first. For each one, run
+steps 0 to 3 of the pipeline from its brief file: Chinese deep research with
+every source validated twice, /createarticle, /content-quality-us on the
+finished draft (always, every piece), /generate-image-openai for the hero
+image. Asset and Report pieces also write their file under editorial/output/.
+Follow the partner template in the brief: frontmatter tags include
+"Finding a partner" plus the brief's topic tags; never cite or name a
+competitor (the list is in Part 5); use the Compass figure from
+editorial/sources/compass-stats.md when it exists, else the fallback the
+brief names, and say so in the log. Update editorial/schedule.csv and append
+to the run log (never overwrite it). Stop at image_ready. Do not publish. Do
+not build. Do not commit. This run is unattended: never ask a question,
+decide from the specs and note the decision in the run log.
 '@
 } else {
   $Prompt = @'

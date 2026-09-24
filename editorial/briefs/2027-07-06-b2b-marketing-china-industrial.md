@@ -63,7 +63,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 6. What a foreign supplier can and cannot do without a China legal entity
 7. A twelve-month build for an industrial brand with no China presence
 
-**Internal links.** /compass, /enter-china/distribution, /enter-china/market-entry-consulting, /compass/how-it-works, /work
+**Internal links.** /compass, /enter-china/distribution, /enter-china/market-entry-consulting, /compass/find-a-distributor-in-china, /work
 **CTA.** Request a Compass shortlist of vetted industrial distributors.
 **Do not.** Do not import consumer marketplace logic; a page that recommends Tmall to a valve manufacturer is a failed page. Do not assert what a foreign company may do without a China entity, including invoicing, hiring and contracting; frame every one of those as a point the writer verifies with a named source and cites.
 **Territory guard.** Baidu visibility and the Chinese-language website build are named as dependencies and handed to ChinaWebFoundry with one link each. This page does not explain Baidu SEO, ICP filing or hosting.

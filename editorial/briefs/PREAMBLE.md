@@ -37,7 +37,9 @@ Internal link targets available:
 /tools/tmall-global-setup-and-run
 /tools/jd-worldwide-setup-and-run
 /tools/douyin-cost-calculator
-/compass  /compass/shortlist  /compass/how-it-works
+/compass  /compass/shortlist  /insights/finding-a-partner
+/compass/find-a-distributor-in-china  /compass/find-a-tmall-partner-in-china
+/compass/find-a-douyin-partner-in-china
 /enter-china/market-entry-consulting  /enter-china/distribution
 /enter-china/cross-border-setup  /enter-china/branding-localisation
 /grow-in-china/cross-border-ecommerce  /grow-in-china/social-commerce

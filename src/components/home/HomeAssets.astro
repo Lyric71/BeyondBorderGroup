@@ -255,6 +255,129 @@
     }
   }
 
+  /* ---------- Home hero: two slides, autoplay every 5s ----------
+     Slides share one grid cell, so the hero takes the taller slide's height
+     and nothing shifts on switch. Each slide isolates its own backdrop, which
+     is positioned against the hero itself. Autoplay is a user-requested
+     exception to the house motion rule. */
+  .home-hero--slider {
+    flex-direction: column;
+  }
+  .home-hero__slides {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+  .home-hero__slide {
+    grid-area: 1 / 1;
+    min-width: 0;
+    isolation: isolate;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 500ms ease,
+      visibility 0s linear 500ms;
+  }
+  .home-hero__slide.is-active {
+    opacity: 1;
+    visibility: visible;
+    transition:
+      opacity 500ms ease,
+      visibility 0s;
+  }
+  /* Replay the underline each time a slide comes in. */
+  .home-hero__slide:not(.is-active) .home-hero__title-row--highlight::before {
+    animation: none;
+    transform: scaleX(0);
+  }
+  .home-hero__switch-wrap {
+    /* Above the slides: each slide is its own stacking context and its
+       backdrop covers the whole hero. */
+    position: relative;
+    z-index: 1;
+    max-width: 980px;
+    margin: var(--space-6) auto 0;
+  }
+  .home-hero__switch {
+    display: flex;
+    gap: var(--space-4);
+  }
+  .home-hero__tab {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 180px;
+    padding: 0 0 0.25rem;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.6);
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 200ms ease;
+  }
+  .home-hero__tab:hover,
+  .home-hero__tab.is-active {
+    color: var(--bbg-white);
+  }
+  .home-hero__tab:focus-visible {
+    outline: 3px solid var(--bbg-blue);
+    outline-offset: 4px;
+  }
+  .home-hero__tab-bar {
+    position: relative;
+    display: block;
+    height: 3px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.22);
+    overflow: hidden;
+  }
+  .home-hero__tab-bar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #c8102e;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .home-hero__tab.is-active .home-hero__tab-bar::after {
+    transform: scaleX(1);
+  }
+  /* While autoplay runs, the active bar fills over the interval instead. */
+  .home-hero--slider.is-auto .home-hero__tab.is-active .home-hero__tab-bar::after {
+    transition: none;
+    animation: home-hero-progress var(--hero-interval, 5000ms) linear forwards;
+  }
+  @keyframes home-hero-progress {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+  @media (max-width: 720px) {
+    .home-hero__switch-wrap {
+      margin-top: var(--space-5);
+    }
+    .home-hero__tab {
+      width: auto;
+      flex: 1 1 0;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .home-hero__slide,
+    .home-hero__slide.is-active,
+    .home-hero__tab-bar::after {
+      transition: none;
+    }
+  }
+
   /* ---------- How we work ---------- */
   .hww-head {
     max-width: 780px;
@@ -577,7 +700,8 @@
     // Hero parallax + scroll progress bar (single rAF loop).
     // Hero height and doc height are cached and refreshed on resize so the
     // scroll handler does not force a synchronous layout every tick.
-    const parallaxImg = document.querySelector('[data-home-parallax] img');
+    // Every slide of the hero carries its own backdrop, so move them all.
+    const parallaxImgs = document.querySelectorAll('[data-home-parallax] img');
     const progressEl = document.querySelector('.home-progress__bar');
     const heroEl = document.querySelector('[data-home-hero]');
     let heroH = heroEl ? heroEl.offsetHeight : 0;
@@ -592,8 +716,8 @@
       ticking = true;
       requestAnimationFrame(() => {
         const scrollY = window.scrollY || window.pageYOffset;
-        if (parallaxImg && heroEl && !reduced && scrollY < heroH) {
-          parallaxImg.style.setProperty('--parallax-y', scrollY * 0.18 + 'px');
+        if (parallaxImgs.length && heroEl && !reduced && scrollY < heroH) {
+          parallaxImgs.forEach((img) => img.style.setProperty('--parallax-y', scrollY * 0.18 + 'px'));
         }
         if (progressEl) {
           const pct = docH > 0 ? Math.min(100, (scrollY / docH) * 100) : 0;
@@ -607,6 +731,117 @@
     // Doc height grows as lazy content/images load; refresh after load too.
     window.addEventListener('load', refreshMetrics, { once: true });
     onScroll();
+
+    // Hero slides: advance every 5 seconds, plus tabs, arrow keys and swipe.
+    // The active tab's bar fills over the interval. Autoplay pauses while
+    // keyboard focus is in the hero and while the page is hidden, and is off
+    // entirely for visitors who ask for reduced motion. No hover pause: the
+    // hero fills the viewport, so the cursor sits on it almost all the time
+    // and a hover pause meant the slides often never started.
+    const slider = document.querySelector('[data-hero-slider]');
+    if (slider) {
+      const slides = Array.from(slider.querySelectorAll('[data-hero-slide]'));
+      const tabs = Array.from(slider.querySelectorAll('[data-hero-tab]'));
+      const INTERVAL = 5000;
+      let current = 0;
+      let timer = null;
+      let focused = false;
+      const canPlay = () => !reduced && !focused && !document.hidden;
+      const schedule = () => {
+        clearTimeout(timer);
+        slider.classList.remove('is-auto');
+        if (!canPlay()) return;
+        // Re-adding the class restarts the progress fill on the active tab.
+        void slider.offsetWidth;
+        slider.classList.add('is-auto');
+        timer = setTimeout(() => show(current + 1), INTERVAL);
+      };
+      slider.style.setProperty('--hero-interval', INTERVAL + 'ms');
+      const show = (i, focus) => {
+        const next = (i + slides.length) % slides.length;
+        if (next === current) return schedule();
+        current = next;
+        slides.forEach((slide, n) => {
+          const on = n === current;
+          slide.classList.toggle('is-active', on);
+          slide.toggleAttribute('inert', !on);
+          if (on) slide.removeAttribute('aria-hidden');
+          else slide.setAttribute('aria-hidden', 'true');
+          if (on && !reduced) {
+            // Replay the entrance for the incoming slide.
+            const els = slide.querySelectorAll('.home-reveal');
+            els.forEach((el) => el.classList.remove('is-in'));
+            void slide.offsetWidth;
+            els.forEach((el) => el.classList.add('is-in'));
+          }
+        });
+        tabs.forEach((tab, n) => {
+          const on = n === current;
+          tab.classList.toggle('is-active', on);
+          tab.setAttribute('aria-selected', on ? 'true' : 'false');
+          tab.tabIndex = on ? 0 : -1;
+          if (on && focus) tab.focus();
+        });
+        schedule();
+      };
+      // Only keyboard focus pauses. A mouse click on a tab or button also
+      // moves focus into the hero, and that used to stop autoplay for good.
+      slider.addEventListener('focusin', (e) => {
+        let keyboard = true;
+        try {
+          keyboard = e.target.matches(':focus-visible');
+        } catch (_) {}
+        if (!keyboard) return;
+        focused = true;
+        schedule();
+      });
+      slider.addEventListener('focusout', (e) => {
+        if (slider.contains(e.relatedTarget)) return;
+        focused = false;
+        schedule();
+      });
+      document.addEventListener('visibilitychange', schedule);
+      // Back/forward cache restores the page with a stale timer; restart it.
+      window.addEventListener('pageshow', (e) => {
+        if (e.persisted) schedule();
+      });
+      tabs.forEach((tab, n) => {
+        tab.addEventListener('click', () => show(n));
+        tab.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            show(current + 1, true);
+          } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            show(current - 1, true);
+          }
+        });
+      });
+      // Deep link for campaigns: /#find-a-partner opens on the Compass slide.
+      if (location.hash === '#find-a-partner') show(1);
+      else schedule();
+      let startX = null;
+      let startY = null;
+      slider.addEventListener(
+        'touchstart',
+        (e) => {
+          startX = e.touches[0].clientX;
+          startY = e.touches[0].clientY;
+        },
+        { passive: true },
+      );
+      slider.addEventListener(
+        'touchend',
+        (e) => {
+          if (startX === null) return;
+          const dx = e.changedTouches[0].clientX - startX;
+          const dy = e.changedTouches[0].clientY - startY;
+          startX = null;
+          if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) show(current + (dx < 0 ? 1 : -1));
+        },
+        { passive: true },
+      );
+    }
 
     // Smooth-scroll the hero anchor
     const scrollLink = document.querySelector('.home-hero__scroll');
