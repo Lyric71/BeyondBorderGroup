@@ -80,7 +80,14 @@ Guides publish into `src/content/guides/` (English only, no locale
 propagation). Refreshes update the existing insight files in place, in every
 locale, and move `updatedDate`.
 
-Then, in this order, and only when each step passes: `npm run build`,
+Every locale file keeps its title at 60 characters or fewer (otherwise add
+a `seoTitle` of at most 60, which leaves the H1 alone) and its description
+between 120 and 155 characters; English keeps the house ceilings above.
+
+Then, in this order, and only when each step passes:
+`node scripts/check-insight-links.mjs` (fails on a link to a locale page
+that does not exist, or a slug-map entry without its file),
+`node scripts/generate-llms-full.mjs`, `npm run build`,
 `npx astro check`, `git add` of everything the piece touched, one commit on
 main (`feat(insights): publish <slug>`), `git push origin main`. A failed
 build or check means no commit, no push, the row stays at `image_ready`, and
@@ -89,7 +96,7 @@ puts the article live. The scheduled publish run is the explicit request for
 a build that `.claude/CLAUDE.md` section 19 requires; nothing else in this
 pipeline builds.
 
-When the publish finishes, Claude runs `scripts/notify-publish.mjs` from the
+When the publish finishes, Claude runs `editorial/scripts/notify-publish.mjs` from the
 repo root. It sends one email through Resend (`RESEND_API_KEY` in `.env`) with
 the live URL per locale, the hero image path, build status, open TODOs and
 the run log path. If the send fails, Claude says so instead of skipping

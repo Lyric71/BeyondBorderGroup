@@ -7,14 +7,14 @@ slot: P
 slot_name: Partner
 content_type: Partner Case note
 tags: ["Finding a partner","Due diligence","Tmall Partners","Douyin Partners"]
-title: "When your China agency fakes orders, the brand pays"
+title: "When a Tmall agency fakes orders, the brand pays"
 slug: tmall-agency-fake-orders-brand-liability
 primary_query: "tmall agency fake orders brand liability"
 word_count: "1,000 to 1,300"
 status: not_started
 ---
 
-# BRIEF P13: When your China agency fakes orders, the brand pays
+# BRIEF P13: When a Tmall agency fakes orders, the brand pays
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -33,7 +33,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 | Field | Value |
 |---|---|
-| Working H1 | When your China agency fakes orders, the brand pays |
+| Working H1 | When a Tmall agency fakes orders, the brand pays |
 | Slug | `/insights/tmall-agency-fake-orders-brand-liability/` |
 | Output file | `output/tmall-agency-fake-orders-brand-liability.md` |
 | Primary query | `tmall agency fake orders brand liability` |
@@ -44,11 +44,11 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 ## The brief
 
-**Title:** When your China agency fakes orders, the brand pays
+**Title:** When a Tmall agency fakes orders, the brand pays
 **Query:** tmall agency fake orders brand liability · **Tags:** Due diligence, Tmall Partners, Douyin Partners
 **Word count:** 1,000 to 1,300
 
-**The answer, in one line.** In a case the Supreme People's Court published in August 2026, an operating agency faked group-buy orders; regulators fined it RMB 100,000 and the platform kept the whole RMB 50,000 deposit. The store's penalties land on the account holder, which is the brand. Ban fake orders in writing and audit the traffic.
+**The answer, in one line.** In a case the Supreme People's Court released in August 2026, an operating agency faked group-buy orders on a local-services platform and paid with its own RMB 50,000 deposit and a RMB 100,000 fine. On Tmall and Douyin, the merchant agreements treat what is done through the store account as the merchant's act, and the 2025 Anti-Unfair Competition Law reaches the seller whose sales were inflated. Ban fake orders in writing and audit the traffic.
 
 **The table it must carry.** Consequence (platform deposit, store penalties and delisting, regulator fines, criminal exposure), who bears it, the source.
 

@@ -14,11 +14,15 @@
  *
  * Locale URLs are derived from which content files exist for the slug and
  * from the per-locale slug maps in src/i18n/insight-slugs.mjs:
- *   src/content/insights/<slug>.md            -> /insights/<slug>/
- *   src/content/insights-fr/<frSlug>.md       -> /fr/decryptages/<frSlug>/
- *   src/content/insights-de/<slug>.md         -> /de/analysen/<deSlug>/
- *   src/content/insights-es/<esSlug>.md       -> /es/analisis/<esSlug>/
- * Guides are English only: src/content/guides/<slug>.md -> /guides/<slug>/.
+ *   src/content/insights/<slug>.md            -> /insights/<slug>
+ *   src/content/insights-fr/<frSlug>.md       -> /fr/decryptages/<frSlug>
+ *   src/content/insights-de/<slug>.md         -> /de/analysen/<deSlug>
+ *   src/content/insights-es/<esSlug>.md       -> /es/analisis/<esSlug>
+ * Guides are English only: src/content/guides/<slug>.md -> /guides/<slug>.
+ * (No trailing slash: the site runs trailingSlash: never.)
+ *
+ * After the email it pings IndexNow (editorial/scripts/indexnow.mjs) with the
+ * live URLs and the listing pages they appear on. --no-indexnow skips it.
  *
  * RESEND_API_KEY is read from .env.local / .env in the current directory or
  * from the environment. Pass --dry-run to print the email without sending.
@@ -27,6 +31,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { insightUrls, pingIndexNow } from './indexnow.mjs';
 
 const SITE = 'https://www.thechinapath.com';
 // Resend testing mode only delivers to the account owner's address. Once a
@@ -53,6 +58,7 @@ function parseArgs(argv) {
     if (!a.startsWith('--')) continue;
     const key = a.slice(2);
     if (key === 'dry-run') { out.dryRun = true; continue; }
+    if (key === 'no-indexnow') { out.noIndexNow = true; continue; }
     const val = argv[i + 1];
     if (val === undefined || val.startsWith('--')) { out[key] = true; continue; }
     if (key === 'todo') out.todo.push(val); else out[key] = val;
@@ -71,17 +77,17 @@ async function loadSlugMaps() {
 async function localeUrls(slug, section) {
   if (section === 'guides') {
     const file = path.join('src', 'content', 'guides', `${slug}.md`);
-    return existsSync(file) ? [{ lang: 'en', url: `${SITE}/guides/${slug}/` }] : [];
+    return existsSync(file) ? [{ lang: 'en', url: `${SITE}/guides/${slug}` }] : [];
   }
   const maps = await loadSlugMaps();
   const frSlug = maps.fr[slug] || slug;
   const deSlug = maps.de[slug] || slug;
   const esSlug = maps.es[slug] || slug;
   const map = [
-    { lang: 'en', file: ['insights', slug], route: `/insights/${slug}/` },
-    { lang: 'fr', file: ['insights-fr', frSlug], route: `/fr/decryptages/${frSlug}/` },
-    { lang: 'de', file: ['insights-de', slug], route: `/de/analysen/${deSlug}/` },
-    { lang: 'es', file: ['insights-es', esSlug], route: `/es/analisis/${esSlug}/` },
+    { lang: 'en', file: ['insights', slug], route: `/insights/${slug}` },
+    { lang: 'fr', file: ['insights-fr', frSlug], route: `/fr/decryptages/${frSlug}` },
+    { lang: 'de', file: ['insights-de', slug], route: `/de/analysen/${deSlug}` },
+    { lang: 'es', file: ['insights-es', esSlug], route: `/es/analisis/${esSlug}` },
   ];
   return map
     .filter((m) => existsSync(path.join('src', 'content', m.file[0], `${m.file[1]}.md`)))
@@ -169,6 +175,11 @@ async function main() {
     process.exit(1);
   }
   console.log(`Sent to ${to} (id ${data.id || 'n/a'})`);
+
+  if (!args.noIndexNow && args.build !== 'failed') {
+    const list = section === 'guides' ? urls.map((u) => u.url) : await insightUrls(args.slug);
+    await pingIndexNow(list).catch((e) => console.error(`IndexNow skipped: ${e.message}`));
+  }
 }
 
 main().catch((err) => {

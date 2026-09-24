@@ -7,14 +7,14 @@ slot: P
 slot_name: Partner
 content_type: Partner Case note
 tags: ["Finding a partner","Contracts","Distributors"]
-title: "Grey-market diversion in China: the clause that paid RMB 6m"
+title: "China distributor price control: a clause that held"
 slug: china-distributor-price-control-parallel
 primary_query: "china distributor price control parallel"
 word_count: "1,000 to 1,300"
 status: not_started
 ---
 
-# BRIEF P12: Grey-market diversion in China: the clause that paid RMB 6m
+# BRIEF P12: China distributor price control: a clause that held
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -33,7 +33,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 | Field | Value |
 |---|---|
-| Working H1 | Grey-market diversion in China: the clause that paid RMB 6m |
+| Working H1 | China distributor price control: a clause that held |
 | Slug | `/insights/china-distributor-price-control-parallel/` |
 | Output file | `output/china-distributor-price-control-parallel.md` |
 | Primary query | `china distributor price control parallel` |
@@ -44,11 +44,11 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 ## The brief
 
-**Title:** Grey-market diversion in China: the clause that paid RMB 6m
+**Title:** China distributor price control: a clause that held
 **Query:** china distributor price control parallel · **Tags:** Contracts, Distributors
 **Word count:** 1,000 to 1,300
 
-**The answer, in one line.** A beauty brand's exclusive offline distributor scratched off anti-counterfeit codes and sold online. Because the contract set RMB 200,000 per breach, the brand won the lead case in June 2025 and 15 related cases settled for over RMB 6 million. Put a traceable code and a per-breach penalty in every distribution contract.
+**The answer, in one line.** A beauty brand's exclusive offline distributor scratched off traceability codes and sold online. The contract set a RMB 200,000 penalty and the brand won the lead case in June 2025; 14 related cases worth over RMB 6 million in total closed through mediation. Put a traceable code and a written penalty in every distribution contract.
 
 **The table it must carry.** The control (traceability code, channel clause, per-breach penalty, audit right, platform complaint), what it does, how the case used it.
 

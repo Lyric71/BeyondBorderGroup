@@ -7,14 +7,14 @@ slot: P
 slot_name: Partner
 content_type: Partner Explainer
 tags: ["Finding a partner","Tmall Partners"]
-title: "What a listed Tmall Partner earns, and why it matters"
-slug: baozun-business-model
-primary_query: "baozun business model"
+title: "What a Tmall Partner costs: retainer, commission and extras"
+slug: tmall-agency-cost
+primary_query: "tmall agency cost"
 word_count: "1,300 to 1,800"
 status: not_started
 ---
 
-# BRIEF P31: What a listed Tmall Partner earns, and why it matters
+# BRIEF P31: What a Tmall Partner costs: retainer, commission and extras
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -33,10 +33,10 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 | Field | Value |
 |---|---|
-| Working H1 | What a listed Tmall Partner earns, and why it matters |
-| Slug | `/insights/baozun-business-model/` |
-| Output file | `output/baozun-business-model.md` |
-| Primary query | `baozun business model` |
+| Working H1 | What a Tmall Partner costs: retainer, commission and extras |
+| Slug | `/insights/tmall-agency-cost/` |
+| Output file | `output/tmall-agency-cost.md` |
+| Primary query | `tmall agency cost` |
 | Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 1,300 to 1,800 (body only, per the char-count rule) |
 | Tags | `Finding a partner`, `Tmall Partners` (frontmatter `tags`) |
@@ -44,15 +44,23 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 ## The brief
 
-**Title:** What a listed Tmall Partner earns, and why it matters
-**Query:** baozun business model · **Tags:** Tmall Partners
+**Title:** What a Tmall Partner costs: retainer, commission and extras
+**Query:** tmall agency cost · **Tags:** Tmall Partners
 **Word count:** 1,300 to 1,800
 
-**The answer, in one line.** Listed Tmall Partners earn more and more from their own brands and product sales than from running stores. Ruoyuchen made about 70% gross margin on its own brands against 36.7% on agency work, which tells you where a partner's best people go.
+**The answer, in one line.** A Tmall Partner usually charges a monthly retainer plus a commission on sales, and the extras (design, content, media management, warehousing) decide the real bill. Compare quotes on total cost at your expected sales, not on the retainer.
 
-**The table it must carry.** Company, latest revenue, service share, own-brand share, margin by line, source.
+**The table it must carry.** Fee line (retainer, sales commission, performance bonus, setup, design and content, media management fee, warehousing and fulfillment), how it is usually charged, what to negotiate.
 
-**Leads (verify, cite primary).** Baozun 2025 results (HKEX/SEC); Ruoyuchen 2025 annual report (cninfo); Lirenlizhuang 2025 annual report; 壹网壹创 2025 annual report (szse).
+**The proprietary number.** TheChinaPath Tmall Global calculator (year-one partner cost at three sales levels, and the cash committed before the first order).
+
+**Outline.**
+1. How Tmall Partners charge
+2. The table
+3. What a year costs at three sales levels
+4. What to negotiate, and what not to
+
+**Leads (verify, cite primary).** Tmall Global service market (服务市场) public listings for fee models; Tmall Global partner program rules; dated Chinese business media on 代运营 fee models (界面, 36氪, 第一财经). No store operator's own filings or blog. Interlink with P04 (Douyin Partner cost) and P08 (TP contract terms).
 
 **Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass`
 **CTA.** Compass shortlist.
@@ -94,4 +102,4 @@ figure is missing, use the fallback and log it.
 - [ ] Title under 52, meta under 152, excerpt under 25 words, all counted
 - [ ] New figures appended to `sources/verified-sources.md` with both check dates
 - [ ] Feature image block appended with the correct slug path
-- [ ] File saved as `output/baozun-business-model.md`
+- [ ] File saved as `output/tmall-agency-cost.md`

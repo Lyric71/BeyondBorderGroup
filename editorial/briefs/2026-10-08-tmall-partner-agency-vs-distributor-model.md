@@ -62,7 +62,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 5. When each one fits
 6. Switching models later
 
-**Leads (verify, cite primary).** Tmall Global TP categories 经销类 and 代运营 (Feb 2021 program notice; 网易 lead 163.com/dy/article/G27NTF4N053814UB.html); listed TPs' disclosure of distribution vs service revenue (Baozun, Ruoyuchen annual reports).
+**Leads (verify, cite primary).** Tmall Global TP categories 经销类 and 代运营 (Feb 2021 program notice; 网易 lead 163.com/dy/article/G27NTF4N053814UB.html); Tmall Global's own partner program pages.
 
 **Internal links.** `/compass/find-a-tmall-partner-in-china`, `/tools/tmall-global-setup-and-run`, `/compass`
 **CTA.** Compass shortlist.

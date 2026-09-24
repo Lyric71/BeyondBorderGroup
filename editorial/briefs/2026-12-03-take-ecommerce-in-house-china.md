@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Signal it is time, what to build in-house first, what to keep outsourced.
 
-**Leads (verify, cite primary).** Lirenlizhuang annual reports (L'Oréal brands leaving); 人人都是产品经理 analysis as lead. Interlink with 34A.
+**Leads (verify, cite primary).** Brands' own announcements and dated Chinese business media (界面, 第一财经, 21世纪经济报道) on brands taking store operations in-house (收回运营权); no store operator's filings. Interlink with 34A.
 
 **Internal links.** `/compass/find-a-tmall-partner-in-china`, `/grow-in-china/cross-border-ecommerce`, `/compass`
 **CTA.** Compass shortlist.

@@ -62,7 +62,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 5. Currency, RMB vs USD, and who carries FX
 6. When to move to open terms
 
-**Leads (verify, cite primary).** Over 40% of distributors under cash pressure (界面新闻 2025, jiemian.com/article/13003026.html, citing the China Liquor Flow Association); Sinosure product pages.
+**Leads (verify, cite primary).** Over 40% of distributors under cash pressure (China Alcoholic Drinks Association 中国酒业协会 with KPMG China, annual distributor survey, 2025 and 2026 editions; the 界面新闻 page jiemian.com/article/13003026.html is a repost); Sinosure product pages.
 
 **Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
 **CTA.** Compass shortlist.

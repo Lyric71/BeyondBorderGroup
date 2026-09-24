@@ -2367,13 +2367,15 @@ Rules for every P piece, on top of Part 0:
   Distribution, Daxue Consulting, China Briefing / Dezan Shira, WalktheChat,
   TMO Group, GourmetPro, China Skinny, Up2China, Web2Asia, Azoya, ChoZan,
   Lotus, any Chinese 代运营 agency blog (da-mai, xinshawn and the like), and any
-  搜狐号 or 知乎 post written by an agency. Such pages may point you to a
+  搜狐号 or 知乎 post written by an agency. Listed store operators (TPs and DPs
+  such as Baozun 宝尊, Ruoyuchen 若羽臣, Lily & Beauty 丽人丽妆, Qingmu 青木) are
+  competitors too: do not cite them, not even through their annual filings. Such pages may point you to a
   primary source; cite the primary source or nothing. Name no competitor in
   the copy either.
 - **Cite, in this order:** the platform's own rules (tmall.hk, jinritemai,
   open.alitrip), regulators and courts (NMPA, GACC, SAMR, MOF, court.gov.cn,
   spp.gov.cn, npc.gov.cn), listed-company filings (cninfo, szse, sse, HKEX,
-  SEC), dated Chinese news media (36氪, 界面, 虎嗅, 21世纪经济报道, 第一财经,
+  SEC; never a store operator's), dated Chinese news media (36氪, 界面, 虎嗅, 21世纪经济报道, 第一财经,
   财新, 新浪财经, 东方财富, 澎湃), then English news (Reuters, WWD, BoF).
   Figures marked "lead" below still need the primary source before use.
 - **Proprietary number.** A Compass figure from
@@ -2421,8 +2423,8 @@ figure is missing, use the fallback and log it.
 | P09 | 2026-10-12 | From ex-works to shelf: how a China price ladder is built | china distributor margin imported product price | Distributors | Anchor | distributor | 1,600 to 2,400 |
 | P10 | 2026-10-13 | Payment terms with a Chinese distributor | payment terms chinese distributor | Distributors, Contracts | Explainer | distributor | 1,300 to 1,800 |
 | P11 | 2026-10-14 | Sell-in is not sell-out: spotting stock pushing in China | sell in vs sell out china distributor | Managing a partner, Distributors | Anchor | distributor | 1,600 to 2,400 |
-| P12 | 2026-10-15 | Grey-market diversion in China: the clause that paid RMB 6m | china distributor price control parallel | Contracts, Distributors | Case note | distributor | 1,000 to 1,300 |
-| P13 | 2026-10-16 | When your China agency fakes orders, the brand pays | tmall agency fake orders brand liability | Due diligence, Tmall Partners, Douyin Partners | Case note | tp, dp | 1,000 to 1,300 |
+| P12 | 2026-10-15 | China distributor price control: a clause that held | china distributor price control parallel | Contracts, Distributors | Case note | distributor | 1,000 to 1,300 |
+| P13 | 2026-10-16 | When a Tmall agency fakes orders, the brand pays | tmall agency fake orders brand liability | Due diligence, Tmall Partners, Douyin Partners | Case note | tp, dp | 1,000 to 1,300 |
 | P14 | 2026-10-19 | Douyin return rates by category, and what they cost you | douyin return rate | Douyin Partners | Explainer | dp | 1,300 to 1,800 |
 | P15 | 2026-10-20 | How to replace a China distributor without losing the shelf | replace distributor china | Managing a partner, Distributors, Contracts | Anchor | distributor | 1,600 to 2,400 |
 | P16 | 2026-10-22 | TP, DP or distributor: who to hire first in China | tmall partner vs distributor china | Distributors, Tmall Partners, Douyin Partners | Anchor | distributor, tp, dp | 1,600 to 2,400 |
@@ -2440,7 +2442,7 @@ figure is missing, use the fallback and log it.
 | P28 | 2026-11-29 | Why brands leave Tmall Global, and what it says | brands leaving tmall global | Tmall Partners | Explainer | tp | 1,300 to 1,800 |
 | P29 | 2026-11-13 | Regional or national distributor: how coverage works | regional distributor china | Distributors | Explainer | distributor | 1,300 to 1,800 |
 | P30 | 2026-12-03 | When to take eCommerce back from your Tmall Partner | take ecommerce in house china | Managing a partner, Tmall Partners | Explainer | tp | 1,300 to 1,800 |
-| P31 | 2026-12-01 | What a listed Tmall Partner earns, and why it matters | baozun business model | Tmall Partners | Explainer | tp | 1,300 to 1,800 |
+| P31 | 2026-12-01 | What a Tmall Partner costs: retainer, commission and extras | tmall agency cost | Tmall Partners | Explainer | tp | 1,300 to 1,800 |
 | P32 | 2026-12-11 | Choosing a China partner for a beauty brand | cosmetics distributor china | Distributors, Tmall Partners, Douyin Partners | Anchor | distributor, tp, dp | 1,600 to 2,400 |
 | P33 | 2026-11-05 | Choosing a food and drink importer in China | food importer china | Distributors | Anchor | distributor | 1,600 to 2,400 |
 | P34 | 2026-11-27 | Selling to JD self-run and Hema through a distributor | jd self operated supplier foreign brand | Distributors | Explainer | distributor | 1,300 to 1,800 |
@@ -2636,7 +2638,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 5. When each one fits
 6. Switching models later
 
-**Leads (verify, cite primary).** Tmall Global TP categories 经销类 and 代运营 (Feb 2021 program notice; 网易 lead 163.com/dy/article/G27NTF4N053814UB.html); listed TPs' disclosure of distribution vs service revenue (Baozun, Ruoyuchen annual reports).
+**Leads (verify, cite primary).** Tmall Global TP categories 经销类 and 代运营 (Feb 2021 program notice; 网易 lead 163.com/dy/article/G27NTF4N053814UB.html); Tmall Global's own partner program pages.
 
 **Internal links.** `/compass/find-a-tmall-partner-in-china`, `/tools/tmall-global-setup-and-run`, `/compass`
 **CTA.** Compass shortlist.
@@ -2711,7 +2713,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 5. Currency, RMB vs USD, and who carries FX
 6. When to move to open terms
 
-**Leads (verify, cite primary).** Over 40% of distributors under cash pressure (界面新闻 2025, jiemian.com/article/13003026.html, citing the China Liquor Flow Association); Sinosure product pages.
+**Leads (verify, cite primary).** Over 40% of distributors under cash pressure (China Alcoholic Drinks Association 中国酒业协会 with KPMG China, annual distributor survey, 2025 and 2026 editions; the 界面新闻 page jiemian.com/article/13003026.html is a repost); Sinosure product pages.
 
 **Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
 **CTA.** Compass shortlist.
@@ -2743,11 +2745,11 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 ## P12 · PARTNER · CASE NOTE
 
-**Title:** Grey-market diversion in China: the clause that paid RMB 6m
+**Title:** China distributor price control: a clause that held
 **Query:** china distributor price control parallel · **Tags:** Contracts, Distributors
 **Word count:** 1,000 to 1,300
 
-**The answer, in one line.** A beauty brand's exclusive offline distributor scratched off anti-counterfeit codes and sold online. Because the contract set RMB 200,000 per breach, the brand won the lead case in June 2025 and 15 related cases settled for over RMB 6 million. Put a traceable code and a per-breach penalty in every distribution contract.
+**The answer, in one line.** A beauty brand's exclusive offline distributor scratched off traceability codes and sold online. The contract set a RMB 200,000 penalty and the brand won the lead case in June 2025; 14 related cases worth over RMB 6 million in total closed through mediation. Put a traceable code and a written penalty in every distribution contract.
 
 **The table it must carry.** The control (traceability code, channel clause, per-breach penalty, audit right, platform complaint), what it does, how the case used it.
 
@@ -2767,11 +2769,11 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 ## P13 · PARTNER · CASE NOTE
 
-**Title:** When your China agency fakes orders, the brand pays
+**Title:** When a Tmall agency fakes orders, the brand pays
 **Query:** tmall agency fake orders brand liability · **Tags:** Due diligence, Tmall Partners, Douyin Partners
 **Word count:** 1,000 to 1,300
 
-**The answer, in one line.** In a case the Supreme People's Court published in August 2026, an operating agency faked group-buy orders; regulators fined it RMB 100,000 and the platform kept the whole RMB 50,000 deposit. The store's penalties land on the account holder, which is the brand. Ban fake orders in writing and audit the traffic.
+**The answer, in one line.** In a case the Supreme People's Court released in August 2026, an operating agency faked group-buy orders on a local-services platform and paid with its own RMB 50,000 deposit and a RMB 100,000 fine. On Tmall and Douyin, the merchant agreements treat what is done through the store account as the merchant's act, and the 2025 Anti-Unfair Competition Law reaches the seller whose sales were inflated. Ban fake orders in writing and audit the traffic.
 
 **The table it must carry.** Consequence (platform deposit, store penalties and delisting, regulator fines, criminal exposure), who bears it, the source.
 
@@ -2906,7 +2908,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **Outline.** 1. Why the question matters now (Tmall-first operators moving to Douyin) 2. The table 3. Price conflict between channels 4. Checking the Douyin team 5. Contract structure for one or two agencies
 
-**Leads (verify, cite primary).** Lirenlizhuang 2025 annual report (Douyin revenue +46.6%, Tmall share down; 21世纪经济报道 April 1, 2026 as lead).
+**Leads (verify, cite primary).** Douyin service market (抖店服务市场) provider tiers and category requirements; Tmall Global partner rules; dated Chinese business media on agencies adding Douyin live teams (21世纪经济报道, 界面). No store operator's own filings.
 
 **Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass/find-a-douyin-partner-in-china`, `/compass`
 **CTA.** Compass shortlist.
@@ -3085,22 +3087,30 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Signal it is time, what to build in-house first, what to keep outsourced.
 
-**Leads (verify, cite primary).** Lirenlizhuang annual reports (L'Oréal brands leaving); 人人都是产品经理 analysis as lead. Interlink with 34A.
+**Leads (verify, cite primary).** Brands' own announcements and dated Chinese business media (界面, 第一财经, 21世纪经济报道) on brands taking store operations in-house (收回运营权); no store operator's filings. Interlink with 34A.
 
 **Internal links.** `/compass/find-a-tmall-partner-in-china`, `/grow-in-china/cross-border-ecommerce`, `/compass`
 **CTA.** Compass shortlist.
 
 ## P31 · PARTNER · EXPLAINER
 
-**Title:** What a listed Tmall Partner earns, and why it matters
-**Query:** baozun business model · **Tags:** Tmall Partners
+**Title:** What a Tmall Partner costs: retainer, commission and extras
+**Query:** tmall agency cost · **Tags:** Tmall Partners
 **Word count:** 1,300 to 1,800
 
-**The answer, in one line.** Listed Tmall Partners earn more and more from their own brands and product sales than from running stores. Ruoyuchen made about 70% gross margin on its own brands against 36.7% on agency work, which tells you where a partner's best people go.
+**The answer, in one line.** A Tmall Partner usually charges a monthly retainer plus a commission on sales, and the extras (design, content, media management, warehousing) decide the real bill. Compare quotes on total cost at your expected sales, not on the retainer.
 
-**The table it must carry.** Company, latest revenue, service share, own-brand share, margin by line, source.
+**The table it must carry.** Fee line (retainer, sales commission, performance bonus, setup, design and content, media management fee, warehousing and fulfillment), how it is usually charged, what to negotiate.
 
-**Leads (verify, cite primary).** Baozun 2025 results (HKEX/SEC); Ruoyuchen 2025 annual report (cninfo); Lirenlizhuang 2025 annual report; 壹网壹创 2025 annual report (szse).
+**The proprietary number.** TheChinaPath Tmall Global calculator (year-one partner cost at three sales levels, and the cash committed before the first order).
+
+**Outline.**
+1. How Tmall Partners charge
+2. The table
+3. What a year costs at three sales levels
+4. What to negotiate, and what not to
+
+**Leads (verify, cite primary).** Tmall Global service market (服务市场) public listings for fee models; Tmall Global partner program rules; dated Chinese business media on 代运营 fee models (界面, 36氪, 第一财经). No store operator's own filings or blog. Interlink with P04 (Douyin Partner cost) and P08 (TP contract terms).
 
 **Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass`
 **CTA.** Compass shortlist.

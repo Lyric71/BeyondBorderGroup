@@ -56,7 +56,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **Outline.** 1. Why the question matters now (Tmall-first operators moving to Douyin) 2. The table 3. Price conflict between channels 4. Checking the Douyin team 5. Contract structure for one or two agencies
 
-**Leads (verify, cite primary).** Lirenlizhuang 2025 annual report (Douyin revenue +46.6%, Tmall share down; 21世纪经济报道 April 1, 2026 as lead).
+**Leads (verify, cite primary).** Douyin service market (抖店服务市场) provider tiers and category requirements; Tmall Global partner rules; dated Chinese business media on agencies adding Douyin live teams (21世纪经济报道, 界面). No store operator's own filings.
 
 **Internal links.** `/compass/find-a-tmall-partner-in-china`, `/compass/find-a-douyin-partner-in-china`, `/compass`
 **CTA.** Compass shortlist.

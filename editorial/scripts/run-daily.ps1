@@ -124,8 +124,11 @@ each localized file, all three passes, in this order: FR, DE, ES. Follow the
 translation rules in .claude/CLAUDE.md section 6 (euros in FR, DE and ES, no
 em dashes, native slugs). Do not stop after the humanized translation; the
 native rewrite is mandatory. For a Refresh, update the existing files in
-place in every locale and set updatedDate. Then run npm run build and npx
-astro check; this scheduled publish run is the explicit request for a build
+place in every locale and set updatedDate. Every locale file keeps its
+title at 60 characters or fewer (else add a seoTitle of at most 60) and its
+description between 120 and 155 characters. Then run node
+scripts/check-insight-links.mjs and node scripts/generate-llms-full.mjs, then
+npm run build and npx astro check; this scheduled publish run is the explicit request for a build
 that .claude/CLAUDE.md section 19 requires. When both pass: set the row to
 published with published_on, then git add everything the article touched
 (the content files in every locale, the hero image, src/i18n/insight-slugs.mjs,
@@ -133,7 +136,8 @@ editorial/output, editorial/logs, editorial/schedule.csv, editorial/sources)
 and commit on main with a conventional commit message
 (feat(insights): publish <slug>), then git push origin main. Only after the
 push succeeds, run node editorial/scripts/notify-publish.mjs with the slug,
-title, section, build result, log path and the commit hash in --note.
+title, section, build result, log path and the commit hash in --note; it
+also pings IndexNow with the live URLs.
 This run is unattended: never ask a question. If the build or the check
 fails, do not commit, do not push, leave the row at image_ready, put the
 error in the run log and send the email with --build failed and the error in

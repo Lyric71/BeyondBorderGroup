@@ -44,8 +44,6 @@ export const insightEnToFr = {
   'china-2026-8-ecommerce-marketing-predictions':
     'chine-2026-huit-predictions-e-commerce-marketing',
   'china-e-commerce-platforms-2025': 'e-commerce-chinois-2025-plateformes',
-  'china-is-no-longer-one-market-a-localized-growth-strategy-for-2025':
-    'chine-marche-unique-paris-locaux-2025',
   'china-is-no-longer-one-market-why-local-bets-beat-national-plans':
     'chine-pari-local-vs-plan-national',
   'china-social-media-and-kol-strategies-for-ecommerce-brands': 'kol-chinois-commerce-digital',
@@ -131,6 +129,22 @@ export const insightEnToFr = {
     'taobao-instant-commerce-marques-non-chinoises',
   'what-a-pinduoduo-fine-says-about-doing-business-in-china':
     'amende-pinduoduo-faire-des-affaires-en-chine',
+  // Finding a partner cluster, published 2026-09-24.
+  'replace-distributor-china': 'changer-de-distributeur-en-chine',
+  'tmall-partner-store-ownership': 'a-qui-appartient-votre-boutique-tmall',
+  'tmall-partner-rating-douyin-service-provider': 'notation-des-partenaires-tmall-et-douyin',
+  'tmall-agency-fake-orders-brand-liability': 'fausses-commandes-agence-tmall-la-marque-paie',
+  'douyin-return-rate': 'taux-de-retour-douyin-par-categorie',
+  'china-trade-fairs-find-distributor': 'salons-en-chine-pour-trouver-un-distributeur',
+  'change-domestic-responsible-person-china-cosmetics': 'cosmetiques-chine-changer-de-personne-responsable',
+  'sell-in-vs-sell-out-china-distributor': 'sell-in-et-sell-out-distributeur-chine',
+  'china-distributor-price-control-parallel': 'controle-des-prix-et-ventes-paralleles-en-chine',
+  'verify-chinese-company-qichacha': 'verifier-une-entreprise-chinoise-qichacha-gsxt',
+  'douyin-agency-cost': 'ce-que-coute-une-agence-douyin',
+  'china-distributor-margin-imported-product-price': 'marge-des-distributeurs-chinois-et-prix-en-rayon',
+  'payment-terms-chinese-distributor': 'conditions-de-paiement-distributeur-chinois',
+  'tmall-partner-agency-vs-distributor-model': 'tmall-partner-agence-ou-distributeur',
+  'tmall-partner-contract-terms': 'contrat-tmall-partner-clauses-de-sortie',
 };
 
 /** Reverse lookup, built once. */
@@ -182,8 +196,6 @@ export const insightEnToDe = {
     'marke-fuer-china-ohne-identitaetsverlust',
   'china-2026-8-ecommerce-marketing-predictions': 'china-2026-acht-prognosen-e-commerce-marketing',
   'china-e-commerce-platforms-2025': 'chinesischer-e-commerce-2025-plattformen',
-  'china-is-no-longer-one-market-a-localized-growth-strategy-for-2025':
-    'china-kein-einheitsmarkt-lokale-strategien-2025',
   'china-is-no-longer-one-market-why-local-bets-beat-national-plans':
     'china-lokale-wetten-statt-nationaler-plaene',
   'china-social-media-and-kol-strategies-for-ecommerce-brands': 'chinesische-kol-digitalhandel',
@@ -269,6 +281,22 @@ export const insightEnToDe = {
   'what-taobao-instant-commerce-means-for-non-chinese-brands':
     'taobao-instant-commerce-nicht-chinesische-marken',
   'what-a-pinduoduo-fine-says-about-doing-business-in-china': 'pinduoduo-strafe-geschaeft-in-china',
+  // Finding a partner cluster, published 2026-09-24.
+  'replace-distributor-china': 'distributor-in-china-wechseln',
+  'tmall-partner-store-ownership': 'wem-gehoert-ihr-tmall-shop',
+  'tmall-partner-rating-douyin-service-provider': 'bewertung-von-tmall-und-douyin-partnern',
+  'tmall-agency-fake-orders-brand-liability': 'scheinbestellungen-tmall-agentur-marke-haftet',
+  'douyin-return-rate': 'douyin-retourenquote-nach-kategorie',
+  'china-trade-fairs-find-distributor': 'messen-in-china-vertriebspartner-finden',
+  'change-domestic-responsible-person-china-cosmetics': 'kosmetik-china-verantwortliche-person-wechseln',
+  'sell-in-vs-sell-out-china-distributor': 'sell-in-und-sell-out-beim-china-distributor',
+  'china-distributor-price-control-parallel': 'preiskontrolle-graumarkt-china-distributor',
+  'verify-chinese-company-qichacha': 'chinesisches-unternehmen-pruefen-qichacha-gsxt',
+  'douyin-agency-cost': 'was-eine-douyin-agentur-kostet',
+  'china-distributor-margin-imported-product-price': 'haendlermargen-regalpreis-importware-china',
+  'payment-terms-chinese-distributor': 'zahlungsbedingungen-distributoren-china',
+  'tmall-partner-agency-vs-distributor-model': 'tmall-partner-agentur-oder-distributor',
+  'tmall-partner-contract-terms': 'tmall-partner-vertrag-ausstiegsklauseln',
 };
 
 /** Reverse lookup, built once. */
@@ -318,8 +346,6 @@ export const insightEnToEs = {
   'china-2026-8-ecommerce-marketing-predictions':
     'china-2026-ocho-predicciones-ecommerce-marketing',
   'china-e-commerce-platforms-2025': 'ecommerce-chino-2025-plataformas',
-  'china-is-no-longer-one-market-a-localized-growth-strategy-for-2025':
-    'china-no-es-un-solo-mercado-estrategia-2025',
   'china-is-no-longer-one-market-why-local-bets-beat-national-plans':
     'china-apuesta-local-vs-plan-nacional',
   'china-social-media-and-kol-strategies-for-ecommerce-brands': 'kol-chinos-comercio-digital',
@@ -399,6 +425,22 @@ export const insightEnToEs = {
   'what-taobao-instant-commerce-means-for-non-chinese-brands':
     'taobao-instant-commerce-marcas-no-chinas',
   'what-a-pinduoduo-fine-says-about-doing-business-in-china': 'multa-pinduoduo-negocios-en-china',
+  // Finding a partner cluster, published 2026-09-24.
+  'replace-distributor-china': 'cambiar-de-distribuidor-en-china',
+  'tmall-partner-store-ownership': 'de-quien-es-su-tienda-tmall',
+  'tmall-partner-rating-douyin-service-provider': 'calificacion-de-partners-tmall-y-douyin',
+  'tmall-agency-fake-orders-brand-liability': 'pedidos-falsos-agencia-tmall-la-marca-paga',
+  'douyin-return-rate': 'tasa-de-devolucion-douyin-por-categoria',
+  'china-trade-fairs-find-distributor': 'ferias-en-china-para-encontrar-distribuidor',
+  'change-domestic-responsible-person-china-cosmetics': 'cosmeticos-china-cambiar-de-persona-responsable',
+  'sell-in-vs-sell-out-china-distributor': 'sell-in-y-sell-out-distribuidor-china',
+  'china-distributor-price-control-parallel': 'control-de-precios-y-ventas-paralelas-en-china',
+  'verify-chinese-company-qichacha': 'verificar-empresa-china-qichacha-gsxt',
+  'douyin-agency-cost': 'lo-que-cuesta-una-agencia-de-douyin',
+  'china-distributor-margin-imported-product-price': 'margen-del-distribuidor-en-china-y-precio-en-lineal',
+  'payment-terms-chinese-distributor': 'condiciones-de-pago-distribuidor-chino',
+  'tmall-partner-agency-vs-distributor-model': 'tmall-partner-agencia-o-distribuidor',
+  'tmall-partner-contract-terms': 'contrato-tmall-partner-clausulas-de-salida',
 };
 
 /** Reverse lookup, built once. */
