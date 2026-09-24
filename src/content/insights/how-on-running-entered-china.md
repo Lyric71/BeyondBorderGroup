@@ -166,8 +166,11 @@ year in China usually can't carry it for three years.
 The cheaper test runs through a cross-border store, with no Chinese company
 behind it. Sports and outdoor on Tmall Global takes a 50,000 RMB deposit and
 a 60,000 RMB annual fee at 5% commission. JD Worldwide's rung is 35,500 RMB
-and 7,100 RMB, also at 5%. Douyin's cross-border deposit for the category is
-75,000 RMB (TheChinaPath calculator data, September 2026). Run your own
+and 7,100 RMB, also at 5%. Douyin cross-border takes 6% on sports and
+outdoor, and its deposit no longer depends on category: since June 2025 it
+follows last month's sales and tops out at 5,000 RMB (TheChinaPath calculator
+data, September 2026; Douyin's 《【全球购】保证金管理规范》,
+https://school.jinritemai.com/doudian/web/articlev0/107821). Run your own
 numbers in the [Tmall Global setup and run
 calculator](/tools/tmall-global-setup-and-run).
 

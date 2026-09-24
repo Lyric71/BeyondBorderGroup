@@ -1,6 +1,6 @@
 ---
 title: "Bewährte Praxis im KOC-Marketing in China"
-description: "Key Opinion Consumers werden zentral für den eCommerce-Erfolg in China. Diese Mikro-Influencer setzen auf Authentizität und Nähe und bieten Marken eine kosteneffiziente Alternative zu klassischen Promi-Endorsements."
+description: "Key Opinion Consumers gewinnen im chinesischen eCommerce an Gewicht. Warum diese Mikro-Influencer oft glaubwürdiger und günstiger sind als Prominente."
 pubDate: "2024-12-07"
 updatedDate: "2026-05-15"
 author: "TheChinaPath"
@@ -13,7 +13,7 @@ heroImageAlt: "Junge asiatische Frau prüft Kosmetik auf einem Sofa"
 
 ## Bewährte Praxis im KOC-Marketing in China
 
-Chinas eCommerce-Markt wächst, und Kundenvertrauen war nie wichtiger. Während früher grosse Influencer (KOL) dominierten, übernehmen heute Key Opinion Consumers (KOC) die Führung. Diese alltäglichen Käufer teilen ehrliche Bewertungen und Erfahrungen und sind ein wirksamer Weg, um auf persönlicher Ebene mit Käufern zu sprechen.
+Chinas eCommerce-Markt wächst, und Kundenvertrauen war nie wichtiger. Während früher große Influencer (KOL) dominierten, übernehmen heute Key Opinion Consumers (KOC) die Führung. Diese alltäglichen Käufer teilen ehrliche Bewertungen und Erfahrungen und sind ein wirksamer Weg, um auf persönlicher Ebene mit Käufern zu sprechen.
 
 Wer diesen Trend nutzen will, fährt mit einer digitalen oder Branding-Agentur in China gut. So entstehen [Kampagnen](/de/in-china-wachsen/kampagnen), die strategisch, wirkungsstark und treffsicher sind.
 
@@ -21,7 +21,7 @@ Dieser Leitfaden zeigt die bewährte Praxis im KOC-Einsatz, um Geschäft wachsen
 
 ## Was ist KOC-Marketing in China?
 
-KOC sind Mikro-Influencer, die Authentizität und Nähe an erste Stelle setzen. Anders als KOL mit grossen, oft weniger engagierten Communities bauen KOC ihre Glaubwürdigkeit über persönliche Erfahrungen und ehrliche Reviews auf. Sie bewegen sich meist in Nischen mit klar definierten Interessen.
+KOC sind Mikro-Influencer, die Authentizität und Nähe an erste Stelle setzen. Anders als KOL mit großen, oft weniger engagierten Communities bauen KOC ihre Glaubwürdigkeit über persönliche Erfahrungen und ehrliche Reviews auf. Sie bewegen sich meist in Nischen mit klar definierten Interessen.
 
 Mit einer Marketing-Agentur in China lassen sich die passenden KOC identifizieren, damit Kampagnen authentisch und wirksam laufen. Da chinesische Käufer zunehmend ehrliche Empfehlungen statt Promi-Endorsements suchen, ist [KOC-Marketing](/de/chinesische-social-media) zur Pflichtdisziplin geworden.
 
@@ -57,7 +57,7 @@ Das Ziel bestimmt den passenden Kandidaten.
 
 ### Die Audience analysieren
 
-Die Demografie eines KOC zählt so sehr wie die Person selbst. Suchen Sie KOC, deren Follower nach Alter, Interessen, Region und Kaufverhalten zu Ihrem Zielprofil passen. Prüfen Sie die Engagement-Rate. Eine kleinere, aktive Audience liefert oft bessere Ergebnisse als eine grosse, passive.
+Die Demografie eines KOC zählt so sehr wie die Person selbst. Suchen Sie KOC, deren Follower nach Alter, Interessen, Region und Kaufverhalten zu Ihrem Zielprofil passen. Prüfen Sie die Engagement-Rate. Eine kleinere, aktive Audience liefert oft bessere Ergebnisse als eine große, passive.
 
 ### Relevante Plattformen erforschen
 

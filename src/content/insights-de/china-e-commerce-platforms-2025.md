@@ -1,6 +1,7 @@
 ---
 title: "Chinas eCommerce 2025: Die Plattform-Karte und warum der Handel lokaler wird"
-description: "Chinas eCommerce-Markt verbindet online und offline in einem operativen Loop über klar abgegrenzte Plattformen. Jeder grosse Akteur besetzt eigene Konsumgewohnheiten und Teile des Funnels."
+seoTitle: "Chinas eCommerce-Plattformen 2025: Der Handel wird lokal"
+description: "In Chinas eCommerce greifen online und offline ineinander. Jede große Plattform besetzt eigene Kaufgewohnheiten und Funnel-Etappen. Die Landkarte 2025."
 pubDate: "2025-12-22"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -16,7 +17,7 @@ keyTakeaways:
   - "Cross-Border-Aufbau kauft Geschwindigkeit, keine Beständigkeit. Planen Sie in 2 bis 3 Jahren den Wechsel an Land, sobald die Kategorie-Ökonomie es lohnt."
 ---
 
-## Chinas eCommerce-Markt setzt weiter den Referenzpunkt. Der Grund ist Integration, nicht Grösse.
+## Chinas eCommerce-Markt setzt weiter den Referenzpunkt. Der Grund ist Integration, nicht Größe.
 
 Die wesentliche Veränderung für den Handel ist einfach: Online und Offline rücken in einen operativen Loop. Entdeckung, Konversion, Auslieferung und Service werden zunehmend als eine Reise gedacht, oft innerhalb einer einzigen App.
 
@@ -26,12 +27,12 @@ China hat dazu die nötige Nutzerbasis. Im Juni 2025 zählte das Land mehr als 1
 
 ## Die Plattform-Karte
 
-Chinas grosse Handels-[Plattformen](/de/china-verstehen/plattformen) haben eigenständige Stärken. Die meisten Marken operieren auf mehreren parallel, weil jede einen anderen Teil des Funnels besetzt.
+Chinas große Handels-[Plattformen](/de/china-verstehen/plattformen) haben eigenständige Stärken. Die meisten Marken operieren auf mehreren parallel, weil jede einen anderen Teil des Funnels besetzt.
 
 ### **Alibaba (Taobao, Tmall, 1688)**
 
 * Taobao und Tmall verankern den Marktplatz-Handel in der Breite (C2C und B2C).
-* 1688 trägt den inländischen Grosshandel und Sourcing (B2B), oft relevant für Hersteller und Distributoren.
+* 1688 trägt den inländischen Großhandel und Sourcing (B2B), oft relevant für Hersteller und Distributoren.
 
 ### **JD.com**
 
@@ -69,7 +70,7 @@ Chinas grosse Handels-[Plattformen](/de/china-verstehen/plattformen) haben eigen
 
 ---
 
-## Die grosse Verschiebung: eCommerce wird wieder physisch
+## Die große Verschiebung: eCommerce wird wieder physisch
 
 Wer einen Trend will, der 2025 erklärt, dann diesen: Instant Commerce.
 

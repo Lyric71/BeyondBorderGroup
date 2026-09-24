@@ -1,6 +1,6 @@
 ---
 title: "Brand Localization for China: Adapt & Keep Your DNA"
-description: "Foreign brands in China must balance deep localization with core identity. Quality alone is no longer enough; success requires cultural relevance and platform fluency while protecting what makes the brand distinctive."
+description: "How foreign brands can localize deeply for China and still protect their identity, with cultural relevance and platform fluency doing the heavy lifting."
 pubDate: "2025-11-19"
 updatedDate: "2026-05-15"
 author: "Liyan Ye"

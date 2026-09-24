@@ -1,6 +1,6 @@
 ---
 title: "Cómo vender en Douyin: buenas prácticas para 2024"
-description: "Douyin, la versión china de TikTok con 750 millones de usuarios activos diarios, combina red social y eCommerce. El éxito pasa por dominar livestream, alianzas con KOL y una estrategia de contenidos bien orientada."
+description: "Douyin, el TikTok chino, suma 750 millones de usuarios diarios y une red social y eCommerce. Claves: livestream, KOL y estrategia de contenidos."
 pubDate: "2024-10-21"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

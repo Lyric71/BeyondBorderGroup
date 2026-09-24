@@ -1,6 +1,7 @@
 ---
 title: "Douyin Live Commerce in 2025: Why Store-Led Rooms Beat Celebrity Events"
-description: "Store-led livestreaming has become the dominant strategy on Douyin in 2026, replacing reliance on celebrity hosts with merchant-controlled broadcasting that enables better compliance and repeatable growth."
+seoTitle: "Douyin Live Commerce 2025: Why Store-Led Rooms Win"
+description: "Store-led livestreams now dominate Douyin. Merchants run their own rooms rather than rent celebrity hosts, so compliance is easier and growth repeats."
 pubDate: "2026-01-06"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

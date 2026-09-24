@@ -2,14 +2,14 @@
 title: "China livestream cost for brands: the room budget"
 description: "Price a China livestream room by hour and month, with a worked budget for daily broadcasts, part-time rooms and external-host events."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-16"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin"]
 tags: ["Livestream cost", "Douyin", "Store-led livestream", "Live commerce", "Anchor"]
 keyTakeaways:
   - "The worked daily-room budget has RMB 80,000 in fixed monthly costs before traffic and sales-linked expenses."
-  - "At RMB 167,000 in assumed sales, that room costs RMB 116,740 for the month, excluding the wider store operation."
+  - "At RMB 167,000 in assumed sales, that room costs RMB 114,235 for the month, excluding the wider store operation."
   - "At a fixed broadcast schedule, rising sales lower cost per order but raise total cost per broadcast hour."
   - "TheChinaPath calculator formulas produce RMB 45 versus RMB 75 per order in media and creator fees under the stated channel mixes."
 heroImage: "/Images/insights/china-livestream-cost-for-brands.webp"
@@ -27,7 +27,7 @@ allocation followed by its cost per broadcast hour in parentheses. The event
 column covers one event that month.
 
 All amounts are selected planning inputs or calculations. Reviewed September 15,
-2026. Historical rent and host-pay sources appear below; they do not establish
+2026, with the platform fee updated September 24. Historical rent and host-pay sources appear below; they do not establish
 current prices. The daily schedule means 26 broadcast days, allowing rest days.
 The three-day schedule is modeled as 13 sessions in a month. Every session lasts
 4 hours except the 3-hour event.
@@ -41,18 +41,18 @@ The three-day schedule is modeled as 13 sessions in a month. Every session lasts
 | Host and co-host | 26,000 (250) | 28,600 (550) | 100,000 (33,333) |
 | Operator and moderator allocation | 24,000 (231) | 12,000 (231) | Included in host fee |
 | Paid traffic | 26,720 (257) | 13,280 (255) | 18,000 (6,000) |
-| Platform fee allowance | 6,680 (64) | 3,320 (64) | 12,000 (4,000) |
+| Platform fee allowance | 4,175 (40) | 2,075 (40) | 7,500 (2,500) |
 | Creator or MCN commission | 0 (0) | 0 (0) | 75,000 (25,000) |
 | Samples and giveaways | 3,340 (32) | 1,660 (32) | 6,000 (2,000) |
-| Total | 116,740 (1,123) | 74,460 (1,432) | 211,000 (70,333) |
+| Total | 114,235 (1,098) | 73,215 (1,408) | 206,500 (68,833) |
 
 </div>
 
 Hours are on-air hours. Allow for additional paid preparation time. Hourly
 figures are rounded independently, so their sum can differ from the rounded
 total. At the calculator’s planning rate of RMB 7.10 per dollar, monthly totals
-are about US$16,400 for the daily room and US$10,500 for the part-time room. The
-event is about US$29,700. No live exchange rate is implied.
+are about US$16,100 for the daily room and US$10,300 for the part-time room. The
+event is about US$29,100. No live exchange rate is implied.
 
 ## Why a project quote hides the hourly cost
 
@@ -129,10 +129,19 @@ The operator and moderator allocation is also a planning choice. Confirm the
 shift coverage before assuming that a smaller broadcast calendar cuts the bill
 in half. Confirm whether the host fee covers the event crew.
 
-The platform allowance uses 4% from the packaged-food category in TheChinaPath
-calculator data, September 2026. It is a model input, not a verified current
-tariff for your product. Check the applicable cross-border category and
+The platform allowance uses 2.5% from the packaged-food category in
+TheChinaPath calculator data, September 2026. That's the midpoint of Douyin's
+cross-border schedule for the category, which charges 2% on grain and cooking
+oil and 3% on most other packaged food. It is a model input, not a verified
+current tariff for your product. Check the applicable cross-border category and
 settlement basis before committing funds.
+
+> Source: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》
+> (Douyin Global technical service fee schedule), July 15, 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+
+Orders from the Douyin Mall app and Doubao can carry a supplementary fee on top
+of the base rate. The allowance leaves it out.
 
 The event assumes 25% creator commission. Store-led columns assume no external
 creator commission. Neither assumption rules out employee bonuses or a partner’s
@@ -153,7 +162,7 @@ creator-driven sales must also occur for the total sales target to hold. An
 attractive ROAS on a small paid segment can’t prove that the whole room will
 sell enough.
 
-For the daily room, total cost equals RMB 80,000 plus 22% of sales. Traffic
+For the daily room, total cost equals RMB 80,000 plus 20.5% of sales. Traffic
 alone matches that amount at RMB 500,000 in monthly sales under the 16%
 assumption. That is a cost crossover, not a break-even sales target.
 
@@ -175,9 +184,9 @@ consequences of the inputs, not forecasts.
 
 | Livestream budget, RMB | Daily room | Three days/week | External-host event |
 |---|---|---|---|
-| Monthly cost | 116,740 | 74,460 | 211,000 |
-| Cost per placed order | 174.76 | 224.28 | 175.83 |
-| Cost as share of assumed sales | 69.9% | 89.7% | 70.3% |
+| Monthly cost | 114,235 | 73,215 | 206,500 |
+| Cost per placed order | 171.01 | 220.53 | 172.08 |
+| Cost as share of assumed sales | 68.4% | 88.2% | 68.8% |
 
 </div>
 
@@ -187,12 +196,12 @@ and employer charges. Inventory funding also sits outside this budget.
 
 Returns change the denominator. If 20% of the daily room’s orders fail to become
 kept orders and its budget stays fixed, cost per kept order rises to about RMB
-218.45. This is a stress test: actual refunds can also change commission and
+213.76. This is a stress test: actual refunds can also change commission and
 platform charges. Reconcile those against settlement data.
 
-At RMB 500,000 in sales, the daily room’s formula produces RMB 190,000 in cost,
-or RMB 95 per order. At RMB 1 million it produces RMB 300,000, or RMB 75 per
-order. Total cost per broadcast hour rises because the traffic bill rises while
+At RMB 500,000 in sales, the daily room’s formula produces RMB 182,500 in cost,
+or RMB 91.25 per order. At RMB 1 million it produces RMB 285,000, or RMB 71.25
+per order. Total cost per broadcast hour rises because the traffic bill rises while
 the schedule stays fixed.
 
 Both formats can spread a fixed fee over more orders. An event’s placement fee
@@ -257,8 +266,8 @@ intended route.
 
 ### Is a part-time room cheaper?
 
-It can require less monthly cash. Our selected part-time budget is RMB 74,460,
-against RMB 116,740 for the daily schedule. Its hourly cost is higher because
+It can require less monthly cash. Our selected part-time budget is RMB 73,215,
+against RMB 114,235 for the daily schedule. Its hourly cost is higher because
 the host and space are rented by the hour. Compare total commitment and expected
 kept orders before deciding which schedule to buy.
 

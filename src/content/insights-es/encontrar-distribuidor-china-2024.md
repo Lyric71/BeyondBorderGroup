@@ -1,6 +1,7 @@
 ---
 title: "Guía completa para encontrar distribuidor para sus productos en China en 2024"
-description: "Una visión a fondo del panorama de distribución en China y los pasos prácticos para encontrar y trabajar con distribuidores que aseguren el éxito del producto en un mercado tan dinámico."
+seoTitle: "Cómo encontrar distribuidor en China: guía completa 2024"
+description: "Cómo funciona la distribución en China y qué pasos seguir para encontrar distribuidores fiables, trabajar con ellos y asegurar el éxito de su producto."
 pubDate: "2024-06-28"
 author: "TheChinaPath"
 category: "E-Commerce"

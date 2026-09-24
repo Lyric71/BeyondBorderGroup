@@ -1,6 +1,6 @@
 ---
 title: "Marke optimieren: Den richtigen Influencer wählen"
-description: "Influencer-Marketing ist zu einer Schlüsselstrategie für Marken geworden, die Reichweite ausbauen wollen. Erfolg hängt davon ab, die richtigen Influencer zu wählen, die zu Markenwerten und Zielgruppe passen."
+description: "Influencer-Marketing ist für Marken in China ein zentraler Hebel. Entscheidend ist die Wahl von Influencern, die zu Markenwerten und Zielgruppe passen."
 pubDate: "2023-11-17"
 author: "TheChinaPath"
 category: "KOLs & Livestream"
@@ -43,7 +43,7 @@ Substanzielle Reichweite plus relevanter Einfluss. Spricht eine breite Audience 
 
 ### Macro-Influencer (250.000 bis 1.000.000 Follower)
 
-Grosse Reichweite, ideal für breite Zielgruppen. Mischung aus Einfluss und Skalierung.
+Große Reichweite, ideal für breite Zielgruppen. Mischung aus Einfluss und Skalierung.
 
 ### Mega-Influencer (über 1.000.000 Follower)
 
@@ -95,4 +95,4 @@ Plattformen vereinfachen die Suche, mit schneller Identifikation passender Partn
 * **Kampagnen-Steuerung:** Kollaboration, Tracking und sogar Zahlung in einem Werkzeug.
 * **Reports:** Umfassende Berichte zur Erfolgsmessung der Kampagne.
 
-Den richtigen Influencer zu wählen, ist eine strategische Entscheidung mit grosser Wirkung. Wer Nische, Audience und Tools sauber abstimmt, positioniert die Marke für mehr Sichtbarkeit und Engagement. In einer Welt, in der Authentizität und Verbindung zählen, ist die richtige Wahl der Schlüssel, um das volle Potenzial der Social-Kampagnen zu heben.
+Den richtigen Influencer zu wählen, ist eine strategische Entscheidung mit großer Wirkung. Wer Nische, Audience und Tools sauber abstimmt, positioniert die Marke für mehr Sichtbarkeit und Engagement. In einer Welt, in der Authentizität und Verbindung zählen, ist die richtige Wahl der Schlüssel, um das volle Potenzial der Social-Kampagnen zu heben.

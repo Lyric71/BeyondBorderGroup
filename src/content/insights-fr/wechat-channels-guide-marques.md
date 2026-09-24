@@ -1,6 +1,6 @@
 ---
 title: "WeChat Channels : le guide complet pour les marques"
-description: "Adossé à la super-app au milliard d'utilisateurs, WeChat Channels ouvre aux marques une audience engagée par la vidéo courte et la photo. Mode d'emploi pour en faire un levier de croissance e-commerce en Chine."
+description: "Adossé au milliard d'utilisateurs de WeChat, Channels offre aux marques une audience rompue à la vidéo courte. Comment en faire un levier e-commerce."
 pubDate: "2024-11-01"
 author: "TheChinaPath"
 category: "Platforms"

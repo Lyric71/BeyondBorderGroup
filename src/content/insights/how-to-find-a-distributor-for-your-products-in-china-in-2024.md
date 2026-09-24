@@ -1,6 +1,7 @@
 ---
 title: "Comprehensive Guide to Finding a Distributor for Your Products in China in 2024"
-description: "This guide provides an in-depth understanding of China's distribution landscape and offers practical steps to find and work with distributors to ensure product success in this dynamic market."
+seoTitle: "How to Find a Distributor in China: A 2024 Guide"
+description: "How to find, vet and work with a distributor in China, with examples of food and beverage distributors serving retail, eCommerce and high-end hotels."
 pubDate: "2024-06-28"
 author: "TheChinaPath"
 category: "E-Commerce"

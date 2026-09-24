@@ -1,6 +1,6 @@
 ---
 title: "Trends im Luxus-Marketing in China"
-description: "Chinas Luxusmarkt entwickelt sich durch Technologie und demografische Verschiebungen. Marken müssen drei Aufgaben lösen: Kunden erreichen, Loyalität aufbauen, Daten in Wachstum übersetzen."
+description: "Technologie und demografischer Wandel verändern Chinas Luxusmarkt. Marken müssen Kunden erreichen, Loyalität aufbauen und Daten in Wachstum verwandeln."
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "Market Strategy"
@@ -13,7 +13,7 @@ heroImageAlt: "Konzept Luxus-Shopping und Social Media"
 
 ## Geografische Konzentration des Luxuskonsums
 
-Luxuskonsum in China ist geografisch konzentriert. Der grösste Teil entsteht in den Top-50-Städten, Tier-1- und Tier-2-Städte stehen für rund 70 Prozent der Luxusumsätze. Allerdings dringt Luxus zunehmend in Tier-2-Städte vor. Marken müssen ihre Reichweite über die klassischen Hotspots hinaus ausweiten.
+Luxuskonsum in China ist geografisch konzentriert. Der größte Teil entsteht in den Top-50-Städten, Tier-1- und Tier-2-Städte stehen für rund 70 Prozent der Luxusumsätze. Allerdings dringt Luxus zunehmend in Tier-2-Städte vor. Marken müssen ihre Reichweite über die klassischen Hotspots hinaus ausweiten.
 
 ## Der Einfluss der sozialen Medien
 
@@ -21,7 +21,7 @@ Soziale Medien stehen im Zentrum der Kaufentscheidungen chinesischer Luxuskunden
 
 ## Soziale Medien zur Kundenansprache nutzen
 
-Die wirksame Nutzung sozialer Medien ist für Luxusmarken entscheidend, die chinesische Käufer erreichen und beeinflussen wollen. Key Opinion Leader (KOLs) haben grosses Gewicht, der Kontakt zu ihnen muss strategisch laufen. Marken bauen WeChat Official Accounts und Mini-Programme auf, um eigene Traffic-Kanäle zu schaffen, in denen tiefe Interaktion und Kundenbindung möglich werden.
+Die wirksame Nutzung sozialer Medien ist für Luxusmarken entscheidend, die chinesische Käufer erreichen und beeinflussen wollen. Key Opinion Leader (KOLs) haben großes Gewicht, der Kontakt zu ihnen muss strategisch laufen. Marken bauen WeChat Official Accounts und Mini-Programme auf, um eigene Traffic-Kanäle zu schaffen, in denen tiefe Interaktion und Kundenbindung möglich werden.
 
 ![](/Images/insights/2024/06/ss12.jpg)
 

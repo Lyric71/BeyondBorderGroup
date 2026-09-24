@@ -1,6 +1,6 @@
 ---
 title: "The Ultimate Guide to WeChat Channels for Brands"
-description: "WeChat Channels is a content-sharing feature enabling brands to reach engaged audiences through short videos and photos. Learn how to use this platform for eCommerce and brand growth in China."
+description: "WeChat Channels lets brands reach engaged WeChat users with short videos and photos. How to use it for brand growth and eCommerce in China."
 pubDate: "2024-11-01"
 author: "TheChinaPath"
 category: "Platforms"

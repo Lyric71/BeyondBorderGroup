@@ -1,7 +1,7 @@
 ---
 brand: "SohoMD"
 title: "Innovative solutions for digital health"
-summary: "Refreshed SohoMD's brand experience, rebuilt the website, and ran SEO and Google Ads to double organic traffic and lift lead generation for the telepsychiatry platform."
+summary: "A brand refresh, new website, SEO and Google Ads for telepsychiatry platform SohoMD. Organic traffic doubled and lead generation went up."
 metric: "Organic traffic doubled. Lead generation lifted across the telepsychiatry platform."
 category: "Website"
 industry: "Healthcare"

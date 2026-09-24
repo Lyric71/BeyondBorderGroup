@@ -1,6 +1,7 @@
 ---
 title: "Douyin live commerce en 2026 : les studios de marque relèguent les vedettes au second plan"
-description: "Sur Douyin, le livestream piloté depuis la boutique s'impose en 2026. Les marques reprennent la main face aux animateurs vedettes, durcissent leur conformité et installent une croissance reproductible."
+seoTitle: "Douyin 2026 : le live de marque éclipse les vedettes"
+description: "Sur Douyin, le live de marque s'impose en 2026 : les marques reprennent la main sur les vedettes, soignent leur conformité et misent sur la durée."
 pubDate: "2026-01-06"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

@@ -1,6 +1,7 @@
 ---
 title: "Explosives Wachstum im chinesischen Luxusreise-Segment | Einblicke 2024"
-description: "Chinas Luxusreise-Markt ist im letzten Jahrzehnt stark gewachsen. Mehr Wohlstand, mehr Kaufkraft, mehr Lust auf authentische, kulturell tief gehende Erlebnisse statt blossen Wohlstandsdemonstrationen treiben das Segment."
+seoTitle: "Chinas Luxusreise-Segment wächst rasant: Einblicke 2024"
+description: "Chinas Markt für Luxusreisen ist in zehn Jahren stark gewachsen, getrieben von Wohlstand, Kaufkraft und dem Wunsch nach authentischen Kulturerlebnissen."
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"

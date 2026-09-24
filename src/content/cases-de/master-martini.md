@@ -1,6 +1,7 @@
 ---
 brand: "Master Martini"
 title: "Partner für Patissiers, Chocolatiers und Bäcker. Social für Südostasien."
+seoTitle: "Master Martini: Social Media für Patissiers in Südostasien"
 summary: "Steuerung der Master-Martini-Social-Accounts in Südostasien, um Berufsbäcker und -köche in eine engagierte, produktkundige Community zu verwandeln."
 metric: "Berufsbäcker-Community über die südostasiatischen Social-Accounts aufgebaut."
 category: "Social & Content"

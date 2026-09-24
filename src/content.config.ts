@@ -65,6 +65,8 @@ export function industrySlug(industry: InsightIndustry): string {
 // confusing for future editors. EN-only.
 const insightBaseSchema = z.object({
   title: z.string(),
+  /** Search title when `title` (the H1) is too long for results; at most 60 characters. */
+  seoTitle: z.string().max(60).optional(),
   description: z.string(),
   pubDate: z.coerce.date().optional(),
   updatedDate: z.coerce.date().optional(),
@@ -131,6 +133,8 @@ export const CASE_INDUSTRIES = [
 const caseBaseSchema = z.object({
   brand: z.string(),
   title: z.string(),
+  /** Search title (brand included) when brand plus title runs past 60 characters. */
+  seoTitle: z.string().max(60).optional(),
   summary: z.string(),
   category: z.enum([
     'Brand & Design',

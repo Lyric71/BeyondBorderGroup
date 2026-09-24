@@ -1,6 +1,7 @@
 ---
 title: "Le prix d'un KOL chinois : grilles tarifaires, cas d'école et leçons marketing"
-description: "Tarifs Douyin et Xiaohongshu, fourchettes de budget par strate d'influenceur et analyse des campagnes qui ont vraiment fait basculer engagement et chiffre d'affaires."
+seoTitle: "Prix d'un KOL chinois : grilles tarifaires et cas d'école"
+description: "Tarifs Douyin et Xiaohongshu, budgets par strate d'influenceurs et analyse des campagnes qui ont vraiment fait décoller engagement et chiffre d'affaires."
 pubDate: "2024-11-29"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

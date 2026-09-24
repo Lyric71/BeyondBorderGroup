@@ -1,6 +1,6 @@
 ---
 title: "Double 11 2025 : la fin des guerres du shopping chinoises"
-description: "Le Double 11 est passé d'un événement d'une journée à un marathon de cinq semaines. Croissance qui ralentit, confiance qui s'effrite, marges sous tension : l'acheteur opère désormais en gestionnaire."
+description: "Le Double 11 s'étire désormais sur cinq semaines. Croissance ralentie, confiance érodée, marges sous pression : l'acheteur raisonne en gestionnaire."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "TheChinaPath"

@@ -1,6 +1,6 @@
 ---
 title: "WeChat devient gratuit, Xiaohongshu devient cher"
-description: "Cinq bascules des plateformes chinoises en 2026, leur coût réel pour une marque étrangère, et pourquoi les portes les moins chères à franchir sont les plus lourdes à tenir."
+description: "Cinq bascules des plateformes chinoises en 2026, leur coût réel pour une marque étrangère, et pourquoi les portes les moins chères coûtent le plus à tenir."
 pubDate: "2026-07-22"
 updatedDate: "2026-07-22"
 author: "Cyril Drouin"

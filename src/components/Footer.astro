@@ -56,7 +56,8 @@ const company = [
   { label: t('nav.about'), href: lp('/about') },
   { label: t('nav.work'), href: lp('/work') },
   { label: t('nav.contact'), href: lp('/contact') },
-  { label: t('footer.partners'), href: '/compass/partners' },
+  // EN/ZH only by design, so a French, German or Spanish page says so.
+  { label: t('footer.partners'), href: '/compass/partners', hreflang: locale === 'en' ? undefined : 'en' },
   { label: t('footer.signin'), href: APP_URL },
 ];
 
@@ -177,7 +178,7 @@ const year = new Date().getFullYear();
               <ul>
                 {col.items.map((item) => (
                   <li>
-                    <a href={item.href}>
+                    <a href={item.href} hreflang={(item as { hreflang?: string }).hreflang}>
                       <span>{item.label}</span>
                     </a>
                   </li>

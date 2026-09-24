@@ -1,7 +1,7 @@
 ---
 brand: "Valio"
 title: "Von finnischen Feldern in chinesische Regale"
-summary: 'Einführung der Valio-Sub-Marke „eila" in China mit Wettbewerbs-Positionierung, lokalisiertem Namen und einem vollständigen visuellen System vom Logo bis zur Verpackung.'
+summary: "Valio bringt die Sub-Marke „eila“ nach China: klare Wettbewerbsposition, lokalisierter Name und ein visuelles System vom Logo bis zur Verpackung."
 metric: "Sub-Marke eila gelauncht, mit lokalisiertem chinesischem Namen und vollständigem visuellem System."
 category: "Brand & Design"
 industry: "Food & Beverage"

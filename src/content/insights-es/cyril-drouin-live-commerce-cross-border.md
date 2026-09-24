@@ -1,6 +1,7 @@
 ---
 title: "Navegando el cross-border y el live commerce: conversación con Cyril Drouin, CEO de TheChinaPath"
-description: "El CEO Cyril Drouin habla de comercio en directo, localización de marca, KOL y los retos del eCommerce cross-border. Comparte su visión sobre las diferencias entre la economía de livestream transaccional de China y los mercados occidentales."
+seoTitle: "Cross-border y live commerce: conversación con Cyril Drouin"
+description: "Cyril Drouin, CEO de TheChinaPath, habla de live commerce, localización de marca, KOL y cross-border, y compara el livestream chino con el occidental."
 pubDate: "2024-11-05"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

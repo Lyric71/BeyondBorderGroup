@@ -1,7 +1,7 @@
 ---
 brand: "SohoMD"
 title: "Soluciones innovadoras para la salud digital"
-summary: "Renovamos la experiencia de marca de SohoMD, reconstruimos su sitio web y operamos su SEO y Google Ads. Duplicamos el tráfico orgánico y elevamos la generación de leads de la plataforma de telepsiquiatría."
+summary: "Renovamos la marca de SohoMD, rehicimos su web y gestionamos SEO y Google Ads: el tráfico orgánico se duplicó y crecieron los leads de la plataforma."
 metric: "Tráfico orgánico duplicado. Generación de leads al alza en toda la plataforma de telepsiquiatría."
 category: "Website"
 industry: "Healthcare"

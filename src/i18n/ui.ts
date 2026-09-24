@@ -362,7 +362,7 @@ export const ui = {
     'nav.find.dp.desc': 'Choisir l’équipe qui recrute vos animateurs et vos créateurs sur Douyin.',
     'nav.find.insights': 'Décryptages',
     'nav.find.insights.all': 'Tous les articles sur le choix d’un partenaire',
-    'nav.find.shortlist.label': 'Comment se construit une short-list',
+    'nav.find.shortlist.label': 'Comment se construit une liste courte',
     'nav.find.shortlist.desc':
       "Du premier brief à la mise en relation, en quelques semaines plutôt qu'un trimestre.",
 
@@ -383,14 +383,14 @@ export const ui = {
     'footer.col.find': 'Trouver un partenaire',
     'footer.col.sell': 'Vendre en Chine',
     'footer.col.web': 'Site et réseaux sociaux',
-    'footer.partners': 'Devenir partenaire Compass',
+    'footer.partners': 'Devenir partenaire Compass (EN)',
     'footer.signin': 'Espace partenaires',
 
 
     // Mega panel
     'nav.sell.title': 'Vos boutiques, tenues par ceux qui les ont ouvertes.',
     'nav.web.title': 'Deux équipes, un même étage, à Shanghai.',
-    'nav.find.title': 'La short-list vient de gens que nous avons rencontrés.',
+    'nav.find.title': 'Notre liste courte ne compte que des gens que nous avons rencontrés.',
     'nav.learn.title': 'Lire le marché avant de miser dessus.',
 
     'nav.feature.platforms.label': 'Nos terrains',
@@ -577,7 +577,7 @@ export const ui = {
     'nav.find.dp.desc': 'Wie Sie das Team auswählen, das auf Douyin Ihre Hosts und Creator bucht.',
     'nav.find.insights': 'Analysen',
     'nav.find.insights.all': 'Alle Artikel zur Partnersuche',
-    'nav.find.shortlist.label': 'So entsteht eine Shortlist',
+    'nav.find.shortlist.label': 'So entsteht eine Auswahlliste',
     'nav.find.shortlist.desc':
       'Vom ersten Briefing bis zur Empfehlung, in Wochen statt in einem Quartal.',
 
@@ -598,14 +598,14 @@ export const ui = {
     'footer.col.find': 'Partner finden',
     'footer.col.sell': 'In China verkaufen',
     'footer.col.web': 'Website und Social Media',
-    'footer.partners': 'Compass-Partner werden',
+    'footer.partners': 'Compass-Partner werden (EN)',
     'footer.signin': 'Partner-Login',
 
 
     // Mega panel
     'nav.sell.title': 'Ihre Stores, geführt von denen, die sie eröffnet haben.',
     'nav.web.title': 'Zwei Teams, eine Etage, in Shanghai.',
-    'nav.find.title': 'Die Shortlist kommt von Leuten, die wir kennen.',
+    'nav.find.title': 'Auf die Auswahlliste kommen nur Partner, die wir persönlich kennen.',
     'nav.learn.title': 'Den Markt lesen, bevor Sie auf ihn setzen.',
 
     'nav.feature.platforms.label': 'Wo wir arbeiten',
@@ -815,7 +815,7 @@ export const ui = {
     'footer.col.find': 'Encontrar un socio',
     'footer.col.sell': 'Vender en China',
     'footer.col.web': 'Web y redes sociales',
-    'footer.partners': 'Ser socio de Compass',
+    'footer.partners': 'Ser socio de Compass (EN)',
     'footer.signin': 'Acceso de socios',
 
 

@@ -1,6 +1,7 @@
 ---
 title: "Voyageurs chinois haut de gamme : ce qu'ils recherchent vraiment"
-description: "90 % des grandes fortunes chinoises veulent intensifier leurs déplacements dans les trois ans. Issus de Pékin, Shanghai, Canton, ils cherchent l'exclusivité, l'immersion culturelle et du sens, pas une carte postale."
+seoTitle: "Voyageurs chinois haut de gamme : leurs vraies attentes"
+description: "90 % des grandes fortunes chinoises comptent voyager plus d'ici trois ans. De Pékin à Canton, elles recherchent l'exclusivité, l'immersion et le sens."
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"

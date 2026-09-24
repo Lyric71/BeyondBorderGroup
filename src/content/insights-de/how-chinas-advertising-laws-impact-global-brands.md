@@ -1,6 +1,6 @@
 ---
 title: "Werberecht in China: Was internationale Marken wissen müssen"
-description: "Chinas strenges Werberecht und plattformspezifische Vorgaben sind eine besondere Herausforderung für globale Marken im eCommerce und Social Media. Der Leitfaden zeigt Regeln zu Absolut-Aussagen, branchenspezifische Vorschriften und die Vorgaben für digitale Werbung."
+description: "Chinas strenges Werberecht und die Plattformregeln fordern globale Marken heraus. Was für Absolut-Aussagen, einzelne Branchen und digitale Werbung gilt."
 pubDate: "2024-10-29"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -21,7 +21,7 @@ Chinas eCommerce-Landschaft wird von mehreren Behörden reguliert, die strenge [
 
 Diese Behörden setzen gemeinsam das chinesische Werberecht durch, ein Rahmen gegen irreführende oder schädliche Inhalte, zum Schutz der Käufer und für fairen Wettbewerb. Das Recht gilt für digitale, gedruckte und ausgestrahlte Werbung. Wer in China auftritt, muss seine Marketing-Strategie an den nationalen Standards ausrichten. Für Unternehmen, die in den chinesischen eCommerce einsteigen wollen, ist das Verständnis dieser Regeln Pflicht, um konforme, käuferfreundliche Kampagnen zu bauen.
 
-Wegen der grossen Wirkung der digitalen Werbung sind die Regeln dort besonders streng. Plattformen wie WeChat, Douyin sowie Tmall und JD.com setzen zusätzlich eigene Regeln, damit Inhalte sowohl den nationalen als auch den plattformspezifischen Standards entsprechen. Dieser Rahmen ist wichtig, um ausländische Marken zu führen, chinesische Käufer zu schützen und ein stabiles Geschäftsumfeld zu sichern.
+Wegen der großen Wirkung der digitalen Werbung sind die Regeln dort besonders streng. Plattformen wie WeChat, Douyin sowie Tmall und JD.com setzen zusätzlich eigene Regeln, damit Inhalte sowohl den nationalen als auch den plattformspezifischen Standards entsprechen. Dieser Rahmen ist wichtig, um ausländische Marken zu führen, chinesische Käufer zu schützen und ein stabiles Geschäftsumfeld zu sichern.
 
 ## Beschränkungen bei Absolut-Aussagen
 

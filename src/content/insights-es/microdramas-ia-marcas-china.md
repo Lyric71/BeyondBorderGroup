@@ -1,6 +1,6 @@
 ---
 title: "La IA abarató el drama de marca. Luego llegaron las reglas."
-description: "La IA redujo hasta un 90 % el coste de producir microdramas en China. Qué significa para las marcas extranjeras y las obligaciones de etiquetado que llegaron con ello."
+description: "La IA ha recortado hasta un 90 % el coste de producir microdramas en China. Qué supone para las marcas extranjeras y las nuevas obligaciones de etiquetado."
 pubDate: "2026-07-16"
 author: "Cyril Drouin"
 category: "AI & Innovation"

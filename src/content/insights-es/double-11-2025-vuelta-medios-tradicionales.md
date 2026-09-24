@@ -1,6 +1,7 @@
 ---
 title: "El mayor festival del eCommerce chino regresa a los medios de toda la vida"
-description: "Double 11, la gran cita del eCommerce chino, recupera formatos de televisión (galas, sketches de humor, programas de variedades) para reconstruir la confianza ante compradores que ya operan como profesionales del comercio."
+seoTitle: "El Double 11 regresa a los medios de toda la vida"
+description: "El Double 11 recupera la televisión (galas, sketches, variedades) para reconquistar a unos compradores que ya se comportan como profesionales."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

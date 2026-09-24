@@ -1,6 +1,7 @@
 ---
 title: "Humain numérique : la percée du livestream piloté par IA en Chine"
-description: "L'avatar de Liu Qiangdong, fondateur de JD.com, a rassemblé près de 20 millions de spectateurs en une heure de livestream. Démonstration en direct du potentiel de l'IA sur l'e-commerce chinois."
+seoTitle: "Humain numérique : la percée du livestream IA en Chine"
+description: "L'avatar de Liu Qiangdong, fondateur de JD.com, a réuni près de 20 millions de spectateurs en une heure de live. L'IA change d'échelle dans l'e-commerce."
 pubDate: "2024-04-25"
 author: "TheChinaPath"
 category: "AI & Innovation"

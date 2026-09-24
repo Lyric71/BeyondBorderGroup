@@ -1,6 +1,7 @@
 ---
 title: "La Chine n'est plus un marché unique : le pari local supplante le plan national"
-description: "Face au ralentissement et à la montée des marques domestiques, les groupes internationaux doivent troquer le plan national contre une stratégie ville par ville, calibrée sur les bassins de consommation."
+seoTitle: "Chine : le pari local supplante le plan national"
+description: "Croissance en berne, marques locales en force : les groupes étrangers doivent troquer le plan national contre une stratégie ville par ville en Chine."
 pubDate: "2026-01-06"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

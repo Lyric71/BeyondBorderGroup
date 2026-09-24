@@ -1,6 +1,7 @@
 ---
 title: "Markenlokalisierung für China: Anpassen, ohne die DNA zu verlieren"
-description: "Ausländische Marken in China müssen tiefe Lokalisierung mit dem Markenkern verbinden. Qualität allein trägt nicht mehr. Erfolg verlangt kulturelle Relevanz und Plattform-Sprachgefühl, bei gleichzeitigem Schutz dessen, was die Marke einzigartig macht."
+seoTitle: "Markenlokalisierung für China, ohne die DNA zu verlieren"
+description: "Qualität allein reicht in China nicht mehr. Ausländische Marken müssen sich tief lokalisieren und dabei den Markenkern schützen, der sie ausmacht."
 pubDate: "2025-11-19"
 updatedDate: "2026-05-15"
 author: "Liyan Ye"
@@ -21,7 +22,7 @@ Lange standen ausländische Marken in China für Seltenheit und Moderne. Was aus
 
 Mit dem Wachstum der Mittelschicht wurden [globale Marken](/de/nach-china/markteintrittsberatung) zum Kürzel für Status und Qualität. Lokale Marken hielten in Produkt, Design und Erzählung noch nicht mit.
 
-Heute haben chinesische Marken den Qualitätsabstand grösstenteils geschlossen und sind in Kultur und Digitalem oft schneller unterwegs. Guochao hat den lokalen Spielern eine starke Geschichte gegeben, westliche Marken sind zu einer Wahl unter vielen geworden. Qualität wird vorausgesetzt. Relevanz entsteht aus kultureller Passung und Plattform-Sprachgefühl.
+Heute haben chinesische Marken den Qualitätsabstand größtenteils geschlossen und sind in Kultur und Digitalem oft schneller unterwegs. Guochao hat den lokalen Spielern eine starke Geschichte gegeben, westliche Marken sind zu einer Wahl unter vielen geworden. Qualität wird vorausgesetzt. Relevanz entsteht aus kultureller Passung und Plattform-Sprachgefühl.
 
 ## Warum Lokalisierung Pflicht ist
 
@@ -96,7 +97,7 @@ Eine praktische Brille für globale Teams trennt, was bleiben muss, von dem, was
 
 Was über Märkte hinweg stabil bleibt:
 
-- Markenzweck und grosse Idee
+- Markenzweck und große Idee
 - Grundlegende Werte wie Sicherheit, Freude, Kreativität, Freiheit
 - Eigene visuelle Codes, Logo, Hauptfarben, Schlüsselsformen
 - Produktwahrheiten, die Dinge, die Sie verlässlich besser können als andere
@@ -114,7 +115,7 @@ Die bewusste Flexibilität:
 
 Die Kernfrage für jede Anpassung lautet:
 
-Drückt das unsere grosse Idee so aus, dass sie in China Sinn ergibt, oder dekorieren wir nur mit kulturellen Symbolen?
+Drückt das unsere große Idee so aus, dass sie in China Sinn ergibt, oder dekorieren wir nur mit kulturellen Symbolen?
 
 **Schicht 3: plattform-native Umsetzung**
 

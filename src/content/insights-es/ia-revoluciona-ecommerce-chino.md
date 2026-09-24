@@ -1,6 +1,6 @@
 ---
 title: "¿Cómo puede la IA potenciar el eCommerce en China?"
-description: "El comercio electrónico chino atraviesa una transformación impulsada por la IA. Se espera que el sector pase de 150.000 millones de yuanes en 2020 a un billón en 2030, lo que abre oportunidades nuevas y mejora la eficiencia del conjunto."
+description: "La IA transforma el eCommerce chino: el sector pasará de 150.000 millones de yuanes en 2020 a un billón en 2030, con nuevas oportunidades y más eficiencia."
 pubDate: "2024-05-16"
 author: "TheChinaPath"
 category: "AI & Innovation"

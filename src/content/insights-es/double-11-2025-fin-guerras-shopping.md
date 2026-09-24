@@ -1,6 +1,6 @@
 ---
 title: "Double 11 2025: el fin de las guerras del shopping en China"
-description: "Double 11 ha pasado de ser una jornada simple de descuentos a un maratón de cinco semanas. El crecimiento se ralentiza, la confianza se erosiona y las marcas ven cómo se les comen los márgenes mientras los compradores actúan como operadores expertos."
+description: "El Double 11 es ya un maratón de cinco semanas: se frena el crecimiento, se erosiona la confianza y menguan los márgenes ante un comprador experto."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "TheChinaPath"

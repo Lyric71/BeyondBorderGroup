@@ -1,6 +1,6 @@
 ---
 title: "Alibaba abre 1688 en Taobao: las implicaciones de mercado"
-description: "El marketplace mayorista 1688 ha estrenado tres tiendas oficiales dentro de Taobao para ofrecer productos a precios competitivos y simplificar la compra a quienes buscan volumen o suministros comerciales."
+description: "1688, el mayorista de Alibaba, abre tres tiendas oficiales en Taobao con precios ajustados para quien compra por volumen o se abastece para su negocio."
 pubDate: "2024-03-27"
 author: "TheChinaPath"
 category: "Platforms"

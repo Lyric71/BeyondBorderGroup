@@ -1,6 +1,6 @@
 ---
 title: "Science + Emotion: China's New Brand Playbook"
-description: "One dermocosmetics brand grew 47% at Double 11 while its competitor dropped 57% on the same platforms. The difference came down to distribution architecture and brand strategy rather than product quality."
+description: "One dermocosmetics brand grew 47% at Double 11 while a rival fell 57% on the same platforms. Distribution and brand strategy made the difference."
 pubDate: "2026-03-12"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

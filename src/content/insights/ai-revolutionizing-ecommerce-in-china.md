@@ -1,6 +1,6 @@
 ---
 title: "How AI Can Supercharge eCommerce in China?"
-description: "China's eCommerce industry is undergoing AI-driven transformation, with the AI core industry expected to grow from 150 billion yuan in 2020 to 1 trillion yuan by 2030, creating new opportunities and enhancing sector efficiency."
+description: "AI is reshaping eCommerce in China. The country's core AI industry is forecast to grow from 150 billion yuan in 2020 to 1 trillion yuan by 2030."
 pubDate: "2024-05-16"
 author: "TheChinaPath"
 category: "AI & Innovation"

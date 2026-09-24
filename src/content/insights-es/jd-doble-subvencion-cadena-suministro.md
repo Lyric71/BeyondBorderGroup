@@ -1,6 +1,7 @@
 ---
 title: "El plan de subvenciones de JD es, en realidad, una jugada de cadena de suministro"
-description: "JD.com y un centenar de marcas ponen 10.000 millones de yuanes detrás de la renovación de electrodomésticos. Por qué el plan Doble Subvención va de cadena de suministro y fidelidad, no de guerra de precios."
+seoTitle: "Las subvenciones de JD, una jugada de cadena de suministro"
+description: "JD.com y más de 100 marcas ponen 10.000 millones de yuanes para renovar electrodomésticos. La Doble Subvención busca cadena de suministro y fidelidad."
 pubDate: "2026-07-05"
 author: "Cyril Drouin"
 category: "E-Commerce"

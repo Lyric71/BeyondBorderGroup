@@ -1,7 +1,7 @@
 ---
 brand: "JAC"
 title: "Producción global de activos, pixel perfect"
-summary: "Producción completa de más de 250 imágenes de exterior e interior del nuevo EV de JAC, pensadas para uso pixel perfect en sus redes globales de partners y revendedores."
+summary: "Más de 250 imágenes de exterior e interior del nuevo eléctrico de JAC, producidas pixel perfect para su red global de socios y concesionarios."
 metric: "Más de 250 imágenes de exterior e interior del EV producidas para uso global de partners y revendedores."
 category: "Brand & Design"
 industry: "Automotive"

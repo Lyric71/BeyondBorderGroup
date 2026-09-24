@@ -1,7 +1,8 @@
 ---
 brand: "Kerry Food, DaVinci Gourmet"
 title: "eCommerce pour les sirops, sauces et bases smoothies DaVinci Gourmet"
-summary: "Lancement et exploitation des boutiques Tmall et JD de DaVinci Gourmet en Chine : reconstruction de la présence de marque, alignement de la grille tarifaire et progression du chiffre d'affaires dès la première année."
+seoTitle: "DaVinci Gourmet (Kerry) : sirops et sauces sur Tmall et JD"
+summary: "DaVinci Gourmet ouvre et exploite ses boutiques Tmall et JD en Chine : marque reconstruite, prix réalignés, ventes en hausse dès la première année."
 metric: "Conflits tarifaires résolus en 3 mois. Fraude commerciale éliminée en 6 mois. Croissance du CA en ligne dès l'année 1."
 category: "eCommerce"
 industry: "Food & Beverage"

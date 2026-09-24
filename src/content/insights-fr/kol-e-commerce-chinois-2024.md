@@ -1,6 +1,6 @@
 ---
 title: "Les KOL qui pèsent sur le e-commerce chinois en 2024"
-description: "1 500 milliards de dollars de transactions, et une poignée de KOL qui orientent l'achat. De Xiaohongshu à Douyin, ces voix dictent désormais le rythme du commerce chinois."
+description: "1 500 milliards de dollars de transactions, une poignée de KOL pour orienter l'achat. De Xiaohongshu à Douyin, ces voix donnent le ton au commerce chinois."
 pubDate: "2024-12-18"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

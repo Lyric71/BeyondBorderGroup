@@ -1,6 +1,7 @@
 ---
 title: "E-commerce chinois : les entrepreneures s'emparent du terrain en 2024"
-description: "Plus de la moitié du top 100 des boutiques Taobao les plus actives appartient à des femmes. Le commerce numérique chinois redessine l'accès aux affaires, jusque dans les villes de troisième et quatrième rang."
+seoTitle: "E-commerce chinois : l'essor des entrepreneures en 2024"
+description: "Plus de la moitié des 100 boutiques Taobao les plus actives appartiennent à des femmes. L'e-commerce ouvre les affaires jusqu'aux villes de rang 3 et 4."
 pubDate: "2024-06-14"
 author: "TheChinaPath"
 category: "Market Strategy"

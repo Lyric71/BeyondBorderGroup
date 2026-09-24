@@ -1,6 +1,7 @@
 ---
 title: "China's eCommerce Evolution Driven by Tech, Beauty, and Luxury Sales"
-description: "China's 6.18 shopping festival revealed significant shifts in consumer preferences, with tech, beauty, and luxury brands achieving record sales figures through strategic marketing and dynamic commerce strategies."
+seoTitle: "6.18 Sales in China: Tech, Beauty and Luxury Trends"
+description: "Apple's Tmall store passed RMB1.5 billion in GMV in the first hour of 6.18. What the festival says about Chinese demand for tech, beauty and luxury."
 pubDate: "2024-06-14"
 author: "TheChinaPath"
 category: "E-Commerce"

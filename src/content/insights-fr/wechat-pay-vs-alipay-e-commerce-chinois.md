@@ -1,6 +1,7 @@
 ---
 title: "WeChat Pay et Alipay : quelle solution retenir pour le e-commerce chinois"
-description: "Un milliard d'utilisateurs pour WeChat Pay, 652 millions pour Alipay. Deux logiques opposées sous la même promesse sans cash. Décryptage à l'usage des marques qui montent leur passerelle de paiement."
+seoTitle: "WeChat Pay ou Alipay : que choisir pour vendre en Chine ?"
+description: "Un milliard d'utilisateurs pour WeChat Pay, 652 millions pour Alipay : deux logiques opposées sous une même promesse sans espèces. Lequel choisir ?"
 pubDate: "2024-07-24"
 updatedDate: "2026-05-15"
 author: "TheChinaPath"

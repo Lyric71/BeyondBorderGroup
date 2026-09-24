@@ -1,6 +1,7 @@
 ---
 title: "Storytelling im B2B-Marketing: Stärkere Markenbindung in China"
-description: "Storytelling steht im Mittelpunkt des chinesischen B2B-Marketings. Es verändert, wie Unternehmen ihre Zielgruppen ansprechen und Konversionen heben, indem sie emotional tragfähige Erzählungen formen, die Kundenbeziehungen vertiefen."
+seoTitle: "B2B-Storytelling in China: Stärkere Markenbindung"
+description: "Storytelling rückt ins Zentrum des B2B-Marketings in China. Emotional tragfähige Geschichten vertiefen Kundenbeziehungen und steigern die Konversion."
 pubDate: "2024-04-16"
 author: "TheChinaPath"
 category: "Brand & Localization"

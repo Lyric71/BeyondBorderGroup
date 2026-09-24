@@ -1,15 +1,15 @@
 ---
 title: "Lo que cuesta vender cuidado facial en China"
-description: "Abrir en Tmall Global cuesta 80.000 yuanes; 42.600 en JD Worldwide y 100.000 en Douyin. Después manda el formato del envase."
+description: "Abrir en Tmall Global cuesta 80.000 yuanes; 42.600 en JD Worldwide y 5.000 en Douyin. Después manda el formato del envase."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-16"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Beauty & Personal Care"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Cuidado facial", "Tmall Global", "JD Worldwide", "Douyin", "Comercio transfronterizo", "Tarifas de plataforma", "NMPA"]
 keyTakeaways:
-  - "Abrir en cuidado facial cuesta 80.000 yuanes en Tmall Global, 42.600 yuanes en JD Worldwide y 100.000 yuanes en Douyin transfronterizo, antes de mercancía, medios y honorarios de un socio (datos de las calculadoras de TheChinaPath, septiembre de 2026)."
+  - "Abrir en cuidado facial cuesta 80.000 yuanes en Tmall Global, 42.600 yuanes en JD Worldwide y 5.000 yuanes en Douyin transfronterizo, antes de mercancía, medios y honorarios de un socio (datos de las calculadoras de TheChinaPath, septiembre de 2026)."
   - "Tmall Global cobra un 4 % por venta en cuidado facial frente al 5 % de las otras dos, y sitúa la categoría en el tramo bajo de cuota anual, 30.000 yuanes."
   - "La vía transfronteriza elimina por completo la presentación ante la NMPA, porque la mercancía se supervisa como bien de uso personal. El régimen general no elimina nada."
   - "Un producto de cuidado facial a 10 yuanes por mililitro o más cuenta como cosmético de gama alta y soporta impuesto al consumo: el comprador paga cerca del 23 % en lugar del 9,1 %."
@@ -20,7 +20,7 @@ heroImageAlt: "En la oficina de operaciones de un almacén aduanero de Cantón, 
 
 Empiece por Tmall Global. Abrir allí una tienda de cuidado facial cuesta
 80.000 yuanes antes de vender un solo tarro, frente a 42.600 yuanes en JD
-Worldwide y 100.000 yuanes en Douyin transfronterizo. Tmall se lleva un 4 %
+Worldwide y 5.000 yuanes en Douyin transfronterizo. Tmall se lleva un 4 %
 de cada venta; las otras dos, un 5 %. Y luego llega el impuesto que su
 comprador paga en la caja, el que decide el formato de su envase. Ese pesa
 más que todo lo anterior.
@@ -34,10 +34,10 @@ costes y la más benévola en tarifas. Primero la tabla.
 
 | Cuidado facial, primer año (yuanes) | Tmall Global | JD Worldwide | Douyin transfronterizo |
 |---|---|---|---|
-| Depósito de garantía, reembolsable | 50.000 | 35.500 (unos 4.500 euros) | 100.000 |
+| Depósito de garantía, reembolsable | 50.000 | 35.500 (unos 4.500 euros) | 5.000 |
 | Cuota anual de plataforma | 30.000 | 7.100 (unos 900 euros) | ninguna |
 | Comisión por venta | 4 % | 5 % | 5 % |
-| Caja antes de la primera venta | 80.000 | 42.600 | 100.000 |
+| Caja antes de la primera venta | 80.000 | 42.600 | 5.000 |
 
 </div>
 
@@ -50,6 +50,18 @@ el depósito como la cuota de uso en dólares, en una escala que sube con las
 ventas acumuladas: la cifra en yuanes de arriba es el primer peldaño. Una
 marca en trámite TM o una tienda multimarca eleva el depósito de Tmall.
 Horquillas comprobadas en septiembre de 2026.
+
+En Douyin, el depósito ya no tiene nada que ver con el cuidado facial. Desde
+junio de 2025 sigue las ventas del mes anterior: 500 yuanes hasta 50.000
+yuanes, 2.000 yuanes hasta 100.000 y 5.000 yuanes por encima. La tabla recoge
+el tramo más alto.
+
+> El depósito base de Douyin Global depende del GMV pagado por la tienda en el
+> mes natural anterior: 500 yuanes de 0 a 50.000 yuanes, 2.000 yuanes por encima
+> de 50.000 y hasta 100.000 yuanes, y 5.000 yuanes por encima de 100.000 yuanes.
+> Fuente: Douyin E-commerce (抖音电商), 《【全球购】保证金管理规范》, última
+> revisión en vigor desde el 5 de junio de 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/107821
 
 Hay una cifra en esa tabla que se sale de la norma. El cuidado facial y el
 maquillaje son las dos únicas categorías, de las diecinueve que recoge
@@ -247,7 +259,7 @@ JD Worldwide le da la vuelta cuando la pregunta abierta es si China quiere la
 marca. Misma vía, mismas reglas, algo más de la mitad de la caja para estar
 en línea.
 
-Douyin cumple otra función. El depósito más alto, ninguna cuota anual y una
+Douyin cumple otra función. El depósito más bajo, ninguna cuota anual y una
 plataforma que premia a las marcas que ya tienen contenido que vende. Nuestra
 página sobre [lo que cuesta vender
 calzado](/es/analisis/lo-que-cuesta-vender-calzado-en-china) repasa esas

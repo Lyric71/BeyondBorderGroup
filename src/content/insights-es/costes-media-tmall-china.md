@@ -1,6 +1,7 @@
 ---
 title: "Costes de media en Tmall: guía para ajustar bien la inversión de su marca"
-description: "Tmall, la plataforma B2C líder de Alibaba en China, da acceso a más de 500 millones de usuarios mensuales. Esta guía recorre tarifas de entrada, opciones publicitarias, contenido y participación en grandes festivales para sacar el máximo al ROI."
+seoTitle: "Costes de media en Tmall: guía para ajustar la inversión"
+description: "Tmall, la gran plataforma B2C de Alibaba, supera los 500 millones de usuarios al mes. Tarifas, publicidad, contenido y festivales para mejorar el ROI."
 pubDate: "2024-10-30"
 author: "TheChinaPath"
 category: "E-Commerce"

@@ -1,6 +1,6 @@
 ---
 title: "Optimizing Your Brand: Choosing the Right Influencer"
-description: "Influencer marketing has emerged as a powerful strategy for brands seeking to expand their reach. Success depends on selecting the right influencers who align with your brand values and target audience."
+description: "How to choose the right influencer for your brand: the main influencer types, what to check before you sign, and the tools that speed up the search."
 pubDate: "2023-11-17"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

@@ -1,6 +1,6 @@
 ---
 title: "WeChat wurde gratis. Xiaohongshu wurde teuer."
-description: "Fünf Verschiebungen bei Chinas Plattformen im Jahr 2026, was jede davon eine ausländische Marke kostet, und warum die billigsten Türen im Betrieb die teuersten sind."
+description: "Fünf Verschiebungen auf Chinas Plattformen 2026, was jede eine ausländische Marke kostet und warum die billigsten Zugänge im Betrieb am teuersten sind."
 pubDate: "2026-07-22"
 updatedDate: "2026-07-22"
 author: "Cyril Drouin"

@@ -277,7 +277,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 const calcSchema = webApplicationSchema({
   url: Astro.url.pathname,
   name: "Calculadora de costes de Tmall Global",
-  description: "Calcule lo que cuesta el primer año de una flagship en Tmall Global: depósito, cuota anual y comisión según categoría, retainer y comisión del TP, almacén en zona franca, transporte y el IVA cross-border, en RMB y en USD.",
+  description: "Coste del primer año en Tmall Global: depósito, cuota anual, comisión por categoría, TP, almacén en zona franca, transporte e IVA cross-border.",
   inLanguage: 'es',
   breadcrumb: [
     { name: "Inicio", url: "/es" },
@@ -288,13 +288,14 @@ const calcSchema = webApplicationSchema({
 ---
 
 <Layout
+  preloadImage="/Images/tools/tmall-jd-hero-bg.webp"
   schema={calcSchema}
   title="Calculadora de costes de Tmall Global | TheChinaPath"
-  description="Calcule lo que cuesta el primer año de una flagship en Tmall Global: depósito, cuota anual y comisión según categoría, retainer y comisión del TP, almacén en zona franca, transporte y el IVA cross-border, en RMB y en USD."
+  description="Coste del primer año en Tmall Global: depósito, cuota anual, comisión por categoría, TP, almacén en zona franca, transporte e IVA cross-border."
 >
   <section
     class="tool-hero tool-hero--image"
-    style="--tool-hero-img: url('/Images/tools/tmall-jd-hero-bg.png')"
+    style="--tool-hero-img: url('/Images/tools/tmall-jd-hero-bg.webp')"
   >
     <div class="container tool-hero__inner">
       <nav class="tool-hero__crumbs" aria-label="Migas de pan">

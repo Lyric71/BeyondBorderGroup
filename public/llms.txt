@@ -30,6 +30,24 @@ Compass is not a subscription and there is no public access to the records. It i
 - [Compass](https://www.thechinapath.com/compass): What the database is and how a shortlist gets built from it.
 - [Get your shortlist](https://www.thechinapath.com/compass/shortlist): The brief form.
 - [Become a partner](https://www.thechinapath.com/compass/partners): For China-domestic distributors and platform partners applying to join the database. English and Chinese only.
+- [Finding a distributor in China](https://www.thechinapath.com/compass/find-a-distributor-in-china): Where brands find distributor candidates, the eight checks before signing, and the terms to settle.
+- [Finding a Tmall Partner (TP) in China](https://www.thechinapath.com/compass/find-a-tmall-partner-in-china): What a TP does, how it is paid, the checks to run, and where TP contracts go wrong.
+- [Finding a Douyin Partner (DP) in China](https://www.thechinapath.com/compass/find-a-douyin-partner-in-china): What a DP costs, how to judge one from its live streams, and which accounts must stay the brand's.
+- [Finding a partner: all articles](https://www.thechinapath.com/insights/finding-a-partner): Every article on choosing, checking, contracting and managing China distributors, TPs and DPs.
+
+## Cost calculators
+
+- [Tmall Global cost calculator](https://www.thechinapath.com/tools/tmall-global-setup-and-run): Deposits, annual fees, commissions, partner fees and cash needed before the first sale, by category.
+- [JD Worldwide cost calculator](https://www.thechinapath.com/tools/jd-worldwide-setup-and-run): The same model for JD Worldwide.
+- [Douyin cost calculator](https://www.thechinapath.com/tools/douyin-cost-calculator): Douyin Global deposit, technical service fees, creator commission, partner fees and returns.
+
+## Other languages
+
+The site is published in English, French, German and Spanish, with native URLs in each language.
+
+- French: [Accueil](https://www.thechinapath.com/fr), [Entrer en Chine](https://www.thechinapath.com/fr/entrer-en-chine), [Compass](https://www.thechinapath.com/fr/compass), [Trouver un partenaire en Chine](https://www.thechinapath.com/fr/decryptages/trouver-un-partenaire-en-chine), [Décryptages](https://www.thechinapath.com/fr/decryptages), [Outils](https://www.thechinapath.com/fr/outils)
+- German: [Startseite](https://www.thechinapath.com/de), [Nach China](https://www.thechinapath.com/de/nach-china), [Compass](https://www.thechinapath.com/de/compass), [Partner in China finden](https://www.thechinapath.com/de/analysen/partner-in-china-finden), [Analysen](https://www.thechinapath.com/de/analysen), [Rechner](https://www.thechinapath.com/de/rechner)
+- Spanish: [Inicio](https://www.thechinapath.com/es), [Entrar en China](https://www.thechinapath.com/es/entrar-en-china), [Compass](https://www.thechinapath.com/es/compass), [Encontrar un socio en China](https://www.thechinapath.com/es/analisis/encontrar-socio-en-china), [Análisis](https://www.thechinapath.com/es/analisis), [Herramientas](https://www.thechinapath.com/es/herramientas)
 
 ## The two doors
 
@@ -49,7 +67,7 @@ Compass is not a subscription and there is no public access to the records. It i
 - [China 2026: 8 eCommerce and Marketing Predictions](https://www.thechinapath.com/insights/china-2026-8-ecommerce-marketing-predictions): Platform dynamics, AI-driven commerce, and consumer behaviour shifts heading into 2026.
 - [Double 11 2025: The End of China's Shopping Wars](https://www.thechinapath.com/insights/double-11-2025-the-end-of-chinas-shopping-wars): How China's biggest shopping festival is maturing and what it means for international brand strategy.
 - [China eCommerce Platforms 2025](https://www.thechinapath.com/insights/china-e-commerce-platforms-2025): Comparative guide to Tmall, JD, Douyin, RED, WeChat, and Pinduoduo for foreign brands deciding where to invest.
-- [China Is No Longer One Market: A Localised Growth Strategy for 2025](https://www.thechinapath.com/insights/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025): Regional segmentation for brands moving beyond Tier 1 cities.
+- [China Is No Longer One Market: A Localised Growth Strategy for 2025](https://www.thechinapath.com/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans): Regional segmentation for brands moving beyond Tier 1 cities.
 - [Douyin Live Commerce 2025: Store-Led Livestream Strategy](https://www.thechinapath.com/insights/douyin-live-commerce-2025-store-led-livestream-strategy): Store-anchored livestream selling on Douyin, the fastest-growing commerce format in China.
 - [Science and Emotion: China's New Brand Playbook](https://www.thechinapath.com/insights/science-emotion-chinas-new-brand-playbook): How domestic Chinese competitors combine product efficacy claims with emotional storytelling to outmanoeuvre foreign brands.
 - [AI Revolutionizing eCommerce in China](https://www.thechinapath.com/insights/ai-revolutionizing-ecommerce-in-china): How AI is reshaping product discovery, customer service, content production, and campaign optimisation on Chinese platforms.

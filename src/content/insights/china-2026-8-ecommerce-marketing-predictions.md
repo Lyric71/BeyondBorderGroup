@@ -1,6 +1,6 @@
 ---
 title: "China 2026: 8 eCommerce & Marketing Predictions"
-description: "Eight predictions for China's digital marketplace in 2026, from instant commerce dominance to GenAI-driven personalization and the resurgence of experiential marketing over discounting."
+description: "Eight predictions for China's eCommerce and marketing in 2026, from instant commerce and GenAI personalization to experiences taking over from discounts."
 pubDate: "2026-01-02"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

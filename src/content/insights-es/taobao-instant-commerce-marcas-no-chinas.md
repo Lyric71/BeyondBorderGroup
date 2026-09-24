@@ -1,6 +1,7 @@
 ---
 title: "Qué significa Taobao Instant Commerce para las marcas no chinas"
-description: "Taobao Instant Commerce y el rebrand de Ele.me como Taobao Flash Sale marcan el paso de un eCommerce de citas festivas a un hábito diario de entrega. Eso reordena las reglas para las marcas no chinas que compiten en el retail del país."
+seoTitle: "Taobao Instant Commerce y las marcas no chinas"
+description: "Taobao Instant Commerce y Taobao Flash Sale, la antigua Ele.me, llevan el eCommerce chino al hábito diario. Nuevas reglas para las marcas no chinas."
 pubDate: "2025-11-21"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

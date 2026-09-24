@@ -37,7 +37,7 @@ const copy: PartnerGuideCopy = {
     body: [
       'Pour choisir un Tmall Partner, demandez à chaque candidat la liste des boutiques qu’il exploite aujourd’hui dans votre catégorie, puis visitez-les sur Tmall avec l’œil d’un client. Avant de signer, rencontrez l’équipe qui tiendrait réellement la vôtre et relisez à deux fois les clauses de sortie. La boutique doit rester enregistrée au nom de votre société.',
       'Alibaba certifie les TP et leur attribue une note sur sa propre place de marché de prestataires. Libre à vous d’y puiser vos premiers noms. Mais cette note renseigne mal sur l’expérience d’un TP avec un produit comparable au vôtre.',
-      'Des opérateurs cotés comme Baozun gèrent les boutiques de dizaines de marques internationales. Un spécialiste plus modeste n’en tient parfois que six, toutes dans la même catégorie. Les deux modèles fonctionnent. Tout se joue sur la part de temps que l’équipe consacrera réellement à votre marque.',
+      'Les grands opérateurs cotés gèrent les boutiques de dizaines de marques internationales. Un spécialiste plus modeste n’en tient parfois que six, toutes dans la même catégorie. Les deux modèles fonctionnent. Tout se joue sur la part de temps que l’équipe consacrera réellement à votre marque.',
     ],
   },
 

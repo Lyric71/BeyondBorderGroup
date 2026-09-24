@@ -1,6 +1,7 @@
 ---
 title: "Kuaishou Short-Video Marketing: A Complete Guide for Brands in China"
-description: "Kuaishou is a premier short-video platform distinct from Douyin, focusing on audiences in lower-tier cities and rural areas. This guide explores how brands can use live-streaming, influencer partnerships, and localized eCommerce strategies for success in China's social commerce market."
+seoTitle: "Kuaishou Marketing: A Short-Video Guide for Brands"
+description: "Kuaishou, Douyin's main short-video rival, is strongest in lower-tier cities and rural China. A brand guide to its livestreams, influencers and eCommerce."
 pubDate: "2024-10-28"
 author: "TheChinaPath"
 category: "Platforms"

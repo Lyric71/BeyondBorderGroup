@@ -1,6 +1,7 @@
 ---
 title: "Bewährte Praxis für erfolgreichen eCommerce-Livestream in China"
-description: "eCommerce-Livestream hat die Art verändert, wie Marken in China Publikum erreichen. Echtzeit-Video, direkte Interaktion und reibungsloser Einkauf laufen zusammen. Plattformen wie Taobao Live und Douyin dominieren."
+seoTitle: "Livestream-Verkauf in China: Bewährte Praxis für Marken"
+description: "Livestreaming verändert, wie Marken in China verkaufen: Video in Echtzeit, direkter Austausch, Kauf ohne Umweg. Taobao Live und Douyin geben den Ton an."
 pubDate: "2024-12-06"
 author: "TheChinaPath"
 category: "KOLs & Livestream"
@@ -26,7 +27,7 @@ Die chinesische Livestream-Landschaft ist vielfältig, jede Plattform spricht ei
 
 ### Taobao Live
 
-Taobao Live führt den Markt mit über 70 Prozent der Livestream-Transaktionen. Ideal für grosse Kampagnen, mit Werkzeugen, um Umsätze rund um Festivals wie den Singles' Day zu maximieren.
+Taobao Live führt den Markt mit über 70 Prozent der Livestream-Transaktionen. Ideal für große Kampagnen, mit Werkzeugen, um Umsätze rund um Festivals wie den Singles' Day zu maximieren.
 
 ![Taobao-Live-Oberfläche](/Images/insights/2024/12/live-tao.png)
 

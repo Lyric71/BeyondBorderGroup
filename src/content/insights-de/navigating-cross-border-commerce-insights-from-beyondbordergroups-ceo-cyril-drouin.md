@@ -1,6 +1,7 @@
 ---
 title: "Cross-Border Commerce und Livestream: Einblicke von Cyril Drouin, CEO TheChinaPath"
-description: "Cyril Drouin über Live-Commerce, Markenlokalisierung, KOLs und die Herausforderungen im Cross-Border-eCommerce. Was Chinas transaktionale Livestream-Wirtschaft von westlichen Märkten unterscheidet."
+seoTitle: "Cyril Drouin (TheChinaPath) über Cross-Border und Livestream"
+description: "Cyril Drouin über Live-Commerce, Lokalisierung, KOL und Cross-Border-eCommerce, und was Chinas Livestream-Wirtschaft von westlichen Märkten trennt."
 pubDate: "2024-11-05"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -36,7 +37,7 @@ Der Schlüssel liegt in Lokalisierung und Sichtbarkeit. Lokalisierung umfasst ei
 
 KOLs bleiben in China zentral für den Markenerfolg, aber ihre Rolle wandelt sich. Sie gehen über reines Endorsement hinaus, werden Teil von Produktentwicklung und Markenstrategie. Marken arbeiten früh im Lebenszyklus eines Produkts mit KOLs zusammen und entwickeln Artikel, die direkt bei deren Audience landen. Influencer-Marketing in Europa und den USA steht noch früher. In diesen Märkten sind Influencer noch nicht so tief in den Verkaufszyklus eingebettet wie in China. Mit wachsendem Live-Commerce im Westen könnten Influencer auch dort eine aktivere Rolle übernehmen.
 
-### Welche grossen Herausforderungen haben Marken bei der Expansion von China in westliche Märkte?
+### Welche großen Herausforderungen haben Marken bei der Expansion von China in westliche Märkte?
 
 Kulturelle Unterschiede, regulatorische Anforderungen und unterschiedliche Kaufverhalten. Marken unterschätzen oft, wie sehr sich westliche Märkte von China unterscheiden. Der schnelle, energiegeladene Marketing-Ansatz aus China muss in der Regel angepasst werden. Auch die Regulatorik fordert ihren Tribut: Datenschutz, Produktzertifizierungen, Werberecht, alles braucht lokales Wissen. Dazu kommen Wahrnehmungsfragen im Westen. Wer gegen etablierte Traditionsmarken antritt, muss Vertrauen aufbauen und hochwertige Produkte liefern, die westliche Standards treffen.
 
@@ -44,4 +45,4 @@ Kulturelle Unterschiede, regulatorische Anforderungen und unterschiedliche Kaufv
 
 ### Wie sehen Sie die Zukunft des Cross-Border-eCommerce in den nächsten fünf Jahren?
 
-Ich erwarte eine Annäherung der eCommerce-Ansätze über die Regionen hinweg. Chinas Einfluss auf westliche Trends ist sichtbar: [Livestream](/de/chinesische-social-media)-Commerce, Super-Apps und Social Shopping gewinnen im Westen an Bedeutung. Gleichzeitig lernen chinesische Unternehmen von westlichen Praktiken, setzen stärker auf Branding und auf erlebnisorientierten Verkauf. Wir werden eine reibungslosere Verzahnung von Handel und Social-Plattformen erleben, mehr KI für personalisierte Einkaufserlebnisse und einen grösseren Stellenwert von Nachhaltigkeit. Käufer achten zunehmend auf Herkunft und Produktionsweise. Marken, die diese Werte tragen, haben einen klaren Vorteil. Cross-Border-eCommerce wird über das blosse Betreten neuer Märkte hinausgehen und ein echtes, integriertes globales Einkaufserlebnis schaffen.
+Ich erwarte eine Annäherung der eCommerce-Ansätze über die Regionen hinweg. Chinas Einfluss auf westliche Trends ist sichtbar: [Livestream](/de/chinesische-social-media)-Commerce, Super-Apps und Social Shopping gewinnen im Westen an Bedeutung. Gleichzeitig lernen chinesische Unternehmen von westlichen Praktiken, setzen stärker auf Branding und auf erlebnisorientierten Verkauf. Wir werden eine reibungslosere Verzahnung von Handel und Social-Plattformen erleben, mehr KI für personalisierte Einkaufserlebnisse und einen größeren Stellenwert von Nachhaltigkeit. Käufer achten zunehmend auf Herkunft und Produktionsweise. Marken, die diese Werte tragen, haben einen klaren Vorteil. Cross-Border-eCommerce wird über das blosse Betreten neuer Märkte hinausgehen und ein echtes, integriertes globales Einkaufserlebnis schaffen.

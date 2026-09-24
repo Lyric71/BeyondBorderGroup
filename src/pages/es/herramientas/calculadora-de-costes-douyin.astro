@@ -44,33 +44,37 @@ type Field = {
   options?: { value: string; label: string; deposit?: string; fee?: string }[];
 };
 
-// CBEC 抖音全球购 categories. Each one sets the platform deposit and the tech
-// service fee, the only two model inputs that move with product category
-// (see Section 8 of the model spec). Fee is the mid of the published band.
+// CBEC 抖音全球购 categories. Each one sets the tech service fee, the base rate
+// in Douyin's 【全球购】技术服务费费率标准 (in force 2026-07-15, flagship store,
+// main-app orders). Where a label spans rows with different rates, fee is the
+// mid of the range. The deposit no longer moves with category: since the
+// 2025-06-05 revision of 【全球购】保证金管理规范 it is tiered on last month's
+// GMV (500 / 2,000 / 5,000 RMB), and every row carries the 5,000 top tier.
+// Log: editorial/logs/partner/douyin-deposits-2026-09-24.md
 const categories: { value: string; label: string; deposit: string; fee: string }[] = [
-  { value: 'food-packaged', label: 'Alimentación envasada (cereales, aceite, secos, condimentos)', deposit: '50000', fee: '4' },
-  { value: 'snacks', label: 'Aperitivos, frutos secos, gourmet', deposit: '50000', fee: '5' },
-  { value: 'drinks', label: 'Café, avena, bebidas en polvo', deposit: '50000', fee: '5' },
-  { value: 'tea', label: 'Té', deposit: '50000', fee: '2' },
-  { value: 'supplements', label: 'Complementos alimenticios', deposit: '50000', fee: '4' },
-  { value: 'tonics', label: 'Tónicos tradicionales (nido de golondrina y similares)', deposit: '200000', fee: '5' },
-  { value: 'alcohol', label: 'Bebidas alcohólicas', deposit: '100000', fee: '5' },
-  { value: 'skincare', label: 'Cuidado de la piel', deposit: '100000', fee: '5' },
-  { value: 'makeup', label: 'Maquillaje y perfumería', deposit: '100000', fee: '5' },
-  { value: 'beauty-device', label: 'Aparatos de belleza e higiene personal', deposit: '100000', fee: '4' },
-  { value: 'personal-care', label: 'Higiene y cuidado personal', deposit: '50000', fee: '4' },
-  { value: 'home', label: 'Hogar, ropa de cama, menaje', deposit: '50000', fee: '3' },
-  { value: 'appliances', label: 'Pequeño electrodoméstico', deposit: '75000', fee: '4' },
-  { value: '3c', label: 'Accesorios 3C y cámaras', deposit: '50000', fee: '4' },
-  { value: 'phones', label: 'Móviles, portátiles, tabletas', deposit: '100000', fee: '2.5' },
-  { value: 'apparel', label: 'Moda y ropa interior', deposit: '100000', fee: '5' },
-  { value: 'footwear', label: 'Calzado', deposit: '100000', fee: '5' },
-  { value: 'bags', label: 'Bolsos, cinturones, complementos', deposit: '100000', fee: '5' },
-  { value: 'jewellery', label: 'Bisutería', deposit: '100000', fee: '5.5' },
-  { value: 'sports', label: 'Deporte y aire libre', deposit: '75000', fee: '5' },
-  { value: 'infant-formula', label: 'Leche infantil', deposit: '100000', fee: '4' },
-  { value: 'baby', label: 'Puericultura y juguetes', deposit: '50000', fee: '5' },
-  { value: 'pet', label: 'Alimentación y accesorios para mascotas', deposit: '50000', fee: '5' },
+  { value: 'food-packaged', label: 'Alimentación envasada (cereales, aceite, secos, condimentos)', deposit: '5000', fee: '2.5' },
+  { value: 'snacks', label: 'Aperitivos, frutos secos, gourmet', deposit: '5000', fee: '3' },
+  { value: 'drinks', label: 'Café, avena, bebidas en polvo', deposit: '5000', fee: '3' },
+  { value: 'tea', label: 'Té', deposit: '5000', fee: '3' },
+  { value: 'supplements', label: 'Complementos alimenticios', deposit: '5000', fee: '4' },
+  { value: 'tonics', label: 'Tónicos tradicionales (nido de golondrina y similares)', deposit: '5000', fee: '4' },
+  { value: 'alcohol', label: 'Bebidas alcohólicas', deposit: '5000', fee: '3' },
+  { value: 'skincare', label: 'Cuidado de la piel', deposit: '5000', fee: '5' },
+  { value: 'makeup', label: 'Maquillaje y perfumería', deposit: '5000', fee: '5' },
+  { value: 'beauty-device', label: 'Aparatos de belleza e higiene personal', deposit: '5000', fee: '4.5' },
+  { value: 'personal-care', label: 'Higiene y cuidado personal', deposit: '5000', fee: '3.5' },
+  { value: 'home', label: 'Hogar, ropa de cama, menaje', deposit: '5000', fee: '6' },
+  { value: 'appliances', label: 'Pequeño electrodoméstico', deposit: '5000', fee: '3' },
+  { value: '3c', label: 'Accesorios 3C y cámaras', deposit: '5000', fee: '3' },
+  { value: 'phones', label: 'Móviles, portátiles, tabletas', deposit: '5000', fee: '3' },
+  { value: 'apparel', label: 'Moda y ropa interior', deposit: '5000', fee: '6' },
+  { value: 'footwear', label: 'Calzado', deposit: '5000', fee: '6' },
+  { value: 'bags', label: 'Bolsos, cinturones, complementos', deposit: '5000', fee: '6' },
+  { value: 'jewellery', label: 'Bisutería', deposit: '5000', fee: '6' },
+  { value: 'sports', label: 'Deporte y aire libre', deposit: '5000', fee: '6' },
+  { value: 'infant-formula', label: 'Leche infantil', deposit: '5000', fee: '3' },
+  { value: 'baby', label: 'Puericultura y juguetes', deposit: '5000', fee: '4.5' },
+  { value: 'pet', label: 'Alimentación y accesorios para mascotas', deposit: '5000', fee: '5' },
   { value: 'custom', label: 'Personalizado (fije usted la fianza y la comisión)', deposit: '', fee: '' },
 ];
 
@@ -87,7 +91,7 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
   {
     title: 'Categoría',
     icon: gicon.platform,
-    note: 'Elija su categoría de producto. En 抖音全球购, la fianza y la comisión por servicio técnico dependen de la categoría, así que esta selección rellena los dos campos de abajo. Si su DP le pasa otras cifras, sobrescríbalas a mano.',
+    note: 'Elija su categoría de producto. En 抖音全球购, la comisión por servicio técnico depende de la categoría, así que esta selección rellena el porcentaje de abajo. La fianza, en cambio, va según las ventas del mes anterior. Si su DP le pasa otras cifras, sobrescríbalas a mano.',
     fields: [
       {
         id: 'category',
@@ -110,8 +114,8 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
     title: 'Plataforma y DP',
     icon: gicon.platform,
     fields: [
-      { id: 'platformDeposit', label: 'Fianza de la plataforma Douyin 全球购', value: '50000', kind: 'money', hint: 'Se devuelve al cerrar la tienda. La fija la categoría que ha elegido arriba.' },
-      { id: 'techFee', label: 'Comisión por servicio técnico de la plataforma', value: '4', kind: 'percent', step: '0.1', hint: 'Se aplica sobre cada venta. La fija la categoría que ha elegido arriba.' },
+      { id: 'platformDeposit', label: 'Fianza de la plataforma Douyin 全球购', value: '5000', kind: 'money', hint: 'Se devuelve al cerrar la tienda. Va por tramos según las ventas del mes anterior: 5.000 RMB por encima de 100.000 al mes.' },
+      { id: 'techFee', label: 'Comisión por servicio técnico de la plataforma', value: '2.5', kind: 'percent', step: '0.1', hint: 'Se aplica sobre cada venta. La fija la categoría que ha elegido arriba.' },
       { id: 'agentFee', label: 'Agente en China continental (境内代理人), cuota anual', value: '60000', kind: 'money' },
       { id: 'trademark', label: 'Registro de marca en China', value: '0', kind: 'money' },
       { id: 'brandSetup', label: 'Aportación al montaje de la tienda', value: '25000', kind: 'money' },
@@ -181,7 +185,7 @@ const help: Record<string, string> = {
   dpCommission:
     'Un porcentaje que se lleva el DP sobre las ventas que genera, además del fee. El escalón de marca internacional se mueve entre el 5 % y el 8 %, y el sector pone el techo cerca del 10 %. No incluye los medios pagados, que financia usted directamente.',
   category:
-    'Su categoría de producto en la tienda cross-border (抖音全球购). Fija dos cifras: la fianza de la plataforma y la comisión por servicio técnico, que cambian con cada categoría. Elija la que más se acerque y los campos de abajo se rellenan solos. Con Personalizado los escribe usted.',
+    'Su categoría de producto en la tienda cross-border (抖音全球购). Fija la comisión por servicio técnico, que va del 2 % al 6 % según lo que venda. Elija la que más se acerque y el porcentaje se rellena solo. Con Personalizado lo escribe usted.',
   kolCommission:
     'Lo que se queda un presentador de directos o un creador de vídeo corto por cada venta que consigue. Es comisión pura: solo cobra si vende. En alimentación y producto agrícola suele rondar el 8 % o el 20 %; en belleza y lujo sube.',
   roas:
@@ -190,9 +194,9 @@ const help: Record<string, string> = {
   cbecTax:
     'El impuesto de importación que grava el comercio electrónico cross-border en el modelo de almacén en zona franca. Es un IVA del 13 % aplicado sobre el 70 % del precio de venta, lo que deja un 9,1 % de la venta en la mayoría de la alimentación y del hogar, porque no pagan impuesto sobre consumos específicos. La cosmética, la perfumería y el alcohol sí lo pagan y se van cerca del 23 %.',
   platformDeposit:
-    'Una fianza que Douyin retiene mientras su tienda está abierta y le devuelve cuando la cierra sin incidencias. La base cross-border son 50.000 RMB, y algunas categorías llegan a 100.000 o a 200.000. El selector de categoría se la fija.',
+    'Una fianza que Douyin retiene mientras su tienda está abierta y le devuelve cuando la cierra sin incidencias. Desde junio de 2025 la cuantía depende de las ventas del mes anterior, sea cual sea la categoría: 500 RMB hasta 50.000 RMB de GMV mensual, 2.000 hasta 100.000 y 5.000 por encima. El modelo toma 5.000 RMB, el tramo de una marca de este tamaño. Si Douyin tiene que adelantar reembolsos que su saldo no cubre, puede exigirle una segunda fianza de entre 2 y 10 veces esa cantidad.',
   techFee:
-    'La comisión por servicio técnico que Douyin cobra en cada venta, como porcentaje del GMV. Va del 2 % al 6 % según la categoría. El selector de categoría se la fija.',
+    'La comisión por servicio técnico que Douyin cobra en cada venta, como porcentaje del GMV. En la tienda cross-border va del 2 % al 6 % según la categoría, conforme a la tabla vigente desde el 15 de julio de 2026. El selector de categoría se la fija.',
   agentFee:
     'La cuota anual del agente aduanero en China continental (境内代理人), la entidad local con licencia que despacha en su nombre los paquetes cross-border. Es un coste fijo del año: no depende de cuánto venda.',
   trademark:
@@ -226,7 +230,7 @@ const notes = [
   'El fee del DP y su comisión sobre el GMV forman una de las partidas más pesadas, junto con los medios pagados. La inversión en 千川 la mete usted directamente en la cuenta publicitaria: no la factura el DP. La separación es deliberada, porque los DP que intentan adelantar la inversión publicitaria acaban tropezando.',
   'El DP se ocupa de Douyin y de nada más. El coste de su equipo va dentro del fee y de la comisión, así que no hay una línea de personal aparte. La comisión de KOL se factura al margen, sobre las ventas que los creadores traen de verdad.',
   'Aquí el ROAS es una sola cifra: lo que espera que promedie la cuenta a lo largo del primer año. Una cuenta nueva de Douyin rinde poco los primeros meses y remonta cuando el algoritmo aprende a quién enseñarle su producto, así que ponga una media, no el mejor de los casos.',
-  'La fianza de la plataforma y la comisión por servicio técnico dependen de su categoría de producto. Elíjala en el panel de ajuste fino y las dos se rellenan con las bandas cross-border publicadas.',
+  'La comisión por servicio técnico depende de su categoría de producto. Elíjala en el panel de ajuste fino y el porcentaje se rellena con la tabla cross-border de julio de 2026. La fianza de la plataforma funciona de otra manera: sigue las ventas mensuales y no pasa de 5.000 RMB.',
   'Con 2 millones de RMB de GMV, el año 1 casi siempre cierra en pérdidas. La tabla enfrenta el año 1 con el año 2, cuando la puesta en marcha ya no pesa. El GMV de equilibrio le dice a qué escala tiene que operar para que el margen bruto cubra la factura, y suele quedar varias veces por encima del objetivo del primer año.',
 ];
 
@@ -236,7 +240,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 const calcSchema = webApplicationSchema({
   url: Astro.url.pathname,
   name: "Calculadora de costes de Douyin cross-border",
-  description: "Calcule lo que cuesta abrir y operar un canal Douyin cross-border en China con un Douyin Partner: almacén en zona franca, comisiones de KOL, medios pagados, impuestos y tasas de plataforma, en RMB y en USD.",
+  description: "Calcule el coste de operar Douyin cross-border con un Douyin Partner: almacén en zona franca, comisiones de KOL, medios, impuestos y tasas de plataforma.",
   inLanguage: 'es',
   breadcrumb: [
     { name: "Inicio", url: "/es" },
@@ -247,13 +251,14 @@ const calcSchema = webApplicationSchema({
 ---
 
 <Layout
+  preloadImage="/Images/tools/douyin-hero-bg.webp"
   schema={calcSchema}
   title="Calculadora de costes de Douyin cross-border | TheChinaPath"
-  description="Calcule lo que cuesta abrir y operar un canal Douyin cross-border en China con un Douyin Partner: almacén en zona franca, comisiones de KOL, medios pagados, impuestos y tasas de plataforma, en RMB y en USD."
+  description="Calcule el coste de operar Douyin cross-border con un Douyin Partner: almacén en zona franca, comisiones de KOL, medios, impuestos y tasas de plataforma."
 >
   <section
     class="tool-hero tool-hero--image"
-    style="--tool-hero-img: url('/Images/tools/douyin-hero-bg.png')"
+    style="--tool-hero-img: url('/Images/tools/douyin-hero-bg.webp')"
   >
     <div class="container tool-hero__inner">
       <nav class="tool-hero__crumbs" aria-label="Ruta de navegación">

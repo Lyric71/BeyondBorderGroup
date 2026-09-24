@@ -1,6 +1,7 @@
 ---
 title: "Multa a Pinduoduo: qué cambia para las marcas extranjeras en China"
-description: "Una multa fiscal menor a Pinduoduo anticipa un giro para las marcas extranjeras en China. Qué implican las nuevas obligaciones de información de las plataformas."
+seoTitle: "Multa a Pinduoduo: qué cambia para las marcas extranjeras"
+description: "Una multa fiscal menor a Pinduoduo anticipa un giro para las marcas extranjeras. Qué implican las nuevas obligaciones de información de las plataformas."
 pubDate: "2026-06-25"
 author: "Cyril Drouin"
 category: "Compliance & Setup"

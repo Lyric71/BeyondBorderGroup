@@ -1,6 +1,7 @@
 ---
 brand: "Jaguar Land Rover"
 title: "Servicios integrados anuales de marketing en redes sociales"
+seoTitle: "Jaguar Land Rover: un año de marketing integrado en redes"
 summary: "Programa social integrado todo el año para Jaguar Land Rover en China, con foco en captar al público joven a través de contenidos icónicos y UGC."
 metric: "Programa social anual con subida medible del engagement y una comunidad china joven en torno a la marca."
 category: "Social & Content"

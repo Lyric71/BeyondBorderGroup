@@ -1,5 +1,6 @@
 ---
 title: "Taobao Flash Sale et le commerce des 30 minutes : la Chine pousse l'online-to-offline"
+seoTitle: "Taobao Flash Sale et le commerce en 30 minutes"
 description: "Alibaba transforme Ele.me en Taobao Flash Sale. Livraison, retail instantané et services en magasin se fondent dans un Taobao calibré pour le 30 à 60 minutes."
 pubDate: "2025-12-22"
 updatedDate: "2026-05-15"

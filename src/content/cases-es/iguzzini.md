@@ -1,6 +1,7 @@
 ---
 brand: "Iguzzini"
 title: "Iluminación de lujo desde el diseño italiano hasta China"
+seoTitle: "Iguzzini: iluminación de lujo, del diseño italiano a China"
 summary: "Lanzamiento y operación de la tienda Cross-Border de Iguzzini en Tmall para conquistar al diseñador y al consumidor de lujo chino, sin diluir su herencia B2B."
 metric: "Flagship Cross-Border en Tmall operativa para la marca de iluminación, diseñada para arquitectos y consumidores de lujo chinos."
 category: "eCommerce"

@@ -1,6 +1,6 @@
 ---
 title: "11.11 2025: Vom GMV-Theater zur KI-First-Effizienz"
-description: "Der Double Eleven 2025 hat sich vom GMV-Spektakel zur operativen Effizienz verschoben. Plattformen setzen auf KI-getriebene Systeme, transparente Preise und verlässlichen Service statt auf Gimmicks."
+description: "Der Double Eleven 2025 setzt auf Effizienz statt GMV-Spektakel. Die Plattformen bauen auf KI-Systeme, transparente Preise und verlässlichen Service."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -11,7 +11,7 @@ heroImage: "/Images/insights/double-11-2025-ai-ecommerce-efficiency-china.jpg"
 heroImageAlt: "KI-getriebene eCommerce-Effizienz zum Double-11-Shopping-Festival"
 keyTakeaways:
   - "Der Double 11 2025 liest sich als Operations-Test, nicht als GMV-Test. Plattformen haben die einzelne Schlagzeilen-Zahl leise verabschiedet."
-  - "KI orchestriert heute Promotions, Ranking, Forecast und Last-Mile-Routing. Am Tag gewinnt der klügste Operator, nicht der grösste Rabatt."
+  - "KI orchestriert heute Promotions, Ranking, Forecast und Last-Mile-Routing. Am Tag gewinnt der klügste Operator, nicht der größte Rabatt."
   - "Kreativ-Durchsatz ist der neue Engpass. Marken, die 50+ Varianten pro Kampagne im Tempo ausspielen, schlagen jene, die vier Wochen für Hero-Assets verbrennen."
   - "Service-Qualität, Lieferzeit und Retourenraten sind die öffentlichen KPI. Bauen Sie für den 12. November, nicht nur für den 11.11."
 ---
@@ -22,9 +22,9 @@ Der Double Eleven war einmal ein Rausch. 2025 ist er ein Systemtest: Kann Ihre M
 
 ### Was sich dieses Jahr wirklich verändert hat
 
-Die Schlagzeile lautet nicht „grösserer GMV". Sie lautet „bessere Systeme". Plattformen und Marken haben sich in Richtung Effizienz, Transparenz und Wiederholbarkeit verschoben. Käufer haben den transparenten Ansatz belohnt: weniger Tricks, klarere Preise, besserer Service.
+Die Schlagzeile lautet nicht „größerer GMV". Sie lautet „bessere Systeme". Plattformen und Marken haben sich in Richtung Effizienz, Transparenz und Wiederholbarkeit verschoben. Käufer haben den transparenten Ansatz belohnt: weniger Tricks, klarere Preise, besserer Service.
 
-Unter der Oberfläche läuft ein KI-getriebenes Betriebsmodell. Promotion, Ranking, Forecast und Routing werden zunehmend von lernenden Systemen orchestriert. Die grossen Plattformen haben weitgehend aufgehört, einzelne GMV-Schlagzeilen zu veröffentlichen, und betonen Teilnahme, Servicequalität und Liefer-Kennzahlen. Wenn alle rabattieren, gewinnt der Operator, der am klügsten arbeitet: schnellere Lieferung, weniger Out-of-Stocks und Stückkosten, die am 12. November noch Sinn ergeben.
+Unter der Oberfläche läuft ein KI-getriebenes Betriebsmodell. Promotion, Ranking, Forecast und Routing werden zunehmend von lernenden Systemen orchestriert. Die großen Plattformen haben weitgehend aufgehört, einzelne GMV-Schlagzeilen zu veröffentlichen, und betonen Teilnahme, Servicequalität und Liefer-Kennzahlen. Wenn alle rabattieren, gewinnt der Operator, der am klügsten arbeitet: schnellere Lieferung, weniger Out-of-Stocks und Stückkosten, die am 12. November noch Sinn ergeben.
 
 ### Bauen Sie das Creative OS, das aus Operations Konversion macht
 
@@ -52,7 +52,7 @@ Varianten-Sets (Winkel, Hintergründe, Saisons) auf Kohorten und Platzierungen a
 Engeres Routing und höhere Service-Level zählen. [JD](/de/in-china-wachsen/cross-border-ecommerce) etwa nennt rund 95 Prozent der First-Party-Retail-Bestellungen, die innerhalb von 24 Stunden zugestellt werden. Das setzt eine Erwartung, die alle anderen Richtung Tempo schiebt. Robotik und autonome Zustellung sind weiterhin Frühphase und ergänzend, nützlich in Pilotprojekten und dichten Knoten.
 
 * **Kreation, die die Cost-to-Serve senkt**
-Klare PDP-Erwartungen, lokalisierte Grössen- und Pass-Logik, Post-Purchase-Content, der „Wo ist meine Bestellung"-Anfragen abwendet und Erstattungen wie Beschwerden senkt.
+Klare PDP-Erwartungen, lokalisierte Größen- und Pass-Logik, Post-Purchase-Content, der „Wo ist meine Bestellung"-Anfragen abwendet und Erstattungen wie Beschwerden senkt.
 
 * **Operations vor Optik**
 Nordstern-Kennzahlen verschieben sich vom Eintages-GMV zu Cost-to-Serve, Wiederkaufrate, CAC/LTV, Erstattungsrate und Pünktlichkeit, gestützt von den genannten Kreativ-Metriken.

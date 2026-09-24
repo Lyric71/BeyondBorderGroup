@@ -1,7 +1,8 @@
 ---
 brand: "Camper"
 title: "Eine Design-Community auf chinesischen Social-Plattformen aufbauen"
-summary: "330 % Wachstum für Campers Präsenz auf WeChat, Weibo und RedNote, getragen von handwerklichem Storytelling, Design-Kooperationen und einem Netz aus Mikro-Influencern."
+seoTitle: "Camper: Design-Community auf Chinas Social-Plattformen"
+summary: "Campers Präsenz auf WeChat, Weibo und RedNote wächst um 330 %, getragen von Handwerks-Storytelling, Design-Kooperationen und Mikro-Influencern."
 metric: "Kombinierte Follower von 43k auf 187k. RedNote bringt 38 % des eCommerce-Traffics."
 category: "Social & Content"
 industry: "Fashion & Footwear"

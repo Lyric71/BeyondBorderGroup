@@ -2,14 +2,14 @@
 title: "Lo que cuesta un estudio de directos en China"
 description: "El presupuesto de una sala de directos china, por hora y por mes: emisión diaria, ritmo parcial y evento con un presentador ajeno."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-16"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin"]
 tags: ["Coste del directo", "Douyin", "Directo de la tienda", "Live commerce", "Presupuesto"]
 keyTakeaways:
   - "El presupuesto diario reconstruido carga 80.000 yuanes de costes fijos mensuales, antes de tráfico de pago y de partidas ligadas a las ventas."
-  - "Con 167.000 yuanes de ventas supuestas, esa sala cuesta 116.740 yuanes al mes, sin contar el resto de la operación de la tienda."
+  - "Con 167.000 yuanes de ventas supuestas, esa sala cuesta 114.235 yuanes al mes, sin contar el resto de la operación de la tienda."
   - "Con la parrilla fija, más ventas rebajan el coste por pedido y elevan el coste total por hora de emisión."
   - "Las fórmulas de las calculadoras de TheChinaPath dan 45 frente a 75 yuanes por pedido en medios y comisión de creador, con las mezclas indicadas."
 heroImage: "/Images/insights/china-livestream-cost-for-brands.webp"
@@ -28,7 +28,8 @@ mensual y, entre paréntesis, su coste por hora de emisión. La columna del even
 cubre un único evento en el mes.
 
 Todos los importes son supuestos de planificación o cálculos derivados de ellos.
-Revisado el 15 de septiembre de 2026. Las fuentes sobre alquileres y retribución
+Revisado el 15 de septiembre de 2026, con la comisión de plataforma actualizada
+el 24 de septiembre. Las fuentes sobre alquileres y retribución
 de presentadores que aparecen más abajo llevan fecha: no establecen los precios
 de hoy. El ritmo diario cuenta 26 días de emisión y deja margen para descansar.
 El ritmo de tres días por semana se modela con 13 sesiones al mes. Cada sesión
@@ -43,10 +44,10 @@ dura cuatro horas, salvo el evento, que dura tres.
 | Presentador y copresentador | 26.000 (250) | 28.600 (550) | 100.000 (33.333) |
 | Parte de operador y moderador | 24.000 (231) | 12.000 (231) | incluido en el caché |
 | Tráfico de pago | 26.720 (257) | 13.280 (255) | 18.000 (6.000) |
-| Provisión por comisión de plataforma | 6.680 (64) | 3.320 (64) | 12.000 (4.000) |
+| Provisión por comisión de plataforma | 4.175 (40) | 2.075 (40) | 7.500 (2.500) |
 | Comisión de creador o MCN | 0 (0) | 0 (0) | 75.000 (25.000) |
 | Muestras y regalos | 3.340 (32) | 1.660 (32) | 6.000 (2.000) |
-| Total | 116.740 (1.123) | 74.460 (1.432) | 211.000 (70.333) |
+| Total | 114.235 (1.098) | 73.215 (1.408) | 206.500 (68.833) |
 
 </div>
 
@@ -54,8 +55,8 @@ Las horas contadas son horas de emisión. Prevea aparte el tiempo de preparació
 pagado. Los importes por hora se redondean por separado, así que su suma puede
 diferir del total redondeado. Al tipo de planificación de la calculadora, 7,10
 yuanes por dólar y en torno a 7,90 yuanes por euro, los totales mensuales rondan
-los 14.800 euros para la sala diaria y los 9.400 para la sala a tiempo parcial.
-El evento ronda los 26.700 euros. No se da por supuesto ningún tipo de cambio en
+los 14.500 euros para la sala diaria y los 9.300 para la sala a tiempo parcial.
+El evento ronda los 26.100 euros. No se da por supuesto ningún tipo de cambio en
 tiempo real.
 
 ## Por qué un presupuesto cerrado tapa el coste por hora
@@ -142,11 +143,20 @@ planificación. Compruebe la cobertura de turnos antes de dar por hecho que una
 parrilla más corta parte la factura por la mitad. Pregunte además si el caché
 del presentador cubre al equipo del evento.
 
-La provisión de plataforma aplica el 4 % de la categoría de alimentación
+La provisión de plataforma aplica el 2,5 % de la categoría de alimentación
 envasada que recogen los datos de las calculadoras de TheChinaPath, septiembre
-de 2026. Es un supuesto del modelo, no una tarifa transfronteriza verificada a
-día de hoy. Confirme la categoría aplicable y la base de liquidación antes de
-comprometer fondos.
+de 2026. Es el punto medio del baremo transfronterizo de Douyin para la
+categoría, que cobra un 2 % a los cereales y el aceite y un 3 % a casi toda la
+demás alimentación envasada. Es un supuesto del modelo, no una tarifa
+transfronteriza verificada para su producto. Confirme la categoría aplicable y
+la base de liquidación antes de comprometer fondos.
+
+> Fuente: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》
+> (baremo de tarifas técnicas de servicio de Douyin Global), 15 de julio de 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+
+Los pedidos que llegan desde la aplicación Douyin Mall o a través de Doubao
+pueden llevar un recargo sobre la tarifa base. La provisión lo deja fuera.
 
 El evento fija un 25 % de comisión de creador. Las columnas llevadas por la
 tienda no fijan comisión externa de creador. Ninguno de los dos supuestos
@@ -169,7 +179,7 @@ ventas orgánicas y las ventas llevadas por creadores también tienen que
 producirse para que el objetivo total aguante. Un ROAS atractivo sobre un
 segmento de pago pequeño no demuestra que la sala entera vaya a vender bastante.
 
-Para la sala diaria, el coste total sale a 80.000 yuanes más un 22 % de las
+Para la sala diaria, el coste total sale a 80.000 yuanes más un 20,5 % de las
 ventas. El tráfico por sí solo alcanza ese importe con 500.000 yuanes de ventas
 mensuales, bajo el supuesto del 16 %. Es un punto de cruce de costes, no un
 umbral de rentabilidad.
@@ -192,9 +202,9 @@ salen por aritmética de los supuestos, no son previsiones.
 
 | Presupuesto de directo, yuanes | Sala diaria | Tres días/semana | Evento con presentador ajeno |
 |---|---|---|---|
-| Coste mensual | 116.740 | 74.460 | 211.000 |
-| Coste por pedido cursado | 174,76 | 224,28 | 175,83 |
-| Peso del coste sobre las ventas supuestas | 69,9 % | 89,7 % | 70,3 % |
+| Coste mensual | 114.235 | 73.215 | 206.500 |
+| Coste por pedido cursado | 171,01 | 220,53 | 172,08 |
+| Peso del coste sobre las ventas supuestas | 68,4 % | 88,2 % | 68,8 % |
 
 </div>
 
@@ -205,13 +215,13 @@ sociales. La financiación del stock tampoco entra aquí.
 
 Las devoluciones cambian el denominador. Si un 20 % de los pedidos de la sala
 diaria no llega a pedido conservado y su presupuesto no se mueve, el coste por
-pedido conservado sube a unos 218,45 yuanes. Es una prueba de esfuerzo: las
+pedido conservado sube a unos 213,76 yuanes. Es una prueba de esfuerzo: las
 devoluciones reales también alteran comisiones y gastos de plataforma. Cuadre
 esas cifras con los datos de liquidación.
 
-Con 500.000 yuanes de ventas, la fórmula de la sala diaria da 190.000 yuanes de
-coste, es decir 95 yuanes por pedido. Con 1 millón da 300.000 yuanes, es decir
-75 yuanes por pedido. El coste total por hora de emisión sube porque sube la
+Con 500.000 yuanes de ventas, la fórmula de la sala diaria da 182.500 yuanes de
+coste, es decir 91,25 yuanes por pedido. Con 1 millón da 285.000 yuanes, es
+decir 71,25 yuanes por pedido. El coste total por hora de emisión sube porque sube la
 factura de tráfico mientras la parrilla no se mueve.
 
 Los dos formatos pueden repartir un importe fijo entre más pedidos. El caché de
@@ -281,8 +291,8 @@ arregla un producto que no se puede listar por la vía prevista.
 
 ### ¿Sale más barata una sala a tiempo parcial?
 
-Exige menos caja cada mes. Nuestro presupuesto a tiempo parcial queda en 74.460
-yuanes, frente a 116.740 del ritmo diario. Su coste por hora es más alto porque
+Exige menos caja cada mes. Nuestro presupuesto a tiempo parcial queda en 73.215
+yuanes, frente a 114.235 del ritmo diario. Su coste por hora es más alto porque
 el presentador y el local se alquilan por horas. Compare el compromiso total y
 los pedidos conservados que espera antes de decidir qué ritmo compra.
 

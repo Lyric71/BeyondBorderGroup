@@ -1,6 +1,6 @@
 ---
 title: "Ciencia y emoción: la nueva gramática de las marcas en China"
-description: "Una marca de dermocosmética creció un 47 % durante el Double 11 mientras su rival se desplomaba un 57 % en las mismas plataformas. La diferencia no estuvo en el producto, sino en la arquitectura de distribución y la estrategia de marca."
+description: "Una marca de dermocosmética creció un 47 % en el Double 11 y su rival se hundió un 57 %. Lo decidieron la distribución y la estrategia de marca."
 pubDate: "2026-03-12"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

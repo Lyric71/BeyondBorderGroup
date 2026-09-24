@@ -1,16 +1,17 @@
 ---
 title: "Ce que coûte la vente de produits laitiers et de tartinables en Chine"
-description: "Ouvrir coûte 80 000 RMB sur Tmall Global, 42 600 sur JD Worldwide, 50 000 sur Douyin. Tmall prélève 2 %. C'est le colis qui coûte cher."
+seoTitle: "Produits laitiers et tartinables en Chine : le vrai coût"
+description: "Ouvrir coûte 80 000 RMB sur Tmall Global, 42 600 sur JD Worldwide, 5 000 sur Douyin. Tmall prélève 2 %. C'est le colis qui coûte cher."
 pubDate: "2026-09-23"
-updatedDate: "2026-09-23"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Food & Beverage"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Produits laitiers", "Tartinables", "Tmall Global", "JD Worldwide", "Douyin", "E-commerce transfrontalier", "Frais de plateforme", "Import alimentaire"]
 keyTakeaways:
-  - "Une boutique de produits laitiers et de tartinables coûte 80 000 RMB à ouvrir sur Tmall Global, 42 600 RMB sur JD Worldwide et 50 000 RMB sur Douyin cross-border, hors stock, médias et rémunération d'un partenaire (données des calculateurs TheChinaPath, septembre 2026)."
-  - "Tmall Global ne prélève que 2 % sur l'alimentaire, sa commission la plus basse, et Douyin exige un dépôt deux fois moindre qu'à la mode ou à la beauté."
+  - "Une boutique de produits laitiers et de tartinables coûte 80 000 RMB à ouvrir sur Tmall Global, 42 600 RMB sur JD Worldwide et 5 000 RMB sur Douyin cross-border, hors stock, médias et rémunération d'un partenaire (données des calculateurs TheChinaPath, septembre 2026)."
+  - "Tmall Global ne prélève que 2 % sur l'alimentaire, sa commission la plus basse. Chez Douyin, le dépôt ne dépend plus de la catégorie : depuis juin 2025, il suit les ventes du mois précédent et plafonne à 5 000 RMB."
   - "Préparation, emballage et dernier kilomètre pèsent environ 15 RMB par colis. Sur un pot vendu 128 RMB, c'est déjà 12 % de la commande, avant la moindre commission."
   - "Le transfrontalier sous douane dispense du permis de première importation, de l'enregistrement et du dépôt. Pas le régime général : une laiterie ou un conditionneur de miel doit y être recommandé à la douane chinoise par son propre gouvernement."
   - "Dès le 16 mars 2027, la norme GB 7718-2025 impose de déclarer le lait et les fruits à coque parmi les allergènes et proscrit les allégations « zéro ajout » sur l'emballage."
@@ -20,7 +21,7 @@ heroImageAlt: "Dans le bureau d'un entrepôt frigorifique sous douane de Chengdu
 
 Commencez par Tmall Global. Une boutique de produits laitiers et de
 tartinables y coûte 80 000 RMB à ouvrir, contre 42 600 RMB sur JD Worldwide
-et 50 000 RMB sur Douyin cross-border. Tmall prélève 2 % par vente, son taux
+et 5 000 RMB sur Douyin cross-border. Tmall prélève 2 % par vente, son taux
 le plus bas. Mais l'année se joue sur le colis : 15 RMB de
 préparation, d'emballage et de livraison s'ajoutent à chaque commande, quel
 qu'en soit le contenu.
@@ -40,10 +41,10 @@ heurte de plein fouet.
 
 | Produits laitiers et tartinables, première année (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
-| Dépôt de garantie, restituable | 50 000 | 35 500 (environ 4 500 euros) | 50 000 |
+| Dépôt de garantie, restituable | 50 000 | 35 500 (environ 4 500 euros) | 5 000 |
 | Frais annuels de plateforme | 30 000 | 7 100 (environ 900 euros) | aucun |
-| Commission sur chaque vente | 2 % | 4 % | 4 % |
-| Trésorerie avant la première vente | 80 000 | 42 600 | 50 000 |
+| Commission sur chaque vente | 2 % | 4 % | 2,5 % |
+| Trésorerie avant la première vente | 80 000 | 42 600 | 5 000 |
 
 </div>
 
@@ -53,12 +54,30 @@ heurte de plein fouet.
 > Source : données des calculateurs TheChinaPath, septembre 2026.
 
 Aucune catégorie ne paie moins que ces 2 % sur Tmall Global. Le soin du
-visage acquitte 4 %, la mode et la chaussure 5 %. Douyin réclame 50 000 RMB
-de dépôt à une boutique alimentaire, le double à une boutique de mode ou de
-beauté. Barèmes vérifiés en septembre 2026 ; une marque déposée en TM ou
-une boutique multimarque alourdit la facture chez Tmall.
+visage acquitte 4 %, la mode et la chaussure 5 %. Barèmes vérifiés en
+septembre 2026 ; une marque déposée en TM ou une boutique multimarque
+alourdit la facture chez Tmall.
 
-JD reste, et de loin, l'entrée la moins onéreuse. La plateforme libelle dépôt
+Douyin a renoncé en juin 2025 à fixer son dépôt par catégorie. Le montant
+suit désormais les ventes du mois écoulé : 500 RMB jusqu'à 50 000 RMB,
+2 000 RMB jusqu'à 100 000, 5 000 RMB au-delà, que la boutique vende du
+beurre ou des sacs à main. Le tableau retient le palier le plus haut, celui
+que paie toute boutique dotée d'un vrai volume. Les 2,5 % correspondent au
+point médian que notre calculateur applique à l'alimentaire emballé :
+Douyin prélève 2 % sur les céréales et l'huile, 3 % sur l'essentiel du reste.
+
+> Le dépôt de base de Douyin Global dépend du GMV payé par la boutique au
+> cours du mois civil précédent : 500 RMB de 0 à 50 000 RMB, 2 000 RMB
+> au-delà de 50 000 et jusqu'à 100 000 RMB, 5 000 RMB au-delà de 100 000 RMB.
+> Source : Douyin E-commerce (抖音电商), 《【全球购】保证金管理规范》,
+> dernière révision en vigueur le 5 juin 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/107821
+
+> Source des taux alimentaires : Douyin E-commerce (抖音电商),
+> 《【全球购】技术服务费费率标准》, 15 juillet 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+
+Face à Tmall, JD se montre nettement moins gourmand. La plateforme libelle dépôt
 et frais annuels en dollars, selon un barème qui s'élève avec le cumul des
 ventes : les 42 600 RMB marquent le premier échelon, non un rythme de
 croisière. À ses 4 %, JD ajoute une commission fixe de 0,9 % sur les
@@ -240,7 +259,7 @@ Deux situations renversent l'ordre. Si la trésorerie de la première année ne
 dépasse pas 300 000 RMB environ, tout compris, mieux vaut ouvrir sur JD
 Worldwide et migrer quand le volume justifie les 80 000. Et si vous
 disposez déjà de vidéos en chinois et d'un animateur, Douyin ouvre
-l'alimentaire pour 50 000 RMB, sans frais annuels. Pour vérifier à moindre
+l'alimentaire pour 5 000 RMB, sans frais annuels. Pour vérifier à moindre
 coût que le produit trouve preneur, difficile de faire mieux.
 
 Tout ce raisonnement vaut pour un stock ambiant ou qui tolère le froid.

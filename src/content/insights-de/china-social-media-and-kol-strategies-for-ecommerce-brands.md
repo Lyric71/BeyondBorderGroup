@@ -1,6 +1,7 @@
 ---
 title: "Social-Media- und KOL-Strategien für eCommerce-Marken in China"
-description: "Partnerschaften mit Key Opinion Leaders (KOLs) sind ein wirksamer Weg, chinesische Käufer zu erreichen. Der Leitfaden zeigt, wie Marken die richtigen KOL finden und mit ihnen zusammenarbeiten, um Reichweite, Glaubwürdigkeit und Wachstum zu heben."
+seoTitle: "Social Media und KOL: Strategien für eCommerce in China"
+description: "Partnerschaften mit Key Opinion Leaders öffnen den Zugang zu chinesischen Käufern. Wie Marken die passenden KOL finden und Reichweite und Umsatz steigern."
 pubDate: "2024-11-28"
 author: "TheChinaPath"
 category: "KOLs & Livestream"
@@ -14,7 +15,7 @@ heroImageAlt: "Visualisierung des KOL-Marketings"
 
 ### Was ist ein KOL in China?
 
-Ein Key Opinion Leader ([KOL](/de/chinesische-social-media)) ist ein Influencer mit grosser Gefolgschaft und beträchtlichem Einfluss auf Meinungen und Kaufentscheidungen seiner Audience. Anders als westliche Influencer gelten KOL in China als vertrauenswürdige Fachleute. Sie geben Empfehlungen über viele Kategorien, von Beauty und Mode bis Tech und Lifestyle.
+Ein Key Opinion Leader ([KOL](/de/chinesische-social-media)) ist ein Influencer mit großer Gefolgschaft und beträchtlichem Einfluss auf Meinungen und Kaufentscheidungen seiner Audience. Anders als westliche Influencer gelten KOL in China als vertrauenswürdige Fachleute. Sie geben Empfehlungen über viele Kategorien, von Beauty und Mode bis Tech und Lifestyle.
 
 ### Warum KOL für Marken in China unverzichtbar sind
 
@@ -78,7 +79,7 @@ Den Typ richtig zu wählen, hilft bei Budget, Zielen und Markenbild.
 
 ### Mega-Stars
 
-Schauspieler, Musiker, öffentliche Figuren mit grossen Communities, ideal für Luxusmarken oder grosse [Kampagnen](/de/in-china-wachsen/kampagnen). Teuer, aber mit enormer Reichweite.
+Schauspieler, Musiker, öffentliche Figuren mit großen Communities, ideal für Luxusmarken oder große [Kampagnen](/de/in-china-wachsen/kampagnen). Teuer, aber mit enormer Reichweite.
 
 ### KOL (Macro-Influencer)
 

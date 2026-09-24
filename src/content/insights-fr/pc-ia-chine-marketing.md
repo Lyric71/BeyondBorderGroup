@@ -1,6 +1,6 @@
 ---
 title: "PC dopés à l'IA en Chine : le marketing change de braquet"
-description: "L'intelligence artificielle s'installe au cœur des ordinateurs personnels et rebat la grammaire commerciale en Chine. Pédagogie, prix, écosystème : les nouveaux fronts sont posés."
+description: "L'IA s'installe au cœur des PC et réécrit la grammaire commerciale en Chine. Pédagogie, prix, écosystème : les nouveaux fronts du marketing."
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "AI & Innovation"

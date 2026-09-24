@@ -1,6 +1,6 @@
 ---
 title: "Localizar una marca para China sin perder su ADN"
-description: "Las marcas extranjeras en China deben combinar una localización profunda con una identidad firme. La calidad ya no basta: el éxito exige relevancia cultural y soltura en cada plataforma, sin diluir lo que las hace distintas."
+description: "En China, la calidad ya no basta. Las marcas extranjeras necesitan localizar a fondo y moverse con soltura en cada plataforma sin diluir su identidad."
 pubDate: "2025-11-19"
 updatedDate: "2026-05-15"
 author: "Liyan Ye"

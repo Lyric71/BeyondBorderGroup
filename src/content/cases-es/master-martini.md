@@ -1,7 +1,8 @@
 ---
 brand: "Master Martini"
 title: "El aliado de pasteleros, chocolateros y panaderos. Social para el Sudeste Asiático."
-summary: "Gestión de los perfiles sociales de Master Martini en el Sudeste Asiático, para convertir a panaderos y cocineros profesionales en una comunidad activa y experta en el producto."
+seoTitle: "Master Martini: redes para pasteleros en el Sudeste Asiático"
+summary: "Gestionamos las redes de Master Martini en el Sudeste Asiático para convertir a panaderos y cocineros profesionales en una comunidad activa y experta."
 metric: "Comunidad de panaderos profesionales construida en las redes sociales del Sudeste Asiático."
 category: "Social & Content"
 industry: "Food & Beverage"

@@ -1,6 +1,7 @@
 ---
 title: "Effective Green Marketing Campaigns by Leading Brands in China"
-description: "Sustainability has become a core marketing focus for Chinese brands, with campaigns highlighting environmental commitment and resonating with eco-conscious consumers making sustainable purchasing decisions."
+seoTitle: "Green Marketing in China: Brand Campaigns That Worked"
+description: "How Starbucks, Proya, Purcotton and other brands ran green marketing campaigns in China that connected with eco-conscious shoppers around Earth Day."
 pubDate: "2024-06-17"
 author: "TheChinaPath"
 category: "Brand & Localization"

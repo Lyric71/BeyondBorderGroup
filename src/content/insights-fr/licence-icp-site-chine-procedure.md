@@ -1,6 +1,7 @@
 ---
 title: "Licence ICP : la procédure pour exploiter légalement un site en Chine"
-description: "Sans licence ICP, un site est blocable, sanctionnable ou fermable du jour au lendemain. Périmètre, types de licence, étapes du dépôt, bénéfices business : guide complet pour les marques étrangères."
+seoTitle: "Licence ICP : exploiter légalement un site en Chine"
+description: "Sans licence ICP, un site peut être bloqué, sanctionné ou fermé du jour au lendemain. Types de licence, dépôt, bénéfices : le guide des marques étrangères."
 pubDate: "2025-02-05"
 author: "TheChinaPath"
 category: "Compliance & Setup"

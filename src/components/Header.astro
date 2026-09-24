@@ -301,7 +301,7 @@ const features: Record<string, Feature> = {
     line: t('nav.feature.compass.line'),
     href: lp('/compass'),
     cta: t('nav.feature.compass.cta'),
-    src: '/Images/compass/compass-hero.png',
+    src: '/Images/compass/compass-hero.webp',
     alt: t('nav.feature.compass.alt'),
   },
   learn: latestColumn
@@ -439,18 +439,31 @@ const flags: Record<Locale, string> = {
 // homepage and off every service page.
 const offered = localesForPath(Astro.url.pathname);
 const otherLocales = (offered as readonly Locale[]).filter((l) => l !== locale);
+// A page with no twin in the target language falls back to the nearest
+// section that has one: an English-only article or guide lands on that
+// locale's articles index, not its homepage.
+const switchTarget = (l: Locale) => {
+  const mapped = localizePath(Astro.url.pathname, l);
+  const home = l === 'en' ? '/' : `/${l}`;
+  const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+  if (mapped !== home || path === '/' || path === `/${locale}`) return mapped;
+  if (/^\/(insights|guides|decryptages|analysen|analisis)(\/|$)/.test(path.replace(/^\/(fr|de|es)(?=\/)/, ''))) {
+    return localizePath('/insights', l);
+  }
+  return mapped;
+};
 const switcherCurrent = {
   code: locale,
   label: localeLabels[locale],
   name: localeNamesNative[locale],
-  href: localizePath(Astro.url.pathname, locale),
+  href: Astro.url.pathname.replace(/\/$/, '') || '/',
   flag: flags[locale],
 };
 const switcherOthers = otherLocales.map((l) => ({
   code: l,
   label: localeLabels[l],
   name: localeNamesNative[l],
-  href: localizePath(Astro.url.pathname, l),
+  href: switchTarget(l),
   flag: flags[l],
 }));
 ---

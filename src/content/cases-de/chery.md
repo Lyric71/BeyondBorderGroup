@@ -1,6 +1,7 @@
 ---
 brand: "Chery Automotive"
 title: "With Chery With Love: Co-Creation am Freitag"
+seoTitle: "Chery Automotive: With Chery With Love, Co-Creation"
 summary: "Globale Co-Creation-Kampagne, die Chery-Fans zu Mitgestaltern von Markengeschenken und Premiums machte. Zwei Millionen Impressions pro Woche."
 metric: "2 Mio. Impressions pro Woche. 100+ Fan-Designs pro Woche."
 category: "Social & Content"

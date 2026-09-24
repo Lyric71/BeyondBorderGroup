@@ -1,6 +1,6 @@
 ---
 title: "Las mejores plataformas de vídeo corto en China"
-description: "El vídeo corto se ha convertido en una herramienta clave de marketing y eCommerce en China. Douyin, Kuaishou y Bilibili lideran el mercado y suman más de 941 millones de usuarios activos al mes."
+description: "El vídeo corto es ya clave para el marketing y el eCommerce en China. Douyin, Kuaishou y Bilibili lideran y suman más de 941 millones de usuarios al mes."
 pubDate: "2025-02-13"
 author: "TheChinaPath"
 category: "Platforms"

@@ -1,6 +1,7 @@
 ---
 title: "Wenn PIPL zubeisst: Dior als Weckruf für globale Marken in China"
-description: "Die Durchsetzung des chinesischen Datenschutzgesetzes PIPL ist von der Theorie in die Praxis übergegangen. Diors jüngstes Verfahren markiert die erste formelle Sanktion einer ausländischen Marke und signalisiert: Datenschutz-Compliance ist für globale Marken in China unverzichtbar."
+seoTitle: "PIPL: Der Fall Dior als Weckruf für globale Marken in China"
+description: "Chinas Datenschutzgesetz PIPL wird nun durchgesetzt. Das Verfahren gegen Dior ist die erste formelle Sanktion gegen eine ausländische Marke. Ein Weckruf."
 pubDate: "2025-11-26"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

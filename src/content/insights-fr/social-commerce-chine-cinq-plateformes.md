@@ -1,6 +1,7 @@
 ---
 title: "Social commerce en Chine : les cinq plateformes qui accélèrent une marque"
-description: "Réseaux sociaux et achat direct ne font plus qu'un en Chine. Le social commerce y pèse déjà 2 500 milliards de yuans et rassemble 800 millions d'acheteurs. Tour d'horizon des cinq plateformes qui font le marché."
+seoTitle: "Social commerce en Chine : les cinq plateformes clés"
+description: "Réseaux sociaux et achat ne font plus qu'un : le social commerce chinois pèse 2 500 milliards de yuans et 800 millions d'acheteurs. Cinq plateformes clés."
 pubDate: "2024-10-23"
 author: "TheChinaPath"
 category: "Platforms"

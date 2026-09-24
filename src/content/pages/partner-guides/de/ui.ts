@@ -80,7 +80,7 @@ export const ui: GuideUi = {
   hub: {
     title: 'Partner in China finden: alle Analysen | TheChinaPath',
     description:
-      'Wie Sie in China einen Distributor, Tmall Partner oder Douyin Partner auswählen, prüfen und vertraglich binden. Vom Team, das die Compass-Auswahllisten erstellt.',
+      'Wie Sie in China einen Distributor, Tmall Partner oder Douyin Partner auswählen, prüfen und vertraglich binden. Vom Team hinter den Compass-Auswahllisten.',
     eyebrow: 'Partner finden · Analysen',
     h1: 'Partner in China finden',
     lead: 'Wie Sie in China den richtigen Distributor, Tmall Partner oder Douyin Partner auswählen und vor der Unterschrift auf Herz und Nieren prüfen. Vom Team hinter Compass.',

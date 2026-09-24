@@ -1,6 +1,7 @@
 ---
 title: "Kuaishou-Kurzvideo-Marketing: Der vollständige Leitfaden für Marken in China"
-description: "Kuaishou ist eine führende Kurzvideo-Plattform, anders als Douyin auf Audiences in Tier-2- und Tier-3-Städten und ländlichen Regionen ausgerichtet. Der Leitfaden zeigt, wie Marken mit Livestream, Influencer-Partnerschaften und lokalisierten eCommerce-Strategien gewinnen."
+seoTitle: "Kuaishou-Marketing: Der Leitfaden für Marken in China"
+description: "Anders als Douyin erreicht Kuaishou Tier-2- und Tier-3-Städte und ländliche Regionen. Wie Marken dort mit Livestreams, Influencern und eCommerce punkten."
 pubDate: "2024-10-28"
 author: "TheChinaPath"
 category: "Platforms"
@@ -42,7 +43,7 @@ Streams sollten in den Spitzenzeiten laufen, rund um 22 Uhr, um Reichweite und E
 
 ## eCommerce über die Plattform-Integration
 
-### Anbindung an grosse eCommerce-Plattformen
+### Anbindung an große eCommerce-Plattformen
 
 Kuaishou verbindet sich sauber mit JD.com, Pinduoduo und Taobao. Marken führen Zuschauer aus dem Video direkt in den Kauf, mit einer reibungslosen Kundenreise.
 

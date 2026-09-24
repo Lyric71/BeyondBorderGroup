@@ -1,6 +1,6 @@
 ---
 title: "Wie JD Mall Läden in Erlebnis-Plattformen verwandelt"
-description: "JD Mall macht aus dem Hausgeräte-Einzelhandel ein Erlebnis-Ziel. Kunden testen Produkte aktiv, statt passiv durchzustöbern. Das verändert, wie globale Marken hochüberlegte Kategorien in China bespielen."
+description: "JD Mall macht den Hausgerätehandel zum Erlebnisort: Kunden testen Geräte, statt nur zu stöbern. Was das für Marken mit beratungsintensiven Produkten heißt."
 pubDate: "2025-11-26"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -49,7 +49,7 @@ Für eine globale Marke lautet die Schlüsselfrage: Was sollen Menschen in einem
 
 ## Die 5-Kilometer-Strategie: Mall als Quartiers-Hub
 
-JD beschreibt jeden Mall als Versorger im 5-Kilometer-Radius. Das Ziel sind Wiederholungsbesuche und Vertrautheit, nicht der einmalige grosse Kauf.
+JD beschreibt jeden Mall als Versorger im 5-Kilometer-Radius. Das Ziel sind Wiederholungsbesuche und Vertrautheit, nicht der einmalige große Kauf.
 
 Dazu legt JD Service-Ebenen über den Handel: Reinigungsdienste per Mini-Program, Kinder-DIY-Kurse mit den Geräten im Laden, Wochenend-Events im Eingangsbereich, von Produktstarts bis Cosplay.
 

@@ -1,6 +1,6 @@
 ---
 title: "Die Kraft der WeChat-QR-Codes für Unternehmen in China"
-description: "WeChat-QR-Codes sind im chinesischen Digital-Markt unverzichtbar geworden. 95,7 Prozent der mobilen Zahlungsnutzer setzen sie für Transaktionen, Engagement und Marketing ein."
+description: "WeChat-QR-Codes sind aus Chinas Digitalalltag nicht wegzudenken. 95,7 Prozent der Mobile-Payment-Nutzer setzen sie für Zahlung und Marketing ein."
 pubDate: "2025-02-07"
 author: "TheChinaPath"
 category: "Platforms"

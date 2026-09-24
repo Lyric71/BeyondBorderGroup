@@ -1,6 +1,6 @@
 ---
 title: "Guía estratégica para enamorar al viajero chino de alta gama"
-description: "El viajero chino de lujo busca cada vez más inmersión cultural auténtica y experiencias a medida. Las marcas de viajes deben adaptarse con propuestas digitales innovadoras y un relato emocional capaz de conectar con esta clientela tan exigente."
+description: "El viajero chino de lujo quiere inmersión cultural y experiencias a medida. Las marcas de viajes deben seducirlo con ofertas digitales y un relato emotivo."
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"

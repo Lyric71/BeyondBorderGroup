@@ -10,7 +10,7 @@ const copy: PartnerGuideCopy = {
   locale: 'es',
   title: 'Cómo encontrar un distribuidor en China | TheChinaPath',
   description:
-    'Dónde encuentran distribuidor en China las marcas extranjeras, ocho comprobaciones para separar al de verdad del simple intermediario y qué pactar antes de firmar.',
+    'Dónde busca distribuidor en China una marca extranjera, ocho comprobaciones para separar al auténtico del intermediario y qué pactar antes de firmar.',
   crumb: 'Encontrar un distribuidor en China',
   reviewed: '24 de septiembre de 2026',
   reviewedIso: '2026-09-24',

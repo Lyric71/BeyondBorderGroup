@@ -1,6 +1,7 @@
 ---
 title: "Vidéo et live commerce en Chine : les cinq plateformes qui font le marché"
-description: "Le live commerce chinois devrait franchir les 1 000 milliards de dollars d'ici 2026. Tour d'horizon des cinq plateformes qui captent l'engagement consommateur et la vente en direct."
+seoTitle: "Live commerce en Chine : les cinq plateformes qui comptent"
+description: "Le live commerce chinois devrait dépasser 1 000 milliards de dollars d'ici 2026. Les cinq plateformes vidéo qui captent l'attention et la vente en direct."
 pubDate: "2024-12-27"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

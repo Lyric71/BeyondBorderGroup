@@ -1,6 +1,7 @@
 ---
 title: "Storytelling in B2B Marketing: Enhancing Brand Connection in China"
-description: "Storytelling is central in China's B2B marketing landscape, transforming how companies engage audiences and drive conversions by creating emotionally resonant narratives that deepen customer connections."
+seoTitle: "B2B Storytelling in China: Building Brand Connection"
+description: "How B2B brands in China use storytelling to explain complex offers, humanize the company and build the trust that long, calculated deals depend on."
 pubDate: "2024-04-16"
 author: "TheChinaPath"
 category: "Brand & Localization"

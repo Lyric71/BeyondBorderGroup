@@ -1,6 +1,7 @@
 ---
 title: "Créateurs chinois indépendants : la nouvelle donne mode et business en 2024"
-description: "Intégration culturelle, engagement écologique, innovation digitale : les créateurs chinois indépendants redessinent les contours de la mode mondiale. Panorama des marques locales qui gagnent en visibilité, en Chine comme à l'international."
+seoTitle: "Créateurs chinois indépendants : la nouvelle donne mode"
+description: "Culture, écologie, innovation digitale : les créateurs chinois indépendants redessinent la mode mondiale et gagnent en visibilité, en Chine comme ailleurs."
 pubDate: "2024-06-25"
 author: "TheChinaPath"
 category: "Brand & Localization"

@@ -1,6 +1,7 @@
 ---
 title: "Marques étrangères en Chine : pourquoi la plupart des tests de marché échouent"
-description: "Vingt ans de terrain en Chine, et toujours les mêmes erreurs coûteuses. Mauvais canal, prix de brochure, lecture de marché bâclée, budget sous-estimé : la mécanique du fiasco se répète. Décryptage."
+seoTitle: "Chine : pourquoi la plupart des tests de marché échouent"
+description: "Vingt ans de Chine, et toujours les mêmes erreurs : mauvais canal, prix catalogue, marché mal lu, budget sous-estimé. Autopsie d'un échec en série."
 pubDate: "2026-03-25"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

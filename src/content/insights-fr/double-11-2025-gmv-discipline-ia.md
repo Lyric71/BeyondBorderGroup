@@ -1,6 +1,6 @@
 ---
 title: "11.11 2025 : du théâtre du GMV à la discipline de l'IA"
-description: "Le Double Eleven 2025 a tourné le dos au spectacle du GMV pour s'attaquer à l'efficacité opérationnelle. Systèmes IA, transparence des prix, fiabilité du service : les plateformes ont changé de feuille de route."
+description: "Le Double Eleven 2025 délaisse le spectacle du GMV pour l'efficacité : IA, prix transparents et service fiable dictent la feuille de route des plateformes."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

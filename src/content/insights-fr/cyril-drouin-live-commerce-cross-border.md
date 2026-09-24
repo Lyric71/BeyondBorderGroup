@@ -1,5 +1,6 @@
 ---
 title: "Live commerce et cross-border : l'analyse de Cyril Drouin, CEO de TheChinaPath"
+seoTitle: "Live commerce et cross-border : l'analyse de Cyril Drouin"
 description: "Cyril Drouin décrypte le live commerce, la localisation, les KOL et ce qui sépare l'économie chinoise du livestream des marchés occidentaux."
 pubDate: "2024-11-05"
 updatedDate: "2026-05-15"

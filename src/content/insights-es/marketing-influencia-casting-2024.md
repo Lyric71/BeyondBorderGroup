@@ -1,6 +1,6 @@
 ---
 title: "Optimice su marca: cómo elegir al influencer adecuado"
-description: "El marketing de influencia se ha convertido en una palanca potente para las marcas que quieren ampliar su alcance. El éxito depende de elegir bien al influencer: que encaje con los valores de la marca y con el público objetivo."
+description: "El marketing de influencia amplía el alcance de una marca si el perfil elegido encaja con sus valores y su público. Claves para acertar con el casting."
 pubDate: "2023-11-17"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

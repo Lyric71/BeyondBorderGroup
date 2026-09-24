@@ -1,6 +1,7 @@
 ---
 title: "China Is No Longer One Market: Why Local Bets Beat National Plans"
-description: "Global brands must shift from single national strategies to localized, city-level approaches to succeed in today's slower-growth Chinese market where domestic competition is stronger."
+seoTitle: "China Is No Longer One Market: Why Local Bets Win"
+description: "Global brands now win in China with city-level plans. Slower growth and stronger domestic rivals have broken the single national strategy."
 pubDate: "2026-01-06"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

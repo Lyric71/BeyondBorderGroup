@@ -1,6 +1,7 @@
 ---
 title: "Chez JD, la double subvention est d'abord une bataille logistique"
-description: "JD et une centaine de marques placent 10 milliards de yuans derrière la reprise d'électroménager. Pourquoi le plan Double Subvention se joue sur la chaîne logistique et la fidélité, pas sur les prix."
+seoTitle: "Chez JD, la double subvention se joue sur la logistique"
+description: "JD et une centaine de marques misent 10 milliards de yuans sur la reprise d'électroménager : la Double Subvention se joue sur la logistique, pas les prix."
 pubDate: "2026-07-05"
 author: "Cyril Drouin"
 category: "E-Commerce"

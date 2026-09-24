@@ -1,6 +1,6 @@
 ---
 title: "How to Apply for an ICP License for Your Website in China"
-description: "An ICP License is a mandatory permit from China's Ministry of Industry and Information Technology that allows websites to legally operate within the country. This guide covers who needs one, application steps, and business benefits."
+description: "An ICP license from China's MIIT lets a website operate legally in China. Who needs one, how to apply, and what it does for your business there."
 pubDate: "2025-02-05"
 author: "TheChinaPath"
 category: "Compliance & Setup"

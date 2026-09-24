@@ -1,6 +1,6 @@
 ---
 title: "Marketing d'influence : la nouvelle équation du casting"
-description: "Le casting commande désormais la performance d'une campagne d'influence. Méthode pour trouver les créateurs qui collent vraiment à votre marque et à votre audience."
+description: "Le casting décide désormais de la performance d'une campagne d'influence. La méthode pour trouver les créateurs en phase avec votre marque et votre public."
 pubDate: "2023-11-17"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

@@ -1,6 +1,7 @@
 ---
 title: "Quand les patrons chinois passent en direct : le livestream entre au comité de direction"
-description: "Lei Jun, Zhou Hongyi : les dirigeants chinois s'installent face caméra pour vendre eux-mêmes leurs produits. Une mutation qui rebat la relation marque-consommateur sans rien lâcher sur la posture du chef d'entreprise."
+seoTitle: "Quand les patrons chinois vendent eux-mêmes en livestream"
+description: "Lei Jun, Zhou Hongyi : les dirigeants chinois passent face caméra pour vendre leurs produits et redéfinissent le lien client, sans perdre leur stature."
 pubDate: "2024-05-10"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

@@ -1,6 +1,7 @@
 ---
 title: "Cómo prueban las marcas extranjeras el mercado chino. Y por qué casi todas fallan."
-description: "Análisis de por qué las marcas extranjeras tropiezan al entrar en China. Errores frecuentes en estrategia transfronteriza de eCommerce, precios y enfoque de mercado."
+seoTitle: "Cómo tantean China las marcas extranjeras y por qué fallan"
+description: "Por qué tropiezan las marcas extranjeras al entrar en China: errores comunes en eCommerce transfronterizo, fijación de precios y enfoque de mercado."
 pubDate: "2026-03-25"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

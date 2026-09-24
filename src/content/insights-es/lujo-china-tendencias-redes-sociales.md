@@ -1,6 +1,6 @@
 ---
 title: "Tendencias del marketing de lujo en China"
-description: "El mercado del lujo en China evoluciona al ritmo de los avances tecnológicos y los cambios demográficos. Las marcas tienen que resolver tres retos: llegar al cliente, fidelizarlo y aprovechar los datos para crecer."
+description: "El lujo en China cambia al ritmo de la tecnología y la demografía. Las marcas deben captar al cliente, fidelizarlo y sacar partido de sus datos en redes."
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "Market Strategy"

@@ -158,7 +158,7 @@ const copy: CompassCopy = {
   index: {
     title: 'Compass : la base de partenaires chinois vérifiés | TheChinaPath',
     description:
-      'Compass est notre base privée de distributeurs, Tmall Partners, Douyin Partners et importateurs chinois vérifiés. C’est ainsi que nous bâtissons votre liste courte, en semaines plutôt qu’en trimestres.',
+      'Compass, notre base privée de distributeurs, Tmall Partners, Douyin Partners et importateurs chinois vérifiés : votre liste courte en quelques semaines.',
     eyebrow: 'Trouver un partenaire',
     h1: 'Économisez 12 mois de recherche de partenaire.',
     lead: 'Compass est notre base privée de distributeurs, Tmall Partners, Douyin Partners et importateurs. Nous les avons tous rencontrés, vérifiés sur site et, très souvent, nous avons travaillé à leurs côtés sur des projets de marque.',
@@ -211,7 +211,7 @@ const copy: CompassCopy = {
   shortlist: {
     title: 'Obtenir votre liste de partenaires chinois | Compass | TheChinaPath',
     description:
-      'Briefez-nous sur votre catégorie et votre stade d’avancement. Nous revenons avec une liste courte de distributeurs et de partenaires plateformes chinois à rencontrer, en général sous deux à trois semaines.',
+      'Présentez-nous votre catégorie et votre stade de développement : sous deux à trois semaines, une liste courte de partenaires chinois à rencontrer.',
     eyebrow: 'Votre liste courte',
     h1: 'Parlez-nous un peu de votre marque.',
     lead: 'Quelques questions rapides pour lancer la conversation. Le premier échange est court et sans engagement de part et d’autre. Un associé vous répondra sous un jour ouvré, pas un message type envoyé par un robot de qualification.',
@@ -233,10 +233,10 @@ const copy: CompassCopy = {
       honeypot: 'Laissez ce champ vide',
     },
     stages: [
-      'Pas encore en Chine, nous cherchons le bon modèle',
-      'Nous entrons maintenant, il nous faut un premier partenaire',
-      'Nous vendons déjà, nous remplaçons un partenaire',
-      'Nous vendons déjà, nous ajoutons un canal ou une région',
+      'Pas encore en Chine : nous hésitons entre un distributeur, un TP et un DP',
+      'Nous nous lançons et cherchons un premier distributeur, TP ou DP',
+      'Nous vendons déjà et remplaçons un distributeur, TP ou DP qui ne donne pas satisfaction',
+      'Nous vendons déjà et ajoutons un distributeur, TP ou DP pour un nouveau canal ou une nouvelle région',
     ],
     submit: 'Envoyer le brief',
     submitting: 'Envoi en cours…',

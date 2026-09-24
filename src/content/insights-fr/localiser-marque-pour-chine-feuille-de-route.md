@@ -1,6 +1,7 @@
 ---
 title: "Localiser une marque pour la Chine : feuille de route opérationnelle"
-description: "Codes culturels, traduction éditoriale, adaptation de l'offre, conformité réglementaire : la localisation d'une marque pour la Chine mobilise des compétences distinctes pour toucher un marché de 1,4 milliard de consommateurs."
+seoTitle: "Localiser une marque pour la Chine : la feuille de route"
+description: "Codes culturels, traduction, offre, conformité : localiser une marque pour 1,4 milliard de consommateurs chinois mobilise des métiers distincts."
 pubDate: "2023-02-03"
 author: "TheChinaPath"
 category: "Brand & Localization"

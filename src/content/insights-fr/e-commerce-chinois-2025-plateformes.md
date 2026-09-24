@@ -1,6 +1,7 @@
 ---
 title: "E-commerce chinois 2025 : la carte des plateformes, et le retour du local"
-description: "En ligne et hors ligne fusionnent désormais dans une même boucle opérationnelle. Chaque plateforme majeure capte une habitude de consommation précise et un segment du tunnel d'achat. Cartographie."
+seoTitle: "E-commerce chinois 2025 : plateformes et retour du local"
+description: "En ligne et hors ligne ne forment plus qu'une boucle. Chaque grande plateforme chinoise tient une habitude de consommation et un maillon du tunnel d'achat."
 pubDate: "2025-12-22"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

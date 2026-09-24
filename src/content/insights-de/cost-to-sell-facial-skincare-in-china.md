@@ -1,15 +1,15 @@
 ---
 title: "Was der Verkauf von Gesichtspflege in China kostet"
-description: "Der Start kostet 80.000 Yuan bei Tmall Global, 42.600 bei JD Worldwide, 100.000 bei Douyin. Danach entscheidet die Gebindegröße über die Steuer."
+description: "Der Start kostet 80.000 Yuan bei Tmall Global, 42.600 bei JD Worldwide, 5.000 bei Douyin. Danach entscheidet die Gebindegröße über die Steuer."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-16"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Beauty & Personal Care"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Gesichtspflege", "Tmall Global", "JD Worldwide", "Douyin", "Cross-Border-E-Commerce", "Plattformgebühren", "NMPA"]
 keyTakeaways:
-  - "Gesichtspflege kostet im Start 80.000 Yuan bei Tmall Global, 42.600 Yuan bei JD Worldwide und 100.000 Yuan bei Douyin Cross-Border, vor Ware, Media und Partnerhonorar (Rechnerdaten von TheChinaPath, September 2026)."
+  - "Gesichtspflege kostet im Start 80.000 Yuan bei Tmall Global, 42.600 Yuan bei JD Worldwide und 5.000 Yuan bei Douyin Cross-Border, vor Ware, Media und Partnerhonorar (Rechnerdaten von TheChinaPath, September 2026)."
   - "Tmall Global nimmt auf Gesichtspflege 4 % je Verkauf, die beiden anderen 5 %, und ordnet die Kategorie der niedrigeren Jahresgebühr von 30.000 Yuan zu."
   - "Über den Cross-Border-Weg entfällt die NMPA-Anmeldung vollständig, weil die Ware als Gut zum persönlichen Gebrauch überwacht wird. Im Regelhandel entfällt sie nicht."
   - "Ein Pflegeprodukt ab 10 Yuan je Milliliter gilt als hochwertiges Kosmetikum und trägt Verbrauchsteuer. Der Käufer zahlt dann rund 23 % statt 9,1 %."
@@ -20,7 +20,7 @@ heroImageAlt: "Im Betriebsbüro eines Zolllagers in Guangzhou prüft eine Sortim
 
 Fangen Sie mit Tmall Global an. Ein Shop für Gesichtspflege kostet dort
 80.000 Yuan, bevor der erste Tiegel verkauft ist, gegenüber 42.600 Yuan bei
-JD Worldwide und 100.000 Yuan bei Douyin Cross-Border. Tmall nimmt 4 % je
+JD Worldwide und 5.000 Yuan bei Douyin Cross-Border. Tmall nimmt 4 % je
 Verkauf, die beiden anderen 5 %. Und dann kommt die Steuer, die Ihr Käufer an
 der Kasse zahlt und die Ihre Gebindegröße bestimmt. Die wiegt schwerer als
 alles davor.
@@ -34,10 +34,10 @@ und zugleich die nachsichtigste bei den Gebühren. Zuerst die Tabelle.
 
 | Gesichtspflege, erstes Jahr (Yuan) | Tmall Global | JD Worldwide | Douyin Cross-Border |
 |---|---|---|---|
-| Kaution, rückzahlbar | 50.000 | 35.500 (rund 4.500 Euro) | 100.000 |
+| Kaution, rückzahlbar | 50.000 | 35.500 (rund 4.500 Euro) | 5.000 |
 | Jährliche Plattformgebühr | 30.000 | 7.100 (rund 900 Euro) | keine |
 | Provision je Verkauf | 4 % | 5 % | 5 % |
-| Liquidität vor dem ersten Verkauf | 80.000 | 42.600 | 100.000 |
+| Liquidität vor dem ersten Verkauf | 80.000 | 42.600 | 5.000 |
 
 </div>
 
@@ -50,6 +50,18 @@ nennt Kaution wie Nutzungsgebühr in Dollar, auf einer Staffel, die mit dem
 kumulierten Umsatz steigt. Der Yuan-Betrag oben ist die Einstiegsstufe. Eine
 TM-Marke oder ein Multibrand-Shop treibt die Tmall-Kaution nach oben.
 Bandbreiten geprüft im September 2026.
+
+Mit Gesichtspflege hat die Douyin-Kaution inzwischen nichts mehr zu tun. Seit
+Juni 2025 folgt sie dem Umsatz des Vormonats: 500 Yuan bis 50.000 Yuan, 2.000
+Yuan bis 100.000, darüber 5.000 Yuan. Die Tabelle zeigt die oberste Stufe.
+
+> Die Basiskaution bei Douyin Global richtet sich nach dem bezahlten GMV des
+> Shops im vorangegangenen Kalendermonat: 500 Yuan bei 0 bis 50.000 Yuan,
+> 2.000 Yuan bei mehr als 50.000 bis 100.000 Yuan, 5.000 Yuan bei mehr als
+> 100.000 Yuan.
+> Quelle: Douyin E-commerce (抖音电商), 《【全球购】保证金管理规范》, zuletzt
+> geändert mit Wirkung zum 5. Juni 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/107821
 
 Eine Zahl in dieser Tabelle fällt aus dem Rahmen. Gesichtspflege und
 dekorative Kosmetik sind die einzigen beiden der neunzehn Kategorien in
@@ -248,10 +260,10 @@ JD Worldwide dreht die Rechnung um, wenn die offene Frage lautet, ob China
 die Marke überhaupt will. Gleicher Weg, gleiche Regeln, etwas mehr als die Hälfte der
 Liquidität bis zum Livegang.
 
-Douyin erfüllt einen anderen Zweck. Höchste Kaution, keine Jahresgebühr, und die
+Douyin erfüllt einen anderen Zweck. Niedrigste Kaution, keine Jahresgebühr, und die
 Plattform belohnt Marken, die bereits Inhalte haben, die verkaufen. Unsere
 Seite dazu, [was Schuhe verkaufen in China
-kostet](/de/analysen/cost-to-sell-footwear-in-china), nimmt dieselben drei
+kostet](/de/analysen/was-schuhe-verkaufen-in-china-kostet), nimmt dieselben drei
 Plattformen dort auseinander, wo die Retouren über das Jahr entscheiden.
 
 ## Was die Pflege-Projekte offenlassen

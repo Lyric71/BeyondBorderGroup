@@ -1,6 +1,7 @@
 ---
 title: "Cómo Xianyu transforma las gangas en side hustles para los jóvenes emprendedores chinos"
-description: "Xianyu, la plataforma de Alibaba, va más allá de los productos de segunda mano y se convierte en el hogar de los jóvenes emprendedores que monetizan habilidades y aficiones en un nuevo marketplace de servicios."
+seoTitle: "Xianyu y los side hustles de los jóvenes chinos"
+description: "Xianyu, de Alibaba, ya no es solo segunda mano: los jóvenes chinos la usan para monetizar habilidades y aficiones en un nuevo mercado de servicios."
 pubDate: "2024-07-12"
 author: "TheChinaPath"
 category: "Platforms"

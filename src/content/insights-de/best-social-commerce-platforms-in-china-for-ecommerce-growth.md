@@ -1,6 +1,6 @@
 ---
 title: "Top 5 Social-Commerce-Plattformen in China"
-description: "Social Commerce hat den Einkauf in China verändert. Soziales Engagement und direkter Kauf verschmelzen. Der Beitrag zeigt die führenden Plattformen, die das eCommerce-Wachstum im 2,5-Billionen-Yuan-Markt tragen."
+description: "In China verschmelzen soziale Netzwerke und Einkauf. Die fünf Social-Commerce-Plattformen, die das Wachstum in einem Markt von 2,5 Billionen Yuan tragen."
 pubDate: "2024-10-23"
 author: "TheChinaPath"
 category: "Platforms"
@@ -12,7 +12,7 @@ heroImageAlt: "Chinesischer Social-eCommerce"
 
 ## Social Commerce in China: das Marktbild
 
-[Social Commerce](/de/in-china-wachsen/social-commerce) hat die Art, wie Käufer einkaufen, neu sortiert. Soziale Interaktion und direkter Kauf verschmelzen. Nirgendwo ist dieser Wandel ausgeprägter als im chinesischen eCommerce, dem grössten Online-Markt der Welt. Trends wie Livestream, Mobile Payment und [KOL](/de/chinesische-social-media)-Marketing treiben ihn. 2021 hat der Social-Commerce-Markt in China 2,5 Billionen Yuan überschritten (rund 374 Milliarden US-Dollar) und zählt fast 800 Millionen Teilnehmer.
+[Social Commerce](/de/in-china-wachsen/social-commerce) hat die Art, wie Käufer einkaufen, neu sortiert. Soziale Interaktion und direkter Kauf verschmelzen. Nirgendwo ist dieser Wandel ausgeprägter als im chinesischen eCommerce, dem größten Online-Markt der Welt. Trends wie Livestream, Mobile Payment und [KOL](/de/chinesische-social-media)-Marketing treiben ihn. 2021 hat der Social-Commerce-Markt in China 2,5 Billionen Yuan überschritten (rund 374 Milliarden US-Dollar) und zählt fast 800 Millionen Teilnehmer.
 
 Wer im Wettbewerb gewinnen will, muss die führenden [Plattformen](/de/china-verstehen/plattformen) Chinas kennen. Hier die wichtigsten Social-Commerce-Plattformen, die Ihre China-Marketing-Strategie und das Wachstum Ihrer Marke tragen.
 
@@ -65,8 +65,8 @@ Als zentrale Spieler im chinesischen eCommerce dominieren Taobao und Tmall den M
 ### Schlüsselfunktionen
 
 * **Livestream-KOL**: Mit dem Aufstieg von Live-Influencern wie Li Jiaqi ist Live-Verkauf bei Taobao Eckpfeiler der Produkt-Promotion, mit Millionenumsätzen pro Session. Partnerschaften mit chinesischen KOL heben das Engagement während Peak-Events.
-* **Spezielle Verkaufsaktionen**: Grosse Events wie das Double-11-Festival bieten exklusive Deals und Chancen für Aufmerksamkeit.
-* **Riesige Käuferbasis**: Taobao und Tmall verfügen über eine der grössten Nutzerbasen im chinesischen eCommerce. Für jede Marke mit breitem Publikum essenziell.
+* **Spezielle Verkaufsaktionen**: Große Events wie das Double-11-Festival bieten exklusive Deals und Chancen für Aufmerksamkeit.
+* **Riesige Käuferbasis**: Taobao und Tmall verfügen über eine der größten Nutzerbasen im chinesischen eCommerce. Für jede Marke mit breitem Publikum essenziell.
 
 ### Marketing-Chancen
 

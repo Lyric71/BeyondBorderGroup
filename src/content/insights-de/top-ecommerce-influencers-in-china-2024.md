@@ -1,6 +1,6 @@
 ---
 title: "Die wichtigsten eCommerce-Influencer in China 2024"
-description: "Chinas eCommerce wird von Key Opinion Leaders (KOLs) getragen, die die Brücke zwischen Marken und Käufern über Authentizität und Kreativität auf Plattformen wie Xiaohongshu und Douyin schlagen."
+description: "Chinas eCommerce lebt von Key Opinion Leaders. Die wichtigsten Influencer auf Xiaohongshu und Douyin, die Marken und Käufer glaubwürdig zusammenbringen."
 pubDate: "2024-12-18"
 author: "TheChinaPath"
 category: "KOLs & Livestream"
@@ -110,7 +110,7 @@ Fei Zhu Zhu teilt schnelle Rezepte und Food-Hacks. Ein guter Promotion-Kanal fü
 * **Plattform:** Douyin
 * **Follower:** 738.000
 
-Bacon Diary verbindet visuell starken Content mit nahbaren Erzählungen. Schwerpunkte auf chinesischer Küche, modernen Techniken und Humor haben eine grosse Community geschaffen.
+Bacon Diary verbindet visuell starken Content mit nahbaren Erzählungen. Schwerpunkte auf chinesischer Küche, modernen Techniken und Humor haben eine große Community geschaffen.
 
 ![Bacon Diary Food auf Douyin](/Images/insights/2024/12/bacon-final.png)
 

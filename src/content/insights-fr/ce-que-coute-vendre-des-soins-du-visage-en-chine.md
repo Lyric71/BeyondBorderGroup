@@ -1,15 +1,15 @@
 ---
 title: "Ce que coûte la vente de soins du visage en Chine"
-description: "Ouvrir en soin du visage coûte 80 000 RMB sur Tmall Global, 42 600 sur JD Worldwide, 100 000 sur Douyin. Ensuite, le format fait la taxe."
+description: "Ouvrir en soin du visage coûte 80 000 RMB sur Tmall Global, 42 600 sur JD Worldwide, 5 000 sur Douyin. Ensuite, le format fait la taxe."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-16"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Beauty & Personal Care"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Soin du visage", "Tmall Global", "JD Worldwide", "Douyin", "E-commerce transfrontalier", "Frais de plateforme", "NMPA"]
 keyTakeaways:
-  - "Ouvrir en soin du visage coûte 80 000 RMB sur Tmall Global, 42 600 RMB sur JD Worldwide et 100 000 RMB sur Douyin cross-border, avant le stock, les médias et la rétribution d'un partenaire (données des calculateurs TheChinaPath, septembre 2026)."
+  - "Ouvrir en soin du visage coûte 80 000 RMB sur Tmall Global, 42 600 RMB sur JD Worldwide et 5 000 RMB sur Douyin cross-border, avant le stock, les médias et la rétribution d'un partenaire (données des calculateurs TheChinaPath, septembre 2026)."
   - "Tmall Global prélève 4 % sur le soin du visage quand les deux autres prennent 5 %, et range la catégorie dans la tranche basse de frais annuels, à 30 000 RMB."
   - "Le transfrontalier dispense entièrement du dépôt NMPA, parce que la marchandise est contrôlée comme un bien à usage personnel. Le régime général, lui, ne dispense de rien."
   - "Un soin facturé 10 RMB le millilitre ou plus bascule en cosmétique haut de gamme et supporte la taxe à la consommation : l'acheteur paie alors près de 23 % au lieu de 9,1 %."
@@ -20,7 +20,7 @@ heroImageAlt: "Dans le bureau d'exploitation d'un entrepôt sous douane de Canto
 
 Commencez par Tmall Global. Y ouvrir une boutique de soin du visage coûte
 80 000 RMB avant le premier pot vendu, contre 42 600 RMB sur JD Worldwide et
-100 000 RMB sur Douyin cross-border. Tmall prélève 4 % sur chaque vente, les
+5 000 RMB sur Douyin cross-border. Tmall prélève 4 % sur chaque vente, les
 deux autres 5 %. Puis vient la taxe que votre acheteur acquitte à la commande, celle que
 commande le format de votre flacon. C'est elle qui pèse le plus lourd.
 
@@ -33,10 +33,10 @@ de coûts, et la plus clémente sur les frais. Le tableau d'abord.
 
 | Soin du visage, première année (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
-| Dépôt de garantie, restituable | 50 000 | 35 500 (environ 4 500 euros) | 100 000 |
+| Dépôt de garantie, restituable | 50 000 | 35 500 (environ 4 500 euros) | 5 000 |
 | Frais annuels de plateforme | 30 000 | 7 100 (environ 900 euros) | aucun |
 | Commission sur chaque vente | 4 % | 5 % | 5 % |
-| Trésorerie avant la première vente | 80 000 | 42 600 | 100 000 |
+| Trésorerie avant la première vente | 80 000 | 42 600 | 5 000 |
 
 </div>
 
@@ -49,6 +49,18 @@ affiche dépôt et frais d'usage en dollars, sur une échelle qui monte avec
 le cumul des ventes : le chiffre en RMB ci-dessus correspond au premier
 barreau. Une marque déposée en TM ou une boutique multimarque fait monter le
 dépôt Tmall. Fourchettes vérifiées en septembre 2026.
+
+Chez Douyin, le dépôt n'a plus rien à voir avec le soin du visage. Depuis
+juin 2025, il suit les ventes du mois précédent : 500 RMB jusqu'à
+50 000 RMB, 2 000 RMB jusqu'à 100 000, 5 000 RMB au-delà. Le tableau retient
+le palier le plus haut.
+
+> Le dépôt de base de Douyin Global dépend du GMV payé par la boutique au
+> cours du mois civil précédent : 500 RMB de 0 à 50 000 RMB, 2 000 RMB
+> au-delà de 50 000 et jusqu'à 100 000 RMB, 5 000 RMB au-delà de 100 000 RMB.
+> Source : Douyin E-commerce (抖音电商), 《【全球购】保证金管理规范》,
+> dernière révision en vigueur le 5 juin 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/107821
 
 Un chiffre de ce tableau sort du rang. Le soin du visage et le maquillage
 sont les deux seules catégories, sur les dix-neuf que compte notre
@@ -248,7 +260,7 @@ JD Worldwide renverse le calcul quand la question ouverte est de savoir si la
 Chine veut de la marque. Même voie, mêmes règles, à peine plus de la moitié
 de la trésorerie pour être en ligne.
 
-Douyin fait un autre métier. Dépôt le plus élevé, aucun frais annuel, et la
+Douyin fait un autre métier. Dépôt le plus faible, aucun frais annuel, et la
 plateforme récompense les marques qui disposent déjà de contenus qui vendent.
 Notre page sur [ce que coûte la vente de
 chaussures](/fr/decryptages/ce-que-coute-vendre-des-chaussures-en-chine)

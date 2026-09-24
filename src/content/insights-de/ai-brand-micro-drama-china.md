@@ -1,6 +1,6 @@
 ---
 title: "Die KI machte Marken-Dramen billig. Dann kamen die Regeln."
-description: "KI hat die Produktionskosten für chinesische Mikro-Dramen um bis zu 90 % gesenkt. Was das für ausländische Marken bedeutet, und welche Kennzeichnungspflichten damit kamen."
+description: "KI senkt die Produktionskosten chinesischer Mikro-Dramen um bis zu 90 %. Was das für ausländische Marken heißt und welche Kennzeichnungspflichten gelten."
 pubDate: "2026-07-16"
 author: "Cyril Drouin"
 category: "AI & Innovation"

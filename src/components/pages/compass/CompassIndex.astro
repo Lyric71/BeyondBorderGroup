@@ -166,7 +166,7 @@ const rail = [
     secondary={{ label: c.ctaSecondary, href: '#how' }}
     stats={c.heroStats}
     account={account || undefined}
-    image={{ src: '/Images/compass/compass-hero.png', alt: c.heroAlt }}
+    image={{ src: '/Images/compass/compass-hero.webp', alt: c.heroAlt }}
     scrollCue={c.scrollCue}
     scrollTarget="#problem"
   />
@@ -1829,6 +1829,11 @@ const rail = [
   }
 
   /* The partner file */
+  /* The file card slides in from the right; clip it so the page never scrolls
+     sideways. clip, not hidden, so the sticky card keeps working. */
+  .cx-coverage {
+    overflow-x: clip;
+  }
   .cx-file-wrap {
     position: sticky;
     top: 112px;

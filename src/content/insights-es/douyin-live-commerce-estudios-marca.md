@@ -1,6 +1,7 @@
 ---
 title: "Live commerce en Douyin: por qué las salas de marca ganan a los eventos con celebrities"
-description: "El livestreaming gestionado por la marca se ha impuesto en Douyin en 2026. Sustituye la dependencia de presentadores famosos por una emisión controlada que mejora el cumplimiento y permite crecer de forma repetible."
+seoTitle: "Live commerce en Douyin: la marca gana a las estrellas"
+description: "En 2026 manda en Douyin el directo de la propia marca: menos dependencia de los famosos, más control, mejor cumplimiento y un crecimiento repetible."
 pubDate: "2026-01-06"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

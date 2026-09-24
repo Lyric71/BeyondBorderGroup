@@ -1,6 +1,6 @@
 ---
 title: "Exploring Luxury Brand Marketing Trends in China"
-description: "China's luxury market evolves through technological advances and demographic shifts. Brands must address three key challenges: reaching customers, building loyalty, and using data for growth."
+description: "Most luxury spending in China happens in the top 50 cities, and over 80% of shoppers research online first. How luxury brands use Chinese social media."
 pubDate: "2024-06-07"
 author: "TheChinaPath"
 category: "Market Strategy"

@@ -1,6 +1,7 @@
 ---
 title: "Voyageurs chinois haut de gamme : le guide stratégique pour les capter"
-description: "Le voyageur chinois aisé exige désormais immersion culturelle, sur-mesure et lien émotionnel. Aux acteurs du tourisme de refondre récit et engagement digital pour capter ce segment exigeant."
+seoTitle: "Voyageurs chinois haut de gamme : le guide pour les capter"
+description: "Le voyageur chinois aisé veut de l'immersion culturelle, du sur-mesure et de l'émotion. Au tourisme de revoir son récit et sa stratégie digitale."
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"

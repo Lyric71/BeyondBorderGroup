@@ -1,6 +1,6 @@
 ---
 title: "Top eCommerce Influencers in China 2024"
-description: "Chinese eCommerce is driven by Key Opinion Leaders (KOLs) who bridge the gap between brands and consumers through authenticity and creativity on platforms like Xiaohongshu and Douyin."
+description: "China's top eCommerce influencers of 2024 across beauty, food, travel and lifestyle, the platforms they sell on, and what KOL deals do for brands."
 pubDate: "2024-12-18"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

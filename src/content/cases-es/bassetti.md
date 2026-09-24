@@ -1,6 +1,7 @@
 ---
 brand: "Bassetti"
 title: "WordPress y Elementor tras el Gran Cortafuegos: la migración de la web de Bassetti a China"
+seoTitle: "Bassetti: la migración de su web WordPress a China"
 summary: "Sitio chino específico para Bassetti construido sobre WordPress y Elementor, rediseñado para alojamiento en China, licencia ICP y rendimiento local."
 metric: "Bassetti.cn relanzado en WordPress alojado en China, con licencia ICP y rendimiento adaptado al país."
 category: "Website"

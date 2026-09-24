@@ -1,6 +1,7 @@
 ---
 title: "Navigating Advertising Laws in China: Essential Insights for International Brands"
-description: "China's strict advertising laws and platform-specific regulations present unique challenges for global brands seeking to reach consumers through eCommerce and social media. This guide explores regulations covering absolute claims restrictions, industry-specific rules, and digital advertising compliance."
+seoTitle: "China Advertising Laws: What Global Brands Must Know"
+description: "China's advertising law bans absolute claims such as 'best' and adds strict rules by industry and platform. What global brands must check before posting."
 pubDate: "2024-10-29"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

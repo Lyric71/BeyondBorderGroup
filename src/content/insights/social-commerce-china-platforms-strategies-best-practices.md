@@ -1,6 +1,7 @@
 ---
 title: "Exploring Social Commerce in China Platforms: Strategies and Market Impact"
-description: "Social commerce has revolutionized online shopping in China through platforms like Xiaohongshu, WeChat, and Douyin, using user-generated content, influencers, and live streaming to create dynamic shopping experiences."
+seoTitle: "Social Commerce in China: Platforms and Strategies"
+description: "How social commerce works in China on Xiaohongshu, WeChat and Douyin, where user content, influencers and livestreams turn browsing into buying."
 pubDate: "2024-06-24"
 author: "TheChinaPath"
 category: "Platforms"

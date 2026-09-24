@@ -1,6 +1,7 @@
 ---
 title: "How to Sell on Douyin in China: Best Practices for Success in 2024"
-description: "Douyin, China's TikTok version with 750 million daily active users, combines social media and shopping. Success requires using live streaming, KOL partnerships, and targeted content strategies."
+seoTitle: "How to Sell on Douyin in China: 2024 Best Practices"
+description: "Douyin, China's TikTok, has 750 million daily active users and a built-in store. How brands sell on it with livestreams, KOLs and targeted content."
 pubDate: "2024-10-21"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

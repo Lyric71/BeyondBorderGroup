@@ -1,6 +1,6 @@
 ---
 title: "Localiser une marque en Chine sans diluer son ADN"
-description: "La qualité ne suffit plus en Chine. Les marques étrangères doivent désormais conjuguer localisation profonde et identité forte. Pertinence culturelle et maîtrise des plateformes sont devenues les vrais critères de différenciation."
+description: "La qualité ne suffit plus en Chine. Une marque étrangère doit allier localisation profonde et identité forte, sens culturel et maîtrise des plateformes."
 pubDate: "2025-11-19"
 updatedDate: "2026-05-15"
 author: "Liyan Ye"

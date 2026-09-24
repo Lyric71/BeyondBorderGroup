@@ -1,6 +1,6 @@
 ---
 title: "Leitfaden: Chinesische Luxusreisende für sich gewinnen"
-description: "Chinesische Luxusreisende suchen zunehmend echte kulturelle Tiefe und persönliche Erlebnisse. Anbieter brauchen innovative Digital-Strategien und emotionales Storytelling, um diese anspruchsvolle Audience zu erreichen."
+description: "Chinesische Luxusreisende suchen kulturelle Tiefe und persönliche Erlebnisse. Wie Anbieter sie digital und mit emotionalem Storytelling erreichen."
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"
@@ -55,7 +55,7 @@ Xiaohongshu, oft als Chinas Lifestyle-Suchmaschine bezeichnet, ist eine zentrale
 
 ### WeChat und Weibo
 
-[WeChat](/de/in-china-wachsen/social-commerce) und Weibo sind essenziell. Direkte Kommunikation und personalisiertes Marketing bauen Beziehungen. WeChat-Mini-Programme erlauben virtuelle Touren, Buchungen und persönliche Empfehlungen. Weibo bietet grosse Reichweite und Echtzeit-Interaktion, ideal für Kampagnen und Livestreams.
+[WeChat](/de/in-china-wachsen/social-commerce) und Weibo sind essenziell. Direkte Kommunikation und personalisiertes Marketing bauen Beziehungen. WeChat-Mini-Programme erlauben virtuelle Touren, Buchungen und persönliche Empfehlungen. Weibo bietet große Reichweite und Echtzeit-Interaktion, ideal für Kampagnen und Livestreams.
 
 ### Social-Influencer
 

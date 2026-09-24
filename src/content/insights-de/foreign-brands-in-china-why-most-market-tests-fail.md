@@ -1,5 +1,6 @@
 ---
 title: "Wie ausländische Marken den chinesischen Markt testen. Und warum die meisten falsch liegen."
+seoTitle: "China-Markttest: Warum ausländische Marken oft scheitern"
 description: "Eine Analyse, warum ausländische Marken beim Eintritt in China scheitern. Häufige Fehler in der Cross-Border-eCommerce-Strategie, beim Preis und im Marktangang."
 pubDate: "2026-03-25"
 updatedDate: "2026-05-15"
@@ -43,7 +44,7 @@ Einige Kategorien belohnen ausländische Herkunft weiterhin. Beauty, Hautpflege,
 
 ### Hören Sie auf, mit Tmall anzufangen
 
-Einer der hartnäckigsten Fehler ist der Test auf den grossen Plattformen. Tmall und JD sind das Schlachtfeld, auf dem etablierte Marken um Regalplatz kämpfen. Die Eintrittsbarriere ist hoch. Akquisitionskosten in Kategorien wie Beauty oder Consumer Electronics liegen bei 15 bis 30 US-Dollar pro Neukäufer. Und der Weg von der Bewerbung bis zum ersten Verkauf zieht sich über Monate.
+Einer der hartnäckigsten Fehler ist der Test auf den großen Plattformen. Tmall und JD sind das Schlachtfeld, auf dem etablierte Marken um Regalplatz kämpfen. Die Eintrittsbarriere ist hoch. Akquisitionskosten in Kategorien wie Beauty oder Consumer Electronics liegen bei 15 bis 30 US-Dollar pro Neukäufer. Und der Weg von der Bewerbung bis zum ersten Verkauf zieht sich über Monate.
 
 Heute empfehle ich Marken, mit einer fokussierten KOL-Kampagne auf Douyin zu testen. Es geht schneller, kostet weniger und liefert echtes Feedback, bevor Sie einen Shop aufbauen. Douyin ist zur Verkaufsmaschine geworden, die Produkt-Entdeckung läuft über Content, nicht über die Suche. Ein gut platziertes Kurzvideo oder ein Livestream mit dem passenden Influencer kann Nachfrage in Wochen validieren.
 

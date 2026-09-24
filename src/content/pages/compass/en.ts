@@ -153,7 +153,7 @@ const copy: CompassCopy = {
   index: {
     title: 'Compass: the vetted China partner database | TheChinaPath',
     description:
-      'Compass is our private database of vetted China distributors, Tmall and Douyin Partners and importers. We use it to find the partner who already knows your category.',
+      'Compass is our private database of vetted China distributors, Tmall and Douyin Partners and importers. We use it to find who already knows your category.',
     eyebrow: 'Find a partner',
     h1: 'The right partner decides your China business.',
     lead: 'Compass is our private database of distributors, Tmall Partners, Douyin Partners and importers across China. We use it to find the one that already works your category, and already knows its retailers and KOLs. Every company in it, we have met in person and vetted on site.',
@@ -257,7 +257,7 @@ const copy: CompassCopy = {
   shortlist: {
     title: 'Get your China partner shortlist | Compass | TheChinaPath',
     description:
-      'Brief us on your category and your stage. We come back with a shortlist of China distributors and platform partners worth meeting, usually in two to three weeks.',
+      'Brief us on your category and stage. We send back a shortlist of China distributors and platform partners worth meeting, usually within two to three weeks.',
     eyebrow: 'Get your shortlist',
     h1: 'Tell us a little about your brand.',
     lead: 'A few quick questions to get the conversation started. The first call is short and there is no obligation on either side. A senior partner will write back inside one working day, not a form-letter from an intake bot.',

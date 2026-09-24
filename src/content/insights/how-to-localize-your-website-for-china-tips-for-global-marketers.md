@@ -1,6 +1,7 @@
 ---
 title: "How to Localize Your Website for China: Tips for Global Marketers"
-description: "Localizing your website for China requires more than translation. It involves navigating regulatory requirements, cultural adaptation, and technical adjustments to succeed in the Chinese digital market."
+seoTitle: "How to Localize Your Website for China: Marketer Tips"
+description: "Localizing a website for China takes more than translation: regulatory rules, cultural fit and technical fixes. Practical tips for global marketers."
 pubDate: "2025-01-21"
 author: "TheChinaPath"
 category: "Brand & Localization"

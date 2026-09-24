@@ -1,6 +1,7 @@
 ---
 title: "Alibaba arme Taobao et Tmall à l'IA et rebat les cartes de l'e-commerce chinois"
-description: "Taobao Wenwen, génération visuelle, agent conversationnel : Alibaba équipe ses places de marché d'un arsenal d'IA qui change la donne, côté acheteur comme côté marchand."
+seoTitle: "Alibaba arme Taobao et Tmall à l'IA et rebat les cartes"
+description: "Taobao Wenwen, génération d'images, agent conversationnel : Alibaba dote ses places de marché d'une IA qui change la donne pour acheteurs et marchands."
 pubDate: "2024-07-12"
 author: "TheChinaPath"
 category: "AI & Innovation"

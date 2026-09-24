@@ -1,6 +1,6 @@
 ---
 title: "QR codes WeChat : l'arme silencieuse des marques en Chine"
-description: "95,7 % des utilisateurs chinois du paiement mobile passent par un QR code. Le petit carré noir et blanc est devenu un instrument de transaction, d'engagement et de marketing à part entière."
+description: "95,7 % des utilisateurs chinois du paiement mobile passent par un QR code. Le petit carré noir et blanc est devenu un outil de vente et d'engagement."
 pubDate: "2025-02-07"
 author: "TheChinaPath"
 category: "Platforms"

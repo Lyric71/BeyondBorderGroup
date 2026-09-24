@@ -1,6 +1,6 @@
 ---
 title: "What Taobao Instant Commerce Means For Non-Chinese Brands"
-description: "Alibaba's Taobao Instant Commerce and Taobao Flash Sale rebrand signal a shift from festival-driven shopping to daily delivery habits, reshaping how non-Chinese brands must compete in China's evolving retail landscape."
+description: "Taobao Instant Commerce and the Taobao Flash Sale rebrand move Chinese shopping from festivals to daily delivery. What non-Chinese brands need to change."
 pubDate: "2025-11-21"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

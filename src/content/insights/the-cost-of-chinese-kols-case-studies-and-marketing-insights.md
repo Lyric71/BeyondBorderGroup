@@ -1,6 +1,7 @@
 ---
 title: "The Cost of Chinese Influencers: Case Studies and Marketing Insights"
-description: "This article examines KOL pricing across Chinese platforms like Douyin and Xiaohongshu, providing cost breakdowns and case studies of successful influencer campaigns that helped brands drive engagement and sales."
+seoTitle: "How Much Chinese KOLs Cost: Pricing and Case Studies"
+description: "What Chinese KOLs cost on Douyin and Xiaohongshu, with price breakdowns by platform and case studies of influencer campaigns that drove sales."
 pubDate: "2024-11-29"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

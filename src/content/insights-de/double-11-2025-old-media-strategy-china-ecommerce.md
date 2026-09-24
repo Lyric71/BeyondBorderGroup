@@ -1,6 +1,7 @@
 ---
-title: "Chinas grösstes eCommerce-Festival kehrt zu alten Medien zurück"
-description: "Double 11, Chinas dominantes Shopping-Festival, übernimmt Formate aus dem klassischen Fernsehen, Galas, Comedy-Sketche und Varieté, um in einem Markt aus immer professioneller agierenden Käufern Vertrauen zurückzugewinnen."
+title: "Chinas größtes eCommerce-Festival kehrt zu alten Medien zurück"
+seoTitle: "Double 11 2025: Chinas Shoppingfest setzt auf alte Medien"
+description: "Double 11 greift auf Formate des klassischen Fernsehens zurück: Galas, Sketche, Varieté. So wollen die Plattformen versierte Käufer zurückgewinnen."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -19,13 +20,13 @@ keyTakeaways:
 
 Double 11 wurde im Browser geboren.
 
-Tabs, Banner, Flash-Sales, App-only-Vorteile. Über mehr als ein Jahrzehnt war Chinas grösstes Shopping-Festival der klarste Ausdruck von digitalem Handel in der Breite. Wer Plattform-Macht verstehen wollte, schaute auf den 11.11.
+Tabs, Banner, Flash-Sales, App-only-Vorteile. Über mehr als ein Jahrzehnt war Chinas größtes Shopping-Festival der klarste Ausdruck von digitalem Handel in der Breite. Wer Plattform-Macht verstehen wollte, schaute auf den 11.11.
 
 ## Siebzehn Jahre später passiert etwas Unerwartetes.
 
 Sie öffnen das Telefon, und es fühlt sich seltsam an wie Fernsehen.
 
-Gala-artige Launch-Shows mit Celebrity-Hosts. Comedy-Sketche über Preise, die zu hoch wirken, und Qualität, die zu niedrig wirkt. Varieté-Segmente, in denen KOLs auf der Bühne mit Markenmanagern streiten, um dem Publikum noch ein Bundle herauszuholen. U-Bahn-Tunnel und Aussenwerbe-Flächen sehen wieder aus wie klassische Marken-[Kampagnen](/de/in-china-wachsen/kampagnen), mit grossen Slogans und einfachen Versprechen.
+Gala-artige Launch-Shows mit Celebrity-Hosts. Comedy-Sketche über Preise, die zu hoch wirken, und Qualität, die zu niedrig wirkt. Varieté-Segmente, in denen KOLs auf der Bühne mit Markenmanagern streiten, um dem Publikum noch ein Bundle herauszuholen. U-Bahn-Tunnel und Aussenwerbe-Flächen sehen wieder aus wie klassische Marken-[Kampagnen](/de/in-china-wachsen/kampagnen), mit großen Slogans und einfachen Versprechen.
 
 Dieselben Plattformen, die China das Wischen beigebracht haben, sprechen plötzlich in der Sprache der Hauptsendezeit.
 
@@ -39,11 +40,11 @@ Double 11 begann als eintägiger Tab-Takeover, mit dem einzigen Versprechen des 
 
 Eine Zeit lang wirkte jede Schicht wie ein Upgrade. Dann verschwammen die Upgrades zu Lärm.
 
-In der siebzehnten Ausgabe ist das Festival keine Überraschung mehr. Grosse Anschaffungen werden um es herum geplant. Jede Fläche schreit, rote Banner und Niedrigpreis-Sticker verschmelzen zu einer Masse. Wichtiger noch: Das Publikum ist über das Skript hinausgewachsen.
+In der siebzehnten Ausgabe ist das Festival keine Überraschung mehr. Große Anschaffungen werden um es herum geplant. Jede Fläche schreit, rote Banner und Niedrigpreis-Sticker verschmelzen zu einer Masse. Wichtiger noch: Das Publikum ist über das Skript hinausgewachsen.
 
 Chinesische Käufer vergleichen heute standardmässig über Plattformen, verfolgen Preisbewegungen vor und nach den Kampagnen, teilen Stapeltaktiken in WeChat-Gruppen und Xiaohongshu-Notes und wissen, welche Versprechen real sind und welche kosmetisch. Sie verhalten sich nicht wie Anfänger auf dem Jahrmarkt. Sie verhalten sich wie Retail-Profis, die ihr eigenes Portfolio managen.
 
-In dieser Welt ist ein weiteres hyperaktives Banner oder ein noch intensiver Livestream nicht aufregend. Es ist nur mehr Lärm. Also greift Double 11 zu etwas Älterem und Grösserem als zum Feed: zur emotionalen Grammatik des Fernsehens.
+In dieser Welt ist ein weiteres hyperaktives Banner oder ein noch intensiver Livestream nicht aufregend. Es ist nur mehr Lärm. Also greift Double 11 zu etwas Älterem und Größerem als zum Feed: zur emotionalen Grammatik des Fernsehens.
 
 ## Warum alte Medien wieder im Bild sind
 
@@ -53,7 +54,7 @@ An der Oberfläche wirkt es nach einer stilistischen Wahl. Mehr Shows, mehr Witz
 
 Der frühe Double 11 fühlte sich wie ein geteilter Countdown an. Alle wussten, wann er begann und wann er endete. Mit der Streckung in Wochen aus Pre-Sale und Long-Tail verblasste das „Wir sind alle jetzt hier"-Gefühl.
 
-Varieté-artige Launch-Abende, Live-Galas und stark beworbene Specials lenken den Fokus zurück auf wenige grosse Momente. Plattformen bekommen wieder eine zentrale Bühne, statt eines weiteren Slots im Scroll.
+Varieté-artige Launch-Abende, Live-Galas und stark beworbene Specials lenken den Fokus zurück auf wenige große Momente. Plattformen bekommen wieder eine zentrale Bühne, statt eines weiteren Slots im Scroll.
 
 ### Die Witze besitzen, bevor Verbraucher es tun
 
@@ -69,9 +70,9 @@ Die Regulierung von Online-Promotion und irreführender Preisgebung ist strenger
 
 Gleichzeitig ist der kommerzielle Druck nicht verschwunden. Plattformen wollen Wachstum. Marken müssen das Quartal halten.
 
-Alte Medienformate bieten einen Weg, echten Wert und echten Tiefstpreis öffentlich und ernsthaft zu inszenieren. Preise werden auf der Bühne in grosser Schrift enthüllt. KOLs stellen Bundles live zusammen, die Mathematik sichtbar vor und nach den Erzählungen, statt im Kleingedruckten zu verschwinden.
+Alte Medienformate bieten einen Weg, echten Wert und echten Tiefstpreis öffentlich und ernsthaft zu inszenieren. Preise werden auf der Bühne in großer Schrift enthüllt. KOLs stellen Bundles live zusammen, die Mathematik sichtbar vor und nach den Erzählungen, statt im Kleingedruckten zu verschwinden.
 
-Die Botschaft ist einfach. Wir wissen, dass ihr die Details verfolgt. Wir sind bereit, sie auf eine grössere Bühne zu stellen.
+Die Botschaft ist einfach. Wir wissen, dass ihr die Details verfolgt. Wir sind bereit, sie auf eine größere Bühne zu stellen.
 
 ## Der eigentliche Protagonist: Chinas Retail-Profi-Käufer
 
@@ -87,7 +88,7 @@ So gelesen, ist der Wechsel zur alten Mediensprache weniger ein Rückschritt als
 
 ## Was globale Marken aus dem 11.11 dieses Jahr mitnehmen sollten
 
-Für Teams in Paris, London oder New York liegt die Versuchung nahe, sich auf die Formate zu fixieren: die Gala, den Sketch, die grosse Show.
+Für Teams in Paris, London oder New York liegt die Versuchung nahe, sich auf die Formate zu fixieren: die Gala, den Sketch, die große Show.
 
 Der nützlichere Befund liegt darunter.
 

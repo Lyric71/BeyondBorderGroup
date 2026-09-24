@@ -1,6 +1,7 @@
 ---
 title: "Dónde se gana la atención: el mapa de las redes sociales chinas en 2024"
-description: "WeChat, Weibo, TikTok y compañía ofrecen a las marcas globales una vía sin precedentes para conectar con una de las mayores bases de consumidores del mundo. Entender estas plataformas resulta clave para crecer en el mercado chino."
+seoTitle: "Dónde se gana la atención: redes sociales chinas en 2024"
+description: "WeChat, Weibo, Douyin y compañía abren a las marcas globales una vía inédita hacia uno de los mayores mercados de consumo. Claves de cada plataforma."
 pubDate: "2024-08-10"
 author: "TheChinaPath"
 category: "Platforms"

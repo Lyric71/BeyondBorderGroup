@@ -1,6 +1,7 @@
 ---
 title: "Cómo JD convierte las tiendas físicas en centros de experiencia"
-description: "JD Mall transforma el retail físico en un destino experiencial donde el cliente prueba productos en lugar de pasearse mirando. El modelo cambia la forma en que las marcas globales conectan con el consumidor chino en categorías de alta consideración."
+seoTitle: "JD convierte sus tiendas físicas en centros de experiencia"
+description: "JD Mall convierte la tienda física en un espacio donde el cliente prueba antes de comprar, y cambia cómo llegan las marcas globales al consumidor chino."
 pubDate: "2025-11-26"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

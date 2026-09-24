@@ -1,6 +1,6 @@
 ---
 title: "China 2026: ocho predicciones para eCommerce y marketing"
-description: "Ocho predicciones para el mercado digital chino en 2026, desde el dominio del comercio instantáneo y la personalización con IA generativa hasta el regreso del marketing experiencial frente al descuento."
+description: "Ocho predicciones para la China digital de 2026: se impone el comercio instantáneo, la IA generativa personaliza y la experiencia gana al descuento."
 pubDate: "2026-01-02"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

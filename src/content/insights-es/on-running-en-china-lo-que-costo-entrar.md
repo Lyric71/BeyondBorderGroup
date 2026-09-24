@@ -121,7 +121,7 @@ Los informes no precisan de qué Tmall se trata. Dos indicios apuntan al marketp
 
 Esa decisión obliga a una marca a costear una plantilla en Shanghái y una sociedad china antes de vender un solo par. On podía permitírselo. Una marca que factura 1,8 millones de francos suizos al año en China, unos 1,9 millones de euros, rara vez aguanta así tres años.
 
-La prueba más barata pasa por una tienda transfronteriza, sin sociedad china detrás. En deporte y outdoor, Tmall Global exige 50.000 yuanes de depósito y 60.000 de cuota anual, con un 5 % de comisión. JD Worldwide pide 35.500 y 7.100 yuanes, también al 5 %. Douyin fija el depósito transfronterizo de la categoría en 75.000 yuanes (datos de las calculadoras de TheChinaPath, septiembre de 2026). La [calculadora de costes de Tmall Global](/es/herramientas/calculadora-de-costes-tmall-global) permite hacer las cuentas con sus propias cifras.
+La prueba más barata pasa por una tienda transfronteriza, sin sociedad china detrás. En deporte y outdoor, Tmall Global exige 50.000 yuanes de depósito y 60.000 de cuota anual, con un 5 % de comisión. JD Worldwide pide 35.500 y 7.100 yuanes, también al 5 %. Douyin transfronterizo cobra un 6 % en deporte y outdoor, y su depósito ya no depende de la categoría: desde junio de 2025 sigue las ventas del mes anterior y tiene un tope de 5.000 yuanes (datos de las calculadoras de TheChinaPath, septiembre de 2026; 《【全球购】保证金管理规范》 de Douyin, https://school.jinritemai.com/doudian/web/articlev0/107821). La [calculadora de costes de Tmall Global](/es/herramientas/calculadora-de-costes-tmall-global) permite hacer las cuentas con sus propias cifras.
 
 ## Lo que se puede cifrar
 

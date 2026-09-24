@@ -59,33 +59,37 @@ type Field = {
   options?: { value: string; label: string; deposit?: string; fee?: string }[];
 };
 
-// CBEC 抖音全球购 categories. Each one sets the platform deposit and the tech
-// service fee, the only two model inputs that move with product category
-// (see Section 8 of the model spec). Fee is the mid of the published band.
+// CBEC 抖音全球购 categories. Each one sets the tech service fee, the base rate
+// in Douyin's 【全球购】技术服务费费率标准 (in force 2026-07-15, flagship store,
+// main-app orders). Where a label spans rows with different rates, fee is the
+// mid of the range. The deposit no longer moves with category: since the
+// 2025-06-05 revision of 【全球购】保证金管理规范 it is tiered on last month's
+// GMV (500 / 2,000 / 5,000 RMB), and every row carries the 5,000 top tier.
+// Log: editorial/logs/partner/douyin-deposits-2026-09-24.md
 const categories: { value: string; label: string; deposit: string; fee: string }[] = [
-  { value: 'food-packaged', label: 'Packaged food (grain, oil, dry goods, seasoning)', deposit: '50000', fee: '4' },
-  { value: 'snacks', label: 'Snacks, nuts, specialty', deposit: '50000', fee: '5' },
-  { value: 'drinks', label: 'Coffee, oats, drink powders', deposit: '50000', fee: '5' },
-  { value: 'tea', label: 'Tea', deposit: '50000', fee: '2' },
-  { value: 'supplements', label: 'Dietary supplements', deposit: '50000', fee: '4' },
-  { value: 'tonics', label: "Traditional tonics (bird's nest and the like)", deposit: '200000', fee: '5' },
-  { value: 'alcohol', label: 'Alcohol', deposit: '100000', fee: '5' },
-  { value: 'skincare', label: 'Skincare', deposit: '100000', fee: '5' },
-  { value: 'makeup', label: 'Makeup, fragrance', deposit: '100000', fee: '5' },
-  { value: 'beauty-device', label: 'Beauty and personal-care devices', deposit: '100000', fee: '4' },
-  { value: 'personal-care', label: 'Personal care', deposit: '50000', fee: '4' },
-  { value: 'home', label: 'Home, bedding, kitchenware', deposit: '50000', fee: '3' },
-  { value: 'appliances', label: 'Small appliances', deposit: '75000', fee: '4' },
-  { value: '3c', label: '3C accessories, cameras', deposit: '50000', fee: '4' },
-  { value: 'phones', label: 'Phones, laptops, tablets', deposit: '100000', fee: '2.5' },
-  { value: 'apparel', label: 'Apparel, underwear', deposit: '100000', fee: '5' },
-  { value: 'footwear', label: 'Footwear', deposit: '100000', fee: '5' },
-  { value: 'bags', label: 'Bags, belts, accessories', deposit: '100000', fee: '5' },
-  { value: 'jewellery', label: 'Fashion jewellery', deposit: '100000', fee: '5.5' },
-  { value: 'sports', label: 'Sports, outdoor', deposit: '75000', fee: '5' },
-  { value: 'infant-formula', label: 'Infant formula', deposit: '100000', fee: '4' },
-  { value: 'baby', label: 'Baby products, toys', deposit: '50000', fee: '5' },
-  { value: 'pet', label: 'Pet food, supplies', deposit: '50000', fee: '5' },
+  { value: 'food-packaged', label: 'Packaged food (grain, oil, dry goods, seasoning)', deposit: '5000', fee: '2.5' },
+  { value: 'snacks', label: 'Snacks, nuts, specialty', deposit: '5000', fee: '3' },
+  { value: 'drinks', label: 'Coffee, oats, drink powders', deposit: '5000', fee: '3' },
+  { value: 'tea', label: 'Tea', deposit: '5000', fee: '3' },
+  { value: 'supplements', label: 'Dietary supplements', deposit: '5000', fee: '4' },
+  { value: 'tonics', label: "Traditional tonics (bird's nest and the like)", deposit: '5000', fee: '4' },
+  { value: 'alcohol', label: 'Alcohol', deposit: '5000', fee: '3' },
+  { value: 'skincare', label: 'Skincare', deposit: '5000', fee: '5' },
+  { value: 'makeup', label: 'Makeup, fragrance', deposit: '5000', fee: '5' },
+  { value: 'beauty-device', label: 'Beauty and personal-care devices', deposit: '5000', fee: '4.5' },
+  { value: 'personal-care', label: 'Personal care', deposit: '5000', fee: '3.5' },
+  { value: 'home', label: 'Home, bedding, kitchenware', deposit: '5000', fee: '6' },
+  { value: 'appliances', label: 'Small appliances', deposit: '5000', fee: '3' },
+  { value: '3c', label: '3C accessories, cameras', deposit: '5000', fee: '3' },
+  { value: 'phones', label: 'Phones, laptops, tablets', deposit: '5000', fee: '3' },
+  { value: 'apparel', label: 'Apparel, underwear', deposit: '5000', fee: '6' },
+  { value: 'footwear', label: 'Footwear', deposit: '5000', fee: '6' },
+  { value: 'bags', label: 'Bags, belts, accessories', deposit: '5000', fee: '6' },
+  { value: 'jewellery', label: 'Fashion jewellery', deposit: '5000', fee: '6' },
+  { value: 'sports', label: 'Sports, outdoor', deposit: '5000', fee: '6' },
+  { value: 'infant-formula', label: 'Infant formula', deposit: '5000', fee: '3' },
+  { value: 'baby', label: 'Baby products, toys', deposit: '5000', fee: '4.5' },
+  { value: 'pet', label: 'Pet food, supplies', deposit: '5000', fee: '5' },
   { value: 'custom', label: 'Custom (set the deposit and fee by hand)', deposit: '', fee: '' },
 ];
 
@@ -102,7 +106,7 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
   {
     title: 'Category',
     icon: gicon.platform,
-    note: 'Pick your product category. On 抖音全球购 the deposit and the tech service fee both move with the category, so this sets the two numbers below. Your DP may quote something different; override by hand if so.',
+    note: "Pick your product category. On 抖音全球购 the tech service fee changes with the category, so this sets the rate below. The deposit doesn't: Douyin ties it to last month's sales. Your DP may quote something different; override by hand if so.",
     fields: [
       {
         id: 'category',
@@ -126,8 +130,8 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
     icon: gicon.platform,
     fields: [
       { id: 'period', label: 'Engagement period', value: '12', kind: 'number', readonly: true, suffix: 'months', hint: 'Fixed. The model prices a full twelve-month run; every yearly figure follows this window.' },
-      { id: 'platformDeposit', label: 'Douyin 全球购 platform deposit', value: '50000', kind: 'money', hint: 'Refundable when the store closes. Set by your category above.' },
-      { id: 'techFee', label: 'Platform tech service fee', value: '4', kind: 'percent', step: '0.1', hint: 'Taken on each sale. Set by your category above.' },
+      { id: 'platformDeposit', label: 'Douyin 全球购 platform deposit', value: '5000', kind: 'money', hint: "Refundable when the store closes. Tiered on last month's sales: 5,000 RMB above 100,000 a month." },
+      { id: 'techFee', label: 'Platform tech service fee', value: '2.5', kind: 'percent', step: '0.1', hint: 'Taken on each sale. Set by your category above.' },
       { id: 'agentFee', label: 'Customs clearance agent, annual', value: '0', kind: 'money', hint: 'Optional. Many brands let the DP or the bonded warehouse act as the 境内代理人, so leave it at zero unless you retain a separate one.' },
       { id: 'trademark', label: 'CN trademark registration', value: '0', kind: 'money' },
       { id: 'brandSetup', label: 'Brand setup contribution', value: '25000', kind: 'money' },
@@ -199,7 +203,7 @@ const help: Record<string, string> = {
   dpCommission:
     'A percentage the DP takes on the sales they generate, on top of the retainer. The international-brand tier sits at 5 to 8 percent, and the industry caps it near 10 percent. This is separate from the paid media you fund directly.',
   category:
-    'Your product category on the cross-border store (抖音全球购). It sets two numbers: the platform deposit and the tech service fee, which both change by category. Pick the closest fit and the fields below fill in. Choose Custom to type your own.',
+    'Your product category on the cross-border store (抖音全球购). It sets the tech service fee, which runs from 2 to 6 percent depending on what you sell. Pick the closest fit and the fee fills in. Choose Custom to type your own.',
   kolCommission:
     'The cut a livestream host or short-video creator keeps on each sale they drive. It is pure commission, paid only when they actually sell. Food and agricultural products tend to sit around 8 to 20 percent; beauty and luxury run higher.',
   roas:
@@ -210,9 +214,9 @@ const help: Record<string, string> = {
   period:
     'The model is built on a twelve-month engagement. The GMV target, the DP retainer, the agent fee and the co-fund all cover one full year, and Year 2 in the results shows the same twelve months without the one-time setup. It sits here so the assumption is explicit; it is not adjustable.',
   platformDeposit:
-    'A security deposit Douyin holds while your store is open, returned when you close in good standing. The cross-border baseline is 50,000 RMB, and some categories run to 100,000 or 200,000. The category picker sets it for you.',
+    "A security deposit Douyin holds while your store is open, returned when you close in good standing. Since June 2025 it follows last month's sales, whatever the category: 500 RMB up to 50,000 RMB of monthly GMV, 2,000 up to 100,000, and 5,000 above that. The model uses 5,000, the tier a brand at this scale sits in. If Douyin ends up covering refunds your balance can't, it can ask for a second deposit of 2 to 10 times that amount.",
   techFee:
-    'A technology service fee Douyin charges on each sale, taken as a share of GMV. It runs from about 2 to 6 percent depending on the category. The category picker sets it for you.',
+    'A technology service fee Douyin charges on each sale, taken as a share of GMV. On the cross-border store it runs from about 2 to 6 percent depending on the category, per the schedule Douyin put in force on July 15, 2026. The category picker sets it for you.',
   agentFee:
     'An optional yearly fee for a mainland customs agent (境内代理人). Selling cross-border from an offshore entity, you do need a China-registered company to file with customs in your name and carry the liability that comes with it. What you do not need is a separate one: on the bonded model the DP or the warehouse usually takes the role and folds it into their fees, which is why most brands leave this at zero. Add a figure only if you retain a standalone agent.',
   trademark:
@@ -260,7 +264,7 @@ const notes = [
   'The DP runs Douyin only. Their team cost sits inside the retainer and the commission, so there is no separate headcount line. KOL commission is billed apart, on sales the creators actually drive.',
   'A pure KOL mix is a launch tactic, not an end state. Creator livestreams account for roughly 30% of Douyin GMV platform-wide, top hosts take 30 to 50% commission, and their volumes are hard to repeat month over month. Brands that scale on Douyin pair creators with 千川 paid media, which re-runs the creator content that already converts, and let organic and store traffic climb from there.',
   'ROAS is one number here: what you expect the account to average across the first year. A fresh Douyin account runs low in the early months and climbs once the algorithm learns who to show you to, so set a blended figure rather than a best case.',
-  'The platform deposit and the tech service fee move with your product category. Pick a category in the fine-tune panel and both fill in from the published cross-border bands.',
+  "The tech service fee moves with your product category. Pick one in the fine-tune panel and it fills in from Douyin's cross-border schedule of July 2026. The base platform deposit works differently: it tracks monthly sales and tops out at 5,000 RMB.",
   'Year 1 usually runs at a loss at RMB 2M GMV. The table sets Year 1 against Year 2, when the one-time setup drops off, the channel mix switches to your Year 2 sliders and GMV steps up by your growth assumption. Breakeven GMV shows the scale you need for gross profit to cover the bill, and it often lands several times above a first-year target.',
 ];
 
@@ -281,13 +285,14 @@ const calcSchema = webApplicationSchema({
 ---
 
 <Layout
+  preloadImage="/Images/tools/douyin-hero-bg.webp"
   schema={calcSchema}
   title="Douyin cross-border cost calculator | TheChinaPath"
-  description="Estimate what it costs to set up and run a cross-border Douyin channel in China through a Douyin Partner. Works for any product category. Bonded logistics, KOL commission, paid media, tax and platform fees, in RMB and USD."
+  description="Estimate the cost of a cross-border Douyin store run through a Douyin Partner: bonded logistics, KOL commission, paid media, tax and fees, in RMB and USD."
 >
   <section
     class="tool-hero tool-hero--image"
-    style="--tool-hero-img: url('/Images/tools/douyin-hero-bg.png')"
+    style="--tool-hero-img: url('/Images/tools/douyin-hero-bg.webp')"
   >
     <div class="container tool-hero__inner">
       <nav class="tool-hero__crumbs" aria-label="Breadcrumb">

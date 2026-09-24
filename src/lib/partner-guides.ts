@@ -91,10 +91,16 @@ export async function getPartnerInsights(locale: PartnerLocale) {
   const twins = new Map(
     (await getCollection(INSIGHT_COLLECTION[locale], ({ data }) => !data.draft)).map((p) => [p.id, p]),
   );
+  // FR and ES files are named with their native slug; German files keep the
+  // English file name and take their native slug from the map (the same rule
+  // as src/pages/de/analysen/[...slug].astro). Either way the URL uses the
+  // native slug.
   return english.flatMap((p) => {
-    const twin = twins.get(map[p.id] ?? '');
+    const slug = map[p.id];
+    if (!slug) return [];
+    const twin = twins.get(locale === 'de' ? p.id : slug);
     return twin
-      ? [{ id: twin.id, data: twin.data, body: twin.body, href: `${INSIGHT_BASE[locale]}/${twin.id}`, enTags: p.data.tags }]
+      ? [{ id: twin.id, data: twin.data, body: twin.body, href: `${INSIGHT_BASE[locale]}/${slug}`, enTags: p.data.tags }]
       : [];
   });
 }

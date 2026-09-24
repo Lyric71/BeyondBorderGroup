@@ -1,6 +1,7 @@
 ---
 title: "Science et émotion : la nouvelle grammaire des marques en Chine"
-description: "Une marque chinoise de dermocosmétique gagne 47 % au Double 11. Sa rivale directe en perd 57. Même catégorie, mêmes plateformes. L'écart se joue sur l'architecture."
+seoTitle: "Science et émotion : la grammaire des marques en Chine"
+description: "Au Double 11, une marque chinoise de dermocosmétique gagne 47 %, sa rivale en perd 57. Même catégorie, mêmes plateformes : l'architecture fait l'écart."
 pubDate: "2026-03-12"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

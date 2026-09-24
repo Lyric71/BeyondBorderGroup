@@ -1,6 +1,7 @@
 ---
 title: "Campañas de marketing verde efectivas de marcas líderes en China"
-description: "La sostenibilidad se ha convertido en un eje de marketing en China. Las campañas que muestran un compromiso ambiental real conectan con consumidores que toman decisiones de compra más conscientes."
+seoTitle: "Marketing verde en China: campañas de marcas que funcionan"
+description: "La sostenibilidad es ya un eje del marketing en China: las campañas con compromiso ambiental real conectan con un consumidor cada vez más consciente."
 pubDate: "2024-06-17"
 author: "TheChinaPath"
 category: "Brand & Localization"

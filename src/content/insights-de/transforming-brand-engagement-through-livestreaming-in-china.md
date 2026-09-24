@@ -1,6 +1,7 @@
 ---
 title: "Die digitale Bühne: Wie Chinas CEOs Markenbindung über Livestream neu definieren"
-description: "Chinesische Vorstandschefs treten selbst vor die Kamera, um Sichtbarkeit und Umsatz zu heben. Sie folgen Mustern, die globale Tech-Stars geprägt haben, und balancieren Professionalität mit Authentizität."
+seoTitle: "Wie Chinas Konzernchefs per Livestream Marken stärken"
+description: "Chinas Konzernchefs treten selbst vor die Kamera, um Sichtbarkeit und Umsatz zu steigern. Dabei müssen sie Professionalität und Authentizität austarieren."
 pubDate: "2024-05-10"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

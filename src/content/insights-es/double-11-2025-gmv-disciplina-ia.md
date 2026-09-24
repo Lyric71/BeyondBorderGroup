@@ -1,6 +1,6 @@
 ---
 title: "11.11 2025: del teatro del GMV a la eficiencia con IA"
-description: "Double 11 de 2025 dejó de ser un espectáculo de GMV para convertirse en una prueba de eficiencia operativa. Las plataformas priorizaron sistemas con IA, precios transparentes y servicio fiable por encima de los efectos."
+description: "El Double 11 de 2025 cambió el espectáculo del GMV por la eficiencia operativa: las plataformas apostaron por la IA, precios claros y un servicio fiable."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

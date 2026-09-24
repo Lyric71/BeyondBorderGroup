@@ -11,7 +11,7 @@ const copy: BuildInChinaCopy = {
   meta: {
     title: 'Website, WeChat and mini program in China | TheChinaPath',
     description:
-      'Why your site is slow or invisible in China: Baidu indexing, ICP filing, and whether you need a WeChat mini program or a mobile site. Built by ChinaWebFoundry, our web team in Shanghai.',
+      'Why your site is slow or invisible in China: Baidu indexing, ICP filing, and whether you need a WeChat mini program. Built by ChinaWebFoundry in Shanghai.',
   },
 
   hero: {

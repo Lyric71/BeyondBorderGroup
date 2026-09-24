@@ -1,6 +1,7 @@
 ---
 title: "Best Practices for KOC / Key Opinion Consumers Marketing in China"
-description: "Key Opinion Consumers are becoming essential to eCommerce success in China. These micro-influencers prioritize authenticity and relatability, offering brands a cost-effective alternative to traditional celebrity endorsements for connecting with engaged niche audiences."
+seoTitle: "KOC Marketing in China: Best Practices for Brands"
+description: "Key Opinion Consumers (KOCs) are the micro-influencers Chinese shoppers trust. They cost less than celebrity KOLs and reach engaged niche audiences."
 pubDate: "2024-12-07"
 updatedDate: "2026-05-15"
 author: "TheChinaPath"

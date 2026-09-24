@@ -1,6 +1,7 @@
 ---
 title: "Explosive Growth in the Chinese Luxury Travel Segment | 2024 Insights"
-description: "China's luxury travel market has expanded exponentially over the past decade, driven by rising affluence, increased spending power, and evolving consumer preferences toward authentic, culturally immersive experiences rather than mere displays of wealth."
+seoTitle: "The Growth of Chinese Luxury Travel: 2024 Insights"
+description: "China's luxury travel market has boomed over the past decade, driven by rising wealth and a taste for culturally immersive trips over status displays."
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"

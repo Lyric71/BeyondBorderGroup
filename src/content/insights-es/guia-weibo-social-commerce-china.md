@@ -1,6 +1,7 @@
 ---
 title: "Guía de marketing en Weibo: dominar el social commerce en China"
-description: "Weibo, una de las plataformas sociales líderes en China con más de 600 millones de usuarios activos al mes, abre una vía clara para conectar con un consumidor joven y muy digital. Esta guía cubre alta de cuenta, estrategia de contenido, colaboración con KOL e integración con eCommerce."
+seoTitle: "Marketing en Weibo: guía del social commerce en China"
+description: "Weibo supera los 600 millones de usuarios al mes. Guía para abrir cuenta, planificar contenidos, trabajar con KOL y enlazar con el eCommerce."
 pubDate: "2024-12-13"
 author: "TheChinaPath"
 category: "Platforms"

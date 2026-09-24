@@ -1,6 +1,7 @@
 ---
 title: "Plató digital: cómo los directivos chinos están reinventando la relación con su marca a través del livestream"
-description: "Los altos ejecutivos chinos se suben al livestream para empujar visibilidad y ventas. Siguen la estela de algunos líderes tecnológicos globales mientras tratan de equilibrar profesionalidad y autenticidad."
+seoTitle: "Plató digital: los directivos chinos saltan al livestream"
+description: "Los altos directivos chinos se ponen al frente del livestream para ganar visibilidad y ventas, a medio camino entre la profesionalidad y la autenticidad."
 pubDate: "2024-05-10"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

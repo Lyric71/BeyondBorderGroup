@@ -1,6 +1,7 @@
 ---
 brand: "Master Martini"
 title: "The partner of pastry chefs, chocolatiers and bakers. Social for South East Asia."
+seoTitle: "Master Martini: Social Media for Bakers in Southeast Asia"
 summary: "Running Master Martini's South East Asia social accounts to turn professional bakers and chefs into an engaged, product-literate community."
 metric: "Professional baker community built across South East Asia social accounts."
 category: "Social & Content"

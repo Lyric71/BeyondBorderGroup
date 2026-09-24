@@ -1,6 +1,7 @@
 ---
 title: "Maximizing Brand Impact: How the 11.11 Shopping Festival Transforms E-Commerce in China"
-description: "The 11.11 Shopping Festival has become the world's largest online shopping event. Brands can capitalize through social media engagement, influencer partnerships, and strategic localization."
+seoTitle: "11.11 Shopping Festival in China: Strategies for Brands"
+description: "How brands can win the 11.11 Shopping Festival in China, the world's biggest online sale, with social media, influencer partnerships and localization."
 pubDate: "2024-10-11"
 author: "TheChinaPath"
 category: "E-Commerce"

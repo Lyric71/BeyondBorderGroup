@@ -1,7 +1,7 @@
 ---
 brand: "Langnese"
 title: "Revertir la caída en el mercado chino de la miel"
-summary: "Una reconstrucción completa del go-to-market de Langnese en China, desde la distribución y los formatos hasta el contenido. Frenó una caída prolongada de ventas y abrió nuevos canales regionales."
+summary: "Rehicimos el go-to-market de Langnese en China, de la distribución al contenido. Frenó una larga caída de ventas y abrió nuevos canales regionales."
 metric: "Caída de ventas prolongada revertida. Nuevos canales regionales abiertos en China."
 category: "Distribution"
 industry: "Food & Beverage"

@@ -1,6 +1,7 @@
 ---
 title: "Livestreaming en el eCommerce chino: buenas prácticas para acertar"
-description: "El livestreaming ha transformado la relación entre marcas y consumidores en China al combinar vídeo en directo, interacción en tiempo real y compra fluida. Taobao Live y Douyin dominan el terreno y permiten subir las ventas y construir relación con el cliente."
+seoTitle: "Livestreaming en el eCommerce chino: buenas prácticas"
+description: "El livestreaming ha cambiado la relación entre marcas y consumidores en China. Taobao Live y Douyin dominan un formato que dispara ventas y fideliza."
 pubDate: "2024-12-06"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

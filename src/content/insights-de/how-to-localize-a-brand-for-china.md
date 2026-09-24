@@ -1,6 +1,6 @@
 ---
 title: "Wie lokalisiert man eine Marke für China?"
-description: "Eine Marke für China zu lokalisieren, verlangt das Verständnis kultureller Normen, die Übersetzung von Inhalten, die Anpassung an lokale Vorlieben und die Erfüllung der Vorschriften. So erreichen Sie diesen riesigen Käufermarkt."
+description: "Wer eine Marke für China lokalisiert, muss kulturelle Normen kennen, Inhalte anpassen, Vorlieben treffen und Vorschriften einhalten. So gelingt es."
 pubDate: "2023-02-03"
 author: "TheChinaPath"
 category: "Brand & Localization"
@@ -11,7 +11,7 @@ heroImageAlt: "Konzeptbild zur Marken-Internationalisierung"
 
 ## Wie lokalisiert man eine Marke für China?
 
-Um eine Marke wirkungsvoll für den [chinesischen Markt](/de/nach-china/markteintrittsberatung) zu [lokalisieren](/de/nach-china/marke-und-lokalisierung), zählt das Verständnis der einzigartigen kulturellen, gesellschaftlichen und wirtschaftlichen Faktoren in China. Mit über 1,4 Milliarden Menschen ist das Land einer der grössten und am schnellsten wachsenden Käufermärkte der Welt. Es ist zugleich ein komplexer Markt mit eigenen Normen, Vorlieben und Vorschriften.
+Um eine Marke wirkungsvoll für den [chinesischen Markt](/de/nach-china/markteintrittsberatung) zu [lokalisieren](/de/nach-china/marke-und-lokalisierung), zählt das Verständnis der einzigartigen kulturellen, gesellschaftlichen und wirtschaftlichen Faktoren in China. Mit über 1,4 Milliarden Menschen ist das Land einer der größten und am schnellsten wachsenden Käufermärkte der Welt. Es ist zugleich ein komplexer Markt mit eigenen Normen, Vorlieben und Vorschriften.
 
 Mit den folgenden Schritten lokalisieren Sie Ihre Marke und sprechen chinesische Käufer überzeugend an.
 

@@ -1,6 +1,6 @@
 ---
 title: "Moteurs de recherche chinois 2024 : la carte qui compte"
-description: "L'internet chinois fonctionne avec ses propres moteurs, loin des standards occidentaux. Baidu garde plus de 50 % du marché, mais Sogou, Shenma, Haosuo et Youdao tiennent chacun un segment précis."
+description: "Baidu détient plus de 50 % du marché, mais Sogou, Shenma et Youdao tiennent chacun leur créneau. La carte des moteurs de recherche qui comptent en Chine."
 pubDate: "2024-09-02"
 author: "TheChinaPath"
 category: "Platforms"
@@ -11,7 +11,7 @@ heroImageAlt: "Moteur de recherche chinois"
 
 ## Le marché des moteurs de recherche en Chine
 
-L'internet chinois joue selon ses propres règles. Le Grand Pare-feu et la régulation publique ferment la porte à la plupart des sites et moteurs étrangers. De cette contrainte est née une génération d'acteurs locaux, taillés pour le public chinois. En 2024, quatre noms dominent : Baidu, Sogou, Shenma et Haosuo, chacun avec ses forces et son public.
+L'internet chinois joue selon ses propres règles. Le Grand Pare-feu et la régulation publique ferment la porte à la plupart des sites et moteurs étrangers. De cette contrainte est née une génération d'acteurs locaux, taillés pour le public chinois. En 2024, quatre noms dominent : Baidu, Sogou, Shenma et Haosou, chacun avec ses forces et son public.
 
 ## Pourquoi les moteurs chinois pèsent dans le marketing
 
@@ -49,15 +49,15 @@ Les liens étroits avec Alibaba donnent priorité aux produits Taobao et Tmall d
 
 ![Shenma, moteur de recherche mobile](/Images/insights/2024/07/shenma2-500x408-1.png)
 
-### 4. Haosuo, le moteur sécurité
+### 4. Haosou, le moteur sécurité
 
-Alias Qihoo 360 Search, Haosuo mise sur la sécurité. Le moteur capte une part significative du marché chinois et séduit les entreprises pour ses garanties techniques.
+Alias Qihoo 360 Search, Haosou mise sur la sécurité. Le moteur capte une part significative du marché chinois et séduit les entreprises pour ses garanties techniques.
 
-#### Faire du marketing sur Haosuo
+#### Faire du marketing sur Haosou
 
-Le classement Haosuo valorise les sites à forte autorité et bien perçus côté confiance. Excellent terrain pour le B2B. La concurrence y reste moins vive que sur Baidu, ce qui se traduit souvent par un coût par clic plus bas en publicité payante.
+Le classement Haosou valorise les sites à forte autorité et bien perçus côté confiance. Excellent terrain pour le B2B. La concurrence y reste moins vive que sur Baidu, ce qui se traduit souvent par un coût par clic plus bas en publicité payante.
 
-![Interface de recherche Haosuo](/Images/insights/2024/07/Haosou.png)
+![Interface de recherche Haosou](/Images/insights/2024/07/Haosou.png)
 
 ### 5. Youdao, la référence traduction
 
@@ -81,4 +81,4 @@ Le SEO localisé reste décisif. Chaque moteur applique ses propres règles, tr�
 
 ## Pour finir
 
-Le bon moteur de recherche chinois pour son marketing en 2024 dépend des objectifs et du public visé. Baidu reste incontournable, mais Sogou, Shenma et Haosuo proposent des atouts spécifiques qu'une stratégie ciblée peut activer avec profit. Cerner les forces de chaque acteur et y ajuster la démarche, voilà ce qui construit une vraie présence sur le marché chinois.
+Le bon moteur de recherche chinois pour son marketing en 2024 dépend des objectifs et du public visé. Baidu reste incontournable, mais Sogou, Shenma et Haosou proposent des atouts spécifiques qu'une stratégie ciblée peut activer avec profit. Cerner les forces de chaque acteur et y ajuster la démarche, voilà ce qui construit une vraie présence sur le marché chinois.

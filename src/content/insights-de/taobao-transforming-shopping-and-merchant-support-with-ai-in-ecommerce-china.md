@@ -1,6 +1,7 @@
 ---
 title: "Wie Taobao und Tmall den Einkauf und den Händler-Support mit KI umbauen"
-description: "Alibabas Taobao und Tmall heben das Einkaufserlebnis und die operative Effizienz der Händler mit KI-Werkzeugen wie Taobao Wenwen, visueller Bilderzeugung und smartem Kundenservice."
+seoTitle: "Taobao und Tmall: KI für Einkauf und Händler-Support"
+description: "Taobao und Tmall setzen auf KI: Taobao Wenwen, Bildgenerierung und smarter Kundenservice verbessern das Einkaufserlebnis und entlasten die Händler."
 pubDate: "2024-07-12"
 author: "TheChinaPath"
 category: "AI & Innovation"
@@ -18,7 +19,7 @@ heroImageAlt: "Alibaba kündigt die Integration von Taobao und Tmall an"
 
 ### Taobao Wenwen: ein KI-gestützter Einkaufsassistent
 
-Im September 2023 gestartet, integriert Taobao Wenwen KI in die Taobao-App und liefert einen Frage-und-Antwort-Dialog. Wenwen liefert detaillierte Produktempfehlungen, führt durch Kaufentscheidungen und zeigt Multi-[Media](/de/in-china-wachsen/media)-Inhalte wie Videos und Livestreams. Während grosser Festivals wie 11.11 oder 6.18 identifiziert Wenwen die besten Angebote und liefert sofortige Preisanalysen, ein Wendepunkt für Millionen Nutzer.
+Im September 2023 gestartet, integriert Taobao Wenwen KI in die Taobao-App und liefert einen Frage-und-Antwort-Dialog. Wenwen liefert detaillierte Produktempfehlungen, führt durch Kaufentscheidungen und zeigt Multi-[Media](/de/in-china-wachsen/media)-Inhalte wie Videos und Livestreams. Während großer Festivals wie 11.11 oder 6.18 identifiziert Wenwen die besten Angebote und liefert sofortige Preisanalysen, ein Wendepunkt für Millionen Nutzer.
 
 ## Mehr Effizienz für Händler
 

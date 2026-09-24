@@ -1,6 +1,7 @@
 ---
 title: "Singles' Day : comment le 11.11 a redessiné l'e-commerce chinois"
-description: "Devenu la plus grosse opération commerciale en ligne au monde, le 11.11 récompense les marques qui maîtrisent les réseaux sociaux chinois, les alliances avec les influenceurs et une localisation rigoureuse."
+seoTitle: "Singles' Day : comment le 11.11 a redessiné l'e-commerce"
+description: "Plus grande opération commerciale en ligne au monde, le 11.11 récompense les marques qui maîtrisent réseaux sociaux chinois, influence et localisation."
 pubDate: "2024-10-11"
 author: "TheChinaPath"
 category: "E-Commerce"

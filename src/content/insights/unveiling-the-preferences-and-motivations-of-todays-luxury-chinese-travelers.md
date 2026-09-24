@@ -1,6 +1,7 @@
 ---
 title: "Understanding Today's Luxury Chinese Travelers: Preferences and Motivations"
-description: "The luxury Chinese traveler represents a growing demographic reshaping global travel markets. These affluent consumers from major urban centers seek premium experiences that blend exclusivity, cultural exploration, and personal growth."
+seoTitle: "Luxury Chinese Travelers: Preferences and Motivations"
+description: "Who today's luxury Chinese travelers are, where they live and what they want: trips that mix exclusivity, cultural discovery and personal growth."
 pubDate: "2024-07-08"
 author: "TheChinaPath"
 category: "Market Strategy"

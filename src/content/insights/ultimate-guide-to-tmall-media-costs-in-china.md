@@ -1,6 +1,7 @@
 ---
 title: "Guide to Tmall Media Costs in China | Optimize Your Brand's Investment"
-description: "Tmall, Alibaba's leading B2C eCommerce platform in China, offers brands access to over 500 million monthly users. This guide covers setup fees, advertising options, content marketing strategies, and participation in major shopping events to help brands maximize ROI."
+seoTitle: "Tmall Media Costs in China: A Guide for Brands"
+description: "What Tmall costs brands in China: a 50,000 to 100,000 yuan deposit, annual fees, ad formats, content marketing and the price of joining shopping festivals."
 pubDate: "2024-10-30"
 author: "TheChinaPath"
 category: "E-Commerce"

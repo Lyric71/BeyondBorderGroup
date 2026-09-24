@@ -35,7 +35,7 @@ const copy: PartnerGuideCopy = {
     body: [
       'To find a Tmall Partner, ask each candidate for the stores it runs in your category right now, then open those stores on Tmall and judge them the way a shopper would. Before you sign, meet the people who’d actually run it and read the exit terms twice. The store itself should stay in your company’s name.',
       "Alibaba certifies TPs and rates them in its own service marketplace. Start there if you like. Just know the rating says very little about whether a TP has ever sold a product like yours.",
-      'Big listed operators like Baozun run stores for dozens of global brands. A smaller specialist might run six stores, all in one category. Either can work. What matters is how much of the team’s week your brand will get.',
+      'Big listed operators run stores for dozens of global brands. A smaller specialist might run six stores, all in one category. Either can work. What matters is how much of the team’s week your brand will get.',
     ],
   },
 

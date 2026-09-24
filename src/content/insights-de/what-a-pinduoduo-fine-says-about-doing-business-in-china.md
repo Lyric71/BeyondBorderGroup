@@ -1,5 +1,6 @@
 ---
 title: "Pinduoduo-Strafe: Was Chinas Steuerregeln für Marken bedeuten"
+seoTitle: "Strafe gegen Pinduoduo: Was Chinas Steuerregeln bedeuten"
 description: "Eine geringe Steuerstrafe gegen Pinduoduo deutet auf eine Wende für ausländische Marken in China. Was die neuen Meldepflichten der Plattformen bedeuten."
 pubDate: "2026-06-25"
 author: "Cyril Drouin"

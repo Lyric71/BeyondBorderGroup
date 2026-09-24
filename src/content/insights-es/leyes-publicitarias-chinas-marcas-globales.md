@@ -1,6 +1,7 @@
 ---
 title: "Leyes publicitarias en China: claves para marcas internacionales"
-description: "Las leyes publicitarias en China y las normas específicas de cada plataforma plantean retos particulares a las marcas globales que buscan llegar a los consumidores vía eCommerce y redes sociales. Esta guía recorre las restricciones sobre afirmaciones absolutas, las normas por sector y el cumplimiento en publicidad digital."
+seoTitle: "Leyes publicitarias chinas: claves para marcas globales"
+description: "Ley china de publicidad y normas de cada plataforma: superlativos vetados, reglas por sector y cumplimiento digital para las marcas globales."
 pubDate: "2024-10-29"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

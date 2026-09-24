@@ -1,6 +1,7 @@
 ---
 title: "Cuando la PIPL muerde: el aviso de Dior a las marcas globales en China"
-description: "La aplicación de la PIPL china ha pasado de la teoría a la práctica. La sanción a Dior marca el primer castigo formal a una marca extranjera y deja claro que el cumplimiento en materia de datos ya es crítico para cualquier marca global que opere en China."
+seoTitle: "Dior y la PIPL: un aviso para las marcas globales en China"
+description: "La ley china de datos personales (PIPL) ya muerde: la sanción a Dior, primera a una marca extranjera, hace del cumplimiento una prioridad en China."
 pubDate: "2025-11-26"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

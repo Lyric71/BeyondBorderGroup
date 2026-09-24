@@ -1,6 +1,7 @@
 ---
 title: "L'intelligence artificielle, nouveau moteur de l'e-commerce chinois"
-description: "L'e-commerce chinois bascule dans une phase pilotée par l'intelligence artificielle. Le cœur de l'industrie chinoise de l'IA devrait passer de 150 milliards de yuans en 2020 à 1 000 milliards en 2030, ouvrant un cycle inédit d'opportunités et de gains d'efficacité."
+seoTitle: "L'IA, le nouveau moteur de l'e-commerce chinois"
+description: "Le cœur de l'industrie chinoise de l'IA devrait peser 1 000 milliards de yuans en 2030, contre 150 en 2020. L'e-commerce entre dans un nouveau cycle."
 pubDate: "2024-05-16"
 author: "TheChinaPath"
 category: "AI & Innovation"

@@ -1,5 +1,6 @@
 ---
 title: "Dónde encaja Meituan en la estrategia de eCommerce para China"
+seoTitle: "Dónde encaja Meituan en su estrategia de eCommerce"
 description: "Meituan compra Dingdong Maicai por 717 millones de dólares. El comercio instantáneo entra de lleno en el plan de China de las marcas extranjeras."
 pubDate: "2026-07-13"
 author: "Cyril Drouin"

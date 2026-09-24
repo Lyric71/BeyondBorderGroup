@@ -1,6 +1,6 @@
 ---
 title: "Bewährte Praxis für den CRM-Start in China"
-description: "Ein robustes CRM-System ist für den Geschäftserfolg im chinesischen Digital-Markt unerlässlich. Der Leitfaden zeigt bewährte Praxis, abgestimmt auf das Konsumverhalten und das digitale Ökosystem in China."
+description: "Wer in China digital wachsen will, braucht ein belastbares CRM. Bewährte Praxis für den Start, abgestimmt auf Kaufverhalten und Plattformen im Land."
 pubDate: "2025-01-28"
 author: "TheChinaPath"
 category: "Market Strategy"
@@ -50,7 +50,7 @@ Drip ist flexibel und mit anpassbarem Backend ausgestattet. HTML5-Kataloge und p
 
 ### Weimob
 
-Als grösster WeChat-CRM-Anbieter unterstützt Weimob den Übergang vom stationären Handel in den digitalen Raum. VIP-Mitglieder-Management und O2O-Tracking sind besonders für Gastgewerbe und Retail attraktiv. Ideal für Unternehmen, die physische und digitale Touchpoints verbinden.
+Als größter WeChat-CRM-Anbieter unterstützt Weimob den Übergang vom stationären Handel in den digitalen Raum. VIP-Mitglieder-Management und O2O-Tracking sind besonders für Gastgewerbe und Retail attraktiv. Ideal für Unternehmen, die physische und digitale Touchpoints verbinden.
 
 ### JingSocial
 

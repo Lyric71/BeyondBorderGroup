@@ -1,6 +1,7 @@
 ---
 title: "Vendre sur Douyin : les bonnes pratiques 2024 pour les marques étrangères"
-description: "Douyin, le pendant chinois de TikTok, revendique 750 millions d'utilisateurs actifs quotidiens et fusionne réseau social et commerce. Livestream, partenariats KOL, contenus ciblés : les leviers d'une stratégie qui convertit."
+seoTitle: "Vendre sur Douyin : le guide des marques étrangères"
+description: "Douyin, le TikTok chinois, réunit 750 millions d'utilisateurs par jour et marie réseau social et achat. Livestream, KOL, contenus : les leviers qui paient."
 pubDate: "2024-10-21"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

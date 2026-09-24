@@ -70,8 +70,12 @@ const OG_LOCALE: Record<typeof locale, string> = {
   es: 'es_ES',
 };
 const ogLocale = OG_LOCALE[locale] ?? 'en_US';
-// Every other locale we publish, so the social/AI preview resolves all four.
-const ogLocaleAlternates = locales.filter((l) => l !== locale).map((l) => OG_LOCALE[l]);
+// Search results cut titles at about 60 characters. A title that only runs
+// long because of the " | TheChinaPath" suffix loses the suffix instead of
+// its last words; the brand is already in the URL and the site name.
+const BRAND_SUFFIX = ' | TheChinaPath';
+const docTitle =
+  title.length > 60 && title.endsWith(BRAND_SUFFIX) ? title.slice(0, -BRAND_SUFFIX.length) : title;
 const absoluteOgImage = ogImage.startsWith('http') ? ogImage : SITE_URL + ogImage;
 
 const toIsoMaybe = (d?: Date | string) => {
@@ -106,6 +110,12 @@ if (!noAlternate) {
   }
 }
 const enAlt = alternates.find((a) => a.code === 'en');
+// og:locale:alternate lists only the languages this page really exists in,
+// the same set as the hreflang alternates above (a page without a French twin
+// no longer claims fr_FR).
+const ogLocaleAlternates = alternates
+  .filter((a) => a.code !== locale && a.code in OG_LOCALE)
+  .map((a) => OG_LOCALE[a.code as keyof typeof OG_LOCALE]);
 
 // Auto-emit Service or CollectionPage schema when the current path matches a
 // known service page or service hub AND no explicit schema is passed by the
@@ -161,7 +171,7 @@ const graph = schemaGraph(
         />
       )
     }
-    <title>{title}</title>
+    <title>{docTitle}</title>
     <link rel="canonical" href={canonicalHref} />
     {noindex && <meta name="robots" content="noindex, follow" />}
     {
@@ -174,7 +184,7 @@ const graph = schemaGraph(
     <meta property="og:site_name" content="TheChinaPath" />
     <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalHref} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={docTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={absoluteOgImage} />
     <meta property="og:image:alt" content={ogImageAlt} />
@@ -200,7 +210,7 @@ const graph = schemaGraph(
 
     {/* Twitter card */}
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={docTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={absoluteOgImage} />
     <meta name="twitter:image:alt" content={ogImageAlt} />

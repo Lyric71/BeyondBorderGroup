@@ -1,6 +1,7 @@
 ---
 title: "Diseño UX para mercados globales: China y Occidente, dos escuelas"
-description: "Los sitios web chinos y occidentales se diseñan con criterios distintos por motivos culturales, lingüísticos y tecnológicos. Entender esas diferencias es clave para cualquier marca que se expanda fuera o quiera entrar en el eCommerce chino."
+seoTitle: "Diseño UX para mercados globales: China frente a Occidente"
+description: "China y Occidente no diseñan sus webs igual, por razones culturales, lingüísticas y técnicas. Lo que una marca debe saber antes de entrar en China."
 pubDate: "2025-01-17"
 author: "TheChinaPath"
 category: "Brand & Localization"

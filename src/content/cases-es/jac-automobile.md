@@ -1,6 +1,7 @@
 ---
 brand: "JAC Automobile"
 title: "Campaña social anual en WeChat, RED y Weibo, impulsada por IA"
+seoTitle: "JAC Automobile: campaña anual con IA en WeChat, RED y Weibo"
 summary: "Programa social anual en WeChat, RED y Weibo, con uso de IA para escalar el contenido personalizado y construir comunidad de marca para JAC en China."
 metric: "La campaña olímpica J-Bot con IA fue replicada por los propios equipos internacionales de JAC en Facebook e Instagram, sin intervención central."
 category: "Social & Content"

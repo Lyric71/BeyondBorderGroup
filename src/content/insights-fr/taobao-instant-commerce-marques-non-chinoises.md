@@ -1,6 +1,7 @@
 ---
 title: "Taobao Instant Commerce : ce que la bascule change pour les marques non chinoises"
-description: "Alibaba range Double 11 au second plan, rebaptise Ele.me en Taobao Flash Sale et fait basculer la livraison instantanée au cœur du quotidien chinois. Lecture stratégique pour les marques étrangères."
+seoTitle: "Taobao Instant Commerce : ce qui change pour les marques"
+description: "Alibaba relègue le Double 11, rebaptise Ele.me Taobao Flash Sale et ancre la livraison instantanée dans le quotidien. L'enjeu pour les marques étrangères."
 pubDate: "2025-11-21"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

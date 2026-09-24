@@ -1,7 +1,7 @@
 ---
 brand: "SohoMD"
 title: "Innovative Lösungen für digitale Gesundheit"
-summary: "Markenerlebnis aufgefrischt, Website neu gebaut, SEO und Google Ads ausgerollt. Organischer Traffic verdoppelt, Lead-Generierung auf der Tele-Psychiatrie-Plattform gehoben."
+summary: "Neues Markenerlebnis, neue Website, SEO und Google Ads für die Tele-Psychiatrie-Plattform SohoMD: organischer Traffic verdoppelt, mehr Leads."
 metric: "Organischer Traffic verdoppelt. Lead-Generierung über die Tele-Psychiatrie-Plattform deutlich gesteigert."
 category: "Website"
 industry: "Healthcare"

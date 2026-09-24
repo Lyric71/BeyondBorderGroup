@@ -1,6 +1,6 @@
 ---
 title: "Empowering Women in China's Digital Commerce: 2024 Trends"
-description: "Women entrepreneurs are making significant strides in China's eCommerce landscape, with digital platforms like Taobao enabling business opportunities and driving economic growth globally."
+description: "Women entrepreneurs are building fast-growing businesses on Taobao and China's other eCommerce platforms. The 2024 trends behind their rise."
 pubDate: "2024-06-14"
 author: "TheChinaPath"
 category: "Market Strategy"

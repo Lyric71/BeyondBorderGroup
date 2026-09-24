@@ -280,7 +280,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 const calcSchema = webApplicationSchema({
   url: Astro.url.pathname,
   name: "JD Worldwide: Kostenrechner für Aufbau und Betrieb",
-  description: "Was ein Store auf JD Worldwide im ersten Jahr kostet: gestaffelte Kaution und Provision je Kategorie, 0,9 % Transaktionsgebühr, Retainer und Provision des TP, Bonded-Fulfillment, Versand und Cross-Border-Einfuhrsteuer. In RMB und USD.",
+  description: "Was ein JD-Worldwide-Store im ersten Jahr kostet: Kaution und Provision je Kategorie, 0,9 % Transaktionsgebühr, TP-Honorar, Fulfillment und Einfuhrsteuer.",
   inLanguage: 'de',
   breadcrumb: [
     { name: "Startseite", url: "/de" },
@@ -291,13 +291,14 @@ const calcSchema = webApplicationSchema({
 ---
 
 <Layout
+  preloadImage="/Images/tools/tmall-jd-hero-bg.webp"
   schema={calcSchema}
   title="JD Worldwide: Kostenrechner für Aufbau und Betrieb | TheChinaPath"
-  description="Was ein Store auf JD Worldwide im ersten Jahr kostet: gestaffelte Kaution und Provision je Kategorie, 0,9 % Transaktionsgebühr, Retainer und Provision des TP, Bonded-Fulfillment, Versand und Cross-Border-Einfuhrsteuer. In RMB und USD."
+  description="Was ein JD-Worldwide-Store im ersten Jahr kostet: Kaution und Provision je Kategorie, 0,9 % Transaktionsgebühr, TP-Honorar, Fulfillment und Einfuhrsteuer."
 >
   <section
     class="tool-hero tool-hero--image"
-    style="--tool-hero-img: url('/Images/tools/tmall-jd-hero-bg.png')"
+    style="--tool-hero-img: url('/Images/tools/tmall-jd-hero-bg.webp')"
   >
     <div class="container tool-hero__inner">
       <nav class="tool-hero__crumbs" aria-label="Breadcrumb">

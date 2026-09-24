@@ -1,6 +1,6 @@
 ---
 title: "Wirksame grüne Marketing-Kampagnen führender Marken in China"
-description: "Nachhaltigkeit ist ein zentrales Marketing-Thema chinesischer Marken geworden. Kampagnen tragen das ökologische Engagement und resonieren bei umweltbewussten Käufern, die ihre Kaufentscheidung daran ausrichten."
+description: "Nachhaltigkeit ist in China zum zentralen Marketingthema geworden. Welche Kampagnen umweltbewusste Käufer erreichen und ihre Kaufentscheidung beeinflussen."
 pubDate: "2024-06-17"
 author: "TheChinaPath"
 category: "Brand & Localization"
@@ -15,7 +15,7 @@ Im heutigen Markt ist grünes Marketing zu einem starken Werkzeug geworden. Es z
 
 ## Starbucks und Proya Cosmetics: Voranschreiten
 
-Starbucks und Proya Cosmetics haben mit Plastikreduktion rund um den Earth Day Massstäbe gesetzt. Starbucks belohnte Kunden, die ihre eigene Tasse mitbrachten, mit einem Americano mittlerer Grösse, die ersten 30 Teilnehmer erhielten ein Oat-Milk-Latte-Upgrade. Die Initiative reduzierte Plastikabfall und verankerte nachhaltige Routinen im Alltag.
+Starbucks und Proya Cosmetics haben mit Plastikreduktion rund um den Earth Day Massstäbe gesetzt. Starbucks belohnte Kunden, die ihre eigene Tasse mitbrachten, mit einem Americano mittlerer Größe, die ersten 30 Teilnehmer erhielten ein Oat-Milk-Latte-Upgrade. Die Initiative reduzierte Plastikabfall und verankerte nachhaltige Routinen im Alltag.
 
 ![Starbucks-Nachhaltigkeitskampagne](/Images/insights/2024/06/SBX20230601-Laxman_China_4-16-1024x683-1.jpg)
 

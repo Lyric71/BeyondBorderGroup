@@ -2,14 +2,14 @@
 title: "Ce que coûte un studio live en Chine"
 description: "Le budget d'une salle live chinoise, à l'heure et au mois : diffusion quotidienne, rythme partiel et événement chez un hôte."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-16"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin"]
 tags: ["Coût du live", "Douyin", "Live piloté par la boutique", "Live commerce", "Budget"]
 keyTakeaways:
   - "Le budget quotidien reconstitué porte 80 000 RMB de coûts fixes mensuels, avant trafic payant et frais indexés sur les ventes."
-  - "À 167 000 RMB de ventes retenues, cette salle revient à 116 740 RMB sur le mois, hors exploitation de la boutique."
+  - "À 167 000 RMB de ventes retenues, cette salle revient à 114 235 RMB sur le mois, hors exploitation de la boutique."
   - "À calendrier d'antenne constant, des ventes qui montent font baisser le coût par commande et monter le coût total par heure."
   - "Les formules des calculateurs TheChinaPath donnent 45 RMB contre 75 RMB de média et de commission créateur par commande, selon les répartitions retenues."
 heroImage: "/Images/insights/china-livestream-cost-for-brands.webp"
@@ -28,7 +28,8 @@ mensuelle, puis, entre parenthèses, son coût par heure d'antenne. La colonne
 événement porte sur un seul événement dans le mois.
 
 Tous les montants relèvent d'hypothèses de planification ou de calculs qui en
-découlent. Chiffres revus le 15 septembre 2026. Les sources sur les loyers et la
+découlent. Chiffres revus le 15 septembre 2026, commission plateforme actualisée le
+24 septembre. Les sources sur les loyers et la
 rémunération des présentateurs citées plus bas sont datées : elles n'établissent
 pas les prix du moment. Le rythme quotidien compte 26 jours d'antenne, jours de
 repos déduits. Le rythme de trois jours par semaine est modélisé à 13 sessions
@@ -44,10 +45,10 @@ trois.
 | Présentateur et second | 26 000 (250) | 28 600 (550) | 100 000 (33 333) |
 | Quote-part opérateur et modérateur | 24 000 (231) | 12 000 (231) | Compris dans le cachet |
 | Trafic payant | 26 720 (257) | 13 280 (255) | 18 000 (6 000) |
-| Provision pour commission plateforme | 6 680 (64) | 3 320 (64) | 12 000 (4 000) |
+| Provision pour commission plateforme | 4 175 (40) | 2 075 (40) | 7 500 (2 500) |
 | Commission créateur ou MCN | 0 (0) | 0 (0) | 75 000 (25 000) |
 | Échantillons et cadeaux | 3 340 (32) | 1 660 (32) | 6 000 (2 000) |
-| Total | 116 740 (1 123) | 74 460 (1 432) | 211 000 (70 333) |
+| Total | 114 235 (1 098) | 73 215 (1 408) | 206 500 (68 833) |
 
 </div>
 
@@ -55,8 +56,8 @@ Les heures comptées sont des heures d'antenne. Prévoyez en plus le temps de
 préparation payé. Les montants horaires sont arrondis séparément : leur somme
 peut donc s'écarter du total arrondi. Au taux de planification du calculateur,
 7,10 RMB pour un dollar, soit environ 7,90 RMB pour un euro, les totaux mensuels
-ressortent autour de 14 800 euros pour la salle quotidienne et de 9 400 euros
-pour la salle à temps partiel. L'événement tourne autour de 26 700 euros. Aucun
+ressortent autour de 14 500 euros pour la salle quotidienne et de 9 300 euros
+pour la salle à temps partiel. L'événement tourne autour de 26 100 euros. Aucun
 taux de change en temps réel n'est sous-entendu.
 
 ## Pourquoi un devis au forfait masque le coût horaire
@@ -144,10 +145,20 @@ planification. Vérifiez la couverture des plages horaires avant de supposer
 qu'un calendrier d'antenne réduit divise la facture par deux. Demandez aussi si
 le cachet de l'hôte couvre l'équipe de l'événement.
 
-La provision plateforme applique les 4 % de la catégorie alimentaire emballée
-dans les données des calculateurs TheChinaPath, septembre 2026. C'est une
-hypothèse de modèle, pas un tarif transfrontalier vérifié à ce jour. Vérifiez la
-catégorie applicable et l'assiette de règlement avant d'engager les fonds.
+La provision plateforme applique les 2,5 % de la catégorie alimentaire
+emballée dans les données des calculateurs TheChinaPath, septembre 2026. Ce
+taux prend le milieu du barème transfrontalier de Douyin pour la catégorie :
+2 % sur les céréales et l'huile, 3 % sur la plupart des autres produits
+alimentaires emballés. C'est une hypothèse de modèle, pas un tarif
+transfrontalier vérifié pour votre produit. Vérifiez la catégorie applicable et
+l'assiette de règlement avant d'engager les fonds.
+
+> Source : Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》
+> (barème des frais de service techniques de Douyin Global), 15 juillet 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+
+Les commandes passées depuis l'application Douyin Mall ou via Doubao peuvent
+supporter un supplément en sus du taux de base. La provision l'ignore.
 
 L'événement retient 25 % de commission créateur. Les colonnes pilotées par la
 boutique ne retiennent aucune commission créateur externe. Ni l'une ni l'autre
@@ -170,7 +181,7 @@ Les ventes organiques et les ventes portées par des créateurs doivent elles
 aussi se produire pour que l'objectif total tienne. Un ROAS flatteur sur un
 petit segment payant ne prouve pas que la salle entière vendra assez.
 
-Pour la salle quotidienne, le coût total ressort à 80 000 RMB plus 22 % des
+Pour la salle quotidienne, le coût total ressort à 80 000 RMB plus 20,5 % des
 ventes. Le trafic seul atteint ce montant à 500 000 RMB de ventes mensuelles,
 sous l'hypothèse de 16 %. C'est un point de croisement des coûts, pas un seuil
 de rentabilité.
@@ -193,9 +204,9 @@ arithmétiquement des hypothèses, ce ne sont pas des prévisions.
 
 | Budget live, RMB | Salle quotidienne | Trois jours/semaine | Événement chez un hôte |
 |---|---|---|---|
-| Coût mensuel | 116 740 | 74 460 | 211 000 |
-| Coût par commande passée | 174,76 | 224,28 | 175,83 |
-| Part du coût dans les ventes retenues | 69,9 % | 89,7 % | 70,3 % |
+| Coût mensuel | 114 235 | 73 215 | 206 500 |
+| Coût par commande passée | 171,01 | 220,53 | 172,08 |
+| Part du coût dans les ventes retenues | 68,4 % | 88,2 % | 68,8 % |
 
 </div>
 
@@ -206,13 +217,13 @@ financement du stock sort lui aussi de ce budget.
 
 Les retours changent le dénominateur. Si 20 % des commandes de la salle
 quotidienne ne deviennent pas des commandes conservées et que son budget ne
-bouge pas, le coût par commande conservée monte à environ 218,45 RMB. C'est un
+bouge pas, le coût par commande conservée monte à environ 213,76 RMB. C'est un
 test de résistance : des remboursements réels modifient aussi les commissions et
 les frais de plateforme. Rapprochez-les des données de règlement.
 
-À 500 000 RMB de ventes, la formule de la salle quotidienne donne 190 000 RMB de
-coût, soit 95 RMB par commande. À 1 million de RMB, elle donne 300 000 RMB, soit
-75 RMB par commande. Le coût total par heure d'antenne monte parce que la
+À 500 000 RMB de ventes, la formule de la salle quotidienne donne 182 500 RMB de
+coût, soit 91,25 RMB par commande. À 1 million de RMB, elle donne 285 000 RMB,
+soit 71,25 RMB par commande. Le coût total par heure d'antenne monte parce que la
 facture de trafic monte alors que le calendrier ne bouge pas.
 
 Les deux formats peuvent étaler un montant fixe sur davantage de commandes. Le
@@ -284,7 +295,7 @@ prévue.
 ### Une salle à temps partiel coûte-t-elle moins cher ?
 
 Elle mobilise moins de trésorerie chaque mois. Notre budget à temps partiel
-ressort à 74 460 RMB, contre 116 740 pour le rythme quotidien. Son coût horaire
+ressort à 73 215 RMB, contre 114 235 pour le rythme quotidien. Son coût horaire
 est plus élevé parce que le présentateur et le local se louent à l'heure.
 Comparez l'engagement total et les commandes conservées attendues avant de
 choisir votre rythme.

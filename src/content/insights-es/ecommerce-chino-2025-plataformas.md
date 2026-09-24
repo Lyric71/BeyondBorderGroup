@@ -1,6 +1,7 @@
 ---
 title: "eCommerce en China 2025: el mapa de plataformas y por qué el retail vuelve a lo local"
-description: "El eCommerce chino integra online y offline en un mismo bucle operativo, repartido entre plataformas muy distintas. Cada actor controla hábitos de consumo y partes del funnel diferentes."
+seoTitle: "eCommerce en China 2025: plataformas y regreso a lo local"
+description: "El eCommerce chino funde online y offline en un solo circuito, repartido entre plataformas que dominan hábitos de consumo y tramos del embudo distintos."
 pubDate: "2025-12-22"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

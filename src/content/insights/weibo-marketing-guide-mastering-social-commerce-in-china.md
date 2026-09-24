@@ -1,6 +1,6 @@
 ---
 title: "Weibo Marketing Guide: Mastering Social Commerce in China"
-description: "Weibo, China's leading social platform with over 600 million monthly active users, offers significant opportunities for brands to engage tech-savvy consumers. This guide covers account setup, content strategy, KOL partnerships, and ecommerce integration."
+description: "Weibo has more than 600 million monthly users in China. A brand guide to account setup, content, KOL partnerships and eCommerce on the platform."
 pubDate: "2024-12-13"
 author: "TheChinaPath"
 category: "Platforms"

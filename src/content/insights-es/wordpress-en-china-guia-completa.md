@@ -1,6 +1,6 @@
 ---
 title: "WordPress en China: guía completa para empresas"
-description: "WordPress puede usarse para construir sitios web en China, pero exige decisiones específicas en alojamiento, rendimiento y SEO por las particularidades regulatorias y los servicios bloqueados dentro del país."
+description: "WordPress sirve para crear webs en China, pero la normativa y los bloqueos obligan a elegir bien el alojamiento y a cuidar el rendimiento y el SEO."
 pubDate: "2025-02-03"
 author: "TheChinaPath"
 category: "Compliance & Setup"

@@ -1,11 +1,15 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import tailwindcss from '@tailwindcss/vite';
 
 import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
 import { insightEnToFr, insightEnToDe, insightEnToEs } from './src/i18n/insight-slugs.mjs';
+import { slugMap } from './src/i18n/slug-map.mjs';
 
 /**
  * Legacy WordPress insight article slugs. On the old site every insight sat at
@@ -86,11 +90,22 @@ const insightSlugs = [
   'a-comparison-between-tmall-and-amazon',
 ];
 
+/**
+ * Articles merged into another one (duplicates from the WordPress migration).
+ * The retired article's legacy URL points straight at the survivor so no
+ * visitor or crawler goes through two hops.
+ *
+ * @type {Record<string, string>}
+ */
+const mergedInsights = {
+  'china-is-no-longer-one-market-a-localized-growth-strategy-for-2025': 'china-is-no-longer-one-market-why-local-bets-beat-national-plans',
+};
+
 /** `/<slug>` -> `/insights/<slug>` 301 map for the legacy article URLs. */
 const insightRedirects = Object.fromEntries(
   insightSlugs.map((slug) => [
     `/${slug}`,
-    { status: /** @type {const} */ (301), destination: `/insights/${slug}` },
+    { status: /** @type {const} */ (301), destination: `/insights/${mergedInsights[slug] ?? slug}` },
   ]),
 );
 
@@ -346,123 +361,72 @@ const resolveFrInsightDest = (/** @type {string} */ dest) => {
 };
 
 /**
- * Static EN -> FR slug pairs for the sitemap serialize hook. Mirrors the
- * `slugMap` in `src/i18n/utils.ts`; kept duplicated here because importing
- * the .ts file from the config is not portable across Astro's loader.
+ * Real lastmod dates for the sitemap: each article URL carries its own
+ * updatedDate (or pubDate), in every locale, read from the content files at
+ * config load. The scheduled publish run sets updatedDate whenever it ships or
+ * corrects a piece, so the sitemap now tells crawlers what changed and when.
+ * Pages without a content date get no lastmod: a build-time date on every URL
+ * would only teach Google to ignore the field. Each articles index takes the
+ * date of its newest article.
  *
- * @type {Record<string, string>}
+ * @type {Map<string, string>}
  */
-const staticEnToFr = {
-  '/compass': '/fr/compass',
-  '/compass/shortlist': '/fr/compass/demander-sa-liste',
-  '/social-in-china': '/fr/reseaux-sociaux-chinois',
-  '/build-in-china': '/fr/site-web-et-wechat-en-chine',
-  '/': '/fr',
-  '/about': '/fr/qui-nous-sommes',
-  '/contact': '/fr/nous-contacter',
-  '/thank-you': '/fr/merci',
-  '/privacy-policy': '/fr/politique-de-confidentialite',
-  '/enter-china': '/fr/entrer-en-chine',
-  '/enter-china/market-entry-consulting': '/fr/entrer-en-chine/conseil-en-entree-de-marche',
-  '/enter-china/cross-border-setup': '/fr/entrer-en-chine/lancement-cross-border',
-  '/enter-china/distribution': '/fr/entrer-en-chine/distribution',
-  '/enter-china/branding-localisation': '/fr/entrer-en-chine/marque-et-localisation',
-  '/grow-in-china': '/fr/se-developper-en-chine',
-  '/grow-in-china/cross-border-ecommerce': '/fr/se-developper-en-chine/ecommerce-transfrontalier',
-  '/grow-in-china/social-commerce': '/fr/se-developper-en-chine/commerce-social',
-  '/grow-in-china/campaigns': '/fr/se-developper-en-chine/campagnes',
-  '/grow-in-china/media': '/fr/se-developper-en-chine/medias',
-  '/grow-in-china/production-studio': '/fr/se-developper-en-chine/studio-de-production',
-  '/grow-in-china/website': '/fr/se-developper-en-chine/site-web',
-  '/learn-china': '/fr/comprendre-la-chine',
-  '/learn-china/platforms': '/fr/comprendre-la-chine/plateformes',
-  '/learn-china/masterclass': '/fr/comprendre-la-chine/masterclass',
-  '/learn-china/learning-expeditions': '/fr/comprendre-la-chine/expeditions-terrain',
-  '/work': '/fr/nos-realisations',
-  '/insights': '/fr/decryptages',
-  '/cookie-policy': '/fr/politique-de-cookies',
-  '/terms-of-service': '/fr/conditions-d-utilisation',
-};
+const lastmodByPath = (() => {
+  const map = new Map();
+  /**
+   * @param {string} dir
+   * @param {(id: string) => string} toPath
+   * @param {string} indexPath
+   */
+  const scan = (dir, toPath, indexPath) => {
+    let newest = '';
+    for (const file of fs.readdirSync(dir)) {
+      if (!file.endsWith('.md')) continue;
+      const fm = fs.readFileSync(path.join(dir, file), 'utf8').match(/^---\r?\n([\s\S]*?)\r?\n---/);
+      if (!fm || /^draft:\s*true/m.test(fm[1])) continue;
+      const pick = (/** @type {string} */ key) =>
+        fm[1].match(new RegExp('^' + key + ':\\s*[\'"]?(\\d{4}-\\d{2}-\\d{2})', 'm'))?.[1];
+      const date = pick('updatedDate') ?? pick('pubDate');
+      if (!date) continue;
+      map.set(toPath(file.slice(0, -3)), date);
+      if (date > newest) newest = date;
+    }
+    if (newest) map.set(indexPath, newest);
+  };
+  const root = path.dirname(fileURLToPath(import.meta.url));
+  const dir = (/** @type {string} */ name) => path.join(root, 'src', 'content', name);
+  scan(dir('insights'), (id) => `/insights/${id}`, '/insights');
+  scan(dir('insights-fr'), (id) => `/fr/decryptages/${id}`, '/fr/decryptages');
+  // German files keep the English file name; the URL uses the German slug.
+  scan(dir('insights-de'), (id) => `/de/analysen/${insightEnToDe[id] ?? id}`, '/de/analysen');
+  scan(dir('insights-es'), (id) => `/es/analisis/${id}`, '/es/analisis');
+  return map;
+})();
+
+/**
+ * Absolute EN -> locale pairs for the sitemap, from src/i18n/slug-map.mjs,
+ * the same table localizePath and the page hreflang use. It used to be a
+ * hand-kept copy here, which fell behind and gave 46 URLs sitemap alternates
+ * that disagreed with the page.
+ *
+ * @param {'fr' | 'de' | 'es'} loc
+ * @returns {Record<string, string>}
+ */
+const sitemapPairs = (loc) => ({
+  '/': `/${loc}`,
+  ...Object.fromEntries(Object.entries(slugMap[loc]).map(([en, native]) => [en, `/${loc}${native}`])),
+});
+
+/** Static EN -> FR pairs for the sitemap serialize hook, built from the shared slug table. */
+const staticEnToFr = sitemapPairs('fr');
 const staticFrToEn = Object.fromEntries(Object.entries(staticEnToFr).map(([en, fr]) => [fr, en]));
 
-/**
- * Static EN -> DE slug pairs for the sitemap serialize hook. Mirrors the
- * `slugMap.de` block in `src/i18n/utils.ts`. Native German slugs per CLAUDE.md §6.11
- * (umlauts replaced ae/oe/ue/ss).
- *
- * @type {Record<string, string>}
- */
-const staticEnToDe = {
-  '/compass': '/de/compass',
-  '/compass/shortlist': '/de/compass/liste-anfordern',
-  '/social-in-china': '/de/chinesische-social-media',
-  '/build-in-china': '/de/website-und-wechat-in-china',
-  '/': '/de',
-  '/about': '/de/ueber-uns',
-  '/contact': '/de/kontakt',
-  '/thank-you': '/de/danke',
-  '/privacy-policy': '/de/datenschutz',
-  '/enter-china': '/de/nach-china',
-  '/enter-china/market-entry-consulting': '/de/nach-china/markteintrittsberatung',
-  '/enter-china/cross-border-setup': '/de/nach-china/cross-border-aufbau',
-  '/enter-china/distribution': '/de/nach-china/vertrieb',
-  '/enter-china/branding-localisation': '/de/nach-china/marke-und-lokalisierung',
-  '/grow-in-china': '/de/in-china-wachsen',
-  '/grow-in-china/cross-border-ecommerce': '/de/in-china-wachsen/cross-border-ecommerce',
-  '/grow-in-china/social-commerce': '/de/in-china-wachsen/social-commerce',
-  '/grow-in-china/campaigns': '/de/in-china-wachsen/kampagnen',
-  '/grow-in-china/media': '/de/in-china-wachsen/media',
-  '/grow-in-china/production-studio': '/de/in-china-wachsen/produktionsstudio',
-  '/grow-in-china/website': '/de/in-china-wachsen/website',
-  '/learn-china': '/de/china-verstehen',
-  '/learn-china/platforms': '/de/china-verstehen/plattformen',
-  '/learn-china/masterclass': '/de/china-verstehen/masterclass',
-  '/learn-china/learning-expeditions': '/de/china-verstehen/studienreisen',
-  '/work': '/de/referenzen',
-  '/insights': '/de/analysen',
-  '/cookie-policy': '/de/cookie-richtlinie',
-  '/terms-of-service': '/de/nutzungsbedingungen',
-};
+/** Static EN -> DE pairs for the sitemap serialize hook, built from the shared slug table. */
+const staticEnToDe = sitemapPairs('de');
 const staticDeToEn = Object.fromEntries(Object.entries(staticEnToDe).map(([en, de]) => [de, en]));
 
-/**
- * Static EN -> ES slug pairs for the sitemap serialize hook. Mirrors the
- * `slugMap.es` block in `src/i18n/utils.ts`. Native Spanish slugs per CLAUDE.md §6.11
- * (ñ → n, accents stripped on slug, kept in body copy).
- *
- * @type {Record<string, string>}
- */
-const staticEnToEs = {
-  '/compass': '/es/compass',
-  '/compass/shortlist': '/es/compass/solicitar-la-lista',
-  '/social-in-china': '/es/redes-sociales-chinas',
-  '/build-in-china': '/es/web-y-wechat-en-china',
-  '/': '/es',
-  '/about': '/es/quienes-somos',
-  '/contact': '/es/contacto',
-  '/thank-you': '/es/gracias',
-  '/privacy-policy': '/es/politica-de-privacidad',
-  '/enter-china': '/es/entrar-en-china',
-  '/enter-china/market-entry-consulting': '/es/entrar-en-china/estrategia-de-entrada',
-  '/enter-china/cross-border-setup': '/es/entrar-en-china/lanzamiento-cross-border',
-  '/enter-china/distribution': '/es/entrar-en-china/distribucion',
-  '/enter-china/branding-localisation': '/es/entrar-en-china/marca-y-localizacion',
-  '/grow-in-china': '/es/crecer-en-china',
-  '/grow-in-china/cross-border-ecommerce': '/es/crecer-en-china/ecommerce-transfronterizo',
-  '/grow-in-china/social-commerce': '/es/crecer-en-china/comercio-social',
-  '/grow-in-china/campaigns': '/es/crecer-en-china/campanas',
-  '/grow-in-china/media': '/es/crecer-en-china/medios',
-  '/grow-in-china/production-studio': '/es/crecer-en-china/estudio-de-produccion',
-  '/grow-in-china/website': '/es/crecer-en-china/sitio-web',
-  '/learn-china': '/es/conocer-china',
-  '/learn-china/platforms': '/es/conocer-china/plataformas',
-  '/learn-china/masterclass': '/es/conocer-china/masterclass',
-  '/learn-china/learning-expeditions': '/es/conocer-china/inmersion-china',
-  '/work': '/es/proyectos',
-  '/insights': '/es/analisis',
-  '/cookie-policy': '/es/politica-de-cookies',
-  '/terms-of-service': '/es/condiciones-de-uso',
-};
+/** Static EN -> ES pairs for the sitemap serialize hook, built from the shared slug table. */
+const staticEnToEs = sitemapPairs('es');
 const staticEsToEn = Object.fromEntries(Object.entries(staticEnToEs).map(([en, es]) => [es, en]));
 
 /**
@@ -493,7 +457,7 @@ const canonicalize = (/** @type {string} */ path) => {
       // The industry hub shares the folder with the articles.
       if (tail === 'secteurs') return '/insights/industries';
       const enSlug = Object.entries(insightEnToFr).find(([, fr]) => fr === tail)?.[0];
-      return enSlug ? `/insights/${enSlug}` : null;
+      return enSlug ? `/insights/${enSlug}` : (staticFrToEn[path] ?? null);
     }
     if (path.startsWith('/fr/nos-realisations/')) {
       return '/work/' + path.slice('/fr/nos-realisations/'.length);
@@ -508,7 +472,7 @@ const canonicalize = (/** @type {string} */ path) => {
       // The industry hub shares the folder with the articles.
       if (tail === 'branchen') return '/insights/industries';
       const enSlug = Object.entries(insightEnToDe).find(([, de]) => de === tail)?.[0];
-      return enSlug ? `/insights/${enSlug}` : null;
+      return enSlug ? `/insights/${enSlug}` : (staticDeToEn[path] ?? null);
     }
     if (path.startsWith('/de/referenzen/')) {
       return '/work/' + path.slice('/de/referenzen/'.length);
@@ -524,7 +488,7 @@ const canonicalize = (/** @type {string} */ path) => {
       // The industry hub shares the folder with the articles.
       if (tail === 'sectores') return '/insights/industries';
       const enSlug = Object.entries(insightEnToEs).find(([, es]) => es === tail)?.[0];
-      return enSlug ? `/insights/${enSlug}` : null;
+      return enSlug ? `/insights/${enSlug}` : (staticEsToEn[path] ?? null);
     }
     if (path.startsWith('/es/proyectos/')) {
       return '/work/' + path.slice('/es/proyectos/'.length);
@@ -538,6 +502,7 @@ const canonicalize = (/** @type {string} */ path) => {
 /** Forward map an EN path to its FR twin, or null if none exists. */
 const enToFr = (/** @type {string | null} */ enPath) => {
   if (!enPath) return null;
+  if (staticEnToFr[enPath]) return staticEnToFr[enPath];
   if (enPath === '/') return '/fr';
   if (enPath === '/insights/industries') return '/fr/decryptages/secteurs';
   if (enPath.startsWith('/insights/')) {
@@ -556,6 +521,7 @@ const enToFr = (/** @type {string | null} */ enPath) => {
 /** Forward map an EN path to its DE twin, or null if none exists. */
 const enToDe = (/** @type {string | null} */ enPath) => {
   if (!enPath) return null;
+  if (staticEnToDe[enPath]) return staticEnToDe[enPath];
   if (enPath === '/') return '/de';
   if (enPath === '/insights/industries') return '/de/analysen/branchen';
   if (enPath.startsWith('/insights/')) {
@@ -574,6 +540,7 @@ const enToDe = (/** @type {string | null} */ enPath) => {
 /** Forward map an EN path to its ES twin, or null if none exists. */
 const enToEs = (/** @type {string | null} */ enPath) => {
   if (!enPath) return null;
+  if (staticEnToEs[enPath]) return staticEnToEs[enPath];
   if (enPath === '/') return '/es';
   if (enPath === '/insights/industries') return '/es/analisis/sectores';
   if (enPath.startsWith('/insights/')) {
@@ -664,6 +631,8 @@ export default defineConfig({
         const SITE = 'https://www.thechinapath.com';
         const url = new URL(item.url);
         const path = url.pathname === '/' ? '/' : url.pathname.replace(/\/$/, '');
+        const lastmod = lastmodByPath.get(path);
+        if (lastmod) item = { ...item, lastmod };
         const enPath = canonicalize(path);
         if (!enPath) return item;
         // WO-2.3: the partner routes are a two-entry EN/ZH cluster and nothing
@@ -697,6 +666,8 @@ export default defineConfig({
         if (deHref) links.push({ lang: 'de', url: deHref });
         if (esHref) links.push({ lang: 'es', url: esHref });
         links.push({ lang: 'x-default', url: enHref });
+        // An English-only page (the printable guides) has no alternate to announce.
+        if (links.length === 2) return { ...item, url: enHref, links: undefined };
         // Normalize the page URL itself to match the canonical convention.
         let currentLocaleHref = enHref;
         if (path.startsWith('/fr')) currentLocaleHref = frHref ?? enHref;
@@ -755,6 +726,13 @@ export default defineConfig({
   // Legacy WordPress URL redirects. 301 to preserve SEO equity.
   // Mirror every entry in docs/redirection-plan.md for submission to Google.
   redirects: {
+    // Duplicate article merged into its dated twin (same title, same text).
+    '/insights/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025': { status: 301, destination: '/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans' },
+    '/fr/decryptages/china-is-no-longer-one-market-a-localized-growth-strategy-for-2025': { status: 301, destination: '/fr/decryptages/chine-pari-local-vs-plan-national' },
+    '/fr/decryptages/chine-marche-unique-paris-locaux-2025': { status: 301, destination: '/fr/decryptages/chine-pari-local-vs-plan-national' },
+    '/de/analysen/china-kein-einheitsmarkt-lokale-strategien-2025': { status: 301, destination: '/de/analysen/china-lokale-wetten-statt-nationaler-plaene' },
+    '/es/analisis/china-no-es-un-solo-mercado-estrategia-2025': { status: 301, destination: '/es/analisis/china-apuesta-local-vs-plan-nacional' },
+
     // WO-3.1: the standalone KOL service page is retired. Creator work is
     // TheRedScroll's specialism and /social-in-china is the door onto it,
     // so the old path consolidates there rather than competing with it.

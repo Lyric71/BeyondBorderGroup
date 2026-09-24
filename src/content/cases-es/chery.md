@@ -1,6 +1,7 @@
 ---
 brand: "Chery Automotive"
 title: "With Chery With Love: campaña de cocreación los viernes"
+seoTitle: "Chery: With Chery With Love, cocreación cada viernes"
 summary: "Campaña global de cocreación que convirtió a los fans de Chery en diseñadores de regalos y merchandising, con dos millones de impresiones semanales."
 metric: "2 millones de impresiones semanales. Más de 100 diseños propuestos por fans cada semana."
 category: "Social & Content"

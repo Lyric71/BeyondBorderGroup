@@ -1,6 +1,6 @@
 ---
 title: "Guía completa de WeChat Channels para marcas"
-description: "WeChat Channels es la funcionalidad de contenido que permite a las marcas conectar con audiencias muy implicadas a través de vídeos cortos y fotos. Le contamos cómo apalancarla para crecer en eCommerce y marca dentro de China."
+description: "WeChat Channels lleva a las marcas, con vídeos cortos y fotos, ante audiencias muy implicadas. Cómo usarlo para vender y ganar notoriedad en China."
 pubDate: "2024-11-01"
 author: "TheChinaPath"
 category: "Platforms"

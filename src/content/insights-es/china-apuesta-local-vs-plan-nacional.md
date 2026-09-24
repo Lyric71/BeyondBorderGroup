@@ -1,6 +1,7 @@
 ---
 title: "China ya no es un solo mercado: por qué las apuestas locales ganan a los planes nacionales"
-description: "Las marcas globales deben pasar de estrategias nacionales únicas a enfoques locales, ciudad a ciudad, para encajar en la China actual: menor crecimiento y competencia doméstica más fuerte."
+seoTitle: "China ya no es un solo mercado: la apuesta ciudad a ciudad"
+description: "Con menos crecimiento y más competencia local, las marcas globales en China tienen que cambiar el plan nacional único por estrategias ciudad a ciudad."
 pubDate: "2026-01-06"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

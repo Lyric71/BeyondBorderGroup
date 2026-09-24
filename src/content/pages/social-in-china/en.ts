@@ -11,7 +11,7 @@ const copy: SocialInChinaCopy = {
   meta: {
     title: 'Chinese social media: WeChat, RedNote, Douyin, Weibo | TheChinaPath',
     description:
-      'What WeChat, RedNote, Douyin and Weibo are each actually for, where social sells and where it only builds an audience, and who should run which part of the work.',
+      'What WeChat, RedNote, Douyin and Weibo are each for, where social sells and where it only builds an audience, and who should run which part of the work.',
   },
 
   stages: ['Discover', 'Research', 'Decide', 'Buy', 'Keep'],

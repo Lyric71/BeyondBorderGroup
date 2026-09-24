@@ -611,15 +611,22 @@ h4,
   overflow-x: clip;
   opacity: 0;
   visibility: hidden;
+  /* A closed panel is skipped by layout and paint entirely (visibility alone
+     still lays out every row and loads its image on every page). It flips to
+     visible the moment the panel opens, and back only after the fade-out. */
+  content-visibility: hidden;
   transform: translateY(-8px);
   transition:
     opacity 220ms var(--ease),
     transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
-    visibility 0s linear 260ms;
+    visibility 0s linear 260ms,
+    content-visibility 0s linear 260ms;
+  transition-behavior: allow-discrete;
 }
 .nav__item.is-open .mega {
   opacity: 1;
   visibility: visible;
+  content-visibility: visible;
   transform: translateY(0);
   transition-delay: 0s;
 }
@@ -1099,8 +1106,8 @@ a.mega__group-label:hover {
 /* ---------- Burger ---------- */
 .nav__burger {
   display: none;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border: 1px solid var(--bbg-border);
   border-radius: var(--radius-sm);
   background: #fff;
@@ -1109,7 +1116,7 @@ a.mega__group-label:hover {
 }
 .nav__burger span {
   position: absolute;
-  left: 11px;
+  left: 12px;
   right: 11px;
   height: 2px;
   background: var(--bbg-ink);
@@ -1119,13 +1126,13 @@ a.mega__group-label:hover {
     opacity 180ms var(--ease);
 }
 .nav__burger span:nth-child(1) {
-  top: 14px;
+  top: 15px;
 }
 .nav__burger span:nth-child(2) {
-  top: 20px;
+  top: 21px;
 }
 .nav__burger span:nth-child(3) {
-  top: 26px;
+  top: 27px;
 }
 .nav--open .nav__burger span:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
@@ -1264,10 +1271,14 @@ a.mega__group-label:hover {
     transform: none;
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows 320ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition:
+      grid-template-rows 320ms cubic-bezier(0.22, 1, 0.36, 1),
+      content-visibility 0s linear 320ms;
+    transition-behavior: allow-discrete;
   }
   .nav__item.is-open .mega {
     grid-template-rows: 1fr;
+    transition-delay: 0s;
   }
   .mega__sheet {
     min-height: 0;
@@ -1398,6 +1409,7 @@ a.mega__group-label:hover {
 }
 .nav__lang-trigger {
   display: inline-flex;
+  min-height: 44px;
   align-items: center;
   gap: 0.4rem;
   padding: 0.42rem 0.6rem;
@@ -9045,4 +9057,36 @@ a.tool-card:hover .tool-card__foot::after {
 .table-scroll table {
   margin: 0;
   min-width: 560px;
+}
+
+/* Article prose, every locale. Long unbroken strings (citation URLs) wrap
+   instead of widening the page, and on phones a wide table scrolls inside its
+   own box rather than pushing the whole article past the viewport. Shared here
+   because each locale's article template carries its own scoped prose styles. */
+.prose a,
+.prose code {
+  overflow-wrap: anywhere;
+}
+.prose pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+@media (max-width: 760px) {
+  .prose table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Tap targets. The calculators' help dots stay small on screen but get a
+   44px invisible hit area (WCAG 2.5.5 / Google mobile guidance). */
+.calc-help__btn {
+  position: relative;
+}
+.calc-help__btn::before {
+  content: '';
+  position: absolute;
+  inset: -13px;
 }

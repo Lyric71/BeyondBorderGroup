@@ -1,6 +1,6 @@
 ---
 title: "Las cinco mejores plataformas de social commerce en China"
-description: "El social commerce ha transformado la forma de comprar en China al fundir conversación social y compra directa. Repasamos las plataformas que mueven un mercado de 2,5 billones de yuanes."
+description: "El social commerce ha cambiado la compra en China al fundir conversación y transacción. Repasamos las plataformas de un mercado de 2,5 billones de yuanes."
 pubDate: "2024-10-23"
 author: "TheChinaPath"
 category: "Platforms"

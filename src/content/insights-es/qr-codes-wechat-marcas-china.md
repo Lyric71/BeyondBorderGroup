@@ -1,6 +1,7 @@
 ---
 title: "La fuerza de los códigos QR de WeChat para las empresas en China"
-description: "Los códigos QR de WeChat se han convertido en herramienta imprescindible en el mercado digital chino. El 95,7 % de los usuarios de pago móvil los utiliza para pagar, interactuar y hacer marketing."
+seoTitle: "La fuerza de los códigos QR de WeChat para las empresas"
+description: "El código QR de WeChat es imprescindible en la China digital: el 95,7 % de los usuarios de pago móvil lo usa para pagar e interactuar con las marcas."
 pubDate: "2025-02-07"
 author: "TheChinaPath"
 category: "Platforms"

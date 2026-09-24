@@ -1,6 +1,7 @@
 ---
 title: "Cómo localizar su sitio web para China: claves para directores de marketing globales"
-description: "Localizar una web para China va más allá de traducir. Requiere cumplir con la normativa, adaptarse a los códigos culturales y hacer ajustes técnicos para funcionar dentro del mercado digital chino."
+seoTitle: "Cómo localizar su web para China: claves de marketing"
+description: "Localizar una web para China exige más que traducir: cumplir la normativa, adaptarse a los códigos culturales y ajustar la técnica al internet chino."
 pubDate: "2025-01-21"
 author: "TheChinaPath"
 category: "Brand & Localization"

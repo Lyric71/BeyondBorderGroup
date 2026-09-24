@@ -1,6 +1,7 @@
 ---
 title: "Taobao Flash Sale und der 30-Minuten-Wandel: Chinas Handel rückt online und offline zusammen"
-description: "Alibabas Umbenennung von Ele.me in Taobao Flash Sale signalisiert eine strukturelle Verschiebung im chinesischen Handel. Lieferdienste, Instant-Retail und In-Store-Services rücken in eine vereinheitlichte Plattformerfahrung mit 30 bis 60 Minuten Lieferung."
+seoTitle: "Taobao Flash Sale: Chinas Handel im 30-Minuten-Takt"
+description: "Mit Taobao Flash Sale, vormals Ele.me, bündelt Alibaba Lieferdienst, Instant Retail und Ladenservice auf einer Plattform. Lieferzeit: 30 bis 60 Minuten."
 pubDate: "2025-12-22"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -44,7 +45,7 @@ Die Umbenennung ist schlicht der Moment, in dem das Organigramm sichtbar in der 
 
 ## Taobao soll sich wie ein lokales Liefernetz anfühlen
 
-Die grösste Veränderung ist nicht das Branding. Es ist die Käufererwartung.
+Die größte Veränderung ist nicht das Branding. Es ist die Käufererwartung.
 
 Taobao drückt auf ein schnelleres, körperlicheres Einkaufserlebnis. Ein spürbarer Anteil alltäglicher Bestellungen wird in 30 bis 60 Minuten ausgeliefert. Damit konkurriert die Plattform im selben Feld wie Meituan und JDs Quick-Commerce.
 

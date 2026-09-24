@@ -1,6 +1,6 @@
 ---
 title: "WordPress in China: Vollständiger Leitfaden"
-description: "WordPress lässt sich in China nutzen, verlangt aber spezifische Optimierungen bei Hosting, Performance und SEO, weil eigene Internet-Regeln und gesperrte Dienste die Lage prägen."
+description: "WordPress läuft in China, braucht aber angepasstes Hosting, schnelle Ladezeiten und lokale SEO. Netzregeln und gesperrte Dienste setzen den Rahmen."
 pubDate: "2025-02-03"
 author: "TheChinaPath"
 category: "Compliance & Setup"

@@ -121,7 +121,7 @@ Les documents ne précisent pas de quel Tmall il s'agit. Deux indices plaident p
 
 Ce choix oblige une marque à porter une masse salariale à Shanghai et une société chinoise avant même sa première vente. On en avait les moyens. Une marque qui réalise 1,8 million de francs suisses par an en Chine, environ 1,9 million d'euros, tient rarement trois ans à ce régime.
 
-Le test le moins coûteux passe par une boutique transfrontalière, sans société chinoise. Pour le sport et l'outdoor, Tmall Global exige 50 000 RMB de dépôt et 60 000 RMB de frais annuels, avec une commission de 5 %. JD Worldwide demande 35 500 RMB et 7 100 RMB, à 5 % également. Douyin fixe le dépôt transfrontalier de la catégorie à 75 000 RMB (données des calculateurs TheChinaPath, septembre 2026). Le [calculateur de coûts Tmall Global](/fr/outils/calculateur-de-couts-tmall-global) permet de refaire le calcul avec vos propres chiffres.
+Le test le moins coûteux passe par une boutique transfrontalière, sans société chinoise. Pour le sport et l'outdoor, Tmall Global exige 50 000 RMB de dépôt et 60 000 RMB de frais annuels, avec une commission de 5 %. JD Worldwide demande 35 500 RMB et 7 100 RMB, à 5 % également. Douyin cross-border prélève 6 % sur le sport et l'outdoor, et son dépôt ne dépend plus de la catégorie : depuis juin 2025, il suit les ventes du mois précédent et plafonne à 5 000 RMB (données des calculateurs TheChinaPath, septembre 2026 ; 《【全球购】保证金管理规范》 de Douyin, https://school.jinritemai.com/doudian/web/articlev0/107821). Le [calculateur de coûts Tmall Global](/fr/outils/calculateur-de-couts-tmall-global) permet de refaire le calcul avec vos propres chiffres.
 
 ## Ce que l'on peut chiffrer
 

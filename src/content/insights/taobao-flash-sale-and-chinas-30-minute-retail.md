@@ -1,6 +1,7 @@
 ---
 title: "Taobao Flash Sale and the 30-Minute Shift: Why China Retail Is Going Deeper Online to Offline"
-description: "Alibaba's rebrand of Ele.me into Taobao Flash Sale signals a structural shift in Chinese retail, pulling food delivery, instant retail, and in-store services into a unified platform experience designed for 30-60 minute fulfillment."
+seoTitle: "Taobao Flash Sale and China's 30-Minute Retail Shift"
+description: "Alibaba turned Ele.me into Taobao Flash Sale, one platform for food delivery, instant retail and in-store services, built around 30 to 60 minute delivery."
 pubDate: "2025-12-22"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

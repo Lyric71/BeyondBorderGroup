@@ -1,6 +1,7 @@
 ---
 title: "Storytelling B2B : le ressort discret des marques qui gagnent en Chine"
-description: "Le storytelling s'impose au cœur du marketing B2B chinois. Il rebat la manière d'engager les audiences et de convertir, par des récits qui resserrent le lien client."
+seoTitle: "Storytelling B2B : l'arme discrète des marques en Chine"
+description: "Le storytelling s'installe au cœur du marketing B2B en Chine : des récits qui engagent les audiences, resserrent le lien client et convertissent."
 pubDate: "2024-04-16"
 author: "TheChinaPath"
 category: "Brand & Localization"

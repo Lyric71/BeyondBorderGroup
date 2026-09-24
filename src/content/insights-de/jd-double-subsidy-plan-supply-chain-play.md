@@ -1,6 +1,7 @@
 ---
 title: "JDs neuer Subventionsplan ist in Wahrheit ein Lieferketten-Schachzug"
-description: "JD.com und 100 Marken stellen 10 Milliarden Yuan für Altgeräteprämien bereit. Warum der Doppelsubventionsplan Lieferkette und Kundenbindung meint, nicht Preiskampf."
+seoTitle: "JDs Subventionsplan ist ein Lieferketten-Schachzug"
+description: "JD.com und 100 Marken stellen 10 Milliarden Yuan für Altgeräteprämien bereit. Der Plan zielt auf Lieferkette und Kundenbindung, nicht auf Preiskampf."
 pubDate: "2026-07-05"
 author: "Cyril Drouin"
 category: "E-Commerce"

@@ -1,6 +1,7 @@
 ---
 title: "Le premier festival e-commerce chinois renoue avec les vieux médias"
-description: "Le Double 11, navire amiral du commerce chinois, adopte les codes de la télévision : galas, sketches, variétés. Réponse calibrée à des consommateurs devenus experts du retail."
+seoTitle: "Double 11 : l'e-commerce chinois renoue avec la télévision"
+description: "Galas, sketches, variétés : le Double 11 emprunte les codes de la télévision pour retenir des consommateurs chinois devenus experts du retail."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

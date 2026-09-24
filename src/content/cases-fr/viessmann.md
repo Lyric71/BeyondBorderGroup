@@ -1,7 +1,8 @@
 ---
 brand: "Viessmann"
 title: "Solutions climatiques : eCommerce Tmall en Chine pour le chauffage et l'eau chaude"
-summary: "Pilotage bout en bout des opérations Tmall et JD pour les solutions climatiques de Viessmann : contenus, média, livestream et service client sur l'ensemble du tunnel."
+seoTitle: "Viessmann : chauffage et eau chaude sur Tmall en Chine"
+summary: "Les opérations Tmall et JD de Viessmann pilotées de bout en bout : contenus, média, livestream et service client, sur tout le tunnel de conversion."
 metric: "Boutiques Tmall et JD pilotées de bout en bout pour les solutions de climatisation Viessmann : contenu, média, livestream, service."
 category: "eCommerce"
 industry: "Home & Design"

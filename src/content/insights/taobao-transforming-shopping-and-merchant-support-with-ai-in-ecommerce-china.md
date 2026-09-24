@@ -1,6 +1,7 @@
 ---
 title: "How Taobao and Tmall Are Revolutionizing Consumer Shopping and Merchant Support with AI"
-description: "Alibaba Group's Taobao and Tmall use AI technologies to enhance consumer shopping experiences and boost merchant operational efficiency through tools like Taobao Wenwen, visual generation, and smart customer service."
+seoTitle: "How Taobao and Tmall Use AI for Shoppers and Merchants"
+description: "How Taobao and Tmall use AI, from the Taobao Wenwen shopping assistant to image generation and smart customer service, to serve shoppers and merchants."
 pubDate: "2024-07-12"
 author: "TheChinaPath"
 category: "AI & Innovation"

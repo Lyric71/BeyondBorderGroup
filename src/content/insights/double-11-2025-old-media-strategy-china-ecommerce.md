@@ -1,6 +1,6 @@
 ---
 title: "China's Biggest E-Commerce Festival Goes Back to Old Media"
-description: "Double 11, China's dominant shopping festival, is adopting television-style formats including galas, comedy sketches, and variety shows to rebuild consumer trust amid a market of increasingly sophisticated retail-savvy shoppers."
+description: "Double 11 is borrowing from TV, with galas, comedy sketches and variety shows, to win back Chinese shoppers who've learned every retail trick."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

@@ -1,6 +1,6 @@
 ---
 title: "Livestream e-commerce en Chine : la méthode pour réussir"
-description: "Le livestream a redessiné la relation entre marques et consommateurs en Chine. Vidéo en direct, échange instantané, achat sans rupture : Taobao Live et Douyin dominent l'espace et permettent d'enclencher du chiffre tout en consolidant la relation client."
+description: "Taobao Live et Douyin dominent le livestream e-commerce en Chine. Échange instantané, achat sans friction : la méthode pour vendre et fidéliser."
 pubDate: "2024-12-06"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

@@ -1,6 +1,7 @@
 ---
 title: "L'IA a fait s'effondrer le coût du micro-drama. Puis la règle est tombée."
-description: "L'IA a réduit jusqu'à 90 % le coût de production des micro-séries en Chine. Ce que cela change pour les marques étrangères, et les obligations d'étiquetage qui ont suivi."
+seoTitle: "Micro-séries IA en Chine : coûts effondrés, règle durcie"
+description: "L'IA réduit jusqu'à 90 % le coût des micro-séries en Chine. Ce que cela change pour les marques étrangères, et l'obligation d'étiquetage qui a suivi."
 pubDate: "2026-07-16"
 author: "Cyril Drouin"
 category: "AI & Innovation"

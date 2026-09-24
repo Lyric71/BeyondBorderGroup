@@ -152,7 +152,7 @@ const copy: CompassCopy = {
   index: {
     title: 'Compass: die geprüfte Datenbank für China-Partner | TheChinaPath',
     description:
-      'Compass ist unsere private Datenbank geprüfter China-Distributoren, Tmall und Douyin Partner und Importeure. So entsteht Ihre Auswahlliste, in Wochen statt in einem Quartal.',
+      'Compass ist unsere private Datenbank geprüfter Distributoren, Tmall und Douyin Partner und Importeure. Ihre Auswahlliste steht in Wochen statt Monaten.',
     eyebrow: 'Partner finden',
     h1: 'Sparen Sie sich 12 Monate Partnersuche.',
     lead: 'Compass ist unsere private Datenbank aus Distributoren, Tmall Partnern, Douyin Partnern und Importeuren. Jeden Einzelnen haben wir persönlich getroffen, vor Ort geprüft und in vielen Fällen an echten Markenprojekten begleitet.',
@@ -205,7 +205,7 @@ const copy: CompassCopy = {
   shortlist: {
     title: 'Ihre Auswahlliste chinesischer Partner | Compass | TheChinaPath',
     description:
-      'Briefen Sie uns zu Ihrer Kategorie und Ihrem Stand. Wir kommen mit einer Auswahlliste chinesischer Distributoren und Plattformpartner zurück, in der Regel in zwei bis drei Wochen.',
+      'Nennen Sie uns Kategorie und Stand. Binnen zwei bis drei Wochen erhalten Sie eine Auswahlliste chinesischer Distributoren und Plattformpartner.',
     eyebrow: 'Ihre Auswahlliste',
     h1: 'Erzählen Sie uns kurz von Ihrer Marke.',
     lead: 'Ein paar schnelle Fragen, um ins Gespräch zu kommen. Das erste Gespräch ist kurz und für beide Seiten unverbindlich. Ein Partner aus der Geschäftsleitung antwortet innerhalb eines Werktags, kein Serienbrief aus einem Vorqualifizierungs-Bot.',
@@ -227,10 +227,10 @@ const copy: CompassCopy = {
       honeypot: 'Dieses Feld bitte leer lassen',
     },
     stages: [
-      'Noch nicht in China, wir klären das Modell',
-      'Wir gehen jetzt hinein und brauchen einen ersten Partner',
-      'Wir verkaufen bereits und ersetzen einen Partner',
-      'Wir verkaufen bereits und ergänzen einen Kanal oder eine Region',
+      'Noch nicht in China, wir wägen zwischen Distributor, TP und DP ab',
+      'Wir starten jetzt und suchen einen ersten Distributor, TP oder DP',
+      'Wir verkaufen bereits und ersetzen einen Distributor, TP oder DP, der die Erwartungen nicht erfüllt',
+      'Wir verkaufen bereits und brauchen für einen neuen Kanal oder eine neue Region einen weiteren Distributor, TP oder DP',
     ],
     submit: 'Briefing senden',
     submitting: 'Briefing wird gesendet…',

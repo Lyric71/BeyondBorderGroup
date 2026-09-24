@@ -1,6 +1,7 @@
 ---
 title: "JD Mall convertit ses magasins physiques en plateformes d'expérience"
-description: "Des enfants enfournent des cookies. Des parents testent des PlayStation. JD Mall redéfinit le commerce physique en lieu d'essai, une porte d'entrée inédite vers les acheteurs chinois des catégories à forte implication."
+seoTitle: "JD Mall fait de ses magasins des lieux d'expérience"
+description: "Des enfants cuisent des cookies, des parents testent la PlayStation : JD Mall fait du magasin un lieu d'essai pour les achats chinois à forte implication."
 pubDate: "2025-11-26"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

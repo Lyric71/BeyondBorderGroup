@@ -1,6 +1,7 @@
 ---
 title: "China E-Commerce 2025: The Platform Map, and Why Retail Is Going Local"
-description: "China's e-commerce market integrates online and offline into one operational loop across distinct platforms. Each major player owns different consumer habits and parts of the sales funnel."
+seoTitle: "China E-Commerce 2025: Platform Map and Local Retail"
+description: "China's e-commerce platforms in 2025, mapped: which player owns which shopping habit and funnel stage, and why online and offline now run as one loop."
 pubDate: "2025-12-22"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

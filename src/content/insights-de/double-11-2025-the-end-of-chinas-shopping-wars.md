@@ -1,6 +1,6 @@
 ---
 title: "Double 11 2025: Das Ende der chinesischen Shopping-Kriege"
-description: "Chinas Double-11-Shopping-Festival hat sich vom Eintagesereignis zu einem fünfwöchigen Marathon entwickelt. Die Wachstumsraten schwächen sich ab, das Käufervertrauen erodiert, während Marken in der Marge gedrückt werden und Käufer zu professionellen Operatoren werden."
+description: "Double 11 dauert inzwischen fünf Wochen statt einen Tag. Das Wachstum flacht ab, das Vertrauen schwindet, die Margen schrumpfen. Käufer werden zu Profis."
 pubDate: "2025-11-14"
 updatedDate: "2026-05-15"
 author: "TheChinaPath"
@@ -9,7 +9,7 @@ tags: ["Double 11", "eCommerce", "China Retail", "Käuferverhalten", "GMV"]
 keyTakeaways:
   - "Der Double-11-GMV 2025 erreichte rund 1,7 Billionen RMB, gegenüber 1,44 Billionen im Vorjahr. Die Schlagzeile wuchs. Die Wachstumsrate sank."
   - "Das Festival zieht sich heute über fünf Wochen. Pre-Pre-Sale, Anzahlungs-Fenster, gestapelte Coupons. Die Käufer wurden Profis, bevor die Marken es wurden."
-  - "Grosse Plattformen veröffentlichen keine einzelne Double-11-GMV-Zahl mehr. Die Kennzahl selbst ist zum politischen Risiko geworden."
+  - "Große Plattformen veröffentlichen keine einzelne Double-11-GMV-Zahl mehr. Die Kennzahl selbst ist zum politischen Risiko geworden."
   - "Marken heben Listenpreise vor dem Festival, nur um sie wieder herunterzuhandeln. Margen schrumpfen, Vertrauen erodiert, niemand gewinnt."
   - "Double 11 funktioniert noch als Launch-Fenster für neue Produkte. Als Quartals-Wachstumsmotor ist es vorbei."
 heroImage: "/Images/insights/double-11-2025-the-end-of-chinas-shopping-wars.png"
@@ -97,7 +97,7 @@ Das Ergebnis?
 
 * **Margendruck für Marken.** Sie heben Listenpreise, um Marge zu sichern, dann rabattieren Sie härter, um im Krieg mitzuhalten. Netto geben Sie mehr weg, als geplant.
 * **Vertrauensverlust bei Käufern.** Jeder „falsche Tiefstpreis" macht die nächste Geschichte schwerer zu glauben.
-* **Signalverlust für Plattformen.** Der GMV ist noch immer riesig, aber politisch und wettbewerblich so heikel, dass grosse Plattformen heute keine einzelne Festival-Zahl mehr veröffentlichen.
+* **Signalverlust für Plattformen.** Der GMV ist noch immer riesig, aber politisch und wettbewerblich so heikel, dass große Plattformen heute keine einzelne Festival-Zahl mehr veröffentlichen.
 
 Double 11 war einst das klarste Signal für Chinas Konsumgeschichte. Heute fragen selbst Stimmen aus dem Ökosystem, ob das Modell überhitzt ist.
 

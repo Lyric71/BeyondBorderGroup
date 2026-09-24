@@ -1,5 +1,6 @@
 ---
 title: "Amende Pinduoduo : ce que la Chine dit aux vendeurs étrangers"
+seoTitle: "Amende Pinduoduo : ce que Pékin dit aux vendeurs étrangers"
 description: "Une amende fiscale infligée à Pinduoduo annonce un tournant pour les marques étrangères en Chine. Ce que changent les nouvelles obligations de déclaration."
 pubDate: "2026-06-25"
 author: "Cyril Drouin"

@@ -14,7 +14,7 @@ const copy: PartnerGuideCopy = {
   locale: 'de',
   title: 'Douyin Partner (DP) finden und prüfen | TheChinaPath',
   description:
-    'Was ein Douyin Partner leistet, wie DPs verdienen, wie Sie einen an seinen Livestreams messen und welche Klauseln sichern, dass Shop und Werbekonto Ihnen gehören.',
+    'Was ein Douyin Partner leistet, wie DPs verdienen, wie Sie einen an seinen Livestreams messen und welche Klauseln Ihnen Shop und Werbekonto sichern.',
   crumb: 'DP in China finden',
   reviewed: '24. September 2026',
   reviewedIso: '2026-09-24',

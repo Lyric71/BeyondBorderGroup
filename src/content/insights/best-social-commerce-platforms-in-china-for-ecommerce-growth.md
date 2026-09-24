@@ -1,6 +1,7 @@
 ---
 title: "Top 5 Best Social Commerce Platforms in China to Drive Your Brand's Success"
-description: "Social commerce has transformed consumer shopping in China, combining social media engagement with direct purchasing. The article explores the leading platforms driving eCommerce growth in the country's 2.5 trillion yuan market."
+seoTitle: "Top 5 Social Commerce Platforms in China for Brands"
+description: "Xiaohongshu, WeChat, Taobao, Pinduoduo and Weibo lead social commerce in China, a 2.5 trillion yuan market. What each platform can do for your brand."
 pubDate: "2024-10-23"
 author: "TheChinaPath"
 category: "Platforms"

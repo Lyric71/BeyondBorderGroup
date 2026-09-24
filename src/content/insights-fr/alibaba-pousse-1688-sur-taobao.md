@@ -1,6 +1,7 @@
 ---
 title: "Alibaba pousse 1688 sur Taobao : un signal fort pour le marché"
-description: "La place de marché de gros 1688 d'Alibaba inaugure trois boutiques officielles sur Taobao. Objectif affiché : tirer les prix vers le bas et simplifier l'achat en volume pour les particuliers comme pour les professionnels."
+seoTitle: "Alibaba pousse sa plateforme de gros 1688 sur Taobao"
+description: "1688, la plateforme de gros d'Alibaba, ouvre trois boutiques officielles sur Taobao pour tirer les prix vers le bas et faciliter l'achat en volume."
 pubDate: "2024-03-27"
 author: "TheChinaPath"
 category: "Platforms"

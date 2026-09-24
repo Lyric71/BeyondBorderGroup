@@ -1,6 +1,7 @@
 ---
 brand: "Mission Foods"
 title: "Snack Forward: Mission Foods' digital leap in China"
+seoTitle: "Mission Foods: Snack Forward Social Launch in China"
 summary: "Social-first launch program for Mission Foods' corn chips in China, engaging Gen Z through culturally relevant content on WeChat, Weibo and RED."
 metric: "Halloween launch drove follower growth across WeChat, Weibo and RED with Gen Z snacking content."
 category: "Social & Content"

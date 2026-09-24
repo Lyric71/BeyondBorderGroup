@@ -1,6 +1,6 @@
 ---
 title: "WeChat se volvió gratis. Xiaohongshu se volvió caro."
-description: "Cinco giros de las plataformas chinas en 2026, lo que cada uno le cuesta a una marca extranjera, y por qué las puertas más baratas de cruzar son las más caras de sostener."
+description: "Cinco giros de las plataformas chinas en 2026, lo que le cuesta cada uno a una marca extranjera y por qué las puertas más baratas salen caras de mantener."
 pubDate: "2026-07-22"
 updatedDate: "2026-07-22"
 author: "Cyril Drouin"

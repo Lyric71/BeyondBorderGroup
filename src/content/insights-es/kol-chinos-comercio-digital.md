@@ -1,6 +1,7 @@
 ---
 title: "KOL y redes sociales en China: estrategias para marcas de eCommerce"
-description: "Asociarse con Key Opinion Leaders (KOL) se ha convertido en una vía potente para conectar con el consumidor chino. Esta guía explora cómo encontrar a los KOL adecuados, colaborar con ellos y maximizar alcance, credibilidad y crecimiento de marca."
+seoTitle: "KOL en China: estrategias para marcas de eCommerce"
+description: "Cómo elegir a los KOL adecuados en China, trabajar con ellos y convertir su influencia en alcance, credibilidad y crecimiento para su marca."
 pubDate: "2024-11-28"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

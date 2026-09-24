@@ -1,6 +1,6 @@
 ---
 title: "Chine 2026 : huit prédictions e-commerce et marketing"
-description: "Huit signaux qui dessinent le marché digital chinois en 2026. Du commerce instantané qui aspire l'e-commerce classique à la personnalisation de masse pilotée par l'IA, en passant par le retour de l'expérientiel face à l'épuisement de la promotion."
+description: "Huit prédictions pour la Chine en 2026 : le commerce instantané grignote l'e-commerce, l'IA personnalise en masse, l'expérientiel détrône la promotion."
 pubDate: "2026-01-02"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

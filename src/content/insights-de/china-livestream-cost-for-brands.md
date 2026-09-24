@@ -2,14 +2,14 @@
 title: "Was ein Livestream-Studio in China kostet"
 description: "Das Budget eines chinesischen Livestream-Raums, pro Stunde und pro Monat: täglicher Betrieb, Teilzeitplan und Event bei einem fremden Host."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-16"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "KOLs & Livestream"
 platforms: ["Douyin"]
 tags: ["Livestream-Kosten", "Douyin", "Shop-eigener Livestream", "Live Commerce", "Budget"]
 keyTakeaways:
   - "Das durchgerechnete Tagesbudget trägt 80.000 Yuan monatliche Fixkosten, noch vor bezahltem Traffic und umsatzabhängigen Posten."
-  - "Bei angenommenen 167.000 Yuan Umsatz kostet dieser Raum im Monat 116.740 Yuan, ohne den übrigen Shop-Betrieb."
+  - "Bei angenommenen 167.000 Yuan Umsatz kostet dieser Raum im Monat 114.235 Yuan, ohne den übrigen Shop-Betrieb."
   - "Bleibt der Sendeplan fest, senken steigende Umsätze die Kosten je Bestellung und heben zugleich die Gesamtkosten je Sendestunde."
   - "Die Rechnerformeln von TheChinaPath ergeben 45 gegenüber 75 Yuan je Bestellung an Media- und Creator-Kosten, bei den genannten Kanalmixen."
 heroImage: "/Images/insights/china-livestream-cost-for-brands.webp"
@@ -28,7 +28,8 @@ Monatsbetrag und dahinter in Klammern die Kosten je Sendestunde. Die
 Event-Spalte deckt ein einzelnes Event im Monat ab.
 
 Sämtliche Beträge sind gewählte Planungsgrößen oder daraus abgeleitete
-Rechnungen. Geprüft am 15. September 2026. Die Quellen zu Miete und
+Rechnungen. Geprüft am 15. September 2026, die Plattformgebühr aktualisiert am
+24. September. Die Quellen zu Miete und
 Moderatorengehältern weiter unten tragen ein Datum, sie belegen keine aktuellen
 Preise. Der Tagesplan rechnet mit 26 Sendetagen und lässt Ruhetage zu. Der Plan
 mit drei Tagen pro Woche ist mit 13 Sessions im Monat modelliert. Jede Session
@@ -43,19 +44,19 @@ dauert vier Stunden, das Event drei.
 | Moderation und Co-Moderation | 26.000 (250) | 28.600 (550) | 100.000 (33.333) |
 | Anteil Operator und Moderation im Chat | 24.000 (231) | 12.000 (231) | im Honorar enthalten |
 | Bezahlter Traffic | 26.720 (257) | 13.280 (255) | 18.000 (6.000) |
-| Rückstellung Plattformgebühr | 6.680 (64) | 3.320 (64) | 12.000 (4.000) |
+| Rückstellung Plattformgebühr | 4.175 (40) | 2.075 (40) | 7.500 (2.500) |
 | Provision für Creator oder MCN | 0 (0) | 0 (0) | 75.000 (25.000) |
 | Muster und Giveaways | 3.340 (32) | 1.660 (32) | 6.000 (2.000) |
-| Summe | 116.740 (1.123) | 74.460 (1.432) | 211.000 (70.333) |
+| Summe | 114.235 (1.098) | 73.215 (1.408) | 206.500 (68.833) |
 
 </div>
 
 Gezählt sind reine Sendestunden. Bezahlte Vorbereitungszeit kommt obendrauf. Die
 Stundenwerte sind einzeln gerundet, ihre Summe kann deshalb von der gerundeten
 Gesamtsumme abweichen. Zum Planungskurs des Rechners, 7,10 Yuan je Dollar und
-damit rund 7,90 Yuan je Euro, liegen die Monatssummen bei etwa 14.800 Euro für
-den täglichen Raum und 9.400 Euro für den Teilzeitraum. Das Event kommt auf rund
-26.700 Euro. Ein tagesaktueller Wechselkurs ist damit nicht gemeint.
+damit rund 7,90 Yuan je Euro, liegen die Monatssummen bei etwa 14.500 Euro für
+den täglichen Raum und 9.300 Euro für den Teilzeitraum. Das Event kommt auf rund
+26.100 Euro. Ein tagesaktueller Wechselkurs ist damit nicht gemeint.
 
 ## Warum ein Pauschalangebot den Stundenpreis verdeckt
 
@@ -142,11 +143,21 @@ Prüfen Sie die Schichtabdeckung, bevor Sie annehmen, ein kleinerer Sendeplan
 halbiere die Rechnung. Fragen Sie außerdem, ob das Honorar des Hosts die Crew
 des Events abdeckt.
 
-Die Plattformrückstellung nutzt die 4 Prozent aus der Kategorie verpackte
-Lebensmittel in den Rechnerdaten von TheChinaPath, September 2026. Das ist eine
-Modellannahme, kein geprüfter aktueller Cross-Border-Tarif für Ihr Produkt.
-Klären Sie die einschlägige Kategorie und die Abrechnungsbasis, bevor Mittel
-gebunden werden.
+Die Plattformrückstellung nutzt die 2,5 Prozent aus der Kategorie verpackte
+Lebensmittel in den Rechnerdaten von TheChinaPath, September 2026. Der Wert
+liegt in der Mitte des Cross-Border-Tarifs, den Douyin für die Kategorie
+verlangt: 2 Prozent auf Getreide und Speiseöl, 3 Prozent auf die meisten
+übrigen verpackten Lebensmittel. Das ist eine Modellannahme, kein geprüfter
+aktueller Cross-Border-Tarif für Ihr Produkt. Klären Sie die einschlägige
+Kategorie und die Abrechnungsbasis, bevor Mittel gebunden werden.
+
+> Quelle: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》
+> (Gebührenverzeichnis für technische Servicegebühren bei Douyin Global),
+> 15. Juli 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+
+Auf Bestellungen aus der Douyin-Mall-App und über Doubao kann ein Zuschlag zum
+Basissatz hinzukommen. Die Rückstellung lässt ihn außen vor.
 
 Das Event setzt 25 Prozent Creator-Provision an. Die shop-eigenen Spalten setzen
 keine externe Creator-Provision an. Beides schließt Mitarbeiterprämien oder die
@@ -170,7 +181,7 @@ Verkäufe und Verkäufe über Creator müssen ebenfalls zustande kommen, damit d
 Umsatzziel insgesamt hält. Ein attraktiver ROAS auf einem kleinen bezahlten
 Segment beweist noch nicht, dass der ganze Raum genug verkauft.
 
-Für den täglichen Raum liegen die Gesamtkosten bei 80.000 Yuan plus 22 Prozent
+Für den täglichen Raum liegen die Gesamtkosten bei 80.000 Yuan plus 20,5 Prozent
 des Umsatzes. Der Traffic allein erreicht diesen Betrag bei 500.000 Yuan
 Monatsumsatz, unter der Annahme von 16 Prozent. Das ist ein Kostenschnittpunkt,
 keine Gewinnschwelle.
@@ -194,9 +205,9 @@ rechnerisch aus den Annahmen, Prognosen sind sie nicht.
 
 | Livestream-Budget, Yuan | Täglicher Raum | Drei Tage/Woche | Event beim Host |
 |---|---|---|---|
-| Monatskosten | 116.740 | 74.460 | 211.000 |
-| Kosten je aufgegebener Bestellung | 174,76 | 224,28 | 175,83 |
-| Kostenanteil am angenommenen Umsatz | 69,9 % | 89,7 % | 70,3 % |
+| Monatskosten | 114.235 | 73.215 | 206.500 |
+| Kosten je aufgegebener Bestellung | 171,01 | 220,53 | 172,08 |
+| Kostenanteil am angenommenen Umsatz | 68,4 % | 88,2 % | 68,8 % |
 
 </div>
 
@@ -207,13 +218,13 @@ gehört nicht in dieses Budget.
 
 Retouren verändern den Nenner. Werden 20 Prozent der Bestellungen des täglichen
 Raums nicht zu behaltenen Bestellungen und bleibt sein Budget gleich, steigen
-die Kosten je behaltener Bestellung auf rund 218,45 Yuan. Das ist ein
+die Kosten je behaltener Bestellung auf rund 213,76 Yuan. Das ist ein
 Stresstest; tatsächliche Erstattungen verändern auch Provisionen und
 Plattformgebühren. Gleichen Sie das mit den Abrechnungsdaten ab.
 
-Bei 500.000 Yuan Umsatz ergibt die Formel des täglichen Raums 190.000 Yuan
-Kosten, also 95 Yuan je Bestellung. Bei 1 Million Yuan ergibt sie 300.000 Yuan,
-also 75 Yuan je Bestellung. Die Gesamtkosten je Sendestunde steigen, weil die
+Bei 500.000 Yuan Umsatz ergibt die Formel des täglichen Raums 182.500 Yuan
+Kosten, also 91,25 Yuan je Bestellung. Bei 1 Million Yuan ergibt sie 285.000
+Yuan, also 71,25 Yuan je Bestellung. Die Gesamtkosten je Sendestunde steigen, weil die
 Traffic-Rechnung steigt, während der Sendeplan gleich bleibt.
 
 Beide Formate können einen festen Betrag auf mehr Bestellungen verteilen. Auch
@@ -283,8 +294,8 @@ lässt.
 
 ### Ist ein Teilzeitraum günstiger?
 
-Er bindet im Monat weniger Geld. Unser gewähltes Teilzeitbudget liegt bei 74.460
-Yuan, gegenüber 116.740 für den Tagesplan. Seine Stundenkosten fallen höher aus,
+Er bindet im Monat weniger Geld. Unser gewähltes Teilzeitbudget liegt bei 73.215
+Yuan, gegenüber 114.235 für den Tagesplan. Seine Stundenkosten fallen höher aus,
 weil Moderation und Fläche stundenweise gemietet werden. Vergleichen Sie die
 Gesamtverpflichtung und die erwarteten behaltenen Bestellungen, bevor Sie sich
 für einen Plan entscheiden.

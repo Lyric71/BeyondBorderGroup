@@ -14,7 +14,7 @@ const copy: BuildInChinaCopy = {
   meta: {
     title: 'Site web, WeChat et mini-programme en Chine | TheChinaPath',
     description:
-      "Pourquoi votre site est lent ou introuvable en Chine : indexation Baidu, licence ICP, et l'arbitrage entre mini-programme WeChat et site mobile. Réalisation confiée à ChinaWebFoundry, notre équipe web à Shanghai.",
+      "Site lent ou introuvable en Chine ? Baidu, licence ICP, mini-programme WeChat ou site mobile : les bons choix, réalisés par ChinaWebFoundry à Shanghai.",
   },
 
   hero: {

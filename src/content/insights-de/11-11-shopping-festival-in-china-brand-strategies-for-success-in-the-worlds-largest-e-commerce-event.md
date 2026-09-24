@@ -1,6 +1,6 @@
 ---
 title: "Wie das 11.11-Shopping-Festival den eCommerce in China prägt"
-description: "Das 11.11-Shopping-Festival ist zum grössten Online-Einkaufstag der Welt geworden. Marken nutzen Social Media, Influencer und strategische Lokalisierung, um Wirkung zu erzielen."
+description: "Der 11.11 ist der größte Online-Shoppingtag der Welt. Wie Marken das Festival mit Social Media, Influencern und gezielter Lokalisierung für sich nutzen."
 pubDate: "2024-10-11"
 author: "TheChinaPath"
 category: "E-Commerce"
@@ -12,13 +12,13 @@ heroImageAlt: "Werbebild des 11.11-Shopping-Festivals"
 
 ## Das Phänomen 11.11 im chinesischen eCommerce
 
-Das 11.11-Shopping-Festival, oft Singles' Day genannt, ist die grösste Online-Einkaufsveranstaltung der Welt. Ursprünglich als Feiertag für Singles in China gedacht, ist es heute ein zentrales Handelsereignis und bietet enorme Chancen für inländische wie internationale Marken. Jedes Jahr machen Millionen Käufer mit, jagen Rabatten und exklusiven Produkten hinterher. Für Unternehmen, die in den chinesischen eCommerce einsteigen oder ihre Präsenz heben wollen, ist der 11.11 eine zentrale Bühne.
+Das 11.11-Shopping-Festival, oft Singles' Day genannt, ist die größte Online-Einkaufsveranstaltung der Welt. Ursprünglich als Feiertag für Singles in China gedacht, ist es heute ein zentrales Handelsereignis und bietet enorme Chancen für inländische wie internationale Marken. Jedes Jahr machen Millionen Käufer mit, jagen Rabatten und exklusiven Produkten hinterher. Für Unternehmen, die in den chinesischen eCommerce einsteigen oder ihre Präsenz heben wollen, ist der 11.11 eine zentrale Bühne.
 
 In diesem Beitrag sehen wir uns an, wie Marken das Festival mit Markenlokalisierung, Social-Media-Engagement und Kooperationen mit chinesischen Influencern bespielen. Lokale Konsumtrends zu verstehen und sich darauf einzustellen, ist die Voraussetzung für Erfolg in einem der dynamischsten Handelsmärkte der Welt.
 
 ## Ursprung und Entwicklung des 11.11
 
-Das 11.11 ist aus dem Singles' Day hervorgegangen, einem informellen Feiertag am 11. November, der über die viermal wiederholte „1" das Singledasein symbolisiert. Der Wendepunkt kam 2009, als Alibaba den Tag über Tmall in ein gewaltiges kommerzielles Event verwandelte, mit grossen Rabatten und Aktionen. Seitdem ist das Festival exponentiell gewachsen, 2021 standen über 139 Milliarden US-Dollar Umsatz auf der Anzeige. Damit ist es das grösste Online-Shopping-Event der Geschichte.
+Das 11.11 ist aus dem Singles' Day hervorgegangen, einem informellen Feiertag am 11. November, der über die viermal wiederholte „1" das Singledasein symbolisiert. Der Wendepunkt kam 2009, als Alibaba den Tag über Tmall in ein gewaltiges kommerzielles Event verwandelte, mit großen Rabatten und Aktionen. Seitdem ist das Festival exponentiell gewachsen, 2021 standen über 139 Milliarden US-Dollar Umsatz auf der Anzeige. Damit ist es das größte Online-Shopping-Event der Geschichte.
 
 Der Termin zieht sich heute über mehrwöchige Kampagnen, mit Millionen Marken und ausgereifter Digital-Marketing-Arbeit. Für internationale Anbieter, besonders mit Plänen für eine China-Marken-Website oder einen Tmall-Cross-Border-Einstieg, ist der 11.11 eine goldene Gelegenheit.
 
@@ -56,7 +56,7 @@ Wer Social-Strategien und Performance-Marketing in China sauber verzahnt, leitet
 
 ### b) Mit KOL (Key Opinion Leaders) zusammenarbeiten
 
-Influencer-Marketing oder [KOL-Marketing](/de/chinesische-social-media) gehört zu den stärksten Werkzeugen, um am 11.11 Reichweite zu gewinnen. Chinesische KOL mit grosser Gefolgschaft heben Sichtbarkeit und Glaubwürdigkeit deutlich.
+Influencer-Marketing oder [KOL-Marketing](/de/chinesische-social-media) gehört zu den stärksten Werkzeugen, um am 11.11 Reichweite zu gewinnen. Chinesische KOL mit großer Gefolgschaft heben Sichtbarkeit und Glaubwürdigkeit deutlich.
 
 KOL haben das Vertrauen ihrer Follower, das macht Empfehlungen wirksam. Modemarken arbeiten mit Lifestyle-Influencern auf Xiaohongshu, Tech-Marken mit Gadget-Rezensenten auf Weibo.
 

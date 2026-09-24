@@ -1,6 +1,6 @@
 ---
 title: "Unternehmerinnen im chinesischen Digital-Handel: Trends 2024"
-description: "Unternehmerinnen machen in Chinas eCommerce grosse Schritte. Plattformen wie Taobao schaffen Chancen und treiben weltweit Wirtschaftswachstum."
+description: "Unternehmerinnen machen in Chinas eCommerce große Schritte. Plattformen wie Taobao schaffen Chancen und treiben weltweit Wirtschaftswachstum."
 pubDate: "2024-06-14"
 author: "TheChinaPath"
 category: "Market Strategy"
@@ -28,7 +28,7 @@ In China nutzen Unternehmerinnen digitale Plattformen, um klassische Hürden zu 
 
 ## Wie digitaler Handel die Geschlechterlücke verkleinert
 
-Plattformen wie [Taobao](/de/in-china-wachsen/cross-border-ecommerce) und Lazada wirken als Gleichmacher. Niedrige Einstiegshürden lassen Unternehmerinnen mit geringer Anfangsinvestition starten. Für Frauen ist das ein zentraler Vorteil, da sie oft grössere Hürden bei Finanzierung und Ressourcen vorfinden.
+Plattformen wie [Taobao](/de/in-china-wachsen/cross-border-ecommerce) und Lazada wirken als Gleichmacher. Niedrige Einstiegshürden lassen Unternehmerinnen mit geringer Anfangsinvestition starten. Für Frauen ist das ein zentraler Vorteil, da sie oft größere Hürden bei Finanzierung und Ressourcen vorfinden.
 
 Lorina Tan etwa, vom Marketing zur Unternehmerin geworden, hat mit Wissen von Lazada die Babypflege-Marke Tiny Buds mitgegründet. Solche Geschichten zeigen, wie stark digitaler Handel Frauen dabei stützt, erfolgreiche Geschäfte aufzubauen und zu skalieren.
 

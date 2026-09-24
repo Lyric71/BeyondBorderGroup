@@ -138,7 +138,7 @@ const relatedLabel = relatedByIndustry ? industryLabel : categoryLabel;
 ---
 
 <Layout
-  title={`${title} | TheChinaPath`}
+  title={`${post.data.seoTitle ?? title} | TheChinaPath`}
   description={description}
   schema={articleJsonLd}
   ogType="article"

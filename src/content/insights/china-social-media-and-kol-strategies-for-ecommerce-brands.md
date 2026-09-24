@@ -1,6 +1,6 @@
 ---
 title: "China Social Media and KOL Strategies for eCommerce Brands"
-description: "Partnering with Key Opinion Leaders (KOLs) has become a powerful way to connect with Chinese consumers. This guide explores strategies for finding and collaborating with the right KOLs to maximize reach, credibility, and brand growth."
+description: "How eCommerce brands find and work with the right KOLs in China, and how those partnerships build reach and credibility on Chinese social media."
 pubDate: "2024-11-28"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

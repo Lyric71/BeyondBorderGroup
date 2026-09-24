@@ -1,6 +1,7 @@
 ---
 title: "Lois publicitaires chinoises : ce que les marques internationales doivent savoir"
-description: "Superlatifs interdits, secteurs sous tutelle, plateformes qui empilent leurs propres règles : la publicité en Chine impose un cadre dense. Tour d'horizon pour les marques internationales."
+seoTitle: "Lois publicitaires chinoises : le guide pour les marques"
+description: "Superlatifs interdits, secteurs sous tutelle, règles propres à chaque plateforme : le cadre publicitaire chinois décrypté pour les marques internationales."
 pubDate: "2024-10-29"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

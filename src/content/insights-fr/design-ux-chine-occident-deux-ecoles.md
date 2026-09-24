@@ -1,6 +1,7 @@
 ---
 title: "Design UX en Chine et en Occident : deux écoles, deux logiques"
-description: "Sites chinois saturés, sites occidentaux dépouillés. Derrière cette opposition visuelle, deux cultures, deux langues, deux internets. Décryptage à l'usage des marques qui visent les deux marchés."
+seoTitle: "Design UX, Chine et Occident : deux écoles, deux logiques"
+description: "Sites chinois saturés, sites occidentaux épurés : le contraste trahit deux cultures et deux internets. Décryptage pour les marques présentes sur les deux."
 pubDate: "2025-01-17"
 author: "TheChinaPath"
 category: "Brand & Localization"

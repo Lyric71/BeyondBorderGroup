@@ -1,5 +1,6 @@
 ---
 title: "Tech, beauté, luxe : ce que le 6.18 dit du e-commerce chinois"
+seoTitle: "Tech, beauté, luxe : les leçons du 6.18 en Chine"
 description: "Le festival 6.18 a tranché. Tech, beauté et luxe ont signé des records sur Taobao et Tmall, portés par un marketing offensif et un commerce sous tension."
 pubDate: "2024-06-14"
 author: "TheChinaPath"

@@ -1,7 +1,8 @@
 ---
 brand: "Camper"
 title: "Construire une communauté de design sur les réseaux sociaux chinois"
-summary: "Croissance de 330 % de la présence de Camper sur WeChat, Weibo et Xiaohongshu grâce à un storytelling centré sur le savoir-faire, des partenariats design et un réseau de micro-influenceurs."
+seoTitle: "Camper : fédérer une communauté design en Chine"
+summary: "Sur WeChat, Weibo et Xiaohongshu, la présence de Camper bondit de 330 %, portée par le savoir-faire, les partenariats design et les micro-influenceurs."
 metric: "Base d'abonnés cumulée de 43k à 187k. Xiaohongshu génère 38 % du trafic eCommerce."
 category: "Social & Content"
 industry: "Fashion & Footwear"

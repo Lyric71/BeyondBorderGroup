@@ -1,7 +1,8 @@
 ---
 brand: "Shiseido RQ Pyology"
 title: "Campagne de lancement de marque en Chine"
-summary: "Construction intégrale d'une marque dermo-cosmétique haut de gamme pour Shiseido : positionnement, identité, packaging et activation de lancement sur le marché chinois."
+seoTitle: "Shiseido RQ Pyology : le lancement de la marque en Chine"
+summary: "Une marque dermo-cosmétique haut de gamme bâtie de A à Z pour Shiseido : positionnement, identité, packaging et lancement sur le marché chinois."
 metric: "Nouvelle marque dermo-cosmétique construite de bout en bout pour Shiseido, du positionnement au packaging."
 category: "Brand & Design"
 industry: "Beauty & Personal Care"

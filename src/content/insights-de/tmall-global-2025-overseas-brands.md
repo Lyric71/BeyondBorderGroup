@@ -43,7 +43,7 @@ Das stärkste Quartal war das vierte: 691 neue Marken in nur drei Monaten. Der G
 
 Wer einen Schritt nach China erwägt, sollte hier genau hinsehen. Die Neuankömmlinge jagen nicht mehr dem Massenmarkt hinterher. Sie suchen sich ein eng umrissenes Bedürfnis und besetzen es.
 
-Die meisten Neueinsteiger zog es in Gesundheit, Beauty und Personal Care sowie in das Segment Mutter und Kind. Innerhalb dieser grossen Kategorien steuerten die Marken aber gezielt die schmalen Nischen an. Am heissesten lief Babynahrung.
+Die meisten Neueinsteiger zog es in Gesundheit, Beauty und Personal Care sowie in das Segment Mutter und Kind. Innerhalb dieser großen Kategorien steuerten die Marken aber gezielt die schmalen Nischen an. Am heissesten lief Babynahrung.
 
 > Neue Babynahrungsmarken legten 2025 um 128 Prozent zu. In der Körperpflege, deren Mainstream inzwischen chinesische Marken dominieren, stieg die Zahl neuer ausländischer Anbieter um 37 Prozent; mehr als die Hälfte davon setzte direkt auf Haarpflege.
 > Quelle: China Economic Net (中国经济网), nach Daten von Tmall Global
@@ -104,7 +104,7 @@ Die Tür steht so weit offen wie seit Jahren nicht. Mehr als 40.000 ausländisch
 
 Nur: Eine offene Tür ist noch kein Geschäft. Jede der genannten Marken hatte ihre Hausaufgaben gemacht. Kategorie, Preispunkt, Zielkunde, alles stand fest, bevor die erste Einheit das Lager verliess. Wer China als Nebenprojekt behandelte, mit kleinem Budget und Zwölf-Monats-Frist, taucht in diesen Zahlen nicht auf. Diese Anbieter sind ausgeschieden.
 
-Der Grossteil dieser Arbeit fällt an, bevor der Store überhaupt öffnet: die Analyse der Kategorie, das Preismodell, die Wahl zwischen Cross-Border-Modell und lokaler Gesellschaft, die Frage, wer den Store im Tagesgeschäft führt. Sitzen diese Entscheidungen, arbeiten die Plattformdaten für Sie statt gegen Sie.
+Der Großteil dieser Arbeit fällt an, bevor der Store überhaupt öffnet: die Analyse der Kategorie, das Preismodell, die Wahl zwischen Cross-Border-Modell und lokaler Gesellschaft, die Frage, wer den Store im Tagesgeschäft führt. Sitzen diese Entscheidungen, arbeiten die Plattformdaten für Sie statt gegen Sie.
 
 Aus den Zahlen von 2025 würden wir an Ihrer Stelle Folgendes mitnehmen. Besetzen Sie ein enges Segment, das Sie wirklich gewinnen können, nicht die Massenmitte, die lokale Marken längst dominieren. Prüfen Sie die Nachfrage mit einem fokussierten Test auf Douyin (抖音), bevor Sie einen vollen Store aufsetzen. Und eröffnen Sie Ihren Cross-Border-Store erst, wenn Sie ihn ernsthaft betreiben können, nicht als reines Aushängeschild.
 

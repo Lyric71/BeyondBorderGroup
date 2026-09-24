@@ -1,6 +1,7 @@
 ---
 title: "Digitaler Mensch: Der Aufstieg KI-getriebener Livestreams in China"
-description: "JD.coms digitales Abbild des Gründers Liu Qiangdong zog in einer Stunde 20 Millionen Zuschauer an. Ein Beleg, wie KI Publikum bindet und den eCommerce über lebensnahe Interaktion verändern kann."
+seoTitle: "Digitale Menschen: Wie KI-Livestreams China erobern"
+description: "Der digitale Doppelgänger von JD.com-Gründer Liu Qiangdong zog in einer Stunde 20 Millionen Zuschauer an. Wie KI-Avatare den Livestream-Handel verändern."
 pubDate: "2024-04-25"
 author: "TheChinaPath"
 category: "AI & Innovation"
@@ -12,7 +13,7 @@ heroImageAlt: "KI-Online-Verkäufer"
 
 ## Schnelle Zuschauerbindung
 
-Am 16. April 2024 stellte [JD](/de/in-china-wachsen/cross-border-ecommerce).com einen neuartigen digitalen Avatar seines Gründers Liu Qiangdong vor. Der Auftritt zog während eines [Livestreams](/de/chinesische-social-media) enorme Aufmerksamkeit auf sich. In den ersten 30 Minuten schalteten sich über 10 Millionen Zuschauer ein, nach 40 Minuten waren es 13 Millionen. Mit knapp 20 Millionen Zuschauern in der ersten Stunde setzte das Event einen neuen Rekord und zeigte, wie weit KI grosse Publika bindet.
+Am 16. April 2024 stellte [JD](/de/in-china-wachsen/cross-border-ecommerce).com einen neuartigen digitalen Avatar seines Gründers Liu Qiangdong vor. Der Auftritt zog während eines [Livestreams](/de/chinesische-social-media) enorme Aufmerksamkeit auf sich. In den ersten 30 Minuten schalteten sich über 10 Millionen Zuschauer ein, nach 40 Minuten waren es 13 Millionen. Mit knapp 20 Millionen Zuschauern in der ersten Stunde setzte das Event einen neuen Rekord und zeigte, wie weit KI große Publika bindet.
 
 ## Lebensnahe Interaktion hält Zuschauer länger
 

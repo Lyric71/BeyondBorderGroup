@@ -1,6 +1,7 @@
 ---
 title: "China ist nicht mehr ein einziger Markt: Warum lokale Wetten den nationalen Plan schlagen"
-description: "Globale Marken müssen weg von einer einzigen nationalen Strategie und hin zu lokalen, stadtbezogenen Ansätzen, um im heutigen langsamer wachsenden chinesischen Markt mit stärkerem lokalen Wettbewerb zu bestehen."
+seoTitle: "China ist kein Einheitsmarkt mehr: Lokal schlägt national"
+description: "Chinas Wachstum lässt nach, die lokale Konkurrenz wird stärker. Ein nationaler Plan genügt nicht mehr, globale Marken müssen Stadt für Stadt planen."
 pubDate: "2026-01-06"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -17,7 +18,7 @@ keyTakeaways:
 
 Wer täglich mit China arbeitet, spürt es. Das alte Wachstums-[Playbook](/de/referenzen) verblasst.
 
-Jahrelang haben viele [globale Marken](/de/nach-china/markteintrittsberatung) China wie eine grosse Wachstumsmaschine behandelt. Eine Hero-SKU wählen, einen Celebrity, national ausrollen, die Skalierung den Rest erledigen lassen. In einem schnell wachsenden Markt konnte das funktionieren. 2025 legt es eher die Schwächen offen. Langsameres Wachstum, vorsichtigere Käufer und stärkere lokale Konkurrenz machen das alte Rezept untauglich. Marken, die weiter einer einzigen nationalen Antwort hinterherjagen, geben viel aus und kommen trotzdem schwer an.
+Jahrelang haben viele [globale Marken](/de/nach-china/markteintrittsberatung) China wie eine große Wachstumsmaschine behandelt. Eine Hero-SKU wählen, einen Celebrity, national ausrollen, die Skalierung den Rest erledigen lassen. In einem schnell wachsenden Markt konnte das funktionieren. 2025 legt es eher die Schwächen offen. Langsameres Wachstum, vorsichtigere Käufer und stärkere lokale Konkurrenz machen das alte Rezept untauglich. Marken, die weiter einer einzigen nationalen Antwort hinterherjagen, geben viel aus und kommen trotzdem schwer an.
 
 ## Vom nationalen Spruch zur lokalen Relevanz
 
@@ -53,17 +54,17 @@ China als einen einzigen Markt zu behandeln, führt häufig zu:
 
 - Übergewicht auf Tier-1-Städten wie Shanghai, wo Wettbewerb und Mediakosten am höchsten sind.
 - Plattform-Plänen, die Schlagzeilen-Nutzerzahlen folgen, nicht der lokalen Nutzung und den Content-Kulturen.
-- Kreation, die sich auf sichere Symbole stützt, Pandas oder die Grosse Mauer, statt auf Lebenswelten.
+- Kreation, die sich auf sichere Symbole stützt, Pandas oder die Große Mauer, statt auf Lebenswelten.
 
 Gleichzeitig hat die Gen Z in Städten unterer Tiers in bestimmten Kategorien vergleichbare Kaufkraft, weniger konkurrierende Botschaften und mehr Zeit, sich mit Inhalten auseinanderzusetzen. Die Chance liegt offen, aber nur für Marken, die bereit sind, dafür zu gestalten.
 
 ---
 
-## Ein Portfolio aus lokalen Wetten, nicht ein grosser Einsatz
+## Ein Portfolio aus lokalen Wetten, nicht ein großer Einsatz
 
 „China gewinnen" mit einer einzigen Strategie gibt es nicht mehr.
 
-Was stattdessen funktioniert, ist ein Portfolio aus lokalen Wetten, manche gross, manche klein, manche, die ruhig auslaufen. So arbeiten viele erfolgreiche lokale Marken bereits. So werden ausländische Marken zunehmend denken müssen.
+Was stattdessen funktioniert, ist ein Portfolio aus lokalen Wetten, manche groß, manche klein, manche, die ruhig auslaufen. So arbeiten viele erfolgreiche lokale Marken bereits. So werden ausländische Marken zunehmend denken müssen.
 
 Ein pragmatisches Portfolio enthält etwa:
 

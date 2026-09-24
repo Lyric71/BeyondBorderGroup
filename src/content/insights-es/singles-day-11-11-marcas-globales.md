@@ -1,6 +1,7 @@
 ---
 title: "Singles' Day: cómo el 11.11 ha rediseñado el comercio electrónico chino"
-description: "Convertido en la mayor operación comercial en línea del mundo, el 11.11 premia a las marcas que dominan las redes sociales chinas, las alianzas con influencers y una localización rigurosa."
+seoTitle: "Singles' Day: cómo el 11.11 rediseñó el eCommerce chino"
+description: "El 11.11, la mayor cita comercial online del mundo, premia a las marcas que dominan las redes chinas, las alianzas con influencers y la localización."
 pubDate: "2024-10-11"
 author: "TheChinaPath"
 category: "E-Commerce"

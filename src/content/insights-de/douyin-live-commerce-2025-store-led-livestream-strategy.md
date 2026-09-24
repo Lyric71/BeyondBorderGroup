@@ -1,6 +1,7 @@
 ---
 title: "Douyin Live Commerce 2025: Warum eigene Studios die Celebrity-Events schlagen"
-description: "Eigenständige Markenstudios sind 2026 die dominante Strategie auf Douyin. Sie ersetzen die Abhängigkeit von Celebrity-Hosts durch händlergeführte Übertragungen, die Compliance sichern und wiederholbares Wachstum ermöglichen."
+seoTitle: "Douyin Live Commerce: Eigene Studios statt Celebrity-Hosts"
+description: "Auf Douyin setzen Marken 2026 auf eigene Studios statt auf Celebrity-Hosts. Händlergeführte Übertragungen sichern Compliance und stetiges Wachstum."
 pubDate: "2026-01-06"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -16,7 +17,7 @@ keyTakeaways:
   - "Planen Sie einen Content-Rhythmus: 3 bis 5 Live-Sessions pro Woche, 10 bis 15 Kurzvideos, eine bezahlte Schicht darunter. Die Zinseszinsen sitzen im Kalender, nicht im einzelnen Hero-Moment."
 ---
 
-Douyin ist nicht länger „ein Kanal, auf dem man einen grossen [Livestream](/de/chinesische-social-media) macht."
+Douyin ist nicht länger „ein Kanal, auf dem man einen großen [Livestream](/de/chinesische-social-media) macht."
 
 2026 verhält sich die Plattform wie ein Retail-Betriebssystem. Content erzeugt Nachfrage, Werbung verstärkt sie, Suche fängt sie ein, der Kauf passiert im selben Loop. Wer das wie eine Einzelkampagne behandelt, verbrennt schnell Budget und lernt langsam.
 

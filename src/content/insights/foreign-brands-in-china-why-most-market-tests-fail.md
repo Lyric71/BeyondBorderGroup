@@ -1,5 +1,6 @@
 ---
 title: "How Foreign Brands Test the Chinese Market. And Why Most Get It Wrong."
+seoTitle: "How Foreign Brands Test China, and Why Most Fail"
 description: "An analysis of why foreign brands fail when entering China, examining common mistakes in cross-border e-commerce strategy, pricing, and market approach."
 pubDate: "2026-03-25"
 updatedDate: "2026-05-15"

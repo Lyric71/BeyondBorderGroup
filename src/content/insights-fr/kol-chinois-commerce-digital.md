@@ -1,6 +1,6 @@
 ---
 title: "KOL chinois : la grammaire du commerce digital"
-description: "Les Key Opinion Leaders pèsent désormais sur la majorité des décisions d'achat en ligne. Profils, plateformes, arbitrages budgétaires : la lecture pour les marques e-commerce."
+description: "Les KOL orientent désormais la plupart des achats en ligne en Chine. Profils, plateformes, budgets : la grille de lecture des marques e-commerce."
 pubDate: "2024-11-28"
 author: "TheChinaPath"
 category: "KOLs & Livestream"

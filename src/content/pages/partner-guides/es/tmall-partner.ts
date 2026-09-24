@@ -38,7 +38,7 @@ const copy: PartnerGuideCopy = {
     body: [
       'Para encontrar un Tmall Partner, pida a cada candidato las tiendas de su categoría que gestiona hoy, ábralas en Tmall y júzguelas con ojos de comprador. Antes de firmar, conozca a quienes llevarían realmente la suya y lea dos veces las condiciones de salida. La tienda debe quedar a nombre de su empresa.',
       'Alibaba certifica a los TP y los califica en su propio mercado de proveedores de servicios. Es un punto de partida válido, aunque esa calificación apenas dice nada sobre si el TP ha vendido alguna vez un producto como el suyo.',
-      'Grandes operadores cotizados como Baozun gestionan tiendas de decenas de marcas internacionales. Un especialista más pequeño puede llevar seis, todas de la misma categoría. Ambos modelos funcionan. Lo decisivo es cuántas horas semanales del equipo se llevará su marca.',
+      'Los grandes operadores cotizados gestionan tiendas de decenas de marcas internacionales. Un especialista más pequeño puede llevar seis, todas de la misma categoría. Ambos modelos funcionan. Lo decisivo es cuántas horas semanales del equipo se llevará su marca.',
     ],
   },
 

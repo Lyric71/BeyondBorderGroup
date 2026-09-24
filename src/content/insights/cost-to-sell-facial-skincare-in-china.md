@@ -1,15 +1,15 @@
 ---
 title: "What it costs to sell facial skincare in China"
-description: "Facial skincare opens at 80,000 RMB on Tmall Global, 42,600 on JD Worldwide, 100,000 on Douyin. Then your pack size decides the tax."
+description: "Facial skincare opens at 80,000 RMB on Tmall Global, 42,600 on JD Worldwide, 5,000 on Douyin. Then your pack size decides the tax."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-16"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Beauty & Personal Care"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Skincare", "Tmall Global", "JD Worldwide", "Douyin", "cross-border ecommerce", "platform fees", "NMPA"]
 keyTakeaways:
-  - "Facial skincare costs 80,000 RMB to open on Tmall Global, 42,600 RMB on JD Worldwide and 100,000 RMB on Douyin cross-border, before stock, media or a partner retainer (TheChinaPath calculator data, September 2026)."
+  - "Facial skincare costs 80,000 RMB to open on Tmall Global, 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin cross-border, before stock, media or a partner retainer (TheChinaPath calculator data, September 2026)."
   - "Tmall Global charges skincare 4% a sale against 5% on the other two, and puts the category in the lower 30,000 RMB annual fee band."
   - "Cross-border skips NMPA filing entirely, because the goods are supervised as personal-use imports. General trade does not."
   - "A skincare item at or above 10 RMB per milliliter counts as a high-end cosmetic and carries consumption tax, so the shopper pays about 23% instead of 9.1%."
@@ -19,7 +19,7 @@ heroImageAlt: "A merchandiser in a Guangzhou bonded-warehouse office studies a C
 ---
 
 Start on Tmall Global. Facial skincare costs 80,000 RMB there before you sell
-a jar, against 42,600 RMB on JD Worldwide and 100,000 RMB on Douyin
+a jar, against 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin
 cross-border. Tmall takes 4% of each sale. The other two take 5%. Then the
 tax your shopper pays at checkout, which your pack size controls, moves more
 money than any of it.
@@ -33,10 +33,10 @@ most forgiving on fees. Table first.
 
 | Facial skincare, year one (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
-| Security deposit, refundable | 50,000 | 35,500 (about US$5,000) | 100,000 |
+| Security deposit, refundable | 50,000 | 35,500 (about US$5,000) | 5,000 |
 | Annual platform fee | 30,000 | 7,100 (about US$1,000) | none |
 | Commission on each sale | 4% | 5% | 5% |
-| Cash in before the first sale | 80,000 | 42,600 | 100,000 |
+| Cash in before the first sale | 80,000 | 42,600 | 5,000 |
 
 </div>
 
@@ -48,6 +48,17 @@ JD adds a flat 0.9% transaction fee on top, and quotes its deposit and usage
 fee in dollars on a ladder that climbs with cumulative sales, so the RMB
 above is the entry rung. A TM trademark or a multi-brand store raises the
 Tmall deposit. Bands checked September 2026.
+
+Douyin's deposit has nothing to do with skincare anymore. Since June 2025 it
+tracks the store's sales in the previous month: 500 RMB up to 50,000 RMB,
+2,000 RMB up to 100,000, and 5,000 RMB above that. We show the top tier.
+
+> Douyin Global's base deposit is set by the store's paid GMV in the previous
+> calendar month: 500 RMB from 0 to 50,000 RMB, 2,000 RMB above 50,000 to
+> 100,000 RMB, and 5,000 RMB above 100,000 RMB.
+> Source: Douyin E-commerce (抖音电商), 《【全球购】保证金管理规范》, latest
+> revision effective June 5, 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/107821
 
 One number in that table is doing something unusual. Skincare and makeup are
 the only two of the nineteen categories in our Tmall Global calculator set at
@@ -229,7 +240,7 @@ worth the 37,400 RMB gap over JD.
 JD Worldwide flips it when the open question is whether China wants the brand
 at all. Same route, same rules, a little over half the cash to get live.
 
-Douyin does a different job. Largest deposit, no annual fee, and it rewards
+Douyin does a different job. Smallest deposit, no annual fee, and it rewards
 brands that already have content that sells. Our [footwear cost
 page](/insights/cost-to-sell-footwear-in-china) runs the same three platforms
 where returns decide the year.

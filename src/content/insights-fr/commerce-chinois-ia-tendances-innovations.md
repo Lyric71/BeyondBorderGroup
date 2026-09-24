@@ -1,6 +1,7 @@
 ---
 title: "Le commerce chinois sous IA : tendances et innovations à suivre"
-description: "Alibaba, JD.com, Baidu : la Chine a fait de l'IA la colonne vertébrale du marketing et de l'e-commerce. Lecture d'un basculement qui redéfinit l'expérience client à l'échelle du pays."
+seoTitle: "L'IA dans le commerce chinois : tendances et innovations"
+description: "Alibaba, JD.com, Baidu : la Chine a fait de l'IA la colonne vertébrale de son marketing et de son e-commerce, et l'expérience client s'en trouve redéfinie."
 pubDate: "2025-01-10"
 updatedDate: "2026-05-15"
 author: "TheChinaPath"

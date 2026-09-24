@@ -1,6 +1,6 @@
 ---
 title: "Die besten Kurzvideo-Plattformen in China"
-description: "Kurzvideo-Plattformen sind zu zentralen Marketing- und eCommerce-Werkzeugen in China geworden. Douyin, Kuaishou und Bilibili führen den Markt mit über 941 Millionen monatlich aktiven Nutzern."
+description: "Kurzvideo ist in China Marketing- und Verkaufskanal zugleich. Douyin, Kuaishou und Bilibili führen einen Markt mit über 941 Millionen Nutzern im Monat."
 pubDate: "2025-02-13"
 author: "TheChinaPath"
 category: "Platforms"

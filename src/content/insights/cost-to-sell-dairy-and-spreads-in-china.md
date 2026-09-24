@@ -1,16 +1,16 @@
 ---
 title: "What it costs to sell dairy and spreads in China"
-description: "Dairy and spreads open for 80,000 RMB on Tmall Global, 42,600 on JD Worldwide, 50,000 on Douyin. Tmall takes 2%. The parcel is what costs you."
+description: "Dairy and spreads open for 80,000 RMB on Tmall Global, 42,600 on JD Worldwide, 5,000 on Douyin. Tmall takes 2%. The parcel is what costs you."
 pubDate: "2026-09-23"
-updatedDate: "2026-09-23"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Food & Beverage"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Dairy", "Spreads", "Tmall Global", "JD Worldwide", "Douyin", "cross-border ecommerce", "platform fees", "food import"]
 keyTakeaways:
-  - "Dairy and spreads cost 80,000 RMB to open on Tmall Global, 42,600 RMB on JD Worldwide and 50,000 RMB on Douyin cross-border, before stock, media or a partner retainer (TheChinaPath calculator data, September 2026)."
-  - "Tmall Global charges food 2% commission, the lowest band on the platform, and Douyin asks half the deposit it asks of apparel and beauty."
+  - "Dairy and spreads cost 80,000 RMB to open on Tmall Global, 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin cross-border, before stock, media or a partner retainer (TheChinaPath calculator data, September 2026)."
+  - "Tmall Global charges food 2% commission, the lowest band on the platform. Since June 2025 Douyin sets the same deposit for every category, tied to last month's sales and capped at 5,000 RMB."
   - "Pick, pack and last mile cost about 15 RMB on every parcel. On a 128 RMB jar that is 12% of the order before anyone takes a commission."
   - "Bonded cross-border skips the first-import permit, registration and filing. General trade does not: a dairy plant or a honey packer has to be recommended for customs registration by its own government."
   - "From March 16, 2027, GB 7718-2025 makes milk and nuts mandatory allergen declarations and bans zero-added claims on the pack."
@@ -19,7 +19,7 @@ heroImageAlt: "A warehouse coordinator in a Chengdu bonded cold-storage office c
 ---
 
 Start on Tmall Global. Dairy and spreads cost 80,000 RMB to open there,
-against 42,600 RMB on JD Worldwide and 50,000 RMB on Douyin cross-border.
+against 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin cross-border.
 Tmall takes 2% of each sale, the lowest band on the platform. Then the parcel
 decides your year: 15 RMB of pick, pack and last mile lands on every order,
 whatever is inside.
@@ -38,10 +38,10 @@ years. General trade walks straight into it.
 
 | Dairy and spreads, first year (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
-| Security deposit, refundable | 50,000 | 35,500 (about US$5,000) | 50,000 |
+| Security deposit, refundable | 50,000 | 35,500 (about US$5,000) | 5,000 |
 | Annual platform fee | 30,000 | 7,100 (about US$1,000) | none |
-| Commission on each sale | 2% | 4% | 4% |
-| Cash in before the first sale | 80,000 | 42,600 | 50,000 |
+| Commission on each sale | 2% | 4% | 2.5% |
+| Cash in before the first sale | 80,000 | 42,600 | 5,000 |
 
 </div>
 
@@ -50,11 +50,28 @@ years. General trade walks straight into it.
 > Source: TheChinaPath calculator data, September 2026.
 
 That 2% is the lowest commission Tmall Global charges anybody. Skincare pays
-4%, apparel and footwear pay 5%. Douyin wants 50,000 RMB from a food store
-and 100,000 RMB from an apparel or beauty store. Bands checked September 2026, and a TM trademark or a multi-brand store
-raises the Tmall figure.
+4%, apparel and footwear pay 5%. Bands checked September 2026, and a TM
+trademark or a multi-brand store raises the Tmall figure.
 
-JD is the cheapest door by a wide margin. It quotes deposit and annual fee in
+Douyin stopped pricing its deposit by category in June 2025. The amount now
+follows the store's sales in the previous month: 500 RMB up to 50,000 RMB,
+2,000 RMB up to 100,000, and 5,000 RMB above that, whether you sell butter or
+handbags. The table shows the top tier, the one any store doing real volume
+pays. The 2.5% is our calculator's midpoint for packaged food: Douyin charges
+2% on grain and cooking oil and 3% on most of the rest.
+
+> Douyin Global's base deposit is set by the store's paid GMV in the previous
+> calendar month: 500 RMB from 0 to 50,000 RMB, 2,000 RMB above 50,000 to
+> 100,000 RMB, and 5,000 RMB above 100,000 RMB.
+> Source: Douyin E-commerce (抖音电商), 《【全球购】保证金管理规范》, latest
+> revision effective June 5, 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/107821
+
+> Source for the food rates: Douyin E-commerce (抖音电商),
+> 《【全球购】技术服务费费率标准》, July 15, 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+
+JD undercuts Tmall by a wide margin. It quotes deposit and annual fee in
 dollars, on a ladder that climbs with cumulative sales, so 42,600 RMB is the
 entry rung rather than a steady state. JD adds a flat 0.9% transaction fee on
 top of the 4%.
@@ -212,7 +229,7 @@ European food brand gets taken seriously by a distributor later.
 Two things flip it. If year-one cash is under about 300,000 RMB all in, open
 on JD Worldwide and move across when volume justifies the 80,000. And if you
 already have Chinese-language video and somebody who can host, Douyin food
-opens for 50,000 RMB and no annual fee. Cheapest way to find out whether
+opens for 5,000 RMB and no annual fee. Cheapest way to find out whether
 anyone wants the product.
 
 All of that assumes ambient or chilled-tolerant stock. Short shelf life

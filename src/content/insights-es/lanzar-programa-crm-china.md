@@ -1,6 +1,6 @@
 ---
 title: "Buenas prácticas para lanzar un programa CRM en China"
-description: "Implantar un buen sistema de gestión de la relación con el cliente es decisivo para tener éxito en el mercado digital chino. Esta guía recoge las prácticas que mejor encajan con el comportamiento del consumidor y con el ecosistema digital local."
+description: "Un buen CRM es decisivo para crecer en la China digital. Las prácticas que mejor encajan con el consumidor chino y con su ecosistema de plataformas."
 pubDate: "2025-01-28"
 author: "TheChinaPath"
 category: "Market Strategy"

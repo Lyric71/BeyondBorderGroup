@@ -1,6 +1,6 @@
 ---
 title: "Was chinesische Influencer kosten: Fallstudien und Befunde"
-description: "Der Artikel zeigt Honorarspannen chinesischer KOL auf Plattformen wie Douyin und Xiaohongshu, mit Kostenstrukturen und Fallstudien erfolgreicher Influencer-Kampagnen, die Marken Engagement und Umsatz brachten."
+description: "Was chinesische KOL auf Douyin und Xiaohongshu verlangen: Honorarspannen, Kostenstrukturen und Fallstudien erfolgreicher Kampagnen."
 pubDate: "2024-11-29"
 author: "TheChinaPath"
 category: "KOLs & Livestream"
@@ -62,14 +62,14 @@ Balanciert Reichweite und Engagement, ideal für mittlere Budgets.
 - Preis pro Post: 10.000 bis 50.000 USD
 - Kampagnen: 50.000 bis 200.000 USD und mehr
 
-Breite Sichtbarkeit für gross angelegte Kampagnen.
+Breite Sichtbarkeit für groß angelegte Kampagnen.
 
 ### Celebrity-KOL
 
 - Preis pro Post: 100.000 bis 1.000.000 USD und mehr
 - Kampagnen: 500.000 USD und mehr
 
-Für grosse Marken mit entsprechendem Budget, oft begleitet von einer Digital-Marketing-Agentur in China.
+Für große Marken mit entsprechendem Budget, oft begleitet von einer Digital-Marketing-Agentur in China.
 
 ## Fallstudien
 
@@ -135,7 +135,7 @@ Partnerschaften für nachhaltige Wirkung, oft gesteuert von einer Digital-Market
 
 ### Engagement vor Reichweite
 
-Kleinere Influencer mit treuen, engagierten Communities können besser konvertieren als grosse, weniger interaktive Profile.
+Kleinere Influencer mit treuen, engagierten Communities können besser konvertieren als große, weniger interaktive Profile.
 
 ### Plattform-spezifische Strategien
 
@@ -163,4 +163,4 @@ Mit aufstrebenden Plattformen wie Bilibili und Pinduoduo wird Diversifikation wi
 
 [KOL](/de/chinesische-social-media)-Marketing in China ist Eckpfeiler erfolgreicher Markenführung und Digital-Strategie. Vom Mikro-Influencer bis zum Celebrity, Kosten variieren, doch der Ertrag ist bei sauberer Steuerung hoch. Mit einer Branding-, Social-Media- oder Digital-Marketing-Agentur in China lassen sich diese komplexen Wege gut führen und wirkungsstarke Kampagnen entwickeln.
 
-Wer aus Fallstudien lernt und das chinesische Konsumverhalten genau liest, schöpft Potenzial im grössten eCommerce-Markt der Welt aus.
+Wer aus Fallstudien lernt und das chinesische Konsumverhalten genau liest, schöpft Potenzial im größten eCommerce-Markt der Welt aus.

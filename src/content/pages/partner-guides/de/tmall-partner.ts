@@ -38,7 +38,7 @@ const copy: PartnerGuideCopy = {
     body: [
       'Einen Tmall Partner finden Sie, indem Sie jeden Kandidaten nach den Stores fragen, die er gerade in Ihrer Kategorie betreibt. Diese Stores öffnen Sie auf Tmall und sehen sie sich an wie eine Kundin. Vor der Unterschrift treffen Sie die Leute, die Ihren Store tatsächlich führen würden, und lesen die Ausstiegsklauseln zweimal. Der Store selbst muss auf Ihr Unternehmen laufen.',
       'Alibaba zertifiziert TPs und bewertet sie auf einem eigenen Dienstleistermarktplatz. Als Startpunkt taugt das. Ob ein TP je ein Produkt wie Ihres verkauft hat, verrät die Bewertung allerdings kaum.',
-      'Große börsennotierte Betreiber wie Baozun führen Stores für Dutzende internationaler Marken. Ein kleinerer Spezialist betreut vielleicht sechs Stores, alle aus derselben Kategorie. Beides kann aufgehen. Den Ausschlag gibt, wie viel von seiner Arbeitswoche das Team Ihrer Marke widmet.',
+      'Große börsennotierte Betreiber führen Stores für Dutzende internationaler Marken. Ein kleinerer Spezialist betreut vielleicht sechs Stores, alle aus derselben Kategorie. Beides kann aufgehen. Den Ausschlag gibt, wie viel von seiner Arbeitswoche das Team Ihrer Marke widmet.',
     ],
   },
 

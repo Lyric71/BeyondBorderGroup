@@ -153,7 +153,7 @@ const copy: CompassCopy = {
   index: {
     title: 'Compass: la base de socios chinos verificados | TheChinaPath',
     description:
-      'Compass es nuestra base privada de distribuidores, Tmall y Douyin Partners e importadores chinos verificados. Así construimos su lista corta, en semanas y no en un trimestre.',
+      'Compass, nuestra base privada de distribuidores, Tmall y Douyin Partners e importadores chinos verificados. Su lista corta en semanas, no en un trimestre.',
     eyebrow: 'Encontrar un socio',
     h1: 'Ahórrese 12 meses de búsqueda de socio.',
     lead: 'Compass es nuestra base privada de distribuidores, Tmall Partners, Douyin Partners e importadores. A todos los hemos conocido en persona, verificado sobre el terreno y, en muchos casos, acompañado en proyectos de marca reales.',
@@ -206,7 +206,7 @@ const copy: CompassCopy = {
   shortlist: {
     title: 'Solicite su lista de socios chinos | Compass | TheChinaPath',
     description:
-      'Háblenos de su categoría y de su momento. Volvemos con una lista corta de distribuidores y socios de plataforma chinos que merecen una reunión, normalmente en dos o tres semanas.',
+      'Cuéntenos su categoría y su momento. En dos o tres semanas le enviamos una lista corta de distribuidores y socios chinos que merecen una reunión.',
     eyebrow: 'Su lista corta',
     h1: 'Cuéntenos algo de su marca.',
     lead: 'Unas preguntas rápidas para abrir la conversación. La primera llamada es corta y sin compromiso por ninguna de las dos partes. Un socio sénior le responderá en un día laborable, no una carta tipo enviada por un robot de cualificación.',
@@ -228,10 +228,10 @@ const copy: CompassCopy = {
       honeypot: 'Deje este campo vacío',
     },
     stages: [
-      'Todavía no estamos en China, buscamos el modelo',
-      'Entramos ahora y necesitamos un primer socio',
-      'Ya vendemos y sustituimos a un socio',
-      'Ya vendemos y añadimos un canal o una región',
+      'Todavía no estamos en China y dudamos entre un distribuidor, un TP y un DP',
+      'Entramos ahora y buscamos un primer distribuidor, TP o DP',
+      'Ya vendemos y sustituimos a un distribuidor, TP o DP que no da resultados',
+      'Ya vendemos e incorporamos un distribuidor, TP o DP para un nuevo canal o una nueva región',
     ],
     submit: 'Enviar el briefing',
     submitting: 'Enviando el briefing…',

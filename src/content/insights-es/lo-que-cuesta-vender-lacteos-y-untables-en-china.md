@@ -1,16 +1,16 @@
 ---
 title: "Lo que cuesta vender lácteos y untables en China"
-description: "Abrir cuesta 80.000 yuanes en Tmall Global, 42.600 en JD Worldwide y 50.000 en Douyin. Tmall cobra un 2 %. Lo que encarece es el paquete."
+description: "Abrir cuesta 80.000 yuanes en Tmall Global, 42.600 en JD Worldwide y 5.000 en Douyin. Tmall cobra un 2 %. Lo que encarece es el paquete."
 pubDate: "2026-09-23"
-updatedDate: "2026-09-23"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Food & Beverage"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Lácteos", "Untables", "Tmall Global", "JD Worldwide", "Douyin", "Comercio transfronterizo", "Tarifas de plataforma", "Importación de alimentos"]
 keyTakeaways:
-  - "Abrir una tienda de lácteos y untables cuesta 80.000 yuanes en Tmall Global, 42.600 yuanes en JD Worldwide y 50.000 yuanes en Douyin transfronterizo, sin contar mercancía, medios ni honorarios de un socio (datos de las calculadoras de TheChinaPath, septiembre de 2026)."
-  - "Tmall Global cobra a la alimentación una comisión del 2 %, la más baja de la plataforma, y Douyin exige la mitad del depósito que pide a moda y belleza."
+  - "Abrir una tienda de lácteos y untables cuesta 80.000 yuanes en Tmall Global, 42.600 yuanes en JD Worldwide y 5.000 yuanes en Douyin transfronterizo, sin contar mercancía, medios ni honorarios de un socio (datos de las calculadoras de TheChinaPath, septiembre de 2026)."
+  - "Tmall Global cobra a la alimentación una comisión del 2 %, la más baja de la plataforma. Douyin fija desde junio de 2025 el mismo depósito para todas las categorías, según las ventas del mes anterior y con un máximo de 5.000 yuanes."
   - "Preparación, embalaje y entrega suman unos 15 yuanes por paquete. En un tarro de 128 yuanes, eso ya es el 12 % del pedido, antes de cualquier comisión."
   - "La vía transfronteriza en depósito aduanero exime del permiso de primera importación, del registro y de la presentación. El comercio general, no: allí una planta láctea o un envasador de miel necesita que su propio gobierno lo recomiende ante la aduana china."
   - "A partir del 16 de marzo de 2027, la norma GB 7718-2025 obliga a declarar la leche y los frutos de cáscara como alérgenos y prohíbe las alegaciones «sin añadidos» en el envase."
@@ -19,7 +19,7 @@ heroImageAlt: "En la oficina de un almacén frigorífico en depósito aduanero d
 ---
 
 Empiece por Tmall Global. Abrir allí una tienda de lácteos y untables cuesta
-80.000 yuanes, frente a los 42.600 de JD Worldwide y los 50.000 de Douyin
+80.000 yuanes, frente a los 42.600 de JD Worldwide y los 5.000 de Douyin
 transfronterizo. Tmall retiene un 2 % de cada venta, su tramo más bajo. Pero
 el año se juega en el paquete: 15 yuanes de preparación, embalaje y entrega
 recaen sobre cada pedido, contenga lo que contenga.
@@ -39,10 +39,10 @@ general choca de frente con ellos.
 
 | Lácteos y untables, primer año (yuanes) | Tmall Global | JD Worldwide | Douyin transfronterizo |
 |---|---|---|---|
-| Depósito de garantía, reembolsable | 50.000 | 35.500 (unos 4.500 euros) | 50.000 |
+| Depósito de garantía, reembolsable | 50.000 | 35.500 (unos 4.500 euros) | 5.000 |
 | Cuota anual de plataforma | 30.000 | 7.100 (unos 900 euros) | ninguna |
-| Comisión por venta | 2 % | 4 % | 4 % |
-| Caja antes de la primera venta | 80.000 | 42.600 | 50.000 |
+| Comisión por venta | 2 % | 4 % | 2,5 % |
+| Caja antes de la primera venta | 80.000 | 42.600 | 5.000 |
 
 </div>
 
@@ -52,12 +52,30 @@ general choca de frente con ellos.
 > Fuente: datos de las calculadoras de TheChinaPath, septiembre de 2026.
 
 Tmall Global no cobra a nadie una comisión inferior a ese 2 %. El cuidado
-facial paga un 4 %; la moda y el calzado, un 5 %. Douyin exige 50.000
-yuanes de depósito a una tienda de alimentación y el doble a una de moda o
-belleza. Horquillas comprobadas en septiembre de 2026; una marca en trámite
-TM o una tienda multimarca encarecen la factura de Tmall.
+facial paga un 4 %; la moda y el calzado, un 5 %. Horquillas comprobadas en
+septiembre de 2026; una marca en trámite TM o una tienda multimarca encarecen
+la factura de Tmall.
 
-JD es, con diferencia, la puerta más barata. Expresa el depósito y la cuota
+Douyin dejó de fijar el depósito por categoría en junio de 2025. Desde
+entonces manda la venta del mes anterior: 500 yuanes hasta 50.000 yuanes,
+2.000 yuanes hasta 100.000 y 5.000 yuanes por encima, venda la tienda
+mantequilla o bolsos. La tabla recoge el tramo más alto, el que paga
+cualquier tienda con un volumen real. El 2,5 % es el punto medio que nuestra
+calculadora aplica a la alimentación envasada: Douyin cobra un 2 % a los
+cereales y el aceite y un 3 % a casi todo lo demás.
+
+> El depósito base de Douyin Global depende del GMV pagado por la tienda en el
+> mes natural anterior: 500 yuanes de 0 a 50.000 yuanes, 2.000 yuanes por encima
+> de 50.000 y hasta 100.000 yuanes, y 5.000 yuanes por encima de 100.000 yuanes.
+> Fuente: Douyin E-commerce (抖音电商), 《【全球购】保证金管理规范》, última
+> revisión en vigor desde el 5 de junio de 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/107821
+
+> Fuente de las tarifas de alimentación: Douyin E-commerce (抖音电商),
+> 《【全球购】技术服务费费率标准》, 15 de julio de 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+
+Frente a Tmall, JD sale mucho más barato. Expresa el depósito y la cuota
 anual en dólares, en una escala que asciende con las ventas acumuladas: los
 42.600 yuanes son el primer peldaño, no el régimen de crucero. A su 4 %, JD
 suma una comisión fija del 0,9 % por transacción.
@@ -236,7 +254,7 @@ Dos circunstancias invierten el orden. Si la caja disponible para el primer
 año no llega a unos 300.000 yuanes en total, conviene abrir en JD Worldwide
 y dar el salto cuando el volumen justifique los 80.000. Y si ya se cuenta
 con vídeo en chino y con alguien capaz de presentar, Douyin abre la
-categoría de alimentación por 50.000 yuanes y sin cuota anual. Difícilmente
+categoría de alimentación por 5.000 yuanes y sin cuota anual. Difícilmente
 habrá una forma más barata de comprobar si el producto tiene demanda.
 
 Todo este razonamiento vale para mercancía a temperatura ambiente o que

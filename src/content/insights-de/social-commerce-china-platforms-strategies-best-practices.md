@@ -1,6 +1,7 @@
 ---
 title: "Social Commerce in China: Plattformen, Strategien, Marktwirkung"
-description: "Social Commerce hat den Online-Einkauf in China umgekrempelt. Plattformen wie Xiaohongshu, WeChat und Douyin nutzen nutzergenerierte Inhalte, Influencer und Livestream für dynamische Einkaufserlebnisse."
+seoTitle: "Social Commerce in China: Plattformen und Strategien"
+description: "Social Commerce hat den Onlinehandel in China umgekrempelt. Xiaohongshu, WeChat und Douyin verkaufen über Nutzerinhalte, Influencer und Livestreams."
 pubDate: "2024-06-24"
 author: "TheChinaPath"
 category: "Platforms"
@@ -66,7 +67,7 @@ Chinas „Super-App" für alles. Aus dem Messenger ist ein Ökosystem aus Social
 * WeChat Channels: Inhalte und Empfehlungen im sozialen Netzwerk teilen, Live-Demos und Produktstarts direkt im Kanal.
 * Mini-Programme: in Channels und Konten eingebettet, ermöglichen einen lückenlosen Weg vom Content bis zum Kauf.
 * WeChat Pay: integrierte Zahlungen, einfach und sicher.
-* Enorme Reichweite, mit grosser Funktionsbreite, unverzichtbar für Unternehmen, die den chinesischen Markt erreichen wollen.
+* Enorme Reichweite, mit großer Funktionsbreite, unverzichtbar für Unternehmen, die den chinesischen Markt erreichen wollen.
 
 ![WeChat-Plattform](/Images/insights/2024/06/wechat-1024x585.jpg)
 

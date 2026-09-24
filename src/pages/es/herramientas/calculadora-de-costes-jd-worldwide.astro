@@ -280,7 +280,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 const calcSchema = webApplicationSchema({
   url: Astro.url.pathname,
   name: "Calculadora de costes de JD Worldwide",
-  description: "Calcule lo que cuesta el primer año de una tienda en JD Worldwide: depósito por tramos y comisión según categoría, la tasa del 0,9 % por transacción, retainer y comisión del TP, almacén en zona franca, transporte y el IVA cross-border, en RMB y en USD.",
+  description: "Coste del primer año en JD Worldwide: depósito, comisión por categoría, tasa del 0,9 %, TP, almacén en zona franca, transporte e IVA cross-border.",
   inLanguage: 'es',
   breadcrumb: [
     { name: "Inicio", url: "/es" },
@@ -291,13 +291,14 @@ const calcSchema = webApplicationSchema({
 ---
 
 <Layout
+  preloadImage="/Images/tools/tmall-jd-hero-bg.webp"
   schema={calcSchema}
   title="Calculadora de costes de JD Worldwide | TheChinaPath"
-  description="Calcule lo que cuesta el primer año de una tienda en JD Worldwide: depósito por tramos y comisión según categoría, la tasa del 0,9 % por transacción, retainer y comisión del TP, almacén en zona franca, transporte y el IVA cross-border, en RMB y en USD."
+  description="Coste del primer año en JD Worldwide: depósito, comisión por categoría, tasa del 0,9 %, TP, almacén en zona franca, transporte e IVA cross-border."
 >
   <section
     class="tool-hero tool-hero--image"
-    style="--tool-hero-img: url('/Images/tools/tmall-jd-hero-bg.png')"
+    style="--tool-hero-img: url('/Images/tools/tmall-jd-hero-bg.webp')"
   >
     <div class="container tool-hero__inner">
       <nav class="tool-hero__crumbs" aria-label="Ruta de navegación">

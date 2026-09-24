@@ -1,6 +1,6 @@
 ---
 title: "China's 2025 eCommerce Shopping Festivals Calendar"
-description: "A comprehensive guide to major e-commerce shopping festivals in China during 2025, including strategic marketing tips for brands looking to capitalize on these peak selling periods."
+description: "Every major eCommerce shopping festival in China in 2025, laid out quarter by quarter through Singles' Day, with marketing tips for each sales peak."
 pubDate: "2025-01-09"
 author: "TheChinaPath"
 category: "E-Commerce"

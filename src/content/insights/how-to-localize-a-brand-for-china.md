@@ -1,6 +1,6 @@
 ---
 title: "How to localize a Brand for China ?"
-description: "Localizing a brand for China requires understanding cultural norms, translating content, adapting to local preferences, and complying with regulations to successfully reach this vast consumer market."
+description: "How to localize a brand for China: adapting to cultural norms and local tastes, translating content well, and staying on the right side of regulators."
 pubDate: "2023-02-03"
 author: "TheChinaPath"
 category: "Brand & Localization"

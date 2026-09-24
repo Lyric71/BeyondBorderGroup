@@ -1,16 +1,16 @@
 ---
 title: "Lo que cuesta vender calzado en China"
-description: "Abrir en Tmall Global cuesta 110.000 yuanes; 42.600 en JD Worldwide y 100.000 en Douyin. Las tres cobran un 5 %. Después mandan las devoluciones."
+description: "Abrir en Tmall Global cuesta 110.000 yuanes; 42.600 en JD Worldwide y 5.000 en Douyin. Comisión del 5 al 6 %. Después mandan las devoluciones."
 pubDate: "2026-09-09"
-updatedDate: "2026-09-09"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Fashion & Luxury"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Calzado", "Tmall Global", "JD Worldwide", "Douyin", "Comercio transfronterizo", "Tarifas de plataforma", "Devoluciones"]
 keyTakeaways:
-  - "Abrir en calzado cuesta 110.000 yuanes en Tmall Global, 42.600 yuanes en JD Worldwide y 100.000 yuanes en Douyin transfronterizo, antes de mercancía, medios y honorarios de un socio (datos de las calculadoras de TheChinaPath, septiembre de 2026)."
-  - "Las tres plataformas se llevan un 5 % de cada par vendido, así que la tabla de tarifas no elige la plataforma por usted."
+  - "Abrir en calzado cuesta 110.000 yuanes en Tmall Global, 42.600 yuanes en JD Worldwide y 5.000 yuanes en Douyin transfronterizo, antes de mercancía, medios y honorarios de un socio (datos de las calculadoras de TheChinaPath, septiembre de 2026)."
+  - "Tmall Global y JD Worldwide se llevan un 5 % de cada par vendido y Douyin un 6 %, así que la tabla de tarifas no elige la plataforma por usted."
   - "El calzado entra por la vía transfronteriza sin permiso de primera importación, sin registro y sin presentación, porque la mercancía se supervisa como bien de uso personal."
   - "El comprador paga un 9,1 % por un par en la vía transfronteriza: cero arancel y el 70 % del IVA de importación del 13 %."
   - "Con un 30 % de devoluciones, un pedido conservado cuesta 69 yuanes sobre un ticket de 600. Con un 50 % cuesta 92, y un margen bruto corto deja de sostenerse."
@@ -20,8 +20,8 @@ heroImageAlt: "En un almacén aduanero de Ningbo, una operaria escanea una zapat
 
 Empiece por Tmall Global. Abrir allí una tienda de calzado cuesta 110.000
 yuanes antes de vender un solo par, frente a 42.600 yuanes en JD Worldwide y
-100.000 yuanes en Douyin transfronterizo. Las tres se llevan un 5 % de cada
-venta. A partir de ahí manda su tasa de devoluciones, y el calzado vuelve con
+5.000 yuanes en Douyin transfronterizo. Tmall y JD se llevan un 5 % de cada
+venta; Douyin, un 6 %. A partir de ahí manda su tasa de devoluciones, y el calzado vuelve con
 la frecuencia suficiente para comerse un margen corto.
 
 El calzado es una de las categorías más fáciles de introducir en China. Figura
@@ -36,10 +36,10 @@ que preguntan las marcas.
 
 | Calzado, primer año (yuanes) | Tmall Global | JD Worldwide | Douyin transfronterizo |
 |---|---|---|---|
-| Depósito de garantía, reembolsable | 50.000 | 35.500 (unos 4.500 euros) | 100.000 |
+| Depósito de garantía, reembolsable | 50.000 | 35.500 (unos 4.500 euros) | 5.000 |
 | Cuota anual de plataforma | 60.000 | 7.100 (unos 900 euros) | ninguna |
-| Comisión por venta | 5 % | 5 % | 5 % |
-| Caja antes de la primera venta | 110.000 | 42.600 | 100.000 |
+| Comisión por venta | 5 % | 5 % | 6 % |
+| Caja antes de la primera venta | 110.000 | 42.600 | 5.000 |
 
 </div>
 
@@ -51,6 +51,25 @@ Son las horquillas publicadas, comprobadas en septiembre de 2026. Una marca en
 trámite TM o una tienda multimarca eleva el depósito de Tmall por encima de la
 cifra del flagship, y su socio puede darle otros números. Negocie a partir de
 esa línea.
+
+En Douyin, las dos cifras se han movido hace poco. Desde junio de 2025 el
+depósito sigue las ventas del mes anterior, sea cual sea la categoría: 500
+yuanes hasta 50.000 yuanes, 2.000 yuanes hasta 100.000 y 5.000 yuanes por
+encima. La tabla recoge el tramo más alto. El 6 % procede del baremo que la
+plataforma publicó el 15 de julio de 2026.
+
+> El depósito base de Douyin Global depende del GMV pagado por la tienda en el
+> mes natural anterior: 500 yuanes de 0 a 50.000 yuanes, 2.000 yuanes por encima
+> de 50.000 y hasta 100.000 yuanes, y 5.000 yuanes por encima de 100.000 yuanes.
+> Fuente: Douyin E-commerce (抖音电商), 《【全球购】保证金管理规范》, última
+> revisión en vigor desde el 5 de junio de 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/107821
+
+> El calzado (鞋靴) paga en Douyin Global una tarifa técnica de servicio base
+> del 6 %.
+> Fuente: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》, 15 de
+> julio de 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
 
 JD publica ambos importes en dólares, en una escala que sube con las ventas
 acumuladas; la cifra en yuanes de arriba es el primer peldaño, convertida a
@@ -186,8 +205,9 @@ para abrir, una conversación más corta con su director financiero si la
 respuesta es no.
 
 Douyin transfronterizo merece más prudencia de la que sugiere su precio de
-entrada. Sin cuota anual, con depósito reembolsable, el coste sobre el papel
-más bajo de los tres, y toda la exposición alojada en la columna de
+entrada. Sin cuota anual, con un depósito reembolsable de 5.000 yuanes, el
+coste sobre el papel más bajo de los tres pese a la comisión más alta, y toda
+la exposición alojada en la columna de
 devoluciones. Vaya cuando sus datos de tallaje estén limpios, no para
 recogerlos. La [calculadora de costes de
 Douyin](/es/herramientas/calculadora-de-costes-douyin) calcula esa vía igual.

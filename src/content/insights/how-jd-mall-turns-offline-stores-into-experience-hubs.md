@@ -1,6 +1,6 @@
 ---
 title: "How JD Is Turning Offline Stores Into Experience Hubs"
-description: "JD Mall transforms physical retail into experience-driven destinations where customers actively test products rather than passively browse, reshaping how global brands engage with Chinese consumers in high-consideration categories."
+description: "JD Mall is turning physical stores into places where Chinese shoppers test products hands-on. What that means for brands in high-consideration categories."
 pubDate: "2025-11-26"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

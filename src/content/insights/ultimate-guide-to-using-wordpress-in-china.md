@@ -1,6 +1,6 @@
 ---
 title: "Ultimate Guide to Using WordPress in China"
-description: "WordPress can be successfully used to build websites in China, but requires specific optimizations for hosting, performance, and SEO due to unique internet regulations and blocked services."
+description: "WordPress works in China once you fix hosting, speed and SEO around blocked services like Google Fonts and Google Maps. How to set it up properly."
 pubDate: "2025-02-03"
 author: "TheChinaPath"
 category: "Compliance & Setup"

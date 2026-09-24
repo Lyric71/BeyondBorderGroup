@@ -1,7 +1,7 @@
 ---
 brand: "BeyondTikTok"
 title: "Une offre dédiée à TikTok"
-summary: "Conception et développement du site BeyondTikTok comme plateforme de génération de leads pour les services TikTok, appuyée par un référencement organique et des campagnes Google Ads pour drainer un trafic qualifié."
+summary: "Le site BeyondTikTok, conçu et développé pour générer des leads sur les services TikTok, et alimenté en trafic qualifié par le SEO et Google Ads."
 metric: "Site de génération de leads pour les services TikTok, alimenté par SEO et Google Ads."
 category: "Website"
 industry: "Digital Services"

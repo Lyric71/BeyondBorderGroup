@@ -1,6 +1,6 @@
 ---
 title: "Wissenschaft + Emotion: Chinas neues Markenbuch"
-description: "Eine Dermokosmetik-Marke wuchs zum Double 11 um 47 Prozent, ihr direkter Wettbewerber verlor auf denselben Plattformen 57 Prozent. Der Unterschied lag in der Vertriebsarchitektur und in der Markenstrategie, nicht in der Produktqualität."
+description: "Eine Dermokosmetik-Marke wuchs zum Double 11 um 47 %, ihr Rivale verlor 57 %. Den Unterschied machten Vertrieb und Markenstrategie, nicht das Produkt."
 pubDate: "2026-03-12"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"
@@ -22,7 +22,7 @@ heroImageAlt: "Wissenschaft plus Emotion, Chinas neues Markenbuch"
 
 ## Wenn die Zahlen die Geschichte erzählen
 
-Vergangenen November traten zwei chinesische Dermokosmetik-Marken beim grössten Shopping-Festival des Landes direkt gegeneinander an. Collgene meldete 47,6 Prozent GMV-Wachstum gegenüber dem Vorjahr. Kefumei verlor mehr als die Hälfte seines Volumens.
+Vergangenen November traten zwei chinesische Dermokosmetik-Marken beim größten Shopping-Festival des Landes direkt gegeneinander an. Collgene meldete 47,6 Prozent GMV-Wachstum gegenüber dem Vorjahr. Kefumei verlor mehr als die Hälfte seines Volumens.
 
 Gleiche Produktkategorie. Gleiche Plattformen. Gleicher Scroll.
 

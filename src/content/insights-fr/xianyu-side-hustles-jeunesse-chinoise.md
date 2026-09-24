@@ -1,6 +1,7 @@
 ---
 title: "Xianyu, plateforme refuge des side hustles de la jeunesse chinoise"
-description: "La plateforme Xianyu d'Alibaba dépasse désormais la simple revente d'occasion. Elle se mue en place de marché de services où la génération des moins de 30 ans monétise compétences et passions."
+seoTitle: "Xianyu, refuge des side hustles de la jeunesse chinoise"
+description: "Xianyu, la plateforme d'occasion d'Alibaba, devient une place de marché de services où les moins de 30 ans monétisent leurs compétences et leurs passions."
 pubDate: "2024-07-12"
 author: "TheChinaPath"
 category: "Platforms"

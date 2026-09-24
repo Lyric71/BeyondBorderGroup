@@ -1,6 +1,6 @@
 ---
 title: "Calendario 2025 de las grandes citas del eCommerce chino"
-description: "Guía detallada de los grandes festivales del eCommerce en China durante 2025, con recomendaciones de marketing para las marcas que quieran aprovechar los picos de venta."
+description: "Los grandes festivales del eCommerce chino en 2025, fecha a fecha, con recomendaciones de marketing para que las marcas aprovechen cada pico de ventas."
 pubDate: "2025-01-09"
 author: "TheChinaPath"
 category: "E-Commerce"

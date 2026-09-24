@@ -277,7 +277,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 const calcSchema = webApplicationSchema({
   url: Astro.url.pathname,
   name: "Tmall Global: Kostenrechner für Aufbau und Betrieb",
-  description: "Was ein Tmall-Global-Flagship im ersten Jahr kostet: Kaution, Jahresgebühr und Provision je Kategorie, TP-Honorar, Zolllager, Versand und Einfuhrsteuer. In RMB und USD.",
+  description: "Was ein Tmall-Global-Flagship im ersten Jahr kostet: Kaution, Jahresgebühr und Provision je Kategorie, TP-Honorar, Zolllager, Versand und Einfuhrsteuer.",
   inLanguage: 'de',
   breadcrumb: [
     { name: "Startseite", url: "/de" },
@@ -288,13 +288,14 @@ const calcSchema = webApplicationSchema({
 ---
 
 <Layout
+  preloadImage="/Images/tools/tmall-jd-hero-bg.webp"
   schema={calcSchema}
   title="Tmall Global: Kostenrechner für Aufbau und Betrieb | TheChinaPath"
-  description="Was ein Tmall-Global-Flagship im ersten Jahr kostet: Kaution, Jahresgebühr und Provision je Kategorie, TP-Honorar, Zolllager, Versand und Einfuhrsteuer. In RMB und USD."
+  description="Was ein Tmall-Global-Flagship im ersten Jahr kostet: Kaution, Jahresgebühr und Provision je Kategorie, TP-Honorar, Zolllager, Versand und Einfuhrsteuer."
 >
   <section
     class="tool-hero tool-hero--image"
-    style="--tool-hero-img: url('/Images/tools/tmall-jd-hero-bg.png')"
+    style="--tool-hero-img: url('/Images/tools/tmall-jd-hero-bg.webp')"
   >
     <div class="container tool-hero__inner">
       <nav class="tool-hero__crumbs" aria-label="Brotkrumen-Navigation">

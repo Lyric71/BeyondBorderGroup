@@ -1,16 +1,16 @@
 ---
 title: "Was der Verkauf von Schuhen in China kostet"
-description: "Der Start kostet 110.000 Yuan bei Tmall Global, 42.600 bei JD Worldwide, 100.000 bei Douyin. Alle drei nehmen 5 %. Danach entscheiden die Retouren."
+description: "Der Start kostet 110.000 Yuan bei Tmall Global, 42.600 bei JD Worldwide, 5.000 bei Douyin. Provision 5 bis 6 %. Danach entscheiden die Retouren."
 pubDate: "2026-09-09"
-updatedDate: "2026-09-09"
+updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Fashion & Luxury"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Schuhe", "Tmall Global", "JD Worldwide", "Douyin", "Cross-Border-E-Commerce", "Plattformgebühren", "Retouren"]
 keyTakeaways:
-  - "Ein Schuhshop kostet im Start 110.000 Yuan bei Tmall Global, 42.600 Yuan bei JD Worldwide und 100.000 Yuan bei Douyin Cross-Border, vor Ware, Media und Partnerhonorar (Rechnerdaten von TheChinaPath, September 2026)."
-  - "Alle drei Plattformen nehmen 5 % von jedem verkauften Paar, die Gebührentabelle wählt die Plattform also nicht für Sie aus."
+  - "Ein Schuhshop kostet im Start 110.000 Yuan bei Tmall Global, 42.600 Yuan bei JD Worldwide und 5.000 Yuan bei Douyin Cross-Border, vor Ware, Media und Partnerhonorar (Rechnerdaten von TheChinaPath, September 2026)."
+  - "Tmall Global und JD Worldwide nehmen 5 % von jedem verkauften Paar, Douyin 6 %. Die Gebührentabelle wählt die Plattform also nicht für Sie aus."
   - "Schuhe laufen grenzüberschreitend ohne Ersteinfuhrgenehmigung, ohne Registrierung und ohne Anmeldung, weil die Ware als Gut zum persönlichen Gebrauch überwacht wird."
   - "Der Käufer zahlt auf ein Paar 9,1 %: null Zoll und 70 % der Einfuhrumsatzsteuer von 13 %."
   - "Bei 30 % Retouren kostet eine behaltene Bestellung 69 Yuan bei einem Warenkorb von 600 Yuan. Bei 50 % sind es 92 Yuan, und eine knappe Rohmarge trägt nicht mehr."
@@ -20,7 +20,8 @@ heroImageAlt: "In einem Zolllager in Ningbo scannt eine Mitarbeiterin einen zur�
 
 Fangen Sie mit Tmall Global an. Ein Schuhshop kostet dort 110.000 Yuan, bevor
 das erste Paar verkauft ist, gegenüber 42.600 Yuan bei JD Worldwide und
-100.000 Yuan bei Douyin Cross-Border. Alle drei nehmen 5 % von jedem Verkauf.
+5.000 Yuan bei Douyin Cross-Border. Tmall und JD nehmen 5 % von jedem Verkauf,
+Douyin 6 %.
 Danach entscheidet Ihre Retourenquote über das Jahr, und Schuhe kommen oft
 genug zurück, um eine knappe Marge aufzuzehren.
 
@@ -36,10 +37,10 @@ fragen Marken.
 
 | Schuhe, erstes Jahr (Yuan) | Tmall Global | JD Worldwide | Douyin Cross-Border |
 |---|---|---|---|
-| Kaution, rückzahlbar | 50.000 | 35.500 (rund 4.500 Euro) | 100.000 |
+| Kaution, rückzahlbar | 50.000 | 35.500 (rund 4.500 Euro) | 5.000 |
 | Jährliche Plattformgebühr | 60.000 | 7.100 (rund 900 Euro) | keine |
-| Provision je Verkauf | 5 % | 5 % | 5 % |
-| Liquidität vor dem ersten Verkauf | 110.000 | 42.600 | 100.000 |
+| Provision je Verkauf | 5 % | 5 % | 6 % |
+| Liquidität vor dem ersten Verkauf | 110.000 | 42.600 | 5.000 |
 
 </div>
 
@@ -51,6 +52,26 @@ Das sind die veröffentlichten Bandbreiten, geprüft im September 2026. Eine
 TM-Marke oder ein Multibrand-Shop treibt die Tmall-Kaution über den
 Flagship-Wert hinaus, und Ihr Partner nennt womöglich andere Zahlen.
 Verhandeln Sie auf Basis dieser Zeile.
+
+Bei Douyin haben sich beide Werte zuletzt verschoben. Seit Juni 2025 richtet
+sich die Kaution nach dem Umsatz des Vormonats, gleich in welcher Kategorie:
+500 Yuan bis 50.000 Yuan, 2.000 Yuan bis 100.000, darüber 5.000 Yuan. Die
+Tabelle zeigt die oberste Stufe. Die 6 % stammen aus dem Gebührenverzeichnis,
+das Douyin am 15. Juli 2026 veröffentlicht hat.
+
+> Die Basiskaution bei Douyin Global richtet sich nach dem bezahlten GMV des
+> Shops im vorangegangenen Kalendermonat: 500 Yuan bei 0 bis 50.000 Yuan,
+> 2.000 Yuan bei mehr als 50.000 bis 100.000 Yuan, 5.000 Yuan bei mehr als
+> 100.000 Yuan.
+> Quelle: Douyin E-commerce (抖音电商), 《【全球购】保证金管理规范》, zuletzt
+> geändert mit Wirkung zum 5. Juni 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/107821
+
+> Schuhe (鞋靴) zahlen bei Douyin Global eine technische Basis-Servicegebühr
+> von 6 %.
+> Quelle: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》,
+> 15. Juli 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
 
 JD nennt beide Beträge in Dollar, auf einer Staffel, die mit dem kumulierten
 Umsatz steigt; der Yuan-Betrag oben ist die Einstiegsstufe, umgerechnet zu
@@ -184,8 +205,9 @@ will. Dieselben 5 % Provision, ein Viertel der Liquidität bis zum Start, ein
 kürzeres Gespräch mit Ihrem Finanzchef, falls die Antwort Nein lautet.
 
 Douyin Cross-Border verdient mehr Vorsicht, als der Einstiegspreis vermuten
-lässt. Keine Jahresgebühr, eine rückzahlbare Kaution, auf dem Papier die
-niedrigsten Kosten der drei, und das ganze Risiko sitzt in der Retourenspalte.
+lässt. Keine Jahresgebühr, eine rückzahlbare Kaution von 5.000 Yuan, auf dem
+Papier trotz der höchsten Provision die niedrigsten Kosten der drei, und das
+ganze Risiko sitzt in der Retourenspalte.
 Gehen Sie dorthin, wenn Ihre Größendaten sauber sind, nicht um sie zu sammeln.
 Der [Douyin-Kostenrechner](/de/rechner/douyin-kostenrechner) rechnet diesen Weg
 genauso durch.

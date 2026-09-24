@@ -1,6 +1,6 @@
 ---
 title: "PIPL : l'affaire Dior met les marques étrangères en alerte"
-description: "La sanction infligée à Dior, première frappe formelle contre une marque étrangère au titre du PIPL, change la doctrine. La conformité bascule au rang d'enjeu stratégique."
+description: "Première sanction formelle contre une marque étrangère au titre du PIPL, l'affaire Dior change la doctrine : la conformité devient un enjeu stratégique."
 pubDate: "2025-11-26"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

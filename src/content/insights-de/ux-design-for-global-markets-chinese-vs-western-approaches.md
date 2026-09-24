@@ -1,6 +1,6 @@
 ---
 title: "UX-Design für globale Märkte: China gegen den Westen"
-description: "Chinesische und westliche Websites unterscheiden sich im UX-Design stark, kulturell, sprachlich und technisch. Wer global wachsen oder in den chinesischen eCommerce-Markt einsteigen will, muss diese Unterschiede verstehen."
+description: "Chinesische und westliche Websites unterscheiden sich im UX-Design kulturell, sprachlich und technisch. Was das für den Einstieg in Chinas eCommerce heißt."
 pubDate: "2025-01-17"
 author: "TheChinaPath"
 category: "Brand & Localization"
@@ -51,7 +51,7 @@ Sprache prägt UI-Design:
 
 #### Chinesische Logogramme
 
-Das chinesische Schriftsystem packt mehr Information in jedes Zeichen. Das erlaubt dichte Layouts ohne Überforderung. Fehlende Wortzwischenräume, Kursivierung und Grossschreibung erschweren aber die Hierarchie. Designer arbeiten mit Bannern und Karten, um Inhalte zu strukturieren.
+Das chinesische Schriftsystem packt mehr Information in jedes Zeichen. Das erlaubt dichte Layouts ohne Überforderung. Fehlende Wortzwischenräume, Kursivierung und Großschreibung erschweren aber die Hierarchie. Designer arbeiten mit Bannern und Karten, um Inhalte zu strukturieren.
 
 #### Westliche Alphabete
 
@@ -87,7 +87,7 @@ Kulturelle Unterschiede prägen UX-Strategien:
 
 #### Chinas High-Context-Kultur
 
-Implizite Kommunikation und kontextuelle Hinweise. Symbolische Visuals, lebendige Farben und kulturell relevante Motive spielen eine grosse Rolle.
+Implizite Kommunikation und kontextuelle Hinweise. Symbolische Visuals, lebendige Farben und kulturell relevante Motive spielen eine große Rolle.
 
 #### Westens Low-Context-Kultur
 

@@ -1,6 +1,7 @@
 ---
 title: "Taobao Flash Sale y el giro de los 30 minutos: por qué el retail chino se vuelca en lo online-to-offline"
-description: "La conversión de Ele.me en Taobao Flash Sale marca un cambio estructural en el retail chino. Reparto de comida, retail instantáneo y servicios en tienda confluyen en una experiencia unificada de plataforma diseñada para entregar en 30 a 60 minutos."
+seoTitle: "Taobao Flash Sale y el giro de los 30 minutos en China"
+description: "Ele.me se convierte en Taobao Flash Sale y une comida a domicilio, retail instantáneo y tienda física en un servicio que entrega en 30 a 60 minutos."
 pubDate: "2025-12-22"
 updatedDate: "2026-05-15"
 author: "Cyril Drouin"

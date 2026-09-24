@@ -1,6 +1,6 @@
 ---
 title: "Chinas KI-getriebener Handel: Trends und Innovationen"
-description: "China hat KI rasch in Marketing und Handel integriert. Plattformen wie Alibaba und JD.com gestalten Kundenerlebnisse, eCommerce und Handelsbetrieb landesweit neu."
+description: "China hat KI rasch in Marketing und Handel eingebaut. Alibaba und JD.com gestalten Einkaufserlebnis, eCommerce und Handelsbetrieb im ganzen Land neu."
 pubDate: "2025-01-10"
 updatedDate: "2026-05-15"
 author: "TheChinaPath"
@@ -66,7 +66,7 @@ Mit diesen Lösungen führen digitale Agenturen in China Unternehmen in die neue
 
 ## Generative KI in Werbung und Content
 
-Generative KI wie Baidus Ernie verändert die Content-Erstellung. Werbeagenturen in China nutzen die Werkzeuge, um hochwertige Anzeigen, Videos und Promotion-Inhalte in grosser Menge zu produzieren.
+Generative KI wie Baidus Ernie verändert die Content-Erstellung. Werbeagenturen in China nutzen die Werkzeuge, um hochwertige Anzeigen, Videos und Promotion-Inhalte in großer Menge zu produzieren.
 
 ### Vorteile generativer KI im Marketing
 

@@ -1,7 +1,8 @@
 ---
 brand: "Age 20's"
 title: "Little Milk Brick Cushion: Markteinführung auf Social Media und eCommerce"
-summary: "Stufenweise Markteinführung der neuen Cushion Foundation von Age 20's auf Xiaohongshu und Douyin. Impressions-Ziele um bis zu 287 % übertroffen, die Verpackung wurde zum Spitznamen."
+seoTitle: "Age 20's: Markteinführung des Little Milk Brick Cushion"
+summary: "Stufenweiser Start der Cushion Foundation von Age 20's auf Xiaohongshu und Douyin: Impressions bis zu 287 % über Ziel, die Verpackung wurde zum Spitznamen."
 metric: "Douyin-Impressions +287 % gegenüber Ziel. 750.000 Xiaohongshu-Reichweite bei 300.000 Ziel."
 category: "Social & Content"
 industry: "Beauty & Personal Care"
