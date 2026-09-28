@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'wechat-store-double-11-subsidy': 'double-11-sur-wechat-store-ce-que-paie-la-marque',
   'how-on-running-entered-china': 'on-running-en-chine-ce-que-l-entree-a-coute',
   'cost-to-sell-dairy-and-spreads-in-china': 'ce-que-coute-vendre-des-produits-laitiers-et-tartinables-en-chine',
   'double-11-preparation-checklist': 'double-11-retroplanning-50-jours',
@@ -160,6 +161,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'wechat-store-double-11-subsidy': 'wechat-store-double-11-was-marken-zahlen',
   'how-on-running-entered-china': 'on-running-in-china-was-der-markteintritt-kostete',
   'cost-to-sell-dairy-and-spreads-in-china': 'was-milchprodukte-und-aufstriche-verkaufen-in-china-kostet',
   'double-11-preparation-checklist': 'double-11-checkliste-50-tage-vorher',
@@ -311,6 +313,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'wechat-store-double-11-subsidy': 'double-11-en-wechat-store-lo-que-paga-la-marca',
   'how-on-running-entered-china': 'on-running-en-china-lo-que-costo-entrar',
   'cost-to-sell-dairy-and-spreads-in-china': 'lo-que-cuesta-vender-lacteos-y-untables-en-china',
   'double-11-preparation-checklist': 'double-11-cuenta-atras-50-dias',

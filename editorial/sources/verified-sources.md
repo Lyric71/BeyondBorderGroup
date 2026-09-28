@@ -2475,3 +2475,55 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Verified 2: 2026-09-24 (re-rendered; image byte-identical; cycle line re-found)
 - Used in: tmall-partner-rating-douyin-service-provider
 - Notes: the list names individual providers, most of them competitors. Never name or count them in copy.
+
+## WeChat Store Double 11 2026 (Signal 04S), September 28, 2026
+
+### WeChat Store 11.11 cross-store coupon: dates, 12.5% cap, 1:1 funding, 100% for 好店
+- Value: registration 2026-09-28 14:00 to 2026-11-15 23:59:59; cross-store coupon 2026-10-12 14:00 to 2026-11-15 23:59:59; base coupon 满X减Y with Y/X ≤ 12.5% (example 200-25); mixed mode funded 1:1 by platform and merchant, merchant give-back ≤ entered price × 12.5% × 50%, merchant minimum revenue rate 1 − 12.5% × 50%; 好店-badge (品牌/热销/服务好店) goods listed ≥ 3 days can get 100% platform funding; sharing bonus (膨胀券) fully platform-funded; platform share returned on refund; coupon applies after store coupons and live-room price; entered goods do not get the new-merchant commission reduction; price-check period 2026-09-04 to 2026-11-15, no raise-then-discount; store experience score ≥ 4.4 or none, no major violation in 30 days; catering, hotel-travel and ticketing excluded; autumn-sale goods auto-renew into 11.11 with the 续报 switch on, at changed coupon face values; one platform-subsidy event per item per period
+- As of: September 22, 2026
+- Source: WeChat Store (微信小店) operations team, 《微信小店｜2026年11.11平台大促-平台活动激励计划》, growth-centre platform notice
+- URL: https://store.weixin.qq.com/chengzhang/webdoc/wiki/9966/da464e308e8e62a8/growth_center_platform_notice/2
+- Verified 1: 2026-09-28 (full HTML pulled with curl, text extracted, every figure read on the page; notice dated 2026-09-22)
+- Verified 2: 2026-09-28 (re-fetched without the bpath parameter; 13 key strings re-found, including 12.5%, 1：1, 100%平台出资补贴, 不享受平台针对新商家的佣金减免政策, the Sept 4 to Nov 15 check period and both start times)
+- Used in: wechat-store-double-11-subsidy
+- Notes: the 12.5% cap is on the base coupon; category coupons (品类券) have their own funding rules. The badge criteria live in a separate rule (《微信小店"好店"标识管理规则》), not read.
+
+### WeChat Store technical service fee: 1% to 5% for most categories; new-store 1%
+- Value: most categories 1% to 5%; new stores pay 1% on the first 1 million RMB of sales (1.5 million in priority categories) within 90 days of the first order and no later than 180 days after opening; 3,000+ categories allow a zero-deposit trial
+- As of: August 2026 (page last updated 2026-08-24)
+- Source: Tencent Marketing (腾讯营销), WeChat Store FAQ 《微信小店开店需要多少钱？零保证金是真的吗？》
+- URL: https://e.qq.com/faq/wechat-store/growth/faq-zcjc-008/
+- Verified 1: 2026-09-28 (page fetched, both figures and the update date read)
+- Verified 2: 2026-09-28 (re-fetched, "多数类目的费率在 1% 到 5% 之间" and the 90/180-day, 100万/150万 line re-found)
+- Used in: wechat-store-double-11-subsidy
+- Notes: Tencent is WeChat's owner, so this counts as first-party. The per-category rate table sits behind the merchant back end and was not reached; do not quote a single category's rate from secondary sites.
+
+### WeChat Store does not support cross-border bonded import goods
+- Value: official reply "不支持。" to a merchant asking whether bonded cross-border import goods, an overseas business licence or overseas settlement are supported
+- As of: January 20, 2025
+- Source: WeChat Open Community (微信开放社区), official staff reply
+- URL: https://developers.weixin.qq.com/community/minihome/doc/000aca314d43589a14c212ae461c00
+- Verified 1: 2026-09-28 (page fetched, question and reply read with date)
+- Verified 2: 2026-09-28 (re-fetched, reply and date unchanged)
+- Used in: wechat-store-double-11-subsidy
+- Notes: the channels-store qualification doc also says entrants must be mainland-registered enterprises (developers.weixin.qq.com/doc/channels/Operating_Specifications/Store_Operation_Rules/qualification.html) but shows no date, so it is not cited.
+
+### JD Double 11 2026 opens October 12
+- Value: "京东今年'双11'将于10月12日全面开启、现货开卖"
+- As of: September 24, 2026
+- Source: National Business Daily (每日经济新闻)
+- URL: https://www.nbd.com.cn/articles/2026-09-24/4591116.html
+- Verified 1: 2026-09-28 (page fetched, date and opening line read)
+- Verified 2: 2026-09-28 (re-fetched, line re-found)
+- Used in: wechat-store-double-11-subsidy
+- Notes: trade press relaying JD's announcement. Useful for a 03A update.
+
+### Tmall Double 11 2026 presale opens October 15
+- Value: presale warm-up and deposit payment from October 15; final payment October 20 20:00; spot sale October 20 20:00 to November 13 23:59
+- As of: September 22, 2026
+- Source: Beijing Business Today (北京商报), reporter 何倩, via NetEase
+- URL: https://www.163.com/dy/article/L7E4TETQ0519DFFO.html
+- Verified 1: 2026-09-28 (page fetched, dates read)
+- Verified 2: 2026-09-28 (re-fetched, "10月15日开启预售预热和定金支付" and the byline date re-found)
+- Used in: none yet (cut from wechat-store-double-11-subsidy for length); candidate for the 03A Double 11 checklist update
+- Notes: bbtnews.com.cn original returns 403 to the fetcher; the NetEase copy carries the byline.
