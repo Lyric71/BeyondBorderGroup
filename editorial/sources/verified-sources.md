@@ -2527,3 +2527,149 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Verified 2: 2026-09-28 (re-fetched, "10月15日开启预售预热和定金支付" and the byline date re-found)
 - Used in: none yet (cut from wechat-store-double-11-subsidy for length); candidate for the 03A Double 11 checklist update
 - Notes: bbtnews.com.cn original returns 403 to the fetcher; the NetEase copy carries the byline.
+
+## Social media monthly cost research (Anchor 04A), September 29, 2026
+
+### Xiaohongshu enterprise professional-account verification: 600 RMB, annual review 600 RMB; overseas entities from opened regions
+- Value: enterprise professional account first verification 600 RMB per application; annual review 600 RMB, once a year; personal professional accounts free; overseas and HK/Macau/Taiwan entities may apply from regions the platform has opened (mainland, Hong Kong, Singapore, Malaysia named)
+- As of: August 2026 (更新时间 2026-08-02; rule effective 2026-06-30)
+- Source: Xiaohongshu Juguang Help Center (小红书聚光帮助中心), 《【变更】专业号认证规则规范》
+- URL: https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+- Verified 1: 2026-09-29 (WebFetch empty; rendered with headless Edge; "企业专业号首次认证 600元/次", "企业号年审600元/次，一年一审", overseas scope and date read)
+- Verified 2: 2026-09-29 (re-rendered with headless Edge on a temporary profile, second try; 600元/次, 年审600元, 境外, 新加坡, 马来西亚, 2026-08-02 re-found)
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: the rule text only names HK, Singapore and Malaysia among overseas regions; do not claim EU or US entities can verify.
+
+### WeChat overseas-entity verification: US$99 per application
+- Value: US$99, a one-off review service fee paid for each verification application by an overseas entity; overseas Mini Programs need no filing and no annual review
+- As of: June 2025 (PublishTime 2025-06-16, updated 2025-06-17)
+- Source: WeChat Open Community (微信开放社区), account 小程序境外专项, 《常见问题第一期｜境外业务注册、认证相关问题》
+- URL: https://developers.weixin.qq.com/community/develop/article/doc/000e64388c0f107faf739efcd66813
+- Verified 1: 2026-09-29 (page behind a login wall; read through the community JSON API /community/ngi/doc/detail/<id>; "目前境外主体认证费用为99美元" and PublishTime confirmed)
+- Verified 2: 2026-09-29 (JSON re-fetched with curl; 99美元 and PublishTime 1750078781 = 2025-06-16 re-found)
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: the same US$99 appears on Tencent's help page kf.qq.com/faq/190723aQvMR31907233IF7FV.html, which is undated (confirmation only). Mainland 300 RMB/yr verification pages are official but undated: not cited.
+
+### Xingtu recruitment tasks: 10,000 RMB minimum order budget, 5% platform service fee
+- Value: recruitment task budget from 10,000 RMB; platform service fee 5%; creator follower threshold 1K to 5M
+- As of: August 2026 (last modified 2026-08-27; created 2022-07-22)
+- Source: Ocean Engine Xingtu Help Center (巨量星图), advertiser side
+- URL: https://www.xingtu.cn/help-center/demander/126583
+- Verified 1: 2026-09-29 (headless Edge; "招募任务下单预算1W起，平台服务费5%" and last-modify stamp read)
+- Verified 2: 2026-09-29 (re-rendered; 1W起, 平台服务费5%, 2026-08-27 re-found)
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: a companion page (https://www.xingtu.cn/help-center/demander/138961, last modified 2025-04-15) says assigned tasks pay 5% on the full task amount including add-on fees; checked once on 2026-09-29, not cited.
+
+### Qianchuan campaign plan: default minimum daily budget 100 RMB
+- Value: a new Qianchuan plan needs a daily budget; default minimum 100 RMB
+- As of: June 2025 (2025-06-24 23:20:14 on the page)
+- Source: Douyin E-commerce Learning Center (抖音电商学习中心), 《一文读懂巨量千川-流量推广金》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHvyeGCvMaTB
+- Verified 1: 2026-09-29 (headless Edge; "推广日预算默认最低为100元" and date read)
+- Verified 2: 2026-09-29 (re-rendered; passage and date re-found)
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: the widely repeated 300 RMB/day figure traces only to content farms; never print it.
+
+### Xiaohongshu creator deals: 10% platform service fee charged to the brand (2021 reporting)
+- Value: 10% of the transaction amount, charged to the brand on creator partnerships booked through the brand partnership platform (launched March 2020, later 蒲公英)
+- As of: November 2021
+- Source: Southern Weekend (南方周末), via Tencent News
+- URL: https://news.qq.com/rain/a/20211118A0DAAZ00
+- Verified 1: 2026-09-29 (WebFetch; "小红书会向品牌方收取平台服务费，即交易金额的10%" and date read)
+- Verified 2: 2026-09-29 (curl re-fetch; 10% and 平台服务费 re-found)
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: older than twelve months. The current 蒲公英 fee page is login-only; copy must present the rate as last reported in 2021. Replace when a dated 2025-2026 source is found.
+
+### WeChat Moments ads, 2018 Q3 list: 50,000 RMB guaranteed minimum, 1,000 RMB/day auction minimum, CPM list prices
+- Value: guaranteed (排期) buy: CPM at list price, single campaign budget from 50,000 RMB; list CPM image 150 / 100 / 50 RMB and video 180 / 120 / 60 RMB for core cities (Beijing, Shanghai) / 20 key cities / other cities; auction (竞价) buy: daily budget from 1,000 RMB, minimum CPM bid 100 / 60 / 30 RMB
+- As of: Q3 2018
+- Source: WeChat Ads (微信广告), 《朋友圈广告金融行业解决方案 2018-Q3》 PDF
+- URL: https://wximg.qq.com/wxp/wxadtouch/upload/t2/file-1533693930261.pdf
+- Verified 1: 2026-09-29 (curl + pdftotext; figures and period read)
+- Verified 2: 2026-09-29 (re-downloaded, PyMuPDF pages 9-10: "广告单次投放总预算5 万元起", "每日预算1000 元起", "核心城市[ 2个] ：北京、上海", "150元/ 千次曝光")
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: historical list prices, eight years old. Label every use "2018". A Tencent Ads API doc shows a 50 RMB daily-budget floor but is undated: not usable.
+
+### Sponsored creator post prices: Xiaohongshu 10,800 RMB, Douyin 39,700 RMB (January to October 2024)
+- Value: average value per sponsored post Xiaohongshu 1.08万 RMB, Douyin 3.97万 RMB; Xiaohongshu brand averages 13.7 sponsored posts a month (1.6x Douyin); average deal per Xiaohongshu creator 1.2万 RMB (40% of Douyin); CPE 10.7 RMB Xiaohongshu vs 2.0 RMB Douyin
+- As of: January to October 2024 (article dated 2025/03/07)
+- Source: Jiemian (界面新闻), JMedia column by 刀客doc, citing the QuestMobile NEW MEDIA database
+- URL: https://www.jiemian.com/article/12440261.html
+- Verified 1: 2026-09-29 (curl; figures, period and date read)
+- Verified 2: 2026-09-29 (curl re-fetch; 3.97万, 1.08万, 13.7篇, 2024年1-10月, 10.7元, 2.0元, 2025/03/07 re-found)
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: platform averages, not tier prices. QuestMobile's own release carries the per-post figures only in chart images, so cite Jiemian citing QuestMobile. CPE refers to sponsored creator posts, not ads. Related: QuestMobile 2024 品牌商业软广营销洞察 via DoNews (2024-09-24, https://www.donews.com/news/detail/1/4547390.html) gives monthly creator spend per brand Jan-Jul 2024 of 18.7万 (Xiaohongshu) and 32.4万 (Douyin); checked once by the research agent, not cited.
+
+### Shenzhen 2024 pay for 互联网营销师 (covers new-media marketing): median 108,209 RMB a year
+- Value: annual pay per person, 2024: P10 64,580 / P25 74,969 / median 108,209 / P75 164,915 / P90 222,635 RMB; occupation mapping includes 新媒体营销, 视频创推员, 直播销售员; 4,794 enterprises surveyed; 电子商务师 median 112,691 RMB
+- As of: 2024 (survey period 2024-01-01 to 2024-12-31; published 2026-04-14)
+- Source: Shenzhen Human Resources and Social Security Bureau (深圳市人力资源和社会保障局), 《深圳市2025年人力资源市场工资价位及行业人工成本信息》
+- URL: https://hrss.sz.gov.cn/xxgk/tjsj/zxtj/content/post_12735120.html (PDF: https://hrss.sz.gov.cn/attachment/1/1703/1703629/12735120.pdf, page 16)
+- Verified 1: 2026-09-29 (PDF with curl; page 16 read with PyMuPDF because pdftotext scrambles columns)
+- Verified 2: 2026-09-29 (re-downloaded; row "互联网营销师S 64580 74969 108209 164915 222635" re-read; page date 2026-04-14)
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: wages only, not employer cost; social insurance and housing fund not verified. Shanghai publishes no public equivalent (its full wage-level book goes only to surveyed firms).
+
+### Weixin and WeChat combined MAU 1,439 million; Tencent marketing services RMB 43.6 billion, +22% (Q2 2026)
+- Value: combined MAU 1,439m at 2026-06-30 (+2% YoY, +0.5% QoQ); marketing services revenue RMB 43.6bn in 2Q2026, +22% YoY
+- As of: Q2 2026 (release dated Hong Kong, 12 August 2026)
+- Source: Tencent Holdings, 2026 second quarter results release
+- URL: https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf
+- Verified 1: 2026-09-29 (curl + pdftotext)
+- Verified 2: 2026-09-29 (re-downloaded; "Combined MAU of Weixin 1,439 1,411 2% 1,432 0.5%" and "Marketing Services were RMB43.6 billion for 2Q2026, up 22%" re-found)
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: the 2% is YoY, not QoQ. No separate figure for Moments, Video Accounts or WeChat Store ads.
+
+### Weibo MAU 561 million, DAU 254 million; ad revenue US$381.0 million, -1% (Q2 2026)
+- Value: MAU 561m and DAU 254m in June 2026; advertising and marketing revenue US$381.0m in 2Q2026, down 1% YoY (ex-Alibaba US$341.8m, -2%); total net revenue US$453.8m
+- As of: Q2 2026 (release dated Hong Kong, 19 August 2026)
+- Source: Weibo Corporation, via PR Newswire
+- URL: https://www.prnewswire.com/news-releases/weibo-announces-second-quarter-2026-unaudited-financial-results-302855055.html
+- Verified 1: 2026-09-29 (WebFetch)
+- Verified 2: 2026-09-29 (curl re-fetch; 561 million, 254 million, US$381.0 million, decrease of 1% re-found)
+- Used in: china-social-media-marketing-cost-per-month
+
+### Xiaohongshu MAU above 400 million, 800 million daily searches (company figure)
+- Value: monthly active users above 400m; daily searches up to 800m; disclosed in Xiaohongshu's 《视频创作者趋势观察报告》
+- As of: May 2026 (2026-05-27 17:08)
+- Source: Beijing Business Today (北京商报), reporter 何倩, via Sina Finance (新浪财经)
+- URL: https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
+- Verified 1: 2026-09-29 (WebFetch)
+- Verified 2: 2026-09-29 (curl re-fetch; 4亿, 8亿, 2026年05月27日 re-found)
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: a DAU above 170m (LatePost citing an insider, via 17173.com 2026-05-27) is not official; not cited.
+
+### Douyin MAU 1,009.0 million, March 2026 (QuestMobile)
+- Value: Douyin main app MAU 100,900.27万 at March 2026, +14.43% YoY; Douyin Lite adds 3.3亿
+- As of: March 2026 (article 2026-04-29 08:12)
+- Source: Kuai Technology (快科技) reporting QuestMobile's 2026 spring ranking, via Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/discovery/2026-04-29/doc-inhwckrh8029807.shtml
+- Verified 1: 2026-09-29 (WebFetch)
+- Verified 2: 2026-09-29 (curl re-fetch; 100900.27, 14.43%, 2026年04月29日 re-found)
+- Used in: china-social-media-marketing-cost-per-month
+- Notes: third-party estimate. The March 2025 base (10.01亿) counted Douyin and Lite together, so the growth rate is not like for like; the copy prints it as QuestMobile states it.
+
+### Douyin calculator paid-media line at defaults: RMB 10,000 a month (year one), RMB 20,000 (year two) (proprietary)
+- Value: at defaults (RMB 2m year-one GMV, paid share 15%, ROAS 2.5) Qianchuan media = 2,000,000 x 15% / 2.5 = RMB 120,000 a year = RMB 10,000 a month; year two (GMV +50% = RMB 3m, paid share 20%) = RMB 240,000 = RMB 20,000 a month
+- As of: September 2026
+- Source: TheChinaPath calculator data, src/pages/tools/douyin-cost-calculator.astro (drivers gmv, paidShare, roas, gmvGrowth, paidShare2; compute() opStack media = g x paidShare / roas)
+- Label in copy: "TheChinaPath calculator data, September 2026"
+- Verified 1: 2026-09-29 (driver defaults and the media formula read from the file)
+- Verified 2: 2026-09-29 (recomputed by hand in the final arithmetic check)
+- Used in: china-social-media-marketing-cost-per-month (as the paid-media planning figure on every platform at build and sell, WeChat excepted)
+- Notes: scenario output, not a measured floor. The brief's "paid media floor below which organic reach does not move, from stores and accounts under management" is still missing: TODO: proprietary number.
+
+### Re-verified ledger entries reused (no new entry; add the slug to Used in)
+- Qianchuan 0.6% technical service fee from 2026 (Ebrun, January 8, 2026, m.ebrun.com/636020.html): re-fetched 2026-09-29 at both checks (0.6%, 千川). Add "china-social-media-marketing-cost-per-month".
+- Douyin affiliate creator commission 5% to 50% (Douyin rule page, August 2026, school.jinritemai.com/doudian/web/articlev0/112620): re-rendered 2026-09-29 at both checks (5%-50%, 2026-08-08). Add the slug.
+- WeChat Store does not support cross-border bonded import goods (WeChat Open Community, January 20, 2025): re-fetched 2026-09-29 at both checks (不支持, 保税). Add the slug.
+
+### NOT SOURCED, do not research again from these dead ends (04A, 2026-09-29)
+- Juguang (聚光) first top-up, daily budget and minimum bids: agency and content-farm pages only; official xhscdn PDFs undated.
+- Weibo Fensitong 5,000 RMB first top-up and 0.5 RMB minimum click: open.weibo.com page undated, legacy product.
+- WeChat mainland verification 300 RMB/yr and Weibo enterprise Blue V 600 RMB: official pages undated.
+- Douyin Blue V 600 RMB (Ocean Engine FAQ, May 2022): dated but renewal contradicts itself (120 vs 600 RMB); renzheng.douyin.com docs removed.
+- Creator price by follower tier, 2024-2026: agency pages, paywalled 克劳锐 reports; 千瓜 2022 data too old.
+- Shanghai wage-level table for 新媒体运营: not public. Hiring-platform salary pages undated.
+- Xiaohongshu revenue and ad revenue: no attributed, dated source. Douyin DAU: no official figure since 2020.
+- Short-video ad clip prices (Securities Times, 2021-09-15, 400 to 1,500 RMB, well-made 3,000 to 5,000): checked once, too old, not used.
