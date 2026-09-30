@@ -2673,3 +2673,143 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Shanghai wage-level table for 新媒体运营: not public. Hiring-platform salary pages undated.
 - Xiaohongshu revenue and ad revenue: no attributed, dated source. Douyin DAU: no official figure since 2020.
 - Short-video ad clip prices (Securities Times, 2021-09-15, 400 to 1,500 RMB, well-made 3,000 to 5,000): checked once, too old, not used.
+
+## Home textiles and bedding cost research, September 30, 2026
+
+### Tmall Global bedding rates: 5% technical service fee, 60,000 RMB annual fee
+- Value: 床上用品 and 居家布艺 (经营大类 家装家具家纺): technical service fee 5%, annual fee 60,000 RMB; annual fee tiers are 30,000 or 60,000 by first-level category
+- As of: adjustment posted 2026-09-03, effective 2026-09-09
+- Source: Tmall Global (天猫国际), 《天猫国际各类目年费、技术服务费率》
+- URL: https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625
+- Verified 1: 2026-09-30 (rendered with headless Chromium; the plain URL renders only the portal shell, load it with the hash route #/rule/detail?ruleId=11005909&cId=625)
+- Verified 2: 2026-09-30 (re-rendered; 床上用品 | 5% | 60,000 and 居家布艺 | 5% | 60,000 in the table)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: the calculator's "Home, bedding, kitchenware" row loads 30,000, which matches only the 2026-27 new-store incentive below. Flagged for a calculator update.
+
+### Tmall Global deposit: 大家居 50,000 RMB; TM-only brands 100,000 RMB
+- Value: 大家居 | 全部: 品牌旗舰店 50,000, 专卖店 50,000, 专营店 50,000, 卖场旗舰店 150,000 RMB; flagship or specialty store whose brand is an unregistered (TM) mark: 100,000 RMB base deposit
+- As of: changes posted 2026-05-06, effective 2026-05-12
+- Source: Tmall Global (天猫国际), 《天猫国际平台保证金规则》
+- URL: https://rule.tmall.hk/?type=detail&ruleId=8942&cId=625
+- Verified 1: 2026-09-30 (rendered, hash route)
+- Verified 2: 2026-09-30 (re-rendered; 大家居 row and 暂未注册成功（TM）的商标，基础保证金为人民币10万元 present)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: bedding assumed to sit in the deposit table's 大家居 industry; the deposit table's industry labels do not match the fee table's 经营大类.
+
+### Tmall Global 2026 annual fee incentives: 30,000 RMB for new and second-year stores; waiver for part of 家居
+- Value: (a) ruleId 20010439: stores opening 2026-04-01 to 2027-03-31 ("new") or 2025-04-01 to 2026-03-31 ("second-year") in the 60,000 tier pay 30,000 RMB a year (2,500 a month) during 2026-04-01 to 2027-03-31; new stores whose main category is in the excluded list (all apparel, parts of mother and baby, 家居 部分) are outside (a) because they fall under (b). (b) ruleId 20010440: new stores in 服饰/母婴/家居 部分类目 pay no annual fee during the period; which home categories qualify is not listed (是否符合类目标准请咨询行业小二). Full fee resumes outside the period.
+- As of: both posted 2026-07-16
+- Source: Tmall Global (天猫国际), 《2026年天猫国际新商家及次新商家技术服务年费激励计划》 and 《2026年天猫国际新商家 服饰/母婴/家居部分类目技术服务年费 特殊激励计划》
+- URL: https://rule.tmall.hk/?type=detail&ruleId=20010439&cId=625 (and ruleId=20010440)
+- Verified 1: 2026-09-30 (rendered)
+- Verified 2: 2026-09-30 (re-rendered; scope, 3万元/年 and 予以免除 clauses read)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china (20010439 cited; 20010440 described without a link)
+- Notes: copy says "at most half until April 2027". Do not say bedding is on the waiver list; the page does not say.
+
+### JD Worldwide bedding fees: 3% + 0.9%, flagship deposit US$5,000, no annual fee
+- Value: 床上用品 | 全部 (and 居家布艺): deposit US$10,000 / 10,000 / 15,000 / 15,000 by GMV tier (<5万, 5-10万, 10-30万, >=30万 RMB), 品牌旗舰店保证金 US$5,000, 运营支持服务费率 3.00%, 交易服务费率 0.90%; no annual fee in the current fee standard or deposit rules
+- As of: revised 2026-07-24, effective 2026-08-01
+- Source: JD Worldwide (京东全球购), 《京东全球购开放平台各类目资费标准》
+- URL: https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
+- Verified 1: 2026-09-30 (rendered with headless Chromium)
+- Verified 2: 2026-09-30 (re-rendered; row "床上用品 全部 全部 全部 10,000 10,000 15,000 15,000 5,000 3.00% 0.90%" and the 2026-07-24 / 2026-08-01 clause present)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: the calculator's JD "Home, kitchen, kitchenware" row loads 5% and 7,100 RMB annual; 5% is the 生活日用 rate. FLAG: check whether the published footwear Ledger's JD row (5% / 7,100) is also stale against this standard. US$5,000 converted at 7.1 (calculator FX default) = 35,500 RMB.
+
+### Douyin Global: bedding sits under 居家日用 at 6%, plus 4% channel supplement
+- Value: 居家日用 其他二级类目 (covers 床上用品 and 居家布艺 > 毛巾/浴巾) base 6.00%, channel supplement 4.00% on 抖音商城 app and 豆包 orders; 母婴用品 > 婴童床品 6.00% + 4.00%; one rate for every store type
+- As of: schedule posted 2026-07-15
+- Source: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》; category placement from Douyin's merchant category API (domestic 抖店 tree)
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+- Verified 1: 2026-09-30 (rendered)
+- Verified 2: 2026-09-30 (re-rendered; 2026-07-15 00:00:27 and 居家日用 present)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: complements the 2026-09-24 entry "Douyin Global tech service fee by category"; that entry did not record the 4% supplement for home goods. Placement of 床上用品 under 居家日用 is from the domestic tree, assumed the same for 全球购. Base deposit entry (107821) re-rendered 2026-09-30, unchanged.
+
+### Bedding on the cross-border retail import positive list
+- Value: 2019 list rows 63012000 / 63013000 毯子, 63022190 棉制印花床上用织物制品, 63023199 棉制其他床上用织物制品, 63023290 化纤制其他床上用织物制品, 63026010 棉制浴巾, 63026090, 94049010 羽绒或羽毛填充的寝具及类似品 (CITES-listed species excluded), 94049040; 2022 No. 7 added 63023191 棉制其他床单, 63023192 棉制其他毛巾被 and new lines 94044010-94044090 被子、床罩
+- As of: Announcement 2019 No. 96, December 27, 2019 (in force 2020-01-01); 2022 No. 7 in force 2022-03-01
+- Source: Ministry of Finance (财政部) and 12 other departments, 关于调整扩大跨境电子商务零售进口商品清单的公告 (2019年第96号), with attachment
+- URL: https://gss.mof.gov.cn/gzdt/zhengcefabu/201912/t20191227_3451448.htm (attachment https://gss.mof.gov.cn/gzdt/zhengcefabu/201912/P020191227607915178053.pdf)
+- Verified 1: 2026-09-30 (PDF text extracted)
+- Verified 2: 2026-09-30 (page re-fetched after a transient 502; PDF re-downloaded, rows present)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: the CAC 2016 page does NOT mention bedding; do not cite it for home textiles. Cite by product family, not 8-digit code (codes may shift with tariff plans).
+
+### Over-limit single item: full duty, VAT and consumption tax
+- Value: dutiable price above the 5,000 RMB single limit but under the 26,000 annual limit, one item per order: may enter via cross-border retail, duty, import VAT and consumption tax charged in full at goods rates, counted toward the annual total; above the annual limit, general trade
+- As of: 财关税〔2018〕49号, November 29, 2018, effective January 1, 2019
+- Source: Ministry of Finance, GACC, State Taxation Administration (财政部 海关总署 税务总局)
+- URL: http://gss.mof.gov.cn/gzdt/zhengcefabu/201811/t20181129_3079073.htm
+- Verified 1: 2026-09-30
+- Verified 2: 2026-09-30 (re-fetched; 仅一件商品 and 按照货物税率全额征收 present)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: primary MOF 关税司 page for 49号; the MOFCOM database page (existing "limits" entry) carries the same text.
+
+### 2026 MFN duty: bed linen 6%, blankets 6% (synthetic 8%), duvets and pillows 10%
+- Value: 6302 bed linen lines 6% (e.g. 6302.2110, 6302.3191 床单 6); 6301.1000/2000/3000/9000 6%, 6301.4000 8%; 9404.4010-4090 被子（包括羽绒被）、床罩 10%; 9404.9010-9090 10%; no 2026 provisional rates in chapters 63 or 94
+- As of: Customs Tariff of the PRC (2026), 税委会公告2025年第12号, December 31, 2025, in force January 1, 2026
+- Source: State Council Tariff Commission (国务院关税税则委员会), as published by the Wuxi Finance Bureau (无锡市财政局)
+- URL: https://cz.wuxi.gov.cn/doc/2026/01/04/4711263.shtml (tariff PDF https://cz.wuxi.gov.cn/uploadfiles/202601/04/2026010408313363551881.pdf, printed pp. 790-792, 1442-1444)
+- Verified 1: 2026-09-30 (PDF text extracted)
+- Verified 2: 2026-09-30 (Wuxi page re-fetched: 税委会公告2025年第12号, 自2026年1月1日起实施; 70 MB PDF not re-downloaded)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: gss.mof.gov.cn original returned 502 all day. FTA rates can be 0% (ASEAN, Switzerland, Korea, Australia, NZ and others); EU, UK and US origin pay MFN; US countermeasure tariffs not checked. Worked example in copy: 5,200 RMB down duvet, 520 duty + 744 VAT = 1,264 RMB (24.3%) against 454 at 9.1% on 4,990.
+
+### GB 18401-2010: mandatory, classes A/B/C, formaldehyde 20/75/300 mg/kg
+- Value: infant, skin-contact and non-skin-contact products graded A, B, C; formaldehyde <=20 / <=75 / <=300 mg/kg; mandatory, in force since 2011-08-01, reviewed 2022-04-02 继续有效; no newer edition
+- As of: CQN March 21, 2014; SAMR record reviewed April 2022
+- Source: China Quality News (中国质量新闻网); State Administration for Market Regulation (市场监管总局) national standards register
+- URL: https://m.cqn.com.cn/xfzn/content/2014-03/21/content_2131036.htm ; https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7D9F6D3A7E05397BE0A0AB82A
+- Verified 1: 2026-09-30
+- Verified 2: 2026-09-30 (both re-fetched; limits sentence and 强制性 / 现行 present)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: the "must be labelled 婴幼儿用品" rule is only on an undated MOFCOM WTO page (chinawto.mofcom.gov.cn/article/jsbl/zszc/201411/20141100792845.shtml): not cited. GB 5296.4-2012 became recommended (GB/T) on 2017-03-23; never call it mandatory. GB 31701-2015 (children's textiles) mandatory: std.samr id=71F772D80590D3A7E05397BE0A0AB82A, researched, not used.
+
+### Product Quality Law art. 27: Chinese product name, maker name and address
+- Value: labels must carry the product name, maker name and address in Chinese, and specification, grade, main components and content where the product calls for them
+- As of: law as amended December 29, 2018; CNIPA page July 31, 2019
+- Source: China National Intellectual Property Administration (国家知识产权局), repost of 产品质量法
+- URL: https://www.cnipa.gov.cn/art/2019/7/31/art_104_67810.html
+- Verified 1: 2026-09-30
+- Verified 2: 2026-09-30 (re-fetched with decompression; 有中文标明的产品名称、生产厂厂名和厂址 present)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: npc.gov.cn original failed on SSL.
+
+### Jiangsu 2025 down quilt spot check: 6 of 63 batches failed
+- Value: 63 batches of 羽绒被 sampled, 6 failed (绒子含量 3, 纤维含量 2, 羽绒鸭毛绒含量 1, 鹅绒含量 1); 338 batches across four products, 23 failed
+- As of: January 4, 2026
+- Source: Jiangsu Administration for Market Regulation (江苏省市场监督管理局)
+- URL: https://scjgj.jiangsu.gov.cn/art/2026/1/4/art_78969_11705277.html
+- Verified 1: 2026-09-30
+- Verified 2: 2026-09-30 (re-fetched; 羽绒被 and 不合格 present)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: provincial, not national. Down standards (GB/T 22796-2021 床上用品, GB/T 17685-2026 羽绒羽毛 in force 2026-09-01) are recommended, not mandatory.
+
+### Chinese bedding price bands, return rates and channel split, 2025 annual reports
+- Value: Luolai (罗莱生活): LOVO 300-2,000 (online), 罗莱 1,000-8,000, licensed SHERIDAN 5,000~18,000, ZUCCHI 8,000~25,000, BASSETTI 5,000~25,000 (column has no unit, RMB implied); Tmall return rate 17.70% (2024 14.10%, H1 2026 17.09%); online 36.11% of revenue. Fuanna (富安娜): main label 2000-6000 元; Tmall return 9.80%, JD 10.17%, Vipshop 18.53% (2024 7.30 / 8.58 / 16.00; H1 2026 8.80 / 12.69 / 18.33); online about 44.38% of revenue, of which JD 41.87%, Tmall 28.30%, Vipshop 13.38%. Mengjie (梦洁) 觅MEE 299-1999 元 online.
+- As of: 2025 annual reports, April 23 and 25, 2026
+- Source: company annual reports on cninfo (巨潮资讯)
+- URL: http://static.cninfo.com.cn/finalpage/2026-04-23/1225148171.PDF (Luolai, pp. 32-34); http://static.cninfo.com.cn/finalpage/2026-04-25/1225189767.PDF (Fuanna, pp. 22-30); http://static.cninfo.com.cn/finalpage/2026-04-25/1225191957.PDF (Mengjie, p. 27)
+- Verified 1: 2026-09-30 (PDF text extracted with PyMuPDF; mingw pdftotext drops Chinese)
+- Verified 2: 2026-09-30 (Luolai and Fuanna PDFs re-downloaded, figures found on the same pages; Mengjie not cited, one check only)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: company-reported. BASSETTI here is the Italian bedding label licensed to Luolai, NOT the Bassetti Group software client on /work/bassetti; copy names Sheridan and Zucchi only. No filing states a bedding 客单价.
+
+### Bedding cost per kept order, breakeven and year-one fixed cash (proprietary)
+- Value: at a 9.8% return rate: Tmall Global (5% + 1% Alipay) 44 / 110 / 308 RMB per kept order at 400 / 1,500 / 4,800 RMB baskets (10.9% / 7.3% / 6.4% of the order); JD Worldwide (3% + 0.9%) 35 / 78 / 207 (8.8% / 5.2% / 4.3%); percentage fees 82% of Tmall store cost at 1,500; at 17.7% returns Tmall 48 / 114 / 312. Breakeven at 1,500 and 50% gross margin: about 720 kept orders (1.07m RMB, US$151,000 at 7.1) on Tmall with the 30,000 new-store fee, 763 at 60,000; about 640 on JD. Year-one fixed cash: 475,000 RMB Tmall, 445,000 JD (partner retainer 420,000 + store build 25,000 + annual fee), before stock, ads and deposits.
+- As of: September 2026
+- Source: TheChinaPath calculator data (per-order defaults 4 / 11 / 15 RMB and 35,000 RMB retainer, 25,000 build, 3-year amortization in src/pages/tools/tmall-global-setup-and-run.astro and jd-worldwide-setup-and-run.astro) with the platform rates above
+- Label in copy: "TheChinaPath calculator data, September 2026"
+- Verified 1: 2026-09-30 (defaults read from both files, arithmetic run in a scratch script)
+- Verified 2: 2026-09-30 (defaults re-read; outputs rerun)
+- Used in: cost-to-sell-home-textiles-and-bedding-in-china
+- Notes: baskets are illustrative points inside the filed price bands, not sourced AOVs; the 15 RMB parcel is a floor for bulky bedding; the retainer is a MODEL DEFAULT, never a market rate. Return cost = returns x (15 handling + 11 leg back), as in the dairy Ledger.
+
+### Re-verified ledger entries reused (no new entry; add the slug to Used in)
+- 财关税〔2016〕18号 (0% duty, 70%): re-fetched 2026-09-30, unchanged.
+- 2019年第39号 13% VAT: re-fetched 2026-09-30 (research agent), unchanged; VAT Law art. 10 keeps 13% from 2026-01-01.
+- 商财发〔2018〕486号 art. 3 and art. 4(1)3: re-fetched 2026-09-30, unchanged.
+- GACC 2020 No. 45 returns: now cited at the official gov.cn copy https://www.gov.cn/zhengce/zhengceku/2020-03/28/content_5496571.htm (verified twice 2026-09-30); prefer it over the cqn.com.cn mirror.
+- 2022年第7号 positive-list adjustment: re-fetched 2026-09-30, unchanged (researched, not cited in the final draft).
+- Douyin base deposit 500 / 2,000 / 5,000 (107821): re-rendered 2026-09-30, unchanged.
