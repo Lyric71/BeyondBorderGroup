@@ -1,28 +1,36 @@
 ---
 title: "How to localize a brand for China before you sell"
+slug: how-to-localize-a-brand-for-china
 description: "Localizing a brand for China starts at the trademark office, then labels, ad copy and returns. The rules and official fees, with the court cases."
-pubDate: "2023-02-03"
-updatedDate: "2026-10-01"
-author: "TheChinaPath"
-category: "Brand & Localization"
-platforms: ["Tmall", "JD"]
+excerpt: "Localizing a brand for China starts with a Chinese trademark, filed first. Then labels, ad copy and returns, with the official fees and court cases."
+template: refresh
+author: TheChinaPath
+pubDate: 2023-02-03
+updatedDate: 2026-10-01
+category: Brand & Localization
+platforms: [Tmall, JD]
 tags: ["brand localization", "Chinese brand name", "China trademark", "Advertising Law", "Chinese labels", "China market entry"]
+heroImage: /Images/insights/how-to-localize-a-brand-for-china.webp
+heroImageAlt: "A brand manager in a Hangzhou office compares a Chinese product label with a Tmall Global product page on her laptop while a colleague marks up printed packaging proofs."
 keyTakeaways:
   - "China gives a trademark to whoever files first, so the Latin mark and the Chinese name go to the trademark office before anything is announced."
   - "An online trademark filing costs 270 RMB per class for up to ten items, and examination runs about four months."
   - "New Balance was ordered to pay 98 million RMB over its Chinese name, cut to 5 million RMB on appeal in 2016."
   - "Cross-border goods may ship without a Chinese label, but the platform must show a Chinese electronic label. General-trade goods need the label on the pack."
   - "Words like best and highest-level are banned in Chinese advertising, with fines of 200,000 to 1,000,000 RMB."
-heroImage: "/Images/insights/how-to-localize-a-brand-for-china.webp"
-heroImageAlt: "A brand manager in a Hangzhou office compares a Chinese product label with a Tmall Global product page on her laptop while a colleague marks up printed packaging proofs."
-legacyUrl: "https://beyondbordergroup.com/how-to-localize-a-brand-for-china/"
 ---
+
+<!-- HERO SECTION -->
+
+# How to localize a brand for China before you sell
 
 Localizing a brand for China starts at the trademark office. File your Latin
 mark and your Chinese name there before you announce anything; online, it
 costs 270 RMB a class. Then fix what Chinese law reads: the label on the
 pack, the product pages, ad copy stripped of "best" and a seven-day return
 policy.
+
+<!-- INTRODUCTION -->
 
 Updated October 1, 2026. The February 2023 version of this page was a
 seven-point checklist with no figures and no sources. This one puts the steps
@@ -43,6 +51,8 @@ late filing costs.
 </div>
 
 Only the first row is something a competitor can take from you.
+
+<!-- SECTION: Register the name before anyone sees it -->
 
 ## Register the name before anyone sees it
 
@@ -113,6 +123,8 @@ three months to two. Somebody on your side has to watch the gazette.
 > Source: CNIPA, Trademark Law (2026 revision), June 2026.
 > https://www.cnipa.gov.cn/art/2026/6/26/art_95_206942.html
 
+<!-- SECTION: Pick a Chinese name shoppers can say -->
+
 ## Pick a Chinese name shoppers can say
 
 A foreign name reaches Chinese through its sound, its meaning, or some of
@@ -125,6 +137,8 @@ with shoppers in the city tiers you plan to sell in. That's how our
 [Chinese naming and trademark screening](/enter-china/branding-localisation)
 work runs. An uncleared shortlist is a list of names you might not be allowed
 to use.
+
+<!-- SECTION: Labels: where cross-border saves a step -->
 
 ## Labels: where cross-border saves a step
 
@@ -177,6 +191,8 @@ proves itself. The relabeling bill waits until the volume justifies it. Our
 [cross-border setup](/enter-china/cross-border-setup) work covers the first
 route. Start the label file for the second one early anyway.
 
+<!-- SECTION: Copy the Advertising Law will read -->
+
 ## Copy the Advertising Law will read
 
 Global taglines are where this goes wrong. "The world's best
@@ -219,6 +235,8 @@ Brief your translator on this list before the first product page goes up.
 Ranking claims need proof you can hand to a regulator, with a source and a
 date.
 
+<!-- SECTION: Store pages and the seven-day rule -->
+
 ## Store pages and the seven-day rule
 
 Chinese shoppers expect a store that works like the domestic stores they
@@ -251,14 +269,18 @@ and watch the cost per order move.
 It barely moves. At the official fee, two marks in three classes add about
 540 RMB a year over the three-year write-off.
 
+<!-- SECTION: What sits with the rest of the group -->
+
 ## What sits with the rest of the group
 
 The 2023 version of this page also told brands to open WeChat and Weibo
 accounts and hire influencers. Those are content and community jobs, and
-they come after the legal groundwork above. For them, talk to [TheRedScroll,
-the group's China social media agency](https://www.theredscroll.com). A
-Chinese website hosted inside the country needs an ICP filing first; [ChinaWebFoundry, the group's China web and
-hosting practice](https://www.chinawebfoundry.com) handles that.
+they come after the legal groundwork above. For them, talk to TheRedScroll,
+the group's China social media agency (https://www.theredscroll.com). A
+Chinese website hosted inside the country needs an ICP filing first; ChinaWebFoundry, the group's China web and
+hosting practice (https://www.chinawebfoundry.com), handles that.
+
+<!-- SECTION: FAQ -->
 
 ## FAQ
 
@@ -293,4 +315,91 @@ classes is 1,620 RMB before agent fees. Our calculators budget 25,000 RMB for
 store setup and launch content. Naming research, packaging and translation
 depend on the range and are scoped as a project after a first call.
 
-[Plan your Chinese name and trademark filing with our branding and localization team](/enter-china/branding-localisation)
+<!-- CTA -->
+
+CTA: [Plan your Chinese name and trademark filing with our branding and localization team](/enter-china/branding-localisation)
+
+<!-- =====================================================================
+FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
+
+Generate the feature (hero) image from the prompt below with the
+generate-image-openai skill, convert to webp, then wire it in as the
+article's heroImage and OG image.
+
+- Save to:    public/Images/insights/how-to-localize-a-brand-for-china.webp
+- Reference:  /Images/insights/how-to-localize-a-brand-for-china.webp
+- Format:     .webp, landscape 3:2, web-optimized (China CDN friendly)
+- Style rule: candid normal-life photo with real-life defects, China
+              setting, only Chinese people, the Chinese commerce surface
+              the piece is about visible on screen (Tmall Global, JD
+              Worldwide, Douyin, Xiaohongshu, WeChat). No AI polish, no
+              diagrams, no infographics, no watermark.
+
+IMAGE PROMPT (use verbatim):
+
+Candid documentary photograph taken on a phone inside a small brand office in Hangzhou, China, late afternoon on a weekday: a Chinese woman in her early thirties, a brand manager in a gray cardigan with her hair clipped back, leans over a cluttered shared desk comparing a printed Chinese product label proof held in her left hand with a laptop screen that shows a Tmall Global product detail page in Chinese, with the Tmall Global header, a Chinese product title, price in yuan, a Chinese ingredient and specification panel and small Chinese buttons clearly legible as interface, while beside her a Chinese man in his twenties in a black hoodie marks up a stack of printed packaging proofs covered in Chinese characters with a red pen, mid-gesture and slightly blurred; on the desk a few unbranded white sample bottles and jars, a roll of label stickers, a stapler, a paper cup of milk tea, tangled laptop and phone chargers, sticky notes with handwritten Chinese, and a second phone face up showing a Chinese chat window; through the window behind them a gray Hangzhou office street with plane trees and parked electric scooters; the light is mixed and uneven, cool overhead fluorescent tubes plus warm low sun from the side, the laptop screen slightly smudged with a faint reflection of the window, mild sensor noise in the shadows, white balance a little off toward green, the frame slightly tilted with the edge of a monitor cropped in the foreground, ordinary office clutter, natural skin texture, no retouching, no studio lighting, no cinematic color grade, no symmetry, no text overlay, no captions, no watermark, no real brand names or logos anywhere except the Tmall Global interface on the laptop screen.
+===================================================================== -->
+
+<!-- SCHEMA
+Type: Article
+FAQPage: yes, 4 questions
+Breadcrumb: Home > Insights > How to localize a brand for China before you sell
+Author: TheChinaPath
+datePublished: 2023-02-03
+dateModified: 2026-10-01 (move to the actual publish day)
+-->
+
+<!-- ASSET BRIEF
+TABLES:
+  1. "What China checks, in order" table in the introduction: step, rule,
+     who it binds, cost. Trademark row from CNIPA fee list (270 RMB a class
+     online) and CNIPA 2026 work report (four-month examination); label row
+     from 486号 and the Product Quality Law; ad-copy row from the
+     Advertising Law arts 9 and 57; returns row from the Consumer Rights
+     Protection Law art 25; store row from TheChinaPath calculator data,
+     October 2026 (25,000 RMB).
+CHARTS: none. A timeline graphic (file, four-month examination, two- or
+     three-month opposition, registration) would chart well on a later
+     guide.
+SCREENSHOTS: none.
+DOWNLOADS: none. Week 04 carries no asset.
+INTERNAL LINKS:
+  Chinese naming and trademark screening -> /enter-china/branding-localisation
+  distributor under general trade -> /enter-china/distribution
+  cross-border setup -> /enter-china/cross-border-setup
+  Tmall Global setup and run calculator -> /tools/tmall-global-setup-and-run
+  CTA: branding and localization team -> /enter-china/branding-localisation
+  All on the PREAMBLE list; all exist in src/pages. Four distinct targets,
+  one service page and one calculator among them.
+PROPRIETARY NUMBER:
+  The three calculators each carry one localization line, 25,000 RMB
+  ("Store setup and launch content" on Tmall Global and JD Worldwide,
+  "Brand setup contribution" on Douyin), written off over three years, and
+  a CN trademark line that defaults to 0. Labeled "TheChinaPath calculator
+  data, October 2026". Source: src/pages/tools/tmall-global-setup-and-run.astro,
+  jd-worldwide-setup-and-run.astro, douyin-cost-calculator.astro.
+  Derived arithmetic, labeled as such: two marks x three classes x 270 RMB
+  = 1,620 RMB official fees; about 540 RMB a year over the write-off.
+HAND-OFFS: TheRedScroll once (social accounts, influencers), canonical
+  anchor text "TheRedScroll, the group's China social media agency".
+  ChinaWebFoundry once (ICP filing, hosting), canonical anchor text
+  "ChinaWebFoundry, the group's China web and hosting practice". The
+  publish step turns the bare URLs into links on the anchor text.
+CLIENT SIGN-OFF NEEDED: none. No client named, no client figure used.
+  New Balance and Michael Jordan / Qiaodan Sports appear only through
+  court rulings reported by dated Chinese media.
+REFRESH NOTES FOR THE PUBLISH STEP:
+  Replaces src/content/insights/how-to-localize-a-brand-for-china.md in
+  place, and its FR, DE and ES siblings
+  (insights-fr/localiser-marque-pour-chine-feuille-de-route.md,
+  insights-de/how-to-localize-a-brand-for-china.md -> marke-fuer-china-lokalisieren-fahrplan,
+  insights-es/localizar-marca-china-hoja-de-ruta.md). Slug unchanged, so no
+  redirect and no edit to src/i18n/insight-slugs.mjs. Keep the existing
+  legacyUrl on the English file. heroImage moves from the legacy .png to
+  the new .webp at the same slug in all four files. pubDate stays
+  2023-02-03; updatedDate moves to the publish day. Title and H1 change
+  from "How to localize a Brand for China ?" (SEO-sensitive, flagged in
+  the run log under the Anchor acceptance spec). Category stays
+  Brand & Localization; no industry (cross-industry piece). The old body
+  links to /grow-in-china/campaigns are dropped.
+-->

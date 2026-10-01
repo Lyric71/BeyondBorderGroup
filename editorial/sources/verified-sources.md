@@ -2813,3 +2813,120 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - GACC 2020 No. 45 returns: now cited at the official gov.cn copy https://www.gov.cn/zhengce/zhengceku/2020-03/28/content_5496571.htm (verified twice 2026-09-30); prefer it over the cqn.com.cn mirror.
 - 2022年第7号 positive-list adjustment: re-fetched 2026-09-30, unchanged (researched, not cited in the final draft).
 - Douyin base deposit 500 / 2,000 / 5,000 (107821): re-rendered 2026-09-30, unchanged.
+
+## Brand localization refresh research (Refresh 04R), October 1, 2026
+
+### CNIPA trademark application fee: 270 RMB online, 300 RMB paper, per class
+- Value: 受理商标注册费 300元 on paper, 270元 for an online filing (接受电子发文的网上申请), each limited to 10 goods or services in one class; each extra item 30元 paper / 27元 online
+- As of: in force since July 1, 2019 (自2019年7月1日起实施); the page itself carries no publication date
+- Source: CNIPA Trademark Office (国家知识产权局商标局, 中国商标网), 规费清单
+- URL: https://sbj.cnipa.gov.cn/sbj/sbsq/sfbz/
+- Verified 1: 2026-10-01
+- Verified 2: 2026-10-01
+- Used in: how-to-localize-a-brand-for-china
+- Notes: the 2019 fee-change notice (201906/t20190619_593.html) now 404s; cite the fee list.
+
+### Trademark Law: first-to-file (2019 art. 31 = 2026 art. 35) and opposition window
+- Value: identical or similar marks for the same or similar goods: the earlier application is approved; a same-day tie goes to the earlier user. 2019 art. 31, carried over word for word as art. 35 of the 2026 revision. Opposition window three months from publication (2019 art. 33), two months (2026 art. 36). Prior-use defence unchanged (2019 art. 59(3) = 2026 art. 73).
+- As of: 2019 text, CNIPA page July 30, 2019; 2026 text, CNIPA page June 26, 2026, in force January 1, 2027 (art. 87)
+- Source: China National Intellectual Property Administration (国家知识产权局)
+- URL: https://www.cnipa.gov.cn/art/2019/7/30/art_95_28179.html ; https://www.cnipa.gov.cn/art/2026/6/26/art_95_206942.html
+- Verified 1: 2026-10-01 (research agent, both texts compared)
+- Verified 2: 2026-10-01 (both pages re-fetched; arts. 31, 33, 35, 36, 87 quoted)
+- Used in: how-to-localize-a-brand-for-china
+
+### Trademark Law (2026 revision): anti-hoarding test and bad-faith filing fine
+- Value: art. 19 refuses filings 不以使用为目的，且明显超出正常生产经营需要; art. 24 bars knowingly pre-empting another's used mark with some influence; art. 54 warning plus a fine of up to 100,000 RMB (十万元以下) for bad-faith filing that causes harm; art. 9 good-faith principle; art. 51 no five-year limit for well-known mark holders against bad faith
+- As of: CNIPA page June 26, 2026; in force January 1, 2027
+- Source: CNIPA, 中华人民共和国商标法(2026年修订)
+- URL: https://www.cnipa.gov.cn/art/2026/6/26/art_95_206942.html
+- Verified 1: 2026-10-01
+- Verified 2: 2026-10-01
+- Used in: how-to-localize-a-brand-for-china
+- Notes: the 2019 law (art. 4) already refused 不以使用为目的的恶意商标注册申请; what is new is the "clearly beyond normal business needs" test and the numeric fine cap. Do not write that refusing non-use filings is new in 2027.
+
+### Average trademark examination period: four months
+- Value: 商标注册平均审查周期稳定在4个月
+- As of: January 7, 2026 (same sentence in the 2025 report of January 8, 2025)
+- Source: CNIPA, 2026年全国知识产权局局长会议工作报告（摘编）
+- URL: https://www.cnipa.gov.cn/art/2026/1/7/art_53_203564.html
+- Verified 1: 2026-10-01
+- Verified 2: 2026-10-01
+- Used in: how-to-localize-a-brand-for-china
+
+### New Balance 新百伦 trademark case: 98 million RMB cut to 5 million RMB
+- Value: Zhou Lerong (周乐伦) held 百伦 (registered 1996, transferred to him April 2004) and 新百伦 (filed June 2004, registered January 2008); sued July 15, 2013 at the Guangzhou Intermediate People's Court; first instance set damages at half of New Balance China's estimated 195.8m RMB profit, 98 million RMB; Guangdong High People's Court on June 23, 2016 upheld infringement and cut damages to 5 million RMB
+- As of: June 24, 2016
+- Source: Yangcheng Evening News (羊城晚报), carried by People's Daily Online (人民网)
+- URL: http://finance.people.com.cn/n1/2016/0624/c1004-28477265.html
+- Verified 1: 2026-10-01
+- Verified 2: 2026-10-01 (TLS certificate mismatch on the host, fetched with curl -k; page is GBK)
+- Used in: how-to-localize-a-brand-for-china
+- Notes: the page does not give the date of the first-instance judgment; do not print one.
+
+### Michael Jordan v. Qiaodan Sports: Supreme People's Court, December 8, 2016
+- Value: the SPC ruled in 10 cases that the Chinese-character 乔丹 marks harmed Jordan's prior name right and ordered them re-ruled; the seven pinyin QIAODAN cases were upheld for the company; Jordan's challenge began in 2012; 乔丹体育股份有限公司 described as a 体育用品企业 holding marks in classes 25 and 28
+- As of: December 8, 2016
+- Source: China National Radio (央广网)
+- URL: http://china.cnr.cn/xwwgf/20161208/t20161208_523312598.shtml
+- Verified 1: 2026-10-01
+- Verified 2: 2026-10-01 (re-fetched with curl; WebFetch garbled the encoding)
+- Used in: how-to-localize-a-brand-for-china
+
+### Advertising Law arts. 9(3) and 57: banned superlatives, 200,000 to 1,000,000 RMB fine
+- Value: ads may not use 国家级、最高级、最佳 and similar terms (art. 9(3)); advertiser fined 二十万元以上一百万元以下, business licence may be revoked in serious cases (art. 57)
+- As of: second amendment April 29, 2021; SAMR page published November 2, 2022
+- Source: State Administration for Market Regulation (国家市场监督管理总局)
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_5474cf75173c45d6a0379730fb4e8d97.html
+- Verified 1: 2026-10-01
+- Verified 2: 2026-10-01
+- Used in: how-to-localize-a-brand-for-china
+- Notes: second copy at the Beijing AMR, https://scjgj.beijing.gov.cn/cxfw/flfgcxfw/ggl/202204/t20220401_2646388.html (one check).
+
+### SAMR guideline on absolute terms in advertising (2023 No. 6)
+- Value: art. 9, a first use with minor harm promptly corrected may go unpunished; art. 10, absolute terms on the seller's own premises, own website or other owned media, short-lived or little-viewed, no harm, promptly corrected, shall not be punished; art. 11, ads for health food, drugs and medical devices (and medical, investment-return and education ads) are generally not treated as minor
+- As of: announcement February 25, 2023; page March 29, 2023
+- Source: SAMR (国家市场监督管理总局), 广告绝对化用语执法指南
+- URL: https://www.samr.gov.cn/ggjgs/tzgg/art/2023/art_183b5cb48d9e4f0dba67f9f912a913ba.html
+- Verified 1: 2026-10-01
+- Verified 2: 2026-10-01
+- Used in: how-to-localize-a-brand-for-china
+- Notes: art. 11 says 一般不认为 (generally not), so write "generally not treated as minor", never "excluded".
+
+### Anyang AMR: 109,600 RMB fine for "销售第一，全国全网" in an online cosmetics ad
+- Value: 河南一穗玉米网络科技有限公司, online ad for a facial cleanser, absolute terms 销售第一，全国全网 not matching the facts; Anyang (Henan) AMR fined 10.96万元 in April 2024
+- As of: SAMR typical-case release carried January 17, 2025
+- Source: SAMR release (来源：国家市场监督管理总局网站), carried by the Shanghai Medical Products Administration (上海市药品监督管理局)
+- URL: https://yjj.sh.gov.cn/zjyw/20250117/e9ebc3d76a4146d2aa2cc5b2a5035918.html
+- Verified 1: 2026-10-01
+- Verified 2: 2026-10-01
+- Used in: how-to-localize-a-brand-for-china
+- Notes: the fine is below the art. 57 floor and the page does not say why; do not explain it without a source. The Henan AMR copy returned 403.
+
+### Consumer Rights Protection Law art. 25: seven-day no-reason return
+- Value: buyers of goods sold online (and by TV, phone or mail) may return within seven days of receipt without a reason; exceptions: custom-made, fresh and perishable, downloaded or unsealed digital goods, delivered newspapers and periodicals, plus goods confirmed unsuitable at purchase; buyer pays return freight unless agreed otherwise; refund within seven days
+- As of: law as amended October 25, 2013
+- Source: SAMR (国家市场监督管理总局)
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_0a323e046fba43f0b6e9e977f1e8d5fc.html
+- Verified 1: 2026-10-01
+- Verified 2: 2026-10-01
+- Used in: how-to-localize-a-brand-for-china
+- Notes: the 2024 implementing regulation (实施条例) was not checked, and how the rule applies to cross-border retail imports was not sourced, so the copy scopes it to online sales generally.
+
+### Localization line and trademark line in the three calculators (proprietary)
+- Value: Tmall Global and JD Worldwide "Store setup and launch content" 25,000 RMB; Douyin "Brand setup contribution" 25,000 RMB; "CN trademark registration" 0 in all three; setup and trademark written off over 3 years (amortYears 3); Tmall Global deposit hint: the 50,000 RMB baseline is for an R-trademark flagship, a TM trademark or 专营店 raises it. Derived: two marks x three classes x 270 RMB = 1,620 RMB official fees, about 540 RMB a year over three years.
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, jd-worldwide-setup-and-run.astro, douyin-cost-calculator.astro)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-01 (defaults read from the three files)
+- Verified 2: 2026-10-01 (re-read before the quality pass finished)
+- Used in: how-to-localize-a-brand-for-china
+- Notes: the 25,000 build line also sits inside the bedding Ledger's year-one fixed cash entry. The trademark zero is a model assumption, never a market price.
+
+### Re-verified ledger entries reused (no new entry; add the slug to Used in)
+- 商财发〔2018〕486号 art. 3 and art. 4(1)3 (gov.cn content_5437823): re-fetched 2026-10-01, unchanged. Add how-to-localize-a-brand-for-china.
+- Product Quality Law art. 27 (cnipa art_104_67810): re-fetched 2026-10-01, unchanged. Add how-to-localize-a-brand-for-china.
+- Cosmetics label measures, NMPA 2021 No. 77 (gov.cn gongbao content_5631831), arts. 6 and 7: re-fetched 2026-10-01, unchanged; art. 7(2) responsible person taken from the existing entry (verified twice 2026-09-16). Add how-to-localize-a-brand-for-china.
+
+### Not sourced (claims cut)
+- An official CNIPA count of bad-faith trademark filings rejected in 2024 or 2025: none found in the 2025 and 2026 work reports or the January 2026 press conference. Closest: 336 DEEPSEEK bad-faith filings rejected in 2025 (CNIPA-hosted 知识产权报, 2026-05-29, https://www.cnipa.gov.cn/art/2026/5/29/art_55_206581.html, one check); 1.273 million 心机商标 applications rejected since 2023 (四川在线 citing the 2026-04-23 SCIO briefing, outlet off the preferred list). Neither used.
