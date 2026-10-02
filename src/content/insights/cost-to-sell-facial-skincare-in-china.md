@@ -1,15 +1,15 @@
 ---
 title: "What it costs to sell facial skincare in China"
-description: "Facial skincare opens at 80,000 RMB on Tmall Global, 42,600 on JD Worldwide, 5,000 on Douyin. Then your pack size decides the tax."
+description: "Facial skincare opens at 80,000 RMB on Tmall Global, 35,500 on JD Worldwide, 5,000 on Douyin. Then your pack size decides the tax."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Beauty & Personal Care"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Skincare", "Tmall Global", "JD Worldwide", "Douyin", "cross-border ecommerce", "platform fees", "NMPA"]
 keyTakeaways:
-  - "Facial skincare costs 80,000 RMB to open on Tmall Global, 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin cross-border, before stock, media or a partner retainer (TheChinaPath calculator data, September 2026)."
+  - "Facial skincare costs 80,000 RMB to open on Tmall Global, 35,500 RMB on JD Worldwide and 5,000 RMB on Douyin cross-border, before stock, media or a partner retainer (TheChinaPath calculator data, October 2026)."
   - "Tmall Global charges skincare 4% a sale against 5% on the other two, and puts the category in the lower 30,000 RMB annual fee band."
   - "Cross-border skips NMPA filing entirely, because the goods are supervised as personal-use imports. General trade does not."
   - "A skincare item at or above 10 RMB per milliliter counts as a high-end cosmetic and carries consumption tax, so the shopper pays about 23% instead of 9.1%."
@@ -19,7 +19,7 @@ heroImageAlt: "A merchandiser in a Guangzhou bonded-warehouse office studies a C
 ---
 
 Start on Tmall Global. Facial skincare costs 80,000 RMB there before you sell
-a jar, against 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin
+a jar, against 35,500 RMB on JD Worldwide and 5,000 RMB on Douyin
 cross-border. Tmall takes 4% of each sale. The other two take 5%. Then the
 tax your shopper pays at checkout, which your pack size controls, moves more
 money than any of it.
@@ -34,20 +34,27 @@ most forgiving on fees. Table first.
 | Facial skincare, year one (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
 | Security deposit, refundable | 50,000 | 35,500 (about US$5,000) | 5,000 |
-| Annual platform fee | 30,000 | 7,100 (about US$1,000) | none |
+| Annual platform fee | 30,000 | none | none |
 | Commission on each sale | 4% | 5% | 5% |
-| Cash in before the first sale | 80,000 | 42,600 | 5,000 |
+| Cash in before the first sale | 80,000 | 35,500 | 5,000 |
 
 </div>
 
 > Deposit, annual fee and commission by category for skincare on Tmall
 > Global, JD Worldwide and Douyin cross-border.
-> Source: TheChinaPath calculator data, September 2026.
+> Source: TheChinaPath calculator data, October 2026.
 
-JD adds a flat 0.9% transaction fee on top, and quotes its deposit and usage
-fee in dollars on a ladder that climbs with cumulative sales, so the RMB
-above is the entry rung. A TM trademark or a multi-brand store raises the
-Tmall deposit. Bands checked September 2026.
+JD adds a flat 0.9% transaction fee on top and charges no annual fee. It
+quotes its deposit in dollars: US$5,000 for a brand flagship, converted
+above at 7.1, and US$10,000 to US$15,000 for other store types as sales
+grow. A TM trademark or a multi-brand store raises the Tmall deposit. Bands
+checked October 2026.
+
+> Beauty and skincare (美妆护肤) pays JD Worldwide a 5% operating support fee
+> plus a 0.9% transaction fee, and a brand flagship deposits US$5,000.
+> Source: JD Worldwide (京东全球购), category fee standard, revised
+> September 24, 2026, effective October 1, 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 Douyin's deposit has nothing to do with skincare anymore. Since June 2025 it
 tracks the store's sales in the previous month: 500 RMB up to 50,000 RMB,
@@ -60,15 +67,21 @@ tracks the store's sales in the previous month: 500 RMB up to 50,000 RMB,
 > revision effective June 5, 2025.
 > https://school.jinritemai.com/doudian/web/articlev0/107821
 
-One number in that table is doing something unusual. Skincare and makeup are
-the only two of the nineteen categories in our Tmall Global calculator set at
-4%. Everything else sits at 2, 2.5, 3 or 5, and skincare lands in the lower
-annual fee band too, 30,000 rather than 60,000.
+One number in that table is doing something unusual. Skincare, makeup and
+hair care are the only three of the nineteen categories in our Tmall Global
+calculator set at 4%. Everything else sits at 2, 3 or 5, and skincare lands
+in the lower annual fee band too, 30,000 rather than 60,000.
 
-Worth knowing where the neighboring line sits. A facial wash filed as
-personal care pays 2.5% and a 60,000 annual fee, which crosses skincare's 4%
-and 30,000 at exactly 2 million RMB of GMV a year. You do not pick the label,
-the product does.
+Worth knowing where the neighboring line sits. Beauty devices (美容美体仪器)
+share the cosmetics group and its 30,000 annual fee, but pay 5% a sale.
+
+> Skin care, makeup and hair care pay Tmall Global 4% and beauty devices
+> 5%, all with a 30,000 RMB annual fee.
+> Source: Tmall Global (天猫国际), category annual fee and technical service
+> fee rates, adjustment effective September 9, 2026.
+> https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625
+
+You do not pick the label, the product does.
 
 ## The route into China for facial skincare
 
@@ -235,10 +248,10 @@ sits elsewhere, in media spend and in stock waiting in bond.
 Tmall Global. The 4% commission is the lowest of the three, the annual fee
 sits in the lower band, and a flagship there is still the page a Chinese
 shopper opens to decide whether a foreign skincare brand is real. That is
-worth the 37,400 RMB gap over JD.
+worth the 44,500 RMB gap over JD.
 
 JD Worldwide flips it when the open question is whether China wants the brand
-at all. Same route, same rules, a little over half the cash to get live.
+at all. Same route, same rules, a little under half the cash to get live.
 
 Douyin does a different job. Smallest deposit, no annual fee, and it rewards
 brands that already have content that sells. Our [footwear cost

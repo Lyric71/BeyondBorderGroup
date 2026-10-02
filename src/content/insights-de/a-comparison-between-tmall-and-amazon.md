@@ -2,14 +2,14 @@
 title: "Tmall oder Amazon: was eine Marke wirklich zahlt"
 description: "Amazon führt seit 2019 keinen China-Marktplatz mehr. Was Tmall Global stattdessen verlangt, neben Amazons Gebührenblatt, samt Steuerrechnung."
 pubDate: "2023-02-02"
-updatedDate: "2026-09-17"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Tmall", "JD"]
 tags: ["Tmall Global", "Amazon", "JD Worldwide", "Cross-Border-E-Commerce", "Plattformgebühren", "Markteintritt"]
 keyTakeaways:
   - "Amazon bedient seit dem 18. Juli 2019 keine Drittanbieter mehr auf seiner China-Seite. Eine Marke wählt für chinesische Käufer also nicht zwischen Tmall und Amazon."
-  - "Die Provision von Tmall Global liegt zwischen 2 % und 5 % und beträgt im Schnitt 3,4 % über die neunzehn Kategorien unseres Rechners, gegenüber 8 % bis 15 % bei Amazon."
+  - "Die Provision von Tmall Global liegt zwischen 2 % und 5 % und beträgt im Schnitt 3,5 % über die neunzehn Kategorien unseres Rechners, gegenüber 8 % bis 15 % bei Amazon."
   - "Der Unterschied steckt in den Fixkosten: 80.000 bis 110.000 Yuan Kaution und Jahresgebühr vor der ersten Bestellung, bei Amazon keine Kaution und rund 36 Euro im Monat."
   - "Honorar und Umsatzprovision eines Tmall Partners heben die tatsächliche China-Abgabe über die von Amazon. Genau das übersehen die meisten Kostenvergleiche."
   - "Die Einfuhrsteuer im Cross-Border-Einzelhandel beträgt 9,1 % auf gewöhnliche Waren, innerhalb von 5.000 Yuan je Bestellung und 26.000 Yuan im Jahr je Käufer."
@@ -38,7 +38,7 @@ weil die meisten Marken, die das hier lesen, ihn ohnehin schon betreiben.
 | Kaution | keine | 50.000, rückzahlbar |
 | Jährliche Plattformgebühr | keine | 30.000 oder 60.000 je nach Kategorie |
 | Kontogebühr | rund 36 Euro im Monat | keine |
-| Provision je Verkauf | 8 % bis 15 % in den meisten Kategorien | 2 % bis 5 %, im Schnitt 3,4 % |
+| Provision je Verkauf | 8 % bis 15 % in den meisten Kategorien | 2 % bis 5 %, im Schnitt 3,5 % |
 | Betreibender Partner | optional | in der Praxis ein Tmall Partner |
 | Liquidität vor der ersten Bestellung | rund 36 Euro, der erste Monat | 80.000 bis 110.000 |
 
@@ -52,7 +52,7 @@ weil die meisten Marken, die das hier lesen, ihn ohnehin schon betreiben.
 
 > Kaution, Jahresgebühr und Provision nach Kategorie bei Tmall Global, wie im
 > Rechner hinterlegt.
-> Quelle: Rechnerdaten von TheChinaPath, September 2026.
+> Quelle: Rechnerdaten von TheChinaPath, Oktober 2026.
 
 Nahrungsergänzung fällt bei Tmall Global aus dieser Spanne heraus, mit einer
 Kaution von 300.000 Yuan. Alles andere landet auf einer der beiden Stufen.
@@ -113,11 +113,11 @@ das nicht.
 Wir halten die Kategoriegebühren von Tmall Global, JD Worldwide und Douyin
 Cross-Border in eigenen Rechnern vor, weil wir sie jede Woche zitieren. Über
 die neunzehn Tmall-Global-Kategorien im Auswahlfeld reicht die Provision von
-2 % bis 5 % und liegt im Schnitt bei 3,4 %. Acht Kategorien stehen bei 2 %.
+2 % bis 5 % und liegt im Schnitt bei 3,5 %. Acht Kategorien stehen bei 2 %.
 Nichts geht über 5 %. Amazons Spanne beginnt in den meisten Kategorien bei
 8 %.
 
-Tee, verpackte Lebensmittel, Uhren, Kleingeräte und Telefone zahlen bei Tmall Global alle 2 % des Verkaufs. Bei Amazon wären es für dieselbe Ware 8 % oder mehr.
+Tee, verpackte Lebensmittel, Schweizer Uhren, Küchengeräte und Telefone zahlen bei Tmall Global alle 2 % des Verkaufs. Bei Amazon wären es für dieselbe Ware 8 % oder mehr.
 
 Dann kommen die Fixkosten. Kaution und Jahresgebühr summieren sich in elf der
 neunzehn Kategorien auf 80.000 Yuan und in den übrigen sieben auf 110.000
@@ -134,7 +134,7 @@ lokalen Zeitzone führt und die Kampagnen aufsetzt. Unser Tmall-Global-Rechner
 hinterlegt dafür 35.000 Yuan Monatshonorar plus 10 % vom Umsatz, und diese
 Werte stehen dort, weil uns genau diese Zahlen genannt werden.
 
-Rechnen Sie die 10 % zu den 3,4 % der Plattform hinzu, und die China-Abgabe
+Rechnen Sie die 10 % zu den 3,5 % der Plattform hinzu, und die China-Abgabe
 übersteigt 13 %. Damit liegt sie innerhalb von Amazons Spanne statt darunter.
 Das Honorar kommt obendrauf und fragt nicht, ob Sie etwas verkaufen.
 
@@ -229,7 +229,7 @@ China-Shop, den eine Marke eröffnet und führt.
 **Ist die Provision von Tmall Global wirklich niedriger als die von Amazon?**
 
 Auf der Plattformzeile ja. Über die neunzehn Tmall-Global-Kategorien unseres
-Rechners reicht sie von 2 % bis 5 %, im Schnitt 3,4 %, gegenüber 8 % bis 15 %
+Rechners reicht sie von 2 % bis 5 %, im Schnitt 3,5 %, gegenüber 8 % bis 15 %
 bei Amazon in den meisten Kategorien. Rechnen Sie die Umsatzprovision eines
 Tmall Partners hinzu, und die chinesische Abgabe insgesamt zieht an Amazon
 vorbei.

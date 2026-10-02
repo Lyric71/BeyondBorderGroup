@@ -2,7 +2,7 @@
 title: "Allbirds in China: was der Markteintritt kostete"
 description: "Fünf Jahre in Eigenregie, sechs Läden, dann ging die Shanghaier Tochter für rund 1,9 Millionen Euro weg und Belle Fashion übernahm den Markt."
 pubDate: "2026-09-10"
-updatedDate: "2026-09-10"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Market Strategy"
 industry: "Fashion & Luxury"
@@ -118,8 +118,9 @@ Dieselbe Information gab es deutlich billiger, und das lange vor 2019. Ein
 Cross-Border-Shop stellt das Produkt vor chinesische Käufer, ohne dass
 eine chinesische Gesellschaft entsteht. Bei Tmall Global verlangt die
 Kategorie Schuhe 50.000 Yuan Kaution und 60.000 Yuan Jahresgebühr, bei 5 %
-Provision; bei JD Worldwide liegt die Schuhstufe bei 35.500 Yuan und
-7.100 Yuan, ebenfalls bei 5 % (Rechnerdaten von TheChinaPath, September 2026).
+Provision; bei JD Worldwide hinterlegt ein Marken-Flagship 35.500 Yuan,
+zahlt keine Jahresgebühr und 6 % Provision (Rechnerdaten von TheChinaPath,
+Oktober 2026).
 
 Das sind die Beträge von heute, nicht die von 2019. Nachrechnen lässt sich das
 im [Kostenrechner für Tmall Global](/de/rechner/tmall-global-kostenrechner)

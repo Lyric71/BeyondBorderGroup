@@ -1,15 +1,15 @@
 ---
 title: "Lo que cuesta vender cuidado facial en China"
-description: "Abrir en Tmall Global cuesta 80.000 yuanes; 42.600 en JD Worldwide y 5.000 en Douyin. Después manda el formato del envase."
+description: "Abrir en Tmall Global cuesta 80.000 yuanes; 35.500 en JD Worldwide y 5.000 en Douyin. Después manda el formato del envase."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Beauty & Personal Care"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Cuidado facial", "Tmall Global", "JD Worldwide", "Douyin", "Comercio transfronterizo", "Tarifas de plataforma", "NMPA"]
 keyTakeaways:
-  - "Abrir en cuidado facial cuesta 80.000 yuanes en Tmall Global, 42.600 yuanes en JD Worldwide y 5.000 yuanes en Douyin transfronterizo, antes de mercancía, medios y honorarios de un socio (datos de las calculadoras de TheChinaPath, septiembre de 2026)."
+  - "Abrir en cuidado facial cuesta 80.000 yuanes en Tmall Global, 35.500 yuanes en JD Worldwide y 5.000 yuanes en Douyin transfronterizo, antes de mercancía, medios y honorarios de un socio (datos de las calculadoras de TheChinaPath, octubre de 2026)."
   - "Tmall Global cobra un 4 % por venta en cuidado facial frente al 5 % de las otras dos, y sitúa la categoría en el tramo bajo de cuota anual, 30.000 yuanes."
   - "La vía transfronteriza elimina por completo la presentación ante la NMPA, porque la mercancía se supervisa como bien de uso personal. El régimen general no elimina nada."
   - "Un producto de cuidado facial a 10 yuanes por mililitro o más cuenta como cosmético de gama alta y soporta impuesto al consumo: el comprador paga cerca del 23 % en lugar del 9,1 %."
@@ -19,7 +19,7 @@ heroImageAlt: "En la oficina de operaciones de un almacén aduanero de Cantón, 
 ---
 
 Empiece por Tmall Global. Abrir allí una tienda de cuidado facial cuesta
-80.000 yuanes antes de vender un solo tarro, frente a 42.600 yuanes en JD
+80.000 yuanes antes de vender un solo tarro, frente a 35.500 yuanes en JD
 Worldwide y 5.000 yuanes en Douyin transfronterizo. Tmall se lleva un 4 %
 de cada venta; las otras dos, un 5 %. Y luego llega el impuesto que su
 comprador paga en la caja, el que decide el formato de su envase. Ese pesa
@@ -35,21 +35,30 @@ costes y la más benévola en tarifas. Primero la tabla.
 | Cuidado facial, primer año (yuanes) | Tmall Global | JD Worldwide | Douyin transfronterizo |
 |---|---|---|---|
 | Depósito de garantía, reembolsable | 50.000 | 35.500 (unos 4.500 euros) | 5.000 |
-| Cuota anual de plataforma | 30.000 | 7.100 (unos 900 euros) | ninguna |
+| Cuota anual de plataforma | 30.000 | ninguna | ninguna |
 | Comisión por venta | 4 % | 5 % | 5 % |
-| Caja antes de la primera venta | 80.000 | 42.600 | 5.000 |
+| Caja antes de la primera venta | 80.000 | 35.500 | 5.000 |
 
 </div>
 
 > Depósito, cuota anual y comisión por categoría para el cuidado facial en
 > Tmall Global, JD Worldwide y Douyin transfronterizo.
-> Fuente: datos de las calculadoras de TheChinaPath, septiembre de 2026.
+> Fuente: datos de las calculadoras de TheChinaPath, octubre de 2026.
 
-JD añade encima una comisión fija del 0,9 % por transacción y publica tanto
-el depósito como la cuota de uso en dólares, en una escala que sube con las
-ventas acumuladas: la cifra en yuanes de arriba es el primer peldaño. Una
+JD añade encima una comisión fija del 0,9 % por transacción, pero no cobra
+cuota anual. El depósito lo fija en dólares: unos 4.500 euros para una
+tienda oficial de marca, que son los 35.500 yuanes de la tabla, y de unos
+9.000 a 13.500 euros para el resto de formatos, según suben las ventas. Una
 marca en trámite TM o una tienda multimarca eleva el depósito de Tmall.
-Horquillas comprobadas en septiembre de 2026.
+Horquillas comprobadas en octubre de 2026.
+
+> JD Worldwide aplica a belleza y cuidado de la piel (美妆护肤) una tarifa
+> de apoyo operativo del 5 % más un 0,9 % por transacción, y exige unos
+> 4.500 euros de depósito a una tienda oficial de marca.
+> Fuente: JD Worldwide (京东全球购), baremo de tarifas por categoría,
+> revisado el 24 de septiembre de 2026, en vigor desde el 1 de octubre de
+> 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 En Douyin, el depósito ya no tiene nada que ver con el cuidado facial. Desde
 junio de 2025 sigue las ventas del mes anterior: 500 yuanes hasta 50.000
@@ -63,16 +72,24 @@ el tramo más alto.
 > revisión en vigor desde el 5 de junio de 2025.
 > https://school.jinritemai.com/doudian/web/articlev0/107821
 
-Hay una cifra en esa tabla que se sale de la norma. El cuidado facial y el
-maquillaje son las dos únicas categorías, de las diecinueve que recoge
-nuestra calculadora de Tmall Global, fijadas en un 4 %. Todo lo demás se
-mueve entre el 2, el 2,5, el 3 y el 5, y el cuidado facial se lleva además el
-tramo bajo de cuota anual, 30.000 en vez de 60.000.
+Hay una cifra en esa tabla que se sale de la norma. El cuidado facial, el
+maquillaje y el cuidado capilar son las tres únicas categorías, de las
+diecinueve que recoge nuestra calculadora de Tmall Global, fijadas en un
+4 %. Todo lo demás se mueve entre el 2, el 3 y el 5, y el cuidado facial se
+lleva además el tramo bajo de cuota anual, 30.000 en vez de 60.000.
 
-Conviene mirar dónde cae la línea vecina. Un limpiador facial clasificado
-como higiene personal paga un 2,5 % y 60.000 yuanes al año, y esos dos baremos
-se cruzan justo en 2 millones de yuanes de GMV anual. La etiqueta no la elige
-usted: la elige el producto.
+Conviene mirar dónde cae la línea vecina. Los aparatos de belleza
+(美容美体仪器) comparten el grupo de cosmética y sus 30.000 yuanes de cuota
+anual, pero pagan un 5 % por venta.
+
+> Tmall Global cobra un 4 % al cuidado de la piel, el maquillaje y el
+> cuidado capilar, y un 5 % a los aparatos de belleza, todos con 30.000
+> yuanes de cuota anual.
+> Fuente: Tmall Global (天猫国际), cuotas anuales y tarifas de servicio
+> técnico por categoría, ajuste en vigor desde el 9 de septiembre de 2026.
+> https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625
+
+La etiqueta no la elige usted: la elige el producto.
 
 ## La vía de entrada para el cuidado facial
 
@@ -253,10 +270,10 @@ mercancía dormida en aduana.
 Tmall Global. La comisión del 4 % es la más baja de las tres, la cuota anual
 cae en el tramo bajo y un flagship allí sigue siendo la página que abre un
 comprador chino para decidir si una marca extranjera de cuidado facial existe
-de verdad. Eso vale los 37.400 yuanes de diferencia con JD.
+de verdad. Eso vale los 44.500 yuanes de diferencia con JD.
 
 JD Worldwide le da la vuelta cuando la pregunta abierta es si China quiere la
-marca. Misma vía, mismas reglas, algo más de la mitad de la caja para estar
+marca. Misma vía, mismas reglas, algo menos de la mitad de la caja para estar
 en línea.
 
 Douyin cumple otra función. El depósito más bajo, ninguna cuota anual y una

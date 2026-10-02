@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Asset (store, Douyin shop, Qianchuan account, Alimama account, brand authorization, 生意参谋 data, content, customer service records), who should hold it, what happens at exit if the partner holds it.
 
-**The proprietary number.** Compass: share of TPs on file that open stores in the brand's own entity. Fallback: log the gap.
+**The proprietary number.** Compass: share of TPs on file that open stores in the brand's own entity. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. The case: a Hunan court, a Douyin shop on the operator's licence, a brand with no claim

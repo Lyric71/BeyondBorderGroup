@@ -2,7 +2,7 @@
 title: "Cosmétiques en Chine : changer de personne responsable"
 description: "Depuis le 29 juillet 2026, une marque de cosmétiques étrangère peut remplacer sa personne responsable en Chine sans l'accord de l'ancien distributeur."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Compliance & Setup"
 platforms: ["Tmall", "JD", "Douyin"]
@@ -197,10 +197,10 @@ toute personne responsable.
 Ouvrir cette voie pour des soins de la peau a toutefois un coût.
 
 > Une boutique transfrontalière de soins de la peau mobilise 80 000 RMB de
-> trésorerie avant la première vente sur Tmall Global, 42 600 RMB sur JD
+> trésorerie avant la première vente sur Tmall Global, 35 500 RMB sur JD
 > Worldwide et 5 000 RMB sur Douyin transfrontalier, dépôts et redevances
 > annuelles compris.
-> Source : données des calculateurs TheChinaPath, septembre 2026.
+> Source : données des calculateurs TheChinaPath, octobre 2026.
 
 > Le dépôt de base de Douyin Global dépend des ventes du mois précédent,
 > dans la limite de 5 000 RMB.

@@ -43,7 +43,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Body length | 1,600 to 2,400 (body only, per the char-count rule) |
 | Tags | `Finding a partner`, `Managing a partner` (frontmatter `tags`) |
 | Serves | `/compass/find-a-distributor-in-china`, `/compass/find-a-tmall-partner-in-china`, `/compass/find-a-douyin-partner-in-china` |
-| Report | `output/reports/china-distribution-partner-success.md`, gated PDF, assembled by a person (gated PDF) |
+| Report | `output/reports/china-distribution-partner-success.md`, drafted in the same run; publishes as a printable page at `/guides/china-distribution-partner-success/` with a request CTA, because the site has no gated download (editorial/CLAUDE.md, settled fallback) |
 
 ## The brief
 

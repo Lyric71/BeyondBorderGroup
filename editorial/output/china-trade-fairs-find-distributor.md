@@ -355,12 +355,10 @@ PROPRIETARY NUMBER: "A Compass shortlist ... usually takes two to three weeks
   to three weeks") and the distributor guide FAQ
   (src/content/pages/partner-guides/distributor.ts). It is a published
   service-level figure, not a data pull.
-  TODO: proprietary number. The brief asked for "Compass: share of partners
-  on file first met at a fair vs through referral". editorial/sources/
-  compass-stats.md does not exist, the brief's fallback (a case page) has
-  no fair-related figure, and none was invented. If a person supplies the
-  share before publish, it belongs in "Why a fair works as a filter", one
-  line, labeled "from Compass, September 2026".
+  Settled fallback (editorial/CLAUDE.md, "The proprietary number"): the brief's
+  Compass share (fair vs referral) is not on file and none was invented, so
+  the published shortlist timing above is the piece's proprietary number.
+  Closed, nothing pending.
 HAND-OFFS: None. No TheRedScroll or ChinaWebFoundry territory is touched.
 CLIENT SIGN-OFF NEEDED: None. No client is named and no client figure is
   used.

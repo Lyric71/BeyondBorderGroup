@@ -1,16 +1,16 @@
 ---
 title: "What it costs to sell footwear in China"
-description: "Footwear costs 110,000 RMB to open on Tmall Global, 42,600 on JD Worldwide, 5,000 on Douyin. Commission runs 5% to 6%. Then returns decide the year."
+description: "Footwear costs 110,000 RMB to open on Tmall Global, 35,500 on JD Worldwide, 5,000 on Douyin. Commission runs 5% to 6%. Then returns decide the year."
 pubDate: "2026-09-09"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Fashion & Luxury"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Footwear", "Tmall Global", "JD Worldwide", "Douyin", "cross-border ecommerce", "platform fees", "returns"]
 keyTakeaways:
-  - "Footwear costs 110,000 RMB to open on Tmall Global, 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin cross-border, before stock, media or a partner retainer (TheChinaPath calculator data, September 2026)."
-  - "Tmall Global and JD Worldwide take 5% of every footwear sale and Douyin takes 6%, so the fee table does not pick the platform for you."
+  - "Footwear costs 110,000 RMB to open on Tmall Global, 35,500 RMB on JD Worldwide and 5,000 RMB on Douyin cross-border, before stock, media or a partner retainer (TheChinaPath calculator data, October 2026)."
+  - "Tmall Global takes 5% of every footwear sale, JD Worldwide and Douyin take 6%, so the fee table does not pick the platform for you."
   - "Footwear moves cross-border with no first-import permit, registration or filing, because the goods are supervised as personal-use imports."
   - "The buyer pays 9.1% on a pair of shoes under the cross-border route: zero duty, and 70% of the 13% import VAT."
   - "At a 30% return rate one kept order costs 69 RMB against a 600 RMB basket. At 50% it costs 92 RMB, and a thin gross margin stops working."
@@ -19,8 +19,8 @@ heroImageAlt: "A warehouse worker in Ningbo scans a returned gray sneaker at a b
 ---
 
 Start on Tmall Global. Footwear costs 110,000 RMB there before you sell a
-pair, against 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin
-cross-border. Tmall and JD take 5% of every sale, Douyin 6%. After that your
+pair, against 35,500 RMB on JD Worldwide and 5,000 RMB on Douyin
+cross-border. Tmall takes 5% of every sale, JD and Douyin 6%. After that your
 return rate decides the year, and shoes come back often enough to eat a thin
 margin.
 
@@ -36,17 +36,17 @@ Fees first, though, because that is what brands ask.
 | Footwear, first year (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
 | Security deposit, refundable | 50,000 | 35,500 (about US$5,000) | 5,000 |
-| Annual platform fee | 60,000 | 7,100 (about US$1,000) | none |
-| Commission on each sale | 5% | 5% | 6% |
-| Cash in before the first sale | 110,000 | 42,600 | 5,000 |
+| Annual platform fee | 60,000 | none | none |
+| Commission on each sale | 5% | 6% | 6% |
+| Cash in before the first sale | 110,000 | 35,500 | 5,000 |
 
 </div>
 
 > Deposit, annual fee and commission by category for footwear on Tmall
 > Global, JD Worldwide and Douyin cross-border.
-> Source: TheChinaPath calculator data, September 2026.
+> Source: TheChinaPath calculator data, October 2026.
 
-Those are the published bands, checked September 2026. A TM trademark or a
+Those are the published bands, checked October 2026. A TM trademark or a
 multi-brand store raises the Tmall deposit above the flagship figure, and your
 partner may quote differently. Argue from the row.
 
@@ -66,9 +66,18 @@ from the fee schedule Douyin published on July 15, 2026.
 > Source: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》, July
 > 15, 2026. https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
 
-JD quotes both figures in dollars, on a ladder that steps up with cumulative
-sales, so the RMB above is the entry rung at 7.1. Douyin charges no annual fee
-at all, which makes it look like the cheap door until you get to returns.
+JD quotes its deposit in dollars. A brand flagship pays US$5,000 for
+footwear, converted above at 7.1, and other store types pay US$15,000. There
+is no annual fee, just a 0.9% transaction fee on each order.
+
+> Footwear (鞋靴) pays JD Worldwide a 6% operating support fee plus a 0.9%
+> transaction fee, and a brand flagship deposits US$5,000.
+> Source: JD Worldwide (京东全球购), category fee standard, revised
+> September 24, 2026, effective October 1, 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
+
+Douyin has no annual fee either, which makes it look like the cheap door
+until you get to returns.
 
 None of that includes stock, media, a Tmall Partner retainer or the bonded
 stack. Add the bonded warehouse deposit, the tax prepayment and the store
@@ -181,12 +190,12 @@ Chinese buyer opens to decide whether a foreign shoe brand is real, and it
 outlives the campaign that launched it.
 
 JD Worldwide flips it when you are testing whether China wants the brand at
-all. Same 5% commission, a quarter of the cash to get live, a shorter
+all. A point more in commission, about a third of the cash to get live, a shorter
 conversation with your CFO if the answer comes back no.
 
 Douyin cross-border deserves more caution than its price tag suggests. No
 annual fee, a 5,000 RMB refundable deposit, the lowest paper cost of the three
-even with the highest commission, and the whole exposure sitting in the
+even at 6% commission, and the whole exposure sitting in the
 returns column. Go there once your size data is
 clean, not to collect it. The
 [Douyin cost calculator](/tools/douyin-cost-calculator) prices that route the

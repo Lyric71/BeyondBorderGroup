@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Asset to move (stock, retail listings, product registrations, responsible person, labels, trademark licence, Tmall and Douyin authorizations, customer data), who holds it, how it moves, typical time.
 
-**The proprietary number.** Compass: median months from first meeting to a signed replacement. Fallback: log the gap.
+**The proprietary number.** Compass: median months from first meeting to a signed replacement. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. Why switches fail

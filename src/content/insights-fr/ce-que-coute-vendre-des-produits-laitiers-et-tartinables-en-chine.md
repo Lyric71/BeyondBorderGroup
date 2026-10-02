@@ -1,17 +1,17 @@
 ---
 title: "Ce que coûte la vente de produits laitiers et de tartinables en Chine"
 seoTitle: "Produits laitiers et tartinables en Chine : le vrai coût"
-description: "Ouvrir coûte 80 000 RMB sur Tmall Global, 42 600 sur JD Worldwide, 5 000 sur Douyin. Tmall prélève 2 %. C'est le colis qui coûte cher."
+description: "Ouvrir coûte 80 000 RMB sur Tmall Global, 35 500 sur JD Worldwide, 5 000 sur Douyin. Tmall prélève 2 %. C'est le colis qui coûte cher."
 pubDate: "2026-09-23"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Food & Beverage"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Produits laitiers", "Tartinables", "Tmall Global", "JD Worldwide", "Douyin", "E-commerce transfrontalier", "Frais de plateforme", "Import alimentaire"]
 keyTakeaways:
-  - "Une boutique de produits laitiers et de tartinables coûte 80 000 RMB à ouvrir sur Tmall Global, 42 600 RMB sur JD Worldwide et 5 000 RMB sur Douyin cross-border, hors stock, médias et rémunération d'un partenaire (données des calculateurs TheChinaPath, septembre 2026)."
-  - "Tmall Global ne prélève que 2 % sur l'alimentaire, sa commission la plus basse. Chez Douyin, le dépôt ne dépend plus de la catégorie : depuis juin 2025, il suit les ventes du mois précédent et plafonne à 5 000 RMB."
+  - "Une boutique de produits laitiers et de tartinables coûte 80 000 RMB à ouvrir sur Tmall Global, 35 500 RMB sur JD Worldwide et 5 000 RMB sur Douyin cross-border, hors stock, médias et rémunération d'un partenaire (données des calculateurs TheChinaPath, octobre 2026)."
+  - "Tmall Global ne prélève que 2 % sur l'alimentaire, la commission la plus basse de notre calculateur. Chez Douyin, le dépôt ne dépend plus de la catégorie : depuis juin 2025, il suit les ventes du mois précédent et plafonne à 5 000 RMB."
   - "Préparation, emballage et dernier kilomètre pèsent environ 15 RMB par colis. Sur un pot vendu 128 RMB, c'est déjà 12 % de la commande, avant la moindre commission."
   - "Le transfrontalier sous douane dispense du permis de première importation, de l'enregistrement et du dépôt. Pas le régime général : une laiterie ou un conditionneur de miel doit y être recommandé à la douane chinoise par son propre gouvernement."
   - "Dès le 16 mars 2027, la norme GB 7718-2025 impose de déclarer le lait et les fruits à coque parmi les allergènes et proscrit les allégations « zéro ajout » sur l'emballage."
@@ -20,9 +20,9 @@ heroImageAlt: "Dans le bureau d'un entrepôt frigorifique sous douane de Chengdu
 ---
 
 Commencez par Tmall Global. Une boutique de produits laitiers et de
-tartinables y coûte 80 000 RMB à ouvrir, contre 42 600 RMB sur JD Worldwide
-et 5 000 RMB sur Douyin cross-border. Tmall prélève 2 % par vente, son taux
-le plus bas. Mais l'année se joue sur le colis : 15 RMB de
+tartinables y coûte 80 000 RMB à ouvrir, contre 35 500 RMB sur JD Worldwide
+et 5 000 RMB sur Douyin cross-border. Tmall prélève 2 % par vente, le taux
+le plus bas de notre calculateur. Mais l'année se joue sur le colis : 15 RMB de
 préparation, d'emballage et de livraison s'ajoutent à chaque commande, quel
 qu'en soit le contenu.
 
@@ -42,20 +42,20 @@ heurte de plein fouet.
 | Produits laitiers et tartinables, première année (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
 | Dépôt de garantie, restituable | 50 000 | 35 500 (environ 4 500 euros) | 5 000 |
-| Frais annuels de plateforme | 30 000 | 7 100 (environ 900 euros) | aucun |
-| Commission sur chaque vente | 2 % | 4 % | 2,5 % |
-| Trésorerie avant la première vente | 80 000 | 42 600 | 5 000 |
+| Frais annuels de plateforme | 30 000 | aucun | aucun |
+| Commission sur chaque vente | 2 % | 2 % | 2,5 % |
+| Trésorerie avant la première vente | 80 000 | 35 500 | 5 000 |
 
 </div>
 
 > Dépôt, frais annuels et commission par catégorie pour l'alimentaire
-> emballé, les céréales, les huiles et les snacks sur Tmall Global,
-> JD Worldwide et Douyin cross-border.
-> Source : données des calculateurs TheChinaPath, septembre 2026.
+> emballé, les huiles et les snacks sur Tmall Global, JD Worldwide et
+> Douyin cross-border.
+> Source : données des calculateurs TheChinaPath, octobre 2026.
 
-Aucune catégorie ne paie moins que ces 2 % sur Tmall Global. Le soin du
-visage acquitte 4 %, la mode et la chaussure 5 %. Barèmes vérifiés en
-septembre 2026 ; une marque déposée en TM ou une boutique multimarque
+Aucune catégorie de notre calculateur Tmall Global ne paie moins que ces
+2 %. Le soin du visage acquitte 4 %, la mode et la chaussure 5 %. Barèmes
+vérifiés en octobre 2026 ; une marque déposée en TM ou une boutique multimarque
 alourdit la facture chez Tmall.
 
 Douyin a renoncé en juin 2025 à fixer son dépôt par catégorie. Le montant
@@ -77,11 +77,20 @@ Douyin prélève 2 % sur les céréales et l'huile, 3 % sur l'essentiel du r
 > 《【全球购】技术服务费费率标准》, 15 juillet 2026.
 > https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
 
-Face à Tmall, JD se montre nettement moins gourmand. La plateforme libelle dépôt
-et frais annuels en dollars, selon un barème qui s'élève avec le cumul des
-ventes : les 42 600 RMB marquent le premier échelon, non un rythme de
-croisière. À ses 4 %, JD ajoute une commission fixe de 0,9 % sur les
-transactions.
+Face à Tmall, JD se montre nettement moins gourmand. La plateforme ne facture
+aucuns frais annuels et libelle son dépôt en dollars : environ 4 500 euros
+pour une boutique officielle de marque, soit les 35 500 RMB du tableau. Les
+autres formats démarrent au même niveau, puis passent à 9 000 et 13 500 euros
+environ à mesure que les ventes montent. À ses 2 %, JD ajoute une commission
+fixe de 0,9 % sur les transactions.
+
+> JD Worldwide applique à l'alimentaire et aux boissons (食品饮料) des frais
+> de soutien opérationnel de 2 % auxquels s'ajoutent 0,9 % de frais de
+> transaction, et demande environ 4 500 euros de dépôt à une boutique
+> officielle de marque.
+> Source : JD Worldwide (京东全球购), barème des frais par catégorie, révisé
+> le 24 septembre 2026, en vigueur depuis le 1er octobre 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 ## Deux voies d'entrée : le transfrontalier sous douane et le régime général
 

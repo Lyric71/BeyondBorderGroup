@@ -85,6 +85,15 @@ reason in notes, and nothing is drafted. Update editorial/schedule.csv and
 write the run log. Stop at image_ready. Do not publish. Do not build. Do not
 commit. This run is unattended: never ask a question, decide from the specs
 and note the decision in the run log.
+No TODO leaves this run (editorial/CLAUDE.md, "No TODO leaves a run"): no
+TODO, FIXME or TBD marker in the draft, its comment blocks or the ledger, and
+no open items or "for a person" list in the log. Research a missing fact or
+cut the claim; apply the settled fallback for a missing proprietary number;
+fix a published page the draft contradicts, in every locale, with its
+updatedDate moved; correct a wrong brief in public/content/editorial-briefs.md
+and rerun node editorial/scripts/build-briefs.mjs; register a future date in
+editorial/sources/signal-watch-list.md. Only something Cyril alone can decide
+sets the row to blocked. Run node scripts/check-no-todo.mjs before you finish.
 '@
 } elseif ($Mode -eq 'partner') {
   $Prompt = @'
@@ -102,11 +111,17 @@ image. Asset and Report pieces also write their file under editorial/output/.
 Follow the partner template in the brief: frontmatter tags include
 "Finding a partner" plus the brief's topic tags; never cite or name a
 competitor (the list is in Part 5); use the Compass figure from
-editorial/sources/compass-stats.md when it exists, else the fallback the
-brief names, and say so in the log. Update editorial/schedule.csv and append
+editorial/sources/compass-stats.md when it exists, else the settled fallback
+in editorial/CLAUDE.md ("The proprietary number"), stated in one line of the
+log. Update editorial/schedule.csv and append
 to the run log (never overwrite it). Stop at image_ready. Do not publish. Do
 not build. Do not commit. This run is unattended: never ask a question,
 decide from the specs and note the decision in the run log.
+No TODO leaves this run (editorial/CLAUDE.md, "No TODO leaves a run"): no
+TODO, FIXME or TBD marker in the draft, its comment blocks or the ledger, and
+no open items or "for a person" list in the log. Close every item in the run;
+only something Cyril alone can decide sets the row to blocked. Run node
+scripts/check-no-todo.mjs before you finish.
 '@
 } else {
   $Prompt = @'
@@ -127,7 +142,9 @@ native rewrite is mandatory. For a Refresh, update the existing files in
 place in every locale and set updatedDate. Every locale file keeps its
 title at 60 characters or fewer (else add a seoTitle of at most 60) and its
 description between 120 and 155 characters. Then run node
-scripts/check-insight-links.mjs and node scripts/generate-llms-full.mjs, then
+scripts/check-no-todo.mjs (a marker means an item is still open: close it,
+never just delete the marker), node scripts/check-insight-links.mjs and node
+scripts/generate-llms-full.mjs, then
 npm run build and npx astro check; this scheduled publish run is the explicit request for a build
 that .claude/CLAUDE.md section 19 requires. When both pass: set the row to
 published with published_on, then git add everything the article touched
@@ -137,7 +154,11 @@ and commit on main with a conventional commit message
 (feat(insights): publish <slug>), then git push origin main. Only after the
 push succeeds, run node editorial/scripts/notify-publish.mjs with the slug,
 title, section, build result, log path and the commit hash in --note; it
-also pings IndexNow with the live URLs.
+also pings IndexNow with the live URLs. There is no --todo option and the
+email has no open items: everything this run found (a contradicted page, a
+wrong brief, a missing link, a future date) is closed before the commit, per
+editorial/CLAUDE.md "No TODO leaves a run". If something only Cyril can
+decide stands in the way, set the row to blocked and do not publish it.
 This run is unattended: never ask a question. If the build or the check
 fails, do not commit, do not push, leave the row at image_ready, put the
 error in the run log and send the email with --build failed and the error in

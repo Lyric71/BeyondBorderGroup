@@ -85,8 +85,10 @@ a `seoTitle` of at most 60, which leaves the H1 alone) and its description
 between 120 and 155 characters; English keeps the house ceilings above.
 
 Then, in this order, and only when each step passes:
-`node scripts/check-insight-links.mjs` (fails on a link to a locale page
-that does not exist, or a slug-map entry without its file),
+`node scripts/check-no-todo.mjs` (fails on a TODO, FIXME or TBD marker in
+any content, draft, ledger or brief file; close the item, never delete the
+marker alone), `node scripts/check-insight-links.mjs` (fails on a link to a
+locale page that does not exist, or a slug-map entry without its file),
 `node scripts/generate-llms-full.mjs`, `npm run build`,
 `npx astro check`, `git add` of everything the piece touched, one commit on
 main (`feat(insights): publish <slug>`), `git push origin main`. A failed
@@ -98,9 +100,11 @@ pipeline builds.
 
 When the publish finishes, Claude runs `editorial/scripts/notify-publish.mjs` from the
 repo root. It sends one email through Resend (`RESEND_API_KEY` in `.env`) with
-the live URL per locale, the hero image path, build status, open TODOs and
-the run log path. If the send fails, Claude says so instead of skipping
-silently.
+the live URL per locale, the hero image path, build status and the run log
+path. The email reports what was done and carries no TODO or open items:
+the script refuses `--todo` and a `--note` with a marker. Anything the run
+found was closed before the commit (CLAUDE.md, "No TODO leaves a run"). If
+the send fails, Claude says so instead of skipping silently.
 
 ## Weekly rhythm
 
@@ -111,7 +115,7 @@ silently.
 | Wednesday | Ledger A or B | "What it costs to sell [category] in China" or "How [category] reaches buyers in China". Seven blocks. |
 | Thursday, odd weeks | Teardown | How a named non-client brand entered China, every figure sourced. |
 | Thursday, even weeks | Refresh | One back-catalogue insight upgraded to the Anchor spec. |
-| Friday | none | Review. Fix what the week shipped. Refresh the site profile on the first working day of the month. |
+| Friday | none | Review what the week shipped. Nothing waits for Friday: every run closes its own items. Refresh the site profile on the first working day of the month (the first run of the month does it if Friday comes later). |
 
 Ledger scheduling rule: a category that also has a category Anchor sits at
 least eight weeks from it, and the two interlink. The schedule already
@@ -217,10 +221,13 @@ Disable-ScheduledTask -TaskName 'TheChinaPath Editorial Publish'
 
 | Problem | What to do |
 |---|---|
-| A figure cannot be sourced in Chinese or English | Claude cuts the claim and marks it. Decide whether the section still stands. |
+| A figure cannot be sourced in Chinese or English | Claude cuts the claim and rewrites the section so it stands without it. No marker. |
 | A source fails check 2 (page changed or gone) | Claude fixes the citation or cuts the claim. Never ship a citation that failed re-fetch. |
-| No proprietary number could be found | Claude leaves `TODO: proprietary number`. Supply one from stores under management, or let it ship without and log it. |
-| A client number is missing from `/work` | Claude leaves `TODO: client sign-off`. Chase it, do not guess. |
+| No proprietary number could be found | Settled fallback: calculator data, then a published case page; if neither fits, the piece ships without one. No marker, no request in the log or the email. |
+| A client number is missing from `/work` | Claude cuts it and uses only what the case page publishes. Never a guess, never a marker. |
+| A draft contradicts a published page or a calculator | Claude fixes that page in every locale in the same run and moves its `updatedDate`. |
+| The research proves a brief wrong | Claude corrects the master plan and reruns `build-briefs.mjs` in the same run. |
+| `check-no-todo.mjs` fails | A marker reached a file. Close the item it names (research, cut, fix, fallback); then rerun. Never just delete the marker. |
 | A Teardown brand turns out to be a client or fails a criterion | Claude picks another. Correct behavior. |
 | Claude planted a typo | It ignored `CLAUDE.md` and the house skill. Point at the conflict section and rerun iteration 7. |
 | The draft reads generic | The brief's "answer in one line" was skipped. Rerun with `Reread the answer line in the brief and rewrite the opening.` |

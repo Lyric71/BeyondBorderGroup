@@ -297,8 +297,6 @@ Nor does it show disputes settled in mediation, penalties older than three
 years, or whether the warehouse exists. And it says nothing about sell-out,
 which is what you'll care about once your stock is theirs to sell.
 
-<!-- TODO: proprietary number. Compass: share of candidates dropped at the license and record check. No Compass snapshot yet (editorial/sources/compass-stats.md missing); brief fallback is "log the gap". Logged in editorial/logs/partner/P03.md. -->
-
 So the report becomes your agenda for the first call. Start with a scan of
 the business license, and match its credit code to the party named in the
 contract. Bring every judgment you found, by case number, and let them
@@ -401,8 +399,8 @@ China distributor vs own store -> /insights/china-distributor-vs-own-store
 distributor sourcing and management -> /enter-china/distribution
 Compass -> /compass
 CTA: Get a Compass shortlist of vetted distributors for your category -> /compass/shortlist
-Not linked: /insights/find-distributor-china-verify (brief 07A, publishes Oct 20, 2026; not live yet). Add a link from this piece when 07A publishes.
-PROPRIETARY NUMBER: none. TODO: proprietary number (Compass: share of candidates dropped at the license and record check). Brief fallback "log the gap"; see editorial/logs/partner/P03.md.
+Not linked: /insights/find-distributor-china-verify (brief 07A, publishes Oct 20, 2026; not live yet). The backlink is registered in the 07A brief (master plan), so the 07A publish run adds it.
+PROPRIETARY NUMBER: none. Settled fallback (editorial/CLAUDE.md, "The proprietary number"): the Compass share is not on file and no calculator or case figure fits, so the piece runs without one. Closed.
 HAND-OFFS: none.
 CLIENT SIGN-OFF NEEDED: none.
 -->

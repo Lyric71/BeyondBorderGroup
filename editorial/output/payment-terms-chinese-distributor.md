@@ -251,10 +251,6 @@ that costs before the first sale.
 Our [comparison of a distributor and your own
 store](/insights/china-distributor-vs-own-store) prices both roads.
 
-<!-- TODO: proprietary number. The brief asks for a Compass figure (typical
-first-order terms on file). editorial/sources/compass-stats.md does not
-exist, so none is printed. Add it at the first Refresh. -->
-
 Payment is one of seven terms to settle before the first container ships.
 The rest are in our
 [guide to finding a distributor in China](/compass/find-a-distributor-in-china).
@@ -362,7 +358,7 @@ guide to finding a distributor in China -> /compass/find-a-distributor-in-china
 Compass -> /compass
 distribution team -> /enter-china/distribution
 CTA: Ask Compass for a shortlist of vetted distributors in your category -> /compass/shortlist
-PROPRIETARY NUMBER: bonded warehouse deposit 100,000 RMB plus bonded tax prepayment 300,000 RMB, 400,000 RMB committed before the first order. Label: "TheChinaPath calculator data, September 2026". Source: src/pages/tools/tmall-global-setup-and-run.astro (whDeposit, whTaxPrepay). The brief's Compass figure (typical first-order terms on file) does not exist yet; TODO marker left in the body, see the run log.
+PROPRIETARY NUMBER: bonded warehouse deposit 100,000 RMB plus bonded tax prepayment 300,000 RMB, 400,000 RMB committed before the first order. Label: "TheChinaPath calculator data, September 2026". Source: src/pages/tools/tmall-global-setup-and-run.astro (whDeposit, whTaxPrepay). The brief's Compass figure (typical first-order terms on file) does not exist; settled fallback (editorial/CLAUDE.md, "The proprietary number"): the calculator figure stands. Closed.
 HAND-OFFS: none.
 CLIENT SIGN-OFF NEEDED: none.
 PAIRING: P11 (sell-in vs sell-out) and P15 (replace a distributor) should link back here once published; not linked now because they do not exist yet.

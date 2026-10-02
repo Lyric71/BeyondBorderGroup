@@ -2,7 +2,7 @@
 title: "Changing your cosmetics responsible person in China"
 description: "Since July 29, 2026, a foreign cosmetics brand can replace its China responsible person without the old distributor's consent. What to file and sign."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Compliance & Setup"
 platforms: ["Tmall", "JD", "Douyin"]
@@ -171,9 +171,9 @@ import rules need no NMPA filing, so they need no responsible person either.
 Opening that route for skincare isn't free.
 
 > A cross-border skincare store needs 80,000 RMB in cash before the first
-> sale on Tmall Global, 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin
+> sale on Tmall Global, 35,500 RMB on JD Worldwide and 5,000 RMB on Douyin
 > cross-border, deposits and annual fees included.
-> Source: TheChinaPath calculator data, September 2026.
+> Source: TheChinaPath calculator data, October 2026.
 
 > Douyin Global's base deposit follows last month's sales, up to 5,000 RMB.
 > Source: Douyin E-commerce (抖音电商), Douyin Global deposit rules, June 2025.

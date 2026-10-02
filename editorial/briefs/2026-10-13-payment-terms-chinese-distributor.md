@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Term (prepayment, deposit plus balance, LC, open account with credit insurance, consignment), risk to the brand, cost, when it fits.
 
-**The proprietary number.** Compass: typical first-order terms on file. Fallback: log the gap.
+**The proprietary number.** Compass: typical first-order terms on file. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. Why cash is tight downstream (the 2025 distributor survey)

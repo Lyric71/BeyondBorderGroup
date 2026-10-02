@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Consequence (platform deposit, store penalties and delisting, regulator fines, criminal exposure), who bears it, the source.
 
-**The proprietary number.** Compass: share of candidates declined over data integrity. Fallback: log the gap.
+**The proprietary number.** Compass: share of candidates declined over data integrity. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. The case

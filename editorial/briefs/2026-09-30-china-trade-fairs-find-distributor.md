@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Fair, city and 2026/2027 dates, who walks the floor (distributors, importers, retail buyers), categories it suits, what to book before you fly. Dates from the organisers' own sites, re-checked on the day of drafting.
 
-**The proprietary number.** Compass: share of partners on file first met at a fair vs through referral. Fallback: none from the calculators applies, so log the gap and use a published case page only if one fits.
+**The proprietary number.** Compass: share of partners on file first met at a fair vs through referral. Fallback: the settled fallback (no calculator figure applies, so a published case page if one fits; otherwise the piece runs without one, with no marker).
 
 **Outline.**
 1. Why a fair is a filter, not a search

@@ -2,7 +2,7 @@
 title: "Allbirds en China: lo que costó entrar"
 description: "Cinco años en solitario, seis tiendas y una filial de Shanghái vendida por 1,9 millones de euros antes de ceder el mercado a Belle Fashion."
 pubDate: "2026-09-10"
-updatedDate: "2026-09-10"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Market Strategy"
 industry: "Fashion & Luxury"
@@ -117,8 +117,9 @@ La misma información salía mucho más barata, y bastante antes de 2019. Una
 tienda transfronteriza pone el producto delante del comprador chino sin
 que exista sociedad china alguna. En Tmall Global, el calzado pide 50.000
 yuanes de depósito y 60.000 de cuota anual, con un 5 % de comisión; en JD
-Worldwide el escalón de calzado baja a 35.500 y 7.100 yuanes, también con un
-5 % (datos de las calculadoras de TheChinaPath, septiembre de 2026).
+Worldwide, una tienda oficial de marca deposita 35.500 yuanes, no paga cuota
+anual y cede un 6 % (datos de las calculadoras de TheChinaPath, octubre de
+2026).
 
 Son los importes de hoy, no los de 2019. Compruébelos en la [calculadora de
 costes de Tmall Global](/es/herramientas/calculadora-de-costes-tmall-global), o

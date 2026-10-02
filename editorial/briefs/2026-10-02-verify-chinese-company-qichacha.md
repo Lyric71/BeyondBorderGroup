@@ -55,7 +55,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Field, where to find it, what a real distributor's record shows, what should stop you.
 
-**The proprietary number.** Compass: share of candidates dropped at the licence and record check. Fallback: log the gap.
+**The proprietary number.** Compass: share of candidates dropped at the licence and record check. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Asset.** `output/guides/<slug>.md`: a one-page printable field checklist with the eight fields and a pass/stop column.
 

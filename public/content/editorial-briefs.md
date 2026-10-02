@@ -46,6 +46,13 @@ Every Anchor must carry:
 2. The answer inside the first 60 words.
 3. One real HTML table with real figures, in a scrollable container.
 4. At least one number only this agency can publish, labelled as such.
+   A brief that asks for a figure "from stores under management" or "from
+   Compass" means that figure only when it is on file in
+   sources/verified-sources.md or sources/compass-stats.md. When it is
+   not, the settled fallback applies: TheChinaPath calculator data, then a
+   published case page; if neither fits, the piece runs without one.
+   Never a placeholder marker, never a request for the figure in the log
+   or the email.
 5. A named human byline, published date and updated date.
 6. Three to five internal links, at least one to a service page and one
    to a calculator or Compass.
@@ -103,7 +110,7 @@ Difficulty from the September 2026 baseline. OPEN means no incumbent answers the
 |---|---|---|---|---|
 | 1 | Distributor or your own store in China: the honest comparison | china distributor vs own store | OPEN | none |
 | 2 | What a livestream room actually costs | china livestream cost for brands | OPEN | none |
-| 3 | Double 11 2026: the 60-day operator checklist | double 11 preparation checklist | SEAS | none |
+| 3 | Double 11 2026: the 50-day operator checklist | double 11 preparation checklist | SEAS | none |
 | 4 | What Chinese social media costs a foreign brand per month | china social media marketing cost per month | OPEN | none |
 | 5 | Douyin store or Douyin as media: which one you actually need | douyin store vs douyin ads | OPEN | none |
 | 6 | Opening a RedNote store as a foreign brand | xiaohongshu store setup overseas brand | WEAK | none |
@@ -165,7 +172,7 @@ Order resolved so no Ledger sits within eight weeks of the CAT anchor covering t
 | 1 | A | What it costs to sell footwear in China | Camper. Use only what is already published on `/work/camper`. Do not add figures. | Fashion & Luxury |
 | 2 | A | What it costs to sell facial skincare in China | ROC, Shiseido RQ Pyology, Pierre Fabre, Age 20's. Published figures only. | Beauty & Personal Care |
 | 3 | A | What it costs to sell dairy and spreads in China | Valio, Langnese. Published figures only. | Food & Beverage |
-| 4 | A | What it costs to sell home textiles and bedding in China | Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page. | Home & Living |
+| 4 | A | What it costs to sell home textiles and bedding in China | No bedding client on /work (Bassetti's case is a TEEXMA software project, not bedding retail), so block 6 is the honesty line. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page. | Home & Living |
 | 5 | B | How automotive and EV brands actually reach buyers in China | Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`. | Automotive |
 | 6 | A | What it costs to sell pet food in China | none | Pets |
 | 7 | B | How insurance and financial services reach customers in China | Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is. | Financial & Professional Services |
@@ -219,7 +226,7 @@ Order resolved so no Ledger sits within eight weeks of the CAT anchor covering t
 
 | Wk | Type | Title | Format |
 |---|---|---|---|
-| 3 | Asset | Double 11 2026: the 60-day operator checklist | Printable checklist, owner per line |
+| 3 | Asset | Double 11 2026: the 50-day operator checklist | Printable checklist, owner per line |
 | 8 | Asset | Double 11: the last fourteen days | Day-by-day run sheet |
 | 11 | Report | Double 11 2026 from inside the stores we run | Gated PDF, anonymised store-level figures |
 | 16 | Asset | Chinese New Year cut-off calendar | Dated calendar, four workstreams |
@@ -333,21 +340,21 @@ Standard seven blocks. Skincare is the highest-value Ledger in wave 1 and the mo
 
 ## W03 · TUE · ANCHOR + ASSET
 
-**Title:** Double 11 2026: the 60-day operator checklist
+**Title:** Double 11 2026: the 50-day operator checklist
 **Query:** double 11 preparation checklist · **Difficulty:** SEASONAL
 **Word count:** 1,600 to 2,000, plus the checklist asset
 
 **The answer.** What has to be locked, and by when, counting back from 11 November.
 
-**The table it must carry.** The checklist itself: 60 days out, 45, 30, 21, 14, 7, and the day. Each row carries the task, the owner role, and what breaks if it slips.
+**The table it must carry.** The checklist itself: 50 days out, 40, 30, 21, 14, 7, and the day. Each row carries the task, the owner role, and what breaks if it slips.
 
-**The proprietary number.** The most common slip from stores under management, with how many days it typically costs. One line, sourced.
+**The proprietary number.** The most common slip from stores under management, with how many days it typically costs, when it is on file; otherwise the settled fallback (the Tmall Global calculator's bonded cash floor and return drag carried the published piece).
 
 **Asset.** The same checklist as a printable page in `/guides`, one item per line, checkboxes, no marketing copy.
 
 **Internal links.** `/grow-in-china/campaigns`, `/grow-in-china/cross-border-ecommerce`, `/tools/tmall-global-setup-and-run`
 **CTA.** Talk to us, dated: this is the one week of the year where urgency is real.
-**Do not.** Publish after 12 September. A 60-day checklist published at 45 days is worthless.
+**Publish date.** September 22, 2026 (decided September 4, 2026), so the countdown starts 50 days out and the copy says so. Never relabel a shorter countdown as 60 days.
 
 ---
 
@@ -393,7 +400,7 @@ Block 3 carries the weight: dairy is one of the most tightly controlled import c
 
 **Title:** What it costs to sell home textiles and bedding in China
 **Word count:** 1,100 to 1,400
-**Proof.** Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page.
+**Proof.** None from /work: Bassetti's case is a TEEXMA software project, not bedding retail, so block 6 says plainly that no bedding client is on file. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page.
 
 ---
 
@@ -499,6 +506,7 @@ Block 3 carries this one and nothing else comes close. Pet food entering China i
 6. What a vetted shortlist actually looks like
 
 **Internal links.** `/compass`, `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/work`
+**On publish.** Add a link to this piece from `/insights/verify-chinese-company-qichacha` (P03, published September 24, 2026, which could not link here before 07A was live), in EN and in its FR, DE and ES twins, at the line on checking a candidate before the first call. Move that article's `updatedDate` in each locale.
 **CTA.** Compass shortlist.
 
 ---
@@ -2476,7 +2484,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Fair, city and 2026/2027 dates, who walks the floor (distributors, importers, retail buyers), categories it suits, what to book before you fly. Dates from the organisers' own sites, re-checked on the day of drafting.
 
-**The proprietary number.** Compass: share of partners on file first met at a fair vs through referral. Fallback: none from the calculators applies, so log the gap and use a published case page only if one fits.
+**The proprietary number.** Compass: share of partners on file first met at a fair vs through referral. Fallback: the settled fallback (no calculator figure applies, so a published case page if one fits; otherwise the piece runs without one, with no marker).
 
 **Outline.**
 1. Why a fair is a filter, not a search
@@ -2501,7 +2509,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Before and after: what the brand files, whose consent, typical timing, what the old partner can still block.
 
-**The proprietary number.** Compass: share of beauty partners on file that hold responsible-person filings for the brands they carry. Fallback: log the gap.
+**The proprietary number.** Compass: share of beauty partners on file that hold responsible-person filings for the brands they carry. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. What the responsible person does and why a distributor often holds the role
@@ -2526,7 +2534,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Field, where to find it, what a real distributor's record shows, what should stop you.
 
-**The proprietary number.** Compass: share of candidates dropped at the licence and record check. Fallback: log the gap.
+**The proprietary number.** Compass: share of candidates dropped at the licence and record check. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Asset.** `output/guides/<slug>.md`: a one-page printable field checklist with the eight fields and a pass/stop column.
 
@@ -2578,7 +2586,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Asset (store, Douyin shop, Qianchuan account, Alimama account, brand authorization, 生意参谋 data, content, customer service records), who should hold it, what happens at exit if the partner holds it.
 
-**The proprietary number.** Compass: share of TPs on file that open stores in the brand's own entity. Fallback: log the gap.
+**The proprietary number.** Compass: share of TPs on file that open stores in the brand's own entity. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. The case: a Hunan court, a Douyin shop on the operator's licence, a brand with no claim
@@ -2599,11 +2607,11 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 **Query:** tmall partner rating douyin service provider · **Tags:** Due diligence, Tmall Partners, Douyin Partners
 **Word count:** 1,300 to 1,800
 
-**The answer, in one line.** Tmall Global scores its partners quarterly out of 12 points and grades them three to five stars; Douyin grades rated providers Diamond, Gold or Silver. The badge tells you scale and platform standing. It says nothing about your category, so use it to build a long list and nothing more.
+**The answer, in one line.** Tmall Global rates the partners that run its stores once a year and sorts them into Gold, Silver and Bronze Star (2026 rule, in force March 31, 2026; the 12-point quarterly three-to-five-star scheme is history); domestic Tmall certifies five-star and six-star operators on a yearly list; Douyin grades brand service providers Diamond, Gold or Silver, with Bronze on its industry-belt track. The badge tells you scale and platform standing. It says nothing about whether the partner has sold a product like yours.
 
 **The table it must carry.** Platform, rating scale, how it is scored and how often, what a top rating gets the partner, what it does not tell you.
 
-**The proprietary number.** Compass: rating mix of TPs and DPs on file. Fallback: log the gap.
+**The proprietary number.** Compass: rating mix of TPs and DPs on file. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. Why platforms rate partners at all
@@ -2703,7 +2711,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Term (prepayment, deposit plus balance, LC, open account with credit insurance, consignment), risk to the brand, cost, when it fits.
 
-**The proprietary number.** Compass: typical first-order terms on file. Fallback: log the gap.
+**The proprietary number.** Compass: typical first-order terms on file. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. Why cash is tight downstream (the 2025 distributor survey)
@@ -2728,7 +2736,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Signal (orders vs scans, weeks of cover, discounting online, sudden promotions, late payment), what it looks like, what to ask for.
 
-**The proprietary number.** Compass: share of distributors on file that share scan or depletion data. Fallback: log the gap.
+**The proprietary number.** Compass: share of distributors on file that share scan or depletion data. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. Why distributors are refusing stock in 2025 and 2026
@@ -2753,7 +2761,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** The control (traceability code, channel clause, per-breach penalty, audit right, platform complaint), what it does, how the case used it.
 
-**The proprietary number.** Compass: share of distributors on file with a written price and channel policy. Fallback: log the gap.
+**The proprietary number.** Compass: share of distributors on file with a written price and channel policy. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. The case (Shanghai Fengxian court)
@@ -2777,7 +2785,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Consequence (platform deposit, store penalties and delisting, regulator fines, criminal exposure), who bears it, the source.
 
-**The proprietary number.** Compass: share of candidates declined over data integrity. Fallback: log the gap.
+**The proprietary number.** Compass: share of candidates declined over data integrity. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. The case
@@ -2826,7 +2834,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Asset to move (stock, retail listings, product registrations, responsible person, labels, trademark licence, Tmall and Douyin authorizations, customer data), who holds it, how it moves, typical time.
 
-**The proprietary number.** Compass: median months from first meeting to a signed replacement. Fallback: log the gap.
+**The proprietary number.** Compass: median months from first meeting to a signed replacement. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. Why switches fail
@@ -2887,7 +2895,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** State-owned vs private: licences, speed, payment reliability, retail access, marketing effort, typical fit.
 
-**The proprietary number.** Compass: ownership split of importers on file. Fallback: log the gap.
+**The proprietary number.** Compass: ownership split of importers on file. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.** 1. Why the question comes up at CIIE 2. The table 3. Licences and registrations 4. Credit and payment 5. Channel access 6. Checks for both
 
@@ -2904,7 +2912,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** One agency vs two: coordination, pricing conflicts, cost, accountability, what to check.
 
-**The proprietary number.** Compass: share of TPs on file with a rated Douyin practice. Fallback: log the gap.
+**The proprietary number.** Compass: share of TPs on file with a rated Douyin practice. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.** 1. Why the question matters now (Tmall-first operators moving to Douyin) 2. The table 3. Price conflict between channels 4. Checking the Douyin team 5. Contract structure for one or two agencies
 
@@ -2923,7 +2931,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Grant type (national, regional, channel, online, category), what the brand gives up, target to attach, exit trigger.
 
-**The proprietary number.** Compass: share of distributors on file that asked for national exclusivity at first meeting. Fallback: log the gap.
+**The proprietary number.** Compass: share of distributors on file that asked for national exclusivity at first meeting. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.** 1. Why distributors ask for everything 2. The Beijing double-damages case 3. The table 4. Targets and take-or-pay 5. Online carve-outs 6. Notice and review
 
@@ -3040,7 +3048,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Fee, what it buys, how it is charged, a sourced range (current, dated), who pays under a typical distribution deal.
 
-**The proprietary number.** Compass: share of distributors on file that pre-fund listing fees. Fallback: log the gap.
+**The proprietary number.** Compass: share of distributors on file that pre-fund listing fees. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Leads (verify, cite primary).** Current retailer supplier terms; MOFCOM rules on retailer-supplier fees (零售商供应商公平交易管理办法). 2012 press figures only as history.
 
@@ -3072,7 +3080,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** National vs regional vs network: reach, focus, price control, cost, fit.
 
-**The proprietary number.** Compass: share of distributors on file covering one region vs several. Fallback: log the gap.
+**The proprietary number.** Compass: share of distributors on file covering one region vs several. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
 **CTA.** Compass shortlist.

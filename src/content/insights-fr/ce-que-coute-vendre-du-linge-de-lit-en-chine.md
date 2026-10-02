@@ -2,7 +2,7 @@
 title: "Ce que coûte la vente de linge de lit en Chine"
 description: "Le linge de lit s'ouvre sur JD Worldwide avec 4 500 euros de dépôt et 3,9 % par vente ; Tmall exige 50 000 RMB et 5 %. Passé 5 000 RMB, la taxe flambe."
 pubDate: "2026-09-30"
-updatedDate: "2026-09-30"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Home & Living"
@@ -75,8 +75,8 @@ boutique et le niveau des ventes.
 > 3 % auxquels s'ajoutent 0,9 % de frais de transaction, et demande environ
 > 4 500 euros à une boutique officielle de marque. Les autres formats de
 > boutique versent entre 9 000 et 13 500 euros environ.
-> Source : JD Worldwide (京东全球购), barème des frais par catégorie, en
-> vigueur depuis le 1er août 2026.
+> Source : JD Worldwide (京东全球购), barème des frais par catégorie, révisé
+> le 24 septembre 2026, en vigueur depuis le 1er octobre 2026.
 > https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 Douyin fait bande à part. La plateforme n'exige quasiment aucun dépôt, mais

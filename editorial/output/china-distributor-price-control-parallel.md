@@ -89,11 +89,6 @@ each other on price. Once the channels were aligned, pricing disputes across
 them were resolved within three months, as the
 [DaVinci Gourmet case](/work/kerry-davinci) records.
 
-<!-- TODO: proprietary number. The brief asks for a Compass figure (share of
-distributors on file with a written price and channel policy).
-editorial/sources/compass-stats.md does not exist, so none is printed. Add it
-at the first Refresh. -->
-
 The second cost is who you can sue. The shop selling scratched stock often
 bought it legally, a few steps down your own chain. Courts give you little
 against it.
@@ -275,7 +270,7 @@ distributor or own store comparison -> /insights/china-distributor-vs-own-store
 Compass -> /compass
 distribution team -> /enter-china/distribution
 CTA: Ask Compass for a shortlist of vetted distributors in your category -> /compass/shortlist
-PROPRIETARY NUMBER: "pricing disputes across channels were resolved within three months" (DaVinci Gourmet), labelled as recorded on our published case page /work/kerry-davinci (src/content/cases/kerry-davinci.md). The brief's Compass figure (share of distributors on file with a written price and channel policy) is missing because editorial/sources/compass-stats.md does not exist; TODO marker left in the body.
+PROPRIETARY NUMBER: "pricing disputes across channels were resolved within three months" (DaVinci Gourmet), labelled as recorded on our published case page /work/kerry-davinci (src/content/cases/kerry-davinci.md). The brief's Compass figure (share of distributors on file with a written price and channel policy) is missing because editorial/sources/compass-stats.md does not exist; settled fallback (editorial/CLAUDE.md, "The proprietary number"): the case figure stands. Closed.
 HAND-OFFS: none.
 CLIENT SIGN-OFF NEEDED: none. Only the wording already published on /work/kerry-davinci is used.
 -->

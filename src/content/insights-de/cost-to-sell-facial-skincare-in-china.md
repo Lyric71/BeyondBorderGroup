@@ -1,15 +1,15 @@
 ---
 title: "Was der Verkauf von Gesichtspflege in China kostet"
-description: "Der Start kostet 80.000 Yuan bei Tmall Global, 42.600 bei JD Worldwide, 5.000 bei Douyin. Danach entscheidet die Gebindegröße über die Steuer."
+description: "Der Start kostet 80.000 Yuan bei Tmall Global, 35.500 bei JD Worldwide, 5.000 bei Douyin. Danach entscheidet die Gebindegröße über die Steuer."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Beauty & Personal Care"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Gesichtspflege", "Tmall Global", "JD Worldwide", "Douyin", "Cross-Border-E-Commerce", "Plattformgebühren", "NMPA"]
 keyTakeaways:
-  - "Gesichtspflege kostet im Start 80.000 Yuan bei Tmall Global, 42.600 Yuan bei JD Worldwide und 5.000 Yuan bei Douyin Cross-Border, vor Ware, Media und Partnerhonorar (Rechnerdaten von TheChinaPath, September 2026)."
+  - "Gesichtspflege kostet im Start 80.000 Yuan bei Tmall Global, 35.500 Yuan bei JD Worldwide und 5.000 Yuan bei Douyin Cross-Border, vor Ware, Media und Partnerhonorar (Rechnerdaten von TheChinaPath, Oktober 2026)."
   - "Tmall Global nimmt auf Gesichtspflege 4 % je Verkauf, die beiden anderen 5 %, und ordnet die Kategorie der niedrigeren Jahresgebühr von 30.000 Yuan zu."
   - "Über den Cross-Border-Weg entfällt die NMPA-Anmeldung vollständig, weil die Ware als Gut zum persönlichen Gebrauch überwacht wird. Im Regelhandel entfällt sie nicht."
   - "Ein Pflegeprodukt ab 10 Yuan je Milliliter gilt als hochwertiges Kosmetikum und trägt Verbrauchsteuer. Der Käufer zahlt dann rund 23 % statt 9,1 %."
@@ -19,7 +19,7 @@ heroImageAlt: "Im Betriebsbüro eines Zolllagers in Guangzhou prüft eine Sortim
 ---
 
 Fangen Sie mit Tmall Global an. Ein Shop für Gesichtspflege kostet dort
-80.000 Yuan, bevor der erste Tiegel verkauft ist, gegenüber 42.600 Yuan bei
+80.000 Yuan, bevor der erste Tiegel verkauft ist, gegenüber 35.500 Yuan bei
 JD Worldwide und 5.000 Yuan bei Douyin Cross-Border. Tmall nimmt 4 % je
 Verkauf, die beiden anderen 5 %. Und dann kommt die Steuer, die Ihr Käufer an
 der Kasse zahlt und die Ihre Gebindegröße bestimmt. Die wiegt schwerer als
@@ -35,21 +35,29 @@ und zugleich die nachsichtigste bei den Gebühren. Zuerst die Tabelle.
 | Gesichtspflege, erstes Jahr (Yuan) | Tmall Global | JD Worldwide | Douyin Cross-Border |
 |---|---|---|---|
 | Kaution, rückzahlbar | 50.000 | 35.500 (rund 4.500 Euro) | 5.000 |
-| Jährliche Plattformgebühr | 30.000 | 7.100 (rund 900 Euro) | keine |
+| Jährliche Plattformgebühr | 30.000 | keine | keine |
 | Provision je Verkauf | 4 % | 5 % | 5 % |
-| Liquidität vor dem ersten Verkauf | 80.000 | 42.600 | 5.000 |
+| Liquidität vor dem ersten Verkauf | 80.000 | 35.500 | 5.000 |
 
 </div>
 
 > Kaution, Jahresgebühr und Provision nach Kategorie für Gesichtspflege bei
 > Tmall Global, JD Worldwide und Douyin Cross-Border.
-> Quelle: Rechnerdaten von TheChinaPath, September 2026.
+> Quelle: Rechnerdaten von TheChinaPath, Oktober 2026.
 
-JD schlägt zusätzlich eine pauschale Transaktionsgebühr von 0,9 % auf und
-nennt Kaution wie Nutzungsgebühr in Dollar, auf einer Staffel, die mit dem
-kumulierten Umsatz steigt. Der Yuan-Betrag oben ist die Einstiegsstufe. Eine
+JD schlägt zusätzlich eine pauschale Transaktionsgebühr von 0,9 % auf,
+verlangt aber keine Jahresgebühr. Die Kaution weist JD in Dollar aus: rund
+4.500 Euro für einen Marken-Flagship, das sind die 35.500 Yuan der Tabelle,
+für andere Shoptypen je nach Umsatz rund 9.000 bis 13.500 Euro. Eine
 TM-Marke oder ein Multibrand-Shop treibt die Tmall-Kaution nach oben.
-Bandbreiten geprüft im September 2026.
+Bandbreiten geprüft im Oktober 2026.
+
+> JD Worldwide erhebt auf Beauty und Hautpflege (美妆护肤) eine
+> Betriebsunterstützungsgebühr von 5 % zuzüglich 0,9 % Transaktionsgebühr
+> und verlangt von einem Marken-Flagship rund 4.500 Euro Kaution.
+> Quelle: JD Worldwide (京东全球购), Gebührenstandard nach Kategorie,
+> überarbeitet am 24. September 2026, gültig seit 1. Oktober 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 Mit Gesichtspflege hat die Douyin-Kaution inzwischen nichts mehr zu tun. Seit
 Juni 2025 folgt sie dem Umsatz des Vormonats: 500 Yuan bis 50.000 Yuan, 2.000
@@ -63,16 +71,23 @@ Yuan bis 100.000, darüber 5.000 Yuan. Die Tabelle zeigt die oberste Stufe.
 > geändert mit Wirkung zum 5. Juni 2025.
 > https://school.jinritemai.com/doudian/web/articlev0/107821
 
-Eine Zahl in dieser Tabelle fällt aus dem Rahmen. Gesichtspflege und
-dekorative Kosmetik sind die einzigen beiden der neunzehn Kategorien in
-unserem Tmall-Global-Rechner, die bei 4 % liegen. Alles andere steht bei 2,
-2,5, 3 oder 5, und Pflege landet obendrein in der niedrigeren Gebührenstufe,
-bei 30.000 statt 60.000.
+Eine Zahl in dieser Tabelle fällt aus dem Rahmen. Gesichtspflege,
+dekorative Kosmetik und Haarpflege sind die einzigen drei der neunzehn
+Kategorien in unserem Tmall-Global-Rechner, die bei 4 % liegen. Alles andere
+steht bei 2, 3 oder 5, und Pflege landet obendrein in der niedrigeren
+Gebührenstufe, bei 30.000 statt 60.000.
 
-Ein Blick auf die Nachbarzeile lohnt sich. Eine Gesichtsreinigung, die als
-Körperpflege eingeordnet wird, zahlt 2,5 % und 60.000 Yuan im Jahr. Beide
-Staffeln kreuzen sich bei genau 2 Millionen Yuan Jahresumsatz. Die
-Einordnung wählen nicht Sie, sondern das Produkt.
+Ein Blick auf die Nachbarzeile lohnt sich. Beauty-Geräte (美容美体仪器)
+gehören zur selben Kosmetikgruppe und zahlen dieselben 30.000 Yuan im Jahr,
+aber 5 % je Verkauf.
+
+> Tmall Global nimmt auf Hautpflege, dekorative Kosmetik und Haarpflege 4 %,
+> auf Beauty-Geräte 5 %, jeweils bei 30.000 Yuan Jahresgebühr.
+> Quelle: Tmall Global (天猫国际), Jahresgebühren und technische
+> Servicegebühren nach Kategorie, Anpassung gültig seit 9. September 2026.
+> https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625
+
+Die Einordnung wählen nicht Sie, sondern das Produkt.
 
 ## Der Weg nach China für Gesichtspflege
 
@@ -253,11 +268,11 @@ in der Ware, die im Zolllager wartet.
 Tmall Global. Die Provision von 4 % ist die niedrigste der drei, die
 Jahresgebühr liegt in der unteren Stufe, und ein Flagship dort ist weiterhin
 die Seite, die ein chinesischer Käufer öffnet, um zu entscheiden, ob eine
-ausländische Pflegemarke echt ist. Das sind die 37.400 Yuan Abstand zu JD
+ausländische Pflegemarke echt ist. Das sind die 44.500 Yuan Abstand zu JD
 wert.
 
 JD Worldwide dreht die Rechnung um, wenn die offene Frage lautet, ob China
-die Marke überhaupt will. Gleicher Weg, gleiche Regeln, etwas mehr als die Hälfte der
+die Marke überhaupt will. Gleicher Weg, gleiche Regeln, etwas weniger als die Hälfte der
 Liquidität bis zum Livegang.
 
 Douyin erfüllt einen anderen Zweck. Niedrigste Kaution, keine Jahresgebühr, und die

@@ -2,14 +2,14 @@
 title: "Tmall vs Amazon: what a brand actually pays"
 description: "Amazon has had no China marketplace since 2019. Here is what Tmall Global charges instead, next to Amazon's own fee sheet, with the tax math."
 pubDate: "2023-02-02"
-updatedDate: "2026-09-17"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Tmall", "JD"]
 tags: ["Tmall Global", "Amazon", "JD Worldwide", "cross-border ecommerce", "platform fees", "market entry"]
 keyTakeaways:
   - "Amazon stopped serving third-party sellers on its China site on July 18, 2019, so a brand cannot choose between Tmall and Amazon for Chinese shoppers."
-  - "Tmall Global commission runs 2% to 5% and averages 3.4% across the nineteen categories in our calculator, against 8% to 15% on Amazon."
+  - "Tmall Global commission runs 2% to 5% and averages 3.5% across the nineteen categories in our calculator, against 8% to 15% on Amazon."
   - "The gap is in fixed cost: 80,000 to 110,000 RMB of deposit and annual fee before the first order, against no deposit and US$39.99 a month on Amazon."
   - "A Tmall Partner retainer and its commission on GMV push the real China take rate above Amazon's, which is what most cost comparisons miss."
   - "Cross-border retail import tax is 9.1% on general goods, inside a 5,000 RMB per order and 26,000 RMB per year quota per shopper."
@@ -38,7 +38,7 @@ because that is the one most brands reading this already run.
 | Security deposit | none | 50,000, refundable |
 | Annual platform fee | none | 30,000 or 60,000 by category |
 | Account fee | US$39.99 a month | none |
-| Commission on each sale | 8% to 15% in most categories | 2% to 5%, 3.4% average |
+| Commission on each sale | 8% to 15% in most categories | 2% to 5%, 3.5% average |
 | Operating partner | optional | a Tmall Partner, in practice |
 | Cash in before the first order | US$39.99, the first month | 80,000 to 110,000 |
 
@@ -52,7 +52,7 @@ because that is the one most brands reading this already run.
 
 > Deposit, annual fee and commission by category on Tmall Global, as loaded
 > in the calculator.
-> Source: TheChinaPath calculator data, September 2026.
+> Source: TheChinaPath calculator data, October 2026.
 
 Health supplements sit outside that range on Tmall Global, at a 300,000 RMB
 deposit. Everything else lands on one of two rungs.
@@ -112,10 +112,10 @@ not.
 We keep the category fee data for Tmall Global, JD Worldwide and Douyin
 cross-border loaded in our own calculators, because we quote from it every
 week. Across the nineteen Tmall Global categories in the picker, commission
-runs from 2% to 5% and averages 3.4%. Eight categories sit at 2%. Nothing
+runs from 2% to 5% and averages 3.5%. Eight categories sit at 2%. Nothing
 goes above 5%. Amazon's band, in most categories, starts at 8%.
 
-Tea, packaged food, watches, small appliances and phones all pay Tmall Global 2% of the sale. On Amazon
+Tea, packaged food, Swiss watches, kitchen appliances and phones all pay Tmall Global 2% of the sale. On Amazon
 the same goods would pay 8% or more.
 
 Then the fixed cost arrives. Deposit plus annual fee comes to 80,000 RMB in
@@ -133,7 +133,7 @@ sets up the campaigns. The default in our own Tmall Global calculator is a
 35,000 RMB monthly retainer plus 10% of GMV, and those defaults exist
 because they are the numbers we see quoted.
 
-Add that 10% to the platform's 3.4% and the China take rate clears 13%,
+Add that 10% to the platform's 3.5% and the China take rate clears 13%,
 which lands inside Amazon's 8% to 15% band instead of under it. The retainer
 sits on top and does not care whether you sell anything.
 
@@ -225,7 +225,7 @@ Amazon's own retail. There is no China storefront a brand opens and runs.
 **Is Tmall Global's commission really lower than Amazon's?**
 
 On the platform line, yes. Commission across the nineteen Tmall Global
-categories in our calculator runs 2% to 5%, averaging 3.4%, against 8% to
+categories in our calculator runs 2% to 5%, averaging 3.5%, against 8% to
 15% on Amazon in most categories. Add a Tmall Partner's commission on GMV
 and the combined China take rate passes Amazon's.
 

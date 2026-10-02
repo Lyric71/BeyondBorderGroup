@@ -60,34 +60,43 @@ type Field = {
 };
 
 // JD Worldwide (京东全球购) categories. Each one sets the security deposit and the
-// platform commission (运营支持服务费, 2%-6% band) that move with the product
-// category. JD quotes the deposit in a TIERED USD ladder that steps up with
-// cumulative sales; the RMB figures here seed the entry tier at about 7.1 to the
-// dollar (US$5,000 for most categories, US$2,000 for fresh, US$15,000 for
-// high-value electronics, US$40,000 for pharma). The annual platform usage fee
-// is a flat US$1,000. Directional 2025 bands; confirm the exact rate at onboarding.
+// platform commission (运营支持服务费) that move with the product category, from
+// 《京东全球购开放平台各类目资费标准》 (jdw-rule.jd.hk ruleId 950583665543483392,
+// revised 2026-09-24, effective 2026-10-01), checked twice on 2026-10-02.
+// The deposit is the brand flagship figure (品牌旗舰店保证金, quoted in USD) at
+// about 7.1 to the dollar: US$5,000 for most rows, US$500 for fresh, US$3,000 for
+// cookware, US$7,000 for accessories and computers, US$30,000 for the listed
+// overseas OTC medicines. Other store types pay a GMV ladder instead. Labels name
+// only subcategories that carry the rate shown (fresh gift boxes, other watches,
+// pet treats and tablets sit outside the rows). The standard and the deposit
+// rule list no annual or platform usage fee, so annual is 0; JD bills a flat
+// 0.9% transaction fee on each order instead.
 const categories: { value: string; label: string; deposit: string; fee: string; annual: string }[] = [
-  { value: 'fresh', label: 'Fresh food (生鲜)', deposit: '14200', fee: '4', annual: '7100' },
-  { value: 'food', label: 'Packaged food, grain, oil, snacks', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'tea', label: 'Tea and drink powders', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'alcohol', label: 'Alcohol', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'supplements', label: 'Health supplements', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'baby', label: 'Mother, baby and infant formula', deposit: '35500', fee: '3', annual: '7100' },
-  { value: 'skincare', label: 'Skincare', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'makeup', label: 'Makeup and fragrance', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'personal-care', label: 'Personal care', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'apparel', label: 'Apparel', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'footwear', label: 'Footwear', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'bags', label: 'Bags and luggage', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'jewellery', label: 'Fashion jewellery', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'watches', label: 'Watches (higher deposit tier)', deposit: '106500', fee: '5', annual: '7100' },
-  { value: '3c', label: '3C and electronic accessories', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'phones', label: 'Phones and computers (higher deposit tier)', deposit: '106500', fee: '3', annual: '7100' },
-  { value: 'home', label: 'Home, kitchen, kitchenware', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'appliances', label: 'Small appliances', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'sports', label: 'Sports and outdoor', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'pet', label: 'Pet food and supplies', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'pharma', label: 'Pharma (医药, top deposit tier)', deposit: '284000', fee: '5', annual: '7100' },
+  { value: 'fresh', label: 'Fresh food (生鲜)', deposit: '3550', fee: '2', annual: '0' },
+  { value: 'food', label: 'Packaged food, grain, oil, snacks', deposit: '35500', fee: '2', annual: '0' },
+  { value: 'tea', label: 'Drinks and drink powders (水饮冲调)', deposit: '35500', fee: '2', annual: '0' },
+  { value: 'alcohol', label: 'Wine (葡萄酒)', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'spirits', label: 'Spirits, beer and fruit wine', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'supplements', label: 'Health supplements', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'baby', label: 'Infant formula, feeding and baby care', deposit: '35500', fee: '2', annual: '0' },
+  { value: 'skincare', label: 'Skincare', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'makeup', label: 'Makeup and fragrance', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'personal-care', label: 'Personal care: shampoo, oral care, shaving', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'body-care', label: 'Body care, hair styling and wigs', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'apparel', label: 'Apparel', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'footwear', label: 'Footwear', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'bags', label: 'Bags and luggage', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'jewellery', label: 'Fashion jewellery', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'watches', label: 'Swiss watches', deposit: '35500', fee: '3', annual: '0' },
+  { value: '3c', label: 'Audio, camera and computer accessories', deposit: '49700', fee: '3', annual: '0' },
+  { value: 'phones', label: 'Phones', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'computers', label: 'Laptops and desktops', deposit: '49700', fee: '3', annual: '0' },
+  { value: 'home', label: 'Bedding and home textiles', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'kitchen', label: 'Cookware and kitchen tools (厨具)', deposit: '21300', fee: '4', annual: '0' },
+  { value: 'appliances', label: 'Small appliances', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'sports', label: 'Sports and outdoor', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'pet', label: 'Cat and dog food', deposit: '35500', fee: '2.5', annual: '0' },
+  { value: 'pharma', label: 'Overseas OTC medicines (海外医药)', deposit: '213000', fee: '5', annual: '0' },
   { value: 'custom', label: 'Custom (set deposit and commission by hand)', deposit: '', fee: '', annual: '' },
 ];
 
@@ -104,7 +113,7 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
   {
     title: 'Category',
     icon: gicon.platform,
-    note: 'Pick your product category. On JD Worldwide the deposit and the platform commission both move with the category, so this sets those two numbers below. The deposit is a tiered figure quoted in US dollars; the RMB shown is the entry tier. Your TP may quote something different; override by hand if so.',
+    note: 'Pick your product category. On JD Worldwide the deposit and the platform commission both move with the category, so this sets those two numbers below. The deposit is quoted in US dollars; the RMB shown is the brand flagship figure. Your TP may quote something different; override by hand if so.',
     fields: [
       {
         id: 'category',
@@ -129,10 +138,10 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
     icon: gicon.platform,
     fields: [
       { id: 'period', label: 'Engagement period', value: '12', kind: 'number', readonly: true, suffix: 'months', hint: 'Fixed. The model prices a full twelve-month run; every yearly figure follows this window.' },
-      { id: 'platformDeposit', label: 'JD Worldwide security deposit', value: '35500', kind: 'money', hint: 'Refundable, tiered by cumulative sales and quoted in US dollars. Entry tier is about US$5,000 for most categories, US$2,000 for fresh, more for high-value goods. Set by your category above.' },
-      { id: 'techFee', label: 'Platform commission (运营支持服务费)', value: '4', kind: 'percent', step: '0.1', hint: 'Taken on each sale, in a 2% to 6% band by category. Set by your category above.' },
+      { id: 'platformDeposit', label: 'JD Worldwide security deposit', value: '35500', kind: 'money', hint: 'Refundable and quoted in US dollars. A brand flagship pays US$5,000 in most categories, US$500 for fresh food, up to US$30,000 for overseas medicines. Other store types pay a separate scale set by monthly sales. Set by your category above.' },
+      { id: 'techFee', label: 'Platform commission (运营支持服务费)', value: '2', kind: 'percent', step: '0.1', hint: 'Taken on each sale, 2% to 6% for the categories above. Set by your category above.' },
       { id: 'paymentFee', label: 'Transaction fee (交易服务费)', value: '0.9', kind: 'percent', step: '0.1', hint: 'A flat 0.9% per order on JD Worldwide, across categories.' },
-      { id: 'annualFee', label: 'Platform usage fee (平台使用费)', value: '7100', kind: 'money', hint: 'About US$1,000 a year, flat. Some categories run a limited zero-fee trial, so confirm at onboarding.' },
+      { id: 'annualFee', label: 'Annual platform fee', value: '0', kind: 'money', hint: 'None. The current JD Worldwide fee standard lists no annual or usage fee. Enter a figure only if your contract adds one.' },
       { id: 'agentFee', label: 'Customs clearance agent, annual', value: '0', kind: 'money', hint: 'Optional. Many brands let the TP or the warehouse handle clearance, so leave it at zero unless you retain a separate 境内代理人.' },
       { id: 'trademark', label: 'CN trademark registration', value: '0', kind: 'money' },
       { id: 'brandSetup', label: 'Store setup and launch content', value: '25000', kind: 'money' },
@@ -215,13 +224,13 @@ const help: Record<string, string> = {
   cbecTaxPayer:
     'Who absorbs the cross-border VAT. In most flagship setups the consumer pays it on top of the shelf price at checkout, so it is not a cost to you and the model leaves it out. Switch to brand absorbs it and the calculator takes it straight off your line.',
   platformDeposit:
-    'A refundable security deposit JD Worldwide holds while your store is open, returned when you close in good standing. It is tiered and quoted in US dollars, stepping up with cumulative sales. The entry tier is about US$5,000 for most categories, US$2,000 for fresh, and more for high-value goods or pharma. The category picker sets the entry figure in RMB.',
+    'A refundable security deposit JD Worldwide holds while your store is open, returned when you close in good standing. It is quoted in US dollars. A brand flagship (品牌旗舰店) pays a fixed figure by category: US$5,000 in most, US$500 for fresh food, US$3,000 for cookware, US$7,000 for accessories and computers, US$30,000 for overseas medicines. Other store types pay a separate scale set by monthly sales. The category picker sets the flagship figure in RMB.',
   techFee:
-    'The platform commission (运营支持服务费) JD Worldwide takes on each sale, as a share of GMV. It runs in a 2 to 6 percent band by category. This is separate from the 0.9 percent transaction fee. The category picker sets it for you.',
+    'The platform commission (运营支持服务费) JD Worldwide takes on each sale, as a share of GMV. It runs from 2 to 6 percent across the categories in the picker. This is separate from the 0.9 percent transaction fee. The category picker sets it for you.',
   paymentFee:
     'The transaction service fee (交易服务费) on each order, a flat 0.9 percent on JD Worldwide, taken as a share of GMV.',
   annualFee:
-    'The yearly platform usage fee (平台使用费) JD Worldwide charges, whether you sell or not. It is about US$1,000, so the RMB default is seeded from the rate. Some categories run a limited zero-fee trial period, so confirm yours at onboarding.',
+    'A fixed yearly platform fee, owed whether you sell or not. The current JD Worldwide fee standard and deposit rules list none, so the default is zero. JD earns on each order instead, through the commission and the 0.9 percent transaction fee. Enter a figure only if your contract adds one.',
   agentFee:
     'An optional yearly fee for a mainland customs agent (境内代理人). On the bonded flagship model the TP or the warehouse often handles clearance, so many brands leave this at zero. Add a figure only if you retain a separate clearance agent.',
   trademark:
@@ -243,7 +252,7 @@ const help: Record<string, string> = {
   organicShare2:
     'The Year 2 share that arrives without ad spend or creator commission: store page, JD search, followers, repeat buyers. This is the number that should climb, and it is the main reason Year 2 runs cheaper than Year 1.',
   period:
-    'The model is built on a twelve-month engagement. The GMV target, the TP retainer, the platform usage fee and the co-fund all cover one full year, and Year 2 in the results shows the same twelve months without the one-time setup. It sits here so the assumption is explicit; it is not adjustable.',
+    'The model is built on a twelve-month engagement. The GMV target, the TP retainer, any platform annual fee and the co-fund all cover one full year, and Year 2 in the results shows the same twelve months without the one-time setup. It sits here so the assumption is explicit; it is not adjustable.',
   whDeposit:
     'A refundable deposit the bonded warehouse holds as working capital while your goods are stored there. You get it back on exit, so it is recoverable rather than sunk.',
   whTaxPrepay:
@@ -268,8 +277,8 @@ const notes = [
   'Setup is paid once but it is not all a Year 1 cost. The store build and the trademark are written off over the amortization period you set, so each year carries its share and the operating result is not crushed by a bill it will benefit from for years. The deposits and the tax prepayment are different: you get them back on exit, so they are working capital and never reach the profit and loss at all. That is why the cash column and the profit column disagree, and both are right.',
   'The model runs cross-border only, through the bonded warehouse (京东全球购). The warehouse deposit and the tax prepayment come back to you on exit, so the calculator counts them as money you get back, not money you spend.',
   'The TP retainer plus its commission on GMV is one of the largest lines, alongside paid media. Paid media is funded by you directly into the ad account, not billed through the TP. That split is deliberate: partners that try to front the ad spend tend to fall over.',
-  'JD Worldwide bills two separate lines on each sale: the platform commission (运营支持服务费), 2 to 6 percent by category, and a flat 0.9 percent transaction fee (交易服务费). Both are in the model. The annual platform usage fee is about US$1,000, seeded from the live rate.',
-  'The security deposit is tiered and quoted in US dollars, stepping up with cumulative sales. Most categories start near US$5,000, fresh food near US$2,000, high-value electronics and pharma higher. The category picker seeds the entry tier in RMB; it is refundable, so it sits apart from the profit math as working capital.',
+  'JD Worldwide bills two separate lines on each sale: the platform commission (运营支持服务费), 2 to 6 percent by category, and a flat 0.9 percent transaction fee (交易服务费). Both are in the model. Its current fee standard carries no annual fee, so that line starts at zero.',
+  'The security deposit is quoted in US dollars. A brand flagship pays US$5,000 in most categories, US$500 for fresh food and up to US$30,000 for overseas medicines; other store types pay a separate scale set by monthly sales. The category picker seeds the flagship figure in RMB; it is refundable, so it sits apart from the profit math as working capital.',
   'The cross-border VAT is 9.1 percent of sales for general goods, 13 percent VAT levied on 70 percent of the price. In most store setups the consumer carries it at checkout, so it is left out of your cost by default. Switch the payer to brand if you absorb it, and note that cosmetics, perfume and alcohol run higher.',
   'Year 1 usually runs at a loss at RMB 3.5M GMV. The table sets Year 1 against Year 2, when the one-time setup drops off, the channel mix switches to your Year 2 sliders and GMV steps up by your growth assumption. Breakeven GMV shows the scale you need for gross profit to cover the bill, and it often lands several times above a first-year target.',
 ];
@@ -280,7 +289,7 @@ const refreshIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 const calcSchema = webApplicationSchema({
   url: Astro.url.pathname,
   name: "JD Worldwide setup and run cost calculator",
-  description: "Estimate the first-year cost of a JD Worldwide store: tiered deposit and commission by category, the 0.9% transaction fee, TP retainer and commission, bonded fulfillment, shipping and the cross-border VAT, in RMB and USD.",
+  description: "Estimate the first-year cost of a JD Worldwide store: deposit and commission by category, the 0.9% transaction fee, TP retainer and commission, bonded fulfillment, shipping and the cross-border VAT, in RMB and USD.",
   inLanguage: 'en',
   breadcrumb: [
     { name: "Home", url: "/" },
@@ -312,7 +321,7 @@ const calcSchema = webApplicationSchema({
       <h1 class="tool-hero__title">What a JD Worldwide store <em>really</em> costs.</h1>
       <p class="tool-hero__lead">
         Model what a JD Worldwide store costs to run through a partner (TP), on the cross-border
-        bonded model (京东全球购), across your first two years. The tiered deposit and the
+        bonded model (京东全球购), across your first two years. The deposit and the
         commission move with your category.
       </p>
       <div class="tool-hero__meta">

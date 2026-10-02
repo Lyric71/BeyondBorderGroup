@@ -1,13 +1,18 @@
 #!/bin/bash
 # Pre-commit steps:
-#   1. Auto-optimize any staged raster images under public/Images/.
-#   2. Rebuild + snapshot the sitemap when routing-relevant files change.
+#   1. Refuse the commit when a staged content, draft, ledger or brief file
+#      carries a TODO, FIXME or TBD marker (scripts/check-no-todo.mjs). A
+#      publishing run closes every item it finds; see editorial/CLAUDE.md.
+#   2. Auto-optimize any staged raster images under public/Images/.
+#   3. Rebuild + snapshot the sitemap when routing-relevant files change.
 # Installed by `npm run hooks:install`. See the scripts/pre-commit-*.mjs files.
 
 set -e
 
 ROOT="$(git rev-parse --show-toplevel)"
 cd "$ROOT"
+
+node scripts/check-no-todo.mjs --staged
 
 node scripts/pre-commit-optimize-images.mjs
 

@@ -60,34 +60,43 @@ type Field = {
 };
 
 // JD Worldwide (京东全球购) categories. Each one sets the security deposit and the
-// platform commission (运营支持服务费, 2%-6% band) that move with the product
-// category. JD quotes the deposit in a TIERED USD ladder that steps up with
-// cumulative sales; the RMB figures here seed the entry tier at about 7.1 to the
-// dollar (US$5,000 for most categories, US$2,000 for fresh, US$15,000 for
-// high-value electronics, US$40,000 for pharma). The annual platform usage fee
-// is a flat US$1,000. Directional 2025 bands; confirm the exact rate at onboarding.
+// platform commission (运营支持服务费) that move with the product category, from
+// 《京东全球购开放平台各类目资费标准》 (jdw-rule.jd.hk ruleId 950583665543483392,
+// revised 2026-09-24, effective 2026-10-01), checked twice on 2026-10-02.
+// The deposit is the brand flagship figure (品牌旗舰店保证金, quoted in USD) at
+// about 7.1 to the dollar: US$5,000 for most rows, US$500 for fresh, US$3,000 for
+// cookware, US$7,000 for accessories and computers, US$30,000 for the listed
+// overseas OTC medicines. Other store types pay a GMV ladder instead. Labels name
+// only subcategories that carry the rate shown (fresh gift boxes, other watches,
+// pet treats and tablets sit outside the rows). The standard and the deposit
+// rule list no annual or platform usage fee, so annual is 0; JD bills a flat
+// 0.9% transaction fee on each order instead.
 const categories: { value: string; label: string; deposit: string; fee: string; annual: string }[] = [
-  { value: 'fresh', label: 'Frischeprodukte (生鲜)', deposit: '14200', fee: '4', annual: '7100' },
-  { value: 'food', label: 'Verpackte Lebensmittel, Getreide, Öl, Snacks', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'tea', label: 'Tee und Getränkepulver', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'alcohol', label: 'Alkoholische Getränke', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'supplements', label: 'Nahrungsergänzungsmittel', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'baby', label: 'Mutter, Baby und Säuglingsnahrung', deposit: '35500', fee: '3', annual: '7100' },
-  { value: 'skincare', label: 'Hautpflege', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'makeup', label: 'Make-up und Düfte', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'personal-care', label: 'Körperpflege', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'apparel', label: 'Bekleidung', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'footwear', label: 'Schuhe', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'bags', label: 'Taschen und Koffer', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'jewellery', label: 'Modeschmuck', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'watches', label: 'Uhren (höhere Kautionsstufe)', deposit: '106500', fee: '5', annual: '7100' },
-  { value: '3c', label: '3C und Elektronikzubehör', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'phones', label: 'Smartphones und Computer (höhere Kautionsstufe)', deposit: '106500', fee: '3', annual: '7100' },
-  { value: 'home', label: 'Haushalt, Küche, Küchenbedarf', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'appliances', label: 'Kleingeräte', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'sports', label: 'Sport und Outdoor', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'pet', label: 'Tiernahrung und Heimtierbedarf', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'pharma', label: 'Pharma (医药, höchste Kautionsstufe)', deposit: '284000', fee: '5', annual: '7100' },
+  { value: 'fresh', label: 'Frischeprodukte (生鲜)', deposit: '3550', fee: '2', annual: '0' },
+  { value: 'food', label: 'Verpackte Lebensmittel, Getreide, Öl, Snacks', deposit: '35500', fee: '2', annual: '0' },
+  { value: 'tea', label: 'Getränke und Getränkepulver (水饮冲调)', deposit: '35500', fee: '2', annual: '0' },
+  { value: 'alcohol', label: 'Wein (葡萄酒)', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'spirits', label: 'Spirituosen, Bier und Fruchtwein', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'supplements', label: 'Nahrungsergänzungsmittel', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'baby', label: 'Säuglingsnahrung, Fütterung und Babypflege', deposit: '35500', fee: '2', annual: '0' },
+  { value: 'skincare', label: 'Hautpflege', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'makeup', label: 'Make-up und Düfte', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'personal-care', label: 'Shampoo, Mundpflege und Rasur', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'body-care', label: 'Körperpflege, Haarstyling und Perücken', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'apparel', label: 'Bekleidung', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'footwear', label: 'Schuhe', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'bags', label: 'Taschen und Koffer', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'jewellery', label: 'Modeschmuck', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'watches', label: 'Schweizer Uhren', deposit: '35500', fee: '3', annual: '0' },
+  { value: '3c', label: 'Audio-, Kamera- und Computerzubehör', deposit: '49700', fee: '3', annual: '0' },
+  { value: 'phones', label: 'Smartphones', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'computers', label: 'Notebooks und Desktop-PCs', deposit: '49700', fee: '3', annual: '0' },
+  { value: 'home', label: 'Bettwaren und Heimtextilien', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'kitchen', label: 'Kochgeschirr und Küchenhelfer (厨具)', deposit: '21300', fee: '4', annual: '0' },
+  { value: 'appliances', label: 'Kleingeräte', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'sports', label: 'Sport und Outdoor', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'pet', label: 'Hunde- und Katzenfutter', deposit: '35500', fee: '2.5', annual: '0' },
+  { value: 'pharma', label: 'Rezeptfreie Arzneimittel aus dem Ausland (海外医药)', deposit: '213000', fee: '5', annual: '0' },
   { value: 'custom', label: 'Individuell (Kaution und Provision selbst eintragen)', deposit: '', fee: '', annual: '' },
 ];
 
@@ -104,7 +113,7 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
   {
     title: 'Kategorie',
     icon: gicon.platform,
-    note: 'Wählen Sie Ihre Produktkategorie. Auf JD Worldwide hängen sowohl die Kaution als auch die Plattformprovision an der Kategorie, beide Felder unten werden also von hier aus gesetzt. Die Kaution ist gestaffelt und wird in US-Dollar ausgewiesen; der RMB-Betrag zeigt die Einstiegsstufe. Ihr TP nennt womöglich andere Zahlen. Dann tragen Sie sie einfach von Hand ein.',
+    note: 'Wählen Sie Ihre Produktkategorie. Auf JD Worldwide hängen sowohl die Kaution als auch die Plattformprovision an der Kategorie, beide Felder unten werden also von hier aus gesetzt. Die Kaution wird in US-Dollar ausgewiesen; der RMB-Betrag gilt für einen Marken-Flagship-Store. Ihr TP nennt womöglich andere Zahlen. Dann tragen Sie sie einfach von Hand ein.',
     fields: [
       {
         id: 'category',
@@ -129,10 +138,10 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
     icon: gicon.platform,
     fields: [
       { id: 'period', label: 'Laufzeit', value: '12', kind: 'number', readonly: true, suffix: 'Monate', hint: 'Fest eingestellt. Das Modell rechnet zwölf volle Monate durch, alle Jahreswerte beziehen sich auf dieses Fenster.' },
-      { id: 'platformDeposit', label: 'Kaution bei JD Worldwide', value: '35500', kind: 'money', hint: 'Rückzahlbar, gestaffelt nach kumuliertem Umsatz und in US-Dollar ausgewiesen. Die Einstiegsstufe liegt bei rund 5.000 US-Dollar für die meisten Kategorien, bei 2.000 US-Dollar für Frischeprodukte und höher für hochwertige Ware. Wird von Ihrer Kategorie oben gesetzt.' },
-      { id: 'techFee', label: 'Plattformprovision (运营支持服务费)', value: '4', kind: 'percent', step: '0.1', hint: 'Fällt auf jeden Verkauf an, je nach Kategorie zwischen 2 % und 6 %. Wird von Ihrer Kategorie oben gesetzt.' },
+      { id: 'platformDeposit', label: 'Kaution bei JD Worldwide', value: '35500', kind: 'money', hint: 'Rückzahlbar und in US-Dollar ausgewiesen. Ein Marken-Flagship hinterlegt in den meisten Kategorien rund 4.500 Euro, für Frischeprodukte rund 450 Euro und für importierte Arzneimittel bis zu 27.000 Euro. Für andere Shoptypen gilt eine eigene Staffel nach Monatsumsatz. Wird von Ihrer Kategorie oben gesetzt.' },
+      { id: 'techFee', label: 'Plattformprovision (运营支持服务费)', value: '2', kind: 'percent', step: '0.1', hint: 'Fällt auf jeden Verkauf an, für die Kategorien oben zwischen 2 % und 6 %. Wird von Ihrer Kategorie oben gesetzt.' },
       { id: 'paymentFee', label: 'Transaktionsgebühr (交易服务费)', value: '0.9', kind: 'percent', step: '0.1', hint: 'Auf JD Worldwide pauschal 0,9 % je Bestellung, quer über alle Kategorien.' },
-      { id: 'annualFee', label: 'Plattformnutzungsgebühr (平台使用费)', value: '7100', kind: 'money', hint: 'Pauschal rund 1.000 US-Dollar im Jahr. Einzelne Kategorien bekommen befristet einen Erlass, klären Sie das beim Onboarding.' },
+      { id: 'annualFee', label: 'Jährliche Plattformgebühr', value: '0', kind: 'money', hint: 'Keine. Die geltende Gebührenordnung von JD Worldwide sieht weder eine Jahres- noch eine Nutzungsgebühr vor. Tragen Sie nur dann einen Betrag ein, wenn Ihr Vertrag einen vorsieht.' },
       { id: 'agentFee', label: 'Zollagent, jährlich', value: '0', kind: 'money', hint: 'Optional. Viele Marken lassen die Zollabwicklung vom TP oder vom Lager erledigen. Setzen Sie hier nur dann einen Betrag ein, wenn Sie einen eigenen 境内代理人 mandatieren.' },
       { id: 'trademark', label: 'Markenanmeldung in China', value: '0', kind: 'money' },
       { id: 'brandSetup', label: 'Store-Aufbau und Launch-Content', value: '25000', kind: 'money' },
@@ -215,13 +224,13 @@ const help: Record<string, string> = {
   cbecTaxPayer:
     'Wer die Cross-Border-Steuer trägt. In den meisten Store-Setups zahlt der Kunde sie an der Kasse oben auf den Preis, dann ist sie für Sie keine Kosten und bleibt im Modell außen vor. Stellen Sie auf „Die Marke übernimmt sie“ um, zieht der Rechner sie direkt von Ihrer Rechnung ab.',
   platformDeposit:
-    'Eine rückzahlbare Kaution, die JD Worldwide hält, solange Ihr Store läuft, und bei geordnetem Ausstieg erstattet. Sie ist gestaffelt, wird in US-Dollar ausgewiesen und steigt mit dem kumulierten Umsatz. Die Einstiegsstufe liegt bei rund 5.000 US-Dollar für die meisten Kategorien, bei 2.000 US-Dollar für Frischeprodukte, höher für hochwertige Ware oder Pharma. Die Kategorieauswahl setzt den Einstiegsbetrag in RMB.',
+    'Eine rückzahlbare Kaution, die JD Worldwide hält, solange Ihr Store läuft, und bei geordnetem Ausstieg erstattet. Sie wird in US-Dollar ausgewiesen. Ein Marken-Flagship (品牌旗舰店) zahlt je nach Kategorie einen festen Betrag: rund 4.500 Euro in den meisten, 450 Euro für Frischeprodukte, 2.700 Euro für Kochgeschirr, 6.300 Euro für Zubehör und Computer, 27.000 Euro für importierte Arzneimittel. Für andere Shoptypen gilt eine eigene Staffel nach Monatsumsatz. Die Kategorieauswahl setzt den Flagship-Betrag in RMB.',
   techFee:
-    'Die Plattformprovision (运营支持服务费), die JD Worldwide auf jeden Verkauf erhebt, als Anteil am GMV. Je nach Kategorie liegt sie zwischen 2 und 6 Prozent. Sie ist unabhängig von der Transaktionsgebühr von 0,9 Prozent. Die Kategorieauswahl setzt den Wert.',
+    'Die Plattformprovision (运营支持服务费), die JD Worldwide auf jeden Verkauf erhebt, als Anteil am GMV. Für die Kategorien in der Auswahl liegt sie zwischen 2 und 6 Prozent. Sie ist unabhängig von der Transaktionsgebühr von 0,9 Prozent. Die Kategorieauswahl setzt den Wert.',
   paymentFee:
     'Die Transaktionsgebühr (交易服务费) auf jede Bestellung, auf JD Worldwide pauschal 0,9 Prozent, berechnet als Anteil am GMV.',
   annualFee:
-    'Die jährliche Plattformnutzungsgebühr (平台使用费), die JD Worldwide erhebt, ob Sie verkaufen oder nicht. Sie liegt bei rund 1.000 US-Dollar, der RMB-Standardwert kommt entsprechend aus dem Kurs. Einzelne Kategorien bekommen befristet einen Erlass, klären Sie Ihren Fall beim Onboarding.',
+    'Eine feste Jahresgebühr, fällig unabhängig vom Umsatz. Gebührenordnung und Kautionsregeln von JD Worldwide sehen derzeit keine vor, der Standardwert ist deshalb null. JD verdient stattdessen an jeder Bestellung, über die Provision und die Transaktionsgebühr von 0,9 Prozent. Tragen Sie nur dann einen Betrag ein, wenn Ihr Vertrag einen vorsieht.',
   agentFee:
     'Eine optionale Jahresgebühr für einen Zollagenten auf dem Festland (境内代理人). Im Bonded-Modell übernimmt oft der TP oder das Lager die Abwicklung, deshalb lassen viele Marken den Wert auf null. Tragen Sie nur dann etwas ein, wenn Sie einen eigenen Agenten mandatieren.',
   trademark:
@@ -243,7 +252,7 @@ const help: Record<string, string> = {
   organicShare2:
     'Der Anteil in Jahr 2, der ohne Media-Budget und ohne Creator-Provision hereinkommt: Storeseite, Suche auf JD, Follower, Wiederkäufer. Dieser Wert sollte steigen, und er ist der Hauptgrund, warum Jahr 2 günstiger läuft als Jahr 1.',
   period:
-    'Das Modell rechnet mit einer Laufzeit von zwölf Monaten. GMV-Ziel, Retainer des TP, Plattformnutzungsgebühr und Cofunding decken jeweils ein volles Jahr ab, und Jahr 2 in den Ergebnissen zeigt dieselben zwölf Monate ohne den einmaligen Aufbau. Der Wert steht hier, damit die Annahme sichtbar ist. Ändern lässt er sich nicht.',
+    'Das Modell rechnet mit einer Laufzeit von zwölf Monaten. GMV-Ziel, Retainer des TP, eine etwaige Plattformgebühr und Cofunding decken jeweils ein volles Jahr ab, und Jahr 2 in den Ergebnissen zeigt dieselben zwölf Monate ohne den einmaligen Aufbau. Der Wert steht hier, damit die Annahme sichtbar ist. Ändern lässt er sich nicht.',
   whDeposit:
     'Eine rückzahlbare Kaution, die das Bonded Warehouse als Sicherheit hält, solange Ihre Ware dort liegt. Sie bekommen sie beim Ausstieg zurück, sie ist also gebundenes, kein verlorenes Geld.',
   whTaxPrepay:
@@ -268,8 +277,8 @@ const notes = [
   'Der Aufbau wird einmal bezahlt, ist aber nicht in voller Höhe eine Belastung für Jahr 1. Store-Aufbau und Markenanmeldung werden über die von Ihnen gesetzte Abschreibungsdauer verteilt. Jedes Jahr trägt seinen Anteil, und das Betriebsergebnis wird nicht von einer Rechnung erdrückt, von der es jahrelang profitiert. Bei Kautionen und Steuervorauszahlung liegt der Fall anders: Sie kommen beim Ausstieg zurück, sind also gebundenes Kapital und erreichen die GuV nie. Deshalb weichen die Cash-Spalte und die Ergebnisspalte voneinander ab, und beide haben recht.',
   'Das Modell rechnet ausschließlich Cross-Border, über das Bonded Warehouse (京东全球购). Die Kaution des Lagers und die Steuervorauszahlung fließen beim Ausstieg an Sie zurück, deshalb führt der Rechner sie als Geld, das wiederkommt, nicht als Ausgabe.',
   'Der Retainer des TP samt seiner Provision auf den GMV ist neben Paid Media einer der größten Posten. Das Media-Budget zahlen Sie direkt in Ihr Werbekonto ein, es läuft nicht über die Rechnung des TP. Diese Trennung ist Absicht: Partner, die das Media-Budget vorstrecken wollen, geraten schnell ins Straucheln.',
-  'JD Worldwide berechnet auf jeden Verkauf zwei getrennte Posten: die Plattformprovision (运营支持服务费) mit 2 bis 6 Prozent je nach Kategorie und eine pauschale Transaktionsgebühr von 0,9 Prozent (交易服务费). Beide stecken im Modell. Die jährliche Plattformnutzungsgebühr liegt bei rund 1.000 US-Dollar und wird aus dem tagesaktuellen Kurs abgeleitet.',
-  'Die Kaution ist gestaffelt, wird in US-Dollar ausgewiesen und steigt mit dem kumulierten Umsatz. Die meisten Kategorien starten bei etwa 5.000 US-Dollar, Frischeprodukte bei rund 2.000 US-Dollar, hochwertige Elektronik und Pharma deutlich darüber. Die Kategorieauswahl setzt die Einstiegsstufe in RMB. Da die Kaution zurückfließt, steht sie als gebundenes Kapital außerhalb der Ergebnisrechnung.',
+  'JD Worldwide berechnet auf jeden Verkauf zwei getrennte Posten: die Plattformprovision (运营支持服务费) mit 2 bis 6 Prozent je nach Kategorie und eine pauschale Transaktionsgebühr von 0,9 Prozent (交易服务费). Beide stecken im Modell. Eine Jahresgebühr sieht die geltende Gebührenordnung nicht vor, die Zeile startet daher bei null.',
+  'Die Kaution wird in US-Dollar ausgewiesen. Ein Marken-Flagship hinterlegt in den meisten Kategorien rund 4.500 Euro, für Frischeprodukte rund 450 Euro und für importierte Arzneimittel bis zu 27.000 Euro; für andere Shoptypen gilt eine eigene Staffel nach Monatsumsatz. Die Kategorieauswahl setzt den Flagship-Betrag in RMB. Da die Kaution zurückfließt, steht sie als gebundenes Kapital außerhalb der Ergebnisrechnung.',
   'Die Cross-Border-Steuer beträgt 9,1 Prozent des Umsatzes für normale Waren: 13 Prozent Mehrwertsteuer auf 70 Prozent des Preises. In den meisten Store-Setups zahlt der Kunde sie an der Kasse, deshalb bleibt sie standardmäßig außerhalb Ihrer Kosten. Stellen Sie den Träger auf die Marke um, wenn Sie sie übernehmen. Und beachten Sie: Kosmetik, Parfum und Alkohol liegen höher.',
   'Bei 3,5 Mio. RMB GMV schreibt Jahr 1 in aller Regel rote Zahlen. Die Tabelle stellt Jahr 1 gegen Jahr 2, wenn der einmalige Aufbau wegfällt, der Kanalmix auf Ihre Regler für Jahr 2 umschaltet und der GMV um Ihre Wachstumsannahme steigt. Der Break-even-GMV zeigt, welche Größenordnung nötig ist, damit der Rohertrag die Rechnung deckt. Häufig liegt er um ein Mehrfaches über dem Ziel des ersten Jahres.',
 ];
@@ -313,7 +322,7 @@ const calcSchema = webApplicationSchema({
       <p class="tool-hero__lead">
         Was kostet ein Store auf JD Worldwide, wenn ihn ein Partner (TP) im
         Cross-Border-Bonded-Modell (京东全球购) betreibt? Rechnen Sie die ersten beiden Jahre durch.
-        Kaution und Provision sind gestaffelt und hängen an Ihrer Kategorie.
+        Kaution und Provision hängen an Ihrer Kategorie.
       </p>
       <div class="tool-hero__meta">
         <div class="tool-hero__meta-item">

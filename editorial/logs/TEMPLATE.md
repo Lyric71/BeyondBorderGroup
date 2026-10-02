@@ -27,8 +27,8 @@
 
 - Figures reused from the ledger:
 - Claims cut because they could not be sourced:
-- The proprietary number (from Compass, the calculators or stores under
-  management), with the label used in the copy:
+- The proprietary number (from Compass, the calculators or a case page),
+  with the label used in the copy, or "none, settled fallback":
 
 ## Iterations (createarticle)
 Tracker as printed, with one line per iteration saying what changed.
@@ -47,11 +47,20 @@ the house ceiling afterward.
 ## Sources
 - New figures added to the ledger:
 
-## Flags
-- TODO: client sign-off items:
+## Found and closed in this run
+Every item below is closed before the run ends (CLAUDE.md, "No TODO leaves a
+run"). This section records what was done; it is never a list for a person.
+- Client figures used, and the /work page each one is on (anything not on a
+  case page was cut):
 - Territory hand-offs (TheRedScroll / ChinaWebFoundry) and the anchor text used:
-- Conflicts between the brief and the live site:
-- Internal link targets that do not exist yet:
+- Brief or master plan corrections made (what was wrong, what the master plan
+  now says, briefs regenerated):
+- Published pages fixed because this piece contradicted them (file, locale,
+  updatedDate moved):
+- Missing link targets and how they were resolved (created, nearest page,
+  master plan corrected):
+- Future dates registered in sources/signal-watch-list.md:
+- `node scripts/check-no-todo.mjs`: ok
 
 ## SEO counts (after the quality pass)
 | Field | Chars or words | Ceiling | Pass |

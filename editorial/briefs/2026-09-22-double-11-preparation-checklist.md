@@ -6,17 +6,17 @@ weekday: Tue
 slot: A
 slot_name: Anchor
 content_type: Anchor + Asset
-title: "Double 11 2026: the 60-day operator checklist"
+title: "Double 11 2026: the 50-day operator checklist"
 slug: double-11-preparation-checklist
 primary_query: "double 11 preparation checklist"
 difficulty: SEAS
 word_count: "1,600 to 2,000, plus the checklist asset"
-asset: "Double 11 2026: the 60-day operator checklist"
+asset: "Double 11 2026: the 50-day operator checklist"
 asset_format: "Printable checklist, owner per line"
 status: not_started
 ---
 
-# BRIEF 03A: Double 11 2026: the 60-day operator checklist
+# BRIEF 03A: Double 11 2026: the 50-day operator checklist
 
 Run with the createarticle skill. Read `../CLAUDE.md` and `../SPEC.md` first.
 They override any conflicting rule inside the skill. The standing preamble in
@@ -35,7 +35,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 | Field | Value |
 |---|---|
-| Working H1 | Double 11 2026: the 60-day operator checklist |
+| Working H1 | Double 11 2026: the 50-day operator checklist |
 | Slug | `/insights/double-11-preparation-checklist/` |
 | Output file | `output/double-11-preparation-checklist.md` |
 | Primary query | `double 11 preparation checklist` |
@@ -46,21 +46,21 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 ## The brief
 
-**Title:** Double 11 2026: the 60-day operator checklist
+**Title:** Double 11 2026: the 50-day operator checklist
 **Query:** double 11 preparation checklist · **Difficulty:** SEASONAL
 **Word count:** 1,600 to 2,000, plus the checklist asset
 
 **The answer.** What has to be locked, and by when, counting back from 11 November.
 
-**The table it must carry.** The checklist itself: 60 days out, 45, 30, 21, 14, 7, and the day. Each row carries the task, the owner role, and what breaks if it slips.
+**The table it must carry.** The checklist itself: 50 days out, 40, 30, 21, 14, 7, and the day. Each row carries the task, the owner role, and what breaks if it slips.
 
-**The proprietary number.** The most common slip from stores under management, with how many days it typically costs. One line, sourced.
+**The proprietary number.** The most common slip from stores under management, with how many days it typically costs, when it is on file; otherwise the settled fallback (the Tmall Global calculator's bonded cash floor and return drag carried the published piece).
 
 **Asset.** The same checklist as a printable page in `/guides`, one item per line, checkboxes, no marketing copy.
 
 **Internal links.** `/grow-in-china/campaigns`, `/grow-in-china/cross-border-ecommerce`, `/tools/tmall-global-setup-and-run`
 **CTA.** Talk to us, dated: this is the one week of the year where urgency is real.
-**Do not.** Publish after 12 September. A 60-day checklist published at 45 days is worthless.
+**Publish date.** September 22, 2026 (decided September 4, 2026), so the countdown starts 50 days out and the copy says so. Never relabel a shorter countdown as 60 days.
 
 ## Slot spec
 
@@ -71,6 +71,13 @@ Every Anchor must carry:
 2. The answer inside the first 60 words.
 3. One real HTML table with real figures, in a scrollable container.
 4. At least one number only this agency can publish, labelled as such.
+   A brief that asks for a figure "from stores under management" or "from
+   Compass" means that figure only when it is on file in
+   sources/verified-sources.md or sources/compass-stats.md. When it is
+   not, the settled fallback applies: TheChinaPath calculator data, then a
+   published case page; if neither fits, the piece runs without one.
+   Never a placeholder marker, never a request for the figure in the log
+   or the email.
 5. A named human byline, published date and updated date.
 6. Three to five internal links, at least one to a service page and one
    to a calculator or Compass.

@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** The control (traceability code, channel clause, per-breach penalty, audit right, platform complaint), what it does, how the case used it.
 
-**The proprietary number.** Compass: share of distributors on file with a written price and channel policy. Fallback: log the gap.
+**The proprietary number.** Compass: share of distributors on file with a written price and channel policy. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. The case (Shanghai Fengxian court)

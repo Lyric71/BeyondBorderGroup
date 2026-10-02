@@ -296,7 +296,7 @@ function briefFile({ id, date, week, weekday, slotName, slot, section, title, sl
     variant ? `| Ledger variant | ${variant} |` : null,
     proof ? `| Proof | ${proof} |` : null,
     extra && extra.type === 'Asset' ? `| Asset | \`output/guides/${slug}.md\`, publishes to \`/guides/${slug}/\` (${extra.format}) |` : null,
-    extra && extra.type === 'Report' ? `| Report | \`output/reports/${slug}.md\`, gated PDF, assembled by a person (${extra.format}) |` : null,
+    extra && extra.type === 'Report' ? `| Report | \`output/reports/${slug}.md\`, drafted in the same run; publishes as a printable page at \`/guides/${slug}/\` with a request CTA, because the site has no gated download (editorial/CLAUDE.md, settled fallback) |` : null,
   ].filter(Boolean).join('\n');
 
   let template = '';

@@ -61,30 +61,36 @@ type Field = {
 
 // Tmall Global (天猫国际) categories. Each one sets three numbers that move with
 // the product category: the security deposit (保证金), the platform commission
-// (技术服务费, capped at 5%) and the annual software service fee (软件服务年费,
-// 30k or 60k). Directional 2025 bands from the published 招商 standards; the
-// exact rate is confirmed at onboarding. A TM trademark or a 专营店 raises the
-// deposit above the R-flagship 50k baseline shown here.
+// (技术服务费) and the annual technical service fee (技术服务年费, 30k or 60k).
+// Commission and annual fee follow 《天猫国际各类目年费、技术服务费率》
+// (rule.tmall.hk ruleId 11005909, adjustment effective 2026-09-09), checked
+// twice on 2026-10-02. Labels name only subcategories that carry the rate shown:
+// grain (米/面粉/杂粮) is 1%, non-Swiss watches 5%, pet food and treats 2.5%,
+// personal-care appliances 5%, belts and hats 30k, so those sit outside the rows.
+// The table has no 2.5% personal care line; hair care (美发护发/假发) is 4% / 30k.
+// The 2026-27 new-store incentives (ruleId 20010439, 20010440) can cut the annual
+// fee for a first-year store and are not modelled. A TM trademark or a 专营店
+// raises the deposit above the R-flagship 50k baseline shown here.
 const categories: { value: string; label: string; deposit: string; fee: string; annual: string }[] = [
-  { value: 'food', label: 'Verpackte Lebensmittel, Getreide, Öl, Snacks', deposit: '50000', fee: '2', annual: '30000' },
+  { value: 'food', label: 'Verpackte Lebensmittel, Öl, Snacks', deposit: '50000', fee: '2', annual: '30000' },
   { value: 'tea', label: 'Tee und Getränkepulver', deposit: '50000', fee: '2', annual: '30000' },
   { value: 'alcohol', label: 'Alkoholische Getränke', deposit: '50000', fee: '2', annual: '30000' },
   { value: 'supplements', label: 'Nahrungsergänzungsmittel (Sonderkategorie)', deposit: '300000', fee: '3', annual: '30000' },
-  { value: 'baby', label: 'Mutter, Baby und Säuglingsnahrung', deposit: '50000', fee: '2', annual: '30000' },
+  { value: 'baby', label: 'Säuglingsnahrung, Windeln und Babypflege', deposit: '50000', fee: '2', annual: '30000' },
   { value: 'skincare', label: 'Hautpflege', deposit: '50000', fee: '4', annual: '30000' },
   { value: 'makeup', label: 'Make-up und Duft', deposit: '50000', fee: '4', annual: '30000' },
-  { value: 'personal-care', label: 'Körperpflege, Wasch- und Reinigungsmittel', deposit: '50000', fee: '2.5', annual: '60000' },
+  { value: 'personal-care', label: 'Haarpflege und Perücken', deposit: '50000', fee: '4', annual: '30000' },
   { value: 'apparel', label: 'Bekleidung', deposit: '50000', fee: '5', annual: '60000' },
   { value: 'footwear', label: 'Schuhe', deposit: '50000', fee: '5', annual: '60000' },
   { value: 'bags', label: 'Taschen und Koffer', deposit: '50000', fee: '5', annual: '60000' },
-  { value: 'jewellery', label: 'Modeschmuck und Accessoires', deposit: '50000', fee: '5', annual: '60000' },
-  { value: 'watches', label: 'Uhren', deposit: '50000', fee: '2', annual: '60000' },
+  { value: 'jewellery', label: 'Modeschmuck', deposit: '50000', fee: '5', annual: '60000' },
+  { value: 'watches', label: 'Schweizer Uhren', deposit: '50000', fee: '2', annual: '60000' },
   { value: '3c', label: '3C und Elektronikzubehör', deposit: '50000', fee: '2', annual: '30000' },
   { value: 'phones', label: 'Smartphones, Notebooks, Tablets', deposit: '50000', fee: '2', annual: '30000' },
-  { value: 'home', label: 'Haushalt, Bettwaren, Küchenartikel', deposit: '50000', fee: '5', annual: '30000' },
-  { value: 'appliances', label: 'Kleingeräte', deposit: '50000', fee: '2', annual: '30000' },
+  { value: 'home', label: 'Haushalt, Bettwaren, Küchenartikel', deposit: '50000', fee: '5', annual: '60000' },
+  { value: 'appliances', label: 'Küchen- und Haushaltsgeräte', deposit: '50000', fee: '2', annual: '30000' },
   { value: 'sports', label: 'Sport und Outdoor', deposit: '50000', fee: '5', annual: '60000' },
-  { value: 'pet', label: 'Tiernahrung und Heimtierbedarf', deposit: '50000', fee: '5', annual: '30000' },
+  { value: 'pet', label: 'Heimtierbedarf ohne Futter', deposit: '50000', fee: '5', annual: '30000' },
   { value: 'custom', label: 'Individuell (Kaution, Provision und Jahresgebühr selbst eintragen)', deposit: '', fee: '', annual: '' },
 ];
 

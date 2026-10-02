@@ -99,8 +99,10 @@ Do not write a sentence of body copy until this step is logged.
 4. **Find the proprietary number.** Every Anchor and Ledger carries at least
    one figure only this agency can publish, labelled as such. Check, in
    order: the ledger's "Proprietary figures" section, the calculators'
-   category data in the repo, the published case pages. Never invent one;
-   leave `TODO: proprietary number` if none fits.
+   category data in the repo, the published case pages. Never invent one.
+   If none fits, the piece ships without one under the settled fallback
+   (editorial/CLAUDE.md, "The proprietary number"). Never leave a TODO,
+   FIXME or TBD marker anywhere in the draft, comment blocks included.
 5. **Write the research note before drafting.** List each claim with its
    Chinese source, the English gloss, the date, the URL and the result of
    check 1. This note goes into the run log. Figures without a passing

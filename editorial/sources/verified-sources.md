@@ -62,6 +62,7 @@ and Ledger needs one.
 
 
 ### Footwear category fee data and the cash floor it produces
+- Superseded (2026-10-02) for the JD Worldwide figures: see "JD Worldwide category fee standard, 2026-09-24 revision" and "JD Worldwide charges no annual or platform usage fee" (Calculator fee audit, October 2, 2026). The Tmall Global and Douyin figures here are unchanged.
 - Value: Tmall Global deposit 50,000 RMB / annual fee 60,000 RMB / commission 5%; JD Worldwide 35,500 RMB (US$5,000 entry rung) / 7,100 RMB (US$1,000) / 5%; Douyin cross-border 100,000 RMB / no annual fee / 5%. Cash in before the first sale: 110,000 / 42,600 / 100,000 RMB. Cost per kept order at a 600 RMB basket: 53 RMB at 5% returns, 69 RMB at 30%, 92 RMB at 50%.
 - As of: September 2026
 - Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, jd-worldwide-setup-and-run.astro, douyin-cost-calculator.astro)
@@ -380,6 +381,7 @@ and Ledger needs one.
 ## Facial skincare cost research, September 16, 2026
 
 ### Facial skincare category fee data and the cash floor it produces
+- Superseded (2026-10-02) for the JD Worldwide figures: see "JD Worldwide category fee standard, 2026-09-24 revision" and "JD Worldwide charges no annual or platform usage fee" (Calculator fee audit, October 2, 2026). The Tmall Global and Douyin figures here are unchanged.
 - Value: Tmall Global deposit 50,000 RMB / annual fee 30,000 RMB / commission 4%; JD Worldwide 35,500 RMB (US$5,000 entry rung) / 7,100 RMB (US$1,000) / 5% plus a flat 0.9% transaction fee; Douyin cross-border 100,000 RMB / no annual fee / 5%. Cash in before the first sale: 80,000 / 42,600 / 100,000 RMB. Cost per kept order at a 5% return rate: 31 RMB on a 280 RMB 200ml toner, 51 RMB on a 680 RMB 30ml serum.
 - As of: September 2026
 - Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, jd-worldwide-setup-and-run.astro, douyin-cost-calculator.astro)
@@ -391,6 +393,7 @@ and Ledger needs one.
 - Superseded: 2026-09-24, see Douyin cross-border deposit and fee standard, September 24, 2026
 
 ### Tmall Global commission bands: skincare and makeup are the only 4% categories
+- Superseded (2026-10-02): hair care and wigs now also sit at 4%, and the 2,000,000 RMB crossover with personal care no longer exists. See "Tmall Global calculator: commission spread and cash floor across the nineteen categories (proprietary, October 2026)".
 - Value: of the nineteen real product categories in the Tmall Global calculator picker, only skincare and makeup sit at a 4% commission; the rest sit at 2, 2.5, 3 or 5. Personal care (wash and clean) carries 2.5% with a 60,000 RMB annual fee, which crosses skincare's 4% with 30,000 RMB at exactly 2,000,000 RMB of GMV a year.
 - As of: September 2026
 - Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, the `categories` array)
@@ -534,6 +537,7 @@ and Ledger needs one.
 - Notes: verbatim no-deposit clause is 首先在亚马逊开店是不需要押金的. These are US-marketplace figures from Amazon's own China-facing seller site, which is the right source for a China-audience comparison. sellercentral.amazon.com sits behind a login and cannot be fetched. sell.amazon.com/pricing carries the same numbers but prints NO DATE, so it does not qualify under the ledger's rule 1; do not cite it.
 
 ### Tmall Global category fee spread and the cash floor, all nineteen categories
+- Superseded (2026-10-02) by "Tmall Global calculator: commission spread and cash floor across the nineteen categories (proprietary, October 2026)": the average is now 3.47% (printed 3.5%), three categories at 4%, none at 2.5%.
 - Value: across the nineteen real categories in the Tmall Global picker, commission runs 2% to 5% and averages 3.395% (rounded to 3.4% in copy); eight categories sit at 2%, seven at 5%, two at 4%, one at 3%, one at 2.5%; deposit plus annual fee is 80,000 RMB in eleven categories, 110,000 RMB in seven, and 330,000 RMB for health supplements (300,000 deposit plus 30,000 annual fee). Calculator defaults for the operating partner: 35,000 RMB monthly retainer plus 10% of GMV.
 - As of: September 2026
 - Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro)
@@ -603,7 +607,7 @@ and Ledger needs one.
 - Verified 1: 2026-09-22
 - Verified 2: 2026-09-22 (re-fetched at iteration 8, unchanged)
 - Used in: double-11-preparation-checklist
-- Notes: the 1,700-plus new brands figure is not printed in the draft; the ledger already carries a separate Tmall Global new-brand entry for 2025, reconcile before using both.
+- Notes: the 1,700-plus new brands figure is not printed in the draft. The ledger carries a separate Tmall Global new-brand entry for 2025; never print both figures in one piece.
 
 ### Tmall Global 全球探源计划 upgrade: origin, circulation and claim requirements
 - Value: overseas brands must supply proof of origin, evidence of free-sale authorization or market approval, and visual evidence of genuine overseas circulation (an unbroken video walkthrough in a foreign retailer or pharmacy, or sales screenshots from a recognized overseas platform); claims may not imply disease treatment, assert benefits without scientific support, or use misleading data or reviews; 300-plus brands enrolled since May 2026
@@ -668,6 +672,7 @@ and Ledger needs one.
 ## Dairy and spreads cost research, September 23, 2026
 
 ### Dairy and spreads category fee data and the cash floor it produces
+- Superseded (2026-10-02) for the JD Worldwide figures: see "JD Worldwide category fee standard, 2026-09-24 revision" and "JD Worldwide charges no annual or platform usage fee" (Calculator fee audit, October 2, 2026). The Tmall Global and Douyin figures here are unchanged.
 - Value: Tmall Global deposit 50,000 RMB / annual fee 30,000 RMB / commission 2%; JD Worldwide 35,500 RMB (US$5,000 entry rung) / 7,100 RMB (US$1,000) / 4%; Douyin cross-border 50,000 RMB / no annual fee / 4%. Cash in before the first sale: 80,000 / 42,600 / 50,000 RMB. Cost per kept order on the Tmall Global model at a 5% return rate: 21 RMB on a 128 RMB jar, 25 RMB on a 250 RMB basket, 32 RMB on a 498 RMB case. Breakeven about 1.15m RMB year-one GMV at a 50% gross margin, before media.
 - As of: September 2026
 - Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro category "food", jd-worldwide-setup-and-run.astro category "food", douyin-cost-calculator.astro category "food-packaged")
@@ -934,6 +939,7 @@ non-browser fetch; the full text was downloaded and searched at both checks.
 - Used in: how-on-running-entered-china
 
 ### Sports and outdoor category fee data (proprietary)
+- Superseded (2026-10-02) for the JD Worldwide figures: see "JD Worldwide category fee standard, 2026-09-24 revision" and "JD Worldwide charges no annual or platform usage fee" (Calculator fee audit, October 2, 2026). The Tmall Global and Douyin figures here are unchanged.
 - Value: Tmall Global deposit 50,000 RMB / annual fee 60,000 RMB / commission 5% (cash before first sale 110,000 RMB); JD Worldwide 35,500 / 7,100 / 5%; Douyin cross-border deposit 75,000 RMB / no annual fee / 5%
 - As of: September 2026
 - Source: TheChinaPath calculator data (sports rows in src/pages/tools/tmall-global-setup-and-run.astro, jd-worldwide-setup-and-run.astro, douyin-cost-calculator.astro)
@@ -1496,8 +1502,8 @@ and 23 text matched; add china-trade-fairs-find-distributor to its "Used in".
 - URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=97047
 - Verified 1: 2026-09-24
 - Verified 2: 2026-09-24
-- Used in: tmall-partner-agency-vs-distributor-model
-- Notes: the NPC amendment decision on gov.cn (https://www.gov.cn/xinwen/2022-06/25/content_5697697.htm) confirms 本决定自2022年8月1日起施行. The law states no numeric safe-harbor market share; do not print one without the SAMR implementing rule. Relevant to every distributor price-control piece.
+- Used in: tmall-partner-agency-vs-distributor-model, china-distributor-price-control-parallel
+- Notes: the NPC amendment decision on gov.cn (https://www.gov.cn/xinwen/2022-06/25/content_5697697.htm) confirms 本决定自2022年8月1日起施行. The law itself states no numeric safe-harbor market share; SAMR's implementing rule does (see "SAMR safe harbor for vertical agreements" below), so cite the two together. Relevant to every distributor price-control piece.
 
 ### Tmall Global account cannot be transferred without the platform's written consent
 - Value: clause 5.1: the merchant may not transfer its Tmall.hk account or authorize others to use it without Tmall Global's prior written consent; acts through the account are deemed the merchant's. Clause 15.3: no assignment of rights or obligations without prior written consent. Hong Kong law governs.
@@ -2013,7 +2019,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Verified 1: 2026-09-24
 - Verified 2: 2026-09-24
 - Used in: china-distributor-price-control-parallel
-- Notes: the amended rule text is on the MOFCOM policy database, https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104749 (both checks 2026-09-24). This supersedes the note on the existing Anti-Monopoly Law entry ("the law states no numeric safe-harbor market share"): SAMR now sets one. Add that cross-reference to the AML entry.
+- Notes: the amended rule text is on the MOFCOM policy database, https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104749 (both checks 2026-09-24). This supersedes the note on the existing Anti-Monopoly Law entry ("the law states no numeric safe-harbor market share"): SAMR now sets one. The AML entry carries the cross-reference (added 2026-10-02).
 
 ### SAMR rules: resale price ban covers margins, discounts and fees, "other means" and algorithmic pricing
 - Value: Art. 14 bans agreements fixing resale price levels, ranges, profit levels or discounts and fees, setting minimum resale prices by those means, or by other means, with a no-restrictive-effect defense; Art. 15 bans unifying, restricting or automatically setting resale prices through data, algorithms, technology or platform rules; Art. 16 bans other agreements shown by evidence to exclude or restrict competition
@@ -2035,7 +2041,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Notes: use only the published wording. Never describe it as distributor resale-price fixing; the case page describes aligning channel pricing.
 
 ### Re-verified ledger entries reused (no new entry; add the slug)
-- Anti-Monopoly Law: resale price maintenance ban and fines (policy.mofcom.gov.cn id=97047): re-fetched twice 2026-09-24. Add china-distributor-price-control-parallel to Used in, and point its Notes to the SAMR safe-harbor entry above.
+- Anti-Monopoly Law: resale price maintenance ban and fines (policy.mofcom.gov.cn id=97047): re-fetched twice 2026-09-24. china-distributor-price-control-parallel added to its Used in, and its Notes point to the SAMR safe-harbor entry (done 2026-10-02).
 - Liquidated damages: 30% line and no reduction for malicious breach (court.gov.cn 419382): re-fetched twice 2026-09-24. Add china-distributor-price-control-parallel.
 
 ## Partner cluster P13 (tmall-agency-fake-orders-brand-liability), 2026-09-24
@@ -2515,8 +2521,8 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - URL: https://www.nbd.com.cn/articles/2026-09-24/4591116.html
 - Verified 1: 2026-09-28 (page fetched, date and opening line read)
 - Verified 2: 2026-09-28 (re-fetched, line re-found)
-- Used in: wechat-store-double-11-subsidy
-- Notes: trade press relaying JD's announcement. Useful for a 03A update.
+- Used in: wechat-store-double-11-subsidy, double-11-preparation-checklist (added 2026-10-02 in all four locales; page re-fetched 2026-10-02, opening line re-found)
+- Notes: trade press relaying JD's announcement.
 
 ### Tmall Double 11 2026 presale opens October 15
 - Value: presale warm-up and deposit payment from October 15; final payment October 20 20:00; spot sale October 20 20:00 to November 13 23:59
@@ -2525,7 +2531,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - URL: https://www.163.com/dy/article/L7E4TETQ0519DFFO.html
 - Verified 1: 2026-09-28 (page fetched, dates read)
 - Verified 2: 2026-09-28 (re-fetched, "10月15日开启预售预热和定金支付" and the byline date re-found)
-- Used in: none yet (cut from wechat-store-double-11-subsidy for length); candidate for the 03A Double 11 checklist update
+- Used in: double-11-preparation-checklist (added 2026-10-02 in all four locales; page re-fetched 2026-10-02, the three dates and the 2026-09-22 byline re-found)
 - Notes: bbtnews.com.cn original returns 403 to the fetcher; the NetEase copy carries the byline.
 
 ## Social media monthly cost research (Anchor 04A), September 29, 2026
@@ -2581,6 +2587,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Notes: older than twelve months. The current 蒲公英 fee page is login-only; copy must present the rate as last reported in 2021. Replace when a dated 2025-2026 source is found.
 
 ### WeChat Moments ads, 2018 Q3 list: 50,000 RMB guaranteed minimum, 1,000 RMB/day auction minimum, CPM list prices
+- Superseded for current copy (2026-10-02) by "WeChat Moments ads, 2020 Q2 list", which carries the same minimums. History only.
 - Value: guaranteed (排期) buy: CPM at list price, single campaign budget from 50,000 RMB; list CPM image 150 / 100 / 50 RMB and video 180 / 120 / 60 RMB for core cities (Beijing, Shanghai) / 20 key cities / other cities; auction (竞价) buy: daily budget from 1,000 RMB, minimum CPM bid 100 / 60 / 30 RMB
 - As of: Q3 2018
 - Source: WeChat Ads (微信广告), 《朋友圈广告金融行业解决方案 2018-Q3》 PDF
@@ -2657,7 +2664,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Verified 1: 2026-09-29 (driver defaults and the media formula read from the file)
 - Verified 2: 2026-09-29 (recomputed by hand in the final arithmetic check)
 - Used in: china-social-media-marketing-cost-per-month (as the paid-media planning figure on every platform at build and sell, WeChat excepted)
-- Notes: scenario output, not a measured floor. The brief's "paid media floor below which organic reach does not move, from stores and accounts under management" is still missing: TODO: proprietary number.
+- Notes: scenario output, not a measured floor. The brief's "paid media floor below which organic reach does not move, from stores and accounts under management" is not on file; under the settled fallback (editorial/CLAUDE.md, "The proprietary number") this calculator figure is the piece's proprietary number.
 
 ### Re-verified ledger entries reused (no new entry; add the slug to Used in)
 - Qianchuan 0.6% technical service fee from 2026 (Ebrun, January 8, 2026, m.ebrun.com/636020.html): re-fetched 2026-09-29 at both checks (0.6%, 千川). Add "china-social-media-marketing-cost-per-month".
@@ -2684,7 +2691,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Verified 1: 2026-09-30 (rendered with headless Chromium; the plain URL renders only the portal shell, load it with the hash route #/rule/detail?ruleId=11005909&cId=625)
 - Verified 2: 2026-09-30 (re-rendered; 床上用品 | 5% | 60,000 and 居家布艺 | 5% | 60,000 in the table)
 - Used in: cost-to-sell-home-textiles-and-bedding-in-china
-- Notes: the calculator's "Home, bedding, kitchenware" row loads 30,000, which matches only the 2026-27 new-store incentive below. Flagged for a calculator update.
+- Notes: the calculator's "Home, bedding, kitchenware" row loaded 30,000, which matches only the 2026-27 new-store incentive below. Fixed 2026-10-02: the home row now loads 60,000 in all four locales.
 
 ### Tmall Global deposit: 大家居 50,000 RMB; TM-only brands 100,000 RMB
 - Value: 大家居 | 全部: 品牌旗舰店 50,000, 专卖店 50,000, 专营店 50,000, 卖场旗舰店 150,000 RMB; flagship or specialty store whose brand is an unregistered (TM) mark: 100,000 RMB base deposit
@@ -2707,6 +2714,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Notes: copy says "at most half until April 2027". Do not say bedding is on the waiver list; the page does not say.
 
 ### JD Worldwide bedding fees: 3% + 0.9%, flagship deposit US$5,000, no annual fee
+- Superseded (2026-10-02) as the citation date: the fee standard was revised 2026-09-24, effective 2026-10-01, with the bedding row unchanged. See "JD Worldwide category fee standard, 2026-09-24 revision". The bedding article cites the revised dates in all four locales.
 - Value: 床上用品 | 全部 (and 居家布艺): deposit US$10,000 / 10,000 / 15,000 / 15,000 by GMV tier (<5万, 5-10万, 10-30万, >=30万 RMB), 品牌旗舰店保证金 US$5,000, 运营支持服务费率 3.00%, 交易服务费率 0.90%; no annual fee in the current fee standard or deposit rules
 - As of: revised 2026-07-24, effective 2026-08-01
 - Source: JD Worldwide (京东全球购), 《京东全球购开放平台各类目资费标准》
@@ -2714,7 +2722,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Verified 1: 2026-09-30 (rendered with headless Chromium)
 - Verified 2: 2026-09-30 (re-rendered; row "床上用品 全部 全部 全部 10,000 10,000 15,000 15,000 5,000 3.00% 0.90%" and the 2026-07-24 / 2026-08-01 clause present)
 - Used in: cost-to-sell-home-textiles-and-bedding-in-china
-- Notes: the calculator's JD "Home, kitchen, kitchenware" row loads 5% and 7,100 RMB annual; 5% is the 生活日用 rate. FLAG: check whether the published footwear Ledger's JD row (5% / 7,100) is also stale against this standard. US$5,000 converted at 7.1 (calculator FX default) = 35,500 RMB.
+- Notes: the calculator's JD "Home, kitchen, kitchenware" row loads 5% and 7,100 RMB annual; 5% is the 生活日用 rate. The footwear Ledger's JD row (5% / 7,100) was stale; fixed 2026-10-02 against the 2026-09-24 revision (see the calculator fee audit entries). US$5,000 converted at 7.1 (calculator FX default) = 35,500 RMB.
 
 ### Douyin Global: bedding sits under 居家日用 at 6%, plus 4% channel supplement
 - Value: 居家日用 其他二级类目 (covers 床上用品 and 居家布艺 > 毛巾/浴巾) base 6.00%, channel supplement 4.00% on 抖音商城 app and 豆包 orders; 母婴用品 > 婴童床品 6.00% + 4.00%; one rate for every store type
@@ -2930,3 +2938,87 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 
 ### Not sourced (claims cut)
 - An official CNIPA count of bad-faith trademark filings rejected in 2024 or 2025: none found in the 2025 and 2026 work reports or the January 2026 press conference. Closest: 336 DEEPSEEK bad-faith filings rejected in 2025 (CNIPA-hosted 知识产权报, 2026-05-29, https://www.cnipa.gov.cn/art/2026/5/29/art_55_206581.html, one check); 1.273 million 心机商标 applications rejected since 2023 (四川在线 citing the 2026-04-23 SCIO briefing, outlet off the preferred list). Neither used.
+
+## Calculator fee audit, October 2, 2026 (closes the 2026-09-30 open item)
+
+### JD Worldwide category fee standard, 2026-09-24 revision: commission and flagship deposit by category
+- Value: 运营支持服务费 / 品牌旗舰店保证金 (USD) / 交易服务费 for the rows the JD calculator uses: 生鲜 其他二级类目 2.00% / 500; 食品饮料 全部 2.00% / 5,000; 粮油调味 2.00% / 5,000; 水饮冲调 2.00% / 5,000; 酒类 葡萄酒 5.00% / 5,000; 酒类 洋酒, 啤酒, 果酒/米酒 3.00% / 5,000; 营养保健 其他二级类目 5.00% / 5,000; 母婴 其他二级类目 2.00% / 5,000; 美妆护肤 全部 5.00% / 5,000; 个人护理 洗发护发 其他三级类目, 男士剃须, 其他二级类目 5.00% / 5,000; 个人护理 身体护理 (listed lines), 美发造型, 假发 6.00% / 5,000; 服饰内衣 其他二级类目 6.00% / 5,000; 鞋靴 6.00% / 5,000; 箱包皮具 6.00% / 5,000; 珠宝首饰 其他二级类目 6.00% / 5,000; 钟表眼镜 腕表 瑞士表 3.00% / 5,000 (other watches 6.00%); 数码 影音娱乐 and 数码配件 listed lines, 电脑、办公 外设产品 listed lines 3.00% / 7,000; 电脑整机 笔记本、台式机 3.00% / 7,000 (平板电脑 2.00%); 手机通讯 其他二级类目 3.00% / 5,000; 床上用品 and 居家布艺 3.00% / 5,000; 厨具 4.00% / 3,000; 家用电器 其他二级类目 3.00% / 5,000; 运动户外 其他二级类目 6.00% / 5,000; 宠物生活 猫狗主粮 2.50% / 5,000 (狗/猫零食 5.00%); 医药 海外医药 listed lines 7.00% (品牌旗舰店 5.00%) / 30,000. 交易服务费 0.90% on every row, charged per order since 2023-04-01. Other store types pay a GMV ladder instead of the flagship figure (for example 鞋靴 15,000 at every tier, 美妆护肤 10,000 / 10,000 / 15,000 / 15,000, 食品饮料 5,000 then 10,000 from 50,000 RMB GMV then 15,000 from 200,000 RMB).
+- As of: revised 2026-09-24, effective 2026-10-01
+- Source: JD Worldwide (京东全球购), 《京东全球购开放平台各类目资费标准》
+- URL: https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
+- Verified 1: 2026-10-02 17:47 CST (rendered with headless Chrome, --dump-dom; table parsed with rowspans expanded, 173 rows)
+- Verified 2: 2026-10-02 18:21 CST (re-rendered with Playwright on headless Chrome; parsed table byte-identical to check 1; clause 本规则于2026年9月24日修订，于2026年10月1日正式生效 present)
+- Used in: src/pages/tools/jd-worldwide-setup-and-run.astro and the FR, DE, ES JD calculators (category array); cost-to-sell-footwear-in-china, cost-to-sell-facial-skincare-in-china, cost-to-sell-dairy-and-spreads-in-china, how-allbirds-entered-china, how-on-running-entered-china, change-domestic-responsible-person-china-cosmetics (all four locales)
+- Notes: this revision supersedes the 2026-07-24 / 2026-08-01 version cited in the entry "JD Worldwide bedding fees"; the bedding row is unchanged (3.00% + 0.90%, flagship US$5,000). The previous calculator data was stale on most rows: footwear, apparel, bags, sports and jewellery were 5% (now 6%), food and fresh 4% (now 2%), 3C and appliances 4% (now 3%), fresh deposit US$2,000 (flagship now US$500), watches and phones US$15,000 (flagship now US$5,000), pharma US$40,000 at 5% (flagship US$30,000 at 5%, other store types 7%). The calculator models a brand flagship. RMB at the calculator FX default 7.1: US$500 = 3,550; US$3,000 = 21,300; US$5,000 = 35,500; US$7,000 = 49,700; US$30,000 = 213,000. Euro equivalents in FR, DE, ES copy at about 0.9: 450, 2,700, 4,500, 6,300, 27,000 euros; ladder US$10,000 to 15,000 = about 9,000 to 13,500 euros.
+
+### JD Worldwide charges no annual or platform usage fee (平台使用费)
+- Value: the current fee standard defines only 保证金, 运营支持服务费 and 交易服务费 (0.9% per order since 2023-04-01) and lists no annual fee, 年费 or 平台使用费; the deposit rule lists none either; the rule portal's 资费标准 section holds only those two rules. The US$1,000 a year usage fee the calculator carried (7,100 RMB) is not in any current JD Worldwide rule.
+- As of: fee standard revised 2026-09-24 (effective 2026-10-01); deposit rule revised and effective 2026-01-08
+- Source: JD Worldwide (京东全球购), 《京东全球购开放平台各类目资费标准》 and 《京东全球购开放平台保证金管理规定》
+- URL: https://jdw-rule.jd.hk/detail?ruleId=950583665543483392 and https://jdw-rule.jd.hk/detail?ruleId=660777735190351872
+- Verified 1: 2026-10-02 17:47 to 17:56 CST (both rules rendered; no 平台使用费 or 年费 string in either; 资费标准 section listing rendered, "共 2 条")
+- Verified 2: 2026-10-02 18:21 to 18:22 CST (both re-rendered with Playwright; zero matches for 平台使用费 and 年费 in either text)
+- Used in: all four JD calculators (annual default 0, hints and notes rewritten); the six articles listed above
+- Notes: context only, not cited in copy: Sohu (搜狐, from 电商敲门砖), 2023-03-29, https://www.sohu.com/a/660569880_120643035, says JD POP dropped its 1,000 RMB a month usage fee from 2023-04-01 and that "京东国际同时也取消了平台使用费". Fetched once on 2026-10-02; secondary and single-checked, so copy says only that the current standard lists no annual fee. Third-party Q&A pages (amz123) still repeat "平台使用费 1000美金/年"; they are undated and contradicted by the platform rules, never cite them.
+
+### JD Worldwide deposit rule: ladder by monthly GMV for some categories, highest-standard rule for mixed categories
+- Value: 基础保证金 is paid on entry; 部分类目实行阶梯保证金制度，按月度成交金额（GMV）分档补缴, tiers per the category fee standard; a store selling several categories pays the highest category standard; top-up within 3 calendar days; full refund within 10 working days after a 30-day closure notice
+- As of: revised and effective 2026-01-08
+- Source: JD Worldwide (京东全球购), 《京东全球购开放平台保证金管理规定》
+- URL: https://jdw-rule.jd.hk/detail?ruleId=660777735190351872
+- Verified 1: 2026-10-02 17:56 CST (rendered with headless Chrome)
+- Verified 2: 2026-10-02 18:22 CST (re-rendered with Playwright; 第五条, 第六条, 第二十九条 unchanged)
+- Used in: JD calculator deposit hints (all four locales: "other store types pay a separate scale set by monthly sales")
+- Notes: the rule does not itself print amounts; amounts come from the category fee standard above.
+
+### Tmall Global category annual fees and technical service fee rates, re-verified for every calculator row
+- Value: 《天猫国际各类目技术服务费年费一览表》 rows behind the Tmall calculator: 零食/坚果/特产 2% / 30,000; 茶 2% and 咖啡/麦片/冲饮 2% / 30,000; 酒类 2% / 30,000; 粮油米面 1% (米/面粉/杂粮) or 2% (other) / 30,000; 保健食品/膳食营养补充食品 3% / 30,000; 奶粉/辅食/营养品 2% (婴幼儿营养品 3%) / 30,000; 婴童尿裤 2%, 婴童洗护 2% / 30,000; 美容护肤/美体/精油 4%, 彩妆/香水/美妆工具 4%, 美发护发/假发 4%, 美容美体仪器 5% / 30,000; 女装, 男装, 内衣 5% / 60,000; 女鞋, 流行男鞋, 运动鞋 5% / 60,000; 箱包皮具 5% / 60,000; 饰品/流行首饰/时尚饰品 5% / 60,000; 服饰配件/皮带/帽子/围巾 5% / 30,000; 手表 瑞士腕表 2%, other 5% / 60,000; 手机, 笔记本电脑, 平板电脑, 3C数码配件 2% / 30,000; 厨房电器, 生活电器 2%, 个人护理/保健/按摩器材 5% (剃须刀 2%) / 30,000; 床上用品, 居家布艺, 家居饰品 5% / 60,000; 厨房/烹饪用具, 餐饮具, 居家日用, 收纳整理, 家庭/个人清洁工具 5% / 60,000; 运动/户外 5% (自行车 2%) / 60,000; 宠物 犬主粮, 猫主粮, 狗零食, 猫零食 2.5%, other 5% / 30,000; 其他 3%. There is no 洗护清洁剂 (wash and clean) line and no 2.5% rate outside pet food.
+- As of: adjustment posted 2026-09-03, effective 2026-09-09
+- Source: Tmall Global (天猫国际), 《天猫国际各类目年费、技术服务费率》
+- URL: https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625 (render with the hash route #/rule/detail?ruleId=11005909&cId=625)
+- Verified 1: 2026-10-02 17:59 CST (rendered with Playwright on headless Chrome; table parsed, 256 rows including the English table)
+- Verified 2: 2026-10-02 18:21 CST (re-rendered; parsed table byte-identical to check 1; 本次调整于2026年9月3日公示通知，将于2026年9月9日正式生效 present)
+- Used in: src/pages/tools/tmall-global-setup-and-run.astro and the FR, DE, ES Tmall calculators; cost-to-sell-facial-skincare-in-china and a-comparison-between-tmall-and-amazon (all four locales); cost-to-sell-dairy-and-spreads-in-china (the "lowest band" wording)
+- Notes: confirms the existing entry "Tmall Global bedding rates" (床上用品, 居家布艺 5% / 60,000), re-verified today. Calculator changes made from it: home row annual 30,000 to 60,000; personal-care row (2.5% / 60,000, no matching line) relabelled hair care and wigs at 4% / 30,000; labels narrowed so each row carries only lines at its rate (food drops grain, watches become Swiss watches, pet becomes pet supplies not food or treats, appliances become kitchen and household appliances, baby becomes infant formula, diapers and baby care, jewellery drops accessories). Rice, flour and gold jewellery (0.5%) sit below 2%, so "2% is the lowest Tmall Global rate" is wrong; copy now says "lowest in our calculator".
+
+### Tmall Global calculator: commission spread and cash floor across the nineteen categories (proprietary, October 2026)
+- Value: commission runs 2% to 5% and averages 3.47% (66 / 19; printed as 3.5%); eight categories at 2%, seven at 5%, three at 4% (skincare, makeup, hair care), one at 3%, none at 2.5%; deposit plus annual fee is 80,000 RMB in eleven categories, 110,000 RMB in seven, 330,000 RMB for health supplements
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, the categories array)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-02 (array read after the edit and the aggregates recomputed)
+- Verified 2: 2026-10-02 (recounted; home moved 80,000 to 110,000 and personal care moved 110,000 to 80,000, so the eleven and seven counts are unchanged)
+- Used in: a-comparison-between-tmall-and-amazon, cost-to-sell-facial-skincare-in-china (all four locales)
+- Notes: supersedes the September figures in "Tmall Global category fee spread and the cash floor, all nineteen categories" (3.395%, two 4% categories, one 2.5%) and the crossover in "Tmall Global commission bands: skincare and makeup are the only 4% categories" (the 2,000,000 RMB crossover with personal care no longer exists and was cut from the skincare piece). 10% TP commission plus 3.5% still clears 13%.
+
+### JD Worldwide calculator: cash before the first sale (proprietary, October 2026)
+- Value: deposit plus annual fee on the JD calculator is 35,500 RMB for footwear, skincare, packaged food and sports (US$5,000 flagship deposit at 7.1, annual fee 0), down from 42,600 (35,500 + 7,100). Gap to Tmall Global: footwear 110,000 vs 35,500 (about a third), skincare 80,000 vs 35,500 = 44,500 RMB (a little under half), dairy 80,000 vs 35,500.
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/jd-worldwide-setup-and-run.astro)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-02 (computed from the edited array)
+- Verified 2: 2026-10-02 (recomputed against the JD fee standard rows above)
+- Used in: cost-to-sell-footwear-in-china, cost-to-sell-facial-skincare-in-china, cost-to-sell-dairy-and-spreads-in-china, change-domestic-responsible-person-china-cosmetics, how-allbirds-entered-china, how-on-running-entered-china (all four locales)
+- Notes: per-order and breakeven tables in the three Ledger pieces run on the Tmall model, whose rows for those categories did not change, so they keep the September label.
+
+## WeChat Moments rate card research, October 2, 2026
+
+### WeChat Moments ads, 2020 Q2 list: 50,000 RMB guaranteed minimum, 1,000 RMB/day auction minimum, CPM list prices (unchanged from 2018 Q3)
+- Value: guaranteed (排期) buy: CPM at list price, single campaign budget from 50,000 RMB ("广告单次投放总预算5 万元起"); auction (竞价) buy: daily budget from 1,000 RMB ("每日预算1000元起"); list CPM image 150 / 100 / 50 RMB and video 180 / 120 / 60 RMB for core / key / other cities; auction minimum CPM bid 100 / 60 / 30 RMB. Premium formats (full-frame card, panoramic card, light-interaction video, @advertiser, @celebrity, choice card) from 1,000,000 RMB per placement; action card from 50,000 RMB contract or 1,000 RMB/day auction
+- As of: Q2 2020 (cover reads "微信朋友圈广告招商合作介绍2020–Q2")
+- Source: WeChat Ads (微信广告), 《微信朋友圈广告招商合作介绍 2020–Q2》 PDF, 65 pages
+- URL: https://wxa.wxs.qq.com/wxadtouch/upload/t2/ar2zl7ks_250201f1.pdf
+- Verified 1: 2026-10-02 17:57 (curl + pypdf; "5 万元起", "每日预算1000元起", city CPM tables read)
+- Verified 2: 2026-10-02 17:59 (re-downloaded, pypdf; "5 万元起", "每日预算1000元起" and "2020" re-found)
+- Used in: china-social-media-marketing-cost-per-month (2026-10-02)
+- Notes: newest official Moments rate card found; no official Moments minimum dated 2023 to 2026 could be found. Same minimums as the 2018 Q3 deck, so the 2018 figures held at least to Q2 2020. Core cities Beijing and Shanghai and the 150 RMB image CPM confirmed on pp. 57 and 61, both minimums on p. 58. Label every use "Q2 2020".
+
+### Tencent Ads Marketing API: account and ad group daily budget range 50 to 40,000,000 RMB (not Moments specific, undated)
+- Value: v3.0 advertiser/update_daily_budget: account daily budget "需介于 5,000 分-4,000,000,000 分之间（50 元-40,000,000 元，单位为人民币）"; v3.0 adgroups/add: ad group daily budget 5,000 to 400,000,000 fen (50 to 4,000,000 RMB); legacy v1 adgroups page: Moments ad group (CAMPAIGN_TYPE_WECHAT_MOMENTS) 5,000 to 4,000,000,000 fen (50 to 40,000,000 RMB)
+- As of: undated (no page date; API changelog entry 2023-02-14 adds advertiser_daily_budget/get, "支持获取可设置最低的竞价广告账户日预算", i.e. the auction account floor is returned per account and not published)
+- Source: Tencent Ads Developer Zone (腾讯广告开发者专区), Marketing API docs
+- URL: https://developers.e.qq.com/v3.0/docs/api/advertiser/update_daily_budget ; https://developers.e.qq.com/v3.0/docs/api/adgroups/add ; https://developers.e.qq.com/docs/api/adsmanagement/adgroups ; https://developers.e.qq.com/docs/start/changelog/api
+- Verified 1: 2026-10-02 17:47 to 17:55 (curl; ranges and units read)
+- Verified 2: 2026-10-02 17:59 (curl re-fetch of update_daily_budget; "5,000 分-4,000,000,000 分" re-found)
+- Used in: not used
+- Notes: a field validation range in the API, not a commercial minimum for Moments, and no date on the page. Not publishable as a Moments floor.

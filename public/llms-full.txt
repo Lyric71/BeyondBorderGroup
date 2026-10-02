@@ -1,6 +1,6 @@
 # TheChinaPath — Insights (full text)
 
-> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-01.
+> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-02.
 
 ---
 # 11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event
@@ -117,7 +117,7 @@ Understanding and adapting to Chinese consumer trends, such as the rise of susta
 # Tmall vs Amazon: what a brand actually pays
 URL: https://www.thechinapath.com/insights/a-comparison-between-tmall-and-amazon
 Published: 2023-02-02
-Updated: 2026-09-17
+Updated: 2026-10-02
 Author: TheChinaPath
 Category: Platforms
 
@@ -143,7 +143,7 @@ because that is the one most brands reading this already run.
 | Security deposit | none | 50,000, refundable |
 | Annual platform fee | none | 30,000 or 60,000 by category |
 | Account fee | US$39.99 a month | none |
-| Commission on each sale | 8% to 15% in most categories | 2% to 5%, 3.4% average |
+| Commission on each sale | 8% to 15% in most categories | 2% to 5%, 3.5% average |
 | Operating partner | optional | a Tmall Partner, in practice |
 | Cash in before the first order | US$39.99, the first month | 80,000 to 110,000 |
 
@@ -157,7 +157,7 @@ because that is the one most brands reading this already run.
 
 > Deposit, annual fee and commission by category on Tmall Global, as loaded
 > in the calculator.
-> Source: TheChinaPath calculator data, September 2026.
+> Source: TheChinaPath calculator data, October 2026.
 
 Health supplements sit outside that range on Tmall Global, at a 300,000 RMB
 deposit. Everything else lands on one of two rungs.
@@ -217,10 +217,10 @@ not.
 We keep the category fee data for Tmall Global, JD Worldwide and Douyin
 cross-border loaded in our own calculators, because we quote from it every
 week. Across the nineteen Tmall Global categories in the picker, commission
-runs from 2% to 5% and averages 3.4%. Eight categories sit at 2%. Nothing
+runs from 2% to 5% and averages 3.5%. Eight categories sit at 2%. Nothing
 goes above 5%. Amazon's band, in most categories, starts at 8%.
 
-Tea, packaged food, watches, small appliances and phones all pay Tmall Global 2% of the sale. On Amazon
+Tea, packaged food, Swiss watches, kitchen appliances and phones all pay Tmall Global 2% of the sale. On Amazon
 the same goods would pay 8% or more.
 
 Then the fixed cost arrives. Deposit plus annual fee comes to 80,000 RMB in
@@ -238,7 +238,7 @@ sets up the campaigns. The default in our own Tmall Global calculator is a
 35,000 RMB monthly retainer plus 10% of GMV, and those defaults exist
 because they are the numbers we see quoted.
 
-Add that 10% to the platform's 3.4% and the China take rate clears 13%,
+Add that 10% to the platform's 3.5% and the China take rate clears 13%,
 which lands inside Amazon's 8% to 15% band instead of under it. The retainer
 sits on top and does not care whether you sell anything.
 
@@ -330,7 +330,7 @@ Amazon's own retail. There is no China storefront a brand opens and runs.
 **Is Tmall Global's commission really lower than Amazon's?**
 
 On the platform line, yes. Commission across the nineteen Tmall Global
-categories in our calculator runs 2% to 5%, averaging 3.4%, against 8% to
+categories in our calculator runs 2% to 5%, averaging 3.5%, against 8% to
 15% on Amazon in most categories. Add a Tmall Partner's commission on GMV
 and the combined China take rate passes Amazon's.
 
@@ -1863,7 +1863,7 @@ This is where TheChinaPath works with teams, connecting a protected core to a Ch
 # Changing your cosmetics responsible person in China
 URL: https://www.thechinapath.com/insights/change-domestic-responsible-person-china-cosmetics
 Published: 2026-09-24
-Updated: 2026-09-24
+Updated: 2026-10-02
 Author: TheChinaPath
 Category: Compliance & Setup
 
@@ -2023,9 +2023,9 @@ import rules need no NMPA filing, so they need no responsible person either.
 Opening that route for skincare isn't free.
 
 > A cross-border skincare store needs 80,000 RMB in cash before the first
-> sale on Tmall Global, 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin
+> sale on Tmall Global, 35,500 RMB on JD Worldwide and 5,000 RMB on Douyin
 > cross-border, deposits and annual fees included.
-> Source: TheChinaPath calculator data, September 2026.
+> Source: TheChinaPath calculator data, October 2026.
 
 > Douyin Global's base deposit follows last month's sales, up to 5,000 RMB.
 > Source: Douyin E-commerce (抖音电商), Douyin Global deposit rules, June 2025.
@@ -4154,7 +4154,7 @@ Finding and partnering with KOLs in China can be a transformative strategy for b
 # What China social media marketing costs per month
 URL: https://www.thechinapath.com/insights/china-social-media-marketing-cost-per-month
 Published: 2026-09-29
-Updated: 2026-09-29
+Updated: 2026-10-02
 Author: TheChinaPath
 Category: Market Strategy
 
@@ -4302,18 +4302,19 @@ calculator on this site at its default settings.
 We use RMB 10,000 at the build level and RMB 20,000 at the sell level on
 every platform, so the table compares content and staffing on equal media.
 WeChat is the exception, because its own published minimum sits higher.
-Tencent's last public Moments rate card that we could verify is from 2018,
-so read that row as a floor from 2018 prices.
+Tencent's last public Moments rate card that we could verify dates from the
+second quarter of 2020. It carries the same minimums as the 2018 card, so
+read that row as a floor at 2020 prices.
 
-> In 2018, WeChat Moments ads bought at auction needed a daily budget of at
-> least RMB 1,000. A reserved Moments campaign needed at least RMB 50,000,
-> at list prices of RMB 150 per thousand image-ad views in Beijing and
-> Shanghai.
-> Source: WeChat Ads (微信广告), Q3 2018. https://wximg.qq.com/wxp/wxadtouch/upload/t2/file-1533693930261.pdf
+> In the second quarter of 2020, WeChat Moments ads bought at auction needed
+> a daily budget of at least RMB 1,000. A reserved Moments campaign needed
+> at least RMB 50,000, at list prices of RMB 150 per thousand image-ad views
+> in Beijing and Shanghai.
+> Source: WeChat Ads (微信广告), Q2 2020. https://wxa.wxs.qq.com/wxadtouch/upload/t2/ar2zl7ks_250201f1.pdf
 
 A month of daily auction ads at that minimum is RMB 30,000. One reserved
 campaign is RMB 50,000. Those are the WeChat build and sell figures, and
-the least certain numbers in the table: prices have had eight years to
+the least certain numbers in the table: prices have had six years to
 move. The WeChat sell row also assumes a China entity or a distributor to
 sell through, for reasons covered below.
 
@@ -4330,7 +4331,7 @@ live. Only some of them are public.
 | Douyin creators (Xingtu) | RMB 10,000 per recruitment task | 5% of the task value | August 2026 |
 | Xiaohongshu creators | None published | 10% of the deal value | November 2021 |
 | Xiaohongshu ads | None published | None published | No public page found |
-| WeChat Moments ads | RMB 1,000 a day at auction; RMB 50,000 per reserved campaign | None published | Q3 2018 |
+| WeChat Moments ads | RMB 1,000 a day at auction; RMB 50,000 per reserved campaign | None published | Q2 2020 |
 | Weibo ads | No dated minimum published | None published | No dated page found |
 
 </div>
@@ -4982,15 +4983,15 @@ The latest sales data from the 6.18 shopping festival offers valuable insights i
 # What it costs to sell dairy and spreads in China
 URL: https://www.thechinapath.com/insights/cost-to-sell-dairy-and-spreads-in-china
 Published: 2026-09-23
-Updated: 2026-09-24
+Updated: 2026-10-02
 Author: TheChinaPath
 Category: E-Commerce
 
-Dairy and spreads open for 80,000 RMB on Tmall Global, 42,600 on JD Worldwide, 5,000 on Douyin. Tmall takes 2%. The parcel is what costs you.
+Dairy and spreads open for 80,000 RMB on Tmall Global, 35,500 on JD Worldwide, 5,000 on Douyin. Tmall takes 2%. The parcel is what costs you.
 
 Start on Tmall Global. Dairy and spreads cost 80,000 RMB to open there,
-against 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin cross-border.
-Tmall takes 2% of each sale, the lowest band on the platform. Then the parcel
+against 35,500 RMB on JD Worldwide and 5,000 RMB on Douyin cross-border.
+Tmall takes 2% of each sale, the lowest band in our calculator. Then the parcel
 decides your year: 15 RMB of pick, pack and last mile lands on every order,
 whatever is inside.
 
@@ -5009,18 +5010,18 @@ years. General trade walks straight into it.
 | Dairy and spreads, first year (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
 | Security deposit, refundable | 50,000 | 35,500 (about US$5,000) | 5,000 |
-| Annual platform fee | 30,000 | 7,100 (about US$1,000) | none |
-| Commission on each sale | 2% | 4% | 2.5% |
-| Cash in before the first sale | 80,000 | 42,600 | 5,000 |
+| Annual platform fee | 30,000 | none | none |
+| Commission on each sale | 2% | 2% | 2.5% |
+| Cash in before the first sale | 80,000 | 35,500 | 5,000 |
 
 </div>
 
-> Deposit, annual fee and commission by category for packaged food, grain,
-> oil and snacks on Tmall Global, JD Worldwide and Douyin cross-border.
-> Source: TheChinaPath calculator data, September 2026.
+> Deposit, annual fee and commission by category for packaged food, oil
+> and snacks on Tmall Global, JD Worldwide and Douyin cross-border.
+> Source: TheChinaPath calculator data, October 2026.
 
-That 2% is the lowest commission Tmall Global charges anybody. Skincare pays
-4%, apparel and footwear pay 5%. Bands checked September 2026, and a TM
+That 2% is the lowest commission in our Tmall Global calculator. Skincare
+pays 4%, apparel and footwear pay 5%. Bands checked October 2026, and a TM
 trademark or a multi-brand store raises the Tmall figure.
 
 Douyin stopped pricing its deposit by category in June 2025. The amount now
@@ -5041,10 +5042,17 @@ pays. The 2.5% is our calculator's midpoint for packaged food: Douyin charges
 > 《【全球购】技术服务费费率标准》, July 15, 2026.
 > https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
 
-JD undercuts Tmall by a wide margin. It quotes deposit and annual fee in
-dollars, on a ladder that climbs with cumulative sales, so 42,600 RMB is the
-entry rung rather than a steady state. JD adds a flat 0.9% transaction fee on
-top of the 4%.
+JD undercuts Tmall by a wide margin. It charges no annual fee and quotes its
+deposit in dollars: US$5,000 for a brand flagship, the 35,500 RMB above at
+7.1. Other store types start at US$5,000 and step up to US$10,000 and then
+US$15,000 as sales grow. JD adds a flat 0.9% transaction fee on top of the
+2%.
+
+> Food and drink (食品饮料) pays JD Worldwide a 2% operating support fee plus
+> a 0.9% transaction fee, and a brand flagship deposits US$5,000.
+> Source: JD Worldwide (京东全球购), category fee standard, revised
+> September 24, 2026, effective October 1, 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 ## Two routes in: bonded cross-border and general trade
 
@@ -5273,14 +5281,14 @@ platforms. [Start with cross-border setup](/enter-china/cross-border-setup).
 # What it costs to sell facial skincare in China
 URL: https://www.thechinapath.com/insights/cost-to-sell-facial-skincare-in-china
 Published: 2026-09-16
-Updated: 2026-09-24
+Updated: 2026-10-02
 Author: TheChinaPath
 Category: E-Commerce
 
-Facial skincare opens at 80,000 RMB on Tmall Global, 42,600 on JD Worldwide, 5,000 on Douyin. Then your pack size decides the tax.
+Facial skincare opens at 80,000 RMB on Tmall Global, 35,500 on JD Worldwide, 5,000 on Douyin. Then your pack size decides the tax.
 
 Start on Tmall Global. Facial skincare costs 80,000 RMB there before you sell
-a jar, against 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin
+a jar, against 35,500 RMB on JD Worldwide and 5,000 RMB on Douyin
 cross-border. Tmall takes 4% of each sale. The other two take 5%. Then the
 tax your shopper pays at checkout, which your pack size controls, moves more
 money than any of it.
@@ -5295,20 +5303,27 @@ most forgiving on fees. Table first.
 | Facial skincare, year one (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
 | Security deposit, refundable | 50,000 | 35,500 (about US$5,000) | 5,000 |
-| Annual platform fee | 30,000 | 7,100 (about US$1,000) | none |
+| Annual platform fee | 30,000 | none | none |
 | Commission on each sale | 4% | 5% | 5% |
-| Cash in before the first sale | 80,000 | 42,600 | 5,000 |
+| Cash in before the first sale | 80,000 | 35,500 | 5,000 |
 
 </div>
 
 > Deposit, annual fee and commission by category for skincare on Tmall
 > Global, JD Worldwide and Douyin cross-border.
-> Source: TheChinaPath calculator data, September 2026.
+> Source: TheChinaPath calculator data, October 2026.
 
-JD adds a flat 0.9% transaction fee on top, and quotes its deposit and usage
-fee in dollars on a ladder that climbs with cumulative sales, so the RMB
-above is the entry rung. A TM trademark or a multi-brand store raises the
-Tmall deposit. Bands checked September 2026.
+JD adds a flat 0.9% transaction fee on top and charges no annual fee. It
+quotes its deposit in dollars: US$5,000 for a brand flagship, converted
+above at 7.1, and US$10,000 to US$15,000 for other store types as sales
+grow. A TM trademark or a multi-brand store raises the Tmall deposit. Bands
+checked October 2026.
+
+> Beauty and skincare (美妆护肤) pays JD Worldwide a 5% operating support fee
+> plus a 0.9% transaction fee, and a brand flagship deposits US$5,000.
+> Source: JD Worldwide (京东全球购), category fee standard, revised
+> September 24, 2026, effective October 1, 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 Douyin's deposit has nothing to do with skincare anymore. Since June 2025 it
 tracks the store's sales in the previous month: 500 RMB up to 50,000 RMB,
@@ -5321,15 +5336,21 @@ tracks the store's sales in the previous month: 500 RMB up to 50,000 RMB,
 > revision effective June 5, 2025.
 > https://school.jinritemai.com/doudian/web/articlev0/107821
 
-One number in that table is doing something unusual. Skincare and makeup are
-the only two of the nineteen categories in our Tmall Global calculator set at
-4%. Everything else sits at 2, 2.5, 3 or 5, and skincare lands in the lower
-annual fee band too, 30,000 rather than 60,000.
+One number in that table is doing something unusual. Skincare, makeup and
+hair care are the only three of the nineteen categories in our Tmall Global
+calculator set at 4%. Everything else sits at 2, 3 or 5, and skincare lands
+in the lower annual fee band too, 30,000 rather than 60,000.
 
-Worth knowing where the neighboring line sits. A facial wash filed as
-personal care pays 2.5% and a 60,000 annual fee, which crosses skincare's 4%
-and 30,000 at exactly 2 million RMB of GMV a year. You do not pick the label,
-the product does.
+Worth knowing where the neighboring line sits. Beauty devices (美容美体仪器)
+share the cosmetics group and its 30,000 annual fee, but pay 5% a sale.
+
+> Skin care, makeup and hair care pay Tmall Global 4% and beauty devices
+> 5%, all with a 30,000 RMB annual fee.
+> Source: Tmall Global (天猫国际), category annual fee and technical service
+> fee rates, adjustment effective September 9, 2026.
+> https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625
+
+You do not pick the label, the product does.
 
 ## The route into China for facial skincare
 
@@ -5496,10 +5517,10 @@ sits elsewhere, in media spend and in stock waiting in bond.
 Tmall Global. The 4% commission is the lowest of the three, the annual fee
 sits in the lower band, and a flagship there is still the page a Chinese
 shopper opens to decide whether a foreign skincare brand is real. That is
-worth the 37,400 RMB gap over JD.
+worth the 44,500 RMB gap over JD.
 
 JD Worldwide flips it when the open question is whether China wants the brand
-at all. Same route, same rules, a little over half the cash to get live.
+at all. Same route, same rules, a little under half the cash to get live.
 
 Douyin does a different job. Smallest deposit, no annual fee, and it rewards
 brands that already have content that sells. Our [footwear cost
@@ -5560,15 +5581,15 @@ the cross-border ecommerce team](/grow-in-china/cross-border-ecommerce).
 # What it costs to sell footwear in China
 URL: https://www.thechinapath.com/insights/cost-to-sell-footwear-in-china
 Published: 2026-09-09
-Updated: 2026-09-24
+Updated: 2026-10-02
 Author: TheChinaPath
 Category: E-Commerce
 
-Footwear costs 110,000 RMB to open on Tmall Global, 42,600 on JD Worldwide, 5,000 on Douyin. Commission runs 5% to 6%. Then returns decide the year.
+Footwear costs 110,000 RMB to open on Tmall Global, 35,500 on JD Worldwide, 5,000 on Douyin. Commission runs 5% to 6%. Then returns decide the year.
 
 Start on Tmall Global. Footwear costs 110,000 RMB there before you sell a
-pair, against 42,600 RMB on JD Worldwide and 5,000 RMB on Douyin
-cross-border. Tmall and JD take 5% of every sale, Douyin 6%. After that your
+pair, against 35,500 RMB on JD Worldwide and 5,000 RMB on Douyin
+cross-border. Tmall takes 5% of every sale, JD and Douyin 6%. After that your
 return rate decides the year, and shoes come back often enough to eat a thin
 margin.
 
@@ -5584,17 +5605,17 @@ Fees first, though, because that is what brands ask.
 | Footwear, first year (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
 | Security deposit, refundable | 50,000 | 35,500 (about US$5,000) | 5,000 |
-| Annual platform fee | 60,000 | 7,100 (about US$1,000) | none |
-| Commission on each sale | 5% | 5% | 6% |
-| Cash in before the first sale | 110,000 | 42,600 | 5,000 |
+| Annual platform fee | 60,000 | none | none |
+| Commission on each sale | 5% | 6% | 6% |
+| Cash in before the first sale | 110,000 | 35,500 | 5,000 |
 
 </div>
 
 > Deposit, annual fee and commission by category for footwear on Tmall
 > Global, JD Worldwide and Douyin cross-border.
-> Source: TheChinaPath calculator data, September 2026.
+> Source: TheChinaPath calculator data, October 2026.
 
-Those are the published bands, checked September 2026. A TM trademark or a
+Those are the published bands, checked October 2026. A TM trademark or a
 multi-brand store raises the Tmall deposit above the flagship figure, and your
 partner may quote differently. Argue from the row.
 
@@ -5614,9 +5635,18 @@ from the fee schedule Douyin published on July 15, 2026.
 > Source: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》, July
 > 15, 2026. https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
 
-JD quotes both figures in dollars, on a ladder that steps up with cumulative
-sales, so the RMB above is the entry rung at 7.1. Douyin charges no annual fee
-at all, which makes it look like the cheap door until you get to returns.
+JD quotes its deposit in dollars. A brand flagship pays US$5,000 for
+footwear, converted above at 7.1, and other store types pay US$15,000. There
+is no annual fee, just a 0.9% transaction fee on each order.
+
+> Footwear (鞋靴) pays JD Worldwide a 6% operating support fee plus a 0.9%
+> transaction fee, and a brand flagship deposits US$5,000.
+> Source: JD Worldwide (京东全球购), category fee standard, revised
+> September 24, 2026, effective October 1, 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
+
+Douyin has no annual fee either, which makes it look like the cheap door
+until you get to returns.
 
 None of that includes stock, media, a Tmall Partner retainer or the bonded
 stack. Add the bonded warehouse deposit, the tax prepayment and the store
@@ -5729,12 +5759,12 @@ Chinese buyer opens to decide whether a foreign shoe brand is real, and it
 outlives the campaign that launched it.
 
 JD Worldwide flips it when you are testing whether China wants the brand at
-all. Same 5% commission, a quarter of the cash to get live, a shorter
+all. A point more in commission, about a third of the cash to get live, a shorter
 conversation with your CFO if the answer comes back no.
 
 Douyin cross-border deserves more caution than its price tag suggests. No
 annual fee, a 5,000 RMB refundable deposit, the lowest paper cost of the three
-even with the highest commission, and the whole exposure sitting in the
+even at 6% commission, and the whole exposure sitting in the
 returns column. Go there once your size data is
 clean, not to collect it. The
 [Douyin cost calculator](/tools/douyin-cost-calculator) prices that route the
@@ -5799,7 +5829,7 @@ team](/grow-in-china/cross-border-ecommerce).
 # What it costs to sell bedding and linens in China
 URL: https://www.thechinapath.com/insights/cost-to-sell-home-textiles-and-bedding-in-china
 Published: 2026-09-30
-Updated: 2026-09-30
+Updated: 2026-10-02
 Author: TheChinaPath
 Category: E-Commerce
 
@@ -5855,8 +5885,8 @@ JD quotes in dollars and scales the deposit by store type and sales.
 > JD Worldwide charges bedding a 3% operating support fee plus a 0.9%
 > transaction fee, and asks US$5,000 from a brand flagship. Other store
 > types pay US$10,000 to US$15,000.
-> Source: JD Worldwide (京东全球购), category fee standard, effective
-> August 1, 2026.
+> Source: JD Worldwide (京东全球购), category fee standard, revised
+> September 24, 2026, effective October 1, 2026.
 > https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 Douyin is the odd one. It barely asks for a deposit, then takes the biggest
@@ -6499,7 +6529,7 @@ Which is exactly why this is the right moment to declare your own Last 11.11 Pla
 # Double 11 preparation checklist: 50 days out
 URL: https://www.thechinapath.com/insights/double-11-preparation-checklist
 Published: 2026-09-22
-Updated: 2026-09-22
+Updated: 2026-10-02
 Author: TheChinaPath
 Category: E-Commerce
 
@@ -6549,10 +6579,8 @@ longest on record, and each big platform ran its own window.
 > Source: The Paper (澎湃新闻), November 2025.
 > https://m.thepaper.cn/newsDetail_forward_31971814
 
-Read that as an operator and the 50 days collapse. If Tmall opens around
-October 15 again, you have roughly 20 working days before shoppers can put
-your product in a cart. By the back half of the countdown you are already
-trading.
+Read that as an operator and the 50 days collapse. By the back half of the
+countdown you are already trading.
 
 The 2026 cycle is already moving.
 
@@ -6574,8 +6602,22 @@ Kuaishou moved a day later and published its calendar with it.
 > Source: Ebrun (亿邦动力), September 2026.
 > https://news.qq.com/rain/a/20260919A088XY00
 
-Registration is open on both. Kuaishou starts selling on October 7, Douyin
-sometime in October. Early October is the date that belongs on your wall.
+Tmall and JD dated their own windows the same week.
+
+> Tmall opens Double 11 2026 presale and deposit payments on October 15.
+> Final payments start at 20:00 on October 20, and spot selling runs from
+> then until 23:59 on November 13.
+> Source: Beijing Business Today (北京商报), via NetEase, September 2026.
+> https://www.163.com/dy/article/L7E4TETQ0519DFFO.html
+
+> JD opens its 2026 Double 11 in full, with spot goods on sale, on October
+> 12.
+> Source: National Business Daily (每日经济新闻), September 2026.
+> https://www.nbd.com.cn/articles/2026-09-24/4591116.html
+
+So Kuaishou sells from October 7, JD from October 12 and Tmall from
+October 15, with Douyin somewhere in October. Early October is the date
+that belongs on your wall.
 
 For scale, and for anyone still arguing internally about whether the festival
 is worth the working capital:
@@ -6737,19 +6779,20 @@ read the “what breaks” column out loud in the kickoff, because that column
 is the only part of a checklist anybody remembers in week six.
 
 Every date above was counted back from Wednesday, November 11, 2026, and
-every platform window here was checked against its source announcement on
-September 22. Platforms move their own dates. Check the ones that matter to
-you on the merchant back end before you commit budget against them.
+every platform window here was checked against its source announcement:
+Douyin and Kuaishou on September 22, Tmall and JD on October 2. Platforms
+move their own dates. Check the ones that matter to you on the merchant back
+end before you commit budget against them.
 
 ## Questions we get asked
 
 **When does Double 11 2026 actually start?**
 
 November 11 is the headline day, but the selling starts weeks earlier.
-Douyin has said its 2026 sale runs from October through November 11, and
-Kuaishou's cycle opens October 7. In 2025, Tmall sold from October 15 and JD
-from October 9. Plan for mid-October, and treat any later platform
-announcement as a bonus.
+Kuaishou's cycle opens October 7 and JD opens on October 12. Tmall starts
+presale and deposits on October 15, with spot selling from 20:00 on
+October 20. Douyin has said its 2026 sale runs from October through
+November 11. Plan for the second week of October.
 
 **Is it too late to join Double 11 2026 if we have no China store?**
 
@@ -7649,7 +7692,7 @@ Incorporating sustainability into a brand's core values and marketing strategies
 # How Allbirds entered China, and what it cost them
 URL: https://www.thechinapath.com/insights/how-allbirds-entered-china
 Published: 2026-09-10
-Updated: 2026-09-10
+Updated: 2026-10-02
 Author: TheChinaPath
 Category: Market Strategy
 
@@ -7749,9 +7792,9 @@ rate.
 The cheaper way to buy the same information was on the table well before
 2019. A cross-border store puts the product in front of Chinese buyers with
 no Chinese company behind it. Footwear on Tmall Global takes a 50,000 RMB
-deposit and a 60,000 RMB annual fee at 5% commission; JD Worldwide's footwear
-rung is 35,500 RMB and 7,100 RMB, also at 5% (TheChinaPath calculator data,
-September 2026).
+deposit and a 60,000 RMB annual fee at 5% commission; JD Worldwide asks a
+35,500 RMB flagship deposit, no annual fee and 6% (TheChinaPath calculator
+data, October 2026).
 
 Today's numbers, not 2019's. Run them in the [Tmall Global setup and run
 calculator](/tools/tmall-global-setup-and-run), or read the category
@@ -8086,7 +8129,7 @@ If you are rethinking your JD strategy or planning how to engage with JD Mall, w
 # How On Running entered China, and what it cost them
 URL: https://www.thechinapath.com/insights/how-on-running-entered-china
 Published: 2026-09-24
-Updated: 2026-09-24
+Updated: 2026-10-02
 Author: TheChinaPath
 Category: Market Strategy
 
@@ -8239,11 +8282,11 @@ year in China usually can't carry it for three years.
 
 The cheaper test runs through a cross-border store, with no Chinese company
 behind it. Sports and outdoor on Tmall Global takes a 50,000 RMB deposit and
-a 60,000 RMB annual fee at 5% commission. JD Worldwide's rung is 35,500 RMB
-and 7,100 RMB, also at 5%. Douyin cross-border takes 6% on sports and
-outdoor, and its deposit no longer depends on category: since June 2025 it
-follows last month's sales and tops out at 5,000 RMB (TheChinaPath calculator
-data, September 2026; Douyin's 《【全球购】保证金管理规范》,
+a 60,000 RMB annual fee at 5% commission. JD Worldwide asks a 35,500 RMB
+flagship deposit, no annual fee and 6%. Douyin cross-border also takes 6% on
+sports and outdoor, and its deposit no longer depends on category: since June
+2025 it follows last month's sales and tops out at 5,000 RMB (TheChinaPath
+calculator data, October 2026; Douyin's 《【全球购】保证金管理规范》,
 https://school.jinritemai.com/doudian/web/articlev0/107821). Run your own
 numbers in the [Tmall Global setup and run
 calculator](/tools/tmall-global-setup-and-run).

@@ -62,6 +62,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 6. What a vetted shortlist actually looks like
 
 **Internal links.** `/compass`, `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/work`
+**On publish.** Add a link to this piece from `/insights/verify-chinese-company-qichacha` (P03, published September 24, 2026, which could not link here before 07A was live), in EN and in its FR, DE and ES twins, at the line on checking a candidate before the first call. Move that article's `updatedDate` in each locale.
 **CTA.** Compass shortlist.
 
 ## Slot spec
@@ -73,6 +74,13 @@ Every Anchor must carry:
 2. The answer inside the first 60 words.
 3. One real HTML table with real figures, in a scrollable container.
 4. At least one number only this agency can publish, labelled as such.
+   A brief that asks for a figure "from stores under management" or "from
+   Compass" means that figure only when it is on file in
+   sources/verified-sources.md or sources/compass-stats.md. When it is
+   not, the settled fallback applies: TheChinaPath calculator data, then a
+   published case page; if neither fits, the piece runs without one.
+   Never a placeholder marker, never a request for the figure in the log
+   or the email.
 5. A named human byline, published date and updated date.
 6. Three to five internal links, at least one to a service page and one
    to a calculator or Compass.

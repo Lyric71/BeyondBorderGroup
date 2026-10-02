@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Fee, what it buys, how it is charged, a sourced range (current, dated), who pays under a typical distribution deal.
 
-**The proprietary number.** Compass: share of distributors on file that pre-fund listing fees. Fallback: log the gap.
+**The proprietary number.** Compass: share of distributors on file that pre-fund listing fees. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Leads (verify, cite primary).** Current retailer supplier terms; MOFCOM rules on retailer-supplier fees (零售商供应商公平交易管理办法). 2012 press figures only as history.
 

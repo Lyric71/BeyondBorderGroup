@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Grant type (national, regional, channel, online, category), what the brand gives up, target to attach, exit trigger.
 
-**The proprietary number.** Compass: share of distributors on file that asked for national exclusivity at first meeting. Fallback: log the gap.
+**The proprietary number.** Compass: share of distributors on file that asked for national exclusivity at first meeting. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.** 1. Why distributors ask for everything 2. The Beijing double-damages case 3. The table 4. Targets and take-or-pay 5. Online carve-outs 6. Notice and review
 

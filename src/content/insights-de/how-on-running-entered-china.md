@@ -2,7 +2,7 @@
 title: "On Running in China: erst Tmall, dann die Läden"
 description: "On Running kam 2018 ohne eigenen Laden nach China und setzte dort 2019 rund 1,9 Millionen Euro um. Ende 2025 zählte die Marke 38 Standorte im Land."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Market Strategy"
 industry: "Sports & Leisure"
@@ -121,7 +121,7 @@ Welches Tmall gemeint ist, lassen die Berichte offen. Zwei Indizien sprechen fü
 
 Wer diesen Weg wählt, finanziert schon vor dem ersten Verkauf eine Belegschaft in Shanghai und eine chinesische Gesellschaft. On konnte sich das leisten. Eine Marke mit 1,8 Millionen Franken Jahresumsatz in China, rund 1,9 Millionen Euro, hält das selten drei Jahre durch.
 
-Günstiger lässt sich der Markt über einen Cross-Border-Shop testen, ganz ohne chinesische Gesellschaft. Für Sport und Outdoor verlangt Tmall Global 50.000 Yuan Kaution und 60.000 Yuan Jahresgebühr bei 5 % Provision. Bei JD Worldwide sind es 35.500 und 7.100 Yuan, ebenfalls bei 5 %. Douyin Cross-Border nimmt für Sport und Outdoor 6 %, und seine Kaution hängt nicht mehr an der Kategorie: Seit Juni 2025 folgt sie dem Umsatz des Vormonats und liegt höchstens bei 5.000 Yuan (Rechnerdaten von TheChinaPath, September 2026; 《【全球购】保证金管理规范》 von Douyin, https://school.jinritemai.com/doudian/web/articlev0/107821). Mit eigenen Annahmen durchrechnen lässt sich das im [Kostenrechner für Tmall Global](/de/rechner/tmall-global-kostenrechner).
+Günstiger lässt sich der Markt über einen Cross-Border-Shop testen, ganz ohne chinesische Gesellschaft. Für Sport und Outdoor verlangt Tmall Global 50.000 Yuan Kaution und 60.000 Yuan Jahresgebühr bei 5 % Provision. JD Worldwide verlangt von einem Marken-Flagship 35.500 Yuan Kaution, keine Jahresgebühr und 6 % Provision. Auch Douyin Cross-Border nimmt für Sport und Outdoor 6 %, und seine Kaution hängt nicht mehr an der Kategorie: Seit Juni 2025 folgt sie dem Umsatz des Vormonats und liegt höchstens bei 5.000 Yuan (Rechnerdaten von TheChinaPath, Oktober 2026; 《【全球购】保证金管理规范》 von Douyin, https://school.jinritemai.com/doudian/web/articlev0/107821). Mit eigenen Annahmen durchrechnen lässt sich das im [Kostenrechner für Tmall Global](/de/rechner/tmall-global-kostenrechner).
 
 ## Was sich beziffern lässt
 

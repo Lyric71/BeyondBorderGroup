@@ -42,7 +42,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Difficulty | OPEN |
 | Industry | none (cross-industry), leave `industry` out of the frontmatter |
 | Body length | 2,200 to 2,400 for the article, plus the gated report (body only, per the char-count rule) |
-| Report | `output/reports/china-market-entry-cost-benchmark.md`, gated PDF, assembled by a person (Gated, aggregated calculator runs) |
+| Report | `output/reports/china-market-entry-cost-benchmark.md`, drafted in the same run; publishes as a printable page at `/guides/china-market-entry-cost-benchmark/` with a request CTA, because the site has no gated download (editorial/CLAUDE.md, settled fallback) |
 
 ## The brief
 
@@ -78,6 +78,13 @@ Every Anchor must carry:
 2. The answer inside the first 60 words.
 3. One real HTML table with real figures, in a scrollable container.
 4. At least one number only this agency can publish, labelled as such.
+   A brief that asks for a figure "from stores under management" or "from
+   Compass" means that figure only when it is on file in
+   sources/verified-sources.md or sources/compass-stats.md. When it is
+   not, the settled fallback applies: TheChinaPath calculator data, then a
+   published case page; if neither fits, the piece runs without one.
+   Never a placeholder marker, never a request for the figure in the log
+   or the email.
 5. A named human byline, published date and updated date.
 6. Three to five internal links, at least one to a service page and one
    to a calculator or Compass.

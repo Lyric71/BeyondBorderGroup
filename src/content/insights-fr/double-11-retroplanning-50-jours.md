@@ -2,7 +2,7 @@
 title: "Double 11 : le rétroplanning à 50 jours"
 description: "Le rétroplanning Double 11 des marques étrangères, remonté depuis le 11 novembre : qui tient chaque ligne, et ce que coûte un jour de retard."
 pubDate: "2026-09-22"
-updatedDate: "2026-09-22"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "JD", "Douyin", "Kuaishou"]
@@ -62,10 +62,8 @@ propre fenêtre.
 > Source : The Paper (澎湃新闻), novembre 2025.
 > https://m.thepaper.cn/newsDetail_forward_31971814
 
-Traduit en opérationnel, le compte à rebours s'effondre. Si Tmall ouvre de
-nouveau autour du 15 octobre, il vous reste une vingtaine de jours ouvrés
-avant qu'un acheteur puisse mettre votre produit au panier. Sur la seconde
-moitié du compte à rebours, vous vendez déjà.
+Traduit en opérationnel, le compte à rebours s'effondre : sur sa seconde
+moitié, vous vendez déjà.
 
 Le cycle 2026, lui, est lancé.
 
@@ -88,8 +86,21 @@ Kuaishou a suivi un jour plus tard, calendrier à l'appui.
 > Source : Ebrun (亿邦动力), septembre 2026.
 > https://news.qq.com/rain/a/20260919A088XY00
 
-Les inscriptions sont ouvertes des deux côtés. Kuaishou vend à partir du
-7 octobre, Douyin courant octobre. C'est début octobre qu'il faut afficher au
+Tmall et JD ont daté leurs propres fenêtres dans la même semaine.
+
+> Tmall ouvre la prévente et le paiement des acomptes de son Double 11 2026
+> le 15 octobre. Le solde se règle à partir du 20 octobre à 20 h, et la
+> vente sur stock court de ce moment au 13 novembre à 23 h 59.
+> Source : Beijing Business Today (北京商报), via NetEase, septembre 2026.
+> https://www.163.com/dy/article/L7E4TETQ0519DFFO.html
+
+> JD lance pleinement son Double 11 2026, stock disponible à la vente, le
+> 12 octobre.
+> Source : National Business Daily (每日经济新闻), septembre 2026.
+> https://www.nbd.com.cn/articles/2026-09-24/4591116.html
+
+Kuaishou vend donc dès le 7 octobre, JD dès le 12, Tmall dès le 15, et
+Douyin dans le courant du mois. C'est début octobre qu'il faut afficher au
 mur.
 
 Pour l'ordre de grandeur, et pour ceux qui discutent encore en interne de
@@ -266,7 +277,8 @@ souvienne encore en semaine six.
 
 Toutes les dates ci-dessus ont été calculées à rebours du mercredi
 11 novembre 2026, et chaque fenêtre de plateforme a été vérifiée dans son
-annonce d'origine le 22 septembre. Les plateformes déplacent leurs propres
+annonce d'origine : celles de Douyin et de Kuaishou le 22 septembre, celles
+de Tmall et de JD le 2 octobre. Les plateformes déplacent leurs propres
 dates. Vérifiez celles qui vous concernent dans le back-office marchand avant
 d'engager un budget.
 
@@ -275,10 +287,10 @@ d'engager un budget.
 **Quand commence vraiment le Double 11 2026 ?**
 
 Le 11 novembre est le jour phare, mais la vente démarre des semaines plus
-tôt. Douyin annonce une vente 2026 d'octobre au 11 novembre, et le cycle
-Kuaishou s'ouvre le 7 octobre. En 2025, Tmall vendait depuis le 15 octobre et
-JD depuis le 9. Calez-vous sur la mi-octobre et prenez toute annonce plus
-tardive comme un bonus.
+tôt. Le cycle Kuaishou s'ouvre le 7 octobre et JD démarre le 12. Tmall lance la
+prévente et les acomptes le 15, puis la vente sur stock le 20 octobre à
+20 h. Douyin annonce une vente d'octobre au 11 novembre. Calez-vous sur la
+deuxième semaine d'octobre.
 
 **Est-il trop tard pour faire le Double 11 2026 sans boutique en Chine ?**
 

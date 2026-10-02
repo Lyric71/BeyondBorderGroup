@@ -312,11 +312,6 @@ names (from Compass, September 2026). Meet them and check them, then sign the
 winner with a start date tied to your notice. Then read the old contract's
 termination clause, including any deadline on using it, and count the stock.
 
-<!-- TODO: proprietary number. The brief asks for the Compass median months
-from first meeting to a signed replacement. editorial/sources/compass-stats.md
-does not exist, so no such figure is printed. Add it on the first refresh
-after the Compass snapshot lands. -->
-
 **Notice day.** Send written notice in the form, and to the address, the
 contract names. Keep proof of delivery, because the notice takes effect when
 it arrives. Make the buy-back offer, or confirm the sell-off window, in the
@@ -439,8 +434,8 @@ PROPRIETARY NUMBER: "A Compass shortlist usually takes two to three weeks
   2026)." Source: src/content/pages/partner-guides/shared.ts (compassTiming
   and heroStats), published site copy. The brief's figure (Compass median
   months from first meeting to a signed replacement) does not exist yet:
-  editorial/sources/compass-stats.md is missing. An HTML-comment TODO marks
-  the spot in the calendar section.
+  editorial/sources/compass-stats.md is missing. Settled fallback
+  (editorial/CLAUDE.md, "The proprietary number"): the published timing above stands. Closed.
 HAND-OFFS: none. Nothing here touches KOL seeding, community management,
   Baidu SEO, ICP filing or hosting.
 CLIENT SIGN-OFF NEEDED: none. Dirui and Cheng'antang are named from Dirui's

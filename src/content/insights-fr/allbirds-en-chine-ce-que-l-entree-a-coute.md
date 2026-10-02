@@ -2,7 +2,7 @@
 title: "Allbirds en Chine : le prix de cinq ans en solo"
 description: "Cinq ans en solo, six magasins, une filiale de Shanghai vendue 1,9 million d'euros et la Chine confiée à Belle Fashion pour dix ans."
 pubDate: "2026-09-10"
-updatedDate: "2026-09-10"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Market Strategy"
 industry: "Fashion & Luxury"
@@ -116,8 +116,9 @@ Or la même information s'achetait bien moins cher, et bien avant 2019. Une
 boutique transfrontalière place le produit devant les acheteurs chinois sans
 qu'aucune société chinoise soit créée. Sur Tmall Global, la chaussure réclame
 50 000 RMB de dépôt et 60 000 RMB de frais annuels, à 5 % de commission ; sur
-JD Worldwide, le barreau chaussure tombe à 35 500 RMB et 7 100 RMB, à 5 %
-également (données des calculateurs TheChinaPath, septembre 2026).
+JD Worldwide, une boutique officielle de marque dépose 35 500 RMB, ne paie
+aucuns frais annuels et cède 6 % (données des calculateurs TheChinaPath,
+octobre 2026).
 
 Ce sont les montants d'aujourd'hui, pas ceux de 2019. À passer dans le
 [calculateur de coûts Tmall

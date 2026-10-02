@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** One agency vs two: coordination, pricing conflicts, cost, accountability, what to check.
 
-**The proprietary number.** Compass: share of TPs on file with a rated Douyin practice. Fallback: log the gap.
+**The proprietary number.** Compass: share of TPs on file with a rated Douyin practice. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.** 1. Why the question matters now (Tmall-first operators moving to Douyin) 2. The table 3. Price conflict between channels 4. Checking the Douyin team 5. Contract structure for one or two agencies
 

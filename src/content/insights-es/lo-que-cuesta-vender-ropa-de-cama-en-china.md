@@ -2,7 +2,7 @@
 title: "Lo que cuesta vender ropa de cama en China"
 description: "La ropa de cama abre en JD Worldwide con unos 4.500 euros de depósito y un 3,9 % por venta; en Tmall, 50.000 yuanes y un 5 %. Pasados 5.000, más impuestos."
 pubDate: "2026-09-30"
-updatedDate: "2026-09-30"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Home & Living"
@@ -75,8 +75,8 @@ volumen de ventas.
 > 3 % más un 0,9 % por transacción, y exige unos 4.500 euros a una tienda
 > oficial de marca. El resto de formatos de tienda deposita entre unos 9.000
 > y 13.500 euros.
-> Fuente: JD Worldwide (京东全球购), baremo de tarifas por categoría, en
-> vigor desde el 1 de agosto de 2026.
+> Fuente: JD Worldwide (京东全球购), baremo de tarifas por categoría, revisado
+> el 24 de septiembre de 2026, en vigor desde el 1 de octubre de 2026.
 > https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 Douyin va por libre. Apenas pide depósito, pero después se queda con la

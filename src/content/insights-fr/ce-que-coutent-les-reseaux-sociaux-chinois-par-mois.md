@@ -2,7 +2,7 @@
 title: "Réseaux sociaux en Chine : le budget mensuel d'une marque"
 description: "Contenus, médias payants, équipe : ce que coûtent chaque mois Xiaohongshu, Douyin, WeChat et Weibo à une marque étrangère, et deux budgets pour démarrer."
 pubDate: "2026-09-29"
-updatedDate: "2026-09-29"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Xiaohongshu", "Douyin", "WeChat", "Weibo"]
@@ -177,19 +177,19 @@ Nous retenons 10 000 RMB au niveau croissance et 20 000 RMB au niveau vente
 sur toutes les plateformes, afin de comparer contenus et effectifs à médias
 égaux. WeChat fait exception, parce que son propre minimum publié est plus
 élevé. La dernière grille publique des publicités Moments que nous ayons pu
-vérifier date de 2018 : cette ligne se lit donc comme un plancher aux prix
-de 2018.
+vérifier date du deuxième trimestre 2020 et reprend les minimums de 2018 :
+cette ligne se lit donc comme un plancher aux prix de 2020.
 
-> En 2018, les publicités Moments de WeChat achetées aux enchères exigeaient
-> un budget quotidien d'au moins 1 000 RMB. Une campagne Moments réservée
-> demandait au moins 50 000 RMB, au tarif catalogue de 150 RMB les mille
-> affichages d'une publicité image à Pékin et à Shanghai.
-> Source : WeChat Ads (微信广告), troisième trimestre 2018. https://wximg.qq.com/wxp/wxadtouch/upload/t2/file-1533693930261.pdf
+> Au deuxième trimestre 2020, les publicités Moments de WeChat achetées aux
+> enchères exigeaient un budget quotidien d'au moins 1 000 RMB. Une campagne
+> Moments réservée demandait au moins 50 000 RMB, au tarif catalogue de 150
+> RMB les mille affichages d'une publicité image à Pékin et à Shanghai.
+> Source : WeChat Ads (微信广告), deuxième trimestre 2020. https://wxa.wxs.qq.com/wxadtouch/upload/t2/ar2zl7ks_250201f1.pdf
 
 Un mois de publicité quotidienne aux enchères à ce minimum représente
 30 000 RMB, une campagne réservée 50 000 RMB. Ce sont les montants retenus
 pour WeChat aux niveaux croissance et vente, et les moins sûrs du tableau :
-en huit ans, les prix ont eu le temps de bouger. La ligne vente de WeChat
+en six ans, les prix ont eu le temps de bouger. La ligne vente de WeChat
 suppose en outre une entité chinoise ou un distributeur pour vendre, pour
 des raisons exposées plus loin.
 
@@ -206,7 +206,7 @@ d'exécuter. En dessous, rien n'est diffusé. Seuls certains sont publics.
 | Douyin, créateurs (Xingtu) | 10 000 RMB par mission de recrutement | 5 % du montant de la mission | Août 2026 |
 | Xiaohongshu, créateurs | Aucun publié | 10 % du montant du contrat | Novembre 2021 |
 | Xiaohongshu, publicité | Aucun publié | Aucuns frais publiés | Aucune page publique trouvée |
-| WeChat, publicités Moments | 1 000 RMB par jour aux enchères ; 50 000 RMB par campagne réservée | Aucuns frais publiés | Troisième trimestre 2018 |
+| WeChat, publicités Moments | 1 000 RMB par jour aux enchères ; 50 000 RMB par campagne réservée | Aucuns frais publiés | Deuxième trimestre 2020 |
 | Weibo, publicité | Aucun minimum daté publié | Aucuns frais publiés | Aucune page datée trouvée |
 
 </div>

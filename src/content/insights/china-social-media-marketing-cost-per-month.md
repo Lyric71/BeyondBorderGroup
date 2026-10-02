@@ -2,7 +2,7 @@
 title: "What China social media marketing costs per month"
 description: "China social media marketing cost per month: content, paid media, and staff on Xiaohongshu, Douyin, WeChat, and Weibo, plus two year-one totals."
 pubDate: "2026-09-29"
-updatedDate: "2026-09-29"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Xiaohongshu", "Douyin", "WeChat", "Weibo"]
@@ -159,18 +159,19 @@ calculator on this site at its default settings.
 We use RMB 10,000 at the build level and RMB 20,000 at the sell level on
 every platform, so the table compares content and staffing on equal media.
 WeChat is the exception, because its own published minimum sits higher.
-Tencent's last public Moments rate card that we could verify is from 2018,
-so read that row as a floor from 2018 prices.
+Tencent's last public Moments rate card that we could verify dates from the
+second quarter of 2020. It carries the same minimums as the 2018 card, so
+read that row as a floor at 2020 prices.
 
-> In 2018, WeChat Moments ads bought at auction needed a daily budget of at
-> least RMB 1,000. A reserved Moments campaign needed at least RMB 50,000,
-> at list prices of RMB 150 per thousand image-ad views in Beijing and
-> Shanghai.
-> Source: WeChat Ads (微信广告), Q3 2018. https://wximg.qq.com/wxp/wxadtouch/upload/t2/file-1533693930261.pdf
+> In the second quarter of 2020, WeChat Moments ads bought at auction needed
+> a daily budget of at least RMB 1,000. A reserved Moments campaign needed
+> at least RMB 50,000, at list prices of RMB 150 per thousand image-ad views
+> in Beijing and Shanghai.
+> Source: WeChat Ads (微信广告), Q2 2020. https://wxa.wxs.qq.com/wxadtouch/upload/t2/ar2zl7ks_250201f1.pdf
 
 A month of daily auction ads at that minimum is RMB 30,000. One reserved
 campaign is RMB 50,000. Those are the WeChat build and sell figures, and
-the least certain numbers in the table: prices have had eight years to
+the least certain numbers in the table: prices have had six years to
 move. The WeChat sell row also assumes a China entity or a distributor to
 sell through, for reasons covered below.
 
@@ -187,7 +188,7 @@ live. Only some of them are public.
 | Douyin creators (Xingtu) | RMB 10,000 per recruitment task | 5% of the task value | August 2026 |
 | Xiaohongshu creators | None published | 10% of the deal value | November 2021 |
 | Xiaohongshu ads | None published | None published | No public page found |
-| WeChat Moments ads | RMB 1,000 a day at auction; RMB 50,000 per reserved campaign | None published | Q3 2018 |
+| WeChat Moments ads | RMB 1,000 a day at auction; RMB 50,000 per reserved campaign | None published | Q2 2020 |
 | Weibo ads | No dated minimum published | None published | No dated page found |
 
 </div>

@@ -1,15 +1,15 @@
 ---
 title: "Ce que coûte la vente de soins du visage en Chine"
-description: "Ouvrir en soin du visage coûte 80 000 RMB sur Tmall Global, 42 600 sur JD Worldwide, 5 000 sur Douyin. Ensuite, le format fait la taxe."
+description: "Ouvrir en soin du visage coûte 80 000 RMB sur Tmall Global, 35 500 sur JD Worldwide, 5 000 sur Douyin. Ensuite, le format fait la taxe."
 pubDate: "2026-09-16"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Beauty & Personal Care"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Soin du visage", "Tmall Global", "JD Worldwide", "Douyin", "E-commerce transfrontalier", "Frais de plateforme", "NMPA"]
 keyTakeaways:
-  - "Ouvrir en soin du visage coûte 80 000 RMB sur Tmall Global, 42 600 RMB sur JD Worldwide et 5 000 RMB sur Douyin cross-border, avant le stock, les médias et la rétribution d'un partenaire (données des calculateurs TheChinaPath, septembre 2026)."
+  - "Ouvrir en soin du visage coûte 80 000 RMB sur Tmall Global, 35 500 RMB sur JD Worldwide et 5 000 RMB sur Douyin cross-border, avant le stock, les médias et la rétribution d'un partenaire (données des calculateurs TheChinaPath, octobre 2026)."
   - "Tmall Global prélève 4 % sur le soin du visage quand les deux autres prennent 5 %, et range la catégorie dans la tranche basse de frais annuels, à 30 000 RMB."
   - "Le transfrontalier dispense entièrement du dépôt NMPA, parce que la marchandise est contrôlée comme un bien à usage personnel. Le régime général, lui, ne dispense de rien."
   - "Un soin facturé 10 RMB le millilitre ou plus bascule en cosmétique haut de gamme et supporte la taxe à la consommation : l'acheteur paie alors près de 23 % au lieu de 9,1 %."
@@ -19,7 +19,7 @@ heroImageAlt: "Dans le bureau d'exploitation d'un entrepôt sous douane de Canto
 ---
 
 Commencez par Tmall Global. Y ouvrir une boutique de soin du visage coûte
-80 000 RMB avant le premier pot vendu, contre 42 600 RMB sur JD Worldwide et
+80 000 RMB avant le premier pot vendu, contre 35 500 RMB sur JD Worldwide et
 5 000 RMB sur Douyin cross-border. Tmall prélève 4 % sur chaque vente, les
 deux autres 5 %. Puis vient la taxe que votre acheteur acquitte à la commande, celle que
 commande le format de votre flacon. C'est elle qui pèse le plus lourd.
@@ -34,21 +34,30 @@ de coûts, et la plus clémente sur les frais. Le tableau d'abord.
 | Soin du visage, première année (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
 | Dépôt de garantie, restituable | 50 000 | 35 500 (environ 4 500 euros) | 5 000 |
-| Frais annuels de plateforme | 30 000 | 7 100 (environ 900 euros) | aucun |
+| Frais annuels de plateforme | 30 000 | aucun | aucun |
 | Commission sur chaque vente | 4 % | 5 % | 5 % |
-| Trésorerie avant la première vente | 80 000 | 42 600 | 5 000 |
+| Trésorerie avant la première vente | 80 000 | 35 500 | 5 000 |
 
 </div>
 
 > Dépôt, frais annuels et commission par catégorie pour le soin du visage sur
 > Tmall Global, JD Worldwide et Douyin cross-border.
-> Source : données des calculateurs TheChinaPath, septembre 2026.
+> Source : données des calculateurs TheChinaPath, octobre 2026.
 
-JD ajoute par-dessus une commission fixe de 0,9 % sur les transactions, et
-affiche dépôt et frais d'usage en dollars, sur une échelle qui monte avec
-le cumul des ventes : le chiffre en RMB ci-dessus correspond au premier
-barreau. Une marque déposée en TM ou une boutique multimarque fait monter le
-dépôt Tmall. Fourchettes vérifiées en septembre 2026.
+JD ajoute par-dessus une commission fixe de 0,9 % sur les transactions et ne
+facture aucuns frais annuels. Son dépôt est libellé en dollars : environ
+4 500 euros pour une boutique officielle de marque, soit les 35 500 RMB du
+tableau, puis de 9 000 à 13 500 euros environ pour les autres formats, à
+mesure que les ventes montent. Une marque déposée en TM ou une boutique
+multimarque fait monter le dépôt Tmall. Fourchettes vérifiées en octobre 2026.
+
+> JD Worldwide applique à la beauté et aux soins (美妆护肤) des frais de
+> soutien opérationnel de 5 % auxquels s'ajoutent 0,9 % de frais de
+> transaction, et demande environ 4 500 euros de dépôt à une boutique
+> officielle de marque.
+> Source : JD Worldwide (京东全球购), barème des frais par catégorie, révisé
+> le 24 septembre 2026, en vigueur depuis le 1er octobre 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 Chez Douyin, le dépôt n'a plus rien à voir avec le soin du visage. Depuis
 juin 2025, il suit les ventes du mois précédent : 500 RMB jusqu'à
@@ -62,16 +71,25 @@ le palier le plus haut.
 > dernière révision en vigueur le 5 juin 2025.
 > https://school.jinritemai.com/doudian/web/articlev0/107821
 
-Un chiffre de ce tableau sort du rang. Le soin du visage et le maquillage
-sont les deux seules catégories, sur les dix-neuf que compte notre
-calculateur Tmall Global, à être calées sur 4 %. Tout le reste tourne à 2,
-2,5, 3 ou 5, et le soin décroche en prime la tranche basse de frais annuels,
-30 000 plutôt que 60 000.
+Un chiffre de ce tableau sort du rang. Le soin du visage, le maquillage et
+les soins capillaires sont les trois seules catégories, sur les dix-neuf que
+compte notre calculateur Tmall Global, à être calées sur 4 %. Tout le reste
+tourne à 2, 3 ou 5, et le soin décroche en prime la tranche basse de frais
+annuels, 30 000 plutôt que 60 000.
 
-Regardez maintenant où tombe la ligne voisine. Un nettoyant visage rangé en
-hygiène-beauté paie 2,5 % et 60 000 RMB par an, et ces deux barèmes se
-croisent exactement à 2 millions de RMB de GMV annuel. L'étiquette, ce n'est
-pas vous qui la choisissez, c'est le produit.
+Regardez maintenant où tombe la ligne voisine. Les appareils de beauté
+(美容美体仪器) relèvent du même ensemble cosmétique et des mêmes 30 000 RMB
+de frais annuels, mais paient 5 % par vente.
+
+> Tmall Global prélève 4 % sur les soins de la peau, le maquillage et les
+> soins capillaires, 5 % sur les appareils de beauté, avec dans tous les cas
+> 30 000 RMB de frais annuels.
+> Source : Tmall Global (天猫国际), barème des frais annuels et des frais de
+> service technique par catégorie, ajustement en vigueur depuis le
+> 9 septembre 2026.
+> https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625
+
+L'étiquette, ce n'est pas vous qui la choisissez, c'est le produit.
 
 ## La voie d'entrée pour le soin du visage
 
@@ -254,10 +272,10 @@ ailleurs, dans les médias et dans le stock qui dort sous douane.
 Tmall Global. La commission de 4 % est la plus basse des trois, les frais
 annuels tombent dans la tranche basse, et un flagship y reste la page qu'un
 acheteur chinois ouvre pour décider si une marque de soin étrangère existe
-vraiment. Cela vaut les 37 400 RMB d'écart avec JD.
+vraiment. Cela vaut les 44 500 RMB d'écart avec JD.
 
 JD Worldwide renverse le calcul quand la question ouverte est de savoir si la
-Chine veut de la marque. Même voie, mêmes règles, à peine plus de la moitié
+Chine veut de la marque. Même voie, mêmes règles, un peu moins de la moitié
 de la trésorerie pour être en ligne.
 
 Douyin fait un autre métier. Dépôt le plus faible, aucun frais annuel, et la

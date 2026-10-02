@@ -2,7 +2,7 @@
 title: "Social Media in China: Was ein Monat Marketing kostet"
 description: "Content, bezahlte Reichweite, Personal: was Xiaohongshu, Douyin, WeChat und Weibo eine ausländische Marke im Monat kosten, dazu zwei Budgets zum Einstieg."
 pubDate: "2026-09-29"
-updatedDate: "2026-09-29"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Xiaohongshu", "Douyin", "WeChat", "Weibo"]
@@ -174,19 +174,21 @@ für den Verkauf an, damit die Tabelle Content und Personal bei gleicher
 Reichweite vergleicht. Die Ausnahme ist WeChat, weil der dort
 veröffentlichte Mindestbetrag höher liegt. Die letzte öffentliche
 Preisliste von Tencent für Moments-Anzeigen, die wir prüfen konnten, stammt
-von 2018. Diese Zeile ist daher als Untergrenze zu Preisen von 2018 zu
-lesen.
+aus dem zweiten Quartal 2020 und nennt dieselben Mindestbeträge wie die
+Liste von 2018. Diese Zeile ist daher als Untergrenze zu Preisen von 2020
+zu lesen.
 
-> 2018 verlangten WeChat-Moments-Anzeigen im Auktionsverfahren ein
-> Tagesbudget von mindestens 1.000 Yuan. Eine reservierte Moments-Kampagne
-> kostete mindestens 50.000 Yuan, bei Listenpreisen von 150 Yuan je tausend
-> Einblendungen einer Bildanzeige in Peking und Shanghai.
-> Quelle: WeChat Ads (微信广告), drittes Quartal 2018. https://wximg.qq.com/wxp/wxadtouch/upload/t2/file-1533693930261.pdf
+> Im zweiten Quartal 2020 verlangten WeChat-Moments-Anzeigen im
+> Auktionsverfahren ein Tagesbudget von mindestens 1.000 Yuan. Eine
+> reservierte Moments-Kampagne kostete mindestens 50.000 Yuan, bei
+> Listenpreisen von 150 Yuan je tausend Einblendungen einer Bildanzeige in
+> Peking und Shanghai.
+> Quelle: WeChat Ads (微信广告), zweites Quartal 2020. https://wxa.wxs.qq.com/wxadtouch/upload/t2/ar2zl7ks_250201f1.pdf
 
 Ein Monat täglicher Auktionswerbung zu diesem Mindestbetrag ergibt
 30.000 Yuan, eine reservierte Kampagne 50.000 Yuan. Das sind die Werte für
 WeChat auf den Stufen Aufbau und Verkauf und zugleich die unsichersten der
-Tabelle: Die Preise hatten acht Jahre Zeit, sich zu bewegen. Die
+Tabelle: Die Preise hatten sechs Jahre Zeit, sich zu bewegen. Die
 Verkaufszeile für WeChat setzt außerdem eine chinesische Gesellschaft oder
 einen Distributor voraus, über den verkauft wird. Warum, steht weiter unten.
 
@@ -203,7 +205,7 @@ Darunter geht nichts online. Nur ein Teil davon ist öffentlich.
 | Douyin-Creator (Xingtu) | 10.000 Yuan pro Rekrutierungsauftrag | 5 % des Auftragswerts | August 2026 |
 | Xiaohongshu-Creator | nicht veröffentlicht | 10 % des Auftragswerts | November 2021 |
 | Xiaohongshu-Anzeigen | nicht veröffentlicht | nicht veröffentlicht | keine öffentliche Seite gefunden |
-| WeChat-Moments-Anzeigen | 1.000 Yuan pro Tag im Auktionsverfahren; 50.000 Yuan pro reservierter Kampagne | nicht veröffentlicht | drittes Quartal 2018 |
+| WeChat-Moments-Anzeigen | 1.000 Yuan pro Tag im Auktionsverfahren; 50.000 Yuan pro reservierter Kampagne | nicht veröffentlicht | zweites Quartal 2020 |
 | Weibo-Anzeigen | kein datierter Mindestbetrag veröffentlicht | nicht veröffentlicht | keine datierte Seite gefunden |
 
 </div>

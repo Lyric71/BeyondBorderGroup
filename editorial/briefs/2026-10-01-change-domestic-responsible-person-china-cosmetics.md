@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Before and after: what the brand files, whose consent, typical timing, what the old partner can still block.
 
-**The proprietary number.** Compass: share of beauty partners on file that hold responsible-person filings for the brands they carry. Fallback: log the gap.
+**The proprietary number.** Compass: share of beauty partners on file that hold responsible-person filings for the brands they carry. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. What the responsible person does and why a distributor often holds the role

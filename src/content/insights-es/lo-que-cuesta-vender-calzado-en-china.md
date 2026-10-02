@@ -1,16 +1,16 @@
 ---
 title: "Lo que cuesta vender calzado en China"
-description: "Abrir en Tmall Global cuesta 110.000 yuanes; 42.600 en JD Worldwide y 5.000 en Douyin. Comisión del 5 al 6 %. Después mandan las devoluciones."
+description: "Abrir en Tmall Global cuesta 110.000 yuanes; 35.500 en JD Worldwide y 5.000 en Douyin. Comisión del 5 al 6 %. Después mandan las devoluciones."
 pubDate: "2026-09-09"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Fashion & Luxury"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Calzado", "Tmall Global", "JD Worldwide", "Douyin", "Comercio transfronterizo", "Tarifas de plataforma", "Devoluciones"]
 keyTakeaways:
-  - "Abrir en calzado cuesta 110.000 yuanes en Tmall Global, 42.600 yuanes en JD Worldwide y 5.000 yuanes en Douyin transfronterizo, antes de mercancía, medios y honorarios de un socio (datos de las calculadoras de TheChinaPath, septiembre de 2026)."
-  - "Tmall Global y JD Worldwide se llevan un 5 % de cada par vendido y Douyin un 6 %, así que la tabla de tarifas no elige la plataforma por usted."
+  - "Abrir en calzado cuesta 110.000 yuanes en Tmall Global, 35.500 yuanes en JD Worldwide y 5.000 yuanes en Douyin transfronterizo, antes de mercancía, medios y honorarios de un socio (datos de las calculadoras de TheChinaPath, octubre de 2026)."
+  - "Tmall Global se lleva un 5 % de cada par vendido y JD Worldwide y Douyin un 6 %, así que la tabla de tarifas no elige la plataforma por usted."
   - "El calzado entra por la vía transfronteriza sin permiso de primera importación, sin registro y sin presentación, porque la mercancía se supervisa como bien de uso personal."
   - "El comprador paga un 9,1 % por un par en la vía transfronteriza: cero arancel y el 70 % del IVA de importación del 13 %."
   - "Con un 30 % de devoluciones, un pedido conservado cuesta 69 yuanes sobre un ticket de 600. Con un 50 % cuesta 92, y un margen bruto corto deja de sostenerse."
@@ -19,9 +19,9 @@ heroImageAlt: "En un almacén aduanero de Ningbo, una operaria escanea una zapat
 ---
 
 Empiece por Tmall Global. Abrir allí una tienda de calzado cuesta 110.000
-yuanes antes de vender un solo par, frente a 42.600 yuanes en JD Worldwide y
-5.000 yuanes en Douyin transfronterizo. Tmall y JD se llevan un 5 % de cada
-venta; Douyin, un 6 %. A partir de ahí manda su tasa de devoluciones, y el calzado vuelve con
+yuanes antes de vender un solo par, frente a 35.500 yuanes en JD Worldwide y
+5.000 yuanes en Douyin transfronterizo. Tmall se lleva un 5 % de cada venta;
+JD y Douyin, un 6 %. A partir de ahí manda su tasa de devoluciones, y el calzado vuelve con
 la frecuencia suficiente para comerse un margen corto.
 
 El calzado es una de las categorías más fáciles de introducir en China. Figura
@@ -37,17 +37,17 @@ que preguntan las marcas.
 | Calzado, primer año (yuanes) | Tmall Global | JD Worldwide | Douyin transfronterizo |
 |---|---|---|---|
 | Depósito de garantía, reembolsable | 50.000 | 35.500 (unos 4.500 euros) | 5.000 |
-| Cuota anual de plataforma | 60.000 | 7.100 (unos 900 euros) | ninguna |
-| Comisión por venta | 5 % | 5 % | 6 % |
-| Caja antes de la primera venta | 110.000 | 42.600 | 5.000 |
+| Cuota anual de plataforma | 60.000 | ninguna | ninguna |
+| Comisión por venta | 5 % | 6 % | 6 % |
+| Caja antes de la primera venta | 110.000 | 35.500 | 5.000 |
 
 </div>
 
 > Depósito, cuota anual y comisión por categoría para el calzado en Tmall
 > Global, JD Worldwide y Douyin transfronterizo.
-> Fuente: datos de las calculadoras de TheChinaPath, septiembre de 2026.
+> Fuente: datos de las calculadoras de TheChinaPath, octubre de 2026.
 
-Son las horquillas publicadas, comprobadas en septiembre de 2026. Una marca en
+Son las horquillas publicadas, comprobadas en octubre de 2026. Una marca en
 trámite TM o una tienda multimarca eleva el depósito de Tmall por encima de la
 cifra del flagship, y su socio puede darle otros números. Negocie a partir de
 esa línea.
@@ -71,9 +71,20 @@ plataforma publicó el 15 de julio de 2026.
 > julio de 2026.
 > https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
 
-JD publica ambos importes en dólares, en una escala que sube con las ventas
-acumuladas; la cifra en yuanes de arriba es el primer peldaño, convertida a
-7,1. Douyin no cobra cuota anual, lo que sobre el papel la convierte en la
+JD fija el depósito en dólares: unos 4.500 euros para una tienda oficial de
+marca, que son los 35.500 yuanes de la tabla, y unos 13.500 euros para el
+resto de formatos. No cobra cuota anual, solo un 0,9 % por transacción en
+cada pedido.
+
+> JD Worldwide aplica al calzado (鞋靴) una tarifa de apoyo operativo del
+> 6 % más un 0,9 % por transacción, y exige unos 4.500 euros de depósito a
+> una tienda oficial de marca.
+> Fuente: JD Worldwide (京东全球购), baremo de tarifas por categoría,
+> revisado el 24 de septiembre de 2026, en vigor desde el 1 de octubre de
+> 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
+
+Douyin tampoco cobra cuota anual, lo que sobre el papel la convierte en la
 puerta más barata. Hasta que llegan las devoluciones.
 
 Nada de esto cubre la mercancía, los medios, los honorarios de un Tmall
@@ -200,13 +211,13 @@ siendo la página que abre un comprador chino para decidir si una marca
 extranjera de calzado existe de verdad, y sobrevive a la campaña que lo lanzó.
 
 JD Worldwide invierte el planteamiento cuando lo que quiere es comprobar si
-China quiere la marca. La misma comisión del 5 %, una cuarta parte de la caja
+China quiere la marca. Un punto más de comisión, cerca de un tercio de la caja
 para abrir, una conversación más corta con su director financiero si la
 respuesta es no.
 
 Douyin transfronterizo merece más prudencia de la que sugiere su precio de
 entrada. Sin cuota anual, con un depósito reembolsable de 5.000 yuanes, el
-coste sobre el papel más bajo de los tres pese a la comisión más alta, y toda
+coste sobre el papel más bajo de los tres pese a una comisión del 6 %, y toda
 la exposición alojada en la columna de
 devoluciones. Vaya cuando sus datos de tallaje estén limpios, no para
 recogerlos. La [calculadora de costes de

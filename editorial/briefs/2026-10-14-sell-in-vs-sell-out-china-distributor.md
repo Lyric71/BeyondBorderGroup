@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Signal (orders vs scans, weeks of cover, discounting online, sudden promotions, late payment), what it looks like, what to ask for.
 
-**The proprietary number.** Compass: share of distributors on file that share scan or depletion data. Fallback: log the gap.
+**The proprietary number.** Compass: share of distributors on file that share scan or depletion data. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. Why distributors are refusing stock in 2025 and 2026

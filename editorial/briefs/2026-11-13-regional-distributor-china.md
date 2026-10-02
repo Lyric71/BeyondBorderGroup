@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** National vs regional vs network: reach, focus, price control, cost, fit.
 
-**The proprietary number.** Compass: share of distributors on file covering one region vs several. Fallback: log the gap.
+**The proprietary number.** Compass: share of distributors on file covering one region vs several. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
 **CTA.** Compass shortlist.

@@ -1,17 +1,17 @@
 ---
 title: "Was der Verkauf von Milchprodukten und Aufstrichen in China kostet"
 seoTitle: "Milchprodukte und Aufstriche in China: Was der Start kostet"
-description: "Der Start kostet 80.000 Yuan bei Tmall Global, 42.600 bei JD Worldwide, 5.000 bei Douyin. Tmall nimmt 2 %. Teuer wird erst das Paket."
+description: "Der Start kostet 80.000 Yuan bei Tmall Global, 35.500 bei JD Worldwide, 5.000 bei Douyin. Tmall nimmt 2 %. Teuer wird erst das Paket."
 pubDate: "2026-09-23"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Food & Beverage"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Milchprodukte", "Brotaufstriche", "Tmall Global", "JD Worldwide", "Douyin", "Cross-Border-E-Commerce", "Plattformgebühren", "Lebensmittelimport"]
 keyTakeaways:
-  - "Ein Shop für Milchprodukte und Aufstriche kostet bis zur Eröffnung 80.000 Yuan bei Tmall Global, 42.600 Yuan bei JD Worldwide und 5.000 Yuan bei Douyin Cross-Border, ohne Ware, Media und Partnerhonorar (Rechnerdaten von TheChinaPath, September 2026)."
-  - "Tmall Global verlangt für Lebensmittel nur 2 % Provision, den niedrigsten Satz der Plattform. Douyin bemisst die Kaution seit Juni 2025 für alle Kategorien gleich, nach dem Umsatz des Vormonats und mit höchstens 5.000 Yuan."
+  - "Ein Shop für Milchprodukte und Aufstriche kostet bis zur Eröffnung 80.000 Yuan bei Tmall Global, 35.500 Yuan bei JD Worldwide und 5.000 Yuan bei Douyin Cross-Border, ohne Ware, Media und Partnerhonorar (Rechnerdaten von TheChinaPath, Oktober 2026)."
+  - "Tmall Global verlangt für Lebensmittel nur 2 % Provision, den niedrigsten Satz in unserem Rechner. Douyin bemisst die Kaution seit Juni 2025 für alle Kategorien gleich, nach dem Umsatz des Vormonats und mit höchstens 5.000 Yuan."
   - "Kommissionierung, Verpackung und Zustellung kosten rund 15 Yuan je Paket. Bei einem Glas für 128 Yuan sind das bereits 12 % des Bestellwerts, noch vor jeder Provision."
   - "Über das Zolllager entfallen Ersteinfuhrgenehmigung, Registrierung und Anmeldung. Im Regelhandel nicht: Dort muss die eigene Regierung eine Molkerei oder einen Honigabfüller beim chinesischen Zoll zur Registrierung empfehlen."
   - "Vom 16. März 2027 an schreibt GB 7718-2025 vor, Milch und Nüsse als Allergene zu deklarieren, und untersagt Angaben wie „ohne Zusatz“ auf der Packung."
@@ -20,9 +20,9 @@ heroImageAlt: "Im Büro eines Kühl-Zolllagers in Chengdu prüft eine Koordinato
 ---
 
 Fangen Sie mit Tmall Global an. Ein Shop für Milchprodukte und Aufstriche
-kostet dort bis zur Eröffnung 80.000 Yuan, bei JD Worldwide 42.600 Yuan und
+kostet dort bis zur Eröffnung 80.000 Yuan, bei JD Worldwide 35.500 Yuan und
 bei Douyin Cross-Border 5.000 Yuan. Tmall behält je Verkauf 2 % ein, so
-wenig wie in keiner anderen Kategorie. Über das Jahr aber entscheidet das
+wenig wie in keiner anderen Kategorie unseres Rechners. Über das Jahr aber entscheidet das
 Paket: 15 Yuan für Kommissionierung, Verpackung und Zustellung fallen auf
 jede Bestellung an, gleich was darin liegt.
 
@@ -42,20 +42,20 @@ hinein.
 | Milchprodukte und Aufstriche, erstes Jahr (Yuan) | Tmall Global | JD Worldwide | Douyin Cross-Border |
 |---|---|---|---|
 | Kaution, rückzahlbar | 50.000 | 35.500 (rund 4.500 Euro) | 5.000 |
-| Jährliche Plattformgebühr | 30.000 | 7.100 (rund 900 Euro) | keine |
-| Provision je Verkauf | 2 % | 4 % | 2,5 % |
-| Liquidität vor dem ersten Verkauf | 80.000 | 42.600 | 5.000 |
+| Jährliche Plattformgebühr | 30.000 | keine | keine |
+| Provision je Verkauf | 2 % | 2 % | 2,5 % |
+| Liquidität vor dem ersten Verkauf | 80.000 | 35.500 | 5.000 |
 
 </div>
 
 > Kaution, Jahresgebühr und Provision nach Kategorie für verpackte
-> Lebensmittel, Getreide, Öl und Snacks bei Tmall Global, JD Worldwide und
-> Douyin Cross-Border.
-> Quelle: Rechnerdaten von TheChinaPath, September 2026.
+> Lebensmittel, Öl und Snacks bei Tmall Global, JD Worldwide und Douyin
+> Cross-Border.
+> Quelle: Rechnerdaten von TheChinaPath, Oktober 2026.
 
-Weniger als diese 2 % verlangt Tmall Global von niemandem. Gesichtspflege
-zahlt 4 %, Mode und Schuhe 5 %. Die Stufen wurden im September 2026
-geprüft. Eine TM-Marke oder ein Multibrand-Shop treibt den Tmall-Betrag nach
+Weniger als diese 2 % verlangt Tmall Global in keiner Kategorie unseres
+Rechners. Gesichtspflege zahlt 4 %, Mode und Schuhe 5 %. Die Stufen wurden
+im Oktober 2026 geprüft. Eine TM-Marke oder ein Multibrand-Shop treibt den Tmall-Betrag nach
 oben.
 
 Douyin hat die Kaution im Juni 2025 von der Kategorie abgekoppelt. Maßgeblich
@@ -78,10 +78,19 @@ Speiseöl 2 %, für das meiste andere 3 %.
 > 《【全球购】技术服务费费率标准》, 15. Juli 2026.
 > https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
 
-Gegenüber Tmall ist JD mit Abstand günstiger. Die Plattform weist Kaution und
-Jahresgebühr in Dollar aus, gestaffelt nach kumuliertem Umsatz. Die 42.600
-Yuan markieren also die Einstiegsstufe, nicht den Normalfall. Zu den 4 %
-schlägt JD eine pauschale Transaktionsgebühr von 0,9 % auf.
+Gegenüber Tmall ist JD mit Abstand günstiger. Eine Jahresgebühr verlangt die
+Plattform nicht, die Kaution weist sie in Dollar aus: rund 4.500 Euro für
+einen Marken-Flagship, das sind die 35.500 Yuan der Tabelle. Andere
+Shoptypen starten auf demselben Niveau und steigen mit dem Umsatz auf rund
+9.000 und dann 13.500 Euro. Zu den 2 % schlägt JD eine pauschale
+Transaktionsgebühr von 0,9 % auf.
+
+> JD Worldwide erhebt auf Lebensmittel und Getränke (食品饮料) eine
+> Betriebsunterstützungsgebühr von 2 % zuzüglich 0,9 % Transaktionsgebühr
+> und verlangt von einem Marken-Flagship rund 4.500 Euro Kaution.
+> Quelle: JD Worldwide (京东全球购), Gebührenstandard nach Kategorie,
+> überarbeitet am 24. September 2026, gültig seit 1. Oktober 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 ## Zwei Wege hinein: Cross-Border über das Zolllager und Regelhandel
 

@@ -2,14 +2,14 @@
 title: "Tmall o Amazon: lo que paga de verdad una marca"
 description: "Amazon no tiene mercado en China desde 2019. Esto es lo que cobra Tmall Global, junto al tarifario de Amazon y la cuenta del impuesto."
 pubDate: "2023-02-02"
-updatedDate: "2026-09-17"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Tmall", "JD"]
 tags: ["Tmall Global", "Amazon", "JD Worldwide", "Comercio transfronterizo", "Tarifas de plataforma", "Entrada de mercado"]
 keyTakeaways:
   - "Amazon dejó de dar servicio a vendedores externos en su web china el 18 de julio de 2019, así que una marca no elige entre Tmall y Amazon para llegar al comprador chino."
-  - "La comisión de Tmall Global va del 2 % al 5 % y promedia un 3,4 % en las diecinueve categorías de nuestra calculadora, frente al 8 % o 15 % de Amazon."
+  - "La comisión de Tmall Global va del 2 % al 5 % y promedia un 3,5 % en las diecinueve categorías de nuestra calculadora, frente al 8 % o 15 % de Amazon."
   - "La diferencia está en el coste fijo: de 80.000 a 110.000 yuanes de depósito y cuota anual antes del primer pedido, frente a ningún depósito y unos 36 euros al mes en Amazon."
   - "Los honorarios de un Tmall Partner y su comisión sobre las ventas elevan la retención real en China por encima de la de Amazon, y eso es lo que olvidan casi todos los comparativos."
   - "El impuesto de importación en venta minorista transfronteriza es del 9,1 % en mercancía general, dentro de un límite de 5.000 yuanes por pedido y 26.000 al año por comprador."
@@ -39,7 +39,7 @@ leen esto.
 | Depósito de garantía | ninguno | 50.000, reembolsable |
 | Cuota anual de plataforma | ninguna | 30.000 o 60.000 según la categoría |
 | Cuota de cuenta | unos 36 euros al mes | ninguna |
-| Comisión por venta | 8 % o 15 % en casi todas las categorías | 2 % a 5 %, 3,4 % de media |
+| Comisión por venta | 8 % o 15 % en casi todas las categorías | 2 % a 5 %, 3,5 % de media |
 | Socio operador | opcional | en la práctica, un Tmall Partner |
 | Caja antes del primer pedido | unos 36 euros, el primer mes | de 80.000 a 110.000 |
 
@@ -53,7 +53,7 @@ leen esto.
 
 > Depósito, cuota anual y comisión por categoría en Tmall Global, tal como
 > están cargados en la calculadora.
-> Fuente: datos de las calculadoras de TheChinaPath, septiembre de 2026.
+> Fuente: datos de las calculadoras de TheChinaPath, octubre de 2026.
 
 Los complementos alimenticios se salen de esa horquilla en Tmall Global, con
 un depósito de 300.000 yuanes. Todo lo demás cae en uno de los dos peldaños.
@@ -113,11 +113,11 @@ plataforma, no es así.
 Mantenemos cargadas en nuestras propias calculadoras las tarifas por
 categoría de Tmall Global, JD Worldwide y Douyin transfronterizo, porque las
 citamos cada semana. En las diecinueve categorías del selector de Tmall
-Global, la comisión va del 2 % al 5 % y promedia un 3,4 %. Ocho categorías se
+Global, la comisión va del 2 % al 5 % y promedia un 3,5 %. Ocho categorías se
 quedan en el 2 %. Ninguna pasa del 5 %. La horquilla de Amazon, en casi todas
 las categorías, arranca en el 8 %.
 
-El té, la alimentación envasada, los relojes, el pequeño electrodoméstico y el teléfono pagan todos un 2 % de la venta en Tmall Global. En Amazon, esa misma mercancía pagaría un 8 % o más.
+El té, la alimentación envasada, los relojes suizos, el electrodoméstico de cocina y el teléfono pagan todos un 2 % de la venta en Tmall Global. En Amazon, esa misma mercancía pagaría un 8 % o más.
 
 Después llega el coste fijo. Depósito y cuota anual suman 80.000 yuanes en
 once de las diecinueve categorías y 110.000 yuanes en las otras siete, antes
@@ -133,7 +133,7 @@ horario local y monta las campañas. Nuestra calculadora de Tmall Global trae
 por defecto unos honorarios de 35.000 yuanes al mes más un 10 % de las
 ventas, y esas cifras están ahí porque son las que nos citan.
 
-Sume ese 10 % al 3,4 % de la plataforma y la retención china supera el 13 %,
+Sume ese 10 % al 3,5 % de la plataforma y la retención china supera el 13 %,
 lo que la coloca dentro de la horquilla de Amazon en vez de por debajo. Los
 honorarios van encima y no preguntan si usted vende algo.
 
@@ -231,7 +231,7 @@ escaparate chino que una marca abra y gestione.
 
 En la línea de plataforma, sí. La comisión en las diecinueve categorías de
 Tmall Global de nuestra calculadora va del 2 % al 5 %, con una media del
-3,4 %, frente al 8 % o 15 % de Amazon en casi todas las categorías. Sume la
+3,5 %, frente al 8 % o 15 % de Amazon en casi todas las categorías. Sume la
 comisión sobre ventas de un Tmall Partner y la retención china conjunta
 adelanta a la de Amazon.
 

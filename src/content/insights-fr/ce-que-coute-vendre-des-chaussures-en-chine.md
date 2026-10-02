@@ -1,16 +1,16 @@
 ---
 title: "Ce que coûte la vente de chaussures en Chine"
-description: "Ouvrir sur Tmall Global coûte 110 000 RMB, 42 600 sur JD Worldwide, 5 000 sur Douyin. Commission de 5 à 6 %. Ensuite, les retours font l'année."
+description: "Ouvrir sur Tmall Global coûte 110 000 RMB, 35 500 sur JD Worldwide, 5 000 sur Douyin. Commission de 5 à 6 %. Ensuite, les retours font l'année."
 pubDate: "2026-09-09"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Fashion & Luxury"
 platforms: ["Tmall", "JD", "Douyin"]
 tags: ["Chaussure", "Tmall Global", "JD Worldwide", "Douyin", "E-commerce transfrontalier", "Frais de plateforme", "Retours"]
 keyTakeaways:
-  - "Ouvrir en chaussure coûte 110 000 RMB sur Tmall Global, 42 600 RMB sur JD Worldwide et 5 000 RMB sur Douyin cross-border, avant le stock, les médias et la rétribution d'un partenaire (données des calculateurs TheChinaPath, septembre 2026)."
-  - "Tmall Global et JD Worldwide prélèvent 5 % sur chaque paire vendue, Douyin 6 % : le tableau des frais ne choisit donc pas la plateforme à votre place."
+  - "Ouvrir en chaussure coûte 110 000 RMB sur Tmall Global, 35 500 RMB sur JD Worldwide et 5 000 RMB sur Douyin cross-border, avant le stock, les médias et la rétribution d'un partenaire (données des calculateurs TheChinaPath, octobre 2026)."
+  - "Tmall Global prélève 5 % sur chaque paire vendue, JD Worldwide et Douyin 6 % : le tableau des frais ne choisit donc pas la plateforme à votre place."
   - "La chaussure passe en transfrontalier sans permis de première importation, sans enregistrement et sans dépôt, parce que la marchandise est contrôlée comme un bien à usage personnel."
   - "L'acheteur paie 9,1 % sur une paire par la voie transfrontalière : zéro droit de douane, et 70 % de la TVA à l'importation de 13 %."
   - "À 30 % de retours, une commande conservée coûte 69 RMB pour un panier de 600 RMB. À 50 %, elle en coûte 92, et une marge brute courte cesse de tenir."
@@ -19,9 +19,9 @@ heroImageAlt: "Dans un entrepôt sous douane de Ningbo, une manutentionnaire sca
 ---
 
 Commencez par Tmall Global. Y ouvrir une boutique de chaussures coûte
-110 000 RMB avant la première paire vendue, contre 42 600 RMB sur JD
-Worldwide et 5 000 RMB sur Douyin cross-border. Tmall et JD prélèvent 5 %
-sur chaque vente, Douyin 6 %. Après quoi c'est votre taux de retour qui fait l'année, et
+110 000 RMB avant la première paire vendue, contre 35 500 RMB sur JD
+Worldwide et 5 000 RMB sur Douyin cross-border. Tmall prélève 5 % sur
+chaque vente, JD et Douyin 6 %. Après quoi c'est votre taux de retour qui fait l'année, et
 la chaussure revient assez souvent pour absorber une marge courte.
 
 La chaussure fait partie des catégories les plus simples à faire entrer en
@@ -37,17 +37,17 @@ puisque c'est la question que posent les marques.
 | Chaussure, première année (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
 |---|---|---|---|
 | Dépôt de garantie, restituable | 50 000 | 35 500 (environ 4 500 euros) | 5 000 |
-| Frais annuels de plateforme | 60 000 | 7 100 (environ 900 euros) | aucun |
-| Commission sur chaque vente | 5 % | 5 % | 6 % |
-| Trésorerie avant la première vente | 110 000 | 42 600 | 5 000 |
+| Frais annuels de plateforme | 60 000 | aucun | aucun |
+| Commission sur chaque vente | 5 % | 6 % | 6 % |
+| Trésorerie avant la première vente | 110 000 | 35 500 | 5 000 |
 
 </div>
 
 > Dépôt, frais annuels et commission par catégorie pour la chaussure sur
 > Tmall Global, JD Worldwide et Douyin cross-border.
-> Source : données des calculateurs TheChinaPath, septembre 2026.
+> Source : données des calculateurs TheChinaPath, octobre 2026.
 
-Ce sont les fourchettes publiées, vérifiées en septembre 2026. Une marque
+Ce sont les fourchettes publiées, vérifiées en octobre 2026. Une marque
 déposée en TM ou une boutique multimarque fait monter le dépôt Tmall
 au-dessus du chiffre du flagship, et votre partenaire peut annoncer autre
 chose. Négociez à partir de cette ligne.
@@ -71,9 +71,19 @@ plateforme le 15 juillet 2026.
 > 15 juillet 2026.
 > https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
 
-JD affiche ses deux montants en dollars, sur une échelle qui monte avec le
-cumul des ventes ; le chiffre en RMB ci-dessus correspond au premier barreau,
-converti à 7,1. Douyin ne facture aucun frais annuel, ce qui en fait la porte
+JD libelle son dépôt en dollars : environ 4 500 euros pour une boutique
+officielle de marque, soit les 35 500 RMB du tableau, et quelque 13 500 euros
+pour les autres formats. Pas de frais annuels, seulement 0,9 % de frais de
+transaction sur chaque commande.
+
+> JD Worldwide applique à la chaussure (鞋靴) des frais de soutien
+> opérationnel de 6 % auxquels s'ajoutent 0,9 % de frais de transaction, et
+> demande environ 4 500 euros de dépôt à une boutique officielle de marque.
+> Source : JD Worldwide (京东全球购), barème des frais par catégorie, révisé
+> le 24 septembre 2026, en vigueur depuis le 1er octobre 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
+
+Douyin ne facture pas davantage de frais annuels, ce qui en fait la porte
 d'entrée la moins chère sur le papier. Jusqu'aux retours.
 
 Rien de tout cela ne couvre le stock, les médias, la rétribution d'un Tmall
@@ -203,13 +213,13 @@ qu'un acheteur chinois ouvre pour décider si une marque de chaussures
 étrangère existe vraiment, et il survit à la campagne qui l'a lancé.
 
 JD Worldwide renverse le raisonnement quand il s'agit de tester si la Chine
-veut de la marque. Même commission de 5 %, un quart de la trésorerie pour
-ouvrir, une conversation plus courte avec votre directeur financier si la
+veut de la marque. Un point de commission en plus, environ un tiers de la
+trésorerie pour ouvrir, une conversation plus courte avec votre directeur financier si la
 réponse est non.
 
 Douyin cross-border mérite plus de prudence que son prix d'entrée ne le laisse
 croire. Aucun frais annuel, un dépôt restituable de 5 000 RMB, le coût sur le
-papier le plus bas des trois malgré la commission la plus élevée, et toute
+papier le plus bas des trois malgré une commission de 6 %, et toute
 l'exposition logée dans la colonne des retours. Allez-y quand vos données de pointure sont propres, pas pour les constituer. Le
 [calculateur de coûts Douyin](/fr/outils/calculateur-de-couts-douyin) chiffre
 cette voie de la même manière.

@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** State-owned vs private: licences, speed, payment reliability, retail access, marketing effort, typical fit.
 
-**The proprietary number.** Compass: ownership split of importers on file. Fallback: log the gap.
+**The proprietary number.** Compass: ownership split of importers on file. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.** 1. Why the question comes up at CIIE 2. The table 3. Licences and registrations 4. Credit and payment 5. Channel access 6. Checks for both
 

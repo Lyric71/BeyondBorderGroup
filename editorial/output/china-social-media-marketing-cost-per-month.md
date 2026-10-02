@@ -436,10 +436,9 @@ PROPRIETARY NUMBER: Qianchuan ad line of RMB 10,000 a month (RMB 120,000 a
   share, ROAS 2.5), and RMB 20,000 a month at the year-two defaults
   (RMB 3m GMV, 20% paid share). Label: "TheChinaPath calculator data,
   September 2026". Source: src/pages/tools/douyin-cost-calculator.astro.
-  TODO: proprietary number. The brief asked for "the paid media floor below
-  which organic reach does not move, from stores and accounts under
-  management". No such figure is logged. Supply it per platform and it
-  replaces the RMB 10,000 / 20,000 planning figure in the media column.
+  Settled fallback (editorial/CLAUDE.md, "The proprietary number"): the brief's
+  measured paid media floor is not on file, so the calculator figure is the
+  piece's proprietary number. Closed, nothing pending.
 HAND-OFFS: TheRedScroll once, for content production and community
   management, anchor text "TheRedScroll, the group's China social media
   agency" (https://www.theredscroll.com).

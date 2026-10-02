@@ -2,7 +2,7 @@
 title: "How Allbirds entered China, and what it cost them"
 description: "Allbirds ran China itself for five years, opened six stores, then sold the Shanghai entity for $2.1 million and licensed the market to Belle."
 pubDate: "2026-09-10"
-updatedDate: "2026-09-10"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Market Strategy"
 industry: "Fashion & Luxury"
@@ -112,9 +112,9 @@ rate.
 The cheaper way to buy the same information was on the table well before
 2019. A cross-border store puts the product in front of Chinese buyers with
 no Chinese company behind it. Footwear on Tmall Global takes a 50,000 RMB
-deposit and a 60,000 RMB annual fee at 5% commission; JD Worldwide's footwear
-rung is 35,500 RMB and 7,100 RMB, also at 5% (TheChinaPath calculator data,
-September 2026).
+deposit and a 60,000 RMB annual fee at 5% commission; JD Worldwide asks a
+35,500 RMB flagship deposit, no annual fee and 6% (TheChinaPath calculator
+data, October 2026).
 
 Today's numbers, not 2019's. Run them in the [Tmall Global setup and run
 calculator](/tools/tmall-global-setup-and-run), or read the category

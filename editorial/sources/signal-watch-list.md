@@ -50,3 +50,31 @@ rule; always the pointer to the primary document.
 - A Western outlet reporting a Chinese rule second-hand. Go to the rule.
 - Anything about KOL seeding, community management or Baidu SEO as a
   service (territory rule; hand off, do not write).
+
+## How the sweep reads sources that refuse a plain fetch (settled)
+
+Settled October 2, 2026, so no Signal log raises it again. The platform
+rule centres (rulechannel.tmall.com, rule.tmall.hk, jdw-rule.jd.hk,
+school.jinritemai.com) are JavaScript portals: read them with a headless
+browser (Edge or Chromium, private temporary profile), with the hash route
+where the portal needs one (for example
+`#/rule/detail?ruleId=<id>&cId=<cId>` on rule.tmall.hk). customs.gov.cn and
+nmpa.gov.cn refuse the fetcher outright: read them through gov.cn and
+MOFCOM mirrors and Chinese search. This is the method, not a gap. A skipped
+Signal after this sweep is a quiet week.
+
+## Dated items to check on the day (future watch)
+
+Register here any rule, fee or date a run finds that is not in force yet.
+The Monday sweep checks every item whose date has arrived, then moves it to
+"Done" with the piece it fed, or with the reason it moved no number.
+
+| Check on | Item | Source to re-read | Possible piece |
+|---|---|---|---|
+| 2027-09-01 | Consumption tax on batteries (无汞原电池, 锂离子蓄电池 and related lines), in force at 2% since 2026-09-01, reported to rise to 4% (seen in search on 2026-09-21; verify on the primary notice before use) | Ministry of Finance tax policy listing (gss.mof.gov.cn) | Background for 49A, How to sell consumer electronics and small appliances in China (August 10, 2027); a Signal on 2027-09-06 if a live piece prices batteries |
+
+### Done
+
+| Item | Closed by |
+|---|---|
+| NMPA Announcement 2026 No. 70 (cosmetics domestic responsible person may be replaced without the old partner's consent, from July 29, 2026), back-queue candidate since 2026-09-07 | Published as P02, `/insights/change-domestic-responsible-person-china-cosmetics` (September 24, 2026) |

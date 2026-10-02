@@ -2,7 +2,7 @@
 title: "Was der Verkauf von Bettwäsche in China kostet"
 description: "Bettwäsche startet bei JD Worldwide mit rund 4.500 Euro Kaution und 3,9 % je Verkauf, bei Tmall mit 50.000 Yuan und 5 %. Ab 5.000 Yuan steigt die Steuer."
 pubDate: "2026-09-30"
-updatedDate: "2026-09-30"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Home & Living"
@@ -72,8 +72,8 @@ JD rechnet in Dollar ab und staffelt die Kaution nach Shoptyp und Umsatz.
 > 3 % zuzüglich 0,9 % Transaktionsgebühr und verlangt von einem
 > Marken-Flagship rund 4.500 Euro Kaution. Andere Shoptypen hinterlegen rund
 > 9.000 bis 13.500 Euro.
-> Quelle: JD Worldwide (京东全球购), Gebührenstandard nach Kategorie, gültig
-> seit 1. August 2026.
+> Quelle: JD Worldwide (京东全球购), Gebührenstandard nach Kategorie, überarbeitet
+> am 24. September 2026, gültig seit 1. Oktober 2026.
 > https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 Douyin tanzt aus der Reihe. Die Plattform verlangt kaum eine Kaution,

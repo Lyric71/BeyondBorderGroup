@@ -48,11 +48,11 @@ They override any conflicting rule inside the skill. The standing preamble in
 **Query:** tmall partner rating douyin service provider · **Tags:** Due diligence, Tmall Partners, Douyin Partners
 **Word count:** 1,300 to 1,800
 
-**The answer, in one line.** Tmall Global scores its partners quarterly out of 12 points and grades them three to five stars; Douyin grades rated providers Diamond, Gold or Silver. The badge tells you scale and platform standing. It says nothing about your category, so use it to build a long list and nothing more.
+**The answer, in one line.** Tmall Global rates the partners that run its stores once a year and sorts them into Gold, Silver and Bronze Star (2026 rule, in force March 31, 2026; the 12-point quarterly three-to-five-star scheme is history); domestic Tmall certifies five-star and six-star operators on a yearly list; Douyin grades brand service providers Diamond, Gold or Silver, with Bronze on its industry-belt track. The badge tells you scale and platform standing. It says nothing about whether the partner has sold a product like yours.
 
 **The table it must carry.** Platform, rating scale, how it is scored and how often, what a top rating gets the partner, what it does not tell you.
 
-**The proprietary number.** Compass: rating mix of TPs and DPs on file. Fallback: log the gap.
+**The proprietary number.** Compass: rating mix of TPs and DPs on file. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
 **Outline.**
 1. Why platforms rate partners at all

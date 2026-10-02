@@ -2,7 +2,7 @@
 title: "What it costs to sell bedding and linens in China"
 description: "Bedding opens on JD Worldwide for a US$5,000 deposit and 3.9% a sale. Tmall Global asks 50,000 RMB and 5%. Above 5,000 RMB an item, tax jumps."
 pubDate: "2026-09-30"
-updatedDate: "2026-09-30"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 industry: "Home & Living"
@@ -68,8 +68,8 @@ JD quotes in dollars and scales the deposit by store type and sales.
 > JD Worldwide charges bedding a 3% operating support fee plus a 0.9%
 > transaction fee, and asks US$5,000 from a brand flagship. Other store
 > types pay US$10,000 to US$15,000.
-> Source: JD Worldwide (京东全球购), category fee standard, effective
-> August 1, 2026.
+> Source: JD Worldwide (京东全球购), category fee standard, revised
+> September 24, 2026, effective October 1, 2026.
 > https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
 
 Douyin is the odd one. It barely asks for a deposit, then takes the biggest

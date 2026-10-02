@@ -199,8 +199,6 @@ and our
 both say to judge work you can open on the platform yourself. A promise to
 "buy traffic" is a warning sign on its own.
 
-<!-- TODO: proprietary number. The brief asks for the share of Compass candidates declined over data integrity. editorial/sources/compass-stats.md does not exist and no such figure is published on the site. Fallback: log the gap. Supply the figure from Compass records before or after publish. -->
-
 Then write it down.
 
 - **Ban it by name.** The contract lists fake orders, fake reviews, paid
@@ -306,7 +304,7 @@ guide to finding a Tmall Partner -> /compass/find-a-tmall-partner-in-china
 guide to finding a Douyin Partner -> /compass/find-a-douyin-partner-in-china
 Compass -> /compass
 Get a shortlist of Tmall and Douyin Partners we've vetted -> /compass/shortlist (CTA)
-PROPRIETARY NUMBER: none. The brief's figure (share of Compass candidates declined over data integrity) does not exist: editorial/sources/compass-stats.md is missing and nothing is published on the site. Fallback per brief: gap logged, HTML-comment TODO left in the "Contract and audit steps" section. No calculator or case figure is relevant to fake orders, so none is forced in.
+PROPRIETARY NUMBER: none. The brief's figure (share of Compass candidates declined over data integrity) does not exist: editorial/sources/compass-stats.md is missing and nothing is published on the site. Settled fallback (editorial/CLAUDE.md, "The proprietary number"): no calculator or case figure is relevant to fake orders, so none is forced in and the piece runs without one. Closed.
 HAND-OFFS: none.
 CLIENT SIGN-OFF NEEDED: none. No client named or quantified. The agency and the platform in the SPC case are not named by the court and are not named here; the Shanghai company fined in 2025 is described without its name.
 -->

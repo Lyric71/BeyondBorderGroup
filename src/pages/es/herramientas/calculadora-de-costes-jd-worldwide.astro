@@ -60,34 +60,43 @@ type Field = {
 };
 
 // JD Worldwide (京东全球购) categories. Each one sets the security deposit and the
-// platform commission (运营支持服务费, 2%-6% band) that move with the product
-// category. JD quotes the deposit in a TIERED USD ladder that steps up with
-// cumulative sales; the RMB figures here seed the entry tier at about 7.1 to the
-// dollar (US$5,000 for most categories, US$2,000 for fresh, US$15,000 for
-// high-value electronics, US$40,000 for pharma). The annual platform usage fee
-// is a flat US$1,000. Directional 2025 bands; confirm the exact rate at onboarding.
+// platform commission (运营支持服务费) that move with the product category, from
+// 《京东全球购开放平台各类目资费标准》 (jdw-rule.jd.hk ruleId 950583665543483392,
+// revised 2026-09-24, effective 2026-10-01), checked twice on 2026-10-02.
+// The deposit is the brand flagship figure (品牌旗舰店保证金, quoted in USD) at
+// about 7.1 to the dollar: US$5,000 for most rows, US$500 for fresh, US$3,000 for
+// cookware, US$7,000 for accessories and computers, US$30,000 for the listed
+// overseas OTC medicines. Other store types pay a GMV ladder instead. Labels name
+// only subcategories that carry the rate shown (fresh gift boxes, other watches,
+// pet treats and tablets sit outside the rows). The standard and the deposit
+// rule list no annual or platform usage fee, so annual is 0; JD bills a flat
+// 0.9% transaction fee on each order instead.
 const categories: { value: string; label: string; deposit: string; fee: string; annual: string }[] = [
-  { value: 'fresh', label: 'Alimentación fresca (生鲜)', deposit: '14200', fee: '4', annual: '7100' },
-  { value: 'food', label: 'Alimentación envasada, cereales, aceite y snacks', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'tea', label: 'Té y bebidas en polvo', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'alcohol', label: 'Bebidas alcohólicas', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'supplements', label: 'Complementos alimenticios', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'baby', label: 'Maternidad, bebé y leche infantil', deposit: '35500', fee: '3', annual: '7100' },
-  { value: 'skincare', label: 'Cuidado de la piel', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'makeup', label: 'Maquillaje y perfumería', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'personal-care', label: 'Higiene y cuidado personal', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'apparel', label: 'Ropa', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'footwear', label: 'Calzado', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'bags', label: 'Bolsos y maletas', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'jewellery', label: 'Bisutería', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'watches', label: 'Relojería (tramo de depósito alto)', deposit: '106500', fee: '5', annual: '7100' },
-  { value: '3c', label: 'Electrónica 3C y accesorios', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'phones', label: 'Móviles y ordenadores (tramo de depósito alto)', deposit: '106500', fee: '3', annual: '7100' },
-  { value: 'home', label: 'Hogar, cocina y menaje', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'appliances', label: 'Pequeño electrodoméstico', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'sports', label: 'Deporte y aire libre', deposit: '35500', fee: '5', annual: '7100' },
-  { value: 'pet', label: 'Alimentación y accesorios para mascotas', deposit: '35500', fee: '4', annual: '7100' },
-  { value: 'pharma', label: 'Farmacia (医药, tramo de depósito máximo)', deposit: '284000', fee: '5', annual: '7100' },
+  { value: 'fresh', label: 'Alimentación fresca (生鲜)', deposit: '3550', fee: '2', annual: '0' },
+  { value: 'food', label: 'Alimentación envasada, cereales, aceite y snacks', deposit: '35500', fee: '2', annual: '0' },
+  { value: 'tea', label: 'Bebidas y bebidas en polvo (水饮冲调)', deposit: '35500', fee: '2', annual: '0' },
+  { value: 'alcohol', label: 'Vino (葡萄酒)', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'spirits', label: 'Destilados, cerveza y vinos de frutas', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'supplements', label: 'Complementos alimenticios', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'baby', label: 'Leche infantil, alimentación y cuidado del bebé', deposit: '35500', fee: '2', annual: '0' },
+  { value: 'skincare', label: 'Cuidado de la piel', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'makeup', label: 'Maquillaje y perfumería', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'personal-care', label: 'Higiene: champú, cuidado bucal y afeitado', deposit: '35500', fee: '5', annual: '0' },
+  { value: 'body-care', label: 'Cuidado corporal, peinado y pelucas', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'apparel', label: 'Ropa', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'footwear', label: 'Calzado', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'bags', label: 'Bolsos y maletas', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'jewellery', label: 'Bisutería', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'watches', label: 'Relojes suizos', deposit: '35500', fee: '3', annual: '0' },
+  { value: '3c', label: 'Accesorios de audio, foto e informática', deposit: '49700', fee: '3', annual: '0' },
+  { value: 'phones', label: 'Móviles', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'computers', label: 'Portátiles y ordenadores de sobremesa', deposit: '49700', fee: '3', annual: '0' },
+  { value: 'home', label: 'Ropa de cama y textil hogar', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'kitchen', label: 'Menaje y utensilios de cocina (厨具)', deposit: '21300', fee: '4', annual: '0' },
+  { value: 'appliances', label: 'Pequeño electrodoméstico', deposit: '35500', fee: '3', annual: '0' },
+  { value: 'sports', label: 'Deporte y aire libre', deposit: '35500', fee: '6', annual: '0' },
+  { value: 'pet', label: 'Comida para perros y gatos', deposit: '35500', fee: '2.5', annual: '0' },
+  { value: 'pharma', label: 'Medicamentos sin receta importados (海外医药)', deposit: '213000', fee: '5', annual: '0' },
   { value: 'custom', label: 'Personalizado (depósito y comisión a mano)', deposit: '', fee: '', annual: '' },
 ];
 
@@ -104,7 +113,7 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
   {
     title: 'Categoría',
     icon: gicon.platform,
-    note: 'Elija su categoría de producto. En JD Worldwide, el depósito y la comisión de plataforma se mueven con la categoría, así que esta elección fija esos dos números más abajo. El depósito va por tramos y se cotiza en dólares: la cifra en RMB corresponde al tramo de entrada. Si su TP le pasa otro número, sobrescríbalo a mano.',
+    note: 'Elija su categoría de producto. En JD Worldwide, el depósito y la comisión de plataforma se mueven con la categoría, así que esta elección fija esos dos números más abajo. El depósito se cotiza en dólares: la cifra en RMB es la de una tienda oficial de marca. Si su TP le pasa otro número, sobrescríbalo a mano.',
     fields: [
       {
         id: 'category',
@@ -129,10 +138,10 @@ const groups: { title: string; icon: string; note?: string; fields: Field[] }[] 
     icon: gicon.platform,
     fields: [
       { id: 'period', label: 'Duración del contrato', value: '12', kind: 'number', readonly: true, suffix: 'meses', hint: 'Fijo. El modelo calcula doce meses completos y todas las cifras anuales siguen esa ventana.' },
-      { id: 'platformDeposit', label: 'Depósito de garantía de JD Worldwide', value: '35500', kind: 'money', hint: 'Recuperable, por tramos según las ventas acumuladas y cotizado en dólares. El tramo de entrada ronda los 5.000 USD en la mayoría de categorías, 2.000 USD en fresco y más en producto de alto valor. Lo fija la categoría de arriba.' },
-      { id: 'techFee', label: 'Comisión de plataforma (运营支持服务费)', value: '4', kind: 'percent', step: '0.1', hint: 'Se cobra en cada venta, en una horquilla del 2 % al 6 % según la categoría. Lo fija la categoría de arriba.' },
+      { id: 'platformDeposit', label: 'Depósito de garantía de JD Worldwide', value: '35500', kind: 'money', hint: 'Recuperable y cotizado en dólares. Una tienda oficial de marca deposita unos 4.500 euros en la mayoría de categorías, 450 euros en fresco y hasta 27.000 euros en medicamentos importados. Los demás tipos de tienda siguen una escala propia, ligada a las ventas mensuales. Lo fija la categoría de arriba.' },
+      { id: 'techFee', label: 'Comisión de plataforma (运营支持服务费)', value: '2', kind: 'percent', step: '0.1', hint: 'Se cobra en cada venta, entre el 2 % y el 6 % en las categorías de arriba. Lo fija la categoría de arriba.' },
       { id: 'paymentFee', label: 'Tasa por transacción (交易服务费)', value: '0.9', kind: 'percent', step: '0.1', hint: 'Un 0,9 % fijo por pedido en JD Worldwide, en todas las categorías.' },
-      { id: 'annualFee', label: 'Cuota de uso de la plataforma (平台使用费)', value: '7100', kind: 'money', hint: 'Unos 1.000 USD al año, importe fijo. Algunas categorías tienen un periodo de prueba sin cuota, así que confírmelo al darse de alta.' },
+      { id: 'annualFee', label: 'Cuota anual de la plataforma', value: '0', kind: 'money', hint: 'Ninguna. El baremo vigente de JD Worldwide no recoge cuota anual ni de uso. Introduzca una cifra solo si su contrato la añade.' },
       { id: 'agentFee', label: 'Agente de aduanas, coste anual', value: '0', kind: 'money', hint: 'Opcional. Muchas marcas dejan el despacho en manos del TP o del almacén, así que déjelo a cero salvo que contrate un 境内代理人 aparte.' },
       { id: 'trademark', label: 'Registro de marca en China', value: '0', kind: 'money' },
       { id: 'brandSetup', label: 'Montaje de la tienda y contenidos de lanzamiento', value: '25000', kind: 'money' },
@@ -215,13 +224,13 @@ const help: Record<string, string> = {
   cbecTaxPayer:
     'Quién carga con el IVA cross-border. En casi todas las tiendas lo paga el consumidor al pasar por caja, encima del precio de venta, de modo que a usted no le cuesta nada y el modelo lo deja fuera. Si cambia a que lo absorbe la marca, la calculadora se lo descuenta directamente.',
   platformDeposit:
-    'Un depósito de garantía recuperable que JD Worldwide retiene mientras la tienda está abierta y devuelve cuando la cierra sin incidencias. Va por tramos, se cotiza en dólares y sube con las ventas acumuladas. El tramo de entrada ronda los 5.000 USD en la mayoría de categorías, 2.000 USD en fresco y más en producto de alto valor o farmacia. El selector de categoría fija la cifra de entrada en RMB.',
+    'Un depósito de garantía recuperable que JD Worldwide retiene mientras la tienda está abierta y devuelve cuando la cierra sin incidencias. Se cotiza en dólares. Una tienda oficial de marca (品牌旗舰店) paga una cifra fija según la categoría: unos 4.500 euros en la mayoría, 450 euros en alimentación fresca, 2.700 euros en menaje de cocina, 6.300 euros en accesorios e informática y 27.000 euros en medicamentos importados. Los demás tipos de tienda siguen una escala propia, ligada a las ventas mensuales. El selector de categoría carga la cifra de la tienda oficial en RMB.',
   techFee:
-    'La comisión de plataforma (运营支持服务费) que JD Worldwide se lleva en cada venta, como porcentaje del GMV. Se mueve entre el 2 % y el 6 % según la categoría. No tiene nada que ver con la tasa del 0,9 % por transacción. El selector de categoría la fija por usted.',
+    'La comisión de plataforma (运营支持服务费) que JD Worldwide se lleva en cada venta, como porcentaje del GMV. Se mueve entre el 2 % y el 6 % en las categorías del selector. No tiene nada que ver con la tasa del 0,9 % por transacción. El selector de categoría la fija por usted.',
   paymentFee:
     'La tasa de servicio por transacción (交易服务费) de cada pedido: un 0,9 % fijo en JD Worldwide, calculado sobre el GMV.',
   annualFee:
-    'La cuota anual de uso de la plataforma (平台使用费) que cobra JD Worldwide, venda o no venda. Son unos 1.000 USD, así que el valor por defecto en RMB sale del tipo de cambio. Algunas categorías tienen un periodo de prueba sin cuota, así que confirme el suyo al darse de alta.',
+    'Una cuota fija anual, que se paga venda o no venda. El baremo y las normas de depósito vigentes de JD Worldwide no recogen ninguna, así que el valor por defecto es cero. JD cobra en cada pedido, a través de la comisión y la tasa del 0,9 % por transacción. Introduzca una cifra solo si su contrato la añade.',
   agentFee:
     'Una cuota anual opcional para un agente aduanero en China continental (境内代理人). En el modelo de zona franca, el despacho suele hacerlo el TP o el propio almacén, así que muchas marcas lo dejan a cero. Ponga una cifra solo si contrata un agente aparte.',
   trademark:
@@ -243,7 +252,7 @@ const help: Record<string, string> = {
   organicShare2:
     'La parte del año 2 que llega sin inversión publicitaria ni comisión de creador: ficha de tienda, buscador de JD, seguidores, clientes que repiten. Este es el número que debería subir y la razón principal de que el año 2 salga más barato que el año 1.',
   period:
-    'El modelo se construye sobre un contrato de doce meses. El objetivo de GMV, el retainer del TP, la cuota de uso de la plataforma y el fondo de campañas cubren un año completo, y el año 2 de los resultados muestra esos mismos doce meses sin el alta inicial. Está aquí para que la hipótesis quede a la vista; no se puede tocar.',
+    'El modelo se construye sobre un contrato de doce meses. El objetivo de GMV, el retainer del TP, la cuota anual de la plataforma, si la hay, y el fondo de campañas cubren un año completo, y el año 2 de los resultados muestra esos mismos doce meses sin el alta inicial. Está aquí para que la hipótesis quede a la vista; no se puede tocar.',
   whDeposit:
     'Un depósito recuperable que el almacén en zona franca retiene como fondo de maniobra mientras guarda su mercancía. Lo recupera al salir, así que no es dinero perdido.',
   whTaxPrepay:
@@ -268,8 +277,8 @@ const notes = [
   'El alta se paga una vez, pero no todo es coste del año 1. El montaje de la tienda y el registro de marca se amortizan durante el periodo que usted fije, así que cada ejercicio carga con su parte y el resultado de explotación no queda aplastado por una factura de la que va a vivir varios años. Los depósitos y el anticipo de impuestos son otra cosa: los recupera al salir, de modo que son fondo de maniobra y no llegan nunca a la cuenta de resultados. Por eso la columna de caja y la de resultado no cuadran entre sí, y las dos tienen razón.',
   'El modelo trabaja solo en cross-border, a través del almacén en zona franca (京东全球购). El depósito del almacén y el anticipo de impuestos vuelven a su bolsillo al salir, así que la calculadora los cuenta como dinero que recupera, no como dinero que gasta.',
   'El retainer del TP más su comisión sobre el GMV es una de las mayores partidas, a la altura de los medios pagados. La publicidad la financia usted directamente en la cuenta de anuncios, no se factura a través del TP. La separación es deliberada: el socio que intenta adelantar la inversión publicitaria acaba cayéndose.',
-  'JD Worldwide factura dos conceptos distintos en cada venta: la comisión de plataforma (运营支持服务费), entre el 2 % y el 6 % según categoría, y una tasa fija del 0,9 % por transacción (交易服务费). Los dos están en el modelo. La cuota anual de uso de la plataforma ronda los 1.000 USD y se calcula con el tipo de cambio en vivo.',
-  'El depósito de garantía va por tramos, se cotiza en dólares y sube con las ventas acumuladas. La mayoría de categorías arrancan cerca de los 5.000 USD, la alimentación fresca cerca de los 2.000 y la electrónica de alto valor y la farmacia bastante más. El selector de categoría carga el tramo de entrada en RMB. Como es recuperable, queda fuera del cálculo de resultado y cuenta como fondo de maniobra.',
+  'JD Worldwide factura dos conceptos distintos en cada venta: la comisión de plataforma (运营支持服务费), entre el 2 % y el 6 % según categoría, y una tasa fija del 0,9 % por transacción (交易服务费). Los dos están en el modelo. El baremo vigente no recoge cuota anual, así que esa línea arranca en cero.',
+  'El depósito de garantía se cotiza en dólares. Una tienda oficial de marca deposita unos 4.500 euros en la mayoría de categorías, 450 euros en fresco y hasta 27.000 euros en medicamentos importados; los demás tipos de tienda siguen una escala propia, ligada a las ventas mensuales. El selector de categoría carga la cifra de la tienda oficial en RMB. Como es recuperable, queda fuera del cálculo de resultado y cuenta como fondo de maniobra.',
   'El IVA cross-border es el 9,1 % de la venta en mercancía general: 13 puntos de IVA sobre el 70 % del precio. En casi todas las tiendas lo paga el consumidor al pasar por caja, así que por defecto queda fuera de su coste. Cambie el pagador a la marca si lo absorbe usted, y tenga presente que la cosmética, la perfumería y el alcohol suben.',
   'El año 1 suele cerrar en pérdidas con un GMV de 3,5 millones de RMB. La tabla enfrenta el año 1 al año 2, cuando desaparece el alta inicial, el reparto por canal pasa a sus deslizadores del año 2 y el GMV crece según su hipótesis. El GMV de equilibrio le dice a qué escala tiene que llegar para que el margen bruto cubra la factura, y suele quedar varias veces por encima del objetivo del primer año.',
 ];
@@ -313,7 +322,7 @@ const calcSchema = webApplicationSchema({
       <p class="tool-hero__lead">
         Simule lo que cuesta operar una tienda en JD Worldwide con un socio operador (TP), en el
         modelo cross-border de zona franca (京东全球购), a lo largo de sus dos primeros años. El
-        depósito por tramos y la comisión cambian con su categoría.
+        depósito y la comisión cambian con su categoría.
       </p>
       <div class="tool-hero__meta">
         <div class="tool-hero__meta-item">

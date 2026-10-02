@@ -390,11 +390,10 @@ PROPRIETARY NUMBER:
   under 2 RMB at the calculator's own 5% default. The arithmetic is shown in the
   body so a reader can check it. The 61.5% is labeled in copy as an
   all-platform, all-category planning ceiling, never as a cross-border rate.
-  TODO: proprietary number. The brief asked for "the most common slip from
-  stores under management, with how many days it typically costs". No such
-  figure exists in sources/verified-sources.md and none was invented. If a
-  person can supply it before publish, it belongs in the "21 to 7 days out"
-  section, one line, labeled "from stores under management".
+  Settled fallback (editorial/CLAUDE.md, "The proprietary number"): the brief's
+  stores-under-management slip figure is not on file and none was invented,
+  so the two calculator figures above are the piece's proprietary numbers.
+  Closed, nothing pending.
 HAND-OFFS: TheRedScroll once, for the seeding and creator side of a festival
   plan, using the canonical anchor text "TheRedScroll, the group's China
   social media agency". ChinaWebFoundry not mentioned; nothing here touches

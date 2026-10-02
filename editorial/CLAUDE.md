@@ -33,6 +33,31 @@ Step 2 runs on every piece, Signals included. Step 3 uses the
 `generate-image-openai` skill only, never `scripts/generate-image.mjs` or the
 `/api/generate-image` route in this repo.
 
+## No TODO leaves a run (standing rule, October 2, 2026)
+
+Every step of this pipeline (research, drafting, the quality pass, the image,
+the publish run, the notification email) closes what it finds before it
+ends. Nothing is handed to "a person", to "the next run", to "the Friday
+review" or to a "Phase 2". No TODO, FIXME or TBD marker anywhere: not in a
+body, a table, a caption, frontmatter, an HTML comment, the ASSET BRIEF block,
+the ledger or the run log's flags. No "open items" section, in the log or in
+the email. The run log records what was found and how it was closed.
+
+| What the run finds | How it is closed, in the same run |
+|---|---|
+| A fact that is missing or fails a check | Research it to the source standard below, or cut the claim. The log lists what was cut. |
+| An existing page the new piece contradicts or outdates (an article, a calculator, a guide) | Fix that page in every locale it exists in, in the same run, and move its `updatedDate` because its body changed. |
+| A brief, the master plan or a spec the research proved wrong | Amend `public/content/editorial-briefs.md` (or the spec), rerun `node editorial/scripts/build-briefs.mjs`, and check later briefs that repeat the error. |
+| A missing link target, slug, asset or tool | Create it when the destination can be verified. Otherwise apply the settled fallback (below, or in "Project wins over runbook") and, if the fallback is new, write it into this file so no later run raises it again. |
+| A future event (a rule not yet in force, a date not yet announced, a piece not yet live that should be linked) | Register it where the repo already tracks the future: `sources/signal-watch-list.md` for platform and regulatory dates, the brief of the piece that will publish (via the master plan) for a link or an update owed on that day. Never in the email. |
+| Something only Cyril can decide | The run stops before publishing: the row goes to `blocked` with the reason in `notes`. It never publishes with an open question attached. |
+
+`node scripts/check-no-todo.mjs` enforces the marker part: it fails on a
+TODO, FIXME or TBD in `src/content/`, `editorial/output/`,
+`editorial/sources/`, `editorial/briefs/` or the master plan. The publish
+step runs it before the build, and the pre-commit hook runs it on staged
+files.
+
 ## The four slots
 
 | Day | Slot | Brief | Kill condition |
@@ -47,16 +72,25 @@ Step 2 runs on every piece, Signals included. Step 3 uses the
 Anchor weeks that carry an Asset (W03, W08, W16, W21, W27, W33, W38, W45,
 W47) produce a second file, `output/guides/<slug>.md`, in the same run. It
 publishes to `src/content/guides/` and renders at `/guides/<slug>/`, English
-only, printable. Anchor weeks that carry a Report (W11, W23, W36, W42, W50)
-draft the report copy to `output/reports/<slug>.md` and leave a
-`TODO: gated PDF` marker; a person assembles and gates the PDF. The Anchor
-itself still publishes on schedule.
+only, printable. Anchor weeks that carry a Report (W11, W23, W36, W42, W50, and P50)
+draft the report copy to `output/reports/<slug>.md` in the same run. The
+site has no gated download, so the settled fallback applies: the publish
+step publishes the report as a printable page in `src/content/guides/`
+(English only, `/guides/<slug>/`, like an Asset), links it from the Anchor
+body, and turns the "gated" CTA into a request through `/contact` for the
+underlying sheet. The log notes the substitution once. When a Report's core
+data is not on file (store-level figures, a Compass snapshot), the Report row
+goes to `blocked` with the reason before drafting; the Anchor still
+publishes on schedule.
 
 The partner queue ("Finding a partner", P01 to P50, Sept 30 to Dec 29, 2026)
 runs outside the four-slot week: `scripts/run-daily.ps1 -Mode partner`
 (daily, 14:00) drafts each P row up to two days before its date, and the
 daily publish task ships it with FR, DE and ES. Plan and research:
 `plans/finding-a-partner-50.md`. Never cite or name a competitor in a P piece.
+`sources/compass-stats.md` does not exist; until it does, every P piece uses
+the settled fallback in "The proprietary number" below, and no run reports
+the missing file again.
 
 When a slot is skipped, the status is `skipped`, the reason goes in `notes`,
 and the run log says so. A skipped Signal is not a failure; it is the rule
@@ -70,6 +104,26 @@ not invent a tool, do not ask. Examples already settled: email goes through
 Resend (the contact form's provider); hero images go to
 `public/Images/insights/`; assets use the `guides` collection; there is no
 `/guides` navigation entry yet, so link assets from the Anchor body.
+
+Settled since, so no run raises them again:
+
+- **Rule centres that render as an empty shell** (rulechannel.tmall.com,
+  rule.tmall.hk, jdw-rule.jd.hk, school.jinritemai.com) are read with a
+  headless browser (Edge or Chromium, on a private temporary profile), with
+  the hash route where the portal needs one. Sites that refuse the fetcher
+  outright (customs.gov.cn, nmpa.gov.cn) are read through gov.cn and
+  MOFCOM mirrors and Chinese search. This is the method, not a gap; the
+  Signal sweep does not recommend a logged-in export.
+- **Service pages versus the territory rule.** `src/pages/grow-in-china/`
+  and its locale twins are Cyril's commercial pages, not pipeline output.
+  Where a service page lists something the territory rule hands to
+  TheRedScroll or ChinaWebFoundry, the article follows the territory rule,
+  links the service page only for storefront and livestream commerce, and
+  the log does not flag the difference.
+- **An SEO field change the Anchor spec requires** (the title or H1 moved
+  to the query) is signed off by the review window: it ships unless the row
+  is set to `blocked` before the publish run. The draft log states the
+  change once; it is not an open item.
 
 ## Model quality: no compromise
 
@@ -120,9 +174,14 @@ Sources available to you, in order of preference:
 3. Published case-study figures on `/work/<brand>` (see `src/content/cases/`).
    Use only what is already published there. Never add a client figure.
 
-If none of the three yields a usable number, leave `TODO: proprietary number`
-in the draft, say so in the log, and let the piece ship without it only if
-the brief allows. Never invent one.
+When a brief asks for a figure that is not on file (a Compass share while
+`sources/compass-stats.md` does not exist, or a "from stores under
+management" figure that is not in the ledger), the settled fallback is:
+source 2, then source 3, labelled as what it is. If neither fits honestly,
+the piece ships without a proprietary number. Never invent one, never leave
+a marker, never ask for the figure in the log or the email: the log states
+in one line which source the number came from, or that the piece runs
+without one.
 
 ## The one conflict you must resolve
 
@@ -257,11 +316,14 @@ In-market readers need the diagnosis. The brief says which one leads.
 When step 4 finishes and the push succeeds, run from the repo root:
 
 ```
-node editorial/scripts/notify-publish.mjs --slug <slug> --title "<title>" --section insights --build passed --log editorial/logs/YYYY-MM-DD.md --note "<commit hash>" --todo "<any open item>"
+node editorial/scripts/notify-publish.mjs --slug <slug> --title "<title>" --section insights --build passed --log editorial/logs/YYYY-MM-DD.md --note "<commit hash>"
 ```
 
 It sends one email through Resend (key in `.env`) with the live URL per
-locale, the hero image path, build status, open TODOs and the run log path.
+locale, the hero image path, build status and the run log path. It reports
+what was done; it has no TODO or open items section. The script refuses to
+send if `--todo` (or `--open`, `--followup`) is passed, or if `--note` carries
+a TODO, FIXME, TBD or "open items" text.
 Use `--section guides` for an asset. Add `--dry-run` to preview. If the send
 fails, say so in the run log and the final message instead of skipping
 silently.

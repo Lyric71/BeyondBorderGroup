@@ -2,7 +2,7 @@
 title: "Kosmetik in China: die verantwortliche Person wechseln"
 description: "Seit dem 29. Juli 2026 kann eine ausländische Kosmetikmarke ihre verantwortliche Person in China ohne Zustimmung des alten Distributors austauschen."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Compliance & Setup"
 platforms: ["Tmall", "JD", "Douyin"]
@@ -195,10 +195,10 @@ verantwortliche Person.
 Kostenlos ist dieser Weg für Hautpflege allerdings nicht.
 
 > Ein Cross-Border-Shop für Hautpflege braucht vor dem ersten Verkauf
-> 80.000 Yuan Liquidität auf Tmall Global, 42.600 Yuan auf JD Worldwide
+> 80.000 Yuan Liquidität auf Tmall Global, 35.500 Yuan auf JD Worldwide
 > und 5.000 Yuan auf Douyin Cross-Border, Kautionen und Jahresgebühren
 > eingerechnet.
-> Quelle: Rechnerdaten von TheChinaPath, September 2026.
+> Quelle: Rechnerdaten von TheChinaPath, Oktober 2026.
 
 > Die Basiskaution bei Douyin Global richtet sich nach dem Umsatz des
 > Vormonats und beträgt höchstens 5.000 Yuan.

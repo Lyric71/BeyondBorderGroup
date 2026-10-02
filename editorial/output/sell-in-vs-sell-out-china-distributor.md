@@ -319,12 +319,6 @@ what you need to know. The honest comparison of
 is worth reading next, and [Compass](/compass) is where to look for a
 replacement.
 
-<!-- TODO: proprietary number. The brief asks for a Compass figure (share of
-distributors on file that share scan or depletion data).
-editorial/sources/compass-stats.md does not exist, and no calculator or
-published case figure measures this honestly, so none is printed. Add it at
-the first Refresh. -->
-
 <!-- SECTION: FAQ -->
 
 ## FAQ
@@ -423,7 +417,9 @@ Compass -> /compass
 CTA: Ask Compass for a shortlist of vetted distributors for your category -> /compass/shortlist
 PROPRIETARY NUMBER: none. The brief's Compass figure (share of distributors
 on file that share scan or depletion data) does not exist yet
-(editorial/sources/compass-stats.md missing). TODO comment left in the body.
+(editorial/sources/compass-stats.md missing). Settled fallback
+(editorial/CLAUDE.md, "The proprietary number"): no calculator or case figure measures this
+honestly, so the piece runs without one. Closed.
 The 12-week cover line is labelled "our working rule", not a data figure.
 HAND-OFFS: none.
 CLIENT SIGN-OFF NEEDED: none. The Kerry DaVinci Gourmet line paraphrases

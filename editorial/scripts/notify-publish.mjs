@@ -9,8 +9,14 @@
  *   node editorial/scripts/notify-publish.mjs --slug <slug> --title "<title>"
  *        [--section insights|guides] [--to <email>]
  *        [--image /Images/insights/<slug>.webp] [--build passed|failed]
- *        [--log editorial/logs/YYYY-MM-DD.md] [--todo "<text>"]...
- *        [--note "<text>"] [--dry-run]
+ *        [--log editorial/logs/YYYY-MM-DD.md] [--note "<text>"] [--dry-run]
+ *
+ * There is no --todo option. A publishing run never leaves a TODO or an open
+ * item behind: everything it finds is closed inside the run, or the run stops
+ * before publishing (editorial/CLAUDE.md, "No TODO leaves a run"). The email
+ * reports what was done. Passing --todo, --open or --followup makes this
+ * script refuse to send, and so does a --note that carries a TODO, FIXME or
+ * TBD marker or an "open items" list.
  *
  * Locale URLs are derived from which content files exist for the slug and
  * from the per-locale slug maps in src/i18n/insight-slugs.mjs:
@@ -52,7 +58,7 @@ function loadEnv() {
 }
 
 function parseArgs(argv) {
-  const out = { todo: [] };
+  const out = {};
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (!a.startsWith('--')) continue;
@@ -61,7 +67,7 @@ function parseArgs(argv) {
     if (key === 'no-indexnow') { out.noIndexNow = true; continue; }
     const val = argv[i + 1];
     if (val === undefined || val.startsWith('--')) { out[key] = true; continue; }
-    if (key === 'todo') out.todo.push(val); else out[key] = val;
+    out[key] = val;
     i++;
   }
   return out;
@@ -101,6 +107,18 @@ function esc(s) {
 async function main() {
   loadEnv();
   const args = parseArgs(process.argv.slice(2));
+  const refused = ['todo', 'todos', 'open', 'open-items', 'followup', 'follow-up'].filter((k) => k in args);
+  if (refused.length) {
+    console.error(
+      `Refused: --${refused.join(', --')} is not an option. A publishing run closes every item it finds ` +
+        'or stops before publishing; the email never carries a TODO or open item (editorial/CLAUDE.md).',
+    );
+    process.exit(2);
+  }
+  if (args.note && (/\b(TODO|FIXME|TBD)\b/.test(args.note) || /\bopen items?\b|\bfollow[- ]?ups?\b/i.test(args.note))) {
+    console.error('Refused: --note carries a TODO, FIXME, TBD, open item or follow-up. Close it in the run, then send.');
+    process.exit(2);
+  }
   if (!args.slug || !args.title) {
     console.error('Usage: node editorial/scripts/notify-publish.mjs --slug <slug> --title "<title>" [options]');
     process.exit(2);
@@ -125,7 +143,6 @@ async function main() {
     `Build: ${args.build || 'not reported'}`,
     `Run log: ${args.log || 'not reported'}`,
   ];
-  if (args.todo.length) lines.push('', 'Open TODOs:', ...args.todo.map((t) => `  - ${t}`));
   if (args.note) lines.push('', `Note: ${args.note}`);
   const text = lines.join('\n');
 
@@ -146,7 +163,6 @@ async function main() {
     ${row('Build', esc(args.build || 'not reported'))}
     ${row('Run log', esc(args.log || 'not reported'), true)}
   </table>
-  ${args.todo.length ? `<p style="font-size:14px;margin:24px 0 8px;color:#6B6B6B;">Open TODOs</p><ul style="font-size:14px;line-height:1.6;margin:0;padding-left:20px;">${args.todo.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
   ${args.note ? `<p style="font-size:14px;line-height:1.6;margin:24px 0 0;">${esc(args.note)}</p>` : ''}
 </div>`;
 

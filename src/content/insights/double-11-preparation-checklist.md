@@ -2,7 +2,7 @@
 title: "Double 11 preparation checklist: 50 days out"
 description: "A dated Double 11 preparation checklist for foreign brands, counting back from November 11, with the owner and the cost of every slipped line."
 pubDate: "2026-09-22"
-updatedDate: "2026-09-22"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "JD", "Douyin", "Kuaishou"]
@@ -61,10 +61,8 @@ longest on record, and each big platform ran its own window.
 > Source: The Paper (澎湃新闻), November 2025.
 > https://m.thepaper.cn/newsDetail_forward_31971814
 
-Read that as an operator and the 50 days collapse. If Tmall opens around
-October 15 again, you have roughly 20 working days before shoppers can put
-your product in a cart. By the back half of the countdown you are already
-trading.
+Read that as an operator and the 50 days collapse. By the back half of the
+countdown you are already trading.
 
 The 2026 cycle is already moving.
 
@@ -86,8 +84,22 @@ Kuaishou moved a day later and published its calendar with it.
 > Source: Ebrun (亿邦动力), September 2026.
 > https://news.qq.com/rain/a/20260919A088XY00
 
-Registration is open on both. Kuaishou starts selling on October 7, Douyin
-sometime in October. Early October is the date that belongs on your wall.
+Tmall and JD dated their own windows the same week.
+
+> Tmall opens Double 11 2026 presale and deposit payments on October 15.
+> Final payments start at 20:00 on October 20, and spot selling runs from
+> then until 23:59 on November 13.
+> Source: Beijing Business Today (北京商报), via NetEase, September 2026.
+> https://www.163.com/dy/article/L7E4TETQ0519DFFO.html
+
+> JD opens its 2026 Double 11 in full, with spot goods on sale, on October
+> 12.
+> Source: National Business Daily (每日经济新闻), September 2026.
+> https://www.nbd.com.cn/articles/2026-09-24/4591116.html
+
+So Kuaishou sells from October 7, JD from October 12 and Tmall from
+October 15, with Douyin somewhere in October. Early October is the date
+that belongs on your wall.
 
 For scale, and for anyone still arguing internally about whether the festival
 is worth the working capital:
@@ -249,19 +261,20 @@ read the “what breaks” column out loud in the kickoff, because that column
 is the only part of a checklist anybody remembers in week six.
 
 Every date above was counted back from Wednesday, November 11, 2026, and
-every platform window here was checked against its source announcement on
-September 22. Platforms move their own dates. Check the ones that matter to
-you on the merchant back end before you commit budget against them.
+every platform window here was checked against its source announcement:
+Douyin and Kuaishou on September 22, Tmall and JD on October 2. Platforms
+move their own dates. Check the ones that matter to you on the merchant back
+end before you commit budget against them.
 
 ## Questions we get asked
 
 **When does Double 11 2026 actually start?**
 
 November 11 is the headline day, but the selling starts weeks earlier.
-Douyin has said its 2026 sale runs from October through November 11, and
-Kuaishou's cycle opens October 7. In 2025, Tmall sold from October 15 and JD
-from October 9. Plan for mid-October, and treat any later platform
-announcement as a bonus.
+Kuaishou's cycle opens October 7 and JD opens on October 12. Tmall starts
+presale and deposits on October 15, with spot selling from 20:00 on
+October 20. Douyin has said its 2026 sale runs from October through
+November 11. Plan for the second week of October.
 
 **Is it too late to join Double 11 2026 if we have no China store?**
 

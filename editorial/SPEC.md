@@ -253,7 +253,7 @@ DOWNLOADS: <file, format, gate or no gate>
 INTERNAL LINKS: <anchor text> -> <url>, one per line
 PROPRIETARY NUMBER: <the figure, the label used, where it came from>
 HAND-OFFS: <TheRedScroll / ChinaWebFoundry mentions and the anchor text used>
-CLIENT SIGN-OFF NEEDED: <any client figure used, or none>
+CLIENT FIGURES USED: <each client figure and the /work page it is on, or none>
 -->
 ```
 
@@ -302,7 +302,7 @@ the image step.
 | `quality_passed` | content-quality-us finished on the file |
 | `image_ready` | hero image checked and saved to `public/Images/insights/` |
 | `published` | createblogarticle finished, build passed, pushed, email sent |
-| `blocked` | stopped on a flag condition, see `notes` |
+| `blocked` | stopped on something only Cyril can decide, or on missing core data; reason in `notes`; never publishes |
 | `skipped` | a kill condition fired (Signal, Ledger, Refresh, Teardown), see `notes` |
 
 ## Definition of done (steps 0 to 3)
@@ -319,7 +319,8 @@ Verify each by counting or checking, not by assuming.
 - [ ] No banned vocabulary. No three-item rhetorical lists.
 - [ ] No price, rate or fee for TheChinaPath's own services anywhere in the file.
 - [ ] Every third-party statistic in a blockquote with a named source, a date and a URL.
-- [ ] The proprietary number present and labelled, or `TODO: proprietary number` flagged.
+- [ ] The proprietary number present and labelled, or the settled fallback applied and named in the log (CLAUDE.md, "The proprietary number").
+- [ ] Zero TODO, FIXME or TBD markers in the file, comment blocks included (`node scripts/check-no-todo.mjs`).
 - [ ] New figures appended to `sources/verified-sources.md`.
 - [ ] Platform names as the house list on first mention.
 - [ ] Title, meta and excerpt counted and inside ceilings, after the quality pass too.
@@ -334,19 +335,29 @@ Verify each by counting or checking, not by assuming.
 - [ ] `schedule.csv` row updated with status and the three dates.
 - [ ] `logs/YYYY-MM-DD.md` written.
 
-## When to stop and flag
+## Closing what the draft finds
 
-Draft without pausing, with five exceptions. In each case, write the draft up
-to that point, leave a clear marker, and flag it in the log.
+Draft without pausing. Nothing below leaves a marker in the file or an open
+item in the log: each case is closed in the run (CLAUDE.md, "No TODO leaves a
+run").
 
-1. **A required figure cannot be sourced.** Cut the claim, mark
-   `TODO: unsourced claim removed`, and say which section is now thinner.
-2. **A client number is needed and is not on the `/work` page.** Mark
-   `TODO: client sign-off` and leave the sentence incomplete rather than
-   estimating.
+1. **A required figure cannot be sourced.** Cut the claim and rewrite the
+   section so it reads whole without it. The log lists the cut claims.
+2. **A client number is needed and is not on the `/work` page.** Cut it.
+   Use only what the case page already publishes; never estimate, never
+   leave a sentence incomplete.
 3. **A Teardown claim cannot be traced to the storefront or a filing.**
    Label it an inference or cut it. Never guess a number about a named brand.
-4. **The brief conflicts with what the site actually says.** The site wins.
-   Note the conflict so the brief can be corrected.
+4. **The brief conflicts with what the site or the sources say.** The site
+   and the sources win. Correct the brief at its source in
+   `public/content/editorial-briefs.md` and rerun
+   `node editorial/scripts/build-briefs.mjs` in the same run, so no later
+   brief repeats it.
 5. **A brief's internal link target does not exist in `src/pages/`.** Link
-   to the nearest existing page and list the missing target in the log.
+   to the nearest existing page, and correct the link list in the master
+   plan (the brief or the PREAMBLE) in the same run.
+6. **The new piece contradicts or outdates a published page** (an article,
+   a calculator, a guide). Fix that page in every locale in the same run and
+   move its `updatedDate`.
+7. **Something only Cyril can decide.** Set the row to `blocked` with the
+   reason in `notes` and stop. A blocked row never publishes.

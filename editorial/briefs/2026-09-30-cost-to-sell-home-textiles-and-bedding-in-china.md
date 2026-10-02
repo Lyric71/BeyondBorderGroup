@@ -12,7 +12,7 @@ primary_query: ""
 industry: "Home & Living"
 word_count: "1,100 to 1,400"
 variant: A
-proof: "Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page."
+proof: "No bedding client on /work (Bassetti's case is a TEEXMA software project, not bedding retail), so block 6 is the honesty line. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page."
 status: not_started
 ---
 
@@ -42,13 +42,13 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Industry | `Home & Living`, set as `industry` in the insight frontmatter |
 | Body length | 1,100 to 1,400 (body only, per the char-count rule) |
 | Ledger variant | A |
-| Proof | Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page. |
+| Proof | No bedding client on /work (Bassetti's case is a TEEXMA software project, not bedding retail), so block 6 is the honesty line. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page. |
 
 ## The brief
 
 **Title:** What it costs to sell home textiles and bedding in China
 **Word count:** 1,100 to 1,400
-**Proof.** Bassetti. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page.
+**Proof.** None from /work: Bassetti's case is a TEEXMA software project, not bedding retail, so block 6 says plainly that no bedding client is on file. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page.
 
 ## Slot spec
 

@@ -2,7 +2,7 @@
 title: "Redes sociales en China: lo que cuesta un mes de marketing"
 description: "Contenido, medios pagados y equipo: lo que cuestan al mes Xiaohongshu, Douyin, WeChat y Weibo a una marca extranjera, con dos presupuestos para empezar."
 pubDate: "2026-09-29"
-updatedDate: "2026-09-29"
+updatedDate: "2026-10-02"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Xiaohongshu", "Douyin", "WeChat", "Weibo"]
@@ -179,19 +179,20 @@ Aplicamos 10.000 yuanes en el nivel de crecimiento y 20.000 en el de venta
 en todas las plataformas, para que la tabla compare contenido y equipo con
 los mismos medios. WeChat es la excepción, porque su mínimo publicado es
 más alto. La última tarifa pública de anuncios en Moments que hemos podido
-verificar es de 2018, así que esa fila debe leerse como un suelo a precios
-de 2018.
+verificar es del segundo trimestre de 2020 y repite los mínimos de 2018,
+así que esa fila debe leerse como un suelo a precios de 2020.
 
-> En 2018, los anuncios de WeChat Moments comprados por subasta exigían un
-> presupuesto diario de al menos 1.000 yuanes. Una campaña reservada en
-> Moments requería al menos 50.000 yuanes, con precios de tarifa de 150
-> yuanes por cada mil impresiones de anuncio de imagen en Pekín y Shanghái.
-> Fuente: WeChat Ads (微信广告), tercer trimestre de 2018. https://wximg.qq.com/wxp/wxadtouch/upload/t2/file-1533693930261.pdf
+> En el segundo trimestre de 2020, los anuncios de WeChat Moments comprados
+> por subasta exigían un presupuesto diario de al menos 1.000 yuanes. Una
+> campaña reservada en Moments requería al menos 50.000 yuanes, con precios
+> de tarifa de 150 yuanes por cada mil impresiones de anuncio de imagen en
+> Pekín y Shanghái.
+> Fuente: WeChat Ads (微信广告), segundo trimestre de 2020. https://wxa.wxs.qq.com/wxadtouch/upload/t2/ar2zl7ks_250201f1.pdf
 
 Un mes de anuncios diarios por subasta a ese mínimo son 30.000 yuanes, y
 una campaña reservada, 50.000. Esas son las cifras de WeChat para los
 niveles de crecimiento y venta, y las menos seguras de la tabla: los
-precios han tenido ocho años para moverse. La fila de venta de WeChat
+precios han tenido seis años para moverse. La fila de venta de WeChat
 supone además una sociedad en China o un distribuidor a través del cual
 vender, por razones que se explican más abajo.
 
@@ -208,7 +209,7 @@ debajo, no se publica nada. Solo algunos son públicos.
 | Douyin, creadores (Xingtu) | 10.000 yuanes por tarea de reclutamiento | 5 % del valor de la tarea | Agosto de 2026 |
 | Xiaohongshu, creadores | No publicado | 10 % del valor del acuerdo | Noviembre de 2021 |
 | Xiaohongshu, anuncios | No publicado | No publicada | No se encontró página pública |
-| WeChat, anuncios en Moments | 1.000 yuanes al día por subasta; 50.000 yuanes por campaña reservada | No publicada | Tercer trimestre de 2018 |
+| WeChat, anuncios en Moments | 1.000 yuanes al día por subasta; 50.000 yuanes por campaña reservada | No publicada | Segundo trimestre de 2020 |
 | Weibo, anuncios | No hay mínimo fechado publicado | No publicada | No se encontró página fechada |
 
 </div>
