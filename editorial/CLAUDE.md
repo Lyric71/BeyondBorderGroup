@@ -78,7 +78,9 @@ site has no gated download, so the settled fallback applies: the publish
 step publishes the report as a printable page in `src/content/guides/`
 (English only, `/guides/<slug>/`, like an Asset), links it from the Anchor
 body, and turns the "gated" CTA into a request through `/contact` for the
-underlying sheet. The log notes the substitution once. When a Report's core
+underlying sheet. Confirmed by Cyril on 2 October 2026: Reports publish
+ungated, with no lead capture form; no run reopens this. The log notes the
+substitution once. When a Report's core
 data is not on file (store-level figures, a Compass snapshot), the Report row
 goes to `blocked` with the reason before drafting; the Anchor still
 publishes on schedule.
@@ -119,7 +121,8 @@ Settled since, so no run raises them again:
   Where a service page lists something the territory rule hands to
   TheRedScroll or ChinaWebFoundry, the article follows the territory rule,
   links the service page only for storefront and livestream commerce, and
-  the log does not flag the difference.
+  the log does not flag the difference. Confirmed by Cyril on 2 October
+  2026: the service page stays as it is; no run reopens this.
 - **An SEO field change the Anchor spec requires** (the title or H1 moved
   to the query) is signed off by the review window: it ships unless the row
   is set to `blocked` before the publish run. The draft log states the
