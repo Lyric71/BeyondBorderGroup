@@ -6,8 +6,8 @@ on every run.
 **Refresh on the first working day of each month.** Ask Claude:
 `Refresh sources/site-profile.md from the repo and the live site.`
 
-Last refreshed: 2026-09-04 (from the repo)
-Next refresh due: 2026-10-01
+Last refreshed: 2026-10-02 (from the repo; forced draft run, Golden Week)
+Next refresh due: 2026-11-02
 
 ## Positioning
 
@@ -46,8 +46,12 @@ Do not invent services. The service pages, English:
 `/learn-china/platforms`).
 
 **Compass** (`/compass`): the vetted distributor and partner database.
-`/compass/how-it-works`, `/compass/what-is-inside`, `/compass/why-vetted`,
-`/compass/shortlist` (the CTA target), `/compass/partners`.
+`/compass/shortlist` (the CTA target), `/compass/partners`, and three
+finder pages: `/compass/find-a-distributor-in-china`,
+`/compass/find-a-tmall-partner-in-china`,
+`/compass/find-a-douyin-partner-in-china`. (The how-it-works,
+what-is-inside and why-vetted pages listed on Sept 4 no longer exist as
+files in `src/pages/compass/`; do not link them.)
 
 **Tools** (`/tools`): three live calculators.
 - `/tools/tmall-global-setup-and-run`
@@ -59,12 +63,16 @@ and KOL ROI). Do not link to them.
 **Work** (`/work/<brand>`): 23 case studies in `src/content/cases/`. The
 only source for client figures.
 
-**Insights** (`/insights/<slug>`): 74 articles as of Sept 4, 2026, in
+**Insights** (`/insights/<slug>`): 99 articles as of Oct 2, 2026, in
 `src/content/insights/`, with FR (`/fr/decryptages/`), DE (`/de/analysen/`)
 and ES (`/es/analisis/`) siblings.
 
-**Guides** (`/guides/<slug>`): the printable assets from this plan. Empty
-until 03A publishes.
+**Guides** (`/guides/<slug>`): the printable assets from this plan. Two as
+of Oct 2, 2026: `double-11-preparation-checklist` and
+`verify-chinese-company-qichacha`.
+
+Other hubs: `/insights/finding-a-partner` (the partner queue),
+`/insights/industries`, `/insights/ceo-opinion`, `/how-we-work`.
 
 Other: `/about`, `/contact`, `/thank-you`, `/privacy-policy`,
 `/cookie-policy`, `/terms-of-service`.

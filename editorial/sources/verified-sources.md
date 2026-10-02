@@ -2939,6 +2939,165 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 ### Not sourced (claims cut)
 - An official CNIPA count of bad-faith trademark filings rejected in 2024 or 2025: none found in the 2025 and 2026 work reports or the January 2026 press conference. Closest: 336 DEEPSEEK bad-faith filings rejected in 2025 (CNIPA-hosted 知识产权报, 2026-05-29, https://www.cnipa.gov.cn/art/2026/5/29/art_55_206581.html, one check); 1.273 million 心机商标 applications rejected since 2023 (四川在线 citing the 2026-04-23 SCIO briefing, outlet off the preferred list). Neither used.
 
+## Douyin store vs Douyin ads research (Anchor 05A), October 2, 2026
+
+### Douyin Global admission: overseas entity, mainland domestic agent, overseas bank account, trademark validity
+- Value: the store entity must be registered outside mainland China (overseas or HK/Macau/Taiwan) with retail or trade qualifications, and may not be a mainland company (2.1.1, 4.2.1); a mainland entity carrying joint liability, the domestic agent (境内代理人), is required and files its business licence plus a signed entrustment declaration (2.1.2, 4.2.1); an overseas or HK/Macau/Taiwan corporate bank account is required (2.1.3; WorldFirst bank proof accepted); a flagship store needs the home-market trademark registration certificate or application receipt valid for more than six months, a licensee also an exclusive authorization valid for more than two months (4.2.2); non-Chinese documents need a Chinese translation. Exit (7.1): closing notice posted 30 days, last order at least 90 days past completion, nothing owed; after exit the store can no longer view store information (7.3.1); merchants must staff customer service on Feige (6.2.4)
+- As of: July 2026 (first effective 2021-02-19, latest revision effective 2026-07-15, 8.3; page header 2026-09-25)
+- Source: Douyin E-commerce (抖音电商), 《【全球购】招商管理规则》
+- URL: https://school.jinritemai.com/doudian/web/article/108056
+- Verified 1: 2026-10-02 (rendered with headless Edge on a temp profile; clauses read)
+- Verified 2: 2026-10-02 (re-rendered at iteration 8; 境内代理人 and 2026年7月15日 re-found)
+- Used in: douyin-store-vs-douyin-ads
+- Notes: same page as the existing channel-supplement entry (5.2.2). No clause requires Chinese-language customer service; only product pages must be described in Chinese (6.2.2).
+
+### Domestic agent: customs registration, truthful declaration, joint civil liability (MOFCOM 486)
+- Value: an overseas cross-border e-commerce retail import enterprise must appoint a company registered in mainland China, which registers with customs, is responsible for truthful declaration, accepts supervision and bears joint civil liability (民事连带责任)
+- As of: November 2018 (商财发〔2018〕486号, dated 2018-11-28)
+- Source: Ministry of Commerce (商务部) and five agencies, via the State Council policy library (中国政府网)
+- URL: https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5437823.htm
+- Verified 1: 2026-10-02 (§四(一)1 read)
+- Verified 2: 2026-10-02 (re-fetched with curl at iteration 8; 连带责任 re-found)
+- Used in: douyin-store-vs-douyin-ads
+- Notes: GACC Announcement 194 of 2018 (https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5447414.htm, dated 2018-12-10, in force 2019-01-01, clauses (二) and (三十一)) says the agent bears civil liability (民事责任) without "joint". Checked once on 2026-10-02, not cited. Attribute "joint" to 486 only. Older than twelve months but in force; re-verify before each reuse.
+
+### Feige average response time under 90 seconds, 8:00:00 to 22:59:59
+- Value: 飞鸽平均响应时长 must be under 90 seconds, assessed only on human-agent chats opened between 8:00:00 and 22:59:59; an unanswered turn counts as 10 minutes; if more than 10 chats in a row go unanswered during working hours (daily 08:00 to 23:00) the platform may switch on its AI agent
+- As of: January 2026 (first effective 2021-07-15, revised effective 2026-01-23)
+- Source: Douyin E-commerce (抖音电商), 《飞鸽服务使用管理规范》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/101788
+- Verified 1: 2026-10-02 (rendered with headless Edge)
+- Verified 2: 2026-10-02 (re-rendered at iteration 8; 90s and 8:00:00-22:59:59 re-found)
+- Used in: douyin-store-vs-douyin-ads (with our arithmetic: 15 staffed hours a day, about 450 hours in a 30-day month)
+- Notes: general Douyin rule; the same metric sits in the service part of the Douyin Global experience score. The "3-minute human reply rate" circulating on Sohu, Zhihu and agency sites is not in current official rules: never print it.
+
+### Douyin Global shipping: bonded 48 hours, direct mail 120 hours, late-shipment deductions
+- Value: bonded (BBC) standard orders ship within 48 hours of payment, with the courier's first pickup scan within 24 hours of shipping; express option ships same day for orders paid before 16:00; direct mail (BC/CC) shows international linehaul pickup within 120 hours of payment; pre-sale windows 2 to 15 days. Late deductions on the amount paid: promised 48 h or less, over 48 h late 1% (min 2 RMB); promised 48 to 240 h, up to 48 h late 1% (min 2 RMB), over 48 h late 3% (min 3 RMB); promised over 240 h, 1% (min 3 RMB) and 5% (min 5 RMB); cap 50 RMB. Mass violations freeze 15% of the last 15 days' settlement, minimum 1,000 RMB, up to 90 days. False shipping: 30% of the order, min 10, max 100 RMB
+- As of: April 2026 (first effective 2021-02-19, revised effective 2026-04-01; page dated 2026-07-14)
+- Source: Douyin E-commerce (抖音电商), 《【全球购】商家发货行为管理规则》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/107820
+- Verified 1: 2026-10-02 (rendered with headless Edge)
+- Verified 2: 2026-10-02 (re-rendered at iteration 8; 48小时 and 15%(最低1000元) re-found)
+- Used in: douyin-store-vs-douyin-ads
+- Notes: the page calls the deductions 订单扣款 and does not say who receives them. The domestic 抖店 rule (https://school.jinritemai.com/doudian/web/articlev0/101706, revised 2026-07-08) excludes Douyin Global. "3 to 30 RMB per late order" figures are content-farm only.
+
+### Douyin Global merchant experience score: dimensions, weights, Qianchuan ban
+- Value: 0 to 100 over the last 30 days (flat 70 below 30 valid orders); product, logistics and service dimensions; weights product / logistics / service: cross-border health 25 / 20 / 55, cross-border FMCG 47 / 20 / 33, cross-border fashion 44 / 20 / 36; below the control threshold Qianchuan buying is banned (禁止投放); the score also gates campaign sign-up and the affiliate pool; shown to shoppers as 3.0 to 5.0 stars
+- As of: September 2026 (first effective 2020-10-09, revised effective 2026-09-26)
+- Source: Douyin E-commerce (抖音电商), 《【全球购】商家体验分规范》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHMSpgQDfmxK
+- Verified 1: 2026-10-02 (rendered with headless Edge)
+- Verified 2: 2026-10-02 (re-rendered at iteration 8; 55% and 禁止投放 re-found)
+- Used in: douyin-store-vs-douyin-ads
+- Notes: the threshold value itself is not stated on the page read.
+
+### Store livestreams over 30% of Douyin GMV in 2024; shelf over 40%
+- Value: in 2024 shelf scenes were over 40% of Douyin e-commerce GMV and store livestreams (店播) over 30%; store livestream GMV exceeded creator livestreams for two years running; 69% of merchants earning from livestream selling did so through store livestreams (Douyin's 2025 store-livestream trends report, Feb 2024 to Jan 2025)
+- As of: March 2025 (2025-03-07 09:48)
+- Source: Economic Information Daily (经济参考报), 李志勇, via the Xinhua app (新华网客户端)
+- URL: https://app.xinhuanet.com/news/article.html?articleId=f748ec944eff412bf8a1fb4b9c21f2f6
+- Verified 1: 2026-10-02
+- Verified 2: 2026-10-02 (body loads by script: re-read with WebFetch at iteration 8; the 40% / 30% / two-years sentences quoted verbatim)
+- Used in: douyin-store-vs-douyin-ads (30% and two-years only)
+- Notes: the 40% / 30% sentence opens "数据显示" with no named source; only the 69% is credited to Douyin's report. 36Kr (2025-09-24, https://www.36kr.com/p/3480136952077441) reports shelf GMV +49% year on year per Douyin; checked once, not used. Shelf 30% in 2022-23: Xinhua 2023-05-16; checked once, not used.
+
+### Douyin removed third-party products from livestream carts from October 9, 2020
+- Value: from October 9, 2020, products from third-party sources (Taobao, JD) could no longer enter the livestream cart; Douyin store products unaffected; at the time short videos could still carry third-party links
+- As of: August 2020 (2020/08/26 19:26)
+- Source: Jiemian (界面新闻), 肖芳; backup Beijing News (新京报), https://m.bjnews.com.cn/detail/159844101115945.html
+- URL: https://www.jiemian.com/article/4887329.html
+- Verified 1: 2026-10-02
+- Verified 2: 2026-10-02 (re-fetched with curl at iteration 8; 10月9 re-found)
+- Used in: douyin-store-vs-douyin-ads
+- Notes: history. The short-video exemption is superseded for creator videos by the Xingtu entry below; do not say short videos can still link out.
+
+### Xingtu cart-sharing rules: no third-party links or QR codes not integrated by Douyin
+- Value: videos carrying third-party platform links or QR codes not integrated through Douyin's technology are violations; no video content may steer users to browse or trade directly on a third-party site
+- As of: June 2026 (2026-06-12)
+- Source: Ocean Engine Xingtu (巨量星图) help center, 《抖音购物车：商品分享规范》
+- URL: https://www.xingtu.cn/help-center/author/109258
+- Verified 1: 2026-10-02 (rendered with headless Edge)
+- Verified 2: 2026-10-02 (re-rendered at iteration 8; 第三方 passage re-found)
+- Used in: douyin-store-vs-douyin-ads
+- Notes: no official 2025-2026 source found on whether Ocean Engine ads can link to Taobao or JD; Tmall's 2024 Double 11 splash-screen buy is reported only on a self-media repost of Bianews. Do not claim either way.
+
+### Qianchuan users and credit scope (NEW PASSAGE on the existing "Qianchuan campaign plan: default minimum daily budget 100 RMB" entry)
+- Value: Qianchuan is open to merchants, agencies and creators with livestream, short-video selling or mall promotion needs; promotion credits are used only for Douyin e-commerce products and cart-enabled livestreams
+- As of: June 2025 (2025-06-24)
+- Source: Douyin E-commerce Learning Center (抖音电商学习中心), 《一文读懂巨量千川-流量推广金》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHvyeGCvMaTB
+- Verified 1: 2026-10-02
+- Verified 2: 2026-10-02 (re-rendered at iteration 8; 挂车直播间 and 最低为100元 re-found)
+- Used in: douyin-store-vs-douyin-ads (with the 100 RMB plan minimum)
+- Notes: the official admission page (https://qianchuan.jinritemai.com/support/content/206746, updated 2026-08-17) is an embedded Feishu document that does not render; the "bind a Douyin store to open Qianchuan" wording appears only on aggregators. Say "promotes Douyin products and cart livestreams", not "requires a store".
+
+### Xingtu: creator video reuse in ads, long-term authorization, license fee 20 RMB to 50% of the task
+- Value: in the original-video boost scenario the brand sets an ad run (default 7 days), which is the ad window, not the license term; the creator's authorization is long-term; an optional flat license fee runs from at least 20 RMB to at most 50% of the task amount
+- As of: June 2026 (2026-06-09)
+- Source: Ocean Engine Xingtu (巨量星图) help center
+- URL: https://www.xingtu.cn/help-center/demander/139122
+- Verified 1: 2026-10-02 (rendered with headless Edge)
+- Verified 2: 2026-10-02 (re-rendered at iteration 8; 长期有效 and 不低于20元 re-found)
+- Used in: douyin-store-vs-douyin-ads
+- Notes: companion page https://www.xingtu.cn/help-center/author/127894 (2026-08-03) says the boosted video may run on Douyin, Toutiao and Pangle once the creator agrees; checked once, not cited.
+
+### Xingtu reviews overseas brand entities within 24 hours
+- Value: brand qualification review takes about 6 hours; overseas entities within 24 hours
+- As of: June 2026 (2026-06-08)
+- Source: Ocean Engine Xingtu (巨量星图) help center
+- URL: https://www.xingtu.cn/help-center/demander/112557
+- Verified 1: 2026-10-02 (rendered with headless Edge)
+- Verified 2: 2026-10-02 (re-rendered at iteration 8; 24h re-found)
+- Used in: douyin-store-vs-douyin-ads
+- Notes: Xingtu only. Ocean Engine ad accounts for overseas entities: the official page is undated, not usable.
+
+### Douyin brands averaged RMB 324,000 a month on sponsored creator content (Jan to Jul 2024)
+- Value: average monthly spend per brand 32.4万 RMB on Douyin, 18.7万 RMB on Xiaohongshu
+- As of: January to July 2024 (article 2024-09-24 10:20:28)
+- Source: DoNews, 杨亮, citing QuestMobile 2024 品牌商业软广营销洞察
+- URL: https://www.donews.com/news/detail/1/4547390.html
+- Verified 1: 2026-10-02 (rendered; curl returns nothing)
+- Verified 2: 2026-10-02 (re-rendered at iteration 8; 32.4万 re-found)
+- Used in: douyin-store-vs-douyin-ads
+- Notes: the sentence itself does not say 软广 or January to July; both come from the headline and the report's stated period (今年1-7月). Older than twelve months: date it 2024 in copy. The 04A run checked it once on 2026-09-29.
+
+### Douyin Global store agreement: no transfer, platform-owned data, deposit refund on request
+- Value: the store may not be transferred or authorized to others without approval (2.3); data the platform collects belongs to the platform as its trade secret (8.1); deposit refunded on written request once orders, disputes and product warranties have ended, in RMB, fees borne by the merchant (6.6); payout currency chosen by the merchant, converted at the payment provider's rate on the day of first conversion (Annex 1, item 5); counterparty Global Premium Buy (Macau) Limited (优选海购（澳门）有限公司)
+- As of: December 2022 (agreement effective 2022-12-30; page 2023-01-01)
+- Source: Douyin E-commerce (抖音电商), 《【全球购】电子商务开放平台店铺服务协议》
+- URL: https://school.jinritemai.com/doudian/web/article/aHPKRKjRGhpj
+- Verified 1: 2026-10-02 (rendered with headless Edge)
+- Verified 2: 2026-10-02 (re-rendered at iteration 8; 转让 and 归属于甲方 re-found)
+- Used in: douyin-store-vs-douyin-ads (with admission rules 7.3.1 for the exit line)
+- Notes: older than twelve months but the live agreement; re-verify before reuse. No refund-days figure for Douyin Global; the domestic 1 to 3 working days (articlev0/101830, articlev0/101725) does not apply to it. Nothing found on followers after a store closes.
+
+### Douyin calculator defaults: store year-one cash, running cost share and breakeven by margin (proprietary)
+- Value: at defaults (RMB 2m year-one GMV, AOV 250, 8,000 orders, retainer 30,000 a month, partner commission 5%, co-fund 0, mix 15% paid / 80% creators / 5% organic, creator commission 20%, ROAS 2.5, packaged-food fee 2.5%, CBEC tax 9.1%, deposit 5,000, bonded deposit 100,000, tax prepayment 300,000, brand setup 25,000, storage 0.8 x 2 months, pick and pack 4, last mile 11, returns 5% x 15): setup RMB 430,000 (405,000 refundable); running cash RMB 1,270,800 = 63.5% of GMV = RMB 105,900 a month (retainer 360,000; creator commission 320,000; CBEC tax 182,000; Qianchuan 120,000; partner commission 100,000; last mile 88,000; tech fee 50,000; fulfillment 32,000; storage 12,800; returns 6,000); year-one cash RMB 1,700,800. Breakeven GMV with the calculator's formula (fixed side 368,333 incl. three-year setup amortization): RMB 1.25m at 75% gross margin, 2.55m at 60%, 8.26m at 50%
+- As of: September 2026
+- Source: TheChinaPath calculator data, src/pages/tools/douyin-cost-calculator.astro (drivers, groups, categories, compute(), breakeven F / (GM - vG - vQ/AOV))
+- Label in copy: "TheChinaPath calculator data, September 2026"
+- Verified 1: 2026-10-02 (defaults and formulas read; replicated in a scratch script)
+- Verified 2: 2026-10-02 (outputs rerun before the draft was finished)
+- Used in: douyin-store-vs-douyin-ads
+- Notes: scenario outputs, not client data or a market rate. Supersedes the running-cash figure in the P14 entry for the default (post-September 24) fee table.
+
+### Re-verified ledger entries reused (no new entry; add the slug to Used in)
+- Douyin Global base deposit 500 / 2,000 / 5,000 RMB (articlev0/107821): re-rendered 2026-10-02 at both checks. Add "douyin-store-vs-douyin-ads".
+- Douyin Global tech service fee schedule, July 2026 (articlev0/aHMYyFoqESKn): re-rendered 2026-10-02 at both checks (服装 6% + 4%, 彩妆香水 5% + 5%, 休闲食品 3% + 3.9%). Add the slug.
+- Douyin merchant after-sale rule 24 / 36 / 48 hours (articlev0/104600): re-rendered 2026-10-02 at check 2. Add the slug.
+- Douyin affiliate creator commission 5% to 50%, up to 80% (articlev0/112620): re-rendered 2026-10-02 at check 2. Add the slug.
+- Xingtu recruitment tasks 10,000 RMB, 5% fee (demander/126583): re-rendered 2026-10-02 at check 2. Add the slug.
+- Sponsored post RMB 39,700 on Douyin (Jiemian citing QuestMobile, jiemian.com/article/12440261.html): re-fetched 2026-10-02 at check 2. Add the slug.
+- Douyin MAU 1,009.0 million (Sina Tech, 2026-04-29): re-fetched 2026-10-02 at check 2. Add the slug.
+
+### NOT SOURCED, do not research again from these dead ends (05A, 2026-10-02)
+- Official Douyin guidance on short videos per week or livestream hours per day: learning-center searches (开播时长, 每周, 发布频率), case 113545, rubric aHd3psfsVEY6; figures exist only on Zhihu, CSDN and agency sites.
+- Chinese-language customer service requirement for Douyin Global: not in the admission rules, 服务管理规范 (articlev0/108060) or the Feige rules.
+- Followers after a Douyin Global store closes: no rule found.
+- Ocean Engine ad accounts for overseas entities and minimum budgets: kaihu-liucheng page undated.
+- Douyin ads linking to Taobao or JD in 2025-2026: agency blogs only; the 2024 Tmall splash-screen buy only on a NetEase self-media repost.
+- 2026 store-livestream or shelf GMV shares: none official; EBRUN 2026-09-21 gives creator figures only.
+
 ## Calculator fee audit, October 2, 2026 (closes the 2026-09-30 open item)
 
 ### JD Worldwide category fee standard, 2026-09-24 revision: commission and flagship deposit by category
