@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'douyin-product-card-fee-rebate': 'douyin-fiches-produits-commission-retrocedee',
   'cost-to-sell-home-textiles-and-bedding-in-china': 'ce-que-coute-vendre-du-linge-de-lit-en-chine',
   'china-social-media-marketing-cost-per-month': 'ce-que-coutent-les-reseaux-sociaux-chinois-par-mois',
   'wechat-store-double-11-subsidy': 'double-11-sur-wechat-store-ce-que-paie-la-marque',
@@ -163,6 +164,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'douyin-product-card-fee-rebate': 'douyin-rueckverguetung-statt-gebuehrenerlass',
   'cost-to-sell-home-textiles-and-bedding-in-china': 'was-bettwaesche-verkaufen-in-china-kostet',
   'china-social-media-marketing-cost-per-month': 'was-social-media-in-china-im-monat-kostet',
   'wechat-store-double-11-subsidy': 'wechat-store-double-11-was-marken-zahlen',
@@ -317,6 +319,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'douyin-product-card-fee-rebate': 'douyin-fichas-de-producto-comision-bonificada',
   'cost-to-sell-home-textiles-and-bedding-in-china': 'lo-que-cuesta-vender-ropa-de-cama-en-china',
   'china-social-media-marketing-cost-per-month': 'cuanto-cuestan-las-redes-sociales-chinas-al-mes',
   'wechat-store-double-11-subsidy': 'double-11-en-wechat-store-lo-que-paga-la-marca',

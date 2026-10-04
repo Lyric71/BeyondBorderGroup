@@ -71,6 +71,8 @@ The Monday sweep checks every item whose date has arrived, then moves it to
 
 | Check on | Item | Source to re-read | Possible piece |
 |---|---|---|---|
+| 2026-10-12 | Tmall Global consultation (posted 2026-09-30, open to 2026-10-08) on 《天猫国际红屁屁包退服务规范》 and 《天猫国际过敏包退服务规范》: refund-only up to 10 RMB per sub-order, merchant pays return freight above that, one opened pack at up to 50% used (diapers) or one item at up to 20% used (allergy), baby-food refund-only when each item is under 20% eaten. Check whether a final notice and effective date followed | rule.tmall.hk, ruleId 20010961 (cId 636), then the 规则公示 list for the final notice | A Signal if it takes effect: return freight and refund cost per order for mother-and-baby and beauty stores on Tmall Global |
+| 2026-10-12 | Douyin consultation on 《售后预留金实施细则》 (seen open on 2026-10-05, closing about 2026-10-08): the warranty-scenario after-sale reserve moves from a fixed share by category to a rate set by the store's refund-and-compensation rate, falling as each order's warranty period runs out. Check for the final version and whether it reaches Douyin Global stores | school.jinritemai.com rule centre, 征集中 and 公示中 lists | A Signal if the reserve rate or scope moves cash for cross-border stores |
 | 2027-09-01 | Consumption tax on batteries (无汞原电池, 锂离子蓄电池 and related lines), in force at 2% since 2026-09-01, reported to rise to 4% (seen in search on 2026-09-21; verify on the primary notice before use) | Ministry of Finance tax policy listing (gss.mof.gov.cn) | Background for 49A, How to sell consumer electronics and small appliances in China (August 10, 2027); a Signal on 2027-09-06 if a live piece prices batteries |
 
 ### Done

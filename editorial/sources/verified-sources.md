@@ -3181,3 +3181,458 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Verified 2: 2026-10-02 17:59 (curl re-fetch of update_daily_budget; "5,000 分-4,000,000,000 分" re-found)
 - Used in: not used
 - Notes: a field validation range in the API, not a commercial minimum for Moments, and no date on the page. Not publishable as a Moments floor.
+
+## Automotive channel research (Ledger 05L), October 3, 2026
+
+Check 1 for every entry below was run on 2026-10-03 by the first attempt of
+the 10-03 forced draft run (research note in logs/2026-10-03.md); check 2 was
+run on 2026-10-03 by the second attempt, which re-fetched every URL.
+
+### China domestic vehicle sales, August 2026: 1.701 million, down 24.2%
+- Value: 170.1万辆, -24.2% year on year, +10.4% month on month
+- As of: August 2026 (page dated 2026-09-24)
+- Source: China Association of Automobile Manufacturers (中国汽车工业协会)
+- URL: http://www.caam.org.cn/chn/4/cate_32/con_5237330.html
+- Verified 1: 2026-10-03 (page fetched; the text is an image, read)
+- Verified 2: 2026-10-03 (image re-downloaded and read: 「汽车国内销量完成170.1万辆…同比下降24.2%」)
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: the China News Service page carries only January to August totals and the NEV share; cite CAAM for the volume.
+
+### NEV share of China domestic vehicle sales, August 2026: 65.7%
+- Value: 65.7%
+- As of: August 2026 (page dated 2026-09-11)
+- Source: China News Service (中国新闻网), citing CAAM
+- URL: https://www.chinanews.com.cn/cj/2026/09-11/10694386.shtml
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03 (「8月，新能源汽车国内销量比例为65.7%」 re-found)
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### Autohome: 77.5 million mobile DAU (December 2025); dealer subscriptions fixed-fee, typically one year
+- Value: 68.2m / 77.5m / 77.5m mobile DAU in December 2023 / 2024 / 2025 (QuestMobile); "mainly on a fixed-fee basis, typically for a period of one year"
+- As of: FY2025 (20-F signed April 15, 2026)
+- Source: Autohome Inc., annual report on Form 20-F
+- URL: https://www.sec.gov/Archives/edgar/data/1527636/000119312526155932/athm-20251231.htm
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03 (both passages re-found)
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: DAU was flat from 2024 to 2025; never describe it as growth.
+
+### Autohome leads revenue Q2 2026: RMB 560.4m vs 732.6m
+- Value: RMB 560.4 million (US$82.6 million) vs RMB 732.6 million in Q2 2025; "reduced spending from dealers amid shrinking sales volumes, along with a decrease in the number of paying dealers"
+- As of: Q2 2026 (release August 20, 2026)
+- Source: Autohome Inc., 6-K exhibit 99.1
+- URL: https://www.sec.gov/Archives/edgar/data/0001527636/000119312526357963/d404747dex991.htm
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### Car portal membership fees, Hunan 4S stores, 2023 (projections)
+- Value: 79 stores expected to pay the three portals over 25m RMB for 2023, 300,000+ per store; Autohome cheapest 2023 tier (科技版) about 234,000 RMB after the 2022 豪华版 tier at 162,000 was dropped; Yiche 智享版 171,000 (2022) to about 239,000 (2023); Dongchedi 132,000 in 2022 (280 cars sold), projected about 256,000 for 2023 if volume is unchanged, after offsetting a 35% rebate
+- As of: January 2023 (page dated 2023-01-05); every 2023 figure is a projection (「需…将超过」, 「预计」)
+- Source: National Business Daily (每日经济新闻), via Securities Times (证券时报)
+- URL: https://www.stcn.com/article/detail/768317.html
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03 (Dongchedi wording 「会员价格预计为25.6万元」 re-found)
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: never write "paid" for 2023; the 2022 and 2023 Autohome figures are different tiers.
+
+### Dongchedi: 10 million+ mobile DAU (August 2025), 30,000+ dealers served
+- Value: 「截至2025年8月，懂车帝移动端DAU突破1000万」; 「懂车帝服务的汽车经销商已超过3万家」
+- As of: August 2025 (article dated 2026-02-27)
+- Source: The Paper (澎湃新闻), via Sina Finance
+- URL: https://finance.sina.com.cn/jjxw/2026-02-27/doc-inhphcxh3621410.shtml
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### Dongchedi average fee per car sold: 472 RMB (2022), 912 RMB (2023 projection)
+- Value: 「2022年的单车平均费用是472元，2023年达到912元」, derived from a projected 255,500 RMB 2023 fee over the same 280 cars
+- As of: January 2023 (page dated 2023-01-07)
+- Source: The Economic Observer (经济观察报)
+- URL: http://m.eeo.com.cn/2023/0107/574117.shtml
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: 912 is a forecast published on January 7, 2023; label it a projection.
+
+### Autohome 2019: a 200,000 RMB membership brought 7,500 leads; own-sourced leads 200 to 300 RMB
+- Value: 「花费20万元购买一年汽车之家的会员，经销商平均可从汽车之家获取7500条线索」; 「4S店获取线索的成本一般是200-300元一条」 (Autohome VP 吴涛, January 13, 2019)
+- As of: January 2019 (page dated 2019-01-18)
+- Source: Jiemian (界面新闻)
+- URL: https://www.jiemian.com/article/2803749.html
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: Autohome's own claim, seven years old; label it "Autohome's own 2019 math".
+
+### Douyin car dealers 2025: 30,200+ active stores, 810,000+ leads in a day, 1 in 6 auto leads
+- Value: 「2025年，抖音活跃门店数突破30200家」 (徐洁, East China head of the 巨懂车 dealer business); 「2025年抖音单日汽车线索量突破81万条…每产生6条线索，就有1条来自抖音」 (unattributed event data)
+- As of: 2025 (page dated 2025-11-28)
+- Source: China News Service Shanghai (中新网上海)
+- URL: https://www.sh.chinanews.com.cn/chanjing/2025-11-28/142813.shtml
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: 30,200 are stores, not accounts; credit the lead figures to event data.
+
+### Xiaohongshu cars: 230m car-interest users, 200m car-content reads a day, 1bn+ car searches a month
+- Value: 「2.3亿汽车兴趣用户，日均汽车内容阅读量达2亿次，月均搜索量超10亿次」 (Xiaohongshu data to October 2025)
+- As of: October 2025 (page dated 2026-04-16)
+- Source: Securities Times (证券时报), interview with Xiaohongshu's transport-industry lead
+- URL: https://www.stcn.com/article/detail/3753715.html
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### WeChat Channels: 28% of users went to a 4S store for a test drive after car content
+- Value: 31% searched the brand, 30% followed the account, 28% went to a 4S store for a test drive
+- As of: 2025 white paper (page dated 2025-04-22)
+- Source: Tencent Advertising (腾讯广告), 《汽车行业X视频号互选平台：2025创作者营销白皮书》, via Sina Finance
+- URL: https://finance.sina.com.cn/roll/2025-04-22/doc-inetzkuu7762499.shtml
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### China 4S network end-2025: 32,432 (-1.4%); nearly 5,000 exits and nearly 5,000 additions; NEV direct and agency outlets over half
+- Value: 32,432 4S outlets; 「退网的近5000家」 and 「新增近5000家」; NEV independent-channel network 26,260 outlets, and among its sales outlets 「代理与直营所组成的直接销售模式规模占比过半」
+- As of: end of 2025 (CADA 2025-2026 report; page dated 2026-03-18)
+- Source: China Automobile Dealers Association (中国汽车流通协会), via Sina Finance
+- URL: https://finance.sina.cn/2026-03-18/detail-inhrmayp7468550.d.html
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: "more than half" applies to sales outlets in the 26,260 NEV independent network, not to all NEV outlets.
+
+### Chinese car dealers 2025: 23.5% profitable, 55.7% loss-making
+- Value: profitable share down to 23.5% from 39.3% in 2024; loss-making about 55.7%
+- As of: 2025 (CADA dealer survey presented May 27, 2026; page dated 2026-05-28)
+- Source: CADA, via National Business Daily (每日经济新闻)
+- URL: https://www.nbd.com.cn/articles/2026-05-28/4411257.html
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### Auto China 2026 (Beijing): 1.28m visits, 1,451 vehicles, 181 world premieres
+- Value: 128万人次 over ten days (April 24 to May 3), 65,000 of them overseas; 1,451 vehicles; 181 global premieres
+- As of: May 2026 (page dated 2026-05-05)
+- Source: Beijing Daily (北京日报)
+- URL: https://xinwen.bjd.com.cn/content/s69fa0b7de4b0687a28951641.html
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### Cross-border retail import list (2019 edition): 1,413 tariff lines, no cars
+- Value: 1,413 lines (serials 1 to 1413); chapter 87 only 8712 bicycles, 87131000 wheelchairs, 87150000 baby carriages; no 8703
+- As of: MOF and 12 departments, Announcement 2019 No. 96, December 27, 2019, in force January 1, 2020
+- Source: Ministry of Finance (财政部); list PDF as published by MOFCOM
+- URL: http://gss.mof.gov.cn/gzdt/zhengcefabu/201912/t20191227_3451448.htm ; https://images.mofcom.gov.cn/cws/202001/20200110143527533.pdf
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03 (MOF page over http, https returned 502; PDF rows counted)
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: cite the http URL; gss.mof.gov.cn over https returns 502 to the fetcher.
+
+### Cross-border list 2022 adjustment: 29 products added, no vehicle
+- Value: 「增加29项商品」; no chapter 87 line in the adjustment table; in force 「自2022年3月1日起」
+- As of: Announcement 2022 No. 7, February 2022 (gov.cn posting 2022-02-21)
+- Source: Ministry of Finance and other departments
+- URL: https://www.gov.cn/zhengce/zhengceku/2022-02/21/content_5674854.htm (attachment .../5674854/files/3d3263c5ea0f4795b9864165b78af2c0.pdf)
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03 (page and 20-page PDF re-read; no 87xxxxxx code)
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### Passenger car import tariff 15% from July 1, 2018
+- Value: 135 lines at 25% and 4 at 20% cut to 15%
+- As of: 税委会公告〔2018〕3号, May 22, 2018
+- Source: Customs Tariff Commission of the State Council (国务院关税税则委员会), on MOF
+- URL: http://m.mof.gov.cn/zcfb/201805/t20180522_2903728.htm
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03 (curl; WebFetch returns 502)
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### China vehicle imports 2025: 476,000, -32.4%, US$23.64bn
+- Value: 47.6万辆, -32.4%; 236.4亿美元, -39.7% (CAAM from GACC data)
+- As of: 2025 (page dated 2026-02-04)
+- Source: CCTV (央视网)
+- URL: https://news.cctv.com/2026/02/04/ARTI5WxHlrO5lEbBzoUBVRKL260204.shtml
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### Foreign ownership cap on passenger-car manufacturing removed from January 1, 2022
+- Value: 「取消乘用车制造外资股比限制」
+- As of: 2021 negative list, page dated 2021-12-27, effective 2022-01-01
+- Source: National Development and Reform Commission (国家发展和改革委员会) and MOFCOM
+- URL: https://www.ndrc.gov.cn/xwdt/xwfb/202112/t20211227_1309928_ext.html
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### Automobile sales measures 2017: art. 24 and art. 26
+- Value: art. 24 (三) a supplier may not restrict a dealer from 「经营其他供应商商品」; art. 26 「除双方合同另有约定外，供应商在经销商获得授权销售区域内不得向消费者直接销售汽车」
+- As of: MOFCOM Order 2017 No. 1, issued 2017-04-05, in force 2017-07-01, posted 2017-04-14
+- Source: Ministry of Commerce (商务部)
+- URL: https://tfs.mofcom.gov.cn/swfg/sclt/art/2017/art_2b877ff893bc4900aef9f3b37164e555.html
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03 (curl; WebFetch closes the socket)
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### Douyin car categories: invitation only, e-voucher redeemable within 90 days
+- Value: 汽车定金, 汽车全款, 汽车预付款 「定向邀约」; merchant types 品牌主机厂 / 经销商集团（完整授权链路）/ 交易市场 / 大型车商; 电子卡券, 「核销码发放后 90日为最长可核销时间」
+- As of: revision in force 2026-09-20 (first effective 2021-11-18)
+- Source: Douyin E-commerce (抖音电商), 【汽车】行业管理规范
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHKhRwPcmzWa
+- Verified 1: 2026-10-03 (headless Edge)
+- Verified 2: 2026-10-03 (headless Edge re-render)
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: the page names a store scope, not "the dealer"; write "redeemed in store".
+
+### Douyin live ads: 10,000 RMB brings 50 to 150 valid leads, 67 to 200 RMB each
+- Value: 「投放1万元费用，仅能获得50-150条有效线索…单条线索成本…高达67-200元」 (a live-stream ad operator)
+- As of: May 2026 (page dated 2026-05-13)
+- Source: ChinaVenture (投中网), via Sina Tech
+- URL: https://finance.sina.com.cn/tech/roll/2026-05-13/doc-inhxtqxr4627675.shtml
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+
+### Douyin and Dongchedi lead rule from September 1, 2026; lead cost about 70 RMB, up to 500 in some sessions
+- Value: no manual WeChat ID entry from 2026-09-01; SMS code for lead submission; average ad cost per lead about 70 RMB, 500 RMB in some recent sessions; dealers ask streamers to keep a valid lead under 65 RMB
+- As of: September 2026 (page dated 2026-09-15)
+- Source: Dianchang (电厂), via Huxiu (虎嗅)
+- URL: https://www.huxiu.com/article/4891366.html
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: the rule comes from 巨量引擎 and 懂车帝 together.
+
+### Car purchase cycle: 2.5 months from first browsing to order
+- Value: 「用户从海选到下订的平均选购周期较24年进一步缩短至2.5个月」
+- As of: March 2026 (page dated 2026-03-30)
+- Source: Autohome Research Institute (汽车之家研究院)
+- URL: https://www.autohome.com.cn/news/202603/1313166.html
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: a 2025 "about two months" figure found elsewhere conflicts with the page's "shortened since 2024"; claim no trend.
+
+### J.D. Power 2025 NEV-SSI: same-day follow-up +12 satisfaction points, +25.6% share closed within a week
+- Value: 「当天跟进的销售顾问…客户满意度比次日跟进高出12分，一周内成交占比高出25.6%」
+- As of: August 7, 2025
+- Source: J.D. Power China, 2025 China NEV Sales Satisfaction Index Study
+- URL: https://china.jdpower.com/sites/china/files/file/2025-08/China%20NEV-SSI%20CN_FV_0.pdf
+- Verified 1: 2026-10-03
+- Verified 2: 2026-10-03
+- Used in: how-automotive-and-ev-brands-reach-buyers-in-china
+- Notes: the comparison is same day versus next day; 25.6% is "higher", not percentage points.
+
+### Reused from the ledger (Anchor 04A entries, both checks 2026-09-29, re-fetched 2026-10-03)
+- Xiaohongshu enterprise professional-account verification 600 RMB, annual review 600 RMB: page re-rendered 2026-10-03, 「企业专业号首次认证 600元/次」 re-found. Used in: how-automotive-and-ev-brands-reach-buyers-in-china.
+- WeChat overseas-entity verification US$99: JSON re-fetched 2026-10-03, 「目前境外主体认证费用为99美元」 re-found. Used in: how-automotive-and-ev-brands-reach-buyers-in-china.
+
+## RedNote store setup research (Anchor 06A), October 4, 2026
+
+Xiaohongshu rule-center pages (school.xiaohongshu.com) render as an empty
+shell to a plain fetch. They were read through the page's own data endpoint
+(POST /api/edith/governance/inform/rule/query_article_detail with
+{"articleId": <last number in the URL>}), and pages 817 and 858 were also
+rendered with headless Edge; text and dates matched.
+
+### Xiaohongshu store types open to overseas entities, documents, authorization levels, two-store cap, 30-day rejection lapse
+- Value: 卖场旗舰店、旗舰店、专卖店、集合店 accept mainland or overseas entities; 专营店 accepts overseas registration papers plus a Chinese-English translation; 普通企业店、个体工商户店、个人店 do not accept overseas entities; overseas legal representative may file a passport; overseas, WIPO or territorial-extension trademark proof accepted, registered marks only, no pure-graphic marks; flagship needs first-level exclusive authorization, 专卖店 and 专营店 up to three levels; non-Chinese, non-English documents need a stamped translation; one company runs at most 2 stores; a rejected application is cancelled if not resubmitted within 30 days
+- As of: February 2024 (body: revised 2024-02-22, in force 2024-02-29; the page header's 2023-02-17 date conflicts, cite the body)
+- Source: Xiaohongshu rule center (小红书电商学习中心), 《小红书招商标准及入驻规范》
+- URL: https://school.xiaohongshu.com/rule/detail/26/817
+- Verified 1: 2026-10-04 (API and headless Edge; clauses and body dates read)
+- Verified 2: 2026-10-04 (API re-fetched at iteration 8; all seven clauses re-found)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: no list of opened countries exists in the rule center; the "US, Hong Kong, Macau" list online belongs to the outbound 出海领航计划. No published entry-review time; the "3 to 7 working days" online traces to agency blogs.
+
+### Xiaohongshu cross-border stores need a mainland affiliate or agent with joint liability (from July 2, 2026)
+- Value: four documents, 「缺一不可」: overseas registration certificate; business licence of a mainland affiliate or agent whose scope covers import and export; a mainland entrusted company's undertaking of joint liability for product sourcing and compliance; customs consignee registration. Separately (brand qualification section), purchase proof from the last 12 months
+- As of: July 2026 (published for comment 2026-06-25, in force 2026-07-02)
+- Source: Xiaohongshu rule center (小红书电商学习中心), 《关于跨境商品资质核验及宣传规范的公告》
+- URL: https://school.xiaohongshu.com/rule/detail/19/119851
+- Verified 1: 2026-10-04 (API; four documents and 缺一不可 read)
+- Verified 2: 2026-10-04 (API re-fetched; same wording; 采购证明 sits in 二、品牌资质, not among the four)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: the same structure as Douyin Global's 境内代理人 rule (see the 05A entry).
+
+### Xiaohongshu cross-border category licences on both sides of the border, 30-day validity
+- Value: cross-border merchants file the home-country category licence; the mainland entrusted company holds the matching Chinese licence; every licence valid at least 30 days on the review day
+- As of: March 2025 (version 2025-03-22)
+- Source: Xiaohongshu rule center (小红书电商学习中心), 《小红书电商行业资质要求》
+- URL: https://school.xiaohongshu.com/rule/detail/26/807
+- Verified 1: 2026-10-04 (API)
+- Verified 2: 2026-10-04 (API re-fetched; wording and ≥30天 re-found)
+- Used in: xiaohongshu-store-setup-overseas-brand
+
+### Xiaohongshu overseas stores carry the 海外 suffix
+- Value: stores opened by an overseas entity have the type suffix changed automatically (海外旗舰店 / 海外官方旗舰店)
+- As of: July 2024 (page 2024-07-21; body revised 2024-02-22, in force 2024-02-29)
+- Source: Xiaohongshu rule center (小红书电商学习中心), 《小红书店铺类型及店铺命名规则》
+- URL: https://school.xiaohongshu.com/rule/detail/26/823
+- Verified 1: 2026-10-04 (API)
+- Verified 2: 2026-10-04 (API re-fetched)
+- Used in: xiaohongshu-store-setup-overseas-brand
+
+### Xiaohongshu cross-border default category deposit: US$400 (US$3,500 before April 2025)
+- Value: default category deposit for cross-border stores US$400 (categories not listed in the detail sheet); US$3,500 before the revision; domestic flagship, franchise and specialty stores 2,000 RMB
+- As of: April 2025 (first in force 2024-09-27, revised and in force 2025-04-22)
+- Source: Xiaohongshu rule center (小红书电商学习中心), 《小红书类目保证金标准》
+- URL: https://school.xiaohongshu.com/rule/detail/27/858
+- Verified 1: 2026-10-04 (API and headless Edge)
+- Verified 2: 2026-10-04 (API re-fetched; 修订前 $3,500 → 修订后 $400 re-found)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: per-category cross-border deposits sit in a linked WeChat Docs sheet (《小红书类目保证金明细》) that was not read; copy states US$400 as the default only. The "20,000 RMB cross-border deposit" on agency sites contradicts this page: never use it.
+
+### Xiaohongshu floating deposit for overseas merchants: US$400 / 700 / 2,800
+- Value: by previous calendar month's settled sales, US$400 at 50,000 to 100,000 RMB, US$700 at 100,000 to 500,000 RMB, US$2,800 above 500,000 RMB; the higher of category and floating deposit applies; refund within 1 to 7 working days of the request; the deposit-free trial covers personal and sole-trader stores only
+- As of: July 2026 (published for comment 2026-06-24, in force 2026-07-01)
+- Source: Xiaohongshu rule center (小红书电商学习中心), 《小红书保证金管理规范》
+- URL: https://school.xiaohongshu.com/rule/detail/27/119848
+- Verified 1: 2026-10-04 (API)
+- Verified 2: 2026-10-04 (API re-fetched; (5,10] 400, (10,50] 700, (50,∞) 2800 and 两者取高 re-found)
+- Used in: xiaohongshu-store-setup-overseas-brand
+
+### Xiaohongshu cross-border payment-channel fee: 0.7%
+- Value: cross-border orders pay a 0.7% payment-channel technical service fee on goods plus shipping actually paid, on top of the category base fee; the old first-10,000-RMB monthly waiver withdrawn
+- As of: February 2024 (revision notice published 2024-02-05, in force 2024-03-01)
+- Source: Xiaohongshu rule center (小红书电商学习中心), 修订《小红书技术服务费规则》的公告
+- URL: https://school.xiaohongshu.com/rule/detail/17/2590
+- Verified 1: 2026-10-04 (headless Edge)
+- Verified 2: 2026-10-04 (API re-fetched; 0.7% wording re-found)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: the same 0.7% appears in the cross-border store agreement (119738) and in rule 27/854.
+
+### Xiaohongshu base technical service fee by category (May 2026 schedule)
+- Value: makeup, fragrance and beauty tools 4%; skincare, body and essential oils 4%; women's apparel 5%; men's apparel 5%; health supplements 3%; snacks, nuts and local specialties 2%; most categories 2% to 5%, with outliers (life services 5.7%, a few at 0.6%)
+- As of: May 2026 (online 2026-05-12; comment period from 2026-04-27)
+- Source: Xiaohongshu rule center (小红书电商学习中心), 《2025小红书基础技术服务费费率标准》 (current version)
+- URL: https://school.xiaohongshu.com/rule/detail/27/119797
+- Verified 1: 2026-10-04 (API, read by the check-2 agent after 27/2585 turned out to be the expired version)
+- Verified 2: 2026-10-04 (API re-fetched in this session; rates and onlineTime 2026年05月12日 re-found)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: 27/2585 carries the same title marked 【已失效】 (online 2025-09-06, offline 2026-05-12). Never cite 2585.
+
+### Xiaohongshu cross-border store agreement: deposit in 2 working days, own bank, bank charges, customs, ERP
+- Value: deposit due within 2 working days of the agreement taking effect; merchant sets settlement currency and its own beneficiary bank in the system and bears all bank charges; must declare cross-border goods to customs truthfully; must report any third-party ERP vendor and its data-security capability
+- As of: April 2026 (in force 2026-04-01)
+- Source: Xiaohongshu rule center (小红书电商学习中心), 《小红书店铺服务协议（仅适用于跨境商家）》
+- URL: https://school.xiaohongshu.com/rule/detail/97/119738
+- Verified 1: 2026-10-04 (API)
+- Verified 2: 2026-10-04 (API re-fetched)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: no third-party collection provider is named on any official page.
+
+### Xiaohongshu ship-by limits: bonded 72 hours, direct mail 120 hours
+- Value: after payment, bonded cross-border goods ship within 72 hours, direct mail and personal-postal (行邮) within 120 hours; courier pickup must show within 24 hours (bonded) and 96 hours (direct mail)
+- As of: September 2026 (published 2026-09-02, in force 2026-09-09)
+- Source: Xiaohongshu rule center (小红书电商学习中心), 《小红书商家发货管理规则》
+- URL: https://school.xiaohongshu.com/rule/detail/35/119927
+- Verified 1: 2026-10-04 (API)
+- Verified 2: 2026-10-04 (API re-fetched)
+- Used in: xiaohongshu-store-setup-overseas-brand
+
+### Xiaohongshu "百万免佣计划": first 1 million RMB commission-free, Sept 2025 to Aug 2026 (as launched)
+- Value: from 2025-09-01 to 2026-08-31, each merchant's first 1 million RMB of payment volume commission-free, 0.6% payment cost kept; stores under one company share the quota; previous rates mostly 2% to 5%
+- As of: August 2025
+- Source: National Business Daily (每日经济新闻) via Securities Times (证券时报); confirmed by Ebrun (亿邦动力, https://m.ebrun.com/595388.html)
+- URL: https://www.stcn.com/article/detail/3257637.html
+- Verified 1: 2026-10-04 (WebFetch; quote and 2025-08-25 date read)
+- Verified 2: 2026-10-04 (re-fetched; same wording)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: superseded in practice by the early end below. Never describe it as current.
+
+### Xiaohongshu ended the commission waiver on May 15, 2026
+- Value: announced 2026-04-29; ended 2026-05-15; orders created before 5月15日00:00 keep the old terms; LEAP UP 百万跃迁计划 (from 2026-05-11) pays out up to 50,000+ in traffic vouchers
+- As of: May 2026
+- Source: Sina Tech (新浪科技)
+- URL: https://finance.sina.cn/chanjing/gsxw/2026-05-09/detail-inhxhzaz1374118.d.html
+- Verified 1: 2026-10-04 (curl; text read)
+- Verified 2: 2026-10-04 (re-fetched; 5月15日起正式终止 re-found)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: the page never says LEAP UP "replaces" the waiver; describe it as a newer programme. The rule-center termination notice is articleId 119798 (not cited).
+
+### Xiaohongshu merchant conference, April 8, 2026: 39 million daily buyers with intent, rise100 GMV 2.6x, 81% from returning customers
+- Value: 3,900万 users a day show clear purchase intent, 1.4亿 purchase requests; 2025 rise100 merchants' GMV up more than 2.6x; returning customers 81% of their spend; average repurchase 32%
+- As of: April 2026 (event 2026-04-08, the platform's first merchant conference; page 2026-04-09)
+- Source: 21st Century Business Herald (21世纪经济报道), 董静怡
+- URL: https://www.21jingji.com/article/20260409/herald/3b578d625dae8e23682d670de2f4e6e8.html
+- Verified 1: 2026-10-04 (WebFetch)
+- Verified 2: 2026-10-04 (re-fetched; figures re-found)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: this page does not use the name "GROW"; the name appears in the dayoo page below. The 39 million / 140 million pair is also in china-platform-trends-2026-foreign-brands.
+
+### Xiaohongshu group-chat members repurchase 5.1 times as often
+- Value: merchant group-chat members' 30-day repurchase rate about 5.1 times non-members'; strong store livestream rooms grow DGMV 4 times the platform average
+- As of: April 2026 (GROW merchant conference, 2026-04-08)
+- Source: Guangzhou Daily (广州日报大洋网)
+- URL: https://news.dayoo.com/ds/202604/13/154574_54947113.htm
+- Verified 1: 2026-10-04 (WebFetch)
+- Verified 2: 2026-10-04 (re-fetched; 5.1倍 re-found, page 2026-04-13)
+- Used in: xiaohongshu-store-setup-overseas-brand
+
+### About 200 million users a month seek buying advice on Xiaohongshu
+- Value: 每月约有2亿用户在小红书寻求购买建议 (platform data, January to November 2025); users open the app 16 times a day; 9 million notes and 70 million comments a day
+- As of: December 2025 (WILL commercial conference, 2025-12-22; page 2025-12-24)
+- Source: Ebrun (亿邦动力), original, via Sina
+- URL: https://finance.sina.com.cn/tech/roll/2025-12-24/doc-inhcwtcp4511859.shtml
+- Verified 1: 2026-10-04 (curl)
+- Verified 2: 2026-10-04 (re-fetched; 【亿邦原创】 and the figure re-found)
+- Used in: xiaohongshu-store-setup-overseas-brand
+
+### Xiaohongshu has never published overall GMV; 2024 new merchant sign-ups up 8.1x
+- Value: 平台至今也未公布过整体的GMV数据; 2024 new merchant sign-ups up 8.1 times year on year; 350 million MAU, 50% born after 1995 (head of merchant development 阿方, 2025-08-28 briefing)
+- As of: August 2025
+- Source: Yicai (第一财经, 刘晓洁) via Securities Times (证券时报)
+- URL: https://stcn.com/article/detail/3304269.html
+- Verified 1: 2026-10-04 (curl)
+- Verified 2: 2026-10-04 (re-fetched)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: the "2024 GMV above 400 billion RMB" figure in circulation has no official source. Never use it.
+
+### Redshop is Xiaohongshu's outbound project (launch set for June 2026)
+- Value: redshop 将于2026年6月正式上线; first phase 50 invited seed merchants; nine core markets listed as Hong Kong, Macau, US, UK, Australia, Canada, Singapore, Malaysia (eight named)
+- As of: April 2026 (page 2026-04-13)
+- Source: 36Kr (36氪), content credited to 蓝海亿观网
+- URL: https://www.36kr.com/p/3763928410866433
+- Verified 1: 2026-10-04 (WebFetch)
+- Verified 2: 2026-10-04 (re-fetched)
+- Used in: xiaohongshu-store-setup-overseas-brand
+- Notes: outbound for Chinese sellers; not a route into China. Its 出海服务费 (5% to 10%, capped at 70 RMB an order) concerns Chinese sellers abroad only.
+
+### Re-verified on 2026-10-04 for 06A (existing entries, add the slug to their Used in)
+- Xiaohongshu MAU above 400 million, 800 million daily searches: Beijing Business Today via Sina, https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml, re-fetched twice on 2026-10-04 (「小红书月活跃用户已突破4亿，日搜索量高达8亿」, 2026-05-27). Used in: xiaohongshu-store-setup-overseas-brand.
+- Xiaohongshu enterprise professional-account verification 600 RMB, annual review 600 RMB, overseas entities from opened regions (HK, Singapore, Malaysia named): re-read 2026-10-04 through the help-centre content API over IPv4 (headless Edge timed out on IPv6); updateTime 2026-08-02 re-found. Used in: xiaohongshu-store-setup-overseas-brand.
+- Douyin Global admission, 境内代理人 with joint liability: page 108056 rendered with headless Edge 2026-10-04, 「2.1.2 需拥有中国大陆境内的连带责任承担的主体，即境内代理人」 and the 2026-07-15 revision re-found. Used in: xiaohongshu-store-setup-overseas-brand.
+- Tmall Global calculator: commission spread and cash floor across the nineteen categories (proprietary, October 2026): categories array re-read and recounted 2026-10-04 (11 at 80,000 RMB, 7 at 110,000, supplements 330,000; skincare 4% and 30,000 RMB annual; fx default 7.1). Used in: xiaohongshu-store-setup-overseas-brand.
+
+### Researched for 06A, not used (no publishable source)
+- Official Xiaohongshu entry-review time; annual or platform fee (the fee rules list none); per-category cross-border deposits (sheet not read); Juguang or Chengfeng minimum top-ups; creator-commission platform fees (agency blogs, 2021 press only); settlement periods (Ebrun 2026-03-03 reports a consultation draft only); 2026 618 figures (no first-hand source); seller-creator counts; inbound cross-border merchant counts.
+
+## Signal 05S research (douyin-product-card-fee-rebate), 2026-10-05
+
+### Douyin product-card benefit becomes a rebate (October 2026)
+- Value: product-card orders (tile clicks inside 抖音商城 in Douyin and Douyin Lite; live, short video, recommendation cards, creator showcase, unknown-source and gift orders excluded) earn a rebate, not a waiver. Type one: rate after rebate 1% for cross-border goods, 0.6% for domestic. Type two: rate after rebate 90% of the rate (not when the rate is 1% or less cross-border, 0.6% or less domestic). Paid after settlement on the 20th of the month after the order was paid; a month's orders rebated for at most five months. Transition: September 2026 tasks keep the waiver on orders settled in October 2026; October 2026 tasks earn rebates; an October order eligible for both gets the waiver only. Registration Jan 1 to Dec 31, 2026, 2025 registrants auto-renew; individual and instant-retail stores excluded. Refund after rebate deducted from later rebates, else payouts or deposit, non-RMB at the FX rate on the day (2.3, 4.1.6). Rebates may pause while the deposit is short (4.1.1). Rebates unpayable for the merchant's reasons are held to the last day of the month after the payout date, then forfeited (4.2.8). Back-end path 抖店-资金-返佣管理-商品卡返佣.
+- As of: October 2026 (page posted 2026-10-01 00:00:14, 电商运营团队)
+- Source: Douyin E-commerce (抖音电商), 《2026年抖音电商商品卡免佣扶持政策》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aJcQ5pzG2Vk4
+- Verified 1: 2026-10-05 (rendered with headless Edge, full text)
+- Verified 2: 2026-10-05 (re-rendered at iteration 8; 跨境商品技术服务费率返佣后为1%, 26年9月完成任务在26年10月结算订单正常免佣, 保证金未足额缴纳 and 打款日期次月最后一日 re-found)
+- Used in: douyin-product-card-fee-rebate
+- Notes: the July 17, 2026 consultation that proposed the 2026 changes was not found on the rule centre; its trade summary is a data vendor's blog and is not cited. The before state (waiver at settlement) is documented by the transition clause on this page.
+
+### Douyin payout timing (all store types, September 2026)
+- Value: non-zero-deposit stores are paid 3 days after confirmed receipt in categories with an after-sale period of 30 days or less, 10 days above 30 days; zero-deposit (0元入驻) stores 21 days after confirmed receipt; applies to 小店, instant-retail express and 全球购 stores; special categories have their own periods
+- As of: September 2026 (page posted 2026-09-07 11:12:27)
+- Source: Douyin E-commerce (抖音电商), 《商家货款结算日期细则》 1.1
+- URL: https://school.jinritemai.com/doudian/web/article/111412
+- Verified 1: 2026-10-05 (rendered with headless Edge)
+- Verified 2: 2026-10-05 (re-rendered at iteration 8; 订单确认收货的3天后 re-found)
+- Used in: douyin-product-card-fee-rebate
+- Notes: closes the gap logged on the "Douyin Global merchant payout timing" entry (the T+ period now has a source). Douyin Global stores add 2 working days (that entry).
+
+### Re-verified on 2026-10-05 for 05S (existing entries, add the slug to their Used in)
+- Douyin Global tech service fee by category, July 2026 schedule (articlev0/aHMYyFoqESKn): rendered twice on 2026-10-05; 2026-07-15 timestamp, 面部洗护 5.00%, 彩妆香水 5.00%, 服装 6.00% re-found. Used in: douyin-product-card-fee-rebate.
+- Douyin Global merchant payout timing (article/aHyMoi13Bhx5): rendered twice on 2026-10-05; 再加2个工作日 and the 2026-01-05 revision re-found. Used in: douyin-product-card-fee-rebate.
+- Douyin Double 11 2026 window (Ebrun via Tencent News, 20260919A088XY00): fetched twice on 2026-10-05; 将于10月正式开启2026年双11大促，至11月11日结束 re-found. Used in: douyin-product-card-fee-rebate.
