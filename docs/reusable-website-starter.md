@@ -366,18 +366,22 @@ Reads a content directory, parses frontmatter, skips drafts, emits a header
 plus one entry per article. Wired to `prebuild` so it regenerates every build.
 Reusable: change `SOURCE_DIR`, `TARGET`, `SITE`, and the header text.
 
-### IndexNow submission (`scripts/submit-indexnow.mjs`)
+### IndexNow on every deploy (`scripts/indexnow-deploy.mjs` + `.github/workflows/indexnow.yml`)
 
-Pings IndexNow (Bing, Yandex, Seznam, Naver) after a deploy.
+Submits new and changed pages to IndexNow (Bing, Yandex, Seznam, Naver) after
+every successful Vercel production deploy. Nothing to run by hand. Google does
+not read IndexNow.
+
+Setup on a new site: copy both files from any existing site repo (they are
+identical across repos), set `SITE_URL` in the workflow's `env` block (and
+`INDEXNOW_DETECT: lastmod` for a large database-driven site with a real
+lastmod), and put a fresh key at `public/<key>.txt`, the file containing the
+key itself. The workflow compares the live site with the previous run's
+snapshot (a 90-day workflow artifact) and submits only what changed.
 
 ```bash
-node scripts/submit-indexnow.mjs                          # all URLs in sitemap
-node scripts/submit-indexnow.mjs https://site.com/page    # one URL
-node scripts/submit-indexnow.mjs --changed-since=2026-05-15
+SITE_URL=https://www.site.com node scripts/indexnow-deploy.mjs https://www.site.com/page   # one URL by hand
 ```
-
-Reusable: generate a fresh key, place it at `public/<key>.txt`, update `HOST`,
-`KEY`, `KEY_LOCATION`, `SITEMAP_PATH`.
 
 ---
 
