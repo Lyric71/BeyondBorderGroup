@@ -62,7 +62,7 @@ Internal link targets available:
 /tools/tmall-global-setup-and-run
 /tools/jd-worldwide-setup-and-run
 /tools/douyin-cost-calculator
-/compass  /compass/shortlist  /insights/finding-a-partner
+/compass  /contact#shortlist  /insights/finding-a-partner
 /compass/find-a-distributor-in-china  /compass/find-a-tmall-partner-in-china
 /compass/find-a-douyin-partner-in-china
 /enter-china/market-entry-consulting  /enter-china/distribution
@@ -173,7 +173,7 @@ Order resolved so no Ledger sits within eight weeks of the CAT anchor covering t
 | 2 | A | What it costs to sell facial skincare in China | ROC, Shiseido RQ Pyology, Pierre Fabre, Age 20's. Published figures only. | Beauty & Personal Care |
 | 3 | A | What it costs to sell dairy and spreads in China | Valio, Langnese. Published figures only. | Food & Beverage |
 | 4 | A | What it costs to sell home textiles and bedding in China | No bedding client on /work (Bassetti's case is a TEEXMA software project, not bedding retail), so block 6 is the honesty line. Block 4 should carry AOV, because bedding has an unusually high order value for a cross-border category, which changes the fee arithmetic. That is the interesting thing on this page. | Home & Living |
-| 5 | B | How automotive and EV brands actually reach buyers in China | Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`. | Automotive |
+| 5 | B | How automotive and EV brands actually reach buyers in China | Jaguar Land Rover (year-round China social, `/work/jaguar-land-rover`, no published figure) and JAC Automobile (WeChat, RED and Weibo, `/work/jac-automobile`). The Chery, Exeed and Exlantix pages publish overseas results (Facebook, Instagram, Geneva), so they are not proof of reaching Chinese buyers. The one published number that fits is JAC's 250+ vehicle images for its partner and reseller network (`/work/jac`). Published figures only. | Automotive |
 | 6 | A | What it costs to sell pet food in China | none | Pets |
 | 7 | B | How insurance and financial services reach customers in China | Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is. | Financial & Professional Services |
 | 8 | A | What it costs to sell baby care and hygiene products in China | none | Mother & Baby |
@@ -440,7 +440,7 @@ Block 3 carries the weight: dairy is one of the most tightly controlled import c
 
 Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi as the vertical portals, WeChat for dealer handoff, and offline events. Say plainly that the vehicle is not sold cross-border and that this is a demand-generation and dealer-handoff problem, not a marketplace one.
 
-**Proof.** Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`.
+**Proof.** Jaguar Land Rover (year-round China social, `/work/jaguar-land-rover`, no published figure) and JAC Automobile (WeChat, RED and Weibo, `/work/jac-automobile`). The Chery, Exeed and Exlantix pages publish overseas results (Facebook, Instagram, Geneva), so they are not proof of reaching Chinese buyers. The one published number that fits is JAC's 250+ vehicle images for its partner and reseller network (`/work/jac`). Published figures only.
 **Internal links.** `/grow-in-china/campaigns`, `/grow-in-china/media`, `/social-in-china`
 **CTA.** Talk to us.
 
@@ -452,13 +452,13 @@ Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi 
 **Query:** xiaohongshu store setup overseas brand · **Difficulty:** WEAK
 **Word count:** 1,900 to 2,300
 
-**The answer, in one line.** RedNote will take a cross-border store from a foreign entity, the requirements are lighter than Tmall's, and the reason to open one is almost never the store itself.
+**The answer, in one line.** RedNote will take a cross-border store from a foreign company, but since July 2, 2026 only with a mainland affiliate or agent that co-signs for joint liability; the cash to open is a fraction of Tmall Global's, and the reason to open one is almost never the store itself.
 
 **Why it is winnable.** The current top three are payment companies, Aspire and Airwallex, writing about stores as a payments use case. The first agency page sits at position eight. A mainland operator with the actual requirements list wins this.
 
-**The table it must carry.** Requirements and costs to open: entity type accepted, documents, deposit, commission, fulfilment options, and the timeline for each step.
+**The table it must carry.** Requirements and costs to open: entity type accepted, documents, deposit, commission, fulfilment options, and the deadline the platform publishes for each step (RedNote publishes no entry-review time; do not quote one from agency blogs).
 
-**The proprietary number.** How long the approval actually takes against the platform's published guidance, from stores opened.
+**The proprietary number.** No approval-time figure from stores opened is on file and the platform publishes none, so the settled fallback applies: the Tmall Global cash floor from TheChinaPath calculator data (deposit plus annual fee, 80,000 RMB in 11 of 19 categories) set against RedNote's published US$400 default cross-border deposit.
 
 **Outline.**
 1. What a RedNote store is, and what it is not
@@ -468,7 +468,7 @@ Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi 
 5. Why most brands should treat the store as the endpoint of a content strategy, not the start
 6. When to open one and when to wait
 
-**Internal links.** `/social-in-china`, `/grow-in-china/social-commerce`, `/compass/shortlist`
+**Internal links.** `/social-in-china`, `/grow-in-china/social-commerce`, `/contact#shortlist`
 **CTA.** Talk to us.
 **Territory guard.** Content and seeding on RedNote is TheRedScroll's. This page covers the store, the fees and the operations. Hand off the rest with the canonical anchor text.
 
@@ -768,7 +768,7 @@ Block 4 carries this one. Furniture is the category where freight, not platform 
 6. Distributor or your own store for technical hardware
 7. The first ninety days, in order
 
-**Internal links.** /tools/tmall-global-setup-and-run, /compass/shortlist, /enter-china/cross-border-setup, /grow-in-china/social-commerce, /enter-china/distribution
+**Internal links.** /tools/tmall-global-setup-and-run, /contact#shortlist, /enter-china/cross-border-setup, /grow-in-china/social-commerce, /enter-china/distribution
 **CTA.** Request a Compass shortlist of outdoor and sports distributors.
 **Do not.** Do not slide into sourcing language: the H1 and the first 20 words must state that the reader is selling gear into China, and no paragraph should describe Chinese manufacturing capacity. Do not write the community section as an influencer plan.
 **Territory guard.** Seeding, creator relationships and community management sit with TheRedScroll, so this piece names the demand pattern and links to /social-in-china rather than describing seeding as a TheChinaPath service.
@@ -1109,7 +1109,7 @@ Block 5 carries this one, because outdoor is the category where the platform ver
 6. Cross-border store, distributor, or both
 7. The twelve-month sequence for a full range
 
-**Internal links.** /compass/shortlist, /enter-china/cross-border-setup, /tools/tmall-global-setup-and-run, /enter-china/distribution, /grow-in-china/cross-border-ecommerce
+**Internal links.** /contact#shortlist, /enter-china/cross-border-setup, /tools/tmall-global-setup-and-run, /enter-china/distribution, /grow-in-china/cross-border-ecommerce
 **CTA.** Request a Compass shortlist of vetted pet category distributors.
 **Do not.** Do not state the pet food registration requirement, the quarantine permit process, or any ingredient restriction as settled fact. Each is verified against the current requirement and cited.
 **Territory guard.** Pet is a category where community and creator content drives demand, and that work sits with TheRedScroll, so the piece names the pattern and links to /social-in-china rather than describing seeding as a service offered here.
@@ -1149,7 +1149,7 @@ Block 3 carries this by a distance, because consumer electronics stacks three se
 6. Termination, and the stock sitting in their warehouse on day one after
 7. How to run the negotiation without losing the relationship
 
-**Internal links.** /enter-china/distribution, /compass, /compass/find-a-distributor-in-china, /enter-china/market-entry-consulting, /compass/shortlist
+**Internal links.** /enter-china/distribution, /compass, /compass/find-a-distributor-in-china, /enter-china/market-entry-consulting, /contact#shortlist
 **CTA.** Request a Compass shortlist before you sign anything exclusive.
 **Do not.** Do not give legal advice or draft clause language. The piece explains what each clause does commercially and tells the reader to have a China-qualified lawyer draft and review, and it says so in the first section rather than in a footer disclaimer. Do not treat the distributor as an adversary throughout; the honest position is that a well-drafted agreement protects both sides and a one-sided one gets ignored in practice.
 
@@ -1417,7 +1417,7 @@ Blocks 2 and 3 carry this one together. Jewellery sits in the platform tier wher
 6. What a realistic year one looks like at three volume levels
 7. The five questions to ask an importer before you sign
 
-**Internal links.** /enter-china/distribution, /compass, /compass/shortlist, /enter-china/cross-border-setup, /grow-in-china/cross-border-ecommerce
+**Internal links.** /enter-china/distribution, /compass, /contact#shortlist, /enter-china/cross-border-setup, /grow-in-china/cross-border-ecommerce
 **CTA.** Build a shortlist of alcohol importers in Compass, filtered by the provinces you actually need.
 **Do not.** Do not write the "China loves wine" market-size opener. The incumbent at position one already owns that piece and it is not what a brand with a shipment to price needs. Do not assert a single tax rate without a citation and a date.
 
@@ -1649,7 +1649,7 @@ Blocks 3 and 4 split this one. Hair care looks like a single category but splits
 7. Termination: stock, trademarks, and the exit you write on day one
 8. The twelve questions, in order, with the answers to walk away from
 
-**Internal links.** /compass, /compass/find-a-distributor-in-china, /compass/shortlist, /enter-china/distribution, /enter-china/market-entry-consulting
+**Internal links.** /compass, /compass/find-a-distributor-in-china, /contact#shortlist, /enter-china/distribution, /enter-china/market-entry-consulting
 **CTA.** Download the twelve-question sheet, then build a shortlist in Compass filtered by the coverage you actually need.
 **Do not.** Do not write generic partner-selection advice that would apply in any market. Every question must be China-specific, and the ecommerce rights and licence-holding questions carry the piece. Do not name or characterise real distributors.
 
@@ -1767,7 +1767,7 @@ Block 3 carries this entire page. Supplements are the category where the route d
 6. Distribution: when a distributor beats your own store in this category
 7. A realistic first twelve months for a maternity and baby brand
 
-**Internal links.** /enter-china/cross-border-setup, /compass/shortlist, /enter-china/distribution, /tools/tmall-global-setup-and-run, /enter-china/branding-localisation
+**Internal links.** /enter-china/cross-border-setup, /contact#shortlist, /enter-china/distribution, /tools/tmall-global-setup-and-run, /enter-china/branding-localisation
 **CTA.** Request a Compass shortlist of vetted maternity and baby distributors.
 **Do not.** Do not write a single set of rules for the whole category; the incumbents' pages fail exactly there and the matrix is how this page beats them. Do not assert any registration requirement, timeline or fee without a cited primary source and an access date.
 **Link forward.** The W08 Ledger on what it costs to sell baby care and hygiene products in China ships first. Link to it from section 2 with descriptive anchor text, and add the reciprocal link from that Ledger back to this page.
@@ -2196,7 +2196,7 @@ Block 3 carries this one. Oral care is a classification trap: the regulatory tre
 6. The two routes we now recommend less often than we did
 7. How to run this decision on your own numbers
 
-**Internal links.** /enter-china/market-entry-consulting, /compass/shortlist, /tools/tmall-global-setup-and-run, /tools/jd-worldwide-setup-and-run, /grow-in-china/cross-border-ecommerce (plus in-table links to the year's category and cost pieces, which do not count against the 3 to 5 body links)
+**Internal links.** /enter-china/market-entry-consulting, /contact#shortlist, /tools/tmall-global-setup-and-run, /tools/jd-worldwide-setup-and-run, /grow-in-china/cross-border-ecommerce (plus in-table links to the year's category and cost pieces, which do not count against the 3 to 5 body links)
 **CTA.** Request a Compass shortlist, or run your route in the market entry calculator.
 **Do not.** Do not write this as a year in review; it is a decision page that happens to be evidenced by a year of publishing, and the first sixty words must contain the decision, not the retrospective. Do not restate any regulatory point from the year's pieces; link to the piece that carries the sourced version instead.
 
@@ -3324,9 +3324,9 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Brief field, why a partner needs it, example answer.
 
-**Asset.** Printable one-page brief that matches the `/compass/shortlist` form fields.
+**Asset.** Printable one-page brief that matches the `/contact#shortlist` form fields.
 
-**Internal links.** `/compass/shortlist`, `/compass`, all three guides
+**Internal links.** `/contact#shortlist`, `/compass`, all three guides
 **CTA.** Compass shortlist.
 
 ## P46 · PARTNER · EXPLAINER

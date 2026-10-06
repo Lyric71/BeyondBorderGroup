@@ -374,7 +374,7 @@ authorization.
 <!-- CTA -->
 
 CTA: If you're lining up a replacement before you give notice,
-[request a Compass shortlist](/compass/shortlist) of distributors for your
+[request a Compass shortlist](/contact#shortlist) of distributors for your
 category.
 
 <!-- =====================================================================
@@ -428,7 +428,7 @@ INTERNAL LINKS:
   finding a distributor in China -> /compass/find-a-distributor-in-china
   distribution work -> /enter-china/distribution
   Compass -> /compass
-  request a Compass shortlist (CTA) -> /compass/shortlist
+  request a Compass shortlist (CTA) -> /contact#shortlist
 PROPRIETARY NUMBER: "A Compass shortlist usually takes two to three weeks
   from the brief and runs to three to five names (from Compass, September
   2026)." Source: src/content/pages/partner-guides/shared.ts (compassTiming

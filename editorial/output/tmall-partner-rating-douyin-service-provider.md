@@ -280,7 +280,7 @@ stores can beat a Diamond with none in your category.
 
 <!-- CTA -->
 
-CTA: [Get a Compass shortlist of partners already running stores in your category](/compass/shortlist)
+CTA: [Get a Compass shortlist of partners already running stores in your category](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -354,7 +354,7 @@ how to find a Douyin Partner -> /compass/find-a-douyin-partner-in-china
 Compass -> /compass
 Tmall Global calculator -> /tools/tmall-global-setup-and-run
 Douyin cost calculator -> /tools/douyin-cost-calculator
-CTA: Get a Compass shortlist of partners already running stores in your category -> /compass/shortlist
+CTA: Get a Compass shortlist of partners already running stores in your category -> /contact#shortlist
 PROPRIETARY NUMBER: default partner fee in year one, 770,000 RMB on Tmall Global (35,000 RMB a month plus 10% of the 3.5 million RMB default GMV) and 460,000 RMB on Douyin (30,000 RMB a month plus 5% of the 2 million RMB default GMV); neither model has a rating input. Label: "TheChinaPath calculator data, September 2026". Source: src/pages/tools/tmall-global-setup-and-run.astro and src/pages/tools/douyin-cost-calculator.astro. The brief's Compass figure (rating mix of TPs and DPs on file) does not exist yet; see editorial/logs/partner/P06.md.
 HAND-OFFS: none.
 CLIENT SIGN-OFF NEEDED: none.

@@ -296,7 +296,7 @@ visitors, registration closes on October 20, 2026.
 
 <!-- CTA -->
 
-CTA: [Get a Compass shortlist of distributors worth meeting at the fair](/compass/shortlist)
+CTA: [Get a Compass shortlist of distributors worth meeting at the fair](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -347,7 +347,7 @@ INTERNAL LINKS:
   a China distributor against your own store -> /insights/china-distributor-vs-own-store
   distributor sourcing and management -> /enter-china/distribution
   Compass -> /compass
-  CTA: Get a Compass shortlist of distributors worth meeting at the fair -> /compass/shortlist
+  CTA: Get a Compass shortlist of distributors worth meeting at the fair -> /contact#shortlist
 PROPRIETARY NUMBER: "A Compass shortlist ... usually takes two to three weeks
   from the brief (from Compass, September 2026)." Source: the Compass
   shortlist page copy already published on the site

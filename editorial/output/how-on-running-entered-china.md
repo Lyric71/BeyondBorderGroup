@@ -367,7 +367,7 @@ data, September 2026).
 
 CTA: If you're deciding whether to build your own China entity or start
 with a partner who already runs stores, [request a Compass
-shortlist](/compass/shortlist) and we'll come back with vetted partners for
+shortlist](/contact#shortlist) and we'll come back with vetted partners for
 your category.
 
 <!-- =====================================================================
@@ -443,7 +443,7 @@ INTERNAL LINKS:
   Tmall Global setup and run calculator -> /tools/tmall-global-setup-and-run
   distributor sourcing and management -> /enter-china/distribution
   how Allbirds entered China -> /insights/how-allbirds-entered-china
-  request a Compass shortlist -> /compass/shortlist
+  request a Compass shortlist -> /contact#shortlist
 PROPRIETARY NUMBER: Sports and outdoor category fees, Tmall Global 50,000
 RMB deposit and 60,000 RMB annual fee at 5% commission, JD Worldwide 35,500
 RMB and 7,100 RMB at 5%, Douyin cross-border deposit 75,000 RMB. Labelled in

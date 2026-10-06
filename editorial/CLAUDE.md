@@ -112,7 +112,11 @@ Settled since, so no run raises them again:
 - **Rule centres that render as an empty shell** (rulechannel.tmall.com,
   rule.tmall.hk, jdw-rule.jd.hk, school.jinritemai.com) are read with a
   headless browser (Edge or Chromium, on a private temporary profile), with
-  the hash route where the portal needs one. Sites that refuse the fetcher
+  the hash route where the portal needs one. Xiaohongshu's rule centre
+  (school.xiaohongshu.com/rule/detail/<cat>/<id>) is read through its own
+  data endpoint (POST /api/edith/governance/inform/rule/query_article_detail
+  with {"articleId": <id>}); check the title for 【已失效】 before citing,
+  because expired versions stay online. Sites that refuse the fetcher
   outright (customs.gov.cn, nmpa.gov.cn) are read through gov.cn and
   MOFCOM mirrors and Chinese search. This is the method, not a gap; the
   Signal sweep does not recommend a logged-in export.

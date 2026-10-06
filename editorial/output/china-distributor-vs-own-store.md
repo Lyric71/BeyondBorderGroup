@@ -353,7 +353,7 @@ distributor's shelf the same week.
 
 <!-- CTA -->
 
-CTA: [Brief us on your category and get a distributor shortlist in two to three weeks](/compass/shortlist)
+CTA: [Brief us on your category and get a distributor shortlist in two to three weeks](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -395,7 +395,7 @@ Tmall Global calculator -> /tools/tmall-global-setup-and-run
 distribution service page -> /enter-china/distribution
 cross-border ecommerce -> /grow-in-china/cross-border-ecommerce
 Compass -> /compass
-CTA Brief us on your category and get a distributor shortlist in two to three weeks -> /compass/shortlist
+CTA Brief us on your category and get a distributor shortlist in two to three weeks -> /contact#shortlist
 PROPRIETARY NUMBER: (1) 2,812,900 RMB year-one cash out at 3.5M RMB GMV, 450,000 RMB refundable, running cost 67% of sales, labelled "TheChinaPath calculator data, September 2026", from the default inputs in src/pages/tools/tmall-global-setup-and-run.astro. (2) Shortlist in two to three weeks against the quarter brands budget; three to five months to a signed contract; longlist 8 to 12, finalists 3 to 5, labelled "from TheChinaPath distributor sourcing engagements, as published on this site", from /enter-china/distribution and /compass/how-it-works.
 HAND-OFFS: none
 CLIENT SIGN-OFF NEEDED: none. The Langnese reference uses only what /work/langnese already publishes (stable distribution, month-on-month decline, decline reversed, price roughly twice local honey).

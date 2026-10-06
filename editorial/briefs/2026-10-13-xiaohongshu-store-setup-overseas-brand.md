@@ -47,13 +47,13 @@ They override any conflicting rule inside the skill. The standing preamble in
 **Query:** xiaohongshu store setup overseas brand · **Difficulty:** WEAK
 **Word count:** 1,900 to 2,300
 
-**The answer, in one line.** RedNote will take a cross-border store from a foreign entity, the requirements are lighter than Tmall's, and the reason to open one is almost never the store itself.
+**The answer, in one line.** RedNote will take a cross-border store from a foreign company, but since July 2, 2026 only with a mainland affiliate or agent that co-signs for joint liability; the cash to open is a fraction of Tmall Global's, and the reason to open one is almost never the store itself.
 
 **Why it is winnable.** The current top three are payment companies, Aspire and Airwallex, writing about stores as a payments use case. The first agency page sits at position eight. A mainland operator with the actual requirements list wins this.
 
-**The table it must carry.** Requirements and costs to open: entity type accepted, documents, deposit, commission, fulfilment options, and the timeline for each step.
+**The table it must carry.** Requirements and costs to open: entity type accepted, documents, deposit, commission, fulfilment options, and the deadline the platform publishes for each step (RedNote publishes no entry-review time; do not quote one from agency blogs).
 
-**The proprietary number.** How long the approval actually takes against the platform's published guidance, from stores opened.
+**The proprietary number.** No approval-time figure from stores opened is on file and the platform publishes none, so the settled fallback applies: the Tmall Global cash floor from TheChinaPath calculator data (deposit plus annual fee, 80,000 RMB in 11 of 19 categories) set against RedNote's published US$400 default cross-border deposit.
 
 **Outline.**
 1. What a RedNote store is, and what it is not
@@ -63,7 +63,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 5. Why most brands should treat the store as the endpoint of a content strategy, not the start
 6. When to open one and when to wait
 
-**Internal links.** `/social-in-china`, `/grow-in-china/social-commerce`, `/compass/shortlist`
+**Internal links.** `/social-in-china`, `/grow-in-china/social-commerce`, `/contact#shortlist`
 **CTA.** Talk to us.
 **Territory guard.** Content and seeding on RedNote is TheRedScroll's. This page covers the store, the fees and the operations. Hand off the rest with the canonical anchor text.
 

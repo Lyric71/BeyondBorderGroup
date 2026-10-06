@@ -342,7 +342,7 @@ go back years, but coverage varies by year and mediated cases never appear.
 
 <!-- CTA -->
 
-CTA: [Get a Compass shortlist of vetted distributors for your category](/compass/shortlist)
+CTA: [Get a Compass shortlist of vetted distributors for your category](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -398,7 +398,7 @@ how to find a distributor in China -> /compass/find-a-distributor-in-china
 China distributor vs own store -> /insights/china-distributor-vs-own-store
 distributor sourcing and management -> /enter-china/distribution
 Compass -> /compass
-CTA: Get a Compass shortlist of vetted distributors for your category -> /compass/shortlist
+CTA: Get a Compass shortlist of vetted distributors for your category -> /contact#shortlist
 Not linked: /insights/find-distributor-china-verify (brief 07A, publishes Oct 20, 2026; not live yet). The backlink is registered in the 07A brief (master plan), so the 07A publish run adds it.
 PROPRIETARY NUMBER: none. Settled fallback (editorial/CLAUDE.md, "The proprietary number"): the Compass share is not on file and no calculator or case figure fits, so the piece runs without one. Closed.
 HAND-OFFS: none.

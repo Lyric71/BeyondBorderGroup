@@ -288,7 +288,7 @@ year less at a 5% rate.
 
 <!-- CTA -->
 
-CTA: [Get a shortlist of Douyin Partners that sell in your category](/compass/shortlist)
+CTA: [Get a shortlist of Douyin Partners that sell in your category](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -356,7 +356,7 @@ INTERNAL LINKS:
   social commerce -> /grow-in-china/social-commerce
   Compass -> /compass
   CTA: Get a shortlist of Douyin Partners that sell in your category
-    -> /compass/shortlist
+    -> /contact#shortlist
   Five body links plus the CTA. /insights/double-11-preparation-checklist
   is a published insight (src/content/insights/), outside the PREAMBLE
   list. No other "Finding a partner" piece is published yet, so no cluster

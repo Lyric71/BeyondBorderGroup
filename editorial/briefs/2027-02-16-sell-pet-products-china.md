@@ -63,7 +63,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 6. Cross-border store, distributor, or both
 7. The twelve-month sequence for a full range
 
-**Internal links.** /compass/shortlist, /enter-china/cross-border-setup, /tools/tmall-global-setup-and-run, /enter-china/distribution, /grow-in-china/cross-border-ecommerce
+**Internal links.** /contact#shortlist, /enter-china/cross-border-setup, /tools/tmall-global-setup-and-run, /enter-china/distribution, /grow-in-china/cross-border-ecommerce
 **CTA.** Request a Compass shortlist of vetted pet category distributors.
 **Do not.** Do not state the pet food registration requirement, the quarantine permit process, or any ingredient restriction as settled fact. Each is verified against the current requirement and cited.
 **Territory guard.** Pet is a category where community and creator content drives demand, and that work sits with TheRedScroll, so the piece names the pattern and links to /social-in-china rather than describing seeding as a service offered here.

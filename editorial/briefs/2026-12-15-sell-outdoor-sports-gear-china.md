@@ -63,7 +63,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 6. Distributor or your own store for technical hardware
 7. The first ninety days, in order
 
-**Internal links.** /tools/tmall-global-setup-and-run, /compass/shortlist, /enter-china/cross-border-setup, /grow-in-china/social-commerce, /enter-china/distribution
+**Internal links.** /tools/tmall-global-setup-and-run, /contact#shortlist, /enter-china/cross-border-setup, /grow-in-china/social-commerce, /enter-china/distribution
 **CTA.** Request a Compass shortlist of outdoor and sports distributors.
 **Do not.** Do not slide into sourcing language: the H1 and the first 20 words must state that the reader is selling gear into China, and no paragraph should describe Chinese manufacturing capacity. Do not write the community section as an influencer plan.
 **Territory guard.** Seeding, creator relationships and community management sit with TheRedScroll, so this piece names the demand pattern and links to /social-in-china rather than describing seeding as a TheChinaPath service.

@@ -266,7 +266,7 @@ is the sequence Allbirds ran backwards.
 
 CTA: If you are choosing between running your own China entity and licensing
 a distributor who already has one, [request a Compass
-shortlist](/compass/shortlist) and we will come back with vetted partners for
+shortlist](/contact#shortlist) and we will come back with vetted partners for
 your category.
 
 <!-- =====================================================================
@@ -342,7 +342,7 @@ INTERNAL LINKS:
   what it costs to sell footwear in China -> /insights/cost-to-sell-footwear-in-china
   distributor sourcing and management -> /enter-china/distribution
   cross-border setup -> /enter-china/cross-border-setup
-  request a Compass shortlist -> /compass/shortlist
+  request a Compass shortlist -> /contact#shortlist
 PROPRIETARY NUMBER: Footwear category fees, Tmall Global 50,000 RMB deposit
 and 60,000 RMB annual fee at 5% commission, JD Worldwide 35,500 RMB and
 7,100 RMB at 5%. Labelled in copy as "TheChinaPath calculator data,

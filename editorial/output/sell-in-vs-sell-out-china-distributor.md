@@ -351,7 +351,7 @@ its stock position has a reason.
 
 <!-- CTA -->
 
-CTA: [Ask Compass for a shortlist of vetted distributors for your category](/compass/shortlist)
+CTA: [Ask Compass for a shortlist of vetted distributors for your category](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -414,7 +414,7 @@ distribution service -> /enter-china/distribution
 DaVinci Gourmet case -> /work/kerry-davinci
 a distributor and your own store -> /insights/china-distributor-vs-own-store
 Compass -> /compass
-CTA: Ask Compass for a shortlist of vetted distributors for your category -> /compass/shortlist
+CTA: Ask Compass for a shortlist of vetted distributors for your category -> /contact#shortlist
 PROPRIETARY NUMBER: none. The brief's Compass figure (share of distributors
 on file that share scan or depletion data) does not exist yet
 (editorial/sources/compass-stats.md missing). Settled fallback

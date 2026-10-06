@@ -55,9 +55,9 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Brief field, why a partner needs it, example answer.
 
-**Asset.** Printable one-page brief that matches the `/compass/shortlist` form fields.
+**Asset.** Printable one-page brief that matches the `/contact#shortlist` form fields.
 
-**Internal links.** `/compass/shortlist`, `/compass`, all three guides
+**Internal links.** `/contact#shortlist`, `/compass`, all three guides
 **CTA.** Compass shortlist.
 
 ## Slot spec

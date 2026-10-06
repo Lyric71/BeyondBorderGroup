@@ -233,7 +233,7 @@ around your shipping calendar.
 <!-- CTA -->
 
 CTA: If your filings sit with a partner you're thinking of replacing,
-[request a Compass shortlist](/compass/shortlist) of distributors for your
+[request a Compass shortlist](/contact#shortlist) of distributors for your
 category.
 
 <!-- =====================================================================
@@ -285,7 +285,7 @@ INTERNAL LINKS:
   China distributor vs own store -> /insights/china-distributor-vs-own-store
   finding a distributor in China -> /compass/find-a-distributor-in-china
   Compass -> /compass
-  request a Compass shortlist (CTA) -> /compass/shortlist
+  request a Compass shortlist (CTA) -> /contact#shortlist
 PROPRIETARY NUMBER: cash before the first sale on a cross-border skincare
   store: 80,000 RMB on Tmall Global (50,000 deposit plus 30,000 annual fee),
   42,600 RMB on JD Worldwide, 5,000 RMB on Douyin cross-border (deposit

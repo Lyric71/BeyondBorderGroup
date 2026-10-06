@@ -339,7 +339,7 @@ clawed back. Ask your agency to be paid on the same clock.
 
 <!-- CTA -->
 
-CTA: [Get a shortlist of Douyin Partners that sell in your category](/compass/shortlist)
+CTA: [Get a shortlist of Douyin Partners that sell in your category](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -404,7 +404,7 @@ INTERNAL LINKS:
   finding a Douyin Partner -> /compass/find-a-douyin-partner-in-china
   Compass -> /compass
   CTA: Get a shortlist of Douyin Partners that sell in your category
-    -> /compass/shortlist
+    -> /contact#shortlist
   Five body links plus the CTA. /insights/china-livestream-cost-for-brands
   is a published insight, outside the PREAMBLE list; the run instruction
   asked for the interlink and it exists in src/content/insights/. No other

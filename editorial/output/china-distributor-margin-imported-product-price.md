@@ -364,7 +364,7 @@ general trade.
 
 <!-- CTA -->
 
-CTA: [Get a Compass shortlist of distributors who will price from the shelf](/compass/shortlist)
+CTA: [Get a Compass shortlist of distributors who will price from the shelf](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -423,7 +423,7 @@ INTERNAL LINKS:
   guide to finding a distributor in China -> /compass/find-a-distributor-in-china
   distributor sourcing and management -> /enter-china/distribution
   Compass -> /compass
-  CTA: Get a Compass shortlist of distributors who will price from the shelf -> /compass/shortlist
+  CTA: Get a Compass shortlist of distributors who will price from the shelf -> /contact#shortlist
 PROPRIETARY NUMBER: "TheChinaPath calculator data, September 2026": the
   Tmall Global calculator defaults (src/pages/tools/tmall-global-setup-and-run.astro)
   for the food category: cross-border tax 9.1%, consumer-paid; platform

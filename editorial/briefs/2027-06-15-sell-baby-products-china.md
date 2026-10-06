@@ -63,7 +63,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 6. Distribution: when a distributor beats your own store in this category
 7. A realistic first twelve months for a maternity and baby brand
 
-**Internal links.** /enter-china/cross-border-setup, /compass/shortlist, /enter-china/distribution, /tools/tmall-global-setup-and-run, /enter-china/branding-localisation
+**Internal links.** /enter-china/cross-border-setup, /contact#shortlist, /enter-china/distribution, /tools/tmall-global-setup-and-run, /enter-china/branding-localisation
 **CTA.** Request a Compass shortlist of vetted maternity and baby distributors.
 **Do not.** Do not write a single set of rules for the whole category; the incumbents' pages fail exactly there and the matrix is how this page beats them. Do not assert any registration requirement, timeline or fee without a cited primary source and an access date.
 **Link forward.** The W08 Ledger on what it costs to sell baby care and hygiene products in China ships first. Link to it from section 2 with descriptive anchor text, and add the reciprocal link from that Ledger back to this page.

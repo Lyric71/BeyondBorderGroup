@@ -268,7 +268,7 @@ European or American brand looking for Chinese buyers.
 <!-- CTA -->
 
 CTA: If you want a vetted shortlist of the operators who could actually run
-your category in China, [request a Compass shortlist](/compass/shortlist).
+your category in China, [request a Compass shortlist](/contact#shortlist).
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -342,7 +342,7 @@ INTERNAL LINKS:
   JD Worldwide setup and run calculator -> /tools/jd-worldwide-setup-and-run
   cross-border setup team -> /enter-china/cross-border-setup
   cross-border ecommerce team -> /grow-in-china/cross-border-ecommerce
-  request a Compass shortlist -> /compass/shortlist
+  request a Compass shortlist -> /contact#shortlist
   All five are on the PREAMBLE target list. No /insights or /work links are
   used in this piece.
 PROPRIETARY NUMBER:

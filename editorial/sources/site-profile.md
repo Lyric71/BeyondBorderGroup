@@ -46,7 +46,7 @@ Do not invent services. The service pages, English:
 `/learn-china/platforms`).
 
 **Compass** (`/compass`): the vetted distributor and partner database.
-`/compass/shortlist` (the CTA target), `/compass/partners`, and three
+`/contact#shortlist` (the CTA target), `/compass/partners`, and three
 finder pages: `/compass/find-a-distributor-in-china`,
 `/compass/find-a-tmall-partner-in-china`,
 `/compass/find-a-douyin-partner-in-china`. (The how-it-works,
@@ -116,4 +116,4 @@ and `localizePath` break.
 ## Internal link targets for this plan
 
 The list in `briefs/PREAMBLE.md`, plus `/work/<brand>` and
-`/guides/<slug>`. `/compass/shortlist` is the Compass CTA target.
+`/guides/<slug>`. `/contact#shortlist` is the Compass CTA target.

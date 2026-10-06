@@ -63,7 +63,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 6. What a realistic year one looks like at three volume levels
 7. The five questions to ask an importer before you sign
 
-**Internal links.** /enter-china/distribution, /compass, /compass/shortlist, /enter-china/cross-border-setup, /grow-in-china/cross-border-ecommerce
+**Internal links.** /enter-china/distribution, /compass, /contact#shortlist, /enter-china/cross-border-setup, /grow-in-china/cross-border-ecommerce
 **CTA.** Build a shortlist of alcohol importers in Compass, filtered by the provinces you actually need.
 **Do not.** Do not write the "China loves wine" market-size opener. The incumbent at position one already owns that piece and it is not what a brand with a shipment to price needs. Do not assert a single tax rate without a citation and a date.
 

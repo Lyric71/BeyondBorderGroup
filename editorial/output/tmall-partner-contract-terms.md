@@ -326,7 +326,7 @@ Protection Law, the TP must return or delete it.
 
 <!-- CTA -->
 
-CTA: [Get a shortlist of Tmall Partners that run stores in your category](/compass/shortlist)
+CTA: [Get a shortlist of Tmall Partners that run stores in your category](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -369,7 +369,7 @@ Compass -> /compass
 cross-border setup -> /enter-china/cross-border-setup
 Tmall Global cost calculator -> /tools/tmall-global-setup-and-run
 selling through a distributor or your own store -> /insights/china-distributor-vs-own-store
-Get a shortlist of Tmall Partners that run stores in your category -> /compass/shortlist (CTA)
+Get a shortlist of Tmall Partners that run stores in your category -> /contact#shortlist (CTA)
 PROPRIETARY NUMBER: 64,167 RMB for an average TP month, 99,167 RMB for a two-retainer transition month, 128,333 RMB with double commission; commission-base table (31,821 / 29,167 / 27,708 / 11,229 RMB). Label: "TheChinaPath calculator data, September 2026". Source: src/pages/tools/tmall-global-setup-and-run.astro defaults (dpRetainer 35000, dpCommission 10, gmv 3500000, returnRate 5, cbecTax 9.1, fx 7.1).
 HAND-OFFS: none.
 CLIENT SIGN-OFF NEEDED: none. No client named or quantified.

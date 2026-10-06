@@ -280,7 +280,7 @@ and that insurer decides how much credit the distributor gets.
 
 <!-- CTA -->
 
-CTA: [Ask Compass for a shortlist of vetted distributors in your category](/compass/shortlist)
+CTA: [Ask Compass for a shortlist of vetted distributors in your category](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -357,7 +357,7 @@ comparison of a distributor and your own store -> /insights/china-distributor-vs
 guide to finding a distributor in China -> /compass/find-a-distributor-in-china
 Compass -> /compass
 distribution team -> /enter-china/distribution
-CTA: Ask Compass for a shortlist of vetted distributors in your category -> /compass/shortlist
+CTA: Ask Compass for a shortlist of vetted distributors in your category -> /contact#shortlist
 PROPRIETARY NUMBER: bonded warehouse deposit 100,000 RMB plus bonded tax prepayment 300,000 RMB, 400,000 RMB committed before the first order. Label: "TheChinaPath calculator data, September 2026". Source: src/pages/tools/tmall-global-setup-and-run.astro (whDeposit, whTaxPrepay). The brief's Compass figure (typical first-order terms on file) does not exist; settled fallback (editorial/CLAUDE.md, "The proprietary number"): the calculator figure stands. Closed.
 HAND-OFFS: none.
 CLIENT SIGN-OFF NEEDED: none.

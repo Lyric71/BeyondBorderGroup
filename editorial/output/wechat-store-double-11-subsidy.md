@@ -147,7 +147,7 @@ weeks. Agree that price inside your [social commerce](/grow-in-china/social-comm
 
 <!-- CTA -->
 
-CTA: [Get a shortlist of vetted China distributors](/compass/shortlist)
+CTA: [Get a shortlist of vetted China distributors](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -204,7 +204,7 @@ SCREENSHOTS: none. (If one is added later: the WeChat Store 11.11 notice
 DOWNLOADS: none.
 INTERNAL LINKS:
   social commerce -> /grow-in-china/social-commerce
-  CTA: Get a shortlist of vetted China distributors -> /compass/shortlist
+  CTA: Get a shortlist of vetted China distributors -> /contact#shortlist
   One body link, per the Signal template, plus the CTA. Both targets are
   on the PREAMBLE list and exist in src/pages/.
 PROPRIETARY NUMBER: none required for a Signal. The 40,000 RMB fee

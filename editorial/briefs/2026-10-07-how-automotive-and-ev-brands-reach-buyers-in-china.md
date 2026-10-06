@@ -12,7 +12,7 @@ primary_query: ""
 industry: "Automotive"
 word_count: "1,200 to 1,500"
 variant: B
-proof: "Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`."
+proof: "Jaguar Land Rover (year-round China social, `/work/jaguar-land-rover`, no published figure) and JAC Automobile (WeChat, RED and Weibo, `/work/jac-automobile`). The Chery, Exeed and Exlantix pages publish overseas results (Facebook, Instagram, Geneva), so they are not proof of reaching Chinese buyers. The one published number that fits is JAC's 250+ vehicle images for its partner and reseller network (`/work/jac`). Published figures only."
 status: not_started
 ---
 
@@ -42,7 +42,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Industry | `Automotive`, set as `industry` in the insight frontmatter |
 | Body length | 1,200 to 1,500 (body only, per the char-count rule) |
 | Ledger variant | B |
-| Proof | Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`. |
+| Proof | Jaguar Land Rover (year-round China social, `/work/jaguar-land-rover`, no published figure) and JAC Automobile (WeChat, RED and Weibo, `/work/jac-automobile`). The Chery, Exeed and Exlantix pages publish overseas results (Facebook, Instagram, Geneva), so they are not proof of reaching Chinese buyers. The one published number that fits is JAC's 250+ vehicle images for its partner and reseller network (`/work/jac`). Published figures only. |
 
 ## The brief
 
@@ -53,7 +53,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 Channels to cover: Douyin and RedNote for consideration, Autohome and Dongchedi as the vertical portals, WeChat for dealer handoff, and offline events. Say plainly that the vehicle is not sold cross-border and that this is a demand-generation and dealer-handoff problem, not a marketplace one.
 
-**Proof.** Chery, JAC, Exeed, Exlantix, Jaguar Land Rover. Published figures only, and there are several on `/work`.
+**Proof.** Jaguar Land Rover (year-round China social, `/work/jaguar-land-rover`, no published figure) and JAC Automobile (WeChat, RED and Weibo, `/work/jac-automobile`). The Chery, Exeed and Exlantix pages publish overseas results (Facebook, Instagram, Geneva), so they are not proof of reaching Chinese buyers. The one published number that fits is JAC's 250+ vehicle images for its partner and reseller network (`/work/jac`). Published figures only.
 **Internal links.** `/grow-in-china/campaigns`, `/grow-in-china/media`, `/social-in-china`
 **CTA.** Talk to us.
 

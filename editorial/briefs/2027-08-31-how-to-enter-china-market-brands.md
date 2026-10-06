@@ -62,7 +62,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 6. The two routes we now recommend less often than we did
 7. How to run this decision on your own numbers
 
-**Internal links.** /enter-china/market-entry-consulting, /compass/shortlist, /tools/tmall-global-setup-and-run, /tools/jd-worldwide-setup-and-run, /grow-in-china/cross-border-ecommerce (plus in-table links to the year's category and cost pieces, which do not count against the 3 to 5 body links)
+**Internal links.** /enter-china/market-entry-consulting, /contact#shortlist, /tools/tmall-global-setup-and-run, /tools/jd-worldwide-setup-and-run, /grow-in-china/cross-border-ecommerce (plus in-table links to the year's category and cost pieces, which do not count against the 3 to 5 body links)
 **CTA.** Request a Compass shortlist, or run your route in the market entry calculator.
 **Do not.** Do not write this as a year in review; it is a decision page that happens to be evidenced by a year of publishing, and the first sixty words must contain the decision, not the retrospective. Do not restate any regulatory point from the year's pieces; link to the piece that carries the sourced version instead.
 

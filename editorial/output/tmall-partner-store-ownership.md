@@ -348,7 +348,7 @@ in writing on the date and process for moving the store into your entity.
 
 <!-- CTA -->
 
-CTA: [Ask Compass for a shortlist of partners who open stores in your name](/compass/shortlist)
+CTA: [Ask Compass for a shortlist of partners who open stores in your name](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -421,7 +421,7 @@ Tmall Global cost calculator -> /tools/tmall-global-setup-and-run
 how to find a Tmall Partner -> /compass/find-a-tmall-partner-in-china
 how to find a Douyin Partner -> /compass/find-a-douyin-partner-in-china
 Compass -> /compass
-CTA: Ask Compass for a shortlist of partners who open stores in your name -> /compass/shortlist
+CTA: Ask Compass for a shortlist of partners who open stores in your name -> /contact#shortlist
 PROPRIETARY NUMBER: Tmall Global deposit plus annual fee of 80,000 RMB in 11 of 19 categories, 110,000 RMB in seven, 330,000 RMB for health supplements; default TP fee of 35,000 RMB a month plus 10% of GMV, 770,000 RMB in year one at the 3.5 million RMB default GMV. Label: "TheChinaPath calculator data, September 2026". Source: src/pages/tools/tmall-global-setup-and-run.astro. The brief's Compass figure (share of TPs on file that open stores in the brand's own entity) does not exist yet; see the run log.
 HAND-OFFS: none.
 CLIENT SIGN-OFF NEEDED: none.

@@ -59,7 +59,7 @@ What we do not publish in this cluster: lists that name and rank partners
 ## 3. Rules for every piece in the cluster
 
 - **Tags.** `Finding a partner` (lists it on the hub, in the header menu and in the guides' Keep reading strip) plus one or more topic tags that drive the hub's filter chips: `Distributors`, `Tmall Partners`, `Douyin Partners`, `Contracts`, `Due diligence`, `Managing a partner`.
-- **Links.** Up to the guide it serves, to `/compass`, and across to one other cluster piece. CTA: `/compass/shortlist`.
+- **Links.** Up to the guide it serves, to `/compass`, and across to one other cluster piece. CTA: `/contact#shortlist`.
 - **Shape.** Anchor spec (answer in the first 60 words, one real table, one proprietary number, byline TheChinaPath). Explainers run 1,300 to 1,800 words, case notes 1,000 to 1,300, assets are printable pages under `/guides/`.
 - **Sources.** Chinese first, every figure validated twice (house rule). Agency blogs (da-mai, xinshawn, Shanghai Jungle) can frame a range but never carry a figure alone.
 - **Proprietary number.** From, in order: a Compass snapshot (section 6), the calculators, the case pages. Never invented.

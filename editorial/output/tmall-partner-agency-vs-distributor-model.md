@@ -263,7 +263,7 @@ the store account before you sign.
 Once you know the model, [Compass](/compass) finds the partners that run your
 category that way.
 
-CTA: [Get a shortlist of Tmall Partners that run your category, in the model you want](/compass/shortlist)
+CTA: [Get a shortlist of Tmall Partners that run your category, in the model you want](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -332,7 +332,7 @@ INTERNAL LINKS:
   China distributor vs your own store -> /insights/china-distributor-vs-own-store
   Compass -> /compass
   CTA: Get a shortlist of Tmall Partners that run your category, in the
-    model you want -> /compass/shortlist
+    model you want -> /contact#shortlist
   Four body links plus the CTA. /insights/china-distributor-vs-own-store is
   the one published "Finding a partner" piece (tag checked in
   src/content/insights/ on 2026-09-24); the partner template asks for one

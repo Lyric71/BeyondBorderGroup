@@ -45,7 +45,7 @@ Read against `editorial-briefs.md` and `schedule.csv` on September 24, 2026.
   reading" strip of all three guides.
 - **Link rule.** Each cluster article links to the guide it serves, to `/compass`,
   and to one other cluster article. The CTA is the Compass shortlist
-  (`/compass/shortlist`).
+  (`/contact#shortlist`).
 - **Proprietary number.** Every cluster article carries one figure only Compass
   can publish (share of candidates that fail a check, median shortlist time,
   share of TPs with a live store in the brief's category…), labelled with the

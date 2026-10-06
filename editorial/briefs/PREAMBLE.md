@@ -44,7 +44,7 @@ Internal link targets available:
 /tools/tmall-global-setup-and-run
 /tools/jd-worldwide-setup-and-run
 /tools/douyin-cost-calculator
-/compass  /compass/shortlist  /insights/finding-a-partner
+/compass  /contact#shortlist  /insights/finding-a-partner
 /compass/find-a-distributor-in-china  /compass/find-a-tmall-partner-in-china
 /compass/find-a-douyin-partner-in-china
 /enter-china/market-entry-consulting  /enter-china/distribution

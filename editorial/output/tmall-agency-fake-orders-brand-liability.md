@@ -259,7 +259,7 @@ to the store.
 
 <!-- CTA -->
 
-CTA: [Get a shortlist of Tmall and Douyin Partners we've vetted](/compass/shortlist)
+CTA: [Get a shortlist of Tmall and Douyin Partners we've vetted](/contact#shortlist)
 
 <!-- =====================================================================
 FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
@@ -303,7 +303,7 @@ cross-border setup -> /enter-china/cross-border-setup
 guide to finding a Tmall Partner -> /compass/find-a-tmall-partner-in-china
 guide to finding a Douyin Partner -> /compass/find-a-douyin-partner-in-china
 Compass -> /compass
-Get a shortlist of Tmall and Douyin Partners we've vetted -> /compass/shortlist (CTA)
+Get a shortlist of Tmall and Douyin Partners we've vetted -> /contact#shortlist (CTA)
 PROPRIETARY NUMBER: none. The brief's figure (share of Compass candidates declined over data integrity) does not exist: editorial/sources/compass-stats.md is missing and nothing is published on the site. Settled fallback (editorial/CLAUDE.md, "The proprietary number"): no calculator or case figure is relevant to fake orders, so none is forced in and the piece runs without one. Closed.
 HAND-OFFS: none.
 CLIENT SIGN-OFF NEEDED: none. No client named or quantified. The agency and the platform in the SPC case are not named by the court and are not named here; the Shanghai company fined in 2025 is described without its name.
