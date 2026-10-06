@@ -225,6 +225,16 @@ const copy: CompassCopy = {
       captchaBefore: 'Eine kurze Prüfung gegen Bots: Wie viel ergibt ',
       captchaAfter: '?',
       honeypot: 'Dieses Feld bitte leer lassen',
+      source: 'Wie sind Sie auf uns aufmerksam geworden?',
+      sourceDetail: 'Und zwar? (optional)',
+      sourceDetailPlaceholder: 'Der Name, damit wir uns bedanken können',
+    },
+    sources: {
+      google: 'Google oder eine andere Suchmaschine',
+      ai: 'Ein KI-Assistent (ChatGPT, Gemini, Claude, Perplexity usw.)',
+      exhibition: 'Eine Messe oder Fachausstellung',
+      referral: 'Eine persönliche Empfehlung',
+      other: 'Auf anderem Weg',
     },
     stages: [
       'Noch nicht in China, wir wägen zwischen Distributor, TP und DP ab',
@@ -243,6 +253,7 @@ const copy: CompassCopy = {
         'Das Ergebnis stimmt nicht ganz. Die Zahlen wurden gerade erneuert, bitte versuchen Sie es noch einmal.',
       required: 'Bitte tragen Sie Name, E-Mail-Adresse, Unternehmen, Kategorie und Stand ein.',
       message: 'Sagen Sie uns in ein bis zwei Sätzen, was Sie lösen wollen.',
+      source: 'Bitte sagen Sie uns, wie Sie auf uns aufmerksam geworden sind.',
       network:
         'Das Briefing ist nicht durchgegangen. Bitte versuchen Sie es gleich noch einmal. Klappt es weiterhin nicht, schreiben Sie uns direkt an hello@thechinapath.com.',
     },

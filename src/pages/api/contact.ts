@@ -1,9 +1,20 @@
 import type { APIRoute } from 'astro';
 import { sendContactEmail } from '../../lib/resend';
+import {
+  isLeadSource,
+  LEAD_SOURCE_DETAIL_MAX,
+  LEAD_SOURCES_WITH_DETAIL,
+} from '../../lib/lead-source';
 
 export const prerender = false;
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+/**
+ * Forms that ask "How did you hear about us?" and must send an answer. The
+ * Compass partner forms do not ask, so they pass without one.
+ */
+const FORMS_ASKING_SOURCE = new Set(['Contact', 'Compass shortlist']);
 
 export const POST: APIRoute = async ({ request }) => {
   let body: Record<string, unknown>;
@@ -21,7 +32,18 @@ export const POST: APIRoute = async ({ request }) => {
   const budget = stringField(body.budget);
   const profile = stringField(body.profile);
   const message = stringField(body.message);
-  const source = stringField(body.source);
+  // `form` tags which form sent the enquiry; `source` is the visitor's answer
+  // to "How did you hear about us?". A page still open from before the split
+  // sends no `form` and may carry its tag in `source`: that value is read as
+  // the tag, and the missing answer is let through rather than losing the lead.
+  const rawSource = stringField(body.source);
+  const declaredForm = stringField(body.form);
+  const form = declaredForm || (rawSource && !isLeadSource(rawSource) ? rawSource : '');
+  const source = isLeadSource(rawSource) ? rawSource : undefined;
+  const sourceDetail =
+    source && LEAD_SOURCES_WITH_DETAIL.includes(source)
+      ? stringField(body.sourceDetail).slice(0, LEAD_SOURCE_DETAIL_MAX)
+      : '';
   const wechat = stringField(body.wechat);
   const captcha = stringField(body.captcha);
   const captchaExpected = stringField(body.captchaExpected);
@@ -44,6 +66,12 @@ export const POST: APIRoute = async ({ request }) => {
   if (!EMAIL_RE.test(email)) {
     return json({ error: 'Invalid email address.' }, 400);
   }
+  if (rawSource && !source && rawSource !== form) {
+    return json({ error: 'Unknown answer to "How did you hear about us?".' }, 400);
+  }
+  if (!source && FORMS_ASKING_SOURCE.has(declaredForm)) {
+    return json({ error: 'Please tell us how you heard about us.' }, 400);
+  }
 
   try {
     await sendContactEmail({
@@ -55,7 +83,9 @@ export const POST: APIRoute = async ({ request }) => {
       budget,
       profile,
       message,
+      form,
       source,
+      sourceDetail,
       wechat,
     });
     return json({ success: true }, 200);

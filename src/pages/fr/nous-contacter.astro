@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { LEAD_SOURCE_DETAIL_MAX, type LeadSource } from '../../lib/lead-source';
 
 const offices = [
   {
@@ -53,6 +54,16 @@ const budgetOptions = [
 ];
 
 const profileOptions = ['Marque', 'Retailer', 'Agence', 'Cabinet de conseil', 'Fabricant'];
+
+// "How did you hear about us?". Values are the English slugs the handler
+// whitelists, whatever the page language.
+const sourceOptions: { value: LeadSource; label: string }[] = [
+  { value: 'google', label: 'Google ou un autre moteur de recherche' },
+  { value: 'ai', label: 'Un assistant IA (ChatGPT, Gemini, Claude, Perplexity…)' },
+  { value: 'exhibition', label: 'Un salon professionnel ou une exposition' },
+  { value: 'referral', label: 'Une recommandation : quelqu’un vous a parlé de nous' },
+  { value: 'other', label: 'Par un autre biais' },
+];
 ---
 
 <Layout
@@ -283,6 +294,44 @@ const profileOptions = ['Marque', 'Retailer', 'Agence', 'Cabinet de conseil', 'F
                 required></textarea>
             </div>
 
+            <fieldset class="field field--group">
+              <legend class="field__label">
+                Comment nous avez-vous connus ? <span aria-hidden="true">*</span>
+              </legend>
+              <div class="choices">
+                {
+                  sourceOptions.map((opt, i) => (
+                    <div class="choice">
+                      <input
+                        class="choice__input"
+                        type="radio"
+                        id={`source-${opt.value}`}
+                        name="source"
+                        value={opt.value}
+                        required={i === 0}
+                      />
+                      <label class="choice__label" for={`source-${opt.value}`}>
+                        {opt.label}
+                      </label>
+                    </div>
+                  ))
+                }
+              </div>
+            </fieldset>
+
+            <div class="field" id="sourceDetailField">
+              <label class="field__label" for="sourceDetail">Précisez (facultatif)</label>
+              <input
+                class="field__input"
+                type="text"
+                id="sourceDetail"
+                name="sourceDetail"
+                maxlength={LEAD_SOURCE_DETAIL_MAX}
+                placeholder="Un nom, pour remercier qui de droit"
+                autocomplete="off"
+              />
+            </div>
+
             <div class="field field--captcha">
               <label class="field__label" for="captcha">
                 Petite vérification anti-robot : combien font <span id="captchaA">?</span> + <span
@@ -395,6 +444,21 @@ const profileOptions = ['Marque', 'Retailer', 'Agence', 'Cabinet de conseil', 'F
     profileRadios.forEach((r) => r.addEventListener('change', syncProfileOther));
     syncProfileOther();
 
+    // "How did you hear about us?": the detail box only shows for an exhibition,
+    // a referral or somewhere else. Without JS it simply stays visible.
+    const sourceRadios = form.querySelectorAll('input[name="source"]');
+    const sourceDetailField = document.getElementById('sourceDetailField');
+    const sourceDetail = document.getElementById('sourceDetail');
+    function syncSourceDetail() {
+      const picked = form.querySelector('input[name="source"]:checked')?.value;
+      const show = picked === 'exhibition' || picked === 'referral' || picked === 'other';
+      if (!sourceDetailField) return;
+      sourceDetailField.hidden = !show;
+      if (!show && sourceDetail) sourceDetail.value = '';
+    }
+    sourceRadios.forEach((r) => r.addEventListener('change', syncSourceDetail));
+    syncSourceDetail();
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       status.textContent = '';
@@ -411,6 +475,7 @@ const profileOptions = ['Marque', 'Retailer', 'Agence', 'Cabinet de conseil', 'F
       const profile =
         profileValue === 'Autre' && profileOtherVal ? `Autre : ${profileOtherVal}` : profileValue;
       const payload = {
+        form: 'Contact',
         name: [firstName, lastName].filter(Boolean).join(' '),
         email: String(data.get('email') || '').trim(),
         company: String(data.get('company') || '').trim(),
@@ -419,6 +484,8 @@ const profileOptions = ['Marque', 'Retailer', 'Agence', 'Cabinet de conseil', 'F
         budget: String(data.get('budget') || '').trim(),
         profile,
         message: String(data.get('message') || '').trim(),
+        source: String(data.get('source') || '').trim(),
+        sourceDetail: String(data.get('sourceDetail') || '').trim(),
         captcha: String(data.get('captcha') || '').trim(),
         captchaExpected: String(form.dataset.captchaSum || ''),
       };
@@ -434,6 +501,12 @@ const profileOptions = ['Marque', 'Retailer', 'Agence', 'Cabinet de conseil', 'F
 
       if (!payload.name || !payload.email || !payload.message) {
         status.textContent = 'Il nous faut au minimum votre nom, votre courriel et un message.';
+        status.classList.add('form__status--error');
+        return;
+      }
+
+      if (!payload.source) {
+        status.textContent = 'Dites-nous comment vous nous avez connus.';
         status.classList.add('form__status--error');
         return;
       }

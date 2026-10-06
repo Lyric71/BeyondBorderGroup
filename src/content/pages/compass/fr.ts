@@ -231,6 +231,16 @@ const copy: CompassCopy = {
       captchaBefore: 'Une vérification rapide pour écarter les robots : combien font ',
       captchaAfter: ' ?',
       honeypot: 'Laissez ce champ vide',
+      source: 'Comment nous avez-vous connus ?',
+      sourceDetail: 'Précisez (facultatif)',
+      sourceDetailPlaceholder: 'Un nom, pour remercier qui de droit',
+    },
+    sources: {
+      google: 'Google ou un autre moteur de recherche',
+      ai: 'Un assistant IA (ChatGPT, Gemini, Claude, Perplexity…)',
+      exhibition: 'Un salon professionnel ou une exposition',
+      referral: 'Une recommandation : quelqu’un vous a parlé de nous',
+      other: 'Par un autre biais',
     },
     stages: [
       'Pas encore en Chine : nous hésitons entre un distributeur, un TP et un DP',
@@ -249,6 +259,7 @@ const copy: CompassCopy = {
       required:
         'Merci de renseigner vos nom, e-mail, société, catégorie et stade d’avancement.',
       message: 'Dites-nous en une ligne ou deux ce que vous cherchez à résoudre.',
+      source: 'Dites-nous comment vous nous avez connus.',
       network:
         'Le brief n’est pas parti. Réessayez dans un instant. Si le problème persiste, écrivez-nous directement à hello@thechinapath.com.',
     },

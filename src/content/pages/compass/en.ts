@@ -277,6 +277,16 @@ const copy: CompassCopy = {
       captchaBefore: 'A quick check to keep bots out: what is ',
       captchaAfter: '?',
       honeypot: 'Leave this field empty',
+      source: 'How did you hear about us?',
+      sourceDetail: 'Which one? (optional)',
+      sourceDetailPlaceholder: 'The name, so we can thank them',
+    },
+    sources: {
+      google: 'Google or another search engine',
+      ai: 'An AI assistant (ChatGPT, Gemini, Claude, Perplexity…)',
+      exhibition: 'An exhibition or a trade show',
+      referral: 'A referral, someone recommended us',
+      other: 'Somewhere else',
     },
     stages: [
       'Not in China yet, still choosing between a distributor, a TP and a DP',
@@ -294,6 +304,7 @@ const copy: CompassCopy = {
       captcha: 'That result is not quite right. The numbers have just refreshed, please try again.',
       required: 'Please fill in your name, email, company, category and stage.',
       message: 'Please tell us in a line or two what you are trying to solve.',
+      source: 'Please tell us how you heard about us.',
       network:
         'The brief did not go through. Please try again in a moment. If it keeps failing, you can write to us directly at hello@thechinapath.com.',
     },

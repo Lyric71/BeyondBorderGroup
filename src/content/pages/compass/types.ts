@@ -14,6 +14,8 @@
  * Provenance for the English strings is in docs/restructure/content-sources.md.
  */
 
+import type { LeadSource } from '../../../lib/lead-source';
+
 export interface Labelled {
   label: string;
   body: string;
@@ -156,7 +158,14 @@ export interface ShortlistCopy {
     captchaBefore: string;
     captchaAfter: string;
     honeypot: string;
+    /** "How did you hear about us?" */
+    source: string;
+    /** Optional "Which one?" box under exhibition, referral and other. */
+    sourceDetail: string;
+    sourceDetailPlaceholder: string;
   };
+  /** Answer labels, keyed by the English slug the form posts. */
+  sources: Record<LeadSource, string>;
   stages: string[];
   submit: string;
   submitting: string;
@@ -167,6 +176,7 @@ export interface ShortlistCopy {
     captcha: string;
     required: string;
     message: string;
+    source: string;
     network: string;
   };
   success: string;

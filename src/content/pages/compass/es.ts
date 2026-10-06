@@ -226,6 +226,16 @@ const copy: CompassCopy = {
       captchaBefore: 'Una comprobación rápida para dejar fuera a los robots: ¿cuánto es ',
       captchaAfter: '?',
       honeypot: 'Deje este campo vacío',
+      source: '¿Cómo nos ha conocido?',
+      sourceDetail: '¿Cuál? (opcional)',
+      sourceDetailPlaceholder: 'El nombre, para poder darle las gracias',
+    },
+    sources: {
+      google: 'Google u otro buscador',
+      ai: 'Un asistente de IA (ChatGPT, Gemini, Claude, Perplexity…)',
+      exhibition: 'Una feria o un salón profesional',
+      referral: 'Una recomendación, alguien le habló de nosotros',
+      other: 'Por otra vía',
     },
     stages: [
       'Todavía no estamos en China y dudamos entre un distribuidor, un TP y un DP',
@@ -243,6 +253,7 @@ const copy: CompassCopy = {
       captcha: 'El resultado no es correcto. Los números se acaban de renovar, inténtelo otra vez.',
       required: 'Indique su nombre, correo, empresa, categoría y momento.',
       message: 'Cuéntenos en una o dos líneas qué quiere resolver.',
+      source: 'Indíquenos cómo nos ha conocido.',
       network:
         'El briefing no ha salido. Inténtelo de nuevo en un momento. Si sigue fallando, escríbanos directamente a hello@thechinapath.com.',
     },

@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { LEAD_SOURCE_DETAIL_MAX, type LeadSource } from '../lib/lead-source';
 
 const offices = [
   {
@@ -59,6 +60,16 @@ const budgetOptions = [
 ];
 
 const profileOptions = ['Brand', 'Retailer', 'Agency', 'Consultancy', 'Manufacturer'];
+
+// "How did you hear about us?". Values are the English slugs the handler
+// whitelists, whatever the page language.
+const sourceOptions: { value: LeadSource; label: string }[] = [
+  { value: 'google', label: 'Google or another search engine' },
+  { value: 'ai', label: 'An AI assistant (ChatGPT, Gemini, Claude, Perplexity…)' },
+  { value: 'exhibition', label: 'An exhibition or a trade show' },
+  { value: 'referral', label: 'A referral, someone recommended us' },
+  { value: 'other', label: 'Somewhere else' },
+];
 ---
 
 <Layout
@@ -287,6 +298,44 @@ const profileOptions = ['Brand', 'Retailer', 'Agency', 'Consultancy', 'Manufactu
                 required></textarea>
             </div>
 
+            <fieldset class="field field--group">
+              <legend class="field__label">
+                How did you hear about us? <span aria-hidden="true">*</span>
+              </legend>
+              <div class="choices">
+                {
+                  sourceOptions.map((opt, i) => (
+                    <div class="choice">
+                      <input
+                        class="choice__input"
+                        type="radio"
+                        id={`source-${opt.value}`}
+                        name="source"
+                        value={opt.value}
+                        required={i === 0}
+                      />
+                      <label class="choice__label" for={`source-${opt.value}`}>
+                        {opt.label}
+                      </label>
+                    </div>
+                  ))
+                }
+              </div>
+            </fieldset>
+
+            <div class="field" id="sourceDetailField">
+              <label class="field__label" for="sourceDetail">Which one? (optional)</label>
+              <input
+                class="field__input"
+                type="text"
+                id="sourceDetail"
+                name="sourceDetail"
+                maxlength={LEAD_SOURCE_DETAIL_MAX}
+                placeholder="The name, so we can thank them"
+                autocomplete="off"
+              />
+            </div>
+
             <div class="field field--captcha">
               <label class="field__label" for="captcha">
                 A quick check to keep bots out: what is <span id="captchaA">?</span> + <span
@@ -400,6 +449,21 @@ const profileOptions = ['Brand', 'Retailer', 'Agency', 'Consultancy', 'Manufactu
     profileRadios.forEach((r) => r.addEventListener('change', syncProfileOther));
     syncProfileOther();
 
+    // "How did you hear about us?": the detail box only shows for an exhibition,
+    // a referral or somewhere else. Without JS it simply stays visible.
+    const sourceRadios = form.querySelectorAll('input[name="source"]');
+    const sourceDetailField = document.getElementById('sourceDetailField');
+    const sourceDetail = document.getElementById('sourceDetail');
+    function syncSourceDetail() {
+      const picked = form.querySelector('input[name="source"]:checked')?.value;
+      const show = picked === 'exhibition' || picked === 'referral' || picked === 'other';
+      if (!sourceDetailField) return;
+      sourceDetailField.hidden = !show;
+      if (!show && sourceDetail) sourceDetail.value = '';
+    }
+    sourceRadios.forEach((r) => r.addEventListener('change', syncSourceDetail));
+    syncSourceDetail();
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       status.textContent = '';
@@ -416,6 +480,7 @@ const profileOptions = ['Brand', 'Retailer', 'Agency', 'Consultancy', 'Manufactu
       const profile =
         profileValue === 'Other' && profileOtherVal ? `Other: ${profileOtherVal}` : profileValue;
       const payload = {
+        form: 'Contact',
         name: [firstName, lastName].filter(Boolean).join(' '),
         email: String(data.get('email') || '').trim(),
         company: String(data.get('company') || '').trim(),
@@ -424,6 +489,8 @@ const profileOptions = ['Brand', 'Retailer', 'Agency', 'Consultancy', 'Manufactu
         budget: String(data.get('budget') || '').trim(),
         profile,
         message: String(data.get('message') || '').trim(),
+        source: String(data.get('source') || '').trim(),
+        sourceDetail: String(data.get('sourceDetail') || '').trim(),
         captcha: String(data.get('captcha') || '').trim(),
         captchaExpected: String(form.dataset.captchaSum || ''),
       };
@@ -440,6 +507,12 @@ const profileOptions = ['Brand', 'Retailer', 'Agency', 'Consultancy', 'Manufactu
 
       if (!payload.name || !payload.email || !payload.message) {
         status.textContent = 'Please add your name, email and a short message before sending.';
+        status.classList.add('form__status--error');
+        return;
+      }
+
+      if (!payload.source) {
+        status.textContent = 'Please tell us how you heard about us.';
         status.classList.add('form__status--error');
         return;
       }

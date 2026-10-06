@@ -2953,6 +2953,10 @@ a.mega__group-label:hover {
   padding: 0;
   margin: 0;
 }
+/* .field sets display, which would otherwise beat the hidden attribute. */
+.field[hidden] {
+  display: none;
+}
 .field__label {
   font-size: 0.95rem;
   font-weight: 600;

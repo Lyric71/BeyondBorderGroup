@@ -5,14 +5,14 @@
  *
  * The brief form posts to /api/contact, the site's existing handler, so
  * submissions land in the same inbox as every other enquiry and no new form
- * service is introduced. The `source` field tags it as a Compass brief on
- * arrival. Captcha, honeypot and status behaviour match /contact.astro
+ * service is introduced. The `form` field tags it as a Compass brief on
+ * arrival, and `source` carries the "How did you hear about us?" answer. Captcha, honeypot and status behaviour match /contact.astro
  * deliberately: one pattern, one set of bugs.
  *
  * Layout: a dark photo hero, then the brief card lifted over its bottom edge
  * with a sticky "what happens next" timeline beside it. The brief reads top to
  * bottom the way the first call does: category (icon tiles), stage (choice
- * cards), the problem, then who you are. A thin bar on the card fills as the
+ * cards), the problem, who you are, then how you heard about us. A thin bar on the card fills as the
  * required answers come in, and a missing answer is flagged on the field
  * itself as well as in the status line.
  *
@@ -27,6 +27,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import { getLocaleFromUrl, localizePath } from '../../../i18n/utils';
 import type { CompassCopy } from '../../../content/pages/compass/types';
+import { LEAD_SOURCES, LEAD_SOURCE_DETAIL_MAX, type LeadSource } from '../../../lib/lead-source';
 
 interface Props {
   copy: CompassCopy;
@@ -45,6 +46,7 @@ const js = {
   errCaptcha: c.errors.captcha,
   errRequired: c.errors.required,
   errMessage: c.errors.message,
+  errSource: c.errors.source,
   errNetwork: c.errors.network,
   success: c.success,
 };
@@ -86,6 +88,16 @@ const stageIcons = [
 ];
 
 const stepIcons = [I.chat, I.compass, I.handshake];
+
+// "How did you hear about us?" icons: search, AI, trade show stand, people, other.
+const sourceIcons: Record<LeadSource, string> = {
+  google: 'M11 18a7 7 0 100-14 7 7 0 000 14zM20 20l-4-4',
+  ai: categoryIcons[0],
+  exhibition: 'M3 9h18M5 9v11M19 9v11M3 20h18M7 4h10l2 5H5l2-5zM9 14h6',
+  referral:
+    'M9 11a4 4 0 100-8 4 4 0 000 8zM2 21v-1a7 7 0 0114 0v1M16 3.5a4 4 0 010 7M22 21v-1a7 7 0 00-4-6.3',
+  other: otherIcon,
+};
 ---
 
 <Layout title={c.title} description={c.description}>
@@ -212,6 +224,45 @@ const stepIcons = [I.chat, I.compass, I.handshake];
               ))}
             </div>
 
+            {/* How you heard about us */}
+            <fieldset class="sl-group" data-sl-group="source">
+              <legend class="sl-q">
+                {c.fields.source} <span class="sl-req" aria-hidden="true">*</span>
+              </legend>
+              <div class="sl-tiles sl-tiles--wide">
+                {LEAD_SOURCES.map((value, i) => (
+                  <label class="sl-tile">
+                    <input type="radio" name="source" value={value} required={i === 0} />
+                    <span class="sl-tile__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" class={value === 'other' ? 'sl-dots' : undefined}>
+                        <path d={sourceIcons[value]} />
+                      </svg>
+                    </span>
+                    <span class="sl-tile__label">{c.sources[value]}</span>
+                    <span class="sl-tick" aria-hidden="true">
+                      <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
+                    </span>
+                  </label>
+                ))}
+              </div>
+              {/* Shown for an exhibition, a referral or somewhere else; without JS it stays visible. */}
+              <div class="sl-source-detail" data-sl-source-detail>
+                <label class="sl-label" for="sourceDetail">{c.fields.sourceDetail}</label>
+                <div class="sl-control">
+                  <svg class="sl-control__icon" viewBox="0 0 24 24" aria-hidden="true"><path d={I.chat} /></svg>
+                  <input
+                    class="sl-input"
+                    type="text"
+                    id="sourceDetail"
+                    name="sourceDetail"
+                    maxlength={LEAD_SOURCE_DETAIL_MAX}
+                    placeholder={c.fields.sourceDetailPlaceholder}
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
             {/* honeypot, bots fill this, humans don't see it */}
             <div class="form__honeypot" aria-hidden="true">
               <label for="website_url">{c.fields.honeypot}</label>
@@ -314,6 +365,7 @@ const stepIcons = [I.chat, I.compass, I.handshake];
         name: !!v('name'),
         email: emailOk(v('email')),
         company: !!v('company'),
+        source: !!v('source'),
         captcha: !!v('captcha'),
       };
     }
@@ -355,6 +407,19 @@ const stepIcons = [I.chat, I.compass, I.handshake];
     form.addEventListener('change', paint);
     paint();
 
+    // The "Which one?" box only shows for an exhibition, a referral or somewhere else.
+    const sourceDetailBox = form.querySelector('[data-sl-source-detail]');
+    const sourceDetail = document.getElementById('sourceDetail');
+    function syncSourceDetail() {
+      const picked = form.querySelector('input[name="source"]:checked')?.value;
+      const show = picked === 'exhibition' || picked === 'referral' || picked === 'other';
+      if (!sourceDetailBox) return;
+      sourceDetailBox.hidden = !show;
+      if (!show && sourceDetail) sourceDetail.value = '';
+    }
+    form.querySelectorAll('input[name="source"]').forEach((r) => r.addEventListener('change', syncSourceDetail));
+    syncSourceDetail();
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       status.textContent = '';
@@ -367,7 +432,7 @@ const stepIcons = [I.chat, I.compass, I.handshake];
       const stage = String(data.get('stage') || '').trim();
 
       const payload = {
-        source: 'Compass shortlist',
+        form: 'Compass shortlist',
         name: String(data.get('name') || '').trim(),
         email: String(data.get('email') || '').trim(),
         company: String(data.get('company') || '').trim(),
@@ -376,6 +441,8 @@ const stepIcons = [I.chat, I.compass, I.handshake];
         budget: '',
         profile: stage,
         message: String(data.get('message') || '').trim(),
+        source: String(data.get('source') || '').trim(),
+        sourceDetail: String(data.get('sourceDetail') || '').trim(),
         captcha: String(data.get('captcha') || '').trim(),
         captchaExpected: String(form.dataset.captchaSum || ''),
       };
@@ -390,6 +457,12 @@ const stepIcons = [I.chat, I.compass, I.handshake];
         status.textContent = js.errMessage;
         status.classList.add('sl-status--error');
         flagMissing(['message']);
+        return;
+      }
+      if (!payload.source) {
+        status.textContent = js.errSource;
+        status.classList.add('sl-status--error');
+        flagMissing(['source']);
         return;
       }
 
@@ -420,6 +493,7 @@ const stepIcons = [I.chat, I.compass, I.handshake];
         form.reset();
         rollCaptcha();
         paint();
+        syncSourceDetail();
         status.textContent = js.success;
         status.classList.add('sl-status--success');
         window.location.assign(js.thankYou);
@@ -736,6 +810,16 @@ const stepIcons = [I.chat, I.compass, I.handshake];
     font-weight: 600;
     line-height: 1.3;
     color: var(--bbg-ink);
+  }
+  /* Source answers run longer than category names: two to a row. */
+  .sl-tiles--wide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sl-source-detail {
+    margin-top: var(--space-4);
+  }
+  .sl-source-detail[hidden] {
+    display: none;
   }
   .sl-tile:has(input:checked) {
     border-color: var(--sl-red);
@@ -1196,6 +1280,14 @@ const stepIcons = [I.chat, I.compass, I.handshake];
     .sl-tick {
       top: 8px;
       right: 8px;
+    }
+    .sl-tiles--wide {
+      grid-template-columns: 1fr;
+    }
+    .sl-tiles--wide .sl-tile {
+      flex-direction: row;
+      align-items: center;
+      padding-right: 2.25rem;
     }
   }
 
