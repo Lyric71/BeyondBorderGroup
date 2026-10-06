@@ -313,4 +313,4 @@ stand, ces documents ne vous rapporteront le plus souvent qu'une carte de
 visite. Pour les visiteurs de la CIIE, les inscriptions ferment le
 20 octobre 2026.
 
-[Recevez une liste courte Compass des distributeurs à rencontrer sur le salon](/fr/compass/demander-sa-liste)
+[Recevez une liste courte Compass des distributeurs à rencontrer sur le salon](/fr/nous-contacter#shortlist)

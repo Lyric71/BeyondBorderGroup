@@ -329,4 +329,4 @@ to the contract. If a current distributor refuses, ship less and base each
 order on the stock and sell-out it can show you. A distributor that hides
 its stock position has a reason.
 
-[Ask Compass for a shortlist of vetted distributors for your category](/compass/shortlist)
+[Ask Compass for a shortlist of vetted distributors for your category](/contact#shortlist)

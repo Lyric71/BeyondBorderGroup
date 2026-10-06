@@ -192,4 +192,4 @@ Nicht über einen vertraglichen Preis. Chinas Antimonopolgesetz verbietet Verein
 
 Machen Sie es vor der Unterschrift zur Bedingung und legen Sie die Berichtsvorlage dem Vertrag bei. Verweigert ein bestehender Distributor die Daten, liefern Sie weniger und richten jede Bestellung nach dem Bestand und dem Abverkauf aus, die er Ihnen nachweisen kann. Ein Distributor, der seine Bestände verschweigt, hat einen Grund dafür.
 
-[Fordern Sie bei Compass eine Shortlist geprüfter Distributoren für Ihre Kategorie an](/de/compass/liste-anfordern)
+[Fordern Sie bei Compass eine Shortlist geprüfter Distributoren für Ihre Kategorie an](/de/kontakt#shortlist)

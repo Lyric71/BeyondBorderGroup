@@ -86,4 +86,4 @@ A una tienda nueva le conviene dividir su catálogo: inscribir las líneas que n
 
 Si un distribuidor gestiona la tienda por usted, pídale la lista de referencias inscritas antes del 9 de octubre. Su descuento se convertirá durante las próximas cinco semanas en el precio de su marca en China. Fije ese precio antes, dentro de su estrategia de [comercio social](/es/crecer-en-china/comercio-social).
 
-[Solicite una lista de distribuidores chinos verificados](/es/compass/solicitar-la-lista)
+[Solicite una lista de distribuidores chinos verificados](/es/contacto#shortlist)

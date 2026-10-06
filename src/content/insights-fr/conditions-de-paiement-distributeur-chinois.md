@@ -289,4 +289,4 @@ dans son pays, auprès d'un organisme de crédit à l'exportation ou d'un
 assureur-crédit privé, et c'est cet assureur qui décide de l'encours
 accordé au distributeur.
 
-[Demandez à Compass une liste courte de distributeurs vérifiés dans votre catégorie](/fr/compass/demander-sa-liste)
+[Demandez à Compass une liste courte de distributeurs vérifiés dans votre catégorie](/fr/nous-contacter#shortlist)

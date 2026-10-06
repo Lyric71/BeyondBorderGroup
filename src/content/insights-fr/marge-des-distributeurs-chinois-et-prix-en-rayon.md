@@ -393,4 +393,4 @@ payants. Aux valeurs par défaut de la première année dans notre
 calculateur, le fromage de cet article rapporte à la marque 20,15 RMB en
 transfrontalier, contre 24 RMB départ usine en commerce général.
 
-[Recevez une liste courte Compass de distributeurs qui fixent leurs prix à partir du rayon](/fr/compass/demander-sa-liste)
+[Recevez une liste courte Compass de distributeurs qui fixent leurs prix à partir du rayon](/fr/nous-contacter#shortlist)

@@ -266,4 +266,4 @@ cuenta de la tienda.
 Con el modelo decidido, [Compass](/es/compass) localiza a los socios que
 trabajan su categoría con esa fórmula.
 
-[Pida una lista de Tmall Partners que trabajan su categoría en el modelo que usted quiere](/es/compass/solicitar-la-lista)
+[Pida una lista de Tmall Partners que trabajan su categoría en el modelo que usted quiere](/es/contacto#shortlist)

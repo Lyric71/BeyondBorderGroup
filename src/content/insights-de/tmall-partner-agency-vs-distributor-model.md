@@ -271,4 +271,4 @@ Unterschrift, wer das Shopkonto hält.
 Steht das Modell fest, findet [Compass](/de/compass) die Partner, die Ihre
 Kategorie nach genau diesem Modell betreuen.
 
-[Liste der Tmall Partners anfordern, die Ihre Kategorie im gewünschten Modell betreuen](/de/compass/liste-anfordern)
+[Liste der Tmall Partners anfordern, die Ihre Kategorie im gewünschten Modell betreuen](/de/kontakt#shortlist)

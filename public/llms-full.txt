@@ -1,6 +1,6 @@
 # TheChinaPath — Insights (full text)
 
-> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-05.
+> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-06.
 
 ---
 # 11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event
@@ -349,7 +349,7 @@ are all about export. It is useful to a Chinese manufacturer, not to a
 European or American brand looking for Chinese buyers.
 
 If you want a vetted shortlist of the operators who could actually run your
-category in China, [request a Compass shortlist](/compass/shortlist).
+category in China, [request a Compass shortlist](/contact#shortlist).
 
 ---
 # ai-brand-micro-drama-china
@@ -2060,7 +2060,7 @@ domestic responsible person. The handover is a clean cut, so set the date
 around your shipping calendar.
 
 If your filings sit with a partner you're thinking of replacing,
-[request a Compass shortlist](/compass/shortlist) of distributors for your
+[request a Compass shortlist](/contact#shortlist) of distributors for your
 category.
 
 ---
@@ -2739,7 +2739,7 @@ paid media. At our calculator's year-one defaults, the cheese wedge in this
 piece brings the brand 20.15 RMB cross-border against 24 RMB ex-works in
 general trade.
 
-[Get a Compass shortlist of distributors who will price from the shelf](/compass/shortlist)
+[Get a Compass shortlist of distributors who will price from the shelf](/contact#shortlist)
 
 ---
 # China distributor price control: a clause that held
@@ -2938,7 +2938,7 @@ Big enough to hurt, small enough to defend. Chinese courts can cut a penalty
 that runs more than 30% above your provable loss, so keep records of what a
 leak costs you, lost reorders above all.
 
-[Ask Compass for a shortlist of vetted distributors in your category](/compass/shortlist)
+[Ask Compass for a shortlist of vetted distributors in your category](/contact#shortlist)
 
 ---
 # China distributor vs own store: honest comparison
@@ -3265,7 +3265,7 @@ the cross-border store online. The contract has to split the channels and
 set a shared price floor, otherwise a flagship promotion undercuts the
 distributor's shelf the same week.
 
-[Brief us on your category and get a distributor shortlist in two to three weeks](/compass/shortlist)
+[Brief us on your category and get a distributor shortlist in two to three weeks](/contact#shortlist)
 
 ---
 # china-e-commerce-platforms-2025
@@ -4770,7 +4770,7 @@ brand sheet and price list before the show comes ready to talk terms. Show it
 for the first time on the stand and you’ll mostly get a card back. For CIIE
 visitors, registration closes on October 20, 2026.
 
-[Get a Compass shortlist of distributors worth meeting at the fair](/compass/shortlist)
+[Get a Compass shortlist of distributors worth meeting at the fair](/contact#shortlist)
 
 ---
 # chinas-ai-powered-commerce-trends-and-innovations-to-watch
@@ -7133,7 +7133,7 @@ cross-border orders, under Douyin's settlement rules. A refund inside the
 after-sale period cancels the commission, and any amount already paid is
 clawed back. Ask your agency to be paid on the same clock.
 
-[Get a shortlist of Douyin Partners that sell in your category](/compass/shortlist)
+[Get a shortlist of Douyin Partners that sell in your category](/contact#shortlist)
 
 ---
 # douyin-live-commerce-2025-store-led-livestream-strategy
@@ -7631,7 +7631,7 @@ on sales after refunds and returns, taken from the backend once the after-sale
 window closes. At 50% returns on RMB 2 million of sales, that's RMB 50,000 a
 year less at a 5% rate.
 
-[Get a shortlist of Douyin Partners that sell in your category](/compass/shortlist)
+[Get a shortlist of Douyin Partners that sell in your category](/contact#shortlist)
 
 ---
 # Douyin store vs Douyin ads: which one you actually need
@@ -8365,7 +8365,7 @@ is the sequence Allbirds ran backwards.
 
 If you are choosing between running your own China entity and licensing
 a distributor who already has one, [request a Compass
-shortlist](/compass/shortlist) and we will come back with vetted partners for
+shortlist](/contact#shortlist) and we will come back with vetted partners for
 your category.
 
 ---
@@ -8905,7 +8905,7 @@ data, September 2026).
 
 If you're deciding whether to build your own China entity or start
 with a partner who already runs stores, [request a Compass
-shortlist](/compass/shortlist) and we'll come back with vetted partners for
+shortlist](/contact#shortlist) and we'll come back with vetted partners for
 your category.
 
 ---
@@ -10917,7 +10917,7 @@ from a company registered in China. A brand exporting from Europe or the US buys
 its policy at home, from an export credit agency or a private credit insurer,
 and that insurer decides how much credit the distributor gets.
 
-[Ask Compass for a shortlist of vetted distributors in your category](/compass/shortlist)
+[Ask Compass for a shortlist of vetted distributors in your category](/contact#shortlist)
 
 ---
 # pipl-compliance-in-china-diors-wake-up-call-for-global-brands
@@ -11350,7 +11350,7 @@ transferred. Plan for the new partner to open its own store under your
 authorization.
 
 If you're lining up a replacement before you give notice,
-[request a Compass shortlist](/compass/shortlist) of distributors for your
+[request a Compass shortlist](/contact#shortlist) of distributors for your
 category.
 
 ---
@@ -11759,7 +11759,7 @@ to the contract. If a current distributor refuses, ship less and base each
 order on the stock and sell-out it can show you. A distributor that hides
 its stock position has a reason.
 
-[Ask Compass for a shortlist of vetted distributors for your category](/compass/shortlist)
+[Ask Compass for a shortlist of vetted distributors for your category](/contact#shortlist)
 
 ---
 # social-commerce-china-platforms-strategies-best-practices
@@ -13155,7 +13155,7 @@ fake-order operations. For a brand, the likelier bill is administrative: a
 fine that goes on the public credit record, plus whatever the platform does
 to the store.
 
-[Get a shortlist of Tmall and Douyin Partners we've vetted](/compass/shortlist)
+[Get a shortlist of Tmall and Douyin Partners we've vetted](/contact#shortlist)
 
 ---
 # tmall-global-2025-overseas-brands
@@ -13508,7 +13508,7 @@ the store account before you sign.
 Once you know the model, [Compass](/compass) finds the partners that run your
 category that way.
 
-[Get a shortlist of Tmall Partners that run your category, in the model you want](/compass/shortlist)
+[Get a shortlist of Tmall Partners that run your category, in the model you want](/contact#shortlist)
 
 ---
 # Tmall Partner contract terms that decide your exit
@@ -13806,7 +13806,7 @@ exports, chat transcripts, product content and the ad structure. Shopper
 personal information goes the other way. Under the Personal Information
 Protection Law, the TP must return or delete it.
 
-[Get a shortlist of Tmall Partners that run stores in your category](/compass/shortlist)
+[Get a shortlist of Tmall Partners that run stores in your category](/contact#shortlist)
 
 ---
 # Tmall and Douyin partner ratings: what they mean
@@ -14054,7 +14054,7 @@ build a long list, then cut it on category experience, the named team and
 the stores you can open yourself. An unrated specialist with the right
 stores can beat a Diamond with none in your category.
 
-[Get a Compass shortlist of partners already running stores in your category](/compass/shortlist)
+[Get a Compass shortlist of partners already running stores in your category](/contact#shortlist)
 
 ---
 # Who owns your Tmall store when a partner runs it
@@ -14373,7 +14373,7 @@ company. A domestic Tmall store or a domestic Douyin shop needs a Chinese
 business license. If you sell domestically before you have one, agree
 in writing on the date and process for moving the store into your entity.
 
-[Ask Compass for a shortlist of partners who open stores in your name](/compass/shortlist)
+[Ask Compass for a shortlist of partners who open stores in your name](/contact#shortlist)
 
 ---
 # top-5-video-and-livestreaming-platforms-in-china
@@ -16003,7 +16003,7 @@ Registration data goes back to founding. Market-regulation penalties drop
 off GSXT after three years, or three months for small fines. Court judgments
 go back years, but coverage varies by year and mediated cases never appear.
 
-[Get a Compass shortlist of vetted distributors for your category](/compass/shortlist)
+[Get a Compass shortlist of vetted distributors for your category](/contact#shortlist)
 
 ---
 # wechat-pay-vs-alipay-best-mobile-payment-for-ecommerce
@@ -16240,7 +16240,7 @@ If a distributor runs the store for you, ask for the list of entered SKUs before
 October 9. Their markdown becomes your brand’s price in China for the next five
 weeks. Agree that price inside your [social commerce](/grow-in-china/social-commerce) plan first.
 
-[Get a shortlist of vetted China distributors](/compass/shortlist)
+[Get a shortlist of vetted China distributors](/contact#shortlist)
 
 ---
 # weibo-marketing-guide-mastering-social-commerce-in-china

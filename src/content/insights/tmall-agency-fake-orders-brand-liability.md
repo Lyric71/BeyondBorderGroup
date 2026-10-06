@@ -238,4 +238,4 @@ fake-order operations. For a brand, the likelier bill is administrative: a
 fine that goes on the public credit record, plus whatever the platform does
 to the store.
 
-[Get a shortlist of Tmall and Douyin Partners we've vetted](/compass/shortlist)
+[Get a shortlist of Tmall and Douyin Partners we've vetted](/contact#shortlist)

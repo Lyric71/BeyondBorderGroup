@@ -287,4 +287,4 @@ eigenen Land, bei einer Exportkreditagentur oder einem privaten
 Kreditversicherer, und dieser Versicherer entscheidet, wie viel Kredit der
 Distributor bekommt.
 
-[Fordern Sie bei Compass eine Shortlist geprüfter Distributoren aus Ihrer Kategorie an](/de/compass/liste-anfordern)
+[Fordern Sie bei Compass eine Shortlist geprüfter Distributoren aus Ihrer Kategorie an](/de/kontakt#shortlist)

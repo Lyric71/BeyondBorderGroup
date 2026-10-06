@@ -756,6 +756,13 @@ export default defineConfig({
     '/es/compass/que-contiene': { status: 301, destination: '/es/compass' },
     '/es/compass/como-creamos-la-lista': { status: 301, destination: '/es/compass' },
 
+    // The shortlist brief now lives on the contact page, behind its
+    // "partner shortlist" switch; the fragment opens that side.
+    '/compass/shortlist': { status: 301, destination: '/contact#shortlist' },
+    '/fr/compass/demander-sa-liste': { status: 301, destination: '/fr/nous-contacter#shortlist' },
+    '/de/compass/liste-anfordern': { status: 301, destination: '/de/kontakt#shortlist' },
+    '/es/compass/solicitar-la-lista': { status: 301, destination: '/es/contacto#shortlist' },
+
     '/china-digital-china-e-commerce-training-masterclass': {
       status: 301,
       destination: '/learn-china/masterclass',

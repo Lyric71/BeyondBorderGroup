@@ -375,4 +375,4 @@ règlement de Douyin. Un remboursement pendant la période d'après-vente
 annule la commission, et toute somme déjà versée est reprise. Demandez que
 votre agence soit payée selon le même calendrier.
 
-[Recevez une liste courte de Douyin Partners qui vendent dans votre catégorie](/fr/compass/demander-sa-liste)
+[Recevez une liste courte de Douyin Partners qui vendent dans votre catégorie](/fr/nous-contacter#shortlist)

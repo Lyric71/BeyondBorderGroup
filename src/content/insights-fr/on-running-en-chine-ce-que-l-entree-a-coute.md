@@ -229,4 +229,4 @@ Le dernier chiffre propre à la Chine figure dans le prospectus de 2021 : 5,5 
 
 Oui, dans le même ordre. On a vendu sur Tmall la plus grande partie de l'année 2019 avant d'ouvrir son premier magasin, et son réseau a surtout grossi après l'introduction en Bourse de 2021. Une marque plus petite peut sonder la même demande avec une boutique sport sur Tmall Global, pour 110 000 RMB avant la première vente, dépôt et frais annuels compris, sans société chinoise derrière (données des calculateurs TheChinaPath, septembre 2026).
 
-Vous hésitez entre créer votre propre société en Chine et démarrer avec un partenaire qui exploite déjà des magasins ? [Demandez votre liste Compass](/fr/compass/demander-sa-liste) : nous revenons vers vous avec des partenaires vérifiés pour votre catégorie.
+Vous hésitez entre créer votre propre société en Chine et démarrer avec un partenaire qui exploite déjà des magasins ? [Demandez votre liste Compass](/fr/nous-contacter#shortlist) : nous revenons vers vous avec des partenaires vérifiés pour votre catégorie.

@@ -309,4 +309,4 @@ hat, kommt bereit, über Konditionen zu sprechen. Zeigen Sie beides erst am
 Stand, bekommen Sie meist nur eine Visitenkarte zurück. Für Besucher der
 CIIE endet die Anmeldung am 20. Oktober 2026.
 
-[Holen Sie sich eine Compass-Shortlist der Distributoren, die sich auf der Messe zu treffen lohnen](/de/compass/liste-anfordern)
+[Holen Sie sich eine Compass-Shortlist der Distributoren, die sich auf der Messe zu treffen lohnen](/de/kontakt#shortlist)

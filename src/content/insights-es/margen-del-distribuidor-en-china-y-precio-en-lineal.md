@@ -387,4 +387,4 @@ valores por defecto del primer año de nuestra calculadora, la cuña de este
 artículo deja a la marca 20,15 yuanes en el canal transfronterizo, frente a
 24 yuanes en fábrica en comercio general.
 
-[Consiga una lista corta de Compass con distribuidores que fijan sus precios desde el lineal](/es/compass/solicitar-la-lista)
+[Consiga una lista corta de Compass con distribuidores que fijan sus precios desde el lineal](/es/contacto#shortlist)

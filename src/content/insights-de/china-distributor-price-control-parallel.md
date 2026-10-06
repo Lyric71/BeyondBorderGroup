@@ -126,4 +126,4 @@ Nicht per Vereinbarung, es sei denn, Sie können nachweisen, dass Sie in den Saf
 
 Hoch genug, um wehzutun, und maßvoll genug, um vor Gericht zu bestehen. Chinesische Gerichte können eine Strafe kürzen, die Ihren nachweisbaren Schaden um mehr als 30 % übersteigt. Dokumentieren Sie also, was Sie ein Leck kostet, vor allem entgangene Nachbestellungen.
 
-[Fordern Sie bei Compass eine Shortlist geprüfter Distributoren in Ihrer Kategorie an](/de/compass/liste-anfordern)
+[Fordern Sie bei Compass eine Shortlist geprüfter Distributoren in Ihrer Kategorie an](/de/kontakt#shortlist)

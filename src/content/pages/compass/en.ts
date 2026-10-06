@@ -1,5 +1,5 @@
 /**
- * English copy for /compass and the shortlist form page.
+ * English copy for /compass and the shortlist brief on the contact page.
  *
  * Ported from the Compass marketing site. Strings marked verbatim in
  * docs/restructure/content-sources.md are unchanged; the surrounding copy is
@@ -255,12 +255,6 @@ const copy: CompassCopy = {
   },
 
   shortlist: {
-    title: 'Get your China partner shortlist | Compass | TheChinaPath',
-    description:
-      'Brief us on your category and stage. We send back a shortlist of China distributors and platform partners worth meeting, usually within two to three weeks.',
-    eyebrow: 'Get your shortlist',
-    h1: 'Tell us a little about your brand.',
-    lead: 'A few quick questions to get the conversation started. The first call is short and there is no obligation on either side. A senior partner will write back inside one working day, not a form-letter from an intake bot.',
     formTitle: 'Brief us',
     fields: {
       name: 'Your name',

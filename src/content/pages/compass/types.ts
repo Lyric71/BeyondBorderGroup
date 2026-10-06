@@ -1,5 +1,5 @@
 /**
- * Copy shape for /compass and the shortlist form page, across every locale.
+ * Copy shape for /compass and the shortlist brief on the contact page, across every locale.
  *
  * The two pages share one vocabulary: the comparison table, the three steps,
  * the category list and the partner-type cards all appear on more than one
@@ -138,11 +138,6 @@ export interface CompassIndexCopy {
 }
 
 export interface ShortlistCopy {
-  title: string;
-  description: string;
-  eyebrow: string;
-  h1: string;
-  lead: string;
   formTitle: string;
   fields: {
     name: string;

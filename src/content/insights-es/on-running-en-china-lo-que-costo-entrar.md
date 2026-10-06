@@ -229,4 +229,4 @@ La última cifra exclusiva de China figura en el folleto de 2021: 5,5 millones d
 
 Sí, y en el mismo orden. On vendió en Tmall durante casi todo 2019 antes de abrir su primera tienda, y su red creció sobre todo tras la salida a bolsa de 2021. Una marca más pequeña puede sondear la misma demanda con una tienda deportiva en Tmall Global por 110.000 yuanes antes de la primera venta, entre depósito y cuota anual, sin sociedad china detrás (datos de las calculadoras de TheChinaPath, septiembre de 2026).
 
-¿Duda entre montar su propia sociedad en China o empezar con un socio que ya gestiona tiendas? [Pida su lista Compass](/es/compass/solicitar-la-lista) y volvemos con socios verificados para su categoría.
+¿Duda entre montar su propia sociedad en China o empezar con un socio que ya gestiona tiendas? [Pida su lista Compass](/es/contacto#shortlist) y volvemos con socios verificados para su categoría.

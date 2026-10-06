@@ -303,4 +303,4 @@ exports, chat transcripts, product content and the ad structure. Shopper
 personal information goes the other way. Under the Personal Information
 Protection Law, the TP must return or delete it.
 
-[Get a shortlist of Tmall Partners that run stores in your category](/compass/shortlist)
+[Get a shortlist of Tmall Partners that run stores in your category](/contact#shortlist)

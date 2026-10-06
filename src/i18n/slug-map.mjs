@@ -13,7 +13,6 @@
 export const slugMap = {
   fr: {
     '/compass': '/compass',
-    '/compass/shortlist': '/compass/demander-sa-liste',
     '/compass/find-a-distributor-in-china': '/compass/trouver-un-distributeur-en-chine',
     '/compass/find-a-tmall-partner-in-china': '/compass/trouver-un-tmall-partner-en-chine',
     '/compass/find-a-douyin-partner-in-china': '/compass/trouver-un-douyin-partner-en-chine',
@@ -53,7 +52,6 @@ export const slugMap = {
   },
   de: {
     '/compass': '/compass',
-    '/compass/shortlist': '/compass/liste-anfordern',
     '/compass/find-a-distributor-in-china': '/compass/vertriebspartner-in-china-finden',
     '/compass/find-a-tmall-partner-in-china': '/compass/tmall-partner-in-china-finden',
     '/compass/find-a-douyin-partner-in-china': '/compass/douyin-partner-in-china-finden',
@@ -93,7 +91,6 @@ export const slugMap = {
   },
   es: {
     '/compass': '/compass',
-    '/compass/shortlist': '/compass/solicitar-la-lista',
     '/cookie-policy': '/politica-de-cookies',
     '/terms-of-service': '/condiciones-de-uso',
     '/compass/find-a-distributor-in-china': '/compass/encontrar-distribuidor-en-china',

@@ -126,4 +126,4 @@ No por acuerdo, salvo que pueda demostrar que está dentro del puerto seguro de 
 
 Lo bastante alta para doler y lo bastante mesurada para defenderla. Los tribunales chinos pueden rebajar una penalización que supere en más de un 30 % el daño que usted pueda probar, así que documente lo que le cuesta una fuga, sobre todo las reposiciones perdidas.
 
-[Pida a Compass una lista corta de distribuidores verificados en su categoría](/es/compass/solicitar-la-lista)
+[Pida a Compass una lista corta de distribuidores verificados en su categoría](/es/contacto#shortlist)

@@ -244,4 +244,4 @@ are all about export. It is useful to a Chinese manufacturer, not to a
 European or American brand looking for Chinese buyers.
 
 If you want a vetted shortlist of the operators who could actually run your
-category in China, [request a Compass shortlist](/compass/shortlist).
+category in China, [request a Compass shortlist](/contact#shortlist).

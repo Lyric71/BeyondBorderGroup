@@ -1,20 +1,24 @@
 ---
 /**
- * WO-2.1 and WO-2.2 — /compass/shortlist, shared across every locale.
- * 301 target for compass.bearingbridge.com/en/contact.
+ * The Compass shortlist brief, shared across every locale. It used to be its
+ * own page at /compass/shortlist; it now sits on the contact page behind the
+ * "partner shortlist" side of ContactTopics, and the old URLs 301 there with
+ * #shortlist.
  *
  * The brief form posts to /api/contact, the site's existing handler, so
  * submissions land in the same inbox as every other enquiry and no new form
  * service is introduced. The `form` field tags it as a Compass brief on
- * arrival, and `source` carries the "How did you hear about us?" answer. Captcha, honeypot and status behaviour match /contact.astro
- * deliberately: one pattern, one set of bugs.
+ * arrival, and `source` carries the "How did you hear about us?" answer.
+ * Captcha, honeypot and status behaviour match the contact form deliberately:
+ * one pattern, one set of bugs. It shares a page with that form, so every id
+ * here carries an `sl-` prefix.
  *
- * Layout: a dark photo hero, then the brief card lifted over its bottom edge
- * with a sticky "what happens next" timeline beside it. The brief reads top to
- * bottom the way the first call does: category (icon tiles), stage (choice
- * cards), the problem, who you are, then how you heard about us. A thin bar on the card fills as the
- * required answers come in, and a missing answer is flagged on the field
- * itself as well as in the status line.
+ * Layout: the brief card with a sticky "what happens next" timeline beside it.
+ * The brief reads top to bottom the way the first call does: category (icon
+ * tiles), stage (choice cards), the problem, who you are, then how you heard
+ * about us. A thin bar on the card fills as the required answers come in, and
+ * a missing answer is flagged on the field itself as well as in the status
+ * line.
  *
  * Every visible string comes from the locale copy object, so the four locales
  * share this markup unchanged. Category and stage icons map by position; the
@@ -24,7 +28,6 @@
  * states, the thank-you URL) are handed to it through define:vars so the
  * locale copy object drives them.
  */
-import Layout from '../../../layouts/Layout.astro';
 import { getLocaleFromUrl, localizePath } from '../../../i18n/utils';
 import type { CompassCopy } from '../../../content/pages/compass/types';
 import { LEAD_SOURCES, LEAD_SOURCE_DETAIL_MAX, type LeadSource } from '../../../lib/lead-source';
@@ -100,235 +103,213 @@ const sourceIcons: Record<LeadSource, string> = {
 };
 ---
 
-<Layout title={c.title} description={c.description}>
-  <div class="sl" data-sl>
-    {/* ---------- Hero ---------- */}
-    <section class="sl-hero">
-      <div class="sl-hero__media" aria-hidden="true">
-        <img src="/Images/compass/compass-hero.webp" alt="" width="1536" height="1024" fetchpriority="high" />
-      </div>
-      <div class="sl-hero__glow" aria-hidden="true"></div>
-      <div class="container sl-hero__inner">
-        <span class="eyebrow eyebrow--on-dark sl-rise">{c.eyebrow}</span>
-        <h1 class="sl-hero__title sl-rise" style="--d: 80ms">{c.h1}</h1>
-        <p class="sl-hero__lead sl-rise" style="--d: 160ms">{c.lead}</p>
-        <p class="sl-hero__badge sl-rise" style="--d: 240ms">
+<div class="sl" data-sl>
+  <div class="sl-layout">
+    <div class="sl-card">
+      <div class="sl-card__bar" aria-hidden="true"><span data-sl-progress></span></div>
+      <h2 class="sl-card__title">{c.formTitle}</h2>
+
+      <form class="sl-form" id="shortlist-form" novalidate>
+        {/* Category */}
+        <fieldset class="sl-group" data-sl-group="category">
+          <legend class="sl-q">
+            {c.fields.category} <span class="sl-req" aria-hidden="true">*</span>
+          </legend>
+          <div class="sl-tiles">
+            {facts.categories.map((cat, i) => (
+              <label class="sl-tile">
+                <input type="radio" name="category" value={cat} required={i === 0} />
+                <span class="sl-tile__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d={categoryIcons[i] ?? otherIcon} /></svg>
+                </span>
+                <span class="sl-tile__label">{cat}</span>
+                <span class="sl-tick" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
+                </span>
+              </label>
+            ))}
+            <label class="sl-tile">
+              <input type="radio" name="category" value="Other" />
+              <span class="sl-tile__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="sl-dots"><path d={otherIcon} /></svg>
+              </span>
+              <span class="sl-tile__label">{c.fields.categoryOther}</span>
+              <span class="sl-tick" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        {/* Stage */}
+        <fieldset class="sl-group" data-sl-group="stage">
+          <legend class="sl-q">
+            {c.fields.stage} <span class="sl-req" aria-hidden="true">*</span>
+          </legend>
+          <div class="sl-stages">
+            {c.stages.map((s, i) => (
+              <label class="sl-stage">
+                <input type="radio" name="stage" value={s} required={i === 0} />
+                <span class="sl-stage__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d={stageIcons[i % stageIcons.length]} /></svg>
+                </span>
+                <span class="sl-stage__label">{s}</span>
+                <span class="sl-tick" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
+                </span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+
+        {/* The problem */}
+        <div class="sl-group" data-sl-group="message">
+          <label class="sl-q" for="sl-message">
+            {c.fields.message} <span class="sl-req" aria-hidden="true">*</span>
+          </label>
+          <div class="sl-area">
+            <textarea
+              class="sl-input sl-input--area"
+              id="sl-message"
+              name="message"
+              rows="5"
+              placeholder={c.fields.messagePlaceholder}
+              required></textarea>
+          </div>
+        </div>
+
+        {/* Who you are */}
+        <div class="sl-grid">
+          {[
+            { id: 'name', type: 'text', auto: 'name', label: c.fields.name, icon: I.user, req: true },
+            { id: 'email', type: 'email', auto: 'email', label: c.fields.email, icon: I.mail, req: true },
+            { id: 'company', type: 'text', auto: 'organization', label: c.fields.company, icon: I.building, req: true },
+            { id: 'website', type: 'url', auto: 'url', label: c.fields.website, icon: I.globe, req: false },
+          ].map((f) => (
+            <div class="sl-group sl-field" data-sl-group={f.req ? f.id : undefined}>
+              <label class="sl-label" for={`sl-${f.id}`}>
+                {f.label} {f.req && <span class="sl-req" aria-hidden="true">*</span>}
+              </label>
+              <div class="sl-control">
+                <svg class="sl-control__icon" viewBox="0 0 24 24" aria-hidden="true"><path d={f.icon} /></svg>
+                <input
+                  class="sl-input"
+                  type={f.type as 'text' | 'email' | 'url'}
+                  id={`sl-${f.id}`}
+                  name={f.id}
+                  autocomplete={f.auto}
+                  placeholder={f.id === 'website' ? 'https://' : undefined}
+                  required={f.req}
+                />
+                <svg class="sl-control__ok" viewBox="0 0 24 24" aria-hidden="true"><path d={I.check} /></svg>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* How you heard about us */}
+        <fieldset class="sl-group" data-sl-group="source">
+          <legend class="sl-q">
+            {c.fields.source} <span class="sl-req" aria-hidden="true">*</span>
+          </legend>
+          <div class="sl-tiles sl-tiles--wide">
+            {LEAD_SOURCES.map((value, i) => (
+              <label class="sl-tile">
+                <input type="radio" name="source" value={value} required={i === 0} />
+                <span class="sl-tile__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" class={value === 'other' ? 'sl-dots' : undefined}>
+                    <path d={sourceIcons[value]} />
+                  </svg>
+                </span>
+                <span class="sl-tile__label">{c.sources[value]}</span>
+                <span class="sl-tick" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
+                </span>
+              </label>
+            ))}
+          </div>
+          {/* Shown for an exhibition, a referral or somewhere else; without JS it stays visible. */}
+          <div class="sl-source-detail" data-sl-source-detail>
+            <label class="sl-label" for="sl-sourceDetail">{c.fields.sourceDetail}</label>
+            <div class="sl-control">
+              <svg class="sl-control__icon" viewBox="0 0 24 24" aria-hidden="true"><path d={I.chat} /></svg>
+              <input
+                class="sl-input"
+                type="text"
+                id="sl-sourceDetail"
+                name="sourceDetail"
+                maxlength={LEAD_SOURCE_DETAIL_MAX}
+                placeholder={c.fields.sourceDetailPlaceholder}
+                autocomplete="off"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        {/* honeypot, bots fill this, humans don't see it */}
+        <div class="form__honeypot" aria-hidden="true">
+          <label for="sl-website_url">{c.fields.honeypot}</label>
+          <input type="text" id="sl-website_url" name="website_url" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="sl-foot">
+          <div class="sl-group sl-captcha" data-sl-group="captcha">
+            <span class="sl-captcha__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d={I.bot} /></svg>
+            </span>
+            <label class="sl-captcha__label" for="sl-captcha">
+              {c.fields.captchaBefore}<strong><span id="sl-captchaA">?</span> + <span id="sl-captchaB">?</span></strong
+              >{c.fields.captchaAfter}
+              <span class="sl-req" aria-hidden="true">*</span>
+            </label>
+            <input
+              class="sl-input sl-input--captcha"
+              type="text"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              id="sl-captcha"
+              name="captcha"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <button type="submit" class="sl-submit" id="shortlist-submit">
+            <span data-sl-submit-label>{c.submit}</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.arrow} /></svg>
+          </button>
+        </div>
+
+        <p class="sl-consent">{c.consent}</p>
+        <p class="sl-status" id="shortlist-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    {/* What happens next */}
+    <aside class="sl-aside">
+      <div class="sl-aside__card">
+        <span class="eyebrow eyebrow--on-dark">{c.asideEyebrow}</span>
+        <h2 class="sl-aside__title">{c.asideTitle}</h2>
+        <ol class="sl-timeline" role="list">
+          {facts.steps.items.map((step, i) => (
+            <li class="sl-timeline__item">
+              <span class="sl-timeline__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d={stepIcons[i % stepIcons.length]} /></svg>
+              </span>
+              <div>
+                <p class="sl-timeline__label">{step.label}</p>
+                <p class="sl-timeline__body">{step.body}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <p class="sl-aside__promise">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.shield} /></svg>
           {facts.noCommission}
         </p>
       </div>
-    </section>
-
-    {/* ---------- Brief + what happens next ---------- */}
-    <section class="sl-body">
-      <div class="container sl-layout">
-        <div class="sl-card sl-rise" style="--d: 200ms">
-          <div class="sl-card__bar" aria-hidden="true"><span data-sl-progress></span></div>
-          <h2 class="sl-card__title">{c.formTitle}</h2>
-
-          <form class="sl-form" id="shortlist-form" novalidate>
-            {/* Category */}
-            <fieldset class="sl-group" data-sl-group="category">
-              <legend class="sl-q">
-                {c.fields.category} <span class="sl-req" aria-hidden="true">*</span>
-              </legend>
-              <div class="sl-tiles">
-                {facts.categories.map((cat, i) => (
-                  <label class="sl-tile">
-                    <input type="radio" name="category" value={cat} required={i === 0} />
-                    <span class="sl-tile__icon" aria-hidden="true">
-                      <svg viewBox="0 0 24 24"><path d={categoryIcons[i] ?? otherIcon} /></svg>
-                    </span>
-                    <span class="sl-tile__label">{cat}</span>
-                    <span class="sl-tick" aria-hidden="true">
-                      <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
-                    </span>
-                  </label>
-                ))}
-                <label class="sl-tile">
-                  <input type="radio" name="category" value="Other" />
-                  <span class="sl-tile__icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" class="sl-dots"><path d={otherIcon} /></svg>
-                  </span>
-                  <span class="sl-tile__label">{c.fields.categoryOther}</span>
-                  <span class="sl-tick" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
-                  </span>
-                </label>
-              </div>
-            </fieldset>
-
-            {/* Stage */}
-            <fieldset class="sl-group" data-sl-group="stage">
-              <legend class="sl-q">
-                {c.fields.stage} <span class="sl-req" aria-hidden="true">*</span>
-              </legend>
-              <div class="sl-stages">
-                {c.stages.map((s, i) => (
-                  <label class="sl-stage">
-                    <input type="radio" name="stage" value={s} required={i === 0} />
-                    <span class="sl-stage__icon" aria-hidden="true">
-                      <svg viewBox="0 0 24 24"><path d={stageIcons[i % stageIcons.length]} /></svg>
-                    </span>
-                    <span class="sl-stage__label">{s}</span>
-                    <span class="sl-tick" aria-hidden="true">
-                      <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
-                    </span>
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-
-            {/* The problem */}
-            <div class="sl-group" data-sl-group="message">
-              <label class="sl-q" for="message">
-                {c.fields.message} <span class="sl-req" aria-hidden="true">*</span>
-              </label>
-              <div class="sl-area">
-                <textarea
-                  class="sl-input sl-input--area"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder={c.fields.messagePlaceholder}
-                  required></textarea>
-              </div>
-            </div>
-
-            {/* Who you are */}
-            <div class="sl-grid">
-              {[
-                { id: 'name', type: 'text', auto: 'name', label: c.fields.name, icon: I.user, req: true },
-                { id: 'email', type: 'email', auto: 'email', label: c.fields.email, icon: I.mail, req: true },
-                { id: 'company', type: 'text', auto: 'organization', label: c.fields.company, icon: I.building, req: true },
-                { id: 'website', type: 'url', auto: 'url', label: c.fields.website, icon: I.globe, req: false },
-              ].map((f) => (
-                <div class="sl-group sl-field" data-sl-group={f.req ? f.id : undefined}>
-                  <label class="sl-label" for={f.id}>
-                    {f.label} {f.req && <span class="sl-req" aria-hidden="true">*</span>}
-                  </label>
-                  <div class="sl-control">
-                    <svg class="sl-control__icon" viewBox="0 0 24 24" aria-hidden="true"><path d={f.icon} /></svg>
-                    <input
-                      class="sl-input"
-                      type={f.type as 'text' | 'email' | 'url'}
-                      id={f.id}
-                      name={f.id}
-                      autocomplete={f.auto}
-                      placeholder={f.id === 'website' ? 'https://' : undefined}
-                      required={f.req}
-                    />
-                    <svg class="sl-control__ok" viewBox="0 0 24 24" aria-hidden="true"><path d={I.check} /></svg>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* How you heard about us */}
-            <fieldset class="sl-group" data-sl-group="source">
-              <legend class="sl-q">
-                {c.fields.source} <span class="sl-req" aria-hidden="true">*</span>
-              </legend>
-              <div class="sl-tiles sl-tiles--wide">
-                {LEAD_SOURCES.map((value, i) => (
-                  <label class="sl-tile">
-                    <input type="radio" name="source" value={value} required={i === 0} />
-                    <span class="sl-tile__icon" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" class={value === 'other' ? 'sl-dots' : undefined}>
-                        <path d={sourceIcons[value]} />
-                      </svg>
-                    </span>
-                    <span class="sl-tile__label">{c.sources[value]}</span>
-                    <span class="sl-tick" aria-hidden="true">
-                      <svg viewBox="0 0 24 24"><path d={I.check} /></svg>
-                    </span>
-                  </label>
-                ))}
-              </div>
-              {/* Shown for an exhibition, a referral or somewhere else; without JS it stays visible. */}
-              <div class="sl-source-detail" data-sl-source-detail>
-                <label class="sl-label" for="sourceDetail">{c.fields.sourceDetail}</label>
-                <div class="sl-control">
-                  <svg class="sl-control__icon" viewBox="0 0 24 24" aria-hidden="true"><path d={I.chat} /></svg>
-                  <input
-                    class="sl-input"
-                    type="text"
-                    id="sourceDetail"
-                    name="sourceDetail"
-                    maxlength={LEAD_SOURCE_DETAIL_MAX}
-                    placeholder={c.fields.sourceDetailPlaceholder}
-                    autocomplete="off"
-                  />
-                </div>
-              </div>
-            </fieldset>
-
-            {/* honeypot, bots fill this, humans don't see it */}
-            <div class="form__honeypot" aria-hidden="true">
-              <label for="website_url">{c.fields.honeypot}</label>
-              <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off" />
-            </div>
-
-            <div class="sl-foot">
-              <div class="sl-group sl-captcha" data-sl-group="captcha">
-                <span class="sl-captcha__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><path d={I.bot} /></svg>
-                </span>
-                <label class="sl-captcha__label" for="captcha">
-                  {c.fields.captchaBefore}<strong><span id="captchaA">?</span> + <span id="captchaB">?</span></strong
-                  >{c.fields.captchaAfter}
-                  <span class="sl-req" aria-hidden="true">*</span>
-                </label>
-                <input
-                  class="sl-input sl-input--captcha"
-                  type="text"
-                  inputmode="numeric"
-                  pattern="[0-9]*"
-                  id="captcha"
-                  name="captcha"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-              <button type="submit" class="sl-submit" id="shortlist-submit">
-                <span data-sl-submit-label>{c.submit}</span>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.arrow} /></svg>
-              </button>
-            </div>
-
-            <p class="sl-consent">{c.consent}</p>
-            <p class="sl-status" id="shortlist-status" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-
-        {/* What happens next */}
-        <aside class="sl-aside sl-rise" style="--d: 300ms">
-          <div class="sl-aside__card">
-            <span class="eyebrow eyebrow--on-dark">{c.asideEyebrow}</span>
-            <h2 class="sl-aside__title">{c.asideTitle}</h2>
-            <ol class="sl-timeline" role="list">
-              {facts.steps.items.map((step, i) => (
-                <li class="sl-timeline__item">
-                  <span class="sl-timeline__icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d={stepIcons[i % stepIcons.length]} /></svg>
-                  </span>
-                  <div>
-                    <p class="sl-timeline__label">{step.label}</p>
-                    <p class="sl-timeline__body">{step.body}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-            <p class="sl-aside__promise">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.shield} /></svg>
-              {facts.noCommission}
-            </p>
-          </div>
-        </aside>
-      </div>
-    </section>
+    </aside>
   </div>
-</Layout>
+</div>
 
 <script is:inline define:vars={{ js }}>
   (function () {
@@ -337,9 +318,9 @@ const sourceIcons: Record<LeadSource, string> = {
     const status = document.getElementById('shortlist-status');
     const submit = document.getElementById('shortlist-submit');
     const submitLabel = submit.querySelector('[data-sl-submit-label]');
-    const captchaA = document.getElementById('captchaA');
-    const captchaB = document.getElementById('captchaB');
-    const captchaInput = document.getElementById('captcha');
+    const captchaA = document.getElementById('sl-captchaA');
+    const captchaB = document.getElementById('sl-captchaB');
+    const captchaInput = document.getElementById('sl-captcha');
     const bar = document.querySelector('[data-sl-progress]');
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -409,7 +390,7 @@ const sourceIcons: Record<LeadSource, string> = {
 
     // The "Which one?" box only shows for an exhibition, a referral or somewhere else.
     const sourceDetailBox = form.querySelector('[data-sl-source-detail]');
-    const sourceDetail = document.getElementById('sourceDetail');
+    const sourceDetail = document.getElementById('sl-sourceDetail');
     function syncSourceDetail() {
       const picked = form.querySelector('input[name="source"]:checked')?.value;
       const show = picked === 'exhibition' || picked === 'referral' || picked === 'other';
@@ -517,7 +498,6 @@ const sourceIcons: Record<LeadSource, string> = {
     --sl-red-soft: #ff6b7f;
     --sl-green: #1f7a55;
     --sl-ease: cubic-bezier(0.22, 1, 0.36, 1);
-    --sl-lift: clamp(96px, 12vw, 150px);
   }
   .sl svg {
     fill: none;
@@ -527,116 +507,12 @@ const sourceIcons: Record<LeadSource, string> = {
     stroke-linejoin: round;
   }
 
-  /* ---------- Entrance ---------- */
-  /* CSS only, so the form never waits on a script to become visible. */
-  .sl-rise {
-    animation: sl-rise 700ms var(--sl-ease) var(--d, 0ms) both;
-  }
-  @keyframes sl-rise {
-    from {
-      opacity: 0;
-      translate: 0 18px;
-    }
-  }
-
-  /* ---------- Hero ---------- */
-  .sl-hero {
-    position: relative;
-    isolation: isolate;
-    overflow: clip;
-    background: var(--sl-ink);
-    color: #fff;
-    padding: clamp(3.5rem, 7vw, 6rem) 0 calc(var(--sl-lift) + clamp(2.5rem, 5vw, 4rem));
-  }
-  .sl-hero__media {
-    position: absolute;
-    inset: 0 0 0 auto;
-    width: min(62%, 1000px);
-    z-index: -2;
-    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 45%);
-    mask-image: linear-gradient(90deg, transparent 0%, #000 45%);
-  }
-  .sl-hero__media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 60% 40%;
-    filter: grayscale(0.35) brightness(0.62);
-    animation: sl-drift 24s ease-in-out infinite alternate;
-  }
-  @keyframes sl-drift {
-    from {
-      transform: scale(1.04);
-    }
-    to {
-      transform: scale(1.12) translateX(-1.5%);
-    }
-  }
-  .sl-hero__glow {
-    position: absolute;
-    z-index: -1;
-    left: -12%;
-    bottom: -45%;
-    width: 60%;
-    aspect-ratio: 1;
-    background: radial-gradient(circle, rgba(200, 16, 46, 0.4), transparent 62%);
-    pointer-events: none;
-  }
-  .sl-hero__inner {
-    position: relative;
-  }
-  .sl-hero__title {
-    max-width: 16ch;
-    margin: var(--space-3) 0 var(--space-5);
-    color: #fff;
-    font-size: clamp(2.375rem, 4.6vw + 0.6rem, 4.25rem);
-    line-height: 1.02;
-    letter-spacing: -0.03em;
-    text-wrap: balance;
-  }
-  .sl-hero__lead {
-    max-width: 38rem;
-    margin: 0 0 var(--space-5);
-    font-size: clamp(1.0625rem, 0.5vw + 0.95rem, 1.25rem);
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.82);
-  }
-  .sl-hero__badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    margin: 0;
-    padding: 0.5rem 1rem 0.5rem 0.75rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    font-size: var(--fs-small);
-    font-weight: 600;
-    color: #fff;
-  }
-  .sl-hero__badge svg {
-    width: 18px;
-    height: 18px;
-    color: var(--sl-red-soft);
-  }
-
   /* ---------- Layout ---------- */
-  .sl-body {
-    position: relative;
-    /* flow-root keeps the layout's negative margin from collapsing through,
-       so the card really does lift over the hero. */
-    display: flow-root;
-    padding-bottom: clamp(4rem, 8vw, 7rem);
-    background: var(--bbg-surface);
-  }
   .sl-layout {
     display: grid;
     grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.9fr);
     gap: clamp(1.5rem, 3.5vw, 2.75rem);
     align-items: start;
-    margin-top: calc(var(--sl-lift) * -1);
   }
 
   /* ---------- Brief card ---------- */
@@ -1139,14 +1015,17 @@ const sourceIcons: Record<LeadSource, string> = {
     position: sticky;
     top: calc(var(--nav-h) + var(--space-4));
     z-index: 1;
-    margin-top: calc(var(--sl-lift) + var(--space-5));
   }
+  /* Glass on the contact page's dark photo, so it reads as part of the scene. */
   .sl-aside__card {
     padding: clamp(1.5rem, 3vw, 2rem);
     border-radius: 24px;
     background:
-      radial-gradient(120% 70% at 100% 0%, rgba(200, 16, 46, 0.3), transparent 60%),
-      var(--sl-ink);
+      radial-gradient(120% 70% at 100% 0%, rgba(200, 16, 46, 0.22), transparent 60%),
+      rgba(17, 17, 19, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     color: rgba(255, 255, 255, 0.78);
     box-shadow: 0 50px 90px -50px rgba(17, 17, 19, 0.7);
   }
@@ -1232,16 +1111,9 @@ const sourceIcons: Record<LeadSource, string> = {
     }
     .sl-aside {
       position: static;
-      margin-top: 0;
     }
   }
   @media (max-width: 720px) {
-    .sl-hero__media {
-      width: 100%;
-      -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
-      mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
-      opacity: 0.45;
-    }
     .sl-tiles {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -1292,8 +1164,6 @@ const sourceIcons: Record<LeadSource, string> = {
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .sl-rise,
-    .sl-hero__media img,
     .sl-group.is-missing,
     .sl-submit.is-sending svg {
       animation: none;

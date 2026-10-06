@@ -1,0 +1,281 @@
+---
+/**
+ * The contact page's two doors, shared by every locale: "a project in China"
+ * (the page's own enquiry form, passed in as the default slot) and "a partner
+ * shortlist" (the Compass brief, which used to live at /compass/shortlist and
+ * now 301s here with #shortlist).
+ *
+ * The switch is a tablist. #shortlist opens the brief, whether the visitor
+ * arrives through the old URL, an in-page link or the back button; picking a
+ * side rewrites the fragment so the URL can be shared as it stands. The script
+ * runs inline right after the markup, so a #shortlist arrival never paints the
+ * project form first.
+ */
+import ShortlistBrief from '../compass/ShortlistBrief.astro';
+import type { CompassCopy } from '../../../content/pages/compass/types';
+
+interface Tab {
+  label: string;
+  hint: string;
+}
+
+interface Props {
+  /** Accessible name of the switch. */
+  label: string;
+  project: Tab;
+  shortlist: Tab;
+  compass: CompassCopy;
+}
+
+const { label, project, shortlist, compass } = Astro.props;
+
+const icons = {
+  project: 'M21 12a8 8 0 01-12 7l-5 1 1-4a8 8 0 1116-4z',
+  shortlist: 'M12 21a9 9 0 100-18 9 9 0 000 18zM15.5 8.5l-2 5-5 2 2-5 5-2z',
+};
+const tabs = [
+  { key: 'project', ...project, icon: icons.project },
+  { key: 'shortlist', ...shortlist, icon: icons.shortlist },
+];
+---
+
+<div class="ct" data-ct data-active="project">
+  <div class="ct-tabs" role="tablist" aria-label={label}>
+    <span class="ct-tabs__thumb" aria-hidden="true"></span>
+    {
+      tabs.map((t, i) => (
+        <button
+          type="button"
+          class="ct-tab"
+          role="tab"
+          id={`ct-tab-${t.key}`}
+          aria-controls={t.key}
+          aria-selected={i === 0 ? 'true' : 'false'}
+          tabindex={i === 0 ? 0 : -1}
+          data-ct-tab={t.key}
+        >
+          <span class="ct-tab__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d={t.icon} />
+            </svg>
+          </span>
+          <span class="ct-tab__text">
+            <span class="ct-tab__label">{t.label}</span>
+            <span class="ct-tab__hint">{t.hint}</span>
+          </span>
+        </button>
+      ))
+    }
+  </div>
+
+  <div class="ct-panel" role="tabpanel" id="project" aria-labelledby="ct-tab-project">
+    <slot />
+  </div>
+  <div class="ct-panel" role="tabpanel" id="shortlist" aria-labelledby="ct-tab-shortlist" hidden>
+    <ShortlistBrief copy={compass} />
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    const root = document.querySelector('[data-ct]');
+    if (!root) return;
+    const tabs = Array.from(root.querySelectorAll('[data-ct-tab]'));
+    const keys = tabs.map((t) => t.dataset.ctTab);
+
+    function select(key, opts) {
+      if (!keys.includes(key)) key = 'project';
+      root.dataset.active = key;
+      tabs.forEach((t) => {
+        const on = t.dataset.ctTab === key;
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        const panel = document.getElementById(t.dataset.ctTab);
+        if (panel) panel.hidden = !on;
+        if (on && opts && opts.focus) t.focus();
+      });
+      if (opts && opts.writeHash) {
+        const url = key === 'project' ? location.pathname + location.search : '#' + key;
+        history.replaceState(null, '', url);
+      }
+    }
+
+    function fromHash() {
+      select(location.hash === '#shortlist' ? 'shortlist' : 'project');
+    }
+    fromHash();
+    window.addEventListener('hashchange', fromHash);
+
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => select(t.dataset.ctTab, { writeHash: true }));
+      t.addEventListener('keydown', (e) => {
+        let next = -1;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (i + 1) % tabs.length;
+        else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (i - 1 + tabs.length) % tabs.length;
+        else if (e.key === 'Home') next = 0;
+        else if (e.key === 'End') next = tabs.length - 1;
+        if (next === -1) return;
+        e.preventDefault();
+        select(keys[next], { focus: true, writeHash: true });
+      });
+    });
+  })();
+</script>
+
+<style>
+  .ct {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    /* Scroll margin so a #shortlist arrival clears the sticky nav. */
+    scroll-margin-top: calc(var(--nav-h, 80px) + var(--space-4));
+  }
+  .ct-panel {
+    scroll-margin-top: calc(var(--nav-h, 80px) + var(--space-4) + 96px);
+  }
+
+  /* ---------- Switch ---------- */
+  .ct-tabs {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    padding: 6px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.6);
+  }
+  .ct-tabs__thumb {
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 6px;
+    width: calc(50% - 9px);
+    border-radius: 15px;
+    background: var(--bbg-white);
+    box-shadow: 0 12px 28px -12px rgba(0, 0, 0, 0.55);
+    transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .ct[data-active='shortlist'] .ct-tabs__thumb {
+    transform: translateX(calc(100% + 6px));
+  }
+  .ct-tab {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    min-width: 0;
+    padding: 0.9rem 1.1rem;
+    border: 0;
+    border-radius: 15px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.86);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: color 250ms ease;
+  }
+  .ct-tab:hover {
+    color: #fff;
+  }
+  .ct-tab[aria-selected='true'] {
+    color: var(--bbg-ink);
+    cursor: default;
+  }
+  .ct-tab:focus-visible {
+    outline: 3px solid var(--bbg-blue);
+    outline-offset: 2px;
+  }
+  .ct-tab__icon {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition:
+      background 250ms ease,
+      color 250ms ease,
+      transform 350ms cubic-bezier(0.3, 1.6, 0.5, 1);
+  }
+  .ct-tab[aria-selected='true'] .ct-tab__icon {
+    background: var(--bbg-blue);
+    color: #fff;
+    transform: rotate(-6deg);
+  }
+  .ct-tab__icon svg {
+    width: 21px;
+    height: 21px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .ct-tab__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+  }
+  .ct-tab__label {
+    font-size: clamp(1rem, 0.4vw + 0.9rem, 1.1875rem);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+  .ct-tab__hint {
+    font-size: var(--fs-small);
+    line-height: 1.4;
+    opacity: 0.72;
+  }
+  .ct-tab[aria-selected='true'] .ct-tab__hint {
+    color: var(--bbg-text-muted);
+    opacity: 1;
+  }
+
+  /* ---------- Panel entrance ---------- */
+  .ct-panel:not([hidden]) {
+    animation: ct-in 450ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @keyframes ct-in {
+    from {
+      opacity: 0;
+      translate: 0 12px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .ct-tab {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.55rem;
+      padding: 0.8rem 0.85rem;
+    }
+    .ct-tab__icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+    }
+    .ct-tab__hint {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ct-tabs__thumb,
+    .ct-tab,
+    .ct-tab__icon {
+      transition: none;
+    }
+    .ct-panel:not([hidden]) {
+      animation: none;
+    }
+  }
+</style>

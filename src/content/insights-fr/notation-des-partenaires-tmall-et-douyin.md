@@ -290,4 +290,4 @@ que vous pouvez visiter vous-même. Un spécialiste non classé qui exploite
 les bonnes boutiques peut l'emporter sur un Diamond absent de votre
 catégorie.
 
-[Recevez une liste courte Compass de partenaires qui exploitent déjà des boutiques dans votre catégorie](/fr/compass/demander-sa-liste)
+[Recevez une liste courte Compass de partenaires qui exploitent déjà des boutiques dans votre catégorie](/fr/nous-contacter#shortlist)

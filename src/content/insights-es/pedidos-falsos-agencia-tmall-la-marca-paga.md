@@ -263,4 +263,4 @@ una marca, la factura más probable es administrativa: una multa que queda
 en el registro público de crédito, más lo que la plataforma decida hacer
 con la tienda.
 
-[Reciba una lista corta de Tmall Partners y Douyin Partners verificados por nosotros](/es/compass/solicitar-la-lista)
+[Reciba una lista corta de Tmall Partners y Douyin Partners verificados por nosotros](/es/contacto#shortlist)

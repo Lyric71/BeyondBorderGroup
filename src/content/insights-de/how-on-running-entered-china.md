@@ -229,4 +229,4 @@ Die letzte reine China-Zahl steht im Prospekt von 2021: 5,5 Millionen Franken f�
 
 Ja, in derselben Reihenfolge. On verkaufte 2019 die meiste Zeit über Tmall, bevor der erste Laden öffnete, und die Zahl der Läden stieg am stärksten nach dem Börsengang 2021. Eine kleinere Marke kann dieselbe Nachfrage mit einem Sportshop bei Tmall Global testen, für 110.000 Yuan vor dem ersten Verkauf, Kaution und Jahresgebühr zusammen, ohne chinesische Gesellschaft dahinter (Rechnerdaten von TheChinaPath, September 2026).
 
-Sie wägen ab, ob Sie eine eigene Gesellschaft in China aufbauen oder mit einem Partner starten, der schon Läden betreibt? [Fordern Sie Ihre Compass-Liste an](/de/compass/liste-anfordern), wir melden uns mit geprüften Partnern für Ihre Kategorie.
+Sie wägen ab, ob Sie eine eigene Gesellschaft in China aufbauen oder mit einem Partner starten, der schon Läden betreibt? [Fordern Sie Ihre Compass-Liste an](/de/kontakt#shortlist), wir melden uns mit geprüften Partnern für Ihre Kategorie.

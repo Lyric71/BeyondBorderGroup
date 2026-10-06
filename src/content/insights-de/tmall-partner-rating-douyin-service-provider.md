@@ -280,4 +280,4 @@ Kategorieerfahrung, benanntem Team und den Shops, die Sie selbst öffnen
 können. Ein Spezialist ohne Einstufung, der die richtigen Shops betreibt,
 kann einen Diamond ohne einen einzigen Shop in Ihrer Kategorie schlagen.
 
-[Holen Sie sich eine Compass-Shortlist von Partnern, die bereits Shops in Ihrer Kategorie betreiben](/de/compass/liste-anfordern)
+[Holen Sie sich eine Compass-Shortlist von Partnern, die bereits Shops in Ihrer Kategorie betreiben](/de/kontakt#shortlist)

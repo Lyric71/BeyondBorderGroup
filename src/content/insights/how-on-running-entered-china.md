@@ -342,5 +342,5 @@ data, September 2026).
 
 If you're deciding whether to build your own China entity or start
 with a partner who already runs stores, [request a Compass
-shortlist](/compass/shortlist) and we'll come back with vetted partners for
+shortlist](/contact#shortlist) and we'll come back with vetted partners for
 your category.

@@ -368,4 +368,4 @@ licencia comercial china. Si vende en el mercado nacional antes de tenerla,
 acuerde por escrito la fecha y el procedimiento para trasladar la tienda a
 su sociedad.
 
-[Pida a Compass una lista corta de partners que abran las tiendas a su nombre](/es/compass/solicitar-la-lista)
+[Pida a Compass una lista corta de partners que abran las tiendas a su nombre](/es/contacto#shortlist)

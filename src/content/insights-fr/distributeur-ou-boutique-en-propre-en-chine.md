@@ -370,4 +370,4 @@ transfrontalière en ligne. Le contrat doit séparer les canaux et fixer un
 prix plancher commun, sans quoi une promotion du flagship sape le rayon du
 distributeur la même semaine.
 
-[Confiez-nous votre catégorie et recevez une liste courte de distributeurs en deux à trois semaines](/fr/compass/demander-sa-liste)
+[Confiez-nous votre catégorie et recevez une liste courte de distributeurs en deux à trois semaines](/fr/nous-contacter#shortlist)

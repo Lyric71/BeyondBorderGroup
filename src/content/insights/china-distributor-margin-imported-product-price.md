@@ -339,4 +339,4 @@ paid media. At our calculator's year-one defaults, the cheese wedge in this
 piece brings the brand 20.15 RMB cross-border against 24 RMB ex-works in
 general trade.
 
-[Get a Compass shortlist of distributors who will price from the shelf](/compass/shortlist)
+[Get a Compass shortlist of distributors who will price from the shelf](/contact#shortlist)

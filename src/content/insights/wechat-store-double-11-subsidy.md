@@ -131,4 +131,4 @@ If a distributor runs the store for you, ask for the list of entered SKUs before
 October 9. Their markdown becomes your brand’s price in China for the next five
 weeks. Agree that price inside your [social commerce](/grow-in-china/social-commerce) plan first.
 
-[Get a shortlist of vetted China distributors](/compass/shortlist)
+[Get a shortlist of vetted China distributors](/contact#shortlist)

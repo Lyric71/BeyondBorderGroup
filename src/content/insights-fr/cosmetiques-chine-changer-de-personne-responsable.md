@@ -241,5 +241,5 @@ la date sur votre calendrier d'expéditions.
 
 Si vos enregistrements sont entre les mains d'un partenaire que vous
 envisagez de remplacer, [demandez une liste courte
-Compass](/fr/compass/demander-sa-liste) de distributeurs pour votre
+Compass](/fr/nous-contacter#shortlist) de distributeurs pour votre
 catégorie.

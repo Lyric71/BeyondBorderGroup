@@ -340,4 +340,4 @@ personnelles des acheteurs suivent le chemin inverse. En vertu de la loi
 sur la protection des informations personnelles, le TP doit les restituer
 ou les effacer.
 
-[Obtenir une liste de Tmall Partners qui gèrent des boutiques dans votre catégorie](/fr/compass/demander-sa-liste)
+[Obtenir une liste de Tmall Partners qui gèrent des boutiques dans votre catégorie](/fr/nous-contacter#shortlist)

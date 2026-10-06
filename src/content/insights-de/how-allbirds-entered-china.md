@@ -256,5 +256,5 @@ Allbirds umgedreht hat.
 
 Sie wägen ab zwischen einer eigenen chinesischen Gesellschaft und einem
 Vertriebspartner, der bereits eine hat? [Fordern Sie Ihre
-Compass-Liste an](/de/compass/liste-anfordern), wir melden uns mit geprüften
+Compass-Liste an](/de/kontakt#shortlist), wir melden uns mit geprüften
 Partnern für Ihre Kategorie.

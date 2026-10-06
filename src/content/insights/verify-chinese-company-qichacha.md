@@ -320,4 +320,4 @@ Registration data goes back to founding. Market-regulation penalties drop
 off GSXT after three years, or three months for small fines. Court judgments
 go back years, but coverage varies by year and mediated cases never appear.
 
-[Get a Compass shortlist of vetted distributors for your category](/compass/shortlist)
+[Get a Compass shortlist of vetted distributors for your category](/contact#shortlist)

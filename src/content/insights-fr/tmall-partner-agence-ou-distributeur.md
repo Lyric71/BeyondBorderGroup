@@ -267,4 +267,4 @@ qui détient le compte de la boutique.
 Une fois le modèle arrêté, [Compass](/fr/compass) repère les partenaires qui
 gèrent votre catégorie selon cette formule.
 
-[Obtenir une liste de Tmall Partners actifs dans votre catégorie, dans le modèle de votre choix](/fr/compass/demander-sa-liste)
+[Obtenir une liste de Tmall Partners actifs dans votre catégorie, dans le modèle de votre choix](/fr/nous-contacter#shortlist)

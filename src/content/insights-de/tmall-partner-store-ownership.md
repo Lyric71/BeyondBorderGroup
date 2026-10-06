@@ -364,4 +364,4 @@ das Inlandsgeschäft braucht eine chinesische Gewerbelizenz. Wenn Sie im
 Inland verkaufen, bevor Sie eine haben, vereinbaren Sie schriftlich, wann
 und wie der Shop in Ihre Gesellschaft übergeht.
 
-[Lassen Sie sich von Compass eine Shortlist von Partnern erstellen, die Shops auf Ihren Namen eröffnen](/de/compass/liste-anfordern)
+[Lassen Sie sich von Compass eine Shortlist von Partnern erstellen, die Shops auf Ihren Namen eröffnen](/de/kontakt#shortlist)

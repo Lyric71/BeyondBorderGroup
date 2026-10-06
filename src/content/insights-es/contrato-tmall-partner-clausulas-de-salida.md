@@ -334,4 +334,4 @@ chat, contenidos de producto y la estructura publicitaria. La información
 personal de los compradores sigue el camino contrario. Según la Ley de
 Protección de la Información Personal, el TP debe devolverla o eliminarla.
 
-[Pida una lista de Tmall Partners que gestionan tiendas en su categoría](/es/compass/solicitar-la-lista)
+[Pida una lista de Tmall Partners que gestionan tiendas en su categoría](/es/contacto#shortlist)

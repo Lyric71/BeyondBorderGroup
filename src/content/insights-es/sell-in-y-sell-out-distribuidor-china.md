@@ -192,4 +192,4 @@ No mediante un precio contractual. La Ley Antimonopolio china prohíbe los acuer
 
 Conviértalo en condición antes de firmar, con la plantilla de informe anexa al contrato. Si un distribuidor actual se niega, envíe menos y ajuste cada pedido al stock y al sell-out que pueda demostrarle. Un distribuidor que oculta su stock tiene sus motivos.
 
-[Pida a Compass una lista corta de distribuidores verificados para su categoría](/es/compass/solicitar-la-lista)
+[Pida a Compass una lista corta de distribuidores verificados para su categoría](/es/contacto#shortlist)

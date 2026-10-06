@@ -299,4 +299,4 @@ devoluciones, tomadas del panel una vez cerrado el plazo de posventa. Con
 un 50 % de devoluciones sobre 2 millones de yuanes de ventas, y a un 5 %,
 son 50.000 yuanes menos al año.
 
-[Reciba una lista corta de Douyin Partners que venden en su categoría](/es/compass/solicitar-la-lista)
+[Reciba una lista corta de Douyin Partners que venden en su categoría](/es/contacto#shortlist)

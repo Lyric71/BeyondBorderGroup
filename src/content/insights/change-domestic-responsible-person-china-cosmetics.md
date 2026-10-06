@@ -208,5 +208,5 @@ domestic responsible person. The handover is a clean cut, so set the date
 around your shipping calendar.
 
 If your filings sit with a partner you're thinking of replacing,
-[request a Compass shortlist](/compass/shortlist) of distributors for your
+[request a Compass shortlist](/contact#shortlist) of distributors for your
 category.

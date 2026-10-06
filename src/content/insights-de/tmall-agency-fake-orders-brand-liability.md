@@ -267,4 +267,4 @@ eine Marke ist die wahrscheinlichere Rechnung eine verwaltungsrechtliche:
 ein Bußgeld, das im öffentlichen Bonitätsregister landet, plus alles, was
 die Plattform mit dem Shop macht.
 
-[Fordern Sie eine Shortlist geprüfter Tmall Partner und Douyin Partner an](/de/compass/liste-anfordern)
+[Fordern Sie eine Shortlist geprüfter Tmall Partner und Douyin Partner an](/de/kontakt#shortlist)

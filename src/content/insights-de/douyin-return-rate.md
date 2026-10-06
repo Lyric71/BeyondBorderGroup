@@ -300,4 +300,4 @@ und Retouren, abgelesen im Backend nach Ablauf der Kundendienstfrist. Bei
 50 % Retouren auf 2 Millionen Yuan Umsatz sparen Sie bei einem Satz von
 5 % so 50.000 Yuan im Jahr.
 
-[Fordern Sie eine Shortlist von Douyin Partnern an, die in Ihrer Kategorie verkaufen](/de/compass/liste-anfordern)
+[Fordern Sie eine Shortlist von Douyin Partnern an, die in Ihrer Kategorie verkaufen](/de/kontakt#shortlist)

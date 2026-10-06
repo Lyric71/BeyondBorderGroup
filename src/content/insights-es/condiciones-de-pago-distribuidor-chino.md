@@ -285,4 +285,4 @@ país, con una agencia de crédito a la exportación o una aseguradora de
 crédito privada, y es esa aseguradora la que decide cuánto crédito se
 concede al distribuidor.
 
-[Pida a Compass una lista corta de distribuidores verificados en su categoría](/es/compass/solicitar-la-lista)
+[Pida a Compass una lista corta de distribuidores verificados en su categoría](/es/contacto#shortlist)

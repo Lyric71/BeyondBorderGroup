@@ -203,12 +203,6 @@ const copy: CompassCopy = {
   },
 
   shortlist: {
-    title: 'Ihre Auswahlliste chinesischer Partner | Compass | TheChinaPath',
-    description:
-      'Nennen Sie uns Kategorie und Stand. Binnen zwei bis drei Wochen erhalten Sie eine Auswahlliste chinesischer Distributoren und Plattformpartner.',
-    eyebrow: 'Ihre Auswahlliste',
-    h1: 'Erzählen Sie uns kurz von Ihrer Marke.',
-    lead: 'Ein paar schnelle Fragen, um ins Gespräch zu kommen. Das erste Gespräch ist kurz und für beide Seiten unverbindlich. Ein Partner aus der Geschäftsleitung antwortet innerhalb eines Werktags, kein Serienbrief aus einem Vorqualifizierungs-Bot.',
     formTitle: 'Ihr Briefing',
     fields: {
       name: 'Ihr Name',

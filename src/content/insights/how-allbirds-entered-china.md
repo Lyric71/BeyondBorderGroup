@@ -239,5 +239,5 @@ is the sequence Allbirds ran backwards.
 
 If you are choosing between running your own China entity and licensing
 a distributor who already has one, [request a Compass
-shortlist](/compass/shortlist) and we will come back with vetted partners for
+shortlist](/contact#shortlist) and we will come back with vetted partners for
 your category.

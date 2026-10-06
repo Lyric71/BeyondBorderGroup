@@ -126,4 +126,4 @@ Pas par accord, sauf à prouver que vous entrez dans la zone de sécurité de la
 
 Assez élevé pour dissuader, assez mesuré pour se défendre. Les tribunaux chinois peuvent réduire une pénalité qui dépasse de plus de 30 % votre préjudice démontrable : gardez donc la trace de ce que vous coûte une fuite, à commencer par les réassorts perdus.
 
-[Demandez à Compass une liste courte de distributeurs vérifiés dans votre catégorie](/fr/compass/demander-sa-liste)
+[Demandez à Compass une liste courte de distributeurs vérifiés dans votre catégorie](/fr/nous-contacter#shortlist)

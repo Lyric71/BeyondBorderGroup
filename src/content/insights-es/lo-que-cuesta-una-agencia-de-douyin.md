@@ -370,4 +370,4 @@ Douyin. Un reembolso dentro del periodo de posventa anula la comisión, y lo
 que ya se hubiera pagado se recupera. Pida que su agencia cobre con el mismo
 calendario.
 
-[Reciba una lista corta de Douyin Partners que venden en su categoría](/es/compass/solicitar-la-lista)
+[Reciba una lista corta de Douyin Partners que venden en su categoría](/es/contacto#shortlist)

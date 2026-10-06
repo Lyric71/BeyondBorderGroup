@@ -204,12 +204,6 @@ const copy: CompassCopy = {
   },
 
   shortlist: {
-    title: 'Solicite su lista de socios chinos | Compass | TheChinaPath',
-    description:
-      'Cuéntenos su categoría y su momento. En dos o tres semanas le enviamos una lista corta de distribuidores y socios chinos que merecen una reunión.',
-    eyebrow: 'Su lista corta',
-    h1: 'Cuéntenos algo de su marca.',
-    lead: 'Unas preguntas rápidas para abrir la conversación. La primera llamada es corta y sin compromiso por ninguna de las dos partes. Un socio sénior le responderá en un día laborable, no una carta tipo enviada por un robot de cualificación.',
     formTitle: 'Su briefing',
     fields: {
       name: 'Su nombre',

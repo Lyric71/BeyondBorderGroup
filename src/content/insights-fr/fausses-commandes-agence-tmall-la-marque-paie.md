@@ -268,4 +268,4 @@ commandes. Pour une marque, la facture la plus probable reste
 administrative : une amende inscrite au registre public de crédit, à
 laquelle s'ajoute ce que la plateforme décide pour la boutique.
 
-[Recevez une liste courte de Tmall Partners et de Douyin Partners que nous avons vérifiés](/fr/compass/demander-sa-liste)
+[Recevez une liste courte de Tmall Partners et de Douyin Partners que nous avons vérifiés](/fr/nous-contacter#shortlist)

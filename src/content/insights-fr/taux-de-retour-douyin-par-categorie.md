@@ -308,4 +308,4 @@ remboursements et des retours, relevées dans l'interface marchand une fois
 la période d'après-vente close. À 50 % de retours sur 2 millions de RMB de
 ventes, avec un taux de 5 %, l'économie atteint 50 000 RMB par an.
 
-[Recevez une liste courte de Douyin Partners qui vendent dans votre catégorie](/fr/compass/demander-sa-liste)
+[Recevez une liste courte de Douyin Partners qui vendent dans votre catégorie](/fr/nous-contacter#shortlist)

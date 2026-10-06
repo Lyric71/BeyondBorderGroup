@@ -239,5 +239,5 @@ ist ein klarer Schnitt; legen Sie das Datum deshalb passend zu Ihrem
 Versandkalender fest.
 
 Liegen Ihre Registrierungen bei einem Partner, den Sie ersetzen wollen,
-[fordern Sie eine Compass-Shortlist](/de/compass/liste-anfordern) mit
+[fordern Sie eine Compass-Shortlist](/de/kontakt#shortlist) mit
 Distributoren für Ihre Kategorie an.

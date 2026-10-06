@@ -209,12 +209,6 @@ const copy: CompassCopy = {
   },
 
   shortlist: {
-    title: 'Obtenir votre liste de partenaires chinois | Compass | TheChinaPath',
-    description:
-      'Présentez-nous votre catégorie et votre stade de développement : sous deux à trois semaines, une liste courte de partenaires chinois à rencontrer.',
-    eyebrow: 'Votre liste courte',
-    h1: 'Parlez-nous un peu de votre marque.',
-    lead: 'Quelques questions rapides pour lancer la conversation. Le premier échange est court et sans engagement de part et d’autre. Un associé vous répondra sous un jour ouvré, pas un message type envoyé par un robot de qualification.',
     formTitle: 'Votre brief',
     fields: {
       name: 'Votre nom',

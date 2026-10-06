@@ -256,4 +256,4 @@ from a company registered in China. A brand exporting from Europe or the US buys
 its policy at home, from an export credit agency or a private credit insurer,
 and that insurer decides how much credit the distributor gets.
 
-[Ask Compass for a shortlist of vetted distributors in your category](/compass/shortlist)
+[Ask Compass for a shortlist of vetted distributors in your category](/contact#shortlist)

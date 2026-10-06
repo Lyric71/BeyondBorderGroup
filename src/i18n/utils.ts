@@ -150,6 +150,9 @@ function toCanonical(path: string): string | null {
  * the target locale home so the switcher never lands on a 404.
  */
 export function localizePath(path: string, locale: Locale): string {
+  // A fragment rides along untouched: `/contact#shortlist` -> `/fr/nous-contacter#shortlist`.
+  const hashAt = path.indexOf('#');
+  if (hashAt !== -1) return localizePath(path.slice(0, hashAt), locale) + path.slice(hashAt);
   const canonical = toCanonical(path);
   if (locale === defaultLocale) {
     if (canonical === null) return '/';

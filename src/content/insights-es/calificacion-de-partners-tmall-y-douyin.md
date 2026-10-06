@@ -286,4 +286,4 @@ según la experiencia en su categoría, el equipo asignado y las tiendas que
 pueda abrir usted mismo. Un especialista sin calificación que gestione las
 tiendas adecuadas puede superar a un Diamond sin ninguna en su categoría.
 
-[Obtenga una lista corta de Compass con partners que ya gestionan tiendas de su categoría](/es/compass/solicitar-la-lista)
+[Obtenga una lista corta de Compass con partners que ya gestionan tiendas de su categoría](/es/contacto#shortlist)

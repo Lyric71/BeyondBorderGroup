@@ -256,5 +256,5 @@ suivie à l'envers.
 
 Vous hésitez entre piloter votre propre entité chinoise et confier le marché à
 un distributeur qui en possède déjà une ? [Demandez votre liste
-Compass](/fr/compass/demander-sa-liste) : nous revenons vers vous avec des
+Compass](/fr/nous-contacter#shortlist) : nous revenons vers vous avec des
 partenaires vérifiés pour votre catégorie.

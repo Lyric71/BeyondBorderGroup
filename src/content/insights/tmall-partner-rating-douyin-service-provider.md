@@ -253,4 +253,4 @@ build a long list, then cut it on category experience, the named team and
 the stores you can open yourself. An unrated specialist with the right
 stores can beat a Diamond with none in your category.
 
-[Get a Compass shortlist of partners already running stores in your category](/compass/shortlist)
+[Get a Compass shortlist of partners already running stores in your category](/contact#shortlist)

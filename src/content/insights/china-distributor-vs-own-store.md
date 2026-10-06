@@ -332,4 +332,4 @@ the cross-border store online. The contract has to split the channels and
 set a shared price floor, otherwise a flagship promotion undercuts the
 distributor's shelf the same week.
 
-[Brief us on your category and get a distributor shortlist in two to three weeks](/compass/shortlist)
+[Brief us on your category and get a distributor shortlist in two to three weeks](/contact#shortlist)

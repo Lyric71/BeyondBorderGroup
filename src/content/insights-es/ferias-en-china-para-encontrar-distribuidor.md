@@ -311,4 +311,4 @@ primera vez en el estand, lo más probable es que solo se lleve una
 tarjeta. Para los visitantes de la CIIE, la inscripción se cierra el 20 de
 octubre de 2026.
 
-[Pida una lista corta de Compass con los distribuidores que merece la pena ver en la feria](/es/compass/solicitar-la-lista)
+[Pida una lista corta de Compass con los distribuidores que merece la pena ver en la feria](/es/contacto#shortlist)

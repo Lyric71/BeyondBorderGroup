@@ -381,4 +381,4 @@ pour les petites amendes. Les décisions de justice couvrent de nombreuses
 années, avec une couverture inégale selon les millésimes, et les affaires
 réglées par médiation n'y figurent jamais.
 
-[Recevez une liste courte de distributeurs vérifiés dans votre catégorie](/fr/compass/demander-sa-liste)
+[Recevez une liste courte de distributeurs vérifiés dans votre catégorie](/fr/nous-contacter#shortlist)

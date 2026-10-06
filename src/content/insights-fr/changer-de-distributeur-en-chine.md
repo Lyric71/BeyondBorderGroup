@@ -396,5 +396,5 @@ Prévoyez que le nouveau partenaire ouvre sa propre boutique sous votre
 autorisation.
 
 Si vous cherchez un remplaçant avant d'envoyer votre notification,
-[demandez une liste courte Compass](/fr/compass/demander-sa-liste) de
+[demandez une liste courte Compass](/fr/nous-contacter#shortlist) de
 distributeurs pour votre catégorie.

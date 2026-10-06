@@ -385,4 +385,4 @@ bezahlte Werbung. Mit den Standardwerten unseres Rechners für das erste
 Jahr bringt der Käse aus diesem Beitrag der Marke im Cross-Border-Geschäft
 20,15 Yuan, gegenüber 24 Yuan ab Werk im allgemeinen Handel.
 
-[Holen Sie sich eine Compass-Shortlist von Distributoren, die vom Regalpreis aus kalkulieren](/de/compass/liste-anfordern)
+[Holen Sie sich eine Compass-Shortlist von Distributoren, die vom Regalpreis aus kalkulieren](/de/kontakt#shortlist)

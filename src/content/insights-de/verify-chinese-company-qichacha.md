@@ -379,4 +379,4 @@ verschwinden nach drei Jahren aus GSXT, kleine Bußgelder nach drei Monaten.
 Gerichtsurteile reichen viele Jahre zurück, doch die Abdeckung schwankt je
 nach Jahrgang, und per Schlichtung beendete Verfahren tauchen nie auf.
 
-[Erhalten Sie eine Compass-Shortlist geprüfter Distributoren für Ihre Kategorie](/de/compass/liste-anfordern)
+[Erhalten Sie eine Compass-Shortlist geprüfter Distributoren für Ihre Kategorie](/de/kontakt#shortlist)

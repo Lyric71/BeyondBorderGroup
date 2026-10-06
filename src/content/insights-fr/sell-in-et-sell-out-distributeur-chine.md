@@ -192,4 +192,4 @@ Pas par un prix contractuel. La loi anti-monopole chinoise interdit les accords 
 
 Faites-en une condition avant la signature, modèle de reporting annexé au contrat. Si un distributeur en place refuse, expédiez moins et calez chaque commande sur le stock et le sell-out qu'il peut vous montrer. Un distributeur qui cache l'état de son stock a ses raisons.
 
-[Demandez à Compass une liste courte de distributeurs vérifiés dans votre catégorie](/fr/compass/demander-sa-liste)
+[Demandez à Compass une liste courte de distributeurs vérifiés dans votre catégorie](/fr/nous-contacter#shortlist)

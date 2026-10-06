@@ -404,5 +404,5 @@ sich nicht übertragen. Planen Sie ein, dass der neue Partner mit Ihrer
 Autorisierung einen eigenen Shop eröffnet.
 
 Wenn Sie einen Nachfolger suchen, bevor Sie kündigen,
-[fordern Sie eine Compass-Shortlist an](/de/compass/liste-anfordern) mit
+[fordern Sie eine Compass-Shortlist an](/de/kontakt#shortlist) mit
 Distributoren für Ihre Kategorie.

@@ -252,5 +252,5 @@ de recompra lo justifica. Justo la secuencia que Allbirds recorrió al revés.
 
 ¿Duda entre llevar su propia sociedad china y ceder el mercado a un
 distribuidor que ya tiene una? [Pida su lista
-Compass](/es/compass/solicitar-la-lista) y volvemos con socios verificados
+Compass](/es/contacto#shortlist) y volvemos con socios verificados
 para su categoría.

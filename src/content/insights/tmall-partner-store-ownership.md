@@ -324,4 +324,4 @@ company. A domestic Tmall store or a domestic Douyin shop needs a Chinese
 business license. If you sell domestically before you have one, agree
 in writing on the date and process for moving the store into your entity.
 
-[Ask Compass for a shortlist of partners who open stores in your name](/compass/shortlist)
+[Ask Compass for a shortlist of partners who open stores in your name](/contact#shortlist)

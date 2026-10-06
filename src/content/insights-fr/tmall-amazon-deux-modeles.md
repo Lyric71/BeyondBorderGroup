@@ -261,4 +261,4 @@ d'acheteurs chinois.
 
 Si vous voulez une liste courte d'opérateurs vérifiés capables de tenir
 vraiment votre catégorie en Chine,
-[demandez votre liste Compass](/fr/compass/demander-sa-liste).
+[demandez votre liste Compass](/fr/nous-contacter#shortlist).

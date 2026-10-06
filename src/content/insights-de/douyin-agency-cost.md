@@ -377,4 +377,4 @@ Abrechnungsregeln vor. Eine Erstattung in der Nachkaufphase lässt die
 Provision entfallen, bereits gezahlte Beträge werden zurückgefordert.
 Verlangen Sie, dass Ihre Agentur im selben Takt bezahlt wird.
 
-[Erhalten Sie eine Shortlist von Douyin Partnern, die in Ihrer Kategorie verkaufen](/de/compass/liste-anfordern)
+[Erhalten Sie eine Shortlist von Douyin Partnern, die in Ihrer Kategorie verkaufen](/de/kontakt#shortlist)

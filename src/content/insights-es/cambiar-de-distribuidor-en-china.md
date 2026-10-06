@@ -388,5 +388,5 @@ se puede ceder. Cuente con que el nuevo socio abra su propia tienda con
 la autorización de su marca.
 
 Si está buscando un sustituto antes de notificar,
-[solicite una lista corta de Compass](/es/compass/solicitar-la-lista) con
+[solicite una lista corta de Compass](/es/contacto#shortlist) con
 distribuidores de su categoría.

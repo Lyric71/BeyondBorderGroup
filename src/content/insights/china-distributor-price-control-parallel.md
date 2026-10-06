@@ -204,4 +204,4 @@ Big enough to hurt, small enough to defend. Chinese courts can cut a penalty
 that runs more than 30% above your provable loss, so keep records of what a
 leak costs you, lost reorders above all.
 
-[Ask Compass for a shortlist of vetted distributors in your category](/compass/shortlist)
+[Ask Compass for a shortlist of vetted distributors in your category](/contact#shortlist)

@@ -371,4 +371,4 @@ meses si se trata de multas menores. Las sentencias se remontan muchos años
 atrás, pero la cobertura varía según el año y los casos resueltos por
 mediación no aparecen nunca.
 
-[Reciba una lista corta de distribuidores verificados para su categoría](/es/compass/solicitar-la-lista)
+[Reciba una lista corta de distribuidores verificados para su categoría](/es/contacto#shortlist)

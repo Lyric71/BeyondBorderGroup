@@ -340,4 +340,4 @@ Werbestruktur. Bei personenbezogenen Kundendaten läuft es andersherum. Nach
 dem Gesetz zum Schutz personenbezogener Informationen muss der TP sie
 zurückgeben oder löschen.
 
-[Liste der Tmall Partners anfordern, die Shops in Ihrer Kategorie führen](/de/compass/liste-anfordern)
+[Liste der Tmall Partners anfordern, die Shops in Ihrer Kategorie führen](/de/kontakt#shortlist)

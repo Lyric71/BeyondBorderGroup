@@ -265,4 +265,4 @@ on sales after refunds and returns, taken from the backend once the after-sale
 window closes. At 50% returns on RMB 2 million of sales, that's RMB 50,000 a
 year less at a 5% rate.
 
-[Get a shortlist of Douyin Partners that sell in your category](/compass/shortlist)
+[Get a shortlist of Douyin Partners that sell in your category](/contact#shortlist)

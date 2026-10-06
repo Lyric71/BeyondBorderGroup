@@ -270,4 +270,4 @@ brand sheet and price list before the show comes ready to talk terms. Show it
 for the first time on the stand and you’ll mostly get a card back. For CIIE
 visitors, registration closes on October 20, 2026.
 
-[Get a Compass shortlist of distributors worth meeting at the fair](/compass/shortlist)
+[Get a Compass shortlist of distributors worth meeting at the fair](/contact#shortlist)

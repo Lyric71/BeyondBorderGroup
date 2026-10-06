@@ -86,4 +86,4 @@ Ein neuer Shop tut gut daran, sein Sortiment aufzuteilen: Angemeldet werden die 
 
 Führt ein Distributor den Shop für Sie, lassen Sie sich die Liste der angemeldeten Artikel vor dem 9. Oktober geben. Sein Rabatt wird für die nächsten fünf Wochen zum Preis Ihrer Marke in China. Diesen Preis sollten Sie vorher im Rahmen Ihrer Strategie für [Social Commerce](/de/in-china-wachsen/social-commerce) festlegen.
 
-[Eine Liste geprüfter Distributoren in China anfordern](/de/compass/liste-anfordern)
+[Eine Liste geprüfter Distributoren in China anfordern](/de/kontakt#shortlist)

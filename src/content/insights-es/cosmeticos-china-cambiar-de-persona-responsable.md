@@ -236,5 +236,5 @@ una persona responsable en China. El relevo es un corte limpio, así que
 fije la fecha en función de su calendario de envíos.
 
 Si sus registros están en manos de un socio al que piensa sustituir,
-[solicite una lista corta de Compass](/es/compass/solicitar-la-lista) con
+[solicite una lista corta de Compass](/es/contacto#shortlist) con
 distribuidores de su categoría.

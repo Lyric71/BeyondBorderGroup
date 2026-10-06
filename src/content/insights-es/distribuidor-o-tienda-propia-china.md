@@ -365,4 +365,4 @@ tiene que separar los canales y fijar un precio mínimo común; de lo
 contrario, una promoción de la tienda insignia socava el lineal del
 distribuidor esa misma semana.
 
-[Cuéntenos su categoría y reciba una lista corta de distribuidores en dos o tres semanas](/es/compass/solicitar-la-lista)
+[Cuéntenos su categoría y reciba una lista corta de distribuidores en dos o tres semanas](/es/contacto#shortlist)

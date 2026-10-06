@@ -369,4 +369,4 @@ Vertrag muss die Kanäle trennen und eine gemeinsame Preisuntergrenze
 festlegen, sonst unterbietet eine Flagship-Aktion in derselben Woche das
 Regal des Distributors.
 
-[Beschreiben Sie uns Ihre Kategorie und erhalten Sie in zwei bis drei Wochen eine Distributoren-Shortlist](/de/compass/liste-anfordern)
+[Beschreiben Sie uns Ihre Kategorie und erhalten Sie in zwei bis drei Wochen eine Distributoren-Shortlist](/de/kontakt#shortlist)

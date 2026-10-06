@@ -316,4 +316,4 @@ cross-border orders, under Douyin's settlement rules. A refund inside the
 after-sale period cancels the commission, and any amount already paid is
 clawed back. Ask your agency to be paid on the same clock.
 
-[Get a shortlist of Douyin Partners that sell in your category](/compass/shortlist)
+[Get a shortlist of Douyin Partners that sell in your category](/contact#shortlist)

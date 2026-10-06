@@ -251,4 +251,4 @@ marca europea o estadounidense que busca compradores chinos.
 
 Si quiere una lista corta de operadores verificados capaces de llevar de
 verdad su categoría en China,
-[solicite su lista Compass](/es/compass/solicitar-la-lista).
+[solicite su lista Compass](/es/contacto#shortlist).

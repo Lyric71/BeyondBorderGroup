@@ -86,4 +86,4 @@ Une boutique récente a intérêt à scinder sa gamme : inscrire les lignes qu
 
 Si un distributeur exploite la boutique pour votre compte, demandez-lui la liste des références inscrites avant le 9 octobre. Sa démarque deviendra, pour les cinq semaines à venir, le prix de votre marque en Chine. Ce prix doit être arrêté en amont, dans votre stratégie de [commerce social](/fr/se-developper-en-chine/commerce-social).
 
-[Obtenir une liste de distributeurs chinois vérifiés](/fr/compass/demander-sa-liste)
+[Obtenir une liste de distributeurs chinois vérifiés](/fr/nous-contacter#shortlist)

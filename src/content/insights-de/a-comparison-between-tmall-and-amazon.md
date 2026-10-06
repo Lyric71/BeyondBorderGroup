@@ -251,4 +251,4 @@ amerikanischen Marke auf der Suche nach chinesischen Käufern.
 
 Wenn Sie eine geprüfte Auswahl an Betreibern wollen, die Ihre Kategorie in
 China tatsächlich führen könnten,
-[fordern Sie Ihre Compass-Liste an](/de/compass/liste-anfordern).
+[fordern Sie Ihre Compass-Liste an](/de/kontakt#shortlist).

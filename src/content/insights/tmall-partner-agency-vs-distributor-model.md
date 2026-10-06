@@ -239,4 +239,4 @@ the store account before you sign.
 Once you know the model, [Compass](/compass) finds the partners that run your
 category that way.
 
-[Get a shortlist of Tmall Partners that run your category, in the model you want](/compass/shortlist)
+[Get a shortlist of Tmall Partners that run your category, in the model you want](/contact#shortlist)

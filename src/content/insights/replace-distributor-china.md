@@ -349,5 +349,5 @@ transferred. Plan for the new partner to open its own store under your
 authorization.
 
 If you're lining up a replacement before you give notice,
-[request a Compass shortlist](/compass/shortlist) of distributors for your
+[request a Compass shortlist](/contact#shortlist) of distributors for your
 category.

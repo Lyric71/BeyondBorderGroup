@@ -375,4 +375,4 @@ exige une licence commerciale chinoise. Si vous vendez sur le marché
 intérieur avant d'en avoir une, fixez par écrit la date et la procédure de
 transfert de la boutique vers votre entité.
 
-[Demandez à Compass une liste courte de partenaires qui ouvrent les boutiques à votre nom](/fr/compass/demander-sa-liste)
+[Demandez à Compass une liste courte de partenaires qui ouvrent les boutiques à votre nom](/fr/nous-contacter#shortlist)
