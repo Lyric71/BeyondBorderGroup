@@ -100,7 +100,7 @@ ByteDance.
 > https://school.jinritemai.com/doudian/web/articlev0/107821
 
 JD l'emporte sur toute la ligne. Tmall allège toutefois ses frais annuels
-pour les boutiques ouvertes avant le 31 mars 2027 % 30 000 RMB au lieu de
+pour les boutiques ouvertes avant le 31 mars 2027 : 30 000 RMB au lieu de
 60 000, et même rien pour les catégories maison qui figurent sur une liste
 d'exonération distincte. Cette liste n'est pas publiée, d'où l'intérêt
 d'interroger le responsable de catégorie avant d'arrêter un budget. Dès
@@ -175,7 +175,7 @@ fermée.
 Prenons une couette en duvet à 5 200 RMB. Le droit de douane atteint
 520 RMB, et la TVA de 13 %, assise sur le prix majoré du droit, en ajoute
 744. L'acheteur règle 1 264 RMB de taxes, environ 24 %. À 4 990 RMB, la même
-couette n'en supporterait que 454 % rogner le prix de 210 RMB épargne à
+couette n'en supporterait que 454 : rogner le prix de 210 RMB épargne à
 l'acheteur 810 RMB de taxes.
 
 L'étiquetage, lui, dépend de la voie retenue. La marchandise

@@ -9,6 +9,8 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'how-automotive-and-ev-brands-reach-buyers-in-china':
+    'comment-les-constructeurs-automobiles-touchent-les-acheteurs-en-chine',
   'douyin-store-vs-douyin-ads': 'boutique-douyin-ou-publicite-douyin',
   'douyin-product-card-fee-rebate': 'douyin-fiches-produits-commission-retrocedee',
   'cost-to-sell-home-textiles-and-bedding-in-china': 'ce-que-coute-vendre-du-linge-de-lit-en-chine',
@@ -165,6 +167,8 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'how-automotive-and-ev-brands-reach-buyers-in-china':
+    'wie-auto-und-elektroautomarken-kaeufer-in-china-erreichen',
   'douyin-store-vs-douyin-ads': 'douyin-shop-oder-werbung-auf-douyin',
   'douyin-product-card-fee-rebate': 'douyin-rueckverguetung-statt-gebuehrenerlass',
   'cost-to-sell-home-textiles-and-bedding-in-china': 'was-bettwaesche-verkaufen-in-china-kostet',
@@ -321,6 +325,8 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'how-automotive-and-ev-brands-reach-buyers-in-china':
+    'como-llegan-las-marcas-de-coches-a-los-compradores-en-china',
   'douyin-store-vs-douyin-ads': 'tienda-en-douyin-o-publicidad-en-douyin',
   'douyin-product-card-fee-rebate': 'douyin-fichas-de-producto-comision-bonificada',
   'cost-to-sell-home-textiles-and-bedding-in-china': 'lo-que-cuesta-vender-ropa-de-cama-en-china',
