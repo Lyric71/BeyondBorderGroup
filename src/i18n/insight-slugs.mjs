@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'how-blackmores-entered-china': 'blackmores-en-chine-ce-que-l-entree-a-coute',
   'how-automotive-and-ev-brands-reach-buyers-in-china':
     'comment-les-constructeurs-automobiles-touchent-les-acheteurs-en-chine',
   'douyin-store-vs-douyin-ads': 'boutique-douyin-ou-publicite-douyin',
@@ -167,6 +168,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'how-blackmores-entered-china': 'blackmores-in-china-was-der-markteintritt-kostete',
   'how-automotive-and-ev-brands-reach-buyers-in-china':
     'wie-auto-und-elektroautomarken-kaeufer-in-china-erreichen',
   'douyin-store-vs-douyin-ads': 'douyin-shop-oder-werbung-auf-douyin',
@@ -325,6 +327,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'how-blackmores-entered-china': 'blackmores-en-china-lo-que-costo-entrar',
   'how-automotive-and-ev-brands-reach-buyers-in-china':
     'como-llegan-las-marcas-de-coches-a-los-compradores-en-china',
   'douyin-store-vs-douyin-ads': 'tienda-en-douyin-o-publicidad-en-douyin',

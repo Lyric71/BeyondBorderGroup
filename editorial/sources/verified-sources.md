@@ -3636,3 +3636,144 @@ rendered with headless Edge; text and dates matched.
 - Douyin Global tech service fee by category, July 2026 schedule (articlev0/aHMYyFoqESKn): rendered twice on 2026-10-05; 2026-07-15 timestamp, 面部洗护 5.00%, 彩妆香水 5.00%, 服装 6.00% re-found. Used in: douyin-product-card-fee-rebate.
 - Douyin Global merchant payout timing (article/aHyMoi13Bhx5): rendered twice on 2026-10-05; 再加2个工作日 and the 2026-01-05 revision re-found. Used in: douyin-product-card-fee-rebate.
 - Douyin Double 11 2026 window (Ebrun via Tencent News, 20260919A088XY00): fetched twice on 2026-10-05; 将于10月正式开启2026年双11大促，至11月11日结束 re-found. Used in: douyin-product-card-fee-rebate.
+
+## Teardown 05T research (how-blackmores-entered-china), 2026-10-08
+
+All Blackmores figures are Australian dollars, fiscal years to June 30.
+Annual reports are the ASX filings, read from the annualreports.com archive
+copies (ASX_BKL_<year>.pdf) and, for 2022, the ASX announcements platform.
+Both checks fetched the PDF and searched the text (raw and layout
+extraction, because the reports set text in columns).
+
+### Blackmores formal China entry 2012; 90% of China sales cross-border (2019)
+- Value: formal entry into China in 2012, after Chinese tourists were already buying the brand abroad; 90% of China sales from cross-border ecommerce platforms, 10% offline
+- As of: April 2019 (Peter Osborne, Blackmores Asia)
+- Source: Jiemian (界面新闻), Yang Yang
+- URL: https://www.jiemian.com/article/2995052.html
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08 (re-fetched at iteration 8; 2012年, 90%来自跨境电商平台 re-found)
+- Used in: how-blackmores-entered-china
+
+### Blackmores China share, FTZ entry and route times (Nov 2018)
+- Value: China second market after Australia, 40% of global sales (Osborne); Shanghai FTZ opened 2013, Blackmores among first entrants, share price from 30-odd to 200-plus AUD within a year; general trade food registration three months plus one to two weeks customs, cross-border about six weeks, 70% of the range can enter via cross-border
+- As of: November 10, 2018
+- Source: The Paper (澎湃新闻), Bao Yumeng
+- URL: https://www.thepaper.cn/newsDetail_forward_2619490
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08 (40%, 2013年上海自贸区, 三个月, 六周, 70%的产品, 200多 re-found)
+- Used in: how-blackmores-entered-china
+- Notes: the 40% is the company's own framing and exceeds the filed China segment (24% of FY2018 revenue); the piece labels the gap as an inference.
+
+### Blackmores FY2015: WFOE, FTZ licence, group results
+- Value: group sales A$471.6m (+36%), NPAT A$46.6m (+83%); WFOE established the prior year; free trade zones opened 2014, Blackmores one of only a few in the category with a licence to trade directly in the zone; Asian consumers about A$150m of group sales
+- As of: fiscal 2015 (report signed August 2015)
+- Source: Blackmores Limited, Annual Report 2015
+- URL: https://www.annualreports.com/HostedData/AnnualReportArchive/B/ASX_BKL_2015.pdf
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+
+### Blackmores FY2016: in-country China A$48m (+536%); A$250m influenced
+- Value: in-country China sales A$48m, up 536%, via the bonded warehouse; Chinese consumers influence over A$250m of group sales, almost four-fold in 12 months
+- As of: fiscal 2016 (report signed August 2016)
+- Source: Blackmores Limited, Annual Report 2016
+- URL: https://www.annualreports.com/HostedData/AnnualReportArchive/B/ASX_BKL_2016.pdf
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+
+### Blackmores FY2017: April 2016 rumor, group results, China direct, Bemore
+- Value: April 2016 speculation about China rules hit buying via Australian retailers, decline "came without warning"; group sales A$693m (-3%), NPAT A$58m (-42%); China direct A$132m (+71%: A$62m in-country, A$70m export division); Bemore infant nutrition sales A$4m, Blackmores share of operating losses A$7m, "continued regulatory uncertainty in China"
+- As of: fiscal 2017 (report signed August 2017)
+- Source: Blackmores Limited, Annual Report 2017
+- URL: https://www.annualreports.com/HostedData/AnnualReportArchive/B/ASX_BKL_2017.pdf
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+- Notes: the FY2018 report restates FY2017 China revenue to A$117.1m under a new segment definition; the piece uses the FY2017 figure only as reported that year and starts the revenue table at FY2018.
+
+### Blackmores China segment revenue and EBIT, FY2018 and FY2019
+- Value: China revenue A$143.287m (FY2018), A$122.249m (FY2019, -15%); China EBIT A$35.627m (FY2018), A$21.465m (FY2019, -40%); group revenue A$601.136m (FY2018); FY2019 China "down 15% due to e-commerce law changes taking effect from January 2019"; in-country platform sales +22%; sales to Chinese consumers including Australian retail about -14%
+- As of: fiscal 2019 (report signed August 2019)
+- Source: Blackmores Limited, Annual Report 2019
+- URL: https://www.annualreports.com/HostedData/AnnualReportArchive/B/ASX_BKL_2019.pdf
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+
+### Blackmores FY2020: Chinese shopper share, China revenue
+- Value: Chinese shoppers 24% of Australian VDS retail sales in calendar 2019, 16% in 2H FY2020; China revenue A$103m (-16%)
+- As of: August 25, 2020 (full year results release)
+- Source: Blackmores Limited, FY2020 results release (ASX), broker-hosted copy
+- URL: https://www.belldirect.com.au/smarter/wp-content/uploads/2020/08/Blackmores-Presentation.pdf
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+
+### Blackmores FY2020: Tmall reset
+- Value: from December 2019 China range reshaped and platform engagement reset; category captaincy with Tmall in May 2020; 618 GMV +75%, three million unique visitors to the Tmall flagship; label transition cited for lower China sales
+- As of: fiscal 2020 (report signed August 2020)
+- Source: Blackmores Limited, Annual Report 2020
+- URL: https://www.annualreports.com/HostedData/AnnualReportArchive/B/ASX_BKL_2020.pdf
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+
+### Blackmores FY2021 and FY2022 China revenue and EBIT
+- Value: FY2021 China revenue A$131.582m (+28%; FY2020 A$102.933m), EBIT A$14.3m vs break-even FY2020, FTZ channel over 70% of China net sales; FY2022 China revenue A$145.6m (+10.6%), EBIT A$16.0m, top 4 VDS brand across all CBEC platforms, Shanghai China head office
+- As of: August 26, 2021 and August 18, 2022
+- Source: Blackmores Limited, Annual Reports 2021 and 2022
+- URL: https://www.annualreports.com/HostedData/AnnualReportArchive/B/ASX_BKL_2021.pdf ; https://announcements.asx.com.au/asxpdf/20220818/pdf/45cz6p0pw9r1s3.pdf
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+- Notes: the FY2021 break-even sentence is hyphenated across a line in the PDF, so the piece paraphrases it instead of quoting.
+
+### Blackmores Tmall Global flagship closure, August 2017
+- Value: flagship closed August 1, 2017, reopened August 28, 2017, to change to a more suitable service provider after a deeper Tmall Global agreement in July
+- As of: September 1, 2017
+- Source: Niuxuan (牛选)
+- URL: https://www.niuxuan.cn/redian/4187.html
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+
+### Blackmores cross-platform price gap, July 2016
+- Value: same cranberry product at 99 RMB (JD self-operated), 169 RMB (third-party seller), 189 RMB (Tmall Global flagship); Shanghai subsidiary set up December 2014
+- As of: July 12, 2016
+- Source: China Industry Information (中国产业信息研究网)
+- URL: https://m.china1baogao.com/news/20160712/8066828.html
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+
+### Kirin offer for Blackmores, April 2023
+- Value: A$1.88bn, A$95 a share (excluding a A$3.34 special dividend), 24% premium to the prior close; Marcus Blackmore (18%) supports
+- As of: April 27, 2023
+- Source: Sina Finance (新浪财经)
+- URL: https://finance.sina.com.cn/world/2023-04-27/doc-imyruraw1873790.shtml
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+
+### Blackmores revenue mix under Kirin, October 2026
+- Value: Southeast Asia nearly 30% of Blackmores revenue, mainland China about 20%; Kirin paid A$1.88bn in 2023 and wants Blackmores' regulatory experience and channels for Asian health foods; Kirin health science turned profitable, 11.1bn yen
+- As of: October 1, 2026
+- Source: Economic Daily News (經濟日報), Liu Chung-yung, citing Nikkei and Reuters
+- URL: https://money.udn.com/money/story/5599/9787415
+- Verified 1: 2026-10-08
+- Verified 2: 2026-10-08
+- Used in: how-blackmores-entered-china
+
+### Health supplements calculator rows (proprietary, October 2026)
+- Value: Tmall Global health supplements 300,000 RMB deposit, 30,000 RMB annual fee, 3% commission (330,000 RMB before the first sale); JD Worldwide 35,500 RMB deposit, no annual fee, 5%; Douyin cross-border 5,000 RMB deposit, 4%
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, jd-worldwide-setup-and-run.astro, douyin-cost-calculator.astro)
+- URL: /tools/tmall-global-setup-and-run
+- Verified 1: 2026-10-08 (arrays read)
+- Verified 2: 2026-10-08 (arrays re-read before the image step)
+- Used in: how-blackmores-entered-china
+- Notes: label in copy as "TheChinaPath calculator data, October 2026".
+
+### Researched for 05T, not used
+- Live Tmall Global assortment, prices and review counts (login wall); the blackmores.tmall.hk redirect (a made-up tmall.hk subdomain redirects the same way, so it proves nothing); FY2023 China figures (not found in a filing); TMO Group sales estimates (agency, competitor rule); Beijing Business Today's dollar labels (wrong currency; the filing figure is used).

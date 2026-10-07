@@ -50,6 +50,7 @@ four criteria on the day; a name here is a lead, not a clearance.
 |---|---|---|---|
 | Allbirds | Footwear | Own-entity entry, licensed to Belle 2024 | Used 01T, 2026-09-10 |
 | On (On Holding AG) | Sports & Leisure, running footwear | Own stores plus dealers, 38 China locations, SEC filings | Used 03T, 2026-09-24, all four criteria pass |
+| Blackmores (Kirin Holdings since 2023) | Health & Wellness, vitamins and supplements | Early into the bonded zones, daigou dependence, ASX filings FY2015 to FY2022 | Used 05T, 2026-10-08, all four criteria pass |
 | (add) | | | |
 
 Good hunting grounds: Tmall Global's own overseas-brand case studies, JD
