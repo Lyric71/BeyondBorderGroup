@@ -65,6 +65,7 @@ const copy: SocialInChinaCopy = {
       owner: 'Split',
       image: '/Images/social/wechat.png',
       alt: 'Eine Frau liest in einem Shanghaier Café eine WeChat-Unterhaltung auf ihrem Telefon',
+      note: 'Moments-Anzeigen kosten 30 bis 180 RMB je 1.000 Aufrufe; Gruppen und ein Mini-Programm sind im Betrieb günstig.',
     },
     {
       key: 'rednote',
@@ -78,6 +79,7 @@ const copy: SocialInChinaCopy = {
       owner: 'TheRedScroll',
       image: '/Images/social/rednote.png',
       alt: 'Eine Kundin scrollt neben Pflegefläschchen und Trockenblumen durch einen RedNote-Beauty-Feed',
+      note: 'Hier fällt die Kaufentscheidung. Notes kleiner Creator kosten 300 bis 2.000 RMB, bezahlt wird über nachverfolgbare Links oft auf Tmall oder JD.',
     },
     {
       key: 'douyin',
@@ -91,6 +93,7 @@ const copy: SocialInChinaCopy = {
       owner: 'Split',
       image: '/Images/social/douyin.png',
       alt: 'Eine Douyin-Moderatorin präsentiert im ringbeleuchteten Studio ein Pflegeprodukt vor der Kamera',
+      note: 'Hier wird gekauft, was man gerade sieht. Ein Creator-Video kostet im Schnitt rund 40.000 RMB, der Verkauf per Livestream mehr.',
     },
     {
       key: 'weibo',
@@ -104,8 +107,11 @@ const copy: SocialInChinaCopy = {
       owner: 'TheRedScroll',
       image: '/Images/platforms/weibo.png',
       alt: 'Eine Weibo-Trendtafel leuchtet an einem Regenabend über Passanten auf der Nanjing Road',
+      note: 'Für Launches und Nachrichten rund um Prominente. Creator-Buchungen beginnen bei einer Aufladung von 2.000 RMB.',
     },
   ],
+
+  guideLink: { label: 'Zum vollständigen Ratgeber', href: '/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma' },
 
   longTail: [
     {

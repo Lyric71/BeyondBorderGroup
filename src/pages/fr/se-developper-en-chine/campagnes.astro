@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
@@ -158,6 +159,25 @@ const calendar = [
     prep: "5 semaines à l'avance",
     what: "Dernier pic de l'année. Particulièrement porteur pour les marques de taille intermédiaire et pour l'écoulement des stocks.",
     who: 'Marques de taille intermédiaire, déstockage, opérations de rattrapage',
+  },
+];
+
+const eventCosts = [
+  {
+    platform: 'Tmall',
+    cost: "Publicité Alimama, commissions d'affiliation de 5 à 50 %, remises que vous financez pour 88VIP et les opérations de baisse de prix",
+  },
+  {
+    platform: 'JD',
+    cost: "Publicité JD d'environ 10 à 40 RMB par commande, affiliation, coûts événementiels qui peuvent ajouter 15 à 20 % du chiffre d'affaires pendant le 618 et le 11.11",
+  },
+  {
+    platform: 'Douyin',
+    cost: 'Publicité Qianchuan, commissions des créateurs (5 % minimum depuis avril 2026), frais de passage',
+  },
+  {
+    platform: 'Xiaohongshu',
+    cost: 'Publicité sur la recherche et dans le fil à 0,8 à 3 RMB le clic, mise en avant des notes, rémunération des créateurs plus 10 % de frais de plateforme',
   },
 ];
 
@@ -503,6 +523,55 @@ const serviceJsonLd = {
         </div>
       </div>
     </section>
+
+    {/* ---------- EVENT COSTS ---------- */}
+    <section id="event-costs" class="section ck-section" data-ck-section>
+      <div class="container">
+        <header data-ck-rv>
+          <span class="ck-kicker">Coût des opérations</span>
+          <h2 class="ck-h2">Ce que coûte vraiment une opération commerciale</h2>
+        </header>
+
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="cards">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Plateforme</th>
+                  <th scope="col">Ce que vous payez dans la boutique</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  eventCosts.map((row) => (
+                    <tr>
+                      <th scope="row">{row.platform}</th>
+                      <td>{row.cost}</td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="ck-block ck-callout" data-ck-rv>
+          <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg></span>
+          <div>
+            <p>
+              Dans un contrat de vente en propre, les remises consenties pendant l'opération
+              retombent sur la marque par le jeu de la garantie de marge. Nous les budgétons comme
+              une dépense marketing, et non comme une décision de prix.
+            </p>
+          </div>
+        </div>
+
+        <div class="ck-more" data-ck-rv>
+          <a href="/fr/guides/vendre-en-chine-sans-societe-chinoise" class="btn btn--ghost">Lire le guide complet</a>
+        </div>
+      </div>
+    </section>
+    <ChannelKit />
 
     {/* ---------- FIT ---------- */}
     <section class="section section--alt">

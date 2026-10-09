@@ -65,6 +65,7 @@ const copy: SocialInChinaCopy = {
       owner: 'Split',
       image: '/Images/social/wechat.png',
       alt: 'Une femme lit une conversation WeChat sur son téléphone dans un café de Shanghai',
+      note: 'Les publicités Moments coûtent de 30 à 180 RMB les 1 000 vues ; groupes et mini-programme ne coûtent presque rien à faire vivre.',
     },
     {
       key: 'rednote',
@@ -78,6 +79,7 @@ const copy: SocialInChinaCopy = {
       owner: 'TheRedScroll',
       image: '/Images/social/rednote.png',
       alt: "Une acheteuse fait défiler un fil beauté sur RedNote, à côté de flacons de soin et de fleurs séchées",
+      note: "C'est là que l'acheteur se décide. Les notes de petits créateurs coûtent de 300 à 2 000 RMB ; la vente se conclut souvent sur Tmall ou JD, par des liens suivis.",
     },
     {
       key: 'douyin',
@@ -91,6 +93,7 @@ const copy: SocialInChinaCopy = {
       owner: 'Split',
       image: '/Images/social/douyin.png',
       alt: "Une animatrice Douyin présente un soin devant la caméra, dans un studio éclairé par un anneau lumineux",
+      note: "C'est là que l'on achète ce que l'on regarde. Une vidéo de créateur coûte en moyenne environ 40 000 RMB ; la vente en direct revient plus cher.",
     },
     {
       key: 'weibo',
@@ -104,8 +107,11 @@ const copy: SocialInChinaCopy = {
       owner: 'TheRedScroll',
       image: '/Images/platforms/weibo.png',
       alt: "Un panneau de tendances Weibo éclaire les passants sur la Nanjing Road un soir de pluie",
+      note: "Pour les lancements et l'actualité des célébrités. La réservation de créateurs démarre à partir d'une recharge de 2 000 RMB.",
     },
   ],
+
+  guideLink: { label: 'Lire le guide complet', href: '/fr/guides/vendre-en-chine-sans-societe-chinoise' },
 
   longTail: [
     {

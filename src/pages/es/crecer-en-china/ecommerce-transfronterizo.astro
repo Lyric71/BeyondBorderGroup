@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
@@ -106,6 +107,23 @@ const compareRows = [
     tp: 'Marcas que construyen un P&L chino a largo plazo',
     dist: 'Marcas ya conocidas en China',
   },
+];
+
+const storeModelRows = [
+  { label: 'Quién es dueño del stock', pop: 'Usted', firstParty: 'La plataforma' },
+  { label: 'Quién fija el precio', pop: 'Usted', firstParty: 'La plataforma' },
+  {
+    label: 'Lo que se lleva la plataforma',
+    pop: 'Comisión del 2 % al 6 %',
+    firstParty: 'Del 20 % al 30 % en deducciones acumuladas (JD)',
+  },
+  {
+    label: 'Promociones',
+    pop: 'Las decide usted',
+    firstParty: 'Las decide la plataforma; usted paga la diferencia vía protección de margen',
+  },
+  { label: 'Operaciones', pop: 'Usted o su socio', firstParty: 'La plataforma' },
+  { label: 'Pago', pop: 'Liquidación mensual o quincenal', firstParty: 'De 30 a 60 días' },
 ];
 
 const costLedger = {
@@ -682,6 +700,75 @@ const icons: Record<string, string> = {
         </div>
       </div>
     </section>
+
+    {/* ---------- OWN STORE OR SELF-OPERATED ---------- */}
+    <section id="own-store-or-platform" class="section ck-section" data-ck-section>
+      <div class="container">
+        <div class="ck-split">
+          <header data-ck-rv>
+            <span class="ck-kicker">Titularidad de la tienda</span>
+            <h2 class="ck-h2">¿Tienda propia o la de la plataforma?</h2>
+            <p class="ck-lede">
+              Tmall y JD compran stock a las marcas que les interesan a través de sus programas de
+              venta directa. Parece cómodo: ni tienda que gestionar ni socio que contratar, solo una
+              orden de compra y un plazo de pago.
+            </p>
+          </header>
+          <div class="ck-callout" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/><path d="M4 9h16"/></svg></span>
+            <div>
+              <h3>Qué supone llevar una tienda</h3>
+              <p>
+                Montaje y diseño de la tienda. Fichas de producto y contenido en chino. Atención al
+                cliente en chino, todos los días. Inscripción en las campañas de 618 y Double 11.
+                Relación con la plataforma. Informes y conciliación. En Tmall, los socios operadores
+                cobran desde unos 45.000 yuanes al mes más entre el 5 % y el 15 % de las ventas. La
+                tarifa depende de la categoría y de cuánto conozcan ya la marca los compradores
+                chinos: una marca desconocida exige más contenido, más seeding y más trabajo de
+                campaña. Nosotros ligamos nuestra comisión a las ventas netas liquidadas tras
+                devoluciones.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="columns">
+            <table>
+              <thead>
+                <tr>
+                  <td></td>
+                  <th scope="col">Tienda propia (POP)</th>
+                  <th scope="col">Venta directa (1P)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  storeModelRows.map((r) => (
+                    <tr>
+                      <th scope="row">{r.label}</th>
+                      <td>{r.pop}</td>
+                      <td>{r.firstParty}</td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+          <p class="ck-note">
+            En JD, la protección de margen funciona así: si el margen de la plataforma sobre su
+            producto cae por debajo de un umbral pactado, normalmente entre el 10 % y el 30 %, usted
+            paga la diferencia. El stock en venta directa entra de forma automática en las campañas
+            subvencionadas, de modo que cada rebaja acaba repercutiendo en usted.
+          </p>
+        </div>
+
+        <div class="ck-more" data-ck-rv>
+          <a href="/es/guias/vender-en-china-sin-empresa-china" class="btn btn--ghost">Leer la guía completa</a>
+        </div>
+      </div>
+    </section>
+    <ChannelKit />
 
     {/* ---------- DECISION POINT (Two models) ---------- */}
     <section class="section section--alt cbs-models-section">

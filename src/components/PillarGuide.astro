@@ -1,0 +1,919 @@
+---
+/**
+ * The long-form "pillar" guide layout: full-bleed hero with key figures, a
+ * sticky contents rail with scroll-spy and a read meter, a reading progress
+ * bar, and the article on the full column. Tables and lists in the markdown
+ * opt into the channel kit visuals through `data-ck` wrappers; see
+ * src/scripts/channel-kit.ts. Behaviour of this layout lives in
+ * src/scripts/pillar-guide.ts.
+ *
+ * Used by every locale through GuidePage when a guide sets `layout: "pillar"`.
+ */
+import Layout from '../layouts/Layout.astro';
+import ChannelKit from './ChannelKit.astro';
+import { getLocaleFromUrl, localizePath } from '../i18n/utils';
+import type { CollectionEntry } from 'astro:content';
+
+type GuideData = CollectionEntry<'guides'>['data'];
+
+interface Props {
+  data: GuideData;
+  Content: any;
+  headings: { depth: number; slug: string; text: string }[];
+  words: number;
+  dateLocale: string;
+  labels: {
+    eyebrow: string;
+    updated: string;
+    print: string;
+    contents: string;
+    minRead: string;
+    start: string;
+    talk: string;
+    talkLine: string;
+  };
+  noAlternate?: boolean;
+}
+
+const { data, Content, headings, words, dateLocale, labels, noAlternate = false } = Astro.props;
+const { title, seoTitle, description, pubDate, updatedDate, author, format, heroImage, heroImageAlt, stats } = data;
+const locale = getLocaleFromUrl(Astro.url);
+const contactHref = localizePath('/contact', locale);
+const sections = headings.filter((h) => h.depth === 2);
+const minutes = Math.max(1, Math.round(words / 230));
+
+function formatDate(d?: Date) {
+  if (!d) return '';
+  return d.toLocaleDateString(dateLocale, { year: 'numeric', month: 'long', day: 'numeric' });
+}
+const showUpdated = updatedDate && pubDate && updatedDate.getTime() !== pubDate.getTime();
+---
+
+<Layout
+  title={`${seoTitle ?? title} | TheChinaPath`}
+  description={description}
+  noAlternate={noAlternate}
+  ogType="article"
+  ogImage={heroImage}
+  ogImageAlt={heroImageAlt || title}
+  publishedTime={pubDate}
+  modifiedTime={updatedDate}
+  articleAuthor={author}
+  preloadImage={heroImage}
+>
+  <div class="pg-progress" aria-hidden="true"><span data-pg-progress></span></div>
+
+  <header class="pg-hero">
+    <div class="pg-hero__bg" aria-hidden="true">
+      {heroImage && <img src={heroImage} alt="" width="1536" height="864" fetchpriority="high" data-pg-parallax />}
+    </div>
+    <div class="container pg-hero__inner">
+      <p class="pg-hero__eyebrow">
+        <span class="pg-hero__tag">{labels.eyebrow}</span>
+        {format && <span>{format}</span>}
+      </p>
+      <h1 class="pg-hero__title">{title}</h1>
+      <p class="pg-hero__lead">{description}</p>
+      <div class="pg-hero__meta">
+        <span>{author}</span>
+        <span>{formatDate(showUpdated ? updatedDate : pubDate)}</span>
+        <span>{minutes} {labels.minRead}</span>
+      </div>
+      <div class="pg-hero__actions">
+        {sections[0] && (
+          <a class="btn btn--primary pg-hero__start" href={`#${sections[0].slug}`}>
+            {labels.start}
+          </a>
+        )}
+        <button type="button" class="btn btn--ghost-light" data-pg-print>{labels.print}</button>
+      </div>
+    </div>
+    {stats.length > 0 && (
+      <div class="container pg-hero__stats-wrap">
+        <ul class="pg-hero__stats">
+          {stats.map((s, i) => (
+            <li class="pg-hero__stat" style={`--i:${i}`}>
+              <span class="pg-hero__stat-v" data-ck-count>{s.value}</span>
+              <span class="pg-hero__stat-l">{s.label}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </header>
+
+  <div class="container pg-layout">
+    <aside class="pg-toc" aria-label={labels.contents}>
+      <div class="pg-toc__card">
+        <p class="pg-toc__head">
+          <span>{labels.contents}</span>
+          <span class="pg-toc__pct" data-pg-pct>0%</span>
+        </p>
+        <span class="pg-toc__meter" aria-hidden="true"><span data-pg-meter></span></span>
+        <ol class="pg-toc__list" data-pg-toc>
+          {sections.map((h) => (
+            <li>
+              <a href={`#${h.slug}`} data-pg-link={h.slug}>{h.text}</a>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <a class="pg-toc__talk" href={contactHref}>
+        <span class="pg-toc__talk-k">{labels.talk}</span>
+        <span class="pg-toc__talk-l">{labels.talkLine}</span>
+      </a>
+    </aside>
+
+    <article class="pg-article" data-pg-article>
+      <Content />
+    </article>
+  </div>
+
+  <button type="button" class="pg-mtoc" data-pg-mtoc aria-expanded="false" aria-controls="pg-sheet">
+    <span class="pg-mtoc__ring" aria-hidden="true"><span data-pg-ring></span></span>
+    <span class="pg-mtoc__label">{labels.contents}</span>
+    <span class="pg-mtoc__current" data-pg-current>{sections[0]?.text}</span>
+  </button>
+  <div class="pg-sheet" id="pg-sheet" data-pg-sheet hidden>
+    <div class="pg-sheet__panel">
+      <p class="pg-sheet__head">{labels.contents}</p>
+      <ol class="pg-toc__list">
+        {sections.map((h) => (
+          <li>
+            <a href={`#${h.slug}`} data-pg-link={h.slug}>{h.text}</a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+
+  <ChannelKit />
+  <script>
+    import '../scripts/pillar-guide';
+  </script>
+
+  <style is:global>
+    /* ---------- Progress ---------- */
+    .pg-progress {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: 3px;
+      z-index: 1000;
+      pointer-events: none;
+    }
+    .pg-progress span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, #ff6b81, var(--bbg-blue));
+      transform: scaleX(0);
+      transform-origin: left;
+      box-shadow: 0 0 12px rgba(200, 16, 46, 0.6);
+    }
+
+    /* ---------- Hero ---------- */
+    /* The hero fills the first screen, key figures included, at every
+       breakpoint: type and spacing scale with the viewport height too. */
+    .pg-hero {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* The sticky nav (about 84px) sits above the hero in the flow. */
+      min-height: calc(100svh - 84px);
+      padding: clamp(16px, 4.5vh, 72px) 0 0;
+      background: #0e0e10;
+    }
+    .pg-hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+    }
+    .pg-hero__bg img {
+      width: 100%;
+      height: 115%;
+      object-fit: cover;
+      opacity: 0.55;
+      will-change: transform;
+    }
+    .pg-hero__bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(14, 14, 16, 0.95) 0%, rgba(14, 14, 16, 0.7) 45%, rgba(14, 14, 16, 0.2) 100%),
+        linear-gradient(180deg, transparent 50%, #0e0e10 100%);
+    }
+    .pg-hero__inner {
+      max-width: 1280px;
+    }
+    .pg-hero__eyebrow {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 14px;
+      margin: 0 0 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.72);
+    }
+    .pg-hero__tag {
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: var(--bbg-blue);
+      color: #fff;
+    }
+    .pg-hero__title {
+      max-width: 24ch;
+      margin: 0 0 clamp(10px, 2vh, 20px);
+      font-size: clamp(1.6rem, min(3.2vw, 5vh) + 0.7rem, 3.75rem);
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      color: #fff;
+    }
+    .pg-hero__lead {
+      max-width: 62ch;
+      margin: 0 0 clamp(10px, 2vh, 22px);
+      font-size: clamp(0.98rem, min(0.5vw, 1vh) + 0.85rem, 1.25rem);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .pg-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 0;
+      margin-bottom: clamp(14px, 3vh, 28px);
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .pg-hero__meta span + span::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      margin: 0 12px 3px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.45);
+    }
+    .pg-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .pg-hero__start::after {
+      content: '\2193';
+      margin-left: 8px;
+      display: inline-block;
+      transition: transform 200ms var(--ease);
+    }
+    .pg-hero__start:hover::after {
+      transform: translateY(3px);
+    }
+    .pg-hero__stats-wrap {
+      max-width: 1280px;
+    }
+    .pg-hero__stats {
+      list-style: none;
+      margin: clamp(16px, 3vh, 64px) 0 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .pg-hero__stat {
+      padding: clamp(14px, 2.6vh, 26px) 24px clamp(16px, 3vh, 30px) 0;
+      animation: ck-rise 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+      animation-delay: calc(300ms + var(--i) * 90ms);
+    }
+    .pg-hero__stat + .pg-hero__stat {
+      padding-left: 24px;
+      border-left: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .pg-hero__stat-v {
+      display: block;
+      font-size: clamp(1.2rem, min(1.7vw, 3.2vh) + 0.6rem, 2.3rem);
+      white-space: nowrap;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+      color: #fff;
+    }
+    .pg-hero__stat-l {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.88rem;
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.62);
+    }
+    /* Short screens (a 1024x768 tablet, a small laptop): tighter title. */
+    @media (max-height: 820px) and (min-width: 641px) {
+      .pg-hero__title {
+        font-size: clamp(1.6rem, min(3vw, 4.5vh) + 0.6rem, 3.5rem);
+      }
+      .pg-hero__lead {
+        margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 640px) {
+      /* One swipeable row of figures, so the hero still fits a phone screen. */
+      .pg-hero__stats {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+      }
+      .pg-hero__stats::-webkit-scrollbar {
+        display: none;
+      }
+      .pg-hero__stat,
+      .pg-hero__stat + .pg-hero__stat {
+        flex: 0 0 44%;
+        scroll-snap-align: start;
+        padding: 14px 14px 16px 0;
+      }
+      .pg-hero__stat + .pg-hero__stat {
+        padding-left: 14px;
+      }
+      .pg-hero__stat-l {
+        font-size: 0.78rem;
+      }
+      .pg-hero__title {
+        font-size: 1.55rem;
+        line-height: 1.12;
+      }
+      .pg-hero__lead {
+        font-size: 0.92rem;
+        line-height: 1.5;
+      }
+      .pg-hero__eyebrow {
+        margin-bottom: 12px;
+        font-size: 0.7rem;
+      }
+      .pg-hero__meta {
+        font-size: 0.8rem;
+      }
+      .pg-hero__actions .btn {
+        min-height: 44px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+
+    /* ---------- Layout ---------- */
+    .pg-layout {
+      max-width: 1280px;
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: clamp(32px, 4vw, 64px);
+      padding-top: clamp(48px, 6vw, 80px);
+      padding-bottom: clamp(64px, 10vw, 120px);
+    }
+    @media (max-width: 1100px) {
+      .pg-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .pg-toc {
+        display: none;
+      }
+    }
+
+    /* ---------- Contents rail ---------- */
+    .pg-toc {
+      position: sticky;
+      top: calc(var(--nav-h, 96px) + 20px);
+      align-self: start;
+      display: grid;
+      gap: 14px;
+      max-height: calc(100vh - var(--nav-h, 96px) - 40px);
+    }
+    .pg-toc__card {
+      padding: 18px 8px 12px 18px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid var(--bbg-border);
+      box-shadow: 0 20px 40px -32px rgba(15, 15, 18, 0.45);
+      overflow: auto;
+      min-height: 0;
+    }
+    .pg-toc__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 0 10px 10px 0;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+    .pg-toc__pct {
+      font-variant-numeric: tabular-nums;
+      color: var(--bbg-blue);
+      letter-spacing: 0;
+    }
+    .pg-toc__meter {
+      display: block;
+      height: 3px;
+      margin: 0 10px 12px 0;
+      border-radius: 3px;
+      background: var(--bbg-surface);
+      overflow: hidden;
+    }
+    .pg-toc__meter span {
+      display: block;
+      height: 100%;
+      background: var(--bbg-blue);
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+    .pg-toc__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 2px;
+    }
+    .pg-toc__list a {
+      position: relative;
+      display: block;
+      padding: 7px 10px 7px 16px;
+      border-radius: 10px;
+      font-size: 0.86rem;
+      line-height: 1.35;
+      color: var(--bbg-text-muted);
+      text-decoration: none;
+      transition:
+        color 200ms,
+        background 200ms;
+    }
+    .pg-toc__list a::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 50%;
+      width: 5px;
+      height: 5px;
+      margin-top: -2.5px;
+      border-radius: 50%;
+      background: var(--bbg-border);
+      transition: all 250ms;
+    }
+    .pg-toc__list a:hover {
+      color: var(--bbg-ink);
+      background: var(--bbg-surface);
+    }
+    .pg-toc__list a.is-read::before {
+      background: color-mix(in srgb, var(--bbg-blue) 40%, white);
+    }
+    .pg-toc__list a.is-active {
+      color: var(--bbg-ink);
+      font-weight: 600;
+      background: var(--bbg-blue-light);
+    }
+    .pg-toc__list a.is-active::before {
+      height: 16px;
+      margin-top: -8px;
+      border-radius: 3px;
+      background: var(--bbg-blue);
+    }
+    .pg-toc__talk {
+      display: grid;
+      gap: 4px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: var(--bbg-ink);
+      color: #fff;
+      text-decoration: none;
+      transition: transform 250ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .pg-toc__talk:hover {
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .pg-toc__talk-k {
+      font-weight: 700;
+    }
+    .pg-toc__talk-k::after {
+      content: ' \2192';
+      color: #ff6b81;
+    }
+    .pg-toc__talk-l {
+      font-size: 0.82rem;
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    /* ---------- Mobile contents ---------- */
+    .pg-mtoc {
+      position: fixed;
+      left: 50%;
+      bottom: 16px;
+      z-index: 900;
+      display: none;
+      align-items: center;
+      gap: 10px;
+      max-width: calc(100vw - 32px);
+      padding: 8px 18px 8px 8px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(26, 26, 26, 0.92);
+      backdrop-filter: blur(12px);
+      color: #fff;
+      font: inherit;
+      font-size: 0.85rem;
+      box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.5);
+      transform: translate(-50%, 140%);
+      transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+      cursor: pointer;
+    }
+    .pg-mtoc.is-shown {
+      transform: translate(-50%, 0);
+    }
+    @media (max-width: 1100px) {
+      .pg-mtoc {
+        display: inline-flex;
+      }
+    }
+    .pg-mtoc__ring {
+      position: relative;
+      flex: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: conic-gradient(var(--bbg-blue) calc(var(--p, 0) * 1%), rgba(255, 255, 255, 0.15) 0);
+    }
+    .pg-mtoc__ring span {
+      position: absolute;
+      inset: 4px;
+      border-radius: 50%;
+      background: #1a1a1a;
+    }
+    .pg-mtoc__label {
+      font-weight: 700;
+    }
+    .pg-mtoc__current {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: rgba(255, 255, 255, 0.65);
+      max-width: 52vw;
+    }
+    .pg-sheet {
+      position: fixed;
+      inset: 0;
+      z-index: 950;
+      background: rgba(0, 0, 0, 0.45);
+      display: flex;
+      align-items: flex-end;
+    }
+    .pg-sheet[hidden] {
+      display: none;
+    }
+    .pg-sheet__panel {
+      width: 100%;
+      max-height: 75vh;
+      overflow: auto;
+      padding: 22px 16px 28px;
+      border-radius: 22px 22px 0 0;
+      background: #fff;
+      animation: pg-sheet-in 360ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    @keyframes pg-sheet-in {
+      from {
+        transform: translateY(100%);
+      }
+    }
+    .pg-sheet__head {
+      margin: 0 0 12px 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bbg-text-muted);
+    }
+
+    /* ---------- Article ---------- */
+    .pg-article {
+      min-width: 0;
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      color: var(--bbg-text);
+    }
+    .pg-article > p,
+    .pg-article > ul,
+    .pg-article > ol {
+      max-width: 72ch;
+    }
+    .pg-article > p:first-child {
+      font-size: clamp(1.2rem, 0.6vw + 1.05rem, 1.45rem);
+      line-height: 1.55;
+      color: var(--bbg-ink);
+      font-weight: 500;
+    }
+    .pg-article a {
+      color: var(--bbg-blue);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
+    .pg-article strong {
+      color: var(--bbg-ink);
+    }
+    .pg-article h2 {
+      position: relative;
+      scroll-margin-top: calc(var(--nav-h, 96px) + 24px);
+      margin: clamp(56px, 7vw, 96px) 0 20px;
+      padding-top: 28px;
+      font-size: clamp(1.75rem, 1.8vw + 1rem, 2.4rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      color: var(--bbg-ink);
+      max-width: 26ch;
+    }
+    .pg-article h2::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 56px;
+      height: 4px;
+      border-radius: 4px;
+      background: linear-gradient(90deg, var(--bbg-blue), #ff6b81);
+    }
+    .pg-article h3 {
+      scroll-margin-top: calc(var(--nav-h, 96px) + 24px);
+      margin: 44px 0 12px;
+      font-size: clamp(1.25rem, 0.6vw + 1.05rem, 1.5rem);
+      line-height: 1.25;
+      color: var(--bbg-ink);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .pg-article h3::before {
+      content: '';
+      flex: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+      background: var(--bbg-blue);
+      transform: rotate(45deg);
+    }
+    .pg-article > ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pg-article > ul > li {
+      position: relative;
+      padding-left: 22px;
+      margin: 8px 0;
+    }
+    .pg-article > ul > li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 0.7em;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--bbg-blue);
+    }
+    .pg-article > ol {
+      padding-left: 1.4em;
+    }
+    .pg-article > ol > li {
+      margin: 10px 0;
+      padding-left: 6px;
+    }
+    .pg-article > ol > li::marker {
+      color: var(--bbg-blue);
+      font-weight: 700;
+    }
+    /* Plain tables (no data-ck) still get the card treatment. */
+    .pg-article .table-scroll {
+      margin: 28px 0;
+      border-radius: 16px;
+      border: 1px solid var(--bbg-border);
+      background: #fff;
+    }
+    .pg-article table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    .pg-article th,
+    .pg-article td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--bbg-border);
+      text-align: left;
+      vertical-align: top;
+    }
+    .pg-article thead th {
+      background: var(--bbg-surface);
+      color: var(--bbg-ink);
+      font-weight: 600;
+    }
+    .pg-article .ck-host {
+      margin: 32px 0 40px;
+    }
+
+    /* Quotes become source cards. */
+    .pg-article blockquote {
+      position: relative;
+      margin: 36px 0;
+      padding: 28px 28px 22px 72px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #1a1a1a, #2a1418);
+      color: #fff;
+      box-shadow: 0 30px 60px -36px rgba(200, 16, 46, 0.7);
+      overflow: hidden;
+    }
+    .pg-article blockquote::before {
+      content: '\201C';
+      position: absolute;
+      left: 22px;
+      top: 6px;
+      font-family: Georgia, serif;
+      font-size: 5rem;
+      line-height: 1;
+      color: var(--bbg-blue);
+    }
+    .pg-article blockquote p {
+      margin: 0;
+      font-size: clamp(1.1rem, 0.4vw + 1rem, 1.3rem);
+      line-height: 1.55;
+      font-weight: 500;
+      color: #fff;
+    }
+    .pg-quote__src {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px 12px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.65);
+    }
+    .pg-article .pg-quote__src a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 200ms;
+    }
+    .pg-article .pg-quote__src a:hover {
+      background: var(--bbg-blue);
+    }
+    .pg-article .pg-quote__src a::after {
+      content: '\2197';
+    }
+    @media (max-width: 640px) {
+      .pg-article blockquote {
+        padding: 56px 20px 20px;
+      }
+      .pg-article blockquote::before {
+        top: 0;
+        left: 18px;
+      }
+    }
+
+    /* Figures */
+    .pg-figure {
+      position: relative;
+      margin: 36px 0;
+      border-radius: 22px;
+      overflow: hidden;
+      aspect-ratio: 21 / 9;
+      box-shadow: 0 34px 70px -40px rgba(15, 15, 18, 0.6);
+    }
+    .pg-figure img {
+      width: 100%;
+      height: 120%;
+      object-fit: cover;
+      display: block;
+      will-change: transform;
+    }
+    @media (max-width: 640px) {
+      .pg-figure {
+        aspect-ratio: 4 / 3;
+      }
+    }
+
+    /* Closing band */
+    .pg-cta {
+      position: relative;
+      margin: 56px 0 0;
+      padding: clamp(28px, 4vw, 48px);
+      border-radius: 24px;
+      background:
+        radial-gradient(60% 80% at 100% 0%, rgba(200, 16, 46, 0.45), transparent 70%),
+        linear-gradient(135deg, #141416, #1f1f23);
+      color: rgba(255, 255, 255, 0.85);
+      overflow: hidden;
+    }
+    .pg-cta p {
+      margin: 0;
+      max-width: 52ch;
+      font-size: clamp(1.15rem, 0.6vw + 1rem, 1.4rem);
+      line-height: 1.5;
+      color: #fff;
+    }
+    .pg-article .pg-cta a {
+      display: inline-flex;
+      margin: 0 0.15em;
+      padding: 0 0.4em;
+      border-radius: 8px;
+      background: var(--bbg-blue);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 200ms;
+    }
+    .pg-article .pg-cta a:hover {
+      background: var(--bbg-blue-dark);
+    }
+
+    /* Reveal */
+    .ck-js .pg-rv {
+      opacity: 0;
+      transform: translateY(22px);
+      transition:
+        opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+        transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .ck-js .pg-rv.is-in {
+      opacity: 1;
+      transform: none;
+    }
+    .pg-article h2.pg-rv::before {
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1) 200ms;
+    }
+    .pg-article h2.pg-rv.is-in::before {
+      transform: scaleX(1);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ck-js .pg-rv,
+      .pg-hero__stat {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    @media print {
+      .pg-progress,
+      .pg-toc,
+      .pg-mtoc,
+      .pg-sheet,
+      .pg-hero__actions,
+      .ck-switch,
+      header:not(.pg-hero),
+      footer,
+      nav {
+        display: none !important;
+      }
+      .pg-hero {
+        background: none;
+        color: #000;
+        padding: 0;
+      }
+      .pg-hero__bg {
+        display: none;
+      }
+      .pg-hero__title,
+      .pg-hero__lead,
+      .pg-hero__stat-v {
+        color: #000;
+      }
+      .pg-layout {
+        display: block;
+        padding: 0;
+      }
+      .ck-visual {
+        display: none !important;
+      }
+      .ck-tablebox {
+        display: block !important;
+      }
+      .ck-tablebox[hidden] {
+        display: block !important;
+      }
+    }
+  </style>
+</Layout>

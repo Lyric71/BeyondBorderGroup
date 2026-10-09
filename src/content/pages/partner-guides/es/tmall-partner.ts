@@ -7,7 +7,14 @@
  * 35.000 RMB ≈ 4.300 euros (1 EUR ≈ 8,2 RMB).
  */
 import type { PartnerGuideCopy } from '../types';
-import { compassSteps, compassTiming, heroStats, whoPaysFaq } from './shared';
+import {
+  channelsGuideLink,
+  compassSteps,
+  compassTiming,
+  heroStats,
+  partnerFees,
+  whoPaysFaq,
+} from './shared';
 
 const copy: PartnerGuideCopy = {
   key: 'tp',
@@ -151,7 +158,7 @@ const copy: PartnerGuideCopy = {
   terms: {
     eyebrow: 'El dinero',
     title: 'Cómo cobran los Tmall Partners',
-    intro: 'La mayoría de los TP cobra una cuota mensual fija más una comisión sobre las ventas. Nuestras calculadoras de Tmall Global y JD Worldwide parten de 35.000 RMB al mes (unos 4.300 euros) más el 10% del GMV. Sirven de referencia para contrastar presupuestos reales, que varían al alza o a la baja según el tamaño de la tienda y el alcance del encargo.',
+    intro: 'La mayoría de los TP cobra una cuota mensual fija más una comisión sobre las ventas. Nuestras calculadoras de Tmall Global y JD Worldwide vienen configuradas con 35.000 RMB al mes (unos 4.300 euros) más el 10% del GMV. Esa cifra sirve de referencia para contrastar presupuestos reales, que varían al alza o a la baja según el tamaño de la tienda y el alcance del encargo.',
     warnColumn: false,
     table: {
       headers: ['Modelo', 'Remuneración', 'Cuándo encaja'],
@@ -175,6 +182,8 @@ const copy: PartnerGuideCopy = {
     },
     note: 'La publicidad se paga desde una cuenta que usted financia directamente. Los socios que se ofrecen a adelantar la inversión publicitaria suelen acabar mal. Muchas marcas reservan además un fondo anual de cofinanciación para los grandes momentos, como Double 11 o un lanzamiento. Y deje el traspaso por escrito en el contrato: contenidos, datos de clientes y cuentas publicitarias deben seguirle cuando termine la relación.',
     link: { label: 'Haga sus propios cálculos con la calculadora de Tmall Global', href: '/tools/tmall-global-setup-and-run' },
+    fees: partnerFees,
+    guideLink: channelsGuideLink,
   },
 
   mistakes: {
@@ -221,7 +230,7 @@ const copy: PartnerGuideCopy = {
       },
       {
         q: '¿Cuánto cuesta un Tmall Partner?',
-        a: 'La mayoría cobra una cuota mensual más una comisión sobre el GMV. Nuestras calculadoras parten de 35.000 RMB al mes (unos 4.300 euros) más el 10% del GMV, y los presupuestos reales varían al alza o a la baja según el tamaño de la tienda y el alcance del encargo. La publicidad va aparte y corre de su cuenta.',
+        a: 'La mayoría cobra una cuota mensual más una comisión sobre el GMV. Nuestras calculadoras vienen configuradas con 35.000 RMB al mes (unos 4.300 euros) más el 10% del GMV, y los presupuestos reales varían al alza o a la baja según el tamaño de la tienda y el alcance del encargo. La publicidad va aparte y corre de su cuenta.',
       },
       {
         q: '¿Se puede gestionar una tienda de Tmall sin TP?',

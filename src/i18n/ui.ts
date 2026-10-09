@@ -149,6 +149,17 @@ export const ui = {
 
     // Mega panel: the promise on the spine, one line per group.
     'nav.sell.title': 'Your stores, run by the people who opened them.',
+    // Sell in China spine: the cross-border channels guide.
+    'nav.sell.guide.eyebrow': 'New guide',
+    'nav.sell.guide.time': '17 min read',
+    'nav.sell.guide.title': 'Selling to China without a Chinese company',
+    'nav.sell.guide.desc': 'Every route in, what it costs and what you keep.',
+    'nav.sell.guide.stat1.v': '3 to 8%',
+    'nav.sell.guide.stat1.l': 'goes to the platform',
+    'nav.sell.guide.stat2.v': 'RMB 32 to 54',
+    'nav.sell.guide.stat2.l': 'kept per RMB 100',
+    'nav.sell.guide.cta': 'Read the guide',
+    'nav.sell.guide.alt': 'Cartons of imported goods on racks in a bonded warehouse in Ningbo',
     'nav.web.title': 'Two teams, one floor, in Shanghai.',
     'nav.find.title': 'The shortlist comes from people we have met.',
     'nav.learn.title': 'Read the market before you bet on it.',
@@ -389,6 +400,17 @@ export const ui = {
 
     // Mega panel
     'nav.sell.title': 'Vos boutiques, tenues par ceux qui les ont ouvertes.',
+    // Sell in China spine: the cross-border channels guide.
+    'nav.sell.guide.eyebrow': 'Nouveau guide',
+    'nav.sell.guide.time': '21 min de lecture',
+    'nav.sell.guide.title': 'Vendre en Chine sans société chinoise',
+    'nav.sell.guide.desc': 'Chaque voie d’accès, ce qu’elle coûte et ce qu’il vous reste.',
+    'nav.sell.guide.stat1.v': '3 à 8 %',
+    'nav.sell.guide.stat1.l': 'vont à la plateforme',
+    'nav.sell.guide.stat2.v': '32 à 54 RMB',
+    'nav.sell.guide.stat2.l': 'conservés sur 100 RMB',
+    'nav.sell.guide.cta': 'Lire le guide',
+    'nav.sell.guide.alt': 'Cartons de produits importés sur des rayonnages, dans un entrepôt sous douane de Ningbo',
     'nav.web.title': 'Deux équipes, un même étage, à Shanghai.',
     'nav.find.title': 'Notre liste courte ne compte que des gens que nous avons rencontrés.',
     'nav.learn.title': 'Lire le marché avant de miser dessus.',
@@ -604,6 +626,17 @@ export const ui = {
 
     // Mega panel
     'nav.sell.title': 'Ihre Stores, geführt von denen, die sie eröffnet haben.',
+    // Sell in China spine: the cross-border channels guide.
+    'nav.sell.guide.eyebrow': 'Neuer Ratgeber',
+    'nav.sell.guide.time': '18 Min. Lesezeit',
+    'nav.sell.guide.title': 'In China verkaufen ohne eigene Gesellschaft',
+    'nav.sell.guide.desc': 'Alle Wege in den Markt, ihre Kosten und was Ihnen bleibt.',
+    'nav.sell.guide.stat1.v': '3 bis 8 %',
+    'nav.sell.guide.stat1.l': 'gehen an die Plattform',
+    'nav.sell.guide.stat2.v': '32 bis 54 RMB',
+    'nav.sell.guide.stat2.l': 'bleiben von 100 RMB',
+    'nav.sell.guide.cta': 'Zum Ratgeber',
+    'nav.sell.guide.alt': 'Kartons mit Importware in den Regalen eines Zolllagers in Ningbo',
     'nav.web.title': 'Zwei Teams, eine Etage, in Shanghai.',
     'nav.find.title': 'Auf die Auswahlliste kommen nur Partner, die wir persönlich kennen.',
     'nav.learn.title': 'Den Markt lesen, bevor Sie auf ihn setzen.',
@@ -821,6 +854,17 @@ export const ui = {
 
     // Mega panel
     'nav.sell.title': 'Sus tiendas, en manos de quienes las abrieron.',
+    // Sell in China spine: the cross-border channels guide.
+    'nav.sell.guide.eyebrow': 'Nueva guía',
+    'nav.sell.guide.time': '21 min de lectura',
+    'nav.sell.guide.title': 'Vender en China sin empresa china',
+    'nav.sell.guide.desc': 'Todas las vías de entrada, lo que cuestan y lo que le queda.',
+    'nav.sell.guide.stat1.v': '3 a 8 %',
+    'nav.sell.guide.stat1.l': 'se lo lleva la plataforma',
+    'nav.sell.guide.stat2.v': '32 a 54 yuanes',
+    'nav.sell.guide.stat2.l': 'quedan de cada 100',
+    'nav.sell.guide.cta': 'Leer la guía',
+    'nav.sell.guide.alt': 'Cajas de productos importados en las estanterías de un depósito aduanero de Ningbo',
     'nav.web.title': 'Dos equipos, una misma planta, en Shanghai.',
     'nav.find.title': 'La lista corta sale de gente que hemos visitado.',
     'nav.learn.title': 'Leer el mercado antes de apostar por él.',

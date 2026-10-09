@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
@@ -207,6 +208,24 @@ const compliance = [
   },
 ];
 
+const offPlatform = [
+  {
+    channel: 'Xiaohongshu',
+    use: 'Seeding, avis, recherche',
+    cost: 'Notes de petits créateurs de 300 à 2 000 RMB ; clics de 0,8 à 3 RMB',
+  },
+  { channel: 'Douyin Xingtu', use: 'Vidéos de créateurs pour le seeding', cost: 'Environ 40 000 RMB par vidéo' },
+  { channel: 'WeChat', use: 'Publicités Moments, Channels, fidélisation', cost: '30 à 180 RMB les 1 000 vues' },
+  { channel: 'Bilibili', use: 'Tests et vidéos explicatives', cost: '10 000 à 400 000 RMB par vidéo' },
+  { channel: 'Zhihu', use: 'Achats réfléchis', cost: 'Clics à partir de 0,25 RMB' },
+  { channel: 'Weibo', use: 'Lancements, actualité des célébrités', cost: "À partir d'une recharge de 2 000 RMB" },
+  {
+    channel: 'Hors ligne',
+    use: 'Échantillonnage, boutiques éphémères, salons',
+    cost: 'Boutique éphémère à Shanghai à partir de 200 000 RMB',
+  },
+];
+
 const faqs = [
   {
     cat: 'Opérations',
@@ -216,22 +235,22 @@ const faqs = [
   {
     cat: 'Coût',
     q: 'Quel est le budget minimum pour faire de la publicité en Chine ?',
-    a: "Concrètement, l'ordre de grandeur s'établit autour de 100 000 yuans mensuels, soit environ 14 000 dollars, pour exploiter une plateforme avec un créatif et une optimisation à la hauteur. Une enveloppe inférieure reste possible, sans grand enseignement à la clé. Pour un lancement multiplateforme, l'investissement se situe entre 500 000 et 2 millions de yuans sur le premier trimestre. Ces fourchettes demeurent indicatives. La catégorie de produit les déplace, parfois sensiblement.",
+    a: "Concrètement, l'ordre de grandeur s'établit autour de 100 000 yuans mensuels, soit environ 12 000 euros, pour exploiter une plateforme avec un créatif et une optimisation à la hauteur. Une enveloppe inférieure reste possible, sans grand enseignement à la clé. Pour un lancement multiplateforme, l'investissement se situe entre 500 000 et 2 millions de yuans sur le premier trimestre. Ces fourchettes demeurent indicatives. La catégorie de produit les déplace, parfois sensiblement.",
   },
   {
     cat: 'Coût',
     q: 'Combien coûte la publicité sur WeChat ?',
-    a: "Les Moments ads s'établissent entre 50 et 120 yuans de CPM, soit 7 à 16 dollars. Un ciblage resserré renchérit la facture. Le ticket d'entrée pour Moments avoisine 50 000 yuans. Les emplacements dans les articles des Comptes officiels et les bannières Mini Program démarrent plus bas, à partir d'environ 15 000 yuans. Le secteur, la finesse du ciblage et la qualité du créatif tirent ces chiffres vers le haut.",
+    a: "Les Moments ads s'établissent entre 50 et 120 yuans de CPM, soit 6 à 14 euros. Un ciblage resserré renchérit la facture. Le ticket d'entrée pour Moments avoisine 50 000 yuans. Les emplacements dans les articles des Comptes officiels et les bannières Mini Program démarrent plus bas, à partir d'environ 15 000 yuans. Le secteur, la finesse du ciblage et la qualité du créatif tirent ces chiffres vers le haut.",
   },
   {
     cat: 'Coût',
     q: 'Combien coûte la publicité sur Douyin ?',
-    a: "Le CPM de la vidéo in-feed oscille entre 30 et 60 yuans, soit 4 à 8 dollars. Le minimum technique s'élève à 50 yuans par jour et par groupe d'annonces, un montant qui n'autorise aucune campagne digne de ce nom. Une enveloppe d'au moins 10 000 yuans s'impose pour que l'algorithme dispose de la matière nécessaire à son optimisation. TopView et Brand Challenges relèvent d'un tout autre ordre de grandeur, en centaines de milliers de yuans.",
+    a: "Le CPM de la vidéo in-feed oscille entre 30 et 60 yuans, soit 3 à 7 euros. Le minimum technique s'élève à 50 yuans par jour et par groupe d'annonces, un montant qui n'autorise aucune campagne digne de ce nom. Une enveloppe d'au moins 10 000 yuans s'impose pour que l'algorithme dispose de la matière nécessaire à son optimisation. TopView et Brand Challenges relèvent d'un tout autre ordre de grandeur, en centaines de milliers de yuans.",
   },
   {
     cat: 'Coût',
     q: 'Combien coûte la publicité sur RED (Xiaohongshu) ?',
-    a: 'Le CPM des feed ads démarre entre 40 et 100 yuans, soit 6 à 14 dollars. Les search ads se facturent au clic, généralement entre 1 et 5 yuans. Le seeding KOC débute autour de 300 à 1 500 yuans par publication. Les campagnes KOL couvrent un spectre étendu : environ 5 000 yuans pour un créateur émergent, plusieurs centaines de milliers pour un nom de premier plan.',
+    a: 'Le CPM des feed ads démarre entre 40 et 100 yuans, soit 5 à 12 euros. Les search ads se facturent au clic, généralement entre 1 et 5 yuans. Le seeding KOC débute autour de 300 à 1 500 yuans par publication. Les campagnes KOL couvrent un spectre étendu : environ 5 000 yuans pour un créateur émergent, plusieurs centaines de milliers pour un nom de premier plan.',
   },
   {
     cat: 'Coût',
@@ -241,7 +260,7 @@ const faqs = [
   {
     cat: 'Coût',
     q: 'Comment vos honoraires se structurent-ils ?',
-    a: 'Trois lignes distinctes. Un forfait projet couvre la mise en place. Un honoraire mensuel rémunère le pilotage en continu. Le budget média est refacturé au coût réel des plateformes, sans marge dissimulée. Les justificatifs restent communicables sur demande. Honoraire mensuel plancher : 5 000 dollars.',
+    a: 'Trois lignes distinctes. Un forfait projet couvre la mise en place. Un honoraire mensuel rémunère le pilotage en continu. Le budget média est refacturé au coût réel des plateformes, sans marge dissimulée. Les justificatifs restent communicables sur demande. Honoraire mensuel plancher : environ 4 300 euros.',
   },
   {
     cat: 'Plateformes',
@@ -497,6 +516,102 @@ const serviceJsonLd = {
         </p>
       </div>
     </section>
+
+    {/* ---------- OFF-PLATFORM ---------- */}
+    <section id="off-platform" class="section ck-section" data-ck-section>
+      <div class="container">
+        <div class="ck-split">
+          <header data-ck-rv>
+            <span class="ck-kicker">Création de la demande</span>
+            <h2 class="ck-h2">Hors plateforme : là où naît la demande</h2>
+            <p class="ck-lede">
+              Une marque étrangère qui arrive sur le marché n'a aucun volume de recherche sur Tmall
+              tant qu'on ne parle pas d'elle ailleurs. La Chine a consacré 84 milliards de RMB au
+              marketing d'influence en 2025. Douyin et Xiaohongshu en ont capté près de 65 %, et les
+              créateurs de taille intermédiaire ou modeste près de 80 % de la dépense.
+            </p>
+            <p class="ck-lede">
+              Nous procédons en cinq temps : semer auprès de nombreux petits et moyens créateurs,
+              amplifier ce qui fonctionne, relier à la boutique par des liens suivis, créer quelques
+              temps forts, puis garder le client dans WeChat.
+            </p>
+          </header>
+          <figure class="ck-figure" data-ck-rv>
+            <img
+              src="/Images/guides/channels-discovery.webp"
+              alt="Une cliente fait défiler des photos lifestyle sur son téléphone, à une table de café à Shanghai"
+              width="1536"
+              height="864"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="cards">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Canal</th>
+                  <th scope="col">Usage</th>
+                  <th scope="col">Coût habituel</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  offPlatform.map((row) => (
+                    <tr>
+                      <th scope="row">{row.channel}</th>
+                      <td>{row.use}</td>
+                      <td>{row.cost}</td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="ck-block ck-duo">
+          <div class="ck-callout ck-callout--dark" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M14 4c3 0 6 3 6 6l-8 8-6-6z"/><circle cx="15" cy="9" r="1.5"/></svg></span>
+            <div>
+              <h3>Ce que coûte un lancement</h3>
+              <p>
+                Un plan de seeding de six mois en soutien d'une nouvelle boutique transfrontalière
+                atteint environ 870 000 RMB aux grilles tarifaires actuelles : 100 notes de petits
+                créateurs, 15 créateurs intermédiaires et 2 têtes d'affiche sur Xiaohongshu, cinq
+                vidéos de créateurs sur Douyin, la mise en avant, la production et la mise en place de
+                WeChat. Nous commençons plus modestement : valider un produit auprès de petits
+                créateurs coûte environ 100 000 RMB.
+              </p>
+              <ul class="ck-stats">
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>870 000 RMB</span><span class="ck-stat__l">plan de seeding sur six mois</span></li>
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>100 000 RMB</span><span class="ck-stat__l">pour valider d'abord un produit</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ck-callout" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg></span>
+            <div>
+              <h3>Comment nous le mesurons</h3>
+              <p>
+                Xiaohongshu relie désormais ses publicités à Tmall (红猫) et à JD (红京), et suit
+                l'achat. Les vidéos de créateurs sur Douyin peuvent porter des liens Taobao et JD. Nous
+                jugeons le seeding au coût par interaction (moins de 5 RMB sur Xiaohongshu), au nombre
+                de notes qui percent et au nombre de spectateurs qui recherchent ensuite la marque.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ck-more" data-ck-rv>
+          <a href="/fr/guides/vendre-en-chine-sans-societe-chinoise" class="btn btn--ghost">Lire le guide complet</a>
+        </div>
+      </div>
+    </section>
+    <ChannelKit />
 
     {/* ---------- WHAT WE DO ---------- */}
     <section class="section section--alt">

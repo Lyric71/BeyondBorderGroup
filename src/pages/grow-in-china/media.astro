@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../components/ChannelKit.astro';
 import Layout from '../../layouts/Layout.astro';
 import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 
@@ -500,26 +501,38 @@ const serviceJsonLd = {
     </section>
 
     {/* ---------- OFF-PLATFORM ---------- */}
-    <section id="off-platform" class="section">
+    <section id="off-platform" class="section ck-section" data-ck-section>
       <div class="container">
-        <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">Demand creation</span>
-          <h2>Off-platform: where demand is made</h2>
-          <p class="section-header__lead">
-            A new foreign brand has no search volume on Tmall until people talk about it somewhere
-            else. China spent RMB 84 billion on creator marketing in 2025. Douyin and Xiaohongshu
-            took nearly 65% of it, and mid-tier and small creators nearly 80% of the spend.
-          </p>
-          <p class="section-header__lead">
-            We work in five steps: seed with many small and mid-size creators, amplify what
-            performs, link to the store with tracked links, make a few moments, and keep the
-            customer in WeChat.
-          </p>
-        </header>
+        <div class="ck-split">
+          <header data-ck-rv>
+            <span class="ck-kicker">Demand creation</span>
+            <h2 class="ck-h2">Off-platform: where demand is made</h2>
+            <p class="ck-lede">
+              A new foreign brand has no search volume on Tmall until people talk about it somewhere
+              else. China spent RMB 84 billion on creator marketing in 2025. Douyin and Xiaohongshu
+              took nearly 65% of it, and mid-tier and small creators nearly 80% of the spend.
+            </p>
+            <p class="ck-lede">
+              We work in five steps: seed with many small and mid-size creators, amplify what
+              performs, link to the store with tracked links, make a few moments, and keep the
+              customer in WeChat.
+            </p>
+          </header>
+          <figure class="ck-figure" data-ck-rv>
+            <img
+              src="/Images/guides/channels-discovery.webp"
+              alt="A shopper scrolls a feed of lifestyle photos on a phone at a cafe table in Shanghai"
+              width="1536"
+              height="864"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
 
-        <div class="cbs-rates cbs-reveal">
-          <div class="table-scroll">
-            <table class="cbs-rates__table">
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="cards">
+            <table>
               <thead>
                 <tr>
                   <th scope="col">Channel</th>
@@ -542,31 +555,43 @@ const serviceJsonLd = {
           </div>
         </div>
 
-        <div class="cbs-rates__notes">
-          <div class="cbs-rates__note cbs-reveal">
-            <h3>What a launch costs</h3>
-            <p>
-              A six-month seeding plan behind a new cross-border store comes to about RMB 870,000 at
-              current rate cards: 100 small-creator notes, 15 mid-tier and 2 top creators on
-              Xiaohongshu, five Douyin creator videos, boosts, production and WeChat set-up. We
-              start smaller: validating a product with small creators costs about RMB 100,000.
-            </p>
+        <div class="ck-block ck-duo">
+          <div class="ck-callout ck-callout--dark" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M14 4c3 0 6 3 6 6l-8 8-6-6z"/><circle cx="15" cy="9" r="1.5"/></svg></span>
+            <div>
+              <h3>What a launch costs</h3>
+              <p>
+                A six-month seeding plan behind a new cross-border store comes to about RMB 870,000
+                at current rate cards: 100 small-creator notes, 15 mid-tier and 2 top creators on
+                Xiaohongshu, five Douyin creator videos, boosts, production and WeChat set-up. We
+                start smaller: validating a product with small creators costs about RMB 100,000.
+              </p>
+              <ul class="ck-stats">
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>RMB 870,000</span><span class="ck-stat__l">six-month seeding plan</span></li>
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>RMB 100,000</span><span class="ck-stat__l">to validate a product first</span></li>
+              </ul>
+            </div>
           </div>
-          <div class="cbs-rates__note cbs-reveal" style="--reveal-delay: 120ms;">
-            <h3>How we measure it</h3>
-            <p>
-              Xiaohongshu now links ads to Tmall (红猫) and JD (红京) and tracks the purchase. Douyin
-              creator videos can carry Taobao and JD links. We judge seeding on cost per engagement
-              (under RMB 5 on Xiaohongshu), on how many notes break out, and on how many viewers
-              search the brand afterward.
-            </p>
-            <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost"
-              >Read the full guide</a
-            >
+          <div class="ck-callout" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg></span>
+            <div>
+              <h3>How we measure it</h3>
+              <p>
+                Xiaohongshu now links ads to Tmall (红猫) and JD (红京) and tracks the purchase.
+                Douyin creator videos can carry Taobao and JD links. We judge seeding on cost per
+                engagement (under RMB 5 on Xiaohongshu), on how many notes break out, and on how
+                many viewers search the brand afterward.
+              </p>
+            </div>
           </div>
+        </div>
+
+        <div class="ck-more" data-ck-rv>
+          <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost">Read the full guide</a>
         </div>
       </div>
     </section>
+    <ChannelKit />
 
     {/* ---------- WHAT WE DO ---------- */}
     <section class="section section--alt">
@@ -1312,77 +1337,6 @@ const serviceJsonLd = {
       font-size: 1.0625rem;
       line-height: 1.6;
       margin: 0;
-    }
-
-    /* ---------- OFF-PLATFORM (channel cost table + notes) ---------- */
-    .cbs-rates {
-      background: var(--bbg-white);
-      border: 1px solid var(--bbg-border);
-      border-radius: var(--radius-lg);
-      padding: clamp(var(--space-4), 2vw + 1rem, var(--space-6));
-    }
-    .cbs-rates .table-scroll {
-      margin: 0;
-    }
-    .cbs-rates__table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      font-size: 0.95rem;
-    }
-    .cbs-rates__table thead th {
-      text-align: left;
-      vertical-align: top;
-      padding: var(--space-4);
-      background: var(--bbg-surface);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--bbg-text-muted);
-      border-bottom: 1px solid var(--bbg-border);
-    }
-    .cbs-rates__table tbody th,
-    .cbs-rates__table tbody td {
-      text-align: left;
-      vertical-align: top;
-      padding: var(--space-4);
-      border-bottom: 1px solid var(--bbg-border);
-      line-height: 1.55;
-      color: #333;
-    }
-    .cbs-rates__table tbody th {
-      font-weight: 600;
-      color: var(--bbg-ink);
-      white-space: nowrap;
-    }
-    .cbs-rates__table tbody tr:last-child th,
-    .cbs-rates__table tbody tr:last-child td {
-      border-bottom: none;
-    }
-    .cbs-rates__notes {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: clamp(var(--space-5), 3vw, var(--space-7));
-      margin-top: var(--space-7);
-    }
-    .cbs-rates__note h3 {
-      font-size: clamp(1.25rem, 1vw + 1rem, 1.5rem);
-      line-height: 1.25;
-      letter-spacing: -0.01em;
-      margin: 0 0 var(--space-3);
-    }
-    .cbs-rates__note p {
-      color: var(--bbg-text);
-      font-size: 1.0625rem;
-      line-height: 1.7;
-      margin: 0 0 var(--space-4);
-    }
-    @media (max-width: 820px) {
-      .cbs-rates__notes {
-        grid-template-columns: 1fr;
-        gap: var(--space-5);
-      }
     }
 
     /* ---------- SERVICES (six- / four-card grid) ---------- */

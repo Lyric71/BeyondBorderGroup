@@ -742,12 +742,12 @@ export default defineConfig({
     '/es/analisis/china-no-es-un-solo-mercado-estrategia-2025': { status: 301, destination: '/es/analisis/china-apuesta-local-vs-plan-nacional' },
 
     // The 2025 platform map is retired in every locale; the cross-border
-    // channels guide (English only) replaces it.
+    // channels guide replaces it, each locale on its own twin.
     '/insights/china-e-commerce-platforms-2025': { status: 301, destination: '/guides/china-cross-border-ecommerce-channels' },
-    '/fr/decryptages/e-commerce-chinois-2025-plateformes': { status: 301, destination: '/guides/china-cross-border-ecommerce-channels' },
-    '/fr/decryptages/china-e-commerce-platforms-2025': { status: 301, destination: '/guides/china-cross-border-ecommerce-channels' },
-    '/de/analysen/chinesischer-e-commerce-2025-plattformen': { status: 301, destination: '/guides/china-cross-border-ecommerce-channels' },
-    '/es/analisis/ecommerce-chino-2025-plataformas': { status: 301, destination: '/guides/china-cross-border-ecommerce-channels' },
+    '/fr/decryptages/e-commerce-chinois-2025-plateformes': { status: 301, destination: '/fr/guides/vendre-en-chine-sans-societe-chinoise' },
+    '/fr/decryptages/china-e-commerce-platforms-2025': { status: 301, destination: '/fr/guides/vendre-en-chine-sans-societe-chinoise' },
+    '/de/analysen/chinesischer-e-commerce-2025-plattformen': { status: 301, destination: '/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma' },
+    '/es/analisis/ecommerce-chino-2025-plataformas': { status: 301, destination: '/es/guias/vender-en-china-sin-empresa-china' },
 
     // WO-3.1: the standalone KOL service page is retired. Creator work is
     // TheRedScroll's specialism and /social-in-china is the door onto it,

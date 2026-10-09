@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
@@ -110,6 +111,23 @@ const compareRows = [
     tp: 'Marques engagées dans une présence chinoise de long terme',
     dist: 'Marques déjà installées sur le marché chinois',
   },
+];
+
+const storeModelRows = [
+  { label: 'Propriété du stock', pop: 'Vous', firstParty: 'La plateforme' },
+  { label: 'Fixation du prix', pop: 'Vous', firstParty: 'La plateforme' },
+  {
+    label: 'Part de la plateforme',
+    pop: '2 à 6 % de commission',
+    firstParty: '20 à 30 % de déductions cumulées (JD)',
+  },
+  {
+    label: 'Promotions',
+    pop: 'Vous décidez',
+    firstParty: "La plateforme décide ; vous comblez l'écart au titre de la garantie de marge",
+  },
+  { label: 'Exploitation', pop: 'Vous ou votre partenaire', firstParty: 'La plateforme' },
+  { label: 'Paiement', pop: 'Mensuel ou deux fois par mois', firstParty: '30 à 60 jours' },
 ];
 
 const costLedger = {
@@ -690,6 +708,75 @@ const icons: Record<string, string> = {
         </div>
       </div>
     </section>
+
+    {/* ---------- OWN STORE OR SELF-OPERATED ---------- */}
+    <section id="own-store-or-platform" class="section ck-section" data-ck-section>
+      <div class="container">
+        <div class="ck-split">
+          <header data-ck-rv>
+            <span class="ck-kicker">Propriété de la boutique</span>
+            <h2 class="ck-h2">Votre boutique, ou celle de la plateforme ?</h2>
+            <p class="ck-lede">
+              Tmall et JD achètent l'un comme l'autre du stock aux marques qu'ils convoitent, par
+              leurs programmes de vente en propre. La formule paraît simple : aucune boutique à
+              animer, aucun partenaire à recruter, un bon de commande et un délai de paiement.
+            </p>
+          </header>
+          <div class="ck-callout" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/><path d="M4 9h16"/></svg></span>
+            <div>
+              <h3>Ce que suppose la gestion d'une boutique</h3>
+              <p>
+                Mise en place et design de la boutique. Fiches produits et contenus en chinois. Service
+                client en chinois, tous les jours. Inscription aux campagnes du 618 et du Double 11.
+                Relations avec la plateforme. Reporting et rapprochements. Sur Tmall, les partenaires
+                opérationnels démarrent à environ 45 000 RMB par mois, plus 5 à 15 % des ventes. Leur
+                rémunération dépend de la catégorie et de la notoriété de la marque auprès des
+                consommateurs chinois : une marque inconnue réclame davantage de contenus, de seeding et
+                de travail de campagne. Nous indexons notre commission sur les ventes nettes encaissées
+                après retours.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="columns">
+            <table>
+              <thead>
+                <tr>
+                  <td></td>
+                  <th scope="col">Votre boutique (POP)</th>
+                  <th scope="col">Vente en propre (1P)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  storeModelRows.map((r) => (
+                    <tr>
+                      <th scope="row">{r.label}</th>
+                      <td>{r.pop}</td>
+                      <td>{r.firstParty}</td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+          <p class="ck-note">
+            Chez JD, la garantie de marge joue ainsi : si la marge de la plateforme sur votre
+            produit passe sous un taux convenu, en général 10 à 30 %, vous payez la différence. Le
+            stock vendu en propre entre d'office dans les opérations subventionnées, si bien que
+            chaque baisse de prix retombe sur vous.
+          </p>
+        </div>
+
+        <div class="ck-more" data-ck-rv>
+          <a href="/fr/guides/vendre-en-chine-sans-societe-chinoise" class="btn btn--ghost">Lire le guide complet</a>
+        </div>
+      </div>
+    </section>
+    <ChannelKit />
 
     {/* ---------- DECISION POINT (Two models) ---------- */}
     <section class="section section--alt cbs-models-section">

@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../components/ChannelKit.astro';
 import Layout from '../../layouts/Layout.astro';
 import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 
@@ -689,70 +690,70 @@ const icons: Record<string, string> = {
     </section>
 
     {/* ---------- OWN STORE OR SELF-OPERATED ---------- */}
-    <section id="own-store-or-platform" class="section">
+    <section id="own-store-or-platform" class="section ck-section" data-ck-section>
       <div class="container">
-        <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">Store ownership</span>
-          <h2>Your own store, or the platform's?</h2>
-          <p class="section-header__lead">
-            Tmall and JD will both buy stock from brands they want, through their self-operated
-            programs. It looks easy: no store to run, no partner to hire, a purchase order and a
-            payment term.
-          </p>
-        </header>
+        <div class="ck-split">
+          <header data-ck-rv>
+            <span class="ck-kicker">Store ownership</span>
+            <h2 class="ck-h2">Your own store, or the platform's?</h2>
+            <p class="ck-lede">
+              Tmall and JD will both buy stock from brands they want, through their self-operated
+              programs. It looks easy: no store to run, no partner to hire, a purchase order and a
+              payment term.
+            </p>
+          </header>
+          <div class="ck-callout" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/><path d="M4 9h16"/></svg></span>
+            <div>
+              <h3>What running a store involves</h3>
+              <p>
+                Store setup and design. Listings and Chinese content. Customer service in Chinese,
+                every day. Campaign entry for 618 and Double 11. Platform relations. Reporting and
+                reconciliation. On Tmall, operating partners start at about RMB 45,000 a month plus
+                5% to 15% of sales. The fee depends on the category and on how well Chinese shoppers
+                already know the brand: an unknown brand needs more content, more seeding and more
+                campaign work. We tie our commission to net settled sales after returns.
+              </p>
+            </div>
+          </div>
+        </div>
 
-        <div class="cbs-compare cbs-compare--flush cbs-reveal">
-          <div class="cbs-compare__table-wrap">
-            <table class="cbs-compare__table">
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="columns">
+            <table>
               <thead>
                 <tr>
-                  <th scope="col" class="cbs-compare__row-head-col"></th>
-                  <th scope="col" class="cbs-compare__head cbs-compare__head--tp">
-                    <span class="cbs-compare__head-label">Your own store (POP)</span>
-                  </th>
-                  <th scope="col" class="cbs-compare__head cbs-compare__head--dist">
-                    <span class="cbs-compare__head-label">Self-operated (1P)</span>
-                  </th>
+                  <td></td>
+                  <th scope="col">Your own store (POP)</th>
+                  <th scope="col">Self-operated (1P)</th>
                 </tr>
               </thead>
               <tbody>
                 {
                   storeModelRows.map((r) => (
                     <tr>
-                      <th scope="row" class="cbs-compare__row-label">
-                        {r.label}
-                      </th>
-                      <td class="cbs-compare__cell cbs-compare__cell--tp">{r.pop}</td>
-                      <td class="cbs-compare__cell cbs-compare__cell--dist">{r.firstParty}</td>
+                      <th scope="row">{r.label}</th>
+                      <td>{r.pop}</td>
+                      <td>{r.firstParty}</td>
                     </tr>
                   ))
                 }
               </tbody>
             </table>
           </div>
-          <p class="cbs-compare__note">
+          <p class="ck-note">
             On JD, margin protection means that when the platform's margin on your product drops
             below an agreed rate, usually 10% to 30%, you pay the difference. Self-operated stock is
             pulled into subsidy events automatically, so every price cut comes back to you.
           </p>
         </div>
 
-        <div class="cbs-subblock cbs-reveal">
-          <h3>What running a store involves</h3>
-          <p>
-            Store setup and design. Listings and Chinese content. Customer service in Chinese, every
-            day. Campaign entry for 618 and Double 11. Platform relations. Reporting and
-            reconciliation. On Tmall, operating partners start at about RMB 45,000 a month plus 5%
-            to 15% of sales. The fee depends on the category and on how well Chinese shoppers
-            already know the brand: an unknown brand needs more content, more seeding and more
-            campaign work. We tie our commission to net settled sales after returns.
-          </p>
-          <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost"
-            >Read the full guide</a
-          >
+        <div class="ck-more" data-ck-rv>
+          <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost">Read the full guide</a>
         </div>
       </div>
     </section>
+    <ChannelKit />
 
     {/* ---------- DECISION POINT (Two models) ---------- */}
     <section class="section section--alt cbs-models-section">
@@ -2330,26 +2331,6 @@ const icons: Record<string, string> = {
       color: var(--bbg-text);
       line-height: 1.65;
       font-size: 0.975rem;
-    }
-
-    /* ---------- OWN STORE OR SELF-OPERATED ---------- */
-    .cbs-compare--flush {
-      margin-top: 0;
-    }
-    .cbs-subblock {
-      max-width: 760px;
-      margin: var(--space-7) auto 0;
-    }
-    .cbs-subblock h3 {
-      font-size: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
-      margin: 0 0 var(--space-3);
-      letter-spacing: -0.01em;
-    }
-    .cbs-subblock p {
-      color: var(--bbg-text);
-      line-height: 1.7;
-      font-size: 1.0625rem;
-      margin: 0 0 var(--space-4);
     }
 
     /* ---------- COST SECTION (ledger redesign) ---------- */

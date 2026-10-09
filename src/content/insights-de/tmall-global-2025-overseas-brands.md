@@ -2,6 +2,7 @@
 title: "Das Jahr, in dem 2.415 Auslandsmarken auf China setzten"
 description: "Die Tmall-Global-Bilanz 2025 zeigt, wie ausländische Marken den Einstieg nach China wirklich schaffen und wer schon jetzt vorn liegt."
 pubDate: "2026-07-13"
+updatedDate: "2026-10-09"
 author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
@@ -11,7 +12,7 @@ keyTakeaways:
   - "Nische schlägt Masse: Neue Babynahrungsmarken legten um 128 Prozent zu, über die Hälfte der neuen Personal-Care-Anbieter setzte direkt auf Haarpflege."
   - "Fünf Kategorien verdoppelten ihren Jahresumsatz: Sammelfiguren, Outdoor-Ausrüstung, Babynahrung, dekorative Kosmetik und Heimtier-Wellness."
   - "Von BORJOMI bis WHC: Die Gewinner besetzten ein enges Segment, statt dem Massenmarkt hinterherzulaufen."
-  - "Offene Türen sind kein Selbstläufer: Diese Marken hatten Kategorie, Preis und Zielkunden geklärt, bevor die erste Einheit das Lager verliess."
+  - "Offene Türen sind kein Selbstläufer: Diese Marken hatten Kategorie, Preis und Zielkunden geklärt, bevor die erste Einheit das Lager verließ."
 heroImage: "/Images/insights/tmall-global-2025-overseas-brands.webp"
 heroImageAlt: "Eine Konsumentin stöbert abends in der Tmall-Global-App durch importierte Marken"
 ---
@@ -19,6 +20,8 @@ heroImageAlt: "Eine Konsumentin stöbert abends in der Tmall-Global-App durch im
 Sechs ausländische Marken pro Tag: In diesem Tempo eröffneten im vergangenen Jahr neue Anbieter ihre Stores und begannen, in China zu verkaufen. Keine Anträge, keine Pilotprojekte. Laufende Stores, die Bestellungen verbuchen.
 
 So liest sich die Bilanz, die Tmall Global für 2025 vorgelegt hat, und sie verdient einen zweiten Blick. Tmall Global (天猫国际) ist der Cross-Border-Arm von Alibaba: Über die Plattform verkaufen Marken an Konsumenten auf dem chinesischen Festland, ohne vorher eine Gesellschaft zu gründen oder Ware zu importieren. Die Produkte laufen über ein Zolllager oder kommen direkt aus dem Ausland. Für die meisten ausländischen Marken ist das die erste echte Tür nach China.
+
+Was diese Tür kostet, Gebühr für Gebühr, und wie sie gegenüber JD, Douyin und Xiaohongshu abschneidet, steht in [unserem Ratgeber zu allen Cross-Border-Kanälen nach China](/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma).
 
 > 2025 eröffneten 2.415 ausländische Marken ihren ersten Store auf Tmall Global, ein zweistelliges Plus bei neuen Flagship-Stores gegenüber dem Vorjahr. Das entspricht mehr als sechs neuen Marken pro Tag.
 > Quelle: China Economic Net (中国经济网), nach Daten von Tmall Global

@@ -347,6 +347,18 @@ interface NavSection {
   items: NavItem[];
   /** Optional article list under the rows. The label links to the full list. */
   insights?: { label: string; href: string; all: string; items: { label: string; href: string }[] };
+  /** Optional guide that takes over the spine: thumbnail, one line, a link. */
+  guide?: {
+    eyebrow: string;
+    time: string;
+    title: string;
+    desc: string;
+    stats: { v: string; l: string }[];
+    cta: string;
+    href: string;
+    src: string;
+    alt: string;
+  };
 }
 
 const sections: NavSection[] = [
@@ -358,6 +370,21 @@ const sections: NavSection[] = [
     intro: t('nav.sell.intro'),
     cta: { label: t('nav.cta.sell'), href: lp('/grow-in-china') },
     items: sellInChina,
+    // The cross-border channels guide takes over the spine in every locale.
+    guide: {
+      eyebrow: t('nav.sell.guide.eyebrow'),
+      time: t('nav.sell.guide.time'),
+      title: t('nav.sell.guide.title'),
+      desc: t('nav.sell.guide.desc'),
+      stats: [
+        { v: t('nav.sell.guide.stat1.v'), l: t('nav.sell.guide.stat1.l') },
+        { v: t('nav.sell.guide.stat2.v'), l: t('nav.sell.guide.stat2.l') },
+      ],
+      cta: t('nav.sell.guide.cta'),
+      href: lp('/guides/china-cross-border-ecommerce-channels'),
+      src: '/Images/insights/china-cross-border-ecommerce-channels-thumb.webp',
+      alt: t('nav.sell.guide.alt'),
+    },
   },
   {
     key: 'find',
@@ -517,13 +544,45 @@ const switcherOthers = otherLocales.map((l) => ({
                     <div class="container mega__grid">
                       {/* Zone one: the spine the rail drops into */}
                       <div class="mega__spine">
-                        <span class="mega__eyebrow">{section.label}</span>
-                        <p class="mega__title">{section.title}</p>
-                        <p class="mega__intro">{section.intro}</p>
-                        {section.cta && (
-                          <a href={section.cta.href} class="mega__cta">
-                            {section.cta.label}
+                        {section.guide ? (
+                          <a href={section.guide.href} class="mguide">
+                            <span class="mguide__media">
+                              <img
+                                src={section.guide.src}
+                                alt={section.guide.alt}
+                                width="560"
+                                height="315"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                              <span class="mguide__tag">{section.guide.eyebrow}</span>
+                              <span class="mguide__time">{section.guide.time}</span>
+                            </span>
+                            <span class="mguide__body">
+                              <span class="mguide__title">{section.guide.title}</span>
+                              <span class="mguide__desc">{section.guide.desc}</span>
+                              <span class="mguide__stats">
+                                {section.guide.stats.map((s) => (
+                                  <span class="mguide__stat">
+                                    <b>{s.v}</b>
+                                    <small>{s.l}</small>
+                                  </span>
+                                ))}
+                              </span>
+                              <span class="mguide__btn">{section.guide.cta}</span>
+                            </span>
                           </a>
+                        ) : (
+                          <>
+                            <span class="mega__eyebrow">{section.label}</span>
+                            <p class="mega__title">{section.title}</p>
+                            <p class="mega__intro">{section.intro}</p>
+                            {section.cta && (
+                              <a href={section.cta.href} class="mega__cta">
+                                {section.cta.label}
+                              </a>
+                            )}
+                          </>
                         )}
                       </div>
 

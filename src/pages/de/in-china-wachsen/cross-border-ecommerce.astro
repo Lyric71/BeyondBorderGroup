@@ -1,6 +1,24 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
+
+const storeModelRows = [
+  { label: 'Wem die Ware gehört', pop: 'Ihnen', firstParty: 'Der Plattform' },
+  { label: 'Wer den Preis festlegt', pop: 'Sie', firstParty: 'Die Plattform' },
+  {
+    label: 'Anteil der Plattform',
+    pop: '2 bis 6 % Provision',
+    firstParty: '20 bis 30 % Abzüge insgesamt (JD)',
+  },
+  {
+    label: 'Aktionen',
+    pop: 'Entscheiden Sie',
+    firstParty: 'Entscheidet die Plattform; die Differenz zahlen Sie über den Margenschutz',
+  },
+  { label: 'Betrieb', pop: 'Sie oder Ihr Partner', firstParty: 'Die Plattform' },
+  { label: 'Zahlung', pop: 'Monatlich oder zweimal im Monat', firstParty: 'Nach 30 bis 60 Tagen' },
+];
 ---
 
 <Layout
@@ -89,6 +107,75 @@ import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
       </article>
     </div>
   </section>
+
+  {/* ---------- OWN STORE OR SELF-OPERATED ---------- */}
+  <section id="own-store-or-platform" class="section ck-section" data-ck-section>
+    <div class="container">
+      <div class="ck-split">
+        <header data-ck-rv>
+          <span class="ck-kicker">Wem der Store gehört</span>
+          <h2 class="ck-h2">Eigener Store oder Eigenhandel der Plattform?</h2>
+          <p class="ck-lede">
+            Tmall und JD kaufen Marken, an denen ihnen gelegen ist, die Ware über ihre
+            Eigenhandelsprogramme auch direkt ab. Das wirkt bequem: Sie müssen keinen Store führen
+            und keinen Partner beauftragen, es bleibt bei einer Bestellung und einem Zahlungsziel.
+          </p>
+        </header>
+        <div class="ck-callout" data-ck-rv>
+          <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9 5 4h14l1 5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/><path d="M4 9h16"/></svg></span>
+          <div>
+            <h3>Was der Betrieb eines Stores umfasst</h3>
+            <p>
+              Einrichtung und Gestaltung des Stores. Listings und chinesischer Content.
+              Kundenservice auf Chinesisch, an jedem Tag. Die Anmeldung zu den Kampagnen für 618
+              und Double 11. Der Kontakt zur Plattform. Reporting und Abrechnung. Auf Tmall
+              verlangen Betriebspartner ab rund 45.000 RMB im Monat plus 5 bis 15 % des Umsatzes.
+              Das Honorar hängt von der Kategorie ab und davon, wie gut chinesische Käufer die
+              Marke schon kennen: Eine unbekannte Marke braucht mehr Content, mehr Seeding und mehr
+              Kampagnenarbeit. Unsere Provision koppeln wir an den abgerechneten Nettoumsatz nach
+              Retouren.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ck-block" data-ck-rv>
+        <div class="table-scroll" data-ck="columns">
+          <table>
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col">Eigener Store (POP)</th>
+                <th scope="col">Eigenhandel (1P)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                storeModelRows.map((r) => (
+                  <tr>
+                    <th scope="row">{r.label}</th>
+                    <td>{r.pop}</td>
+                    <td>{r.firstParty}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+        <p class="ck-note">
+          Margenschutz heißt bei JD: Fällt die Marge der Plattform auf Ihr Produkt unter einen
+          vereinbarten Satz, meist 10 bis 30 %, zahlen Sie die Differenz. Ware im Eigenhandel wird
+          automatisch in Subventionsaktionen gezogen, jede Preissenkung landet also wieder bei
+          Ihnen.
+        </p>
+      </div>
+
+      <div class="ck-more" data-ck-rv>
+        <a href="/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma" class="btn btn--ghost">Zum vollständigen Ratgeber</a>
+      </div>
+    </div>
+  </section>
+  <ChannelKit />
 
   <CaseStudyStrip slugs={["viessmann","iguzzini","marriott"]} />
 

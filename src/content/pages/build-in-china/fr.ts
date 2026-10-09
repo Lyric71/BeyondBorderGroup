@@ -216,6 +216,12 @@ const copy: BuildInChinaCopy = {
     wrongWhen: 'Le mauvais choix quand',
   },
 
+  keepInWechat: {
+    title: 'Garder ses clients dans WeChat',
+    body: "La vérification d'un compte WeCom (企业微信) coûte 300 RMB par an. Les logiciels de gestion de la relation client vont d'environ 8 000 RMB par an pour une petite équipe à 150 000 RMB et plus pour un déploiement de grande entreprise. WeChat Shop prélève une commission de 1 à 5 % selon la catégorie. Les marques qui fidélisent leurs clients dans WeChat obtiennent le deuxième achat sans dépenser un yuan en publicité.",
+  },
+  guideLink: { label: 'Lire le guide complet', href: '/fr/guides/vendre-en-chine-sans-societe-chinoise' },
+
   proof: {
     eyebrow: 'Ce qui change',
     title: 'Une fois le socle en place, les chiffres bougent vite.',

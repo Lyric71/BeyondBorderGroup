@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
@@ -316,7 +317,7 @@ const faqs = [
   {
     cat: 'Coût',
     q: 'Quel surcoût représente Tmall Global ?',
-    a: "Un dépôt de 30 000 USD à l'ouverture, des frais annuels de service compris entre 5 000 et 10 000 USD selon la catégorie, une commission de 2 % à 5 % sur chaque transaction et 1 % de frais Alipay. Le dispositif passe par le cross-border ; aucune entité juridique chinoise n'est exigée.",
+    a: "Un dépôt remboursable de 50 000 RMB avec une marque enregistrée, 100 000 RMB avec une marque TM. S'y ajoutent des frais annuels de 30 000 ou 60 000 RMB selon la catégorie, une commission de 0,5 % à 5 % sur chaque transaction et environ 1 % de frais Alipay. Le dispositif passe par le cross-border ; aucune entité juridique chinoise n'est exigée.",
   },
   {
     cat: 'Stratégie',
@@ -511,6 +512,56 @@ const serviceJsonLd = {
         <span class="cbs-hero__scroll-line"></span>
         <span class="cbs-hero__scroll-text">Faire défiler</span>
       </a>
+    </section>
+
+    {/* ---------- SELLING CROSS-BORDER ON DOUYIN AND XIAOHONGSHU ---------- */}
+    <section class="section section--tight section--alt">
+      <div class="container">
+        <div class="ck-duo" data-ck-section>
+          <article class="ck-mcard" style="--ck-accent:#111111" data-ck-rv>
+            <div class="ck-mcard__media">
+              <img src="/Images/guides/channels-livestream.webp" alt="Une animatrice présente un pot de crème face à un smartphone monté sur un anneau lumineux, lors d’un live de marque" width="1536" height="864" loading="lazy" decoding="async" />
+              <span class="ck-mcard__badge">Douyin</span>
+            </div>
+            <div class="ck-mcard__body">
+              <h2>Vendre en transfrontalier sur Douyin</h2>
+              <p>
+                Douyin Global Shopping exige une société à l'étranger, une société de Chine
+                continentale qui signe en qualité d'agent solidairement responsable, et un compte
+                bancaire hors de Chine. Le dépôt va de 500 à 5 000 RMB, fixé selon les ventes du mois
+                précédent, et les frais de service de 2 à 6 % selon la catégorie.
+              </p>
+              <p>
+                La boutique coûte peu, le trafic beaucoup. Les créateurs de premier plan réclament
+                désormais 20 % de commission ou davantage, et une session dédiée avec une tête
+                d'affiche coûte de 1 à 3 millions de RMB en frais de passage. Publicité comprise, une
+                vente portée par un créateur peut absorber 35 à 50 % du GMV. Les livestreams animés
+                par la boutique de la marque reviennent environ 10 points moins cher : c'est pourquoi
+                nous les bâtissons en premier.
+              </p>
+            </div>
+          </article>
+          <article class="ck-mcard" style="--ck-accent:#ff2442" data-ck-rv>
+            <div class="ck-mcard__media">
+              <img src="/Images/guides/channels-discovery.webp" alt="Une cliente fait défiler des photos lifestyle sur son téléphone, à une table de café à Shanghai" width="1536" height="864" loading="lazy" decoding="async" />
+              <span class="ck-mcard__badge">Xiaohongshu</span>
+            </div>
+            <div class="ck-mcard__body">
+              <h2>Vendre en transfrontalier sur Xiaohongshu</h2>
+              <p>
+                Xiaohongshu ouvre une boutique transfrontalière aux sociétés étrangères adossées à un
+                garant en Chine continentale : dépôt d'environ 350 euros plus un montant variable,
+                frais de service de 2 à 5 %, frais de paiement de 0,7 %. Pour la plupart des produits
+                de marque, pourtant, c'est sur Xiaohongshu que l'acheteur se décide, et sur Tmall ou
+                JD qu'il paie. Depuis 2025, les publicités Xiaohongshu peuvent renvoyer directement
+                vers les applications Tmall et JD, et suivre la vente jusqu'au bout.
+              </p>
+              <a href="/fr/guides/vendre-en-chine-sans-societe-chinoise" class="btn btn--ghost">Lire le guide complet</a>
+            </div>
+          </article>
+        </div>
+        <ChannelKit />
+      </div>
     </section>
 
     {/* ---------- TWO TRUTHS ---------- */}

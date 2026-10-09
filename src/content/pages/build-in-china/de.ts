@@ -213,6 +213,12 @@ const copy: BuildInChinaCopy = {
     wrongWhen: 'Falsch, wenn',
   },
 
+  keepInWechat: {
+    title: 'Kunden in WeChat halten',
+    body: 'Die Verifizierung eines WeCom-Kontos (企业微信) kostet 300 RMB im Jahr. Software für das Kundenmanagement beginnt bei rund 8.000 RMB im Jahr für ein kleines Team und reicht bis 150.000 RMB und mehr für den Einsatz im Konzern. WeChat Shop nimmt je nach Kategorie 1 bis 5 % Provision. Wer seine Kunden hier hält, zahlt für den zweiten Kauf kein Werbegeld.',
+  },
+  guideLink: { label: 'Zum vollständigen Ratgeber', href: '/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma' },
+
   proof: {
     eyebrow: 'Was sich ändert',
     title: 'Steht das Fundament, bewegen sich die Zahlen schnell.',

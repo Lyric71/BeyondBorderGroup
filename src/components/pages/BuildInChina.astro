@@ -2056,12 +2056,48 @@ const icons: Record<string, string> = {
       background: var(--bbg-border);
     }
 
-    /* Optional "keeping customers in WeChat" callout (English only for now) */
-    .bic-keep {
+    /* Optional "keeping customers in WeChat" callout: a dark card with a
+       WeChat-green rail, title on the left, figures on the right. */
+    .bic-icp__card.bic-keep {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(180px, 0.35fr) 1fr;
+      gap: var(--space-5);
+      align-items: start;
       margin-top: var(--space-6);
+      padding: clamp(24px, 3vw, 36px);
+      border: 0;
+      border-radius: 20px;
+      background:
+        radial-gradient(60% 120% at 100% 0%, rgba(7, 193, 96, 0.22), transparent 70%),
+        linear-gradient(140deg, #141416, #1d2420);
+      color: rgba(255, 255, 255, 0.82);
+      box-shadow: 0 30px 60px -36px rgba(7, 193, 96, 0.55);
+      overflow: hidden;
     }
-    .bic-keep p:last-child {
-      margin-bottom: 0;
+    .bic-icp__card.bic-keep::before {
+      content: '';
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: #07c160;
+    }
+    .bic-keep .bic-icp__h3 {
+      margin: 0;
+      color: #fff;
+      font-size: clamp(1.2rem, 0.8vw + 1rem, 1.5rem);
+      line-height: 1.25;
+    }
+    .bic-keep p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.7;
+    }
+    @media (max-width: 760px) {
+      .bic-icp__card.bic-keep {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+      }
     }
     .bic-more {
       margin-top: var(--space-4);

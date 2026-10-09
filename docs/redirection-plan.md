@@ -375,14 +375,17 @@ curl -sI https://www.beyondbordergroup.com/foreign-brands-in-china-why-most-mark
 ## Notes on the insight migration
 
 - Retired 2026-10-09: `china-e-commerce-platforms-2025` (EN, FR, DE, ES) is
-  replaced by the guide `/guides/china-cross-border-ecommerce-channels`
-  (English only). `/insights/china-e-commerce-platforms-2025`,
-  `/fr/decryptages/e-commerce-chinois-2025-plateformes`,
-  `/fr/decryptages/china-e-commerce-platforms-2025`,
-  `/de/analysen/chinesischer-e-commerce-2025-plattformen` and
-  `/es/analisis/ecommerce-chino-2025-plataformas` all 301 to the guide, and
-  the legacy WordPress URL goes there in one hop (`mergedInsights` in
-  `astro.config.mjs`).
+  replaced by the guide `/guides/china-cross-border-ecommerce-channels`.
+  `/insights/china-e-commerce-platforms-2025` 301s to it, and the legacy
+  WordPress URL goes there in one hop (`mergedInsights` in
+  `astro.config.mjs`). Each locale lands on its own twin:
+  `/fr/decryptages/e-commerce-chinois-2025-plateformes` and
+  `/fr/decryptages/china-e-commerce-platforms-2025` ->
+  `/fr/guides/vendre-en-chine-sans-societe-chinoise`;
+  `/de/analysen/chinesischer-e-commerce-2025-plattformen` ->
+  `/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma`;
+  `/es/analisis/ecommerce-chino-2025-plataformas` ->
+  `/es/guias/vender-en-china-sin-empresa-china`.
 
 - Every article keeps its original WordPress slug. The only change is the
   namespace (`/<slug>` -> `/insights/<slug>`). This keeps the 301 map 1:1 and

@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
@@ -361,11 +362,183 @@ const icons: Record<string, string> = {
         </div>
       </div>
 
-      <a href="#big-five" class="lcp-hero__scroll" aria-label="Bajar a la siguiente sección">
+      <a href="#ways-in" class="lcp-hero__scroll" aria-label="Bajar a la siguiente sección">
         <span class="lcp-hero__scroll-line"></span>
         <span class="lcp-hero__scroll-text">Scroll</span>
       </a>
     </section>
+
+    {/* ---------- SALES CHANNELS AND COSTS (tables) ---------- */}
+    <section id="ways-in" class="section ck-section lcp-ways" data-ck-section>
+      <div class="container">
+        <header class="section-header" data-ck-rv>
+          <span class="eyebrow">Canales y costes</span>
+          <h2>Tres maneras de vender en China, dos puertas de entrada</h2>
+          <p>
+            En China, cualquier canal se reduce a dos decisiones. ¿Quién es dueño del stock: la
+            plataforma, que lo compra y lo vende con su propio nombre, o la marca, al frente de su
+            propia tienda? ¿Y cómo entra el producto en el país: por la vía transfronteriza, sin
+            empresa china ni registro, o por el comercio general, a través de un importador chino?
+          </p>
+        </header>
+
+        <div class="table-scroll" data-ck="matrix" data-ck-rv>
+          <table class="lcp-ways__table">
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col">Transfronterizo</th>
+                <th scope="col">Comercio general</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Vender a la plataforma (1P)</th>
+                <td>Venta directa de Tmall Global y de JD Global</td>
+                <td>Tmall Supermarket, JD Supermarket</td>
+              </tr>
+              <tr>
+                <th scope="row">Llevar tienda propia (POP)</th>
+                <td>Tienda insignia en Tmall Global, tienda en JD Global</td>
+                <td>Tiendas nacionales en Tmall y JD</td>
+              </tr>
+              <tr>
+                <th scope="row">Vender a través del contenido</th>
+                <td>Douyin Global Shopping, tienda transfronteriza de Xiaohongshu</td>
+                <td>Tiendas nacionales en Douyin y Xiaohongshu</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="lcp-ways__copy" data-ck-rv>
+          <p>
+            Las tiendas de Tmall Global y JD Global son las únicas vías que conservan el control del
+            precio sin una empresa china propia. Por ahí empieza la mayoría de las marcas
+            extranjeras.
+          </p>
+        </div>
+
+        <div class="lcp-ways__sub" data-ck-rv>
+          <h3>Cinco vías de entrada, cinco perfiles de coste</h3>
+        </div>
+
+        <div class="table-scroll" data-ck="cards" data-ck-rv>
+          <table class="lcp-ways__table">
+            <thead>
+              <tr>
+                <th scope="col">Vía</th>
+                <th scope="col">Desembolso inicial</th>
+                <th scope="col">Tarifas de plataforma</th>
+                <th scope="col">Partida más pesada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Tienda insignia en Tmall Global</th>
+                <td>Fianza de 50.000 a 100.000 yuanes; 30.000 o 60.000 yuanes al año</td>
+                <td>Del 0,5 % al 5 %, más cerca de un 1 % por el cobro</td>
+                <td>Publicidad en Alimama y socio operador</td>
+              </tr>
+              <tr>
+                <th scope="row">Tienda en JD Global</th>
+                <td>Fianza de unos 4.300 a 26.000 euros; sin cuota anual</td>
+                <td>Del 2 % al 6 %, más un 0,9 %</td>
+                <td>Publicidad en JD y socio operador</td>
+              </tr>
+              <tr>
+                <th scope="row">Venta directa de Tmall o JD</th>
+                <td>JD: fianza de calidad de unos 17.000 euros</td>
+                <td>Sin comisión; deducciones del 20 % al 30 %</td>
+                <td>Protección de margen en las promociones</td>
+              </tr>
+              <tr>
+                <th scope="row">Douyin Global Shopping</th>
+                <td>Fianza de 500 a 5.000 yuanes, según las ventas del mes anterior</td>
+                <td>Del 2 % al 6 %</td>
+                <td>Creadores al 20 % o más, y publicidad</td>
+              </tr>
+              <tr>
+                <th scope="row">Tienda transfronteriza en Xiaohongshu</th>
+                <td>Unos 350 euros más una fianza variable</td>
+                <td>Del 2 % al 5 %, más un 0,7 %</td>
+                <td>Creadores y anuncios de búsqueda</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="lcp-ways__sub" data-ck-rv>
+          <h3>Siete capas de coste, con distinto peso según la plataforma</h3>
+          <p>
+            Todas las vías se pagan en las mismas siete capas. Las dos primeras no cambian nunca. Las
+            demás varían con el tipo de plataforma.
+          </p>
+        </div>
+
+        <div class="table-scroll" data-ck="layers" data-ck-rv>
+          <table class="lcp-ways__table">
+            <thead>
+              <tr>
+                <th scope="col">Capa</th>
+                <th scope="col">eCommerce: Tmall, JD</th>
+                <th scope="col">Social: Douyin, Rednote</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Marketing fuera de la plataforma</th>
+                <td>Fuerte. Crea la demanda</td>
+                <td>Ligero. El contenido vive en la plataforma</td>
+              </tr>
+              <tr>
+                <th scope="row">Marketing dentro de la plataforma</th>
+                <td>Cerca del 20 % de las ventas. Capta las búsquedas</td>
+                <td>Del 35 % al 50 % del GMV. Es la venta misma</td>
+              </tr>
+              <tr>
+                <th scope="row">Operaciones</th>
+                <td>Equipo de tienda (TP), cuota fija más del 5 % al 15 %</td>
+                <td>Equipo de contenido y directos (DP)</td>
+              </tr>
+              <tr>
+                <th scope="row">Logística en China</th>
+                <td>De 10 a 15 yuanes por pedido desde depósito</td>
+                <td>Lo mismo, más devoluciones en torno al 35 %</td>
+              </tr>
+              <tr>
+                <th scope="row">Tarifas de plataforma e impuestos</th>
+                <td>Del 3 % al 8 % más el 9,1 % de impuesto; cuota anual en Tmall Global</td>
+                <td>Del 2 % al 6 % más el 9,1 % de impuesto; sin cuota anual</td>
+              </tr>
+              <tr>
+                <th scope="row">Logística hasta China</th>
+                <td colspan="2">
+                  Igual en ambos casos: flete hasta la zona franca, seguro y de 380 a 500 yuanes de
+                  entrada por envío
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Coste del producto</th>
+                <td colspan="2">
+                  Igual en ambos casos: producto a precio de exportación, más stock gratuito para
+                  muestras y creadores
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="lcp-ways__copy" data-ck-rv>
+          <p>
+            En Tmall y JD, la demanda se fabrica fuera y la tienda la recoge. En Douyin y Rednote, el
+            contenido es la tienda.
+          </p>
+          <a href="/es/guias/vender-en-china-sin-empresa-china" class="btn btn--ghost">Leer la guía completa</a>
+        </div>
+      </div>
+    </section>
+    <ChannelKit />
 
     {/* ---------- BIG FIVE INTRO ---------- */}
     <section id="big-five" class="section lcp-bigfive-intro">
@@ -1301,6 +1474,53 @@ const icons: Record<string, string> = {
       .lcp-hero__meta {
         gap: var(--space-4);
       }
+    }
+
+    /* ---------- SALES CHANNELS AND COSTS (tables) ---------- */
+    .lcp-ways .section-header {
+      margin-bottom: var(--space-5);
+    }
+    .lcp-ways .section-header p,
+    .lcp-ways__copy p,
+    .lcp-ways__sub p {
+      max-width: 72ch;
+      color: var(--bbg-text);
+    }
+    .lcp-ways__sub {
+      margin-top: var(--space-6);
+    }
+    .lcp-ways__sub h3 {
+      margin-bottom: var(--space-3);
+    }
+    .lcp-ways__table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    .lcp-ways__table th,
+    .lcp-ways__table td {
+      padding: var(--space-3) var(--space-4);
+      border-bottom: 1px solid var(--bbg-border);
+      vertical-align: top;
+    }
+    .lcp-ways__table thead th,
+    .lcp-ways__table thead td {
+      background: var(--bbg-surface);
+      color: var(--bbg-ink);
+      font-weight: 600;
+    }
+    .lcp-ways__table tbody th {
+      color: var(--bbg-ink);
+      font-weight: 600;
+    }
+    .lcp-ways__table tbody tr:last-child > * {
+      border-bottom: 0;
+    }
+    .lcp-ways__copy .btn--ghost {
+      margin-top: var(--space-2);
     }
 
     /* ---------- QUICK BAR (anchor links) ---------- */

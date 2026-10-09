@@ -6,7 +6,14 @@
  * Global et JD Worldwide (src/pages/tools/*), présentées comme telles.
  */
 import type { PartnerGuideCopy } from '../types';
-import { compassSteps, compassTiming, heroStats, whoPaysFaq } from './shared';
+import {
+  channelsGuideLink,
+  compassSteps,
+  compassTiming,
+  heroStats,
+  partnerFees,
+  whoPaysFaq,
+} from './shared';
 
 const copy: PartnerGuideCopy = {
   key: 'tp',
@@ -174,6 +181,8 @@ const copy: PartnerGuideCopy = {
     warnColumn: false,
     note: 'La publicité transite par un compte que vous approvisionnez directement. Les montages où le partenaire avance les dépenses publicitaires finissent souvent mal. Beaucoup de marques réservent aussi une enveloppe annuelle de cofinancement pour les temps forts, Double 11 ou lancement. Inscrivez enfin la passation au contrat : contenus, données clients et comptes publicitaires doivent vous revenir à la fin de la collaboration.',
     link: { label: 'Chiffrer votre projet avec notre calculateur Tmall Global', href: '/tools/tmall-global-setup-and-run' },
+    fees: partnerFees,
+    guideLink: channelsGuideLink,
   },
 
   mistakes: {

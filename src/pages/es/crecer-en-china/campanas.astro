@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
@@ -150,6 +151,25 @@ const calendar = [
     prep: '5 semanas antes',
     what: 'El último empujón del año. Fuerte para marcas pequeñas y para liquidar stock.',
     who: 'Marcas pequeñas, liquidación, llegadas tardías',
+  },
+];
+
+const eventCosts = [
+  {
+    platform: 'Tmall',
+    cost: 'Publicidad en Alimama, comisión de afiliación del 5 % al 50 % y los descuentos que la marca financia en 88VIP y en las campañas de rebajas',
+  },
+  {
+    platform: 'JD',
+    cost: 'Publicidad en JD a unos 10-40 yuanes por pedido, afiliados y costes de campaña que pueden sumar del 15 % al 20 % de la facturación durante el 618 y el 11.11',
+  },
+  {
+    platform: 'Douyin',
+    cost: 'Publicidad en Qianchuan, comisión a creadores (mínimo del 5 % desde abril de 2026) y tarifas de entrada',
+  },
+  {
+    platform: 'Xiaohongshu',
+    cost: 'Anuncios en búsqueda y en el feed a 0,8-3 yuanes por clic, impulso de notas y honorarios de creadores más un 10 % para la plataforma',
   },
 ];
 
@@ -480,6 +500,54 @@ const serviceJsonLd = {
         </div>
       </div>
     </section>
+
+    {/* ---------- EVENT COSTS ---------- */}
+    <section id="event-costs" class="section ck-section" data-ck-section>
+      <div class="container">
+        <header data-ck-rv>
+          <span class="ck-kicker">Coste de las campañas</span>
+          <h2 class="ck-h2">Lo que cuesta de verdad una campaña de ventas</h2>
+        </header>
+
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="cards">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Plataforma</th>
+                  <th scope="col">Lo que se paga dentro de la tienda</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  eventCosts.map((row) => (
+                    <tr>
+                      <th scope="row">{row.platform}</th>
+                      <td>{row.cost}</td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="ck-block ck-callout" data-ck-rv>
+          <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg></span>
+          <div>
+            <p>
+              En la venta directa, los descuentos de campaña vuelven a la marca por la vía de la
+              protección de margen. Por eso los presupuestamos como gasto de marketing.
+            </p>
+          </div>
+        </div>
+
+        <div class="ck-more" data-ck-rv>
+          <a href="/es/guias/vender-en-china-sin-empresa-china" class="btn btn--ghost">Leer la guía completa</a>
+        </div>
+      </div>
+    </section>
+    <ChannelKit />
 
     {/* ---------- FIT ---------- */}
     <section class="section section--alt">

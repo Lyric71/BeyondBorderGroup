@@ -2,7 +2,7 @@
 title: "140 millones de compradores y solo un 3 % de importaciones"
 description: "China suma 140 millones de compradores transfronterizos. El producto importado apenas roza el 3 %. La oportunidad está en esa brecha."
 pubDate: "2026-07-23"
-updatedDate: "2026-07-23"
+updatedDate: "2026-10-09"
 author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: ["Tmall", "JD", "Douyin"]
@@ -26,6 +26,9 @@ electrónico transfronterizo.
 Es, más o menos, como si toda la población de Japón comprara producto
 extranjero en plataformas chinas. Ninguna de esas operaciones obligó a una
 marca extranjera a constituir antes una sociedad en China.
+
+Por qué puerta entrar, y cuánto le cuesta a una marca mantener abierta cada
+una, lo explica [nuestra guía de todos los canales transfronterizos hacia China](/es/guias/vender-en-china-sin-empresa-china).
 
 > China cuenta ya con 140 millones de personas que compran en todo el mundo
 > por comercio electrónico transfronterizo. En el primer semestre de 2026,

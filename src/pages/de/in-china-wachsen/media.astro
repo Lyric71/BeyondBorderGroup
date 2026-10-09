@@ -1,6 +1,21 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
+
+const offPlatform = [
+  {
+    channel: 'Xiaohongshu',
+    use: 'Seeding, Bewertungen, Suche',
+    cost: 'Notes kleiner Creator 300 bis 2.000 RMB; Klicks 0,8 bis 3 RMB',
+  },
+  { channel: 'Douyin Xingtu', use: 'Creator-Videos fürs Seeding', cost: 'Rund 40.000 RMB je Video' },
+  { channel: 'WeChat', use: 'Moments-Anzeigen, Channels, Kundenbindung', cost: '30 bis 180 RMB je 1.000 Aufrufe' },
+  { channel: 'Bilibili', use: 'Testberichte und Erklärvideos', cost: '10.000 bis 400.000 RMB je Video' },
+  { channel: 'Zhihu', use: 'Wohlüberlegte Käufe', cost: 'Klicks ab 0,25 RMB' },
+  { channel: 'Weibo', use: 'Launches, Auftritte von Prominenten', cost: 'Ab einer Aufladung von 2.000 RMB' },
+  { channel: 'Offline', use: 'Sampling, Pop-ups, Messen', cost: 'Pop-up in Shanghai ab 200.000 RMB' },
+];
 ---
 
 <Layout
@@ -83,6 +98,102 @@ import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
       </article>
     </div>
   </section>
+
+  {/* ---------- OFF-PLATFORM ---------- */}
+  <section id="off-platform" class="section ck-section" data-ck-section>
+    <div class="container">
+      <div class="ck-split">
+        <header data-ck-rv>
+          <span class="ck-kicker">Nachfrage schaffen</span>
+          <h2 class="ck-h2">Außerhalb der Plattform entsteht die Nachfrage</h2>
+          <p class="ck-lede">
+            Eine neue ausländische Marke hat auf Tmall kein Suchvolumen, solange niemand anderswo
+            über sie spricht. China gab 2025 für Creator-Marketing 84 Milliarden RMB aus. Douyin
+            und Xiaohongshu kamen auf fast 65 % davon, mittlere und kleine Creator auf fast 80 %
+            der Ausgaben.
+          </p>
+          <p class="ck-lede">
+            Wir arbeiten in fünf Schritten: Seeding mit vielen kleinen und mittleren Creatorn, dann
+            Werbegeld hinter das, was funktioniert, nachverfolgbare Links in den Store, einige
+            wenige große Momente und schließlich die Bindung der Kunden in WeChat.
+          </p>
+        </header>
+        <figure class="ck-figure" data-ck-rv>
+          <img
+            src="/Images/guides/channels-discovery.webp"
+            alt="Eine Kundin scrollt in einem Café in Shanghai durch Lifestyle-Fotos auf dem Smartphone"
+            width="1536"
+            height="864"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      </div>
+
+      <div class="ck-block" data-ck-rv>
+        <div class="table-scroll" data-ck="cards">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Kanal</th>
+                <th scope="col">Wofür</th>
+                <th scope="col">Übliche Kosten</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                offPlatform.map((row) => (
+                  <tr>
+                    <th scope="row">{row.channel}</th>
+                    <td>{row.use}</td>
+                    <td>{row.cost}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="ck-block ck-duo">
+        <div class="ck-callout ck-callout--dark" data-ck-rv>
+          <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M14 4c3 0 6 3 6 6l-8 8-6-6z"/><circle cx="15" cy="9" r="1.5"/></svg></span>
+          <div>
+            <h3>Was ein Launch kostet</h3>
+            <p>
+              Ein sechsmonatiger Seeding-Plan hinter einem neuen Cross-Border-Store kommt nach
+              aktuellen Preislisten auf rund 870.000 RMB: 100 Notes kleiner Creator, 15 mittlere
+              und 2 Top-Creator auf Xiaohongshu, fünf Creator-Videos auf Douyin, Boosts, Produktion
+              und der Aufbau von WeChat. Wir fangen kleiner an. Ein Produkt mit kleinen Creatorn zu
+              validieren kostet rund 100.000 RMB.
+            </p>
+            <ul class="ck-stats">
+              <li class="ck-stat"><span class="ck-stat__v" data-ck-count>870.000 RMB</span><span class="ck-stat__l">sechsmonatiger Seeding-Plan</span></li>
+              <li class="ck-stat"><span class="ck-stat__v" data-ck-count>100.000 RMB</span><span class="ck-stat__l">um ein Produkt zuerst zu validieren</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ck-callout" data-ck-rv>
+          <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg></span>
+          <div>
+            <h3>Wie wir messen</h3>
+            <p>
+              Xiaohongshu verknüpft Anzeigen inzwischen mit Tmall (红猫) und JD (红京) und verfolgt
+              den Kauf. Creator-Videos auf Douyin können Links zu Taobao und JD tragen. Seeding
+              bewerten wir nach den Kosten je Interaktion (auf Xiaohongshu unter 5 RMB), nach der
+              Zahl der Notes, die durchstarten, und danach, wie viele Zuschauer anschließend nach
+              der Marke suchen.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ck-more" data-ck-rv>
+        <a href="/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma" class="btn btn--ghost">Zum vollständigen Ratgeber</a>
+      </div>
+    </div>
+  </section>
+  <ChannelKit />
 
   <CaseStudyStrip slugs={["blue-insurance","mission-foods","jaguar-land-rover"]} />
 

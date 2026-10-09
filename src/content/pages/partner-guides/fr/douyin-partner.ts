@@ -6,7 +6,14 @@
  * (src/pages/tools/douyin-cost-calculator.astro), présentés comme tels.
  */
 import type { PartnerGuideCopy } from '../types';
-import { compassSteps, compassTiming, heroStats, whoPaysFaq } from './shared';
+import {
+  channelsGuideLink,
+  compassSteps,
+  compassTiming,
+  heroStats,
+  partnerFees,
+  whoPaysFaq,
+} from './shared';
 
 const copy: PartnerGuideCopy = {
   key: 'dp',
@@ -183,6 +190,8 @@ const copy: PartnerGuideCopy = {
     },
     warnColumn: true,
     link: { label: 'Chiffrer votre projet avec notre calculateur de coûts Douyin', href: '/tools/douyin-cost-calculator' },
+    fees: partnerFees,
+    guideLink: channelsGuideLink,
   },
 
   mistakes: {

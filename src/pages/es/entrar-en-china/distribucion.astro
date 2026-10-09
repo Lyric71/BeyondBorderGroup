@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
@@ -392,11 +393,48 @@ const contextCards = [
         </div>
       </div>
 
-      <a href="#two-truths" class="dis-hero__scroll" aria-label="Ir a la siguiente sección">
+      <a href="#beyond-cross-border" class="dis-hero__scroll" aria-label="Ir a la siguiente sección">
         <span class="dis-hero__scroll-line"></span>
         <span class="dis-hero__scroll-text">Scroll</span>
       </a>
     </section>
+
+    {/* ---------- BRIDGE FROM CROSS-BORDER ---------- */}
+    <section id="beyond-cross-border" class="section ck-section ck-section--dark" data-ck-section>
+      <div class="container ck-split">
+        <div data-ck-rv>
+          <span class="ck-kicker">Comercio general</span>
+          <h2 class="ck-h2">Cuando el transfronterizo se queda corto</h2>
+          <p class="ck-lede">
+            El stock transfronterizo no puede venderse en tiendas físicas ni abastecer la entrega en
+            30 minutos, y cada comprador tiene un tope de 26.000 yuanes al año. Cuando un producto ya
+            funciona, el comercio general abre las tiendas nacionales, el comercio instantáneo y los
+            lineales físicos. Exige un importador chino, etiquetado en chino y registro del
+            producto, y paga aranceles completos más un 13 % de IVA. A partir de diciembre de 2026,
+            la cosmética importada podrá llevar etiquetas electrónicas con código QR y acogerse a
+            reglas más sencillas en su primera importación.
+          </p>
+          <ul class="ck-stats">
+            <li class="ck-stat"><span class="ck-stat__v" data-ck-count>26.000 yuanes</span><span class="ck-stat__l">tope transfronterizo por comprador y año</span></li>
+            <li class="ck-stat"><span class="ck-stat__v" data-ck-count>13 %</span><span class="ck-stat__l">de IVA en el comercio general, más aranceles completos</span></li>
+          </ul>
+          <div class="ck-more">
+            <a href="/es/guias/vender-en-china-sin-empresa-china" class="btn btn--primary">Leer la guía completa</a>
+          </div>
+        </div>
+        <figure class="ck-figure" data-ck-rv>
+          <img
+            src="/Images/insights/china-cross-border-ecommerce-channels.webp"
+            alt="Cajas de productos importados en las estanterías de un depósito aduanero de Ningbo"
+            width="1536"
+            height="864"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      </div>
+    </section>
+    <ChannelKit />
 
     {/* ---------- TWO TRUTHS / CONTEXT ---------- */}
     <section id="two-truths" class="section">

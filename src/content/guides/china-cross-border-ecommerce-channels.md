@@ -8,6 +8,16 @@ author: "TheChinaPath"
 format: "Every channel and its costs"
 heroImage: "/Images/insights/china-cross-border-ecommerce-channels.webp"
 heroImageAlt: "Cartons of imported skincare on racks inside a bonded warehouse in Ningbo, with a picker scanning an order"
+layout: "pillar"
+stats:
+  - value: "3 to 8%"
+    label: "of sales goes to the platform"
+  - value: "RMB 32 to 54"
+    label: "kept from each RMB 100, before product cost"
+  - value: "9.1%"
+    label: "cross-border tax on most goods"
+  - value: "RMB 26,000"
+    label: "yearly cap per shopper"
 ---
 
 A foreign brand can sell to Chinese consumers without opening a company in China. Four storefronts make it possible: Tmall Global, JD Global, Douyin Global Shopping and a Xiaohongshu cross-border store. The platforms also buy stock outright from brands they want.
@@ -28,7 +38,7 @@ The second is how the product enters China.
 
 **General trade (一般贸易)** needs a Chinese importer, Chinese labels and registration for regulated products such as cosmetics, food and supplements. It pays full duty and VAT. In return it opens domestic stores, offline retail and 30-minute delivery.
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="columns">
 
 | | Cross-border | General trade |
 | --- | --- | --- |
@@ -57,7 +67,7 @@ Whatever the channel, the bill comes in seven layers. Read them from the bottom 
 
 The first two layers are the same whatever the platform. The rest change weight with the kind of platform you sell on.
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="layers">
 
 | Layer | eCommerce platforms: Tmall, JD | Social platforms: Douyin, Rednote |
 | --- | --- | --- |
@@ -75,7 +85,7 @@ Most budgets are built around layer 3. Most of the money goes into layers 5 to 7
 
 ## Five ways in, five cost profiles
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="cards">
 
 | Route | Upfront | Platform fees | Biggest cost |
 | --- | --- | --- | --- |
@@ -95,7 +105,7 @@ The "brand keeps" figures are illustrative, per RMB 100 paid by the shopper, bef
 
 You own the store, the stock, the price and customer service. Tmall rents you the shelf and sells you traffic. The store needs an overseas or Hong Kong company and an overseas trademark. A flagship requires first-level brand authorization.
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="facts">
 
 | Cost line | 2026 level |
 | --- | --- |
@@ -131,7 +141,7 @@ JD's cross-border arm trades as 京东全球购 (JINGDONG Cross-Border, also kno
 
 ### JD Global marketplace store
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="facts">
 
 | Cost line | 2026 level |
 | --- | --- |
@@ -157,11 +167,13 @@ JD Supermarket runs on the same supplier logic for general-trade goods, through 
 
 ## Douyin: the store is cheap, the traffic is not
 
+<figure class="pg-figure"><img src="/Images/guides/channels-livestream.webp" alt="A host presents a skincare jar to a phone on a ring light during a brand-run livestream" width="1536" height="864" loading="lazy" decoding="async" /></figure>
+
 On Douyin, people buy what they watch. In 2024, shelf and search made up more than 40% of Douyin's e-commerce sales, brand-run store livestreams about 30% and creator livestreams about 30%.
 
 **Douyin Global Shopping (抖音全球购)** needs three things: an overseas company, a mainland company that signs as joint-liability agent, and an overseas bank account. Cosmetics, supplements and infant formula need category pre-approval.
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="facts">
 
 | Cost line | Level |
 | --- | --- |
@@ -181,6 +193,8 @@ Brand-run store livestreams run about 10 points cheaper, which is why they have 
 
 ## Xiaohongshu: where China decides
 
+<figure class="pg-figure"><img src="/Images/guides/channels-discovery.webp" alt="A shopper scrolls a feed of lifestyle photos on a phone at a cafe table in Shanghai" width="1536" height="864" loading="lazy" decoding="async" /></figure>
+
 Chinese shoppers go to Xiaohongshu to decide what to buy. For most branded products, the purchase still happens on Tmall or JD.
 
 Xiaohongshu does run a cross-border store. It needs an overseas company and a mainland guarantor with customs registration. The most recent deposit structure is USD 400 plus a floating amount tied to monthly sales. The service fee runs 2% to 5%, plus 0.7% for payment.
@@ -196,7 +210,7 @@ Ads made up about three quarters of Xiaohongshu's 2025 revenue. For most brands,
 
 Tariff on cross-border retail imports is zero. Import VAT and consumption tax are charged at 70% of the normal amount.
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="bars">
 
 | Product | Effective tax |
 | --- | --- |
@@ -215,11 +229,13 @@ That last rule matters more than it looks. Bonded stock cannot feed 30-minute in
 
 ## Logistics to China and in China
 
+<figure class="pg-figure"><img src="/Images/guides/channels-port.webp" alt="Parcels loaded into a van at a bonded logistics park beside a container port at dusk" width="1536" height="864" loading="lazy" decoding="async" /></figure>
+
 Logistics comes in two layers. Getting stock to China is a per-shipment cost: sea or air freight to the bonded zone, insurance, a zone-entry declaration of RMB 380 to 500, and a tax guarantee lodged before goods enter the zone. Freight is quoted shipment by shipment and depends on origin, volume and mode.
 
 Fulfillment inside China is a per-order cost. Bonded fulfillment for a single small item runs roughly RMB 10 to 15 per order.
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="facts">
 
 | Line | Typical cost |
 | --- | --- |
@@ -239,7 +255,7 @@ Direct mail from abroad avoids stock in China but takes one to two weeks. It sui
 
 Someone has to run the store every day, in Chinese: listings, content, customer service, campaign entry, platform relations, reporting.
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="facts">
 
 | Platform | Typical partner fee |
 | --- | --- |
@@ -256,7 +272,7 @@ The fee depends on the category and on how well Chinese shoppers already know th
 
 Inside the store, every platform sells you traffic.
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="facts">
 
 | Platform | Main lines |
 | --- | --- |
@@ -278,13 +294,17 @@ A new foreign brand has no search volume on Tmall until people talk about it els
 
 The sequence that works:
 
+<div data-ck="steps">
+
 1. **Seed.** Many small and mid-size creators on Xiaohongshu and Douyin.
 2. **Amplify.** Put ad money behind the notes and videos that already perform.
 3. **Link and measure.** Send traffic to the store with tracked links, and watch how many viewers then search the brand.
 4. **Make moments.** Launches, celebrities, pop-ups, Weibo trending topics. Sparingly.
 5. **Keep the customer.** WeChat groups, membership and a mini program, where repeat purchase costs no ad money.
 
-<div class="table-scroll">
+</div>
+
+<div class="table-scroll" data-ck="cards">
 
 | Channel | Use it for | Typical cost |
 | --- | --- | --- |
@@ -307,7 +327,7 @@ A six-month seeding plan behind a new cross-border store, built from current rat
 
 The table below uses mid-range assumptions from this guide, a single-item order and a price that includes the 9.1% tax.
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="stack">
 
 | Per RMB 100 paid | Tmall Global, run by a partner | Douyin Global, creator livestream | JD Global self-operated |
 | --- | --- | --- | --- |
@@ -330,7 +350,7 @@ Self-operated looks best on paper. The brand gives up price control in exchange.
 
 Traffic takes more than the platform ever does.
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="facts">
 
 | Who | Typical take |
 | --- | --- |
@@ -346,15 +366,19 @@ Budget conversations usually start at the bottom of this list. They should start
 
 ## Five ways to keep more of each sale
 
+<div data-ck="steps">
+
 1. **Raise the basket.** Fixed fulfillment cost punishes low prices. Bundles and sets fix it.
 2. **Build store livestreams.** About 10 points of GMV cheaper than creator sessions on Douyin.
 3. **Pay creators on results.** Commission deals and tracked links turn seeding into a cost per sale.
 4. **Pick self-operated or marketplace by volume.** Self-operated removes the partner and the warehouse, and hands over the price.
 5. **Move best sellers into general trade.** Domestic stores, instant retail and offline open up, and the shopper limits go away.
 
+</div>
+
 ## Choosing a route
 
-<div class="table-scroll">
+<div class="table-scroll" data-ck="choose">
 
 | If you need | Go with |
 | --- | --- |
@@ -370,4 +394,8 @@ Most brands end up running two routes at once: a cross-border store for control,
 
 Fees in this guide reflect published platform rules and Chinese trade reporting as of October 2026. Platforms revise them every quarter, so confirm your category's rates before you sign.
 
+<div class="pg-cta">
+
 If you are weighing these routes for your own brand, [come and have a coffee with us](/contact) in Shanghai, Hong Kong or Paris. We will map your route, your costs and your partners in one working session.
+
+</div>

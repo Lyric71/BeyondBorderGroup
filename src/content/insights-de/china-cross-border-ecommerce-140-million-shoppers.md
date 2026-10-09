@@ -2,7 +2,7 @@
 title: "140 Millionen Käufer, aber nur 3 % Importe"
 description: "China zählt 140 Millionen grenzüberschreitende Käufer. Importierte Ware macht davon knapp 3 % aus. In dieser Lücke steckt die Chance."
 pubDate: "2026-07-23"
-updatedDate: "2026-07-23"
+updatedDate: "2026-10-09"
 author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: ["Tmall", "JD", "Douyin"]
@@ -26,6 +26,9 @@ grenzüberschreitenden E-Commerce weltweit einkaufen.
 Das entspricht der Bevölkerung Japans, die auf chinesischen Plattformen
 ausländische Produkte kauft. Keine einzige dieser Transaktionen setzte voraus,
 dass eine ausländische Marke zuvor eine Gesellschaft in China gründet.
+
+Welcher Weg sich anbietet und was jeder davon eine Marke im Betrieb kostet,
+steht in [unserem Ratgeber zu allen Cross-Border-Kanälen nach China](/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma).
 
 > In China kaufen inzwischen 140 Millionen Menschen über den
 > grenzüberschreitenden E-Commerce weltweit ein. Im ersten Halbjahr 2026

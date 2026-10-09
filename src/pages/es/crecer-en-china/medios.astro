@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
@@ -204,6 +205,24 @@ const compliance = [
   },
 ];
 
+const offPlatform = [
+  {
+    channel: 'Xiaohongshu',
+    use: 'Seeding, reseñas, búsqueda',
+    cost: 'Notas de creadores pequeños de 300 a 2.000 yuanes; clics de 0,8 a 3 yuanes',
+  },
+  { channel: 'Douyin Xingtu', use: 'Vídeos de creadores para sembrar', cost: 'Unos 40.000 yuanes por vídeo' },
+  {
+    channel: 'WeChat',
+    use: 'Anuncios en Moments, Channels, fidelización',
+    cost: 'De 30 a 180 yuanes por cada 1.000 impresiones',
+  },
+  { channel: 'Bilibili', use: 'Reseñas y vídeos explicativos', cost: 'De 10.000 a 400.000 yuanes por vídeo' },
+  { channel: 'Zhihu', use: 'Compras meditadas', cost: 'Clics desde 0,25 yuanes' },
+  { channel: 'Weibo', use: 'Lanzamientos, momentos con famosos', cost: 'Desde una recarga de 2.000 yuanes' },
+  { channel: 'Presencial', use: 'Muestras, pop-ups, ferias', cost: 'Pop-up en Shanghái desde 200.000 yuanes' },
+];
+
 const faqs = [
   {
     cat: 'Operación',
@@ -213,22 +232,22 @@ const faqs = [
   {
     cat: 'Coste',
     q: '¿Cuál es el presupuesto mínimo para hacer medios en China?',
-    a: 'Realista: unos 100.000 RMB al mes, llámelo 14.000 dólares, para llevar una plataforma como toca, con creatividad y optimización detrás. Puede gastar menos. Pero no aprenderá mucho. Para un lanzamiento multiplataforma cuente con entre 500.000 y 2 millones de RMB durante los tres primeros meses. Trátelos como rangos de trabajo, no como cotización. Su categoría los mueve, a veces bastante.',
+    a: 'Realista: unos 100.000 RMB al mes, llámelo 12.000 euros, para llevar una plataforma como toca, con creatividad y optimización detrás. Puede gastar menos. Pero no aprenderá mucho. Para un lanzamiento multiplataforma cuente con entre 500.000 y 2 millones de RMB durante los tres primeros meses. Trátelos como rangos de trabajo, no como cotización. Su categoría los mueve, a veces bastante.',
   },
   {
     cat: 'Coste',
     q: '¿Cuánto cuesta hacer publicidad en WeChat?',
-    a: 'Los anuncios en Moments arrancan en torno a 50-120 RMB CPM, unos 7-16 dólares, y la segmentación apretada lo sube. El gasto mínimo de campaña en Moments suele ser 50.000 RMB. Los anuncios en artículos de Cuenta Oficial y los banners de Mini Programas entran más bajo, desde unos 15.000 RMB. Industria, segmentación y calidad creativa mueven la cifra.',
+    a: 'Los anuncios en Moments arrancan en torno a 50-120 RMB CPM, unos 6-14 euros, y la segmentación apretada lo sube. El gasto mínimo de campaña en Moments suele ser 50.000 RMB. Los anuncios en artículos de Cuenta Oficial y los banners de Mini Programas entran más bajo, desde unos 15.000 RMB. Industria, segmentación y calidad creativa mueven la cifra.',
   },
   {
     cat: 'Coste',
     q: '¿Cuánto cuesta hacer publicidad en Douyin?',
-    a: 'El CPM de vídeo in-feed suele moverse entre 30 y 60 RMB, unos 4-8 dólares. El mínimo técnico son 50 RMB al día por grupo de anuncios, pero eso no es una campaña real. Presupueste al menos 10.000 RMB para que el sistema tenga material que optimizar. TopView y Brand Challenges juegan en otra liga: cientos de miles de RMB.',
+    a: 'El CPM de vídeo in-feed suele moverse entre 30 y 60 RMB, unos 3-7 euros. El mínimo técnico son 50 RMB al día por grupo de anuncios, pero eso no es una campaña real. Presupueste al menos 10.000 RMB para que el sistema tenga material que optimizar. TopView y Brand Challenges juegan en otra liga: cientos de miles de RMB.',
   },
   {
     cat: 'Coste',
     q: '¿Cuánto cuesta hacer publicidad en RED (Xiaohongshu)?',
-    a: 'El CPM in-feed arranca en torno a 40-100 RMB, unos 6-14 dólares. Los anuncios de búsqueda van a coste por clic, normalmente 1-5 RMB el clic. La siembra con KOC empieza en torno a 300-1.500 RMB por publicación. Las campañas con KOL barren un rango ancho: unos 5.000 RMB para un creador pequeño, varios cientos de miles para un nombre top.',
+    a: 'El CPM in-feed arranca en torno a 40-100 RMB, unos 5-12 euros. Los anuncios de búsqueda van a coste por clic, normalmente 1-5 RMB el clic. La siembra con KOC empieza en torno a 300-1.500 RMB por publicación. Las campañas con KOL barren un rango ancho: unos 5.000 RMB para un creador pequeño, varios cientos de miles para un nombre top.',
   },
   {
     cat: 'Coste',
@@ -238,7 +257,7 @@ const faqs = [
   {
     cat: 'Coste',
     q: '¿Cómo está estructurado su precio?',
-    a: 'Tarifa de proyecto para el setup, retainer mensual para la gestión continua y la inversión de medios pasada a coste. Sin margen oculto sobre los medios. Le enseñamos las facturas de plataforma si las pide. El retainer mensual mínimo son 5.000 dólares.',
+    a: 'Tarifa de proyecto para el setup, retainer mensual para la gestión continua y la inversión de medios pasada a coste. Sin margen oculto sobre los medios. Le enseñamos las facturas de plataforma si las pide. El retainer mensual mínimo ronda los 4.300 euros.',
   },
   {
     cat: 'Plataformas',
@@ -496,6 +515,101 @@ const serviceJsonLd = {
         <p class="cbs-cards__note cbs-reveal">Hacemos los tres. El plan cambia en cada caso.</p>
       </div>
     </section>
+
+    {/* ---------- OFF-PLATFORM ---------- */}
+    <section id="off-platform" class="section ck-section" data-ck-section>
+      <div class="container">
+        <div class="ck-split">
+          <header data-ck-rv>
+            <span class="ck-kicker">Creación de demanda</span>
+            <h2 class="ck-h2">Fuera de la plataforma: donde se fabrica la demanda</h2>
+            <p class="ck-lede">
+              Una marca extranjera nueva no tiene búsquedas en Tmall hasta que se habla de ella en
+              otra parte. China gastó 84.000 millones de yuanes en marketing con creadores en 2025.
+              Douyin y Xiaohongshu se llevaron cerca del 65 %, y los creadores medianos y pequeños,
+              casi el 80 % del gasto.
+            </p>
+            <p class="ck-lede">
+              Trabajamos en cinco pasos: sembrar con muchos creadores pequeños y medianos, amplificar
+              lo que funciona, llevar el tráfico a la tienda con enlaces rastreables, crear algún
+              momento puntual y retener al cliente en WeChat.
+            </p>
+          </header>
+          <figure class="ck-figure" data-ck-rv>
+            <img
+              src="/Images/guides/channels-discovery.webp"
+              alt="Una compradora repasa fotos de estilo de vida en el móvil, en la mesa de un café de Shanghái"
+              width="1536"
+              height="864"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="cards">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Canal</th>
+                  <th scope="col">Para qué sirve</th>
+                  <th scope="col">Coste habitual</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  offPlatform.map((row) => (
+                    <tr>
+                      <th scope="row">{row.channel}</th>
+                      <td>{row.use}</td>
+                      <td>{row.cost}</td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="ck-block ck-duo">
+          <div class="ck-callout ck-callout--dark" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M14 4c3 0 6 3 6 6l-8 8-6-6z"/><circle cx="15" cy="9" r="1.5"/></svg></span>
+            <div>
+              <h3>Lo que cuesta un lanzamiento</h3>
+              <p>
+                Un plan de seeding de seis meses para respaldar una tienda transfronteriza nueva sale
+                por unos 870.000 yuanes con las tarifas actuales: 100 notas de creadores pequeños, 15
+                medianos y 2 grandes en Xiaohongshu, cinco vídeos de creadores en Douyin, impulsos,
+                producción y puesta en marcha en WeChat. Nosotros empezamos con menos: validar un
+                producto con creadores pequeños cuesta unos 100.000 yuanes.
+              </p>
+              <ul class="ck-stats">
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>870.000 yuanes</span><span class="ck-stat__l">plan de seeding de seis meses</span></li>
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>100.000 yuanes</span><span class="ck-stat__l">para validar antes un producto</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ck-callout" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 4-6"/></svg></span>
+            <div>
+              <h3>Cómo lo medimos</h3>
+              <p>
+                Xiaohongshu enlaza ya sus anuncios con Tmall (红猫) y JD (红京) y sigue la compra.
+                Los vídeos de creadores en Douyin pueden llevar enlaces de Taobao y JD. Juzgamos el
+                seeding por el coste por interacción (por debajo de 5 yuanes en Xiaohongshu), por
+                cuántas notas despegan y por cuántos espectadores buscan después la marca.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ck-more" data-ck-rv>
+          <a href="/es/guias/vender-en-china-sin-empresa-china" class="btn btn--ghost">Leer la guía completa</a>
+        </div>
+      </div>
+    </section>
+    <ChannelKit />
 
     {/* ---------- WHAT WE DO ---------- */}
     <section class="section section--alt">

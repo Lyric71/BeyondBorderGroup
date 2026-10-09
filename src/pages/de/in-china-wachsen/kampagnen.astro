@@ -1,6 +1,26 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
+
+const eventCosts = [
+  {
+    platform: 'Tmall',
+    cost: 'Alimama-Werbung, Affiliate-Provisionen von 5 bis 50 %, die Rabatte, die Sie bei 88VIP und Preisaktionen finanzieren',
+  },
+  {
+    platform: 'JD',
+    cost: 'JD-Werbung mit rund 10 bis 40 RMB je Bestellung, Affiliates und Aktionskosten, die zu 618 und 11.11 weitere 15 bis 20 % des Umsatzes ausmachen können',
+  },
+  {
+    platform: 'Douyin',
+    cost: 'Qianchuan-Werbung, Creator-Provision (seit April 2026 mindestens 5 %), Platzierungsgebühren',
+  },
+  {
+    platform: 'Xiaohongshu',
+    cost: 'Such- und Feed-Anzeigen zu 0,8 bis 3 RMB je Klick, Note-Boosts, Creator-Honorare plus 10 % Plattformgebühr',
+  },
+];
 ---
 
 <Layout
@@ -83,6 +103,55 @@ import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
       </article>
     </div>
   </section>
+
+  {/* ---------- EVENT COSTS ---------- */}
+  <section id="event-costs" class="section ck-section" data-ck-section>
+    <div class="container">
+      <header data-ck-rv>
+        <span class="ck-kicker">Aktionskosten</span>
+        <h2 class="ck-h2">Was eine Verkaufsaktion wirklich kostet</h2>
+      </header>
+
+      <div class="ck-block" data-ck-rv>
+        <div class="table-scroll" data-ck="cards">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Plattform</th>
+                <th scope="col">Was Sie im Store bezahlen</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                eventCosts.map((row) => (
+                  <tr>
+                    <th scope="row">{row.platform}</th>
+                    <td>{row.cost}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="ck-block ck-callout" data-ck-rv>
+        <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg></span>
+        <div>
+          <p>
+            Im Eigenhandel holt sich die Plattform Aktionsrabatte über den Margenschutz bei der
+            Marke zurück. Wir planen sie deshalb als Marketingausgabe ein und behandeln sie nicht
+            als Preisentscheidung.
+          </p>
+        </div>
+      </div>
+
+      <div class="ck-more" data-ck-rv>
+        <a href="/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma" class="btn btn--ghost">Zum vollständigen Ratgeber</a>
+      </div>
+    </div>
+  </section>
+  <ChannelKit />
 
   <CaseStudyStrip slugs={["chery","master-martini","exeed"]} />
 

@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 
@@ -309,7 +310,7 @@ const faqs = [
   {
     cat: 'Coste',
     q: '¿Cuánto añade Tmall Global encima de eso?',
-    a: 'Un depósito de 30.000 USD, una cuota anual de servicio de 5.000 a 10.000 USD según la categoría y una comisión del 2 % al 5 % por transacción, más un 1 % de Alipay. Cross-border, así que no hace falta entidad china.',
+    a: 'Un depósito reembolsable de 50.000 yuanes con marca registrada, o de 100.000 con una marca TM, una cuota anual de 30.000 o 60.000 yuanes según la categoría y una comisión del 0,5 % al 5 % por transacción, más cerca de un 1 % de Alipay. Cross-border, así que no hace falta entidad china.',
   },
   {
     cat: 'Estrategia',
@@ -500,6 +501,55 @@ const serviceJsonLd = {
         <span class="cbs-hero__scroll-line"></span>
         <span class="cbs-hero__scroll-text">Seguir</span>
       </a>
+    </section>
+
+    {/* ---------- SELLING CROSS-BORDER ON DOUYIN AND XIAOHONGSHU ---------- */}
+    <section class="section section--tight section--alt">
+      <div class="container">
+        <div class="ck-duo" data-ck-section>
+          <article class="ck-mcard" style="--ck-accent:#111111" data-ck-rv>
+            <div class="ck-mcard__media">
+              <img src="/Images/guides/channels-livestream.webp" alt="Una presentadora muestra un tarro de crema ante un móvil con aro de luz durante un directo de marca" width="1536" height="864" loading="lazy" decoding="async" />
+              <span class="ck-mcard__badge">Douyin</span>
+            </div>
+            <div class="ck-mcard__body">
+              <h2>La vía transfronteriza en Douyin</h2>
+              <p>
+                Douyin Global Shopping exige una sociedad en el extranjero, una empresa en la China
+                continental que firme como agente con responsabilidad solidaria y una cuenta
+                bancaria fuera de China. La fianza va de 500 a 5.000 yuanes, según las ventas del
+                mes anterior, y la tarifa de servicio, del 2 % al 6 % según la categoría.
+              </p>
+              <p>
+                La tienda sale barata. El tráfico, no. Los grandes creadores piden ya un 20 % de
+                comisión o más, y una sesión dedicada con uno de ellos cuesta entre 1 y 3 millones
+                de yuanes solo en tarifas de entrada. Con la publicidad, una venta impulsada por
+                creadores puede costar del 35 % al 50 % del GMV. Los directos que emite la propia
+                marca salen unos 10 puntos más baratos, y por eso son lo primero que montamos.
+              </p>
+            </div>
+          </article>
+          <article class="ck-mcard" style="--ck-accent:#ff2442" data-ck-rv>
+            <div class="ck-mcard__media">
+              <img src="/Images/guides/channels-discovery.webp" alt="Una compradora repasa fotos de estilo de vida en el móvil, en la mesa de un café de Shanghái" width="1536" height="864" loading="lazy" decoding="async" />
+              <span class="ck-mcard__badge">Xiaohongshu</span>
+            </div>
+            <div class="ck-mcard__body">
+              <h2>La vía transfronteriza en Xiaohongshu</h2>
+              <p>
+                Xiaohongshu tiene una tienda transfronteriza para sociedades extranjeras con un
+                garante en la China continental: fianza de unos 350 euros más una cantidad variable,
+                tarifa de servicio del 2 % al 5 % y un 0,7 % por el cobro. En la mayoría de los
+                productos de marca, eso sí, Xiaohongshu es donde el comprador decide, y Tmall o JD,
+                donde paga. Desde 2025, los anuncios de Xiaohongshu pueden enlazar directamente con
+                las apps de Tmall y JD y seguir la venta hasta el final.
+              </p>
+              <a href="/es/guias/vender-en-china-sin-empresa-china" class="btn btn--ghost">Leer la guía completa</a>
+            </div>
+          </article>
+        </div>
+        <ChannelKit />
+      </div>
     </section>
 
     {/* ---------- TWO TRUTHS ---------- */}

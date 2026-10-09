@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../components/ChannelKit.astro';
 import Layout from '../../layouts/Layout.astro';
 import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 import { getCollection } from 'astro:content';
@@ -511,21 +512,34 @@ const icons: Record<string, string> = {
     </section>
 
     {/* ---------- STORE COSTS (Tmall Global vs JD Global) ---------- */}
-    <section id="store-costs" class="section cbs-costs">
+    <section id="store-costs" class="section ck-section" data-ck-section>
       <div class="container">
-        <header class="section-header cbs-reveal">
-          <span class="eyebrow">Store costs</span>
-          <h2>What the store costs to open</h2>
-          <p>
-            Tmall Global and JD Global both accept brands with no Chinese company. You need an
-            overseas or Hong Kong company, an overseas trademark and, for a flagship, first-level
-            brand authorization. JD also asks for a USD settlement account and a return address in
-            China.
-          </p>
-        </header>
+        <div class="ck-split">
+          <header data-ck-rv>
+            <span class="ck-kicker">Store costs</span>
+            <h2 class="ck-h2">What the store costs to open</h2>
+            <p class="ck-lede">
+              Tmall Global and JD Global both accept brands with no Chinese company. You need an
+              overseas or Hong Kong company, an overseas trademark and, for a flagship, first-level
+              brand authorization. JD also asks for a USD settlement account and a return address in
+              China.
+            </p>
+          </header>
+          <figure class="ck-figure" data-ck-rv>
+            <img
+              src="/Images/guides/channels-port.webp"
+              alt="Parcels loaded into a van at a bonded logistics park beside a container port at dusk"
+              width="1536"
+              height="864"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
 
-        <div class="table-scroll cbs-costs__table-wrap cbs-reveal">
-          <table class="cbs-costs__table">
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="columns">
+            <table class="cbs-costs__table">
             <thead>
               <tr>
                 <td></td>
@@ -561,39 +575,53 @@ const icons: Record<string, string> = {
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <div class="cbs-costs__copy cbs-reveal">
-          <p>
+          </div>
+          <p class="ck-note">
             Tmall Global still charges an annual fee. Domestic Tmall dropped its own in 2024, which
             is where the confusion in many guides comes from. Some categories are exempt in 2026,
             and deposit insurance can replace the cash deposit for about RMB 1,500 a year.
           </p>
         </div>
 
-        <div class="cbs-costs__sub cbs-reveal">
-          <h3>What the fees leave out</h3>
-          <p>
-            The platform fee buys the shelf. It does not buy traffic, Chinese customer service,
-            warehousing, the discounts you fund in sales events, or the team that runs the store.
-            Those cost more than the store itself, and we put them in the plan before you sign.
-          </p>
+        <div class="ck-block ck-duo">
+          <div class="ck-callout" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>
+            <div>
+              <h3>What the fees leave out</h3>
+              <p>
+                The platform fee buys the shelf. It does not buy traffic, Chinese customer service,
+                warehousing, the discounts you fund in sales events, or the team that runs the
+                store. Those cost more than the store itself, and we put them in the plan before you
+                sign.
+              </p>
+            </div>
+          </div>
+          <div class="ck-callout ck-callout--dark" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 7h14"/><path d="M5 7l-3 7a4 4 0 0 0 6 0zM19 7l-3 7a4 4 0 0 0 6 0z"/></svg></span>
+            <div>
+              <h3>The cross-border rules in one paragraph</h3>
+              <p>
+                Cross-border goods pay no tariff and a reduced tax: 9.1% on most products, 23.06% on
+                high-end cosmetics. Shoppers can spend RMB 5,000 per order and RMB 26,000 a year. No
+                NMPA filing or Chinese label is needed, but a Chinese agent shares liability, and
+                bonded stock cannot be sold offline or through 30-minute delivery.
+              </p>
+              <ul class="ck-stats">
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>9.1%</span><span class="ck-stat__l">tax on most products</span></li>
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>23.06%</span><span class="ck-stat__l">high-end cosmetics</span></li>
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>RMB 5,000</span><span class="ck-stat__l">per order</span></li>
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>RMB 26,000</span><span class="ck-stat__l">per shopper, per year</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="cbs-costs__sub cbs-reveal">
-          <h3>The cross-border rules in one paragraph</h3>
-          <p>
-            Cross-border goods pay no tariff and a reduced tax: 9.1% on most products, 23.06% on
-            high-end cosmetics. Shoppers can spend RMB 5,000 per order and RMB 26,000 a year. No
-            NMPA filing or Chinese label is needed, but a Chinese agent shares liability, and bonded
-            stock cannot be sold offline or through 30-minute delivery.
-          </p>
-          <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost"
-            >Read the full guide</a
-          >
+        <div class="ck-more" data-ck-rv>
+          <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost">Read the full guide</a>
         </div>
       </div>
     </section>
+    <ChannelKit />
 
     {/* ---------- TP / DP SELECTION (pointer to dedicated page) ---------- */}
     <section class="section section--alt">
@@ -1546,27 +1574,6 @@ const icons: Record<string, string> = {
     }
 
     /* ---------- STORE COSTS (table) ---------- */
-    .cbs-costs .section-header {
-      margin-bottom: var(--space-5);
-    }
-    .cbs-costs .section-header p,
-    .cbs-costs__copy p,
-    .cbs-costs__sub p {
-      max-width: 72ch;
-      color: var(--bbg-text);
-    }
-    .cbs-costs__sub {
-      margin-top: var(--space-6);
-    }
-    .cbs-costs__sub h3 {
-      margin-bottom: var(--space-3);
-    }
-    .cbs-costs .cbs-costs__table-wrap {
-      margin: var(--space-5) 0;
-      background: var(--bbg-white);
-      border: 1px solid var(--bbg-border);
-      border-radius: var(--radius-md);
-    }
     .cbs-costs__table {
       width: 100%;
       border-collapse: collapse;
@@ -1593,9 +1600,6 @@ const icons: Record<string, string> = {
     }
     .cbs-costs__table tbody tr:last-child > * {
       border-bottom: 0;
-    }
-    .cbs-costs__sub .btn--ghost {
-      margin-top: var(--space-2);
     }
 
     /* ---------- TP / DP POINTER ---------- */

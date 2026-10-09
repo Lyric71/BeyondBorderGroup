@@ -193,24 +193,47 @@ const casesEs = defineCollection({
 /** Printable assets from the editorial plan (checklists, run sheets,
  * calendars). Written by the pipeline in `editorial/`, English only, rendered
  * at `/guides/<slug>/`. Each one belongs to an Anchor insight. */
+const guideSchema = z.object({
+  title: z.string(),
+  /** Search title when `title` (the H1) is too long for results; at most 60 characters. */
+  seoTitle: z.string().max(60).optional(),
+  description: z.string(),
+  pubDate: z.coerce.date(),
+  updatedDate: z.coerce.date().optional(),
+  author: z.string().default('TheChinaPath'),
+  /** The asset format from the brief: "Printable checklist", "Day-by-day run sheet", ... */
+  format: z.string().optional(),
+  /** Slug of the insight this asset was published with. */
+  relatedInsight: z.string().optional(),
+  heroImage: z.string().optional(),
+  heroImageAlt: z.string().default(''),
+  /** "print" is the checklist page; "pillar" is the long-form guide layout. */
+  layout: z.enum(['print', 'pillar']).default('print'),
+  /** Key figures shown in the pillar hero. */
+  stats: z.array(z.object({ value: z.string(), label: z.string() })).default([]),
+  draft: z.boolean().default(false),
+});
+
 const guides = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
-  schema: z.object({
-    title: z.string(),
-    /** Search title when `title` (the H1) is too long for results; at most 60 characters. */
-    seoTitle: z.string().max(60).optional(),
-    description: z.string(),
-    pubDate: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
-    author: z.string().default('TheChinaPath'),
-    /** The asset format from the brief: "Printable checklist", "Day-by-day run sheet", ... */
-    format: z.string().optional(),
-    /** Slug of the insight this asset was published with. */
-    relatedInsight: z.string().optional(),
-    heroImage: z.string().optional(),
-    heroImageAlt: z.string().default(''),
-    draft: z.boolean().default(false),
-  }),
+  schema: guideSchema,
+});
+
+/** FR, DE and ES twins of a guide, filed under the native slug. Only guides
+ * listed in src/i18n/slug-map.mjs have one. */
+const guidesFr = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides-fr' }),
+  schema: guideSchema,
+});
+
+const guidesDe = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides-de' }),
+  schema: guideSchema,
+});
+
+const guidesEs = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides-es' }),
+  schema: guideSchema,
 });
 
 export const collections = {
@@ -219,6 +242,9 @@ export const collections = {
   insightsDe,
   insightsEs,
   guides,
+  guidesFr,
+  guidesDe,
+  guidesEs,
   cases,
   casesFr,
   casesDe,

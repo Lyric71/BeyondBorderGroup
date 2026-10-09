@@ -2,6 +2,7 @@
 title: "El año en que 2.415 marcas extranjeras apostaron por China"
 description: "El balance de 2025 de Tmall Global revela cómo entran de verdad las marcas extranjeras en China y cuáles llevan ya la delantera."
 pubDate: "2026-07-13"
+updatedDate: "2026-10-09"
 author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
@@ -19,6 +20,8 @@ heroImageAlt: "Una compradora recorre marcas importadas en la app de Tmall Globa
 Seis marcas extranjeras al día. Ese fue el ritmo al que los nuevos operadores abrieron tienda y empezaron a vender en China el año pasado. Ni solicitudes ni pilotos: tiendas en marcha, registrando pedidos.
 
 Así se resume el balance de 2025 de Tmall Global, y conviene detenerse en él. Tmall Global (天猫国际) es el brazo transfronterizo de Alibaba: un escaparate que permite a una marca vender al consumidor de la China continental sin registrar una sociedad china ni introducir antes inventario en el país. La mercancía sale de un depósito aduanero o viaja directamente desde el extranjero. Para la mayoría de las marcas extranjeras es la primera puerta real de entrada al mercado chino.
+
+Cuánto cuesta esa puerta, partida por partida, y cómo sale frente a JD, Douyin y Xiaohongshu lo desgrana [nuestra guía de todos los canales transfronterizos hacia China](/es/guias/vender-en-china-sin-empresa-china).
 
 > En 2025, 2.415 marcas extranjeras abrieron su primera tienda en Tmall Global, un incremento interanual de dos dígitos en nuevas tiendas insignia. Más de seis marcas nuevas al día.
 > Fuente: China Economic Net (中国经济网), a partir de datos de Tmall Global

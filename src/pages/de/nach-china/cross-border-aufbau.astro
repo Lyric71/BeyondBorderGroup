@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 ---
@@ -93,6 +94,121 @@ import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
     </div>
   </section>
 
+  {/* ---------- STORE COSTS (Tmall Global vs JD Global) ---------- */}
+  <section id="store-costs" class="section ck-section" data-ck-section>
+    <div class="container">
+      <div class="ck-split">
+        <header data-ck-rv>
+          <span class="ck-kicker">Store-Kosten</span>
+          <h2 class="ck-h2">Was die Eröffnung des Stores kostet</h2>
+          <p class="ck-lede">
+            Tmall Global und JD Global nehmen auch Marken ohne chinesische Gesellschaft auf. Sie
+            brauchen eine Gesellschaft im Ausland oder in Hongkong, eine im Ausland eingetragene
+            Marke und für einen Flagship Store die Autorisierung erster Stufe durch den
+            Markeninhaber. JD verlangt zusätzlich ein Abrechnungskonto in US-Dollar und eine
+            Retourenadresse in China.
+          </p>
+        </header>
+        <figure class="ck-figure" data-ck-rv>
+          <img
+            src="/Images/guides/channels-port.webp"
+            alt="In der Dämmerung werden in einem Zolllager-Logistikpark neben einem Containerhafen Pakete in einen Transporter geladen"
+            width="1536"
+            height="864"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      </div>
+
+      <div class="ck-block" data-ck-rv>
+        <div class="table-scroll" data-ck="columns">
+          <table class="cbs-costs__table">
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col">Tmall Global Flagship Store</th>
+                <th scope="col">JD Global Store</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Kaution</th>
+                <td>50.000 RMB (R-Marke) oder 100.000 RMB (TM-Marke), erstattungsfähig</td>
+                <td>Rund 4.300 bis 26.000 Euro je nach Kategorie, erstattungsfähig</td>
+              </tr>
+              <tr>
+                <th scope="row">Jahresgebühr</th>
+                <td>30.000 oder 60.000 RMB je nach Kategorie</td>
+                <td>Keine seit April 2023</td>
+              </tr>
+              <tr>
+                <th scope="row">Provision</th>
+                <td>0,5 bis 5 %</td>
+                <td>2 bis 6 %</td>
+              </tr>
+              <tr>
+                <th scope="row">Zahlungs- oder Transaktionsgebühr</th>
+                <td>Rund 1 %</td>
+                <td>0,9 %</td>
+              </tr>
+              <tr>
+                <th scope="row">Lieferung aus dem Zolllager</th>
+                <td>Am nächsten Tag bis in 3 Tagen</td>
+                <td>1 bis 3 Tage</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="ck-note">
+          Tmall Global verlangt weiterhin eine Jahresgebühr. Das inländische Tmall hat seine 2024
+          abgeschafft, daher rührt die Verwirrung in vielen Ratgebern. 2026 sind einige Kategorien
+          befreit, und eine Kautionsversicherung ersetzt die Barkaution für rund 1.500 RMB im Jahr.
+        </p>
+      </div>
+
+      <div class="ck-block ck-duo">
+        <div class="ck-callout" data-ck-rv>
+          <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>
+          <div>
+            <h3>Was die Gebühren nicht abdecken</h3>
+            <p>
+              Mit der Plattformgebühr mieten Sie das Regal. Traffic, chinesischer Kundenservice,
+              Lagerhaltung, die Rabatte, die Sie bei Verkaufsaktionen finanzieren, und das Team, das
+              den Store führt, sind darin nicht enthalten. Diese Posten kosten mehr als der Store
+              selbst, und wir nehmen sie in den Plan auf, bevor Sie unterschreiben.
+            </p>
+          </div>
+        </div>
+        <div class="ck-callout ck-callout--dark" data-ck-rv>
+          <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 7h14"/><path d="M5 7l-3 7a4 4 0 0 0 6 0zM19 7l-3 7a4 4 0 0 0 6 0z"/></svg></span>
+          <div>
+            <h3>Die Cross-Border-Regeln in einem Absatz</h3>
+            <p>
+              Cross-Border-Ware ist zollfrei und wird ermäßigt besteuert: mit 9,1 % auf die meisten
+              Produkte und 23,06 % auf hochpreisige Kosmetik. Käufer dürfen 5.000 RMB je Bestellung
+              und 26.000 RMB im Jahr ausgeben. Eine NMPA-Anmeldung oder ein chinesisches Etikett
+              braucht es nicht, ein chinesischer Vertreter haftet aber mit. Und Ware aus dem
+              Zolllager darf weder im stationären Handel noch über eine Lieferung binnen 30 Minuten
+              verkauft werden.
+            </p>
+            <ul class="ck-stats">
+              <li class="ck-stat"><span class="ck-stat__v" data-ck-count>9,1 %</span><span class="ck-stat__l">Steuer auf die meisten Produkte</span></li>
+              <li class="ck-stat"><span class="ck-stat__v" data-ck-count>23,06 %</span><span class="ck-stat__l">auf hochpreisige Kosmetik</span></li>
+              <li class="ck-stat"><span class="ck-stat__v" data-ck-count>5.000 RMB</span><span class="ck-stat__l">je Bestellung</span></li>
+              <li class="ck-stat"><span class="ck-stat__v" data-ck-count>26.000 RMB</span><span class="ck-stat__l">je Käufer und Jahr</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="ck-more" data-ck-rv>
+        <a href="/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma" class="btn btn--ghost">Zum vollständigen Ratgeber</a>
+      </div>
+    </div>
+  </section>
+  <ChannelKit />
+
   <CaseStudyStrip slugs={["iguzzini","viessmann","kerry-davinci"]} />
 
   <section class="section section--tight section--alt">
@@ -110,3 +226,34 @@ import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
     </div>
   </section>
 </Layout>
+
+<style>
+  /* ---------- STORE COSTS (table) ---------- */
+  .cbs-costs__table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--bbg-text);
+  }
+  .cbs-costs__table th,
+  .cbs-costs__table td {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--bbg-border);
+    vertical-align: top;
+  }
+  .cbs-costs__table thead th,
+  .cbs-costs__table thead td {
+    background: var(--bbg-surface);
+    color: var(--bbg-ink);
+    font-weight: 600;
+  }
+  .cbs-costs__table tbody th {
+    color: var(--bbg-ink);
+    font-weight: 600;
+  }
+  .cbs-costs__table tbody tr:last-child > * {
+    border-bottom: 0;
+  }
+</style>

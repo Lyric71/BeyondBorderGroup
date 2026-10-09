@@ -7,7 +7,14 @@
  * ausgewiesen. RMB bleibt RMB, der Gegenwert steht in Euro (rund 8,2 RMB je Euro).
  */
 import type { PartnerGuideCopy } from '../types';
-import { compassSteps, compassTiming, heroStats, whoPaysFaq } from './shared';
+import {
+  channelsGuideLink,
+  compassSteps,
+  compassTiming,
+  heroStats,
+  partnerFees,
+  whoPaysFaq,
+} from './shared';
 
 const copy: PartnerGuideCopy = {
   key: 'dp',
@@ -184,6 +191,8 @@ const copy: PartnerGuideCopy = {
       ],
     },
     link: { label: 'Eigene Zahlen durchrechnen: der Douyin-Kostenrechner', href: '/tools/douyin-cost-calculator' },
+    fees: partnerFees,
+    guideLink: channelsGuideLink,
   },
 
   mistakes: {

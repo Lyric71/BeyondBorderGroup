@@ -7,7 +7,14 @@
  * RMB bleibt RMB, der Gegenwert steht in Euro (rund 8,2 RMB je Euro).
  */
 import type { PartnerGuideCopy } from '../types';
-import { compassSteps, compassTiming, heroStats, whoPaysFaq } from './shared';
+import {
+  channelsGuideLink,
+  compassSteps,
+  compassTiming,
+  heroStats,
+  partnerFees,
+  whoPaysFaq,
+} from './shared';
 
 const copy: PartnerGuideCopy = {
   key: 'tp',
@@ -151,7 +158,7 @@ const copy: PartnerGuideCopy = {
   terms: {
     eyebrow: 'Die Kosten',
     title: 'So werden Tmall Partner bezahlt',
-    intro: 'Üblich sind eine monatliche Pauschale und eine Provision auf den Umsatz. Unsere Rechner für Tmall Global und JD Worldwide gehen von 35.000 RMB im Monat aus (rund 4.300 Euro), zuzüglich 10 Prozent des GMV. Diese Werte taugen als Maßstab für echte Angebote, die je nach Store-Größe und Leistungsumfang darüber oder darunter liegen.',
+    intro: 'Üblich sind eine monatliche Pauschale und eine Provision auf den Umsatz. In unseren Rechnern für Tmall Global und JD Worldwide sind 35.000 RMB im Monat (rund 4.300 Euro) zuzüglich 10 Prozent des GMV voreingestellt. Diese Werte taugen als Maßstab für echte Angebote, die je nach Store-Größe und Leistungsumfang darüber oder darunter liegen.',
     warnColumn: false,
     table: {
       headers: ['Modell', 'Vergütung', 'Geeignet für'],
@@ -175,6 +182,8 @@ const copy: PartnerGuideCopy = {
     },
     note: 'Bezahlte Medien laufen über ein Werbekonto, das Sie selbst finanzieren. Wenn ein TP anbietet, die Werbeausgaben vorzustrecken, geht das meist schief. Viele Marken planen zudem ein jährliches Co-Budget für Höhepunkte wie Double 11 oder einen Launch ein. Und halten Sie die Übergabe vertraglich fest: Inhalte, Kundendaten und Werbekonten müssen mit Ihnen gehen, wenn die Zusammenarbeit endet.',
     link: { label: 'Eigene Zahlen durchrechnen: der Tmall-Global-Rechner', href: '/tools/tmall-global-setup-and-run' },
+    fees: partnerFees,
+    guideLink: channelsGuideLink,
   },
 
   mistakes: {
@@ -221,7 +230,7 @@ const copy: PartnerGuideCopy = {
       },
       {
         q: 'Was kostet ein Tmall Partner?',
-        a: 'Üblich sind eine monatliche Pauschale und eine Provision auf den GMV. Unsere Rechner gehen von 35.000 RMB im Monat aus (rund 4.300 Euro), zuzüglich 10 Prozent des GMV. Echte Angebote liegen je nach Store-Größe und Leistungsumfang darüber oder darunter. Hinzu kommen die bezahlten Medien, die Sie selbst finanzieren.',
+        a: 'Üblich sind eine monatliche Pauschale und eine Provision auf den GMV. In unseren Rechnern sind 35.000 RMB im Monat (rund 4.300 Euro) zuzüglich 10 Prozent des GMV voreingestellt. Echte Angebote liegen je nach Store-Größe und Leistungsumfang darüber oder darunter. Hinzu kommen die bezahlten Medien, die Sie selbst finanzieren.',
       },
       {
         q: 'Kann ich einen Tmall-Store auch ohne TP betreiben?',

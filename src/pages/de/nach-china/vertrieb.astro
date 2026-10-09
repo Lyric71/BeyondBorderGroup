@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 ---
@@ -40,6 +41,43 @@ import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
       </div>
     </div>
   </section>
+
+  {/* ---------- BRIDGE FROM CROSS-BORDER ---------- */}
+  <section id="beyond-cross-border" class="section ck-section ck-section--dark" data-ck-section>
+    <div class="container ck-split">
+      <div data-ck-rv>
+        <span class="ck-kicker">Regulärer Handel</span>
+        <h2 class="ck-h2">Wenn Cross-Border nicht mehr reicht</h2>
+        <p class="ck-lede">
+          Cross-Border-Ware darf nicht in den stationären Handel, kann keine Lieferung binnen 30
+          Minuten bedienen und ist auf 26.000 RMB je Käufer und Jahr gedeckelt. Sobald sich ein
+          Produkt verkauft, öffnet der reguläre Handel inländische Stores, die Sofortlieferung und
+          die Regale im Laden. Dafür braucht es einen chinesischen Importeur, chinesische Etiketten
+          und eine Produktregistrierung, fällig werden der volle Zoll und 13 % Mehrwertsteuer. Ab
+          Dezember 2026 dürfen importierte Kosmetika elektronische Etiketten per QR-Code tragen, und
+          für die Ersteinfuhr gelten einfachere Regeln.
+        </p>
+        <ul class="ck-stats">
+          <li class="ck-stat"><span class="ck-stat__v" data-ck-count>26.000 RMB</span><span class="ck-stat__l">Cross-Border-Obergrenze je Käufer und Jahr</span></li>
+          <li class="ck-stat"><span class="ck-stat__v" data-ck-count>13 %</span><span class="ck-stat__l">Mehrwertsteuer im regulären Handel, dazu der volle Zoll</span></li>
+        </ul>
+        <div class="ck-more">
+          <a href="/de/ratgeber/in-china-verkaufen-ohne-chinesische-firma" class="btn btn--primary">Zum vollständigen Ratgeber</a>
+        </div>
+      </div>
+      <figure class="ck-figure" data-ck-rv>
+        <img
+          src="/Images/insights/china-cross-border-ecommerce-channels.webp"
+          alt="Kartons mit Importware in den Regalen eines Zolllagers in Ningbo"
+          width="1536"
+          height="864"
+          loading="lazy"
+          decoding="async"
+        />
+      </figure>
+    </div>
+  </section>
+  <ChannelKit />
 
   <section class="section" id="leistungen">
     <div class="container container--narrow">

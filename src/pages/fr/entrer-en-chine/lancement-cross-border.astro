@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../../components/ChannelKit.astro';
 import Layout from '../../../layouts/Layout.astro';
 import CaseStudyStrip from '../../../components/CaseStudyStrip.astro';
 import { getCollection } from 'astro:content';
@@ -509,6 +510,122 @@ const icons: Record<string, string> = {
         </div>
       </div>
     </section>
+
+    {/* ---------- STORE COSTS (Tmall Global vs JD Global) ---------- */}
+    <section id="store-costs" class="section ck-section" data-ck-section>
+      <div class="container">
+        <div class="ck-split">
+          <header data-ck-rv>
+            <span class="ck-kicker">Coûts de la boutique</span>
+            <h2 class="ck-h2">Ce que coûte l'ouverture de la boutique</h2>
+            <p class="ck-lede">
+              Tmall Global et JD Global acceptent les marques qui n'ont pas de société chinoise. Il
+              vous faut une société étrangère ou hongkongaise, une marque déposée hors de Chine et,
+              pour un flagship, une autorisation de premier niveau du titulaire de la marque. JD
+              demande en outre un compte de règlement en dollars et une adresse de retour en Chine.
+            </p>
+          </header>
+          <figure class="ck-figure" data-ck-rv>
+            <img
+              src="/Images/guides/channels-port.webp"
+              alt="Des colis chargés dans une camionnette, dans une zone logistique sous douane voisine d’un port à conteneurs, au crépuscule"
+              width="1536"
+              height="864"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="columns">
+            <table class="cbs-costs__table">
+              <thead>
+                <tr>
+                  <td></td>
+                  <th scope="col">Flagship Tmall Global</th>
+                  <th scope="col">Boutique JD Global</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Dépôt</th>
+                  <td>50 000 RMB (marque R) ou 100 000 RMB (marque TM), remboursable</td>
+                  <td>Environ 4 300 à 26 000 euros selon la catégorie, remboursable</td>
+                </tr>
+                <tr>
+                  <th scope="row">Redevance annuelle</th>
+                  <td>30 000 ou 60 000 RMB selon la catégorie</td>
+                  <td>Aucune depuis avril 2023</td>
+                </tr>
+                <tr>
+                  <th scope="row">Commission</th>
+                  <td>0,5 à 5 %</td>
+                  <td>2 à 6 %</td>
+                </tr>
+                <tr>
+                  <th scope="row">Frais de paiement ou de transaction</th>
+                  <td>Environ 1 %</td>
+                  <td>0,9 %</td>
+                </tr>
+                <tr>
+                  <th scope="row">Livraison sous douane</th>
+                  <td>Du lendemain à 3 jours</td>
+                  <td>1 à 3 jours</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="ck-note">
+            Tmall Global facture toujours une redevance annuelle. Le Tmall domestique a supprimé la
+            sienne en 2024, d'où la confusion entretenue par de nombreux guides. Certaines catégories
+            en sont exemptées en 2026, et une assurance-dépôt peut remplacer le dépôt en numéraire
+            pour environ 1 500 RMB par an.
+          </p>
+        </div>
+
+        <div class="ck-block ck-duo">
+          <div class="ck-callout" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>
+            <div>
+              <h3>Ce que les frais laissent de côté</h3>
+              <p>
+                Les frais de plateforme paient l'étagère. Ils ne couvrent ni le trafic, ni le service
+                client en chinois, ni l'entreposage, ni les remises que vous financez pendant les
+                opérations commerciales, ni l'équipe qui fait tourner la boutique. Ces postes coûtent
+                davantage que la boutique elle-même, et nous les inscrivons au plan avant toute
+                signature.
+              </p>
+            </div>
+          </div>
+          <div class="ck-callout ck-callout--dark" data-ck-rv>
+            <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 7h14"/><path d="M5 7l-3 7a4 4 0 0 0 6 0zM19 7l-3 7a4 4 0 0 0 6 0z"/></svg></span>
+            <div>
+              <h3>Les règles du transfrontalier en un paragraphe</h3>
+              <p>
+                Les produits vendus en transfrontalier échappent aux droits de douane et acquittent une
+                taxe réduite : 9,1 % sur la plupart des produits, 23,06 % sur les cosmétiques haut de
+                gamme. L'acheteur peut dépenser 5 000 RMB par commande et 26 000 RMB par an. Ni
+                déclaration auprès de la NMPA ni étiquette en chinois ne sont exigées, mais un agent
+                chinois partage la responsabilité, et le stock sous douane ne peut être vendu ni en
+                magasin ni en livraison en 30 minutes.
+              </p>
+              <ul class="ck-stats">
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>9,1 %</span><span class="ck-stat__l">de taxe sur la plupart des produits</span></li>
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>23,06 %</span><span class="ck-stat__l">sur les cosmétiques haut de gamme</span></li>
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>5 000 RMB</span><span class="ck-stat__l">par commande</span></li>
+                <li class="ck-stat"><span class="ck-stat__v" data-ck-count>26 000 RMB</span><span class="ck-stat__l">par acheteur et par an</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ck-more" data-ck-rv>
+          <a href="/fr/guides/vendre-en-chine-sans-societe-chinoise" class="btn btn--ghost">Lire le guide complet</a>
+        </div>
+      </div>
+    </section>
+    <ChannelKit />
 
     {/* ---------- TP / DP SELECTION (pointer to dedicated page) ---------- */}
     <section class="section section--alt">
@@ -1444,6 +1561,35 @@ const icons: Record<string, string> = {
     .cbs-cases-cta {
       display: flex;
       justify-content: center;
+    }
+
+    /* ---------- STORE COSTS (table) ---------- */
+    .cbs-costs__table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: var(--bbg-text);
+    }
+    .cbs-costs__table th,
+    .cbs-costs__table td {
+      padding: var(--space-3) var(--space-4);
+      border-bottom: 1px solid var(--bbg-border);
+      vertical-align: top;
+    }
+    .cbs-costs__table thead th,
+    .cbs-costs__table thead td {
+      background: var(--bbg-surface);
+      color: var(--bbg-ink);
+      font-weight: 600;
+    }
+    .cbs-costs__table tbody th {
+      color: var(--bbg-ink);
+      font-weight: 600;
+    }
+    .cbs-costs__table tbody tr:last-child > * {
+      border-bottom: 0;
     }
 
     /* ---------- TP / DP POINTER ---------- */

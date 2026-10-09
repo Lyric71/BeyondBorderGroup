@@ -65,6 +65,7 @@ const copy: SocialInChinaCopy = {
       owner: 'Split',
       image: '/Images/social/wechat.png',
       alt: 'Una mujer lee una conversación de WeChat en su móvil en una cafetería de Shanghái',
+      note: 'Los anuncios en Moments cuestan de 30 a 180 yuanes por cada 1.000 impresiones; mantener grupos y un mini programa cuesta poco.',
     },
     {
       key: 'rednote',
@@ -78,6 +79,7 @@ const copy: SocialInChinaCopy = {
       owner: 'TheRedScroll',
       image: '/Images/social/rednote.png',
       alt: 'Una compradora recorre un feed de belleza de RedNote junto a frascos de cosmética y flores secas',
+      note: 'Donde el comprador decide. Las notas de creadores pequeños cuestan de 300 a 2.000 yuanes; la venta suele cerrarse en Tmall o JD mediante enlaces rastreables.',
     },
     {
       key: 'douyin',
@@ -91,6 +93,7 @@ const copy: SocialInChinaCopy = {
       owner: 'Split',
       image: '/Images/social/douyin.png',
       alt: 'Una presentadora de Douyin muestra un producto de cosmética ante la cámara en un plató con aro de luz',
+      note: 'Donde se compra lo que se ve. Un vídeo de creador sale de media por unos 40.000 yuanes; la venta en directo cuesta más.',
     },
     {
       key: 'weibo',
@@ -104,8 +107,11 @@ const copy: SocialInChinaCopy = {
       owner: 'TheRedScroll',
       image: '/Images/platforms/weibo.png',
       alt: 'Un panel de tendencias de Weibo ilumina a los transeúntes en Nanjing Road una noche de lluvia',
+      note: 'Para lanzamientos y noticias de famosos. La contratación de creadores arranca con una recarga de 2.000 yuanes.',
     },
   ],
+
+  guideLink: { label: 'Leer la guía completa', href: '/es/guias/vender-en-china-sin-empresa-china' },
 
   longTail: [
     {

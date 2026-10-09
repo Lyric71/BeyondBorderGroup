@@ -1,0 +1,25 @@
+---
+import GuidePage from '../../../components/GuidePage.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guidesDe', ({ data }) => !data.draft);
+  return guides.map((guide) => ({
+    params: { slug: guide.id },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props;
+const { Content, headings } = await render(guide);
+const words = (guide.body ?? '').split(/\s+/).filter(Boolean).length;
+---
+
+<GuidePage
+  data={guide.data}
+  Content={Content}
+  headings={headings}
+  words={words}
+  dateLocale="de-DE"
+  labels={{ eyebrow: "Ratgeber", updated: "Aktualisiert am", print: "Ratgeber drucken", related: "Zum Ursprungsartikel", contents: 'Inhalt', minRead: 'Min. Lesezeit', start: 'Jetzt lesen', talk: 'Sprechen Sie uns an', talkLine: 'Route und Kosten gemeinsam mit unserem Team in Shanghai planen.' }}
+/>

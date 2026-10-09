@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../components/ChannelKit.astro';
 import Layout from '../../layouts/Layout.astro';
 import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 
@@ -367,9 +368,9 @@ const icons: Record<string, string> = {
     </section>
 
     {/* ---------- SALES CHANNELS AND COSTS (tables) ---------- */}
-    <section id="ways-in" class="section section--alt lcp-ways">
+    <section id="ways-in" class="section ck-section lcp-ways" data-ck-section>
       <div class="container">
-        <header class="section-header lcp-reveal">
+        <header class="section-header" data-ck-rv>
           <span class="eyebrow">Channels and costs</span>
           <h2>Three ways to sell in China, two ways in</h2>
           <p>
@@ -380,7 +381,7 @@ const icons: Record<string, string> = {
           </p>
         </header>
 
-        <div class="table-scroll lcp-ways__table-wrap lcp-reveal">
+        <div class="table-scroll" data-ck="matrix" data-ck-rv>
           <table class="lcp-ways__table">
             <thead>
               <tr>
@@ -409,18 +410,18 @@ const icons: Record<string, string> = {
           </table>
         </div>
 
-        <div class="lcp-ways__copy lcp-reveal">
+        <div class="lcp-ways__copy" data-ck-rv>
           <p>
             The Tmall Global and JD Global stores are the only routes that keep price control
             without a Chinese company of your own. That is where most foreign brands start.
           </p>
         </div>
 
-        <div class="lcp-ways__sub lcp-reveal">
+        <div class="lcp-ways__sub" data-ck-rv>
           <h3>Five ways in, five cost profiles</h3>
         </div>
 
-        <div class="table-scroll lcp-ways__table-wrap lcp-reveal">
+        <div class="table-scroll" data-ck="cards" data-ck-rv>
           <table class="lcp-ways__table">
             <thead>
               <tr>
@@ -465,7 +466,7 @@ const icons: Record<string, string> = {
           </table>
         </div>
 
-        <div class="lcp-ways__sub lcp-reveal">
+        <div class="lcp-ways__sub" data-ck-rv>
           <h3>Seven layers of cost, weighted by platform</h3>
           <p>
             Every route is paid for in the same seven layers. The first two never change. The rest
@@ -473,7 +474,7 @@ const icons: Record<string, string> = {
           </p>
         </div>
 
-        <div class="table-scroll lcp-ways__table-wrap lcp-reveal">
+        <div class="table-scroll" data-ck="layers" data-ck-rv>
           <table class="lcp-ways__table">
             <thead>
               <tr>
@@ -525,7 +526,7 @@ const icons: Record<string, string> = {
           </table>
         </div>
 
-        <div class="lcp-ways__copy lcp-reveal">
+        <div class="lcp-ways__copy" data-ck-rv>
           <p>
             On Tmall and JD, demand is made elsewhere and captured in the store. On Douyin and
             Rednote, the content is the store.
@@ -536,6 +537,7 @@ const icons: Record<string, string> = {
         </div>
       </div>
     </section>
+    <ChannelKit />
 
     {/* ---------- BIG FIVE INTRO ---------- */}
     <section id="big-five" class="section lcp-bigfive-intro">
@@ -1472,12 +1474,6 @@ const icons: Record<string, string> = {
     }
     .lcp-ways__sub h3 {
       margin-bottom: var(--space-3);
-    }
-    .lcp-ways .lcp-ways__table-wrap {
-      margin: var(--space-5) 0;
-      background: var(--bbg-white);
-      border: 1px solid var(--bbg-border);
-      border-radius: var(--radius-md);
     }
     .lcp-ways__table {
       width: 100%;

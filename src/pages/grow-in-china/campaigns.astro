@@ -1,4 +1,5 @@
 ---
+import ChannelKit from '../../components/ChannelKit.astro';
 import Layout from '../../layouts/Layout.astro';
 import CaseStudyStrip from '../../components/CaseStudyStrip.astro';
 
@@ -493,16 +494,16 @@ const serviceJsonLd = {
     </section>
 
     {/* ---------- EVENT COSTS ---------- */}
-    <section id="event-costs" class="section">
+    <section id="event-costs" class="section ck-section" data-ck-section>
       <div class="container">
-        <header class="section-header section-header--center cbs-reveal">
-          <span class="eyebrow">Event costs</span>
-          <h2>What a sales event really costs</h2>
+        <header data-ck-rv>
+          <span class="ck-kicker">Event costs</span>
+          <h2 class="ck-h2">What a sales event really costs</h2>
         </header>
 
-        <div class="cbs-compare cbs-reveal">
-          <div class="cbs-compare__table-wrap">
-            <table class="cbs-calendar cbs-calendar--costs">
+        <div class="ck-block" data-ck-rv>
+          <div class="table-scroll" data-ck="cards">
+            <table>
               <thead>
                 <tr>
                   <th scope="col">Platform</th>
@@ -513,28 +514,32 @@ const serviceJsonLd = {
                 {
                   eventCosts.map((row) => (
                     <tr>
-                      <th scope="row" class="cbs-calendar__event">{row.platform}</th>
-                      <td class="cbs-calendar__what">{row.cost}</td>
+                      <th scope="row">{row.platform}</th>
+                      <td>{row.cost}</td>
                     </tr>
                   ))
                 }
               </tbody>
             </table>
           </div>
-
-          <p class="cbs-compare__note">
-            On a self-operated deal, event discounts come back to the brand through margin
-            protection. We budget them as marketing, not as a price decision.
-          </p>
         </div>
 
-        <div class="cbs-approach__cta cbs-reveal">
-          <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost"
-            >Read the full guide</a
-          >
+        <div class="ck-block ck-callout" data-ck-rv>
+          <span class="ck-callout__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg></span>
+          <div>
+            <p>
+              On a self-operated deal, event discounts come back to the brand through margin
+              protection. We budget them as marketing, not as a price decision.
+            </p>
+          </div>
+        </div>
+
+        <div class="ck-more" data-ck-rv>
+          <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost">Read the full guide</a>
         </div>
       </div>
     </section>
+    <ChannelKit />
 
     {/* ---------- FIT ---------- */}
     <section class="section section--alt">
@@ -1101,28 +1106,6 @@ const serviceJsonLd = {
     .cbs-calendar__who {
       color: var(--bbg-text-muted);
       font-size: 0.9rem;
-    }
-    /* Two-column event cost table: platform as the row header. */
-    .cbs-calendar--costs {
-      min-width: 560px;
-    }
-    .cbs-calendar--costs tbody th {
-      text-align: left;
-      vertical-align: top;
-      padding: var(--space-4);
-      border-bottom: 1px solid var(--bbg-border);
-      line-height: 1.55;
-      white-space: nowrap;
-      width: 22%;
-    }
-    .cbs-calendar--costs tbody tr:last-child th {
-      border-bottom: none;
-    }
-    .cbs-calendar--costs tbody tr:hover th {
-      background: rgba(200, 16, 46, 0.03);
-    }
-    .cbs-calendar--costs .cbs-calendar__what {
-      max-width: none;
     }
     .cbs-compare__note {
       margin: var(--space-5) auto 0;

@@ -295,6 +295,16 @@ h4,
   transition: all var(--dur) var(--ease);
   white-space: nowrap;
 }
+/* On a phone a long label (FR, DE, ES) wraps instead of pushing the page
+   sideways. */
+@media (max-width: 640px) {
+  .btn {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.3;
+    text-align: center;
+  }
+}
 
 .btn--primary {
   background: var(--bbg-blue);
@@ -699,6 +709,161 @@ h4,
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.62);
   max-width: 32ch;
+}
+/* A guide can take over the spine: one card with a cover, the title, two
+   figures and a button. The whole card is the link. */
+.mega__spine > .mguide {
+  padding-left: 0;
+  margin-left: var(--space-5);
+}
+.mguide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - var(--space-5));
+  max-width: 300px;
+  border-radius: 18px;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02) 60%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 50px -30px rgba(0, 0, 0, 0.9);
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 320ms,
+    box-shadow 320ms;
+}
+.mguide:hover {
+  color: #fff;
+  transform: translateY(-3px);
+  border-color: rgba(200, 16, 46, 0.65);
+  box-shadow: 0 30px 60px -28px rgba(200, 16, 46, 0.55);
+}
+.mguide:focus-visible {
+  outline: 3px solid var(--bbg-blue);
+  outline-offset: 3px;
+}
+.mguide__media {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+.mguide__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.mguide:hover .mguide__media img {
+  transform: scale(1.09);
+}
+.mguide__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, transparent 35%, rgba(26, 26, 26, 0.92) 100%);
+}
+.mguide__tag,
+.mguide__time {
+  position: absolute;
+  top: 12px;
+  z-index: 1;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.mguide__tag {
+  left: 12px;
+  background: var(--bbg-blue);
+  color: #fff;
+  box-shadow: 0 6px 16px -6px rgba(200, 16, 46, 0.9);
+}
+.mguide__time {
+  right: 12px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-weight: 600;
+}
+.mguide__body {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: -30px;
+  padding: 0 18px 18px;
+}
+.mguide__title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.mguide__desc {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.66);
+}
+.mguide__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 6px 0 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.mguide__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 0;
+}
+.mguide__stat + .mguide__stat {
+  padding-left: 14px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.mguide__stat b {
+  font-size: 1rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.mguide__stat small {
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.55);
+}
+.mguide__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 42px;
+  margin-top: 6px;
+  border-radius: 999px;
+  background: var(--bbg-blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: background 200ms var(--ease);
+}
+.mguide__btn::after {
+  content: '\2192';
+  transition: transform 200ms var(--ease);
+}
+.mguide:hover .mguide__btn {
+  background: var(--bbg-blue-dark);
+}
+.mguide:hover .mguide__btn::after {
+  transform: translateX(4px);
 }
 .mega__cta {
   margin-top: auto;
@@ -1316,6 +1481,60 @@ a.mega__group-label:hover {
   .mega__intro {
     color: var(--bbg-text-muted);
     max-width: none;
+  }
+  /* In the drawer the guide card goes horizontal and light. */
+  .mega__spine > .mguide {
+    margin-left: 0;
+  }
+  .mguide {
+    flex-direction: row;
+    width: 100%;
+    max-width: none;
+    color: var(--bbg-ink);
+    background: var(--bbg-surface);
+    border-color: var(--bbg-border);
+    box-shadow: none;
+  }
+  .mguide:hover {
+    color: var(--bbg-ink);
+    transform: none;
+    box-shadow: none;
+  }
+  .mguide__media {
+    flex: none;
+    width: 112px;
+    aspect-ratio: auto;
+  }
+  .mguide__media::after,
+  .mguide__time,
+  .mguide__desc,
+  .mguide__stats {
+    display: none;
+  }
+  .mguide__tag {
+    top: 8px;
+    left: 8px;
+    font-size: 0.6rem;
+    padding: 3px 7px;
+  }
+  .mguide__body {
+    margin: 0;
+    padding: 12px 14px;
+    gap: 6px;
+  }
+  .mguide__title {
+    font-size: 0.95rem;
+  }
+  .mguide__btn {
+    min-height: 0;
+    margin: 0;
+    justify-content: flex-start;
+    background: none;
+    color: var(--bbg-blue);
+    font-size: 0.85rem;
+  }
+  .mguide:hover .mguide__btn {
+    background: none;
   }
   .mega__cta {
     color: var(--bbg-blue);

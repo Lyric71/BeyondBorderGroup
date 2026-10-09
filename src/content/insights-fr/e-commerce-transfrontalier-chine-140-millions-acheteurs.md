@@ -2,7 +2,7 @@
 title: "140 millions d'acheteurs, et seulement 3 % d'importations"
 description: "La Chine compte 140 millions d'acheteurs transfrontaliers. Les produits importés n'y pèsent que 3 %. Tout l'enjeu tient dans cet écart."
 pubDate: "2026-07-23"
-updatedDate: "2026-07-23"
+updatedDate: "2026-10-09"
 author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: ["Tmall", "JD", "Douyin"]
@@ -26,6 +26,9 @@ commerce électronique transfrontalier.
 Soit la population du Japon, qui achète étranger sur des plateformes
 chinoises. Aucune de ces transactions n'a exigé d'une marque étrangère qu'elle
 crée d'abord une société en Chine.
+
+Quelle porte emprunter, et combien chacune coûte à une marque : tout figure dans
+[notre guide des canaux transfrontaliers vers la Chine](/fr/guides/vendre-en-chine-sans-societe-chinoise).
 
 > La Chine compte désormais 140 millions de personnes qui achètent partout
 > dans le monde par le commerce électronique transfrontalier. Au premier

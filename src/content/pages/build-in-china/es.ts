@@ -211,6 +211,12 @@ const copy: BuildInChinaCopy = {
     wrongWhen: 'Se equivoca cuando',
   },
 
+  keepInWechat: {
+    title: 'Retener al cliente en WeChat',
+    body: 'Verificar una cuenta de WeCom (企业微信) cuesta 300 yuanes al año. El software de gestión de clientes va de unos 8.000 yuanes anuales para un equipo pequeño a 150.000 o más para una implantación corporativa. WeChat Shop cobra una comisión del 1 % al 5 % según la categoría. La marca que retiene aquí a sus clientes no gasta un yuan en publicidad para la segunda compra.',
+  },
+  guideLink: { label: 'Leer la guía completa', href: '/es/guias/vender-en-china-sin-empresa-china' },
+
   proof: {
     eyebrow: 'Lo que cambia',
     title: 'Con el suelo resuelto, las cifras se mueven rápido.',

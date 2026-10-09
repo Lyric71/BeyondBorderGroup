@@ -7,7 +7,14 @@
  * 30.000 RMB ≈ 3.700 euros, 100.000 RMB ≈ 12.000 euros (1 EUR ≈ 8,2 RMB).
  */
 import type { PartnerGuideCopy } from '../types';
-import { compassSteps, compassTiming, heroStats, whoPaysFaq } from './shared';
+import {
+  channelsGuideLink,
+  compassSteps,
+  compassTiming,
+  heroStats,
+  partnerFees,
+  whoPaysFaq,
+} from './shared';
 
 const copy: PartnerGuideCopy = {
   key: 'dp',
@@ -184,6 +191,8 @@ const copy: PartnerGuideCopy = {
       ],
     },
     link: { label: 'Haga sus propios cálculos con la calculadora de costes de Douyin', href: '/tools/douyin-cost-calculator' },
+    fees: partnerFees,
+    guideLink: channelsGuideLink,
   },
 
   mistakes: {
