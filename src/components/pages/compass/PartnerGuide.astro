@@ -487,6 +487,27 @@ const formatDate = (d?: Date) =>
             </a>
           )
         }
+        {
+          c.terms.fees && (
+            <div class="pg-note pg-note--block" data-pg-reveal>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d={I.info} /></svg>
+              <div>
+                <h3>{c.terms.fees.title}</h3>
+                <p>{c.terms.fees.body}</p>
+              </div>
+            </div>
+          )
+        }
+        {/* Guides are English only, so this href does not go through localizePath. */}
+        {
+          c.terms.guideLink && (
+            <div>
+              <a class="btn btn--ghost pg-note-link" href={c.terms.guideLink.href} data-pg-reveal>
+                {c.terms.guideLink.label}
+              </a>
+            </div>
+          )
+        }
       </div>
     </section>
 
@@ -2119,6 +2140,15 @@ const formatDate = (d?: Date) =>
   }
   .pg-note-link {
     margin-top: var(--space-4);
+  }
+  /* A titled note: the optional "What partners charge" block (English only for now). */
+  .pg-note--block h3 {
+    margin: 0 0 var(--space-2);
+    font-size: 1.125rem;
+    line-height: 1.3;
+  }
+  .pg-note--block p {
+    margin: 0;
   }
   /* Long labels (FR, DE, ES) wrap instead of pushing the column past the screen. */
   .pg-note-link,

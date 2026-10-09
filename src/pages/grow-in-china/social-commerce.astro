@@ -533,6 +533,41 @@ const serviceJsonLd = {
       </div>
     </section>
 
+    {/* ---------- SELLING CROSS-BORDER ON DOUYIN AND XIAOHONGSHU ---------- */}
+    <section class="section section--tight section--alt">
+      <div class="container">
+        <div class="sc-platforms-fact__grid sc-crossborder__grid cbs-reveal">
+          <article class="sc-platforms-fact__card">
+            <h2>Selling cross-border on Douyin</h2>
+            <p>
+              Douyin Global Shopping needs an overseas company, a mainland company that signs as
+              joint-liability agent, and an overseas bank account. The deposit runs RMB 500 to
+              5,000, set by last month's sales, and the service fee 2% to 6% by category.
+            </p>
+            <p>
+              The store is cheap. The traffic is not. Top creators now ask 20% commission or more,
+              and a dedicated session with a top creator costs RMB 1 million to 3 million in slot
+              fees. Once ads are added, a creator-led sale can cost 35% to 50% of GMV. Brand-run
+              store livestreams run about 10 points cheaper, which is why we build them first.
+            </p>
+          </article>
+          <article class="sc-platforms-fact__card">
+            <h2>Selling cross-border on Xiaohongshu</h2>
+            <p>
+              Xiaohongshu runs a cross-border store for overseas companies with a mainland
+              guarantor: USD 400 deposit plus a floating amount, 2% to 5% service fee, 0.7% payment
+              fee. For most branded products, though, Xiaohongshu is where shoppers decide and Tmall
+              or JD is where they pay. Since 2025, Xiaohongshu ads can link straight into the Tmall
+              and JD apps and track the sale.
+            </p>
+            <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost"
+              >Read the full guide</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
     {/* ---------- TWO TRUTHS ---------- */}
     <section id="two-truths" class="section cbs-truths-section">
       <div class="cbs-truths-bg" aria-hidden="true">
@@ -1371,6 +1406,30 @@ const serviceJsonLd = {
     }
     @media (max-width: 960px) {
       .sc-platforms-fact__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ---------- Selling cross-border on Douyin and Xiaohongshu ---------- */
+    .sc-crossborder__grid {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 0;
+    }
+    .sc-crossborder__grid .sc-platforms-fact__card h2 {
+      font-size: clamp(1.25rem, 1rem + 0.8vw, 1.5rem);
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin: 0 0 0.75rem;
+      color: #1a1a1a;
+    }
+    .sc-crossborder__grid .sc-platforms-fact__card p + p {
+      margin-top: 0.85rem;
+    }
+    .sc-crossborder__grid .btn--ghost {
+      margin-top: 1rem;
+    }
+    @media (max-width: 960px) {
+      .sc-crossborder__grid {
         grid-template-columns: 1fr;
       }
     }

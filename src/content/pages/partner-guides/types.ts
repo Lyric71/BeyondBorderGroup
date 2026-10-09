@@ -54,6 +54,10 @@ export interface PartnerGuideCopy {
     link?: { label: string; href: string };
     /** Mark the third column as the "what to watch" column. English infers it from the header. */
     warnColumn?: boolean;
+    /** Optional "What partners charge" callout after the link. English only for now. */
+    fees?: { title: string; body: string };
+    /** Optional link to the channels guide, closing the section. Not localized: guides are English only. */
+    guideLink?: { label: string; href: string };
   };
   /** `image` sits beside the failure list; a photograph of the failure, not a person. */
   mistakes: Section & { items: Named[]; image: { src: string; alt: string } };

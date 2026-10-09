@@ -91,21 +91,29 @@ const insightSlugs = [
 ];
 
 /**
- * Articles merged into another one (duplicates from the WordPress migration).
- * The retired article's legacy URL points straight at the survivor so no
- * visitor or crawler goes through two hops.
+ * Articles merged into another one (duplicates from the WordPress migration,
+ * or articles a later guide replaced). The retired article's legacy URL points
+ * straight at the survivor so no visitor or crawler goes through two hops. A
+ * value starting with "/" is a full path; anything else is an insight slug.
  *
  * @type {Record<string, string>}
  */
 const mergedInsights = {
   'china-is-no-longer-one-market-a-localized-growth-strategy-for-2025': 'china-is-no-longer-one-market-why-local-bets-beat-national-plans',
+  'china-e-commerce-platforms-2025': '/guides/china-cross-border-ecommerce-channels',
+};
+
+/** Legacy destination for a WordPress insight slug, after any merge. */
+const insightDest = (/** @type {string} */ slug) => {
+  const to = mergedInsights[slug] ?? slug;
+  return to.startsWith('/') ? to : `/insights/${to}`;
 };
 
 /** `/<slug>` -> `/insights/<slug>` 301 map for the legacy article URLs. */
 const insightRedirects = Object.fromEntries(
   insightSlugs.map((slug) => [
     `/${slug}`,
-    { status: /** @type {const} */ (301), destination: `/insights/${mergedInsights[slug] ?? slug}` },
+    { status: /** @type {const} */ (301), destination: insightDest(slug) },
   ]),
 );
 
@@ -732,6 +740,14 @@ export default defineConfig({
     '/fr/decryptages/chine-marche-unique-paris-locaux-2025': { status: 301, destination: '/fr/decryptages/chine-pari-local-vs-plan-national' },
     '/de/analysen/china-kein-einheitsmarkt-lokale-strategien-2025': { status: 301, destination: '/de/analysen/china-lokale-wetten-statt-nationaler-plaene' },
     '/es/analisis/china-no-es-un-solo-mercado-estrategia-2025': { status: 301, destination: '/es/analisis/china-apuesta-local-vs-plan-nacional' },
+
+    // The 2025 platform map is retired in every locale; the cross-border
+    // channels guide (English only) replaces it.
+    '/insights/china-e-commerce-platforms-2025': { status: 301, destination: '/guides/china-cross-border-ecommerce-channels' },
+    '/fr/decryptages/e-commerce-chinois-2025-plateformes': { status: 301, destination: '/guides/china-cross-border-ecommerce-channels' },
+    '/fr/decryptages/china-e-commerce-platforms-2025': { status: 301, destination: '/guides/china-cross-border-ecommerce-channels' },
+    '/de/analysen/chinesischer-e-commerce-2025-plattformen': { status: 301, destination: '/guides/china-cross-border-ecommerce-channels' },
+    '/es/analisis/ecommerce-chino-2025-plataformas': { status: 301, destination: '/guides/china-cross-border-ecommerce-channels' },
 
     // WO-3.1: the standalone KOL service page is retired. Creator work is
     // TheRedScroll's specialism and /social-in-china is the door onto it,

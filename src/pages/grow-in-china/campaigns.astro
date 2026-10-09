@@ -153,6 +153,25 @@ const calendar = [
   },
 ];
 
+const eventCosts = [
+  {
+    platform: 'Tmall',
+    cost: 'Alimama ads, affiliate commission at 5% to 50%, the discounts you fund in 88VIP and price-cut events',
+  },
+  {
+    platform: 'JD',
+    cost: 'JD ads at roughly RMB 10 to 40 per order, affiliates, event costs that can add 15% to 20% of revenue during 618 and 11.11',
+  },
+  {
+    platform: 'Douyin',
+    cost: 'Qianchuan ads, creator commission (5% minimum since April 2026), slot fees',
+  },
+  {
+    platform: 'Xiaohongshu',
+    cost: 'Search and feed ads at RMB 0.8 to 3 a click, note boosts, creator fees plus a 10% platform fee',
+  },
+];
+
 const serviceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -469,6 +488,50 @@ const serviceJsonLd = {
             non-negotiables. The rest depends on your category. And look at the prep column: if a
             festival is less than its lead time away, you’re already behind, so plan the next one.
           </p>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- EVENT COSTS ---------- */}
+    <section id="event-costs" class="section">
+      <div class="container">
+        <header class="section-header section-header--center cbs-reveal">
+          <span class="eyebrow">Event costs</span>
+          <h2>What a sales event really costs</h2>
+        </header>
+
+        <div class="cbs-compare cbs-reveal">
+          <div class="cbs-compare__table-wrap">
+            <table class="cbs-calendar cbs-calendar--costs">
+              <thead>
+                <tr>
+                  <th scope="col">Platform</th>
+                  <th scope="col">What you pay for inside the store</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  eventCosts.map((row) => (
+                    <tr>
+                      <th scope="row" class="cbs-calendar__event">{row.platform}</th>
+                      <td class="cbs-calendar__what">{row.cost}</td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+
+          <p class="cbs-compare__note">
+            On a self-operated deal, event discounts come back to the brand through margin
+            protection. We budget them as marketing, not as a price decision.
+          </p>
+        </div>
+
+        <div class="cbs-approach__cta cbs-reveal">
+          <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost"
+            >Read the full guide</a
+          >
         </div>
       </div>
     </section>
@@ -1038,6 +1101,28 @@ const serviceJsonLd = {
     .cbs-calendar__who {
       color: var(--bbg-text-muted);
       font-size: 0.9rem;
+    }
+    /* Two-column event cost table: platform as the row header. */
+    .cbs-calendar--costs {
+      min-width: 560px;
+    }
+    .cbs-calendar--costs tbody th {
+      text-align: left;
+      vertical-align: top;
+      padding: var(--space-4);
+      border-bottom: 1px solid var(--bbg-border);
+      line-height: 1.55;
+      white-space: nowrap;
+      width: 22%;
+    }
+    .cbs-calendar--costs tbody tr:last-child th {
+      border-bottom: none;
+    }
+    .cbs-calendar--costs tbody tr:hover th {
+      background: rgba(200, 16, 46, 0.03);
+    }
+    .cbs-calendar--costs .cbs-calendar__what {
+      max-width: none;
     }
     .cbs-compare__note {
       margin: var(--space-5) auto 0;

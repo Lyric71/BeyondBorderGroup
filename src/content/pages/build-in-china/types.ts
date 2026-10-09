@@ -134,6 +134,11 @@ export interface BuildInChinaCopy {
     wrongWhen: string;
   };
 
+  /** Optional "Keeping customers in WeChat" callout under the surfaces. English only for now. */
+  keepInWechat?: { title: string; body: string };
+  /** Optional link to the channels guide, after the callout. English only for now. */
+  guideLink?: { label: string; href: string };
+
   proof: {
     eyebrow: string;
     title: string;

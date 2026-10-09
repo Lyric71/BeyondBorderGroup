@@ -2,7 +2,7 @@
 title: "140 Million Shoppers. Imports Are Only 3%."
 description: "China now has 140 million cross-border shoppers, but imported goods are barely 3 percent of what the country buys. That gap is the opening."
 pubDate: "2026-07-23"
-updatedDate: "2026-07-23"
+updatedDate: "2026-10-09"
 author: "Cyril Drouin"
 column: true
 category: "Market Strategy"
@@ -27,6 +27,9 @@ e-commerce.
 That is roughly the population of Japan, buying foreign products, on Chinese
 platforms. Not one of those transactions required a foreign brand to
 register a Chinese company first.
+
+Which door to use, and what each one costs a brand to run, is in
+[our guide to every cross-border channel into China](/guides/china-cross-border-ecommerce-channels).
 
 > China now has 140 million people shopping globally through cross-border
 > e-commerce. In the first half of 2026, cross-border e-commerce exports

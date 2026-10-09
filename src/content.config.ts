@@ -197,6 +197,8 @@ const guides = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
   schema: z.object({
     title: z.string(),
+    /** Search title when `title` (the H1) is too long for results; at most 60 characters. */
+    seoTitle: z.string().max(60).optional(),
     description: z.string(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),

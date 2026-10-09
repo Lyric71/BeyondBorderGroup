@@ -65,6 +65,7 @@ const copy: SocialInChinaCopy = {
       owner: 'Split',
       image: '/Images/social/wechat.png',
       alt: 'A woman reading a WeChat conversation on her phone in a Shanghai cafe',
+      note: 'Moments ads run RMB 30 to 180 per 1,000 views; groups and a mini program cost little to run.',
     },
     {
       key: 'rednote',
@@ -78,6 +79,7 @@ const copy: SocialInChinaCopy = {
       owner: 'TheRedScroll',
       image: '/Images/social/rednote.png',
       alt: 'A shopper scrolling a RedNote beauty feed on her phone beside skincare bottles and dried flowers',
+      note: 'Where shoppers decide. Small-creator notes cost RMB 300 to 2,000; the sale often closes on Tmall or JD through tracked links.',
     },
     {
       key: 'douyin',
@@ -91,6 +93,7 @@ const copy: SocialInChinaCopy = {
       owner: 'Split',
       image: '/Images/social/douyin.png',
       alt: 'A Douyin host presenting a skincare product to camera in a ring-lit livestream studio',
+      note: 'Where shoppers buy what they watch. Creator videos average about RMB 40,000; live selling costs more.',
     },
     {
       key: 'weibo',
@@ -104,8 +107,11 @@ const copy: SocialInChinaCopy = {
       owner: 'TheRedScroll',
       image: '/Images/platforms/weibo.png',
       alt: 'A Weibo trending-topics billboard glowing over shoppers on a wet Nanjing Road at night',
+      note: 'For launches and celebrity news. Creator booking starts from a RMB 2,000 top-up.',
     },
   ],
+
+  guideLink: { label: 'Read the full guide', href: '/guides/china-cross-border-ecommerce-channels' },
 
   longTail: [
     {

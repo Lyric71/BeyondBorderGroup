@@ -2,6 +2,7 @@
 title: "The Year 2,415 Brands Bet on China"
 description: "What the 2025 Tmall Global numbers say about how foreign brands actually get into China, and which ones are already winning."
 pubDate: "2026-07-13"
+updatedDate: "2026-10-09"
 author: "Cyril Drouin"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
@@ -19,6 +20,8 @@ heroImageAlt: "Shopper browsing imported brands on the Tmall Global app at home"
 Six new overseas brands opened a store and started selling in China every single day last year. Not applications, not pilots. Live stores, taking orders.
 
 That is the headline from Tmall Global's 2025 wrap-up, and it is worth sitting with for a second. Tmall Global (天猫国际) is Alibaba's cross-border arm, the storefront that lets a brand sell to mainland consumers without registering a Chinese company or shipping inventory into the country first. Goods clear from a bonded warehouse or ship direct from overseas. For most foreign brands, it is the first real door into China.
+
+What that door costs, fee by fee, and how it compares with JD, Douyin and Xiaohongshu, is in [our guide to every cross-border channel into China](/guides/china-cross-border-ecommerce-channels).
 
 > In 2025, 2,415 overseas brands opened their first store on Tmall Global, a double-digit year-over-year increase in new flagship stores. That works out to more than six new brands a day.
 > Source: China Economic Net (中国经济网), citing Tmall Global data

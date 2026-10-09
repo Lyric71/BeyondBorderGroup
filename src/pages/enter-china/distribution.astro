@@ -385,10 +385,30 @@ const contextCards = [
         </div>
       </div>
 
-      <a href="#two-truths" class="dis-hero__scroll" aria-label="Scroll to next section">
+      <a href="#beyond-cross-border" class="dis-hero__scroll" aria-label="Scroll to next section">
         <span class="dis-hero__scroll-line"></span>
         <span class="dis-hero__scroll-text">Scroll</span>
       </a>
+    </section>
+
+    {/* ---------- BRIDGE FROM CROSS-BORDER ---------- */}
+    <section id="beyond-cross-border" class="section section--tight section--alt dis-bridge">
+      <div class="container">
+        <header class="section-header dis-reveal">
+          <span class="eyebrow">General trade</span>
+          <h2>When cross-border is no longer enough</h2>
+          <p>
+            Cross-border stock cannot be sold offline, cannot feed 30-minute delivery and is capped
+            at RMB 26,000 per shopper a year. Once a product sells, general trade opens domestic
+            stores, instant retail and offline shelves. It needs a Chinese importer, Chinese labels
+            and product registration, and pays full duty plus 13% VAT. From December 2026,
+            imported cosmetics can use QR-code electronic labels and simpler first-import rules.
+          </p>
+          <a href="/guides/china-cross-border-ecommerce-channels" class="btn btn--ghost"
+            >Read the full guide</a
+          >
+        </header>
+      </div>
     </section>
 
     {/* ---------- TWO TRUTHS / CONTEXT ---------- */}
@@ -1562,6 +1582,15 @@ const contextCards = [
       color: var(--bbg-text-muted);
       line-height: 1.6;
       font-size: 1.0625rem;
+    }
+
+    /* ---------- BRIDGE FROM CROSS-BORDER ---------- */
+    .dis-bridge .section-header {
+      margin-bottom: 0;
+    }
+    .dis-bridge .section-header p {
+      max-width: 72ch;
+      color: var(--bbg-text);
     }
 
     /* ---------- CONTEXT (two truths) ---------- */

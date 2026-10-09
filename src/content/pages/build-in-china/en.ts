@@ -207,6 +207,12 @@ const copy: BuildInChinaCopy = {
     wrongWhen: 'Wrong call when',
   },
 
+  keepInWechat: {
+    title: 'Keeping customers in WeChat',
+    body: 'A WeCom (企业微信) account costs RMB 300 a year to verify. Customer management software runs from about RMB 8,000 a year for a small team to RMB 150,000 and up for an enterprise set-up. WeChat Shop charges 1% to 5% commission by category. Brands that keep customers here pay no ad money for the second purchase.',
+  },
+  guideLink: { label: 'Read the full guide', href: '/guides/china-cross-border-ecommerce-channels' },
+
   proof: {
     eyebrow: 'What changes',
     title: 'The numbers move fast once the floor is right.',

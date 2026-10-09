@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 
 const { guide } = Astro.props;
 const { Content } = await render(guide);
-const { title, description, pubDate, updatedDate, author, format, relatedInsight, heroImage, heroImageAlt } =
+const { title, seoTitle, description, pubDate, updatedDate, author, format, relatedInsight, heroImage, heroImageAlt } =
   guide.data;
 
 function formatDate(d?: Date) {
@@ -22,7 +22,7 @@ function formatDate(d?: Date) {
 ---
 
 <Layout
-  title={`${title} | TheChinaPath`}
+  title={`${seoTitle ?? title} | TheChinaPath`}
   description={description}
   noAlternate
   ogType="article"
@@ -125,6 +125,18 @@ function formatDate(d?: Date) {
     }
     .guide__body li {
       margin: 0.4em 0;
+    }
+    .guide__body blockquote {
+      margin: 1.75em 0;
+      padding: 0.5em 0 0.5em 1.5em;
+      border-left: 3px solid var(--bbg-blue);
+      font-style: italic;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      color: var(--bbg-ink);
+    }
+    .guide__body blockquote p {
+      margin: 0;
     }
     .guide__body input[type='checkbox'] {
       margin-right: 0.5em;

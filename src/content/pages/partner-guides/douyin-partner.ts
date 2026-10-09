@@ -6,7 +6,14 @@
  * (src/pages/tools/douyin-cost-calculator.astro), labelled as such in the copy.
  */
 import type { PartnerGuideCopy } from './types';
-import { compassSteps, compassTiming, heroStats, whoPaysFaq } from './shared';
+import {
+  channelsGuideLink,
+  compassSteps,
+  compassTiming,
+  heroStats,
+  partnerFees,
+  whoPaysFaq,
+} from './shared';
 
 const copy: PartnerGuideCopy = {
   key: 'dp',
@@ -180,6 +187,8 @@ const copy: PartnerGuideCopy = {
       ],
     },
     link: { label: "Run your own numbers in the Douyin cost calculator", href: '/tools/douyin-cost-calculator' },
+    fees: partnerFees,
+    guideLink: channelsGuideLink,
   },
 
   mistakes: {

@@ -51,7 +51,6 @@ export const insightEnToFr = {
   'brand-localization-for-china-without-losing-your-dna': 'localiser-marque-chine-sans-diluer-adn',
   'china-2026-8-ecommerce-marketing-predictions':
     'chine-2026-huit-predictions-e-commerce-marketing',
-  'china-e-commerce-platforms-2025': 'e-commerce-chinois-2025-plateformes',
   'china-is-no-longer-one-market-why-local-bets-beat-national-plans':
     'chine-pari-local-vs-plan-national',
   'china-social-media-and-kol-strategies-for-ecommerce-brands': 'kol-chinois-commerce-digital',
@@ -211,7 +210,6 @@ export const insightEnToDe = {
   'brand-localization-for-china-without-losing-your-dna':
     'marke-fuer-china-ohne-identitaetsverlust',
   'china-2026-8-ecommerce-marketing-predictions': 'china-2026-acht-prognosen-e-commerce-marketing',
-  'china-e-commerce-platforms-2025': 'chinesischer-e-commerce-2025-plattformen',
   'china-is-no-longer-one-market-why-local-bets-beat-national-plans':
     'china-lokale-wetten-statt-nationaler-plaene',
   'china-social-media-and-kol-strategies-for-ecommerce-brands': 'chinesische-kol-digitalhandel',
@@ -369,7 +367,6 @@ export const insightEnToEs = {
   'brand-localization-for-china-without-losing-your-dna': 'localizar-marca-china-sin-perder-adn',
   'china-2026-8-ecommerce-marketing-predictions':
     'china-2026-ocho-predicciones-ecommerce-marketing',
-  'china-e-commerce-platforms-2025': 'ecommerce-chino-2025-plataformas',
   'china-is-no-longer-one-market-why-local-bets-beat-national-plans':
     'china-apuesta-local-vs-plan-nacional',
   'china-social-media-and-kol-strategies-for-ecommerce-brands': 'kol-chinos-comercio-digital',

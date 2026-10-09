@@ -6,7 +6,14 @@
  * calculators (src/pages/tools/*), labelled as such in the copy.
  */
 import type { PartnerGuideCopy } from './types';
-import { compassSteps, compassTiming, heroStats, whoPaysFaq } from './shared';
+import {
+  channelsGuideLink,
+  compassSteps,
+  compassTiming,
+  heroStats,
+  partnerFees,
+  whoPaysFaq,
+} from './shared';
 
 const copy: PartnerGuideCopy = {
   key: 'tp',
@@ -148,7 +155,7 @@ const copy: PartnerGuideCopy = {
   terms: {
     eyebrow: 'The money',
     title: 'How Tmall Partners get paid',
-    intro: 'Most TPs charge a monthly retainer plus a commission on sales. Our Tmall Global and JD Worldwide calculators start from 35,000 RMB a month (roughly 4,900 USD) plus 10% of GMV. Use those as a yardstick for real quotes, which move both ways with store size and scope.',
+    intro: 'Most TPs charge a monthly retainer plus a commission on sales. Our Tmall Global and JD Worldwide calculators default to 35,000 RMB a month (roughly 4,900 USD) plus 10% of GMV. Use that as a yardstick for real quotes, which move both ways with store size and scope.',
     table: {
       headers: ['Model', 'How they are paid', 'Fits when'],
       rows: [
@@ -171,6 +178,8 @@ const copy: PartnerGuideCopy = {
     },
     note: 'Paid media runs through an ad account you fund directly. Partners who offer to front the ad spend tend to fall over. Many brands also set aside a yearly co-fund for big moments like Double 11 or a launch. And put the handover in the contract: content, customer data, and ad accounts should move with you when it ends.',
     link: { label: "Run your own numbers in the Tmall Global calculator", href: '/tools/tmall-global-setup-and-run' },
+    fees: partnerFees,
+    guideLink: channelsGuideLink,
   },
 
   mistakes: {
@@ -217,7 +226,7 @@ const copy: PartnerGuideCopy = {
       },
       {
         q: 'How much does a Tmall Partner cost?',
-        a: 'Most charge a monthly retainer plus a commission on GMV. Our calculators start from 35,000 RMB a month (roughly 4,900 USD) plus 10% of GMV, and real quotes move both ways with store size and scope. Paid media comes on top, funded by you.',
+        a: 'Most charge a monthly retainer plus a commission on GMV. Our calculators default to 35,000 RMB a month (roughly 4,900 USD) plus 10% of GMV, and real quotes move both ways with store size and scope. Paid media comes on top, funded by you.',
       },
       {
         q: 'Can I run a Tmall store without a TP?',

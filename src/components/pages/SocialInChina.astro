@@ -8,7 +8,8 @@
  * happens in one place. Shape: src/content/pages/social-in-china/types.ts.
  *
  * Guardrails from the build spec, in every language:
- *  - no pricing (fixed scope and fixed price is the offer shape, never a figure)
+ *  - no pricing (fixed scope and fixed price is the offer shape, never a figure);
+ *    the optional per-platform `note` lines quote market rates, not our fees
  *  - one outbound target, theredscroll.com, reachable from two places
  */
 import Layout from '../../layouts/Layout.astro';
@@ -162,6 +163,7 @@ const stages = c.stages;
                     <span class="sic-panel__role">{p.role}</span>
                     <h3 class="sic-panel__name">{p.name}</h3>
                     <p class="sic-panel__body">{p.body}</p>
+                    {p.note && <p class="sic-panel__note">{p.note}</p>}
 
                     <div class="sic-funnel" aria-hidden="true">
                       <span class="sic-funnel__title">{c.map.funnelTitle}</span>
@@ -212,6 +214,16 @@ const stages = c.stages;
             }
           </ul>
         </div>
+
+        {
+          c.guideLink && (
+            <div class="sic-more sic-reveal">
+              <a href={c.guideLink.href} class="btn btn--ghost">
+                {c.guideLink.label}
+              </a>
+            </div>
+          )
+        }
       </div>
     </section>
 
@@ -864,6 +876,16 @@ const stages = c.stages;
       color: var(--bbg-text);
       max-width: 46ch;
     }
+    /* Optional cost line under the body (English only for now) */
+    .sic-panel__note {
+      font-size: var(--fs-small);
+      line-height: 1.7;
+      color: var(--bbg-text-muted);
+      max-width: 46ch;
+      margin: var(--space-3) 0 0;
+      padding-left: var(--space-3);
+      border-left: 2px solid var(--tint);
+    }
 
     /* ---- Funnel meter ---- */
     .sic-funnel {
@@ -1046,6 +1068,9 @@ const stages = c.stages;
       font-size: 0.78rem;
       color: var(--bbg-text-muted);
       line-height: 1.45;
+    }
+    .sic-more {
+      margin-top: var(--space-6);
     }
 
     /* ---------- Section 3: the split board ---------- */

@@ -24,6 +24,8 @@ export interface Platform {
   owner: 'Split' | 'TheRedScroll';
   image: string;
   alt: string;
+  /** Optional cost line shown under the panel body. English only for now. */
+  note?: string;
 }
 
 export interface TailPlatform {
@@ -83,6 +85,8 @@ export interface SocialInChinaCopy {
   };
   platforms: Platform[];
   longTail: TailPlatform[];
+  /** Optional link to the channels guide, under the platform map. English only for now. */
+  guideLink?: { label: string; href: string };
 
   splitSection: {
     eyebrow: string;

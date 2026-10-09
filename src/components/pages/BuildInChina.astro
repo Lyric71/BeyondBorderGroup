@@ -9,7 +9,8 @@
  *
  * Guardrails from the build spec, and they hold in every language:
  *  - do not sell web development in TheChinaPath's own voice
- *  - no pricing anywhere
+ *  - no pricing anywhere for the build; the optional `keepInWechat` callout
+ *    quotes platform and software rates, not ChinaWebFoundry's fees
  *  - one outbound target, chinawebfoundry.com, reachable from two places
  *  - "WeChat mini program", "ICP filing" and "Baidu" appear in body copy and in
  *    the meta description
@@ -379,6 +380,24 @@ const icons: Record<string, string> = {
             ))
           }
         </div>
+
+        {
+          c.keepInWechat && (
+            <div class="bic-icp__card bic-keep bic-reveal">
+              <h3 class="bic-icp__h3">{c.keepInWechat.title}</h3>
+              <p>{c.keepInWechat.body}</p>
+            </div>
+          )
+        }
+        {
+          c.guideLink && (
+            <div class="bic-more bic-reveal">
+              <a href={c.guideLink.href} class="btn btn--ghost">
+                {c.guideLink.label}
+              </a>
+            </div>
+          )
+        }
       </div>
     </section>
 
@@ -2035,6 +2054,17 @@ const icons: Record<string, string> = {
     }
     .bic-list--muted li::before {
       background: var(--bbg-border);
+    }
+
+    /* Optional "keeping customers in WeChat" callout (English only for now) */
+    .bic-keep {
+      margin-top: var(--space-6);
+    }
+    .bic-keep p:last-child {
+      margin-bottom: 0;
+    }
+    .bic-more {
+      margin-top: var(--space-4);
     }
 
     /* ---------- Section 5: proof ---------- */

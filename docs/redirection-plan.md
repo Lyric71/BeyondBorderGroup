@@ -102,7 +102,7 @@ the same last path segment.
 | `/douyin-live-commerce-2025-store-led-livestream-strategy/` | `/insights/douyin-live-commerce-2025-store-led-livestream-strategy` | 301 |
 | `/china-is-no-longer-one-market-why-local-bets-beat-national-plans/` | `/insights/china-is-no-longer-one-market-why-local-bets-beat-national-plans` | 301 |
 | `/china-2026-8-ecommerce-marketing-predictions/` | `/insights/china-2026-8-ecommerce-marketing-predictions` | 301 |
-| `/china-e-commerce-platforms-2025/` | `/insights/china-e-commerce-platforms-2025` | 301 |
+| `/china-e-commerce-platforms-2025/` | `/guides/china-cross-border-ecommerce-channels` | 301 |
 | `/taobao-flash-sale-and-chinas-30-minute-retail/` | `/insights/taobao-flash-sale-and-chinas-30-minute-retail` | 301 |
 | `/pipl-compliance-in-china-diors-wake-up-call-for-global-brands/` | `/insights/pipl-compliance-in-china-diors-wake-up-call-for-global-brands` | 301 |
 | `/how-jd-mall-turns-offline-stores-into-experience-hubs/` | `/insights/how-jd-mall-turns-offline-stores-into-experience-hubs` | 301 |
@@ -373,6 +373,16 @@ curl -sI https://www.beyondbordergroup.com/foreign-brands-in-china-why-most-mark
   when a case is added or renamed, then mirror the row in the table above.
 
 ## Notes on the insight migration
+
+- Retired 2026-10-09: `china-e-commerce-platforms-2025` (EN, FR, DE, ES) is
+  replaced by the guide `/guides/china-cross-border-ecommerce-channels`
+  (English only). `/insights/china-e-commerce-platforms-2025`,
+  `/fr/decryptages/e-commerce-chinois-2025-plateformes`,
+  `/fr/decryptages/china-e-commerce-platforms-2025`,
+  `/de/analysen/chinesischer-e-commerce-2025-plattformen` and
+  `/es/analisis/ecommerce-chino-2025-plataformas` all 301 to the guide, and
+  the legacy WordPress URL goes there in one hop (`mergedInsights` in
+  `astro.config.mjs`).
 
 - Every article keeps its original WordPress slug. The only change is the
   namespace (`/<slug>` -> `/insights/<slug>`). This keeps the 301 map 1:1 and

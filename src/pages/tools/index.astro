@@ -33,6 +33,19 @@ const calculators = [
     tags: ['JD Worldwide', 'Cross-border', 'Marketplace'],
     live: true,
   },
+  // Defaults for the calculator, all editable, from the cross-border channels
+  // guide (October 2026): retail price RMB 100 including 9.1% tax. Tmall
+  // Global: commission 4% plus 1% payment, ads 20%, partner 10%, fulfillment
+  // RMB 12 per order. Douyin: service fee 5%, Qianchuan 15%, creators 20%,
+  // partner 8%, fulfillment RMB 12. JD self-operated: margin 25% of the
+  // pre-tax price, brand marketing 15% of retail.
+  {
+    title: 'Margin by channel',
+    desc: 'See where each RMB 100 goes on Tmall Global, JD Global self-operated and Douyin: tax, platform fees, ads, creators, partner and fulfillment, and what the brand keeps.',
+    icon: icon.chart,
+    tags: ['Tmall Global', 'JD', 'Douyin'],
+    live: false,
+  },
   {
     title: 'Xiaohongshu campaign budget',
     desc: 'Plan a Xiaohongshu launch: note seeding, KOC and KOL mix, paid amplification and expected reach for a given spend.',
