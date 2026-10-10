@@ -1,18 +1,22 @@
 # Weekly runbook
 
 Four slots a week, Monday to Thursday, for fifty-two weeks. Week 01 opens
-Monday September 7, 2026; week 52 closes Thursday September 2, 2027. Friday
-is review only.
+Monday September 7, 2026; week 52 closes Thursday September 2, 2027. The
+calendar sets each row's `publish_date`, which orders the queue and never
+gates a run (`CLAUDE.md`, the standing rule under the pipeline table): the
+draft run takes the next row every day, and a finished draft publishes at
+the next publish run, so the pipeline runs ahead of the dates.
 
 ## The daily command
 
 Open Claude Code at the repo root and paste:
 
 ```
-Draft today's slot.
+Draft the next slot.
 ```
 
-That is the whole prompt. `CLAUDE.md` tells Claude what "today's slot" means.
+That is the whole prompt. `CLAUDE.md` tells Claude what "the next slot"
+means ("Draft today's slot." still works and means the same).
 If you want a specific one:
 
 ```
@@ -32,8 +36,11 @@ Publish china-distributor-vs-own-store
 ## What Claude does, in order
 
 1. Reads `CLAUDE.md`, `SPEC.md` and `briefs/PREAMBLE.md`.
-2. Finds today's row in `schedule.csv`. If today has no row, takes the oldest
-   row with status `not_started` that has a brief file, and says so.
+2. Takes the next row in `schedule.csv`: a row an interrupted run left at
+   `drafted` or `quality_passed`, else the earliest `not_started` row in
+   `publish_date` order, whatever its date. It passes over only `blocked`,
+   `skipped` and `drafting` rows, a Signal dated after today, and a row whose
+   notes say `Hold until` a date after today.
 3. Reads the brief (Anchor, Ledger) or the slot template (Signal, Teardown,
    Refresh) plus the matching source file (`signal-watch-list.md`,
    `teardown-criteria.md`, or the refresh queue below).
@@ -115,7 +122,12 @@ the send fails, Claude says so instead of skipping silently.
 | Wednesday | Ledger A or B | "What it costs to sell [category] in China" or "How [category] reaches buyers in China". Seven blocks. |
 | Thursday, odd weeks | Teardown | How a named non-client brand entered China, every figure sourced. |
 | Thursday, even weeks | Refresh | One back-catalogue insight upgraded to the Anchor spec. |
-| Friday | none | Review what the week shipped. Nothing waits for Friday: every run closes its own items. Refresh the site profile on the first working day of the month (the first run of the month does it if Friday comes later). |
+| Friday | none in the calendar | Review what the week shipped. Nothing waits for Friday: every run closes its own items, and the draft run fires on Friday and the weekend too. Refresh the site profile on the first working day of the month (the first run of the month does it if Friday comes later). |
+
+The weekday is the slot's place in the calendar, not the day it is drafted.
+The draft run takes one row a day, every day, in `publish_date` order, so
+the queue runs ahead of the calendar. Only a Signal waits for its date,
+because it reports the week before it.
 
 Ledger scheduling rule: a category that also has a category Anchor sits at
 least eight weeks from it, and the two interlink. The schedule already
@@ -127,11 +139,12 @@ Anchor. If two weeks slip, run Anchor and Ledger only.
 ## The partner queue
 
 Fifty "Finding a partner" pieces (P01 to P50, Part 5 of the master plan)
-publish on their own calendar: P01 to P15 every weekday from Sept 30 to
-Oct 20, 2026, then every other day, weekends included, to Dec 29. The
+are dated on their own calendar: P01 to P15 every weekday from Sept 30 to
+Oct 20, 2026, then every other day, weekends included, to Dec 29. Those
+dates order the partner queue; they do not hold a piece back. The
 `TheChinaPath Editorial Partner` task (daily, 14:00) runs
-`scripts/run-daily.ps1 -Mode partner`, which drafts every P row still
-`not_started` and due within two days. The daily publish task publishes it.
+`scripts/run-daily.ps1 -Mode partner`, which drafts the next P row still
+`not_started`, whatever its date. The next publish run publishes it.
 By hand: `Draft brief P07`. A row set to `drafting` has been claimed by a
 manual run; the scheduled runs skip it.
 
@@ -152,10 +165,16 @@ without substantive change teaches Google to ignore dates on this domain.
 | Sept 22, 2026 | Double 11, 60-day checklist (03A) | Decided Sept 4, 2026: 03A stays on Sept 22 even though the brief says "do not publish after 12 September". Write it as the 50-day checklist, counting back from Nov 11, and keep the "60-day" framing only if the copy explains the countdown honestly. |
 | Sept 25 to 27 | Mid-Autumn Festival | China-side review finishes Thursday Sept 24. |
 | Oct 1 to 7 | National Day Golden Week | Week 04 falls inside it. Draft 04A and 04L during the week of Sept 28 with `Draft brief 04A` and `Draft brief 04L`, one at a time. |
-| Oct 28 | Double 11, last fourteen days | Brief 08A. Fixed date, do not slip. |
-| Nov 11 | Double 11 | 10A (live read) and 11A (results, gated report) must publish within their weeks. |
-| Feb 6, 2027 | Chinese New Year | 16A (CNY cut-off calendar) publishes Dec 22, 2026. Office closes around Feb 5 to 13; draft weeks 23 and 24 early. |
-| June 18, 2027 | 618 | 27A (100-day plan) on Mar 16, 37A (last three weeks) on May 25, 40A (operator's log) on Jun 15, 42A (results) on Jun 29. |
+| Oct 28 | Double 11, last fourteen days | Brief 08A. Publishes when drafted, never later than Oct 28. |
+| Nov 11 | Double 11 | 10A (live read) is held until Nov 9 and 11A (results, gated report) until Nov 12 (`Hold until` in their notes); each publishes at the first publish run after it is drafted. |
+| Jan 1, 2027 | 2027 platform fee terms | 23A (fee benchmark 2027) is held until Jan 1, 2027, when the 2027 deposits, annual fees and commissions apply. |
+| Feb 6, 2027 | Chinese New Year | 16A (CNY cut-off calendar) is dated Dec 22, 2026 and publishes earlier, when the queue reaches it. Office closes around Feb 5 to 13; the queue runs ahead of the dates, so nothing has to be drafted early by hand. |
+| June 18, 2027 | 618 | 27A (100-day plan) and 37A (last three weeks) publish when the queue reaches them. 40A (operator's log) and 42A (results) are held until Jun 19, after the festival they report. |
+| Aug 2027 | Year-on-year pieces | 48A (the RedNote year) is held until Aug 3 and 50A (fee benchmark, mid-year) until Aug 17: each measures a period that has to have passed. |
+
+A hold is a `Hold until YYYY-MM-DD: <reason>.` sentence at the start of the
+row's `notes`. Only content that cannot exist before a real event gets one
+(`CLAUDE.md`, the standing rule under the pipeline table).
 
 ## Before the first run
 
@@ -248,14 +267,22 @@ cloud routine has none of them.
 
 | Task | When (Shanghai) | What | Default |
 |---|---|---|---|
-| TheChinaPath Editorial Draft | Mon, Tue, Wed, Thu 01:00 | `run-daily.ps1 -Mode draft`: steps 0 to 3, stops at `image_ready` | enabled |
-| TheChinaPath Editorial Publish | every day 04:30 | `run-daily.ps1 -Mode publish`: publishes every due `image_ready` row, builds, commits, pushes, emails | enabled |
+| TheChinaPath Editorial Draft | every day 01:00 | `run-daily.ps1 -Mode draft`: the next four-slot row in `publish_date` order, whatever its date; steps 0 to 3, stops at `image_ready`; then `check-queue.mjs` | enabled |
+| TheChinaPath Editorial Publish | every day 04:30 | `run-daily.ps1 -Mode publish`: publishes every `image_ready` row whatever its `publish_date` (at most six a run, earliest first; a `Hold until` row waits for its date), builds, commits, pushes, emails | enabled |
+| TheChinaPath Editorial Partner | every day 14:00 | `run-daily.ps1 -Mode partner`: the next P row in `publish_date` order, whatever its date; steps 0 to 3; then `check-queue.mjs` | enabled |
 
 The hours sit after TheRedScroll's (00:30 and 04:00) so the two pipelines
 never run the Claude CLI at the same time.
 
+`scripts/check-queue.mjs` runs after each draft and partner run and never
+fails it. It mails Cyril (Resend, the same sender as the publish email) at
+most once a day when a queue has drafted nothing for two days with rows
+ready, a draft has sat at `image_ready` for two days, or a week or less of
+four-slot briefs is left. `node editorial/scripts/check-queue.mjs --dry-run`
+prints the mail without sending it.
+
 Scripts live in `editorial/scripts/`. `register-tasks.ps1` creates or updates
-both tasks. Each run writes its console output to `logs/runs/<date>-<mode>.txt`
+the three tasks. Each run writes its console output to `logs/runs/<date>-<mode>.txt`
 next to the article run log. The machine has to be on, or asleep with wake
 allowed, at the run time. A missed run fires as soon as the machine is back.
 
@@ -269,7 +296,8 @@ Publishing is fully unattended: a draft made at 01:00 is published at 04:30
 the same day unless someone sets its row to `blocked` before then. That
 window is the review.
 
-Manual test run, ignoring the date guards:
+Manual test run, ignoring the plan-start date (there is no other date
+guard):
 
 ```
 powershell -ExecutionPolicy Bypass -File editorial\scripts\run-daily.ps1 -Mode draft -Force

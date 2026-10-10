@@ -9,29 +9,38 @@
   none of those.
 
   Modes:
-    draft    "Draft today's slot."  Steps 0 to 3 of the pipeline. Stops at
-             image_ready. Runs Mon (Signal), Tue (Anchor), Wed (Ledger),
-             Thu (Teardown or Refresh).
+    draft    "Draft the next slot."  Steps 0 to 3 of the pipeline on the
+             next four-slot row (S, A, L, T, R) in publish_date order,
+             whatever its date. Stops at image_ready. Runs every day.
     publish  Publishes every row in editorial/schedule.csv whose status is
-             image_ready and whose publish_date is today or earlier, then
-             sends the Resend email. Runs daily, two and a half hours after
-             the draft. That gap is the review window.
-    partner  Drafts every "Finding a partner" row (slot P) that is still
-             not_started and due within the next two days. Same steps 0 to
-             3, stops at image_ready. Runs daily, weekends included; the
-             partner queue publishes every other day.
+             image_ready, whatever its publish_date, then sends the Resend
+             email. Runs daily, three and a half hours after the draft.
+             That gap is the review window.
+    partner  Drafts the next "Finding a partner" row (slot P) in
+             publish_date order, whatever its date. Same steps 0 to 3,
+             stops at image_ready. Runs daily.
+
+  publish_date orders the queue. It never gates a run, in any mode. Until
+  10 October 2026 the runs only took rows dated today or earlier (draft and
+  publish) or within two days (partner), so a finished draft and 168 ready
+  briefs sat idle behind their dates while every run exited 0. Two narrow
+  exceptions, both about real-world timing, never the calendar: a Signal
+  reports the week before its date, so it is drafted on or after that date;
+  a row whose notes say "Hold until YYYY-MM-DD" (a live event read, a
+  results piece) is neither drafted nor published before that date.
+  After each draft and partner run, check-queue.mjs mails Cyril when
+  drafting or publishing stalls or a week of briefs is left.
 
   Output of each run is written to editorial/logs/runs/<date>-<mode>.txt.
   Register with editorial/scripts/register-tasks.ps1.
 
 .PARAMETER Mode
-  draft (default) or publish.
+  draft (default), publish or partner.
 #>
 param(
   [ValidateSet('draft', 'publish', 'partner')]
   [string]$Mode = 'draft',
-  # Manual test run: ignore the plan-start date, the weekday guard and, in
-  # publish mode, the publish_date filter.
+  # Manual test run: ignore the plan-start date.
   [switch]$Force,
   # Optional extra instructions appended to the prompt (for example a resume
   # note after an interrupted run, or "Draft brief 04A").
@@ -54,26 +63,26 @@ if (-not $Force -and (Get-Date).Date -lt $PlanStart) {
   exit 0
 }
 
-# No draft on Friday or the weekend. The schedule has no rows there.
-if ($Mode -eq 'draft' -and -not $Force) {
-  $Dow = (Get-Date).DayOfWeek
-  if ($Dow -in 'Friday', 'Saturday', 'Sunday') {
-    "$(Get-Date -Format s) no draft on $Dow" | Out-File $RunLog -Encoding utf8
-    exit 0
-  }
-}
-
 # The shared runner uses: Opus 5.5, then Fable, GPT-6 Astra and GPT-5.6 Sol as fallbacks.
 $Model = 'claude-opus-5-5'
 
 if ($Mode -eq 'draft') {
   $Prompt = @'
-Draft today's slot.
+Draft the next slot.
 
 Read editorial/CLAUDE.md, editorial/SPEC.md and editorial/RUNBOOK.md first and
-follow them exactly. Find today's row in editorial/schedule.csv (Signal on
-Monday, Anchor on Tuesday, Ledger on Wednesday, Teardown or Refresh on
-Thursday). Ignore rows with slot P: the partner run drafts those. Run steps 0 to 3 of the pipeline: Chinese deep research with every
+follow them exactly. Take ONE row from editorial/schedule.csv, ignoring rows
+with slot P (the partner run drafts those). If a row stopped at drafted or
+quality_passed (an interrupted run), finish that one. Otherwise take the
+earliest row in publish_date order whose status is not_started, WHATEVER ITS
+PUBLISH_DATE: that column orders the queue, it is not a release date, and a
+future date is never a reason to skip a row or end the run. Pass over only:
+a row that is blocked, skipped or drafting; a Signal whose publish_date is
+after today (a Signal reports the week before its date, so it is drafted on
+or after that date); a row whose notes say "Hold until YYYY-MM-DD" with that
+date after today (time-bound content). If no row is left to take, record
+that the queue is empty (or holds only rows waiting for a date) and end.
+Run steps 0 to 3 of the pipeline: Chinese deep research with every
 source validated twice, /createarticle from the brief (or from the slot
 template for a Signal, Teardown or Refresh), /content-quality-us on the
 finished draft, /generate-image-openai for the hero image. For an Anchor +
@@ -97,13 +106,18 @@ sets the row to blocked. Run node scripts/check-no-todo.mjs before you finish.
 '@
 } elseif ($Mode -eq 'partner') {
   $Prompt = @'
-Draft the partner pieces that are due.
+Draft the next partner piece.
 
 Read editorial/CLAUDE.md, editorial/SPEC.md and editorial/RUNBOOK.md first and
-follow them exactly. In editorial/schedule.csv, find every row with slot P
-(the "Finding a partner" queue, Part 5 of public/content/editorial-briefs.md)
-whose status is not_started and whose publish_date is within the next two
-days (today, tomorrow or the day after), oldest first. For each one, run
+follow them exactly. In editorial/schedule.csv, among the rows with slot P
+(the "Finding a partner" queue, Part 5 of public/content/editorial-briefs.md),
+take ONE: a row stopped at drafted or quality_passed by an interrupted run,
+else the earliest in publish_date order whose status is not_started,
+WHATEVER ITS PUBLISH_DATE. That column orders the queue; a future date is
+never a reason to skip a row or end the run. Pass over only a row that is
+blocked, skipped or drafting, or whose notes say "Hold until YYYY-MM-DD"
+with that date after today. If no P row is left to take, record that the
+partner queue is empty and end. For that row, run
 steps 0 to 3 of the pipeline from its brief file: Chinese deep research with
 every source validated twice, /createarticle, /content-quality-us on the
 finished draft (always, every piece), /generate-image-openai for the hero
@@ -125,12 +139,16 @@ scripts/check-no-todo.mjs before you finish.
 '@
 } else {
   $Prompt = @'
-Publish every reviewed draft that is due.
+Publish every reviewed draft.
 
 Read editorial/CLAUDE.md, editorial/SPEC.md and editorial/RUNBOOK.md first.
-In editorial/schedule.csv, find every row whose status is image_ready and
-whose publish_date is today or earlier. For each one, in date order, run the
-publish step: /createblogarticle on the output file, into
+In editorial/schedule.csv, find every row whose status is image_ready,
+WHATEVER ITS PUBLISH_DATE: that column orders the queue, it is not a release
+date, and a finished draft goes live at the next publish run. The only
+exception is a row whose notes say "Hold until YYYY-MM-DD" with that date
+after today (time-bound content): leave it at image_ready. Publish at most
+six rows in one run, the earliest by publish_date first; the next run takes
+the rest. For each one, in publish_date order, run the publish step: /createblogarticle on the output file, into
 src/content/insights/ (guides go to src/content/guides/, English only). For
 insights this includes, without exception, the propagation to every live
 locale (insights-fr, insights-de, insights-es, with the native slug added to
@@ -171,7 +189,7 @@ if ($Extra) {
 }
 
 if ($Force) {
-  $Prompt += "`n`nMANUAL TEST RUN: ignore the publish_date. Process every row whose status is image_ready (publish mode) or take the oldest not_started row that has a brief file (draft mode). Say in the run log that this was a forced test run."
+  $Prompt += "`n`nMANUAL TEST RUN: say in the run log that this was a forced test run."
   $RunLog = Join-Path $RunLogDir "$Stamp-$Mode-forced.txt"
 }
 
@@ -186,4 +204,14 @@ $AgentRunner = 'C:\Users\cyril\Project\automation\scripts\Invoke-ProjectAgent.ps
 $Code = & $AgentRunner -Repo $Repo -PromptFile $PromptFile -RunLog $RunLog -RunName "TheChinaPath $Mode"
 
 "$(Get-Date -Format s) end $Mode exit $Code" | Out-File $RunLog -Append -Encoding utf8
+
+# The runner, not the model, says when the pipeline stops producing: a mail
+# at most once a day when a queue has not drafted for two days with rows
+# ready, a draft sits at image_ready, or a week or less of briefs is left.
+# Never fails the run.
+if ($Mode -in 'draft', 'partner') {
+  $Queue = & cmd.exe /c "node editorial\scripts\check-queue.mjs 2>&1"
+  "$(Get-Date -Format s) queue: $($Queue -join ' ')" | Out-File $RunLog -Append -Encoding utf8
+}
+
 exit $Code

@@ -38,8 +38,9 @@ logs/                     one run log per piece, TEMPLATE.md to copy
   runs/                   console output of scheduled runs (gitignored)
 scripts/
   build-briefs.mjs        regenerates briefs/ and schedule.csv from the master plan
-  run-daily.ps1           the runner (draft | publish)
-  register-tasks.ps1      registers the two Windows scheduled tasks
+  run-daily.ps1           the runner (draft | publish | partner)
+  register-tasks.ps1      registers the three Windows scheduled tasks
+  check-queue.mjs         mails Cyril when drafting or publishing stalls
   notify-publish.mjs      Resend email on publish
 ```
 
@@ -49,8 +50,11 @@ The master plan is `public/content/editorial-briefs.md`. Edit it, then run
 ## The daily command
 
 ```
-Draft today's slot.
+Draft the next slot.
 ```
+
+`publish_date` orders the queue and never gates a run: the next slot is the
+earliest row still to draft, whatever its date (`CLAUDE.md`).
 
 ## The pipeline
 

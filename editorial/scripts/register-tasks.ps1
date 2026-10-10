@@ -1,13 +1,17 @@
 <#
 .SYNOPSIS
-  Registers (or re-registers) the two Windows scheduled tasks that run the
+  Registers (or re-registers) the three Windows scheduled tasks that run the
   TheChinaPath editorial pipeline on this machine.
 
-  TheChinaPath Editorial Draft    Mon, Tue, Wed, Thu at 01:00 local (Shanghai, night)
-  TheChinaPath Editorial Publish  every day at 04:30 local
+  TheChinaPath Editorial Draft    every day at 01:00 local (Shanghai, night);
+                                  drafts the next four-slot row in
+                                  publish_date order, whatever its date
+  TheChinaPath Editorial Publish  every day at 04:30 local; publishes every
+                                  image_ready row, whatever its date
   TheChinaPath Editorial Partner  every day at 14:00 local ("Finding a
-                                  partner" queue, drafts P rows due within
-                                  two days; the publish task ships them)
+                                  partner" queue, drafts the next P row
+                                  whatever its date; the publish task
+                                  ships it)
 
   The hours sit after the TheRedScroll tasks (00:30 draft, 04:00 publish) so
   the two pipelines never run the Claude CLI at the same time on this machine.
@@ -44,16 +48,16 @@ function Register([string]$Name, [string]$Mode, $Trigger, [bool]$Enabled) {
   Write-Host "$Name registered ($(if ($Enabled) {'enabled'} else {'disabled'}))"
 }
 
-# Four slots a week: Signal (Mon), Anchor (Tue), Ledger (Wed), Teardown or
-# Refresh (Thu). Friday is review only.
-$DraftTrigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Monday, Tuesday, Wednesday, Thursday -At $DraftTime
+# publish_date orders the queue and never gates a run, so the draft run
+# fires every day and takes the next row (editorial/CLAUDE.md).
+$DraftTrigger = New-ScheduledTaskTrigger -Daily -At $DraftTime
 Register 'TheChinaPath Editorial Draft' 'draft' $DraftTrigger $true
 
 $PublishTrigger = New-ScheduledTaskTrigger -Daily -At $PublishTime
 Register 'TheChinaPath Editorial Publish' 'publish' $PublishTrigger $true
 
-# The partner queue publishes every other day, weekends included, so its
-# draft run is daily. 14:00 keeps it clear of both night pipelines.
+# The partner queue drafts one P row a day. 14:00 keeps it clear of both
+# night pipelines.
 $PartnerTrigger = New-ScheduledTaskTrigger -Daily -At $PartnerTime
 Register 'TheChinaPath Editorial Partner' 'partner' $PartnerTrigger $true
 

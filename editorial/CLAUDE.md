@@ -25,9 +25,43 @@ Every piece goes through these steps. None is optional.
 | 4. Publish | `/createblogarticle` + `/deep-translate` + build + git | Creates the post in `src/content/insights/`, wires the image, propagates to FR, DE and ES with native slugs, runs `/deep-translate` (three passes) on each locale, runs `npm run build` and `npx astro check`, commits on main, pushes to origin | `published`, `published_on` |
 | 5. Notify | `scripts/notify-publish.mjs` (Resend) | Emails a publish summary to Cyril | (noted in the run log) |
 
-"Draft today's slot." runs steps 0 to 3 and stops at `image_ready`. Step 4
-runs from the scheduled publish task (or when a person says "Publish <slug>").
-Step 5 follows step 4 automatically.
+"Draft the next slot." (or the older "Draft today's slot.", which now means
+the same) runs steps 0 to 3 and stops at `image_ready`. Step 4 runs from the
+scheduled publish task (or when a person says "Publish <slug>"). Step 5
+follows step 4 automatically.
+
+**`publish_date` orders the queue; it never gates a run (standing, Cyril,
+October 10, 2026).** The next slot is the earliest row in `publish_date`
+order that is still `not_started` (P rows for the partner run, the others
+for the draft run), whatever its date: a run takes it on a future date too.
+A finished draft publishes at the next publish run, whatever its date. No
+prompt, script or rule may make a run wait for a row's date, and "nothing
+due today" is never a reason to end a run while a row is left to take: a run
+ends with nothing drafted only when the queue is truly empty, or holds only
+the rows below. Until October 10 the runs only took rows dated today or
+earlier (within two days for the partner run) and the draft run skipped
+Friday to Sunday, so a finished draft (06A) and 168 ready briefs sat idle
+behind their dates while every run exited 0. Two narrow exceptions remain,
+both about real-world timing, never the calendar:
+
+- **A Signal is drafted on or after its `publish_date`.** It reports the
+  platform and regulatory changes of the week before that date, so drafting
+  it earlier would report the wrong week. The draft run passes over a future
+  Signal and takes the next row.
+- **A row whose `notes` start with `Hold until YYYY-MM-DD:`** (and the
+  reason) is neither drafted nor published before that date. It is for
+  content that cannot exist before a real event: a live read of Double 11,
+  a results piece, a benchmark of a year that has not started. Held now:
+  10A, 11A, 23A, 40A, 42A, 48A, 50A (reasons in their notes).
+  `build-briefs.mjs` keeps existing notes, so a hold survives a rebuild. A
+  seasonal or evergreen piece (a countdown plan, a checklist) is never
+  held: it publishes early, and `pubDate` is the day it goes live.
+
+`blocked`, `skipped` and `drafting` rows stay out of every run, as before.
+`scripts/check-queue.mjs` runs after every draft and partner run and mails
+Cyril, at most once a day, when a queue has drafted nothing for two days with
+rows ready, a draft sits at `image_ready` for two days, or a week or less of
+four-slot briefs is left. The mail states facts; it carries no open items.
 
 Step 2 runs on every piece, Signals included. Step 3 uses the
 `generate-image-openai` skill only, never `scripts/generate-image.mjs` or the
@@ -69,6 +103,10 @@ files.
 | Thursday, even weeks | Refresh | `briefs/templates/refresh.md` against the refresh queue (see `RUNBOOK.md`) | The only change would be the year in the title. Take the next item in the queue. |
 | Every other day (P) | Partner, 1,000 to 2,400 words by type | `briefs/YYYY-MM-DD-<slug>.md`, Part 5 of the master plan, `briefs/templates/partner.md` | None. Partner pieces always ship; a missing Compass figure uses the brief's fallback. |
 
+The day is the slot's place in the calendar, which sets its `publish_date`
+and so its place in the queue. The draft run takes the rows in that order,
+one a day, every day; it does not wait for the weekday.
+
 Anchor weeks that carry an Asset (W03, W08, W16, W21, W27, W33, W38, W45,
 W47) produce a second file, `output/guides/<slug>.md`, in the same run. It
 publishes to `src/content/guides/` and renders at `/guides/<slug>/`, English
@@ -87,8 +125,8 @@ publishes on schedule.
 
 The partner queue ("Finding a partner", P01 to P50, Sept 30 to Dec 29, 2026)
 runs outside the four-slot week: `scripts/run-daily.ps1 -Mode partner`
-(daily, 14:00) drafts each P row up to two days before its date, and the
-daily publish task ships it with FR, DE and ES. Plan and research:
+(daily, 14:00) drafts the next P row in `publish_date` order, whatever its
+date, and the next publish run ships it with FR, DE and ES. Plan and research:
 `plans/finding-a-partner-50.md`. Never cite or name a competitor in a P piece.
 `sources/compass-stats.md` does not exist; until it does, every P piece uses
 the settled fallback in "The proprietary number" below, and no run reports
