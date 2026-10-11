@@ -1,0 +1,228 @@
+---
+title: "Tmall Global's new diaper and allergy return rules"
+slug: tmall-global-diaper-allergy-returns
+description: "From October 15, Tmall Global caps how much of a diaper or skincare order a buyer can open before an allergy or rash claim. What it does to refunds."
+excerpt: "Tmall Global now limits rash and allergy claims to one opened pack or item per order line. Three of four diaper packs come back sealed."
+template: insight
+author: TheChinaPath
+category: E-Commerce
+platforms: [Tmall]
+tags: [Tmall Global, Returns, Mother and baby, Skincare, Double 11, Signal]
+heroImage: /Images/insights/tmall-global-diaper-allergy-returns.webp
+heroImageAlt: "In a cross-border seller's back office in Wuhan, a woman lifts a sealed diaper pack from a returned carton beside a monitor showing a Tmall Global refund request"
+keyTakeaways:
+  - "From October 15, 2026, Tmall Global's diaper-rash and allergy return guarantees carry dispute rules that cap how much of an order a buyer may open before claiming."
+  - "A multi-pack diaper order line can have one opened pack, used up to half; a multi-item allergy claim can have one opened item, used up to 20%."
+  - "Order lines paid at 10 RMB or less, and baby food eaten up to 20%, are refunded without a return when the platform rules on a dispute."
+  - "On a four-pack diaper order at 400 RMB, three sealed packs worth 300 RMB now come back to stock after a rash claim."
+  - "Claims stay open for 60 days after receipt, so Double 11 orders remain claimable into mid-January."
+---
+
+<!-- HERO SECTION -->
+
+# Tmall Global sets new return rules for diaper-rash and allergy claims
+
+From October 15, Tmall Global’s return rules for diaper-rash and allergy
+claims limit what a buyer can open before asking for a refund. For diapers
+that’s one pack in a multi-pack order; skincare buyers get one opened item.
+The rest comes back sealed, so most of a disputed multi-pack claim returns
+to the shelf as stock you can sell.
+
+<!-- INTRODUCTION -->
+
+Both rules are guarantees a Tmall Global store attaches to its listings: the
+diaper-rash guarantee (红屁屁包退) and the allergy guarantee (过敏包退). A
+buyer who reports a rash or a reaction within 60 days of delivery, with
+photos or a hospital note, gets a full refund. That part hasn’t moved.
+
+What’s new is what happens when the store and the buyer disagree and Tmall
+Global steps in to rule on it. The final text went up on October 8, after a
+week of consultation. We read it on October 12.
+
+> Tmall Global’s updated diaper-rash and allergy return guarantees were
+> published on October 8, 2026 and take effect on October 15, 2026.
+> Source: Tmall Global (天猫国际), October 2026. https://rule.tmall.hk/?type=detail&ruleId=20010962&cId=636#/rule/detail?ruleId=20010962&cId=636
+
+<!-- SECTION: What changes -->
+
+## What the new Tmall Global return rules change
+
+Under the diaper-rash rule, a buyer can open one pack from a multi-pack
+order line and use up to half of it. The allergy rule allows one opened item
+from several identical ones, used up to 20%. Sets count item by item, and
+non-consumables such as makeup brushes or maternity wear have to come back
+whole. Opened goods go back too, at the store’s freight cost.
+
+> In a disputed diaper-rash claim, a multi-pack order line may have at most
+> one opened pack, used up to 50%; the platform’s example is four packs of
+> 30, with up to 15 diapers used from one pack.
+> Source: Tmall Global (天猫国际), October 2026. https://rule.tmall.hk/?type=detail&ruleId=20010962&cId=636#/rule/detail?ruleId=20010962&cId=636
+
+Two cases skip the return entirely. An order line paid at 10 RMB or less is
+refunded and the buyer keeps it. So is a baby food item (infant nutrition
+products, purees, snacks, and seasonings) eaten up to 20%.
+
+Until now the diaper-rash rule set no limit on use at all. The allergy rule
+asked for 80% of the product back but said nothing about how many items a
+buyer could open.
+
+> Goods returned under the allergy guarantee must keep at least 80% of the
+> product’s quantity or volume.
+> Source: Tmall Global (天猫国际), October 2026. https://rule.tmall.hk/?type=detail&ruleId=5509&cId=634#/rule/detail?ruleId=5509&cId=634
+
+<!-- SECTION: What it costs or saves -->
+
+## What a claim costs from October 15
+
+Take a mother-and-baby store selling 1 million RMB of diapers a month in
+four-pack order lines at 400 RMB. That’s 2,500 order lines. Say 20 of them
+end in a rash claim the store can’t settle with the buyer. Those are our
+assumptions; Tmall Global publishes no claim rates.
+
+Each claim refunds 400 RMB. Under the old text all four packs could come
+back opened, and an opened pack of diapers is worth nothing as stock. From
+October 15, at least three of the four come back sealed. Across 20 claims
+that’s 8,000 RMB refunded and 6,000 RMB of stock back on sale, counted at
+shelf price. The return parcels cost about 300 RMB to process at our Tmall
+Global calculator’s 15 RMB a parcel (TheChinaPath calculator data, October
+2026).
+
+<div class="table-scroll">
+
+| Disputed order line | Paid (RMB) | What comes back | Sealed stock recovered (RMB) | Return handling (RMB) |
+|---|---|---|---|---|
+| Diapers, four packs at 100 | 400 | three sealed packs, one opened | 300 | 15 |
+| Toner, two bottles at 200 | 400 | one sealed bottle, one opened | 200 | 15 |
+| Baby puree, one jar at 35 | 35 | nothing, refund only | 0 | 0 |
+| Trial-size cream at 9.9 | 9.9 | nothing, refund only | 0 | 0 |
+
+</div>
+
+The last two rows cost the goods and save the parcel. On a 9.9 RMB item,
+that’s cheaper than a return.
+
+The rest of the guarantee stays as it was, including the penalty.
+
+> A store that fails to answer a diaper-rash claim within 48 hours, or
+> refuses it, pays the buyer 100 RMB per order line on top of the refund,
+> which includes the buyer’s shipping and the import tax paid.
+> Source: Tmall Global (天猫国际), October 2026. https://rule.tmall.hk/?type=detail&ruleId=5510&cId=634#/rule/detail?ruleId=5510&cId=634
+
+The allergy guarantee carries the same 100 RMB.
+
+<!-- SECTION: Which budget line moves -->
+
+## Which budget line moves
+
+Refunds and returns. Stores carrying either guarantee can book a disputed
+diaper or skincare claim as a partial loss from now on, with most of a
+multi-pack order line returning as sellable stock. Book low-price lines and
+baby food claims as straight write-offs.
+
+The rules also land on the day Tmall’s Double 11 opened last year.
+
+> Tmall’s Double 11 in 2025 ran from October 15 to November 14.
+> Source: The Paper (澎湃新闻), November 2025. https://m.thepaper.cn/newsDetail_forward_31971814
+
+So the new text covers this year’s festival. And with a 60-day window, a
+buyer who receives a Double 11 order in mid-November can still claim in
+mid-January.
+
+<!-- SECTION: What to do -->
+
+## What to do, and by when
+
+By October 15, list which of your Tmall Global listings carry either badge,
+and give customer service the two caps in plain words: one opened pack, half
+used; one opened item, a fifth used. The caps bind when Tmall Global rules
+on a dispute, so an agent who can quote them early has a better chance of
+closing the claim in the chat.
+
+Staff the 48-hour response through the festival and the weeks after it. At
+100 RMB per missed order line, a weekend backlog in November gets expensive
+quickly.
+
+Keep the returns reserve for Double 11 open until mid-January, when the last
+claims on November deliveries expire.
+
+Put your own return rate and the 15 RMB handling cost into the
+[Tmall Global cost calculator](/tools/tmall-global-setup-and-run) before you
+lock the Double 11 budget.
+
+<!-- CTA -->
+
+CTA: [Talk to us about running your Tmall Global store](/grow-in-china/cross-border-ecommerce)
+
+<!-- =====================================================================
+FEATURE IMAGE: INSTRUCTION FOR CLAUDE CODE
+
+Generate the feature (hero) image from the prompt below with the
+generate-image-openai skill, convert to webp, then wire it in as the
+article's heroImage and OG image.
+
+- Save to:    public/Images/insights/tmall-global-diaper-allergy-returns.webp
+- Reference:  /Images/insights/tmall-global-diaper-allergy-returns.webp
+- Format:     .webp, landscape 3:2, web-optimized (China CDN friendly)
+- Style rule: candid normal-life photo with real-life defects, China
+              setting, only Chinese people, the Chinese commerce surface
+              the piece is about visible on screen (Tmall Global store
+              after-sale page and a Tmall Global mother-and-baby store
+              page). No AI polish, no diagrams, no infographics, no
+              watermark.
+
+Five visual concepts considered:
+1. A returns bench in a cross-border operator's back office in Wuhan, a
+   staff member checking a returned box of diaper packs (three sealed, one
+   torn open) next to a monitor on the Tmall Global after-sale page, a
+   customer-service colleague on a headset behind. (chosen)
+2. A young mother in a Chengdu apartment photographing her baby's rash
+   cream next to a phone open on a Tmall Global diaper listing.
+3. A Guangzhou bonded-zone warehouse returns cage, parcels stacked under a
+   wall screen showing a warehouse dashboard with refund counts.
+4. A Hangzhou Tmall Partner office at night during Double 11, a wall of
+   customer-service agents with chat windows open.
+5. A Shenzhen pharmacy-style skincare showroom where a staff member opens
+   a returned toner box beside a tablet on the Tmall Global store page.
+
+IMAGE PROMPT (use verbatim):
+
+Candid handheld photograph in the cramped back office of a cross-border mother-and-baby ecommerce operator in Wuhan, China, on a grey October morning, shot slightly from above and a little crooked: a Chinese woman in her thirties with her hair in a loose clip and a navy fleece vest stands at a cluttered returns bench, one hand lifting a sealed plastic pack of diapers out of an opened brown shipping carton that holds three sealed packs and one torn-open pack, her other hand mid-motion and slightly blurred as she reaches for a handheld barcode scanner; beside her on the bench a slightly dusty monitor shows a Tmall Global seller after-sale page, a white and orange Chinese interface with a refund request, order rows, a small product thumbnail of a diaper pack and RMB amounts in Chinese; propped against the monitor a phone shows a Tmall Global mother-and-baby store page with diaper packs and Chinese price tags; behind her, out of focus, a young Chinese man in a grey hoodie wears a headset and types at a second desk with a chat window open; on the bench a roll of packing tape, a box cutter, a marker pen, a crumpled return slip with unreadable handwriting, a thermos cup and a tangle of charger cables; shelves of plain unlabeled cartons along the wall, a window with condensation and a view of grey apartment blocks, flat window daylight mixed with cold overhead tube light, uneven exposure with a blown-out window corner, a smudge on the monitor glass, the edge of a plastic stool cropped into the foreground; documentary realism, natural skin texture, ordinary workplace mess, no studio polish, no cinematic grade, no readable text on cartons, packs, paper or walls, no brand names or logos on the diapers, cartons, monitor, phone or any hardware, no text overlays, no watermark, no logos other than the app interfaces on the screens.
+===================================================================== -->
+
+<!-- SCHEMA
+Type: Article
+FAQPage: no
+Breadcrumb: Home > Insights > Tmall Global's new diaper and allergy return rules
+Author: TheChinaPath
+datePublished: 2026-10-12
+dateModified: 2026-10-12
+-->
+
+<!-- ASSET BRIEF
+TABLES: one, in "What a claim costs from October 15": four disputed order
+     lines (diapers four packs at 100 RMB, toner two bottles at 200 RMB,
+     baby puree one jar at 35 RMB, trial-size cream at 9.9 RMB) with the
+     amount paid, what comes back under the October 15 rules, the sealed
+     stock recovered at shelf price and the return handling cost. Prices
+     are illustrative order sizes stated as such in the copy; the
+     come-back column applies the cited Tmall Global rules; return
+     handling is the Tmall Global calculator's 15 RMB per parcel default.
+CHARTS: none.
+SCREENSHOTS: none. (If one is added later: the header of Tmall Global's
+     October 8 notice on rule.tmall.hk, no merchant data.)
+DOWNLOADS: none.
+INTERNAL LINKS:
+  Tmall Global cost calculator -> /tools/tmall-global-setup-and-run
+  CTA: Talk to us about running your Tmall Global store -> /grow-in-china/cross-border-ecommerce
+  One body link, per the Signal template, plus the CTA. Both targets are
+  on the PREAMBLE list and exist in src/pages/.
+PROPRIETARY NUMBER: none required for a Signal. The 15 RMB return
+  handling per parcel is the Tmall Global calculator's default, labelled
+  "TheChinaPath calculator data, October 2026". The worked figures
+  (2,500 order lines, 20 claims, 8,000 RMB refunded, 6,000 RMB of sealed
+  stock, about 300 RMB of handling) are our arithmetic on stated
+  assumptions.
+HAND-OFFS: none. Returns rules on a cross-border marketplace store are
+  platform operations (TheChinaPath territory).
+CLIENT FIGURES USED: none.
+-->

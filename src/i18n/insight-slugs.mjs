@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'tmall-global-diaper-allergy-returns': 'tmall-global-retours-couches-et-allergies',
   'xiaohongshu-store-setup-overseas-brand': 'ouvrir-une-boutique-xiaohongshu-marque-etrangere',
   'cost-to-sell-pet-food-in-china': 'ce-que-coute-vendre-des-aliments-pour-animaux-en-chine',
   'tmall-partner-vs-distributor-china': 'tmall-partner-ou-distributeur-par-qui-commencer',
@@ -172,6 +173,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'tmall-global-diaper-allergy-returns': 'tmall-global-rueckgaberegeln-fuer-windeln-und-allergien',
   'xiaohongshu-store-setup-overseas-brand': 'xiaohongshu-shop-fuer-auslaendische-marken',
   'cost-to-sell-pet-food-in-china': 'was-tiernahrung-verkaufen-in-china-kostet',
   'tmall-partner-vs-distributor-china': 'tmall-partner-oder-distributor-wen-zuerst',
@@ -335,6 +337,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'tmall-global-diaper-allergy-returns': 'tmall-global-devoluciones-panales-y-alergias',
   'xiaohongshu-store-setup-overseas-brand': 'abrir-tienda-en-xiaohongshu-marca-extranjera',
   'cost-to-sell-pet-food-in-china': 'lo-que-cuesta-vender-alimento-para-mascotas-en-china',
   'tmall-partner-vs-distributor-china': 'tmall-partner-o-distribuidor-por-quien-empezar',

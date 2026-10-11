@@ -4116,3 +4116,42 @@ extraction, because the reports set text in columns).
 
 ### Researched for P19, not used
 - Agency-ranking and agency-selection pages (163.com, ithome, ifeng, cngold, chinapp, cnblogs, sohu, qiyoutuo) and Jiemian press releases on individual agencies' Douyin ratings: advertorials or competitor releases; Part 5 bars them. The "285 billion RMB 代运营 market in 2025" figure they repeat traces to no primary source.
+
+## Signal 06S research (tmall-global-diaper-allergy-returns), 2026-10-12
+
+### Tmall Global diaper-rash and allergy return rules: final notice, in force October 15, 2026
+- Value: implementation rules (实施细则, marked 新增) added to both guarantees, applied when the platform rules on a dispute. Diaper-rash: sub-order paid 10 RMB or less refund-only; above 10 RMB return and refund, every opened item returned clean, return freight on the merchant; a multi-pack sub-order may have at most 1 opened pack, used up to 50% (full-size only; example 4 packs of 30, up to 15 used from one). Allergy: non-baby-food 10 RMB or less refund-only, above 10 RMB return with freight on the merchant; baby food (婴幼儿营养品、宝宝辅食、宝宝零食、婴幼儿调味品) refund-only per item when each item is eaten up to 20%; several identical baby-food items: unopened rest returned at the seller's freight cost; at most 1 opened identical item, used up to 20% (example 2 x 100 ml toner, up to 20 ml); under 10 pieces up to 3 used; sets 20% per item; gifts under 10 ml/g unrestricted; makeup brushes, makeup bags and maternity wear returned in full; an allergy to an identical gift follows the main product. Posted 2026-10-08 01:00, in force 2026-10-15
+- As of: October 2026
+- Source: Tmall Global (天猫国际), 《关于〈天猫国际红屁屁包退服务规范〉、〈天猫国际过敏包退服务规范〉更新公告通知》, rule.tmall.hk ruleId 20010962
+- URL: https://rule.tmall.hk/?type=detail&ruleId=20010962&cId=636#/rule/detail?ruleId=20010962&cId=636
+- Verified 1: 2026-10-12 (rendered with headless Edge and read from mtop.alibaba.rulechannel.newrule.rule.detail; 本次规则于 2026年10月8日公示，将于 2026 年10月15日生效执行)
+- Verified 2: 2026-10-12 (re-rendered at iteration 8; every cited string re-found)
+- Used in: tmall-global-diaper-allergy-returns
+- Notes: the consultation (ruleId 20010961, posted 2026-09-30, open to 2026-10-08) carries the same text word for word. The portal renders an empty shell to a plain fetch; use the hash route with a headless browser.
+
+### Tmall Global diaper-rash guarantee terms (红屁屁包退服务规范)
+- Value: badge-carrying goods only; claim within 60 days of receipt with valid evidence (photos, a hospital certificate from a level-two hospital or above, or a test report); merchant responds within 48 hours; full refund including the buyer's shipping and the import tax paid; a merchant that fails to respond in 48 hours or refuses pays the buyer 100 RMB per sub-order; a merchant that requires a return pays the return freight. Before October 15, 2026 the text set no limit on how much a buyer could use
+- As of: October 2026 (page shows 公示日期 2026-10-08, 更新日期 2026-10-15; first issued 2017-03-22)
+- Source: Tmall Global (天猫国际), rule.tmall.hk ruleId 5510 (消费者规则 > 特色服务)
+- URL: https://rule.tmall.hk/?type=detail&ruleId=5510&cId=634#/rule/detail?ruleId=5510&cId=634
+- Verified 1: 2026-10-12 (rendered)
+- Verified 2: 2026-10-12 (re-rendered at iteration 8; 48小时内有效响应, 100元的违约金, 进口税或者行邮税, 60天 re-found)
+- Used in: tmall-global-diaper-allergy-returns
+- Notes: the page now embeds the October 15 implementation rules at the bottom.
+
+### Tmall Global allergy guarantee terms (过敏包退服务规范)
+- Value: same 60 days from receipt, 48-hour response, 100 RMB per sub-order for a missed or refused claim, full refund including shipping and import tax; returned goods (and gifts) must keep at least 80% of the product's quantity or volume
+- As of: October 2026 (page shows 公示日期 2026-10-08, 生效日期 2026-10-15; first issued 2017-03-22)
+- Source: Tmall Global (天猫国际), rule.tmall.hk ruleId 5509 (消费者规则 > 特色服务)
+- URL: https://rule.tmall.hk/?type=detail&ruleId=5509&cId=634#/rule/detail?ruleId=5509&cId=634
+- Verified 1: 2026-10-12 (rendered)
+- Verified 2: 2026-10-12 (re-rendered at iteration 8; 不应少于该商品数量或容量的80%, 100元的违约金, 60天 re-found)
+- Used in: tmall-global-diaper-allergy-returns
+- Notes: milk powder has its own guarantee (天猫国际奶粉“过敏包退”服务规范, ruleId 11000571, 2019-07-29), not changed by the October 2026 notice.
+
+### Reused for 06S (re-fetched 2026-10-12)
+- Double 11 2025 platform windows (The Paper, 2025-11-15): re-fetched twice; 天猫双11从10月15日持续到11月14日，时间为31天 present. Tmall row only. Used in tmall-global-diaper-allergy-returns.
+- Bonded warehouse and per-parcel logistics defaults (proprietary): returnHandling '15' re-read at line 154 of src/pages/tools/tmall-global-setup-and-run.astro, twice. Label in copy: "TheChinaPath calculator data, October 2026". Used in tmall-global-diaper-allergy-returns (worked figure: 20 claims x 15 RMB = about 300 RMB of handling; 2,500 four-pack order lines at 400 RMB, 8,000 RMB refunded, 6,000 RMB of sealed stock, our arithmetic on stated assumptions).
+
+### Researched for 06S, not used
+- Claim rates for Tmall Global rash or allergy guarantees, and a market rate for cross-border return freight: no dated primary source exists; the worked figure states its own order size and claim count as assumptions.
