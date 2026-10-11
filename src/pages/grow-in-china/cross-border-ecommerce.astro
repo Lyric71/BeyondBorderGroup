@@ -124,13 +124,11 @@ const costLedger = {
     sub: 'You own the store. We run it.',
     agency: {
       tag: 'Agency line',
-      headlineLead: 'From',
-      headlineNum: 7500,
-      headlinePrefix: '$',
-      headlineSuffix: '',
-      headlineUnit: 'per month',
-      pill: '+ 10% on GMV',
-      body: 'Monthly retainer starting from $7,500 plus a 10% revenue share on GMV, with movement up or down depending on category and platforms covered. Media and content production billed at pass-through.',
+      headlineLead: '',
+      headlineText: 'Quoted',
+      headlineUnit: 'per brand, after scoping',
+      pill: 'Retainer + share of GMV',
+      body: 'A monthly retainer plus a revenue share on GMV. We set both once we know your category and the platforms you want covered. Media and content production billed at pass-through.',
       footer:
         'We rarely take new-to-market brands as a distributor. The brand-building lift from zero is too costly unless you commit a serious launch fund. For most new entrants, TP is the right answer.',
     },
@@ -140,10 +138,10 @@ const costLedger = {
       headlinePrefix: '',
       headlineSuffix: '%',
       headlineUnit: 'on you',
-      pill: 'From $120K in year one',
+      pill: 'Sized to your launch plan',
       body: 'You fund 100% of media, content and promotion. We execute against your approved budget. Every yuan flows through your platform account, fully visible to you.',
       footer:
-        'Typical ranges: paid media from $120,000 across the first twelve months. Content billed at cost plus a small handling fee. KOL and KOC invoiced by the talent agency. We never take referral commissions on KOL spend.',
+        'Paid media is sized to your category and launch plan, and you sign off on the number before anything goes live. Content billed at cost plus a small handling fee. KOL and KOC invoiced by the talent agency. We never take referral commissions on KOL spend.',
     },
   },
   distributor: {
@@ -1048,15 +1046,16 @@ const icons: Record<string, string> = {
                 </span>
               </header>
               <h3 class="cbs-ledger__title">What you pay us</h3>
-              <div class="cbs-ledger__headline" data-cost-field="agency.headline">
-                <span class="cbs-ledger__lead">{costLedger.tp.agency.headlineLead}</span>
-                <span class="cbs-ledger__prefix">{costLedger.tp.agency.headlinePrefix}</span>
-                <span
-                  class="cbs-ledger__num"
-                  data-counter={costLedger.tp.agency.headlineNum}
-                  data-counter-format="comma">0</span
+              <div
+                class="cbs-ledger__headline cbs-ledger__headline--text"
+                data-cost-field="agency.headline"
+              >
+                <span class="cbs-ledger__lead" style="display: none;"></span>
+                <span class="cbs-ledger__prefix"></span>
+                <span class="cbs-ledger__num" data-counter-format="comma"
+                  >{costLedger.tp.agency.headlineText}</span
                 >
-                <span class="cbs-ledger__suffix">{costLedger.tp.agency.headlineSuffix}</span>
+                <span class="cbs-ledger__suffix"></span>
               </div>
               <p class="cbs-ledger__unit" data-cost-field="agency.unit">
                 {costLedger.tp.agency.headlineUnit}

@@ -136,13 +136,11 @@ const costLedger = {
     sub: 'La marque détient la boutique. TheChinaPath la pilote.',
     agency: {
       tag: 'Ligne agence',
-      headlineLead: 'À partir de',
-      headlineNum: 7500,
-      headlinePrefix: '$',
-      headlineSuffix: '',
-      headlineUnit: 'par mois',
-      pill: '+ 10 % sur le GMV',
-      body: "Un forfait mensuel à partir de 7 500 $, adossé à une part variable de 10 % sur le GMV. L'équation se révise à la hausse comme à la baisse selon la catégorie et l'étendue plateforme retenue. Le média et la production de contenu se refacturent au coût réel, sans marge dissimulée.",
+      headlineLead: '',
+      headlineText: 'Sur devis',
+      headlineUnit: 'établi au cas par cas',
+      pill: 'Forfait + part du GMV',
+      body: "Un forfait mensuel, complété d'une part variable sur le GMV. Les deux se fixent une fois la catégorie et le périmètre plateforme arrêtés. Le média et la production de contenu se refacturent au coût réel, sans marge dissimulée.",
       footer:
         'Le modèle distributeur convient rarement à une marque qui débarque sur le marché chinois. Bâtir une notoriété en partant de zéro réclame un budget de lancement substantiel, que le seul portage du stock ne saurait couvrir. Pour la grande majorité des primo-arrivants, le TP demeure la voie pertinente.',
     },
@@ -152,10 +150,10 @@ const costLedger = {
       headlinePrefix: '',
       headlineSuffix: '%',
       headlineUnit: 'à la charge de la marque',
-      pill: 'À partir de 120 000 $ la première année',
+      pill: 'Calibré sur le plan de lancement',
       body: 'Le média, le contenu et la promotion restent à la charge de la marque, dans leur intégralité. Nos équipes opèrent dans le périmètre budgétaire validé en amont. Chaque yuan transite par votre compte plateforme, en pleine traçabilité.',
       footer:
-        "Les fourchettes habituelles débutent à 120 000 $ d'investissement média sur les douze premiers mois. Le contenu se refacture au coût, augmenté d'une commission de gestion réduite. Les KOL et les KOC passent par leur agence de talents ; aucune commission d'apport ne revient à TheChinaPath sur cette ligne.",
+        "L'investissement média se calibre sur la catégorie et le plan de lancement. La marque en valide le montant avant toute activation. Le contenu se refacture au coût, augmenté d'une commission de gestion réduite. Les KOL et les KOC passent par leur agence de talents ; aucune commission d'apport ne revient à TheChinaPath sur cette ligne.",
     },
   },
   distributor: {
@@ -1076,15 +1074,16 @@ const icons: Record<string, string> = {
                 </span>
               </header>
               <h3 class="cbs-ledger__title">Ce que vous nous versez</h3>
-              <div class="cbs-ledger__headline" data-cost-field="agency.headline">
-                <span class="cbs-ledger__lead">{costLedger.tp.agency.headlineLead}</span>
-                <span class="cbs-ledger__prefix">{costLedger.tp.agency.headlinePrefix}</span>
-                <span
-                  class="cbs-ledger__num"
-                  data-counter={costLedger.tp.agency.headlineNum}
-                  data-counter-format="comma">0</span
+              <div
+                class="cbs-ledger__headline cbs-ledger__headline--text"
+                data-cost-field="agency.headline"
+              >
+                <span class="cbs-ledger__lead" style="display: none;"></span>
+                <span class="cbs-ledger__prefix"></span>
+                <span class="cbs-ledger__num" data-counter-format="comma"
+                  >{costLedger.tp.agency.headlineText}</span
                 >
-                <span class="cbs-ledger__suffix">{costLedger.tp.agency.headlineSuffix}</span>
+                <span class="cbs-ledger__suffix"></span>
               </div>
               <p class="cbs-ledger__unit" data-cost-field="agency.unit">
                 {costLedger.tp.agency.headlineUnit}

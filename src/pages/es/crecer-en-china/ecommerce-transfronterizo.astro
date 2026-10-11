@@ -132,13 +132,11 @@ const costLedger = {
     sub: 'La tienda es suya. Nosotros la operamos.',
     agency: {
       tag: 'Línea agencia',
-      headlineLead: 'Desde',
-      headlineNum: 7500,
-      headlinePrefix: '$',
-      headlineSuffix: '',
-      headlineUnit: 'al mes',
-      pill: '+ 10 % sobre el GMV',
-      body: 'Retainer mensual desde 7.500 $ con una participación del 10 % sobre el GMV, que sube o baja según la categoría y las plataformas cubiertas. Medios y producción de contenido se facturan a coste real.',
+      headlineLead: '',
+      headlineText: 'A medida',
+      headlineUnit: 'cotizado para cada marca',
+      pill: 'Retainer + parte del GMV',
+      body: 'Un retainer mensual más una participación sobre el GMV. Fijamos ambos cuando conocemos su categoría y las plataformas que quiere cubrir. Medios y producción de contenido se facturan a coste real.',
       footer:
         'Rara vez aceptamos marcas que entran de cero como distribuidor. Construir notoriedad desde la nada sale demasiado caro si no se compromete un fondo de lanzamiento serio. Para la mayoría de los recién llegados, el modelo TP es la respuesta correcta.',
     },
@@ -148,10 +146,10 @@ const costLedger = {
       headlinePrefix: '',
       headlineSuffix: '%',
       headlineUnit: 'a su cargo',
-      pill: 'Desde 120K $ el primer año',
+      pill: 'Ajustado a su plan de lanzamiento',
       body: 'Usted financia el 100 % de medios, contenido y promoción. Nosotros ejecutamos contra el presupuesto aprobado. Cada yuan pasa por su cuenta de plataforma, con visibilidad total.',
       footer:
-        'Rangos habituales: compra de medios desde 120.000 $ a lo largo de los doce primeros meses. El contenido se factura a coste, con una pequeña comisión de gestión. KOL y KOC los factura la agencia de talento. Nunca cobramos comisión por recomendación sobre la inversión en KOL.',
+        'La inversión en medios se ajusta a su categoría y a su plan de lanzamiento, y usted aprueba la cifra antes de activar nada. El contenido se factura a coste, con una pequeña comisión de gestión. KOL y KOC los factura la agencia de talento. Nunca cobramos comisión por recomendación sobre la inversión en KOL.',
     },
   },
   distributor: {
@@ -1065,15 +1063,16 @@ const icons: Record<string, string> = {
                 </span>
               </header>
               <h3 class="cbs-ledger__title">Lo que nos paga</h3>
-              <div class="cbs-ledger__headline" data-cost-field="agency.headline">
-                <span class="cbs-ledger__lead">{costLedger.tp.agency.headlineLead}</span>
-                <span class="cbs-ledger__prefix">{costLedger.tp.agency.headlinePrefix}</span>
-                <span
-                  class="cbs-ledger__num"
-                  data-counter={costLedger.tp.agency.headlineNum}
-                  data-counter-format="comma">0</span
+              <div
+                class="cbs-ledger__headline cbs-ledger__headline--text"
+                data-cost-field="agency.headline"
+              >
+                <span class="cbs-ledger__lead" style="display: none;"></span>
+                <span class="cbs-ledger__prefix"></span>
+                <span class="cbs-ledger__num" data-counter-format="comma"
+                  >{costLedger.tp.agency.headlineText}</span
                 >
-                <span class="cbs-ledger__suffix">{costLedger.tp.agency.headlineSuffix}</span>
+                <span class="cbs-ledger__suffix"></span>
               </div>
               <p class="cbs-ledger__unit" data-cost-field="agency.unit">
                 {costLedger.tp.agency.headlineUnit}
