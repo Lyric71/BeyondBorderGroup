@@ -647,7 +647,7 @@ and Ledger needs one.
 - Verified 1: 2026-09-22
 - Verified 2: 2026-09-22 (re-fetched at iteration 8, unchanged)
 - Used in: double-11-preparation-checklist
-- Notes: the rule text sits in an attached PDF/OFD on the NDRC notice page that did not parse. Cite the effective date and the issuing bodies only. Do not quote article numbers from this rule until the attachment has been read.
+- Notes: the NDRC notice page attachment (PDF/OFD) did not parse. Full text since read on the CAC copy (2026-10-11): see "Internet platform pricing rule, article 5" under Partner piece P19 research; article numbers may be cited from there.
 
 ### 明码标价和禁止价格欺诈规定, SAMR order 56, article 19
 - Value: promulgated April 14, 2022, effective July 1, 2022. Article 19(3) prohibits selling goods or services through false discounting, false markdowns or false price comparison (虚假折价、减价或者价格比较)
@@ -3777,3 +3777,342 @@ extraction, because the reports set text in columns).
 
 ### Researched for 05T, not used
 - Live Tmall Global assortment, prices and review counts (login wall); the blackmores.tmall.hk redirect (a made-up tmall.hk subdomain redirects the same way, so it proves nothing); FY2023 China figures (not found in a filing); TMO Group sales estimates (agency, competitor rule); Beijing Business Today's dollar labels (wrong currency; the filing figure is used).
+
+## Partner piece P16 research, October 10, 2026
+
+### Online share of China's retail sales, 2025: 26.1%
+- Value: 实物商品网上零售额 130,923亿元 (13.09 trillion RMB), +5.2%, 26.1% of 社会消费品零售总额 (total retail sales 501,202亿元); among retailers above the size threshold, convenience stores +5.5%, supermarkets +4.3%
+- As of: full year 2025 (communique dated February 28, 2026)
+- Source: National Bureau of Statistics (国家统计局), 中华人民共和国2025年国民经济和社会发展统计公报
+- URL: https://www.stats.gov.cn/sj/zxfbhjd/202602/t20260228_1962662.html
+- Verified 1: 2026-10-10 (curl; 26.1%, 130923 and 2026/02/28 on the page)
+- Verified 2: 2026-10-10 (re-fetched after the draft was written; same passage)
+- Used in: tmall-partner-vs-distributor-china
+- Notes: the share is of total retail sales of consumer goods, catering included. NBS prints the share in the annual communique only; the monthly releases print the levels.
+
+### Online goods sales January to August 2026: 8.42 trillion RMB, +4.3%; food +15.9%
+- Value: 网上商品零售额 84,195亿元, +4.3%; 吃类 +15.9%, 穿类 +4.9%, 用类 +1.1%; total retail sales 327,569亿元, +1.1%; convenience stores +5.5%, supermarkets +3.8%. NBS renamed 实物商品网上零售额 to 网上商品零售额 in 2026 with the same scope
+- As of: January to August 2026 (release of September 15, 2026)
+- Source: National Bureau of Statistics (国家统计局), 2026年1—8月份社会消费品零售总额增长1.1%
+- URL: https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html
+- Verified 1: 2026-10-10
+- Verified 2: 2026-10-10 (re-fetched; 84195 and 15.9% present)
+- Used in: tmall-partner-vs-distributor-china
+- Notes: the release prints no online share; 84,195 / 327,569 = 25.7% is our arithmetic and must be labelled as such if printed (P16 does not print it). Next month's release replaces these figures.
+
+### Douyin Mall 618 2026: livestream, creator and product-card figures
+- Value: more than 120,000 merchants doubled livestream sales year on year; short-video views with a shopping cart +57%; more than 570,000 creators doubled their sales; creators under 1 million followers drove more than 80% of creator sales; merchants with over 10 million RMB of product-card sales +82%; merchants with search-driven sales over 10 million RMB +53%
+- As of: June 2026 (《2026年抖音商城618数据报告》, released June 19; article June 20, 2026)
+- Source: China National Radio (央广网), 郭彦伟
+- URL: https://www.cnr.cn/mspd/jrhm/20260620/t20260620_527669642.shtml
+- Verified 1: 2026-10-10
+- Verified 2: 2026-10-10 (re-fetched; 12万, 80%, 82% present)
+- Used in: tmall-partner-vs-distributor-china
+- Notes: counts of merchants and creators, not GMV shares. Douyin's 2026 GMV split targets (shelf 56%) circulate only in investor-call notes; not sourced, do not use.
+
+### Year-one TP and DP cost lines at 2 million RMB, packaged food (proprietary, October 2026)
+- Value: Tmall Global with a TP: deposit 50,000 + annual fee 30,000 + bonded deposit 100,000 + tax prepayment 300,000 + setup 25,000 = 505,000 RMB before the first order (450,000 refundable); TP 35,000 a month + 10% = 620,000 (31% of sales); platform 2% + payment 1% = 60,000; ads 60% of sales at ROAS 2 = 600,000; creators 20% x 20% = 80,000; total 1,865,000 before stock, tax and logistics. Douyin Global with a DP: deposit 5,000 + bonded 100,000 + prepayment 300,000 + setup 25,000 = 430,000 (405,000 refundable); DP 30,000 a month + 5% = 460,000 (23%); tech fee 2.5% = 50,000; ads 15% at ROAS 2.5 = 120,000; creators 80% x 20% = 320,000; total 1,380,000 (plus 182,000 cross-border tax and 138,800 logistics = the Douyin calculator's 1,700,800 full default year)
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro `food` row and defaults; src/pages/tools/douyin-cost-calculator.astro `food-packaged` row and defaults)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-10 (rows and defaults read)
+- Verified 2: 2026-10-10 (re-read and arithmetic rerun before the quality pass)
+- Used in: tmall-partner-vs-distributor-china
+- Notes: model defaults, not a market rate. The Tmall model books cross-border VAT to the shopper by default and the Douyin model books it to the brand, so compare the two only line by line, never on full-year totals.
+
+### Distributor signature and cross-border launch timing (proprietary, already published)
+- Value: a distributor contract takes three to five months from first meeting to signature; a cross-border store can take its first order in eight to twelve weeks
+- As of: September 2026
+- Source: TheChinaPath site copy, src/content/insights/china-distributor-vs-own-store.md (keyTakeaways and "Patience third", "from TheChinaPath distributor sourcing engagements, as published on this site")
+- Label in copy: "in our own work" / "TheChinaPath distributor and store work, as published on this site"
+- Verified 1: 2026-10-10
+- Verified 2: 2026-10-10
+- Used in: china-distributor-vs-own-store, tmall-partner-vs-distributor-china
+- Notes: a published service-level statement, not a data pull.
+
+### Re-verified ledger entries reused for P16 (no new entry; add the slug to Used in)
+- Both checks 2026-10-10, add tmall-partner-vs-distributor-china to Used in: "New overseas brands on Tmall Global, 2025" (Sina, 2415); "Douyin Global admission: overseas entity, mainland domestic agent, overseas bank account, trademark validity" (headless Edge, 境内代理人 and 大于6个月); "Douyin affiliate (精选联盟) creator commission ranges by strategy" (5%-50%, 5%-80%); "Pinlive Foods gross margin, 2025" (16.24%, 12.20%); "Credit terms and late payment in mainland China, 2026" (Coface, 81 and 73 days); "Anti-Monopoly Law: resale price maintenance ban and fines" (art. 18); "Cross-border retail import limits per shopper" (5,000 / 26,000 RMB); "Compass shortlist turnaround" and "Compass shortlist size" (published site copy).
+
+### Researched for P16, not used
+- Tmall Global and Douyin Global onboarding review times (3 to 15 working days and the like): agency blogs and 搜狐号 posts only, one a named competitor (TMO Group); the platforms publish no review time. Do not research again from those pages.
+- Share of foreign brands that move from cross-border to general trade: no primary source found.
+
+## Pet food Ledger research (06L, cost-to-sell-pet-food-in-china), October 11, 2026
+
+### Pet food fee lines on the three cross-border platforms
+- Value: Tmall Global 犬主粮, 猫主粮, 狗零食, 猫零食 2.5% / annual fee 30,000 RMB (其他二级类目 under 宠物 5%); JD Worldwide 宠物生活 猫狗主粮 2.50% + 0.90% transaction fee, flagship deposit US$5,000, other store types 5,000 / 5,000 / 10,000 / 10,000 by GMV tier, 狗零食 and 猫零食 5.00%; Douyin Global 宠物生活 狗食品 and 猫食品 3.50% base plus 4.60% supplement on specified-channel orders (抖音商城 app, 豆包), 其他二级类目 6.00% base
+- As of: Tmall effective 2026-09-09; JD revised 2026-09-24, effective 2026-10-01; Douyin schedule 2026-07-15
+- Source: Tmall Global (天猫国际) 《天猫国际各类目年费、技术服务费率》; JD Worldwide (京东全球购) 《京东全球购开放平台各类目资费标准》; Douyin E-commerce (抖音电商) 《【全球购】技术服务费费率标准》 with 《【全球购】招商管理规则》 5.2.2
+- URL: https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625 ; https://jdw-rule.jd.hk/detail?ruleId=950583665543483392 ; https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn ; https://school.jinritemai.com/doudian/web/article/108056
+- Verified 1: 2026-10-11 (all rendered with headless Chrome on private profiles; rows read)
+- Verified 2: 2026-10-11 (re-rendered in iteration 8; same rows; JD needed a 45 s render budget the second time)
+- Used in: cost-to-sell-pet-food-in-china
+- Notes: the Tmall Global calculator has no pet food row (its pet row is pet supplies, not food or treats, at 5%) and the Douyin calculator's pet row is the 5% midpoint of 3.5% and 6%. The JD calculator's "Cat and dog food" row matches the rule. The article names the JD row and tells readers to use Custom on Tmall.
+
+### Pet food is feed: GACC plant registration on the exporting authority's recommendation
+- Value: feed includes 宠物食品及咬胶 (art. 68); imported feed must come from a registered overseas producer (art. 10); the exporting country's competent authority reviews and recommends the plant (art. 11); registered plants are published on the GACC site (art. 12); registration valid 5 years, renewal filed by the authority 6 months before expiry (art. 13); a 进境动植物检疫许可证 where required (art. 15)
+- As of: Decree 118 (2009) as amended by GACC Decree 262, 2023-03-09 (a full rewrite went to consultation on 2024-11-15 and was not adopted as of 2026-10-11)
+- Source: General Administration of Customs (海关总署), 《进出口饲料和饲料添加剂检验检疫监督管理办法》(2023修正), via the MOFCOM regulations database
+- URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=97519
+- Verified 1: 2026-10-11 (fetched, quotes extracted)
+- Verified 2: 2026-10-11 (re-fetched in iteration 8; 宠物食品及咬胶 and 注册登记的有效期为5年 present)
+- Used in: cost-to-sell-pet-food-in-china
+
+### UK pet food access protocol, November 2025
+- Value: from 2025-11-26 UK pet food may enter China if made in plants registered on UK recommendation; every lot carries a health certificate (one original, two copies); the outer packaging shows the plant name, registration number, 输往中华人民共和国 and 非供人类食用 or 仅用于宠物食用
+- As of: 2025-11-26
+- Source: General Administration of Customs Announcement 2025 No. 230 (海关总署公告2025年第230号), via MOFCOM
+- URL: https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2026/art_2c3ecb1ff8354d818fe48d7d56539092.html
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (re-fetched; 即日起，允许符合以下要求的英国宠物食品进口, 卫生证书 and 仅用于宠物食用 present)
+- Used in: cost-to-sell-pet-food-in-china
+- Notes: New Zealand (2026 No. 10) and Canada (2026 No. 16) notices follow the same pattern; not cited.
+
+### Pet food on the cross-border retail import list, bonded only
+- Value: 390 23091010 零售包装的狗食或猫食罐头 and 391 23091090 零售包装的其他狗食或猫食, both 仅限网购保税商品; untouched by the 2022 adjustment
+- As of: 2019 list (effective 2020-01-01), adjusted 2022-03-01
+- Source: Ministry of Finance and 12 other departments, Announcement 2019 No. 96 (财政部等13部门公告2019年第96号), list annex
+- URL: http://gss.mof.gov.cn/gzdt/zhengcefabu/201912/t20191227_3451448.htm (annex http://gss.mof.gov.cn/gzdt/zhengcefabu/201912/P020191227607915178053.pdf)
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (re-fetched; PDF text shows both lines with 仅限网购保税商品)
+- Used in: cost-to-sell-pet-food-in-china
+- Notes: the https URL can return 502; plain http works.
+
+### Cross-border pet food still needs an approved country and a registered plant
+- Value: GACC applies quarantine access to countries and products allowed to export pet food; imported pet food must come from registered overseas producers; canned pet food (2309101000) needs no entry quarantine permit, other retail-packed dog and cat food does
+- As of: 2023-11-24
+- Source: Chengdu Customs (成都海关发布), reposted by the Shanghai Cross-border E-commerce Association (上海跨境电子商务行业协会), an industry association
+- URL: https://www.scea.co/trends/show/id/2552.html
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (re-fetched; 注册登记的境外生产企业 and 检疫准入 present)
+- Used in: cost-to-sell-pet-food-in-china
+- Notes: the two GACC lists it names (dzs.customs.gov.cn) refuse the fetcher (HTTP 412, certificate error). A Sohu repost of a customs reply (https://www.sohu.com/a/828540275_120078081, 2024-11-20) says the same for cross-border pet food; corroboration only, not cited.
+
+### Pet feed VAT 9%, so 6.3% cross-border
+- Value: VAT Law art. 10 puts 饲料 at 9% from 2026-01-01; 财政部 税务总局公告2026年第9号 annex 1: 宠物饲料，属于饲料的征税范围; cross-border retail imports pay 70% of VAT, so 6.3%, with 0% duty and no consumption tax on pet food
+- As of: VAT Law adopted 2024-12-25, in force 2026-01-01; announcement 2026-01-30
+- Source: NPC (全国人大), 《中华人民共和国增值税法》; Ministry of Finance and State Taxation Administration, Announcement 2026 No. 9
+- URL: http://www.npc.gov.cn/npc/c2/c30834/202412/t20241225_442038.htm ; https://hainan.chinatax.gov.cn/xxgk_6_1/30163239.html (annex https://hainan.chinatax.gov.cn/u/cms/www/202607/06170226lf67.pdf)
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (announcement page and annex PDF re-fetched; 宠物饲料，属于饲料的征税范围 present)
+- Used in: cost-to-sell-pet-food-in-china
+- Notes: the calculators' 9.1% default is the general-goods rate; the article tells pet food readers to set 6.3%. 国税函〔2002〕812号 (pet feed not exempt, then 13%) is the origin of the 13% figure still seen online.
+
+### General-trade duty on dog and cat food, 2026
+- Value: 23091010 and 23091090 MFN 15%, provisional 10% for 2026 (4% until 2024)
+- As of: 2026-01-01
+- Source: State Council Tariff Commission (国务院关税税则委员会), Announcement 2025 No. 11, annex 1
+- URL: https://gss.mof.gov.cn/gzdt/zhengcefabu/202512/P020251229510521217364.pdf (notice via MOFCOM https://www.mofcom.gov.cn/cwxx/zcfb/art/2026/art_031306c35f494f64b3b4e259458bbc22.html)
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (PDF re-fetched; 零售包装的狗食或猫食罐头 15 10 present)
+- Used in: cost-to-sell-pet-food-in-china
+
+### MARA import registration and Chinese label for imported pet food
+- Value: only 宠物配合饲料 and 宠物添加剂预混合饲料 need an import registration certificate (pet feed measures arts. 2, 10, 14), filed through a China office or a Chinese agent; review within 10 working days, verification testing within 3 months, certificate in 10 working days, valid 5 years (registration measures arts. 9, 10, 12, 14); labels show set category wording (全价宠物食品 etc., 宠物零食 for treats), guaranteed analysis, registration number, origin in Chinese and the China sales entity (label rules arts. 3, 5, 15)
+- As of: pet feed measures and label rules, 农业农村部公告第20号 (2018-04-27), republished 2025-06-30; registration measures amended 2017-11-30
+- Source: Ministry of Agriculture and Rural Affairs (农业农村部)
+- URL: https://www.moa.gov.cn/ztzl/sqxzjcgs/xzjcbz/202506/t20250630_6475260.htm ; https://www.moa.gov.cn/gk/nyncbgzk/gzk/202210/t20221013_6413266.htm ; https://www.moa.gov.cn/ztzl/sqxzjcgs/xzjcbz/202506/t20250630_6475269.htm
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (all three re-fetched; strings present)
+- Used in: cost-to-sell-pet-food-in-china
+- Notes: no primary text says how MARA registration applies to bonded cross-border stock; the article does not claim either way.
+
+### China urban dog and cat market, 2025
+- Value: 312.6 bn RMB, up 4.1%; food 53.7%; 53.43 m dogs, 72.89 m cats; 3,006 RMB a dog and 2,085 RMB a cat a year
+- As of: 2025 (white paper released 2026-01-05)
+- Source: CCTV.com (央视网), on 《2026年中国宠物行业白皮书》 (Petdata, 派读宠物行业大数据平台)
+- URL: https://business.cctv.com/2026/01/05/ARTIdmv2AWmVeRVodaZYLOvQ260105.shtml
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (re-fetched; 3126亿元 and 53.7% present)
+- Used in: cost-to-sell-pet-food-in-china (market size and food share only)
+
+### Packaged pet food imports, 2025
+- Value: US$474.1 m, down 5.2% on 2024; New Zealand down 22.9%, Canada down 24%
+- As of: calendar 2025 (report 2026-04-14)
+- Source: USDA Foreign Agricultural Service, ATO Shanghai, GAIN CH2026-0046, citing China Customs (海关总署)
+- URL: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Pet+Food+Market+Update+2026_Shanghai+ATO_China+-+People%27s+Republic+of_CH2026-0046.pdf
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (PDF re-fetched; "imported packaged pet food totaled $474.1 million in 2025, down 5.2 percent" present)
+- Used in: cost-to-sell-pet-food-in-china
+- Notes: no Chinese publication carries the full-year 2025 figure, so the English source is the only one. 2024: 75,281 t and 3.5565 bn RMB (宠经说 on 澎湃号, 2025-02-26, https://m.thepaper.cn/newsDetail_forward_30220350), single-checked, not used.
+
+### Tmall Double 11 2025: 68% of pet brands above 10 m RMB on day one were domestic
+- Value: 天猫双11首日成交破千万的宠物品牌中，国产品牌占比高达68%
+- As of: 2025-11-08
+- Source: Huanqiu.com (环球网), via Sina Finance
+- URL: https://finance.sina.com.cn/roll/2025-11-08/doc-infwsynp1202307.shtml
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (re-fetched; 68% present)
+- Used in: cost-to-sell-pet-food-in-china
+- Notes: the 淘天64% share on the same page comes from Jiuqian (久谦), a consultancy; never cite.
+
+### Douyin pet category growth, 2025
+- Value: 2025年以来抖音电商宠物类目GMV同比增长95%，新锐品牌同比增长75%，用户量同比增长66%
+- As of: report 2025-08-25 (period: 2025 to date)
+- Source: Douyin E-commerce (抖音电商), 《2025抖音电商萌宠消费趋势报告》, via Paidai (电商派)
+- URL: https://www.pai.com.cn/p/01k3ga6n37f0qszmxpfc0yr77g
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (re-fetched; 95% and 75% present)
+- Used in: cost-to-sell-pet-food-in-china
+
+### Imported premium cat kibble shelf price, Tmall Global direct store
+- Value: a 5.4 kg imported premium cat kibble at 502.55 RMB after coupons (list 900 RMB) on 天猫国际官方直营
+- As of: 2025-01-27
+- Source: SMZDM (什么值得买), dated deal post
+- URL: https://www.smzdm.com/p/139914873/
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (re-fetched; 5.4 and 502.55 present)
+- Used in: cost-to-sell-pet-food-in-china (brand not named in copy)
+- Notes: a promotional price; anchors the illustrative 500 RMB basket only.
+
+### Pet food per-order cost and break-even on the calculators (proprietary, October 2026)
+- Value: per 100 parcels on JD Worldwide (2.5% + 0.9%), calculator per-order defaults (4 pick and pack, 11 last mile, 15 return handling, 5% returns): cost per kept order 23 / 34 / 51 RMB at 180 / 500 / 1,000 RMB baskets (12.9% / 6.8% / 5.1% of the order); Tmall Global (2.5% + 1%) 23.5 / 34.7 / 52.2; logistics 1,630 RMB per 100 parcels, 74% of store cost at 180 RMB, 34% at 1,000; Douyin at 8.1% on the 500 RMB bag about 58 RMB; break-even at 500 RMB and 50% gross margin with a 35,000 RMB monthly partner retainer and a 25,000 RMB build over three years: about 1,985 kept orders (about 0.99 m RMB) on JD, 2,129 (1.06 m) on Tmall; shopper tax at 6.3%: 11 / 32 / 63 RMB
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/jd-worldwide-setup-and-run.astro, the pet row and defaults; tmall-global-setup-and-run.astro defaults with the rule's 2.5% / 30,000)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-11 (computed from the defaults)
+- Verified 2: 2026-10-11 (recomputed after the quality pass)
+- Used in: cost-to-sell-pet-food-in-china
+- Notes: the calculators price the last mile per parcel, not per kilo; the copy says so and asks for a warehouse quote on heavy boxes.
+
+### Researched for 06L, not used
+- Online pet food GMV across Tmall, JD and Douyin (30.71 bn RMB, 2025) and Taotian's 51.4% share: Shenwan Hongyuan, but the data is credited to Jiuqian (久谦), a consultancy. Do not cite.
+- US 89.5% of H1 2025 non-canned import volume: Foodmate's feed compliance service on NetEase; a service provider and one HS line. Do not cite.
+- A 2025 import tonnage: only on gtaic.ai, an AI-generated trade site, conflicting with USDA. Do not cite.
+- "23 approved countries as of April 2025": consultancy and Zhihu pages only.
+- A per-kilo courier rate card for heavy e-commerce parcels: none citable (consumer guides only).
+
+## Partner piece P17 research (douyin-cross-border-brand-verification), October 11, 2026
+
+### Douyin Global dual verification: overseas production and overseas circulation proof
+- Value: Douyin Global verifies overseas production and overseas circulation (境外生产与境外流通资质核验) for merchants' own and authorized brands; comment period 2026-04-28, public notice 2026-05-06 to 05-12, expected in force 2026-05-13; fabricated overseas backgrounds, spliced documents and staged videos (视频摆拍) banned; penalties from restricted operation and delisting to suspension and store removal. Production proof: factory name and address, factory registration, local production licence (GMP etc.), production agreement signed directly by the brand or an equity affiliate (with proof) and the factory, naming the brand, maker on the pack matching the agreement, official certificate of origin, real product photos. Circulation proof: official free sale certificate, customs declaration from the last 90 days on a plausible route (first-leg logistics proof if the departure port differs from the origin), plus one sales proof (wholesale invoices from the last 90 days; or three overseas stores, at least one one-take video and two photo sets, receipts from the last 90 days; or a main listing on a well-known overseas marketplace with recent transactions and reviews)
+- As of: May 2026 (notice posted 2026-05-06)
+- Source: Douyin E-commerce (抖音电商), 关于修订《【全球购】招商管理规则》的公示通知
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aJikTPY3ctGa
+- Verified 1: 2026-10-11 (rendered with headless Edge on a temp profile)
+- Verified 2: 2026-10-11 (re-rendered at iteration 8; 2026年5月13日生效, 境外生产与境外流通资质核验, 视频摆拍, 近 90 天内 present)
+- Used in: douyin-cross-border-brand-verification
+- Notes: the notice's copy excludes 营养保健/特医食品/传统滋补 from the wholesale route; the linked guide (next entry) lists 营养保健/传统滋补. Cite the guide for the exclusion.
+
+### Douyin verification guide: wholesale proof not accepted for supplements and tonics
+- Value: same evidence lists as the notice; wholesale sales proof not accepted for 营养保健 (health supplements) and 传统滋补 (traditional tonics)
+- As of: 2026-04-27 (posting date)
+- Source: Douyin E-commerce (抖音电商), 境外生产与流通资质核验规范及指引
+- URL: https://school.jinritemai.com/doudian/web/article/aJigvdmNLoZw
+- Verified 1: 2026-10-11 (headless Edge)
+- Verified 2: 2026-10-11 (re-rendered; 营养保健/传统滋补不支持 and 3家不同门店 present)
+- Used in: douyin-cross-border-brand-verification
+
+### Douyin Global admission rules, clause 4.2.2: dual verification is part of brand qualification
+- Value: 4.2.2 "除以下品牌资质要求外，自有或授权品牌资质需提供品牌境外生产与境外流通证明", linking the guide above; 2.1.2 domestic agent (境内代理人) carrying joint liability; latest revision effective 2026-07-15
+- As of: July 2026 (page header 2026-09-25)
+- Source: Douyin E-commerce (抖音电商), 《【全球购】招商管理规则》
+- URL: https://school.jinritemai.com/doudian/web/article/108056
+- Verified 1: 2026-10-11 (headless Edge)
+- Verified 2: 2026-10-11 (re-rendered; 境外生产与境外流通证明, 境内代理人 and 2026年7月15日 present)
+- Used in: douyin-cross-border-brand-verification
+- Notes: extends the 2026-10-02 entry "Douyin Global admission" (same URL) with clause 4.2.2.
+
+### Douyin launch of the cross-border brand requirements, May 26, 2026: batch checks, 30-day window
+- Value: Douyin's Safety and Trust Center announced the upgraded cross-border brand qualification requirements on 2026-05-26; merchants are checked in batches; a notified merchant has 30 natural days to submit the overseas production and circulation proof; late, incomplete or false files lead to delisting, restricted store functions or removal; Douyin asked creators and operating agencies (运营机构) to check brand qualifications before working with a brand and to refuse doubtful products; warning signs include a foreign name with no overseas website or sales record and goods routed through Hong Kong into bonded warehouses without full logistics records
+- As of: 2026-05-26
+- Source: China News Service (中国新闻网), carried by Sina Finance (新浪财经)
+- URL: https://finance.sina.cn/2026-05-26/detail-inhzffsk2883470.d.html
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (re-fetched; 30个自然日, 分批次, 运营机构, 香港中转 present)
+- Used in: douyin-cross-border-brand-verification
+
+### Tmall Global food categories: mainland licensed company and entrusted-operation agreement since May 27, 2026
+- Value: every food category (plus infant formula, infant food, maternal formula and nutrition, postpartum nutrition) requires a mainland company's business licence, its food business licence, its legal representative's ID and a 跨境电商零售进口食品委托经营协议 (cross-border retail import food entrusted-operation agreement); published 2026-05-21, in force 2026-05-27; reason given: food recall obligations
+- As of: 2026-05-27
+- Source: Tmall Global (天猫国际), 关于《天猫国际商家资质标准》公示通知
+- URL: https://rule.tmall.hk/?type=detail&ruleId=20010174&cId=636
+- Verified 1: 2026-10-11 (headless Chrome over DevTools; the list page opens rules through window.open, the URL was captured from the click handler)
+- Verified 2: 2026-10-11 (re-rendered; 2026年5月27日生效执行, 境内公司食品经营许可证 and the agreement name present)
+- Used in: douyin-cross-border-brand-verification
+
+### Tmall Global merchant qualification standards, in force 2026-09-28: NAD+ supplements and food rows
+- Value: the four mainland-company food documents also apply to 保健食品/膳食营养补充食品; NAD+ precursor supplements also need the factory's production licence (cGMP, GMP, TGA, Canadian GMP), the brand-factory production contract when the brand is not the maker, home-market sales proof checked on site by Tmall's overseas BD, ingredient sheets and a third-party test report
+- As of: published 2026-09-22, in force 2026-09-28
+- Source: Tmall Global (天猫国际), 天猫国际商家资质标准
+- URL: https://rule.tmall.hk/?type=detail&ruleId=11000442&cId=624
+- Verified 1: 2026-10-11 (headless Chrome over DevTools)
+- Verified 2: 2026-10-11 (re-rendered; 于2026年9月28日生效, 生产许可资质, 委托生产合同, 海外BD进行实地核实 present)
+- Used in: douyin-cross-border-brand-verification
+- Notes: other Tmall Global rule IDs found on 2026-10-11: 招商标准 11003210 (in force 2025-03-01), 在营商家资质细则 9223 (2025-03-01); announcements list cId=636, admission list cId=624.
+
+### Reused for P17 (re-fetched 2026-10-11)
+- Tmall Global 全球探源计划 upgrade (Global Network, 2026-09-15): 今年5月启动, 超过300个海外品牌报名, 一镜到底 present. Used in douyin-cross-border-brand-verification.
+- Douyin calculator defaults (proprietary, P16 entry of 2026-10-10): 430,000 RMB before the first order, 405,000 refundable; DP retainer 30,000 a month; one month at 2,000,000 RMB a year = about 166,700 RMB (our arithmetic). Label in copy: "TheChinaPath calculator data, October 2026".
+
+### Researched for P17, not used
+- "Tmall Global verifies overseas circulation and production for new and existing merchants from May 1, 2026": warehouse-service and agency blogs only (51w2c and similar); no such notice in Tmall Global's public rule centre (announcements paged back to September 2025). Do not cite.
+- Trade summaries of the Douyin rule on 搜狐号, AMZ123, globalpod and cbiline: agency or aggregator pages. Cite the Douyin texts instead.
+
+## Partner piece P19 research (tmall-partner-douyin-partner-same-agency), 2026-10-11
+
+### Douyin operating service provider cooperation rules: thresholds, invitation, Tmall credential, quarterly bar
+- Value: covers brand, industrial-belt and cross-border (全球购) providers; cross-border providers' services include 经销运营, 海外招商, 自播运营, 达播运营, 短视频运营 and 货架运营; brand providers enter 品牌全案 and 品牌直播服务 as separate categories. Thresholds: independent legal entity, 1 year or more, registered capital ≥100万元, office ≥100平方米, team 20人以上 with 12人以上 on a Douyin e-commerce operating team. Admission by 定向邀约 after an on-site visit; proposal materials: stamped org chart, staff roster, 单位参保证明, two or more cases covering live, short video, creator and mall selling; supporting credentials accepted include 天猫五星运营服务商 and 钻金银牌品牌DP服务商. Deposit 10万元. Quarterly certification, brand track: 发货GMV ≥200万 (主营跨境 ≥50万) through stores with a service-market order (建立服务合作关系), plus ≥2 high-value brands (not assessed for mainly cross-border providers). 主营跨境 = cross-border merchants ≥50% of shipped GMV.
+- As of: 2026-07-06 (first in force 2024-02-21)
+- Source: Douyin E-commerce (抖音电商), 抖音电商运营类服务商合作管理规则
+- URL: https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
+- Verified 1: 2026-10-11 (rendered with headless Edge on a temporary profile; found through the rule-centre search page)
+- Verified 2: 2026-10-11 (re-rendered at iteration 8; 20人以上, 12人以上, 100平方米, 10万元, 定向邀约, 天猫五星运营服务商, 主营跨境：发货GMV≥50万, 品牌直播服务 re-found)
+- Used in: tmall-partner-douyin-partner-same-agency
+- Notes: superseded on the quarterly bar by the October 2026 revision below once it takes effect. The 2023 品牌服务商准入规范 consultation (100-person team) is historical; do not cite as current.
+
+### Douyin revision of the cooperation rules: brand-track bars from October 15, 2026
+- Value: public notice 2026-10-07 to 2026-10-14, expected in force 2026-10-15 (formal rule to follow the notice); brand-track main industries become 耐用消费/手机大家电/大众消费 (发货GMV ≥300万 a quarter), 奢品跨境 (≥200万), other or none (≥300万); industrial-belt track regrouped (服饰/珠宝文玩二手 ≥300万; 居家生活/鲜食生活/美护文娱/文教健康生活 ≥200万); team, office, capital and 10万元 deposit unchanged
+- As of: 2026-10-07
+- Source: Douyin E-commerce (抖音电商), 关于修订《抖音电商运营类服务商合作管理规则》的公示通知
+- URL: https://school.jinritemai.com/doudian/web/article/aJr9FiM4w6mc
+- Verified 1: 2026-10-11 (headless Edge)
+- Verified 2: 2026-10-11 (re-rendered; 2026年10月15日生效, 奢品跨境：发货GMV≥200万, 12人以上, 10万元 re-found)
+- Used in: tmall-partner-douyin-partner-same-agency
+- Notes: registered in signal-watch-list.md for 2026-10-15 to confirm the formal version.
+
+### Douyin operating service provider management code: categories, commission-scope and padding violations
+- Value: service-market categories 电商运营服务 (全店服务, 内容服务, 商城服务), 品牌运营服务 (品牌全案服务, 品牌直播服务, 分成结算), 跨境服务商 (跨境电商运营); violation points capped at 120 a year, 120 = removal and 100% deposit (cross-border providers: fixed 5,000 / 10,000 / 20,000 RMB at 60 / 90 / 120); one-time 120 points for misleading a merchant on the revenue-split scope ("指定链接" described, 全店/全部直播/全部短视频/全部商品卡 actually split) and, under 虚假交易, for binding stores not actually served to pass assessments or ratings
+- As of: 2026-07-15
+- Source: Douyin E-commerce (抖音电商), 抖音电商运营类服务商管理规范
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aJ5N3Pxir67C
+- Verified 1: 2026-10-11 (headless Edge)
+- Verified 2: 2026-10-11 (re-rendered; 品牌全案服务、品牌直播服务、分成结算, 一次性累计违规积分120分, 指定链接, 全部商品卡, 绑定实际未服务的商家, 扣除100%保证金 re-found)
+- Used in: tmall-partner-douyin-partner-same-agency
+
+### Internet platform pricing rule, article 5: no forced price parity or auto price-matching
+- Value: 第五条: a merchant selling on several platforms sets its own prices; a platform may not, through higher or added fees, deposit deductions, cut subsidies, traffic limits, search demotion, algorithmic demotion, store blocking or delisting, force or indirectly force it to cut prices or promote through rebates (一), to price no higher on that platform than on other channels (二), or to switch on automatic price-following or price-cutting (三); unified pricing under the platform's own business model excepted. 第二十九条: in force 2026-04-10, valid five years. Notice dated 2025-12-09, 发改价格规〔2025〕1607号, NDRC, SAMR and CAC.
+- As of: 2025-12-09 (published 2025-12-20)
+- Source: Cyberspace Administration of China (国家网信办) carrying the NDRC, SAMR and CAC notice, 互联网平台价格行为规则
+- URL: https://www.cac.gov.cn/2025-12/20/c_1767870953332182.htm
+- Verified 1: 2026-10-11 (fetched with curl, full rule text read)
+- Verified 2: 2026-10-11 (re-fetched at iteration 8; 不得高于在其他销售渠道的价格, 自动跟价, 2026年4月10日起施行 re-found)
+- Used in: tmall-partner-douyin-partner-same-agency
+- Notes: closes the note on the earlier 1607 entry (NDRC attachment unparsed): the CAC copy carries the full text, so article numbers may now be cited.
+
+### Douyin 618 2025: half of livestream sales from store broadcasts
+- Value: during 618 2025, half of the GMV driven by Douyin livestreams came from store self-broadcasts (店铺自播); nearly 70% of merchants with over 10 million RMB of livestream GMV used store broadcasts; store-broadcast penetration also rising on Taobao Live
+- As of: 2026-01-30 18:18
+- Source: 21st Century Business Herald (21世纪经济报道), 雷晨, 抖音电商全生态出击
+- URL: https://www.21jingji.com/article/20260130/herald/50ea314a64d44c9664cf2c6a0132a9cc.html
+- Verified 1: 2026-10-11
+- Verified 2: 2026-10-11 (re-fetched; 一半来自店铺自播, 近七成采用了店播模式 re-found)
+- Used in: tmall-partner-douyin-partner-same-agency
+- Notes: the figures are unattributed in the article (Douyin data by context); cite as the paper's report.
+
+### Tmall Partner plus Douyin Partner at calculator defaults (proprietary)
+- Value: Tmall Global TP 35,000 RMB a month + 10% of 3,500,000 RMB = 770,000 RMB a year; Douyin DP 30,000 RMB a month + 5% of 2,000,000 RMB = 460,000 RMB; together 1,230,000 RMB (22.4% of 5,500,000 RMB); retainers 65,000 RMB a month, 780,000 RMB a year (63% of the partner cost); the TP rate applied to 2,000,000 RMB of Douyin sales adds 100,000 RMB (our arithmetic)
+- As of: October 2026
+- Source: TheChinaPath calculator data, src/pages/tools/tmall-global-setup-and-run.astro and src/pages/tools/douyin-cost-calculator.astro (drivers dpRetainer, dpCommission, gmv)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-11 (defaults read from both files)
+- Verified 2: 2026-10-11 (re-read and recomputed at iteration 8)
+- Used in: tmall-partner-douyin-partner-same-agency
+- Notes: model defaults, not what agencies charge. Stands in for the Compass "share of TPs on file with a rated Douyin practice" figure.
+
+### Reused for P19 (re-fetched 2026-10-11)
+- Tmall Global FY26 star list weights (77% / 20% / 3%), globaltp id=821: re-rendered, same body image (O1CN01UFSDGQ1Y2VjWFqS4Q) and 2026-04-29. Used in tmall-partner-douyin-partner-same-agency.
+- Taobao/Tmall sub-accounts for third-party service providers (licence revised 2023-06-02): re-fetched; 第三方服务商, 子账号操作记录及监控查询, 启用、停用 present. Used in tmall-partner-douyin-partner-same-agency.
+
+### Researched for P19, not used
+- Agency-ranking and agency-selection pages (163.com, ithome, ifeng, cngold, chinapp, cnblogs, sohu, qiyoutuo) and Jiemian press releases on individual agencies' Douyin ratings: advertorials or competitor releases; Part 5 bars them. The "285 billion RMB 代运营 market in 2025" figure they repeat traces to no primary source.

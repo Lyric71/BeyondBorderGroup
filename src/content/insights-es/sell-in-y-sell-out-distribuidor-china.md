@@ -6,7 +6,7 @@ updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "JD"]
-tags: ["Encontrar un socio", "Gestionar un socio", "Distribuidores", "Datos de sell-out", "Stock en el canal"]
+tags: ["Encontrar socio", "Gestionar un socio", "Distribuidores", "Datos de sell-out", "Stock en el canal"]
 keyTakeaways:
   - "El sell-in es lo que su distribuidor le compra a usted. El sell-out, lo que compran los consumidores. Cuando el primero corre más que el segundo, el stock se acumula en el canal."
   - "Controle cada mes las semanas de cobertura: stock disponible dividido entre el sell-out semanal medio. Los pedidos solo dicen qué ha salido de su almacén."

@@ -6,7 +6,7 @@ updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "JD"]
-tags: ["Partner finden", "Partner steuern", "Distributoren", "Sell-out-Daten", "Lagerbestand im Kanal"]
+tags: ["Partnersuche", "Partner steuern", "Distributoren", "Sell-out-Daten", "Lagerbestand im Kanal"]
 keyTakeaways:
   - "Sell-in ist, was Ihr Distributor bei Ihnen kauft. Sell-out ist, was die Endkunden kaufen. Wächst das eine schneller als das andere, staut sich die Ware im Kanal."
   - "Prüfen Sie jeden Monat die Lagerreichweite in Wochen: Bestand geteilt durch den durchschnittlichen Wochenabverkauf. Bestellungen zeigen nur, was Ihr Lager verlassen hat."

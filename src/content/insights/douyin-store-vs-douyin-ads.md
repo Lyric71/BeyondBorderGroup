@@ -3,7 +3,7 @@ title: "Douyin store vs Douyin ads: which one you actually need"
 seoTitle: "Douyin store vs Douyin ads: which one you need"
 description: "Douyin store vs Douyin ads: setup cost, daily workload, content, who must be in China, and margin, side by side, with our calculator's numbers."
 pubDate: "2026-10-06"
-updatedDate: "2026-10-06"
+updatedDate: "2026-10-11"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Douyin", "Tmall", "JD"]
@@ -138,7 +138,9 @@ cross-border store format. The paperwork is the easy part.
 > A Douyin Global store must be opened by a company registered outside
 > mainland China, with an overseas corporate bank account and a mainland
 > domestic agent; a flagship store needs a home-market trademark
-> certificate valid for more than six months.
+> certificate valid for more than six months. Since May 2026, each own or
+> authorized brand must also prove it is made and sold outside mainland
+> China.
 > Source: Douyin E-commerce (抖音电商), Douyin Global merchant admission rules, July 2026. https://school.jinritemai.com/doudian/web/article/108056
 
 Choose the domestic agent with care.

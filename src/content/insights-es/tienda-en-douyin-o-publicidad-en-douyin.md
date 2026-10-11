@@ -3,7 +3,7 @@ title: "Tienda en Douyin o publicidad en Douyin: qué necesita de verdad una mar
 seoTitle: "Tienda o publicidad en Douyin: qué necesita su marca"
 description: "Tienda o publicidad en Douyin: coste de arranque, carga diaria, contenidos, presencia en China y margen, comparados con las cifras de nuestra calculadora."
 pubDate: "2026-10-06"
-updatedDate: "2026-10-06"
+updatedDate: "2026-10-11"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Douyin", "Tmall", "JD"]
@@ -86,7 +86,7 @@ Elegir a los creadores y prepararles el briefing es trabajo de seeding, y corres
 
 Una marca extranjera vende en Douyin a través de Douyin Global (抖音全球购), el formato de tienda transfronteriza. Los trámites son lo de menos.
 
-> Una tienda de Douyin Global debe abrirla una empresa registrada fuera de China continental, con una cuenta bancaria corporativa en el extranjero y un agente nacional en China continental; una tienda oficial requiere un certificado de marca del país de origen con más de seis meses de validez.
+> Una tienda de Douyin Global debe abrirla una empresa registrada fuera de China continental, con una cuenta bancaria corporativa en el extranjero y un agente nacional en China continental; una tienda oficial requiere un certificado de marca del país de origen con más de seis meses de validez. Desde mayo de 2026, cada marca propia o autorizada debe acreditar además que se fabrica y se vende fuera de China continental.
 > Fuente: Douyin E-commerce (抖音电商), normas de admisión de comerciantes de Douyin Global, julio de 2026. https://school.jinritemai.com/doudian/web/article/108056
 
 Conviene elegir bien al agente nacional.

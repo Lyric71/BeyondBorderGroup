@@ -1,6 +1,6 @@
 # TheChinaPath — Insights (full text)
 
-> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-09.
+> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-11.
 
 ---
 # 11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event
@@ -2166,14 +2166,29 @@ The brands winning in China aren't the ones with the biggest budgets or the most
 If your China strategy still looks the same as it did two years ago, you're not standing still. You're falling behind.
 
 ---
-# 140 Million Shoppers. Imports Are Only 3%.
+# china-cross-border-ecommerce-140-million-shoppers
 URL: https://www.thechinapath.com/insights/china-cross-border-ecommerce-140-million-shoppers
-Published: 2026-07-23
-Updated: 2026-10-09
-Author: Cyril Drouin
-Category: Market Strategy
 
-China now has 140 million cross-border shoppers, but imported goods are barely 3 percent of what the country buys. That gap is the opening.
+---
+title: "140 Million Shoppers. Imports Are Only 3%."
+description: "China now has 140 million cross-border shoppers, but imported goods are barely 3 percent of what the country buys. That gap is the opening."
+pubDate: "2026-07-23"
+updatedDate: "2026-10-09"
+author: "Cyril Drouin"
+column: true
+category: "Market Strategy"
+platforms: ["Tmall", "JD", "Douyin"]
+tags: ["Cross-border e-commerce", "China market entry", "Tmall Global", "JD Worldwide", "Customs"]
+keyTakeaways:
+  - "140 million people in China buy foreign goods through cross-border e-commerce. That is a running total, not a first-half count."
+  - "The channel moved 2.84 trillion yuan (about 397 billion dollars) in 2025, but imports were 570.2 billion yuan of that, roughly 80 billion dollars."
+  - "Goods arriving this way are 3.1 percent of everything China imports."
+  - "Chinese sellers, not foreign brands, drove the 3.3 times overseas warehouse growth."
+  - "Imports into China rose 22.1 percent in the first half of 2026, well ahead of exports at 13.4 percent."
+  - "Two rules decide whether the maths works: a 5,000 yuan cap per order, and a positive list that has not been revised since 2022."
+heroImage: "/Images/insights/china-cross-border-ecommerce-140-million-shoppers.webp"
+heroImageAlt: "A shopper in a Shanghai apartment browsing imported brands on a phone"
+---
 
 At a Beijing press conference on July 22, Sun Meijun, who heads China's
 General Administration of Customs (海关总署), mentioned almost in passing
@@ -2409,6 +2424,7 @@ Figures current as of July 2026, drawn from General Administration of
 Customs releases and Chinese trade press. Tax thresholds and platform fee
 schedules change without much notice, so verify anything you plan to budget
 against.
+
 
 ---
 # China distributor margin and imported product price
@@ -6046,6 +6062,364 @@ per order on all three platforms.
 [Start with cross-border setup](/enter-china/cross-border-setup).
 
 ---
+# What it costs to sell pet food in China
+URL: https://www.thechinapath.com/insights/cost-to-sell-pet-food-in-china
+Published: 2026-10-11
+Updated: 2026-10-11
+Author: TheChinaPath
+Category: E-Commerce
+
+Cat and dog food opens on JD Worldwide for US$5,000 and 2.5% a sale. Tmall Global wants 80,000 RMB. First, China has to register your factory.
+
+Start on JD Worldwide. Cat and dog food opens there for a US$5,000 deposit,
+no annual fee, and 2.5% of each sale plus a 0.9% transaction fee. Tmall
+Global takes the same
+2.5% but wants 80,000 RMB up front. Break-even sits near 1 million RMB of
+year-one sales. Before any of that, China has to register your factory.
+
+Pet food is a factory question before it's a store question. Chinese customs
+treats it as animal feed, and imported feed has to come from a plant customs
+has already registered. A brand can't apply for that itself, and money
+doesn't speed it up.
+
+The prize is real.
+
+> China's urban dog and cat owners spent 312.6 billion RMB in 2025, up 4.1%,
+> and food took 53.7% of it.
+> Source: CCTV.com (央视网), on the 2026 China Pet Industry White Paper
+> (《2026年中国宠物行业白皮书》), January 2026.
+> https://business.cctv.com/2026/01/05/ARTIdmv2AWmVeRVodaZYLOvQ260105.shtml
+
+Imports are going the other way. They fell in 2025, and Chinese brands now
+crowd the top of the festival charts.
+
+> China imported US$474.1 million of packaged pet food in 2025, down 5.2%
+> from 2024, according to China Customs.
+> Source: USDA Foreign Agricultural Service, ATO Shanghai, Pet Food Market
+> Update 2026 (GAIN CH2026-0046), April 2026.
+> https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Pet+Food+Market+Update+2026_Shanghai+ATO_China+-+People%27s+Republic+of_CH2026-0046.pdf
+
+> Of the pet brands that passed 10 million RMB in sales on the first day of
+> Tmall's Double 11 in 2025, 68% were Chinese.
+> Source: Huanqiu.com (环球网), via Sina Finance, November 2025.
+> https://finance.sina.com.cn/roll/2025-11-08/doc-infwsynp1202307.shtml
+
+## What it costs to open a pet food store in China
+
+<div class="table-scroll">
+
+| Cat and dog food, first year (RMB) | Tmall Global | JD Worldwide | Douyin cross-border |
+|---|---|---|---|
+| Security deposit, refundable | 50,000 | 35,500 (US$5,000) | 5,000 |
+| Annual platform fee | 30,000 | none | none |
+| Commission on each sale | 2.5% | 2.5% | 3.5% |
+| Other fee on each order | 1% payment fee | 0.9% transaction fee | 4.6% on Douyin Mall and Doubao orders |
+| Cash in before the first sale | 80,000 | 35,500 | 5,000 |
+
+</div>
+
+> Deposits, annual fees and per-order fees for cat and dog food on the three
+> cross-border platforms, with JD's dollar deposit at 7.1 RMB.
+> Source: TheChinaPath calculator data, October 2026.
+
+All three platforms put pet food in a low band. Tmall Global charges 2.5% on
+dog food, cat food and treats alike, with the 30,000 RMB annual fee that
+food categories pay.
+
+> 犬主粮, 猫主粮, 狗零食 and 猫零食 pay a 2.5% technical service fee and a
+> 30,000 RMB annual fee.
+> Source: Tmall Global (天猫国际), 《天猫国际各类目年费、技术服务费率》,
+> effective September 9, 2026.
+> https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625
+
+JD Worldwide matches the 2.5% on dry and wet food but charges 5% on dog and
+cat treats. It quotes its deposit in dollars and bills no annual fee.
+
+> 猫狗主粮 (cat and dog staple food) pays a 2.5% operating support fee plus a
+> 0.9% transaction fee, and a brand flagship deposits US$5,000.
+> Source: JD Worldwide (京东全球购), category fee standard, revised September
+> 24, 2026, effective October 1, 2026.
+> https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
+
+Douyin costs least to open and can cost the most per order. Its deposit follows
+last month's sales, from 500 RMB to a top tier of 5,000 RMB. Its base rate on
+dog and cat food is 3.5%, and orders that arrive through the Douyin Mall app
+or Doubao (ByteDance's AI assistant app) pay another 4.6%. That's 8.1% on
+those orders.
+
+> 狗食品 and 猫食品 carry a 3.5% base technical service fee and a 4.6%
+> supplementary fee on orders from specified channels (the Douyin Mall app
+> and Doubao).
+> Source: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》, July
+> 15, 2026, with 《【全球购】招商管理规则》 5.2.2.
+> https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+
+> Douyin Global's base deposit is 500 RMB for a prior-month paid GMV up to
+> 50,000 RMB, 2,000 RMB up to 100,000 RMB, and 5,000 RMB above that.
+> Source: Douyin E-commerce (抖音电商), 《【全球购】保证金管理规范》, latest
+> revision effective June 5, 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/107821
+
+## The route in: a registered plant first, a store second
+
+Here's the rule that sets your timeline. Under the customs regulation on
+imported feed, pet food and chews count as feed. Feed has to come from a
+plant on the customs register, and your company can't put itself on it. The
+exporting country's own authority reviews the plant and recommends it to
+China. Registration then runs five years.
+
+> Imported feed must come from a registered overseas producer, recommended
+> to the General Administration of Customs by the exporting country's
+> competent authority after its own review. Registration is valid for five
+> years. The definition of feed includes 宠物食品及咬胶 (pet food and chews).
+> Source: General Administration of Customs (海关总署), Measures for the
+> Inspection, Quarantine and Supervision of Imported and Exported Feed and
+> Feed Additives, as amended by Decree No. 262, March 2023, arts. 10 to 13
+> and 68.
+> https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=97519
+
+Your country also needs a pet food protocol with China, and each protocol
+spells out the paperwork. When the UK got access in November 2025, every lot needed a
+health certificate. The outer packaging needed the plant's name, its
+registration number, and Chinese wording saying the goods are bound for
+China and are for pets only.
+
+> Pet food exported from the UK must come from plants registered with China
+> on the UK's recommendation, carry a health certificate with every lot, and
+> show the plant name, its registration number, 输往中华人民共和国 and
+> 仅用于宠物食用 on the outer packaging.
+> Source: General Administration of Customs Announcement 2025 No. 230
+> (海关总署公告2025年第230号), November 2025, via the Ministry of Commerce.
+> https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2026/art_2c3ecb1ff8354d818fe48d7d56539092.html
+
+So if your contract manufacturer has never shipped to China, you're waiting
+on two governments. No budget shortens that.
+
+Bonded cross-border doesn't change it. Both pet food lines sit on the
+cross-border retail import list, but only as bonded stock, so you can't
+ship single bags by direct mail from Europe.
+
+> 23091010 (retail-packed dog or cat food, canned) and 23091090 (other
+> retail-packed dog or cat food) are on the cross-border retail import list,
+> 仅限网购保税商品 (bonded online stock only).
+> Source: Ministry of Finance and 12 other departments, Announcement 2019
+> No. 96, December 2019.
+> http://gss.mof.gov.cn/gzdt/zhengcefabu/201912/t20191227_3451448.htm
+
+The 2018 cross-border rules waive the first-import registration that general
+trade demands. Quarantine is the exception.
+
+> Cross-border retail imports are supervised as personal-use goods without
+> first-import permit, registration or filing requirements, except for goods
+> from epidemic areas whose import is suspended. Customs applies necessary
+> quarantine before sale.
+> Source: Ministry of Commerce and five other bodies, 商财发〔2018〕486号,
+> November 2018.
+> https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5437823.htm
+
+Customs reads pet food straight into that exception.
+
+> Customs applies quarantine access control to the countries and products
+> allowed to export pet food to China, and imported pet food must come from
+> registered overseas producers.
+> Source: Chengdu Customs (成都海关), via the Shanghai Cross-border
+> E-commerce Association (上海跨境电子商务行业协会), November 2023.
+> https://www.scea.co/trends/show/id/2552.html
+
+Tax is the good news. Pet feed sits in China's 9% VAT band, so a
+cross-border shopper pays 70% of that: 6.3%, with no duty and no
+consumption tax.
+
+> 宠物饲料，属于饲料的征税范围 (pet feed falls within the scope of feed),
+> which the VAT Law taxes at 9%.
+> Source: Ministry of Finance and State Taxation Administration (财政部
+> 税务总局), Announcement 2026 No. 9, Annex 1, January 2026.
+> https://hainan.chinatax.gov.cn/xxgk_6_1/30163239.html
+
+> Within the limits, cross-border retail imports carry a 0% tariff, and
+> import VAT and consumption tax are levied at 70% of the statutory amount.
+> Source: Ministry of Finance (财政部), 财关税〔2016〕18号, March 2016.
+> http://www.mof.gov.cn/gp/xxgkml/gss/201603/t20160324_2510682.htm
+
+The limits are 5,000 RMB an order and 26,000 RMB a shopper a year. Two big
+bags fit with room to spare.
+
+> The single-transaction limit for cross-border retail imports is 5,000 RMB
+> and the annual limit 26,000 RMB.
+> Source: Ministry of Finance, General Administration of Customs and State
+> Taxation Administration, 财关税〔2018〕49号, November 2018.
+> https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5440499.htm
+
+General trade stacks more on top. A provisional 10% duty in 2026, then 9%
+VAT. And complete foods need a product registration from the Ministry of
+Agriculture and Rural Affairs, filed through a Chinese agent or a China
+office, with verification testing that can take three months. Treats are
+exempt.
+
+> Retail-packed dog or cat food (23091010 and 23091090) carries a 15%
+> most-favored-nation duty and a 10% provisional rate for 2026.
+> Source: State Council Tariff Commission (国务院关税税则委员会),
+> Announcement 2025 No. 11, Annex 1, December 2025.
+> https://gss.mof.gov.cn/gzdt/zhengcefabu/202512/P020251229510521217364.pdf
+
+> The ministry reviews the dossier within 10 working days, the testing
+> laboratory completes verification testing within three months, and the
+> import registration certificate is valid for five years.
+> Source: Ministry of Agriculture (农业部), Administrative Measures for the
+> Registration of Imported Feed and Feed Additives, arts. 9, 10 and 14, as
+> amended November 2017.
+> https://www.moa.gov.cn/gk/nyncbgzk/gzk/202210/t20221013_6413266.htm
+
+> Imported 宠物配合饲料 (complete pet food) and 宠物添加剂预混合饲料 (pet
+> additive premix) need an import registration certificate. Other pet feed,
+> treats included, does not.
+> Source: Ministry of Agriculture and Rural Affairs (农业农村部), Pet Feed
+> Administrative Measures, Announcement No. 20, arts. 2 and 14, republished
+> June 2025.
+> https://www.moa.gov.cn/ztzl/sqxzjcgs/xzjcbz/202506/t20250630_6475260.htm
+
+The Chinese label for general trade is its own small project. It names the
+product type in set words (全价宠物食品 for a complete food, 宠物零食 for a
+treat). It also carries the guaranteed analysis, the registration number,
+the country of origin in Chinese and the Chinese company selling it.
+
+> Imported complete pet food and premix labels must show the registration
+> number matching the import certificate, the producer and site, the
+> country of origin in Chinese, and the name, address and contact details of
+> the product's registered sales entity in China.
+> Source: Ministry of Agriculture and Rural Affairs (农业农村部), Pet Feed
+> Labeling Regulations (《宠物饲料标签规定》), arts. 3, 5 and 15, republished
+> June 2025.
+> https://www.moa.gov.cn/ztzl/sqxzjcgs/xzjcbz/202506/t20250630_6475269.htm
+
+Rules above checked October 2026.
+
+## What one order of kibble actually costs
+
+Start with a real shelf price.
+
+> A 5.4 kg bag of an imported premium cat kibble sold for 502.55 RMB after
+> coupons on Tmall Global's own direct store.
+> Source: SMZDM (什么值得买), January 2025.
+> https://www.smzdm.com/p/139914873/
+
+So take three baskets around that bag: a 1.8 kg bag at 180 RMB, the 5.4 kg
+bag at 500, and two of them at 1,000.
+
+<div class="table-scroll">
+
+| Per 100 parcels shipped, JD Worldwide (RMB) | 1.8 kg bag, 180 | 5.4 kg bag, 500 | Two 5.4 kg bags, 1,000 |
+|---|---|---|---|
+| Orders kept at a 5% return rate | 95 | 95 | 95 |
+| Commission at 2.5% | 428 | 1,188 | 2,375 |
+| Transaction fee at 0.9% | 154 | 428 | 855 |
+| Pick, pack and last mile | 1,500 | 1,500 | 1,500 |
+| Return handling and the leg back | 130 | 130 | 130 |
+| Cost per kept order | 23 | 34 | 51 |
+| Share of the order value | 12.9% | 6.8% | 5.1% |
+| Tax the shopper pays at 6.3% | 11 | 32 | 63 |
+
+</div>
+
+> Cost per kept order for three pet food baskets on the per-order defaults
+> in the JD Worldwide model (4 RMB pick and pack, 11 RMB last mile, 15 RMB
+> return handling, 5% returns). Tmall Global lands within 1 RMB of each
+> figure.
+> Source: TheChinaPath calculator data, October 2026.
+
+The small bag is the trap. Couriers and the warehouse take 1,630 RMB of
+every hundred parcels whatever's in the box, which is 74% of the store cost
+on the 180 RMB bag. On the two-bag order it falls to a third.
+
+One honest caveat. Our calculator prices the parcel, not the kilo, at 11 RMB
+for the last mile. A 10.8 kg box costs more to deliver than that. Put your
+warehouse's real quote for the heavy box into the shipping field before you
+believe the right-hand column.
+
+Even so, the shape holds. Pet food wants a big bag and a two-bag offer.
+
+Break-even, at the 500 RMB bag on a 50% gross margin: each kept order leaves
+about 216 RMB after store cost. Against a 25,000 RMB store build over three
+years and a partner retainer at the calculator's default 35,000 RMB a month,
+JD Worldwide needs about 2,000 kept orders. That's roughly 1 million RMB of
+year-one sales, near US$140,000, before advertising. Tmall Global's annual
+fee pushes it to about 2,130 orders.
+
+## Which platform first
+
+JD Worldwide, for a first year. At every basket in our model it lands within
+1 RMB of Tmall Global per order. What it doesn't ask for is 44,500 RMB of
+first-year cash: 14,500 RMB more deposit and the 30,000 RMB annual fee.
+
+Two things flip it. If your year-one plan runs to several million RMB, the
+annual fee shrinks to a rounding error. At that size we'd put an imported
+brand on Tmall Global, because in our experience it's the store a Chinese
+distributor pulls up first when you start talking. Go there.
+
+And if you can film in Chinese and have a host, Douyin opens for 500 to 5,000 RMB.
+Pet is growing fast there.
+
+> Douyin e-commerce's pet category GMV has risen 95% year on year since the
+> start of 2025, and new brands' GMV 75%.
+> Source: Douyin E-commerce (抖音电商), 2025 Pet Consumption Trend Report,
+> via Paidai (电商派), August 2025.
+> https://www.pai.com.cn/p/01k3ga6n37f0qszmxpfc0yr77g
+
+Watch the channel fee, though. If every order on the 500 RMB bag came
+through Douyin Mall at 8.1%, store cost would run about 58 RMB an order.
+
+None of it matters if your plant isn't registered. Then no platform is
+first.
+
+## What we have and haven't done
+
+We haven't run a pet food store or a pet food distributor in China. This
+page is built from the platforms' rule pages, the regulators' texts and our
+own calculators.
+
+## Run your own numbers
+
+[Run the JD Worldwide setup and run calculator](/tools/jd-worldwide-setup-and-run)
+with "Cat and dog food" selected. Then set the cross-border tax to 6.3%,
+because the default is the 9.1% general rate, and type your warehouse's
+quote for the heavy box into last-mile shipping.
+
+For the Tmall Global side, the
+[Tmall Global setup and run calculator](/tools/tmall-global-setup-and-run)
+has no pet food row yet. Pick Custom and enter 50,000 RMB, 2.5% and 30,000
+RMB. For the general-trade route, the importer and the agriculture ministry
+registration sit with [distribution in China](/enter-china/distribution).
+
+## Questions we get asked
+
+**Can I sell pet food in China through cross-border without registering my
+factory?**
+
+No. Customs applies quarantine access to pet food on every route, so the
+product has to come from an approved country and a plant on the customs
+register. The 2018 cross-border waiver of first-import registration stops
+at quarantine. Your own government recommends the plant to China, and that
+step sets your timeline.
+
+**What tax does a Chinese shopper pay on imported pet food?**
+
+6.3% on the cross-border route. Pet feed is taxed at 9% VAT in China, and
+cross-border shoppers pay 70% of it, with no duty and no consumption tax. On
+a 500 RMB bag that's about 32 RMB. General trade is heavier: a 10%
+provisional duty in 2026, then the full 9% VAT.
+
+**Do pet treats need the same paperwork as kibble?**
+
+Partly. Treats count as feed, so the plant still needs customs
+registration. But the agriculture ministry's import registration covers
+complete foods and premixes only, so treats skip it under general trade.
+On JD Worldwide they pay 5% commission against 2.5% for kibble.
+
+Send us your plant's China registration number, or tell us it doesn't
+have one yet, and we'll map the route and the year-one cost on all three
+platforms. [Start with cross-border setup](/enter-china/cross-border-setup)
+
+---
 # digital-human-the-rise-of-ai-driven-live-streaming-in-china
 URL: https://www.thechinapath.com/insights/digital-human-the-rise-of-ai-driven-live-streaming-in-china
 
@@ -7032,6 +7406,240 @@ clawed back. Ask your agency to be paid on the same clock.
 [Get a shortlist of Douyin Partners that sell in your category](/contact#shortlist)
 
 ---
+# Douyin cross-border brand verification: what it changes for your partner
+URL: https://www.thechinapath.com/insights/douyin-cross-border-brand-verification
+Published: 2026-10-11
+Updated: 2026-10-11
+Author: TheChinaPath
+Category: Compliance & Setup
+
+Douyin cross-border brand verification asks brands to prove they are made and sold abroad. Your partner can file it, but only you hold the evidence.
+
+Since May 2026, Douyin Global, Douyin's cross-border store platform, asks
+every brand to prove two things before it sells: the goods are made outside
+mainland China, and they are sold outside it. Your Douyin Partner can build
+and file that proof. Only you hold the evidence, so the partner earns its fee in
+operations from here on.
+
+Douyin cross-border brand verification is the platform's answer to what
+Chinese media call 假洋牌, fake foreign brands: products made in China,
+given an overseas name and sold as imports. The check covers both a
+merchant's own brands and the brands it sells under authorization.
+
+For a foreign brand that works through a Douyin Partner (DP), it moves one
+job across the table. Until May, the brand's part of an application was the
+home-market trademark certificate and, for a licensee, an authorization
+letter. The file now needs factory contracts, export paperwork and proof of
+shelf sales abroad. Those sit with you.
+
+Every rule and figure below was checked against its source on October 11,
+2026.
+
+## The rule and its dates
+
+Douyin Global (抖音全球购) opened the change for comment on April 28 and
+posted it on May 6.
+
+> Douyin Global began verifying overseas production and overseas
+> circulation for merchants' own and authorized brands. The notice ran from
+> May 6 to May 12, 2026, with the rule expected to take effect on May 13.
+> Fake overseas backgrounds, spliced documents and staged videos are banned,
+> and penalties run from restricted trading and delisting to store
+> suspension and removal.
+> Source: Douyin E-commerce (抖音电商), notice revising the Douyin Global admission rules, May 2026. https://school.jinritemai.com/doudian/web/articlev0/aJikTPY3ctGa
+
+Douyin announced the launch on May 26. Existing stores aren't all checked
+at once.
+
+> Douyin checks merchants in batches. A merchant that receives a notice has
+> 30 natural days to submit the overseas production and circulation proof.
+> Late, incomplete or false files lead to delisting and restricted store
+> functions, up to removal of the store.
+> Source: China News Service (中国新闻网), carried by Sina Finance, May 2026. https://finance.sina.cn/2026-05-26/detail-inhzffsk2883470.d.html
+
+The requirement now sits in the admission rules themselves, clause 4.2.2,
+in the revision that took effect on July 15, 2026. New stores file the
+proof with their application. For a store that's already trading, the
+clock starts when Douyin's notice lands, and 30 days goes fast when the
+factory is on another continent.
+
+## What Douyin's cross-border brand verification asks for
+
+Douyin splits the file in two. Production proof shows a qualified factory
+abroad makes the goods. Circulation proof shows they sell abroad and
+entered China lawfully.
+
+<div class="table-scroll">
+
+| Requirement | Evidence Douyin accepts | What fails | Who prepares it | Timing |
+|---|---|---|---|---|
+| Factory identity | Registered name and address, plus the factory's official business registration | Details that differ from the registration | Brand supplies, DP uploads | At application, or within 30 days of a notice |
+| Production license | The local license for that product category, such as GMP | A license whose scope doesn't cover the goods | Brand, from the factory | Same |
+| Production agreement | Signed directly by the brand (or an affiliate, with proof of ownership) and the factory, naming the brand | A maker on the pack that differs from the agreement | Brand | Same |
+| Origin and photos | Certificate of origin from an official body; real photos of product, pack, brand mark and production details | Spliced or staged images | Brand or DP | Same |
+| Free sale certificate | Issued by an official body in the country of origin, for sale outside mainland China | A certificate from a private body | Brand | Same |
+| Customs declaration | One from the last 90 days, with goods, quantity, origin, destination, date and number, on a sensible route | Older than 90 days; a transit port with no first-leg shipping proof | Brand or its forwarder | Under 90 days old when filed |
+| One proof of sales | Wholesale invoices, or three overseas stores on video and photo with receipts, or a live listing on a known overseas marketplace | Wholesale invoices for health supplements or traditional tonics | Brand; DP can brief the filming | Invoices and receipts under 90 days old |
+
+</div>
+
+> The table follows Douyin's verification guide, which the admission rules
+> of July 15, 2026 link from clause 4.2.2.
+> Source: Douyin E-commerce (抖音电商), overseas production and circulation verification guide, April 2026. https://school.jinritemai.com/doudian/web/article/aJigvdmNLoZw
+
+Read the last column again. Two rows expire. A declaration dated in
+mid-October is too old by mid-January.
+
+## What counts as overseas sales
+
+Douyin accepts one of three proofs, and each has a trap.
+
+Wholesale invoices are the easiest if a distributor buys from you at home.
+They must show the brand, quantities, amounts, both parties in full and a
+date inside the last 90 days. Health supplement and traditional tonic
+brands can't use this route at all.
+
+The store route takes the most legwork. You need three different shops.
+At least one has to be a single unbroken video that walks in from the
+street, past the shelf and price tag, through the checkout scan and on to
+the receipt printing. Two more shops need photos of the entrance and the
+shelf, and every shop needs a real receipt under 90 days old.
+
+Online counts too, if the listing is a main product page on a well-known
+general or specialist marketplace abroad, in stock, with recent sales and
+reviews. The rule names marketplaces, so a brand's own web shop doesn't fit
+the wording. A brand that sells nowhere outside China has no route in.
+
+Douyin's May launch notice also listed warning signs for creators and
+agencies. One was goods shipped into China's bonded warehouses through Hong
+Kong with no complete logistics record. If your stock moves through a
+regional hub, ask your forwarder for the first-leg paperwork now, before
+the declaration row turns into a problem.
+
+## What your Douyin Partner should and should not do
+
+The file work stays with the DP as a routine job, and it shouldn't be what
+you pay a premium for. A good one runs a gap check against the table
+before Douyin's notice arrives, keeps a calendar for the two
+documents that expire, translates what needs translating and briefs the
+store filming so the video isn't shot twice.
+
+The DP or the bonded warehouse often doubles as the store's domestic agent,
+the mainland company Douyin requires, which shares liability for the store.
+
+> A Douyin Global store needs a mainland entity carrying joint liability,
+> the domestic agent, and each own or authorized brand must file proof of
+> overseas production and overseas circulation.
+> Source: Douyin E-commerce (抖音电商), Douyin Global admission rules, July 2026. https://school.jinritemai.com/doudian/web/article/108056
+
+Douyin has put agencies on notice as well.
+
+> Douyin asked creators and operating agencies to check a cross-border
+> brand's qualifications before working with it, and to turn down products
+> with doubtful, contradictory or untraceable papers.
+> Source: China News Service (中国新闻网), carried by Sina Finance, May 2026. https://finance.sina.cn/2026-05-26/detail-inhzffsk2883470.d.html
+
+So a DP that offers to "sort out" a missing factory agreement, or to stage
+the shop video, is offering to put your store on the removal list.
+
+The cost of getting this wrong lands on the brand.
+
+> At our Douyin calculator's defaults, a cross-border store run by a DP
+> ties up 430,000 RMB before its first order, 405,000 of it refundable.
+> The model's DP retainer is a fixed 30,000 RMB a month, live products or
+> not. At 2 million RMB of yearly sales, one month offline is
+> about 166,700 RMB of sales that never happen.
+> Source: TheChinaPath calculator data, October 2026. https://www.thechinapath.com/tools/douyin-cost-calculator
+
+You can run those numbers for your own category in the
+[Douyin cost calculator](/tools/douyin-cost-calculator).
+
+If the partner opened the store under its own overseas company, the file
+still needs your documents, and you bargain from a weaker spot. Our piece on
+[who owns your Tmall store and your Douyin shop](/insights/tmall-partner-store-ownership)
+covers what to sign before that happens.
+
+Then judge a DP on what happens after the file clears: the live room and
+the customer service desk. The
+[guide to finding a Douyin Partner](/compass/find-a-douyin-partner-in-china)
+lists the questions to ask.
+
+## Tmall Global's parallel rules
+
+Tmall Global, Alibaba's marketplace for imported goods, asks for much of
+the same evidence, but through a program brands join.
+
+> Tmall Global's 全球探源计划 (Global Origin Tracing), started in May
+> 2026, asks enrolled brands for proof of origin, free sale or market
+> approval, and visual proof of real overseas circulation: an unbroken
+> video in a large overseas retailer or pharmacy, or sales screenshots from
+> a known overseas marketplace. Supplement factories need GMP, TGA or NSF
+> certification. More than 300 overseas brands have signed up.
+> Source: Global Network (环球网), carried by Tencent News, September 2026. https://news.qq.com/rain/a/20260915A091CT00
+
+The binding rules sit in Tmall Global's merchant qualification standards,
+and they hit food hardest.
+
+> Since May 27, 2026, every Tmall Global food category, plus infant
+> formula and maternal nutrition, requires a mainland company's business
+> license, its food business license, its legal representative's ID and a
+> cross-border food entrusted-operation agreement.
+> Source: Tmall Global (天猫国际), notice on the merchant qualification standards, May 2026. https://rule.tmall.hk/?type=detail&ruleId=20010174&cId=636
+
+That mainland company is often your importer or your partner, so check who
+signs that agreement and what your contract says when you part ways.
+One supplement category gets a closer look still.
+
+> For NAD+ supplements, Tmall Global's current standards, in force since
+> September 28, 2026, add the factory's production license, the
+> brand-factory production contract and proof of home-market sales, which
+> Tmall's overseas staff check on site.
+> Source: Tmall Global (天猫国际), merchant qualification standards, September 2026. https://rule.tmall.hk/?type=detail&ruleId=11000442&cId=624
+
+On October 11, 2026, Tmall Global's public rule center carried no
+store-wide check to match Douyin's. If you sell on both, build one evidence
+file and refresh it every quarter.
+
+## Frequently asked questions
+
+**Does Douyin's dual verification apply to stores that are already open?**
+
+Yes. Douyin checks existing Douyin Global stores in batches and sends each
+one a notice. From that notice, the merchant has 30 natural days to file
+the production and circulation proof. Missing the deadline, or filing
+something false, can get products delisted and, at worst, the store
+removed.
+
+**Can my Douyin Partner supply the documents for me?**
+
+It can gather and translate them and handle the upload. It can also brief
+the overseas store filming. What it can't do is create them. The factory agreement must be signed
+directly by your company and the factory, and the free sale certificate
+comes from an official body at home. A partner that offers to produce
+those papers is a risk to your store.
+
+**My brand sells only online outside China. Can it qualify?**
+
+Possibly. Douyin accepts a main product listing on a well-known general or
+specialist marketplace abroad, if it is in stock and shows recent sales and
+reviews. You still need the production proof, the free sale certificate
+and a customs declaration from the last 90 days. A brand with no sales
+outside China at all can't pass.
+
+**Does Tmall Global ask for the same proof?**
+
+Partly. Its Global Origin Tracing program asks enrolled brands for very
+similar evidence, including shop videos. Its binding rules add a mainland
+licensed company and an entrusted-operation agreement for every food
+category since May 27, 2026, and factory and sales proof for NAD+
+supplements. One file, kept fresh, covers most of both.
+
+Once your evidence file is ready, [Compass](/compass) finds the Douyin
+Partners that already sell your category.
+
+[Get a shortlist of Douyin Partners for your category](/contact#shortlist)
+
+---
 # douyin-live-commerce-2025-store-led-livestream-strategy
 URL: https://www.thechinapath.com/insights/douyin-live-commerce-2025-store-led-livestream-strategy
 
@@ -7533,7 +8141,7 @@ year less at a 5% rate.
 # Douyin store vs Douyin ads: which one you actually need
 URL: https://www.thechinapath.com/insights/douyin-store-vs-douyin-ads
 Published: 2026-10-06
-Updated: 2026-10-06
+Updated: 2026-10-11
 Author: TheChinaPath
 Category: Platforms
 
@@ -7659,7 +8267,9 @@ cross-border store format. The paperwork is the easy part.
 > A Douyin Global store must be opened by a company registered outside
 > mainland China, with an overseas corporate bank account and a mainland
 > domestic agent; a flagship store needs a home-market trademark
-> certificate valid for more than six months.
+> certificate valid for more than six months. Since May 2026, each own or
+> authorized brand must also prove it is made and sold outside mainland
+> China.
 > Source: Douyin E-commerce (抖音电商), Douyin Global merchant admission rules, July 2026. https://school.jinritemai.com/doudian/web/article/108056
 
 Choose the domestic agent with care.
@@ -14389,6 +14999,254 @@ Protection Law, the TP must return or delete it.
 [Get a shortlist of Tmall Partners that run stores in your category](/contact#shortlist)
 
 ---
+# Can the same agency be your Tmall Partner and Douyin Partner?
+URL: https://www.thechinapath.com/insights/tmall-partner-douyin-partner-same-agency
+Published: 2026-10-11
+Updated: 2026-10-11
+Author: TheChinaPath
+Category: E-Commerce
+
+One agency can run your Tmall store and Douyin shop if its live-room team has its own Douyin results. How to check that team and write the contract.
+
+Yes, when the agency has a separate live-room team with its own Douyin
+results in your category. Running a Tmall Global store and running a Douyin
+live room are different trades. One contract is fine, but judge the Douyin
+side on its own evidence: the people who would run your live room and the
+stores they already sell for.
+
+*Douyin's rules and the pricing regulation checked October 11, 2026.*
+
+Your Tmall Partner (TP), the agency that runs your store on Tmall Global,
+Alibaba's cross-border marketplace, says it can run Douyin for you too. A Douyin Partner (DP) does
+that job on Douyin, ByteDance's short-video app: the shop, the live room, the
+ads and the customer service desk.
+
+One agency for both sounds tidy: one contact and one monthly report. It can
+also save real money, because the fixed fees are large.
+
+> At default settings, a Tmall Partner costs 770,000 RMB a year (35,000 RMB
+> a month plus 10% of 3.5 million RMB in sales) and a Douyin Partner 460,000
+> RMB (30,000 RMB a month plus 5% of 2 million RMB). Together: 1.23 million
+> RMB, of which 780,000 RMB is retainers.
+> Source: TheChinaPath calculator data, October 2026.
+
+So the offer deserves a fair hearing. The test is whether the Douyin half
+of the agency exists yet.
+
+## Why Tmall agencies are pitching Douyin now
+
+On Douyin, brands' own live rooms now carry about half of livestream
+sales. Somebody has to staff those rooms, and Tmall-first agencies want the
+work.
+
+> During the 618 festival in 2025, half of the sales Douyin livestreams
+> drove came from brands' own store broadcasts, and nearly 70% of merchants
+> with more than 10 million RMB of livestream sales used them.
+> Source: 21st Century Business Herald (21世纪经济报道), January 2026.
+> https://www.21jingji.com/article/20260130/herald/50ea314a64d44c9664cf2c6a0132a9cc.html
+
+Douyin makes room for those operators. Its program for operating agencies
+works by invitation, and a Tmall five-star operator rating counts as
+supporting proof in the application. Then the bar goes up.
+
+> Douyin's operating agencies need more than 20 staff, more than 12 of them
+> on a Douyin e-commerce team, an office of at least 100 square meters and
+> a 100,000 RMB deposit. An agency serving mainly cross-border stores must
+> ship at least 500,000 RMB a quarter through the stores it is bound to.
+> Source: Douyin E-commerce (抖音电商), operating service provider rules,
+> July 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
+
+That quarterly bar is about to quadruple.
+
+> A revision posted October 7, 2026, and due in force October 15 puts
+> agencies whose main business is luxury or cross-border at 2 million RMB
+> of shipped sales a quarter. Team size and the deposit stay the same.
+> Source: Douyin E-commerce (抖音电商), notice revising the operating
+> service provider rules, October 2026.
+> https://school.jinritemai.com/doudian/web/article/aJr9FiM4w6mc
+
+A Tmall rating won't tell you much about any of this. Tmall Global scores
+its partners mostly on store size.
+
+> Tmall Global's 2026 partner star list weights store scale and growth at
+> 77%, service experience at 20% and content and innovation at 3%.
+> Source: Tmall Global service provider market (天猫国际服务市场), FY26
+> star list, April 2026.
+> https://globaltp.tmall.com/import_tp/TP/informationDetail?id=821
+
+Content is 3% of a Tmall star. On Douyin, it's most of the job.
+
+## Tmall Partner and Douyin Partner: same agency or two
+
+<div class="table-scroll">
+
+| Issue | One agency for both | Two agencies | What to check |
+|---|---|---|---|
+| Coordination | One festival calendar and one stock plan | Two calendars to reconcile; stock can be promised twice | Who books bonded-warehouse stock for each store |
+| Pricing between channels | One team sets both price ladders; it can also tilt sales toward the better-paid channel | Each agency discounts its own channel to hit its own target | A written price floor per channel, per product |
+| Cost (model defaults) | Room to negotiate below the 65,000 RMB a month that two retainers cost | 65,000 RMB a month in retainers, 1.23 million RMB a year with commission | Which commission rate applies to Douyin sales (10% vs 5% is 100,000 RMB at 2 million RMB) |
+| Accountability | One phone number when sales dip, and one agency to blame both stores on | Clear blame per store; arguments over who caused a dip | Separate KPIs and a separate exit right for each store |
+| Douyin capability | Depends on whether a live-room team already exists | A DP that works only on Douyin | More than 12 named Douyin staff and live rooms you can watch |
+
+</div>
+
+> Default fees from the Tmall Global calculator (35,000 RMB a month, 10%)
+> and the Douyin calculator (30,000 RMB a month, 5%); the 100,000 RMB gap
+> is our arithmetic on 2 million RMB of Douyin sales.
+> Source: TheChinaPath calculator data, October 2026.
+
+Read the cost row twice. A combined agency may quote one commission
+rate for everything. If that rate is the Tmall one, the Douyin store pays
+for the convenience.
+
+## Price conflict between the two stores
+
+Douyin sells through live rooms, and live rooms run on offers: a live-only
+price, a gift with purchase, a coupon that ends with the
+broadcast. A Tmall Global store holds the everyday price a shopper finds by
+searching for your brand.
+
+Shoppers see both prices, and the customer service desk on the dearer store
+hears about it.
+
+And the law now keeps the platforms out of it.
+
+> A merchant selling on several platforms sets its own prices. A platform
+> may not force it to price no higher there than on other channels, or to
+> switch on automatic price-matching, through fees, deposits, traffic
+> limits, search demotion or delisting. In force April 10, 2026.
+> Source: National Development and Reform Commission, State
+> Administration for Market Regulation and Cyberspace Administration of
+> China (国家发展改革委、市场监管总局、国家网信办), Internet platform
+> pricing rule, December 2025.
+> https://www.cac.gov.cn/2025-12/20/c_1767870953332182.htm
+
+That leaves the price gap between your two stores as a decision you make,
+or one your agencies make for you. Two agencies on commission will each
+push their own channel, and the cheaper store tends to win the comparison.
+One agency removes the fight, but it also controls both prices. If it earns
+10% on Tmall sales and 5% on Douyin, you'd want to know which store it is
+steering shoppers toward.
+
+The fix is the same either way. Write a price ladder per product and per
+channel (list, everyday, festival, live-only floor) into the contract, and
+read both stores against it each month.
+
+## How to check the Douyin team
+
+Ask for what Douyin asks for. Under the July rules, its admission file
+includes a stamped organization chart, the staff roster, proof that staff
+are on the company's social insurance, and at least two selling cases
+covering live rooms, short video, creator sales and the shop. An agency that
+sends those to Douyin can send them to you.
+
+Then go further.
+
+**Names on the Douyin team.** Ask who would host your live room and who
+would buy its paid traffic. If those names also appear on the Tmall team,
+you're buying one team stretched over two jobs.
+
+**Douyin client stores in your category.** A store counts toward an
+agency's Douyin record only when it is bound to the agency through an order
+in Douyin's service market. Ask for the bound stores, then open their live
+rooms. Douyin files padding under false transactions.
+
+> Douyin's operating-agency code counts binding stores the agency doesn't
+> actually serve, to pass assessments or ratings, as a bottom-line
+> violation: 120 points at once, which means removal and loss of the whole
+> deposit.
+> Source: Douyin E-commerce (抖音电商), operating service provider
+> management code, July 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aJ5N3Pxir67C
+
+Check the category, too. Douyin's service market lists brand live-room
+service as its own category, apart from full brand operations, and keeps
+cross-border operations in a third, for agencies serving Douyin Global, the
+platform's cross-border storefront. Ask which categories the agency holds.
+
+And sit in the studio for one live broadcast before you sign.
+
+Our guide to [Douyin partner ratings](/insights/tmall-partner-rating-douyin-service-provider)
+explains the Diamond, Gold and Silver badges and what they leave out.
+
+## How to write the contract, for one agency or two
+
+**One agency.** Sign a master agreement with two schedules, one per store.
+Each schedule names its own team and its own KPIs, and each can be ended on
+its own notice. That way a weak Douyin year doesn't force you to move a
+Tmall store that works.
+
+Give each store its own access. On Tmall, the agency should work through
+sub-accounts under your main account.
+
+> Taobao and Tmall sellers can set sub-accounts for third-party service
+> providers, grant permissions, query operation logs and switch the
+> accounts off.
+> Source: Taobao (China) Software Co. (淘宝（中国）软件有限公司),
+> sub-account license, June 2023.
+> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall201802012028_72666.html
+
+On Douyin, the agency binds to your store through a service-market order,
+and some take their commission through the platform's own revenue split.
+Douyin wants the scope of that split spelled out.
+
+> Douyin treats it as a bottom-line violation when an agency describes its
+> commission as covering specified product links while the real split
+> covers the whole store, every live stream, every short video or every
+> product card.
+> Source: Douyin E-commerce (抖音电商), operating service provider
+> management code, July 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aJ5N3Pxir67C
+
+Name the scope in your contract too: which product links, and whether
+creators' sales count.
+
+**Two agencies.** Put the same price ladder in both contracts. Name one of
+them as owner of the festival calendar, and hold one joint call a month
+with both in the room. Neither agency should get the other's channel by
+default when a contract ends.
+
+## Frequently asked questions
+
+**Is one agency for Tmall and Douyin cheaper?**
+
+It can be. At our calculators' default settings, two agencies cost 65,000
+RMB a month in retainers before any commission. A combined deal saves money
+only if it cuts that figure and applies a Douyin-level commission to Douyin
+sales. If the agency charges its Tmall rate across both stores, 2 million
+RMB of Douyin sales costs 100,000 RMB more.
+
+**Can a Tmall Partner become an approved Douyin agency?**
+
+Yes, by Douyin's invitation. A Tmall five-star operator rating counts as
+supporting proof. The agency still needs more than 12 people on a Douyin
+team and a 100,000 RMB deposit. After admission comes a quarterly sales
+bar, which a revision due October 15, 2026, sets at 2 million RMB for
+agencies serving mainly cross-border stores.
+
+**Does Douyin require my Tmall price to match?**
+
+No platform can force that now. Under China's internet platform pricing
+rule, in force since April 10, 2026, a merchant on several platforms sets
+its own prices, and a platform may not punish it with fees or lost traffic
+for pricing higher there than elsewhere. Set the ladder yourself and write
+it into the contract.
+
+**What if the Douyin side underperforms?**
+
+That's why each store needs its own schedule and its own exit. With
+separate notice periods, you can move Douyin to a specialist DP and keep the
+Tmall team. Before you sign, write a handover clause for the shop and for
+the Douyin accounts behind its live room and its ads.
+
+[Compass](/compass) finds the agencies that already sell your category on
+each platform. Start with our guides to finding a
+[Tmall Partner](/compass/find-a-tmall-partner-in-china) and a
+[Douyin Partner](/compass/find-a-douyin-partner-in-china).
+
+[Get a shortlist of Tmall and Douyin Partners for your category](/contact#shortlist)
+
+---
 # Tmall and Douyin partner ratings: what they mean
 URL: https://www.thechinapath.com/insights/tmall-partner-rating-douyin-service-provider
 Published: 2026-09-24
@@ -14954,6 +15812,320 @@ business license. If you sell domestically before you have one, agree
 in writing on the date and process for moving the store into your entity.
 
 [Ask Compass for a shortlist of partners who open stores in your name](/contact#shortlist)
+
+---
+# Tmall Partner vs distributor in China: who to hire first
+URL: https://www.thechinapath.com/insights/tmall-partner-vs-distributor-china
+Published: 2026-10-11
+Updated: 2026-10-11
+Author: TheChinaPath
+Category: Market Strategy
+
+Hire a distributor if your product needs a shelf, a Tmall Partner if shoppers search for it, a Douyin Partner if it sells on camera. Costs side by side.
+
+Hire a distributor if your product needs a shelf. If Chinese shoppers
+already search for your category online, a Tmall Partner (TP) is the better
+first hire, and a Douyin Partner (DP) wins when the product sells once
+someone shows it working on camera. Most foreign brands start with one.
+Category picks it most of the time, and cash and timing confirm the pick.
+
+The Tmall Partner vs distributor question in China mostly arrives as a
+pitch.
+The importer at the trade fair says you need a distributor, and the
+agency two aisles over says you need a store. Each one is describing what it
+sells.
+
+The table below puts the three side by side. The partner fees come from our
+own calculators, run at one sales target so the columns compare, and every
+figure was checked on October 10, 2026.
+
+## Three partners, three jobs
+
+A distributor buys your goods. It imports them under its own licenses, or
+buys from the importer that does, then sells them on to supermarket chains,
+convenience stores, restaurants, wholesalers and platform retail such as JD
+self-run and Tmall Supermarket. It earns the gap between what it pays you and what it sells for. Our
+guide to [finding a distributor in China](/compass/find-a-distributor-in-china)
+sorts out the four kinds of company that use the title.
+
+A Tmall Partner runs a store for you on Tmall Global, Alibaba's marketplace
+for imported goods. It handles the listings, the search ads, customer service
+and the campaign calendar around 618 and Double 11, China's two big shopping
+festivals. It's paid a monthly retainer plus a share of sales. The vetting is
+in our guide to [finding a Tmall Partner](/compass/find-a-tmall-partner-in-china).
+
+A Douyin Partner does that job on Douyin, the short-video app, where sales
+happen in livestreams, short videos and through creators paid a commission.
+Foreign brands sell there through Douyin Global, the cross-border store
+format. Before you hand one your account, run the checks in our guide to
+[finding a Douyin Partner](/compass/find-a-douyin-partner-in-china).
+
+The real split is who owns the stock. A distributor does, so it sets the
+price. A TP or a DP works on a store that should sit in your company, with
+your stock in a bonded warehouse, and the price stays yours. (Some TPs buy
+stock outright instead. Then they behave like a distributor.)
+
+## Tmall Partner vs distributor in China, side by side
+
+<div class="table-scroll">
+
+| Line | Distributor | Tmall Partner (TP) | Douyin Partner (DP) |
+|---|---|---|---|
+| What it runs | Import, stock and sales into stores, restaurants, wholesale and platform retail | Your Tmall Global store: listings, search ads, service, campaigns | Your Douyin Global shop: livestreams, short videos, creators, ads |
+| How it is paid | The margin between your export price and its selling price | 35,000 RMB a month plus 10% of sales | 30,000 RMB a month plus 5% of sales; creators paid per order on top |
+| Cash before the first order, RMB | Close to zero; it buys the stock | 505,000, of which 450,000 refundable | 430,000, of which 405,000 refundable |
+| Partner fees at 2 million RMB of sales | None billed; the margin is in your price | 620,000 RMB, 31% of sales | 460,000 RMB, 23% of sales |
+| Time to first sale | Three to five months to a signed contract, then the first order | Eight to twelve weeks to a live store | Eight to twelve weeks to a live shop, then months to build content |
+| Control you keep | Least: it owns the stock and the price | Most, if the store is in your company | Most, if the shop is in your company |
+| Best for | Products that need a shelf or a salesperson | Categories shoppers search for by name | Products that sell when someone shows them |
+
+</div>
+
+TP and DP rows: TheChinaPath calculator data, October 2026, packaged food at
+the calculators' default fees. Stock, ads and creator commission are not in
+them; the cash section below adds them. Timing: TheChinaPath distributor and
+store work, as published on this site.
+
+## Category decides first
+
+Start with where your shopper buys. Most retail spending in China still
+happens away from a screen.
+
+> Online sales of physical goods reached 13.09 trillion RMB in 2025, up
+> 5.2%, and made up 26.1% of China's total retail sales of consumer goods.
+> Source: National Bureau of Statistics (国家统计局), 2025 statistical
+> communique, February 2026. https://www.stats.gov.cn/sj/zxfbhjd/202602/t20260228_1962662.html
+
+That leaves about three yuan in four spent offline, in supermarkets,
+convenience stores, restaurants, pharmacies and specialty shops. No online
+store reaches that money. If your product needs a fridge, or a salesperson
+in front of a buyer, a distributor comes first.
+
+The cross-border route has a ceiling, too.
+
+> Cross-border retail imports have been capped at 5,000 RMB per transaction
+> and 26,000 RMB per shopper per year since January 1, 2019. A single item
+> above 5,000 RMB, alone in its order, can still come in this way but pays
+> full duty, import VAT and consumption tax.
+> Source: Ministry of Finance, General Administration of Customs and State
+> Taxation Administration (财政部 海关总署 税务总局), 财关税〔2018〕49号,
+> November 2018. https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=65769
+
+Food is the category to watch. Online, it's growing several times faster
+than the other goods the statistics bureau tracks.
+
+> Online sales of goods rose 4.3% to 8.42 trillion RMB in the first eight
+> months of 2026. Food rose 15.9%, clothing 4.9% and everyday goods 1.1%.
+> Source: National Bureau of Statistics (国家统计局), retail sales release,
+> September 2026. https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html
+
+So a packaged snack or a coffee capsule can start online. A chilled cheese
+still needs the shelf.
+
+Online, the TP or DP call turns on how shoppers find you. Tmall Global works
+like an import department store with a search bar: people tend to arrive
+knowing the brand or the category and type it in. Foreign names keep
+arriving.
+
+> 2,415 overseas brands opened their first China store on Tmall Global in
+> 2025, from 52 countries and regions. More than 40,000 brands from over 110
+> countries and regions sell on the platform.
+> Source: Sina Tech (新浪科技), citing Tmall Global, January 2026.
+> https://finance.sina.com.cn/tob/2026-01-27/doc-inhithne5772830.shtml
+
+Douyin sells what people haven't searched for yet: a gadget that has to be
+seen working, a snack someone bites into on camera.
+
+> During the 2026 618 festival, more than 120,000 merchants doubled their
+> livestream sales on Douyin from a year earlier. Creators with fewer than
+> 1 million followers drove more than 80% of creator-led sales. The number of
+> merchants selling over 10 million RMB through product cards, Douyin's
+> shelf listings, rose 82%.
+> Source: China National Radio (央广网), on Douyin's 2026 618 data report,
+> June 2026. https://www.cnr.cn/mspd/jrhm/20260620/t20260620_527669642.shtml
+
+Douyin's shelf is growing, and that matters when you hire: a DP that only
+runs livestreams leaves the listings and search side of your shop unworked.
+
+## Cash and time to first sale
+
+### What the online partners cost
+
+The online partners need cash first. We ran both of our calculators at the
+same target, a packaged-food store selling 2 million RMB in year one (about
+US$282,000 at our 7.1 planning rate), with every other input at its default.
+
+<div class="table-scroll">
+
+| Year one at 2 million RMB of sales | Tmall Global with a TP, RMB | Douyin Global with a DP, RMB |
+|---|---|---|
+| Platform deposit, refundable | 50,000 | 5,000 |
+| Annual platform fee | 30,000 | 0 |
+| Bonded warehouse deposit and tax prepayment, refundable | 400,000 | 400,000 |
+| Store setup and launch content | 25,000 | 25,000 |
+| Cash before the first order | 505,000 | 430,000 |
+| Partner retainer, 12 months | 420,000 | 360,000 |
+| Partner commission on sales | 200,000 | 100,000 |
+| Platform commission and payment fee | 60,000 | 50,000 |
+| Paid ads at the default channel mix | 600,000 | 120,000 |
+| Creator commission at the default channel mix | 80,000 | 320,000 |
+| Cash out in year one, before stock, tax and logistics | 1,865,000 | 1,380,000 |
+
+</div>
+
+TheChinaPath calculator data, October 2026. These are model defaults, a
+yardstick for real quotes, and your partner's terms and channel mix will move
+every line.
+
+The partner fee alone is 620,000 RMB for the TP, 31% of sales, and 460,000
+RMB for the DP, 23%. The wider gap sits in the marketing lines. The Tmall
+model spends on search ads, because that's how a Tmall shopper finds a
+store. The Douyin model pays creators, who take a share of each order they
+drive, inside limits Douyin sets.
+
+> Douyin lets a brand offer creators 5% to 50% of an order's paid amount on
+> an offer open to all, and 5% to 80% on an offer limited to named creators.
+> Source: Douyin E-commerce (抖音电商), affiliate commission settlement rules,
+> August 2026. https://school.jinritemai.com/doudian/web/articlev0/112620
+
+When a store closes in good standing, 450,000 RMB of deposits comes back on
+Tmall Global and 405,000 RMB on Douyin. (Refundable still means a year or
+more without that money.)
+
+### What a distributor costs
+
+A distributor turns the cash question around. It pays you, and what matters
+is how fast. Ask for prepayment or a letter of credit on the first orders,
+since open account runs long in China.
+
+> Companies in mainland China gave customers 81 days of credit on average,
+> against 70 days across Asia-Pacific, and late payments ran 73 days past due
+> on average.
+> Source: Coface (科法斯), APAC Payment Survey 2026, August 2026.
+> https://www.prnasia.com/story/543914-1.shtml
+
+You pay in margin. The distributor buys at your export price and keeps the
+spread, and an importer that carries stock doesn't always keep much of it.
+
+> Pinlive Foods (品渥食品), a listed Shanghai importer of German dairy and
+> beer, reported a 2025 gross margin of 16.24%, and 12.20% on dairy.
+> Source: Eastmoney (东方财富网), April 2026.
+> https://finance.eastmoney.com/a/202604223714189425.html
+
+And once it owns the stock, the price is its call. You can suggest one.
+
+> China's Anti-Monopoly Law bars a supplier from agreeing with a buyer on a
+> fixed or minimum resale price, unless it proves the deal doesn't restrict
+> competition or its market share sits under the regulator's threshold.
+> Source: Ministry of Commerce (商务部) policy database, Anti-Monopoly Law
+> (反垄断法), article 18, as amended June 2022.
+> https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=97047
+
+### How long each one takes
+
+Time runs the other way. In our own work, a distributor contract takes three
+to five months from the first meeting to a signature, and food and cosmetics
+need their registrations before the first container ships. A cross-border
+store on either platform can take its first order eight to twelve weeks
+after the work starts, and it opens on the trademark you already hold at
+home.
+
+> Douyin Global admits an overseas-registered company with an overseas bank
+> account and a mainland domestic agent that carries joint liability. A
+> flagship store files the brand's home-market trademark certificate, or its
+> application receipt, valid for more than six months.
+> Source: Douyin E-commerce (抖音电商), Douyin Global admission rules, revised
+> July 2026. https://school.jinritemai.com/doudian/web/article/108056
+
+On Douyin the live date only starts the clock. A DP spends the first months
+on content and on a bench of creators before the shop sells at the pace the
+calculator assumes.
+
+## The usual second partner
+
+Brands that stay in China often add a second partner. Which one depends on
+where they started.
+
+A brand that starts online with a TP usually adds a distributor when it wants
+supermarket shelves. That means general trade, the regular duty-paid import
+route, with a Chinese label and an importer of record. The TP keeps the
+cross-border store and the distributor takes offline, with the line between
+them written into both contracts by channel.
+
+A brand that starts with a distributor tends to want its own store next,
+mostly to see its customers and hold its price online. Our comparison of
+[a China distributor and your own store](/insights/china-distributor-vs-own-store)
+prices that hybrid.
+
+The third pairing is TP and DP. A brand that sells well on Tmall Global adds
+Douyin to reach shoppers who haven't searched for it yet. Some agencies run
+both platforms. Meet the people who would run the second store before you
+hand it to the first agency.
+
+Whatever the order, the first partner shouldn't get the second partner's
+channel for free. Give a distributor exclusivity by channel and region, with
+a sales target attached and the right to take it back if the target is
+missed.
+
+## How to test before you commit
+
+Each partner can be tried on a small scale first, and the test is different
+for each.
+
+With a distributor, start with one region and one channel for the first
+year. Ask for prepayment on the first orders. Grant exclusivity only against
+a target, and get monthly sell-out reports so you see what shoppers bought
+as well as what the distributor ordered.
+
+A TP or a DP is tested on ownership first. Open the store in your own
+overseas company and give the partner sub-accounts. Keep the ad accounts in
+your name. Ask for commission
+on net settled sales after returns, never on gross sales. Agree a review at
+six months with a sales floor, and a notice period short enough to act on it.
+
+Two steps come before any of that. Run the calculators at your own sales
+target, since the default store above may not be yours. Then meet more than
+one candidate of the type you picked. A Compass shortlist usually takes two
+to three weeks from the brief and runs to three to five names (from Compass,
+September 2026), all of them partners we have met.
+
+## Frequently asked questions
+
+**What is the difference between a Tmall Partner and a distributor in China?**
+
+A distributor buys your stock, imports it and resells it, mostly into
+physical retail, so it owns the goods and sets the price. A Tmall Partner
+runs your Tmall Global store for a monthly retainer and a share of sales.
+Your company stays the seller, so the stock and the price stay yours.
+
+**Which costs more, a Tmall Partner or a Douyin Partner?**
+
+At the calculators' defaults, a TP costs more in fees: 620,000 RMB a year at
+2 million RMB of sales, against 460,000 RMB for a DP. The bigger difference
+is marketing. The Tmall store spends mostly on search ads and the Douyin shop
+mostly on creator commission. Real quotes move both ways, so price the whole
+year before comparing.
+
+**Can I hire a distributor and a Tmall Partner at the same time?**
+
+Yes, and plenty of brands do. The distributor covers offline retail under
+general trade, and the TP runs the cross-border store online. Write the split
+into both contracts by channel, and check that the distributor's exclusivity
+doesn't reach the platforms. Expect the online price to set the floor
+shoppers compare everything else against.
+
+**Do I need a company in China to work with a TP or a DP?**
+
+No. Cross-border stores are opened by your overseas company. Douyin Global
+also asks for an overseas bank account and a mainland domestic agent that
+shares liability for the store, a role many partners or bonded warehouses
+take on. A distributor imports under its own licenses, so it needs no
+Chinese entity from you either.
+
+Once you know which partner comes first, [Compass](/compass) finds the ones
+that already sell your category.
+
+[Get a shortlist of distributors, Tmall Partners or Douyin Partners for your category](/contact#shortlist)
 
 ---
 # top-5-video-and-livestreaming-platforms-in-china
@@ -17234,5 +18406,375 @@ At TheChinaPath, this is the terrain where we work with clients, connecting glob
 
 If China moves from festival first to instant first, which parts of that new journey should carry your brand's signature, and which parts are you currently leaving for the platforms to decide?
 
+
+---
+# Opening a Xiaohongshu (RedNote) store as an overseas brand
+URL: https://www.thechinapath.com/insights/xiaohongshu-store-setup-overseas-brand
+Published: 2026-10-11
+Updated: 2026-10-11
+Author: TheChinaPath
+Category: Platforms
+
+Xiaohongshu store setup for overseas brands: who qualifies, the four documents, the US$400 deposit, the fees, the deadlines, and when to wait.
+
+Yes, a company registered outside China can open a cross-border store on
+Xiaohongshu (RedNote). Since July 2, 2026, it also needs a mainland
+company that co-signs for joint liability. The default deposit is US$400,
+less than 4% of the RMB 80,000 that Tmall Global's cheapest categories
+take in deposit and annual fee. And the store is rarely the point. Buyers
+find the brand in notes and search first. The store just takes the order.
+
+That last part decides whether Xiaohongshu store setup is worth your
+quarter. The cash is small. The paperwork, and above all the mainland
+partner, is the long part. And a store with no notes pointing at it sells
+nothing.
+
+The money gap with Tmall Global is real, though. In our
+[Tmall Global cost calculator](/tools/tmall-global-setup-and-run), deposit
+plus annual fee comes to RMB 80,000 in 11 of its 19 product categories,
+RMB 110,000 in seven, and RMB 330,000 for health supplements. RedNote's
+default cross-border deposit is about RMB 2,840 at the calculator's rate
+of 7.1 to the dollar, and its fee rules list no annual fee.
+
+> Tmall Global deposit plus annual fee: RMB 80,000 in 11 of 19 categories,
+> RMB 110,000 in 7, RMB 330,000 for health supplements.
+> Source: TheChinaPath calculator data, October 2026.
+
+Every RedNote rule below was read on the platform's own pages on
+October 4, 2026.
+
+## Requirements and costs to open a RedNote store
+
+<div class="table-scroll">
+
+| Item | What RedNote asks of an overseas company | Date or deadline in the rules |
+|---|---|---|
+| Entity | Company registered outside mainland China; flagship, franchise, specialty, or multi-brand store | No review time published |
+| Mainland partner | Affiliate or agent with import-export scope, a joint-liability undertaking, and customs registration | Required since July 2, 2026 |
+| Documents | Registration plus Chinese-English translation, passport, registered trademark, authorization chain, and 12 months of purchase proof | Fix a rejection within 30 days or it lapses |
+| Deposit (US$) | 400 by default; 700 or 2,800 once monthly sales pass RMB 100,000 or RMB 500,000 | Pay within 2 working days of signing |
+| Commission | Mostly 2% to 5% by category (beauty 4%, apparel 5%), plus a 0.7% payment fee on cross-border orders | Charged per order |
+| Fulfillment | Bonded warehouse or direct mail from abroad | Ship in 72 hours (bonded), 120 hours (direct mail) |
+
+</div>
+
+Each row is sourced in the sections below.
+
+## What a RedNote store is, and what it isn't
+
+A RedNote store is a shop inside the app. Notes and livestreams link to its
+products, and checkout happens without leaving RedNote. An overseas company
+opens it under the cross-border rules, so goods ship from a bonded warehouse
+in China or straight from abroad, and the store name carries a "海外"
+(overseas) tag the platform adds on its own.
+
+> Stores opened by an overseas entity have their store type renamed
+> automatically, for example to 海外旗舰店 (overseas flagship store).
+> Source: Xiaohongshu rule center (小红书电商学习中心), store type and naming rules, July 2024. https://school.xiaohongshu.com/rule/detail/26/823
+
+That matters for a store because the traffic is already shopping. People
+open the app to decide what to buy.
+
+> Xiaohongshu has more than 400 million monthly active users and up to
+> 800 million searches a day.
+> Source: Beijing Business Today (北京商报), May 2026. https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
+
+> About 200 million users a month look for buying advice on Xiaohongshu
+> (platform data, January to November 2025).
+> Source: Ebrun (亿邦动力) via Sina, December 2025. https://finance.sina.com.cn/tech/roll/2025-12-24/doc-inhcwtcp4511859.shtml
+
+Two things it is not. It isn't Redshop, the export project RedNote set
+for June 2026, which carries Chinese sellers' goods to buyers abroad.
+
+> Redshop, Xiaohongshu's overseas project, was set to launch in June 2026
+> with 50 invited seed merchants, starting in markets including the United
+> States, the United Kingdom, Singapore, and Malaysia.
+> Source: 36Kr (36氪), April 2026. https://www.36kr.com/p/3763928410866433
+
+And it isn't a replacement for Tmall Global or JD Worldwide, where
+shoppers type a product name and compare prices. On RedNote people read
+notes first, and the store gets the orders those notes produce.
+
+## Who can open one, and what the file needs
+
+An overseas company can open four store types: a flagship store, a
+franchise store (专卖店), a specialty store (专营店) or a multi-brand
+store. Ordinary company stores, sole-trader stores, and personal stores are
+closed to overseas entities.
+
+> Flagship, franchise, and multi-brand stores accept a mainland or an
+> overseas entity, and specialty stores accept overseas registration papers
+> with a Chinese-English translation; ordinary company, sole-trader and
+> personal stores do not accept overseas entities.
+> Source: Xiaohongshu rule center (小红书电商学习中心), merchant admission standards, February 2024. https://school.xiaohongshu.com/rule/detail/26/817
+
+The same page sets most of the file. The legal representative can use a
+passport. The trademark can be registered abroad, through WIPO, or in
+China, but it has to be registered already, and a picture-only mark is
+refused. One company can run two stores at most.
+
+Decide early whose name goes on the store. A flagship needs first-level
+exclusive rights from the brand owner, so a distributor that opens your
+flagship holds exclusivity on RedNote for as long as its letter runs.
+Franchise and specialty stores can sit up to three levels down the chain,
+which lets a reseller sell without locking up the brand.
+
+> A flagship store requires first-level exclusive authorization; franchise
+> and specialty stores accept an authorization chain of up to three levels.
+> Source: Xiaohongshu rule center (小红书电商学习中心), merchant admission standards, February 2024. https://school.xiaohongshu.com/rule/detail/26/817
+
+Then, in July 2026, the file got heavier.
+
+> Every cross-border store must file four documents, none optional: its
+> overseas registration certificate, the business license of a mainland
+> affiliate or agent with import-export scope, the mainland entrusted
+> company's undertaking of joint liability for product sourcing and
+> compliance, and a customs registration.
+> Source: Xiaohongshu rule center (小红书电商学习中心), cross-border qualification notice, July 2026. https://school.xiaohongshu.com/rule/detail/19/119851
+
+That notice also asks for proof of purchase from the last 12 months:
+contracts, invoices, and shipping papers that match. For regulated
+categories the licensing runs on both sides of the border. The overseas
+company shows its home-country license, and the mainland partner shows the
+matching Chinese one, each valid for at least 30 more days.
+
+> Cross-border merchants must provide the category license of their home
+> country or region, and their mainland entrusted company must hold the
+> matching Chinese license.
+> Source: Xiaohongshu rule center (小红书电商学习中心), industry qualification requirements, March 2025. https://school.xiaohongshu.com/rule/detail/26/807
+
+So who signs? The candidates are the importer or distributor you already
+work with, or the service partner that will run the store. Pick it the way
+you'd pick a distributor, because it answers for your goods. Douyin Global
+asks for the same thing, a mainland domestic agent that carries joint
+liability, and nothing stops one partner from signing for both stores if it
+accepts the exposure.
+
+> Douyin Global requires a mainland domestic agent (境内代理人) that carries
+> joint liability and files its business license with an entrustment
+> declaration.
+> Source: Douyin E-commerce (抖音电商), Douyin Global admission rules, July 2026. https://school.jinritemai.com/doudian/web/article/108056
+
+The deposit is the light part. The default for a cross-border category is
+US$400, down from US$3,500 before an April 2025 revision. Some categories
+carry their own figure in the platform's category sheet, so check yours.
+
+> Default category deposit for cross-border stores: US$400 (US$3,500 before
+> the revision).
+> Source: Xiaohongshu rule center (小红书电商学习中心), category deposit standard, April 2025. https://school.xiaohongshu.com/rule/detail/27/858
+
+It rises with sales. Since July 1, 2026, overseas merchants also owe a
+floating deposit set by the previous month's settled sales, and they pay
+whichever of the two is higher.
+
+> Floating deposit for overseas merchants: US$400 at RMB 50,000 to 100,000
+> of monthly settled sales, US$700 at RMB 100,000 to 500,000, US$2,800 above
+> RMB 500,000.
+> Source: Xiaohongshu rule center (小红书电商学习中心), deposit management rules, July 2026. https://school.xiaohongshu.com/rule/detail/27/119848
+
+The deposit-free trial on the same page covers personal and sole-trader
+stores only. A cross-border store pays from day one. Getting it back is
+quick: once a refund request goes in, the rule gives RedNote one to seven
+working days.
+
+## Xiaohongshu store setup, step by step
+
+RedNote doesn't publish how long it takes to review a new store. Nothing in
+the rule center gives a number of working days for the qualification or
+brand check, and the figures that circulate online trace back to agency
+blogs. So plan around the parts you control, which are most of them.
+
+**Line up the mainland partner.** Get its business license, its customs
+registration, and the signed joint-liability undertaking. Expect this to be
+the slow step, because it's a negotiation over who carries the risk.
+
+**Build the document file.** Registration and translation, passport,
+trademark proof, the authorization chain, a year of purchase papers, and
+the category licenses on both sides. Any document that isn't in Chinese or
+English needs a stamped translation (German, French, and Japanese papers
+included).
+
+**Apply, and fix fast.** A rejected application gets 30 days.
+
+> If a rejected application is not corrected and resubmitted within 30
+> days, the store application is cancelled.
+> Source: Xiaohongshu rule center (小红书电商学习中心), merchant admission standards, February 2024. https://school.xiaohongshu.com/rule/detail/26/817
+
+**Sign and pay.** The cross-border store agreement gives two working days
+to pay the deposit once it takes effect. In the same system you set the
+settlement currency and enter your own receiving bank. You pay the bank
+charges.
+
+> The merchant pays the deposit within 2 working days of the agreement
+> taking effect, enters its settlement currency and beneficiary bank in the
+> Xiaohongshu system, and bears all bank charges.
+> Source: Xiaohongshu rule center (小红书电商学习中心), store service agreement for cross-border merchants, April 2026. https://school.xiaohongshu.com/rule/detail/97/119738
+
+**Connect fulfillment.** The same agreement makes you declare goods to
+customs truthfully, and if you run orders through a third-party ERP, you
+report the vendor to RedNote.
+
+**Ship on time.** The clock starts at payment.
+
+> Ship-by limits after payment: 72 hours for bonded goods, 120 hours for
+> direct mail and for personal-postal goods.
+> Source: Xiaohongshu rule center (小红书电商学习中心), merchant shipping rules, September 2026. https://school.xiaohongshu.com/rule/detail/35/119927
+
+One more line item, and this one belongs to the brand account. Verifying
+an enterprise professional account costs RMB 600, with a RMB 600 review
+every year. The rule opens verification to overseas companies only from
+regions the platform has switched on, and it names Hong Kong, Singapore,
+and Malaysia.
+
+> Enterprise professional-account verification costs 600 RMB per
+> application and 600 RMB for the annual review; overseas entities may
+> apply from regions the platform has opened.
+> Source: Xiaohongshu Juguang help center (小红书聚光帮助中心), account verification rules, August 2026. https://ad.xiaohongshu.com/next_help/docs/195c5fe505c71b4b0335a2fe0d61d8e0
+
+## What it costs to run once it's open
+
+The commission is a percentage by category. Most sit between 2% and 5%.
+
+> Base technical service fee, in force May 12, 2026: makeup and fragrance
+> 4%, skincare 4%, women's and men's apparel 5%, health supplements 3%,
+> snacks 2%.
+> Source: Xiaohongshu rule center (小红书电商学习中心), base technical service fee schedule, May 2026. https://school.xiaohongshu.com/rule/detail/27/119797
+
+Cross-border orders carry an extra charge.
+
+> Cross-border orders pay a 0.7% payment-channel fee on the goods and
+> shipping actually paid.
+> Source: Xiaohongshu rule center (小红书电商学习中心), technical service fee rules revision, February 2024. https://school.xiaohongshu.com/rule/detail/17/2590
+
+If you read about RedNote's commission-free year, it's over. The platform
+waived commission on each merchant's first RMB 1 million of sales from
+September 2025 and meant to run it to August 31, 2026. It stopped on May
+15.
+
+> From September 1, 2025 to August 31, 2026, each merchant's first RMB 1
+> million of payment volume was to be commission-free, with a 0.6% payment
+> cost kept.
+> Source: National Business Daily (每日经济新闻) via Securities Times, August 2025. https://www.stcn.com/article/detail/3257637.html
+
+> The commission-free plan ended on May 15, 2026; orders created before
+> then kept the old terms. A merchant growth program paying out in traffic
+> vouchers started on May 11.
+> Source: Sina Tech (新浪科技), May 2026. https://finance.sina.cn/chanjing/gsxw/2026-05-09/detail-inhxhzaz1374118.d.html
+
+Run it for a skincare store selling RMB 300,000 of goods a month. That
+puts the floating deposit in the US$700 band, above the US$400 default, so
+US$700 sits with RedNote, about RMB 4,970. Commission at 4% is RMB 12,000.
+The payment fee adds RMB 2,100, a little more once shipping is counted,
+since it applies to both. Call it RMB 14,100 a month to the platform.
+
+Put next to Tmall Global, the running fees look alike. Our calculator
+carries skincare on Tmall Global at a 4% commission and a RMB 30,000
+annual fee, so the same month costs RMB 12,000 in commission plus RMB 2,500
+of the annual fee, before payment charges. Where the two part ways is the
+cash you put down before the first sale: RMB 80,000 against roughly
+RMB 2,840.
+
+The bigger bill is traffic, and the fee schedule doesn't show it. A store
+on RedNote gets found through notes and creator posts first, then through
+ads once something converts. Each is its own budget line. Content
+production and creator seeding are the work of [TheRedScroll, the group's China social media agency](https://www.theredscroll.com).
+The store side is ours: listings, orders, customer service, and the paid
+media that pushes buyers to checkout, covered under
+[social commerce](/grow-in-china/social-commerce).
+
+## Why the store comes last
+
+Look at what RedNote itself counts. At its first merchant conference, in
+April 2026, the figures it chose to share were about demand and repeat
+buyers, measured on rise100, its list of top merchants.
+
+> Every day 39 million users show clear intent to buy on Xiaohongshu,
+> adding up to 140 million purchase requests. The 2025 rise100 merchants
+> grew GMV more than 2.6 times, and returning customers made up 81% of
+> what they sold.
+> Source: 21st Century Business Herald (21世纪经济报道), April 2026. https://www.21jingji.com/article/20260409/herald/3b578d625dae8e23682d670de2f4e6e8.html
+
+> Members of a merchant's group chat repurchase within 30 days about 5.1
+> times as often as other users.
+> Source: Guangzhou Daily (广州日报大洋网), April 2026. https://news.dayoo.com/ds/202604/13/154574_54947113.htm
+
+Read those numbers as a sequence. Someone searches and reads notes from
+people they trust, then buys. After that, the group chat and the store
+livestream bring them back. The store sits at the end of that chain, and
+it's the cheapest part to build.
+
+A foreign brand that opens the store first, with nothing written about it
+on the platform, owns an empty room. The search bar returns other brands.
+So we treat a RedNote store as the place where a content plan starts
+paying, and we put the work on [China social media](/social-in-china)
+ahead of the store application.
+
+A word on sales forecasts, since someone will pitch you one. RedNote has
+never put out a figure for its total sales.
+
+> The platform has never published its overall GMV.
+> Source: Yicai (第一财经) via Securities Times, August 2025. https://stcn.com/article/detail/3304269.html
+
+So any forecast you see for "sales on RedNote" is somebody's estimate.
+Build your plan on your own notes and your own search volume.
+
+## When to open one, and when to wait
+
+Open a store when all of this holds at once. Notes about your products
+already exist and people search your brand name in the app. A mainland
+partner will sign for you and hold the Chinese licenses your category
+needs. Someone can ship bonded orders inside 72 hours and answer buyers in
+Chinese, every day, which is the part brands underestimate.
+
+Wait if the brand has no presence on RedNote yet. Spend the first months on
+notes and search, and measure what moves.
+
+If you're already live on Tmall Global and RedNote readers find you there
+by search, think hard before adding a second store. It doubles the stock
+planning, and the same shopper sees two prices.
+
+And wait if no one will co-sign. Since July the store can't open without
+that partner, so finding it comes first. If you don't have an importer or a
+service partner in China yet, a [Compass shortlist](/contact#shortlist) of
+vetted partners in your category is the place to start.
+
+The cash, at least, won't stop you. US$400, plus whatever the category
+sheet says for your products.
+
+## FAQ
+
+### Can a foreign company open a Xiaohongshu store without a Chinese company?
+
+It can open the store in its own name, as an overseas entity. Since July 2,
+2026, it also needs a mainland affiliate or agent whose business covers
+import and export. That company files its license, signs an undertaking of
+joint liability for the goods, and brings a customs registration. Without
+all four documents, the application doesn't go through.
+
+### How much does it cost to open a RedNote store as an overseas brand?
+
+The default deposit for a cross-border category is US$400, and it rises to
+US$700 or US$2,800 as monthly sales pass RMB 100,000 or RMB 500,000. The
+fee rules list no annual fee. Commission runs mostly 2% to 5% by category,
+plus 0.7% on cross-border orders. For most brands, ads, creators, and the
+daily operations cost more than all of that put together.
+
+### How long does RedNote take to approve a store?
+
+RedNote doesn't publish a review time for new stores. What it does publish
+are the deadlines around the review: 30 days to fix a rejected
+application, two working days to pay the deposit after signing, and 72
+hours to ship a bonded order after payment. Most of the calendar goes to
+finding the mainland partner and assembling the documents.
+
+### Is the commission-free program still running?
+
+No. The plan waived commission on each merchant's first RMB 1 million of
+sales from September 2025 and was set to run until August 31, 2026. RedNote
+ended it early, on May 15, 2026. Its newer merchant program pays out in
+traffic vouchers. A store that opens now pays the category rate from its
+first order.
+
+[Talk to us about whether a RedNote store fits your China plan](/contact)
 
 ---

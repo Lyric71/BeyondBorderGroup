@@ -161,3 +161,7 @@ if (article) {
     window.print();
   });
 }
+
+// Module scope: both layout scripts declare reduceMotion, and astro check
+// reads files without an import or export as one shared global scope.
+export {};

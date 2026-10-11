@@ -3,7 +3,7 @@ title: "Boutique Douyin ou publicité sur Douyin : ce dont une marque a vraime
 seoTitle: "Boutique ou publicité sur Douyin : que choisir ?"
 description: "Boutique ou publicité sur Douyin : coût d'entrée, charge quotidienne, contenus, présence en Chine et marge, chiffrés avec notre calculateur."
 pubDate: "2026-10-06"
-updatedDate: "2026-10-06"
+updatedDate: "2026-10-11"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Douyin", "Tmall", "JD"]
@@ -86,7 +86,7 @@ Sélectionner et briefer les créateurs relève du seeding, un métier qui revie
 
 Une marque étrangère vend sur Douyin par l'intermédiaire de Douyin Global (抖音全球购), le format de boutique transfrontalière. Le plus simple, ce sont les formalités.
 
-> Une boutique Douyin Global doit être ouverte par une société immatriculée hors de Chine continentale, titulaire d'un compte bancaire d'entreprise à l'étranger et représentée par un agent domestique en Chine continentale ; une boutique officielle exige un certificat de marque du pays d'origine valable plus de six mois.
+> Une boutique Douyin Global doit être ouverte par une société immatriculée hors de Chine continentale, titulaire d'un compte bancaire d'entreprise à l'étranger et représentée par un agent domestique en Chine continentale ; une boutique officielle exige un certificat de marque du pays d'origine valable plus de six mois. Depuis mai 2026, chaque marque, propre ou sous licence, doit en outre prouver qu'elle est fabriquée et commercialisée hors de Chine continentale.
 > Source : Douyin E-commerce (抖音电商), règles d'admission des marchands Douyin Global, juillet 2026. https://school.jinritemai.com/doudian/web/article/108056
 
 L'agent domestique se choisit avec soin.

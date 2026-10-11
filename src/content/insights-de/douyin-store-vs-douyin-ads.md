@@ -3,7 +3,7 @@ title: "Douyin-Shop oder Werbung auf Douyin: Was eine Marke wirklich braucht"
 seoTitle: "Douyin-Shop oder Werbung auf Douyin: Was Marken brauchen"
 description: "Douyin-Shop oder Werbung auf Douyin im Vergleich: Startkosten, Tagespensum, Content, Präsenz in China und Marge, gerechnet mit unserem Kostenrechner."
 pubDate: "2026-10-06"
-updatedDate: "2026-10-06"
+updatedDate: "2026-10-11"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Douyin", "Tmall", "JD"]
@@ -86,7 +86,7 @@ Auswahl und Briefing der Creator gehören zum Seeding. Dafür ist [TheRedScroll,
 
 Ausländische Marken verkaufen auf Douyin über Douyin Global (抖音全球购), das grenzüberschreitende Shop-Format. Der Papierkram ist dabei noch der einfache Teil.
 
-> Ein Douyin-Global-Shop muss von einem außerhalb des chinesischen Festlands eingetragenen Unternehmen eröffnet werden, mit einem Firmenkonto im Ausland und einem inländischen Vertreter auf dem Festland; ein Flagship-Store setzt ein Markenzertifikat aus dem Heimatmarkt voraus, das noch mehr als sechs Monate gültig ist.
+> Ein Douyin-Global-Shop muss von einem außerhalb des chinesischen Festlands eingetragenen Unternehmen eröffnet werden, mit einem Firmenkonto im Ausland und einem inländischen Vertreter auf dem Festland; ein Flagship-Store setzt ein Markenzertifikat aus dem Heimatmarkt voraus, das noch mehr als sechs Monate gültig ist. Seit Mai 2026 muss zudem jede eigene oder lizenzierte Marke nachweisen, dass sie außerhalb des chinesischen Festlands hergestellt und verkauft wird.
 > Quelle: Douyin E-commerce (抖音电商), Zulassungsregeln für Douyin-Global-Händler, Juli 2026. https://school.jinritemai.com/doudian/web/article/108056
 
 Den inländischen Vertreter sollten Sie sorgfältig auswählen.

@@ -566,3 +566,7 @@ function boot() {
 
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
 else boot();
+
+// Module scope: both layout scripts declare reduceMotion, and astro check
+// reads files without an import or export as one shared global scope.
+export {};

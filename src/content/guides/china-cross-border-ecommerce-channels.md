@@ -3,7 +3,7 @@ title: "Selling to China without a Chinese company: every channel, what it costs
 seoTitle: "China Cross-Border E-Commerce: Channels and Costs"
 description: "Tmall Global, JD Global, Douyin and Xiaohongshu compared for foreign brands in 2026: store models, fees, logistics, operations, marketing and margins."
 pubDate: "2026-10-09"
-updatedDate: "2026-10-09"
+updatedDate: "2026-10-11"
 author: "TheChinaPath"
 format: "Every channel and its costs"
 heroImage: "/Images/insights/china-cross-border-ecommerce-channels.webp"
@@ -171,7 +171,10 @@ JD Supermarket runs on the same supplier logic for general-trade goods, through 
 
 On Douyin, people buy what they watch. In 2024, shelf and search made up more than 40% of Douyin's e-commerce sales, brand-run store livestreams about 30% and creator livestreams about 30%.
 
-**Douyin Global Shopping (抖音全球购)** needs three things: an overseas company, a mainland company that signs as joint-liability agent, and an overseas bank account. Cosmetics, supplements and infant formula need category pre-approval.
+**Douyin Global Shopping (抖音全球购)** needs three things: an overseas company, a mainland company that signs as joint-liability agent, and an overseas bank account. Cosmetics, supplements and infant formula need category pre-approval. Since May 2026, Douyin also checks every brand in the store, owned or licensed: the goods must be made and sold outside mainland China, and the merchant files the proof.
+
+> Douyin Global's admission rules require each own or authorized brand to prove it is made and sold outside mainland China.
+> Source: 抖音电商, July 2026. https://school.jinritemai.com/doudian/web/article/108056
 
 <div class="table-scroll" data-ck="facts">
 

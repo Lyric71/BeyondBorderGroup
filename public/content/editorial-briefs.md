@@ -2355,11 +2355,13 @@ substantive change teaches Google to ignore dates on this domain.
 
 Fifty pieces on choosing, checking, contracting and managing a China partner
 (distributor, importer, Tmall Partner, Douyin Partner). Plan and research:
-`editorial/plans/finding-a-partner-50.md`. P01 to P15 are drafted ahead and
-publish one per weekday from September 30 to October 20, 2026. P16 to P50
-publish every other day, weekends included, from October 22 to December
-29, 2026. The daily partner run (scripts/run-daily.ps1 -Mode partner)
-drafts each one up to two days ahead.
+`editorial/plans/finding-a-partner-50.md`. P01 to P15 were dated one per
+weekday from September 30 to October 20, 2026, and all fifteen published
+together on September 24, 2026. P16 to P50 are dated every other day,
+weekends included, from October 22 to December 29, 2026; the dates order the
+queue and never hold a piece back. The daily partner run (scripts/run-daily.ps1 -Mode partner)
+drafts the next one in publish_date order, whatever its date, and the next
+publish run ships it (standing rule of October 10, 2026, editorial/CLAUDE.md).
 
 Rules for every P piece, on top of Part 0:
 

@@ -47,7 +47,7 @@ of 7.1 to the dollar, and its fee rules list no annual fee.
 > RMB 110,000 in 7, RMB 330,000 for health supplements.
 > Source: TheChinaPath calculator data, October 2026.
 
-Every RedNote rule below was read on the platform's rule center on
+Every RedNote rule below was read on the platform's own pages on
 October 4, 2026.
 
 <!-- SECTION: The table -->

@@ -6,7 +6,7 @@ updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "Compliance & Setup"
 platforms: []
-tags: ["Encontrar un socio", "Contratos", "Distribuidores", "Control de precios", "Ley Antimonopolio"]
+tags: ["Encontrar socio", "Contratos", "Distribuidores", "Control de precios", "Ley Antimonopolio"]
 keyTakeaways:
   - "Incluya en cada contrato de distribución un código de trazabilidad en cada unidad y una penalización fija por salirse del canal. Un tribunal de Shanghái hizo cumplir una cláusula de ese tipo en junio de 2025."
   - "Defina el desvío en el contrato. El tribunal de Fengxian señaló la redacción ambigua como una de las causas de una serie de 15 pleitos; los 14 casos mediados sumaban más de 6 millones de yuanes en juego."

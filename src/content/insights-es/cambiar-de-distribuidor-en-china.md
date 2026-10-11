@@ -6,7 +6,7 @@ updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
-tags: ["Encontrar un socio", "Gestionar un socio", "Distribuidores", "Contratos"]
+tags: ["Encontrar socio", "Gestionar un socio", "Distribuidores", "Contratos"]
 keyTakeaways:
   - "Firme con el nuevo distribuidor antes de que el anterior se entere y envíe después la notificación por escrito, en la forma que exige el contrato. Según el Código Civil chino, la resolución surte efecto cuando la notificación llega a su destinatario."
   - "Incumplir los objetivos no basta para extinguir una exclusiva. Dirui retiró la exclusividad a su distribuidor de Pekín en 2010, y un tribunal de apelación de la capital condenó después a la empresa a pagar 5.864.950 yuanes de penalización contractual."

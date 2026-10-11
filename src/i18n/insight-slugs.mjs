@@ -9,6 +9,11 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'xiaohongshu-store-setup-overseas-brand': 'ouvrir-une-boutique-xiaohongshu-marque-etrangere',
+  'cost-to-sell-pet-food-in-china': 'ce-que-coute-vendre-des-aliments-pour-animaux-en-chine',
+  'tmall-partner-vs-distributor-china': 'tmall-partner-ou-distributeur-par-qui-commencer',
+  'douyin-cross-border-brand-verification': 'douyin-verification-des-marques-transfrontalieres',
+  'tmall-partner-douyin-partner-same-agency': 'une-seule-agence-pour-tmall-et-douyin',
   'how-blackmores-entered-china': 'blackmores-en-chine-ce-que-l-entree-a-coute',
   'how-automotive-and-ev-brands-reach-buyers-in-china':
     'comment-les-constructeurs-automobiles-touchent-les-acheteurs-en-chine',
@@ -167,6 +172,11 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'xiaohongshu-store-setup-overseas-brand': 'xiaohongshu-shop-fuer-auslaendische-marken',
+  'cost-to-sell-pet-food-in-china': 'was-tiernahrung-verkaufen-in-china-kostet',
+  'tmall-partner-vs-distributor-china': 'tmall-partner-oder-distributor-wen-zuerst',
+  'douyin-cross-border-brand-verification': 'douyin-markenpruefung-fuer-cross-border',
+  'tmall-partner-douyin-partner-same-agency': 'eine-agentur-fuer-tmall-und-douyin',
   'how-blackmores-entered-china': 'blackmores-in-china-was-der-markteintritt-kostete',
   'how-automotive-and-ev-brands-reach-buyers-in-china':
     'wie-auto-und-elektroautomarken-kaeufer-in-china-erreichen',
@@ -325,6 +335,11 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'xiaohongshu-store-setup-overseas-brand': 'abrir-tienda-en-xiaohongshu-marca-extranjera',
+  'cost-to-sell-pet-food-in-china': 'lo-que-cuesta-vender-alimento-para-mascotas-en-china',
+  'tmall-partner-vs-distributor-china': 'tmall-partner-o-distribuidor-por-quien-empezar',
+  'douyin-cross-border-brand-verification': 'douyin-verificacion-de-marcas-transfronterizas',
+  'tmall-partner-douyin-partner-same-agency': 'una-sola-agencia-para-tmall-y-douyin',
   'how-blackmores-entered-china': 'blackmores-en-china-lo-que-costo-entrar',
   'how-automotive-and-ev-brands-reach-buyers-in-china':
     'como-llegan-las-marcas-de-coches-a-los-compradores-en-china',

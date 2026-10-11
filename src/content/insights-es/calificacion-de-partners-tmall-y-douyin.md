@@ -6,7 +6,7 @@ updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "Douyin"]
-tags: ["Encontrar un partner", "Diligencia debida", "Tmall Partners", "Douyin Partners"]
+tags: ["Encontrar socio", "Diligencia debida", "Tmall Partners", "Douyin Partners"]
 keyTakeaways:
   - "Tmall Global califica una vez al año a sus partners operadores con una estrella de oro, de plata o de bronce. La de oro exige tres tiendas y 40 millones de yuanes de ventas anuales."
   - "La lista v-partner de Tmall en el mercado nacional certifica operadores de cinco y seis estrellas, además de seis distintivos sectoriales muy amplios."

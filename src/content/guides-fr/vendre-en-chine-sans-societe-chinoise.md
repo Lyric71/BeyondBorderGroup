@@ -3,7 +3,7 @@ title: "Vendre en Chine sans société chinoise : chaque canal, son coût, ce 
 seoTitle: "E-commerce transfrontalier en Chine : canaux, coûts"
 description: "Tmall Global, JD Global, Douyin, Xiaohongshu : modèles de boutique, frais, logistique, exploitation, marketing et marges des marques étrangères en 2026."
 pubDate: "2026-10-09"
-updatedDate: "2026-10-09"
+updatedDate: "2026-10-11"
 author: "TheChinaPath"
 format: "Les canaux et leurs coûts"
 heroImage: "/Images/insights/china-cross-border-ecommerce-channels.webp"
@@ -171,7 +171,10 @@ JD Supermarket applique la même logique fournisseur aux produits de commerce g�
 
 Sur Douyin, on achète ce qu'on regarde. En 2024, les rayons et la recherche ont pesé plus de 40 % des ventes e-commerce de la plateforme, les livestreams des boutiques de marque environ 30 % et ceux des créateurs environ 30 %.
 
-**Douyin Global Shopping (抖音全球购)** réclame trois pièces : une société à l'étranger, une société de Chine continentale qui signe en qualité d'agent solidairement responsable, et un compte bancaire hors de Chine. Cosmétiques, compléments alimentaires et laits infantiles exigent une autorisation préalable de catégorie.
+**Douyin Global Shopping (抖音全球购)** réclame trois pièces : une société à l'étranger, une société de Chine continentale qui signe en qualité d'agent solidairement responsable, et un compte bancaire hors de Chine. Cosmétiques, compléments alimentaires et laits infantiles exigent une autorisation préalable de catégorie. Depuis mai 2026, Douyin contrôle en outre chaque marque vendue, en propre ou sous licence : le marchand doit prouver que les produits sont fabriqués et commercialisés hors de Chine continentale.
+
+> Les règles d'admission de Douyin Global imposent à chaque marque, propre ou sous licence, de prouver qu'elle est fabriquée et commercialisée hors de Chine continentale.
+> Source : 抖音电商, juillet 2026. https://school.jinritemai.com/doudian/web/article/108056
 
 <div class="table-scroll" data-ck="facts">
 

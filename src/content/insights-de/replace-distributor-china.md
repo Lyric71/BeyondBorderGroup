@@ -6,7 +6,7 @@ updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
-tags: ["Partner finden", "Partner steuern", "Distributoren", "Verträge"]
+tags: ["Partnersuche", "Partner steuern", "Distributoren", "Verträge"]
 keyTakeaways:
   - "Unterschreiben Sie mit dem neuen Distributor, bevor der alte davon erfährt, und kündigen Sie dann schriftlich in der Form, die der Vertrag vorschreibt. Nach dem chinesischen Zivilgesetzbuch wird die Kündigung mit Zugang wirksam."
   - "Verfehlte Ziele beenden eine Exklusivität nicht automatisch. Dirui entzog seinem Pekinger Distributor 2010 die Exklusivität, ein Pekinger Berufungsgericht verurteilte das Unternehmen später zu 5.864.950 Yuan Vertragsstrafe."

@@ -6,7 +6,7 @@ updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "Compliance & Setup"
 platforms: []
-tags: ["Partner finden", "Verträge", "Distributoren", "Preiskontrolle", "Antimonopolgesetz"]
+tags: ["Partnersuche", "Verträge", "Distributoren", "Preiskontrolle", "Antimonopolgesetz"]
 keyTakeaways:
   - "Verankern Sie in jedem Distributionsvertrag einen Rückverfolgungscode auf jeder Einheit und eine feste Vertragsstrafe für Verstöße gegen die Kanalbindung. Ein Gericht in Shanghai hat eine solche Klausel im Juni 2025 durchgesetzt."
   - "Definieren Sie Querlieferungen im Vertrag. Das Gericht in Fengxian sah in unklaren Formulierungen eine Ursache für eine Serie von 15 Verfahren; in den 14 mediierten Fällen standen mehr als 6 Millionen Yuan im Streit."

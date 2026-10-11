@@ -165,6 +165,13 @@ Settled since, so no run raises them again:
   links the service page only for storefront and livestream commerce, and
   the log does not flag the difference. Confirmed by Cyril on 2 October
   2026: the service page stays as it is; no run reopens this.
+- **Ledger block 7 "with this category preselected".** The three
+  calculators read no query parameter, so a link cannot preselect a
+  category. Block 7 links the calculator whose picker carries the
+  category's own row and names that row in the link sentence ("with
+  'Cat and dog food' selected"). Where no calculator has a matching row,
+  the sentence tells the reader to pick Custom and type the fee table's
+  rates. This is the settled form of the deep link; no run flags it.
 - **An SEO field change the Anchor spec requires** (the title or H1 moved
   to the query) is signed off by the review window: it ships unless the row
   is set to `blocked` before the publish run. The draft log states the

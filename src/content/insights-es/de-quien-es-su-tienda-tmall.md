@@ -6,7 +6,7 @@ updatedDate: "2026-09-24"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "Douyin"]
-tags: ["Encontrar un partner", "Tmall Partners", "Douyin Partners", "Contratos"]
+tags: ["Encontrar socio", "Tmall Partners", "Douyin Partners", "Contratos"]
 keyTakeaways:
   - "Una tienda en Tmall o en Douyin pertenece a la empresa registrada en ella, la haya pagado quien la haya pagado."
   - "En 2025, un tribunal de Hunan se negó a entregar una tienda de Douyin a la marca que la había financiado, porque estaba abierta con la licencia de la familia del operador."
