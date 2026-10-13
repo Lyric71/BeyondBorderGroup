@@ -2,7 +2,7 @@
 title: "Tmall oder Amazon: was eine Marke wirklich zahlt"
 description: "Amazon führt seit 2019 keinen China-Marktplatz mehr. Was Tmall Global stattdessen verlangt, neben Amazons Gebührenblatt, samt Steuerrechnung."
 pubDate: "2023-02-02"
-updatedDate: "2026-10-02"
+updatedDate: "2026-10-13"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Tmall", "JD"]
@@ -186,10 +186,13 @@ Das Verfahren hat eine Obergrenze, und sie gilt je Käufer, nicht je Marke.
 > 财关税〔2018〕49号, Januar 2019.
 > https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=65769
 
-Eine Handtasche für 9.000 Yuan passt nicht hinein. Alles oberhalb der Grenze
-je Bestellung muss über den Regelhandel kommen, also über einen chinesischen
-Importeur, vollen Zoll und volle Mehrwertsteuer sowie eine Produktzulassung,
-wo die Kategorie sie verlangt. Das ist ein anderes Geschäft, und genau dieses
+Eine Handtasche für 9.000 Yuan passt nur knapp hinein. Allein in einer
+Bestellung darf sie den grenzüberschreitenden Weg noch nehmen, zahlt dann
+aber Zoll, Mehrwertsteuer und Verbrauchsteuer in voller Höhe und belegt mehr
+als ein Drittel des Jahresrahmens eines Käufers. Ein Sortiment oberhalb der
+Grenze landet deshalb meist im Regelhandel, also bei einem chinesischen
+Importeur, voller Steuerlast und einer Produktzulassung, wo die Kategorie
+sie verlangt. Das ist ein anderes Geschäft, und genau dieses
 kartiert unser
 [Team für den Cross-Border-Aufbau](/de/nach-china/cross-border-aufbau) die
 meiste Zeit, bevor sich eine Marke festlegt.

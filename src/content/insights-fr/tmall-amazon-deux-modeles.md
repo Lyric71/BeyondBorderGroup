@@ -2,7 +2,7 @@
 title: "Tmall ou Amazon : ce que paie vraiment une marque"
 description: "Amazon n'a plus de place de marché chinoise depuis 2019. Voici ce que facture Tmall Global, en face du barème d'Amazon, taxe comprise."
 pubDate: "2023-02-02"
-updatedDate: "2026-10-02"
+updatedDate: "2026-10-13"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Tmall", "JD"]
@@ -194,10 +194,13 @@ Le régime a un plafond, et il s'applique par acheteur, pas par marque.
 > 财关税〔2018〕49号, janvier 2019.
 > https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=65769
 
-Un sac à 9 000 RMB n'y entre pas. Tout ce qui dépasse le plafond par commande
-doit passer par le régime général, ce qui suppose un importateur chinois de
-référence, droits et TVA au taux plein, et l'enregistrement du produit là où
-la catégorie l'exige. C'est un autre métier, celui que notre
+Un sac à 9 000 RMB passe de justesse. Seul dans sa commande, il peut
+encore emprunter la voie transfrontalière, mais il acquitte alors droits, TVA
+et taxe à la consommation au taux plein, et absorbe plus du tiers du plafond
+annuel de l'acheteur. Une gamme positionnée au-dessus du plafond bascule donc
+le plus souvent dans le régime général, ce qui suppose un importateur chinois
+de référence, une fiscalité pleine et l'enregistrement du produit là où la
+catégorie l'exige. C'est un autre métier, celui que notre
 [équipe de lancement cross-border](/fr/entrer-en-chine/lancement-cross-border)
 passe le plus clair de son temps à cartographier avant qu'une marque
 s'engage.

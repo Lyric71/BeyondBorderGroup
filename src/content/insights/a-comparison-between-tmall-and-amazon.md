@@ -2,7 +2,7 @@
 title: "Tmall vs Amazon: what a brand actually pays"
 description: "Amazon has had no China marketplace since 2019. Here is what Tmall Global charges instead, next to Amazon's own fee sheet, with the tax math."
 pubDate: "2023-02-02"
-updatedDate: "2026-10-02"
+updatedDate: "2026-10-13"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Tmall", "JD"]
@@ -184,9 +184,11 @@ The scheme has a ceiling, and it is per shopper, not per brand.
 > Source: Ministry of Commerce (商务部) policy database, 财关税〔2018〕49号,
 > January 2019. https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=65769
 
-A 9,000 RMB handbag does not fit. Anything above the single-order limit has
-to come in through general trade, which means a Chinese importer of record,
-full duty and VAT, and product registration where the category demands it.
+A 9,000 RMB handbag only just fits. It can come in alone in its order, but
+then it pays full duty, VAT and consumption tax, and it eats more than a third
+of the shopper's annual quota. A range priced above the limit usually ends up
+in general trade, which means a Chinese importer of record, full duty and VAT,
+and product registration where the category demands it.
 That is a different business, and it is the one our
 [cross-border setup team](/enter-china/cross-border-setup) spends most of its
 time mapping before a brand commits.

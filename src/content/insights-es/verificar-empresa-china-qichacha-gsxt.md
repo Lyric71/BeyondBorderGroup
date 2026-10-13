@@ -2,7 +2,7 @@
 title: "Cómo verificar una empresa china en GSXT y Qichacha"
 description: "Los ocho campos de GSXT y Qichacha que conviene revisar antes de firmar con una empresa china, y los antecedentes judiciales que deben frenar el trato."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-14"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: []
@@ -327,7 +327,10 @@ Lleve cada sentencia encontrada, con su número de caso, y pida explicaciones
 sobre cada una. Si el registro menciona a un dueño al que nunca ha visto,
 pregunte quién es. Pida el nombre de dos marcas que el distribuidor
 represente hoy y llámelas usted mismo, sin él al teléfono. Después, fije la
-fecha de la visita al almacén.
+fecha de la visita al almacén. Queda otra cuestión: si la empresa vende de
+verdad o se limita a intermediar. La resuelven nuestros
+[ocho controles para distinguir a un distribuidor real en China de un intermediario](/es/analisis/verificar-un-distribuidor-en-china),
+seis de los cuales se completan antes de esa primera llamada.
 
 El paso siguiente, de las llamadas a las cláusulas del contrato, se explica
 en nuestra guía para

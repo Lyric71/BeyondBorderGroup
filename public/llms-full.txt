@@ -117,7 +117,7 @@ Understanding and adapting to Chinese consumer trends, such as the rise of susta
 # Tmall vs Amazon: what a brand actually pays
 URL: https://www.thechinapath.com/insights/a-comparison-between-tmall-and-amazon
 Published: 2023-02-02
-Updated: 2026-10-02
+Updated: 2026-10-13
 Author: TheChinaPath
 Category: Platforms
 
@@ -289,9 +289,11 @@ The scheme has a ceiling, and it is per shopper, not per brand.
 > Source: Ministry of Commerce (商务部) policy database, 财关税〔2018〕49号,
 > January 2019. https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=65769
 
-A 9,000 RMB handbag does not fit. Anything above the single-order limit has
-to come in through general trade, which means a Chinese importer of record,
-full duty and VAT, and product registration where the category demands it.
+A 9,000 RMB handbag only just fits. It can come in alone in its order, but
+then it pays full duty, VAT and consumption tax, and it eats more than a third
+of the shopper's annual quota. A range priced above the limit usually ends up
+in general trade, which means a Chinese importer of record, full duty and VAT,
+and product registration where the category demands it.
 That is a different business, and it is the one our
 [cross-border setup team](/enter-china/cross-border-setup) spends most of its
 time mapping before a brand commits.
@@ -4352,14 +4354,27 @@ Finding and partnering with KOLs in China can be a transformative strategy for b
 
 
 ---
-# What China social media marketing costs per month
+# china-social-media-marketing-cost-per-month
 URL: https://www.thechinapath.com/insights/china-social-media-marketing-cost-per-month
-Published: 2026-09-29
-Updated: 2026-10-02
-Author: TheChinaPath
-Category: Market Strategy
 
-China social media marketing cost per month: content, paid media, and staff on Xiaohongshu, Douyin, WeChat, and Weibo, plus two year-one totals.
+---
+title: "What China social media marketing costs per month"
+description: "China social media marketing cost per month: content, paid media, and staff on Xiaohongshu, Douyin, WeChat, and Weibo, plus two year-one totals."
+pubDate: "2026-09-29"
+updatedDate: "2026-10-13"
+author: "TheChinaPath"
+category: "Market Strategy"
+platforms: ["Xiaohongshu", "Douyin", "WeChat", "Weibo"]
+tags: ["Social media", "Budgets", "Xiaohongshu", "Douyin", "WeChat", "Weibo"]
+keyTakeaways:
+  - "Building an audience on Xiaohongshu and WeChat runs about RMB 105,500 a month in our model. Xiaohongshu plus Douyin runs about RMB 127,200."
+  - "Every monthly social budget in China has three lines: creator content, paid media, and the people who run the accounts."
+  - "Sponsored creator posts averaged RMB 10,800 on Xiaohongshu and RMB 39,700 on Douyin in 2024, according to QuestMobile data."
+  - "The account itself is cheap. Xiaohongshu charges RMB 600 to verify a company account and RMB 600 a year to renew it."
+  - "Paid media is a small line next to creator fees, and it decides whether the creator money reaches anyone beyond the creators' own followers."
+heroImage: "/Images/insights/china-social-media-marketing-cost-per-month.webp"
+heroImageAlt: "Two young staff at a cluttered desk in a Wuhan office compare Xiaohongshu brand notes on a laptop and a WeChat article draft on a phone, a budget spreadsheet on the monitor behind them"
+---
 
 A foreign brand building an audience on two Chinese platforms should budget
 about RMB 105,000 to RMB 127,000 a month, roughly US$14,900 to US$17,900.
@@ -4432,15 +4447,14 @@ videos. The going rates sit far apart.
 > ran 13.7 of them a month on average.
 > Source: Jiemian (界面新闻), citing QuestMobile, March 2025. https://www.jiemian.com/article/12440261.html
 
-The platforms take a cut on top. Xiaohongshu charged brands 10% on deals
-booked through its creator marketplace when the rate was last reported, in
-2021. We found no newer public figure, so the model keeps 10%. Douyin's
-creator marketplace, Xingtu, takes a fee as well, and it won't book a small
-order.
+The platforms take a cut on top. Xiaohongshu adds a 10% platform service
+fee to the creator's price on deals booked through Pugongying, its creator
+marketplace, so the model keeps 10%. Douyin's creator marketplace, Xingtu,
+takes a fee as well, and it won't book a small order.
 
-> Xiaohongshu charged the brand a platform service fee of 10% of the deal
-> value on creator partnerships.
-> Source: Southern Weekend (南方周末), via Tencent News, November 2021. https://news.qq.com/rain/a/20211118A0DAAZ00
+> On Xiaohongshu's Pugongying (蒲公英) platform, a custom creator deal costs
+> the creator's flat price plus a 10% platform service fee.
+> Source: Xiaohongshu Pugongying help center, October 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=eb3150fa550d424459f8838a77c7e433&role=4
 
 > Xingtu recruitment tasks start at a RMB 10,000 order budget, with a 5%
 > platform service fee.
@@ -4530,7 +4544,7 @@ live. Only some of them are public.
 |---|---|---|---|
 | Douyin ads (Qianchuan) | RMB 100 a day per campaign plan | 0.6% on orders the ads generate, from 2026 | June 2025; January 2026 |
 | Douyin creators (Xingtu) | RMB 10,000 per recruitment task | 5% of the task value | August 2026 |
-| Xiaohongshu creators | None published | 10% of the deal value | November 2021 |
+| Xiaohongshu creators | None published | 10% on top of the creator's price | October 2026 |
 | Xiaohongshu ads | None published | None published | No public page found |
 | WeChat Moments ads | RMB 1,000 a day at auction; RMB 50,000 per reserved campaign | None published | Q2 2020 |
 | Weibo ads | No dated minimum published | None published | No dated page found |
@@ -4707,6 +4721,7 @@ month in our model. Anything smaller is an experiment, so set the date it
 stops and the number it has to reach.
 
 [Talk to us about a monthly China social budget, platform by platform and level by level](/contact)
+
 
 ---
 # China trade fairs to find a distributor in 2026-27
@@ -8810,6 +8825,319 @@ The empowerment of women entrepreneurs through digital commerce is a transformat
 
 
 ---
+# How to tell a real China distributor from a trading company
+URL: https://www.thechinapath.com/insights/find-distributor-china-verify
+Published: 2026-10-14
+Updated: 2026-10-14
+Author: TheChinaPath
+Category: Market Strategy
+
+A real China distributor holds stock and retail accounts. A trading company takes an order and leaves. Eight checks tell them apart, six from a desk.
+
+A real China distributor buys your stock, keeps it in its own warehouse and
+sells it to retailers it already supplies. A trading company takes an order,
+books a margin and moves on. To verify a China distributor, run eight checks.
+Six run on public records and storefronts, so you can finish them before
+the first call. The last two need a conversation.
+
+Both kinds of company turn up at the same fair booth, handing out the same
+card with "importer and distributor" printed under a WeChat QR code.
+
+The pool is big.
+
+> More than 780,000 businesses in China had import or export records in 2025.
+> Source: Xinhua (新华社), reporting General Administration of Customs
+> (海关总署) figures released at a State Council Information Office press
+> conference, January 2026.
+> https://www.news.cn/fortune/20260114/cde5cc17877d4284aac90e0c6ef48717/c.html
+
+Any of them can call itself a distributor. Far fewer will put a sales team
+behind a brand Chinese shoppers haven't heard of yet. The eight checks below are
+the ones our
+[guide to finding a distributor in China](/compass/find-a-distributor-in-china)
+lists. This piece adds the method behind each one, and the answers that should
+end the conversation. Every rule cited here was checked against its source on
+October 14, 2026.
+
+## Why the distinction matters more than category fit
+
+Brands usually screen for category first. Does this company sell cheese, or
+skincare, or pet food? It's a reasonable question asked too early, because a
+trading company can show category fit on a slide. It may well have shipped
+your category last quarter. Once.
+
+The real difference is what each company does with the goods after customs.
+
+A distributor puts its own money into stock and holds it until retailers
+buy. That's a heavy commitment, and the people who make it say so.
+
+> One distributor put a year in numbers: four to five million RMB spent on
+> stock, for less than 300,000 RMB of actual profit.
+> Source: Jiemian (界面新闻), carrying Kuaidao Caijing (快刀财经), July 2025.
+> https://www.jiemian.com/article/13003026.html
+
+Margins that thin make a real distributor picky. It will push hard on
+your price and on who pays for marketing, because the stock it buys from
+you is its risk until a store reorders.
+
+A trading company buys when a buyer has already placed an order, back to
+back, and its interest ends when that invoice clears. Your brand gets a
+first shipment and then silence. No one is selling it into stores, so no store
+reorders, and a stray pallet can turn up online below the shelf price you
+had planned.
+
+The people differ too. A distributor employs key-account managers who see
+buyers at chains like Sam's Club and Ole' every month. A trading company
+has a founder and a phone full of buyers' WeChat contacts. Ask about
+category once you know which of the two you're talking to.
+
+## Six checks to verify a China distributor before you call
+
+All six run on public records or public storefronts. A colleague in China,
+or a commercial database such as Qichacha (企查查), can pull most of them
+without ever contacting the candidate.
+
+### The business license, and who is on the payroll
+
+Pull the company record and read the business scope against your product.
+Our [Chinese company report checklist](/guides/verify-chinese-company-qichacha)
+covers the eight registry fields that matter, with a pass or stop box for
+each.
+
+Then find the headcount line. The annual report a company files on
+the national credit system (GSXT) states how many employees it insures, and
+the company can't hide that number.
+
+> Since the 2016 annual report, companies report the types of social
+> insurance they pay and their number of insured employees, and both items
+> must be public. The contribution base, the amount paid and any arrears are
+> the company's choice to publish.
+> Source: State Administration for Industry and Commerce, Ministry of Human
+> Resources and Social Security and National Bureau of Statistics, notice
+> 工商企监字〔2016〕226号, via the Qiaokou District Government of Wuhan
+> (武汉市硚口区人民政府), July 2023.
+> https://www.qiaokou.gov.cn/hdjl/cjwt/cjwt/201804/t20180427_147988.shtml
+
+A distributor that claims key-account teams in four cities and its own
+delivery vans can't run all that on three insured people. The figure sits
+in last year's report, and some firms pay staff through an outsourcing
+agency, so a low number is a question for the first call. Ask it.
+
+### The court and credit record
+
+One pattern matters more than the rest: suppliers suing the company over
+unpaid goods, in sale-of-goods disputes (买卖合同纠纷).
+
+A distributor sells on credit, so it will have some cases, mostly as the
+plaintiff chasing retailers for invoices. That's normal. A run of suits in
+which suppliers are the plaintiffs means it pays late, and you'd be its next
+supplier.
+
+Check the dishonest-debtor list (失信被执行人) too, for the company and its
+legal representative. The checklist above has a box for both.
+
+### Customs and category filings in its own name
+
+A company that will import for you has to be on the customs register itself.
+
+> A customs declaration entity is an importer or exporter of goods, or a
+> customs broker, that has filed with customs. Customs completes the filing
+> within three working days and publishes it on the China Customs enterprise
+> import and export credit platform.
+> Source: General Administration of Customs (海关总署), Decree 253,
+> Provisions on the Filing of Customs Declaration Entities, articles 2 and 7,
+> in force January 1, 2022, via the Ministry of Commerce (商务部) policy
+> database.
+> https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=92148
+
+Search the candidate's name on that platform. You want it filed as a
+consignee or consignor of imported and exported goods (进出口货物收发货人),
+in its own name. A trading company may not be. It brings goods in through
+an import agent that holds the filing, and customs only knows the agent.
+
+Food adds a second register.
+
+> Food importers must file with the entry-exit inspection authority, which
+> regularly publishes the lists of filed importers and registered overseas
+> producers.
+> Source: Ministry of Commerce (商务部) policy database, Food Safety Law
+> (食品安全法), article 96, as amended September 2025.
+> https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104105
+
+Then comes the sales permit. That's a food business license, or a simple
+filing for a company that sells prepackaged food only. Cosmetics and
+infant formula, to name two, run on regimes of their own. Whatever the
+category, the permit should carry the candidate's name.
+
+### The brands it carries today
+
+Take the logos off the deck and check them one at a time. With imported
+food, the pack tells you who brought it in.
+
+> Imported prepackaged food must carry a Chinese label stating the place of
+> origin and the name, address and contact details of the domestic agent.
+> Food without it may not be imported.
+> Source: Ministry of Commerce (商务部) policy database, Food Safety Law
+> (食品安全法), article 97, as amended September 2025.
+> https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104105
+
+Product photos on JD.com and on Tmall, Alibaba's marketplace for brands,
+often show the back label. If three of the
+"portfolio" brands name some other company as their agent, ask why. There
+can be a fair answer (the candidate sells, a separate importer clears), and
+it's better to hear it before the first call.
+
+Then pick two brands from the deck and email their export managers
+yourself. Ask what the candidate sells for them, and since when.
+
+### The retail accounts it names
+
+Ask for the account list in writing, then go and look. A distributor that
+says it supplies Ole' and Hema in East China should have its brands on those
+shelves in Shanghai and Hangzhou, and in those chains' own apps. If someone
+on your side visits China before the first call, two store walks will tell
+you more than the deck.
+
+Watch the verbs, too. "We work with" a chain can mean a direct supply
+contract, or a wholesaler two steps down that sells to it once a quarter.
+
+Write it down if the answer is "we cover all of China." No distributor
+does.
+
+### The stores it runs online
+
+Many distributors sell online as well, through stores of their own
+on Tmall, JD or Douyin, or as a supplier to the platforms' self-run arms.
+Their own stores are the easy part to check.
+
+> An online seller must continuously display its business license
+> information, or a link to it, in a prominent place on its store homepage.
+> Source: Cyberspace Administration of China (中央网信办), E-Commerce Law
+> (电子商务法), article 15, September 2018.
+> https://www.cac.gov.cn/2018-09/01/c_1123362506.htm
+
+Open the license badge on each store the candidate says it runs. The company
+named there should be the candidate, or a subsidiary that shows up in its
+registry record. If the store belongs to somebody else, you have found
+the company that actually sells.
+
+## The two checks that need a call
+
+These need the candidate across the table, or at least on a video call that
+walks you through the warehouse.
+
+### Sell-out data
+
+Ask for scan or depletion data from a brand like yours, with the name
+blacked out: units leaving each account, month by month, and how many days
+of stock sit in the warehouse. A distributor that sells into chains has
+this, because the chains send it.
+
+A trading company has sell-in, the orders it placed with brands. Sell-in
+tells you what went into a warehouse. Whether any of it left is a separate
+question, and sell-in can't answer it.
+
+### The team that would sell your brand
+
+Ask who, by name. Then ask where those people sit and how much of their
+week would go to you. Ask to meet the key-account manager
+as well as the business development director who staffed the fair booth.
+
+A real answer has names and cities in it. The red flag is a founder who
+pitches well and promises a dedicated team you never get to meet before
+signing.
+
+## The eight checks at a glance
+
+Print this and keep it next to the call notes.
+
+<div class="table-scroll">
+
+| Check | What to ask | What a real answer sounds like | What the red flag sounds like |
+|---|---|---|---|
+| License and headcount | "Can you send the license and your latest annual report?" | "Here they are. Most of our insured staff are in sales and the warehouse." | "We're lean. Our partners do the selling." |
+| Court and credit record | "Tell me about this case number." | "We sued a retailer over an unpaid invoice. It settled." | "That was the old company. Different people now." |
+| Customs and category filings | "Who is the consignee on your import declarations?" | "We are. Here's our customs filing and our food business license." | "Our partner holds the import license." |
+| Brands carried | "Which two brands can I call?" | Two brand names, two export managers, two email addresses | "Our brands are confidential." |
+| Retail accounts | "Which chains, in which cities?" | "Ole' and Hema in Shanghai and Hangzhou. Here's the store list." | "We cover all of China." |
+| Online stores | "Which stores do you run, under which company?" | "Our JD store, under this entity. Check the license badge." | "We have a WeChat account and a website." |
+| Sell-out data | "Can I see depletion data for a comparable brand?" | Monthly units by account and days of stock, brand name blacked out | Sell-in totals only, or "retailers don't share that." |
+| The team | "Who sells my brand, and how much of their week is mine?" | Named people in named cities, with a share of their week | "The founder handles key brands personally." |
+
+</div>
+
+## The three answers that end a conversation
+
+Some answers don't deserve a second meeting.
+
+**"Our partner holds the license."** Then the partner is your importer, and
+the company in front of you sits between you and it, taking a cut. Meet the
+partner instead.
+
+**"Ship the first order on consignment. We'll pay as it sells."** Buying
+stock and carrying the risk is what a distributor does for a living. A
+company that won't buy your first order wants you to carry its risk while
+it finds out whether your brand sells itself.
+
+**"We'll register your trademark here for you."** China gives a trademark to
+whoever files first. File in your own company's name before the first
+meeting, and never let a candidate file on your behalf.
+
+## What a vetted shortlist actually looks like
+
+Run the six desk checks on a long list and it gets short quickly. That's
+the point of doing them before anyone books a flight.
+
+Compass, our database of distributors and partners in China, works from the
+other end. We have met every company in it in person, and we file each one
+under the categories we have seen it sell.
+
+> A typical Compass shortlist runs three to five distributors, usually two
+> to three weeks from the brief.
+> From Compass, September 2026.
+
+Each name comes with a short note on its strengths and weak spots, and on
+where to push in the negotiation. The two call checks still happen: you
+meet the team and read the sell-out data. You just start from companies
+that have already cleared the first six.
+
+Compass takes no commission from the partners in it, so no partner pays us
+to put its name on your list. The shortlist itself is project-based, quoted after
+the first call.
+
+Signing is where the work begins. Langnese had stable distribution in China
+and falling sales. The brand and its distributor agreed nine growth pillars
+and opened regional channels where the honey had never sold before; the
+[Langnese case](/work/langnese) shows how. Brands that want the search and
+the negotiation run for them use our
+[distributor sourcing and management](/enter-china/distribution) work, and
+the database itself is at [Compass](/compass).
+
+## Questions buyers ask
+
+**What's the difference between an importer and a distributor in China?**
+
+An importer clears customs and puts the Chinese label on your pack. A distributor sells to retailers and keeps stock for
+them. Some companies do both. Plenty of importers only move boxes, so if the
+company you sign has no sales team, you'll need someone else who sells.
+
+**Can I verify a China distributor from outside China?**
+
+Mostly. Commercial databases such as Qichacha and Tianyancha (天眼查) work
+from abroad and copy the registry and court data, and store license badges on Tmall, JD and Douyin are public. The national credit
+system refused our requests from outside mainland China in September 2026,
+so have someone in China confirm the credit code before you sign.
+
+**Does a trading company ever make sense?**
+
+Sometimes, as an importer of record when you already have a distributor that
+doesn't import, or your own sales team. Then hire it as a service provider,
+paid per shipment, with no exclusivity and no say over your trademark. The
+selling still needs a distributor, or your own team.
+
+[Get a Compass shortlist of distributors already selling your category](/contact#shortlist)
+
+---
 # How Foreign Brands Test the Chinese Market. And Why Most Get It Wrong.
 URL: https://www.thechinapath.com/insights/foreign-brands-in-china-why-most-market-tests-fail
 Published: 2026-03-25
@@ -12040,109 +12368,343 @@ In the next five years, I anticipate a convergence of eCommerce approaches acros
 
 
 ---
-# optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+# How to choose an influencer in China who sells
 URL: https://www.thechinapath.com/insights/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+Published: 2023-11-17
+Updated: 2026-10-14
+Author: TheChinaPath
+Category: KOLs & Livestream
 
----
-title: "Optimizing Your Brand: Choosing the Right Influencer"
-description: "How to choose the right influencer for your brand: the main influencer types, what to check before you sign, and the tools that speed up the search."
-pubDate: "2023-11-17"
-author: "TheChinaPath"
-category: "KOLs & Livestream"
-tags: ["influencer marketing", "social media", "brand strategy", "KOL", "engagement"]
-heroImage: "/Images/insights/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china.jpg"
-heroImageAlt: "Professional woman smiling at camera"
-legacyUrl: "https://beyondbordergroup.com/optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china/"
----
+Pick a China influencer by settled sales: what Douyin shows a brand about a creator, what creators cost, fake-follower fines and the ad rules you sign.
 
-[Influencer marketing](/social-in-china) has emerged as a powerhouse strategy, especially with the surge of platforms like Instagram and TikTok. As business owners navigate this dynamic advertising space, the key to success lies in finding the right influencers to elevate their brand's reach and engagement. However, success in influencer marketing hinges on one crucial factor: choosing the right influencers for your brand.
+Choose an influencer in China by what they have already sold. On Douyin,
+the creator's page in the affiliate plaza shows settled sales after
+refunds, buyer reviews and the categories they move. Start on commission,
+at 5% to 50% of each order, and write China's advertising rules into the
+contract. The brand answers for what the creator says.
 
-Let's look into the essential aspects of influencer marketing and guide you through the process of selecting the perfect influencer for your brand.
+Updated October 14, 2026. The November 2023 version of this page sorted
+influencers into follower tiers borrowed from Instagram and TikTok and
+quoted a survey figure with no source. This version works from Douyin's
+and Xiaohongshu's own rule books, the livestream regulation in force since
+February 2026 and our Douyin cost calculator.
 
-## What is an influencer?
+China calls them 达人 (creators) or KOLs, and the deal comes in four shapes.
 
-[Social media](/grow-in-china/social-commerce) influencers are individuals who wield significant influence over their followers, impacting their opinions and purchasing decisions. These individuals have mastered the art of creating compelling content that resonates with their audience, building a loyal community around their persona. From lifestyle enthusiasts to niche experts, influencers come in various shapes and sizes, making it essential to understand the dynamics of each type.
+<div class="table-scroll">
 
-## The Influencer Advantage
+| Deal | How the brand pays | Platform's cut | Reference price (RMB) |
+|---|---|---|---|
+| Douyin affiliate program (精选联盟) | Commission on orders the buyer keeps | Paid by the creator: 10% to 40% of the commission | 5% to 50% of the order on open plans, up to 80% on some named-creator plans |
+| Douyin sponsored video, booked on Xingtu | Flat fee per video, priced by length | 5% service fee on recruitment tasks | 39,700 average per sponsored post (2024); tasks from 10,000 |
+| Xiaohongshu (RedNote) sponsored note, booked on Pugongying | The creator's flat price | 10% on top of the price | 10,800 average per sponsored post (2024) |
+| Dedicated livestream with a top host | Event fee plus commission | Not published | 1 million to 3 million per event plus 10% to 20% (2024 interview) |
 
-Influencers serve as more than just conduits for brand messages; they are trusted voices in a sea of digital noise. Their authenticity and relatability make them a viable advertising channel. Studies show that consumers are more likely to trust recommendations from influencers they follow than traditional advertising. Using this trust can significantly enhance the effectiveness of your marketing efforts.
+</div>
 
-## The Trust Quotient
+Only the first row pays purely for sales you can count. The others buy
+attention up front, and you learn afterward whether it sold.
 
-In a world saturated with advertisements, trust has become a scarce commodity. Influencers bridge this trust gap by creating genuine connections with their followers. The authenticity portrayed in their content fosters trust, making their recommendations more impactful. As consumers increasingly seek authenticity, aligning your brand with influencers who genuinely resonate with their audience can build trust and credibility for your products or services.
+> A manager at Chinese apparel maker Yalu Group (雅鹿集团) put a top host's
+> dedicated session at 1 million to 3 million RMB, with commission of about
+> 10% to 20%, based on the company's past collaborations.
+> Source: Xinhua (新华网), August 2024. https://www.news.cn/fortune/20240804/ec11b5b85b514e8b9332998d0b23b020/c.html
 
-## Types of Influencers
+## Followers are the wrong first number
 
-Understanding the various types of influencers is crucial when selecting the right fit for your brand. Each category comes with its unique advantages and considerations.
+The old advice was to pick a tier, from nano to mega. On Douyin, most of
+the money sits below the top tier.
 
-### Nano-influencers (1000-10,000 followers)
+> More than 570,000 creators doubled their sales year on year during Douyin
+> Mall's 618 festival in 2026, and creators with fewer than 1 million
+> followers drove more than 80% of creator sales.
+> Source: China National Radio (央广网), citing Douyin's 2026 618 data
+> report, June 2026. https://www.cnr.cn/mspd/jrhm/20260620/t20260620_527669642.shtml
 
-While their reach may be smaller, nano-influencers often boast highly engaged and dedicated followers. They are ideal for niche markets and can provide a more personalized touch to your brand promotion.
+Douyin itself grades creators by money. Every month, on the 8th, it sets
+each creator's level from the previous month's settled sales: what buyers paid, minus refunds filed within seven days, minus
+orders the platform flags as abnormal.
 
-### Micro-influencers (10,000-50,000 followers)
+<div class="table-scroll">
 
-Striking a balance between reach and engagement, micro-influencers offer a broader audience without compromising the close-knit community feel. They are often seen as more relatable figures.
+| Douyin creator level | Settled sales in the previous month (RMB) |
+|---|---|
+| L1 | Up to 30,000 |
+| L2 | 30,000 to 300,000 |
+| L3 | 300,000 to 1 million |
+| L4 | 1 million to 3 million |
+| L5 | 3 million to 10 million |
+| L6 | 10 million and above |
 
-### Mid-tier influencers (50,000-250,000 followers)
+</div>
 
-This category combines substantial reach with a considerable level of influence. Mid-tier influencers can appeal to a broader audience while still maintaining a personal connection.
+> Douyin grades creators from L0 to L6 on the 8th of each month, by the
+> previous month's paid sales net of refunds within seven days and of
+> abnormal orders.
+> Source: Douyin E-commerce (抖音电商), creator level rules, revised March
+> 2026. https://school.jinritemai.com/doudian/web/articlev0/aHRbnsP5fSGu
 
-### Macro-influencers (250,000-1,000,000 followers)
+A creator at L3 sold more than 300,000 RMB of goods last month that buyers
+didn't send back. A creator with 3 million followers and no level has sold
+nothing you can see.
 
-With a significant following, macro-influencers provide a wide reach. Ideal for brands with broader target demographics, they bring a balance of influence and scale.
+One warning about agency decks. Some still quote a creator's "reputation
+score" (带货口碑分). It's gone.
 
-### Mega-influencers (1,000,000+ followers)
+> Douyin abolished its creator reputation score rule on April 1, 2025, and
+> took the score off creator showcases and profile pages by the end of that
+> month.
+> Source: Douyin E-commerce (抖音电商), rule repeal notice, March 2025.
+> https://school.jinritemai.com/doudian/web/articlev0/aJNmFjfDRcGA
 
-Boasting celebrity-like status, mega-influencers offer massive reach. However, their impact may be more diluted, and partnering with them can be costlier.
+## Read the creator's page before you send a sample
 
-## Factors to Consider When Choosing an Influencer
+A merchant on Douyin finds creators in the affiliate program's creator
+plaza (达人广场). It ranks them by settlement rate and flags creators whose
+linked companies carry a risk warning. Each page holds more than most
+agency decks.
 
-Choosing the right influencer for your brand is a critical step in developing a thriving social media campaign. Here are essential elements to keep in mind:
+> A creator's page in Douyin's creator plaza shows recent settled sales,
+> livestream and video results, followers by gender, age, activity and
+> device, the main categories sold, and earlier brands' reviews of the
+> creator's delivery and communication.
+> Source: Douyin E-commerce Learning Center (抖音电商学习中心), creator plaza
+> guide, March 2026. https://school.jinritemai.com/doudian/web/article/110796
 
-**1. Define Your Niche or Target Reach**
+Read the settlement rate first. It's the share of sales still standing
+after refunds, and Douyin now prices it into the creator's own costs.
+Since July 8, 2026, a creator with a weak rating pays Douyin a bigger
+share of every commission.
 
-Identify influencers who match your brand's niche or target audience. Their content should resonate with your intended customer base.
+> Creators rated A, B+ or B pay Douyin a technical service fee of 10% of
+> their commission, creators rated C pay 20% and creators rated D pay 40%.
+> The rating counts settled sales seven days after purchase against paid
+> sales, and requires a clean record on fake orders.
+> Source: Douyin E-commerce Learning Center (抖音电商学习中心), affiliate fee
+> rule explainer, October 2026. https://school.jinritemai.com/doudian/web/articlev0/aJkY84jEGbWa
 
-**2. Understand Your Audience**
+That matters to you twice. A low-rated creator returns fewer kept orders
+for the same sample, and will ask for a higher commission to cover the
+platform's bigger cut.
 
-A thorough comprehension of your audience ensures that an influencer's content will engage and appeal to potential customers.
+So the shortlist comes from four reads: the creator's level, the
+settlement rate, the categories sold in the last three months, and two or
+three full livestream replays. Watch the replays. A host who can't explain
+an ingredient in Chinese without a script won't sell your serum either.
 
-**3. Assess Followers and Engagement Rates**
+Xingtu (巨量星图), Douyin's marketplace for sponsored video, shows a
+different card: an index for reach, value and follower growth, expected
+plays and an estimated cost per thousand views built from the creator's
+latest quote. Use it to compare prices (our
+[China media page](/grow-in-china/media) covers the buying). It tells you
+less about sales.
 
-Verify the legitimacy of an influencer's following by examining their engagement rates. High engagement indicates an active and interested audience.
+## Fake followers cost pennies, and the fines are real
 
-**4. Consider Pricing**
+A fake follower costs one or two US cents. A case from 2025 puts an exact
+price on it.
 
-Understand an influencer's pricing structure and ensure it aligns with your budget while delivering the desired return on investment.
+> A media company in Xichong, Sichuan, ran 1,200 phones to sell fake
+> followers to merchants on livestream platforms at 0.07 to 0.15 RMB each,
+> taking about 5,800 orders for some 2.7 million fake follows. Regulators
+> confiscated and fined 270,000 RMB in September 2025.
+> Source: State Administration for Market Regulation (市场监管总局),
+> livestream e-commerce cases, November 2025. https://www.samr.gov.cn/xw/zj/art/2025/art_cb90a1860b3d4cd18c87b1fa35baeeff.html
 
-**5. Platform Selection**
+Douyin punishes the creator too. A creator caught on fake transactions pays
+a penalty of 1% of the faked amount, at least 1,000 RMB and at most 20,000
+RMB, and the worst cases lose product sharing for good.
 
-Different platforms attract distinct audiences. Choose influencers based on where your target audience is most active.
+> Douyin charges creators found running fake transactions a penalty of 1% of
+> the fake payment amount, from 1,000 to 20,000 RMB, and can close their
+> product-sharing function permanently.
+> Source: Douyin E-commerce (抖音电商), fake transaction rules, August 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/113470
 
-**6. Create a Compelling Outreach**
+Xingtu, the sponsored-video side, keeps its own ban list.
 
-When contacting influencers, craft a compelling message highlighting the advantages of collaboration and resonating with their values.
+> Xingtu treats faked follows, likes, comments or conversions as a
+> violation, with penalties up to a ban, and cuts off order-taking for any
+> creator whose main Douyin account shows serious follower fraud.
+> Source: Ocean Engine Xingtu (巨量星图) creator management rules, October
+> 2026. https://www.xingtu.cn/help-center/author/134035
 
-**7. Be Alert to Warning Signs**
+Then there's the state. On September 30, 2026, the Cyberspace
+Administration of China (CAC) announced a two-month campaign against fake
+creator personas.
 
-Stay vigilant for potential red flags such as fake followers, inconsistent content quality, or a history of controversial behavior.
+> The CAC's two-month campaign targets short-video accounts that invent
+> credentials, fake public figures with AI for endorsements and marketing,
+> or mass-produce personas through MCN account matrices.
+> Source: Cyberspace Administration of China (中央网信办), September 2026.
+> https://www.cac.gov.cn/2026-09/30/c_1792520301987752.htm
 
-## Power of Influencer Marketing Tools
+The check for a brand takes five minutes. Compare views with sales. A
+creator whose videos draw a million plays and whose page shows almost no
+settled sales has an audience that doesn't buy, or one that doesn't exist.
 
-In the digital landscape, influencer marketing tools play a central role in boosting campaign success. According to recent surveys, 78% of marketers attribute these tools to positively impacting their [campaigns](/grow-in-china/campaigns).
+## Pay on commission first, then buy reach
 
-Influencer marketing platforms simplify the influencer discovery process, allowing for the swift identification of potential collaborators within your niche or target market.
+Commission puts the risk on the creator. Douyin pays it only on orders the
+buyer keeps.
 
-## Benefits of Using Influencer Marketing Platforms
+> A brand sets creator commission at 5% to 50% of the order on plans open
+> to all creators, and at 5% to 80% on some plans for named creators.
+> Douyin settles it 15 days after the buyer confirms receipt. If an order
+> is refunded within the after-sale period, the commission is cancelled,
+> and commission already settled is clawed back.
+> Source: Douyin E-commerce (抖音电商), affiliate settlement rules, October
+> 2026. https://school.jinritemai.com/doudian/web/articlev0/112620
 
-* **Boosts Search Efficiency:** Streamlines the discovery of influencers, facilitating quick identification of potential collaborators.
-* **Provides Audience Insights:** Furnishes comprehensive information about an influencer's audience, ensuring alignment with your target demographic.
-* **Ensures Quality Evaluation:** Access engagement metrics and content analysis to assess an influencer's authenticity and performance.
-* **Simplifies Campaign Management:** These platforms can streamline collaboration, track campaign progress, and even manage payment processing.
-* **Offers Detailed Reporting:** Many tools provide comprehensive reporting, measuring the success of influencer campaigns.
+Run the numbers at scale. Our
+[Douyin cost calculator](/tools/douyin-cost-calculator) starts from 2
+million RMB of first-year sales, 80% of them through creators, at a 20%
+commission and a 250 RMB basket. That's 1.6 million RMB of creator sales
+and 320,000 RMB of commission, or 50 RMB on each of 6,400 orders
+(TheChinaPath calculator data, October 2026).
 
-Choosing the right influencer for your brand is a strategic decision that can significantly impact your marketing success. By considering factors like niche alignment, audience relevance, and using influencer marketing tools, you position your brand for increased visibility and engagement. In a digital landscape where authenticity and connection are paramount, selecting the perfect influencer is the key to tapping the full potential of your social media campaigns.
+Now set that against a flat fee. One sponsored video at Douyin's 2024
+average of 39,700 RMB costs the same as the commission on 794 of those
+orders, close to 200,000 RMB of sales (our arithmetic). A flat-fee video
+has to sell that much before it beats paying on results.
 
+> Sponsored creator posts averaged 39,700 RMB each on Douyin and 10,800 RMB
+> on Xiaohongshu from January to October 2024.
+> Source: Jiemian (界面新闻), citing QuestMobile, March 2025. https://www.jiemian.com/article/12440261.html
+
+Flat fees still have a job. A creator with no selling record but the right
+audience can be tested cheaply on Xingtu, where a recruitment task opens
+at 10,000 RMB.
+
+> Xingtu recruitment tasks start at a 10,000 RMB budget, with a 5% platform
+> service fee, for creators with 1,000 to 5 million followers.
+> Source: Ocean Engine Xingtu (巨量星图) help center, August 2026.
+> https://www.xingtu.cn/help-center/demander/126583
+
+On Xiaohongshu, the brand pays the creator's price plus 10%.
+
+> On Xiaohongshu's Pugongying (蒲公英) platform, a custom creator deal costs
+> the creator's flat price plus a 10% platform service fee: 11,000 RMB on a
+> 10,000 RMB quote.
+> Source: Xiaohongshu Pugongying help center, October 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=eb3150fa550d424459f8838a77c7e433&role=4
+
+A commission deal needs a Douyin store for the creator to link to. For a
+foreign brand that usually means a Douyin Global store, often run by a
+Douyin Partner, and our
+[Douyin Partner finder](/compass/find-a-douyin-partner-in-china) lists
+what to check in one. Seeding, where the job is awareness rather
+than orders, belongs to [TheRedScroll, the group's China social media
+agency](https://www.theredscroll.com).
+
+## What Chinese law puts on the brand
+
+This is the part the 2023 page skipped. In China, a brand that sells
+through a livestream is the advertiser in the eyes of the law, and the
+creator who vouches for the product is its endorser.
+
+> A seller that promotes goods through a livestream that amounts to a
+> commercial ad bears the advertiser's duties; a host who recommends goods
+> in their own name bears the endorser's duties.
+> Source: State Administration for Market Regulation (市场监管总局), Internet
+> Advertising Measures, Order No. 72, February 2023. https://www.gov.cn/gongbao/2023/issue_10506/202306/content_6885261.html
+
+The endorser's duties come from the Advertising Law. A creator may only
+vouch for goods they've used. For goods that bear on health, the creator
+shares liability for a false ad whether or not they knew it was false, and
+the brand that hired them is on the hook as the advertiser.
+
+> An endorser may not recommend goods it has not used or services it has
+> not received. For false ads of goods or services bearing on consumers'
+> life and health that cause harm, the endorser is jointly liable with the
+> advertiser.
+> Source: State Administration for Market Regulation (市场监管总局),
+> Advertising Law, articles 38 and 56, as amended April 2021. https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_5474cf75173c45d6a0379730fb4e8d97.html
+
+And regulators fine the brand. In 2025 it cost one seller of a health food
+100,000 RMB.
+
+> A trading company in Dongying hired a host who claimed on a February 2025
+> livestream that its health food had sold 21.85 million orders and that
+> anyone over 14 could take it. Regulators fined the company 100,000 RMB in
+> August 2025.
+> Source: State Administration for Market Regulation (市场监管总局),
+> livestream e-commerce cases, November 2025. https://www.samr.gov.cn/xw/zj/art/2025/art_cb90a1860b3d4cd18c87b1fa35baeeff.html
+
+Since February 1, 2026, whoever runs a live room also has to check the
+host. That's the brand when the brand runs its own room.
+
+> A live-room operator must verify each host's name, ID, address, agency
+> and relevant qualifications, report the verified details to the platform
+> before every stream and keep the records for at least three years. An
+> operator that fails the checks and doesn't correct them faces a fine of
+> 10,000 to 100,000 RMB.
+> Source: Cyberspace Administration of China (国家网信办), Livestream
+> E-commerce Supervision Measures, SAMR and CAC Order No. 117, January
+> 2026. https://www.cac.gov.cn/2026-01/07/c_1769516655383334.htm
+
+Disclosure is the other line. A review or "experience" post that carries a
+buy link has to say 广告 (advertisement), in plain view.
+
+> Goods promoted through knowledge sharing, experience sharing or consumer
+> reviews with a shopping link attached must be clearly labelled
+> "advertisement".
+> Source: State Administration for Market Regulation (市场监管总局), Internet
+> Advertising Measures, Order No. 72, article 9, February 2023. https://www.gov.cn/gongbao/2023/issue_10506/202306/content_6885261.html
+
+Xiaohongshu enforces its own version. Since January 12, 2026, it has
+cracked down on creator deals that skip Pugongying, limiting the notes and,
+for repeat cases, the brand's own accounts.
+
+> From January 12, 2026, Xiaohongshu targets KOC and KOL deals taken
+> outside the official partnership platform without being reported, with
+> penalties from limiting the notes' reach to restricting the brand
+> account's posting and exposure for repeat cases.
+> Source: Xiaohongshu Pugongying help center, brand trust notice, August
+> 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=1627df51a4c861f13e462aa2067d6c15&role=4
+
+So the creator contract carries a few lines most templates leave out:
+
+- The creator confirms in writing that they have used the product.
+- Every claim about efficacy, sales or rankings comes from a list the brand
+  approved, with the evidence on file.
+- Posts with a buy link carry the 广告 label, and Xiaohongshu deals go
+  through Pugongying.
+- Commission follows Douyin's settlement, so refunds come off.
+- Fake data ends the contract, and the creator repays what they earned.
+
+Put them in before the first sample ships. Renegotiating after a fine is
+harder.
+
+## FAQ
+
+### How much does an influencer cost in China?
+
+On commission, nothing up front: Douyin creators take 5% to 50% of each
+kept order on open plans. Flat-fee posts averaged 39,700 RMB on Douyin and
+10,800 RMB on Xiaohongshu in 2024, according to QuestMobile data, before
+Xiaohongshu's 10% service fee. A test task on Xingtu starts at 10,000 RMB.
+
+### Do follower counts matter at all?
+
+They measure reach. During Douyin's 618 festival in 2026, creators with
+fewer than 1 million followers drove more than 80% of creator sales. Douyin's own creator levels run on settled sales after
+refunds, which is the better number to shortlist on.
+
+### Who is liable if a creator makes a false claim?
+
+Both of you, often. The seller behind a livestream ad carries the
+advertiser's duties, and the creator carries the endorser's. For health
+products, the creator is jointly liable even without knowing the claim was
+false. Chinese regulators fined one brand 100,000 RMB in 2025 for what its
+host said on air.
+
+### How fast can we tell whether a creator works?
+
+Within a month. Douyin settles commission 15 days after the buyer confirms
+receipt and claws back refunds, so the kept-order count firms up a couple
+of weeks after the stream.
+
+[Plan a commission-first creator program with our social commerce team](/grow-in-china/social-commerce)
 
 ---
 # Payment terms with a Chinese distributor
@@ -14883,6 +15445,271 @@ Put your own return rate and the 15 RMB handling cost into the
 lock the Double 11 budget.
 
 [Talk to us about running your Tmall Global store](/grow-in-china/cross-border-ecommerce)
+
+---
+# Tmall Global importer of record: who fills the role
+URL: https://www.thechinapath.com/insights/tmall-global-importer-of-record
+Published: 2026-10-14
+Updated: 2026-10-14
+Author: TheChinaPath
+Category: Compliance & Setup
+
+Tmall Global has no importer of record. Your overseas company owns the stock, a mainland agent clears it and a TP runs the store. What each one costs.
+
+Nobody, in the sense you mean. Tmall Global has no Chinese importer of
+record: your overseas company sells and owns the goods, and each parcel
+clears customs as the shopper's own import. You still need a mainland
+company that registers with customs and shares liability, and a bonded or
+direct-mail logistics route. You'll probably hire a Tmall Partner (TP) too.
+
+The question usually comes from a brand that already imports somewhere. In
+the US or the EU, someone on the ground files the entry and owns the duty.
+China has that route too. It's called general trade (一般贸易): a Chinese
+importer declares the goods, pays full duty and VAT, puts on the Chinese
+label and holds the product filings, then sells to distributors and stores.
+
+Tmall Global, Alibaba's marketplace for imported goods, runs on the other
+route, cross-border retail import. The shopper buys from you abroad.
+
+> In cross-border retail import, the seller is the overseas-registered
+> company selling to mainland shoppers and the owner of the goods. The goods
+> are supervised as personal-use imports, with no first-import permit,
+> registration or filing required.
+> Source: Ministry of Commerce and five other agencies (商务部等六部门),
+> 商财发〔2018〕486号, November 2018.
+> https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5437823.htm
+
+So the job an importer of record does in general trade gets split across
+several companies on Tmall Global.
+
+## Tmall Global importer of record duties: who holds each one
+
+<div class="table-scroll">
+
+| Role | On Tmall Global | In general trade | Who usually fills it | Cash at our calculator defaults, RMB |
+|---|---|---|---|---|
+| Overseas selling entity | Required. It opens the store and owns the stock | Optional. It sells to the importer | Your own company outside mainland China | 50,000 deposit, refundable, plus a 30,000 annual fee |
+| Mainland agent | Required by customs. It registers, declares and shares liability | Not used | The TP or the bonded warehouse, sometimes through its customs broker | 0 in our default, since the TP or warehouse covers it |
+| Tmall Partner (TP) | Optional. Tmall must be told who runs the store | Not used for store shelves | A store-operations agency, paid a retainer and a share of sales | 35,000 a month plus 10% of sales |
+| Logistics provider | Required. A bonded warehouse (1210) or a direct-mail forwarder (9610) | A freight forwarder and a customs broker | A bonded warehouse operator in China, or a forwarder at home | 400,000 before the first order on the bonded route |
+| Importer of record | Not used. Each parcel clears as the shopper's import | Required. It declares, pays full duty and VAT, holds filings | The distributor, or an importer that sells to it | Carried by the importer, inside its price |
+| Distributor | Not used | Required for supermarket and store shelves | A Chinese company that buys your stock and resells it | None from you. It keeps a margin |
+
+</div>
+
+Cash column: TheChinaPath calculator data, October 2026, packaged-food
+category at the model's defaults. The roles come from the rules cited below,
+all checked on October 13, 2026.
+
+The overseas entity is the one fixed piece. Tmall Global won't take anything
+else.
+
+> Merchants must be companies with qualifications outside mainland China and
+> an overseas registered trademark. The store entity must be a company
+> overseas or in Hong Kong, Macau or Taiwan, and the merchant must give
+> Tmall Global the identity and details of any agent operator running the
+> store.
+> Source: Tmall Global (天猫国际), Merchant Acceptance Standards
+> (天猫国际招商标准), in force March 2025.
+> https://rule.tmall.hk/?type=detail&ruleId=11003210&cId=624#/rule/detail?ruleId=11003210&cId=624
+
+## The mainland agent is the closest thing to an importer of record
+
+This is the role buyers miss. The seller can stay offshore. Customs still
+wants a mainland name on the file.
+
+> A cross-border retail import seller must appoint a company registered in
+> mainland China. That company registers with customs, is responsible for
+> truthful declaration, accepts supervision and bears joint civil liability
+> with the seller.
+> Source: Ministry of Commerce and five other agencies (商务部等六部门),
+> 商财发〔2018〕486号, article 4, November 2018.
+> https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5437823.htm
+
+In practice it rarely costs a separate fee. Our
+[Tmall Global calculator](/tools/tmall-global-setup-and-run) carries a line
+for a clearance agent and leaves it at zero by default, because on the
+bonded route the TP or the warehouse usually takes the job. Read the
+contract anyway. Joint liability means that company answers for your
+declarations, so it will check your product data before it files, and
+you'll want to know who holds the customs registration if you change
+partners.
+
+Food is now stricter.
+
+> Since May 27, 2026, Tmall Global stores in food, infant formula and baby
+> food, and supplements and tonics must file a mainland company's business
+> license and food business license, its legal representative's ID, and a
+> cross-border retail import food entrusted-operation agreement. Tmall gives
+> food recall duties as the reason.
+> Source: Tmall Global (天猫国际), notice on the Merchant Qualification
+> Standards (天猫国际商家资质标准), May 2026.
+> https://rule.tmall.hk/?type=detail&ruleId=20010174&cId=636#/rule/detail?ruleId=20010174&cId=636
+
+That company still isn't an importer of record, and the goods stay yours.
+But a food brand now needs a licensed mainland partner on file before the
+store opens. Find out which company your TP plans to put there.
+
+## 1210 bonded vs 9610 direct mail
+
+Customs gives the two cross-border routes a code each.
+
+> Cross-border retail imports reach the shopper either as bonded online
+> purchases (网购保税进口, customs code 1210) or as direct purchases
+> (直购进口, customs code 9610), and the goods must be on the cross-border
+> retail import list.
+> Source: Ministry of Commerce and five other agencies (商务部等六部门),
+> 商财发〔2018〕486号, article 1, November 2018.
+> https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5437823.htm
+
+Under 1210 you ship stock in bulk to a bonded warehouse in China before
+anyone orders. It clears one parcel at a time when a shopper pays, so
+delivery is domestic. Under 9610 the order ships from abroad, parcel by
+parcel, and nothing sits in China.
+
+The tax is the same on both.
+
+> Within the limits, cross-border retail imports pay 0% duty, and import VAT
+> and consumption tax are charged at 70% of the statutory amount.
+> Source: Ministry of Finance, General Administration of Customs and State
+> Taxation Administration (财政部 海关总署 税务总局), 财关税〔2016〕18号,
+> March 2016. http://www.mof.gov.cn/gp/xxgkml/gss/201603/t20160324_2510682.htm
+
+For most goods that works out to 9.1% (13% VAT times 70%), usually paid by
+the shopper at checkout.
+
+Cash isn't. Bonded means money in China up front. Our
+calculator puts a 100,000 RMB warehouse deposit and a 300,000 RMB tax
+prepayment ahead of the first order, out of 505,000 RMB in total before day
+one (about US$71,000 at a 7.1 planning rate), so the warehouse ties up more
+than the platform deposit, the annual fee and the store build combined. Then
+it charges per order: 17.35 RMB at the defaults (storage, pick and pack, last
+mile and a 5% return allowance), or 6.9% of a 250 RMB basket.
+
+TheChinaPath calculator data, October 2026.
+
+Direct mail skips the deposit and puts the wait on the shopper instead (a
+parcel from Europe doesn't land overnight). It suits a test, or a long tail
+of slow sellers. Pick one route per product
+and label it honestly, because Tmall checks.
+
+> A product listed as a mail-declared, overseas direct-mail item that is
+> actually shipped from a bonded warehouse in China is deleted, and a store
+> caught three times is closed.
+> Source: Tmall Global (天猫国际), Market Management Rules
+> (天猫国际市场管理规则), in force May 2026.
+> https://rule.tmall.hk/?type=detail&ruleId=11004788&cId=628#/rule/detail?ruleId=11004788&cId=628
+
+## When a distributor comes in
+
+A distributor belongs to general trade. It shows up when you want something
+cross-border can't do, and there are two common triggers.
+
+The first is a physical shelf. Cross-border stock is meant for single
+parcels to shoppers, and the rules keep it there.
+
+> Goods bought through cross-border e-commerce are final goods for the
+> shopper's personal use and may not be resold in the domestic market.
+> Bonded online-purchase goods are in principle not allowed to run a
+> "bonded plus offline pickup" model outside special customs zones. A single
+> item priced above the 5,000 RMB per-order limit may still come in alone in
+> its order, paying full duty, VAT and consumption tax.
+> Source: Ministry of Finance, General Administration of Customs and State
+> Taxation Administration (财政部 海关总署 税务总局), 财关税〔2018〕49号,
+> November 2018. https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=65769
+
+So supermarkets and restaurants get their goods through general trade, and
+someone has to be the importer of record. Usually it's the distributor
+itself, or an importer that sells to it. Budget the time, too: in our own
+work, a distributor contract takes three to five months from the first
+meeting to a signature.
+
+The second is a product the cross-border route can't carry at all:
+anything missing from the cross-border retail import list, or an order that
+would take a shopper past the 26,000 RMB annual quota.
+
+Either way, general trade brings the paperwork back. For food, the importer
+files with customs and your plant has to be registered. The pack needs a
+Chinese label as well.
+
+> Imported prepackaged food must carry a Chinese label stating the origin
+> and the name, address and contact of the domestic agent, or it may not be
+> imported. Food importers and overseas exporters must file with the
+> inspection authority, and overseas food plants must be registered.
+> Source: Ministry of Commerce (商务部) policy database, Food Safety Law
+> (食品安全法), articles 96 and 97, as amended September 2025.
+> https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104105
+
+Once a distributor owns the stock, it also sets the shelf price. The same
+line runs through Tmall stores: a service TP works on your stock, while a
+buy-out TP buys it and behaves like a distributor. Our piece on
+[service and buy-out Tmall Partners](/insights/tmall-partner-agency-vs-distributor-model)
+walks through who sets the price in each.
+
+## Common set-ups, from a test to a shelf
+
+**A brand testing China.** Your overseas company opens the store, sometimes
+on direct mail for a short range, and a TP runs it. Keep the first year small
+enough to read the data. Check that the TP, or a warehouse it works with,
+will act as the mainland agent, and get that in writing.
+
+**A brand ready to commit online.** Same entity, now on the bonded route
+with a TP. At the calculator's default target
+of 3.5 million RMB in first-year sales, the TP's retainer and commission come
+to 770,000 RMB, about 22% of sales, on top of the 400,000 RMB the warehouse
+holds (TheChinaPath calculator data, October 2026). Run the calculator at
+your own target before you compare quotes.
+
+**A brand that wants shelves as well.** The Tmall Global store keeps
+running, and a distributor imports a separate general-trade range for
+offline. That's two partners on two customs routes. Write the split into both
+contracts by channel so the distributor's territory doesn't reach the
+platforms.
+
+Whichever fits, our guide to
+[finding a Tmall Partner](/compass/find-a-tmall-partner-in-china) sets out
+the checks, and our
+[cross-border setup team](/enter-china/cross-border-setup) settles the entity
+and the warehouse route, and who signs as mainland agent, before the store
+opens.
+
+## Frequently asked questions
+
+**Does Tmall Global need a Chinese importer of record?**
+
+No. Your overseas company is the seller and owns the goods, and each parcel
+clears as the shopper's personal import, so no Chinese company imports them.
+Customs does require a mainland company to register, declare and share
+joint civil liability with you. That's usually your TP or your bonded
+warehouse, sometimes through its customs broker.
+
+**Can my Tmall Partner act as my mainland agent?**
+
+Usually, either directly or through the bonded warehouse it works with.
+Ask before you sign. That company shares liability for
+your declarations, so the contract should say who holds the customs
+registration and how it moves to a new partner if you switch.
+
+**Can a distributor sell the stock from my bonded warehouse?**
+
+Plan on no. Goods bought through cross-border retail import are for the
+shopper's personal use and may not be resold, and bonded stock in principle
+can't serve offline pickup outside special customs zones. A distributor
+needs its own general-trade shipment with a Chinese label and an importer of
+record.
+
+**Do I need a company in China to open a Tmall Global store?**
+
+No. The store must be opened by a company outside mainland China with an
+overseas trademark. Food and supplement stores, baby food included, are the
+exception in practice: since May 2026 they also file a mainland company
+holding a food business license, under an entrusted-operation agreement,
+before the store can open.
+
+Still missing a TP? [Compass](/compass) finds the Tmall Partners that
+already run your category.
+
+[Get a shortlist of Tmall Partners for your category](/contact#shortlist)
 
 ---
 # Tmall Partner agency vs distributor: who sets price
@@ -17864,7 +18691,7 @@ The UX design differences between Chinese and Western websites reflect deeply in
 # Verify a Chinese company on Qichacha and GSXT
 URL: https://www.thechinapath.com/insights/verify-chinese-company-qichacha
 Published: 2026-09-24
-Updated: 2026-09-24
+Updated: 2026-10-14
 Author: TheChinaPath
 Category: Market Strategy
 
@@ -18137,6 +18964,9 @@ contract. Bring every judgment you found, by case number, and let them
 explain each one. If the registry names an owner you haven't met, ask who
 that is. Get two brands they carry now and call those brands yourself,
 without the distributor on the line. Then book the warehouse visit.
+Whether the company sells at all, or only trades, is a separate question.
+Our [eight checks that tell a real China distributor from a trading company](/insights/find-distributor-china-verify)
+answer it, six of them before that first call.
 
 The calls and the contract terms that follow are in our guide on
 [how to find a distributor in China](/compass/find-a-distributor-in-china).

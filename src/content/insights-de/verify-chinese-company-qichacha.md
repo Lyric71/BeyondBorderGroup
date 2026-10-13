@@ -2,7 +2,7 @@
 title: "Chinesische Firma prüfen: GSXT und Qichacha"
 description: "Acht Felder in GSXT und Qichacha, die Sie vor der Unterschrift prüfen sollten, und welche Gerichtsakten den Deal mit einer chinesischen Firma beenden."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-14"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: []
@@ -333,6 +333,9 @@ Nennt das Register einen Eigentümer, den Sie nie getroffen haben, fragen Sie
 nach. Lassen Sie sich zwei Marken nennen, die der Distributor derzeit führt,
 und rufen Sie dort selbst an, ohne ihn in der Leitung. Dann steht der
 Lagerbesuch an.
+Ob die Firma überhaupt verkauft oder nur Ware durchreicht, ist eine eigene
+Frage. Die Antwort liefern unsere [acht Prüfungen, die einen echten Distributor in China vom Zwischenhändler trennen](/de/analysen/china-distributor-pruefen),
+sechs davon noch vor diesem ersten Gespräch.
 
 Wie es mit Gesprächen und Vertragsklauseln weitergeht, beschreibt unser
 Leitfaden

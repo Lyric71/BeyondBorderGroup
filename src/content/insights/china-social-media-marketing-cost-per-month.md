@@ -2,7 +2,7 @@
 title: "What China social media marketing costs per month"
 description: "China social media marketing cost per month: content, paid media, and staff on Xiaohongshu, Douyin, WeChat, and Weibo, plus two year-one totals."
 pubDate: "2026-09-29"
-updatedDate: "2026-10-02"
+updatedDate: "2026-10-13"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Xiaohongshu", "Douyin", "WeChat", "Weibo"]
@@ -88,15 +88,14 @@ videos. The going rates sit far apart.
 > ran 13.7 of them a month on average.
 > Source: Jiemian (界面新闻), citing QuestMobile, March 2025. https://www.jiemian.com/article/12440261.html
 
-The platforms take a cut on top. Xiaohongshu charged brands 10% on deals
-booked through its creator marketplace when the rate was last reported, in
-2021. We found no newer public figure, so the model keeps 10%. Douyin's
-creator marketplace, Xingtu, takes a fee as well, and it won't book a small
-order.
+The platforms take a cut on top. Xiaohongshu adds a 10% platform service
+fee to the creator's price on deals booked through Pugongying, its creator
+marketplace, so the model keeps 10%. Douyin's creator marketplace, Xingtu,
+takes a fee as well, and it won't book a small order.
 
-> Xiaohongshu charged the brand a platform service fee of 10% of the deal
-> value on creator partnerships.
-> Source: Southern Weekend (南方周末), via Tencent News, November 2021. https://news.qq.com/rain/a/20211118A0DAAZ00
+> On Xiaohongshu's Pugongying (蒲公英) platform, a custom creator deal costs
+> the creator's flat price plus a 10% platform service fee.
+> Source: Xiaohongshu Pugongying help center, October 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=eb3150fa550d424459f8838a77c7e433&role=4
 
 > Xingtu recruitment tasks start at a RMB 10,000 order budget, with a 5%
 > platform service fee.
@@ -186,7 +185,7 @@ live. Only some of them are public.
 |---|---|---|---|
 | Douyin ads (Qianchuan) | RMB 100 a day per campaign plan | 0.6% on orders the ads generate, from 2026 | June 2025; January 2026 |
 | Douyin creators (Xingtu) | RMB 10,000 per recruitment task | 5% of the task value | August 2026 |
-| Xiaohongshu creators | None published | 10% of the deal value | November 2021 |
+| Xiaohongshu creators | None published | 10% on top of the creator's price | October 2026 |
 | Xiaohongshu ads | None published | None published | No public page found |
 | WeChat Moments ads | RMB 1,000 a day at auction; RMB 50,000 per reserved campaign | None published | Q2 2020 |
 | Weibo ads | No dated minimum published | None published | No dated page found |

@@ -9,6 +9,8 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'tmall-global-importer-of-record': 'tmall-global-importateur-officiel',
+  'find-distributor-china-verify': 'verifier-un-distributeur-en-chine',
   'china-distributor-exclusivity': 'distributeur-exclusif-en-chine',
   'tmall-global-diaper-allergy-returns': 'tmall-global-retours-couches-et-allergies',
   'xiaohongshu-store-setup-overseas-brand': 'ouvrir-une-boutique-xiaohongshu-marque-etrangere',
@@ -174,6 +176,8 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'tmall-global-importer-of-record': 'tmall-global-wer-ist-der-importeur',
+  'find-distributor-china-verify': 'china-distributor-pruefen',
   'china-distributor-exclusivity': 'exklusivvertrieb-in-china',
   'tmall-global-diaper-allergy-returns': 'tmall-global-rueckgaberegeln-fuer-windeln-und-allergien',
   'xiaohongshu-store-setup-overseas-brand': 'xiaohongshu-shop-fuer-auslaendische-marken',
@@ -339,6 +343,8 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'tmall-global-importer-of-record': 'tmall-global-importador-registrado',
+  'find-distributor-china-verify': 'verificar-un-distribuidor-en-china',
   'china-distributor-exclusivity': 'distribuidor-exclusivo-en-china',
   'tmall-global-diaper-allergy-returns': 'tmall-global-devoluciones-panales-y-alergias',
   'xiaohongshu-store-setup-overseas-brand': 'abrir-tienda-en-xiaohongshu-marca-extranjera',

@@ -2,7 +2,7 @@
 title: "Tmall o Amazon: lo que paga de verdad una marca"
 description: "Amazon no tiene mercado en China desde 2019. Esto es lo que cobra Tmall Global, junto al tarifario de Amazon y la cuenta del impuesto."
 pubDate: "2023-02-02"
-updatedDate: "2026-10-02"
+updatedDate: "2026-10-13"
 author: "TheChinaPath"
 category: "Platforms"
 platforms: ["Tmall", "JD"]
@@ -187,10 +187,12 @@ El régimen tiene un techo, y se aplica por comprador, no por marca.
 > 财关税〔2018〕49号, enero de 2019.
 > https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=65769
 
-Un bolso de 9.000 yuanes no cabe. Todo lo que pasa del límite por pedido
-tiene que entrar por el régimen general, lo que exige un importador chino,
-arancel e IVA completos y el registro del producto donde la categoría lo
-pida. Ese es otro negocio, y es el que nuestro
+Un bolso de 9.000 yuanes cabe por los pelos. Puede entrar solo en su
+pedido, pero entonces paga arancel, IVA e impuesto sobre el consumo íntegros,
+y se come más de un tercio del cupo anual del comprador. Una gama situada por
+encima del límite acaba casi siempre en el régimen general, lo que exige un
+importador chino, la tributación completa y el registro del producto donde
+la categoría lo pida. Ese es otro negocio, y es el que nuestro
 [equipo de lanzamiento transfronterizo](/es/entrar-en-china/lanzamiento-cross-border)
 dedica la mayor parte del tiempo a cartografiar antes de que una marca se
 comprometa.

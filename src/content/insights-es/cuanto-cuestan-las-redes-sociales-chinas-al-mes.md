@@ -2,7 +2,7 @@
 title: "Redes sociales en China: lo que cuesta un mes de marketing"
 description: "Contenido, medios pagados y equipo: lo que cuestan al mes Xiaohongshu, Douyin, WeChat y Weibo a una marca extranjera, con dos presupuestos para empezar."
 pubDate: "2026-09-29"
-updatedDate: "2026-10-02"
+updatedDate: "2026-10-13"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Xiaohongshu", "Douyin", "WeChat", "Weibo"]
@@ -97,16 +97,16 @@ comparación.
 > Xiaohongshu contrataba de media 13,7 al mes.
 > Fuente: Jiemian (界面新闻), citando a QuestMobile, marzo de 2025. https://www.jiemian.com/article/12440261.html
 
-Las plataformas se quedan además con su parte. Xiaohongshu cobraba a las
-marcas un 10 % de los acuerdos cerrados en su mercado de creadores cuando
-se publicó esa tasa por última vez, en 2021. No hemos encontrado una cifra
-pública más reciente, así que el modelo mantiene el 10 %. Xingtu, el
-mercado de creadores de Douyin, también cobra una comisión y no acepta
-pedidos pequeños.
+Las plataformas se quedan además con su parte. Xiaohongshu suma una
+tarifa de servicio del 10 % al precio del creador en los acuerdos cerrados
+en Pugongying, su mercado de creadores, así que el modelo mantiene el 10 %.
+Xingtu, el mercado de creadores de Douyin, también cobra una comisión y no
+acepta pedidos pequeños.
 
-> Xiaohongshu cobraba a la marca una tarifa de servicio del 10 % del valor
-> de los acuerdos con creadores.
-> Fuente: Southern Weekend (南方周末), vía Tencent News, noviembre de 2021. https://news.qq.com/rain/a/20211118A0DAAZ00
+> En Pugongying (蒲公英), la plataforma de Xiaohongshu, un acuerdo a medida
+> con un creador cuesta su tarifa cerrada más un 10 % de tarifa de servicio
+> de la plataforma.
+> Fuente: centro de ayuda de Pugongying, de Xiaohongshu, octubre de 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=eb3150fa550d424459f8838a77c7e433&role=4
 
 > Las tareas de reclutamiento en Xingtu parten de un presupuesto de pedido
 > de 10.000 yuanes, con una tarifa de servicio del 5 % para la plataforma.
@@ -207,7 +207,7 @@ debajo, no se publica nada. Solo algunos son públicos.
 |---|---|---|---|
 | Douyin, anuncios (Qianchuan) | 100 yuanes al día por plan de campaña | 0,6 % de los pedidos que generan los anuncios, desde 2026 | Junio de 2025; enero de 2026 |
 | Douyin, creadores (Xingtu) | 10.000 yuanes por tarea de reclutamiento | 5 % del valor de la tarea | Agosto de 2026 |
-| Xiaohongshu, creadores | No publicado | 10 % del valor del acuerdo | Noviembre de 2021 |
+| Xiaohongshu, creadores | No publicado | 10 % sobre el precio del creador | Octubre de 2026 |
 | Xiaohongshu, anuncios | No publicado | No publicada | No se encontró página pública |
 | WeChat, anuncios en Moments | 1.000 yuanes al día por subasta; 50.000 yuanes por campaña reservada | No publicada | Segundo trimestre de 2020 |
 | Weibo, anuncios | No hay mínimo fechado publicado | No publicada | No se encontró página fechada |

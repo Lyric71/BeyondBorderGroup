@@ -2585,6 +2585,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Verified 2: 2026-09-29 (curl re-fetch; 10% and 平台服务费 re-found)
 - Used in: china-social-media-marketing-cost-per-month
 - Notes: older than twelve months. The current 蒲公英 fee page is login-only; copy must present the rate as last reported in 2021. Replace when a dated 2025-2026 source is found.
+- Superseded: 2026-10-13, see "Xiaohongshu Pugongying custom deals: creator price plus 10% platform service fee (official)"; the help doc is readable through its JSON API. china-social-media-marketing-cost-per-month now cites it in all four locales.
 
 ### WeChat Moments ads, 2018 Q3 list: 50,000 RMB guaranteed minimum, 1,000 RMB/day auction minimum, CPM list prices
 - Superseded for current copy (2026-10-02) by "WeChat Moments ads, 2020 Q2 list", which carries the same minimums. History only.
@@ -4192,3 +4193,240 @@ extraction, because the reports set text in columns).
 ### Researched for P20, not used
 - tiantailaw.com/CN/12371-18916.aspx (law firm, 2022-01-25): reports the Dirui contract's market-protection clause (either side's breach pays twice the sales made in breach) and the court's reasoning on written notice. Not in any citable source; law-firm summaries are leads. Never print the "two times the sales" clause or call the case "double damages".
 - SPC commercial franchise typical cases (court.gov.cn 508501, 2026-08-12): franchise, no exclusivity holding.
+
+## Influencer selection refresh research (Refresh 06R), October 13, 2026
+
+### Douyin creator levels L0 to L6 by monthly settled sales
+- Value: seven levels set on the 8th of each month from the previous month's 自然月结算金额 (paid amount minus refunds on that month's orders within 7 days, minus abnormal orders): L0 0; L1 up to 30,000; L2 30,000 to 300,000; L3 300,000 to 1 million; L4 1 to 3 million; L5 3 to 10 million; L6 10 million RMB and above. Special downgrade for abnormal orders (example: 100,000 RMB of fake orders)
+- As of: March 2026 (first in force 2022-04-11, latest revision 2026-03-08; page 2026-03-09 11:01:25)
+- Source: Douyin E-commerce (抖音电商), 《抖音电商创作者等级管理规则》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHRbnsP5fSGu
+- Verified 1: 2026-10-13 (headless Edge; L0~L6, 自然月结算金额 formula, 8号 read)
+- Verified 2: 2026-10-13 (re-rendered at iteration 8; threshold table "L5 300 万 < 结算金额 ≤ 1000 万, L6 1000 万及以上" and 2026年3月8日 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: supersedes the LV0 to LV7 and follower-based versions that still circulate in search. The page's definition (1.3) also names user experience and operating inputs; the level itself is set by settled amount (2.1.2).
+
+### Douyin abolished the creator reputation score (带货口碑分)
+- Value: rule repeal notice 2025-03-25, notice period to 2025-04-01, rule abolished on that date; score removed from creator showcases and profile pages by the end of April 2025
+- As of: March 2025 (page 2025-03-25 21:49:02)
+- Source: Douyin E-commerce (抖音电商), 关于废止《抖音电商创作者口碑分实施规则》的公示通知
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aJNmFjfDRcGA
+- Verified 1: 2026-10-13 (headless Edge)
+- Verified 2: 2026-10-13 (re-rendered at iteration 8; 口碑分 and 2025年4月1日 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: never tell a brand to check a creator's 口碑分. History only: it ran 3 to 5, from 90 days of product (50%), logistics (15%) and service (35%) ratings, and below 4 barred Qianchuan ads (articlev0/aHM6kwjHKJtC, 2021-12-29, checked once, not cited).
+
+### Douyin affiliate creator fee by business rating: 10%, 20%, 40% of commission
+- Value: creators rated A, B+ or B pay Douyin a 10% technical service fee on commission, C 20%, D 40%, for all creators from July 8 (2026); rating inputs include settlement rate (T+7 settled GMV / paid GMV), compliance with zero 刷单刷等级, posting frequency, content quality and GMV per post or hour
+- As of: October 2026 (page 2026-10-09 19:30:47)
+- Source: Douyin E-commerce Learning Center (抖音电商学习中心), 【精选联盟】电商推广者技术服务费规则调整解读
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aJkY84jEGbWa
+- Verified 1: 2026-10-13 (headless Edge)
+- Verified 2: 2026-10-13 (re-rendered at iteration 8; 40% and 结算率 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: a creator-side cost. Matches the 10/20/40 split already noted under "Douyin affiliate (精选联盟) creator commission ranges by strategy".
+
+### What a brand sees on a Douyin creator's page in the creator plaza (达人广场)
+- Value: modules 概览 (recent posts, products promoted, settled total), 直播详情, 视频详情, 粉丝分析 (gender, age, activity, device), 带货分析 (main categories, linked streams, impressions, clicks), 历史带货评价 (past results, fulfilment, communication); 结算率榜 ranking; 关联企业风险提示 tag
+- As of: March 2026 (page 2026-03-07 23:59:59)
+- Source: Douyin E-commerce Learning Center (抖音电商学习中心), 玩转达人广场-精准找带货达人合作
+- URL: https://school.jinritemai.com/doudian/web/article/110796
+- Verified 1: 2026-10-13 (headless Edge)
+- Verified 2: 2026-10-13 (re-rendered at iteration 8; 粉丝分析 and 历史带货评价 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: feature description, no figures.
+
+### Douyin fake-transaction penalty for creators: 1% of the fake amount, 1,000 to 20,000 RMB
+- Value: 违约金 = fake payment amount x 1%, minimum 1,000, maximum 20,000 RMB; worst cases permanent closure of product sharing (minimum 10,000, maximum 20,000 RMB); reduced exposure and ranking bans up to 30 days
+- As of: August 2026 (page 2026-08-10 11:06:19)
+- Source: Douyin E-commerce (抖音电商), 【虚假交易】处置细则
+- URL: https://school.jinritemai.com/doudian/web/articlev0/113470
+- Verified 1: 2026-10-13 (headless Edge)
+- Verified 2: 2026-10-13 (re-rendered at iteration 8; 最低1000元 and 最高20000元 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: covers merchants and creators; the figures above are the creator lines. Related, checked once, not cited: 创作者【作弊行为】实施细则 (article/aHJfRMmUrecM, 2026-06-29), 《抖音电商创作者违规管理规则》 (article/102115, 2026-09-16).
+
+### Xingtu creator management rule: data fraud is a violation; serious follower fraud bans order-taking
+- Value: 刷量 and faked follows, likes, comments or conversions listed under 扰乱平台竞争秩序; penalty ladder 7, 30, 90 days and 封禁; 主端账号粉丝刷量严重 leads to 封禁达人接单权限
+- As of: October 2026 (page 2026-10-12 11:54:34)
+- Source: Ocean Engine Xingtu (巨量星图), 巨量星图达人管理规则
+- URL: https://www.xingtu.cn/help-center/author/134035
+- Verified 1: 2026-10-13 (headless Edge)
+- Verified 2: 2026-10-13 (re-rendered at iteration 8; 刷量, 粉丝刷量严重, 封禁达人接单权限 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: the page does not tie a specific day count to fraud; do not say "suspended for 7, 30 or 90 days for fake follows". Creator-card fields (星图指数, 预期播放量, CPM性价比) are on demander/113254 (2026-08-22) and the estimated CPM method on demander/114908 (2026-05-19), both checked once, described in copy without figures.
+
+### Xiaohongshu Pugongying custom deals: creator price plus 10% platform service fee (official)
+- Value: 一口价报价 + 10% 平台服务费 (10,000 RMB quote = 11,000 RMB paid)
+- As of: October 2026 (doc updateTime 2026-10-12 18:03; quoted blocks edited 2026-04-17)
+- Source: Xiaohongshu Pugongying (蒲公英) help center, 合作模式/定制商单
+- URL: https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=eb3150fa550d424459f8838a77c7e433&role=4
+- Verified 1: 2026-10-13 (JSON help-doc API)
+- Verified 2: 2026-10-13 (re-fetched at iteration 8; 10% and 11,000 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china, china-social-media-marketing-cost-per-month (citation replaced in all four locales on 2026-10-13)
+- Notes: replaces the 2021 Southern Weekend entry for current copy. Read through the help-doc API; the search API needs a login.
+
+### Xiaohongshu brand trust system: crackdown on unreported creator deals from January 12, 2026
+- Value: 品牌分 retired; 专项治理 from 2026-01-12 against 水下接单 (KOC and KOL deals taken outside the official platform without 报备); penalties from note visibility limits and traffic limits up to restricting brand enterprise and staff accounts for repeat cases
+- As of: August 2026 (doc updateTime 2026-08-05)
+- Source: Xiaohongshu Pugongying (蒲公英) help center, 关于下线品牌分和建设品牌信任体系的公告
+- URL: https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=1627df51a4c861f13e462aa2067d6c15&role=4
+- Verified 1: 2026-10-13 (JSON help-doc API)
+- Verified 2: 2026-10-13 (re-fetched at iteration 8; 水下接单 and 2026年1月12日 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: related brand-side rule 蒲公英客户履约管理规范 (shortcutId b8a3b668ea612abfa016ead5a5cd1321, 2026-09-20) bars brands from steering creators to off-platform payment; checked once, not cited.
+
+### Advertising Law: endorser must have used the goods; joint liability for health goods
+- Value: art 38 para 1 an endorser may not recommend goods it has not used; para 3 no endorser within 3 years of a false-ad penalty (enforced on the advertiser, art 58(11)); art 56 para 2 for goods bearing on life and health, the endorser is jointly liable for harm from a false ad without a knowledge test; art 61 endorser fines 1 to 2 times illegal income; art 14 ads must be identifiable
+- As of: amended April 29, 2021 (SAMR page published 2022-11-02)
+- Source: State Administration for Market Regulation (市场监管总局), 中华人民共和国广告法
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_5474cf75173c45d6a0379730fb4e8d97.html
+- Verified 1: 2026-10-13 (curl; arts 2, 14, 38, 56, 58, 61 read)
+- Verified 2: 2026-10-13 (re-fetched at iteration 8; 未使用过的商品 and 连带责任 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: the 3-year bar is art 38 para 3, not art 61 or 62. The 04R entry for arts 9(3) and 57 cites the same page.
+
+### Internet Advertising Measures, SAMR Order 72: livestream sellers are advertisers; "广告" label on reviews with a buy link
+- Value: art 9 para 3 knowledge sharing, experience sharing or consumer reviews with a shopping link must be clearly labelled 广告; art 19 a seller promoting goods via livestream that constitutes a commercial ad bears advertiser duties, a host recommending in their own name bears endorser duties
+- As of: adopted February 24, published February 25, in force May 1, 2023
+- Source: State Council Gazette (国务院公报) 2023 No. 16, 国家市场监督管理总局令第72号
+- URL: https://www.gov.cn/gongbao/2023/issue_10506/202306/content_6885261.html
+- Verified 1: 2026-10-13 (curl)
+- Verified 2: 2026-10-13 (re-fetched at iteration 8; 显著标明 and 直播营销人员 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: art 25 punishes unidentifiable ads under Advertising Law art 59 para 3.
+
+### Livestream E-commerce Supervision Measures, Order 117: host verification before every stream
+- Value: art 28 the live-room operator verifies each host's name, ID number, address, contact, agency and relevant qualifications, reports the verified identity to the platform before every stream and keeps records at least 3 years; art 2 applies to whoever actually runs another's live room; art 59 failure to verify, if not corrected or serious, 10,000 to 100,000 RMB fine
+- As of: published December 18, 2025, in force February 1, 2026 (CAC page 2026-01-07 19:40)
+- Source: Cyberspace Administration of China (国家网信办) carrying SAMR and CAC Order No. 117, 直播电商监督管理办法
+- URL: https://www.cac.gov.cn/2026-01/07/c_1769516655383334.htm
+- Verified 1: 2026-10-13 (curl)
+- Verified 2: 2026-10-13 (re-fetched at iteration 8; 每次直播前 and 一万元以上十万元以下 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: same order as the ledger entry "直播电商监督管理办法, SAMR and CAC order 117" (gazette copy); this entry covers arts 2, 28 and 59.
+
+### SAMR livestream cases: Dongying brand fined 100,000 RMB for its host's claims; Xichong fake-follower farm 270,000 RMB
+- Value: 东营荣灿商贸 hired host 李某某 for a 2025-02-01 livestream of a 保健食品 claiming 卖了2185万单 and that anyone 年满14周岁 could take it; fined 100,000 RMB in August 2025 under Advertising Law art 55 and 58. 西充顺利传媒 ran 1,200 phones selling fake followers at 0.07 to 0.15 RMB each, about 5,800 orders, about 2.7 million fake follows; 罚没 270,000 RMB in September 2025
+- As of: November 2025 (第四批直播电商领域典型案例, 2025-11-28 17:00)
+- Source: State Administration for Market Regulation (市场监管总局)
+- URL: https://www.samr.gov.cn/xw/zj/art/2025/art_cb90a1860b3d4cd18c87b1fa35baeeff.html
+- Verified 1: 2026-10-13 (curl)
+- Verified 2: 2026-10-13 (re-fetched at iteration 8; 0.07 and 2185万 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: the brand, not the host, was fined in the Dongying case. Same page: host 太原老葛 fined 5.6m RMB in total (not used).
+
+### CAC two-month campaign against fake short-video personas (清朗·整治短视频虚假人设乱象)
+- Value: announced September 30, 2026 ("近日" issued, two months); targets invented credentials, AI-faked public figures for endorsements and marketing, MCN account matrices mass-producing personas; content labels no shield
+- As of: September 2026 (CAC page 2026-09-30 16:30)
+- Source: Cyberspace Administration of China (中央网信办)
+- URL: https://www.cac.gov.cn/2026-09/30/c_1792520301987752.htm
+- Verified 1: 2026-10-13 (curl; People's Daily copy society.people.com.cn/n1/2026/0930/c1008-40808389.html also read)
+- Verified 2: 2026-10-13 (re-fetched at iteration 8; 为期2个月 and 矩阵 re-found)
+- Used in: optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china
+- Notes: no exact launch date published; say "announced September 30, 2026". The result check is on the signal watch list for 2026-12-01.
+
+### Researched, not used (06R, 2026-10-13)
+- Anti-Unfair Competition Law, revised 2025-06-27, in force 2025-10-15, art 9 (false publicity on sales and reviews; organising fake transactions and reviews) and art 25 (fines up to 1m, 2m RMB if serious): politics.people.com.cn/n1/2025/1010/c1001-40578685.html, checked once 2026-10-13. The law has no 流量 wording.
+- 网络直播营销管理办法（试行） art 18(4) bans 数据流量造假: cac.gov.cn/2021-04/22/c_1620670982794847.htm, checked once 2026-10-13.
+- SAMR ten illegal-ad cases (2025-06-03): 无锡美抖 unlabelled ad 罚没 194,000 RMB, samr.gov.cn/xw/zj/art/2025/art_80ee21faaae940809d483f002a8ecbea.html, checked once.
+
+### Re-verified ledger entries reused (no new entry; add the slug to Used in)
+- Douyin affiliate creator commission 5% to 50%, 5% to 80% on some designated-creator strategies, 15-day settlement, refund clawback (articlev0/112620, page now 2026-10-12): rendered 2026-10-13 at both checks. Add "optimizing-your-brand-choosing-the-right-influencer-in-2024-in-china". Precision: 指定达人-佣金策略 is 5% to 50%; the 80% ceiling applies to 指定达人-固定佣金, 阶梯 and 店铺定向.
+- Xingtu recruitment tasks 10,000 RMB, 5% fee, creators 1K to 5M followers (demander/126583): rendered 2026-10-13 at both checks. Add the slug.
+- Douyin Mall 618 2026 creator figures (cnr.cn t20260620_527669642, GBK page): fetched 2026-10-13 at both checks (超过57万达人, 100万以下, 超过80%). Add the slug.
+- Sponsored post 39,700 / 10,800 RMB, January to October 2024 (Jiemian citing QuestMobile, 12440261): fetched 2026-10-13 at both checks. Add the slug.
+- Historical dedicated-host event fee 1m to 3m RMB plus about 10% to 20% (Xinhua, 2024-08-04): fetched 2026-10-13 at both checks; the speaker is a 雅鹿集团 (Yalu Group, apparel) manager, 头部主播专场费用. Add the slug.
+- Xiaohongshu creator deals: 10% platform service fee (Southern Weekend, 2021): superseded for current copy by the Pugongying help-doc entry above.
+
+### NOT SOURCED, do not research again from these dead ends (06R, 2026-10-13)
+- Douyin learning-centre pages offline: articlev0/107447 (如何找达人带货), article/114222 (达人广场升级指南v2.0).
+- Third-party pages describing 口碑分 as current (30-day window, 百分制): outdated since April 2025.
+- Xiaohongshu logged-out note and community pages render empty; the Pugongying search API returns nothing without a login (use /api/pgy/help/menu?role=4 then /api/pgy/help/doc?shortcutId=...&role=4).
+- 21财经 2026-07-13 Pugongying 2,700万 invitations: a column with no primary source.
+- A dated official creator price list by follower tier: none on Douyin, Xingtu or Pugongying.
+
+## Partner cluster P21 (tmall-global-importer-of-record), 2026-10-13
+
+### Cross-border retail import routes: 1210 bonded and 9610 direct purchase (MOFCOM 486, article 1)
+- Value: cross-border retail import is a mainland shopper buying from abroad through a cross-border platform, with goods moved as 网购保税进口 (customs code 1210) or 直购进口 (customs code 9610); goods must be on the 跨境电子商务零售进口商品清单 and for personal use; participants defined in art. 2: the overseas-registered seller (owner of the goods), the platform, the 境内服务商 (mainland-registered provider of declaration, payment, logistics and warehousing) and the shopper
+- As of: November 2018 (商财发〔2018〕486号, dated 2018-11-28)
+- Source: Ministry of Commerce and five other agencies (商务部等六部门), via the State Council policy library (中国政府网)
+- URL: https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5437823.htm
+- Verified 1: 2026-10-13 (curl; 海关监管方式代码1210 and 海关监管方式代码9610 found in art. 1)
+- Verified 2: 2026-10-13 (re-fetched at iteration 8; both codes, 为商品的货权所有人, 不执行有关商品首次进口许可批件 and 承担民事连带责任 re-found)
+- Used in: tmall-global-importer-of-record
+- Notes: primary source for the two codes; prefer it to the Jiaxiang County explainer in "Customs codes 9610 and 1210". Same document as the art. 2(1), art. 3, art. 4(1)1 and art. 4(1)3 entries above, all re-verified today (both checks 2026-10-13); add tmall-global-importer-of-record to their Used in.
+
+### Tmall Global Merchant Acceptance Standards: overseas entity, overseas trademark, declared agent operator
+- Value: 入驻商家必须具备中国大陆以外资质的公司实体，拥有海外注册商标，具备海外零售、海外研发生产经营能力等资质; 开店主体需为海外或香港、澳门、台湾的实体公司; merchants must truthfully provide the store's operating parties including the 代理运营商 (agent operator) and notify changes 15 days ahead; store types 品牌旗舰店, 卖场型旗舰店, 专卖店, 专营店, 银河专营店 (sells 天猫国际直营 or flagship goods on consignment); annual fee 30,000 or 60,000 RMB by first-level category; two voluntary exits in a calendar year bar reopening for six months
+- As of: posted 2025-02-21, in force 2025-03-01
+- Source: Tmall Global (天猫国际), 《天猫国际招商标准 Tmall Global Merchant Acceptance Standards》, ruleId 11003210
+- URL: https://rule.tmall.hk/?type=detail&ruleId=11003210&cId=624#/rule/detail?ruleId=11003210&cId=624
+- Verified 1: 2026-10-13 (headless Chrome over DevTools, hash route; the URL without the hash renders only the shell)
+- Verified 2: 2026-10-13 (re-rendered at iteration 8; 中国大陆以外资质的公司实体, 拥有海外注册商标, 代理运营商 and 2025年3月1日生效 re-found)
+- Used in: tmall-global-importer-of-record
+
+### Tmall Global market management rules: direct-mail listing shipped from a bonded warehouse
+- Value: under 违背承诺, a product shown as 邮件报关商品 (overseas direct mail) but actually shipped from a domestic bonded warehouse: product deleted, store closed on the third case (删除商品，累计三次清退店铺); refusing a recall: store closed and deposit forfeited; requiring buyers to return goods outside mainland China is a broken commitment
+- As of: in force 2026-05-06, updated 2026-05-12
+- Source: Tmall Global (天猫国际), 《天猫国际市场管理规则》, ruleId 11004788
+- URL: https://rule.tmall.hk/?type=detail&ruleId=11004788&cId=628#/rule/detail?ruleId=11004788&cId=628
+- Verified 1: 2026-10-13 (rule centre home > 规则辞典 > 商家规则 > 基础规则 clicked headless; window.open intercepted to get the URL; page rendered)
+- Verified 2: 2026-10-13 (re-rendered at iteration 8; 实际为使用国内保税仓发货的, 累计三次清退店铺 and 2026年5月6日生效执行 re-found)
+- Used in: tmall-global-importer-of-record
+- Notes: the basic-rules list (cId 628) on 2026-10-13 held seven rules: 闪购服务规范, 阿里旺旺服务管理规范, 服务条款规则, 价格管理规则, 评价管理规则, 市场管理规则, 海外直邮服务规范 (2017). No Tmall Global ship-by-hours rule was found there; the 72 h bonded / 120 h direct-mail figures circulate only on agency and aggregator pages and are not cited.
+
+### Re-verified for P21 (no new entry; add tmall-global-importer-of-record to Used in)
+- "Tmall Global food categories: mainland licensed company and entrusted-operation agreement since May 27, 2026" (ruleId 20010174): re-rendered 2026-10-13 twice (check 1 at research, check 2 at iteration 8); 境内公司食品经营许可证, 跨境电商零售进口食品委托经营协议 and 2026年5月27日生效执行 present.
+- "Over-limit single item: full duty, VAT and consumption tax" and "Cross-border retail import limits per shopper" (财关税〔2018〕49号): the MOF 关税司 URL returned 502 on 2026-10-13; the MOFCOM mirror https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=65769 was fetched twice (仅一件商品, 按照货物税率全额征收, 不得进入国内市场再次销售, 网购保税＋线下自提, 26000元 present) and is the URL cited. Art. 3 (no resale; no "bonded plus offline pickup" outside special customs zones) is newly used.
+- "Cross-border retail import tax: 0% duty, VAT and consumption tax at 70%" (财关税〔2016〕18号): re-fetched twice on 2026-10-13, both clauses present.
+- "Food Safety Law: food licensing, importer filing, Chinese label" (MOFCOM 104105): re-fetched twice on 2026-10-13, arts. 96 and 97 and the 2025-09-12 amendment line present.
+
+### Tmall Global cash floor by role and per-order logistics (proprietary, October 2026)
+- Value: packaged-food row at defaults: platform deposit 50,000 + annual fee 30,000 + store setup 25,000 + bonded warehouse deposit 100,000 + tax prepayment 300,000 = 505,000 RMB before the first order, of which the bonded warehouse holds 400,000 (more than platform deposit, annual fee and setup combined, 105,000); per order: storage 0.8 x 2 months + pick and pack 4 + last mile 11 + 5% x 15 return handling = 17.35 RMB, 6.9% of the 250 RMB default basket; TP 420,000 retainer + 350,000 commission = 770,000 RMB at the 3,500,000 default GMV (22%); clearance agent (境内代理人) line defaults to 0
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro: drivers, categories, field defaults, compute())
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-13 (defaults and compute() read from the .astro file)
+- Verified 2: 2026-10-13 (re-read before the draft was finished; arithmetic recomputed)
+- Used in: tmall-global-importer-of-record
+- Notes: model defaults, not a market rate. US$71,000 is 505,000 at the 7.1 planning rate used in tmall-partner-vs-distributor-china.
+
+## Anchor 07A (find-distributor-china-verify), 2026-10-14
+
+### Businesses with import or export records, 2025
+- Value: more than 780,000 operating entities (经营主体) in China had import or export records in 2025 (超过78万家)
+- As of: January 14, 2026 (State Council Information Office press conference on 2025 trade, GACC deputy minister 王军)
+- Source: Xinhua (新华社), 《新华鲜报丨创新高、九连涨！2025年中国外贸答卷亮点纷呈》, reporters 邹多为 and 黄韬铭
+- URL: https://www.news.cn/fortune/20260114/cde5cc17877d4284aac90e0c6ef48717/c.html
+- Verified 1: 2026-10-14 (WebFetch: "2025年，我国有进出口记录的经营主体超过78万家" and the press-conference attribution)
+- Verified 2: 2026-10-14 (re-fetched with curl at iteration 8; "78万家" re-found)
+- Used in: find-distributor-china-verify
+- Notes: entities with records, not registered foreign trade operators. The 2024 private-firm count (60.9万) appeared only in secondary coverage and was not used. The GACC Hefei transcript (hefei.customs.gov.cn) returned a certificate error.
+
+### Customs declaration entity filing: definition, three working days, published on the customs credit platform
+- Value: a 报关单位 is a 进出口货物收发货人 or 报关企业 filed with customs (art. 2); customs files within 3 working days and publishes the filing on the 中国海关企业进出口信用信息公示平台 (art. 7); the filing is long-term valid, a temporary filing one year (art. 8)
+- As of: GACC Decree 253, promulgated November 19, 2021, in force January 1, 2022
+- Source: General Administration of Customs (海关总署), 中华人民共和国海关报关单位备案管理规定, via the Ministry of Commerce (商务部) policy database
+- URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=92148
+- Verified 1: 2026-10-14 (arts. 2, 4 and 7 read)
+- Verified 2: 2026-10-14 (re-fetched with curl at iteration 8; arts. 2 and 7 verbatim)
+- Used in: find-distributor-china-verify
+- Notes: art. 4 still says a consignee must hold a 对外贸易经营者备案; the December 30, 2022 Foreign Trade Law amendment abolished that filing. Do not cite art. 4.
+
+### Annual report social insurance items: insured headcount public by law
+- Value: from the 2016 annual report, companies report 参保险种类型, 单位参保人数, 单位缴费基数, 本期实际缴费金额, 单位累计欠缴金额; the first two must be public, the other three are published at the company's choice
+- As of: notice 工商企监字〔2016〕226号 (SAIC, MOHRSS, NBS, November 2016); page dated April 27, 2018, updated July 31, 2023
+- Source: Qiaokou District People's Government, Wuhan (武汉市硚口区人民政府), 《"年报公示"应该公示哪些内容？》
+- URL: https://www.qiaokou.gov.cn/hdjl/cjwt/cjwt/201804/t20180427_147988.shtml
+- Verified 1: 2026-10-14 (mandatory and optional items read on the page)
+- Verified 2: 2026-10-14 (re-fetched with curl at iteration 8; "其中第一项、第二项信息应当向社会公示" re-found)
+- Used in: find-distributor-china-verify
+- Notes: confirmed by the Hunan HRSS news item of 2016-11-25 (http://rst.hunan.gov.cn/xxgk/gzdt/zwdt/201611/t20161125_3595704.html, five items, no split) and the notice text on shanghaiinvest.com; neither cited. The "报告期末 = December 31" definition was seen only on secondary pages and was not used.
+
+### Re-verified ledger entries reused (no new entry; add find-distributor-china-verify to Used in)
+- Food Safety Law: food licensing, importer filing, Chinese label (MOFCOM id=104105): arts. 96 and 97 re-read verbatim by curl 2026-10-14, amendment date 2025-09-12 on the page; art. 96 second paragraph (定期公布 ... 进口商 ... 名单) confirmed. Both checks for this piece 2026-10-14.
+- E-Commerce Law, Art. 15 (CAC, 2018-09-01): re-fetched 2026-10-14, text matched. Both checks for this piece 2026-10-14.
+- Distributor economics: four to five million RMB of stock for under 300,000 RMB profit (Jiemian 13003026): re-fetched 2026-10-14; the quote is anonymous on the page, so the copy says "one distributor". Both checks for this piece 2026-10-14.
+- Compass shortlist size (three to five names) and Compass shortlist turnaround (two to three weeks): re-read in src/content/pages/partner-guides/shared.ts 2026-10-14, both checks. Proprietary number of this piece.

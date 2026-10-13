@@ -2,7 +2,7 @@
 title: "Verify a Chinese company on Qichacha and GSXT"
 description: "How to verify a Chinese company before you sign: the eight fields to read on GSXT and Qichacha, and the court records that should stop a deal."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-14"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: []
@@ -284,6 +284,9 @@ contract. Bring every judgment you found, by case number, and let them
 explain each one. If the registry names an owner you haven't met, ask who
 that is. Get two brands they carry now and call those brands yourself,
 without the distributor on the line. Then book the warehouse visit.
+Whether the company sells at all, or only trades, is a separate question.
+Our [eight checks that tell a real China distributor from a trading company](/insights/find-distributor-china-verify)
+answer it, six of them before that first call.
 
 The calls and the contract terms that follow are in our guide on
 [how to find a distributor in China](/compass/find-a-distributor-in-china).

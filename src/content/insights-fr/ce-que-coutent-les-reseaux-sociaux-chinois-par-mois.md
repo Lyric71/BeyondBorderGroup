@@ -2,7 +2,7 @@
 title: "Réseaux sociaux en Chine : le budget mensuel d'une marque"
 description: "Contenus, médias payants, équipe : ce que coûtent chaque mois Xiaohongshu, Douyin, WeChat et Weibo à une marque étrangère, et deux budgets pour démarrer."
 pubDate: "2026-09-29"
-updatedDate: "2026-10-02"
+updatedDate: "2026-10-13"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Xiaohongshu", "Douyin", "WeChat", "Weibo"]
@@ -96,15 +96,16 @@ Chine, elle leur commande de courtes vidéos. Les tarifs n'ont rien de commun.
 > sur Xiaohongshu en commandait en moyenne 13,7 par mois.
 > Source : Jiemian (界面新闻), citant QuestMobile, mars 2025. https://www.jiemian.com/article/12440261.html
 
-Les plateformes prélèvent leur part en sus. Xiaohongshu facturait aux marques
-10 % des contrats passés sur sa place de marché de créateurs lorsque ce taux
-a été rendu public pour la dernière fois, en 2021. Faute de chiffre plus
-récent, le modèle conserve ces 10 %. Xingtu, la place de marché de créateurs
-de Douyin, prélève elle aussi une commission et refuse les petites commandes.
+Les plateformes prélèvent leur part en sus. Xiaohongshu ajoute au tarif
+du créateur des frais de service de 10 % sur les contrats passés par
+Pugongying, sa place de marché de créateurs : le modèle conserve donc ces
+10 %. Xingtu, la place de marché de créateurs de Douyin, prélève elle aussi
+une commission et refuse les petites commandes.
 
-> Xiaohongshu facturait à la marque des frais de service de 10 % du montant
-> des partenariats conclus avec des créateurs.
-> Source : Southern Weekend (南方周末), via Tencent News, novembre 2021. https://news.qq.com/rain/a/20211118A0DAAZ00
+> Sur Pugongying (蒲公英), la plateforme de Xiaohongshu, une collaboration
+> sur mesure coûte le tarif forfaitaire du créateur, majoré de 10 % de
+> frais de service.
+> Source : centre d'aide Pugongying de Xiaohongshu, octobre 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=eb3150fa550d424459f8838a77c7e433&role=4
 
 > Sur Xingtu, les missions de recrutement démarrent à 10 000 RMB de budget
 > de commande, avec des frais de service de 5 % pour la plateforme.
@@ -204,7 +205,7 @@ d'exécuter. En dessous, rien n'est diffusé. Seuls certains sont publics.
 |---|---|---|---|
 | Douyin, publicité (Qianchuan) | 100 RMB par jour et par plan de campagne | 0,6 % des commandes générées par la publicité, depuis 2026 | Juin 2025 ; janvier 2026 |
 | Douyin, créateurs (Xingtu) | 10 000 RMB par mission de recrutement | 5 % du montant de la mission | Août 2026 |
-| Xiaohongshu, créateurs | Aucun publié | 10 % du montant du contrat | Novembre 2021 |
+| Xiaohongshu, créateurs | Aucun publié | 10 % en sus du tarif du créateur | Octobre 2026 |
 | Xiaohongshu, publicité | Aucun publié | Aucuns frais publiés | Aucune page publique trouvée |
 | WeChat, publicités Moments | 1 000 RMB par jour aux enchères ; 50 000 RMB par campagne réservée | Aucuns frais publiés | Deuxième trimestre 2020 |
 | Weibo, publicité | Aucun minimum daté publié | Aucuns frais publiés | Aucune page datée trouvée |

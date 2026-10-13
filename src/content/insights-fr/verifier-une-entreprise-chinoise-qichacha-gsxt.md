@@ -2,7 +2,7 @@
 title: "Vérifier une entreprise chinoise sur GSXT et Qichacha"
 description: "Huit rubriques à contrôler sur GSXT et Qichacha avant de signer avec une entreprise chinoise, et les antécédents judiciaires qui doivent faire renoncer."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: "2026-10-14"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: []
@@ -337,6 +337,9 @@ sur chacun. Si le registre cite un propriétaire que vous n'avez jamais
 croisé, demandez de qui il s'agit. Obtenez le nom de deux marques que le
 distributeur représente aujourd'hui et appelez-les vous-même, sans lui au
 bout du fil. Fixez enfin la date de la visite d'entrepôt.
+Reste une autre question : la société vend-elle vraiment, ou se borne-t-elle
+au négoce ? Nos [huit contrôles pour distinguer un vrai distributeur chinois d'un simple négociant](/fr/decryptages/verifier-un-distributeur-en-chine)
+y répondent, dont six avant même ce premier appel.
 
 La suite, des appels aux clauses du contrat, est détaillée dans notre guide
 pour [trouver un distributeur en Chine](/fr/compass/trouver-un-distributeur-en-chine).
