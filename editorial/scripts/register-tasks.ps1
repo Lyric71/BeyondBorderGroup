@@ -41,6 +41,9 @@ function Register([string]$Name, [string]$Mode, $Trigger, [bool]$Enabled) {
     -ExecutionTimeLimit (New-TimeSpan -Hours 6) `
     -StartWhenAvailable `
     -WakeToRun `
+    -AllowStartIfOnBatteries `
+    -DontStopIfGoingOnBatteries `
+    -DontStopOnIdleEnd `
     -MultipleInstances IgnoreNew
   Register-ScheduledTask -TaskName $Name -Action $Action -Trigger $Trigger `
     -Settings $Settings -Description "TheChinaPath editorial pipeline ($Mode)" -Force | Out-Null
