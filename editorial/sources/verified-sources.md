@@ -4155,3 +4155,40 @@ extraction, because the reports set text in columns).
 
 ### Researched for 06S, not used
 - Claim rates for Tmall Global rash or allergy guarantees, and a market rate for cross-border return freight: no dated primary source exists; the worked figure states its own order size and claim count as assumptions.
+
+## Partner piece P20 research (china-distributor-exclusivity), 2026-10-12
+
+### SPC interpretation on contract penalties: 30% above the loss is generally excessive
+- Value: 法释〔2023〕13号 Art. 64: a party may seek adjustment of a penalty by counterclaim or defense; the breaching party bears the burden of proving it excessive; a clause saying the penalty may not be adjusted does not stop adjustment. Art. 65: the court weighs the penalty against the Civil Code Art. 584 loss, considering the parties, the deal, performance, fault and background; an agreed penalty more than 30% above the loss (超过造成损失的百分之三十) is generally excessive; a party in bad-faith breach (恶意违约) generally cannot get it reduced
+- As of: adopted May 23, 2023, in force December 5, 2023 (published 2023-12-05 14:42)
+- Source: Supreme People's Court (最高人民法院), 最高人民法院关于适用《中华人民共和国民法典》合同编通则若干问题的解释
+- URL: https://www.court.gov.cn/fabu/xiangqing/419382.html
+- Verified 1: 2026-10-12
+- Verified 2: 2026-10-12 (re-fetched at iteration 8; 百分之三十, 第六十四条, 恶意违约, 不得对违约金进行调整, 2023年12月5日起施行 re-found)
+- Used in: china-distributor-exclusivity
+- Notes: "generally" (一般可以认定) matters; never write that a court must cut a penalty above 30%.
+
+### Civil Code Art. 586: a deposit (定金) is capped at 20% of the contract's value
+- Value: a deposit contract forms when the deposit is actually paid; the amount is agreed but may not exceed 20% of the main contract's value (不得超过主合同标的额的百分之二十), and the excess has no deposit effect
+- As of: adopted May 28, 2020, in force January 1, 2021
+- Source: National People's Congress, Civil Code (中华人民共和国民法典), via the Ministry of Commerce (商务部) policy database
+- URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=70524
+- Verified 1: 2026-10-12
+- Verified 2: 2026-10-12
+- Used in: china-distributor-exclusivity (with Arts. 563 para. 2, 564, 565 and 585, already logged under P08 and P15)
+- Notes: same URL as the Art. 933 (P08) and Arts. 562 to 566 (P15) entries. Art. 563 para. 2 (an open-ended continuing contract can be ended at any time on reasonable prior notice) and Art. 585 (agreed penalty or calculation method; court may raise or reduce) were re-read today for this piece.
+
+### Reused for P20 (re-fetched 2026-10-12 at check 1 and check 2; add china-distributor-exclusivity to Used in)
+- Dirui v. Cheng'antang: the contract, the missed targets and the unilateral downgrade (Dirui IPO prospectus, cninfo 1200180236): 32,000 / 34,000 tubes, 取消诚安堂独家代理资格, 7,508,040 re-found with pypdf.
+- Dirui v. Cheng'antang: final appeal judgment (Dirui announcement 2016-017, cninfo 1202187573): 7955号, 五百八十六万四千九百五十元, counterclaim dismissed, 终审 re-found. The copy states 78% as our arithmetic (5,864,950 / 7,508,040).
+- Civil Code Arts. 562 to 566 (P15) and Art. 585 (P08 entry): re-read on the MOFCOM page.
+- Fengxian court: cosmetics distributor held to a 200,000 RMB cross-channel diversion clause (People's Court Daily on court.gov.cn 507751): re-found; the copy keeps "more than 6 million RMB at stake", never "paid".
+- Tmall store types: flagship, specialty and multi-brand store definitions (天猫入驻标准, ruleId 9257): re-rendered with headless Edge both times; Art. 5's 授权文件不得有地域限制（个别类目除外），且授权有效期不得少于半年 and 于2025年06月06日修订 re-found.
+- Douyin shop store types and brand authorization letters (fxg.jinritemai.com/question/type): 非自有品牌（独占授权） re-found in the page data both times; cited with the observation month (October 2026).
+- Distributor economics: four to five million RMB of stock for under 300,000 RMB profit (Jiemian 13003026): quote and 2025/07/08 10:22 re-found; cited as a quote.
+- Anti-Monopoly Law: resale price maintenance ban (MOFCOM 97047): Art. 18 items (一) and (二) and the market-share safe harbor sentence re-found.
+- Proprietary (published case): DaVinci Gourmet, "Pricing disputes across channels were resolved within three months", src/content/cases/kerry-davinci.md (/work/kerry-davinci), read 2026-10-12 twice. Label in copy: as the DaVinci Gourmet case records.
+
+### Researched for P20, not used
+- tiantailaw.com/CN/12371-18916.aspx (law firm, 2022-01-25): reports the Dirui contract's market-protection clause (either side's breach pays twice the sales made in breach) and the court's reasoning on written notice. Not in any citable source; law-firm summaries are leads. Never print the "two times the sales" clause or call the case "double damages".
+- SPC commercial franchise typical cases (court.gov.cn 508501, 2026-08-12): franchise, no exclusivity holding.

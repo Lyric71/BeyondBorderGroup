@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'china-distributor-exclusivity': 'distributeur-exclusif-en-chine',
   'tmall-global-diaper-allergy-returns': 'tmall-global-retours-couches-et-allergies',
   'xiaohongshu-store-setup-overseas-brand': 'ouvrir-une-boutique-xiaohongshu-marque-etrangere',
   'cost-to-sell-pet-food-in-china': 'ce-que-coute-vendre-des-aliments-pour-animaux-en-chine',
@@ -173,6 +174,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'china-distributor-exclusivity': 'exklusivvertrieb-in-china',
   'tmall-global-diaper-allergy-returns': 'tmall-global-rueckgaberegeln-fuer-windeln-und-allergien',
   'xiaohongshu-store-setup-overseas-brand': 'xiaohongshu-shop-fuer-auslaendische-marken',
   'cost-to-sell-pet-food-in-china': 'was-tiernahrung-verkaufen-in-china-kostet',
@@ -337,6 +339,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'china-distributor-exclusivity': 'distribuidor-exclusivo-en-china',
   'tmall-global-diaper-allergy-returns': 'tmall-global-devoluciones-panales-y-alergias',
   'xiaohongshu-store-setup-overseas-brand': 'abrir-tienda-en-xiaohongshu-marca-extranjera',
   'cost-to-sell-pet-food-in-china': 'lo-que-cuesta-vender-alimento-para-mascotas-en-china',

@@ -54,9 +54,9 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The proprietary number.** Compass: share of distributors on file that asked for national exclusivity at first meeting. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 
-**Outline.** 1. Why distributors ask for everything 2. The Beijing double-damages case 3. The table 4. Targets and take-or-pay 5. Online carve-outs 6. Notice and review
+**Outline.** 1. Why distributors ask for everything 2. The Beijing exclusivity case (Dirui v. Cheng'antang: a 5,864,950 RMB award of liquidated damages; the "two times the sales" clause is reported only by a law-firm summary, so it is not printed) 3. The table 4. Targets and take-or-pay 5. Online carve-outs 6. Notice and review
 
-**Leads (verify, cite primary).** Beijing No. 1 Intermediate Court (2015)一中民(商)终字第7955号. Interlink with 25A (distribution agreement) when live.
+**Leads (verify, cite primary).** Beijing No. 1 Intermediate Court (2015)一中民(商)终字第7955号, cited through Dirui's cninfo filings (the judgment itself sits behind the China Judgements Online login). The 25A brief carries the link back to this piece; P20 links the live P15 instead of 25A.
 
 **Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
 **CTA.** Compass shortlist.
