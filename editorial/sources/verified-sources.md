@@ -985,7 +985,7 @@ non-browser fetch; the full text was downloaded and searched at both checks.
 - URL: https://www.ciie.org/zbh/cn/19BusEx/SerArea/ProAud/Q&A/20260527/61239.html
 - Verified 1: 2026-09-24
 - Verified 2: 2026-09-24
-- Used in: china-trade-fairs-find-distributor
+- Used in: china-trade-fairs-find-distributor, china-importer-state-owned-private
 - Notes: this is the OVERSEAS visitor Q&A. Domestic visitor rules may differ. The date comes from the URL path; if the page later prints a date, prefer it.
 
 ### Eighth CIIE buyer and matchmaking figures
@@ -995,7 +995,7 @@ non-browser fetch; the full text was downloaded and searched at both checks.
 - URL: https://www.ciie.org/zbh/businessEx/expoNews/20251112/54275.html
 - Verified 1: 2026-09-24
 - Verified 2: 2026-09-24
-- Used in: china-trade-fairs-find-distributor
+- Used in: china-trade-fairs-find-distributor, china-importer-state-owned-private
 - Notes: the same page carries the Shanghai delegation's figures (124,000 buyers from 18,000+ companies, US$10.62bn); not used. Exhibitor count (4,108 from 138 countries) is on Economic Information Daily via Guangming, https://economy.gmw.cn/2025-11/11/content_38404767.htm, checked once 2026-09-24, not used.
 
 ### FHC Shanghai 2026 dates and scale
@@ -1053,7 +1053,7 @@ non-browser fetch; the full text was downloaded and searched at both checks.
 - URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104105
 - Verified 1: 2026-09-24
 - Verified 2: 2026-09-24
-- Used in: china-trade-fairs-find-distributor
+- Used in: china-trade-fairs-find-distributor, china-importer-state-owned-private
 - Notes: general trade. Cross-border retail import goods are governed by 商财发〔2018〕486号 (ledger), which exempts them from first-import registration and labelling rules.
 
 ### Compass shortlist turnaround (proprietary, already published)
@@ -1063,7 +1063,7 @@ non-browser fetch; the full text was downloaded and searched at both checks.
 - Label in copy: "from Compass, September 2026"
 - Verified 1: 2026-09-24
 - Verified 2: 2026-09-24
-- Used in: china-trade-fairs-find-distributor
+- Used in: china-trade-fairs-find-distributor, china-importer-state-owned-private
 - Notes: a published service-level figure, not a data pull. It does not replace the Compass snapshot the partner plan (section 6) still needs.
 
 Re-verification of an existing entry: "Cosmetics Supervision and Administration
@@ -1156,7 +1156,7 @@ and 23 text matched; add china-trade-fairs-find-distributor to its "Used in".
 - URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=98771
 - Verified 1: 2026-09-24
 - Verified 2: 2026-09-24
-- Used in: verify-chinese-company-qichacha
+- Used in: verify-chinese-company-qichacha, china-importer-state-owned-private
 - Notes: art. 47 speaks of LLCs only; joint-stock companies follow a different rule.
 
 ### Registered capital transition: June 30, 2027 deadline
@@ -1809,7 +1809,7 @@ and 23 text matched; add china-trade-fairs-find-distributor to its "Used in".
 - URL: https://www.prnasia.com/story/543914-1.shtml
 - Verified 1: 2026-09-24
 - Verified 2: 2026-09-24
-- Used in: payment-terms-chinese-distributor
+- Used in: payment-terms-chinese-distributor, china-importer-state-owned-private
 - Notes: 73 days is how late payments run past due (平均逾期付款天数), not total time to collect. The same release quotes NBS (collection period 71.7 days at end-June 2026); for that, cite NBS directly (stats.gov.cn/sj/zxfbhjd/202607/t20260727_1964194.html, checked once only, not used).
 
 ### Kweichow Moutai sells on advance receipts; advance receipts down 60.31% in H1 2026
@@ -3828,7 +3828,7 @@ extraction, because the reports set text in columns).
 - Label in copy: "in our own work" / "TheChinaPath distributor and store work, as published on this site"
 - Verified 1: 2026-10-10
 - Verified 2: 2026-10-10
-- Used in: china-distributor-vs-own-store, tmall-partner-vs-distributor-china
+- Used in: china-distributor-vs-own-store, tmall-partner-vs-distributor-china, china-importer-state-owned-private
 - Notes: a published service-level statement, not a data pull.
 
 ### Re-verified ledger entries reused for P16 (no new entry; add the slug to Used in)
@@ -4787,3 +4787,119 @@ extraction, because the reports set text in columns).
 - Ocean Engine financial admission page: renders empty. Licaitong user figures after 2018: no dated primary page.
 - Foreign insurers' assets of 2.82 trillion RMB (September 2024): traces to an EY report (consultancy).
 - Full-year 2025 and H1 2026 mainland-visitor premiums in Hong Kong: not published by the Insurance Authority.
+
+## Partner cluster P18 (china-importer-state-owned-private), 2026-10-15
+
+### China's 2025 trade by ownership: private 57.3%, state-owned 13.3%
+- Value: private companies 26.04 trillion RMB of imports and exports, up 7.1%, 57.3% of the total; state-owned companies 6.06 trillion RMB, 13.3%; foreign-invested companies 13.27 trillion RMB; more than 780,000 companies with import or export records
+- As of: 2025 full year (article dated January 15, 2026)
+- Source: People's Daily (人民日报), carried by the Chinese government portal (中国政府网), 《2025年进出口总值达45.47万亿元，同比增长3.8%》
+- URL: https://www.gov.cn/lianbo/202601/content_7054775.htm
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (re-fetched with curl; all five figures re-found)
+- Used in: china-importer-state-owned-private
+- Notes: the figures cover imports and exports together, not imports alone. A customs press-conference line that state-owned firms import 2.1 times what they export sits on a customs mirror behind a script challenge; not used.
+
+### Foreign trade operator filing abolished, December 30, 2022
+- Value: article 9 of the Foreign Trade Law deleted on December 30, 2022; local commerce departments stopped foreign trade operator filing that day; applicants for licences, technology contract registration, quotas and state trading status no longer have to provide the filing
+- As of: January 19, 2023 (MOFCOM press office release)
+- Source: Ministry of Commerce (商务部), 《商务部外贸司负责人介绍取消对外贸易经营者备案登记有关情况》
+- URL: https://wms.mofcom.gov.cn/ztxx/dwmyzx/dwmyjyzbadj/art/2023/art_897a36464f8044bd90e35d408802da88.html
+- Verified 1: 2026-10-15 (curl; WebFetch closed the socket)
+- Verified 2: 2026-10-15 (re-fetched)
+- Used in: china-importer-state-owned-private
+- Notes: the copy says "any company registered in China can import" goods outside state trading; customs registration and category licences still apply.
+
+### Import state trading: nine goods
+- Value: import state trading goods are wheat, corn, rice, sugar, tobacco and its products, crude oil, refined oil, fertilizer and cotton; a trader not on the state trading list and without a non-state allowance may not import or export them
+- As of: service guide updated August 2021 (page URL path 2023)
+- Source: Ministry of Commerce (商务部), 《进出口国营贸易经营资格认定》 administrative licensing service guide
+- URL: https://www.mofcom.gov.cn/zwdt/xzxksx/art/2023/art_a210ec25313747eab80abec4543cfc10.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15
+- Used in: china-importer-state-owned-private
+- Notes: the guide still lists foreign trade operator filing as an application condition; that condition lapsed on December 30, 2022 (entry above). Cite the guide only for the goods list.
+
+### 2026 grain tariff quotas and state trading shares
+- Value: wheat 9.636 million t, 90% state trade; corn 7.2 million t, 60%; rice 5.32 million t (266 long-grain, 266 medium and short), 50%; state-trade quota allocated to a company must be imported through a state trading enterprise, and if no import contract is signed by August 15 the company may use any trader with trading rights
+- As of: announcement dated September 29, 2025 (NDRC 2025 No. 5, annex 1)
+- Source: National Development and Reform Commission (国家发展改革委), 《2026年粮食进口关税配额申请和安排细则》
+- URL: https://www.ndrc.gov.cn/xxgk/zcfb/gg/202510/P020251009506531316782.pdf
+- Verified 1: 2026-10-15 (PDF text read)
+- Verified 2: 2026-10-15 (PDF re-downloaded, figures re-found)
+- Used in: china-importer-state-owned-private
+- Notes: metric tons. The non-state shares in the copy (10%, 40%, 50%) are the arithmetic complement.
+
+### 2026 sugar tariff quota: 1.945 million t, 70% state trade
+- Value: 1.945 million t, 70% state-trade tariff quota; same rule as grain (through a state trading enterprise, own import or any trader after August 15)
+- As of: MOFCOM announcement 2025 No. 64, September 30, 2025
+- Source: Ministry of Commerce (商务部), 《2026年食糖进口关税配额申请和分配细则》, carried by the Beijing Municipal Commerce Bureau (北京市商务局)
+- URL: https://sw.beijing.gov.cn/zwxx/2024zcwj/202510/W020251011615787109423.pdf
+- Verified 1: 2026-10-15 (PDF text read)
+- Verified 2: 2026-10-15 (re-downloaded)
+- Used in: china-importer-state-owned-private
+
+### Central SOE procurement methods (SASAC and NDRC, 2024)
+- Value: outside mandatory tendering, central SOEs use one of four methods: 询比 (three or more qualified suppliers each give one fixed price), 竞价 (three or more, multi-round open bidding), 谈判 (two or more, negotiation), 直接采购 (single source, seven listed cases); purchases above a company-set threshold are published on its e-procurement platform or provincial-level media; suppliers may not be restricted by location, ownership, registered capital or years in business
+- As of: 国资发改革规〔2024〕53号, July 18, 2024 (State Council Gazette 2024 No. 25)
+- Source: SASAC and NDRC (国务院国资委 国家发展改革委), 《关于规范中央企业采购管理工作的指导意见》
+- URL: https://www.gov.cn/gongbao/2024/issue_11566/202409/content_6973172.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15
+- Used in: china-importer-state-owned-private
+- Notes: central SOEs only; local SOEs follow their own regulators. The copy does not claim a number of weeks.
+
+### State Council notice on SME payment, 国办发〔2026〕24号
+- Value: central SOEs to set out four payment terms (start of the term, method, inspection standard and period, longest term) in contracts, pay SMEs fully in cash and keep a reasonable cash share for large suppliers; where a contract names no method, government bodies and large enterprises pay SMEs in cash, not commercial bills or receivable e-vouchers; e-voucher term capped at six months; large enterprises guided to a 60-day maximum term for SMEs
+- As of: September 3, 2026 (released September 10, 2026)
+- Source: General Office of the State Council (国务院办公厅), 《关于加强中小企业回款难问题治理有关工作的通知》, Ministry of Commerce (商务部) policy database
+- URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=106834
+- Verified 1: 2026-10-15 (also read on mee.gov.cn, source line 中国政府网)
+- Verified 2: 2026-10-15
+- Used in: china-importer-state-owned-private
+- Notes: protects Chinese SMEs. Never tell a foreign exporter selling from abroad that it is covered.
+
+### SME payment regulation (Decree 802): definition and 60-day term
+- Value: SMEs are medium, small and micro enterprises set up inside the PRC under the State Council's size standards (art. 3); large enterprises buying goods, works or services from SMEs pay within 60 days of delivery, or on a reasonable term the contract sets, and may not tie payment to third-party payment (art. 9); in force June 1, 2025
+- As of: Decree 802, signed March 17, 2025, published March 24, 2025
+- Source: State Council (国务院), 《保障中小企业款项支付条例》
+- URL: https://www.gov.cn/zhengce/content/202503/content_7015401.htm
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15
+- Used in: china-importer-state-owned-private
+- Notes: full text. The interpretation page in the entry "Payment ceiling for large enterprises buying from SMEs" carries the same 60-day rule; this entry adds the art. 3 definition.
+
+### Customs credit: AEO and dishonest enterprise inspection rates (GACC Decree 251)
+- Value: AEO (高级认证企业) average import and export inspection rate below 20% of the rate for companies under normal measures (art. 30); dishonest enterprises (失信企业) inspected at 80% or more (art. 31)
+- As of: in force November 1, 2021 (decree signed September 13, 2021)
+- Source: General Administration of Customs (海关总署), 《中华人民共和国海关注册登记和备案企业信用管理办法》, State Council Gazette 2021 No. 32
+- URL: https://www.gov.cn/gongbao/content/2021/content_5651731.htm
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15
+- Used in: china-importer-state-owned-private
+
+### Sinopec: 31,195 service stations; convenience-store profit 4.25 billion RMB, 2025
+- Value: 31,195 Sinopec-branded service stations at December 31, 2025 (all self-operated); marketing and distribution segment non-fuel profit 4.53 billion RMB, of which convenience-store goods and services 4.25 billion RMB, in 2025
+- As of: 2025 annual report, filed March 23, 2026
+- Source: Sinopec (中国石化), 2025年年度报告, cninfo
+- URL: https://static.cninfo.com.cn/finalpage/2026-03-23/1225024063.PDF
+- Verified 1: 2026-10-15 (pp. 17 and 27)
+- Verified 2: 2026-10-15 (re-downloaded, both figures re-found)
+- Used in: china-importer-state-owned-private
+- Notes: the report gives no Easy Joy store count; the 27,000-store figure in the press is not from the filing. Sinopec is not a store operator or a competitor under Part 5.
+
+### Re-verified for P18 (no new entry; add china-importer-state-owned-private to Used in)
+- Company Law 2023 (policy.mofcom.gov.cn id=98771): re-fetched 2026-10-15 at both checks; arts. 4 (以其认缴的出资额为限), 13 (子公司具有法人资格，依法独立承担民事责任) and 168 (国家出资公司 = 国有独资公司、国有资本控股公司) read verbatim. Arts. 4 and 168 are new passages on the existing entry.
+- Eighth CIIE buyer and matchmaking figures (ciie.org 54275): re-fetched 2026-10-15 at check 2; 14 central SOEs and 20 retail chains and platforms re-found.
+- CIIE 2026 overseas professional visitor rules (ciie.org 61239): re-fetched 2026-10-15 at check 2; dates November 5 to 10 and the venue re-found.
+- Food Safety Law art. 96 (policy.mofcom.gov.cn id=104105): re-fetched 2026-10-15 at check 2; 进口食品的进口商应当向国家出入境检验检疫部门备案 re-found.
+- Credit terms and late payment in mainland China, 2026 (Coface via PR Newswire): re-fetched 2026-10-15 at check 2; 平均为 81 天 and 86% re-found.
+
+### Proprietary figures for P18
+- Reused from source 1 of "The proprietary number" (no new entry): "Distributor signature and cross-border launch timing" (three to five months to a signed distributor contract) and "Compass shortlist turnaround" (two to three weeks), both re-read 2026-10-15 in src/content/insights/china-distributor-vs-own-store.md. Labels in copy: "(TheChinaPath distributor sourcing engagements, as published on this site)" and "(TheChinaPath, as published on this site)". Add china-importer-state-owned-private to both Used in lines. A Compass figure on importer ownership was unavailable (no compass-stats.md); no calculator models a general-trade importer.
+
+### Researched for P18, not used
+- SASAC central enterprise list (sasac.gov.cn n2641645): needs a script runtime; the piece needs no count.
+- CR Vanguard store counts: trade press only, 2023 figures, no filing.
+- MIIT sampling of 4.8 trillion RMB owed to SMEs (Q1 2025): trade press relay only, no primary page found.
+- 2027 sugar tariff quota, MOFCOM announcement 2026 No. 46 (dated 2026-10-08, page 2026-10-09): 1.945 million t, 70% state trade, unchanged from 2026; figures read on Jiemian (jiemian.com/article/15173481.html, publish-time 2026-10-09) because the MOFCOM attachment needs a browser session; checked once on 2026-10-15. Not in the copy; registered in signal-watch-list.md for 2027-01-04 with the 2027 grain notice.

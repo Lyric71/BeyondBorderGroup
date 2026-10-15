@@ -161,6 +161,7 @@ export function organizationSchema(): SchemaObject {
     // one entity set.
     sameAs: [
       'https://www.linkedin.com/company/thechinapath/',
+      'https://x.com/TheChinaPath',
       'https://cyrildrouin.substack.com',
       'https://www.chinawebfoundry.com',
       'https://www.theredscroll.com',
