@@ -2553,7 +2553,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - URL: https://developers.weixin.qq.com/community/develop/article/doc/000e64388c0f107faf739efcd66813
 - Verified 1: 2026-09-29 (page behind a login wall; read through the community JSON API /community/ngi/doc/detail/<id>; "目前境外主体认证费用为99美元" and PublishTime confirmed)
 - Verified 2: 2026-09-29 (JSON re-fetched with curl; 99美元 and PublishTime 1750078781 = 2025-06-16 re-found)
-- Used in: china-social-media-marketing-cost-per-month
+- Used in: china-social-media-marketing-cost-per-month, how-insurance-and-financial-services-reach-customers-in-china
 - Notes: the same US$99 appears on Tencent's help page kf.qq.com/faq/190723aQvMR31907233IF7FV.html, which is undated (confirmation only). Mainland 300 RMB/yr verification pages are official but undated: not cited.
 
 ### Xingtu recruitment tasks: 10,000 RMB minimum order budget, 5% platform service fee
@@ -2625,7 +2625,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - URL: https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf
 - Verified 1: 2026-09-29 (curl + pdftotext)
 - Verified 2: 2026-09-29 (re-downloaded; "Combined MAU of Weixin 1,439 1,411 2% 1,432 0.5%" and "Marketing Services were RMB43.6 billion for 2Q2026, up 22%" re-found)
-- Used in: china-social-media-marketing-cost-per-month
+- Used in: china-social-media-marketing-cost-per-month, how-insurance-and-financial-services-reach-customers-in-china
 - Notes: the 2% is YoY, not QoQ. No separate figure for Moments, Video Accounts or WeChat Store ads.
 
 ### Weibo MAU 561 million, DAU 254 million; ad revenue US$381.0 million, -1% (Q2 2026)
@@ -4430,3 +4430,360 @@ extraction, because the reports set text in columns).
 - E-Commerce Law, Art. 15 (CAC, 2018-09-01): re-fetched 2026-10-14, text matched. Both checks for this piece 2026-10-14.
 - Distributor economics: four to five million RMB of stock for under 300,000 RMB profit (Jiemian 13003026): re-fetched 2026-10-14; the quote is anonymous on the page, so the copy says "one distributor". Both checks for this piece 2026-10-14.
 - Compass shortlist size (three to five names) and Compass shortlist turnaround (two to three weeks): re-read in src/content/pages/partner-guides/shared.ts 2026-10-14, both checks. Proprietary number of this piece.
+
+## Partner cluster P36 (tmall-agency-proposal-red-flags), 2026-10-14
+
+### Tmall Global 2026 star rule: unkeepable promises such as 保销XX万 are a red line; brand complaints; data falsification
+- Value: under 反向扣分细则, 平台红线问题 include 违规承诺: service guarantees to merchants or shoppers that cannot be honored (如"保销XX万"、"无效退款"); red-line breaches lose all bonus points for the store or, if serious, the current rating; brands may file written complaints about service quality, delivery or communication (no deduction if the complaint fails); falsifying data to deceive a brand (伪造数据欺骗品牌) loses rating eligibility permanently
+- As of: March 20, 2026 (in force March 31, 2026)
+- Source: Tmall Global service provider market (天猫国际服务市场), 《天猫国际2026服务商生态星级考核规则》
+- URL: https://globaltp.tmall.com/import_tp/TP/informationDetail?id=815
+- Verified 1: 2026-10-14 (rendered with headless Edge, date 2026-03-20 on the page; body image O1CN01ZIx7Jt29noQB3KJ03_!!6000000008113-0-tps-1100-4442.jpg downloaded and read in slices 3 and 4)
+- Verified 2: 2026-10-14 (re-rendered at iteration 8; the image URL re-found and the re-download byte-identical)
+- Used in: tmall-agency-proposal-red-flags
+- Notes: new clauses on the existing "Tmall Global 2026 star rating for operating partners" entry (P06). The rule binds Tmall Global operating partners, not Tmall (domestic) agencies.
+
+### Qianchuan: no promise of results (art. 9); agency-linked accounts lose pending credits on transfer (art. 16)
+- Value: art. 9 (不承诺投放效果): oCPM plans are billed by impression; the platform makes no express or implied promise on results or on the customer's sales, business performance or investment returns. Art. 16: when a customer account is linked to an agency (挂接代理商的账户, "非直投账户") and the customer moves it to another agency (转户), cost-guarantee amounts for spend before the transfer that are still being calculated or paid are not paid. Art. 13: on violations Douyin may act against all Qianchuan accounts under the customer's entity and related parties, including freezing account assets
+- As of: first in force June 1, 2021, revised December 22, 2025 (page dated 2026-07-02)
+- Source: Douyin E-commerce (抖音电商), 《【巨量千川】标准投放成本保障规则》, e-commerce learning center
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHMNDfneBP7r
+- Verified 1: 2026-10-14 (headless Edge render; arts. 9, 13 and 16 read)
+- Verified 2: 2026-10-14 (re-rendered at iteration 8; 不承诺投放效果, 经营业绩、投资收益, 非直投账户, 转户 and the revision date re-found)
+- Used in: tmall-agency-proposal-red-flags
+- Notes: the rule covers cost-guarantee credits only; it does not say who owns an agency-opened account. The Qianchuan access and control guide (articlev0/110230) is offline (文章已下线).
+
+### Chengdu Qingyang court: guaranteed turnover of 40,000 RMB in three months; no-refund clauses bind neither side; 65% refund
+- Value: two e-commerce service contracts signed September 22 and 24, 2023; agency staff told the owner on WeChat the guaranteed turnover (保底营业额) was 40,000 RMB, with monthly income around 17,000 RMB once stable; the store contract set a three-month term and 40,000 RMB of turnover; twenty-odd orders, more than ten returned; the shop-window service fee refunded in full and 65% of the store service fee; the judges' note says such no-refund clauses usually unfairly cut the agency's liability and bind neither side; Chengdu Intermediate Court upheld
+- As of: October 21, 2024
+- Source: Chengdu Qingyang District People's Court (成都市青羊区人民法院), official account on The Paper (澎湃号·政务), 《平台网店运营服务，营收未达预期是否可以解约退款？》
+- URL: https://m.thepaper.cn/newsDetail_forward_29103453
+- Verified 1: 2026-10-14
+- Verified 2: 2026-10-14 (re-fetched at iteration 8; 保底营业额为4万, 65%, 对双方均无拘束力, 维持原判 re-found)
+- Used in: tmall-agency-proposal-red-flags
+- Notes: the platform is unnamed (某平台网店, a short-video platform shop by context); never write it up as Douyin. A micro-shop case; use for the contract principle, not for scale.
+
+### Pudong court: a missed sales estimate is not the agency's fault; the client pays the commission (white paper case 6)
+- Value: service agreement of July 2020 for a Taobao store selling small hardware, 180,000 RMB operating fee plus tiered commission on sales; the client took the store back on October 31, 2021 and sued to terminate and recover 50,000 RMB of fees; the court held the shortfall against the estimate (预估值) came from product quality, pricing, store awareness, consumer acceptance, sales cycle and competition, not directly from the agency's work; claim dismissed, client ordered to pay the sales commission; no appeal. Same white paper: 648 platform-economy service contract cases in 2021 to 2023; in 312 suits by providers for fees, over 60% of clients defended on service quality; termination sought in 32%
+- As of: release October 18, 2024; full text carried October 21, 2024
+- Source: Shanghai Pudong New Area People's Court (上海浦东法院), platform-economy service contract white paper and ten typical cases, case 6, full text carried by IP Economy (知产财经), 来源 上海浦东法院
+- URL: https://www.ipeconomy.cn/dianxing/8890.html
+- Verified 1: 2026-10-14 (case 6 read in full)
+- Verified 2: 2026-10-14 (re-fetched at iteration 8; 销售额未能达到预估值, 返还已付服务费5万元, 支付销售提成 re-found)
+- Used in: tmall-agency-proposal-red-flags
+- Notes: the Shanghai High Court's release (https://www.hshfy.sh.cn/shfy/web/xxnr.jsp?pa=aaWQ9MTAyMDQwNzMyMSZ4aD0xJmxtZG09bG0xNzEPdcssz&zd=xwzx, 2024-10-18) confirms the white paper and the 648 cases but carries no case text. The parties are named in the release; the copy does not name them.
+
+### Commission base and ad line at calculator defaults (proprietary, October 2026)
+- Value: Tmall Global defaults (GMV 3,500,000 RMB, TP 35,000 a month, commission 10%, returns 5%, cross-border tax 9.1%): commission 350,000 on gross, 332,500 net of returns (17,500 a year), 381,850 on a tax-inclusive base (31,850 more); TP total 770,000. Douyin defaults (GMV 2,000,000, DP 30,000 a month, commission 5%, paid share 15%, ROAS 2.5): DP commission 100,000; 20,000 of it on refunded goods at a 20% return scenario; Qianchuan line 120,000 a year
+- As of: October 2026
+- Source: TheChinaPath calculator data, src/pages/tools/tmall-global-setup-and-run.astro and src/pages/tools/douyin-cost-calculator.astro
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-14 (defaults read from both files; arithmetic run with node)
+- Verified 2: 2026-10-14 (recomputed before the draft was finished)
+- Used in: tmall-agency-proposal-red-flags
+- Notes: scenario arithmetic on model defaults, not market rates or client results. Matches the P08 entry "TP transition-month cost and commission-base scenarios" (September 2026), defaults unchanged. Stands in for a Compass figure (compass-stats.md does not exist).
+
+### Re-verified for P36 (no new entry; add tmall-agency-proposal-red-flags to Used in)
+- Douyin operating service provider management code (aJ5N3Pxir67C, revised 2026-07-14): re-rendered 2026-10-14 at check 1 and check 2; 指定链接, 全部商品卡, 一次性累计违规积分120分 re-found.
+- Douyin operating service provider cooperation rules (aJ2D2SbD5GWe): re-rendered 2026-10-14 at both checks; 员工花名册、单位参保证明, 服务团队人数20人以上，且有12人以上 re-found. The copy says "at least 20" and "at least 12" (以上 includes the number).
+- Xiamen 代运营 refund cases (People's Court Daily, 2021-12-03): older than twelve months, re-fetched 2026-10-14 at both checks; 不低于230万元, 345元, 1.5万元 paid at the agency's direction treated as a prepayment, 1.2万元 returned.
+- SPC typical case 3, agency fake group-buy orders (court.gov.cn 507691, 2026-08-03): re-fetched 2026-10-14 at both checks.
+- Tmall Merchant Service Agreement (TD201609271722_89275, updated 2026-03-21): re-fetched 2026-10-14 at both checks; 通过天猫账户完成的行为均视为您本人行为或已获得您充分授权 re-found.
+- Taobao/Tmall sub-account licence (revised 2023-06-02): re-fetched 2026-10-14 at both checks.
+- Annual report social insurance items (Qiaokou, 07A entry): re-fetched 2026-10-14 at check 2 for this piece.
+
+### Researched for P36, not used
+- Mengzhou court (mzsfy.hncourt.gov.cn/public/detail.php?id=1525, 2026-03-30): Douyin store operation, 7,400 RMB refund for results promised orally. Too small to say anything to a brand.
+- Tiandi Online SZSE inquiry reply (file.finance.qq.com, 2025-08-07) on media rebates: the PDF's fonts carry no text layer; no figure readable. Do not retry without OCR.
+- Media-agency rebate prosecution reported by adquan and digitaling: trade-media reports only, no prosecutor or court page found.
+
+## Ledger 07L (how-insurance-and-financial-services-reach-customers-in-china), 2026-10-15
+
+### Insurance Law: who may run insurance business; domestic risks insured in China; representative offices may not do business; penalty for illegal insurance business
+- Value: arts. 6 and 7 (only insurers set up under the law and other bodies the law allows may run insurance business; domestic entities insure domestic risks with insurers in China); art. 80 (a foreign insurer's representative office may not do insurance business); art. 158 (illegal commercial insurance business is shut down, illegal income confiscated, fine 1 to 5 times that income, or 200,000 to 1 million RMB where the income is under 200,000 RMB)
+- As of: 2015 amendment (amended 2015-04-24), in force; a full rewrite was out for comment from 2026-09-04 to 2026-10-03 (signal watch list)
+- Source: Insurance Law of the PRC (保险法), via the State Administration for Market Regulation (国家市场监督管理总局)
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_4c715a53f3d4402c89f62ae77809f638.html
+- Verified 1: 2026-10-15 (arts. 6, 7, 80, 158 read; cross-check jsnews.jschina.com.cn, 2024-04-15)
+- Verified 2: 2026-10-15 (re-fetched with curl; 其他单位和个人不得经营保险业务, 应当向中华人民共和国境内的保险公司投保, 不得从事保险经营活动 and art. 158 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: If the draft revision is adopted, re-read before reuse.
+
+### Joint-venture life insurer foreign ownership cap lifted January 1, 2020
+- Value: cap removed from 2020-01-01; end-2023: 67 foreign insurance institutions, 70 representative offices, 10% market share (NFRA vice-chair Xiao Yuanqi)
+- As of: January 2025
+- Source: Securities Times (证券时报)
+- URL: https://www.stcn.com/article/detail/1480828.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (2020年1月1日, 外资持股比例上限 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: The 10% end-2023 share is a different measure from Li Yunze's 9% of premiums; 07L uses only the cap date from this page.
+
+### Foreign insurers' share of premiums: 4% in 2013, 9% now (Li Yunze, NFRA)
+- Value: 4% to 9%; foreign banks' and insurers' assets above 7 trillion RMB
+- As of: June 2025 (Lujiazui Forum)
+- Source: Sina Finance (新浪财经)
+- URL: https://finance.sina.com.cn/money/bank/bank_hydt/2025-06-18/doc-infanfym5817481.shtml
+- Verified 1: 2026-10-15 (cross-check Economic Daily via Sina, 2025-06-22)
+- Verified 2: 2026-10-15 (4%, 9%, 李云泽 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Individual insurance agents: about 2.126 million at end-Q1 2026, peak 9.12 million in 2019
+- Value: 2.126 million; 9.12 million
+- As of: May 2026
+- Source: Jiemian (界面新闻), via Sina Finance
+- URL: https://finance.sina.com.cn/jjxw/2026-05-19/doc-inhymuma3126921.shtml
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (212.6万, 912万 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Agent commission deferral: payment terms of 10 years or more, commission paid over at least 5 years
+- Value: at least 3 years for 5 to 10 year terms; at least 5 years for 10-year-plus terms
+- As of: NFRA notice 《关于推动深化人身保险行业个人营销体制改革的通知》, reported April 2025
+- Source: Sina Finance (新浪财经)
+- URL: https://finance.sina.com.cn/jjxw/2025-04-19/doc-inetsatz7328657.shtml
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (不得少于5年 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Bancassurance share, Q1 2026: 47.77% of premiums at 63 life insurers; agents 38.76%
+- Value: 462.346 billion of 967.786 billion RMB
+- As of: May 2026
+- Source: Securities Daily (证券日报), via the Wuhan Local Financial Administration (武汉市地方金融管理局)
+- URL: https://jrj.wuhan.gov.cn/ztzl_57/xyrd/bxy/202605/t20260525_2768470.shtml
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (47.77, 38.76, 63家 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: A Sina piece of 2026-07-03 gives a different Q1 split (506.1 billion, 42%) on another sample; attribute the 47.77% to this source only.
+
+### Insurers may pay banks only compliant commission from July 1, 2026 (NFRA document 65)
+- Value: no other sales-related fees; no published percentage cap
+- As of: July 2026
+- Source: Sina Finance (新浪财经)
+- URL: https://finance.sina.com.cn/wm/2026-07-03/doc-inifpqkw3648346.shtml
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (合规支付佣金, 7月1日 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Ant Insurance works with more than 90 insurers
+- Value: 90+ partner insurers; 17.87 billion RMB of claims paid through the platform in 2025
+- As of: February 2026
+- Source: China News Service (中国新闻网)
+- URL: https://www.chinanews.com.cn/cj/2026/02-03/10564653.shtml
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (90 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### WeSure (腾讯微保): 100 million+ users served since 2017; partners include Samsung Fire & Marine
+- Value: 100 million+ cumulative users; 8.4 billion RMB of claims to end-2025
+- As of: May 2026
+- Source: China Securities Journal (中国证券报·中证网)
+- URL: https://www.cs.com.cn/yh/bx/2026/05/26/detail_2026052610014236.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (超1亿, 三星 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Yuanbao FY2025: selling and marketing 2,217.2 million RMB; about 30.7 million new policies
+- Value: 2,217.2 million RMB (+23.9%); 30.7 million new policies (+36.7%); our arithmetic about 72 RMB per new policy
+- As of: fiscal 2025, release dated 2026-03-18
+- Source: Yuanbao Inc. (Nasdaq: YB) results release, GlobeNewswire, as carried by the Manila Times
+- URL: https://www.manilatimes.net/2026/03/18/tmt-newswire/globenewswire/yuanbao-inc-announces-fourth-quarter-and-fiscal-year-2025-unaudited-financial-results/2302540
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (2,217.2, 30.7 million re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: The 72 RMB is our division and the spend also covers existing customers; label it as our arithmetic.
+
+### Online insurance buyers' information channels: 42% WeChat, Weibo or Moments; 39% short-video apps
+- Value: 2025 survey; report released 2026-05-07 by Yuanbao and the China Insurance and Pension Finance Research Center of Tsinghua PBCSF
+- As of: May 2026
+- Source: China National Radio (央广网)
+- URL: https://www.cnr.cn/jrpd/mxhq/20260512/t20260512_527617869.shtml
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (42%, 39% re-found; page is GBK)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: The sample is online insurance consumers, not all consumers; say so.
+
+### Douyin Q3 2026: 45,000+ financial posts removed, 1,000+ accounts acted on, all 6,888 wealth-adviser certifications cancelled
+- Value: as stated
+- As of: September 2026
+- Source: 21st Century Business Herald (21世纪经济报道)
+- URL: https://m.21jingji.com/article/20260921/herald/c474648451a908b7a1315d191a42a10c.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (4.5万, 6888 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Xiaohongshu financial community convention: license first, then platform certification; 1.01 million notes and 157,000 accounts removed in six months
+- Value: as stated; financial searches +314%
+- As of: September 2026 (convention published 2026-09-15)
+- Source: Tencent News (腾讯新闻)
+- URL: https://news.qq.com/rain/a/20260915A0C20Q00
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (持牌, 101, 15.7 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### WeCom: 14 million+ organizations; businesses serve 750 million+ WeChat users a day through it
+- Value: as stated
+- As of: August 2025
+- Source: Yicai (第一财经)
+- URL: https://www.yicai.com/news/102783091.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (1400万, 7.5亿 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### WeChat Channels financial convention: accounts offering insurance services must hold insurance-practitioner or institution verification
+- Value: as stated; no identity mismatch, no trading in credentials
+- As of: March 2026 (reported 2026-03-26)
+- Source: Securities Times (证券时报)
+- URL: https://www.stcn.com/article/detail/3699887.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (保险从业者, 机构认证 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: The page carries no in-force date; do not cite April 1, 2026 from this URL.
+
+### Tencent swept financial ads before the September 30, 2026 rules and banned accounts without financial credentials
+- Value: as stated
+- As of: September 2026
+- Source: Shanghai Securities News (上海证券报), via Xinhua (新华网)
+- URL: https://www.news.cn/money/20260918/12e005358d6141b294d519190237c823/c.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (金融广告, 无金融资质 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Professional insurance intermediaries: 2,506 at end-2025
+- Value: 2,506 intermediary legal entities; 239 insurers
+- As of: end-2025, NFRA list reported August 2026
+- Source: China Banking and Insurance News (中国银行保险报), via Sina Finance
+- URL: https://finance.sina.cn/bank/yhgd/2026-08-14/detail-ininhxpm9280955.d.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (2506 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Internet property insurance 2025: 184.55 billion RMB, intermediaries 72.2%
+- Value: 184.55 billion RMB (+17.2%); intermediaries 72.2% (133.32 billion); insurers' own platforms 26%
+- As of: 2025, Insurance Association of China report, reported August 2026
+- Source: National Business Daily (每日经济新闻), via Sina Finance
+- URL: https://finance.sina.com.cn/jjxw/2026-08-19/doc-ininwiep9311904.shtml
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (1845.5, 72.2 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Mainland visitors' new office premiums in Hong Kong, 2024: HK$62.8 billion
+- Value: HK$62.8 billion, up more than 6%; about 29% of individual new office premiums
+- As of: 2024, Insurance Authority release of 2025-04-25
+- Source: Cailian Press (财联社)
+- URL: https://www.cls.cn/detail/2016452
+- Verified 1: 2026-10-15 (ia.org.hk behind a Cloudflare challenge; press used)
+- Verified 2: 2026-10-15 (628亿 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: No official mainland-visitor figure exists after 2024 (next entry).
+
+### Hong Kong Insurance Authority stopped publishing the mainland-visitor figure from Q1 2025
+- Value: as stated; 2025 gross premiums HK$827 billion (+29.7%)
+- As of: April 2026
+- Source: Sina Finance (新浪财经)
+- URL: https://finance.sina.cn/insurance/hydt/2026-04-27/detail-inhvxxww8989618.d.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (未再披露, 8270 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: The same page's 'close to 30%' for 2025 is hearsay (据悉); never cite it.
+
+### Hong Kong IA: licensed HK intermediaries may not solicit in the mainland; buy in Hong Kong in person; zero tolerance on unlicensed selling
+- Value: as stated; also a Guangdong agency branch's WeChat account steering readers to HK policies outside its licensed scope
+- As of: October 2024
+- Source: Beijing News (新京报), via Sina Finance
+- URL: https://finance.sina.com.cn/money/insurance/bxdt/2024-10-15/doc-incsrqpv0818946.shtml
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (零容忍, 亲身赴港, 不可以在内地招揽保险业务 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: Replaces the IA's own Conduct in Focus Issue 7 page, which failed check 2 (403, no Wayback snapshot).
+
+### CIRC risk warning: buy a Hong Kong policy in Hong Kong in person; one bought in the mainland is an illegal underground policy
+- Value: as stated
+- As of: April 2016
+- Source: Xinhua (新华网), reporting the China Insurance Regulatory Commission (保监会)
+- URL: http://www.xinhuanet.com/politics/2016-04/26/c_128930562.htm
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (亲赴香港, 地下保单, 不受内地法律保护 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: Older than twelve months; checked twice for this piece. Still the standing mainland position (21jingji, 2026-05-27).
+
+### Shenzhen and Guangdong NFRA bureaus' campaign against illegal sales of overseas insurance, autumn 2024
+- Value: all banks and insurers in their areas
+- As of: October 2024
+- Source: 21st Century Business Herald (21世纪经济报道)
+- URL: https://www.21jingji.com/article/20241014/herald/ff62795fba9d7c2bb4c14d8321b0de57.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (非法销售境外保险产品, 专项治理 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Wealth Management Connect 2.0: in force February 26, 2024; individual quota 3 million RMB (from 1 million); securities firms admitted
+- Value: as stated
+- As of: February 2024
+- Source: China Banking and Insurance News (中国银行保险报), via Sina Finance
+- URL: https://finance.sina.com.cn/jjxw/2024-02-29/doc-inaksefw5633240.shtml
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (300万, 2月26日, 证券公司 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Wealth Management Connect: 180,000+ participants and 140.3 billion RMB of remittances by end-H1 2026
+- Value: as stated (PBOC Guangdong branch deputy head Wu Yansheng)
+- As of: July 2026
+- Source: China News Service (中新社), on the Liaison Office site (locpg.hk)
+- URL: https://www.locpg.hk/20260728/e4509bca49aa4df4868295e8e7616552/c.html
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (18万, 1403亿 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Internet insurance rules: only licensed insurance institutions; non-insurers may not advise, compare, quote, design cover, handle applications or collect premiums
+- Value: CBIRC Order 2020 No. 13, arts. 3 and 23; in force 2021-02-01
+- As of: December 2020
+- Source: China government portal (中国政府网)
+- URL: https://www.gov.cn/zhengce/zhengceku/2020-12/14/content_5569402.htm
+- Verified 1: 2026-10-15 (cross-check jrb.hubei.gov.cn)
+- Verified 2: 2026-10-15 (其他机构和个人不得开展互联网保险业务, 保费试算, 2021年2月1日 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: Cite the in-force date without an article number for the in-force clause (the fetcher read arts. 82 and 83 inconsistently).
+
+### Financial Product Online Marketing Measures, in force September 30, 2026
+- Value: insurance named as a financial product (art. 3); a foreign institution serving domestic residents without a license is illegal financial activity (art. 6); Official Account, livestream and short-video marketing only on the institution's own or legally opened accounts, by its staff (art. 16); PBOC, MIIT, SAMR, NFRA, CSRC, CNIPA, CAC, SAFE, Announcement 2026 No. 9
+- As of: April 2026 (in force 2026-09-30)
+- Source: Cyberspace Administration of China (国家网信办)
+- URL: https://www.cac.gov.cn/2026-04/24/c_1778769008779432.htm
+- Verified 1: 2026-10-15 (cross-checks safe.gov.cn 2026-04-24, stcn.com 2026-04-25)
+- Verified 2: 2026-10-15 (境外机构未经许可面向境内居民提供金融产品服务, 公众号、直播、短视频, 2026年9月30日 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+
+### Consumer lenders' customer acquisition cost: 1,300 to 2,000 RMB; short-video feed about 1,300 (2020) to 2,100 RMB (mid-2024)
+- Value: as stated
+- As of: March 2025
+- Source: Sina Finance (新浪财经)
+- URL: https://finance.sina.com.cn/money/bank/bank_hydt/2025-03-31/doc-inerqfeh6932568.shtml
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (1300至2000, 2100 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: Consumer credit, not insurance; use only as a finance-wide comparison.
+
+### Bank-sold insurance over one year: 15-day cooling-off period
+- Value: 银保监办发〔2019〕179号 art. 36
+- As of: August 2019
+- Source: China government portal (中国政府网)
+- URL: https://www.gov.cn/zhengce/zhengceku/2019-12/03/content_5457853.htm
+- Verified 1: 2026-10-15
+- Verified 2: 2026-10-15 (15日的犹豫期 re-found)
+- Used in: how-insurance-and-financial-services-reach-customers-in-china
+- Notes: Bank channel only; the China Insurance Security Fund (2024-10-22) gives 10 to 15 days for other channels.
+
+### Re-verified for 07L (no new entry; Used in lines updated)
+- Weixin and WeChat combined MAU 1,439 million (Tencent Q2 2026): reused from the ledger, verified twice, within twelve months.
+- WeChat overseas-entity verification US$99 (WeChat Open Community, June 2025): re-read through the community JSON API on 2026-10-15; 99美元 re-found.
+
+### Proprietary figure for 07L
+- Blue Insurance, 10,000 social media followers in month one and more than 3,000 newsletter sign-ups in week one, from src/content/cases/blue-insurance.md (/work/blue-insurance), re-read 2026-10-15. Label in copy: "published case figures". Hong Kong market, not the mainland; the copy says so.
+
+### Researched for 07L, not used
+- Tencent Ads FAQ (tencentads.com/Faq.aspx?id=211) saying overseas financial clients with no entity in China are not accepted: undated rule page, so not citable.
+- Insurance Authority Conduct in Focus Issue 7 (ia.org.hk): live site 403 and no Wayback snapshot at check 2; replaced by Beijing News 2024-10-15.
+- Insurance cost per lead in dated trade press: none found (a weiyangx range has no date). Sales-cycle survey for insurance: none found.
+- Ocean Engine financial admission page: renders empty. Licaitong user figures after 2018: no dated primary page.
+- Foreign insurers' assets of 2.82 trillion RMB (September 2024): traces to an EY report (consultancy).
+- Full-year 2025 and H1 2026 mainland-visitor premiums in Hong Kong: not published by the Insurance Authority.

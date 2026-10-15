@@ -268,6 +268,11 @@ only. Say in your log that iteration 7 ran as the cadence variant.
    the subject of the cost pieces and are fine.
 4. **Currency.** English pages keep USD (with RMB where the platform quotes
    RMB). FR, DE and ES pages convert to euros per `.claude/CLAUDE.md` 6.9b.
+   A Hong Kong dollar figure (settled October 15, 2026, publish of 07L)
+   keeps its HK$ amount in FR, DE and ES with the rounded euro equivalent in
+   parentheses ("62,8 milliards de dollars de Hong Kong (plus de 7 milliards
+   d'euros)"); a table cell gives the euro figure alone. RMB stays RMB
+   (FR), Yuan (DE), yuanes (ES).
 5. **Links in body copy.** Unlike the TheRedScroll pipeline, markdown links
    are allowed in the draft, but only to targets on the list in
    `briefs/PREAMBLE.md` plus `/work/<brand>` and `/guides/<slug>`. The

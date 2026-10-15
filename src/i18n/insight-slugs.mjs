@@ -9,6 +9,10 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'tmall-agency-proposal-red-flags':
+    'proposition-d-agence-tmall-douyin-signaux-d-alerte',
+  'how-insurance-and-financial-services-reach-customers-in-china':
+    'assurance-et-finance-en-chine-comment-toucher-les-clients',
   'tmall-global-importer-of-record': 'tmall-global-importateur-officiel',
   'find-distributor-china-verify': 'verifier-un-distributeur-en-chine',
   'china-distributor-exclusivity': 'distributeur-exclusif-en-chine',
@@ -176,6 +180,10 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'tmall-agency-proposal-red-flags':
+    'warnsignale-im-angebot-einer-tmall-oder-douyin-agentur',
+  'how-insurance-and-financial-services-reach-customers-in-china':
+    'wie-versicherer-und-finanzanbieter-kunden-in-china-erreichen',
   'tmall-global-importer-of-record': 'tmall-global-wer-ist-der-importeur',
   'find-distributor-china-verify': 'china-distributor-pruefen',
   'china-distributor-exclusivity': 'exklusivvertrieb-in-china',
@@ -343,6 +351,10 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'tmall-agency-proposal-red-flags':
+    'propuesta-de-agencia-tmall-douyin-senales-de-alerta',
+  'how-insurance-and-financial-services-reach-customers-in-china':
+    'como-llegan-aseguradoras-y-financieras-a-los-clientes-en-china',
   'tmall-global-importer-of-record': 'tmall-global-importador-registrado',
   'find-distributor-china-verify': 'verificar-un-distribuidor-en-china',
   'china-distributor-exclusivity': 'distribuidor-exclusivo-en-china',
