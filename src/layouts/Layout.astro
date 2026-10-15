@@ -224,5 +224,9 @@ const graph = schemaGraph(
       <slot />
     </main>
     <Footer />
+    {/* The service desk bubble: the assistant answers from this website's own
+       pages, read again after every production deploy
+       (.github/workflows/desk-refresh.yml). Its look is set in the app. */}
+    <script is:inline src="https://intelligence.bearingbridge.com/desk-widget.js" data-desk="thechinapath" async></script>
   </body>
 </html>
