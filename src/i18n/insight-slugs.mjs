@@ -9,6 +9,8 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'china-importer-state-owned-private': 'importateur-public-ou-prive-en-chine',
+  'how-lego-entered-china': 'lego-en-chine-ce-que-l-entree-a-coute',
   'tmall-agency-proposal-red-flags':
     'proposition-d-agence-tmall-douyin-signaux-d-alerte',
   'how-insurance-and-financial-services-reach-customers-in-china':
@@ -180,6 +182,8 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'china-importer-state-owned-private': 'staatlicher-oder-privater-importeur-in-china',
+  'how-lego-entered-china': 'lego-in-china-was-der-markteintritt-kostete',
   'tmall-agency-proposal-red-flags':
     'warnsignale-im-angebot-einer-tmall-oder-douyin-agentur',
   'how-insurance-and-financial-services-reach-customers-in-china':
@@ -351,6 +355,8 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'china-importer-state-owned-private': 'importador-estatal-o-privado-en-china',
+  'how-lego-entered-china': 'lego-en-china-lo-que-costo-entrar',
   'tmall-agency-proposal-red-flags':
     'propuesta-de-agencia-tmall-douyin-senales-de-alerta',
   'how-insurance-and-financial-services-reach-customers-in-china':

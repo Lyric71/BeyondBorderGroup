@@ -330,7 +330,7 @@ A candid, slightly handheld photo taken inside the cramped showroom office of a 
 
 <!-- SCHEMA
 Type: Article
-FAQPage: yes, 3 questions
+FAQPage: yes, 4 questions
 Breadcrumb: Home > Insights > State-owned or private importer: which one to sign
 Author: TheChinaPath
 datePublished: set to the publish day by the publish step

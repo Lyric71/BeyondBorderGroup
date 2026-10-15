@@ -4903,3 +4903,107 @@ extraction, because the reports set text in columns).
 - CR Vanguard store counts: trade press only, 2023 figures, no filing.
 - MIIT sampling of 4.8 trillion RMB owed to SMEs (Q1 2025): trade press relay only, no primary page found.
 - 2027 sugar tariff quota, MOFCOM announcement 2026 No. 46 (dated 2026-10-08, page 2026-10-09): 1.945 million t, 70% state trade, unchanged from 2026; figures read on Jiemian (jiemian.com/article/15173481.html, publish-time 2026-10-09) because the MOFCOM attachment needs a browser session; checked once on 2026-10-15. Not in the copy; registered in signal-watch-list.md for 2027-01-04 with the 2027 grain notice.
+
+## Teardown 07T: LEGO China entry, checked October 16, 2026
+
+### LEGO JD storefront observation
+- Value: Live JD self-operated flagship with vehicles, licensed collections,
+  learning/play and art/lifestyle navigation; six tiles in retrieved ranking
+  panel including DUPLO 10914 and Technic. No complete catalog count, numeric
+  price or review total exposed in this view.
+- As of: October 16, 2026, direct observation; not a publisher-dated statistic.
+- Source: JD (京东), LEGO self-operated flagship.
+- URL: https://lego.jd.com/view_search-396203-0-1-1-24-11.html
+- Verified 1: 2026-10-16, direct HTTP 200, Chinese storefront and product
+  names read; evidence saved as jd-check1.html and jd-check1.txt.
+- Verified 2: 2026-10-16, separate HTTP 200 request after cadence pass;
+  DUPLO and 10914 confirmed, saved as jd-check2.txt.
+- Used in: how-lego-entered-china.
+- Notes: Ranking positions can change. This is a dated observation by the
+  editorial run, not an undated source figure. No sales inferred from ranks.
+
+### LEGO first China sales and regional Lunar New Year launch
+- Value: First China sales in 1983; 47 branded stores in 16 cities in
+  November 2018; first regional Lunar New Year sets announced for January 1,
+  2019 in China and Asia Pacific.
+- As of: November 6, 2018.
+- Source: LEGO Group, corporate announcement.
+- URL: https://www.lego.com/en-gb/aboutus/news/2019/october/steam-courses-for-chinese-schools
+- Verified 1: 2026-10-16, web fetch confirmed date, entry year, store/city
+  counts and announced product availability after Chinese-language research.
+- Verified 2: 2026-10-16, iteration 8 web re-fetch, all claims unchanged.
+- Used in: how-lego-entered-china.
+- Notes: Migrated URL contains 2019, but page publication date is November
+  6, 2018. No first distributor or first marketplace date established.
+
+### LEGO mainland brand flagship and authorized-store network
+- Value: First mainland/Asian brand flagship at Shanghai Disneytown,
+  May 11, 2016, 800 square meters. In March 2022, seven brand flagships,
+  more than 300 authorized stores and more than 85 cities.
+- As of: March 18, 2022.
+- Source: LEGO Group (乐高集团), Chinese corporate news center.
+- URL: https://news.lego.cn/v/news/article?aid=352
+- Verified 1: 2026-10-16, direct HTTP 200 read after web-fetch error;
+  date and all quantities confirmed, flagship-check1.txt saved.
+- Verified 2: 2026-10-16, separate HTTP 200 request, date and flagship
+  figures confirmed, flagship-check2.txt saved.
+- Used in: how-lego-entered-china.
+- Notes: Historical network counts, not October 2026 counts. Flagships
+  and authorized stores are different formats. No store economics inferred.
+
+### LEGO Jiaxing inauguration and regional supply remit
+- Value: Inaugurated November 25, 2016; approximately 165,000 square meters,
+  more than 1,200 employees; expected to produce 70% to 80% of LEGO products
+  sold in Asia.
+- As of: November 25, 2016.
+- Source: LEGO Group, corporate factory-opening announcement.
+- URL: https://www.lego.com/en-us/aboutus/news/2019/october/jiaxing-factory-grand-opening
+- Verified 1: 2026-10-16, web fetch confirmed figures, date and future-tense
+  production expectation. Direct requests received 403; web reader succeeded.
+- Verified 2: 2026-10-16, iteration 8 web re-fetch, figures unchanged.
+- Used in: how-lego-entered-china.
+- Notes: Regional Asia scope, not China-only. Expected share is not actual
+  achieved output. Broad euro investment description omitted from draft.
+
+### LEGO Jiaxing production start and RMB 1 billion expansion
+- Value: Production began late 2015. RMB 1 billion additional investment
+  announced in 2022; 42,000 square meters added; expansion completed in 2024.
+- As of: June 26, 2025.
+- Source: The Paper (澎湃新闻), Yu Kai reporting interviews with named LEGO
+  China executives at a government-organized media session.
+- URL: https://m.thepaper.cn/detail/31041417
+- Verified 1: 2026-10-16, CIIE repost followed to original; web fetch read
+  date, production start and expansion paragraph. 10亿元 converted correctly
+  to RMB 1 billion, not RMB 10 billion.
+- Verified 2: 2026-10-16, iteration 8 web re-fetch, all facts unchanged.
+- Used in: how-lego-entered-china.
+- Notes: Announced factory expansion investment, not audited cash spent,
+  initial retail launch cost, store marketing cost or China profit measure.
+
+### LEGO China consumer-sales decline in 2023
+- Value: Company reports China consumer-sales decline in 2023, attributing
+  it to the economic environment; no China percentage in this release.
+- As of: March 12, 2024, reporting FY2023.
+- Source: LEGO Group, full-year results announcement.
+- URL: https://www.lego.com/en-gb/aboutus/news/2024/march/lego-delivered-topline-growth-and-outpaced-market-in-2023
+- Verified 1: 2026-10-16, web fetch confirmed China decline and company
+  explanation, distinct from global consumer-sales growth.
+- Verified 2: 2026-10-16, iteration 8 web re-fetch, same wording and period.
+- Used in: how-lego-entered-china.
+- Notes: Does not establish a failed store format, avoidable delay, lost
+  sales amount or an uninterrupted decline through later years.
+
+### LEGO China demand commentary in August 2026
+- Value: CEO describes China as an exception to broad first-half growth,
+  cautious consumers and continued brand/store investment. Separate China
+  revenue not disclosed. No numerical China growth rate used.
+- As of: August 26, 2026, reporting August 25 earnings call.
+- Source: Yicai Global (第一财经), Zhang Yushuo, original call reporting.
+- URL: https://www2.yicaiglobal.com/news/china-is-only-exception-for-legos-broad-base-revenue-growth-in-first-half-ceo-says
+- Verified 1: 2026-10-16, direct HTTP 200 and web fetch; date and quoted
+  China commentary read. current-check1.txt saved.
+- Verified 2: 2026-10-16, separate HTTP 200 request after cadence pass;
+  date, China exception and no separate revenue confirmed, current-check2.txt.
+- Used in: how-lego-entered-china.
+- Notes: Followed Chinese-language 2026 reporting to this named reporter's
+  earnings-call account. Global results and theme-park figures not used.
