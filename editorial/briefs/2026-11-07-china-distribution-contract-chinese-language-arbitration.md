@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Choice (language, chop, signatory, governing law, CIETAC, HKIAC, courts), what to choose, why.
 
-**Leads (verify, cite primary).** Civil Code contract provisions; CIETAC and HKIAC rules; the mainland-Hong Kong arbitration arrangement. Interlink with 25A.
+**Leads (verify, cite primary).** Civil Code contract provisions; CIETAC and HKIAC rules; the mainland-Hong Kong arbitration arrangement. 25A is not live when P40 publishes: the 25A brief carries the link back to this piece, and P40 links the live P08 (/insights/tmall-partner-contract-terms) instead.
 
 **Internal links.** all three guides, `/compass`
 **CTA.** Compass shortlist.

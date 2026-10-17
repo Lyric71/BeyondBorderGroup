@@ -5251,3 +5251,228 @@ extraction, because the reports set text in columns).
 - Kuaishou 官方立减 12%, stackable to 25% off (21st Century Business Herald, 2026-09-16): checked once, not used.
 - JD service peak Nov 9 to 11 (China.com, 2026-10-15): service categories only, not used.
 - Ningbo 2025 first-peak declarations (People's Daily Online Zhejiang, 2025-10-22): checked once, not used.
+
+### Civil Code Arts. 466, 490, 504, 507: language versions, formation by seal or signature, authority, the surviving dispute clause
+- Value: Art. 466 para 2, texts in two or more languages agreed to have equal effect are presumed to mean the same; a mismatch is interpreted by the related clauses, nature, purpose and good faith. Art. 490, a written contract forms when both parties sign, seal or fingerprint. Art. 504, a legal representative acting beyond authority binds the company unless the counterparty knew or should have known. Art. 507, a contract's dispute-resolution clause survives invalidity, rescission or termination
+- As of: adopted May 28, 2020, in force January 1, 2021
+- Source: National People's Congress, Civil Code (中华人民共和国民法典), via the Ministry of Commerce (商务部) policy database
+- URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=70524
+- Verified 1: 2026-10-17 (curl; the four articles found)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 推定具有相同含义, 签名、盖章或者按指印, 除相对人知道或者应当知道其超越权限外, 不影响合同中有关解决争议方法的条款的效力 re-found)
+- Used in: china-distribution-contract-chinese-language-arbitration
+- Notes: same URL as the Art. 933 and Arts. 562 to 566 entries.
+
+### SPC contract interpretation Art. 22: seals versus authority
+- Value: a company cannot escape a contract signed within authority merely because the seal is not its filed seal or is forged; a signature without a seal binds when authority is proven, unless the parties made sealing a condition of formation; a seal without a signature binds when authority is proven
+- As of: 法释〔2023〕13号, published December 4, 2023, in force December 5, 2023
+- Source: Supreme People's Court (最高人民法院), interpretation of the Civil Code contract general provisions
+- URL: https://www.court.gov.cn/zixun/xiangqing/419382.html
+- Verified 1: 2026-10-17 (curl; Art. 22 found)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 不是备案印章或者系伪造的印章 and 以加盖印章作为合同成立条件的除外 re-found)
+- Used in: china-distribution-contract-chinese-language-arbitration
+- Notes: same URL as the liquidated-damages entry (Arts. 64 and 65).
+
+### Civil Procedure Law (2023): court language, translated exhibits, Chinese lawyers, foreign judgments and awards
+- Value: Art. 273, courts hearing foreign-related civil cases use the national common language and script, translation at the requesting party's cost; Art. 73, a foreign-language documentary exhibit must carry a Chinese translation; Art. 274, a foreign party that hires a lawyer must hire a PRC lawyer; Art. 299, foreign court judgments are recognized only under a treaty or on reciprocity; Art. 304, foreign arbitral awards go to the intermediate court where the debtor lives or holds property, under treaty or reciprocity
+- As of: fifth amendment of September 1, 2023, in force January 1, 2024
+- Source: National People's Congress, Civil Procedure Law (中华人民共和国民事诉讼法), text carried by the State Taxation Administration Guangdong bureau (国家税务总局广东省税务局), page dated December 31, 2025
+- URL: https://guangdong.chinatax.gov.cn/gdsw/zjfg/2025-12/31/content_bcd30b4a0fbf4de7b4d4c388599a5194.shtml
+- Verified 1: 2026-10-17 (curl; Arts. 73, 273, 274, 299, 304 found)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; all five clauses re-found)
+- Used in: china-distribution-contract-chinese-language-arbitration
+- Notes: the npc.gov.cn copy found by search is the 2012 text; this government copy carries the 2023 numbering.
+
+### CIETAC Arbitration Rules (2024): default language and the foreign-related registration fee
+- Value: Art. 84, absent agreement Chinese is the language of arbitration, and CIETAC may set one or more other languages considering the contract's language; Art. 3, CIETAC takes international, foreign-related, Hong Kong, Macau, Taiwan and domestic cases; Fee Schedule I (foreign-related cases), 10,000 RMB registration fee per case on top of a handling fee based on the amount in dispute
+- As of: in force January 1, 2024
+- Source: China International Economic and Trade Arbitration Commission (中国国际经济贸易仲裁委员会), Arbitration Rules (2024)
+- URL: https://www.cietac.org/articles/25022
+- Verified 1: 2026-10-17 (curl; Art. 84, Art. 3 and Fee Schedule I note 1 found)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 以中文为仲裁语言 and 每案另收立案费人民币10,000元 re-found)
+- Used in: china-distribution-contract-chinese-language-arbitration
+- Notes: the handling-fee brackets render as images on cietac.org and are not printed. The CIETAC Hong Kong Arbitration Center charges HKD 8,000 registration under Fee Schedule III (same page); not used.
+
+### HKIAC 2024 Rules: registration and administrative fees
+- Value: non-refundable registration fee HKD 10,000 (Art. 4.4 and Schedule 1); administrative fee HKD 15,000 on a sum in dispute up to HKD 400,000, HKD 21,780 plus 1.43% of the amount over 400,000 up to HKD 800,000 (HKD 27,500 at HKD 800,000), HKD 27,500 plus 1.10% over 800,000 up to HKD 4,000,000; HKIAC posts a fee calculator next to the schedule
+- As of: 2024 Schedule of Fees, applicable from January 1, 2026
+- Source: Hong Kong International Arbitration Centre
+- URL: https://hkiac.org/arbitration/fees/2024-schedule-of-fees/
+- Verified 1: 2026-10-17 (curl with a browser user agent; plain curl returns 406)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8 and again at the quality pass for the administrative-fee table; HKD 10,000 and the table rows re-found)
+- Re-checked: 2026-10-18 at the publish run (curl with a browser user agent): page title "2024 Schedule of Fees (Applicable from 1 January 2026)", HKD 10,000 under Art. 4.4 and Schedule 1, and the 15,000 / 21,780 + 1.4300% / 27,500 + 1.1000% rows re-found
+- Used in: china-distribution-contract-chinese-language-arbitration
+- Notes: arithmetic 21,780 + 1.43% x 400,000 = 27,500 matches the next band's base.
+
+### Mainland and Hong Kong arrangement on interim measures in aid of arbitration (2019)
+- Value: Arts. 1 to 3, Hong Kong-seated arbitration administered by a listed institution; before the award a party may apply to the mainland intermediate court where the respondent lives or where its property or evidence sits, for property, evidence or conduct preservation; the first arbitration-preservation arrangement the mainland signed with any jurisdiction
+- As of: signed April 2, 2019 (page dated 2019-04-02)
+- Source: Supreme People's Court (最高人民法院), 关于内地与香港特别行政区法院就仲裁程序相互协助保全的安排
+- URL: https://www.court.gov.cn/shenpan/xiangqing/149552.html
+- Verified 1: 2026-10-17 (curl; Arts. 1 to 3 and the signing date found)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 应当以香港特别行政区为仲裁地 and 在仲裁裁决作出前 re-found)
+- Used in: china-distribution-contract-chinese-language-arbitration
+- Notes: the in-force date (October 1, 2019) is not on this page; the piece says "a 2019 arrangement" only.
+
+### Hong Kong arbitration: 177 interim-measure applications, 48 mainland courts, 27.8 billion RMB frozen
+- Value: by September 2025 Hong Kong arbitral institutions had handled 177 applications under the Arrangement across 48 courts; approved property preservation covered assets worth more than 27.8 billion RMB; Hong Kong is the first and only common-law jurisdiction outside the mainland with this route
+- As of: speech of November 12, 2025 (data to September 2025)
+- Source: Department of Justice (律政司), Hong Kong SAR Government, Secretary for Justice speech at the opening of the Beijing International Arbitration Court Hong Kong centre
+- URL: https://www.doj.gov.hk/sc/community_engagement/speeches/20251112_sj1.html
+- Verified 1: 2026-10-17 (curl; 177宗, 48个法院, 278亿元人民币 found)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; same figures and the date re-found)
+- Used in: china-distribution-contract-chinese-language-arbitration
+- Notes: an HKIAC-only figure (145 applications, 24.7 billion RMB preserved to end-2024) surfaced in search summaries; not checked against an HKIAC page, not used.
+
+### First-year Tmall Partner bill at calculator defaults (proprietary, October 2026)
+- Value: 35,000 RMB monthly retainer x 12 = 420,000 RMB plus 10% commission on 3,500,000 RMB year-one GMV = 350,000 RMB, so 770,000 RMB in year one (about 108,000 USD at the calculator's 7.1 rate)
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro lines 18, 21, 23: gmv 3500000, dpRetainer 35000, dpCommission 10; fx 7.1)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-17 (defaults read from the file)
+- Verified 2: 2026-10-17 (re-read before the draft was finished; 420,000 + 350,000 = 770,000 and 770,000 / 7.1 = 108,451 rechecked)
+- Used in: china-distribution-contract-chinese-language-arbitration
+- Notes: model defaults, not a market rate or a client result. Settled fallback for a missing Compass figure (no compass-stats.md). Annualises the 64,167 RMB average month in the "TP transition-month cost" entry.
+
+## Baby care and diapers cost research (Ledger 08L, cost-to-sell-baby-care-and-hygiene-products-in-china), October 18, 2026
+
+### Tmall Global baby care rates: 婴童尿裤 2%, 婴童洗护 2%, 30,000 RMB annual fee
+- Value: 母婴 rows of the category fee table: 婴童尿裤 2% / 30,000; 婴童洗护 2% / 30,000; 婴童用品 2-5% (背带/学步带/出行用品 5%, 汽车安全座椅 3%, 童床/婴儿床 5%, 手推车 5%, 其他二级类目 2%) / 30,000; 奶粉/辅食/营养品 婴幼儿营养品 3%, other 2% / 30,000; 童装, 童鞋 and toys 5% / 60,000
+- As of: adjustment posted 2026-09-03, in force 2026-09-09
+- Source: Tmall Global (天猫国际), 《天猫国际各类目年费、技术服务费率》
+- URL: https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625 (render with the hash route #/rule/detail?ruleId=11005909&cId=625)
+- Verified 1: 2026-10-18 (rendered with headless Edge, 256 rows parsed)
+- Verified 2: 2026-10-18 (re-rendered at iteration 8; 婴童尿裤 2%, 婴童洗护 2% and the 2026年9月3日公示通知 clause re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china
+- Notes: confirms the calculator row "Infant formula, diapers and baby care" (50,000 / 2% / 30,000) for diapers and baby wash; infant nutrition products sit at 3%.
+
+### Tmall Global deposit: mother and baby other than infant milk, 50,000 RMB flagship, 100,000 specialty store or TM brand
+- Value: 母婴 其他一级类目 (and 奶粉/辅食 其他类目): 品牌旗舰店 50,000, 专卖店 50,000, 专营店 100,000, 卖场旗舰店 150,000 RMB; infant milk powder lines 300,000 for 专营店 and 卖场旗舰店; a flagship or 专卖店 for a TM (unregistered) mark pays a 100,000 RMB base deposit
+- As of: changed 2026-05-06, in force 2026-05-12
+- Source: Tmall Global (天猫国际), 《天猫国际平台保证金规则》
+- URL: https://rule.tmall.hk/?type=detail&ruleId=8942&cId=625
+- Verified 1: 2026-10-18 (rendered, hash route)
+- Verified 2: 2026-10-18 (re-rendered; 其他一级类目 row and 基础保证金为人民币10万元 re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china
+
+### Tmall Global 2026 annual-fee incentives touch only the 60,000 RMB band; diapers and baby wash are outside
+- Value: ruleId 20010440 waives the annual fee for new stores (launched 2026-04-01 to 2027-03-31) whose main category is in the 60,000 tier; the mother-and-baby lines named are toys (玩具/童车/益智/早教/游乐设备, 潮玩模玩, 毛绒玩偶, 拼搭/积木) and children's clothing and shoes; ruleId 20010439 cuts the 60,000 tier to 30,000 for other new and second-year stores. Neither changes the 30,000 tier, where 婴童尿裤 and 婴童洗护 sit.
+- As of: both posted 2026-07-16
+- Source: Tmall Global (天猫国际), 《2026年天猫国际新商家 服饰/母婴/家居部分类目技术服务年费 特殊激励计划》 and 《2026年天猫国际新商家及次新商家技术服务年费激励计划》
+- URL: https://rule.tmall.hk/?type=detail&ruleId=20010440&cId=625 (and ruleId=20010439)
+- Verified 1: 2026-10-18 (rendered)
+- Verified 2: 2026-10-18 (re-rendered; the 6万元/年 ... 予以免除 clause and the toy and clothing lists re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china (20010440 cited)
+- Notes: same pages as the September 30 entry "Tmall Global 2026 annual fee incentives"; this entry adds the mother-and-baby list.
+
+### JD Worldwide mother and baby: 婴童洗护 2%, other lines 2%, US$5,000 deposit at every GMV tier
+- Value: 母婴 婴童洗护 驱蚊用品 (婴儿蚊香液、婴儿防蚊喷雾) 3.50%, other 婴童洗护 lines 2.00%; 童车童床 3%, 安全座椅 3%, 童装 5%, 童鞋 5%; 母婴 其他二级类目 2.00%; deposit 5,000 USD in all four GMV columns and 5,000 USD flagship; 交易服务费 0.90%
+- As of: revised 2026-09-24, in force 2026-10-01
+- Source: JD Worldwide (京东全球购), 《京东全球购开放平台各类目资费标准》
+- URL: https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
+- Verified 1: 2026-10-18 (rendered with headless Edge; rows 43 to 52 read with rowspans)
+- Verified 2: 2026-10-18 (re-rendered; 婴童洗护, 2.00% / 0.90% and the revision clause re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china
+- Notes: diapers have no named row and fall under 母婴 其他二级类目 (2%). Same rule as the October 2 calculator-audit entry; this entry adds the mother-and-baby rows.
+
+### Douyin Global mother and baby: 3% base, 3.9% channel supplement
+- Value: 母婴宠物 > 母婴用品: 其他二级类目 3.00% base + 3.90% supplement on specified-channel orders; 婴童床品 6% + 4%; 孕产妇 防辐射用品 6% + 4%; 出行用品 lines 3% to 6%
+- As of: schedule posted 2026-07-15
+- Source: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+- Verified 1: 2026-10-18 (rendered with headless Edge, 146 rows)
+- Verified 2: 2026-10-18 (re-rendered; 母婴用品 and 其他二级类目 3.00% 3.90% re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china
+- Notes: diapers and baby wash have no named row; the 3% applies to mother-and-baby goods the schedule does not single out, and the copy says so. The channels (Douyin Mall app, Doubao) are named in 《【全球购】招商管理规则》 (article 108056), re-rendered 2026-10-18 (抖音商城 and 豆包 present). The calculator's Douyin "Baby products, toys" row (4.5%) is a midpoint across toy and baby lines; the piece uses the rule's 3% and links the Tmall Global calculator in block 7.
+
+### Children's cosmetics regulation: 12 and under, family claims count, gold shield mark, formula limits
+- Value: 儿童化妆品 = cosmetics for children aged 12 and under (art. 3); products labeled 适用于全人群 / 全家使用 or hinting at children by trademark, picture, pun, letters or pack shape are managed as children's cosmetics; the NMPA children's mark on the 销售包装展示面 and a 应当在成人监护下使用 warning (art. 6); no ingredients for 祛斑美白、祛痘、脱毛、除臭、去屑、防脱发、染发、烫发 (art. 7); safety assessment and necessary toxicology tests accounting for children's physiology (art. 8); no 食品级 / 可食用 on the label (art. 13); online sellers show the mark on the product page (art. 15); scope is production and sale 在中华人民共和国境内 (art. 2); in force 2022-01-01 (art. 22)
+- As of: NMPA Announcement 2021 No. 123, September 30, 2021; in force January 1, 2022
+- Source: NMPA (国家药监局), 《儿童化妆品监督管理规定》, via the Fujian Provincial Medical Products Administration (福建省药品监督管理局)
+- URL: https://yjj.scjgj.fujian.gov.cn/hzp/flfg/202111/t20211103_5764150.htm
+- Verified 1: 2026-10-18 (curl; full text read)
+- Verified 2: 2026-10-18 (re-fetched; nine quoted strings re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china
+- Notes: no regulator text found on whether the mark applies to cross-border retail imports; copy does not claim either way. The labeling timetable (compulsory for filings from May 1, 2022; relabel by May 1, 2023) is on the Beijing municipal government's copy of the announcement, https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202204/t20220412_2674380.html, checked twice on 2026-10-18 (both strings re-found on the second fetch) and cut from the final draft for length.
+
+### Baby diapers on the cross-border retail import list, line 1410
+- Value: serial 1410, 96190011 婴儿尿布及尿裤, no remark (so not bonded-only); 476 34013000 洁肤用的有机表面活性产品 (liquid skin cleansers); 456 33049900 其他美容品或化妆品及护肤品; 457 33051000 洗发剂
+- As of: list 2019 edition, MOF and 12 bodies Announcement 2019 No. 96, in force January 1, 2020
+- Source: Ministry of Finance (财政部); list PDF as published by MOFCOM
+- URL: https://images.mofcom.gov.cn/cws/202001/20200110143527533.pdf
+- Verified 1: 2026-10-18 (PDF downloaded; text extracted with PyMuPDF; pdftotext drops the CJK)
+- Verified 2: 2026-10-18 (re-downloaded and re-extracted; the four lines re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china
+- Notes: updates the September 16 note "never cite either URL for a specific HS code": the PDF's per-line text is readable with PyMuPDF (python fitz), so a specific line can now be cited from it. The 2022 adjustment added lines; it removed none of these.
+
+### Diaper standards: GB/T 28004.1-2021, GB 15979-2024, GB 43631-2023; none limits formamide
+- Value: diapers follow GB/T 28004.1-2021 (recommended) and two mandatory standards, GB 15979-2024 (disposable hygiene products) and GB 43631-2023 (children's paper goods); none sets a formamide test or limit; GB 15979-2024 bars adding substances banned under the cosmetics safety technical code
+- As of: June 2026 (article 2026-06-23 00:09)
+- Source: Beijing Business Today (北京商报), 张君花, 《纸尿裤国标"待更新"》
+- URL: https://xinwen.bjd.com.cn/content/s6a395e37e4b03fa51a804136.html
+- Verified 1: 2026-10-18 (curl)
+- Verified 2: 2026-10-18 (re-fetched; the three standard numbers and the date re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china
+
+### GB 43631-2023: children's paper goods, 6 and under, diapers and wipes, in force January 1, 2025
+- Value: mandatory; published 2023-12-28, in force 2025-01-01; covers paper goods produced or sold in China for children aged 6 and under, including 婴儿纸尿裤（片、垫）and 湿巾; limits include heavy metals, formaldehyde, phthalates; administered by MIIT
+- As of: SAMR record (published 2023-12-28); China Paper Network article 2024-07-26
+- Source: China Paper Network (纸业观察网, paper.com.cn); dates confirmed on the SAMR national standards platform (全国标准信息公共服务平台)
+- URL: https://www.paper.com.cn/news/daynews/2024/240726094901770836.htm ; https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=72C3177FEB44670F5540E69C242901A6
+- Verified 1: 2026-10-18 (both fetched; the paper.com.cn page is GBK)
+- Verified 2: 2026-10-18 (both re-fetched; scope, limits and dates re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china
+
+### GB 15979-2024: mandatory hygiene standard for disposable sanitary products, in force July 1, 2025
+- Value: published 2024-06-25, in force 2025-07-01, administered by the National Disease Control and Prevention Administration (国家疾控局); adds terms for 卫生湿巾, pH and migratable fluorescent whitening agent limits
+- As of: June 2024; Beijing News article 2024-07-17
+- Source: SAMR national standards platform; Beijing News (新京报), citing SAMR
+- URL: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=75F8AECE33CDEB23A59C06ECFC69A39F ; https://m.bjnews.com.cn/detail/1721192807129140.html
+- Verified 1: 2026-10-18 (both fetched)
+- Verified 2: 2026-10-18 (both re-fetched; number, dates, 卫生湿巾 and the 2024-07-17 dateline re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china (the standard is named inside the Beijing Business Today quote; its in-force date was cut for length)
+
+### Infant diaper formamide investigation: 168 makers, 180 brands, 368 batches, none detected
+- Value: joint team of SAMR, MIIT, NHC and NDCPA set up 2026-06-22; NDCPA sampled all 168 domestic infant diaper makers (contract makers included), 180 brands, 368 finished-product batches plus 32 part batches, no formamide; on-site checks found the plants met the 消毒产品生产企业卫生规范; blood-test claims ruled unreliable
+- As of: October 15, 2026, 16:00
+- Source: State Administration for Market Regulation (市场监管总局), joint notice
+- URL: https://www.samr.gov.cn/xw/zj/art/2026/art_e87254f9f3e8478d846182eb08fc2b63.html
+- Verified 1: 2026-10-18 (curl)
+- Verified 2: 2026-10-18 (re-fetched; 168家, 180个品牌368批次, 均未检出甲酰胺, 消毒产品生产企业卫生规范 re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china
+- Notes: covers domestic plants only; the notice says nothing about imported diapers. Guangming Online carried the CCTV version the same day (https://m.gmw.cn/2026-10/15/content_1304575760.htm).
+- Re-checked: 2026-10-18 at the publish run (plain curl now gets a script shell, so read with headless Edge on a private temporary profile): 国家疾控局组织各地疾控部门 sampled all 168 makers, and 国家疾控局立即部署地方疾控部门对全部168家 ... 进行现场监督检查, 受检企业均符合消毒产品生产企业卫生规范要求. This supports the piece's line that the disease-control authority inspected every domestic plant.
+
+### China births: 7.92 million in 2025
+- Value: 2025 births 792万, birth rate 5.63‰ (2024: 954万, 6.77‰, on the previous communiqué)
+- As of: communiqué of February 28, 2026 (2024 figure: communiqué of February 28, 2025)
+- Source: National Bureau of Statistics (国家统计局)
+- URL: https://www.stats.gov.cn/sj/zxfbhjd/202602/t20260228_1962662.html (2024: https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html)
+- Verified 1: 2026-10-18 (both fetched)
+- Verified 2: 2026-10-18 (both re-fetched; 全年出生人口792万人 and 全年出生人口954万人 re-found)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china (2025 figure only)
+
+### Baby care cost per kept order and the repeat table (proprietary)
+- Value: Tmall Global model per-order defaults (2% commission, 1% payment fee, 4 RMB pick and pack, 11 RMB last mile, 5% return rate, 15 RMB return handling plus the 11 RMB leg back): per 100 parcels, a 400 RMB diaper four-pack costs 2,770 RMB (29 RMB per kept order, 7.3%), a 160 RMB baby wash twin pack 2,086 RMB (22 RMB, 13.7%); at an assumed 40% gross margin a kept diaper order contributes 131 RMB (130.84); parents needed to cover the 30,000 RMB annual fee: 230 at one order a year, 58 at four, 29 at eight (contribution per parent 131 / 523 / 1,047); about 230 kept orders or 92,000 RMB of sales covers the fee; cash before the first sale 80,000 (Tmall Global) and 35,500 (JD Worldwide), a gap of 44,500
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro and jd-worldwide-setup-and-run.astro)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-18 (computed from the arrays and the logistics defaults)
+- Verified 2: 2026-10-18 (recomputed after the quality pass)
+- Used in: cost-to-sell-baby-care-and-hygiene-products-in-china
+- Notes: basket prices, the 40% margin and the orders-per-parent values are stated assumptions, not market data.
+
+### Re-verified on 2026-10-18 for 08L (existing entries, add the slug to their Used in)
+- Cross-border retail imports supervised as personal-use goods, and the risk notice (商财发〔2018〕486号, gov.cn): re-fetched twice; 按个人自用进境物品监管，不执行有关商品首次进口许可批件、注册或备案要求 and 可能无中文标签 present.
+- Cross-border retail import tax, 0% duty and 70% (财关税〔2016〕18号, mof.gov.cn): re-fetched twice; 关税税率暂设为0% and 暂按法定应纳税额的70%征收 present.
+- Cosmetics consumption tax, 15% on high-end and the 10 RMB per milliliter line (财税〔2016〕103号, Shanghai tax service): re-fetched twice; the scope sentence also names 成套化妆品, which the piece flags for boxed gift sets.
+- Cosmetics Supervision and Administration Regulation, special vs general (Decree 727, gov.cn gazette): re-fetched twice; article 16 sentence present.
+- Animal testing exemption and its 产品宣称婴幼儿和儿童使用的 exclusion (NMPA 2021 No. 32, Fujian MPA): re-fetched twice.
+- Product Quality Law art. 27 (CNIPA): re-fetched twice; 有中文标明的产品名称、生产厂厂名和厂址 present.
+- Douyin Global base deposit 500 / 2,000 / 5,000 (article 107821): re-rendered twice; tier table present.
+- Tmall Global diaper-rash guarantee (ruleId 5510): re-rendered; linked through the 06S article, not cited directly.
+
+### Researched for 08L, not used
+- Baby wipes managed as cosmetics: only undated or self-media pages; not published.
+- Whether the children's cosmetics mark applies to cross-border imports: no regulator text either way.
+- Douyin's 【儿童化妆品商品发布及宣传】实施细则 and a Tmall children's cosmetics listing rule: not tied to 全球购 or Tmall Global on the pages found.
+- A typical diaper order value and a category repeat rate: no dated primary source.

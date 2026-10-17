@@ -1149,7 +1149,7 @@ Block 3 carries this by a distance, because consumer electronics stacks three se
 6. Termination, and the stock sitting in their warehouse on day one after
 7. How to run the negotiation without losing the relationship
 
-**Internal links.** /enter-china/distribution, /compass, /compass/find-a-distributor-in-china, /enter-china/market-entry-consulting, /contact#shortlist, and /insights/china-distributor-exclusivity (P20, the exclusivity piece) from the exclusivity section
+**Internal links.** /enter-china/distribution, /compass, /compass/find-a-distributor-in-china, /enter-china/market-entry-consulting, /contact#shortlist, and /insights/china-distributor-exclusivity (P20, the exclusivity piece) from the exclusivity section, and /insights/china-distribution-contract-chinese-language-arbitration (P40, contract language, chops and arbitration) from the governing law and dispute forum row
 **CTA.** Request a Compass shortlist before you sign anything exclusive.
 **Do not.** Do not give legal advice or draft clause language. The piece explains what each clause does commercially and tells the reader to have a China-qualified lawyer draft and review, and it says so in the first section rather than in a footer disclaimer. Do not treat the distributor as an adversary throughout; the honest position is that a well-drafted agreement protects both sides and a one-sided one gets ignored in practice.
 
@@ -3253,7 +3253,7 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 
 **The table it must carry.** Choice (language, chop, signatory, governing law, CIETAC, HKIAC, courts), what to choose, why.
 
-**Leads (verify, cite primary).** Civil Code contract provisions; CIETAC and HKIAC rules; the mainland-Hong Kong arbitration arrangement. Interlink with 25A.
+**Leads (verify, cite primary).** Civil Code contract provisions; CIETAC and HKIAC rules; the mainland-Hong Kong arbitration arrangement. 25A is not live when P40 publishes: the 25A brief carries the link back to this piece, and P40 links the live P08 (/insights/tmall-partner-contract-terms) instead.
 
 **Internal links.** all three guides, `/compass`
 **CTA.** Compass shortlist.
