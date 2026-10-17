@@ -2,7 +2,7 @@
 title: "Double 11: la cuenta atrás de 50 días"
 description: "La cuenta atrás del Double 11 para marcas extranjeras, contada desde el 11 de noviembre: quién sostiene cada línea y qué cuesta un día perdido."
 pubDate: "2026-09-22"
-updatedDate: "2026-10-02"
+updatedDate: "2026-10-17"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "JD", "Douyin", "Kuaishou"]
@@ -99,8 +99,15 @@ Tmall y JD fecharon sus propias ventanas esa misma semana.
 > Fuente: National Business Daily (每日经济新闻), septiembre de 2026.
 > https://www.nbd.com.cn/articles/2026-09-24/4591116.html
 
-Así que Kuaishou vende desde el 7 de octubre, JD desde el 12, Tmall desde el
-15 y Douyin en algún momento del mes. La fecha que va a la pared es
+Douyin publicó su reglamento completo el 30 de septiembre.
+
+> En Douyin, la venta del Double 11 2026 va desde las 00:00 del 15 de
+> octubre hasta las 23:59:59 del 11 de noviembre.
+> Fuente: Douyin E-commerce Learning Center (抖音电商学习中心), septiembre de 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aJqWoaCZesUW
+
+Así que Kuaishou vende desde el 7 de octubre, JD desde el 12, y Tmall y
+Douyin desde el 15. La fecha que va a la pared es
 principios de octubre.
 
 Para hacerse una idea del tamaño, y para quienes todavía discuten dentro de la
@@ -272,7 +279,7 @@ semana seis.
 
 Todas las fechas de arriba se han contado desde el miércoles 11 de noviembre
 de 2026, y cada ventana de plataforma se verificó contra su anuncio original:
-Douyin y Kuaishou el 22 de septiembre, Tmall y JD el 2 de octubre. Las plataformas mueven sus propias fechas. Compruebe las
+Kuaishou el 22 de septiembre, Tmall y JD el 2 de octubre, y Douyin el 17 de octubre. Las plataformas mueven sus propias fechas. Compruebe las
 que le afecten en el panel de comerciante antes de comprometer presupuesto.
 
 ## Lo que nos preguntan
@@ -282,8 +289,7 @@ que le afecten en el panel de comerciante antes de comprometer presupuesto.
 El 11 de noviembre es el día grande, pero la venta arranca semanas antes.
 El ciclo de Kuaishou se abre el 7 de octubre y JD arranca el 12. Tmall abre
 la preventa y los anticipos el 15, y la venta con existencias el 20 de
-octubre a las 20:00. Douyin dice que su venta va de octubre al 11 de
-noviembre. Planifique con la segunda semana de octubre.
+octubre a las 20:00. Douyin vende del 15 de octubre al 11 de noviembre. Planifique con la segunda semana de octubre.
 
 **¿Es tarde para el Double 11 de 2026 si no tenemos tienda en China?**
 

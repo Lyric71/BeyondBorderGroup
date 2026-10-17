@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'double-11-last-minute-checklist': 'double-11-les-14-derniers-jours',
   'food-importer-china': 'choisir-un-importateur-agroalimentaire-en-chine',
   'china-importer-state-owned-private': 'importateur-public-ou-prive-en-chine',
   'how-lego-entered-china': 'lego-en-chine-ce-que-l-entree-a-coute',
@@ -183,6 +184,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'double-11-last-minute-checklist': 'double-11-checkliste-letzte-14-tage',
   'food-importer-china': 'lebensmittelimporteur-in-china-waehlen',
   'china-importer-state-owned-private': 'staatlicher-oder-privater-importeur-in-china',
   'how-lego-entered-china': 'lego-in-china-was-der-markteintritt-kostete',
@@ -357,6 +359,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'double-11-last-minute-checklist': 'double-11-los-ultimos-14-dias',
   'food-importer-china': 'elegir-importador-de-alimentos-en-china',
   'china-importer-state-owned-private': 'importador-estatal-o-privado-en-china',
   'how-lego-entered-china': 'lego-en-china-lo-que-costo-entrar',

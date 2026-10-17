@@ -2,7 +2,7 @@
 title: "Double 11 preparation checklist: 50 days out"
 description: "A dated Double 11 preparation checklist for foreign brands, counting back from November 11, with the owner and the cost of every slipped line."
 pubDate: "2026-09-22"
-updatedDate: "2026-10-02"
+updatedDate: "2026-10-17"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "JD", "Douyin", "Kuaishou"]
@@ -97,8 +97,15 @@ Tmall and JD dated their own windows the same week.
 > Source: National Business Daily (每日经济新闻), September 2026.
 > https://www.nbd.com.cn/articles/2026-09-24/4591116.html
 
-So Kuaishou sells from October 7, JD from October 12 and Tmall from
-October 15, with Douyin somewhere in October. Early October is the date
+Douyin published its full rule on September 30.
+
+> Douyin's 2026 Double 11 sale runs from 00:00 on October 15 to 23:59:59 on
+> November 11.
+> Source: Douyin E-commerce Learning Center (抖音电商学习中心), September 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aJqWoaCZesUW
+
+So Kuaishou sells from October 7, JD from October 12, and Tmall and Douyin
+from October 15. Early October is the date
 that belongs on your wall.
 
 For scale, and for anyone still arguing internally about whether the festival
@@ -262,7 +269,7 @@ is the only part of a checklist anybody remembers in week six.
 
 Every date above was counted back from Wednesday, November 11, 2026, and
 every platform window here was checked against its source announcement:
-Douyin and Kuaishou on September 22, Tmall and JD on October 2. Platforms
+Kuaishou on September 22, Tmall and JD on October 2, Douyin on October 17. Platforms
 move their own dates. Check the ones that matter to you on the merchant back
 end before you commit budget against them.
 
@@ -273,8 +280,7 @@ end before you commit budget against them.
 November 11 is the headline day, but the selling starts weeks earlier.
 Kuaishou's cycle opens October 7 and JD opens on October 12. Tmall starts
 presale and deposits on October 15, with spot selling from 20:00 on
-October 20. Douyin has said its 2026 sale runs from October through
-November 11. Plan for the second week of October.
+October 20. Douyin sells from October 15 to November 11. Plan for the second week of October.
 
 **Is it too late to join Double 11 2026 if we have no China store?**
 

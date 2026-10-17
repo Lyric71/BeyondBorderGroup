@@ -5099,3 +5099,155 @@ extraction, because the reports set text in columns).
 - Shanghai High Court imported-coffee case (hshfy.sh.cn): not fetched; the Dongcheng case carries the point.
 - 2027 spring China Food and Drinks Fair date: only booking-agent domains carry one; no official date on 2026-10-16. The copy gives no 2027 date.
 - Food Mate GB 7718-2025 allergen explainer: Food Mate sells label services; the Beijing regulator page covers what the piece uses.
+
+## Double 11 last fourteen days (Anchor 08A), October 17, 2026
+
+### Douyin Double 11 2026 rule: registration, sale window, price check, stability, 立减折扣
+- Value: registration 2026-09-14 14:00:00 to 2026-11-11 23:59:59; sale 2026-10-15 00:00:00 to 2026-11-11 23:59:59 (same windows for 立减折扣, 一件直降 and the live-room programmes); price-check period 2026-08-31 00:00:00 to 2026-11-11 23:59:59, registered price not above the lowest page price live or scheduled in that period (same item, same-store same item); ban on raising prices ahead of the promotion (为开展促销而故意提前涨价); keep spec, style, price and stock information stable, no arbitrary delisting or edits (4.1.5); 立减折扣 15% in every category, merchant-funded, one of 立减折扣 or 一件直降 per product; shipping judged on daily times; free shipping on event goods (remote regions excepted); 全球购 merchants eligible
+- As of: September 30, 2026 (page dated 2026-09-30 16:32:24, 电商运营团队)
+- Source: Douyin E-commerce Learning Center (抖音电商学习中心), 《2026年抖音商城双11招商规则》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aJqWoaCZesUW
+- Verified 1: 2026-10-17 (headless Edge dump-dom on a temporary profile, full rule text read)
+- Verified 2: 2026-10-17 (re-rendered with headless Edge at iteration 8; the three windows, 最低页面标价, 为开展促销而故意提前涨价, 不得随意下架或修改商品信息, 所有类目均为15%, 单个商品仅可参与一个活动, 全球购 and the 2026-09-30 date re-found)
+- Used in: double-11-last-minute-checklist (and its guide), double-11-preparation-checklist (sale window, added 2026-10-17 in all four locales)
+- Notes: this resolves the Sept 22 note that the rule page could not be opened. The rule uses the Aug 31 to Nov 11 check period, not a 30-day or 15-day test. There are no per-phase registration deadlines.
+
+### Douyin Double 11 2026 phases
+- Value: 开门红 October 15 to 18; 现货日 and 品类日 October 19 to November 6; 双11狂欢日 November 7 to 11; 28 days, no presale
+- As of: October 15, 2026 (14:12:44)
+- Source: China National Radio (央广网), 郭彦伟, intern 沈榆洁
+- URL: https://www.cnr.cn/mspd/jrhm/20261015/t20261015_527842545.shtml
+- Verified 1: 2026-10-17 (curl, quote and date read)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 10月15日至18日, 10月19日至11月6日, 11月7日至11日 re-found)
+- Used in: double-11-last-minute-checklist (and its guide)
+- Notes: second source for the 28 days: China Business Journal (中国经营报), 李静, on Tencent News, 2026-10-15, https://news.qq.com/rain/a/20261015A08JVH00 (checked once, not cited).
+
+### Tmall Double 11 2026 sign-up and payment times
+- Value: presale sign-up Sept 21 12:00 to Oct 15 19:59; deposits Oct 15 20:00 to Oct 20 17:59; final payments Oct 20 20:00 to Oct 25 23:59; spot-goods sign-up closed Oct 19 23:59; spot sale Oct 20 20:00 to Nov 13 23:59
+- As of: September 26, 2026 (16:01)
+- Source: Ebrun (亿邦动力), Tencent News account
+- URL: https://news.qq.com/rain/a/20260926A07D0O00
+- Verified 1: 2026-10-17 (curl, quote and date read)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 现货商品报名截止到10月19日23时59分, 尾款支付自10月20日20时持续至10月25日23时59分, 11月13日23时59分 re-found)
+- Used in: double-11-last-minute-checklist (and its guide)
+
+### Tmall Double 11 2026 merchant rules: price protection, 48-hour shipping, price warnings, 官方立减
+- Value: event goods must offer price protection (价保) and free shipping (some categories excepted); ship within 48 hours with a carrier pickup record, tracking update within 24 hours of pickup; platform warns against price rises during the event, raise-then-cut and abnormal same-SKU prices; 官方立减 storewide on participating categories, minimum 1%, 5% or 15% by category
+- As of: September 25, 2026 (15:00)
+- Source: Ebrun (亿邦动力) original, republished by Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/roll/2026-09-25/doc-iniszmmx4463810.shtml
+- Verified 1: 2026-10-17 (curl, quote and date read)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 48小时内发货, 先涨后降, 价保服务 re-found)
+- Used in: double-11-last-minute-checklist (and its guide)
+- Notes: a Tmall price-check window (Sept 6 to Nov 13), a 20% warm-up cap, a Nov 28 price-protection end date and presale price floors appear only on consumer posts and self-media; not citable, not used.
+
+### JD 11.11 2026: no sign-up, dated waves
+- Value: JD keeps the no-registration model (免报名), the system picks eligible goods; launch October 12 at 20:00; October 20 超级秒杀日; October 28 超级服务日
+- As of: September 25, 2026 (00:09)
+- Source: EqualOcean (亿欧网), Tencent News
+- URL: https://news.qq.com/rain/a/20260925A004GR00
+- Verified 1: 2026-10-17 (curl)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 免报名, 10月12日晚8点, 超级服务日 re-found)
+- Used in: double-11-last-minute-checklist
+- Notes: no JD end date has a citable source (unsourced pages say Nov 11, 13 or 14). Do not print one.
+
+### JD 11.11 2026 price protection
+- Value: JD self-operated phones, digital goods and large appliances get 30 days of price protection after receipt; third-party stores per the product page; JD launched spot selling Oct 12 at 20:00 with no deposit presale
+- As of: October 13, 2026 (09:20)
+- Source: Beijing Business Today (北京商报), reprinted by 21jingji (21经济网)
+- URL: https://m.21jingji.com/article/20261013/herald/44527fe3fff27f42ec7414dc9c6a14ea.html
+- Verified 1: 2026-10-17 (curl)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 签收后30天价保 and 第三方店铺以商品详情页标注为准 re-found)
+- Used in: double-11-last-minute-checklist (and its guide)
+
+### WeChat Store 11.11 2026: 35 days, Sept 4 to Nov 15 price reference
+- Value: sale October 12 to November 15, 35 days; registration opened September 28; price reference 9月4日至11月15日 普惠到手价, raise-then-cut banned
+- As of: September 22, 2026 (15:46)
+- Source: Ebrun (亿邦动力), republished by Sina Tech (新浪科技)
+- URL: https://finance.sina.com.cn/tech/roll/2026-09-22/doc-inissuii2083775.shtml
+- Verified 1: 2026-10-17 (curl)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 10月12日启动，持续至11月15日 and 9月4日至11月15日 re-found)
+- Used in: double-11-last-minute-checklist (and its guide)
+- Notes: complements the ledger's first-party WeChat Store notice entry (2026-09-28), which carries the same check period. No sign-up closing date is published.
+
+### Discount base: lowest transaction price in the 7 days before a promotion (SAMR Order 32, Article 21)
+- Value: where a seller does not state the discount base, the base is its lowest transaction price in the same place in the 7 days before the promotion; with no sale in those 7 days, the last transaction price
+- As of: Order 32 published October 29, 2020, in force December 1, 2020 (page dated 2020-11-05)
+- Source: State Administration for Market Regulation (国家市场监督管理总局), 《规范促销行为暂行规定》
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_cae53a080be2401e8f91c6d6291539f8.html
+- Verified 1: 2026-10-17 (curl, Article 21 read)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 第二十一条 and 本次促销活动前七日内最低成交价格 re-found)
+- Used in: double-11-last-minute-checklist
+- Notes: Article 20 covers disclosure of promotion conditions; the 7-day rule is Article 21.
+
+### No temporary mark-up as the discount base (SAMR Order 56, Article 17)
+- Value: a seller may not, without good reason, temporarily and markedly raise the marked price before a discount and use it as the base; Article 16 caps an undetailed comparison price at the 7-day low
+- As of: Order 56 published April 14, 2022, in force July 1, 2022 (page dated 2022-04-26)
+- Source: State Administration for Market Regulation (国家市场监督管理总局), 《明码标价和禁止价格欺诈规定》
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_9a1f82a007964950a1a0f6c056f2fedf.html
+- Verified 1: 2026-10-17 (curl)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 第十七条 and 临时显著提高标示价格 re-found)
+- Used in: double-11-last-minute-checklist
+- Notes: same order as the ledger's gov.cn gazette entry (Article 19); this is the SAMR copy.
+
+### Double 11 2025 parcel volume (State Post Bureau)
+- Value: October 21 to November 11, 2025: 13.938 billion parcels collected; 634 million a day, 117.8% of a normal day; single-day peak 777 million, a record
+- As of: November 13, 2025 (carrying Xinhua)
+- Source: State Post Bureau (国家邮政局)
+- URL: https://www.spb.gov.cn/gjyzj/2022wjmtbdbp/202511/c3af3f221f294761a50f6ebfe181e2b6.shtml
+- Verified 1: 2026-10-17 (curl)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 139.38亿件, 6.34亿件, 117.8%, 7.77亿件 re-found)
+- Used in: double-11-last-minute-checklist
+- Notes: no 2026 Double 11 forecast from the bureau on 2026-10-17. The bureau's Sept 30, 2026 note (150 billion parcels by Sept 29, 12 days earlier than 2025, https://www.spb.gov.cn/gjyzj/c100015/c100016/202609/741fd554fe1a4d39b6a284ecbc33ed83.shtml) was checked once and cut from the draft for length.
+
+### Ningbo cross-border import declarations forecast, Double 11 2026
+- Value: about 12 million cross-border import declarations in Ningbo October 20 to November 14, 2026 (forecast by the Ningbo cross-border service platform); more than 66 million items stocked by key bonded warehouse firms; 5,000-plus companies taking part
+- As of: October 16, 2026 (18:59)
+- Source: Zhejiang Online (浙江在线)
+- URL: https://zjnews.zjol.com.cn/yc/qmt/202610/t20261016_31969295.shtml
+- Verified 1: 2026-10-17 (curl)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 1200万单 and 6600万件 re-found)
+- Used in: double-11-last-minute-checklist
+- Notes: a platform forecast, not a customs figure. Say who forecasts it.
+
+### 7-day no-reason return right (Consumer Rights Protection Law, Article 25)
+- Value: goods bought online may be returned within 7 days of receipt without a reason (custom-made, perishable, opened digital goods and newspapers excepted); seller refunds within 7 days of receiving the return
+- As of: consolidated text as amended October 25, 2013 (page dated 2014-01-02)
+- Source: National People's Congress (中国人大网)
+- URL: http://www.npc.gov.cn/c1773/c1848/c21114/c21170/c21174/201905/t20190521_210511.html
+- Verified 1: 2026-10-17 (curl)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 第二十五条 and 七日内退货 re-found)
+- Used in: double-11-last-minute-checklist (and its guide)
+- Notes: no national ruling says in terms that cross-border retail imports are covered; only Hangzhou Internet Court guidance (Zhejiang Legal Daily, 2024-07-25). The piece does not claim either way.
+
+### Bonded cross-border returns: 30 days to file, 45 days to arrive, tax not levied (GACC Announcement 2020 No. 45)
+- Value: a return applied for within 30 days of the declaration list's release, with goods back at the original customs supervision site within 45 days of release, is not taxed
+- As of: March 28, 2020
+- Source: General Administration of Customs (海关总署), on gov.cn
+- URL: https://www.gov.cn/zhengce/zhengceku/2020-03/28/content_5496571.htm
+- Verified 1: 2026-10-17 (curl)
+- Verified 2: 2026-10-17 (re-fetched at iteration 8; 30日内申请退货 and 45日内 re-found)
+- Used in: double-11-last-minute-checklist (and its guide)
+- Notes: worked dates in the piece: a November 11 release files by December 11 and arrives by December 26.
+
+### Bonded storage and returned-parcel cost at calculator defaults (proprietary, October 2026)
+- Value: bonded storage 0.8 RMB per unit per month in all three calculators; pick and pack 4, last mile 11, return handling 15 RMB per parcel (same defaults in all three), so a returned order burns 30 RMB; three months of storage costs 2.4 RMB a unit; one return equals 37.5 unit-months of storage (more than three years)
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, jd-worldwide-setup-and-run.astro, douyin-cost-calculator.astro: storage, fulfillment, shipping, returnHandling)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-17 (defaults read from the three files)
+- Verified 2: 2026-10-17 (re-read at iteration 8; arithmetic 4 + 11 + 15 = 30, 0.8 x 3 = 2.4, 30 / 0.8 = 37.5 rechecked)
+- Used in: double-11-last-minute-checklist
+- Notes: model defaults, not a market rate or a client result. Settled fallback for the brief's "last day a price or mechanic can be changed, from operations", which is not on file. Chinese New Year 2027 falls on February 6.
+
+### Re-verified for 08A (no new entry; add double-11-last-minute-checklist to Used in)
+- Cross-border 5,000 RMB per transaction and 26,000 RMB per year (MOFCOM, 财关税〔2018〕49号): re-fetched 2026-10-17 at both checks; 5000元 and 26000元 re-found. Also used in its guide.
+- Kuaishou Double 11 2026 cycle (Ebrun via Tencent News, 2026-09-19): re-fetched 2026-10-17 at both checks; 收官 and 返场 re-found. The piece prints the closing phase (Nov 8 to 11) and encore (Nov 12 to 15).
+- 直播电商监督管理办法, order 117 (State Council Gazette): re-fetched 2026-10-17 for the guide only; 第三十二条, 第三十七条 and 2026年2月1日 re-found.
+- Double 11 2025 return rate 61.5% (Beijing Daily carrying CCTV): considered, cut from the draft for length; not used.
+
+### Researched for 08A, not used
+- Tmall Global stock: more than 100 million imported items in 100-plus bonded and overseas warehouses (National Business Daily, 陈婷 and 王郁彪, 2026-10-16, https://www.nbd.com.cn/articles/2026-10-16/4606022.html): checked once, cut for length.
+- Kuaishou 官方立减 12%, stackable to 25% off (21st Century Business Herald, 2026-09-16): checked once, not used.
+- JD service peak Nov 9 to 11 (China.com, 2026-10-15): service categories only, not used.
+- Ningbo 2025 first-peak declarations (People's Daily Online Zhejiang, 2025-10-22): checked once, not used.

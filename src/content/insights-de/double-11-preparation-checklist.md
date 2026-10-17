@@ -2,7 +2,7 @@
 title: "Double 11: die Checkliste 50 Tage vorher"
 description: "Die Double-11-Checkliste für ausländische Marken, rückwärts vom 11. November gerechnet: wer jede Zeile hält und was ein verlorener Tag kostet."
 pubDate: "2026-09-22"
-updatedDate: "2026-10-02"
+updatedDate: "2026-10-17"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "JD", "Douyin", "Kuaishou"]
@@ -100,8 +100,15 @@ Tmall und JD haben ihre Fenster in derselben Woche datiert.
 > Quelle: National Business Daily (每日经济新闻), September 2026.
 > https://www.nbd.com.cn/articles/2026-09-24/4591116.html
 
-Kuaishou verkauft also ab dem 7. Oktober, JD ab dem 12., Tmall ab dem 15.,
-Douyin irgendwann im Oktober. Das Datum für die Wand heißt Anfang Oktober.
+Douyin hat sein vollständiges Regelwerk am 30. September veröffentlicht.
+
+> Bei Douyin läuft der Verkauf zum Double 11 2026 vom 15. Oktober, 0 Uhr,
+> bis zum 11. November, 23:59:59 Uhr.
+> Quelle: Douyin E-commerce Learning Center (抖音电商学习中心), September 2026.
+> https://school.jinritemai.com/doudian/web/articlev0/aJqWoaCZesUW
+
+Kuaishou verkauft also ab dem 7. Oktober, JD ab dem 12., Tmall und Douyin
+ab dem 15. Das Datum für die Wand heißt Anfang Oktober.
 
 Zur Größenordnung, und für alle, die intern noch darüber streiten, ob sich die
 gebundene Liquidität lohnt:
@@ -271,7 +278,7 @@ noch jemand erinnert.
 
 Jedes Datum oben ist von Mittwoch, dem 11. November 2026, zurückgerechnet,
 und jedes Plattformfenster wurde gegen die Originalankündigung geprüft:
-Douyin und Kuaishou am 22. September, Tmall und JD am 2. Oktober. Plattformen verschieben ihre eigenen Termine.
+Kuaishou am 22. September, Tmall und JD am 2. Oktober, Douyin am 17. Oktober. Plattformen verschieben ihre eigenen Termine.
 Prüfen Sie die für Sie relevanten im Händler-Backend, bevor Sie Budget
 zusagen.
 
@@ -282,8 +289,7 @@ zusagen.
 Der 11. November ist der Stichtag, verkauft wird aber Wochen früher. Der
 Kuaishou-Zyklus startet am 7. Oktober, JD am 12. Oktober. Tmall öffnet
 Vorverkauf und Anzahlungen am 15. Oktober, den Verkauf ab Lager am
-20. Oktober um 20 Uhr. Douyin lässt seinen Verkauf von Oktober bis zum
-11. November laufen. Planen Sie mit der zweiten Oktoberwoche.
+20. Oktober um 20 Uhr. Douyin verkauft vom 15. Oktober bis zum 11. November. Planen Sie mit der zweiten Oktoberwoche.
 
 **Ist es zu spät für das Double 11 2026, wenn wir keinen China-Shop haben?**
 
