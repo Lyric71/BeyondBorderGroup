@@ -2,7 +2,7 @@
 title: "Distributeur ou boutique en propre en Chine"
 description: "Le distributeur vous ouvre la Chine sans cash ni équipe. La boutique en propre coûte d'abord. Ce que chaque option coûte vraiment, ligne par ligne."
 pubDate: "2026-09-04"
-updatedDate: "2026-09-04"
+updatedDate: "2026-10-16"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "JD", "Douyin"]
@@ -225,23 +225,31 @@ agroalimentaire étrangère doit disposer d'un numéro d'enregistrement
 douanier imprimé sur l'emballage, et la règle a encore été réécrite cette
 année.
 
-> Les producteurs alimentaires étrangers exportant vers la Chine doivent
-> être enregistrés auprès de l'Administration générale des douanes depuis
-> le 1er janvier 2022, pour une durée de cinq ans, le numéro
-> d'enregistrement devant figurer sur l'emballage intérieur et extérieur.
+> À partir du 1er janvier 2022, les producteurs alimentaires étrangers
+> exportant vers la Chine ont dû s'enregistrer auprès de l'Administration
+> générale des douanes, pour cinq ans, le numéro d'enregistrement devant
+> figurer sur l'emballage intérieur et extérieur.
 > Source : Bulletin du Conseil des affaires de l'État (国务院公报), décret
 > des douanes n° 248, avril 2021.
 > https://www.gov.cn/gongbao/content/2021/content_5616161.htm
 
-> Le texte de remplacement, le décret des douanes n° 280, est entré en
-> vigueur le 1er juin 2026, avec une liste de catégories exclues du
-> renouvellement automatique.
+> Le décret des douanes n° 280 a pris le relais le 1er juin 2026. L'usine
+> appose désormais sur l'emballage soit son numéro d'enregistrement chinois,
+> soit celui délivré par l'autorité de son pays, et l'enregistrement se
+> renouvelle automatiquement pour cinq ans, sauf exceptions.
+> Source : Administration générale des douanes (海关总署), décret n° 280,
+> articles 14, 21 et 33, octobre 2025, publié par le Réseau d'information
+> sur la coopération SPS Chine-Afrique (中国-非洲国家SPS合作信息网).
+> https://www.chinaafricasps.org/zh/spsj/zfspaqjgjl/fzshspaqzcpxkj/748006255804485.shtml
+
+> Seules deux catégories échappent au renouvellement automatique :
+> les viandes et produits carnés, et les nids d'hirondelle et leurs dérivés.
 > Source : avis 2026 n° 27 de l'Administration générale des douanes
 > (海关总署公告2026年第27号), mars 2026.
 > https://www.gov.cn/zhengce/zhengceku/202603/content_7063537.htm
 
-Un distributeur se charge de cet enregistrement dans le cadre de
-l'importation. En modèle transfrontalier sous douane, la règle ne
+Un distributeur vérifie cet enregistrement avant
+d'importer. En modèle transfrontalier sous douane, la règle ne
 s'applique pas de la même façon, et c'est l'une des raisons discrètes pour
 lesquelles les petites marques alimentaires commencent en ligne.
 

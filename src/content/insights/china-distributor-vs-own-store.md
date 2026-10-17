@@ -2,7 +2,7 @@
 title: "China distributor vs own store: honest comparison"
 description: "A distributor gets you into China with no cash and no team. Your own store costs money up front. Here is what each one really costs, row by row."
 pubDate: "2026-09-04"
-updatedDate: "2026-09-04"
+updatedDate: "2026-10-16"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "JD", "Douyin"]
@@ -204,20 +204,29 @@ Food and supplements carry an extra gate on the general-trade side. Since
 2022 every overseas food plant has needed a customs registration number
 printed on the pack, and the rule was rewritten again this year.
 
-> Overseas food producers exporting to China have needed a registration
-> with the General Administration of Customs since January 1, 2022, valid
-> for five years, with the registration number marked on the inner and
-> outer packaging.
+> From January 1, 2022, overseas food producers exporting to China needed a
+> registration with the General Administration of Customs, valid for five
+> years, with the registration number marked on the inner and outer
+> packaging.
 > Source: State Council Gazette (国务院公报), Customs Decree No. 248,
 > April 2021. https://www.gov.cn/gongbao/content/2021/content_5616161.htm
 
-> The replacement rule, Customs Decree No. 280, took effect on June 1,
-> 2026, with a list of categories excluded from automatic renewal.
+> Customs Decree No. 280 replaced that rule on June 1, 2026. A plant now
+> marks either its China registration number or the number its home
+> authority approved on the food packaging, and registrations renew
+> automatically for five years, with exceptions.
+> Source: General Administration of Customs (海关总署), Decree No. 280,
+> articles 14, 21 and 33, October 2025, published by the China-Africa SPS
+> Cooperation Information Network (中国-非洲国家SPS合作信息网).
+> https://www.chinaafricasps.org/zh/spsj/zfspaqjgjl/fzshspaqzcpxkj/748006255804485.shtml
+
+> Only two categories are excluded from automatic renewal: meat and meat
+> products, and bird's nest products.
 > Source: General Administration of Customs Announcement 2026 No. 27
 > (海关总署公告2026年第27号), March 2026.
 > https://www.gov.cn/zhengce/zhengceku/202603/content_7063537.htm
 
-A distributor will handle that filing as part of the import. In the
+A distributor checks that registration before it imports. In the
 cross-border bonded model it does not apply in the same way, which is one
 of the quiet reasons small food brands start online.
 

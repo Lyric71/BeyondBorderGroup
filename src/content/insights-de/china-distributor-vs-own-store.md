@@ -2,7 +2,7 @@
 title: "Distributor oder eigener Shop in China"
 description: "Der Distributor bringt Sie ohne Kapital und ohne Team nach China. Der eigene Shop kostet vorab Geld. Was beide Wege wirklich kosten, Zeile für Zeile."
 pubDate: "2026-09-04"
-updatedDate: "2026-09-04"
+updatedDate: "2026-10-16"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "JD", "Douyin"]
@@ -225,21 +225,31 @@ zusätzliches Tor. Seit 2022 braucht jeder ausländische Lebensmittelbetrieb
 eine Registrierungsnummer beim Zoll, aufgedruckt auf der Verpackung, und
 in diesem Jahr wurde die Regel erneut umgeschrieben.
 
-> Ausländische Lebensmittelhersteller, die nach China exportieren,
-> brauchen seit dem 1. Januar 2022 eine Registrierung bei der
-> Zollverwaltung, gültig für fünf Jahre, mit der Registrierungsnummer auf
-> der Innen- und Außenverpackung.
+> Ab dem 1. Januar 2022 brauchten ausländische Lebensmittelhersteller, die
+> nach China exportieren, eine Registrierung bei der Zollverwaltung, gültig
+> für fünf Jahre, mit der Registrierungsnummer auf der Innen- und
+> Außenverpackung.
 > Quelle: Amtsblatt des Staatsrats (国务院公报), Zollverordnung Nr. 248,
 > April 2021. https://www.gov.cn/gongbao/content/2021/content_5616161.htm
 
-> Die Nachfolgeregel, Zollverordnung Nr. 280, trat am 1. Juni 2026 in
-> Kraft, mit einer Liste von Kategorien, die von der automatischen
-> Verlängerung ausgenommen sind.
+> Seit dem 1. Juni 2026 gilt die Zollverordnung Nr. 280. Der Betrieb druckt
+> nun entweder seine chinesische Registrierungsnummer oder die von der
+> Behörde seines Landes vergebene Nummer auf die Verpackung, und die
+> Registrierung verlängert sich bis auf wenige Ausnahmen automatisch um fünf
+> Jahre.
+> Quelle: Zollverwaltung (海关总署), Verordnung Nr. 280, Artikel 14, 21 und
+> 33, Oktober 2025, veröffentlicht vom China-Afrika-SPS-Kooperationsnetz
+> (中国-非洲国家SPS合作信息网).
+> https://www.chinaafricasps.org/zh/spsj/zfspaqjgjl/fzshspaqzcpxkj/748006255804485.shtml
+
+> Nur zwei Kategorien sind von der automatischen Verlängerung ausgenommen:
+> Fleisch und Fleischerzeugnisse sowie Schwalbennester und daraus
+> hergestellte Produkte.
 > Quelle: Bekanntmachung der Zollverwaltung 2026 Nr. 27
 > (海关总署公告2026年第27号), März 2026.
 > https://www.gov.cn/zhengce/zhengceku/202603/content_7063537.htm
 
-Ein Distributor erledigt diese Registrierung als Teil des Imports. Im
+Ein Distributor prüft diese Registrierung, bevor er importiert. Im
 Cross-Border-Zolllagermodell greift sie nicht in derselben Weise, einer
 der stillen Gründe, warum kleine Lebensmittelmarken online anfangen.
 

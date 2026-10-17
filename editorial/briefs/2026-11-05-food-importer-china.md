@@ -52,7 +52,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 
 **The table it must carry.** Check, why it matters, the rule, the red flag.
 
-**Leads (verify, cite primary).** GACC Decree 248 (gov.cn); Food Safety Law Art. 148 (npc.gov.cn). Spring Chengdu fair hook.
+**Leads (verify, cite primary).** GACC Decree 280, which replaced Decree 248 on June 1, 2026 (decree text and GACC Announcement 2026 No. 27 on gov.cn); GACC Announcement 2019 No. 70 (the importer checks the Chinese label); Food Safety Law Arts. 94, 97 and 148 (MOFCOM policy database); SPC 法释〔2024〕9号 on label defects. Spring Chengdu fair hook.
 
 **Internal links.** `/compass/find-a-distributor-in-china`, `/enter-china/distribution`, `/compass`
 **CTA.** Compass shortlist.

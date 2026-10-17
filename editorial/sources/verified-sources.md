@@ -5007,3 +5007,95 @@ extraction, because the reports set text in columns).
 - Used in: how-lego-entered-china.
 - Notes: Followed Chinese-language 2026 reporting to this named reporter's
   earnings-call account. Global results and theme-park figures not used.
+
+## Partner cluster P33 (food-importer-china), 2026-10-16
+
+### Food Safety Law: importer checks on suppliers, records, damages and fines
+- Value: art. 94, overseas exporters and producers answer for labels and instructions; the importer sets up a system for checking overseas exporters and producers and may not import what fails it; art. 98, importers record each import and sale (name, specification, quantity, production date, batch, shelf life, overseas exporter, buyer); art. 148, ten times the price or three times the loss from the producer, or from a seller that knew, at least 1,000 RMB extra, except label defects that neither affect safety nor mislead; art. 125, unlabeled prepackaged food or a non-compliant label: confiscation plus 5,000 to 50,000 RMB under 10,000 RMB of goods, five to ten times the goods value above; art. 129, an importer without the record system or the exporter and producer check is penalised by customs under art. 126; art. 33(6), storage and transport equipment must meet the temperature and humidity food safety needs
+- As of: third amendment, September 12, 2025
+- Source: Ministry of Commerce policy database (商务部), Food Safety Law of the People's Republic of China (中华人民共和国食品安全法)
+- URL: https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104105
+- Verified 1: 2026-10-16 (curl, every article read verbatim)
+- Verified 2: 2026-10-16 (re-fetched in iteration 8; 进口商应当建立境外出口商, 价款十倍或者损失三倍, 增加赔偿的金额不足一千元的, 并处五千元以上五万元以下罚款, 温度、湿度等特殊要求 and the art. 98 record list re-found)
+- Used in: food-importer-china
+- Notes: same URL as "Food Safety Law: food licensing, importer filing, Chinese label" (arts. 35, 96, 97). Art. 148 binds the seller only where it knew; the producer without that condition. Never print "ten times" without "food that fails a safety standard" and the label exemption.
+
+### Importer, not customs, checks the Chinese label of imported prepackaged food (GACC 2019 No. 70)
+- Value: from October 1, 2019 customs dropped first-import label filing and inspects the label as one test item; the importer checks that the Chinese label meets Chinese law and national food safety standards and may not import a failing one; when a shipment is pulled for inspection the importer hands over proof of compliance, the original label with its translation and a Chinese label sample; the 2012 AQSIQ label-filing rule lapsed the same day
+- As of: April 22, 2019 (page dated November 2019)
+- Source: General Administration of Customs (海关总署), Announcement 2019 No. 70, Chinese government portal (中国政府网)
+- URL: https://www.gov.cn/zhengce/zhengceku/2019-11/05/content_5448950.htm
+- Verified 1: 2026-10-16
+- Verified 2: 2026-10-16 (取消首次进口预包装食品标签备案要求 and 审核不合格的，不得进口 re-found)
+- Used in: food-importer-china
+- Notes: item 5 leaves cross-border e-commerce, samples and duty-free goods to other rules. Do not cite it for bonded cross-border stock.
+
+### Decree 280 full text: packaging mark, five years, automatic renewal
+- Value: registered plants mark their China registration number or the registration number approved by their home authority on the food packaging (art. 14); registration valid five years (art. 15); renews automatically for five years except foods on the no-automatic-renewal list, plants under rectification and countries whose exports are suspended (art. 21); cross-border retail import producers handled under separate rules (art. 30); in force June 1, 2026, repealing Decree 248 (art. 33)
+- As of: promulgated October 14, 2025 (page dated October 16, 2025, source line 海关总署)
+- Source: General Administration of Customs (海关总署), Decree No. 280 (中华人民共和国海关进口食品境外生产企业注册管理规定), published by the China-Africa SPS Cooperation Information Network (中国-非洲国家SPS合作信息网)
+- URL: https://www.chinaafricasps.org/zh/spsj/zfspaqjgjl/fzshspaqzcpxkj/748006255804485.shtml
+- Verified 1: 2026-10-16 (articles read verbatim)
+- Verified 2: 2026-10-16 (或者所在国家（地区）主管当局批准的注册编号, 注册有效期为5年, 延续期为5年, 2026年6月1日起施行 re-found)
+- Used in: food-importer-china, china-distributor-vs-own-store (passage rewritten 2026-10-16 in EN, FR, DE, ES)
+- Notes: Decree 248 required the number on inner AND outer packaging; Decree 280 art. 14 says on the food packaging, either number. Any page still stating the 248 marking rule as current is outdated. customs.gov.cn is unreachable from this runner; this mirror carries the GACC source line and the .doc/.pdf links.
+
+### Decree 280 interpretation: one application route, 3 to 12 month renewal window
+- Value: the "competent authority recommends" and "company applies" routes merge into company application; foods in the recommended catalogue still attach the home authority's inspection report and recommendation letter (art. 9); a list-registration route for countries with cooperation agreements (art. 17); automatic renewal added (art. 21); renewal applications move from 3 to 6 months before expiry to 3 to 12 months (art. 22)
+- As of: October 24, 2025 (source line 海关总署)
+- Source: General Administration of Customs (海关总署), interpretation of Decree 280, carried by the Hunan Provincial Government portal (湖南省人民政府门户网站)
+- URL: http://www.hunan.gov.cn/zqt/zcjd/bmjd/202510/t20251031_33837720.html
+- Verified 1: 2026-10-16
+- Verified 2: 2026-10-16 (3至12个月内 and 推荐函 re-found)
+- Used in: food-importer-china
+
+### SPC 2024 interpretation on punitive damages for food: label defects
+- Value: ten-times damages on the price actually paid when there is no proof the buyer knowingly bought (art. 1); the "defect harms no one" defense fails for a missing mandatory item, a deliberate mislabel, or an error that misleads about safety (art. 6); no punitive damages for listed defects such as irregular font size, foreign text larger than Chinese, typos or translation slips that do not mislead, nutrition-table format slips (art. 8); a knowing buyer is supported only within reasonable consumption (art. 12)
+- As of: adopted March 18, 2024, published August 21, 2024, in force August 22, 2024
+- Source: Supreme People's Court (最高人民法院), 法释〔2024〕9号
+- URL: https://www.court.gov.cn/fabu/xiangqing/440841.html
+- Verified 1: 2026-10-16
+- Verified 2: 2026-10-16 (故意错标, 外文字号、字高大于中文 and 价款十倍的惩罚性赔偿金 re-found)
+- Used in: food-importer-china
+
+### Beijing Dongcheng court: imported wine label, refund plus ten times the price
+- Value: January 2024 purchase of four bottles at 888 RMB (3,552 RMB); the Chinese label lacked the production date and the distributor's contact; the Shenzhen distributor named on it said it never sold the wine; the shop could not show customs or inspection papers; judgment: refund 3,552 RMB and ten times the price
+- As of: March 13, 2025
+- Source: Beijing Daily (北京日报客户端), reporter 安然
+- URL: https://xinwen.bjd.com.cn/content/s67d2735de4b08edd28f62950.html
+- Verified 1: 2026-10-16
+- Verified 2: 2026-10-16 (3552元, 单价888元, 并非这家经销商销售 and 2025-03-13 re-found)
+- Used in: food-importer-china
+- Notes: the page prints the award as 35220元, which does not equal ten times 3,552 RMB (35,520). Never print the award figure; say "ten times the price".
+
+### GB 31605-2020 cold-chain hygiene standard: logging and temperatures
+- Value: transport temperature monitored continuously, recorded at intervals of no more than 10 min (5.4, "宜"); frozen food at or below -18°C and chilled at 0°C to 10°C in transport (5.8); cold store records at most every 30 min (6.1); full-journey temperature record checked at warehouse intake and delivery handovers (4.6)
+- As of: issued September 11, 2020, in force March 11, 2021 (posted December 28, 2020)
+- Source: National Health Commission and State Administration for Market Regulation (国家卫生健康委 市场监管总局), GB 31605-2020, PDF on the Fuzhou Mawei District Government site (福州市马尾区人民政府)
+- URL: https://www.mawei.gov.cn/xjwz/zwgk/zfxxgkzdgz/spypaq/spaqbz/202012/P020201228519962293099.pdf
+- Verified 1: 2026-10-16 (fonts do not extract; page 3 rendered and read as an image)
+- Verified 2: 2026-10-16 (PDF re-downloaded, byte-identical, md5 c32476267e4004b6b1a5aed303feefa0)
+- Used in: food-importer-china
+- Notes: a vendor copy at shgps.com extracts as text but is a cold-chain equipment seller's site; cite the government copy.
+
+### Tmall Global food category fee row (proprietary)
+- Value: Packaged food, cooking oil, snacks: deposit 50,000 RMB, annual fee 30,000 RMB, commission 2%
+- As of: October 2026 (rates per rule.tmall.hk ruleId 11005909, adjustment effective 2026-09-09, checked twice on 2026-10-02 per the source comment)
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, `food` row)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-16 (row read in the file)
+- Verified 2: 2026-10-16 (re-read before the draft was finished)
+- Used in: food-importer-china
+
+### Re-verified for P33 (no new entry; add food-importer-china to Used in)
+- "Recommended-registration catalogue under Decree 280" and "Overseas food producer registration, Decree 280 in force" (gov.cn 2026 No. 27): re-fetched 2026-10-16 at both checks; 坚果与籽类, 燕窝与燕窝制品 and 2026年3月18日 re-found. Also add china-distributor-vs-own-store (its quote now names the two exceptions).
+- "GB 7718-2025 effective date and the ban on zero-added claims" (Beijing SAMR): re-fetched 2026-10-16 at both checks; 2027年3月16日 and 不使用 re-found. The page also says the standard was published 2025年3月16日; the draft prints only the effective date, as the ledger note asks.
+- "China Food and Drinks Fair, spring 2026 results and autumn 2026 dates" (Xinhua): check 1 by curl 2026-10-16; check 2 the same day through the web reader after Xinhua returned ACCESS DENIED to curl; 6615家, 超41万人次, 3月26日至28日 and 2026年10月15日至17日 re-found.
+- "Food Safety Law: food licensing, importer filing, Chinese label" (MOFCOM 104105): arts. 96 and 97 re-read 2026-10-16 at both checks.
+- "Distributor signature and cross-border launch timing", "Compass shortlist turnaround" and "Compass shortlist size": re-read 2026-10-16 in src/content/insights/china-distributor-vs-own-store.md and src/content/pages/partner-guides/shared.ts. A Compass figure on food importers was unavailable (no compass-stats.md).
+
+### Researched for P33, not used
+- Huaiyang court imported-drink case (hncourt.gov.cn, May 8, 2025): settled at 500 RMB, so it does not illustrate a ten-times award; checked once.
+- Shanghai High Court imported-coffee case (hshfy.sh.cn): not fetched; the Dongcheng case carries the point.
+- 2027 spring China Food and Drinks Fair date: only booking-agent domains carry one; no official date on 2026-10-16. The copy gives no 2027 date.
+- Food Mate GB 7718-2025 allergen explainer: Food Mate sells label services; the Beijing regulator page covers what the piece uses.

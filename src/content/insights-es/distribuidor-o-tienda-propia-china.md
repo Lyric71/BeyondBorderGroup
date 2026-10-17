@@ -2,7 +2,7 @@
 title: "Distribuidor o tienda propia en China: comparativa"
 description: "El distribuidor le abre China sin caja ni equipo. La tienda propia cuesta dinero por adelantado. Lo que cuesta de verdad cada opción, línea a línea."
 pubDate: "2026-09-04"
-updatedDate: "2026-09-04"
+updatedDate: "2026-10-16"
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "JD", "Douyin"]
@@ -221,22 +221,30 @@ general. Desde 2022, toda planta alimentaria extranjera necesita un número
 de registro aduanero impreso en el envase, y la norma se ha vuelto a
 redactar este año.
 
-> Los productores de alimentos extranjeros que exportan a China necesitan
-> desde el 1 de enero de 2022 un registro ante la Administración General de
-> Aduanas, válido cinco años, con el número de registro marcado en el envase
-> interior y exterior.
+> A partir del 1 de enero de 2022, los productores de alimentos extranjeros
+> que exportaban a China necesitaron un registro ante la Administración
+> General de Aduanas, válido cinco años, con el número de registro marcado
+> en el envase interior y exterior.
 > Fuente: Boletín del Consejo de Estado (国务院公报), Decreto de Aduanas
 > n.º 248, abril de 2021.
 > https://www.gov.cn/gongbao/content/2021/content_5616161.htm
 
-> La norma que lo sustituye, el Decreto de Aduanas n.º 280, entró en vigor
-> el 1 de junio de 2026, con una lista de categorías excluidas de la
-> renovación automática.
+> El Decreto de Aduanas n.º 280 tomó el relevo el 1 de junio de 2026. La
+> planta marca ahora en el envase su número de registro chino o el que le
+> asignó la autoridad de su país, y el registro se renueva automáticamente
+> por cinco años, salvo excepciones.
+> Fuente: Administración General de Aduanas (海关总署), Decreto n.º 280,
+> artículos 14, 21 y 33, octubre de 2025, publicado por la Red de
+> Información de Cooperación SPS China-África (中国-非洲国家SPS合作信息网).
+> https://www.chinaafricasps.org/zh/spsj/zfspaqjgjl/fzshspaqzcpxkj/748006255804485.shtml
+
+> Solo dos categorías quedan fuera de la renovación automática: la carne y
+> los productos cárnicos, y los nidos de golondrina y sus derivados.
 > Fuente: Anuncio 2026 n.º 27 de la Administración General de Aduanas
 > (海关总署公告2026年第27号), marzo de 2026.
 > https://www.gov.cn/zhengce/zhengceku/202603/content_7063537.htm
 
-Un distribuidor se encarga de ese trámite como parte de la importación. En
+Un distribuidor comprueba ese registro antes de importar. En
 el modelo transfronterizo de zona franca no aplica de la misma manera, y
 esa es una de las razones discretas por las que las marcas pequeñas de
 alimentación empiezan en línea.
