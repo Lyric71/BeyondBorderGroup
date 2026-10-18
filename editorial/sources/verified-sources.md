@@ -5476,3 +5476,163 @@ extraction, because the reports set text in columns).
 - Whether the children's cosmetics mark applies to cross-border imports: no regulator text either way.
 - Douyin's 【儿童化妆品商品发布及宣传】实施细则 and a Tmall children's cosmetics listing rule: not tied to 全球购 or Tmall Global on the pages found.
 - A typical diaper order value and a category repeat rate: no dated primary source.
+
+
+## Partner cluster P35 (douyin-affiliate-commission-brand), 2026-10-18
+
+### Douyin group-leader plans: creator rate plus leader fee capped at 90%
+- Value: in the 招商团长 and 托管团长 plans the merchant sets the creator commission (5% to 90%) and the group leader's service fee; the two together may not exceed 90%; the leader pays Douyin a technical service fee of 10% of its fee; leader fees follow the same settlement (15 days after receipt, cancelled on refunds inside the after-sale period). The platform-activity and fee-paid order (稿费商单) plans also run 5% to 90%
+- As of: October 2026 (page stamped 2026-10-12 13:50:26; revision published 2026-07-30, in force 2026-08-05)
+- Source: Douyin E-commerce (抖音电商), 《精选联盟推广费/服务费结算规则》, sections 2.1.1 and 2.3.1
+- URL: https://school.jinritemai.com/doudian/web/articlev0/112620
+- Verified 1: 2026-10-18 (headless Edge on a private temporary profile; 与推广费合计最高不超过90% present)
+- Verified 2: 2026-10-18 (re-rendered at iteration 8; 与推广费合计最高不超过90%, 5%-80%, X=40%, 确认收货的15天后 and the 2026-10-12 stamp re-found)
+- Used in: douyin-affiliate-commission-brand
+- Notes: the page's date stamp moved from 2026-08-08 to 2026-10-12 since the P04 entries; the open (5% to 50%), named-creator (5% to 80%), creator technical service fee (10% / 20% / 40%) and settlement figures are unchanged. Cite it as "October 2026" from now on.
+
+### Douyin cooperation orders: slot fees must go through the platform; pro-rata or flat
+- Value: a creator who charges a service fee for a livestream (即"坑位费") must collect it through the 精选联盟 cooperation-order function; private collection is a violation. Payment options: pure commission (no service fee); pro-rata service fee (agreed settled sales 500,000 RMB, fee 10,000 RMB; creator settles 100,000 RMB, merchant pays 20%, 2,000 RMB); flat fee (一口价): paid in full if the creator goes live, refunded to the merchant if not, unrelated to settled sales. Order terms can include creator, format, product, service fee, commission, minimum settled sales, live window, live duration and ad spend. Breaches include taking the fee without selling and missing the agreed settled sales under a refund clause without refunding
+- As of: September 2022 (first issued 2022-02-15, revised and in force 2022-09-13)
+- Source: Douyin E-commerce (抖音电商), 《精选联盟合作订单管理规则》, sections 1.3.1, 2.4, 2.5 and 3.1
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHQ7HZ64PRXs
+- Verified 1: 2026-10-18 (headless Edge)
+- Verified 2: 2026-10-18 (re-rendered at iteration 8; 即"坑位费", 等比例服务费, 50万元，服务费1万元, 2千元, 一口价服务费, 如创作者未开播则服务费退还到商家账户, 2022年09月13日 re-found)
+- Used in: douyin-affiliate-commission-brand
+- Notes: section 1.3.2 also requires L5-and-up creators selling flagship-store goods to use cooperation orders; that clause dates from 2022, before the 2026 level scheme, so it is not printed.
+
+### Douyin creator levels L0 to L6 by monthly settled sales
+- Value: levels set on the 8th of each month from last month's settled sales (paid amount minus refunds within 7 days minus abnormal orders): L0 0; L1 up to 30,000 RMB; L2 30,000 to 300,000; L3 300,000 to 1 million; L4 1 to 3 million; L5 3 to 10 million; L6 10 million and up
+- As of: March 2026 (first in force 2022-04-11, latest revision 2026-03-08)
+- Source: Douyin E-commerce (抖音电商), 《抖音电商创作者等级管理规则》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHRbnsP5fSGu
+- Verified 1: 2026-10-18 (headless Edge)
+- Verified 2: 2026-10-18 (re-rendered at iteration 8; 七个级别（L0~L6）, 30万<结算金额≤100万, 300万<结算金额≤1000万, 1000万及以上, 未来7日内, 2026年3月8日 re-found)
+- Used in: douyin-affiliate-commission-brand
+
+### Creator cost ratio of 35% and up; big hosts rarely under 20% commission
+- Value: from mid-tier creators up, slot fee, commission and ad budget come to at least 35% of creator sales, above 50% for some merchants (food, beauty, apparel); a merchant: big hosts' commission is generally not below 20%, with the lowest price required in a signed agreement; larger merchants sign yearly guaranteed deals on GSV after returns, with extra sessions or pro-rata refunds if missed; top hosts charge about 1 to 3 million RMB for a dedicated session
+- As of: July 16, 2025
+- Source: Ebrun (亿邦动力), 廖紫琳, edited by 董金鹏, carried by Huxiu (虎嗅)
+- URL: https://m.huxiu.com/article/4584498.html
+- Verified 1: 2026-10-18 (curl)
+- Verified 2: 2026-10-18 (re-fetched at iteration 8; 达播费比至少35%以上, 50%以上, 大主播佣金一般不低于20%, 按比例退费, 2025-07-16 re-found)
+- Used in: douyin-affiliate-commission-brand
+- Notes: Ebrun's own m.ebrun.com/586371.html is a column digest of the same piece. The article's 2021 and 2024 creator share of Douyin GMV (48% to 30%) carries no source inside it; not cited.
+
+### Top hosts' commission from beauty brands: 30% to 40%
+- Value: industry insiders: top hosts take 30% to 40% commission from beauty brands, lower for international majors, above 40% for some lesser-known domestic brands, plus a separately charged slot fee
+- As of: December 24, 2024
+- Source: Jiemian (界面新闻), carrying China Entrepreneur (中国企业家)
+- URL: https://www.jiemian.com/article/12159813.html
+- Verified 1: 2026-10-18 (curl)
+- Verified 2: 2026-10-18 (re-fetched at iteration 8; 30%~40%, 突破40%, 另外单收的坑位费, 2024/12/24 re-found)
+- Used in: douyin-affiliate-commission-brand
+- Notes: cross-platform, not Douyin-specific; the article's context is a Taobao host. Copy says "China's top hosts".
+
+### Slot-fee case: guarantee held, 160,000 of 200,000 RMB refunded (Beijing No. 3 Intermediate Court)
+- Value: 40,000 RMB service fee per product, guaranteed 50,000 RMB of sales per link (ROI 1:1.25), five products, 200,000 RMB in slot fees; actual sales under 4,000 RMB; the guarantee clause was valid and the court ordered 160,000 RMB refunded, reduced for the brand's late and flawed script
+- As of: November 14, 2022
+- Source: Beijing Political-Legal Net (北京政法网), 董振杰, on bj148.org
+- URL: https://www.bj148.org/sa1/yasf1/202211/t20221114_1641568.html
+- Verified 1: 2026-10-18 (curl)
+- Verified 2: 2026-10-18 (re-fetched at iteration 8; 4万元的服务费, 保底销售额5万元, 20万元的坑位费, 不到4000元, 退还坑位费16万元 re-found)
+- Used in: douyin-affiliate-commission-brand
+- Notes: the report does not name the platform. A Guangming Online copy (m.gmw.cn/2022-11/10/content_1303191012.htm) returned 404 on 2026-10-18.
+
+### Slot-fee case: no guarantee, 9,000 RMB damages on a 45,000 RMB fee (Beijing No. 2 Intermediate Court)
+- Value: slot fee 45,000 RMB plus a 15,000 RMB deposit, 8 to 10 minutes of explanation on air; the contract excused the agency from missed sales, and its full-refund clause applied only to fundamental breach; partial defects found (no co-host, short airtime); damages set at 9,000 RMB
+- As of: February 27, 2024
+- Source: Beijing News (新京报)
+- URL: https://m.bjnews.com.cn/detail/1709017633168842.html
+- Verified 1: 2026-10-18 (curl)
+- Verified 2: 2026-10-18 (re-fetched at iteration 8; 4.5万元, 保证金1.5万元, 8-10分钟, 9000元违约金 re-found)
+- Used in: douyin-affiliate-commission-brand
+- Notes: the report says 某自媒体平台, not which platform.
+
+### Creator commission at the Douyin calculator defaults and the slot-fee break-even (proprietary)
+- Value: at the defaults (RMB 2,000,000 first-year GMV, RMB 250 average order, creators 80% of sales, creator commission 20%, FX 7.1): creator commission RMB 320,000 a year (about US$45,000), 16% of GMV, RMB 50 per creator order, 6,400 creator orders. With a RMB 45,000 slot fee (the Beijing No. 2 case) on top of 20% commission at RMB 250: per kept order 200.00 at 300 kept orders (80% of the order), 125.00 at 600 (50%), 100.00 at 900 (40%), 72.50 at 2,000 (29%); the fee equals the commission at 900 kept orders, RMB 225,000 of kept sales; 1,000 placed orders at 30% returns keep 700, at RMB 114.29 each
+- As of: October 2026
+- Source: TheChinaPath calculator data, src/pages/tools/douyin-cost-calculator.astro (gmv 2000000, aov 250, kolShare 80, kolCommission 20, fx 7.1)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-18 (defaults read from the source)
+- Verified 2: 2026-10-18 (recomputed after the quality pass)
+- Used in: douyin-affiliate-commission-brand
+- Notes: the session volumes and the 30% return rate are illustrations, not market data or client results. Commission on kept orders only follows Douyin's settlement rule; the calculator itself books creator commission on gross sales.
+
+### Re-verified on 2026-10-18 for P35 (existing entries, add the slug to their Used in)
+- Douyin affiliate creator commission ranges by strategy (articlev0/112620): re-rendered twice; 5%-50%, 5%-80% present, page now stamped 2026-10-12.
+- Creator commission settlement: 15 days after receipt, refunds clawed back (articlev0/112620): re-rendered twice; 确认收货的15天后 and the cross-border base (-运费金额-税费金额-) present.
+- Historical dedicated-host event fee example (Xinhua, 2024-08-04): re-fetched twice; 100万-300万, 50万-100万 and the 商品露出的费用 definition present. The quote's 10% to 20% commission is not used in this piece.
+
+### Researched for P35, not used
+- Shenzhen Guangming court, 11-session mooncake livestream deal, 29,800 RMB fee, zero sales, full refund under a pro-rata clause (金羊网 on Tencent News, 2026-08-31, https://news.qq.com/rain/a/20260831A0930E00): the two Beijing cases already carry the point.
+- SPC platform-economy typical cases (court.gov.cn 507691, 2026-08-03): no slot-fee case among the five.
+- A 2026 head-host share of livestream GMV seen only in a search summary: no traceable original.
+
+## Signal 07S and watch-list closures, 2026-10-19
+
+### Douyin warranty reserve, formal October rule
+- Value: scope covers domestic and Global Purchase merchants. Warranty reserve covers settled, unrefunded orders inside platform three-guarantee periods or merchant-promised warranties (including product-page and livestream promises). Rates vary by store refund-and-compensation performance, category and time band. Without sufficient data: category average OR a fixed rate of at most 1.5%; the copy does not impose that ceiling on the separate category-average alternative. Floors RMB 200/500/1,000 per leaf category; warranty caps RMB 50,000/100,000 per store, as displayed in the back end. Holds release as covered warranties expire; other reserve types may be taken at the higher or combined amount.
+- As of: October 15, 2026, 15:11:40; clause 3.1 says revised and effective October 15, 2026.
+- Source: Douyin E-commerce (抖音电商), 《售后预留金实施细则》, sections 1.2, 2.3 and 2.5.
+- URL: https://school.jinritemai.com/doudian/web/article/aJSwoqTMykft
+- Verified 1: 2026-10-19, headless Edge rendered capture a2.txt, date/scope/rates/caps present.
+- Verified 2: 2026-10-19, independent re-render c1.txt at iteration 8; full clause checked. Continuation re-render resume-formal2.txt confirms scope, fixed-rate wording and effective date.
+- Used in: douyin-after-sales-reserve-warranty
+- Notes: Global Purchase warranty application is explicitly labelled our reading of the combined scope and warranty clauses. The 1.5% table is a fixed-fallback illustration, not a universal maximum or forecast. Special-category rates in section 2.2 remain 1% of sunscreen orders within 60 days and 6% of dietary-supplement orders within 15 days, each capped at RMB 100,000; those rows were compared with the June text. No client data.
+
+### Douyin explanation of the warranty-reserve change
+- Value: category-wide fixed rates replaced by rates linked to merchant refund-and-compensation performance; high-refund merchants hold more, low-refund merchants less; holdings reduce as warranty periods expire.
+- As of: October 15, 2026, 15:04:10.
+- Source: Douyin E-commerce (抖音电商), 关于修订《售后预留金实施细则》的公示通知.
+- URL: https://school.jinritemai.com/doudian/web/article/aJrPUuzZcDft
+- Verified 1: 2026-10-19, rendered capture a1.txt.
+- Verified 2: 2026-10-19, independent re-render c2.txt at iteration 8; continuation resume-notice.txt reconfirms date and comparison.
+- Used in: douyin-after-sales-reserve-warranty
+
+### June warranty-reserve consultation, historical comparison only
+- Value: June consultation text names domestic 小店 merchants for warranty freezing. Hair dryers are in the 0.1% tier with RMB 500 minimum and RMB 50,000 maximum; text refers to a July 2, 2026 revision. It is a consultation document, not proof of July enforcement.
+- As of: June 18, 2026, 22:16:15.
+- Source: Douyin E-commerce (抖音电商), 关于修订《售后预留金实施细则》的意见征集通知.
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aJmDKphJWTr9
+- Verified 1: 2026-10-19, rendered a4.txt.
+- Verified 2: 2026-10-19, independent re-render c3.txt at iteration 8. Continuation inspected the complete tier row and its date in both captures.
+- Used in: douyin-after-sales-reserve-warranty
+- Notes: Draft names it as the June draft throughout. Do not turn the historical consultation into an unqualified in-force July rate.
+
+### Re-verified Douyin Global Purchase payout reserve clause
+- Value: platform may freeze a refund reserve from already settled funds based on recent refunds, for after-sales refunds.
+- As of: January 5, 2026 revision, clause 3.1.
+- Source: Douyin E-commerce (抖音电商), 《【全球购】商家货款结算规范》.
+- URL: https://school.jinritemai.com/doudian/web/article/aHyMoi13Bhx5
+- Verified 1: 2026-10-19, rendered g1.txt; prior ledger checks September 24 retained.
+- Verified 2: 2026-10-19, independent re-render c4.txt at iteration 8; continuation resume-payout.txt confirms both the clause and revision date.
+- Used in: douyin-after-sales-reserve-warranty
+
+### 07S worked model and calculator comparison
+- Value: at assumed RMB 1 million monthly settled and unrefunded sales, 12-month warranty and fixed fallback 1.5%, uncapped reserve after 1/3/6/12 months is RMB 15,000/45,000/90,000/180,000. Apply store warranty cap 50,000 or 100,000. Lower cap binds in month 4, higher in month 7. Beauty and personal-care devices calculator fee is 4.5%, RMB 45,000 per month at that sales level.
+- As of: October 2026.
+- Source: TheChinaPath calculator data, src/pages/tools/douyin-cost-calculator.astro, beauty-device row; arithmetic on the formal rule above.
+- Verified 1: 2026-10-19, calculator category row read in original research.
+- Verified 2: 2026-10-19, category row re-read and arithmetic recomputed in continuation.
+- Used in: douyin-after-sales-reserve-warranty
+- Notes: illustrative sales, warranty and assigned rate, not observations from managed stores. Calculator comparison labelled as TheChinaPath data.
+
+### Douyin operating-service-provider formal rule, P19 correction
+- Value: formal October text sets brand-track quarterly shipped GMV at RMB 2 million for the luxury/cross-border industry and RMB 3 million for the other listed brand-track groupings or no main industry. Admission staffing is at least 20 overall and at least 12 in Douyin operations, office at least 100 square meters; guarantee RMB 100,000. The 500,000 cross-border threshold and forthcoming-revision wording in P19 are superseded.
+- As of: October 16, 2026, 09:56:26.
+- Source: Douyin E-commerce (抖音电商), 《抖音电商运营类服务商合作管理规则》.
+- URL: https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
+- Verified 1: 2026-10-19, original sweep a3.txt.
+- Verified 2: 2026-10-19, continuation independent browser render resume-provider.txt; date, industry grouping, 200万, 20人以上, 12人以上 and deposit present.
+- Used in: tmall-partner-douyin-partner-same-agency (EN, FR, DE, ES correction dated 2026-10-19).
+- Notes: formal publication date is stated; no inferred precise October 15 commencement date. P15 already uses inclusive staff minimums and contains no outdated sales threshold.
+
+### Toothpaste classification catalogue, future watch only
+- Value: effective May 1, 2027; toothpaste filed before then must have filing information updated before January 1, 2028. Goods made/imported before that update may sell until shelf-life expiry.
+- As of: NMPA announcement 2026 No. 100, issued October 14; official Shanghai MPA copy October 15, 2026.
+- Source: National Medical Products Administration (国家药监局), official republication by Shanghai Medical Products Administration.
+- URL: https://yjj.sh.gov.cn/qtgzwj/20261015/7251f7bc9dec430ab15c4bbc97ff9ce0.html
+- Verified 1: 2026-10-19, opened official copy, paragraph four and issue date confirmed.
+- Verified 2: 2026-10-19, reopened official copy, both deadlines and stock transition unchanged.
+- Used in: signal-watch-list.md only; not in 07S.

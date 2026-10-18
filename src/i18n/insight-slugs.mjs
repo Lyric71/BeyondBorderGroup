@@ -9,6 +9,8 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'douyin-affiliate-commission-brand': 'commission-des-createurs-douyin',
+  'douyin-after-sales-reserve-warranty': 'douyin-reserve-apres-vente-garanties',
   'cost-to-sell-baby-care-and-hygiene-products-in-china': 'ce-que-coute-vendre-des-soins-bebe-et-des-couches-en-chine',
   'china-distribution-contract-chinese-language-arbitration': 'contrat-de-distribution-en-chine-langue-sceaux-arbitrage',
   'double-11-last-minute-checklist': 'double-11-les-14-derniers-jours',
@@ -186,6 +188,8 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'douyin-affiliate-commission-brand': 'douyin-creator-provision-was-marken-zahlen',
+  'douyin-after-sales-reserve-warranty': 'douyin-ruecklage-fuer-garantiefaelle',
   'cost-to-sell-baby-care-and-hygiene-products-in-china': 'was-babypflege-und-windeln-verkaufen-in-china-kostet',
   'china-distribution-contract-chinese-language-arbitration': 'vertriebsvertrag-china-sprache-siegel-schiedsverfahren',
   'double-11-last-minute-checklist': 'double-11-checkliste-letzte-14-tage',
@@ -363,6 +367,8 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'douyin-affiliate-commission-brand': 'comision-de-afiliacion-douyin-lo-que-paga-una-marca',
+  'douyin-after-sales-reserve-warranty': 'douyin-reserva-de-posventa-garantias',
   'cost-to-sell-baby-care-and-hygiene-products-in-china': 'lo-que-cuesta-vender-cuidado-del-bebe-y-panales-en-china',
   'china-distribution-contract-chinese-language-arbitration': 'contrato-de-distribucion-en-china-idioma-sellos-arbitraje',
   'double-11-last-minute-checklist': 'double-11-los-ultimos-14-dias',

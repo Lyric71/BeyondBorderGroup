@@ -1,6 +1,6 @@
 # TheChinaPath — Insights (full text)
 
-> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-17.
+> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-18.
 
 ---
 # 11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event
@@ -8552,6 +8552,396 @@ the origin warehouse, and we will tell you which lines on this checklist you
 can still hit.
 
 [Talk to the cross-border ecommerce team](/grow-in-china/cross-border-ecommerce)
+
+---
+# Douyin affiliate commission: what a brand really pays creators
+URL: https://www.thechinapath.com/insights/douyin-affiliate-commission-brand
+Published: 2026-10-19
+Updated: 2026-10-19
+Author: TheChinaPath
+Category: KOLs & Livestream
+
+Douyin affiliate commission runs 5% to 80% of each kept sale, and big hosts add a slot fee that returns don't refund. How to price both per kept order.
+
+Douyin affiliate commission is what a brand pays a creator on each sale
+that sticks. The brand sets the rate: 5% to 50% for any creator, up to 80%
+for creators it picks. Bigger hosts also charge a slot fee for airtime, and
+returns don't touch it. Your Douyin Partner books both, so judge every
+creator on cost per kept order.
+
+Douyin is China's short-video app, and creators sell on it through live
+rooms and videos. The marketplace that matches them with products is
+Douyin's affiliate program, Jingxuan Lianmeng (精选联盟). Foreign brands
+selling cross-border through Douyin Global use the same program and the
+same rules.
+
+The agency that runs a brand's Douyin shop is called a Douyin Partner (DP).
+It usually finds the creators and haggles over their terms. The brand
+pays.
+
+That bill adds up fast. At the defaults in our Douyin calculator, RMB 2
+million of first-year sales with 80% of it moved by creators at 20%
+commission, creator commission comes to RMB 320,000, about US$45,000 at our
+planning rate of RMB 7.10 to the dollar. That's 16% of sales, or RMB 50 on
+every creator order (TheChinaPath calculator data, October 2026). Every
+third-party figure below was checked on October 18, 2026.
+
+Creator deals come in six shapes, and they put the risk in very different
+places.
+
+<div class="table-scroll">
+
+| Creator deal | Commission | Slot fee | What it buys | Source |
+|---|---|---|---|---|
+| Any creator, open offer | 5% to 50%, set by the brand | None | Sales only, paid after returns clear | Douyin affiliate rules, Oct. 2026 |
+| Creators the brand names | 5% to 80% | Optional, flat or tied to settled sales | A dated live slot and, if written in, a sales floor | Douyin affiliate and cooperation-order rules |
+| Creators placed by a group leader | Creator rate plus leader fee, up to 90% combined | None in the plan | Reach into the leader's creator network | Douyin affiliate rules, Oct. 2026 |
+| A product slot in a big host's session | Set per deal | RMB 40,000 a product in one court case, RMB 45,000 for 8 to 10 minutes in another | 8 to 10 minutes of airtime; sales only if guaranteed | Beijing courts, 2022 and 2024 |
+| Mid-tier host, dedicated session | Not reported alone; with slot fee and ads, 35% of sales or more | RMB 500,000 to 1 million | A whole session for the brand | Xinhua, Aug. 2024; Ebrun, Jul. 2025 |
+| Top host, dedicated session | 20% and up; 30% to 40% in beauty | RMB 1 million to 3 million | Reach, against a lowest-price promise in writing | Ebrun, Jul. 2025; Jiemian, Dec. 2024 |
+
+</div>
+
+## How Douyin grades creators
+
+The trade talks about head and mid-tier creators. Douyin keeps its own
+ladder, and it grades creators on sales that stayed sold.
+
+> Douyin sets creator levels L0 to L6 on the 8th of each month from the
+> previous month's settled sales, meaning paid sales minus refunds made
+> within seven days. L3 starts above RMB 300,000 a month, L5 above
+> RMB 3 million, L6 at RMB 10 million and up.
+> Source: Douyin E-commerce (抖音电商), creator level rules, revised March 2026. https://school.jinritemai.com/doudian/web/articlev0/aHRbnsP5fSGu
+
+Ask for the level of every creator your DP proposes. It's the platform's own
+read of how much a creator sells after refunds, and it's harder to dress up
+than a follower count.
+
+## Douyin affiliate commission: the rates a brand can set
+
+The brand sets the rate in its affiliate backend, product by product.
+Douyin sets the floor and the ceiling.
+
+> An open commission offer to all creators can run from 5% to 50% of the
+> order. An offer limited to named creators, tiered offers included, can run
+> from 5% to 80%. In a group-leader plan, the creator's rate and the leader's
+> service fee together can reach 90%.
+> Source: Douyin E-commerce (抖音电商), affiliate commission settlement rules, October 2026. https://school.jinritemai.com/doudian/web/articlev0/112620
+
+Group leaders, tuanzhang (团长) in the trade, are middlemen who take a brand's
+product and push it to the creators they work with. The leader's fee comes
+on top of the creator's commission, and the brand pays both. A DP that
+works through leaders should name each one and its fee in the monthly
+report.
+
+The creator also pays Douyin a cut (the platform calls it a technical
+service fee): 10% of the commission for creators rated A, B+ or B, 20% at C
+and 40% at D. That comes out of the creator's side, though a creator rated
+D keeps only 60% of the rate you set.
+
+Commission is paid on kept sales. Douyin settles it 15 days after the buyer
+confirms receipt, and a refund inside the after-sale window cancels it. The
+base leaves out shipping, and on a cross-border order import tax as well.
+
+So a returned order costs the brand no commission. It still costs the
+slot fee.
+
+## Slot fees: what the money buys
+
+A slot fee, kengweifei (坑位费) in Chinese, pays for a product's place in a
+host's live session. It's priced on the host's pull, before a single unit
+sells.
+
+> A brand told Xinhua that in its past deals, a dedicated session with a top
+> host cost about RMB 1 million to 3 million, and one with a mid-tier host
+> RMB 500,000 to 1 million.
+> Source: Xinhua (新华网), August 4, 2024. https://www.news.cn/fortune/20240804/ec11b5b85b514e8b9332998d0b23b020/c.html
+
+That's about US$141,000 to US$423,000 for a top host's night. Commission
+comes on top, and the biggest names in Chinese live commerce set it
+high.
+
+> Industry insiders told China Entrepreneur that top hosts take 30% to 40%
+> commission from beauty brands, less from international majors and more
+> than 40% from some smaller domestic brands, with a slot fee charged
+> separately.
+> Source: Jiemian (界面新闻), carrying China Entrepreneur (中国企业家), December 24, 2024. https://www.jiemian.com/article/12159813.html
+
+Mid-tier hosts charge smaller slot fees. Ebrun found the all-in bill runs
+high anyway.
+
+> Working with mid-tier creators and above, merchants should expect slot
+> fees, commission and ad budget to come to at least 35% of the sales those
+> creators make, and some merchants reported more than 50%. One merchant
+> said big hosts rarely take less than 20% commission and ask for the lowest
+> price in writing.
+> Source: Ebrun (亿邦动力), carried by Huxiu (虎嗅), July 16, 2025. https://m.huxiu.com/article/4584498.html
+
+Douyin has its own rule for slot fees. A creator who charges one must
+collect it through the platform.
+
+> A creator who charges a service fee, the slot fee, for a livestream must
+> collect it through the affiliate program's cooperation-order tool. The fee
+> can be pro rata: with RMB 500,000 of agreed settled sales and a RMB 10,000
+> fee, a creator who settles RMB 100,000 gets RMB 2,000. Or it can be flat:
+> paid in full if the creator goes live, refunded if not, whatever sells.
+> Source: Douyin E-commerce (抖音电商), affiliate cooperation-order rules, revised September 2022. https://school.jinritemai.com/doudian/web/articlev0/aHQ7HZ64PRXs
+
+The pro-rata version turns a slot fee into something close to a commission
+on settled sales. Ask for it. A flat fee is a bet on the host.
+
+When a slot-fee deal goes wrong, the contract is all a brand has. Two
+Beijing court cases show what the money bought. Neither report names the
+platform.
+
+> In a Beijing case, a brand paid RMB 40,000 a product for five products,
+> RMB 200,000 in slot fees, against a written guarantee of RMB 50,000 in
+> sales per product. The session sold less than RMB 4,000. The court
+> ordered RMB 160,000 refunded, trimmed because the brand's script was late
+> and thin.
+> Source: Beijing Political-Legal Net (北京政法网), November 14, 2022. https://www.bj148.org/sa1/yasf1/202211/t20221114_1641568.html
+
+> In another Beijing case, a brand paid a RMB 45,000 slot fee and a
+> RMB 15,000 deposit for 8 to 10 minutes on air, under a contract that
+> excused the agency from any sales shortfall. The session ran short and
+> without a co-host. The court set damages at RMB 9,000. The brand had
+> asked for the whole fee back.
+> Source: Beijing News (新京报), February 27, 2024. https://m.bjnews.com.cn/detail/1709017633168842.html
+
+In the first case the sales guarantee was written into the contract. In
+the second, the contract had waived it.
+
+## Cost per kept order: the number to ask for
+
+A slot fee needs volume before it pays its way, and returns eat the volume.
+
+Take our calculator's defaults again: a RMB 250 order and 20% commission,
+so RMB 50 a kept order. Add the RMB 45,000 slot fee from the second Beijing
+case.
+
+<div class="table-scroll">
+
+| Kept orders from the session | Slot fee per kept order, RMB | Commission per kept order, RMB | Total per kept order, RMB | Share of a RMB 250 order |
+|---|---|---|---|---|
+| 300 | 150.00 | 50.00 | 200.00 | 80% |
+| 600 | 75.00 | 50.00 | 125.00 | 50% |
+| 900 | 50.00 | 50.00 | 100.00 | 40% |
+| 2,000 | 22.50 | 50.00 | 72.50 | 29% |
+
+</div>
+
+TheChinaPath calculator data, October 2026 (RMB 250 order, 20% commission),
+with the RMB 45,000 fee from the Beijing case. The session volumes are
+illustrations.
+
+At 900 kept orders the slot fee costs as much as the commission itself.
+That's RMB 225,000 of sales that have to survive the return window. Below
+that, the fee costs more per kept order than the commission does.
+
+Returns move the line. A session that places 1,000 orders and loses 30% of
+them keeps 700, at about RMB 114 each.
+
+Our piece on [Douyin return rates by
+category](/insights/douyin-return-rate) shows where your category is likely
+to sit.
+
+## What to ask your Douyin Partner
+
+A DP books creators on your money, so set the terms before the first booking.
+
+- **Book every slot fee on Douyin.** The cooperation order puts the fee
+  and the live date on the platform record, along with any sales floor. A
+  private invoice from the DP or a talent agency leaves no such record.
+- **Prefer pro-rata fees.** Tie the fee to settled sales, with Douyin's own
+  formula, and keep flat fees for hosts you'd pay for reach alone.
+- **Get a monthly creator report.** One row per creator: level, commission
+  rate, slot fee, group-leader fee, orders placed, orders kept and cost per
+  kept order.
+- **Name the group leaders.** Every leader and every fee, in writing.
+
+Our guide to [finding a Douyin
+Partner](/compass/find-a-douyin-partner-in-china) covers the checks to run
+before you sign, and [Compass](/compass) holds the DPs we have watched book
+creators in our categories.
+
+Before any of that, run your own numbers. The [Douyin cost
+calculator](/tools/douyin-cost-calculator) shows what your creator share and
+commission rate do to the year. Our [social
+commerce](/grow-in-china/social-commerce) page lists the rest of the work a
+Douyin channel needs.
+
+Paying creators per post to build awareness, rather than per sale, is a
+separate budget. [TheRedScroll, the group's China social media
+agency](https://www.theredscroll.com), handles that side.
+
+## Frequently asked questions
+
+### What commission do Douyin creators charge?
+
+The brand sets it. Douyin allows 5% to 50% on an offer open to every
+creator and 5% to 80% for creators the brand names. Top hosts expect 20% or
+more, one merchant says, and 30% to 40% in beauty according to industry
+insiders, plus a slot fee. Commission is cancelled on orders refunded in
+the after-sale period.
+
+### Is a slot fee refunded if the session doesn't sell?
+
+Only if the deal says so. Under Douyin's cooperation-order tool, a flat fee
+comes back only if the creator never goes live, and a pro-rata fee shrinks
+with settled sales. Off the platform it's down to the contract: a Beijing
+court ordered RMB 160,000 of a RMB 200,000 fee paid back because sales were
+guaranteed in writing.
+
+### Who pays the group leader?
+
+The brand. In a group-leader plan the brand sets both the creator's
+commission and the leader's service fee, and Douyin caps the two together
+at 90% of the order. The leader pays Douyin 10% of its fee. Ask your DP to
+name every leader it uses and the fee each one takes.
+
+### Is a pure-commission creator always cheaper?
+
+At the same rate, yes, per kept order. A pure-commission creator costs the
+rate you set, RMB 50 on a RMB 250 order at 20%, and nothing on returns. A
+slot-fee host costs that plus the fee spread over its kept orders. With a
+RMB 45,000 fee, a kept order costs at least double the commission until the
+session keeps 900 orders. Big hosts can still earn the fee as reach on a
+launch.
+
+[Get a Compass shortlist of Douyin Partners that sell in your category](/contact#shortlist)
+
+---
+# Douyin’s after-sales reserve now follows your refund rate
+URL: https://www.thechinapath.com/insights/douyin-after-sales-reserve-warranty
+Published: 2026-10-19
+Updated: 2026-10-19
+Author: TheChinaPath
+Category: E-Commerce
+
+Douyin's warranty reserve now follows store refunds. Check the fixed-rate fallback and warranty caps of RMB 50,000 or 100,000 for your cash plan.
+
+Since October 15, Douyin’s after-sales reserve prices warranty orders by
+each store’s refund record. Our reading of the revised scope includes
+Global Purchase stores. Without enough data, Douyin uses a category average
+or a fixed rate capped at 1.5%. The warranty reserve holds up to RMB 50,000
+or RMB 100,000 per store.
+
+Douyin Global Purchase (抖音全球购) is the cross-border store a foreign brand
+opens on Douyin from an overseas company. The after-sales reserve
+(售后预留金) is money Douyin freezes out of a store’s settled payouts to
+cover refunds and repairs it may owe buyers later. We read the revised
+rule on October 19.
+
+> Douyin’s revised after-sales reserve rule applies to domestic stores and
+> to Douyin Global Purchase stores. It was revised and took effect on
+> October 15, 2026.
+> Source: Douyin E-commerce (抖音电商), October 2026. https://school.jinritemai.com/doudian/web/article/aJSwoqTMykft
+
+## What Douyin’s after-sales reserve holds back
+
+The change is in the warranty section. It covers goods in Douyin’s
+three-guarantee categories (三包: repair, replacement, or refund), and
+warranties a store promises on a product page or in a livestream.
+
+> The warranty reserve covers settled, unrefunded orders still inside their
+> 三包 period or the warranty the merchant promised. Douyin sets the rate by
+> the store’s refund-and-compensation rate in each 三包 category and
+> releases the money as warranties expire. A store without enough refund
+> data is held at the category average or a fixed rate of no more than
+> 1.5%. Floors are RMB 200, 500, or 1,000 per leaf category, by risk
+> tier, and the cap is RMB 50,000 or 100,000 per store.
+> Source: Douyin E-commerce (抖音电商), October 2026. https://school.jinritemai.com/doudian/web/article/aJSwoqTMykft
+
+> Douyin’s June 2026 draft froze warranty orders at fixed rates by category
+> for domestic stores, such as 0.1% on hair dryers, within a band of RMB 500
+> to 50,000.
+> Source: Douyin E-commerce (抖音电商), June 2026. https://school.jinritemai.com/doudian/web/articlev0/aJmDKphJWTr9
+
+The October text drops that wording, and its scope line names Global
+Purchase stores. Read together, a Global Purchase store that promises a
+one-year warranty now falls under the warranty reserve (that’s our reading
+of the text; the store’s back end shows what Douyin actually holds).
+
+Take a foreign hair-care appliance brand on Douyin Global Purchase. Assume
+RMB 1 million in settled, unrefunded sales each month and a 12-month
+warranty. For this illustration, Douyin uses the fixed fallback at 1.5%.
+The category-average alternative could differ; check the assigned rate.
+
+Each month of sales stays in the pool for a year. The reserve grows until it
+hits the cap.
+
+<div class="table-scroll">
+
+| Months of sales under warranty | Order value under warranty (RMB) | Reserve at 1.5% (RMB) | Held if the cap is 50,000 (RMB) | Held if the cap is 100,000 (RMB) |
+|---|---|---|---|---|
+| 1 | 1,000,000 | 15,000 | 15,000 | 15,000 |
+| 3 | 3,000,000 | 45,000 | 45,000 | 45,000 |
+| 6 | 6,000,000 | 90,000 | 50,000 | 90,000 |
+| 12 | 12,000,000 | 180,000 | 50,000 | 100,000 |
+
+</div>
+
+The table is our arithmetic on that fixed rate and the warranty caps.
+Once the store has a refund record, its own refund rate sets the rate
+instead. The rule prints no ceiling for that rate, only the cap, and it
+applies different rates to different stretches of the warranty.
+
+For scale, our Douyin calculator puts the technical service fee for beauty
+and personal-care devices at 4.5%, or RMB 45,000 a month at that sales
+level (TheChinaPath calculator data, October 2026). A full RMB 100,000 hold
+is more than two months of those fees.
+
+> Stores with high refund rates will hold more and stores with low refund
+> rates less, and stable stores with few refunds will see their holds fall.
+> Source: Douyin E-commerce (抖音电商), October 2026. https://school.jinritemai.com/doudian/web/article/aJrPUuzZcDft
+
+The special-category reserve for Global Purchase stores did not move.
+
+> Douyin Global Purchase stores keep a separate reserve of 1% on sunscreen
+> orders within 60 days of receipt and 6% on dietary supplements within 15
+> days, each capped at RMB 100,000.
+> Source: Douyin E-commerce (抖音电商), October 2026. https://school.jinritemai.com/doudian/web/article/aJSwoqTMykft
+
+## Which budget line moves
+
+Working capital.
+
+Douyin freezes the reserve from settled funds, reducing the cash available
+to withdraw. Warranties expiring reduce the hold, while new covered orders
+can replenish it. Money used to meet refunds is no longer available for
+release to the store.
+
+> Douyin Global Purchase payout rules let the platform freeze a refund
+> reserve out of settled payouts, based on the store’s recent refunds.
+> Source: Douyin E-commerce (抖音电商), January 2026. https://school.jinritemai.com/doudian/web/article/aHyMoi13Bhx5
+
+> When a store meets two or more reserve rules, Douyin freezes the higher
+> amount or adds them together.
+> Source: Douyin E-commerce (抖音电商), October 2026. https://school.jinritemai.com/doudian/web/article/aJSwoqTMykft
+
+Track the frozen balance separately from fees and actual refunds.
+
+## What to do, and by when
+
+During the week of October 19, open 账户中心 > 售后预留金 > 预留规则
+(account center, after-sales reserve, reserve rules) and check whether a
+warranty line shows.
+
+Before the next Double 11 session, read the product pages and livestream
+script for warranty promises. A two-year promise brings the orders it
+covers into the warranty pool for that period. In the fixed-rate example,
+the lower cap binds in the fourth month and the higher one in the seventh.
+
+From this month, track the store’s refund-and-compensation rate in each
+warranty category as its own line. It now sets the reserve rate. If a
+Douyin Partner runs the store, ask for the reserve balance on the monthly
+statement, next to the payout.
+
+Our [Douyin cost calculator](/tools/douyin-cost-calculator) prices a Douyin
+Global Purchase store’s fees. The reserve isn’t among them, so add it to the
+cash plan by hand.
+
+[Talk to us about running your Douyin store](/grow-in-china/social-commerce)
 
 ---
 # Douyin agency cost: retainer, commission, creators
@@ -18628,7 +19018,7 @@ Protection Law, the TP must return or delete it.
 # Can the same agency be your Tmall Partner and Douyin Partner?
 URL: https://www.thechinapath.com/insights/tmall-partner-douyin-partner-same-agency
 Published: 2026-10-11
-Updated: 2026-10-11
+Updated: 2026-10-19
 Author: TheChinaPath
 Category: E-Commerce
 
@@ -18641,6 +19031,9 @@ side on its own evidence: the people who would run your live room and the
 stores they already sell for.
 
 *Douyin's rules and the pricing regulation checked October 11, 2026.*
+
+*Updated October 19, 2026: the formal Douyin agency rule now carries the
+RMB 2 million quarterly threshold for the luxury/cross-border industry.*
 
 Your Tmall Partner (TP), the agency that runs your store on Tmall Global,
 Alibaba's cross-border marketplace, says it can run Douyin for you too. A Douyin Partner (DP) does
@@ -18675,21 +19068,16 @@ Douyin makes room for those operators. Its program for operating agencies
 works by invitation, and a Tmall five-star operator rating counts as
 supporting proof in the application. Then the bar goes up.
 
-> Douyin's operating agencies need more than 20 staff, more than 12 of them
+> Douyin's operating agencies need at least 20 staff, at least 12 of them
 > on a Douyin e-commerce team, an office of at least 100 square meters and
-> a 100,000 RMB deposit. An agency serving mainly cross-border stores must
-> ship at least 500,000 RMB a quarter through the stores it is bound to.
+> a 100,000 RMB deposit. In the brand track, agencies classified under
+> luxury/cross-border must ship at least 2 million RMB a quarter through
+> their linked stores.
 > Source: Douyin E-commerce (抖音电商), operating service provider rules,
-> July 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
+> October 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
 
-That quarterly bar is about to quadruple.
-
-> A revision posted October 7, 2026, and due in force October 15 puts
-> agencies whose main business is luxury or cross-border at 2 million RMB
-> of shipped sales a quarter. Team size and the deposit stay the same.
-> Source: Douyin E-commerce (抖音电商), notice revising the operating
-> service provider rules, October 2026.
-> https://school.jinritemai.com/doudian/web/article/aJr9FiM4w6mc
+The formal version posted October 16 contains that threshold. Ask which
+industry Douyin assigns to the agency before comparing its results.
 
 A Tmall rating won't tell you much about any of this. Tmall Global scores
 its partners mostly on store size.
@@ -18712,7 +19100,7 @@ Content is 3% of a Tmall star. On Douyin, it's most of the job.
 | Pricing between channels | One team sets both price ladders; it can also tilt sales toward the better-paid channel | Each agency discounts its own channel to hit its own target | A written price floor per channel, per product |
 | Cost (model defaults) | Room to negotiate below the 65,000 RMB a month that two retainers cost | 65,000 RMB a month in retainers, 1.23 million RMB a year with commission | Which commission rate applies to Douyin sales (10% vs 5% is 100,000 RMB at 2 million RMB) |
 | Accountability | One phone number when sales dip, and one agency to blame both stores on | Clear blame per store; arguments over who caused a dip | Separate KPIs and a separate exit right for each store |
-| Douyin capability | Depends on whether a live-room team already exists | A DP that works only on Douyin | More than 12 named Douyin staff and live rooms you can watch |
+| Douyin capability | Depends on whether a live-room team already exists | A DP that works only on Douyin | At least 12 named Douyin staff and live rooms you can watch |
 
 </div>
 
@@ -18845,10 +19233,10 @@ RMB of Douyin sales costs 100,000 RMB more.
 **Can a Tmall Partner become an approved Douyin agency?**
 
 Yes, by Douyin's invitation. A Tmall five-star operator rating counts as
-supporting proof. The agency still needs more than 12 people on a Douyin
+supporting proof. The agency still needs at least 12 people on a Douyin
 team and a 100,000 RMB deposit. After admission comes a quarterly sales
-bar, which a revision due October 15, 2026, sets at 2 million RMB for
-agencies serving mainly cross-border stores.
+bar. The formal October rule sets it at 2 million RMB for brand-track
+agencies classified under luxury/cross-border.
 
 **Does Douyin require my Tmall price to match?**
 

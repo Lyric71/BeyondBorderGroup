@@ -3,14 +3,14 @@ title: "Tmall und Douyin aus einer Hand: Taugt eine Agentur für beide Shops?"
 seoTitle: "Eine Agentur für Tmall und Douyin: Geht das?"
 description: "Eine Agentur kann Tmall- und Douyin-Shop führen, wenn ihr Livestream-Team auf Douyin Erfolge vorweist. Was Sie prüfen und vertraglich regeln sollten."
 pubDate: "2026-10-11"
-updatedDate: "2026-10-11"
+updatedDate: "2026-10-19"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "Douyin"]
 tags: ["Partnersuche", "Tmall Partners", "Douyin Partners"]
 keyTakeaways:
   - "Eine Agentur kann Ihren Tmall-Global-Shop und Ihren Douyin-Shop zugleich führen, sofern sie ein eigenständiges Livestream-Team mit nachweisbaren Douyin-Erfolgen in Ihrer Kategorie unterhält."
-  - "Douyin lässt Betreiberagenturen nur auf Einladung zu, verlangt mehr als 12 Beschäftigte im Douyin-Team und misst jede Agentur anschließend an einer vierteljährlichen Umsatzschwelle."
+  - "Douyin lässt Betreiberagenturen nur auf Einladung zu, verlangt mindestens 12 Beschäftigte im Douyin-Team und misst jede Agentur anschließend an einer vierteljährlichen Umsatzschwelle."
   - "Über Livestream-Kompetenz sagt ein Tmall-Rating wenig: In der Partnerliste von Tmall Global zählen Inhalte und Innovation nur 3 % der Bewertung."
   - "Seit dem 10. April 2026 darf keine chinesische Plattform Sie zwingen, dort höchstens so viel zu verlangen wie auf anderen Kanälen. Den Preisabstand zwischen Ihren Shops bestimmen Sie."
   - "Mit den Standardwerten unserer Rechner kosten ein Tmall Partner und ein Douyin Partner zusammen 1,23 Millionen Yuan im Jahr, 780.000 Yuan davon als Grundhonorar."
@@ -27,6 +27,10 @@ Livestream bestreiten, und für welche Shops verkaufen diese Leute schon
 heute?
 
 *Douyins Regeln und die Preisvorschrift geprüft am 11. Oktober 2026.*
+
+*Aktualisiert am 19. Oktober 2026: Douyins endgültige Agenturregel enthält
+nun die Quartalsschwelle von 2 Millionen Yuan für die Branche Luxus und
+grenzüberschreitender Handel.*
 
 Ihr Tmall Partner (TP) betreibt Ihren Shop auf Tmall Global, Alibabas
 grenzüberschreitendem Marktplatz. Nun will er auch Douyin übernehmen.
@@ -65,20 +69,17 @@ Betreiberagenturen läuft auf Einladung, ein Fünf-Sterne-Betreiberrating von
 Tmall gilt im Antrag als ergänzender Nachweis. Danach liegt die Latte
 höher.
 
-> Betreiberagenturen auf Douyin brauchen mehr als 20 Beschäftigte, davon
-> mehr als 12 in einem eigenen Douyin-E-Commerce-Team, ein Büro von
-> mindestens 100 Quadratmetern und eine Kaution von 100.000 Yuan. Wer
-> überwiegend grenzüberschreitende Shops betreut, muss über die an ihn
-> gebundenen Shops mindestens 500.000 Yuan Umsatz pro Quartal ausliefern.
-> Quelle: Douyin E-Commerce (抖音电商), Regeln für Betreiber-Dienstleister, Juli 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
+> Betreiberagenturen auf Douyin brauchen mindestens 20 Beschäftigte, davon
+> mindestens 12 in einem eigenen Douyin-E-Commerce-Team, ein Büro von
+> mindestens 100 Quadratmetern und eine Kaution von 100.000 Yuan. Im
+> Markenbereich müssen Agenturen der Branche Luxus und grenzüberschreitender
+> Handel über ihre angebundenen Shops Waren im Wert von mindestens
+> 2 Millionen Yuan pro Quartal versenden.
+> Quelle: Douyin E-Commerce (抖音电商), Regeln für Betreiber-Dienstleister, Oktober 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
 
-Und diese Quartalsschwelle wird sich demnächst vervierfachen.
-
-> Eine am 7. Oktober 2026 veröffentlichte Neufassung, die am 15. Oktober in
-> Kraft treten soll, hebt die Schwelle für Agenturen mit Schwerpunkt Luxus
-> oder Cross-Border auf 2 Millionen Yuan ausgelieferten Umsatz pro Quartal.
-> Teamgröße und Kaution bleiben unverändert.
-> Quelle: Douyin E-Commerce (抖音电商), Mitteilung zur Neufassung der Regeln für Betreiber-Dienstleister, Oktober 2026. https://school.jinritemai.com/doudian/web/article/aJr9FiM4w6mc
+Diese Schwelle steht in der am 16. Oktober veröffentlichten endgültigen
+Fassung. Prüfen Sie, welcher Branche Douyin die Agentur zuordnet, bevor
+Sie deren Ergebnisse vergleichen.
 
 Über all das sagt ein Tmall-Rating wenig. Tmall Global bewertet seine
 Partner in erster Linie nach der Größe ihrer Shops.
@@ -101,7 +102,7 @@ Kern der Arbeit aus.
 | Preise zwischen den Kanälen | Ein Team legt beide Preisleitern fest und kann den Absatz auch in den Kanal lenken, der ihm mehr einbringt | Jede Agentur senkt die Preise im eigenen Kanal, um ihr Ziel zu schaffen | Eine schriftlich fixierte Preisuntergrenze je Kanal und Produkt |
 | Kosten (Standardwerte des Modells) | Spielraum, die 65.000 Yuan Monatskosten zweier Grundhonorare zu unterbieten | 65.000 Yuan Grundhonorar im Monat, mit Provision 1,23 Millionen Yuan im Jahr | Welcher Provisionssatz für Douyin-Umsätze gilt (10 % statt 5 % machen bei 2 Millionen Yuan 100.000 Yuan aus) |
 | Verantwortung | Eine Telefonnummer, wenn der Umsatz nachgibt, und eine Agentur, der Sie beide Shops anlasten können | Klare Zuständigkeit je Shop; Streit darüber, wer den Einbruch verursacht hat | Getrennte KPI und ein eigenes Kündigungsrecht für jeden Shop |
-| Douyin-Kompetenz | Steht und fällt mit einem bereits bestehenden Livestream-Team | Ein DP, der ausschließlich auf Douyin arbeitet | Mehr als 12 namentlich benannte Douyin-Mitarbeiter und Livestreams, die Sie sich ansehen können |
+| Douyin-Kompetenz | Steht und fällt mit einem bereits bestehenden Livestream-Team | Ein DP, der ausschließlich auf Douyin arbeitet | Mindestens 12 namentlich benannte Douyin-Mitarbeiter und Livestreams, die Sie sich ansehen können |
 
 </div>
 
@@ -239,11 +240,11 @@ ihren Tmall-Satz auf beide Shops an, kosten 2 Millionen Yuan Douyin-Umsatz
 **Kann ein Tmall Partner zur zugelassenen Douyin-Agentur werden?**
 
 Ja, auf Einladung von Douyin. Ein Fünf-Sterne-Betreiberrating von Tmall
-gilt als ergänzender Nachweis. Trotzdem braucht die Agentur mehr als 12
+gilt als ergänzender Nachweis. Trotzdem braucht die Agentur mindestens 12
 Leute in einem Douyin-Team und eine Kaution von 100.000 Yuan. Nach der
-Aufnahme greift eine vierteljährliche Umsatzschwelle; eine Neufassung, die
-zum 15. Oktober 2026 in Kraft treten soll, setzt sie für Agenturen mit
-überwiegend grenzüberschreitenden Shops auf 2 Millionen Yuan.
+Aufnahme greift eine vierteljährliche Umsatzschwelle. Nach der endgültigen
+Oktoberfassung beträgt sie im Markenbereich für die Branche Luxus und
+grenzüberschreitender Handel 2 Millionen Yuan an versandten Waren.
 
 **Verlangt Douyin, dass mein Preis zum Tmall-Preis passt?**
 

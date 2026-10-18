@@ -3,14 +3,14 @@ title: "Can the same agency be your Tmall Partner and Douyin Partner?"
 seoTitle: "Can one agency be your Tmall and Douyin Partner?"
 description: "One agency can run your Tmall store and Douyin shop if its live-room team has its own Douyin results. How to check that team and write the contract."
 pubDate: "2026-10-11"
-updatedDate: "2026-10-11"
+updatedDate: "2026-10-19"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "Douyin"]
 tags: ["Finding a partner", "Tmall Partners", "Douyin Partners"]
 keyTakeaways:
   - "One agency can run your Tmall Global store and your Douyin shop when it has a separate live-room team with its own Douyin results in your category."
-  - "Douyin admits operating agencies by invitation, wants more than 12 people on a Douyin team and then holds each agency to a quarterly sales bar."
+  - "Douyin admits operating agencies by invitation, wants at least 12 people on a Douyin team and then holds each agency to a quarterly sales bar."
   - "A Tmall rating says little about live rooms: Tmall Global's partner list gives content and innovation 3% of the score."
   - "Since April 10, 2026, no Chinese platform may force you to keep its prices at or below your other channels, so the gap between your stores is yours to set."
   - "On our calculators' default settings, a Tmall Partner and a Douyin Partner cost 1.23 million RMB a year, 780,000 RMB of it in retainers."
@@ -25,6 +25,9 @@ side on its own evidence: the people who would run your live room and the
 stores they already sell for.
 
 *Douyin's rules and the pricing regulation checked October 11, 2026.*
+
+*Updated October 19, 2026: the formal Douyin agency rule now carries the
+RMB 2 million quarterly threshold for the luxury/cross-border industry.*
 
 Your Tmall Partner (TP), the agency that runs your store on Tmall Global,
 Alibaba's cross-border marketplace, says it can run Douyin for you too. A Douyin Partner (DP) does
@@ -59,21 +62,16 @@ Douyin makes room for those operators. Its program for operating agencies
 works by invitation, and a Tmall five-star operator rating counts as
 supporting proof in the application. Then the bar goes up.
 
-> Douyin's operating agencies need more than 20 staff, more than 12 of them
+> Douyin's operating agencies need at least 20 staff, at least 12 of them
 > on a Douyin e-commerce team, an office of at least 100 square meters and
-> a 100,000 RMB deposit. An agency serving mainly cross-border stores must
-> ship at least 500,000 RMB a quarter through the stores it is bound to.
+> a 100,000 RMB deposit. In the brand track, agencies classified under
+> luxury/cross-border must ship at least 2 million RMB a quarter through
+> their linked stores.
 > Source: Douyin E-commerce (抖音电商), operating service provider rules,
-> July 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
+> October 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
 
-That quarterly bar is about to quadruple.
-
-> A revision posted October 7, 2026, and due in force October 15 puts
-> agencies whose main business is luxury or cross-border at 2 million RMB
-> of shipped sales a quarter. Team size and the deposit stay the same.
-> Source: Douyin E-commerce (抖音电商), notice revising the operating
-> service provider rules, October 2026.
-> https://school.jinritemai.com/doudian/web/article/aJr9FiM4w6mc
+The formal version posted October 16 contains that threshold. Ask which
+industry Douyin assigns to the agency before comparing its results.
 
 A Tmall rating won't tell you much about any of this. Tmall Global scores
 its partners mostly on store size.
@@ -96,7 +94,7 @@ Content is 3% of a Tmall star. On Douyin, it's most of the job.
 | Pricing between channels | One team sets both price ladders; it can also tilt sales toward the better-paid channel | Each agency discounts its own channel to hit its own target | A written price floor per channel, per product |
 | Cost (model defaults) | Room to negotiate below the 65,000 RMB a month that two retainers cost | 65,000 RMB a month in retainers, 1.23 million RMB a year with commission | Which commission rate applies to Douyin sales (10% vs 5% is 100,000 RMB at 2 million RMB) |
 | Accountability | One phone number when sales dip, and one agency to blame both stores on | Clear blame per store; arguments over who caused a dip | Separate KPIs and a separate exit right for each store |
-| Douyin capability | Depends on whether a live-room team already exists | A DP that works only on Douyin | More than 12 named Douyin staff and live rooms you can watch |
+| Douyin capability | Depends on whether a live-room team already exists | A DP that works only on Douyin | At least 12 named Douyin staff and live rooms you can watch |
 
 </div>
 
@@ -229,10 +227,10 @@ RMB of Douyin sales costs 100,000 RMB more.
 **Can a Tmall Partner become an approved Douyin agency?**
 
 Yes, by Douyin's invitation. A Tmall five-star operator rating counts as
-supporting proof. The agency still needs more than 12 people on a Douyin
+supporting proof. The agency still needs at least 12 people on a Douyin
 team and a 100,000 RMB deposit. After admission comes a quarterly sales
-bar, which a revision due October 15, 2026, sets at 2 million RMB for
-agencies serving mainly cross-border stores.
+bar. The formal October rule sets it at 2 million RMB for brand-track
+agencies classified under luxury/cross-border.
 
 **Does Douyin require my Tmall price to match?**
 

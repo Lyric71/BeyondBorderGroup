@@ -2,14 +2,14 @@
 title: "¿Una sola agencia para Tmall y Douyin? Cuándo tiene sentido"
 description: "Una agencia puede llevar sus tiendas en Tmall y Douyin si su equipo de directos ya vende en Douyin. Qué comprobar y qué incluir en el contrato."
 pubDate: "2026-10-11"
-updatedDate: "2026-10-11"
+updatedDate: "2026-10-19"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "Douyin"]
 tags: ["Encontrar socio", "Tmall Partners", "Douyin Partners"]
 keyTakeaways:
   - "Una misma agencia puede llevar su tienda en Tmall Global y su tienda en Douyin si dispone de un equipo de directos propio, con resultados demostrables en Douyin dentro de su categoría."
-  - "Douyin admite a las agencias operadoras por invitación, les exige más de 12 personas en el equipo de Douyin y después las somete a un umbral trimestral de ventas."
+  - "Douyin admite a las agencias operadoras por invitación, les exige al menos 12 personas en el equipo de Douyin y después las somete a un umbral trimestral de ventas."
   - "Una calificación de Tmall apenas informa sobre los directos: en la lista de partners de Tmall Global, el contenido y la innovación pesan un 3 % de la nota."
   - "Desde el 10 de abril de 2026, ninguna plataforma china puede obligarle a vender en ella al mismo precio o más barato que en otros canales: la diferencia entre sus tiendas la decide usted."
   - "Con los valores por defecto de nuestras calculadoras, un Tmall Partner y un Douyin Partner cuestan juntos 1,23 millones de yuanes al año, 780.000 de ellos en cuotas fijas."
@@ -25,6 +25,10 @@ la parte de Douyin hay que juzgarla por sus propios méritos: quién
 conduciría su directo y para qué tiendas vende ya ese equipo.
 
 *Normas de Douyin y regulación de precios comprobadas el 11 de octubre de 2026.*
+
+*Actualizado el 19 de octubre de 2026: la norma definitiva de Douyin fija
+en 2 millones de yuanes el umbral trimestral de las agencias de la categoría
+de lujo y comercio transfronterizo.*
 
 Su Tmall Partner (TP), la agencia que gestiona su tienda en Tmall Global,
 el canal de comercio transfronterizo de Alibaba, se ofrece a encargarse
@@ -63,21 +67,17 @@ operadoras funciona por invitación, y la calificación de operador de cinco
 estrellas de Tmall se admite como prueba complementaria en la solicitud.
 A partir de ahí, el listón sube.
 
-> Las agencias operadoras de Douyin deben contar con más de 20 empleados, de
-> ellos más de 12 en un equipo de comercio electrónico dedicado a Douyin,
+> Las agencias operadoras de Douyin deben contar con al menos 20 empleados, de
+> ellos al menos 12 en un equipo de comercio electrónico dedicado a Douyin,
 > una oficina de al menos 100 metros cuadrados y un depósito de 100.000
-> yuanes. La agencia que atiende principalmente tiendas transfronterizas
-> tiene que despachar al menos 500.000 yuanes por trimestre a través de las
-> tiendas vinculadas a ella.
-> Fuente: Douyin E-commerce (抖音电商), normas de proveedores de servicios de operación, julio de 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
+> yuanes. En la modalidad de servicios a marcas, las agencias de la categoría
+> de lujo y comercio transfronterizo deben alcanzar al menos 2 millones
+> de yuanes de ventas despachadas por trimestre en sus tiendas vinculadas.
+> Fuente: Douyin E-commerce (抖音电商), normas de proveedores de servicios de operación, octubre de 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
 
-Y ese umbral trimestral está a punto de cuadruplicarse.
-
-> Una revisión publicada el 7 de octubre de 2026, que debe entrar en vigor
-> el 15 de octubre, eleva a 2 millones de yuanes de ventas despachadas por
-> trimestre el umbral de las agencias dedicadas principalmente al lujo o al
-> comercio transfronterizo. El tamaño del equipo y el depósito no varían.
-> Fuente: Douyin E-commerce (抖音电商), aviso de revisión de las normas de proveedores de servicios de operación, octubre de 2026. https://school.jinritemai.com/doudian/web/article/aJr9FiM4w6mc
+El umbral consta en la versión definitiva publicada el 16 de octubre.
+Compruebe qué categoría asigna Douyin a la agencia antes de comparar
+sus resultados.
 
 De todo esto, una calificación de Tmall dice poco. Tmall Global puntúa a
 sus partners, ante todo, por el tamaño de sus tiendas.
@@ -100,7 +100,7 @@ el trabajo.
 | Precios entre canales | Un mismo equipo fija las dos escalas de precios, y puede desviar ventas hacia el canal que mejor le paga | Cada agencia rebaja precios en su canal para cumplir su objetivo | Un precio mínimo por escrito, por canal y por producto |
 | Coste (valores por defecto del modelo) | Margen para negociar por debajo de los 65.000 yuanes mensuales de dos cuotas fijas | 65.000 yuanes al mes en cuotas fijas; 1,23 millones de yuanes al año con comisión | Qué comisión se aplica a las ventas de Douyin (entre un 10 % y un 5 % median 100.000 yuanes sobre 2 millones) |
 | Responsabilidad | Un solo teléfono cuando caen las ventas, y una sola agencia a la que culpar de las dos tiendas | Responsabilidades claras por tienda, y disputas sobre quién provocó una caída | KPI propios y un derecho de salida propio para cada tienda |
-| Capacidad en Douyin | Depende de que ya exista un equipo de directos | Un DP dedicado en exclusiva a Douyin | Más de 12 empleados de Douyin con nombre y apellidos, y directos que usted pueda ver |
+| Capacidad en Douyin | Depende de que ya exista un equipo de directos | Un DP dedicado en exclusiva a Douyin | Al menos 12 empleados de Douyin con nombre y apellidos, y directos que usted pueda ver |
 
 </div>
 
@@ -235,11 +235,11 @@ Douyin cuestan 100.000 yuanes más.
 
 Sí, por invitación de Douyin. La calificación de operador de cinco
 estrellas de Tmall se admite como prueba complementaria. Aun así, la
-agencia necesita más de 12 personas en un equipo de Douyin y un depósito de
-100.000 yuanes. Superada la admisión llega un umbral trimestral de ventas,
-que una revisión prevista para el 15 de octubre de 2026 fija en 2 millones
-de yuanes para las agencias que atienden sobre todo tiendas
-transfronterizas.
+agencia necesita al menos 12 personas en un equipo de Douyin y un depósito de
+100.000 yuanes. Tras la admisión, la norma definitiva de octubre exige
+2 millones de yuanes de ventas despachadas por trimestre a las agencias
+que prestan servicios a marcas en la categoría de lujo y comercio
+transfronterizo.
 
 **¿Exige Douyin que mi precio coincida con el de Tmall?**
 

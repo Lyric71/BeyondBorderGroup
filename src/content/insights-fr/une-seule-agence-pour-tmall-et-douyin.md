@@ -3,14 +3,14 @@ title: "Tmall et Douyin : peut-on confier les deux boutiques à la même agenc
 seoTitle: "Une seule agence pour Tmall et Douyin : bonne idée ?"
 description: "Une agence peut tenir vos boutiques Tmall et Douyin si son équipe live a fait ses preuves sur Douyin. Les vérifications à mener, les clauses à signer."
 pubDate: "2026-10-11"
-updatedDate: "2026-10-11"
+updatedDate: "2026-10-19"
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "Douyin"]
 tags: ["Trouver un partenaire", "Tmall Partners", "Douyin Partners"]
 keyTakeaways:
   - "Une même agence peut tenir votre boutique Tmall Global et votre boutique Douyin, à condition d'aligner une équipe live distincte qui a déjà fait ses preuves sur Douyin dans votre catégorie."
-  - "Douyin admet les agences d'exploitation sur invitation, réclame plus de 12 personnes dans l'équipe Douyin, puis soumet chaque agence à un seuil de ventes trimestriel."
+  - "Douyin admet les agences d'exploitation sur invitation, réclame au moins 12 personnes dans l'équipe Douyin, puis soumet chaque agence à un seuil de ventes trimestriel."
   - "Une note Tmall renseigne mal sur le live : dans le palmarès des partenaires de Tmall Global, le contenu et l'innovation pèsent 3 % de la note."
   - "Depuis le 10 avril 2026, aucune plateforme chinoise ne peut vous obliger à y vendre au même prix ou moins cher qu'ailleurs : l'écart entre vos boutiques, c'est vous qui le fixez."
   - "Aux réglages par défaut de nos calculateurs, un Tmall Partner et un Douyin Partner coûtent ensemble 1,23 million de RMB par an, dont 780 000 RMB de forfaits."
@@ -26,6 +26,10 @@ contrat. Le volet Douyin, lui, se juge sur pièces : les personnes qui
 animeraient votre live et les boutiques pour lesquelles elles vendent déjà.
 
 *Règles de Douyin et réglementation des prix vérifiées le 11 octobre 2026.*
+
+*Mise à jour du 19 octobre 2026 : la règle définitive de Douyin fixe désormais
+à 2 millions de RMB le seuil trimestriel des agences de la catégorie luxe
+et commerce transfrontalier.*
 
 Votre Tmall Partner (TP), l'agence qui exploite votre boutique sur Tmall
 Global, la place de marché transfrontalière d'Alibaba, se fait fort
@@ -62,21 +66,16 @@ Douyin leur ouvre la porte. Son programme d'agences d'exploitation
 fonctionne sur invitation, et la note d'opérateur cinq étoiles de Tmall est
 recevable comme pièce justificative. La suite se corse.
 
-> Une agence d'exploitation Douyin doit employer plus de 20 personnes, dont
-> plus de 12 au sein d'une équipe e-commerce dédiée à Douyin, occuper des
+> Une agence d'exploitation Douyin doit employer au moins 20 personnes, dont
+> au moins 12 au sein d'une équipe e-commerce dédiée à Douyin, occuper des
 > bureaux d'au moins 100 mètres carrés et déposer une garantie de
-> 100 000 RMB. Celle qui sert principalement des boutiques transfrontalières
-> doit faire passer au moins 500 000 RMB de ventes expédiées par trimestre
-> par les boutiques qui lui sont rattachées.
-> Source : Douyin E-commerce (抖音电商), règles des prestataires de services d'exploitation, juillet 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
+> 100 000 RMB. Dans la filière marques, les agences classées dans la catégorie
+> luxe et commerce transfrontalier doivent atteindre au moins 2 millions
+> de RMB de ventes expédiées par trimestre via leurs boutiques rattachées.
+> Source : Douyin E-commerce (抖音电商), règles des prestataires de services d'exploitation, octobre 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
 
-Ce seuil trimestriel s'apprête à quadrupler.
-
-> Une révision publiée le 7 octobre 2026, qui doit entrer en vigueur le
-> 15 octobre, relève à 2 millions de RMB de ventes expédiées par trimestre
-> le seuil des agences dont l'activité principale porte sur le luxe ou le
-> transfrontalier. Les exigences d'effectif et le dépôt restent inchangés.
-> Source : Douyin E-commerce (抖音电商), avis de révision des règles des prestataires de services d'exploitation, octobre 2026. https://school.jinritemai.com/doudian/web/article/aJr9FiM4w6mc
+Ce seuil figure dans la version définitive publiée le 16 octobre. Vérifiez
+la catégorie attribuée à l'agence par Douyin avant de comparer ses résultats.
 
 Une note Tmall n'en dit presque rien. Tmall Global classe ses partenaires
 avant tout à l'aune de la taille des boutiques qu'ils gèrent.
@@ -99,7 +98,7 @@ du métier.
 | Prix d'un canal à l'autre | Une même équipe fixe les deux grilles de prix, quitte à orienter les ventes vers le canal qui la rémunère le mieux | Chaque agence casse les prix de son canal pour tenir son objectif | Un prix plancher écrit, par canal et par produit |
 | Coût (valeurs par défaut du modèle) | Une marge de négociation sous les 65 000 RMB mensuels de deux forfaits | 65 000 RMB de forfaits par mois, 1,23 million de RMB par an commission comprise | Le taux de commission appliqué aux ventes Douyin (entre 10 % et 5 %, l'écart atteint 100 000 RMB sur 2 millions de RMB) |
 | Responsabilité | Un seul numéro quand les ventes reculent, et une seule agence à blâmer pour les deux boutiques | Des responsabilités nettes par boutique, et des querelles sur l'origine d'une baisse | Des KPI et un droit de sortie propres à chaque boutique |
-| Savoir-faire Douyin | Tout dépend de l'existence préalable d'une équipe live | Un DP qui travaille exclusivement sur Douyin | Plus de 12 salariés Douyin nommément désignés et des lives que vous pouvez regarder |
+| Savoir-faire Douyin | Tout dépend de l'existence préalable d'une équipe live | Un DP qui travaille exclusivement sur Douyin | Au moins 12 salariés Douyin nommément désignés et des lives que vous pouvez regarder |
 
 </div>
 
@@ -233,12 +232,12 @@ Douyin coûtent 100 000 RMB de plus.
 **Un Tmall Partner peut-il devenir agence agréée par Douyin ?**
 
 Oui, sur invitation de Douyin. La note d'opérateur cinq étoiles de Tmall
-est recevable comme justificatif. L'agence doit néanmoins aligner plus de
+est recevable comme justificatif. L'agence doit néanmoins réunir au moins
 12 personnes dans une équipe Douyin et déposer une garantie de
-100 000 RMB. L'admission obtenue, un seuil de ventes trimestriel
-s'applique : une révision attendue le 15 octobre 2026 le porte à 2 millions
-de RMB pour les agences qui servent surtout des boutiques
-transfrontalières.
+100 000 RMB. Après l'admission, la règle définitive d'octobre impose un
+seuil de 2 millions de RMB de ventes expédiées par trimestre aux agences
+de la filière marques classées dans la catégorie luxe et commerce
+transfrontalier.
 
 **Douyin impose-t-il de s'aligner sur mon prix Tmall ?**
 
