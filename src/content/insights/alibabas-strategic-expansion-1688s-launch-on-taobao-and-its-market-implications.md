@@ -1,33 +1,265 @@
 ---
-title: "Alibaba's Strategic Expansion: 1688's Launch on Taobao and Its Market Implications"
-seoTitle: "Alibaba's 1688 Launches on Taobao: What It Means"
-description: "Alibaba's 1688 wholesale marketplace opened three official stores on Taobao, bringing factory-level prices to shoppers who buy in bulk or for business."
-pubDate: "2024-03-27"
-author: "TheChinaPath"
-category: "Platforms"
-platforms: ["Taobao", "Tmall"]
-tags: ["Alibaba", "1688", "Taobao", "E-commerce", "B2B"]
-heroImage: "/Images/insights/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications.jpg"
-heroImageAlt: "What is 1688.com"
-legacyUrl: "https://beyondbordergroup.com/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications/"
+title: "1688 on Taobao: how foreign brands should respond"
+description: 1688 brings factory supply closer to Taobao shoppers. Compare like-for-like products and test the margin cost before matching a lower price.
+author: TheChinaPath
+pubDate: 2024-03-27
+updatedDate: 2026-10-20
+category: Platforms
+platforms:
+  - Taobao
+  - Tmall
+tags:
+  - "1688"
+  - Taobao
+  - China pricing
+  - China market entry
+heroImage: /Images/insights/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications.webp
+heroImageAlt: A Chinese merchant in a Yiwu showroom compares a Taobao product page with household storage samples beside her laptop.
+legacyUrl: https://beyondbordergroup.com/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications/
+keyTakeaways:
+  - Treat 1688’s Taobao launch as a reason to check comparable products before approving a price cut.
+  - A factory’s production relationship with a brand does not establish that a cheaper product has the same specification.
+  - At the calculator’s default 14,000 annual orders, a RMB 25 price cut removes RMB 350,000 of sales if volume stays flat.
+  - Date competitor price observations and compare the same quantity and delivery terms.
 ---
 
-## Alibaba's 1688 Bolsters Market Position with Taobao Online Stores Launch
+Foreign brands should compare factory-supplied alternatives on Taobao before
+setting their China prices. Check the actual product and delivered offer,
+then calculate what matching the price would cost. The presence of 1688 on
+Taobao makes that comparison more relevant. A factory’s unbranded goods
+still need to be checked against your product’s specifications.
 
-Alibaba's 1688, renowned as China's preeminent integrated domestic wholesale marketplace, has recently enhanced its strategy for competitive pricing by inaugurating three official online stores on [Taobao](/grow-in-china/cross-border-ecommerce). This move is anticipated to escalate the influx of affordably priced goods. According to insights from KrASIA, "1688's vast network spans 174 out of China's 192 A-level and above industrial belts, with its annual business volume potentially reaching RMB 2 trillion (about USD 278.4 billion)," making it a cornerstone for merchants across various platforms like Taobao and others in search of reliable suppliers.
+Updated October 20, 2026: the original launch is now dated and sourced.
+This refresh adds a price-cut calculation and product-comparison method,
+with a company filing in place of unsupported scale estimates.
 
-## Diversifying E-commerce Offerings: 1688's New Online Shops on Taobao
+The launch happened in March 2024. For a foreign brand reviewing its China
+business now, the useful question is whether a cheaper offer meets the same
+customer need, and whether your price leaves enough money to serve that
+customer. You can answer both without guessing the size of 1688’s sales.
 
-These newly launched stand-alone stores on [Taobao](/grow-in-china/cross-border-ecommerce) diversify their offerings into three categories: well-known brand-name factory-produced furniture and general merchandise, office supplies and business consumables, and unbranded white-label products. This expansion aligns with Taobao's plans to create a dedicated channel akin to Tmall Supermarket for 1688-based businesses. Such an initiative will simplify the shopping process for users, allowing them to access a wide array of goods directly on Taobao without the necessity of downloading the 1688 app, thereby broadening their shopping experience.
+Our Tmall Global calculator defaults to RMB 3.5 million in annual sales
+and RMB 250 per order, implying 14,000
+orders. Keep that order count fixed and a modest price cut takes a material
+amount out of revenue.
 
-![1688 pic2 blog](/Images/insights/2024/03/1688-pic2-blog.png)
+For this sensitivity test, treat each order as one unchanged basket. The
+discount reduces its total price; product mix and units per order stay fixed.
+Sales here are gross order value before refunds or tax adjustments. A cut
+to just one item in a mixed basket needs a separate calculation.
 
-## 1688: A Cornerstone in Alibaba's E-commerce Ecosystem
+<div class="table-scroll">
 
-1688's journey since its inception in 1999 illustrates its central role within Alibaba Group's ecosystem, serving as a key player in connecting manufacturers and wholesale sellers to a vast network of wholesale buyers across China. The platform's extensive catalog includes a variety of goods ranging from apparel and accessories to office supplies and electronics.
+| Scenario | Order value (RMB) | Annual orders | Annual sales (RMB) | Sales lost (RMB) |
+|---|---:|---:|---:|---:|
+| Calculator baseline | 250 | 14,000 | 3,500,000 | 0 |
+| 10% price cut | 225 | 14,000 | 3,150,000 | 350,000 |
+| 20% price cut | 200 | 14,000 | 2,800,000 | 700,000 |
 
-## Understanding the Synergies and Distinctions Between 1688 and Taobao
+</div>
 
-Furthermore, the distinctions between 1688 and Taobao extend beyond their recent collaboration. While both platforms are integral parts of the Alibaba Group, they cater to different market segments. Taobao, dominating China's online shopping landscape in recent years, is celebrated for its expansive product range and consumer-centric deals, offering an engaging retail experience for individual customers. In contrast, 1688 operates on a B2B model, providing a wholesale marketplace that focuses on facilitating transactions between businesses, making it an ideal platform for bulk purchases and commercial buyers.
+> The baseline comes from TheChinaPath calculator data, October 2026. The
+> discounted rows are our arithmetic at unchanged order volume, not observed
+> store results or measured 1688 prices.
+> Source: TheChinaPath, October 2026. https://www.thechinapath.com/tools/tmall-global-setup-and-run
 
-This strategic move by Alibaba's 1688 to open online shops on Taobao not only reinforces the company's commitment to offering value through competitive pricing but also signifies a tight integration within Alibaba's ecosystem, aiming to enrich the consumer experience while fostering a more accessible and efficient supply chain for businesses globally.
+## What 1688 on Taobao actually changed
+
+1688 is Alibaba’s domestic wholesale marketplace. Its move into Taobao put
+selected factory supply into retail storefronts. The original announcement
+covered a selected-goods Taobao shop, a business-procurement Tmall shop, and
+an industrial-supplies Tmall shop.
+
+> Beijing Business Today reported three launch stores after confirmation
+> from Taotian on March 26, 2024: 1688 Yanxuan on Taobao, plus business
+> procurement and industrial selection stores on Tmall.
+> Source: Beijing Business Today (北京商报), March 2024. https://www.bbtnews.com.cn/2024/0326/508493.shtml
+
+Yanxuan means selected goods. These were storefronts carrying selected
+supply; the announcement alone says nothing about your brand’s eligibility
+to sell through them. It establishes no new import route for overseas goods.
+
+Contemporaneous reporting described home goods in the selected range,
+office supplies for business buyers, and unbranded industrial products.
+Suppliers in the semi-managed launch model negotiated pricing with 1688
+and handled dispatch and after-sales service when orders arrived.
+
+> Yilan Business described these product ranges and the semi-managed
+> supplier arrangement at launch. This is a March 2024 account of the
+> operating model, not a statement of today’s seller terms.
+> Source: Yilan Business (壹览商业), March 2024. https://www.yilantop.com/article/23046
+
+For foreign brands, our reading is practical: include factory-supplied retail
+offers in the price check. A wholesale listing viewed by a procurement
+manager and a retail listing seen by a shopper can create different price
+expectations. Neither tells you, on its own, how much demand your brand
+will lose.
+
+This article does not verify the current status of each launch store. Use
+live listings in your own category for a buying decision; the historical
+announcement explains the model.
+
+## What Alibaba’s membership figure measures
+
+Alibaba’s fiscal 2025 annual report separates 1688’s domestic wholesale
+business from Alibaba.com’s international wholesale business.
+
+> 1688 had more than 1 million paying members in fiscal 2025. The report
+> identifies domestic factories and wholesalers as sellers on the platform.
+> Source: Alibaba Group (阿里巴巴集团), fiscal 2025 annual report, June 2025, pp. 11–12. https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0626/2025062601065_c.pdf
+
+That membership count is a fiscal 2025 snapshot, not an October 2026 count.
+It is not a count of active shoppers or a measure of gross merchandise
+value (GMV).
+It also cannot tell you how many suppliers make a substitute for your
+particular product.
+
+For a launch decision, use category evidence. A foreign brand selling a
+specialized product needs to know what the shopper can buy instead and
+what the shopper gives up by switching. A large platform total cannot
+answer that question.
+
+A sourcing team still has to assess the individual supplier against the
+purchase it plans to make. Platform membership tells you little about
+whether that supplier can meet your specification.
+
+## Compare the delivered product
+
+Choose the customer use first. A storage box for a bathroom shelf and one
+designed to carry heavy tools may look similar in a thumbnail. The relevant
+comparison depends on what the buyer expects the box to do.
+
+Record the exact listing and the observation date. Save the selected
+variant and quantity, then the checkout price including delivery.
+An entry price attached to the smallest variant will distort a comparison
+with your full-size product.
+
+Compare the same total quantity when a competitor sells a bundle. Note
+whether its price requires a coupon or membership, and record the promised
+delivery date. A buyer may value receiving the product sooner.
+
+If an offer could change your pricing decision, order a sample. Check
+the dimensions against the listing and examine the materials. Where your
+brand sells a performance claim, decide what evidence would demonstrate
+that claim under the same conditions for both products.
+
+What can the customer see before buying? If your better material is
+buried in a technical sheet, it may contribute little to the shopper’s
+decision. Put evidence close to the product choice. A demonstration of the
+relevant use may explain more than another polished product photograph.
+
+A claim that a factory supplies a famous brand needs separate scrutiny.
+It does not establish that another item uses the same design or passes
+the same quality checks. Request evidence for the item being offered and
+avoid repeating the relationship as proof of equivalence.
+
+Use the findings in your
+[China market-entry assessment](/enter-china/market-entry-consulting).
+Identify which products can support their proposed price and which need
+a different offer before launch.
+
+## Calculate what a lower price asks of volume
+
+The opening table measures revenue at constant volume. It is not a profit
+forecast. Some costs fall with sales value; others follow the number of
+orders, and fixed expenses continue even if sales disappoint.
+
+At RMB 225 per order, replacing RMB 3.5 million of sales takes at least
+15,556 whole orders, rounded up. That is about 11.1% more than the baseline.
+At RMB 200, it takes 17,500 orders, or 25% more. These are
+revenue-replacement figures derived from the same calculator baseline.
+
+Now check the contribution.
+
+Work out contribution per kept order after the product cost and every
+variable selling expense, including any tax you bear. Contribution is the
+amount left to pay fixed costs. Then divide the contribution you need by the
+contribution available per order at the lower price. If that amount is
+zero or negative, adding orders cannot cover fixed costs within that model.
+
+For an illustrative calculation per kept order, assume contribution falls
+from RMB 80 to RMB 55 after a RMB 25 price cut, with all other per-order
+costs held fixed.
+Keeping the same total contribution requires about 45.5% more kept orders:
+80 divided by 55, minus 1. Those contribution values are editorial
+assumptions, not category benchmarks or client results.
+
+Your own answer will change if commissions are charged as a share of sales
+or if the lower price changes advertising performance. Put the actual
+contract terms into the [Tmall Global cost calculator](/tools/tmall-global-setup-and-run)
+and keep a separate contribution calculation for the proposed offer.
+
+The spreadsheet can’t tell you whether those extra orders will arrive.
+Run a bounded test with a spend limit and a written stopping rule. Set its
+duration before launch and have the budget owner approve the loss limit. For
+example, stop when cumulative contribution falls below the floor approved
+for the test, even if order volume is rising. Compare
+the money retained after refunds with the baseline, as well as the number
+of orders. Measure acquisition cost during the test as well; a price cut
+doesn’t guarantee that advertising becomes cheaper.
+
+Allow refunds from the test orders to settle before declaring the result.
+Use the same measurement window for the baseline. Record what buyers chose
+between comparable offers before extending a discount to other products.
+
+## Choose the response product by product
+
+If a competing offer is materially equivalent, consider a price test or a
+change in pack size. Check whether the revised offer can still cover its
+selling costs. A smaller pack should make the purchase easier without
+hiding an unfavorable unit price.
+
+If the product is different, make that difference verifiable. A claim about
+durability needs evidence that relates to how the customer will use it.
+A premium based on after-sales support needs a service process that your
+China team can actually deliver.
+
+Sometimes the product has to come out of the plan. If it cannot carry its
+landed cost and selling expenses at a credible price, remove it from the proposed
+assortment. Keeping a weak product in the plan can absorb time that should
+go to a stronger one.
+
+Give the person responsible for
+[cross-border store operations](/grow-in-china/cross-border-ecommerce)
+the comparison evidence and the approved price range. Agree who can change
+the offer during a campaign and who approves a permanent change. Record
+the reason for each change so a later review can distinguish a deliberate
+test from an unplanned discount.
+
+Recheck the competing offer when your test ends. A temporary coupon may
+have expired; the product may be out of stock. Keep your observations
+dated so the team can tell whether its response still fits the offer
+customers are seeing.
+
+## Questions foreign brands ask about 1688
+
+### Is 1688 the same as Alibaba.com?
+
+The fiscal 2025 Alibaba report cited above treats them as separate businesses:
+1688 serves domestic wholesale, while Alibaba.com serves international
+wholesale. Use the distinction when briefing a sourcing team. A supplier
+found on either platform still needs to meet the specifications and
+commercial terms of the purchase you are considering.
+
+### Does the Taobao launch prove factory goods are equivalent?
+
+No. A shared factory name or similar photograph is insufficient evidence
+of an identical product. Compare the exact variant and request proof of
+the specifications that matter to your customer. If the price difference
+could change your China plan, inspect a sample before approving a response.
+
+### How much extra volume offsets a price cut?
+
+For revenue alone, a 10% cut requires roughly 11.1% more orders, assuming
+the same product mix and no change in refunds. Profit requires a separate
+contribution calculation. The RMB 80-to-55 example above needs about 45.5%
+more kept orders because the available contribution falls faster than the
+selling price.
+
+### Should every foreign brand match a factory price?
+
+Base the decision on a comparable delivered offer and the contribution
+your product can earn. A different specification or a service the buyer
+values may support a higher price. If the offers are equivalent, test your
+response with a spending limit before carrying the lower price across
+the assortment.

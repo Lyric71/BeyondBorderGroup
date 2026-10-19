@@ -1,6 +1,6 @@
 # TheChinaPath — Insights (full text)
 
-> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-18.
+> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-19.
 
 ---
 # 11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event
@@ -621,43 +621,255 @@ AI is transforming China's eCommerce industry by enhancing consumer experiences,
 
 
 ---
-# alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications
+# 1688 on Taobao: how foreign brands should respond
 URL: https://www.thechinapath.com/insights/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications
+Published: 2024-03-27
+Updated: 2026-10-20
+Author: TheChinaPath
+Category: Platforms
 
----
-title: "Alibaba's Strategic Expansion: 1688's Launch on Taobao and Its Market Implications"
-seoTitle: "Alibaba's 1688 Launches on Taobao: What It Means"
-description: "Alibaba's 1688 wholesale marketplace opened three official stores on Taobao, bringing factory-level prices to shoppers who buy in bulk or for business."
-pubDate: "2024-03-27"
-author: "TheChinaPath"
-category: "Platforms"
-platforms: ["Taobao", "Tmall"]
-tags: ["Alibaba", "1688", "Taobao", "E-commerce", "B2B"]
-heroImage: "/Images/insights/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications.jpg"
-heroImageAlt: "What is 1688.com"
-legacyUrl: "https://beyondbordergroup.com/alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications/"
----
+1688 brings factory supply closer to Taobao shoppers. Compare like-for-like products and test the margin cost before matching a lower price.
 
-## Alibaba's 1688 Bolsters Market Position with Taobao Online Stores Launch
+Foreign brands should compare factory-supplied alternatives on Taobao before
+setting their China prices. Check the actual product and delivered offer,
+then calculate what matching the price would cost. The presence of 1688 on
+Taobao makes that comparison more relevant. A factory’s unbranded goods
+still need to be checked against your product’s specifications.
 
-Alibaba's 1688, renowned as China's preeminent integrated domestic wholesale marketplace, has recently enhanced its strategy for competitive pricing by inaugurating three official online stores on [Taobao](/grow-in-china/cross-border-ecommerce). This move is anticipated to escalate the influx of affordably priced goods. According to insights from KrASIA, "1688's vast network spans 174 out of China's 192 A-level and above industrial belts, with its annual business volume potentially reaching RMB 2 trillion (about USD 278.4 billion)," making it a cornerstone for merchants across various platforms like Taobao and others in search of reliable suppliers.
+Updated October 20, 2026: the original launch is now dated and sourced.
+This refresh adds a price-cut calculation and product-comparison method,
+with a company filing in place of unsupported scale estimates.
 
-## Diversifying E-commerce Offerings: 1688's New Online Shops on Taobao
+The launch happened in March 2024. For a foreign brand reviewing its China
+business now, the useful question is whether a cheaper offer meets the same
+customer need, and whether your price leaves enough money to serve that
+customer. You can answer both without guessing the size of 1688’s sales.
 
-These newly launched stand-alone stores on [Taobao](/grow-in-china/cross-border-ecommerce) diversify their offerings into three categories: well-known brand-name factory-produced furniture and general merchandise, office supplies and business consumables, and unbranded white-label products. This expansion aligns with Taobao's plans to create a dedicated channel akin to Tmall Supermarket for 1688-based businesses. Such an initiative will simplify the shopping process for users, allowing them to access a wide array of goods directly on Taobao without the necessity of downloading the 1688 app, thereby broadening their shopping experience.
+Our Tmall Global calculator defaults to RMB 3.5 million in annual sales
+and RMB 250 per order, implying 14,000
+orders. Keep that order count fixed and a modest price cut takes a material
+amount out of revenue.
 
-![1688 pic2 blog](/Images/insights/2024/03/1688-pic2-blog.png)
+For this sensitivity test, treat each order as one unchanged basket. The
+discount reduces its total price; product mix and units per order stay fixed.
+Sales here are gross order value before refunds or tax adjustments. A cut
+to just one item in a mixed basket needs a separate calculation.
 
-## 1688: A Cornerstone in Alibaba's E-commerce Ecosystem
+<div class="table-scroll">
 
-1688's journey since its inception in 1999 illustrates its central role within Alibaba Group's ecosystem, serving as a key player in connecting manufacturers and wholesale sellers to a vast network of wholesale buyers across China. The platform's extensive catalog includes a variety of goods ranging from apparel and accessories to office supplies and electronics.
+| Scenario | Order value (RMB) | Annual orders | Annual sales (RMB) | Sales lost (RMB) |
+|---|---:|---:|---:|---:|
+| Calculator baseline | 250 | 14,000 | 3,500,000 | 0 |
+| 10% price cut | 225 | 14,000 | 3,150,000 | 350,000 |
+| 20% price cut | 200 | 14,000 | 2,800,000 | 700,000 |
 
-## Understanding the Synergies and Distinctions Between 1688 and Taobao
+</div>
 
-Furthermore, the distinctions between 1688 and Taobao extend beyond their recent collaboration. While both platforms are integral parts of the Alibaba Group, they cater to different market segments. Taobao, dominating China's online shopping landscape in recent years, is celebrated for its expansive product range and consumer-centric deals, offering an engaging retail experience for individual customers. In contrast, 1688 operates on a B2B model, providing a wholesale marketplace that focuses on facilitating transactions between businesses, making it an ideal platform for bulk purchases and commercial buyers.
+> The baseline comes from TheChinaPath calculator data, October 2026. The
+> discounted rows are our arithmetic at unchanged order volume, not observed
+> store results or measured 1688 prices.
+> Source: TheChinaPath, October 2026. https://www.thechinapath.com/tools/tmall-global-setup-and-run
 
-This strategic move by Alibaba's 1688 to open online shops on Taobao not only reinforces the company's commitment to offering value through competitive pricing but also signifies a tight integration within Alibaba's ecosystem, aiming to enrich the consumer experience while fostering a more accessible and efficient supply chain for businesses globally.
+## What 1688 on Taobao actually changed
 
+1688 is Alibaba’s domestic wholesale marketplace. Its move into Taobao put
+selected factory supply into retail storefronts. The original announcement
+covered a selected-goods Taobao shop, a business-procurement Tmall shop, and
+an industrial-supplies Tmall shop.
+
+> Beijing Business Today reported three launch stores after confirmation
+> from Taotian on March 26, 2024: 1688 Yanxuan on Taobao, plus business
+> procurement and industrial selection stores on Tmall.
+> Source: Beijing Business Today (北京商报), March 2024. https://www.bbtnews.com.cn/2024/0326/508493.shtml
+
+Yanxuan means selected goods. These were storefronts carrying selected
+supply; the announcement alone says nothing about your brand’s eligibility
+to sell through them. It establishes no new import route for overseas goods.
+
+Contemporaneous reporting described home goods in the selected range,
+office supplies for business buyers, and unbranded industrial products.
+Suppliers in the semi-managed launch model negotiated pricing with 1688
+and handled dispatch and after-sales service when orders arrived.
+
+> Yilan Business described these product ranges and the semi-managed
+> supplier arrangement at launch. This is a March 2024 account of the
+> operating model, not a statement of today’s seller terms.
+> Source: Yilan Business (壹览商业), March 2024. https://www.yilantop.com/article/23046
+
+For foreign brands, our reading is practical: include factory-supplied retail
+offers in the price check. A wholesale listing viewed by a procurement
+manager and a retail listing seen by a shopper can create different price
+expectations. Neither tells you, on its own, how much demand your brand
+will lose.
+
+This article does not verify the current status of each launch store. Use
+live listings in your own category for a buying decision; the historical
+announcement explains the model.
+
+## What Alibaba’s membership figure measures
+
+Alibaba’s fiscal 2025 annual report separates 1688’s domestic wholesale
+business from Alibaba.com’s international wholesale business.
+
+> 1688 had more than 1 million paying members in fiscal 2025. The report
+> identifies domestic factories and wholesalers as sellers on the platform.
+> Source: Alibaba Group (阿里巴巴集团), fiscal 2025 annual report, June 2025, pp. 11–12. https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0626/2025062601065_c.pdf
+
+That membership count is a fiscal 2025 snapshot, not an October 2026 count.
+It is not a count of active shoppers or a measure of gross merchandise
+value (GMV).
+It also cannot tell you how many suppliers make a substitute for your
+particular product.
+
+For a launch decision, use category evidence. A foreign brand selling a
+specialized product needs to know what the shopper can buy instead and
+what the shopper gives up by switching. A large platform total cannot
+answer that question.
+
+A sourcing team still has to assess the individual supplier against the
+purchase it plans to make. Platform membership tells you little about
+whether that supplier can meet your specification.
+
+## Compare the delivered product
+
+Choose the customer use first. A storage box for a bathroom shelf and one
+designed to carry heavy tools may look similar in a thumbnail. The relevant
+comparison depends on what the buyer expects the box to do.
+
+Record the exact listing and the observation date. Save the selected
+variant and quantity, then the checkout price including delivery.
+An entry price attached to the smallest variant will distort a comparison
+with your full-size product.
+
+Compare the same total quantity when a competitor sells a bundle. Note
+whether its price requires a coupon or membership, and record the promised
+delivery date. A buyer may value receiving the product sooner.
+
+If an offer could change your pricing decision, order a sample. Check
+the dimensions against the listing and examine the materials. Where your
+brand sells a performance claim, decide what evidence would demonstrate
+that claim under the same conditions for both products.
+
+What can the customer see before buying? If your better material is
+buried in a technical sheet, it may contribute little to the shopper’s
+decision. Put evidence close to the product choice. A demonstration of the
+relevant use may explain more than another polished product photograph.
+
+A claim that a factory supplies a famous brand needs separate scrutiny.
+It does not establish that another item uses the same design or passes
+the same quality checks. Request evidence for the item being offered and
+avoid repeating the relationship as proof of equivalence.
+
+Use the findings in your
+[China market-entry assessment](/enter-china/market-entry-consulting).
+Identify which products can support their proposed price and which need
+a different offer before launch.
+
+## Calculate what a lower price asks of volume
+
+The opening table measures revenue at constant volume. It is not a profit
+forecast. Some costs fall with sales value; others follow the number of
+orders, and fixed expenses continue even if sales disappoint.
+
+At RMB 225 per order, replacing RMB 3.5 million of sales takes at least
+15,556 whole orders, rounded up. That is about 11.1% more than the baseline.
+At RMB 200, it takes 17,500 orders, or 25% more. These are
+revenue-replacement figures derived from the same calculator baseline.
+
+Now check the contribution.
+
+Work out contribution per kept order after the product cost and every
+variable selling expense, including any tax you bear. Contribution is the
+amount left to pay fixed costs. Then divide the contribution you need by the
+contribution available per order at the lower price. If that amount is
+zero or negative, adding orders cannot cover fixed costs within that model.
+
+For an illustrative calculation per kept order, assume contribution falls
+from RMB 80 to RMB 55 after a RMB 25 price cut, with all other per-order
+costs held fixed.
+Keeping the same total contribution requires about 45.5% more kept orders:
+80 divided by 55, minus 1. Those contribution values are editorial
+assumptions, not category benchmarks or client results.
+
+Your own answer will change if commissions are charged as a share of sales
+or if the lower price changes advertising performance. Put the actual
+contract terms into the [Tmall Global cost calculator](/tools/tmall-global-setup-and-run)
+and keep a separate contribution calculation for the proposed offer.
+
+The spreadsheet can’t tell you whether those extra orders will arrive.
+Run a bounded test with a spend limit and a written stopping rule. Set its
+duration before launch and have the budget owner approve the loss limit. For
+example, stop when cumulative contribution falls below the floor approved
+for the test, even if order volume is rising. Compare
+the money retained after refunds with the baseline, as well as the number
+of orders. Measure acquisition cost during the test as well; a price cut
+doesn’t guarantee that advertising becomes cheaper.
+
+Allow refunds from the test orders to settle before declaring the result.
+Use the same measurement window for the baseline. Record what buyers chose
+between comparable offers before extending a discount to other products.
+
+## Choose the response product by product
+
+If a competing offer is materially equivalent, consider a price test or a
+change in pack size. Check whether the revised offer can still cover its
+selling costs. A smaller pack should make the purchase easier without
+hiding an unfavorable unit price.
+
+If the product is different, make that difference verifiable. A claim about
+durability needs evidence that relates to how the customer will use it.
+A premium based on after-sales support needs a service process that your
+China team can actually deliver.
+
+Sometimes the product has to come out of the plan. If it cannot carry its
+landed cost and selling expenses at a credible price, remove it from the proposed
+assortment. Keeping a weak product in the plan can absorb time that should
+go to a stronger one.
+
+Give the person responsible for
+[cross-border store operations](/grow-in-china/cross-border-ecommerce)
+the comparison evidence and the approved price range. Agree who can change
+the offer during a campaign and who approves a permanent change. Record
+the reason for each change so a later review can distinguish a deliberate
+test from an unplanned discount.
+
+Recheck the competing offer when your test ends. A temporary coupon may
+have expired; the product may be out of stock. Keep your observations
+dated so the team can tell whether its response still fits the offer
+customers are seeing.
+
+## Questions foreign brands ask about 1688
+
+### Is 1688 the same as Alibaba.com?
+
+The fiscal 2025 Alibaba report cited above treats them as separate businesses:
+1688 serves domestic wholesale, while Alibaba.com serves international
+wholesale. Use the distinction when briefing a sourcing team. A supplier
+found on either platform still needs to meet the specifications and
+commercial terms of the purchase you are considering.
+
+### Does the Taobao launch prove factory goods are equivalent?
+
+No. A shared factory name or similar photograph is insufficient evidence
+of an identical product. Compare the exact variant and request proof of
+the specifications that matter to your customer. If the price difference
+could change your China plan, inspect a sample before approving a response.
+
+### How much extra volume offsets a price cut?
+
+For revenue alone, a 10% cut requires roughly 11.1% more orders, assuming
+the same product mix and no change in refunds. Profit requires a separate
+contribution calculation. The RMB 80-to-55 example above needs about 45.5%
+more kept orders because the available contribution falls faster than the
+selling price.
+
+### Should every foreign brand match a factory price?
+
+Base the decision on a comparable delivered offer and the contribution
+your product can earn. A different specification or a service the buyer
+values may support a higher price. If the offers are equivalent, test your
+response with a spending limit before carrying the lower price across
+the assortment.
 
 ---
 # best-practices-for-finding-a-chinese-name-for-a-brand-in-china
@@ -9598,6 +9810,263 @@ The question is not whether you should do Douyin live commerce.
 
 It is whether you can run Douyin like an always-on retail channel, where creative and trading work as one team.
 
+
+---
+# Douyin livestream agency vs DP: who does what
+URL: https://www.thechinapath.com/insights/douyin-livestream-agency-vs-dp
+Published: 2026-10-20
+Updated: 2026-10-20
+Author: TheChinaPath
+Category: KOLs & Livestream
+
+A Douyin livestream agency sells creator time; a Douyin Partner runs your shop, live room and ads. What each one costs, and what you keep.
+
+A livestream agency, usually an MCN, sells a creator's time and is paid
+from the commission on that creator's sales. A Douyin Partner runs your shop
+and your own live room, with your ad account in the same budget. Brands that
+hire the first and expect the second pay slot fees and end up with no
+audience of their own.
+
+
+
+Douyin is China's short-video app, and it sells through live rooms, short
+videos and a storefront. When foreign brands weigh a Douyin livestream
+agency vs a DP (Douyin Partner), they are comparing two businesses that
+Douyin itself files in separate systems, with separate ways of getting paid.
+
+There is a third kind in between: an agency that runs sessions in your own
+live room for an hourly fee.
+
+## Douyin livestream agency vs DP, side by side
+
+The two main bills sit side by side in our Douyin cost calculator. At its
+defaults, RMB 2 million of first-year sales with creators moving 80% of it,
+a DP on a RMB 30,000 monthly retainer plus 5% costs RMB 460,000 a year, 23%
+of sales. Creator commission at 20% adds RMB 320,000, or 16%
+(TheChinaPath calculator data, October 2026). That's about US$64,800 and
+US$45,100 at our planning rate of RMB 7.10 to the dollar. Every third-party
+figure below was checked on October 19, 2026.
+
+<div class="table-scroll">
+
+| Question | Creator agency (MCN) | Live-room agency | Douyin Partner (DP) |
+|---|---|---|---|
+| What it runs | Creators' own accounts and sessions | Hosts and sessions in your live room | Your shop, your live room, your ads, creator bookings |
+| Douyin's gate | 6 months old, RMB 500,000 capital, 3 creators bound | None of its own. Those listed in Douyin's service market sit under brand livestream service, at the DP bar | Invitation only, 20 staff (12 on Douyin), RMB 100,000 deposit, RMB 3 million shipped sales a quarter |
+| How it's paid | Out of the commission you set (5% to 50%, up to 80% for named creators), plus slot fees from big hosts | Hourly or per session; one 2024 report cites quotes of RMB 500 and 2,000 an hour | Monthly retainer plus commission on sales; RMB 30,000 a month plus 5% in our calculator |
+| What you keep when it leaves | The orders. The audience stays on the creator's account | Followers and replays on your account. The hosts leave | The shop, account and ad history, if they're in your company's name |
+| When to use it | A launch, a festival push, a price test | Hours or promotions your team can't staff | Running Douyin as a channel, month after month |
+
+</div>
+
+Sources: Douyin MCN management code (September 15, 2026), operating service
+provider rules (October 16, 2026) and affiliate settlement rules (October 12,
+2026); Beijing Business Today, May 20, 2024; TheChinaPath calculator data,
+October 2026.
+
+
+
+## What each one runs, in Douyin's own rules
+
+Douyin keeps creator agencies and store operators in separate systems.
+
+MCNs sign up on Buyin (巨量百应), the back office creators use to pick
+products and track commission. The bar is low.
+
+> Douyin admits an MCN that has been in business at least six months, has
+> registered capital of RMB 500,000 or more and binds at least three
+> e-commerce creators.
+> Source: Douyin E-commerce (抖音电商), Buyin MCN management code, revised June 2026. https://school.jinritemai.com/doudian/web/articlev0/114051
+
+Store operators go through Douyin's service market instead, and the bar is
+much higher.
+
+> Douyin admits operating service providers by invitation, after a site
+> visit. A provider needs 20 or more staff, 12 of them on a Douyin team,
+> an office of at least 100 square meters and a RMB 100,000 deposit. Brand
+> providers must ship RMB 3 million of sales a quarter through the stores
+> they serve (RMB 2 million in luxury cross-border).
+> Source: Douyin E-commerce (抖音电商), operating service provider cooperation rules, October 2026. https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
+
+Inside that market Douyin lists full brand service and brand livestream
+service as separate categories, next to a revenue-share category.
+
+> Douyin's service market splits brand operating providers into full brand
+> service (品牌全案服务), brand livestream service (品牌直播服务) and
+> revenue-share settlement (分成结算).
+> Source: Douyin E-commerce (抖音电商), operating service provider management code, July 2026. https://school.jinritemai.com/doudian/web/articlev0/aJ5N3Pxir67C
+
+In Douyin's books an MCN is a talent business. Some are very good at moving
+stock through their creators. None of that work touches your shop.
+
+Your own live room is another thing altogether. Douyin binds each shop to
+one Douyin account, the shop's official account, and that's where a store
+broadcast (the brand selling on its own account) runs.
+
+> Douyin binds every shop to a single Douyin account, which serves as the
+> shop's official account.
+> Source: Douyin E-commerce (抖音电商), shop official account notice, September 2022. https://school.jinritemai.com/doudian/web/article/aHbHwLQPDWaZ
+
+
+
+## How each one gets paid
+
+An MCN gets paid from the creator commission you set on each product, and
+only on orders that stick.
+
+> Commission is set at 5% to 50% on plans open to all creators and up to
+> 80% on some plans for named creators. Commission is not settled on
+> orders refunded within the after-sale period.
+> Source: Douyin E-commerce (抖音电商), affiliate commission settlement rules, October 2026. https://school.jinritemai.com/doudian/web/articlev0/112620
+
+Douyin takes its cut first. The agency's comes out of what's left.
+
+> Douyin deducts a technical service fee of 10% from the commission on the
+> agency side. The MCN sets the split of the rest between itself and the
+> creator in its own back office.
+> Source: Douyin E-commerce (抖音电商), Buyin MCN management code, revised June 2026. https://school.jinritemai.com/doudian/web/articlev0/114051
+
+At the calculator's defaults, creator commission works out to RMB 50 on a
+RMB 250 order. If those creators all sat with MCNs, Douyin would keep RMB
+32,000 of the RMB 320,000 a year. The other RMB 288,000 goes to agencies and
+creators, split on terms the MCN sets and the brand doesn't see. Big hosts
+charge a slot fee for airtime on top.
+
+A live-room agency bills for time, and the quotes run wide.
+
+> A host who had sold for major brands told Beijing Business Today that
+> brands hand their own live rooms to outside agencies for big promotions.
+> One agency quoted RMB 2,000 an hour and another RMB 500, and the brand
+> moved sessions to the cheaper one.
+> Source: Beijing Business Today (北京商报), on Beijing Daily's site, May 20, 2024. https://xinwen.bjd.com.cn/content/s664b5f05e4b00fc26b9e0c15.html
+
+That's roughly US$70 and US$280 an hour. It's also one host's account from
+2024 (it isn't a rate card), so get three dated quotes for the same hours
+before you pick.
+
+The DP charges a retainer plus a share of sales. Our calculator's default
+is RMB 30,000 a month plus 5%. Ads and creator commission sit outside it,
+paid by you. What the live room itself costs to run, line by line, is in our
+piece on [China livestream costs for
+brands](/insights/china-livestream-cost-for-brands).
+
+
+
+## Why the creator route keeps less
+
+The invoices are only half of it. What's left on your account afterward
+matters as much.
+
+Creator sales cost more to win, RMB for RMB, than sales from a brand's own
+room.
+
+> From mid-tier creators up, the creator cost ratio (slot fee, commission
+> and ad spend over creator sales) is at least 35%. A brand's own
+> broadcasts typically run more than 10 points lower: one food merchant
+> put its own room at 40% to 50% and creators above 50%.
+> Source: Ebrun (亿邦动力), carried by Huxiu (虎嗅), July 16, 2025. https://m.huxiu.com/article/4584498.html
+
+Brands' own rooms now carry a big share of Douyin's livestream sales.
+
+> During the 618 festival in 2025, half of the sales driven by Douyin
+> livestreams came from brands' own store broadcasts. Nearly 70% of
+> merchants with more than RMB 10 million of livestream sales used store
+> broadcasts.
+> Source: 21st Century Business Herald (21世纪经济报道), January 30, 2026. https://www.21jingji.com/article/20260130/herald/50ea314a64d44c9664cf2c6a0132a9cc.html
+
+Our calculator builds that shift into its second year. It moves creators
+from 80% to 60% of sales and lets sales with no ad or commission behind them
+grow from 5% to 20%. On its defaults, that's RMB 600,000 of second-year
+sales against RMB 100,000 in the first (TheChinaPath calculator data,
+October 2026). Those are model assumptions, not results. They also assume
+someone is running your own room every day. A plan built only on MCN
+sessions doesn't produce that line.
+
+
+
+## What to put in the contract
+
+China's livestream rules, in force since February 1, 2026, reach every one
+of these agencies.
+
+> Anyone who actually runs another party's live room carries the
+> live-room operator's legal duties. A host agency that works with a
+> live-room operator must sign a written agreement setting each side's
+> duties on host management, content, product quality checks and consumer
+> protection. An agency that picks products must verify the seller's
+> licenses and certificates and keep the records for at least three years.
+> Source: Cyberspace Administration of China (国家网信办), carrying SAMR and CAC Order No. 117, Livestream E-commerce Supervision Measures, articles 2, 43 and 45, published December 18, 2025. https://www.cac.gov.cn/2026-01/07/c_1769516655383334.htm
+
+Build the contract around that. Then add a few lines of your own.
+
+- **For an MCN:** the creators by name, the commission per product, any
+  slot fee booked through Douyin's cooperation order, and what happens to
+  the fee if sales miss.
+- **For a live-room agency:** the hours, the hosts, who writes the script,
+  and confirmation that the room stays on your shop's official account.
+
+A DP contract needs one more line, on the scope of any revenue share.
+Douyin penalizes providers that promise a cut of "selected links" and then
+take a share of the whole shop. That rule helps only if the scope is on
+paper.
+
+Keep the shop, the official account and the ad account in your company's
+name whoever runs them. The details are in [who owns your Tmall store, Douyin
+shop and customer data](/insights/tmall-partner-store-ownership).
+
+
+
+## Running a DP and creators together
+
+The calculator's default plan is built that way: a DP on the shop and the
+room, with creators booked around it for launches and festivals. The DP usually books
+those creators. Ask it to report creator cost apart from its own fee, per
+creator and per kept order (an order the buyer doesn't return).
+
+Our guide to [finding a Douyin
+Partner](/compass/find-a-douyin-partner-in-china) covers the checks to run
+before you sign. [Compass](/compass) holds the DPs we have watched run rooms
+in our categories, and our [social commerce](/grow-in-china/social-commerce)
+page lists the rest of the work a Douyin channel needs.
+
+Paying creators per post to build awareness, rather than per sale, is a
+separate budget. [TheRedScroll, the group's China social media
+agency](https://www.theredscroll.com), handles that side.
+
+
+
+## Frequently asked questions
+
+### Is an MCN the same as a Douyin Partner?
+
+No. Douyin registers them in different systems. An MCN signs creators on
+Buyin and is paid out of creator commission. A Douyin Partner is admitted to
+Douyin's service market by invitation, with at least 20 staff and a RMB
+100,000 deposit, and runs a brand's shop, live room and ads for a retainer
+and a share of sales.
+
+### Can a livestream agency run my own live room?
+
+Yes. Some agencies run sessions in a brand's room for an hourly or
+per-session fee, and some brands bring them in for big promotions. Under
+China's livestream rules, whoever actually runs your room takes on the
+operator's duties too. Keep the account in your company's name and the
+hours, hosts and scripts in the contract.
+
+### What does a Douyin Partner cost?
+
+Usually a monthly retainer plus a commission on sales. The Douyin
+calculator on this site defaults to RMB 30,000 a month plus 5%, or RMB 460,000 a year on RMB 2 million
+of sales, 23% of the total. Ads on Qianchuan, Douyin's ad platform, and creator commission are
+paid on top. At the calculator's defaults those two come to RMB 440,000,
+close to the DP's own fee.
+
+### Should a new brand start with creators or its own room?
+
+Plan for both if the budget allows. Creators bring reach fast. Their
+audience, though, stays on their accounts. Your own room builds followers and sales
+on your shop's account, and its costs run lower against sales: Ebrun
+reported own-room cost ratios at least 10 points below creator sessions.
 
 ---
 # Douyin turns its product-card fee waiver into a rebate

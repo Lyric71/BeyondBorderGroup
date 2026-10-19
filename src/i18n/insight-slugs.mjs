@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'douyin-livestream-agency-vs-dp': 'agence-live-douyin-ou-douyin-partner',
   'douyin-affiliate-commission-brand': 'commission-des-createurs-douyin',
   'douyin-after-sales-reserve-warranty': 'douyin-reserve-apres-vente-garanties',
   'cost-to-sell-baby-care-and-hygiene-products-in-china': 'ce-que-coute-vendre-des-soins-bebe-et-des-couches-en-chine',
@@ -188,6 +189,7 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'douyin-livestream-agency-vs-dp': 'douyin-liveagentur-oder-douyin-partner',
   'douyin-affiliate-commission-brand': 'douyin-creator-provision-was-marken-zahlen',
   'douyin-after-sales-reserve-warranty': 'douyin-ruecklage-fuer-garantiefaelle',
   'cost-to-sell-baby-care-and-hygiene-products-in-china': 'was-babypflege-und-windeln-verkaufen-in-china-kostet',
@@ -367,6 +369,7 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'douyin-livestream-agency-vs-dp': 'agencia-directos-douyin-o-douyin-partner',
   'douyin-affiliate-commission-brand': 'comision-de-afiliacion-douyin-lo-que-paga-una-marca',
   'douyin-after-sales-reserve-warranty': 'douyin-reserva-de-posventa-garantias',
   'cost-to-sell-baby-care-and-hygiene-products-in-china': 'lo-que-cuesta-vender-cuidado-del-bebe-y-panales-en-china',

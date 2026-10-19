@@ -1293,7 +1293,7 @@ and 23 text matched; add china-trade-fairs-find-distributor to its "Used in".
 - URL: https://school.jinritemai.com/doudian/web/articlev0/112620
 - Verified 1: 2026-09-24 (page rendered with headless Edge; WebFetch returns an empty body)
 - Verified 2: 2026-09-24 (re-rendered at iteration 8, table rows unchanged)
-- Used in: douyin-agency-cost
+- Used in: douyin-agency-cost; douyin-livestream-agency-vs-dp
 - Notes: rates are the merchant-set commission (推广费) on the settlement base, not the platform's fee. The creator separately pays Douyin a technical service fee of 10% of commission at ratings A, B+ and B, 20% at C, 40% at D (same rule, 2.1.1); that is a creator-side cost.
 
 ### Douyin tiered creator commission is marginal, not retroactive
@@ -1303,7 +1303,7 @@ and 23 text matched; add china-trade-fairs-find-distributor to its "Used in".
 - URL: https://school.jinritemai.com/doudian/web/articlev0/112620
 - Verified 1: 2026-09-24
 - Verified 2: 2026-09-24 (re-rendered at iteration 8; "销量门槛按照基础佣金生效，销量门槛以上按照升佣佣金生效" present)
-- Used in: douyin-agency-cost
+- Used in: douyin-agency-cost; douyin-livestream-agency-vs-dp
 - Notes: platform creator ladder only. No primary source was found for DP-side commission ladders; the IT之家 lead (ithome.com/0/943/132.htm) returned 404 on 2026-09-24.
 
 ### Creator commission settlement: 15 days after receipt, refunds clawed back
@@ -1313,7 +1313,7 @@ and 23 text matched; add china-trade-fairs-find-distributor to its "Used in".
 - URL: https://school.jinritemai.com/doudian/web/articlev0/112620
 - Verified 1: 2026-09-24
 - Verified 2: 2026-09-24 (re-rendered at iteration 8, unchanged)
-- Used in: douyin-agency-cost, douyin-return-rate
+- Used in: douyin-agency-cost, douyin-return-rate; douyin-livestream-agency-vs-dp
 - Notes: covers creator (达人) commission and group-leader (团长) fees.
 
 ### Douyin Global merchant payout timing and after-sale hold
@@ -2352,7 +2352,7 @@ Re-verification of existing entries (no new entry; add the slug to their Used in
 - Used in: replace-distributor-china
 - Notes: a published service description, not a data pull. Pairs with the existing "Compass shortlist turnaround" entry (two to three weeks).
 
-### Re-verified ledger entries reused (no new entry; add the slug to Used in)
+### Re-verified ledger entries reused (original Used in fields updated at publish)
 - Compass shortlist turnaround (two to three weeks): re-read in shared.ts 2026-09-24, both checks. Add replace-distributor-china.
 - NMPA Announcement 70 of 2026: re-rendered with headless Chromium 2026-09-24, both checks. Add replace-distributor-china.
 - Old responsible-person change rule, NMPA 2021 document rules Art. 38 (Fujian MPA): re-fetched 2026-09-24, both checks. Add replace-distributor-china.
@@ -4059,7 +4059,7 @@ extraction, because the reports set text in columns).
 - URL: https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
 - Verified 1: 2026-10-11 (rendered with headless Edge on a temporary profile; found through the rule-centre search page)
 - Verified 2: 2026-10-11 (re-rendered at iteration 8; 20人以上, 12人以上, 100平方米, 10万元, 定向邀约, 天猫五星运营服务商, 主营跨境：发货GMV≥50万, 品牌直播服务 re-found)
-- Used in: tmall-partner-douyin-partner-same-agency
+- Used in: tmall-partner-douyin-partner-same-agency; douyin-livestream-agency-vs-dp
 - Notes: superseded on the quarterly bar by the October 2026 revision below once it takes effect. The 2023 品牌服务商准入规范 consultation (100-person team) is historical; do not cite as current.
 
 ### Douyin revision of the cooperation rules: brand-track bars from October 15, 2026
@@ -4074,12 +4074,12 @@ extraction, because the reports set text in columns).
 
 ### Douyin operating service provider management code: categories, commission-scope and padding violations
 - Value: service-market categories 电商运营服务 (全店服务, 内容服务, 商城服务), 品牌运营服务 (品牌全案服务, 品牌直播服务, 分成结算), 跨境服务商 (跨境电商运营); violation points capped at 120 a year, 120 = removal and 100% deposit (cross-border providers: fixed 5,000 / 10,000 / 20,000 RMB at 60 / 90 / 120); one-time 120 points for misleading a merchant on the revenue-split scope ("指定链接" described, 全店/全部直播/全部短视频/全部商品卡 actually split) and, under 虚假交易, for binding stores not actually served to pass assessments or ratings
-- As of: 2026-07-15
+- As of: 2026-07-14 (effective date corrected from the twice-verified P46 source read on 2026-10-19)
 - Source: Douyin E-commerce (抖音电商), 抖音电商运营类服务商管理规范
 - URL: https://school.jinritemai.com/doudian/web/articlev0/aJ5N3Pxir67C
 - Verified 1: 2026-10-11 (headless Edge)
 - Verified 2: 2026-10-11 (re-rendered; 品牌全案服务、品牌直播服务、分成结算, 一次性累计违规积分120分, 指定链接, 全部商品卡, 绑定实际未服务的商家, 扣除100%保证金 re-found)
-- Used in: tmall-partner-douyin-partner-same-agency
+- Used in: tmall-partner-douyin-partner-same-agency; douyin-livestream-agency-vs-dp
 
 ### Internet platform pricing rule, article 5: no forced price parity or auto price-matching
 - Value: 第五条: a merchant selling on several platforms sets its own prices; a platform may not, through higher or added fees, deposit deductions, cut subsidies, traffic limits, search demotion, algorithmic demotion, store blocking or delisting, force or indirectly force it to cut prices or promote through rebates (一), to price no higher on that platform than on other channels (二), or to switch on automatic price-following or price-cutting (三); unified pricing under the platform's own business model excepted. 第二十九条: in force 2026-04-10, valid five years. Notice dated 2025-12-09, 发改价格规〔2025〕1607号, NDRC, SAMR and CAC.
@@ -4093,12 +4093,12 @@ extraction, because the reports set text in columns).
 
 ### Douyin 618 2025: half of livestream sales from store broadcasts
 - Value: during 618 2025, half of the GMV driven by Douyin livestreams came from store self-broadcasts (店铺自播); nearly 70% of merchants with over 10 million RMB of livestream GMV used store broadcasts; store-broadcast penetration also rising on Taobao Live
-- As of: 2026-01-30 18:18
+- As of: 2026-01-30 19:00:04
 - Source: 21st Century Business Herald (21世纪经济报道), 雷晨, 抖音电商全生态出击
 - URL: https://www.21jingji.com/article/20260130/herald/50ea314a64d44c9664cf2c6a0132a9cc.html
 - Verified 1: 2026-10-11
 - Verified 2: 2026-10-11 (re-fetched; 一半来自店铺自播, 近七成采用了店播模式 re-found)
-- Used in: tmall-partner-douyin-partner-same-agency
+- Used in: tmall-partner-douyin-partner-same-agency; douyin-livestream-agency-vs-dp
 - Notes: the figures are unattributed in the article (Douyin data by context); cite as the paper's report.
 
 ### Tmall Partner plus Douyin Partner at calculator defaults (proprietary)
@@ -5487,7 +5487,7 @@ extraction, because the reports set text in columns).
 - URL: https://school.jinritemai.com/doudian/web/articlev0/112620
 - Verified 1: 2026-10-18 (headless Edge on a private temporary profile; 与推广费合计最高不超过90% present)
 - Verified 2: 2026-10-18 (re-rendered at iteration 8; 与推广费合计最高不超过90%, 5%-80%, X=40%, 确认收货的15天后 and the 2026-10-12 stamp re-found)
-- Used in: douyin-affiliate-commission-brand
+- Used in: douyin-affiliate-commission-brand; douyin-livestream-agency-vs-dp
 - Notes: the page's date stamp moved from 2026-08-08 to 2026-10-12 since the P04 entries; the open (5% to 50%), named-creator (5% to 80%), creator technical service fee (10% / 20% / 40%) and settlement figures are unchanged. Cite it as "October 2026" from now on.
 
 ### Douyin cooperation orders: slot fees must go through the platform; pro-rata or flat
@@ -5625,7 +5625,7 @@ extraction, because the reports set text in columns).
 - URL: https://school.jinritemai.com/doudian/web/article/aJ2D2SbD5GWe
 - Verified 1: 2026-10-19, original sweep a3.txt.
 - Verified 2: 2026-10-19, continuation independent browser render resume-provider.txt; date, industry grouping, 200万, 20人以上, 12人以上 and deposit present.
-- Used in: tmall-partner-douyin-partner-same-agency (EN, FR, DE, ES correction dated 2026-10-19).
+- Used in: tmall-partner-douyin-partner-same-agency (EN, FR, DE, ES correction dated 2026-10-19).; douyin-livestream-agency-vs-dp
 - Notes: formal publication date is stated; no inferred precise October 15 commencement date. P15 already uses inclusive staff minimums and contains no outdated sales threshold.
 
 ### Toothpaste classification catalogue, future watch only
@@ -5636,3 +5636,116 @@ extraction, because the reports set text in columns).
 - Verified 1: 2026-10-19, opened official copy, paragraph four and issue date confirmed.
 - Verified 2: 2026-10-19, reopened official copy, both deadlines and stock transition unchanged.
 - Used in: signal-watch-list.md only; not in 07S.
+
+## Partner cluster P46 (douyin-livestream-agency-vs-dp), 2026-10-19
+
+### Douyin MCN entry bar and commission split (Buyin MCN management code)
+- Value: an MCN on Buyin (巨量百应) must be an independent legal entity and general VAT payer, at least six months old, with registered capital of 500,000 RMB or more, a fixed office, a business scope including 互联网信息内容多渠道分发服务, and at least three bound e-commerce creators. Settlement: commission = (paid amount - shipping + creator subsidy + platform subsidy) x commission rate; Douyin deducts a technical service fee of 10% on the agency side; the remainder is split between agency and creator at a ratio the agency sets in its Buyin back office (达人结算管理). Agencies removed by the platform can never re-enter.
+- As of: page stamped 2026-09-15 10:44:10; first in force 2021-08-12, latest revision in force 2026-06-04
+- Source: Douyin E-commerce (抖音电商), 《巨量百应MCN机构管理规范》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/114051
+- Verified 1: 2026-10-19 (rendered with headless Edge on a private temporary profile)
+- Verified 2: 2026-10-19 (re-rendered at iteration 8; 50万元及以上, 六个月及以上, 绑定3个及以上电商达人, 机构侧平台技术服务费率为10%, 机构分成比例, 2026-09-15 re-found)
+- Used in: douyin-livestream-agency-vs-dp
+
+### Livestream E-commerce Supervision Measures, Order 117: host agencies (arts 2, 43, 45)
+- Value: art 2 defines a livestream-host service agency (直播营销人员服务机构) as one providing planning, operation, brokerage, training and technical support to hosts, and puts the live-room operator's duties on whoever actually runs another's live room; art 43: an agency working with a live-room operator verifies the operator's name, credit code, address, contact and licences and signs a written agreement setting each side's duties on host management, content management, product quality review and consumer protection; art 45: an agency providing product selection verifies the seller's licences, compulsory certification and conformity documents and keeps records at least three years from the end of the stream. In force 2026-02-01.
+- As of: published 2025-12-18, in force 2026-02-01 (CAC page 2026-01-07)
+- Source: Cyberspace Administration of China (国家网信办) carrying SAMR and CAC Order No. 117, 《直播电商监督管理办法》
+- URL: https://www.cac.gov.cn/2026-01/07/c_1769516655383334.htm
+- Verified 1: 2026-10-19 (curl, full text read)
+- Verified 2: 2026-10-19 (re-fetched at iteration 8; 实际运营他人直播间的, 策划、运营、经纪、培训和技术支持, 签订书面协议, 产品质量审核, 不少于三年, 2026年2月1日 re-found)
+- Used in: douyin-livestream-agency-vs-dp
+- Notes: extends the 06R entry on the same page (arts 2, 28, 59).
+
+### Brands outsource their own live rooms for big promotions; agency hourly quotes of 2,000 and 500 RMB
+- Value: a host with six years' experience (pseudonym) told the paper that some brands hand their live rooms to outside agencies (代运营机构) at major promotions; one agency quoted 2,000 RMB an hour and another 500, and the brand moved sessions to the cheaper one; hosts in Hangzhou mostly 100 to 200 RMB an hour, good ones 300 to 500, 50 to 80 in lower-tier cities and small agencies (2023)
+- As of: 2024-05-20 22:32
+- Source: Beijing Business Today (北京商报), on Beijing Daily's site (京报网), 时薪低至50元 "6·18"直播更卷了
+- URL: https://xinwen.bjd.com.cn/content/s664b5f05e4b00fc26b9e0c15.html
+- Verified 1: 2026-10-19 (curl)
+- Verified 2: 2026-10-19 (re-fetched at iteration 8; 时薪报价2000元, 另一家报价500元, 代运营机构, 2024-05-20 re-found)
+- Used in: douyin-livestream-agency-vs-dp
+- Notes: one host's account, not a rate card; the article says so in context and the piece labels it that way.
+
+### Douyin binds each shop to one official account
+- Value: 店铺官方账号: each shop selects a single Douyin account and binds it to the shop as its official account; a shop may bind several 授权号 for sharing its products
+- As of: 2022-09-28 10:43:58
+- Source: Douyin E-commerce (抖音电商), 抖音小店蓝v认证信息在官方账号与店铺授权号的统一表达
+- URL: https://school.jinritemai.com/doudian/web/article/aHbHwLQPDWaZ
+- Verified 1: 2026-10-19 (headless Edge)
+- Verified 2: 2026-10-19 (re-rendered at iteration 8; 每个店铺选定唯一抖音号与店铺进行绑定, 2022-09-28 re-found)
+- Used in: douyin-livestream-agency-vs-dp
+
+### Store-broadcast cost ratio at least 10 points below creator selling; 90,000 merchants past 1 million RMB through store broadcasts
+- Value: in the same Ebrun piece as the P35 entry: 自播费比普遍比达播费比低10%以上; one food merchant's own room 40% to 50%, creator selling over 50%; Douyin vice president 李亮: in 2024 more than 90,000 small and mid merchants that passed 1 million RMB GMV did so through store broadcasts, far more than through creators
+- As of: 2025-07-16 16:09
+- Source: Ebrun (亿邦动力), carried by Huxiu (虎嗅)
+- URL: https://m.huxiu.com/article/4584498.html
+- Verified 1: 2026-10-19 (curl)
+- Verified 2: 2026-10-19 (re-fetched at iteration 8; 达播费比至少35%以上, 自播费比普遍比达播费比低10%以上, 40%-50%, 2025-07-16 re-found)
+- Used in: douyin-livestream-agency-vs-dp
+- Notes: the 90,000-merchant line is not printed in the piece.
+
+### Douyin calculator defaults: DP versus creator lines (proprietary)
+- Value: at the Douyin calculator defaults (GMV 2,000,000 RMB, AOV 250, DP retainer 30,000 a month, DP commission 5%, paid media 15% at ROAS 2.5, creators 80% at 20%, organic 5%; Year 2 growth 50%, creators 60%, organic 20%): DP line 460,000 RMB (23% of GMV); creator commission 320,000 RMB (16%), 50 RMB per creator order; paid media 120,000 RMB; media plus creator commission 440,000 RMB; Douyin's 10% agency-side fee on the commission 32,000 RMB, leaving 288,000 RMB for agencies and creators (our arithmetic on the MCN code); Year 2 organic sales 600,000 RMB against 100,000 RMB in Year 1
+- As of: October 2026
+- Source: TheChinaPath calculator data, src/pages/tools/douyin-cost-calculator.astro defaults
+- Verified 1: 2026-10-19 (defaults read in the source file)
+- Verified 2: 2026-10-19 (defaults re-read and arithmetic recomputed at iteration 8)
+- Used in: douyin-livestream-agency-vs-dp
+- Notes: model assumptions, not results from stores under management; labelled as such in the copy.
+
+### Re-verified ledger entries reused (no new entry; add the slug to Used in)
+- Douyin operating service provider cooperation rules, formal October text (article/aJ2D2SbD5GWe, page 2026-10-16 09:56:26): rendered 2026-10-19 at both checks; ≥100平方米, 20人以上, 12人以上, 定向邀约, 10万元, 奢品跨境：发货GMV≥200万, 其他或无主营行业：发货GMV≥300万 present. Original Used in field now includes douyin-livestream-agency-vs-dp.
+- Douyin operating service provider management code (articlev0/aJ5N3Pxir67C): rendered 2026-10-19 at both checks; 品牌全案服务、品牌直播服务、分成结算 and 指定链接 present. The page states the latest revision took effect 2026年7月14日 (the P19 entry says 2026-07-15; cite July 2026). Original Used in field now includes douyin-livestream-agency-vs-dp.
+- Douyin affiliate commission settlement rules (articlev0/112620, page 2026-10-12 13:50:26): rendered 2026-10-19 at both checks; 5%-50%, 5%-80% and the after-sale refund clause present. Original Used in field now includes douyin-livestream-agency-vs-dp.
+- 21st Century Business Herald, 2026-01-30 (618 2025: half of livestream GMV from store broadcasts; nearly 70% of merchants over 10 million RMB used store broadcasts): fetched 2026-10-19 at both checks; 一半来自店铺自播 and 近七成采用了店播模式 present. The page metadata gives 2026-01-30 19:00:04 (the P19 entry says 18:18). Original Used in field now includes douyin-livestream-agency-vs-dp.
+
+### Researched, not used (P46, 2026-10-19)
+- Agency and 代运营 blogs on 代播 pricing (da-mai.com, smcark.com, xiaoduoai.com, douliangsh.com, Sohu agency posts): barred by the competitor rule.
+- 代播 firms' "service fee plus hourly" model, 2021 (woshipm.com/it/5147564.html, cbndata.com/information/204802): too old to price 2026 work.
+- 巨量百应MCN机构违规行为管理规则 (articlev0/114125, 2023-05-08): read once; nothing the piece needed.
+- Touzhong (投中网) copy of the Ebrun piece on Sina Tech (2025-07-17): a carrier; the Huxiu copy is cited.
+
+## Refresh 08R: 1688 launch and pricing sensitivity, 2026-10-20
+
+### 1688 retail launch: three stores across Taobao and Tmall
+- Value: March 26, 2024 announcement; 1688 Yanxuan Taobao store, enterprise procurement Tmall store, industrial selection Tmall store.
+- As of: March 26, 2024, historical launch only.
+- Source: Beijing Business Today (北京商报), He Qian and Qiao Xinyi, reporting confirmation from Taotian.
+- URL: https://www.bbtnews.com.cn/2024/0326/508493.shtml
+- Verified 1: 2026-10-20, page fetched; date and 三家店 plus exact storefront names confirmed.
+- Verified 2: 2026-10-20, URL re-fetched during createarticle iteration 8; same dated launch and names confirmed.
+- Used in: alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications; bounded factual corrections in its EN/FR/DE/ES published siblings.
+- Notes: one Taobao store and two Tmall stores. No current-store inspection claimed. No present seller eligibility or trade-route claim follows from this announcement.
+
+### 1688 launch ranges and supplier responsibilities
+- Value: home goods, business supplies, industrial supplies; semi-managed launch model with price negotiation, supplier dispatch and after-sales.
+- As of: March 26, 2024, 17:21:13.
+- Source: Yilan Business (壹览商业), Li Yan, original reporting.
+- URL: https://www.yilantop.com/article/23046
+- Verified 1: 2026-10-20, fetched original article, date/ranges and 半托管模式, 商量定价, 商家负责发货和售后 confirmed.
+- Verified 2: 2026-10-20, re-fetched at iteration 8; same text and historical scope.
+- Used in: alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications and locale factual corrections.
+- Notes: launch arrangements only, not current terms. Follower counts, factory totals, brand-factory relationships and sales anecdotes are excluded.
+
+### 1688 fiscal 2025 paid membership and domestic-wholesale scope
+- Value: more than 1 million paid members in fiscal 2025; domestic wholesale connecting factories/wholesalers with buyers. Alibaba.com is separately described as international wholesale.
+- As of: fiscal year ended March 31, 2025; annual report filed June 26, 2025, printed pp. 11-12.
+- Source: Alibaba Group (阿里巴巴集团), Chinese annual report on HKEX.
+- URL: https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0626/2025062601065_c.pdf
+- Verified 1: 2026-10-20, PDF fetched and passage read: 付費會員…總數超過100萬. Domestic/international wholesale distinction confirmed.
+- Verified 2: 2026-10-20, PDF re-fetched during iteration 8; pp. 11-12 still contain the same membership/scope statements.
+- Used in: alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications.
+- Notes: a fiscal 2025 snapshot, not an October 2026 count, GMV or buyer count. The article does not call this the newest report. Removed the earlier unsourced 174/192 industrial-belts and potential RMB 2 trillion volume passage in all four locales rather than repeat it.
+
+### Calculator-derived price sensitivity, October 2026
+- Value: default annual GMV RMB 3,500,000 / default average order RMB 250 = 14,000 orders; fixed-basket/order-count sensitivity at RMB 225/200 yields RMB 3,150,000/2,800,000 gross sales, reductions RMB 350,000/700,000. Revenue replacement requires 15,556 rounded-up orders / 17,500 orders. Separate illustrative contribution RMB 80 to 55 needs 45.4545% more kept orders.
+- As of: local calculator code read October 20, 2026.
+- Source: TheChinaPath calculator data, October 2026; source code src/pages/tools/tmall-global-setup-and-run.astro lines 18-19 and editorial arithmetic.
+- URL: https://www.thechinapath.com/tools/tmall-global-setup-and-run
+- Verified 1: 2026-10-20, local source read before drafting, default GMV/AOV checked.
+- Verified 2: 2026-10-20, local source re-read and all arithmetic recomputed in script; live public calculator URL fetched and reachable.
+- Used in: alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications.
+- Notes: settled proprietary-number fallback. These are editable defaults and explicitly hypothetical sensitivity scenarios, not actual stores, 1688 prices, a market forecast or agency service prices. Table uses gross order value before refunds/tax adjustments. Contribution example uses kept orders and fixed other per-order expenses.
