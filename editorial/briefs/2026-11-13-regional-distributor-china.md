@@ -48,7 +48,7 @@ They override any conflicting rule inside the skill. The standing preamble in
 **Query:** regional distributor china · **Tags:** Distributors
 **Word count:** 1,300 to 1,800
 
-**The answer, in one line.** Most national coverage in China is a network of regional distributors under one contract. A regional specialist that already sells your category often beats a national name that sells everything, so map the sub-distributors before you sign.
+**The answer, in one line.** National coverage can depend on regional distributors beneath the contracting company. Choose a regional specialist when it can document better access to the accounts your category needs; map the sub-distributors and verify active coverage before granting national rights. Published company networks illustrate this structure, but do not establish its share of the market.
 
 **The table it must carry.** National vs regional vs network: reach, focus, price control, cost, fit.
 

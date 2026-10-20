@@ -5749,3 +5749,135 @@ extraction, because the reports set text in columns).
 - Verified 2: 2026-10-20, local source re-read and all arithmetic recomputed in script; live public calculator URL fetched and reachable.
 - Used in: alibabas-strategic-expansion-1688s-launch-on-taobao-and-its-market-implications.
 - Notes: settled proprietary-number fallback. These are editable defaults and explicitly hypothetical sensitivity scenarios, not actual stores, 1688 prices, a market forecast or agency service prices. Table uses gross order value before refunds/tax adjustments. Contribution example uses kept orders and fixed other per-order expenses.
+
+## Partner P29: regional distributor coverage, 2026-10-20
+
+### Pinlive Foods regional distributor counts, year-end 2025
+- Value: East 186 (2024: 206), North 106 (114), South 106 (119), West 48 (55), total 446 (494). Distributor companies, not shops. Company-defined regions. Filing also describes imported foods and own-brand operations.
+- As of: December 31, 2025, comparative December 31, 2024; annual report published April 22, 2026, printed p.16, PDF page index 15.
+- Source: Pinlive Foods (品渥食品), 2025 annual report, original CNINFO filing.
+- URL: https://static.cninfo.com.cn/finalpage/2026-04-22/1225223160.PDF
+- Verified 1: 2026-10-20, Chinese search then full PDF fetch; regional table and year headers read.
+- Verified 2: 2026-10-20, PDF URL fetched again during createarticle iteration 8; all five rows re-found, including 东部186 and 总计446; comparative counts unchanged.
+- Used in: regional-distributor-china.
+- Notes: historical illustration only, not a list of available candidates or a measure of foreign-brand reach. Company is a food brand business, not a competing market-entry agency or third-party store operator.
+
+### Anjoy Foods regional network, year-end 2025
+- Value: total 2,290 distributors including 294 overseas; East China 757; Southwest 175. Not 2,290 mainland distributors.
+- As of: December 31, 2025; report published March 31, 2026, printed p.29, PDF page index 29.
+- Source: Anjoy Foods (安井食品), 2025 annual report, original CNINFO filing.
+- URL: https://static.cninfo.com.cn/finalpage/2026-03-31/1225063456.PDF
+- Verified 1: 2026-10-20, Chinese search then full PDF fetch; 经销商数量 and regional table read.
+- Verified 2: 2026-10-20, PDF URL fetched again during createarticle iteration 8; 2,290, 294, 757, 175 and year-end context re-found.
+- Used in: regional-distributor-china.
+- Notes: food manufacturer, not a competing agency. Its regional classifications are not equated with Pinlive's. Does not prove that most national importer contracts use sub-distributors.
+
+### Anti-Monopoly Law: resale prices and horizontal market division, P29 check
+- Value: Article 18 prohibits fixed/minimum resale-price agreements subject to statutory conditions/exceptions. Article 17 prohibits market division among competitors. Territory clauses need review; no blanket legality claim or advice to coordinate competing distributors.
+- As of: amended June 24, 2022; official page posted November 2, 2022.
+- Source: State Administration for Market Regulation (市场监管总局), Chinese Anti-Monopoly Law.
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_f0fae9eb3a684fc39e84d89eabfc2caa.html
+- Verified 1: 2026-10-20, fetched dated primary text, Articles 17 and 18 read including exceptions.
+- Verified 2: 2026-10-20, URL fetched again during createarticle iteration 8; 第十八条, 固定, 最低价格, 分割销售市场 and exception paragraphs re-read.
+- Used in: regional-distributor-china.
+- Notes: no safe-harbor percentage or current enforcement inference printed.
+
+### DaVinci Gourmet case result reused for P29 (proprietary fallback)
+- Value: cross-channel pricing disputes resolved within three months in the published project involving the brand's Tmall/JD stores and distributor network.
+- As of: published case checked October 20, 2026; project observation dates not supplied by case, not invented.
+- Source: TheChinaPath, src/content/cases/kerry-davinci.md and its public page.
+- URL: https://www.thechinapath.com/work/kerry-davinci
+- Verified 1: 2026-10-20, local case read and public URL fetched; three-month result confirmed.
+- Verified 2: 2026-10-20, URL fetched again during createarticle iteration 8; Results paragraph still states within three months.
+- Used in: regional-distributor-china.
+- Notes: one reported project result; no promised timetable, coverage ratio, or inferred legal assessment. Calculator defaults do not measure regional coverage, so the published-case fallback applies.
+
+## Anchor 09A (xiaohongshu-koc-seeding-cost), 2026-10-21
+
+All Pugongying entries read through the help-doc JSON API (https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=<id>&role=4); the menu is at /api/pgy/help/menu?role=4.
+
+### Pugongying trade modes: who prices what, follower caps, celebrity package prices
+- Value: nine trade modes (version 2026.04). Custom and batch deals: creator sets a flat price. Trial recruitment (众测招募): brand sets the price, consumer goods, creators under 150,000 followers. 合作广场: creators under 10,000 followers; ad-spend share at least 3% for 1,000+ follower creators. Celebrity package (星粉直达), by active fans: S 2m+ 300,000 RMB / 5m guaranteed exposures in 30 days; A 1m to 2m 270,000 / 4.5m; B 500k to 1m 210,000 / 3.5m; C 100k to 500k 170,000 / 2.8m; D under 100k 90,000 / 1.5m; refund = shortfall / 1,000 x 60 RMB; no 10% fee; endorsement contract of more than six months; 暂不支持境外客户下单. Celebrity custom deals (明星商单) closed to 美瞳, 药品, 保健食品, 医疗器械, medical services and funds/securities.
+- As of: October 2026 (doc updateTime 2026-10-15)
+- Source: Xiaohongshu Pugongying (蒲公英) help center, 交易模式总览
+- URL: https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=365934c681f69e354bd38835492e1e8f&role=4
+- Verified 1: 2026-10-21 (JSON API; tables read)
+- Verified 2: 2026-10-21 (re-fetched at iteration 8; 9万元, 30万元, 150万, 500万, 超过半年, 粉丝 15w 以下, 美瞳, 暂不支持境外客户下单 re-found)
+- Used in: xiaohongshu-koc-seeding-cost
+
+### Pugongying trial tasks: 10,000 RMB minimum, 10% fee, first order fee-free
+- Value: 单任务≥1万元; 10% platform service fee under per-read and flat per-note settlement; new client's first order exempt from the fee since 2025-10-14; fee not refunded if a task is cancelled
+- As of: October 2026 (doc updateTime 2026-10-19)
+- Source: Xiaohongshu Pugongying (蒲公英) help center, 众测招募
+- URL: https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=ff868b30379f999e313926c9e7c3bda0&role=4
+- Verified 1: 2026-10-21
+- Verified 2: 2026-10-21 (re-fetched at iteration 8; 单任务≥1万元, 10%, 首单 re-found)
+- Used in: xiaohongshu-koc-seeding-cost
+
+### Pugongying note protection period: 30, 45, 60 days or custom 30 to 365
+- Value: brand picks the retention period at order (30, 45, 60 days or custom 30 to 365); inside it the creator cannot delete or hide the note without the brand's consent; image notes can be edited (re-reviewed); settlement within 7 days of posting is not refunded if the brand agrees to a deletion; applies to custom, recruitment, co-creation and 新芽 modes
+- As of: October 2026 (doc updateTime 2026-10-16)
+- Source: Xiaohongshu Pugongying (蒲公英) help center, 笔记保护期
+- URL: https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=e748ef4c760584b31219d823e7bfe10a&role=4
+- Verified 1: 2026-10-21
+- Verified 2: 2026-10-21 (re-fetched at iteration 8; 30天，45天，60天, 30天～365天, 7天内 re-found)
+- Used in: xiaohongshu-koc-seeding-cost
+
+### Pugongying content boost: CPM 25 RMB (was 15) from January 23, 2026
+- Value: paid boost for sponsored notes at 25 RMB per thousand impressions after migration completed 2026-01-23 (old link 15 RMB); default budget 150 RMB per 24 hours; the 5,000 RMB per note per 30 days cap removed
+- As of: October 2026 (doc updateTime 2026-10-16)
+- Source: Xiaohongshu Pugongying (蒲公英) help center, 内容加热
+- URL: https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=da9e48ae271a1da33022122af1f0d56a&role=4
+- Verified 1: 2026-10-21
+- Verified 2: 2026-10-21 (re-fetched at iteration 8; 25元, 15元, 2026年1月23日, 150元/24h re-found)
+- Used in: xiaohongshu-koc-seeding-cost
+
+### Pugongying platform cases: Paula's Choice 47 KOC notes under 1,000 RMB each; LEGO 117 notes from 850 RMB
+- Value: 宝拉珍选 co-creation with amateur creators, 47 notes, 692,000 (69.2w) total exposure, 单篇低于1000元; LEGO flower-bouquet launch, 117 notes, 单篇笔记成本低至850元, reads 66% above target; data from the Pugongying platform, 2022 to 2025. Same doc: overseas enterprise accounts get e-invoices only (technical service fee); Alipay top-up for mainland entities only; the creator card shows the creator's quote for the month (本月报价)
+- As of: October 2026 (doc updateTime 2026-10-19; version 2026.04)
+- Source: Xiaohongshu Pugongying (蒲公英) help center, 蒲公英博主合作指南
+- URL: https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=97e5a307cc23aeefc7295c76926088c6&role=4
+- Verified 1: 2026-10-21
+- Verified 2: 2026-10-21 (re-fetched at iteration 8; 69.2w, 47篇, 单篇低于1000元, 117篇, 850元, 66％, 境外企业号, 本月报价 re-found)
+- Used in: xiaohongshu-koc-seeding-cost
+- Notes: "低至850元" is the platform's own wording ("as low as"); totals in copy (117 x 850) are labelled our arithmetic.
+
+### Xiaohongshu: 70% of MAU search on their own; 170 million a month seek purchase advice
+- Value: 70%的月活用户都有主动搜索的习惯; 每月寻求购买建议的用户数高达1.7个亿; 8,000万 "求链接" comments
+- As of: April 10, 2025
+- Source: Sina Tech (新浪科技), citing Xiaohongshu data
+- URL: https://finance.sina.com.cn/tech/2025-04-10/doc-inesschw5906564.shtml
+- Verified 1: 2026-10-21
+- Verified 2: 2026-10-21 (re-fetched at iteration 8; 70%的月活用户, 1.7个亿, 2025年04月10日 re-found)
+- Used in: xiaohongshu-koc-seeding-cost
+
+### Huatai Research: small accounts reach the first search screen; seeding notes posted mainly by amateurs and junior creators
+- Value: for product search terms (粉饼, 投影仪), notes from accounts under 5,000 followers with qualified data still reach the first screen; seeding notes posted mainly by 素人 (under 5k) and 初级达人 (5k to 50k), Q1 2024 (Newrank data); 千粉变现 lowered KOC entry to Pugongying to 1,000 to 5,000 followers
+- As of: May 31, 2024
+- Source: Huatai Research (华泰研究), 小红书引领内容社区商业化繁荣
+- URL: https://reportify-1252068037.cos.ap-beijing.myqcloud.com/media/production/s_4310a214_4310a214e80d88266404d155b567083b.pdf
+- Verified 1: 2026-10-21 (PDF text, pp. 14 and 22)
+- Verified 2: 2026-10-21 (re-downloaded at iteration 8; 2024 年5 月31 日, 账号粉丝数低于5000, 粉饼, 投影仪, 粉丝量1000-5000 re-found)
+- Used in: xiaohongshu-koc-seeding-cost
+- Notes: broker research hosted on a report aggregator; the 60% DAU search and 300m daily queries on p.14 are a February 2023 COO statement, not used.
+
+### Re-verified ledger entries reused (no new entry; add xiaohongshu-koc-seeding-cost to Used in)
+- Pugongying custom deals, creator price plus 10% (eb3150fa...): re-fetched 2026-10-21 at both checks (10%, 11,000; doc updateTime 2026-10-19).
+- Brand trust system, crackdown on 水下接单 from 2026-01-12 (1627df51...): re-fetched 2026-10-21 at both checks (doc updateTime 2026-10-13, cited as October 2026).
+- Sponsored post 10,800 RMB, 13.7 a month, CPE 10.7 vs 2.0 (Jiemian citing QuestMobile, 12440261): re-fetched 2026-10-21 at both checks.
+- Xiaohongshu MAU above 400m, 800m daily searches (Beijing Business Today via Sina Finance, 2026-05-27): re-fetched 2026-10-21 at both checks.
+- SAMR Order 72, art. 9 广告 label on reviews with a shopping link (gov.cn gazette 2023 No. 16): re-fetched 2026-10-21 at both checks; cited as June 2023.
+
+### Proprietary fallback used in 09A
+- Camper case (/work/camper, src/content/cases/camper.md): RedNote drove 38% of eCommerce traffic over 18 months despite the smallest follower count; three RedNote collaborators kept posting with no formal agreement. Read 2026-10-21 at both checks. Label in copy: "From our published Camper case".
+
+### NOT SOURCED, do not research again (09A, 2026-10-21)
+- Per-tier creator prices for junior, mid and top RedNote creators: still agency, MCN and data-vendor pages only (newrank trade pages, qian-gua, kingsta, jianshu, CSDN); Huaxin Securities 2025-10-13 and Huatai 2024-05-31 reports carry no tier prices; CBNData 243858 is a 2022 single-creator estimate.
+- A six-month search-survival share for seeded notes: no public source; not on file.
+
+### Publish interpretation review, 2026-10-21
+- 09A LEGO: 850 RMB is the lowest reported unit cost, not a disclosed average. Removed any implication that 117 x 850 was its actual campaign spend. The worked total is explicitly illustrative in all four locales.
+- 09A QuestMobile: multiplying average unit price by average volume and adding a fee produces a planning illustration, not a measured average monthly brand spend. The engagement comparison is confined to January-October 2024 and makes no universal or first-week claim.
+- 09A Pugongying retention: narrowed off-platform statement to absence of Pugongying protection for unreported deals; does not negate possible private contractual protections.
+- P29 SAMR: official Articles 17 and 18 refetched at publish on October 21; market-division and resale-price statements, including exceptions, remain supported.
+- FR/DE/ES indicative conversions use 8 RMB per euro, rounded; disclosed as a planning basis, not a current exchange-rate claim.

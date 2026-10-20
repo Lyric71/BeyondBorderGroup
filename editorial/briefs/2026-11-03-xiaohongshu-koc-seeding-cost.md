@@ -47,23 +47,23 @@ They override any conflicting rule inside the skill. The standing preamble in
 **Query:** xiaohongshu koc seeding cost · **Difficulty:** WEAK
 **Word count:** 1,900 to 2,300
 
-**The answer, in one line.** Seeding on RedNote is priced per post by follower tier, the rates are public enough to publish, and the return depends almost entirely on whether the notes are searchable six months later.
+**The answer, in one line.** Seeding on RedNote is priced per post by each creator, not from a public rate card (corrected October 21, 2026: Pugongying publishes no tier price list; creators set a flat price, the platform adds a 10% service fee, and the dated public figures are a 2024 average per sponsored note, the platform's own KOC case costs and its celebrity package prices), and the return depends almost entirely on whether the notes are still searchable six months later.
 
 **Why it is winnable.** The current top two are a New Zealand agency blog. No mainland operator owns this.
 
-**The table it must carry.** Rate by tier: KOC, micro, mid, top. Cost per post, typical volume in a campaign, and what a campaign at each tier costs in total.
+**The table it must carry.** Cost by tier, KOC to celebrity, from the dated figures that exist: who sets the price, cost per note, typical volume in a campaign, and what a campaign at that tier costs in total. Where no dated figure exists for a tier, the row says the creator quotes and gives no number.
 
 **The proprietary number.** What share of seeded notes are still surfacing in RedNote search after six months, from campaigns run. That reframes seeding from reach to search, which is the correct frame and nobody uses it.
 
 **Outline.**
 1. What seeding is on RedNote, and why it is not influencer marketing
-2. The rate card by tier
+2. What RedNote publishes on price, tier by tier
 3. What a campaign actually costs at each tier
 4. The measurement mistake: reach instead of search presence
 5. What comes back, and over what period
 6. When seeding is the wrong tool
 
-**Internal links.** `/social-in-china`, `/grow-in-china/social-commerce`
+**Internal links.** `/social-in-china`, `/grow-in-china/social-commerce`, `/compass` (the calculator or Compass link the Anchor spec requires)
 **CTA.** Talk to us.
 **Territory guard.** This is a cost and measurement piece. Running seeding is TheRedScroll's service. Hand off explicitly.
 

@@ -1,6 +1,6 @@
 # TheChinaPath — Insights (full text)
 
-> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-19.
+> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-20.
 
 ---
 # 11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event
@@ -16021,6 +16021,264 @@ If you are building for the long term in China, PIPL is more than another hurdle
 
 
 ---
+# Regional distributor in China: how to choose
+URL: https://www.thechinapath.com/insights/regional-distributor-china
+Published: 2026-10-21
+Updated: 2026-10-21
+Author: TheChinaPath
+Category: Market Strategy
+
+Compare regional and national distributors in China. Check active accounts, sub-distributors, costs, and online rights before granting territory.
+
+Choose a regional distributor in China when it can prove access to your
+category’s buyers. Choose a national partner when it can show who sells
+in each region and how those accounts reorder. If it relies on
+sub-distributors, map them before signing. Start with the coverage you can
+verify, then expand against results.
+
+Your importer may sell to a wholesaler that supplies another distributor
+before the goods reach a shop. Ask which company invoices that shop, and
+which salesperson visits when stock stops moving.
+
+Our guide to [finding a distributor in China](/compass/find-a-distributor-in-china)
+covers the search. After the first calls, decide how much territory the
+partner can support with its existing accounts.
+
+A national lead makes sense when your launch already needs accounts across
+regions and that company can document how it serves them.
+
+## Regional distributor in China or national network?
+
+Start by asking how the proposed coverage works. The contracting company
+may supply customers directly, work through regional firms, or combine both. A
+brand-managed network means you contract with regional partners yourself.
+Decide who will coordinate those businesses before comparing offers.
+
+<div class="table-scroll">
+
+| Decision | National lead partner | Regional specialist | Brand-managed regional network |
+|---|---|---|---|
+| Reach | Ask for active accounts by region and the company supplying each | Verify the cities and routes it actually serves | Combine documented territories; identify uncovered areas |
+| Category focus | Check the named category team and competing lines | Test buyer relationships in your particular channel | Select a different specialist where the channel requires it |
+| Price visibility and control limits | Trace downstream rebates; review restrictions with counsel | Direct supply can shorten reporting; same legal limits | Brand compares terms across partners; same legal limits |
+| Cost to compare | Buying margin plus any downstream allowances | Buying margin plus local delivery and sales support | Regional terms plus your own coordination costs |
+| Best fit | A partner with proven multi-region accounts and working reporting | A concentrated launch where category access is strong | A brand able to manage separate forecasts and disputes |
+
+</div>
+
+These are structures to investigate, not market price bands. Ask each
+candidate to quote the same product basket and named account list.
+
+## What a regional breakdown tells you
+
+Pinlive Foods, a Chinese food company with imported products and its own
+brands, reports its distributors by region. The counts vary substantially
+across its network.
+
+<div class="table-scroll">
+
+| Pinlive reporting region | Distributors, end-2024 | Distributors, end-2025 |
+|---|---:|---:|
+| East | 206 | 186 |
+| North | 114 | 106 |
+| South | 119 | 106 |
+| West | 55 | 48 |
+| Total | 494 | 446 |
+
+</div>
+
+> Pinlive reported 446 distributors at the end of 2025, including 186 in
+> its eastern region and 48 in its western region.
+> Source: Pinlive Foods (品渥食品), 2025 annual report, April 2026, p. 16.
+> https://static.cninfo.com.cn/finalpage/2026-04-22/1225223160.PDF
+
+These are distributor companies, not retail outlets. They describe
+Pinlive’s network, not the capacity available to a new foreign brand.
+Its regional labels are the company’s own.
+
+The source checks for this article were completed on October 20, 2026.
+The count table describes its year-end 2025 network beside 2024.
+
+The frozen-food producer Anjoy reports a different regional structure.
+
+> Anjoy reported 2,290 distributors at the end of 2025, including 294
+> overseas. Its East China count was 757 and its Southwest count was 175.
+> Source: Anjoy Foods (安井食品), 2025 annual report, March 2026, p. 29.
+> https://static.cninfo.com.cn/finalpage/2026-03-31/1225063456.PDF
+
+These food-company examples support asking for a regional breakdown; they
+don’t establish coverage needs in other industries. Don’t compare the
+regional counts across the companies as if their territories or products
+were identical.
+
+## Ask for the accounts behind the map
+
+Request a redacted transaction extract for your category, with a start and
+end date. Keep account identifiers consistent between files. Show orders
+and credits separately, in units and value. A directory of shop names says
+little about whether they still buy.
+
+Agree a lookback that covers the category’s normal reorder cycle. Deduct
+returns when judging activity; a large shipment followed by a full credit
+shouldn’t count as a successful account.
+
+After agreeing confidentiality terms, choose some accounts yourself for
+authorized reference checks. The buyer should identify its supplier and the
+person who takes its orders. A recent return can reveal who handles a
+problem once the goods arrive. Match those answers to the proposed
+operating structure.
+
+Then follow a product through a reorder. Check the ordering account against
+the dispatch record and the receiving location. A shipment into another
+wholesaler proves an intermediate sale. Ask for the next transaction before
+counting those shops as active retail accounts.
+
+For a foodservice product, a wholesaler’s supermarket list may contribute
+little to the launch. Ask whether its staff already call on the cafes or
+professional kitchens you need. For a product requiring installation, find
+out who performs the work after delivery.
+
+Ask how much time the assigned salesperson can give your line alongside
+competing products. Have that person explain the proposed call schedule.
+
+Find out who takes over if the salesperson leaves. A buyer relationship
+held by one employee needs a handover plan.
+
+## Map sub-distributors before granting territory
+
+The lead partner should identify every business expected to handle your
+goods and explain its role. Record the legal entity and its territory,
+then follow stock ownership through each handoff so you can see which
+company owes payment when goods have moved but the cash hasn’t.
+
+Name the responsible manager.
+
+That person should be able to resolve a missed delivery even when another
+company holds the stock.
+
+A call with the proposed regional operator tests whether the relationship
+already exists. If the lead partner will appoint that operator only after
+you sign, classify the region as planned and price the proposal accordingly.
+
+Your agreement can require notice of downstream appointments and reports
+from those businesses. It should also allocate responsibility when a
+sub-distributor stops trading. Have counsel draft the obligations so they
+bind the lead partner; a promise made by a company that never signs your
+contract can be difficult to use.
+
+Agree how aged inventory is counted and paid for when a territory changes
+hands, with the handover procedure in the contract. Check the physical stock
+before approving a transfer.
+
+A national importer and a local sales team can perform separate jobs.
+The brief for [distribution in China](/enter-china/distribution) should
+record both roles. Require the candidate’s proposal to identify the
+responsibilities it will accept. Verify the proposed importer’s ability to
+handle your products separately from the sales network.
+
+## Compare costs at the account level
+
+A regional quote may look expensive because it includes delivery to shops.
+A national quote may leave that cost with a downstream business. Request
+the calculation through to delivery at the same customer. Identify allowances
+already included in another party’s quote so you don’t count them twice.
+
+Separate the purchase price from promotional allowances. Unsold stock needs
+an owner, and the next shipment needs funding while earlier invoices remain
+unpaid. For chilled goods, compare quotes only after the storage and
+delivery conditions are clear.
+
+Use a common planning period and report the total support spend alongside
+the number of accounts that reordered. Define a reorder before running the
+comparison: another shipment to the same wholesaler may tell you little
+about purchases further down the chain.
+
+Your team will spend time on this. Several regional partners mean separate
+forecasts to reconcile and more people to pay or chase. Put staff time into
+the comparison, including travel, before deciding that removing a national
+lead saves money.
+
+Choose a first territory you can observe and the partner can serve
+profitably at your expected volume. Set written volume and service targets,
+then check results before expanding. Put the review date in the agreement,
+with a defined process for changing the grant if the
+results fall short.
+
+Require the evidence used for expansion to identify receiving accounts and
+net purchases. A larger forecast alone shouldn’t trigger a wider grant.
+
+## Separate online rights from regional coverage
+
+Write down whether the regional partner may sell online. Name each approved
+store and the legal entity holding its account. Agree how
+orders outside its offline territory will be handled.
+Record any accounts the brand keeps, including national retail customers.
+Resolve overlaps before the same buyer receives competing proposals.
+
+Our published [DaVinci Gourmet case](/work/kerry-davinci) records
+cross-channel pricing disputes resolved within three months while we ran
+its Tmall and JD stores alongside the distributor network. That is a
+TheChinaPath project result, checked October 2026, not a promised timetable
+for another brand.
+
+The case reports the outcome, not a legal assessment of each pricing term.
+Use it as a reason to investigate channel conflict before appointment.
+
+Price visibility does not give a supplier unrestricted control over resale
+prices. Keep the operating report separate from any clause that penalizes
+a distributor for discounting.
+
+> Article 18 prohibits agreements fixing resale prices or setting minimum
+> resale prices, subject to the law’s exceptions and conditions.
+> Source: State Administration for Market Regulation (市场监管总局),
+> Anti-Monopoly Law, amended June 2022, text posted November 2022.
+> https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_f0fae9eb3a684fc39e84d89eabfc2caa.html
+
+Have China-qualified counsel review the territorial restrictions too. The
+same law separately addresses market division among competitors; don’t
+organize an agreement between rival distributors to divide customers.
+
+The [China distributor exclusivity guide](/insights/china-distributor-exclusivity)
+sets out how territory and performance reviews fit together. Attach the
+account map to the proposed grant so the commercial promise can be checked.
+
+## Questions before choosing a distributor
+
+### Is a regional distributor cheaper?
+
+The quote alone won’t tell you. Compare the costs through to the same
+customer, including the work your own team must do. A regional partner
+that supplies shops directly may include expenses that a national lead
+passes downstream. Ask for a cost breakdown using the same proposed
+accounts and products.
+
+### Does national coverage mean direct access to every retailer?
+
+No. Ask the candidate to distinguish its direct accounts from those served
+by sub-distributors. Verify recent category transactions and speak with
+selected buyers. A retailer’s logo in a presentation does not establish
+who holds the account, whether it is active, or whether it will list your
+product after you sign.
+
+### Can I start in a region and add others later?
+
+Yes, if the agreement leaves that route available. Define the initial
+territory and reserve ungranted areas. Set a review date and require
+evidence of repeat orders before expansion. Specify how a new territory
+would be approved; avoid language that gives national exclusivity
+automatically after the first purchase.
+
+### What should a distributor shortlist brief contain?
+
+Name the product range and the buyers you want to reach. State the launch
+territory, then explain which channels the brand will retain. Include
+storage or service requirements that change who can handle the goods.
+Ask candidates for evidence of current active accounts. Record customers
+they hope to recruit separately.
+
+[Build a regional or national distributor shortlist with Compass](/compass).
+
+---
 # Replace a China distributor without losing the shelf
 URL: https://www.thechinapath.com/insights/replace-distributor-china
 Published: 2026-09-24
@@ -22892,6 +23150,292 @@ At TheChinaPath, this is the terrain where we work with clients, connecting glob
 
 If China moves from festival first to instant first, which parts of that new journey should carry your brand's signature, and which parts are you currently leaving for the platforms to decide?
 
+
+---
+# Xiaohongshu KOC seeding cost: per note and campaign
+URL: https://www.thechinapath.com/insights/xiaohongshu-koc-seeding-cost
+Published: 2026-10-21
+Updated: 2026-10-21
+Author: TheChinaPath
+Category: KOLs & Livestream
+
+What RedNote seeding costs per note and per campaign, from KOC trials to celebrity packages, and why the return shows up in search months later.
+
+Xiaohongshu (RedNote) KOC seeding costs under RMB 1,000 (about US$140) a note at
+the small end, per the platform’s own cases. The average sponsored note ran RMB
+10,800 from January to October 2024. There is no public rate card. Each creator names a price and the
+platform adds 10%. The return depends on whether the notes still turn up in
+search months later.
+
+RedNote sells creator deals through Pugongying, its creator marketplace. The
+table below uses only dated figures: the platform’s help center, its own brand
+cases, and one industry dataset. Where a tier has no dated public price, the row
+says so. Dollar figures use RMB 7.1 to the dollar. All figures were checked
+against their sources on October 21, 2026.
+
+<div class="table-scroll">
+
+| Tier | Followers | Who sets the price | Cost per note (RMB) | Typical volume | Campaign total (RMB) |
+|---|---|---|---|---|---|
+| KOC (amateur creators) | under 5,000 | Creator, or the brand in a trial task | 850 to 1,000 in RedNote’s cases | 47 to 117 notes | under 47,000 for Paula’s Choice; LEGO total not disclosed |
+| Trial pool | under 150,000 | Brand | Brand’s offer per note | Brand picks the headcount | 10,000 minimum, 11,000 with the fee |
+| Junior creators | 5,000 to 50,000 | Creator | Creator quotes; no dated public figure | Set by the brand’s budget | Creator quotes |
+| Mid and top creators | above 50,000 | Creator | Creator quotes; no dated public figure | Set by the brand’s budget | Creator quotes |
+| All tiers, Jan. to Oct. 2024 average | any | Creator | 10,800 | 13.7 notes a month per brand | about 162,800 a month with the fee |
+| Celebrity package | by active fans | RedNote | 90,000 to 300,000 a package | one star, 1.5 to 5 million exposures guaranteed | 90,000 to 300,000, no fee |
+
+</div>
+
+Sources follow below. Calculated campaign budgets are illustrations using the
+cited figures, not reported spending totals.
+
+## What a seeded note buys on RedNote
+
+Seeding is the usual English name for zhongcao (种草), literally “planting grass”:
+putting an idea about a product in a shopper’s head before the need arrives. On
+RedNote, a brand pays creators to post notes about a product in their own words.
+A note is a photo set or a short video with a long caption, and it lives on as a
+search result.
+
+People open RedNote to look things up, which is where it parts ways with
+Instagram.
+
+> 70% of RedNote’s monthly active users search on the app of their own
+> accord, and 170 million users a month come looking for purchase advice.
+> Source: Sina Tech (新浪科技), citing Xiaohongshu data, April 2025. https://finance.sina.com.cn/tech/2025-04-10/doc-inesschw5906564.shtml
+
+> RedNote passed 400 million monthly active users, with up to 800 million
+> searches a day.
+> Source: Beijing Business Today (北京商报), via Sina Finance, May 2026. https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhziqxq9291575.shtml
+
+So the person reading a seeded note has often just typed the product name, or
+the problem it solves, into a search box. A feed post fades in days. A note that
+ranks for a search term keeps getting read while it ranks and while it stays up.
+
+## What RedNote publishes on price, tier by tier
+
+Less than you’d expect. RedNote does not publish a rate card by follower tier.
+On Pugongying, each creator sets a flat price for a note, the brand can see the
+creator’s current quote on the profile card, and the platform charges the brand
+a service fee on top.
+
+> On a custom Pugongying deal, the brand pays the creator’s flat price plus a
+> 10% platform service fee. A RMB 10,000 quote costs RMB 11,000.
+> Source: Xiaohongshu Pugongying (蒲公英) help center, October 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=eb3150fa550d424459f8838a77c7e433&role=4
+
+The tiers are a convention. Analysts at Huatai Research, part of a Chinese
+brokerage, sort RedNote creators into amateurs under 5,000 followers and junior
+creators between 5,000 and 50,000, and found that those two groups post most of
+the seeding notes on the app. Huatai also reported that Pugongying had lowered
+its entry bar for KOCs to 1,000 followers.
+
+> Seeding notes on RedNote are posted mainly by amateurs (under 5,000
+> followers) and junior creators (5,000 to 50,000). Pugongying’s entry bar
+> for KOCs was lowered to 1,000 to 5,000 followers.
+> Source: Huatai Research (华泰研究), May 2024. https://reportify-1252068037.cos.ap-beijing.myqcloud.com/media/production/s_4310a214_4310a214e80d88266404d155b567083b.pdf
+
+Search for a RedNote rate card in English or Chinese and you’ll find dozens.
+They come from agencies and data vendors, and almost none carries a date or a
+method. We left them out of the table. What’s left is thinner, and all of it
+checks out.
+
+RedNote does set prices in one place, and it’s the very top. Its celebrity
+package, sold as a flat bundle with guaranteed exposure, is priced by the size
+of the star’s active fan base.
+
+> RedNote’s celebrity package costs RMB 90,000 for a star with under
+> 100,000 active fans and RMB 300,000 above 2 million, with 1.5 million to
+> 5 million guaranteed exposures in 30 days. It is not open to overseas
+> clients and needs an endorsement contract of more than six months.
+> Source: Xiaohongshu Pugongying (蒲公英) help center, October 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=365934c681f69e354bd38835492e1e8f&role=4
+
+## Xiaohongshu KOC seeding cost, campaign by campaign
+
+**KOC campaigns.** RedNote’s own brand cases give the cleanest small-tier
+numbers. Paula’s Choice briefed amateur creators to write honest reviews and
+got 47 notes for under RMB 1,000 each. LEGO did the same for a flower-bouquet
+launch and got 117 notes for as little as RMB 850 a note.
+
+> Paula’s Choice: 47 KOC notes, 692,000 total exposures, under RMB 1,000 a
+> note. LEGO: 117 notes, cost per note as low as RMB 850, reads 66% above
+> target. Platform data, 2022 to 2025.
+> Source: Xiaohongshu Pugongying (蒲公英) help center, October 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=97e5a307cc23aeefc7295c76926088c6&role=4
+
+That puts the Paula’s Choice campaign under RMB 47,000 (about US$6,600). An illustrative 117
+notes at the lowest reported RMB 850 rate comes to about RMB 99,000 (about
+US$14,000); LEGO’s actual campaign total was not disclosed. On the Paula’s
+Choice figures, a thousand exposures cost under RMB 68.
+
+Consumer goods brands get a second route, a trial mode. Here the brand sets the
+price and ships samples, and creators under 150,000 followers apply. It has a
+floor.
+
+> A Pugongying trial task needs a budget of at least RMB 10,000, and the
+> platform charges a 10% service fee. A new client’s first order is
+> fee-free.
+> Source: Xiaohongshu Pugongying (蒲公英) help center, October 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=ff868b30379f999e313926c9e7c3bda0&role=4
+
+The cheapest real test, then, sits at the bottom of the market. One trial task
+at the RMB 10,000 floor costs RMB 11,000 with the fee, or RMB 10,000 on a first
+order, when the fee is waived. Twenty KOC notes at the RMB 1,000 case price come
+to RMB 22,000 with the fee, about US$3,100. In our experience either is enough
+to see which notes start to rank.
+
+Above the KOC tier the public record runs thin. The only dated figure is an
+average across every creator who took a sponsored deal.
+
+> Sponsored notes on RedNote averaged RMB 10,800 each from January to October
+> 2024. A brand ran 13.7 of them a month on average, and paid RMB 10.7 per
+> engagement, against RMB 2.0 on Douyin.
+> Source: Jiemian (界面新闻), citing the data firm QuestMobile, March 2025. https://www.jiemian.com/article/12440261.html
+
+That average note is about US$1,520. A planning calculation using 13.7 notes and the
+10% fee gives about RMB 162,800 a month (about US$22,900). Multiplying these
+averages does not establish actual average monthly brand spending.
+
+One more line belongs in the budget. A seeded note can be pushed with paid
+traffic after it posts, and Pugongying’s boost tool sells that traffic by the
+thousand.
+
+> Pugongying’s content boost costs RMB 25 per thousand impressions, up from
+> RMB 15, since January 23, 2026. The default budget is RMB 150 a day.
+> Source: Xiaohongshu Pugongying (蒲公英) help center, October 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=da9e48ae271a1da33022122af1f0d56a&role=4
+
+RMB 10,000 of boost buys an estimated 400,000 impressions at that rate. We’d put
+it behind notes that already rank.
+
+## The measurement mistake: reach instead of search
+
+Most seeding reports end with reach: exposures and reads, then likes and saves,
+all counted in the week after posting. That’s the cheapest part of the return to
+measure, and it tells a brand the least about whether the money worked, because
+a note read 50,000 times in week one and deleted in week five has stopped
+selling by the time anyone checks.
+
+Ask a plainer question. Six months from now, when a shopper searches the product
+name or the problem it solves, are our notes on the first screen?
+
+On RedNote the answer starts at the order form, with a protection period the
+brand chooses.
+
+> When ordering, a brand picks how long the note must stay up: 30, 45, or 60
+> days, or a custom period from 30 to 365 days. Inside it, the creator cannot
+> delete or hide the note without the brand’s consent.
+> Source: Xiaohongshu Pugongying (蒲公英) help center, October 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=e748ef4c760584b31219d823e7bfe10a&role=4
+
+Pick 30 days and the creator can take the note down on day 31.
+
+You paid for a month. If the plan is to own a search term, order 180 days or
+more, and check that the order says so before you pay.
+
+Small accounts can rank. Huatai’s analysts found that for product searches such
+as “powder compact” or “projector,” notes from accounts under 5,000 followers
+with decent engagement still reach the first screen of results.
+
+Two rules sit around all this. Unreported deals done off the platform do not carry Pugongying’s protection
+period, and RedNote now penalizes them.
+
+> From January 12, 2026, RedNote has run a crackdown on creator deals taken
+> outside Pugongying without being reported, with penalties up to limits on
+> the brand’s own accounts.
+> Source: Xiaohongshu Pugongying (蒲公英) help center, October 2026. https://pgy.xiaohongshu.com/api/pgy/help/doc?shortcutId=1627df51a4c861f13e462aa2067d6c15&role=4
+
+And a review with a shopping link counts as an ad under Chinese law. It has to
+say so.
+
+> Experience shares and reviews that carry a shopping link must be clearly
+> labeled as advertising (广告).
+> Source: State Council Gazette (国务院公报), SAMR Order No. 72, June 2023. https://www.gov.cn/gongbao/2023/issue_10506/202306/content_6885261.html
+
+## What comes back, and over what period
+
+The first week tells you whether the notes landed. Reads, saves, and comments
+come in fast, and Pugongying settles the order within seven days of posting.
+Nothing about the sales case is settled by then.
+
+The return that pays for seeding shows up later, as traffic to wherever the
+brand sells. The best example we’re able to publish comes from our own work.
+
+From our published Camper case: over 18 months, RedNote drove 38% of Camper’s
+eCommerce traffic, even though it had the smallest follower count of the three
+platforms the brand ran. Three RedNote creators kept posting about the shoes
+with no formal agreement at all. The [Camper case study](/work/camper) has the
+full numbers.
+
+A follower count can’t explain that result. Our guess is that the notes kept
+being found long after they posted.
+
+So put the review dates in the plan before the campaign starts. Here’s how we
+read the return as it builds:
+
+- **Day 7.** Reads and saves against the creator’s usual numbers, plus what
+  the comments ask. This tells you whether the brief and the creator worked.
+  Sales come later.
+- **Day 90.** Search the product name and three problem terms from a fresh
+  account with no search history. Count how many of your notes appear on the
+  first screen.
+- **Day 180.** Same search again. Then put RedNote traffic to your store next
+  to the month before the campaign started.
+
+In the January to October 2024 dataset, RedNote cost more per engagement
+than Douyin: RMB 10.7 against RMB 2.0. Those averages do not predict the
+result of an individual campaign.
+
+## When seeding is the wrong tool
+
+One last check before any of this gets booked. Seeding sends searchers
+somewhere. When there is nowhere to send them, the money leaks. A brand with no
+store a Chinese shopper can reach, on RedNote, Tmall Global, or elsewhere, pays
+to create demand that a reseller or a copycat will pick up.
+
+It is also the wrong tool when shoppers don’t search for the category yet. A
+note can only rank for a term people type. A new category needs paid reach
+first, and seeding once the search terms exist.
+
+Some products cannot use every mode. Pugongying’s trial mode is open to consumer
+goods only. Celebrity deals are closed to colored contact lenses, medicines,
+health supplements, and medical devices, and the celebrity package is closed to
+overseas clients.
+
+Seeding programs need people who pick creators, brief them, and read their
+drafts. That work sits with TheRedScroll, the group’s China social media agency
+(https://www.theredscroll.com). Our side is the part that ends in a sale: the
+[RedNote store and social commerce operations](/grow-in-china/social-commerce)
+the notes point to, and the [China social selling hub](/social-in-china) for the
+platform view. If you would rather hand the store to a vetted partner,
+[Compass](/compass) lists them.
+
+## FAQ
+
+### How much does a Xiaohongshu KOC charge per note?
+
+There is no fixed rate. Each creator sets a flat price on Pugongying, and
+RedNote adds a 10% service fee. RedNote’s own cases put amateur creators under
+5,000 followers at RMB 850 to 1,000 a note, which is about US$120 to US$140.
+Above that tier, the creator’s own quote is the price.
+
+### Does RedNote take a cut of creator fees?
+
+Yes. On custom and trial deals booked through Pugongying, the brand pays the
+creator’s price plus a 10% platform service fee, so a RMB 10,000 note costs RMB
+11,000. A new client’s first trial order is fee-free. The celebrity package
+carries no fee because RedNote keeps the whole price.
+
+### How long does a sponsored RedNote note stay up?
+
+As long as the protection period the brand orders. The choices are 30, 45, or 60
+days, or a custom period up to 365 days. After it ends, the creator can delete
+or hide the note. A brand that wants the note to work as a search result should
+order at least 180 days.
+
+### Can an overseas brand book creators on Pugongying?
+
+Yes, once it has a verified professional account. Overseas companies pay by bank
+transfer, since Alipay top-up is for mainland entities only, and receive
+electronic invoices. Two things stay closed: the celebrity package does not take
+overseas clients, and the trial mode is limited to consumer goods.
+
+[Talk to us about turning RedNote searches into sales](/contact)
 
 ---
 # Opening a Xiaohongshu (RedNote) store as an overseas brand

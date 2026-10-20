@@ -9,6 +9,8 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'xiaohongshu-koc-seeding-cost': 'cout-campagne-koc-xiaohongshu',
+  'regional-distributor-china': 'distributeur-regional-en-chine',
   'douyin-livestream-agency-vs-dp': 'agence-live-douyin-ou-douyin-partner',
   'douyin-affiliate-commission-brand': 'commission-des-createurs-douyin',
   'douyin-after-sales-reserve-warranty': 'douyin-reserve-apres-vente-garanties',
@@ -189,6 +191,8 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'xiaohongshu-koc-seeding-cost': 'xiaohongshu-koc-kampagnen-kosten',
+  'regional-distributor-china': 'regionale-distributoren-in-china',
   'douyin-livestream-agency-vs-dp': 'douyin-liveagentur-oder-douyin-partner',
   'douyin-affiliate-commission-brand': 'douyin-creator-provision-was-marken-zahlen',
   'douyin-after-sales-reserve-warranty': 'douyin-ruecklage-fuer-garantiefaelle',
@@ -369,6 +373,8 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'xiaohongshu-koc-seeding-cost': 'coste-campana-koc-xiaohongshu',
+  'regional-distributor-china': 'distribuidor-regional-en-china',
   'douyin-livestream-agency-vs-dp': 'agencia-directos-douyin-o-douyin-partner',
   'douyin-affiliate-commission-brand': 'comision-de-afiliacion-douyin-lo-que-paga-una-marca',
   'douyin-after-sales-reserve-warranty': 'douyin-reserva-de-posventa-garantias',
