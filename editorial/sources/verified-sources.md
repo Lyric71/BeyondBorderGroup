@@ -5881,3 +5881,150 @@ All Pugongying entries read through the help-doc JSON API (https://pgy.xiaohongs
 - 09A Pugongying retention: narrowed off-platform statement to absence of Pugongying protection for unreported deals; does not negate possible private contractual protections.
 - P29 SAMR: official Articles 17 and 18 refetched at publish on October 21; market-division and resale-price statements, including exceptions, remain supported.
 - FR/DE/ES indicative conversions use 8 RMB per euro, rounded; disclosed as a planning basis, not a current exchange-rate claim.
+
+## Partner P23: Double 11 review, 2026-10-21
+
+### Douyin campaign display versus activity analysis
+- Value: the official guide distinguishes real-time sales displays and shareable campaign reports from activity analysis of sales channels, products and audiences.
+- As of: October 16, 2023, 10:46:21.
+- Source: Douyin E-commerce (抖音电商), 罗盘经营/罗盘策略「大促作战室」重磅上线.
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHvN4bfpmqMu
+- Verified 1: 2026-10-21, private headless Edge capture douyin-check1.html; publication date and functionality read.
+- Verified 2: 2026-10-21, fresh private headless Edge capture douyin-check2.html at createarticle iteration 8; date, 活动分析, 翻牌器 and 成交渠道 confirmed.
+- Used in: double-11-agency-review.
+- Notes: historical documentation; copy explicitly uses current account labels and does not claim unchanged menus or any 2026 campaign date. Evidence in session scratch directory tcp-partner-20261021.
+
+### Lanzhou Huanghe reported 2025 Douyin advertising ROI before refunds
+- Value: ad spend 20,043.40万元 (RMB 200.434 million), attributed GMV 21,027.61万元 (RMB 210.2761 million), reported ratio 1.05. Footnote defines ratio as GMV/ad spend and explicitly excludes subsequent refunds and returns from GMV.
+- As of: 2025 operating period; accountant response signed June 12, 2026, filed June 13, 2026.
+- Source: Beijing Xinghua Certified Public Accountants (北京兴华会计师事务所), response on Lanzhou Huanghe Enterprises (兰州黄河企业股份有限公司) 2025 annual report, printed page 56, PDF page 60.
+- URL: https://static.cninfo.com.cn/finalpage/2026-06-13/1225369700.PDF
+- Verified 1: 2026-10-21, full PDF downloaded; table, units and footnote read on page 60; signed date read on final page.
+- Verified 2: 2026-10-21, separate fresh PDF download at iteration 8; same figures, definition and signature date confirmed.
+- Used in: double-11-agency-review.
+- Notes: copy cites only 1.05 and the definition. One manufacturer's calculation, never a market benchmark or claim about all platform metrics. No agency supplier named or cited. Both PDF copies retained in session scratch directory tcp-partner-20261021.
+
+### P23 calculator defaults and refund sensitivity
+- Value: Douyin model default AOV 250 RMB and ROAS 2.5. Arithmetic at 100 equal-value orders: sales 25,000 RMB; ad spend 10,000 RMB; 100 RMB ad cost per paid order. At an assumed 20% full-refund rate: 80 orders kept, 20,000 RMB retained sales, ratio 2.0, 125 RMB ad cost per kept order.
+- As of: October 2026.
+- Source: TheChinaPath calculator data, src/pages/tools/douyin-cost-calculator.astro, drivers aov and roas.
+- URL: https://www.thechinapath.com/tools/douyin-cost-calculator
+- Verified 1: 2026-10-21, source defaults read before drafting.
+- Verified 2: 2026-10-21, source defaults re-read at iteration 8; arithmetic recalculated.
+- Used in: double-11-agency-review; guides/double-11-agency-review.
+- Notes: editable model assumptions plus explicitly illustrative sensitivity, not measured outcomes, category refund rates or agency service prices. Ad spend fixed; other costs excluded. Settled proprietary-number fallback.
+
+## Toys and games cost research (Ledger 09L, cost-to-sell-toys-and-games-in-china), October 22, 2026
+
+### Tmall Global toy rates: 5% and 60,000 RMB a year on all four toy lines
+- Value: 母婴 rows 玩具/童车/益智/早教/游乐设备, 毛绒玩偶/公仔/挂偶/配件, 拼搭/积木/模型/拼图/拼板, 模玩/动漫/周边/cos/桌游: 5% / 60,000 RMB a year; 乐器/吉他/钢琴/配件 2% / 30,000; 数字生活/游戏平台 0.6% / 30,000
+- As of: adjustment posted 2026-09-03, in force 2026-09-09
+- Source: Tmall Global (天猫国际), 《天猫国际各类目年费、技术服务费率》
+- URL: https://rule.tmall.hk/?type=detail&ruleId=11005909&cId=625 (render with the hash route)
+- Verified 1: 2026-10-22 (rendered with headless Edge)
+- Verified 2: 2026-10-22 (re-rendered at iteration 8; both toy rows and the 2026年9月9日正式生效 clause re-found)
+- Used in: cost-to-sell-toys-and-games-in-china; Tmall Global calculator row "Toys, models and tabletop games" (EN, FR, DE, ES)
+
+### Tmall Global new-store annual-fee waiver: toys named, months inside April 1, 2026 to March 31, 2027 only
+- Value: stores launched 2026-04-01 to 2027-03-31 whose main category is in the listed range (母婴: 玩具潮玩类, four lines; 童装童鞋类; all 服装服饰; part of 家居) pay no annual fee in the 60,000 tier; the free months are those inside the incentive period 2026-04-01 to 2027-03-31; fees already paid are refunded within 6 months of the policy. Companion plan ruleId 20010439: new and second-year stores (second-year = launched 2025-04-01 to 2026-03-31) pay 30,000 a year (2,500 a month) in the 60,000 tier, only inside the same period
+- As of: both posted 2026-07-16
+- Source: Tmall Global (天猫国际), 《2026年天猫国际新商家 服饰/母婴/家居部分类目技术服务年费 特殊激励计划》 and 《2026年天猫国际新商家及次新商家技术服务年费激励计划》
+- URL: https://rule.tmall.hk/?type=detail&ruleId=20010440&cId=625 (and ruleId=20010439)
+- Verified 1: 2026-10-22 (both rendered)
+- Verified 2: 2026-10-22 (20010440 re-rendered; 玩具潮玩类, 激励周期内其技术服务年费将予以免除 and the period re-found)
+- Used in: cost-to-sell-toys-and-games-in-china (20010440 cited)
+- Notes: end date registered in sources/signal-watch-list.md (2027-03-29).
+
+### JD Worldwide toys: US$1,000 flagship deposit, 5% plus 0.9%
+- Value: 玩具乐器 其他二级类目: deposit US$1,000 at GMV under 50,000 RMB, US$1,500 at the three tiers above; brand flagship US$1,000; 运营支持服务费 5.00%; 交易服务费 0.90%. 其它乐器 电脑音乐 2% (deposit 5,000 to 15,000), other 其它乐器 lines 2%
+- As of: revised 2026-09-24, in force 2026-10-01
+- Source: JD Worldwide (京东全球购), 《京东全球购开放平台各类目资费标准》
+- URL: https://jdw-rule.jd.hk/detail?ruleId=950583665543483392
+- Verified 1: 2026-10-22 (rendered with headless Edge; table parsed with rowspans; deposits in USD per the header)
+- Verified 2: 2026-10-22 (re-rendered; the 玩具乐器 其他二级类目 row and 2026年10月1日正式生效 re-found)
+- Used in: cost-to-sell-toys-and-games-in-china; JD Worldwide calculator row "Toys" (7,100 RMB at 7.1; EN, FR, DE, ES)
+
+### Douyin Global toys: 6% base plus 4% channel supplement; 3% for early-learning machines and children's bikes
+- Value: 玩具乐器 > 玩具: 益智早教玩具 早教机/点读学习 3.00% + 3.90%, other 6.00% + 4.00%; 儿童骑乘类玩具 自行车/三轮车 3.00% + 3.90%, other 6.00% + 4.00%; 玩具 其他二级类目 6.00% + 4.00%; 乐器及配件 3.00% + 3.90%
+- As of: schedule posted 2026-07-15
+- Source: Douyin E-commerce (抖音电商), 《【全球购】技术服务费费率标准》
+- URL: https://school.jinritemai.com/doudian/web/articlev0/aHMYyFoqESKn
+- Verified 1: 2026-10-22 (rendered with headless Edge)
+- Verified 2: 2026-10-22 (re-rendered; 早教机/点读学习, 6.00% and 4.00% re-found)
+- Used in: cost-to-sell-toys-and-games-in-china; Douyin calculator row "Toys" (EN, FR, DE, ES)
+
+### Calculator category rows for toys, added 2026-10-22 (proprietary)
+- Value: Tmall Global "Toys, models and tabletop games" 50,000 deposit / 5% / 60,000 annual; JD Worldwide "Toys" 7,100 deposit (US$1,000 flagship at 7.1) / 5% / no annual fee; Douyin "Toys" 5,000 deposit / 6%; Douyin "Baby products" re-set to 3% (the blended "Baby products, toys" row at 4.5% split in two). Derived on the Tmall Global model's per-order defaults (5% commission, 1% payment, 4 RMB pick and pack, 11 RMB last mile, 5% return rate, 15 RMB handling plus 11 RMB return leg): cost per kept order 23 / 29 / 41 RMB on 99 / 199 / 399 RMB baskets (23.3% / 14.6% / 10.3%); at an assumed 50% margin 26 / 70 / 158 RMB left per kept order, 2,273 / 852 / 379 kept orders (about 225,000 / 170,000 / 151,000 RMB of sales) to cover 60,000 RMB
+- As of: October 2026
+- Source: TheChinaPath calculator data (src/pages/tools/tmall-global-setup-and-run.astro, jd-worldwide-setup-and-run.astro, douyin-cost-calculator.astro, and the FR, DE, ES twins)
+- Label in copy: "TheChinaPath calculator data, October 2026"
+- Verified 1: 2026-10-22 (rows written from the three rule pages above)
+- Verified 2: 2026-10-22 (rule pages re-rendered; rows and arithmetic rechecked)
+- Used in: cost-to-sell-toys-and-games-in-china
+- Notes: supersedes the "baby and toys 4.5" figure in "Calculator category fee data, Douyin rows re-set 2026-09-24". Baskets and margin are ASSUMPTIONS, stated as such in copy.
+
+### CCC catalogue scope for toys (2202)
+- Value: 75. 玩具（2202）: 设计或预定供14岁以下儿童玩耍时使用的电玩具、塑胶玩具、金属玩具、乘骑车辆玩具; excluded: non-electric paper, bamboo, wooden, plush/cloth, ceramic, glass and plaster toys (plastic or metal parts with their own play function in a set stay in), non-electric mouth toys, teethers, water toys, inflatables, play dough and similar, GB 6675.11 to .14 and GB 26387 items, stationery with a play function; standards GB 6675.1 to .4, GB 19865 for electric and ride-on toys
+- As of: SAMR Announcement 2023 No. 36, signed 2023-08-10, posted 2023-09-05
+- Source: State Administration for Market Regulation (市场监管总局), 《强制性产品认证目录描述与界定表（2023年修订）》 (annex 2 PDF on the CNCA page)
+- URL: https://www.cnca.gov.cn/zwxx/gg/zjgg/art/2023/art_31ce43f5837d408cb2023ec693615ada.html
+- Verified 1: 2026-10-22 (curl; annex PDF read with PyMuPDF, pages 70 to 72)
+- Verified 2: 2026-10-22 (re-fetched; 玩具（2202） and 2023-09-05 re-found)
+- Used in: cost-to-sell-toys-and-games-in-china
+- Notes: SAMR 2025 No. 57 (2026-01-07) changed certification modes for 16 other products; toys untouched.
+
+### CCC rule: certification before sale or import; no-application exemptions
+- Value: art. 2, catalogue products 必须经过认证并标注认证标志后，方可出厂、销售、进口或者在其他经营活动中使用; art. 41, no certification needed for diplomatic goods, HK/Macao official goods, 入境人员随身从境外带入境内的自用物品, foreign aid, and 其他依法无需办理 cases
+- As of: Decree 117 of 2009 as revised by SAMR Decree 61, 2022-09-29; posted 2022-10-08
+- Source: State Administration for Market Regulation (市场监管总局), 《强制性产品认证管理规定》
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_1fb2082e0cca45cbb8e70b4a33e15e99.html
+- Verified 1: 2026-10-22 (curl)
+- Verified 2: 2026-10-22 (re-fetched; both strings re-found)
+- Used in: cost-to-sell-toys-and-games-in-china
+- Notes: no regulator text found on whether CCC binds bonded or direct-mail cross-border retail imports; never claim either way.
+
+### GB 6675.1-2025 in force November 1, 2026; "12+12" transition
+- Value: GB 6675.1-2025 玩具安全 第1部分：基本规范, mandatory, published 2025-10-05, in force 2026-11-01, MIIT in charge; MIIT: GB 6675.1 to .4 revised, 12-month production transition to the effective date, then 12 more months to sell stock made to the old standard; SAMR targets toys with 无标签标识、未标注适用年龄和警示标识不规范; 2024 domestic toy retail 97.85 billion RMB (up 25.5% on 2020), exports US$39.87 billion
+- As of: standard record 2025-10-05; press conference 2025-11-19 13:39
+- Source: SAMR national standards platform (全国标准信息公共服务平台); Ministry of Industry and Information Technology (工业和信息化部) press conference with SAMR
+- URL: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=C9E23F1F4C5C26B9AB4EF697C8F38E63 ; https://www.miit.gov.cn/xwfb/xwfbh/bxwfbh/art/2025/art_ceef45b5aab04aeaa03d7d91888d9807.html
+- Verified 1: 2026-10-22 (curl, both)
+- Verified 2: 2026-10-22 (re-fetched; 2026-11-01, 12+12, 未标注适用年龄 re-found)
+- Used in: cost-to-sell-toys-and-games-in-china (retail total researched, not cited)
+- Notes: dates registered in sources/signal-watch-list.md (2026-11-02, 2027-11-01).
+
+### Toys on the cross-border retail import list, lines 1347 to 1353
+- Value: 1347 95030010 供儿童乘骑的带轮玩具及玩偶车; 1348 95030021 玩具动物; 1349 95030029 其他玩偶; 1350 95030060 智力玩具; 1351 95030083 带动力装置的玩具及模型; 1352 95030089 其他未列名玩具; 1353 95030090 玩具的零件; no remark on any; 1354 to 1356 are video game consoles and machines
+- As of: list 2019 edition, in force 2020-01-01
+- Source: Ministry of Finance (财政部) and 12 bodies; list PDF as published by MOFCOM
+- URL: https://images.mofcom.gov.cn/cws/202001/20200110143527533.pdf
+- Verified 1: 2026-10-22 (PyMuPDF)
+- Verified 2: 2026-10-22 (re-downloaded; 1347, 95030010, 1353, 95030090 re-found)
+- Used in: cost-to-sell-toys-and-games-in-china
+- Notes: board and card games (heading 9504 other than consoles) are not on the 2019 text; the 2022 adjustment added "游戏品" lines whose annex was not fetchable. Do not claim either way.
+
+### E-Commerce Law arts. 42 and 43: notice, takedown, counter-statement, 15 days
+- Value: art. 42, a rights holder's notice with 初步证据 obliges the platform to take 删除、屏蔽、断开链接、终止交易和服务 measures and forward it; art. 43, the seller may file a non-infringement statement with preliminary evidence; the platform ends the measures if no complaint or suit is notified within 十五日 of the statement reaching the rights holder
+- As of: adopted 2018-08-31, in force 2019-01-01
+- Source: State Taxation Administration law database (国家税务总局 法规库), 中华人民共和国电子商务法
+- URL: https://fgk.chinatax.gov.cn/zcfgk/c100009/c5212256/content.html
+- Verified 1: 2026-10-22 (curl)
+- Verified 2: 2026-10-22 (re-fetched; 十五日内 and 初步证据 re-found)
+- Used in: cost-to-sell-toys-and-games-in-china
+- Publish recheck 2026-10-22: Article 43 re-read on the cited tax-administration page. The 15-day period starts when the counter-statement reaches the rights holder; the platform must end measures promptly if it receives no notice of a complaint or suit. The draft's guaranteed minimum outage was removed. Corrected scope carried into EN, FR, DE and ES.
+
+### Lithium batteries by air: 30% state of charge mandatory in 2026 for PI 966 above 2.7 Wh
+- Value: IATA DGR 66th edition: the PI 965 30% SoC limit extends to PI 966 (lithium-ion batteries packed with equipment), recommended in 2025 and mandatory in 2026 for batteries rated above 2.7 Wh; PI 967 (contained in equipment) 30% SoC (or 25% displayed) recommended
+- As of: article posted 2024-10-15
+- Source: Civil Aviation Science and Technology Research Institute (中国民航科学技术研究院), dangerous goods transport centre, translating IATA
+- URL: https://www.caacsri.com/support/detail/1175.html
+- Verified 1: 2026-10-22 (curl)
+- Verified 2: 2026-10-22 (re-fetched; 2.7 Wh, 30% SoC, 2024-10-15 re-found)
+- Used in: cost-to-sell-toys-and-games-in-china
+
+### Re-checks on 2026-10-22 for 09L (reused entries)
+- Cross-border retail imports supervised as personal-use goods (商财发〔2018〕486号, gov.cn): re-fetched, clause present. Add cost-to-sell-toys-and-games-in-china.
+- Cross-border tax 0% duty and 70% (财关税〔2016〕18号, MOF) and 13% VAT (2019 No. 39, gov.cn gazette): re-fetched, present. Add cost-to-sell-toys-and-games-in-china.
+- Product Quality Law art. 27 (CNIPA, https://www.cnipa.gov.cn/art/2019/7/31/art_104_67810.html): re-fetched, 第二十七条 present. Add cost-to-sell-toys-and-games-in-china.
+- Tmall Global deposit rule (ruleId 8942): re-rendered twice, 母婴 其他一级类目 50,000 flagship and the TM 100,000 clause present.
+- Douyin Global deposit rule (107821): re-rendered twice, 500 / 2,000 / 5,000 tiers present.

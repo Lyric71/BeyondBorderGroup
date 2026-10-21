@@ -9,6 +9,9 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'cost-to-sell-toys-and-games-in-china': 'cout-vente-jouets-jeux-chine',
+  'double-11-agency-review': 'double-11-bilan-agence',
+
   'xiaohongshu-koc-seeding-cost': 'cout-campagne-koc-xiaohongshu',
   'regional-distributor-china': 'distributeur-regional-en-chine',
   'douyin-livestream-agency-vs-dp': 'agence-live-douyin-ou-douyin-partner',
@@ -191,6 +194,9 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'cost-to-sell-toys-and-games-in-china': 'spielzeug-in-china-verkaufen-kosten',
+  'double-11-agency-review': 'double-11-agentur-auswerten',
+
   'xiaohongshu-koc-seeding-cost': 'xiaohongshu-koc-kampagnen-kosten',
   'regional-distributor-china': 'regionale-distributoren-in-china',
   'douyin-livestream-agency-vs-dp': 'douyin-liveagentur-oder-douyin-partner',
@@ -373,6 +379,9 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'cost-to-sell-toys-and-games-in-china': 'coste-vender-juguetes-juegos-china',
+  'double-11-agency-review': 'double-11-evaluacion-agencia',
+
   'xiaohongshu-koc-seeding-cost': 'coste-campana-koc-xiaohongshu',
   'regional-distributor-china': 'distribuidor-regional-en-china',
   'douyin-livestream-agency-vs-dp': 'agencia-directos-douyin-o-douyin-partner',
