@@ -1968,6 +1968,8 @@ Block 3 carries this, and the trap is that foreign brands assume tea is cultural
 
 ---
 
+**Partner cross-link.** Link to `/insights/distributor-registered-my-trademark-china` (P24) for recovery after a partner filing. Verify the January 1, 2027 Trademark Law transition and use Article 22 for the relationship rule and Article 36 for the new two-month opposition period where applicable.
+
 ## W46 · WED · LEDGER A
 
 **Title:** What it costs to sell auto parts and accessories in China
@@ -2999,9 +3001,9 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 **Query:** distributor registered my trademark china · **Tags:** Contracts, Distributors
 **Word count:** 1,000 to 1,300
 
-**The answer, in one line.** Article 15 of China's Trademark Law bars an agent or distributor from registering its principal's mark without consent, so a brand can oppose or invalidate the filing. It takes months; filing your own mark before the first meeting takes weeks.
+**The answer, in one line.** Under the law in force in October 2026, Article 15 can support opposition or invalidation of an unauthorized agent or distributor filing. Preserve evidence of the relationship and check the mark's procedural status immediately. Filing your own application before partner talks reduces exposure but is not registration, and no weeks-long completion promise is supported. Distinguish statutory decision periods from observed processing times. The revised law takes effect January 1, 2027: the relationship rule becomes Article 22 and the opposition window becomes two months under Article 36; verify final transition rules before applying the new window to older publications.
 
-**The table it must carry.** Route (opposition, invalidation, negotiation, new mark), deadline, evidence needed, typical time.
+**The table it must carry.** Route (opposition, invalidation, negotiation, new mark), deadline, evidence needed, statutory decision period or timing caveat. Never invent typical recovery times.
 
 **Leads (verify, cite primary).** Trademark Law Art. 15 (npc.gov.cn); CNIPA procedures. Interlink with 46A (trademark first) when live.
 

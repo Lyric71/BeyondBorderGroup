@@ -52,6 +52,7 @@ four criteria on the day; a name here is a lead, not a clearance.
 | On (On Holding AG) | Sports & Leisure, running footwear | Own stores plus dealers, 38 China locations, SEC filings | Used 03T, 2026-09-24, all four criteria pass |
 | Blackmores (Kirin Holdings since 2023) | Health & Wellness, vitamins and supplements | Early into the bonded zones, daigou dependence, ASX filings FY2015 to FY2022 | Used 05T, 2026-10-08, all four criteria pass |
 | LEGO | Mother & Baby, construction toys | Sales since 1983; company and authorized retail; Jiaxing expansion disclosed separately | Used 07T, 2026-10-16, all four criteria pass; JD shop directly observed |
+| Rituals | Beauty & Personal Care, body care and fragrance | Tmall Global announcement before mainland boutiques; regional store rollout; documented brand-domain dispute | Used 09T, 2026-10-23, all four criteria pass; live JD self-operated shop navigation observed, numeric price/review/assortment limits stated |
 | (add) | | | |
 
 Good hunting grounds: Tmall Global's own overseas-brand case studies, JD

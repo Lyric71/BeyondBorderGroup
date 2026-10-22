@@ -9,6 +9,8 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'how-rituals-entered-china': 'rituals-en-chine-parcours-et-couts',
+  'distributor-registered-my-trademark-china': 'distributeur-marque-deposee-chine',
   'cost-to-sell-toys-and-games-in-china': 'cout-vente-jouets-jeux-chine',
   'double-11-agency-review': 'double-11-bilan-agence',
 
@@ -194,6 +196,8 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'how-rituals-entered-china': 'rituals-in-china-markteintritt-und-kosten',
+  'distributor-registered-my-trademark-china': 'distributor-hat-meine-marke-in-china-registriert',
   'cost-to-sell-toys-and-games-in-china': 'spielzeug-in-china-verkaufen-kosten',
   'double-11-agency-review': 'double-11-agentur-auswerten',
 
@@ -379,6 +383,8 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'how-rituals-entered-china': 'rituals-en-china-entrada-y-costes',
+  'distributor-registered-my-trademark-china': 'distribuidor-registro-mi-marca-china',
   'cost-to-sell-toys-and-games-in-china': 'coste-vender-juguetes-juegos-china',
   'double-11-agency-review': 'double-11-evaluacion-agencia',
 

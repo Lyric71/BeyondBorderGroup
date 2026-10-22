@@ -66,6 +66,10 @@ They override any conflicting rule inside the skill. The standing preamble in
 **CTA.** Talk to us about your entry sequence before the first distributor conversation.
 **Do not.** Do not write legal advice or state the outcome of an opposition or invalidation process; every procedural claim, class structure, filing fee, examination timeline and appeal route is a verify-and-cite instruction to the writer, sourced to the Chinese trademark authority or an equivalent primary source, with an access date. Do not compete with the law firms on procedural depth; the sequencing and the cost of lateness is the ground where this page wins.
 
+---
+
+**Partner cross-link.** Link to `/insights/distributor-registered-my-trademark-china` (P24) for recovery after a partner filing. Verify the January 1, 2027 Trademark Law transition and use Article 22 for the relationship rule and Article 36 for the new two-month opposition period where applicable.
+
 ## Slot spec
 
 ```

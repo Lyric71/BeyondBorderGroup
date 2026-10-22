@@ -6028,3 +6028,123 @@ All Pugongying entries read through the help-doc JSON API (https://pgy.xiaohongs
 - Product Quality Law art. 27 (CNIPA, https://www.cnipa.gov.cn/art/2019/7/31/art_104_67810.html): re-fetched, 第二十七条 present. Add cost-to-sell-toys-and-games-in-china.
 - Tmall Global deposit rule (ruleId 8942): re-rendered twice, 母婴 其他一级类目 50,000 flagship and the TM 100,000 clause present.
 - Douyin Global deposit rule (107821): re-rendered twice, 500 / 2,000 / 5,000 tiers present.
+
+
+## Partner P24: trademark recovery, 2026-10-22
+
+### Current trademark recovery procedures
+- Value: Arts. 15 and 18: unauthorized agent registration and knowing business-relationship filings; foreign applicants use a lawful trademark agency. Arts. 28, 33, 35, 45: 9-month examination, 3-month opposition from publication, 12-month opposition decision from window expiry plus possible 6 months; Article 15 invalidation generally 5 years from registration and decision within 12 months of request receipt plus possible 6. Well-known mark bad-faith exception is narrower than bad faith alone. Arts. 42 and 50: joint transfer and rights from announcement; related marks transfer together where required; identical/similar approval barred for one year after invalidation. Statutory periods are not actual turnaround averages.
+- Source: CNIPA, 中华人民共和国商标法(2019年修正)
+- As of: 2019-07-30
+- URL: https://www.cnipa.gov.cn/art/2019/7/30/art_95_28179.html
+- Verified 1: 2026-10-22 (Chinese-first research; page fetched, date and relevant passage checked)
+- Verified 2: 2026-10-22 (re-fetched during createarticle iteration 8; matching passages confirmed)
+- Used in: distributor-registered-my-trademark-china
+
+### Distributor and negotiation scope
+- Value: Interpretation Article 15 includes sales/distribution agents, same or similar marks and goods, and agency negotiation stage. Current provision retained; 2026 consultation amendment is not final.
+- Source: Supreme People’s Court, 最高人民法院关于审理商标授权确权行政案件若干问题的规定
+- As of: 2017-01-11
+- URL: https://www.court.gov.cn/zixun/xiangqing/34732.html
+- Verified 1: 2026-10-22 (Chinese-first research; page fetched, date and relevant passage checked)
+- Verified 2: 2026-10-22 (re-fetched during createarticle iteration 8; matching passages confirmed)
+- Used in: distributor-registered-my-trademark-china
+
+### MASkin relationship case
+- Value: Case 9, mark 10519462: application 2012-02-22. Claimant alleged business relationship from 2012-02-08 and email cooperation. Review body found pre-filing relationship and Article 15(2) bad faith on masks and specified related goods. No published recovery duration or damages used. Not an agency client case.
+- Source: CNIPA / China Intellectual Property News, 2018商标评审典型案例（上）
+- As of: 2019-04-26
+- URL: https://www.cnipa.gov.cn/art/2019/4/26/art_55_126744.html
+- Verified 1: 2026-10-22 (Chinese-first research; page fetched, date and relevant passage checked)
+- Verified 2: 2026-10-22 (re-fetched during createarticle iteration 8; matching passages confirmed)
+- Used in: distributor-registered-my-trademark-china
+
+### Revised trademark relationship rule and opposition window
+- Value: Article 22 relationship provision; Article 36 two-month opposition period. Future law, not applied to October 2026 filings as current law.
+- Source: CNIPA, 中华人民共和国商标法（2026年修订）
+- As of: 2026-06-26
+- URL: https://www.cnipa.gov.cn/art/2026/6/26/art_3686_206940.html
+- Verified 1: 2026-10-22 (Chinese-first research; page fetched, date and relevant passage checked)
+- Verified 2: 2026-10-22 (re-fetched during createarticle iteration 8; matching passages confirmed)
+- Used in: distributor-registered-my-trademark-china
+
+### Revised Trademark Law commencement
+- Value: New Trademark Law effective 2027-01-01; confirms commencement independently of the law-topic page.
+- Source: CNIPA carrying Xinhua, 人大常委会丨强化商标管理和保护 商标法完成修订
+- As of: 2026-06-26
+- URL: https://www.cnipa.gov.cn/art/2026/6/26/art_55_206931.html
+- Verified 1: 2026-10-22 (Chinese-first research; page fetched, date and relevant passage checked)
+- Verified 2: 2026-10-22 (re-fetched during createarticle iteration 8; matching passages confirmed)
+- Used in: distributor-registered-my-trademark-china
+
+### Trademark transition proposal remains consultation
+- Value: Proposed Article 7 preserves three-month opposition for preliminary publication before 2027 law. Comments close 2026-10-28. Proposal explicitly not represented as final; final rules check registered in signal watch list.
+- Source: Supreme People’s Court, 商标法时间效力司法解释稿、商标授权确权司法解释稿向社会公开征求意见
+- As of: 2026-09-14
+- URL: https://www.court.gov.cn/hudong/xiangqing/511791.html
+- Verified 1: 2026-10-22 (Chinese-first research; page fetched, date and relevant passage checked)
+- Verified 2: 2026-10-22 (re-fetched during createarticle iteration 8; matching passages confirmed)
+- Used in: distributor-registered-my-trademark-china
+
+## Teardown 09T: Rituals China entry, 2026-10-23
+
+### Tmall Global launch announcement
+- Value: November 2019 platform launch; announcement November 22 says the store launched the previous day.
+- As of: November 22, 2019 (embedded datePublished 2019-11-22T07:29:59.081Z).
+- Source: Margot Looman, bilingual firsthand launch announcement.
+- URL: https://www.linkedin.com/posts/margotlooman_%E6%88%91%E4%BB%AC%E5%BE%88%E5%BC%80%E5%BF%83%E7%9A%84%E4%B8%8E%E4%BD%A0%E5%88%86%E4%BA%ABrituals%E7%99%BB%E9%99%86%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E4%BA%86for-the-ones-who-activity-6603544929694289920-fFIa
+- Verified 1: 2026-10-23, web page and raw metadata fetched; text and exact timestamp confirmed.
+- Verified 2: 2026-10-23, iteration 8 fresh HTTP 200; launch text and embedded date unchanged.
+- Used in: how-rituals-entered-china
+- Notes: Platform launch only; not proof of the first-ever sale into China. No exact launch day inferred in the article.
+
+### Rituals first mainland boutique and historical eight-store count
+- Value: First mainland boutique at Shanghai IFC in September 2023; eight boutiques in the April 9, 2025 event account.
+- As of: April 9, 2025; newsroom republication timestamp July 9, 2026.
+- Source: Rituals Chinese newsroom (Rituals怡式新闻中心).
+- URL: https://www.rituals.com/newsroom/zh-CN-CN/268026-from-amsterdam-with-love-rituals/
+- Verified 1: 2026-10-23, page fetched; event date, opening month and count confirmed.
+- Verified 2: 2026-10-23, iteration 8 fresh HTTP 200; September 2023 and eight boutiques unchanged.
+- Used in: how-rituals-entered-china
+- Notes: Eight is not an October 2026 count. No global boilerplate store figure used.
+
+### Rituals live JD storefront: bounded observation
+- Value: Self-operated Rituals flagship; separate home fragrance and personal-care navigation, car fragrance, and gift sets. Complete SKU count, numerical reviews and live prices unobservable in retrieved views.
+- As of: October 23, 2026 live observation.
+- Source: JD (京东).
+- URL: https://mall.jd.com/index-1024553756.html
+- Supporting URL: https://mall.jd.com/view_search-13926968-0-99-1-24-1.html
+- Verified 1: 2026-10-23, direct pages fetched HTTP 200; branded title and category links confirmed; product list remains loading.
+- Verified 2: 2026-10-23, iteration 8 both URLs fetched again HTTP 200; same title, navigation, and numeric-data limits.
+- Used in: how-rituals-entered-china
+- Notes: No review total, assortment estimate, live price, sales claim or checkout claim. The self-operated label does not disclose wholesale terms.
+
+### Rituals China regional focus, candle price and store trial format
+- Value: Yangtze River Delta and Greater Bay Area stated focus; RMB 275 for a 290 g candle; at least five gift-set variants per classic range; reporter observes trial sink in Shenzhen MixC World store.
+- As of: February 25, 2025, 15:40 China time.
+- Source: Jiemian News (界面新闻), reporter Zhu Yongling; direct brand statements and reporting.
+- URL: https://www.jiemian.com/article/12390823.html
+- Verified 1: 2026-10-23, desktop/mobile pages fetched; date, price, weight, gift-set count and regional statement confirmed.
+- Verified 2: 2026-10-23, iteration 8 fresh HTTP 200; extracted article text confirms all claims and publication date.
+- Used in: how-rituals-entered-china
+- Notes: Historical retail example, not current JD price or brand net revenue. No cost-per-store derived. Global revenue figures not reused.
+
+### Rituals domain dispute: receipt-to-decision interval
+- Value: Complaint received July 7, 2021; decision September 15, 2021 orders rituals.cn and rituals.com.cn transferred. Seventy elapsed calendar days calculated from those dates. Case facts establish Chinese platform sales by 2021.
+- As of: September 15, 2021, decision DCN2021-0019.
+- Source: WIPO Arbitration and Mediation Center (世界知识产权组织仲裁与调解中心).
+- URL: https://www.wipo.int/amc/en/domains/decisions/text/2021/dcn2021-0019.html
+- Verified 1: 2026-10-23, full Chinese decision fetched; receipt date, signed decision date and transfer order confirmed.
+- Verified 2: 2026-10-23, iteration 8 HTTP 200 and web-reader re-fetch; dates and remedy unchanged; independent date subtraction equals 70.
+- Used in: how-rituals-entered-china
+- Notes: Not a launch delay, implementation duration, statutory promise, lost-sales estimate or legal fee. No such amounts disclosed in decision.
+
+### Rituals regional refit: future Asia timing
+- Value: Announced Asia/Middle East refit start Q1 2027, after new ranges reach those regions; Europe emphasis in August/September. EUR 40 million global/multi-country headline is not a China entry budget.
+- As of: July 8, 2026 announcement.
+- Source: Rituals Chinese newsroom (Rituals怡式新闻中心).
+- URL: https://www.rituals.com/newsroom/zh-CN-CN/267730-rituals-30-1-500/
+- Verified 1: 2026-10-23, announcement fetched and regional timing confirmed.
+- Verified 2: 2026-10-23, iteration 8 fresh HTTP 200; Q1 2027 wording and scope confirmed.
+- Used in: signal-watch-list.md; research exclusions for how-rituals-entered-china
+- Notes: Monetary headline omitted from the draft. Future timing is an announced plan, not proof of completion or a platform fee change.

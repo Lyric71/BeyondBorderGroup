@@ -71,6 +71,7 @@ The Monday sweep checks every item whose date has arrived, then moves it to
 
 | Check on | Item | Source to re-read | Possible piece |
 |---|---|---|---|
+| 2027-01-01 | Revised Trademark Law takes effect: relationship rule moves from Article 15 to 22; Article 36 reduces opposition period from three months to two. SPC transition consultation of September 14, 2026 remains a draft at the October 22 research date. Check the final transition text before applying a shorter period to existing publications | https://www.cnipa.gov.cn/art/2026/6/26/art_3686_206940.html ; https://www.court.gov.cn/hudong/xiangqing/511791.html | Refresh P24 distributor-registered-my-trademark-china, P15 replace-distributor-china, and how-to-localize-a-brand-for-china in all published locales; feed 46A trademark brief. A Signal only if an operating consequence meets its test |
 | 2026-10-26 | Douyin draft in-transit parcel interception service rule, consultation October 13 to 20, planned effect October 26; current scope explicitly excludes Global Purchase and instant retail | https://school.jinritemai.com/doudian/web/article/aJrRexZ9pr6S | Check final scope. No foreign-brand Signal unless the final rule changes that exclusion or moves a relevant operating cost |
 | 2027-04-26 | NMPA toothpaste classification catalogue (2026 No. 100) takes effect May 1, 2027; check classification codes and permitted claims before the switch | https://yjj.sh.gov.cn/qtgzwj/20261015/7251f7bc9dec430ab15c4bbc97ff9ce0.html | Register the formal effective date; a Signal only if the application moves an operating cost for a foreign brand |
 | 2027-12-27 | NMPA toothpaste catalogue: products filed before May 1, 2027 must update filing information before January 1, 2028; stock made/imported before the update may sell through shelf-life expiry | https://yjj.sh.gov.cn/qtgzwj/20261015/7251f7bc9dec430ab15c4bbc97ff9ce0.html | Check implementation guidance and update any affected toothpaste coverage before the filing deadline |
@@ -92,3 +93,14 @@ The Monday sweep checks every item whose date has arrived, then moves it to
 | NMPA Announcement 2026 No. 70 (cosmetics domestic responsible person may be replaced without the old partner's consent, from July 29, 2026), back-queue candidate since 2026-09-07 | Published as P02, `/insights/change-domestic-responsible-person-china-cosmetics` (September 24, 2026) |
 | Douyin after-sales reserve watch item of 2026-10-19 | Formal rule published and effective October 15, 2026 (aJSwoqTMykft). Closed by 07S, douyin-after-sales-reserve-warranty, drafted October 19. Fixed-rate fallback distinguished from category-average alternative; scope inference labelled |
 | Douyin operating-service-provider revision watch item of 2026-10-15 | Formal version posted October 16 (aJ2D2SbD5GWe), checked twice October 19. RMB 2 million brand-track luxury/cross-border threshold confirmed. Updated P19 body, FAQ, staff minimums and dated note in EN/FR/DE/ES, updatedDate 2026-10-19. No separate Signal: no brand fee moved |
+
+### Rituals regional store refit, recorded October 23, 2026
+
+Check on 2027-01-04: Rituals announced that Asia and Middle East store refits
+will start in Q1 2027 after new ranges reach those regions. Source: Rituals
+Chinese newsroom, July 8, 2026,
+https://www.rituals.com/newsroom/zh-CN-CN/267730-rituals-30-1-500/,
+checked twice October 23. This is a brand plan, not a regulatory deadline.
+Revisit the 09T Rituals teardown only if a dated China opening/refit disclosure
+adds a verifiable cost or operating change. A plan alone does not qualify for
+a Signal. No China investment amount is inferred from the global announcement.
