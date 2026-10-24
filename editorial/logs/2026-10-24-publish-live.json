@@ -1,0 +1,98 @@
+[
+  {
+    "url": "https://www.thechinapath.com/insights/how-telehealth-and-wellness-services-reach-patients-in-china",
+    "status": 200,
+    "h1": [
+      "Telehealth in China: patient acquisition costs"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/fr/decryptages/telemedecine-en-chine-cout-acquisition-patients",
+    "status": 200,
+    "h1": [
+      "Télémédecine en Chine : acquérir des patients"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/de/analysen/telemedizin-in-china-kosten-der-patientengewinnung",
+    "status": 200,
+    "h1": [
+      "Telemedizin in China: Kosten der Patientengewinnung"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/es/analisis/telemedicina-en-china-coste-de-captar-pacientes",
+    "status": 200,
+    "h1": [
+      "Telemedicina en China: coste de captar pacientes"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/insights/tmall-partner-onboarding",
+    "status": 200,
+    "h1": [
+      "Tmall Partner onboarding: your first 90 days"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/fr/decryptages/tmall-partner-organiser-les-90-premiers-jours",
+    "status": 200,
+    "h1": [
+      "Tmall Partner : piloter les 90 premiers jours"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/de/analysen/tmall-partner-die-ersten-90-tage",
+    "status": 200,
+    "h1": [
+      "Tmall Partner: die ersten 90 Tage steuern"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/es/analisis/tmall-partner-organizar-los-primeros-90-dias",
+    "status": 200,
+    "h1": [
+      "Tmall Partner: controlar los primeros 90 días"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/insights/china-supermarket-listing-fee",
+    "status": 200,
+    "h1": [
+      "China supermarket listing fees: check the charges"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/fr/decryptages/frais-de-referencement-supermarches-chine",
+    "status": 200,
+    "h1": [
+      "Supermarchés chinois : contrôler les frais"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/de/analysen/listungsgebuehren-chinesischer-supermaerkte",
+    "status": 200,
+    "h1": [
+      "Listungsgebühren in Chinas Supermärkten prüfen"
+    ],
+    "passed": true
+  },
+  {
+    "url": "https://www.thechinapath.com/es/analisis/tarifas-de-acceso-a-supermercados-en-china",
+    "status": 200,
+    "h1": [
+      "Supermercados chinos: comprobar los cargos"
+    ],
+    "passed": true
+  }
+]
