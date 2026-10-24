@@ -104,3 +104,7 @@ checked twice October 23. This is a brand plan, not a regulatory deadline.
 Revisit the 09T Rituals teardown only if a dated China opening/refit disclosure
 adds a verifiable cost or operating change. A plan alone does not qualify for
 a Signal. No China investment amount is inferred from the global announcement.
+
+## October 25, 2026: Zhejiang external medical-data cooperation rules
+
+Registered October 24 during 10L research. Article 19 sets October 25, 2026 as the start date. Check effects on contracted data access and partner review costs for foreign health-service operators working with Zhejiang institutions. A Signal still requires a defensible operating consequence and worked figure. Provincial scope, not a national start date. Source: Zhejiang health departments, Shanghai government digital-transformation center republication, September 2026. https://dt.sheitc.sh.gov.cn/cms/qtssszzj/3025.jhtml. Full text fetched twice October 24. The telehealth Ledger does not present it as already effective.

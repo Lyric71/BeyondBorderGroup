@@ -1,9 +1,9 @@
 ---
 title: "À qui appartient votre boutique Tmall confiée à un partenaire"
 seoTitle: "Qui possède votre boutique Tmall gérée par un partenaire ?"
-description: "Une boutique Tmall ou Douyin appartient à la société qui l'a enregistrée. Ce qu'il faut garder à votre nom face à un Tmall Partner, et ce qu'il faut signer."
+description: "Une boutique Tmall ou Douyin appartient à la société qui l’a enregistrée. Les accès à conserver et les clauses à signer avec votre partenaire."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "Douyin"]
@@ -162,11 +162,11 @@ simple de détenir la boutique en propre. Le marchand y est votre société
 d'origine.
 
 > Le contrat marchand de Tmall Global est conclu entre le marchand étranger
-> et Taobao China Holding Limited. Le marchand ne peut ni céder son compte
+> et les sociétés Taobao China Holding Limited et Chuanshen Holding Limited. Le marchand ne peut ni céder son compte
 > ni en laisser l'usage à un tiers sans l'accord écrit de Tmall Global.
 > Source : contrat de services marchands de Tmall Global, mis à jour en
-> octobre 2022.
-> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> mai 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Une boutique Tmall domestique ou une boutique Douyin domestique exige en
 revanche une licence commerciale chinoise. C'est là que les ennuis

@@ -2,7 +2,7 @@
 title: "Who owns your Tmall store when a partner runs it"
 description: "A Tmall store or Douyin shop belongs to the company that registered it. What to keep in your name when a Tmall partner runs it, and what to sign."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "Douyin"]
@@ -138,11 +138,12 @@ your move, but proof the process exists.
 For a brand with no Chinese company, Tmall Global is the simplest way to own
 the store outright. The merchant there is your company back home.
 
-> Tmall Global's merchant agreement is signed between the overseas merchant
-> and Taobao China Holding Limited. The merchant may not transfer its account,
+> Tmall Global's merchant agreement is signed by the overseas merchant and
+> two platform companies, Taobao China Holding Limited and Chuanshen Holding
+> Limited. The merchant may not transfer its account,
 > or let anyone else use it, without Tmall Global's written consent.
-> Source: Tmall Global Merchant Service Agreement, updated October 2022.
-> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Source: Tmall Global Merchant Service Agreement, updated May 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 A domestic Tmall store or a domestic Douyin shop needs a Chinese business
 license. That's where the trouble usually starts. You don't have a China

@@ -3,7 +3,7 @@ title: "Tmall Partner als Agentur oder Distributor: Wer macht den Preis?"
 seoTitle: "Tmall Partner: Agentur oder Distributor? Wer den Preis macht"
 description: "Der Tmall Partner als Dienstleister führt Ihren Shop gegen Honorar, Ware und Preis bleiben bei Ihnen. Kauft er Ihnen die Ware ab, setzt er den Preis."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall"]
@@ -222,7 +222,7 @@ und die kann ihn Ihnen nicht nach Belieben überlassen.
 > Zustimmung von Tmall Global weder übertragen noch Dritten zur Nutzung
 > überlassen.
 > Quelle: Händler-Dienstleistungsvertrag von Tmall Global
-> (天猫国际商户服务协议), Ziffer 5.1, zuletzt aktualisiert im Oktober 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> (天猫国际商户服务协议), Ziffer 5.1, zuletzt aktualisiert im Mai 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Der Wechsel bedeutet deshalb meist einen neuen Shop auf Ihren Namen, ohne
 Bewertungen und ohne Verkaufshistorie. Diese Geschichte hören wir am

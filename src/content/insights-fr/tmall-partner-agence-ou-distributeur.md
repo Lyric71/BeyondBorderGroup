@@ -2,7 +2,7 @@
 title: "Tmall Partner : agence ou distributeur, qui fixe le prix ?"
 description: "Le Tmall Partner prestataire gère votre boutique contre rémunération : le stock et le prix restent à vous. Celui qui achète ferme votre stock fixe le prix."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall"]
@@ -219,7 +219,7 @@ qui ne peut pas vous la céder à sa guise.
 > Un marchand Tmall Global ne peut céder son compte, ni en laisser l'usage à
 > un tiers, sans l'accord écrit préalable de Tmall Global.
 > Source : contrat de services marchands de Tmall Global
-> (天猫国际商户服务协议), clause 5.1, dernière mise à jour en octobre 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> (天猫国际商户服务协议), clause 5.1, dernière mise à jour en mai 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Le changement passe donc en général par une nouvelle boutique à votre nom,
 sans avis clients ni historique de ventes. C'est le scénario que nous

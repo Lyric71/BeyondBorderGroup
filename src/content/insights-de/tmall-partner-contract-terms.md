@@ -2,7 +2,7 @@
 title: "Tmall-Partner-Vertrag: Klauseln für einen sauberen Ausstieg"
 description: "Sieben Klauseln im Tmall-Partner-Vertrag sichern den Ausstieg: Shop-Eigentum, Datenübergabe, Kündigung, KPI, Provisionsbasis, Werbebudget, Vertragsstrafe."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall"]
@@ -77,7 +77,7 @@ Ihrer eigenen Gesellschaft, bevor ein TP ihn anfasst.
 > Ohne schriftliche Zustimmung von Tmall Global darf ein Händler sein
 > Tmall-Global-Konto weder übertragen noch Dritte zu dessen Nutzung
 > ermächtigen. Handlungen über das Konto gelten als Handlungen des Händlers.
-> Quelle: Tmall Global (天猫国际), Händler-Dienstleistungsvertrag, aktualisiert im Oktober 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Quelle: Tmall Global (天猫国际), Händler-Dienstleistungsvertrag, aktualisiert im Mai 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Ist Ihr TP der [registrierte Inhaber](/de/analysen/wem-gehoert-ihr-tmall-shop),
 sind Sie an diesem Vertrag nicht einmal beteiligt.
@@ -123,19 +123,21 @@ Ausgaben hochtrieben, bis dem Händler das Geld ausging und er aufgab, und
 ihm anschließend mangelnde Mitwirkung vorwarfen. Eine monatliche
 Obergrenze, darüber nur mit schriftlicher Freigabe, schließt diese Tür.
 
-Seien Sie auch bei „Ihren Daten“ genau, denn den Großteil beansprucht die
-Plattform für sich.
+Legen Sie fest, welche Arbeitsdateien der TP Ihnen rechtmäßig übergeben darf.
 
-> Daten, die Tmall Global bei der Nutzung seines Dienstes durch einen
-> Händler erhebt und aufzeichnet, gehören Tmall Global und sind dessen
-> Geschäftsgeheimnis. Der Händler darf sie ohne schriftliche Zustimmung
-> weder über den Vertrag hinaus nutzen noch an Dritte weitergeben.
-> Quelle: Tmall Global (天猫国际), Händler-Dienstleistungsvertrag, aktualisiert im Oktober 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Tmall Global erkennt die gesetzlich geschützten Rechte der Händler und
+> anderer Beteiligter an ihren Daten an. Unter diesem Vorbehalt beansprucht die Plattform Rechte
+> an Daten, die sie über ihren Dienst erhebt oder im Plattformbetrieb
+> erzeugt. Sie beschränkt deren Nutzung außerhalb des Vertrags und die
+> Weitergabe ohne schriftliche Zustimmung.
+> Quelle: Tmall Global (天猫国际), Händler-Dienstleistungsvertrag, aktualisiert im Mai 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
-Was Ihnen gehören kann, ist die Arbeitsakte: Exporte aus Business Advisor,
-Chatprotokolle, Produkttexte und Produktbilder sowie die Struktur der
-Werbekampagnen. Benennen Sie die Exporte und ihr Format, und lassen Sie
-sie monatlich liefern. Ein TP auf dem Absprung hat keinen Grund zur Eile.
+Benennen Sie im Vertrag die Arbeitsdateien und zulässigen Exporte, die
+der TP liefern muss, darunter Produkttexte und Bilder sowie die
+Kampagneneinstellungen. Prüfen Sie vor der Aufnahme von Analyseexporten
+oder Chatprotokollen die Plattformbedingungen und die geltenden
+Datenschutzvorgaben. Vereinbaren Sie Format und monatliche Übergabe
+bereits zu Beginn der Zusammenarbeit.
 
 Bei den Kundendaten läuft es umgekehrt. Das Gesetz verpflichtet den TP,
 sie zurückzugeben oder zu löschen.

@@ -48,11 +48,11 @@ They override any conflicting rule inside the skill. The standing preamble in
 **Query:** tmall partner onboarding · **Tags:** Managing a partner, Tmall Partners
 **Word count:** 1,300 to 1,800
 
-**The answer, in one line.** In the first 90 days a Tmall Partner should hand you a store audit, a price and assortment plan, a campaign calendar and a weekly report you can read. If month two ends without them, the problem is the partner, not the platform.
+**The answer, in one line.** In the first 90 days a Tmall Partner should hand you a store audit, a price and assortment plan, a campaign calendar and a weekly report you can read. If month two ends without them despite the brand supplying the agreed inputs, require a dated recovery plan. These are management checkpoints, not a platform approval deadline.
 
 **The table it must carry.** Week range, what the TP delivers, what the brand provides, sign it is on track.
 
-**The proprietary number.** TheChinaPath Tmall Global calculator data (set-up timeline and cost).
+**The proprietary number.** TheChinaPath Tmall Global calculator data: its 12-month annual budget period and editable setup cash inputs. The calculator does not measure store-approval duration; do not invent a timeline from it. Label the week ranges as our proposed onboarding plan.
 
 **Internal links.** `/compass/find-a-tmall-partner-in-china`, `/tools/tmall-global-setup-and-run`, `/compass`
 **CTA.** Compass shortlist.

@@ -2,7 +2,7 @@
 title: "Cambiar de distribuidor en China sin perder el lineal"
 description: "Cambiar de distribuidor en China: firmar antes con el sustituto, notificar por escrito, liquidar el stock y traspasar etiquetas, registros y tiendas."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
@@ -202,8 +202,8 @@ la que decide quién las tiene.
 > Un comerciante de Tmall Global no puede ceder su cuenta, ni autorizar a
 > otro a usarla, sin el consentimiento por escrito de Tmall Global.
 > Fuente: Tmall Global (天猫国际), contrato de servicios para comerciantes,
-> última actualización en octubre de 2022.
-> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> última actualización en mayo de 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Douyin vincula la tienda insignia a la autorización de la marca.
 

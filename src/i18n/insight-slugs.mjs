@@ -9,6 +9,9 @@
  * @type {Record<string, string>}
  */
 export const insightEnToFr = {
+  'china-supermarket-listing-fee': 'frais-de-referencement-supermarches-chine',
+  'how-telehealth-and-wellness-services-reach-patients-in-china': 'telemedecine-en-chine-cout-acquisition-patients',
+  'tmall-partner-onboarding': 'tmall-partner-organiser-les-90-premiers-jours',
   'how-rituals-entered-china': 'rituals-en-chine-parcours-et-couts',
   'distributor-registered-my-trademark-china': 'distributeur-marque-deposee-chine',
   'cost-to-sell-toys-and-games-in-china': 'cout-vente-jouets-jeux-chine',
@@ -196,6 +199,9 @@ export const insightFrToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToDe = {
+  'china-supermarket-listing-fee': 'listungsgebuehren-chinesischer-supermaerkte',
+  'how-telehealth-and-wellness-services-reach-patients-in-china': 'telemedizin-in-china-kosten-der-patientengewinnung',
+  'tmall-partner-onboarding': 'tmall-partner-die-ersten-90-tage',
   'how-rituals-entered-china': 'rituals-in-china-markteintritt-und-kosten',
   'distributor-registered-my-trademark-china': 'distributor-hat-meine-marke-in-china-registriert',
   'cost-to-sell-toys-and-games-in-china': 'spielzeug-in-china-verkaufen-kosten',
@@ -383,6 +389,9 @@ export const insightDeToEn = Object.fromEntries(
  * @type {Record<string, string>}
  */
 export const insightEnToEs = {
+  'china-supermarket-listing-fee': 'tarifas-de-acceso-a-supermercados-en-china',
+  'how-telehealth-and-wellness-services-reach-patients-in-china': 'telemedicina-en-china-coste-de-captar-pacientes',
+  'tmall-partner-onboarding': 'tmall-partner-organizar-los-primeros-90-dias',
   'how-rituals-entered-china': 'rituals-en-china-entrada-y-costes',
   'distributor-registered-my-trademark-china': 'distribuidor-registro-mi-marca-china',
   'cost-to-sell-toys-and-games-in-china': 'coste-vender-juguetes-juegos-china',

@@ -2,7 +2,7 @@
 title: "Wem gehört Ihr Tmall-Shop, wenn ein Partner ihn führt?"
 description: "Ein Tmall- oder Douyin-Shop gehört dem Unternehmen, auf das er registriert ist. Was Sie bei einem Tmall Partner in eigener Hand behalten sollten."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "Douyin"]
@@ -155,11 +155,12 @@ Weg, den Shop ganz in eigener Hand zu halten. Händler ist dort Ihr
 Unternehmen im Heimatland.
 
 > Der Händlervertrag von Tmall Global wird zwischen dem ausländischen
-> Händler und der Taobao China Holding Limited geschlossen. Ohne
+> Händler und den Gesellschaften Taobao China Holding Limited und Chuanshen Holding Limited
+> geschlossen. Ohne
 > schriftliche Zustimmung von Tmall Global darf der Händler sein Konto weder
 > übertragen noch Dritten zur Nutzung überlassen.
-> Quelle: Händlervertrag von Tmall Global, aktualisiert im Oktober 2022.
-> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Quelle: Händlervertrag von Tmall Global, aktualisiert im Mai 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Ein Tmall-Shop oder ein Douyin-Shop für das Inlandsgeschäft braucht dagegen
 eine chinesische Gewerbelizenz. Genau dort beginnen meist die Probleme. Sie

@@ -6148,3 +6148,159 @@ All Pugongying entries read through the help-doc JSON API (https://pgy.xiaohongs
 - Verified 2: 2026-10-23, iteration 8 fresh HTTP 200; Q1 2027 wording and scope confirmed.
 - Used in: signal-watch-list.md; research exclusions for how-rituals-entered-china
 - Notes: Monetary headline omitted from the draft. Future timing is an announced plan, not proof of completion or a platform fee change.
+
+## Partner P26: Tmall Partner onboarding, 2026-10-23
+
+### Tmall Global merchant controls and data rights, current agreement
+- Value: clause 5.1 requires prior written consent for account transfer or authorization to another person and makes the merchant responsible for account activity. The agreement names Taobao China Holding Limited and Chuanshen Holding Limited. Clause 10.3 acknowledges lawful merchant/other-party data rights before claiming platform data rights and restricting reuse/disclosure; clause 10.4 governs personal-data handling. Clause 16.3 retains the no-assignment requirement. The 90-day management plan in P26 is editorial advice, not a rule in this agreement.
+- As of: May 19, 2026 (latest update/effective date in Chinese and English).
+- Source: Tmall Global (天猫国际), 天猫国际商户服务协议 服务条款.
+- URL: https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
+- Verified 1: 2026-10-23, direct HTTP 200; Chinese date, parties and relevant clauses read. Snapshot merchant-check1.html and timestamped JSON in logs/runs/p26-work.
+- Verified 2: 2026-10-23, direct re-fetch at createarticle iteration 8, HTTP 200; same source date and clauses confirmed. Snapshot merchant-check2.html and JSON retained.
+- Used in: tmall-partner-onboarding; citation refresh in replace-distributor-china, tmall-agency-fake-orders-brand-liability, tmall-partner-agency-vs-distributor-model, tmall-partner-contract-terms, tmall-partner-store-ownership, including FR/DE/ES and retained English outputs.
+- Notes: This entry supersedes current-use reliance on the October 2022 agreement entries above. Historical verification dates remain preserved. The account-transfer and liability conclusions remain unchanged; corrected the ownership article's contracting parties and the contract article's overly broad data/handover wording. Updated local article bodies and updatedDate; this draft run does not deploy them.
+
+### Taobao/Tmall permissioned sub-account functions
+- Value: section 4.2 permits role-based sub-accounts for third-party service providers. Section 7.1 covers permission management, disabling/restoring accounts and operation-record queries. Actual functions depend on the product and enabled store permissions; this does not override Tmall Global's merchant agreement.
+- As of: June 2, 2023 (latest revision date displayed).
+- Source: Taobao (淘宝), 子账号软件产品使用许可协议.
+- URL: https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall201802012028_72666.html
+- Verified 1: 2026-10-23, direct HTTP 200; Chinese date, third-party provider definition and permission/log functions confirmed.
+- Verified 2: 2026-10-23, re-fetched at createarticle iteration 8, HTTP 200; same date and provisions. Snapshots subaccounts-check1.html and subaccounts-check2.html plus timestamped JSON retained in logs/runs/p26-work.
+- Used in: tmall-partner-onboarding.
+- Notes: Revalidated the older primary text rather than treating its age as evidence that it is withdrawn. No numerical sub-account entitlement or universal feature guarantee asserted.
+
+### Tmall Global calculator: annual period and warehouse cash assumptions
+- Value: each annual model period is 12 months; editable bonded-warehouse deposit input 100,000 RMB; editable tax-prepayment input 300,000 RMB; sum 400,000 RMB before other budget lines.
+- As of: October 2026 repository and live calculator snapshot.
+- Source: TheChinaPath calculator data, src/pages/tools/tmall-global-setup-and-run.astro.
+- URL: https://www.thechinapath.com/tools/tmall-global-setup-and-run
+- Verified 1: 2026-10-23, local source inspected before drafting; cited live URL fetched HTTP 200, values and twelve-month wording found.
+- Verified 2: 2026-10-23, local source re-read at iteration 8; live URL independently re-fetched HTTP 200 with the same input values and period. Both local and live snapshots retained in logs/runs/p26-work.
+- Used in: tmall-partner-onboarding.
+- Notes: The proprietary-number fallback is labeled as calculator assumptions. These are not mandatory fees, market averages, measured client results, approval-duration data or TheChinaPath service prices. No store-approval timeline exists in the calculator; corrected P26's master brief and regenerated its brief. Original numerical inputs are unchanged.
+
+## Telehealth Ledger 10L research, October 24, 2026
+
+### Internet consultation eligibility and record retention
+- Value: Article 18 requires diagnostic records and clinician revisit judgment; first-diagnosis or unsuitable visits redirected to physical care. Article 19: medical records at least 15 years; consultation process material at least 3 years. Article 24 prohibits medical staff referring patients for personal gain.
+- As of: February 8, 2022; republication June 10, 2022
+- Source: NHC and SATCM, via CHIMA
+- URL: https://www.chima.org.cn/Html/News/Articles/15589.html
+- Verified 1: 2026-10-24, full text fetched and claims checked.
+- Verified 2: 2026-10-24, re-fetched at iteration 8; dates and claims confirmed.
+- Used in: how-telehealth-and-wellness-services-reach-patients-in-china
+- Notes: Full regulatory text, not consultation draft. NHC direct fetch refused; full CHIMA republication compared with regulator summaries.
+
+### Medical advertising classification
+- Value: Neutral institution information can be non-advertising; subjective promotion and health education with relevant service links can constitute advertising.
+- As of: July 17, 2025
+- Source: SAMR, NHC and SATCM, medical advertising classification guide
+- URL: https://www.samr.gov.cn/zt/ndzt/2025n/ggf/zyfb/art/2025/art_8daf3ed052d749fcbee6eb3909b29e10.html
+- Verified 1: 2026-10-24, full text fetched and claims checked.
+- Verified 2: 2026-10-24, re-fetched at iteration 8; dates and claims confirmed.
+- Used in: how-telehealth-and-wellness-services-reach-patients-in-china
+- Notes: No blanket ban on neutral booking pages. Date checked after whitespace normalization.
+
+### Medical internet advertisement review
+- Value: Order 72 articles 7 and 8 require applicable medical ad review and prohibit disguised medical promotion in health education.
+- As of: February 25, 2023; published March 20, 2023
+- Source: SAMR, Internet Advertising Measures
+- URL: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_d93a579afd45413e8576e4623fab348f.html
+- Verified 1: 2026-10-24, full text fetched and claims checked.
+- Verified 2: 2026-10-24, re-fetched at iteration 8; dates and claims confirmed.
+- Used in: how-telehealth-and-wellness-services-reach-patients-in-china
+- Notes: Advertising review is distinct from clinical licensing.
+
+### Sensitive health information
+- Value: Medical-health data is sensitive. Purpose, necessity, safeguards and separate consent provisions apply. Articles 38 and 39 govern overseas transfers.
+- As of: August 20, 2021
+- Source: NPC, Personal Information Protection Law, CAC publication
+- URL: https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm
+- Verified 1: 2026-10-24, full text fetched and claims checked.
+- Verified 2: 2026-10-24, re-fetched at iteration 8; dates and claims confirmed.
+- Used in: how-telehealth-and-wellness-services-reach-patients-in-china
+- Notes: Consent alone does not complete export assessment. Foundational duties, not an exhaustive account of implementing rules.
+
+### Foreign-owned hospital pilot boundaries
+- Value: Qualifying tertiary hospitals permitted in specified areas. Psychiatric hospitals and psychiatric inpatient treatment excluded. Electronic-record servers must be in China.
+- As of: November 1, 2024; government republication December 1, 2024
+- Source: NHC and other departments
+- URL: https://app.www.gov.cn/govdata/gov/202412/01/522300/article.html
+- Verified 1: 2026-10-24, full text fetched and claims checked.
+- Verified 2: 2026-10-24, re-fetched at iteration 8; dates and claims confirmed.
+- Used in: how-telehealth-and-wellness-services-reach-patients-in-china
+- Notes: Hospital ownership route does not license an offshore consumer app.
+
+### SohoMD published search-program scope
+- Value: 150 keywords in a US telepsychiatry acquisition program.
+- As of: Published case checked October 24, 2026; engagement dates unspecified
+- Source: TheChinaPath published case
+- URL: https://www.thechinapath.com/work/sohomd
+- Verified 1: 2026-10-24, full text fetched and claims checked.
+- Verified 2: 2026-10-24, re-fetched at iteration 8; dates and claims confirmed.
+- Used in: how-telehealth-and-wellness-services-reach-patients-in-china
+- Notes: Source-3 fallback, program scope only. Live page and local files checked twice. Conflicting achieved-doubling wording removed in four locales; no measured doubling or China acquisition results claimed.
+
+### Zhejiang external medical-data cooperation commencement
+- Value: Article 19 takes effect October 25, 2026.
+- As of: September 2026 publication; effective October 25, 2026
+- Source: Zhejiang health departments, Shanghai government republication
+- URL: https://dt.sheitc.sh.gov.cn/cms/qtssszzj/3025.jhtml
+- Verified 1: 2026-10-24, full text fetched and claims checked.
+- Verified 2: 2026-10-24, re-fetched at iteration 8; dates and claims confirmed.
+- Used in: how-telehealth-and-wellness-services-reach-patients-in-china (watch list only)
+- Notes: Watch list only; provincial rule not yet effective on draft date.
+
+## P27: supermarket supplier fees, checked October 24, 2026
+
+### National retailer-supplier rules: charges and settlement
+- Value: Article 3 covers retailers with annual sales of RMB 10 million or more, aggregating chain stores; Articles 10-13 distinguish contracted promotion services from prohibited signing, duplicate barcode and service-free festival fees; store-code charges cannot exceed actual cost; Article 14 caps the agreed goods-payment period at 60 days after receipt.
+- As of: Order 17, issued October 13, 2006, effective November 15, 2006.
+- Source: Ministry of Commerce (商务部); Beijing Municipal Government (北京市人民政府) official mirror marked effective.
+- URL: https://www.mofcom.gov.cn/dl/file/20211203230882.pdf
+- Mirror URL: https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/200611/t20061115_780748.html
+- Verified 1: 2026-10-24, both URLs fetched; dates, RMB unit, threshold, chain aggregation, restrictions and 60-day receipt trigger confirmed.
+- Verified 2: 2026-10-24, both URLs re-fetched during createarticle iteration 8; same rule text and effective status confirmed.
+- Used in: china-supermarket-listing-fee
+- Notes: Check actual parties and transaction scope. Retailer payment to its supplier does not determine an overseas brand-distributor payment schedule. These are legal parameters, not observed payment behavior or fee quotations.
+
+### Historical clean-up of abusive retail entry charges
+- Value: The 2011 clean-up specifically named entry and barcode charges imposed through retailer market advantage; it supplied no national market-price range.
+- As of: December 19, 2011, Notice 485; campaign ran December 2011 to June 2012.
+- Source: Ministry of Commerce (商务部).
+- URL: https://sczxs.mofcom.gov.cn/article/at/cl/201112/20111207899451.shtml
+- Verified 1: 2026-10-24, dated original fetched; scope and named charges confirmed.
+- Verified 2: 2026-10-24, original re-fetched in iteration 8; date and text unchanged.
+- Used in: china-supermarket-listing-fee
+- Notes: Historical enforcement context only; no 2012 price represented as current.
+
+### Promotion service disclosure and delivery
+- Value: Special display and website/mobile placements can be promotional services; basic supplier marketing services cannot simply be relabeled; fee disclosure should identify corresponding services.
+- As of: January 26, 2015, date signed at end of notice.
+- Source: Ministry of Commerce (商务部).
+- URL: https://sczxs.mofcom.gov.cn/article/cbw/cl/201502/20150200885280.shtml
+- Verified 1: 2026-10-24, original fetched; service examples, disclosure duty and signature date confirmed.
+- Verified 2: 2026-10-24, original re-fetched in iteration 8; same passages confirmed.
+- Used in: china-supermarket-listing-fee
+- Notes: No current retailer rates in this notice. Old complaint-platform details not reused.
+
+### Zhanjiang current retail-fee reminder
+- Value: Warns local retailers against unagreed or unmarked charges, charging without stated services, and arbitrary payment delays or deductions.
+- As of: July 9, 2026, 15:40:59.
+- Source: Zhanjiang Administration for Market Regulation (湛江市市场监督管理局).
+- URL: https://www.zhanjiang.gov.cn/zdlyxxgk/sypaq/aqxf/content/post_2199715.html
+- Verified 1: 2026-10-24, original fetched; date and sections 1-3 confirmed.
+- Verified 2: 2026-10-24, original re-fetched in iteration 8; same dated reminder and scope confirmed.
+- Used in: china-supermarket-listing-fee
+- Notes: Local enforcement reminder, not a new national tariff or nationwide survey.
+
+### P27 illustrative budget and fallback
+- Value: Assumed 4 stores x 2 weeks x RMB 800 per store-week = RMB 6,400; assumed RMB 16 contribution per unit gives 400 units to cover display expense.
+- As of: October 24, 2026.
+- Source: TheChinaPath editorial arithmetic; all inputs are hypothetical, not proprietary observations.
+- Verified 1: 2026-10-24, arithmetic checked.
+- Verified 2: 2026-10-24, recalculated 4*2*800 and 6400/16.
+- Used in: china-supermarket-listing-fee
+- Notes: Excludes tax and fixed launch costs; not a quote, market benchmark, client outcome or causal sales-lift measurement. No relevant calculator/case supermarket-fee figure fits; settled fallback is no proprietary number.

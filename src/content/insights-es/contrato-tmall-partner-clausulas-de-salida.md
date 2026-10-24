@@ -3,7 +3,7 @@ title: "Contrato con un Tmall Partner: las cláusulas de una salida limpia"
 seoTitle: "Contrato Tmall Partner: las cláusulas de una salida limpia"
 description: "Siete cláusulas de un contrato con un Tmall Partner deciden una salida limpia: tienda, datos, preaviso, KPI, base de comisión, publicidad y sabotaje."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall"]
@@ -76,7 +76,7 @@ antes de que un TP la toque.
 > Sin el consentimiento por escrito de Tmall Global, un comerciante no puede
 > ceder su cuenta de Tmall Global ni autorizar a otros a usarla. Los actos
 > realizados a través de la cuenta se consideran propios del comerciante.
-> Fuente: Tmall Global (天猫国际), Acuerdo de Servicios para Comerciantes, actualizado en octubre de 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Fuente: Tmall Global (天猫国际), Acuerdo de Servicios para Comerciantes, actualizado en mayo de 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Si el [titular registrado](/es/analisis/de-quien-es-su-tienda-tmall) es su
 TP, usted ni siquiera es parte de ese acuerdo.
@@ -122,20 +122,21 @@ mirar el coste hasta que el comerciante se quedaba sin liquidez y tiraba la
 toalla, y que luego le culpaban de no colaborar. Un tope mensual, con
 aprobación por escrito para lo que lo supere, cierra esa puerta.
 
-Precise también qué entiende por «sus datos», porque la plataforma reclama
-la mayor parte.
+Defina qué archivos de trabajo puede entregarle legalmente el TP.
 
-> Los datos que Tmall Global recoge y registra a partir del uso de su
-> servicio por parte de un comerciante pertenecen a Tmall Global y
-> constituyen un secreto comercial suyo. El comerciante no puede usarlos más
-> allá del acuerdo ni cederlos a terceros sin consentimiento por escrito.
-> Fuente: Tmall Global (天猫国际), Acuerdo de Servicios para Comerciantes, actualizado en octubre de 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Tmall Global reconoce los derechos sobre los datos que la ley atribuye
+> a los comerciantes y a otras partes. Con esa salvedad, se atribuye
+> derechos sobre los datos que recoge mediante su servicio o genera en
+> la actividad de la plataforma. Restringe su uso fuera del contrato y
+> su comunicación a terceros sin consentimiento por escrito.
+> Fuente: Tmall Global (天猫国际), Acuerdo de Servicios para Comerciantes, actualizado en mayo de 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
-Lo que sí puede ser suyo es el archivo de trabajo: las exportaciones de
-Business Advisor, las transcripciones del chat, los textos e imágenes de
-producto y la estructura de las campañas publicitarias. Especifique las
-exportaciones y el formato, y exija la entrega cada mes. Un TP que se
-marcha no tiene ninguna prisa.
+El contrato debe indicar qué archivos de trabajo y exportaciones
+autorizadas entregará el TP, incluidos los textos e imágenes de producto
+y la configuración de las campañas. Antes de añadir datos de analítica
+o transcripciones de chat, compruebe las normas de la plataforma y las
+obligaciones de protección de datos. Acuerde el formato y la entrega
+mensual al iniciar la colaboración.
 
 Los datos de los compradores siguen el camino contrario. La ley obliga al
 TP a devolverlos o borrarlos.

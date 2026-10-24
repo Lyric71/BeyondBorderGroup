@@ -6,7 +6,7 @@ excerpt: "Brands lose the China shelf when they switch distributors in the wrong
 template: insight
 author: TheChinaPath
 pubDate: 2026-10-20
-updatedDate: 2026-10-20
+updatedDate: 2026-10-23
 category: Market Strategy
 platforms: [Tmall, Douyin]
 tags: ["Finding a partner", "Managing a partner", "Distributors", "Contracts"]
@@ -195,8 +195,8 @@ Store accounts are harder, because the platform decides who holds them.
 > A Tmall Global merchant may not transfer its account, or authorize anyone
 > else to use it, without Tmall Global's written consent.
 > Source: Tmall Global (天猫国际), Merchant Service Agreement, last updated
-> October 2022.
-> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> May 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Douyin ties a flagship to the brand's authorization.
 

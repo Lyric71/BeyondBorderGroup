@@ -2,7 +2,7 @@
 title: "Changer de distributeur en Chine sans perdre le rayon"
 description: "Changer de distributeur en Chine : signer d'abord le remplaçant, notifier par écrit, solder le stock, puis transférer étiquettes, dépôts et boutiques."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
@@ -203,8 +203,8 @@ décide de leur titulaire.
 > Un marchand Tmall Global ne peut céder son compte, ni en autoriser
 > l'usage à un tiers, sans l'accord écrit de Tmall Global.
 > Source : Tmall Global (天猫国际), contrat de services marchands, dernière
-> mise à jour en octobre 2022.
-> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> mise à jour en mai 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Douyin, lui, adosse un flagship à l'autorisation de la marque.
 

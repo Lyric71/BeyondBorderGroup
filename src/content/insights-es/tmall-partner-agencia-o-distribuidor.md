@@ -3,7 +3,7 @@ title: "Tmall Partner, agencia o distribuidor: ¿quién fija el precio?"
 seoTitle: "Agencia o distribuidor: ¿quién fija el precio en Tmall?"
 description: "El Tmall Partner de servicio gestiona su tienda a cambio de honorarios y usted conserva stock y precio. El que compra su stock en firme fija el precio."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall"]
@@ -216,8 +216,8 @@ que no puede traspasársela a usted cuando le plazca.
 > Un comerciante de Tmall Global no puede ceder su cuenta ni permitir que
 > otro la use sin el consentimiento previo y por escrito de Tmall Global.
 > Fuente: Acuerdo de Servicios para Comerciantes de Tmall Global
-> (天猫国际商户服务协议), cláusula 5.1, última actualización en octubre de
-> 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> (天猫国际商户服务协议), cláusula 5.1, última actualización en mayo de
+> 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Por eso el cambio suele suponer una tienda nueva a su nombre, sin reseñas y
 sin historial de ventas. Es la historia que más oímos cuando una marca nos

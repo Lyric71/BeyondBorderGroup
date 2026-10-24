@@ -132,6 +132,7 @@ export const CASE_INDUSTRIES = [
 
 const caseBaseSchema = z.object({
   brand: z.string(),
+  updatedDate: z.coerce.date().optional(),
   title: z.string(),
   /** Search title (brand included) when brand plus title runs past 60 characters. */
   seoTitle: z.string().max(60).optional(),

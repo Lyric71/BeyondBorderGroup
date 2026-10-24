@@ -2,7 +2,7 @@
 title: "Agence Tmall et fausses commandes : la marque paie"
 description: "Si l'agence gonfle les ventes de votre boutique Tmall ou Douyin, votre dépôt, vos fiches et votre nom sont exposés. Ce que disent juges et règlements."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "Compliance & Setup"
 platforms: ["Tmall", "Douyin"]
@@ -155,7 +155,7 @@ signifie aussi que le dossier de la boutique est le vôtre.
 > Les opérations, actes et engagements effectués via le compte Tmall Global
 > du marchand sont réputés être ceux du marchand, qui en assume seul les
 > conséquences juridiques.
-> Source : Tmall Global (天猫国际), contrat de services marchands, article 5.1, octobre 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Source : Tmall Global (天猫国际), contrat de services marchands, article 5.1, mai 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Le contrat domestique de Tmall, qui régit les boutiques sur Tmall même,
 reprend presque mot pour mot la même formule.

@@ -1,6 +1,6 @@
 # TheChinaPath — Insights (full text)
 
-> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-22.
+> Full-text dump of every published insight on https://www.thechinapath.com/insights, for AI crawlers that consume the llms-full.txt format. Articles authored by Cyril Drouin (founder, former CEO of Publicis Commerce and Performance Marketing for China and North Asia), Echo Peng (Senior Director, eCommerce China), Liyan Ye (Senior Director, brand & campaigns), and the TheChinaPath team. Last regenerated: 2026-10-24.
 
 ---
 # 11-11-shopping-festival-in-china-brand-strategies-for-success-in-the-worlds-largest-e-commerce-event
@@ -5433,6 +5433,295 @@ month in our model. Anything smaller is an experiment, so set the date it
 stops and the number it has to reach.
 
 [Talk to us about a monthly China social budget, platform by platform and level by level](/contact)
+
+
+---
+# china-supermarket-listing-fee
+URL: https://www.thechinapath.com/insights/china-supermarket-listing-fee
+
+---
+title: "China supermarket listing fees: check the charges"
+description: "Check supermarket listing, barcode, and display fees in China. Agree who funds each charge and what proof your distributor must provide."
+author: TheChinaPath
+pubDate: 2026-10-24
+updatedDate: 2026-10-24
+category: "Market Strategy"
+platforms: [WeChat]
+tags: ["Finding a partner", "Distributors"]
+heroImage: /Images/insights/china-supermarket-listing-fee.webp
+heroImageAlt: "A Chinese supermarket employee checks a promotion dashboard beside a stocked aisle in Chengdu."
+keyTakeaways:
+  - "Check the service behind each fee before approving a supermarket launch budget."
+  - "Some barcode and festival charges are prohibited; a familiar name does not make a charge lawful."
+  - "Put funding and reimbursement terms in the distribution agreement before orders begin."
+  - "Match promotion invoices to named stores and dated evidence of delivery."
+---
+
+Check the documented purpose and legal basis of a China supermarket listing fee.
+Some charges are prohibited, including festival fees without promotion services.
+Before your distributor commits, agree the promotion budget and who pays it.
+Require the retailer’s written terms and proof that the promised work happened
+before reimbursing the distributor, net of credits.
+
+“Listing support” can hide very different requests. A buyer may mean a special
+display, while the distributor’s budget also includes a charge for opening a
+supplier account. Ask for the original Chinese fee names and the retailer’s
+documents before discussing the total.
+
+We checked price evidence on October 24, 2026, but could not verify a current
+retailer-specific range suitable for this budget. Use a written quote for your
+stores and products; old press reports cannot price a launch today. Confirm the
+quote’s validity dates and whether each product size or flavor creates a
+separate charge.
+
+## China supermarket listing fee: read each line
+
+The national rules apply to covered retailers and their suppliers; the scope and
+payment figures appear below. Use the Chinese terms to match a proposal to its
+source. They describe what someone has called the charge, not a guarantee that
+it is permitted. The payer column is a proposed contract treatment, not a claim
+about what all distributors do.
+
+The barcode row concerns charges from the retailer. It does not cover
+registration fees paid to a barcode standards organization.
+
+<div class="table-scroll">
+
+| Fee name | Service or restriction | Charging basis to verify | Price evidence | Payer to agree |
+|---|---|---|---|---|
+| Listing, 进场费 | Ask what specific service it buys; signature-only fees are prohibited under Article 13 | Confirm whether one charge covers every named store | No verified current range | Approve only a lawful, documented charge |
+| Barcode, 条码费 | Forced duplicate store codes are prohibited where a compliant barcode works; store-code fees cannot exceed actual cost | Code and documented cost | Actual-cost limit, not a market tariff | Identify the supplier and reject unsupported pass-throughs |
+| End-cap or promotional stack, 堆头费 | Define the display space and selling period | Per store and agreed period | Written retailer quote required | Distributor-funded or brand-approved reimbursement |
+| Festival, 年节费 | A festival alone does not justify a fee without promotion services | Named campaign and participating stores | Written service quote required | Reimburse only agreed, delivered services |
+| Promotion support | Identify the activity and products covered | Fixed fee, or percentage with sales base and returns defined | Written retailer quote required | Allocate separately from product margin |
+
+</div>
+
+> Articles 10–13 require agreed promotional services and restrict signing,
+> barcode, and service-free festival charges.
+> Source: Ministry of Commerce (商务部), Order 17, October 2006, effective November 15, 2006. https://www.mofcom.gov.cn/dl/file/20211203230882.pdf
+
+MOFCOM’s 2011 clean-up notice also named abusive new-supplier entry and
+new-product barcode charges. That historical enforcement document does not
+provide a current price list. Renaming a charge “support” gives you no reason to
+approve it.
+
+> The clean-up targeted entry and other charges imposed through retailers’
+> market advantage; it was not a schedule of permitted fees.
+> Source: Ministry of Commerce, December 19, 2011, Notice 485. https://sczxs.mofcom.gov.cn/article/at/cl/201112/20111207899451.shtml
+
+Send disputed wording to the person reviewing the supply contract before any
+payment. A distributor’s assurance that every supplier pays the fee doesn’t
+explain the service or its legal basis.
+
+## Specify the display before discussing the price
+
+An end-cap is the display at the end of an aisle. Ask the buyer to mark its
+location on a floor plan or photograph. The agreement should identify which
+products occupy it and how long they remain there. Record the space dimensions
+and confirm the booking with the retailer contact named in the proposal.
+
+The same detail belongs in a booking for a promotional stack elsewhere in the
+store. “Premium position” leaves too much room for disagreement when your
+distributor sends a picture from a quiet corner near the stockroom.
+
+MOFCOM’s 2015 notice recognizes promotional work such as special displays and
+placement on websites or mobile devices. It also says promotional fees should
+not replace basic marketing services owed to suppliers, and requires retailers
+to disclose charges with their corresponding services.
+
+> The notice calls for disclosed service prices and distinguishes special
+> promotional work from basic supplier services.
+> Source: Ministry of Commerce, January 26, 2015. https://sczxs.mofcom.gov.cn/article/cbw/cl/201502/20150200885280.shtml
+
+If the proposal includes the retailer’s WeChat mini program storefront, ask
+which page carries the product and what the placement dates are. Save the page
+or campaign reference alongside the store display brief. A screenshot of a
+product being available for sale does not prove that the retailer delivered a
+separately purchased promotion.
+
+List each store in the display booking so you know where to check the display.
+If a store closes during the campaign, the agreement should explain how the
+unused portion is credited.
+
+## Settle who advances the money
+
+Your distribution agreement should say who carries the retailer expense and when
+any reimbursement becomes due. The company receiving the retailer’s invoice may
+be different from the brand that ultimately funds the promotion. Obtain the
+invoice recipient’s legal name as well as the retailer’s contracting entity.
+
+In a buy-out arrangement, the distributor purchases your stock for resale. It
+can agree to fund retailer activity from its product margin. Compare the
+purchase price with the scope it promises to cover. Uncapped deductions can cut
+the cash you receive even when the order price looks acceptable. Write which
+expenses are included in that margin and require separate approval for anything
+outside the agreed scope.
+
+Another option is a separate brand-funded promotion budget. Set a ceiling and a
+written approval process for each campaign. Name the company authorized to
+approve changes, including additional stores.
+
+If you share costs, specify the calculation. State whether the agreed percentage
+applies to an invoice amount including tax and whether a retailer credit reduces
+both parties’ contributions. Document any distributor administration charge
+separately from the retailer charge.
+
+Our [distribution service](/enter-china/distribution) covers distributor
+sourcing and management. In a selection process, ask each candidate to price the
+same account plan so that a lower margin can be compared with the extra costs it
+leaves to the brand.
+
+Before choosing a candidate, request a redacted reconciliation from a completed
+campaign and trace a retailer invoice through to the stores that received the
+service. Other suppliers’ commercial terms can be redacted (you don’t need their
+prices), while campaign references must remain checkable.
+
+## Work out what the display must earn
+
+Work out how many units would pay for the display before booking it. The
+following is an illustrative planning example, not a retailer quotation or a
+market benchmark. Every input is assumed, and the example excludes tax. Use a
+consistent tax basis in your own sheet, with returns and delivery costs included
+in the unit contribution. Here, contribution means revenue left after the
+variable costs of selling each unit, before the display expense.
+
+Suppose you agree to a 2-week display in 4 stores at an assumed RMB 800 per
+store per week. The display budget is RMB 6,400. A retailer invoice for 6 stores
+would exceed the agreed scope even if its unit rate matched.
+
+<div class="table-scroll">
+
+| Illustrative input or result | Amount | Calculation or meaning |
+|---|---|---|
+| Participating stores | 4 | Assumed pilot scope |
+| Display period, weeks | 2 | Assumed agreed duration |
+| Display rate, RMB per store per week | 800 | Assumed input, not a market quote |
+| Display budget, RMB | 6,400 | 4 × 2 × 800 |
+| Contribution per unit before display cost, RMB | 16 | Assumed after other variable costs |
+| Units needed to cover display expense | 400 | 6,400 ÷ 16 |
+
+</div>
+
+> Worked example: TheChinaPath editorial calculation, October 24, 2026.
+> Inputs are assumptions. This is not observed retailer or client data.
+
+The 400 units cover only the display expense at that assumed contribution. They
+do not cover fixed launch costs. Nor does selling 400 units during the promotion
+prove that the display caused those sales.
+
+Compare sales net of returns with a suitable non-promoted period or similar
+stores, and check whether stock was available throughout. Treat the comparison
+as provisional when you have little history. For a new listing, the first
+campaign may mainly tell you whether shoppers will try the product at the agreed
+price.
+
+Include the cash timing in the same sheet. A profitable campaign can still
+require funding before the retailer pays for the goods. Record payment dates for
+the stock and the promotion separately.
+
+## Read the retailer contract alongside the distribution deal
+
+Once the display budget is agreed, check when the goods account pays.
+
+The national retailer-supplier rules define their scope by retailer size and set
+a maximum agreed goods-payment term. These figures are legal parameters, not
+estimates of how quickly a retailer will actually pay.
+
+<div class="table-scroll">
+
+| Parameter in the 2006 rules | Figure | What to check |
+|---|---|---|
+| Retailer annual sales threshold | RMB 10 million | Chain-store sales are counted together; check the covered entity |
+| Maximum agreed goods-payment period | 60 days after receipt | Match the due date to goods-receipt evidence |
+
+</div>
+
+> Articles 3 and 14 specify the retailer threshold and payment limit.
+> Source: Beijing Municipal Government (北京市人民政府), November 15, 2006, official republication marked effective, checked October 24, 2026. https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/200611/t20061115_780748.html
+
+Ask the contract reviewer to apply those rules to the actual parties. The
+retailer’s obligation to its supplier does not automatically set the
+distributor’s payment obligation to your overseas company. Negotiate that second
+payment schedule explicitly.
+
+Consignment needs a report that accounts for unsold stock and returns. Ask for
+store-level movements matched to payment records. Every deduction should have an
+explanation you can check against the agreement before accepting the net
+payment.
+
+Keep disputed display charges on a separate reconciliation line while the
+parties reconcile the goods account under their contract.
+
+## Match each invoice to work in the store
+
+Build an evidence file around the retailer’s own campaign reference. Retain the
+agreed quote and the invoice. Add dated photographs showing the specified
+display in each participating store, plus any relevant digital placement
+records.
+
+A photograph taken on opening day establishes very little about the rest of the
+campaign. Ask for evidence during the agreed period and record interruptions. A
+missing delivery can explain why a display was empty, but you still need to know
+who bore that risk under the agreement.
+
+The invoice should also reconcile to the distributor’s claim. If the retailer
+granted a credit, the distributor should show it in the same statement. Ask for
+proof of payment when the distributor says it has already advanced the money,
+with the gross charge and net payment shown separately. The agreement should
+also require the distributor to return your share of credits issued after you
+reimburse it.
+
+Zhanjiang’s market regulator warned local retailers in July 2026 against
+unagreed or unmarked charges and charging without delivering the stated service.
+It also warned against arbitrary extensions of payment terms. This is a local
+enforcement reminder, not evidence of a new nationwide fee schedule.
+
+> Zhanjiang’s notice calls for clear service charges and action against
+> improper fees and payment practices.
+> Source: Zhanjiang Administration for Market Regulation (湛江市市场监督管理局), July 9, 2026. https://www.zhanjiang.gov.cn/zdlyxxgk/sypaq/aqxf/content/post_2199715.html
+
+During the [distributor search](/compass/find-a-distributor-in-china) through
+[Compass](/compass), ask who can obtain this evidence from the retailer and
+which company holds the supply contract. The [regional distributor
+comparison](/insights/regional-distributor-china) helps you check that chain of
+responsibility.
+
+## Questions before approving supermarket fees
+
+### What is a normal listing fee in China?
+
+This review did not verify a current price range that a brand could apply across
+supermarket chains. Request a dated quote for the actual store list and
+products. Compare the service scope alongside the amount, and separate
+prohibited charges from legitimate promotional work before using the quote in a
+launch budget.
+
+### Does the distributor have to pay upfront?
+
+The funding arrangement needs to be agreed. Ask whether the distributor absorbs
+the expense within its margin, advances it for reimbursement, or requires a
+brand-funded campaign account. Then define when funds move and what documents
+support the payment. Do not infer an obligation to advance money from the word
+“distributor.”
+
+### How do we handle a festival fee?
+
+Ask for the campaign behind it. Specify the products and participating stores,
+with dates and the promised activity. A festival name on an invoice gives you
+little evidence to assess. Compare the proposed charge with the restrictions
+above, and require contract review if its basis remains unclear before
+authorizing payment.
+
+### What if the distributor sends only a spreadsheet?
+
+Use the spreadsheet to identify the claims, then request the supporting retailer
+documents. Match each line to an approved campaign and reconcile any credits. If
+the distributor has grouped several brands together, ask how your share was
+calculated. Agree that allocation method before the campaign so a shared invoice
+can be checked afterward. Mark disputed lines separately.
+
+[Request a Compass distributor shortlist](/contact#shortlist).
 
 
 ---
@@ -14635,6 +14924,238 @@ dispute cannot tell another brand how long its case will take.
 
 
 ---
+# how-telehealth-and-wellness-services-reach-patients-in-china
+URL: https://www.thechinapath.com/insights/how-telehealth-and-wellness-services-reach-patients-in-china
+
+---
+title: "Telehealth in China: patient acquisition costs"
+description: "How foreign telehealth and wellness providers reach patients in China, with licensing limits, channel costs, and a worked acquisition budget."
+author: TheChinaPath
+pubDate: 2026-10-24
+updatedDate: 2026-10-24
+category: Compliance & Setup
+industry: Health & Wellness
+platforms: [WeChat, Douyin, Xiaohongshu]
+tags: [telehealth, wellness, patient acquisition, medical advertising, China market entry]
+heroImage: /Images/insights/how-telehealth-and-wellness-services-reach-patients-in-china.webp
+heroImageAlt: "A clinic administrator in Wuhan reviews a Chinese WeChat appointment page on a tablet at a worn reception desk."
+keyTakeaways:
+  - "Telehealth has no cross-border retail-import store route; clinical services need an authorized medical provider."
+  - "Count qualified inquiries and completed visits separately when measuring patient acquisition."
+  - "Medical advertising rules apply to promotional content, including disguised promotion inside health education."
+  - "TheChinaPath’s SohoMD case documents a 150-keyword program for a US provider, not China patient acquisition results."
+---
+
+## Start with the provider that can treat the patient
+
+Telehealth in China cannot use the cross-border retail-import route for physical
+goods. The same applies to wellness services. Clinical care needs an authorized
+medical provider and an eligible visit. Nonmedical wellness needs a defined
+service scope. Start with those limits, then choose patient channels and measure
+what it costs to reach a completed appointment.
+
+Rules and sources checked October 24, 2026.
+
+A Tmall Global store cannot supply a clinical license. Establish who delivers
+the service and who handles an inquiry that needs an in-person appointment
+before buying media.
+
+## Telehealth in China: which channels to budget for
+
+Monthly costs depend on contracts and staffing. The sources checked provide no
+comparable price sheet for foreign telehealth businesses.
+
+<div class="table-scroll">
+
+| Channel to assess | What it can reach | Monthly cost components | Cost per qualified inquiry | Contact access and clinical records |
+|---|---|---|---|---|
+| Medical platforms and hospital portals | People seeking a clinician or a follow-up | Contracted platform charges; intake staff | Measure from the provider’s own funnel | Contract governs contact access; provider retains clinical duties |
+| WeChat appointment mini program | People booking or returning to the provider | Software support; appointment administration | Running cost divided by eligible inquiries | Verify institution account control and access rights |
+| Douyin and Xiaohongshu (RedNote) | People researching symptoms or wellness services | Approved media; content review; inquiry handling | Count eligible patients separately | Platform controls initial reach; consent governs onward contact |
+| Employers and benefits intermediaries | Staff covered by specified clinical or nonmedical services | Account management; procurement work | Calculate per signed employer and activated patient | Contract defines service access and permitted reporting |
+| Offline clinics and events | Local residents and prospective institutional buyers | Venue or clinic overhead; staff time | Attribute appointments separately from event attendance | Treating institution holds the care relationship |
+
+</div>
+
+Confirm platform eligibility in writing before committing money. A distributor
+contact does not establish a medical institution’s authorization. Any
+intermediary agreement also needs a review of referral payments; the 2022 rules
+prohibit patient referrals made for medical staff’s personal gain.
+
+Specify permitted access to appointment data separately from marketing contacts.
+The provider retains its clinical responsibilities.
+
+## The license limits the offer and the advertisement
+
+An overseas consultation product may need a different intake process. Start with
+the medical institution’s permitted activities. Internet diagnosis rules require
+the clinician to assess whether a patient qualifies for a repeat visit; a new
+symptom can send that patient back to an in-person service.
+
+> Patients must provide records with a clear diagnosis. If the clinician
+> judges the visit to be a first diagnosis, or otherwise unsuitable for
+> internet care, the online consultation must stop and the patient must be
+> directed to a physical medical institution.
+> Source: National Health Commission (国家卫生健康委员会) and National
+> Administration of Traditional Chinese Medicine, February 2022 rules,
+> republished by CHIMA, June 2022, article 18.
+> https://www.chima.org.cn/Html/News/Articles/15589.html
+
+A qualifying operator can consider the foreign-owned hospital pilot. Its
+hospital approvals do not authorize an offshore app to treat patients. A
+mental-health business needs particular care when reading its exclusions. They
+do not amount to a blanket ban on all mental health outpatient care.
+
+> The pilot permits qualifying wholly foreign-owned tertiary hospitals in
+> specified locations. It excludes psychiatric hospitals and psychiatric
+> inpatient treatment, and requires electronic-medical-record servers in
+> China.
+> Source: National Health Commission and other departments, November 2024
+> work plan, government republication December 2024.
+> https://app.www.gov.cn/govdata/gov/202412/01/522300/article.html
+
+Nonmedical wellness should describe the service it actually provides. Write
+separate offers and intake procedures for a sleep-education class and a
+psychiatric consultation. Calling treatment “wellness” does not settle its
+regulatory classification.
+
+Medical promotion also has a review boundary. A neutral appointment page can be
+treated differently from a promotional video. Putting a booking link beside
+disease education can change how the page is classified.
+
+> The 2025 guide distinguishes neutral institution information from medical
+> advertising. Health education that promotes a specific medical service,
+> including through related booking links, can be disguised advertising.
+> Source: State Administration for Market Regulation (国家市场监督管理总局),
+> National Health Commission, and National Administration of Traditional
+> Chinese Medicine, July 2025.
+> https://www.samr.gov.cn/zt/ndzt/2025n/ggf/zyfb/art/2025/art_8daf3ed052d749fcbee6eb3909b29e10.html
+
+> Internet medical advertising subject to review must receive that review
+> before publication. Health education cannot be used to disguise medical
+> advertising.
+> Source: State Administration for Market Regulation, Order 72, February
+> 2023, published March 2023, articles 7 and 8.
+> https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_d93a579afd45413e8576e4623fab348f.html
+
+Record storage continues after a campaign ends.
+
+<div class="table-scroll">
+
+| Clinical record | Minimum retention under the 2022 rules |
+|---|---|
+| Internet consultation medical record | 15 years |
+| Consultation process records, including text and audiovisual material | 3 years |
+
+</div>
+
+> Article 19 sets the 15-year and 3-year minimums above.
+> Source: NHC and SATCM, February 2022 rules, CHIMA republication,
+> June 2022. https://www.chima.org.cn/Html/News/Articles/15589.html
+
+Limit what enters the marketing database. A booking request can contain health
+information before the patient ever meets a clinician.
+
+> Medical and health information is sensitive personal information under
+> China’s Personal Information Protection Law. Its processing requires a
+> specific purpose, sufficient necessity, and strict safeguards; separate
+> consent requirements apply. Overseas transfers have additional conditions.
+> Source: National People’s Congress (全国人民代表大会), August 2021,
+> articles 28 to 30 and 38 to 39, text published by the Cyberspace
+> Administration of China. https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm
+
+Map overseas access before connecting a customer-management system. The transfer
+review must cover the applicable rules beyond consent.
+
+## Count completed visits before judging acquisition cost
+
+For planning, define a qualified inquiry as a consenting person the provider can
+legally serve, whose request fits its scope and who can reach an available
+appointment. The clinician determines eligibility for care; reception staff do
+not diagnose. Count attendance separately.
+
+TheChinaPath calculation below uses hypothetical inputs, not market benchmarks
+or agency prices. Assume a provider spends 20,000 RMB on permitted media and
+10,000 RMB on campaign intake during one month. Assume those are all acquisition
+costs for this example; add any other acquisition work to your real calculation.
+
+<div class="table-scroll">
+
+| Illustrative monthly funnel | Count or calculation | Result (RMB) |
+|---|---|---|
+| Total acquisition spending | 20,000 + 10,000 | 30,000 |
+| All inquiries | 200; spending divided by inquiries | 150 each |
+| Qualified inquiries | 80; spending divided by qualified inquiries | 375 each |
+| Completed appointments | 40; spending divided by attendance | 750 each |
+| Lower-attendance case | 20 appointments, same spending | 1,500 each |
+
+</div>
+
+Halving attendance doubles the cost per appointment. The 750 RMB figure excludes
+clinical delivery and other operating costs, including licensing and platform
+maintenance. Compare it with collected revenue after clinician pay and other
+delivery costs. Keep forecast repeat visits in a separate scenario until
+patients return and pay.
+
+Track inquiry-to-appointment days separately from employer or hospital
+procurement. Use the median and longest cases from your own pipeline; no
+verified sales-cycle benchmark supports a general range here.
+
+## Test the route before increasing the budget
+
+Walk through the authorized provider’s booking flow, including its referral
+route for an unsuitable online patient. Test one acquisition channel against
+completed appointments before increasing spending.
+
+A nonmedical wellness offer needs limits that staff can explain. Give them a
+referral process for anyone asking for diagnosis or treatment. Pause campaigns
+that bring inquiries the provider cannot serve.
+
+## What our SohoMD work can establish
+
+TheChinaPath’s published [SohoMD case](/work/sohomd) documents a search program
+covering **150 keywords** for a US telepsychiatry provider. Checked in October
+2026, the case does not provide China patient-acquisition costs or mainland
+clinical authorization.
+
+Its conversion rate is not reported. Budget around the Chinese provider’s
+permitted activities and contact permissions.
+
+## Build the plan around the clinical partner
+
+[China market-entry consulting](/enter-china/market-entry-consulting) can frame
+the route and commercial responsibilities. [Compass](/compass) is a commercial
+partner resource; a listing is not a clinical credential. Check the medical
+provider’s authorization independently before buying patient leads.
+
+### Can an overseas app treat a mainland patient?
+
+The app alone establishes no clinical permission. Identify the authorized
+medical provider and the scope of care it can deliver. For internet diagnosis,
+the clinician must check repeat-visit eligibility. The foreign hospital pilot
+has separate conditions; it does not settle an offshore app’s right to treat
+someone.
+
+### What should a qualified patient inquiry cost?
+
+Use a measured figure from your own campaign. Divide its acquisition spending by
+inquiries that meet the provider’s agreed criteria, then calculate cost per
+attended appointment separately. In the hypothetical example above, those
+figures are 375 RMB and 750 RMB. Neither is a China market average.
+
+### Can health education include a booking link?
+
+The 2025 guide treats health education with links to related medical services as
+a possible form of disguised advertising. A neutral institution information page
+has different conditions. Have the actual page classified before publication,
+including its links. A useful article can still become medical promotion because
+of its booking path.
+
+[Review your China service-entry
+route](/enter-china/market-entry-consulting).
+
+
+---
 # how-to-apply-for-an-icp-license-for-your-website
 URL: https://www.thechinapath.com/insights/how-to-apply-for-an-icp-license-for-your-website
 
@@ -17227,14 +17748,27 @@ they hope to recruit separately.
 [Build a regional or national distributor shortlist with Compass](/compass).
 
 ---
-# Replace a China distributor without losing the shelf
+# replace-distributor-china
 URL: https://www.thechinapath.com/insights/replace-distributor-china
-Published: 2026-09-24
-Updated: 2026-09-24
-Author: TheChinaPath
-Category: Market Strategy
 
-How to replace a China distributor: sign the new partner first, give written notice, clear old stock, then move labels, filings and store rights.
+---
+title: "Replace a China distributor without losing the shelf"
+description: "How to replace a China distributor: sign the new partner first, give written notice, clear old stock, then move labels, filings and store rights."
+pubDate: "2026-09-24"
+updatedDate: 2026-10-23
+author: "TheChinaPath"
+category: "Market Strategy"
+platforms: ["Tmall", "Douyin"]
+tags: ["Finding a partner", "Managing a partner", "Distributors", "Contracts"]
+keyTakeaways:
+  - "Sign the replacement distributor before the old one hears about it, then send written notice the way the contract requires. Under China's Civil Code, termination takes effect when the notice arrives."
+  - "Missed targets don't end exclusivity on their own. Dirui dropped its Beijing distributor's exclusivity in 2010, and a Beijing appeal court later ordered it to pay 5,864,950 RMB in liquidated damages."
+  - "A termination right can lapse. Where the contract sets no deadline, the Civil Code allows one year from the day you knew the grounds."
+  - "Since July 29, 2026, a cosmetics brand can change its domestic responsible person without the old distributor's consent (NMPA Announcement No. 70 of 2026)."
+  - "Trademark licenses, importer filings, labels and store authorizations each move on their own track, so run them from one calendar."
+heroImage: "/Images/insights/replace-distributor-china.webp"
+heroImageAlt: "In a Wuhan distributor's stockroom, a staff member points at a Chinese cross-border merchant backend on a laptop while a colleague checks stock shelves behind her."
+---
 
 To replace a China distributor without losing the shelf, line up the new
 partner before you give notice. Send written notice the way the contract
@@ -17399,8 +17933,8 @@ Store accounts are harder, because the platform decides who holds them.
 > A Tmall Global merchant may not transfer its account, or authorize anyone
 > else to use it, without Tmall Global's written consent.
 > Source: Tmall Global (天猫国际), Merchant Service Agreement, last updated
-> October 2022.
-> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> May 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Douyin ties a flagship to the brand's authorization.
 
@@ -17570,6 +18104,7 @@ authorization.
 If you're lining up a replacement before you give notice,
 [request a Compass shortlist](/contact#shortlist) of distributors for your
 category.
+
 
 ---
 # science-emotion-chinas-new-brand-playbook
@@ -19143,14 +19678,27 @@ revises these programs at TopTalk each spring, so check the current year's
 announcement before you build a plan on the numbers above.
 
 ---
-# When a Tmall agency fakes orders, the brand pays
+# tmall-agency-fake-orders-brand-liability
 URL: https://www.thechinapath.com/insights/tmall-agency-fake-orders-brand-liability
-Published: 2026-09-24
-Updated: 2026-09-24
-Author: TheChinaPath
-Category: Compliance & Setup
 
-When an agency fakes orders on your Tmall or Douyin store, your deposit, listings and name are on the line. What China's courts and rules say.
+---
+title: "When a Tmall agency fakes orders, the brand pays"
+description: "When an agency fakes orders on your Tmall or Douyin store, your deposit, listings and name are on the line. What China's courts and rules say."
+pubDate: "2026-09-24"
+updatedDate: 2026-10-23
+author: "TheChinaPath"
+category: "Compliance & Setup"
+platforms: ["Tmall", "Douyin"]
+tags: ["Finding a partner", "Due diligence", "Tmall Partners", "Douyin Partners"]
+keyTakeaways:
+  - "In a case the Supreme People's Court published in August 2026, an agency that faked group-buy orders was fined RMB 100,000 and lost its whole RMB 50,000 platform deposit."
+  - "Tmall Global's merchant agreement treats everything done through your account as your act, and lets the platform deduct your deposit when you break the law."
+  - "Douyin counts fake orders placed through a third party as the merchant's violation and strips the fake sales and reviews."
+  - "China's revised Anti-Unfair Competition Law fines false sales claims up to RMB 1 million, or RMB 2 million in serious cases."
+  - "Ban fake orders in the agency contract and audit traffic every month from your own account."
+heroImage: "/Images/insights/tmall-agency-fake-orders-brand-liability.webp"
+heroImageAlt: "In a Chongqing ecommerce office, two staff check a sudden spike in a Douyin shop's order dashboard on a desktop monitor."
+---
 
 When a Tmall or Douyin agency fakes orders, the brand carries most of the
 risk. An agency in a case the Supreme People's Court published in August
@@ -19272,7 +19820,7 @@ record is yours.
 > Operations, actions and undertakings made through the merchant's Tmall
 > Global account are deemed the merchant's, and the merchant alone bears the
 > legal consequences.
-> Source: Tmall Global (天猫国际), Merchant Service Agreement, clause 5.1, October 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Source: Tmall Global (天猫国际), Merchant Service Agreement, clause 5.1, May 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Tmall's domestic agreement, for stores on Tmall itself, uses almost the same
 words.
@@ -19374,6 +19922,7 @@ fine that goes on the public credit record, plus whatever the platform does
 to the store.
 
 [Get a shortlist of Tmall and Douyin Partners we've vetted](/contact#shortlist)
+
 
 ---
 # Red flags in a Tmall or Douyin agency proposal
@@ -20158,14 +20707,27 @@ already run your category.
 [Get a shortlist of Tmall Partners for your category](/contact#shortlist)
 
 ---
-# Tmall Partner agency vs distributor: who sets price
+# tmall-partner-agency-vs-distributor-model
 URL: https://www.thechinapath.com/insights/tmall-partner-agency-vs-distributor-model
-Published: 2026-09-24
-Updated: 2026-09-24
-Author: TheChinaPath
-Category: E-Commerce
 
-A service Tmall Partner runs your store for a fee while you own the stock and the price. A buy-out partner buys your stock and sets the price.
+---
+title: "Tmall Partner agency vs distributor: who sets price"
+description: "A service Tmall Partner runs your store for a fee while you own the stock and the price. A buy-out partner buys your stock and sets the price."
+pubDate: "2026-09-24"
+updatedDate: 2026-10-23
+author: "TheChinaPath"
+category: "E-Commerce"
+platforms: ["Tmall"]
+tags: ["Finding a partner", "Tmall Partners"]
+keyTakeaways:
+  - "A service Tmall Partner runs your store for a retainer and a commission. You own the stock and you set the price."
+  - "A buy-out Tmall Partner buys your stock and resells it in a store its own company holds, so the retail price is its call."
+  - "In TheChinaPath calculator data, a service TP costs 770,000 RMB a year at 3.5 million RMB of sales, and 52% of sales at 1 million RMB."
+  - "China's Anti-Monopoly Law bars agreements that fix a reseller's price or set a minimum, so a buy-out contract cannot safely guarantee your price."
+  - "Moving from buy-out to service usually means opening a new store in your own name, because a Tmall Global account cannot be transferred without the platform's consent."
+heroImage: "/Images/insights/tmall-partner-agency-vs-distributor-model.webp"
+heroImageAlt: "Two staff in a Ningbo bonded-zone warehouse office check a Tmall Global store backend and a printed price sheet, with pallets of imported goods behind the glass"
+---
 
 A service Tmall Partner runs your store for a monthly fee plus a cut of sales.
 You own the stock and you set the price. A buy-out partner buys your stock and
@@ -20347,7 +20909,7 @@ Going back is where brands get stuck. A buy-out store [belongs to the TP's compa
 > A Tmall Global merchant may not transfer its account, or let anyone else
 > use it, without Tmall Global's prior written consent.
 > Source: Tmall Global Merchant Service Agreement (天猫国际商户服务协议),
-> clause 5.1, last updated October 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> clause 5.1, last updated May 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 So the switch usually means a new store in your own name, with no reviews and
 no sales history. It's the story we hear most when a brand calls to replace
@@ -20391,15 +20953,29 @@ category that way.
 
 [Get a shortlist of Tmall Partners that run your category, in the model you want](/contact#shortlist)
 
----
-# Tmall Partner contract terms that decide your exit
-URL: https://www.thechinapath.com/insights/tmall-partner-contract-terms
-Published: 2026-09-24
-Updated: 2026-09-24
-Author: TheChinaPath
-Category: E-Commerce
 
-Tmall Partner contract terms that decide a clean exit: store ownership, data handover, notice, KPIs, commission base, ad spend and a sabotage penalty.
+---
+# tmall-partner-contract-terms
+URL: https://www.thechinapath.com/insights/tmall-partner-contract-terms
+
+---
+title: "Tmall Partner contract terms that decide your exit"
+description: "Tmall Partner contract terms that decide a clean exit: store ownership, data handover, notice, KPIs, commission base, ad spend and a sabotage penalty."
+pubDate: "2026-09-24"
+updatedDate: 2026-10-23
+author: "TheChinaPath"
+category: "E-Commerce"
+platforms: ["Tmall"]
+tags: ["Finding a partner", "Tmall Partners", "Contracts"]
+keyTakeaways:
+  - "Seven clauses decide a clean exit from a Tmall Partner: store ownership, account and data handover, notice, KPIs, the commission base, ad-spend control and a no-sabotage penalty."
+  - "A Chongqing court called an agency's last-day deletion of three best-selling promotion links a breach of good faith, but awarded the brand only 20,000 RMB."
+  - "Keep the main account yourself and revoke the agency's access before the contract's final day."
+  - "On our calculator defaults, a month with two TPs on retainer costs 99,167 RMB, and 128,333 RMB if both can claim commission on the same sales."
+  - "Tmall's 2026 Double 11 pre-sale opens October 15, so a TP change after mid-September puts a new team on the store for the biggest weeks of the year."
+heroImage: "/Images/insights/tmall-partner-contract-terms.webp"
+heroImageAlt: "Two staff in a Guangzhou ecommerce office check a Tmall Global sub-account permissions screen while one holds a printed service contract"
+---
 
 Seven Tmall Partner contract terms decide whether you can leave cleanly: who
 owns the store, how accounts and data come back, the notice and transition
@@ -20455,7 +21031,7 @@ before a TP touches it.
 > Without Tmall Global's written consent, a merchant may not transfer its
 > Tmall Global account or authorize others to use it. Acts done through the
 > account are deemed the merchant's own.
-> Source: Tmall Global (天猫国际), Merchant Service Agreement, updated October 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Source: Tmall Global (天猫国际), Merchant Service Agreement, updated May 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 If the [registered owner](/insights/tmall-partner-store-ownership) is your TP, you're not even a party to that
 agreement.
@@ -20496,17 +21072,19 @@ pushed spending with no regard to cost until the merchant ran short of cash
 and quit, then blamed the merchant for not cooperating. A monthly cap with
 written sign-off above it closes that door.
 
-Be precise about "your data," too, because the platform claims most of it.
+Define which working files the TP can lawfully hand over.
 
-> Data Tmall Global collects and records from a merchant's use of its service
-> belongs to Tmall Global and is its trade secret. The merchant may not use it
-> beyond the agreement or give it to others without written consent.
-> Source: Tmall Global (天猫国际), Merchant Service Agreement, updated October 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Tmall Global acknowledges the lawful data rights of merchants and other
+> parties. Subject to those rights, it claims rights in the data it collects
+> through the service or generates through platform operations, and restricts
+> its use outside the agreement or disclosure without written consent.
+> Source: Tmall Global (天猫国际), Merchant Service Agreement, updated May 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
-What you can own is the working file: Business Advisor exports, chat
-transcripts, product copy and images, and the ad campaign structure. Name
-the exports and the format, and have them delivered every month. A TP
-that's leaving has no reason to hurry.
+Specify the working files and permitted exports the TP must deliver,
+including product copy and images, and campaign settings. Check the
+platform terms and applicable data rules before including analytics exports
+or chat transcripts. Agree on a monthly delivery format while the
+partnership is running.
 
 Shopper data runs the other way. The law says the TP gives it back or
 deletes it.
@@ -20688,6 +21266,7 @@ personal information goes the other way. Under the Personal Information
 Protection Law, the TP must return or delete it.
 
 [Get a shortlist of Tmall Partners that run stores in your category](/contact#shortlist)
+
 
 ---
 # Can the same agency be your Tmall Partner and Douyin Partner?
@@ -20934,6 +21513,241 @@ each platform. Start with our guides to finding a
 [Douyin Partner](/compass/find-a-douyin-partner-in-china).
 
 [Get a shortlist of Tmall and Douyin Partners for your category](/contact#shortlist)
+
+---
+# tmall-partner-onboarding
+URL: https://www.thechinapath.com/insights/tmall-partner-onboarding
+
+---
+title: "Tmall Partner onboarding: your first 90 days"
+description: "Set your new Tmall Partner’s first 90 days: store access, launch checks, cash approvals, and weekly reports that show whether the work is on track."
+author: TheChinaPath
+pubDate: 2026-10-24
+updatedDate: 2026-10-24
+category: E-Commerce
+platforms: [Tmall]
+tags: ["Finding a partner", "Managing a partner", "Tmall Partners"]
+keyTakeaways:
+  - "Agree on a store audit, price and assortment plan, campaign calendar, and weekly report before work starts."
+  - "Treat the first 90 days as a management schedule; store approval and stock arrival have separate dependencies."
+  - "Retain merchant control and give the operator only the permissions its work needs."
+  - "Approve spending against evidence and separate paid orders from refunds and cash received."
+heroImage: /Images/insights/tmall-partner-onboarding.webp
+heroImageAlt: "Chinese store operators review a Tmall Global storefront on a monitor in a Hangzhou office."
+---
+
+Tmall Partner onboarding should give you a store audit, a price and assortment
+plan, a campaign calendar, and a weekly report within the first 90 days. Agree
+on delivery dates before work starts. If those documents are still missing at
+the end of month 2, despite your supplying the agreed inputs, require a
+written recovery plan.
+
+A Tmall Partner, or TP, operates a store for a brand. This plan assumes you’ve
+hired an operator; a partner buying your stock needs a separate purchase
+agreement. The first review can feel productive when the team presents revised
+product pages and a sales forecast. You still need to know what the team can
+do without asking you, and what must wait for your approval.
+
+The schedule below is our recommended management plan. It isn’t a Tmall
+approval deadline or a promise of sales. For a new Tmall Global store, the
+cross-border marketplace for overseas merchants, distinguish the partner’s
+work from platform review and the arrival of saleable stock. For an existing
+store, start with its trading record and the outgoing operator’s handover.
+
+## A Tmall Partner onboarding schedule you can sign off
+
+Count day 1 from the agreed kickoff and record the inputs due from each side.
+Put the person who accepts each deliverable beside the person who produces it.
+A deadline with no named approver is easy to miss across time zones. Save
+approvals with the version of the document reviewed.
+
+The contract should identify the daily contact and their backup, plus when the
+monthly retainer starts. Specify the work covered while the store awaits
+approval. Weekly status reports start at kickoff; trading data follows once
+sales begin.
+
+<div class="table-scroll">
+
+| Week range | What the TP delivers | What the brand provides | Sign it is on track |
+|---|---|---|---|
+| Weeks 1–2 | Store audit, access register, weekly status report | Merchant documents, account access, past sales, stock records | Brand can inspect the store; gaps have owners |
+| Weeks 3–4 | Price and assortment plan; launch budget | Product costs, approved claims, price limits, stock commitments | Each product variant has a price and a stock decision |
+| Weeks 5–6 | Campaign calendar and order-flow checks | Budget approval and confirmed warehouse availability | Offer, checkout, dispatch, and refund routes have been checked |
+| Weeks 7–8 | Trading review and corrective actions | Decisions on discounts and replenishment | Weekly report reconciles sales with returns and cash |
+| Weeks 9–12; review by day 90 in week 13 | Next-quarter plan and performance review | Decision on scope and spending | Both sides can explain the results and the next spending request |
+
+</div>
+
+While the platform reviews the application, the team can finish an audit of
+its launch preparation and the price file. Put the external dependency in the
+report with the evidence of submission and the date of the latest response.
+
+## Start with access and an audit you can inspect
+
+The access register belongs on the brand’s side. It should name the merchant
+account and its recovery contacts, with payment control recorded separately
+from the authority to approve advertising spend. During kickoff, have the TP
+demonstrate how your team can log in to inspect the account and its
+permissions (a screenshot of a login page proves very little).
+
+The account holder carries the risk of actions taken through the store. The
+platform terms below were checked on October 23, 2026.
+
+> Tmall Global’s merchant agreement makes the merchant responsible for
+> activity through its account and requires prior written consent to
+> transfer the account or authorize another person to use it. The agreement
+> also restricts reuse and disclosure of platform data and sets conditions
+> for handling personal information.
+> Source: Tmall Global (天猫国际), Merchant Service Agreement, May 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
+
+Use the permissioned access the store supports and confirm the relevant
+authorization with the platform. Sharing the main password leaves the brand
+with little control over who can act. Ask the account administrator to show
+how a departing team member’s access is removed.
+
+> Taobao’s sub-account agreement allows permissioned access for
+> third-party service providers, account disabling, and operation-log
+> queries. Available permissions depend on the product and store.
+> Source: Taobao (淘宝), Sub-account Software License Agreement, June 2023.
+> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall201802012028_72666.html
+
+An existing store’s audit should show where the opening stock and recent sales
+figures came from. Keep unresolved customer cases beside the person
+responsible for closing them. Check listing problems and unused advertising
+balances separately. For a new store, replace historical trading figures with
+a readiness audit of the files and approvals needed to launch.
+
+Read the account arrangement alongside the guide to [who controls a
+partner-run store](/insights/tmall-partner-store-ownership). If the registered
+merchant is the TP’s company, record that fact before you treat its store
+dashboard as a brand-owned asset.
+
+## Approve the price file before the campaign calendar
+
+Ask for a working spreadsheet, with a separate row for every product variant
+the TP wants to sell. It should show the normal selling price and the lowest
+campaign price you’ll accept. Add the costs needed to judge the offer,
+including fulfillment and the expected effect of returns. The brand’s finance
+lead should sign off on that calculation.
+
+A coupon can erase the margin on a product. Have the team show the buyer’s
+final payment for the proposed offer and identify who funds each promotion.
+
+Keep the approved discount limits in that file.
+
+Keep launch cash in the same review. The first sales report won’t explain
+money already committed to getting stock ready.
+
+> TheChinaPath calculator data, October 2026: our Tmall Global model uses
+> a 12-month period for each annual budget. Its editable warehouse deposit input
+> is 100,000 RMB and its tax-prepayment input is 300,000 RMB, a combined
+> 400,000 RMB cash assumption before other budget lines.
+> Source: TheChinaPath Tmall Global calculator, October 2026.
+> https://www.thechinapath.com/tools/tmall-global-setup-and-run
+
+Replace those inputs with the terms from your warehouse and clearance
+provider. They’re budget assumptions, not compulsory charges or a quote for
+our services. The calculator has no store-approval time estimate.
+
+Use the [Tmall Global budget calculator](/tools/tmall-global-setup-and-run) to
+separate cash funding from recurring spending. The brand’s finance lead should
+know who receives each payment and what evidence releases it. Ask for the
+terms governing any unused balance before sending the money. Set a spend cap
+the TP cannot raise without approval.
+
+## Check the order route before paying for traffic
+
+The campaign calendar should name the products in each offer and show the
+saleable stock available to support it, excluding units already reserved or
+held from sale. Put the approval deadline beside the planned start date and
+name the campaign owner. An event that depends on inventory still in transit
+needs a smaller backup offer or a later start.
+
+Walk through checkout and the warehouse order flow before increasing
+advertising spend. Confirm that the listed variant matches the warehouse item
+and that the customer sees the delivery terms you intend to honor. Ask how a
+failed dispatch reaches customer service and who authorizes the refund.
+
+Any transaction used to check the route must follow platform rules. Don’t buy
+fake sales or reviews to make the launch appear busy. Save the order-flow
+evidence and the person responsible for fixing any failure.
+
+For an existing store, keep the handover date visible in the report. Orders
+placed before the new TP arrived may be refunded afterward. Give those cases
+an owner so they don’t disappear between two agencies.
+
+## Read refunds and settlement alongside weekly sales
+
+Require the report in a language your decision-maker can read. Agree on the
+reporting cutoff and keep it consistent. A screenshot with a rising sales
+total doesn’t tell finance what reached the settlement account.
+
+Start with paid order value and deduct completed refunds against those orders.
+Pending refund requests belong alongside the total. Keep unpaid cancellations
+separate so they aren’t deducted twice. Match refunds to the period of the
+original sale, then reconcile the settlement statement separately because cash
+may arrive later. Retain the permitted source export with each report so
+finance can check it.
+
+Keep advertising spend separate, with the attribution window written beside
+any return-on-ad-spend figure. Then show stock available for the next offer
+and the decision the brand needs to make about replenishment. Set a reorder
+point against the supplier’s confirmed lead time, and record who can release
+that order.
+
+Ask the TP to explain a shortfall through the store’s actual records. When a
+product page draws visitors who rarely pay, inspect the offer and checkout.
+Paid orders that never shipped need a different explanation: trace them
+through the warehouse record. Name an owner for the correction and a date when
+the report will show whether it worked.
+
+Escalate a missed delivery date when it happens. If month 2 ends without the
+agreed documents, review the delivery record. A brand that hasn’t approved its
+prices has helped cause the delay. If the TP has the agreed inputs and still
+cannot produce usable work, freeze discretionary increases in spend and set a
+dated recovery plan under the contract. Define what evidence will close each
+missed delivery and book the follow-up review before the call ends.
+
+At day 90, decide whether the next quarter’s budget is justified. Compare the
+results with the assumptions both sides approved, and separate unfinished
+launch work from trading performance. If the appointment needs to change, use
+the evidence you’ve collected to write a tighter scope for the next operator.
+
+The [Tmall Partner selection guide](/compass/find-a-tmall-partner-in-china)
+sets out what to check before that appointment. Keep the onboarding
+deliverables in the brief you submit through [Compass](/compass).
+
+## Questions to settle at kickoff
+
+### Does a Tmall Partner have to launch the store in 90 days?
+
+The schedule here is a proposed management plan, not an official launch
+deadline. Agree separately on the documents the TP must deliver and the
+dependencies outside its control. An approval delay should still leave you
+with evidence of submission, a clear record of what is missing, and a revised
+date for the next check.
+
+### What if the new TP inherits a poorly run store?
+
+Set a baseline before judging its results. Ask for dated exports of orders and
+stock, plus the record of unresolved customer cases. Assign responsibility for
+refunds tied to earlier sales. The new team should explain which problems it
+can fix within its scope and where it needs brand approval or cooperation from
+the outgoing operator.
+
+### Should the brand receive every customer record?
+
+Ask only for the evidence needed to check trading and settlement, using
+aggregate or masked records where possible. Tmall Global’s agreement restricts
+reuse and disclosure of platform data and sets conditions for handling
+personal information. Have the TP identify the permitted reporting method for
+your store before it exports customer-level records to a shared drive or
+headquarters.
+
+[Request a Compass shortlist](/contact#shortlist) with your store’s
+current position and the work the next partner must deliver.
+
 
 ---
 # Tmall and Douyin partner ratings: what they mean
@@ -21184,14 +21998,27 @@ stores can beat a Diamond with none in your category.
 [Get a Compass shortlist of partners already running stores in your category](/contact#shortlist)
 
 ---
-# Who owns your Tmall store when a partner runs it
+# tmall-partner-store-ownership
 URL: https://www.thechinapath.com/insights/tmall-partner-store-ownership
-Published: 2026-09-24
-Updated: 2026-09-24
-Author: TheChinaPath
-Category: E-Commerce
 
-A Tmall store or Douyin shop belongs to the company that registered it. What to keep in your name when a Tmall partner runs it, and what to sign.
+---
+title: "Who owns your Tmall store when a partner runs it"
+description: "A Tmall store or Douyin shop belongs to the company that registered it. What to keep in your name when a Tmall partner runs it, and what to sign."
+pubDate: "2026-09-24"
+updatedDate: 2026-10-23
+author: "TheChinaPath"
+category: "E-Commerce"
+platforms: ["Tmall", "Douyin"]
+tags: ["Finding a partner", "Tmall Partners", "Douyin Partners", "Contracts"]
+keyTakeaways:
+  - "A Tmall store or Douyin shop belongs to the company registered on it, whoever paid for it."
+  - "In 2025 a Hunan court refused to hand a Douyin shop to the brand that funded it, because the shop sat on the operator's family license."
+  - "Keep the store, the ad accounts, and the brand authorization in your own company, and give the partner sub-accounts."
+  - "Tmall's merchant agreement says the store data belongs to Tmall, so access to your data runs through whoever holds the store."
+  - "A Tmall Global store ties up 80,000 to 330,000 RMB in deposit and annual fee before the first sale (TheChinaPath calculator data, September 2026)."
+heroImage: "/Images/insights/tmall-partner-store-ownership.webp"
+heroImageAlt: "In a cluttered Shenzhen office at night, an e-commerce manager points at a sub-account management page on her laptop while a colleague reaches for a stamped contract beside a phone showing a Douyin shop dashboard."
+---
 
 When a partner runs your Tmall store, the store belongs to whichever company
 registered it, and Chinese courts go by that registration. So open the Tmall
@@ -21314,11 +22141,12 @@ your move, but proof the process exists.
 For a brand with no Chinese company, Tmall Global is the simplest way to own
 the store outright. The merchant there is your company back home.
 
-> Tmall Global's merchant agreement is signed between the overseas merchant
-> and Taobao China Holding Limited. The merchant may not transfer its account,
+> Tmall Global's merchant agreement is signed by the overseas merchant and
+> two platform companies, Taobao China Holding Limited and Chuanshen Holding
+> Limited. The merchant may not transfer its account,
 > or let anyone else use it, without Tmall Global's written consent.
-> Source: Tmall Global Merchant Service Agreement, updated October 2022.
-> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Source: Tmall Global Merchant Service Agreement, updated May 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 A domestic Tmall store or a domestic Douyin shop needs a Chinese business
 license. That's where the trouble usually starts. You don't have a China
@@ -21501,6 +22329,7 @@ business license. If you sell domestically before you have one, agree
 in writing on the date and process for moving the store into your entity.
 
 [Ask Compass for a shortlist of partners who open stores in your name](/contact#shortlist)
+
 
 ---
 # Tmall Partner vs distributor in China: who to hire first

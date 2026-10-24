@@ -2,7 +2,7 @@
 title: "¿De quién es su tienda Tmall cuando la gestiona un partner?"
 description: "Una tienda en Tmall o Douyin pertenece a la empresa que la registró. Qué conservar a su nombre cuando la gestiona un Tmall Partner y qué firmar."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall", "Douyin"]
@@ -154,12 +154,12 @@ ser dueña de la tienda sin intermediarios. Allí, el comerciante es su
 empresa en el país de origen.
 
 > El contrato de comerciante de Tmall Global se firma entre el comerciante
-> extranjero y Taobao China Holding Limited. El comerciante no puede
+> extranjero y las sociedades Taobao China Holding Limited y Chuanshen Holding Limited. El comerciante no puede
 > transferir su cuenta ni permitir que otro la use sin el consentimiento por
 > escrito de Tmall Global.
 > Fuente: Contrato de Servicios para Comerciantes de Tmall Global,
-> actualizado en octubre de 2022.
-> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> actualizado en mayo de 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Una tienda nacional en Tmall o en Douyin, en cambio, necesita una licencia
 comercial china. Ahí suelen empezar los problemas. Usted aún no tiene

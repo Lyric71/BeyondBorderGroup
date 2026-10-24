@@ -2,7 +2,7 @@
 title: "Tmall Partner agency vs distributor: who sets price"
 description: "A service Tmall Partner runs your store for a fee while you own the stock and the price. A buy-out partner buys your stock and sets the price."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "E-Commerce"
 platforms: ["Tmall"]
@@ -197,7 +197,7 @@ Going back is where brands get stuck. A buy-out store [belongs to the TP's compa
 > A Tmall Global merchant may not transfer its account, or let anyone else
 > use it, without Tmall Global's prior written consent.
 > Source: Tmall Global Merchant Service Agreement (天猫国际商户服务协议),
-> clause 5.1, last updated October 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> clause 5.1, last updated May 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 So the switch usually means a new store in your own name, with no reviews and
 no sales history. It's the story we hear most when a brand calls to replace

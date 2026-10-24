@@ -2,7 +2,7 @@
 title: "Distributor in China wechseln, ohne Regalplatz zu verlieren"
 description: "Distributor in China wechseln: erst den Nachfolger binden, schriftlich kündigen, Bestände räumen, dann Etiketten, Meldungen und Shops übertragen."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "Market Strategy"
 platforms: ["Tmall", "Douyin"]
@@ -208,8 +208,8 @@ Plattform.
 > Zustimmung von Tmall Global weder übertragen noch Dritten zur Nutzung
 > überlassen.
 > Quelle: Tmall Global (天猫国际), Händler-Dienstleistungsvertrag, zuletzt
-> aktualisiert im Oktober 2022.
-> https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> aktualisiert im Mai 2026.
+> https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Douyin knüpft einen Flagship-Store an die Autorisierung der Marke.
 

@@ -1,8 +1,9 @@
 ---
 brand: "SohoMD"
 title: "Innovative solutions for digital health"
-summary: "A brand refresh, new website, SEO and Google Ads for telepsychiatry platform SohoMD. Organic traffic doubled and lead generation went up."
-metric: "Organic traffic doubled. Lead generation lifted across the telepsychiatry platform."
+summary: "A brand refresh, new website, Google Ads and a 150-keyword search program for US telepsychiatry provider SohoMD."
+metric: "A 150-keyword organic-search program alongside Google Ads."
+updatedDate: 2026-10-24
 category: "Website"
 industry: "Healthcare"
 services:
@@ -41,4 +42,4 @@ On the performance side, we built Google Ads campaigns targeted at high-intent q
 
 ## Results
 
-Post-launch, SohoMD saw improved conversion rates and stronger ROI across brand, site, and media. The SEO program was built to double Google organic traffic within six months, giving the practice a compounding acquisition channel alongside its paid campaigns.
+The SEO program aimed to double Google organic traffic within six months. That was the target; this case does not report the before-and-after traffic counts needed to establish the result. The documented scope includes a 150-keyword search program alongside Google Ads.

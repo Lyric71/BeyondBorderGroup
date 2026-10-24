@@ -2,7 +2,7 @@
 title: "Pedidos falsos de la agencia de Tmall: paga la marca"
 description: "Si la agencia infla su tienda de Tmall o Douyin con pedidos falsos, usted se juega el depósito, las fichas y el nombre. Qué dicen tribunales y normas."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "Compliance & Setup"
 platforms: ["Tmall", "Douyin"]
@@ -152,7 +152,7 @@ significa que el historial de la tienda es suyo.
 > Las operaciones, actos y compromisos realizados desde la cuenta de Tmall
 > Global del comerciante se consideran del comerciante, que asume en
 > exclusiva sus consecuencias jurídicas.
-> Fuente: Tmall Global (天猫国际), contrato de servicios para comerciantes, cláusula 5.1, octubre de 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Fuente: Tmall Global (天猫国际), contrato de servicios para comerciantes, cláusula 5.1, mayo de 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 El contrato doméstico de Tmall, para las tiendas en el propio Tmall, usa
 casi las mismas palabras.

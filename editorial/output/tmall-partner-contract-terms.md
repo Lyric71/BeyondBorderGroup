@@ -6,7 +6,7 @@ excerpt: "Seven clauses in a Tmall Partner contract decide whether you can leave
 template: insight
 author: TheChinaPath
 pubDate: 2026-10-09
-updatedDate: 2026-10-09
+updatedDate: 2026-10-23
 category: E-Commerce
 platforms: [Tmall]
 tags: ["Finding a partner", "Tmall Partners", "Contracts"]
@@ -82,7 +82,7 @@ before a TP touches it.
 > Without Tmall Global's written consent, a merchant may not transfer its
 > Tmall Global account or authorize others to use it. Acts done through the
 > account are deemed the merchant's own.
-> Source: Tmall Global (天猫国际), Merchant Service Agreement, updated October 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Source: Tmall Global (天猫国际), Merchant Service Agreement, updated May 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 If the registered owner is your TP, you're not even a party to that
 agreement.
@@ -125,17 +125,19 @@ pushed spending with no regard to cost until the merchant ran short of cash
 and quit, then blamed the merchant for not cooperating. A monthly cap with
 written sign-off above it closes that door.
 
-Be precise about "your data," too, because the platform claims most of it.
+Define which working files the TP can lawfully hand over.
 
-> Data Tmall Global collects and records from a merchant's use of its service
-> belongs to Tmall Global and is its trade secret. The merchant may not use it
-> beyond the agreement or give it to others without written consent.
-> Source: Tmall Global (天猫国际), Merchant Service Agreement, updated October 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Tmall Global acknowledges the lawful data rights of merchants and other
+> parties. Subject to those rights, it claims rights in the data it collects
+> through the service or generates through platform operations, and restricts
+> its use outside the agreement or disclosure without written consent.
+> Source: Tmall Global (天猫国际), Merchant Service Agreement, updated May 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
-What you can own is the working file: Business Advisor exports, chat
-transcripts, product copy and images, and the ad campaign structure. Name
-the exports and the format, and have them delivered every month. A TP
-that's leaving has no reason to hurry.
+Specify the working files and permitted exports the TP must deliver,
+including product copy and images, and campaign settings. Check the
+platform terms and applicable data rules before including analytics exports
+or chat transcripts. Agree on a monthly delivery format while the
+partnership is running.
 
 Shopper data runs the other way. The law says the TP gives it back or
 deletes it.

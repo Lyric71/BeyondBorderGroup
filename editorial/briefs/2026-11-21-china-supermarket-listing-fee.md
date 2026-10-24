@@ -48,9 +48,9 @@ They override any conflicting rule inside the skill. The standing preamble in
 **Query:** china supermarket listing fee · **Tags:** Distributors
 **Word count:** 1,600 to 2,400
 
-**The answer, in one line.** Chinese retailers charge suppliers to get in and to stay visible: listing (进场费), barcode (条码费), end-cap (堆头费) and festival fees (年节费), plus promotion support. Your distributor usually pays them upfront and recovers them from you, so agree the budget and the proof before the first listing.
+**The answer, in one line.** Check what each supermarket charge buys before approving it. Chinese rules distinguish agreed promotional services from prohibited charges, including certain barcode fees and festival fees without services. Agree which party funds permitted charges and what evidence supports reimbursement; do not assume every distributor pre-funds them.
 
-**The table it must carry.** Fee, what it buys, how it is charged, a sourced range (current, dated), who pays under a typical distribution deal.
+**The table it must carry.** Fee, service or restriction, charging basis to verify, dated price evidence and agreed payer. Use a current retailer-specific range only when a dated primary source supports it; otherwise state that the rate requires a written quote, never recycle 2012 prices. Include the verified regulatory scope and settlement figures in a separate table. Any worked budget must label its inputs as assumptions, not market rates.
 
 **The proprietary number.** Compass: share of distributors on file that pre-fund listing fees. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 

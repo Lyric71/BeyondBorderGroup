@@ -12,7 +12,7 @@ primary_query: ""
 industry: "Health & Wellness"
 word_count: "1,200 to 1,500"
 variant: B
-proof: "SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite."
+proof: "SohoMD is a US telepsychiatry case, not evidence of China patient acquisition. Use its published 150-keyword program scope; the organic-traffic doubling wording conflicts with the stated objective and must not be used as a measured result. Regulatory constraint is the substance of this page. Cite current clinical, advertising and health-data rules. If channel cost or sales-cycle benchmarks cannot be verified, state cost components and use clearly labeled illustrative arithmetic rather than invented market rates."
 status: not_started
 ---
 
@@ -42,13 +42,13 @@ They override any conflicting rule inside the skill. The standing preamble in
 | Industry | `Health & Wellness`, set as `industry` in the insight frontmatter |
 | Body length | 1,200 to 1,500 (body only, per the char-count rule) |
 | Ledger variant | B |
-| Proof | SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite. |
+| Proof | SohoMD is a US telepsychiatry case, not evidence of China patient acquisition. Use its published 150-keyword program scope; the organic-traffic doubling wording conflicts with the stated objective and must not be used as a measured result. Regulatory constraint is the substance of this page. Cite current clinical, advertising and health-data rules. If channel cost or sales-cycle benchmarks cannot be verified, state cost components and use clearly labeled illustrative arithmetic rather than invented market rates. |
 
 ## The brief
 
 **Title:** How telehealth and wellness services reach patients in China
 **Word count:** 1,200 to 1,500
-**Proof.** SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite.
+**Proof.** SohoMD is a US telepsychiatry case, not evidence of China patient acquisition. Use its published 150-keyword program scope; the organic-traffic doubling wording conflicts with the stated objective and must not be used as a measured result. Regulatory constraint is the substance of this page. Cite current clinical, advertising and health-data rules. If channel cost or sales-cycle benchmarks cannot be verified, state cost components and use clearly labeled illustrative arithmetic rather than invented market rates.
 
 ## Slot spec
 

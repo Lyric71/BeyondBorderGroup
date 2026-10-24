@@ -2,7 +2,7 @@
 title: "When a Tmall agency fakes orders, the brand pays"
 description: "When an agency fakes orders on your Tmall or Douyin store, your deposit, listings and name are on the line. What China's courts and rules say."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "Compliance & Setup"
 platforms: ["Tmall", "Douyin"]
@@ -137,7 +137,7 @@ record is yours.
 > Operations, actions and undertakings made through the merchant's Tmall
 > Global account are deemed the merchant's, and the merchant alone bears the
 > legal consequences.
-> Source: Tmall Global (天猫国际), Merchant Service Agreement, clause 5.1, October 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Source: Tmall Global (天猫国际), Merchant Service Agreement, clause 5.1, May 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Tmall's domestic agreement, for stores on Tmall itself, uses almost the same
 words.

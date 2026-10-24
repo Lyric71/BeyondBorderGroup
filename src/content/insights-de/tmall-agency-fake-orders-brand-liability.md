@@ -2,7 +2,7 @@
 title: "Tmall-Agentur fälscht Bestellungen: Die Marke zahlt"
 description: "Fälscht die Agentur Bestellungen in Ihrem Tmall- oder Douyin-Shop, stehen Kaution, Listings und Ihr Name auf dem Spiel. Was Gerichte und Regeln sagen."
 pubDate: "2026-09-24"
-updatedDate: "2026-09-24"
+updatedDate: 2026-10-23
 author: "TheChinaPath"
 category: "Compliance & Setup"
 platforms: ["Tmall", "Douyin"]
@@ -152,7 +152,7 @@ Konstruktion. Sie bedeutet aber auch: Die Akte des Shops ist Ihre.
 > Vorgänge, Handlungen und Zusagen über das Tmall-Global-Konto des Händlers
 > gelten als solche des Händlers, und allein der Händler trägt die
 > rechtlichen Folgen.
-> Quelle: Tmall Global (天猫国际), Händler-Dienstleistungsvertrag, Ziffer 5.1, Oktober 2022. https://terms.alicdn.com/legal-agreement/terms/suit_bu1_tmall/suit_bu1_tmall202111051504_43705.html
+> Quelle: Tmall Global (天猫国际), Händler-Dienstleistungsvertrag, Ziffer 5.1, Mai 2026. https://terms.alicdn.com/legal-agreement/terms/b_platform_service_agreement/20231027155750546/20231027155750546.html
 
 Der Inlandsvertrag von Tmall, der für Shops auf Tmall selbst gilt, sagt
 nahezu wortgleich dasselbe.

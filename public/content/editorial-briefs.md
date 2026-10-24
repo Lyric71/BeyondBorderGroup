@@ -178,7 +178,7 @@ Order resolved so no Ledger sits within eight weeks of the CAT anchor covering t
 | 7 | B | How insurance and financial services reach customers in China | Blue Insurance, including the published month-one follower and newsletter figures. Cover the regulatory constraint on financial promotion honestly, and treat WeChat as the primary channel it actually is. | Financial & Professional Services |
 | 8 | A | What it costs to sell baby care and hygiene products in China | none | Mother & Baby |
 | 9 | A | What it costs to sell toys and games in China | none | Sports & Leisure |
-| 10 | B | How telehealth and wellness services reach patients in China | SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite. | Health & Wellness |
+| 10 | B | How telehealth and wellness services reach patients in China | SohoMD is a US telepsychiatry case, not evidence of China patient acquisition. Use its published 150-keyword program scope; the organic-traffic doubling wording conflicts with the stated objective and must not be used as a measured result. Regulatory constraint is the substance of this page. Cite current clinical, advertising and health-data rules. If channel cost or sales-cycle benchmarks cannot be verified, state cost components and use clearly labeled illustrative arithmetic rather than invented market rates. | Health & Wellness |
 | 11 | A | What it costs to sell lighting and home design in China | iGuzzini. Note in block 5 that architectural and specification lighting is a project-sales business, so the marketplace answer only covers the consumer range. Honest split, links to `/enter-china/distribution`. | Home & Living |
 | 12 | B | How building systems and HVAC brands actually reach buyers in China | Viessmann. Ledger B table. Channels: specification and design institutes, distributor networks, WeChat for technical content, industry events, and the installer layer that most foreign brands miss entirely. Links to `/enter-china/distribution` and `/compass`. | B2B & Industrial |
 | 13 | A | What it costs to sell beauty devices and tools in China | none | Beauty & Personal Care |
@@ -599,7 +599,7 @@ Block 3 is the load-bearing block, because toys is a certification category. The
 
 **Title:** How telehealth and wellness services reach patients in China
 **Word count:** 1,200 to 1,500
-**Proof.** SohoMD, including the published organic traffic figure. Regulatory constraint is the substance of this page. Be careful and cite.
+**Proof.** SohoMD is a US telepsychiatry case, not evidence of China patient acquisition. Use its published 150-keyword program scope; the organic-traffic doubling wording conflicts with the stated objective and must not be used as a measured result. Regulatory constraint is the substance of this page. Cite current clinical, advertising and health-data rules. If channel cost or sales-cycle benchmarks cannot be verified, state cost components and use clearly labeled illustrative arithmetic rather than invented market rates.
 
 ---
 
@@ -3033,11 +3033,11 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 **Query:** tmall partner onboarding · **Tags:** Managing a partner, Tmall Partners
 **Word count:** 1,300 to 1,800
 
-**The answer, in one line.** In the first 90 days a Tmall Partner should hand you a store audit, a price and assortment plan, a campaign calendar and a weekly report you can read. If month two ends without them, the problem is the partner, not the platform.
+**The answer, in one line.** In the first 90 days a Tmall Partner should hand you a store audit, a price and assortment plan, a campaign calendar and a weekly report you can read. If month two ends without them despite the brand supplying the agreed inputs, require a dated recovery plan. These are management checkpoints, not a platform approval deadline.
 
 **The table it must carry.** Week range, what the TP delivers, what the brand provides, sign it is on track.
 
-**The proprietary number.** TheChinaPath Tmall Global calculator data (set-up timeline and cost).
+**The proprietary number.** TheChinaPath Tmall Global calculator data: its 12-month annual budget period and editable setup cash inputs. The calculator does not measure store-approval duration; do not invent a timeline from it. Label the week ranges as our proposed onboarding plan.
 
 **Internal links.** `/compass/find-a-tmall-partner-in-china`, `/tools/tmall-global-setup-and-run`, `/compass`
 **CTA.** Compass shortlist.
@@ -3048,9 +3048,9 @@ tp `/compass/find-a-tmall-partner-in-china`, dp `/compass/find-a-douyin-partner-
 **Query:** china supermarket listing fee · **Tags:** Distributors
 **Word count:** 1,600 to 2,400
 
-**The answer, in one line.** Chinese retailers charge suppliers to get in and to stay visible: listing (进场费), barcode (条码费), end-cap (堆头费) and festival fees (年节费), plus promotion support. Your distributor usually pays them upfront and recovers them from you, so agree the budget and the proof before the first listing.
+**The answer, in one line.** Check what each supermarket charge buys before approving it. Chinese rules distinguish agreed promotional services from prohibited charges, including certain barcode fees and festival fees without services. Agree which party funds permitted charges and what evidence supports reimbursement; do not assume every distributor pre-funds them.
 
-**The table it must carry.** Fee, what it buys, how it is charged, a sourced range (current, dated), who pays under a typical distribution deal.
+**The table it must carry.** Fee, service or restriction, charging basis to verify, dated price evidence and agreed payer. Use a current retailer-specific range only when a dated primary source supports it; otherwise state that the rate requires a written quote, never recycle 2012 prices. Include the verified regulatory scope and settlement figures in a separate table. Any worked budget must label its inputs as assumptions, not market rates.
 
 **The proprietary number.** Compass: share of distributors on file that pre-fund listing fees. Fallback: the settled fallback (TheChinaPath calculator data, then a published case page, labelled as such; if neither fits, the piece runs without one, with no marker).
 

@@ -1,8 +1,9 @@
 ---
 brand: "SohoMD"
 title: "Soluciones innovadoras para la salud digital"
-summary: "Renovamos la marca de SohoMD, rehicimos su web y gestionamos SEO y Google Ads: el tráfico orgánico se duplicó y crecieron los leads de la plataforma."
-metric: "Tráfico orgánico duplicado. Generación de leads al alza en toda la plataforma de telepsiquiatría."
+summary: "SohoMD, proveedor estadounidense de telepsiquiatría: renovación de marca y web, con Google Ads y un programa SEO de 150 palabras clave."
+metric: "Un programa SEO de 150 palabras clave, acompañado de campañas de Google Ads."
+updatedDate: 2026-10-24
 category: "Website"
 industry: "Healthcare"
 services:
@@ -40,4 +41,4 @@ En la parte de performance, montamos campañas de Google Ads enfocadas en búsqu
 
 ## Resultados
 
-Tras el lanzamiento, SohoMD vio mejorar las tasas de conversión y el ROI en marca, sitio y medios. El programa SEO se diseñó para duplicar el tráfico orgánico de Google en seis meses, dándole a la clínica un canal de captación compuesto que suma a sus campañas de pago.
+El programa SEO tenía como objetivo duplicar el tráfico orgánico de Google en seis meses. El caso no incluye cifras de tráfico de antes y después del proyecto que permitan comprobar si se alcanzó el objetivo. El trabajo documentado comprende un programa SEO de 150 palabras clave junto con las campañas de Google Ads.
